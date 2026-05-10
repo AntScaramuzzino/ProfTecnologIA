@@ -32,56 +32,56 @@ export default async function MCPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-[#f7f8f5] text-slate-900">
-      <nav className="border-b border-slate-200 bg-white px-6 py-3">
-        <div className="mx-auto flex max-w-7xl items-center gap-2 text-sm font-bold text-slate-500">
-          <Link href="/" className="font-semibold hover:text-slate-900">ProfTecnologIA</Link>
-          <span>/</span>
-          <Link href={`/area/${mc.area}`} className="hover:text-slate-900">{area?.emoji} {mc.area}</Link>
-          <span>/</span>
-          <span className="font-mono text-slate-800">{mc.id}</span>
+      <nav className="border-b border-slate-200 bg-white px-4 py-3 sm:px-6">
+        <div className="mx-auto flex max-w-7xl min-w-0 items-center gap-1.5 text-sm font-bold text-slate-500 sm:gap-2">
+          <Link href="/" className="shrink-0 font-semibold hover:text-slate-900">ProfTecnologIA</Link>
+          <span className="shrink-0">/</span>
+          <Link href={`/area/${mc.area}`} className="shrink-0 hover:text-slate-900">{area?.emoji} {mc.area}</Link>
+          <span className="shrink-0">/</span>
+          <span className="truncate font-mono text-slate-800">{mc.id}</span>
         </div>
       </nav>
 
       <section className={cx("border-b bg-gradient-to-br", areaAccent[mc.area] ?? "from-white to-slate-50")}>
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+        <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:gap-8 sm:px-6 sm:py-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>
-            <div className="mb-4 flex flex-wrap items-center gap-2">
-              <span className="rounded-full bg-white/85 px-3 py-1 text-sm font-bold text-slate-800 shadow-sm">
+            <div className="mb-3 flex flex-wrap items-center gap-2 sm:mb-4">
+              <span className="rounded-full bg-white/85 px-2.5 py-1 text-xs font-bold text-slate-800 shadow-sm sm:px-3 sm:text-sm">
                 {area?.emoji} {area?.label}
               </span>
-              <span className="rounded-full bg-white/85 px-3 py-1 font-mono text-sm font-bold text-slate-700 shadow-sm">
+              <span className="rounded-full bg-white/85 px-2.5 py-1 font-mono text-xs font-bold text-slate-700 shadow-sm sm:px-3 sm:text-sm">
                 {mc.id}
               </span>
-              <span className={cx("rounded-full border px-3 py-1 text-sm font-bold", levelBadge[level])}>
+              <span className={cx("rounded-full border px-2.5 py-1 text-xs font-bold sm:px-3 sm:text-sm", levelBadge[level])}>
                 DigComp {level}
               </span>
             </div>
-            <h1 className="max-w-3xl text-4xl font-black leading-tight text-slate-950 md:text-5xl">
+            <h1 className="max-w-3xl text-2xl font-black leading-tight text-slate-950 sm:text-4xl md:text-5xl">
               {mc.titolo}
             </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-9 text-slate-700">
+            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-700 sm:mt-5 sm:text-lg sm:leading-9">
               {mc.descrizione}
             </p>
           </div>
-          <MCVisual asset={primaryVisual} alt={`Visuale per ${mc.titolo}`} className="min-h-80" />
+          <MCVisual asset={primaryVisual} alt={`Visuale per ${mc.titolo}`} className="min-h-48 sm:min-h-72 lg:min-h-80" />
         </div>
       </section>
 
-      <div className="mx-auto grid max-w-7xl gap-8 px-6 py-10 lg:grid-cols-[minmax(0,1fr)_340px]">
-        <div className="space-y-8">
-          <section className="rounded-lg border border-amber-200 bg-[#fff7dd] p-6">
+      <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:gap-8 sm:px-6 sm:py-10 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <div className="space-y-6 sm:space-y-8">
+          <section className="rounded-lg border border-amber-200 bg-[#fff7dd] p-4 sm:p-6">
             <p className="text-sm font-black text-amber-800">Compito di realtà</p>
-            <p className="mt-3 max-w-4xl text-xl font-bold leading-9 text-amber-950">{mc.compito_realta}</p>
+            <p className="mt-2 max-w-4xl text-base font-bold leading-7 text-amber-950 sm:mt-3 sm:text-xl sm:leading-9">{mc.compito_realta}</p>
           </section>
 
           {text && (
-            <section className="rounded-lg border border-slate-200 bg-white px-5 py-7 shadow-sm md:px-8">
+            <section className="rounded-lg border border-slate-200 bg-white px-4 py-6 shadow-sm sm:px-5 sm:py-7 md:px-8">
               {text.intro && <ReadableText value={text.intro} />}
-              <div className={cx("divide-y divide-slate-200", text.intro ? "mt-7" : "")}>
+              <div className={cx("divide-y divide-slate-200", text.intro ? "mt-6 sm:mt-7" : "")}>
                 {text.sections.map((section) => (
-                  <article key={section.title} className="py-8 first:pt-0 last:pb-0">
-                    <h2 className="max-w-3xl text-2xl font-black leading-tight text-slate-950">{section.title}</h2>
-                    <ReadableText value={section.body} className="mt-4" />
+                  <article key={section.title} className="py-6 first:pt-0 last:pb-0 sm:py-8">
+                    <h2 className="max-w-3xl text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
+                    <ReadableText value={section.body} className="mt-3 sm:mt-4" />
                   </article>
                 ))}
               </div>
@@ -172,7 +172,7 @@ export default async function MCPage({ params }: Props) {
       </div>
 
       {related.length > 0 && (
-        <section className="mx-auto max-w-7xl px-6 pb-12">
+        <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 sm:pb-12">
           <h2 className="mb-4 text-2xl font-black">Altre MC dell&apos;area</h2>
           <div className="grid gap-4 md:grid-cols-3">
             {related.map((item) => <MCCard key={item.id} mc={item} />)}

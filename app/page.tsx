@@ -30,46 +30,46 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:gap-10 sm:px-6 sm:py-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
           <div>
-            <p className="mb-4 text-sm font-bold uppercase tracking-wide text-emerald-700">
+            <p className="mb-3 text-xs font-bold uppercase tracking-wide text-emerald-700 sm:mb-4 sm:text-sm">
               Libro di Tecnologia · Sistema agenti · App studenti
             </p>
-            <h1 className="max-w-4xl text-5xl font-black tracking-tight text-slate-950 sm:text-6xl">
+            <h1 className="max-w-4xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
               ProfTecnologIA
             </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:mt-5 sm:text-lg sm:leading-8">
               Il libro digitale del progetto TecnologIA: 50 micro-competenze, testi narrativi,
               immagini generate, compiti di realtà e percorsi DigComp per la scuola secondaria di primo grado.
             </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="#catalogo" className="rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white hover:bg-slate-800">
+            <div className="mt-5 flex flex-wrap gap-3 sm:mt-7">
+              <Link href="#catalogo" className="rounded-full bg-slate-950 px-4 py-2.5 text-sm font-bold text-white hover:bg-slate-800 sm:px-5 sm:py-3">
                 Esplora il catalogo
               </Link>
-              <Link href="/anno/1" className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-800 hover:border-slate-500">
+              <Link href="/anno/1" className="rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-bold text-slate-800 hover:border-slate-500 sm:px-5 sm:py-3">
                 Inizia dalla 1ª media
               </Link>
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-2 sm:gap-3">
             {years.map(({ anno, mcs }) => (
               <Link
                 key={anno}
                 href={`/anno/${anno}`}
-                className="rounded-lg border border-slate-200 bg-slate-50 p-5 transition hover:-translate-y-0.5 hover:shadow-md"
+                className="rounded-lg border border-slate-200 bg-slate-50 p-3 transition hover:-translate-y-0.5 hover:shadow-md sm:p-5"
               >
-                <div className="text-3xl font-black text-slate-950">{anno}ª</div>
-                <div className="mt-1 text-sm font-semibold text-slate-600">media</div>
-                <div className="mt-5 text-2xl font-black text-emerald-700">{mcs.length}</div>
-                <div className="text-xs text-slate-500">micro-competenze</div>
+                <div className="text-2xl font-black text-slate-950 sm:text-3xl">{anno}ª</div>
+                <div className="mt-0.5 text-xs font-semibold text-slate-600 sm:mt-1 sm:text-sm">media</div>
+                <div className="mt-3 text-xl font-black text-emerald-700 sm:mt-5 sm:text-2xl">{mcs.length}</div>
+                <div className="text-xs text-slate-500">MC</div>
               </Link>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-8">
+      <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8">
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {areas.map(({ code, meta, count }) => (
             <Link
@@ -88,27 +88,27 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="catalogo" className="mx-auto max-w-7xl px-6 pb-14">
-        <div className="mb-5 flex items-end justify-between gap-4">
+      <section id="catalogo" className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 sm:pb-14">
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-3 sm:mb-5">
           <div>
-            <p className="text-sm font-bold uppercase tracking-wide text-slate-500">Vetrina</p>
-            <h2 className="text-3xl font-black tracking-tight">Contenuti e immagini integrate</h2>
+            <p className="text-xs font-bold uppercase tracking-wide text-slate-500 sm:text-sm">Vetrina</p>
+            <h2 className="text-2xl font-black tracking-tight sm:text-3xl">Contenuti e immagini integrate</h2>
           </div>
           <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm text-slate-500">
             {allMCs.length} MC totali
           </span>
         </div>
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
           {featured.map((mc) => mc && <MCCard key={mc.id} mc={mc} />)}
         </div>
       </section>
 
       <section className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-10">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
           {years.map(({ anno, mcs }) => (
-            <div key={anno} className="mb-10 last:mb-0">
+            <div key={anno} className="mb-8 last:mb-0 sm:mb-10">
               <div className="mb-4 flex items-center justify-between">
-                <h2 className="text-2xl font-black">{anno}ª media</h2>
+                <h2 className="text-xl font-black sm:text-2xl">{anno}ª media</h2>
                 <Link href={`/anno/${anno}`} className="text-sm font-bold text-emerald-700 hover:text-emerald-900">
                   Vedi anno
                 </Link>

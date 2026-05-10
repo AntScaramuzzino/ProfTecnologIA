@@ -42,36 +42,36 @@ export default async function AnnoPage({ params }: PageProps) {
         </div>
       </nav>
 
-      <header className="mx-auto max-w-7xl px-6 py-10">
-        <p className="text-sm font-black uppercase tracking-wide text-emerald-700">Percorso annuale</p>
-        <h1 className="mt-2 text-4xl font-black tracking-tight">{yearLabel} media</h1>
-        <p className="mt-3 max-w-2xl leading-8 text-slate-600">
+      <header className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
+        <p className="text-xs font-black uppercase tracking-wide text-emerald-700 sm:text-sm">Percorso annuale</p>
+        <h1 className="mt-2 text-2xl font-black tracking-tight sm:text-4xl">{yearLabel} media</h1>
+        <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
           {mcs.length} micro-competenze organizzate per area tematica, con testi, immagini,
           compiti di realtà e livelli DigComp progressivi.
         </p>
-        <div className="mt-5 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 sm:mt-5">
           {Object.entries(levelCounts).map(([level, count]) => (
-            <span key={level} className={`rounded-full border px-3 py-1 text-sm font-bold ${levelBadge[level]}`}>
+            <span key={level} className={`rounded-full border px-2.5 py-1 text-xs font-bold sm:px-3 sm:text-sm ${levelBadge[level]}`}>
               {count} livello {level}
             </span>
           ))}
         </div>
       </header>
 
-      <div className="mx-auto max-w-7xl space-y-12 px-6 pb-14">
+      <div className="mx-auto max-w-7xl space-y-10 px-4 pb-10 sm:space-y-12 sm:px-6 sm:pb-14">
         {byArea.map(({ area, meta, mcs: areaMcs }) => (
           <section key={area}>
-            <div className="mb-5 flex items-center gap-3">
-              <span className="text-3xl">{meta.emoji}</span>
-              <div>
-                <h2 className="text-2xl font-black">{meta.label}</h2>
-                <p className="text-sm text-slate-500">{areaMcs.length} micro-competenze</p>
+            <div className="mb-4 flex items-center gap-2 sm:mb-5 sm:gap-3">
+              <span className="text-2xl sm:text-3xl">{meta.emoji}</span>
+              <div className="min-w-0">
+                <h2 className="text-xl font-black sm:text-2xl">{meta.label}</h2>
+                <p className="text-xs text-slate-500 sm:text-sm">{areaMcs.length} micro-competenze</p>
               </div>
-              <Link href={`/area/${area}`} className="ml-auto text-sm font-bold text-emerald-700 hover:text-emerald-900">
+              <Link href={`/area/${area}`} className="ml-auto shrink-0 text-sm font-bold text-emerald-700 hover:text-emerald-900">
                 Vedi area
               </Link>
             </div>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
               {areaMcs.map((mc) => <MCCard key={mc.id} mc={mc} />)}
             </div>
           </section>

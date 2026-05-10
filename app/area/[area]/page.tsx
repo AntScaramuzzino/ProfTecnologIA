@@ -39,19 +39,19 @@ export default async function AreaPage({ params }: PageProps) {
       </nav>
 
       <header className={cx("border-b bg-gradient-to-br", areaAccent[areaUpper])}>
-        <div className="mx-auto max-w-7xl px-6 py-10">
-          <div className="flex flex-wrap items-end justify-between gap-6">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
+          <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6">
             <div>
-              <div className="text-5xl">{meta.emoji}</div>
-              <p className="mt-4 font-mono text-sm font-black text-slate-500">{areaUpper}</p>
-              <h1 className="mt-1 text-4xl font-black tracking-tight">{meta.label}</h1>
-              <p className="mt-3 max-w-2xl leading-8 text-slate-600">
+              <div className="text-4xl sm:text-5xl">{meta.emoji}</div>
+              <p className="mt-3 font-mono text-xs font-black text-slate-500 sm:mt-4 sm:text-sm">{areaUpper}</p>
+              <h1 className="mt-1 text-2xl font-black tracking-tight sm:text-4xl">{meta.label}</h1>
+              <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-600 sm:mt-3 sm:text-base sm:leading-8">
                 {mcs.length} micro-competenze con progressione verticale, visuali generate e attività autentiche.
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
               {levels.map((level) => (
-                <span key={level} className={`rounded-full border px-3 py-1 text-sm font-bold ${levelBadge[level]}`}>
+                <span key={level} className={`rounded-full border px-2.5 py-1 text-xs font-bold sm:px-3 sm:text-sm ${levelBadge[level]}`}>
                   DigComp {level}
                 </span>
               ))}
@@ -60,19 +60,19 @@ export default async function AreaPage({ params }: PageProps) {
         </div>
       </header>
 
-      <div className="mx-auto max-w-7xl space-y-12 px-6 py-10">
+      <div className="mx-auto max-w-7xl space-y-10 px-4 py-8 sm:space-y-12 sm:px-6 sm:py-10">
         {byAnno.map(({ anno, mcs: yearMcs }) => (
           <section key={anno}>
-            <div className="mb-5 flex items-center justify-between">
+            <div className="mb-4 flex items-center justify-between sm:mb-5">
               <div>
-                <h2 className="text-2xl font-black">{anno}ª media</h2>
-                <p className="text-sm text-slate-500">{yearMcs.length} MC in questa area</p>
+                <h2 className="text-xl font-black sm:text-2xl">{anno}ª media</h2>
+                <p className="text-xs text-slate-500 sm:text-sm">{yearMcs.length} MC in questa area</p>
               </div>
               <Link href={`/anno/${anno}`} className="text-sm font-bold text-emerald-700 hover:text-emerald-900">
                 Vedi anno
               </Link>
             </div>
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
               {yearMcs.map((mc) => <MCCard key={mc.id} mc={mc} />)}
             </div>
           </section>

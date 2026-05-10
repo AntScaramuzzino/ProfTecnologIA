@@ -13,7 +13,7 @@ export default function MCCard({ mc }: { mc: MC }) {
       href={`/mc/${mc.id}`}
       className="group grid overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
     >
-      <div className={cx("relative h-40 overflow-hidden bg-gradient-to-br", areaAccent[mc.area] ?? "from-slate-100 to-white")}>
+      <div className={cx("relative h-32 overflow-hidden bg-gradient-to-br sm:h-40", areaAccent[mc.area] ?? "from-slate-100 to-white")}>
         {visual ? (
           <img src={visual.src} alt="" className="h-full w-full object-cover opacity-90 transition duration-300 group-hover:scale-[1.03]" />
         ) : (
