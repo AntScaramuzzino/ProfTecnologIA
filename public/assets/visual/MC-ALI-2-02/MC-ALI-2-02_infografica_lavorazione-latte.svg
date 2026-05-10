@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1350" viewBox="0 0 1920 1350" role="img" aria-labelledby="title desc">
+  <title id="title">MC-ALI-2-02 - Infografica ricca sulla lavorazione del latte</title>
+  <desc id="desc">Tavola editoriale con soggetto centrale fotorealistico, callout annotati, dati di processo e compito di realtà sulla lavorazione del latte.</desc>
+  <defs>
+    <clipPath id="heroClip">
+      <rect x="470" y="245" width="980" height="552" rx="28"/>
+    </clipPath>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7fcff"/>
+      <stop offset="0.58" stop-color="#eef7fa"/>
+      <stop offset="1" stop-color="#f7fbf4"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M1,1 L11,6 L1,11 Z" fill="#15354c"/>
+    </marker>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#143047" flood-opacity="0.15"/>
+    </filter>
+    <filter id="soft" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#143047" flood-opacity="0.10"/>
+    </filter>
+    <style>
+      .bg { fill: url(#sky); }
+      .title { font: 800 54px Arial, sans-serif; fill: #102f43; }
+      .subtitle { font: 400 24px Arial, sans-serif; fill: #4b6576; }
+      .eyebrow { font: 800 15px Arial, sans-serif; fill: #2c6e4f; letter-spacing: 0; }
+      .section { font: 800 25px Arial, sans-serif; fill: #102f43; }
+      .call-title { font: 800 20px Arial, sans-serif; fill: #102f43; }
+      .body { font: 400 17px Arial, sans-serif; fill: #33495c; }
+      .small { font: 400 14px Arial, sans-serif; fill: #486072; }
+      .tiny { font: 400 12px Arial, sans-serif; fill: #5c7180; }
+      .chipText { font: 800 14px Arial, sans-serif; fill: #ffffff; }
+      .metric { font: 800 30px Arial, sans-serif; fill: #102f43; }
+      .num { font: 800 20px Arial, sans-serif; fill: #ffffff; }
+      .card { fill: rgba(255,255,255,0.94); stroke: #d4e4ec; stroke-width: 2; filter: url(#soft); }
+      .call { fill: #ffffff; stroke-width: 3; filter: url(#soft); }
+      .line { fill: none; stroke: #15354c; stroke-width: 3.4; stroke-linecap: round; marker-end: url(#arrow); }
+      .thin { fill: none; stroke: #6f8798; stroke-width: 2.4; stroke-linecap: round; marker-end: url(#arrow); }
+      .dash { stroke-dasharray: 8 8; }
+      .blue { fill: #2f82b7; }
+      .green { fill: #2f8f66; }
+      .orange { fill: #d9762d; }
+      .red { fill: #c94f4f; }
+      .teal { fill: #208b95; }
+      .navy { fill: #102f43; }
+      .wheat { fill: #d89d26; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1920" height="1350"/>
+  <circle cx="164" cy="154" r="120" fill="#def1e8"/>
+  <circle cx="1765" cy="210" r="105" fill="#e1f0fa"/>
+  <circle cx="1710" cy="1164" r="150" fill="#fff2d8"/>
+
+  <text class="title" x="70" y="78">Come si lavora il latte</text>
+  <text class="subtitle" x="72" y="116">Dal latte crudo al cartone: tecnologia alimentare, calore, freddo e controlli</text>
+  <text class="subtitle" x="72" y="150">MC-ALI-2-02 · Industria alimentare e tecniche di conservazione · Classe 2ª · DigComp I</text>
+
+  <g filter="url(#shadow)">
+    <rect x="450" y="225" width="1020" height="596" rx="34" fill="#ffffff"/>
+    <image href="MC-ALI-2-02_soggetto_latte_centrale.png" x="470" y="245" width="980" height="552" preserveAspectRatio="xMidYMid slice" clip-path="url(#heroClip)"/>
+    <rect x="470" y="245" width="980" height="552" rx="28" fill="none" stroke="#ffffff" stroke-width="8"/>
+  </g>
+
+  <g transform="translate(565 750)">
+    <rect width="790" height="48" rx="24" fill="#102f43" opacity="0.92"/>
+    <text class="chipText" x="32" y="31">Idea chiave: non si aggiunge magia al latte. Si controllano tempo, temperatura, aria, grassi e microbi.</text>
+  </g>
+
+  <g transform="translate(70 214)">
+    <rect class="call" width="335" height="142" rx="14" stroke="#d89d26"/>
+    <circle class="wheat" cx="34" cy="34" r="22"/><text class="num" text-anchor="middle" x="34" y="42">1</text>
+    <text class="call-title" x="68" y="39">Raffreddamento immediato</text>
+    <text class="body" x="24" y="75">Dopo la mungitura il latte va tenuto</text>
+    <text class="body" x="24" y="99">freddo: rallenta la crescita microbica.</text>
+    <text class="metric" x="24" y="132">circa 4 °C</text>
+  </g>
+  <path class="line" d="M405 285 C475 284 488 356 545 407"/>
+
+  <g transform="translate(70 390)">
+    <rect class="call" width="345" height="160" rx="14" stroke="#2f8f66"/>
+    <circle class="green" cx="34" cy="34" r="22"/><text class="num" text-anchor="middle" x="34" y="42">2</text>
+    <text class="call-title" x="68" y="39">Analisi del lotto</text>
+    <text class="body" x="24" y="75">Il laboratorio controlla grasso, proteine,</text>
+    <text class="body" x="24" y="99">acidità, residui e carica microbica.</text>
+    <text class="small" x="24" y="130">Se un parametro non va, il latte</text>
+    <text class="small" x="24" y="150">non entra nella linea produttiva.</text>
+  </g>
+  <path class="line" d="M415 475 C500 494 548 536 630 585"/>
+
+  <g transform="translate(70 585)">
+    <rect class="call" width="345" height="160" rx="14" stroke="#d9762d"/>
+    <circle class="orange" cx="34" cy="34" r="22"/><text class="num" text-anchor="middle" x="34" y="42">3</text>
+    <text class="call-title" x="68" y="39">Filtrazione e scrematura</text>
+    <text class="body" x="24" y="75">Filtri e centrifughe separano impurità</text>
+    <text class="body" x="24" y="99">e panna. Poi il grasso viene dosato.</text>
+    <text class="small" x="24" y="132">Nascono latte intero, parzialmente</text>
+    <text class="small" x="24" y="152">scremato e scremato.</text>
+  </g>
+  <path class="line" d="M415 662 C493 654 555 647 641 650"/>
+
+  <g transform="translate(1450 220)">
+    <rect class="call" width="390" height="172" rx="14" stroke="#2f82b7"/>
+    <circle class="blue" cx="34" cy="34" r="22"/><text class="num" text-anchor="middle" x="34" y="42">4</text>
+    <text class="call-title" x="68" y="39">Scambio termico</text>
+    <text class="body" x="24" y="75">Piastre metalliche trasferiscono calore</text>
+    <text class="body" x="24" y="99">al latte per tempi molto precisi.</text>
+    <text class="metric" x="24" y="133">72-75 °C</text>
+    <text class="small" x="150" y="128">per 15-20 s:</text>
+    <text class="small" x="150" y="150">pastorizzazione HTST.</text>
+  </g>
+  <path class="line" d="M1450 304 C1398 316 1356 356 1302 414"/>
+
+  <g transform="translate(1450 430)">
+    <rect class="call" width="390" height="156" rx="14" stroke="#c94f4f"/>
+    <circle class="red" cx="34" cy="34" r="22"/><text class="num" text-anchor="middle" x="34" y="42">5</text>
+    <text class="call-title" x="68" y="39">UHT: più intenso</text>
+    <text class="body" x="24" y="75">Il latte UHT viene scaldato molto</text>
+    <text class="body" x="24" y="99">di più, per pochissimo tempo.</text>
+    <text class="metric" x="24" y="133">135-150 °C</text>
+    <text class="small" x="190" y="128">pochi secondi.</text>
+  </g>
+  <path class="line" d="M1450 505 C1385 503 1332 506 1260 522"/>
+
+  <g transform="translate(1450 625)">
+    <rect class="call" width="390" height="160" rx="14" stroke="#208b95"/>
+    <circle class="teal" cx="34" cy="34" r="22"/><text class="num" text-anchor="middle" x="34" y="42">6</text>
+    <text class="call-title" x="68" y="39">Confezione asettica</text>
+    <text class="body" x="24" y="75">Nel latte UHT, prodotto e contenitore</text>
+    <text class="body" x="24" y="99">devono restare lontani dai microbi.</text>
+    <text class="small" x="24" y="132">Chiuso: può stare in dispensa.</text>
+    <text class="small" x="24" y="152">Aperto: torna la regola del frigo.</text>
+  </g>
+  <path class="line" d="M1450 700 C1385 684 1334 668 1262 635"/>
+
+  <g transform="translate(560 180)">
+    <rect class="card" width="800" height="52" rx="26"/>
+    <text class="eyebrow" x="28" y="22">SOGGETTO CENTRALE</text>
+    <text class="body" x="28" y="43">Cartone neutro + bicchiere + impianto: il latte è alimento, materiale biologico e processo industriale.</text>
+  </g>
+
+  <g transform="translate(70 858)">
+    <rect class="card" width="1780" height="246" rx="18"/>
+    <text class="section" x="30" y="48">Sequenza produttiva annotata</text>
+    <text class="body" x="30" y="78">Leggi la freccia come una catena di controlli: ogni passaggio riduce un rischio o rende il prodotto più stabile.</text>
+
+    <g transform="translate(30 112)">
+      <rect width="210" height="82" rx="12" fill="#fff8e8" stroke="#d89d26" stroke-width="2"/>
+      <text class="call-title" x="18" y="32">Stalla</text>
+      <text class="small" x="18" y="58">mungitura + freddo</text>
+    </g>
+    <path class="thin" d="M252 153 H312"/>
+    <g transform="translate(315 112)">
+      <rect width="210" height="82" rx="12" fill="#eef8fb" stroke="#2f82b7" stroke-width="2"/>
+      <text class="call-title" x="18" y="32">Cisterna</text>
+      <text class="small" x="18" y="58">trasporto refrigerato</text>
+    </g>
+    <path class="thin" d="M537 153 H597"/>
+    <g transform="translate(600 112)">
+      <rect width="210" height="82" rx="12" fill="#eef8ef" stroke="#2f8f66" stroke-width="2"/>
+      <text class="call-title" x="18" y="32">Laboratorio</text>
+      <text class="small" x="18" y="58">campioni e qualità</text>
+    </g>
+    <path class="thin" d="M822 153 H882"/>
+    <g transform="translate(885 112)">
+      <rect width="210" height="82" rx="12" fill="#fff2e9" stroke="#d9762d" stroke-width="2"/>
+      <text class="call-title" x="18" y="32">Centrifuga</text>
+      <text class="small" x="18" y="58">panna e standard</text>
+    </g>
+    <path class="thin" d="M1107 153 H1167"/>
+    <g transform="translate(1170 112)">
+      <rect width="210" height="82" rx="12" fill="#eef8fb" stroke="#2f82b7" stroke-width="2"/>
+      <text class="call-title" x="18" y="32">Calore</text>
+      <text class="small" x="18" y="58">HTST oppure UHT</text>
+    </g>
+    <path class="thin" d="M1376 153 H1428"/>
+    <g transform="translate(1430 112)">
+      <rect width="250" height="82" rx="12" fill="#eaf8f9" stroke="#208b95" stroke-width="2"/>
+      <text class="call-title" x="18" y="32">Confezione</text>
+      <text class="small" x="18" y="58">etichetta, lotto, scadenza</text>
+    </g>
+  </g>
+
+  <g transform="translate(70 1132)">
+    <rect class="card" width="570" height="144" rx="18"/>
+    <text class="section" x="24" y="42">Confronto rapido</text>
+    <text class="body" x="24" y="76">Pastorizzato: più fresco, sempre in frigo.</text>
+    <text class="body" x="24" y="104">UHT: chiuso dura molto di più, anche fuori frigo.</text>
+    <text class="tiny" x="24" y="128">Dopo apertura: segui sempre l'etichetta.</text>
+  </g>
+
+  <g transform="translate(675 1132)">
+    <rect class="card" width="530" height="144" rx="18"/>
+    <text class="section" x="24" y="42">Perché è importante</text>
+    <text class="body" x="24" y="76">Una buona conservazione riduce malattie</text>
+    <text class="body" x="24" y="104">e spreco alimentare lungo la filiera.</text>
+    <rect x="360" y="28" width="120" height="42" rx="21" fill="#2f8f66"/>
+    <text class="chipText" text-anchor="middle" x="420" y="55">SDG 12</text>
+  </g>
+
+  <g transform="translate(1240 1132)">
+    <rect width="610" height="144" rx="18" fill="#102f43"/>
+    <text class="chipText" x="28" y="40">Compito di realtà</text>
+    <text class="chipText" x="28" y="72">Analizza 3 confezioni di latte diverse:</text>
+    <text class="chipText" x="28" y="100">trattamento, conservazione, scadenza, packaging, spreco.</text>
+    <rect x="448" y="26" width="132" height="42" rx="21" fill="#2f82b7"/>
+    <text class="chipText" text-anchor="middle" x="514" y="53">MC-ALI-2-02</text>
+  </g>
+
+  <text class="tiny" x="72" y="1320">Fonti: EFSA 2021 su verifica della pastorizzazione; Dairy Processing Handbook su omogeneizzazione, HTST e linea di processo; Cornell/LII su condizioni di pastorizzazione e ultra-pastorizzazione. Valori indicativi: controllare sempre etichetta e normativa locale.</text>
+</svg>

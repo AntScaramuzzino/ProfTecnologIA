@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">MC-MAT-1-02 - Ciclo tecnologico completo</title>
+  <desc id="desc">Diagramma didattico in sette fasi: risorse, lavorazione, produzione, logistica, distribuzione, uso e fine vita.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L14,8 L2,14 Z" fill="#334155"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .bg { fill: #f7faf8; }
+      .title { font: 700 48px Arial, sans-serif; fill: #102a43; }
+      .subtitle { font: 400 25px Arial, sans-serif; fill: #40566e; }
+      .phase-title { font: 700 25px Arial, sans-serif; fill: #102a43; }
+      .phase-body { font: 400 19px Arial, sans-serif; fill: #34495e; }
+      .phase-num { font: 700 28px Arial, sans-serif; fill: #ffffff; }
+      .center-title { font: 700 31px Arial, sans-serif; fill: #102a43; }
+      .center-body { font: 400 21px Arial, sans-serif; fill: #334155; }
+      .badge { font: 700 18px Arial, sans-serif; fill: #ffffff; }
+      .arrow { fill: none; stroke: #334155; stroke-width: 6; stroke-linecap: round; marker-end: url(#arrow); opacity: 0.78; }
+      .note-title { font: 700 22px Arial, sans-serif; fill: #102a43; }
+      .note-body { font: 400 19px Arial, sans-serif; fill: #34495e; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1000"/>
+  <circle cx="176" cy="152" r="112" fill="#dff3eb"/>
+  <circle cx="1426" cy="860" r="145" fill="#e8f1fb"/>
+  <circle cx="1440" cy="168" r="78" fill="#fff1d6"/>
+
+  <text class="title" x="90" y="94">Il ciclo tecnologico completo</text>
+  <text class="subtitle" x="92" y="134">Ogni oggetto ha un viaggio: nasce da risorse, viene prodotto e viene usato.</text>
+  <text class="subtitle" x="92" y="168">Poi può rientrare nel ciclo oppure diventare rifiuto.</text>
+
+  <g filter="url(#shadow)">
+    <circle cx="800" cy="500" r="154" fill="#ffffff"/>
+    <circle cx="800" cy="500" r="124" fill="#e9f6f1"/>
+  </g>
+  <text class="center-title" text-anchor="middle" x="800" y="456">Oggetto scelto</text>
+  <text class="center-body" text-anchor="middle" x="800" y="492">smartphone, felpa, bottiglia</text>
+  <text class="center-body" text-anchor="middle" x="800" y="526">o altro oggetto di casa</text>
+  <rect x="691" y="558" width="218" height="36" rx="18" fill="#287a63"/>
+  <text class="badge" text-anchor="middle" x="800" y="582">passaporto tecnologico</text>
+
+  <g id="phases">
+    <g transform="translate(644 180)">
+      <rect width="312" height="132" rx="8" fill="#fff7df" stroke="#d99f22" stroke-width="3"/>
+      <circle cx="36" cy="36" r="24" fill="#d99f22"/><text class="phase-num" text-anchor="middle" x="36" y="46">1</text>
+      <text class="phase-title" x="74" y="42">Risorse</text>
+      <text class="phase-body" x="24" y="78">Materie prime, energia, acqua,</text>
+      <text class="phase-body" x="24" y="104">dati, lavoro e conoscenze.</text>
+    </g>
+
+    <g transform="translate(1040 278)">
+      <rect width="312" height="132" rx="8" fill="#e7f0ff" stroke="#4279c6" stroke-width="3"/>
+      <circle cx="36" cy="36" r="24" fill="#4279c6"/><text class="phase-num" text-anchor="middle" x="36" y="46">2</text>
+      <text class="phase-title" x="74" y="42">Lavorazione</text>
+      <text class="phase-body" x="24" y="78">Le risorse diventano materiali</text>
+      <text class="phase-body" x="24" y="104">utilizzabili o componenti.</text>
+    </g>
+
+    <g transform="translate(1118 560)">
+      <rect width="312" height="132" rx="8" fill="#efe9ff" stroke="#7c5fc9" stroke-width="3"/>
+      <circle cx="36" cy="36" r="24" fill="#7c5fc9"/><text class="phase-num" text-anchor="middle" x="36" y="46">3</text>
+      <text class="phase-title" x="74" y="42">Produzione</text>
+      <text class="phase-body" x="24" y="78">Fabbriche e tecnici assemblano</text>
+      <text class="phase-body" x="24" y="104">il prodotto finale.</text>
+    </g>
+
+    <g transform="translate(820 760)">
+      <rect width="312" height="132" rx="8" fill="#e8f7ef" stroke="#2c8c63" stroke-width="3"/>
+      <circle cx="36" cy="36" r="24" fill="#2c8c63"/><text class="phase-num" text-anchor="middle" x="36" y="46">4</text>
+      <text class="phase-title" x="74" y="42">Logistica</text>
+      <text class="phase-body" x="24" y="78">Trasporto, magazzini, imballaggi</text>
+      <text class="phase-body" x="24" y="104">e percorsi tra paesi diversi.</text>
+    </g>
+
+    <g transform="translate(466 760)">
+      <rect width="312" height="132" rx="8" fill="#fff0e8" stroke="#d66b34" stroke-width="3"/>
+      <circle cx="36" cy="36" r="24" fill="#d66b34"/><text class="phase-num" text-anchor="middle" x="36" y="46">5</text>
+      <text class="phase-title" x="74" y="42">Distribuzione</text>
+      <text class="phase-body" x="24" y="78">Negozi, e-commerce e consegna</text>
+      <text class="phase-body" x="24" y="104">portano l'oggetto a te.</text>
+    </g>
+
+    <g transform="translate(170 560)">
+      <rect width="312" height="132" rx="8" fill="#e6f6fa" stroke="#27849a" stroke-width="3"/>
+      <circle cx="36" cy="36" r="24" fill="#27849a"/><text class="phase-num" text-anchor="middle" x="36" y="46">6</text>
+      <text class="phase-title" x="74" y="42">Uso</text>
+      <text class="phase-body" x="24" y="78">Il consumatore usa, ripara,</text>
+      <text class="phase-body" x="24" y="104">conserva o sostituisce.</text>
+    </g>
+
+    <g transform="translate(248 278)">
+      <rect width="312" height="132" rx="8" fill="#edf7e2" stroke="#6a9f2f" stroke-width="3"/>
+      <circle cx="36" cy="36" r="24" fill="#6a9f2f"/><text class="phase-num" text-anchor="middle" x="36" y="46">7</text>
+      <text class="phase-title" x="74" y="42">Fine vita</text>
+      <text class="phase-body" x="24" y="78">Riuso, riparazione, riciclo</text>
+      <text class="phase-body" x="24" y="104">oppure smaltimento.</text>
+    </g>
+  </g>
+
+  <path class="arrow" d="M956 244 C1048 238 1104 250 1166 278"/>
+  <path class="arrow" d="M1285 410 C1338 468 1348 512 1321 560"/>
+  <path class="arrow" d="M1188 692 C1142 742 1096 768 1042 780"/>
+  <path class="arrow" d="M820 826 C790 846 804 846 778 826"/>
+  <path class="arrow" d="M560 780 C502 768 456 742 412 692"/>
+  <path class="arrow" d="M282 560 C254 512 264 468 315 410"/>
+  <path class="arrow" d="M434 278 C512 230 564 220 644 230"/>
+
+  <g transform="translate(90 872)">
+    <rect width="680" height="72" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+    <text class="note-title" x="24" y="32">Domanda guida</text>
+    <text class="note-body" x="208" y="32">In quale fase puoi intervenire tu come consumatore?</text>
+    <text class="note-body" x="208" y="58">Riparare, usare più a lungo e riciclare cambiano il finale.</text>
+  </g>
+
+  <g transform="translate(1200 872)">
+    <rect width="310" height="72" rx="8" fill="#287a63"/>
+    <text class="badge" text-anchor="middle" x="155" y="32">SDG 12</text>
+    <text class="badge" text-anchor="middle" x="155" y="58">Consumo responsabile</text>
+  </g>
+</svg>

@@ -1,0 +1,3369 @@
+{
+  "total": 50,
+  "mcs": [
+    {
+      "id": "MC-DIG-1-01",
+      "area": "DIG",
+      "anno": 1,
+      "titolo": "Orientarsi nell'ambiente digitale",
+      "descrizione": "Lo studente sa navigare in un sistema operativo (cartelle, file, applicazioni), conosce i principali componenti hardware di un computer e un dispositivo mobile, e comprende la differenza tra hardware e software, applicando queste conoscenze alla gestione dei propri dispositivi scolastici.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Utilizza adeguate risorse materiali, informative e organizzative per la progettazione",
+          "traguardo": "Lo studente sa orientarsi nell'ambiente digitale e gestire file e cartelle"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente naviga nell'ambiente digitale con consapevolezza delle strutture di base"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente sfrutta le risorse digitali disponibili per organizzare il proprio lavoro scolastico"
+        },
+        "LC": {
+          "ref": "Self-management / Organisation",
+          "nota": "Lo studente organizza i file digitali con una struttura logica per supportare il proprio apprendimento"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "La competenza digitale di base è prerequisito per l'accesso all'istruzione nel XXI secolo"
+        }
+      },
+      "outputApp": {
+        "quiz": "Abbinamento: collega ogni componente hardware (CPU, RAM, SSD, monitor) alla sua funzione. 6 coppie con feedback.",
+        "microlearning": "Card deck 5 slide: dall'hardware al software — CPU, memoria, periferiche, OS, applicazioni. 4 min.",
+        "visual": "Schema anatomia del computer: vista esplosa con etichette e funzioni.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "hardware",
+        "software",
+        "sistema operativo",
+        "file",
+        "digitale",
+        "classe-1",
+        "DIG"
+      ],
+      "compito_realta": "Smonta virtualmente un vecchio dispositivo: cerca le foto di disassemblaggio del tuo modello di smartphone o computer, identifica 5 componenti interni e spiega la funzione di ciascuno.",
+      "sdg": [
+        4,
+        9
+      ],
+      "note_didattiche": {
+        "base": "Usare uno schema già etichettato con 4 componenti. Lo studente deve solo abbinare la funzione.",
+        "avanzato": "Costruire un glossario personale dei componenti hardware con immagini cercate autonomamente e una frase descrittiva per ciascuno."
+      }
+    },
+    {
+      "id": "MC-DIG-1-02",
+      "area": "DIG",
+      "anno": 1,
+      "titolo": "Ricerca e valutazione delle fonti online",
+      "descrizione": "Lo studente sa formulare query di ricerca efficaci, distingue fonti attendibili da inattendibili usando criteri verificabili (autore, data, riferimenti, scopo), e sa citare correttamente una fonte digitale, sviluppando un approccio critico all'informazione online.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa utilizzare comunicazioni procedurali e istruzioni tecniche",
+          "traguardo": "Lo studente valuta criticamente le fonti digitali e le usa in modo appropriato"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente applica criteri espliciti per valutare l'attendibilità di una fonte online"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Valuing ideas",
+          "nota": "Lo studente distingue informazione di qualità da noise per costruire conoscenza affidabile"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente mette in discussione le fonti invece di accettarle acriticamente"
+        },
+        "EV": {
+          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "Saper distinguere informazione verificata da disinformazione è esercizio di cittadinanza democratica"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario: mostra 3 articoli sullo stesso argomento, chiedi quale è più affidabile e perché. Risposta multipla con feedback argomentato.",
+        "microlearning": "Card deck 5 slide: i 5 criteri CRAAP (Currency, Relevance, Authority, Accuracy, Purpose) con esempio applicato. 4 min.",
+        "visual": "Checklist visiva: 'Come valuto una fonte online?' — 5 domande con icone.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-DIG-1-01"
+      ],
+      "tags": [
+        "fonti",
+        "ricerca online",
+        "fact-checking",
+        "media literacy",
+        "classe-1",
+        "DIG"
+      ],
+      "compito_realta": "Confronta 3 fonti sullo stesso argomento (es. i vantaggi del riciclaggio): valutale con la checklist CRAAP, identifica differenze e scegli quella più attendibile motivando la scelta.",
+      "sdg": [
+        4,
+        16
+      ],
+      "note_didattiche": {
+        "base": "Fornire le 3 fonti già selezionate e la checklist pre-stampata. Lo studente compila solo i punteggi.",
+        "avanzato": "Cercare autonomamente le 3 fonti, applicare la checklist e scrivere un paragrafo critico sulle differenze trovate."
+      }
+    },
+    {
+      "id": "MC-DIS-1-01",
+      "area": "DIS",
+      "anno": 1,
+      "titolo": "Basi del disegno e costruzioni geometriche",
+      "descrizione": "Lo studente sa usare correttamente gli strumenti del disegno tecnico (riga, squadra, compasso, matita) per eseguire costruzioni geometriche fondamentali (perpendicolari, parallele, poligoni regolari, divisione di angoli) rispettando le convenzioni grafiche.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche utilizzando elementi del disegno tecnico",
+          "traguardo": "Lo studente esegue costruzioni geometriche di base con strumenti tecnici"
+        },
+        "DC": {
+          "ref": "5.1 Risolvere problemi tecnici",
+          "livello": "F",
+          "nota": "Lo studente usa strumenti digitali di disegno (es. GeoGebra) come alternativa/complemento agli strumenti fisici"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente pianifica i passi di una costruzione geometrica prima di eseguirla"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente affronta la costruzione come problema con procedura definita da rispettare"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "Le basi del disegno tecnico sono prerequisito per la comprensione di qualsiasi progetto ingegneristico"
+        }
+      },
+      "outputApp": {
+        "quiz": "Identificazione: mostra una costruzione geometrica, chiedi il nome e lo strumento usato. 5 domande con feedback.",
+        "microlearning": "Video-tutorial 4 min: costruzione passo-passo di un esagono regolare con riga e compasso.",
+        "visual": "Poster sintetico: 6 costruzioni fondamentali con nome, strumenti, procedura in 3 passi.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "disegno tecnico",
+        "geometria",
+        "costruzioni",
+        "strumenti",
+        "classe-1",
+        "DIS"
+      ],
+      "compito_realta": "Disegna in scala 1:20 la tua aula: misura le dimensioni reali con un metro, converti in scala e riproduci la pianta su foglio A4 con strumenti tecnici.",
+      "sdg": [
+        4
+      ],
+      "note_didattiche": {
+        "base": "Fornire il foglio già impostato con la cornice e il cartiglio. Lo studente deve solo eseguire la costruzione indicata.",
+        "avanzato": "Aggiungere una seconda pianta in scala diversa (1:50) e discutere come cambia la rappresentazione."
+      }
+    },
+    {
+      "id": "MC-DIS-1-02",
+      "area": "DIS",
+      "anno": 1,
+      "titolo": "Scale di rappresentazione e quotatura di base",
+      "descrizione": "Lo studente comprende il concetto di scala di rappresentazione, sa scegliere la scala adatta al foglio disponibile, e sa applicare le convenzioni di quotatura di base (linee di quota, frecce, cifre) per comunicare le dimensioni reali di un oggetto rappresentato.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+          "traguardo": "Lo studente usa scale di rappresentazione e quotatura per comunicare le dimensioni di un oggetto"
+        },
+        "DC": {
+          "ref": "5.1 Risolvere problemi tecnici",
+          "livello": "F",
+          "nota": "Lo studente usa fogli di calcolo o app di disegno per verificare le conversioni di scala"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente pianifica il layout del disegno tenendo conto della scala prima di iniziare"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente applica proporzioni matematiche per risolvere problemi di scala"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "La quotatura è linguaggio universale nella comunicazione tecnica e professionale"
+        }
+      },
+      "outputApp": {
+        "quiz": "Calcolo: dato l'oggetto reale (es. porta 200 cm) e la scala (1:20), qual è la misura sul disegno? 5 esercizi con feedback.",
+        "microlearning": "Card deck 4 slide: scala 1:1, 1:10, 1:50, 1:100 con esempio visivo per ciascuna. 3 min.",
+        "visual": "Infografica: tavola delle scale più usate con esempi (dall'oggetto alla città).",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-DIS-1-01"
+      ],
+      "tags": [
+        "scala",
+        "quotatura",
+        "disegno tecnico",
+        "proporzioni",
+        "classe-1",
+        "DIS"
+      ],
+      "compito_realta": "Scegli un oggetto della tua scrivania (libro, astuccio, borraccia), misuralo in tutti e tre i sensi e disegnane la pianta quotata alla scala più adatta per un foglio A4.",
+      "sdg": [
+        4
+      ],
+      "note_didattiche": {
+        "base": "Fornire la scala già calcolata. Lo studente deve solo disegnare e apporre le quote su un oggetto semplice (cubo).",
+        "avanzato": "Disegnare l'oggetto in due scale diverse e confrontare l'effetto visivo. Discutere quando si usa ciascuna."
+      }
+    },
+    {
+      "id": "MC-MAT-1-01",
+      "area": "MAT",
+      "anno": 1,
+      "titolo": "Classificare i materiali per proprietà",
+      "titolo_libro": "Quali materiali compongono gli oggetti che usi ogni giorno?",
+      "descrizione": "Lo studente sa classificare materiali di uso comune (legno, plastica, metallo, vetro, tessuto) in base a proprietà fisiche e meccaniche osservabili, e sa collegare ogni proprietà alla funzione dell'oggetto in cui il materiale è impiegato.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze: proprietà fisiche, meccaniche e tecnologiche dei materiali di uso comune; Traguardo: L'alunno riconosce le proprietà dei materiali di uso comune e le mette in relazione con le loro applicazioni, valutando le implicazioni ambientali delle scelte tecnologiche.",
+          "traguardo": "Lo studente riconosce le proprietà dei materiali e le mette in relazione con le loro applicazioni"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente usa risorse digitali per raccogliere dati sui materiali analizzati nel compito di realtà (ricerca online guidata su provenienza e smaltimento)"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente identifica e valuta risorse materiali nell'ambiente domestico per l'attività pratica, riconoscendo il loro valore e i loro limiti"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente valuta scelte progettuali basate sulle proprietà dei materiali, argomentando perché un materiale è adatto o inadatto a una funzione"
+        },
+        "EV": {
+          "ref": "SDG 12 — Consumo e produzione responsabili · L. 92/2019 Educazione Civica — Sviluppo sostenibile",
+          "nota": "La classificazione dei materiali orienta verso scelte di consumo più consapevoli; analizzare il ciclo di vita di un oggetto sviluppa la responsabilità ambientale"
+        }
+      },
+      "outputApp": {
+        "quiz": "Drag & drop: abbina materiale → proprietà → oggetto. 5 coppie, feedback specifico per ogni risposta errata che spiega perché quella proprietà non corrisponde.",
+        "microlearning": "Card deck 6 slide: 1 per materiale principale (legno, plastica, metallo, vetro, tessuto, compositi) + slide finale con tabella comparativa. Audio 3 min. Lettura stimata 4 min.",
+        "visual": "Infografica radiale: materiale al centro, proprietà sui raggi, esempi d'uso sui bordi. Versione interattiva: clic su ogni raggio mostra un esempio animato.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "materiali",
+        "proprietà fisiche",
+        "proprietà meccaniche",
+        "classificazione",
+        "origine naturale artificiale",
+        "ciclo di vita",
+        "classe-1",
+        "MAT",
+        "foundation"
+      ],
+      "compito_realta": "Analizza 5 oggetti di casa: per ognuno identifica la materia prima principale, una proprietà che lo rende adatto alla sua funzione, e come va smaltito a fine vita.",
+      "sdg": [
+        12,
+        9
+      ],
+      "sdg_principale": 12,
+      "note_didattiche": {
+        "base": "Fornire scheda pre-compilata con i 5 materiali già elencati e le proprietà in lista. Lo studente deve solo abbinare materiale → proprietà → smaltimento. Ammettere l'uso del libro di testo aperto durante il compito.",
+        "avanzato": "Aggiungere un 6° oggetto a scelta libera con analisi autonoma del ciclo di vita completo, inclusa la stima della CO₂ emessa durante la produzione (dati forniti in un link QR)."
+      },
+      "hook_audio": {
+        "titolo": "Trenta materiali. Un paio di scarpe.",
+        "oggetto_reale": "scarpe da ginnastica",
+        "domanda_avvio": "Quanti materiali diversi pensi che contengano le tue scarpe da ginnastica?",
+        "durata_min": 2,
+        "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti."
+      },
+      "professione_futura": {
+        "titolo": "Materials Scientist circolare",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta materiali che possono essere completamente separati e riciclati a fine vita — risolvendo il problema delle scarpe che finiscono in discarica.",
+        "competenze_chiave": [
+          "chimica dei polimeri",
+          "economia circolare",
+          "progettazione per il disassemblaggio",
+          "analisi del ciclo di vita (LCA)"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "proprietà meccanica",
+          "inglese": "mechanical property",
+          "pronuncia_ipa": "/məˈkænɪkəl ˈprɒpəti/"
+        },
+        {
+          "italiano": "materia prima",
+          "inglese": "raw material",
+          "pronuncia_ipa": "/rɔː məˈtɪəriəl/"
+        },
+        {
+          "italiano": "riciclaggio",
+          "inglese": "recycling",
+          "pronuncia_ipa": "/riːˈsaɪklɪŋ/"
+        },
+        {
+          "italiano": "biodegradabile",
+          "inglese": "biodegradable",
+          "pronuncia_ipa": "/ˌbaɪəʊdɪˈɡreɪdəbl/"
+        }
+      ],
+      "uda_collegata": "UDA-1",
+      "stem_connections": {
+        "matematica": "Percentuali e proporzioni: calcolo della quota riciclabile per massa di materiale (es. 'questa bottiglia è al 30% di plastica riciclata').",
+        "scienze": "Chimica dei polimeri: perché la plastica non si degrada biologicamente in tempi brevi. Fisica: densità come proprietà misurabile.",
+        "arte_geo_storia": "Geografia: distribuzione delle materie prime nel mondo — da dove vengono i materiali che usiamo (gomma dall'Indonesia, cotone dall'India, acciaio dalla Cina).",
+        "frase_ponte": "Ogni materiale obbedisce a leggi fisiche e chimiche che puoi misurare."
+      }
+    },
+    {
+      "id": "MC-MAT-1-02",
+      "area": "MAT",
+      "anno": 1,
+      "titolo": "Ciclo di vita dei materiali e cicli tecnologici",
+      "descrizione": "Lo studente sa descrivere le fasi del ciclo di vita di un materiale (estrazione, lavorazione, uso, smaltimento/riciclo) e le inserisce nel contesto del ciclo tecnologico completo: risorse → produzione → logistica → distribuzione → uso → fine vita. Sa individuare gli impatti ambientali e sociali di ciascuna fase e collega il concetto di catena del valore all'esperienza quotidiana.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze: Cicli tecnologici. L'applicazione sistematica e organizzata delle tecnologie per le attività produttive; le risorse materiali e immateriali come materie prime e fattori di trasformazione; il concetto di ciclo tecnologico; logistica e attività di supporto alla produzione; impatto sociale e ambientale; il concetto di ciclo di vita di un bene.",
+          "traguardo": "Lo studente descrive il percorso completo dei materiali — dalla materia prima al fine vita — inserendolo nel ciclo tecnologico e identificando gli attori della catena del valore"
+        },
+        "DC": {
+          "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente organizza in una timeline digitale le fasi del ciclo di vita e i soggetti della catena del valore"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente collega il ciclo tecnologico a modelli di economia circolare e scelte di consumo sostenibili"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente analizza le interdipendenze tra fasi produttive, logistica, distribuzione e impatto ambientale come sistema"
+        },
+        "EV": {
+          "ref": "SDG 12 — Consumo e produzione responsabili; SDG 15 — Vita sulla terra; SDG 9 — Industria, innovazione, infrastrutture",
+          "nota": "Comprendere il ciclo tecnologico completo è prerequisito per comportamenti di consumo responsabile e per valutare l'impatto delle scelte produttive"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario multipla: 'Una maglia di cotone arriva sullo scaffale del negozio — quante fasi ha attraversato?' Segue domanda sul soggetto responsabile dell'impatto in ciascuna fase. Feedback con dati reali (km percorsi, emissioni CO2).",
+        "microlearning": "Flowchart animato 7 slide: estrazione → lavorazione → produzione → logistica → distribuzione → uso → fine vita. Evidenzia il ciclo tecnologico come sistema integrato. Audio 3 min.",
+        "visual": "Infografica circolare 'ciclo tecnologico completo': frecce colorate per fase, icone di attori (azienda, trasportatore, consumatore, riciclatore), impatti per segmento.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-MAT-1-01"
+      ],
+      "tags": [
+        "ciclo di vita",
+        "ciclo tecnologico",
+        "LCA",
+        "logistica",
+        "catena del valore",
+        "sostenibilità",
+        "smaltimento",
+        "classe-1",
+        "MAT"
+      ],
+      "compito_realta": "Traccia il 'passaporto tecnologico' di un oggetto: scegli un oggetto di casa (es. una felpa, uno smartphone), mappa le 7 fasi del ciclo tecnologico, indica chi è responsabile di ciascuna fase (azienda, trasportatore, negozio, consumatore, raccoglitore) e il principale impatto ambientale. Indica dove puoi intervenire tu come consumatore.",
+      "sdg": [
+        12,
+        15
+      ],
+      "note_didattiche": {
+        "base": "Usare un oggetto semplice (bottiglia di plastica) con le fasi già nominate e le caselle della catena del valore pre-compilate. Lo studente descrive solo gli impatti e i responsabili.",
+        "avanzato": "Confrontare il ciclo tecnologico di due prodotti con la stessa funzione ma filiera diversa (es. maglia di cotone biologico locale vs. fast fashion importata): calcolare l'impronta di carbonio approssimativa per ciascuna fase e argomentare quale è preferibile e perché."
+      },
+      "hook_audio": {
+        "titolo": "Il viaggio segreto della tua felpa: 40.000 km prima di arrivare nel tuo armadio",
+        "oggetto_reale": "una felpa di cotone",
+        "domanda_avvio": "Hai mai pensato a quante persone, paesi e chilometri ci sono stati dietro prima che quella felpa finisse nel tuo armadio?",
+        "durata_min": 3,
+        "note_script": "Aprire con il dato che una felpa media percorre circa 40.000 km prima di essere venduta (cotone dal Texas, filatura in India, tessitura in Bangladesh, tintura in Vietnam, assemblaggio in Cambogia, logistica in Europa). Raccontare la storia come un viaggio in prima persona. Chiudere con: 'E quando la butti — il viaggio ricomincia da capo, o si ferma in una discarica?'. Tono: narrativo e leggermente sorprendente."
+      },
+      "professione_futura": {
+        "titolo": "Supply Chain Sustainability Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Analizza e ottimizza le catene di fornitura aziendali per ridurre le emissioni, garantire condizioni di lavoro etiche e minimizzare i rifiuti lungo tutto il ciclo tecnologico.",
+        "competenze_chiave": [
+          "analisi ciclo di vita (LCA)",
+          "logistica sostenibile",
+          "economia circolare",
+          "reportistica ESG"
+        ]
+      },
+      "sdg_principale": 12,
+      "clil_termini": [
+        {
+          "italiano": "ciclo di vita",
+          "inglese": "life cycle",
+          "pronuncia_ipa": "/laɪf ˈsaɪkəl/"
+        },
+        {
+          "italiano": "catena del valore",
+          "inglese": "value chain",
+          "pronuncia_ipa": "/ˈvæljuː tʃeɪn/"
+        },
+        {
+          "italiano": "logistica",
+          "inglese": "logistics",
+          "pronuncia_ipa": "/ləˈdʒɪstɪks/"
+        },
+        {
+          "italiano": "ciclo tecnologico",
+          "inglese": "technological cycle",
+          "pronuncia_ipa": "/ˌteknəˈlɒdʒɪkəl ˈsaɪkəl/"
+        }
+      ],
+      "uda_collegata": null
+    },
+    {
+      "id": "MC-MAT-1-03",
+      "area": "MAT",
+      "anno": 1,
+      "titolo": "Materiali innovativi e sostenibili",
+      "descrizione": "Lo studente conosce le caratteristiche principali di materiali innovativi (bioplastiche, materiali riciclati, compositi) e sa valutare la loro sostenibilità rispetto ai materiali tradizionali, applicando criteri ambientali ed economici a casi concreti.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+          "traguardo": "Lo studente riconosce materiali innovativi e ne valuta la sostenibilità"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati",
+          "livello": "F",
+          "nota": "Lo studente ricerca online esempi di materiali innovativi e valuta le fonti"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Creativity",
+          "nota": "Lo studente immagina applicazioni pratiche di materiali innovativi"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente confronta pro e contro di materiali tradizionali vs. innovativi"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione e infrastrutture; SDG 12 — Consumo responsabile",
+          "nota": "I materiali innovativi sono driver di innovazione sostenibile"
+        }
+      },
+      "outputApp": {
+        "quiz": "Vero/Falso con scenario: 'La bioplastica è sempre biodegradabile?' — 5 affermazioni con feedback argomentato.",
+        "microlearning": "Card deck 5 slide: un materiale innovativo per slide (bioplastica, aerogel, grafene, materiale riciclato, composito). 4 min.",
+        "visual": "Tabella comparativa: materiale tradizionale vs. innovativo — proprietà, costo, impatto ambientale.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-MAT-1-01",
+        "MC-MAT-1-02"
+      ],
+      "tags": [
+        "materiali innovativi",
+        "bioplastica",
+        "sostenibilità",
+        "innovazione",
+        "classe-1",
+        "MAT"
+      ],
+      "compito_realta": "Progetta un packaging sostenibile per un prodotto alimentare: scegli il materiale, giustifica la scelta con almeno 2 proprietà e confrontalo con l'imballaggio originale.",
+      "sdg": [
+        9,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Fornire una scheda con 3 materiali innovativi già descritti. Lo studente sceglie solo tra quelli dati.",
+        "avanzato": "Ricercare autonomamente un materiale innovativo non in elenco, documentare le fonti e presentarlo alla classe."
+      }
+    },
+    {
+      "id": "MC-MAT-1-04",
+      "area": "MAT",
+      "anno": 1,
+      "titolo": "Rifiuti, riciclaggio e smaltimento",
+      "descrizione": "Lo studente sa distinguere le categorie di rifiuti (urbani, speciali, pericolosi), conosce le regole della raccolta differenziata e comprende i processi industriali di riciclo e recupero energetico, collegandoli alla riduzione dell'impatto ambientale.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni tra scienza, tecnologia e contesto",
+          "traguardo": "Lo studente descrive i sistemi di gestione dei rifiuti e il loro impatto sull'ambiente"
+        },
+        "DC": {
+          "ref": "2.2 Condividere contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente produce e condivide un report digitale sull'analisi dei rifiuti scolastici"
+        },
+        "EC": {
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente propone azioni concrete di riduzione dei rifiuti nel contesto scolastico"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente si riconosce come agente attivo nella gestione sostenibile dei rifiuti"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città e comunità sostenibili; SDG 12 — Consumo responsabile",
+          "nota": "La corretta gestione dei rifiuti è pratica di cittadinanza attiva quotidiana"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario multipla: 'Dove butto questo?' — 8 oggetti da classificare nella raccolta differenziata corretta. Feedback con la motivazione.",
+        "microlearning": "Card deck 6 slide: le 5 R (Rifiuta, Riduci, Riusa, Ricicla, Recupera) + slide sullo smaltimento speciale. 4 min.",
+        "visual": "Flowchart: dal bidone al riciclo — percorso della plastica, carta, vetro, organico.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-MAT-1-01",
+        "MC-MAT-1-02"
+      ],
+      "tags": [
+        "rifiuti",
+        "raccolta differenziata",
+        "riciclaggio",
+        "5R",
+        "classe-1",
+        "MAT"
+      ],
+      "compito_realta": "Analizza la raccolta differenziata della scuola: conta i bidoni presenti, osserva per un giorno cosa viene gettato, identifica 3 errori frequenti e proponi una soluzione.",
+      "sdg": [
+        11,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Concentrarsi solo sulle 3 categorie principali (plastica/carta/indifferenziato). Usare immagini degli oggetti invece dei nomi.",
+        "avanzato": "Calcolare il tasso di raccolta differenziata della classe per una settimana e confrontarlo con il dato comunale."
+      }
+    },
+    {
+      "id": "MC-MAT-1-05",
+      "area": "MAT",
+      "anno": 1,
+      "titolo": "Scegliere il materiale giusto per un progetto",
+      "descrizione": "Lo studente sa selezionare il materiale più adatto per un oggetto o un progetto specifico, applicando criteri tecnici (resistenza, leggerezza, lavorabilità), economici (costo) e ambientali (impatto, riciclabilità) in modo integrato.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche utilizzando elementi del disegno tecnico",
+          "traguardo": "Lo studente applica criteri di selezione dei materiali alla progettazione di oggetti semplici"
+        },
+        "DC": {
+          "ref": "5.3 Identificare lacune nelle proprie competenze digitali",
+          "livello": "F",
+          "nota": "Lo studente usa strumenti digitali per confrontare materiali e documentare la propria scelta progettuale"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Design thinking",
+          "nota": "Lo studente applica criteri multipli per prendere decisioni progettuali"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente affronta un problema progettuale con un approccio strutturato e multi-criterio"
+        },
+        "EV": {
+          "ref": "SDG 12 — Consumo e produzione responsabili",
+          "nota": "Scegliere materiali con criteri ambientali è un atto di design responsabile"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario progettuale: 'Devi costruire una borraccia scolastica — quale materiale scegli?' — multipla con 4 opzioni e feedback tecnico.",
+        "microlearning": "Card interattiva: matrice di selezione materiale (3 criteri × 4 materiali). Studente compila i pesi. 5 min.",
+        "visual": "Matrice decisionale: asse X = criteri, asse Y = materiali, con scala cromatica.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-MAT-1-01",
+        "MC-MAT-1-03"
+      ],
+      "tags": [
+        "selezione materiali",
+        "progettazione",
+        "criteri tecnici",
+        "design",
+        "classe-1",
+        "MAT"
+      ],
+      "compito_realta": "Scegli il materiale per costruire una piccola libreria da muro: confronta 3 materiali possibili in una tabella con almeno 4 criteri e giustifica la scelta finale in 5 righe.",
+      "sdg": [
+        9,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Fornire la tabella dei criteri già impostata. Lo studente deve solo assegnare punteggi da 1 a 3.",
+        "avanzato": "Lo studente aggiunge autonomamente un 5° criterio di valutazione e riflette su eventuali compromessi tra criteri in conflitto."
+      }
+    },
+    {
+      "id": "MC-MAT-1-06",
+      "area": "MAT",
+      "anno": 1,
+      "titolo": "Biomateriali e bioplastiche: il futuro dei materiali",
+      "descrizione": "Lo studente comprende cosa sono i biomateriali (materiali di origine biologica o prodotti da organismi viventi), conosce esempi concreti di bioplastiche e materiali biodegradabili, e sa discutere criticamente i limiti e le potenzialità di queste alternative.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+          "traguardo": "Lo studente riconosce i biomateriali come risposta tecnologica alla crisi ambientale"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente valuta criticamente articoli e fonti web sui biomateriali"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente collega innovazione dei materiali a modelli di economia circolare"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione; SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
+          "nota": "I biomateriali riducono l'inquinamento da plastica convenzionale"
+        }
+      },
+      "outputApp": {
+        "quiz": "Vero/Falso con spiegazione: 5 affermazioni sulle bioplastiche (es. 'La bioplastica si smaltisce nel compostaggio domestico').",
+        "microlearning": "Card deck 5 slide: fungo-materiale (mycelium), PLA, amido di mais, seta batterica, fibra di canapa. 4 min.",
+        "visual": "Infografica: bioplastica convenzionale — confronto su 4 parametri con icone.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-MAT-1-03",
+        "MC-MAT-1-04"
+      ],
+      "tags": [
+        "biomateriali",
+        "bioplastica",
+        "biodegradabile",
+        "economia circolare",
+        "classe-1",
+        "MAT"
+      ],
+      "compito_realta": "Ricerca un prodotto commerciale che dichiara di usare bioplastica: verifica la composizione reale sull'etichetta, cerca come va smaltito e valuta se l'etichetta 'bio' è giustificata o fuorviante.",
+      "sdg": [
+        9,
+        14,
+        15
+      ],
+      "note_didattiche": {
+        "base": "Fornire 3 prodotti già selezionati con le etichette analizzate. Lo studente confronta i dati già estratti.",
+        "avanzato": "Progettare un esperimento semplice per testare la biodegradabilità in classe (interrare campioni, osservare per 2 settimane)."
+      }
+    },
+    {
+      "id": "MC-ALI-2-01",
+      "area": "ALI",
+      "anno": 2,
+      "titolo": "Tecniche agronomiche e coltivazioni",
+      "descrizione": "Lo studente conosce i principali fattori che influenzano la coltivazione delle piante (suolo, clima, irrigazione, concimazione), sa distinguere tra agricoltura convenzionale, biologica e idroponica, e comprende come le scelte agronomiche impattano la qualità degli alimenti e l'ambiente.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+          "traguardo": "Lo studente descrive i processi agronomici e li collega alla qualità e sostenibilità degli alimenti"
+        },
+        "DC": {
+          "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente documenta digitalmente la crescita di una pianta con foto e dati misurati"
+        },
+        "EC": {
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente pianifica e gestisce autonomamente un mini-orto scolastico"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente comprende il legame tra pratiche agricole e benessere collettivo"
+        },
+        "EV": {
+          "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
+          "nota": "L'agricoltura sostenibile è strumento di sicurezza alimentare e tutela della biodiversità"
+        }
+      },
+      "outputApp": {
+        "quiz": "Abbinamento: pianta → tecnica di coltivazione più adatta → motivazione. 4 coppie con feedback.",
+        "microlearning": "Card deck 5 slide: terreno, acqua, sole, concime, semina — un fattore per slide con icone. 4 min.",
+        "visual": "Schema: convenzionale vs. biologico vs. idroponico — 3 colonne × 4 parametri.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "agronomia",
+        "coltivazione",
+        "agricoltura biologica",
+        "idroponica",
+        "classe-2",
+        "ALI"
+      ],
+      "compito_realta": "Coltiva una piantina in classe (germinazione di un fagiolo o basilico): documenta con foto e misurazioni settimanali per 3 settimane, registra i dati in una tabella e scrivi le conclusioni.",
+      "sdg": [
+        2,
+        15
+      ],
+      "note_didattiche": {
+        "base": "Fornire la scheda di osservazione pre-strutturata con le colonne da compilare. Usare una pianta a crescita veloce (rucola).",
+        "avanzato": "Confrontare due piante uguali cresciute in condizioni diverse (es. con e senza concime) e analizzare le differenze."
+      }
+    },
+    {
+      "id": "MC-ALI-2-02",
+      "area": "ALI",
+      "anno": 2,
+      "titolo": "Industria alimentare e tecniche di conservazione",
+      "descrizione": "Lo studente conosce i principali metodi di conservazione degli alimenti (pastorizzazione, sterilizzazione, essiccazione, surgelazione, confezionamento in atmosfera modificata), sa spiegare il principio fisico o chimico alla base di ciascuno e comprende come la tecnologia alimentare ha trasformato la nutrizione moderna.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+          "traguardo": "Lo studente descrive le tecnologie di conservazione alimentare e i loro principi scientifici"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati",
+          "livello": "I",
+          "nota": "Lo studente cerca e confronta fonti diverse sulla composizione e conservazione degli alimenti"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente collega metodi di conservazione alla riduzione degli sprechi alimentari"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente spiega perché un metodo di conservazione funziona usando i principi fisici/chimici"
+        },
+        "EV": {
+          "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
+          "nota": "La conservazione efficiente degli alimenti riduce gli sprechi e contribuisce alla sicurezza alimentare"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario: 'Hai del latte fresco — quale metodo usi per farlo durare 6 mesi senza frigorifero?' Multipla con feedback tecnico.",
+        "microlearning": "Card deck 6 slide: un metodo di conservazione per slide con principio fisico, esempio di prodotto, pro/contro. 5 min.",
+        "visual": "Timeline storica: dall'affumicatura preistorica al confezionamento sottovuoto — 5 tappe.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-ALI-2-01"
+      ],
+      "tags": [
+        "conservazione alimenti",
+        "pastorizzazione",
+        "industria alimentare",
+        "tecnologia",
+        "classe-2",
+        "ALI"
+      ],
+      "compito_realta": "Nel frigo o nella dispensa? Classifica 10 alimenti di casa per metodo di conservazione usato, spiega perché ciascuno richiede quel metodo e indica la scadenza media.",
+      "sdg": [
+        2,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Fornire la lista dei 10 alimenti e la tabella con le colonne da compilare. Concentrarsi solo su 3 metodi principali.",
+        "avanzato": "Progettare una catena del freddo per un prodotto deperibile: dal produttore al consumatore, indicando ogni punto critico."
+      }
+    },
+    {
+      "id": "MC-ALI-2-03",
+      "area": "ALI",
+      "anno": 2,
+      "titolo": "Educazione alimentare e stili di vita",
+      "descrizione": "Lo studente conosce i principi della dieta equilibrata (macronutrienti, micronutrienti, piramide alimentare), sa leggere un'etichetta nutrizionale, e comprende la relazione tra alimentazione, salute e stile di vita, sviluppando consapevolezza critica rispetto alle pressioni commerciali sul cibo.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa gestire semplici calcoli per la vita quotidiana",
+          "traguardo": "Lo studente sa leggere un'etichetta nutrizionale e valutare la qualità di un alimento"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente valuta criticamente le affermazioni nutrizionali sui packaging alimentari"
+        },
+        "EC": {
+          "ref": "Into action / Self-awareness",
+          "nota": "Lo studente riflette sui propri comportamenti alimentari e identifica aree di miglioramento"
+        },
+        "LC": {
+          "ref": "Self-management / Wellbeing",
+          "nota": "Lo studente collega scelte alimentari consapevoli al proprio benessere fisico e mentale"
+        },
+        "EV": {
+          "ref": "SDG 3 — Salute e benessere; SDG 12 — Consumo responsabile",
+          "nota": "Alimentazione consapevole è atto di cura di sé e di scelta di consumo responsabile"
+        }
+      },
+      "outputApp": {
+        "quiz": "Lettura etichetta: mostra l'etichetta nutrizionale di un prodotto e chiedi: è adatto come snack quotidiano? Multipla con calcolo guidato.",
+        "microlearning": "Card deck 5 slide: piramide alimentare interattiva — tocca ogni livello per scoprire frequenza e porzioni. 4 min.",
+        "visual": "Confronto visivo: etichetta nutrizionale di 3 prodotti 'simili' (barrette energetiche) — chi vince?",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-ALI-2-01"
+      ],
+      "tags": [
+        "nutrizione",
+        "etichetta nutrizionale",
+        "dieta equilibrata",
+        "salute",
+        "classe-2",
+        "ALI"
+      ],
+      "compito_realta": "Tieni un diario alimentare per 3 giorni: annota tutto ciò che mangi, classificalo per gruppi alimentari e valuta se la tua dieta è equilibrata rispetto alla piramide alimentare.",
+      "sdg": [
+        3,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Fornire la tabella del diario già strutturata con i gruppi alimentari pre-etichettati. Concentrarsi su un solo giorno.",
+        "avanzato": "Calcolare l'apporto calorico giornaliero medio e confrontarlo con il fabbisogno energetico per la propria età e attività."
+      }
+    },
+    {
+      "id": "MC-ALI-2-04",
+      "area": "ALI",
+      "anno": 2,
+      "titolo": "La filiera alimentare e l'etichetta",
+      "descrizione": "Lo studente sa ricostruire la filiera produttiva di un alimento comune (dal campo alla tavola), identifica gli attori della filiera e sa leggere un'etichetta alimentare completa (ingredienti, additivi, provenienza, certificazioni), collegando trasparenza dell'etichetta a scelte di consumo informate.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+          "traguardo": "Lo studente descrive la filiera alimentare e interpreta le informazioni obbligatorie sull'etichetta"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente cerca online informazioni su provenienza e certificazioni alimentari per verificare le etichette"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Valuing ideas",
+          "nota": "Lo studente comprende che la trasparenza della filiera ha valore economico e sociale"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente esercita scelte di consumo informate come atto di cittadinanza"
+        },
+        "EV": {
+          "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
+          "nota": "Conoscere la filiera permette scelte che supportano produttori locali e pratiche sostenibili"
+        }
+      },
+      "outputApp": {
+        "quiz": "Ordina gli step: metti in sequenza corretta la filiera del pane (grano → molitura → impasto → cottura → distribuzione → acquisto). Feedback se sbagliato.",
+        "microlearning": "Card deck 5 slide: la filiera della pasta — un attore per slide con foto e funzione. 4 min.",
+        "visual": "Mappa della filiera: diagramma a frecce dal campo al supermercato con distanza media percorsa.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-ALI-2-01",
+        "MC-ALI-2-02"
+      ],
+      "tags": [
+        "filiera",
+        "etichetta alimentare",
+        "tracciabilità",
+        "consumo",
+        "classe-2",
+        "ALI"
+      ],
+      "compito_realta": "Analizza l'etichetta di 3 prodotti alimentari diversi: identifica paese d'origine, additivi presenti, certificazioni (bio, IGP, DOP) e valuta quale offre più trasparenza al consumatore.",
+      "sdg": [
+        2,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Fornire le 3 etichette già stampate con le sezioni evidenziate. Lo studente deve solo compilare una tabella comparativa.",
+        "avanzato": "Confrontare la filiera di un prodotto locale vs. uno importato: calcolare la stima delle emissioni di CO₂ per il trasporto."
+      }
+    },
+    {
+      "id": "MC-ALI-2-05",
+      "area": "ALI",
+      "anno": 2,
+      "titolo": "Sprechi alimentari e sostenibilità",
+      "descrizione": "Lo studente comprende le dimensioni del fenomeno dello spreco alimentare (dati globali e domestici), sa identificare le fasi della filiera dove si genera più spreco e conosce strategie pratiche per ridurlo, collegando scelte quotidiane a impatti globali ambientali ed economici.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e utilizza oggetti, strumenti e macchine di uso comune ed è in grado di classificarli e descriverne la funzione",
+          "traguardo": "Lo studente analizza il sistema alimentare individuando inefficienze e proposte di miglioramento"
+        },
+        "DC": {
+          "ref": "2.1 Interagire con tecnologie digitali",
+          "livello": "I",
+          "nota": "Lo studente usa app di monitoraggio degli sprechi o fogli di calcolo per raccogliere dati domestici"
+        },
+        "EC": {
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente propone e attua azioni concrete di riduzione degli sprechi nel proprio contesto"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali"
+        },
+        "EV": {
+          "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "Lo spreco alimentare produce il 10% delle emissioni globali di gas serra"
+        }
+      },
+      "outputApp": {
+        "quiz": "Dati e impatto: 'Un terzo del cibo mondiale viene sprecato — quanto CO₂ produce annualmente?' Multipla con infografica di supporto.",
+        "microlearning": "Card deck 5 slide: dove si spreca di più (campo, trasporto, distribuzione, casa, ristorazione) con dato percentuale. 4 min.",
+        "visual": "Piramide invertita dello spreco: quota % per ogni fase della filiera.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-ALI-2-02",
+        "MC-ALI-2-03"
+      ],
+      "tags": [
+        "spreco alimentare",
+        "sostenibilità",
+        "food waste",
+        "impatto ambientale",
+        "classe-2",
+        "ALI"
+      ],
+      "compito_realta": "Monitora gli sprechi alimentari in casa per una settimana: pesa o stima il cibo buttato ogni giorno, classifica per tipo (pane, verdura, avanzi...) e proponi 3 strategie per ridurlo.",
+      "sdg": [
+        2,
+        12,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Concentrarsi solo sullo spreco domestico. Fornire tabella di monitoraggio semplificata (3 categorie).",
+        "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
+      }
+    },
+    {
+      "id": "MC-ALI-2-06",
+      "area": "ALI",
+      "anno": 2,
+      "titolo": "Cibo, cultura e biodiversità",
+      "descrizione": "Lo studente esplora la relazione tra cibo, identità culturale e biodiversità agricola, comprende il concetto di erosione della biodiversità alimentare e sa valutare l'importanza della preservazione di varietà tradizionali e locali come patrimonio culturale e risorsa per il futuro.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+          "traguardo": "Lo studente collega le tradizioni alimentari alla biodiversità e al patrimonio culturale locale"
+        },
+        "DC": {
+          "ref": "2.2 Condividere contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente crea e condivide un contenuto digitale (video, presentazione) su una tradizione alimentare locale"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Creativity",
+          "nota": "Lo studente valorizza le tradizioni locali come risorsa per l'innovazione alimentare"
+        },
+        "LC": {
+          "ref": "Social / Cultural awareness",
+          "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità"
+        },
+        "EV": {
+          "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
+          "nota": "La biodiversità alimentare è fondamento della sicurezza alimentare futura"
+        }
+      },
+      "outputApp": {
+        "quiz": "Collegamento: abbina prodotto DOP/IGP alla sua regione di origine. 6 prodotti italiani con mappa interattiva.",
+        "microlearning": "Card deck 5 slide: 5 varietà agricole a rischio estinzione con nome, storia, dove si coltiva ancora. 4 min.",
+        "visual": "Mappa interattiva: biodiversità alimentare italiana — prodotti tradizionali per regione.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-ALI-2-01",
+        "MC-ALI-2-03"
+      ],
+      "tags": [
+        "biodiversità",
+        "cultura alimentare",
+        "tradizioni",
+        "DOP",
+        "classe-2",
+        "ALI"
+      ],
+      "compito_realta": "Intervista un familiare o anziano del tuo paese su un piatto tradizionale della tua famiglia o regione: documenta la ricetta, gli ingredienti locali usati e il significato culturale in una scheda di max 1 pagina.",
+      "sdg": [
+        2,
+        15
+      ],
+      "note_didattiche": {
+        "base": "Fornire una scheda-intervista con le domande già formulate. Lo studente deve solo compilare le risposte.",
+        "avanzato": "Creare una mappa digitale della biodiversità alimentare del proprio comune usando Google Maps con pin e schede informative."
+      }
+    },
+    {
+      "id": "MC-AMB-2-01",
+      "area": "AMB",
+      "anno": 2,
+      "titolo": "Strutture edilizie e tecniche costruttive",
+      "descrizione": "Lo studente conosce i principali sistemi strutturali (fondazioni, muri portanti, pilastri, travi, solai, coperture), sa distinguere strutture in muratura, cemento armato, acciaio e legno, e comprende come la forma strutturale risponde ai carichi, collegando la scelta tecnica al contesto geografico e climatico.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse e produzione di beni",
+          "traguardo": "Lo studente descrive le tecniche costruttive principali e i materiali da costruzione"
+        },
+        "DC": {
+          "ref": "5.1 Risolvere problemi tecnici",
+          "livello": "F",
+          "nota": "Lo studente usa strumenti digitali (Tinkercad, SketchUp free) per modellare semplici strutture"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente pianifica una struttura sperimentale valutando materiali e vincoli"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente affronta la sfida strutturale (spaghetti/marshmallow) con approccio metodico"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città e comunità sostenibili",
+          "nota": "Conoscere le strutture edilizie è prerequisito per comprendere la qualità e la sicurezza dell'habitat urbano"
+        }
+      },
+      "outputApp": {
+        "quiz": "Abbinamento: collegamento strutturale → materiale più adatto → motivazione. 5 coppie con feedback.",
+        "microlearning": "Card deck 5 slide: fondazioni, muro portante, pilastro/trave, solaio, copertura — schema + funzione. 4 min.",
+        "visual": "Sezione di un edificio a strati: ogni elemento strutturale evidenziato con nome e materiale.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "strutture edilizie",
+        "costruzione",
+        "cemento armato",
+        "muratura",
+        "classe-2",
+        "AMB"
+      ],
+      "compito_realta": "Costruisci la struttura più alta possibile usando 20 spaghetti e 5 marshmallow che regga il peso di un libro per 10 secondi: documenta il processo, misura l'altezza e spiega perché ha retto o ceduto.",
+      "sdg": [
+        11
+      ],
+      "note_didattiche": {
+        "base": "Fornire un progetto guidato (triangolo base + colonna) già testato. Lo studente segue le istruzioni e osserva il risultato.",
+        "avanzato": "Progettare una struttura antisisminca: come cambia il design se la struttura deve resistere a vibrazioni laterali?"
+      }
+    },
+    {
+      "id": "MC-AMB-2-02",
+      "area": "AMB",
+      "anno": 2,
+      "titolo": "Impianti domestici e risparmio energetico",
+      "descrizione": "Lo studente conosce i principali impianti di un'abitazione (elettrico, idrico, termico, gas), sa leggere uno schema semplificato, comprende le norme di sicurezza di base e sa calcolare il consumo energetico di elettrodomestici comuni, sviluppando abitudini di risparmio energetico consapevole.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le relazioni con l'ambiente",
+          "traguardo": "Lo studente descrive gli impianti domestici e applica criteri di sicurezza ed efficienza"
+        },
+        "DC": {
+          "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente usa un foglio di calcolo per stimare i consumi energetici domestici"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente identifica azioni di risparmio energetico applicabili nel proprio contesto domestico"
+        },
+        "LC": {
+          "ref": "Self-management / Responsible decisions",
+          "nota": "Lo studente assume responsabilità nelle scelte energetiche domestiche quotidiane"
+        },
+        "EV": {
+          "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "Il risparmio energetico domestico è contributo diretto alla riduzione delle emissioni"
+        }
+      },
+      "outputApp": {
+        "quiz": "Calcolo guidato: 'Il tuo televisore da 100W è acceso 4 ore al giorno — quanto consuma in un mese?' Feedback con formula.",
+        "microlearning": "Card deck 5 slide: impianto elettrico, idrico, termico, gas, fotovoltaico — schema + pericoli principali. 5 min.",
+        "visual": "Sezione della casa: tutti gli impianti sovrapposti in colori diversi — legenda interattiva.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-AMB-2-01"
+      ],
+      "tags": [
+        "impianti",
+        "risparmio energetico",
+        "sicurezza",
+        "consumi",
+        "classe-2",
+        "AMB"
+      ],
+      "compito_realta": "Disegna lo schema semplificato degli impianti della tua casa: identifica dove entra l'acqua, dove va l'elettricità e dove si trovano i principali punti di sicurezza (interruttore generale, contatore gas, valvola acqua).",
+      "sdg": [
+        7,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Fornire la pianta della casa già disegnata. Lo studente deve solo aggiungere i simboli degli impianti su overlay.",
+        "avanzato": "Calcolare il consumo mensile dell'intera abitazione e identificare i 3 elettrodomestici più energivori con proposte di sostituzione."
+      }
+    },
+    {
+      "id": "MC-AMB-2-03",
+      "area": "AMB",
+      "anno": 2,
+      "titolo": "Città, servizi urbani e pianificazione",
+      "descrizione": "Lo studente comprende come una città è organizzata (zone residenziali, commerciali, industriali, verdi), conosce i principali servizi urbani (trasporti, rifiuti, acqua, verde pubblico) e sa analizzare un quartiere reale individuando punti di forza, carenze e possibili miglioramenti.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente e nei sistemi tecnologici le relazioni con il contesto",
+          "traguardo": "Lo studente analizza l'organizzazione urbana e individua le funzioni dei servizi della città"
+        },
+        "DC": {
+          "ref": "2.1 Interagire con tecnologie digitali",
+          "livello": "I",
+          "nota": "Lo studente usa Google Maps/Earth per analizzare la struttura urbana e identificare servizi"
+        },
+        "EC": {
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente propone miglioramenti concreti per il proprio quartiere"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente si riconosce come abitante attivo e responsabile della propria comunità urbana"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città e comunità sostenibili",
+          "nota": "Analizzare la città è il primo passo per diventare cittadini attivi e partecipi"
+        }
+      },
+      "outputApp": {
+        "quiz": "Classificazione: 8 foto di luoghi urbani da abbinare alla categoria (residenziale/commerciale/industriale/verde/servizi). Feedback.",
+        "microlearning": "Card deck 5 slide: le 5 funzioni di una città (abitare, lavorare, muoversi, svagarsi, curarsi) con esempi. 4 min.",
+        "visual": "Mappa concettuale: la città come sistema — nodi (funzioni) e connessioni (relazioni).",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-AMB-2-01"
+      ],
+      "tags": [
+        "città",
+        "urbanistica",
+        "servizi urbani",
+        "quartiere",
+        "classe-2",
+        "AMB"
+      ],
+      "compito_realta": "Analizza il quartiere della scuola: usando Google Maps, identifica le zone funzionali, conta i servizi presenti (scuole, ospedali, parchi, fermate bus) e proponi un miglioramento motivato.",
+      "sdg": [
+        11
+      ],
+      "note_didattiche": {
+        "base": "Fornire la mappa del quartiere già stampata con le zone pre-etichettate. Lo studente identifica solo i servizi mancanti.",
+        "avanzato": "Confrontare il proprio quartiere con un quartiere di un'altra città italiana o europea: stesso numero di abitanti, diversa qualità dei servizi — perché?"
+      }
+    },
+    {
+      "id": "MC-AMB-2-04",
+      "area": "AMB",
+      "anno": 2,
+      "titolo": "Materiali da costruzione e sostenibilità",
+      "descrizione": "Lo studente conosce i principali materiali da costruzione (mattone, cemento, acciaio, legno, vetro, materiali isolanti) con le loro proprietà termiche, meccaniche e ambientali, e sa valutare la scelta del materiale in relazione all'efficienza energetica dell'edificio e all'impatto ambientale del ciclo costruttivo.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+          "traguardo": "Lo studente valuta i materiali da costruzione in base a proprietà tecniche e impatto ambientale"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati",
+          "livello": "I",
+          "nota": "Lo studente ricerca schede tecniche online dei materiali e confronta i dati di sostenibilità"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente collega le scelte costruttive al ciclo di vita dell'edificio e ai costi a lungo termine"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città sostenibili; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "Il settore edilizio produce il 39% delle emissioni globali — materiali sostenibili sono risposta concreta"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario: 'Devi scegliere il materiale per le pareti esterne di una casa in zona fredda — quale ha il miglior isolamento termico?' Multipla con dati tecnici.",
+        "microlearning": "Card deck 5 slide: mattone, calcestruzzo, legno X-lam, acciaio, isolanti — proprietà chiave + impatto. 5 min.",
+        "visual": "Tabella comparativa: 5 materiali × 4 parametri (resistenza, isolamento, costo, impatto CO₂).",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-AMB-2-01"
+      ],
+      "tags": [
+        "materiali edilizi",
+        "sostenibilità",
+        "isolamento",
+        "edilizia green",
+        "classe-2",
+        "AMB"
+      ],
+      "compito_realta": "Analizza la tua casa o scuola: osserva i materiali usati per pareti, pavimenti, finestre e tetto, crea una tabella con 4 materiali identificati e valuta per ciascuno il potenziale di miglioramento per l'efficienza energetica.",
+      "sdg": [
+        11,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Fornire la tabella con i parametri e i valori già inseriti per 3 materiali. Lo studente aggiunge solo il 4°.",
+        "avanzato": "Calcolare approssimativamente la dispersione termica di una parete non isolata vs. isolata usando i valori di conduttività termica forniti."
+      }
+    },
+    {
+      "id": "MC-AMB-2-05",
+      "area": "AMB",
+      "anno": 2,
+      "titolo": "Smart city e tecnologie per la città intelligente",
+      "descrizione": "Lo studente comprende il concetto di smart city (uso di tecnologie digitali per ottimizzare i servizi urbani), conosce applicazioni concrete (semafori intelligenti, raccolta rifiuti ottimizzata, illuminazione adattiva, parcheggi smart) e sa discutere i benefici e i rischi legati alla raccolta massiva di dati urbani.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con il contesto",
+          "traguardo": "Lo studente descrive le tecnologie smart city e ne valuta impatti e rischi"
+        },
+        "DC": {
+          "ref": "4.2 Proteggere i dati personali e la privacy",
+          "livello": "I",
+          "nota": "Lo studente riflette sui dati raccolti dai sensori urbani e sulle implicazioni per la privacy dei cittadini"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Creativity",
+          "nota": "Lo studente immagina soluzioni smart per problemi reali del proprio quartiere"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Innovazione",
+          "nota": "Le smart city sono strumento per rendere le città più efficienti, inclusive e sostenibili"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario dilemma: 'Il Comune vuole installare telecamere con riconoscimento facciale ai semafori per ridurre il traffico — sei d'accordo?' Risposta aperta guidata da pro/contro.",
+        "microlearning": "Card deck 5 slide: 5 applicazioni smart city reali (Amsterdam, Barcellona, Songdo, Torino, Singapore) con dati. 5 min.",
+        "visual": "Mappa concettuale: smart city — tecnologie, dati, servizi, rischi, governance.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-AMB-2-03"
+      ],
+      "tags": [
+        "smart city",
+        "IoT",
+        "tecnologia urbana",
+        "privacy",
+        "classe-2",
+        "AMB"
+      ],
+      "compito_realta": "Progetta una soluzione smart per un problema reale del quartiere della tua scuola (es. traffico all'uscita, rifiuti abbandonati, illuminazione carente): descrivi la tecnologia usata, i dati raccolti e chi ne beneficia.",
+      "sdg": [
+        9,
+        11
+      ],
+      "note_didattiche": {
+        "base": "Fornire 3 problemi pre-selezionati e 3 soluzioni possibili. Lo studente sceglie e motiva.",
+        "avanzato": "Analizzare i dati aperti (open data) del proprio comune: cosa pubblica? Cosa manca? Cosa si potrebbe fare con quei dati?"
+      }
+    },
+    {
+      "id": "MC-AMB-2-06",
+      "area": "AMB",
+      "anno": 2,
+      "titolo": "Rischio idrogeologico e prevenzione",
+      "descrizione": "Lo studente comprende cosa si intende per rischio idrogeologico (frane, alluvioni, siccità), sa leggere una mappa del rischio semplificata, e conosce le principali misure di prevenzione tecnologica e comportamentale, sviluppando consapevolezza del rapporto tra territorio, clima e sicurezza.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con la natura",
+          "traguardo": "Lo studente descrive i rischi idrogeologici e le tecnologie di monitoraggio e prevenzione"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati",
+          "livello": "I",
+          "nota": "Lo studente usa piattaforme GIS (es. ISPRA, Geoportale) per consultare mappe del rischio del proprio territorio"
+        },
+        "EC": {
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente identifica azioni preventive realizzabili nella propria comunità"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "Il rischio idrogeologico è amplificato dai cambiamenti climatici: prevenire è adattarsi"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario di emergenza: 'Sei in una zona con allerta arancione per piogge intense — quali azioni eviti? Quali fai?' Multipla con feedback di protezione civile.",
+        "microlearning": "Card deck 5 slide: frana, alluvione, siccità, erosione costiera, valanga — cause + segnali premonitori + cosa fare. 5 min.",
+        "visual": "Mappa del rischio Italia: aree rosse, arancioni, gialle con legenda e casistiche storiche.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-AMB-2-02",
+        "MC-AMB-2-03"
+      ],
+      "tags": [
+        "rischio idrogeologico",
+        "prevenzione",
+        "territorio",
+        "alluvioni",
+        "classe-2",
+        "AMB"
+      ],
+      "compito_realta": "Ricerca se il territorio del tuo comune è classificato a rischio idrogeologico sul Geoportale ISPRA: identifica il livello di rischio, l'ultimo evento registrato e una misura di prevenzione esistente o possibile.",
+      "sdg": [
+        11,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Fornire la scheda del comune già compilata parzialmente. Lo studente aggiunge solo la misura di prevenzione.",
+        "avanzato": "Confrontare due comuni italiani con lo stesso livello di rischio ma diversa capacità di risposta: cosa fa la differenza?"
+      }
+    },
+    {
+      "id": "MC-DIG-2-01",
+      "area": "DIG",
+      "anno": 2,
+      "titolo": "Coding con linguaggi a blocchi",
+      "descrizione": "Lo studente sa programmare in Scratch (o linguaggio a blocchi equivalente) usando le strutture fondamentali (sequenza, selezione, ciclo, variabili), sa decomporre un problema in sottoproblemi e sa testare, correggere e documentare il proprio codice, applicando il pensiero computazionale a problemi reali.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa risolvere problemi tecnici e utilizzare applicativi informatici",
+          "traguardo": "Lo studente crea programmi a blocchi usando le strutture di controllo fondamentali"
+        },
+        "DC": {
+          "ref": "5.2 Identificare i bisogni e rispondere con soluzioni tecnologiche",
+          "livello": "I",
+          "nota": "Lo studente usa Scratch per creare una soluzione digitale a un problema definito"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente decompone il problema in sottoproblemi gestibili prima di iniziare a programmare"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente affronta il debug come processo sistematico di identificazione e risoluzione degli errori"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione e infrastrutture",
+          "nota": "Il coding è competenza trasversale per l'innovazione tecnologica del XXI secolo"
+        }
+      },
+      "outputApp": {
+        "quiz": "Debug: mostra uno script Scratch con un errore logico — il lo studente individua dove non funziona e propone la correzione.",
+        "microlearning": "Card deck 5 slide: sequenza, selezione (if/else), ciclo (repeat/forever), variabile, evento — schema visivo + esempio. 4 min.",
+        "visual": "Mappa mentale: strutture di Scratch — colori, categorie, principali blocchi per categoria.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-DIG-1-01",
+        "MC-DIG-1-02"
+      ],
+      "tags": [
+        "Scratch",
+        "coding",
+        "algoritmi",
+        "pensiero computazionale",
+        "classe-2",
+        "DIG"
+      ],
+      "compito_realta": "Crea un quiz interattivo in Scratch sull'alimentazione: almeno 5 domande, punteggio, feedback per risposta corretta/sbagliata, schermata finale con il risultato.",
+      "sdg": [
+        4,
+        9
+      ],
+      "note_didattiche": {
+        "base": "Fornire il progetto Scratch con la struttura già impostata (1 domanda funzionante). Lo studente aggiunge solo le altre 4.",
+        "avanzato": "Aggiungere livelli di difficoltà adattivi: le domande successive cambiano in base alle risposte precedenti."
+      }
+    },
+    {
+      "id": "MC-DIG-2-02",
+      "area": "DIG",
+      "anno": 2,
+      "titolo": "Dati, privacy e identità digitale",
+      "descrizione": "Lo studente comprende cosa sono i dati personali, come vengono raccolti e usati dalle piattaforme digitali, conosce i propri diritti (GDPR) e sa gestire la propria identità digitale in modo consapevole, distinguendo informazioni pubbliche da private e adottando comportamenti sicuri online.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa utilizzare comunicazioni procedurali e istruzioni tecniche",
+          "traguardo": "Lo studente gestisce consapevolmente la propria identità digitale e i propri dati personali"
+        },
+        "DC": {
+          "ref": "4.2 Proteggere i dati personali e la privacy",
+          "livello": "I",
+          "nota": "Lo studente conosce i propri diritti GDPR e sa come esercitarli sulle piattaforme che usa"
+        },
+        "EC": {
+          "ref": "Into action / Self-awareness",
+          "nota": "Lo studente valuta criticamente come le proprie scelte digitali costruiscono la sua reputazione online"
+        },
+        "LC": {
+          "ref": "Social / Empathy",
+          "nota": "Lo studente comprende come la propria presenza digitale impatta sugli altri"
+        },
+        "EV": {
+          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "La privacy digitale è diritto fondamentale in una democrazia"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario: 'Quale di questi dati è personale secondo il GDPR?' — 8 esempi, risposta multipla con spiegazione legale semplificata.",
+        "microlearning": "Card deck 5 slide: dato personale, GDPR, impronta digitale, diritto all'oblio, impostazioni privacy. 4 min.",
+        "visual": "Mappa dell'impronta digitale: categorie di dati lasciati online — social, acquisti, navigazione, app, geolocalizzazione.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-DIG-1-01"
+      ],
+      "tags": [
+        "privacy",
+        "GDPR",
+        "dati personali",
+        "identità digitale",
+        "classe-2",
+        "DIG"
+      ],
+      "compito_realta": "Mappa la tua impronta digitale in una settimana: elenca tutti i servizi/app che hai usato, che dati raccolgono (controlla le privacy policy in 2 righe ciascuna) e valuta se li useresti ancora sapendo cosa raccolgono.",
+      "sdg": [
+        16
+      ],
+      "note_didattiche": {
+        "base": "Fornire la lista di 5 app pre-selezionate con le privacy policy già semplificate. Lo studente deve solo valutare i dati raccolti.",
+        "avanzato": "Richiedere formalmente la copia dei propri dati a una piattaforma (es. Google Takeout) e analizzare cosa ha raccolto."
+      }
+    },
+    {
+      "id": "MC-DIG-2-03",
+      "area": "DIG",
+      "anno": 2,
+      "titolo": "Il sistema operativo: come il computer gestisce le risorse",
+      "descrizione": "Lo studente comprende cosa fa un sistema operativo (gestione dei processi, della memoria, del file system e delle periferiche), sa usare consapevolmente le funzioni di base del SO che usa ogni giorno, e capisce perché il SO è lo strato che rende possibile ogni altra applicazione.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: Sistema operativo: principali funzioni e servizi di base, concetto di processo in esecuzione, gestione dei processi e della memoria, file system.",
+          "traguardo": "Lo studente descrive le funzioni principali di un sistema operativo e le usa consapevolmente nell'uso quotidiano del dispositivo"
+        },
+        "DC": {
+          "ref": "2.1 Interagire con le tecnologie digitali",
+          "livello": "I",
+          "nota": "Lo studente interagisce con il SO in modo consapevole, comprendendo cosa succede 'sotto' all'interfaccia grafica"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente ottimizza l'uso delle risorse del dispositivo (memoria, processi) per lavorare in modo più efficiente"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente comprende il SO come sistema di gestione delle risorse con interdipendenze tra componenti"
+        },
+        "EV": {
+          "ref": "SDG 9 — Industria, innovazione e infrastrutture",
+          "nota": "La comprensione del SO è fondamento della cittadinanza digitale in una società che dipende dall'infrastruttura informatica"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario diagnostico: 'Il tuo computer è lento — quali processi consuma più memoria? Come li identifichi e cosa fai?' — risposta guidata con screen simulato del task manager. Feedback che spiega RAM vs CPU.",
+        "microlearning": "Card deck 6 slide: cos'è il SO / processo / memoria RAM / file system / periferiche / confronto Windows-macOS-Linux-Android. 5 min.",
+        "visual": "Diagramma a strati: hardware → SO (kernel, driver, interfaccia) → applicazioni → utente. Con frecce che mostrano il flusso delle istruzioni.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-DIG-1-01",
+        "MC-DIG-2-01"
+      ],
+      "tags": [
+        "sistema operativo",
+        "processo",
+        "memoria RAM",
+        "file system",
+        "kernel",
+        "informatica",
+        "classe-2",
+        "DIG"
+      ],
+      "compito_realta": "Apri il task manager (o Activity Monitor su Mac) durante una sessione di lavoro normale: identifica i 5 processi che consumano più RAM e CPU, scopri a cosa servono e decidi se puoi chiuderne qualcuno senza perdere lavoro. Documenta la tua analisi in una tabella con una colonna 'posso chiuderlo?' motivata.",
+      "sdg": [
+        9
+      ],
+      "note_didattiche": {
+        "base": "Fornire la schermata del task manager già catturata, con i processi etichettati. Lo studente deve solo classificarli in 'sistema', 'applicazione', 'background' e descrivere cosa fanno i 3 più pesanti.",
+        "avanzato": "Confrontare l'uso delle risorse prima e dopo l'installazione di un'estensione del browser: misurare la differenza in MB di RAM e interpretare i dati. Scrivere una 'regola igienica digitale' basata sull'osservazione."
+      },
+      "hook_audio": {
+        "titolo": "Chi comanda davvero nel tuo computer?",
+        "oggetto_reale": "il task manager / Activity Monitor",
+        "domanda_avvio": "Hai mai aperto il task manager e ti sei chiesto: ma cosa sono tutti questi processi misteriosi che girano in background?",
+        "durata_min": 2,
+        "note_script": "Usare la metafora del SO come 'direttore d'orchestra': senza di lui ogni applicazione suonerebbe per conto suo e nessuno si sentirebbe. Raccontare cosa succede quando si apre un'app: il SO alloca memoria, crea un processo, assegna il processore a turno. Dato sorprendente: su un computer normale girano sempre tra 50 e 200 processi anche quando 'non stai facendo niente'. Tono: curioso, tecnico ma accessibile."
+      },
+      "professione_futura": {
+        "titolo": "DevOps Engineer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Gestisce i sistemi operativi server e cloud per garantire che le applicazioni web funzionino in modo efficiente, sicuro e scalabile — competenza che inizia dalla comprensione del SO.",
+        "competenze_chiave": [
+          "Linux administration",
+          "gestione processi e memoria",
+          "containerizzazione (Docker)",
+          "automazione infrastrutturale"
+        ]
+      },
+      "sdg_principale": 9,
+      "clil_termini": [
+        {
+          "italiano": "sistema operativo",
+          "inglese": "operating system",
+          "pronuncia_ipa": "/ˈɒpəreɪtɪŋ ˈsɪstəm/"
+        },
+        {
+          "italiano": "processo",
+          "inglese": "process",
+          "pronuncia_ipa": "/ˈprəʊses/"
+        },
+        {
+          "italiano": "file system",
+          "inglese": "file system",
+          "pronuncia_ipa": "/faɪl ˈsɪstəm/"
+        },
+        {
+          "italiano": "memoria di lavoro",
+          "inglese": "RAM (Random Access Memory)",
+          "pronuncia_ipa": "/ræm/"
+        }
+      ],
+      "uda_collegata": null
+    },
+    {
+      "id": "MC-DIG-2-04",
+      "area": "DIG",
+      "anno": 2,
+      "titolo": "Cifratura, sicurezza informatica e identità in rete",
+      "descrizione": "Lo studente comprende il principio dei cifrari (come si trasforma un messaggio in qualcosa di illeggibile per chi non ha la chiave), conosce i principali tipi di attacchi informatici (phishing, malware, furto di identità) e sa adottare comportamenti sicuri online — password robuste, autenticazione a due fattori, riconoscimento di contenuti manipolati.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: cifrari per tenere riservati i dati; attacchi informatici e comportamenti sicuri; identità personale in rete.",
+          "traguardo": "Lo studente comprende il principio della cifratura, sa riconoscere i principali attacchi informatici e adotta comportamenti sicuri nella gestione della propria identità digitale"
+        },
+        "DC": {
+          "ref": "4.1 Proteggere i dispositivi digitali",
+          "livello": "I",
+          "nota": "Lo studente usa strumenti di protezione (password manager, 2FA, HTTPS) consapevolmente, capendone il principio e non solo l'uso"
+        },
+        "EC": {
+          "ref": "Into action / Self-awareness",
+          "nota": "Lo studente valuta il rischio informatico come parte della gestione responsabile della propria identità digitale e delle proprie risorse"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente analizza messaggi sospetti, siti web e richieste di dati con pensiero critico per identificare tentativi di manipolazione"
+        },
+        "EV": {
+          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "La sicurezza informatica è diritto e responsabilità civica: proteggere la propria identità digitale contribuisce a proteggere anche quella degli altri"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario phishing: ti arriva questa email [immagine simulata] — è legittima o un attacco? Analisi guidata: mittente, link, urgenza artificiale, richiesta di dati. Feedback che spiega ogni segnale di allarme.",
+        "microlearning": "Card deck 6 slide: cifrario di Cesare (come funziona) / crittografia moderna (principio chiave pubblica-privata semplificato) / phishing / malware / password sicura / 2FA. 5 min.",
+        "visual": "Infografica: 'Anatomia di un attacco phishing' — email simulata con 6 elementi segnalati e spiegati. Più: schema semplificato di come HTTPS cifra una comunicazione.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-DIG-2-02",
+        "MC-DIG-2-03"
+      ],
+      "tags": [
+        "cifratura",
+        "crittografia",
+        "sicurezza informatica",
+        "phishing",
+        "password",
+        "identità digitale",
+        "attacchi informatici",
+        "classe-2",
+        "DIG"
+      ],
+      "compito_realta": "Fai un audit della tua sicurezza digitale: controlla le password di 5 account che usi (sono diverse tra loro? Robuste? Hai il 2FA attivo?). Usa un password checker online per valutarle. Costruisci un piano in 3 azioni concrete per migliorare la tua sicurezza entro una settimana e documentalo.",
+      "sdg": [
+        16
+      ],
+      "note_didattiche": {
+        "base": "Fornire 3 email di phishing simulate già analizzate con i segnali di allarme evidenziati. Lo studente deve solo classificare il tipo di attacco e proporre cosa fare. Evitare di chiedere password reali.",
+        "avanzato": "Cifrare un messaggio con il cifrario di Cesare (a mano o con Python), poi decifrarlo con la forza bruta (prova tutte le 26 chiavi). Riflettere su perché i cifrari antichi non bastano e cosa cambia nella crittografia moderna."
+      },
+      "hook_audio": {
+        "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
+        "oggetto_reale": "un messaggio cifrato",
+        "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
+        "durata_min": 3,
+        "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale."
+      },
+      "professione_futura": {
+        "titolo": "Cybersecurity Analyst",
+        "orizzonte": "2030",
+        "descrizione_breve": "Protegge sistemi informatici e dati aziendali da attacchi, analizza le vulnerabilità e progetta difese — una delle professioni con maggiore carenza di profili in Europa.",
+        "competenze_chiave": [
+          "crittografia applicata",
+          "analisi delle vulnerabilità",
+          "risposta agli incidenti",
+          "ethical hacking"
+        ]
+      },
+      "sdg_principale": 16,
+      "clil_termini": [
+        {
+          "italiano": "cifratura",
+          "inglese": "encryption",
+          "pronuncia_ipa": "/ɪnˈkrɪpʃən/"
+        },
+        {
+          "italiano": "phishing",
+          "inglese": "phishing",
+          "pronuncia_ipa": "/ˈfɪʃɪŋ/"
+        },
+        {
+          "italiano": "autenticazione a due fattori",
+          "inglese": "two-factor authentication (2FA)",
+          "pronuncia_ipa": "/tuː ˈfæktər ɔːˌθentɪˈkeɪʃən/"
+        },
+        {
+          "italiano": "malware",
+          "inglese": "malware",
+          "pronuncia_ipa": "/ˈmælweər/"
+        }
+      ],
+      "uda_collegata": null
+    },
+    {
+      "id": "MC-DIS-2-01",
+      "area": "DIS",
+      "anno": 2,
+      "titolo": "Proiezioni ortogonali e sezioni",
+      "descrizione": "Lo studente sa rappresentare un oggetto tridimensionale nelle tre viste ortogonali (pianta, prospetto, fianco) secondo le convenzioni del disegno tecnico europeo, e sa eseguire una sezione semplice per mostrare l'interno di un oggetto, leggendo e producendo tavole tecniche standard.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+          "traguardo": "Lo studente esegue e legge proiezioni ortogonali e sezioni di oggetti semplici"
+        },
+        "DC": {
+          "ref": "5.3 Identificare lacune nelle competenze digitali",
+          "livello": "I",
+          "nota": "Lo studente usa software CAD 2D (es. LibreCAD) per produrre le viste ortogonali in alternativa al disegno manuale"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente pianifica la disposizione delle viste sul foglio prima di eseguire il disegno"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente risolve problemi di corrispondenza tra le viste applicando le regole di proiezione"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "Il disegno ortogonale è linguaggio universale della progettazione ingegneristica"
+        }
+      },
+      "outputApp": {
+        "quiz": "Riconoscimento: mostra le 3 viste ortogonali di un solido — quale solido è? 5 esercizi con feedback grafico.",
+        "microlearning": "Animazione 4 min: un cubo che si 'apre' nelle tre viste con linea di corrispondenza. Passo-passo.",
+        "visual": "Poster: i 6 piani di proiezione — schema con frecce di osservazione e posizione relativa delle viste.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-DIS-1-01",
+        "MC-DIS-1-02"
+      ],
+      "tags": [
+        "proiezioni ortogonali",
+        "disegno tecnico",
+        "sezioni",
+        "viste",
+        "classe-2",
+        "DIS"
+      ],
+      "compito_realta": "Scegli un oggetto di forma semplice (scatola, bicchiere, mobile in miniatura): misurane le dimensioni e disegna le tre viste ortogonali quotate su un foglio A3 con cartiglio standard.",
+      "sdg": [
+        4
+      ],
+      "note_didattiche": {
+        "base": "Fornire un solido elementare (parallelepipedo) con le misure già date. Lo studente deve solo posizionare e disegnare le 3 viste.",
+        "avanzato": "Disegnare le viste ortogonali di un oggetto con almeno un foro passante e una sezione trasversale per evidenziarne l'interno."
+      }
+    },
+    {
+      "id": "MC-DIS-2-02",
+      "area": "DIS",
+      "anno": 2,
+      "titolo": "Assonometria cavaliera e isometrica",
+      "titolo_libro": "Come si rappresenta un oggetto 3D su un foglio 2D?",
+      "descrizione": "Lo studente sa costruire rappresentazioni assonometriche (cavaliera obliqua e isometrica) di oggetti geometrici semplici e composti, conosce le differenze tra i due metodi e sa scegliere quello più adatto al contesto comunicativo.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+          "traguardo": "Lo studente produce rappresentazioni assonometriche di oggetti tridimensionali rispettando le convenzioni grafiche"
+        },
+        "DC": {
+          "ref": "5.1 Risolvere problemi tecnici",
+          "livello": "I",
+          "nota": "Lo studente usa strumenti digitali (Tinkercad, SketchUp free) per confrontare assonometrie generate automaticamente con quelle costruite a mano"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente comunica idee progettuali tridimensionali in modo chiaro e non ambiguo"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente sviluppa la capacità di pensiero spaziale passando dalla proiezione ortogonale alla rappresentazione 3D"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "Il linguaggio grafico tecnico è strumento di comunicazione universale e base dell'orientamento STEM"
+        }
+      },
+      "outputApp": {
+        "quiz": "Identifica il metodo: mostra 4 disegni assonometrici — lo studente indica se sono cavalieri o isometrici e motiva la risposta con i criteri angolari.",
+        "microlearning": "Card deck 4 slide: assi cavaliera (0°/45°/90°, riduzione 0,5), assi isometrica (30°/90°/150°, scala reale), confronto, quando usare quale. 3 min.",
+        "visual": "Tavola comparativa: stesso parallelepipedo in proiezione ortogonale / assonometria cavaliera / assonometria isometrica — con assi annotati.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-DIS-2-01"
+      ],
+      "tags": [
+        "assonometria",
+        "cavaliera",
+        "isometrica",
+        "disegno tecnico",
+        "3D",
+        "classe-2",
+        "DIS"
+      ],
+      "compito_realta": "Disegna in assonometria cavaliera e isometrica lo stesso oggetto che hai proiettato ortogonalmente nella MC-DIS-2-01: confronta i due metodi e scrivi 3 righe su quale preferisci e perché.",
+      "sdg": [
+        4
+      ],
+      "sdg_principale": 4,
+      "note_didattiche": {
+        "base": "Fornire il reticolo assonometrico già stampato con gli assi tracciati. Lo studente costruisce il solido riportando le misure sugli assi indicati.",
+        "avanzato": "Costruire l'assonometria di un solido composto (parallelepipedo con foro cilindrico) usando il metodo delle scatole concentriche."
+      },
+      "hook_audio": {
+        "titolo": "IKEA e il segreto del disegno cavaliero",
+        "oggetto_reale": "manuale di montaggio IKEA",
+        "domanda_avvio": "Hai mai notato che tutti i disegni IKEA hanno sempre lo stesso strano angolo di 45°?",
+        "durata_min": 2,
+        "note_script": "Aprire con la domanda sull'angolo dei disegni IKEA. Spiegare che è assonometria cavaliera — scelta deliberata per essere comprensibile in qualsiasi cultura senza parole."
+      },
+      "professione_futura": {
+        "titolo": "Industrial Designer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta oggetti d'uso comunicando le idee con sketch 3D digitali e fisici, utilizzando assonometria come linguaggio universale con fornitori e clienti.",
+        "competenze_chiave": [
+          "pensiero spaziale",
+          "comunicazione visiva",
+          "prototipazione rapida",
+          "software 3D"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "assonometria cavaliera",
+          "inglese": "oblique projection",
+          "pronuncia_ipa": "/əˈbliːk prəˈdʒekʃən/"
+        },
+        {
+          "italiano": "assonometria isometrica",
+          "inglese": "isometric projection",
+          "pronuncia_ipa": "/ˌaɪsəˈmetrɪk prəˈdʒekʃən/"
+        },
+        {
+          "italiano": "scala di riduzione",
+          "inglese": "reduction ratio",
+          "pronuncia_ipa": "/rɪˈdʌkʃən ˈreɪʃiəʊ/"
+        }
+      ],
+      "uda_collegata": null,
+      "stem_connections": {
+        "matematica": "Gli assi isometrici a 30° e 150° derivano dalla divisione del piano in tre angoli di 120°. Il fattore di riduzione 0,5 dell'assonometria cavaliera è una scelta convenzionale, non una necessità geometrica.",
+        "scienze": null,
+        "arte_geo_storia": "Albrecht Dürer (1525) usò sistematicamente l'assonometria per i suoi studi prospettici. L'assonometria è il linguaggio dei manuali tecnici mondiali — da IKEA ai costruttori aeronautici.",
+        "frase_ponte": "Il disegno tecnico è geometria applicata alla costruzione e alla comunicazione."
+      },
+      "_nota_editoriale": "Il JSON originale descriveva 'Quotatura e lettura di un disegno tecnico' — contenuto valido ma separato, da sviluppare come MC-DIS-2-03 in una versione futura della matrice. Il _completa.md è corretto (assonometria, allineato a INDICE v1.0)."
+    },
+    {
+      "id": "MC-COM-3-01",
+      "area": "COM",
+      "anno": 3,
+      "titolo": "Telecomunicazioni e reti",
+      "descrizione": "Lo studente conosce i principi delle telecomunicazioni (analogico/digitale, modulazione, protocolli), comprende l'architettura di base di Internet (client/server, TCP/IP, DNS, HTTP), e sa descrivere come vengono trasmessi dati, voce e video attraverso reti cablate e wireless.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi di comunicazione e trasmissione dell'informazione",
+          "traguardo": "Lo studente descrive il funzionamento delle reti di comunicazione digitale"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente comprende come funziona l'infrastruttura che abilita la navigazione quotidiana"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente usa strumenti di analisi della rete (ping, traceroute) per esplorare l'infrastruttura"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente analizza Internet come sistema di sistemi interdipendenti"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione e infrastrutture; SDG 17 — Partnership",
+          "nota": "La connettività universale è prerequisito per l'accesso all'istruzione e ai servizi digitali"
+        }
+      },
+      "outputApp": {
+        "quiz": "Ordina il percorso: cosa succede quando digiti una URL? Ordina i 5 step (DNS lookup, TCP handshake, HTTP request, response, rendering). Feedback.",
+        "microlearning": "Card deck 5 slide: segnale analogico/digitale, IP, DNS, router, WiFi — schema + funzione. 4 min.",
+        "visual": "Mappa: anatomia di Internet — cavi sottomarini, data center, ultimo miglio, dispositivo finale.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "reti",
+        "Internet",
+        "telecomunicazioni",
+        "protocolli",
+        "classe-3",
+        "COM"
+      ],
+      "compito_realta": "Mappa la copertura WiFi della scuola: misura la potenza del segnale in 8 punti diversi dell'edificio usando un'app apposita, crea una mappa di calore e identifica le zone di copertura scarsa con una proposta di miglioramento.",
+      "sdg": [
+        9,
+        17
+      ],
+      "note_didattiche": {
+        "base": "Fornire la pianta della scuola già stampata e l'app già installata. Lo studente misura e colora solo 4 punti.",
+        "avanzato": "Aggiungere l'analisi dei canali WiFi in uso (interferenze) e proporre una configurazione ottimale dei punti di accesso."
+      }
+    },
+    {
+      "id": "MC-COM-3-02",
+      "area": "COM",
+      "anno": 3,
+      "titolo": "Produzione di contenuti digitali responsabili",
+      "descrizione": "Lo studente sa creare contenuti digitali di qualità (testo, audio, video, immagini) rispettando le licenze d'uso (Creative Commons), citando correttamente le fonti, e comprende le implicazioni etiche e legali della pubblicazione online, sviluppando un approccio responsabile alla produzione e condivisione di contenuti.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa utilizzare comunicazioni procedurali e istruzioni tecniche per produrre",
+          "traguardo": "Lo studente crea contenuti digitali originali rispettando le norme sul diritto d'autore"
+        },
+        "DC": {
+          "ref": "3.1 Sviluppare contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente produce un contenuto digitale originale scegliendo formato, strumento e licenza"
+        },
+        "EC": {
+          "ref": "Into action / Creativity",
+          "nota": "Lo studente esprime idee originali attraverso formati digitali diversi"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente comprende le responsabilità legali ed etiche della pubblicazione online"
+        },
+        "EV": {
+          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "Il rispetto del diritto d'autore e delle licenze è esercizio di cittadinanza digitale responsabile"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario licenza: 'Vuoi usare questa foto per il tuo podcast — la licenza è CC BY-NC. Puoi farlo? Come devi citarla?' Multipla con spiegazione CC.",
+        "microlearning": "Card deck 5 slide: CC0, CC BY, CC BY-SA, CC BY-NC, CC BY-ND — differenze con icone e casi d'uso. 4 min.",
+        "visual": "Albero decisionale: 'Posso usare questo contenuto?' — diagramma a scelte per ogni tipo di licenza.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-COM-3-01"
+      ],
+      "tags": [
+        "contenuti digitali",
+        "Creative Commons",
+        "copyright",
+        "podcast",
+        "classe-3",
+        "COM"
+      ],
+      "compito_realta": "Produci un podcast di 3 minuti su un tema tecnologico scelto: scrivi lo script, registra l'audio, aggiungi musica con licenza CC, cita tutte le fonti usate nel documento di accompagnamento.",
+      "sdg": [
+        16
+      ],
+      "note_didattiche": {
+        "base": "Fornire lo script già scritto. Lo studente si concentra solo sulla registrazione e sulla corretta citazione della musica CC.",
+        "avanzato": "Pubblicare il podcast su una piattaforma open (es. Internet Archive) con licenza CC scelta e giustificata dallo studente."
+      }
+    },
+    {
+      "id": "MC-COM-3-03",
+      "area": "COM",
+      "anno": 3,
+      "titolo": "Sistemi di trasporto e mobilità sostenibile",
+      "descrizione": "Lo studente conosce i principali sistemi di trasporto (stradale, ferroviario, aereo, marittimo), sa confrontarne l'efficienza energetica e l'impatto ambientale, e sa progettare un piano di mobilità sostenibile per un contesto reale, valutando trade-off tra comodità, costo, tempo e impatto.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi di trasporto e le relazioni con l'ambiente",
+          "traguardo": "Lo studente confronta i sistemi di trasporto per efficienza e impatto e progetta soluzioni sostenibili"
+        },
+        "DC": {
+          "ref": "2.1 Interagire con tecnologie digitali",
+          "livello": "I",
+          "nota": "Lo studente usa Google Maps e calcolatori di emissioni online per confrontare modalità di trasporto"
+        },
+        "EC": {
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente progetta un piano di mobilità per la propria scuola con azioni concrete e realizzabili"
+        },
+        "LC": {
+          "ref": "Social / Collaboration",
+          "nota": "Lo studente lavora in gruppo per raccogliere dati sulla mobilità scolastica e costruire proposte condivise"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città sostenibili; SDG 13 — Cambiamento climatico",
+          "nota": "I trasporti producono il 25% delle emissioni europee — cambiare mobilità è risposta concreta"
+        }
+      },
+      "outputApp": {
+        "quiz": "Confronto impatto: 'Vai da Roma a Milano — aereo, treno o auto? Quale ha meno CO₂ per passeggero?' Multipla con dati reali e infografica.",
+        "microlearning": "Card deck 5 slide: auto, treno, aereo, nave, bici — emissioni g CO₂/km per passeggero, velocità, costo medio. 4 min.",
+        "visual": "Confronto modale: grafico a bolle — X = velocità, Y = emissioni, dimensione bolla = costo.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "trasporti",
+        "mobilità sostenibile",
+        "emissioni",
+        "intermodalità",
+        "classe-3",
+        "COM"
+      ],
+      "compito_realta": "Progetta il piano di mobilità sostenibile per la scuola: somministra un sondaggio ai compagni su come vengono a scuola, analizza i dati, calcola le emissioni medie e proponi 3 azioni per ridurle.",
+      "sdg": [
+        11,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Fornire il sondaggio già predisposto e i fattori di emissione. Lo studente analizza i dati di una sola classe.",
+        "avanzato": "Presentare il piano al Consiglio di Istituto come proposta concreta con dati, obiettivi e azioni da approvare."
+      }
+    },
+    {
+      "id": "MC-COM-3-04",
+      "area": "COM",
+      "anno": 3,
+      "titolo": "Automazione, domotica e Industria 4.0",
+      "descrizione": "Lo studente comprende i principi dell'automazione industriale e della domotica (sensori, attuatori, logica di controllo), conosce le tecnologie chiave dell'Industria 4.0 (IoT, robotica collaborativa, stampa 3D, AI nella produzione) e sa progettare un sistema domotico semplice per un'esigenza reale.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le relazioni tra automazione e lavoro",
+          "traguardo": "Lo studente descrive sistemi automatizzati e ne progetta uno semplice per un'applicazione reale"
+        },
+        "DC": {
+          "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+          "livello": "A",
+          "nota": "Lo studente progetta un sistema domotico integrando sensori, logica e attuatori per risolvere un problema reale"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente pianifica un sistema automatizzato definendo input, processo, output e feedback"
+        },
+        "LC": {
+          "ref": "Thinking / Creative thinking",
+          "nota": "Lo studente immagina applicazioni innovative dell'automazione a problemi della vita quotidiana"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione; SDG 8 — Lavoro dignitoso",
+          "nota": "L'Industria 4.0 trasforma il lavoro: comprenderne le tecnologie è fondamentale per il futuro professionale"
+        }
+      },
+      "outputApp": {
+        "quiz": "Analisi sistema: dato uno schema domotico (termostato intelligente), identifica sensore, logica di controllo, attuatore e feedback. 4 domande.",
+        "microlearning": "Card deck 5 slide: sensore, attuatore, IoT, PLC, robot collaborativo — schema + esempio industriale + esempio domestico. 5 min.",
+        "visual": "Diagramma: casa domotica — tutti i sistemi connessi con flussi dati e controlli.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-COM-3-01",
+        "MC-ENE-3-04"
+      ],
+      "tags": [
+        "domotica",
+        "automazione",
+        "IoT",
+        "Industria 4.0",
+        "classe-3",
+        "COM"
+      ],
+      "compito_realta": "Progetta una casa domotica per un anziano che vive solo: individua 5 esigenze specifiche (sicurezza, comfort, salute, comunicazione, risparmio), scegli una tecnologia per ciascuna e descrivi come si integrano in un sistema unico.",
+      "sdg": [
+        8,
+        9
+      ],
+      "note_didattiche": {
+        "base": "Fornire le 5 esigenze già identificate. Lo studente deve solo scegliere la tecnologia e descrivere brevemente il funzionamento.",
+        "avanzato": "Simulare il sistema con Arduino/micro:bit: costruire il prototipo di almeno uno dei 5 sistemi progettati."
+      }
+    },
+    {
+      "id": "MC-COM-3-05",
+      "area": "COM",
+      "anno": 3,
+      "titolo": "Reti globali, internet e infrastrutture",
+      "titolo_libro": "Chi possiede internet — e cosa succederebbe se lo spegnessero?",
+      "descrizione": "Lo studente comprende internet come infrastruttura fisica e geopolitica globale: conosce i cavi sottomarini, i data center, il sistema DNS e i meccanismi di governance, e sa analizzare criticamente le implicazioni di potere, sicurezza e sovranità digitale che derivano dal controllo dell'infrastruttura di rete.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi di comunicazione e il loro sviluppo; infrastrutture digitali e loro implicazioni sociali",
+          "traguardo": "Lo studente descrive l'infrastruttura fisica di internet, ne identifica i principali attori di governance e valuta le implicazioni di sovranità digitale"
+        },
+        "DC": {
+          "ref": "2.1 Interagire attraverso le tecnologie digitali",
+          "livello": "I",
+          "nota": "Lo studente usa strumenti di traceroute e DNS lookup per osservare concretamente il percorso dei dati e i nodi intermedi"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Valuing ideas",
+          "nota": "Lo studente comprende come il controllo dell'infrastruttura internet sia una leva di potere economico e politico nel XXI secolo"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente analizza le tensioni tra libertà di internet, censura di stato e governance globale sviluppando una prospettiva critica informata"
+        },
+        "EV": {
+          "ref": "SDG 9 — Infrastrutture e innovazione; SDG 16 — Pace, giustizia, istituzioni solide",
+          "nota": "L'accesso libero e sicuro a internet è un diritto umano riconosciuto dall'ONU — ma il 37% della popolazione mondiale è ancora offline"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario geopolitico: 'Un paese taglia i cavi sottomarini che collegano un'isola al mondo — quali servizi smettono di funzionare nell'ora 1? Nel giorno 1? Nella settimana 1?' Analisi a cascata con feedback.",
+        "microlearning": "Card deck 5 slide: cavi sottomarini (mappa + vulnerabilità), data center (dove + consumo energetico), DNS (come funziona + attacchi), net neutrality (pro/contro), governance ICANN/IGF. 5 min.",
+        "visual": "Mappa mondiale dei cavi sottomarini con evidenziati i 5 chokepoint critici — con note su chi li possiede.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-COM-3-01"
+      ],
+      "tags": [
+        "internet",
+        "cavi sottomarini",
+        "infrastruttura",
+        "governance",
+        "sovranità digitale",
+        "censura",
+        "net neutrality",
+        "classe-3",
+        "COM"
+      ],
+      "compito_realta": "Usando uno strumento di traceroute online (traceroute.org o simile), traccia il percorso di un pacchetto dati da Roma a tre destinazioni diverse (Tokyo, New York, Nairobi): conta i nodi intermedi, identifica i paesi attraversati e scrivi una relazione di 5-8 righe su cosa hai scoperto.",
+      "sdg": [
+        9,
+        16
+      ],
+      "sdg_principale": 9,
+      "note_didattiche": {
+        "base": "Fornire i risultati del traceroute già eseguiti su 2 destinazioni. Lo studente deve solo interpretare i dati e rispondere a 3 domande guidate.",
+        "avanzato": "Scrivere una lettera aperta al Parlamento italiano su una proposta immaginaria che introduce il Deep Packet Inspection obbligatorio — argomentare pro o contro da tre prospettive diverse."
+      },
+      "hook_audio": {
+        "titolo": "Il cavo che tiene in piedi internet",
+        "oggetto_reale": "cavo sottomarino transatlantico",
+        "domanda_avvio": "Se un peschereccio strappasse accidentalmente il cavo che collega Europa e America, cosa smetterebbe di funzionare?",
+        "durata_min": 2,
+        "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica."
+      },
+      "professione_futura": {
+        "titolo": "Internet Infrastructure Analyst",
+        "orizzonte": "2030",
+        "descrizione_breve": "Monitora la resilienza dell'infrastruttura internet globale, analizza vulnerabilità geopolitiche e supporta decisioni di governance digitale per governi e organizzazioni internazionali.",
+        "competenze_chiave": [
+          "reti TCP/IP avanzate",
+          "geopolitica digitale",
+          "sicurezza delle infrastrutture critiche",
+          "analisi dei dati di rete"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "cavo sottomarino",
+          "inglese": "submarine cable",
+          "pronuncia_ipa": "/ˈsʌbməriːn ˈkeɪbl/"
+        },
+        {
+          "italiano": "sovranità digitale",
+          "inglese": "digital sovereignty",
+          "pronuncia_ipa": "/ˈdɪdʒɪtəl ˈsɒvrənti/"
+        },
+        {
+          "italiano": "neutralità della rete",
+          "inglese": "net neutrality",
+          "pronuncia_ipa": "/net njuːˈtræləti/"
+        },
+        {
+          "italiano": "sistema dei nomi di dominio",
+          "inglese": "Domain Name System (DNS)",
+          "pronuncia_ipa": "/dəˈmeɪn neɪm ˈsɪstəm/"
+        }
+      ],
+      "uda_collegata": "UDA-2",
+      "stem_connections": {
+        "matematica": "Un pacchetto IP ha dimensione max 1500 byte. Un file da 10 MB viene suddiviso in ~6.667 pacchetti. Ogni pacchetto attraversa mediamente 15-20 router — calcolo del numero totale di 'salti' per un download.",
+        "scienze": "La fibra ottica trasmette fotoni a 200.000 km/s nel vetro (vs 300.000 nel vuoto). La latenza Roma-Tokyo via fibra (~180ms) è limitata fondamentalmente dalla velocità della luce.",
+        "arte_geo_storia": "ARPANET (1969): il Dipartimento della Difesa USA finanziò una rete che sopravvivesse a un attacco nucleare. Quella scelta architetturale — nessun nodo centrale — è ancora il motivo per cui nessuno può 'spegnere' internet.",
+        "frase_ponte": "Ogni comunicazione è un segnale fisico che viaggia attraverso infrastrutture reali possedute da qualcuno."
+      }
+    },
+    {
+      "id": "MC-COM-3-06",
+      "area": "COM",
+      "anno": 3,
+      "titolo": "Media digitali, pubblicità e pensiero critico",
+      "titolo_libro": "Come fa TikTok a sapere già cosa vuoi vedere — prima che tu lo sappia?",
+      "descrizione": "Lo studente comprende il funzionamento degli algoritmi di raccomandazione, della pubblicità programmatica e dei meccanismi di filter bubble, sa distinguere con precisione misinformazione, disinformazione e malinformazione, e applica tecniche sistematiche di fact-checking per valutare contenuti digitali complessi.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Usa in modo critico e consapevole i media digitali; valuta l'attendibilità delle fonti; comprende i meccanismi di diffusione dell'informazione",
+          "traguardo": "Lo studente analizza criticamente il funzionamento dei media digitali, riconosce meccanismi di disinformazione e applica metodi sistematici di verifica"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+          "livello": "A",
+          "nota": "Lo studente usa strumenti professionali di fact-checking (reverse image search, InVID, Pagella Politica) e applica il metodo SIFT in modo autonomo su casi complessi"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Valuing ideas",
+          "nota": "Lo studente comprende come l'economia dell'attenzione trasforma le idee e l'informazione in merce, e come questa trasformazione impatta il dibattito democratico"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente smonta sistematicamente meccanismi di manipolazione dell'informazione sviluppando autonomia epistemica"
+        },
+        "EV": {
+          "ref": "SDG 16 — Pace, giustizia, istituzioni solide; L. 92/2019 Educazione Civica",
+          "nota": "La disinformazione è minaccia diretta alla democrazia — riconoscerla e contrastarla è competenza civica fondamentale nel XXI secolo"
+        }
+      },
+      "outputApp": {
+        "quiz": "Analizza questo post [post con affermazione verificabile]: segui i 4 passi SIFT e indica fonte attendibile sì/no, affermazione verificata sì/no, tipo di contenuto. Feedback con procedura corretta.",
+        "microlearning": "Card deck 5 slide: economia dell'attenzione, algoritmo di raccomandazione (3 step), filter bubble vs echo chamber (differenza precisa), RTB in 200ms, metodo SIFT. 5 min.",
+        "visual": "Infografica: anatomia di un'asta pubblicitaria programmatica RTB — dall'apertura della pagina (0ms) all'annuncio visualizzato (200ms) — chi partecipa, che dati scambia, quanto vale.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-DIG-1-02",
+        "MC-COM-3-02"
+      ],
+      "tags": [
+        "media digitali",
+        "algoritmi",
+        "filter bubble",
+        "disinformazione",
+        "pubblicità programmatica",
+        "fact-checking",
+        "pensiero critico",
+        "classe-3",
+        "COM"
+      ],
+      "compito_realta": "Scegli un contenuto virale che hai visto recentemente che ti sembrava dubbio. Applica il metodo SIFT completo, documenta ogni passo, determina se è affidabile o no e perché, poi scrivi un articolo di fact-checking per il giornalino scolastico (200-300 parole) accessibile anche a chi non conosce l'argomento.",
+      "sdg": [
+        16
+      ],
+      "sdg_principale": 16,
+      "note_didattiche": {
+        "base": "Fornire 3 contenuti già selezionati (uno vero, uno falso, uno fuorviante). Lo studente applica SIFT solo al contenuto falso con guida passo-passo.",
+        "avanzato": "Progettare e condurre una campagna di media literacy per gli studenti di prima media: creare 3 contenuti educativi (video breve, scheda, quiz) e presentarli in classe."
+      },
+      "hook_audio": {
+        "titolo": "Come TikTok sa già cosa vuoi vedere",
+        "oggetto_reale": "feed di TikTok",
+        "domanda_avvio": "Hai mai aperto TikTok per 5 minuti e ti sei ritrovato dopo un'ora — senza capire come?",
+        "durata_min": 2,
+        "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione."
+      },
+      "professione_futura": {
+        "titolo": "Fact-checker e verificatore digitale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Verifica sistematicamente la veridicità di contenuti digitali virali per testate giornalistiche, piattaforme social e organizzazioni internazionali, usando strumenti avanzati di analisi forense dei media.",
+        "competenze_chiave": [
+          "metodologia OSINT",
+          "analisi forense di immagini e video",
+          "comprensione degli algoritmi di raccomandazione",
+          "giornalismo di dati"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "economia dell'attenzione",
+          "inglese": "attention economy",
+          "pronuncia_ipa": "/əˈtenʃən ɪˈkɒnəmi/"
+        },
+        {
+          "italiano": "bolla di filtraggio",
+          "inglese": "filter bubble",
+          "pronuncia_ipa": "/ˈfɪltə ˈbʌbl/"
+        },
+        {
+          "italiano": "disinformazione",
+          "inglese": "disinformation",
+          "pronuncia_ipa": "/ˌdɪsɪnfəˈmeɪʃən/"
+        },
+        {
+          "italiano": "pubblicità in tempo reale",
+          "inglese": "real-time bidding (RTB)",
+          "pronuncia_ipa": "/rɪəl taɪm ˈbɪdɪŋ/"
+        }
+      ],
+      "uda_collegata": "UDA-2",
+      "stem_connections": {
+        "matematica": "Il coefficiente di engagement (like + commenti + condivisioni) / visualizzazioni è la metrica chiave degli algoritmi. Un post con engagement rate dell'8% viene distribuito esponenzialmente di più di uno con il 2%.",
+        "scienze": "Neuroscienza del bias di conferma: il cervello elabora le informazioni coerenti con le credenze preesistenti più velocemente. Questo meccanismo evolutivo è sfruttato dagli algoritmi per aumentare il tempo di permanenza.",
+        "arte_geo_storia": "Cambridge Analytica (2018): dati di 87 milioni di utenti Facebook usati per micro-targeting politico nelle elezioni USA 2016 e nel referendum Brexit — primo caso documentato di weaponization dei dati per influenzare la democrazia.",
+        "frase_ponte": "Ogni algoritmo è matematica che decide cosa vedi e cosa non vedi."
+      }
+    },
+    {
+      "id": "MC-DIG-3-01",
+      "area": "DIG",
+      "anno": 3,
+      "titolo": "Robotica educativa e pensiero computazionale avanzato",
+      "descrizione": "Lo studente sa programmare robot educativi (micro:bit, mBot, EV3 o equivalenti) usando strutture avanzate (funzioni, parametri, gestione eventi multipli), sa decomporre problemi complessi in algoritmi e sa documentare e presentare il proprio progetto robotico con motivazioni progettuali chiare.",
+      "fonte": "Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa risolvere problemi tecnici e progettare sistemi automatizzati",
+          "traguardo": "Lo studente progetta e programma robot educativi per risolvere problemi reali"
+        },
+        "DC": {
+          "ref": "5.3 Risolvere problemi tecnici in ambienti digitali",
+          "livello": "A",
+          "nota": "Lo studente diagnostica e corregge errori nel codice e nel comportamento fisico del robot in modo autonomo"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente gestisce un progetto robotico dalla specifica al test finale con documentazione"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente affronta il fallimento del robot come feedback di apprendimento e itera la soluzione"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione; SDG 4 — Istruzione",
+          "nota": "La robotica educativa sviluppa competenze STEM critiche per il futuro lavoro e la cittadinanza attiva"
+        }
+      },
+      "outputApp": {
+        "quiz": "Debug robotica: dato il comportamento inaspettato di un robot (va a sinistra invece che dritto), individua il possibile errore tra 4 opzioni — sensore, motore, codice, calibrazione. Feedback con metodo di diagnosi.",
+        "microlearning": "Card deck 5 slide: struttura programma robotica (sequenza, condizioni, cicli, funzioni, eventi) con esempio micro:bit. 4 min.",
+        "visual": "Flow chart: dal problema reale al robot funzionante — fasi del processo (analisi → algoritmo → codice → test → debug → presentazione).",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-DIG-2-01"
+      ],
+      "tags": [
+        "robotica",
+        "micro:bit",
+        "pensiero computazionale",
+        "Arduino",
+        "classe-3",
+        "DIG"
+      ],
+      "compito_realta": "Progetta un robot che risolve un problema reale della scuola (es. misura il livello di rumore in corridoio, indica la disponibilità di posti in mensa, guida chi non vede alla porta): definisci il problema, scrivi l'algoritmo, costruisci e testa il prototipo.",
+      "sdg": [
+        4,
+        9
+      ],
+      "note_didattiche": {
+        "base": "Fornire il problema già definito e lo scheletro del codice con le funzioni principali già scritte. Lo studente completa il corpo delle funzioni.",
+        "avanzato": "Aggiungere un'interfaccia utente (display, LED o app mobile via Bluetooth) e documentare il progetto in un portfolio digitale."
+      }
+    },
+    {
+      "id": "MC-DIG-3-02",
+      "area": "DIG",
+      "anno": 3,
+      "titolo": "Intelligenza Artificiale: concetti, etica e applicazioni",
+      "descrizione": "Lo studente comprende i principi fondamentali dell'IA (machine learning, reti neurali, dataset, training), sa identificare applicazioni di IA nella vita quotidiana, e sa analizzare criticamente le implicazioni etiche (bias, privacy, lavoro, responsabilità) sviluppando una posizione argomentata sull'uso responsabile dell'IA.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le loro implicazioni sociali",
+          "traguardo": "Lo studente descrive i principi dell'IA e ne valuta le implicazioni etiche e sociali"
+        },
+        "DC": {
+          "ref": "4.3 Proteggere la salute e il benessere digitale",
+          "livello": "A",
+          "nota": "Lo studente valuta criticamente l'impatto dell'IA sul benessere personale e sociale"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Valuing ideas",
+          "nota": "Lo studente comprende come l'IA trasforma il valore del lavoro e apre nuove opportunità imprenditoriali"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente analizza le decisioni algoritmiche con pensiero critico identificando possibili bias e conseguenze"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione; SDG 10 — Ridurre le disuguaglianze; SDG 16 — Giustizia",
+          "nota": "L'IA amplifica sia le opportunità che le disuguaglianze — comprenderla è competenza civica urgente"
+        }
+      },
+      "outputApp": {
+        "quiz": "Analisi caso: 'Un algoritmo di selezione CV rifiuta sistematicamente i CV con nomi stranieri — quale tipo di problema è? Come si risolve?' Risposta guidata con vocabolario IA fornito.",
+        "microlearning": "Card deck 5 slide: machine learning, neural network, dataset, training/testing, bias algoritmico — concetto + esempio quotidiano. 5 min.",
+        "visual": "Mappa delle applicazioni IA quotidiane: categorie (raccomandazione, traduzione, riconoscimento, guida autonoma, diagnosi medica) con esempi concreti.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-DIG-2-02",
+        "MC-DIG-3-01"
+      ],
+      "tags": [
+        "intelligenza artificiale",
+        "machine learning",
+        "etica AI",
+        "bias",
+        "classe-3",
+        "DIG"
+      ],
+      "compito_realta": "Analizza 3 app con IA che usi ogni giorno (es. Spotify, Google Maps, filtri Instagram): per ciascuna identifica cosa impara dai tuoi dati, quale decisione prende per te e quali rischi etici comporta. Costruisci una tabella critica e un giudizio finale argomentato.",
+      "sdg": [
+        9,
+        10,
+        16
+      ],
+      "note_didattiche": {
+        "base": "Fornire le 3 app e la tabella di analisi con le categorie già indicate. Lo studente deve solo compilare le righe.",
+        "avanzato": "Progettare un sistema IA per un problema scolastico (es. raccomandatore di libri per la biblioteca): definire dataset necessario, tipo di apprendimento e rischi etici da gestire."
+      }
+    },
+    {
+      "id": "MC-DIG-3-03",
+      "area": "DIG",
+      "anno": 3,
+      "titolo": "Raccolta dati da sensori e sistemi IoT",
+      "descrizione": "Lo studente comprende come i sensori trasformano grandezze fisiche in dati digitali, sa connettere sensori a un dispositivo programmabile (es. micro:bit, Arduino), raccogliere dati in tempo reale, organizzarli in tabelle e interpretarli. Comprende il principio dell'Internet of Things come rete di oggetti che comunicano dati.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Obiettivi specifici Informatica secondaria I grado: Connettere dispositivi informatici tra di loro e con periferiche, anche per realizzare semplici esperienze di raccolta ed analisi dati e di controllo di dispositivi esterni. Conoscenze: raccolta dati da sensori.",
+          "traguardo": "Lo studente progetta e realizza una semplice esperienza di raccolta dati da sensori, ne interpreta i risultati e li collega a decisioni concrete"
+        },
+        "DC": {
+          "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+          "livello": "A",
+          "nota": "Lo studente raccoglie dati fisici reali tramite sensori, li organizza in formato strutturato e li analizza per trarne conclusioni"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Creativity",
+          "nota": "Lo studente progetta un sistema di monitoraggio per un problema reale della scuola o della comunità"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente usa i dati raccolti per prendere decisioni fondate su evidenza, non su intuizione"
+        },
+        "EV": {
+          "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Azione per il clima",
+          "nota": "Il monitoraggio ambientale con sensori è strumento di cittadinanza attiva: misurare per capire, capire per agire"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario progettuale: 'Vuoi monitorare la qualità dell'aria nella tua aula — quale sensore usi? Ogni quanti minuti campioni? Dove salvi i dati?' Risposta guidata con scelte multiple a cascata, feedback tecnico per ogni scelta.",
+        "microlearning": "Card deck 6 slide: sensore (definizione e tipi) / trasduttore / analogico vs digitale / campionamento / dataset / IoT (cos'è e come funziona). 5 min.",
+        "visual": "Schema sistema IoT: sensore → microcontrollore → rete → cloud → dashboard. Con esempi reali (termostato smart, centralina meteo, smartwatch).",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-DIG-2-03",
+        "MC-ENE-3-04"
+      ],
+      "tags": [
+        "sensori",
+        "IoT",
+        "Internet of Things",
+        "dati fisici",
+        "Arduino",
+        "micro:bit",
+        "monitoraggio",
+        "classe-3",
+        "DIG"
+      ],
+      "compito_realta": "Progetta e realizza una stazione di monitoraggio per la tua aula: usa un micro:bit o Arduino con sensore di temperatura e luminosità, raccogli dati per 3 giorni a intervalli di 30 minuti, visualizza i dati su un grafico e scrivi una relazione di 10 righe con almeno 3 conclusioni (es. 'l'aula è più calda del 20% dopo la terza ora', 'la luce è insufficiente nelle giornate nuvolose').",
+      "sdg": [
+        11,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Fornire il codice già scritto per la raccolta dati. Lo studente deve solo caricare il programma, raccogliere i dati e compilare il grafico con valori già organizzati in una tabella Excel fornita.",
+        "avanzato": "Aggiungere un sensore di CO2 e progettare un sistema di allerta automatica (LED rosso/verde) quando la concentrazione supera la soglia consigliata per ambienti scolastici (1000 ppm). Documentare con una scheda tecnica del progetto."
+      },
+      "hook_audio": {
+        "titolo": "Il tuo quartiere respira — ma lo sai quanto bene?",
+        "oggetto_reale": "una centralina meteo fai-da-te con micro:bit",
+        "domanda_avvio": "Sai quanta CO2 c'è adesso nell'aria della tua aula — e se è abbastanza per stare svegli e concentrati?",
+        "durata_min": 3,
+        "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico."
+      },
+      "professione_futura": {
+        "titolo": "IoT Solutions Architect",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta sistemi di raccolta e analisi dati distribuiti (smart city, industria 4.0, agricoltura di precisione) che connettono sensori fisici al cloud per prendere decisioni automatizzate.",
+        "competenze_chiave": [
+          "programmazione embedded",
+          "protocolli di comunicazione IoT (MQTT, LoRa)",
+          "analisi dati in tempo reale",
+          "progettazione sistemi distribuiti"
+        ]
+      },
+      "sdg_principale": 11,
+      "clil_termini": [
+        {
+          "italiano": "sensore",
+          "inglese": "sensor",
+          "pronuncia_ipa": "/ˈsensər/"
+        },
+        {
+          "italiano": "Internet delle cose",
+          "inglese": "Internet of Things (IoT)",
+          "pronuncia_ipa": "/ˈɪntənet əv θɪŋz/"
+        },
+        {
+          "italiano": "campionamento",
+          "inglese": "sampling",
+          "pronuncia_ipa": "/ˈsɑːmplɪŋ/"
+        },
+        {
+          "italiano": "flusso di dati",
+          "inglese": "data stream",
+          "pronuncia_ipa": "/ˈdeɪtə striːm/"
+        }
+      ],
+      "uda_collegata": null
+    },
+    {
+      "id": "MC-DIG-3-04",
+      "area": "DIG",
+      "anno": 3,
+      "titolo": "Accessibilità, usabilità e inclusione digitale",
+      "descrizione": "Lo studente comprende i principi di accessibilità digitale (WCAG, contrasto, navigazione da tastiera, screen reader), sa valutare l'usabilità di un'interfaccia e progetta contenuti digitali che possano essere fruiti da tutti — incluse persone con disabilità visive, motorie o cognitive. Comprende l'accessibilità come diritto e come scelta progettuale, non come opzione.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: importanza dell'usabilità e dell'accessibilità di applicazioni informatiche ai fini dell'inclusione e della più ampia partecipazione.",
+          "traguardo": "Lo studente valuta l'accessibilità di un'interfaccia digitale e sa progettare contenuti che rispettino i principi di inclusione"
+        },
+        "DC": {
+          "ref": "3.1 Sviluppare contenuti digitali",
+          "livello": "A",
+          "nota": "Lo studente crea contenuti digitali applicando principi di accessibilità (contrasto, alt text, struttura semantica) e ne verifica la qualità con strumenti automatici"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Ethical and sustainable thinking",
+          "nota": "Lo studente comprende che un prodotto digitale inaccessibile esclude milioni di persone e che l'inclusione è anche valore economico"
+        },
+        "LC": {
+          "ref": "Social / Empathy",
+          "nota": "Lo studente si mette nei panni di chi ha una disabilità visiva o motoria per comprendere le barriere digitali che incontra ogni giorno"
+        },
+        "EV": {
+          "ref": "SDG 10 — Ridurre le disuguaglianze; SDG 16 — Pace, giustizia e istituzioni solide; L. 92/2019 Educazione Civica",
+          "nota": "L'accessibilità digitale è sancita da normativa europea (European Accessibility Act 2025) e dalla Convenzione ONU sui diritti delle persone con disabilità"
+        }
+      },
+      "outputApp": {
+        "quiz": "Analisi interfaccia: ti viene mostrata una pagina web con 5 problemi di accessibilità (contrasto insufficiente, immagine senza alt text, link generici 'clicca qui', font troppo piccolo, navigazione impossibile da tastiera) — identificali e proponi la soluzione corretta per ciascuno.",
+        "microlearning": "Card deck 6 slide: cos'è l'accessibilità digitale / WCAG 2.1 i 4 principi (Percepibile, Utilizzabile, Comprensibile, Robusto) / screen reader (demo audio) / alt text / contrasto / Universal Design. 5 min.",
+        "visual": "Infografica: '1 miliardo di persone con disabilità nel mondo — come navigano il web?' Con simulazioni visive del daltonismo, bassa visione, navigazione da tastiera.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-DIG-3-01",
+        "MC-DIG-3-02"
+      ],
+      "tags": [
+        "accessibilità",
+        "usabilità",
+        "inclusione digitale",
+        "WCAG",
+        "Universal Design",
+        "disabilità",
+        "interfaccia",
+        "classe-3",
+        "DIG"
+      ],
+      "compito_realta": "Scegli il sito web della tua scuola o del tuo comune: eseguine un audit di accessibilità usando lo strumento gratuito WAVE (wave.webaim.org) o Lighthouse di Chrome. Elenca i 5 problemi più gravi, spiega quale utente è escluso da ciascuno e propone la correzione tecnica. Presenta i risultati in un report di una pagina indirizzato al responsabile del sito.",
+      "sdg": [
+        10,
+        16
+      ],
+      "note_didattiche": {
+        "base": "Fornire un sito di esempio già analizzato con i 5 errori evidenziati. Lo studente deve solo classificare il tipo di barriera (visiva, motoria, cognitiva) e proporre la correzione in linguaggio semplice.",
+        "avanzato": "Ricreare una delle pagine del sito scelto in HTML, correggendo tutti i problemi di accessibilità identificati. Testare la versione corretta con un screen reader (NVDA gratuito) e documentare la differenza nell'esperienza d'uso."
+      },
+      "hook_audio": {
+        "titolo": "Navigare al buio: come usa internet chi non vede",
+        "oggetto_reale": "uno screen reader (lettore di schermo)",
+        "domanda_avvio": "Hai mai provato a usare il computer con gli occhi chiusi — e a capire cosa c'è sullo schermo solo dall'audio?",
+        "durata_min": 3,
+        "note_script": "Aprire con una simulazione audio: descrizione di come suona una pagina web normale quando la legge uno screen reader (rapidissimo, confuso, ordine casuale dei link). Poi confrontare con una pagina accessibile (logica, comprensibile). Dato: in Italia ci sono circa 350.000 persone con disabilità visiva grave. In Europa il 15% della popolazione ha una disabilità. Il European Accessibility Act del 2025 obbliga tutte le aziende con più di 10 dipendenti ad avere prodotti digitali accessibili. Tono: empatico e pratico — 'puoi fare la differenza con 3 regole semplici'."
+      },
+      "professione_futura": {
+        "titolo": "UX Accessibility Specialist",
+        "orizzonte": "2030",
+        "descrizione_breve": "Garantisce che le app e i siti web siano utilizzabili da tutti, conducendo test con utenti con disabilità, verificando la conformità alle normative (WCAG, EAA) e formando i team di sviluppo.",
+        "competenze_chiave": [
+          "WCAG 2.1 / 2.2",
+          "testing con screen reader",
+          "Universal Design",
+          "conformità normativa europea (EAA 2025)"
+        ]
+      },
+      "sdg_principale": 10,
+      "clil_termini": [
+        {
+          "italiano": "accessibilità digitale",
+          "inglese": "digital accessibility",
+          "pronuncia_ipa": "/ˈdɪdʒɪtəl əkˌsesəˈbɪlɪti/"
+        },
+        {
+          "italiano": "usabilità",
+          "inglese": "usability",
+          "pronuncia_ipa": "/ˌjuːzəˈbɪlɪti/"
+        },
+        {
+          "italiano": "testo alternativo",
+          "inglese": "alt text",
+          "pronuncia_ipa": "/ælt tekst/"
+        },
+        {
+          "italiano": "lettore di schermo",
+          "inglese": "screen reader",
+          "pronuncia_ipa": "/skriːn ˈriːdər/"
+        }
+      ],
+      "uda_collegata": null
+    },
+    {
+      "id": "MC-DIS-3-01",
+      "area": "DIS",
+      "anno": 3,
+      "titolo": "Assonometria, prospettiva e progettazione",
+      "descrizione": "Lo studente sa eseguire rappresentazioni assonometriche (isometrica, cavaliera, monometrica) e conosce i principi della prospettiva a uno e due punti di fuga, applicando queste tecniche alla progettazione di oggetti d'uso, ambienti e scenari, e sa scegliere il tipo di rappresentazione più efficace per comunicare un'idea progettuale.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+          "traguardo": "Lo studente esegue rappresentazioni tridimensionali (assonometria e prospettiva) di oggetti e ambienti"
+        },
+        "DC": {
+          "ref": "3.1 Sviluppare contenuti digitali",
+          "livello": "A",
+          "nota": "Lo studente usa SketchUp o Tinkercad per produrre modelli 3D come alternativa/complemento al disegno manuale"
+        },
+        "EC": {
+          "ref": "Into action / Design thinking",
+          "nota": "Lo studente usa la rappresentazione grafica come strumento di comunicazione e sviluppo delle idee progettuali"
+        },
+        "LC": {
+          "ref": "Thinking / Creative thinking",
+          "nota": "Lo studente esplora lo spazio tridimensionale attraverso la rappresentazione grafica sviluppando pensiero visuo-spaziale"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "La comunicazione progettuale tridimensionale è competenza trasversale all'architettura, al design e all'ingegneria"
+        }
+      },
+      "outputApp": {
+        "quiz": "Riconoscimento: identifica il tipo di assonometria (isometrica/cavaliera/monometrica) da 3 disegni di un cubo. Feedback con angoli caratteristici.",
+        "microlearning": "Animazione step-by-step 5 min: costruzione assonometria isometrica di un parallelepipedo — passo per passo.",
+        "visual": "Poster comparativo: isometrica vs. cavaliera vs. prospettiva — stessa stanza in tre rappresentazioni diverse.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-DIS-2-01",
+        "MC-DIS-2-02"
+      ],
+      "tags": [
+        "assonometria",
+        "prospettiva",
+        "disegno 3D",
+        "progettazione",
+        "classe-3",
+        "DIS"
+      ],
+      "compito_realta": "Progetta e disegna un oggetto utile per la tua camera (mensola, organizer, lampada): esegui prima le 3 viste ortogonali quotate, poi l'assonometria isometrica e una veduta prospettica a mano libera che comunichi il concept.",
+      "sdg": [
+        4
+      ],
+      "note_didattiche": {
+        "base": "Partire dall'assonometria cavaliera di un parallelepipedo semplice. Lo studente aggiunge solo la prospettiva a un punto di fuga.",
+        "avanzato": "Realizzare il modello 3D digitale in SketchUp e produrre render fotorealistici dell'oggetto progettato con diversi materiali applicati."
+      }
+    },
+    {
+      "id": "MC-DIS-3-02",
+      "area": "DIS",
+      "anno": 3,
+      "titolo": "Disegno CAD e progettazione digitale",
+      "descrizione": "Lo studente sa usare un software CAD 2D/3D (LibreCAD, Tinkercad, FreeCAD) per produrre disegni tecnici precisi e modelli tridimensionali, comprende la differenza tra disegno manuale e digitale in termini di precisione, modificabilità e collaborazione, e sa esportare un file per la stampa 3D o il taglio laser.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con strumenti manuali e digitali",
+          "traguardo": "Lo studente produce disegni tecnici e modelli 3D con software CAD open source"
+        },
+        "DC": {
+          "ref": "3.2 Integrare e rielaborare contenuti digitali",
+          "livello": "A",
+          "nota": "Lo studente usa il CAD per progettare, modificare e ottimizzare un oggetto in modo iterativo"
+        },
+        "EC": {
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente gestisce un progetto digitale dalla bozza al file finale esportabile"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente usa il CAD per risolvere problemi di adattamento dimensionale in modo rapido e verificabile"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione; SDG 4 — Istruzione di qualità",
+          "nota": "La progettazione digitale è competenza fondamentale per l'accesso alle professioni STEM del futuro"
+        }
+      },
+      "outputApp": {
+        "quiz": "Identifica l'errore: dato un modello CAD di una scatola con dimensioni incoerenti — individua quale quota è sbagliata e corrigi. Feedback tecnico.",
+        "microlearning": "Tutorial guidato 5 min: costruire un supporto per smartphone in Tinkercad — 5 operazioni base (add, remove, align, group, export).",
+        "visual": "Confronto workflow: disegno manuale vs. CAD — vantaggi, svantaggi, quando scegliere quale.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-DIS-3-01"
+      ],
+      "tags": [
+        "CAD",
+        "disegno digitale",
+        "Tinkercad",
+        "stampa 3D",
+        "classe-3",
+        "DIS"
+      ],
+      "compito_realta": "Progetta in Tinkercad un oggetto utile per la scuola (es. porta-penne, segnapagine, supporto tablet): realizza il modello 3D con almeno 3 operazioni booleane, quota le dimensioni principali e esporta in STL per la stampa 3D.",
+      "sdg": [
+        4,
+        9
+      ],
+      "note_didattiche": {
+        "base": "Seguire un tutorial guidato passo-passo per costruire un oggetto pre-scelto. Limitarsi a 2 operazioni booleane.",
+        "avanzato": "Progettare autonomamente l'oggetto partendo da un brief di design (vincoli dimensionali + funzionali), iterare 2 versioni e argomentare le modifiche apportate."
+      }
+    },
+    {
+      "id": "MC-ENE-3-01",
+      "area": "ENE",
+      "anno": 3,
+      "titolo": "Macchine semplici e principi di meccanica",
+      "descrizione": "Lo studente conosce le sei macchine semplici (leva, piano inclinato, cuneo, vite, carrucola, ruota e perno), sa calcolare il vantaggio meccanico, e comprende il principio di conservazione dell'energia nelle macchine, collegando meccanica teorica a strumenti di uso quotidiano.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi e sistemi tecnologici nell'ambiente",
+          "traguardo": "Lo studente descrive le macchine semplici e calcola il vantaggio meccanico"
+        },
+        "DC": {
+          "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+          "livello": "I",
+          "nota": "Lo studente usa simulatori online (es. PhET) per sperimentare le macchine semplici virtualmente"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente identifica macchine semplici nel proprio ambiente e le analizza come sistemi di amplificazione della forza"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente applica i principi meccanici per risolvere problemi pratici di forza e distanza"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione e infrastrutture",
+          "nota": "Le macchine semplici sono il fondamento di tutta la meccanica e dell'ingegneria"
+        }
+      },
+      "outputApp": {
+        "quiz": "Calcolo guidato: 'Con una leva di 3° genere lunga 60 cm e fulcro a 20 cm dall'estremità — qual è il vantaggio meccanico?' Feedback con formula.",
+        "microlearning": "Card deck 6 slide: una macchina semplice per slide con schema, formula VM, esempio quotidiano. 5 min.",
+        "visual": "Poster: le 6 macchine semplici — schema, formula, 3 esempi di oggetti quotidiani per ciascuna.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "macchine semplici",
+        "leva",
+        "meccanica",
+        "vantaggio meccanico",
+        "classe-3",
+        "ENE"
+      ],
+      "compito_realta": "Identifica 5 macchine semplici in casa: fotografale o disegnale, classifica il tipo, misura le dimensioni rilevanti e calcola il vantaggio meccanico di almeno 2.",
+      "sdg": [
+        9
+      ],
+      "note_didattiche": {
+        "base": "Concentrarsi solo sulla leva (I, II, III genere) con esempi scelti tra oggetti comuni. Formula fornita.",
+        "avanzato": "Progettare una macchina composta (combinazione di 2+ macchine semplici) che risolva un problema domestico concreto."
+      }
+    },
+    {
+      "id": "MC-ENE-3-02",
+      "area": "ENE",
+      "anno": 3,
+      "titolo": "Fonti energetiche non rinnovabili",
+      "descrizione": "Lo studente conosce le caratteristiche di combustibili fossili (carbone, petrolio, gas naturale) e nucleare fissione, sa descrivere il processo di trasformazione energetica dalla fonte alla presa elettrica, e comprende i limiti di disponibilità e l'impatto ambientale di queste fonti, costruendo una visione critica della dipendenza energetica.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e descrive sistemi energetici nell'ambiente",
+          "traguardo": "Lo studente descrive le fonti non rinnovabili e ne valuta impatti e limiti"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente cerca e valuta dati sulle riserve mondiali di combustibili fossili da fonti istituzionali"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente collega la dipendenza dai fossili a scenari di transizione energetica"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente analizza la catena energetica come sistema interdipendente tra risorse, tecnologie e consumo"
+        },
+        "EV": {
+          "ref": "SDG 7 — Energia pulita; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "I combustibili fossili producono il 75% delle emissioni globali di gas serra"
+        }
+      },
+      "outputApp": {
+        "quiz": "Completamento timeline: data la mappa della catena petrolio (estrazione → raffinazione → distribuzione → uso), inserisci il processo mancante. 4 step con feedback.",
+        "microlearning": "Card deck 4 slide: carbone, petrolio, gas, nucleare — riserve stimate, paese produttore principale, impatto CO₂. 4 min.",
+        "visual": "Infografica: 'Come arriva la luce in casa?' — dal giacimento di gas alla presa elettrica in 6 passi.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "combustibili fossili",
+        "energia non rinnovabile",
+        "impatto ambientale",
+        "nucleare",
+        "classe-3",
+        "ENE"
+      ],
+      "compito_realta": "Calcola l'impronta di carbonio della tua famiglia per un mese: somma le emissioni da riscaldamento, trasporti e bolletta elettrica usando i fattori di conversione forniti e confronta con la media italiana.",
+      "sdg": [
+        7,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Fornire i fattori di conversione e un esempio già calcolato per il riscaldamento. Lo studente calcola solo trasporti ed elettricità.",
+        "avanzato": "Simulare 3 scenari di riduzione (auto elettrica, pannelli solari, casa ben isolata) e calcolare il risparmio di CO₂ per ciascuno."
+      }
+    },
+    {
+      "id": "MC-ENE-3-03",
+      "area": "ENE",
+      "anno": 3,
+      "titolo": "Fonti rinnovabili e transizione energetica",
+      "descrizione": "Lo studente conosce le principali fonti rinnovabili (solare fotovoltaico, eolico, idroelettrico, geotermico, biomasse), ne comprende il principio di funzionamento, sa confrontarne le caratteristiche con le fonti fossili, e sa progettare un semplice mix energetico per un edificio, valutando fattibilità tecnica ed economica.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e descrive sistemi energetici e impatto sull'ambiente",
+          "traguardo": "Lo studente descrive le fonti rinnovabili e progetta un piano energetico semplice"
+        },
+        "DC": {
+          "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+          "livello": "A",
+          "nota": "Lo studente usa simulatori online di impianti fotovoltaici per dimensionare un sistema reale"
+        },
+        "EC": {
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente propone un piano energetico concreto valutando costi, benefici e fattibilità"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente analizza la transizione energetica come processo sistemico che coinvolge tecnologia, economia e comportamenti"
+        },
+        "EV": {
+          "ref": "SDG 7 — Energia pulita; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "La transizione rinnovabile è la risposta tecnologica principale alla crisi climatica"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario energetico: 'Una scuola in Sicilia da 500 m² — quale fonte rinnovabile installeresti e perché?' Risposta guidata con criteri da valutare.",
+        "microlearning": "Card deck 5 slide: fotovoltaico, eolico, idroelettrico, geotermico, biomasse — principio + mappa mondiale + % del mix italiano. 5 min.",
+        "visual": "Grafico: evoluzione del mix energetico italiano 2000→2024 con proiezione 2030 (dati GSE).",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-ENE-3-02"
+      ],
+      "tags": [
+        "energie rinnovabili",
+        "fotovoltaico",
+        "transizione energetica",
+        "sostenibilità",
+        "classe-3",
+        "ENE"
+      ],
+      "compito_realta": "Progetta il piano energetico della scuola: stima il consumo annuo (bollette se disponibili, o dato medio per m²), dimensiona un impianto fotovoltaico e calcola il risparmio economico e la riduzione di CO₂ in 10 anni.",
+      "sdg": [
+        7,
+        13
+      ],
+      "note_didattiche": {
+        "base": "Fornire il consumo annuo della scuola già calcolato. Lo studente sceglie solo la fonte rinnovabile e giustifica la scelta.",
+        "avanzato": "Aggiungere una batteria di accumulo al sistema: come cambia l'autoconsumo? Calcolare il payback period dell'investimento."
+      }
+    },
+    {
+      "id": "MC-ENE-3-04",
+      "area": "ENE",
+      "anno": 3,
+      "titolo": "Elettricità e circuiti",
+      "descrizione": "Lo studente comprende i principi di base dell'elettricità (tensione, corrente, resistenza, legge di Ohm), sa analizzare circuiti in serie e in parallelo, e sa costruire un circuito semplice con componenti reali o virtuali, collegando la teoria elettrica a dispositivi tecnologici di uso quotidiano.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principi che regolano i sistemi tecnologici",
+          "traguardo": "Lo studente applica la legge di Ohm e costruisce circuiti semplici in serie e parallelo"
+        },
+        "DC": {
+          "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+          "livello": "I",
+          "nota": "Lo studente usa Tinkercad Circuits o Arduino IDE per simulare e costruire circuiti"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente usa componenti elettronici reali per costruire un prototipo funzionante"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente diagnostica un circuito non funzionante applicando la logica di esclusione"
+        },
+        "EV": {
+          "ref": "SDG 9 — Innovazione e infrastrutture",
+          "nota": "La comprensione dei circuiti elettrici è fondamento per elettronica, robotica e automazione"
+        }
+      },
+      "outputApp": {
+        "quiz": "Calcolo: dato un circuito con 3 resistenze in serie (10Ω, 20Ω, 30Ω) e tensione 12V — qual è la corrente? Feedback con soluzione passo-passo.",
+        "microlearning": "Card deck 5 slide: tensione, corrente, resistenza, serie, parallelo — schema circuitale + formula + esempio. 5 min.",
+        "visual": "Schema comparativo: circuito serie vs. parallelo — differenze di tensione e corrente illustrate con colori.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-ENE-3-01"
+      ],
+      "tags": [
+        "elettricità",
+        "circuiti",
+        "legge di Ohm",
+        "Arduino",
+        "classe-3",
+        "ENE"
+      ],
+      "compito_realta": "Costruisci una lampada intelligente con Arduino o micro:bit: la luce si accende automaticamente quando è buio (sensore LDR) e si spegne quando c'è luce sufficiente. Documenta il circuito e il codice.",
+      "sdg": [
+        9
+      ],
+      "note_didattiche": {
+        "base": "Usare Tinkercad Circuits per la simulazione virtuale invece del montaggio fisico. Fornire lo schema già disegnato.",
+        "avanzato": "Aggiungere un secondo sensore (temperatura o movimento) e gestire le due condizioni con logica AND/OR nel codice."
+      }
+    },
+    {
+      "id": "MC-ENE-3-05",
+      "area": "ENE",
+      "anno": 3,
+      "titolo": "Macchine termiche e motori",
+      "titolo_libro": "Come trasformiamo il calore in movimento?",
+      "descrizione": "Lo studente conosce il principio di funzionamento delle macchine termiche (ciclo di Carnot semplificato, motore a scoppio a 4 tempi, turbina a vapore), comprende il concetto di rendimento e le sue limitazioni fisiche imposte dalla termodinamica, e sa confrontare l'efficienza del motore termico con quella del motore elettrico.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principi che regolano i sistemi tecnologici; macchine motrici e trasformazione dell'energia",
+          "traguardo": "Lo studente descrive il funzionamento di una macchina termica, calcola il rendimento e lo confronta con il limite teorico di Carnot"
+        },
+        "DC": {
+          "ref": "5.1 Risolvere problemi tecnici",
+          "livello": "I",
+          "nota": "Lo studente usa simulatori animati di motori per visualizzare i cicli termodinamici e verifica i calcoli di rendimento"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente valuta l'inefficienza intrinseca delle macchine termiche come motivazione fisica per la transizione ai motori elettrici"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente traccia il flusso energetico da combustibile a lavoro utile identificando dove e perché l'energia si disperde"
+        },
+        "EV": {
+          "ref": "SDG 7 — Energia pulita; SDG 13 — Cambiamento climatico",
+          "nota": "Il basso rendimento dei motori a combustione interna (25-35%) è la principale causa di inefficienza energetica nei trasporti"
+        }
+      },
+      "outputApp": {
+        "quiz": "Calcolo rendimento: 'Un motore assorbe 1000 J e produce 280 J di lavoro — qual è il rendimento? È vicino al limite di Carnot per quelle temperature?' Feedback con passaggi.",
+        "microlearning": "Animazione 4 step: aspirazione → compressione → scoppio → scarico — ciclo a 4 tempi con valori di T e P. 4 min.",
+        "visual": "Schema Sankey comparativo: auto a benzina (rendimento ~28%) vs. motore elettrico (rendimento ~90%) — stesso input energetico.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-ENE-3-01",
+        "MC-ENE-3-02"
+      ],
+      "tags": [
+        "macchine termiche",
+        "motore a scoppio",
+        "rendimento",
+        "termodinamica",
+        "Carnot",
+        "motore elettrico",
+        "classe-3",
+        "ENE"
+      ],
+      "compito_realta": "Confronta il motore a scoppio di un'auto tradizionale con un motore elettrico: cerca i rendimenti tipici di entrambi, costruisci un diagramma di Sankey semplificato per ciascuno (100 unità di energia in input) e discuti quale è più efficiente — considerando anche la fonte energetica a monte.",
+      "sdg": [
+        7,
+        13
+      ],
+      "sdg_principale": 13,
+      "note_didattiche": {
+        "base": "Fornire i valori di rendimento già trovati e il template del diagramma di Sankey. Lo studente inserisce solo i numeri e scrive il confronto.",
+        "avanzato": "Analizzare l'efficienza dell'intera filiera well-to-wheel per auto elettrica vs. termica: dalla centrale elettrica (o dal pozzo) fino alla ruota."
+      },
+      "hook_audio": {
+        "titolo": "Perché il cofano è caldo?",
+        "oggetto_reale": "motore di un'automobile",
+        "domanda_avvio": "Se un motore a benzina spreca il 70% dell'energia come calore, perché lo usiamo ancora?",
+        "durata_min": 2,
+        "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica."
+      },
+      "professione_futura": {
+        "titolo": "Ingegnere della propulsione elettrica",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta sistemi di propulsione per veicoli elettrici e ibridi, ottimizzando il recupero energetico in frenata e l'efficienza complessiva della trasmissione.",
+        "competenze_chiave": [
+          "termodinamica applicata",
+          "elettrotecnica",
+          "simulazione CAE",
+          "gestione batterie BMS"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rendimento",
+          "inglese": "efficiency",
+          "pronuncia_ipa": "/ɪˈfɪʃənsi/"
+        },
+        {
+          "italiano": "motore a scoppio",
+          "inglese": "internal combustion engine",
+          "pronuncia_ipa": "/ɪnˈtɜːnəl kəmˈbʌstʃən ˈendʒɪn/"
+        },
+        {
+          "italiano": "ciclo termodinamico",
+          "inglese": "thermodynamic cycle",
+          "pronuncia_ipa": "/ˌθɜːməʊdaɪˈnæmɪk ˈsaɪkl/"
+        }
+      ],
+      "uda_collegata": "UDA-2",
+      "stem_connections": {
+        "matematica": "Il rendimento η = W_utile / Q_assorbito è una percentuale. Il limite di Carnot η_max = 1 − T_fredda/T_calda (in Kelvin) mostra come il rendimento dipende dalla differenza di temperatura.",
+        "scienze": "Secondo principio della termodinamica: il calore non può essere convertito completamente in lavoro in un ciclo. L'entropia aumenta sempre.",
+        "arte_geo_storia": "La macchina a vapore di James Watt (1769) ha innescato la Prima Rivoluzione Industriale — senza termodinamica non ci sarebbe stato il capitalismo industriale moderno.",
+        "frase_ponte": "L'energia obbedisce a leggi fisiche immutabili — e una di queste dice che non puoi mai convertire tutto il calore in lavoro."
+      }
+    },
+    {
+      "id": "MC-ENE-3-06",
+      "area": "ENE",
+      "anno": 3,
+      "titolo": "Accumulo energetico e smart grid",
+      "titolo_libro": "Come immagazziniamo l'energia del sole quando il sole non c'è?",
+      "descrizione": "Lo studente comprende il problema dell'intermittenza delle fonti rinnovabili e le principali tecnologie di accumulo energetico (batterie agli ioni di litio, idrogeno verde, accumulo pompato), conosce il concetto di smart grid e sa valutare i trade-off tecnici, economici e ambientali delle diverse soluzioni di accumulo.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce le tecnologie per la produzione, il trasporto e l'accumulo dell'energia; transizione energetica",
+          "traguardo": "Lo studente descrive le principali tecnologie di accumulo energetico e spiega il ruolo della smart grid nella gestione delle fonti rinnovabili"
+        },
+        "DC": {
+          "ref": "5.2 Identificare i bisogni tecnologici",
+          "livello": "A",
+          "nota": "Lo studente usa strumenti di simulazione (PVGIS, calcolatori online) per dimensionare un sistema di accumulo e valuta payback e impatto sulle emissioni"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente valuta la fattibilità economica di sistemi di accumulo domestici e scolastici, comprendendo il concetto di payback period"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente analizza la smart grid come sistema complesso che integra produzione distribuita, accumulo, consumo e gestione digitale dei flussi energetici"
+        },
+        "EV": {
+          "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Cambiamento climatico",
+          "nota": "L'accumulo energetico è il collo di bottiglia della transizione alle rinnovabili — senza di esso la decarbonizzazione è impossibile"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario: 'Un impianto FV da 6 kWp produce 25 kWh/giorno in estate. La famiglia consuma 10 kWh/giorno. Quanta energia va in rete? Che batteria servirebbe?' Calcolo guidato.",
+        "microlearning": "Card deck 6 slide: batterie litio (principio + costi + riciclo), idrogeno verde (elettrolisi + fuel cell), accumulo pompato (mgh + efficienza), smart grid (V2G + demand response), prezzi negativi, scenario 2035. 6 min.",
+        "visual": "Infografica: una giornata di energia in una casa con FV + batteria — flussi di produzione, autoconsumo, accumulo, vendita, prelievo nelle 24h.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-ENE-3-03",
+        "MC-ENE-3-04"
+      ],
+      "tags": [
+        "accumulo energetico",
+        "smart grid",
+        "batterie litio",
+        "idrogeno verde",
+        "transizione energetica",
+        "V2G",
+        "classe-3",
+        "ENE"
+      ],
+      "compito_realta": "Progetta il sistema di accumulo per la scuola fotovoltaica del tuo comune: usando dati reali di produzione FV e consumo scolastico, dimensiona la batteria, calcola il payback period e stima la riduzione annua di CO₂. Presenta la proposta come relazione tecnica per il consiglio di istituto.",
+      "sdg": [
+        7,
+        13
+      ],
+      "sdg_principale": 7,
+      "note_didattiche": {
+        "base": "Concentrarsi sul concetto qualitativo di accumulo — perché serve, che forme esistono, senza calcoli. Usare l'analogia della cisterna d'acqua per l'accumulo pompato.",
+        "avanzato": "Analizzare il ciclo di vita completo di una batteria agli ioni di litio: dall'estrazione del litio in Cile alla dismissione — impatto ambientale complessivo e confronto con l'accumulo pompato."
+      },
+      "hook_audio": {
+        "titolo": "L'isola che produce più energia di quanta ne consuma",
+        "oggetto_reale": "turbina eolica su Samsø, Danimarca",
+        "domanda_avvio": "Se potessimo immagazzinare l'energia del sole e del vento, avremmo già risolto il problema climatico?",
+        "durata_min": 2,
+        "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica."
+      },
+      "professione_futura": {
+        "titolo": "Energy Storage Engineer",
+        "orizzonte": "2035",
+        "descrizione_breve": "Progetta e dimensiona sistemi di accumulo energetico per edifici, quartieri e reti elettriche, ottimizzando l'integrazione con le fonti rinnovabili e la smart grid.",
+        "competenze_chiave": [
+          "elettrochimica delle batterie",
+          "gestione dei sistemi energetici",
+          "simulazione energetica",
+          "analisi economica LCA"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "accumulo energetico",
+          "inglese": "energy storage",
+          "pronuncia_ipa": "/ˈenədʒi ˈstɔːrɪdʒ/"
+        },
+        {
+          "italiano": "rete elettrica intelligente",
+          "inglese": "smart grid",
+          "pronuncia_ipa": "/smɑːt ɡrɪd/"
+        },
+        {
+          "italiano": "idrogeno verde",
+          "inglese": "green hydrogen",
+          "pronuncia_ipa": "/ɡriːn ˈhaɪdrədʒən/"
+        },
+        {
+          "italiano": "veicolo come batteria",
+          "inglese": "vehicle-to-grid (V2G)",
+          "pronuncia_ipa": "/ˈviːɪkl tə ɡrɪd/"
+        }
+      ],
+      "uda_collegata": "UDA-2",
+      "stem_connections": {
+        "matematica": "Energia immagazzinata: E (Wh) = Tensione (V) × Capacità (Ah). Payback period: anni = costo_investimento / risparmio_annuo. Entrambi calcoli lineari accessibili a studenti di terza media.",
+        "scienze": "Elettrolisi dell'acqua: 2H₂O → 2H₂ + O₂ (con energia elettrica). Fuel cell: H₂ + O₂ → H₂O + energia elettrica. Il ciclo idrogeno verde è chiuso senza emissioni se l'elettricità viene da rinnovabili.",
+        "arte_geo_storia": "Geopolitica: il litio si trova principalmente in Cile, Bolivia e Argentina ('litio triangle'). Chi controlla il litio nel 2050 avrà il potere che il petrolio ha dato al Medio Oriente nel XX secolo.",
+        "frase_ponte": "L'energia obbedisce a leggi fisiche immutabili — e ogni trasformazione disperde qualcosa."
+      }
+    },
+    {
+      "id": "MC-SIS-3-01",
+      "area": "SIS",
+      "anno": 3,
+      "titolo": "Sistemi economici e processi produttivi",
+      "descrizione": "Lo studente conosce le principali forme di organizzazione economica (artigianato, piccola impresa, industria, multinazionale), comprende i concetti di catena del valore, processo produttivo e divisione del lavoro, e sa analizzare un prodotto di consumo per ricostruire la sua catena produttiva globale.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e le relazioni tra scienza, tecnologia e società",
+          "traguardo": "Lo studente descrive l'organizzazione di un sistema produttivo e la catena del valore di un prodotto"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati",
+          "livello": "I",
+          "nota": "Lo studente ricerca online la catena produttiva di un prodotto tecnologico"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Valuing ideas",
+          "nota": "Lo studente comprende come il valore si crea lungo la catena produttiva e dove si concentra il profitto"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente analizza il sistema economico come insieme di attori interdipendenti con ruoli e interessi diversi"
+        },
+        "EV": {
+          "ref": "SDG 8 — Lavoro dignitoso; SDG 12 — Consumo responsabile",
+          "nota": "Conoscere la catena produttiva permette scelte di consumo consapevoli e supporto al lavoro equo"
+        }
+      },
+      "outputApp": {
+        "quiz": "Mappa della catena: dato uno smartphone, abbina ogni componente al paese di produzione. 5 componenti con mappa del mondo interattiva.",
+        "microlearning": "Card deck 5 slide: artigiano, PMI, industria, multinazionale, start-up — caratteristiche e differenze chiave. 4 min.",
+        "visual": "Mappa catena produttiva globale: da dove vengono i 10 componenti principali di uno smartphone.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": null,
+      "tags": [
+        "economia",
+        "produzione",
+        "catena del valore",
+        "industria",
+        "classe-3",
+        "SIS"
+      ],
+      "compito_realta": "Analizza il sistema economico della tua città: identifica 5 aziende di settori diversi, classifica ciascuna per tipo (artigianato/PMI/grande impresa) e crea una mappa che mostra come sono collegate tra loro nella filiera locale.",
+      "sdg": [
+        8,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Fornire le 5 aziende già selezionate con le informazioni di base. Lo studente deve solo classificarle e collegarle.",
+        "avanzato": "Analizzare una multinazionale presente nel territorio: dove produce, dove ha sede fiscale, quanti dipendenti locali — e confrontare con una PMI locale."
+      }
+    },
+    {
+      "id": "MC-SIS-3-02",
+      "area": "SIS",
+      "anno": 3,
+      "titolo": "Economia globale, lavoro e sostenibilità",
+      "descrizione": "Lo studente comprende i meccanismi dell'economia globale (commercio internazionale, delocalizzazione, globalizzazione), conosce il concetto di sviluppo sostenibile (SDGs) e sa analizzare le tensioni tra crescita economica, lavoro dignitoso e sostenibilità ambientale, costruendo una posizione critica e argomentata.",
+      "fonte": "Paci 2014 + Hypertech 2020",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi economici globali e le relazioni con l'ambiente",
+          "traguardo": "Lo studente analizza le dinamiche dell'economia globale e le collega ai principi dello sviluppo sostenibile"
+        },
+        "DC": {
+          "ref": "2.2 Condividere contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente crea e condivide una presentazione digitale argomentata su un tema di economia sostenibile"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente valuta modelli economici alternativi (economia circolare, B-Corp) rispetto al modello lineare dominante"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente si riconosce come attore economico e assume responsabilità nelle proprie scelte di consumo e lavoro futuro"
+        },
+        "EV": {
+          "ref": "SDG 8 — Lavoro dignitoso; SDG 10 — Ridurre le disuguaglianze; SDG 17 — Partnership",
+          "nota": "L'economia globale produce crescita ma anche disuguaglianze: capire le dinamiche è prerequisito per agire"
+        }
+      },
+      "outputApp": {
+        "quiz": "Scenario etico: 'Un'azienda si delocalizza in un paese con salari bassi — chi vince e chi perde?' Analisi guidata con 4 stakeholder da valutare.",
+        "microlearning": "Card deck 5 slide: globalizzazione, delocalizzazione, fair trade, economia circolare, SDGs — concetto + esempio + pro/contro. 5 min.",
+        "visual": "Schema: flussi del commercio mondiale — chi esporta cosa, chi importa, dove si concentra la ricchezza.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-SIS-3-01"
+      ],
+      "tags": [
+        "economia globale",
+        "lavoro",
+        "sostenibilità",
+        "SDGs",
+        "classe-3",
+        "SIS"
+      ],
+      "compito_realta": "Organizza un Gruppo di Acquisto Solidale virtuale: scegli 5 prodotti alimentari di uso comune, cerca per ciascuno un'alternativa equosolidale o a km0, confronta prezzi e impatti e calcola la differenza di costo mensile per una famiglia.",
+      "sdg": [
+        8,
+        10,
+        17
+      ],
+      "note_didattiche": {
+        "base": "Fornire i 5 prodotti e i link già trovati ai prodotti alternativi. Lo studente deve solo confrontare prezzi e descrivere gli impatti.",
+        "avanzato": "Produrre un vero volantino per un GAS della scuola con dati, prodotti scelti e argomentazione della scelta da distribuire ai genitori."
+      }
+    },
+    {
+      "id": "MC-SIS-3-03",
+      "area": "SIS",
+      "anno": 3,
+      "titolo": "Imprenditorialità e innovazione tecnologica",
+      "descrizione": "Lo studente comprende il processo di creazione di un'impresa innovativa (idea, validazione, prototipo, business model, lancio), conosce il ruolo delle start-up nell'ecosistema dell'innovazione, e sa applicare il metodo Lean Startup a un problema reale del proprio contesto, sviluppando mentalità imprenditoriale.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa progettare e realizzare soluzioni tecnologiche a problemi reali",
+          "traguardo": "Lo studente applica il pensiero imprenditoriale per ideare una soluzione tecnologica innovativa"
+        },
+        "DC": {
+          "ref": "5.4 Identificare lacune nelle competenze digitali e colmarle",
+          "livello": "I",
+          "nota": "Lo studente usa strumenti digitali per costruire un business model canvas e presentare la propria idea"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Entrepreneurial mindset",
+          "nota": "Lo studente sviluppa la capacità di identificare opportunità, tollerare l'incertezza e imparare dal fallimento"
+        },
+        "LC": {
+          "ref": "Thinking / Creative thinking",
+          "nota": "Lo studente genera e valuta idee innovative applicando pensiero laterale e Design Thinking"
+        },
+        "EV": {
+          "ref": "SDG 8 — Lavoro dignitoso; SDG 9 — Innovazione",
+          "nota": "L'imprenditorialità innovativa è motore di sviluppo economico sostenibile"
+        }
+      },
+      "outputApp": {
+        "quiz": "Business Model Canvas: dato un caso studio (es. una startup di food delivery sostenibile), identifica il segmento clienti, la proposta di valore e i canali. 3 domande con feedback.",
+        "microlearning": "Card deck 5 slide: problema → soluzione → MVP → validazione → scala — metodo Lean Startup in 5 passi. 4 min.",
+        "visual": "Business Model Canvas interattivo: 9 blocchi con esempi per ciascuno da un caso reale italiano.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-SIS-3-01"
+      ],
+      "tags": [
+        "imprenditorialità",
+        "start-up",
+        "innovazione",
+        "Lean Startup",
+        "classe-3",
+        "SIS"
+      ],
+      "compito_realta": "Identifica un problema reale della tua scuola o quartiere che la tecnologia potrebbe risolvere: compila un Business Model Canvas semplificato (5 blocchi), definisci il tuo MVP e presenta l'idea alla classe in 3 minuti.",
+      "sdg": [
+        8,
+        9
+      ],
+      "note_didattiche": {
+        "base": "Fornire un problema già identificato e un BMC con 3 blocchi già compilati come esempio. Lo studente completa i 2 mancanti.",
+        "avanzato": "Condurre 3 interviste reali con potenziali 'clienti' (compagni, insegnanti) per validare le ipotesi del BMC prima di presentarlo."
+      }
+    },
+    {
+      "id": "MC-SIS-3-04",
+      "area": "SIS",
+      "anno": 3,
+      "titolo": "Processi produttivi, qualità e certificazioni",
+      "descrizione": "Lo studente conosce i concetti di controllo qualità e certificazione (ISO, CE, biologico), comprende come i processi produttivi vengono standardizzati per garantire sicurezza e qualità, e sa leggere le principali certificazioni su un prodotto, sviluppando la capacità di scegliere prodotti certificati con consapevolezza critica.",
+      "fonte": "Paci 2014",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e i criteri di qualità",
+          "traguardo": "Lo studente legge e interpreta certificazioni di prodotto e capisce i processi di controllo qualità"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente verifica l'autenticità di certificazioni online usando i database ufficiali degli enti certificatori"
+        },
+        "EC": {
+          "ref": "Into action / Mobilising resources",
+          "nota": "Lo studente usa le certificazioni come strumento di selezione consapevole dei prodotti"
+        },
+        "LC": {
+          "ref": "Social / Responsible citizenship",
+          "nota": "Lo studente esercita il proprio ruolo di consumatore critico usando le informazioni sulle certificazioni"
+        },
+        "EV": {
+          "ref": "SDG 12 — Consumo responsabile; SDG 3 — Salute e benessere",
+          "nota": "Le certificazioni proteggono consumatori e ambiente — conoscerle è competenza di cittadinanza economica"
+        }
+      },
+      "outputApp": {
+        "quiz": "Riconoscimento simboli: mostra 8 loghi di certificazione (CE, ISO 9001, FSC, biologico EU, Fairtrade, Energy Star, RoHS, WEEE) — cosa significa ciascuno? Abbinamento con feedback.",
+        "microlearning": "Card deck 5 slide: CE, ISO, FSC, biologico, Fairtrade — a cosa servono, chi le rilascia, quanto costano alle aziende. 4 min.",
+        "visual": "Guida visiva: i 10 loghi di certificazione più comuni su packaging alimentari e prodotti elettronici.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-SIS-3-01"
+      ],
+      "tags": [
+        "certificazioni",
+        "qualità",
+        "ISO",
+        "controllo qualità",
+        "classe-3",
+        "SIS"
+      ],
+      "compito_realta": "Analizza il packaging di 5 prodotti diversi presenti in casa: identifica tutte le certificazioni presenti, cerca cosa significano sul sito dell'ente certificatore e valuta se la certificazione ti influenza nella scelta d'acquisto.",
+      "sdg": [
+        3,
+        12
+      ],
+      "note_didattiche": {
+        "base": "Fornire i 5 prodotti già selezionati con i loghi già evidenziati. Lo studente deve solo cercare il significato di 3 certificazioni.",
+        "avanzato": "Simulare un audit di qualità scolastico: definire 3 standard di qualità per la mensa scolastica e verificare se vengono rispettati attraverso osservazione diretta."
+      }
+    }
+  ]
+}
