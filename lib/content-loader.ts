@@ -5,6 +5,7 @@ import path from "path";
 const TESTI_ROOT = fs.existsSync(path.join(process.cwd(), "data/testi"))
   ? path.join(process.cwd(), "data/testi")
   : path.join(path.resolve(process.cwd(), "../.."), "08_TESTI");
+const PROJECT_ROOT = TESTI_ROOT;
 const PUBLIC_VISUAL_ROOT = path.join(process.cwd(), "public", "assets", "visual");
 const PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
