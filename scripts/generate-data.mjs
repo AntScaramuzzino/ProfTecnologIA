@@ -33,6 +33,11 @@ function walkDir(dir, results = []) {
   return results;
 }
 
+if (!fs.existsSync(MC_ROOT)) {
+  console.log(`ℹ️  01_MATRICE_MC non trovata — uso mc-data.json esistente.`);
+  process.exit(0);
+}
+
 const mcs = walkDir(MC_ROOT);
 mcs.sort((a, b) => {
   if (a.anno !== b.anno) return a.anno - b.anno;
