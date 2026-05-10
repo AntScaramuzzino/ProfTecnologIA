@@ -1,0 +1,57 @@
+{
+  "id": "MC-SIS-3-04",
+  "area": "SIS",
+  "anno": 3,
+  "titolo": "Processi produttivi, qualità e certificazioni",
+  "descrizione": "Lo studente conosce i concetti di controllo qualità e certificazione (ISO, CE, biologico), comprende come i processi produttivi vengono standardizzati per garantire sicurezza e qualità, e sa leggere le principali certificazioni su un prodotto, sviluppando la capacità di scegliere prodotti certificati con consapevolezza critica.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e i criteri di qualità",
+      "traguardo": "Lo studente legge e interpreta certificazioni di prodotto e capisce i processi di controllo qualità"
+    },
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente verifica l'autenticità di certificazioni online usando i database ufficiali degli enti certificatori"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente usa le certificazioni come strumento di selezione consapevole dei prodotti"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente esercita il proprio ruolo di consumatore critico usando le informazioni sulle certificazioni"
+    },
+    "EV": {
+      "ref": "SDG 12 — Consumo responsabile; SDG 3 — Salute e benessere",
+      "nota": "Le certificazioni proteggono consumatori e ambiente — conoscerle è competenza di cittadinanza economica"
+    }
+  },
+  "outputApp": {
+    "quiz": "Riconoscimento simboli: mostra 8 loghi di certificazione (CE, ISO 9001, FSC, biologico EU, Fairtrade, Energy Star, RoHS, WEEE) — cosa significa ciascuno? Abbinamento con feedback.",
+    "microlearning": "Card deck 5 slide: CE, ISO, FSC, biologico, Fairtrade — a cosa servono, chi le rilascia, quanto costano alle aziende. 4 min.",
+    "visual": "Guida visiva: i 10 loghi di certificazione più comuni su packaging alimentari e prodotti elettronici.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-SIS-3-01"
+  ],
+  "tags": [
+    "certificazioni",
+    "qualità",
+    "ISO",
+    "controllo qualità",
+    "classe-3",
+    "SIS"
+  ],
+  "compito_realta": "Analizza il packaging di 5 prodotti diversi presenti in casa: identifica tutte le certificazioni presenti, cerca cosa significano sul sito dell'ente certificatore e valuta se la certificazione ti influenza nella scelta d'acquisto.",
+  "sdg": [
+    3,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Fornire i 5 prodotti già selezionati con i loghi già evidenziati. Lo studente deve solo cercare il significato di 3 certificazioni.",
+    "avanzato": "Simulare un audit di qualità scolastico: definire 3 standard di qualità per la mensa scolastica e verificare se vengono rispettati attraverso osservazione diretta."
+  }
+}

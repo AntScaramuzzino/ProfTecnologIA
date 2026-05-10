@@ -1,0 +1,57 @@
+{
+  "id": "MC-ALI-2-02",
+  "area": "ALI",
+  "anno": 2,
+  "titolo": "Industria alimentare e tecniche di conservazione",
+  "descrizione": "Lo studente conosce i principali metodi di conservazione degli alimenti (pastorizzazione, sterilizzazione, essiccazione, surgelazione, confezionamento in atmosfera modificata), sa spiegare il principio fisico o chimico alla base di ciascuno e comprende come la tecnologia alimentare ha trasformato la nutrizione moderna.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+      "traguardo": "Lo studente descrive le tecnologie di conservazione alimentare e i loro principi scientifici"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati",
+      "livello": "I",
+      "nota": "Lo studente cerca e confronta fonti diverse sulla composizione e conservazione degli alimenti"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente collega metodi di conservazione alla riduzione degli sprechi alimentari"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente spiega perché un metodo di conservazione funziona usando i principi fisici/chimici"
+    },
+    "EV": {
+      "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
+      "nota": "La conservazione efficiente degli alimenti riduce gli sprechi e contribuisce alla sicurezza alimentare"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario: 'Hai del latte fresco — quale metodo usi per farlo durare 6 mesi senza frigorifero?' Multipla con feedback tecnico.",
+    "microlearning": "Card deck 6 slide: un metodo di conservazione per slide con principio fisico, esempio di prodotto, pro/contro. 5 min.",
+    "visual": "Timeline storica: dall'affumicatura preistorica al confezionamento sottovuoto — 5 tappe.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-ALI-2-01"
+  ],
+  "tags": [
+    "conservazione alimenti",
+    "pastorizzazione",
+    "industria alimentare",
+    "tecnologia",
+    "classe-2",
+    "ALI"
+  ],
+  "compito_realta": "Nel frigo o nella dispensa? Classifica 10 alimenti di casa per metodo di conservazione usato, spiega perché ciascuno richiede quel metodo e indica la scadenza media.",
+  "sdg": [
+    2,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Fornire la lista dei 10 alimenti e la tabella con le colonne da compilare. Concentrarsi solo su 3 metodi principali.",
+    "avanzato": "Progettare una catena del freddo per un prodotto deperibile: dal produttore al consumatore, indicando ogni punto critico."
+  }
+}

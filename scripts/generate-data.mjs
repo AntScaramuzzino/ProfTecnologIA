@@ -9,7 +9,11 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const MC_ROOT  = path.resolve(__dirname, "../../../01_MATRICE_MC");
+// data/mc/ se repo standalone (Netlify), altrimenti workspace locale
+const LOCAL_DATA = path.resolve(__dirname, "../data/mc");
+const MC_ROOT = fs.existsSync(LOCAL_DATA)
+  ? LOCAL_DATA
+  : path.resolve(__dirname, "../../../01_MATRICE_MC");
 const OUT_PATH = path.resolve(__dirname, "../public/mc-data.json");
 
 function walkDir(dir, results = []) {
@@ -34,7 +38,7 @@ function walkDir(dir, results = []) {
 }
 
 if (!fs.existsSync(MC_ROOT)) {
-  console.log(`ℹ️  01_MATRICE_MC non trovata — uso mc-data.json esistente.`);
+  console.log(`ℹ️  Sorgente MC non trovata (${MC_ROOT}) — uso mc-data.json esistente.`);
   process.exit(0);
 }
 

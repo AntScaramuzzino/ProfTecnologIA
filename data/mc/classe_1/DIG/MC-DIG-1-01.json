@@ -1,0 +1,56 @@
+{
+  "id": "MC-DIG-1-01",
+  "area": "DIG",
+  "anno": 1,
+  "titolo": "Orientarsi nell'ambiente digitale",
+  "descrizione": "Lo studente sa navigare in un sistema operativo (cartelle, file, applicazioni), conosce i principali componenti hardware di un computer e un dispositivo mobile, e comprende la differenza tra hardware e software, applicando queste conoscenze alla gestione dei propri dispositivi scolastici.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Utilizza adeguate risorse materiali, informative e organizzative per la progettazione",
+      "traguardo": "Lo studente sa orientarsi nell'ambiente digitale e gestire file e cartelle"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente naviga nell'ambiente digitale con consapevolezza delle strutture di base"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente sfrutta le risorse digitali disponibili per organizzare il proprio lavoro scolastico"
+    },
+    "LC": {
+      "ref": "Self-management / Organisation",
+      "nota": "Lo studente organizza i file digitali con una struttura logica per supportare il proprio apprendimento"
+    },
+    "EV": {
+      "ref": "SDG 4 — Istruzione di qualità",
+      "nota": "La competenza digitale di base è prerequisito per l'accesso all'istruzione nel XXI secolo"
+    }
+  },
+  "outputApp": {
+    "quiz": "Abbinamento: collega ogni componente hardware (CPU, RAM, SSD, monitor) alla sua funzione. 6 coppie con feedback.",
+    "microlearning": "Card deck 5 slide: dall'hardware al software — CPU, memoria, periferiche, OS, applicazioni. 4 min.",
+    "visual": "Schema anatomia del computer: vista esplosa con etichette e funzioni.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "hardware",
+    "software",
+    "sistema operativo",
+    "file",
+    "digitale",
+    "classe-1",
+    "DIG"
+  ],
+  "compito_realta": "Smonta virtualmente un vecchio dispositivo: cerca le foto di disassemblaggio del tuo modello di smartphone o computer, identifica 5 componenti interni e spiega la funzione di ciascuno.",
+  "sdg": [
+    4,
+    9
+  ],
+  "note_didattiche": {
+    "base": "Usare uno schema già etichettato con 4 componenti. Lo studente deve solo abbinare la funzione.",
+    "avanzato": "Costruire un glossario personale dei componenti hardware con immagini cercate autonomamente e una frase descrittiva per ciascuno."
+  }
+}

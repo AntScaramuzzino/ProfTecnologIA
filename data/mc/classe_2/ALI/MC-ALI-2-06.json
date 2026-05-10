@@ -1,0 +1,58 @@
+{
+  "id": "MC-ALI-2-06",
+  "area": "ALI",
+  "anno": 2,
+  "titolo": "Cibo, cultura e biodiversità",
+  "descrizione": "Lo studente esplora la relazione tra cibo, identità culturale e biodiversità agricola, comprende il concetto di erosione della biodiversità alimentare e sa valutare l'importanza della preservazione di varietà tradizionali e locali come patrimonio culturale e risorsa per il futuro.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+      "traguardo": "Lo studente collega le tradizioni alimentari alla biodiversità e al patrimonio culturale locale"
+    },
+    "DC": {
+      "ref": "2.2 Condividere contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente crea e condivide un contenuto digitale (video, presentazione) su una tradizione alimentare locale"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Creativity",
+      "nota": "Lo studente valorizza le tradizioni locali come risorsa per l'innovazione alimentare"
+    },
+    "LC": {
+      "ref": "Social / Cultural awareness",
+      "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità"
+    },
+    "EV": {
+      "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
+      "nota": "La biodiversità alimentare è fondamento della sicurezza alimentare futura"
+    }
+  },
+  "outputApp": {
+    "quiz": "Collegamento: abbina prodotto DOP/IGP alla sua regione di origine. 6 prodotti italiani con mappa interattiva.",
+    "microlearning": "Card deck 5 slide: 5 varietà agricole a rischio estinzione con nome, storia, dove si coltiva ancora. 4 min.",
+    "visual": "Mappa interattiva: biodiversità alimentare italiana — prodotti tradizionali per regione.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-ALI-2-01",
+    "MC-ALI-2-03"
+  ],
+  "tags": [
+    "biodiversità",
+    "cultura alimentare",
+    "tradizioni",
+    "DOP",
+    "classe-2",
+    "ALI"
+  ],
+  "compito_realta": "Intervista un familiare o anziano del tuo paese su un piatto tradizionale della tua famiglia o regione: documenta la ricetta, gli ingredienti locali usati e il significato culturale in una scheda di max 1 pagina.",
+  "sdg": [
+    2,
+    15
+  ],
+  "note_didattiche": {
+    "base": "Fornire una scheda-intervista con le domande già formulate. Lo studente deve solo compilare le risposte.",
+    "avanzato": "Creare una mappa digitale della biodiversità alimentare del proprio comune usando Google Maps con pin e schede informative."
+  }
+}

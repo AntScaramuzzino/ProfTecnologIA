@@ -1,0 +1,58 @@
+{
+  "id": "MC-SIS-3-02",
+  "area": "SIS",
+  "anno": 3,
+  "titolo": "Economia globale, lavoro e sostenibilità",
+  "descrizione": "Lo studente comprende i meccanismi dell'economia globale (commercio internazionale, delocalizzazione, globalizzazione), conosce il concetto di sviluppo sostenibile (SDGs) e sa analizzare le tensioni tra crescita economica, lavoro dignitoso e sostenibilità ambientale, costruendo una posizione critica e argomentata.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi economici globali e le relazioni con l'ambiente",
+      "traguardo": "Lo studente analizza le dinamiche dell'economia globale e le collega ai principi dello sviluppo sostenibile"
+    },
+    "DC": {
+      "ref": "2.2 Condividere contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente crea e condivide una presentazione digitale argomentata su un tema di economia sostenibile"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente valuta modelli economici alternativi (economia circolare, B-Corp) rispetto al modello lineare dominante"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente si riconosce come attore economico e assume responsabilità nelle proprie scelte di consumo e lavoro futuro"
+    },
+    "EV": {
+      "ref": "SDG 8 — Lavoro dignitoso; SDG 10 — Ridurre le disuguaglianze; SDG 17 — Partnership",
+      "nota": "L'economia globale produce crescita ma anche disuguaglianze: capire le dinamiche è prerequisito per agire"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario etico: 'Un'azienda si delocalizza in un paese con salari bassi — chi vince e chi perde?' Analisi guidata con 4 stakeholder da valutare.",
+    "microlearning": "Card deck 5 slide: globalizzazione, delocalizzazione, fair trade, economia circolare, SDGs — concetto + esempio + pro/contro. 5 min.",
+    "visual": "Schema: flussi del commercio mondiale — chi esporta cosa, chi importa, dove si concentra la ricchezza.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-SIS-3-01"
+  ],
+  "tags": [
+    "economia globale",
+    "lavoro",
+    "sostenibilità",
+    "SDGs",
+    "classe-3",
+    "SIS"
+  ],
+  "compito_realta": "Organizza un Gruppo di Acquisto Solidale virtuale: scegli 5 prodotti alimentari di uso comune, cerca per ciascuno un'alternativa equosolidale o a km0, confronta prezzi e impatti e calcola la differenza di costo mensile per una famiglia.",
+  "sdg": [
+    8,
+    10,
+    17
+  ],
+  "note_didattiche": {
+    "base": "Fornire i 5 prodotti e i link già trovati ai prodotti alternativi. Lo studente deve solo confrontare prezzi e descrivere gli impatti.",
+    "avanzato": "Produrre un vero volantino per un GAS della scuola con dati, prodotti scelti e argomentazione della scelta da distribuire ai genitori."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "MC-SIS-3-03",
+  "area": "SIS",
+  "anno": 3,
+  "titolo": "Imprenditorialità e innovazione tecnologica",
+  "descrizione": "Lo studente comprende il processo di creazione di un'impresa innovativa (idea, validazione, prototipo, business model, lancio), conosce il ruolo delle start-up nell'ecosistema dell'innovazione, e sa applicare il metodo Lean Startup a un problema reale del proprio contesto, sviluppando mentalità imprenditoriale.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa progettare e realizzare soluzioni tecnologiche a problemi reali",
+      "traguardo": "Lo studente applica il pensiero imprenditoriale per ideare una soluzione tecnologica innovativa"
+    },
+    "DC": {
+      "ref": "5.4 Identificare lacune nelle competenze digitali e colmarle",
+      "livello": "I",
+      "nota": "Lo studente usa strumenti digitali per costruire un business model canvas e presentare la propria idea"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Entrepreneurial mindset",
+      "nota": "Lo studente sviluppa la capacità di identificare opportunità, tollerare l'incertezza e imparare dal fallimento"
+    },
+    "LC": {
+      "ref": "Thinking / Creative thinking",
+      "nota": "Lo studente genera e valuta idee innovative applicando pensiero laterale e Design Thinking"
+    },
+    "EV": {
+      "ref": "SDG 8 — Lavoro dignitoso; SDG 9 — Innovazione",
+      "nota": "L'imprenditorialità innovativa è motore di sviluppo economico sostenibile"
+    }
+  },
+  "outputApp": {
+    "quiz": "Business Model Canvas: dato un caso studio (es. una startup di food delivery sostenibile), identifica il segmento clienti, la proposta di valore e i canali. 3 domande con feedback.",
+    "microlearning": "Card deck 5 slide: problema → soluzione → MVP → validazione → scala — metodo Lean Startup in 5 passi. 4 min.",
+    "visual": "Business Model Canvas interattivo: 9 blocchi con esempi per ciascuno da un caso reale italiano.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-SIS-3-01"
+  ],
+  "tags": [
+    "imprenditorialità",
+    "start-up",
+    "innovazione",
+    "Lean Startup",
+    "classe-3",
+    "SIS"
+  ],
+  "compito_realta": "Identifica un problema reale della tua scuola o quartiere che la tecnologia potrebbe risolvere: compila un Business Model Canvas semplificato (5 blocchi), definisci il tuo MVP e presenta l'idea alla classe in 3 minuti.",
+  "sdg": [
+    8,
+    9
+  ],
+  "note_didattiche": {
+    "base": "Fornire un problema già identificato e un BMC con 3 blocchi già compilati come esempio. Lo studente completa i 2 mancanti.",
+    "avanzato": "Condurre 3 interviste reali con potenziali 'clienti' (compagni, insegnanti) per validare le ipotesi del BMC prima di presentarlo."
+  }
+}

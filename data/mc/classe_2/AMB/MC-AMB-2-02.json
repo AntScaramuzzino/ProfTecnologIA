@@ -1,0 +1,57 @@
+{
+  "id": "MC-AMB-2-02",
+  "area": "AMB",
+  "anno": 2,
+  "titolo": "Impianti domestici e risparmio energetico",
+  "descrizione": "Lo studente conosce i principali impianti di un'abitazione (elettrico, idrico, termico, gas), sa leggere uno schema semplificato, comprende le norme di sicurezza di base e sa calcolare il consumo energetico di elettrodomestici comuni, sviluppando abitudini di risparmio energetico consapevole.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le relazioni con l'ambiente",
+      "traguardo": "Lo studente descrive gli impianti domestici e applica criteri di sicurezza ed efficienza"
+    },
+    "DC": {
+      "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente usa un foglio di calcolo per stimare i consumi energetici domestici"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente identifica azioni di risparmio energetico applicabili nel proprio contesto domestico"
+    },
+    "LC": {
+      "ref": "Self-management / Responsible decisions",
+      "nota": "Lo studente assume responsabilità nelle scelte energetiche domestiche quotidiane"
+    },
+    "EV": {
+      "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "Il risparmio energetico domestico è contributo diretto alla riduzione delle emissioni"
+    }
+  },
+  "outputApp": {
+    "quiz": "Calcolo guidato: 'Il tuo televisore da 100W è acceso 4 ore al giorno — quanto consuma in un mese?' Feedback con formula.",
+    "microlearning": "Card deck 5 slide: impianto elettrico, idrico, termico, gas, fotovoltaico — schema + pericoli principali. 5 min.",
+    "visual": "Sezione della casa: tutti gli impianti sovrapposti in colori diversi — legenda interattiva.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-AMB-2-01"
+  ],
+  "tags": [
+    "impianti",
+    "risparmio energetico",
+    "sicurezza",
+    "consumi",
+    "classe-2",
+    "AMB"
+  ],
+  "compito_realta": "Disegna lo schema semplificato degli impianti della tua casa: identifica dove entra l'acqua, dove va l'elettricità e dove si trovano i principali punti di sicurezza (interruttore generale, contatore gas, valvola acqua).",
+  "sdg": [
+    7,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Fornire la pianta della casa già disegnata. Lo studente deve solo aggiungere i simboli degli impianti su overlay.",
+    "avanzato": "Calcolare il consumo mensile dell'intera abitazione e identificare i 3 elettrodomestici più energivori con proposte di sostituzione."
+  }
+}

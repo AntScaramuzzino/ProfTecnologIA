@@ -1,0 +1,56 @@
+{
+  "id": "MC-AMB-2-03",
+  "area": "AMB",
+  "anno": 2,
+  "titolo": "Città, servizi urbani e pianificazione",
+  "descrizione": "Lo studente comprende come una città è organizzata (zone residenziali, commerciali, industriali, verdi), conosce i principali servizi urbani (trasporti, rifiuti, acqua, verde pubblico) e sa analizzare un quartiere reale individuando punti di forza, carenze e possibili miglioramenti.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente e nei sistemi tecnologici le relazioni con il contesto",
+      "traguardo": "Lo studente analizza l'organizzazione urbana e individua le funzioni dei servizi della città"
+    },
+    "DC": {
+      "ref": "2.1 Interagire con tecnologie digitali",
+      "livello": "I",
+      "nota": "Lo studente usa Google Maps/Earth per analizzare la struttura urbana e identificare servizi"
+    },
+    "EC": {
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente propone miglioramenti concreti per il proprio quartiere"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente si riconosce come abitante attivo e responsabile della propria comunità urbana"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città e comunità sostenibili",
+      "nota": "Analizzare la città è il primo passo per diventare cittadini attivi e partecipi"
+    }
+  },
+  "outputApp": {
+    "quiz": "Classificazione: 8 foto di luoghi urbani da abbinare alla categoria (residenziale/commerciale/industriale/verde/servizi). Feedback.",
+    "microlearning": "Card deck 5 slide: le 5 funzioni di una città (abitare, lavorare, muoversi, svagarsi, curarsi) con esempi. 4 min.",
+    "visual": "Mappa concettuale: la città come sistema — nodi (funzioni) e connessioni (relazioni).",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-AMB-2-01"
+  ],
+  "tags": [
+    "città",
+    "urbanistica",
+    "servizi urbani",
+    "quartiere",
+    "classe-2",
+    "AMB"
+  ],
+  "compito_realta": "Analizza il quartiere della scuola: usando Google Maps, identifica le zone funzionali, conta i servizi presenti (scuole, ospedali, parchi, fermate bus) e proponi un miglioramento motivato.",
+  "sdg": [
+    11
+  ],
+  "note_didattiche": {
+    "base": "Fornire la mappa del quartiere già stampata con le zone pre-etichettate. Lo studente identifica solo i servizi mancanti.",
+    "avanzato": "Confrontare il proprio quartiere con un quartiere di un'altra città italiana o europea: stesso numero di abitanti, diversa qualità dei servizi — perché?"
+  }
+}

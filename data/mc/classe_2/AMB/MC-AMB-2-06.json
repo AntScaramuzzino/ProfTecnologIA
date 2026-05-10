@@ -1,0 +1,58 @@
+{
+  "id": "MC-AMB-2-06",
+  "area": "AMB",
+  "anno": 2,
+  "titolo": "Rischio idrogeologico e prevenzione",
+  "descrizione": "Lo studente comprende cosa si intende per rischio idrogeologico (frane, alluvioni, siccità), sa leggere una mappa del rischio semplificata, e conosce le principali misure di prevenzione tecnologica e comportamentale, sviluppando consapevolezza del rapporto tra territorio, clima e sicurezza.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con la natura",
+      "traguardo": "Lo studente descrive i rischi idrogeologici e le tecnologie di monitoraggio e prevenzione"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati",
+      "livello": "I",
+      "nota": "Lo studente usa piattaforme GIS (es. ISPRA, Geoportale) per consultare mappe del rischio del proprio territorio"
+    },
+    "EC": {
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente identifica azioni preventive realizzabili nella propria comunità"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "Il rischio idrogeologico è amplificato dai cambiamenti climatici: prevenire è adattarsi"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario di emergenza: 'Sei in una zona con allerta arancione per piogge intense — quali azioni eviti? Quali fai?' Multipla con feedback di protezione civile.",
+    "microlearning": "Card deck 5 slide: frana, alluvione, siccità, erosione costiera, valanga — cause + segnali premonitori + cosa fare. 5 min.",
+    "visual": "Mappa del rischio Italia: aree rosse, arancioni, gialle con legenda e casistiche storiche.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-AMB-2-02",
+    "MC-AMB-2-03"
+  ],
+  "tags": [
+    "rischio idrogeologico",
+    "prevenzione",
+    "territorio",
+    "alluvioni",
+    "classe-2",
+    "AMB"
+  ],
+  "compito_realta": "Ricerca se il territorio del tuo comune è classificato a rischio idrogeologico sul Geoportale ISPRA: identifica il livello di rischio, l'ultimo evento registrato e una misura di prevenzione esistente o possibile.",
+  "sdg": [
+    11,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Fornire la scheda del comune già compilata parzialmente. Lo studente aggiunge solo la misura di prevenzione.",
+    "avanzato": "Confrontare due comuni italiani con lo stesso livello di rischio ma diversa capacità di risposta: cosa fa la differenza?"
+  }
+}

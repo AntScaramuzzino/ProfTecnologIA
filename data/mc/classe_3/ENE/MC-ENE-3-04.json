@@ -1,0 +1,56 @@
+{
+  "id": "MC-ENE-3-04",
+  "area": "ENE",
+  "anno": 3,
+  "titolo": "Elettricità e circuiti",
+  "descrizione": "Lo studente comprende i principi di base dell'elettricità (tensione, corrente, resistenza, legge di Ohm), sa analizzare circuiti in serie e in parallelo, e sa costruire un circuito semplice con componenti reali o virtuali, collegando la teoria elettrica a dispositivi tecnologici di uso quotidiano.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principi che regolano i sistemi tecnologici",
+      "traguardo": "Lo studente applica la legge di Ohm e costruisce circuiti semplici in serie e parallelo"
+    },
+    "DC": {
+      "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+      "livello": "I",
+      "nota": "Lo studente usa Tinkercad Circuits o Arduino IDE per simulare e costruire circuiti"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente usa componenti elettronici reali per costruire un prototipo funzionante"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente diagnostica un circuito non funzionante applicando la logica di esclusione"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione e infrastrutture",
+      "nota": "La comprensione dei circuiti elettrici è fondamento per elettronica, robotica e automazione"
+    }
+  },
+  "outputApp": {
+    "quiz": "Calcolo: dato un circuito con 3 resistenze in serie (10Ω, 20Ω, 30Ω) e tensione 12V — qual è la corrente? Feedback con soluzione passo-passo.",
+    "microlearning": "Card deck 5 slide: tensione, corrente, resistenza, serie, parallelo — schema circuitale + formula + esempio. 5 min.",
+    "visual": "Schema comparativo: circuito serie vs. parallelo — differenze di tensione e corrente illustrate con colori.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-ENE-3-01"
+  ],
+  "tags": [
+    "elettricità",
+    "circuiti",
+    "legge di Ohm",
+    "Arduino",
+    "classe-3",
+    "ENE"
+  ],
+  "compito_realta": "Costruisci una lampada intelligente con Arduino o micro:bit: la luce si accende automaticamente quando è buio (sensore LDR) e si spegne quando c'è luce sufficiente. Documenta il circuito e il codice.",
+  "sdg": [
+    9
+  ],
+  "note_didattiche": {
+    "base": "Usare Tinkercad Circuits per la simulazione virtuale invece del montaggio fisico. Fornire lo schema già disegnato.",
+    "avanzato": "Aggiungere un secondo sensore (temperatura o movimento) e gestire le due condizioni con logica AND/OR nel codice."
+  }
+}

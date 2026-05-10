@@ -1,0 +1,56 @@
+{
+  "id": "MC-COM-3-02",
+  "area": "COM",
+  "anno": 3,
+  "titolo": "Produzione di contenuti digitali responsabili",
+  "descrizione": "Lo studente sa creare contenuti digitali di qualità (testo, audio, video, immagini) rispettando le licenze d'uso (Creative Commons), citando correttamente le fonti, e comprende le implicazioni etiche e legali della pubblicazione online, sviluppando un approccio responsabile alla produzione e condivisione di contenuti.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa utilizzare comunicazioni procedurali e istruzioni tecniche per produrre",
+      "traguardo": "Lo studente crea contenuti digitali originali rispettando le norme sul diritto d'autore"
+    },
+    "DC": {
+      "ref": "3.1 Sviluppare contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente produce un contenuto digitale originale scegliendo formato, strumento e licenza"
+    },
+    "EC": {
+      "ref": "Into action / Creativity",
+      "nota": "Lo studente esprime idee originali attraverso formati digitali diversi"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente comprende le responsabilità legali ed etiche della pubblicazione online"
+    },
+    "EV": {
+      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "Il rispetto del diritto d'autore e delle licenze è esercizio di cittadinanza digitale responsabile"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario licenza: 'Vuoi usare questa foto per il tuo podcast — la licenza è CC BY-NC. Puoi farlo? Come devi citarla?' Multipla con spiegazione CC.",
+    "microlearning": "Card deck 5 slide: CC0, CC BY, CC BY-SA, CC BY-NC, CC BY-ND — differenze con icone e casi d'uso. 4 min.",
+    "visual": "Albero decisionale: 'Posso usare questo contenuto?' — diagramma a scelte per ogni tipo di licenza.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-COM-3-01"
+  ],
+  "tags": [
+    "contenuti digitali",
+    "Creative Commons",
+    "copyright",
+    "podcast",
+    "classe-3",
+    "COM"
+  ],
+  "compito_realta": "Produci un podcast di 3 minuti su un tema tecnologico scelto: scrivi lo script, registra l'audio, aggiungi musica con licenza CC, cita tutte le fonti usate nel documento di accompagnamento.",
+  "sdg": [
+    16
+  ],
+  "note_didattiche": {
+    "base": "Fornire lo script già scritto. Lo studente si concentra solo sulla registrazione e sulla corretta citazione della musica CC.",
+    "avanzato": "Pubblicare il podcast su una piattaforma open (es. Internet Archive) con licenza CC scelta e giustificata dallo studente."
+  }
+}

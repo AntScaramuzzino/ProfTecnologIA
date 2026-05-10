@@ -1,0 +1,59 @@
+{
+  "id": "MC-MAT-1-06",
+  "area": "MAT",
+  "anno": 1,
+  "titolo": "Biomateriali e bioplastiche: il futuro dei materiali",
+  "descrizione": "Lo studente comprende cosa sono i biomateriali (materiali di origine biologica o prodotti da organismi viventi), conosce esempi concreti di bioplastiche e materiali biodegradabili, e sa discutere criticamente i limiti e le potenzialità di queste alternative.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+      "traguardo": "Lo studente riconosce i biomateriali come risposta tecnologica alla crisi ambientale"
+    },
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente valuta criticamente articoli e fonti web sui biomateriali"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente collega innovazione dei materiali a modelli di economia circolare"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione; SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
+      "nota": "I biomateriali riducono l'inquinamento da plastica convenzionale"
+    }
+  },
+  "outputApp": {
+    "quiz": "Vero/Falso con spiegazione: 5 affermazioni sulle bioplastiche (es. 'La bioplastica si smaltisce nel compostaggio domestico').",
+    "microlearning": "Card deck 5 slide: fungo-materiale (mycelium), PLA, amido di mais, seta batterica, fibra di canapa. 4 min.",
+    "visual": "Infografica: bioplastica convenzionale — confronto su 4 parametri con icone.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-MAT-1-03",
+    "MC-MAT-1-04"
+  ],
+  "tags": [
+    "biomateriali",
+    "bioplastica",
+    "biodegradabile",
+    "economia circolare",
+    "classe-1",
+    "MAT"
+  ],
+  "compito_realta": "Ricerca un prodotto commerciale che dichiara di usare bioplastica: verifica la composizione reale sull'etichetta, cerca come va smaltito e valuta se l'etichetta 'bio' è giustificata o fuorviante.",
+  "sdg": [
+    9,
+    14,
+    15
+  ],
+  "note_didattiche": {
+    "base": "Fornire 3 prodotti già selezionati con le etichette analizzate. Lo studente confronta i dati già estratti.",
+    "avanzato": "Progettare un esperimento semplice per testare la biodegradabilità in classe (interrare campioni, osservare per 2 settimane)."
+  }
+}

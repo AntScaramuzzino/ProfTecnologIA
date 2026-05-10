@@ -1,0 +1,54 @@
+{
+  "id": "MC-AMB-2-01",
+  "area": "AMB",
+  "anno": 2,
+  "titolo": "Strutture edilizie e tecniche costruttive",
+  "descrizione": "Lo studente conosce i principali sistemi strutturali (fondazioni, muri portanti, pilastri, travi, solai, coperture), sa distinguere strutture in muratura, cemento armato, acciaio e legno, e comprende come la forma strutturale risponde ai carichi, collegando la scelta tecnica al contesto geografico e climatico.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse e produzione di beni",
+      "traguardo": "Lo studente descrive le tecniche costruttive principali e i materiali da costruzione"
+    },
+    "DC": {
+      "ref": "5.1 Risolvere problemi tecnici",
+      "livello": "F",
+      "nota": "Lo studente usa strumenti digitali (Tinkercad, SketchUp free) per modellare semplici strutture"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente pianifica una struttura sperimentale valutando materiali e vincoli"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente affronta la sfida strutturale (spaghetti/marshmallow) con approccio metodico"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città e comunità sostenibili",
+      "nota": "Conoscere le strutture edilizie è prerequisito per comprendere la qualità e la sicurezza dell'habitat urbano"
+    }
+  },
+  "outputApp": {
+    "quiz": "Abbinamento: collegamento strutturale → materiale più adatto → motivazione. 5 coppie con feedback.",
+    "microlearning": "Card deck 5 slide: fondazioni, muro portante, pilastro/trave, solaio, copertura — schema + funzione. 4 min.",
+    "visual": "Sezione di un edificio a strati: ogni elemento strutturale evidenziato con nome e materiale.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "strutture edilizie",
+    "costruzione",
+    "cemento armato",
+    "muratura",
+    "classe-2",
+    "AMB"
+  ],
+  "compito_realta": "Costruisci la struttura più alta possibile usando 20 spaghetti e 5 marshmallow che regga il peso di un libro per 10 secondi: documenta il processo, misura l'altezza e spiega perché ha retto o ceduto.",
+  "sdg": [
+    11
+  ],
+  "note_didattiche": {
+    "base": "Fornire un progetto guidato (triangolo base + colonna) già testato. Lo studente segue le istruzioni e osserva il risultato.",
+    "avanzato": "Progettare una struttura antisisminca: come cambia il design se la struttura deve resistere a vibrazioni laterali?"
+  }
+}

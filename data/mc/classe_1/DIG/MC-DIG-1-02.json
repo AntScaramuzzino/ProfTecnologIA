@@ -1,0 +1,57 @@
+{
+  "id": "MC-DIG-1-02",
+  "area": "DIG",
+  "anno": 1,
+  "titolo": "Ricerca e valutazione delle fonti online",
+  "descrizione": "Lo studente sa formulare query di ricerca efficaci, distingue fonti attendibili da inattendibili usando criteri verificabili (autore, data, riferimenti, scopo), e sa citare correttamente una fonte digitale, sviluppando un approccio critico all'informazione online.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa utilizzare comunicazioni procedurali e istruzioni tecniche",
+      "traguardo": "Lo studente valuta criticamente le fonti digitali e le usa in modo appropriato"
+    },
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente applica criteri espliciti per valutare l'attendibilità di una fonte online"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Valuing ideas",
+      "nota": "Lo studente distingue informazione di qualità da noise per costruire conoscenza affidabile"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente mette in discussione le fonti invece di accettarle acriticamente"
+    },
+    "EV": {
+      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "Saper distinguere informazione verificata da disinformazione è esercizio di cittadinanza democratica"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario: mostra 3 articoli sullo stesso argomento, chiedi quale è più affidabile e perché. Risposta multipla con feedback argomentato.",
+    "microlearning": "Card deck 5 slide: i 5 criteri CRAAP (Currency, Relevance, Authority, Accuracy, Purpose) con esempio applicato. 4 min.",
+    "visual": "Checklist visiva: 'Come valuto una fonte online?' — 5 domande con icone.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-DIG-1-01"
+  ],
+  "tags": [
+    "fonti",
+    "ricerca online",
+    "fact-checking",
+    "media literacy",
+    "classe-1",
+    "DIG"
+  ],
+  "compito_realta": "Confronta 3 fonti sullo stesso argomento (es. i vantaggi del riciclaggio): valutale con la checklist CRAAP, identifica differenze e scegli quella più attendibile motivando la scelta.",
+  "sdg": [
+    4,
+    16
+  ],
+  "note_didattiche": {
+    "base": "Fornire le 3 fonti già selezionate e la checklist pre-stampata. Lo studente compila solo i punteggi.",
+    "avanzato": "Cercare autonomamente le 3 fonti, applicare la checklist e scrivere un paragrafo critico sulle differenze trovate."
+  }
+}

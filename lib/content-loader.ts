@@ -1,8 +1,10 @@
 import fs from "fs";
 import path from "path";
 
-const PROJECT_ROOT = path.resolve(process.cwd(), "../..");
-const TESTI_ROOT = path.join(PROJECT_ROOT, "08_TESTI");
+// Legge testi da data/testi/ (repo standalone) o da ../../08_TESTI (workspace locale)
+const TESTI_ROOT = fs.existsSync(path.join(process.cwd(), "data/testi"))
+  ? path.join(process.cwd(), "data/testi")
+  : path.join(path.resolve(process.cwd(), "../.."), "08_TESTI");
 const PUBLIC_VISUAL_ROOT = path.join(process.cwd(), "public", "assets", "visual");
 const PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 

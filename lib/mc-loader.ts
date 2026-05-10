@@ -47,7 +47,10 @@ export interface MC {
   note_didattiche: NoteDid;
 }
 
-const MC_ROOT = path.resolve(process.cwd(), "../../01_MATRICE_MC");
+// Legge prima da data/mc/ (repo standalone), poi da ../../01_MATRICE_MC (workspace locale)
+const MC_ROOT = fs.existsSync(path.resolve(process.cwd(), "data/mc"))
+  ? path.resolve(process.cwd(), "data/mc")
+  : path.resolve(process.cwd(), "../../01_MATRICE_MC");
 
 function loadMCsFromDisk(): MC[] {
   const mcs: MC[] = [];

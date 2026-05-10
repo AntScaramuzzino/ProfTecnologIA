@@ -1,0 +1,57 @@
+{
+  "id": "MC-AMB-2-05",
+  "area": "AMB",
+  "anno": 2,
+  "titolo": "Smart city e tecnologie per la città intelligente",
+  "descrizione": "Lo studente comprende il concetto di smart city (uso di tecnologie digitali per ottimizzare i servizi urbani), conosce applicazioni concrete (semafori intelligenti, raccolta rifiuti ottimizzata, illuminazione adattiva, parcheggi smart) e sa discutere i benefici e i rischi legati alla raccolta massiva di dati urbani.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con il contesto",
+      "traguardo": "Lo studente descrive le tecnologie smart city e ne valuta impatti e rischi"
+    },
+    "DC": {
+      "ref": "4.2 Proteggere i dati personali e la privacy",
+      "livello": "I",
+      "nota": "Lo studente riflette sui dati raccolti dai sensori urbani e sulle implicazioni per la privacy dei cittadini"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Creativity",
+      "nota": "Lo studente immagina soluzioni smart per problemi reali del proprio quartiere"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Innovazione",
+      "nota": "Le smart city sono strumento per rendere le città più efficienti, inclusive e sostenibili"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario dilemma: 'Il Comune vuole installare telecamere con riconoscimento facciale ai semafori per ridurre il traffico — sei d'accordo?' Risposta aperta guidata da pro/contro.",
+    "microlearning": "Card deck 5 slide: 5 applicazioni smart city reali (Amsterdam, Barcellona, Songdo, Torino, Singapore) con dati. 5 min.",
+    "visual": "Mappa concettuale: smart city — tecnologie, dati, servizi, rischi, governance.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-AMB-2-03"
+  ],
+  "tags": [
+    "smart city",
+    "IoT",
+    "tecnologia urbana",
+    "privacy",
+    "classe-2",
+    "AMB"
+  ],
+  "compito_realta": "Progetta una soluzione smart per un problema reale del quartiere della tua scuola (es. traffico all'uscita, rifiuti abbandonati, illuminazione carente): descrivi la tecnologia usata, i dati raccolti e chi ne beneficia.",
+  "sdg": [
+    9,
+    11
+  ],
+  "note_didattiche": {
+    "base": "Fornire 3 problemi pre-selezionati e 3 soluzioni possibili. Lo studente sceglie e motiva.",
+    "avanzato": "Analizzare i dati aperti (open data) del proprio comune: cosa pubblica? Cosa manca? Cosa si potrebbe fare con quei dati?"
+  }
+}

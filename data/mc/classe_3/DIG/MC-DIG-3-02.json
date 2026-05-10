@@ -1,0 +1,59 @@
+{
+  "id": "MC-DIG-3-02",
+  "area": "DIG",
+  "anno": 3,
+  "titolo": "Intelligenza Artificiale: concetti, etica e applicazioni",
+  "descrizione": "Lo studente comprende i principi fondamentali dell'IA (machine learning, reti neurali, dataset, training), sa identificare applicazioni di IA nella vita quotidiana, e sa analizzare criticamente le implicazioni etiche (bias, privacy, lavoro, responsabilità) sviluppando una posizione argomentata sull'uso responsabile dell'IA.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le loro implicazioni sociali",
+      "traguardo": "Lo studente descrive i principi dell'IA e ne valuta le implicazioni etiche e sociali"
+    },
+    "DC": {
+      "ref": "4.3 Proteggere la salute e il benessere digitale",
+      "livello": "A",
+      "nota": "Lo studente valuta criticamente l'impatto dell'IA sul benessere personale e sociale"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Valuing ideas",
+      "nota": "Lo studente comprende come l'IA trasforma il valore del lavoro e apre nuove opportunità imprenditoriali"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente analizza le decisioni algoritmiche con pensiero critico identificando possibili bias e conseguenze"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione; SDG 10 — Ridurre le disuguaglianze; SDG 16 — Giustizia",
+      "nota": "L'IA amplifica sia le opportunità che le disuguaglianze — comprenderla è competenza civica urgente"
+    }
+  },
+  "outputApp": {
+    "quiz": "Analisi caso: 'Un algoritmo di selezione CV rifiuta sistematicamente i CV con nomi stranieri — quale tipo di problema è? Come si risolve?' Risposta guidata con vocabolario IA fornito.",
+    "microlearning": "Card deck 5 slide: machine learning, neural network, dataset, training/testing, bias algoritmico — concetto + esempio quotidiano. 5 min.",
+    "visual": "Mappa delle applicazioni IA quotidiane: categorie (raccomandazione, traduzione, riconoscimento, guida autonoma, diagnosi medica) con esempi concreti.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-DIG-2-02",
+    "MC-DIG-3-01"
+  ],
+  "tags": [
+    "intelligenza artificiale",
+    "machine learning",
+    "etica AI",
+    "bias",
+    "classe-3",
+    "DIG"
+  ],
+  "compito_realta": "Analizza 3 app con IA che usi ogni giorno (es. Spotify, Google Maps, filtri Instagram): per ciascuna identifica cosa impara dai tuoi dati, quale decisione prende per te e quali rischi etici comporta. Costruisci una tabella critica e un giudizio finale argomentato.",
+  "sdg": [
+    9,
+    10,
+    16
+  ],
+  "note_didattiche": {
+    "base": "Fornire le 3 app e la tabella di analisi con le categorie già indicate. Lo studente deve solo compilare le righe.",
+    "avanzato": "Progettare un sistema IA per un problema scolastico (es. raccomandatore di libri per la biblioteca): definire dataset necessario, tipo di apprendimento e rischi etici da gestire."
+  }
+}

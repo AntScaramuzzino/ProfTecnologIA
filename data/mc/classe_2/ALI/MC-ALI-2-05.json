@@ -1,0 +1,59 @@
+{
+  "id": "MC-ALI-2-05",
+  "area": "ALI",
+  "anno": 2,
+  "titolo": "Sprechi alimentari e sostenibilità",
+  "descrizione": "Lo studente comprende le dimensioni del fenomeno dello spreco alimentare (dati globali e domestici), sa identificare le fasi della filiera dove si genera più spreco e conosce strategie pratiche per ridurlo, collegando scelte quotidiane a impatti globali ambientali ed economici.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e utilizza oggetti, strumenti e macchine di uso comune ed è in grado di classificarli e descriverne la funzione",
+      "traguardo": "Lo studente analizza il sistema alimentare individuando inefficienze e proposte di miglioramento"
+    },
+    "DC": {
+      "ref": "2.1 Interagire con tecnologie digitali",
+      "livello": "I",
+      "nota": "Lo studente usa app di monitoraggio degli sprechi o fogli di calcolo per raccogliere dati domestici"
+    },
+    "EC": {
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente propone e attua azioni concrete di riduzione degli sprechi nel proprio contesto"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali"
+    },
+    "EV": {
+      "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "Lo spreco alimentare produce il 10% delle emissioni globali di gas serra"
+    }
+  },
+  "outputApp": {
+    "quiz": "Dati e impatto: 'Un terzo del cibo mondiale viene sprecato — quanto CO₂ produce annualmente?' Multipla con infografica di supporto.",
+    "microlearning": "Card deck 5 slide: dove si spreca di più (campo, trasporto, distribuzione, casa, ristorazione) con dato percentuale. 4 min.",
+    "visual": "Piramide invertita dello spreco: quota % per ogni fase della filiera.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-ALI-2-02",
+    "MC-ALI-2-03"
+  ],
+  "tags": [
+    "spreco alimentare",
+    "sostenibilità",
+    "food waste",
+    "impatto ambientale",
+    "classe-2",
+    "ALI"
+  ],
+  "compito_realta": "Monitora gli sprechi alimentari in casa per una settimana: pesa o stima il cibo buttato ogni giorno, classifica per tipo (pane, verdura, avanzi...) e proponi 3 strategie per ridurlo.",
+  "sdg": [
+    2,
+    12,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Concentrarsi solo sullo spreco domestico. Fornire tabella di monitoraggio semplificata (3 categorie).",
+    "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
+  }
+}

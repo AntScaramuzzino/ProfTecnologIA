@@ -1,0 +1,104 @@
+{
+  "id": "MC-MAT-1-01",
+  "area": "MAT",
+  "anno": 1,
+  "titolo": "Classificare i materiali per proprietà",
+  "titolo_libro": "Quali materiali compongono gli oggetti che usi ogni giorno?",
+  "descrizione": "Lo studente sa classificare materiali di uso comune (legno, plastica, metallo, vetro, tessuto) in base a proprietà fisiche e meccaniche osservabili, e sa collegare ogni proprietà alla funzione dell'oggetto in cui il materiale è impiegato.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze: proprietà fisiche, meccaniche e tecnologiche dei materiali di uso comune; Traguardo: L'alunno riconosce le proprietà dei materiali di uso comune e le mette in relazione con le loro applicazioni, valutando le implicazioni ambientali delle scelte tecnologiche.",
+      "traguardo": "Lo studente riconosce le proprietà dei materiali e le mette in relazione con le loro applicazioni"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente usa risorse digitali per raccogliere dati sui materiali analizzati nel compito di realtà (ricerca online guidata su provenienza e smaltimento)"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente identifica e valuta risorse materiali nell'ambiente domestico per l'attività pratica, riconoscendo il loro valore e i loro limiti"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente valuta scelte progettuali basate sulle proprietà dei materiali, argomentando perché un materiale è adatto o inadatto a una funzione"
+    },
+    "EV": {
+      "ref": "SDG 12 — Consumo e produzione responsabili · L. 92/2019 Educazione Civica — Sviluppo sostenibile",
+      "nota": "La classificazione dei materiali orienta verso scelte di consumo più consapevoli; analizzare il ciclo di vita di un oggetto sviluppa la responsabilità ambientale"
+    }
+  },
+  "outputApp": {
+    "quiz": "Drag & drop: abbina materiale → proprietà → oggetto. 5 coppie, feedback specifico per ogni risposta errata che spiega perché quella proprietà non corrisponde.",
+    "microlearning": "Card deck 6 slide: 1 per materiale principale (legno, plastica, metallo, vetro, tessuto, compositi) + slide finale con tabella comparativa. Audio 3 min. Lettura stimata 4 min.",
+    "visual": "Infografica radiale: materiale al centro, proprietà sui raggi, esempi d'uso sui bordi. Versione interattiva: clic su ogni raggio mostra un esempio animato.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "materiali",
+    "proprietà fisiche",
+    "proprietà meccaniche",
+    "classificazione",
+    "origine naturale artificiale",
+    "ciclo di vita",
+    "classe-1",
+    "MAT",
+    "foundation"
+  ],
+  "compito_realta": "Analizza 5 oggetti di casa: per ognuno identifica la materia prima principale, una proprietà che lo rende adatto alla sua funzione, e come va smaltito a fine vita.",
+  "sdg": [12, 9],
+  "sdg_principale": 12,
+  "note_didattiche": {
+    "base": "Fornire scheda pre-compilata con i 5 materiali già elencati e le proprietà in lista. Lo studente deve solo abbinare materiale → proprietà → smaltimento. Ammettere l'uso del libro di testo aperto durante il compito.",
+    "avanzato": "Aggiungere un 6° oggetto a scelta libera con analisi autonoma del ciclo di vita completo, inclusa la stima della CO₂ emessa durante la produzione (dati forniti in un link QR)."
+  },
+  "hook_audio": {
+    "titolo": "Trenta materiali. Un paio di scarpe.",
+    "oggetto_reale": "scarpe da ginnastica",
+    "domanda_avvio": "Quanti materiali diversi pensi che contengano le tue scarpe da ginnastica?",
+    "durata_min": 2,
+    "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti."
+  },
+  "professione_futura": {
+    "titolo": "Materials Scientist circolare",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta materiali che possono essere completamente separati e riciclati a fine vita — risolvendo il problema delle scarpe che finiscono in discarica.",
+    "competenze_chiave": [
+      "chimica dei polimeri",
+      "economia circolare",
+      "progettazione per il disassemblaggio",
+      "analisi del ciclo di vita (LCA)"
+    ]
+  },
+  "clil_termini": [
+    {
+      "italiano": "proprietà meccanica",
+      "inglese": "mechanical property",
+      "pronuncia_ipa": "/məˈkænɪkəl ˈprɒpəti/"
+    },
+    {
+      "italiano": "materia prima",
+      "inglese": "raw material",
+      "pronuncia_ipa": "/rɔː məˈtɪəriəl/"
+    },
+    {
+      "italiano": "riciclaggio",
+      "inglese": "recycling",
+      "pronuncia_ipa": "/riːˈsaɪklɪŋ/"
+    },
+    {
+      "italiano": "biodegradabile",
+      "inglese": "biodegradable",
+      "pronuncia_ipa": "/ˌbaɪəʊdɪˈɡreɪdəbl/"
+    }
+  ],
+  "uda_collegata": "UDA-1",
+  "stem_connections": {
+    "matematica": "Percentuali e proporzioni: calcolo della quota riciclabile per massa di materiale (es. 'questa bottiglia è al 30% di plastica riciclata').",
+    "scienze": "Chimica dei polimeri: perché la plastica non si degrada biologicamente in tempi brevi. Fisica: densità come proprietà misurabile.",
+    "arte_geo_storia": "Geografia: distribuzione delle materie prime nel mondo — da dove vengono i materiali che usiamo (gomma dall'Indonesia, cotone dall'India, acciaio dalla Cina).",
+    "frase_ponte": "Ogni materiale obbedisce a leggi fisiche e chimiche che puoi misurare."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "MC-ENE-3-02",
+  "area": "ENE",
+  "anno": 3,
+  "titolo": "Fonti energetiche non rinnovabili",
+  "descrizione": "Lo studente conosce le caratteristiche di combustibili fossili (carbone, petrolio, gas naturale) e nucleare fissione, sa descrivere il processo di trasformazione energetica dalla fonte alla presa elettrica, e comprende i limiti di disponibilità e l'impatto ambientale di queste fonti, costruendo una visione critica della dipendenza energetica.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e descrive sistemi energetici nell'ambiente",
+      "traguardo": "Lo studente descrive le fonti non rinnovabili e ne valuta impatti e limiti"
+    },
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente cerca e valuta dati sulle riserve mondiali di combustibili fossili da fonti istituzionali"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente collega la dipendenza dai fossili a scenari di transizione energetica"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente analizza la catena energetica come sistema interdipendente tra risorse, tecnologie e consumo"
+    },
+    "EV": {
+      "ref": "SDG 7 — Energia pulita; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "I combustibili fossili producono il 75% delle emissioni globali di gas serra"
+    }
+  },
+  "outputApp": {
+    "quiz": "Completamento timeline: data la mappa della catena petrolio (estrazione → raffinazione → distribuzione → uso), inserisci il processo mancante. 4 step con feedback.",
+    "microlearning": "Card deck 4 slide: carbone, petrolio, gas, nucleare — riserve stimate, paese produttore principale, impatto CO₂. 4 min.",
+    "visual": "Infografica: 'Come arriva la luce in casa?' — dal giacimento di gas alla presa elettrica in 6 passi.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "combustibili fossili",
+    "energia non rinnovabile",
+    "impatto ambientale",
+    "nucleare",
+    "classe-3",
+    "ENE"
+  ],
+  "compito_realta": "Calcola l'impronta di carbonio della tua famiglia per un mese: somma le emissioni da riscaldamento, trasporti e bolletta elettrica usando i fattori di conversione forniti e confronta con la media italiana.",
+  "sdg": [
+    7,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Fornire i fattori di conversione e un esempio già calcolato per il riscaldamento. Lo studente calcola solo trasporti ed elettricità.",
+    "avanzato": "Simulare 3 scenari di riduzione (auto elettrica, pannelli solari, casa ben isolata) e calcolare il risparmio di CO₂ per ciascuno."
+  }
+}

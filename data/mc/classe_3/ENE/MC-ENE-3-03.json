@@ -1,0 +1,57 @@
+{
+  "id": "MC-ENE-3-03",
+  "area": "ENE",
+  "anno": 3,
+  "titolo": "Fonti rinnovabili e transizione energetica",
+  "descrizione": "Lo studente conosce le principali fonti rinnovabili (solare fotovoltaico, eolico, idroelettrico, geotermico, biomasse), ne comprende il principio di funzionamento, sa confrontarne le caratteristiche con le fonti fossili, e sa progettare un semplice mix energetico per un edificio, valutando fattibilità tecnica ed economica.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e descrive sistemi energetici e impatto sull'ambiente",
+      "traguardo": "Lo studente descrive le fonti rinnovabili e progetta un piano energetico semplice"
+    },
+    "DC": {
+      "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+      "livello": "A",
+      "nota": "Lo studente usa simulatori online di impianti fotovoltaici per dimensionare un sistema reale"
+    },
+    "EC": {
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente propone un piano energetico concreto valutando costi, benefici e fattibilità"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente analizza la transizione energetica come processo sistemico che coinvolge tecnologia, economia e comportamenti"
+    },
+    "EV": {
+      "ref": "SDG 7 — Energia pulita; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "La transizione rinnovabile è la risposta tecnologica principale alla crisi climatica"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario energetico: 'Una scuola in Sicilia da 500 m² — quale fonte rinnovabile installeresti e perché?' Risposta guidata con criteri da valutare.",
+    "microlearning": "Card deck 5 slide: fotovoltaico, eolico, idroelettrico, geotermico, biomasse — principio + mappa mondiale + % del mix italiano. 5 min.",
+    "visual": "Grafico: evoluzione del mix energetico italiano 2000→2024 con proiezione 2030 (dati GSE).",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-ENE-3-02"
+  ],
+  "tags": [
+    "energie rinnovabili",
+    "fotovoltaico",
+    "transizione energetica",
+    "sostenibilità",
+    "classe-3",
+    "ENE"
+  ],
+  "compito_realta": "Progetta il piano energetico della scuola: stima il consumo annuo (bollette se disponibili, o dato medio per m²), dimensiona un impianto fotovoltaico e calcola il risparmio economico e la riduzione di CO₂ in 10 anni.",
+  "sdg": [
+    7,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Fornire il consumo annuo della scuola già calcolato. Lo studente sceglie solo la fonte rinnovabile e giustifica la scelta.",
+    "avanzato": "Aggiungere una batteria di accumulo al sistema: come cambia l'autoconsumo? Calcolare il payback period dell'investimento."
+  }
+}

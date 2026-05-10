@@ -1,0 +1,60 @@
+{
+  "id": "MC-ENE-3-06",
+  "area": "ENE",
+  "anno": 3,
+  "titolo": "Accumulo energetico e smart grid",
+  "titolo_libro": "Come immagazziniamo l'energia del sole quando il sole non c'è?",
+  "descrizione": "Lo studente comprende il problema dell'intermittenza delle fonti rinnovabili e le principali tecnologie di accumulo energetico (batterie agli ioni di litio, idrogeno verde, accumulo pompato), conosce il concetto di smart grid e sa valutare i trade-off tecnici, economici e ambientali delle diverse soluzioni di accumulo.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce le tecnologie per la produzione, il trasporto e l'accumulo dell'energia; transizione energetica",
+      "traguardo": "Lo studente descrive le principali tecnologie di accumulo energetico e spiega il ruolo della smart grid nella gestione delle fonti rinnovabili"
+    },
+    "DC": { "ref": "5.2 Identificare i bisogni tecnologici", "livello": "A", "nota": "Lo studente usa strumenti di simulazione (PVGIS, calcolatori online) per dimensionare un sistema di accumulo e valuta payback e impatto sulle emissioni" },
+    "EC": { "ref": "Ideas and opportunities / Sustainability", "nota": "Lo studente valuta la fattibilità economica di sistemi di accumulo domestici e scolastici, comprendendo il concetto di payback period" },
+    "LC": { "ref": "Thinking / Systems thinking", "nota": "Lo studente analizza la smart grid come sistema complesso che integra produzione distribuita, accumulo, consumo e gestione digitale dei flussi energetici" },
+    "EV": { "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Cambiamento climatico", "nota": "L'accumulo energetico è il collo di bottiglia della transizione alle rinnovabili — senza di esso la decarbonizzazione è impossibile" }
+  },
+  "outputApp": {
+    "quiz": "Scenario: 'Un impianto FV da 6 kWp produce 25 kWh/giorno in estate. La famiglia consuma 10 kWh/giorno. Quanta energia va in rete? Che batteria servirebbe?' Calcolo guidato.",
+    "microlearning": "Card deck 6 slide: batterie litio (principio + costi + riciclo), idrogeno verde (elettrolisi + fuel cell), accumulo pompato (mgh + efficienza), smart grid (V2G + demand response), prezzi negativi, scenario 2035. 6 min.",
+    "visual": "Infografica: una giornata di energia in una casa con FV + batteria — flussi di produzione, autoconsumo, accumulo, vendita, prelievo nelle 24h.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": ["MC-ENE-3-03", "MC-ENE-3-04"],
+  "tags": ["accumulo energetico", "smart grid", "batterie litio", "idrogeno verde", "transizione energetica", "V2G", "classe-3", "ENE"],
+  "compito_realta": "Progetta il sistema di accumulo per la scuola fotovoltaica del tuo comune: usando dati reali di produzione FV e consumo scolastico, dimensiona la batteria, calcola il payback period e stima la riduzione annua di CO₂. Presenta la proposta come relazione tecnica per il consiglio di istituto.",
+  "sdg": [7, 13],
+  "sdg_principale": 7,
+  "note_didattiche": {
+    "base": "Concentrarsi sul concetto qualitativo di accumulo — perché serve, che forme esistono, senza calcoli. Usare l'analogia della cisterna d'acqua per l'accumulo pompato.",
+    "avanzato": "Analizzare il ciclo di vita completo di una batteria agli ioni di litio: dall'estrazione del litio in Cile alla dismissione — impatto ambientale complessivo e confronto con l'accumulo pompato."
+  },
+  "hook_audio": {
+    "titolo": "L'isola che produce più energia di quanta ne consuma",
+    "oggetto_reale": "turbina eolica su Samsø, Danimarca",
+    "domanda_avvio": "Se potessimo immagazzinare l'energia del sole e del vento, avremmo già risolto il problema climatico?",
+    "durata_min": 2,
+    "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica."
+  },
+  "professione_futura": {
+    "titolo": "Energy Storage Engineer",
+    "orizzonte": "2035",
+    "descrizione_breve": "Progetta e dimensiona sistemi di accumulo energetico per edifici, quartieri e reti elettriche, ottimizzando l'integrazione con le fonti rinnovabili e la smart grid.",
+    "competenze_chiave": ["elettrochimica delle batterie", "gestione dei sistemi energetici", "simulazione energetica", "analisi economica LCA"]
+  },
+  "clil_termini": [
+    { "italiano": "accumulo energetico", "inglese": "energy storage", "pronuncia_ipa": "/ˈenədʒi ˈstɔːrɪdʒ/" },
+    { "italiano": "rete elettrica intelligente", "inglese": "smart grid", "pronuncia_ipa": "/smɑːt ɡrɪd/" },
+    { "italiano": "idrogeno verde", "inglese": "green hydrogen", "pronuncia_ipa": "/ɡriːn ˈhaɪdrədʒən/" },
+    { "italiano": "veicolo come batteria", "inglese": "vehicle-to-grid (V2G)", "pronuncia_ipa": "/ˈviːɪkl tə ɡrɪd/" }
+  ],
+  "uda_collegata": "UDA-2",
+  "stem_connections": {
+    "matematica": "Energia immagazzinata: E (Wh) = Tensione (V) × Capacità (Ah). Payback period: anni = costo_investimento / risparmio_annuo. Entrambi calcoli lineari accessibili a studenti di terza media.",
+    "scienze": "Elettrolisi dell'acqua: 2H₂O → 2H₂ + O₂ (con energia elettrica). Fuel cell: H₂ + O₂ → H₂O + energia elettrica. Il ciclo idrogeno verde è chiuso senza emissioni se l'elettricità viene da rinnovabili.",
+    "arte_geo_storia": "Geopolitica: il litio si trova principalmente in Cile, Bolivia e Argentina ('litio triangle'). Chi controlla il litio nel 2050 avrà il potere che il petrolio ha dato al Medio Oriente nel XX secolo.",
+    "frase_ponte": "L'energia obbedisce a leggi fisiche immutabili — e ogni trasformazione disperde qualcosa."
+  }
+}

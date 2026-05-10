@@ -1,0 +1,58 @@
+{
+  "id": "MC-COM-3-04",
+  "area": "COM",
+  "anno": 3,
+  "titolo": "Automazione, domotica e Industria 4.0",
+  "descrizione": "Lo studente comprende i principi dell'automazione industriale e della domotica (sensori, attuatori, logica di controllo), conosce le tecnologie chiave dell'Industria 4.0 (IoT, robotica collaborativa, stampa 3D, AI nella produzione) e sa progettare un sistema domotico semplice per un'esigenza reale.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le relazioni tra automazione e lavoro",
+      "traguardo": "Lo studente descrive sistemi automatizzati e ne progetta uno semplice per un'applicazione reale"
+    },
+    "DC": {
+      "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+      "livello": "A",
+      "nota": "Lo studente progetta un sistema domotico integrando sensori, logica e attuatori per risolvere un problema reale"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente pianifica un sistema automatizzato definendo input, processo, output e feedback"
+    },
+    "LC": {
+      "ref": "Thinking / Creative thinking",
+      "nota": "Lo studente immagina applicazioni innovative dell'automazione a problemi della vita quotidiana"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione; SDG 8 — Lavoro dignitoso",
+      "nota": "L'Industria 4.0 trasforma il lavoro: comprenderne le tecnologie è fondamentale per il futuro professionale"
+    }
+  },
+  "outputApp": {
+    "quiz": "Analisi sistema: dato uno schema domotico (termostato intelligente), identifica sensore, logica di controllo, attuatore e feedback. 4 domande.",
+    "microlearning": "Card deck 5 slide: sensore, attuatore, IoT, PLC, robot collaborativo — schema + esempio industriale + esempio domestico. 5 min.",
+    "visual": "Diagramma: casa domotica — tutti i sistemi connessi con flussi dati e controlli.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-COM-3-01",
+    "MC-ENE-3-04"
+  ],
+  "tags": [
+    "domotica",
+    "automazione",
+    "IoT",
+    "Industria 4.0",
+    "classe-3",
+    "COM"
+  ],
+  "compito_realta": "Progetta una casa domotica per un anziano che vive solo: individua 5 esigenze specifiche (sicurezza, comfort, salute, comunicazione, risparmio), scegli una tecnologia per ciascuna e descrivi come si integrano in un sistema unico.",
+  "sdg": [
+    8,
+    9
+  ],
+  "note_didattiche": {
+    "base": "Fornire le 5 esigenze già identificate. Lo studente deve solo scegliere la tecnologia e descrivere brevemente il funzionamento.",
+    "avanzato": "Simulare il sistema con Arduino/micro:bit: costruire il prototipo di almeno uno dei 5 sistemi progettati."
+  }
+}

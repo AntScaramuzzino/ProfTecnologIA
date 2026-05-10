@@ -1,0 +1,101 @@
+{
+  "id": "MC-DIG-2-03",
+  "area": "DIG",
+  "anno": 2,
+  "titolo": "Il sistema operativo: come il computer gestisce le risorse",
+  "descrizione": "Lo studente comprende cosa fa un sistema operativo (gestione dei processi, della memoria, del file system e delle periferiche), sa usare consapevolmente le funzioni di base del SO che usa ogni giorno, e capisce perché il SO è lo strato che rende possibile ogni altra applicazione.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: Sistema operativo: principali funzioni e servizi di base, concetto di processo in esecuzione, gestione dei processi e della memoria, file system.",
+      "traguardo": "Lo studente descrive le funzioni principali di un sistema operativo e le usa consapevolmente nell'uso quotidiano del dispositivo"
+    },
+    "DC": {
+      "ref": "2.1 Interagire con le tecnologie digitali",
+      "livello": "I",
+      "nota": "Lo studente interagisce con il SO in modo consapevole, comprendendo cosa succede 'sotto' all'interfaccia grafica"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente ottimizza l'uso delle risorse del dispositivo (memoria, processi) per lavorare in modo più efficiente"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente comprende il SO come sistema di gestione delle risorse con interdipendenze tra componenti"
+    },
+    "EV": {
+      "ref": "SDG 9 — Industria, innovazione e infrastrutture",
+      "nota": "La comprensione del SO è fondamento della cittadinanza digitale in una società che dipende dall'infrastruttura informatica"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario diagnostico: 'Il tuo computer è lento — quali processi consuma più memoria? Come li identifichi e cosa fai?' — risposta guidata con screen simulato del task manager. Feedback che spiega RAM vs CPU.",
+    "microlearning": "Card deck 6 slide: cos'è il SO / processo / memoria RAM / file system / periferiche / confronto Windows-macOS-Linux-Android. 5 min.",
+    "visual": "Diagramma a strati: hardware → SO (kernel, driver, interfaccia) → applicazioni → utente. Con frecce che mostrano il flusso delle istruzioni.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-DIG-1-01",
+    "MC-DIG-2-01"
+  ],
+  "tags": [
+    "sistema operativo",
+    "processo",
+    "memoria RAM",
+    "file system",
+    "kernel",
+    "informatica",
+    "classe-2",
+    "DIG"
+  ],
+  "compito_realta": "Apri il task manager (o Activity Monitor su Mac) durante una sessione di lavoro normale: identifica i 5 processi che consumano più RAM e CPU, scopri a cosa servono e decidi se puoi chiuderne qualcuno senza perdere lavoro. Documenta la tua analisi in una tabella con una colonna 'posso chiuderlo?' motivata.",
+  "sdg": [
+    9
+  ],
+  "note_didattiche": {
+    "base": "Fornire la schermata del task manager già catturata, con i processi etichettati. Lo studente deve solo classificarli in 'sistema', 'applicazione', 'background' e descrivere cosa fanno i 3 più pesanti.",
+    "avanzato": "Confrontare l'uso delle risorse prima e dopo l'installazione di un'estensione del browser: misurare la differenza in MB di RAM e interpretare i dati. Scrivere una 'regola igienica digitale' basata sull'osservazione."
+  },
+  "hook_audio": {
+    "titolo": "Chi comanda davvero nel tuo computer?",
+    "oggetto_reale": "il task manager / Activity Monitor",
+    "domanda_avvio": "Hai mai aperto il task manager e ti sei chiesto: ma cosa sono tutti questi processi misteriosi che girano in background?",
+    "durata_min": 2,
+    "note_script": "Usare la metafora del SO come 'direttore d'orchestra': senza di lui ogni applicazione suonerebbe per conto suo e nessuno si sentirebbe. Raccontare cosa succede quando si apre un'app: il SO alloca memoria, crea un processo, assegna il processore a turno. Dato sorprendente: su un computer normale girano sempre tra 50 e 200 processi anche quando 'non stai facendo niente'. Tono: curioso, tecnico ma accessibile."
+  },
+  "professione_futura": {
+    "titolo": "DevOps Engineer",
+    "orizzonte": "2030",
+    "descrizione_breve": "Gestisce i sistemi operativi server e cloud per garantire che le applicazioni web funzionino in modo efficiente, sicuro e scalabile — competenza che inizia dalla comprensione del SO.",
+    "competenze_chiave": [
+      "Linux administration",
+      "gestione processi e memoria",
+      "containerizzazione (Docker)",
+      "automazione infrastrutturale"
+    ]
+  },
+  "sdg_principale": 9,
+  "clil_termini": [
+    {
+      "italiano": "sistema operativo",
+      "inglese": "operating system",
+      "pronuncia_ipa": "/ˈɒpəreɪtɪŋ ˈsɪstəm/"
+    },
+    {
+      "italiano": "processo",
+      "inglese": "process",
+      "pronuncia_ipa": "/ˈprəʊses/"
+    },
+    {
+      "italiano": "file system",
+      "inglese": "file system",
+      "pronuncia_ipa": "/faɪl ˈsɪstəm/"
+    },
+    {
+      "italiano": "memoria di lavoro",
+      "inglese": "RAM (Random Access Memory)",
+      "pronuncia_ipa": "/ræm/"
+    }
+  ],
+  "uda_collegata": null
+}

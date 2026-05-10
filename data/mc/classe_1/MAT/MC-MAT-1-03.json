@@ -1,0 +1,58 @@
+{
+  "id": "MC-MAT-1-03",
+  "area": "MAT",
+  "anno": 1,
+  "titolo": "Materiali innovativi e sostenibili",
+  "descrizione": "Lo studente conosce le caratteristiche principali di materiali innovativi (bioplastiche, materiali riciclati, compositi) e sa valutare la loro sostenibilità rispetto ai materiali tradizionali, applicando criteri ambientali ed economici a casi concreti.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+      "traguardo": "Lo studente riconosce materiali innovativi e ne valuta la sostenibilità"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati",
+      "livello": "F",
+      "nota": "Lo studente ricerca online esempi di materiali innovativi e valuta le fonti"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Creativity",
+      "nota": "Lo studente immagina applicazioni pratiche di materiali innovativi"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente confronta pro e contro di materiali tradizionali vs. innovativi"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione e infrastrutture; SDG 12 — Consumo responsabile",
+      "nota": "I materiali innovativi sono driver di innovazione sostenibile"
+    }
+  },
+  "outputApp": {
+    "quiz": "Vero/Falso con scenario: 'La bioplastica è sempre biodegradabile?' — 5 affermazioni con feedback argomentato.",
+    "microlearning": "Card deck 5 slide: un materiale innovativo per slide (bioplastica, aerogel, grafene, materiale riciclato, composito). 4 min.",
+    "visual": "Tabella comparativa: materiale tradizionale vs. innovativo — proprietà, costo, impatto ambientale.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-MAT-1-01",
+    "MC-MAT-1-02"
+  ],
+  "tags": [
+    "materiali innovativi",
+    "bioplastica",
+    "sostenibilità",
+    "innovazione",
+    "classe-1",
+    "MAT"
+  ],
+  "compito_realta": "Progetta un packaging sostenibile per un prodotto alimentare: scegli il materiale, giustifica la scelta con almeno 2 proprietà e confrontalo con l'imballaggio originale.",
+  "sdg": [
+    9,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Fornire una scheda con 3 materiali innovativi già descritti. Lo studente sceglie solo tra quelli dati.",
+    "avanzato": "Ricercare autonomamente un materiale innovativo non in elenco, documentare le fonti e presentarlo alla classe."
+  }
+}
