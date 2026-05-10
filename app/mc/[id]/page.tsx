@@ -199,7 +199,7 @@ function ReadableText({ value, className = "" }: { value: string; className?: st
     .filter(Boolean);
 
   return (
-    <div className={cx("reading-flow text-slate-700", className)}>
+    <div className={cx("reading-flow min-w-0 overflow-hidden text-slate-700", className)}>
       {blocks.map((block, index) => {
         if (isTableBlock(block)) {
           return <ReadableTable key={index} block={block} />;
@@ -308,27 +308,31 @@ function ReadableTable({ block }: { block: string }) {
   const [head, ...body] = rows;
 
   return (
-    <div className="my-6 overflow-x-auto rounded-lg border border-slate-200 bg-white">
-      <table className="min-w-full border-collapse text-left text-sm leading-6">
-        <thead className="bg-slate-100 text-slate-900">
-          <tr>
-            {head?.map((cell) => (
-              <th key={cell} className="border-b border-slate-200 px-4 py-3 font-black">{cell}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {body.map((row, rowIndex) => (
-            <tr key={rowIndex} className="odd:bg-white even:bg-slate-50">
-              {row.map((cell, cellIndex) => (
-                <td key={`${rowIndex}-${cellIndex}`} className="border-b border-slate-100 px-4 py-3 align-top text-slate-700">
-                  {renderInlineMarkdown(cell)}
-                </td>
+    // Outer div: overflow-hidden contiene il min-content della tabella e mantiene i bordi arrotondati
+    // Inner div: overflow-x-auto crea lo scroll orizzontale reale
+    <div className="my-6 overflow-hidden rounded-lg border border-slate-200 bg-white">
+      <div className="overflow-x-auto">
+        <table className="min-w-full border-collapse text-left text-sm leading-6">
+          <thead className="bg-slate-100 text-slate-900">
+            <tr>
+              {head?.map((cell) => (
+                <th key={cell} className="border-b border-slate-200 px-3 py-2.5 font-black whitespace-nowrap sm:px-4 sm:py-3">{cell}</th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {body.map((row, rowIndex) => (
+              <tr key={rowIndex} className="odd:bg-white even:bg-slate-50">
+                {row.map((cell, cellIndex) => (
+                  <td key={`${rowIndex}-${cellIndex}`} className="border-b border-slate-100 px-3 py-2.5 align-top text-slate-700 sm:px-4 sm:py-3">
+                    {renderInlineMarkdown(cell)}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

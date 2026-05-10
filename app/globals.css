@@ -67,9 +67,27 @@ a, button {
   color: #0f172a;
 }
 
-/* Tabelle con scroll orizzontale su mobile */
+/* Contenimento tabelle su mobile
+   overflow-hidden sul wrapper esterno impedisce al min-content
+   della tabella di "sfondare" fuori dal contenitore genitore */
+.reading-flow {
+  contain: inline-size;
+}
+
+/* Lo scroll orizzontale reale avviene sul div interno */
 .reading-flow .overflow-x-auto {
   -webkit-overflow-scrolling: touch;
+  max-width: 100%;
+}
+
+/* Cella della tabella: limita la larghezza minima per evitare
+   che testo lungo blocchi la compressione della colonna */
+.reading-flow td,
+.reading-flow th {
+  min-width: 80px;
+  max-width: 320px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 640px) {
