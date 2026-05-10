@@ -1,0 +1,60 @@
+{
+  "id": "MC-COM-3-05",
+  "area": "COM",
+  "anno": 3,
+  "titolo": "Reti globali, internet e infrastrutture",
+  "titolo_libro": "Chi possiede internet — e cosa succederebbe se lo spegnessero?",
+  "descrizione": "Lo studente comprende internet come infrastruttura fisica e geopolitica globale: conosce i cavi sottomarini, i data center, il sistema DNS e i meccanismi di governance, e sa analizzare criticamente le implicazioni di potere, sicurezza e sovranità digitale che derivano dal controllo dell'infrastruttura di rete.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi di comunicazione e il loro sviluppo; infrastrutture digitali e loro implicazioni sociali",
+      "traguardo": "Lo studente descrive l'infrastruttura fisica di internet, ne identifica i principali attori di governance e valuta le implicazioni di sovranità digitale"
+    },
+    "DC": { "ref": "2.1 Interagire attraverso le tecnologie digitali", "livello": "I", "nota": "Lo studente usa strumenti di traceroute e DNS lookup per osservare concretamente il percorso dei dati e i nodi intermedi" },
+    "EC": { "ref": "Ideas and opportunities / Valuing ideas", "nota": "Lo studente comprende come il controllo dell'infrastruttura internet sia una leva di potere economico e politico nel XXI secolo" },
+    "LC": { "ref": "Thinking / Critical thinking", "nota": "Lo studente analizza le tensioni tra libertà di internet, censura di stato e governance globale sviluppando una prospettiva critica informata" },
+    "EV": { "ref": "SDG 9 — Infrastrutture e innovazione; SDG 16 — Pace, giustizia, istituzioni solide", "nota": "L'accesso libero e sicuro a internet è un diritto umano riconosciuto dall'ONU — ma il 37% della popolazione mondiale è ancora offline" }
+  },
+  "outputApp": {
+    "quiz": "Scenario geopolitico: 'Un paese taglia i cavi sottomarini che collegano un'isola al mondo — quali servizi smettono di funzionare nell'ora 1? Nel giorno 1? Nella settimana 1?' Analisi a cascata con feedback.",
+    "microlearning": "Card deck 5 slide: cavi sottomarini (mappa + vulnerabilità), data center (dove + consumo energetico), DNS (come funziona + attacchi), net neutrality (pro/contro), governance ICANN/IGF. 5 min.",
+    "visual": "Mappa mondiale dei cavi sottomarini con evidenziati i 5 chokepoint critici — con note su chi li possiede.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": ["MC-COM-3-01"],
+  "tags": ["internet", "cavi sottomarini", "infrastruttura", "governance", "sovranità digitale", "censura", "net neutrality", "classe-3", "COM"],
+  "compito_realta": "Usando uno strumento di traceroute online (traceroute.org o simile), traccia il percorso di un pacchetto dati da Roma a tre destinazioni diverse (Tokyo, New York, Nairobi): conta i nodi intermedi, identifica i paesi attraversati e scrivi una relazione di 5-8 righe su cosa hai scoperto.",
+  "sdg": [9, 16],
+  "sdg_principale": 9,
+  "note_didattiche": {
+    "base": "Fornire i risultati del traceroute già eseguiti su 2 destinazioni. Lo studente deve solo interpretare i dati e rispondere a 3 domande guidate.",
+    "avanzato": "Scrivere una lettera aperta al Parlamento italiano su una proposta immaginaria che introduce il Deep Packet Inspection obbligatorio — argomentare pro o contro da tre prospettive diverse."
+  },
+  "hook_audio": {
+    "titolo": "Il cavo che tiene in piedi internet",
+    "oggetto_reale": "cavo sottomarino transatlantico",
+    "domanda_avvio": "Se un peschereccio strappasse accidentalmente il cavo che collega Europa e America, cosa smetterebbe di funzionare?",
+    "durata_min": 2,
+    "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica."
+  },
+  "professione_futura": {
+    "titolo": "Internet Infrastructure Analyst",
+    "orizzonte": "2030",
+    "descrizione_breve": "Monitora la resilienza dell'infrastruttura internet globale, analizza vulnerabilità geopolitiche e supporta decisioni di governance digitale per governi e organizzazioni internazionali.",
+    "competenze_chiave": ["reti TCP/IP avanzate", "geopolitica digitale", "sicurezza delle infrastrutture critiche", "analisi dei dati di rete"]
+  },
+  "clil_termini": [
+    { "italiano": "cavo sottomarino", "inglese": "submarine cable", "pronuncia_ipa": "/ˈsʌbməriːn ˈkeɪbl/" },
+    { "italiano": "sovranità digitale", "inglese": "digital sovereignty", "pronuncia_ipa": "/ˈdɪdʒɪtəl ˈsɒvrənti/" },
+    { "italiano": "neutralità della rete", "inglese": "net neutrality", "pronuncia_ipa": "/net njuːˈtræləti/" },
+    { "italiano": "sistema dei nomi di dominio", "inglese": "Domain Name System (DNS)", "pronuncia_ipa": "/dəˈmeɪn neɪm ˈsɪstəm/" }
+  ],
+  "uda_collegata": "UDA-2",
+  "stem_connections": {
+    "matematica": "Un pacchetto IP ha dimensione max 1500 byte. Un file da 10 MB viene suddiviso in ~6.667 pacchetti. Ogni pacchetto attraversa mediamente 15-20 router — calcolo del numero totale di 'salti' per un download.",
+    "scienze": "La fibra ottica trasmette fotoni a 200.000 km/s nel vetro (vs 300.000 nel vuoto). La latenza Roma-Tokyo via fibra (~180ms) è limitata fondamentalmente dalla velocità della luce.",
+    "arte_geo_storia": "ARPANET (1969): il Dipartimento della Difesa USA finanziò una rete che sopravvivesse a un attacco nucleare. Quella scelta architetturale — nessun nodo centrale — è ancora il motivo per cui nessuno può 'spegnere' internet.",
+    "frase_ponte": "Ogni comunicazione è un segnale fisico che viaggia attraverso infrastrutture reali possedute da qualcuno."
+  }
+}

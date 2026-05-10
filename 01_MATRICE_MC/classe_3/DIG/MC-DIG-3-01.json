@@ -1,0 +1,57 @@
+{
+  "id": "MC-DIG-3-01",
+  "area": "DIG",
+  "anno": 3,
+  "titolo": "Robotica educativa e pensiero computazionale avanzato",
+  "descrizione": "Lo studente sa programmare robot educativi (micro:bit, mBot, EV3 o equivalenti) usando strutture avanzate (funzioni, parametri, gestione eventi multipli), sa decomporre problemi complessi in algoritmi e sa documentare e presentare il proprio progetto robotico con motivazioni progettuali chiare.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa risolvere problemi tecnici e progettare sistemi automatizzati",
+      "traguardo": "Lo studente progetta e programma robot educativi per risolvere problemi reali"
+    },
+    "DC": {
+      "ref": "5.3 Risolvere problemi tecnici in ambienti digitali",
+      "livello": "A",
+      "nota": "Lo studente diagnostica e corregge errori nel codice e nel comportamento fisico del robot in modo autonomo"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente gestisce un progetto robotico dalla specifica al test finale con documentazione"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente affronta il fallimento del robot come feedback di apprendimento e itera la soluzione"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione; SDG 4 — Istruzione",
+      "nota": "La robotica educativa sviluppa competenze STEM critiche per il futuro lavoro e la cittadinanza attiva"
+    }
+  },
+  "outputApp": {
+    "quiz": "Debug robotica: dato il comportamento inaspettato di un robot (va a sinistra invece che dritto), individua il possibile errore tra 4 opzioni — sensore, motore, codice, calibrazione. Feedback con metodo di diagnosi.",
+    "microlearning": "Card deck 5 slide: struttura programma robotica (sequenza, condizioni, cicli, funzioni, eventi) con esempio micro:bit. 4 min.",
+    "visual": "Flow chart: dal problema reale al robot funzionante — fasi del processo (analisi → algoritmo → codice → test → debug → presentazione).",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-DIG-2-01"
+  ],
+  "tags": [
+    "robotica",
+    "micro:bit",
+    "pensiero computazionale",
+    "Arduino",
+    "classe-3",
+    "DIG"
+  ],
+  "compito_realta": "Progetta un robot che risolve un problema reale della scuola (es. misura il livello di rumore in corridoio, indica la disponibilità di posti in mensa, guida chi non vede alla porta): definisci il problema, scrivi l'algoritmo, costruisci e testa il prototipo.",
+  "sdg": [
+    4,
+    9
+  ],
+  "note_didattiche": {
+    "base": "Fornire il problema già definito e lo scheletro del codice con le funzioni principali già scritte. Lo studente completa il corpo delle funzioni.",
+    "avanzato": "Aggiungere un'interfaccia utente (display, LED o app mobile via Bluetooth) e documentare il progetto in un portfolio digitale."
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "MC-MAT-1-02",
+  "area": "MAT",
+  "anno": 1,
+  "titolo": "Ciclo di vita dei materiali e cicli tecnologici",
+  "descrizione": "Lo studente sa descrivere le fasi del ciclo di vita di un materiale (estrazione, lavorazione, uso, smaltimento/riciclo) e le inserisce nel contesto del ciclo tecnologico completo: risorse → produzione → logistica → distribuzione → uso → fine vita. Sa individuare gli impatti ambientali e sociali di ciascuna fase e collega il concetto di catena del valore all'esperienza quotidiana.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze: Cicli tecnologici. L'applicazione sistematica e organizzata delle tecnologie per le attività produttive; le risorse materiali e immateriali come materie prime e fattori di trasformazione; il concetto di ciclo tecnologico; logistica e attività di supporto alla produzione; impatto sociale e ambientale; il concetto di ciclo di vita di un bene.",
+      "traguardo": "Lo studente descrive il percorso completo dei materiali — dalla materia prima al fine vita — inserendolo nel ciclo tecnologico e identificando gli attori della catena del valore"
+    },
+    "DC": {
+      "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente organizza in una timeline digitale le fasi del ciclo di vita e i soggetti della catena del valore"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente collega il ciclo tecnologico a modelli di economia circolare e scelte di consumo sostenibili"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente analizza le interdipendenze tra fasi produttive, logistica, distribuzione e impatto ambientale come sistema"
+    },
+    "EV": {
+      "ref": "SDG 12 — Consumo e produzione responsabili; SDG 15 — Vita sulla terra; SDG 9 — Industria, innovazione, infrastrutture",
+      "nota": "Comprendere il ciclo tecnologico completo è prerequisito per comportamenti di consumo responsabile e per valutare l'impatto delle scelte produttive"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario multipla: 'Una maglia di cotone arriva sullo scaffale del negozio — quante fasi ha attraversato?' Segue domanda sul soggetto responsabile dell'impatto in ciascuna fase. Feedback con dati reali (km percorsi, emissioni CO2).",
+    "microlearning": "Flowchart animato 7 slide: estrazione → lavorazione → produzione → logistica → distribuzione → uso → fine vita. Evidenzia il ciclo tecnologico come sistema integrato. Audio 3 min.",
+    "visual": "Infografica circolare 'ciclo tecnologico completo': frecce colorate per fase, icone di attori (azienda, trasportatore, consumatore, riciclatore), impatti per segmento.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-MAT-1-01"
+  ],
+  "tags": [
+    "ciclo di vita",
+    "ciclo tecnologico",
+    "LCA",
+    "logistica",
+    "catena del valore",
+    "sostenibilità",
+    "smaltimento",
+    "classe-1",
+    "MAT"
+  ],
+  "compito_realta": "Traccia il 'passaporto tecnologico' di un oggetto: scegli un oggetto di casa (es. una felpa, uno smartphone), mappa le 7 fasi del ciclo tecnologico, indica chi è responsabile di ciascuna fase (azienda, trasportatore, negozio, consumatore, raccoglitore) e il principale impatto ambientale. Indica dove puoi intervenire tu come consumatore.",
+  "sdg": [
+    12,
+    15
+  ],
+  "note_didattiche": {
+    "base": "Usare un oggetto semplice (bottiglia di plastica) con le fasi già nominate e le caselle della catena del valore pre-compilate. Lo studente descrive solo gli impatti e i responsabili.",
+    "avanzato": "Confrontare il ciclo tecnologico di due prodotti con la stessa funzione ma filiera diversa (es. maglia di cotone biologico locale vs. fast fashion importata): calcolare l'impronta di carbonio approssimativa per ciascuna fase e argomentare quale è preferibile e perché."
+  },
+  "hook_audio": {
+    "titolo": "Il viaggio segreto della tua felpa: 40.000 km prima di arrivare nel tuo armadio",
+    "oggetto_reale": "una felpa di cotone",
+    "domanda_avvio": "Hai mai pensato a quante persone, paesi e chilometri ci sono stati dietro prima che quella felpa finisse nel tuo armadio?",
+    "durata_min": 3,
+    "note_script": "Aprire con il dato che una felpa media percorre circa 40.000 km prima di essere venduta (cotone dal Texas, filatura in India, tessitura in Bangladesh, tintura in Vietnam, assemblaggio in Cambogia, logistica in Europa). Raccontare la storia come un viaggio in prima persona. Chiudere con: 'E quando la butti — il viaggio ricomincia da capo, o si ferma in una discarica?'. Tono: narrativo e leggermente sorprendente."
+  },
+  "professione_futura": {
+    "titolo": "Supply Chain Sustainability Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Analizza e ottimizza le catene di fornitura aziendali per ridurre le emissioni, garantire condizioni di lavoro etiche e minimizzare i rifiuti lungo tutto il ciclo tecnologico.",
+    "competenze_chiave": [
+      "analisi ciclo di vita (LCA)",
+      "logistica sostenibile",
+      "economia circolare",
+      "reportistica ESG"
+    ]
+  },
+  "sdg_principale": 12,
+  "clil_termini": [
+    {
+      "italiano": "ciclo di vita",
+      "inglese": "life cycle",
+      "pronuncia_ipa": "/laɪf ˈsaɪkəl/"
+    },
+    {
+      "italiano": "catena del valore",
+      "inglese": "value chain",
+      "pronuncia_ipa": "/ˈvæljuː tʃeɪn/"
+    },
+    {
+      "italiano": "logistica",
+      "inglese": "logistics",
+      "pronuncia_ipa": "/ləˈdʒɪstɪks/"
+    },
+    {
+      "italiano": "ciclo tecnologico",
+      "inglese": "technological cycle",
+      "pronuncia_ipa": "/ˌteknəˈlɒdʒɪkəl ˈsaɪkəl/"
+    }
+  ],
+  "uda_collegata": null
+}

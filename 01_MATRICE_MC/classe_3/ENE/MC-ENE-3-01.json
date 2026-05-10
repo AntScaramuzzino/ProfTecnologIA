@@ -1,0 +1,54 @@
+{
+  "id": "MC-ENE-3-01",
+  "area": "ENE",
+  "anno": 3,
+  "titolo": "Macchine semplici e principi di meccanica",
+  "descrizione": "Lo studente conosce le sei macchine semplici (leva, piano inclinato, cuneo, vite, carrucola, ruota e perno), sa calcolare il vantaggio meccanico, e comprende il principio di conservazione dell'energia nelle macchine, collegando meccanica teorica a strumenti di uso quotidiano.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi e sistemi tecnologici nell'ambiente",
+      "traguardo": "Lo studente descrive le macchine semplici e calcola il vantaggio meccanico"
+    },
+    "DC": {
+      "ref": "5.2 Identificare bisogni e rispondere con soluzioni tecnologiche",
+      "livello": "I",
+      "nota": "Lo studente usa simulatori online (es. PhET) per sperimentare le macchine semplici virtualmente"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente identifica macchine semplici nel proprio ambiente e le analizza come sistemi di amplificazione della forza"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente applica i principi meccanici per risolvere problemi pratici di forza e distanza"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione e infrastrutture",
+      "nota": "Le macchine semplici sono il fondamento di tutta la meccanica e dell'ingegneria"
+    }
+  },
+  "outputApp": {
+    "quiz": "Calcolo guidato: 'Con una leva di 3° genere lunga 60 cm e fulcro a 20 cm dall'estremità — qual è il vantaggio meccanico?' Feedback con formula.",
+    "microlearning": "Card deck 6 slide: una macchina semplice per slide con schema, formula VM, esempio quotidiano. 5 min.",
+    "visual": "Poster: le 6 macchine semplici — schema, formula, 3 esempi di oggetti quotidiani per ciascuna.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "macchine semplici",
+    "leva",
+    "meccanica",
+    "vantaggio meccanico",
+    "classe-3",
+    "ENE"
+  ],
+  "compito_realta": "Identifica 5 macchine semplici in casa: fotografale o disegnale, classifica il tipo, misura le dimensioni rilevanti e calcola il vantaggio meccanico di almeno 2.",
+  "sdg": [
+    9
+  ],
+  "note_didattiche": {
+    "base": "Concentrarsi solo sulla leva (I, II, III genere) con esempi scelti tra oggetti comuni. Formula fornita.",
+    "avanzato": "Progettare una macchina composta (combinazione di 2+ macchine semplici) che risolva un problema domestico concreto."
+  }
+}

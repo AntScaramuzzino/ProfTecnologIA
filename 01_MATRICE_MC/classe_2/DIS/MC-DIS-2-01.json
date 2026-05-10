@@ -1,0 +1,57 @@
+{
+  "id": "MC-DIS-2-01",
+  "area": "DIS",
+  "anno": 2,
+  "titolo": "Proiezioni ortogonali e sezioni",
+  "descrizione": "Lo studente sa rappresentare un oggetto tridimensionale nelle tre viste ortogonali (pianta, prospetto, fianco) secondo le convenzioni del disegno tecnico europeo, e sa eseguire una sezione semplice per mostrare l'interno di un oggetto, leggendo e producendo tavole tecniche standard.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+      "traguardo": "Lo studente esegue e legge proiezioni ortogonali e sezioni di oggetti semplici"
+    },
+    "DC": {
+      "ref": "5.3 Identificare lacune nelle competenze digitali",
+      "livello": "I",
+      "nota": "Lo studente usa software CAD 2D (es. LibreCAD) per produrre le viste ortogonali in alternativa al disegno manuale"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente pianifica la disposizione delle viste sul foglio prima di eseguire il disegno"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente risolve problemi di corrispondenza tra le viste applicando le regole di proiezione"
+    },
+    "EV": {
+      "ref": "SDG 4 — Istruzione di qualità",
+      "nota": "Il disegno ortogonale è linguaggio universale della progettazione ingegneristica"
+    }
+  },
+  "outputApp": {
+    "quiz": "Riconoscimento: mostra le 3 viste ortogonali di un solido — quale solido è? 5 esercizi con feedback grafico.",
+    "microlearning": "Animazione 4 min: un cubo che si 'apre' nelle tre viste con linea di corrispondenza. Passo-passo.",
+    "visual": "Poster: i 6 piani di proiezione — schema con frecce di osservazione e posizione relativa delle viste.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-DIS-1-01",
+    "MC-DIS-1-02"
+  ],
+  "tags": [
+    "proiezioni ortogonali",
+    "disegno tecnico",
+    "sezioni",
+    "viste",
+    "classe-2",
+    "DIS"
+  ],
+  "compito_realta": "Scegli un oggetto di forma semplice (scatola, bicchiere, mobile in miniatura): misurane le dimensioni e disegna le tre viste ortogonali quotate su un foglio A3 con cartiglio standard.",
+  "sdg": [
+    4
+  ],
+  "note_didattiche": {
+    "base": "Fornire un solido elementare (parallelepipedo) con le misure già date. Lo studente deve solo posizionare e disegnare le 3 viste.",
+    "avanzato": "Disegnare le viste ortogonali di un oggetto con almeno un foro passante e una sezione trasversale per evidenziarne l'interno."
+  }
+}

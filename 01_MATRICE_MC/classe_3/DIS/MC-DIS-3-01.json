@@ -1,0 +1,57 @@
+{
+  "id": "MC-DIS-3-01",
+  "area": "DIS",
+  "anno": 3,
+  "titolo": "Assonometria, prospettiva e progettazione",
+  "descrizione": "Lo studente sa eseguire rappresentazioni assonometriche (isometrica, cavaliera, monometrica) e conosce i principi della prospettiva a uno e due punti di fuga, applicando queste tecniche alla progettazione di oggetti d'uso, ambienti e scenari, e sa scegliere il tipo di rappresentazione più efficace per comunicare un'idea progettuale.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+      "traguardo": "Lo studente esegue rappresentazioni tridimensionali (assonometria e prospettiva) di oggetti e ambienti"
+    },
+    "DC": {
+      "ref": "3.1 Sviluppare contenuti digitali",
+      "livello": "A",
+      "nota": "Lo studente usa SketchUp o Tinkercad per produrre modelli 3D come alternativa/complemento al disegno manuale"
+    },
+    "EC": {
+      "ref": "Into action / Design thinking",
+      "nota": "Lo studente usa la rappresentazione grafica come strumento di comunicazione e sviluppo delle idee progettuali"
+    },
+    "LC": {
+      "ref": "Thinking / Creative thinking",
+      "nota": "Lo studente esplora lo spazio tridimensionale attraverso la rappresentazione grafica sviluppando pensiero visuo-spaziale"
+    },
+    "EV": {
+      "ref": "SDG 4 — Istruzione di qualità",
+      "nota": "La comunicazione progettuale tridimensionale è competenza trasversale all'architettura, al design e all'ingegneria"
+    }
+  },
+  "outputApp": {
+    "quiz": "Riconoscimento: identifica il tipo di assonometria (isometrica/cavaliera/monometrica) da 3 disegni di un cubo. Feedback con angoli caratteristici.",
+    "microlearning": "Animazione step-by-step 5 min: costruzione assonometria isometrica di un parallelepipedo — passo per passo.",
+    "visual": "Poster comparativo: isometrica vs. cavaliera vs. prospettiva — stessa stanza in tre rappresentazioni diverse.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-DIS-2-01",
+    "MC-DIS-2-02"
+  ],
+  "tags": [
+    "assonometria",
+    "prospettiva",
+    "disegno 3D",
+    "progettazione",
+    "classe-3",
+    "DIS"
+  ],
+  "compito_realta": "Progetta e disegna un oggetto utile per la tua camera (mensola, organizer, lampada): esegui prima le 3 viste ortogonali quotate, poi l'assonometria isometrica e una veduta prospettica a mano libera che comunichi il concept.",
+  "sdg": [
+    4
+  ],
+  "note_didattiche": {
+    "base": "Partire dall'assonometria cavaliera di un parallelepipedo semplice. Lo studente aggiunge solo la prospettiva a un punto di fuga.",
+    "avanzato": "Realizzare il modello 3D digitale in SketchUp e produrre render fotorealistici dell'oggetto progettato con diversi materiali applicati."
+  }
+}

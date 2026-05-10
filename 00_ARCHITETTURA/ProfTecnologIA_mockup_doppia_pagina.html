@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProfTecnologIA — Mockup doppia pagina MC-MAT-1-02</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #d0d4db;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 32px 20px 48px;
+    min-height: 100vh;
+  }
+
+  .meta-header {
+    text-align: center; margin-bottom: 24px;
+    font-family: 'Arial', sans-serif; color: #444;
+  }
+  .meta-header h1 { font-size: 18px; font-weight: 700; color: #1B4F72; margin-bottom: 4px; }
+  .meta-header p  { font-size: 12px; color: #666; }
+
+  /* ─── SPREAD ─────────────────────────────────────────────── */
+  .spread {
+    display: flex; gap: 0;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    border-radius: 2px;
+    max-width: 1220px; width: 100%;
+  }
+
+  .page {
+    width: 610px; min-height: 860px;
+    background: #fff;
+    padding: 24px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .page-left  { border-right: 1px solid #ccc; border-radius: 2px 0 0 2px; }
+  .page-right { border-radius: 0 2px 2px 0; }
+
+  /* Spine shadow */
+  .page-left::after {
+    content: '';
+    position: absolute; top: 0; right: -3px;
+    width: 6px; height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.08), transparent);
+    pointer-events: none;
+  }
+
+  /* ─── PAGE HEADER ────────────────────────────────────────── */
+  .page-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding-bottom: 6px; margin-bottom: 8px;
+    border-bottom: 2px solid #1B4F72;
+    font-family: Arial, sans-serif; font-size: 9.5px; color: #555;
+  }
+  .page-header .mc-id  { font-weight: 700; color: #1B4F72; font-size: 10px; }
+  .page-header .mc-tag { background: #1B4F72; color: #fff; padding: 1px 7px; border-radius: 3px; font-size: 8.5px; font-weight: 700; }
+
+  /* ─── STEM HOOK STRIP ─────────────────────────────────────── */
+  .stem-strip {
+    background: #2E86C1; color: #fff;
+    font-family: Arial, sans-serif; font-size: 8.5px;
+    padding: 4px 10px; margin: 6px -20px 8px;
+    letter-spacing: 0.3px;
+  }
+  .stem-strip strong { font-weight: 700; }
+
+  /* ─── ZONE CONTAINER ─────────────────────────────────────── */
+  .zone { margin-bottom: 9px; }
+
+  .zone-label {
+    display: flex; align-items: center; gap: 6px;
+    padding: 4px 8px; margin-bottom: 4px;
+    font-family: Arial, sans-serif; font-size: 8.5px; font-weight: 700;
+    color: #fff; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .zone-label.z1 { background: #1B4F72; }
+  .zone-label.z2 { background: #2E86C1; }
+  .zone-label.z3 { background: #B7950B; }
+  .zone-label.z4 { background: #1E8449; }
+  .zone-label.z5 { background: #BA4A00; }
+
+  .zone-body {
+    padding: 8px 10px;
+    font-size: 9.5px; line-height: 1.55;
+    color: #222;
+  }
+  .zone-body.z1-body { background: #EBF5FB; border-left: 3px solid #2E86C1; }
+  .zone-body.z2-body { background: #fff; border-left: 3px solid #2E86C1; border: 1px solid #e0e8f0; }
+  .zone-body.z3-body { background: #FFFBF0; border-left: 3px solid #F39C12; }
+  .zone-body.z4-body { background: #F0FAF4; border-left: 3px solid #1E8449; }
+  .zone-body.z5-body { background: #FFF5EE; border-left: 3px solid #BA4A00; }
+
+  /* ─── ZONE 1 — INNESCA ──────────────────────────────────────── */
+  .hook-row { display: flex; gap: 10px; align-items: flex-start; }
+  .qr-placeholder {
+    width: 52px; height: 52px; flex-shrink: 0;
+    border: 2px solid #2E86C1; border-radius: 4px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: #fff; gap: 2px;
+  }
+  .qr-grid {
+    display: grid; grid-template-columns: repeat(6,5px); gap: 1px;
+  }
+  .qr-cell { width: 5px; height: 5px; }
+  .qr-b { background: #1B4F72; }
+  .qr-w { background: #fff; }
+  .hook-text .hook-title { font-size: 9.5px; font-weight: 700; color: #1B4F72; line-height: 1.3; margin-bottom: 3px; }
+  .hook-text .hook-question { font-size: 9px; color: #555; font-style: italic; margin-bottom: 3px; }
+  .hook-text .hook-meta { font-family: Arial, sans-serif; font-size: 8px; color: #888; }
+  .hook-audio-icon { font-size: 16px; margin-bottom: 2px; }
+
+  /* ─── ZONE 2 — ESPLORA ──────────────────────────────────── */
+  .z2-title { font-size: 11.5px; font-weight: 700; color: #1B4F72; margin-bottom: 5px; line-height: 1.3; }
+  .z2-text { font-size: 9.5px; line-height: 1.6; margin-bottom: 5px; }
+  .z2-text b { color: #1B4F72; }
+  .svg-container { margin: 6px 0; border: 1px solid #dde4ec; border-radius: 3px; overflow: hidden; }
+  .svg-container svg { width: 100%; height: auto; display: block; }
+  .clil-tag { display: inline-flex; background: #EBF5FB; border: 1px solid #2E86C1; color: #1B4F72;
+    font-family: Arial; font-size: 7.5px; padding: 1px 6px; border-radius: 8px; margin: 1px 1px 0 0; }
+
+  /* ─── ZONE 3 — OSSERVA ────────────────────── */
+  .z3-case-title { font-size: 10px; font-weight: 700; color: #7D6608; margin-bottom: 4px; }
+  .z3-text { font-size: 9px; line-height: 1.55; margin-bottom: 4px; }
+  .z3-table { width: 100%; border-collapse: collapse; font-size: 8.5px; margin-bottom: 6px; }
+  .z3-table th { background: #7D6608; color: #fff; padding: 3px 5px; text-align: left; }
+  .z3-table td { border: 1px solid #e8d99a; padding: 2px 5px; }
+  .z3-table tr:nth-child(even) td { background: #FFFDE7; }
+
+  .professione-box {
+    border-left: 3px solid #2E86C1; background: #EBF5FB;
+    padding: 6px 8px; margin-top: 5px;
+  }
+  .prof-header { font-family: Arial; font-size: 8.5px; font-weight: 700; color: #1B4F72; margin-bottom: 2px; }
+  .prof-text   { font-size: 8.5px; line-height: 1.5; color: #333; }
+  .prof-tags   { margin-top: 3px; }
+
+  /* ─── ZONE 4 — SPERIMENTA ───────────────────────────────── */
+  .livello { margin-bottom: 5px; }
+  .livello-header {
+    font-family: Arial; font-size: 9px; font-weight: 700; color: #1E8449;
+    display: flex; align-items: center; gap: 4px; margin-bottom: 2px;
+  }
+  .pallini { font-size: 10px; color: #1E8449; }
+  .livello-text { font-size: 9px; line-height: 1.55; color: #333; padding-left: 14px; }
+
+  /* ─── ZONE 5 — AGISCI ────────────────────────── */
+  .z5-title { font-size: 10px; font-weight: 700; color: #7E5109; margin-bottom: 3px; }
+  .z5-section { margin-bottom: 4px; }
+  .z5-label { font-family: Arial; font-size: 8.5px; font-weight: 700; color: #7E5109; }
+  .z5-text  { font-size: 9px; line-height: 1.55; }
+
+  .rubric-mini { width: 100%; border-collapse: collapse; font-size: 8px; margin: 3px 0; }
+  .rubric-mini th { background: #7E5109; color: #fff; padding: 3px 4px; text-align: center; }
+  .rubric-mini td { border: 1px solid #f0cba0; padding: 2px 4px; }
+  .rubric-mini tr:nth-child(odd) td { background: #FFF5EE; }
+
+  .sdg-badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: #1B4F72; color: #fff;
+    font-family: Arial; font-size: 8px; font-weight: 700;
+    padding: 2px 8px; border-radius: 10px; margin-top: 3px;
+  }
+
+  .meta-box {
+    margin-top: 4px; border-top: 1px dashed #e0b89a; padding-top: 4px;
+  }
+  .meta-q { font-size: 8.5px; color: #555; font-style: italic; padding-left: 8px; margin-bottom: 1px; }
+  .meta-q::before { content: "💭 "; font-style: normal; }
+
+  /* ─── PAGE FOOTER ────────────────────────────────────────── */
+  .page-footer {
+    position: absolute; bottom: 10px; left: 20px; right: 20px;
+    display: flex; justify-content: space-between;
+    font-family: Arial; font-size: 8px; color: #999;
+    border-top: 1px solid #e8e8e8; padding-top: 4px;
+  }
+
+  /* ─── PRINT / EXPORT NOTE ─────────────────────────────────── */
+  .export-note {
+    margin-top: 24px; font-family: Arial; font-size: 11px;
+    color: #666; text-align: center; max-width: 600px;
+  }
+  .export-note strong { color: #1B4F72; }
+
+  /* ─── PRINT STYLES ───────────────────────────────────────── */
+  @media print {
+    body { background: #fff; padding: 0; }
+    .meta-header, .export-note { display: none; }
+    .spread { box-shadow: none; }
+    .page { min-height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="meta-header">
+  <h1>ProfTecnologIA — Mockup doppia pagina</h1>
+  <p>MC-MAT-1-02 · Ciclo di vita dei materiali e cicli tecnologici · Classe 1ª · Livello Foundation</p>
+  <p style="margin-top:4px;color:#888;font-size:11px;">DRAFT — Maggio 2026 · Antonio Scaramuzzino</p>
+</div>
+
+<div class="spread">
+
+  <!-- ═══════════════════ PAGINA SINISTRA ═══════════════════ -->
+  <div class="page page-left">
+
+    <div class="page-header">
+      <span><span class="mc-id">MC-MAT-1-02</span> · Ciclo di vita dei materiali</span>
+      <span class="mc-tag">DigComp Foundation · SDG 12</span>
+    </div>
+
+    <div class="stem-strip">
+      🪨 <strong>Area MAT — Materiali e Rifiuti</strong> · STEM hook: <em>Chimica + Matematica (proprietà fisiche, percentuali)</em> · "Ogni materiale obbedisce a leggi fisiche che puoi misurare."
+    </div>
+
+    <!-- INNESCA -->
+    <div class="zone">
+      <div class="zone-label z1">🔊 ⚡ INNESCA</div>
+      <div class="zone-body z1-body">
+        <div class="hook-row">
+          <div class="qr-placeholder">
+            <div class="hook-audio-icon">🎧</div>
+            <div class="qr-grid">
+              <!-- QR pattern simulato -->
+              <div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div>
+              <div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div>
+              <div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div>
+              <div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div>
+              <div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div>
+              <div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-w"></div><div class="qr-cell qr-b"></div><div class="qr-cell qr-b"></div>
+            </div>
+          </div>
+          <div class="hook-text">
+            <div class="hook-title">🎙 "Il tuo telefono ha viaggiato più di te"</div>
+            <div class="hook-question">Hai mai pensato a quanti paesi ha visitato il tuo smartphone prima di arrivare da te?</div>
+            <div class="hook-meta">⏱ 2 min 20 sec · Oggetto: smartphone · Scansiona il QR per ascoltare</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESPLORA -->
+    <div class="zone">
+      <div class="zone-label z2">📖 📖 ESPLORA</div>
+      <div class="zone-body z2-body">
+        <div class="z2-title">Da dove viene — e dove va — un oggetto?</div>
+        <div class="z2-text">
+          Ogni oggetto ha una storia che inizia prima che tu lo compri e continua dopo che lo butti.
+          Questa storia si chiama <b>ciclo tecnologico</b> ed è composta da 7 fasi: estrazione delle materie prime,
+          lavorazione, produzione, logistica, distribuzione, uso e fine vita.
+        </div>
+        <div class="z2-text">
+          A ogni fase c'è un <b>responsabile</b> e un <b>impatto ambientale</b>.
+          L'insieme dei soggetti che collaborano per portare un prodotto sul mercato si chiama <b>catena del valore</b>.
+        </div>
+
+        <!-- SVG EMBEDDED -->
+        <div class="svg-container">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img">
+            <title>Il ciclo tecnologico completo</title>
+            <defs>
+              <marker id="arrow" markerWidth="16" markerHeight="16" refX="12" refY="8" orient="auto" markerUnits="strokeWidth">
+                <path d="M2,2 L14,8 L2,14 Z" fill="#334155"/>
+              </marker>
+              <filter id="shadow">
+                <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.14"/>
+              </filter>
+              <style>
+                .bg{fill:#f7faf8}.title{font:700 48px Arial,sans-serif;fill:#102a43}.subtitle{font:400 25px Arial,sans-serif;fill:#40566e}
+                .phase-title{font:700 25px Arial,sans-serif;fill:#102a43}.phase-body{font:400 19px Arial,sans-serif;fill:#34495e}
+                .phase-num{font:700 28px Arial,sans-serif;fill:#fff}.center-title{font:700 31px Arial,sans-serif;fill:#102a43}
+                .center-body{font:400 21px Arial,sans-serif;fill:#334155}.badge{font:700 18px Arial,sans-serif;fill:#fff}
+                .arrow{fill:none;stroke:#334155;stroke-width:6;stroke-linecap:round;marker-end:url(#arrow);opacity:.78}
+                .note-title{font:700 22px Arial,sans-serif;fill:#102a43}.note-body{font:400 19px Arial,sans-serif;fill:#34495e}
+              </style>
+            </defs>
+            <rect class="bg" width="1600" height="1000"/>
+            <text class="title" x="90" y="94">Il ciclo tecnologico completo</text>
+            <text class="subtitle" x="92" y="134">Ogni oggetto ha un viaggio: nasce da risorse, viene prodotto e viene usato.</text>
+            <text class="subtitle" x="92" y="168">Poi può rientrare nel ciclo oppure diventare rifiuto.</text>
+            <g filter="url(#shadow)">
+              <circle cx="800" cy="500" r="154" fill="#ffffff"/>
+              <circle cx="800" cy="500" r="124" fill="#e9f6f1"/>
+            </g>
+            <text class="center-title" text-anchor="middle" x="800" y="456">Oggetto scelto</text>
+            <text class="center-body" text-anchor="middle" x="800" y="492">smartphone, felpa, bottiglia</text>
+            <text class="center-body" text-anchor="middle" x="800" y="526">o altro oggetto di casa</text>
+            <rect x="691" y="558" width="218" height="36" rx="18" fill="#287a63"/>
+            <text class="badge" text-anchor="middle" x="800" y="582">passaporto tecnologico</text>
+            <g id="phases">
+              <g transform="translate(644 180)"><rect width="312" height="132" rx="8" fill="#fff7df" stroke="#d99f22" stroke-width="3"/><circle cx="36" cy="36" r="24" fill="#d99f22"/><text class="phase-num" text-anchor="middle" x="36" y="46">1</text><text class="phase-title" x="74" y="42">Risorse</text><text class="phase-body" x="24" y="78">Materie prime, energia, acqua,</text><text class="phase-body" x="24" y="104">dati, lavoro e conoscenze.</text></g>
+              <g transform="translate(1040 278)"><rect width="312" height="132" rx="8" fill="#e7f0ff" stroke="#4279c6" stroke-width="3"/><circle cx="36" cy="36" r="24" fill="#4279c6"/><text class="phase-num" text-anchor="middle" x="36" y="46">2</text><text class="phase-title" x="74" y="42">Lavorazione</text><text class="phase-body" x="24" y="78">Le risorse diventano materiali</text><text class="phase-body" x="24" y="104">utilizzabili o componenti.</text></g>
+              <g transform="translate(1118 560)"><rect width="312" height="132" rx="8" fill="#efe9ff" stroke="#7c5fc9" stroke-width="3"/><circle cx="36" cy="36" r="24" fill="#7c5fc9"/><text class="phase-num" text-anchor="middle" x="36" y="46">3</text><text class="phase-title" x="74" y="42">Produzione</text><text class="phase-body" x="24" y="78">Fabbriche e tecnici assemblano</text><text class="phase-body" x="24" y="104">il prodotto finale.</text></g>
+              <g transform="translate(820 760)"><rect width="312" height="132" rx="8" fill="#e8f7ef" stroke="#2c8c63" stroke-width="3"/><circle cx="36" cy="36" r="24" fill="#2c8c63"/><text class="phase-num" text-anchor="middle" x="36" y="46">4</text><text class="phase-title" x="74" y="42">Logistica</text><text class="phase-body" x="24" y="78">Trasporto, magazzini, imballaggi</text><text class="phase-body" x="24" y="104">e percorsi tra paesi diversi.</text></g>
+              <g transform="translate(466 760)"><rect width="312" height="132" rx="8" fill="#fff0e8" stroke="#d66b34" stroke-width="3"/><circle cx="36" cy="36" r="24" fill="#d66b34"/><text class="phase-num" text-anchor="middle" x="36" y="46">5</text><text class="phase-title" x="74" y="42">Distribuzione</text><text class="phase-body" x="24" y="78">Negozi, e-commerce e consegna</text><text class="phase-body" x="24" y="104">portano l'oggetto a te.</text></g>
+              <g transform="translate(170 560)"><rect width="312" height="132" rx="8" fill="#e6f6fa" stroke="#27849a" stroke-width="3"/><circle cx="36" cy="36" r="24" fill="#27849a"/><text class="phase-num" text-anchor="middle" x="36" y="46">6</text><text class="phase-title" x="74" y="42">Uso</text><text class="phase-body" x="24" y="78">Il consumatore usa, ripara,</text><text class="phase-body" x="24" y="104">conserva o sostituisce.</text></g>
+              <g transform="translate(248 278)"><rect width="312" height="132" rx="8" fill="#edf7e2" stroke="#6a9f2f" stroke-width="3"/><circle cx="36" cy="36" r="24" fill="#6a9f2f"/><text class="phase-num" text-anchor="middle" x="36" y="46">7</text><text class="phase-title" x="74" y="42">Fine vita</text><text class="phase-body" x="24" y="78">Riuso, riparazione, riciclo</text><text class="phase-body" x="24" y="104">oppure smaltimento.</text></g>
+            </g>
+            <path class="arrow" d="M956 244 C1048 238 1104 250 1166 278"/>
+            <path class="arrow" d="M1285 410 C1338 468 1348 512 1321 560"/>
+            <path class="arrow" d="M1188 692 C1142 742 1096 768 1042 780"/>
+            <path class="arrow" d="M820 826 C790 846 804 846 778 826"/>
+            <path class="arrow" d="M560 780 C502 768 456 742 412 692"/>
+            <path class="arrow" d="M282 560 C254 512 264 468 315 410"/>
+            <path class="arrow" d="M434 278 C512 230 564 220 644 230"/>
+            <g transform="translate(90 872)">
+              <rect width="680" height="72" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+              <text class="note-title" x="24" y="32">Domanda guida</text>
+              <text class="note-body" x="208" y="32">In quale fase puoi intervenire tu come consumatore?</text>
+              <text class="note-body" x="208" y="58">Riparare, usare più a lungo e riciclare cambiano il finale.</text>
+            </g>
+            <g transform="translate(1200 872)">
+              <rect width="310" height="72" rx="8" fill="#287a63"/>
+              <text class="badge" text-anchor="middle" x="155" y="32">SDG 12</text>
+              <text class="badge" text-anchor="middle" x="155" y="58">Consumo responsabile</text>
+            </g>
+          </svg>
+        </div>
+
+        <div style="margin-top:4px;">
+          <span class="clil-tag">🇬🇧 life cycle</span>
+          <span class="clil-tag">value chain</span>
+          <span class="clil-tag">logistics</span>
+          <span class="clil-tag">technological cycle</span>
+          <span class="clil-tag">end of life</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>ProfTecnologIA · MC-MAT-1-02 · © Antonio Scaramuzzino 2026</span>
+      <span>20</span>
+    </div>
+  </div><!-- /page-left -->
+
+
+  <!-- ═══════════════════ PAGINA DESTRA ═══════════════════ -->
+  <div class="page page-right">
+
+    <div class="page-header">
+      <span><span class="mc-id">MC-MAT-1-02</span> · Ciclo di vita dei materiali</span>
+      <span class="mc-tag">Area MAT · Classe 1ª</span>
+    </div>
+
+    <!-- OSSERVA -->
+    <div class="zone">
+      <div class="zone-label z3">🌍 🔍 OSSERVA — Esempio reale + Professione 2030</div>
+      <div class="zone-body z3-body">
+        <div class="z3-case-title">📱 Case study: lo smartphone nella tasca di tutti</div>
+        <div class="z3-text">Segui un singolo smartphone: il cobalto dalla Repubblica Democratica del Congo, il litio dalle saline del deserto di Atacama in Cile, il silicio purificato in Giappone, l'assemblaggio a Shenzhen, la spedizione via Rotterdam. Poi arriva da te.</div>
+        <table class="z3-table">
+          <tr><th>Fase</th><th>Materiale</th><th>Paese</th><th>Impatto principale</th></tr>
+          <tr><td>1. Estrazione</td><td>Cobalto (batteria)</td><td>Congo RDC</td><td>Miniere, lavoro minorile documentato</td></tr>
+          <tr><td>1. Estrazione</td><td>Litio (batteria)</td><td>Cile (Atacama)</td><td>Consumo enorme d'acqua in zona desertica</td></tr>
+          <tr><td>3. Produzione</td><td>Assemblaggio</td><td>Cina (Shenzhen)</td><td>Emissioni fabbriche, condizioni lavoro</td></tr>
+          <tr><td>7. Fine vita</td><td>E-waste</td><td>???</td><td>Solo il 15-20% viene realmente riciclato</td></tr>
+        </table>
+        <div class="z3-text" style="font-style:italic;font-size:8.5px;">Il telefono costa ~700€ in negozio. Le materie prime: meno di 30€. La differenza copre lavorazione, ricerca, marketing, distribuzione e margini.</div>
+
+        <div class="professione-box">
+          <div class="prof-header">🔷 Professione 2030 — Supply Chain Sustainability Manager</div>
+          <div class="prof-text">Analizza e ottimizza le catene di fornitura per ridurre emissioni, garantire condizioni di lavoro etiche e minimizzare i rifiuti lungo tutto il ciclo tecnologico.</div>
+          <div class="prof-tags">
+            <span class="clil-tag">LCA</span>
+            <span class="clil-tag">logistica sostenibile</span>
+            <span class="clil-tag">economia circolare</span>
+            <span class="clil-tag">reportistica ESG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPERIMENTA -->
+    <div class="zone">
+      <div class="zone-label z4">🔬 🔬 SPERIMENTA · 3 livelli</div>
+      <div class="zone-body z4-body">
+
+        <div class="livello">
+          <div class="livello-header"><span class="pallini">●</span> Base — La bottiglia d'acqua</div>
+          <div class="livello-text">La tabella ha già le 7 fasi del ciclo tecnologico di una bottiglia in plastica. Compila: chi è il responsabile? Qual è il principale impatto ambientale?
+            <br><em style="color:#888;font-size:8px;">[Template fornito — 7 righe con colonne da completare]</em></div>
+        </div>
+
+        <div class="livello">
+          <div class="livello-header"><span class="pallini">●●</span> Intermedio — Il passaporto tecnologico</div>
+          <div class="livello-text">Scegli un oggetto che usi ogni giorno (felpa, cuffie, quaderno). Costruisci il suo passaporto: provenienza di ogni fase, responsabile, impatto. Verifica almeno 2 dati su internet e cita la fonte.
+            <br><em style="color:#888;font-size:8px;">[Template: Fase | Paese/azienda | Impatto | Fonte]</em></div>
+        </div>
+
+        <div class="livello">
+          <div class="livello-header"><span class="pallini">●●●</span> Avanzato — Fast fashion vs. slow fashion</div>
+          <div class="livello-text">Confronta il ciclo tecnologico di due maglie: fast fashion (Bangladesh) e lana merino biologica italiana. Stima consumo d'acqua, CO₂ e condizioni di lavoro. Argomenta in 10 righe quale scegliere, considerando costo, impatto e durata. Usa madeinwho.org o goodonyou.eco.</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- AGISCI -->
+    <div class="zone">
+      <div class="zone-label z5">🎯 🌍 AGISCI · SDG 12 · Metacognizione</div>
+      <div class="zone-body z5-body">
+        <div class="z5-title">📋 "Il passaporto dell'oggetto"</div>
+
+        <div class="z5-section">
+          <span class="z5-label">Scenario:</span>
+          <span class="z5-text"> Ogni oggetto che usi ha una storia nascosta. Oggi la renderai visibile.</span>
+        </div>
+        <div class="z5-section">
+          <span class="z5-label">Consegna:</span>
+          <span class="z5-text"> Scegli un oggetto (vestiario, tech o cibo). Mappa le 7 fasi del ciclo tecnologico: responsabile, paese, impatto, tua azione possibile.</span>
+        </div>
+
+        <table class="rubric-mini">
+          <tr><th>Criterio</th><th>● Base</th><th>●● Inter</th><th>●●● Avanz</th></tr>
+          <tr><td>Completezza</td><td>4 fasi</td><td>7 fasi + responsabile</td><td>7 fasi + dati verificati</td></tr>
+          <tr><td>Responsabili</td><td>2-3 corretti</td><td>Tutti corretti</td><td>+ ruolo catena valore</td></tr>
+          <tr><td>Impatti</td><td>1 per fase</td><td>+ spiegazione</td><td>Quantificati (CO₂)</td></tr>
+          <tr><td>Proposta</td><td>"Comprare meno"</td><td>Azione concreta</td><td>+ stima impatto su 100 studenti</td></tr>
+        </table>
+
+        <div style="margin-top:4px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+          <span class="sdg-badge">♻️ SDG 12 — Consumo responsabile</span>
+        </div>
+
+        <div class="meta-box">
+          <div class="z5-label" style="margin-bottom:2px;">💭 Metacognizione:</div>
+          <div class="meta-q">Cos'è la cosa che ti ha sorpreso di più nel ciclo del tuo oggetto?</div>
+          <div class="meta-q">Cambieresti qualcosa nel modo in cui lo acquisti o lo usi?</div>
+          <div class="meta-q">Se potessi cambiare una sola fase del ciclo — quale cambieresti e come?</div>
+        </div>
+
+        <div style="margin-top:5px;background:#fff;border:1px dashed #e0b89a;padding:4px 7px;border-radius:3px;">
+          <span style="font-family:Arial;font-size:8px;font-weight:700;color:#BA4A00;">🚀 Estensione avanzata:</span>
+          <span style="font-size:8px;color:#555;"> Confronta il tuo oggetto con uno equivalente degli anni '70. Cosa è cambiato nella filiera? Quale ha l'impatto minore?</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>© ProfTecnologIA — draft strutturato — non per la distribuzione finale</span>
+      <span>21</span>
+    </div>
+  </div><!-- /page-right -->
+
+</div><!-- /spread -->
+
+<div class="export-note">
+  <strong>Note per l'editore:</strong> Questo mockup mostra la struttura delle 5 zone in formato doppia pagina (2pp, livello Foundation).
+  Le MC di livello Advanced occupano 6 pagine con SPERIMENTA espansa e AGISCI ampliata.
+  Il visual SVG del ciclo tecnologico è già prodotto e disponibile in formato editabile.
+  L'illustrazione fotografica (INNESCA) è in produzione. | ProfTecnologIA · Maggio 2026
+</div>
+
+</body>
+</html>

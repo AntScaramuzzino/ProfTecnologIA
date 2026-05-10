@@ -1,0 +1,103 @@
+{
+  "id": "MC-DIG-3-04",
+  "area": "DIG",
+  "anno": 3,
+  "titolo": "Accessibilità, usabilità e inclusione digitale",
+  "descrizione": "Lo studente comprende i principi di accessibilità digitale (WCAG, contrasto, navigazione da tastiera, screen reader), sa valutare l'usabilità di un'interfaccia e progetta contenuti digitali che possano essere fruiti da tutti — incluse persone con disabilità visive, motorie o cognitive. Comprende l'accessibilità come diritto e come scelta progettuale, non come opzione.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: importanza dell'usabilità e dell'accessibilità di applicazioni informatiche ai fini dell'inclusione e della più ampia partecipazione.",
+      "traguardo": "Lo studente valuta l'accessibilità di un'interfaccia digitale e sa progettare contenuti che rispettino i principi di inclusione"
+    },
+    "DC": {
+      "ref": "3.1 Sviluppare contenuti digitali",
+      "livello": "A",
+      "nota": "Lo studente crea contenuti digitali applicando principi di accessibilità (contrasto, alt text, struttura semantica) e ne verifica la qualità con strumenti automatici"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Ethical and sustainable thinking",
+      "nota": "Lo studente comprende che un prodotto digitale inaccessibile esclude milioni di persone e che l'inclusione è anche valore economico"
+    },
+    "LC": {
+      "ref": "Social / Empathy",
+      "nota": "Lo studente si mette nei panni di chi ha una disabilità visiva o motoria per comprendere le barriere digitali che incontra ogni giorno"
+    },
+    "EV": {
+      "ref": "SDG 10 — Ridurre le disuguaglianze; SDG 16 — Pace, giustizia e istituzioni solide; L. 92/2019 Educazione Civica",
+      "nota": "L'accessibilità digitale è sancita da normativa europea (European Accessibility Act 2025) e dalla Convenzione ONU sui diritti delle persone con disabilità"
+    }
+  },
+  "outputApp": {
+    "quiz": "Analisi interfaccia: ti viene mostrata una pagina web con 5 problemi di accessibilità (contrasto insufficiente, immagine senza alt text, link generici 'clicca qui', font troppo piccolo, navigazione impossibile da tastiera) — identificali e proponi la soluzione corretta per ciascuno.",
+    "microlearning": "Card deck 6 slide: cos'è l'accessibilità digitale / WCAG 2.1 i 4 principi (Percepibile, Utilizzabile, Comprensibile, Robusto) / screen reader (demo audio) / alt text / contrasto / Universal Design. 5 min.",
+    "visual": "Infografica: '1 miliardo di persone con disabilità nel mondo — come navigano il web?' Con simulazioni visive del daltonismo, bassa visione, navigazione da tastiera.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-DIG-3-01",
+    "MC-DIG-3-02"
+  ],
+  "tags": [
+    "accessibilità",
+    "usabilità",
+    "inclusione digitale",
+    "WCAG",
+    "Universal Design",
+    "disabilità",
+    "interfaccia",
+    "classe-3",
+    "DIG"
+  ],
+  "compito_realta": "Scegli il sito web della tua scuola o del tuo comune: eseguine un audit di accessibilità usando lo strumento gratuito WAVE (wave.webaim.org) o Lighthouse di Chrome. Elenca i 5 problemi più gravi, spiega quale utente è escluso da ciascuno e propone la correzione tecnica. Presenta i risultati in un report di una pagina indirizzato al responsabile del sito.",
+  "sdg": [
+    10,
+    16
+  ],
+  "note_didattiche": {
+    "base": "Fornire un sito di esempio già analizzato con i 5 errori evidenziati. Lo studente deve solo classificare il tipo di barriera (visiva, motoria, cognitiva) e proporre la correzione in linguaggio semplice.",
+    "avanzato": "Ricreare una delle pagine del sito scelto in HTML, correggendo tutti i problemi di accessibilità identificati. Testare la versione corretta con un screen reader (NVDA gratuito) e documentare la differenza nell'esperienza d'uso."
+  },
+  "hook_audio": {
+    "titolo": "Navigare al buio: come usa internet chi non vede",
+    "oggetto_reale": "uno screen reader (lettore di schermo)",
+    "domanda_avvio": "Hai mai provato a usare il computer con gli occhi chiusi — e a capire cosa c'è sullo schermo solo dall'audio?",
+    "durata_min": 3,
+    "note_script": "Aprire con una simulazione audio: descrizione di come suona una pagina web normale quando la legge uno screen reader (rapidissimo, confuso, ordine casuale dei link). Poi confrontare con una pagina accessibile (logica, comprensibile). Dato: in Italia ci sono circa 350.000 persone con disabilità visiva grave. In Europa il 15% della popolazione ha una disabilità. Il European Accessibility Act del 2025 obbliga tutte le aziende con più di 10 dipendenti ad avere prodotti digitali accessibili. Tono: empatico e pratico — 'puoi fare la differenza con 3 regole semplici'."
+  },
+  "professione_futura": {
+    "titolo": "UX Accessibility Specialist",
+    "orizzonte": "2030",
+    "descrizione_breve": "Garantisce che le app e i siti web siano utilizzabili da tutti, conducendo test con utenti con disabilità, verificando la conformità alle normative (WCAG, EAA) e formando i team di sviluppo.",
+    "competenze_chiave": [
+      "WCAG 2.1 / 2.2",
+      "testing con screen reader",
+      "Universal Design",
+      "conformità normativa europea (EAA 2025)"
+    ]
+  },
+  "sdg_principale": 10,
+  "clil_termini": [
+    {
+      "italiano": "accessibilità digitale",
+      "inglese": "digital accessibility",
+      "pronuncia_ipa": "/ˈdɪdʒɪtəl əkˌsesəˈbɪlɪti/"
+    },
+    {
+      "italiano": "usabilità",
+      "inglese": "usability",
+      "pronuncia_ipa": "/ˌjuːzəˈbɪlɪti/"
+    },
+    {
+      "italiano": "testo alternativo",
+      "inglese": "alt text",
+      "pronuncia_ipa": "/ælt tekst/"
+    },
+    {
+      "italiano": "lettore di schermo",
+      "inglese": "screen reader",
+      "pronuncia_ipa": "/skriːn ˈriːdər/"
+    }
+  ],
+  "uda_collegata": null
+}

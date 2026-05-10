@@ -1,0 +1,54 @@
+{
+  "id": "MC-DIS-1-01",
+  "area": "DIS",
+  "anno": 1,
+  "titolo": "Basi del disegno e costruzioni geometriche",
+  "descrizione": "Lo studente sa usare correttamente gli strumenti del disegno tecnico (riga, squadra, compasso, matita) per eseguire costruzioni geometriche fondamentali (perpendicolari, parallele, poligoni regolari, divisione di angoli) rispettando le convenzioni grafiche.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche utilizzando elementi del disegno tecnico",
+      "traguardo": "Lo studente esegue costruzioni geometriche di base con strumenti tecnici"
+    },
+    "DC": {
+      "ref": "5.1 Risolvere problemi tecnici",
+      "livello": "F",
+      "nota": "Lo studente usa strumenti digitali di disegno (es. GeoGebra) come alternativa/complemento agli strumenti fisici"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente pianifica i passi di una costruzione geometrica prima di eseguirla"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente affronta la costruzione come problema con procedura definita da rispettare"
+    },
+    "EV": {
+      "ref": "SDG 4 — Istruzione di qualità",
+      "nota": "Le basi del disegno tecnico sono prerequisito per la comprensione di qualsiasi progetto ingegneristico"
+    }
+  },
+  "outputApp": {
+    "quiz": "Identificazione: mostra una costruzione geometrica, chiedi il nome e lo strumento usato. 5 domande con feedback.",
+    "microlearning": "Video-tutorial 4 min: costruzione passo-passo di un esagono regolare con riga e compasso.",
+    "visual": "Poster sintetico: 6 costruzioni fondamentali con nome, strumenti, procedura in 3 passi.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "disegno tecnico",
+    "geometria",
+    "costruzioni",
+    "strumenti",
+    "classe-1",
+    "DIS"
+  ],
+  "compito_realta": "Disegna in scala 1:20 la tua aula: misura le dimensioni reali con un metro, converti in scala e riproduci la pianta su foglio A4 con strumenti tecnici.",
+  "sdg": [
+    4
+  ],
+  "note_didattiche": {
+    "base": "Fornire il foglio già impostato con la cornice e il cartiglio. Lo studente deve solo eseguire la costruzione indicata.",
+    "avanzato": "Aggiungere una seconda pianta in scala diversa (1:50) e discutere come cambia la rappresentazione."
+  }
+}

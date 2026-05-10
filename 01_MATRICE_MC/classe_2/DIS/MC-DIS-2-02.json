@@ -1,0 +1,60 @@
+{
+  "id": "MC-DIS-2-02",
+  "area": "DIS",
+  "anno": 2,
+  "titolo": "Assonometria cavaliera e isometrica",
+  "titolo_libro": "Come si rappresenta un oggetto 3D su un foglio 2D?",
+  "descrizione": "Lo studente sa costruire rappresentazioni assonometriche (cavaliera obliqua e isometrica) di oggetti geometrici semplici e composti, conosce le differenze tra i due metodi e sa scegliere quello più adatto al contesto comunicativo.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+      "traguardo": "Lo studente produce rappresentazioni assonometriche di oggetti tridimensionali rispettando le convenzioni grafiche"
+    },
+    "DC": { "ref": "5.1 Risolvere problemi tecnici", "livello": "I", "nota": "Lo studente usa strumenti digitali (Tinkercad, SketchUp free) per confrontare assonometrie generate automaticamente con quelle costruite a mano" },
+    "EC": { "ref": "Into action / Planning and management", "nota": "Lo studente comunica idee progettuali tridimensionali in modo chiaro e non ambiguo" },
+    "LC": { "ref": "Thinking / Problem solving", "nota": "Lo studente sviluppa la capacità di pensiero spaziale passando dalla proiezione ortogonale alla rappresentazione 3D" },
+    "EV": { "ref": "SDG 4 — Istruzione di qualità", "nota": "Il linguaggio grafico tecnico è strumento di comunicazione universale e base dell'orientamento STEM" }
+  },
+  "outputApp": {
+    "quiz": "Identifica il metodo: mostra 4 disegni assonometrici — lo studente indica se sono cavalieri o isometrici e motiva la risposta con i criteri angolari.",
+    "microlearning": "Card deck 4 slide: assi cavaliera (0°/45°/90°, riduzione 0,5), assi isometrica (30°/90°/150°, scala reale), confronto, quando usare quale. 3 min.",
+    "visual": "Tavola comparativa: stesso parallelepipedo in proiezione ortogonale / assonometria cavaliera / assonometria isometrica — con assi annotati.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": ["MC-DIS-2-01"],
+  "tags": ["assonometria", "cavaliera", "isometrica", "disegno tecnico", "3D", "classe-2", "DIS"],
+  "compito_realta": "Disegna in assonometria cavaliera e isometrica lo stesso oggetto che hai proiettato ortogonalmente nella MC-DIS-2-01: confronta i due metodi e scrivi 3 righe su quale preferisci e perché.",
+  "sdg": [4],
+  "sdg_principale": 4,
+  "note_didattiche": {
+    "base": "Fornire il reticolo assonometrico già stampato con gli assi tracciati. Lo studente costruisce il solido riportando le misure sugli assi indicati.",
+    "avanzato": "Costruire l'assonometria di un solido composto (parallelepipedo con foro cilindrico) usando il metodo delle scatole concentriche."
+  },
+  "hook_audio": {
+    "titolo": "IKEA e il segreto del disegno cavaliero",
+    "oggetto_reale": "manuale di montaggio IKEA",
+    "domanda_avvio": "Hai mai notato che tutti i disegni IKEA hanno sempre lo stesso strano angolo di 45°?",
+    "durata_min": 2,
+    "note_script": "Aprire con la domanda sull'angolo dei disegni IKEA. Spiegare che è assonometria cavaliera — scelta deliberata per essere comprensibile in qualsiasi cultura senza parole."
+  },
+  "professione_futura": {
+    "titolo": "Industrial Designer",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta oggetti d'uso comunicando le idee con sketch 3D digitali e fisici, utilizzando assonometria come linguaggio universale con fornitori e clienti.",
+    "competenze_chiave": ["pensiero spaziale", "comunicazione visiva", "prototipazione rapida", "software 3D"]
+  },
+  "clil_termini": [
+    { "italiano": "assonometria cavaliera", "inglese": "oblique projection", "pronuncia_ipa": "/əˈbliːk prəˈdʒekʃən/" },
+    { "italiano": "assonometria isometrica", "inglese": "isometric projection", "pronuncia_ipa": "/ˌaɪsəˈmetrɪk prəˈdʒekʃən/" },
+    { "italiano": "scala di riduzione", "inglese": "reduction ratio", "pronuncia_ipa": "/rɪˈdʌkʃən ˈreɪʃiəʊ/" }
+  ],
+  "uda_collegata": null,
+  "stem_connections": {
+    "matematica": "Gli assi isometrici a 30° e 150° derivano dalla divisione del piano in tre angoli di 120°. Il fattore di riduzione 0,5 dell'assonometria cavaliera è una scelta convenzionale, non una necessità geometrica.",
+    "scienze": null,
+    "arte_geo_storia": "Albrecht Dürer (1525) usò sistematicamente l'assonometria per i suoi studi prospettici. L'assonometria è il linguaggio dei manuali tecnici mondiali — da IKEA ai costruttori aeronautici.",
+    "frase_ponte": "Il disegno tecnico è geometria applicata alla costruzione e alla comunicazione."
+  },
+  "_nota_editoriale": "Il JSON originale descriveva 'Quotatura e lettura di un disegno tecnico' — contenuto valido ma separato, da sviluppare come MC-DIS-2-03 in una versione futura della matrice. Il _completa.md è corretto (assonometria, allineato a INDICE v1.0)."
+}

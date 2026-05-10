@@ -1,0 +1,58 @@
+{
+  "id": "MC-MAT-1-04",
+  "area": "MAT",
+  "anno": 1,
+  "titolo": "Rifiuti, riciclaggio e smaltimento",
+  "descrizione": "Lo studente sa distinguere le categorie di rifiuti (urbani, speciali, pericolosi), conosce le regole della raccolta differenziata e comprende i processi industriali di riciclo e recupero energetico, collegandoli alla riduzione dell'impatto ambientale.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni tra scienza, tecnologia e contesto",
+      "traguardo": "Lo studente descrive i sistemi di gestione dei rifiuti e il loro impatto sull'ambiente"
+    },
+    "DC": {
+      "ref": "2.2 Condividere contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente produce e condivide un report digitale sull'analisi dei rifiuti scolastici"
+    },
+    "EC": {
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente propone azioni concrete di riduzione dei rifiuti nel contesto scolastico"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente si riconosce come agente attivo nella gestione sostenibile dei rifiuti"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città e comunità sostenibili; SDG 12 — Consumo responsabile",
+      "nota": "La corretta gestione dei rifiuti è pratica di cittadinanza attiva quotidiana"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario multipla: 'Dove butto questo?' — 8 oggetti da classificare nella raccolta differenziata corretta. Feedback con la motivazione.",
+    "microlearning": "Card deck 6 slide: le 5 R (Rifiuta, Riduci, Riusa, Ricicla, Recupera) + slide sullo smaltimento speciale. 4 min.",
+    "visual": "Flowchart: dal bidone al riciclo — percorso della plastica, carta, vetro, organico.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-MAT-1-01",
+    "MC-MAT-1-02"
+  ],
+  "tags": [
+    "rifiuti",
+    "raccolta differenziata",
+    "riciclaggio",
+    "5R",
+    "classe-1",
+    "MAT"
+  ],
+  "compito_realta": "Analizza la raccolta differenziata della scuola: conta i bidoni presenti, osserva per un giorno cosa viene gettato, identifica 3 errori frequenti e proponi una soluzione.",
+  "sdg": [
+    11,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Concentrarsi solo sulle 3 categorie principali (plastica/carta/indifferenziato). Usare immagini degli oggetti invece dei nomi.",
+    "avanzato": "Calcolare il tasso di raccolta differenziata della classe per una settimana e confrontarlo con il dato comunale."
+  }
+}

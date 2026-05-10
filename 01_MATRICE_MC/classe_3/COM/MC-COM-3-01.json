@@ -1,0 +1,55 @@
+{
+  "id": "MC-COM-3-01",
+  "area": "COM",
+  "anno": 3,
+  "titolo": "Telecomunicazioni e reti",
+  "descrizione": "Lo studente conosce i principi delle telecomunicazioni (analogico/digitale, modulazione, protocolli), comprende l'architettura di base di Internet (client/server, TCP/IP, DNS, HTTP), e sa descrivere come vengono trasmessi dati, voce e video attraverso reti cablate e wireless.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi di comunicazione e trasmissione dell'informazione",
+      "traguardo": "Lo studente descrive il funzionamento delle reti di comunicazione digitale"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente comprende come funziona l'infrastruttura che abilita la navigazione quotidiana"
+    },
+    "EC": {
+      "ref": "Into action / Mobilising resources",
+      "nota": "Lo studente usa strumenti di analisi della rete (ping, traceroute) per esplorare l'infrastruttura"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente analizza Internet come sistema di sistemi interdipendenti"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione e infrastrutture; SDG 17 — Partnership",
+      "nota": "La connettività universale è prerequisito per l'accesso all'istruzione e ai servizi digitali"
+    }
+  },
+  "outputApp": {
+    "quiz": "Ordina il percorso: cosa succede quando digiti una URL? Ordina i 5 step (DNS lookup, TCP handshake, HTTP request, response, rendering). Feedback.",
+    "microlearning": "Card deck 5 slide: segnale analogico/digitale, IP, DNS, router, WiFi — schema + funzione. 4 min.",
+    "visual": "Mappa: anatomia di Internet — cavi sottomarini, data center, ultimo miglio, dispositivo finale.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "reti",
+    "Internet",
+    "telecomunicazioni",
+    "protocolli",
+    "classe-3",
+    "COM"
+  ],
+  "compito_realta": "Mappa la copertura WiFi della scuola: misura la potenza del segnale in 8 punti diversi dell'edificio usando un'app apposita, crea una mappa di calore e identifica le zone di copertura scarsa con una proposta di miglioramento.",
+  "sdg": [
+    9,
+    17
+  ],
+  "note_didattiche": {
+    "base": "Fornire la pianta della scuola già stampata e l'app già installata. Lo studente misura e colora solo 4 punti.",
+    "avanzato": "Aggiungere l'analisi dei canali WiFi in uso (interferenze) e proporre una configurazione ottimale dei punti di accesso."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "MC-MAT-1-05",
+  "area": "MAT",
+  "anno": 1,
+  "titolo": "Scegliere il materiale giusto per un progetto",
+  "descrizione": "Lo studente sa selezionare il materiale più adatto per un oggetto o un progetto specifico, applicando criteri tecnici (resistenza, leggerezza, lavorabilità), economici (costo) e ambientali (impatto, riciclabilità) in modo integrato.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche utilizzando elementi del disegno tecnico",
+      "traguardo": "Lo studente applica criteri di selezione dei materiali alla progettazione di oggetti semplici"
+    },
+    "DC": {
+      "ref": "5.3 Identificare lacune nelle proprie competenze digitali",
+      "livello": "F",
+      "nota": "Lo studente usa strumenti digitali per confrontare materiali e documentare la propria scelta progettuale"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Design thinking",
+      "nota": "Lo studente applica criteri multipli per prendere decisioni progettuali"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente affronta un problema progettuale con un approccio strutturato e multi-criterio"
+    },
+    "EV": {
+      "ref": "SDG 12 — Consumo e produzione responsabili",
+      "nota": "Scegliere materiali con criteri ambientali è un atto di design responsabile"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario progettuale: 'Devi costruire una borraccia scolastica — quale materiale scegli?' — multipla con 4 opzioni e feedback tecnico.",
+    "microlearning": "Card interattiva: matrice di selezione materiale (3 criteri × 4 materiali). Studente compila i pesi. 5 min.",
+    "visual": "Matrice decisionale: asse X = criteri, asse Y = materiali, con scala cromatica.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-MAT-1-01",
+    "MC-MAT-1-03"
+  ],
+  "tags": [
+    "selezione materiali",
+    "progettazione",
+    "criteri tecnici",
+    "design",
+    "classe-1",
+    "MAT"
+  ],
+  "compito_realta": "Scegli il materiale per costruire una piccola libreria da muro: confronta 3 materiali possibili in una tabella con almeno 4 criteri e giustifica la scelta finale in 5 righe.",
+  "sdg": [
+    9,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Fornire la tabella dei criteri già impostata. Lo studente deve solo assegnare punteggi da 1 a 3.",
+    "avanzato": "Lo studente aggiunge autonomamente un 5° criterio di valutazione e riflette su eventuali compromessi tra criteri in conflitto."
+  }
+}

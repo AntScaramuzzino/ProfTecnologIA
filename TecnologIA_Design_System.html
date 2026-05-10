@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TecnologIA — Design System v1.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   DESIGN TOKENS — CSS CUSTOM PROPERTIES
+   ============================================================ */
+:root {
+  /* BRAND — Navy scale */
+  --brand-950: #0A1020;
+  --brand-900: #0F1828;
+  --brand-800: #1A2B4A;
+  --brand-700: #253D6B;
+  --brand-600: #2F508C;
+  --brand-500: #3A64AE;
+  --brand-400: #587FCE;
+  --brand-300: #829FDE;
+  --brand-200: #B0C3EE;
+  --brand-100: #D8E3F7;
+  --brand-50:  #EEF3FC;
+
+  /* ACCENT — Electric Teal */
+  --accent-900: #004D40;
+  --accent-700: #007A63;
+  --accent-500: #00C4A7;
+  --accent-300: #5DE8D4;
+  --accent-100: #CCFAF4;
+
+  /* ENERGY — Dynamic Orange */
+  --energy-900: #7A2800;
+  --energy-700: #C24010;
+  --energy-500: #FF6834;
+  --energy-300: #FFA07A;
+  --energy-100: #FFE5DC;
+
+  /* NEUTRALS */
+  --neutral-950: #0D0F14;
+  --neutral-900: #1A1C24;
+  --neutral-800: #2C2F3A;
+  --neutral-700: #3F4354;
+  --neutral-600: #5A5F76;
+  --neutral-500: #767C96;
+  --neutral-400: #969CB2;
+  --neutral-300: #B8BCCE;
+  --neutral-200: #D8DAE8;
+  --neutral-100: #ECEEF6;
+  --neutral-50:  #F6F7FA;
+  --white:       #FFFFFF;
+
+  /* SEMANTIC */
+  --success-700: #166534;
+  --success-500: #22C55E;
+  --success-100: #DCFCE7;
+  --warning-700: #92400E;
+  --warning-500: #F59E0B;
+  --warning-100: #FEF3C7;
+  --error-700:   #991B1B;
+  --error-500:   #EF4444;
+  --error-100:   #FEE2E2;
+  --info-700:    #1E40AF;
+  --info-500:    #3B82F6;
+  --info-100:    #DBEAFE;
+
+  /* ZONE COLORS */
+  --zone1: #5E35B1;   /* HOOK — Viola profondo */
+  --zone1-bg: #EDE7F6;
+  --zone1-border: #9575CD;
+  --zone2: #1565C0;   /* CONCETTO — Blu cobalto */
+  --zone2-bg: #E3F2FD;
+  --zone2-border: #64B5F6;
+  --zone3: #E65100;   /* ESEMPIO — Arancione caldo */
+  --zone3-bg: #FFF3E0;
+  --zone3-border: #FFB74D;
+  --zone4: #00695C;   /* LABORATORIO — Verde teal */
+  --zone4-bg: #E0F2F1;
+  --zone4-border: #4DB6AC;
+  --zone5: #F57F17;   /* COMPITO DI REALTÀ — Ambra oro */
+  --zone5-bg: #FFFDE7;
+  --zone5-border: #FFD54F;
+
+  /* AREA COLORS */
+  --area-MAT: #6D4C41;   /* Materiali 🪨 terracotta */
+  --area-MAT-bg: #EFEBE9;
+  --area-DIS: #1A3A7A;   /* Disegno 📐 blu tecnico */
+  --area-DIS-bg: #E8EFF9;
+  --area-DIG: #006064;   /* Digitale 💻 ciano scuro */
+  --area-DIG-bg: #E0F7FA;
+  --area-ALI: #558B2F;   /* Alimentazione 🌾 verde grano */
+  --area-ALI-bg: #F1F8E9;
+  --area-AMB: #BF360C;   /* Ambiente 🏗️ rosso mattone */
+  --area-AMB-bg: #FBE9E7;
+  --area-ENE: #E65100;   /* Energia ⚡ arancione elettrico */
+  --area-ENE-bg: #FFF3E0;
+  --area-COM: #6A1B9A;   /* Comunicazioni 📡 viola segnale */
+  --area-COM-bg: #F3E5F5;
+  --area-SIS: #1B5E7A;   /* Sistemi ⚙️ acciaio blu */
+  --area-SIS-bg: #E1F0F8;
+
+  /* DIGCOMP LEVELS */
+  --level-F: #1B7A50;    /* Foundation — verde */
+  --level-F-bg: #D4EDDA;
+  --level-I: #1A5296;    /* Intermediate — blu */
+  --level-I-bg: #D1E4F5;
+  --level-A: #7A5700;    /* Advanced — oro */
+  --level-A-bg: #FFF0B3;
+  --level-H: #8B0000;    /* Higher — rosso scuro */
+  --level-H-bg: #FDDEDE;
+
+  /* TYPOGRAPHY */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-dyslexic: 'OpenDyslexic', 'Comic Sans MS', cursive;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --text-xs:   0.75rem;   /* 12px */
+  --text-sm:   0.875rem;  /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg:   1.125rem;  /* 18px */
+  --text-xl:   1.25rem;   /* 20px */
+  --text-2xl:  1.5rem;    /* 24px */
+  --text-3xl:  1.875rem;  /* 30px */
+  --text-4xl:  2.25rem;   /* 36px */
+  --text-5xl:  3rem;      /* 48px */
+  --text-6xl:  3.75rem;   /* 60px */
+
+  --leading-tight:  1.25;
+  --leading-snug:   1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed:1.625;
+  --leading-loose:  2;
+
+  /* SPACING (4px base) */
+  --space-1:  0.25rem;   /* 4px */
+  --space-2:  0.5rem;    /* 8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+
+  /* BORDERS & RADIUS */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg:  12px;
+  --radius-xl:  16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* SHADOWS */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 6px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.06);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,.07), 0 4px 6px rgba(0,0,0,.05);
+  --shadow-xl: 0 20px 25px rgba(0,0,0,.08), 0 10px 10px rgba(0,0,0,.04);
+
+  /* TRANSITIONS */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-sans);
+  background: var(--neutral-50);
+  color: var(--neutral-900);
+  line-height: var(--leading-relaxed);
+}
+a { color: var(--brand-600); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font-family: var(--font-mono); font-size: 0.875em; background: var(--neutral-100); padding: 0.1em 0.4em; border-radius: 3px; }
+.section { padding: var(--space-16) var(--space-8); max-width: 1200px; margin: 0 auto; }
+.section + .section { border-top: 1px solid var(--neutral-200); }
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--brand-900);
+  padding: var(--space-3) var(--space-8);
+  display: flex; align-items: center; gap: var(--space-6);
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+}
+.nav-logo {
+  font-size: var(--text-lg); font-weight: 800; color: var(--white);
+  white-space: nowrap; letter-spacing: -0.02em;
+}
+.nav-logo span { color: var(--accent-500); }
+.nav-links { display: flex; gap: var(--space-4); flex-shrink: 0; }
+.nav-links a {
+  color: var(--brand-200); font-size: var(--text-sm); font-weight: 500;
+  white-space: nowrap; padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm); transition: color var(--transition-fast);
+}
+.nav-links a:hover { color: var(--white); text-decoration: none; }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  background: linear-gradient(135deg, var(--brand-900) 0%, var(--brand-700) 60%, var(--brand-600) 100%);
+  padding: var(--space-16) var(--space-8);
+  text-align: center; color: var(--white);
+}
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800;
+  letter-spacing: -0.04em; line-height: var(--leading-tight);
+  margin-bottom: var(--space-4);
+}
+.hero-title .ai { color: var(--accent-500); }
+.hero-subtitle {
+  font-size: var(--text-lg); color: var(--brand-200);
+  max-width: 600px; margin: 0 auto var(--space-6);
+}
+.hero-meta {
+  display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;
+}
+.hero-badge {
+  background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+  color: var(--brand-100); padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full); font-size: var(--text-sm);
+}
+
+/* ============================================================
+   SECTION HEADERS
+   ============================================================ */
+.section-header { margin-bottom: var(--space-8); }
+.section-label {
+  font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent-700);
+  margin-bottom: var(--space-2);
+}
+.section-title {
+  font-size: var(--text-3xl); font-weight: 800;
+  letter-spacing: -0.03em; color: var(--brand-900);
+}
+.section-desc {
+  margin-top: var(--space-3); color: var(--neutral-600);
+  font-size: var(--text-base); max-width: 640px;
+}
+
+/* ============================================================
+   COLOR PALETTE
+   ============================================================ */
+.palette-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--space-3);
+}
+.swatch {
+  border-radius: var(--radius-md); overflow: hidden;
+  box-shadow: var(--shadow-sm); cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+.swatch:hover { transform: translateY(-2px); }
+.swatch-color {
+  height: 64px; position: relative;
+  display: flex; align-items: flex-end; padding: var(--space-2);
+}
+.swatch-copy {
+  font-size: 9px; font-weight: 600; font-family: var(--font-mono);
+  padding: 2px 5px; border-radius: 3px; cursor: pointer;
+  opacity: 0; transition: opacity var(--transition-fast);
+  position: absolute; top: 6px; right: 6px;
+}
+.swatch:hover .swatch-copy { opacity: 1; }
+.swatch-meta {
+  background: var(--white); padding: var(--space-2) var(--space-3);
+}
+.swatch-name { font-size: var(--text-xs); font-weight: 600; color: var(--neutral-700); }
+.swatch-hex  { font-size: var(--text-xs); color: var(--neutral-500); font-family: var(--font-mono); }
+
+.color-row { margin-bottom: var(--space-6); }
+.color-row-title { font-size: var(--text-sm); font-weight: 700; color: var(--neutral-600); margin-bottom: var(--space-3); }
+.color-scale { display: flex; border-radius: var(--radius-md); overflow: hidden; }
+.color-scale-step {
+  flex: 1; height: 48px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 600; font-family: var(--font-mono);
+  cursor: pointer; transition: opacity var(--transition-fast);
+}
+.color-scale-step:hover { opacity: 0.85; }
+
+/* ============================================================
+   AREA CHIPS
+   ============================================================ */
+.area-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: var(--space-3); }
+.area-card {
+  border-radius: var(--radius-lg); padding: var(--space-4);
+  display: flex; align-items: center; gap: var(--space-3);
+  box-shadow: var(--shadow-sm); border: 1.5px solid transparent;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.area-card:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.area-emoji { font-size: 2rem; }
+.area-info {}
+.area-code { font-size: var(--text-xs); font-weight: 700; font-family: var(--font-mono); letter-spacing: 0.08em; }
+.area-name { font-size: var(--text-sm); font-weight: 500; margin-top: 2px; }
+.area-year { font-size: var(--text-xs); color: var(--neutral-500); margin-top: 1px; }
+
+/* AREA chip inline */
+.chip {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  padding: 2px 10px; border-radius: var(--radius-full);
+  font-size: var(--text-xs); font-weight: 700;
+  white-space: nowrap;
+}
+
+/* LEVEL badges */
+.level-badges { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-6); }
+.level-badge {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm); font-weight: 700;
+  border: 2px solid transparent;
+}
+.level-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+/* ============================================================
+   TYPOGRAPHY SHOWCASE
+   ============================================================ */
+.type-sample {
+  border: 1px solid var(--neutral-200); border-radius: var(--radius-lg);
+  padding: var(--space-6); margin-bottom: var(--space-4);
+  display: grid; grid-template-columns: 120px 1fr; gap: var(--space-4); align-items: start;
+}
+.type-meta { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--neutral-500); }
+.type-meta strong { display: block; color: var(--neutral-700); font-size: var(--text-sm); margin-bottom: 2px; }
+
+/* ============================================================
+   ZONE COMPONENTS
+   ============================================================ */
+.zone { border-radius: var(--radius-xl); margin-bottom: var(--space-4); overflow: hidden; }
+.zone-header {
+  padding: var(--space-3) var(--space-5);
+  display: flex; align-items: center; gap: var(--space-3);
+}
+.zone-num {
+  width: 28px; height: 28px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: var(--text-xs); font-weight: 800;
+  flex-shrink: 0;
+}
+.zone-label { font-size: var(--text-xs); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.zone-body { padding: var(--space-5) var(--space-6) var(--space-6); }
+.zone-title { font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-3); line-height: var(--leading-snug); }
+.zone-text { font-size: var(--text-base); line-height: var(--leading-relaxed); color: var(--neutral-800); }
+
+/* Zone 1 — HOOK */
+.zone-1 { border: 2px solid var(--zone1-border); }
+.zone-1 .zone-header { background: var(--zone1); color: var(--white); }
+.zone-1 .zone-num { background: rgba(255,255,255,.2); color: var(--white); }
+.zone-1 .zone-body { background: var(--zone1-bg); }
+.zone-1 .zone-title { color: var(--zone1); }
+
+.hook-audio {
+  display: flex; align-items: center; gap: var(--space-3);
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4); margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm); border: 1px solid var(--zone1-border);
+}
+.hook-play {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--zone1);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white); font-size: 1rem; flex-shrink: 0;
+  cursor: pointer; border: none;
+}
+.hook-audio-info { flex: 1; }
+.hook-audio-title { font-size: var(--text-sm); font-weight: 600; color: var(--neutral-800); }
+.hook-audio-dur { font-size: var(--text-xs); color: var(--neutral-500); }
+.hook-qr {
+  width: 52px; height: 52px; background: var(--neutral-200);
+  border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center;
+  font-size: var(--text-xs); color: var(--neutral-500); text-align: center;
+  font-weight: 600; flex-shrink: 0;
+}
+
+.hook-question {
+  font-size: var(--text-lg); font-weight: 600; color: var(--zone1);
+  font-style: italic; border-left: 3px solid var(--zone1);
+  padding-left: var(--space-4); line-height: var(--leading-snug);
+}
+
+/* Zone 2 — CONCETTO */
+.zone-2 { border: 2px solid var(--zone2-border); }
+.zone-2 .zone-header { background: var(--zone2); color: var(--white); }
+.zone-2 .zone-num { background: rgba(255,255,255,.2); color: var(--white); }
+.zone-2 .zone-body { background: var(--zone2-bg); }
+.zone-2 .zone-title { color: var(--zone2); }
+
+.concept-layout { display: grid; grid-template-columns: 1fr 240px; gap: var(--space-6); }
+.concept-text {}
+.concept-visual {
+  background: var(--white); border-radius: var(--radius-lg);
+  border: 1px solid var(--zone2-border); padding: var(--space-4);
+  display: flex; flex-direction: column; align-items: center; gap: var(--space-2);
+}
+.visual-placeholder {
+  width: 100%; aspect-ratio: 4/3; background: var(--brand-100);
+  border-radius: var(--radius-md); display: flex; align-items: center;
+  justify-content: center; font-size: var(--text-xs); color: var(--brand-400);
+  font-weight: 600; text-align: center; padding: var(--space-4);
+}
+.visual-caption { font-size: var(--text-xs); color: var(--neutral-500); text-align: center; }
+
+.definition-box {
+  background: var(--white); border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4); border-left: 4px solid var(--zone2);
+  margin: var(--space-4) 0;
+}
+.definition-term { font-size: var(--text-sm); font-weight: 700; color: var(--zone2); margin-bottom: var(--space-1); }
+.definition-text { font-size: var(--text-sm); color: var(--neutral-700); }
+
+/* Zone 3 — ESEMPIO */
+.zone-3 { border: 2px solid var(--zone3-border); }
+.zone-3 .zone-header { background: var(--zone3); color: var(--white); }
+.zone-3 .zone-num { background: rgba(255,255,255,.2); color: var(--white); }
+.zone-3 .zone-body { background: var(--zone3-bg); }
+.zone-3 .zone-title { color: var(--zone3); }
+
+.example-layout { display: grid; grid-template-columns: 1fr 200px; gap: var(--space-6); }
+.profession-card {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: var(--space-4); border: 1px solid var(--zone3-border);
+}
+.profession-icon { font-size: 2rem; margin-bottom: var(--space-2); }
+.profession-label { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--zone3); margin-bottom: var(--space-1); }
+.profession-title { font-size: var(--text-sm); font-weight: 700; color: var(--neutral-800); line-height: var(--leading-snug); }
+.profession-year { font-size: var(--text-xs); color: var(--neutral-500); margin-top: var(--space-1); }
+.clil-pill {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  background: var(--zone3); color: var(--white);
+  padding: 2px 8px; border-radius: var(--radius-full);
+  font-size: var(--text-xs); font-weight: 600; margin-top: var(--space-2);
+}
+
+/* Zone 4 — LABORATORIO */
+.zone-4 { border: 2px solid var(--zone4-border); }
+.zone-4 .zone-header { background: var(--zone4); color: var(--white); }
+.zone-4 .zone-num { background: rgba(255,255,255,.2); color: var(--white); }
+.zone-4 .zone-body { background: var(--zone4-bg); }
+.zone-4 .zone-title { color: var(--zone4); }
+
+.lab-levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin-top: var(--space-4); }
+.lab-level {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: var(--space-4); border: 2px solid var(--zone4-border);
+  position: relative;
+}
+.lab-level.active { border-color: var(--zone4); }
+.lab-level-dots { display: flex; gap: 4px; margin-bottom: var(--space-2); }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--zone4); }
+.dot.empty { background: var(--neutral-300); }
+.lab-level-name { font-size: var(--text-xs); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--zone4); margin-bottom: var(--space-2); }
+.lab-level-task { font-size: var(--text-sm); color: var(--neutral-700); line-height: var(--leading-snug); }
+.lab-level-digcomp {
+  position: absolute; top: var(--space-3); right: var(--space-3);
+}
+
+/* Zone 5 — COMPITO DI REALTÀ */
+.zone-5 { border: 2px solid var(--zone5-border); }
+.zone-5 .zone-header { background: var(--zone5); color: var(--neutral-900); }
+.zone-5 .zone-num { background: rgba(255,255,255,.3); color: var(--neutral-900); }
+.zone-5 .zone-label { color: var(--neutral-900); }
+.zone-5 .zone-body { background: var(--zone5-bg); }
+.zone-5 .zone-title { color: var(--zone5); }
+
+.task-layout { display: grid; grid-template-columns: 1fr 160px; gap: var(--space-6); }
+.task-steps {}
+.task-step { display: flex; gap: var(--space-3); margin-bottom: var(--space-3); }
+.task-step-num {
+  width: 24px; height: 24px; border-radius: 50%; background: var(--zone5);
+  color: var(--neutral-900); font-size: var(--text-xs); font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+}
+.task-step-text { font-size: var(--text-sm); color: var(--neutral-800); line-height: var(--leading-snug); }
+.task-sidebar { display: flex; flex-direction: column; gap: var(--space-3); }
+
+.sdg-badge {
+  background: var(--white); border-radius: var(--radius-lg);
+  padding: var(--space-3); border: 1px solid var(--zone5-border);
+  text-align: center;
+}
+.sdg-num {
+  width: 48px; height: 48px; border-radius: var(--radius-md);
+  margin: 0 auto var(--space-1); display: flex; align-items: center; justify-content: center;
+  font-size: var(--text-lg); font-weight: 800; color: var(--white);
+}
+.sdg-name { font-size: 10px; font-weight: 600; color: var(--neutral-600); text-align: center; line-height: 1.3; }
+
+.ai-coach-qr {
+  background: var(--brand-800); border-radius: var(--radius-lg);
+  padding: var(--space-3); text-align: center; color: var(--white);
+}
+.ai-coach-icon { font-size: 1.5rem; margin-bottom: var(--space-1); }
+.ai-coach-text { font-size: 10px; font-weight: 600; line-height: 1.4; color: var(--brand-200); }
+
+.meta-question {
+  background: var(--white); border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4); border-left: 3px solid var(--zone5);
+  font-size: var(--text-sm); color: var(--neutral-700); font-style: italic;
+  margin-top: var(--space-3);
+}
+.meta-question strong { display: block; font-style: normal; font-weight: 700; color: var(--zone5); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: var(--space-1); }
+
+/* ============================================================
+   CALLOUT / INFO BOXES
+   ============================================================ */
+.callout {
+  border-radius: var(--radius-md); padding: var(--space-4);
+  display: flex; gap: var(--space-3); margin: var(--space-4) 0;
+  font-size: var(--text-sm);
+}
+.callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+.callout-content {}
+.callout-title { font-weight: 700; margin-bottom: var(--space-1); }
+.callout-text { line-height: var(--leading-relaxed); }
+.callout-tip { background: var(--info-100); border: 1px solid var(--info-500); color: var(--info-700); }
+.callout-warning { background: var(--warning-100); border: 1px solid var(--warning-500); color: var(--warning-700); }
+.callout-safety { background: var(--error-100); border: 2px solid var(--error-500); color: var(--error-700); }
+.callout-clil { background: var(--zone3-bg); border: 1px solid var(--zone3-border); color: var(--zone3); }
+.callout-sdg { background: var(--zone5-bg); border: 1px solid var(--zone5-border); color: var(--zone5); }
+.callout-dsa {
+  background: var(--neutral-50); border: 2px dashed var(--neutral-300);
+  color: var(--neutral-700);
+}
+
+/* ============================================================
+   MC DOUBLE-PAGE SPREAD PREVIEW
+   ============================================================ */
+.spread-preview {
+  background: var(--white); border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl); overflow: hidden;
+  border: 1px solid var(--neutral-200);
+}
+.spread-header {
+  background: linear-gradient(135deg, var(--brand-900), var(--brand-700));
+  padding: var(--space-4) var(--space-6);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: var(--space-3);
+}
+.mc-id-chip {
+  font-family: var(--font-mono); font-size: var(--text-sm); font-weight: 700;
+  background: rgba(255,255,255,.15); color: var(--white);
+  padding: var(--space-1) var(--space-3); border-radius: var(--radius-full);
+  border: 1px solid rgba(255,255,255,.25);
+}
+.mc-title-spread {
+  font-size: var(--text-2xl); font-weight: 800; color: var(--white);
+  letter-spacing: -0.02em; flex: 1; text-align: center;
+}
+.mc-meta-chips { display: flex; gap: var(--space-2); align-items: center; }
+.spread-body { padding: var(--space-6); display: flex; flex-direction: column; gap: var(--space-3); }
+
+/* ============================================================
+   ACCESSIBILITY PANEL
+   ============================================================ */
+.a11y-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-4); }
+.a11y-card { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-5); box-shadow: var(--shadow-sm); }
+.a11y-title { font-size: var(--text-base); font-weight: 700; color: var(--neutral-800); margin-bottom: var(--space-3); }
+.contrast-sample {
+  border-radius: var(--radius-md); padding: var(--space-3) var(--space-4);
+  font-size: var(--text-base); font-weight: 600; margin-bottom: var(--space-2);
+}
+.contrast-meta { display: flex; justify-content: space-between; font-size: var(--text-xs); color: var(--neutral-500); }
+.pass { color: var(--success-700); font-weight: 700; }
+.fail { color: var(--error-700); font-weight: 700; }
+
+/* ============================================================
+   FONT STACK DEMO
+   ============================================================ */
+.font-demo { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: var(--space-6); }
+.font-card { background: var(--white); border-radius: var(--radius-lg); padding: var(--space-6); box-shadow: var(--shadow-sm); }
+.font-name { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--neutral-500); margin-bottom: var(--space-3); }
+.font-preview { font-size: var(--text-2xl); font-weight: 700; line-height: var(--leading-snug); color: var(--neutral-900); margin-bottom: var(--space-2); }
+.font-preview.dyslexic { font-family: var(--font-dyslexic); }
+.font-preview.mono { font-family: var(--font-mono); font-size: var(--text-lg); }
+.font-meta { font-size: var(--text-xs); color: var(--neutral-500); }
+
+/* ============================================================
+   SPACING SCALE
+   ============================================================ */
+.spacing-rows { display: flex; flex-direction: column; gap: var(--space-3); }
+.spacing-row { display: flex; align-items: center; gap: var(--space-4); }
+.spacing-bar { background: var(--accent-500); border-radius: 2px; height: 20px; min-width: 4px; }
+.spacing-label { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--neutral-600); width: 80px; flex-shrink: 0; }
+.spacing-value { font-size: var(--text-xs); color: var(--neutral-400); }
+
+/* ============================================================
+   TOKEN EXPORT
+   ============================================================ */
+.token-export {
+  background: var(--neutral-950); border-radius: var(--radius-xl);
+  padding: var(--space-6); margin-top: var(--space-6); overflow: auto;
+}
+.token-export pre { font-family: var(--font-mono); font-size: var(--text-xs); color: #A8B2D8; line-height: 1.8; }
+.token-export .key { color: #79B8FF; }
+.token-export .val { color: #B9F18D; }
+.token-export .comment { color: #6A7B99; }
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+.flex { display: flex; }
+.gap-2 { gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); }
+.wrap { flex-wrap: wrap; }
+.mt-4 { margin-top: var(--space-4); }
+.mt-6 { margin-top: var(--space-6); }
+.mb-4 { margin-bottom: var(--space-4); }
+.mb-6 { margin-bottom: var(--space-6); }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); }
+.tag {
+  display: inline-flex; align-items: center;
+  font-size: var(--text-xs); font-weight: 600;
+  padding: 2px 8px; border-radius: var(--radius-full);
+  background: var(--neutral-100); color: var(--neutral-700);
+}
+.copied-msg { display: none; font-size: var(--text-xs); color: var(--success-700); }
+.divider { height: 1px; background: var(--neutral-200); margin: var(--space-6) 0; }
+@media (max-width: 768px) {
+  .concept-layout, .example-layout, .task-layout { grid-template-columns: 1fr; }
+  .lab-levels { grid-template-columns: 1fr; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+  .mc-title-spread { font-size: var(--text-xl); }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-logo">Tecnolog<span>IA</span> Design System</div>
+  <div class="nav-links">
+    <a href="#colori">Colori</a>
+    <a href="#aree">Aree</a>
+    <a href="#livelli">Livelli</a>
+    <a href="#tipografia">Tipografia</a>
+    <a href="#spaziatura">Spaziatura</a>
+    <a href="#zone">Zone MC</a>
+    <a href="#callout">Callout</a>
+    <a href="#spread">Anteprima MC</a>
+    <a href="#accessibilita">Accessibilità</a>
+    <a href="#token">Token</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-title">Tecnolog<span class="ai">IA</span><br>Design System</div>
+  <div class="hero-subtitle">Sistema grafico completo per il libro di Tecnologia: palette, tipografia, componenti, accessibilità WCAG AA.</div>
+  <div class="hero-meta">
+    <span class="hero-badge">v1.0 — Maggio 2026</span>
+    <span class="hero-badge">WCAG 2.1 AA</span>
+    <span class="hero-badge">DSA First</span>
+    <span class="hero-badge">5 Zone · 8 Aree · 3 Livelli</span>
+    <span class="hero-badge">Figma Token Ready</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     SEZIONE 1 — COLORI
+     ============================================================ -->
+<section class="section" id="colori">
+  <div class="section-header">
+    <div class="section-label">Foundation</div>
+    <div class="section-title">Sistema Colori</div>
+    <div class="section-desc">Tre scale fondamentali (Brand/Navy, Accent/Teal, Energy/Orange) più neutrali e colori semantici. Tutti i valori sono CSS custom properties.</div>
+  </div>
+
+  <!-- Scale Brand -->
+  <div class="color-row">
+    <div class="color-row-title">Brand — Navy Scale</div>
+    <div class="color-scale">
+      <div class="color-scale-step" style="background:#0A1020;color:#666">950</div>
+      <div class="color-scale-step" style="background:#0F1828;color:#777">900</div>
+      <div class="color-scale-step" style="background:#1A2B4A;color:#aaa">800</div>
+      <div class="color-scale-step" style="background:#253D6B;color:#bbb">700</div>
+      <div class="color-scale-step" style="background:#2F508C;color:#ccc">600</div>
+      <div class="color-scale-step" style="background:#3A64AE;color:#ddd">500</div>
+      <div class="color-scale-step" style="background:#587FCE;color:#eee">400</div>
+      <div class="color-scale-step" style="background:#829FDE;color:#333">300</div>
+      <div class="color-scale-step" style="background:#B0C3EE;color:#333">200</div>
+      <div class="color-scale-step" style="background:#D8E3F7;color:#444">100</div>
+      <div class="color-scale-step" style="background:#EEF3FC;color:#444">50</div>
+    </div>
+  </div>
+  <div class="color-row">
+    <div class="color-row-title">Accent — Electric Teal</div>
+    <div class="color-scale">
+      <div class="color-scale-step" style="background:#004D40;color:#7fCBA0">900</div>
+      <div class="color-scale-step" style="background:#007A63;color:#aefDe8">700</div>
+      <div class="color-scale-step" style="background:#00C4A7;color:#fff;flex:2">500 — #00C4A7</div>
+      <div class="color-scale-step" style="background:#5DE8D4;color:#005448">300</div>
+      <div class="color-scale-step" style="background:#CCFAF4;color:#007A63">100</div>
+    </div>
+  </div>
+  <div class="color-row">
+    <div class="color-row-title">Energy — Dynamic Orange</div>
+    <div class="color-scale">
+      <div class="color-scale-step" style="background:#7A2800;color:#ffb090">900</div>
+      <div class="color-scale-step" style="background:#C24010;color:#ffcfb0">700</div>
+      <div class="color-scale-step" style="background:#FF6834;color:#fff;flex:2">500 — #FF6834</div>
+      <div class="color-scale-step" style="background:#FFA07A;color:#7A2800">300</div>
+      <div class="color-scale-step" style="background:#FFE5DC;color:#C24010">100</div>
+    </div>
+  </div>
+  <div class="color-row">
+    <div class="color-row-title">Neutrals</div>
+    <div class="color-scale">
+      <div class="color-scale-step" style="background:#0D0F14;color:#666">950</div>
+      <div class="color-scale-step" style="background:#1A1C24;color:#888">900</div>
+      <div class="color-scale-step" style="background:#2C2F3A;color:#aaa">800</div>
+      <div class="color-scale-step" style="background:#3F4354;color:#bbb">700</div>
+      <div class="color-scale-step" style="background:#5A5F76;color:#ccc">600</div>
+      <div class="color-scale-step" style="background:#767C96;color:#eee">500</div>
+      <div class="color-scale-step" style="background:#969CB2;color:#333">400</div>
+      <div class="color-scale-step" style="background:#B8BCCE;color:#333">300</div>
+      <div class="color-scale-step" style="background:#D8DAE8;color:#444">200</div>
+      <div class="color-scale-step" style="background:#ECEEF6;color:#444">100</div>
+      <div class="color-scale-step" style="background:#F6F7FA;color:#444">50</div>
+    </div>
+  </div>
+
+  <!-- Semantic -->
+  <div class="color-row mt-6">
+    <div class="color-row-title">Colori Semantici</div>
+    <div class="palette-grid">
+      <div class="swatch" onclick="copyColor('#22C55E')">
+        <div class="swatch-color" style="background:#22C55E"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div>
+        <div class="swatch-meta"><div class="swatch-name">Success</div><div class="swatch-hex">#22C55E</div></div>
+      </div>
+      <div class="swatch" onclick="copyColor('#F59E0B')">
+        <div class="swatch-color" style="background:#F59E0B"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div>
+        <div class="swatch-meta"><div class="swatch-name">Warning</div><div class="swatch-hex">#F59E0B</div></div>
+      </div>
+      <div class="swatch" onclick="copyColor('#EF4444')">
+        <div class="swatch-color" style="background:#EF4444"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div>
+        <div class="swatch-meta"><div class="swatch-name">Error</div><div class="swatch-hex">#EF4444</div></div>
+      </div>
+      <div class="swatch" onclick="copyColor('#3B82F6')">
+        <div class="swatch-color" style="background:#3B82F6"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div>
+        <div class="swatch-meta"><div class="swatch-name">Info</div><div class="swatch-hex">#3B82F6</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Zone colors -->
+  <div class="color-row mt-6">
+    <div class="color-row-title">Colori sezione (5 sezioni per ogni MC)</div>
+    <div class="palette-grid">
+      <div class="swatch"><div class="swatch-color" style="background:#5E35B1"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div><div class="swatch-meta"><div class="swatch-name">INNESCA</div><div class="swatch-hex">#5E35B1</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#1565C0"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div><div class="swatch-meta"><div class="swatch-name">ESPLORA</div><div class="swatch-hex">#1565C0</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#E65100"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div><div class="swatch-meta"><div class="swatch-name">OSSERVA</div><div class="swatch-hex">#E65100</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#00695C"><div class="swatch-copy" style="background:rgba(0,0,0,.4);color:#fff">COPIA</div></div><div class="swatch-meta"><div class="swatch-name">SPERIMENTA</div><div class="swatch-hex">#00695C</div></div></div>
+      <div class="swatch"><div class="swatch-color" style="background:#F57F17"><div class="swatch-copy" style="background:rgba(0,0,0,.3);color:#000">COPIA</div></div><div class="swatch-meta"><div class="swatch-name">AGISCI</div><div class="swatch-hex">#F57F17</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 2 — AREE TEMATICHE
+     ============================================================ -->
+<section class="section" id="aree">
+  <div class="section-header">
+    <div class="section-label">Identità visiva</div>
+    <div class="section-title">Colori per Area Tematica</div>
+    <div class="section-desc">Ogni area ha un colore identitario che attraversa tutta la MC: header, chip, bordo laterale, badge. Il colore persiste tra le zone senza mai diventare sfondo dominante.</div>
+  </div>
+
+  <div class="area-grid">
+    <div class="area-card" style="background:var(--area-MAT-bg);border-color:var(--area-MAT)">
+      <div class="area-emoji">🪨</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-MAT)">MAT</div>
+        <div class="area-name" style="color:var(--area-MAT)">Materiali e Rifiuti</div>
+        <div class="area-year">1ª classe · #6D4C41</div>
+      </div>
+    </div>
+    <div class="area-card" style="background:var(--area-DIS-bg);border-color:var(--area-DIS)">
+      <div class="area-emoji">📐</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-DIS)">DIS</div>
+        <div class="area-name" style="color:var(--area-DIS)">Disegno Tecnico</div>
+        <div class="area-year">1ª · 2ª · 3ª classe · #1A3A7A</div>
+      </div>
+    </div>
+    <div class="area-card" style="background:var(--area-DIG-bg);border-color:var(--area-DIG)">
+      <div class="area-emoji">💻</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-DIG)">DIG</div>
+        <div class="area-name" style="color:var(--area-DIG)">Digitale / Coding / AI</div>
+        <div class="area-year">1ª · 2ª · 3ª classe · #006064</div>
+      </div>
+    </div>
+    <div class="area-card" style="background:var(--area-ALI-bg);border-color:var(--area-ALI)">
+      <div class="area-emoji">🌾</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-ALI)">ALI</div>
+        <div class="area-name" style="color:var(--area-ALI)">Alimentazione</div>
+        <div class="area-year">2ª classe · #558B2F</div>
+      </div>
+    </div>
+    <div class="area-card" style="background:var(--area-AMB-bg);border-color:var(--area-AMB)">
+      <div class="area-emoji">🏗️</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-AMB)">AMB</div>
+        <div class="area-name" style="color:var(--area-AMB)">Abitazione · Città · Territorio</div>
+        <div class="area-year">2ª classe · #BF360C</div>
+      </div>
+    </div>
+    <div class="area-card" style="background:var(--area-ENE-bg);border-color:var(--area-ENE)">
+      <div class="area-emoji">⚡</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-ENE)">ENE</div>
+        <div class="area-name" style="color:var(--area-ENE)">Energia e Macchine</div>
+        <div class="area-year">3ª classe · #E65100</div>
+      </div>
+    </div>
+    <div class="area-card" style="background:var(--area-COM-bg);border-color:var(--area-COM)">
+      <div class="area-emoji">📡</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-COM)">COM</div>
+        <div class="area-name" style="color:var(--area-COM)">Comunicazioni e Trasporti</div>
+        <div class="area-year">3ª classe · #6A1B9A</div>
+      </div>
+    </div>
+    <div class="area-card" style="background:var(--area-SIS-bg);border-color:var(--area-SIS)">
+      <div class="area-emoji">⚙️</div>
+      <div class="area-info">
+        <div class="area-code" style="color:var(--area-SIS)">SIS</div>
+        <div class="area-name" style="color:var(--area-SIS)">Sistemi · Economia · Lavoro</div>
+        <div class="area-year">3ª classe · #1B5E7A</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6">
+    <div class="color-row-title">Chip inline — uso nel testo e nelle intestazioni</div>
+    <div class="flex gap-2 wrap mt-4">
+      <span class="chip" style="background:var(--area-MAT-bg);color:var(--area-MAT)">🪨 MAT</span>
+      <span class="chip" style="background:var(--area-DIS-bg);color:var(--area-DIS)">📐 DIS</span>
+      <span class="chip" style="background:var(--area-DIG-bg);color:var(--area-DIG)">💻 DIG</span>
+      <span class="chip" style="background:var(--area-ALI-bg);color:var(--area-ALI)">🌾 ALI</span>
+      <span class="chip" style="background:var(--area-AMB-bg);color:var(--area-AMB)">🏗️ AMB</span>
+      <span class="chip" style="background:var(--area-ENE-bg);color:var(--area-ENE)">⚡ ENE</span>
+      <span class="chip" style="background:var(--area-COM-bg);color:var(--area-COM)">📡 COM</span>
+      <span class="chip" style="background:var(--area-SIS-bg);color:var(--area-SIS)">⚙️ SIS</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 3 — LIVELLI DIGCOMP
+     ============================================================ -->
+<section class="section" id="livelli">
+  <div class="section-header">
+    <div class="section-label">DigComp 3.0</div>
+    <div class="section-title">Badge Livello</div>
+    <div class="section-desc">Il livello DigComp compare nell'header della MC, nei badge di SPERIMENTA e nei chip di AGISCI. La progressione F→I→A non può mai essere invertita nel triennio.</div>
+  </div>
+
+  <div class="level-badges">
+    <div class="level-badge" style="background:var(--level-F-bg);color:var(--level-F);border-color:var(--level-F)">
+      <div class="level-dot" style="background:var(--level-F)"></div>
+      Foundation <span style="font-family:var(--font-mono);font-size:var(--text-xs);opacity:.6;margin-left:4px">F</span>
+    </div>
+    <div class="level-badge" style="background:var(--level-I-bg);color:var(--level-I);border-color:var(--level-I)">
+      <div class="level-dot" style="background:var(--level-I)"></div>
+      Intermediate <span style="font-family:var(--font-mono);font-size:var(--text-xs);opacity:.6;margin-left:4px">I</span>
+    </div>
+    <div class="level-badge" style="background:var(--level-A-bg);color:var(--level-A);border-color:var(--level-A)">
+      <div class="level-dot" style="background:var(--level-A)"></div>
+      Advanced <span style="font-family:var(--font-mono);font-size:var(--text-xs);opacity:.6;margin-left:4px">A</span>
+    </div>
+    <div class="level-badge" style="background:var(--level-H-bg);color:var(--level-H);border-color:var(--level-H)">
+      <div class="level-dot" style="background:var(--level-H)"></div>
+      Higher <span style="font-family:var(--font-mono);font-size:var(--text-xs);opacity:.6;margin-left:4px">H</span>
+    </div>
+  </div>
+
+  <div style="background:var(--white);border-radius:var(--radius-xl);padding:var(--space-6);box-shadow:var(--shadow-sm)">
+    <div class="color-row-title" style="margin-bottom:var(--space-4)">Progressione verticale DigComp per area</div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:var(--text-sm)">
+        <thead>
+          <tr style="background:var(--brand-900);color:var(--white)">
+            <th style="padding:var(--space-3) var(--space-4);text-align:left;border-radius:var(--radius-md) 0 0 0">Area</th>
+            <th style="padding:var(--space-3) var(--space-4);text-align:center">1ª classe</th>
+            <th style="padding:var(--space-3) var(--space-4);text-align:center">2ª classe</th>
+            <th style="padding:var(--space-3) var(--space-4);text-align:center;border-radius:0 var(--radius-md) 0 0">3ª classe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--neutral-200)">
+            <td style="padding:var(--space-3) var(--space-4);font-weight:600"><span class="chip" style="background:var(--area-DIG-bg);color:var(--area-DIG)">💻 DIG</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-F-bg);color:var(--level-F);border-color:var(--level-F);font-size:var(--text-xs);padding:2px 10px">F</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-I-bg);color:var(--level-I);border-color:var(--level-I);font-size:var(--text-xs);padding:2px 10px">I</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-A-bg);color:var(--level-A);border-color:var(--level-A);font-size:var(--text-xs);padding:2px 10px">A</span></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--neutral-200);background:var(--neutral-50)">
+            <td style="padding:var(--space-3) var(--space-4);font-weight:600"><span class="chip" style="background:var(--area-DIS-bg);color:var(--area-DIS)">📐 DIS</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-F-bg);color:var(--level-F);border-color:var(--level-F);font-size:var(--text-xs);padding:2px 10px">F</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-I-bg);color:var(--level-I);border-color:var(--level-I);font-size:var(--text-xs);padding:2px 10px">I</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-A-bg);color:var(--level-A);border-color:var(--level-A);font-size:var(--text-xs);padding:2px 10px">A</span></td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--neutral-200)">
+            <td style="padding:var(--space-3) var(--space-4);font-weight:600"><span class="chip" style="background:var(--area-MAT-bg);color:var(--area-MAT)">🪨 MAT</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-F-bg);color:var(--level-F);border-color:var(--level-F);font-size:var(--text-xs);padding:2px 10px">F</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center;color:var(--neutral-300)">—</td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center;color:var(--neutral-300)">—</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--neutral-200);background:var(--neutral-50)">
+            <td style="padding:var(--space-3) var(--space-4);font-weight:600"><span class="chip" style="background:var(--area-ENE-bg);color:var(--area-ENE)">⚡ ENE</span></td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center;color:var(--neutral-300)">—</td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center;color:var(--neutral-300)">—</td>
+            <td style="padding:var(--space-3) var(--space-4);text-align:center"><span class="level-badge" style="background:var(--level-I-bg);color:var(--level-I);border-color:var(--level-I);font-size:var(--text-xs);padding:2px 10px">I → A</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 4 — TIPOGRAFIA
+     ============================================================ -->
+<section class="section" id="tipografia">
+  <div class="section-header">
+    <div class="section-label">Type System</div>
+    <div class="section-title">Tipografia</div>
+    <div class="section-desc">Inter per UI e contenuti, OpenDyslexic per la modalità accessibile digitale (DSA First), JetBrains Mono per codice e ID. Scala basata su 1rem = 16px.</div>
+  </div>
+
+  <div class="font-demo mb-6">
+    <div class="font-card">
+      <div class="font-name">Inter — Corpo principale</div>
+      <div class="font-preview">Aa Bb Cc Dd<br>0123456789</div>
+      <div class="font-meta">Inter · Google Fonts · Pesi: 400, 500, 600, 700, 800<br>Uso: corpo testo, UI, titoli, zone MC</div>
+    </div>
+    <div class="font-card">
+      <div class="font-name">OpenDyslexic — Modalità DSA</div>
+      <div class="font-preview dyslexic">Aa Bb Cc Dd<br>0123456789</div>
+      <div class="font-meta" style="font-family:var(--font-dyslexic)">OpenDyslexic · Fallback Comic Sans · Peso: Regular<br>Uso: attivabile dall'utente nell'app digitale</div>
+    </div>
+    <div class="font-card">
+      <div class="font-name">JetBrains Mono — Codice / ID</div>
+      <div class="font-preview mono">MC-DIG-2-01<br>const x = 42;</div>
+      <div class="font-meta">JetBrains Mono · Google Fonts · Pesi: 400, 600<br>Uso: ID MC, codice Scratch, output terminale</div>
+    </div>
+  </div>
+
+  <!-- Type scale -->
+  <div class="color-row-title">Scala tipografica</div>
+  <div style="margin-top:var(--space-4)">
+    <div class="type-sample">
+      <div class="type-meta"><strong>text-6xl</strong>3.75rem / 60px<br>weight: 800<br>leading: 1.1</div>
+      <div style="font-size:3.75rem;font-weight:800;letter-spacing:-0.04em;line-height:1.1;color:var(--brand-900)">Tecnologia</div>
+    </div>
+    <div class="type-sample">
+      <div class="type-meta"><strong>text-4xl</strong>2.25rem / 36px<br>weight: 800<br>leading: 1.2</div>
+      <div style="font-size:2.25rem;font-weight:800;letter-spacing:-0.03em;line-height:1.2;color:var(--brand-900)">Titolo MC — INNESCA</div>
+    </div>
+    <div class="type-sample">
+      <div class="type-meta"><strong>text-2xl</strong>1.5rem / 24px<br>weight: 700<br>leading: 1.3</div>
+      <div style="font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;line-height:1.3;color:var(--neutral-800)">Come funziona un algoritmo?</div>
+    </div>
+    <div class="type-sample">
+      <div class="type-meta"><strong>text-xl</strong>1.25rem / 20px<br>weight: 600<br>leading: 1.4</div>
+      <div style="font-size:1.25rem;font-weight:600;line-height:1.4;color:var(--neutral-800)">Titolo sezione</div>
+    </div>
+    <div class="type-sample">
+      <div class="type-meta"><strong>text-base</strong>1rem / 16px<br>weight: 400<br>leading: 1.625</div>
+      <div style="font-size:1rem;line-height:1.625;color:var(--neutral-800);max-width:560px">Questo è il corpo del testo principale. Leggi l'etichetta sul barattolo dello yogurt: trovi l'elenco degli ingredienti, la data di scadenza, i valori nutrizionali. Ogni dato ti dice qualcosa su come è stato prodotto quel cibo — e su come trattarlo.</div>
+    </div>
+    <div class="type-sample">
+      <div class="type-meta"><strong>text-sm</strong>0.875rem / 14px<br>weight: 400–600<br>leading: 1.5</div>
+      <div style="font-size:0.875rem;line-height:1.5;color:var(--neutral-600)">Testo secondario, didascalie, label, note metodologiche per docenti.</div>
+    </div>
+    <div class="type-sample">
+      <div class="type-meta"><strong>text-xs</strong>0.75rem / 12px<br>weight: 600–700<br>leading: 1.4</div>
+      <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--neutral-500)">Label · Chip · Badge · Metadata</div>
+    </div>
+  </div>
+
+  <!-- Profilo linguistico livello -->
+  <div class="mt-6">
+    <div class="color-row-title">Profilo linguistico per livello DigComp (IN2025)</div>
+    <div class="grid-3 mt-4">
+      <div style="background:var(--level-F-bg);border-radius:var(--radius-lg);padding:var(--space-5);border:1px solid var(--level-F)">
+        <div class="level-badge" style="background:var(--white);color:var(--level-F);border-color:var(--level-F);font-size:var(--text-xs);padding:2px 10px;margin-bottom:var(--space-3);display:inline-flex">Foundation F</div>
+        <div style="font-size:var(--text-sm);color:var(--level-F)"><strong>Max 16 parole/frase</strong><br>Una info per frase.<br>Termine + "cioè" + esempio quotidiano.<br>Domande chiuse o a scelta.</div>
+      </div>
+      <div style="background:var(--level-I-bg);border-radius:var(--radius-lg);padding:var(--space-5);border:1px solid var(--level-I)">
+        <div class="level-badge" style="background:var(--white);color:var(--level-I);border-color:var(--level-I);font-size:var(--text-xs);padding:2px 10px;margin-bottom:var(--space-3);display:inline-flex">Intermediate I</div>
+        <div style="font-size:var(--text-sm);color:var(--level-I)"><strong>Max 22 parole/frase</strong><br>Paragrafo + bullet.<br>Termine + esempio + controesempio.<br>Domande aperte con vincoli.</div>
+      </div>
+      <div style="background:var(--level-A-bg);border-radius:var(--radius-lg);padding:var(--space-5);border:1px solid var(--level-A)">
+        <div class="level-badge" style="background:var(--white);color:var(--level-A);border-color:var(--level-A);font-size:var(--text-xs);padding:2px 10px;margin-bottom:var(--space-3);display:inline-flex">Advanced A</div>
+        <div style="font-size:var(--text-sm);color:var(--level-A)"><strong>Max 30 parole/frase</strong><br>Paragrafo continuo + dati.<br>Termini tecnici senza spiegazione se introdotti.<br>Domande aperte, scenario complesso.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 5 — SPAZIATURA
+     ============================================================ -->
+<section class="section" id="spaziatura">
+  <div class="section-header">
+    <div class="section-label">Layout</div>
+    <div class="section-title">Scala di Spaziatura</div>
+    <div class="section-desc">Base 4px. Moltiplica per 1, 2, 3, 4, 6, 8, 10, 12, 16, 20, 24. Uso rigoroso: 4px micro-separatori, 8px elementi correlati, 16px sezioni interne, 24px tra zone, 48px tra MC.</div>
+  </div>
+  <div class="spacing-rows">
+    <div class="spacing-row"><div class="spacing-label">space-1 · 4px</div><div class="spacing-bar" style="width:4px"></div><div class="spacing-value">Micro — icona/label gap</div></div>
+    <div class="spacing-row"><div class="spacing-label">space-2 · 8px</div><div class="spacing-bar" style="width:8px"></div><div class="spacing-value">XS — elementi correlati</div></div>
+    <div class="spacing-row"><div class="spacing-label">space-3 · 12px</div><div class="spacing-bar" style="width:12px"></div><div class="spacing-value">S — gutter compatto</div></div>
+    <div class="spacing-row"><div class="spacing-label">space-4 · 16px</div><div class="spacing-bar" style="width:16px"></div><div class="spacing-value">M — padding card, gap standard</div></div>
+    <div class="spacing-row"><div class="spacing-label">space-6 · 24px</div><div class="spacing-bar" style="width:24px"></div><div class="spacing-value">L — gutter colonne, padding sezione</div></div>
+    <div class="spacing-row"><div class="spacing-label">space-8 · 32px</div><div class="spacing-bar" style="width:32px"></div><div class="spacing-value">XL — separazione sezioni</div></div>
+    <div class="spacing-row"><div class="spacing-label">space-12 · 48px</div><div class="spacing-bar" style="width:48px"></div><div class="spacing-value">2XL — gap tra MC, blocchi principali</div></div>
+    <div class="spacing-row"><div class="spacing-label">space-16 · 64px</div><div class="spacing-bar" style="width:64px"></div><div class="spacing-value">3XL — padding sezioni pagina</div></div>
+  </div>
+
+  <div class="mt-6">
+    <div class="color-row-title">Griglia doppia pagina (MC standard)</div>
+    <div style="background:var(--white);border:1px solid var(--neutral-200);border-radius:var(--radius-xl);padding:var(--space-6);margin-top:var(--space-4)">
+      <div style="font-size:var(--text-sm);color:var(--neutral-600);margin-bottom:var(--space-4)">Formato doppia pagina A4 landscape → 420mm × 297mm · 12 colonne · gutter 6mm · margini 12mm · colonne ~25mm</div>
+      <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:6px;height:80px">
+        <div style="background:var(--brand-100);border-radius:2px;grid-column:span 5;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--brand-500);font-weight:600">INNESCA–OSSERVA (pag. sinistra)</div>
+        <div style="background:var(--accent-100);border-radius:2px;grid-column:span 4;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--accent-700);font-weight:600">SPERIMENTA</div>
+        <div style="background:var(--energy-100);border-radius:2px;grid-column:span 3;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--energy-700);font-weight:600">AGISCI</div>
+      </div>
+      <div style="font-size:var(--text-xs);color:var(--neutral-400);margin-top:var(--space-3)">Griglia adattiva: su tablet (app) le zone si impilano verticalmente · Zone 1-2 su mobile = max 80% viewport height</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 6 — COMPONENTI MC
+     ============================================================ -->
+<section class="section" id="zone">
+  <div class="section-header">
+    <div class="section-label">Componenti MC</div>
+    <div class="section-title">Le 5 Zone</div>
+    <div class="section-desc">Ogni MC occupa una doppia pagina organizzata sempre in quest'ordine. La struttura è fissa: lo studente sa sempre dove si trova.</div>
+  </div>
+
+  <!-- INNESCA -->
+  <div class="zone zone-1">
+    <div class="zone-header">
+      <div class="zone-num">1</div>
+      <div class="zone-label">HOOK — Domanda di avvio · Audio podcast</div>
+    </div>
+    <div class="zone-body">
+      <div class="zone-title">Hai mai pensato da dove viene il tuo zaino?</div>
+      <div class="hook-audio">
+        <button class="hook-play">▶</button>
+        <div class="hook-audio-info">
+          <div class="hook-audio-title">Lo zaino di Mia — storia straordinaria di un oggetto comune</div>
+          <div class="hook-audio-dur">🎧 2 min 40 sec · Podcast narrativo · MC-MAT-1-01</div>
+        </div>
+        <div class="hook-qr">QR<br>Audio</div>
+      </div>
+      <div class="hook-question">"Ogni giorno metti in spalla 5 materiali diversi senza saperlo. Dopo questa storia, li riconoscerai tutti."</div>
+    </div>
+  </div>
+
+  <!-- ESPLORA -->
+  <div class="zone zone-2">
+    <div class="zone-header">
+      <div class="zone-num">2</div>
+      <div class="zone-label">CONCETTO — Max 200 parole · Un'infografica</div>
+    </div>
+    <div class="zone-body">
+      <div class="zone-title">Classificare i materiali per proprietà</div>
+      <div class="concept-layout">
+        <div class="concept-text">
+          <div class="zone-text">I materiali si dividono in tre grandi famiglie: <strong>naturali</strong> (legno, cotone, lana), <strong>sintetici</strong> (plastica, nylon) e <strong>compositi</strong> (carbonio, fibra di vetro). Ogni materiale ha proprietà fisiche precise — durezza, elasticità, conducibilità — che determinano per quale oggetto è adatto.</div>
+          <div class="definition-box">
+            <div class="definition-term">Proprietà meccanica</div>
+            <div class="definition-text">Come si comporta un materiale quando viene spinto, tirato o piegato. Cioè: un elastico ha alta elasticità, una matita ha bassa elasticità.</div>
+          </div>
+          <div class="zone-text" style="margin-top:var(--space-3)">La scelta del materiale giusto per un oggetto non è mai casuale: è una decisione tecnica, economica e ambientale.</div>
+        </div>
+        <div class="concept-visual">
+          <div class="visual-placeholder">🗺️ Infografica<br>"Mappa dei materiali"<br>Naturali / Sintetici / Compositi<br><br>[Visual generato dall'Agente Asset]</div>
+          <div class="visual-caption">Guarda il punto A nella mappa ↑</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OSSERVA -->
+  <div class="zone zone-3">
+    <div class="zone-header">
+      <div class="zone-num">3</div>
+      <div class="zone-label">ESEMPIO REALE · Professione del futuro</div>
+    </div>
+    <div class="zone-body">
+      <div class="zone-title">Lo zaino scomposto: 5 materiali, 5 scelte</div>
+      <div class="example-layout">
+        <div class="zone-text">Lo zaino che usi ogni giorno è un progetto di ingegneria: la schiena è in schiuma EVA (morbida ma resistente), la struttura in nylon (leggero e impermeabile), le cinghie in polipropilene (rigido ma flessibile), le cerniere in nylon rinforzato, i rinforzi in poliestere.<br><br>Ognuno di questi materiali è stato scelto per una proprietà specifica. <strong>Nessuna scelta è casuale.</strong>
+          <div class="callout callout-clil" style="margin-top:var(--space-4)">
+            <div class="callout-icon">🌐</div>
+            <div class="callout-content">
+              <div class="callout-title">CLIL — Tech in English</div>
+              <div class="callout-text"><strong>material</strong> · <strong>properties</strong> · <strong>composite</strong> · <strong>durability</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="profession-card">
+          <div class="profession-icon">👷</div>
+          <div class="profession-label">Chi lavora con questa MC nel 2030?</div>
+          <div class="profession-title">Ingegnere dei materiali circolari</div>
+          <div class="profession-year">Stipendio medio IT: €38.000/anno · Richiesta in crescita del 34% (WEF 2025)</div>
+          <div class="clil-pill">🌐 Materials Engineer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPERIMENTA -->
+  <div class="zone zone-4">
+    <div class="zone-header">
+      <div class="zone-num">4</div>
+      <div class="zone-label">LABORATORIO — 3 livelli differenziati · DigComp</div>
+    </div>
+    <div class="zone-body">
+      <div class="zone-title">Metti alla prova quello che sai</div>
+      <div class="lab-levels">
+        <div class="lab-level">
+          <div class="lab-level-dots"><div class="dot"></div><div class="dot empty"></div><div class="dot empty"></div></div>
+          <div class="lab-level-name">● Base — Foundation F</div>
+          <div class="lab-level-task">Raccogli 5 oggetti di casa. Per ognuno scrivi: di cosa è fatto, duro o morbido, naturale o sintetico.</div>
+          <div class="lab-level-digcomp"><span class="level-badge" style="background:var(--level-F-bg);color:var(--level-F);border-color:var(--level-F);font-size:10px;padding:1px 8px">F</span></div>
+        </div>
+        <div class="lab-level active">
+          <div class="lab-level-dots"><div class="dot"></div><div class="dot"></div><div class="dot empty"></div></div>
+          <div class="lab-level-name">●● Intermedio — I</div>
+          <div class="lab-level-task">Crea una tabella comparativa di 3 materiali per un oggetto che vuoi progettare: proprietà, costo, impatto ambientale.</div>
+          <div class="lab-level-digcomp"><span class="level-badge" style="background:var(--level-I-bg);color:var(--level-I);border-color:var(--level-I);font-size:10px;padding:1px 8px">I</span></div>
+        </div>
+        <div class="lab-level">
+          <div class="lab-level-dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+          <div class="lab-level-name">●●● Avanzato — A</div>
+          <div class="lab-level-task">Analizza un prodotto di consumo: per ogni materiale scrivi un'alternativa più sostenibile e calcola l'impatto CO₂ della sostituzione.</div>
+          <div class="lab-level-digcomp"><span class="level-badge" style="background:var(--level-A-bg);color:var(--level-A);border-color:var(--level-A);font-size:10px;padding:1px 8px">A</span></div>
+        </div>
+      </div>
+      <div class="callout callout-warning" style="margin-top:var(--space-4)">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-content">
+          <div class="callout-title">Sicurezza in laboratorio</div>
+          <div class="callout-text">Usa guanti protettivi quando tagli o manipoli materiali a bordi taglienti. Non portare materiali sconosciuti in bocca.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AGISCI -->
+  <div class="zone zone-5">
+    <div class="zone-header">
+      <div class="zone-num">5</div>
+      <div class="zone-label">COMPITO DI REALTÀ · SDG · Metacognizione</div>
+    </div>
+    <div class="zone-body">
+      <div class="zone-title">Analizza 5 oggetti di casa: materia prima, lavorazione, smaltimento</div>
+      <div class="task-layout">
+        <div class="task-steps">
+          <div class="task-step"><div class="task-step-num">1</div><div class="task-step-text"><strong>Scenario:</strong> La tua famiglia deve fare la raccolta differenziata. Ma avete davvero capito da cosa sono fatti gli oggetti che buttate?</div></div>
+          <div class="task-step"><div class="task-step-num">2</div><div class="task-step-text"><strong>Consegna:</strong> Scegli 5 oggetti di casa. Per ognuno: identifica il materiale principale, cerca da dove viene, scopri come smaltirlo correttamente.</div></div>
+          <div class="task-step"><div class="task-step-num">3</div><div class="task-step-text"><strong>Materiali:</strong> Foglio A3, penna, accesso a internet per ricerca, etichette degli oggetti.</div></div>
+          <div class="task-step"><div class="task-step-num">4</div><div class="task-step-text"><strong>Criteri:</strong> Correttezza identificazione materiale (3 pt) · Qualità ricerca provenienza (3 pt) · Proposta smaltimento motivata (4 pt)</div></div>
+          <div class="meta-question">
+            <strong>💭 Metacognizione</strong>
+            "Qual è stata la cosa più sorprendente che hai scoperto? Cosa cambieresti nel modo in cui la tua famiglia gestisce i rifiuti?"
+          </div>
+        </div>
+        <div class="task-sidebar">
+          <div class="sdg-badge">
+            <div class="sdg-num" style="background:#BF8B2E">12</div>
+            <div class="sdg-name">Consumo e produzione responsabili</div>
+          </div>
+          <div class="sdg-badge">
+            <div class="sdg-num" style="background:#3F7E44">15</div>
+            <div class="sdg-name">Vita sulla terra</div>
+          </div>
+          <div class="ai-coach-qr">
+            <div class="ai-coach-icon">🤖</div>
+            <div class="ai-coach-text">Hai dubbi?<br>Chiedi all'<strong>AI Coach</strong><br>→ QR codice</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 7 — CALLOUT BOXES
+     ============================================================ -->
+<section class="section" id="callout">
+  <div class="section-header">
+    <div class="section-label">Pattern UI</div>
+    <div class="section-title">Box Informativi</div>
+    <div class="section-desc">Sei tipologie di callout. Ognuno ha semantica precisa — non usare "tip" per sicurezza o viceversa. La tipologia determina priorità visiva e comportamento lettore.</div>
+  </div>
+
+  <div class="grid-2">
+    <div class="callout callout-tip">
+      <div class="callout-icon">💡</div>
+      <div class="callout-content"><div class="callout-title">Suggerimento</div><div class="callout-text">Usa questa variante per consigli opzionali, trucchi mnemonici, metodi alternativi. Non è urgente: il lettore può anche saltarla.</div></div>
+    </div>
+    <div class="callout callout-warning">
+      <div class="callout-icon">⚠️</div>
+      <div class="callout-content"><div class="callout-title">Attenzione</div><div class="callout-text">Errori comuni, precauzioni non di sicurezza, distinzioni concettuali importanti. Non saltare.</div></div>
+    </div>
+    <div class="callout callout-safety">
+      <div class="callout-icon">🛡️</div>
+      <div class="callout-content"><div class="callout-title">Sicurezza — Obbligatorio in MC con attività fisiche</div><div class="callout-text">Istruzioni di sicurezza per laboratorio, uso utensili, attività con corrente elettrica. Bordo rinforzato, sempre visibile. Non sostituire con variante warning.</div></div>
+    </div>
+    <div class="callout callout-clil">
+      <div class="callout-icon">🌐</div>
+      <div class="callout-content"><div class="callout-title">CLIL — Tech in English</div><div class="callout-text">3–5 termini tecnici in inglese con pronuncia. Obbligatorio in almeno 1 MC per area. Sfondo area-3 per coerenza visiva.</div></div>
+    </div>
+    <div class="callout callout-sdg">
+      <div class="callout-icon">🌍</div>
+      <div class="callout-content"><div class="callout-title">Agenda 2030 — SDG collegato</div><div class="callout-text">Ogni MC ha un SDG di ancoraggio esplicito. Non c'è un capitolo separato di Educazione Civica: è embedded in AGISCI.</div></div>
+    </div>
+    <div class="callout callout-dsa">
+      <div class="callout-icon">♿</div>
+      <div class="callout-content"><div class="callout-title">Accessibilità / DSA First</div><div class="callout-text">Versione semplificata del concetto. Max 3 bullet. Font OpenDyslexic in app. Non è un adattamento: è il design base per tutti.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 8 — ANTEPRIMA MC COMPLETA
+     ============================================================ -->
+<section class="section" id="spread">
+  <div class="section-header">
+    <div class="section-label">Anteprima</div>
+    <div class="section-title">MC Double-Page Spread</div>
+    <div class="section-desc">Come appare una micro-competenza completa con tutte e 5 le zone. Questa è la struttura invariante — ogni MC ha la stessa architettura.</div>
+  </div>
+
+  <div class="spread-preview">
+    <div class="spread-header">
+      <div class="mc-id-chip">MC-MAT-1-01</div>
+      <div class="mc-title-spread">Classificare i materiali per proprietà</div>
+      <div class="mc-meta-chips">
+        <span class="chip" style="background:rgba(255,255,255,.15);color:var(--white)">🪨 MAT</span>
+        <span class="level-badge" style="background:var(--level-F-bg);color:var(--level-F);border-color:var(--level-F);font-size:var(--text-xs);padding:2px 10px">F Foundation</span>
+        <span class="chip" style="background:rgba(255,255,255,.15);color:var(--white)">SDG 12 · 15</span>
+        <span class="chip" style="background:rgba(255,255,255,.15);color:var(--white)">1ª classe</span>
+      </div>
+    </div>
+    <div class="spread-body">
+      <!-- INNESCA compatta -->
+      <div style="background:var(--zone1-bg);border-radius:var(--radius-lg);padding:var(--space-4);border-left:4px solid var(--zone1)">
+        <div style="font-size:var(--text-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--zone1);margin-bottom:var(--space-2)">① HOOK</div>
+        <div style="font-size:var(--text-base);font-weight:600;color:var(--zone1)">Hai mai pensato da dove viene il tuo zaino?</div>
+        <div style="font-size:var(--text-sm);color:var(--neutral-600);margin-top:var(--space-1)">🎧 Podcast "Lo zaino di Mia" — 2 min 40 sec</div>
+      </div>
+      <!-- ESPLORA compatta -->
+      <div style="background:var(--zone2-bg);border-radius:var(--radius-lg);padding:var(--space-4);border-left:4px solid var(--zone2)">
+        <div style="font-size:var(--text-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--zone2);margin-bottom:var(--space-2)">② CONCETTO</div>
+        <div style="font-size:var(--text-sm);color:var(--neutral-800);line-height:1.6">I materiali si dividono in tre famiglie: <strong>naturali</strong>, <strong>sintetici</strong>, <strong>compositi</strong>. Ogni materiale ha proprietà fisiche che determinano per quale oggetto è adatto.</div>
+      </div>
+      <!-- OSSERVA compatta -->
+      <div style="background:var(--zone3-bg);border-radius:var(--radius-lg);padding:var(--space-4);border-left:4px solid var(--zone3)">
+        <div style="font-size:var(--text-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--zone3);margin-bottom:var(--space-2)">③ ESEMPIO REALE</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-3)">
+          <div style="font-size:var(--text-sm);color:var(--neutral-800)">Lo zaino scomposto: 5 materiali, 5 scelte di ingegneria. <span class="clil-pill" style="display:inline-flex">🌐 composite · properties</span></div>
+          <div style="font-size:var(--text-xs);color:var(--zone3);font-weight:600">👷 Ingegnere dei materiali circolari 2030</div>
+        </div>
+      </div>
+      <!-- SPERIMENTA compatta -->
+      <div style="background:var(--zone4-bg);border-radius:var(--radius-lg);padding:var(--space-4);border-left:4px solid var(--zone4)">
+        <div style="font-size:var(--text-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--zone4);margin-bottom:var(--space-2)">④ LABORATORIO</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-3)">
+          <div style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-3);font-size:var(--text-xs);border:1px solid var(--zone4-border)"><strong>● Base F</strong><br>Raccogli 5 oggetti e classifica i materiali.</div>
+          <div style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-3);font-size:var(--text-xs);border:2px solid var(--zone4)"><strong>●● Intermedio I</strong><br>Tabella comparativa: 3 materiali, costo, impatto.</div>
+          <div style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-3);font-size:var(--text-xs);border:1px solid var(--zone4-border)"><strong>●●● Avanzato A</strong><br>Alternativa sostenibile + calcolo CO₂.</div>
+        </div>
+      </div>
+      <!-- AGISCI compatta -->
+      <div style="background:var(--zone5-bg);border-radius:var(--radius-lg);padding:var(--space-4);border-left:4px solid var(--zone5)">
+        <div style="font-size:var(--text-xs);font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--zone5);margin-bottom:var(--space-2)">⑤ COMPITO DI REALTÀ</div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-4);flex-wrap:wrap">
+          <div style="font-size:var(--text-sm);color:var(--neutral-800);flex:1">Analizza 5 oggetti di casa: materia prima → lavorazione → smaltimento. Rubrica 10 pt. Metacognizione obbligatoria.</div>
+          <div style="display:flex;gap:var(--space-2)">
+            <div class="sdg-num" style="background:#BF8B2E;width:36px;height:36px;border-radius:6px;font-size:var(--text-sm);font-weight:800;display:flex;align-items:center;justify-content:center;color:white">12</div>
+            <div class="sdg-num" style="background:#3F7E44;width:36px;height:36px;border-radius:6px;font-size:var(--text-sm);font-weight:800;display:flex;align-items:center;justify-content:center;color:white">15</div>
+            <div style="background:var(--brand-800);border-radius:6px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;font-size:1rem">🤖</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 9 — ACCESSIBILITÀ
+     ============================================================ -->
+<section class="section" id="accessibilita">
+  <div class="section-header">
+    <div class="section-label">WCAG 2.1</div>
+    <div class="section-title">Regole di Accessibilità</div>
+    <div class="section-desc">Conformità minima AA per testo normale (4.5:1), AA per testo grande (3:1). Target AAA dove possibile. DSA First: non è un adattamento, è la baseline del design.</div>
+  </div>
+
+  <div class="a11y-grid">
+    <div class="a11y-card">
+      <div class="a11y-title">Contrasti testo/sfondo</div>
+      <div class="contrast-sample" style="background:var(--brand-900);color:white">Bianco su Brand-900</div>
+      <div class="contrast-meta"><span>Ratio ~12.6:1</span><span class="pass">✓ AAA</span></div>
+      <div class="contrast-sample" style="background:var(--zone1);color:white;margin-top:var(--space-2)">Bianco su INNESCA</div>
+      <div class="contrast-meta"><span>Ratio ~7.1:1</span><span class="pass">✓ AAA</span></div>
+      <div class="contrast-sample" style="background:var(--zone5-bg);color:var(--zone5);margin-top:var(--space-2)">Testo su bg AGISCI</div>
+      <div class="contrast-meta"><span>Ratio ~4.8:1</span><span class="pass">✓ AA</span></div>
+      <div class="contrast-sample" style="background:var(--level-F-bg);color:var(--level-F);margin-top:var(--space-2)">Testo Foundation su bg</div>
+      <div class="contrast-meta"><span>Ratio ~5.2:1</span><span class="pass">✓ AA</span></div>
+    </div>
+
+    <div class="a11y-card">
+      <div class="a11y-title">Dimensioni minime</div>
+      <div style="font-size:var(--text-sm);color:var(--neutral-700);line-height:1.7">
+        <p>• Corpo testo corpo: <strong>min 16px</strong> (1rem)</p>
+        <p>• Testo secondario: <strong>min 14px</strong> con weight ≥500</p>
+        <p>• Label/badge: <strong>min 12px</strong> solo se uppercase + weight 700</p>
+        <p>• Touch target (app): <strong>min 44×44px</strong> (WCAG 2.5.5)</p>
+        <p>• Interlinea testo: <strong>min 1.5</strong> per corpo</p>
+        <p>• Spaziatura lettere: <strong>non sotto 0</strong> per testi lunghi</p>
+      </div>
+    </div>
+
+    <div class="a11y-card">
+      <div class="a11y-title">DSA First — Regole operative</div>
+      <div style="font-size:var(--text-sm);color:var(--neutral-700);line-height:1.7">
+        <p>• Modalità OpenDyslexic attivabile dall'utente</p>
+        <p>• Spaziatura riga aumentata a 2.0 in modalità DSA</p>
+        <p>• Nessuna colonna di testo oltre <strong>65 caratteri</strong></p>
+        <p>• Mai testo giustificato (solo allineato a sinistra)</p>
+        <p>• Sintesi schematica a fine ogni zona (max 3 bullet)</p>
+        <p>• Podcast sempre disponibile come alternativa al testo</p>
+        <p>• Mappe concettuali pre-compilate scaricabili</p>
+        <p>• Colori NON come unico mezzo informativo</p>
+      </div>
+    </div>
+
+    <div class="a11y-card">
+      <div class="a11y-title">Colori non come unico mezzo</div>
+      <div style="font-size:var(--text-sm);color:var(--neutral-700);line-height:1.7;margin-bottom:var(--space-3)">Ogni stato usa forma + colore + testo:</div>
+      <div style="display:flex;flex-direction:column;gap:var(--space-2)">
+        <div style="display:flex;align-items:center;gap:var(--space-2)"><div style="width:12px;height:12px;border-radius:50%;background:var(--level-F)"></div><span style="font-size:var(--text-xs)">● Foundation F (cerchio + colore + etichetta)</span></div>
+        <div style="display:flex;align-items:center;gap:var(--space-2)"><div style="width:12px;height:12px;border-radius:50%;background:var(--level-I)"></div><span style="font-size:var(--text-xs)">● Intermediate I</span></div>
+        <div style="display:flex;align-items:center;gap:var(--space-2)"><div style="width:12px;height:12px;border-radius:50%;background:var(--level-A)"></div><span style="font-size:var(--text-xs)">● Advanced A</span></div>
+        <div style="font-size:var(--text-xs);color:var(--neutral-500);margin-top:var(--space-2)">I livelli Lab usano ●, ●●, ●●● (punti contabili) oltre al colore.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checklist accessibilità -->
+  <div style="background:var(--brand-900);border-radius:var(--radius-xl);padding:var(--space-6);margin-top:var(--space-6);color:var(--white)">
+    <div style="font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-4);color:var(--accent-300)">✅ Checklist prima di pubblicare ogni MC</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3)">
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Contrasto testo corpo ≥ 4.5:1</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Font size corpo ≥ 16px</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Podcast INNESCA disponibile</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ 3 livelli SPERIMENTA presenti</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ SDG assegnato in AGISCI</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Metacognizione in AGISCI</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Alt text per ogni visual</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ CLIL box presente (area)</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Box sicurezza se lab fisico</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Sintesi DSA-friendly</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ Rubrica valutazione visibile</div>
+      <div style="font-size:var(--text-sm);color:var(--brand-200)">□ ID MC corretto (MC-AREA-ANNO-NN)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SEZIONE 10 — TOKEN EXPORT
+     ============================================================ -->
+<section class="section" id="token">
+  <div class="section-header">
+    <div class="section-label">Figma / CSS</div>
+    <div class="section-title">Design Tokens</div>
+    <div class="section-desc">I token sono disponibili anche come file <code>design-tokens.json</code> nella stessa cartella. Importa in Figma con il plugin <strong>Tokens Studio</strong> o <strong>Style Dictionary</strong>.</div>
+  </div>
+
+  <div class="token-export">
+    <pre>
+<span class="comment">/* TecnologIA Design Tokens — v1.0
+   Import in Figma: Tokens Studio for Figma → Load from JSON
+   CSS: @import 'design-tokens.css' ---------------------------------------- */</span>
+
+<span class="key">$brand-800</span>: <span class="val">#1A2B4A</span>;   <span class="comment">/* --brand-800 · Primary Navy */</span>
+<span class="key">$accent-500</span>: <span class="val">#00C4A7</span>;  <span class="comment">/* --accent-500 · Electric Teal */</span>
+<span class="key">$energy-500</span>: <span class="val">#FF6834</span>;  <span class="comment">/* --energy-500 · Dynamic Orange */</span>
+
+<span class="key">$zone-1</span>: <span class="val">#5E35B1</span>;       <span class="comment">/* Hook Violet */</span>
+<span class="key">$zone-2</span>: <span class="val">#1565C0</span>;       <span class="comment">/* Concetto Blue */</span>
+<span class="key">$zone-3</span>: <span class="val">#E65100</span>;       <span class="comment">/* Esempio Orange */</span>
+<span class="key">$zone-4</span>: <span class="val">#00695C</span>;       <span class="comment">/* Laboratorio Teal */</span>
+<span class="key">$zone-5</span>: <span class="val">#F57F17</span>;       <span class="comment">/* Compito Amber */</span>
+
+<span class="key">$area-MAT</span>: <span class="val">#6D4C41</span>;     <span class="comment">/* Materiali 🪨 */</span>
+<span class="key">$area-DIS</span>: <span class="val">#1A3A7A</span>;     <span class="comment">/* Disegno 📐 */</span>
+<span class="key">$area-DIG</span>: <span class="val">#006064</span>;     <span class="comment">/* Digitale 💻 */</span>
+<span class="key">$area-ALI</span>: <span class="val">#558B2F</span>;     <span class="comment">/* Alimentazione 🌾 */</span>
+<span class="key">$area-AMB</span>: <span class="val">#BF360C</span>;     <span class="comment">/* Ambiente 🏗️ */</span>
+<span class="key">$area-ENE</span>: <span class="val">#E65100</span>;     <span class="comment">/* Energia ⚡ */</span>
+<span class="key">$area-COM</span>: <span class="val">#6A1B9A</span>;     <span class="comment">/* Comunicazioni 📡 */</span>
+<span class="key">$area-SIS</span>: <span class="val">#1B5E7A</span>;     <span class="comment">/* Sistemi ⚙️ */</span>
+
+<span class="key">$level-F</span>: <span class="val">#1B7A50</span>;      <span class="comment">/* Foundation */</span>
+<span class="key">$level-I</span>: <span class="val">#1A5296</span>;      <span class="comment">/* Intermediate */</span>
+<span class="key">$level-A</span>: <span class="val">#7A5700</span>;      <span class="comment">/* Advanced */</span>
+<span class="key">$level-H</span>: <span class="val">#8B0000</span>;      <span class="comment">/* Higher */</span>
+
+<span class="key">$font-sans</span>: <span class="val">'Inter'</span>, system-ui, sans-serif;
+<span class="key">$font-dyslexic</span>: <span class="val">'OpenDyslexic'</span>, 'Comic Sans MS', cursive;
+<span class="key">$font-mono</span>: <span class="val">'JetBrains Mono'</span>, 'Fira Code', monospace;
+
+<span class="key">$space-base</span>: <span class="val">4px</span>;        <span class="comment">/* multiply: ×1 ×2 ×3 ×4 ×6 ×8 ×12 ×16 */</span>
+<span class="key">$radius-md</span>: <span class="val">8px</span>;
+<span class="key">$radius-xl</span>: <span class="val">16px</span>;
+<span class="key">$radius-full</span>: <span class="val">9999px</span>;
+    </pre>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<div style="background:var(--brand-950);padding:var(--space-8);text-align:center;color:var(--brand-400);font-size:var(--text-sm)">
+  <div style="font-weight:700;color:var(--white);margin-bottom:var(--space-2)">Tecnolog<span style="color:var(--accent-500)">IA</span> Design System · v1.0</div>
+  <div>Antonio Scaramuzzino · Maggio 2026 · WCAG 2.1 AA · DSA First · 5 Zone · 8 Aree · 3 Livelli DigComp</div>
+  <div style="margin-top:var(--space-2);font-size:var(--text-xs)">File companion: <code style="color:var(--accent-300)">design-tokens.json</code> nella stessa cartella</div>
+</div>
+
+<script>
+function copyColor(hex) {
+  navigator.clipboard.writeText(hex).then(() => {
+    const el = event.target.closest('.swatch').querySelector('.swatch-copy');
+    if (el) { el.textContent = 'COPIATO!'; setTimeout(() => el.textContent = 'COPIA', 1200); }
+  });
+}
+// Highlight active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) current = s.id; });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? 'white' : '';
+  });
+});
+</script>
+</body>
+</html>

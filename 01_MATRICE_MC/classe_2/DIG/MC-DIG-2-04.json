@@ -1,0 +1,102 @@
+{
+  "id": "MC-DIG-2-04",
+  "area": "DIG",
+  "anno": 2,
+  "titolo": "Cifratura, sicurezza informatica e identità in rete",
+  "descrizione": "Lo studente comprende il principio dei cifrari (come si trasforma un messaggio in qualcosa di illeggibile per chi non ha la chiave), conosce i principali tipi di attacchi informatici (phishing, malware, furto di identità) e sa adottare comportamenti sicuri online — password robuste, autenticazione a due fattori, riconoscimento di contenuti manipolati.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: cifrari per tenere riservati i dati; attacchi informatici e comportamenti sicuri; identità personale in rete.",
+      "traguardo": "Lo studente comprende il principio della cifratura, sa riconoscere i principali attacchi informatici e adotta comportamenti sicuri nella gestione della propria identità digitale"
+    },
+    "DC": {
+      "ref": "4.1 Proteggere i dispositivi digitali",
+      "livello": "I",
+      "nota": "Lo studente usa strumenti di protezione (password manager, 2FA, HTTPS) consapevolmente, capendone il principio e non solo l'uso"
+    },
+    "EC": {
+      "ref": "Into action / Self-awareness",
+      "nota": "Lo studente valuta il rischio informatico come parte della gestione responsabile della propria identità digitale e delle proprie risorse"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente analizza messaggi sospetti, siti web e richieste di dati con pensiero critico per identificare tentativi di manipolazione"
+    },
+    "EV": {
+      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "La sicurezza informatica è diritto e responsabilità civica: proteggere la propria identità digitale contribuisce a proteggere anche quella degli altri"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario phishing: ti arriva questa email [immagine simulata] — è legittima o un attacco? Analisi guidata: mittente, link, urgenza artificiale, richiesta di dati. Feedback che spiega ogni segnale di allarme.",
+    "microlearning": "Card deck 6 slide: cifrario di Cesare (come funziona) / crittografia moderna (principio chiave pubblica-privata semplificato) / phishing / malware / password sicura / 2FA. 5 min.",
+    "visual": "Infografica: 'Anatomia di un attacco phishing' — email simulata con 6 elementi segnalati e spiegati. Più: schema semplificato di come HTTPS cifra una comunicazione.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-DIG-2-02",
+    "MC-DIG-2-03"
+  ],
+  "tags": [
+    "cifratura",
+    "crittografia",
+    "sicurezza informatica",
+    "phishing",
+    "password",
+    "identità digitale",
+    "attacchi informatici",
+    "classe-2",
+    "DIG"
+  ],
+  "compito_realta": "Fai un audit della tua sicurezza digitale: controlla le password di 5 account che usi (sono diverse tra loro? Robuste? Hai il 2FA attivo?). Usa un password checker online per valutarle. Costruisci un piano in 3 azioni concrete per migliorare la tua sicurezza entro una settimana e documentalo.",
+  "sdg": [
+    16
+  ],
+  "note_didattiche": {
+    "base": "Fornire 3 email di phishing simulate già analizzate con i segnali di allarme evidenziati. Lo studente deve solo classificare il tipo di attacco e proporre cosa fare. Evitare di chiedere password reali.",
+    "avanzato": "Cifrare un messaggio con il cifrario di Cesare (a mano o con Python), poi decifrarlo con la forza bruta (prova tutte le 26 chiavi). Riflettere su perché i cifrari antichi non bastano e cosa cambia nella crittografia moderna."
+  },
+  "hook_audio": {
+    "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
+    "oggetto_reale": "un messaggio cifrato",
+    "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
+    "durata_min": 3,
+    "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale."
+  },
+  "professione_futura": {
+    "titolo": "Cybersecurity Analyst",
+    "orizzonte": "2030",
+    "descrizione_breve": "Protegge sistemi informatici e dati aziendali da attacchi, analizza le vulnerabilità e progetta difese — una delle professioni con maggiore carenza di profili in Europa.",
+    "competenze_chiave": [
+      "crittografia applicata",
+      "analisi delle vulnerabilità",
+      "risposta agli incidenti",
+      "ethical hacking"
+    ]
+  },
+  "sdg_principale": 16,
+  "clil_termini": [
+    {
+      "italiano": "cifratura",
+      "inglese": "encryption",
+      "pronuncia_ipa": "/ɪnˈkrɪpʃən/"
+    },
+    {
+      "italiano": "phishing",
+      "inglese": "phishing",
+      "pronuncia_ipa": "/ˈfɪʃɪŋ/"
+    },
+    {
+      "italiano": "autenticazione a due fattori",
+      "inglese": "two-factor authentication (2FA)",
+      "pronuncia_ipa": "/tuː ˈfæktər ɔːˌθentɪˈkeɪʃən/"
+    },
+    {
+      "italiano": "malware",
+      "inglese": "malware",
+      "pronuncia_ipa": "/ˈmælweər/"
+    }
+  ],
+  "uda_collegata": null
+}

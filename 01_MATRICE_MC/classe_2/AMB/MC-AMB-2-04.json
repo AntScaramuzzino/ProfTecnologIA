@@ -1,0 +1,57 @@
+{
+  "id": "MC-AMB-2-04",
+  "area": "AMB",
+  "anno": 2,
+  "titolo": "Materiali da costruzione e sostenibilità",
+  "descrizione": "Lo studente conosce i principali materiali da costruzione (mattone, cemento, acciaio, legno, vetro, materiali isolanti) con le loro proprietà termiche, meccaniche e ambientali, e sa valutare la scelta del materiale in relazione all'efficienza energetica dell'edificio e all'impatto ambientale del ciclo costruttivo.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+      "traguardo": "Lo studente valuta i materiali da costruzione in base a proprietà tecniche e impatto ambientale"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati",
+      "livello": "I",
+      "nota": "Lo studente ricerca schede tecniche online dei materiali e confronta i dati di sostenibilità"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente collega le scelte costruttive al ciclo di vita dell'edificio e ai costi a lungo termine"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città sostenibili; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "Il settore edilizio produce il 39% delle emissioni globali — materiali sostenibili sono risposta concreta"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario: 'Devi scegliere il materiale per le pareti esterne di una casa in zona fredda — quale ha il miglior isolamento termico?' Multipla con dati tecnici.",
+    "microlearning": "Card deck 5 slide: mattone, calcestruzzo, legno X-lam, acciaio, isolanti — proprietà chiave + impatto. 5 min.",
+    "visual": "Tabella comparativa: 5 materiali × 4 parametri (resistenza, isolamento, costo, impatto CO₂).",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-AMB-2-01"
+  ],
+  "tags": [
+    "materiali edilizi",
+    "sostenibilità",
+    "isolamento",
+    "edilizia green",
+    "classe-2",
+    "AMB"
+  ],
+  "compito_realta": "Analizza la tua casa o scuola: osserva i materiali usati per pareti, pavimenti, finestre e tetto, crea una tabella con 4 materiali identificati e valuta per ciascuno il potenziale di miglioramento per l'efficienza energetica.",
+  "sdg": [
+    11,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Fornire la tabella con i parametri e i valori già inseriti per 3 materiali. Lo studente aggiunge solo il 4°.",
+    "avanzato": "Calcolare approssimativamente la dispersione termica di una parete non isolata vs. isolata usando i valori di conduttività termica forniti."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "MC-DIS-1-02",
+  "area": "DIS",
+  "anno": 1,
+  "titolo": "Scale di rappresentazione e quotatura di base",
+  "descrizione": "Lo studente comprende il concetto di scala di rappresentazione, sa scegliere la scala adatta al foglio disponibile, e sa applicare le convenzioni di quotatura di base (linee di quota, frecce, cifre) per comunicare le dimensioni reali di un oggetto rappresentato.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con elementi del disegno tecnico",
+      "traguardo": "Lo studente usa scale di rappresentazione e quotatura per comunicare le dimensioni di un oggetto"
+    },
+    "DC": {
+      "ref": "5.1 Risolvere problemi tecnici",
+      "livello": "F",
+      "nota": "Lo studente usa fogli di calcolo o app di disegno per verificare le conversioni di scala"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente pianifica il layout del disegno tenendo conto della scala prima di iniziare"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente applica proporzioni matematiche per risolvere problemi di scala"
+    },
+    "EV": {
+      "ref": "SDG 4 — Istruzione di qualità",
+      "nota": "La quotatura è linguaggio universale nella comunicazione tecnica e professionale"
+    }
+  },
+  "outputApp": {
+    "quiz": "Calcolo: dato l'oggetto reale (es. porta 200 cm) e la scala (1:20), qual è la misura sul disegno? 5 esercizi con feedback.",
+    "microlearning": "Card deck 4 slide: scala 1:1, 1:10, 1:50, 1:100 con esempio visivo per ciascuna. 3 min.",
+    "visual": "Infografica: tavola delle scale più usate con esempi (dall'oggetto alla città).",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-DIS-1-01"
+  ],
+  "tags": [
+    "scala",
+    "quotatura",
+    "disegno tecnico",
+    "proporzioni",
+    "classe-1",
+    "DIS"
+  ],
+  "compito_realta": "Scegli un oggetto della tua scrivania (libro, astuccio, borraccia), misuralo in tutti e tre i sensi e disegnane la pianta quotata alla scala più adatta per un foglio A4.",
+  "sdg": [
+    4
+  ],
+  "note_didattiche": {
+    "base": "Fornire la scala già calcolata. Lo studente deve solo disegnare e apporre le quote su un oggetto semplice (cubo).",
+    "avanzato": "Disegnare l'oggetto in due scale diverse e confrontare l'effetto visivo. Discutere quando si usa ciascuna."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "MC-ALI-2-01",
+  "area": "ALI",
+  "anno": 2,
+  "titolo": "Tecniche agronomiche e coltivazioni",
+  "descrizione": "Lo studente conosce i principali fattori che influenzano la coltivazione delle piante (suolo, clima, irrigazione, concimazione), sa distinguere tra agricoltura convenzionale, biologica e idroponica, e comprende come le scelte agronomiche impattano la qualità degli alimenti e l'ambiente.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+      "traguardo": "Lo studente descrive i processi agronomici e li collega alla qualità e sostenibilità degli alimenti"
+    },
+    "DC": {
+      "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente documenta digitalmente la crescita di una pianta con foto e dati misurati"
+    },
+    "EC": {
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente pianifica e gestisce autonomamente un mini-orto scolastico"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente comprende il legame tra pratiche agricole e benessere collettivo"
+    },
+    "EV": {
+      "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
+      "nota": "L'agricoltura sostenibile è strumento di sicurezza alimentare e tutela della biodiversità"
+    }
+  },
+  "outputApp": {
+    "quiz": "Abbinamento: pianta → tecnica di coltivazione più adatta → motivazione. 4 coppie con feedback.",
+    "microlearning": "Card deck 5 slide: terreno, acqua, sole, concime, semina — un fattore per slide con icone. 4 min.",
+    "visual": "Schema: convenzionale vs. biologico vs. idroponico — 3 colonne × 4 parametri.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "agronomia",
+    "coltivazione",
+    "agricoltura biologica",
+    "idroponica",
+    "classe-2",
+    "ALI"
+  ],
+  "compito_realta": "Coltiva una piantina in classe (germinazione di un fagiolo o basilico): documenta con foto e misurazioni settimanali per 3 settimane, registra i dati in una tabella e scrivi le conclusioni.",
+  "sdg": [
+    2,
+    15
+  ],
+  "note_didattiche": {
+    "base": "Fornire la scheda di osservazione pre-strutturata con le colonne da compilare. Usare una pianta a crescita veloce (rucola).",
+    "avanzato": "Confrontare due piante uguali cresciute in condizioni diverse (es. con e senza concime) e analizzare le differenze."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "MC-SIS-3-01",
+  "area": "SIS",
+  "anno": 3,
+  "titolo": "Sistemi economici e processi produttivi",
+  "descrizione": "Lo studente conosce le principali forme di organizzazione economica (artigianato, piccola impresa, industria, multinazionale), comprende i concetti di catena del valore, processo produttivo e divisione del lavoro, e sa analizzare un prodotto di consumo per ricostruire la sua catena produttiva globale.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e le relazioni tra scienza, tecnologia e società",
+      "traguardo": "Lo studente descrive l'organizzazione di un sistema produttivo e la catena del valore di un prodotto"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati",
+      "livello": "I",
+      "nota": "Lo studente ricerca online la catena produttiva di un prodotto tecnologico"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Valuing ideas",
+      "nota": "Lo studente comprende come il valore si crea lungo la catena produttiva e dove si concentra il profitto"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente analizza il sistema economico come insieme di attori interdipendenti con ruoli e interessi diversi"
+    },
+    "EV": {
+      "ref": "SDG 8 — Lavoro dignitoso; SDG 12 — Consumo responsabile",
+      "nota": "Conoscere la catena produttiva permette scelte di consumo consapevoli e supporto al lavoro equo"
+    }
+  },
+  "outputApp": {
+    "quiz": "Mappa della catena: dato uno smartphone, abbina ogni componente al paese di produzione. 5 componenti con mappa del mondo interattiva.",
+    "microlearning": "Card deck 5 slide: artigiano, PMI, industria, multinazionale, start-up — caratteristiche e differenze chiave. 4 min.",
+    "visual": "Mappa catena produttiva globale: da dove vengono i 10 componenti principali di uno smartphone.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "economia",
+    "produzione",
+    "catena del valore",
+    "industria",
+    "classe-3",
+    "SIS"
+  ],
+  "compito_realta": "Analizza il sistema economico della tua città: identifica 5 aziende di settori diversi, classifica ciascuna per tipo (artigianato/PMI/grande impresa) e crea una mappa che mostra come sono collegate tra loro nella filiera locale.",
+  "sdg": [
+    8,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Fornire le 5 aziende già selezionate con le informazioni di base. Lo studente deve solo classificarle e collegarle.",
+    "avanzato": "Analizzare una multinazionale presente nel territorio: dove produce, dove ha sede fiscale, quanti dipendenti locali — e confrontare con una PMI locale."
+  }
+}

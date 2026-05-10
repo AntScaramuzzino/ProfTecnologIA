@@ -1,0 +1,635 @@
+{
+  "$schema": "TecnologIA-Visual-Prompts-v1.0",
+  "descrizione": "Template di prompt per la generazione di infografiche del progetto TecnologIA. Per ogni tipologia: prompt image_ai (Midjourney/DALL·E/Flux) + brief Canva/Claude per l'Agente Generatore.",
+  "versione": "1.0",
+  "data": "2026-05",
+  "autore": "Claude per Antonio Scaramuzzino",
+
+  "prompt_master_infografica_ricca": {
+    "nome": "Infografica ricca con soggetto centrale",
+    "quando_usare": "Oggetti, concetti, processi produttivi, alimenti, materiali, macchine e sistemi tecnici che richiedono una tavola visuale densa, editoriale e di forte impatto.",
+    "prompt_base": "Crea un'infografica visivamente ricca su [OGGETTO / CONCETTO / PROCESSO]. Inizia trovando online un soggetto, caso reale o esempio concreto adatto alla fascia 11-14 anni, poi fai ricerche di approfondimento su funzionamento, fasi, dati essenziali, materiali, rischi, impatti e lessico tecnico. Presenta le informazioni con elementi visivi annotati e callout strutturati, non con sezioni generiche. Imposta l'infografica come un'illustrazione grafica d'impatto: al centro il soggetto dettagliato e fotorealistico come punto focale, supportato da diagrammi, frecce, sezioni esplose, callout numerati e brevi testi. Usa sfondi puliti e un mix di fotorealismo ed elementi grafici forti: forme, icone, campiture di colore e linee di richiamo in una composizione stratificata. Rendila densa, materica e dall'aspetto professionale.",
+    "adattamento_tecnologia": {
+      "contesto": "Libro TecnologIA per scuola secondaria di I grado",
+      "campi_obbligatori": ["MC_ID", "TITOLO", "AREA", "ANNO", "LIVELLO", "SDG_NUM", "COMPITO_REALTA"],
+      "output_preferito": "SVG editabile con eventuale soggetto raster centrale",
+      "vincoli": [
+        "testi in italiano brevi e leggibili",
+        "massimo 12 parole per callout",
+        "nessun logo commerciale",
+        "nessun watermark",
+        "nessun testo inventato o deformato",
+        "contrasto WCAG AA",
+        "nota fonti se contiene dati numerici",
+        "chip MC in basso a destra"
+      ]
+    },
+    "pipeline_consigliata": [
+      "ricerca fonti e scelta del soggetto concreto",
+      "generazione o reperimento del soggetto centrale",
+      "costruzione dei callout in SVG o Canva",
+      "verifica leggibilità, accuratezza e collegamento al compito di realtà"
+    ]
+  },
+
+  "stile_globale": {
+    "font_principale": "Inter (Google Fonts)",
+    "font_accessibilita": "OpenDyslexic",
+    "font_mono": "JetBrains Mono",
+    "sfondo_default": "#F6F7FA",
+    "sfondo_alternativo": "#FFFFFF",
+    "colore_testo_principale": "#1A1C24",
+    "colore_testo_secondario": "#5A5F76",
+    "contrasto_minimo_wcag": "4.5:1",
+    "chip_mc_id": {
+      "posizione": "bottom-right",
+      "bg": "#1A2B4A",
+      "text_color": "#FFFFFF",
+      "font": "JetBrains Mono 11px",
+      "border_radius": 4,
+      "padding": "2px 8px"
+    },
+    "border_radius": { "sm": 4, "md": 8, "lg": 12 },
+    "ombra": "0 1px 3px rgba(0,0,0,.08)",
+    "formato_export": "SVG preferito; PNG 2x @1200px minimo",
+    "negativi_globali_image_ai": "photorealistic, 3D render, complex textures, serif fonts, cluttered background, watermark, watercolor, vintage style, stock photo elements",
+    "variabili_disponibili": {
+      "MC_ID": "Codice MC es. MC-MAT-1-02",
+      "TITOLO": "Titolo della MC",
+      "AREA": "Sigla area es. MAT",
+      "AREA_EMOJI": "Emoji area es. 🪨",
+      "AREA_COLOR": "Hex colore area",
+      "AREA_BG_COLOR": "Hex sfondo chiaro area",
+      "ZONA_COLOR": "Hex colore zona destinazione",
+      "ANNO": "Anno scolastico 1|2|3",
+      "LIVELLO": "Livello DigComp F|I|A",
+      "SDG_NUM": "Numero SDG 1-17",
+      "FONTE_DATI": "Fonte verificabile"
+    }
+  },
+
+  "colori_area": {
+    "MAT": { "color": "#6D4C41", "bg": "#EFEBE9", "emoji": "🪨" },
+    "DIS": { "color": "#1A3A7A", "bg": "#E8EFF9", "emoji": "📐" },
+    "DIG": { "color": "#006064", "bg": "#E0F7FA", "emoji": "💻" },
+    "ALI": { "color": "#558B2F", "bg": "#F1F8E9", "emoji": "🌾" },
+    "AMB": { "color": "#BF360C", "bg": "#FBE9E7", "emoji": "🏗️" },
+    "ENE": { "color": "#E65100", "bg": "#FFF3E0", "emoji": "⚡" },
+    "COM": { "color": "#6A1B9A", "bg": "#F3E5F5", "emoji": "📡" },
+    "SIS": { "color": "#1B5E7A", "bg": "#E1F0F8", "emoji": "⚙️" }
+  },
+
+  "colori_zona": {
+    "1_hook":      { "color": "#5E35B1", "bg": "#EDE7F6" },
+    "2_concetto":  { "color": "#1565C0", "bg": "#E3F2FD" },
+    "3_esempio":   { "color": "#E65100", "bg": "#FFF3E0" },
+    "4_lab":       { "color": "#00695C", "bg": "#E0F2F1" },
+    "5_compito":   { "color": "#F57F17", "bg": "#FFFDE7" }
+  },
+
+  "distribuzione_per_area": {
+    "MAT": ["RADIALE", "CICLO", "TABELLA_COMPARATIVA", "FLOWCHART"],
+    "DIS": ["ANATOMIA", "POSTER_SINTETICO", "STRATI"],
+    "DIG": ["SCHEMA_SISTEMA", "MAPPA_CONCETTUALE", "ANATOMIA", "GRAFICO_DATI"],
+    "ALI": ["TIMELINE", "TABELLA_COMPARATIVA", "MAPPA_GEOGRAFICA"],
+    "AMB": ["STRATI", "MAPPA_GEOGRAFICA", "MAPPA_CONCETTUALE"],
+    "ENE": ["GRAFICO_DATI", "SCHEMA_SISTEMA", "FLOWCHART", "POSTER_SINTETICO"],
+    "COM": ["TIMELINE", "MAPPA_GEOGRAFICA", "SCHEMA_SISTEMA"],
+    "SIS": ["TABELLA_COMPARATIVA", "MAPPA_GEOGRAFICA", "GRAFICO_DATI"]
+  },
+
+  "tipologie": [
+
+    {
+      "id": "RADIALE",
+      "numero": 1,
+      "nome": "Infografica Radiale",
+      "descrizione": "Elemento centrale circondato da raggi/settori con proprietà o categorie.",
+      "quando_usare": "Classificazioni con un soggetto principale e attributi multipli equivalenti, senza gerarchia tra i rami.",
+      "mc_riferimento": ["MC-MAT-1-01", "MC-MAT-1-06"],
+      "formato_consigliato": { "width": 1200, "height": 900, "aspect_ratio": "4:3" },
+      "variabili_specifiche": {
+        "CENTRO": "Il soggetto centrale es. 'Legno'",
+        "RAGGIO_N": "Proprietà/categoria sul raggio N",
+        "VALORE_N": "Valore o esempio per il raggio N",
+        "N_RAGGI": "Numero di raggi (ottimale 5-7)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Flat design educational infographic, radial spoke diagram. Central circle labeled \"[CENTRO]\" in bold white text on [AREA_COLOR] background. [N_RAGGI] spokes radiating outward, each spoke ending in a rounded card. Spoke colors: alternating between [AREA_COLOR] and a 30% lighter tint. Each card: \"[RAGGIO_N]\" bold label + icon + example \"[VALORE_N]\". Typography: Inter bold for labels, Inter regular for examples. Clean white background #F6F7FA. Thin connector lines 2px. Bottom right: small chip \"[MC_ID]\" in #1A2B4A. Style: modern Italian school textbook illustration, vector flat design, no gradients, no shadows except subtle drop shadow on cards. High contrast, WCAG AA compliant. --ar 4:3 --style raw --v 6",
+        "negative_prompt": "photorealistic, 3D render, complex textures, serif fonts, decorative borders, clipart style, busy background, drop shadows heavy",
+        "parametri_midjourney": { "ar": "4:3", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "elemento_centrale": {
+          "forma": "circle",
+          "diametro_px": 180,
+          "bg_color": "[AREA_COLOR]",
+          "text_color": "#FFFFFF",
+          "font": "Inter Bold 22px",
+          "testo": "[CENTRO]",
+          "posizione": "center"
+        },
+        "raggi": {
+          "struttura": "array di N oggetti, angolo distribuito uniformemente 360/N_RAGGI gradi",
+          "schema_singolo_raggio": {
+            "etichetta": "[RAGGIO_N]",
+            "valore": "[VALORE_N]",
+            "icona": "[emoji]",
+            "colore_spoke": "[AREA_COLOR]",
+            "colore_card_bg": "[AREA_BG_COLOR]",
+            "font_etichetta": "Inter Bold 14px",
+            "font_valore": "Inter Regular 12px"
+          }
+        },
+        "connettori": { "tipo": "line", "colore": "[AREA_COLOR]", "spessore_px": 2, "opacita": 0.6 },
+        "note_agente": "Distribuire i raggi uniformemente. Se N_RAGGI è pari, ruotare di 90° per raggi ortogonali. Etichetta del raggio in bold sopra la card, valore in regular sotto l'icona."
+      }
+    },
+
+    {
+      "id": "CICLO",
+      "numero": 2,
+      "nome": "Ciclo / Circolare",
+      "descrizione": "Fasi disposte in cerchio con frecce direzionali — processo continuo o reversibile.",
+      "quando_usare": "Cicli di vita, processi produttivi circolari, catene chiuse di trasformazione.",
+      "mc_riferimento": ["MC-MAT-1-02", "MC-ALI-2-04"],
+      "formato_consigliato": { "width": 1000, "height": 1000, "aspect_ratio": "1:1" },
+      "variabili_specifiche": {
+        "FASE_N": "Nome della fase (max 6 per leggibilità)",
+        "ATTORE_N": "Soggetto responsabile es. 'Produttore'",
+        "ICONA_N": "Emoji per ogni fase",
+        "IMPATTO_N": "Nota impatto (opzionale)",
+        "DIREZIONE": "clockwise o counterclockwise",
+        "N_FASI": "Numero fasi (3-6)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Flat design circular cycle diagram for educational use, Italian middle school textbook style. [N_FASI] phases arranged in a circle, connected by curved arrows indicating [DIREZIONE] flow. Each phase: rounded rectangle with icon, bold label \"[FASE_N]\", subtext \"[ATTORE_N]\". Phase colors: [AREA_COLOR] primary, lighter tints alternating. Arrows: thick 4px curved [AREA_COLOR] with arrowhead. Center of circle: title \"[TITOLO]\" Inter Bold 20px. SDG badge bottom-left number [SDG_NUM]. White background. No gradients. Chip \"[MC_ID]\" bottom-right. --ar 1:1 --style raw --v 6",
+        "negative_prompt": "complex backgrounds, 3D, photo elements, decorative clipart, too many colors, crowded layout",
+        "parametri_midjourney": { "ar": "1:1", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "centro": { "testo": "[TITOLO]", "dimensione_px": 160, "font": "Inter Bold 18px", "colore": "[AREA_COLOR]" },
+        "fasi": {
+          "struttura": "array N oggetti, angolo = 360/N, prima fase alle 12:00 (0°)",
+          "schema_singola_fase": {
+            "nome": "[FASE_N]",
+            "attore": "[ATTORE_N]",
+            "icona": "[emoji]",
+            "impatto": "[IMPATTO_N o null]",
+            "bg_color": "[AREA_COLOR]",
+            "text_color": "#FFFFFF"
+          }
+        },
+        "frecce": { "tipo": "curved_arc", "direzione": "[DIREZIONE]", "colore": "[AREA_COLOR]", "opacita": 0.7, "spessore_px": 4 },
+        "badge_sdg": { "numero": "[SDG_NUM]", "posizione": "bottom-left" },
+        "note_agente": "Se N_FASI > 5, ridurre testo a max 2 righe per fase. Includere freccia 'Energia in ingresso' se ciclo energetico."
+      }
+    },
+
+    {
+      "id": "FLOWCHART",
+      "numero": 3,
+      "nome": "Flowchart / Diagramma di flusso",
+      "descrizione": "Sequenza di blocchi con frecce e nodi decisionali a rombo.",
+      "quando_usare": "Processi con decisioni, algoritmi, procedure step-by-step, percorsi condizionali.",
+      "mc_riferimento": ["MC-MAT-1-04", "MC-DIG-3-01", "MC-COM-3-02"],
+      "formato_consigliato": { "width": 900, "height": 1200, "aspect_ratio": "3:4" },
+      "variabili_specifiche": {
+        "INIZIO": "Testo blocco ovale iniziale",
+        "FINE": "Testo blocco ovale finale",
+        "PASSO_N": "Testo passo rettangolare N",
+        "DECISIONE_N": "Testo nodo decisionale N (domanda)",
+        "RAMO_SI_N": "Esito ramo Sì del nodo N",
+        "RAMO_NO_N": "Esito ramo No del nodo N"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Clean flat-design flowchart diagram, educational Italian textbook style. Start oval: \"[INIZIO]\", fill [AREA_COLOR], white text. Process steps: rectangles rounded corners, white fill, border 2px [AREA_COLOR]. Decision nodes: diamonds, [AREA_COLOR] 20% opacity, border [AREA_COLOR]. End oval: \"[FINE]\", fill #1A2B4A, white text. Arrows 2px [AREA_COLOR] with arrowheads. \"Sì\" right branch, \"No\" left. Vertical top-to-bottom flow. Font Inter 14px. Background #F6F7FA. Chip \"[MC_ID]\" bottom-right. --ar 3:4 --style raw --v 6",
+        "negative_prompt": "complex nested flows, 3D blocks, colored backgrounds, shadowed boxes, decorative elements",
+        "parametri_midjourney": { "ar": "3:4", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "nodi_tipi": {
+          "ovale": { "uso": "Inizio e Fine", "bg_inizio": "[AREA_COLOR]", "bg_fine": "#1A2B4A", "text_color": "#FFFFFF" },
+          "rettangolo": { "uso": "Passi processo", "bg": "#FFFFFF", "border": "[AREA_COLOR]", "text_color": "#1A1C24" },
+          "rombo": { "uso": "Nodi decisionali", "bg": "[AREA_BG_COLOR]", "border": "[AREA_COLOR]" }
+        },
+        "archi": { "colore": "[AREA_COLOR]", "spessore": 2, "etichette": { "si": "posizione destra", "no": "posizione sinistra" } },
+        "note_agente": "Flusso verticale top-down. Max 8 nodi per leggibilità. Se flusso lungo, usare portrait 900×1400."
+      }
+    },
+
+    {
+      "id": "TIMELINE",
+      "numero": 4,
+      "nome": "Timeline Storica",
+      "descrizione": "Asse orizzontale o verticale con tappe cronologiche, icone e brevi testi.",
+      "quando_usare": "Evoluzione storica, progressi tecnologici, tappe di un processo nel tempo.",
+      "mc_riferimento": ["MC-ALI-2-02", "MC-COM-3-05"],
+      "formato_consigliato": { "width": 1600, "height": 600, "aspect_ratio": "16:6" },
+      "variabili_specifiche": {
+        "DATA_N": "Anno o periodo es. '1850', 'Preistoria', 'Oggi'",
+        "EVENTO_N": "Nome breve evento/invenzione",
+        "DESC_N": "Descrizione max 12 parole",
+        "ICONA_N": "Emoji per la tappa",
+        "N_TAPPE": "Numero tappe (ottimale 5-8)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Horizontal timeline infographic, flat design, educational Italian middle school style. Thick horizontal line in [AREA_COLOR] with [N_TAPPE] milestone markers. Each milestone: circular dot in [AREA_COLOR]. Above line: [DATA_N] Inter Bold 16px [AREA_COLOR]. Below line alternating: icon + \"[EVENTO_N]\" Inter Bold 14px + \"[DESC_N]\" Inter Regular 12px. Gradient arrow at right end indicating 'oggi → futuro'. White background. Color progression: first tapa muted, last vivid [AREA_COLOR]. Chip \"[MC_ID]\" bottom-right. --ar 8:3 --style raw --v 6",
+        "negative_prompt": "vertical layout, crowded text, photos, decorative ornaments, complex backgrounds",
+        "parametri_midjourney": { "ar": "8:3", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "asse": { "colore": "[AREA_COLOR]", "spessore_px": 4, "freccia_finale": true, "orientamento": "orizzontale" },
+        "tappe": {
+          "struttura": "array N oggetti, distanza uniforme o proporzionale alle date",
+          "alternanza_testo": "dispari sopra l'asse, pari sotto — evita sovrapposizioni",
+          "schema_singola_tappa": {
+            "data": "[DATA_N]",
+            "evento": "[EVENTO_N]",
+            "descrizione": "[DESC_N]",
+            "icona": "[emoji]",
+            "colore_marker": "[AREA_COLOR]"
+          }
+        },
+        "note_agente": "Prima tappa 80px dal bordo sinistro. Ultima tappa 80px dal bordo destro. Se date non uniformi, usare scala temporale reale proporzionale."
+      }
+    },
+
+    {
+      "id": "ANATOMIA",
+      "numero": 5,
+      "nome": "Anatomia / Callout",
+      "descrizione": "Immagine o schema di un oggetto/sistema con frecce e didascalie esplicative.",
+      "quando_usare": "Descrizione dei componenti interni di un oggetto, sistema fisico o interfaccia digitale.",
+      "mc_riferimento": ["MC-DIG-1-01", "MC-DIG-2-04", "MC-DIS-2-02"],
+      "formato_consigliato": { "width": 1200, "height": 900, "aspect_ratio": "4:3" },
+      "variabili_specifiche": {
+        "OGGETTO": "Cosa viene sezionato es. 'email di phishing', 'computer', 'disegno quotato'",
+        "PROSPETTIVA": "front | side | top | exploded",
+        "COMPONENTE_N": "Nome componente N",
+        "FUNZIONE_N": "Funzione del componente (max 8 parole)",
+        "N_CALLOUT": "Numero frecce/etichette (max 8)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Educational flat-design anatomy diagram of \"[OGGETTO]\". Central illustration: clean technical flat drawing of \"[OGGETTO]\", viewed from [PROSPETTIVA]. [N_CALLOUT] labeled callout lines pointing to different components. Each callout: thin line to rounded text box, border [AREA_COLOR] 1.5px, white bg. Text box: \"[COMPONENTE_N]\" Inter Bold 13px [AREA_COLOR] + \"[FUNZIONE_N]\" Inter Regular 12px #3F4354. Main object fill: light grey #E8EDF2 with details in [AREA_COLOR]. White background. Title \"[TITOLO]\" top-left Inter Bold 20px [AREA_COLOR]. No overlapping labels. Chip \"[MC_ID]\" bottom-right. --ar 4:3 --style raw --v 6",
+        "negative_prompt": "photorealistic, 3D render, watercolor, vintage illustration, overlapping labels, decorative border",
+        "parametri_midjourney": { "ar": "4:3", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "oggetto_centrale": {
+          "descrizione": "[OGGETTO]",
+          "prospettiva": "[PROSPETTIVA]",
+          "stile": "flat vector, technical drawing",
+          "colore_base": "#E8EDF2",
+          "colore_dettagli": "[AREA_COLOR]",
+          "posizione": "center",
+          "dimensione": "60% del canvas"
+        },
+        "callout": {
+          "max": 8,
+          "schema_singolo": {
+            "componente": "[COMPONENTE_N]",
+            "funzione": "[FUNZIONE_N]",
+            "linea": { "colore": "[AREA_COLOR]", "spessore": 1.5, "tipo": "straight con angolo 45°" },
+            "box": { "bg": "#FFFFFF", "border": "[AREA_COLOR]", "border_radius": 6 }
+          }
+        },
+        "note_agente": "Distribuire callout senza incroci. Per interfacce digitali: usare screenshot stilizzato flat."
+      }
+    },
+
+    {
+      "id": "STRATI",
+      "numero": 6,
+      "nome": "Schema a Strati / Sezione",
+      "descrizione": "Stack verticale di strati sovrapposti con etichette e frecce di flusso.",
+      "quando_usare": "Architetture a livelli (hardware/software), strutture edilizie, gerarchie di sistema.",
+      "mc_riferimento": ["MC-DIG-2-03", "MC-AMB-2-01", "MC-AMB-2-02"],
+      "formato_consigliato": { "width": 900, "height": 1100, "aspect_ratio": "9:11" },
+      "variabili_specifiche": {
+        "STRATO_N": "Nome strato (ordine dal basso verso l'alto)",
+        "DESC_STRATO_N": "Ruolo dello strato (max 10 parole)",
+        "COLORE_STRATO_N": "Colore assegnato allo strato",
+        "FRECCIA_FLUSSO": "Descrizione del flusso tra strati es. 'istruzioni ↕ risorse'"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Flat design layered stack diagram, educational style, Italian textbook. [N_STRATI] horizontal layers stacked vertically. Bottom layer \"[STRATO_1]\": [COLORE_STRATO_1]. Top layer \"[STRATO_N]\": [COLORE_STRATO_N]. Each layer: full-width rectangle, label left-aligned white Inter Bold 16px, description Inter Regular 12px right side. Thin 1px white separators between layers. Vertical double-headed arrow right side: \"[FRECCIA_FLUSSO]\" [AREA_COLOR]. White background. Title \"[TITOLO]\" top-left. Chip \"[MC_ID]\" bottom-right. --ar 3:4 --style raw --v 6",
+        "negative_prompt": "3D layers, perspective view, gradient fills, complex textures, decorative borders",
+        "parametri_midjourney": { "ar": "3:4", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "orientamento": "verticale_dal_basso",
+        "strati": {
+          "struttura": "array N oggetti, strato 1 = base, strato N = top",
+          "schema_singolo_strato": {
+            "nome": "[STRATO_N]",
+            "descrizione": "[DESC_STRATO_N]",
+            "bg_color": "[COLORE_STRATO_N]",
+            "text_color": "#FFFFFF",
+            "altezza_px": 120,
+            "icone": ["[emoji]"]
+          }
+        },
+        "freccia_flusso": { "testo": "[FRECCIA_FLUSSO]", "direzione": "bidirezionale", "colore": "[AREA_COLOR]", "posizione": "destra" },
+        "note_agente": "Architetture software: dal blu scuro (hardware) ai colori chiari (UI). Edifici: colori materici. Indicare sempre la direzione della dipendenza."
+      }
+    },
+
+    {
+      "id": "MAPPA_CONCETTUALE",
+      "numero": 7,
+      "nome": "Mappa Concettuale",
+      "descrizione": "Nodi ellittici/rettangolari collegati da archi con etichette relazionali.",
+      "quando_usare": "Relazioni tra concetti, sistemi complessi senza sequenza temporale, reti di dipendenze.",
+      "mc_riferimento": ["MC-AMB-2-03", "MC-AMB-2-05", "MC-DIG-3-02"],
+      "formato_consigliato": { "width": 1400, "height": 1000, "aspect_ratio": "7:5" },
+      "variabili_specifiche": {
+        "NODO_CENTRALE": "Concetto principale",
+        "NODO_N": "Concetti collegati",
+        "RELAZIONE_A_B": "Etichetta sull'arco tra A e B",
+        "CLUSTER": "Gruppi tematici di nodi (opzionale)",
+        "N_NODI": "Numero nodi totali (max 15)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Flat design concept map, educational infographic style. Central node \"[NODO_CENTRALE]\": large oval [AREA_COLOR] fill, white Inter Bold 18px. Secondary nodes: medium ovals [AREA_BG_COLOR] fill, [AREA_COLOR] text Inter Bold 14px. Tertiary nodes: small rectangles white fill #767C96 border. Connecting lines [AREA_COLOR] 2px with directional arrows. Relationship labels: small text on lines, Inter Italic 11px #5A5F76. Organic radial layout from center. Clusters if present: subtle dashed border grouping. White background. Chip \"[MC_ID]\" bottom-right. --ar 4:3 --style raw --v 6",
+        "negative_prompt": "grid layout, boxes instead of ovals, complex crossing lines, gradient backgrounds",
+        "parametri_midjourney": { "ar": "4:3", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "nodo_centrale": {
+          "forma": "ellisse_grande",
+          "bg_color": "[AREA_COLOR]",
+          "text_color": "#FFFFFF",
+          "font": "Inter Bold 20px"
+        },
+        "nodi_secondari": { "forma": "ellisse_media", "bg_color": "[AREA_BG_COLOR]", "text_color": "[AREA_COLOR]", "font": "Inter Bold 14px" },
+        "nodi_terziari": { "forma": "rettangolo_piccolo", "bg_color": "#FFFFFF", "border_color": "#767C96", "font": "Inter Regular 12px" },
+        "archi": { "colore": "[AREA_COLOR]", "spessore": 2, "etichette_font": "Inter Italic 11px #5A5F76" },
+        "cluster": { "stile": "dashed_border", "padding": 16 },
+        "note_agente": "Layout organico — mai griglia rigida. Max 15 nodi. Cluster separati da spazio bianco non da linee rigide."
+      }
+    },
+
+    {
+      "id": "TABELLA_COMPARATIVA",
+      "numero": 8,
+      "nome": "Tabella Comparativa / Matrice",
+      "descrizione": "Griglia con righe (soggetti/opzioni) e colonne (criteri/parametri) con valutazioni visive.",
+      "quando_usare": "Confronto multi-criterio tra alternative, matrici decisionali, analisi pro/contro.",
+      "mc_riferimento": ["MC-MAT-1-03", "MC-AMB-2-04", "MC-MAT-1-05"],
+      "formato_consigliato": { "width": 1200, "height": 700, "aspect_ratio": "12:7" },
+      "variabili_specifiche": {
+        "RIGA_N": "Soggetti/opzioni sulle righe (es. materiali, soluzioni)",
+        "COL_M": "Criteri sulle colonne (es. costo, impatto, durabilità)",
+        "VALORE_N_M": "Valore della cella",
+        "SCALA": "testo | stelle | punti | colore_gradiente",
+        "FONTE_DATI": "Fonte verificabile (se dati quantitativi)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Clean flat-design comparison matrix table, educational style. Header row: column labels [COL_N] — bold Inter 14px [AREA_COLOR] background white text. First column: row labels [RIGA_N] — bold Inter 14px [AREA_BG_COLOR] background [AREA_COLOR] text. Data cells: white background, centered values using \"[SCALA]\" scale (punti: ●●●○○, stelle: ★★★☆☆, gradiente: green-to-red, testo: Inter Regular 13px). Alternating row tint #F6F7FA/white. Cell borders 1px #D8DAE8, outer border 2px [AREA_COLOR]. Chip \"[MC_ID]\" bottom-right. Optional icons in column headers. --ar 4:3 --style raw --v 6",
+        "negative_prompt": "Excel-style grid, grey backgrounds, heavy borders, all-colored cells, 3D effects",
+        "parametri_midjourney": { "ar": "4:3", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "intestazione_righe": { "bg_color": "[AREA_BG_COLOR]", "text_color": "[AREA_COLOR]", "font": "Inter Bold 14px" },
+        "intestazione_colonne": { "bg_color": "[AREA_COLOR]", "text_color": "#FFFFFF", "font": "Inter Bold 14px" },
+        "scala": "[testo | stelle | punti | colore_gradiente]",
+        "scala_colore_gradiente": { "alto_bene": "#DCFCE7", "basso_male": "#FEE2E2" },
+        "scala_punti": { "simbolo_pieno": "●", "simbolo_vuoto": "○", "max_punti": 5, "colore": "[AREA_COLOR]" },
+        "note_agente": "Aggiungere legenda scala in basso se non ovvia. Non superare 6 righe × 5 colonne per leggibilità scolastica."
+      }
+    },
+
+    {
+      "id": "SCHEMA_SISTEMA",
+      "numero": 9,
+      "nome": "Schema Sistema / Architettura",
+      "descrizione": "Componenti distinti connessi da flussi/frecce direzionali — mostra come le parti comunicano.",
+      "quando_usare": "Reti informatiche, sistemi IoT, impianti tecnologici, flussi di dati o energia.",
+      "mc_riferimento": ["MC-DIG-3-03", "MC-COM-3-04", "MC-COM-3-01"],
+      "formato_consigliato": { "width": 1400, "height": 800, "aspect_ratio": "16:9" },
+      "variabili_specifiche": {
+        "COMPONENTE_N": "Nome nodo del sistema",
+        "FLUSSO_A_B": "Descrizione del flusso da A a B",
+        "LAYER": "Livello logico: fisico | rete | cloud | utente",
+        "PROTOCOLLO_N": "Protocollo comunicazione sull'arco (opzionale)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Flat design system architecture diagram, educational infographic. [N_COMPONENTI] components as rounded rectangles with icon + label. Colors by layer: Physical=[AREA_COLOR]@80%, Network=[AREA_COLOR]@50%, Cloud=[AREA_COLOR]@30%, User=[AREA_BG_COLOR]. Arrows: directional 3px, color matches source layer. Arrow labels: small rounded pill \"[FLUSSO_A_B]\" Inter 11px. Left-to-right flow: physical left, user-facing right. Real-world example icons below each component small muted. White background. Chip \"[MC_ID]\" bottom-right. --ar 16:9 --style raw --v 6",
+        "negative_prompt": "UML notation, complex enterprise diagrams, Cisco-style icons, 3D isometric, dark background",
+        "parametri_midjourney": { "ar": "16:9", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "layer_colori": {
+          "fisico": "[AREA_COLOR]",
+          "rete": "[AREA_COLOR at 60%]",
+          "cloud": "[AREA_COLOR at 40%]",
+          "utente": "[AREA_BG_COLOR]"
+        },
+        "componenti": {
+          "forma": "rounded_rectangle",
+          "schema": { "nome": "[COMPONENTE_N]", "icona": "[emoji]", "layer": "[LAYER]", "esempio_reale": "[testo piccolo muted]" }
+        },
+        "flussi": {
+          "tipo": "freccia_direzionale",
+          "etichetta_pill": { "bg": "#FFFFFF", "border": "[AREA_COLOR]", "font": "Inter 11px" },
+          "colore": "uguale al colore del layer sorgente"
+        },
+        "note_agente": "Layout sinistra→destra per flussi lineari. Layout radiale per sistemi a hub centrale. Includere esempi reali sotto ogni componente."
+      }
+    },
+
+    {
+      "id": "GRAFICO_DATI",
+      "numero": 10,
+      "nome": "Grafico Dati",
+      "descrizione": "Visualizzazione di dati quantitativi reali: barre, linee, Sankey, bolle, area.",
+      "quando_usare": "Serie storiche, confronti quantitativi, flussi energetici, distribuzioni.",
+      "mc_riferimento": ["MC-ENE-3-03", "MC-ENE-3-06", "MC-COM-3-03"],
+      "formato_consigliato": { "width": 1200, "height": 700, "aspect_ratio": "16:9" },
+      "variabili_specifiche": {
+        "TIPO_GRAFICO": "barre | linee | sankey | bolle | area | torta",
+        "ASSE_X": "Etichetta asse X",
+        "ASSE_Y": "Etichetta asse Y con unità",
+        "SERIE_N": "Nome serie di dati N",
+        "FONTE_DATI": "OBBLIGATORIO: fonte verificabile es. 'GSE 2024', 'ISTAT 2023'"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Clean flat-design [TIPO_GRAFICO] chart, educational Italian textbook data visualization. X-axis: \"[ASSE_X]\" Inter Regular 12px #767C96. Y-axis: \"[ASSE_Y]\" Inter Regular 12px #767C96. Grid lines: horizontal only, 1px #E8EDF2. Series colors: [SERIE_1] in [AREA_COLOR], [SERIE_2] in 60% tint, etc. Data labels on key points Inter Bold 13px. Legend right/bottom Inter 12px. Title \"[TITOLO]\" top-left Inter Bold 18px. Annotation callout bubble on key insight. Source credit bottom-left Inter 10px \"[FONTE_DATI]\". White background. Flat colors only. Chip \"[MC_ID]\" bottom-right. --ar 16:9 --style raw --v 6",
+        "negative_prompt": "3D chart, pie chart (unless specified), dark background, rainbow colors, Excel default style, cluttered grid",
+        "parametri_midjourney": { "ar": "16:9", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "assi": {
+          "x": { "etichetta": "[ASSE_X]", "tipo": "categorico | temporale | numerico" },
+          "y": { "etichetta": "[ASSE_Y]", "unita": "[unità]", "scala": "lineare | logaritmica" }
+        },
+        "serie": {
+          "schema": { "nome": "[SERIE_N]", "colore": "[AREA_COLOR o tint]", "dati": [{ "x": "[val]", "y": "[val]" }] }
+        },
+        "griglia": { "solo_orizzontale": true, "colore": "#E8EDF2", "spessore": 1 },
+        "annotazione": { "testo": "[insight chiave]", "stile": "callout_bubble" },
+        "fonte": { "testo": "[FONTE_DATI]", "posizione": "bottom-left", "font": "Inter 10px #969CB2" },
+        "note_agente": "OBBLIGATORIO citare fonte dati verificabile. Sankey: larghezza banda proporzionale al valore, flusso sinistra=input, destra=output. Bolle: specificare a cosa corrisponde la dimensione della bolla."
+      }
+    },
+
+    {
+      "id": "MAPPA_GEOGRAFICA",
+      "numero": 11,
+      "nome": "Mappa Geografica",
+      "descrizione": "Mappa territoriale con dati sovrapposti (punti, aree colorate, icone geolocate).",
+      "quando_usare": "Distribuzione geografica di fenomeni, filiere globali, rischio territoriale, biodiversità.",
+      "mc_riferimento": ["MC-ALI-2-06", "MC-AMB-2-06", "MC-SIS-3-01"],
+      "formato_consigliato": { "width": 1400, "height": 800, "aspect_ratio": "7:4" },
+      "variabili_specifiche": {
+        "TERRITORIO": "Italia | Europa | Mondo | Regione [nome]",
+        "DATO": "Fenomeno da mappare",
+        "TIPO_OVERLAY": "coropleta | punti | icone | etichette",
+        "LEGENDA_MIN": "Valore minimo scala",
+        "LEGENDA_MAX": "Valore massimo scala",
+        "FONTE_DATI": "Fonte verificabile"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Flat design educational map of \"[TERRITORIO]\", clean simplified outline, borders 1.5px #B8BCCE. Overlay type: [TIPO_OVERLAY] showing \"[DATO]\". Coropleta: gradient [AREA_BG_COLOR] low to [AREA_COLOR] high. Punti: circles proportional to value [AREA_COLOR] fill white border. Icone: emoji at locations. Water: #E3F2FD. Land: #F6F7FA. Legend bottom-left Inter 12px. Highlight 3-5 key locations with callout labels. Title \"[TITOLO]\" top-left Inter Bold 18px. Data source bottom-right Inter 10px \"[FONTE_DATI]\". Chip \"[MC_ID]\" bottom-right. --ar 16:9 --style raw --v 6",
+        "negative_prompt": "satellite imagery, topographic detail, 3D relief, dark political maps, photorealistic terrain",
+        "parametri_midjourney": { "ar": "16:9", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "territorio": "[TERRITORIO]",
+        "proiezione": "mercator",
+        "stile_base": { "terra": "#F6F7FA", "acqua": "#E3F2FD", "bordi": "#B8BCCE" },
+        "overlay": {
+          "tipo": "[TIPO_OVERLAY]",
+          "variabile": "[DATO]",
+          "colore_basso": "[AREA_BG_COLOR]",
+          "colore_alto": "[AREA_COLOR]"
+        },
+        "punti_evidenziati": { "schema": { "luogo": "[nome]", "etichetta": "[testo]" } },
+        "legenda": { "posizione": "bottom-left", "valori": ["[min]", "[max]"] },
+        "fonte": "[FONTE_DATI]",
+        "note_agente": "Italia: includere sempre Sardegna e Sicilia. Mondo: preferire proiezione equal-area. Semplificare contorni. Evitare dispute territoriali."
+      }
+    },
+
+    {
+      "id": "POSTER_SINTETICO",
+      "numero": 12,
+      "nome": "Poster Sintetico",
+      "descrizione": "Composizione editoriale multi-elemento: titolo grande, testo scannable, icone, mini-schemi.",
+      "quando_usare": "Sintesi visiva MC intera, tavole da appendere in classe, riferimento rapido.",
+      "mc_riferimento": ["MC-DIS-1-01", "MC-ENE-3-01", "MC-DIS-3-01"],
+      "formato_consigliato": { "width": 794, "height": 1123, "aspect_ratio": "A4 portrait", "nota": "Print-ready 96dpi; aumentare a 300dpi per stampa" },
+      "variabili_specifiche": {
+        "N_SEZIONI": "Numero blocchi tematici nel poster (3-6)",
+        "SEZIONE_N_TITOLO": "Titolo del blocco N",
+        "SEZIONE_N_CONTENUTO": "Contenuto: lista, schema mini, icone",
+        "FRASE_CHIAVE": "Frase memorabile da enfatizzare visivamente (max 20 parole)"
+      },
+      "prompt_image_ai": {
+        "strumenti": ["Midjourney", "DALL-E 3", "Flux"],
+        "prompt": "Educational classroom wall poster, flat design, portrait A3 format. Header band: title \"[TITOLO]\" Inter ExtraBold 36px white on [AREA_COLOR]. Body: [N_SEZIONI] grid sections, each: section title Inter Bold 16px [AREA_COLOR], 48px icon, 3-4 bullet points, bordered 1.5px [AREA_COLOR] rounded rectangle. Highlight band: \"[FRASE_CHIAVE]\" Inter Bold 18px [AREA_BG_COLOR] background. Footer: area emoji, SDG badge [SDG_NUM], QR placeholder. White background. Clean generous padding. Teacher classroom aesthetic. --ar 2:3 --style raw --v 6",
+        "negative_prompt": "cluttered layout, too many fonts, complex backgrounds, photo elements, small unreadable text",
+        "parametri_midjourney": { "ar": "2:3", "style": "raw", "v": "6" }
+      },
+      "brief_canva_claude": {
+        "header": {
+          "titolo": "[TITOLO]",
+          "bg_color": "[AREA_COLOR]",
+          "text_color": "#FFFFFF",
+          "font": "Inter ExtraBold 36px",
+          "mc_chip": "[MC_ID]",
+          "area_emoji": "[AREA_EMOJI]"
+        },
+        "sezioni": {
+          "griglia": "2×N o 3×N in base a N_SEZIONI",
+          "schema_singola": {
+            "titolo": "[SEZIONE_N_TITOLO]",
+            "icona": "[emoji 48px]",
+            "contenuto_tipo": "lista | mini_schema | icone_griglia",
+            "contenuto": ["[bullet 1]", "[bullet 2]", "[bullet 3]"],
+            "border": "1.5px solid [AREA_COLOR]",
+            "border_radius": 12
+          }
+        },
+        "frase_chiave": {
+          "testo": "[FRASE_CHIAVE]",
+          "bg_color": "[AREA_BG_COLOR]",
+          "text_color": "[AREA_COLOR]",
+          "font": "Inter Bold 18px"
+        },
+        "footer": {
+          "sdg_badge": "[SDG_NUM]",
+          "qr_placeholder": true,
+          "mc_chip": "[MC_ID]"
+        },
+        "note_agente": "Testo minimo leggibile a 1m = 14px. Max 120 parole totali nel corpo. Sezioni con altezza uniforme. Non superare 6 sezioni."
+      }
+    }
+
+  ],
+
+  "mapping_mc_tipologie": {
+    "MC-DIG-1-01": "ANATOMIA",
+    "MC-DIG-1-02": "FLOWCHART",
+    "MC-DIS-1-01": "POSTER_SINTETICO",
+    "MC-DIS-1-02": "TABELLA_COMPARATIVA",
+    "MC-MAT-1-01": "RADIALE",
+    "MC-MAT-1-02": "CICLO",
+    "MC-MAT-1-03": "TABELLA_COMPARATIVA",
+    "MC-MAT-1-04": "FLOWCHART",
+    "MC-MAT-1-05": "TABELLA_COMPARATIVA",
+    "MC-MAT-1-06": "TABELLA_COMPARATIVA",
+    "MC-ALI-2-01": "TABELLA_COMPARATIVA",
+    "MC-ALI-2-02": "TIMELINE",
+    "MC-ALI-2-03": "TABELLA_COMPARATIVA",
+    "MC-ALI-2-04": "CICLO",
+    "MC-ALI-2-05": "GRAFICO_DATI",
+    "MC-ALI-2-06": "MAPPA_GEOGRAFICA",
+    "MC-AMB-2-01": "STRATI",
+    "MC-AMB-2-02": "STRATI",
+    "MC-AMB-2-03": "MAPPA_CONCETTUALE",
+    "MC-AMB-2-04": "TABELLA_COMPARATIVA",
+    "MC-AMB-2-05": "MAPPA_CONCETTUALE",
+    "MC-AMB-2-06": "MAPPA_GEOGRAFICA",
+    "MC-DIG-2-01": "MAPPA_CONCETTUALE",
+    "MC-DIG-2-02": "MAPPA_CONCETTUALE",
+    "MC-DIG-2-03": "STRATI",
+    "MC-DIG-2-04": "ANATOMIA",
+    "MC-DIS-2-01": "POSTER_SINTETICO",
+    "MC-DIS-2-02": "ANATOMIA",
+    "MC-COM-3-01": "SCHEMA_SISTEMA",
+    "MC-COM-3-02": "FLOWCHART",
+    "MC-COM-3-03": "GRAFICO_DATI",
+    "MC-COM-3-04": "SCHEMA_SISTEMA",
+    "MC-COM-3-05": "TIMELINE",
+    "MC-COM-3-06": "GRAFICO_DATI",
+    "MC-DIG-3-01": "FLOWCHART",
+    "MC-DIG-3-02": "MAPPA_CONCETTUALE",
+    "MC-DIG-3-03": "SCHEMA_SISTEMA",
+    "MC-DIG-3-04": "ANATOMIA",
+    "MC-DIS-3-01": "POSTER_SINTETICO",
+    "MC-DIS-3-02": "TABELLA_COMPARATIVA",
+    "MC-ENE-3-01": "POSTER_SINTETICO",
+    "MC-ENE-3-02": "FLOWCHART",
+    "MC-ENE-3-03": "GRAFICO_DATI",
+    "MC-ENE-3-04": "SCHEMA_SISTEMA",
+    "MC-ENE-3-05": "ANATOMIA",
+    "MC-ENE-3-06": "GRAFICO_DATI",
+    "MC-SIS-3-01": "MAPPA_GEOGRAFICA",
+    "MC-SIS-3-02": "MAPPA_GEOGRAFICA",
+    "MC-SIS-3-03": "MAPPA_CONCETTUALE",
+    "MC-SIS-3-04": "TABELLA_COMPARATIVA"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "MC-DIG-2-01",
+  "area": "DIG",
+  "anno": 2,
+  "titolo": "Coding con linguaggi a blocchi",
+  "descrizione": "Lo studente sa programmare in Scratch (o linguaggio a blocchi equivalente) usando le strutture fondamentali (sequenza, selezione, ciclo, variabili), sa decomporre un problema in sottoproblemi e sa testare, correggere e documentare il proprio codice, applicando il pensiero computazionale a problemi reali.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa risolvere problemi tecnici e utilizzare applicativi informatici",
+      "traguardo": "Lo studente crea programmi a blocchi usando le strutture di controllo fondamentali"
+    },
+    "DC": {
+      "ref": "5.2 Identificare i bisogni e rispondere con soluzioni tecnologiche",
+      "livello": "I",
+      "nota": "Lo studente usa Scratch per creare una soluzione digitale a un problema definito"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente decompone il problema in sottoproblemi gestibili prima di iniziare a programmare"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente affronta il debug come processo sistematico di identificazione e risoluzione degli errori"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione e infrastrutture",
+      "nota": "Il coding è competenza trasversale per l'innovazione tecnologica del XXI secolo"
+    }
+  },
+  "outputApp": {
+    "quiz": "Debug: mostra uno script Scratch con un errore logico — il lo studente individua dove non funziona e propone la correzione.",
+    "microlearning": "Card deck 5 slide: sequenza, selezione (if/else), ciclo (repeat/forever), variabile, evento — schema visivo + esempio. 4 min.",
+    "visual": "Mappa mentale: strutture di Scratch — colori, categorie, principali blocchi per categoria.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-DIG-1-01",
+    "MC-DIG-1-02"
+  ],
+  "tags": [
+    "Scratch",
+    "coding",
+    "algoritmi",
+    "pensiero computazionale",
+    "classe-2",
+    "DIG"
+  ],
+  "compito_realta": "Crea un quiz interattivo in Scratch sull'alimentazione: almeno 5 domande, punteggio, feedback per risposta corretta/sbagliata, schermata finale con il risultato.",
+  "sdg": [
+    4,
+    9
+  ],
+  "note_didattiche": {
+    "base": "Fornire il progetto Scratch con la struttura già impostata (1 domanda funzionante). Lo studente aggiunge solo le altre 4.",
+    "avanzato": "Aggiungere livelli di difficoltà adattivi: le domande successive cambiano in base alle risposte precedenti."
+  }
+}

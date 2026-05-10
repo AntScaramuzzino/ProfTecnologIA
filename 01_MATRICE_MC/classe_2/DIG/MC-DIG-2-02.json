@@ -1,0 +1,56 @@
+{
+  "id": "MC-DIG-2-02",
+  "area": "DIG",
+  "anno": 2,
+  "titolo": "Dati, privacy e identità digitale",
+  "descrizione": "Lo studente comprende cosa sono i dati personali, come vengono raccolti e usati dalle piattaforme digitali, conosce i propri diritti (GDPR) e sa gestire la propria identità digitale in modo consapevole, distinguendo informazioni pubbliche da private e adottando comportamenti sicuri online.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa utilizzare comunicazioni procedurali e istruzioni tecniche",
+      "traguardo": "Lo studente gestisce consapevolmente la propria identità digitale e i propri dati personali"
+    },
+    "DC": {
+      "ref": "4.2 Proteggere i dati personali e la privacy",
+      "livello": "I",
+      "nota": "Lo studente conosce i propri diritti GDPR e sa come esercitarli sulle piattaforme che usa"
+    },
+    "EC": {
+      "ref": "Into action / Self-awareness",
+      "nota": "Lo studente valuta criticamente come le proprie scelte digitali costruiscono la sua reputazione online"
+    },
+    "LC": {
+      "ref": "Social / Empathy",
+      "nota": "Lo studente comprende come la propria presenza digitale impatta sugli altri"
+    },
+    "EV": {
+      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "La privacy digitale è diritto fondamentale in una democrazia"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario: 'Quale di questi dati è personale secondo il GDPR?' — 8 esempi, risposta multipla con spiegazione legale semplificata.",
+    "microlearning": "Card deck 5 slide: dato personale, GDPR, impronta digitale, diritto all'oblio, impostazioni privacy. 4 min.",
+    "visual": "Mappa dell'impronta digitale: categorie di dati lasciati online — social, acquisti, navigazione, app, geolocalizzazione.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-DIG-1-01"
+  ],
+  "tags": [
+    "privacy",
+    "GDPR",
+    "dati personali",
+    "identità digitale",
+    "classe-2",
+    "DIG"
+  ],
+  "compito_realta": "Mappa la tua impronta digitale in una settimana: elenca tutti i servizi/app che hai usato, che dati raccolgono (controlla le privacy policy in 2 righe ciascuna) e valuta se li useresti ancora sapendo cosa raccolgono.",
+  "sdg": [
+    16
+  ],
+  "note_didattiche": {
+    "base": "Fornire la lista di 5 app pre-selezionate con le privacy policy già semplificate. Lo studente deve solo valutare i dati raccolti.",
+    "avanzato": "Richiedere formalmente la copia dei propri dati a una piattaforma (es. Google Takeout) e analizzare cosa ha raccolto."
+  }
+}

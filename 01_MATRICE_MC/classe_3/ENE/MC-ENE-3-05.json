@@ -1,0 +1,59 @@
+{
+  "id": "MC-ENE-3-05",
+  "area": "ENE",
+  "anno": 3,
+  "titolo": "Macchine termiche e motori",
+  "titolo_libro": "Come trasformiamo il calore in movimento?",
+  "descrizione": "Lo studente conosce il principio di funzionamento delle macchine termiche (ciclo di Carnot semplificato, motore a scoppio a 4 tempi, turbina a vapore), comprende il concetto di rendimento e le sue limitazioni fisiche imposte dalla termodinamica, e sa confrontare l'efficienza del motore termico con quella del motore elettrico.",
+  "fonte": "Paci 2014",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principi che regolano i sistemi tecnologici; macchine motrici e trasformazione dell'energia",
+      "traguardo": "Lo studente descrive il funzionamento di una macchina termica, calcola il rendimento e lo confronta con il limite teorico di Carnot"
+    },
+    "DC": { "ref": "5.1 Risolvere problemi tecnici", "livello": "I", "nota": "Lo studente usa simulatori animati di motori per visualizzare i cicli termodinamici e verifica i calcoli di rendimento" },
+    "EC": { "ref": "Ideas and opportunities / Sustainability", "nota": "Lo studente valuta l'inefficienza intrinseca delle macchine termiche come motivazione fisica per la transizione ai motori elettrici" },
+    "LC": { "ref": "Thinking / Systems thinking", "nota": "Lo studente traccia il flusso energetico da combustibile a lavoro utile identificando dove e perché l'energia si disperde" },
+    "EV": { "ref": "SDG 7 — Energia pulita; SDG 13 — Cambiamento climatico", "nota": "Il basso rendimento dei motori a combustione interna (25-35%) è la principale causa di inefficienza energetica nei trasporti" }
+  },
+  "outputApp": {
+    "quiz": "Calcolo rendimento: 'Un motore assorbe 1000 J e produce 280 J di lavoro — qual è il rendimento? È vicino al limite di Carnot per quelle temperature?' Feedback con passaggi.",
+    "microlearning": "Animazione 4 step: aspirazione → compressione → scoppio → scarico — ciclo a 4 tempi con valori di T e P. 4 min.",
+    "visual": "Schema Sankey comparativo: auto a benzina (rendimento ~28%) vs. motore elettrico (rendimento ~90%) — stesso input energetico.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": ["MC-ENE-3-01", "MC-ENE-3-02"],
+  "tags": ["macchine termiche", "motore a scoppio", "rendimento", "termodinamica", "Carnot", "motore elettrico", "classe-3", "ENE"],
+  "compito_realta": "Confronta il motore a scoppio di un'auto tradizionale con un motore elettrico: cerca i rendimenti tipici di entrambi, costruisci un diagramma di Sankey semplificato per ciascuno (100 unità di energia in input) e discuti quale è più efficiente — considerando anche la fonte energetica a monte.",
+  "sdg": [7, 13],
+  "sdg_principale": 13,
+  "note_didattiche": {
+    "base": "Fornire i valori di rendimento già trovati e il template del diagramma di Sankey. Lo studente inserisce solo i numeri e scrive il confronto.",
+    "avanzato": "Analizzare l'efficienza dell'intera filiera well-to-wheel per auto elettrica vs. termica: dalla centrale elettrica (o dal pozzo) fino alla ruota."
+  },
+  "hook_audio": {
+    "titolo": "Perché il cofano è caldo?",
+    "oggetto_reale": "motore di un'automobile",
+    "domanda_avvio": "Se un motore a benzina spreca il 70% dell'energia come calore, perché lo usiamo ancora?",
+    "durata_min": 2,
+    "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica."
+  },
+  "professione_futura": {
+    "titolo": "Ingegnere della propulsione elettrica",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta sistemi di propulsione per veicoli elettrici e ibridi, ottimizzando il recupero energetico in frenata e l'efficienza complessiva della trasmissione.",
+    "competenze_chiave": ["termodinamica applicata", "elettrotecnica", "simulazione CAE", "gestione batterie BMS"]
+  },
+  "clil_termini": [
+    { "italiano": "rendimento", "inglese": "efficiency", "pronuncia_ipa": "/ɪˈfɪʃənsi/" },
+    { "italiano": "motore a scoppio", "inglese": "internal combustion engine", "pronuncia_ipa": "/ɪnˈtɜːnəl kəmˈbʌstʃən ˈendʒɪn/" },
+    { "italiano": "ciclo termodinamico", "inglese": "thermodynamic cycle", "pronuncia_ipa": "/ˌθɜːməʊdaɪˈnæmɪk ˈsaɪkl/" }
+  ],
+  "uda_collegata": "UDA-2",
+  "stem_connections": {
+    "matematica": "Il rendimento η = W_utile / Q_assorbito è una percentuale. Il limite di Carnot η_max = 1 − T_fredda/T_calda (in Kelvin) mostra come il rendimento dipende dalla differenza di temperatura.",
+    "scienze": "Secondo principio della termodinamica: il calore non può essere convertito completamente in lavoro in un ciclo. L'entropia aumenta sempre.",
+    "arte_geo_storia": "La macchina a vapore di James Watt (1769) ha innescato la Prima Rivoluzione Industriale — senza termodinamica non ci sarebbe stato il capitalismo industriale moderno.",
+    "frase_ponte": "L'energia obbedisce a leggi fisiche immutabili — e una di queste dice che non puoi mai convertire tutto il calore in lavoro."
+  }
+}

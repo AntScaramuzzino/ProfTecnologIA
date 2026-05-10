@@ -1,0 +1,55 @@
+{
+  "id": "MC-COM-3-03",
+  "area": "COM",
+  "anno": 3,
+  "titolo": "Sistemi di trasporto e mobilità sostenibile",
+  "descrizione": "Lo studente conosce i principali sistemi di trasporto (stradale, ferroviario, aereo, marittimo), sa confrontarne l'efficienza energetica e l'impatto ambientale, e sa progettare un piano di mobilità sostenibile per un contesto reale, valutando trade-off tra comodità, costo, tempo e impatto.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi di trasporto e le relazioni con l'ambiente",
+      "traguardo": "Lo studente confronta i sistemi di trasporto per efficienza e impatto e progetta soluzioni sostenibili"
+    },
+    "DC": {
+      "ref": "2.1 Interagire con tecnologie digitali",
+      "livello": "I",
+      "nota": "Lo studente usa Google Maps e calcolatori di emissioni online per confrontare modalità di trasporto"
+    },
+    "EC": {
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente progetta un piano di mobilità per la propria scuola con azioni concrete e realizzabili"
+    },
+    "LC": {
+      "ref": "Social / Collaboration",
+      "nota": "Lo studente lavora in gruppo per raccogliere dati sulla mobilità scolastica e costruire proposte condivise"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città sostenibili; SDG 13 — Cambiamento climatico",
+      "nota": "I trasporti producono il 25% delle emissioni europee — cambiare mobilità è risposta concreta"
+    }
+  },
+  "outputApp": {
+    "quiz": "Confronto impatto: 'Vai da Roma a Milano — aereo, treno o auto? Quale ha meno CO₂ per passeggero?' Multipla con dati reali e infografica.",
+    "microlearning": "Card deck 5 slide: auto, treno, aereo, nave, bici — emissioni g CO₂/km per passeggero, velocità, costo medio. 4 min.",
+    "visual": "Confronto modale: grafico a bolle — X = velocità, Y = emissioni, dimensione bolla = costo.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": null,
+  "tags": [
+    "trasporti",
+    "mobilità sostenibile",
+    "emissioni",
+    "intermodalità",
+    "classe-3",
+    "COM"
+  ],
+  "compito_realta": "Progetta il piano di mobilità sostenibile per la scuola: somministra un sondaggio ai compagni su come vengono a scuola, analizza i dati, calcola le emissioni medie e proponi 3 azioni per ridurle.",
+  "sdg": [
+    11,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Fornire il sondaggio già predisposto e i fattori di emissione. Lo studente analizza i dati di una sola classe.",
+    "avanzato": "Presentare il piano al Consiglio di Istituto come proposta concreta con dati, obiettivi e azioni da approvare."
+  }
+}

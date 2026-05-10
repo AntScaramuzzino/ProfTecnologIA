@@ -1,0 +1,58 @@
+{
+  "id": "MC-ALI-2-04",
+  "area": "ALI",
+  "anno": 2,
+  "titolo": "La filiera alimentare e l'etichetta",
+  "descrizione": "Lo studente sa ricostruire la filiera produttiva di un alimento comune (dal campo alla tavola), identifica gli attori della filiera e sa leggere un'etichetta alimentare completa (ingredienti, additivi, provenienza, certificazioni), collegando trasparenza dell'etichetta a scelte di consumo informate.",
+  "fonte": "Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
+      "traguardo": "Lo studente descrive la filiera alimentare e interpreta le informazioni obbligatorie sull'etichetta"
+    },
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente cerca online informazioni su provenienza e certificazioni alimentari per verificare le etichette"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Valuing ideas",
+      "nota": "Lo studente comprende che la trasparenza della filiera ha valore economico e sociale"
+    },
+    "LC": {
+      "ref": "Social / Responsible citizenship",
+      "nota": "Lo studente esercita scelte di consumo informate come atto di cittadinanza"
+    },
+    "EV": {
+      "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
+      "nota": "Conoscere la filiera permette scelte che supportano produttori locali e pratiche sostenibili"
+    }
+  },
+  "outputApp": {
+    "quiz": "Ordina gli step: metti in sequenza corretta la filiera del pane (grano → molitura → impasto → cottura → distribuzione → acquisto). Feedback se sbagliato.",
+    "microlearning": "Card deck 5 slide: la filiera della pasta — un attore per slide con foto e funzione. 4 min.",
+    "visual": "Mappa della filiera: diagramma a frecce dal campo al supermercato con distanza media percorsa.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-ALI-2-01",
+    "MC-ALI-2-02"
+  ],
+  "tags": [
+    "filiera",
+    "etichetta alimentare",
+    "tracciabilità",
+    "consumo",
+    "classe-2",
+    "ALI"
+  ],
+  "compito_realta": "Analizza l'etichetta di 3 prodotti alimentari diversi: identifica paese d'origine, additivi presenti, certificazioni (bio, IGP, DOP) e valuta quale offre più trasparenza al consumatore.",
+  "sdg": [
+    2,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Fornire le 3 etichette già stampate con le sezioni evidenziate. Lo studente deve solo compilare una tabella comparativa.",
+    "avanzato": "Confrontare la filiera di un prodotto locale vs. uno importato: calcolare la stima delle emissioni di CO₂ per il trasporto."
+  }
+}

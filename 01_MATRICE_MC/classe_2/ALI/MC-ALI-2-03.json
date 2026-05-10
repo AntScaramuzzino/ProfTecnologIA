@@ -1,0 +1,57 @@
+{
+  "id": "MC-ALI-2-03",
+  "area": "ALI",
+  "anno": 2,
+  "titolo": "Educazione alimentare e stili di vita",
+  "descrizione": "Lo studente conosce i principi della dieta equilibrata (macronutrienti, micronutrienti, piramide alimentare), sa leggere un'etichetta nutrizionale, e comprende la relazione tra alimentazione, salute e stile di vita, sviluppando consapevolezza critica rispetto alle pressioni commerciali sul cibo.",
+  "fonte": "Paci 2014 + Hypertech 2020",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa gestire semplici calcoli per la vita quotidiana",
+      "traguardo": "Lo studente sa leggere un'etichetta nutrizionale e valutare la qualità di un alimento"
+    },
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente valuta criticamente le affermazioni nutrizionali sui packaging alimentari"
+    },
+    "EC": {
+      "ref": "Into action / Self-awareness",
+      "nota": "Lo studente riflette sui propri comportamenti alimentari e identifica aree di miglioramento"
+    },
+    "LC": {
+      "ref": "Self-management / Wellbeing",
+      "nota": "Lo studente collega scelte alimentari consapevoli al proprio benessere fisico e mentale"
+    },
+    "EV": {
+      "ref": "SDG 3 — Salute e benessere; SDG 12 — Consumo responsabile",
+      "nota": "Alimentazione consapevole è atto di cura di sé e di scelta di consumo responsabile"
+    }
+  },
+  "outputApp": {
+    "quiz": "Lettura etichetta: mostra l'etichetta nutrizionale di un prodotto e chiedi: è adatto come snack quotidiano? Multipla con calcolo guidato.",
+    "microlearning": "Card deck 5 slide: piramide alimentare interattiva — tocca ogni livello per scoprire frequenza e porzioni. 4 min.",
+    "visual": "Confronto visivo: etichetta nutrizionale di 3 prodotti 'simili' (barrette energetiche) — chi vince?",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-ALI-2-01"
+  ],
+  "tags": [
+    "nutrizione",
+    "etichetta nutrizionale",
+    "dieta equilibrata",
+    "salute",
+    "classe-2",
+    "ALI"
+  ],
+  "compito_realta": "Tieni un diario alimentare per 3 giorni: annota tutto ciò che mangi, classificalo per gruppi alimentari e valuta se la tua dieta è equilibrata rispetto alla piramide alimentare.",
+  "sdg": [
+    3,
+    12
+  ],
+  "note_didattiche": {
+    "base": "Fornire la tabella del diario già strutturata con i gruppi alimentari pre-etichettati. Concentrarsi su un solo giorno.",
+    "avanzato": "Calcolare l'apporto calorico giornaliero medio e confrontarlo con il fabbisogno energetico per la propria età e attività."
+  }
+}

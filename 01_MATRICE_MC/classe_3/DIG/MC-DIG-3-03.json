@@ -1,0 +1,103 @@
+{
+  "id": "MC-DIG-3-03",
+  "area": "DIG",
+  "anno": 3,
+  "titolo": "Raccolta dati da sensori e sistemi IoT",
+  "descrizione": "Lo studente comprende come i sensori trasformano grandezze fisiche in dati digitali, sa connettere sensori a un dispositivo programmabile (es. micro:bit, Arduino), raccogliere dati in tempo reale, organizzarli in tabelle e interpretarli. Comprende il principio dell'Internet of Things come rete di oggetti che comunicano dati.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Obiettivi specifici Informatica secondaria I grado: Connettere dispositivi informatici tra di loro e con periferiche, anche per realizzare semplici esperienze di raccolta ed analisi dati e di controllo di dispositivi esterni. Conoscenze: raccolta dati da sensori.",
+      "traguardo": "Lo studente progetta e realizza una semplice esperienza di raccolta dati da sensori, ne interpreta i risultati e li collega a decisioni concrete"
+    },
+    "DC": {
+      "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+      "livello": "A",
+      "nota": "Lo studente raccoglie dati fisici reali tramite sensori, li organizza in formato strutturato e li analizza per trarne conclusioni"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Creativity",
+      "nota": "Lo studente progetta un sistema di monitoraggio per un problema reale della scuola o della comunità"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente usa i dati raccolti per prendere decisioni fondate su evidenza, non su intuizione"
+    },
+    "EV": {
+      "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Azione per il clima",
+      "nota": "Il monitoraggio ambientale con sensori è strumento di cittadinanza attiva: misurare per capire, capire per agire"
+    }
+  },
+  "outputApp": {
+    "quiz": "Scenario progettuale: 'Vuoi monitorare la qualità dell'aria nella tua aula — quale sensore usi? Ogni quanti minuti campioni? Dove salvi i dati?' Risposta guidata con scelte multiple a cascata, feedback tecnico per ogni scelta.",
+    "microlearning": "Card deck 6 slide: sensore (definizione e tipi) / trasduttore / analogico vs digitale / campionamento / dataset / IoT (cos'è e come funziona). 5 min.",
+    "visual": "Schema sistema IoT: sensore → microcontrollore → rete → cloud → dashboard. Con esempi reali (termostato smart, centralina meteo, smartwatch).",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-DIG-2-03",
+    "MC-ENE-3-04"
+  ],
+  "tags": [
+    "sensori",
+    "IoT",
+    "Internet of Things",
+    "dati fisici",
+    "Arduino",
+    "micro:bit",
+    "monitoraggio",
+    "classe-3",
+    "DIG"
+  ],
+  "compito_realta": "Progetta e realizza una stazione di monitoraggio per la tua aula: usa un micro:bit o Arduino con sensore di temperatura e luminosità, raccogli dati per 3 giorni a intervalli di 30 minuti, visualizza i dati su un grafico e scrivi una relazione di 10 righe con almeno 3 conclusioni (es. 'l'aula è più calda del 20% dopo la terza ora', 'la luce è insufficiente nelle giornate nuvolose').",
+  "sdg": [
+    11,
+    13
+  ],
+  "note_didattiche": {
+    "base": "Fornire il codice già scritto per la raccolta dati. Lo studente deve solo caricare il programma, raccogliere i dati e compilare il grafico con valori già organizzati in una tabella Excel fornita.",
+    "avanzato": "Aggiungere un sensore di CO2 e progettare un sistema di allerta automatica (LED rosso/verde) quando la concentrazione supera la soglia consigliata per ambienti scolastici (1000 ppm). Documentare con una scheda tecnica del progetto."
+  },
+  "hook_audio": {
+    "titolo": "Il tuo quartiere respira — ma lo sai quanto bene?",
+    "oggetto_reale": "una centralina meteo fai-da-te con micro:bit",
+    "domanda_avvio": "Sai quanta CO2 c'è adesso nell'aria della tua aula — e se è abbastanza per stare svegli e concentrati?",
+    "durata_min": 3,
+    "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico."
+  },
+  "professione_futura": {
+    "titolo": "IoT Solutions Architect",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta sistemi di raccolta e analisi dati distribuiti (smart city, industria 4.0, agricoltura di precisione) che connettono sensori fisici al cloud per prendere decisioni automatizzate.",
+    "competenze_chiave": [
+      "programmazione embedded",
+      "protocolli di comunicazione IoT (MQTT, LoRa)",
+      "analisi dati in tempo reale",
+      "progettazione sistemi distribuiti"
+    ]
+  },
+  "sdg_principale": 11,
+  "clil_termini": [
+    {
+      "italiano": "sensore",
+      "inglese": "sensor",
+      "pronuncia_ipa": "/ˈsensər/"
+    },
+    {
+      "italiano": "Internet delle cose",
+      "inglese": "Internet of Things (IoT)",
+      "pronuncia_ipa": "/ˈɪntənet əv θɪŋz/"
+    },
+    {
+      "italiano": "campionamento",
+      "inglese": "sampling",
+      "pronuncia_ipa": "/ˈsɑːmplɪŋ/"
+    },
+    {
+      "italiano": "flusso di dati",
+      "inglese": "data stream",
+      "pronuncia_ipa": "/ˈdeɪtə striːm/"
+    }
+  ],
+  "uda_collegata": null
+}

@@ -1,0 +1,57 @@
+{
+  "id": "MC-DIS-3-02",
+  "area": "DIS",
+  "anno": 3,
+  "titolo": "Disegno CAD e progettazione digitale",
+  "descrizione": "Lo studente sa usare un software CAD 2D/3D (LibreCAD, Tinkercad, FreeCAD) per produrre disegni tecnici precisi e modelli tridimensionali, comprende la differenza tra disegno manuale e digitale in termini di precisione, modificabilità e collaborazione, e sa esportare un file per la stampa 3D o il taglio laser.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche con strumenti manuali e digitali",
+      "traguardo": "Lo studente produce disegni tecnici e modelli 3D con software CAD open source"
+    },
+    "DC": {
+      "ref": "3.2 Integrare e rielaborare contenuti digitali",
+      "livello": "A",
+      "nota": "Lo studente usa il CAD per progettare, modificare e ottimizzare un oggetto in modo iterativo"
+    },
+    "EC": {
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente gestisce un progetto digitale dalla bozza al file finale esportabile"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente usa il CAD per risolvere problemi di adattamento dimensionale in modo rapido e verificabile"
+    },
+    "EV": {
+      "ref": "SDG 9 — Innovazione; SDG 4 — Istruzione di qualità",
+      "nota": "La progettazione digitale è competenza fondamentale per l'accesso alle professioni STEM del futuro"
+    }
+  },
+  "outputApp": {
+    "quiz": "Identifica l'errore: dato un modello CAD di una scatola con dimensioni incoerenti — individua quale quota è sbagliata e corrigi. Feedback tecnico.",
+    "microlearning": "Tutorial guidato 5 min: costruire un supporto per smartphone in Tinkercad — 5 operazioni base (add, remove, align, group, export).",
+    "visual": "Confronto workflow: disegno manuale vs. CAD — vantaggi, svantaggi, quando scegliere quale.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-DIS-3-01"
+  ],
+  "tags": [
+    "CAD",
+    "disegno digitale",
+    "Tinkercad",
+    "stampa 3D",
+    "classe-3",
+    "DIS"
+  ],
+  "compito_realta": "Progetta in Tinkercad un oggetto utile per la scuola (es. porta-penne, segnapagine, supporto tablet): realizza il modello 3D con almeno 3 operazioni booleane, quota le dimensioni principali e esporta in STL per la stampa 3D.",
+  "sdg": [
+    4,
+    9
+  ],
+  "note_didattiche": {
+    "base": "Seguire un tutorial guidato passo-passo per costruire un oggetto pre-scelto. Limitarsi a 2 operazioni booleane.",
+    "avanzato": "Progettare autonomamente l'oggetto partendo da un brief di design (vincoli dimensionali + funzionali), iterare 2 versioni e argomentare le modifiche apportate."
+  }
+}
