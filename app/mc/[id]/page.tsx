@@ -240,10 +240,14 @@ function FormattedParagraph({ value }: { value: string }) {
   const titleMatch = value.match(/^([^.\n:]{3,64})([.:])\s+([\s\S]+)$/);
 
   if (titleMatch && shouldPromoteParagraphLead(titleMatch[1])) {
+    // Rimuove asterischi orfani che si generano quando il bold marker (**Testo:**)
+    // viene spezzato dalla regex sul separatore : o .
+    const lead = titleMatch[1].replace(/\*+/g, "").trim();
+    const rest = titleMatch[3].replace(/^\*+\s*/, "");
     return (
       <p className="whitespace-pre-line">
-        <strong className="font-black text-slate-950">{renderInlineMarkdown(titleMatch[1])}{titleMatch[2]}</strong>{" "}
-        {renderInlineMarkdown(titleMatch[3])}
+        <strong className="font-black text-slate-950">{lead}{titleMatch[2]}</strong>{" "}
+        {renderInlineMarkdown(rest)}
       </p>
     );
   }
@@ -252,21 +256,25 @@ function FormattedParagraph({ value }: { value: string }) {
 }
 
 function shouldPromoteParagraphLead(value: string): boolean {
-  const clean = value.replace(/\*\*/g, "").trim();
+  const clean = value.replace(/\*+/g, "").trim();
   if (clean.length > 64) return false;
   if (/^(primo|secondo|terzo|obiettivo|materiali|procedura|scenario|consegna|esempio|attenzione)$/i.test(clean)) return true;
   if (/^(fase\s+\d+|domanda di avvio|discarica|incenerimento|termovalorizzazione|riciclo|riuso|riparazione|compostaggio)$/i.test(clean)) return true;
-  return /^[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9\s'’()/-]{2,}$/.test(clean) && clean.split(/\s+/).length <= 7;
+  return /^[A-ZÀ-Ú][A-Za-zÀ-ÿ0-9\s’’()/-]{2,}$/.test(clean) && clean.split(/\s+/).length <= 7;
 }
 
 function renderInlineMarkdown(value: string) {
-  const nodes = [];
-  const pattern = /(\*\*[^*]+\*\*|\*[^*]+\*)/g;
+  const nodes: React.ReactNode[] = [];
+  // Non attraversa i newline: evita match su span multiparagrafo
+  const pattern = /(\*\*[^*\n]+\*\*|\*[^*\n]+\*)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
   while ((match = pattern.exec(value)) !== null) {
-    if (match.index > lastIndex) nodes.push(value.slice(lastIndex, match.index));
+    if (match.index > lastIndex) {
+      // Rimuove asterischi non accoppiati nel testo tra i match
+      nodes.push(value.slice(lastIndex, match.index).replace(/\*+/g, ""));
+    }
     const token = match[0];
     const strong = token.startsWith("**");
     const text = strong ? token.slice(2, -2) : token.slice(1, -1);
@@ -280,7 +288,8 @@ function renderInlineMarkdown(value: string) {
     lastIndex = match.index + token.length;
   }
 
-  if (lastIndex < value.length) nodes.push(value.slice(lastIndex));
+  // Rimuove asterischi non accoppiati nel testo rimanente
+  if (lastIndex < value.length) nodes.push(value.slice(lastIndex).replace(/\*+/g, ""));
   return nodes;
 }
 

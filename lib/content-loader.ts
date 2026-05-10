@@ -37,12 +37,16 @@ function isEditorialLine(line: string): boolean {
   const clean = stripMarkdown(line).replace(/\s+/g, " ").trim();
   if (!clean) return false;
   if (/^(area|anno|livello digcomp|sdg|fonte|struttura)\s*:/i.test(clean)) return true;
+  // Righe di metadati in linea: **Area:** ... · **Anno:** ... · **Livello DigComp:** ...
+  if (/\barea\s*:/i.test(clean) && /\banno\s*:/i.test(clean)) return true;
+  if (/\bsdg\s*:/i.test(clean) && /\bfonte\s*:/i.test(clean)) return true;
   if (/\bfonte\s*:/i.test(clean) && /\bstruttura\s*:/i.test(clean)) return true;
   if (/versione contenuto completo per editing/i.test(clean)) return true;
   if (/^mc versione\s+\d/i.test(clean)) return true;
   if (/^qr code audio/i.test(clean)) return true;
   if (/^ascolta prima di leggere/i.test(clean)) return true;
   if (/^script completo\s*:/i.test(clean)) return true;
+  if (/^domanda di avvio\s*:?\s*$/i.test(clean)) return true;
   return false;
 }
 
