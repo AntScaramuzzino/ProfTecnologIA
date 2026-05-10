@@ -176,16 +176,16 @@ export default function QuizWidget({ mcId, livello }: QuizWidgetProps) {
   const pct = Math.round((score / totalQ) * 100);
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white overflow-hidden">
+    <div className="overflow-hidden rounded-xl border border-gray-200 bg-white">
       {/* Header */}
-      <div className="flex items-center justify-between border-b border-gray-100 px-5 py-3 bg-gray-50">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-100 bg-gray-50 px-4 py-3 sm:px-5">
         <span className="text-sm font-semibold text-gray-700">Quiz interattivo</span>
-        <div className="flex gap-2">
+        <div className="flex gap-1.5 sm:gap-2">
           {(["F", "I", "A"] as const).map((l) => (
             <button
               key={l}
               onClick={() => setSelectedLevel(l)}
-              className={`rounded-full border px-3 py-0.5 text-xs font-medium transition-colors ${
+              className={`rounded-full border px-2.5 py-0.5 text-xs font-medium transition-colors sm:px-3 ${
                 selectedLevel === l
                   ? LEVEL_COLORS[l]
                   : "border-gray-200 bg-white text-gray-500 hover:bg-gray-100"

@@ -67,20 +67,20 @@ export default async function MCPage({ params }: Props) {
         </div>
       </section>
 
-      <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:gap-8 sm:px-6 sm:py-10 lg:grid-cols-[minmax(0,1fr)_340px]">
-        <div className="space-y-6 sm:space-y-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 py-8 sm:gap-8 sm:px-6 sm:py-10 lg:grid-cols-[minmax(0,1fr)_340px]">
+        <div className="min-w-0 space-y-6 sm:space-y-8">
           <section className="rounded-lg border border-amber-200 bg-[#fff7dd] p-4 sm:p-6">
             <p className="text-sm font-black text-amber-800">Compito di realtà</p>
-            <p className="mt-2 max-w-4xl text-base font-bold leading-7 text-amber-950 sm:mt-3 sm:text-xl sm:leading-9">{mc.compito_realta}</p>
+            <p className="mt-2 text-base font-bold leading-7 text-amber-950 sm:mt-3 sm:text-xl sm:leading-9">{mc.compito_realta}</p>
           </section>
 
           {text && (
-            <section className="rounded-lg border border-slate-200 bg-white px-4 py-6 shadow-sm sm:px-5 sm:py-7 md:px-8">
+            <section className="min-w-0 rounded-lg border border-slate-200 bg-white px-4 py-6 shadow-sm sm:px-5 sm:py-7 md:px-8">
               {text.intro && <ReadableText value={text.intro} />}
               <div className={cx("divide-y divide-slate-200", text.intro ? "mt-6 sm:mt-7" : "")}>
                 {text.sections.map((section) => (
                   <article key={section.title} className="py-6 first:pt-0 last:pb-0 sm:py-8">
-                    <h2 className="max-w-3xl text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
+                    <h2 className="text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
                     <ReadableText value={section.body} className="mt-3 sm:mt-4" />
                   </article>
                 ))}
@@ -89,9 +89,9 @@ export default async function MCPage({ params }: Props) {
           )}
 
           {visuals.length > 1 && (
-            <section className="rounded-lg border border-slate-200 bg-white p-6">
+            <section className="rounded-lg border border-slate-200 bg-white p-4 sm:p-6">
               <p className="text-xs font-black uppercase tracking-wide text-slate-500">Galleria visuale</p>
-              <div className="mt-4 grid gap-5 md:grid-cols-2">
+              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
                 {visuals.slice(1).map((asset) => (
                   <MCVisual key={asset.src} asset={asset} alt={`${asset.label} per ${mc.titolo}`} />
                 ))}
@@ -99,9 +99,9 @@ export default async function MCPage({ params }: Props) {
             </section>
           )}
 
-          <section className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+          <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
             <p className="text-sm font-black text-slate-500">Asset app previsti</p>
-            <div className="mt-4 grid gap-4 md:grid-cols-3">
+            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
               <AssetBox title="Quiz" body={mc.outputApp.quiz} />
               <AssetBox title="Microlearning" body={mc.outputApp.microlearning} />
               <AssetBox title="Visual" body={mc.outputApp.visual} />
@@ -111,7 +111,7 @@ export default async function MCPage({ params }: Props) {
           <QuizWidget mcId={mc.id} livello={(level === "H" ? "A" : level) as "F" | "I" | "A"} />
         </div>
 
-        <aside className="space-y-5">
+        <aside className="min-w-0 space-y-5">
           <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-black text-slate-500">Differenziazione</p>
             <div className="mt-4 space-y-4">

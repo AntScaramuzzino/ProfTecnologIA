@@ -45,10 +45,13 @@ a, button {
 .reading-flow {
   font-size: 1.0625rem;
   line-height: 1.85;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .reading-flow p {
   max-width: 74ch;
+  overflow-wrap: break-word;
 }
 
 .reading-flow p + p {
