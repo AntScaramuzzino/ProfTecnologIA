@@ -7,7 +7,7 @@ import AudioPlayer from "@/components/mc/AudioPlayer";
 import VideoGallery from "@/components/mc/VideoGallery";
 import FlippedVideos from "@/components/mc/FlippedVideos";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
-import { getMCTextContent, getVisualAssets, getMCHookAudio, getMCHookTranscript, getVideoPlaylist } from "@/lib/content-loader";
+import { getMCTextContent, getVisualAssets, getMCHookAudio, getMCHookTranscript, getMCQuizData, getVideoPlaylist } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
 interface Props {
@@ -29,6 +29,7 @@ export default async function MCPage({ params }: Props) {
   const text = getMCTextContent(mc.id);
   const hookAudioSrc    = getMCHookAudio(mc.id);
   const hookTranscript  = getMCHookTranscript(mc.id);
+  const quizData        = getMCQuizData(mc.id);
   const videoPlaylist = getVideoPlaylist(mc.id);
   const prereqs = getPrerequisiteChain(mc.id);
   const related = getAllMCs()
@@ -156,7 +157,11 @@ export default async function MCPage({ params }: Props) {
             </div>
           </section>
 
-          <QuizWidget mcId={mc.id} livello={(level === "H" ? "A" : level) as "F" | "I" | "A"} />
+          <QuizWidget
+            mcId={mc.id}
+            livello={(level === "H" ? "A" : level) as "F" | "I" | "A"}
+            quizData={quizData ?? undefined}
+          />
         </div>
 
         <aside className="min-w-0 space-y-5">

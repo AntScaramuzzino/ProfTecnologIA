@@ -22,9 +22,24 @@ interface QuizData {
   domande: QuizDomanda[];
 }
 
+// Struttura quiz reali (da content-loader getMCQuizData)
+interface RealQuizOption {
+  id: string;
+  testo: string;
+  corretto?: boolean;
+  feedback?: string;
+}
+interface RealQuizQuestion {
+  livello: "F" | "I" | "A";
+  domanda: string;
+  opzioni: RealQuizOption[];
+  spiegazione?: string;
+}
+
 interface QuizWidgetProps {
   mcId: string;
   livello: "F" | "I" | "A";
+  quizData?: RealQuizQuestion[]; // quiz reali validati — se assenti usa demo
 }
 
 const LEVEL_LABELS: Record<string, string> = {
@@ -108,7 +123,7 @@ function buildDemoQuiz(mcId: string, livello: "F" | "I" | "A"): QuizData {
   };
 }
 
-export default function QuizWidget({ mcId, livello }: QuizWidgetProps) {
+export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps) {
   const [selectedLevel, setSelectedLevel] = useState<"F" | "I" | "A">(livello);
   const [quiz, setQuiz] = useState<QuizData | null>(null);
   const [currentQ, setCurrentQ] = useState(0);
@@ -117,10 +132,31 @@ export default function QuizWidget({ mcId, livello }: QuizWidgetProps) {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [answers, setAnswers] = useState<Record<string, string>>({});
+  const isReal = !!quizData && quizData.length > 0;
 
   useEffect(() => {
-    // Try to load from 04_CONTENUTI, fall back to demo
-    const data = buildDemoQuiz(mcId, selectedLevel);
+    // Usa quiz reali validati se disponibili, altrimenti demo
+    let data: QuizData;
+    if (isReal) {
+      // Converte il formato RealQuizQuestion → QuizDomanda interno
+      const domande: QuizDomanda[] = quizData!
+        .filter((q) => q.livello === selectedLevel)
+        .map((q, i) => ({
+          id: `q${i}`,
+          domanda: q.domanda,
+          livello: q.livello,
+          spiegazione: q.spiegazione,
+          risposta_corretta: q.opzioni.find((o) => o.corretto)?.id ?? "a",
+          opzioni: q.opzioni.map((o) => ({
+            id: o.id,
+            testo: o.testo,
+            feedback_errato: o.corretto ? undefined : o.feedback,
+          })),
+        }));
+      data = { mc_id: mcId, domande };
+    } else {
+      data = buildDemoQuiz(mcId, selectedLevel);
+    }
     setQuiz(data);
     setCurrentQ(0);
     setSelected(null);
@@ -179,7 +215,14 @@ export default function QuizWidget({ mcId, livello }: QuizWidgetProps) {
     <div className="overflow-hidden rounded-xl border border-gray-200 bg-white">
       {/* Header */}
       <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-100 bg-gray-50 px-4 py-3 sm:px-5">
-        <span className="text-sm font-semibold text-gray-700">Quiz interattivo</span>
+        <div className="flex items-center gap-2">
+          <span className="text-sm font-semibold text-gray-700">Quiz interattivo</span>
+          {isReal && (
+            <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-bold text-emerald-700">
+              ✓ Validato
+            </span>
+          )}
+        </div>
         <div className="flex gap-1.5 sm:gap-2">
           {(["F", "I", "A"] as const).map((l) => (
             <button

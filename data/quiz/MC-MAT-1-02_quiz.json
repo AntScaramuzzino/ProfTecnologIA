@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-MAT-1-02",
+  "titolo": "Ciclo di vita dei materiali e cicli tecnologici",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Qual è la prima fase del ciclo tecnologico completo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Uso",
+          "feedback": "La fase di uso è la sesta."
+        },
+        {
+          "id": "b",
+          "testo": "Distribuzione",
+          "feedback": "La distribuzione è la quinta fase."
+        },
+        {
+          "id": "c",
+          "testo": "Estrazione delle materie prime",
+          "corretto": true,
+          "feedback": "Esatto! Il ciclo inizia sempre dall'estrazione: minerali, piante o petrolio dalla terra."
+        },
+        {
+          "id": "d",
+          "testo": "Smaltimento",
+          "feedback": "Lo smaltimento è l'ultima fase."
+        }
+      ],
+      "spiegazione": "Il ciclo inizia sempre dall'estrazione: minerali, piante o petrolio dalla terra."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa significa 'riciclo' nel ciclo di vita di un materiale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Buttare il prodotto nella spazzatura",
+          "feedback": "Questo è lo smaltimento in discarica."
+        },
+        {
+          "id": "b",
+          "testo": "Trasformare il materiale usato in nuova materia prima riutilizzabile",
+          "corretto": true,
+          "feedback": "Esatto! Il riciclo chiude il ciclo: il materiale non diventa rifiuto ma nuova risorsa."
+        },
+        {
+          "id": "c",
+          "testo": "Riparare l'oggetto rotto",
+          "feedback": "Questo è la riparazione, non il riciclo."
+        },
+        {
+          "id": "d",
+          "testo": "Rivenderlo di seconda mano",
+          "feedback": "Questo è il riuso."
+        }
+      ],
+      "spiegazione": "Il riciclo chiude il ciclo: il materiale non diventa rifiuto ma nuova risorsa."
+    },
+    {
+      "livello": "F",
+      "domanda": "Quante fasi ha il ciclo tecnologico completo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "3",
+          "feedback": "Troppo poche."
+        },
+        {
+          "id": "b",
+          "testo": "5",
+          "feedback": "Mancano 2 fasi."
+        },
+        {
+          "id": "c",
+          "testo": "7",
+          "corretto": true,
+          "feedback": "Esatto! Le 7 fasi: estrazione → lavorazione → produzione → logistica → distribuzione → uso → fine vita."
+        },
+        {
+          "id": "d",
+          "testo": "10",
+          "feedback": "Troppe fasi."
+        }
+      ],
+      "spiegazione": "Le 7 fasi: estrazione → lavorazione → produzione → logistica → distribuzione → uso → fine vita."
+    },
+    {
+      "livello": "I",
+      "domanda": "In quale fase sei direttamente coinvolto come consumatore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Estrazione",
+          "feedback": "L'estrazione avviene lontano da te."
+        },
+        {
+          "id": "b",
+          "testo": "Lavorazione industriale",
+          "feedback": "La lavorazione è in fabbrica."
+        },
+        {
+          "id": "c",
+          "testo": "Uso e fine vita",
+          "corretto": true,
+          "feedback": "Esatto! Come consumatore scegli come usare e smaltire: fasi ad alto impatto individuale."
+        },
+        {
+          "id": "d",
+          "testo": "Logistica",
+          "feedback": "La logistica è gestita da aziende."
+        }
+      ],
+      "spiegazione": "Come consumatore scegli come usare e smaltire: fasi ad alto impatto individuale."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa è l'economia circolare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sistema che produce di più in meno tempo",
+          "feedback": "La velocità produttiva non è il punto."
+        },
+        {
+          "id": "b",
+          "testo": "Il fine vita diventa materia prima per un nuovo ciclo",
+          "corretto": true,
+          "feedback": "Esatto! Nell'economia circolare non esiste 'rifiuto': ogni fine vita è inizio di un nuovo ciclo."
+        },
+        {
+          "id": "c",
+          "testo": "Un modello economico basato solo sul risparmio",
+          "feedback": "Il risparmio è un effetto, non la definizione."
+        },
+        {
+          "id": "d",
+          "testo": "La distribuzione gratuita dei prodotti",
+          "feedback": "Non riguarda la distribuzione gratuita."
+        }
+      ],
+      "spiegazione": "Nell'economia circolare non esiste 'rifiuto': ogni fine vita è inizio di un nuovo ciclo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché un prodotto locale ha spesso impatto ambientale minore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché costa meno",
+          "feedback": "Il prezzo non riguarda l'impatto ambientale."
+        },
+        {
+          "id": "b",
+          "testo": "Perché la logistica è più breve e produce meno CO₂",
+          "corretto": true,
+          "feedback": "Esatto! La distanza percorsa nella logistica determina direttamente le emissioni di trasporto."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i materiali locali sono sempre biologici",
+          "feedback": "Non sono automaticamente biologici."
+        },
+        {
+          "id": "d",
+          "testo": "Perché non ha fase di smaltimento",
+          "feedback": "Lo smaltimento esiste per tutti i prodotti."
+        }
+      ],
+      "spiegazione": "La distanza percorsa nella logistica determina direttamente le emissioni di trasporto."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la LCA (Life Cycle Assessment)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un metodo per calcolare il prezzo",
+          "feedback": "Il prezzo non è oggetto della LCA."
+        },
+        {
+          "id": "b",
+          "testo": "Un'analisi dell'impatto ambientale lungo tutte le fasi della vita del prodotto",
+          "corretto": true,
+          "feedback": "Esatto! La LCA misura tutti gli impatti ambientali dalla culla alla tomba — strumento standard di sostenibilità."
+        },
+        {
+          "id": "c",
+          "testo": "Una norma ISO sulla sicurezza",
+          "feedback": "Le norme ISO sulla sicurezza sono diverse."
+        },
+        {
+          "id": "d",
+          "testo": "Un database di materiali riciclabili",
+          "feedback": "Non è un database."
+        }
+      ],
+      "spiegazione": "La LCA misura tutti gli impatti ambientali dalla culla alla tomba — strumento standard di sostenibilità."
+    },
+    {
+      "livello": "A",
+      "domanda": "Packaging riciclato + produzione a carbone. Questo è:",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Economia circolare genuina",
+          "feedback": "Deve essere sistemica, non solo del packaging."
+        },
+        {
+          "id": "b",
+          "testo": "Greenwashing parziale",
+          "corretto": true,
+          "feedback": "Esatto! Il greenwashing comunica un'immagine ecologica parziale, nascondendo gli impatti maggiori."
+        },
+        {
+          "id": "c",
+          "testo": "Certificazione ISO 14001",
+          "feedback": "ISO 14001 richiede gestione ambientale completa."
+        },
+        {
+          "id": "d",
+          "testo": "Produzione sostenibile",
+          "feedback": "La produzione a carbone non è sostenibile."
+        }
+      ],
+      "spiegazione": "Il greenwashing comunica un'immagine ecologica parziale, nascondendo gli impatti maggiori."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa è la 'catena del valore' nel ciclo tecnologico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il prezzo finale del prodotto",
+          "feedback": "Il prezzo è un risultato, non la definizione."
+        },
+        {
+          "id": "b",
+          "testo": "L'insieme dei soggetti che contribuiscono alla produzione e distribuzione di un bene",
+          "corretto": true,
+          "feedback": "Esatto! La catena del valore collega tutti gli attori dal fornitore di materie prime al consumatore finale."
+        },
+        {
+          "id": "c",
+          "testo": "Il valore economico dei materiali riciclati",
+          "feedback": "È solo una parte."
+        },
+        {
+          "id": "d",
+          "testo": "Il costo del trasporto internazionale",
+          "feedback": "Il trasporto è solo un anello."
+        }
+      ],
+      "spiegazione": "La catena del valore collega tutti gli attori dal fornitore di materie prime al consumatore finale."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

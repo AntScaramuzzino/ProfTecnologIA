@@ -164,6 +164,35 @@ function _cleanScriptText(raw: string): string {
     .trim();
 }
 
+// ── QUIZ REALI (CARBLE-CDD criterio D — Disegno didattico) ───────────────────
+
+export interface QuizOption {
+  id: string;
+  testo: string;
+  corretto?: boolean;
+  feedback?: string;
+}
+
+export interface QuizQuestion {
+  livello: "F" | "I" | "A";
+  domanda: string;
+  opzioni: QuizOption[];
+  spiegazione?: string;
+}
+
+const QUIZ_ROOT = path.join(process.cwd(), "data", "quiz");
+
+export function getMCQuizData(mcId: string): QuizQuestion[] | null {
+  const file = path.join(QUIZ_ROOT, `${mcId}_quiz.json`);
+  if (!fs.existsSync(file)) return null;
+  try {
+    const data = JSON.parse(fs.readFileSync(file, "utf-8"));
+    return (data.domande ?? []) as QuizQuestion[];
+  } catch {
+    return null;
+  }
+}
+
 export function getMCHookTranscript(mcId: string): string | null {
   const file = path.join(TRANSCRIPTS_ROOT, `${mcId}_hook-script.md`);
   if (!fs.existsSync(file)) return null;
