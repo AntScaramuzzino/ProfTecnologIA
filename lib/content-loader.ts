@@ -120,22 +120,34 @@ export function getPrimaryVisual(mcId: string): VisualAsset | null {
 }
 
 function assetRank(name: string): number {
-  if (name.includes("infografica")) return 0;
-  if (name.includes("illustrazione")) return 1;
-  if (name.includes("immagine_da_md")) return 2;
-  if (name.includes("ciclo") || name.includes("diagram")) return 3;
+  // Rank 0 — infografiche (migliore per card hero e dettaglio)
+  if (name.includes("infografica") || name.includes("img2-infografica")) return 0;
+  // Rank 1 — immagini fotorealistiche AI e illustrazioni (hero visivo)
+  if (name.includes("ai-fotorealistica") || name.includes("img1-soggetto")
+      || name.includes("illustrazione") || name.includes("soggetto_")) return 1;
+  // Rank 2 — contesto documentaristico
+  if (name.includes("ai-contesto") || name.includes("img3-contesto")) return 2;
+  // Rank 3 — immagini da testo e diagrammi
+  if (name.includes("immagine_da_md") || name.includes("ciclo") || name.includes("diagram")) return 3;
+  // Rank 4 — ritratti professione e altro
   return 4;
 }
 
 function getAssetKind(name: string): VisualAsset["kind"] {
-  if (name.includes("illustrazione") || name.includes("soggetto")) return "hero";
-  if (name.includes("infografica") || name.includes("immagine_da_md")) return "generated";
+  if (name.includes("infografica") || name.includes("img2-infografica")) return "generated";
+  if (name.includes("ai-fotorealistica") || name.includes("img1-soggetto")
+      || name.includes("illustrazione") || name.includes("soggetto")) return "hero";
+  if (name.includes("ai-contesto") || name.includes("img3-contesto")) return "generated";
   if (name.includes("ciclo") || name.includes("diagram")) return "diagram";
   return "other";
 }
 
 function getAssetLabel(name: string): string {
-  if (name.includes("infografica")) return "Infografica";
+  if (name.includes("infografica") || name.includes("img2-infografica")) return "Infografica";
+  if (name.includes("ai-fotorealistica")) return "Illustrazione AI";
+  if (name.includes("img1-soggetto")) return "Soggetto";
+  if (name.includes("ai-contesto") || name.includes("img3-contesto")) return "Contesto reale";
+  if (name.includes("img4-professione")) return "Professione del futuro";
   if (name.includes("illustrazione")) return "Illustrazione";
   if (name.includes("immagine_da_md")) return "Tavola da testo";
   if (name.includes("ciclo")) return "Diagramma";
