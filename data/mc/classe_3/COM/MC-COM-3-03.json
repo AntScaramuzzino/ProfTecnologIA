@@ -34,7 +34,10 @@
     "visual": "Confronto modale: grafico a bolle — X = velocità, Y = emissioni, dimensione bolla = costo.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": null,
+  "prerequisiti": [
+    "MC-COM-3-01",
+    "MC-COM-3-02"
+  ],
   "tags": [
     "trasporti",
     "mobilità sostenibile",
