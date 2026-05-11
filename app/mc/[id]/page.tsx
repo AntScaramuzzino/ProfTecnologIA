@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import MCCard from "@/components/MCCard";
 import MCVisual from "@/components/MCVisual";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -22,6 +23,22 @@ interface Props {
 
 export async function generateStaticParams() {
   return getAllMCs().map((mc) => ({ id: mc.id }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { id } = await params;
+  const mc = getMCById(id);
+  if (!mc) return { title: "ProfTecnologIA" };
+  const area = AREA_META[mc.area];
+  const areaLabel = area?.label ?? mc.area;
+  return {
+    title: `ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
+    description: mc.descrizione,
+    openGraph: {
+      title: `ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
+      description: mc.descrizione,
+    },
+  };
 }
 
 export default async function MCPage({ params }: Props) {
@@ -51,7 +68,7 @@ export default async function MCPage({ params }: Props) {
       <Breadcrumb
         items={[
           { label: "ProfTecnologIA", href: "/" },
-          { label: areaBreadcrumbLabel, href: `/area/${mc.area.toLowerCase()}`, emoji: area?.emoji, color: areaHex },
+          { label: areaBreadcrumbLabel, href: `/area/${mc.area}`, emoji: area?.emoji, color: areaHex },
           { label: mc.id, color: areaHex },
         ]}
       />
