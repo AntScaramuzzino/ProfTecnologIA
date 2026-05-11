@@ -15,14 +15,22 @@ export default function MCVisual({ asset, alt, className = "" }: MCVisualProps) 
     );
   }
 
+  // Alt text descrittivo (CARBLE-CDD criterio L — accessibilità)
+  const descriptiveAlt = alt || `${asset.label} — immagine didattica generata con AI`;
+
   return (
     <figure className={`w-full overflow-hidden ${className}`}>
       <img
         src={asset.src}
-        alt={alt}
+        alt={descriptiveAlt}
         className="h-full w-full max-w-full rounded-lg object-contain"
       />
-      <figcaption className="mt-2 text-xs text-slate-500">{asset.label}</figcaption>
+      <figcaption className="mt-2 text-xs text-slate-500">
+        {asset.label}
+        {asset.kind === "generated" || asset.kind === "hero" ? (
+          <span className="ml-1 text-slate-400">· Immagine AI</span>
+        ) : null}
+      </figcaption>
     </figure>
   );
 }

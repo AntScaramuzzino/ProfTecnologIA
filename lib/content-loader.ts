@@ -132,6 +132,35 @@ export function getMCHookAudio(mcId: string): string | null {
   return `${PUBLIC_BASE_PATH}/assets/audio/${mcId}_hook-audio.mp3`;
 }
 
+// ── TRASCRIZIONI HOOK (CARBLE-CDD criterio L — accessibilità) ─────────────────
+
+const TRANSCRIPTS_ROOT = path.join(process.cwd(), "data", "transcripts");
+
+function _cleanScriptText(raw: string): string {
+  return raw
+    .replace(/^#.*$/gm, "")                          // rimuovi titoli
+    .replace(/^\*\*\[BLOCCO[^\]]*\]\*\*\s*$/gm, "")  // rimuovi header blocchi
+    .replace(/^---+\s*$/gm, "")                       // rimuovi separatori
+    .replace(/^\*\*[A-Z][^:*]+:\*\*\s*$/gm, "")       // rimuovi label metadati
+    .replace(/\[PAUSA\]/g, "")
+    .replace(/\[ENFASI\]/g, "")
+    .replace(/\*{1,2}([^*\n]+)\*{1,2}/g, "$1")        // rimuovi bold/italic
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+export function getMCHookTranscript(mcId: string): string | null {
+  const file = path.join(TRANSCRIPTS_ROOT, `${mcId}_hook-script.md`);
+  if (!fs.existsSync(file)) return null;
+  try {
+    const raw = fs.readFileSync(file, "utf-8");
+    const cleaned = _cleanScriptText(raw);
+    return cleaned.length > 50 ? cleaned : null;
+  } catch {
+    return null;
+  }
+}
+
 // ── VIDEO PLAYLIST ──────────────────────────────────────────────────────────
 
 export interface VideoItem {

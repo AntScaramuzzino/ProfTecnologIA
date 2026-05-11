@@ -36,7 +36,7 @@ export default function VideoGallery({ videos, mcTitolo }: VideoGalleryProps) {
               <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                 <iframe
                   className="absolute inset-0 h-full w-full"
-                  src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0`}
+                  src={`https://www.youtube.com/embed/${video.id}?autoplay=1&rel=0&cc_load_policy=1&cc_lang_pref=it`}
                   title={video.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

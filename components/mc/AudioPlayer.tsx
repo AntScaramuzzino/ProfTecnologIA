@@ -5,12 +5,14 @@ import { useRef, useState, useEffect } from "react";
 interface AudioPlayerProps {
   src: string;
   titolo: string;
-  durata?: number; // minuti stimati
+  durata?: number;      // minuti stimati
+  transcript?: string;  // testo trascrizione (CARBLE-CDD criterio L)
 }
 
-export default function AudioPlayer({ src, titolo, durata }: AudioPlayerProps) {
+export default function AudioPlayer({ src, titolo, durata, transcript }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying]     = useState(false);
+  const [showTranscript, setShowTranscript] = useState(false);
   const [progress, setProgress]   = useState(0);   // 0-100
   const [current, setCurrent]     = useState(0);   // secondi
   const [duration, setDuration]   = useState(0);   // secondi
@@ -123,6 +125,28 @@ export default function AudioPlayer({ src, titolo, durata }: AudioPlayerProps) {
           )}
         </div>
       </div>
+
+      {/* Trascrizione — accessibilità (CARBLE-CDD criterio L) */}
+      {transcript && (
+        <div className="mt-3 border-t border-orange-100 pt-3">
+          <button
+            onClick={() => setShowTranscript(!showTranscript)}
+            className="flex w-full items-center justify-between text-xs font-semibold text-orange-600 hover:text-orange-800"
+            aria-expanded={showTranscript}
+          >
+            <span>📄 {showTranscript ? "Nascondi" : "Leggi"} la trascrizione</span>
+            <span>{showTranscript ? "▲" : "▼"}</span>
+          </button>
+          {showTranscript && (
+            <div className="mt-3 max-h-72 overflow-y-auto rounded-lg bg-white p-4 text-xs leading-6 text-slate-600 shadow-inner">
+              <p className="mb-2 text-xs font-black uppercase tracking-wide text-orange-400">
+                Trascrizione — {titolo}
+              </p>
+              <p className="whitespace-pre-line">{transcript}</p>
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }

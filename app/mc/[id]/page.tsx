@@ -7,7 +7,7 @@ import AudioPlayer from "@/components/mc/AudioPlayer";
 import VideoGallery from "@/components/mc/VideoGallery";
 import FlippedVideos from "@/components/mc/FlippedVideos";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
-import { getMCTextContent, getVisualAssets, getMCHookAudio, getVideoPlaylist } from "@/lib/content-loader";
+import { getMCTextContent, getVisualAssets, getMCHookAudio, getMCHookTranscript, getVideoPlaylist } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
 interface Props {
@@ -27,7 +27,8 @@ export default async function MCPage({ params }: Props) {
   const visuals = getVisualAssets(mc.id);
   const primaryVisual = visuals[0] ?? null;
   const text = getMCTextContent(mc.id);
-  const hookAudioSrc = getMCHookAudio(mc.id);
+  const hookAudioSrc    = getMCHookAudio(mc.id);
+  const hookTranscript  = getMCHookTranscript(mc.id);
   const videoPlaylist = getVideoPlaylist(mc.id);
   const prereqs = getPrerequisiteChain(mc.id);
   const related = getAllMCs()
@@ -97,9 +98,14 @@ export default async function MCPage({ params }: Props) {
                     <article key={section.title} className="py-6 first:pt-0 last:pb-0 sm:py-8">
                       <h2 className="text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
 
-                      {/* Player audio hook */}
+                      {/* Player audio hook con trascrizione (CARBLE-CDD criterio L) */}
                       {isInnesca && hookAudioSrc && (
-                        <AudioPlayer src={hookAudioSrc} titolo={hookTitle} durata={hookMin} />
+                        <AudioPlayer
+                          src={hookAudioSrc}
+                          titolo={hookTitle}
+                          durata={hookMin}
+                          transcript={hookTranscript ?? undefined}
+                        />
                       )}
 
                       {/* Domanda stimolo in giallo */}
