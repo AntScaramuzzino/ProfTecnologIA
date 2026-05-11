@@ -229,30 +229,53 @@ export default async function MCPage({ params }: Props) {
 
       {/* Flashcard — sistema di ripasso a fine MC */}
       {flashcards.length > 0 && (
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <FlashcardDeck cards={flashcards} mcTitolo={mc.titolo} />
-        </div>
-      )}
-
-      {/* Formula trasparenza AI — Protocollo CARBLE-CDD */}
-      <div className="mx-auto max-w-7xl px-4 pb-4 sm:px-6">
-        <p className="rounded-lg border border-slate-100 bg-slate-50 px-4 py-2.5 text-xs text-slate-400">
-          🤖 Questo materiale è stato realizzato da{" "}
-          <span className="font-semibold text-slate-500">Prof. Ing. Antonio Scaramuzzino</span>{" "}
-          con il supporto di strumenti AI (Claude, GPT Image, edge-tts) e validato secondo il{" "}
-          <Link href="/credits" className="underline hover:text-slate-700">Protocollo CARBLE-CDD v1.0</Link>.
-          I video appartengono ai rispettivi autori YouTube.
-        </p>
-      </div>
-
-      {related.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 sm:pb-12">
-          <h2 className="mb-4 text-2xl font-black">Altre MC dell&apos;area</h2>
-          <div className="grid gap-4 md:grid-cols-3">
-            {related.map((item) => <MCCard key={item.id} mc={item} />)}
+        <section className="border-t border-slate-100 bg-gradient-to-b from-slate-50 to-white py-8 sm:py-10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="mb-2 flex items-center gap-2">
+              <span className="text-xs font-black uppercase tracking-widest text-indigo-500">🃏 Ripasso</span>
+            </div>
+            <FlashcardDeck cards={flashcards} mcTitolo={mc.titolo} />
           </div>
         </section>
       )}
+
+      {/* Altre MC dell'area */}
+      {related.length > 0 && (
+        <section className="border-t border-slate-200 bg-white py-10 sm:py-12">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6">
+            <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
+              <div>
+                <p className="mb-1 text-xs font-black uppercase tracking-widest text-slate-400">
+                  {area?.emoji} {area?.label}
+                </p>
+                <h2 className="text-2xl font-black text-slate-900">
+                  Altre MC dell&apos;area
+                </h2>
+              </div>
+              <Link
+                href={`/area/${mc.area.toLowerCase()}`}
+                className="rounded-full border border-emerald-200 px-4 py-1.5 text-sm font-bold text-emerald-700 hover:bg-emerald-50"
+              >
+                Vedi tutte →
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+              {related.map((item) => <MCCard key={item.id} mc={item} />)}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Formula trasparenza AI — Protocollo CARBLE-CDD */}
+      <div className="border-t border-slate-100 bg-slate-50 px-4 py-3 sm:px-6">
+        <p className="mx-auto max-w-7xl text-xs text-slate-400">
+          🤖 Contenuto realizzato da{" "}
+          <span className="font-semibold text-slate-500">Prof. Ing. Antonio Scaramuzzino</span>{" "}
+          con il supporto di AI (Claude, GPT Image, edge-tts) · validato{" "}
+          <Link href="/credits" className="underline hover:text-slate-700">Protocollo CARBLE-CDD v1.0</Link>{" "}
+          · I video appartengono ai rispettivi autori YouTube.
+        </p>
+      </div>
     </main>
   );
 }
