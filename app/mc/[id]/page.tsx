@@ -41,13 +41,14 @@ export default async function MCPage({ params }: Props) {
     .filter((item) => item.area === mc.area && item.id !== mc.id)
     .slice(0, 3);
   const level = mc.outputApp.livelloDigComp;
+  const areaBreadcrumbLabel = (area?.label ?? mc.area).toUpperCase();
 
   return (
     <main className="min-h-screen bg-[#f7f8f5] text-slate-900">
       <Breadcrumb items={[
         { label: "ProfTecnologIA", href: "/" },
-        { label: area?.label ?? mc.area, href: `/area/${mc.area.toLowerCase()}`, emoji: area?.emoji, color: area?.hex },
-        { label: mc.titolo, color: area?.hex },
+        { label: areaBreadcrumbLabel, href: `/area/${mc.area.toLowerCase()}`, emoji: area?.emoji, color: area?.hex },
+        { label: mc.id, color: area?.hex },
       ]} />
 
       <section className={cx("border-b bg-gradient-to-br", areaAccent[mc.area] ?? "from-white to-slate-50")}>

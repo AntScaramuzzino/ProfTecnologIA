@@ -60,7 +60,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                   /* Elemento navigabile */
                   <Link
                     href={item.href!}
-                    className="flex shrink-0 items-center gap-1.5 text-slate-500 transition hover:text-slate-900"
+                    className="flex min-w-0 items-center gap-1.5 text-slate-500 transition hover:text-slate-900"
                   >
                     {i === 0 ? (
                       /* Home icon per il primo elemento */
@@ -68,13 +68,12 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                         <svg className="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                         </svg>
-                        <span className="hidden sm:inline">{item.label}</span>
+                        <span className="truncate">{item.label}</span>
                       </>
                     ) : (
                       <>
                         {item.emoji && <span className="shrink-0" aria-hidden="true">{item.emoji}</span>}
-                        <span className="hidden sm:inline">{item.label}</span>
-                        <span className="sm:hidden">{item.emoji || item.label}</span>
+                        <span className="truncate">{item.label}</span>
                       </>
                     )}
                   </Link>

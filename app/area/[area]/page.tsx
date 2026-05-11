@@ -33,7 +33,7 @@ export default async function AreaPage({ params }: PageProps) {
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       <Breadcrumb items={[
         { label: "ProfTecnologIA", href: "/" },
-        { label: meta.label, emoji: meta.emoji, color: meta.hex },
+        { label: meta.label.toUpperCase(), emoji: meta.emoji, color: meta.hex },
       ]} />
 
       <header className={cx("border-b bg-gradient-to-br", areaAccent[areaUpper])}>
