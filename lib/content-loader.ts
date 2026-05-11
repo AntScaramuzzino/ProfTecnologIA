@@ -61,15 +61,30 @@ function cleanMarkdownForReading(value: string): string {
     .replace(/```[\s\S]*?```/g, "")
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    // ── Rimozione citazioni bibliografiche inline ─────────────────────────
+    // (Fonte: ...) → già presente
     .replace(/\s*\(Fonte:[^)]+\)/gi, "")
+    // (Fonti convergenti: Atlas ISBN ...; SEI ISBN ...; Zanichelli ISBN ...)
+    .replace(/\s*\*?\(Fonti?\s+convergenti\s*:[^)]+\)\*?/gi, "")
+    // *(Fonti convergenti: ...)*  oppure  (Fonti convergenti: ...)*
+    .replace(/\s*\*\(Fonti?\s*:[^)]+\)\*/gi, "")
+    // Citazioni ISBN inline: (ISBN 9788826824376, p.166) o (Atlas ISBN ..., p.xxx)
+    .replace(/\s*\*?\([^)]*ISBN\s+978\d{10}[^)]*\)\*?/gi, "")
+    // Riferimenti pagina standalone: (p.xxx) o (p.xxx-xxx)
+    .replace(/\s*\(p\.\s*\d+(?:-\d+)?\)/gi, "")
+    // hook-script e Script completo
     .replace(/\s*\([^)]*hook-script[^)]*\)/gi, "")
     .replace(/\s*\([^)]*Script completo[^)]*\)/gi, "")
+    // ── Pulizia struttura markdown ────────────────────────────────────────
     .replace(/^#{3,6}\s+(.+)$/gm, "\n@@SUBHEAD:$1\n")
     .replace(/^#{1,2}\s+/gm, "")
     .replace(/^\s*>\s?/gm, "")
     .replace(/`([^`]+)`/g, "$1")
     .replace(/^\s*[-*]\s+/gm, "• ")
     .replace(/[ \t]+\n/g, "\n")
+    // ── FIX TABELLE: evita doppi newline dentro le tabelle ────────────────
+    // Se una riga | è seguita da \n\n e poi un'altra riga |, collassa a \n
+    .replace(/(\|[^\n]+)\n{2,}(?=\s*\|)/gm, "$1\n")
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 }
