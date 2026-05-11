@@ -283,6 +283,8 @@ export default function HomePage() {
               <span className="text-slate-700">·</span>
               <span>DigComp 3.0</span>
               <span className="text-slate-700">·</span>
+              <Link href="/credits" className="hover:text-slate-300">Credits</Link>
+              <span className="text-slate-700">·</span>
               <a
                 href="https://github.com/AntScaramuzzino/ProfTecnologIA"
                 target="_blank"
