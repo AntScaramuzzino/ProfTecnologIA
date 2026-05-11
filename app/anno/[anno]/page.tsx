@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
+import Breadcrumb from "@/components/Breadcrumb";
 import { AREA_META, getMCsByAnno } from "@/lib/mc-loader";
 import { levelBadge } from "@/lib/ui";
 
@@ -34,13 +35,10 @@ export default async function AnnoPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
-      <nav className="border-b border-slate-200 bg-white px-6 py-3">
-        <div className="mx-auto flex max-w-7xl items-center gap-2 text-sm text-slate-500">
-          <Link href="/" className="font-semibold hover:text-slate-900">ProfTecnologIA</Link>
-          <span>/</span>
-          <span className="font-semibold text-slate-800">{yearLabel} media</span>
-        </div>
-      </nav>
+      <Breadcrumb items={[
+        { label: "ProfTecnologIA", href: "/" },
+        { label: `${yearLabel} media` },
+      ]} />
 
       <header className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
         <p className="text-xs font-black uppercase tracking-wide text-emerald-700 sm:text-sm">Percorso annuale</p>

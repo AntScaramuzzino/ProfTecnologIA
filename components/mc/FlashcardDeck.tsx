@@ -70,12 +70,12 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
   const cardStatus = status[current] ?? "unknown";
 
   return (
-    <section className="mt-8 rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50 to-white p-5 sm:p-7">
+    <section className="mx-auto mt-8 max-w-3xl rounded-lg border border-indigo-100 bg-gradient-to-br from-indigo-50 to-white p-4 shadow-sm sm:p-5">
       {/* Header */}
-      <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <p className="text-xs font-black uppercase tracking-widest text-indigo-600">
-            🃏 Flashcard — {mcTitolo}
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <div className="min-w-0">
+          <p className="truncate text-xs font-black uppercase tracking-wide text-indigo-600">
+            Flashcard — {mcTitolo}
           </p>
           <p className="mt-0.5 text-xs text-slate-500">
             {cards.length} card · {known} già note · {pct}% completato
@@ -86,19 +86,19 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
             onClick={shuffle}
             className="rounded-full border border-indigo-200 px-3 py-1 text-xs font-semibold text-indigo-600 hover:bg-indigo-100"
           >
-            🔀 Rimescola
+            Rimescola
           </button>
           <button
             onClick={restart}
             className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-500 hover:bg-slate-100"
           >
-            ↩ Ricomincia
+            Ricomincia
           </button>
         </div>
       </div>
 
       {/* Barra progresso */}
-      <div className="mb-5 h-1.5 w-full overflow-hidden rounded-full bg-indigo-100">
+      <div className="mb-4 h-1.5 w-full overflow-hidden rounded-full bg-indigo-100">
         <div
           className="h-full rounded-full bg-indigo-500 transition-all duration-500"
           style={{ width: `${((index + 1) / cards.length) * 100}%` }}
@@ -107,8 +107,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
 
       {done ? (
         /* Schermata risultati */
-        <div className="py-8 text-center">
-          <div className="mb-3 text-5xl">{pct >= 80 ? "🎉" : pct >= 50 ? "👍" : "💪"}</div>
+        <div className="py-6 text-center">
           <p className="text-xl font-black text-slate-800">
             {known} / {cards.length} card già note!
           </p>
@@ -134,25 +133,25 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
       ) : (
         <>
           {/* Card con flip */}
-          <div className="flashcard-scene mb-4 cursor-pointer" onClick={flip}>
+          <div className="flashcard-scene mb-3 cursor-pointer" onClick={flip}>
             <div className={`flashcard-card ${flipped ? "is-flipped" : ""}`}>
               {/* Fronte */}
               <div className="flashcard-face flashcard-front">
                 {card.tag && (
-                  <span className="mb-3 inline-block rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-bold text-indigo-700">
+                  <span className="mb-2 inline-block rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-bold text-indigo-700">
                     {card.tag}
                   </span>
                 )}
-                <p className="text-xs font-semibold text-indigo-400 mb-2">Termine / Domanda</p>
-                <p className="text-xl font-black leading-snug text-slate-900 sm:text-2xl">
+                <p className="mb-2 text-xs font-semibold text-indigo-400">Termine / Domanda</p>
+                <p className="text-lg font-black leading-snug text-slate-900 sm:text-xl">
                   {card.front}
                 </p>
-                <p className="mt-4 text-xs text-slate-400">Tocca per vedere la risposta →</p>
+                <p className="mt-3 text-xs text-slate-400">Tocca per vedere la risposta</p>
               </div>
               {/* Retro */}
               <div className="flashcard-face flashcard-back">
-                <p className="text-xs font-semibold text-emerald-400 mb-2">Definizione / Risposta</p>
-                <p className="text-base leading-relaxed text-slate-100 sm:text-lg">
+                <p className="mb-2 text-xs font-semibold text-emerald-300">Definizione / Risposta</p>
+                <p className="text-sm leading-6 text-slate-100 sm:text-base">
                   {card.back}
                 </p>
               </div>
@@ -171,7 +170,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
                 onClick={() => mark("review")}
                 className="flex items-center gap-1.5 rounded-full border border-rose-200 bg-rose-50 px-4 py-2 text-sm font-bold text-rose-700 hover:bg-rose-100"
               >
-                🔄 Da ripassare
+                Da ripassare
               </button>
               <button
                 onClick={() => mark("known")}
@@ -181,13 +180,13 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
               </button>
             </div>
           ) : (
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-2">
               <button
                 onClick={prev}
                 disabled={index === 0}
                 className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-500 hover:bg-slate-100 disabled:opacity-30"
               >
-                ← Precedente
+                Precedente
               </button>
               <button
                 onClick={flip}
@@ -199,7 +198,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
                 onClick={next}
                 className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-500 hover:bg-slate-100"
               >
-                Salta →
+                Salta
               </button>
             </div>
           )}
@@ -207,7 +206,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
           {/* Stato card corrente */}
           {cardStatus !== "unknown" && (
             <p className={`mt-3 text-center text-xs font-semibold ${cardStatus === "known" ? "text-emerald-600" : "text-rose-500"}`}>
-              {cardStatus === "known" ? "✓ Segnata come nota" : "🔄 Segnata per ripasso"}
+              {cardStatus === "known" ? "Segnata come nota" : "Segnata per ripasso"}
             </p>
           )}
         </>
@@ -217,9 +216,12 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
       <style>{`
         .flashcard-scene {
           perspective: 900px;
-          height: 220px;
+          height: 190px;
+          max-width: 620px;
+          margin-left: auto;
+          margin-right: auto;
         }
-        @media (min-width: 640px) { .flashcard-scene { height: 200px; } }
+        @media (min-width: 640px) { .flashcard-scene { height: 180px; } }
         .flashcard-card {
           position: relative;
           width: 100%;
@@ -232,13 +234,15 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
           position: absolute;
           inset: 0;
           backface-visibility: hidden;
-          border-radius: 1.25rem;
-          padding: 1.5rem;
+          border-radius: 0.85rem;
+          padding: 1.1rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           text-align: center;
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
         }
         .flashcard-front {
           background: white;

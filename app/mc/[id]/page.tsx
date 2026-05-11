@@ -9,6 +9,7 @@ import FlippedVideos from "@/components/mc/FlippedVideos";
 import FlashcardDeck from "@/components/mc/FlashcardDeck";
 import FormulaCard from "@/components/mc/FormulaCard";
 import ProcedureList from "@/components/mc/ProcedureList";
+import Breadcrumb from "@/components/Breadcrumb";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
 import { getMCTextContent, getVisualAssets, getMCHookAudio, getMCHookTranscript, getMCQuizData, getMCFlashcards, getVideoPlaylist } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
@@ -43,15 +44,11 @@ export default async function MCPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-[#f7f8f5] text-slate-900">
-      <nav className="border-b border-slate-200 bg-white px-4 py-3 sm:px-6">
-        <div className="mx-auto flex max-w-7xl min-w-0 items-center gap-1.5 text-sm font-bold text-slate-500 sm:gap-2">
-          <Link href="/" className="shrink-0 font-semibold hover:text-slate-900">ProfTecnologIA</Link>
-          <span className="shrink-0">/</span>
-          <Link href={`/area/${mc.area}`} className="shrink-0 hover:text-slate-900">{area?.emoji} {mc.area}</Link>
-          <span className="shrink-0">/</span>
-          <span className="truncate font-mono text-slate-800">{mc.id}</span>
-        </div>
-      </nav>
+      <Breadcrumb items={[
+        { label: "ProfTecnologIA", href: "/" },
+        { label: area?.label ?? mc.area, href: `/area/${mc.area.toLowerCase()}`, emoji: area?.emoji, color: area?.hex },
+        { label: mc.titolo, color: area?.hex },
+      ]} />
 
       <section className={cx("border-b bg-gradient-to-br", areaAccent[mc.area] ?? "from-white to-slate-50")}>
         <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:gap-8 sm:px-6 sm:py-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">

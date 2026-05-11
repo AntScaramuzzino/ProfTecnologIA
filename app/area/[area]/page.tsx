@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
+import Breadcrumb from "@/components/Breadcrumb";
 import { AREA_META, getAllMCs, getMCsByArea } from "@/lib/mc-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
@@ -30,13 +31,10 @@ export default async function AreaPage({ params }: PageProps) {
 
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
-      <nav className="border-b border-slate-200 bg-white px-6 py-3">
-        <div className="mx-auto flex max-w-7xl items-center gap-2 text-sm text-slate-500">
-          <Link href="/" className="font-semibold hover:text-slate-900">ProfTecnologIA</Link>
-          <span>/</span>
-          <span className="font-semibold text-slate-800">{meta.label}</span>
-        </div>
-      </nav>
+      <Breadcrumb items={[
+        { label: "ProfTecnologIA", href: "/" },
+        { label: meta.label, emoji: meta.emoji, color: meta.hex },
+      ]} />
 
       <header className={cx("border-b bg-gradient-to-br", areaAccent[areaUpper])}>
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">

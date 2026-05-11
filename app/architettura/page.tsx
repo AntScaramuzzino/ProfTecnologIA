@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
 import { getAllMCs } from "@/lib/mc-loader";
 
 export const metadata: Metadata = {
@@ -68,13 +69,10 @@ export default function ArchitetturaPage() {
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       {/* Breadcrumb */}
-      <nav className="border-b border-slate-200 bg-white px-4 py-3 sm:px-6">
-        <div className="mx-auto flex max-w-6xl items-center gap-2 text-sm text-slate-500">
-          <Link href="/" className="font-semibold hover:text-slate-900">ProfTecnologIA</Link>
-          <span>/</span>
-          <span className="font-semibold text-slate-800">Architettura semantica</span>
-        </div>
-      </nav>
+      <Breadcrumb items={[
+        { label: "ProfTecnologIA", href: "/" },
+        { label: "Architettura semantica" },
+      ]} />
 
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 space-y-16">
 

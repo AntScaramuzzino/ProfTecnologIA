@@ -142,17 +142,17 @@ export function getPrerequisiteChain(mcId: string): MC[] {
 
 export const AREA_META: Record<
   string,
-  { label: string; emoji: string; color: string }
+  { label: string; emoji: string; color: string; hex: string }
 > = {
-  MAT: { label: "Materiali e Rifiuti", emoji: "🪨", color: "amber" },
-  DIS: { label: "Disegno Tecnico", emoji: "📐", color: "blue" },
-  DIG: { label: "Digitale / Coding / AI", emoji: "💻", color: "purple" },
-  ALI: { label: "Alimentazione", emoji: "🌾", color: "green" },
-  AMB: { label: "Abitazione e Città", emoji: "🏗️", color: "orange" },
-  INF: { label: "Informatica", emoji: "🔢", color: "indigo" },
-  ENE: { label: "Energia e Macchine", emoji: "⚡", color: "yellow" },
-  COM: { label: "Comunicazioni e Trasporti", emoji: "📡", color: "cyan" },
-  SIS: { label: "Sistemi ed Economia", emoji: "⚙️", color: "gray" },
+  MAT: { label: "Materiali e Rifiuti",       emoji: "🪨", color: "amber",  hex: "#B45309" },
+  DIS: { label: "Disegno Tecnico",            emoji: "📐", color: "blue",   hex: "#1D4ED8" },
+  DIG: { label: "Digitale / Coding / AI",    emoji: "💻", color: "purple", hex: "#7C3AED" },
+  ALI: { label: "Alimentazione",             emoji: "🌾", color: "green",  hex: "#15803D" },
+  AMB: { label: "Abitazione e Città",        emoji: "🏗️", color: "orange", hex: "#C2410C" },
+  INF: { label: "Informatica",              emoji: "🔢", color: "indigo", hex: "#4338CA" },
+  ENE: { label: "Energia e Macchine",        emoji: "⚡", color: "yellow", hex: "#B45309" },
+  COM: { label: "Comunicazioni e Trasporti", emoji: "📡", color: "cyan",   hex: "#0E7490" },
+  SIS: { label: "Sistemi ed Economia",       emoji: "⚙️", color: "gray",   hex: "#374151" },
 };
 
 export const LEVEL_META: Record<
