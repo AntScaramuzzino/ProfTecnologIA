@@ -46,6 +46,9 @@ function isEditorialLine(line: string): boolean {
   if (/^qr code audio/i.test(clean)) return true;
   if (/^ascolta prima di leggere/i.test(clean)) return true;
   if (/^script completo\s*:/i.test(clean)) return true;
+  // Riferimento al file hook-script con o senza parentesi: "(Script completo: MC-...)"
+  if (/hook-script\.md/i.test(clean)) return true;
+  if (/script completo/i.test(clean) && /\.md/i.test(clean)) return true;
   if (/^domanda di avvio\s*:?\s*$/i.test(clean)) return true;
   return false;
 }
@@ -59,6 +62,8 @@ function cleanMarkdownForReading(value: string): string {
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/\s*\(Fonte:[^)]+\)/gi, "")
+    .replace(/\s*\([^)]*hook-script[^)]*\)/gi, "")
+    .replace(/\s*\([^)]*Script completo[^)]*\)/gi, "")
     .replace(/^#{3,6}\s+(.+)$/gm, "\n@@SUBHEAD:$1\n")
     .replace(/^#{1,2}\s+/gm, "")
     .replace(/^\s*>\s?/gm, "")
