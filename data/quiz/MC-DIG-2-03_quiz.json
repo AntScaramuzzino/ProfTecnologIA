@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-2-03",
+  "titolo": "Il sistema operativo e la gestione delle risorse",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è un sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il programma principale per navigare in internet",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il software che gestisce le risorse hardware del computer e permette alle applicazioni di funzionare",
+          "corretto": true,
+          "feedback": "Esatto! Il SO è l'intermediario tra hardware e software: gestisce CPU, memoria, storage e periferiche per tutte le applicazioni."
+        },
+        {
+          "id": "c",
+          "testo": "Il sistema di protezione da virus del computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il programma che organizza i file in cartelle",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il SO è l'intermediario tra hardware e software: gestisce CPU, memoria, storage e periferiche per tutte le applicazioni."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa fa il 'processo' in un sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È un file salvato sul disco rigido",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "È un programma in esecuzione con le risorse (memoria, CPU) allocate dal sistema operativo",
+          "corretto": true,
+          "feedback": "Esatto! Ogni app aperta è un processo."
+        },
+        {
+          "id": "c",
+          "testo": "È una cartella di sistema protetta",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "È il driver di una periferica",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Ogni app aperta è un processo. Il task manager mostra tutti i processi in esecuzione con il loro utilizzo di CPU e RAM."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è la 'memoria virtuale'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La RAM installata nel computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una tecnica che usa parte del disco come estensione della RAM quando questa è piena: rallenta il sistema ma evita crash",
+          "corretto": true,
+          "feedback": "Esatto! Quando la RAM è esaurita, il SO sposta temporaneamente i dati meno usati sul disco (file di paging)."
+        },
+        {
+          "id": "c",
+          "testo": "La memoria dei processori grafici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Lo spazio usato dal sistema operativo sul disco",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Quando la RAM è esaurita, il SO sposta temporaneamente i dati meno usati sul disco (file di paging). Il disco è molto più lento: il sistema rallenta visibilmente."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è lo 'scheduling' della CPU?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il piano di manutenzione del processore",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'algoritmo con cui il SO decide quale processo ha accesso alla CPU in ogni istante, garantendo equità e reattività",
+          "corretto": true,
+          "feedback": "Esatto! Il SO gestisce decine di processi con una sola CPU usando lo scheduling: alterna velocemente tra processi dando l'illusione di parallelismo."
+        },
+        {
+          "id": "c",
+          "testo": "La frequenza di clock del processore",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La temperatura massima di funzionamento del processore",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il SO gestisce decine di processi con una sola CPU usando lo scheduling: alterna velocemente tra processi dando l'illusione di parallelismo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è un 'driver'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di utente con privilegi elevati",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un software che permette al sistema operativo di comunicare con una periferica hardware specifica (stampante, scheda grafica, webcam)",
+          "corretto": true,
+          "feedback": "Esatto! Senza driver la scheda grafica è 'muta'."
+        },
+        {
+          "id": "c",
+          "testo": "Un programma di ottimizzazione del disco",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il componente che controlla la velocità del processore",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Senza driver la scheda grafica è 'muta'. I driver traducono i comandi del SO nel linguaggio specifico di ogni periferica."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'file system' e perché esistono diversi standard?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'interfaccia grafica per navigare tra file e cartelle",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La struttura logica che organizza i dati sul disco (NTFS per Windows, ext4 per Linux, APFS per Mac): influenza velocità, sicurezza e dimensione massima dei file",
+          "corretto": true,
+          "feedback": "Esatto! Ogni file system ha vantaggi e limiti."
+        },
+        {
+          "id": "c",
+          "testo": "Il programma per cercare file nel computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema di backup automatico del computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Ogni file system ha vantaggi e limiti. FAT32 (vecchio USB) non supporta file >4GB. NTFS supporta permessi e cifratura."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il kernel e qual è la differenza tra modalità kernel e modalità utente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il kernel è il processore del computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il kernel è il nucleo del SO con accesso diretto all'hardware. In modalità kernel il codice ha privilegi completi; in modalità utente le app sono isolate e non possono danneggiare il sistema",
+          "corretto": true,
+          "feedback": "Esatto! La separazione kernel/utente è un meccanismo di sicurezza: un'app in crash in modalità utente non porta giù l'intero sistema."
+        },
+        {
+          "id": "c",
+          "testo": "Il kernel è il database interno del sistema operativo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La modalità utente e kernel sono la stessa cosa",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La separazione kernel/utente è un meccanismo di sicurezza: un'app in crash in modalità utente non porta giù l'intero sistema."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'virtualizzazione' e come si usa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La creazione di cartelle virtuali senza dati reali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La tecnologia che permette di far girare sistemi operativi o ambienti isolati (macchine virtuali) dentro un sistema fisico: usata in cloud, sviluppo e sicurezza",
+          "corretto": true,
+          "feedback": "Esatto! VMware, VirtualBox e i container Docker usano la virtualizzazione."
+        },
+        {
+          "id": "c",
+          "testo": "La compressione dei file per risparmiare spazio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La sincronizzazione dei file con il cloud",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "VMware, VirtualBox e i container Docker usano la virtualizzazione. I cloud provider (AWS, Azure) dividono server fisici in centinaia di macchine virtuali."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è un 'sistema operativo real-time' (RTOS) e dove si usa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sistema operativo che elabora i dati più velocemente degli altri",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un sistema operativo progettato per rispondere a eventi entro tempi garantiti (deterministici): usato in controllo industriale, avionica, dispositivi medici e veicoli autonomi",
+          "corretto": true,
+          "feedback": "Esatto! In un freno ABS il sistema deve reagire in millisecondi garantiti."
+        },
+        {
+          "id": "c",
+          "testo": "Il sistema operativo dei server ad alte prestazioni",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un SO che aggiorna automaticamente i driver in tempo reale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "In un freno ABS il sistema deve reagire in millisecondi garantiti. Un normale SO come Windows non può garantire tempi di risposta: serve un RTOS."
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIS-2-01",
+  "titolo": "Proiezioni ortogonali e sezioni",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Quante viste standard usa il metodo europeo di rappresentazione ortogonale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "2",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "3 (pianta, prospetto frontale, prospetto laterale)",
+          "corretto": true,
+          "feedback": "Esatto! Il metodo europeo (ISO 128-30) usa 3 viste principali disposte in modo preciso: pianta in alto, prospetto frontale in basso-sinistra, laterale in basso-destra."
+        },
+        {
+          "id": "c",
+          "testo": "5",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "6",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il metodo europeo (ISO 128-30) usa 3 viste principali disposte in modo preciso: pianta in alto, prospetto frontale in basso-sinistra, laterale in basso-destra."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa rappresenta la 'pianta' di un oggetto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La vista frontale dell'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La vista dall'alto: mostra larghezza e profondità dell'oggetto",
+          "corretto": true,
+          "feedback": "Esatto! La pianta è la proiezione sul piano orizzontale: mostra come l'oggetto si vede dall'alto, con larghezza e profondità."
+        },
+        {
+          "id": "c",
+          "testo": "La vista laterale sinistra",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La sezione orizzontale a metà altezza",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La pianta è la proiezione sul piano orizzontale: mostra come l'oggetto si vede dall'alto, con larghezza e profondità."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa indicano le linee tratteggiate in una proiezione ortogonale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le dimensioni quotate dell'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Spigoli e superfici non visibili dalla vista corrente (nascosti dalla geometria dell'oggetto)",
+          "corretto": true,
+          "feedback": "Esatto! Le linee tratteggiate completano la descrizione 3D dell'oggetto mostrando cosa c'è 'dall'altra parte', senza dover ruotare la vista."
+        },
+        {
+          "id": "c",
+          "testo": "Le assi di simmetria",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il materiale dell'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le linee tratteggiate completano la descrizione 3D dell'oggetto mostrando cosa c'è 'dall'altra parte', senza dover ruotare la vista."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è una 'sezione' in un disegno tecnico e quando si usa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un ingrandimento di un dettaglio dell'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La rappresentazione dell'interno di un oggetto dopo un taglio ideale: si usa per mostrare cavità, spessori e geometrie interne altrimenti non visibili",
+          "corretto": true,
+          "feedback": "Esatto! La sezione 'taglia' l'oggetto con un piano e mostra l'interno."
+        },
+        {
+          "id": "c",
+          "testo": "Una vista aggiuntiva dal basso",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La rappresentazione del materiale con retinatura",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La sezione 'taglia' l'oggetto con un piano e mostra l'interno. Senza sezioni, un tubo, un motore o un edificio non sarebbero descrivibili completamente."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si indica con la retinatura (tratteggio a 45°) in una sezione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le parti dell'oggetto che non si vedono",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Le zone di materiale solido tagliate dal piano di sezione: distingue il pieno dal vuoto",
+          "corretto": true,
+          "feedback": "Esatto! La retinatura a 45° indica materiale solido."
+        },
+        {
+          "id": "c",
+          "testo": "Le superfici di contatto tra due parti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Le parti da realizzare con materiale speciale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La retinatura a 45° indica materiale solido. Se due parti adiacenti hanno lo stesso materiale, si usa diversa inclinazione per distinguerle."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché si usa il 'metodo europeo' (ISO E) invece del 'metodo americano' (ISO A)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il metodo europeo usa meno viste",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Sono due convenzioni di disposizione delle viste sul foglio: in Europa la pianta va sopra il prospetto; in America sotto. Entrambi producono le stesse viste",
+          "corretto": true,
+          "feedback": "Esatto! La differenza è solo di disposizione, non di contenuto."
+        },
+        {
+          "id": "c",
+          "testo": "Il metodo europeo è più preciso",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il metodo americano è obsoleto",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La differenza è solo di disposizione, non di contenuto. Conoscere entrambi è fondamentale per leggere disegni internazionali."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è una 'sezione parziale' e quando è preferita alla sezione completa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una sezione che taglia solo metà dell'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una sezione limitata a una zona specifica dell'oggetto, delineata da una linea a freehand: usata quando interessa mostrare solo un dettaglio interno senza tagliare l'intero pezzo",
+          "corretto": true,
+          "feedback": "Esatto! La sezione parziale (o spaccato locale) è più informativa e risparmia spazio sul foglio quando si deve mostrare solo un foro, una tasca o una cavità specifica."
+        },
+        {
+          "id": "c",
+          "testo": "Una sezione con piano inclinato a 45°",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Una sezione senza retinatura",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La sezione parziale (o spaccato locale) è più informativa e risparmia spazio sul foglio quando si deve mostrare solo un foro, una tasca o una cavità specifica."
+    },
+    {
+      "livello": "A",
+      "domanda": "Perché certi elementi non vengono sezionati anche se il piano di sezione li attraversa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Per semplificare il disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Per convenzione ISO, elementi come bulloni, viti, perni, alberi e razze delle ruote non vengono retinati anche se il piano di sezione li taglia",
+          "corretto": true,
+          "feedback": "Esatto! La convenzione esiste perché questi elementi sono meglio rappresentati in proiezione (vista esterna)."
+        },
+        {
+          "id": "c",
+          "testo": "Perché sono fatti di un materiale diverso",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché sono troppo piccoli da retinare",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La convenzione esiste perché questi elementi sono meglio rappresentati in proiezione (vista esterna). Retinateli e il disegno diventerebbe confuso."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'sezione ribaltata' e perché è utile per profili complessi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una sezione ruotata di 90° nel disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una sezione che viene ruotata nel piano del disegno e sovrapposta o affiancata alla vista principale: permette di mostrare la forma del profilo trasversale senza vista aggiuntiva",
+          "corretto": true,
+          "feedback": "Esatto! Per un profilo a T o a I è più efficiente ribaltare la sezione sul posto piuttosto che aggiungere una vista completa."
+        },
+        {
+          "id": "c",
+          "testo": "Una sezione che mostra l'oggetto da sotto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Una sezione speciale per oggetti cilindrici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Per un profilo a T o a I è più efficiente ribaltare la sezione sul posto piuttosto che aggiungere una vista completa. Risparmia spazio e aiuta la lettura."
+    }
+  ]
+}

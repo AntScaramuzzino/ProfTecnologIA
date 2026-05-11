@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è la tensione elettrica (V) e come si misura?",
+    "back": "La differenza di potenziale elettrico tra due punti: si misura in Volt con un voltmetro collegato in parallelo\n\nLa tensione è la 'pressione' che spinge gli elettroni. Come il dislivello dell'acqua che fa scorrere il fiume: senza dislivello non c'è corrente.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la corrente elettrica (I) e come si misura?",
+    "back": "Il flusso di carica elettrica per unità di tempo: si misura in Ampere con un amperometro collegato in serie\n\nLa corrente è il 'flusso' di elettroni. Come la portata di un fiume (litri/secondo). Amperometro in serie = tutti gli elettroni passano attraverso lo strumento.",
+    "tag": "Base"
+  },
+  {
+    "front": "Enunciato della Legge di Ohm.",
+    "back": "V = R × I\n\nV = R × I è la Legge di Ohm: la tensione è uguale alla resistenza per la corrente. Conoscendo due grandezze si ricava la terza.",
+    "tag": "Base"
+  },
+  {
+    "front": "Come si calcola la resistenza equivalente di resistori in serie?",
+    "back": "R_eq = R1 + R2 + ... + Rn\n\nIn serie la corrente passa attraverso tutti i resistori uno dopo l'altro: le resistenze si sommano. Come tubi in fila che aumentano la lunghezza complessiva.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come si calcola la resistenza equivalente di resistori in parallelo?",
+    "back": "1/R_eq = 1/R1 + 1/R2 → R_eq = R1×R2/(R1+R2) per due resistori\n\nIn parallelo la corrente si divide su più percorsi: la resistenza totale è minore della più piccola. Come più tubi in parallelo che aumentano la portata.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la potenza elettrica e come si calcola?",
+    "back": "L'energia trasferita per unità di tempo: P = V × I (Watt). Derivabile anche come P = R × I² o P = V²/R\n\nLa potenza dice 'quanto velocemente' si usa l'energia. Una lampadina da 60W usa 60 Joule ogni secondo. P = V×I è la formula base; le altre derivano dalla Legge di Ohm.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la differenza tra corrente alternata (AC) e corrente continua (DC)?",
+    "back": "Nella DC la corrente scorre sempre nella stessa direzione; nella AC cambia direzione periodicamente (50 Hz in Europa). AC si trasmette meglio su lunghe distanze; DC è usata in elettronica e batterie\n\nTesla vs Edison: la guerra delle correnti. Tesla/Westinghouse vinse con l'AC per la trasmissione a lunga distanza. Oggi l'HVDC (alta tensione continua) compete per trasmissioni intercontinentali.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'effetto Joule e come è collegato al consumo energetico?",
+    "back": "La dissipazione di energia come calore nei conduttori attraversati da corrente: P_calore = R × I². I cavi hanno resistenza non nulla, quindi perdono energia\n\nL'effetto Joule spiega perché i cavi si scaldano e perché si usano altissime tensioni per trasmettere energia su lunghe distanze: alta V = bassa I = bassa perdita Joule.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è un circuito RLC e quali fenomeni mostra?",
+    "back": "Un circuito con Resistore, induttore (L) e Condensatore (C): mostra risonanza alla frequenza di oscillazione propria. Base di radioricevitori, filtri e oscillatori\n\nIl circuito RLC risuona a f = 1/(2π√LC). Sintonizzare una radio significa trovare la frequenza di risonanza del circuito LC uguale alla frequenza della stazione.",
+    "tag": "Avanzato"
+  }
+]

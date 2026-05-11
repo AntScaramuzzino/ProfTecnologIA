@@ -1,0 +1,47 @@
+[
+  {
+    "front": "La scala 1:50 significa...",
+    "back": "1 cm nel disegno corrisponde a 50 cm nella realtà\n\n1:50 → ogni centimetro sul foglio = 50 cm nella realtà. Formula: misura foglio = misura reale ÷ denominatore.",
+    "tag": "Base"
+  },
+  {
+    "front": "Una porta è larga 90 cm. In scala 1:20, quanto misura nel disegno?",
+    "back": "Sia b che c sono corretti\n\n90 ÷ 20 = 4.5 cm = 45 mm. Entrambe le misure sono corrette (stessa misura in unità diverse).",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa indicano le frecce alle estremità delle linee di quota?",
+    "back": "I limiti dell'elemento quotato: la misura riportata al centro è sempre la dimensione reale dell'oggetto\n\nLe linee di quota con frecce e numero al centro sono il linguaggio universale per comunicare le dimensioni reali indipendentemente dalla scala del disegno.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché le quote in un disegno tecnico indicano SEMPRE le misure reali?",
+    "back": "Perché chi legge il disegno in produzione deve sapere le dimensioni reali senza fare calcoli: è una convenzione universale\n\nUn operaio in officina non deve calcolare: legge 90mm e taglia 90mm. La quota è sempre la realtà, non il disegno.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Quale scala useresti per la planimetria di un edificio di 20m × 15m su un foglio A4?",
+    "back": "1:200 o 1:250\n\n1:200 → 20m = 10cm; 15m = 7.5cm: entra su A4. 1:250 → 20m = 8cm; 15m = 6cm: anche meglio.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'scala di ingrandimento' e quando si usa?",
+    "back": "Una scala con il numeratore maggiore del denominatore: es. 5:1 → 1cm reale = 5cm nel disegno\n\nScale di ingrandimento (5:1, 10:1, 20:1) si usano per componenti minuscoli (microchip, viti, gioielli) che altrimenti sarebbero invisibili nel disegno.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'tolleranza' in una quota e perché è fondamentale in produzione?",
+    "back": "L'intervallo di variazione ammissibile della dimensione reale: es. 50±0.1mm significa che la dimensione può variare tra 49.9 e 50.1mm\n\nTolleranza stretta = lavorazione costosa. Tolleranza larga = produzione economica ma accoppiamento impreciso. Scegliere la tolleranza giusta è un'arte ingegneristica.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cosa indica la norma ISO 129 e perché è importante?",
+    "back": "Le regole internazionali per la quotatura: posizione dei numeri, tipo di frecce, quote di riferimento, quotatura funzionale\n\nISO 129 garantisce che le quote siano lette allo stesso modo ovunque. La quotatura 'funzionale' (dove serve la misura per il funzionamento) è preferita a quella 'geometrica'.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la quotatura 'in catena' vs 'in parallelo'?",
+    "back": "In catena le quote si sommano dalla stessa origine; in parallelo ogni quota parte da un riferimento comune. Gli errori si accumulano in catena, non in parallelo\n\nLa quotatura in catena accumula gli errori di produzione da un elemento all'altro. Quella in parallelo (coordinate) garantisce precisione assoluta rispetto all'origine.",
+    "tag": "Avanzato"
+  }
+]

@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIS-3-02",
+  "titolo": "Disegno CAD e progettazione digitale",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è il CAD (Computer Aided Design)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un programma di elaborazione testi per tecnici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Software per la progettazione e il disegno tecnico assistito dal computer",
+          "corretto": true,
+          "feedback": "Esatto! Il CAD ha rivoluzionato la progettazione: precisione assoluta, modifica istantanea, condivisione, simulazione e transizione diretta alla produzione CNC."
+        },
+        {
+          "id": "c",
+          "testo": "Un formato di file per le immagini vettoriali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di controllo numerico per macchine utensili",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il CAD ha rivoluzionato la progettazione: precisione assoluta, modifica istantanea, condivisione, simulazione e transizione diretta alla produzione CNC."
+    },
+    {
+      "livello": "F",
+      "domanda": "Qual è la differenza tra CAD 2D e CAD 3D?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il 2D usa vettori, il 3D pixel",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il 2D produce disegni piani (piante, sezioni, prospetti); il 3D crea modelli tridimensionali da cui si ricavano automaticamente tutte le viste 2D",
+          "corretto": true,
+          "feedback": "Esatto! AutoCAD, LibreCAD = CAD 2D."
+        },
+        {
+          "id": "c",
+          "testo": "Il 2D è per architettura, il 3D per meccanica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza pratica rilevante",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "AutoCAD, LibreCAD = CAD 2D. Fusion 360, FreeCAD, SolidWorks = CAD 3D. Il modello 3D è la rappresentazione principale; le tavole 2D si generano in automatico."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è Tinkercad e perché è adatto a studenti?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un software professionale di progettazione CAD avanzata",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una piattaforma CAD 3D gratuita, browser-based, con interfaccia intuitiva a blocchi: ideale per iniziare la modellazione 3D",
+          "corretto": true,
+          "feedback": "Esatto! Tinkercad (Autodesk) funziona nel browser senza installazione."
+        },
+        {
+          "id": "c",
+          "testo": "Un software di rendering 3D professionale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un programma per disegnare circuiti elettrici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Tinkercad (Autodesk) funziona nel browser senza installazione. L'approccio CSG (Constructive Solid Geometry) con forme semplici è intuitivo e produce file STL per la stampa 3D."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'modellazione parametrica' nel CAD 3D?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La creazione di modelli con parametri fissi non modificabili",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una tecnica in cui le dimensioni del modello sono definite da parametri modificabili: cambiare un valore aggiorna automaticamente tutto il modello",
+          "corretto": true,
+          "feedback": "Esatto! Con la modellazione parametrica (SolidWorks, Fusion 360) cambiare il diametro di un foro aggiorna automaticamente la filettatura, le tolleranze e il disegno 2D."
+        },
+        {
+          "id": "c",
+          "testo": "La modellazione di superfici curve complesse",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'importazione di parametri da un database esterno",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Con la modellazione parametrica (SolidWorks, Fusion 360) cambiare il diametro di un foro aggiorna automaticamente la filettatura, le tolleranze e il disegno 2D. È la rivoluzione del CAD moderno."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è un file STL e perché è il formato standard per la stampa 3D?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un formato di testo per la documentazione CAD",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un formato che descrive la geometria 3D come una mesh di triangoli: universalmente supportato dalle stampanti 3D",
+          "corretto": true,
+          "feedback": "Esatto! STL (Stereolithography) rappresenta qualsiasi superficie 3D con triangoli."
+        },
+        {
+          "id": "c",
+          "testo": "Il formato nativo di Tinkercad",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un formato compresso per i grandi file CAD",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "STL (Stereolithography) rappresenta qualsiasi superficie 3D con triangoli. La stampante 3D legge l'STL e calcola gli strati (slicing). Più triangoli = più dettaglio = file più grande."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il processo di 'slicing' nella stampa 3D?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il taglio fisico del pezzo dopo la stampa",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La conversione del modello 3D in strati orizzontali (layer) con percorsi di stampa per l'ugello: il slicer calcola supporti, riempimento e temperatura",
+          "corretto": true,
+          "feedback": "Esatto! Lo slicer (Cura, PrusaSlicer) è il 'traduttore' tra modello 3D e comandi macchina."
+        },
+        {
+          "id": "c",
+          "testo": "La fase di rimozione delle supporto di stampa",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il controllo qualità del pezzo stampato",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Lo slicer (Cura, PrusaSlicer) è il 'traduttore' tra modello 3D e comandi macchina. Parametri come altezza layer, riempimento e velocità determinano qualità e tempo di stampa."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'reverse engineering' digitale e quali strumenti usa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La violazione dei brevetti di un prodotto concorrente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La ricostruzione di un modello CAD da un oggetto fisico esistente tramite scanner 3D, photogrammetria o misurazioni manuali",
+          "corretto": true,
+          "feedback": "Esatto! Il reverse engineering è fondamentale per ricambi di oggetti senza documentazione, restauro di beni culturali e analisi della concorrenza."
+        },
+        {
+          "id": "c",
+          "testo": "La modifica di un file CAD già esistente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La conversione di un formato CAD in un altro",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il reverse engineering è fondamentale per ricambi di oggetti senza documentazione, restauro di beni culturali e analisi della concorrenza. Lo scanner 3D è lo strumento chiave."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'simulazione FEA' (Finite Element Analysis) nel CAD?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di rendering fotorealistico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un metodo computazionale che simula le sollecitazioni meccaniche, termiche o fluidodinamiche su un modello 3D per verificarne la resistenza prima della produzione",
+          "corretto": true,
+          "feedback": "Esatto! FEA divide il modello in migliaia di piccoli elementi finiti e simula come si deforma sotto i carichi."
+        },
+        {
+          "id": "c",
+          "testo": "La simulazione del processo di stampa 3D",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di controllo qualità automatizzato",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "FEA divide il modello in migliaia di piccoli elementi finiti e simula come si deforma sotto i carichi. Previene rotture e ottimizza il peso senza dover costruire prototipi fisici costosi."
+    },
+    {
+      "livello": "A",
+      "domanda": "Come il CAD si integra nel processo produttivo CNC?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il CAD genera direttamente i pezzi senza macchine",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Dal modello CAD si genera il percorso utensile (CAM), che viene tradotto in G-code per controllare la macchina CNC: il processo CAD→CAM→CNC è la base dell'Industry 4.0",
+          "corretto": true,
+          "feedback": "Esatto! CAD→CAM→CNC è la catena digitale-fisica: il modello digitale guida direttamente la fresa, il tornio o il laser."
+        },
+        {
+          "id": "c",
+          "testo": "Il CAD è usato solo per la documentazione finale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il CNC non usa file CAD ma programmi separati",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "CAD→CAM→CNC è la catena digitale-fisica: il modello digitale guida direttamente la fresa, il tornio o il laser. Zero errori di trascrizione, massima precisione."
+    }
+  ]
+}

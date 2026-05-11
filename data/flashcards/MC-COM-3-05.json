@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cosa trasportano i cavi sottomarini in fibra ottica?",
+    "back": "Dati digitali sotto forma di impulsi luminosi\n\nI cavi sottomarini in fibra ottica trasportano il 95% del traffico internet globale tra i continenti.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un indirizzo IP?",
+    "back": "Un'etichetta numerica che identifica ogni dispositivo in rete\n\nOgni dispositivo connesso ha un IP. Senza di esso i pacchetti di dati non saprebbero dove andare.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il Wi-Fi?",
+    "back": "Un protocollo per connessioni wireless a corto raggio basato su onde radio\n\nIl Wi-Fi usa onde radio (2.4 GHz o 5 GHz) per connettere dispositivi senza fili entro poche decine di metri.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa un router nella rete domestica?",
+    "back": "Smista i pacchetti di dati tra la rete locale e internet, assegnando indirizzi IP ai dispositivi\n\nIl router è il 'postino' della rete: riceve pacchetti e li indirizza verso la destinazione giusta, sia in rete locale sia verso internet.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la latenza e quando diventa un problema?",
+    "back": "Il ritardo nella trasmissione dei dati: critica per gaming, videochiamate e sistemi real-time\n\nCon latenza alta un videogioco online diventa ingiocabile, una videochiamata si spezza, un veicolo autonomo non può reagire in tempo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa si intende per 'cloud computing'?",
+    "back": "Uso di risorse informatiche (storage, elaborazione, app) su server remoti accessibili via internet\n\nIl cloud ha spostato i dati e le applicazioni dai PC locali a data center globali: Google Drive, Dropbox, Office 365 sono tutti cloud.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è l'architettura 'edge computing' e perché cresce con l'IoT?",
+    "back": "Elaborazione dei dati il più vicino possibile alla fonte (dispositivo/sensore) per ridurre latenza e traffico verso il cloud centrale\n\nCon miliardi di sensori IoT, inviare tutto al cloud genera colli di bottiglia. L'edge elabora in loco il dato grezzo e manda solo il risultato.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il BGP (Border Gateway Protocol) e perché è critico?",
+    "back": "Il protocollo che permette ai router di condividere le rotte di rete tra i diversi Internet Service Provider: è la 'mappa' di Internet\n\nIl BGP è fragile: un errore di configurazione può 'dirottare' il traffico globale. Nel 2010 un ISP cinese ha accidentalmente sequestrato il 15% del traffico internet mondiale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'dark web' e come si distingue dal 'deep web'?",
+    "back": "Il deep web comprende tutto ciò non indicizzato dai motori di ricerca (es. email, banche dati). Il dark web è un sottoinsieme accessibile solo con browser speciali come Tor, usato sia per privacy legittima sia per attività illegali\n\nLa distinzione è importante: il deep web include la tua email e il conto bancario online. Il dark web richiede Tor e ha usi legittimi (giornalismo, dissidenti) oltre a quelli illegali.",
+    "tag": "Avanzato"
+  }
+]

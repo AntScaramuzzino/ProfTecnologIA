@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cosa fa un robot 'autonomo'?",
+    "back": "Prende decisioni in base a sensori e programma, senza intervento umano continuo\n\nUn robot autonomo combina sensori, elaborazione e attuatori per agire senza controllo diretto.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un sensore in robotica?",
+    "back": "Un dispositivo che rileva grandezze fisiche (luce, distanza, temperatura) e le converte in segnali digitali\n\nI sensori sono gli 'occhi e orecchie' del robot: senza di essi non percepisce l'ambiente.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un 'attuatore' in un sistema robotico?",
+    "back": "Un componente che converte segnali elettrici in azioni fisiche: motori, servomotori, LED, altoparlanti\n\nGli attuatori sono i 'muscoli' del robot: trasformano i comandi digitali in movimenti o azioni fisiche.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la struttura 'sense-plan-act' di un robot?",
+    "back": "Il ciclo fondamentale: percepire l'ambiente (sense), elaborare e pianificare (plan), eseguire un'azione (act)\n\nSense-Plan-Act è il ciclo base di ogni robot autonomo. Si ripete continuamente adattandosi all'ambiente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la programmazione 'event-driven' nei robot educativi?",
+    "back": "Un paradigma in cui il robot esegue azioni in risposta a eventi specifici (tocco, suono, ostacolo)\n\nNei robot event-driven il codice 'aspetta' che accada qualcosa: più naturale per interazione con l'ambiente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché la simulazione è utile in robotica prima di programmare il robot fisico?",
+    "back": "Perché permette di testare algoritmi senza rischi fisici, risparmiando tempo e identificando errori logici prima del deploy\n\nIl ciclo simulazione→prototipo→robot fisico riduce errori costosi e accelera lo sviluppo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'localizzazione e mappatura simultanea' (SLAM)?",
+    "back": "La capacità di un robot di costruire una mappa dell'ambiente mentre si localizza in esso: fondamentale per robot mobili autonomi\n\nLo SLAM risolve il problema paradossale: per navigare serve una mappa, ma per costruire la mappa serve navigare.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'etica nella robotica e perché è rilevante per la scuola?",
+    "back": "L'insieme di principi che guidano il design e l'uso dei robot: sicurezza, responsabilità, trasparenza, impatto sul lavoro\n\nRobot autonomi prendono decisioni che impattano le persone. Chi è responsabile se un robot sbaglia? L'etica è inseparabile dalla tecnica.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'ROS' (Robot Operating System) e perché è importante?",
+    "back": "Un framework open-source che fornisce librerie e strumenti per sviluppare software robotico: consente di riusare componenti tra progetti diversi\n\nROS è il 'Linux della robotica': quasi tutti i robot di ricerca e industriali usano ROS per comunicazione, sensing e controllo.",
+    "tag": "Avanzato"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è una 'macchina termica'?",
+    "back": "Un sistema che converte energia termica (calore) in energia meccanica (lavoro)\n\nLe macchine termiche (motori a scoppio, turbine a vapore, turbine a gas) sono alla base dell'industria moderna da oltre 200 anni.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è l'efficienza massima teorica di una macchina termica secondo Carnot?",
+    "back": "η = 1 - T_fredda/T_calda (in Kelvin): sempre < 100%\n\nIl limite di Carnot è fondamentale: nessuna macchina termica può essere più efficiente del ciclo di Carnot tra le stesse temperature. Fisica di base che nessuna ingegneria può superare.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il ciclo 'a 4 tempi' di un motore a scoppio?",
+    "back": "Aspirazione → Compressione → Esplosione-Espansione → Scarico: il ciclo che si ripete in ogni cilindro\n\nOgni ciclo dura due giri completi dell'albero motore. A 3000 giri/min ogni cilindro fa 1500 cicli al minuto: circa 25 esplosioni al secondo.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché il motore a scoppio spreca circa il 70% dell'energia del carburante?",
+    "back": "Per il limite termodinamico di Carnot, le perdite all'attrito, il raffreddamento necessario e le perdite allo scarico: solo il 25-35% diventa energia utile\n\nIl limite di Carnot con T_calda ~2000K e T_fredda ~400K dà η_max ≈ 80%. Attrito, raffreddamento e scarico riducono l'efficienza reale a 25-35%.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come funziona un motore elettrico a livello fisico?",
+    "back": "La corrente attraverso bobine crea campo magnetico che interagisce con i magneti permanenti, producendo forza e rotazione: inversione della dinamo\n\nMotore elettrico = dinamo al contrario. La dinamo converte movimento in elettricità; il motore elettricità in movimento. Efficienza ~90%, vs ~25-35% del termico.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'rigenerazione' frenante nei veicoli elettrici e ibridi?",
+    "back": "La tecnologia che durante la frenata usa il motore come generatore, recuperando energia cinetica e ricaricando la batteria: recupera il 10-30% dell'energia\n\nLa rigenerazione trasforma la dissipazione termica dei freni in elettricità. Un bus elettrico in città con molte fermate recupera quantità di energia significative.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il ciclo Brayton e dove si applica?",
+    "back": "Il ciclo termodinamico delle turbine a gas: compressione aria → combustione → espansione in turbina → scarico. Base di aerei (turbofan) e centrali a gas\n\nLe turbine a gas dei jet usano il ciclo Brayton. Efficienze del 40-55% nelle centrali a ciclo combinato (gas + vapore): le più efficienti tra le termiche.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'cogenerazione' (CHP) e perché è efficiente?",
+    "back": "La produzione simultanea di calore ed elettricità da un unico impianto: recupera il calore di scarto invece di dissiparlo, raggiungendo efficienze totali del 80-90%\n\nUna centrale convenzionale genera elettricità (40%) e butta via calore (60%). La cogenerazione recupera quel calore per riscaldamento district heating: efficienza totale 80-90%.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'efficienza exergetica e perché è più utile di quella energetica?",
+    "back": "L'efficienza che misura quanta 'qualità' dell'energia viene conservata, non solo la quantità: 1 kWh elettrico (alta exergia) vale più di 1 kWh termico a bassa temperatura (bassa exergia)\n\nUsare elettricità per riscaldare a 20°C è exergeticamente inefficiente: usi alta exergia per produrre bassa exergia. Una pompa di calore fa molto meglio: usa 1 kWh per spostare 3-4 kWh di calore.",
+    "tag": "Avanzato"
+  }
+]

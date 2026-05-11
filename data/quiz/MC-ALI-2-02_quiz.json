@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-ALI-2-02",
+  "titolo": "Tecniche di conservazione degli alimenti",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa fa la pastorizzazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Surgela a -18°C",
+          "feedback": "La surgelazione usa temperature molto più basse."
+        },
+        {
+          "id": "b",
+          "testo": "Scalda a 70-85°C eliminando i microrganismi patogeni",
+          "corretto": true,
+          "feedback": "Esatto! La pastorizzazione usa il calore moderato per eliminare i batteri nocivi mantenendo le caratteristiche nutritive."
+        },
+        {
+          "id": "c",
+          "testo": "Essiccai completamente l'alimento",
+          "feedback": "L'essiccazione è un'altra tecnica."
+        },
+        {
+          "id": "d",
+          "testo": "Immergere nell'aceto",
+          "feedback": "Questa è l'acidificazione."
+        }
+      ],
+      "spiegazione": "La pastorizzazione usa il calore moderato per eliminare i batteri nocivi mantenendo le caratteristiche nutritive."
+    },
+    {
+      "livello": "F",
+      "domanda": "Perché il sale conserva gli alimenti?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Uccide i batteri con il calore",
+          "feedback": "Il sale non produce calore."
+        },
+        {
+          "id": "b",
+          "testo": "Abbassa l'attività dell'acqua disponibile per i microrganismi",
+          "corretto": true,
+          "feedback": "Esatto! I batteri hanno bisogno di acqua per sopravvivere."
+        },
+        {
+          "id": "c",
+          "testo": "Aggiunge vitamine all'alimento",
+          "feedback": "Il sale non aggiunge nutrienti."
+        },
+        {
+          "id": "d",
+          "testo": "Aumenta il pH",
+          "feedback": "Il sale non modifica significativamente il pH."
+        }
+      ],
+      "spiegazione": "I batteri hanno bisogno di acqua per sopravvivere. Il sale la sottrae riducendo l'attività dell'acqua."
+    },
+    {
+      "livello": "F",
+      "domanda": "A quale temperatura deve stare il cibo nel freezer?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "0°C",
+          "feedback": "A 0°C il cibo non si congela."
+        },
+        {
+          "id": "b",
+          "testo": "-8°C",
+          "feedback": "Non è sufficiente per conservare a lungo."
+        },
+        {
+          "id": "c",
+          "testo": "-18°C o inferiore",
+          "corretto": true,
+          "feedback": "Esatto! A -18°C i microrganismi restano inattivi e il cibo si conserva a lungo in sicurezza."
+        },
+        {
+          "id": "d",
+          "testo": "-5°C",
+          "feedback": "Insufficiente per bloccare i microrganismi."
+        }
+      ],
+      "spiegazione": "A -18°C i microrganismi restano inattivi e il cibo si conserva a lungo in sicurezza."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché la marmellata dura mesi senza frigorifero?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché è pastorizzata ad alte temperature",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Alto contenuto di zucchero (abbassa l'acqua disponibile) + acidità del frutto",
+          "corretto": true,
+          "feedback": "Esatto! Zucchero + acidità: entrambi inibiscono i microrganismi rendendo il prodotto stabile senza additivi."
+        },
+        {
+          "id": "c",
+          "testo": "Perché non contiene grassi",
+          "feedback": "I grassi non influenzano la conservazione in questo caso."
+        },
+        {
+          "id": "d",
+          "testo": "Perché è trattata con raggi UV",
+          "feedback": "Questa è un'altra tecnica industriale."
+        }
+      ],
+      "spiegazione": "Zucchero + acidità: entrambi inibiscono i microrganismi rendendo il prodotto stabile senza additivi."
+    },
+    {
+      "livello": "I",
+      "domanda": "Differenza tra 'data di scadenza' e 'termine minimo di conservazione' (TMC)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sono la stessa cosa",
+          "feedback": "Sono concetti giuridici distinti."
+        },
+        {
+          "id": "b",
+          "testo": "Il TMC indica quando le qualità possono calare, la scadenza è il limite di sicurezza alimentare",
+          "corretto": true,
+          "feedback": "Esatto! Dopo il TMC l'alimento può essere ancora sicuro; dopo la data di scadenza non va consumato."
+        },
+        {
+          "id": "c",
+          "testo": "Il TMC è obbligatorio, la scadenza no",
+          "feedback": "Entrambi sono regolamentati dall'UE."
+        },
+        {
+          "id": "d",
+          "testo": "La scadenza si usa solo per i liquidi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Dopo il TMC l'alimento può essere ancora sicuro; dopo la data di scadenza non va consumato."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché il latte UHT dura mesi mentre quello pastorizzato no?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il latte UHT è privo di grassi",
+          "feedback": "Il tenore di grassi dipende dalla tipologia, non dal trattamento."
+        },
+        {
+          "id": "b",
+          "testo": "Il trattamento UHT a 135-150°C elimina anche le spore batteriche",
+          "corretto": true,
+          "feedback": "Esatto! UHT = Ultra High Temperature: elimina le spore che la pastorizzazione lascia vive."
+        },
+        {
+          "id": "c",
+          "testo": "Il latte UHT ha conservanti aggiunti",
+          "feedback": "Non ne contiene."
+        },
+        {
+          "id": "d",
+          "testo": "Il confezionamento è sottovuoto",
+          "feedback": "Il confezionamento asettico aiuta, ma il fattore chiave è il calore."
+        }
+      ],
+      "spiegazione": "UHT = Ultra High Temperature: elimina le spore che la pastorizzazione lascia vive. Il confezionamento asettico mantiene la sterilità."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'catena del freddo' e perché è critica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una serie di frigoriferi collegati in fabbrica",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il mantenimento continuo della temperatura dal produttore al consumatore: ogni interruzione permette la proliferazione batterica",
+          "corretto": true,
+          "feedback": "Esatto! Ogni interruzione anche breve permette ai batteri di moltiplicarsi geometricamente."
+        },
+        {
+          "id": "c",
+          "testo": "Un metodo di confezionamento sottovuoto",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il trasporto refrigerato esclusivamente via nave",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Ogni interruzione anche breve permette ai batteri di moltiplicarsi geometricamente. Critica per carni, latticini e pesce."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il packaging in 'atmosfera modificata' (MAP)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La refrigerazione a temperatura controllata",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "La sostituzione dell'aria nella confezione con gas (CO₂, N₂) per rallentare ossidazione e crescita microbica",
+          "corretto": true,
+          "feedback": "Esatto! Le buste MAP controllano i gas interni prolungando la conservazione senza additivi chimici."
+        },
+        {
+          "id": "c",
+          "testo": "L'essiccazione con correnti d'aria",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "L'irradiazione con raggi gamma",
+          "feedback": "Tecnica diversa."
+        }
+      ],
+      "spiegazione": "Le buste MAP controllano i gas interni prolungando la conservazione senza additivi chimici. Usata per insalate, carne e formaggi."
+    },
+    {
+      "livello": "A",
+      "domanda": "Perché il pH < 4.6 è il limite di sicurezza per le conserve?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché a pH < 4.6 il cibo ha buon sapore",
+          "feedback": "Il gusto non è il criterio."
+        },
+        {
+          "id": "b",
+          "testo": "Sotto pH 4.6 il Clostridium botulinum non produce la tossina botulinica",
+          "corretto": true,
+          "feedback": "Esatto! Il botulino prospera in ambiente anaerobico e non acido."
+        },
+        {
+          "id": "c",
+          "testo": "Perché è il pH dello stomaco umano",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Perché a questo pH il cibo non cambia colore",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il botulino prospera in ambiente anaerobico e non acido. Il pH 4.6 è la soglia fondamentale per le conserve casalinghe sicure."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

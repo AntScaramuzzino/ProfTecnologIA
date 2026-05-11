@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-3-03",
+  "titolo": "Raccolta dati da sensori e sistemi IoT",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa si intende per IoT (Internet of Things)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Internet accessibile solo tramite smartphone",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La rete di oggetti fisici dotati di sensori e connettività che raccolgono e scambiano dati",
+          "corretto": true,
+          "feedback": "Esatto! L'IoT trasforma oggetti fisici in nodi intelligenti: termostati, lampioni, veicoli, sensori industriali — tutti connessi e comunicanti."
+        },
+        {
+          "id": "c",
+          "testo": "Un protocollo di sicurezza per reti WiFi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di intelligenza artificiale distribuito",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'IoT trasforma oggetti fisici in nodi intelligenti: termostati, lampioni, veicoli, sensori industriali — tutti connessi e comunicanti."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'microcontrollore' come Arduino o micro:bit?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un processore per computer desktop",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un piccolo chip programmabile con CPU, memoria e pin I/O integrati: legge sensori e controlla attuatori",
+          "corretto": true,
+          "feedback": "Esatto! I microcontrollori sono il 'cervello' dei dispositivi IoT: economici, compatti, consumano poca energia."
+        },
+        {
+          "id": "c",
+          "testo": "Un software per programmare robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un modulo WiFi per dispositivi mobili",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I microcontrollori sono il 'cervello' dei dispositivi IoT: economici, compatti, consumano poca energia."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa si intende per 'dato grezzo' vs 'dato elaborato' in un sistema IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il dato grezzo è più preciso del dato elaborato",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il dato grezzo è la misura diretta del sensore (es. tensione); il dato elaborato è il risultato di calcoli che lo rendono significativo (es. temperatura in °C)",
+          "corretto": true,
+          "feedback": "Esatto! Un sensore di temperatura produce una tensione (dato grezzo)."
+        },
+        {
+          "id": "c",
+          "testo": "Il dato elaborato è più grande del dato grezzo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il dato grezzo viene trasmesso via cloud, il dato elaborato no",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un sensore di temperatura produce una tensione (dato grezzo). La conversione in gradi Celsius è elaborazione. La scala dei dati cambia tutto."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il protocollo MQTT e perché è usato nell'IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sistema di aggiornamento firmware per dispositivi IoT",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un protocollo di messaggistica leggero publish/subscribe ideale per dispositivi IoT con banda limitata e basso consumo energetico",
+          "corretto": true,
+          "feedback": "Esatto! MQTT è progettato per dispositivi con risorse limitate: messaggi piccoli, efficiente su reti lente, modello pub/sub scalabile a milioni di dispositivi."
+        },
+        {
+          "id": "c",
+          "testo": "Un formato di file per salvare i dati dei sensori",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un protocollo di sicurezza per reti IoT",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "MQTT è progettato per dispositivi con risorse limitate: messaggi piccoli, efficiente su reti lente, modello pub/sub scalabile a milioni di dispositivi."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si intende per 'edge computing' in un sistema IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La computazione eseguita esclusivamente nel cloud",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'elaborazione dei dati il più vicino possibile al sensore (sul dispositivo o in prossimità), riducendo latenza e traffico verso il cloud",
+          "corretto": true,
+          "feedback": "Esatto! L'edge computing è fondamentale per applicazioni real-time (veicoli autonomi, controllo industriale) dove inviare ogni dato al cloud è troppo lento."
+        },
+        {
+          "id": "c",
+          "testo": "Un tipo di chip ad alte prestazioni per IoT",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema di aggiornamento dei firmware via internet",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'edge computing è fondamentale per applicazioni real-time (veicoli autonomi, controllo industriale) dove inviare ogni dato al cloud è troppo lento."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'calibrazione' di un sensore e perché è fondamentale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La programmazione iniziale del microcontrollore",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il processo di correzione sistematica delle misurazioni di un sensore confrontandole con un valore di riferimento noto",
+          "corretto": true,
+          "feedback": "Esatto! Senza calibrazione i dati di un sensore possono essere sistematicamente sbagliati."
+        },
+        {
+          "id": "c",
+          "testo": "L'aggiornamento del firmware del sensore",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La procedura di collegamento fisico del sensore al circuito",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Senza calibrazione i dati di un sensore possono essere sistematicamente sbagliati. Un sensore CO₂ non calibrato misura bene le variazioni ma non il valore assoluto."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'digital twin' nel contesto IoT industriale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una copia di backup dei dati IoT nel cloud",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una replica digitale in tempo reale di un asset fisico (macchina, edificio, città) alimentata dai dati IoT: usata per monitoraggio, simulazione e ottimizzazione",
+          "corretto": true,
+          "feedback": "Esatto! Il digital twin è la sintesi dell'IoT: dati in tempo reale creano un gemello digitale dell'oggetto fisico."
+        },
+        {
+          "id": "c",
+          "testo": "Un secondo dispositivo IoT identico al primo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il database che archivia i dati storici dei sensori",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il digital twin è la sintesi dell'IoT: dati in tempo reale creano un gemello digitale dell'oggetto fisico. Si simula senza toccare il reale."
+    },
+    {
+      "livello": "A",
+      "domanda": "Quali sono le principali sfide di sicurezza nell'IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il consumo eccessivo di energia dei dispositivi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Dispositivi con risorse limitate che spesso non possono implementare crittografia robusta, aggiornamenti di sicurezza difficili, superficie di attacco enorme",
+          "corretto": true,
+          "feedback": "Esatto! Una botnet di termostati e telecamere ha bloccato internet nel 2016 (Mirai)."
+        },
+        {
+          "id": "c",
+          "testo": "La difficoltà di connettere i dispositivi al WiFi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il costo elevato dei sensori industriali",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Una botnet di termostati e telecamere ha bloccato internet nel 2016 (Mirai). L'IoT amplia enormemente la superficie di attacco informatico."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'time series analysis' e perché è centrale nell'IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'analisi della durata di vita dei sensori",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'analisi di sequenze di dati con timestamp per identificare trend, stagionalità e anomalie: fondamentale per previsione guasti e ottimizzazione energetica",
+          "corretto": true,
+          "feedback": "Esatto! I dati IoT sono quasi sempre time series."
+        },
+        {
+          "id": "c",
+          "testo": "Il calcolo del tempo di trasmissione dei dati",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La sincronizzazione degli orologi tra dispositivi IoT",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I dati IoT sono quasi sempre time series. Rilevare che un sensore industriale vibra sempre di più prima di rompersi è manutenzione predittiva via time series."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è un disegno assonometrico?",
+    "back": "Una rappresentazione tridimensionale di un oggetto su un piano 2D usando assi obliqui\n\nL'assonometria è la rappresentazione 3D più usata nella tecnica: mostra larghezza, altezza e profondità in un unico disegno senza distorsione prospettica.",
+    "tag": "Base"
+  },
+  {
+    "front": "Nell'assonometria cavaliera obliqua, a che angolo sono proiettate le profondità?",
+    "back": "45°\n\nNell'assonometria cavaliera obliqua le profondità sono proiettate a 45° rispetto all'asse orizzontale. Le profondità si riducono della metà.",
+    "tag": "Base"
+  },
+  {
+    "front": "In un'assonometria isometrica, quali angoli formano i tre assi tra loro?",
+    "back": "120° tra ogni coppia di assi (asse verticale a 90°, laterali a 30° dall'orizzontale)\n\nL'isometria usa assi a 120° tra loro: l'asse verticale è a 90°, i due orizzontali a 30° dall'orizzontale. Le misure sugli assi non si deformano.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza principale tra assonometria cavaliera e isometrica?",
+    "back": "Nella cavaliera le profondità si dimezzano e si proiettano a 45°; nell'isometrica tutte le misure sugli assi mantengono il rapporto reale (fattore 1)\n\nL'isometrica non deforma le misure sugli assi: ciò che è 10cm nel reale è 10cm nel disegno (sugli assi). La cavaliera deforma la profondità a metà.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché nei disegni IKEA si usa l'assonometria cavaliera obliqua?",
+    "back": "Perché la faccia frontale dell'oggetto appare in forma reale (non deformata), facilitando il riconoscimento del prodotto e delle sue proporzioni principali\n\nLa faccia frontale in vista reale è intuitiva: il cliente vede il mobile come lo vedrà davanti a sé. Le profondità deformate sono accettabili per un manuale di montaggio.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come si disegnano i cerchi nell'assonometria isometrica?",
+    "back": "Come ellissi: il cerchio viene proiettato e deformato in un'ellisse i cui assi dipendono dall'orientamento del piano\n\nUn cerchio su un piano isometrico diventa un'ellisse. La deformazione dipende dall'orientamento (piano XY, XZ o YZ). Si costruisce con il metodo 'dei 4 centri'.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'prospettiva' e come si distingue dall'assonometria?",
+    "back": "Nella prospettiva le parallele convergono verso punti di fuga imitando la percezione visiva umana; nell'assonometria restano parallele. La prospettiva è più realistica, l'assonometria più misurabile\n\nL'assonometria è misurabile (puoi ricavare dimensioni reali). La prospettiva è più naturale visivamente ma non misurabile direttamente. In tecnica si usa assonometria; in architettura si usa entrambe.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'assonometria militare' e in quali ambiti si usa?",
+    "back": "Un tipo di assonometria obliqua in cui la pianta è vista dall'alto in forma reale (non deformata) e le altezze sono proiettate verticalmente: usata in urbanistica, planimetrie e videogiochi isometrici\n\nL'assonometria militare (o a cavallerizza) mostra la pianta vera e aggiunge le altezze. SimCity e molti giochi strategici usano questa proiezione.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Quando è preferibile usare l'assonometria rispetto alle proiezioni ortogonali?",
+    "back": "Quando si vuole comunicare la forma 3D in modo immediato a chi non sa leggere le proiezioni ortogonali: clienti, studenti, presentazioni\n\nProiezioni ortogonali sono precise e complete ma richiedono training. L'assonometria è immediata ma non completamente misurabile. Si usano insieme: 3 viste + assonometria per chiarezza.",
+    "tag": "Avanzato"
+  }
+]

@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-COM-3-04",
+  "titolo": "Automazione, robotica e industria 4.0",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è l'automazione industriale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La sostituzione di tutti i lavoratori con robot",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "L'uso di macchine, sistemi di controllo e software per eseguire processi produttivi riducendo l'intervento umano diretto",
+          "corretto": true,
+          "feedback": "Esatto! L'automazione non sostituisce necessariamente l'uomo: spesso lo affianca, eliminando le mansioni ripetitive e pericolose."
+        },
+        {
+          "id": "c",
+          "testo": "La produzione di robot per uso domestico",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "L'informatizzazione della gestione amministrativa",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'automazione non sostituisce necessariamente l'uomo: spesso lo affianca, eliminando le mansioni ripetitive e pericolose."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'robot collaborativo' (cobot)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un robot che lavora al posto degli operai in modo completamente autonomo",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un robot progettato per lavorare accanto agli esseri umani in modo sicuro, integrandosi nella stessa postazione senza barriere di sicurezza",
+          "corretto": true,
+          "feedback": "Esatto! I cobot sono dotati di sensori che rilevano la presenza umana e riducono forza e velocità."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema robotico controllato da remoto da un operatore",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un robot che impara osservando altri robot",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "I cobot sono dotati di sensori che rilevano la presenza umana e riducono forza e velocità. Permettono collaborazione uomo-macchina flessibile."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è l'Industria 4.0?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La quarta rivoluzione industriale basata su automazione, IoT, big data, AI e connettività per creare fabbriche intelligenti e interconnesse",
+          "corretto": true,
+          "feedback": "Esatto! L'Industria 4."
+        },
+        {
+          "id": "b",
+          "testo": "Le industrie fondate negli anni 2040",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "c",
+          "testo": "Un piano governativo italiano per le PMI",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La digitalizzazione degli uffici amministrativi delle fabbriche",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'Industria 4.0 integra mondo fisico e digitale: macchine che comunicano, si auto-diagnosticano e si adattano in tempo reale."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'digital twin' in ambito industriale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una copia fisica di riserva di un macchinario",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Una replica digitale in tempo reale di un impianto fisico che simula il comportamento e permette ottimizzazione senza fermare la produzione",
+          "corretto": true,
+          "feedback": "Esatto! Il digital twin permette di simulare guasti, ottimizzare parametri e formare operatori senza toccare la macchina reale."
+        },
+        {
+          "id": "c",
+          "testo": "Un software per la gestione del personale",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di backup dei dati industriali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il digital twin permette di simulare guasti, ottimizzare parametri e formare operatori senza toccare la macchina reale."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'manutenzione predittiva'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La manutenzione programmata ogni 6 mesi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "L'uso di sensori e AI per prevedere i guasti prima che avvengano, intervenendo solo quando necessario",
+          "corretto": true,
+          "feedback": "Esatto! La manutenzione predittiva riduce i fermi macchina non programmati del 40-60%."
+        },
+        {
+          "id": "c",
+          "testo": "La sostituzione sistematica dei componenti usurati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La manutenzione eseguita da robot autonomi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La manutenzione predittiva riduce i fermi macchina non programmati del 40-60%. Analizza vibrazioni, temperatura e parametri per identificare anomalie."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si intende per 'fabbrica intelligente' (smart factory)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una fabbrica gestita interamente da robot",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un impianto produttivo in cui macchine, sistemi e persone sono connessi e comunicano in tempo reale ottimizzando efficienza, qualità e flessibilità",
+          "corretto": true,
+          "feedback": "Esatto! La smart factory usa IoT, AI, big data e digital twin per adattarsi in tempo reale alla domanda e ai guasti, minimizzando sprechi."
+        },
+        {
+          "id": "c",
+          "testo": "Una fabbrica alimentata al 100% da energie rinnovabili",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un'azienda che produce prodotti smart/tecnologici",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La smart factory usa IoT, AI, big data e digital twin per adattarsi in tempo reale alla domanda e ai guasti, minimizzando sprechi."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'manifattura additiva' e come si distingue da quella tradizionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La produzione in serie di componenti identici",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "La fabbricazione per aggiunta di materiale strato per strato (stampa 3D): permette geometrie impossibili con lavorazioni tradizionali e zero scarti di materiale",
+          "corretto": true,
+          "feedback": "Esatto! La manifattura additiva elimina i vincoli delle lavorazioni per sottrazione (fresatura, tornitura): solo quello che serve, dove serve."
+        },
+        {
+          "id": "c",
+          "testo": "La produzione automatizzata ad alta velocità",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La manifattura che usa solo materiali riciclati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La manifattura additiva elimina i vincoli delle lavorazioni per sottrazione (fresatura, tornitura): solo quello che serve, dove serve."
+    },
+    {
+      "livello": "A",
+      "domanda": "Quali implicazioni ha l'automazione sul mercato del lavoro?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sostituisce tutti i lavori: la disoccupazione sarà totale",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Elimina mansioni routinarie e ripetitive, crea nuove professioni in gestione/manutenzione dei sistemi automatizzati, richiede una transizione con upskilling continuo",
+          "corretto": true,
+          "feedback": "Esatto! Il WEF stima che entro il 2025 l'automazione elimini 85 milioni di posti ma ne crei 97 milioni diversi."
+        },
+        {
+          "id": "c",
+          "testo": "Non ha impatto sul lavoro: crea sempre tanti lavori quanti ne elimina",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Impatta solo i lavori manuali, non quelli intellettuali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il WEF stima che entro il 2025 l'automazione elimini 85 milioni di posti ma ne crei 97 milioni diversi. La sfida è la transizione e la formazione continua."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'etica nell'automazione industriale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il rispetto delle norme di sicurezza sul lavoro nei settori automatizzati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "L'insieme di questioni su responsabilità in caso di incidenti causati da macchine autonome, trasparenza degli algoritmi decisionali, impatto sociale dell'automazione e governance dei dati produttivi",
+          "corretto": true,
+          "feedback": "Esatto! Chi è responsabile quando un robot sbaglia? Come si garantisce la trasparenza degli algoritmi? Come si proteggono i lavoratori in transizione? Sono le domande aperte dell'etica della robotica."
+        },
+        {
+          "id": "c",
+          "testo": "Il codice di condotta degli ingegneri robotici",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Le norme ambientali per le fabbriche automatizzate",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Chi è responsabile quando un robot sbaglia? Come si garantisce la trasparenza degli algoritmi? Come si proteggono i lavoratori in transizione? Sono le domande aperte dell'etica della robotica."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

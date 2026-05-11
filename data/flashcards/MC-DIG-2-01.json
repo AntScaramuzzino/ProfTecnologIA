@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è un algoritmo?",
+    "back": "Una sequenza finita di istruzioni per risolvere un problema o completare un compito\n\nUn algoritmo può essere scritto in italiano prima ancora che in codice: è la ricetta del problema.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la 'decomposizione' nel pensiero computazionale?",
+    "back": "La strategia di scomporre un problema complesso in sotto-problemi più piccoli e gestibili\n\n'Come mangio un elefante? Un morso alla volta.' La decomposizione rende gestibili i problemi apparentemente impossibili.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'riconoscimento di pattern'?",
+    "back": "L'identificazione di regolarità, similitudini e strutture ricorrenti nei dati o nei problemi\n\nRiconoscere che 'tutti i cicli vitali hanno le stesse fasi' è pattern recognition: permette di applicare soluzioni già note a problemi nuovi.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la 'pseudocodifica'?",
+    "back": "Un modo informale di descrivere un algoritmo usando linguaggio naturale strutturato, prima di tradurlo in codice\n\nLa pseudocodifica aiuta a pensare alla logica prima di preoccuparsi della sintassi. È come fare lo schema di un tema prima di scriverlo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è un 'caso limite' (edge case) nel testing di un algoritmo?",
+    "back": "Un input ai limiti del normale o inaspettato che può rivelare difetti nascosti nell'algoritmo\n\nEdge case: cosa succede se inserisco 0? O un numero negativo? O una stringa vuota? Testare i casi limite previene i bug in produzione.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'complessità' di un algoritmo?",
+    "back": "La misura di quanto tempo (tempo) o memoria (spazio) richiede al crescere della dimensione del problema\n\nUn algoritmo O(n²) diventa inutilizzabile con grandi dataset, mentre O(log n) scala bene. La complessità determina l'applicabilità reale.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'ricorsione' nella programmazione?",
+    "back": "Una funzione che chiama se stessa con un sotto-problema più piccolo fino a raggiungere un caso base: usata per problemi naturalmente auto-simili\n\nLa ricorsione è elegante per problemi come il calcolo del fattoriale o la ricerca in alberi. Rischio: stack overflow se manca il caso base.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'debugging' e quali strategie usa?",
+    "back": "Il processo sistematico di identificazione e correzione degli errori nel codice: usa print debugging, breakpoint, test unitari e rubber duck debugging\n\nIl rubber duck debugging consiste nello spiegare il codice ad alta voce (o a un'anatra di gomma): verbalizzare il problema spesso rivela l'errore.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'refactoring' del codice?",
+    "back": "Il miglioramento della struttura interna del codice senza modificarne il comportamento esterno: rende il codice più leggibile e manutenibile\n\nIl refactoring è come rifare l'ordine in casa: il risultato esterno (la casa funziona) non cambia, ma l'organizzazione interna è molto migliore.",
+    "tag": "Avanzato"
+  }
+]

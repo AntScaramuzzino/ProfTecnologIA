@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Qual è la funzione principale della CPU?",
+    "back": "Elaborare le istruzioni e fare i calcoli\n\nCPU = Central Processing Unit: è il cervello del computer, esegue le istruzioni dei programmi.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa succede ai dati nella RAM quando spegni il computer?",
+    "back": "Vengono persi: la RAM è memoria volatile\n\nLa RAM è volatile: funziona solo con il computer acceso. Spegnendo si svuota.",
+    "tag": "Base"
+  },
+  {
+    "front": "Differenza fondamentale tra hardware e software?",
+    "back": "L'hardware si può toccare fisicamente, il software no\n\nHardware = componenti fisici. Software = programmi e dati. Entrambi indispensabili.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché 16 GB di RAM è meglio di 4 GB?",
+    "back": "Può eseguire più programmi contemporaneamente senza rallentare\n\nLa RAM è la scrivania di lavoro: più è grande, più programmi puoi tenere aperti.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa fa il sistema operativo?",
+    "back": "Gestisce le risorse hardware e offre un'interfaccia per le applicazioni\n\nIl SO è il gestore condominiale: alloca RAM, gestisce file, controlla l'hardware per tutte le app.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa significa che un file è nella 'cartella radice'?",
+    "back": "Si trova al livello più alto della struttura di cartelle\n\nLa radice è il livello più alto dell'albero: C:\\ su Windows, / su Linux/Mac.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa significa architettura '64 bit' di un processore?",
+    "back": "Elabora 64 bit per ciclo e può gestire più di 4 GB di RAM\n\nCon 64 bit il processore può indirizzare 2^64 indirizzi — oltre 4 miliardi di GB teorici.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Differenza tra SSD e HDD?",
+    "back": "L'SSD usa memoria flash senza parti in movimento: molto più veloce e resistente\n\nSSD = Solid State Drive: chip flash senza meccanica. 3-10x più veloce, meno fragile.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il kernel di un sistema operativo?",
+    "back": "Il nucleo del SO che gestisce direttamente hardware e risorse\n\nIl kernel gira con i massimi privilegi: gestisce memoria, CPU, I/O. Le app passano attraverso di esso.",
+    "tag": "Avanzato"
+  }
+]

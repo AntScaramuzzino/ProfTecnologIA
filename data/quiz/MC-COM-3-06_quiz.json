@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-COM-3-06",
+  "titolo": "Media digitali, pubblicità e pensiero critico",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa si intende per 'fake news'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Notizie semplicemente spiacevoli o negative",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Informazioni false o fuorvianti diffuse intenzionalmente come se fossero notizie vere",
+          "corretto": true,
+          "feedback": "Esatto! Le fake news sono progettate per ingannare e manipolare."
+        },
+        {
+          "id": "c",
+          "testo": "Notizie pubblicate senza verificare le fonti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Contenuti satirici che imitano il giornalismo",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le fake news sono progettate per ingannare e manipolare. La satira è legittima quando è riconoscibile come tale."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è una 'fonte primaria' nell'informazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una fonte molto famosa e seguita",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La fonte originale dell'informazione: il documento ufficiale, la ricerca scientifica, il comunicato dell'ente",
+          "corretto": true,
+          "feedback": "Esatto! Una fonte primaria è la materia prima dell'informazione."
+        },
+        {
+          "id": "c",
+          "testo": "La prima testata giornalistica che ha pubblicato la notizia",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Una fonte citata da più di 3 giornali diversi",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Una fonte primaria è la materia prima dell'informazione. Citare il giornale che cita la ricerca non è citare la fonte primaria."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il 'fact-checking'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La verifica tecnica della qualità di un sito web",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il processo sistematico di verifica dell'accuratezza delle affermazioni pubbliche usando fonti verificabili",
+          "corretto": true,
+          "feedback": "Esatto! Il fact-checking professionale (Snopes, FactCheck, Pagella Politica in Italia) verifica le dichiarazioni dei politici e le notizie virali con metodo documentato."
+        },
+        {
+          "id": "c",
+          "testo": "Il controllo dei diritti d'autore online",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La moderazione dei commenti sui social network",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il fact-checking professionale (Snopes, FactCheck, Pagella Politica in Italia) verifica le dichiarazioni dei politici e le notizie virali con metodo documentato."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il bias di conferma?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La tendenza dei giornali a confermare le notizie solo dopo tre fonti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La tendenza psicologica a cercare, interpretare e ricordare informazioni che confermano le proprie credenze preesistenti",
+          "corretto": true,
+          "feedback": "Esatto! Il bias di conferma ci fa accettare acriticamente informazioni che confermano ciò che già crediamo e rifiutare quelle che contraddicono."
+        },
+        {
+          "id": "c",
+          "testo": "Un errore nelle statistiche di ricerca",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La strategia degli algoritmi per mostrare contenuti simili",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il bias di conferma ci fa accettare acriticamente informazioni che confermano ciò che già crediamo e rifiutare quelle che contraddicono. È amplificato dagli algoritmi dei social."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'deepfake'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un profilo social falso",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Contenuto video/audio generato con AI che mostra persone che fanno o dicono cose che non hanno mai fatto",
+          "corretto": true,
+          "feedback": "Esatto! I deepfake usano AI generativa per creare video falsi convincenti."
+        },
+        {
+          "id": "c",
+          "testo": "Un filtro fotografico che cambia i connotati",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un tipo di truffa via email",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I deepfake usano AI generativa per creare video falsi convincenti. Rappresentano una minaccia alla fiducia nell'informazione visiva che storicamente era difficile falsificare."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'media literacy' (alfabetizzazione mediatica)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La capacità di leggere e scrivere articoli giornalistici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di accedere, analizzare, valutare, creare e partecipare ai media in modo critico e consapevole",
+          "corretto": true,
+          "feedback": "Esatto! La media literacy è la competenza del XXI secolo: saper distinguere informazione da opinione, riconoscere la propaganda e valutare le fonti."
+        },
+        {
+          "id": "c",
+          "testo": "La conoscenza delle leggi sulla stampa e la pubblicità",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La competenza tecnica nell'uso dei social network",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La media literacy è la competenza del XXI secolo: saper distinguere informazione da opinione, riconoscere la propaganda e valutare le fonti."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'greenwashing' nella comunicazione aziendale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il riciclo dei materiali pubblicitari cartacei",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La pratica di comunicare un'immagine ambientale positiva non supportata da azioni reali o sovradimensionata rispetto all'impatto effettivo",
+          "corretto": true,
+          "feedback": "Esatto! Il greenwashing è una forma di inganno comunicativo: mina la fiducia dei consumatori e distoglie attenzione dalle aziende genuinamente sostenibili."
+        },
+        {
+          "id": "c",
+          "testo": "La scelta di colori verdi nel design pubblicitario",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La certificazione ambientale della comunicazione aziendale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il greenwashing è una forma di inganno comunicativo: mina la fiducia dei consumatori e distoglie attenzione dalle aziende genuinamente sostenibili."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'computational propaganda'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La propaganda distribuita tramite volantini digitali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'uso di algoritmi, bot e automazione per diffondere disinformazione politica su larga scala manipolando l'opinione pubblica",
+          "corretto": true,
+          "feedback": "Esatto! I bot possono amplificare artificialmente messaggi politici, far sembrare che un'opinione sia maggioritaria quando non lo è, influenzando elezioni e decisioni pubbliche."
+        },
+        {
+          "id": "c",
+          "testo": "La pubblicità politica a pagamento sui social",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'analisi dei dati per creare messaggi politici mirati",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I bot possono amplificare artificialmente messaggi politici, far sembrare che un'opinione sia maggioritaria quando non lo è, influenzando elezioni e decisioni pubbliche."
+    },
+    {
+      "livello": "A",
+      "domanda": "Perché il 'diritto all'oblio' è importante nell'era digitale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché permette di dimenticare le proprie password",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché riconosce il diritto delle persone a richiedere la rimozione di informazioni personali obsolete o irrilevanti dai motori di ricerca",
+          "corretto": true,
+          "feedback": "Esatto! La sentenza Google Spain (CGUE 2014) ha stabilito che le persone hanno diritto a chiedere la de-indicizzazione di contenuti che non riflettono più la loro situazione attuale."
+        },
+        {
+          "id": "c",
+          "testo": "Perché obbliga i social a cancellare i profili inattivi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché limita la durata dei cookie di tracciamento",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La sentenza Google Spain (CGUE 2014) ha stabilito che le persone hanno diritto a chiedere la de-indicizzazione di contenuti che non riflettono più la loro situazione attuale."
+    }
+  ]
+}

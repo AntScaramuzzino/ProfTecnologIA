@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cosa si intende per 'machine learning'?",
+    "back": "Un sistema che apprende da dati migliorando le proprie prestazioni senza essere esplicitamente programmato per ogni caso\n\nIl machine learning è la base dell'IA moderna: invece di regole scritte dal programmatore, il sistema le ricava dai dati.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un 'dataset' nell'addestramento di un modello AI?",
+    "back": "L'insieme di dati (esempi, immagini, testi) usato per addestrare un modello AI a riconoscere pattern\n\nUn dataset di qualità è fondamentale: garbage in, garbage out. Dati distorti producono modelli distorti.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa un algoritmo di 'classificazione'?",
+    "back": "Assegna ogni dato a una categoria predefinita: es. 'spam/non spam', 'cane/gatto', 'positivo/negativo'\n\nLa classificazione è uno dei compiti più comuni del ML: riconoscimento facciale, diagnosi mediche, filtri email.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'bias' (distorsione) in un modello AI e perché è pericoloso?",
+    "back": "Una distorsione sistematica nelle previsioni del modello, spesso derivante da dati di addestramento non rappresentativi\n\nUn modello addestrato su dati sbilanciati riproduce e amplifica i bias: sistemi di riconoscimento facciale con prestazioni peggiori per persone di colore ne sono un esempio documentato.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa distingue un modello 'supervised' da uno 'unsupervised'?",
+    "back": "Nel supervised i dati di addestramento hanno etichette (risposta corretta nota); nell'unsupervised il modello trova pattern da solo nei dati non etichettati\n\nSupervised: imparare con un insegnante. Unsupervised: esplorare da soli. Ogni approccio ha applicazioni diverse.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'transfer learning' e perché è importante?",
+    "back": "La tecnica che permette di riutilizzare un modello pre-addestrato su un compito per adattarlo a un compito simile con pochi dati aggiuntivi\n\nGPT, BERT, ResNet: questi modelli enormi vengono 'raffinati' (fine-tuning) per applicazioni specifiche con pochi esempi. È la base dell'IA generativa moderna.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'explainability' (spiegabilità) nell'AI e perché è fondamentale in certi ambiti?",
+    "back": "La capacità di un sistema AI di spiegare come ha preso una decisione: fondamentale in medicina, giustizia e credito dove le decisioni impattano diritti\n\nUn modello che nega un mutuo o suggerisce una diagnosi deve poter spiegare perché. Il regolamento EU AI Act impone explainability per i sistemi ad alto rischio.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'AI Act europeo e quali categorie di rischio prevede?",
+    "back": "Il primo regolamento globale sull'AI: classifica i sistemi AI per livello di rischio (inaccettabile/alto/limitato/minimo) e impone requisiti proporzionali\n\nL'AI Act UE è il primo framework regolatorio globale: vieta certi usi (punteggio sociale), regolamenta altri (IA in medicina, giustizia), lascia liberi quelli a basso rischio.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è un 'Large Language Model' (LLM) e come funziona a livello concettuale?",
+    "back": "Un modello addestrato su miliardi di testi che impara a predire il token successivo: emergono capacità di ragionamento, traduzione e generazione\n\nGPT, Claude, Gemini sono LLM. Addestrati a predire la parola successiva su trilioni di token, 'emergono' capacità che non erano state programmate esplicitamente.",
+    "tag": "Avanzato"
+  }
+]

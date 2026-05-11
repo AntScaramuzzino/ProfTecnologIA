@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Quale strumento si usa per tracciare cerchi nel disegno tecnico?",
+    "back": "Il compasso\n\nIl compasso permette di tracciare cerchi e archi di raggio preciso. La distanza tra punta e mina = raggio del cerchio.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quante volte si 'stacca' il raggio sulla circonferenza per costruire un esagono?",
+    "back": "6\n\nIl raggio si stacca esattamente 6 volte sulla circonferenza: questo è il principio geometrico alla base della costruzione dell'esagono con il solo compasso.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'cartiglio' in un disegno tecnico?",
+    "back": "Il riquadro in basso a destra con dati identificativi: nome, data, scala, numero tavola\n\nIl cartiglio è obbligatorio e standardizzato (UNI EN ISO 7200). Senza di esso un disegno tecnico non è identificabile né tracciabile.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa distingue una linea 'continua grossa' da una 'tratteggiata fine' nel disegno tecnico?",
+    "back": "La grossa indica i contorni visibili dell'oggetto; la tratteggiata rappresenta spigoli e superfici nascosti (non visibili dalla vista)\n\nLa convenzione grafica è universale (ISO 128): ogni tipo di linea ha un significato preciso leggibile da qualsiasi tecnico nel mondo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come si biseca geometricamente un segmento con riga e compasso?",
+    "back": "Si tracciano due archi dal raggio > metà del segmento da entrambe le estremità: la retta che unisce le intersezioni è la bisettrice perpendicolare\n\nLa costruzione geometrica è esatta, non approssimativa. Non serve misurare: bastano riga e compasso con il metodo corretto.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa significa che un poligono è 'inscritto' in una circonferenza?",
+    "back": "Tutti i vertici del poligono giacciono sulla circonferenza\n\nInscritto = tutti i vertici sul cerchio. Circoscritto = tutti i lati tangenti al cerchio. Due relazioni fondamentali in geometria euclidea.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'sezione aurea' e perché viene usata in design?",
+    "back": "La proporzione 1:1.618 (φ) ritenuta esteticamente armoniosa: usata in architettura, grafica e design perché risulta naturalmente piacevole alla percezione\n\nIl Partenone, la Gioconda, il logo Apple: la sezione aurea compare dove la proporzione è considerata perfetta. Non è magia: è percezione visiva evolutivamente ottimizzata.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché si usa ancora il disegno a mano nell'era del CAD?",
+    "back": "Perché sviluppa il ragionamento spaziale, la comprensione delle relazioni geometriche e l'intuizione progettuale che il CAD non può sostituire\n\nIl disegno a mano è pensiero visivo. Capire perché un esagono si costruisce così sviluppa un'intuizione geometrica che il software usa ma non insegna.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cosa è la norma ISO 128 e cosa regola?",
+    "back": "Lo standard internazionale per la rappresentazione grafica nei disegni tecnici: tipi di linea, spessori, convenzioni di visualizzazione\n\nISO 128 garantisce che un disegno tecnico sia leggibile allo stesso modo a Tokyo, Milano o São Paulo. La standardizzazione è la base della comunicazione tecnica globale.",
+    "tag": "Avanzato"
+  }
+]

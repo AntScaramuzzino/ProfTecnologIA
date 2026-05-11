@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-ENE-3-04",
+  "titolo": "Elettricità e circuiti",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è la tensione elettrica (V) e come si misura?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La velocità degli elettroni nel cavo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La differenza di potenziale elettrico tra due punti: si misura in Volt con un voltmetro collegato in parallelo",
+          "corretto": true,
+          "feedback": "Esatto! La tensione è la 'pressione' che spinge gli elettroni."
+        },
+        {
+          "id": "c",
+          "testo": "La quantità di elettroni che passano in un punto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La resistenza del materiale conduttore",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La tensione è la 'pressione' che spinge gli elettroni. Come il dislivello dell'acqua che fa scorrere il fiume: senza dislivello non c'è corrente."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è la corrente elettrica (I) e come si misura?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La velocità con cui si carica una batteria",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il flusso di carica elettrica per unità di tempo: si misura in Ampere con un amperometro collegato in serie",
+          "corretto": true,
+          "feedback": "Esatto! La corrente è il 'flusso' di elettroni."
+        },
+        {
+          "id": "c",
+          "testo": "La differenza di potenziale tra due punti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La resistenza che si oppone al flusso di elettroni",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La corrente è il 'flusso' di elettroni. Come la portata di un fiume (litri/secondo). Amperometro in serie = tutti gli elettroni passano attraverso lo strumento."
+    },
+    {
+      "livello": "F",
+      "domanda": "Enunciato della Legge di Ohm.",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "P = V × I",
+          "feedback": "Questa è la formula della potenza."
+        },
+        {
+          "id": "b",
+          "testo": "V = R × I",
+          "corretto": true,
+          "feedback": "Esatto! V = R × I è la Legge di Ohm: la tensione è uguale alla resistenza per la corrente."
+        },
+        {
+          "id": "c",
+          "testo": "I = V × R",
+          "feedback": "L'intensità si divide per la resistenza, non si moltiplica."
+        },
+        {
+          "id": "d",
+          "testo": "R = V × I",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "V = R × I è la Legge di Ohm: la tensione è uguale alla resistenza per la corrente. Conoscendo due grandezze si ricava la terza."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come si calcola la resistenza equivalente di resistori in serie?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "R_eq = R1 × R2 / (R1 + R2)",
+          "feedback": "Questa è la formula per il parallelo."
+        },
+        {
+          "id": "b",
+          "testo": "R_eq = R1 + R2 + ... + Rn",
+          "corretto": true,
+          "feedback": "Esatto! In serie la corrente passa attraverso tutti i resistori uno dopo l'altro: le resistenze si sommano."
+        },
+        {
+          "id": "c",
+          "testo": "R_eq = 1/R1 + 1/R2",
+          "feedback": "Questa è la formula per le conduttanze in parallelo."
+        },
+        {
+          "id": "d",
+          "testo": "R_eq = min(R1, R2)",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "In serie la corrente passa attraverso tutti i resistori uno dopo l'altro: le resistenze si sommano. Come tubi in fila che aumentano la lunghezza complessiva."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come si calcola la resistenza equivalente di resistori in parallelo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "R_eq = R1 + R2",
+          "feedback": "Questa è la formula per la serie."
+        },
+        {
+          "id": "b",
+          "testo": "1/R_eq = 1/R1 + 1/R2 → R_eq = R1×R2/(R1+R2) per due resistori",
+          "corretto": true,
+          "feedback": "Esatto! In parallelo la corrente si divide su più percorsi: la resistenza totale è minore della più piccola."
+        },
+        {
+          "id": "c",
+          "testo": "R_eq = max(R1, R2)",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "R_eq = R1/2 se le resistenze sono uguali",
+          "feedback": "Questo vale solo per resistenze identiche, ma la formula generale è diversa."
+        }
+      ],
+      "spiegazione": "In parallelo la corrente si divide su più percorsi: la resistenza totale è minore della più piccola. Come più tubi in parallelo che aumentano la portata."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la potenza elettrica e come si calcola?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il numero di elettroni che passano per secondo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'energia trasferita per unità di tempo: P = V × I (Watt). Derivabile anche come P = R × I² o P = V²/R",
+          "corretto": true,
+          "feedback": "Esatto! La potenza dice 'quanto velocemente' si usa l'energia."
+        },
+        {
+          "id": "c",
+          "testo": "La differenza tra tensione e resistenza",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il prodotto di corrente e resistenza",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La potenza dice 'quanto velocemente' si usa l'energia. Una lampadina da 60W usa 60 Joule ogni secondo. P = V×I è la formula base; le altre derivano dalla Legge di Ohm."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la differenza tra corrente alternata (AC) e corrente continua (DC)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La AC è più pericolosa della DC",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Nella DC la corrente scorre sempre nella stessa direzione; nella AC cambia direzione periodicamente (50 Hz in Europa). AC si trasmette meglio su lunghe distanze; DC è usata in elettronica e batterie",
+          "corretto": true,
+          "feedback": "Esatto! Tesla vs Edison: la guerra delle correnti."
+        },
+        {
+          "id": "c",
+          "testo": "La AC usa più energia della DC",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La DC è solo per uso domestico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Tesla vs Edison: la guerra delle correnti. Tesla/Westinghouse vinse con l'AC per la trasmissione a lunga distanza. Oggi l'HVDC (alta tensione continua) compete per trasmissioni intercontinentali."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'effetto Joule e come è collegato al consumo energetico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La produzione di luce dai diodi LED",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La dissipazione di energia come calore nei conduttori attraversati da corrente: P_calore = R × I². I cavi hanno resistenza non nulla, quindi perdono energia",
+          "corretto": true,
+          "feedback": "Esatto! L'effetto Joule spiega perché i cavi si scaldano e perché si usano altissime tensioni per trasmettere energia su lunghe distanze: alta V = bassa I = bassa perdita Joule."
+        },
+        {
+          "id": "c",
+          "testo": "L'aumento di resistenza con la temperatura",
+          "feedback": "Questo è vero ma non è la definizione dell'effetto Joule."
+        },
+        {
+          "id": "d",
+          "testo": "La produzione di magnetismo dalla corrente",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'effetto Joule spiega perché i cavi si scaldano e perché si usano altissime tensioni per trasmettere energia su lunghe distanze: alta V = bassa I = bassa perdita Joule."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è un circuito RLC e quali fenomeni mostra?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un circuito con Resistori, LED e Condensatori",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un circuito con Resistore, induttore (L) e Condensatore (C): mostra risonanza alla frequenza di oscillazione propria. Base di radioricevitori, filtri e oscillatori",
+          "corretto": true,
+          "feedback": "Esatto! Il circuito RLC risuona a f = 1/(2π√LC)."
+        },
+        {
+          "id": "c",
+          "testo": "Un tipo di circuito di sicurezza per correnti alte",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un circuito a tre fasi per uso industriale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il circuito RLC risuona a f = 1/(2π√LC). Sintonizzare una radio significa trovare la frequenza di risonanza del circuito LC uguale alla frequenza della stazione."
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIS-3-01",
+  "titolo": "Assonometria, prospettiva e progettazione",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'punto di fuga' in una prospettiva?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il punto dove termina il disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il punto in cui le linee parallele dell'oggetto sembrano convergere sull'orizzonte nella rappresentazione prospettica",
+          "corretto": true,
+          "feedback": "Esatto! In realtà le linee parallele non convergono, ma la nostra percezione visiva le percepisce così."
+        },
+        {
+          "id": "c",
+          "testo": "Il centro di un cerchio in prospettiva",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il punto più lontano dell'oggetto dal disegnatore",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "In realtà le linee parallele non convergono, ma la nostra percezione visiva le percepisce così. I binari del treno 'convergono' all'orizzonte."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è la 'prospettiva accidentale' o a due punti di fuga?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una prospettiva con errori di disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una prospettiva in cui l'oggetto è ruotato rispetto all'osservatore: due set di linee convergono verso due punti di fuga distinti sull'orizzonte",
+          "corretto": true,
+          "feedback": "Esatto! La prospettiva a 2 punti di fuga è la più usata in architettura: mostra l'angolo di un edificio con due facciate visibili, ciascuna con il proprio punto di fuga."
+        },
+        {
+          "id": "c",
+          "testo": "La prospettiva vista dall'alto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Una prospettiva usata solo per interni",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La prospettiva a 2 punti di fuga è la più usata in architettura: mostra l'angolo di un edificio con due facciate visibili, ciascuna con il proprio punto di fuga."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è uno 'schizzo progettuale' e a cosa serve?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un disegno tecnico molto semplificato",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un disegno rapido e approssimativo usato nelle fasi iniziali di progettazione per esplorare idee e comunicare concetti",
+          "corretto": true,
+          "feedback": "Esatto! Lo schizzo è il pensiero visivo: veloce, schematico, esplorativo."
+        },
+        {
+          "id": "c",
+          "testo": "Un disegno finale per la produzione",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un disegno di riferimento per le quote",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Lo schizzo è il pensiero visivo: veloce, schematico, esplorativo. Prima di aprire il CAD, lo schizzo permette di valutare molte idee in poco tempo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come si costruisce geometricamente la prospettiva a un punto di fuga?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si disegnano tutti i lati dell'oggetto in scala reale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Si disegna la faccia frontale in forma vera, si identifica il punto di fuga sul piano dell'orizzonte, si collegano tutti i vertici al PF per le profondità",
+          "corretto": true,
+          "feedback": "Esatto! La prospettiva a 1 PF è usata per corridoi, interni di stanze, tunnel: una faccia frontale vera + profondità che convergono in un unico punto."
+        },
+        {
+          "id": "c",
+          "testo": "Si usa la griglia isometrica con angoli a 30°",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Si misura direttamente la profondità percepita",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La prospettiva a 1 PF è usata per corridoi, interni di stanze, tunnel: una faccia frontale vera + profondità che convergono in un unico punto."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'piano del quadro' in una prospettiva?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il foglio su cui si disegna",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il piano immaginario tra l'osservatore e l'oggetto su cui si proiettano le immagini: come lo schermo di una camera oscura",
+          "corretto": true,
+          "feedback": "Esatto! Il piano del quadro è il 'sensore fotografico' della prospettiva: la distanza dall'oggetto determina la grandezza dell'immagine, come una fotocamera."
+        },
+        {
+          "id": "c",
+          "testo": "Il piano su cui è posato l'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il piano che divide l'oggetto in due metà",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il piano del quadro è il 'sensore fotografico' della prospettiva: la distanza dall'oggetto determina la grandezza dell'immagine, come una fotocamera."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è un 'rendering' in ambito progettuale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il disegno tecnico finale dell'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La rappresentazione visiva realistica di un progetto ancora non realizzato: usato per comunicare l'estetica finale a clienti e committenti",
+          "corretto": true,
+          "feedback": "Esatto! Il rendering permette al cliente di 'vedere' l'oggetto prima che esista."
+        },
+        {
+          "id": "c",
+          "testo": "La stampa del disegno CAD",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La scala di un modello fisico in miniatura",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il rendering permette al cliente di 'vedere' l'oggetto prima che esista. Software come Blender, KeyShot o Lumion generano immagini fotorealistiche da modelli 3D."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'photogrammetria' e come si usa in progettazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'uso di fotografie per misurare l'esposizione alla luce",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La tecnica che ricostruisce modelli 3D da serie di fotografie sovrapposte: usata per rilievi architettonici, preservazione di beni culturali e reverse engineering",
+          "corretto": true,
+          "feedback": "Esatto! Con uno smartphone e un'app si può fare photogrammetria di un oggetto o di un edificio ottenendo un modello 3D preciso senza costosi strumenti topografici."
+        },
+        {
+          "id": "c",
+          "testo": "Un tipo di rendering fotorealistico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La correzione geometrica delle distorsioni fotografiche",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Con uno smartphone e un'app si può fare photogrammetria di un oggetto o di un edificio ottenendo un modello 3D preciso senza costosi strumenti topografici."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'ergonomia' e perché è fondamentale nella progettazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Lo studio estetico della forma degli oggetti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La disciplina che studia il rapporto tra persone e oggetti/ambienti per ottimizzare comfort, sicurezza ed efficienza d'uso",
+          "corretto": true,
+          "feedback": "Esatto! Un oggetto bello ma ergonomicamente sbagliato è un oggetto fallito."
+        },
+        {
+          "id": "c",
+          "testo": "La norma che regola le dimensioni degli oggetti di arredo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'analisi dei costi di produzione di un oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un oggetto bello ma ergonomicamente sbagliato è un oggetto fallito. Le dimensioni del corpo umano (antropometria) e i suoi limiti definiscono i vincoli progettuali."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'Design Thinking' e come si articola nelle sue fasi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una metodologia di design basata solo sull'estetica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un approccio centrato sull'utente: Empatizzare → Definire il problema → Ideare soluzioni → Prototipare → Testare. Iterativo e non lineare",
+          "corretto": true,
+          "feedback": "Esatto! Il Design Thinking parte dall'utente, non dal prodotto."
+        },
+        {
+          "id": "c",
+          "testo": "La fase di disegno tecnico del processo produttivo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un metodo di valutazione economica di un progetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il Design Thinking parte dall'utente, non dal prodotto. La fase di empatia (osservare, intervistare) previene di risolvere il problema sbagliato."
+    }
+  ]
+}

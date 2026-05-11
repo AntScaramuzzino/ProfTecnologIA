@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-COM-3-03",
+  "titolo": "Sistemi di trasporto e mobilità sostenibile",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Quale settore produce la percentuale maggiore di emissioni CO₂ nei trasporti globali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Aviazione",
+          "feedback": "L'aviazione è circa il 3% delle emissioni globali."
+        },
+        {
+          "id": "b",
+          "testo": "Trasporto marittimo",
+          "feedback": "Il marittimo è circa il 2.9% delle emissioni globali."
+        },
+        {
+          "id": "c",
+          "testo": "Trasporto stradale",
+          "corretto": true,
+          "feedback": "Esatto! Il trasporto stradale (auto private + camion) è responsabile di oltre il 70% delle emissioni del settore trasporti a livello globale."
+        },
+        {
+          "id": "d",
+          "testo": "Trasporto ferroviario",
+          "feedback": "Il ferroviario è uno dei meno emissivi."
+        }
+      ],
+      "spiegazione": "Il trasporto stradale (auto private + camion) è responsabile di oltre il 70% delle emissioni del settore trasporti a livello globale."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il trasporto intermodale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'uso di un solo mezzo per tutto il viaggio",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "L'integrazione di più modalità di trasporto (treno + nave + camion) per un unico carico, ottimizzando costi e impatto",
+          "corretto": true,
+          "feedback": "Esatto! L'intermodalità è la base della logistica moderna: il container permette di spostare la merce senza ri-imballarla tra nave, treno e camion."
+        },
+        {
+          "id": "c",
+          "testo": "Il trasporto di merci pericolose con veicoli speciali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di trasporto pubblico che usa solo treni",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'intermodalità è la base della logistica moderna: il container permette di spostare la merce senza ri-imballarla tra nave, treno e camion."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il 'last mile delivery'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La consegna dell'ultimo pacchetto della giornata",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "L'ultimo tratto di consegna dal deposito al destinatario finale: il più costoso, lento e inquinante dell'intera catena logistica",
+          "corretto": true,
+          "feedback": "Esatto! L'ultimo miglio è il problema aperto della logistica urbana: microdepot, cargo bike e droni sono soluzioni sperimentate per renderlo sostenibile."
+        },
+        {
+          "id": "c",
+          "testo": "Un servizio di corriere espresso internazionale",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La distanza massima percorribile da un furgone elettrico",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'ultimo miglio è il problema aperto della logistica urbana: microdepot, cargo bike e droni sono soluzioni sperimentate per renderlo sostenibile."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come funziona il sistema ATC (Air Traffic Control)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sistema GPS per la navigazione degli aerei",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il sistema di gestione del traffico aereo che coordina separazione, rotte e atterraggi di migliaia di voli simultaneamente",
+          "corretto": true,
+          "feedback": "Esatto! L'ATC gestisce un'orchestra invisibile di 40."
+        },
+        {
+          "id": "c",
+          "testo": "Il pilota automatico degli aeromobili di linea",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema di prenotazione biglietti aerei",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'ATC gestisce un'orchestra invisibile di 40.000+ voli al giorno in Europa. Un errore di comunicazione è la principale causa storica di incidenti aerei."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché l'alta velocità ferroviaria compete con l'aereo sulle tratte breve-medie?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i treni sono sempre più economici degli aerei",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Perché il treno AV porta da centro a centro senza aeroporti, tempi di imbarco e attese: su distanze <800km è spesso più rapido porta a porta",
+          "corretto": true,
+          "feedback": "Esatto! Roma-Milano: 2h45 in treno vs 1h di volo + 1h in aeroporto + 30 min atterraggio."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i treni non hanno limitazioni di bagaglio",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Perché l'AV è più puntuale degli aerei",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Roma-Milano: 2h45 in treno vs 1h di volo + 1h in aeroporto + 30 min atterraggio. Il treno vince porta a porta."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'logistica urbana sostenibile'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il trasporto di merci solo con veicoli elettrici in città",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un approccio integrato per ridurre l'impatto delle consegne in città: consolidamento degli ordini, microdepot, cargo bike, orari off-peak",
+          "corretto": true,
+          "feedback": "Esatto! La logistica urbana sostenibile non è solo la scelta del veicolo, ma la riorganizzazione dell'intero sistema di distribuzione."
+        },
+        {
+          "id": "c",
+          "testo": "La creazione di zone industriali fuori dalle città",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il divieto di accesso ai centri storici per i furgoni",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La logistica urbana sostenibile non è solo la scelta del veicolo, ma la riorganizzazione dell'intero sistema di distribuzione."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'freight corridor' europeo e come riduce le emissioni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un'autostrada dedicata esclusivamente ai camion",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Corridoi ferroviari merci transeuropei ottimizzati per lo spostamento di carichi su treno invece che su gomma: riducono le emissioni del 70-80% per tonnellata-km",
+          "corretto": true,
+          "feedback": "Esatto! I 9 corridoi RFC europei (Rhine-Alpine, Scandinavia-Mediterranean ecc."
+        },
+        {
+          "id": "c",
+          "testo": "Un percorso marittimo dedicato alle petroliere",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Una rete di depositi merci nei porti principali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "I 9 corridoi RFC europei (Rhine-Alpine, Scandinavia-Mediterranean ecc.) facilitano il trasferimento modale dalla strada al treno."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa si intende per 'trasporto a zero emissioni' e quali sono le sfide tecnologiche?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il trasporto che non produce alcuna emissione durante l'intero ciclo di vita del veicolo",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il trasporto che non produce emissioni al punto di utilizzo: elettrico a batteria o a idrogeno. La sfida è produrre l'energia/idrogeno da fonti rinnovabili e gestire la fine vita delle batterie",
+          "corretto": true,
+          "feedback": "Esatto! Un'auto elettrica alimentata da carbone non è 'zero emissioni' nell'intero ciclo."
+        },
+        {
+          "id": "c",
+          "testo": "Il trasporto che compensa le proprie emissioni con crediti carbonio",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il trasporto che usa biocombustibili certificati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Un'auto elettrica alimentata da carbone non è 'zero emissioni' nell'intero ciclo. La decarbonizzazione richiede sia veicoli puliti sia energia verde."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'freight on demand' e perché sta crescendo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il trasporto merci su prenotazione telefonica",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Modelli di consegna iperframmentata e veloce (same-day, same-hour) alimentati dall'e-commerce: aumentano la comodità ma moltiplicano i furgoni in circolazione",
+          "corretto": true,
+          "feedback": "Esatto! L'esplosione dell'e-commerce e dei servizi quick-commerce (consegna in 10 minuti) sta moltiplicando i veicoli in città, aumentando traffico e emissioni."
+        },
+        {
+          "id": "c",
+          "testo": "Un servizio di noleggio veicoli commerciali a breve termine",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il trasporto di merci deperibili in atmosfera modificata",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'esplosione dell'e-commerce e dei servizi quick-commerce (consegna in 10 minuti) sta moltiplicando i veicoli in città, aumentando traffico e emissioni."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIS-1-02",
+  "titolo": "Scale di rappresentazione e quotatura di base",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "La scala 1:50 significa...",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'oggetto è 50 volte più grande del disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "1 cm nel disegno corrisponde a 50 cm nella realtà",
+          "corretto": true,
+          "feedback": "Esatto! 1:50 → ogni centimetro sul foglio = 50 cm nella realtà."
+        },
+        {
+          "id": "c",
+          "testo": "Il disegno è in scala reale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'oggetto è la metà della dimensione reale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "1:50 → ogni centimetro sul foglio = 50 cm nella realtà. Formula: misura foglio = misura reale ÷ denominatore."
+    },
+    {
+      "livello": "F",
+      "domanda": "Una porta è larga 90 cm. In scala 1:20, quanto misura nel disegno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "90 mm",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "45 mm",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": "4.5 cm",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Sia b che c sono corretti",
+          "corretto": true,
+          "feedback": "Esatto! 90 ÷ 20 = 4."
+        }
+      ],
+      "spiegazione": "90 ÷ 20 = 4.5 cm = 45 mm. Entrambe le misure sono corrette (stessa misura in unità diverse)."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa indicano le frecce alle estremità delle linee di quota?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La direzione in cui si misura l'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "I limiti dell'elemento quotato: la misura riportata al centro è sempre la dimensione reale dell'oggetto",
+          "corretto": true,
+          "feedback": "Esatto! Le linee di quota con frecce e numero al centro sono il linguaggio universale per comunicare le dimensioni reali indipendentemente dalla scala del disegno."
+        },
+        {
+          "id": "c",
+          "testo": "Il materiale di cui è fatto l'oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il livello di importanza della quota",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le linee di quota con frecce e numero al centro sono il linguaggio universale per comunicare le dimensioni reali indipendentemente dalla scala del disegno."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché le quote in un disegno tecnico indicano SEMPRE le misure reali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Per evitare di calcolare ogni volta la scala",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché chi legge il disegno in produzione deve sapere le dimensioni reali senza fare calcoli: è una convenzione universale",
+          "corretto": true,
+          "feedback": "Esatto! Un operaio in officina non deve calcolare: legge 90mm e taglia 90mm."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la scala può cambiare durante la stampa",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché le scale sono solo indicative",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un operaio in officina non deve calcolare: legge 90mm e taglia 90mm. La quota è sempre la realtà, non il disegno."
+    },
+    {
+      "livello": "I",
+      "domanda": "Quale scala useresti per la planimetria di un edificio di 20m × 15m su un foglio A4?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "1:1",
+          "feedback": "Il disegno sarebbe 20m × 15m: non entra su A4."
+        },
+        {
+          "id": "b",
+          "testo": "1:200 o 1:250",
+          "corretto": true,
+          "feedback": "Esatto! 1:200 → 20m = 10cm; 15m = 7."
+        },
+        {
+          "id": "c",
+          "testo": "1:5",
+          "feedback": "Il disegno sarebbe ancora troppo grande."
+        },
+        {
+          "id": "d",
+          "testo": "5:1",
+          "feedback": "Questa è una scala di ingrandimento."
+        }
+      ],
+      "spiegazione": "1:200 → 20m = 10cm; 15m = 7.5cm: entra su A4. 1:250 → 20m = 8cm; 15m = 6cm: anche meglio."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'scala di ingrandimento' e quando si usa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una scala con il numeratore maggiore del denominatore: es. 5:1 → 1cm reale = 5cm nel disegno",
+          "corretto": true,
+          "feedback": "Esatto! Scale di ingrandimento (5:1, 10:1, 20:1) si usano per componenti minuscoli (microchip, viti, gioielli) che altrimenti sarebbero invisibili nel disegno."
+        },
+        {
+          "id": "b",
+          "testo": "La scala usata per ingrandire le stampe",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": "La scala per disegnare edifici molto grandi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La scala 1:1 che non ingrandisce né riduce",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Scale di ingrandimento (5:1, 10:1, 20:1) si usano per componenti minuscoli (microchip, viti, gioielli) che altrimenti sarebbero invisibili nel disegno."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'tolleranza' in una quota e perché è fondamentale in produzione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'errore del disegnatore nella misurazione",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'intervallo di variazione ammissibile della dimensione reale: es. 50±0.1mm significa che la dimensione può variare tra 49.9 e 50.1mm",
+          "corretto": true,
+          "feedback": "Esatto! Tolleranza stretta = lavorazione costosa."
+        },
+        {
+          "id": "c",
+          "testo": "La scala di precisione del disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il margine di errore della stampante",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Tolleranza stretta = lavorazione costosa. Tolleranza larga = produzione economica ma accoppiamento impreciso. Scegliere la tolleranza giusta è un'arte ingegneristica."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa indica la norma ISO 129 e perché è importante?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I formati standard dei fogli da disegno (A0-A4)",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Le regole internazionali per la quotatura: posizione dei numeri, tipo di frecce, quote di riferimento, quotatura funzionale",
+          "corretto": true,
+          "feedback": "Esatto! ISO 129 garantisce che le quote siano lette allo stesso modo ovunque."
+        },
+        {
+          "id": "c",
+          "testo": "I tipi di linea nel disegno tecnico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Le norme per il disegno CAD 3D",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "ISO 129 garantisce che le quote siano lette allo stesso modo ovunque. La quotatura 'funzionale' (dove serve la misura per il funzionamento) è preferita a quella 'geometrica'."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la quotatura 'in catena' vs 'in parallelo'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sono la stessa cosa con nomi diversi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "In catena le quote si sommano dalla stessa origine; in parallelo ogni quota parte da un riferimento comune. Gli errori si accumulano in catena, non in parallelo",
+          "corretto": true,
+          "feedback": "Esatto! La quotatura in catena accumula gli errori di produzione da un elemento all'altro."
+        },
+        {
+          "id": "c",
+          "testo": "La catena usa frecce, il parallelo usa punti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La catena è per oggetti lunghi, il parallelo per oggetti larghi",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La quotatura in catena accumula gli errori di produzione da un elemento all'altro. Quella in parallelo (coordinate) garantisce precisione assoluta rispetto all'origine."
+    }
+  ]
+}

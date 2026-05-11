@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-ALI-2-04",
+  "titolo": "La filiera alimentare e l'etichetta",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa indica la data di scadenza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quando il prodotto ha il sapore migliore",
+          "feedback": "Questa è la funzione del TMC."
+        },
+        {
+          "id": "b",
+          "testo": "Il limite oltre il quale il prodotto può essere pericoloso per la salute",
+          "corretto": true,
+          "feedback": "Esatto! Dopo la data di scadenza il prodotto non è sicuro."
+        },
+        {
+          "id": "c",
+          "testo": "Quando il prodotto è stato prodotto",
+          "feedback": "La data di produzione è separata."
+        },
+        {
+          "id": "d",
+          "testo": "Quando finiscono le vitamine",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Dopo la data di scadenza il prodotto non è sicuro. Diverso dal 'da consumarsi preferibilmente entro' (TMC)."
+    },
+    {
+      "livello": "F",
+      "domanda": "Regola per l'ordine degli ingredienti in etichetta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ordine alfabetico",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Ordine decrescente di peso al momento della produzione",
+          "corretto": true,
+          "feedback": "Esatto! Il primo ingrediente è quello più abbondante."
+        },
+        {
+          "id": "c",
+          "testo": "Prima i più sani",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "A scelta del produttore",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il primo ingrediente è quello più abbondante. Se lo zucchero è secondo in un succo di frutta, è molto presente."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa indica il simbolo 'e' accanto alla grammatura?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il prodotto è ecologico",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il peso è una stima media con tolleranza CE",
+          "corretto": true,
+          "feedback": "Esatto! La 'e' indica che il peso dichiarato è garantito in media, con piccole variazioni permesse dalla normativa CE."
+        },
+        {
+          "id": "c",
+          "testo": "Il prodotto è importato",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Contiene glutammato",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La 'e' indica che il peso dichiarato è garantito in media, con piccole variazioni permesse dalla normativa CE."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si intende con 'tracciabilità' nella filiera?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il fatto che il prodotto sia biologico",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di risalire a ogni fase dal campo alla tavola identificando chi ha fatto cosa",
+          "corretto": true,
+          "feedback": "Esatto! La tracciabilità permette di ritirare rapidamente prodotti contaminati e tutela i consumatori."
+        },
+        {
+          "id": "c",
+          "testo": "La distanza percorsa dal prodotto",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il numero di ingredienti presenti",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La tracciabilità permette di ritirare rapidamente prodotti contaminati e tutela i consumatori."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa sono gli additivi alimentari?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ingredienti naturali per arricchire il prodotto",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Sostanze per conservare, colorare o migliorare le caratteristiche: regolamentate dall'EFSA per la sicurezza",
+          "corretto": true,
+          "feedback": "Esatto! L'EFSA valuta la sicurezza degli additivi prima di autorizzarli."
+        },
+        {
+          "id": "c",
+          "testo": "Sostanze chimiche sempre dannose",
+          "feedback": "Non tutti gli additivi sono nocivi."
+        },
+        {
+          "id": "d",
+          "testo": "Ingredienti obbligatori per legge",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'EFSA valuta la sicurezza degli additivi prima di autorizzarli. E numerazione (E100-E1500) indica categoria e numero autorizzato UE."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa distingue IGP da DOP?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'IGP garantisce che tutte le fasi avvengano nell'area geografica",
+          "feedback": "Questa è la DOP."
+        },
+        {
+          "id": "b",
+          "testo": "L'IGP richiede che almeno una fase della produzione avvenga nell'area geografica indicata",
+          "corretto": true,
+          "feedback": "Esatto! Con DOP tutte le fasi devono essere locali."
+        },
+        {
+          "id": "c",
+          "testo": "L'IGP certifica il biologico",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "IGP e DOP sono sinonimi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Con DOP tutte le fasi devono essere locali. Con IGP basta una fase (anche solo il confezionamento) nell'area indicata."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il NUTRI-SCORE?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una certificazione biologica europea",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Scala A-E (verde-rosso) che valuta la qualità nutrizionale complessiva su 100g",
+          "corretto": true,
+          "feedback": "Esatto! Il NUTRI-SCORE considera calorie, zuccheri, grassi saturi, sale (negativi) e fibre, proteine, frutta/verdura (positivi)."
+        },
+        {
+          "id": "c",
+          "testo": "Il codice a barre nutrizionale obbligatorio in Italia",
+          "feedback": "Non è ancora obbligatorio in Italia."
+        },
+        {
+          "id": "d",
+          "testo": "Un indice del contenuto calorico totale",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il NUTRI-SCORE considera calorie, zuccheri, grassi saturi, sale (negativi) e fibre, proteine, frutta/verdura (positivi)."
+    },
+    {
+      "livello": "A",
+      "domanda": "Perché il km0 da solo non garantisce la sostenibilità?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i prodotti locali costano sempre di più",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "La sostenibilità dipende da metodo di produzione, packaging, sprechi e impatto idrico — non solo dalla distanza",
+          "corretto": true,
+          "feedback": "Esatto! Un pomodoro locale in serra riscaldata può avere impatto maggiore di uno spagnolo en plein air."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il km0 non è riconosciuto dalla legge",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Perché i prodotti locali non sono mai certificati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Un pomodoro locale in serra riscaldata può avere impatto maggiore di uno spagnolo en plein air. La LCA conta più della distanza."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'food fraud' (frode alimentare)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La vendita di prodotti scaduti",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Sostituzione o adulterazione di un ingrediente per profitto: es. olio EVO tagliato con girasole dichiarandolo puro",
+          "corretto": true,
+          "feedback": "Esatto! Il food fraud costa all'UE decine di miliardi l'anno."
+        },
+        {
+          "id": "c",
+          "testo": "L'omissione della data di scadenza",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il confezionamento in materiali non riciclabili",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il food fraud costa all'UE decine di miliardi l'anno. La frode sull'olio EVO è tra le più comuni in Italia."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

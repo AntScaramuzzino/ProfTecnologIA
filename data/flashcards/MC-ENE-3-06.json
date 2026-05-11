@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è il problema dell'intermittenza nelle energie rinnovabili?",
+    "back": "Sole e vento non producono quando non c'è domanda e non sempre quando c'è: serve accumulo o rete flessibile\n\nL'intermittenza è la principale sfida dell'energia rinnovabile. Il sole splende di giorno, il picco di domanda è sera: serve accumulare o spostare la domanda.",
+    "tag": "Base"
+  },
+  {
+    "front": "Come funziona una batteria agli ioni di litio?",
+    "back": "Ioni di litio si spostano tra anodo e catodo durante la carica/scarica: reazione elettrochimica reversibile che accumula energia\n\nLe batterie Li-ion hanno densità energetica ~200 Wh/kg, cicli di vita 500-2000, temperature di lavoro -20°C a +60°C. Il litio si estrae principalmente in Cile, Australia, Argentina.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è una 'smart grid'?",
+    "back": "Una rete elettrica intelligente che usa sensori, comunicazione digitale e automazione per ottimizzare flussi di energia bidirezionali tra produttori, consumatori e storage\n\nLa smart grid trasforma la rete da 'distribuzione monodirezionale' (centrale→casa) a 'rete bidirezionale': le case con solare diventano produttori, le auto batterie distribuite.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'pompaggio idroelettrico' e perché è la principale forma di accumulo al mondo?",
+    "back": "Un sistema che pompa acqua in quota con energia in eccesso e la rilascia attraverso turbine quando serve: efficienza 70-80%, capacità scalabile a GWh\n\nIl pompaggio idroelettrico è ~95% dello storage elettrico mondiale. Le Alpi svizzere e austriache sono la 'batteria' dell'Europa: pompano di notte, producono di giorno.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'Vehicle to Grid' (V2G) e quale opportunità rappresenta?",
+    "back": "La capacità delle auto elettriche di cedere energia alla rete durante i picchi: le batterie delle auto diventano storage distribuito\n\nSe ogni auto elettrica ha una batteria da 60-100 kWh e passa ferma il 90% del tempo, può cedere energia alla rete quando serve. Milioni di auto = GWh di storage distribuito.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'demand response' nella gestione della rete elettrica?",
+    "back": "La modulazione dei consumi in risposta ai segnali di prezzo o rete: lavastoviglie che si avviano di notte, industrie che riducono i consumi durante i picchi\n\nLa demand response è lo storage 'gratuito': invece di accumulare energia si sposta il consumo. Con tariffe orarie dinamiche e smart appliance questo avviene automaticamente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è un 'Power Purchase Agreement' (PPA) e perché è importante per le rinnovabili?",
+    "back": "Un contratto a lungo termine tra un produttore di rinnovabili e un grande acquirente (azienda, comune) a prezzo fisso: garantisce finanziamento e riduce il rischio d'investimento\n\nI PPA sono la formula che ha accelerato le rinnovabili corporate: Google, Amazon, Apple hanno firmato PPA da GW con produttori solari ed eolici per raggiungere il 100% rinnovabile.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'idrogeno 'verde', 'blu', 'grigio' e 'turchese'?",
+    "back": "Verde: da elettrolisi con rinnovabili (zero CO₂). Blu: da gas con CCS (basse emissioni). Grigio: da gas senza CCS (alte emissioni). Turchese: da metano con pirolisi (CO₂ come solido)\n\nLa 'rainbow of hydrogen' riflette il metodo di produzione e l'impronta carbonica. Solo il verde è davvero sostenibile. Il 96% dell'idrogeno attuale è grigio.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'grid inertia' e perché le rinnovabili la riducono?",
+    "back": "La massa rotante di generatori sincronizzati che stabilizza la frequenza della rete (50 Hz): le rinnovabili non hanno massa rotante e riducono questa riserva di stabilità\n\nUna rete con alta penetrazione rinnovabile (inverter-based) perde inerzia fisica. Ogni guasto rischia oscillazioni di frequenza più rapide e severe. I condensatori sincroni e gli 'inverter virtuali' compensano.",
+    "tag": "Avanzato"
+  }
+]

@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-MAT-1-05",
+  "titolo": "Scegliere il materiale giusto per un progetto",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è la 'progettazione per il materiale'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Scegliere i colori del prodotto in base al materiale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il processo di selezione del materiale più adatto per un oggetto basandosi su proprietà tecniche, costi, disponibilità e impatto ambientale",
+          "corretto": true,
+          "feedback": "Esatto! La selezione del materiale è una decisione critica in progettazione: sbagliare materiale può rendere un prodotto non funzionale, pericoloso o antieconomico."
+        },
+        {
+          "id": "c",
+          "testo": "Progettare strumenti per lavorare i materiali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Studiare come i materiali cambiano nel tempo",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La selezione del materiale è una decisione critica in progettazione: sbagliare materiale può rendere un prodotto non funzionale, pericoloso o antieconomico."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'diagramma di Ashby' per la selezione dei materiali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un grafico che mostra il prezzo dei materiali nel tempo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un grafico bidimensionale che confronta due proprietà dei materiali (es. resistenza vs densità) permettendo di identificare il migliore per ogni applicazione",
+          "corretto": true,
+          "feedback": "Esatto! I diagrammi di Ashby sono lo strumento standard per la selezione dei materiali."
+        },
+        {
+          "id": "c",
+          "testo": "La mappa delle miniere mondiali di materiali strategici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di classificazione per le leghe metalliche",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I diagrammi di Ashby sono lo strumento standard per la selezione dei materiali. La 'bolla' del materiale nel grafico mostra dove eccelle rispetto agli altri."
+    },
+    {
+      "livello": "F",
+      "domanda": "Perché si usa l'alluminio invece dell'acciaio per i cerchi delle biciclette da competizione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché l'alluminio è più resistente agli urti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché l'alluminio ha densità molto inferiore (2.7 vs 7.8 g/cm³) mantenendo buona resistenza: il rapporto resistenza/peso è cruciale in bicicletta",
+          "corretto": true,
+          "feedback": "Esatto! Il rapporto resistenza/peso (resistenza specifica) è la metrica chiave per strutture mobili."
+        },
+        {
+          "id": "c",
+          "testo": "Perché l'alluminio è più economico dell'acciaio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché l'alluminio si ricicla più facilmente",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il rapporto resistenza/peso (resistenza specifica) è la metrica chiave per strutture mobili. Alluminio, titanio e fibra di carbonio eccellono su questo parametro."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come si considera l'impatto ambientale nella selezione di un materiale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Scegliendo sempre materiali naturali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Usando la LCA (Life Cycle Assessment) per confrontare l'impatto di diversi materiali su tutta la vita: estrazione, lavorazione, uso, fine vita",
+          "corretto": true,
+          "feedback": "Esatto! La LCA rivela sorprese: un'auto elettrica 'verde' usa materiali rari con grande impatto in estrazione."
+        },
+        {
+          "id": "c",
+          "testo": "Scegliendo sempre il materiale più riciclabile",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Verificando che il materiale sia certificato biologico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La LCA rivela sorprese: un'auto elettrica 'verde' usa materiali rari con grande impatto in estrazione. La valutazione deve coprire l'intero ciclo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'resistenza alla fatica' di un materiale e quando è critica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La resistenza del materiale agli agenti atmosferici nel tempo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di resistere a carichi ciclici ripetuti a livelli inferiori al limite statico: critica in componenti soggetti a vibrazioni (alberi motore, ali aerei, implanti ossei)",
+          "corretto": true,
+          "feedback": "Esatto! La fatica è un fenomeno insidioso: una vite regge 1000 N statico ma si rompe dopo 10 milioni di cicli a 500 N."
+        },
+        {
+          "id": "c",
+          "testo": "La durabilità del materiale ad alte temperature",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La resistenza del materiale all'usura per attrito",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La fatica è un fenomeno insidioso: una vite regge 1000 N statico ma si rompe dopo 10 milioni di cicli a 500 N. Le cricche microscopiche crescono fino alla rottura catastrofica."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come si sceglie il materiale per una guarnizione di tenuta in un motore ad alta temperatura?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si sceglie il materiale più economico disponibile",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Si analizzano: temperatura massima di esercizio, compatibilità chimica con i fluidi, resistenza meccanica, durata, coefficiente di espansione termica compatibile con le parti adiacenti",
+          "corretto": true,
+          "feedback": "Esatto! La selezione di materiali per applicazioni critiche richiede l'analisi simultanea di molti parametri."
+        },
+        {
+          "id": "c",
+          "testo": "Si usa sempre gomma siliconica come standard",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Si sceglie in base al colore standard del costruttore",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La selezione di materiali per applicazioni critiche richiede l'analisi simultanea di molti parametri. Non esiste un materiale universalmente migliore: dipende sempre dal contesto."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'metallurgia delle polveri' (powder metallurgy) e quali vantaggi offre?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La lavorazione di metalli fusi con tecnica di colata",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un processo in cui polveri metalliche vengono compresse e sinterizzate per produrre componenti con forme complesse, leghe impossibili per fusione e minimo scarto di materiale",
+          "corretto": true,
+          "feedback": "Esatto! La metallurgia delle polveri è alla base della produzione di cuscinetti sinterizzati, carburi cementati (utensili da taglio) e componenti in metalli refrattari (tungsteno, molibdeno)."
+        },
+        {
+          "id": "c",
+          "testo": "La produzione di metalli da minerali tramite riduzione chimica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il recupero di metalli preziosi da rifiuti elettronici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La metallurgia delle polveri è alla base della produzione di cuscinetti sinterizzati, carburi cementati (utensili da taglio) e componenti in metalli refrattari (tungsteno, molibdeno)."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'co-design' materiale-processo-forma nel design industriale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La collaborazione tra designer e ingegnere dei materiali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'approccio integrato in cui il materiale, il processo produttivo e la forma del prodotto vengono progettati simultaneamente: le limitazioni del processo influenzano la forma, e viceversa",
+          "corretto": true,
+          "feedback": "Esatto! La forma di un pezzo stampato a iniezione deve rispettare angoli di sformo, spessori uniformi e posizione degli attacchi."
+        },
+        {
+          "id": "c",
+          "testo": "Il design di prodotti che usano materiali diversi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La standardizzazione dei materiali tra fornitori diversi",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La forma di un pezzo stampato a iniezione deve rispettare angoli di sformo, spessori uniformi e posizione degli attacchi. Il design nasce dall'interazione materiale-processo-forma, non in sequenza."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'mappatura dei materiali critici' e perché è rilevante oggi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il catalogo dei materiali disponibili presso i fornitori",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'analisi dei materiali la cui disponibilità è a rischio geopolitico o fisico: terre rare, cobalto, litio, indio. Determinante per la transizione verde e la sovranità industriale",
+          "corretto": true,
+          "feedback": "Esatto! L'EU ha definito 34 'Critical Raw Materials'."
+        },
+        {
+          "id": "c",
+          "testo": "La mappa delle proprietà fisiche di tutti i materiali noti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema di classificazione delle leghe metalliche dell'UE",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'EU ha definito 34 'Critical Raw Materials'. Il cobalto del Congo, le terre rare cinesi, il litio sudamericano sono punti di vulnerabilità strategica per auto elettriche, chip e turbine eoliche."
+    }
+  ]
+}

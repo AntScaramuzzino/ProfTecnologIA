@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-COM-3-05",
+  "titolo": "Reti globali, internet e infrastrutture",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa trasportano i cavi sottomarini in fibra ottica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Corrente elettrica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Dati digitali sotto forma di impulsi luminosi",
+          "corretto": true,
+          "feedback": "Esatto! I cavi sottomarini in fibra ottica trasportano il 95% del traffico internet globale tra i continenti."
+        },
+        {
+          "id": "c",
+          "testo": "Segnali radio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Gas naturale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I cavi sottomarini in fibra ottica trasportano il 95% del traffico internet globale tra i continenti."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un indirizzo IP?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il numero seriale del tuo modem",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un'etichetta numerica che identifica ogni dispositivo in rete",
+          "corretto": true,
+          "feedback": "Esatto! Ogni dispositivo connesso ha un IP."
+        },
+        {
+          "id": "c",
+          "testo": "La velocità della tua connessione",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il nome del tuo provider internet",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Ogni dispositivo connesso ha un IP. Senza di esso i pacchetti di dati non saprebbero dove andare."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il Wi-Fi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una connessione internet via cavo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un protocollo per connessioni wireless a corto raggio basato su onde radio",
+          "corretto": true,
+          "feedback": "Esatto! Il Wi-Fi usa onde radio (2."
+        },
+        {
+          "id": "c",
+          "testo": "Un tipo di fibra ottica domestica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il segnale della rete mobile 4G",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il Wi-Fi usa onde radio (2.4 GHz o 5 GHz) per connettere dispositivi senza fili entro poche decine di metri."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa fa un router nella rete domestica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Amplifica il segnale Wi-Fi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Smista i pacchetti di dati tra la rete locale e internet, assegnando indirizzi IP ai dispositivi",
+          "corretto": true,
+          "feedback": "Esatto! Il router è il 'postino' della rete: riceve pacchetti e li indirizza verso la destinazione giusta, sia in rete locale sia verso internet."
+        },
+        {
+          "id": "c",
+          "testo": "Protegge il computer dai virus",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Comprime i file per velocizzare il download",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il router è il 'postino' della rete: riceve pacchetti e li indirizza verso la destinazione giusta, sia in rete locale sia verso internet."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la latenza e quando diventa un problema?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La velocità massima di download",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il ritardo nella trasmissione dei dati: critica per gaming, videochiamate e sistemi real-time",
+          "corretto": true,
+          "feedback": "Esatto! Con latenza alta un videogioco online diventa ingiocabile, una videochiamata si spezza, un veicolo autonomo non può reagire in tempo."
+        },
+        {
+          "id": "c",
+          "testo": "Il numero di dispositivi connessi contemporaneamente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La quantità di dati scaricati al mese",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Con latenza alta un videogioco online diventa ingiocabile, una videochiamata si spezza, un veicolo autonomo non può reagire in tempo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si intende per 'cloud computing'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Software installato localmente sul tuo computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Uso di risorse informatiche (storage, elaborazione, app) su server remoti accessibili via internet",
+          "corretto": true,
+          "feedback": "Esatto! Il cloud ha spostato i dati e le applicazioni dai PC locali a data center globali: Google Drive, Dropbox, Office 365 sono tutti cloud."
+        },
+        {
+          "id": "c",
+          "testo": "Una rete di computer connessi via satellite",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema operativo dei telefoni Android",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il cloud ha spostato i dati e le applicazioni dai PC locali a data center globali: Google Drive, Dropbox, Office 365 sono tutti cloud."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'architettura 'edge computing' e perché cresce con l'IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Elaborazione dei dati esclusivamente su server centrali lontani",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Elaborazione dei dati il più vicino possibile alla fonte (dispositivo/sensore) per ridurre latenza e traffico verso il cloud centrale",
+          "corretto": true,
+          "feedback": "Esatto! Con miliardi di sensori IoT, inviare tutto al cloud genera colli di bottiglia."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di backup distribuito su disco locale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La gestione dei dati sui dispositivi mobili offline",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Con miliardi di sensori IoT, inviare tutto al cloud genera colli di bottiglia. L'edge elabora in loco il dato grezzo e manda solo il risultato."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il BGP (Border Gateway Protocol) e perché è critico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un protocollo per cifrare le comunicazioni email",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il protocollo che permette ai router di condividere le rotte di rete tra i diversi Internet Service Provider: è la 'mappa' di Internet",
+          "corretto": true,
+          "feedback": "Esatto! Il BGP è fragile: un errore di configurazione può 'dirottare' il traffico globale."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di sicurezza per le VPN",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il protocollo che assegna gli indirizzi IP dinamici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il BGP è fragile: un errore di configurazione può 'dirottare' il traffico globale. Nel 2010 un ISP cinese ha accidentalmente sequestrato il 15% del traffico internet mondiale."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'dark web' e come si distingue dal 'deep web'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sono sinonimi per indicare contenuti illegali online",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il deep web comprende tutto ciò non indicizzato dai motori di ricerca (es. email, banche dati). Il dark web è un sottoinsieme accessibile solo con browser speciali come Tor, usato sia per privacy legittima sia per attività illegali",
+          "corretto": true,
+          "feedback": "Esatto! La distinzione è importante: il deep web include la tua email e il conto bancario online."
+        },
+        {
+          "id": "c",
+          "testo": "Il dark web è semplicemente internet senza sicurezza",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il deep web è accessibile solo con VPN a pagamento",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La distinzione è importante: il deep web include la tua email e il conto bancario online. Il dark web richiede Tor e ha usi legittimi (giornalismo, dissidenti) oltre a quelli illegali."
+    }
+  ]
+}

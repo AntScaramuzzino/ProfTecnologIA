@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIS-2-02",
+  "titolo": "Assonometria cavaliera e isometrica",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è un disegno assonometrico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un disegno con tre viste separate",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una rappresentazione tridimensionale di un oggetto su un piano 2D usando assi obliqui",
+          "corretto": true,
+          "feedback": "Esatto! L'assonometria è la rappresentazione 3D più usata nella tecnica: mostra larghezza, altezza e profondità in un unico disegno senza distorsione prospettica."
+        },
+        {
+          "id": "c",
+          "testo": "Una vista in sezione di un oggetto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un disegno in prospettiva con punto di fuga",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'assonometria è la rappresentazione 3D più usata nella tecnica: mostra larghezza, altezza e profondità in un unico disegno senza distorsione prospettica."
+    },
+    {
+      "livello": "F",
+      "domanda": "Nell'assonometria cavaliera obliqua, a che angolo sono proiettate le profondità?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "90°",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "30°",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": "45°",
+          "corretto": true,
+          "feedback": "Esatto! Nell'assonometria cavaliera obliqua le profondità sono proiettate a 45° rispetto all'asse orizzontale."
+        },
+        {
+          "id": "d",
+          "testo": "60°",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Nell'assonometria cavaliera obliqua le profondità sono proiettate a 45° rispetto all'asse orizzontale. Le profondità si riducono della metà."
+    },
+    {
+      "livello": "F",
+      "domanda": "In un'assonometria isometrica, quali angoli formano i tre assi tra loro?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "30°, 60°, 90°",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "45°, 45°, 90°",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": "120° tra ogni coppia di assi (asse verticale a 90°, laterali a 30° dall'orizzontale)",
+          "corretto": true,
+          "feedback": "Esatto! L'isometria usa assi a 120° tra loro: l'asse verticale è a 90°, i due orizzontali a 30° dall'orizzontale."
+        },
+        {
+          "id": "d",
+          "testo": "Tutti e tre a 90°",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'isometria usa assi a 120° tra loro: l'asse verticale è a 90°, i due orizzontali a 30° dall'orizzontale. Le misure sugli assi non si deformano."
+    },
+    {
+      "livello": "I",
+      "domanda": "Qual è la differenza principale tra assonometria cavaliera e isometrica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'isometrica è più semplice da disegnare",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Nella cavaliera le profondità si dimezzano e si proiettano a 45°; nell'isometrica tutte le misure sugli assi mantengono il rapporto reale (fattore 1)",
+          "corretto": true,
+          "feedback": "Esatto! L'isometrica non deforma le misure sugli assi: ciò che è 10cm nel reale è 10cm nel disegno (sugli assi)."
+        },
+        {
+          "id": "c",
+          "testo": "La cavaliera usa tre viste, l'isometrica una sola",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'isometrica è solo per oggetti cilindrici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'isometrica non deforma le misure sugli assi: ciò che è 10cm nel reale è 10cm nel disegno (sugli assi). La cavaliera deforma la profondità a metà."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché nei disegni IKEA si usa l'assonometria cavaliera obliqua?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché è più moderna dell'isometrica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché la faccia frontale dell'oggetto appare in forma reale (non deformata), facilitando il riconoscimento del prodotto e delle sue proporzioni principali",
+          "corretto": true,
+          "feedback": "Esatto! La faccia frontale in vista reale è intuitiva: il cliente vede il mobile come lo vedrà davanti a sé."
+        },
+        {
+          "id": "c",
+          "testo": "Perché è più veloce da disegnare con il CAD",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché è l'unico tipo permesso dall'UE per i manuali",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La faccia frontale in vista reale è intuitiva: il cliente vede il mobile come lo vedrà davanti a sé. Le profondità deformate sono accettabili per un manuale di montaggio."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come si disegnano i cerchi nell'assonometria isometrica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Come cerchi normali, senza deformazione",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Come ellissi: il cerchio viene proiettato e deformato in un'ellisse i cui assi dipendono dall'orientamento del piano",
+          "corretto": true,
+          "feedback": "Esatto! Un cerchio su un piano isometrico diventa un'ellisse."
+        },
+        {
+          "id": "c",
+          "testo": "Come esagoni approssimati",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "I cerchi non si possono rappresentare in isometria",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un cerchio su un piano isometrico diventa un'ellisse. La deformazione dipende dall'orientamento (piano XY, XZ o YZ). Si costruisce con il metodo 'dei 4 centri'."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'prospettiva' e come si distingue dall'assonometria?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sono sinonimi in ingegneria",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Nella prospettiva le parallele convergono verso punti di fuga imitando la percezione visiva umana; nell'assonometria restano parallele. La prospettiva è più realistica, l'assonometria più misurabile",
+          "corretto": true,
+          "feedback": "Esatto! L'assonometria è misurabile (puoi ricavare dimensioni reali)."
+        },
+        {
+          "id": "c",
+          "testo": "La prospettiva è solo per disegno artistico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La prospettiva usa solo due assi",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'assonometria è misurabile (puoi ricavare dimensioni reali). La prospettiva è più naturale visivamente ma non misurabile direttamente. In tecnica si usa assonometria; in architettura si usa entrambe."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'assonometria militare' e in quali ambiti si usa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una tecnica di disegno per veicoli militari",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un tipo di assonometria obliqua in cui la pianta è vista dall'alto in forma reale (non deformata) e le altezze sono proiettate verticalmente: usata in urbanistica, planimetrie e videogiochi isometrici",
+          "corretto": true,
+          "feedback": "Esatto! L'assonometria militare (o a cavallerizza) mostra la pianta vera e aggiunge le altezze."
+        },
+        {
+          "id": "c",
+          "testo": "Una assonometria con angoli di 60°",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La stessa dell'assonometria cavaliera con diverso nome",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'assonometria militare (o a cavallerizza) mostra la pianta vera e aggiunge le altezze. SimCity e molti giochi strategici usano questa proiezione."
+    },
+    {
+      "livello": "A",
+      "domanda": "Quando è preferibile usare l'assonometria rispetto alle proiezioni ortogonali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sempre: l'assonometria è sempre superiore",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Quando si vuole comunicare la forma 3D in modo immediato a chi non sa leggere le proiezioni ortogonali: clienti, studenti, presentazioni",
+          "corretto": true,
+          "feedback": "Esatto! Proiezioni ortogonali sono precise e complete ma richiedono training."
+        },
+        {
+          "id": "c",
+          "testo": "Solo per oggetti piccoli",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'assonometria non si usa in ambito professionale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Proiezioni ortogonali sono precise e complete ma richiedono training. L'assonometria è immediata ma non completamente misurabile. Si usano insieme: 3 viste + assonometria per chiarezza."
+    }
+  ]
+}

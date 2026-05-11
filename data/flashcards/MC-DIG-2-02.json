@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è un 'dato personale' secondo il GDPR?",
+    "back": "Qualsiasi informazione che permette di identificare direttamente o indirettamente una persona fisica: nome, email, IP, localizzazione, dati biometrici\n\nIl GDPR ha una definizione ampia: anche un indirizzo IP può essere un dato personale se permette di identificare l'utente.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il consenso nel GDPR?",
+    "back": "Un'azione libera, specifica, informata e inequivocabile con cui la persona autorizza il trattamento dei propri dati\n\nIl consenso deve essere attivo (non pre-spuntato), specifico (per ogni finalità) e revocabile in qualsiasi momento.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è l'identità digitale?",
+    "back": "L'insieme delle informazioni e delle tracce digitali che definiscono la presenza di una persona online: profili, post, acquisti, dati\n\nLa nostra identità digitale ci precede: un recruiter vedrà il tuo profilo LinkedIn prima di conoscerti. Gestirla consapevolmente è una competenza chiave.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'phishing'?",
+    "back": "Un attacco informatico che imita comunicazioni legittime (banca, Amazon, PayPal) per rubare credenziali o dati finanziari\n\nIl phishing sfrutta la fiducia: email o SMS apparentemente da entità note chiedono di cliccare un link e inserire dati sensibili su un sito falso.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa sono i cookie e perché il GDPR richiede il consenso?",
+    "back": "Piccoli file salvati dal browser che tracciano il comportamento online: i cookie di profilazione richiedono consenso esplicito perché raccolgono dati personali\n\nI cookie tecnici (carrello, login) non richiedono consenso. I cookie di profilazione (tracciamento comportamentale per pubblicità) sì.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'diritto all'oblio' digitale?",
+    "back": "Il diritto riconosciuto dal GDPR di richiedere la de-indicizzazione di informazioni personali obsolete o non più rilevanti dai motori di ricerca\n\nLa sentenza CGUE 2014 (Google Spain) ha stabilito che le persone possono chiedere la rimozione dai risultati di ricerca di informazioni che non riflettono più la situazione attuale.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è l'autenticazione a due fattori (2FA) e perché è importante?",
+    "back": "Un sistema che richiede due prove di identità distinte: qualcosa che sai (password) + qualcosa che hai (SMS, app authenticator): protegge anche se la password è compromessa\n\nCon il 2FA, anche se un hacker ruba la tua password, non può accedere senza il secondo fattore. Riduce del 99% il rischio di account takeover.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'social engineering' e come si difende?",
+    "back": "La manipolazione psicologica delle persone per ottenere accesso a sistemi o informazioni riservate: si difende con consapevolezza, verifica delle identità e protocolli\n\nIl social engineering sfrutta la fiducia, l'urgenza e l'autorità. La telefonata 'sono dell'IT, ho bisogno della tua password' è un classico esempio.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'data breach' e quali obblighi crea per le aziende?",
+    "back": "Una violazione di sicurezza che compromette dati personali: il GDPR obbliga la notifica all'autorità (Garante) entro 72 ore e agli interessati se il rischio è elevato\n\nI data breach di Meta, LinkedIn, Yahoo hanno esposto miliardi di dati. La notifica obbligatoria responsabilizza le aziende sulla sicurezza.",
+    "tag": "Avanzato"
+  }
+]

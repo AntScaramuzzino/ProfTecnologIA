@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è il CAD (Computer Aided Design)?",
+    "back": "Software per la progettazione e il disegno tecnico assistito dal computer\n\nIl CAD ha rivoluzionato la progettazione: precisione assoluta, modifica istantanea, condivisione, simulazione e transizione diretta alla produzione CNC.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza tra CAD 2D e CAD 3D?",
+    "back": "Il 2D produce disegni piani (piante, sezioni, prospetti); il 3D crea modelli tridimensionali da cui si ricavano automaticamente tutte le viste 2D\n\nAutoCAD, LibreCAD = CAD 2D. Fusion 360, FreeCAD, SolidWorks = CAD 3D. Il modello 3D è la rappresentazione principale; le tavole 2D si generano in automatico.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è Tinkercad e perché è adatto a studenti?",
+    "back": "Una piattaforma CAD 3D gratuita, browser-based, con interfaccia intuitiva a blocchi: ideale per iniziare la modellazione 3D\n\nTinkercad (Autodesk) funziona nel browser senza installazione. L'approccio CSG (Constructive Solid Geometry) con forme semplici è intuitivo e produce file STL per la stampa 3D.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la 'modellazione parametrica' nel CAD 3D?",
+    "back": "Una tecnica in cui le dimensioni del modello sono definite da parametri modificabili: cambiare un valore aggiorna automaticamente tutto il modello\n\nCon la modellazione parametrica (SolidWorks, Fusion 360) cambiare il diametro di un foro aggiorna automaticamente la filettatura, le tolleranze e il disegno 2D. È la rivoluzione del CAD moderno.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è un file STL e perché è il formato standard per la stampa 3D?",
+    "back": "Un formato che descrive la geometria 3D come una mesh di triangoli: universalmente supportato dalle stampanti 3D\n\nSTL (Stereolithography) rappresenta qualsiasi superficie 3D con triangoli. La stampante 3D legge l'STL e calcola gli strati (slicing). Più triangoli = più dettaglio = file più grande.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il processo di 'slicing' nella stampa 3D?",
+    "back": "La conversione del modello 3D in strati orizzontali (layer) con percorsi di stampa per l'ugello: il slicer calcola supporti, riempimento e temperatura\n\nLo slicer (Cura, PrusaSlicer) è il 'traduttore' tra modello 3D e comandi macchina. Parametri come altezza layer, riempimento e velocità determinano qualità e tempo di stampa.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'reverse engineering' digitale e quali strumenti usa?",
+    "back": "La ricostruzione di un modello CAD da un oggetto fisico esistente tramite scanner 3D, photogrammetria o misurazioni manuali\n\nIl reverse engineering è fondamentale per ricambi di oggetti senza documentazione, restauro di beni culturali e analisi della concorrenza. Lo scanner 3D è lo strumento chiave.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'simulazione FEA' (Finite Element Analysis) nel CAD?",
+    "back": "Un metodo computazionale che simula le sollecitazioni meccaniche, termiche o fluidodinamiche su un modello 3D per verificarne la resistenza prima della produzione\n\nFEA divide il modello in migliaia di piccoli elementi finiti e simula come si deforma sotto i carichi. Previene rotture e ottimizza il peso senza dover costruire prototipi fisici costosi.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come il CAD si integra nel processo produttivo CNC?",
+    "back": "Dal modello CAD si genera il percorso utensile (CAM), che viene tradotto in G-code per controllare la macchina CNC: il processo CAD→CAM→CNC è la base dell'Industry 4.0\n\nCAD→CAM→CNC è la catena digitale-fisica: il modello digitale guida direttamente la fresa, il tornio o il laser. Zero errori di trascrizione, massima precisione.",
+    "tag": "Avanzato"
+  }
+]

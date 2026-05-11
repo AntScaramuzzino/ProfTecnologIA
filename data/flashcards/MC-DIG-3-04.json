@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cosa si intende per 'accessibilità digitale'?",
+    "back": "La capacità di un prodotto digitale di essere usato da persone con disabilità fisiche, cognitive o sensoriali\n\nL'accessibilità digitale garantisce che nessuno sia escluso dal mondo digitale per ragioni di disabilità. È un diritto, non un'opzione.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è uno 'screen reader'?",
+    "back": "Un software che legge ad alta voce il contenuto dello schermo: usato da persone non vedenti o ipovedenti per navigare\n\nJAWS, NVDA, VoiceOver sono screen reader: trasformano testo, bottoni e link in audio. Senza alt text sulle immagini, un cieco non sa cosa c'è.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa sono le WCAG?",
+    "back": "Web Content Accessibility Guidelines: gli standard internazionali per l'accessibilità dei contenuti web, organizzati in livelli A/AA/AAA\n\nLe WCAG (W3C) sono lo standard globale. Il livello AA è il requisito minimo per molti siti pubblici e aziendali.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'contrasto cromatico' e perché è importante nell'accessibilità?",
+    "back": "Il rapporto di luminanza tra testo e sfondo: le WCAG richiedono almeno 4.5:1 per testo normale e 3:1 per testo grande\n\nUn testo grigio chiaro su sfondo bianco può essere illeggibile per persone con bassa visione o daltonismo. Il contrasto 4.5:1 è il minimo WCAG AA.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'testo alternativo' (alt text) per le immagini e come si scrive bene?",
+    "back": "Una descrizione testuale del contenuto di un'immagine letta dagli screen reader: deve descrivere informazione, non apparenza\n\nAlt text sbagliato: 'immagine'. Alt text giusto: 'Grafico a barre: le rinnovabili producono il 40% dell'energia italiana nel 2023'. Descrive l'informazione, non l'aspetto.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa si intende per 'navigazione da tastiera' in un sito web?",
+    "back": "La capacità di navigare e usare tutte le funzioni di un sito usando solo la tastiera (Tab, Invio, frecce) senza mouse\n\nChi non può usare il mouse (tremori, disabilità motorie) dipende dalla navigazione da tastiera. Un sito non navigabile da tastiera è inaccessibile per queste persone.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'Universal Design' e come si applica al digitale?",
+    "back": "Un approccio progettuale che crea prodotti usabili da tutte le persone senza adattamenti speciali: accessibilità non è un add-on ma è incorporata dal design\n\nL'Universal Design nasce per architettura (rampe che aiutano tutti, non solo i disabili). Nel digitale: sottotitoli utili per sordi, ma anche in luoghi rumorosi o per chi impara la lingua.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'digital divide' e quali sono le sue dimensioni?",
+    "back": "La disparità nell'accesso e nell'uso delle tecnologie digitali, con dimensioni geografica (rurale/urbana), economica (costo), generazionale e di competenza\n\nIl digital divide è multidimensionale: non basta avere un dispositivo se mancano competenze o connettività. La pandemia ha reso visibili queste disuguaglianze.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come si testa l'accessibilità di un sito web in modo sistematico?",
+    "back": "Combinando audit automatici (Lighthouse, axe, WAVE) con test manuali (navigazione da tastiera, screen reader) e test utente con persone con disabilità\n\nGli strumenti automatici trovano circa il 30% dei problemi. I test manuali e con utenti reali trovano il resto. Entrambi sono necessari.",
+    "tag": "Avanzato"
+  }
+]

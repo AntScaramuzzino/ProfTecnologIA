@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-2-01",
+  "titolo": "Pensiero computazionale e problem solving",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di linguaggio di programmazione",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una sequenza finita di istruzioni per risolvere un problema o completare un compito",
+          "corretto": true,
+          "feedback": "Esatto! Un algoritmo può essere scritto in italiano prima ancora che in codice: è la ricetta del problema."
+        },
+        {
+          "id": "c",
+          "testo": "Un programma installato sul computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un errore nel codice sorgente",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un algoritmo può essere scritto in italiano prima ancora che in codice: è la ricetta del problema."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è la 'decomposizione' nel pensiero computazionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La suddivisione di un computer nei suoi componenti hardware",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La strategia di scomporre un problema complesso in sotto-problemi più piccoli e gestibili",
+          "corretto": true,
+          "feedback": "Esatto! 'Come mangio un elefante? Un morso alla volta."
+        },
+        {
+          "id": "c",
+          "testo": "Il processo di smontare un programma per trovare i bug",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La divisione dei dati in blocchi per la trasmissione",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "'Come mangio un elefante? Un morso alla volta.' La decomposizione rende gestibili i problemi apparentemente impossibili."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il 'riconoscimento di pattern'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La capacità di un antivirus di riconoscere i virus",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'identificazione di regolarità, similitudini e strutture ricorrenti nei dati o nei problemi",
+          "corretto": true,
+          "feedback": "Esatto! Riconoscere che 'tutti i cicli vitali hanno le stesse fasi' è pattern recognition: permette di applicare soluzioni già note a problemi nuovi."
+        },
+        {
+          "id": "c",
+          "testo": "La codifica dei dati in schemi visivi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il riconoscimento facciale tramite fotocamera",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Riconoscere che 'tutti i cicli vitali hanno le stesse fasi' è pattern recognition: permette di applicare soluzioni già note a problemi nuovi."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'pseudocodifica'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un linguaggio di programmazione semplificato per principianti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un modo informale di descrivere un algoritmo usando linguaggio naturale strutturato, prima di tradurlo in codice",
+          "corretto": true,
+          "feedback": "Esatto! La pseudocodifica aiuta a pensare alla logica prima di preoccuparsi della sintassi."
+        },
+        {
+          "id": "c",
+          "testo": "Il codice scritto con errori grammaticali che il computer corregge",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La traduzione automatica tra linguaggi di programmazione",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La pseudocodifica aiuta a pensare alla logica prima di preoccuparsi della sintassi. È come fare lo schema di un tema prima di scriverlo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è un 'caso limite' (edge case) nel testing di un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un caso in cui l'algoritmo è particolarmente lento",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un input ai limiti del normale o inaspettato che può rivelare difetti nascosti nell'algoritmo",
+          "corretto": true,
+          "feedback": "Esatto! Edge case: cosa succede se inserisco 0? O un numero negativo? O una stringa vuota? Testare i casi limite previene i bug in produzione."
+        },
+        {
+          "id": "c",
+          "testo": "Il caso più comune e frequente di utilizzo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un errore critico che blocca il programma",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Edge case: cosa succede se inserisco 0? O un numero negativo? O una stringa vuota? Testare i casi limite previene i bug in produzione."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'complessità' di un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quanto è difficile capire il codice sorgente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La misura di quanto tempo (tempo) o memoria (spazio) richiede al crescere della dimensione del problema",
+          "corretto": true,
+          "feedback": "Esatto! Un algoritmo O(n²) diventa inutilizzabile con grandi dataset, mentre O(log n) scala bene."
+        },
+        {
+          "id": "c",
+          "testo": "Il numero di righe di codice dell'algoritmo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La velocità del computer su cui gira",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un algoritmo O(n²) diventa inutilizzabile con grandi dataset, mentre O(log n) scala bene. La complessità determina l'applicabilità reale."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'ricorsione' nella programmazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La ripetizione di un ciclo for",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una funzione che chiama se stessa con un sotto-problema più piccolo fino a raggiungere un caso base: usata per problemi naturalmente auto-simili",
+          "corretto": true,
+          "feedback": "Esatto! La ricorsione è elegante per problemi come il calcolo del fattoriale o la ricerca in alberi."
+        },
+        {
+          "id": "c",
+          "testo": "La copia di un algoritmo in più variabili",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un tipo di ciclo infinito",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La ricorsione è elegante per problemi come il calcolo del fattoriale o la ricerca in alberi. Rischio: stack overflow se manca il caso base."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'debugging' e quali strategie usa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La pulizia dei file temporanei del sistema",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il processo sistematico di identificazione e correzione degli errori nel codice: usa print debugging, breakpoint, test unitari e rubber duck debugging",
+          "corretto": true,
+          "feedback": "Esatto! Il rubber duck debugging consiste nello spiegare il codice ad alta voce (o a un'anatra di gomma): verbalizzare il problema spesso rivela l'errore."
+        },
+        {
+          "id": "c",
+          "testo": "La verifica della velocità di un programma",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La documentazione del codice sorgente",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il rubber duck debugging consiste nello spiegare il codice ad alta voce (o a un'anatra di gomma): verbalizzare il problema spesso rivela l'errore."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'refactoring' del codice?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La riscrittura completa di un programma da zero",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il miglioramento della struttura interna del codice senza modificarne il comportamento esterno: rende il codice più leggibile e manutenibile",
+          "corretto": true,
+          "feedback": "Esatto! Il refactoring è come rifare l'ordine in casa: il risultato esterno (la casa funziona) non cambia, ma l'organizzazione interna è molto migliore."
+        },
+        {
+          "id": "c",
+          "testo": "La compilazione del codice in un eseguibile",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La correzione dei bug critici in produzione",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il refactoring è come rifare l'ordine in casa: il risultato esterno (la casa funziona) non cambia, ma l'organizzazione interna è molto migliore."
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-3-02",
+  "titolo": "Intelligenza Artificiale: concetti, etica e applicazioni",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa si intende per 'machine learning'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un robot che impara fisicamente le azioni",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un sistema che apprende da dati migliorando le proprie prestazioni senza essere esplicitamente programmato per ogni caso",
+          "corretto": true,
+          "feedback": "Esatto! Il machine learning è la base dell'IA moderna: invece di regole scritte dal programmatore, il sistema le ricava dai dati."
+        },
+        {
+          "id": "c",
+          "testo": "Un programma che simula la voce umana",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'aggiornamento automatico dei software",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il machine learning è la base dell'IA moderna: invece di regole scritte dal programmatore, il sistema le ricava dai dati."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'dataset' nell'addestramento di un modello AI?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il programma che fa girare l'IA",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'insieme di dati (esempi, immagini, testi) usato per addestrare un modello AI a riconoscere pattern",
+          "corretto": true,
+          "feedback": "Esatto! Un dataset di qualità è fondamentale: garbage in, garbage out."
+        },
+        {
+          "id": "c",
+          "testo": "Il processore specializzato per l'IA",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il risultato finale prodotto dall'IA",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un dataset di qualità è fondamentale: garbage in, garbage out. Dati distorti producono modelli distorti."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa fa un algoritmo di 'classificazione'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ordina i dati in ordine alfabetico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Assegna ogni dato a una categoria predefinita: es. 'spam/non spam', 'cane/gatto', 'positivo/negativo'",
+          "corretto": true,
+          "feedback": "Esatto! La classificazione è uno dei compiti più comuni del ML: riconoscimento facciale, diagnosi mediche, filtri email."
+        },
+        {
+          "id": "c",
+          "testo": "Calcola la media di un insieme di valori",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Genera nuovi dati simili a quelli esistenti",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La classificazione è uno dei compiti più comuni del ML: riconoscimento facciale, diagnosi mediche, filtri email."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'bias' (distorsione) in un modello AI e perché è pericoloso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un errore casuale nei calcoli del modello",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una distorsione sistematica nelle previsioni del modello, spesso derivante da dati di addestramento non rappresentativi",
+          "corretto": true,
+          "feedback": "Esatto! Un modello addestrato su dati sbilanciati riproduce e amplifica i bias: sistemi di riconoscimento facciale con prestazioni peggiori per persone di colore ne sono un esempio documentato."
+        },
+        {
+          "id": "c",
+          "testo": "La velocità di risposta del modello",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'energia consumata dal modello",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un modello addestrato su dati sbilanciati riproduce e amplifica i bias: sistemi di riconoscimento facciale con prestazioni peggiori per persone di colore ne sono un esempio documentato."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa distingue un modello 'supervised' da uno 'unsupervised'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il supervised usa più dati, l'unsupervised meno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Nel supervised i dati di addestramento hanno etichette (risposta corretta nota); nell'unsupervised il modello trova pattern da solo nei dati non etichettati",
+          "corretto": true,
+          "feedback": "Esatto! Supervised: imparare con un insegnante."
+        },
+        {
+          "id": "c",
+          "testo": "Il supervised è più lento, l'unsupervised più veloce",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza pratica rilevante",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Supervised: imparare con un insegnante. Unsupervised: esplorare da soli. Ogni approccio ha applicazioni diverse."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'transfer learning' e perché è importante?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il trasferimento di dati tra due modelli AI diversi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La tecnica che permette di riutilizzare un modello pre-addestrato su un compito per adattarlo a un compito simile con pochi dati aggiuntivi",
+          "corretto": true,
+          "feedback": "Esatto! GPT, BERT, ResNet: questi modelli enormi vengono 'raffinati' (fine-tuning) per applicazioni specifiche con pochi esempi."
+        },
+        {
+          "id": "c",
+          "testo": "Il backup automatico dei pesi di un modello",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La condivisione di un modello tra più utenti",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "GPT, BERT, ResNet: questi modelli enormi vengono 'raffinati' (fine-tuning) per applicazioni specifiche con pochi esempi. È la base dell'IA generativa moderna."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'explainability' (spiegabilità) nell'AI e perché è fondamentale in certi ambiti?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La documentazione tecnica del modello AI",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di un sistema AI di spiegare come ha preso una decisione: fondamentale in medicina, giustizia e credito dove le decisioni impattano diritti",
+          "corretto": true,
+          "feedback": "Esatto! Un modello che nega un mutuo o suggerisce una diagnosi deve poter spiegare perché."
+        },
+        {
+          "id": "c",
+          "testo": "La velocità con cui il modello risponde",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La precisione percentuale del modello sui dati di test",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un modello che nega un mutuo o suggerisce una diagnosi deve poter spiegare perché. Il regolamento EU AI Act impone explainability per i sistemi ad alto rischio."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'AI Act europeo e quali categorie di rischio prevede?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una legge che vieta l'uso dell'IA in Europa",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il primo regolamento globale sull'AI: classifica i sistemi AI per livello di rischio (inaccettabile/alto/limitato/minimo) e impone requisiti proporzionali",
+          "corretto": true,
+          "feedback": "Esatto! L'AI Act UE è il primo framework regolatorio globale: vieta certi usi (punteggio sociale), regolamenta altri (IA in medicina, giustizia), lascia liberi quelli a basso rischio."
+        },
+        {
+          "id": "c",
+          "testo": "Un accordo commerciale sull'esportazione di chip AI",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un protocollo tecnico per la sicurezza dei modelli AI",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'AI Act UE è il primo framework regolatorio globale: vieta certi usi (punteggio sociale), regolamenta altri (IA in medicina, giustizia), lascia liberi quelli a basso rischio."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è un 'Large Language Model' (LLM) e come funziona a livello concettuale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un database molto grande di testi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un modello addestrato su miliardi di testi che impara a predire il token successivo: emergono capacità di ragionamento, traduzione e generazione",
+          "corretto": true,
+          "feedback": "Esatto! GPT, Claude, Gemini sono LLM."
+        },
+        {
+          "id": "c",
+          "testo": "Un software che traduce automaticamente tra lingue",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un motore di ricerca avanzato",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "GPT, Claude, Gemini sono LLM. Addestrati a predire la parola successiva su trilioni di token, 'emergono' capacità che non erano state programmate esplicitamente."
+    }
+  ]
+}

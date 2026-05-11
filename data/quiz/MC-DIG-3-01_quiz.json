@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-3-01",
+  "titolo": "Robotica educativa e pensiero computazionale avanzato",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa fa un robot 'autonomo'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Esegue solo comandi umani in tempo reale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Prende decisioni in base a sensori e programma, senza intervento umano continuo",
+          "corretto": true,
+          "feedback": "Esatto! Un robot autonomo combina sensori, elaborazione e attuatori per agire senza controllo diretto."
+        },
+        {
+          "id": "c",
+          "testo": "È controllato da remoto via radio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Funziona solo con intelligenza artificiale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un robot autonomo combina sensori, elaborazione e attuatori per agire senza controllo diretto."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un sensore in robotica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un motore che muove il robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un dispositivo che rileva grandezze fisiche (luce, distanza, temperatura) e le converte in segnali digitali",
+          "corretto": true,
+          "feedback": "Esatto! I sensori sono gli 'occhi e orecchie' del robot: senza di essi non percepisce l'ambiente."
+        },
+        {
+          "id": "c",
+          "testo": "Il cervello centrale del robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La batteria che alimenta il robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I sensori sono gli 'occhi e orecchie' del robot: senza di essi non percepisce l'ambiente."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'attuatore' in un sistema robotico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sensore di temperatura",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un componente che converte segnali elettrici in azioni fisiche: motori, servomotori, LED, altoparlanti",
+          "corretto": true,
+          "feedback": "Esatto! Gli attuatori sono i 'muscoli' del robot: trasformano i comandi digitali in movimenti o azioni fisiche."
+        },
+        {
+          "id": "c",
+          "testo": "Il processore che elabora i dati",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema di comunicazione wireless",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Gli attuatori sono i 'muscoli' del robot: trasformano i comandi digitali in movimenti o azioni fisiche."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la struttura 'sense-plan-act' di un robot?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il ciclo di ricarica della batteria",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il ciclo fondamentale: percepire l'ambiente (sense), elaborare e pianificare (plan), eseguire un'azione (act)",
+          "corretto": true,
+          "feedback": "Esatto! Sense-Plan-Act è il ciclo base di ogni robot autonomo."
+        },
+        {
+          "id": "c",
+          "testo": "Il protocollo di comunicazione tra robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La sequenza di accensione e spegnimento",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Sense-Plan-Act è il ciclo base di ogni robot autonomo. Si ripete continuamente adattandosi all'ambiente."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la programmazione 'event-driven' nei robot educativi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La programmazione che usa solo cicli for",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un paradigma in cui il robot esegue azioni in risposta a eventi specifici (tocco, suono, ostacolo)",
+          "corretto": true,
+          "feedback": "Esatto! Nei robot event-driven il codice 'aspetta' che accada qualcosa: più naturale per interazione con l'ambiente."
+        },
+        {
+          "id": "c",
+          "testo": "La programmazione che non usa sensori",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un tipo di codice che si esegue solo una volta",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Nei robot event-driven il codice 'aspetta' che accada qualcosa: più naturale per interazione con l'ambiente."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché la simulazione è utile in robotica prima di programmare il robot fisico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i robot fisici sono troppo costosi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché permette di testare algoritmi senza rischi fisici, risparmiando tempo e identificando errori logici prima del deploy",
+          "corretto": true,
+          "feedback": "Esatto! Il ciclo simulazione→prototipo→robot fisico riduce errori costosi e accelera lo sviluppo."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i simulatori sono più veloci dei robot reali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché la simulazione non consuma batteria",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il ciclo simulazione→prototipo→robot fisico riduce errori costosi e accelera lo sviluppo."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'localizzazione e mappatura simultanea' (SLAM)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un algoritmo per evitare ostacoli statici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di un robot di costruire una mappa dell'ambiente mentre si localizza in esso: fondamentale per robot mobili autonomi",
+          "corretto": true,
+          "feedback": "Esatto! Lo SLAM risolve il problema paradossale: per navigare serve una mappa, ma per costruire la mappa serve navigare."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di navigazione via GPS",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un protocollo per comunicazione tra robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Lo SLAM risolve il problema paradossale: per navigare serve una mappa, ma per costruire la mappa serve navigare."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'etica nella robotica e perché è rilevante per la scuola?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le norme di sicurezza nella manipolazione fisica dei robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'insieme di principi che guidano il design e l'uso dei robot: sicurezza, responsabilità, trasparenza, impatto sul lavoro",
+          "corretto": true,
+          "feedback": "Esatto! Robot autonomi prendono decisioni che impattano le persone."
+        },
+        {
+          "id": "c",
+          "testo": "Le regole di gara nelle competizioni robotiche",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "I brevetti sui design dei robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Robot autonomi prendono decisioni che impattano le persone. Chi è responsabile se un robot sbaglia? L'etica è inseparabile dalla tecnica."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'ROS' (Robot Operating System) e perché è importante?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il sistema operativo installato sui robot Android",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un framework open-source che fornisce librerie e strumenti per sviluppare software robotico: consente di riusare componenti tra progetti diversi",
+          "corretto": true,
+          "feedback": "Esatto! ROS è il 'Linux della robotica': quasi tutti i robot di ricerca e industriali usano ROS per comunicazione, sensing e controllo."
+        },
+        {
+          "id": "c",
+          "testo": "Un linguaggio di programmazione per robot",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il firmware base dei robot LEGO",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "ROS è il 'Linux della robotica': quasi tutti i robot di ricerca e industriali usano ROS per comunicazione, sensing e controllo."
+    }
+  ]
+}

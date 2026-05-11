@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-3-04",
+  "titolo": "Accessibilità, usabilità e inclusione digitale",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa si intende per 'accessibilità digitale'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La disponibilità di internet in tutte le zone geografiche",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di un prodotto digitale di essere usato da persone con disabilità fisiche, cognitive o sensoriali",
+          "corretto": true,
+          "feedback": "Esatto! L'accessibilità digitale garantisce che nessuno sia escluso dal mondo digitale per ragioni di disabilità."
+        },
+        {
+          "id": "c",
+          "testo": "Il costo accessibile dei dispositivi tecnologici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La semplicità dell'interfaccia grafica",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'accessibilità digitale garantisce che nessuno sia escluso dal mondo digitale per ragioni di disabilità. È un diritto, non un'opzione."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è uno 'screen reader'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un programma che ingrandisce il testo sullo schermo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un software che legge ad alta voce il contenuto dello schermo: usato da persone non vedenti o ipovedenti per navigare",
+          "corretto": true,
+          "feedback": "Esatto! JAWS, NVDA, VoiceOver sono screen reader: trasformano testo, bottoni e link in audio."
+        },
+        {
+          "id": "c",
+          "testo": "Un filtro che riduce la luce blu degli schermi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un programma per la lettura di QR code",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "JAWS, NVDA, VoiceOver sono screen reader: trasformano testo, bottoni e link in audio. Senza alt text sulle immagini, un cieco non sa cosa c'è."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa sono le WCAG?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le linee guida mondiali per la progettazione dei chip",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Web Content Accessibility Guidelines: gli standard internazionali per l'accessibilità dei contenuti web, organizzati in livelli A/AA/AAA",
+          "corretto": true,
+          "feedback": "Esatto! Le WCAG (W3C) sono lo standard globale."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di certificazione per i siti web sicuri",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Le norme europee per la protezione dei dati online",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le WCAG (W3C) sono lo standard globale. Il livello AA è il requisito minimo per molti siti pubblici e aziendali."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'contrasto cromatico' e perché è importante nell'accessibilità?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La differenza estetica tra colori di uno stile grafico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il rapporto di luminanza tra testo e sfondo: le WCAG richiedono almeno 4.5:1 per testo normale e 3:1 per testo grande",
+          "corretto": true,
+          "feedback": "Esatto! Un testo grigio chiaro su sfondo bianco può essere illeggibile per persone con bassa visione o daltonismo."
+        },
+        {
+          "id": "c",
+          "testo": "La saturazione dei colori in una tavolozza",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il numero di colori usati in un'interfaccia",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Un testo grigio chiaro su sfondo bianco può essere illeggibile per persone con bassa visione o daltonismo. Il contrasto 4.5:1 è il minimo WCAG AA."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'testo alternativo' (alt text) per le immagini e come si scrive bene?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il titolo che appare sopra un'immagine",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una descrizione testuale del contenuto di un'immagine letta dagli screen reader: deve descrivere informazione, non apparenza",
+          "corretto": true,
+          "feedback": "Esatto! Alt text sbagliato: 'immagine'."
+        },
+        {
+          "id": "c",
+          "testo": "Il formato del file immagine (jpg, png)",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il copyright dell'immagine",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Alt text sbagliato: 'immagine'. Alt text giusto: 'Grafico a barre: le rinnovabili producono il 40% dell'energia italiana nel 2023'. Descrive l'informazione, non l'aspetto."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si intende per 'navigazione da tastiera' in un sito web?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La ricerca tramite barra di ricerca",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di navigare e usare tutte le funzioni di un sito usando solo la tastiera (Tab, Invio, frecce) senza mouse",
+          "corretto": true,
+          "feedback": "Esatto! Chi non può usare il mouse (tremori, disabilità motorie) dipende dalla navigazione da tastiera."
+        },
+        {
+          "id": "c",
+          "testo": "Il layout della tastiera virtuale su dispositivi touch",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Le scorciatoie da tastiera del sistema operativo",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Chi non può usare il mouse (tremori, disabilità motorie) dipende dalla navigazione da tastiera. Un sito non navigabile da tastiera è inaccessibile per queste persone."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'Universal Design' e come si applica al digitale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un design che funziona su tutti i dispositivi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un approccio progettuale che crea prodotti usabili da tutte le persone senza adattamenti speciali: accessibilità non è un add-on ma è incorporata dal design",
+          "corretto": true,
+          "feedback": "Esatto! L'Universal Design nasce per architettura (rampe che aiutano tutti, non solo i disabili)."
+        },
+        {
+          "id": "c",
+          "testo": "Un design senza elementi grafici complessi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Lo standard internazionale per i font leggibili",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'Universal Design nasce per architettura (rampe che aiutano tutti, non solo i disabili). Nel digitale: sottotitoli utili per sordi, ma anche in luoghi rumorosi o per chi impara la lingua."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'digital divide' e quali sono le sue dimensioni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La differenza di velocità internet tra paesi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La disparità nell'accesso e nell'uso delle tecnologie digitali, con dimensioni geografica (rurale/urbana), economica (costo), generazionale e di competenza",
+          "corretto": true,
+          "feedback": "Esatto! Il digital divide è multidimensionale: non basta avere un dispositivo se mancano competenze o connettività."
+        },
+        {
+          "id": "c",
+          "testo": "La differenza tra internet mobile e fisso",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il divario tra open source e software proprietario",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il digital divide è multidimensionale: non basta avere un dispositivo se mancano competenze o connettività. La pandemia ha reso visibili queste disuguaglianze."
+    },
+    {
+      "livello": "A",
+      "domanda": "Come si testa l'accessibilità di un sito web in modo sistematico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Chiedendo a una persona con disabilità di provare il sito",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Combinando audit automatici (Lighthouse, axe, WAVE) con test manuali (navigazione da tastiera, screen reader) e test utente con persone con disabilità",
+          "corretto": true,
+          "feedback": "Esatto! Gli strumenti automatici trovano circa il 30% dei problemi."
+        },
+        {
+          "id": "c",
+          "testo": "Verificando che il sito rispetti le WCAG solo nei colori",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Controllando che il sito funzioni su tutti i browser",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Gli strumenti automatici trovano circa il 30% dei problemi. I test manuali e con utenti reali trovano il resto. Entrambi sono necessari."
+    }
+  ]
+}

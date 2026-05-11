@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è la crittografia?",
+    "back": "La scienza di proteggere le informazioni trasformandole in un formato leggibile solo da chi ha la chiave\n\nLa crittografia è il fondamento della sicurezza digitale: protegge comunicazioni, dati e transazioni online.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è HTTPS e perché è importante?",
+    "back": "Il protocollo HTTP con crittografia TLS: garantisce che i dati tra browser e server siano cifrati e non intercettabili\n\nIl lucchetto nel browser indica HTTPS. Senza di esso, chiunque sulla stessa rete potrebbe leggere quello che scrivi (password incluse).",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un 'malware'?",
+    "back": "Software malevolo progettato per danneggiare, rubare dati o prendere il controllo di un sistema: include virus, ransomware, spyware, trojan\n\nIl malware è l'arma più usata dagli attaccanti. Il ransomware cifra i file e chiede un riscatto; lo spyware spia le attività.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la crittografia asimmetrica?",
+    "back": "Un sistema con due chiavi correlate: la chiave pubblica (condivisibile) cifra; la chiave privata (segreta) decifra\n\nHTTPS, firma digitale e Bitcoin usano crittografia asimmetrica. Puoi condividere la tua chiave pubblica con tutti: solo la tua chiave privata può decifrare.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è un attacco 'man in the middle'?",
+    "back": "Un attaccante che si interpone tra due parti comunicanti intercettando e modificando i messaggi a loro insaputa\n\nIl Wi-Fi pubblico non sicuro è un vettore classico per attacchi MITM. Per questo HTTPS (che usa crittografia end-to-end) è fondamentale.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'social engineering' nel contesto della cybersecurity?",
+    "back": "La manipolazione psicologica delle persone per ottenere accesso a sistemi o informazioni sensibili: la debolezza umana è spesso più vulnerabile dei sistemi tecnici\n\nIl phishing è la forma più comune di social engineering. Tecnica semplice ma efficace: 90%+ dei breach inizia da un errore umano.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la firma digitale e come garantisce autenticità?",
+    "back": "Un meccanismo crittografico che permette di verificare che un documento proviene davvero da chi dichiara di averlo firmato e non è stato modificato\n\nLa firma digitale usa la chiave privata per 'firmare': chi riceve il documento usa la chiave pubblica per verificare autenticità e integrità. Giuridicamente equivale alla firma autografa.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il 'penetration testing'?",
+    "back": "Una simulazione autorizzata di un attacco informatico per identificare vulnerabilità prima che lo facciano i veri attaccanti\n\nLe aziende assumono 'ethical hacker' per fare penetration test. Trovare le vulnerabilità prima degli attaccanti permette di correggerle.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'zero-day vulnerability' e perché è particolarmente pericolosa?",
+    "back": "Una vulnerabilità sconosciuta al produttore del software: non esiste ancora una patch, quindi tutti i sistemi sono esposti dal momento in cui viene scoperta e sfruttata\n\nLe zero-day sono l'arma più potente degli attaccanti: nessuna difesa disponibile finché il produttore non rilascia la patch. Vengono vendute per milioni di dollari.",
+    "tag": "Avanzato"
+  }
+]

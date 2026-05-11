@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Quante viste standard usa il metodo europeo di rappresentazione ortogonale?",
+    "back": "3 (pianta, prospetto frontale, prospetto laterale)\n\nIl metodo europeo (ISO 128-30) usa 3 viste principali disposte in modo preciso: pianta in alto, prospetto frontale in basso-sinistra, laterale in basso-destra.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa rappresenta la 'pianta' di un oggetto?",
+    "back": "La vista dall'alto: mostra larghezza e profondità dell'oggetto\n\nLa pianta è la proiezione sul piano orizzontale: mostra come l'oggetto si vede dall'alto, con larghezza e profondità.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa indicano le linee tratteggiate in una proiezione ortogonale?",
+    "back": "Spigoli e superfici non visibili dalla vista corrente (nascosti dalla geometria dell'oggetto)\n\nLe linee tratteggiate completano la descrizione 3D dell'oggetto mostrando cosa c'è 'dall'altra parte', senza dover ruotare la vista.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è una 'sezione' in un disegno tecnico e quando si usa?",
+    "back": "La rappresentazione dell'interno di un oggetto dopo un taglio ideale: si usa per mostrare cavità, spessori e geometrie interne altrimenti non visibili\n\nLa sezione 'taglia' l'oggetto con un piano e mostra l'interno. Senza sezioni, un tubo, un motore o un edificio non sarebbero descrivibili completamente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa si indica con la retinatura (tratteggio a 45°) in una sezione?",
+    "back": "Le zone di materiale solido tagliate dal piano di sezione: distingue il pieno dal vuoto\n\nLa retinatura a 45° indica materiale solido. Se due parti adiacenti hanno lo stesso materiale, si usa diversa inclinazione per distinguerle.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché si usa il 'metodo europeo' (ISO E) invece del 'metodo americano' (ISO A)?",
+    "back": "Sono due convenzioni di disposizione delle viste sul foglio: in Europa la pianta va sopra il prospetto; in America sotto. Entrambi producono le stesse viste\n\nLa differenza è solo di disposizione, non di contenuto. Conoscere entrambi è fondamentale per leggere disegni internazionali.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è una 'sezione parziale' e quando è preferita alla sezione completa?",
+    "back": "Una sezione limitata a una zona specifica dell'oggetto, delineata da una linea a freehand: usata quando interessa mostrare solo un dettaglio interno senza tagliare l'intero pezzo\n\nLa sezione parziale (o spaccato locale) è più informativa e risparmia spazio sul foglio quando si deve mostrare solo un foro, una tasca o una cavità specifica.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché certi elementi non vengono sezionati anche se il piano di sezione li attraversa?",
+    "back": "Per convenzione ISO, elementi come bulloni, viti, perni, alberi e razze delle ruote non vengono retinati anche se il piano di sezione li taglia\n\nLa convenzione esiste perché questi elementi sono meglio rappresentati in proiezione (vista esterna). Retinateli e il disegno diventerebbe confuso.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'sezione ribaltata' e perché è utile per profili complessi?",
+    "back": "Una sezione che viene ruotata nel piano del disegno e sovrapposta o affiancata alla vista principale: permette di mostrare la forma del profilo trasversale senza vista aggiuntiva\n\nPer un profilo a T o a I è più efficiente ribaltare la sezione sul posto piuttosto che aggiungere una vista completa. Risparmia spazio e aiuta la lettura.",
+    "tag": "Avanzato"
+  }
+]

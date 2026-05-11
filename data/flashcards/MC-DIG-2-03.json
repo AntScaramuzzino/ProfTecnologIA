@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cos'è un sistema operativo?",
+    "back": "Il software che gestisce le risorse hardware del computer e permette alle applicazioni di funzionare\n\nIl SO è l'intermediario tra hardware e software: gestisce CPU, memoria, storage e periferiche per tutte le applicazioni.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa il 'processo' in un sistema operativo?",
+    "back": "È un programma in esecuzione con le risorse (memoria, CPU) allocate dal sistema operativo\n\nOgni app aperta è un processo. Il task manager mostra tutti i processi in esecuzione con il loro utilizzo di CPU e RAM.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la 'memoria virtuale'?",
+    "back": "Una tecnica che usa parte del disco come estensione della RAM quando questa è piena: rallenta il sistema ma evita crash\n\nQuando la RAM è esaurita, il SO sposta temporaneamente i dati meno usati sul disco (file di paging). Il disco è molto più lento: il sistema rallenta visibilmente.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è lo 'scheduling' della CPU?",
+    "back": "L'algoritmo con cui il SO decide quale processo ha accesso alla CPU in ogni istante, garantendo equità e reattività\n\nIl SO gestisce decine di processi con una sola CPU usando lo scheduling: alterna velocemente tra processi dando l'illusione di parallelismo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è un 'driver'?",
+    "back": "Un software che permette al sistema operativo di comunicare con una periferica hardware specifica (stampante, scheda grafica, webcam)\n\nSenza driver la scheda grafica è 'muta'. I driver traducono i comandi del SO nel linguaggio specifico di ogni periferica.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'file system' e perché esistono diversi standard?",
+    "back": "La struttura logica che organizza i dati sul disco (NTFS per Windows, ext4 per Linux, APFS per Mac): influenza velocità, sicurezza e dimensione massima dei file\n\nOgni file system ha vantaggi e limiti. FAT32 (vecchio USB) non supporta file >4GB. NTFS supporta permessi e cifratura.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il kernel e qual è la differenza tra modalità kernel e modalità utente?",
+    "back": "Il kernel è il nucleo del SO con accesso diretto all'hardware. In modalità kernel il codice ha privilegi completi; in modalità utente le app sono isolate e non possono danneggiare il sistema\n\nLa separazione kernel/utente è un meccanismo di sicurezza: un'app in crash in modalità utente non porta giù l'intero sistema.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'virtualizzazione' e come si usa?",
+    "back": "La tecnologia che permette di far girare sistemi operativi o ambienti isolati (macchine virtuali) dentro un sistema fisico: usata in cloud, sviluppo e sicurezza\n\nVMware, VirtualBox e i container Docker usano la virtualizzazione. I cloud provider (AWS, Azure) dividono server fisici in centinaia di macchine virtuali.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è un 'sistema operativo real-time' (RTOS) e dove si usa?",
+    "back": "Un sistema operativo progettato per rispondere a eventi entro tempi garantiti (deterministici): usato in controllo industriale, avionica, dispositivi medici e veicoli autonomi\n\nIn un freno ABS il sistema deve reagire in millisecondi garantiti. Un normale SO come Windows non può garantire tempi di risposta: serve un RTOS.",
+    "tag": "Avanzato"
+  }
+]

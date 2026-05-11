@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-ENE-3-03",
+  "titolo": "Fonti rinnovabili e transizione energetica",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Qual è la fonte rinnovabile più diffusa nel mondo per produzione elettrica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Solare fotovoltaico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Idroelettrico",
+          "corretto": true,
+          "feedback": "Esatto! L'idroelettrico produce circa il 16% dell'elettricità mondiale ed è la rinnovabile più matura."
+        },
+        {
+          "id": "c",
+          "testo": "Eolico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Geotermico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'idroelettrico produce circa il 16% dell'elettricità mondiale ed è la rinnovabile più matura. Ma ha limiti geografici e impatti ambientali significativi."
+    },
+    {
+      "livello": "F",
+      "domanda": "Come funziona un pannello solare fotovoltaico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Scalda l'acqua usando la luce del sole",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Converte direttamente la luce solare in elettricità tramite l'effetto fotovoltaico nelle celle di silicio",
+          "corretto": true,
+          "feedback": "Esatto! L'effetto fotovoltaico: i fotoni della luce liberano elettroni nel silicio creando corrente."
+        },
+        {
+          "id": "c",
+          "testo": "Produce vapore per muovere una turbina",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Accumula calore per usarlo di notte",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'effetto fotovoltaico: i fotoni della luce liberano elettroni nel silicio creando corrente. Scoperto da Becquerel nel 1839, applicato commercialmente dagli anni '50."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa produce più CO₂ per kWh nel ciclo di vita completo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Fotovoltaico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Eolico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": "Nucleare",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Gas naturale",
+          "corretto": true,
+          "feedback": "Esatto! Gas: ~490 gCO₂/kWh."
+        }
+      ],
+      "spiegazione": "Gas: ~490 gCO₂/kWh. Carbone: ~820. Nucleare: ~12. Eolico: ~11. Fotovoltaico: ~45. Le rinnovabili e il nucleare producono 10-40x meno CO₂ del gas."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'fattore di capacità' di un impianto rinnovabile?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La potenza massima installata in MW",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il rapporto tra energia effettivamente prodotta e quella che produrrebbe a piena potenza per tutto l'anno: eolico ~30%, solare ~15-20%, idroelettrico ~45%",
+          "corretto": true,
+          "feedback": "Esatto! Il fattore di capacità riflette l'intermittenza: il sole non splende sempre, il vento non soffia sempre."
+        },
+        {
+          "id": "c",
+          "testo": "Il rendimento del pannello fotovoltaico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il costo per kWh installato",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il fattore di capacità riflette l'intermittenza: il sole non splende sempre, il vento non soffia sempre. Un solare da 1 MW produce come una centrale fossile da 150-200 kW."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'levelized cost of energy' (LCOE) e perché è il miglior parametro di confronto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il costo dell'energia durante i picchi di consumo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il costo medio per kWh prodotto su tutta la vita dell'impianto, includendo costruzione, operazione e dismissione: permette confronto equo tra tecnologie diverse",
+          "corretto": true,
+          "feedback": "Esatto! Nel 2023 LCOE solare: 0."
+        },
+        {
+          "id": "c",
+          "testo": "Il prezzo di mercato dell'energia elettrica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il costo di installazione per MW di potenza",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Nel 2023 LCOE solare: 0.04-0.08 $/kWh. Eolico: 0.03-0.05. Gas: 0.06-0.10. Carbone: 0.07-0.15. Le rinnovabili sono ora la fonte più economica in molte regioni."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché la transizione energetica è anche una questione di sicurezza geopolitica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i pannelli solari possono essere usati come armi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché i combustibili fossili creano dipendenza da paesi produttori (Russia, Medioriente): le rinnovabili sono locali e riducono la vulnerabilità energetica",
+          "corretto": true,
+          "feedback": "Esatto! L'Europa importava il 40% del suo gas dalla Russia prima del 2022."
+        },
+        {
+          "id": "c",
+          "testo": "Perché le turbine eoliche interferiscono con i radar militari",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché l'energia rinnovabile richiede minerali rari controllati da pochi paesi",
+          "feedback": "Questa è anche una preoccupazione reale ma non risponde alla domanda principale."
+        }
+      ],
+      "spiegazione": "L'Europa importava il 40% del suo gas dalla Russia prima del 2022. Le rinnovabili sono energia locale: il sole e il vento non si possono sanzionare."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'grid parity' delle rinnovabili e quali implicazioni ha?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La distribuzione uniforme dell'energia sulla rete",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il punto in cui il costo di produzione da rinnovabili eguaglia quello da fonte fossile senza sussidi: raggiunto per solare ed eolico in molti mercati dopo il 2020",
+          "corretto": true,
+          "feedback": "Esatto! Dopo la grid parity le rinnovabili crescono autonomamente senza incentivi."
+        },
+        {
+          "id": "c",
+          "testo": "La capacità della rete di bilanciare domanda e offerta",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La parità di potenza installata tra diverse fonti rinnovabili",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Dopo la grid parity le rinnovabili crescono autonomamente senza incentivi. Il crollo del costo del solare (-90% in 10 anni) ha reso obsoleti molti modelli economici energetici."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'idrogeno verde e qual è il suo ruolo nella transizione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un gas naturale con basse emissioni di CO₂",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Idrogeno prodotto tramite elettrolisi dell'acqua con energia rinnovabile: zero emissioni, può decarbonizzare settori difficili come acciaio, cemento e trasporto pesante",
+          "corretto": true,
+          "feedback": "Esatto! L'idrogeno verde risolve dove le batterie non arrivano: aerei, navi, forni industriali ad alta temperatura."
+        },
+        {
+          "id": "c",
+          "testo": "Un carburante sintetico per auto elettriche",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un tipo di biogas prodotto da scarti organici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'idrogeno verde risolve dove le batterie non arrivano: aerei, navi, forni industriali ad alta temperatura. Il problema è ancora il costo: 3-6 $/kg vs 1-2 del fossile."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il principio di 'addizionalità' nei meccanismi di incentivo delle rinnovabili?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'aggiunta di nuovi impianti alla rete esistente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il requisito che gli incentivi finanzino solo progetti che non si sarebbero realizzati senza di essi: previene che i sussidi vadano a impianti già economicamente convenienti",
+          "corretto": true,
+          "feedback": "Esatto! L'addizionalità garantisce che gli incentivi creino valore netto."
+        },
+        {
+          "id": "c",
+          "testo": "La somma della potenza di tutti gli impianti incentivati",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il principio per cui ogni paese deve raggiungere la stessa quota di rinnovabili",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'addizionalità garantisce che gli incentivi creino valore netto. Se un solare si costruisce senza incentivi, finanziarli è uno spreco di risorse pubbliche."
+    }
+  ]
+}

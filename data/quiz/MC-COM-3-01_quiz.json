@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-COM-3-01",
+  "titolo": "Telecomunicazioni e reti",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa trasporta un cavo in fibra ottica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Corrente elettrica ad alta tensione",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Segnali luminosi che codificano dati digitali alla velocità della luce",
+          "corretto": true,
+          "feedback": "Esatto! La fibra ottica usa impulsi di luce per trasmettere dati a velocità elevatissime con perdite minime su lunghe distanze."
+        },
+        {
+          "id": "c",
+          "testo": "Onde radio ad alta frequenza",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Fluido refrigerante per i server",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La fibra ottica usa impulsi di luce per trasmettere dati a velocità elevatissime con perdite minime su lunghe distanze."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un indirizzo IP?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il codice seriale di un dispositivo hardware",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un'etichetta numerica univoca assegnata a ogni dispositivo in una rete per identificarlo e permettere la comunicazione",
+          "corretto": true,
+          "feedback": "Esatto! L'IP address è come l'indirizzo di casa in internet."
+        },
+        {
+          "id": "c",
+          "testo": "La velocità di connessione di un dispositivo",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il nome del provider di connessione Internet",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "L'IP address è come l'indirizzo di casa in internet. Senza di esso i pacchetti di dati non saprebbero dove andare."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il protocollo HTTP?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di cavo per connessioni internet",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il protocollo di comunicazione che definisce come browser e server web si scambiano pagine web",
+          "corretto": true,
+          "feedback": "Esatto! HTTP (Hypertext Transfer Protocol) è la lingua comune tra browser e server."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di sicurezza per le reti wifi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un formato di compressione dei file multimediali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "HTTP (Hypertext Transfer Protocol) è la lingua comune tra browser e server. HTTPS aggiunge la crittografia per la sicurezza."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la latenza in una rete e perché è importante?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La velocità massima di download",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il tempo che un pacchetto di dati impiega per andare dalla sorgente alla destinazione e tornare (round-trip time)",
+          "corretto": true,
+          "feedback": "Esatto! La latenza è critica per gaming, videoconferenze e sistemi real-time."
+        },
+        {
+          "id": "c",
+          "testo": "Il numero di dispositivi connessi simultaneamente",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La quantità di dati trasmessi per secondo",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La latenza è critica per gaming, videoconferenze e sistemi real-time. Le fibre ottiche sottomarine la riducono al minimo tra continenti."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come funziona il DNS (Domain Name System)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Protegge la rete dagli attacchi informatici",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Traduce i nomi di dominio leggibili (es. google.com) in indirizzi IP numerici comprensibili dai computer: è la rubrica di Internet",
+          "corretto": true,
+          "feedback": "Esatto! Senza DNS non potremmo usare nomi: dovremmo ricordare indirizzi IP numerici per ogni sito."
+        },
+        {
+          "id": "c",
+          "testo": "Assegna automaticamente gli indirizzi IP ai dispositivi",
+          "feedback": "Questo è il DHCP."
+        },
+        {
+          "id": "d",
+          "testo": "Gestisce la velocità della connessione internet",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Senza DNS non potremmo usare nomi: dovremmo ricordare indirizzi IP numerici per ogni sito. È uno dei servizi più critici di Internet."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'banda larga' e come si misura?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il numero di dispositivi connessi alla rete",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di trasmissione di una rete, misurata in Megabit o Gigabit per secondo (Mbps/Gbps): maggiore è la banda, più dati si trasmettono contemporaneamente",
+          "corretto": true,
+          "feedback": "Esatto! La banda larga è la larghezza del 'tubo' di internet."
+        },
+        {
+          "id": "c",
+          "testo": "La distanza coperta da una rete wifi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La sicurezza della connessione internet",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La banda larga è la larghezza del 'tubo' di internet. Alta banda = molti dati insieme; bassa latenza = dati veloci."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 5G e perché cambierà le comunicazioni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La quinta generazione di telefoni smartphone",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il quinto standard di telefonia mobile con latenza ultra-bassa (<1ms), altissima capacità e connettività massiva per IoT: abilita veicoli autonomi, telemedicina e industria 4.0",
+          "corretto": true,
+          "feedback": "Esatto! Il 5G non è solo 'internet più veloce': la latenza ultra-bassa e la connettività massiva abilitano applicazioni che il 4G non può supportare."
+        },
+        {
+          "id": "c",
+          "testo": "Una rete wifi più veloce del 4G",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di comunicazione via satellite",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il 5G non è solo 'internet più veloce': la latenza ultra-bassa e la connettività massiva abilitano applicazioni che il 4G non può supportare."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'architettura 'client-server' e come si distingue dal 'peer-to-peer'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Client-server usa server centrali che forniscono servizi ai client; peer-to-peer distribuisce le risorse tra nodi equivalenti",
+          "corretto": true,
+          "feedback": "Esatto! Web, email, cloud = client-server."
+        },
+        {
+          "id": "b",
+          "testo": "Client-server è più lento, peer-to-peer è più veloce",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "c",
+          "testo": "Client-server è per reti locali, peer-to-peer per Internet",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza funzionale rilevante",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Web, email, cloud = client-server. BitTorrent, blockchain = peer-to-peer. Il P2P è più resiliente ma meno controllabile."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'net neutrality' (neutralità della rete) e perché è dibattuta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il principio che Internet deve essere gratuito per tutti i cittadini",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il principio che i provider devono trattare tutto il traffico internet allo stesso modo senza discriminare per contenuto, sito o servizio",
+          "corretto": true,
+          "feedback": "Esatto! Senza net neutrality i provider potrebbero rallentare Netflix per favorire il proprio servizio streaming."
+        },
+        {
+          "id": "c",
+          "testo": "La distribuzione equa della banda tra i paesi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La gestione neutrale dei social network da parte dei governi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Senza net neutrality i provider potrebbero rallentare Netflix per favorire il proprio servizio streaming. È una questione fondamentale di libertà di Internet."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

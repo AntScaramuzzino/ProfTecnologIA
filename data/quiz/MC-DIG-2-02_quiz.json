@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-2-02",
+  "titolo": "Privacy, dati personali e identità digitale",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'dato personale' secondo il GDPR?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Solo nome e cognome",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Qualsiasi informazione che permette di identificare direttamente o indirettamente una persona fisica: nome, email, IP, localizzazione, dati biometrici",
+          "corretto": true,
+          "feedback": "Esatto! Il GDPR ha una definizione ampia: anche un indirizzo IP può essere un dato personale se permette di identificare l'utente."
+        },
+        {
+          "id": "c",
+          "testo": "Solo i dati bancari e sanitari",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "I dati che una persona decide volontariamente di condividere",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il GDPR ha una definizione ampia: anche un indirizzo IP può essere un dato personale se permette di identificare l'utente."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il consenso nel GDPR?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'accettazione delle condizioni d'uso di un servizio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un'azione libera, specifica, informata e inequivocabile con cui la persona autorizza il trattamento dei propri dati",
+          "corretto": true,
+          "feedback": "Esatto! Il consenso deve essere attivo (non pre-spuntato), specifico (per ogni finalità) e revocabile in qualsiasi momento."
+        },
+        {
+          "id": "c",
+          "testo": "La firma digitale su un documento legale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il fatto di non opporsi al trattamento dei dati",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il consenso deve essere attivo (non pre-spuntato), specifico (per ogni finalità) e revocabile in qualsiasi momento."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è l'identità digitale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un documento d'identità in formato PDF",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'insieme delle informazioni e delle tracce digitali che definiscono la presenza di una persona online: profili, post, acquisti, dati",
+          "corretto": true,
+          "feedback": "Esatto! La nostra identità digitale ci precede: un recruiter vedrà il tuo profilo LinkedIn prima di conoscerti."
+        },
+        {
+          "id": "c",
+          "testo": "Solo il profilo Instagram e Facebook",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il codice SPID per accedere ai servizi pubblici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La nostra identità digitale ci precede: un recruiter vedrà il tuo profilo LinkedIn prima di conoscerti. Gestirla consapevolmente è una competenza chiave."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'phishing'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di virus che rallenta il computer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un attacco informatico che imita comunicazioni legittime (banca, Amazon, PayPal) per rubare credenziali o dati finanziari",
+          "corretto": true,
+          "feedback": "Esatto! Il phishing sfrutta la fiducia: email o SMS apparentemente da entità note chiedono di cliccare un link e inserire dati sensibili su un sito falso."
+        },
+        {
+          "id": "c",
+          "testo": "La vendita illegale di dati personali nel dark web",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un software spia che monitora la navigazione",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il phishing sfrutta la fiducia: email o SMS apparentemente da entità note chiedono di cliccare un link e inserire dati sensibili su un sito falso."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa sono i cookie e perché il GDPR richiede il consenso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "File che accelerano la navigazione salvando le preferenze dell'utente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Piccoli file salvati dal browser che tracciano il comportamento online: i cookie di profilazione richiedono consenso esplicito perché raccolgono dati personali",
+          "corretto": true,
+          "feedback": "Esatto! I cookie tecnici (carrello, login) non richiedono consenso."
+        },
+        {
+          "id": "c",
+          "testo": "Programmi che proteggono dai virus durante la navigazione",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "I dati della cronologia salvati nel browser",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I cookie tecnici (carrello, login) non richiedono consenso. I cookie di profilazione (tracciamento comportamentale per pubblicità) sì."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'diritto all'oblio' digitale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il diritto di cancellare tutti i propri account social",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il diritto riconosciuto dal GDPR di richiedere la de-indicizzazione di informazioni personali obsolete o non più rilevanti dai motori di ricerca",
+          "corretto": true,
+          "feedback": "Esatto! La sentenza CGUE 2014 (Google Spain) ha stabilito che le persone possono chiedere la rimozione dai risultati di ricerca di informazioni che non riflettono più la situazione attuale."
+        },
+        {
+          "id": "c",
+          "testo": "Il diritto di non rispondere alle email indesiderate",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'obbligo dei siti di cancellare i dati dopo 30 giorni",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La sentenza CGUE 2014 (Google Spain) ha stabilito che le persone possono chiedere la rimozione dai risultati di ricerca di informazioni che non riflettono più la situazione attuale."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'autenticazione a due fattori (2FA) e perché è importante?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Usare due password diverse per lo stesso account",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un sistema che richiede due prove di identità distinte: qualcosa che sai (password) + qualcosa che hai (SMS, app authenticator): protegge anche se la password è compromessa",
+          "corretto": true,
+          "feedback": "Esatto! Con il 2FA, anche se un hacker ruba la tua password, non può accedere senza il secondo fattore."
+        },
+        {
+          "id": "c",
+          "testo": "Accedere allo stesso account da due dispositivi diversi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Cambiare la password ogni due mesi",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Con il 2FA, anche se un hacker ruba la tua password, non può accedere senza il secondo fattore. Riduce del 99% il rischio di account takeover."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'social engineering' e come si difende?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'analisi dei social media per scopi di marketing",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La manipolazione psicologica delle persone per ottenere accesso a sistemi o informazioni riservate: si difende con consapevolezza, verifica delle identità e protocolli",
+          "corretto": true,
+          "feedback": "Esatto! Il social engineering sfrutta la fiducia, l'urgenza e l'autorità."
+        },
+        {
+          "id": "c",
+          "testo": "La creazione di profili social falsi per fare rete",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "L'uso dei dati social per personalizzare la pubblicità",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il social engineering sfrutta la fiducia, l'urgenza e l'autorità. La telefonata 'sono dell'IT, ho bisogno della tua password' è un classico esempio."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'data breach' e quali obblighi crea per le aziende?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La perdita accidentale di dati per un guasto hardware",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una violazione di sicurezza che compromette dati personali: il GDPR obbliga la notifica all'autorità (Garante) entro 72 ore e agli interessati se il rischio è elevato",
+          "corretto": true,
+          "feedback": "Esatto! I data breach di Meta, LinkedIn, Yahoo hanno esposto miliardi di dati."
+        },
+        {
+          "id": "c",
+          "testo": "La vendita non autorizzata di dati a terze parti",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un attacco hacker che blocca i sistemi informatici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I data breach di Meta, LinkedIn, Yahoo hanno esposto miliardi di dati. La notifica obbligatoria responsabilizza le aziende sulla sicurezza."
+    }
+  ]
+}

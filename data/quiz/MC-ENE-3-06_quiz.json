@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-ENE-3-06",
+  "titolo": "Accumulo energetico e smart grid",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è il problema dell'intermittenza nelle energie rinnovabili?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le rinnovabili producono troppa energia",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Sole e vento non producono quando non c'è domanda e non sempre quando c'è: serve accumulo o rete flessibile",
+          "corretto": true,
+          "feedback": "Esatto! L'intermittenza è la principale sfida dell'energia rinnovabile."
+        },
+        {
+          "id": "c",
+          "testo": "Le rinnovabili sono instabili elettricamente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Le rinnovabili richiedono manutenzione continua",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "L'intermittenza è la principale sfida dell'energia rinnovabile. Il sole splende di giorno, il picco di domanda è sera: serve accumulare o spostare la domanda."
+    },
+    {
+      "livello": "F",
+      "domanda": "Come funziona una batteria agli ioni di litio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Converte calore in elettricità tramite celle termoelettriche",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Ioni di litio si spostano tra anodo e catodo durante la carica/scarica: reazione elettrochimica reversibile che accumula energia",
+          "corretto": true,
+          "feedback": "Esatto! Le batterie Li-ion hanno densità energetica ~200 Wh/kg, cicli di vita 500-2000, temperature di lavoro -20°C a +60°C."
+        },
+        {
+          "id": "c",
+          "testo": "Usa la compressione dell'aria per accumulare energia",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Funziona come un condensatore ad alta capacità",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le batterie Li-ion hanno densità energetica ~200 Wh/kg, cicli di vita 500-2000, temperature di lavoro -20°C a +60°C. Il litio si estrae principalmente in Cile, Australia, Argentina."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è una 'smart grid'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una rete elettrica ad alta tensione potenziata",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Una rete elettrica intelligente che usa sensori, comunicazione digitale e automazione per ottimizzare flussi di energia bidirezionali tra produttori, consumatori e storage",
+          "corretto": true,
+          "feedback": "Esatto! La smart grid trasforma la rete da 'distribuzione monodirezionale' (centrale→casa) a 'rete bidirezionale': le case con solare diventano produttori, le auto batterie distribuite."
+        },
+        {
+          "id": "c",
+          "testo": "Una rete di distribuzione per le auto elettriche",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di contatori intelligenti nelle case",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La smart grid trasforma la rete da 'distribuzione monodirezionale' (centrale→casa) a 'rete bidirezionale': le case con solare diventano produttori, le auto batterie distribuite."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'pompaggio idroelettrico' e perché è la principale forma di accumulo al mondo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sistema di accumulo con batterie collegate alle dighe",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un sistema che pompa acqua in quota con energia in eccesso e la rilascia attraverso turbine quando serve: efficienza 70-80%, capacità scalabile a GWh",
+          "corretto": true,
+          "feedback": "Esatto! Il pompaggio idroelettrico è ~95% dello storage elettrico mondiale."
+        },
+        {
+          "id": "c",
+          "testo": "La produzione di idrogeno dall'acqua tramite elettrolisi",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il raffreddamento degli impianti nucleari con acqua pompata",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il pompaggio idroelettrico è ~95% dello storage elettrico mondiale. Le Alpi svizzere e austriache sono la 'batteria' dell'Europa: pompano di notte, producono di giorno."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'Vehicle to Grid' (V2G) e quale opportunità rappresenta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La ricarica ultrarapida per auto elettriche",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità delle auto elettriche di cedere energia alla rete durante i picchi: le batterie delle auto diventano storage distribuito",
+          "corretto": true,
+          "feedback": "Esatto! Se ogni auto elettrica ha una batteria da 60-100 kWh e passa ferma il 90% del tempo, può cedere energia alla rete quando serve."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di navigazione intelligente per veicoli elettrici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La rete di colonnine per auto elettriche",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Se ogni auto elettrica ha una batteria da 60-100 kWh e passa ferma il 90% del tempo, può cedere energia alla rete quando serve. Milioni di auto = GWh di storage distribuito."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'demand response' nella gestione della rete elettrica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La risposta automatica dei generatori ai picchi di domanda",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La modulazione dei consumi in risposta ai segnali di prezzo o rete: lavastoviglie che si avviano di notte, industrie che riducono i consumi durante i picchi",
+          "corretto": true,
+          "feedback": "Esatto! La demand response è lo storage 'gratuito': invece di accumulare energia si sposta il consumo."
+        },
+        {
+          "id": "c",
+          "testo": "Il sistema di previsione della domanda elettrica",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La gestione delle interruzioni di energia",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La demand response è lo storage 'gratuito': invece di accumulare energia si sposta il consumo. Con tariffe orarie dinamiche e smart appliance questo avviene automaticamente."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è un 'Power Purchase Agreement' (PPA) e perché è importante per le rinnovabili?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un accordo tra produttori di energia per condividere la rete",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un contratto a lungo termine tra un produttore di rinnovabili e un grande acquirente (azienda, comune) a prezzo fisso: garantisce finanziamento e riduce il rischio d'investimento",
+          "corretto": true,
+          "feedback": "Esatto! I PPA sono la formula che ha accelerato le rinnovabili corporate: Google, Amazon, Apple hanno firmato PPA da GW con produttori solari ed eolici per raggiungere il 100% rinnovabile."
+        },
+        {
+          "id": "c",
+          "testo": "Un prestito bancario per costruire impianti fotovoltaici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il prezzo di mercato dell'energia rinnovabile",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I PPA sono la formula che ha accelerato le rinnovabili corporate: Google, Amazon, Apple hanno firmato PPA da GW con produttori solari ed eolici per raggiungere il 100% rinnovabile."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'idrogeno 'verde', 'blu', 'grigio' e 'turchese'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Colori diversi dell'idrogeno puro usati come carburante",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Verde: da elettrolisi con rinnovabili (zero CO₂). Blu: da gas con CCS (basse emissioni). Grigio: da gas senza CCS (alte emissioni). Turchese: da metano con pirolisi (CO₂ come solido)",
+          "corretto": true,
+          "feedback": "Esatto! La 'rainbow of hydrogen' riflette il metodo di produzione e l'impronta carbonica."
+        },
+        {
+          "id": "c",
+          "testo": "I 4 stadi di purezza dell'idrogeno industriale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "I 4 metodi di stoccaggio dell'idrogeno",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La 'rainbow of hydrogen' riflette il metodo di produzione e l'impronta carbonica. Solo il verde è davvero sostenibile. Il 96% dell'idrogeno attuale è grigio."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'grid inertia' e perché le rinnovabili la riducono?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La resistenza della rete ai cambiamenti di tensione",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La massa rotante di generatori sincronizzati che stabilizza la frequenza della rete (50 Hz): le rinnovabili non hanno massa rotante e riducono questa riserva di stabilità",
+          "corretto": true,
+          "feedback": "Esatto! Una rete con alta penetrazione rinnovabile (inverter-based) perde inerzia fisica."
+        },
+        {
+          "id": "c",
+          "testo": "La capacità della rete di trasportare energia su lunghe distanze",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La resilienza della rete ai guasti dei singoli nodi",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Una rete con alta penetrazione rinnovabile (inverter-based) perde inerzia fisica. Ogni guasto rischia oscillazioni di frequenza più rapide e severe. I condensatori sincroni e gli 'inverter virtuali' compensano."
+    }
+  ]
+}

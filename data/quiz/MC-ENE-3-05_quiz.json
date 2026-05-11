@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-ENE-3-05",
+  "titolo": "Macchine termiche e motori",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cos'è una 'macchina termica'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un motore raffreddato ad acqua",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Un sistema che converte energia termica (calore) in energia meccanica (lavoro)",
+          "corretto": true,
+          "feedback": "Esatto! Le macchine termiche (motori a scoppio, turbine a vapore, turbine a gas) sono alla base dell'industria moderna da oltre 200 anni."
+        },
+        {
+          "id": "c",
+          "testo": "Una macchina che produce calore dall'elettricità",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di riscaldamento industriale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le macchine termiche (motori a scoppio, turbine a vapore, turbine a gas) sono alla base dell'industria moderna da oltre 200 anni."
+    },
+    {
+      "livello": "F",
+      "domanda": "Qual è l'efficienza massima teorica di una macchina termica secondo Carnot?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "100% se il combustibile è puro",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "η = 1 - T_fredda/T_calda (in Kelvin): sempre < 100%",
+          "corretto": true,
+          "feedback": "Esatto! Il limite di Carnot è fondamentale: nessuna macchina termica può essere più efficiente del ciclo di Carnot tra le stesse temperature."
+        },
+        {
+          "id": "c",
+          "testo": "70% per le macchine moderne",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "50% per qualsiasi ciclo termodinamico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il limite di Carnot è fondamentale: nessuna macchina termica può essere più efficiente del ciclo di Carnot tra le stesse temperature. Fisica di base che nessuna ingegneria può superare."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il ciclo 'a 4 tempi' di un motore a scoppio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I 4 tipi di carburante usabili nel motore",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Aspirazione → Compressione → Esplosione-Espansione → Scarico: il ciclo che si ripete in ogni cilindro",
+          "corretto": true,
+          "feedback": "Esatto! Ogni ciclo dura due giri completi dell'albero motore."
+        },
+        {
+          "id": "c",
+          "testo": "I 4 cilindri di un motore standard",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Le 4 velocità del cambio automatico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Ogni ciclo dura due giri completi dell'albero motore. A 3000 giri/min ogni cilindro fa 1500 cicli al minuto: circa 25 esplosioni al secondo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché il motore a scoppio spreca circa il 70% dell'energia del carburante?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché il carburante non brucia completamente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Per il limite termodinamico di Carnot, le perdite all'attrito, il raffreddamento necessario e le perdite allo scarico: solo il 25-35% diventa energia utile",
+          "corretto": true,
+          "feedback": "Esatto! Il limite di Carnot con T_calda ~2000K e T_fredda ~400K dà η_max ≈ 80%."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il motore è mal progettato",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché la benzina ha poco potere calorifico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il limite di Carnot con T_calda ~2000K e T_fredda ~400K dà η_max ≈ 80%. Attrito, raffreddamento e scarico riducono l'efficienza reale a 25-35%."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come funziona un motore elettrico a livello fisico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Converte calore in movimento come il motore a scoppio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La corrente attraverso bobine crea campo magnetico che interagisce con i magneti permanenti, producendo forza e rotazione: inversione della dinamo",
+          "corretto": true,
+          "feedback": "Esatto! Motore elettrico = dinamo al contrario."
+        },
+        {
+          "id": "c",
+          "testo": "Usa la pressione dell'aria compressa per muovere il rotore",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Converte la luce solare in movimento tramite effetto piezoelettrico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Motore elettrico = dinamo al contrario. La dinamo converte movimento in elettricità; il motore elettricità in movimento. Efficienza ~90%, vs ~25-35% del termico."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è la 'rigenerazione' frenante nei veicoli elettrici e ibridi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il sistema di raffreddamento del motore elettrico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La tecnologia che durante la frenata usa il motore come generatore, recuperando energia cinetica e ricaricando la batteria: recupera il 10-30% dell'energia",
+          "corretto": true,
+          "feedback": "Esatto! La rigenerazione trasforma la dissipazione termica dei freni in elettricità."
+        },
+        {
+          "id": "c",
+          "testo": "Il riavvio automatico del motore dopo lo stop",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La ricarica wireless delle batterie durante la guida",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La rigenerazione trasforma la dissipazione termica dei freni in elettricità. Un bus elettrico in città con molte fermate recupera quantità di energia significative."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il ciclo Brayton e dove si applica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il ciclo termodinamico dei motori diesel",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il ciclo termodinamico delle turbine a gas: compressione aria → combustione → espansione in turbina → scarico. Base di aerei (turbofan) e centrali a gas",
+          "corretto": true,
+          "feedback": "Esatto! Le turbine a gas dei jet usano il ciclo Brayton."
+        },
+        {
+          "id": "c",
+          "testo": "Il ciclo dei motori a vapore delle locomotive",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il ciclo di funzionamento delle pompe di calore",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le turbine a gas dei jet usano il ciclo Brayton. Efficienze del 40-55% nelle centrali a ciclo combinato (gas + vapore): le più efficienti tra le termiche."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'cogenerazione' (CHP) e perché è efficiente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La produzione di energia da più fonti rinnovabili contemporaneamente",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La produzione simultanea di calore ed elettricità da un unico impianto: recupera il calore di scarto invece di dissiparlo, raggiungendo efficienze totali del 80-90%",
+          "corretto": true,
+          "feedback": "Esatto! Una centrale convenzionale genera elettricità (40%) e butta via calore (60%)."
+        },
+        {
+          "id": "c",
+          "testo": "La generazione distribuita di energia nei prosumer",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La combinazione di fotovoltaico e solare termico",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Una centrale convenzionale genera elettricità (40%) e butta via calore (60%). La cogenerazione recupera quel calore per riscaldamento district heating: efficienza totale 80-90%."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è l'efficienza exergetica e perché è più utile di quella energetica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'efficienza calcolata sulle emissioni di CO₂",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "L'efficienza che misura quanta 'qualità' dell'energia viene conservata, non solo la quantità: 1 kWh elettrico (alta exergia) vale più di 1 kWh termico a bassa temperatura (bassa exergia)",
+          "corretto": true,
+          "feedback": "Esatto! Usare elettricità per riscaldare a 20°C è exergeticamente inefficiente: usi alta exergia per produrre bassa exergia."
+        },
+        {
+          "id": "c",
+          "testo": "L'efficienza dei pannelli solari a diverse temperature",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un modo alternativo di calcolare il rendimento di Carnot",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Usare elettricità per riscaldare a 20°C è exergeticamente inefficiente: usi alta exergia per produrre bassa exergia. Una pompa di calore fa molto meglio: usa 1 kWh per spostare 3-4 kWh di calore."
+    }
+  ]
+}

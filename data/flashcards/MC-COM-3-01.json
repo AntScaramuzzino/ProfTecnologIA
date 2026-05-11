@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Cosa trasporta un cavo in fibra ottica?",
+    "back": "Segnali luminosi che codificano dati digitali alla velocità della luce\n\nLa fibra ottica usa impulsi di luce per trasmettere dati a velocità elevatissime con perdite minime su lunghe distanze.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un indirizzo IP?",
+    "back": "Un'etichetta numerica univoca assegnata a ogni dispositivo in una rete per identificarlo e permettere la comunicazione\n\nL'IP address è come l'indirizzo di casa in internet. Senza di esso i pacchetti di dati non saprebbero dove andare.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il protocollo HTTP?",
+    "back": "Il protocollo di comunicazione che definisce come browser e server web si scambiano pagine web\n\nHTTP (Hypertext Transfer Protocol) è la lingua comune tra browser e server. HTTPS aggiunge la crittografia per la sicurezza.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la latenza in una rete e perché è importante?",
+    "back": "Il tempo che un pacchetto di dati impiega per andare dalla sorgente alla destinazione e tornare (round-trip time)\n\nLa latenza è critica per gaming, videoconferenze e sistemi real-time. Le fibre ottiche sottomarine la riducono al minimo tra continenti.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come funziona il DNS (Domain Name System)?",
+    "back": "Traduce i nomi di dominio leggibili (es. google.com) in indirizzi IP numerici comprensibili dai computer: è la rubrica di Internet\n\nSenza DNS non potremmo usare nomi: dovremmo ricordare indirizzi IP numerici per ogni sito. È uno dei servizi più critici di Internet.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'banda larga' e come si misura?",
+    "back": "La capacità di trasmissione di una rete, misurata in Megabit o Gigabit per secondo (Mbps/Gbps): maggiore è la banda, più dati si trasmettono contemporaneamente\n\nLa banda larga è la larghezza del 'tubo' di internet. Alta banda = molti dati insieme; bassa latenza = dati veloci.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 5G e perché cambierà le comunicazioni?",
+    "back": "Il quinto standard di telefonia mobile con latenza ultra-bassa (<1ms), altissima capacità e connettività massiva per IoT: abilita veicoli autonomi, telemedicina e industria 4.0\n\nIl 5G non è solo 'internet più veloce': la latenza ultra-bassa e la connettività massiva abilitano applicazioni che il 4G non può supportare.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'architettura 'client-server' e come si distingue dal 'peer-to-peer'?",
+    "back": "Client-server usa server centrali che forniscono servizi ai client; peer-to-peer distribuisce le risorse tra nodi equivalenti\n\nWeb, email, cloud = client-server. BitTorrent, blockchain = peer-to-peer. Il P2P è più resiliente ma meno controllabile.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è la 'net neutrality' (neutralità della rete) e perché è dibattuta?",
+    "back": "Il principio che i provider devono trattare tutto il traffico internet allo stesso modo senza discriminare per contenuto, sito o servizio\n\nSenza net neutrality i provider potrebbero rallentare Netflix per favorire il proprio servizio streaming. È una questione fondamentale di libertà di Internet.",
+    "tag": "Avanzato"
+  }
+]

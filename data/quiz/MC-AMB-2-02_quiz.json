@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-AMB-2-02",
+  "titolo": "Impianti domestici e risparmio energetico",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa fa un termostato in un impianto di riscaldamento?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Produce calore tramite resistenze elettriche",
+          "feedback": "Questa è la funzione del generatore."
+        },
+        {
+          "id": "b",
+          "testo": "Misura la temperatura ambiente e regola l'accensione/spegnimento del riscaldamento per mantenere la temperatura impostata",
+          "corretto": true,
+          "feedback": "Esatto! Il termostato è il 'cervello' del riscaldamento: evita sprechi accendendo il sistema solo quando necessario."
+        },
+        {
+          "id": "c",
+          "testo": "Pompa l'acqua calda nei radiatori",
+          "feedback": "Questa è la funzione della pompa di circolazione."
+        },
+        {
+          "id": "d",
+          "testo": "Filtra l'aria dell'ambiente",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il termostato è il 'cervello' del riscaldamento: evita sprechi accendendo il sistema solo quando necessario."
+    },
+    {
+      "livello": "F",
+      "domanda": "Qual è la funzione del contatore elettrico in casa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Convertire la corrente alternata in corrente continua",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Misurare l'energia elettrica consumata nell'abitazione in kilowattora (kWh)",
+          "corretto": true,
+          "feedback": "Esatto! Il contatore misura i consumi."
+        },
+        {
+          "id": "c",
+          "testo": "Stabilizzare la tensione della rete",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Proteggere dagli sbalzi di tensione",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il contatore misura i consumi. I nuovi contatori 'smart' comunicano i dati in tempo reale e permettono letture da remoto."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa si intende per 'cappotto termico' di un edificio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sistema di riscaldamento a pavimento",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Uno strato isolante applicato all'esterno delle pareti per ridurre le dispersioni di calore",
+          "corretto": true,
+          "feedback": "Esatto! Il cappotto termico riduce le dispersioni attraverso le pareti, abbassando i consumi di riscaldamento del 30-50%."
+        },
+        {
+          "id": "c",
+          "testo": "Un rivestimento decorativo esterno",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di ventilazione controllata",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il cappotto termico riduce le dispersioni attraverso le pareti, abbassando i consumi di riscaldamento del 30-50%."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché molte famiglie italiane pagano molto per il riscaldamento?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché usano troppa acqua calda",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Perché il 60-70% degli edifici italiani è stato costruito prima del 1976, senza norme sull'isolamento termico",
+          "corretto": true,
+          "feedback": "Esatto! Prima della Legge 373/1976 non esistevano obblighi di isolamento."
+        },
+        {
+          "id": "c",
+          "testo": "Perché le caldaie italiane sono meno efficienti di quelle europee",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Perché il gas in Italia costa di più che in Europa",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Prima della Legge 373/1976 non esistevano obblighi di isolamento. Gli edifici 'energivori' del dopoguerra sono la principale causa dei consumi elevati."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come funziona una pompa di calore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Genera calore bruciando combustibile come una caldaia",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Sposta calore dall'esterno all'interno prelevandolo dall'aria, dal suolo o dall'acqua: consuma solo elettricità per muoverlo",
+          "corretto": true,
+          "feedback": "Esatto! La pompa di calore non produce calore, lo sposta: per ogni kWh di elettricità consumata, ne trasferisce 3-4 dall'ambiente esterno (COP 3-4)."
+        },
+        {
+          "id": "c",
+          "testo": "Produce calore con pannelli solari termici",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Scalda l'acqua con resistenze elettriche",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La pompa di calore non produce calore, lo sposta: per ogni kWh di elettricità consumata, ne trasferisce 3-4 dall'ambiente esterno (COP 3-4)."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è l'efficienza energetica e come si misura in un edificio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La quantità totale di energia consumata nell'anno",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il rapporto tra energia utile ottenuta ed energia consumata; negli edifici è indicata dalla classe APE (A4-G)",
+          "corretto": true,
+          "feedback": "Esatto! Un edificio in classe A+ consuma meno di 15 kWh/mq/anno."
+        },
+        {
+          "id": "c",
+          "testo": "Il numero di pannelli solari installati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il tipo di combustibile usato",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Un edificio in classe A+ consuma meno di 15 kWh/mq/anno. Uno in classe G può consumarne oltre 300. La differenza in bolletta è enorme."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'Superbonus' e perché ha avuto un impatto così significativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un bonus per l'acquisto di elettrodomestici efficienti",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un incentivo fiscale (originariamente 110%) per riqualificazioni energetiche profonde degli edifici: ha innescato la più grande ristrutturazione del patrimonio edilizio italiano",
+          "corretto": true,
+          "feedback": "Esatto! Il Superbonus ha accelerato la transizione energetica del patrimonio edilizio italiano ma ha generato problemi di gestione della finanza pubblica."
+        },
+        {
+          "id": "c",
+          "testo": "Un sussidio per le energie rinnovabili nelle nuove costruzioni",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un bonus per l'acquisto di auto elettriche",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il Superbonus ha accelerato la transizione energetica del patrimonio edilizio italiano ma ha generato problemi di gestione della finanza pubblica."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa si intende per 'comunità energetica rinnovabile' (CER)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un quartiere completamente autonomo dalla rete elettrica",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un gruppo di cittadini, imprese o enti che producono e condividono energia rinnovabile in modo collettivo con vantaggi economici e ambientali",
+          "corretto": true,
+          "feedback": "Esatto! Le CER permettono di condividere l'energia prodotta da impianti fotovoltaici tra più utenti."
+        },
+        {
+          "id": "c",
+          "testo": "Un'azienda pubblica che gestisce l'energia rinnovabile",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema di batterie condominiali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Le CER permettono di condividere l'energia prodotta da impianti fotovoltaici tra più utenti. Chi produce di giorno condivide con chi consuma di sera."
+    },
+    {
+      "livello": "A",
+      "domanda": "Come si calcola il 'ritorno sull'investimento' (ROI) di un impianto fotovoltaico domestico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Dividendo la potenza installata per il costo dell'impianto",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Dividendo il costo totale dell'impianto per il risparmio annuo in bolletta (payback period): tipicamente 6-10 anni",
+          "corretto": true,
+          "feedback": "Esatto! Un impianto da 6 kWp costo ~8."
+        },
+        {
+          "id": "c",
+          "testo": "Moltiplicando i kWp installati per il prezzo dell'energia",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Calcolando la superficie dei pannelli per ore di sole",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Un impianto da 6 kWp costo ~8.000€ può risparmiare ~1.000-1.200€/anno: payback ~7-8 anni, poi produce risparmio puro per 20-25 anni."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

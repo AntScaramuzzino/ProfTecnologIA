@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIG-1-02",
+  "titolo": "Ricerca e valutazione delle fonti online",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa valuta la 'A' di Authority nel metodo CRAAP?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Se il sito ha molti follower",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La competenza e le credenziali di chi ha scritto il contenuto",
+          "corretto": true,
+          "feedback": "Esatto! Authority = autorevolezza dell'autore."
+        },
+        {
+          "id": "c",
+          "testo": "Se il sito ha molte pubblicità",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Se il testo è lungo e dettagliato",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Authority = autorevolezza dell'autore. Una ricerca medica su pubmed.nih.gov pesa più di un post su un blog senza autore."
+    },
+    {
+      "livello": "F",
+      "domanda": "Quale estensione indica tipicamente un sito universitario italiano?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": ".com",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": ".it",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": ".unibo.it o .polimi.it",
+          "corretto": true,
+          "feedback": "Esatto! I domini universitari italiani usano il formato nomiuniversità."
+        },
+        {
+          "id": "d",
+          "testo": ".org",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "I domini universitari italiani usano il formato nomiuniversità.it (es. uniroma1.it, unina.it). In USA usano .edu."
+    },
+    {
+      "livello": "F",
+      "domanda": "Le virgolette in una query Google servono a...",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Cercare solo in italiano",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Trovare pagine con quella frase esatta nell'ordine indicato",
+          "corretto": true,
+          "feedback": "Esatto! \"ciclo di vita dei materiali\" trova pagine con quella frase precisa."
+        },
+        {
+          "id": "c",
+          "testo": "Escludere parole dalla ricerca",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Cercare immagini",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "\"ciclo di vita dei materiali\" trova pagine con quella frase precisa. Senza virgolette i risultati sono molto più dispersi."
+    },
+    {
+      "livello": "I",
+      "domanda": "Prima di condividere una notizia, cosa è più importante controllare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Se ha molti like e condivisioni",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La data di pubblicazione e se esistono aggiornamenti o smentite successive",
+          "corretto": true,
+          "feedback": "Esatto! Le notizie evolvono."
+        },
+        {
+          "id": "c",
+          "testo": "Se è scritta in italiano corretto",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Se il giornale ha un sito professionale",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le notizie evolvono. Aggiungere 'smentita' o 'aggiornamento' nella query può rivelare sviluppi successivi che cambiano il quadro."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa indica 'site:' in una query Google?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Cerca siti con molte immagini",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Limita la ricerca a un dominio specifico (es. site:nasa.gov)",
+          "corretto": true,
+          "feedback": "Esatto! 'effetto serra site:nasa."
+        },
+        {
+          "id": "c",
+          "testo": "Cerca solo in italiano",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Ordina i risultati per data",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "'effetto serra site:nasa.gov' cerca solo sul sito NASA. Utile per trovare informazioni da fonti autorevoli specifiche."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cos'è il 'cherry-picking' delle informazioni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Selezionare solo le informazioni che confermano la tesi, ignorando quelle contrarie",
+          "corretto": true,
+          "feedback": "Esatto! Il cherry-picking è una distorsione cognitiva: si presentano solo i dati favorevoli."
+        },
+        {
+          "id": "b",
+          "testo": "Citare troppe fonti in un testo",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": "Usare solo fonti in inglese",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Copiare testo da Wikipedia",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il cherry-picking è una distorsione cognitiva: si presentano solo i dati favorevoli. È tecnicamente non falso ma è manipolatorio."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il bias di conferma nella ricerca online?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un errore tecnico nei motori di ricerca",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La tendenza a formulare query che già implicano la risposta e a ignorare i risultati contrari",
+          "corretto": true,
+          "feedback": "Esatto! Il bias di conferma ci porta a cercare 'prove che X fa male' invece di 'effetti di X'."
+        },
+        {
+          "id": "c",
+          "testo": "La preferenza dei motori per i siti a pagamento",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Un tipo di spam nei risultati di ricerca",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il bias di conferma ci porta a cercare 'prove che X fa male' invece di 'effetti di X'. I motori personalizzano i risultati amplificando questa tendenza."
+    },
+    {
+      "livello": "A",
+      "domanda": "Come funziona il fact-checking inverso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si chiede a un esperto di verificare la notizia",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Si cerca la notizia su siti di fact-checking e si risale alla fonte primaria originale: chi l'ha pubblicata per primo e cosa diceva realmente",
+          "corretto": true,
+          "feedback": "Esatto! Le notizie virali spesso perdono contesto lungo la catena di condivisione."
+        },
+        {
+          "id": "c",
+          "testo": "Si traduce la notizia in un'altra lingua e si controlla",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Si conta il numero di condivisioni per valutare l'affidabilità",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Le notizie virali spesso perdono contesto lungo la catena di condivisione. Il reverse fact-checking risale all'origine per vedere cosa diceva davvero."
+    },
+    {
+      "livello": "A",
+      "domanda": "Perché molte citazioni in un articolo non garantiscono affidabilità?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le citazioni rallentano la lettura",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Le citazioni potrebbero essere mal interpretate, fuori contesto, da fonti non peer-reviewed o addirittura inventate",
+          "corretto": true,
+          "feedback": "Esatto! Verificare che il paper citato dica davvero quello che afferma l'articolo è fondamentale."
+        },
+        {
+          "id": "c",
+          "testo": "Gli articoli con citazioni sono a pagamento",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Solo Wikipedia può citare fonti",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Verificare che il paper citato dica davvero quello che afferma l'articolo è fondamentale. La pratica del 'citation bluffing' è documentata."
+    }
+  ]
+}

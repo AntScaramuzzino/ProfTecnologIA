@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-AMB-2-05",
+  "titolo": "Smart city e tecnologie per la città intelligente",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa sono i sensori IoT nel contesto urbano?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Telecamere di sorveglianza ad alta risoluzione",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Dispositivi connessi che raccolgono dati in tempo reale (temperatura, traffico, rumore, consumo energetico) e li inviano al cloud",
+          "corretto": true,
+          "feedback": "Esatto! I sensori IoT sono il 'sistema nervoso' della smart city: raccolgono i dati che permettono di ottimizzare i servizi urbani."
+        },
+        {
+          "id": "c",
+          "testo": "Pannelli informativi digitali per i cittadini",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Contatori smart per misurare i consumi",
+          "feedback": "I contatori smart sono un sottoinsieme dell'IoT urbano."
+        }
+      ],
+      "spiegazione": "I sensori IoT sono il 'sistema nervoso' della smart city: raccolgono i dati che permettono di ottimizzare i servizi urbani."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un 'digital twin' urbano?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un gemello digitale del sindaco per gestire i social",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Una replica digitale in tempo reale della città che simula traffico, flussi energetici e scenari futuri per supportare le decisioni",
+          "corretto": true,
+          "feedback": "Esatto! I digital twin urbani permettono di simulare l'impatto di decisioni (es."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di videosorveglianza intelligente",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un'app per i servizi comunali digitali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "I digital twin urbani permettono di simulare l'impatto di decisioni (es. chiudere una strada) prima di attuarle realmente."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il 'smart lighting' (illuminazione intelligente)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Lampioni di design moderno nei centri storici",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Sistemi di illuminazione che si adattano alla presenza di persone, condizioni meteo e orario, riducendo i consumi del 50-80%",
+          "corretto": true,
+          "feedback": "Esatto! Il smart lighting usa sensori di presenza e luminosità: si accende solo quando serve e regola l'intensità, abbattendo consumi ed emissioni."
+        },
+        {
+          "id": "c",
+          "testo": "Luci LED ad alta luminosità per la sicurezza",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Illuminazione a controllo remoto per i manutentori",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il smart lighting usa sensori di presenza e luminosità: si accende solo quando serve e regola l'intensità, abbattendo consumi ed emissioni."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come l'AI ottimizza il traffico urbano?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Eliminando i semafori e lasciando la precedenza agli automobilisti",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Analizzando in tempo reale i flussi veicolari da sensori e telecamere per sincronizzare i semafori e ridurre code e tempi di sosta",
+          "corretto": true,
+          "feedback": "Esatto! Sistemi come SCATS o Surtrac usano AI per 'onda verde' intelligente e adattiva: riducono le code del 25-40% senza nuove infrastrutture."
+        },
+        {
+          "id": "c",
+          "testo": "Imponendo percorsi obbligatori agli automobilisti",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Aumentando il numero di corsie nelle strade principali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Sistemi come SCATS o Surtrac usano AI per 'onda verde' intelligente e adattiva: riducono le code del 25-40% senza nuove infrastrutture."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si intende per 'open data' nel contesto della smart city?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Dati personali dei cittadini accessibili alle aziende private",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Dati pubblici resi liberamente accessibili a cittadini, ricercatori e imprese per incentivare innovazione e trasparenza",
+          "corretto": true,
+          "feedback": "Esatto! Gli open data urbani (orari bus, qualità dell'aria, rifiuti) permettono di creare app e servizi senza doverli costruire da zero."
+        },
+        {
+          "id": "c",
+          "testo": "Dati trasmessi in wi-fi pubblico gratuito",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Informazioni sulle gare d'appalto comunali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Gli open data urbani (orari bus, qualità dell'aria, rifiuti) permettono di creare app e servizi senza doverli costruire da zero."
+    },
+    {
+      "livello": "I",
+      "domanda": "Quali rischi porta la concentrazione di dati nella smart city?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Nessun rischio: più dati significano sempre migliori servizi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Rischi per la privacy dei cittadini, possibili violazioni di sicurezza dei dati, e rischio di sorveglianza di massa",
+          "corretto": true,
+          "feedback": "Esatto! La smart city richiede un equilibrio tra efficienza e privacy."
+        },
+        {
+          "id": "c",
+          "testo": "Solo il rischio di malfunzionamento tecnico",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il rischio che i dati occupino troppo spazio sui server",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La smart city richiede un equilibrio tra efficienza e privacy. La governance dei dati urbani è una delle questioni etiche più urgenti del nostro tempo."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'città dei 15 minuti' e come si collega alla smart city?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una città dove i semafori sono sincronizzati per percorrere ogni tragitto in 15 minuti",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un modello urbano dove tutti i servizi essenziali sono raggiungibili a piedi o in bici entro 15 minuti da casa: la smart city ne facilita la realizzazione con analisi dei dati",
+          "corretto": true,
+          "feedback": "Esatto! La città dei 15 minuti (C."
+        },
+        {
+          "id": "c",
+          "testo": "Un piano di emergenza per evacuazioni rapide",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un modello di trasporto pubblico con frequenza di 15 minuti",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La città dei 15 minuti (C. Moreno) riduce i km percorsi quotidianamente. I dati urbani permettono di identificare i servizi mancanti e pianificare la loro localizzazione."
+    },
+    {
+      "livello": "A",
+      "domanda": "Come si concilia la smart city con i principi di 'giustizia digitale'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Installando smartphone gratuiti per tutti i cittadini",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Garantendo che le tecnologie smart non escludano anziani, persone a basso reddito o con bassa alfabetizzazione digitale: la smart city deve essere per tutti",
+          "corretto": true,
+          "feedback": "Esatto! Il rischio del 'digital divide' urbano è reale."
+        },
+        {
+          "id": "c",
+          "testo": "Rendendo tutte le tecnologie open source",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Riducendo il costo dei dati mobili",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il rischio del 'digital divide' urbano è reale. Una smart city che ottimizza i servizi solo per chi ha smartphone non è equa."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il concetto di 'sovranità dei dati' nella governance urbana?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il diritto del comune di vendere i dati urbani a terzi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il principio che i dati generati dai cittadini appartengono alla collettività e devono essere gestiti nell'interesse pubblico, non ceduti a piattaforme private",
+          "corretto": true,
+          "feedback": "Esatto! La cessione dei dati urbani a GAFAM (Google, Amazon ecc."
+        },
+        {
+          "id": "c",
+          "testo": "La protezione dei dati comunali dagli hacker",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il diritto dei comuni di rifiutare i dati delle app private",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La cessione dei dati urbani a GAFAM (Google, Amazon ecc.) in cambio di servizi smart è una delle questioni di governance più critiche per le città del futuro."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

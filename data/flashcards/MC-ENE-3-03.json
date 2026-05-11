@@ -1,0 +1,47 @@
+[
+  {
+    "front": "Qual è la fonte rinnovabile più diffusa nel mondo per produzione elettrica?",
+    "back": "Idroelettrico\n\nL'idroelettrico produce circa il 16% dell'elettricità mondiale ed è la rinnovabile più matura. Ma ha limiti geografici e impatti ambientali significativi.",
+    "tag": "Base"
+  },
+  {
+    "front": "Come funziona un pannello solare fotovoltaico?",
+    "back": "Converte direttamente la luce solare in elettricità tramite l'effetto fotovoltaico nelle celle di silicio\n\nL'effetto fotovoltaico: i fotoni della luce liberano elettroni nel silicio creando corrente. Scoperto da Becquerel nel 1839, applicato commercialmente dagli anni '50.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa produce più CO₂ per kWh nel ciclo di vita completo?",
+    "back": "Gas naturale\n\nGas: ~490 gCO₂/kWh. Carbone: ~820. Nucleare: ~12. Eolico: ~11. Fotovoltaico: ~45. Le rinnovabili e il nucleare producono 10-40x meno CO₂ del gas.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'fattore di capacità' di un impianto rinnovabile?",
+    "back": "Il rapporto tra energia effettivamente prodotta e quella che produrrebbe a piena potenza per tutto l'anno: eolico ~30%, solare ~15-20%, idroelettrico ~45%\n\nIl fattore di capacità riflette l'intermittenza: il sole non splende sempre, il vento non soffia sempre. Un solare da 1 MW produce come una centrale fossile da 150-200 kW.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il 'levelized cost of energy' (LCOE) e perché è il miglior parametro di confronto?",
+    "back": "Il costo medio per kWh prodotto su tutta la vita dell'impianto, includendo costruzione, operazione e dismissione: permette confronto equo tra tecnologie diverse\n\nNel 2023 LCOE solare: 0.04-0.08 $/kWh. Eolico: 0.03-0.05. Gas: 0.06-0.10. Carbone: 0.07-0.15. Le rinnovabili sono ora la fonte più economica in molte regioni.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché la transizione energetica è anche una questione di sicurezza geopolitica?",
+    "back": "Perché i combustibili fossili creano dipendenza da paesi produttori (Russia, Medioriente): le rinnovabili sono locali e riducono la vulnerabilità energetica\n\nL'Europa importava il 40% del suo gas dalla Russia prima del 2022. Le rinnovabili sono energia locale: il sole e il vento non si possono sanzionare.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la 'grid parity' delle rinnovabili e quali implicazioni ha?",
+    "back": "Il punto in cui il costo di produzione da rinnovabili eguaglia quello da fonte fossile senza sussidi: raggiunto per solare ed eolico in molti mercati dopo il 2020\n\nDopo la grid parity le rinnovabili crescono autonomamente senza incentivi. Il crollo del costo del solare (-90% in 10 anni) ha reso obsoleti molti modelli economici energetici.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'idrogeno verde e qual è il suo ruolo nella transizione?",
+    "back": "Idrogeno prodotto tramite elettrolisi dell'acqua con energia rinnovabile: zero emissioni, può decarbonizzare settori difficili come acciaio, cemento e trasporto pesante\n\nL'idrogeno verde risolve dove le batterie non arrivano: aerei, navi, forni industriali ad alta temperatura. Il problema è ancora il costo: 3-6 $/kg vs 1-2 del fossile.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è il principio di 'addizionalità' nei meccanismi di incentivo delle rinnovabili?",
+    "back": "Il requisito che gli incentivi finanzino solo progetti che non si sarebbero realizzati senza di essi: previene che i sussidi vadano a impianti già economicamente convenienti\n\nL'addizionalità garantisce che gli incentivi creino valore netto. Se un solare si costruisce senza incentivi, finanziarli è uno spreco di risorse pubbliche.",
+    "tag": "Avanzato"
+  }
+]

@@ -1,0 +1,259 @@
+{
+  "mc_id": "MC-DIS-1-01",
+  "titolo": "Basi del disegno e costruzioni geometriche",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Quale strumento si usa per tracciare cerchi nel disegno tecnico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La squadra",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il compasso",
+          "corretto": true,
+          "feedback": "Esatto! Il compasso permette di tracciare cerchi e archi di raggio preciso."
+        },
+        {
+          "id": "c",
+          "testo": "Il goniometro",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La curvilinea",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il compasso permette di tracciare cerchi e archi di raggio preciso. La distanza tra punta e mina = raggio del cerchio."
+    },
+    {
+      "livello": "F",
+      "domanda": "Quante volte si 'stacca' il raggio sulla circonferenza per costruire un esagono?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "4",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "5",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "c",
+          "testo": "6",
+          "corretto": true,
+          "feedback": "Esatto! Il raggio si stacca esattamente 6 volte sulla circonferenza: questo è il principio geometrico alla base della costruzione dell'esagono con il solo compasso."
+        },
+        {
+          "id": "d",
+          "testo": "8",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il raggio si stacca esattamente 6 volte sulla circonferenza: questo è il principio geometrico alla base della costruzione dell'esagono con il solo compasso."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è il 'cartiglio' in un disegno tecnico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il bordo decorativo del foglio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Il riquadro in basso a destra con dati identificativi: nome, data, scala, numero tavola",
+          "corretto": true,
+          "feedback": "Esatto! Il cartiglio è obbligatorio e standardizzato (UNI EN ISO 7200)."
+        },
+        {
+          "id": "c",
+          "testo": "Il titolo del disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La legenda dei simboli usati",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il cartiglio è obbligatorio e standardizzato (UNI EN ISO 7200). Senza di esso un disegno tecnico non è identificabile né tracciabile."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa distingue una linea 'continua grossa' da una 'tratteggiata fine' nel disegno tecnico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Nessuna differenza funzionale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La grossa indica i contorni visibili dell'oggetto; la tratteggiata rappresenta spigoli e superfici nascosti (non visibili dalla vista)",
+          "corretto": true,
+          "feedback": "Esatto! La convenzione grafica è universale (ISO 128): ogni tipo di linea ha un significato preciso leggibile da qualsiasi tecnico nel mondo."
+        },
+        {
+          "id": "c",
+          "testo": "La grossa è per i disegni a mano, la tratteggiata per il CAD",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La grossa è per strutture portanti, la tratteggiata per i dettagli",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La convenzione grafica è universale (ISO 128): ogni tipo di linea ha un significato preciso leggibile da qualsiasi tecnico nel mondo."
+    },
+    {
+      "livello": "I",
+      "domanda": "Come si biseca geometricamente un segmento con riga e compasso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si misura con il righello e si trova il punto medio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Si tracciano due archi dal raggio > metà del segmento da entrambe le estremità: la retta che unisce le intersezioni è la bisettrice perpendicolare",
+          "corretto": true,
+          "feedback": "Esatto! La costruzione geometrica è esatta, non approssimativa."
+        },
+        {
+          "id": "c",
+          "testo": "Si divide visivamente il segmento in due parti uguali",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Si usa il goniometro per trovare il punto a 90°",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "La costruzione geometrica è esatta, non approssimativa. Non serve misurare: bastano riga e compasso con il metodo corretto."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa significa che un poligono è 'inscritto' in una circonferenza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il poligono è disegnato fuori dalla circonferenza",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Tutti i vertici del poligono giacciono sulla circonferenza",
+          "corretto": true,
+          "feedback": "Esatto! Inscritto = tutti i vertici sul cerchio."
+        },
+        {
+          "id": "c",
+          "testo": "Il poligono ha lo stesso numero di lati del raggio",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Il poligono e la circonferenza hanno la stessa area",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Inscritto = tutti i vertici sul cerchio. Circoscritto = tutti i lati tangenti al cerchio. Due relazioni fondamentali in geometria euclidea."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'sezione aurea' e perché viene usata in design?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di carta da disegno di qualità professionale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "La proporzione 1:1.618 (φ) ritenuta esteticamente armoniosa: usata in architettura, grafica e design perché risulta naturalmente piacevole alla percezione",
+          "corretto": true,
+          "feedback": "Esatto! Il Partenone, la Gioconda, il logo Apple: la sezione aurea compare dove la proporzione è considerata perfetta."
+        },
+        {
+          "id": "c",
+          "testo": "Una tecnica di ombreggiatura nel disegno artistico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "La norma che definisce i formati dei fogli da disegno",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il Partenone, la Gioconda, il logo Apple: la sezione aurea compare dove la proporzione è considerata perfetta. Non è magia: è percezione visiva evolutivamente ottimizzata."
+    },
+    {
+      "livello": "A",
+      "domanda": "Perché si usa ancora il disegno a mano nell'era del CAD?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché il CAD non può fare costruzioni geometriche",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché sviluppa il ragionamento spaziale, la comprensione delle relazioni geometriche e l'intuizione progettuale che il CAD non può sostituire",
+          "corretto": true,
+          "feedback": "Esatto! Il disegno a mano è pensiero visivo."
+        },
+        {
+          "id": "c",
+          "testo": "Perché è più veloce del CAD per disegni semplici",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Perché è richiesto dalle norme ISO",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "Il disegno a mano è pensiero visivo. Capire perché un esagono si costruisce così sviluppa un'intuizione geometrica che il software usa ma non insegna."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa è la norma ISO 128 e cosa regola?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le norme per la sicurezza nei laboratori di disegno tecnico",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "b",
+          "testo": "Lo standard internazionale per la rappresentazione grafica nei disegni tecnici: tipi di linea, spessori, convenzioni di visualizzazione",
+          "corretto": true,
+          "feedback": "Esatto! ISO 128 garantisce che un disegno tecnico sia leggibile allo stesso modo a Tokyo, Milano o São Paulo."
+        },
+        {
+          "id": "c",
+          "testo": "Il formato dei file CAD per lo scambio internazionale",
+          "feedback": "Rileggi la sezione per approfondire."
+        },
+        {
+          "id": "d",
+          "testo": "Le norme per la quotatura degli edifici",
+          "feedback": "Rileggi la sezione per approfondire."
+        }
+      ],
+      "spiegazione": "ISO 128 garantisce che un disegno tecnico sia leggibile allo stesso modo a Tokyo, Milano o São Paulo. La standardizzazione è la base della comunicazione tecnica globale."
+    }
+  ]
+}

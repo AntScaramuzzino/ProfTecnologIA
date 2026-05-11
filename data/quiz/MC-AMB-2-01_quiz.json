@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-AMB-2-01",
+  "titolo": "Strutture edilizie e tecniche costruttive",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Quale materiale è il principale componente del calcestruzzo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Acciaio",
+          "feedback": "L'acciaio è usato nel cemento armato, non nel calcestruzzo semplice."
+        },
+        {
+          "id": "b",
+          "testo": "Cemento + sabbia + ghiaia + acqua",
+          "corretto": true,
+          "feedback": "Esatto! Il calcestruzzo è un conglomerato di cemento, aggregati (sabbia e ghiaia) e acqua."
+        },
+        {
+          "id": "c",
+          "testo": "Legno lamellare",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Mattoni e laterizi",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il calcestruzzo è un conglomerato di cemento, aggregati (sabbia e ghiaia) e acqua. Il cemento è il 'collante' che lega tutto."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è una fondazione in un edificio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il tetto che protegge dall'acqua",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "La struttura che trasferisce il peso dell'edificio al terreno sottostante",
+          "corretto": true,
+          "feedback": "Esatto! Le fondazioni sono la base invisibile dell'edificio: distribuiscono i carichi sul terreno impedendo cedimenti."
+        },
+        {
+          "id": "c",
+          "testo": "I muri perimetrali di separazione",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema di canalizzazione dell'acqua piovana",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Le fondazioni sono la base invisibile dell'edificio: distribuiscono i carichi sul terreno impedendo cedimenti."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cos'è un solaio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di pavimentazione esterna",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "L'elemento orizzontale che divide i piani di un edificio e sorregge i carichi verticali",
+          "corretto": true,
+          "feedback": "Esatto! Il solaio divide i piani e trasmette i carichi alla struttura verticale."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di ventilazione",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il rivestimento esterno di un edificio",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il solaio divide i piani e trasmette i carichi alla struttura verticale. Può essere in cemento armato, legno o acciaio."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché il cemento armato (c.a.) è più resistente del calcestruzzo semplice?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché pesa di più",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Perché le barre di acciaio resistono alla trazione mentre il calcestruzzo resiste alla compressione: insieme lavorano in modo complementare",
+          "corretto": true,
+          "feedback": "Esatto! Il calcestruzzo è forte in compressione ma fragile in trazione."
+        },
+        {
+          "id": "c",
+          "testo": "Perché non assorbe umidità",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Perché è più economico da produrre",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il calcestruzzo è forte in compressione ma fragile in trazione. L'acciaio compensa questa debolezza: il cemento armato unisce i punti di forza di entrambi."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si intende per 'classe energetica' di un edificio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La potenza del sistema di riscaldamento installato",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un indice (da A4 a G) che misura il consumo energetico per riscaldamento/raffrescamento per metro quadro",
+          "corretto": true,
+          "feedback": "Esatto! La classe energetica (APE — Attestato di Prestazione Energetica) è obbligatoria per vendita e affitto e indica l'efficienza dell'involucro e degli impianti."
+        },
+        {
+          "id": "c",
+          "testo": "Il numero di pannelli solari installati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Il tipo di combustibile usato per riscaldare",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "La classe energetica (APE — Attestato di Prestazione Energetica) è obbligatoria per vendita e affitto e indica l'efficienza dell'involucro e degli impianti."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché la muratura portante è stata progressivamente sostituita dal telaio in c.a.?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i mattoni sono più costosi del cemento",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il telaio permette flessibilità nella distribuzione interna, altezze maggiori e resistenza sismica superiore",
+          "corretto": true,
+          "feedback": "Esatto! Il telaio in c."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la muratura non è estetica",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Perché il telaio non richiede fondazioni",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il telaio in c.a. o acciaio separa la struttura dalle partizioni interne: si può riorganizzare lo spazio senza toccare la struttura."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il metodo 'BIM' (Building Information Modeling)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un software per disegnare piante in 2D",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un processo che usa modelli digitali 3D contenenti tutte le informazioni dell'edificio (struttura, impianti, materiali) per gestire l'intero ciclo di vita",
+          "corretto": true,
+          "feedback": "Esatto! Il BIM rivoluziona la progettazione: tutti i professionisti (architetto, strutturista, impiantista) lavorano sullo stesso modello digitale condiviso."
+        },
+        {
+          "id": "c",
+          "testo": "Una tecnica di costruzione prefabbricata",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un metodo per calcolare il costo dei materiali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il BIM rivoluziona la progettazione: tutti i professionisti (architetto, strutturista, impiantista) lavorano sullo stesso modello digitale condiviso."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa si intende per edificio 'NZEB' (Nearly Zero Energy Building)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un edificio completamente autosufficiente energeticamente",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Un edificio con fabbisogno energetico quasi zero, coperto in grande misura da energie rinnovabili prodotte in loco",
+          "corretto": true,
+          "feedback": "Esatto! Dal 2021 tutti i nuovi edifici pubblici UE devono essere NZEB."
+        },
+        {
+          "id": "c",
+          "testo": "Un edificio senza impianto di riscaldamento",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "Un edificio costruito solo con materiali naturali",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Dal 2021 tutti i nuovi edifici pubblici UE devono essere NZEB. Combinano ottima isolazione, ventilazione meccanica controllata e rinnovabili."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è la 'rigenerazione urbana' e perché è preferita alla nuova edificazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La demolizione e ricostruzione di quartieri degradati",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "b",
+          "testo": "Il recupero e trasformazione di edifici e aree dismesse senza consumare nuovo suolo: riduce sprawl, emissioni e costi infrastrutturali",
+          "corretto": true,
+          "feedback": "Esatto! Il suolo è una risorsa non rinnovabile."
+        },
+        {
+          "id": "c",
+          "testo": "La costruzione di nuovi quartieri sostenibili in periferia",
+          "feedback": "Rileggi la sezione per capire meglio."
+        },
+        {
+          "id": "d",
+          "testo": "La manutenzione ordinaria degli edifici storici",
+          "feedback": "Rileggi la sezione per capire meglio."
+        }
+      ],
+      "spiegazione": "Il suolo è una risorsa non rinnovabile. La rigenerazione urbana è la strategia preferita dall'UE per limitare il consumo di territorio."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}
