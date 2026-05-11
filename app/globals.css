@@ -360,3 +360,84 @@ a, button {
     font-size: 0.85rem;
   }
 }
+
+/* =========================================================
+   ProfTecnologIA v2 — Callout semantici (P1.1)
+   Usati da CalloutBox.tsx — 5 varianti + animazione accordion
+   ========================================================= */
+
+:root {
+  --callout-info-border:    #f59e0b;
+  --callout-info-bg:        #fffbeb;
+  --callout-info-text:      #3f2f05;
+
+  --callout-tip-border:     #f59e0b;
+  --callout-tip-bg:         #fffbeb;
+  --callout-tip-text:       #3f2f05;
+
+  --callout-safety-border:  #ef4444;
+  --callout-safety-bg:      #fef2f2;
+  --callout-safety-text:    #3f0000;
+
+  --callout-physics-border: #3b82f6;
+  --callout-physics-bg:     #eff6ff;
+  --callout-physics-text:   #1e3a8a;
+
+  --callout-error-border:   #eab308;
+  --callout-error-bg:       #fefce8;
+  --callout-error-text:     #3f3000;
+
+  --callout-question-border:#0ea5e9;
+  --callout-question-bg:    #f0f9ff;
+  --callout-question-text:  #0c4a6e;
+}
+
+/* Classi semantiche usate come alternativa ai data-type esistenti */
+.callout-info,
+.callout-tip {
+  border-left-color: var(--callout-info-border) !important;
+  background-color:  var(--callout-info-bg)     !important;
+  color:             var(--callout-info-text)    !important;
+}
+
+.callout-safety {
+  border-left-color: var(--callout-safety-border) !important;
+  background-color:  var(--callout-safety-bg)     !important;
+  color:             var(--callout-safety-text)    !important;
+}
+
+.callout-physics {
+  border-left-color: var(--callout-physics-border) !important;
+  background-color:  var(--callout-physics-bg)     !important;
+  color:             var(--callout-physics-text)    !important;
+}
+
+.callout-error {
+  border-left-color: var(--callout-error-border) !important;
+  background-color:  var(--callout-error-bg)     !important;
+  color:             var(--callout-error-text)    !important;
+}
+
+.callout-question {
+  border-left-color: var(--callout-question-border) !important;
+  background-color:  var(--callout-question-bg)     !important;
+  color:             var(--callout-question-text)    !important;
+}
+
+/* ── Accordion animation (grid-rows expand) — P1.1 ── */
+/* Già gestito via Tailwind utility grid-rows-[1fr]/[0fr].
+   Qui il fallback per browser che non supportano la shorthand. */
+@supports not (grid-template-rows: 1fr) {
+  [data-accordion-panel] {
+    height: auto;
+  }
+}
+
+/* ── MCNavigator tab bar scrollbar-none cross-browser ── */
+.mc-nav-scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.mc-nav-scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
