@@ -127,6 +127,27 @@ export function getMCHookAudio(mcId: string): string | null {
   return `${PUBLIC_BASE_PATH}/assets/audio/${mcId}_hook-audio.mp3`;
 }
 
+// ── VIDEO PLAYLIST ──────────────────────────────────────────────────────────
+
+export interface VideoItem {
+  id: string;
+  title: string;
+  thumbnail: string;
+}
+
+const VIDEOS_ROOT = path.join(process.cwd(), "data", "videos");
+
+export function getVideoPlaylist(mcId: string): VideoItem[] {
+  const file = path.join(VIDEOS_ROOT, `${mcId}.json`);
+  if (!fs.existsSync(file)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(file, "utf-8"));
+    return (data.videos ?? []).slice(0, 10) as VideoItem[];
+  } catch {
+    return [];
+  }
+}
+
 function assetRank(name: string): number {
   // Rank 0 — infografiche (migliore per card hero e dettaglio)
   if (name.includes("infografica") || name.includes("img2-infografica")) return 0;

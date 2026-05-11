@@ -4,8 +4,9 @@ import MCCard from "@/components/MCCard";
 import MCVisual from "@/components/MCVisual";
 import QuizWidget from "@/components/mc/QuizWidget";
 import AudioPlayer from "@/components/mc/AudioPlayer";
+import VideoGallery from "@/components/mc/VideoGallery";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
-import { getMCTextContent, getVisualAssets, getMCHookAudio } from "@/lib/content-loader";
+import { getMCTextContent, getVisualAssets, getMCHookAudio, getVideoPlaylist } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
 interface Props {
@@ -26,6 +27,7 @@ export default async function MCPage({ params }: Props) {
   const primaryVisual = visuals[0] ?? null;
   const text = getMCTextContent(mc.id);
   const hookAudioSrc = getMCHookAudio(mc.id);
+  const videoPlaylist = getVideoPlaylist(mc.id);
   const prereqs = getPrerequisiteChain(mc.id);
   const related = getAllMCs()
     .filter((item) => item.area === mc.area && item.id !== mc.id)
@@ -122,6 +124,11 @@ export default async function MCPage({ params }: Props) {
                 ))}
               </div>
             </section>
+          )}
+
+          {/* Gallery video YouTube */}
+          {videoPlaylist.length > 0 && (
+            <VideoGallery videos={videoPlaylist} mcTitolo={mc.titolo} />
           )}
 
           <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
