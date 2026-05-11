@@ -150,13 +150,13 @@ I campi `prerequisiti` e `compito_realta` sono obbligatori nelle MC dalla versio
 
 ---
 
-## 6. I 4 AGENTI — RUOLI E CONFINI
+## 6. I 5 AGENTI — RUOLI E CONFINI
 
 ### AGENTE CURATORE
-- **Cosa fa:** monitora e raccoglie nuove fonti (articoli, video, paper) e le aggiunge ai notebook NotebookLM appropriati.
+- **Cosa fa:** monitora e raccoglie nuove fonti (articoli, video, paper) e le aggiunge ai notebook NotebookLM appropriati. Ricerca video YouTube da fonti prioritarie (case editrici, Geopop, insegnanti SSIG, aziende e consorzi) per ogni MC.
 - **Non fa:** sintetizza, non genera contenuti didattici.
 - **Trigger:** periodico (settimanale) o su richiesta esplicita.
-- **Output:** lista di fonti aggiunte con notebook di destinazione (NB-TESTI | NB-VIDEO | NB-ARTICOLI).
+- **Output:** lista di fonti aggiunte (NB-TESTI | NB-VIDEO | NB-ARTICOLI) + file `data/videos/[MC-ID].json`.
 
 ### AGENTE SINTETIZZATORE
 - **Cosa fa:** interroga NotebookLM in modalità asincrona, estrae output (brief, quiz, mappe, flashcard) e li formatta secondo lo schema MC.
@@ -165,15 +165,37 @@ I campi `prerequisiti` e `compito_realta` sono obbligatori nelle MC dalla versio
 - **Output:** asset JSON strutturati depositati in `04_CONTENUTI/`.
 
 ### AGENTE GENERATORE DI ASSET
-- **Cosa fa:** produce infografiche, mappe concettuali, microlearning card, quiz situazionali da compiti di realtà.
-- **Strumenti:** Claude API + Canva API.
+- **Cosa fa:** produce immagini AI (6 tipologie per MC con GPT Image 2 / Higgsfield), audio hook podcast (edge-tts voce it-IT-IsabellaNeural), script hook narrativi, quiz situazionali.
+- **Strumenti:** Claude API + GPT Image 2 (OpenAI) + Higgsfield + edge-tts Microsoft.
 - **Non fa:** non gestisce fonti, non interagisce con il profilo studente.
-- **Output:** file visivi o card in `04_CONTENUTI/{visual|quiz|microlearning}`.
+- **Output:** PNG in `04_CONTENUTI/visual/`, MP3 + trascrizioni in `04_CONTENUTI/microlearning/hook/`.
+
+### AGENTE CARBLE-CDD *(nuovo — quality assurance)*
+- **Cosa fa:** valida ogni CDD prodotto dagli altri agenti secondo il Protocollo CARBLE-CDD v1.0 (I.C. Nicotera Costabile, 13/05/2026). Applica i 7 criteri: **D** Disegno didattico · **C** Correttezza · **A** Adeguatezza · **R** Bias · **B** Fonti/licenze · **L** Linguaggio/accessibilità · **E** Etica/sicurezza.
+- **Non fa:** non genera contenuti, non modifica direttamente i file — produce un parere istruttorio. La decisione finale spetta all'autore umano.
+- **Trigger:** dopo ogni produzione di CDD (testo, immagine, audio, quiz, video playlist) e prima di ogni pubblicazione sul sito.
+- **Soglie:** ✅ Tutti Conformi → pubblica · ⚠️ Da rivedere → notifica autore · 🚫 Non conforme → blocca.
+- **Output:** scheda JSON di validazione + report Markdown in `04_CONTENUTI/validazione/`.
+- **Riferimento:** `02_AGENTI/agente_carble_cdd/prompt.md` + `00_ARCHITETTURA/Protocollo_CARBLE_CDD_v1.0.md`.
 
 ### AGENTE PERSONALIZZATORE
 - **Cosa fa:** legge il profilo e i progressi dello studente, seleziona le MC appropriate, sequenzia i contenuti (prerequisiti → MC target), aggiorna il percorso.
 - **Non fa:** non genera contenuti, non raccoglie fonti.
 - **Output:** percorso JSON personalizzato per studente con MC ordinate e livello DigComp attuale.
+
+### Pipeline degli agenti
+
+```
+Agente Curatore         → fonti, video YouTube per MC
+        ↓
+Agente Sintetizzatore   → asset JSON strutturati
+        ↓
+Agente Generatore Asset → immagini AI, audio, quiz, script
+        ↓
+Agente CARBLE-CDD       → validazione (D-C-A-R-B-L-E)
+        ↓              [correzioni manuali autore se necessario]
+Agente Personalizzatore → percorso personalizzato studente
+```
 
 ---
 
@@ -255,48 +277,66 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 ## 10. BACKLOG PRIORITIZZATO (stato attuale)
 
 > **Target MC aggiornato: 52** (da 48) — vedi INDICE_ProfTecnologIA_v1.0.md §5.1 per motivazione.
-> **Risoluzione DIG/INF:** MC-DIG-2-03/04 e MC-DIG-3-03 non saranno MC autonome — ridondanti con INF-2-01/02 e INF-3-01. Vedi §5.2 dell'Indice.
+> **Stato al 2026-05-10:** 50 MC JSON in matrice · 56 testi _completa.md (50 standard + 6 INF) · app Next.js buildata · syllabus completi · design system ✅
+> **Risoluzione DIG/INF:** MC-DIG-2-03/04 e MC-DIG-3-03/04 coesistono in matrice. Area INF (Informatica) è separata con 6 testi in 08_TESTI ma ancora senza JSON in matrice.
 
 ### Architettura e indice
 
 | Priorità | Task | Stato |
 |----------|------|-------|
 | ✅ | Creare INDICE_ProfTecnologIA_v1.0.md (blueprint editoriale volume unico triennio) | ✅ Fatto — 2026-05-09 |
-| ✅ | Validare 15 MC [◆] nuove contro IN 2025, Paci, Hypertech | ✅ Fatto — 2026-05-09 (tutte validate, 5 con note operative) |
+| ✅ | Validare 15 MC [◆] nuove contro IN 2025, Paci, Hypertech | ✅ Fatto — 2026-05-09 |
 | ✅ | Pacchetto visuale pilota MC-MAT-1-02 (illustrazione + diagramma + manifest) | ✅ Fatto — 2026-05-09 |
-| 0 | Aggiornare ref IN 2012→2025 in tutte le MC esistenti | ⬜ Da fare |
-| 0 | Aggiornare MC-MAT-1-02 con Cicli tecnologici completi (IN 2025) | ⬜ Da fare |
-| ⚠️ | ~~Aggiungere MC-DIG-2-03 (Sistema operativo) e MC-DIG-2-04 (Cifratura/sicurezza)~~ | ⚠️ Ridefinito — i contenuti sono già coperti da MC-INF-2-01 e MC-INF-2-02. Integrare prospettiva "uso pratico" come riquadro DIG↔INF in quelle MC. |
+| ✅ | Aggiornare ref IN 2012→2025 in tutte le MC esistenti | ✅ Fatto — tutte le 50 MC usano già "IN 2025 (D.M. n. 221/2025)" |
+| ✅ | Aggiornare MC-MAT-1-02 con Cicli tecnologici (IN 2025) | ✅ Fatto — campo IN aggiornato con "Cicli tecnologici" |
+| ⚠️ | ~~Aggiungere MC-DIG-2-03/04 (Sistema operativo, Cifratura)~~ | ⚠️ Ridefinito — DIG-2-03/04 e DIG-3-03/04 esistono in matrice; INF-2-01/02 coprono il versante informatico. |
+| 0 | ⚡ **Decidere target definitivo MC**: il target 52 include o esclude le 6 MC-INF? | ⬜ Decisione editoriale da prendere |
+| 1 | Espandere MC Advanced da 4 a 6 pagine nell'Indice (12 MC interessate) | ⬜ Da fare |
+| 1 | Aggiungere 2 UDA interdisciplinari bonus all'Indice (sezione conclusiva per anno) | ⬜ Da fare |
 
-### Matrice MC (target: 52 MC totali)
+### Matrice MC
 
 | Priorità | Task | Stato |
 |----------|------|-------|
-| 1 | Portare le MC da 30 a 52 — creare JSON per le 15 MC [◆] validate (vedi Indice v1.0) | ⬜ Da fare |
-| 1 | Aggiungere campo `prerequisiti` a ogni MC esistente (catena di dipendenze) | ⬜ Da fare |
-| 1 | Aggiungere campi v2.0 a ogni MC: `hook_audio`, `professione_futura`, `sdg_principale`, `clil_termini`, `uda_collegata` | ⬜ Da fare |
-| 1 | Aggiungere MC-MAT-1-05 (Metalli) e MC-MAT-1-06 (Fibre/compositi) come JSON | ⬜ Da fare |
-| 1 | Documentare progressione verticale DIG (F→I→A) e DIS (F→I→A) come file dedicato | ⬜ Da fare |
+| ✅ | Portare le MC a 50 JSON (da 30) | ✅ Fatto — 50 MC JSON in 01_MATRICE_MC |
+| ✅ | MC-MAT-1-05 (Metalli) e MC-MAT-1-06 (Fibre/compositi) come JSON | ✅ Fatto |
+| ✅ | Documentare progressione verticale DIG/DIS come file dedicato | ✅ Fatto — `01_MATRICE_MC/PROGRESSIONE_VERTICALE_DIG_DIS.md` |
+| ✅ | Campo `prerequisiti` in ogni MC (struttura catena dipendenze) | ✅ Parziale — 40/50 MC con prerequisiti compilati, 10 ancora vuoti |
+| ✅ | Campi v2.0 (`hook_audio`, `professione_futura`, `sdg_principale`, `clil_termini`, `uda_collegata`) | ✅ Parziale — 11/50 MC aggiornate (MAT-1-01/02, DIG-2-03/04, DIG-3-03/04, ENE-3-05/06, COM-3-05/06, DIS-2-02) |
+| 1 | Creare 6 JSON MC-INF in `01_MATRICE_MC/` (testi già pronti in 08_TESTI) | ⬜ Da fare — INF-1-01/02, INF-2-01/02, INF-3-01/02 |
+| 1 | Completare prerequisiti nelle 10 MC con campo vuoto | ⬜ Da fare |
+| 1 | Aggiungere campi v2.0 alle 39 MC ancora senza | ⬜ Da fare |
+| 2 | Raggiungere target 52 MC JSON (mancano 2 rispetto alle 50 attuali, escluse INF) | ⬜ Da fare — identificare quali aree espandere (DIS o SIS candidati) |
 
 ### Struttura editoriale e contenuti
 
 | Priorità | Task | Stato |
 |----------|------|-------|
-| 1 | Espandere MC Advanced da 4 a 6 pagine nell'Indice (12 MC interessate) | ⬜ Da fare |
-| 1 | Aggiungere 2 UDA interdisciplinari bonus all'Indice (sezione conclusiva per anno) | ⬜ Da fare |
-| 2 | Creare testi narrativi (ESPLORA) per le MC pilota — iniziare da MAT (6 MC) | ⬜ Da fare |
-| 2 | Creare hook audio (script podcast) per le MC MAT — pilota INNESCA | ⬜ Da fare |
-| 5 | Syllabus annuale dettagliato per docenti | ⬜ Da fare |
-| 5 | Versione syllabus per studenti e famiglie | ⬜ Da fare |
+| ✅ | Testi narrativi (ESPLORA) per tutte le MC | ✅ Fatto — 56 _completa.md (50 standard + 6 INF) |
+| ✅ | Hook audio (script podcast) per MC pilota | ✅ Parziale — ~34 hook presenti; mancano 22 MC (ALI-2-04/05/06, AMB-2-04/05/06, COM-3-05/06, DIG-2-03/04, DIG-3-03/04, DIS-1-02, DIS-2-02, DIS-3-02, ENE-3-04/05/06, MAT-1-05/06, SIS-3-03/04) |
+| ✅ | SVG visual per tutte le MC standard | ✅ Fatto — SVG generati per tutte le 50 MC |
+| ✅ | Brain integration (RAPPORTO_INTEGRAZIONI_brain_v1.0.md) | ✅ Fatto — 14 integrazioni applicate su 12 MC; ~8 integrazioni residue raccomandate |
+| 2 | Completare hook script per le 22 MC mancanti | ⬜ Da fare |
+| 2 | Applicare integrazioni brain residue (vedi `00_ARCHITETTURA/RAPPORTO_INTEGRAZIONI_brain_v1.0.md`) | ⬜ Da fare |
+| 3 | Creare asset in `04_CONTENUTI/compiti_realta/`, `flashcard/`, `quiz/` (cartelle ancora vuote) | ⬜ Da fare |
+
+### Syllabus
+
+| Priorità | Task | Stato |
+|----------|------|-------|
+| ✅ | Syllabus annuale dettagliato per docenti (tutte e 3 le classi) | ✅ Fatto |
+| ✅ | Versione syllabus per studenti e famiglie (tutte e 3 le classi) | ✅ Fatto |
 
 ### Sistema agenti e NotebookLM
 
 | Priorità | Task | Stato |
 |----------|------|-------|
-| 2 | Creare NB-TESTI e caricare Paci + Hypertech (priorità ⭐⭐⭐) | ⬜ Da fare |
+| ✅ | Agente microlearning — prompt e README | ✅ Fatto — `02_AGENTI/agente_microlearning/` |
+| ✅ | Script Python Agente Sintetizzatore | ✅ Fatto — `sintetizzatore.py` e `notion_setup.py` presenti (non testati in produzione) |
+| ✅ | NB-TESTI catalogo libri | ✅ Parziale — `CATALOGO_LIBRI.md` presente; caricamento Paci + Hypertech ⬜ |
+| 2 | Caricare Paci + Hypertech su NB-TESTI | ⬜ Da fare |
 | 2 | Creare NB-VIDEO con URL YouTube selezionati per area | ⬜ Da fare |
 | 2 | Creare NB-ARTICOLI con feed innovazione | ⬜ Da fare |
-| 3 | Script Python Agente Sintetizzatore | ⬜ Da fare |
 | 3 | Parser NotebookLM → schema MC v2.0 | ⬜ Da fare |
 | 3 | Connettore verso Notion (Layer 2) | ⬜ Da fare |
 
@@ -304,12 +344,14 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 
 | Priorità | Task | Stato |
 |----------|------|-------|
-| 4 | Prototipo app React con navigazione MC (struttura 5 zone) | ⬜ Da fare |
-| 4 | Sistema tracciamento progressi studente per MC | ⬜ Da fare |
-| 4 | Quiz adattivi (3 livelli per MC) | ⬜ Da fare |
+| ✅ | App Next.js con navigazione MC (struttura per anno/area/MC) | ✅ Fatto — `05_APP/tecnologia-sito-web/` buildata e pronta per deploy Netlify |
+| ✅ | Design system + design tokens | ✅ Fatto — `TecnologIA_Design_System.html` + `design-tokens.json` |
+| 4 | Sistema tracciamento progressi studente per MC | ⬜ Da verificare/completare nell'app |
+| 4 | Quiz adattivi (3 livelli per MC) | ⬜ Da verificare/completare nell'app |
+| 4 | Deploy Netlify | ⬜ Da fare — guida pronta in `DEPLOY_NETLIFY.md` |
 
 Aggiorna questo backlog ad ogni sessione di lavoro.
 
 ---
 
-*Ultima modifica: Maggio 2026*
+*Ultima modifica: 2026-05-10*
