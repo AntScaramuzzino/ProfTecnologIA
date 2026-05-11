@@ -5,6 +5,7 @@ import MCVisual from "@/components/MCVisual";
 import QuizWidget from "@/components/mc/QuizWidget";
 import AudioPlayer from "@/components/mc/AudioPlayer";
 import VideoGallery from "@/components/mc/VideoGallery";
+import FlippedVideos from "@/components/mc/FlippedVideos";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
 import { getMCTextContent, getVisualAssets, getMCHookAudio, getVideoPlaylist } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
@@ -84,23 +85,24 @@ export default async function MCPage({ params }: Props) {
               <div className={cx("divide-y divide-slate-200", text.intro ? "mt-6 sm:mt-7" : "")}>
                 {text.sections.map((section) => {
                   const isInnesca = /innesca/i.test(section.title);
+                  const isEsplora = /esplora/i.test(section.title);
                   const domanda   = isInnesca ? mc.hook_audio?.domanda_avvio : null;
                   const hookTitle = mc.hook_audio?.titolo ?? `Hook audio — ${mc.titolo}`;
                   const hookMin   = mc.hook_audio?.durata_min;
+
+                  // 3 video flipped classroom: posizionati DOPO INNESCA e PRIMA di ESPLORA
+                  const flippedVideos = videoPlaylist.slice(0, 3);
+
                   return (
                     <article key={section.title} className="py-6 first:pt-0 last:pb-0 sm:py-8">
                       <h2 className="text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
 
-                      {/* Player audio hook — visibile solo nella sezione INNESCA */}
+                      {/* Player audio hook */}
                       {isInnesca && hookAudioSrc && (
-                        <AudioPlayer
-                          src={hookAudioSrc}
-                          titolo={hookTitle}
-                          durata={hookMin}
-                        />
+                        <AudioPlayer src={hookAudioSrc} titolo={hookTitle} durata={hookMin} />
                       )}
 
-                      {/* Domanda stimolo in evidenza gialla */}
+                      {/* Domanda stimolo in giallo */}
                       {domanda && (
                         <p className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 px-4 py-3 text-base font-bold leading-snug text-yellow-900 sm:mt-4 sm:text-lg">
                           💬 {domanda}
@@ -108,6 +110,11 @@ export default async function MCPage({ params }: Props) {
                       )}
 
                       <ReadableText value={section.body} className="mt-3 sm:mt-4" />
+
+                      {/* 3 video flipped classroom — dopo INNESCA, prima di ESPLORA */}
+                      {isInnesca && flippedVideos.length > 0 && (
+                        <FlippedVideos videos={flippedVideos} />
+                      )}
                     </article>
                   );
                 })}
@@ -126,9 +133,12 @@ export default async function MCPage({ params }: Props) {
             </section>
           )}
 
-          {/* Gallery video YouTube */}
-          {videoPlaylist.length > 0 && (
-            <VideoGallery videos={videoPlaylist} mcTitolo={mc.titolo} />
+          {/* Gallery video YouTube — 9 video dopo la galleria visuale */}
+          {videoPlaylist.length > 3 && (
+            <VideoGallery
+              videos={videoPlaylist.slice(3, 12)}
+              mcTitolo={mc.titolo}
+            />
           )}
 
           <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
