@@ -78,12 +78,23 @@ export default async function MCPage({ params }: Props) {
             <section className="min-w-0 rounded-lg border border-slate-200 bg-white px-4 py-6 shadow-sm sm:px-5 sm:py-7 md:px-8">
               {text.intro && <ReadableText value={text.intro} />}
               <div className={cx("divide-y divide-slate-200", text.intro ? "mt-6 sm:mt-7" : "")}>
-                {text.sections.map((section) => (
-                  <article key={section.title} className="py-6 first:pt-0 last:pb-0 sm:py-8">
-                    <h2 className="text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
-                    <ReadableText value={section.body} className="mt-3 sm:mt-4" />
-                  </article>
-                ))}
+                {text.sections.map((section) => {
+                  const isInnesca = /innesca/i.test(section.title);
+                  const domanda = isInnesca
+                    ? mc.hook_audio?.domanda_avvio
+                    : null;
+                  return (
+                    <article key={section.title} className="py-6 first:pt-0 last:pb-0 sm:py-8">
+                      <h2 className="text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
+                      {domanda && (
+                        <p className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 px-4 py-3 text-base font-bold leading-snug text-yellow-900 sm:mt-4 sm:text-lg">
+                          💬 {domanda}
+                        </p>
+                      )}
+                      <ReadableText value={section.body} className="mt-3 sm:mt-4" />
+                    </article>
+                  );
+                })}
               </div>
             </section>
           )}

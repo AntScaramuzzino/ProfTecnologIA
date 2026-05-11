@@ -25,6 +25,14 @@ export interface NoteDid {
   avanzato: string;
 }
 
+export interface HookAudio {
+  titolo?: string;
+  oggetto_reale?: string;
+  domanda_avvio?: string;
+  durata_min?: number;
+  note_script?: string;
+}
+
 export interface MC {
   id: string;
   area: string;
@@ -45,6 +53,13 @@ export interface MC {
   compito_realta: string;
   sdg?: number[];
   note_didattiche: NoteDid;
+  hook_audio?: HookAudio;
+  professione_futura?: {
+    titolo?: string;
+    orizzonte?: string;
+    descrizione_breve?: string;
+    competenze_chiave?: string[];
+  };
 }
 
 // Legge prima da data/mc/ (repo standalone), poi da ../../01_MATRICE_MC (workspace locale)
