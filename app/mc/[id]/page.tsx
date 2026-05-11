@@ -213,6 +213,17 @@ export default async function MCPage({ params }: Props) {
         </aside>
       </div>
 
+      {/* Formula trasparenza AI — Protocollo CARBLE-CDD */}
+      <div className="mx-auto max-w-7xl px-4 pb-4 sm:px-6">
+        <p className="rounded-lg border border-slate-100 bg-slate-50 px-4 py-2.5 text-xs text-slate-400">
+          🤖 Questo materiale è stato realizzato da{" "}
+          <span className="font-semibold text-slate-500">Prof. Ing. Antonio Scaramuzzino</span>{" "}
+          con il supporto di strumenti AI (Claude, GPT Image, edge-tts) e validato secondo il{" "}
+          <Link href="/credits" className="underline hover:text-slate-700">Protocollo CARBLE-CDD v1.0</Link>.
+          I video appartengono ai rispettivi autori YouTube.
+        </p>
+      </div>
+
       {related.length > 0 && (
         <section className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 sm:pb-12">
           <h2 className="mb-4 text-2xl font-black">Altre MC dell&apos;area</h2>
