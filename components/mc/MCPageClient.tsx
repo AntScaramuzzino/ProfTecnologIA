@@ -504,24 +504,33 @@ export function MCPageClient({
         )}
       </MCNavigator>
 
-      {/* ── Quiz widget — dopo i tab, prima dell'appendice ── */}
-      <div className="border-t border-slate-100 px-4 py-6 sm:px-6">
-        <QuizWidget
-          mcId={mc.id}
-          livello={mcLevel}
-          quizData={quizData ?? undefined}
-        />
-      </div>
-
-      {/* ── Flashcard ── */}
-      {flashcards.length > 0 && (
-        <section className="border-t border-slate-100 bg-gradient-to-b from-slate-50 to-white py-8 sm:py-10">
-          <div className="px-4 sm:px-6">
-            <div className="mb-2 flex items-center gap-2">
-              <span className="text-xs font-black uppercase tracking-widest text-indigo-500">🃏 Ripasso</span>
-            </div>
-            <FlashcardDeck cards={flashcards} mcTitolo={mc.titolo} />
+      {/* ── Ripasso — Quiz interattivo + Flashcard ── */}
+      {(quizData || flashcards.length > 0) && (
+        <section className="border-t border-slate-100 bg-gradient-to-b from-slate-50 to-white px-4 py-8 sm:px-6 sm:py-10">
+          <div className="mb-6 flex items-center gap-3">
+            <span className="text-xs font-black uppercase tracking-widest text-indigo-500">🃏 Ripasso</span>
+            <div className="h-px flex-1 bg-slate-200" />
           </div>
+
+          {/* Quiz interattivo */}
+          {quizData && (
+            <div className={flashcards.length > 0 ? "mb-10" : ""}>
+              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Quiz</p>
+              <QuizWidget
+                mcId={mc.id}
+                livello={mcLevel}
+                quizData={quizData}
+              />
+            </div>
+          )}
+
+          {/* Flashcard */}
+          {flashcards.length > 0 && (
+            <div>
+              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Flashcard</p>
+              <FlashcardDeck cards={flashcards} mcTitolo={mc.titolo} />
+            </div>
+          )}
         </section>
       )}
 
