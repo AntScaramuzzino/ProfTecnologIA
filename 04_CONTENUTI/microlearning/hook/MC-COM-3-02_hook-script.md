@@ -131,3 +131,18 @@ Tieni quelle domande in testa — ti serviranno.
 - **Blocco 2:** tono di analisi del sistema, non di accusa.
 - **Blocco 3:** tono di rivelazione strutturale. Pausa lunga dopo "appassionanti". L'ultima frase è secca.
 - **Blocco 4:** tono positivo e orientato alla competenza critica.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"500 ore di video al minuto caricate su YouTube"**  
+  YouTube Official Blog (2022). Dato aggiornato da Google/YouTube periodicamente; valore 2022: ~500 ore/minuto.
+
+- **"75% degli adulti 18-34 anni guarda YouTube regolarmente"**  
+  Think with Google / Comscore 2022-2023.
+
+- **"1 minuto di video professionale richiede 8-10 ore di lavoro"**  
+  Stima standard settore video production professionale; non una fonte unica citabile.
+

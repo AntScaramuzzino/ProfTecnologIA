@@ -117,3 +117,18 @@ Tieni quella domanda in testa — ti servirà.
 - **Blocco 2:** tono di analisi dati accessibile.
 - **Blocco 3:** tono positivo — il problema ha una soluzione pratica.
 - **Blocco 4:** tono professionale, orientato alla competenza.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"60-70% degli edifici residenziali italiani costruiti prima del 1976"**  
+  ENEA — Rapporto Annuale sull'Efficienza Energetica (RAEE) 2023. Prima del 1976 non esisteva la Legge 373/1976 sull'isolamento degli edifici.
+
+- **"30% dell'energia per riscaldamento se ne va con dispersioni"**  
+  ENEA RAEE 2023 — stima sulle dispersioni termiche degli edifici italiani non isolati.
+
+- **"consumi possono scendere del 40%"**  
+  Typical range documentato da ENEA per retrofit energetico con cappotto termico + serramenti.
+

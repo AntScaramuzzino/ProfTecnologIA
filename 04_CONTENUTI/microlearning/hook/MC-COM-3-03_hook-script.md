@@ -127,3 +127,15 @@ Tieni quel numero in testa — ti servirà.
 - **Blocco 2:** tono di geografia economica — ogni pezzo ha un luogo reale.
 - **Blocco 3:** tono di correzione di una narrazione dominante — non accusatorio, comparativo.
 - **Blocco 5:** attività di stima — invita al pensiero quantitativo.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"il trasporto marittimo produce il 2,5% delle emissioni mondiali di CO₂"**  
+  IMO Fourth GHG Study 2020 (stima 2018: 2,89% CO₂ totale). OCSE 2023 aggiorna a ~2% CO₂ da combustione energetica.
+
+- **"i trasporti nel complesso sono responsabili del 16% delle emissioni globali"**  
+  IEA (International Energy Agency) — World Energy Outlook 2023. Trasporti = ~16% CO₂ globale.
+

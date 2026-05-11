@@ -123,3 +123,18 @@ Tieni il dato in testa — ti servirà.
 - **Blocco 2:** tono di racconto di un esperimento riuscito.
 - **Blocco 3:** tono di domanda aperta, non retorica — la domanda finale è genuina.
 - **Blocco 5:** attività osservativa reale, praticabile subito.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"65% dello spazio stradale dedicato alle automobili" in una città media**  
+  Studi su mobilità urbana: ITDP (Institute for Transportation and Development Policy). Valori variabili per città; media europea ~60-70%.
+
+- **"auto ferme il 95% del tempo"**  
+  RAC Foundation (UK) / INRIX Parking Study — valore ampiamente citato in letteratura sulla mobilità urbana.
+
+- **"Superblock di Poblenou: traffico ridotto del 60%, spostamenti a piedi +30%"**  
+  Mueller N. et al. (2020) – «Changing the urban design of cities for health», Environment International. Barcellona superblocks pilot data.
+

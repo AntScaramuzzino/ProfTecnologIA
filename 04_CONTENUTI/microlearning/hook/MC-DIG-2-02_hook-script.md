@@ -127,3 +127,12 @@ Tieni quella lista in testa — ti servirà.
 - **Blocco 2:** tono di racconto giornalistico, fatti precisi.
 - **Blocco 3:** tono di calcolo economico. Pausa lunga (1 sec) dopo "Tu sei il prodotto."
 - **Blocco 4:** tono costruttivo — sapere protegge, non isola.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"3 miliardi di utenti" sui social network**  
+  Meta Q3 2024 Report — Facebook Family DAP: 3,29 miliardi di utenti attivi giornalieri.
+

@@ -114,3 +114,12 @@ Tieni la domanda in testa — ti servirà.
 - **Blocco 2:** tono di racconto scientifico accessibile.
 - **Blocco 3:** tono di paradosso — la rivelazione non è giudicante ma sorprendente.
 - **Blocco 4:** tono positivo e pratico.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"quasi 1 bambino su 3 tra i 6 e i 10 anni in Italia è in sovrappeso o obeso"**  
+  OKkio alla Salute 2023, ISS (Istituto Superiore di Sanità) — dati aggiornati: 19% sovrappeso + 9,8% obesi = 28,8% totale. Fonte: epicentro.iss.it/okkioallasalute/indagine-2023-dati
+

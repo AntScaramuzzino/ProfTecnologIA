@@ -114,3 +114,15 @@ Tieni quella domanda in testa — ti servirà.
 - **Blocco 2:** tono di racconto di viaggio — ogni materiale è un personaggio.
 - **Blocco 3:** tono di rivelazione. Pausa più lunga (1 sec) dopo "il vecchio?"
 - **Blocco 5:** tono di sfida leggera, quasi un gioco.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"40.000 km" percorsi da una felpa fast fashion**  
+  Ellen MacArthur Foundation (2017) — A New Textiles Economy. Valore medio stimato per supply chain globale abbigliamento.
+
+- **"80% degli smartphone finisce in discarica o non viene riciclato formalmente"**  
+  Global E-waste Monitor 2024 (ITU/UNITAR/ILO/UNU) — nel 2022 solo il 22,3% dell'e-waste è stato formalmente riciclato.
+

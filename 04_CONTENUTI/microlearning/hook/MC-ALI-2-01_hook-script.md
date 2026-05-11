@@ -121,3 +121,18 @@ Tieni quella domanda in testa — ti servirà.
 - **Blocco 2:** tono di spiegazione scientifica accessibile — termini tecnici ma spiegati.
 - **Blocco 3:** tono di dato statistico significativo. Pausa lunga dopo "Quasi la metà."
 - **Blocco 4:** tono di connessione sistemica — dal frutto al problema globale.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"45% della frutta e verdura si deteriora prima di arrivare"**  
+  FAO SAVE FOOD Initiative (2019). Confermato da SOFA 2019 (State of Food and Agriculture, FAO, Roma).
+
+- **"14% nei paesi sviluppati"**  
+  FAO SOFA 2019: stima post-raccolta nei paesi ad alto reddito.
+
+- **"oltre il 40% nei paesi senza infrastrutture"**  
+  FAO SOFA 2019: perdite post-raccolta nei paesi a basso reddito.
+

@@ -135,3 +135,12 @@ Tieni quel paragone in testa — ti servirà.
 - **Blocco 2:** tono di racconto geografico — il fondo dell'oceano come protagonista.
 - **Blocco 3:** tono di vulnerabilità sistemica. Pausa lunga (1 sec) dopo "Cinque settimane."
 - **Blocco 4:** tono di connessione tra infrastruttura e democrazia — dimensione civica.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"95% di tutto il traffico internet mondiale viaggia via cavi sottomarini"**  
+  TeleGeography (2023) — Submarine Cable FAQs. telegeography.com/submarine-cable-faqs. Nota: alcuni rapporti citano 99% per il traffico intercontinentale.
+

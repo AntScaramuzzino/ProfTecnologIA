@@ -124,3 +124,12 @@ Tieni la domanda in testa — ti servirà.
 - **Blocco 2:** tono da romanzo storico — Appert è un protagonista, non solo un nome.
 - **Blocco 3:** tono di paradosso scientifico. Pausa lunga (1 sec) dopo "Non sapeva perché."
 - **Blocco 4:** tono sistematico — dalla storia all'oggi.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"La teoria microbica di Pasteur arriva 50 anni dopo, nel 1864"**  
+  Louis Pasteur, «Mémoire sur la fermentation acétique» (1864). Appert brevettò il metodo nel 1809.
+

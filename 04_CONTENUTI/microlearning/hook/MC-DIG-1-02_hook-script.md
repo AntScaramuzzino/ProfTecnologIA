@@ -124,3 +124,12 @@ Tieni quelle domande in testa — ti serviranno.
 - **Blocco 2:** tono narrativo, racconto del meccanismo.
 - **Blocco 3:** tono di rivelazione numerica. Enfatizzare "Il 2." con pausa lunga dopo.
 - **Blocco 4:** tono positivo — non paura, ma metodo.
+
+
+---
+
+## FONTI E RIFERIMENTI *(CARBLE-CDD criterio C — Correttezza)*
+
+- **"Solo il 2% degli utenti legge un articolo per intero prima di condividerlo"**  
+  Gabielkov M. et al. (2016) — «Social Clicks: What and Who Gets Read on Twitter?», ACM SIGMETRICS 2016. Columbia University & INRIA.
+
