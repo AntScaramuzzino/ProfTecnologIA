@@ -269,6 +269,33 @@ function ReadableText({ value, className = "" }: { value: string; className?: st
           return <ReadableTable key={index} block={block} />;
         }
 
+        // Blocchi codice Arduino/tecnici (@@CODE:)
+        if (block.startsWith("@@CODE:")) {
+          const code = block.replace(/^@@CODE:/, "").trim();
+          return (
+            <pre key={index}>
+              <code>{code}</code>
+            </pre>
+          );
+        }
+
+        // Callout dai blockquote (@@CALLOUT:) — box visivi colorati
+        if (block.startsWith("@@CALLOUT:") || block.includes("\n@@CALLOUT:")) {
+          const text = block.replace(/@@CALLOUT:/g, "").trim();
+          // Rileva tipo dal contenuto per colorazione semantica
+          const isSafety = /⚠️|sicurezza|attenzione|pericolo|non toccare/i.test(text);
+          const isPhysics = /⚡|fisica|legge|formula|ohm|corrente|tensione/i.test(text);
+          const isError   = /errore comune|sbaglio|attenzione:|spesso si sbaglia/i.test(text);
+          const borderColor = isSafety ? "#ef4444" : isPhysics ? "#3b82f6" : isError ? "#eab308" : "#f59e0b";
+          const bgColor     = isSafety ? "#fef2f2" : isPhysics ? "#eff6ff" : isError ? "#fefce8" : "#fffbeb";
+          const textColor   = isSafety ? "#3f0000" : isPhysics ? "#1e3a8a" : isError ? "#3f3000" : "#3f2f05";
+          return (
+            <blockquote key={index} style={{ borderColor, background: bgColor, color: textColor }}>
+              {renderInlineMarkdown(text)}
+            </blockquote>
+          );
+        }
+
         if (block.startsWith("@@SUBHEAD:")) {
           return (
             <h3 key={index} className="mt-7 max-w-3xl text-xl font-black leading-snug text-slate-950 first:mt-0">

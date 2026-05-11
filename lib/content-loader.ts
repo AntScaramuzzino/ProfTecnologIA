@@ -58,7 +58,8 @@ function cleanMarkdownForReading(value: string): string {
     .split("\n")
     .filter((line) => !isEditorialLine(line))
     .join("\n")
-    .replace(/```[\s\S]*?```/g, "")
+    // Preserva blocchi codice come @@CODE: invece di eliminarli
+    .replace(/```(\w*)\n?([\s\S]*?)```/g, "\n@@CODE:$2\n")
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     // ── Rimozione citazioni bibliografiche inline ─────────────────────────
@@ -78,7 +79,8 @@ function cleanMarkdownForReading(value: string): string {
     // ── Pulizia struttura markdown ────────────────────────────────────────
     .replace(/^#{3,6}\s+(.+)$/gm, "\n@@SUBHEAD:$1\n")
     .replace(/^#{1,2}\s+/gm, "")
-    .replace(/^\s*>\s?/gm, "")
+    // Trasforma i blockquote in @@CALLOUT: invece di rimuoverli
+    .replace(/(^|\n)>\s?/g, "$1@@CALLOUT:")
     .replace(/`([^`]+)`/g, "$1")
     .replace(/^\s*[-*]\s+/gm, "• ")
     .replace(/[ \t]+\n/g, "\n")
