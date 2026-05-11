@@ -60,9 +60,6 @@ function cleanMarkdownForReading(value: string): string {
     .join("\n")
     // Preserva blocchi codice come @@CODE:
     .replace(/```(\w*)\n?([\s\S]*?)```/g, "\n@@CODE:$2\n")
-    // Rileva formule: **Label:** espressione → @@FORMULA:label|espressione
-    .replace(/\*\*(Formula|Legge di [^*]+|[A-Z][^*:]{2,25})\s*[:\—–]\*\*\s*([A-Za-z0-9\s=×÷±+\-/^()²³°%,\.]+)/g,
-      "\n@@FORMULA:$1|$2\n")
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     // ── Rimozione citazioni bibliografiche inline ─────────────────────────

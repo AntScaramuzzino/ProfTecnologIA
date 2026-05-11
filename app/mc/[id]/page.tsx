@@ -92,6 +92,7 @@ export default async function MCPage({ params }: Props) {
                 {text.sections.map((section) => {
                   const isInnesca = /innesca/i.test(section.title);
                   const isEsplora = /esplora/i.test(section.title);
+                  const isSperimenta = /sperimenta/i.test(section.title);
                   const domanda   = isInnesca ? mc.hook_audio?.domanda_avvio : null;
                   const hookTitle = mc.hook_audio?.titolo ?? `Hook audio — ${mc.titolo}`;
                   const hookMin   = mc.hook_audio?.durata_min;
@@ -120,7 +121,7 @@ export default async function MCPage({ params }: Props) {
                         </p>
                       )}
 
-                      <ReadableText value={section.body} className="mt-3 sm:mt-4" />
+                      <ReadableText value={section.body} className="mt-3 sm:mt-4" compactOperational={isSperimenta} />
 
                       {/* 3 video flipped classroom — dopo INNESCA, prima di ESPLORA */}
                       {isInnesca && flippedVideos.length > 0 && (
@@ -267,7 +268,15 @@ function AssetBox({ title, body }: { title: string; body: string }) {
   );
 }
 
-function ReadableText({ value, className = "" }: { value: string; className?: string }) {
+function ReadableText({
+  value,
+  className = "",
+  compactOperational = false,
+}: {
+  value: string;
+  className?: string;
+  compactOperational?: boolean;
+}) {
   const blocks = value
     .split(/\n{2,}/)
     .map((block) => block.trim())
@@ -290,19 +299,6 @@ function ReadableText({ value, className = "" }: { value: string; className?: st
           );
         }
 
-        // Formule tecniche (@@FORMULA:label|espressione)
-        if (block.startsWith("@@FORMULA:")) {
-          const parts = block.replace(/^@@FORMULA:/, "").split("|");
-          const [label, formula, note] = parts.map((p) => p.trim());
-          return <FormulaCard key={index} label={label} formula={formula} note={note} />;
-        }
-
-        // Liste procedurali (@@PROCEDURE:passo1||passo2||...)
-        if (block.startsWith("@@PROCEDURE:")) {
-          const steps = block.replace(/^@@PROCEDURE:/, "").split("||").map((s) => s.trim()).filter(Boolean);
-          return <ProcedureList key={index} steps={steps} />;
-        }
-
         // Callout dai blockquote (@@CALLOUT:) — box visivi colorati
         if (block.startsWith("@@CALLOUT:") || block.includes("\n@@CALLOUT:")) {
           const text = block.replace(/@@CALLOUT:/g, "").trim();
@@ -310,9 +306,10 @@ function ReadableText({ value, className = "" }: { value: string; className?: st
           const isSafety = /⚠️|sicurezza|attenzione|pericolo|non toccare/i.test(text);
           const isPhysics = /⚡|fisica|legge|formula|ohm|corrente|tensione/i.test(text);
           const isError   = /errore comune|sbaglio|attenzione:|spesso si sbaglia/i.test(text);
-          const borderColor = isSafety ? "#ef4444" : isPhysics ? "#3b82f6" : isError ? "#eab308" : "#f59e0b";
-          const bgColor     = isSafety ? "#fef2f2" : isPhysics ? "#eff6ff" : isError ? "#fefce8" : "#fffbeb";
-          const textColor   = isSafety ? "#3f0000" : isPhysics ? "#1e3a8a" : isError ? "#3f3000" : "#3f2f05";
+          const isQuestion = /^(\*\*)?domanda aperta/i.test(text);
+          const borderColor = isQuestion ? "#0ea5e9" : isSafety ? "#ef4444" : isPhysics ? "#3b82f6" : isError ? "#eab308" : "#f59e0b";
+          const bgColor     = isQuestion ? "#f0f9ff" : isSafety ? "#fef2f2" : isPhysics ? "#eff6ff" : isError ? "#fefce8" : "#fffbeb";
+          const textColor   = isQuestion ? "#0c4a6e" : isSafety ? "#3f0000" : isPhysics ? "#1e3a8a" : isError ? "#3f3000" : "#3f2f05";
           return (
             <blockquote key={index} style={{ borderColor, background: bgColor, color: textColor }}>
               {renderInlineMarkdown(text)}
@@ -321,14 +318,27 @@ function ReadableText({ value, className = "" }: { value: string; className?: st
         }
 
         if (block.startsWith("@@SUBHEAD:")) {
+          const heading = block.replace(/^@@SUBHEAD:/, "").trim();
+          if (compactOperational && isOperationalTitle(heading)) {
+            return (
+              <h3 key={index} className="operational-heading">
+                {renderInlineMarkdown(heading)}
+              </h3>
+            );
+          }
+
           return (
             <h3 key={index} className="mt-7 max-w-3xl text-xl font-black leading-snug text-slate-950 first:mt-0">
-              {renderInlineMarkdown(block.replace(/^@@SUBHEAD:/, ""))}
+              {renderInlineMarkdown(heading)}
             </h3>
           );
         }
 
         const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
+        if (compactOperational && isOperationalBlock(lines)) {
+          return <OperationalBox key={index} lines={lines} />;
+        }
+
         if (lines.length > 1 && lines.every((line) => line.startsWith("• "))) {
           return (
             <ul key={index} className="mt-4 list-disc space-y-2 pl-6 marker:text-emerald-700">
@@ -345,20 +355,106 @@ function ReadableText({ value, className = "" }: { value: string; className?: st
           );
         }
 
-        return <FormattedParagraph key={index} value={block} />;
+        return <FormattedParagraph key={index} value={block} compactOperational={compactOperational} />;
       })}
     </div>
   );
 }
 
-function FormattedParagraph({ value }: { value: string }) {
-  const titleMatch = value.match(/^([^.\n:]{3,64})([.:])\s+([\s\S]+)$/);
+function OperationalBox({ lines }: { lines: string[] }) {
+  const rawTitle = lines[0]
+    .replace(/\*+/g, "")
+    .replace(/:$/, "")
+    .trim();
+  const rawItems = lines.slice(1);
+  const listLike = rawItems.length > 0 && rawItems.every((line) => /^(•|\d+\.)\s+/.test(line));
+  const items = rawItems.map((line) => line.replace(/^(•|\d+\.)\s+/, "").trim()).filter(Boolean);
 
-  if (titleMatch && shouldPromoteParagraphLead(titleMatch[1])) {
+  return (
+    <section className="operational-box">
+      <h4>{renderInlineMarkdown(rawTitle)}</h4>
+      {items.length > 0 && (
+        listLike ? (
+          <ul>
+            {items.map((item) => (
+              <li key={item}>{renderInlineMarkdown(item)}</li>
+            ))}
+          </ul>
+        ) : (
+          <div className="space-y-1">
+            {items.map((item) => (
+              <p key={item}>{renderInlineMarkdown(item)}</p>
+            ))}
+          </div>
+        )
+      )}
+    </section>
+  );
+}
+
+function PromptBox({ title, body }: { title: string; body: string }) {
+  return (
+    <section className="question-prompt">
+      <h4>{renderInlineMarkdown(title.replace(/:$/, ""))}</h4>
+      {body && <p>{renderInlineMarkdown(body)}</p>}
+    </section>
+  );
+}
+
+function FormattedParagraph({
+  value,
+  compactOperational = false,
+}: {
+  value: string;
+  compactOperational?: boolean;
+}) {
+  const numberedOpenQuestion =
+    value.match(/^\d+\.\s+\*\*(Domanda aperta[^*\n:]*):\*\*\s+([\s\S]+)$/i) ??
+    value.match(/^\d+\.\s+(Domanda aperta[^:\n]{0,80}):\s+([\s\S]+)$/i);
+  if (numberedOpenQuestion) {
+    return <PromptBox title={numberedOpenQuestion[1]} body={numberedOpenQuestion[2]} />;
+  }
+
+  const standaloneOpenQuestion = value.match(/^\*\*(\d+\.\s+Domanda aperta[^*\n]{0,90})\*\*$/i);
+  if (standaloneOpenQuestion) {
+    return (
+      <h3 className="operational-heading">
+        {renderInlineMarkdown(standaloneOpenQuestion[1])}
+      </h3>
+    );
+  }
+
+  const standaloneOperational = value.match(/^\*\*([^*\n:]{3,64}):\*\*$/);
+  if (compactOperational && standaloneOperational && isOperationalTitle(standaloneOperational[1])) {
+    return (
+      <h3 className="operational-heading">
+        {renderInlineMarkdown(standaloneOperational[1])}
+      </h3>
+    );
+  }
+
+  const titleMatch =
+    value.match(/^\*\*([^*\n:]{3,64})([.:])\*\*\s+([\s\S]+)$/) ??
+    value.match(/^([^.\n:]{3,64})([.:])\s+([\s\S]+)$/);
+
+  if (titleMatch) {
     // Rimuove asterischi orfani che si generano quando il bold marker (**Testo:**)
     // viene spezzato dalla regex sul separatore : o .
     const lead = titleMatch[1].replace(/\*+/g, "").trim();
     const rest = titleMatch[3].replace(/^\*+\s*/, "");
+
+    if (compactOperational && isOperationalTitle(lead)) {
+      return <OperationalBox lines={[lead, rest]} />;
+    }
+
+    if (isOpenQuestionTitle(lead)) {
+      return <PromptBox title={lead} body={rest} />;
+    }
+
+    if (!shouldPromoteParagraphLead(titleMatch[1])) {
+      return <p className="whitespace-pre-line">{renderInlineMarkdown(value)}</p>;
+    }
+
     return (
       <p className="whitespace-pre-line">
         <strong className="font-black text-slate-950">{lead}{titleMatch[2]}</strong>{" "}
@@ -368,6 +464,28 @@ function FormattedParagraph({ value }: { value: string }) {
   }
 
   return <p className="whitespace-pre-line">{renderInlineMarkdown(value)}</p>;
+}
+
+function isOperationalBlock(lines: string[]): boolean {
+  if (lines.length < 2) return false;
+  const first = lines[0].replace(/\*+/g, "").replace(/:$/, "").trim();
+  const rest = lines.slice(1);
+  return isOperationalTitle(first) && rest.every((line) => /^(•|\d+\.)\s+/.test(line));
+}
+
+function isOperationalTitle(value: string): boolean {
+  const clean = value.replace(/\*+/g, "").replace(/:$/, "").trim();
+  return /^(materiali(?:\s+che\s+ti\s+servono)?|procedura(?:\s+passo\s+per\s+passo)?|come procedere(?:,\s*passo\s+per\s+passo)?|la procedura|scenario|lo scenario|consegna|la consegna|criteri di valutazione|rubrica di valutazione)$/i.test(clean);
+}
+
+function isFormulaLabel(value: string): boolean {
+  const clean = value.replace(/\*+/g, "").replace(/:$/, "").trim();
+  return /^(formula|legge di\s+.+)$/i.test(clean);
+}
+
+function isOpenQuestionTitle(value: string): boolean {
+  const clean = value.replace(/\*+/g, "").replace(/:$/, "").trim();
+  return /^(\d+\.\s*)?domanda aperta(?:\s+avanzata)?(?:\s+[—-].+)?$/i.test(clean);
 }
 
 function shouldPromoteParagraphLead(value: string): boolean {
