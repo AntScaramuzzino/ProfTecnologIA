@@ -287,7 +287,7 @@ Competenze chiave che inizia a costruire da qui: biologia e chimica di base · a
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -515,7 +515,7 @@ Nella fase conclusiva dell'UDA-2, ogni studente presenterà alla classe un'anali
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la sequenza delle tecnologie (6 tecnologie) va su una doppia pagina con una timeline visiva che mostra "tecnologia antica → tecnologia moderna" per evidenziare la continuità storica.
+- 📖 ESPLORA: la sequenza delle tecnologie (6 tecnologie) va su una doppia pagina con una timeline visiva che mostra "tecnologia antica → tecnologia moderna" per evidenziare la continuità storica.
 - Il box fermentazione (bio-chimica) va come sidebar scientifica con schema della reazione di fermentazione del glucosio.
 - La tabella FCR (indice di conversione alimentare) va come infografica comparativa con icone degli animali.
 - Il caso studio "3 tecnologie in vendita in Italia" va su pagina dedicata con box per ciascun prodotto.

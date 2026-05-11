@@ -221,7 +221,7 @@ Competenze chiave che inizia a costruire da qui: disegno tecnico tridimensionale
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -434,11 +434,11 @@ Conserva tutto il materiale prodotto: brief, sketch, proiezioni ortogonali e ren
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la sezione sul processo progettuale (brief → render → prototipo) va con una linea temporale visiva laterale.
+- 📖 ESPLORA: la sezione sul processo progettuale (brief → render → prototipo) va con una linea temporale visiva laterale.
 - Il confronto tabellare assonometria/prospettiva va in box evidenziato a piena larghezza.
 - I box "Design e Bauhaus" e "Caso studio iPhone" vanno come box di approfondimento con bordo colorato.
 - I grandi designer italiani: tre riquadri affiancati con foto/illustrazione + 3-4 righe descrittive.
-- Zona 4 Avanzato: la rubrica e la consegna del compito sono fotocopiabili — pagina separata.
+- 🔬 SPERIMENTA Avanzato: la rubrica e la consegna del compito sono fotocopiabili — pagina separata.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: poster comparativo — stessa stanza disegnata in assonometria isometrica vs. prospettiva centrale vs. prospettiva accidentale. Formato: PNG 1200×900 + SVG.

@@ -233,7 +233,7 @@ Competenze che inizia a costruire da qui: proiezioni ortogonali · quotatura UNI
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -458,11 +458,11 @@ Conserva il disegno che hai fatto qui: lo utilizzerai nella MC-DIS-2-02 per aggi
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il diagramma delle posizioni delle viste va come infografica a tutta colonna con sfondo colorato tenue.
+- 📖 ESPLORA: il diagramma delle posizioni delle viste va come infografica a tutta colonna con sfondo colorato tenue.
 - La tabella dei tipi di linea va come sidebar con esempi grafici reali delle linee.
 - Il caso studio Apple va come box evidenziato con sfondo scuro.
-- Zona 4: le istruzioni del livello Avanzato includono riferimento al software LibreCAD — aggiungere QR code al sito di download.
-- La rubrica in Zona 5 va su pagina separata (fotocopiabile / scaricabile con QR).
+- 🔬 SPERIMENTA: le istruzioni del livello Avanzato includono riferimento al software LibreCAD — aggiungere QR code al sito di download.
+- La rubrica in 🌍 AGISCI va su pagina separata (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema animato della "scatola che si apre" (metodo di Monge) — cubo trasparente con l'oggetto dentro, piani che si aprono nelle tre viste. Formato PNG 1200×900 + GIF animata per l'app.

@@ -10,7 +10,7 @@
 > **QR CODE AUDIO → "Il cavo che passa sotto l'Atlantico"**
 > 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
 
-**Script della Zona 1 (in assenza del file audio separato):**
+**Script della ⚡ INNESCA (in assenza del file audio separato):**
 
 Quando scrivi un messaggio a qualcuno in America, sai dove va prima di arrivare?
 
@@ -223,7 +223,7 @@ Competenze chiave: protocolli di rete (TCP/IP, BGP, DNS) · crittografia · anal
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
@@ -420,10 +420,10 @@ Questa MC fornisce le basi per capire la MC successiva (MC-COM-3-06): i media di
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 2 pagine con mappa dei cavi sottomarini (da submarinecablemap.com — licenza aperta) come elemento visivo principale nella pagina 1.
+- 📖 ESPLORA: distribuire su 2 pagine con mappa dei cavi sottomarini (da submarinecablemap.com — licenza aperta) come elemento visivo principale nella pagina 1.
 - Il Box Geo-Storia (DARPANET→oggi) su sidebar colorata.
-- La tabella della Zona 4 Intermedio (pro/contro) come scheda fotocopiabile.
-- La scheda Lettera Aperta (Zona 5) come pagina separata con linee per la scrittura.
+- La tabella della 🔬 SPERIMENTA Intermedio (pro/contro) come scheda fotocopiabile.
+- La scheda Lettera Aperta (🌍 AGISCI) come pagina separata con linee per la scrittura.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: mappa dei cavi sottomarini principali (Atlantico + Pacifico + Mediterraneo) con punti di vulnerabilità documentati.

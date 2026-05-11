@@ -28,7 +28,7 @@ Dopo questa MC saprai scegliere la scala giusta per qualsiasi oggetto. E saprai 
 **Domanda di avvio:**
 Stima: a quale scala devi disegnare il tuo astuccio per farlo entrare comodamente in metà foglio A4?
 La tua risposta (prima di leggere): _______
-Alla fine della Zona 2, verifica se avevi ragione.
+Alla fine della 📖 ESPLORA, verifica se avevi ragione.
 
 ---
 
@@ -375,7 +375,7 @@ Competenze chiave che inizia a costruire da qui: scale di rappresentazione · qu
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -455,7 +455,7 @@ Scegli uno degli oggetti sul tuo banco: il tuo libro di Tecnologia, la tua botti
 
 1. Annota le tre misure su un foglio di brutta copia.
 
-2. Scegli la scala usando il metodo descritto in Zona 2: calcola quale denominatore minimo ti serve, poi scegli la scala standard sopra quel valore. Scrivila nel cartiglio.
+2. Scegli la scala usando il metodo descritto in 📖 ESPLORA: calcola quale denominatore minimo ti serve, poi scegli la scala standard sopra quel valore. Scrivila nel cartiglio.
 
 3. Disegna la **pianta** (vista dall'alto): traccia il profilo con linea continua grossa. Se l'oggetto è simmetrico (es. un rettangolo), traccia gli assi di simmetria con la linea mista.
 
@@ -561,7 +561,7 @@ L'arch. Ferrara — che segue il progetto per conto della scuola — ti ha dato 
 
 **Fase 1 — Rilievo (in coppia):** misura lo spazio con il metro a nastro. Rileva: lunghezza e larghezza totali, posizione e larghezza di ogni porta, posizione e larghezza di ogni finestra, eventuali pilastri o nicchie. Annota tutto su un foglio di rilievo (uno schizzo brutto con le misure scritte).
 
-**Fase 2 — Calcolo della scala:** con le misure rilevate, calcola la scala adatta per A4 seguendo il metodo visto in Zona 2. Scrivi il calcolo.
+**Fase 2 — Calcolo della scala:** con le misure rilevate, calcola la scala adatta per A4 seguendo il metodo visto in 📖 ESPLORA. Scrivi il calcolo.
 
 **Fase 3 — Disegno tecnico:** su foglio A4, con strumenti tecnici, disegna la pianta dello spazio rilevato con:
 - Linea continua grossa per muri e contorni
@@ -672,11 +672,11 @@ Il disegno tecnico dell'aula prodotto in questa MC sarà usato nell'UDA interdis
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tavola delle scale (dalla 1:1 alla 1:1000) va come infografica verticale su colonna destra — con un esempio visivo (oggetto → scala → rappresentazione) per ciascuna scala.
+- 📖 ESPLORA: la tavola delle scale (dalla 1:1 alla 1:1000) va come infografica verticale su colonna destra — con un esempio visivo (oggetto → scala → rappresentazione) per ciascuna scala.
 - La tabella dei formati fogli UNI va in evidenza grafica con le dimensioni in mm e una rappresentazione delle proporzioni relative tra formati.
-- Gli esempi di calcolo della scala in Zona 2 (Esempi 1-4) vanno in box colorati separati — ogni esempio è una procedura autonoma da seguire passo-passo.
-- La tabella della rubrica in Zona 5 va su pagina separata come scheda fotocopiabile.
-- Il box ⚠️ Errore comune in Zona 3 va in evidenza grafica (bordo colorato di altro colore rispetto ai box di MAT).
+- Gli esempi di calcolo della scala in 📖 ESPLORA (Esempi 1-4) vanno in box colorati separati — ogni esempio è una procedura autonoma da seguire passo-passo.
+- La tabella della rubrica in 🌍 AGISCI va su pagina separata come scheda fotocopiabile.
+- Il box ⚠️ Errore comune in 🔍 OSSERVA va in evidenza grafica (bordo colorato di altro colore rispetto ai box di MAT).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica verticale delle scale standard con rappresentazione visiva — lo stesso oggetto (es. una porta) disegnato a 1:1, 1:5, 1:10, 1:20, 1:50, 1:100 affiancati con dimensioni annotate. Formato: PNG 800×1400 + SVG.

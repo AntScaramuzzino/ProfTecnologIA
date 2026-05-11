@@ -226,7 +226,7 @@ Competenze chiave che inizia a costruire da qui: biologia vegetale · chimica de
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -347,7 +347,7 @@ Coltiva una piantina (fagiolo, basilico, rucola, germogli di lenticchia — sceg
 - Scrivi due previsioni: cosa ti aspetti di vedere dopo 1 settimana? E dopo 3 settimane?
 
 **Fase 2 — Durante la coltivazione (3 settimane):**
-- Compila la scheda di osservazione (come quella in Zona 4 BASE) ogni 2-3 giorni
+- Compila la scheda di osservazione (come quella in 🔬 SPERIMENTA BASE) ogni 2-3 giorni
 - Scatta una foto ogni 3-4 giorni (o disegna la pianta se non hai uno smartphone)
 - Annota ogni anomalia: la pianta è gialla? Non cresce? Ha foglie mangiate da qualcosa?
 
@@ -452,11 +452,11 @@ Questa MC è il punto di partenza dell'UDA interdisciplinare del secondo anno: *
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il box Scienze (fotosintesi) va come sidebar colorata. Il box impronta idrica va come infografica comparativa (una goccia d'acqua con numeri all'interno per ogni alimento).
+- 📖 ESPLORA: il box Scienze (fotosintesi) va come sidebar colorata. Il box impronta idrica va come infografica comparativa (una goccia d'acqua con numeri all'interno per ogni alimento).
 - Lo schema di rotazione delle colture (4 anni) va come infografica circolare, non come elenco.
 - La tabella comparativa convenzionale/biologico/idroponico va come griglia visiva 3 colonne.
-- Le schede della Zona 4 (BASE e INTERMEDIO) vanno come pagine fotocopiabili separate.
-- La scheda di osservazione della Zona 5 va come pagina separata fotocopiabile/scaricabile con QR.
+- Le schede della 🔬 SPERIMENTA (BASE e INTERMEDIO) vanno come pagine fotocopiabili separate.
+- La scheda di osservazione della 🌍 AGISCI va come pagina separata fotocopiabile/scaricabile con QR.
 
 **Per l'agente generatore asset:**
 - Visual 1: infografica radiale "Il ciclo della pianta" — dal seme al frutto, con etichette delle fasi.

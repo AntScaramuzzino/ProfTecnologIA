@@ -320,7 +320,7 @@ Competenze chiave che inizia a costruire da qui: meccanica strutturale · scienz
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -545,7 +545,7 @@ C'è stato qualcosa che non riuscivi a capire — come funziona una parte della 
 ---
 
 **3. L'errore come risorsa**
-Nel laboratorio (Zona 4), la tua struttura ha ceduto in un punto che non ti aspettavi? Oppure hai cambiato idea su qualcosa mentre costruivi o mentre analizzavi l'edificio reale?
+Nel laboratorio (🔬 SPERIMENTA), la tua struttura ha ceduto in un punto che non ti aspettavi? Oppure hai cambiato idea su qualcosa mentre costruivi o mentre analizzavi l'edificio reale?
 
 *Cosa ti ha fatto capire che avevi sbagliato? Come hai corretto il tiro?*
 
@@ -589,11 +589,11 @@ L'edificio che ti ha colpito di più o che ti ha fatto più domande è spesso il
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il testo sulle quattro forze (compressione, trazione, flessione, taglio) va affiancato da un'infografica con frecce colorate su una trave schematica.
+- 📖 ESPLORA: il testo sulle quattro forze (compressione, trazione, flessione, taglio) va affiancato da un'infografica con frecce colorate su una trave schematica.
 - Il box "Il segreto dell'arco" va messo come sidebar con una foto di un arco romano.
 - La tabella dei materiali isolanti va in un box colorato separato.
-- Le schede di Zona 4 (Intermedio e Avanzato) vanno come schede fotocopiabili separate.
-- La Scheda di Rilievo Strutturale di Zona 5 va come pagina separata (fotocopiabile / scaricabile con QR).
+- Le schede di 🔬 SPERIMENTA (Intermedio e Avanzato) vanno come schede fotocopiabili separate.
+- La Scheda di Rilievo Strutturale di 🌍 AGISCI va come pagina separata (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual 1: sezione esplosa di un edificio a tre piani in c.a. con tutti gli elementi strutturali etichettati (pilastri, travi, solai, fondazioni, tamponamenti).

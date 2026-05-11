@@ -275,7 +275,7 @@ Competenze chiave che inizia a costruire da qui: chimica dei materiali · normat
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -497,10 +497,10 @@ Questa MC completa l'analisi della filiera alimentare avviata in MC-ALI-2-04. Or
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella dei materiali (plastica, vetro, metallo, carta) va come infografica comparativa con icone per ciascun materiale e barre visive per i criteri (riciclabilità, peso, barriera).
+- 📖 ESPLORA: la tabella dei materiali (plastica, vetro, metallo, carta) va come infografica comparativa con icone per ciascun materiale e barre visive per i criteri (riciclabilità, peso, barriera).
 - La tabella dei simboli del packaging va come riquadro estraibile o sidebar di riferimento rapido.
 - La sezione sull'over-packaging va in evidenza con una box fotografica (esempi reali).
-- La scheda dell'audit packaging in Zona 5 va come pagina separata fotocopiabile.
+- La scheda dell'audit packaging in 🌍 AGISCI va come pagina separata fotocopiabile.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica comparativa dei 4 materiali principali di packaging con 5 criteri (protezione, conservazione, peso, riciclabilità, costo).

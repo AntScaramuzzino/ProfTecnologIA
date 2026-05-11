@@ -200,7 +200,7 @@ Competenze chiave che inizia a costruire da qui: analisi della catena del valore
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -392,7 +392,7 @@ Questa MC ti ha dato gli strumenti per leggere un sistema economico locale. MC-S
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella della catena del valore della maglietta va come infografica visuale con frecce orizzontali e barre proporzionali al guadagno per fase.
+- 📖 ESPLORA: la tabella della catena del valore della maglietta va come infografica visuale con frecce orizzontali e barre proporzionali al guadagno per fase.
 - Il confronto tra PIL e BES va come tabella a due colonne con icone per le 12 dimensioni BES.
 - Il ciclo economico va come grafico a onda con le 4 fasi etichettate.
 - Il box STEM Matematica (indice dei prezzi) va come sidebar con formula in evidenza.

@@ -330,7 +330,7 @@ La scelta di PET è razionale per quasi tutti i requisiti, eccetto uno: la soste
 
 ### Il caso: anatomia di una scarpa da ginnastica
 
-Hai già sentito la storia dalla Zona 1: una scarpa da ginnastica contiene tra trenta e quaranta materiali diversi. Adesso analizziamo le scelte di chi l'ha progettata. Non sono scelte casuali — ogni materiale è lì per una ragione precisa, collegata alle sue proprietà.
+Hai già sentito la storia dalla ⚡ INNESCA: una scarpa da ginnastica contiene tra trenta e quaranta materiali diversi. Adesso analizziamo le scelte di chi l'ha progettata. Non sono scelte casuali — ogni materiale è lì per una ragione precisa, collegata alle sue proprietà.
 
 ---
 
@@ -399,7 +399,7 @@ Competenze chiave che inizia a costruire da qui: chimica dei polimeri · analisi
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -679,11 +679,11 @@ L'oggetto che hai trovato più interessante o più sorprendente è spesso il mig
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 2 colonne con l'infografica radiale nella colonna destra. Il testo delle proprietà fisiche, meccaniche e ambientali va nella colonna sinistra.
-- Le tabelle della Zona 4 (Intermedio e Avanzato) vanno in pagina separata o come scheda fotocopiabile allegata.
-- La Scheda Oggetto della Zona 5 va come pagina separata (fotocopiabile / scaricabile con QR).
-- Il riquadro "Errore comune" in Zona 3 va in evidenza grafica (box colorato).
-- I due box STEM (matematica e scienze) in Zona 2 vanno come sidebar laterali.
+- 📖 ESPLORA: distribuire su 2 colonne con l'infografica radiale nella colonna destra. Il testo delle proprietà fisiche, meccaniche e ambientali va nella colonna sinistra.
+- Le tabelle della 🔬 SPERIMENTA (Intermedio e Avanzato) vanno in pagina separata o come scheda fotocopiabile allegata.
+- La Scheda Oggetto della 🌍 AGISCI va come pagina separata (fotocopiabile / scaricabile con QR).
+- Il riquadro "Errore comune" in 🔍 OSSERVA va in evidenza grafica (box colorato).
+- I due box STEM (matematica e scienze) in 📖 ESPLORA vanno come sidebar laterali.
 
 **Per l'agente generatore asset:**
 - Visual richiesto: infografica radiale (6 materiali al centro, 4 tipi di proprietà sui raggi, esempi d'uso ai bordi). Formato: PNG 1200×1200 + SVG.

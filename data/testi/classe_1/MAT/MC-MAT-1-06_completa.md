@@ -396,7 +396,7 @@ Competenze che inizia a costruire da qui: chimica dei polimeri · biologia cellu
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Organizza il tuo lavoro tenendo presente i criteri di valutazione dall'inizio.
 
 ---
@@ -666,11 +666,11 @@ Il prodotto con la claim "bio" più discutibile è spesso quello che genera la r
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella dei 7 tipi di plastica va a tutta larghezza con sfondo colorato per riga (colori chiari diversi per ogni tipo). Fondamentale la colonna "Riciclabile?" con icona chiara (✓/✗/parziale).
+- 📖 ESPLORA: la tabella dei 7 tipi di plastica va a tutta larghezza con sfondo colorato per riga (colori chiari diversi per ogni tipo). Fondamentale la colonna "Riciclabile?" con icona chiara (✓/✗/parziale).
 - Il riquadro greenwashing (⚠️) va in box colorato a tutta larghezza — è un concetto chiave da evidenziare graficamente.
 - Il confronto giacca lana vs. sintetica va come tabella comparativa con colori alternati.
-- Le schede della Zona 4 Intermedio e le schede Zona 5 vanno come pagine fotocopiabili separate.
-- La Zona 4 Avanzato (packaging miele) può essere presentata come "brief di progetto" con intestazione formale.
+- Le schede della 🔬 SPERIMENTA Intermedio e le schede 🌍 AGISCI vanno come pagine fotocopiabili separate.
+- La 🔬 SPERIMENTA Avanzato (packaging miele) può essere presentata come "brief di progetto" con intestazione formale.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica "ciclo di vita di una t-shirt" — cotone convenzionale vs. poliestere riciclato su due colonne, con flusso materia prima → filatura → tintura → uso → fine vita.

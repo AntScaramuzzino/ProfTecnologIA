@@ -376,7 +376,7 @@ Competenze chiave che inizia a costruire da qui: analisi spaziale (GIS) · piani
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -670,10 +670,10 @@ Questa MC è la **Fase 3** dell'UDA interdisciplinare del secondo anno: *"La cas
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il Box Geo-Storia (come nasce una città) va come sidebar colorata a fondo pagina.
+- 📖 ESPLORA: il Box Geo-Storia (come nasce una città) va come sidebar colorata a fondo pagina.
 - La tabella di confronto Bologna vs Los Angeles va in evidenza grafica come infografica comparativa.
 - La tabella dello spazio occupato per passeggero va con icone visive per ogni mezzo di trasporto.
-- Le schede di Zona 4 (Intermedio e Avanzato) e la Scheda di Analisi Urbanistica (Zona 5) vanno come schede fotocopiabili separate.
+- Le schede di 🔬 SPERIMENTA (Intermedio e Avanzato) e la Scheda di Analisi Urbanistica (🌍 AGISCI) vanno come schede fotocopiabili separate.
 
 **Per l'agente generatore asset:**
 - Visual 1: mappa concettuale "la città come sistema" — nodi (abitare, lavorare, muoversi, svagarsi, curarsi) e connessioni (strade, reti, servizi).

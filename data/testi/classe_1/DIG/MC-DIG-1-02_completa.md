@@ -290,7 +290,7 @@ Competenze chiave che inizi a costruire qui: ricerca avanzata · valutazione del
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -583,12 +583,12 @@ La prossima MC digitale di livello Intermedio — **MC-DIG-2-01** — ti mostrer
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: struttura a colonne. Il testo principale va nella colonna sinistra. La checklist SIFT visuale va nella colonna destra come infografica a 4 passi verticali. I box STEM (matematica e scienze) vanno come sidebar laterali.
+- 📖 ESPLORA: struttura a colonne. Il testo principale va nella colonna sinistra. La checklist SIFT visuale va nella colonna destra come infografica a 4 passi verticali. I box STEM (matematica e scienze) vanno come sidebar laterali.
 - Il box SDG 16 va in evidenza grafica con il colore associato all'SDG 16 (blu scuro / pace).
 - Il box INF/DIG (T7 e T8) va come riquadro a colore differenziato rispetto ai box STEM.
 - Il caso studio "banana radioattiva" va come sezione con font leggermente più piccolo o in un box visivamente distinto — è un approfondimento, non il testo principale.
-- Le schede "Fonte" della Zona 5 vanno come pagine separate (fotocopiabili / scaricabili con QR).
-- La tabella di ricerca del Passo 1 (Zona 5) va su una pagina separata.
+- Le schede "Fonte" della 🌍 AGISCI vanno come pagine separate (fotocopiabili / scaricabili con QR).
+- La tabella di ricerca del Passo 1 (🌍 AGISCI) va su una pagina separata.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica SIFT — 4 passaggi verticali (S, I, F, T) con icone e una frase guida per ciascuno. Formato: PNG 800×1200 + SVG.

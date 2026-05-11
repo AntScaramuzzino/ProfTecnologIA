@@ -211,7 +211,7 @@ Competenze chiave che inizia a costruire da qui: fisica delle conversioni energe
 
 ## 🔬 SPERIMENTA — base e intermedio
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
@@ -385,11 +385,11 @@ Se possibile, cerca di raccogliere:
 3. L'orientamento del tetto (bussola o orientamento su mappa)
 4. La posizione geografica (comune) per determinare l'irraggiamento solare
 
-Se non riesci a raccogliere dati reali, usa i dati medi forniti nella Zona 4 Intermedio.
+Se non riesci a raccogliere dati reali, usa i dati medi forniti nella 🔬 SPERIMENTA Intermedio.
 
 **Parte B — Calcoli (individuale o in coppia)**
 
-Segui i passaggi della Zona 4 Intermedio per l'impianto base. Poi segui i passaggi della Zona 4b Avanzato per l'analisi con batteria.
+Segui i passaggi della 🔬 SPERIMENTA Intermedio per l'impianto base. Poi segui i passaggi della Zona 4b Avanzato per l'analisi con batteria.
 
 Produci:
 - Tabella con i calcoli documentati
@@ -416,7 +416,7 @@ Prepara una presentazione di 5 slide (su carta o digitale) per esporre la tua pr
 - Dati della scuola (bollette o dati medi forniti)
 - Google Maps o Bing Maps per misurare la superficie del tetto (funzione "Misura distanze")
 - Calcolatrice
-- Tabella dei fattori tecnici (in Zona 4)
+- Tabella dei fattori tecnici (in 🔬 SPERIMENTA)
 - Questa scheda: fotocopiabile dal libro o scaricabile via QR code
 
 ---
@@ -502,11 +502,11 @@ Il piano energetico che hai progettato si basa su dati e calcoli. Ma in un edifi
 
 **Per l'impaginatore:**
 - Questa MC occupa 6 pagine (3 doppie pagine) essendo livello A.
-- Zona 2 pp. 1-2: distribuire il testo delle fonti su 2 colonne con schemi e immagini nelle colonne laterali. Il box Fisica (potenza vs energia) va come sidebar evidenziata.
-- Zona 3 p. 3: caso studio Samsø va come doppia pagina illustrata con mappa dell'isola e infografica delle fonti usate.
+- 📖 ESPLORA pp. 1-2: distribuire il testo delle fonti su 2 colonne con schemi e immagini nelle colonne laterali. Il box Fisica (potenza vs energia) va come sidebar evidenziata.
+- 🔍 OSSERVA p. 3: caso studio Samsø va come doppia pagina illustrata con mappa dell'isola e infografica delle fonti usate.
 - Zona 4a p. 4: tabella delle rinnovabili e scheda del dimensionamento FV — formato fotocopiabile.
 - Zona 4b p. 5: schema dei calcoli con batteria — formato fotocopiabile con tabelle predisposte.
-- Zona 5 p. 6: compito, rubrica e metacognizione — formato fotocopiabile. La rubrica a 4 criteri va come tabella in evidenza grafica prima del compito.
+- 🌍 AGISCI p. 6: compito, rubrica e metacognizione — formato fotocopiabile. La rubrica a 4 criteri va come tabella in evidenza grafica prima del compito.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: grafico evoluzione mix energetico italiano 2000→2024 con proiezione 2030 (dati GSE/Terna). Formato linee con area colorata per fonte. PNG 1200×800.

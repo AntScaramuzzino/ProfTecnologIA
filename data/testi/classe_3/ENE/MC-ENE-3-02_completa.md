@@ -218,7 +218,7 @@ Competenze chiave che inizia a costruire da qui: analisi dei dati energetici · 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -362,7 +362,7 @@ I tuoi genitori stanno pensando di comprare una nuova automobile. Stanno discute
 
 **Parte A — Calcolo dell'impronta attuale**
 
-Segui i passaggi del livello Intermedio della Zona 4 per calcolare l'impronta carbonica mensile della tua famiglia in tre settori: gas per riscaldamento, elettricità, trasporti in auto.
+Segui i passaggi del livello Intermedio della 🔬 SPERIMENTA per calcolare l'impronta carbonica mensile della tua famiglia in tre settori: gas per riscaldamento, elettricità, trasporti in auto.
 
 Se non hai accesso alle bollette: usa i dati medi italiani forniti nella tabella del laboratorio.
 
@@ -387,7 +387,7 @@ Scrivi 8-10 righe che rispondano alla domanda dei tuoi genitori:
 - Bollette di gas ed elettricità (se disponibili, o usa i dati medi)
 - Dati sui km percorsi in auto ogni mese dalla famiglia
 - Calcolatrice
-- Tabella dei fattori di conversione (fornita nella Zona 4 Intermedio)
+- Tabella dei fattori di conversione (fornita nella 🔬 SPERIMENTA Intermedio)
 - Questa scheda: fotocopiabile dal libro o scaricabile con QR code
 
 ---
@@ -468,10 +468,10 @@ Hai calcolato quanto emettono i combustibili fossili. Nella MC successiva (MC-EN
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la spiegazione della catena di raffinazione del petrolio va con un diagramma di flusso verticale nella colonna destra.
+- 📖 ESPLORA: la spiegazione della catena di raffinazione del petrolio va con un diagramma di flusso verticale nella colonna destra.
 - Il box Chimica (combustione) va evidenziato con sfondo grigio e formula in grassetto.
-- La Zona 4 (Intermedio e Avanzato) va come schede fotocopiabili con tabelle di calcolo.
-- La Zona 5 va come pagina separata con le istruzioni passo-passo e le tabelle di calcolo già predisposte.
+- La 🔬 SPERIMENTA (Intermedio e Avanzato) va come schede fotocopiabili con tabelle di calcolo.
+- La 🌍 AGISCI va come pagina separata con le istruzioni passo-passo e le tabelle di calcolo già predisposte.
 - La sezione "Come arriva la luce in casa tua" può essere visualizzata come infografica lineare a 6 step.
 
 **Per l'agente generatore asset:**

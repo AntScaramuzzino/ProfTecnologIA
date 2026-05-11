@@ -174,7 +174,7 @@ Competenze chiave che inizi a costruire qui: pensiero algoritmico · sequenza lo
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
@@ -234,7 +234,7 @@ FINE
 Parti dall'inizio e vai avanti uno per uno finché trovi "Zucchero" o arrivi alla fine.
 
 **Approccio B — Ricerca binaria:**
-Usa l'algoritmo descritto in Zona 3.
+Usa l'algoritmo descritto in 🔍 OSSERVA.
 
 **Approccio C — Ricerca con indice:**
 La lista è divisa in 26 sezioni, una per ogni lettera. Vai direttamente alla sezione "Z" e cerca lì.
@@ -355,10 +355,10 @@ Hai imparato cos'è un algoritmo e come si scrive. La prossima domanda è: chi e
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- In Zona 2: la tabella delle tre strutture (sequenza/selezione/iterazione) va come infografica visuale a tre colonne con colore area.
-- In Zona 3: il diagramma della ricerca binaria con i valori esempio va come illustrazione a tutta larghezza.
+- In 📖 ESPLORA: la tabella delle tre strutture (sequenza/selezione/iterazione) va come infografica visuale a tre colonne con colore area.
+- In 🔍 OSSERVA: il diagramma della ricerca binaria con i valori esempio va come illustrazione a tutta larghezza.
 - Il box Böhm-Jacopini va come sidebar (non nel testo principale).
-- La tabella della rubrica in Zona 5 può richiedere una pagina separata.
+- La tabella della rubrica in 🌍 AGISCI può richiedere una pagina separata.
 
 **Per l'agente generatore asset:**
 - Visual 1: infografica "Le 3 strutture di controllo" — tre colonne affiancate: Sequenza (blocchi in fila), Selezione (rombo con due rami), Iterazione (ciclo con freccia che torna). Formato PNG 1200×500.

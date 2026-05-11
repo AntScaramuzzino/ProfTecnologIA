@@ -221,7 +221,7 @@ Competenze che inizia a costruire da qui: conoscenza dei dati personali e del GD
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -421,11 +421,11 @@ Nella MC-INF-2-02 (Informatica, 2ª media) studierai come funziona tecnicamente 
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la sezione sui diritti GDPR va come infografica con 6 card (una per diritto), colori diversi per ciascuna.
+- 📖 ESPLORA: la sezione sui diritti GDPR va come infografica con 6 card (una per diritto), colori diversi per ciascuna.
 - La sezione sul tracciamento pubblicitario va come schema a flusso con i 3 attori: utente → sito → rete pubblicitaria.
 - Lo scandalo Cambridge Analytica va come box con sfondo scuro e timeline degli eventi.
 - Il box T8 (IA critica) va come sidebar con icona dedicata.
-- La rubrica in Zona 5 va su pagina separata (fotocopiabile / scaricabile con QR).
+- La rubrica in 🌍 AGISCI va su pagina separata (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: mappa dell'impronta digitale (template compilabile) — categorie di dati, piattaforme, frecce. Formato PNG 1200×900 + versione editabile per l'attività di laboratorio.

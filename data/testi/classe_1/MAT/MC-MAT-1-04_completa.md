@@ -293,7 +293,7 @@ Competenze chiave: ingegneria ambientale · logistica · sistemi IoT · analisi 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -538,10 +538,10 @@ Nella fase conclusiva dell'UDA, risponderai alla domanda: *se l'oggetto che hai 
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la gerarchia delle 5 R si presta a una visualizzazione a piramide rovesciata (la R più importante in cima, la meno preferita in basso) — da usare come visual principale di pagina.
+- 📖 ESPLORA: la gerarchia delle 5 R si presta a una visualizzazione a piramide rovesciata (la R più importante in cima, la meno preferita in basso) — da usare come visual principale di pagina.
 - Il paragrafo sul riciclo della plastica è il più denso — valutare di distribuirlo su colonna più larga o su doppia pagina.
-- La tabella Zona 4 Base (dove butto questo oggetto?) va come scheda fotocopiabile separata con QR code per la versione digitale interattiva.
-- La scheda di osservazione Zona 5 va come pagina separata fotocopiabile.
+- La tabella 🔬 SPERIMENTA Base (dove butto questo oggetto?) va come scheda fotocopiabile separata con QR code per la versione digitale interattiva.
+- La scheda di osservazione 🌍 AGISCI va come pagina separata fotocopiabile.
 
 **Per l'agente generatore asset:**
 - Visual principale: piramide rovesciata a 5 livelli (5 R) con icone per livello e percentuale di efficacia comparata. Stile: pulito, colorato per livello (verde intenso in cima, grigio in fondo).

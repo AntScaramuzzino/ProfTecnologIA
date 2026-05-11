@@ -135,7 +135,7 @@ export default function CreditsPage() {
           <p className="mb-4 text-sm leading-7 text-emerald-900">
             Il progetto ProfTecnologIA utilizza l'intelligenza artificiale come strumento di produzione,
             <strong> non come sostituto della voce dell'autore</strong>. Ogni testo narrativo rivolto agli studenti
-            (Zona 2 — ESPLORA) è scritto e revisionato dal Prof. Ing. Antonio Scaramuzzino.
+            (📖 ESPLORA) è scritto e revisionato dal Prof. Ing. Antonio Scaramuzzino.
             Gli agenti AI operano su strutture, asset e metadati, lasciando al giudizio umano
             la qualità linguistica e la coerenza didattica.
           </p>

@@ -317,7 +317,7 @@ Competenze chiave che inizia a costruire da qui: legge di Ohm · circuiti digita
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
@@ -561,7 +561,7 @@ Questa MC è parte dell'UDA interdisciplinare del terzo anno. Il sistema di moni
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: i box "Box sicurezza" vanno in evidenza grafica rossa con bordo e icona ⚠️. Sono obbligatori per le norme di sicurezza in laboratorio.
+- 📖 ESPLORA: i box "Box sicurezza" vanno in evidenza grafica rossa con bordo e icona ⚠️. Sono obbligatori per le norme di sicurezza in laboratorio.
 - Il box "Corrente alternata vs continua" va come sidebar laterale a colore distinto.
 - I calcoli numerici vanno in font monospazio o box a sfondo grigio chiaro — devono essere chiaramente distinti dal testo narrativo.
 - Schema comparativo serie/parallelo: visual obbligatorio con frecce di corrente, valori numerici colorati per ramo.

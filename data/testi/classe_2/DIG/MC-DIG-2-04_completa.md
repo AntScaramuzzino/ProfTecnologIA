@@ -279,7 +279,7 @@ Livello di domanda nel 2030 in Europa: critico (carenza stimata di 3,5 milioni d
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 > **Nota di sicurezza:** nessuna attività di questo laboratorio richiede di inserire password reali o dati personali. Se un'attività chiede di controllare le password, usa password inventate come esempi. Non usare mai password reali durante un'attività scolastica.
@@ -510,11 +510,11 @@ La sicurezza digitale è una componente infrastrutturale della città del futuro
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il box "Test rapido" va in evidenza grafica (riquadro colorato con sfondo diverso).
+- 📖 ESPLORA: il box "Test rapido" va in evidenza grafica (riquadro colorato con sfondo diverso).
 - Il box T8 (IA e sicurezza) va come riquadro a larghezza piena, con icona AI in evidenza — elemento visivo riconoscibile per distinguerlo dai box informativi standard.
 - La tabella "tempo per rompere una password" va in formato infografica orizzontale con barra di lunghezza proporzionale al tempo.
-- I messaggi simulati della Zona 4 Base vanno in formato "screenshot simulato" — stile bolla di messaggio o finestra email, non testo normale.
-- La Zona 4 Avanzato contiene la "domanda aperta" sul backdoor: va in evidenza come "per chi vuole andare oltre".
+- I messaggi simulati della 🔬 SPERIMENTA Base vanno in formato "screenshot simulato" — stile bolla di messaggio o finestra email, non testo normale.
+- La 🔬 SPERIMENTA Avanzato contiene la "domanda aperta" sul backdoor: va in evidenza come "per chi vuole andare oltre".
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica "Anatomia di un'email di phishing" — email simulata annotata con frecce e spiegazioni dei 7 segnali.

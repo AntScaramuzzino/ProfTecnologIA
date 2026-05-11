@@ -10,7 +10,7 @@
 > **QR CODE AUDIO → "I 200 millisecondi più costosi del mondo"**
 > 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
 
-**Script della Zona 1 (in assenza del file audio separato):**
+**Script della ⚡ INNESCA (in assenza del file audio separato):**
 
 Stai aprendo una pagina web. Non una pagina speciale — qualsiasi pagina con pubblicità.
 
@@ -280,7 +280,7 @@ Competenze chiave: analisi dei social network (SNA — Social Network Analysis) 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -488,10 +488,10 @@ Il compito di realtà (articolo per *Il Bullone*) contribuisce anche alla valuta
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 4 pagine (struttura ampliata livello A). Il Box T8 sui deepfake come box colorato su sfondo arancione chiaro (warning).
+- 📖 ESPLORA: distribuire su 4 pagine (struttura ampliata livello A). Il Box T8 sui deepfake come box colorato su sfondo arancione chiaro (warning).
 - Il caso studio #MacronLeaks come testo in box separato con titolo e bordo.
-- La tabella della Zona 4 Base come scheda fotocopiabile.
-- L'articolo de *Il Bullone* (Zona 5) come pagina separata con layout simulato di giornale scolastico.
+- La tabella della 🔬 SPERIMENTA Base come scheda fotocopiabile.
+- L'articolo de *Il Bullone* (🌍 AGISCI) come pagina separata con layout simulato di giornale scolastico.
 - I box STEM (Matematica e Geo-Storia) come sidebar laterali.
 
 **Per l'agente generatore asset:**

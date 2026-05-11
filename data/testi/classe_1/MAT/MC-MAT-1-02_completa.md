@@ -250,7 +250,7 @@ Competenze chiave che inizia a costruire da questa MC: analisi del ciclo di vita
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -555,11 +555,11 @@ Conserva la tua scheda — ti servirà.
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: testo principale a colonna intera, con le box STEM e curiosità come sidebar laterali. La struttura a 7 fasi si presta a una numerazione visiva a cerchi (1-7) lungo il margine della pagina.
+- 📖 ESPLORA: testo principale a colonna intera, con le box STEM e curiosità come sidebar laterali. La struttura a 7 fasi si presta a una numerazione visiva a cerchi (1-7) lungo il margine della pagina.
 - L'infografica circolare del ciclo tecnologico (frecce colorate, attori per fase) va in pagina doppia separata o come fold-out.
-- La tabella di Zona 4 Intermedio (Passaporto Tecnologico) va come pagina separata fotocopiabile.
-- La tabella di Zona 4 Avanzato (confronto ciclo di vita) va come scheda separata.
-- La scheda Zona 5 (Passaporto Tecnologico studente) va come pagina separata fotocopiabile con QR code.
+- La tabella di 🔬 SPERIMENTA Intermedio (Passaporto Tecnologico) va come pagina separata fotocopiabile.
+- La tabella di 🔬 SPERIMENTA Avanzato (confronto ciclo di vita) va come scheda separata.
+- La scheda 🌍 AGISCI (Passaporto Tecnologico studente) va come pagina separata fotocopiabile con QR code.
 
 **Per l'agente generatore asset:**
 - Visual principale: infografica circolare a 7 frecce, una per fase, con icone attori e bolle impatto per segmento. Formato: PNG 1200×900 + SVG.

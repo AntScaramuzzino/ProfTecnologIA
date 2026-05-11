@@ -261,7 +261,7 @@ Competenze chiave che inizia a costruire da qui: comprensione dei sistemi di con
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -324,7 +324,7 @@ Dopo aver completato la tabella, rispondi: c'è uno di questi sistemi che, secon
 
 **Obiettivo:** progettare la logica di controllo di un sistema domotico complesso usando un diagramma di flusso, e simularne il comportamento su casi reali.
 
-**Scenario:** il sistema domotico della casa di Carmelo (presentato nella Zona 3) deve essere programmato. Hai deciso di costruire la logica per il **sistema di sicurezza notturna** (luci nel corridoio).
+**Scenario:** il sistema domotico della casa di Carmelo (presentato nella 🔍 OSSERVA) deve essere programmato. Hai deciso di costruire la logica per il **sistema di sicurezza notturna** (luci nel corridoio).
 
 **Fase 1 — Analisi dei requisiti**
 
@@ -483,10 +483,10 @@ Questa MC fa parte dell'UDA interdisciplinare del terzo anno *"Tecnologie per l'
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: sezione lunga — distribuire su doppio spread (4 pagine). Il Box T8 va come sidebar colorata su sfondo grigio chiaro.
+- 📖 ESPLORA: sezione lunga — distribuire su doppio spread (4 pagine). Il Box T8 va come sidebar colorata su sfondo grigio chiaro.
 - Il caso studio Lamborghini può avere un'apertura con foto dello stabilimento (Creative Commons).
-- Le tabelle della Zona 4 (Intermedio e Avanzato) come schede fotocopiabili allegate.
-- La Scheda Compito di Realtà (Zona 5) come pagina separata con linee per la scrittura.
+- Le tabelle della 🔬 SPERIMENTA (Intermedio e Avanzato) come schede fotocopiabili allegate.
+- La Scheda Compito di Realtà (🌍 AGISCI) come pagina separata con linee per la scrittura.
 - I box STEM (Matematica e Geo-Storia) come sidebar laterali.
 
 **Per l'agente generatore asset:**

@@ -163,7 +163,7 @@ Competenze chiave che inizia a costruire da qui: analisi critica dei dati · vis
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -361,10 +361,10 @@ I dati che hai analizzato in questa MC sono esattamente il carburante dei sistem
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 2 colonne. I box "correlazione vs causalità" e "T8 — IA e dati IoT" vanno come sidebar con colore di sfondo diverso.
+- 📖 ESPLORA: distribuire su 2 colonne. I box "correlazione vs causalità" e "T8 — IA e dati IoT" vanno come sidebar con colore di sfondo diverso.
 - La tabella "tipi di grafico" va come infografica visuale con esempi mini-grafico per ogni tipo.
 - Le due note STEM e il collegamento MC-DIG-1-02 vanno come riquadri laterali.
-- La rubrica di Zona 5 va su pagina separata o come scheda fotocopiabile.
+- La rubrica di 🌍 AGISCI va su pagina separata o come scheda fotocopiabile.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema "dato grezzo → contesto → informazione" con esempio pratico (temperatura 21.3°C → quando, dove, confronto).

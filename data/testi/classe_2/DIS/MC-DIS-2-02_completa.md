@@ -207,7 +207,7 @@ Competenze che inizia a costruire da qui: assonometria manuale · software 3D (T
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -414,10 +414,10 @@ Conserva i disegni di questa MC come punto di riferimento: nella progettazione, 
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella di confronto cavaliera/isometrica va come infografica comparativa con esempi grafici del cubo in entrambe le assonometrie.
+- 📖 ESPLORA: la tabella di confronto cavaliera/isometrica va come infografica comparativa con esempi grafici del cubo in entrambe le assonometrie.
 - Il box storia su Dürer va come sidebar con un'incisione (dominio pubblico) di riferimento.
 - Il caso studio IKEA va come box evidenziato.
-- Zona 4 livello Intermedio: i due disegni affiancati richiedono spazio — va su pagina a parte.
+- 🔬 SPERIMENTA livello Intermedio: i due disegni affiancati richiedono spazio — va su pagina a parte.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: confronto cavaliera/isometrica — stesso cubo 60×60×60 mm disegnato nei due sistemi, con assi annotati e misure. PNG 1200×600.

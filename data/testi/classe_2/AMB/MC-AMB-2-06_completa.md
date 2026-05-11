@@ -191,7 +191,7 @@ Competenze chiave che inizia a costruire da qui: analisi dati (fogli di calcolo 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -465,17 +465,17 @@ Questa MC ti ha dato la visione urbanistica e politica delle smart city: cosa si
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la sezione sui sensori urbani va formattata con icone per ogni tipo di sensore (piccole icone illustrative a bordo paragrafo).
+- 📖 ESPLORA: la sezione sui sensori urbani va formattata con icone per ogni tipo di sensore (piccole icone illustrative a bordo paragrafo).
 - Il box "Il paradosso della smart city" (Copenhagen) va in evidenza grafica — è uno dei messaggi centrali della MC.
 - Il box "Collegamento STEM — Geografia" va come sidebar nella sezione caso studio Milano.
-- Le attività della Zona 4 (Intermedio e Avanzato) vanno su pagine separate come schede di lavoro.
-- Il progetto della Zona 5 va come documento separato da 2 pagine (fotocopiabile / scaricabile con QR).
+- Le attività della 🔬 SPERIMENTA (Intermedio e Avanzato) vanno su pagine separate come schede di lavoro.
+- Il progetto della 🌍 AGISCI va come documento separato da 2 pagine (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: mappa concettuale smart city — al centro "dati", ai vertici: traffico, rifiuti, aria, illuminazione, partecipazione, mobilità — con frecce bidirezionali verso "servizi ai cittadini" e verso "rischi/privacy".
 - Visual richiesto 2: confronto infografico tra Copenhagen (% bici, % auto, emissioni) e una media europea — stile "due città a confronto".
 - Visual richiesto 3: schema del ciclo di open data — raccolta → elaborazione → pubblicazione → uso civico → feedback → politiche pubbliche.
-- Hook audio: script podcast disponibile in Zona 1 di questo file.
+- Hook audio: script podcast disponibile in ⚡ INNESCA di questo file.
 
 ---
 

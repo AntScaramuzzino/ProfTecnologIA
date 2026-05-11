@@ -239,7 +239,7 @@ Un quiz "normale" mostra le stesse domande a tutti nello stesso ordine. Un quiz 
 
 Questo è esattamente il tipo di quiz che le piattaforme educative professionali (Duolingo, Khan Academy) usano per personalizzare l'apprendimento. Il principio algoritmico è quello che hai già visto: selezione basata sul valore di variabili, liste di domande organizzate per livello, broadcast tra script diversi.
 
-La versione avanzata della tua attività (Livello Avanzato in Zona 4) ti chiede di costruire esattamente questo.
+La versione avanzata della tua attività (Livello Avanzato in 🔬 SPERIMENTA) ti chiede di costruire esattamente questo.
 
 ---
 
@@ -266,7 +266,7 @@ Competenze che inizia a costruire da qui: pensiero computazionale · strutture d
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -297,7 +297,7 @@ Uno sprite (il gatto di default va bene) che:
 
 **Obiettivo:** costruire il quiz completo descritto nel Passo Guidato della Zona 2 — 5 domande, punteggio, feedback, schermata finale.
 
-**Segui i 6 passi guidati della Zona 2**, adattando le domande al tema che preferisci (alimentazione, materiali, città, un argomento di storia o scienze).
+**Segui i 6 passi guidati della 📖 ESPLORA**, adattando le domande al tema che preferisci (alimentazione, materiali, città, un argomento di storia o scienze).
 
 **Requisiti minimi:**
 - Almeno 5 domande in una lista.
@@ -453,7 +453,7 @@ Il quiz che hai costruito raccoglie un tipo di dato: la risposta dell'utente. Ne
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella delle categorie di Scratch va come infografica colorata con i colori reali delle categorie.
+- 📖 ESPLORA: la tabella delle categorie di Scratch va come infografica colorata con i colori reali delle categorie.
 - Il caso studio YouTube va come box con sfondo scuro.
 - Il diagramma del progetto guidato (6 passi) va come flowchart verticale nella colonna destra.
 - Il box storia su Grace Hopper va come sidebar con foto (dominio pubblico — disponibile dalla US Navy).

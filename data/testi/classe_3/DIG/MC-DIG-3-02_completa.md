@@ -223,13 +223,13 @@ Competenze chiave che inizia a costruire da qui: pensiero critico sui dati · co
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
 ### ● BASE — Identifico applicazioni IA nella vita quotidiana con guida
 
-**Obiettivo:** identificare e classificare 5 applicazioni di IA presenti nella vita quotidiana, usando il vocabolario tecnico introdotto in Zona 2.
+**Obiettivo:** identificare e classificare 5 applicazioni di IA presenti nella vita quotidiana, usando il vocabolario tecnico introdotto in 📖 ESPLORA.
 
 **Elenco applicazioni da cui scegliere 5:**
 Spotify (raccomandazione musicale), Google Maps (previsione tempi di percorrenza), Instagram/TikTok (ordinamento del feed), Gmail (filtro spam), autocomplete della tastiera dello smartphone, Face ID dello smartphone, Google Translate, Siri/Assistente Google, un sistema di riconoscimento facciale nei negozi, il sistema di raccomandazione di Netflix.
@@ -251,7 +251,7 @@ Usa questa tabella (compilala con frasi brevi, non serve scrivere paragrafi):
 
 ### ●● INTERMEDIO — Analisi critica di un caso di bias algoritmico
 
-**Scenario:** leggi il riassunto del caso COMPAS (descritto in Zona 2). Poi risponde alle domande seguendo l'ordine.
+**Scenario:** leggi il riassunto del caso COMPAS (descritto in 📖 ESPLORA). Poi risponde alle domande seguendo l'ordine.
 
 **1. Descrizione del sistema:**
 COMPAS è un sistema di machine learning usato in alcuni tribunali americani per stimare la probabilità che un imputato commetta un nuovo reato (recidiva). Il punteggio viene usato come input nelle decisioni di libertà vigilata e condanna.
@@ -316,7 +316,7 @@ ProPublica ha analizzato 7.000 casi in Florida (2016) e trovato che il sistema c
 - 2 domande su fatti meno noti (es. "Quanti soldati italiani morirono nella Prima Guerra Mondiale?")
 - 1 domanda su un argomento di nicchia che conosci bene
 
-**Fase 3 — Verifica sistematica:** per ogni risposta, verifica ogni affermazione fattuale. Usa almeno due fonti indipendenti. Compila la tabella di verifica (come in Zona 3).
+**Fase 3 — Verifica sistematica:** per ogni risposta, verifica ogni affermazione fattuale. Usa almeno due fonti indipendenti. Compila la tabella di verifica (come in 🔍 OSSERVA).
 
 **Fase 4 — Test di allucinazione deliberata:** poni una domanda su un evento o una persona immaginaria che suona plausibile (es. "Qual è stato il contributo dello scienziato italiano Marco Bertoni alla teoria della relatività?"). Osserva cosa fa il sistema.
 
@@ -462,7 +462,7 @@ Argomenta la tua posizione in 4-5 righe con riferimento ad almeno un esempio con
 
 ### 🔗 Collegamento con UDA-3 — "Scuola Smart" e con MC-INF-3-02
 
-Il sistema di raccomandazione della biblioteca che hai progettato in Zona 4 Avanzato è un caso di studio diretto per MC-INF-3-02 (machine learning: come le macchine imparano dai dati). In quella MC svilupperai la parte tecnica del modello — addestramento su dataset reale, valutazione delle metriche, analisi delle prestazioni per sottogruppi.
+Il sistema di raccomandazione della biblioteca che hai progettato in 🔬 SPERIMENTA Avanzato è un caso di studio diretto per MC-INF-3-02 (machine learning: come le macchine imparano dai dati). In quella MC svilupperai la parte tecnica del modello — addestramento su dataset reale, valutazione delle metriche, analisi delle prestazioni per sottogruppi.
 
 L'analisi etica che hai prodotto in questa MC è il complemento necessario alla competenza tecnica di INF-3-02: costruire bene un sistema IA senza capire le sue implicazioni produce strumenti potenti ma potenzialmente dannosi. Costruire bene e pensare criticamente produce tecnologia responsabile.
 
@@ -485,11 +485,11 @@ L'analisi etica che hai prodotto in questa MC è il complemento necessario alla 
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la storia dell'IA va come timeline visiva orizzontale (1950-2024) con 6 nodi principali.
+- 📖 ESPLORA: la storia dell'IA va come timeline visiva orizzontale (1950-2024) con 6 nodi principali.
 - Il confronto supervised/unsupervised/reinforcement learning va in tabella a tre colonne con esempio per ognuno.
 - Il Box T8 (IA critica, 4 regole) va come box prominente con bordo colorato — è obbligatorio in tutte le MC DIG livello A.
 - Il caso Gender Shades e il caso COMPAS vanno come due riquadri affiancati "Caso reale".
-- Zona 4b e Zona 5: le schede di analisi app sono fotocopiabili — pagine separate.
+- Zona 4b e 🌍 AGISCI: le schede di analisi app sono fotocopiabili — pagine separate.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: mappa delle applicazioni IA quotidiane (classificate per tipo: raccomandazione, riconoscimento, generazione, predizione) con esempi concreti per categoria.

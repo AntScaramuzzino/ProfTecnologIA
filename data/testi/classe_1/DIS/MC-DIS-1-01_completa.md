@@ -432,7 +432,7 @@ Competenze chiave che inizia a costruire da qui: geometria euclidea · norme UNI
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -453,7 +453,7 @@ Il foglio è già diviso in due zone. Nella zona A (metà sinistra) esegui la Co
 
 Sul tuo foglio, il docente ha già tracciato (o tu devi tracciare) una retta r orizzontale e un punto P su di essa, a circa 2/3 dal bordo sinistro.
 
-Segui i passi della Costruzione 1 esattamente come descritta in Zona 2. Dopo ogni passo, metti un segno di spunta sul tuo foglio accanto al numero del passo.
+Segui i passi della Costruzione 1 esattamente come descritta in 📖 ESPLORA. Dopo ogni passo, metti un segno di spunta sul tuo foglio accanto al numero del passo.
 
 Quando hai finito, verifica con la squadra: metti il lato corto della squadra a 45° lungo la retta r, fai scorrere il lato lungo fino a toccare la linea che hai tracciato. I due lati della squadra formano 90°? La tua perpendicolare è corretta.
 
@@ -501,7 +501,7 @@ Esegui la Costruzione 6 (esagono regolare). Usa le linee miste per gli assi di s
 Misura i sei lati con il righello: devono essere tutti 4 cm ± 1 mm (uguali al raggio).
 
 **Domanda di riflessione (da scrivere sul foglio):**
-Perché il lato dell'esagono regolare è uguale al raggio della circonferenza? Spiega con parole tue — senza copiare dalla Zona 2. Se non ti ricordi, rileggi la spiegazione e poi scrivi la tua versione.
+Perché il lato dell'esagono regolare è uguale al raggio della circonferenza? Spiega con parole tue — senza copiare dalla 📖 ESPLORA. Se non ti ricordi, rileggi la spiegazione e poi scrivi la tua versione.
 
 ---
 
@@ -684,10 +684,10 @@ La pianta dell'aula che hai disegnato in questa MC sarà il punto di partenza pe
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: le costruzioni geometriche (sezioni Costruzione 1–8) vanno su pagine separate, ciascuna con uno spazio vuoto accanto ai passi per permettere allo studente di eseguire la costruzione sul libro stesso (opzione libri interattivi) o come guida per il foglio separato.
+- 📖 ESPLORA: le costruzioni geometriche (sezioni Costruzione 1–8) vanno su pagine separate, ciascuna con uno spazio vuoto accanto ai passi per permettere allo studente di eseguire la costruzione sul libro stesso (opzione libri interattivi) o come guida per il foglio separato.
 - Il box STEM Matematica va come sidebar laterale destra nella pagina delle costruzioni.
 - Il box STEM Storia e Arte va come sidebar nella pagina del caso studio (arco romano).
-- La tabella della rubrica in Zona 5 va su pagina separata come scheda fotocopiabile.
+- La tabella della rubrica in 🌍 AGISCI va su pagina separata come scheda fotocopiabile.
 - Il box ⚠️ Sicurezza va in evidenza grafica (bordo colorato).
 
 **Per l'agente generatore asset:**

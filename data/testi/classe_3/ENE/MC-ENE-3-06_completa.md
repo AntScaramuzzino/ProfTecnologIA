@@ -216,7 +216,7 @@ Competenze chiave che inizia a costruire da qui: chimica delle celle · calcolo 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
@@ -452,10 +452,10 @@ Se hai conservato i dati delle MC precedenti, hai già molto del materiale di cu
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Questa MC è al livello Advanced: 6 pagine. La Zona 2 occupa 3 pagine, la Zona 4 e 5 2 pagine ciascuna.
+- Questa MC è al livello Advanced: 6 pagine. La 📖 ESPLORA occupa 3 pagine, la 🔬 SPERIMENTA e 5 2 pagine ciascuna.
 - Il box "Dati" (calo costi batterie litio) va in evidenza grafica con grande numero "97%" come elemento visivo dominante.
 - La tabella di confronto tra sistemi di accumulo (sezione laboratorio) va su foglio largo con colori.
-- La Zona 5 (compito di realtà) ha una rubrica a 4 livelli anziché 3 — prevedere una colonna aggiuntiva nella tabella.
+- La 🌍 AGISCI (compito di realtà) ha una rubrica a 4 livelli anziché 3 — prevedere una colonna aggiuntiva nella tabella.
 
 **Per l'agente generatore asset:**
 - Visual 1: infografica "Curva di apprendimento delle batterie litio" — asse x: anni dal 1991 al 2024; asse y: costo in $/kWh (scala logaritmica). Mostrare chiaramente il calo da 3.000 a 90 $/kWh.

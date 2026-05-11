@@ -263,7 +263,7 @@ Competenze chiave che inizia a costruire da qui: analisi dei dati di mobilità �
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -396,7 +396,7 @@ Il tuo compito è raccogliere i dati, analizzarli, e proporre un piano realistic
 
 - Browser per Google Moduli (gratuito) o fogli di carta per il sondaggio
 - Google Fogli o Excel per i calcoli (gratuiti)
-- I fattori di emissione per mezzo di trasporto (forniti in Zona 4 Base)
+- I fattori di emissione per mezzo di trasporto (forniti in 🔬 SPERIMENTA Base)
 - Nessun costo aggiuntivo
 
 > **Suggerimento:** il sondaggio funziona meglio se è breve — massimo 5 domande. Se ci vuole più di 2 minuti per compilarlo, molti compagni lo abbandonano a metà. Testa il sondaggio su te stesso prima di distribuirlo: cronometra quanto ci vuole.
@@ -492,10 +492,10 @@ Il progetto UDA risponde alla domanda: *"Se questa scuola fosse una città, quan
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 3 pagine. La tabella comparativa dei sistemi di trasporto va in evidenza grafica centrale. Il Box Geo sulle catene di approvvigionamento va come riquadro laterale con una mappa stilizzata delle rotte.
+- 📖 ESPLORA: distribuire su 3 pagine. La tabella comparativa dei sistemi di trasporto va in evidenza grafica centrale. Il Box Geo sulle catene di approvvigionamento va come riquadro laterale con una mappa stilizzata delle rotte.
 - La tabella mobilità urbana (m² per passeggero) va come infografica visiva comparativa.
 - La tabella treno vs aereo su tratte italiane va come scheda comparativa evidenziata.
-- Le tabelle della Zona 4 vanno come schede fotocopiabili.
+- Le tabelle della 🔬 SPERIMENTA vanno come schede fotocopiabili.
 
 **Per l'agente generatore asset:**
 - Visual richiesto: grafico a bolle — X = velocità, Y = emissioni g CO₂/passeggero-km, dimensione bolla = costo medio per 100 km. Include auto, bus, treno AV, aereo, bici, nave. Formato: PNG 1200×800 + SVG.

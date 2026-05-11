@@ -264,7 +264,7 @@ Competenze chiave che inizia a costruire da qui: logistica · gestione dei dati 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -498,10 +498,10 @@ La scheda filiera che hai compilato è il documento di partenza. Nelle MC succes
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la sequenza degli attori va rappresentata come diagramma a frecce verticale (campo → trasformatore → distributore → dettagliante → consumatore) nella colonna destra. Il testo va a sinistra.
+- 📖 ESPLORA: la sequenza degli attori va rappresentata come diagramma a frecce verticale (campo → trasformatore → distributore → dettagliante → consumatore) nella colonna destra. Il testo va a sinistra.
 - Il box geo-storia (commercio delle spezie) va in evidenza grafica a colori nella pagina 3.
 - Il caso studio della banana va su pagina separata, con una linea del tempo orizzontale che illustra il viaggio.
-- La tabella del compito di realtà in Zona 5 va come scheda fotocopiabile.
+- La tabella del compito di realtà in 🌍 AGISCI va come scheda fotocopiabile.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: diagramma della filiera alimentare — 5 attori con icone, frecce, percentuali di valore aggiunto per ciascuno.

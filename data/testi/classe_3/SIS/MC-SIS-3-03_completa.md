@@ -197,7 +197,7 @@ Competenze chiave che inizia a costruire da qui: Business Model Canvas · metodo
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -206,11 +206,11 @@ Competenze chiave che inizia a costruire da qui: Business Model Canvas · metodo
 
 **Obiettivo:** familiarizzare con i 9 blocchi del BMC applicandoli a un caso già studiato.
 
-**Materiali:** questa scheda, accesso alla storia della startup presentata in Zona 3 (o di un'altra startup italiana a tua scelta).
+**Materiali:** questa scheda, accesso alla storia della startup presentata in 🔍 OSSERVA (o di un'altra startup italiana a tua scelta).
 
 **Procedura:**
 
-1. Scegli la startup presentata in Zona 3 (o cercane una italiana: Satispay, Cortilia, Soplaya, TOBii).
+1. Scegli la startup presentata in 🔍 OSSERVA (o cercane una italiana: Satispay, Cortilia, Soplaya, TOBii).
 
 2. Usando le informazioni disponibili online (sito web, profilo LinkedIn, articoli di stampa), completa il Business Model Canvas semplificato qui sotto con le informazioni che riesci a trovare. Lascia vuoti i blocchi di cui non riesci a trovare informazioni.
 

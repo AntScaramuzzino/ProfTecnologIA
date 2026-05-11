@@ -228,7 +228,7 @@ Competenze chiave che inizia a costruire da qui: fisica del calore · materiali 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -256,7 +256,7 @@ Competenze chiave che inizia a costruire da qui: fisica del calore · materiali 
 | Ci sono alberi che fanno ombra? Su quale lato? | |
 | Il tetto ha un colore chiaro o scuro? | |
 
-4. Basandoti su quello che hai imparato in Zona 2: la tua scuola sfrutta bene l'orientamento solare o no? Scrivi 3-4 righe con la tua valutazione.
+4. Basandoti su quello che hai imparato in 📖 ESPLORA: la tua scuola sfrutta bene l'orientamento solare o no? Scrivi 3-4 righe con la tua valutazione.
 
 > 💡 **Se non riesci a uscire:** usa Google Maps in modalità satellite. Ruota la mappa per trovare il nord. Poi guarda l'edificio della tua scuola dall'alto e stima l'orientamento delle facciate.
 
@@ -509,17 +509,17 @@ L'analisi bioclimatica che hai fatto in questa MC è il prerequisito naturale pe
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella dei valori U va in un box laterale evidenziato. Il testo principale scorre a piena colonna.
+- 📖 ESPLORA: la tabella dei valori U va in un box laterale evidenziato. Il testo principale scorre a piena colonna.
 - Il box "Collegamento STEM — Geometria" (angolo solare) va come sidebar con schema grafico del sole in estate/inverno.
 - Il box "Collegamento STEM — Scienze" (evapotraspirazione) va come sidebar sul lato della sezione tetti verdi.
-- Le tabelle della Zona 4 (Intermedio e Avanzato) vanno su pagine separate come schede fotocopiabili.
-- La Scheda Analisi Bioclimatica della Zona 5 va come pagina separata (fotocopiabile / scaricabile con QR).
+- Le tabelle della 🔬 SPERIMENTA (Intermedio e Avanzato) vanno su pagine separate come schede fotocopiabili.
+- La Scheda Analisi Bioclimatica della 🌍 AGISCI va come pagina separata (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema edificio in sezione con frecce che mostrano: irraggiamento solare invernale (basso, entra) vs. estivo (alto, bloccato dall'aggetto), effetto camino, massa termica del muro.
 - Visual richiesto 2: tabella comparativa 5 materiali × 3 parametri (U, massa termica, impatto CO₂).
 - Visual richiesto 3: mappa concettuale bioclimatica — sole → orientamento → massa termica → isolamento → ventilazione → certificazione.
-- Hook audio: script podcast disponibile in Zona 1 di questo file.
+- Hook audio: script podcast disponibile in ⚡ INNESCA di questo file.
 
 ---
 

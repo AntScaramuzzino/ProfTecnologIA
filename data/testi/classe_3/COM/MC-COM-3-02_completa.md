@@ -280,7 +280,7 @@ Competenze chiave che inizia a costruire da qui: scrittura verificata · diritto
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -487,10 +487,10 @@ Il podcast che hai prodotto diventa un asset del progetto: se la classe decide d
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 3 pagine. La tabella dei formati di compressione va in evidenza grafica. La tabella delle licenze CC va come infografica con icone CC ufficiali.
+- 📖 ESPLORA: distribuire su 3 pagine. La tabella dei formati di compressione va in evidenza grafica. La tabella delle licenze CC va come infografica con icone CC ufficiali.
 - Il box T8 (IA critica) va evidenziato con bordo colorato — è un elemento di progetto editoriale ricorrente.
-- Le tabelle della Zona 4 (Base) vanno come scheda fotocopiabile.
-- Il box "Errore comune" in Zona 3 va in evidenza grafica.
+- Le tabelle della 🔬 SPERIMENTA (Base) vanno come scheda fotocopiabile.
+- Il box "Errore comune" in 🔍 OSSERVA va in evidenza grafica.
 
 **Per l'agente generatore asset:**
 - Visual richiesto: albero decisionale "Posso usare questo contenuto?" — diagramma a scelte per ogni tipo di licenza CC. Formato: PNG 1200×900 + SVG.

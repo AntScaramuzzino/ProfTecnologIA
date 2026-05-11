@@ -120,7 +120,7 @@ Un percorso professionale non si pianifica una volta per sempre: si costruisce i
 
 **Competenze, non credenziali.** Il titolo di studio è una porta di ingresso, non un lasciapassare permanente. Quello che conta nel lungo periodo è cosa sai fare, non cosa hai studiato. Le competenze si documentano — con portfolio, certificazioni, progetti reali, contributi open source, pubblicazioni.
 
-**Il portfolio delle competenze.** Un portfolio non è un curriculum vitae. È una raccolta di prove concrete di quello che sai fare: un progetto realizzato, un problema risolto, un processo migliorato. Per uno studente di terza media, un portfolio può essere: il progetto di modellazione 3D realizzato in Zona 4 di MC-DIS-3-01, l'audit di accessibilità prodotto in MC-DIG-3-04, il Business Model Canvas di MC-SIS-3-03. Ogni compito di realtà di questo libro è un pezzo potenziale di un portfolio.
+**Il portfolio delle competenze.** Un portfolio non è un curriculum vitae. È una raccolta di prove concrete di quello che sai fare: un progetto realizzato, un problema risolto, un processo migliorato. Per uno studente di terza media, un portfolio può essere: il progetto di modellazione 3D realizzato in 🔬 SPERIMENTA di MC-DIS-3-01, l'audit di accessibilità prodotto in MC-DIG-3-04, il Business Model Canvas di MC-SIS-3-03. Ogni compito di realtà di questo libro è un pezzo potenziale di un portfolio.
 
 **La rete professionale.** Non è solo chi conosci: è chi ti conosce come professionista. Si costruisce partecipando a eventi, contribuendo a progetti, essendo presente nelle comunità del proprio settore. LinkedIn è il sistema di documentazione della rete professionale digitale.
 
@@ -206,7 +206,7 @@ Competenze chiave che inizia a costruire da qui: ascolto attivo · conoscenza de
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -215,11 +215,11 @@ Competenze chiave che inizia a costruire da qui: ascolto attivo · conoscenza de
 
 **Obiettivo:** costruire una mappa visuale che colleghi le MC studiate nel triennio alle aree professionali di interesse.
 
-**Materiali:** la mappa "da MC a professione" in Zona 2, accesso a internet.
+**Materiali:** la mappa "da MC a professione" in 📖 ESPLORA, accesso a internet.
 
 **Procedura:**
 
-1. Dalla mappa in Zona 2, scegli 3 professioni che ti incuriosiscono o che non conoscevi.
+1. Dalla mappa in 📖 ESPLORA, scegli 3 professioni che ti incuriosiscono o che non conoscevi.
 
 2. Per ogni professione, cerca su LinkedIn Jobs o Indeed:
    - Un annuncio reale per quella professione
@@ -316,7 +316,7 @@ Questa è l'unica MC del libro che ha te come oggetto di studio.
 **Costruisci la tua mappa personale "competenze acquisite → professioni possibili".**
 
 La mappa deve essere basata su tre fonti:
-1. Le MC del triennio (usa la tabella in Zona 2 come riferimento)
+1. Le MC del triennio (usa la tabella in 📖 ESPLORA come riferimento)
 2. Il tuo test RIASEC (o un'altra forma di autoriflessione sugli interessi)
 3. L'analisi di almeno 3 offerte di lavoro reali in professioni che ti interessano
 
@@ -421,8 +421,8 @@ La mappa "competenze acquisite → professioni possibili" che costruisci in ques
 - Questa MC ha funzione orientativa: la mappa "da MC a professione" va come doppia pagina estraibile, stampabile.
 - La tabella RIASEC va come infografica con icona e esempio professionale per ogni tipo.
 - La tabella megatrend + professioni in crescita/declino va come due colonne + / − con icone.
-- La "lettera a me stesso" in Zona 4 Avanzato va come template con spazi da compilare.
-- L'ultima domanda della metacognizione (Zona 5) va in evidenza grafica: è la chiusura del libro per questa area.
+- La "lettera a me stesso" in 🔬 SPERIMENTA Avanzato va come template con spazi da compilare.
+- L'ultima domanda della metacognizione (🌍 AGISCI) va in evidenza grafica: è la chiusura del libro per questa area.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: mappa visuale "triennio → competenze → professioni" — grande formato, doppia pagina, con le MC disposte su tre anni e frecce verso le famiglie professionali.

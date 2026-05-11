@@ -243,7 +243,7 @@ Competenze chiave che inizia a costruire da qui: protocolli di rete · sicurezza
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -466,10 +466,10 @@ La tua mappa di copertura Wi-Fi diventerà un contributo a una mappa completa de
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 3 pagine. La tabella generazioni 2G-5G va in evidenza grafica. I due box STEM vanno come sidebar laterali.
+- 📖 ESPLORA: distribuire su 3 pagine. La tabella generazioni 2G-5G va in evidenza grafica. I due box STEM vanno come sidebar laterali.
 - La tabella Wi-Fi 2,4 GHz vs 5 GHz va come riquadro visivo con icone.
-- Le tabelle della Zona 4 (Intermedio e Avanzato) vanno come scheda fotocopiabile allegata.
-- La pianta dell'edificio (Zona 5) è accessibile via QR code — non stampata nel libro.
+- Le tabelle della 🔬 SPERIMENTA (Intermedio e Avanzato) vanno come scheda fotocopiabile allegata.
+- La pianta dell'edificio (🌍 AGISCI) è accessibile via QR code — non stampata nel libro.
 - I box "Attenzione al malinteso" e "Sicurezza digitale" vanno in evidenza grafica (box colorato).
 
 **Per l'agente generatore asset:**

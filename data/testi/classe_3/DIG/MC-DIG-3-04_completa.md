@@ -159,7 +159,7 @@ Competenze chiave che inizia a costruire da qui: WCAG 2.1/2.2 · testing con scr
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -365,8 +365,8 @@ L'accessibilità riguarda anche l'IA. I sistemi di intelligenza artificiale che 
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella POUR (4 principi) va come infografica visuale con icona per ciascun principio. Il box "chi beneficia" va come sidebar con dato numerico in evidenza (1 miliardo).
-- La tabella errori WAVE nella Zona 4 Base va su sfondo colorato per renderla una guida rapida consultabile.
+- 📖 ESPLORA: la tabella POUR (4 principi) va come infografica visuale con icona per ciascun principio. Il box "chi beneficia" va come sidebar con dato numerico in evidenza (1 miliardo).
+- La tabella errori WAVE nella 🔬 SPERIMENTA Base va su sfondo colorato per renderla una guida rapida consultabile.
 - Il collegamento con MC-DIG-1-02 e il box STEM vanno come riquadri laterali in colore.
 - La lettera al dirigente scolastico (livello Avanzato) va come template con riga tratteggiata per la firma.
 

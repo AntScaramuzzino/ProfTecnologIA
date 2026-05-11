@@ -209,7 +209,7 @@ Competenze chiave che inizia a costruire da qui: microbiologia degli alimenti ·
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -453,11 +453,11 @@ Le tecniche di conservazione che hai analizzato in questa MC sono i passaggi tec
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la timeline storica (dall'affumicatura preistorica alla sterilizzazione UHT) va come infografica orizzontale su pagina intera.
+- 📖 ESPLORA: la timeline storica (dall'affumicatura preistorica alla sterilizzazione UHT) va come infografica orizzontale su pagina intera.
 - Il box Scienze (metabolismo batterico e temperatura) va come sidebar con grafico a curva (temperatura vs. velocità di moltiplicazione batterica).
 - La tabella dei metodi di conservazione va come griglia visiva con icone per ciascun metodo.
-- Le schede della Zona 4 BASE e INTERMEDIO vanno come pagine fotocopiabili.
-- La scheda alimento della Zona 5 va come pagina separata fotocopiabile/scaricabile con QR.
+- Le schede della 🔬 SPERIMENTA BASE e INTERMEDIO vanno come pagine fotocopiabili.
+- La scheda alimento della 🌍 AGISCI va come pagina separata fotocopiabile/scaricabile con QR.
 
 **Per l'agente generatore asset:**
 - Visual 1: timeline storica della conservazione alimentare (5 tappe: preistoria, Roma, Napoleone/Appert, Pasteur, industria moderna).

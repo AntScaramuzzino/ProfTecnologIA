@@ -138,7 +138,7 @@ Dove lavora: aziende tecnologiche, banche, ospedali, enti pubblici, cloud provid
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica in Zona 5.**
+> **Prima di iniziare, leggi la rubrica in 🌍 AGISCI.**
 
 ---
 

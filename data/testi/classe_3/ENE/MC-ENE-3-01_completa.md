@@ -271,7 +271,7 @@ Competenze chiave che inizia a costruire da qui: meccanica applicata · fisica d
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -499,10 +499,10 @@ Le macchine semplici trasformano e amplificano le forze meccaniche — ma le for
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 3 colonne. Il testo sui tre generi di leva va con schemi affiancati. I box STEM vanno come sidebar.
-- La Zona 4 (Intermedio e Avanzato) va come scheda fotocopiabile allegata — include tabelle di misura.
-- La scheda del compito di realtà (Zona 5) va come pagina separata fotocopiabile / QR scaricabile.
-- Il box "caso studio piramidi" in Zona 3 va in evidenza grafica su sfondo giallo sabbia.
+- 📖 ESPLORA: distribuire su 3 colonne. Il testo sui tre generi di leva va con schemi affiancati. I box STEM vanno come sidebar.
+- La 🔬 SPERIMENTA (Intermedio e Avanzato) va come scheda fotocopiabile allegata — include tabelle di misura.
+- La scheda del compito di realtà (🌍 AGISCI) va come pagina separata fotocopiabile / QR scaricabile.
+- Il box "caso studio piramidi" in 🔍 OSSERVA va in evidenza grafica su sfondo giallo sabbia.
 
 **Per l'agente generatore asset:**
 - Visual richiesto: poster delle 6 macchine semplici — per ognuna: schema funzionale, formula VM, 3 esempi di oggetti quotidiani. Formato: PNG 1200×1800 (verticale) + SVG.

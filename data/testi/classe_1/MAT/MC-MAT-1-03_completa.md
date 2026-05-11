@@ -258,7 +258,7 @@ Competenze chiave: chimica dei polimeri · analisi del ciclo di vita · scienza 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -527,10 +527,10 @@ Questa MC è la fase 3 dell'UDA interdisciplinare del primo anno. Hai classifica
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il paragrafo sul grafene si presta a una sidebar con visualizzazione dell'esagono di carbonio e i dati numerici (200× acciaio, 0,77 mg/m², Nobel 2010) come infografica dati.
-- La tabella comparativa "Materiali innovativi vs. tradizionali" a fine Zona 2 va in riquadro a larghezza intera.
-- La Zona 4 Avanzato (proposta packaging) va come scheda fotocopiabile separata.
-- La scheda Zona 5 (proposta al preside) va come pagina separata.
+- 📖 ESPLORA: il paragrafo sul grafene si presta a una sidebar con visualizzazione dell'esagono di carbonio e i dati numerici (200× acciaio, 0,77 mg/m², Nobel 2010) come infografica dati.
+- La tabella comparativa "Materiali innovativi vs. tradizionali" a fine 📖 ESPLORA va in riquadro a larghezza intera.
+- La 🔬 SPERIMENTA Avanzato (proposta packaging) va come scheda fotocopiabile separata.
+- La scheda 🌍 AGISCI (proposta al preside) va come pagina separata.
 
 **Per l'agente generatore asset:**
 - Visual 1: tabella comparativa grafica (5 materiali innovativi con icone, vantaggio principale e limite principale visualizzati con sistema semaforo verde/arancio/rosso).

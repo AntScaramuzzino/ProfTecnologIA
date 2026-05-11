@@ -358,7 +358,7 @@ Competenze chiave che inizia a costruire da qui: fisica dell'energia · lettura 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -622,10 +622,10 @@ L'azione di risparmio "a costo medio-alto" che hai proposto potrebbe diventare l
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il Box Fisica (legge di Ohm) va come sidebar colorata con le formule in grande.
+- 📖 ESPLORA: il Box Fisica (legge di Ohm) va come sidebar colorata con le formule in grande.
 - La tabella delle classi energetiche (dalla G alla A4) va in evidenza grafica con una scala cromatica dal rosso (G) al verde (A4).
-- La bolletta semplificata della Zona 3 va in un box con bordo, come una vera bolletta semplificata.
-- Le schede di Zona 4 (Intermedio e Avanzato) e la Scheda di Consulenza Energetica (Zona 5) vanno come schede fotocopiabili separate.
+- La bolletta semplificata della 🔍 OSSERVA va in un box con bordo, come una vera bolletta semplificata.
+- Le schede di 🔬 SPERIMENTA (Intermedio e Avanzato) e la Scheda di Consulenza Energetica (🌍 AGISCI) vanno come schede fotocopiabili separate.
 
 **Per l'agente generatore asset:**
 - Visual 1: schema della casa con i tre impianti sovrapposti in colori diversi (elettrico rosso, idrico blu, gas/termico giallo). Sezione verticale con tutti i percorsi visibili.

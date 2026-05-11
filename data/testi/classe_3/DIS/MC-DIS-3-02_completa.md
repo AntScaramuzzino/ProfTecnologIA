@@ -7,7 +7,7 @@
 
 ## ⚡ INNESCA
 
-> **Nessun hook audio preregistrato — Zona 1 narrativa**
+> **Nessun hook audio preregistrato — ⚡ INNESCA narrativa**
 
 **Scenario di avvio:**
 
@@ -232,7 +232,7 @@ Competenze chiave che inizia a costruire da qui: modellazione CAD 3D · geometri
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
@@ -438,16 +438,16 @@ Il file STL che hai prodotto in questa MC è il punto di arrivo dell'UDA-3 se co
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la storia del CAD va come timeline laterale visiva (1951 → 1982 → 1993 → 2013).
+- 📖 ESPLORA: la storia del CAD va come timeline laterale visiva (1951 → 1982 → 1993 → 2013).
 - Il workflow passo per passo di Tinkercad va con screenshot o illustrazioni affiancate — una per ogni passo.
 - Il box "Come il CAD ha trasformato l'architettura" va con una foto del MAXXI di Roma come visual principale.
-- Zona 4 Avanzato e Zona 4b: fotocopiabili come schede separate.
+- 🔬 SPERIMENTA Avanzato e Zona 4b: fotocopiabili come schede separate.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: confronto workflow manuale vs. CAD (due colonne: a sinistra il processo tradizionale, a destra il processo digitale, stesso numero di fasi).
 - Visual richiesto 2: illustrazione delle 5 operazioni base in Tinkercad (aggiungi, sottrai, allinea, raggruppa, esporta) con icone e screenshot semplificati.
 - Visual richiesto 3: infografica parametri di slicing (layer height, infill, supporti) con effetti visivi comparati.
-- Hook audio: non disponibile — usare la narrativa della Zona 1 come testo base per produrlo.
+- Hook audio: non disponibile — usare la narrativa della ⚡ INNESCA come testo base per produrlo.
 
 ---
 

@@ -312,7 +312,7 @@ Un telaio da corsa professionale in carbonio pesa meno di 700 g e raggiunge limi
 | Titanio | 1,1–1,3 kg | 600–1.500 € | Difficilmente | 50+ anni |
 | Carbonio | 0,6–0,9 kg | 1.500–5.000 € | No | 10–15 anni (uso intenso) |
 
-**Risposta alla domanda della Zona 1:**
+**Risposta alla domanda della ⚡ INNESCA:**
 La bici più leggera non è quella più economica. La bici più economica (acciaio) è quella che dura di più. La bici più leggera (carbonio) non è quella più sostenibile — si produce con molta energia e non si ricicla facilmente. Non esiste il materiale perfetto per tutti: esiste il materiale giusto per ogni uso specifico.
 
 ---
@@ -349,7 +349,7 @@ Competenze che inizia a costruire da qui: proprietà dei materiali metallici · 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già esattamente quali criteri vengono valutati: organizza il lavoro di conseguenza.
 
 ---
@@ -641,12 +641,12 @@ L'oggetto che ha mostrato il percorso più interessante (una lega speciale, un t
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella di confronto metalli strutturali va su una doppia colonna a tutta larghezza, con il titolo "I metalli a confronto" e leggenda sotto.
+- 📖 ESPLORA: la tabella di confronto metalli strutturali va su una doppia colonna a tutta larghezza, con il titolo "I metalli a confronto" e leggenda sotto.
 - Il riquadro sull'altoforno (💡 box) va come sidebar laterale con icona di forno industriale.
 - I riquadri STEM (fisica e chimica) vanno come sidebar alternate su pagine diverse.
-- La tabella della Zona 4 Intermedio (Parte A) va come scheda separata o colonna autonoma.
-- La matrice di valutazione della Zona 4 Avanzato va come tabella a tutta larghezza con spazio per compilare.
-- La Scheda Tecnica della Zona 5 va come pagina fotocopiabile/scaricabile.
+- La tabella della 🔬 SPERIMENTA Intermedio (Parte A) va come scheda separata o colonna autonoma.
+- La matrice di valutazione della 🔬 SPERIMENTA Avanzato va come tabella a tutta larghezza con spazio per compilare.
+- La Scheda Tecnica della 🌍 AGISCI va come pagina fotocopiabile/scaricabile.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica comparativa bicicletta — 4 telai (acciaio, alluminio, titanio, carbonio) con barre proporzionali per peso, resistenza, costo, durata.

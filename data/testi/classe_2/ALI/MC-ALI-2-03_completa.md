@@ -234,7 +234,7 @@ Competenze chiave che inizia a costruire da qui: biochimica degli alimenti · fi
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -364,7 +364,7 @@ Il medico di base della tua scuola ha avviato un programma di educazione aliment
 ### La consegna
 
 **Fase 1 — Diario (3 giorni):**
-Annota tutto quello che mangi e bevi in 3 giorni (di cui almeno uno scolastico e uno di fine settimana). Usa il formato della Zona 4 Intermedio o inventa il tuo — l'importante è che ci siano: il pasto, l'alimento, una stima della porzione.
+Annota tutto quello che mangi e bevi in 3 giorni (di cui almeno uno scolastico e uno di fine settimana). Usa il formato della 🔬 SPERIMENTA Intermedio o inventa il tuo — l'importante è che ci siano: il pasto, l'alimento, una stima della porzione.
 
 **Fase 2 — Analisi (dopo il diario):**
 - Conta quante porzioni di frutta e verdura hai mangiato in media al giorno.
@@ -471,11 +471,11 @@ Questa MC chiude il triangolo dell'UDA-2: MC-ALI-2-01 ha mostrato come il cibo v
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella comparativa "fast food vs. pasto mediterraneo" va come infografica visiva con due piatti affiancati e le barre nutrizionali.
+- 📖 ESPLORA: la tabella comparativa "fast food vs. pasto mediterraneo" va come infografica visiva con due piatti affiancati e le barre nutrizionali.
 - La piramide alimentare mediterranea va come infografica a colori su mezza pagina, con frecce per la frequenza di consumo.
 - Il box Scienze (digestione) va come sidebar anatomica con schema semplificato dell'apparato digerente.
-- La tabella valori nutrizionali della Zona 4 Avanzato va come scheda separata fotocopiabile.
-- Il diario alimentare della Zona 5 va come pagina separata fotocopiabile/scaricabile con QR.
+- La tabella valori nutrizionali della 🔬 SPERIMENTA Avanzato va come scheda separata fotocopiabile.
+- Il diario alimentare della 🌍 AGISCI va come pagina separata fotocopiabile/scaricabile con QR.
 
 **Per l'agente generatore asset:**
 - Visual 1: piramide alimentare mediterranea interattiva (versione app: tocca ogni livello per vedere frequenza e porzioni raccomandate).

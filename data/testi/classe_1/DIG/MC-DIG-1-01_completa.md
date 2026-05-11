@@ -267,7 +267,7 @@ Competenze chiave che inizi a costruire qui: comprensione dell'architettura hard
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -303,7 +303,7 @@ Sotto trovi l'elenco dei 6 componenti principali di un computer. Accanto a ciasc
 
 **Domanda finale:** il monitor è una periferica di input, di output, o entrambe? Spiega in una frase.
 
-> 💡 **Aiuto:** se non ricordi la funzione di un componente, cerca nel testo della Zona 2 il nome del componente e rileggi le prime due frasi di quella sezione.
+> 💡 **Aiuto:** se non ricordi la funzione di un componente, cerca nel testo della 📖 ESPLORA il nome del componente e rileggi le prime due frasi di quella sezione.
 
 ---
 
@@ -431,7 +431,7 @@ Per ogni parte della tua valutazione, cita il componente specifico che ti ha por
 ### Materiali che ti servono
 
 - Un dispositivo a cui hai accesso (vedi sopra)
-- Le istruzioni per trovare le specifiche hardware (nella Zona 4, livello Intermedio)
+- Le istruzioni per trovare le specifiche hardware (nella 🔬 SPERIMENTA, livello Intermedio)
 - Questa scheda: stampabile dal QR code → o fotocopiabile dal libro
 
 > **Suggerimento:** se non sai come trovare le specifiche del tuo dispositivo, cerca online "[nome del tuo dispositivo] specifiche tecniche" — quasi sempre il produttore le pubblica sul sito ufficiale.
@@ -529,11 +529,11 @@ Questa MC è la base per la prossima: **MC-DIG-1-02 — Ricerca e valutazione de
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: struttura a colonne. Il testo dei componenti hardware (CPU, RAM, SSD, GPU, scheda madre) va nella colonna sinistra. L'infografica "anatomia del computer — vista esplosa" va nella colonna destra. I due box STEM (informatica e scienze) vanno come sidebar laterali.
+- 📖 ESPLORA: struttura a colonne. Il testo dei componenti hardware (CPU, RAM, SSD, GPU, scheda madre) va nella colonna sinistra. L'infografica "anatomia del computer — vista esplosa" va nella colonna destra. I due box STEM (informatica e scienze) vanno come sidebar laterali.
 - Il box INF/DIG (T7 e T8) va come riquadro a colore differenziato rispetto ai box STEM — usa un colore specifico per la distinzione DIG/INF.
-- Le tabelle della Zona 4 (Intermedio e Avanzato) possono richiedere una pagina separata o una scheda fotocopiabile allegata.
-- La scheda "Relazione tecnica" della Zona 5 va come pagina separata (fotocopiabile / scaricabile con QR).
-- Il riquadro "Errore comune" in Zona 3 va in evidenza grafica (box colorato).
+- Le tabelle della 🔬 SPERIMENTA (Intermedio e Avanzato) possono richiedere una pagina separata o una scheda fotocopiabile allegata.
+- La scheda "Relazione tecnica" della 🌍 AGISCI va come pagina separata (fotocopiabile / scaricabile con QR).
+- Il riquadro "Errore comune" in 🔍 OSSERVA va in evidenza grafica (box colorato).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema "anatomia del computer — vista esplosa" con etichette e funzioni per CPU, RAM, SSD, GPU, scheda madre, alimentatore. Formato: PNG 1200×900 + SVG.

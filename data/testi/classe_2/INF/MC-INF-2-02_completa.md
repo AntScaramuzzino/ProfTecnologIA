@@ -154,7 +154,7 @@ Nel 2024, si stimano oltre 3,5 milioni di posizioni aperte non ricoperte nel set
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica in Zona 5.**
+> **Prima di iniziare, leggi la rubrica in 🌍 AGISCI.**
 
 ---
 

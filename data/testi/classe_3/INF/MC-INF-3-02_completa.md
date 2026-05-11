@@ -164,7 +164,7 @@ Valuta i bias e i rischi dei sistemi di IA, progetta processi di audit e traspar
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica in Zona 5.**
+> **Prima di iniziare, leggi la rubrica in 🌍 AGISCI.**
 
 ---
 

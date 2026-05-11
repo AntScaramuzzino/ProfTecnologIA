@@ -284,7 +284,7 @@ Livello di domanda nel 2030 in Europa: altissimo (carenza stimata di 500.000 pro
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -325,7 +325,7 @@ Livello di domanda nel 2030 in Europa: altissimo (carenza stimata di 500.000 pro
 
 **Parte A — Struttura cartelle:**
 
-1. Crea sul computer (o su Drive, se preferisci lavorare su cloud) la struttura di cartelle descritta nella Zona 2, adattata alla tua situazione reale: inserisci le materie che studi veramente, aggiungi cartelle per attività extra-scolastiche se le hai.
+1. Crea sul computer (o su Drive, se preferisci lavorare su cloud) la struttura di cartelle descritta nella 📖 ESPLORA, adattata alla tua situazione reale: inserisci le materie che studi veramente, aggiungi cartelle per attività extra-scolastiche se le hai.
 
 2. Sposta almeno 10 file esistenti nelle cartelle appropriate. Per ogni file spostato, verifica che il nome rispetti la convenzione [data]_[materia]_[argomento]. Rinomina quelli che non la rispettano.
 
@@ -497,10 +497,10 @@ Le competenze di questa MC sono strumenti trasversali per l'UDA interdisciplinar
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: distribuire su 2 colonne. I blocchi di codice (struttura cartelle) vanno in font monospace su sfondo grigio chiaro.
+- 📖 ESPLORA: distribuire su 2 colonne. I blocchi di codice (struttura cartelle) vanno in font monospace su sfondo grigio chiaro.
 - Il box DIG↔INF è un riquadro evidenziato con bordo laterale colorato — colore diverso dai box "Lo sapevi" per distinguerli.
 - La tabella comparativa dei servizi cloud va in pagina separata o come infografica laterale.
-- Le istruzioni della Zona 4 Intermedio/Avanzato vanno come schede separabili.
+- Le istruzioni della 🔬 SPERIMENTA Intermedio/Avanzato vanno come schede separabili.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema ad albero della struttura cartelle raccomandata — formato PNG 1200×900 + SVG.

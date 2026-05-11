@@ -177,7 +177,7 @@ Competenze chiave che inizi a costruire qui: sistemi di numerazione · codifica 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -411,10 +411,10 @@ Sai come il computer rappresenta i dati. La prossima domanda è: come sa cosa fa
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: colonna sinistra per il testo espositivo. Colonna destra per la tabella dei numeri decimale/binario e l'infografica pixel RGB.
+- 📖 ESPLORA: colonna sinistra per il testo espositivo. Colonna destra per la tabella dei numeri decimale/binario e l'infografica pixel RGB.
 - Il box "Collegamento STEM — Matematica" va come sidebar con sfondo colorato differenziato (colore matematica).
-- La tabella ASCII in Zona 4 livello base può essere stampata su carta separata / ritagliabile.
-- Zona 5: la tabella delle opzioni di scansione va in evidenza grafica. La scheda dei passi 1-4 va come foglio fotocopiabile separato.
+- La tabella ASCII in 🔬 SPERIMENTA livello base può essere stampata su carta separata / ritagliabile.
+- 🌍 AGISCI: la tabella delle opzioni di scansione va in evidenza grafica. La scheda dei passi 1-4 va come foglio fotocopiabile separato.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica "pixel ingrandito — sistema RGB" — un pixel diviso in 3 canali R, G, B con i valori numerici e la corrispondente sequenza binaria. Formato PNG 800×600.

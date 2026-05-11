@@ -200,7 +200,7 @@ Competenze chiave che inizia a costruire da qui: programmazione event-driven · 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
+> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
 
 ---
 
@@ -306,7 +306,7 @@ Il micro:bit supporta comunicazione radio (Bluetooth/radio proprietaria) tra dis
 
 Questo progetto richiede: programmazione della radio micro:bit, sincronizzazione dei messaggi, gestione degli errori di comunicazione (cosa succede se un messaggio viene perso?), e progettazione del sistema fisico (dove posizionare i sensori per contare correttamente).
 
-Documenta il processo con il formato della Zona 4 Avanzato.
+Documenta il processo con il formato della 🔬 SPERIMENTA Avanzato.
 
 ---
 
@@ -347,7 +347,7 @@ Scegli il problema più promettente. Scrivi una proposta di 1 pagina che include
 - Implicazioni etiche: questo sistema raccoglie dati su persone? Chi ha accesso a questi dati?
 
 **Fase 3 — Implementazione:**
-Costruisci un prototipo funzionante (su hardware reale se disponibile, su simulatore altrimenti). Documenta il processo con la struttura della Zona 4 Avanzato.
+Costruisci un prototipo funzionante (su hardware reale se disponibile, su simulatore altrimenti). Documenta il processo con la struttura della 🔬 SPERIMENTA Avanzato.
 
 **Fase 4 — Test e presentazione:**
 Testa il sistema con almeno 3 scenari diversi. Presenta il progetto alla classe in 5 minuti: descrivi il problema, la soluzione, come funziona, e i suoi limiti.
@@ -424,13 +424,13 @@ Questa MC è parte dell'UDA interdisciplinare del terzo anno *"Scuola Smart"*: p
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: il confronto tra i tre robot educativi (micro:bit, EV3, Arduino) va in tabella comparativa a piena larghezza.
+- 📖 ESPLORA: il confronto tra i tre robot educativi (micro:bit, EV3, Arduino) va in tabella comparativa a piena larghezza.
 - Il Box T8 (IA critica) va come box separato con bordo colorato — è obbligatorio per tutte le MC DIG livello A.
 - Il caso studio Deep Blue vs. AlphaGo va come doppio riquadro affiancato con immagine dei due sistemi.
-- Zona 4 Avanzato: la tabella di debug e la relazione tecnica sono fotocopiabili.
+- 🔬 SPERIMENTA Avanzato: la tabella di debug e la relazione tecnica sono fotocopiabili.
 
 **Per l'agente generatore asset:**
-- Visual richiesto 1: diagramma di flusso del robot segui-linea (Zona 4 Intermedio) con notazione standard.
+- Visual richiesto 1: diagramma di flusso del robot segui-linea (🔬 SPERIMENTA Intermedio) con notazione standard.
 - Visual richiesto 2: infografica sensori e attuatori — schema hardware con etichette e descrizione funzionale.
 - Visual richiesto 3: mappa concettuale pensiero computazionale avanzato (decomposizione → pattern → astrazione → algoritmo) con esempi per ciascuno.
 - Hook audio: disponibile in MC-DIG-3-01_hook-script.md.
