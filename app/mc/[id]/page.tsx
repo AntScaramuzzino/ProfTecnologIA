@@ -6,8 +6,11 @@ import QuizWidget from "@/components/mc/QuizWidget";
 import AudioPlayer from "@/components/mc/AudioPlayer";
 import VideoGallery from "@/components/mc/VideoGallery";
 import FlippedVideos from "@/components/mc/FlippedVideos";
+import FlashcardDeck from "@/components/mc/FlashcardDeck";
+import FormulaCard from "@/components/mc/FormulaCard";
+import ProcedureList from "@/components/mc/ProcedureList";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
-import { getMCTextContent, getVisualAssets, getMCHookAudio, getMCHookTranscript, getMCQuizData, getVideoPlaylist } from "@/lib/content-loader";
+import { getMCTextContent, getVisualAssets, getMCHookAudio, getMCHookTranscript, getMCQuizData, getMCFlashcards, getVideoPlaylist } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
 interface Props {
@@ -30,8 +33,9 @@ export default async function MCPage({ params }: Props) {
   const hookAudioSrc    = getMCHookAudio(mc.id);
   const hookTranscript  = getMCHookTranscript(mc.id);
   const quizData        = getMCQuizData(mc.id);
-  const videoPlaylist = getVideoPlaylist(mc.id);
-  const prereqs = getPrerequisiteChain(mc.id);
+  const flashcards      = getMCFlashcards(mc.id);
+  const videoPlaylist   = getVideoPlaylist(mc.id);
+  const prereqs         = getPrerequisiteChain(mc.id);
   const related = getAllMCs()
     .filter((item) => item.area === mc.area && item.id !== mc.id)
     .slice(0, 3);
@@ -224,6 +228,13 @@ export default async function MCPage({ params }: Props) {
         </aside>
       </div>
 
+      {/* Flashcard — sistema di ripasso a fine MC */}
+      {flashcards.length > 0 && (
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <FlashcardDeck cards={flashcards} mcTitolo={mc.titolo} />
+        </div>
+      )}
+
       {/* Formula trasparenza AI — Protocollo CARBLE-CDD */}
       <div className="mx-auto max-w-7xl px-4 pb-4 sm:px-6">
         <p className="rounded-lg border border-slate-100 bg-slate-50 px-4 py-2.5 text-xs text-slate-400">
@@ -277,6 +288,19 @@ function ReadableText({ value, className = "" }: { value: string; className?: st
               <code>{code}</code>
             </pre>
           );
+        }
+
+        // Formule tecniche (@@FORMULA:label|espressione)
+        if (block.startsWith("@@FORMULA:")) {
+          const parts = block.replace(/^@@FORMULA:/, "").split("|");
+          const [label, formula, note] = parts.map((p) => p.trim());
+          return <FormulaCard key={index} label={label} formula={formula} note={note} />;
+        }
+
+        // Liste procedurali (@@PROCEDURE:passo1||passo2||...)
+        if (block.startsWith("@@PROCEDURE:")) {
+          const steps = block.replace(/^@@PROCEDURE:/, "").split("||").map((s) => s.trim()).filter(Boolean);
+          return <ProcedureList key={index} steps={steps} />;
         }
 
         // Callout dai blockquote (@@CALLOUT:) — box visivi colorati

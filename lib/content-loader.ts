@@ -58,8 +58,11 @@ function cleanMarkdownForReading(value: string): string {
     .split("\n")
     .filter((line) => !isEditorialLine(line))
     .join("\n")
-    // Preserva blocchi codice come @@CODE: invece di eliminarli
+    // Preserva blocchi codice come @@CODE:
     .replace(/```(\w*)\n?([\s\S]*?)```/g, "\n@@CODE:$2\n")
+    // Rileva formule: **Label:** espressione → @@FORMULA:label|espressione
+    .replace(/\*\*(Formula|Legge di [^*]+|[A-Z][^*:]{2,25})\s*[:\—–]\*\*\s*([A-Za-z0-9\s=×÷±+\-/^()²³°%,\.]+)/g,
+      "\n@@FORMULA:$1|$2\n")
     .replace(/!\[[^\]]*]\([^)]*\)/g, "")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     // ── Rimozione citazioni bibliografiche inline ─────────────────────────
@@ -193,6 +196,86 @@ export function getMCQuizData(mcId: string): QuizQuestion[] | null {
   } catch {
     return null;
   }
+}
+
+// ── FLASHCARD ─────────────────────────────────────────────────────────────────
+
+export interface FlashcardItem {
+  front: string;
+  back: string;
+  tag?: string;
+}
+
+const MC_ROOT_FC = path.join(process.cwd(), "data", "mc");
+
+export function getMCFlashcards(mcId: string): FlashcardItem[] {
+  // 1. Prova a caricare flashcard JSON dedicate
+  const fcFile = path.join(process.cwd(), "data", "flashcards", `${mcId}.json`);
+  if (fs.existsSync(fcFile)) {
+    try {
+      return JSON.parse(fs.readFileSync(fcFile, "utf-8")) as FlashcardItem[];
+    } catch { /* fallback */ }
+  }
+
+  // 2. Genera dalle domande del quiz (se disponibili)
+  const quizFile = path.join(QUIZ_ROOT, `${mcId}_quiz.json`);
+  if (fs.existsSync(quizFile)) {
+    try {
+      const quizData = JSON.parse(fs.readFileSync(quizFile, "utf-8"));
+      const domande: QuizQuestion[] = quizData.domande ?? [];
+      if (domande.length > 0) {
+        return domande.slice(0, 12).map((d) => {
+          const corretta = d.opzioni.find((o) => o.corretto);
+          return {
+            front: d.domanda,
+            back: corretta ? `${corretta.testo}${d.spiegazione ? "\n\n" + d.spiegazione : ""}` : d.spiegazione ?? "",
+            tag: d.livello === "F" ? "Base" : d.livello === "I" ? "Intermedio" : "Avanzato",
+          };
+        }).filter((f) => f.front && f.back);
+      }
+    } catch { /* fallback */ }
+  }
+
+  // 3. Genera dai tag della MC (fallback minimo)
+  const parts = mcId.split("-");
+  if (parts.length >= 3) {
+    const mcFile = path.join(MC_ROOT_FC, `classe_${parts[2]}`, parts[1], `${mcId}.json`);
+    if (fs.existsSync(mcFile)) {
+      try {
+        const mc = JSON.parse(fs.readFileSync(mcFile, "utf-8"));
+        const tags: string[] = mc.tags ?? [];
+        const descrizione: string = mc.descrizione ?? "";
+        const compito: string = mc.compito_realta ?? "";
+
+        const cards: FlashcardItem[] = [];
+
+        // Card 1: titolo → descrizione
+        if (mc.titolo && descrizione) {
+          cards.push({
+            front: `Cos'è: ${mc.titolo}?`,
+            back: descrizione.split(".")[0] + ".",
+            tag: mc.area,
+          });
+        }
+        // Card 2: compito di realtà
+        if (compito) {
+          cards.push({
+            front: "Compito di realtà: cosa devi saper fare?",
+            back: compito.split(".")[0] + ".",
+            tag: "AGISCI",
+          });
+        }
+        // Card 3-N: tag come termini chiave
+        const cleanTags = tags.filter((t) => !t.includes("-") && t.length > 3);
+        cleanTags.slice(0, 8).forEach((tag) => {
+          cards.push({ front: tag, back: `Concetto chiave dell'area ${mc.area}: ${mc.titolo}`, tag: mc.area });
+        });
+
+        return cards.filter((c) => c.front && c.back);
+      } catch { /* fallback */ }
+    }
+  }
+  return [];
 }
 
 export function getMCHookTranscript(mcId: string): string | null {
