@@ -11,10 +11,23 @@
       "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principi che regolano i sistemi tecnologici; macchine motrici e trasformazione dell'energia",
       "traguardo": "Lo studente descrive il funzionamento di una macchina termica, calcola il rendimento e lo confronta con il limite teorico di Carnot"
     },
-    "DC": { "ref": "5.1 Risolvere problemi tecnici", "livello": "I", "nota": "Lo studente usa simulatori animati di motori per visualizzare i cicli termodinamici e verifica i calcoli di rendimento" },
-    "EC": { "ref": "Ideas and opportunities / Sustainability", "nota": "Lo studente valuta l'inefficienza intrinseca delle macchine termiche come motivazione fisica per la transizione ai motori elettrici" },
-    "LC": { "ref": "Thinking / Systems thinking", "nota": "Lo studente traccia il flusso energetico da combustibile a lavoro utile identificando dove e perché l'energia si disperde" },
-    "EV": { "ref": "SDG 7 — Energia pulita; SDG 13 — Cambiamento climatico", "nota": "Il basso rendimento dei motori a combustione interna (25-35%) è la principale causa di inefficienza energetica nei trasporti" }
+    "DC": {
+      "ref": "5.1 Risolvere problemi tecnici",
+      "livello": "I",
+      "nota": "Lo studente usa simulatori animati di motori per visualizzare i cicli termodinamici e verifica i calcoli di rendimento"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente valuta l'inefficienza intrinseca delle macchine termiche come motivazione fisica per la transizione ai motori elettrici"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente traccia il flusso energetico da combustibile a lavoro utile identificando dove e perché l'energia si disperde"
+    },
+    "EV": {
+      "ref": "SDG 7 — Energia pulita; SDG 13 — Cambiamento climatico",
+      "nota": "Il basso rendimento dei motori a combustione interna (25-35%) è la principale causa di inefficienza energetica nei trasporti"
+    }
   },
   "outputApp": {
     "quiz": "Calcolo rendimento: 'Un motore assorbe 1000 J e produce 280 J di lavoro — qual è il rendimento? È vicino al limite di Carnot per quelle temperature?' Feedback con passaggi.",
@@ -22,10 +35,25 @@
     "visual": "Schema Sankey comparativo: auto a benzina (rendimento ~28%) vs. motore elettrico (rendimento ~90%) — stesso input energetico.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": ["MC-ENE-3-01", "MC-ENE-3-02"],
-  "tags": ["macchine termiche", "motore a scoppio", "rendimento", "termodinamica", "Carnot", "motore elettrico", "classe-3", "ENE"],
+  "prerequisiti": [
+    "MC-ENE-3-01",
+    "MC-ENE-3-02"
+  ],
+  "tags": [
+    "macchine termiche",
+    "motore a scoppio",
+    "rendimento",
+    "termodinamica",
+    "Carnot",
+    "motore elettrico",
+    "classe-3",
+    "ENE"
+  ],
   "compito_realta": "Confronta il motore a scoppio di un'auto tradizionale con un motore elettrico: cerca i rendimenti tipici di entrambi, costruisci un diagramma di Sankey semplificato per ciascuno (100 unità di energia in input) e discuti quale è più efficiente — considerando anche la fonte energetica a monte.",
-  "sdg": [7, 13],
+  "sdg": [
+    7,
+    13
+  ],
   "sdg_principale": 13,
   "note_didattiche": {
     "base": "Fornire i valori di rendimento già trovati e il template del diagramma di Sankey. Lo studente inserisce solo i numeri e scrive il confronto.",
@@ -35,19 +63,37 @@
     "titolo": "Perché il cofano è caldo?",
     "oggetto_reale": "motore di un'automobile",
     "domanda_avvio": "Se un motore a benzina spreca il 70% dell'energia come calore, perché lo usiamo ancora?",
-    "durata_min": 2,
-    "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica."
+    "durata_min": 1.0,
+    "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica.",
+    "durata_secondi": 58
   },
   "professione_futura": {
     "titolo": "Ingegnere della propulsione elettrica",
     "orizzonte": "2030",
     "descrizione_breve": "Progetta sistemi di propulsione per veicoli elettrici e ibridi, ottimizzando il recupero energetico in frenata e l'efficienza complessiva della trasmissione.",
-    "competenze_chiave": ["termodinamica applicata", "elettrotecnica", "simulazione CAE", "gestione batterie BMS"]
+    "competenze_chiave": [
+      "termodinamica applicata",
+      "elettrotecnica",
+      "simulazione CAE",
+      "gestione batterie BMS"
+    ]
   },
   "clil_termini": [
-    { "italiano": "rendimento", "inglese": "efficiency", "pronuncia_ipa": "/ɪˈfɪʃənsi/" },
-    { "italiano": "motore a scoppio", "inglese": "internal combustion engine", "pronuncia_ipa": "/ɪnˈtɜːnəl kəmˈbʌstʃən ˈendʒɪn/" },
-    { "italiano": "ciclo termodinamico", "inglese": "thermodynamic cycle", "pronuncia_ipa": "/ˌθɜːməʊdaɪˈnæmɪk ˈsaɪkl/" }
+    {
+      "italiano": "rendimento",
+      "inglese": "efficiency",
+      "pronuncia_ipa": "/ɪˈfɪʃənsi/"
+    },
+    {
+      "italiano": "motore a scoppio",
+      "inglese": "internal combustion engine",
+      "pronuncia_ipa": "/ɪnˈtɜːnəl kəmˈbʌstʃən ˈendʒɪn/"
+    },
+    {
+      "italiano": "ciclo termodinamico",
+      "inglese": "thermodynamic cycle",
+      "pronuncia_ipa": "/ˌθɜːməʊdaɪˈnæmɪk ˈsaɪkl/"
+    }
   ],
   "uda_collegata": "UDA-2",
   "stem_connections": {

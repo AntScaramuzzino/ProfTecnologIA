@@ -11,10 +11,23 @@
       "ref": "IN 2025 (D.M. n. 221/2025) — Usa in modo critico e consapevole i media digitali; valuta l'attendibilità delle fonti; comprende i meccanismi di diffusione dell'informazione",
       "traguardo": "Lo studente analizza criticamente il funzionamento dei media digitali, riconosce meccanismi di disinformazione e applica metodi sistematici di verifica"
     },
-    "DC": { "ref": "1.2 Valutare dati, informazioni e contenuti digitali", "livello": "A", "nota": "Lo studente usa strumenti professionali di fact-checking (reverse image search, InVID, Pagella Politica) e applica il metodo SIFT in modo autonomo su casi complessi" },
-    "EC": { "ref": "Ideas and opportunities / Valuing ideas", "nota": "Lo studente comprende come l'economia dell'attenzione trasforma le idee e l'informazione in merce, e come questa trasformazione impatta il dibattito democratico" },
-    "LC": { "ref": "Thinking / Critical thinking", "nota": "Lo studente smonta sistematicamente meccanismi di manipolazione dell'informazione sviluppando autonomia epistemica" },
-    "EV": { "ref": "SDG 16 — Pace, giustizia, istituzioni solide; L. 92/2019 Educazione Civica", "nota": "La disinformazione è minaccia diretta alla democrazia — riconoscerla e contrastarla è competenza civica fondamentale nel XXI secolo" }
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
+      "livello": "A",
+      "nota": "Lo studente usa strumenti professionali di fact-checking (reverse image search, InVID, Pagella Politica) e applica il metodo SIFT in modo autonomo su casi complessi"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Valuing ideas",
+      "nota": "Lo studente comprende come l'economia dell'attenzione trasforma le idee e l'informazione in merce, e come questa trasformazione impatta il dibattito democratico"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente smonta sistematicamente meccanismi di manipolazione dell'informazione sviluppando autonomia epistemica"
+    },
+    "EV": {
+      "ref": "SDG 16 — Pace, giustizia, istituzioni solide; L. 92/2019 Educazione Civica",
+      "nota": "La disinformazione è minaccia diretta alla democrazia — riconoscerla e contrastarla è competenza civica fondamentale nel XXI secolo"
+    }
   },
   "outputApp": {
     "quiz": "Analizza questo post [post con affermazione verificabile]: segui i 4 passi SIFT e indica fonte attendibile sì/no, affermazione verificata sì/no, tipo di contenuto. Feedback con procedura corretta.",
@@ -22,10 +35,25 @@
     "visual": "Infografica: anatomia di un'asta pubblicitaria programmatica RTB — dall'apertura della pagina (0ms) all'annuncio visualizzato (200ms) — chi partecipa, che dati scambia, quanto vale.",
     "livelloDigComp": "A"
   },
-  "prerequisiti": ["MC-DIG-1-02", "MC-COM-3-02"],
-  "tags": ["media digitali", "algoritmi", "filter bubble", "disinformazione", "pubblicità programmatica", "fact-checking", "pensiero critico", "classe-3", "COM"],
+  "prerequisiti": [
+    "MC-DIG-1-02",
+    "MC-COM-3-02"
+  ],
+  "tags": [
+    "media digitali",
+    "algoritmi",
+    "filter bubble",
+    "disinformazione",
+    "pubblicità programmatica",
+    "fact-checking",
+    "pensiero critico",
+    "classe-3",
+    "COM"
+  ],
   "compito_realta": "Scegli un contenuto virale che hai visto recentemente che ti sembrava dubbio. Applica il metodo SIFT completo, documenta ogni passo, determina se è affidabile o no e perché, poi scrivi un articolo di fact-checking per il giornalino scolastico (200-300 parole) accessibile anche a chi non conosce l'argomento.",
-  "sdg": [16],
+  "sdg": [
+    16
+  ],
   "sdg_principale": 16,
   "note_didattiche": {
     "base": "Fornire 3 contenuti già selezionati (uno vero, uno falso, uno fuorviante). Lo studente applica SIFT solo al contenuto falso con guida passo-passo.",
@@ -35,20 +63,42 @@
     "titolo": "Come TikTok sa già cosa vuoi vedere",
     "oggetto_reale": "feed di TikTok",
     "domanda_avvio": "Hai mai aperto TikTok per 5 minuti e ti sei ritrovato dopo un'ora — senza capire come?",
-    "durata_min": 2,
-    "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione."
+    "durata_min": 0.8,
+    "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione.",
+    "durata_secondi": 45
   },
   "professione_futura": {
     "titolo": "Fact-checker e verificatore digitale",
     "orizzonte": "2030",
     "descrizione_breve": "Verifica sistematicamente la veridicità di contenuti digitali virali per testate giornalistiche, piattaforme social e organizzazioni internazionali, usando strumenti avanzati di analisi forense dei media.",
-    "competenze_chiave": ["metodologia OSINT", "analisi forense di immagini e video", "comprensione degli algoritmi di raccomandazione", "giornalismo di dati"]
+    "competenze_chiave": [
+      "metodologia OSINT",
+      "analisi forense di immagini e video",
+      "comprensione degli algoritmi di raccomandazione",
+      "giornalismo di dati"
+    ]
   },
   "clil_termini": [
-    { "italiano": "economia dell'attenzione", "inglese": "attention economy", "pronuncia_ipa": "/əˈtenʃən ɪˈkɒnəmi/" },
-    { "italiano": "bolla di filtraggio", "inglese": "filter bubble", "pronuncia_ipa": "/ˈfɪltə ˈbʌbl/" },
-    { "italiano": "disinformazione", "inglese": "disinformation", "pronuncia_ipa": "/ˌdɪsɪnfəˈmeɪʃən/" },
-    { "italiano": "pubblicità in tempo reale", "inglese": "real-time bidding (RTB)", "pronuncia_ipa": "/rɪəl taɪm ˈbɪdɪŋ/" }
+    {
+      "italiano": "economia dell'attenzione",
+      "inglese": "attention economy",
+      "pronuncia_ipa": "/əˈtenʃən ɪˈkɒnəmi/"
+    },
+    {
+      "italiano": "bolla di filtraggio",
+      "inglese": "filter bubble",
+      "pronuncia_ipa": "/ˈfɪltə ˈbʌbl/"
+    },
+    {
+      "italiano": "disinformazione",
+      "inglese": "disinformation",
+      "pronuncia_ipa": "/ˌdɪsɪnfəˈmeɪʃən/"
+    },
+    {
+      "italiano": "pubblicità in tempo reale",
+      "inglese": "real-time bidding (RTB)",
+      "pronuncia_ipa": "/rɪəl taɪm ˈbɪdɪŋ/"
+    }
   ],
   "uda_collegata": "UDA-2",
   "stem_connections": {

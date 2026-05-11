@@ -11,10 +11,23 @@
       "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi di comunicazione e il loro sviluppo; infrastrutture digitali e loro implicazioni sociali",
       "traguardo": "Lo studente descrive l'infrastruttura fisica di internet, ne identifica i principali attori di governance e valuta le implicazioni di sovranità digitale"
     },
-    "DC": { "ref": "2.1 Interagire attraverso le tecnologie digitali", "livello": "I", "nota": "Lo studente usa strumenti di traceroute e DNS lookup per osservare concretamente il percorso dei dati e i nodi intermedi" },
-    "EC": { "ref": "Ideas and opportunities / Valuing ideas", "nota": "Lo studente comprende come il controllo dell'infrastruttura internet sia una leva di potere economico e politico nel XXI secolo" },
-    "LC": { "ref": "Thinking / Critical thinking", "nota": "Lo studente analizza le tensioni tra libertà di internet, censura di stato e governance globale sviluppando una prospettiva critica informata" },
-    "EV": { "ref": "SDG 9 — Infrastrutture e innovazione; SDG 16 — Pace, giustizia, istituzioni solide", "nota": "L'accesso libero e sicuro a internet è un diritto umano riconosciuto dall'ONU — ma il 37% della popolazione mondiale è ancora offline" }
+    "DC": {
+      "ref": "2.1 Interagire attraverso le tecnologie digitali",
+      "livello": "I",
+      "nota": "Lo studente usa strumenti di traceroute e DNS lookup per osservare concretamente il percorso dei dati e i nodi intermedi"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Valuing ideas",
+      "nota": "Lo studente comprende come il controllo dell'infrastruttura internet sia una leva di potere economico e politico nel XXI secolo"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente analizza le tensioni tra libertà di internet, censura di stato e governance globale sviluppando una prospettiva critica informata"
+    },
+    "EV": {
+      "ref": "SDG 9 — Infrastrutture e innovazione; SDG 16 — Pace, giustizia, istituzioni solide",
+      "nota": "L'accesso libero e sicuro a internet è un diritto umano riconosciuto dall'ONU — ma il 37% della popolazione mondiale è ancora offline"
+    }
   },
   "outputApp": {
     "quiz": "Scenario geopolitico: 'Un paese taglia i cavi sottomarini che collegano un'isola al mondo — quali servizi smettono di funzionare nell'ora 1? Nel giorno 1? Nella settimana 1?' Analisi a cascata con feedback.",
@@ -22,10 +35,25 @@
     "visual": "Mappa mondiale dei cavi sottomarini con evidenziati i 5 chokepoint critici — con note su chi li possiede.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": ["MC-COM-3-01"],
-  "tags": ["internet", "cavi sottomarini", "infrastruttura", "governance", "sovranità digitale", "censura", "net neutrality", "classe-3", "COM"],
+  "prerequisiti": [
+    "MC-COM-3-01"
+  ],
+  "tags": [
+    "internet",
+    "cavi sottomarini",
+    "infrastruttura",
+    "governance",
+    "sovranità digitale",
+    "censura",
+    "net neutrality",
+    "classe-3",
+    "COM"
+  ],
   "compito_realta": "Usando uno strumento di traceroute online (traceroute.org o simile), traccia il percorso di un pacchetto dati da Roma a tre destinazioni diverse (Tokyo, New York, Nairobi): conta i nodi intermedi, identifica i paesi attraversati e scrivi una relazione di 5-8 righe su cosa hai scoperto.",
-  "sdg": [9, 16],
+  "sdg": [
+    9,
+    16
+  ],
   "sdg_principale": 9,
   "note_didattiche": {
     "base": "Fornire i risultati del traceroute già eseguiti su 2 destinazioni. Lo studente deve solo interpretare i dati e rispondere a 3 domande guidate.",
@@ -35,20 +63,42 @@
     "titolo": "Il cavo che tiene in piedi internet",
     "oggetto_reale": "cavo sottomarino transatlantico",
     "domanda_avvio": "Se un peschereccio strappasse accidentalmente il cavo che collega Europa e America, cosa smetterebbe di funzionare?",
-    "durata_min": 2,
-    "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica."
+    "durata_min": 0.8,
+    "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica.",
+    "durata_secondi": 47
   },
   "professione_futura": {
     "titolo": "Internet Infrastructure Analyst",
     "orizzonte": "2030",
     "descrizione_breve": "Monitora la resilienza dell'infrastruttura internet globale, analizza vulnerabilità geopolitiche e supporta decisioni di governance digitale per governi e organizzazioni internazionali.",
-    "competenze_chiave": ["reti TCP/IP avanzate", "geopolitica digitale", "sicurezza delle infrastrutture critiche", "analisi dei dati di rete"]
+    "competenze_chiave": [
+      "reti TCP/IP avanzate",
+      "geopolitica digitale",
+      "sicurezza delle infrastrutture critiche",
+      "analisi dei dati di rete"
+    ]
   },
   "clil_termini": [
-    { "italiano": "cavo sottomarino", "inglese": "submarine cable", "pronuncia_ipa": "/ˈsʌbməriːn ˈkeɪbl/" },
-    { "italiano": "sovranità digitale", "inglese": "digital sovereignty", "pronuncia_ipa": "/ˈdɪdʒɪtəl ˈsɒvrənti/" },
-    { "italiano": "neutralità della rete", "inglese": "net neutrality", "pronuncia_ipa": "/net njuːˈtræləti/" },
-    { "italiano": "sistema dei nomi di dominio", "inglese": "Domain Name System (DNS)", "pronuncia_ipa": "/dəˈmeɪn neɪm ˈsɪstəm/" }
+    {
+      "italiano": "cavo sottomarino",
+      "inglese": "submarine cable",
+      "pronuncia_ipa": "/ˈsʌbməriːn ˈkeɪbl/"
+    },
+    {
+      "italiano": "sovranità digitale",
+      "inglese": "digital sovereignty",
+      "pronuncia_ipa": "/ˈdɪdʒɪtəl ˈsɒvrənti/"
+    },
+    {
+      "italiano": "neutralità della rete",
+      "inglese": "net neutrality",
+      "pronuncia_ipa": "/net njuːˈtræləti/"
+    },
+    {
+      "italiano": "sistema dei nomi di dominio",
+      "inglese": "Domain Name System (DNS)",
+      "pronuncia_ipa": "/dəˈmeɪn neɪm ˈsɪstəm/"
+    }
   ],
   "uda_collegata": "UDA-2",
   "stem_connections": {

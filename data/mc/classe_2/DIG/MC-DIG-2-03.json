@@ -60,8 +60,9 @@
     "titolo": "Chi comanda davvero nel tuo computer?",
     "oggetto_reale": "il task manager / Activity Monitor",
     "domanda_avvio": "Hai mai aperto il task manager e ti sei chiesto: ma cosa sono tutti questi processi misteriosi che girano in background?",
-    "durata_min": 2,
-    "note_script": "Usare la metafora del SO come 'direttore d'orchestra': senza di lui ogni applicazione suonerebbe per conto suo e nessuno si sentirebbe. Raccontare cosa succede quando si apre un'app: il SO alloca memoria, crea un processo, assegna il processore a turno. Dato sorprendente: su un computer normale girano sempre tra 50 e 200 processi anche quando 'non stai facendo niente'. Tono: curioso, tecnico ma accessibile."
+    "durata_min": 0.9,
+    "note_script": "Usare la metafora del SO come 'direttore d'orchestra': senza di lui ogni applicazione suonerebbe per conto suo e nessuno si sentirebbe. Raccontare cosa succede quando si apre un'app: il SO alloca memoria, crea un processo, assegna il processore a turno. Dato sorprendente: su un computer normale girano sempre tra 50 e 200 processi anche quando 'non stai facendo niente'. Tono: curioso, tecnico ma accessibile.",
+    "durata_secondi": 56
   },
   "professione_futura": {
     "titolo": "DevOps Engineer",

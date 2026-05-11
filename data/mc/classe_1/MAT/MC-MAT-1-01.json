@@ -48,7 +48,10 @@
     "foundation"
   ],
   "compito_realta": "Analizza 5 oggetti di casa: per ognuno identifica la materia prima principale, una proprietà che lo rende adatto alla sua funzione, e come va smaltito a fine vita.",
-  "sdg": [12, 9],
+  "sdg": [
+    12,
+    9
+  ],
   "sdg_principale": 12,
   "note_didattiche": {
     "base": "Fornire scheda pre-compilata con i 5 materiali già elencati e le proprietà in lista. Lo studente deve solo abbinare materiale → proprietà → smaltimento. Ammettere l'uso del libro di testo aperto durante il compito.",
@@ -58,8 +61,9 @@
     "titolo": "Trenta materiali. Un paio di scarpe.",
     "oggetto_reale": "scarpe da ginnastica",
     "domanda_avvio": "Quanti materiali diversi pensi che contengano le tue scarpe da ginnastica?",
-    "durata_min": 2,
-    "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti."
+    "durata_min": 3.6,
+    "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti.",
+    "durata_secondi": 218
   },
   "professione_futura": {
     "titolo": "Materials Scientist circolare",

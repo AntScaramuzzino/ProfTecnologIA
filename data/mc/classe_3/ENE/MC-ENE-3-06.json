@@ -11,10 +11,23 @@
       "ref": "IN 2025 (D.M. n. 221/2025) — Conosce le tecnologie per la produzione, il trasporto e l'accumulo dell'energia; transizione energetica",
       "traguardo": "Lo studente descrive le principali tecnologie di accumulo energetico e spiega il ruolo della smart grid nella gestione delle fonti rinnovabili"
     },
-    "DC": { "ref": "5.2 Identificare i bisogni tecnologici", "livello": "A", "nota": "Lo studente usa strumenti di simulazione (PVGIS, calcolatori online) per dimensionare un sistema di accumulo e valuta payback e impatto sulle emissioni" },
-    "EC": { "ref": "Ideas and opportunities / Sustainability", "nota": "Lo studente valuta la fattibilità economica di sistemi di accumulo domestici e scolastici, comprendendo il concetto di payback period" },
-    "LC": { "ref": "Thinking / Systems thinking", "nota": "Lo studente analizza la smart grid come sistema complesso che integra produzione distribuita, accumulo, consumo e gestione digitale dei flussi energetici" },
-    "EV": { "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Cambiamento climatico", "nota": "L'accumulo energetico è il collo di bottiglia della transizione alle rinnovabili — senza di esso la decarbonizzazione è impossibile" }
+    "DC": {
+      "ref": "5.2 Identificare i bisogni tecnologici",
+      "livello": "A",
+      "nota": "Lo studente usa strumenti di simulazione (PVGIS, calcolatori online) per dimensionare un sistema di accumulo e valuta payback e impatto sulle emissioni"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente valuta la fattibilità economica di sistemi di accumulo domestici e scolastici, comprendendo il concetto di payback period"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente analizza la smart grid come sistema complesso che integra produzione distribuita, accumulo, consumo e gestione digitale dei flussi energetici"
+    },
+    "EV": {
+      "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Cambiamento climatico",
+      "nota": "L'accumulo energetico è il collo di bottiglia della transizione alle rinnovabili — senza di esso la decarbonizzazione è impossibile"
+    }
   },
   "outputApp": {
     "quiz": "Scenario: 'Un impianto FV da 6 kWp produce 25 kWh/giorno in estate. La famiglia consuma 10 kWh/giorno. Quanta energia va in rete? Che batteria servirebbe?' Calcolo guidato.",
@@ -22,10 +35,25 @@
     "visual": "Infografica: una giornata di energia in una casa con FV + batteria — flussi di produzione, autoconsumo, accumulo, vendita, prelievo nelle 24h.",
     "livelloDigComp": "A"
   },
-  "prerequisiti": ["MC-ENE-3-03", "MC-ENE-3-04"],
-  "tags": ["accumulo energetico", "smart grid", "batterie litio", "idrogeno verde", "transizione energetica", "V2G", "classe-3", "ENE"],
+  "prerequisiti": [
+    "MC-ENE-3-03",
+    "MC-ENE-3-04"
+  ],
+  "tags": [
+    "accumulo energetico",
+    "smart grid",
+    "batterie litio",
+    "idrogeno verde",
+    "transizione energetica",
+    "V2G",
+    "classe-3",
+    "ENE"
+  ],
   "compito_realta": "Progetta il sistema di accumulo per la scuola fotovoltaica del tuo comune: usando dati reali di produzione FV e consumo scolastico, dimensiona la batteria, calcola il payback period e stima la riduzione annua di CO₂. Presenta la proposta come relazione tecnica per il consiglio di istituto.",
-  "sdg": [7, 13],
+  "sdg": [
+    7,
+    13
+  ],
   "sdg_principale": 7,
   "note_didattiche": {
     "base": "Concentrarsi sul concetto qualitativo di accumulo — perché serve, che forme esistono, senza calcoli. Usare l'analogia della cisterna d'acqua per l'accumulo pompato.",
@@ -35,20 +63,42 @@
     "titolo": "L'isola che produce più energia di quanta ne consuma",
     "oggetto_reale": "turbina eolica su Samsø, Danimarca",
     "domanda_avvio": "Se potessimo immagazzinare l'energia del sole e del vento, avremmo già risolto il problema climatico?",
-    "durata_min": 2,
-    "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica."
+    "durata_min": 0.9,
+    "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica.",
+    "durata_secondi": 56
   },
   "professione_futura": {
     "titolo": "Energy Storage Engineer",
     "orizzonte": "2035",
     "descrizione_breve": "Progetta e dimensiona sistemi di accumulo energetico per edifici, quartieri e reti elettriche, ottimizzando l'integrazione con le fonti rinnovabili e la smart grid.",
-    "competenze_chiave": ["elettrochimica delle batterie", "gestione dei sistemi energetici", "simulazione energetica", "analisi economica LCA"]
+    "competenze_chiave": [
+      "elettrochimica delle batterie",
+      "gestione dei sistemi energetici",
+      "simulazione energetica",
+      "analisi economica LCA"
+    ]
   },
   "clil_termini": [
-    { "italiano": "accumulo energetico", "inglese": "energy storage", "pronuncia_ipa": "/ˈenədʒi ˈstɔːrɪdʒ/" },
-    { "italiano": "rete elettrica intelligente", "inglese": "smart grid", "pronuncia_ipa": "/smɑːt ɡrɪd/" },
-    { "italiano": "idrogeno verde", "inglese": "green hydrogen", "pronuncia_ipa": "/ɡriːn ˈhaɪdrədʒən/" },
-    { "italiano": "veicolo come batteria", "inglese": "vehicle-to-grid (V2G)", "pronuncia_ipa": "/ˈviːɪkl tə ɡrɪd/" }
+    {
+      "italiano": "accumulo energetico",
+      "inglese": "energy storage",
+      "pronuncia_ipa": "/ˈenədʒi ˈstɔːrɪdʒ/"
+    },
+    {
+      "italiano": "rete elettrica intelligente",
+      "inglese": "smart grid",
+      "pronuncia_ipa": "/smɑːt ɡrɪd/"
+    },
+    {
+      "italiano": "idrogeno verde",
+      "inglese": "green hydrogen",
+      "pronuncia_ipa": "/ɡriːn ˈhaɪdrədʒən/"
+    },
+    {
+      "italiano": "veicolo come batteria",
+      "inglese": "vehicle-to-grid (V2G)",
+      "pronuncia_ipa": "/ˈviːɪkl tə ɡrɪd/"
+    }
   ],
   "uda_collegata": "UDA-2",
   "stem_connections": {
