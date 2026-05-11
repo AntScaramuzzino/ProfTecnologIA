@@ -119,6 +119,14 @@ export function getPrimaryVisual(mcId: string): VisualAsset | null {
   return getVisualAssets(mcId)[0] ?? null;
 }
 
+const PUBLIC_AUDIO_ROOT = path.join(process.cwd(), "public", "assets", "audio");
+
+export function getMCHookAudio(mcId: string): string | null {
+  const file = path.join(PUBLIC_AUDIO_ROOT, `${mcId}_hook-audio.mp3`);
+  if (!fs.existsSync(file)) return null;
+  return `${PUBLIC_BASE_PATH}/assets/audio/${mcId}_hook-audio.mp3`;
+}
+
 function assetRank(name: string): number {
   // Rank 0 — infografiche (migliore per card hero e dettaglio)
   if (name.includes("infografica") || name.includes("img2-infografica")) return 0;

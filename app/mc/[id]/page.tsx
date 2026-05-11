@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
 import MCVisual from "@/components/MCVisual";
 import QuizWidget from "@/components/mc/QuizWidget";
+import AudioPlayer from "@/components/mc/AudioPlayer";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
-import { getMCTextContent, getVisualAssets } from "@/lib/content-loader";
+import { getMCTextContent, getVisualAssets, getMCHookAudio } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
 interface Props {
@@ -24,6 +25,7 @@ export default async function MCPage({ params }: Props) {
   const visuals = getVisualAssets(mc.id);
   const primaryVisual = visuals[0] ?? null;
   const text = getMCTextContent(mc.id);
+  const hookAudioSrc = getMCHookAudio(mc.id);
   const prereqs = getPrerequisiteChain(mc.id);
   const related = getAllMCs()
     .filter((item) => item.area === mc.area && item.id !== mc.id)
@@ -80,17 +82,29 @@ export default async function MCPage({ params }: Props) {
               <div className={cx("divide-y divide-slate-200", text.intro ? "mt-6 sm:mt-7" : "")}>
                 {text.sections.map((section) => {
                   const isInnesca = /innesca/i.test(section.title);
-                  const domanda = isInnesca
-                    ? mc.hook_audio?.domanda_avvio
-                    : null;
+                  const domanda   = isInnesca ? mc.hook_audio?.domanda_avvio : null;
+                  const hookTitle = mc.hook_audio?.titolo ?? `Hook audio — ${mc.titolo}`;
+                  const hookMin   = mc.hook_audio?.durata_min;
                   return (
                     <article key={section.title} className="py-6 first:pt-0 last:pb-0 sm:py-8">
                       <h2 className="text-xl font-black leading-tight text-slate-950 sm:text-2xl">{section.title}</h2>
+
+                      {/* Player audio hook — visibile solo nella sezione INNESCA */}
+                      {isInnesca && hookAudioSrc && (
+                        <AudioPlayer
+                          src={hookAudioSrc}
+                          titolo={hookTitle}
+                          durata={hookMin}
+                        />
+                      )}
+
+                      {/* Domanda stimolo in evidenza gialla */}
                       {domanda && (
                         <p className="mt-3 rounded-xl border border-yellow-300 bg-yellow-50 px-4 py-3 text-base font-bold leading-snug text-yellow-900 sm:mt-4 sm:text-lg">
                           💬 {domanda}
                         </p>
                       )}
+
                       <ReadableText value={section.body} className="mt-3 sm:mt-4" />
                     </article>
                   );
