@@ -558,9 +558,9 @@ export function MCPageClient({
     return map;
   }, [text]);
 
-  // Filtra i tab disponibili (solo quelli con contenuto nel MD)
-  const availableTabs = ZONE_TABS.filter((tab) => sectionMap.has(tab.id));
-  // Se nessun tab riconosciuto, mostra tutti e 5 come placeholder
+  // Tab con contenuto MD + RIPASSA (sempre presente, non dipende dal Markdown)
+  const ALWAYS_VISIBLE = new Set(["RIPASSA"]);
+  const availableTabs = ZONE_TABS.filter((tab) => sectionMap.has(tab.id) || ALWAYS_VISIBLE.has(tab.id));
   const tabs = availableTabs.length > 0 ? availableTabs : ZONE_TABS;
 
   const agisciRawBody = getAgisciRawBody(text);
