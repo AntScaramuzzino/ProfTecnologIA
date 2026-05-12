@@ -38,6 +38,8 @@ import MCVisual from "@/components/MCVisual";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
+import SintesiCornell from "@/components/mc/SintesiCornell";
+import MappaConcettuale from "@/components/mc/MappaConcettuale";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
@@ -64,6 +66,7 @@ const ZONE_TABS: NavigatorTab[] = [
   { id: "OSSERVA",    label: "OSSERVA",    emoji: "🔍" },
   { id: "SPERIMENTA", label: "SPERIMENTA", emoji: "🔬" },
   { id: "AGISCI",     label: "AGISCI",     emoji: "🌍" },
+  { id: "RIPASSA",    label: "RIPASSA",    emoji: "🃏" },
 ];
 
 function sectionToTabId(title: string): string | null {
@@ -309,6 +312,9 @@ function ZonePanel({
   areaHex,
   resourcesSummary,
   onNavigate,
+  text,
+  quizData,
+  flashcards,
 }: {
   tabId: string;
   section: { title: string; body: string } | undefined;
@@ -323,7 +329,49 @@ function ZonePanel({
   resourcesSummary?: ResourcesSummary;
   /** P1.3 — naviga programmaticamente ad altra zona */
   onNavigate?: (zoneId: string) => void;
+  text?: MCTextContent | null;
+  quizData?: QuizQuestion[] | null;
+  flashcards?: FlashcardItem[];
 }) {
+  // ── RIPASSA — non dipende da sezione MD, render sempre ───────────────────
+  if (tabId === "RIPASSA") {
+    return (
+      <div className="space-y-8 px-4 py-6 sm:px-6">
+        {/* Quiz interattivo */}
+        {quizData && quizData.length > 0 && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              🎯 Quiz di autovalutazione
+            </p>
+            <QuizWidget
+              mcId={mc.id}
+              livello={mc.outputApp.livelloDigComp === "H" ? "A" : mc.outputApp.livelloDigComp as "F" | "I" | "A"}
+              quizData={quizData}
+            />
+          </div>
+        )}
+
+        {/* Flashcard deck */}
+        {flashcards && flashcards.length > 0 && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              🃏 Flashcard
+            </p>
+            <FlashcardDeck cards={flashcards} mcTitolo={mc.titolo} />
+          </div>
+        )}
+
+        {(!quizData || quizData.length === 0) && (!flashcards || flashcards.length === 0) && (
+          <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
+            <p className="text-sm text-slate-500">
+              Quiz e flashcard per questa MC saranno disponibili prossimamente.
+            </p>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   if (!section) {
     return (
       <div className="px-4 py-10 text-center text-slate-400 sm:px-6">
@@ -553,69 +601,12 @@ export function MCPageClient({
             areaHex={areaHex}
             resourcesSummary={resourcesSummary}
             onNavigate={navigateToTab}
+            text={text}
+            quizData={quizData}
+            flashcards={flashcards}
           />
         )}
       </MCNavigator>
-
-      {/* ── Ripasso — Quiz + Flashcard + Interattivi microlearning ── */}
-      {(quizData || flashcards.length > 0 || microlearningData) && (
-        <section className="border-t border-slate-100 bg-gradient-to-b from-slate-50 to-white px-4 py-8 sm:px-6 sm:py-10">
-          <div className="mb-6 flex items-center gap-3">
-            <span className="text-xs font-black uppercase tracking-widest text-indigo-500">🃏 Ripasso</span>
-            <div className="h-px flex-1 bg-slate-200" />
-            {microlearningData && (
-              <span className="rounded-full bg-indigo-50 border border-indigo-200 px-2.5 py-0.5 text-xs font-bold text-indigo-600">
-                ✦ modulo microlearning
-              </span>
-            )}
-          </div>
-
-          {/* Process cliccabile — se generato dall'agente */}
-          {microlearningData?.process && (
-            <div className="mb-8">
-              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Processo</p>
-              <ProcessWidget
-                titolo={microlearningData.process.titolo}
-                steps={microlearningData.process.steps}
-                areaHex={areaHex}
-              />
-            </div>
-          )}
-
-          {/* Checklist operativa — se generata dall'agente */}
-          {microlearningData?.checklist && (
-            <div className="mb-8">
-              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Checklist</p>
-              <ChecklistWidget
-                titolo={microlearningData.checklist.titolo}
-                istruzione={microlearningData.checklist.istruzione}
-                voci={microlearningData.checklist.voci}
-                areaHex={areaHex}
-              />
-            </div>
-          )}
-
-          {/* Quiz interattivo */}
-          {quizData && (
-            <div className={flashcards.length > 0 ? "mb-10" : ""}>
-              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Quiz</p>
-              <QuizWidget
-                mcId={mc.id}
-                livello={mcLevel}
-                quizData={quizData}
-              />
-            </div>
-          )}
-
-          {/* Flashcard */}
-          {flashcards.length > 0 && (
-            <div>
-              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Flashcard</p>
-              <FlashcardDeck cards={flashcards} mcTitolo={mc.titolo} />
-            </div>
-          )}
-        </section>
-      )}
 
       {/* ── APPENDICE — fuori dai tab, sempre visibile ── */}
       {appendiceSection && (
