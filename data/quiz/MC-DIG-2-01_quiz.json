@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIG-2-01",
-  "titolo": "Pensiero computazionale e problem solving",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è un algoritmo?",
+      "domanda": "Cos'è la 'decomposizione del problema' nel pensiero computazionale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un tipo di linguaggio di programmazione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Dividere un problema grande in sottoproblemi più piccoli, ciascuno risolvibile separatamente",
+          "corretto": true,
+          "feedback": "Esatto! La decomposizione è la prima strategia del pensiero computazionale: si scompone 'costruire un quiz interattivo' in 'mostrare la domanda', 'controllare la risposta', 'aggiornare il punteggio'."
         },
         {
           "id": "b",
-          "testo": "Una sequenza finita di istruzioni per risolvere un problema o completare un compito",
-          "corretto": true,
-          "feedback": "Esatto! Un algoritmo può essere scritto in italiano prima ancora che in codice: è la ricetta del problema."
+          "testo": "Trovare l'errore (bug) in un programma e correggerlo",
+          "corretto": false,
+          "feedback": "Non è corretto. Trovare e correggere gli errori si chiama debugging. La decomposizione riguarda come si affronta un problema complesso dividendolo in parti.",
+          "riferimento": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
         },
         {
           "id": "c",
-          "testo": "Un programma installato sul computer",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tradurre un algoritmo nel linguaggio di programmazione Scratch",
+          "corretto": false,
+          "feedback": "Non è corretto. Tradurre un algoritmo in codice è la fase di implementazione. La decomposizione è una strategia di analisi del problema che viene prima.",
+          "riferimento": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
         },
         {
           "id": "d",
-          "testo": "Un errore nel codice sorgente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rimuovere le parti inutili di un programma per renderlo più veloce",
+          "corretto": false,
+          "feedback": "Non è corretto. Rimuovere le parti inutili si chiama ottimizzazione. La decomposizione è una strategia per affrontare problemi complessi.",
+          "riferimento": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
         }
       ],
-      "spiegazione": "Un algoritmo può essere scritto in italiano prima ancora che in codice: è la ricetta del problema."
+      "spiegazione": "La decomposizione è dividere un problema complesso in sottoproblemi più piccoli e gestibili. 'Costruire un quiz interattivo' è troppo grande per essere risolto in un colpo solo. Ma 'mostrare la domanda', 'controllare la risposta', 'aggiornare il punteggio' sono problemi piccoli, ognuno risolvibile in pochi blocchi.",
+      "riferimento_principale": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è la 'decomposizione' nel pensiero computazionale?",
+      "domanda": "Cosa fa la struttura 'if/else' (selezione) in un programma?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La suddivisione di un computer nei suoi componenti hardware",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ripete un blocco di istruzioni per un numero prefissato di volte",
+          "corretto": false,
+          "feedback": "Non è corretto. Ripetere le istruzioni è compito dell'iterazione (ciclo/loop), non della selezione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
         },
         {
           "id": "b",
-          "testo": "La strategia di scomporre un problema complesso in sotto-problemi più piccoli e gestibili",
+          "testo": "Controlla una condizione e sceglie quale ramo di codice eseguire",
           "corretto": true,
-          "feedback": "Esatto! 'Come mangio un elefante? Un morso alla volta."
+          "feedback": "Esatto! La selezione (if/else) è una biforcazione: se la risposta è corretta → aggiungi un punto; altrimenti → mostra il feedback e riprova."
         },
         {
           "id": "c",
-          "testo": "Il processo di smontare un programma per trovare i bug",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Esegue le istruzioni una dopo l'altra in ordine fisso",
+          "corretto": false,
+          "feedback": "Non è corretto. Eseguire le istruzioni in ordine fisso è la sequenza, non la selezione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
         },
         {
           "id": "d",
-          "testo": "La divisione dei dati in blocchi per la trasmissione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Crea una variabile e le assegna un valore",
+          "corretto": false,
+          "feedback": "Non è corretto. Creare e assegnare variabili è un'operazione separata. La selezione (if/else) controlla condizioni e sceglie tra rami alternativi.",
+          "riferimento": "📖 ESPLORA — Variabili e operatori"
         }
       ],
-      "spiegazione": "'Come mangio un elefante? Un morso alla volta.' La decomposizione rende gestibili i problemi apparentemente impossibili."
+      "spiegazione": "La selezione (if/else) è una delle tre strutture fondamentali: controlla una condizione e sceglie quale ramo del programma eseguire. Rende il programma 'intelligente' perché può reagire a situazioni diverse in modo diverso. Esempio: se risposta corretta → aggiungi punto; altrimenti → mostra feedback.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il 'riconoscimento di pattern'?",
+      "domanda": "Cosa è una 'variabile' in programmazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La capacità di un antivirus di riconoscere i virus",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un tipo di errore che cambia il comportamento del programma",
+          "corretto": false,
+          "feedback": "Non è corretto. Un errore nel programma si chiama bug. Una variabile è un contenitore per i dati.",
+          "riferimento": "📖 ESPLORA — Variabili e operatori"
         },
         {
           "id": "b",
-          "testo": "L'identificazione di regolarità, similitudini e strutture ricorrenti nei dati o nei problemi",
+          "testo": "Un contenitore con un nome che conserva un valore che può cambiare durante l'esecuzione",
           "corretto": true,
-          "feedback": "Esatto! Riconoscere che 'tutti i cicli vitali hanno le stesse fasi' è pattern recognition: permette di applicare soluzioni già note a problemi nuovi."
+          "feedback": "Esatto! La variabile 'punteggio' parte da 0 e aumenta di 1 a ogni risposta corretta. Il valore cambia, ma il nome rimane lo stesso."
         },
         {
           "id": "c",
-          "testo": "La codifica dei dati in schemi visivi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una struttura che ripete le istruzioni finché una condizione è vera",
+          "corretto": false,
+          "feedback": "Non è corretto. Ripetere le istruzioni finché una condizione è vera è un ciclo (iterazione), non una variabile.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
         },
         {
           "id": "d",
-          "testo": "Il riconoscimento facciale tramite fotocamera",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il tipo di blocco in Scratch che rappresenta il personaggio sullo schermo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il personaggio sullo schermo in Scratch si chiama sprite. Una variabile è un contenitore per i dati del programma.",
+          "riferimento": "📖 ESPLORA — Scratch: l'ambiente di programmazione a blocchi"
         }
       ],
-      "spiegazione": "Riconoscere che 'tutti i cicli vitali hanno le stesse fasi' è pattern recognition: permette di applicare soluzioni già note a problemi nuovi."
+      "spiegazione": "Una variabile è un contenitore con un nome che conserva un valore. Nel quiz: 'punteggio' parte da 0 e aumenta a ogni risposta corretta; 'domanda_corrente' tiene traccia di quale domanda siamo; 'risposta_utente' contiene quello che l'utente ha digitato. Le variabili sono fondamentali per la selezione (if).",
+      "riferimento_principale": "📖 ESPLORA — Variabili e operatori"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cos'è lo 'stage' (palcoscenico) in Scratch?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La finestra dove si scrivono le istruzioni del programma",
+          "corretto": false,
+          "feedback": "Non è corretto. Le istruzioni si assemblano nella zona degli script. Lo stage è dove si vede l'esecuzione del programma.",
+          "riferimento": "📖 ESPLORA — Scratch: l'ambiente di programmazione a blocchi"
+        },
+        {
+          "id": "b",
+          "testo": "L'area dove si vede l'esecuzione del programma, con i personaggi che si muovono",
+          "corretto": true,
+          "feedback": "Esatto! Lo stage è il 'palcoscenico' di Scratch: l'area a destra dove si vede il programma in funzione, con gli sprite che si muovono e le immagini che appaiono."
+        },
+        {
+          "id": "c",
+          "testo": "Il pannello con tutti i blocchi di codice disponibili",
+          "corretto": false,
+          "feedback": "Non è corretto. Il pannello con i blocchi si chiama 'palette dei blocchi'. Lo stage è l'area di esecuzione visiva.",
+          "riferimento": "📖 ESPLORA — Scratch: l'ambiente di programmazione a blocchi"
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema di punteggio automatico del gioco",
+          "corretto": false,
+          "feedback": "Non è corretto. Il punteggio è gestito da variabili nel codice. Lo stage è l'area visiva di esecuzione del programma.",
+          "riferimento": "📖 ESPLORA — Variabili e operatori"
+        }
+      ],
+      "spiegazione": "Lo stage (palcoscenico) è l'area di Scratch dove si vede l'esecuzione del programma: i personaggi (sprite) si muovono, le immagini appaiono, i testi vengono visualizzati. Il programmatore assembla i blocchi nella zona script; il risultato si vede nello stage.",
+      "riferimento_principale": "📖 ESPLORA — Scratch: l'ambiente di programmazione a blocchi"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quali sono le tre strutture fondamentali con cui si costruisce qualsiasi programma?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sprite, costumi e suoni",
+          "corretto": false,
+          "feedback": "Non è corretto. Sprite, costumi e suoni sono elementi dell'ambiente Scratch, non le strutture logiche fondamentali della programmazione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "b",
+          "testo": "Sequenza, selezione (if/else) e iterazione (ciclo)",
+          "corretto": true,
+          "feedback": "Esatto! Qualsiasi programma — dal sistema operativo a un videogioco — è costruito combinando solo queste tre strutture: sequenza (istruzioni in ordine), selezione (if/else), iterazione (ciclo)."
+        },
+        {
+          "id": "c",
+          "testo": "Variabili, liste e operatori",
+          "corretto": false,
+          "feedback": "Non è corretto. Variabili, liste e operatori sono componenti importanti, ma non le strutture di controllo fondamentali.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "d",
+          "testo": "Input, elaborazione e output",
+          "corretto": false,
+          "feedback": "Non è corretto. Input, elaborazione e output descrivono il flusso di dati in un sistema, non le strutture logiche della programmazione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        }
+      ],
+      "spiegazione": "Le tre strutture fondamentali della programmazione sono: sequenza (istruzioni eseguite una dopo l'altra), selezione (if/else: scelta tra rami alternativi basata su una condizione), iterazione (ciclo/loop: un blocco che si ripete). Qualsiasi programma al mondo è costruito combinando queste tre strutture.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa fa il 'broadcast' (trasmissione) in Scratch?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Trasmette il programma su internet per condividerlo con altri",
+          "corretto": false,
+          "feedback": "Non è corretto. Il broadcast in Scratch è un meccanismo di comunicazione interna tra sprite, non una pubblicazione su internet.",
+          "riferimento": "📖 ESPLORA — Il sistema degli eventi e del broadcast"
+        },
+        {
+          "id": "b",
+          "testo": "Permette a uno sprite di inviare un messaggio a tutti gli altri sprite per coordinarsi",
+          "corretto": true,
+          "feedback": "Esatto! Il broadcast permette a sprite diversi di comunicare: quando una domanda viene risposta, lo sprite della domanda manda un broadcast 'prossima_domanda' e lo sprite del punteggio risponde."
+        },
+        {
+          "id": "c",
+          "testo": "Riproduce un suono ad alto volume per tutti gli utenti",
+          "corretto": false,
+          "feedback": "Non è corretto. Per riprodurre suoni in Scratch si usano i blocchi della categoria 'Suono'. Il broadcast è un meccanismo di comunicazione tra sprite.",
+          "riferimento": "📖 ESPLORA — Il sistema degli eventi e del broadcast"
+        },
+        {
+          "id": "d",
+          "testo": "Mostra il punteggio finale a fine quiz",
+          "corretto": false,
+          "feedback": "Non è corretto. Mostrare il punteggio si fa con i blocchi di aspetto. Il broadcast è usato per coordinare l'esecuzione di script tra sprite diversi.",
+          "riferimento": "📖 ESPLORA — Il sistema degli eventi e del broadcast"
+        }
+      ],
+      "spiegazione": "Il broadcast (trasmissione) in Scratch permette a uno sprite di inviare un messaggio a tutti gli altri sprite. È il meccanismo di coordinazione: quando lo sprite della domanda risponde correttamente, manda un broadcast 'prossima_domanda', e lo sprite del punteggio aggiunge 1 al punteggio quando riceve quel messaggio.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema degli eventi e del broadcast"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è la 'pseudocodifica'?",
+      "domanda": "Un quiz in Scratch gestisce le domande con tre liste separate: 'domande', 'risposte_corrette' e 'feedback_sbagliato'. Qual è il vantaggio di questa struttura rispetto a gestire ogni domanda con blocchi separati?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un linguaggio di programmazione semplificato per principianti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le liste sono più veloci da eseguire rispetto ai blocchi singoli",
+          "corretto": false,
+          "feedback": "Non è corretto. Il vantaggio delle liste non è la velocità di esecuzione, ma la scalabilità e la gestione uniforme dei dati.",
+          "riferimento": "📖 ESPLORA — Le liste: gestire insiemi di dati"
         },
         {
           "id": "b",
-          "testo": "Un modo informale di descrivere un algoritmo usando linguaggio naturale strutturato, prima di tradurlo in codice",
+          "testo": "Lo stesso codice (struttura if + domanda_corrente) funziona per tutte le domande: cambiando le liste si aggiunge o modifica il quiz senza riscrivere il codice",
           "corretto": true,
-          "feedback": "Esatto! La pseudocodifica aiuta a pensare alla logica prima di preoccuparsi della sintassi."
+          "feedback": "Esatto! Con le liste, lo script è sempre lo stesso: 'mostra elemento n di domande', 'confronta risposta con elemento n di risposte_corrette'. Aggiungere una domanda significa solo aggiungere un elemento alle liste."
         },
         {
           "id": "c",
-          "testo": "Il codice scritto con errori grammaticali che il computer corregge",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le liste permettono di mostrare le domande in colori diversi automaticamente",
+          "corretto": false,
+          "feedback": "Non è corretto. I colori degli elementi si gestiscono con i blocchi dell'aspetto. Le liste gestiscono i dati, non l'aspetto visivo.",
+          "riferimento": "📖 ESPLORA — Le liste: gestire insiemi di dati"
         },
         {
           "id": "d",
-          "testo": "La traduzione automatica tra linguaggi di programmazione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le liste sono l'unico modo per fare un quiz in Scratch con più di 3 domande",
+          "corretto": false,
+          "feedback": "Non è corretto. Si può fare un quiz con più domande anche senza liste (con blocchi separati), ma diventa molto ripetitivo e difficile da modificare.",
+          "riferimento": "📖 ESPLORA — Le liste: gestire insiemi di dati"
         }
       ],
-      "spiegazione": "La pseudocodifica aiuta a pensare alla logica prima di preoccuparsi della sintassi. È come fare lo schema di un tema prima di scriverlo."
+      "spiegazione": "Le liste permettono di usare lo stesso codice per tutte le domande. La variabile 'domanda_corrente' funziona come indice: 'mostra elemento domanda_corrente di domande'. Per aggiungere una quinta domanda basta aggiungere un elemento alle tre liste — il codice non cambia. È il principio del 'riconoscimento di schemi' nel pensiero computazionale.",
+      "riferimento_principale": "📖 ESPLORA — Le liste: gestire insiemi di dati"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è un 'caso limite' (edge case) nel testing di un algoritmo?",
+      "domanda": "Cosa significa 'debugging' nel contesto della programmazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un caso in cui l'algoritmo è particolarmente lento",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Aggiungere nuove funzionalità a un programma già funzionante",
+          "corretto": false,
+          "feedback": "Non è corretto. Aggiungere funzionalità si chiama development o feature implementation. Il debugging riguarda trovare e correggere errori.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
         },
         {
           "id": "b",
-          "testo": "Un input ai limiti del normale o inaspettato che può rivelare difetti nascosti nell'algoritmo",
+          "testo": "Il processo di identificazione e correzione degli errori (bug) nel codice",
           "corretto": true,
-          "feedback": "Esatto! Edge case: cosa succede se inserisco 0? O un numero negativo? O una stringa vuota? Testare i casi limite previene i bug in produzione."
+          "feedback": "Esatto! Il debugging occupa il 50% del tempo dei programmatori professionisti. Non è un segno di fallimento: è la parte normale del processo di sviluppo."
         },
         {
           "id": "c",
-          "testo": "Il caso più comune e frequente di utilizzo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La compilazione del codice in un linguaggio comprensibile dal computer",
+          "corretto": false,
+          "feedback": "Non è corretto. La compilazione è la traduzione del codice sorgente in linguaggio macchina. Il debugging è la ricerca e correzione degli errori.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
         },
         {
           "id": "d",
-          "testo": "Un errore critico che blocca il programma",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rimuovere gli insetti fisici dai vecchi computer a valvole",
+          "corretto": false,
+          "feedback": "Non è corretto (anche se la storia della falena di Grace Hopper è reale!). Il debugging oggi si riferisce a trovare e correggere errori logici nel software.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
         }
       ],
-      "spiegazione": "Edge case: cosa succede se inserisco 0? O un numero negativo? O una stringa vuota? Testare i casi limite previene i bug in produzione."
+      "spiegazione": "Il debugging è il processo di trovare e correggere gli errori (bug) nel codice. Esistono errori di sintassi (in Scratch quasi impossibili perché i blocchi si incastrano solo se compatibili) ed errori logici (il programma gira ma fa qualcosa di sbagliato). I programmatori trascorrono circa il 50% del tempo a fare debugging.",
+      "riferimento_principale": "📖 ESPLORA — Debug: trovare e correggere gli errori"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'complessità' di un algoritmo?",
+      "domanda": "Qual è la differenza tra un errore di sintassi e un errore logico (bug) in un programma?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Quanto è difficile capire il codice sorgente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'errore di sintassi è più grave perché distrugge il programma; l'errore logico è minore",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli errori logici sono spesso più difficili da trovare perché il programma gira normalmente ma dà risultati sbagliati.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
         },
         {
           "id": "b",
-          "testo": "La misura di quanto tempo (tempo) o memoria (spazio) richiede al crescere della dimensione del problema",
+          "testo": "L'errore di sintassi non segue le regole del linguaggio e blocca l'esecuzione; l'errore logico permette l'esecuzione ma produce risultati sbagliati",
           "corretto": true,
-          "feedback": "Esatto! Un algoritmo O(n²) diventa inutilizzabile con grandi dataset, mentre O(log n) scala bene."
+          "feedback": "Esatto! In Scratch gli errori di sintassi sono quasi impossibili (i blocchi si incastrano solo se compatibili). Gli errori logici sono quelli difficili: il programma gira ma fa la cosa sbagliata."
         },
         {
           "id": "c",
-          "testo": "Il numero di righe di codice dell'algoritmo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'errore di sintassi dipende dal sistema operativo; l'errore logico dipende dall'hardware",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambi i tipi di errore sono nel codice, non dipendono dall'hardware o dal sistema operativo.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
         },
         {
           "id": "d",
-          "testo": "La velocità del computer su cui gira",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sono la stessa cosa, chiamata in modo diverso a seconda del linguaggio di programmazione",
+          "corretto": false,
+          "feedback": "Non è corretto. Sono due categorie distinte di errori con caratteristiche molto diverse.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
         }
       ],
-      "spiegazione": "Un algoritmo O(n²) diventa inutilizzabile con grandi dataset, mentre O(log n) scala bene. La complessità determina l'applicabilità reale."
+      "spiegazione": "Errore di sintassi: il codice non segue le regole del linguaggio — in Scratch quasi impossibile perché i blocchi si incastrano solo se compatibili; nei linguaggi testuali blocca l'esecuzione. Errore logico (bug): il codice è sintatticamente corretto ma fa qualcosa di diverso dall'intenzione del programmatore. Questi sono i più difficili da trovare.",
+      "riferimento_principale": "📖 ESPLORA — Debug: trovare e correggere gli errori"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'ricorsione' nella programmazione?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Un algoritmo di raccomandazione come quello di YouTube usa una struttura 'per ogni video guardato dall'utente: trova altri utenti simili...'. Quale struttura fondamentale è questa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La ripetizione di un ciclo for",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Selezione (if/else)",
+          "corretto": false,
+          "feedback": "Non è corretto. 'Per ogni video' è una ripetizione su una lista di elementi, non una biforcazione condizionale.",
+          "riferimento": "📖 ESPLORA — Caso studio: l'algoritmo di raccomandazione di YouTube"
         },
         {
           "id": "b",
-          "testo": "Una funzione che chiama se stessa con un sotto-problema più piccolo fino a raggiungere un caso base: usata per problemi naturalmente auto-simili",
+          "testo": "Iterazione (ciclo/loop)",
           "corretto": true,
-          "feedback": "Esatto! La ricorsione è elegante per problemi come il calcolo del fattoriale o la ricerca in alberi."
+          "feedback": "Esatto! 'Per ogni video guardato dall'utente' è un ciclo che itera su una lista. Il testo mostra come l'algoritmo di YouTube sia costruito con cicli, selezioni e operazioni su variabili."
         },
         {
           "id": "c",
-          "testo": "La copia di un algoritmo in più variabili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sequenza",
+          "corretto": false,
+          "feedback": "Non è corretto. La sequenza esegue istruzioni in ordine fisso una sola volta. 'Per ogni elemento' è una ripetizione su tutti gli elementi di una collezione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
         },
         {
           "id": "d",
-          "testo": "Un tipo di ciclo infinito",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Broadcast",
+          "corretto": false,
+          "feedback": "Non è corretto. Il broadcast è un meccanismo di Scratch per la comunicazione tra sprite, non una struttura di controllo fondamentale degli algoritmi.",
+          "riferimento": "📖 ESPLORA — Il sistema degli eventi e del broadcast"
         }
       ],
-      "spiegazione": "La ricorsione è elegante per problemi come il calcolo del fattoriale o la ricerca in alberi. Rischio: stack overflow se manca il caso base."
+      "spiegazione": "L'algoritmo di YouTube è costruito con le stesse strutture fondamentali: 'per ogni video guardato dall'utente' è un ciclo (iterazione) su una lista; 'se il video è già stato guardato → salta' è una selezione; 'calcola un punteggio' è un'operazione su variabili. Il testo mostra che anche algoritmi complessi usano solo le tre strutture di base.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: l'algoritmo di raccomandazione di YouTube"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'debugging' e quali strategie usa?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Nel quiz in Scratch, la variabile 'domanda_corrente' viene usata per accedere agli elementi delle liste. Come funziona questo meccanismo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La pulizia dei file temporanei del sistema",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La variabile sceglie casualmente quale domanda mostrare ogni volta",
+          "corretto": false,
+          "feedback": "Non è corretto. La variabile 'domanda_corrente' tiene traccia della posizione sequenziale (1, 2, 3...), non di una scelta casuale.",
+          "riferimento": "📖 ESPLORA — Le liste: gestire insiemi di dati"
         },
         {
           "id": "b",
-          "testo": "Il processo sistematico di identificazione e correzione degli errori nel codice: usa print debugging, breakpoint, test unitari e rubber duck debugging",
+          "testo": "La variabile funge da indice: 'elemento domanda_corrente della lista domande' mostra la domanda nella posizione corrente",
           "corretto": true,
-          "feedback": "Esatto! Il rubber duck debugging consiste nello spiegare il codice ad alta voce (o a un'anatra di gomma): verbalizzare il problema spesso rivela l'errore."
+          "feedback": "Esatto! 'domanda_corrente' parte da 1 e aumenta di 1 dopo ogni domanda. 'Mostra elemento 3 della lista domande' mostra la terza domanda. È un accesso per indice."
         },
         {
           "id": "c",
-          "testo": "La verifica della velocità di un programma",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La variabile conta quante domande errate ha fatto l'utente",
+          "corretto": false,
+          "feedback": "Non è corretto. Le domande errate sarebbero conteggiate in una variabile separata (es. 'errori'). 'domanda_corrente' tiene la posizione nella sequenza delle domande.",
+          "riferimento": "📖 ESPLORA — Variabili e operatori"
         },
         {
           "id": "d",
-          "testo": "La documentazione del codice sorgente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La variabile contiene il testo della domanda corrente",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo della domanda è negli elementi della lista 'domande'. La variabile 'domanda_corrente' contiene solo il numero (la posizione) della domanda attuale.",
+          "riferimento": "📖 ESPLORA — Le liste: gestire insiemi di dati"
         }
       ],
-      "spiegazione": "Il rubber duck debugging consiste nello spiegare il codice ad alta voce (o a un'anatra di gomma): verbalizzare il problema spesso rivela l'errore."
+      "spiegazione": "La variabile 'domanda_corrente' funziona come indice: inizia a 1 e aumenta di 1 dopo ogni risposta. 'Mostra elemento domanda_corrente della lista domande' accede all'elemento nella posizione corrispondente. Questo meccanismo è detto 'accesso indicizzato' ed è fondamentale per gestire liste in modo dinamico.",
+      "riferimento_principale": "📖 ESPLORA — Le liste: gestire insiemi di dati"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'refactoring' del codice?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il quiz adattivo avanzato usa due blocchi di domande: uno standard e uno avanzato. Quale struttura permette di scegliere il blocco giusto dopo le prime 3 domande?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La riscrittura completa di un programma da zero",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un ciclo che ripete le domande finché l'utente non le risponde tutte correttamente",
+          "corretto": false,
+          "feedback": "Non è corretto. Un ciclo ripete le istruzioni, ma non sceglie tra blocchi diversi in base al punteggio parziale.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
         },
         {
           "id": "b",
-          "testo": "Il miglioramento della struttura interna del codice senza modificarne il comportamento esterno: rende il codice più leggibile e manutenibile",
+          "testo": "Una selezione (if/else) che controlla se 'risposte_corrette_blocco1 >= 2' e sceglie la lista avanzata o quella di base",
           "corretto": true,
-          "feedback": "Esatto! Il refactoring è come rifare l'ordine in casa: il risultato esterno (la casa funziona) non cambia, ma l'organizzazione interna è molto migliore."
+          "feedback": "Esatto! Il quiz adattivo usa una selezione: 'se risposte_corrette_blocco1 >= 2 allora usa domande_avanzate, altrimenti usa domande_base'. È logica if/else applicata all'adattività."
         },
         {
           "id": "c",
-          "testo": "La compilazione del codice in un eseguibile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una sequenza di istruzioni che mostra tutte le domande avanzate a tutti gli utenti",
+          "corretto": false,
+          "feedback": "Non è corretto. Una sequenza fissa non permette adattività. Per scegliere tra percorsi diversi serve una selezione (if/else).",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
         },
         {
           "id": "d",
-          "testo": "La correzione dei bug critici in produzione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un broadcast che invia il punteggio allo sprite della schermata finale",
+          "corretto": false,
+          "feedback": "Non è corretto. Il broadcast coordina la comunicazione tra sprite, ma la scelta del blocco di domande richiede una selezione (if/else) che valuta il punteggio.",
+          "riferimento": "📖 ESPLORA — Il sistema degli eventi e del broadcast"
         }
       ],
-      "spiegazione": "Il refactoring è come rifare l'ordine in casa: il risultato esterno (la casa funziona) non cambia, ma l'organizzazione interna è molto migliore."
+      "spiegazione": "Il quiz adattivo usa una selezione (if/else): 'Se risposte_corrette_blocco1 >= 2, allora usa la lista domande_avanzate per le ultime 2 domande; altrimenti usa domande_base.' È esattamente la logica di Duolingo e Khan Academy: reagire al livello dimostrato con domande appropriate.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Quiz adattivo con livelli di difficoltà"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "L'algoritmo di raccomandazione di YouTube non è neutrale. Quale problema etico fondamentale crea quando è ottimizzato per massimizzare il tempo di visualizzazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Rallenta il caricamento dei video perché calcola troppe raccomandazioni contemporaneamente",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema etico non riguarda le prestazioni tecniche, ma le conseguenze sulle scelte e i comportamenti degli utenti.",
+          "riferimento": "📖 ESPLORA — Caso studio: l'algoritmo di raccomandazione di YouTube"
+        },
+        {
+          "id": "b",
+          "testo": "Tende a mostrare contenuti che tengono l'utente sul sito più a lungo, che possono includere contenuti sensazionalistici o di nicchia, influenzando ciò che vede e pensa",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'chi decide cosa finisce nella lista dei candidati... sono decisioni che determinano cosa ti viene mostrato, cosa non ti viene mostrato, e indirettamente cosa impari e cosa pensi.'"
+        },
+        {
+          "id": "c",
+          "testo": "Funziona solo per gli utenti abbonati a YouTube Premium, escludendo gli altri",
+          "corretto": false,
+          "feedback": "Non è corretto. L'algoritmo di raccomandazione funziona per tutti gli utenti, non solo per i Premium.",
+          "riferimento": "📖 ESPLORA — Caso studio: l'algoritmo di raccomandazione di YouTube"
+        },
+        {
+          "id": "d",
+          "testo": "Non ha problemi etici: è solo un programma informatico senza implicazioni sociali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo afferma esplicitamente che l'algoritmo 'riflette le scelte di chi lo ha costruito' e determina 'cosa impari e cosa pensi'. Gli algoritmi non sono neutri.",
+          "riferimento": "📖 ESPLORA — Caso studio: l'algoritmo di raccomandazione di YouTube"
+        }
+      ],
+      "spiegazione": "L'algoritmo di YouTube ottimizzato per il tempo di visualizzazione può favorire contenuti che tengono l'utente incollato allo schermo — non necessariamente contenuti che gli fanno bene. Chi progetta l'algoritmo decide cosa viene mostrato e cosa non viene mostrato, influenzando indirettamente ciò che le persone imparano e pensano. 'Un algoritmo di raccomandazione non è neutrale.'",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: l'algoritmo di raccomandazione di YouTube"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il tuo quiz in Scratch non mostra il feedback per le risposte sbagliate. Come potresti trovare il bug usando la strategia di debugging del testo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Cancella tutto il codice e ricominciare da zero",
+          "corretto": false,
+          "feedback": "Non è corretto. Ricominciare da zero non è una strategia di debugging. Si isola il problema e si corregge solo la parte difettosa.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        },
+        {
+          "id": "b",
+          "testo": "Attivare la visualizzazione della variabile 'risposta_utente' sullo stage durante l'esecuzione e verificare se contiene il valore atteso al momento della selezione if/else",
+          "corretto": true,
+          "feedback": "Esatto! Il testo suggerisce: 'verifica i valori delle variabili: attiva la visualizzazione delle variabili sullo stage.' Vedere il valore di 'risposta_utente' rivela se il confronto with risposta_corretta funziona."
+        },
+        {
+          "id": "c",
+          "testo": "Aggiungere più costumi allo sprite per cambiare l'aspetto quando la risposta è sbagliata",
+          "corretto": false,
+          "feedback": "Non è corretto. I costumi riguardano l'aspetto visivo. Il problema è logico (il feedback non viene mostrato), non estetico.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        },
+        {
+          "id": "d",
+          "testo": "Pubblicare il progetto su internet e chiedere ad altri utenti di testarlo",
+          "corretto": false,
+          "feedback": "Non è corretto. Prima di pubblicare bisogna fare debugging. Chiedere aiuto a un compagno per rileggere il codice può aiutare, ma è diverso dal pubblicarlo online.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        }
+      ],
+      "spiegazione": "La strategia di debugging del testo include: '3. Verifica i valori delle variabili: attiva la visualizzazione delle variabili sullo stage.' Vedere il valore di 'risposta_utente' durante l'esecuzione rivela se il blocco 'Chiedi e aspetta' funziona, e se il confronto con 'risposte_corrette' nella selezione if è corretto. Spesso il bug è in una condizione scritta al contrario.",
+      "riferimento_principale": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché la parola 'algoritmo' viene dal nome del matematico al-Khwarizmi? Cosa ci dice questo della storia della matematica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Al-Khwarizmi ha inventato i computer nel IX secolo",
+          "corretto": false,
+          "feedback": "Non è corretto. Al-Khwarizmi era un matematico del IX secolo; i computer moderni sono stati inventati nel XX secolo.",
+          "riferimento": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
+        },
+        {
+          "id": "b",
+          "testo": "Il pensiero algoritmico ha radici profonde nella matematica islamica medievale, e le sue opere hanno introdotto in Europa anche il sistema di numerazione decimale che usiamo oggi",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'La parola algoritmo viene dal matematico persiano al-Khwarizmi. Le sue opere hanno introdotto in Europa il concetto di algoritmo e il sistema di numerazione decimale.'"
+        },
+        {
+          "id": "c",
+          "testo": "Gli algoritmi possono essere usati solo in matematica, non in altre discipline",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli algoritmi si applicano a qualsiasi dominio: cucinare una ricetta, seguire istruzioni di montaggio, risolvere un problema di matematica — tutti sono algoritmi.",
+          "riferimento": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
+        },
+        {
+          "id": "d",
+          "testo": "La parola algoritmo è moderna, inventata nei laboratori del MIT negli anni '60",
+          "corretto": false,
+          "feedback": "Non è corretto. La parola 'algoritmo' deriva dal nome al-Khwarizmi, matematico persiano del IX secolo. Il MIT ha contribuito allo sviluppo del CAD e dell'informatica moderna, ma non all'invenzione del termine.",
+          "riferimento": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
+        }
+      ],
+      "spiegazione": "La parola 'algoritmo' deriva dal nome del matematico persiano Muhammad ibn Musa al-Khwarizmi (IX secolo). Le sue opere, tradotte in latino nel Medioevo, introdussero in Europa sia il concetto di algoritmo (procedura risolutiva) sia il sistema di numerazione decimale. Questo mostra come la matematica moderna sia costruita su contributi di culture diverse.",
+      "riferimento_principale": "📖 ESPLORA — Prima del codice: il pensiero computazionale"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo dice che il quiz ha bisogno di un 'feedback per risposta sbagliata che spieghi perché quella risposta è sbagliata'. Perché questo è pedagogicamente importante rispetto a scrivere solo 'sbagliato'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché il testo del feedback più lungo fa sembrare il quiz più professionale",
+          "corretto": false,
+          "feedback": "Non è corretto. La lunghezza non è il valore pedagogico. Il valore è nella spiegazione del concetto errato che aiuta la comprensione.",
+          "riferimento": "🌍 AGISCI — Rubrica di valutazione"
+        },
+        {
+          "id": "b",
+          "testo": "Perché spiegare perché una risposta è sbagliata aiuta lo studente a correggere l'errore di comprensione, trasformando il quiz da test di memoria a strumento di apprendimento",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dello scenario dice: 'il professore vuole qualcosa che aiuti chi sbaglia a capire perché la risposta era sbagliata.' Un quiz senza feedback è solo valutazione, non apprendimento."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il sistema di punteggio di Scratch richiede un testo di feedback per funzionare correttamente",
+          "corretto": false,
+          "feedback": "Non è corretto. Scratch non richiede testo di feedback per gestire il punteggio. Il feedback è una scelta pedagogica, non tecnica.",
+          "riferimento": "🌍 AGISCI — Lo scenario"
+        },
+        {
+          "id": "d",
+          "testo": "Perché le risposte sbagliate senza feedback non vengono registrate nella variabile punteggio",
+          "corretto": false,
+          "feedback": "Non è corretto. La variabile punteggio si aggiorna indipendentemente dalla presenza del feedback. Il feedback è separato dalla logica del punteggio.",
+          "riferimento": "📖 ESPLORA — Variabili e operatori"
+        }
+      ],
+      "spiegazione": "Un feedback che spiega 'perché la risposta è sbagliata' è pedagogicamente superiore al semplice 'sbagliato' perché: (1) corregge l'errore di comprensione specifico; (2) spiega il concetto corretto nel contesto dell'errore commesso; (3) trasforma il quiz da strumento di valutazione a strumento di apprendimento. La rubrica della MC richiede feedback esplicativi per il livello ottimo.",
+      "riferimento_principale": "🌍 AGISCI — Lo scenario"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché la storia della falena di Grace Hopper nel 1947 è importante per la storia dell'informatica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché dimostra che i computer del passato erano molto più affidabili di quelli attuali",
+          "corretto": false,
+          "feedback": "Non è corretto. La storia mostra il contrario: i computer a valvole erano fisicamente vulnerabili a guasti causati anche da insetti.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        },
+        {
+          "id": "b",
+          "testo": "Perché da quella falena trovata nel relè del computer Mark II nasce il termine 'bug' per indicare un errore nel codice o nell'hardware",
+          "corretto": true,
+          "feedback": "Esatto! Grace Hopper incollò la falena al registro di bordo scrivendo 'First actual case of bug being found.' Da quel giorno un errore in un programma si chiama bug."
+        },
+        {
+          "id": "c",
+          "testo": "Perché Grace Hopper ha inventato il linguaggio di programmazione Scratch",
+          "corretto": false,
+          "feedback": "Non è corretto. Scratch è stato sviluppato dal MIT Media Lab nel 2003. Grace Hopper ha contribuito a sviluppare i linguaggi FLOW-MATIC e COBOL negli anni '50.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        },
+        {
+          "id": "d",
+          "testo": "Perché dimostra che i computer devono essere tenuti lontani dagli insetti per funzionare correttamente",
+          "corretto": false,
+          "feedback": "Non è corretto. La storia è aneddotica nella sua origine fisica, ma il significato è linguistico e culturale: da quel momento 'bug' indica qualsiasi errore nel software.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        }
+      ],
+      "spiegazione": "Nel settembre 1947, Grace Hopper trovò una falena nel relè 70 del computer Mark II che causava un malfunzionamento. Incollò l'insetto al registro di bordo scrivendo 'First actual case of bug being found.' Da quel giorno, un errore in un programma si chiama 'bug' e trovarlo si chiama 'debugging'. La falena originale è conservata al Museo Nazionale della Storia Americana a Washington.",
+      "riferimento_principale": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un quiz in Scratch viene testato solo con risposte corrette. Perché questo approccio di test è insufficiente e cosa manca?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché Scratch richiede almeno 10 test per ogni progetto prima di pubblicarlo",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste un requisito numerico minimo di test in Scratch. Il problema è qualitativo: bisogna testare i casi limite e gli scenari negativi.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        },
+        {
+          "id": "b",
+          "testo": "Perché mancano i test per i casi limite (punteggio 0, punteggio massimo) e i casi di risposta sbagliata o vuota, che potrebbero rivelare bug non visibili con solo risposte corrette",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'testa sempre il tuo programma con casi diversi: il caso normale, il caso limite, e i casi sbagliati (es. cosa succede se l'utente non scrive nulla e preme invio).'"
+        },
+        {
+          "id": "c",
+          "testo": "Perché i test con risposte corrette non permettono di vedere i colori del programma",
+          "corretto": false,
+          "feedback": "Non è corretto. I colori del programma si vedono in qualsiasi test. Il problema dei test parziali riguarda la copertura dei casi logici, non l'aspetto visivo.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        },
+        {
+          "id": "d",
+          "testo": "Perché con solo risposte corrette non si può pubblicare il progetto su scratch.mit.edu",
+          "corretto": false,
+          "feedback": "Non è corretto. La pubblicazione su Scratch non richiede un numero minimo di test. Il test sistematico è una buona pratica di programmazione, non un requisito della piattaforma.",
+          "riferimento": "📖 ESPLORA — Debug: trovare e correggere gli errori"
+        }
+      ],
+      "spiegazione": "Il test deve coprire tutti i casi rilevanti: (1) caso normale — risposte corrette e sbagliate; (2) casi limite — punteggio 0 (tutte sbagliate) e punteggio massimo (tutte corrette); (3) casi anomali — cosa succede se l'utente non scrive nulla. Un programma che 'gira' in un caso normale può bloccarsi o dare risultati sbagliati in casi limite.",
+      "riferimento_principale": "📖 ESPLORA — Debug: trovare e correggere gli errori"
     }
   ]
 }

@@ -1,259 +1,601 @@
 {
   "mc_id": "MC-SIS-3-02",
-  "titolo": "Economia globale, lavoro e sostenibilità",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è il PIL (Prodotto Interno Lordo)?",
+      "domanda": "Quale percentuale del cobalto mondiale proviene dalla Repubblica Democratica del Congo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il profitto totale delle aziende di un paese",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "60%",
+          "corretto": true,
+          "feedback": "Esatto! Il 60% del cobalto mondiale proviene dalla RDC. Questo crea una dipendenza geografica critica per la produzione di batterie agli ioni di litio usate in telefoni e auto elettriche."
         },
         {
           "id": "b",
-          "testo": "Il valore di mercato di tutti i beni e servizi finali prodotti in un paese in un anno: indicatore principale di attività economica",
-          "corretto": true,
-          "feedback": "Esatto! Il PIL misura il flusso annuale di produzione, non la ricchezza accumulata (stock)."
+          "testo": "10%",
+          "feedback": "Non corretto. Il 10% sarebbe una quota minore. In realtà il 60% del cobalto mondiale proviene dalla RDC, creando una dipendenza geografica molto concentrata.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "c",
-          "testo": "Il reddito medio dei cittadini di un paese",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "30%",
+          "feedback": "Non corretto. La quota è doppia: il 60% del cobalto mondiale proviene dalla RDC, non il 30%.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "d",
-          "testo": "La ricchezza accumulata di uno stato nel tempo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "95%",
+          "feedback": "Non corretto. Il 95% sarebbe quasi la totalità. In realtà la quota è già molto concentrata al 60%, non il 95%.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "Il PIL misura il flusso annuale di produzione, non la ricchezza accumulata (stock). Alto PIL ≠ alta qualità della vita: non misura disuguaglianze, salute, felicità, sostenibilità."
+      "spiegazione": "Il 60% del cobalto mondiale proviene dalla Repubblica Democratica del Congo (RDC). Parte di questo cobalto viene estratta in condizioni problematiche, incluso l'uso di lavoro minorile nelle miniere artigianali. Questa concentrazione geografica crea dipendenze critiche per le industrie delle batterie globali.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è il 'commercio internazionale'?",
+      "domanda": "Cosa si intende per 'vantaggio comparato' nel commercio internazionale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Lo scambio di valute tra banche di paesi diversi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ogni paese tende a specializzarsi nelle produzioni in cui è relativamente più efficiente rispetto agli altri paesi, anche se non è il migliore in senso assoluto",
+          "corretto": true,
+          "feedback": "Esatto! Il principio del vantaggio comparato (Ricardo, 1817) dice che conviene specializzarsi dove si è relativamente più efficienti — anche se non si è i migliori in assoluto. Il commercio tra paesi crea valore anche quando un paese è meno efficiente in tutto."
         },
         {
           "id": "b",
-          "testo": "Lo scambio di beni e servizi tra paesi: ogni paese esporta ciò che produce efficientemente e importa ciò che altri producono meglio",
-          "corretto": true,
-          "feedback": "Esatto! La teoria del vantaggio comparato (Ricardo, 1817) spiega perché il commercio internazionale beneficia tutti i paesi, anche quelli meno produttivi in assoluto."
+          "testo": "Il vantaggio militare che un paese ha nel proteggere le proprie esportazioni dalla concorrenza",
+          "feedback": "Non corretto. Il vantaggio comparato è un principio economico puro (Ricardo, 1817), non militare. Riguarda l'efficienza relativa nella produzione, non la forza militare.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
         },
         {
           "id": "c",
-          "testo": "La cooperazione economica tra paesi sviluppati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La capacità di produrre un bene a un costo assoluto più basso di tutti gli altri paesi",
+          "feedback": "Non corretto. Quello è il 'vantaggio assoluto' (Adam Smith). Il vantaggio COMPARATO è diverso: riguarda l'efficienza RELATIVA in confronto ad altri beni prodotti nello stesso paese.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
         },
         {
           "id": "d",
-          "testo": "Il mercato delle materie prime globali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La preferenza dei consumatori per prodotti del proprio paese rispetto ai prodotti stranieri",
+          "feedback": "Non corretto. La preferenza per i prodotti nazionali (home bias) è un fenomeno psicologico-economico diverso dal vantaggio comparato, che è un principio produttivo sulla specializzazione internazionale.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
         }
       ],
-      "spiegazione": "La teoria del vantaggio comparato (Ricardo, 1817) spiega perché il commercio internazionale beneficia tutti i paesi, anche quelli meno produttivi in assoluto."
+      "spiegazione": "Vantaggio comparato (Ricardo, 1817): un paese dovrebbe specializzarsi e commerciare in base all'efficienza RELATIVA, non assoluta. Esempio: se l'Italia produce sia vino sia auto meglio del Bangladesh, ma è relativamente più brava nel vino, l'Italia esporta vino e importa auto. Il commercio crea valore per entrambi.",
+      "riferimento_principale": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è la 'disoccupazione strutturale'?",
+      "domanda": "Qual è la struttura dell'economia circolare 'cradle to cradle' (dalla culla alla culla)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La disoccupazione causata dalla crisi economica temporanea",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I materiali vengono progettati per rientrare in cicli continui: ciclo biologico (materia organica → compostaggio) o ciclo tecnico (materiali artificiali → riciclo), senza finire in discarica",
+          "corretto": true,
+          "feedback": "Esatto! Il cradle to cradle propone che nessun materiale finisca in discarica: organici nel ciclo biologico (si biodegradano), artificiali nel ciclo tecnico (si riciclano e reimmettono nella produzione). L'obiettivo è eliminare il concetto di 'rifiuto'."
         },
         {
           "id": "b",
-          "testo": "La perdita di lavoro causata da cambiamenti strutturali dell'economia (automazione, declino settori) che rendono certe competenze obsolete",
-          "corretto": true,
-          "feedback": "Esatto! Quando il tessile italiano ha perso contro la concorrenza asiatica, non si è trattato di crisi ciclica ma strutturale: quei lavori non sono tornati."
+          "testo": "I prodotti vengono prodotti e poi buttati nella stessa città dove sono stati costruiti per ridurre il trasporto",
+          "feedback": "Non corretto. Il cradle to cradle non riguarda la distanza geografica ma il destino dei materiali: non discarica ma cicli continui (biologico o tecnico).",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
         },
         {
           "id": "c",
-          "testo": "La disoccupazione stagionale in settori come il turismo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le aziende devono produrre dalla nascita del cliente alla sua morte, offrendo servizi lungo tutto il ciclo di vita",
+          "feedback": "Non corretto. Il cradle to cradle riguarda il ciclo dei MATERIALI, non il ciclo di vita del cliente. È un modello di economia circolare che propone cicli continui per i materiali.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
         },
         {
           "id": "d",
-          "testo": "Il numero di persone che non cercano attivamente lavoro",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I prodotti vengono fabbricati al mattino e smaltiti la sera, minimizzando il tempo di stoccaggio",
+          "feedback": "Non corretto. Il cradle to cradle non riguarda la velocità di produzione/smaltimento. È un modello sistemico che propone cicli continui per i materiali: nessun rifiuto, solo risorse che circolano.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
         }
       ],
-      "spiegazione": "Quando il tessile italiano ha perso contro la concorrenza asiatica, non si è trattato di crisi ciclica ma strutturale: quei lavori non sono tornati. Richiedono riqualificazione, non solo tempo."
+      "spiegazione": "Cradle to cradle (McDonough e Braungart, 2002): opposto al modello lineare 'cradle to grave'. Propone due cicli continui: ciclo biologico = materia organica che si rigenera (compostaggio, fermentazione), ciclo tecnico = materiali artificiali che circolano nella produzione (riciclo continuo). Obiettivo: eliminare il concetto di 'rifiuto' — ogni fine vita è l'inizio di un nuovo ciclo.",
+      "riferimento_principale": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "In quale anno è stato stipulato l'Accordo di Parigi sul clima, e qual è il suo target principale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "2015, target: limitare il riscaldamento globale a +1,5°C rispetto ai livelli preindustriali",
+          "corretto": true,
+          "feedback": "Esatto! L'Accordo di Parigi è stato stipulato nel 2015 durante la COP21. Il suo target principale è limitare il riscaldamento globale a +1,5°C rispetto ai livelli preindustriali (con un limite massimo di +2°C)."
+        },
+        {
+          "id": "b",
+          "testo": "2000, target: ridurre le emissioni del 50% entro il 2020",
+          "feedback": "Non corretto. L'Accordo di Parigi è del 2015, non del 2000. Il target è +1,5°C, non una riduzione percentuale specifica delle emissioni.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+        },
+        {
+          "id": "c",
+          "testo": "2020, target: eliminare completamente i combustibili fossili entro il 2030",
+          "feedback": "Non corretto. L'Accordo di Parigi è del 2015, non del 2020. Il target non è l'eliminazione dei fossili entro il 2030 ma la limitazione del riscaldamento a +1,5°C.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+        },
+        {
+          "id": "d",
+          "testo": "1997, target: ridurre le emissioni di CO₂ del 5% rispetto al 1990 entro il 2012",
+          "feedback": "Non corretto. Il Protocollo di Kyoto è del 1997 con quell'obiettivo. L'Accordo di Parigi è del 2015 con il target di +1,5°C.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+        }
+      ],
+      "spiegazione": "L'Accordo di Parigi (COP21, 2015) è il principale accordo internazionale sul clima: 196 paesi si impegnano a limitare il riscaldamento globale a +1,5°C rispetto ai livelli preindustriali (con un limite massimo di +2°C). Al 2023, il mondo è a +1,2°C e con le politiche attuali si proiettano +2,5-3°C entro fine secolo.",
+      "riferimento_principale": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'delocalizzazione' (offshoring) di un'attività produttiva?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Lo spostamento di parte della produzione di un'azienda in un altro paese, generalmente con costi del lavoro, energia o normative più favorevoli",
+          "corretto": true,
+          "feedback": "Esatto! La delocalizzazione (offshoring) è la decisione di spostare attività produttive in paesi con vantaggi di costo: lavoro più economico, normative ambientali meno stringenti, tasse più basse, energia più economica."
+        },
+        {
+          "id": "b",
+          "testo": "Il trasferimento della sede legale di un'azienda in un paese con tasse più basse senza spostare la produzione",
+          "feedback": "Non corretto. Quello è l'ottimizzazione fiscale o 'tax base erosion'. La delocalizzazione riguarda lo spostamento della produzione fisica, non solo della sede legale.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+        },
+        {
+          "id": "c",
+          "testo": "L'apertura di una filiale commerciale all'estero per vendere prodotti in nuovi mercati",
+          "feedback": "Non corretto. Aprire filiali commerciali all'estero è l'internazionalizzazione commerciale. La delocalizzazione produttiva (offshoring) riguarda lo spostamento della produzione, non della vendita.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+        },
+        {
+          "id": "d",
+          "testo": "La formazione di lavoratori stranieri da assumere nella sede principale del paese",
+          "feedback": "Non corretto. Assumere stranieri nella sede principale è una scelta di gestione del personale. La delocalizzazione è lo spostamento della produzione in un altro paese.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+        }
+      ],
+      "spiegazione": "Delocalizzazione (offshoring): spostare attività produttive in paesi con vantaggi di costo. In Bangladesh il salario manifatturiero è ~0,70-0,90 euro/ora vs 18-22 euro/ora in Italia. Per un'azienda che produce milioni di capi, questa differenza (20-30×) vale centinaia di milioni di euro. Perché si 'ridelocalizza': COVID-19, guerra, CSDD europea hanno aumentato i rischi della filiera lunga.",
+      "riferimento_principale": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa sono i GAS (Gruppi di Acquisto Solidale)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Gruppi di famiglie che si organizzano per comprare direttamente dai produttori locali, eliminando gli intermediari della grande distribuzione",
+          "corretto": true,
+          "feedback": "Esatto! I GAS sono gruppi di famiglie che comprano direttamente da agricoltori, artigiani e piccoli produttori locali, eliminando i passaggi intermedi. Obiettivo: più valore al produttore, prezzi simili al consumatore, filiera trasparente."
+        },
+        {
+          "id": "b",
+          "testo": "Stazioni di rifornimento di gas naturale per veicoli a metano sovvenzionate dallo Stato",
+          "feedback": "Non corretto. I GAS nel testo non sono stazioni di rifornimento. Sono Gruppi di Acquisto Solidale: comunità di acquisto collettivo diretto dai produttori.",
+          "riferimento": "📖 ESPLORA — Il caso dei GAS — Gruppi di Acquisto Solidale"
+        },
+        {
+          "id": "c",
+          "testo": "Consorzi di grandi supermercati che coordinano gli acquisti all'ingrosso per ridurre i prezzi",
+          "feedback": "Non corretto. I GAS sono l'opposto dei grandi supermercati: sono piccoli gruppi di famiglie che comprano direttamente dai produttori per scavalcare la grande distribuzione.",
+          "riferimento": "📖 ESPLORA — Il caso dei GAS — Gruppi di Acquisto Solidale"
+        },
+        {
+          "id": "d",
+          "testo": "Associazioni di artigiani che vendono i loro prodotti in mercati locali a prezzi scontati",
+          "feedback": "Non corretto. I GAS non sono associazioni di artigiani. Sono gruppi di CONSUMATORI che comprano collettivamente direttamente dai produttori (agricoltori, artigiani).",
+          "riferimento": "📖 ESPLORA — Il caso dei GAS — Gruppi di Acquisto Solidale"
+        }
+      ],
+      "spiegazione": "I GAS (Gruppi di Acquisto Solidale) sono circa 1.500 in Italia con 20.000 famiglie. Principi: solidarietà (produttori locali, biologici, equi), responsabilità (si conosce il produttore), convivialità (comunità non solo meccanismo di acquisto). Meccanismo: eliminare la grande distribuzione (che cattura 40-60% del prezzo) → il produttore riceve quota maggiore, il consumatore paga uguale o poco di più.",
+      "riferimento_principale": "📖 ESPLORA — Il caso dei GAS — Gruppi di Acquisto Solidale"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è l'Agenda 2030 e i 17 Obiettivi di Sviluppo Sostenibile (SDG)?",
+      "domanda": "Il testo afferma che 'la globalizzazione ha ridotto la povertà assoluta globale ma aumentato le disuguaglianze relative all'interno di molti paesi ricchi'. Come si spiega questa contraddizione apparente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un piano economico europeo per il periodo 2023-2030",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'integrazione nelle catene globali ha creato posti di lavoro manifatturieri in Asia e Africa (riducendo la povertà là), mentre la delocalizzazione ha eliminato posti di lavoro manifatturieri in Europa e USA, aumentando le disuguaglianze interne a questi paesi",
+          "corretto": true,
+          "feedback": "Esatto! La globalizzazione ha avuto effetti distributivi diversi: ha alzato i redditi dei lavoratori manifatturieri di Cina, Vietnam, Bangladesh (riducendo la povertà globale), ma ha eliminato i posti di lavoro manifatturieri nei paesi ricchi dove questi erano la base della classe media."
         },
         {
           "id": "b",
-          "testo": "Il programma ONU con 17 obiettivi globali di sviluppo sostenibile da raggiungere entro il 2030: coprono povertà, salute, istruzione, clima, lavoro, disuguaglianze",
-          "corretto": true,
-          "feedback": "Esatto! Gli SDG definiscono lo sviluppo che 'soddisfa i bisogni del presente senza compromettere la capacità delle generazioni future'."
+          "testo": "Non è una contraddizione: la riduzione della povertà globale e l'aumento delle disuguaglianze nei paesi ricchi sono due affermazioni incompatibili",
+          "feedback": "Non corretto. Non sono affermazioni incompatibili ma fenomeni che avvengono simultaneamente in contesti diversi (globale vs interno a singoli paesi). La spiegazione è nelle diverse distribuzioni degli effetti tra paesi.",
+          "riferimento": "📖 ESPLORA — Globalizzazione: cos'è, cosa ha cambiato, cosa ha promesso e cosa non ha mantenuto"
         },
         {
           "id": "c",
-          "testo": "Gli obiettivi climatici dell'Accordo di Parigi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La povertà si riduce in senso assoluto (meno persone sotto la soglia di 2 dollari/giorno) ma con disuguaglianze crescenti i poveri relativi nei paesi ricchi si moltiplicano",
+          "corretto": false,
+          "feedback": "Non completamente corretto. Sebbene i 'poveri relativi' nei paesi ricchi siano aumentati, la spiegazione più completa è quella del punto a): la globalizzazione ha distribuito i benefici in modo diverso tra paesi e classi sociali.",
+          "riferimento": "📖 ESPLORA — Globalizzazione: cos'è, cosa ha cambiato, cosa ha promesso e cosa non ha mantenuto"
         },
         {
           "id": "d",
-          "testo": "Un piano di aiuti ai paesi in via di sviluppo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non è vera: la globalizzazione ha aumentato la povertà sia assoluta che relativa in tutto il mondo",
+          "feedback": "Non corretto. Il testo cita dati Banca Mondiale: la povertà estrema (meno di 2,15 dollari/giorno) è scesa dal 36% al 10% dal 1990 al 2019. La globalizzazione ha ridotto la povertà assoluta globale, anche se ha aumentato le disuguaglianze interne in molti paesi ricchi.",
+          "riferimento": "📖 ESPLORA — Globalizzazione: cos'è, cosa ha cambiato, cosa ha promesso e cosa non ha mantenuto"
         }
       ],
-      "spiegazione": "Gli SDG definiscono lo sviluppo che 'soddisfa i bisogni del presente senza compromettere la capacità delle generazioni future'. Sono il riferimento globale per politiche e imprese."
+      "spiegazione": "La 'contraddizione' si risolve distinguendo livelli di analisi: GLOBALE = la povertà assoluta è scesa dal 36% al 10% dal 1990 al 2019 (Banca Mondiale), principalmente grazie all'industrializzazione di Cina, Vietnam, Bangladesh, Corea del Sud. INTERNO AI PAESI RICCHI = il reddito del 50% più povero in USA è cresciuto meno del 2% dal 1980 al 2016 mentre quello dell'1% più ricco è cresciuto del 205%. La globalizzazione distribuisce benefici e costi in modo geograficamente e socialmente diseguale.",
+      "riferimento_principale": "📖 ESPLORA — Globalizzazione: cos'è, cosa ha cambiato, cosa ha promesso e cosa non ha mantenuto"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è la 'gig economy' e quali sfide pone al mercato del lavoro?",
+      "domanda": "Il commercio equo (Fairtrade) garantisce ai produttori un prezzo minimo e un 'premio Fairtrade'. Il testo cita che il cioccolato Fairtrade costa il 15-20% in più. Come si valuta se questo sovrapprezzo è giustificato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'economia basata su concerti e eventi dal vivo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Confrontando il 15-20% in più con quanto beneficio effettivo arriva al produttore: se il coltivatore di cacao passa dal 6-8% al 12-15% del prezzo finale, il 15-20% di sovrapprezzo è economicamente giustificato",
+          "corretto": true,
+          "feedback": "Esatto! La valutazione richiede di tracciare la distribuzione del valore: nel convenzionale il coltivatore riceve 6-8% del prezzo; con Fairtrade riceve il prezzo minimo garantito + il premio. Se il beneficio al produttore è reale e verificato, il 15-20% di sovrapprezzo è giustificato."
         },
         {
           "id": "b",
-          "testo": "Un modello economico basato su lavoro a chiamata tramite piattaforme digitali (Uber, Deliveroo, Upwork): flessibilità per i lavoratori, ma assenza di protezioni tradizionali",
-          "corretto": true,
-          "feedback": "Esatto! La gig economy espande le opportunità ma erode protezioni: nessun TFR, nessuna malattia pagata, nessuna cassa integrazione."
+          "testo": "Il Fairtrade è sempre giustificato perché qualsiasi miglioramento delle condizioni dei produttori vale qualsiasi sovrapprezzo",
+          "feedback": "Non corretto. La valutazione critica richiede di verificare se il beneficio è effettivo e proporzionale al sovrapprezzo. Non tutti i prodotti Fairtrade hanno lo stesso impatto sui produttori.",
+          "riferimento": "🔍 OSSERVA — Il caso: il cioccolato, il Ghana e il commercio equo"
         },
         {
           "id": "c",
-          "testo": "L'economia dei beni di lusso nel segmento premium",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il Fairtrade non è mai giustificato: i meccanismi di mercato libero producono sempre risultati migliori per i produttori",
+          "feedback": "Non corretto. Il mercato libero può produrre asimmetrie di potere negoziale significative: grandi multinazionali vs piccoli coltivatori. Il Fairtrade è un meccanismo di correzione di queste asimmetrie. Il testo ne riconosce i benefici reali, pur evidenziando i limiti.",
+          "riferimento": "🔍 OSSERVA — Il caso: il cioccolato, il Ghana e il commercio equo"
         },
         {
           "id": "d",
-          "testo": "Il mercato del lavoro giovanile sotto i 25 anni",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non è possibile valutarlo perché il prezzo del cioccolato dipende da molte variabili non controllabili",
+          "feedback": "Non corretto. La valutazione è possibile attraverso la trasparenza della filiera (percentuale al produttore) e la verifica di terze parti (certificazione Fairtrade). Non è perfetta ma è fattibile.",
+          "riferimento": "🔍 OSSERVA — Il caso: il cioccolato, il Ghana e il commercio equo"
         }
       ],
-      "spiegazione": "La gig economy espande le opportunità ma erode protezioni: nessun TFR, nessuna malattia pagata, nessuna cassa integrazione. La regolazione (sentenza Uber UK) è in evoluzione."
+      "spiegazione": "Valutazione del sovrapprezzo Fairtrade: coltivatore convenzionale riceve 6-8% del prezzo finale. Fairtrade garantisce prezzo minimo + premio per la comunità. Se il sovrapprezzo del 15-20% porta il coltivatore dal 6% al 10-12% del prezzo, il trasferimento di valore è reale ma limitato. Il dibattito aperto: il Fairtrade risolve il problema di distribuzione sistemica o lo gestisce senza affrontarne le cause strutturali?",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: il cioccolato, il Ghana e il commercio equo"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'Global Value Chain' e come impatta i lavoratori nei paesi in via di sviluppo?",
+      "domanda": "Il testo descrive il 'reshoring' come tendenza recente che riporta la produzione in Europa dopo decenni di delocalizzazione. Quali fattori lo hanno accelerato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una catena di negozi globali che vende prodotti di qualità",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Pandemia (che ha mostrato la vulnerabilità delle catene lunghe), guerra in Ucraina (aumento dei costi energetici), normativa CSDD europea (obblighi di due diligence sulle filiere) e automazione (riduce il vantaggio del basso costo del lavoro)",
+          "corretto": true,
+          "feedback": "Esatto! Questi quattro fattori convergono: la pandemia ha mostrato i rischi delle filiere lunghissime (fabbriche chiuse, porti congestionati), la guerra ha aumentato i costi di trasporto e energia, la CSDD europea richiede controllo della filiera, e l'automazione riduce il vantaggio competitivo del basso costo del lavoro."
         },
         {
           "id": "b",
-          "testo": "La rete globale di attività produttive distribuite tra paesi diversi: chi controlla il design e il brand cattura il valore; chi produce fisicamente spesso riceve poco",
-          "corretto": true,
-          "feedback": "Esatto! Il 'sorriso del valore aggiunto': le fasi di R&D e branding (USA, Europa) catturano il 70-80% del valore."
+          "testo": "Il desiderio dei consumatori europei di comprare solo prodotti 'made in Europe' per ragioni estetiche",
+          "feedback": "Non corretto. Sebbene le preferenze dei consumatori influenzino le strategie, il reshoring è guidato da fattori economici e normativi più profondi: rischio di catena, normativa, automazione.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
         },
         {
           "id": "c",
-          "testo": "Un sistema di commercio equo e solidale certificato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il forte calo dei salari nei paesi europei che ha reso la produzione locale competitiva con quella asiatica",
+          "feedback": "Non corretto. I salari in Europa non sono calati abbastanza da competere con Bangladesh o Vietnam. Il reshoring è guidato da riduzione dei rischi di filiera e automazione, non da competizione salariale.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
         },
         {
           "id": "d",
-          "testo": "La rete di distribuzione globale di materie prime",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una legge ONU che vieta il commercio internazionale di prodotti tessili dal 2022",
+          "feedback": "Non corretto. Non esiste tale legge ONU. Il reshoring è una tendenza guidata da forze economiche e normative, non da un divieto internazionale.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
         }
       ],
-      "spiegazione": "Il 'sorriso del valore aggiunto': le fasi di R&D e branding (USA, Europa) catturano il 70-80% del valore. La produzione fisica (Asia) prende il 20-30%. Chi possiede il marchio vince."
+      "spiegazione": "Il reshoring post-2018 è accelerato da: 1) COVID-19 = chiusure fabbriche in Asia → filiere lunghissime vulnerabili; 2) Guerra Ucraina = costi energia e trasporto aumentano → vantaggio di costo della delocalizzazione si riduce; 3) CSDD Europea (2026) = grandi aziende devono verificare condizioni di lavoro e ambiente nella filiera; 4) Automazione = robot industriali riducono il vantaggio del basso costo del lavoro.",
+      "riferimento_principale": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il concetto di 'decoupling' (disaccoppiamento) nella crescita economica sostenibile?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo descrive la gerarchia delle 4R nell'economia circolare in ordine decrescente di priorità. Qual è l'errore più comune che commettono aziende e consumatori?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La separazione dei mercati finanziari dall'economia reale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Trattare il riciclo come prima azione (la più importante) invece di partire dalla riduzione alla fonte, che è sempre la scelta più efficace",
+          "corretto": true,
+          "feedback": "Esatto! Molte campagne ambientali enfatizzano il riciclo come la soluzione principale. Ma la gerarchia è: 1° Ridurre (non produrre il rifiuto), 2° Riusare, 3° Riciclare, 4° Recuperare. Il riciclo è la terza priorità, non la prima."
         },
         {
           "id": "b",
-          "testo": "La possibilità di far crescere il PIL riducendo contemporaneamente le emissioni e l'uso di risorse: assoluto (emissioni calano) vs relativo (emissioni crescono meno del PIL)",
-          "corretto": true,
-          "feedback": "Esatto! Il decoupling assoluto (crescita + riduzione emissioni) è stato raggiunto da alcuni paesi come UK e USA ma resta fragile e insufficiente rispetto agli obiettivi climatici."
+          "testo": "Credere che il recupero energetico (termovalorizzazione) sia sempre la soluzione migliore",
+          "feedback": "Non corretto. Il recupero energetico è l'ultima priorità (4ª), non la più comune. L'errore più comune è confondere il riciclo (3ª priorità) con la prima azione da intraprendere.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
         },
         {
           "id": "c",
-          "testo": "La separazione delle politiche economiche da quelle ambientali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non separare i rifiuti in modo corretto, compromettendo la qualità del riciclato",
+          "feedback": "Non corretto (rilevante ma non il più comune). La separazione scorretta è un problema operativo. L'errore più sistematico citato dal testo è di priorità: enfatizzare il riciclo invece della riduzione alla fonte.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
         },
         {
           "id": "d",
-          "testo": "La fine della dipendenza economica tra paesi sviluppati e in via di sviluppo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Comprare troppi prodotti biologici certificati invece di quelli convenzionali",
+          "feedback": "Non corretto. Il biologico non è un errore nella gerarchia delle 4R. L'errore principale è di priorità: trattare il riciclo come soluzione principale invece di partire dalla riduzione.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
         }
       ],
-      "spiegazione": "Il decoupling assoluto (crescita + riduzione emissioni) è stato raggiunto da alcuni paesi come UK e USA ma resta fragile e insufficiente rispetto agli obiettivi climatici."
+      "spiegazione": "L'errore più comune: trattare il riciclo come la risposta principale alla crisi dei rifiuti e dell'inquinamento. La gerarchia dell'economia circolare dice chiaramente che ridurre alla fonte è sempre la scelta più efficace: un rifiuto che non esiste non deve essere gestito. Il riciclo è la 3ª opzione, non la 1ª.",
+      "riferimento_principale": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'doughnut economics' (economia della ciambella) di Kate Raworth?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo descrive i diritti dei lavoratori italiani come 'il risultato di decenni di lotte sindacali e legislazione progressiva'. Quale di questi diritti è stato 'conquistato nel 1919 dopo decenni di lotte'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un modello economico per le PMI europee",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le 8 ore lavorative al giorno come limite massimo",
+          "corretto": true,
+          "feedback": "Esatto! Il limite delle 8 ore lavorative giornaliere è stato conquistato nel 1919 in Italia (come in molti paesi europei) dopo decenni di lotte sindacali iniziate con il movimento per 'otto ore di lavoro, otto ore di svago, otto ore di riposo'."
         },
         {
           "id": "b",
-          "testo": "Un framework che definisce il 'corridoio sicuro' dello sviluppo umano: un minimo sociale (base della ciambella) e un massimo ecologico (bordo esterno): l'economia deve operare dentro la ciambella",
-          "corretto": true,
-          "feedback": "Esatto! La ciambella di Raworth (2017) sfida il PIL come obiettivo: non crescita infinita ma prosperità dentro i confini planetari."
+          "testo": "Il diritto al voto per tutti i lavoratori",
+          "feedback": "Non corretto. Il diritto al voto per tutti i cittadini maschi (incluse le donne dal 1945) non è un diritto del lavoro. Il diritto lavorativo conquistato nel 1919 fu il limite di 8 ore lavorative giornaliere.",
+          "riferimento": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
         },
         {
           "id": "c",
-          "testo": "Una teoria sull'equilibrio tra consumo e risparmio",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il salario minimo garantito per tutti i settori",
+          "feedback": "Non corretto. L'Italia non ha ancora (a maggio 2026) un salario minimo legale universale: usa i CCNL (Contratti Collettivi Nazionali di Lavoro) per settore. Il diritto conquistato nel 1919 fu il limite di 8 ore lavorative.",
+          "riferimento": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
         },
         {
           "id": "d",
-          "testo": "Un modello di distribuzione circolare della ricchezza",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il diritto alle ferie pagate",
+          "feedback": "Non corretto. Il diritto alle ferie pagate fu consolidato progressivamente nel XX secolo, non nel 1919. Il testo cita il 1919 specificamente per il limite delle 8 ore lavorative giornaliere.",
+          "riferimento": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
         }
       ],
-      "spiegazione": "La ciambella di Raworth (2017) sfida il PIL come obiettivo: non crescita infinita ma prosperità dentro i confini planetari. Amsterdam e Copenhagen la usano per le politiche urbane."
+      "spiegazione": "Le 8 ore lavorative giornaliere furono conquistate nel 1919 dopo decenni di lotte del movimento operaio internazionale (slogan: '8 ore di lavoro, 8 ore di svago, 8 ore di riposo'). Prima era comune lavorare 12-14 ore al giorno. Oggi il limite legale in Italia è 8 ore/giorno e 40 ore/settimana (con un massimo di 48 ore includendo gli straordinari).",
+      "riferimento_principale": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'finanza sostenibile' e quali strumenti usa?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo descrive la 'gig economy' (Deliveroo, Uber, ecc.) come 'formalmente autonoma ma nella pratica dipendente dalla piattaforma'. Quale questione giuridica fondamentale rimane aperta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "I risparmi personali investiti in energia rinnovabile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se i lavoratori della gig economy devono essere classificati come dipendenti (con tutele, contributi, TFR) o autonomi (senza tutele ma con flessibilità): la Corte di Giustizia Europea ha dato risposte diverse per paesi diversi",
+          "corretto": true,
+          "feedback": "Esatto! La questione fondamentale è la classificazione giuridica: dipendente = diritto alle tutele (ferie, malattia, contributi, TFR, salario minimo). Autonomo = nessuna tutela ma flessibilità. La piattaforma controlla prezzo, clienti e rating come un datore di lavoro, ma i contratti sono di autonomia. Tribunali europei hanno dato risposte diverse."
         },
         {
           "id": "b",
-          "testo": "L'integrazione di criteri ESG (Environmental, Social, Governance) nelle decisioni di investimento: green bond, impact investing, ESG screening, carbon pricing nei portafogli",
-          "corretto": true,
-          "feedback": "Esatto! La finanza sostenibile mobilita capitali privati verso la transizione ecologica."
+          "testo": "Se le piattaforme digitali devono pagare le tasse nei paesi dove operano",
+          "feedback": "Non corretto. La questione fiscale delle piattaforme digitali esiste (es. la pianificazione fiscale di Amazon, Google), ma la questione aperta specifica della gig economy citata nel testo riguarda la classificazione giuridica dei lavoratori.",
+          "riferimento": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
         },
         {
           "id": "c",
-          "testo": "I sussidi pubblici per le aziende ecologiche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se i clienti delle piattaforme hanno diritto al rimborso in caso di servizio scadente",
+          "feedback": "Non corretto. I diritti dei consumatori (rimborso, garanzia) sono disciplinati da normative esistenti. La questione aperta della gig economy riguarda i LAVORATORI: dipendenti o autonomi?",
+          "riferimento": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
         },
         {
           "id": "d",
-          "testo": "La finanza delle banche cooperative locali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se le piattaforme possono operare in Italia senza avere una sede legale italiana",
+          "feedback": "Non corretto. La questione della sede legale è fiscale-normativa ma non la questione principale aperta della gig economy. Il punto critico è la classificazione giuridica dei lavoratori.",
+          "riferimento": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
         }
       ],
-      "spiegazione": "La finanza sostenibile mobilita capitali privati verso la transizione ecologica. I green bond superano 1 trilione $/anno. La Tassonomia EU definisce cosa è davvero 'verde'."
+      "spiegazione": "La questione aperta della gig economy: i 'gig workers' (rider, driver) sono formalmente autonomi (contratti di collaborazione) ma sostanzialmente dipendenti (la piattaforma controlla prezzo, clienti, rating, orari). Questo crea una 'zona grigia' giuridica: dipendente (con tutele) o autonomo (senza)? La Corte Suprema del UK ha classificato i driver Uber come 'workers' (categoria intermedia con alcune tutele). In Italia e altri paesi la questione è ancora aperta.",
+      "riferimento_principale": "📖 ESPLORA — Il lavoro: tipologie, diritti, storia"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'la globalizzazione non è né tutta buona né tutta cattiva: ha benefici e costi distribuiti in modo molto diseguale'. Come si applica questo principio per valutare criticamente una politica commerciale specifica, come i dazi americani sulla Cina dal 2018?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Occorre identificare chi paga i dazi (consumatori americani con prezzi più alti), chi beneficia (produttori americani protetti dalla concorrenza), chi perde (esportatori cinesi e aziende americane che importano input dalla Cina), e su quale scala temporale si valutano gli effetti",
+          "corretto": true,
+          "feedback": "Esatto! L'analisi critica di una politica commerciale richiede di identificare: chi guadagna, chi perde, su quale arco temporale. I dazi USA-Cina: proteggono alcuni settori manifatturieri americani (acciaio, alluminio) ma aumentano i prezzi per tutti i consumatori americani e per le aziende USA che importano componenti cinesi."
+        },
+        {
+          "id": "b",
+          "testo": "I dazi sono sempre dannosi perché riducono il commercio libero che avvantaggia tutti",
+          "feedback": "Non corretto. La teoria del libero commercio ha fondamento ma ha eccezioni: industrie nascenti, sicurezza nazionale, asimmetrie nel commercio. L'affermazione 'sempre dannosi' è troppo categorica.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+        },
+        {
+          "id": "c",
+          "testo": "I dazi sono sempre benefici perché proteggono i lavoratori nazionali dalla concorrenza sleale",
+          "feedback": "Non corretto. I dazi proteggono i produttori del settore tutelato ma danneggiano i consumatori (prezzi più alti) e altri settori (costi di produzione più alti per le aziende che usano i materiali protetti come input).",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+        },
+        {
+          "id": "d",
+          "testo": "Le politiche commerciali non hanno effetti concreti sull'economia reale: sono solo simboliche",
+          "feedback": "Non corretto. Le politiche commerciali (dazi, accordi bilaterali, embargo) hanno effetti concreti e misurabili sui prezzi, sull'occupazione, sulle catene di fornitura. Non sono simboliche.",
+          "riferimento": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+        }
+      ],
+      "spiegazione": "Analisi dei dazi USA-Cina (dal 2018): CHI GUADAGNA: produttori americani di acciaio, alluminio, semiconduttori (protetti dalla concorrenza cinese). CHI PERDE: consumatori americani (prezzi più alti), aziende americane che importano componenti cinesi (costi di produzione più alti), esportatori cinesi. EFFETTO TEMPORALE: nel breve periodo proteggono l'industria locale; nel lungo periodo possono rallentare l'innovazione e aumentare i prezzi strutturalmente.",
+      "riferimento_principale": "📖 ESPLORA — Commercio internazionale: chi vende cosa, chi controlla le regole"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo descrive la crescita dei lavori nella 'green economy' come 30 milioni di posti entro il 2027 (WEF). Quale rischio sistemico accompagna questa previsione positiva?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I posti persi (miniere di carbone, manifattura ad alto carbonio) si trovano in regioni geografiche diverse da quelli creati (installazione solare, efficienza energetica): senza riqualificazione e politiche territoriali, la transizione può aumentare le disuguaglianze regionali",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice esplicitamente: 'la transizione crea più posti di quanti ne distrugge nel lungo periodo, ma non necessariamente nelle stesse aree geografiche né con le stesse competenze.' Un lavoratore di una miniera di carbone in Sardegna non diventa automaticamente un installatore solare."
+        },
+        {
+          "id": "b",
+          "testo": "Il settore della green economy ha stipendi più bassi della media e creerà lavori poveri",
+          "feedback": "Non corretto. I lavori della green economy tendono ad avere retribuzioni simili o superiori alla media manifatturiera. Il rischio è geografico e di competenze, non salariale.",
+          "riferimento": "📖 ESPLORA — Green economy: i lavori che crescono con la transizione ecologica"
+        },
+        {
+          "id": "c",
+          "testo": "Le energie rinnovabili sono temporanee: quando saranno installate, i posti di lavoro scompariranno di nuovo",
+          "feedback": "Non corretto. La transizione energetica richiede non solo installazione ma manutenzione, gestione, upgrading continuo degli impianti. I posti di lavoro sono strutturali, non temporanei.",
+          "riferimento": "📖 ESPLORA — Green economy: i lavori che crescono con la transizione ecologica"
+        },
+        {
+          "id": "d",
+          "testo": "I 30 milioni di posti creati sostituiranno esattamente i 30 milioni persi senza problemi di transizione",
+          "feedback": "Non corretto. Il saldo numerico non garantisce una transizione senza problemi: la distribuzione geografica, le competenze richieste, e i tempi di riconversione sono tutti fattori critici che il testo esplicitamente identifica.",
+          "riferimento": "📖 ESPLORA — Green economy: i lavori che crescono con la transizione ecologica"
+        }
+      ],
+      "spiegazione": "Il paradosso della transizione ecologica occupazionale: i 30M di nuovi posti (installatori FV, tecnici eolici, analisti ESG) si trovano geograficamente e professionalmente lontani dai posti persi (minatori di carbone, operai di raffinerie, meccanici ICE). Un minatore sardo 55enne non può riqualificarsi in 6 mesi come installatore solare. Senza politiche attive di riqualificazione e supporto alle aree in transizione, il saldo positivo mascherebbe intense crisi locali.",
+      "riferimento_principale": "📖 ESPLORA — Green economy: i lavori che crescono con la transizione ecologica"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo descrive la crisi del 2008 come particolarmente duratura in Italia con disoccupazione giovanile al 43% nel 2014. Il tasso NEET italiano era il 23% nel 2020. Quale struttura economica specifica ha reso l'Italia più vulnerabile?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'Italia entrava nella crisi con debito pubblico alto (106% PIL nel 2007) e produttività stagnante: meno capacità di spesa pubblica anti-ciclica e economia meno capace di risposta rapida rispetto a paesi con struttura diversa",
+          "corretto": true,
+          "feedback": "Esatto! Il testo cita esplicitamente: l'Italia aveva debito al 106% del PIL nel 2007 (contro il 63% della Germania) e produttività stagnante da anni. L'alto debito limita la capacità di spesa pubblica per sostenere l'economia in recessione; la bassa produttività riduce la capacità di recupero."
+        },
+        {
+          "id": "b",
+          "testo": "L'Italia era più vulnerabile perché aveva più banche di qualsiasi altro paese europeo",
+          "feedback": "Non corretto. Il numero di banche non è il fattore di vulnerabilità identificato nel testo. Il testo cita debito pubblico alto e produttività stagnante come cause specifiche della maggiore vulnerabilità italiana.",
+          "riferimento": "📖 ESPLORA — Box Geo-Storia: La crisi del 2008 e i giovani italiani"
+        },
+        {
+          "id": "c",
+          "testo": "L'Italia non ha saputo rispettare i parametri di Maastricht e quindi non poteva ricevere aiuti UE",
+          "feedback": "Non corretto. L'Italia ha ricevuto aiuti indirettamente attraverso le politiche della BCE (OMT, LTRO, QE). La vulnerabilità non era l'assenza di aiuti ma la struttura economica (debito alto, produttività bassa).",
+          "riferimento": "📖 ESPLORA — Box Geo-Storia: La crisi del 2008 e i giovani italiani"
+        },
+        {
+          "id": "d",
+          "testo": "L'Italia aveva un'economia troppo basata sull'export e la crisi ha eliminato tutta la domanda estera",
+          "feedback": "Non corretto. L'export italiano è importante ma non è il fattore principale citato. La vulnerabilità specifica dell'Italia è identificata nel debito pubblico alto e nella produttività stagnante.",
+          "riferimento": "📖 ESPLORA — Box Geo-Storia: La crisi del 2008 e i giovani italiani"
+        }
+      ],
+      "spiegazione": "La vulnerabilità italiana nella crisi 2008-2014: 1) Debito pubblico 106% PIL nel 2007 → meno spazio per politiche di spesa anti-ciclica (non si poteva aumentare il debito per sostenere l'economia). 2) Produttività stagnante da anni → recupero più lento. 3) Struttura industriale basata su PMI in settori tradizionali (meno innovativi) → minore capacità di adattamento. Risultato: PIL -5,5% nel 2009, disoccupazione giovanile al 43% nel 2014.",
+      "riferimento_principale": "📖 ESPLORA — Box Geo-Storia: La crisi del 2008 e i giovani italiani"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo afferma che la Corporate Sustainability Due Diligence Directive (CSDD) europea obbliga dal 2026 le grandi aziende a controllare le condizioni di lavoro e ambiente lungo tutta la propria filiera. Quale cambio sistemico produce questa normativa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Trasferisce la responsabilità di verifica dalla fase di acquisto del prodotto finito alla filiera intera: un'azienda europea non può più ignorare le condizioni di produzione dei suoi fornitori in paesi terzi",
+          "corretto": true,
+          "feedback": "Esatto! Prima della CSDD, un'azienda europea poteva comprare da fornitori che usavano lavoro forzato o inquinavano i fiumi senza responsabilità legale, purché il prodotto rispettasse gli standard di importazione. Con la CSDD deve verificare attivamente la filiera e rispondere legalmente per le violazioni dei fornitori."
+        },
+        {
+          "id": "b",
+          "testo": "Permette alle aziende europee di delocalizzare più liberamente perché le normative vengono applicate uniformemente in tutto il mondo",
+          "feedback": "Non corretto. La CSDD non liberalizza la delocalizzazione. Al contrario: rende più difficile delocalizzare in paesi con standard bassi perché l'azienda europea rimane responsabile per le violazioni dei fornitori esteri.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+        },
+        {
+          "id": "c",
+          "testo": "Elimina completamente la possibilità di approvvigionarsi fuori dall'Unione Europea",
+          "feedback": "Non corretto. La CSDD non vieta le importazioni extra-UE. Richiede che le aziende verifichino le condizioni di produzione nella filiera e agiscano per rimediare alle violazioni identificate.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+        },
+        {
+          "id": "d",
+          "testo": "La CSDD non ha effetti pratici perché non prevede sanzioni per le aziende che non rispettano le norme",
+          "feedback": "Non corretto. La CSDD prevede sanzioni significative (% del fatturato globale) e responsabilità civile per le aziende che non rispettano gli obblighi di due diligence. Ha effetti pratici concreti.",
+          "riferimento": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+        }
+      ],
+      "spiegazione": "Il cambiamento sistemico della CSDD: prima = i costi sociali e ambientali dei fornitori sono 'esternalità' non visibili nell'azienda europea. Dopo CSDD = l'azienda europea è legalmente responsabile per le violazioni dei suoi fornitori (anche di 2° e 3° livello). Questo cambia il calcolo della delocalizzazione: i risparmi sui costi del lavoro devono essere bilanciati con i costi di audit, di rischio legale, e di potenziale esposizione per violazioni dei diritti umani o ambientali nella filiera.",
+      "riferimento_principale": "📖 ESPLORA — Delocalizzazione: perché le aziende spostano la produzione"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo descrive il 'product-as-a-service' (Michelin che vende 'chilometri di atterraggio' invece di pneumatici). Come questo modello allinea gli incentivi economici dell'azienda con gli obiettivi ambientali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Michelin ha interesse a produrre pneumatici che durino il più possibile (meno gomma consumata = più profitto) invece di venderli il più rapidamente possibile: il modello di servizio incentiva la qualità e la longevità",
+          "corretto": true,
+          "feedback": "Esatto! Nel modello tradizionale, Michelin guadagna vendendo più pneumatici → incentivo a farli durare poco. Nel modello di servizio ('km di atterraggio'), Michelin guadagna per km usati e gestisce i pneumatici → incentivo a produrli durevoli per ridurre i costi. L'interesse economico e quello ambientale si allineano."
+        },
+        {
+          "id": "b",
+          "testo": "Michelin guadagna di più se i pneumatici si consumano rapidamente, quindi il modello di servizio è peggiore ambientalmente",
+          "feedback": "Non corretto. Nel modello di servizio Michelin mantiene la proprietà dei pneumatici e li recupera a fine vita: ha interesse a farli durare di più (meno costi di sostituzione) e a riciclarli (recupero del valore). L'incentivo è opposto rispetto alla vendita tradizionale.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
+        },
+        {
+          "id": "c",
+          "testo": "Il modello di servizio funziona solo per prodotti di lusso ad alto margine come gli pneumatici da aereo",
+          "feedback": "Non corretto. Il principio del product-as-a-service si applica in molti settori: illuminazione (Philips paga per lux forniti), lavaggio industriale (servizio a cicli invece di vendita di lavatrici), elettrodomestici (pay-per-use). Non è limitato ai prodotti di lusso.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è allineamento: Michelin vende servizi per estrarre più profitto dai clienti, non per ragioni ambientali",
+          "feedback": "Non corretto. Il testo afferma esplicitamente che il modello allinea gli interessi economici con quelli ambientali: 'meno materiale usa = più profitto' per Michelin nel modello di servizio. Ci può essere sia motivazione economica sia beneficio ambientale.",
+          "riferimento": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
+        }
+      ],
+      "spiegazione": "Nel modello tradizionale di vendita: l'azienda guadagna vendendo più prodotti → incentivo all'obsolescenza programmata. Nel modello di servizio (product-as-a-service): l'azienda mantiene la proprietà del prodotto e guadagna per il servizio erogato → incentivo a prodotti durevoli (meno sostituzioni) e riciclabili (recupero del valore a fine vita). L'economia circolare e il profitto si allineano invece di essere in conflitto.",
+      "riferimento_principale": "📖 ESPLORA — Economia circolare: dall'usa-e-getta al ciclo continuo"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo usa il caso del cobalto congolese per mostrare come 'un prodotto venduto da aziende con codici etici può contenere materiali estratti in condizioni che violano i diritti fondamentali'. Quale meccanismo strutturale rende possibile questa disconnessione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La complessità e opacità delle catene di fornitura globali a più livelli: un'azienda conosce il fornitore diretto (livello 1) ma spesso non i fornitori di secondo o terzo livello dove si trovano le miniere",
+          "corretto": true,
+          "feedback": "Esatto! Una multinazionale acquista batterie da un produttore (livello 1) che acquista celle da un'altra azienda (livello 2) che acquista cobalto da un trader (livello 3) che acquista da miniere (livello 4). La complessità e l'opacità dei livelli intermedi permettono la disconnessione tra il prodotto finale e le condizioni di estrazione."
+        },
+        {
+          "id": "b",
+          "testo": "Le aziende nascondono deliberatamente le informazioni sui fornitori per evitare le critiche dei consumatori",
+          "feedback": "Non corretto (parzialmente rilevante per alcune aziende). La ragione principale è strutturale: la complessità delle catene globali rende difficile la tracciabilità anche per le aziende che la vogliono. Non è solo occultamento deliberato.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
+        },
+        {
+          "id": "c",
+          "testo": "I consumatori non chiedono informazioni sulla filiera, quindi le aziende non hanno incentivi a fornirle",
+          "feedback": "Non corretto (parzialmente rilevante). La domanda dei consumatori di trasparenza è crescente. La ragione principale è la complessità strutturale delle catene di fornitura globali multi-livello.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
+        },
+        {
+          "id": "d",
+          "testo": "I diritti umani non si applicano nei paesi in via di sviluppo in base al diritto internazionale",
+          "feedback": "Non corretto. I diritti umani fondamentali si applicano universalmente per il diritto internazionale (Dichiarazione Universale dei Diritti Umani ONU 1948). La disconnessione non è legale ma pratica: complessità e opacità delle catene multi-livello.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
+        }
+      ],
+      "spiegazione": "La disconnessione tra prodotto finito (con codice etico) e condizioni di estrazione (lavoro minorile in Congo) è strutturale: catene di fornitura con 4-6 livelli intermedi rendono la tracciabilità molto difficile e costosa. Azienda A → fornitore B → produttore C → trader D → miner E: ogni livello aggiunge opacità. La CSDD (2026) cerca di rompere questa disconnessione obbligando le aziende a mappare e auditare la filiera fino alle materie prime.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     }
   ]
 }

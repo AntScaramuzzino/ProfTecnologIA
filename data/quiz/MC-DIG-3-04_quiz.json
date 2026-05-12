@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIG-3-04",
-  "titolo": "Accessibilità, usabilità e inclusione digitale",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa si intende per 'accessibilità digitale'?",
+      "domanda": "Cosa significa 'WCAG' e cosa stabilisce?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La disponibilità di internet in tutte le zone geografiche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Web Content Accessibility Guidelines: le linee guida internazionali per rendere i contenuti web accessibili a persone con diverse abilità",
+          "corretto": true,
+          "feedback": "Esatto! WCAG è prodotto dal W3C (World Wide Web Consortium). La versione attuale è la 2.1; la 2.2 è entrata in vigore nel 2023. Stabilisce requisiti organizzati attorno ai 4 principi POUR."
         },
         {
           "id": "b",
-          "testo": "La capacità di un prodotto digitale di essere usato da persone con disabilità fisiche, cognitive o sensoriali",
-          "corretto": true,
-          "feedback": "Esatto! L'accessibilità digitale garantisce che nessuno sia escluso dal mondo digitale per ragioni di disabilità."
+          "testo": "Web Coding And Grammar: le regole sintattiche per scrivere HTML corretto",
+          "corretto": false,
+          "feedback": "Non è corretto. WCAG non riguarda la grammatica HTML. Riguarda l'accessibilità dei contenuti web per persone con diverse capacità.",
+          "riferimento": "📖 ESPLORA — Accessibilità digitale: cos'è e perché esiste"
         },
         {
           "id": "c",
-          "testo": "Il costo accessibile dei dispositivi tecnologici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Website Content Availability Guide: le istruzioni per rendere un sito disponibile 24/7",
+          "corretto": false,
+          "feedback": "Non è corretto. La disponibilità 24/7 (uptime) è un problema di infrastruttura server. WCAG riguarda l'accessibilità per persone con diverse abilità.",
+          "riferimento": "📖 ESPLORA — Accessibilità digitale: cos'è e perché esiste"
         },
         {
           "id": "d",
-          "testo": "La semplicità dell'interfaccia grafica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "World Computer Accessibility Convention: un trattato internazionale firmato da 195 paesi",
+          "corretto": false,
+          "feedback": "Non è corretto. WCAG non è un trattato internazionale. È un insieme di linee guida tecniche prodotto dal W3C, l'ente che definisce gli standard del web.",
+          "riferimento": "📖 ESPLORA — Accessibilità digitale: cos'è e perché esiste"
         }
       ],
-      "spiegazione": "L'accessibilità digitale garantisce che nessuno sia escluso dal mondo digitale per ragioni di disabilità. È un diritto, non un'opzione."
+      "spiegazione": "WCAG (Web Content Accessibility Guidelines) sono le linee guida internazionali per l'accessibilità dei contenuti web, prodotte dal W3C. La versione attuale è la 2.1 (con la 2.2 in vigore dal 2023). Organizzano tutti i requisiti attorno a 4 principi: Percepibile, Operabile, Comprensibile, Robusto (acronimo POUR).",
+      "riferimento_principale": "📖 ESPLORA — Accessibilità digitale: cos'è e perché esiste"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è uno 'screen reader'?",
+      "domanda": "Cosa significa il principio 'O — Operabile' delle WCAG?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un programma che ingrandisce il testo sullo schermo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il sito deve funzionare su tutti i sistemi operativi (Windows, macOS, Linux)",
+          "corretto": false,
+          "feedback": "Non è corretto. 'Operabile' nel contesto WCAG non riguarda i sistemi operativi. Riguarda la navigabilità tramite qualsiasi periferica di input.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
         },
         {
           "id": "b",
-          "testo": "Un software che legge ad alta voce il contenuto dello schermo: usato da persone non vedenti o ipovedenti per navigare",
+          "testo": "L'interfaccia deve poter essere usata con qualsiasi periferica di input: tastiera, switch esterno, controllo vocale — non solo con il mouse",
           "corretto": true,
-          "feedback": "Esatto! JAWS, NVDA, VoiceOver sono screen reader: trasformano testo, bottoni e link in audio."
+          "feedback": "Esatto! Chi ha tremori alle mani non può usare il mouse con precisione. Chi ha lesioni agli arti usa uno switch o il controllo vocale. La navigazione da tastiera (Tab, Invio, frecce) è il test minimo."
         },
         {
           "id": "c",
-          "testo": "Un filtro che riduce la luce blu degli schermi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le funzioni del sito devono essere operative senza interruzioni 24 ore su 24",
+          "corretto": false,
+          "feedback": "Non è corretto. La disponibilità 24/7 è un problema di infrastruttura server. 'Operabile' nelle WCAG riguarda la navigabilità con diverse periferiche di input.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
         },
         {
           "id": "d",
-          "testo": "Un programma per la lettura di QR code",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il sito deve avere un numero sufficiente di funzionalità per soddisfare tutti gli utenti",
+          "corretto": false,
+          "feedback": "Non è corretto. 'Operabile' non riguarda la quantità di funzionalità, ma la loro accessibilità tramite diverse modalità di input.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
         }
       ],
-      "spiegazione": "JAWS, NVDA, VoiceOver sono screen reader: trasformano testo, bottoni e link in audio. Senza alt text sulle immagini, un cieco non sa cosa c'è."
+      "spiegazione": "Il principio O (Operabile) delle WCAG richiede che l'interfaccia sia usabile con qualsiasi periferica di input. La navigazione da tastiera (Tab, Invio, Spazio, frecce) è il test minimo. Chi ha tremori alle mani non può usare il mouse; chi ha lesioni agli arti usa switch esterni o controllo vocale. Se un'azione richiede obbligatoriamente il trascinamento con il mouse, è inaccessibile.",
+      "riferimento_principale": "📖 ESPLORA — I quattro principi WCAG"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa sono le WCAG?",
+      "domanda": "Cosa si intende per 'Universal Design'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le linee guida mondiali per la progettazione dei chip",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il design che funziona su qualsiasi dispositivo (desktop, mobile, tablet)",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello è il responsive design. Universal Design è un principio più ampio che considera la diversità umana come punto di partenza della progettazione.",
+          "riferimento": "📖 ESPLORA — Chi beneficia dell'accessibilità"
         },
         {
           "id": "b",
-          "testo": "Web Content Accessibility Guidelines: gli standard internazionali per l'accessibilità dei contenuti web, organizzati in livelli A/AA/AAA",
+          "testo": "Un approccio progettuale che considera la diversità umana come punto di partenza, producendo soluzioni che beneficiano tutti (non solo le persone con disabilità)",
           "corretto": true,
-          "feedback": "Esatto! Le WCAG (W3C) sono lo standard globale."
+          "feedback": "Esatto! L'esempio classico: le rampe per carrozzine vengono usate anche da persone con passeggini, valigie a rotelle, biciclette. I sottotitoli servono ai sordi ma anche a chi guarda video in luoghi rumorosi."
         },
         {
           "id": "c",
-          "testo": "Un sistema di certificazione per i siti web sicuri",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il design che usa solo colori e simboli universalmente comprensibili, senza testo",
+          "corretto": false,
+          "feedback": "Non è corretto. L'Universal Design non esclude il testo. Include l'uso corretto del testo alternativo (alt text) per le immagini, che è fondamentale per l'accessibilità.",
+          "riferimento": "📖 ESPLORA — Chi beneficia dell'accessibilità"
         },
         {
           "id": "d",
-          "testo": "Le norme europee per la protezione dei dati online",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il design standardizzato usato da tutte le aziende tecnologiche mondiali",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste un design standardizzato unico. Universal Design è un principio metodologico, non un insieme di standard grafici.",
+          "riferimento": "📖 ESPLORA — Chi beneficia dell'accessibilità"
         }
       ],
-      "spiegazione": "Le WCAG (W3C) sono lo standard globale. Il livello AA è il requisito minimo per molti siti pubblici e aziendali."
+      "spiegazione": "L'Universal Design nasce nell'architettura degli anni '70: progettare per chi ha esigenze più diverse beneficia tutti. Le rampe per carrozzine vengono usate anche da persone con passeggini e valigie a rotelle. In digitale: i sottotitoli servono ai sordi ma anche a chi guarda video in ambienti rumorosi; il contrasto alto aiuta chi ha bassa visione ma anche chi guarda lo schermo alla luce solare.",
+      "riferimento_principale": "📖 ESPLORA — Chi beneficia dell'accessibilità"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cos'è il tool WAVE (wave.webaim.org)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un programma che genera automaticamente siti web accessibili a partire da un progetto grafico",
+          "corretto": false,
+          "feedback": "Non è corretto. WAVE non genera siti. Analizza siti esistenti e mostra i problemi di accessibilità presenti.",
+          "riferimento": "📖 ESPLORA — Gli strumenti per testare l'accessibilità"
+        },
+        {
+          "id": "b",
+          "testo": "Uno strumento gratuito che analizza qualsiasi pagina web e mostra visivamente ogni problema di accessibilità con errori, avvisi e elementi corretti",
+          "corretto": true,
+          "feedback": "Esatto! WAVE è un'estensione del browser o sito web. Analizza una pagina e mostra: errori gravi (rosso), avvisi (giallo), elementi corretti (verde). Comprensibile anche senza formazione tecnica."
+        },
+        {
+          "id": "c",
+          "testo": "Un linguaggio di programmazione per creare interfacce accessibili",
+          "corretto": false,
+          "feedback": "Non è corretto. WAVE non è un linguaggio di programmazione. È uno strumento di analisi e testing dell'accessibilità di pagine web esistenti.",
+          "riferimento": "📖 ESPLORA — Gli strumenti per testare l'accessibilità"
+        },
+        {
+          "id": "d",
+          "testo": "Un database di siti web accessibili da cui ispirarsi nella progettazione",
+          "corretto": false,
+          "feedback": "Non è corretto. WAVE analizza siti per problemi di accessibilità, non è un database di esempi positivi.",
+          "riferimento": "📖 ESPLORA — Gli strumenti per testare l'accessibilità"
+        }
+      ],
+      "spiegazione": "WAVE (wave.webaim.org) è uno strumento gratuito di test dell'accessibilità: estensione del browser o sito web. Analizza qualsiasi pagina e mostra visivamente: errori gravi (icone rosse — immagini senza alt text, moduli senza etichette), avvisi (gialli), elementi corretti (verdi). Il report è comprensibile anche senza formazione tecnica.",
+      "riferimento_principale": "📖 ESPLORA — Gli strumenti per testare l'accessibilità"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa è l'European Accessibility Act e da quando si applica alle aziende private?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una direttiva che obbliga solo le pubbliche amministrazioni; le aziende private sono esonerate",
+          "corretto": false,
+          "feedback": "Non è corretto. L'European Accessibility Act (Direttiva EU 2019/882) estende gli obblighi anche alle aziende private con più di 10 dipendenti o con fatturato superiore a 2 milioni di euro.",
+          "riferimento": "📖 ESPLORA — Accessibilità come obbligo legale"
+        },
+        {
+          "id": "b",
+          "testo": "La Direttiva EU 2019/882, in vigore in Italia dal giugno 2025, che estende l'obbligo di accessibilità anche alle aziende private con più di 10 dipendenti o fatturato > 2 milioni di euro",
+          "corretto": true,
+          "feedback": "Esatto! Prima era solo per la pubblica amministrazione. Dal giugno 2025, app, siti di e-commerce, sportelli bancari online, biglietterie digitali e e-book devono essere accessibili anche se gestiti da aziende private."
+        },
+        {
+          "id": "c",
+          "testo": "Un accordo volontario tra le grandi aziende tecnologiche per rendere i propri prodotti più inclusivi",
+          "corretto": false,
+          "feedback": "Non è corretto. L'European Accessibility Act non è volontario: è una direttiva con forza di legge. Chi non si adegua rischia sanzioni.",
+          "riferimento": "📖 ESPLORA — Accessibilità come obbligo legale"
+        },
+        {
+          "id": "d",
+          "testo": "Una norma tecnica ISO che definisce i requisiti fisici degli edifici per l'accessibilità",
+          "corretto": false,
+          "feedback": "Non è corretto. L'European Accessibility Act riguarda prodotti e servizi digitali, non l'accessibilità fisica degli edifici.",
+          "riferimento": "📖 ESPLORA — Accessibilità come obbligo legale"
+        }
+      ],
+      "spiegazione": "La Direttiva EU 2019/882 (European Accessibility Act) è entrata in vigore in Italia nel giugno 2025. Estende l'obbligo di accessibilità anche alle aziende private con più di 10 dipendenti o fatturato > 2M€. I prodotti e servizi digitali (app, e-commerce, banche online, biglietterie, e-book) devono essere accessibili. Chi non si adegua rischia sanzioni.",
+      "riferimento_principale": "📖 ESPLORA — Accessibilità come obbligo legale"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Perché un link che dice solo 'clicca qui' è un problema di accessibilità?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché 'clicca qui' non è una parola inglese e potrebbe creare confusione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema non è linguistico. Il problema è che 'clicca qui' non descrive la destinazione del link, rendendo la navigazione impossibile per chi usa uno screen reader.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        },
+        {
+          "id": "b",
+          "testo": "Perché chi naviga con uno screen reader sente solo 'clicca qui, clicca qui, clicca qui' senza capire dove portano i link — non c'è informazione sulla destinazione",
+          "corretto": true,
+          "feedback": "Esatto! Il testo descrive questa situazione: 'uno screen reader che legge tutti i link della pagina sente solo clicca qui, clicca qui, clicca qui — senza capire dove conducono.'"
+        },
+        {
+          "id": "c",
+          "testo": "Perché 'clicca qui' non funziona sui dispositivi touch che usano il tocco invece del click",
+          "corretto": false,
+          "feedback": "Non è corretto. I link funzionano sia con click che con tocco indipendentemente dal testo. Il problema è l'assenza di informazioni sulla destinazione.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        },
+        {
+          "id": "d",
+          "testo": "Perché viola le regole grammaticali italiane che richiedono il verbo in forma infinita nei link",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste una regola grammaticale italiana specifica per i link. Il problema è di accessibilità: il testo del link deve descrivere la destinazione.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        }
+      ],
+      "spiegazione": "Uno screen reader legge tutti i link della pagina come lista di navigazione. Se tutti i link dicono 'clicca qui', 'leggi di più', 'scopri', chi usa lo screen reader sente 'clicca qui, clicca qui, clicca qui' senza alcuna informazione. Il link dovrebbe descrivere la destinazione: 'Scarica il modulo iscrizione' invece di 'clicca qui'.",
+      "riferimento_principale": "📖 ESPLORA — I quattro principi WCAG"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'contrasto cromatico' e perché è importante nell'accessibilità?",
+      "domanda": "Il test di navigazione da tastiera (solo Tab e Invio, senza mouse) rivela un punto dove il cursore si blocca e non riesce a uscire. Come si chiama questo problema e chi esclude?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La differenza estetica tra colori di uno stile grafico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Si chiama 'bug JavaScript' e esclude chiunque non abbia JavaScript abilitato",
+          "corretto": false,
+          "feedback": "Non è corretto. Un elemento che 'intrappola' il focus da tastiera si chiama 'keyboard trap'. Esclude specificamente chi naviga con solo tastiera o con tecnologie assistive.",
+          "riferimento": "🔬 SPERIMENTA — Intermedio: Testo la navigazione da tastiera"
         },
         {
           "id": "b",
-          "testo": "Il rapporto di luminanza tra testo e sfondo: le WCAG richiedono almeno 4.5:1 per testo normale e 3:1 per testo grande",
+          "testo": "Si chiama 'keyboard trap' (trappola da tastiera) e esclude chi usa solo la tastiera: persone con disabilità motorie, utenti di screen reader, chi non può usare il mouse",
           "corretto": true,
-          "feedback": "Esatto! Un testo grigio chiaro su sfondo bianco può essere illeggibile per persone con bassa visione o daltonismo."
+          "feedback": "Esatto! Il testo della SPERIMENTA Intermedio chiede di identificare 'elementi trappola: punti dove il Tab rimane bloccato e non riesci a uscire.' È un criterio di successo WCAG 2.1.2."
         },
         {
           "id": "c",
-          "testo": "La saturazione dei colori in una tavolozza",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Si chiama 'deadlock' e blocca l'intero sistema operativo richiedendo il riavvio",
+          "corretto": false,
+          "feedback": "Non è corretto. Un deadlock è un problema di concorrenza nei sistemi operativi. Il problema di cui parla il testo è specifico della navigazione web con tastiera.",
+          "riferimento": "🔬 SPERIMENTA — Intermedio: Testo la navigazione da tastiera"
         },
         {
           "id": "d",
-          "testo": "Il numero di colori usati in un'interfaccia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Si chiama 'slow rendering' e dipende dalla lentezza della connessione internet",
+          "corretto": false,
+          "feedback": "Non è corretto. Il slow rendering riguarda la velocità di caricamento. Il 'keyboard trap' è un problema di focus management nella navigazione a tastiera.",
+          "riferimento": "🔬 SPERIMENTA — Intermedio: Testo la navigazione da tastiera"
         }
       ],
-      "spiegazione": "Un testo grigio chiaro su sfondo bianco può essere illeggibile per persone con bassa visione o daltonismo. Il contrasto 4.5:1 è il minimo WCAG AA."
+      "spiegazione": "Una 'keyboard trap' è un punto dove il focus della tastiera rimane intrappolato e non riesce ad uscire usando Tab o le frecce. Esclude specificamente chi naviga solo con tastiera: persone con disabilità motorie che non possono usare il mouse, utenti di screen reader, chi usa switch assistivi. Il criterio WCAG 2.1.2 richiede che il focus possa sempre uscire da qualsiasi componente.",
+      "riferimento_principale": "🔬 SPERIMENTA — Intermedio: Testo la navigazione da tastiera"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è il 'testo alternativo' (alt text) per le immagini e come si scrive bene?",
+      "domanda": "Perché l'HTML semantico corretto (usare <button> invece di <div> con stile cliccabile) è fondamentale per il principio 'R — Robusto' delle WCAG?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il titolo che appare sopra un'immagine",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i tag HTML semantici caricano più velocemente dei <div>",
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità di caricamento non è il motivo principale. La differenza è che i tag semantici comunicano il ruolo dell'elemento alle tecnologie assistive.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
         },
         {
           "id": "b",
-          "testo": "Una descrizione testuale del contenuto di un'immagine letta dagli screen reader: deve descrivere informazione, non apparenza",
+          "testo": "Perché lo screen reader legge la struttura semantica (HTML), non l'aspetto visivo: un <button> viene annunciato come 'pulsante', un <div> viene ignorato — la tecnologia assistiva non sa cosa è cliccabile",
           "corretto": true,
-          "feedback": "Esatto! Alt text sbagliato: 'immagine'."
+          "feedback": "Esatto! Il principio R (Robusto) richiede che il contenuto funzioni con tecnologie assistive attuali e future. Lo screen reader legge i tag HTML — un <div> con stile cliccabile sembra un bottone visivamente, ma non viene annunciato come tale."
         },
         {
           "id": "c",
-          "testo": "Il formato del file immagine (jpg, png)",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i <div> non sono compatibili con i browser moderni come Chrome ed Edge",
+          "corretto": false,
+          "feedback": "Non è corretto. I <div> sono elementi validi in tutti i browser moderni. Il problema non è la compatibilità con i browser, ma con le tecnologie assistive.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
         },
         {
           "id": "d",
-          "testo": "Il copyright dell'immagine",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i <div> non possono essere raggiungibili con la tastiera, mentre i <button> sì",
+          "corretto": false,
+          "feedback": "Non è solo questo. I <div> cliccabili possono essere resi raggiungibili via tastiera con JavaScript, ma rimangono problematici perché non comunicano il loro ruolo alle tecnologie assistive. L'HTML semantico risolve entrambi i problemi.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
         }
       ],
-      "spiegazione": "Alt text sbagliato: 'immagine'. Alt text giusto: 'Grafico a barre: le rinnovabili producono il 40% dell'energia italiana nel 2023'. Descrive l'informazione, non l'aspetto."
+      "spiegazione": "Il principio R (Robusto) richiede che il contenuto funzioni con tecnologie assistive attuali e future. Lo screen reader non vede l'aspetto visivo: legge la struttura HTML semantica. Un <button> viene annunciato come 'pulsante attivabile'. Un <div> con stile cliccabile sembra un bottone visivamente ma lo screen reader non sa che è interattivo. HTML semantico corretto è il fondamento tecnico dell'accessibilità.",
+      "riferimento_principale": "📖 ESPLORA — I quattro principi WCAG"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cosa si intende per 'navigazione da tastiera' in un sito web?",
+      "domanda": "Secondo i dati del testo, quante persone beneficiano realmente dell'accessibilità digitale oltre alle persone con disabilità riconosciuta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La ricerca tramite barra di ricerca",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Solo le persone con disabilità grave riconosciuta, circa 1-2% della popolazione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo cita dati molto più ampi: 15% con disabilità, più anziani, più persone in condizioni difficili = la maggioranza degli utenti in certi contesti.",
+          "riferimento": "📖 ESPLORA — Chi beneficia dell'accessibilità"
         },
         {
           "id": "b",
-          "testo": "La capacità di navigare e usare tutte le funzioni di un sito usando solo la tastiera (Tab, Invio, frecce) senza mouse",
+          "testo": "Circa il 15% della popolazione mondiale ha qualche forma di disabilità (OMS), ma a questi si aggiungono anziani, utenti in condizioni difficili (luce solare, mano singola) — potenzialmente la maggioranza degli utenti",
           "corretto": true,
-          "feedback": "Esatto! Chi non può usare il mouse (tremori, disabilità motorie) dipende dalla navigazione da tastiera."
+          "feedback": "Esatto! Il testo dice: 'La vera domanda non è quante persone hanno una disabilità riconosciuta. È quante persone stanno usando questo sito in condizioni diverse da quelle in cui è stato progettato.'"
         },
         {
           "id": "c",
-          "testo": "Il layout della tastiera virtuale su dispositivi touch",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Nessuno oltre alle persone con disabilità: le funzioni di accessibilità sono troppo specializzate per essere utili a chiunque altro",
+          "corretto": false,
+          "feedback": "Non è corretto. L'Universal Design mostra il contrario: sottotitoli per sordi → usati da tutti in ambienti rumorosi; contrasto alto → utile in piena luce solare; zoom → utile su schermi piccoli.",
+          "riferimento": "📖 ESPLORA — Chi beneficia dell'accessibilità"
         },
         {
           "id": "d",
-          "testo": "Le scorciatoie da tastiera del sistema operativo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il 100% degli utenti: tutte le funzioni di accessibilità migliorano l'esperienza di tutti allo stesso modo",
+          "corretto": false,
+          "feedback": "Non è corretto. Non tutte le funzioni di accessibilità sono ugualmente utili a tutti. Ma molte funzioni pensate per specifiche disabilità beneficiano un numero molto più ampio di utenti in diverse condizioni.",
+          "riferimento": "📖 ESPLORA — Chi beneficia dell'accessibilità"
         }
       ],
-      "spiegazione": "Chi non può usare il mouse (tremori, disabilità motorie) dipende dalla navigazione da tastiera. Un sito non navigabile da tastiera è inaccessibile per queste persone."
+      "spiegazione": "L'OMS stima 1 miliardo di persone con disabilità nel mondo (15%). In Italia sono ~9 milioni. A questi si aggiungono: ~14 milioni di over 65, chi usa il telefono con guanti o in piena luce solare, chi legge in una lingua straniera. Il testo dice: 'La vera domanda è quante persone stanno usando questo sito in condizioni diverse da quelle in cui è stato progettato. La risposta è: quasi sempre, molte più di quanto si pensi.'",
+      "riferimento_principale": "📖 ESPLORA — Chi beneficia dell'accessibilità"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'Universal Design' e come si applica al digitale?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Perché il sito della scuola, essendo un sito della pubblica amministrazione, è soggetto a obblighi di accessibilità sin dal 2004?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un design che funziona su tutti i dispositivi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché le scuole ricevono fondi europei che richiedono accessibilità come condizione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il fondamento legale non è il finanziamento europeo ma la Legge Stanca (L. 4/2004) e successive direttive europee.",
+          "riferimento": "📖 ESPLORA — Accessibilità come obbligo legale"
         },
         {
           "id": "b",
-          "testo": "Un approccio progettuale che crea prodotti usabili da tutte le persone senza adattamenti speciali: accessibilità non è un add-on ma è incorporata dal design",
+          "testo": "Perché la Legge Stanca (L. 4/2004) obbliga le pubbliche amministrazioni a rendere accessibili i propri siti, obbligo esteso dalla Direttiva Europea 2016/2102",
           "corretto": true,
-          "feedback": "Esatto! L'Universal Design nasce per architettura (rampe che aiutano tutti, non solo i disabili)."
+          "feedback": "Esatto! La Legge Stanca obbliga le PA italiane. La Direttiva Europea 2016/2102 lo estende a livello europeo. I siti scolastici devono avere una 'dichiarazione di accessibilità' pubblicata."
         },
         {
           "id": "c",
-          "testo": "Un design senza elementi grafici complessi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché ogni comune italiano ha adottato autonomamente regolamenti sull'accessibilità dei siti scolastici",
+          "corretto": false,
+          "feedback": "Non è corretto. L'obbligo è nazionale (Legge Stanca) e ora europeo (Direttiva 2016/2102), non a livello comunale.",
+          "riferimento": "📖 ESPLORA — Accessibilità come obbligo legale"
         },
         {
           "id": "d",
-          "testo": "Lo standard internazionale per i font leggibili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non è soggetto ad alcun obbligo: le scuole possono scegliere liberamente se rendere il sito accessibile",
+          "corretto": false,
+          "feedback": "Non è corretto. Le scuole come enti pubblici sono soggette alla Legge Stanca (2004) e alla Direttiva Europea (2016). Devono avere una dichiarazione di accessibilità pubblicata.",
+          "riferimento": "📖 ESPLORA — Accessibilità come obbligo legale"
         }
       ],
-      "spiegazione": "L'Universal Design nasce per architettura (rampe che aiutano tutti, non solo i disabili). Nel digitale: sottotitoli utili per sordi, ma anche in luoghi rumorosi o per chi impara la lingua."
+      "spiegazione": "La Legge Stanca (L. 4/2004) obbliga le pubbliche amministrazioni italiane — incluse le scuole — a rendere accessibili siti e servizi digitali. La Direttiva Europea 2016/2102 lo estende a livello europeo. I siti scolastici devono avere una 'dichiarazione di accessibilità' pubblicata. Il testo nota che 'i siti scolastici italiani sono mediamente tra i meno accessibili del settore pubblico.'",
+      "riferimento_principale": "📖 ESPLORA — Accessibilità come obbligo legale"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'digital divide' e quali sono le sue dimensioni?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Perché progettare l'accessibilità dall'inizio (Universal Design) è più efficace e meno costoso che aggiungerla dopo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La differenza di velocità internet tra paesi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché le leggi europee richiedono che l'accessibilità sia progettata nella prima fase e sanzionano chi la aggiunge dopo",
+          "corretto": false,
+          "feedback": "Non è corretto. Le leggi sanzionano la non-conformità, non specificamente l'approccio 'aggiunto dopo'. Il problema dell'approccio retroattivo è tecnico e sociale, non solo legale.",
+          "riferimento": "📖 ESPLORA — Universal Design: progettare per tutti dall'inizio, non adattare dopo"
         },
         {
           "id": "b",
-          "testo": "La disparità nell'accesso e nell'uso delle tecnologie digitali, con dimensioni geografica (rurale/urbana), economica (costo), generazionale e di competenza",
+          "testo": "Perché una rampa laterale aggiunta dopo è più costosa, meno efficace, e comunica che le persone con disabilità usano l'ingresso secondario — lo stesso vale in digitale",
           "corretto": true,
-          "feedback": "Esatto! Il digital divide è multidimensionale: non basta avere un dispositivo se mancano competenze o connettività."
+          "feedback": "Esatto! Il testo usa l'analogia fisica: 'aggiungere una rampa laterale dopo è più costoso, meno efficace, e spesso esprime ancora l'idea che la persona con disabilità debba usare l'ingresso secondario.'"
         },
         {
           "id": "c",
-          "testo": "La differenza tra internet mobile e fisso",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché l'accessibilità aggiunta dopo non è compatibile con i browser moderni",
+          "corretto": false,
+          "feedback": "Non è corretto. La compatibilità con i browser non è il problema principale. Il problema è strutturale: alcune scelte architetturali rendono l'accessibilità retroattiva molto più costosa.",
+          "riferimento": "📖 ESPLORA — Universal Design: progettare per tutti dall'inizio, non adattare dopo"
         },
         {
           "id": "d",
-          "testo": "Il divario tra open source e software proprietario",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i designer professionisti non accettano incarichi di miglioramento retroattivo dell'accessibilità",
+          "corretto": false,
+          "feedback": "Non è corretto. Molti designer professionisti lavorano su accessibilità retroattiva. Il problema non è la disponibilità professionale, ma la maggiore complessità e costo del lavoro retroattivo.",
+          "riferimento": "📖 ESPLORA — Universal Design: progettare per tutti dall'inizio, non adattare dopo"
         }
       ],
-      "spiegazione": "Il digital divide è multidimensionale: non basta avere un dispositivo se mancano competenze o connettività. La pandemia ha reso visibili queste disuguaglianze."
+      "spiegazione": "Il testo usa l'analogia fisica: progettare una porta larga dall'inizio costa poco; aggiungere una rampa laterale dopo è più costoso, meno efficace, e comunicativamente problematico (l'ingresso secondario). In digitale: progettare accessibile dall'inizio significa scelte architetturali che non richiedono interventi costosi successivi. Il team discute di accessibilità nella prima riunione, non dopo il lancio.",
+      "riferimento_principale": "📖 ESPLORA — Universal Design: progettare per tutti dall'inizio, non adattare dopo"
     },
     {
-      "livello": "A",
-      "domanda": "Come si testa l'accessibilità di un sito web in modo sistematico?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Lo strumento WAVE mostra che il sito della scuola ha molte immagini senza alt text. Quale utente viene escluso e come si corregge il problema?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Chiedendo a una persona con disabilità di provare il sito",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Vengono esclusi gli utenti con daltonismo; la correzione è cambiare i colori delle immagini",
+          "corretto": false,
+          "feedback": "Non è corretto. Il daltonismo è un problema di contrasto dei colori. Le immagini senza alt text escludono chi usa screen reader — il testo alternativo è la soluzione.",
+          "riferimento": "🔬 SPERIMENTA — BASE: Identifico le barriere"
         },
         {
           "id": "b",
-          "testo": "Combinando audit automatici (Lighthouse, axe, WAVE) con test manuali (navigazione da tastiera, screen reader) e test utente con persone con disabilità",
+          "testo": "Vengono escluse le persone che usano screen reader (ciechi, ipovedenti gravi); la correzione è aggiungere una descrizione testuale all'immagine che spieghi cosa mostra",
           "corretto": true,
-          "feedback": "Esatto! Gli strumenti automatici trovano circa il 30% dei problemi."
+          "feedback": "Esatto! La tabella del livello BASE associa 'immagine senza alt text' a 'persone che usano screen reader'. La correzione: aggiungere alt text descrittivo. Nel CMS richiede 30 secondi."
         },
         {
           "id": "c",
-          "testo": "Verificando che il sito rispetti le WCAG solo nei colori",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Vengono esclusi gli utenti con disabilità motorie; la correzione è ridurre le dimensioni delle immagini",
+          "corretto": false,
+          "feedback": "Non è corretto. Le disabilità motorie sono principalmente un problema di navigazione (tastiera vs mouse). L'assenza di alt text esclude chi non può vedere le immagini.",
+          "riferimento": "🔬 SPERIMENTA — BASE: Identifico le barriere"
         },
         {
           "id": "d",
-          "testo": "Controllando che il sito funzioni su tutti i browser",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non esclude nessuno: le immagini senza alt text funzionano normalmente per tutti gli utenti",
+          "corretto": false,
+          "feedback": "Non è corretto. Le immagini senza alt text funzionano visivamente, ma sono invisibili per chi usa uno screen reader. Il testo alternativo è fondamentale per l'accessibilità delle immagini.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
         }
       ],
-      "spiegazione": "Gli strumenti automatici trovano circa il 30% dei problemi. I test manuali e con utenti reali trovano il resto. Entrambi sono necessari."
+      "spiegazione": "Le immagini senza alt text sono invisibili per chi usa uno screen reader (ciechi, ipovedenti gravi). Il testo alternativo dovrebbe descrivere il contenuto informativo dell'immagine: per il logo della scuola, 'Logo dell'Istituto Comprensivo X'; per un grafico, la descrizione di cosa mostra il grafico. La correzione in un CMS richiede 30 secondi per immagine.",
+      "riferimento_principale": "🔬 SPERIMENTA — BASE: Identifico le barriere"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un sito di e-commerce usa solo il colore rosso per indicare i prodotti esauriti e verde per quelli disponibili. Quale principio WCAG viola e chi esclude?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Viola il principio O (Operabile) ed esclude chi naviga solo con la tastiera",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema del colore come unico indicatore viola il principio P (Percepibile). La navigabilità da tastiera non è il problema qui.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        },
+        {
+          "id": "b",
+          "testo": "Viola il principio P (Percepibile), criterio 1.4.1: l'uso del solo colore non basta per trasmettere informazioni, escludendo circa il 4,5-8% della popolazione maschile con daltonismo",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'un sito che usa solo colori per distinguere elementi importanti è inaccessibile per circa il 4,5% della popolazione maschile che ha daltonismo.' Non basta il colore: serve anche testo, icone o pattern."
+        },
+        {
+          "id": "c",
+          "testo": "Non viola nessun principio WCAG: l'uso del colore è una pratica standard accettata",
+          "corretto": false,
+          "feedback": "Non è corretto. Il criterio WCAG 1.4.1 (Use of Color) richiede esplicitamente che il colore non sia l'unico mezzo visivo per trasmettere informazioni.",
+          "riferimento": "📖 ESPLORA — Accessibilità digitale: cos'è e perché esiste"
+        },
+        {
+          "id": "d",
+          "testo": "Viola il principio U (Comprensibile) ed esclude chi non conosce la convenzione dei colori semaforo",
+          "corretto": false,
+          "feedback": "Non è corretto. La convenzione rosso/verde è ampiamente conosciuta. Il problema non è la comprensibilità concettuale ma la percepibilità fisica per chi non distingue certi colori.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        }
+      ],
+      "spiegazione": "Il criterio WCAG 1.4.1 (Use of Color, Principio P Percepibile) richiede che il colore non sia l'unico mezzo visivo per trasmettere informazioni. Il daltonismo colpisce circa il 4,5% della popolazione maschile (8% in alcune etnie). La soluzione: aggiungere testo ('Disponibile'/'Esaurito') o icone (check/X) che trasmettano l'informazione indipendentemente dal colore.",
+      "riferimento_principale": "📖 ESPLORA — Accessibilità digitale: cos'è e perché esiste"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il report di accessibilità richiesto dalla AGISCI deve essere 'professionale e propositivo, non una lista di lamentele'. Cosa significa in pratica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Significa elogiare il sito anche per gli aspetti negativi per non demoralizzare il responsabile",
+          "corretto": false,
+          "feedback": "Non è corretto. Il report deve essere onesto sui problemi. La differenza tra 'lamentele' e 'proposte' è nell'offrire soluzioni concrete per ogni problema identificato.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Audit completo e proposta"
+        },
+        {
+          "id": "b",
+          "testo": "Significa che per ogni problema identificato si fornisce: la descrizione, chi viene escluso e come, la correzione tecnica con stima di complessità, e il riferimento WCAG specifico",
+          "corretto": true,
+          "feedback": "Esatto! Il livello Avanzato chiede esattamente questa struttura: problema → chi esclude → correzione tecnica (facile/complessa) → riferimento WCAG. Un report propositivo offre soluzioni, non solo diagnosi."
+        },
+        {
+          "id": "c",
+          "testo": "Significa usare un tono entusiasta e molti punti esclamativi per motivare il responsabile del sito",
+          "corretto": false,
+          "feedback": "Non è corretto. Il tono professionale non è entusiasta o emotivo. È tecnico, preciso e costruttivo: descrive i problemi con evidenze e propone soluzioni.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Audit completo e proposta"
+        },
+        {
+          "id": "d",
+          "testo": "Significa omettere i problemi più gravi per non creare allarme",
+          "corretto": false,
+          "feedback": "Non è corretto. Un report professionale include tutti i problemi rilevanti, prioritizzati per impatto. Omettere i problemi gravi sarebbe disonesto e controproducente.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Audit completo e proposta"
+        }
+      ],
+      "spiegazione": "Il livello Avanzato della SPERIMENTA richiede un report strutturato: per ogni problema, (1) descrizione tecnica, (2) chi viene escluso e come concretamente, (3) correzione tecnica con indicazione se è semplice o richiede sviluppo, (4) riferimento WCAG specifico, (5) prioritizzazione (cosa fare subito vs cosa richiede intervento strutturale). Propositivo = offre soluzioni concrete.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Audit completo e proposta"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché il collegamento finale tra MC-DIG-3-04 e MC-DIG-3-02 afferma che 'la responsabilità dell'accessibilità non si delega all'IA'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché l'IA non ha accesso a internet per analizzare i siti web",
+          "corretto": false,
+          "feedback": "Non è corretto. Molti sistemi AI hanno accesso a internet. Il problema è diverso: i sistemi AI generativi non producono automaticamente output accessibili.",
+          "riferimento": "🔗 Collegamento con MC-DIG-3-02"
+        },
+        {
+          "id": "b",
+          "testo": "Perché un modello AI che genera codice HTML non include automaticamente alt text, struttura semantica o navigazione da tastiera — a meno che non sia stato addestrato con questi obiettivi e non venga esplicitamente richiesto",
+          "corretto": true,
+          "feedback": "Esatto! Il collegamento finale dice: 'Un modello IA che genera un sito web non sa che le immagini hanno bisogno di alt text — a meno che non gli sia stato chiesto. La responsabilità dell'accessibilità non si delega all'IA: resta una scelta progettuale umana.'"
+        },
+        {
+          "id": "c",
+          "testo": "Perché l'AI Act europeo vieta l'uso dell'IA nella progettazione di siti web accessibili",
+          "corretto": false,
+          "feedback": "Non è corretto. L'AI Act non vieta l'uso dell'IA nella progettazione web. Il problema è la responsabilità del progettista umano, non una limitazione legale.",
+          "riferimento": "🔗 Collegamento con MC-DIG-3-02"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i sistemi AI non sono in grado di generare codice HTML",
+          "corretto": false,
+          "feedback": "Non è corretto. I LLM moderni sono capaci di generare codice HTML. Il problema è che non includono automaticamente le caratteristiche di accessibilità.",
+          "riferimento": "🔗 Collegamento con MC-DIG-3-02"
+        }
+      ],
+      "spiegazione": "Il collegamento finale spiega: 'Un modello IA che genera codice HTML non include automaticamente alt text, struttura semantica o navigazione da tastiera — a meno che non sia stato esplicitamente addestrato su dati accessibili e non venga esplicitamente richiesto. La responsabilità dell'accessibilità non si delega all'IA: resta una scelta progettuale umana.' L'accessibilità richiede consapevolezza e intenzionalità.",
+      "riferimento_principale": "🔗 Collegamento con MC-DIG-3-02"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Un genitore con disabilità visiva grave non riesce a leggere le circolari sul sito della scuola. Quali sono le implicazioni concrete sul suo diritto alla partecipazione scolastica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Non ci sono implicazioni legali: il genitore può chiedere a un familiare senza disabilità di leggere per lui",
+          "corretto": false,
+          "feedback": "Non è corretto. Dover dipendere da altri per accedere a informazioni pubbliche viola il principio di autonomia e di accesso uguale ai servizi pubblici.",
+          "riferimento": "🌍 AGISCI — Lo scenario"
+        },
+        {
+          "id": "b",
+          "testo": "Viola il suo diritto di accesso alle comunicazioni scolastiche ufficiali e alla partecipazione alla vita della scuola — un sito inaccessibile non è solo scomodo: viola un diritto sancito dalla Convenzione ONU e dalla legislazione europea",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'Un sito inaccessibile non è solo scomodo: viola un diritto. La Convenzione ONU (Art. 9) e la Carta dei Diritti UE (Art. 8) garantiscono l'accesso alle tecnologie dell'informazione come diritto fondamentale.'"
+        },
+        {
+          "id": "c",
+          "testo": "Non ci sono implicazioni: le scuole non hanno l'obbligo di comunicare digitalmente con le famiglie",
+          "corretto": false,
+          "feedback": "Non è corretto. La Legge Stanca (2004) obbliga le PA a rendere i siti accessibili. Le comunicazioni ufficiali scuola-famiglia tramite sito sono soggette a questi obblighi.",
+          "riferimento": "📖 ESPLORA — Accessibilità come obbligo legale"
+        },
+        {
+          "id": "d",
+          "testo": "La scuola può esonerare il genitore dalla lettura delle circolari perché ha una disabilità",
+          "corretto": false,
+          "feedback": "Non è corretto. L'esonero dalla lettura sarebbe esclusione, non inclusione. Il diritto è all'accesso equo alle stesse informazioni, non all'esonero.",
+          "riferimento": "🎯 Badge SDG 10"
+        }
+      ],
+      "spiegazione": "Il testo è esplicito: 'Un sito inaccessibile non è solo scomodo: viola un diritto.' La Convenzione ONU sui Diritti delle Persone con Disabilità (art. 9, ratificata dall'Italia nel 2009) garantisce l'accesso alle tecnologie dell'informazione come diritto fondamentale. Un genitore con disabilità visiva ha lo stesso diritto di ricevere le comunicazioni scolastiche di un genitore senza disabilità.",
+      "riferimento_principale": "📖 ESPLORA — Accessibilità come obbligo legale"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il contrasto minimo del testo richiesto dalle WCAG è 4,5:1 per il testo normale. Un sito usa grigio chiaro su sfondo bianco. Perché questo è problematico e per chi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Non è problematico: il grigio chiaro su bianco è moderno ed esteticamente gradevole",
+          "corretto": false,
+          "feedback": "Non è corretto. L'estetica può essere ottenuta anche con colori ad alto contrasto. Il grigio chiaro su bianco crea barriere concrete per utenti specifici.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        },
+        {
+          "id": "b",
+          "testo": "È problematico per persone con bassa visione, daltonici, anziani, e chiunque legga in condizioni di luce difficile (luce solare diretta sullo schermo) — il contrasto insufficiente rende il testo illeggibile",
+          "corretto": true,
+          "feedback": "Esatto! Il principio P (Percepibile) delle WCAG richiede contrasto minimo 4,5:1 per il testo normale. Il grigio chiaro su bianco spesso non raggiunge questa soglia ed è molto difficile da leggere con bassa visione o in piena luce."
+        },
+        {
+          "id": "c",
+          "testo": "È problematico perché Google penalizza i siti con basso contrasto nel ranking dei risultati di ricerca",
+          "corretto": false,
+          "feedback": "Non è corretto. Il ranking di Google non dipende direttamente dal contrasto dei colori. Il problema è l'accessibilità per le persone, non il posizionamento SEO.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        },
+        {
+          "id": "d",
+          "testo": "È problematico perché le stampanti non riescono a stampare correttamente i grigi chiari",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema non è la stampa. Il contrasto insufficiente crea barriere per la lettura a schermo per persone con bassa visione o in condizioni di luce difficile.",
+          "riferimento": "📖 ESPLORA — I quattro principi WCAG"
+        }
+      ],
+      "spiegazione": "Il criterio WCAG 1.4.3 (Contrast Minimum) richiede un rapporto di contrasto minimo di 4,5:1 per il testo normale rispetto allo sfondo. Il grigio chiaro (#AAAAAA) su bianco (#FFFFFF) ha un rapporto di contrasto di circa 2,32:1 — insufficiente. Questo rende il testo molto difficile da leggere per persone con bassa visione, anziani, o chiunque legga in condizioni di luce difficile.",
+      "riferimento_principale": "📖 ESPLORA — I quattro principi WCAG"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Perché l'accessibilità digitale è collegata all'SDG 10 (Ridurre le disuguaglianze) dell'Agenda 2030?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le persone con disabilità hanno redditi mediamente più bassi e quindi l'accessibilità riduce il divario economico",
+          "corretto": false,
+          "feedback": "Non è corretto (anche se c'è una correlazione tra disabilità e reddito). Il collegamento con SDG 10 nel testo riguarda la disuguaglianza nell'accesso ai servizi digitali, non solo economica.",
+          "riferimento": "🎯 Badge SDG 10"
+        },
+        {
+          "id": "b",
+          "testo": "Perché l'inaccessibilità digitale crea una disuguaglianza sistematica: chi non può accedere ai servizi pubblici online è svantaggiato rispetto a chi può — rendere i siti accessibili è un prerequisito per la partecipazione democratica",
+          "corretto": true,
+          "feedback": "Esatto! Il testo del Badge SDG 10 dice: 'L'inaccessibilità digitale è una delle disuguaglianze più invisibili. Chi non può accedere ai servizi digitali è sistematicamente svantaggioso rispetto a chi può. Rendere accessibili i siti pubblici è un prerequisito per la partecipazione democratica.'"
+        },
+        {
+          "id": "c",
+          "testo": "Perché l'SDG 10 richiede che tutti i paesi spendano almeno il 10% del PIL in tecnologia accessibile",
+          "corretto": false,
+          "feedback": "Non è corretto. L'SDG 10 non specifica percentuali di spesa in tecnologia. Riguarda la riduzione delle disuguaglianze in senso ampio.",
+          "riferimento": "🎯 Badge SDG 10"
+        },
+        {
+          "id": "d",
+          "testo": "Perché le persone con disabilità producono meno reddito e quindi contribuiscono meno all'economia digitale",
+          "corretto": false,
+          "feedback": "Non è corretto. Il collegamento con SDG 10 riguarda l'accesso ai servizi e alla partecipazione democratica, non la contribuzione economica.",
+          "riferimento": "🎯 Badge SDG 10"
+        }
+      ],
+      "spiegazione": "Il Badge SDG 10 nel testo spiega: 'Una delle disuguaglianze più invisibili è quella digitale: chi non può accedere ai servizi digitali della pubblica amministrazione — per disabilità, età, competenze o dispositivi — è sistematicamente svantaggioso. Rendere accessibili i siti pubblici non è un favore a una minoranza: è un prerequisito per la partecipazione democratica.' L'accessibilità digitale è giustizia sociale.",
+      "riferimento_principale": "🎯 Badge SDG 10"
     }
   ]
 }

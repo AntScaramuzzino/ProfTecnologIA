@@ -1,260 +1,600 @@
 {
   "mc_id": "MC-ALI-2-04",
-  "titolo": "La filiera alimentare e l'etichetta",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa indica la data di scadenza?",
+      "domanda": "Cos'è la filiera alimentare?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Quando il prodotto ha il sapore migliore",
-          "feedback": "Questa è la funzione del TMC."
+          "testo": "La lista degli ingredienti stampata sull'etichetta di un prodotto alimentare",
+          "feedback": "Non è corretto. La lista degli ingredienti è parte dell'etichetta. La filiera è un concetto molto più ampio che descrive l'intero percorso del cibo.",
+          "riferimento": "📖 ESPLORA — Il cibo non appare per magia"
         },
         {
           "id": "b",
-          "testo": "Il limite oltre il quale il prodotto può essere pericoloso per la salute",
+          "testo": "La sequenza di tutte le fasi e attori che un alimento attraversa dal campo al consumatore",
           "corretto": true,
-          "feedback": "Esatto! Dopo la data di scadenza il prodotto non è sicuro."
+          "feedback": "Esatto! La filiera alimentare è come un 'filo' che tiene insieme tutti i nodi della catena: dal campo alla tua forchetta, con tutti gli attori intermedi."
         },
         {
           "id": "c",
-          "testo": "Quando il prodotto è stato prodotto",
-          "feedback": "La data di produzione è separata."
+          "testo": "Il sistema di controllo sanitario degli alimenti nelle industrie di trasformazione",
+          "feedback": "Non è corretto. Il controllo sanitario è solo una parte del processo. La filiera include tutti gli attori e tutte le fasi, dal campo alla tavola.",
+          "riferimento": "📖 ESPLORA — Il cibo non appare per magia"
         },
         {
           "id": "d",
-          "testo": "Quando finiscono le vitamine",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "La rete di supermercati e negozi che distribuiscono i prodotti alimentari",
+          "feedback": "Non è corretto. I supermercati sono solo l'ultimo anello prima del consumatore. La filiera include anche produttori, trasformatori e distributori.",
+          "riferimento": "📖 ESPLORA — Il cibo non appare per magia"
         }
       ],
-      "spiegazione": "Dopo la data di scadenza il prodotto non è sicuro. Diverso dal 'da consumarsi preferibilmente entro' (TMC)."
+      "spiegazione": "La filiera alimentare è la sequenza di tutte le fasi e di tutti gli attori che un alimento attraversa dalla produzione al consumo. La parola 'filiera' viene da 'filo': un filo che tiene insieme tutti i nodi della catena.",
+      "riferimento_principale": "📖 ESPLORA — Il cibo non appare per magia"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Regola per l'ordine degli ingredienti in etichetta?",
+      "domanda": "Quale percentuale del prezzo finale riceve generalmente l'agricoltore che ha coltivato una banana?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ordine alfabetico",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Circa il 50%",
+          "feedback": "Non è corretto. La quota dell'agricoltore è molto più bassa. Il valore si distribuisce tra molti intermediari lungo la filiera globale.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "b",
-          "testo": "Ordine decrescente di peso al momento della produzione",
-          "corretto": true,
-          "feedback": "Esatto! Il primo ingrediente è quello più abbondante."
+          "testo": "Circa il 30%",
+          "feedback": "Non è corretto. La quota dell'agricoltore è ancora più bassa di questa.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "c",
-          "testo": "Prima i più sani",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Meno del 10%",
+          "corretto": true,
+          "feedback": "Esatto! L'agricoltore riceve spesso meno del 10% del prezzo finale. Nel caso della banana ecuadoregna descritta nel testo, circa 6-8 centesimi su 1,20 euro al chilo."
         },
         {
           "id": "d",
-          "testo": "A scelta del produttore",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Circa il 20%",
+          "feedback": "Non è corretto. La quota dell'agricoltore è ancora più bassa del 20%. Il resto va a spedizione, porto, importatore, distribuzione, supermercato.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "Il primo ingrediente è quello più abbondante. Se lo zucchero è secondo in un succo di frutta, è molto presente."
+      "spiegazione": "L'agricoltore riceve spesso meno del 10% del prezzo finale che il consumatore paga al supermercato. Nel caso della banana ecuadoregna: circa 6-8 centesimi su 1,20 euro al chilo. Il resto è diviso tra spedizione, porto, importatore, maturazione, distribuzione e supermercato.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa indica il simbolo 'e' accanto alla grammatura?",
+      "domanda": "Cosa fa il 'trasformatore' nella filiera alimentare?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il prodotto è ecologico",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Trasporta i prodotti dal campo ai punti di vendita con camion refrigerati",
+          "feedback": "Non è corretto. Il trasporto è la funzione del distributore. Il trasformatore si occupa di trasformare la materia prima in prodotto finito.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
         },
         {
           "id": "b",
-          "testo": "Il peso è una stima media con tolleranza CE",
+          "testo": "Converte la materia prima in prodotto finito attraverso processi industriali (molitura, pastorizzazione, conservazione)",
           "corretto": true,
-          "feedback": "Esatto! La 'e' indica che il peso dichiarato è garantito in media, con piccole variazioni permesse dalla normativa CE."
+          "feedback": "Esatto! Il trasformatore (mulino, caseificio, conservificio, pastificio) converte la materia prima in prodotto pronto al consumo o alla distribuzione, aggiungendo valore e durata."
         },
         {
           "id": "c",
-          "testo": "Il prodotto è importato",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Vende direttamente al consumatore finale nei mercati rionali",
+          "feedback": "Non è corretto. La vendita diretta al consumatore è la funzione del dettagliante. Il trasformatore opera nell'industria, non nella vendita al dettaglio.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
         },
         {
           "id": "d",
-          "testo": "Contiene glutammato",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Certifica la qualità e la sicurezza dei prodotti per conto dello Stato",
+          "feedback": "Non è corretto. La certificazione è una funzione delle autorità pubbliche (EFSA, Ministero della Salute). Il trasformatore è un attore privato industriale.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
         }
       ],
-      "spiegazione": "La 'e' indica che il peso dichiarato è garantito in media, con piccole variazioni permesse dalla normativa CE."
+      "spiegazione": "Il trasformatore (mulini, pastifici, caseifici, conservifici) converte la materia prima in prodotto finito, aggiungendo tre funzioni: conservazione, valore aggiunto e standardizzazione. Il grano diventa farina, poi pasta; il latte diventa yogurt, formaggio, burro.",
+      "riferimento_principale": "📖 ESPLORA — Gli attori della filiera"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa sono i 'food miles'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il numero di calorie per chilogrammo di un alimento",
+          "feedback": "Non è corretto. Le calorie riguardano il valore nutritivo. I food miles misurano qualcosa di completamente diverso, legato al trasporto.",
+          "riferimento": "📖 ESPLORA — Food miles"
+        },
+        {
+          "id": "b",
+          "testo": "La distanza percorsa da un alimento dalla produzione al consumo, come misura dell'impatto ambientale del trasporto",
+          "corretto": true,
+          "feedback": "Esatto! I food miles (miglia del cibo) indicano la distanza che un alimento percorre dal luogo di produzione al consumatore. È una misura dell'impatto ambientale del trasporto alimentare."
+        },
+        {
+          "id": "c",
+          "testo": "Il numero di passaggi di mano tra produttore e consumatore in una filiera",
+          "feedback": "Non è corretto. Il numero di intermediari è un aspetto della filiera, ma non è la definizione di food miles.",
+          "riferimento": "📖 ESPLORA — Food miles"
+        },
+        {
+          "id": "d",
+          "testo": "La quantità di CO₂ prodotta durante la produzione agricola per tonnellata di raccolto",
+          "feedback": "Non è corretto. Le emissioni di CO₂ della produzione agricola sono un dato importante, ma non coincidono con i food miles, che riguardano solo il trasporto.",
+          "riferimento": "📖 ESPLORA — Food miles"
+        }
+      ],
+      "spiegazione": "I food miles (miglia del cibo) indicano la distanza percorsa da un alimento dalla produzione al consumo. È una misura dell'impatto ambientale del trasporto. Fagiolini dal Kenya = oltre 6.000 km in aereo; mele del Trentino a Roma = 600 km su camion.",
+      "riferimento_principale": "📖 ESPLORA — Food miles"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa garantisce il commercio equo e solidale (fair trade) ai produttori primari?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La vendita dei loro prodotti senza nessun intermediario commerciale",
+          "feedback": "Non è corretto. Il fair trade non elimina gli intermediari: li responsabilizza con standard etici. La filiera rimane globale ma con obblighi verso il produttore.",
+          "riferimento": "📖 ESPLORA — Il commercio equo e solidale"
+        },
+        {
+          "id": "b",
+          "testo": "Un prezzo minimo garantito, un premio sociale e standard di lavoro dignitosi",
+          "corretto": true,
+          "feedback": "Esatto! Il fair trade garantisce: un prezzo minimo garantito (indipendente dalle fluttuazioni di mercato), un premio sociale (per infrastrutture nella comunità) e standard di lavoro dignitosi."
+        },
+        {
+          "id": "c",
+          "testo": "L'accesso gratuito alle tecnologie agricole più avanzate",
+          "feedback": "Non è corretto. Il fair trade non include il trasferimento tecnologico. Si concentra su prezzo, condizioni di lavoro e reinvestimento nella comunità.",
+          "riferimento": "📖 ESPLORA — Il commercio equo e solidale"
+        },
+        {
+          "id": "d",
+          "testo": "La vendita esclusiva nei paesi europei con tariffe doganali agevolate",
+          "feedback": "Non è corretto. Il fair trade opera in tutto il mondo e riguarda le condizioni commerciali tra produttori e acquirenti, non le tariffe doganali.",
+          "riferimento": "📖 ESPLORA — Il commercio equo e solidale"
+        }
+      ],
+      "spiegazione": "Il fair trade garantisce ai produttori: un prezzo minimo garantito (anche se il mercato crolla), un premio sociale per la comunità (scuole, pozzi, infrastrutture), standard di lavoro dignitosi (no lavoro minorile) e pratiche agricole sostenibili.",
+      "riferimento_principale": "📖 ESPLORA — Il commercio equo e solidale"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa si intende con 'filiera corta'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una filiera che usa cammini di trasporto brevi, inferiori ai 100 km",
+          "feedback": "Non è corretto. La filiera corta non è definita dalla distanza geografica, ma dal numero di intermediari tra produttore e consumatore.",
+          "riferimento": "📖 ESPLORA — Filiera lunga vs. filiera corta"
+        },
+        {
+          "id": "b",
+          "testo": "Una filiera con pochissimi intermediari tra produttore e consumatore, idealmente zero o uno",
+          "corretto": true,
+          "feedback": "Esatto! La filiera corta riduce al minimo il numero di intermediari. Esempi: vendita diretta in azienda, mercati contadini, GAS (Gruppi di Acquisto Solidale), CSA."
+        },
+        {
+          "id": "c",
+          "testo": "Una filiera che dura meno tempo, con tempi di trasporto ridotti grazie all'aereo",
+          "feedback": "Non è corretto. Il trasporto aereo è uno dei più inquinanti e non definisce la filiera corta. Il concetto riguarda il numero di intermediari.",
+          "riferimento": "📖 ESPLORA — Filiera lunga vs. filiera corta"
+        },
+        {
+          "id": "d",
+          "testo": "Una filiera che usa solo prodotti biologici certificati a km zero",
+          "feedback": "Non è corretto. La filiera corta non implica necessariamente il biologico. E il km zero è un concetto specifico (meno di 70 km) non sinonimo di filiera corta.",
+          "riferimento": "📖 ESPLORA — Filiera lunga vs. filiera corta"
+        }
+      ],
+      "spiegazione": "La filiera corta minimizza il numero di intermediari tra produttore e consumatore (idealmente zero o uno). Modelli: vendita diretta in azienda, mercati contadini, GAS, CSA, km0. Il produttore ottiene un prezzo più equo e il consumatore prodotti più freschi.",
+      "riferimento_principale": "📖 ESPLORA — Filiera lunga vs. filiera corta"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cosa si intende con 'tracciabilità' nella filiera?",
+      "domanda": "Se i fagiolini freschi venduti in inverno provengono dal Kenya (6.000 km) e le fragole fuori stagione vengono dal Marocco (2.000 km), quale ha il maggiore impatto ambientale per km percorso?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il fatto che il prodotto sia biologico",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Le fragole dal Marocco, perché percorrono comunque più di 2.000 km",
+          "feedback": "Non è corretto. Non è solo la distanza che conta, ma anche il mezzo di trasporto. Un container navale ha un impatto molto diverso dall'aereo.",
+          "riferimento": "📖 ESPLORA — Food miles"
         },
         {
           "id": "b",
-          "testo": "La capacità di risalire a ogni fase dal campo alla tavola identificando chi ha fatto cosa",
+          "testo": "I fagiolini dal Kenya, perché 6.000 km in aereo hanno emissioni molto maggiori per kg trasportato",
           "corretto": true,
-          "feedback": "Esatto! La tracciabilità permette di ritirare rapidamente prodotti contaminati e tutela i consumatori."
+          "feedback": "Esatto! Il trasporto aereo è il più inquinante per kg-km trasportato. I fagiolini dal Kenya in aereo (6.000 km) hanno un impatto molto maggiore delle fragole marocchine via camion (2.000 km)."
         },
         {
           "id": "c",
-          "testo": "La distanza percorsa dal prodotto",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Sono equivalenti perché entrambi sono prodotti fuori stagione importati",
+          "feedback": "Non è corretto. Il mezzo di trasporto fa una differenza enorme: un aereo emette decine di volte più CO₂ per tonnellata-km rispetto a un camion, che già emette più di una nave.",
+          "riferimento": "📖 ESPLORA — Food miles"
         },
         {
           "id": "d",
-          "testo": "Il numero di ingredienti presenti",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Non si può confrontare senza conoscere il peso esatto della merce trasportata",
+          "feedback": "Parzialmente vero per un calcolo preciso, ma la differenza qualitativa è chiara: l'aereo ha un impatto per tonnellata-km enormemente superiore al camion, rendendo i fagiolini kenioti il caso più critico.",
+          "riferimento": "📖 ESPLORA — Food miles"
         }
       ],
-      "spiegazione": "La tracciabilità permette di ritirare rapidamente prodotti contaminati e tutela i consumatori."
+      "spiegazione": "Non basta guardare la distanza: conta il mezzo di trasporto. Il trasporto aereo è il più inquinante per tonnellata-km. I fagiolini kenioti viaggiano 6.000 km in aereo: impatto molto maggiore delle fragole marocchine che arrivano via camion su 2.000 km.",
+      "riferimento_principale": "📖 ESPLORA — Food miles"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cosa sono gli additivi alimentari?",
+      "domanda": "Perché la Grande Distribuzione Organizzata (GDO) ha un enorme potere negoziale sui produttori?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ingredienti naturali per arricchire il prodotto",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché controlla le certificazioni di qualità obbligatorie per legge",
+          "feedback": "Non è corretto. Le certificazioni sono controllate da enti pubblici e privati indipendenti, non dalla GDO. Il potere della GDO deriva dai volumi di acquisto.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
         },
         {
           "id": "b",
-          "testo": "Sostanze per conservare, colorare o migliorare le caratteristiche: regolamentate dall'EFSA per la sicurezza",
+          "testo": "Perché garantisce enormi volumi di vendita, consentendole di imporre prezzi bassi ai produttori",
           "corretto": true,
-          "feedback": "Esatto! L'EFSA valuta la sicurezza degli additivi prima di autorizzarli."
+          "feedback": "Esatto! La GDO (Esselunga, Conad, Coop, Carrefour) controlla la maggior parte delle vendite alimentari al dettaglio. Garantire volumi enormi le dà il potere di imporre prezzi bassi ai produttori."
         },
         {
           "id": "c",
-          "testo": "Sostanze chimiche sempre dannose",
-          "feedback": "Non tutti gli additivi sono nocivi."
+          "testo": "Perché ha il monopolio del trasporto refrigerato in Italia",
+          "feedback": "Non è corretto. Il trasporto refrigerato è gestito da logisti indipendenti, non dalla GDO. Il suo potere deriva dai volumi di acquisto.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
         },
         {
           "id": "d",
-          "testo": "Ingredienti obbligatori per legge",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché ha brevettato i principali marchi di prodotti alimentari italiani",
+          "feedback": "Non è corretto. I marchi appartengono ai produttori. La GDO vende sia marche di produttori che propri marchi privati (private label), ma la sua forza è nei volumi.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
         }
       ],
-      "spiegazione": "L'EFSA valuta la sicurezza degli additivi prima di autorizzarli. E numerazione (E100-E1500) indica categoria e numero autorizzato UE."
+      "spiegazione": "La GDO controlla la maggior parte delle vendite alimentari al dettaglio in Italia. I volumi garantiti (decine di milioni di pezzi) le danno un potere negoziale enorme: possono imporre prezzi molto bassi ai produttori, che accettano pur di avere accesso a tanta distribuzione.",
+      "riferimento_principale": "📖 ESPLORA — Gli attori della filiera"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cosa distingue IGP da DOP?",
+      "domanda": "Cosa succede alle banane ecuadoregne dopo lo scarico al porto di Genova?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'IGP garantisce che tutte le fasi avvengano nell'area geografica",
-          "feedback": "Questa è la DOP."
+          "testo": "Vengono vendute immediatamente nei mercati locali perché sono già mature",
+          "feedback": "Non è corretto. Le banane arrivano ancora verdi. Devono subire un processo di maturazione controllata prima di essere vendute.",
+          "riferimento": "📖 ESPLORA — Caso studio: traccia il viaggio di una banana"
         },
         {
           "id": "b",
-          "testo": "L'IGP richiede che almeno una fase della produzione avvenga nell'area geografica indicata",
+          "testo": "Passano per camere di maturazione dove etilene e temperatura controllati le portano alla maturazione ottimale",
           "corretto": true,
-          "feedback": "Esatto! Con DOP tutte le fasi devono essere locali."
+          "feedback": "Esatto! Le banane arrivano verdi. Le camere di maturazione usano etilene (un gas naturale che accelera la maturazione) e temperatura controllata per portarle a maturazione ottimale al momento giusto."
         },
         {
           "id": "c",
-          "testo": "L'IGP certifica il biologico",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Vengono congelate per preservarle durante la distribuzione in tutta Italia",
+          "feedback": "Non è corretto. Le banane non si congelano per la distribuzione: si rovinerebbero. Vengono tenute a temperatura controllata (circa 13°C) per la distribuzione.",
+          "riferimento": "📖 ESPLORA — Caso studio: traccia il viaggio di una banana"
         },
         {
           "id": "d",
-          "testo": "IGP e DOP sono sinonimi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Vengono irradiate con raggi UV per sterilizzarle dalle eventuali malattie tropicali",
+          "feedback": "Non è corretto. Non è descritto nel testo nessun trattamento con UV alle banane in arrivo. Il processo è la maturazione controllata con etilene.",
+          "riferimento": "📖 ESPLORA — Caso studio: traccia il viaggio di una banana"
         }
       ],
-      "spiegazione": "Con DOP tutte le fasi devono essere locali. Con IGP basta una fase (anche solo il confezionamento) nell'area indicata."
+      "spiegazione": "Le banane arrivano verdi al porto di Genova. Poi vanno in camere di maturazione: ambienti con temperatura e concentrazione di etilene (il gas naturale della maturazione) controllati per portarle alla maturazione ottimale nel momento preciso in cui devono essere vendute.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: traccia il viaggio di una banana"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il NUTRI-SCORE?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "La pasta italiana può contenere grano duro importato dal Canada pur avendo un marchio italiano. È consentito?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una certificazione biologica europea",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "No, il marchio Made in Italy garantisce che tutti gli ingredienti siano italiani",
+          "feedback": "Non è corretto. Il Made in Italy indica dove avviene la lavorazione principale, non la provenienza di tutti gli ingredienti. L'Italia importa circa 2 milioni di tonnellate di grano duro all'anno.",
+          "riferimento": "🔍 OSSERVA — Il caso: chi controlla la filiera della pasta italiana?"
         },
         {
           "id": "b",
-          "testo": "Scala A-E (verde-rosso) che valuta la qualità nutrizionale complessiva su 100g",
+          "testo": "Sì, è legale ma deve essere indicato in etichetta; la maggior parte dei consumatori non legge quella riga",
           "corretto": true,
-          "feedback": "Esatto! Il NUTRI-SCORE considera calorie, zuccheri, grassi saturi, sale (negativi) e fibre, proteine, frutta/verdura (positivi)."
+          "feedback": "Esatto! È perfettamente legale usare grano straniero nella pasta italiana. Deve essere indicato in etichetta (paese d'origine del grano), ma la maggior parte dei consumatori non legge quella informazione."
         },
         {
           "id": "c",
-          "testo": "Il codice a barre nutrizionale obbligatorio in Italia",
-          "feedback": "Non è ancora obbligatorio in Italia."
+          "testo": "Solo se il grano straniero supera il 50% del totale, altrimenti non serve indicarlo",
+          "feedback": "Non è corretto. L'obbligo di indicare il paese d'origine del grano in etichetta si applica indipendentemente dalla percentuale. Non esiste questa soglia del 50%.",
+          "riferimento": "🔍 OSSERVA — Il caso: chi controlla la filiera della pasta italiana?"
         },
         {
           "id": "d",
-          "testo": "Un indice del contenuto calorico totale",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "No, è vietato mescolarlo con grano italiano perché altera le caratteristiche nutrizionali",
+          "feedback": "Non è corretto. Non esiste nessun divieto di miscelazione. La questione è di trasparenza verso il consumatore, non di caratteristiche nutrizionali.",
+          "riferimento": "🔍 OSSERVA — Il caso: chi controlla la filiera della pasta italiana?"
         }
       ],
-      "spiegazione": "Il NUTRI-SCORE considera calorie, zuccheri, grassi saturi, sale (negativi) e fibre, proteine, frutta/verdura (positivi)."
+      "spiegazione": "L'Italia non produce abbastanza grano duro per tutta la pasta e importa circa 2 milioni di tonnellate l'anno (da Canada, USA, Francia, Kazakistan). Usarlo nella pasta italiana è legale, deve essere indicato in etichetta, ma la maggior parte dei consumatori non legge quella riga.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: chi controlla la filiera della pasta italiana?"
     },
     {
-      "livello": "A",
-      "domanda": "Perché il km0 da solo non garantisce la sostenibilità?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Cosa calcola la formula: food miles = distanza (km) × peso (kg)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i prodotti locali costano sempre di più",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il costo di trasporto in euro per unità di prodotto",
+          "feedback": "Non è corretto. I food miles non misurano il costo economico ma l'impatto ambientale relativo del trasporto, in tonnellate-km.",
+          "riferimento": "📖 ESPLORA — Food miles"
         },
         {
           "id": "b",
-          "testo": "La sostenibilità dipende da metodo di produzione, packaging, sprechi e impatto idrico — non solo dalla distanza",
+          "testo": "La misura dell'impatto ambientale relativo del trasporto di un alimento",
           "corretto": true,
-          "feedback": "Esatto! Un pomodoro locale in serra riscaldata può avere impatto maggiore di uno spagnolo en plein air."
+          "feedback": "Esatto! I food miles (distanza × peso) misurano l'impatto relativo del trasporto. 0,2 kg di fagiolini per 6.000 km = 1,2 t·km. Ma il mezzo conta: l'aereo è molto più inquinante del camion."
         },
         {
           "id": "c",
-          "testo": "Perché il km0 non è riconosciuto dalla legge",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "La quantità di CO₂ effettivamente emessa durante il trasporto",
+          "feedback": "Non è corretto. I food miles sono una misura relativa (tonnellate-km), non la quantità precisa di CO₂ emessa. Per quella servirebbero i dati specifici del mezzo di trasporto.",
+          "riferimento": "📖 ESPLORA — Food miles"
         },
         {
           "id": "d",
-          "testo": "Perché i prodotti locali non sono mai certificati",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il prezzo al consumatore in funzione della distanza percorsa",
+          "feedback": "Non è corretto. I food miles non correlano direttamente col prezzo al consumatore. Un prodotto proveniente da lontano può essere venduto a meno di uno locale, grazie a economie di scala.",
+          "riferimento": "📖 ESPLORA — Food miles"
         }
       ],
-      "spiegazione": "Un pomodoro locale in serra riscaldata può avere impatto maggiore di uno spagnolo en plein air. La LCA conta più della distanza."
+      "spiegazione": "I food miles (t·km) misurano l'impatto ambientale relativo del trasporto: peso × distanza. Ma non dicono tutto: il mezzo di trasporto cambia enormemente l'impatto reale. Un aereo emette molto più CO₂ per t·km di un camion, che emette più di una nave.",
+      "riferimento_principale": "📖 ESPLORA — Food miles"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'food fraud' (frode alimentare)?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché la prima Compagnia delle Indie Orientali (olandese, 1602) è descritta come una 'filiera alimentare'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La vendita di prodotti scaduti",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché vendeva spezie, cioè alimenti, e controllava tutti i passaggi dalla produzione al mercato europeo",
+          "corretto": true,
+          "feedback": "Esatto! La Compagnia delle Indie Orientali controllava l'intera filiera delle spezie: dalle piantagioni asiatiche ai mercati europei. Chi controlla la filiera controlla il valore."
         },
         {
           "id": "b",
-          "testo": "Sostituzione o adulterazione di un ingrediente per profitto: es. olio EVO tagliato con girasole dichiarandolo puro",
-          "corretto": true,
-          "feedback": "Esatto! Il food fraud costa all'UE decine di miliardi l'anno."
+          "testo": "Perché finanziava le aziende agricole europee che producevano grano e vino",
+          "feedback": "Non è corretto. La Compagnia controllava le rotte commerciali delle spezie asiatiche verso l'Europa, non la produzione agricola europea.",
+          "riferimento": "📖 ESPLORA — Box geo-storia: il commercio delle spezie"
         },
         {
           "id": "c",
-          "testo": "L'omissione della data di scadenza",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché era la prima azienda a usare il sistema di conservazione in barattolo per i lunghi viaggi marini",
+          "feedback": "Non è corretto. L'inscatolamento fu inventato nel 1810, molto dopo la Compagnia delle Indie. Il suo modello era commerciale-finanziario, non tecnologico.",
+          "riferimento": "📖 ESPLORA — Box geo-storia: il commercio delle spezie"
         },
         {
           "id": "d",
-          "testo": "Il confezionamento in materiali non riciclabili",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché era finanziata da governi che controllavano la produzione di cibo per i loro eserciti",
+          "feedback": "Non è corretto. La Compagnia era una società privata (una delle prime al mondo) che gestiva il commercio delle spezie per profitto.",
+          "riferimento": "📖 ESPLORA — Box geo-storia: il commercio delle spezie"
         }
       ],
-      "spiegazione": "Il food fraud costa all'UE decine di miliardi l'anno. La frode sull'olio EVO è tra le più comuni in Italia."
+      "spiegazione": "La Compagnia delle Indie Orientali (1602) controllava l'intera filiera delle spezie: dalle piantagioni asiatiche ai mercati europei. Era di fatto una gestione commerciale di una filiera alimentare globale. Chi controlla la filiera ha sempre controllato potere e ricchezza.",
+      "riferimento_principale": "📖 ESPLORA — Box geo-storia: il commercio delle spezie"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un consumatore sceglie prodotti fair trade pur avendo prodotti locali disponibili. Quali valori entrano in conflitto in questa scelta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il risparmio economico contro la qualità nutrizionale del prodotto",
+          "feedback": "Non è corretto. Il conflitto non è economico-nutrizionale. Riguarda due approcci etici diversi alla sostenibilità del sistema alimentare.",
+          "riferimento": "📖 ESPLORA — Il commercio equo e solidale"
+        },
+        {
+          "id": "b",
+          "testo": "La solidarietà con produttori vulnerabili del Sud del mondo (fair trade) contro la riduzione dei food miles (km0)",
+          "corretto": true,
+          "feedback": "Esatto! Il fair trade garantisce prezzi giusti ai produttori del Sud del mondo ma implica lunghi trasporti. Il km0 riduce i food miles ma non garantisce equità ai produttori lontani. Sono valori in tensione."
+        },
+        {
+          "id": "c",
+          "testo": "La qualità garantita del fair trade contro la convenienza economica del prodotto locale",
+          "feedback": "Non è corretto. Il fair trade non garantisce necessariamente qualità superiore. La tensione reale è tra equità verso produttori distanti e riduzione dell'impatto ambientale del trasporto.",
+          "riferimento": "📖 ESPLORA — Filiera lunga vs. filiera corta"
+        },
+        {
+          "id": "d",
+          "testo": "L'interesse del consumatore contro l'interesse del produttore locale",
+          "feedback": "Non è corretto. Il conflitto non è tra interessi del consumatore e del produttore locale, ma tra due valori etici: equità globale e sostenibilità ambientale locale.",
+          "riferimento": "📖 ESPLORA — Il commercio equo e solidale"
+        }
+      ],
+      "spiegazione": "Fair trade (equità per produttori del Sud del mondo) e km0 (riduzione dei food miles) sono due valori in tensione: scegliere il primo implica accettare filiere lunghe e food miles alti. Scegliere il secondo significa privilegiare l'economia locale e l'ambiente, non necessariamente l'equità globale.",
+      "riferimento_principale": "📖 ESPLORA — Il commercio equo e solidale"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "L'Italia esporta 50 miliardi di euro di prodotti agroalimentari ma importa grano duro per la sua pasta. Cosa rivela questa apparente contraddizione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Che l'agroalimentare italiano è in crisi e non riesce a produrre abbastanza per il mercato interno",
+          "feedback": "Non è corretto. L'export di 50 miliardi di euro indica tutt'altro che una crisi. L'Italia è eccellente in prodotti trasformati di qualità, ma non ha abbastanza terreno per tutto il grano necessario.",
+          "riferimento": "📖 ESPLORA — L'import-export alimentare italiano"
+        },
+        {
+          "id": "b",
+          "testo": "Che l'Italia eccelle nella trasformazione e nella qualità (vino, formaggi, salumi) ma ha limiti nella produzione di materie prime come il grano",
+          "corretto": true,
+          "feedback": "Esatto! L'Italia ha un agroalimentare di qualità eccezionale (pasta, vino, olio, formaggi, salumi) ma non ha superficie agricola sufficiente per produrre tutto il grano duro necessario alla sua industria pastaia di scala mondiale."
+        },
+        {
+          "id": "c",
+          "testo": "Che i produttori italiani di grano sono inefficienti e preferiscono coltivare altre colture più redditizie",
+          "feedback": "Non è corretto. Il problema non è l'efficienza ma la disponibilità di superficie agricola. L'Italia ha già tutta la sua superficie coltivabile impiegata.",
+          "riferimento": "📖 ESPLORA — L'import-export alimentare italiano"
+        },
+        {
+          "id": "d",
+          "testo": "Che il Made in Italy è un'etichetta ingannevole che non corrisponde alla realtà produttiva",
+          "feedback": "Non è corretto. Il Made in Italy indica il luogo di trasformazione principale, non la provenienza di tutti gli ingredienti. Non è ingannevole ma è una distinzione importante da conoscere.",
+          "riferimento": "📖 ESPLORA — L'import-export alimentare italiano"
+        }
+      ],
+      "spiegazione": "L'Italia eccelle nella trasformazione e nella qualità: è prima nell'export di pasta, seconda nel vino, produce formaggi e salumi di fama mondiale. Ma non ha abbastanza terra coltivabile per tutto il grano duro necessario. Importa grano (Canada, USA, Francia, Kazakistan) e lo trasforma in prodotti di alta qualità.",
+      "riferimento_principale": "📖 ESPLORA — L'import-export alimentare italiano"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Sei il responsabile acquisti di una mensa scolastica con budget fisso. Come usi le conoscenze sulla filiera per fare scelte migliori?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Scegli sempre i prodotti con il prezzo più basso, perché minori costi nella filiera indicano maggiore efficienza",
+          "feedback": "Non è corretto. Il prezzo più basso spesso indica che qualcuno nella filiera (il produttore primario) riceve compensi ingiusti, non che la filiera sia più efficiente.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
+        },
+        {
+          "id": "b",
+          "testo": "Cerchi fornitori locali o a filiera corta per frutta e verdura, accettando stagionalità e diversità limitata",
+          "corretto": true,
+          "feedback": "Esatto! La filiera corta per frutta e verdura fresca permette di avere prodotti più freschi, supportare l'economia locale, ridurre i food miles. Il compromesso è accettare la stagionalità e la minore varietà."
+        },
+        {
+          "id": "c",
+          "testo": "Preferisci sempre prodotti con certificazione biologica indipendentemente dal paese di origine",
+          "feedback": "Non è corretto. Il biologico e la filiera corta sono valori diversi. Un biologico proveniente dall'altra parte del mondo ha un impatto ambientale del trasporto che può annullare i benefici del metodo di produzione.",
+          "riferimento": "📖 ESPLORA — Filiera lunga vs. filiera corta"
+        },
+        {
+          "id": "d",
+          "testo": "Scegli esclusivamente prodotti fair trade per garantire equità a tutta la filiera globale",
+          "feedback": "Non è corretto. Il fair trade è un valore importante per prodotti tropicali (caffè, cacao, banane), ma non è applicabile a tutti i prodotti. E una mensa scolastica deve bilanciare diversi valori con un budget fisso.",
+          "riferimento": "📖 ESPLORA — Il commercio equo e solidale"
+        }
+      ],
+      "spiegazione": "Usare le conoscenze sulla filiera per una mensa scolastica significa: scegliere filiera corta per frutta e verdura fresche (più fresco, meno trasporto, produttori locali), fair trade per prodotti tropicali (caffè, cacao), e leggere le etichette per capire la reale provenienza degli ingredienti.",
+      "riferimento_principale": "📖 ESPLORA — Filiera lunga vs. filiera corta"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "La catena del freddo si spezza durante il trasporto di uno yogurt da Milano a Roma a causa di un guasto al frigorifero del camion. Cosa succede biologicamente al prodotto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il prodotto diventa immediatamente pericoloso e non si può più consumare",
+          "feedback": "Parzialmente corretto, ma impreciso. Dipende da quanto tempo la temperatura è rimasta elevata. Il testo indica che i microrganismi si 'risvegliano' e iniziano a moltiplicarsi, ma la pericolosità dipende dalla durata dell'interruzione.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
+        },
+        {
+          "id": "b",
+          "testo": "I microrganismi precedentemente rallentati si risvegliano e si moltiplicano; riportare il prodotto a temperatura non li elimina",
+          "corretto": true,
+          "feedback": "Esatto! I microrganismi non sono stati uccisi dal freddo, solo rallentati. Quando la temperatura sale, si risvegliano e si moltiplicano. Riportare il prodotto a 4°C non elimina quelli già moltiplicati."
+        },
+        {
+          "id": "c",
+          "testo": "Il prodotto si scongela e le sue proteine si denaturano irreversibilmente",
+          "feedback": "Non è corretto. Uno yogurt non è surgelato: è refrigerato. Non si 'scongela'. Il problema è microbiologico, non di denaturazione proteica.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
+        },
+        {
+          "id": "d",
+          "testo": "Nulla di significativo se la temperatura non supera i 20°C",
+          "feedback": "Non è corretto. I batteri si moltiplicano rapidamente anche a 10-15°C. Per prodotti come yogurt, anche poche ore fuori dalla catena del freddo possono compromettere la qualità microbiologica.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
+        }
+      ],
+      "spiegazione": "Il freddo non uccide i microrganismi: li sospende. Quando la temperatura risale, i batteri si risvegliano e si moltiplicano rapidamente. Riportare il prodotto in frigo non elimina quelli già moltiplicati. Questo è il motivo per cui la continuità della catena del freddo è critica.",
+      "riferimento_principale": "📖 ESPLORA — La catena del freddo"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo descrive il consumatore come 'l'unico anello che non negozia' nella filiera. Eppure afferma che il consumatore può influenzare l'intera catena. Come?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Organizzando proteste pubbliche contro le politiche dei supermercati",
+          "feedback": "Non è corretto. Il testo non indica le proteste come strumento di influenza del consumatore sulla filiera. Il meccanismo è diverso e più quotidiano.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
+        },
+        {
+          "id": "b",
+          "testo": "Attraverso le scelte di acquisto aggregate: se molti consumatori scelgono prodotti locali o biologici, la filiera si adatta",
+          "corretto": true,
+          "feedback": "Esatto! Il consumatore non negozia il prezzo, ma le sue scelte aggregate mandano segnali a tutta la filiera. Se i consumatori comprano biologico, gli agricoltori sono incentivati a ridurre i pesticidi."
+        },
+        {
+          "id": "c",
+          "testo": "Acquistando azioni delle aziende alimentari e votando nelle assemblee degli azionisti",
+          "feedback": "Non è corretto. Anche questo è un meccanismo di influenza, ma il testo descrive qualcosa di più accessibile: le scelte quotidiane di acquisto aggregate.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
+        },
+        {
+          "id": "d",
+          "testo": "Leggendo attentamente le etichette ma senza che questo cambi il comportamento della filiera",
+          "feedback": "Non è corretto. Leggere le etichette è il primo passo, ma il testo indica che le scelte aggregate dei consumatori influenzano concretamente la filiera.",
+          "riferimento": "📖 ESPLORA — Gli attori della filiera"
+        }
+      ],
+      "spiegazione": "Il consumatore è l'unico attore che non negozia il prezzo, ma le sue scelte aggregate mandano segnali chiari a tutta la filiera: se molti comprano locale, la filiera si accorcia; se scelgono biologico, gli agricoltori hanno incentivo a ridurre i pesticidi; se ignorano le etichette, la pressione sui prezzi va sui produttori primari.",
+      "riferimento_principale": "📖 ESPLORA — Gli attori della filiera"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un Supply Chain Manager agroalimentare deve ridurre del 20% le emissioni del trasporto mantenendo la freschezza dei prodotti. Quale strategia è più efficace?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Aumentare la frequenza delle consegne con veicoli più piccoli per ridurre il tempo di trasporto",
+          "feedback": "Non è corretto. Aumentare la frequenza con veicoli più piccoli aumenta generalmente le emissioni totali, non le riduce. L'ottimizzazione dei percorsi è più efficace.",
+          "riferimento": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "b",
+          "testo": "Ottimizzare i percorsi di consegna con algoritmi, aggregare i carichi e privilegiare fornitori locali dove possibile",
+          "corretto": true,
+          "feedback": "Esatto! Il Supply Chain Manager usa algoritmi per ottimizzare i percorsi (meno km a parità di consegne), aggrega i carichi (meno veicoli a pieno carico) e riduce le distanze con fornitori più vicini."
+        },
+        {
+          "id": "c",
+          "testo": "Eliminare la catena del freddo per ridurre il consumo di energia dei refrigerati",
+          "feedback": "Non è corretto. Eliminare la catena del freddo comprometterebbe la sicurezza alimentare dei prodotti. Non è un'opzione percorribile.",
+          "riferimento": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "d",
+          "testo": "Sostituire tutti i prodotti freschi con equivalenti conservati che non richiedono refrigerazione",
+          "feedback": "Non è corretto. Questa soluzione cambierebbe completamente la natura dei prodotti venduti e non risponde alla sfida di mantenere la freschezza.",
+          "riferimento": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
+        }
+      ],
+      "spiegazione": "Il Supply Chain Manager agroalimentare usa algoritmi per ottimizzare i percorsi, aggrega i carichi per usare meno veicoli, e diversifica i fornitori privilegiando quelli locali dove possibile. Sistemi di tracciabilità digitale (blockchain, sensori GPS-temperatura) permettono di monitorare e migliorare ogni fase.",
+      "riferimento_principale": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }

@@ -1,260 +1,654 @@
 {
   "mc_id": "MC-DIG-1-01",
-  "titolo": "Orientarsi nell'ambiente digitale",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Qual è la funzione principale della CPU?",
+      "domanda": "Cos'è l'hardware di un computer?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Memorizzare i dati permanentemente",
-          "feedback": "Questa è la funzione dell'SSD."
+          "testo": "La parte fisica che puoi toccare, come lo schermo, la tastiera e il processore",
+          "corretto": true,
+          "feedback": "Esatto! L'hardware comprende tutto ciò che è fisico e tangibile nel computer."
         },
         {
           "id": "b",
-          "testo": "Elaborare le istruzioni e fare i calcoli",
-          "corretto": true,
-          "feedback": "Esatto! CPU = Central Processing Unit: è il cervello del computer, esegue le istruzioni dei programmi."
+          "testo": "I programmi e le app installati nel computer",
+          "corretto": false,
+          "feedback": "Non è corretto. I programmi e le app sono software, non hardware. L'hardware è la parte fisica.",
+          "riferimento": "📖 ESPLORA — La differenza fondamentale: hardware e software"
         },
         {
           "id": "c",
-          "testo": "Visualizzare le immagini sul monitor",
-          "feedback": "Questa è la scheda grafica."
+          "testo": "La connessione a internet del dispositivo",
+          "corretto": false,
+          "feedback": "Non è corretto. La connessione a internet utilizza sia hardware sia software, ma non è la definizione di hardware.",
+          "riferimento": "📖 ESPLORA — La differenza fondamentale: hardware e software"
         },
         {
           "id": "d",
-          "testo": "Connettere il computer a internet",
-          "feedback": "Questa è la scheda di rete."
+          "testo": "Il sistema operativo del computer",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sistema operativo è software, non hardware. È la parte logica, non fisica.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: cos'è e perché esiste"
         }
       ],
-      "spiegazione": "CPU = Central Processing Unit: è il cervello del computer, esegue le istruzioni dei programmi."
+      "spiegazione": "L'hardware è tutto ciò che puoi toccare fisicamente: schermo, tastiera, processore, batteria, cavi. Il software invece è la parte logica (programmi, app, sistema operativo) che non puoi toccare.",
+      "riferimento_principale": "📖 ESPLORA — La differenza fondamentale: hardware e software"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cosa succede ai dati nella RAM quando spegni il computer?",
+      "domanda": "Cosa fa la CPU di un computer?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Rimangono salvati per sempre",
-          "feedback": "Solo l'SSD conserva i dati senza alimentazione."
+          "testo": "Salva i file in modo permanente",
+          "corretto": false,
+          "feedback": "Non è corretto. Salvare i file in modo permanente è compito dello storage (SSD o HDD), non della CPU.",
+          "riferimento": "📖 ESPLORA — La ROM e lo storage — la memoria permanente"
         },
         {
           "id": "b",
-          "testo": "Vengono copiati automaticamente nell'SSD",
-          "feedback": "Il salvataggio automatico non avviene da solo."
+          "testo": "Esegue i calcoli e interpreta le istruzioni del software",
+          "corretto": true,
+          "feedback": "Esatto! La CPU (Central Processing Unit) è il cervello del computer: esegue i calcoli e coordina tutte le altre componenti."
         },
         {
           "id": "c",
-          "testo": "Vengono persi: la RAM è memoria volatile",
-          "corretto": true,
-          "feedback": "Esatto! La RAM è volatile: funziona solo con il computer acceso."
+          "testo": "Mostra le immagini sullo schermo",
+          "corretto": false,
+          "feedback": "Non è corretto. Mostrare le immagini è il compito della GPU (scheda grafica), non della CPU.",
+          "riferimento": "📖 ESPLORA — La GPU — la scheda grafica"
         },
         {
           "id": "d",
-          "testo": "Vengono inviati al cloud",
-          "feedback": "Il cloud richiede salvataggio esplicito."
+          "testo": "Contiene i dati usati temporaneamente durante il funzionamento",
+          "corretto": false,
+          "feedback": "Non è corretto. I dati temporanei sono contenuti nella RAM, non nella CPU.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
         }
       ],
-      "spiegazione": "La RAM è volatile: funziona solo con il computer acceso. Spegnendo si svuota."
+      "spiegazione": "La CPU (Central Processing Unit) è il processore centrale: esegue i calcoli, interpreta le istruzioni del software e coordina tutte le altre componenti. Contiene miliardi di transistor che si accendono e spengono miliardi di volte al secondo.",
+      "riferimento_principale": "📖 ESPLORA — La CPU — il processore"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Differenza fondamentale tra hardware e software?",
+      "domanda": "Qual è la differenza tra RAM e storage (SSD/HDD)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'hardware è gratuito, il software a pagamento",
-          "feedback": "Non è una questione di costo."
+          "testo": "La RAM è più lenta ma più capiente dello storage",
+          "corretto": false,
+          "feedback": "Non è corretto. È il contrario: la RAM è velocissima ma ha meno capacità e si svuota allo spegnimento.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
         },
         {
           "id": "b",
-          "testo": "L'hardware si può toccare fisicamente, il software no",
+          "testo": "La RAM contiene i dati temporanei mentre il computer è acceso; lo storage li salva in modo permanente",
           "corretto": true,
-          "feedback": "Esatto! Hardware = componenti fisici."
+          "feedback": "Esatto! La RAM è la memoria di lavoro temporanea (come una scrivania), lo storage salva i dati permanentemente anche quando il computer è spento."
         },
         {
           "id": "c",
-          "testo": "L'hardware è più importante del software",
-          "feedback": "Uno senza l'altro non funziona."
+          "testo": "RAM e storage sono due nomi diversi per la stessa cosa",
+          "corretto": false,
+          "feedback": "Non è corretto. Sono due componenti distinte con funzioni completamente diverse.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
         },
         {
           "id": "d",
-          "testo": "Non c'è differenza pratica",
-          "feedback": "La differenza è fondamentale."
+          "testo": "Lo storage contiene solo il sistema operativo, la RAM contiene tutto il resto",
+          "corretto": false,
+          "feedback": "Non è corretto. Lo storage contiene tutto in modo permanente. La RAM contiene solo ciò che è in uso in quel momento.",
+          "riferimento": "📖 ESPLORA — La ROM e lo storage — la memoria permanente"
         }
       ],
-      "spiegazione": "Hardware = componenti fisici. Software = programmi e dati. Entrambi indispensabili."
+      "spiegazione": "La RAM è la memoria temporanea di lavoro: velocissima, ma si cancella allo spegnimento. Lo storage (SSD o HDD) conserva i dati permanentemente. Aumentare la RAM riduce i rallentamenti; avere più storage significa poter salvare più file.",
+      "riferimento_principale": "📖 ESPLORA — La RAM — la memoria di lavoro"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'sistema operativo'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un programma che coordina l'hardware e permette alle altre applicazioni di funzionare",
+          "corretto": true,
+          "feedback": "Esatto! Il sistema operativo gestisce CPU, RAM, storage e periferiche, e fornisce l'ambiente in cui le app possono girare."
+        },
+        {
+          "id": "b",
+          "testo": "Il processore principale del computer",
+          "corretto": false,
+          "feedback": "Non è corretto. Il processore principale è la CPU, che è hardware. Il sistema operativo è software.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: cos'è e perché esiste"
+        },
+        {
+          "id": "c",
+          "testo": "Un browser per navigare su internet",
+          "corretto": false,
+          "feedback": "Non è corretto. Il browser è un'applicazione che gira sopra il sistema operativo, non il sistema operativo stesso.",
+          "riferimento": "📖 ESPLORA — I tipi di software: applicazioni, web app, app mobile"
+        },
+        {
+          "id": "d",
+          "testo": "La memoria dove vengono salvati i file",
+          "corretto": false,
+          "feedback": "Non è corretto. La memoria dove si salvano i file è lo storage. Il sistema operativo gestisce tutte le risorse del computer.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: cos'è e perché esiste"
+        }
+      ],
+      "spiegazione": "Il sistema operativo (OS) è il software fondamentale che gestisce tutto: coordina CPU, RAM e storage, controlla le periferiche, e permette alle altre applicazioni di funzionare. Senza OS nessun programma potrebbe girare. Esempi: Windows, macOS, Android, iOS.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema operativo: cos'è e perché esiste"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Qual è la differenza tra internet e il web?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Internet e web sono due parole diverse per la stessa cosa",
+          "corretto": false,
+          "feedback": "Non è corretto. Sono due cose distinte: internet è l'infrastruttura, il web è uno dei servizi che ci gira sopra.",
+          "riferimento": "📖 ESPLORA — Internet e il web: due cose diverse"
+        },
+        {
+          "id": "b",
+          "testo": "Internet è la rete fisica globale; il web è l'insieme delle pagine web accessibili tramite browser",
+          "corretto": true,
+          "feedback": "Esatto! Internet è l'infrastruttura (cavi, router, connessioni), il web è solo uno dei servizi che usa quell'infrastruttura."
+        },
+        {
+          "id": "c",
+          "testo": "Il web è più veloce di internet perché usa connessioni migliori",
+          "corretto": false,
+          "feedback": "Non è corretto. Il web gira su internet, non è una rete separata o più veloce.",
+          "riferimento": "📖 ESPLORA — Internet e il web: due cose diverse"
+        },
+        {
+          "id": "d",
+          "testo": "Internet è solo per i computer; il web funziona anche sugli smartphone",
+          "corretto": false,
+          "feedback": "Non è corretto. Sia internet sia il web funzionano su tutti i dispositivi connessi: computer, smartphone, tablet.",
+          "riferimento": "📖 ESPLORA — Internet e il web: due cose diverse"
+        }
+      ],
+      "spiegazione": "Internet è l'infrastruttura fisica globale: cavi, router, server, connessioni wireless. Il web è uno dei servizi che gira su internet, inventato da Tim Berners-Lee nel 1989: l'insieme di pagine web collegate da link e accessibili tramite browser.",
+      "riferimento_principale": "📖 ESPLORA — Internet e il web: due cose diverse"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Un monitor standard è una periferica di input, di output, o entrambe?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Solo di input, perché riceve immagini dalla GPU",
+          "corretto": false,
+          "feedback": "Non è corretto. Il monitor mostra informazioni verso l'utente, quindi è output, non input.",
+          "riferimento": "📖 ESPLORA — Periferiche di input e output"
+        },
+        {
+          "id": "b",
+          "testo": "Solo di output, perché mostra le immagini prodotte dal computer",
+          "corretto": true,
+          "feedback": "Esatto! Un monitor standard è una periferica di output. Un touchscreen è sia input sia output, ma un monitor senza tocco è solo output."
+        },
+        {
+          "id": "c",
+          "testo": "Entrambe, perché scambia dati con la CPU",
+          "corretto": false,
+          "feedback": "Non è corretto. Un monitor standard non invia dati di input al computer.",
+          "riferimento": "📖 ESPLORA — Periferiche di input e output"
+        },
+        {
+          "id": "d",
+          "testo": "Né input né output, perché è parte dell'hardware interno",
+          "corretto": false,
+          "feedback": "Non è corretto. Il monitor è una periferica esterna di output che visualizza le informazioni per l'utente.",
+          "riferimento": "📖 ESPLORA — Periferiche di input e output"
+        }
+      ],
+      "spiegazione": "Un monitor standard è una periferica di output: porta dati dal computer verso l'utente (mostra immagini e testo). Uno schermo touchscreen è invece sia input (riceve i tocchi) sia output (visualizza immagini). Mouse e tastiera sono esempi di periferiche solo di input.",
+      "riferimento_principale": "📖 ESPLORA — Periferiche di input e output"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Perché 16 GB di RAM è meglio di 4 GB?",
+      "domanda": "Un computer ha 4 GB di RAM e il sistema operativo ne richiede già 4. Cosa succede quando apri molti programmi contemporaneamente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ha un monitor migliore",
-          "feedback": "Il monitor non influisce sulla velocità."
+          "testo": "Non succede nulla, la RAM si espande automaticamente",
+          "corretto": false,
+          "feedback": "Non è corretto. La RAM non si espande automaticamente. Quando è piena, il sistema usa lo storage come memoria temporanea, diventando molto più lento.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
         },
         {
           "id": "b",
-          "testo": "Può eseguire più programmi contemporaneamente senza rallentare",
+          "testo": "Il computer rallenta perché i programmi si contendono lo spazio in RAM",
           "corretto": true,
-          "feedback": "Esatto! La RAM è la scrivania di lavoro: più è grande, più programmi puoi tenere aperti."
+          "feedback": "Esatto! Con poca RAM libera, il sistema usa lo storage come memoria temporanea (molto più lento), causando rallentamenti evidenti."
         },
         {
           "id": "c",
-          "testo": "Ha più spazio di archiviazione",
-          "feedback": "Lo spazio di archiviazione è l'SSD."
+          "testo": "La CPU si ferma automaticamente per proteggere i dati",
+          "corretto": false,
+          "feedback": "Non è corretto. La CPU continua a lavorare, ma rallenta perché deve gestire lo spostamento di dati tra RAM e storage.",
+          "riferimento": "📖 ESPLORA — La CPU — il processore"
         },
         {
           "id": "d",
-          "testo": "La batteria dura di più",
-          "feedback": "La batteria dipende da altri fattori."
+          "testo": "Lo storage compensa la mancanza di RAM senza effetti sulle prestazioni",
+          "corretto": false,
+          "feedback": "Non è corretto. Lo storage compensa tramite memoria virtuale, ma è 10-100 volte più lento della RAM, quindi il computer rallenta sensibilmente.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
         }
       ],
-      "spiegazione": "La RAM è la scrivania di lavoro: più è grande, più programmi puoi tenere aperti."
+      "spiegazione": "La RAM è la scrivania di lavoro del computer. Quando è piena, il sistema usa lo storage come memoria virtuale, ma lo storage è molto più lento, causando rallentamenti evidenti. Con 4 GB di RAM, tenere aperte tante app contemporaneamente è un problema reale.",
+      "riferimento_principale": "📖 ESPLORA — La RAM — la memoria di lavoro"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cosa fa il sistema operativo?",
+      "domanda": "Perché un computer diventa lento quando lo storage è quasi pieno?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Solo riproduce musica e video",
-          "feedback": "Il SO fa molto di più."
+          "testo": "Perché la CPU si surriscalda quando ci sono troppi file",
+          "corretto": false,
+          "feedback": "Non è corretto. Il surriscaldamento della CPU dipende dall'uso intensivo dei calcoli, non dalla quantità di file salvati.",
+          "riferimento": "📖 ESPLORA — La CPU — il processore"
         },
         {
           "id": "b",
-          "testo": "Gestisce le risorse hardware e offre un'interfaccia per le applicazioni",
+          "testo": "Perché il sistema operativo non riesce a creare i file temporanei necessari per funzionare",
           "corretto": true,
-          "feedback": "Esatto! Il SO è il gestore condominiale: alloca RAM, gestisce file, controlla l'hardware per tutte le app."
+          "feedback": "Esatto! Il sistema operativo ha bisogno di spazio libero per creare file temporanei. Se lo storage è quasi pieno, manca spazio e il sistema rallenta."
         },
         {
           "id": "c",
-          "testo": "È un tipo di processore avanzato",
-          "feedback": "Il SO è software, non hardware."
+          "testo": "Perché la GPU consuma troppa energia quando ci sono molte immagini salvate",
+          "corretto": false,
+          "feedback": "Non è corretto. La GPU gestisce le immagini mostrate sullo schermo, non quelle salvate nello storage.",
+          "riferimento": "📖 ESPLORA — La GPU — la scheda grafica"
         },
         {
           "id": "d",
-          "testo": "Memorizza solo i documenti",
-          "feedback": "I documenti sono gestiti dalle applicazioni."
+          "testo": "Perché la RAM si riempie automaticamente con i file dallo storage",
+          "corretto": false,
+          "feedback": "Non è corretto. La RAM viene usata solo per i programmi attivi, non per i file semplicemente salvati nello storage.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
         }
       ],
-      "spiegazione": "Il SO è il gestore condominiale: alloca RAM, gestisce file, controlla l'hardware per tutte le app."
+      "spiegazione": "Quando lo storage è quasi pieno, il sistema operativo fatica a creare i file temporanei necessari (memoria virtuale, cache). Liberare spazio sullo storage spesso risolve il problema del rallentamento senza cambiare hardware.",
+      "riferimento_principale": "📖 ESPLORA — La ROM e lo storage — la memoria permanente"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cosa significa che un file è nella 'cartella radice'?",
+      "domanda": "Qual è la differenza principale tra un'applicazione desktop e una web app?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "È un file molto importante",
-          "feedback": "L'importanza non dipende dalla posizione."
+          "testo": "Le applicazioni desktop sono sempre più veloci delle web app",
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità dipende da molti fattori. Non è una differenza strutturale tra i due tipi.",
+          "riferimento": "📖 ESPLORA — I tipi di software: applicazioni, web app, app mobile"
         },
         {
           "id": "b",
-          "testo": "Si trova al livello più alto della struttura di cartelle",
+          "testo": "Le applicazioni desktop si installano sul dispositivo e funzionano offline; le web app girano nel browser e richiedono internet",
           "corretto": true,
-          "feedback": "Esatto! La radice è il livello più alto dell'albero: C:\\ su Windows, / su Linux/Mac."
+          "feedback": "Esatto! Le app desktop sono installate localmente. Le web app girano su server remoti e si accede tramite browser con connessione internet."
         },
         {
           "id": "c",
-          "testo": "È un file nascosto",
-          "feedback": "I file nascosti hanno un attributo specifico."
+          "testo": "Le web app si possono usare solo su smartphone; le app desktop solo su computer",
+          "corretto": false,
+          "feedback": "Non è corretto. Le web app si usano su qualsiasi dispositivo con un browser. Le app desktop si installano principalmente su computer.",
+          "riferimento": "📖 ESPLORA — I tipi di software: applicazioni, web app, app mobile"
         },
         {
           "id": "d",
-          "testo": "È di sistema e non modificabile",
-          "feedback": "Anche i file normali possono essere nella radice."
+          "testo": "Non c'è differenza, sono due nomi per lo stesso tipo di programma",
+          "corretto": false,
+          "feedback": "Non è corretto. Sono categorie diverse con caratteristiche molto diverse in termini di installazione, connettività e accessibilità.",
+          "riferimento": "📖 ESPLORA — I tipi di software: applicazioni, web app, app mobile"
         }
       ],
-      "spiegazione": "La radice è il livello più alto dell'albero: C:\\ su Windows, / su Linux/Mac."
+      "spiegazione": "Le applicazioni desktop si installano sul computer e funzionano anche offline. Le web app girano sui server di chi le ha create, si accede tramite browser, e richiedono connessione internet. Il cloud computing sposta sempre più verso le web app.",
+      "riferimento_principale": "📖 ESPLORA — I tipi di software: applicazioni, web app, app mobile"
     },
     {
-      "livello": "A",
-      "domanda": "Cosa significa architettura '64 bit' di un processore?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Cosa si intende per 'cloud computing' e qual è il principale svantaggio?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ha 64 core",
-          "feedback": "64 core e 64 bit sono concetti diversi."
+          "testo": "Dati e programmi su server remoti accessibili da qualsiasi dispositivo; svantaggio: dipendenza da internet e dati gestiti da terze parti",
+          "corretto": true,
+          "feedback": "Esatto! Il cloud offre accessibilità ovunque e backup automatico, ma richiede internet e affida i dati a server di aziende terze."
         },
         {
           "id": "b",
-          "testo": "Elabora 64 bit per ciclo e può gestire più di 4 GB di RAM",
-          "corretto": true,
-          "feedback": "Esatto! Con 64 bit il processore può indirizzare 2^64 indirizzi — oltre 4 miliardi di GB teorici."
+          "testo": "Un sistema per velocizzare la CPU tramite server remoti; svantaggio: costa molto",
+          "corretto": false,
+          "feedback": "Non è corretto. Il cloud computing non velocizza la CPU. Riguarda l'archiviazione e l'accesso a dati e programmi su server remoti.",
+          "riferimento": "📖 ESPLORA — Cloud computing: cosa significa 'in cloud'"
         },
         {
           "id": "c",
-          "testo": "Funziona a 64 GHz",
-          "feedback": "I processori attuali lavorano a 2-5 GHz."
+          "testo": "Un tipo di storage fisico montato sopra il computer; svantaggio: ingombro fisico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il cloud è per definizione remoto (su server di terze parti), non fisico sul dispositivo dell'utente.",
+          "riferimento": "📖 ESPLORA — Cloud computing: cosa significa 'in cloud'"
         },
         {
           "id": "d",
-          "testo": "Ha 64 GB di RAM integrata",
-          "feedback": "La RAM è separata dal processore."
+          "testo": "Un aggiornamento automatico del sistema operativo; svantaggio: richiede riavvio frequente",
+          "corretto": false,
+          "feedback": "Non è corretto. Il cloud computing non riguarda gli aggiornamenti del sistema operativo, ma l'archiviazione e l'accesso remoto a dati e programmi.",
+          "riferimento": "📖 ESPLORA — Cloud computing: cosa significa 'in cloud'"
         }
       ],
-      "spiegazione": "Con 64 bit il processore può indirizzare 2^64 indirizzi — oltre 4 miliardi di GB teorici."
+      "spiegazione": "Il cloud computing significa che dati e programmi sono su server remoti (di Amazon, Google, Microsoft) accessibili da qualsiasi dispositivo tramite internet. Vantaggi: accessibilità e backup automatico. Svantaggi: dipende dalla connessione internet e i dati sono gestiti da terze parti.",
+      "riferimento_principale": "📖 ESPLORA — Cloud computing: cosa significa 'in cloud'"
     },
     {
-      "livello": "A",
-      "domanda": "Differenza tra SSD e HDD?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Perché un processore con più core è utile per le attività quotidiane?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'SSD usa dischi magnetici rotanti, l'HDD no",
-          "feedback": "È il contrario."
+          "testo": "Perché ogni core aumenta la velocità di clock della CPU",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero di core e la velocità di clock (GHz) sono caratteristiche indipendenti.",
+          "riferimento": "📖 ESPLORA — La CPU — il processore"
         },
         {
           "id": "b",
-          "testo": "L'SSD usa memoria flash senza parti in movimento: molto più veloce e resistente",
+          "testo": "Perché permette di eseguire più attività contemporaneamente in parallelo senza rallentamenti",
           "corretto": true,
-          "feedback": "Esatto! SSD = Solid State Drive: chip flash senza meccanica."
+          "feedback": "Esatto! Ogni core è un'unità di calcolo indipendente. Con 4 core, uno gestisce la musica, uno il browser, uno le notifiche, uno gli aggiornamenti — tutto in parallelo."
         },
         {
           "id": "c",
-          "testo": "L'HDD è sempre più veloce dell'SSD",
-          "feedback": "L'SSD è nettamente più veloce."
+          "testo": "Perché i core aggiuntivi aumentano la memoria RAM disponibile",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero di core e la quantità di RAM sono componenti indipendenti.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
         },
         {
           "id": "d",
-          "testo": "Non c'è differenza di velocità",
-          "feedback": "La differenza di velocità è enorme."
+          "testo": "Perché i core multipli riducono il consumo energetico della GPU",
+          "corretto": false,
+          "feedback": "Non è corretto. I core della CPU e il consumo della GPU sono aspetti separati.",
+          "riferimento": "📖 ESPLORA — La GPU — la scheda grafica"
         }
       ],
-      "spiegazione": "SSD = Solid State Drive: chip flash senza meccanica. 3-10x più veloce, meno fragile."
+      "spiegazione": "Un processore multi-core ha più unità di calcolo che lavorano in parallelo. Con 4 core puoi gestire contemporaneamente musica, browser, notifiche e aggiornamenti senza rallentamenti. È come avere 4 cervelli che lavorano insieme.",
+      "riferimento_principale": "📖 ESPLORA — La CPU — il processore"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il kernel di un sistema operativo?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Uno smartphone moderno usa un SoC invece di componenti separati. Qual è il vantaggio principale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'interfaccia grafica del desktop",
-          "feedback": "Il desktop è la shell grafica."
+          "testo": "Il SoC è più facile da riparare rispetto ai componenti separati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il SoC integrato rende la riparazione più difficile — è uno dei problemi del 'Right to Repair'.",
+          "riferimento": "🔍 OSSERVA — Il SoC: un chip che fa tutto"
         },
         {
           "id": "b",
-          "testo": "Il nucleo del SO che gestisce direttamente hardware e risorse",
+          "testo": "Integra CPU, GPU e modem in un chip compatto, riducendo dimensioni e consumi energetici",
           "corretto": true,
-          "feedback": "Esatto! Il kernel gira con i massimi privilegi: gestisce memoria, CPU, I/O."
+          "feedback": "Esatto! Il SoC (System on a Chip) integra tutto in uno spazio grande come l'unghia del mignolo, permettendo smartphone sottili con lunga autonomia."
         },
         {
           "id": "c",
-          "testo": "Il browser web integrato",
-          "feedback": "Il browser è un'applicazione separata."
+          "testo": "Permette di aggiornare la CPU e la GPU separatamente senza cambiare il telefono",
+          "corretto": false,
+          "feedback": "Non è corretto. In un SoC tutti i componenti sono integrati e non separabili.",
+          "riferimento": "🔍 OSSERVA — Il SoC: un chip che fa tutto"
         },
         {
           "id": "d",
-          "testo": "Il programma di aggiornamento",
-          "feedback": "Gli aggiornamenti sono un servizio distinto."
+          "testo": "Ha più RAM di un computer normale perché i componenti condividono la memoria",
+          "corretto": false,
+          "feedback": "Non è corretto. La RAM degli smartphone non è necessariamente maggiore di quella dei computer.",
+          "riferimento": "🔍 OSSERVA — Il SoC: un chip che fa tutto"
         }
       ],
-      "spiegazione": "Il kernel gira con i massimi privilegi: gestisce memoria, CPU, I/O. Le app passano attraverso di esso."
+      "spiegazione": "Un SoC (System on a Chip) integra CPU, GPU, modem, Neural Engine e altri blocchi in un unico chip. I vantaggi sono dimensioni ridotte, minor consumo energetico e migliore integrazione. Il chip Apple A17 ha 19 miliardi di transistor nelle dimensioni di un'unghia.",
+      "riferimento_principale": "🔍 OSSERVA — Il SoC: un chip che fa tutto"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un computer ha 8 GB di RAM e un SSD quasi pieno (240/256 GB). L'utente sente il computer molto lento. Qual è la soluzione più efficace?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Aggiornare il sistema operativo alla versione più recente",
+          "corretto": false,
+          "feedback": "Non è corretto. Un aggiornamento del SO può aiutare per problemi di sicurezza, ma non risolve il rallentamento causato dallo storage pieno.",
+          "riferimento": "📖 ESPLORA — La ROM e lo storage — la memoria permanente"
+        },
+        {
+          "id": "b",
+          "testo": "Liberare spazio sull'SSD cancellando file inutili o trasferendoli su cloud",
+          "corretto": true,
+          "feedback": "Esatto! Con solo 16 GB liberi, il sistema operativo non riesce a creare i file temporanei necessari. Liberare spazio risolve il problema principale."
+        },
+        {
+          "id": "c",
+          "testo": "Installare più applicazioni per ottimizzare la gestione della RAM",
+          "corretto": false,
+          "feedback": "Non è corretto. Installare più applicazioni occupa ulteriore spazio sullo storage e aggrava il problema.",
+          "riferimento": "📖 ESPLORA — La ROM e lo storage — la memoria permanente"
+        },
+        {
+          "id": "d",
+          "testo": "Aumentare il numero di tab aperti nel browser per sfruttare meglio la RAM",
+          "corretto": false,
+          "feedback": "Non è corretto. Aprire più tab nel browser consuma più RAM, peggiorando la situazione.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
+        }
+      ],
+      "spiegazione": "Un SSD quasi pieno (240/256 GB) causa rallentamenti perché il sistema operativo non trova spazio per i file temporanei e la memoria virtuale. Con 8 GB di RAM il sistema è già adeguato, quindi il problema principale è lo storage esaurito. Liberare spazio è la soluzione prioritaria.",
+      "riferimento_principale": "📖 ESPLORA — La ROM e lo storage — la memoria permanente"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Android e iOS sono entrambi sistemi operativi per smartphone. Qual è la differenza fondamentale tra i due?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Android è open source e permette installazione da fonti esterne; iOS è chiuso e permette solo app dall'App Store ufficiale",
+          "corretto": true,
+          "feedback": "Esatto! Android è basato su Linux, più aperto. iOS è un sistema chiuso di Apple: solo app approvate dall'App Store."
+        },
+        {
+          "id": "b",
+          "testo": "Android funziona solo su smartphone Samsung; iOS funziona su tutti i brand",
+          "corretto": false,
+          "feedback": "Non è corretto. Android funziona su molti produttori (Samsung, Xiaomi, Google). iOS funziona esclusivamente sui dispositivi Apple.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: cos'è e perché esiste"
+        },
+        {
+          "id": "c",
+          "testo": "iOS ha più RAM di Android perché Apple produce hardware più potente",
+          "corretto": false,
+          "feedback": "Non è corretto. La differenza tra iOS e Android riguarda il sistema operativo, non la quantità di RAM.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: cos'è e perché esiste"
+        },
+        {
+          "id": "d",
+          "testo": "Android usa SSD; iOS usa HDD per maggiore capacità di storage",
+          "corretto": false,
+          "feedback": "Non è corretto. Tutti gli smartphone moderni, sia Android sia iOS, usano storage a stato solido (NAND flash).",
+          "riferimento": "📖 ESPLORA — La ROM e lo storage — la memoria permanente"
+        }
+      ],
+      "spiegazione": "Android è basato su Linux, open source, e permette di installare app da fonti diverse dall'app store ufficiale. iOS è un sistema chiuso di Apple: rigido nel controllo delle app. Android ha circa il 72% del mercato smartphone mondiale, iOS domina nel segmento premium.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema operativo: cos'è e perché esiste"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché la GPU elabora le immagini dello schermo invece della CPU, pur essendo la CPU il componente principale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché la CPU è troppo lenta per gestire le immagini",
+          "corretto": false,
+          "feedback": "Non è corretto. La CPU non è troppo lenta in assoluto: è ottimizzata per calcoli complessi sequenziali, non per milioni di calcoli semplici in parallelo.",
+          "riferimento": "📖 ESPLORA — La GPU — la scheda grafica"
+        },
+        {
+          "id": "b",
+          "testo": "Perché la GPU è ottimizzata per milioni di calcoli semplici in parallelo, come ricalcolare il colore di ogni pixel molte volte al secondo",
+          "corretto": true,
+          "feedback": "Esatto! Un monitor Full HD ha oltre 2 milioni di pixel. A 60 fps la GPU deve ricalcolare 120 milioni di pixel al secondo — compito per cui è progettata."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la GPU ha accesso diretto alla RAM mentre la CPU deve passare per il bus di sistema",
+          "corretto": false,
+          "feedback": "Non è corretto. La separazione CPU-GPU dipende dalla specializzazione per tipo di calcolo, non dall'accesso alla RAM.",
+          "riferimento": "📖 ESPLORA — La GPU — la scheda grafica"
+        },
+        {
+          "id": "d",
+          "testo": "Perché la CPU si occupa solo del sistema operativo e non può gestire anche le applicazioni",
+          "corretto": false,
+          "feedback": "Non è corretto. La CPU gestisce il sistema operativo, le applicazioni e molto altro. La GPU esiste per specializzazione.",
+          "riferimento": "📖 ESPLORA — La CPU — il processore"
+        }
+      ],
+      "spiegazione": "La CPU è ottima per pochi calcoli complessi in sequenza. La GPU è ottima per milioni di calcoli semplici in parallelo. Un monitor Full HD a 60 fps richiede di ricalcolare 120 milioni di pixel al secondo (2M pixel × 60 fps). Senza GPU dedicata la CPU non reggerebbe.",
+      "riferimento_principale": "📖 ESPLORA — La GPU — la scheda grafica"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Una scuola deve scegliere tra computer desktop da 480€ (durata 8-10 anni) e tablet da 280€ (durata 3-5 anni) per 25 postazioni. Quale valutazione economica è corretta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I tablet costano meno, quindi sono sempre la scelta migliore",
+          "corretto": false,
+          "feedback": "Non è corretto. Il costo unitario è solo un aspetto. La durata più breve dei tablet può comportare un riacquisto entro 5 anni, aumentando il costo totale.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto l'ambiente digitale della mia classe"
+        },
+        {
+          "id": "b",
+          "testo": "Il costo totale su 5 anni dei desktop (480€ × 25 = 12.000€) è simile o inferiore a quello dei tablet se questi richiedono riacquisto",
+          "corretto": true,
+          "feedback": "Esatto! I desktop costano 12.000€ totali con durata 8-10 anni (costo annuo ~1.300-1.500€). I tablet con riacquisto potrebbero costare di più nel tempo."
+        },
+        {
+          "id": "c",
+          "testo": "I tablet sono sempre meno costosi su qualsiasi arco di tempo",
+          "corretto": false,
+          "feedback": "Non è corretto. Se i tablet durano 3-5 anni e i desktop 8-10 anni, nel decennio i tablet potrebbero richiedere due acquisti, superando il costo dei desktop.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto l'ambiente digitale della mia classe"
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema operativo dei tablet li rende sempre più lenti dei desktop, quindi i desktop valgono di più",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sistema operativo non determina automaticamente le prestazioni. La valutazione deve basarsi su specifiche hardware e uso previsto.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto l'ambiente digitale della mia classe"
+        }
+      ],
+      "spiegazione": "Il costo totale di possesso (TCO) considera prezzo unitario, durata e costi di manutenzione. 25 desktop da 480€ = 12.000€ totali, durata 8-10 anni. 25 tablet da 280€ = 7.000€ ma con durata 3-5 anni — possibile riacquisto in 5 anni porta il totale a 14.000€. I desktop possono risultare più convenienti nel lungo periodo.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Progetto l'ambiente digitale della mia classe"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché la 'modalità privata' del browser non rende anonimi su internet?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché salva comunque la cronologia in una cartella nascosta del computer",
+          "corretto": false,
+          "feedback": "Non è corretto. La modalità privata non salva la cronologia sul dispositivo. Il problema è che il traffico è visibile a livello di rete.",
+          "riferimento": "📖 ESPLORA — Storage locale vs. cloud: dove sono i tuoi file?"
+        },
+        {
+          "id": "b",
+          "testo": "Perché il provider internet e i siti visitati vedono comunque il tuo indirizzo IP e la tua attività",
+          "corretto": true,
+          "feedback": "Esatto! La modalità privata impedisce solo al browser di salvare la cronologia sul dispositivo. Non nasconde la navigazione al provider internet né ai siti visitati."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la RAM non viene svuotata quando chiudi la finestra privata",
+          "corretto": false,
+          "feedback": "Non è corretto. La RAM viene liberata normalmente alla chiusura. Il problema riguarda la visibilità del traffico di rete.",
+          "riferimento": "📖 ESPLORA — La RAM — la memoria di lavoro"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il sistema operativo registra comunque le pagine visitate in un log di sistema",
+          "corretto": false,
+          "feedback": "Non è corretto. In modalità privata il sistema operativo non registra le pagine visitate. Il problema è la visibilità a livello di rete.",
+          "riferimento": "📖 ESPLORA — Storage locale vs. cloud: dove sono i tuoi file?"
+        }
+      ],
+      "spiegazione": "La modalità privata impedisce al browser di salvare cronologia, cookie e password sul dispositivo locale. Non nasconde però la navigazione al provider internet (ISP), alla rete scolastica o aziendale a cui sei connesso, ai siti visitati (che vedono il tuo IP) o alle reti pubblicitarie che usano il fingerprinting del browser.",
+      "riferimento_principale": "📖 ESPLORA — Storage locale vs. cloud: dove sono i tuoi file?"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "I transistor in una CPU moderna hanno dimensioni di 3-5 nanometri. Cosa significa questo in termini pratici per le prestazioni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Significa che la CPU pesa meno e quindi i computer sono più leggeri",
+          "corretto": false,
+          "feedback": "Non è corretto. Le dimensioni dei transistor riguardano la densità di calcolo, non il peso fisico del chip.",
+          "riferimento": "🔢 Collegamento STEM — Scienze"
+        },
+        {
+          "id": "b",
+          "testo": "Significa che miliardi di transistor stanno in un chip piccolo come un'unghia, consentendo enormi capacità di calcolo a basso consumo",
+          "corretto": true,
+          "feedback": "Esatto! A 3-5 nm i transistor sono 20.000 volte più sottili di un capello umano. Il chip Apple A17 ha 19 miliardi di transistor in uno spazio minimo."
+        },
+        {
+          "id": "c",
+          "testo": "Significa che la CPU può elaborare solo dati molto piccoli come file di testo",
+          "corretto": false,
+          "feedback": "Non è corretto. Le dimensioni dei transistor si riferiscono alla scala fisica del componente, non al tipo di dati elaborati.",
+          "riferimento": "🔢 Collegamento STEM — Scienze"
+        },
+        {
+          "id": "d",
+          "testo": "Significa che la CPU funziona solo a temperature molto basse per evitare danni",
+          "corretto": false,
+          "feedback": "Non è corretto. Le CPU moderne funzionano a temperatura ambiente con normale raffreddamento, non richiedono temperature criogeniche.",
+          "riferimento": "🔢 Collegamento STEM — Scienze"
+        }
+      ],
+      "spiegazione": "I transistor da 3-5 nm (20.000 volte più sottili di un capello umano) sono fatti di silicio con processo di doping. Dimensioni così ridotte permettono di inserire miliardi di transistor in un chip piccolo come un'unghia: più transistor = più calcolo con meno consumo energetico. Il chip Apple A17 ha 19 miliardi di transistor.",
+      "riferimento_principale": "🔢 Collegamento STEM — Scienze"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }

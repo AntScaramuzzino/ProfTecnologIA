@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-SIS-3-03",
-  "titolo": "Imprenditorialità e innovazione tecnologica",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è una 'startup'?",
+      "domanda": "Quale strumento viene usato nel metodo Lean Startup per testare le ipotesi più rischiose nel minor tempo possibile?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una piccola azienda familiare appena avviata",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "MVP (Minimum Viable Product): la versione più semplice del prodotto che permette di testare l'ipotesi chiave",
+          "corretto": true,
+          "feedback": "Esatto! Il MVP (Minimum Viable Product) è la versione più semplice possibile del prodotto che permette di raccogliere il massimo di apprendimento con il minimo di sforzo. Il primo sito di Airbnb era solo una pagina web con foto e un modulo di contatto."
         },
         {
           "id": "b",
-          "testo": "Un'organizzazione temporanea in cerca di un modello di business scalabile e ripetibile: nasce con alta incertezza e punta a crescita rapida",
-          "corretto": true,
-          "feedback": "Esatto! La definizione di Steve Blank distingue startup da piccola impresa: la startup cerca il modello di business, la piccola impresa esegue un modello già noto."
+          "testo": "Un prototipo fisico completamente funzionante del prodotto finale",
+          "feedback": "Non corretto. Un prototipo completo e funzionante è l'opposto dell'MVP. L'MVP è intenzionalmente minimale: solo ciò che serve per testare l'ipotesi più rischiosa, non il prodotto completo.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         },
         {
           "id": "c",
-          "testo": "Un'azienda con meno di 5 anni di età",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un sondaggio online da 100 domande sulle preferenze dei clienti",
+          "feedback": "Non corretto. I sondaggi (specialmente quelli lunghi) non sono MVP. Il MVP è una versione reale (anche se minima) del prodotto che si può usare, non un questionario su preferenze ipotetiche.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         },
         {
           "id": "d",
-          "testo": "Un progetto imprenditoriale finanziato dallo Stato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un piano di business dettagliato di 50 pagine per gli investitori",
+          "feedback": "Non corretto. Il piano di business è uno strumento di pianificazione, non un MVP. Il Lean Startup si basa precisamente sul NON pianificare troppo a priori ma testare le ipotesi con il prodotto reale.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         }
       ],
-      "spiegazione": "La definizione di Steve Blank distingue startup da piccola impresa: la startup cerca il modello di business, la piccola impresa esegue un modello già noto."
+      "spiegazione": "Il MVP (Minimum Viable Product) è il cuore del Lean Startup: la versione più semplice possibile del prodotto che permette di testare le ipotesi più rischiose. Airbnb MVP = pagina web con 3 foto e modulo di contatto (nessun pagamento, nessuna mappa). Obiettivo: scoprire se qualcuno pagherebbe per dormire in casa di uno sconosciuto, senza costruire tutto il sistema.",
+      "riferimento_principale": "📖 ESPLORA — Il metodo Lean Startup"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è il 'Business Model Canvas'?",
+      "domanda": "In che modo il Business Model Canvas divide la descrizione di un'impresa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un piano finanziario quinquennale per le startup",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "In 9 blocchi: clienti, proposta di valore, canali, relazioni con i clienti, fonti di ricavo, risorse chiave, attività chiave, partner chiave, struttura dei costi",
+          "corretto": true,
+          "feedback": "Esatto! Il Business Model Canvas (Osterwalder, 2010) è diviso in 9 blocchi che descrivono come funziona un'impresa su una singola pagina."
         },
         {
           "id": "b",
-          "testo": "Uno strumento visivo su una sola pagina che descrive il modello di business in 9 blocchi: proposta di valore, clienti, canali, relazioni, ricavi, risorse, attività, partner, costi",
-          "corretto": true,
-          "feedback": "Esatto! Il BMC (Osterwalder, 2010) è lo strumento standard per le startup."
+          "testo": "In 3 sezioni: cosa si produce, come si vende, quanto si guadagna",
+          "feedback": "Non corretto. La suddivisione semplificata in 3 sezioni non è il Business Model Canvas. Il BMC ha 9 blocchi specifici che coprono tutti gli aspetti del modello di business.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
         },
         {
           "id": "c",
-          "testo": "Un grafico che mostra la crescita di un'azienda nel tempo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "In 12 capitoli come un piano aziendale tradizionale",
+          "feedback": "Non corretto. Il BMC è nato come alternativa al piano aziendale tradizionale (lungo e rigido): è uno strumento visivo di una pagina con 9 blocchi, non un documento di 12 capitoli.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
         },
         {
           "id": "d",
-          "testo": "La struttura organizzativa di un'azienda tech",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "In 2 parti: entrate e uscite finanziarie",
+          "feedback": "Non corretto. Il BMC non è un bilancio. Descrive il modello di business su 9 blocchi che vanno molto oltre le semplici entrate e uscite.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
         }
       ],
-      "spiegazione": "Il BMC (Osterwalder, 2010) è lo strumento standard per le startup. Risponde: chi sono i clienti? Cosa offri? Come guadagni? Cosa ti costa? Chi sono i partner chiave?"
+      "spiegazione": "Il Business Model Canvas (Osterwalder, 2010): 9 blocchi in una pagina. Lato VALORE: clienti target + proposta di valore + canali + relazioni + fonti di ricavo. Lato EFFICIENZA: risorse chiave + attività chiave + partner chiave + struttura dei costi. Si compila nell'ordine: prima i clienti, poi il valore, poi come lo si consegna, poi come lo si costruisce.",
+      "riferimento_principale": "📖 ESPLORA — Il Business Model Canvas"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il concetto di 'MVP' (Minimum Viable Product)?",
+      "domanda": "Cosa si intende per 'pivot' nel metodo Lean Startup?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il prodotto con il minor numero di funzionalità possibili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un cambiamento strategico basato sui dati raccolti durante i test, quando si scopre che un'ipotesi chiave era sbagliata",
+          "corretto": true,
+          "feedback": "Esatto! Il pivot è un cambiamento strategico deliberato, non un fallimento. Flickr era un videogioco (pivot → sito di foto). Slack era uno strumento interno per un'azienda di videogiochi (pivot → sistema di messaggistica per team). Il pivot è basato su dati reali, non su intuizioni."
         },
         {
           "id": "b",
-          "testo": "La versione più semplice di un prodotto che permette di raccogliere il massimo apprendimento sulle ipotesi più rischiose con il minimo sforzo",
-          "corretto": true,
-          "feedback": "Esatto! L'MVP (Ries, 2011) non è il prodotto finito economizzato: è uno strumento di apprendimento."
+          "testo": "Il momento in cui si smette di sviluppare il prodotto e si inizia a venderlo",
+          "feedback": "Non corretto. Quello è il lancio del prodotto. Il pivot è un cambiamento di direzione strategica basato sui dati dei test, che avviene prima o durante lo sviluppo.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         },
         {
           "id": "c",
-          "testo": "Il prototipo fisico di un prodotto da testare",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il punto massimo di crescita di un'impresa prima della stagnazione",
+          "feedback": "Non corretto. Quello sarebbe il 'picco' nel ciclo economico. Il pivot è un cambiamento strategico deliberato basato su dati dei test che mostrano che un'ipotesi era sbagliata.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         },
         {
           "id": "d",
-          "testo": "Il prodotto di qualità minima accettabile per il mercato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il processo di ottenere il primo finanziamento da un venture capital",
+          "feedback": "Non corretto. Il finanziamento da VC è una fase della crescita aziendale. Il pivot è un cambiamento strategico basato sui dati di test: si cambia direzione quando i dati mostrano che la strada attuale non funziona.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         }
       ],
-      "spiegazione": "L'MVP (Ries, 2011) non è il prodotto finito economizzato: è uno strumento di apprendimento. Dropbox ha usato un semplice video come MVP per validare la domanda prima di sviluppare."
+      "spiegazione": "Il pivot è un cambiamento strategico deliberato basato sui dati: quando le misurazioni mostrano che un'ipotesi era sbagliata, si cambia direzione invece di perseverare. Esempi famosi: YouTube era un sito di dating (pivot → sharing di video), Twitter era una piattaforma di podcast (pivot → microblogging), Slack era un tool interno di un'azienda di videogiochi fallita (pivot → messaging per team).",
+      "riferimento_principale": "📖 ESPLORA — Il metodo Lean Startup"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Qual è la forma giuridica più semplice per avviare un'impresa individuale in Italia?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ditta individuale: registrazione all'Agenzia delle Entrate, apertura della partita IVA, inizio dell'attività",
+          "corretto": true,
+          "feedback": "Esatto! La ditta individuale è la forma più semplice: ci si registra all'Agenzia delle Entrate, si apre la partita IVA e si può iniziare. Non richiede atto notarile né capitale minimo."
+        },
+        {
+          "id": "b",
+          "testo": "Società a responsabilità limitata (SRL): la forma più diffusa per le imprese singole in Italia",
+          "feedback": "Non corretto. La SRL è più complessa della ditta individuale: richiede atto notarile, statuto, registro delle imprese, capitale minimo (anche 1 euro per la SRL semplificata). La ditta individuale è più semplice.",
+          "riferimento": "📖 ESPLORA — Le forme giuridiche di un'impresa"
+        },
+        {
+          "id": "c",
+          "testo": "Cooperativa: la forma giuridica accessibile a chiunque voglia lavorare in autonomia",
+          "feedback": "Non corretto. La cooperativa richiede almeno 3 soci (in alcuni casi) e specifici atti costitutivi. Non è la forma più semplice per un'impresa individuale.",
+          "riferimento": "📖 ESPLORA — Le forme giuridiche di un'impresa"
+        },
+        {
+          "id": "d",
+          "testo": "B Corp: la forma giuridica per chi vuole fare un'impresa con impatto sociale",
+          "feedback": "Non corretto. La B Corp non è una forma giuridica ma una certificazione (rilasciata dall'ente B Lab) che si ottiene indipendentemente dalla forma giuridica dell'impresa.",
+          "riferimento": "📖 ESPLORA — Le forme giuridiche di un'impresa"
+        }
+      ],
+      "spiegazione": "Forme giuridiche in ordine crescente di complessità: 1) Ditta individuale = semplicissima (partita IVA), responsabilità illimitata personale. 2) SRL/SRL Semplificata = persona giuridica separata, responsabilità limitata al capitale, richiede atto notarile. 3) Cooperativa = di proprietà dei soci, governance democratica. 4) Impresa benefit = qualsiasi forma + impegno formale per il beneficio comune.",
+      "riferimento_principale": "📖 ESPLORA — Le forme giuridiche di un'impresa"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quale caratteristica distingue l'imprenditorialità sociale dall'imprenditorialità tradizionale, secondo la definizione nel testo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'imprenditoria sociale usa i meccanismi di mercato (non la carità) per creare valore principalmente per la comunità o categorie svantaggiate, in modo economicamente sostenibile",
+          "corretto": true,
+          "feedback": "Esatto! L'imprenditoria sociale non è carità: usa meccanismi di mercato (vendita di prodotti/servizi) per generare valore sociale. Il profitto non è l'obiettivo principale ma uno strumento per la sostenibilità dell'impresa."
+        },
+        {
+          "id": "b",
+          "testo": "L'imprenditoria sociale non genera mai profitti: funziona solo con donazioni e sussidi",
+          "feedback": "Non corretto. L'imprenditoria sociale usa i meccanismi di mercato ed è economicamente sostenibile: genera ricavi dalla vendita di prodotti/servizi, non solo da donazioni.",
+          "riferimento": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
+        },
+        {
+          "id": "c",
+          "testo": "L'imprenditoria sociale è riservata alle organizzazioni non profit come le associazioni di volontariato",
+          "feedback": "Non corretto. Cooperative sociali, imprese benefit, B Corp sono imprese (con forma giuridica di impresa), non solo organizzazioni non profit. L'imprenditoria sociale usa la forma imprenditoriale per fini sociali.",
+          "riferimento": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
+        },
+        {
+          "id": "d",
+          "testo": "L'imprenditoria sociale richiede sempre finanziamenti pubblici per sopravvivere",
+          "feedback": "Non corretto. L'imprenditoria sociale è progettata per essere economicamente sostenibile attraverso i propri ricavi (prodotti/servizi). Non dipende necessariamente dai finanziamenti pubblici.",
+          "riferimento": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
+        }
+      ],
+      "spiegazione": "Imprenditoria sociale = uso di meccanismi di mercato per creare valore sociale, in modo economicamente sostenibile (non carità). Esempi italiani: cooperative sociali che impiegano ex-detenuti, imprese benefit con doppio obiettivo profitto+impatto, Treedom (B Corp) che pianta alberi vendendo compensazione carbonica. Il profitto è uno strumento, non il fine.",
+      "riferimento_principale": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Qual è la principale fonte di finanziamento per il 95% delle piccole imprese italiane nelle fasi iniziali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Bootstrap (autofinanziamento): si usa il proprio risparmio personale",
+          "corretto": true,
+          "feedback": "Esatto! Il 95% delle piccole imprese italiane nasce in bootstrap: il fondatore usa i propri risparmi. Vantaggi: massima autonomia, nessun debito, nessuna diluizione della proprietà. Limite: risorse limitate."
+        },
+        {
+          "id": "b",
+          "testo": "Venture Capital: fondi professionali che investono in startup",
+          "feedback": "Non corretto. Il VC finanzia una percentuale molto piccola di startup (meno dell'1%), tipicamente quelle con potenziale di crescita enorme. Il 95% delle piccole imprese nasce in bootstrap.",
+          "riferimento": "📖 ESPLORA — Le fonti di finanziamento"
+        },
+        {
+          "id": "c",
+          "testo": "Obbligazioni emesse in borsa: gli imprenditori raccolgono capitale dal mercato finanziario",
+          "feedback": "Non corretto. Emettere obbligazioni in borsa richiede dimensioni significative e costi di quotazione elevati: non è accessibile alle piccole imprese nascenti.",
+          "riferimento": "📖 ESPLORA — Le fonti di finanziamento"
+        },
+        {
+          "id": "d",
+          "testo": "Sussidi statali obbligatori per tutti i nuovi imprenditori",
+          "feedback": "Non corretto. Non esistono sussidi statali obbligatori per tutti i nuovi imprenditori. Esistono bandi pubblici e incentivi, ma non è la fonte principale di startup per il 95% delle imprese.",
+          "riferimento": "📖 ESPLORA — Le fonti di finanziamento"
+        }
+      ],
+      "spiegazione": "Fonti di finanziamento per fasi: Inizio = bootstrap (risparmio personale, 95% delle PMI). Fase seed = FFF (Friends, Family, Fools) + crowdfunding. Fase early = business angel (ex imprenditori che investono e portano mentoring). Fase growth = venture capital (per startup ad alto potenziale). Fase matura = debito bancario, obbligazioni, IPO (borsa).",
+      "riferimento_principale": "📖 ESPLORA — Le fonti di finanziamento"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'lean startup' metodology?",
+      "domanda": "Il testo descrive Airbnb che parte da un MVP minimale (una pagina web, nessun sistema di pagamento) per testare una sola ipotesi. Quale era esattamente l'ipotesi più rischiosa che il MVP doveva testare?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un metodo per ridurre i costi di avvio di un'azienda",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se qualcuno avrebbe davvero pagato per dormire in casa di uno sconosciuto: la disponibilità delle persone a una nuova forma di ospitalità commerciale non era scontata",
+          "corretto": true,
+          "feedback": "Esatto! L'ipotesi più rischiosa non era 'funziona il sistema di prenotazione?' o 'si possono fare pagamenti online?' — era una questione di comportamento umano: esiste domanda per questo servizio? Qualcuno pagherebbe per dormire da uno sconosciuto? Il MVP ha risposto: sì."
         },
         {
           "id": "b",
-          "testo": "Un approccio iterativo: Build → Measure → Learn. Si costruisce rapidamente, si misura il comportamento reale, si impara e si pivota o si continua",
-          "corretto": true,
-          "feedback": "Esatto! Il Lean Startup (Ries, 2011) porta il metodo scientifico al business: ogni decisione è un'ipotesi da testare, non una certezza."
+          "testo": "Se la tecnologia di pagamento online era abbastanza sicura per le transazioni tra privati",
+          "feedback": "Non corretto. L'ipotesi tecnologica (sicurezza dei pagamenti) non era la più rischiosa: esistevano già sistemi di pagamento online. L'ipotesi più rischiosa era comportamentale: le persone pagherebbero per stare in casa di uno sconosciuto?",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         },
         {
           "id": "c",
-          "testo": "Una metodologia per startup con pochi dipendenti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se i comuni dove si testava avevano normative che permettevano l'affitto a breve termine",
+          "feedback": "Non corretto. Le normative sugli affitti a breve termine non erano la principale ipotesi da testare (sarebbe venuto dopo). L'ipotesi principale era la disponibilità delle persone a usare questo tipo di servizio.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         },
         {
           "id": "d",
-          "testo": "Un sistema di gestione agile per team distribuiti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se il sito web era abbastanza bello da convincere i potenziali ospiti a prenotare",
+          "feedback": "Non corretto. L'estetica del sito non era l'ipotesi principale. Un MVP volutamente minimale testa se il servizio ha senso, non se il design è bello. L'ipotesi era la domanda di mercato per una nuova forma di ospitalità.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
         }
       ],
-      "spiegazione": "Il Lean Startup (Ries, 2011) porta il metodo scientifico al business: ogni decisione è un'ipotesi da testare, non una certezza. Fail fast, learn fast."
+      "spiegazione": "Il MVP di Airbnb (pagina web con 3 foto, modulo di contatto, nessun pagamento integrato) testava l'ipotesi più rischiosa: esiste domanda per dormire in casa di uno sconosciuto a pagamento? Non testava la tecnologia (pagamenti, recensioni) o il design (abbastanza bella la pagina). Testava se il comportamento umano di ospitalità commerciale tra privati esisteva come mercato.",
+      "riferimento_principale": "📖 ESPLORA — Il metodo Lean Startup"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è il 'pivot' in una startup?",
+      "domanda": "Il Business Model Canvas (BMC) ha 9 blocchi. Il testo dice di compilarli 'nell'ordine: prima i clienti, poi il valore, poi come lo consegni, poi come lo costruisci'. Perché questo ordine è importante?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La rotazione della sede dell'azienda in una nuova città",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché partire dal cliente (non dal prodotto) evita di costruire qualcosa che nessuno vuole: la proposta di valore deve rispondere a un bisogno reale dei clienti identificati, non al contrario",
+          "corretto": true,
+          "feedback": "Esatto! Il principio centrale del design thinking e del Lean Startup: partire dal problema dell'utente, non dall'idea del prodotto. Se si parte da 'ho questa bella tecnologia' si rischia di costruire qualcosa che non ha mercato. Partire dai clienti garantisce che la proposta di valore risponda a bisogni reali."
         },
         {
           "id": "b",
-          "testo": "Il cambiamento strutturale di uno o più elementi del modello di business mantenendo le risorse accumulate: cambiare segmento, canale, proposta di valore",
-          "corretto": true,
-          "feedback": "Esatto! Instagram era Burbn (check-in)."
+          "testo": "Perché i blocchi dei costi devono essere compilati per ultimi per non influenzare le decisioni creative sui clienti",
+          "feedback": "Non corretto (parzialmente rilevante). Sì, i costi vengono per ultimi, ma la ragione principale dell'ordine è più profonda: partire dai clienti per garantire che tutto il modello risponda a bisogni reali.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
         },
         {
           "id": "c",
-          "testo": "Il momento in cui una startup diventa profittevole",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché l'ordine è puramente estetico: il BMC funziona ugualmente indipendentemente dall'ordine di compilazione",
+          "feedback": "Non corretto. L'ordine ha una logica progettuale precisa: partire da chi ha il problema (clienti), poi definire la soluzione (valore), poi la consegna, poi la costruzione. Invertire l'ordine porta spesso a modelli di business 'technology-first' senza mercato.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
         },
         {
           "id": "d",
-          "testo": "La decisione di chiudere una startup non profittevole",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché le fonti di ricavo (entrate) vanno compilate prima dei costi per verificare la redditività preventiva",
+          "feedback": "Non corretto. Le fonti di ricavo si compilano nella fase 'come consegni il valore', non per prime. L'ordine corretto inizia dai clienti, non dalla redditività.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
         }
       ],
-      "spiegazione": "Instagram era Burbn (check-in). Twitter era Odeo (podcast). YouTube era un sito di dating. Il pivot ha trasformato fallimenti in miliardi. Riconoscere quando pivotare è critico."
+      "spiegazione": "L'ordine di compilazione del BMC riflette un principio fondamentale: partire dal cliente, non dal prodotto. Molte startup falliscono costruendo prodotti tecnici brillanti senza mercato ('soluzione in cerca di un problema'). Partire dai clienti (chi ha il problema?) garantisce che la proposta di valore risponda a un bisogno reale e verificabile. È l'applicazione del principio 'customer discovery' del Lean Startup.",
+      "riferimento_principale": "📖 ESPLORA — Il Business Model Canvas"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è il 'venture capital' (VC) e come funziona?",
+      "domanda": "Il testo afferma che 'in Italia il fallimento porta spesso un forte stigma sociale' mentre in Silicon Valley esiste la cultura del 'fail fast, fail forward'. Quale implicazione ha questa differenza culturale per l'ecosistema imprenditoriale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un fondo di investimento per aziende mature a basso rischio",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Lo stigma del fallimento riduce la propensione al rischio: gli imprenditori italiani tendono a evitare rischi elevati per paura delle conseguenze sociali e legali, riducendo l'innovazione ad alto potenziale",
+          "corretto": true,
+          "feedback": "Esatto! Se fallire = vergogna permanente, gli imprenditori evitano scommesse rischiose ma ad alto potenziale. Gli ecosistemi dove il fallimento è visto come apprendimento (Silicon Valley) producono più innovazione radicale perché gli imprenditori sperimentano più liberamente."
         },
         {
           "id": "b",
-          "testo": "Fondi che investono in startup ad alto potenziale in cambio di quote azionarie: accettano alto rischio di perdita totale in cambio di possibili ritorni 10-100x",
-          "corretto": true,
-          "feedback": "Esatto! Un VC investe in 20 startup sapendo che 15 falliranno, 4 sopravviveranno e 1 diventerà un unicorno (> 1 miliardo $)."
+          "testo": "Lo stigma del fallimento non ha effetti sull'innovazione: quello che conta è la tecnologia disponibile, non la cultura",
+          "feedback": "Non corretto. La cultura del rischio influenza direttamente il comportamento imprenditoriale. Paesi con alta tolleranza al fallimento (USA, Svezia) tendono a produrre più startup innovative di paesi con stigma alto (Italia, Giappone).",
+          "riferimento": "📖 ESPLORA — Il fallimento come risorsa"
         },
         {
           "id": "c",
-          "testo": "Un prestito bancario agevolato per startup innovative",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Lo stigma italiano è positivo perché induce gli imprenditori a pianificare meglio ed evitare errori costosi",
+          "feedback": "Non corretto (parzialmente rilevante). Una certa cautela è sana, ma lo stigma eccessivo porta a evitare qualsiasi rischio imprenditoriale, inclusi rischi calcolati su innovazioni ad alto valore potenziale.",
+          "riferimento": "📖 ESPLORA — Il fallimento come risorsa"
         },
         {
           "id": "d",
-          "testo": "Un sistema di crowdfunding per idee imprenditoriali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La differenza culturale non esiste: il fallimento è ugualmente stigmatizzato in tutti i paesi del mondo",
+          "feedback": "Non corretto. La tolleranza al fallimento varia significativamente tra culture: USA, Israele e Svezia hanno culture imprenditoriali più tolleranti al fallimento rispetto a Giappone, Francia e Italia (dati GEM Global Entrepreneurship Monitor).",
+          "riferimento": "📖 ESPLORA — Il fallimento come risorsa"
         }
       ],
-      "spiegazione": "Un VC investe in 20 startup sapendo che 15 falliranno, 4 sopravviveranno e 1 diventerà un unicorno (> 1 miliardo $). Quel successo ripaga tutto il portafoglio."
+      "spiegazione": "Lo stigma del fallimento ha effetti sistemici sull'ecosistema innovativo: 1) riduce la propensione al rischio → meno startup ambiziose; 2) rende più difficile raccogliere finanziamenti dopo un fallimento; 3) riduce l'apprendimento collettivo (chi ha fallito non condivide le lezioni). In ecosistemi come Silicon Valley, l'investitore che ha già finanziato imprese fallite è considerato più esperto perché ha imparato lezioni preziose.",
+      "riferimento_principale": "📖 ESPLORA — Il fallimento come risorsa"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'proprietà intellettuale' e quali forme assume nell'impresa tecnologica?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo descrive il caso 'Warda' (startup agroalimentare di Bologna): la fase 2 era un MVP WhatsApp (non un'app) per connettere ristoratori e agricoltori. Quale principio Lean Startup questo dimostra?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La conoscenza individuale dei dipendenti dell'azienda",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'MVP più efficace testa l'ipotesi principale con il minimo sforzo e costo possibile: un gruppo WhatsApp può testare se ristoratori e agricoltori si connettono e ordinano, senza sviluppare un'app complessa",
+          "corretto": true,
+          "feedback": "Esatto! Un gruppo WhatsApp è gratuito e si crea in 5 minuti. Permette di testare l'ipotesi principale (ristoratori e agricoltori si organizzano per ordinare e consegnare) senza investire mesi e migliaia di euro in sviluppo software. Se funziona su WhatsApp, vale la pena sviluppare un'app."
         },
         {
           "id": "b",
-          "testo": "L'insieme di diritti legali che proteggono le creazioni intellettuali: brevetti (invenzioni), copyright (opere), marchi (identità), segreti commerciali (know-how)",
-          "corretto": true,
-          "feedback": "Esatto! La proprietà intellettuale è spesso il principale asset di un'azienda tech: il codice di Google, il design di Apple, i brevetti di Qualcomm valgono miliardi."
+          "testo": "Le app sono sempre soluzioni peggiori dei messaggi WhatsApp per le startup agroalimentari",
+          "feedback": "Non corretto. L'MVP con WhatsApp non dimostra che le app siano sempre peggiori. Dimostra il principio Lean: testare con il minimo possibile prima di investire nel prodotto completo.",
+          "riferimento": "🔍 OSSERVA — Il caso: una startup italiana under-30"
         },
         {
           "id": "c",
-          "testo": "I dati raccolti dall'azienda sui clienti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le startup non dovrebbero mai sviluppare app perché i social media sono sufficienti per qualsiasi business",
+          "feedback": "Non corretto. Il caso non dimostra che le app non siano necessarie. Dimostra che PRIMA di sviluppare un'app si dovrebbe testare il concetto con strumenti semplici e verificare che esista una domanda reale.",
+          "riferimento": "🔍 OSSERVA — Il caso: una startup italiana under-30"
         },
         {
           "id": "d",
-          "testo": "Il know-how non codificato dei fondatori dell'azienda",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il MVP di WhatsApp è stato scelto per risparmiare sull'affitto degli uffici",
+          "feedback": "Non corretto. La scelta del MVP WhatsApp non è motivata dal risparmio sull'affitto. È motivata dal principio Lean: test rapido e a basso costo per validare l'ipotesi prima di investire in sviluppo software.",
+          "riferimento": "🔍 OSSERVA — Il caso: una startup italiana under-30"
         }
       ],
-      "spiegazione": "La proprietà intellettuale è spesso il principale asset di un'azienda tech: il codice di Google, il design di Apple, i brevetti di Qualcomm valgono miliardi. Proteggerla è strategico."
+      "spiegazione": "Il principio dimostrato: l'MVP più efficace testa l'ipotesi principale con il minimo sforzo. Warda MVP WhatsApp = 0 euro, 10 minuti di setup, 6 settimane di test. Risultato: il sistema funziona (ordini, consegne, pagamenti avvengono). Ha anche rivelato il vero problema (logistica, non la comunicazione) → pivot. Solo dopo aver validato con il MVP WhatsApp ha senso investire in sviluppo software.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: una startup italiana under-30"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il concetto di 'effetti di rete' e perché alcune piattaforme dominano il mercato?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo menziona Treedom come esempio di startup B Corp italiana. Quale meccanismo specifico ha usato per creare sia valore economico sia impatto ambientale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La velocità della rete internet usata da un'azienda",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ha connesso chi vuole compensare le proprie emissioni di CO₂ (aziende, privati) con comunità agricole locali nei paesi in via di sviluppo che piantano alberi, creando valore per entrambi tramite una piattaforma digitale",
+          "corretto": true,
+          "feedback": "Esatto! Treedom usa una piattaforma digitale per connettere domanda (aziende e privati europei che vogliono compensare emissioni) con offerta (coltivatori in Africa, America Latina, Asia che piantano alberi). Il modello crea reddito per le comunità locali e permette a Treedom di essere economicamente sostenibile."
         },
         {
           "id": "b",
-          "testo": "Il fenomeno per cui il valore di un prodotto/servizio aumenta con il numero di utenti: Facebook, WhatsApp, Uber, Airbnb. Crea monopoli naturali difficili da sfidare",
-          "corretto": true,
-          "feedback": "Esatto! Gli effetti di rete creano winner-take-all: il social network con più utenti attrae ancora più utenti."
+          "testo": "Produce energia solare riforestando le zone depresse delle città italiane con pannelli solari camuffati da alberi",
+          "feedback": "Non corretto. Treedom non produce energia solare e non installa pannelli. Pianta alberi reali connettendo chi vuole compensare le emissioni di CO₂ con contadini locali.",
+          "riferimento": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
         },
         {
           "id": "c",
-          "testo": "La strategia di marketing basata su raccomandazioni",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Vende legname pregiato ricavato da foreste certificate, redistribuendo i profitti alle comunità locali",
+          "feedback": "Non corretto. Treedom non vende legname: pianta alberi (non li abbatte). Il modello è la vendita di compensazione carbonica: chi paga per far piantare un albero ottiene un certificato di compensazione delle proprie emissioni.",
+          "riferimento": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
         },
         {
           "id": "d",
-          "testo": "L'effetto della dimensione aziendale sulla produttività",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Produce fertilizzanti biologici da scarti alimentari, riducendo i rifiuti organici nelle città",
+          "feedback": "Non corretto. Treedom non si occupa di fertilizzanti. Pianta alberi connettendo chi compensa le emissioni con comunità agricole locali attraverso una piattaforma digitale.",
+          "riferimento": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
         }
       ],
-      "spiegazione": "Gli effetti di rete creano winner-take-all: il social network con più utenti attrae ancora più utenti. Per un concorrente è quasi impossibile superare la massa critica."
+      "spiegazione": "Treedom (B Corp): modello di business che crea valore economico E ambientale e sociale simultaneamente. Funziona così: 1) Azienda/privato paga per far piantare un albero; 2) Treedom connette con un coltivatore locale in Africa, America Latina o Asia; 3) Il coltivatore pianta l'albero su terreni agricoli e ne raccoglie i frutti (reddito locale); 4) L'albero assorbe CO₂ (compensazione carbonica); 5) L'acquirente può seguire 'il suo' albero su una piattaforma digitale. 4+ milioni di alberi in 17 paesi.",
+      "riferimento_principale": "📖 ESPLORA — Imprenditoria sociale: creare valore per la comunità"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il concetto di 'innovazione aperta' (open innovation)?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo descrive il crowdfunding come strumento sia di raccolta fondi sia di 'validazione della domanda'. Come funziona questo doppio ruolo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'innovazione sviluppata da aziende open source",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se non riesci a raccogliere capitali da 1.000 persone, probabilmente non riuscirai a vendere a molte di più: il numero di sostenitori del crowdfunding misura l'interesse reale nel prodotto",
+          "corretto": true,
+          "feedback": "Esatto! Il crowdfunding non è solo raccolta di denaro: è un test di mercato. Se 1.000 persone pagano anticipatamente per un prodotto, dimostra che esiste una domanda reale. Se non riesci a convincere neanche 100 persone a pre-ordinare, è un segnale forte che il prodotto non ha mercato sufficiente."
         },
         {
           "id": "b",
-          "testo": "Il paradigma in cui le aziende combinano conoscenze interne ed esterne (partner, startup, università, clienti) per accelerare l'innovazione e sfruttare opportunità esterne",
-          "corretto": true,
-          "feedback": "Esatto! Procter & Gamble: il 50% delle innovazioni deve venire dall'esterno (Connect+Develop)."
+          "testo": "Il crowdfunding valida solo il prezzo del prodotto: se le persone pagano, il prezzo è giusto",
+          "feedback": "Non corretto. Il crowdfunding valida la domanda complessiva (qualcuno vuole questo prodotto?) non solo il prezzo. Il prezzo è una variabile ma il segnale principale è il numero di sostenitori.",
+          "riferimento": "📖 ESPLORA — Le fonti di finanziamento"
         },
         {
           "id": "c",
-          "testo": "L'innovazione disponibile gratuitamente per tutti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il crowdfunding è valido solo per prodotti artistici e culturali: per i prodotti industriali non funziona come test di mercato",
+          "feedback": "Non corretto. Il crowdfunding ha validato prodotti in tutti i settori: Pebble (smartwatch), Oculus Rift (VR), Coolest Cooler, giochi da tavola, dispositivi medici. Non è limitato ai prodotti artistici.",
+          "riferimento": "📖 ESPLORA — Le fonti di finanziamento"
         },
         {
           "id": "d",
-          "testo": "Un modello di sviluppo prodotto con team distribuiti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il crowdfunding valida solo la capacità di comunicazione del fondatore, non la domanda di mercato",
+          "feedback": "Non corretto. Sebbene le capacità di comunicazione influenzino il successo di una campagna, il numero di persone che pagano anticipatamente per un prodotto è un indicatore reale di domanda di mercato.",
+          "riferimento": "📖 ESPLORA — Le fonti di finanziamento"
         }
       ],
-      "spiegazione": "Procter & Gamble: il 50% delle innovazioni deve venire dall'esterno (Connect+Develop). LEGO Ideas: i clienti progettano i nuovi set. L'open innovation rompe il modello 'non inventato qui'."
+      "spiegazione": "Doppio ruolo del crowdfunding: 1) Raccolta fondi = ottieni il capitale necessario per produrre. 2) Validazione della domanda = misuri l'interesse reale prima di produrre. Il testo lo dice esplicitamente: 'Se non riesci a raccogliere capitali da 1.000 persone, probabilmente non riuscirai a vendere a molte di più.' Il crowdfunding converte l'intenzione di acquisto in pagamento reale: segnale più forte di un sondaggio.",
+      "riferimento_principale": "📖 ESPLORA — Le fonti di finanziamento"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo cita il box EntreComp: 'l'imprenditorialità è la capacità di identificare opportunità, sviluppare idee, gestire l'incertezza, collaborare, apprendere dagli errori e creare valore — in qualsiasi contesto'. Come questo definisce l'imprenditorialità in modo più ampio della sola impresa commerciale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le stesse competenze (problem solving, tolleranza dell'incertezza, pensiero sistemico) servono anche a un insegnante che innova la didattica, a un tecnico che propone miglioramenti ai processi aziendali, o a un volontario che organizza un'iniziativa comunitaria",
+          "corretto": true,
+          "feedback": "Esatto! L'imprenditorialità come life skill non si limita a chi apre un'azienda: è un modo di affrontare i problemi. Identificare un'opportunità (non prevista), costruire risorse per coglierla, tollerare l'incertezza, imparare dai fallimenti: queste capacità servono in qualsiasi ruolo professionale e personale."
+        },
+        {
+          "id": "b",
+          "testo": "Significa che chiunque può creare un'azienda di successo se studia il Business Model Canvas e il Lean Startup",
+          "feedback": "Non corretto. Il framework EntreComp non promette il successo imprenditoriale a chiunque. Definisce competenze trasversali utili in qualsiasi contesto, non solo per chi apre un'azienda.",
+          "riferimento": "📖 ESPLORA — Box EntreComp"
+        },
+        {
+          "id": "c",
+          "testo": "Significa che le competenze imprenditoriali possono essere applicate ai prodotti digitali ma non ai servizi o all'artigianato",
+          "feedback": "Non corretto. Il framework EntreComp si applica esplicitamente 'in qualsiasi contesto': insegnamento, pubblica amministrazione, artigianato, volontariato, non solo ai prodotti digitali.",
+          "riferimento": "📖 ESPLORA — Box EntreComp"
+        },
+        {
+          "id": "d",
+          "testo": "Significa che le scuole dovrebbero smettere di insegnare materie tradizionali e concentrarsi solo sull'imprenditorialità",
+          "feedback": "Non corretto. Il framework EntreComp non propone la sostituzione delle materie tradizionali. Propone di sviluppare competenze imprenditoriali trasversali all'interno dell'educazione esistente.",
+          "riferimento": "📖 ESPLORA — Box EntreComp"
+        }
+      ],
+      "spiegazione": "Il framework EntreComp (UE) definisce l'imprenditorialità come competenza trasversale: capacità di creare valore in qualsiasi contesto professionale, non solo commerciale. Un medico che identifica un'inefficienza nel percorso del paziente e propone una soluzione, un insegnante che sperimenta un nuovo metodo didattico, un ingegnere che ottimizza un processo produttivo: tutti esercitano competenze imprenditoriali. L'imprenditorialità è un modo di affrontare i problemi, non solo un percorso di carriera.",
+      "riferimento_principale": "📖 ESPLORA — Box EntreComp"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo descrive il Business Model Canvas come uno strumento che 'mostra come funziona un'impresa in una singola pagina'. Quale vantaggio metodologico ha questa sintesi rispetto a un piano aziendale tradizionale di 50 pagine?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il BMC forza a identificare le connessioni e le dipendenze tra i blocchi in modo immediato e visuale, rendendo evidenti le incoerenze interne (es. proposta di valore incompatibile con la struttura dei costi) che in 50 pagine si perderebbero",
+          "corretto": true,
+          "feedback": "Esatto! Un piano aziendale lineare di 50 pagine nasconde le incoerenze tra sezioni lontane. Il BMC in una pagina rende immediatamente visibile se la proposta di valore è coerente con le risorse disponibili, se le fonti di ricavo sono compatibili con la struttura dei costi, se i canali raggiungono effettivamente i clienti target."
+        },
+        {
+          "id": "b",
+          "testo": "Il BMC è più veloce da compilare e quindi più utile in tutti i contesti rispetto al piano aziendale",
+          "feedback": "Non corretto. Il BMC non è 'sempre migliore' del piano aziendale: per ottenere un prestito bancario o presentarsi a certi investitori, un piano aziendale dettagliato è necessario. Il vantaggio del BMC è la sintesi visuale che rivela le incoerenze interne.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
+        },
+        {
+          "id": "c",
+          "testo": "Il BMC è uno strumento legale riconosciuto mentre il piano aziendale è solo una raccomandazione informale",
+          "feedback": "Non corretto. Il BMC non è uno strumento legale. È uno strumento di management. Entrambi sono raccomandazioni informali, non obblighi legali.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
+        },
+        {
+          "id": "d",
+          "testo": "Il BMC è più adatto per le grandi aziende mentre il piano aziendale è pensato per le startup",
+          "feedback": "Non corretto. È l'inverso: il BMC nasce per startup e innovazione (iterativo, flessibile). Il piano aziendale è usato dalle grandi aziende per richiedere finanziamenti e presentarsi ai board.",
+          "riferimento": "📖 ESPLORA — Il Business Model Canvas"
+        }
+      ],
+      "spiegazione": "Il vantaggio del BMC su una pagina: rende visibili le CONNESSIONI tra i 9 blocchi. Se la proposta di valore è 'consegna in 30 minuti' ma i canali di distribuzione sono poste standard, l'incoerenza è immediatamente visibile. In 50 pagine, la sezione 'proposta di valore' e la sezione 'canali' sono separate da 20 pagine: l'incoerenza si perde. Il BMC forza la coerenza interna del modello.",
+      "riferimento_principale": "📖 ESPLORA — Il Business Model Canvas"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo descrive il ciclo Build-Measure-Learn del Lean Startup come non lineare: si può tornare indietro e ridefinire il problema dopo aver testato. Come mai questa non-linearità è un vantaggio, non un difetto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le informazioni scoperte nelle fasi avanzate (test con utenti reali) rivelano problemi e opportunità che nessuna analisi preliminare avrebbe potuto identificare: il processo incorpora l'apprendimento empirico",
+          "corretto": true,
+          "feedback": "Esatto! La non-linearità è vantaggiosa perché le fasi di test rivelano informazioni che non esistevano prima: comportamenti degli utenti, problemi che non avevi previsto, usi del prodotto diversi da quelli progettati. Tornare indietro a ridefinire il problema dopo aver testato non è un fallimento: è il meccanismo che produce soluzioni migliori."
+        },
+        {
+          "id": "b",
+          "testo": "Perché permette agli imprenditori di cambiare idea liberamente senza conseguenze per gli investitori",
+          "feedback": "Non corretto. Il pivot non è 'cambiare idea liberamente senza conseguenze': deve essere basato su dati empirici e comunicato agli investitori con spiegazione razionale. La non-linearità è vantaggiosa per le ragioni empiriche, non per la libertà senza conseguenze.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
+        },
+        {
+          "id": "c",
+          "testo": "Perché i mercati cambiano così rapidamente che qualsiasi strategia deve essere modificata ogni settimana",
+          "feedback": "Non corretto. Il pivot non è una risposta alla volatilità del mercato a breve termine. È basato su apprendimento empirico da test con utenti: avviene quando i dati mostrano che un'ipotesi chiave era sbagliata.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
+        },
+        {
+          "id": "d",
+          "testo": "Perché le aziende con cicli non lineari hanno statisticamente più probabilità di sopravvivere rispetto a quelle con cicli lineari",
+          "feedback": "Non corretto. Sebbene ci siano dati sul tasso di sopravvivenza delle startup Lean, la ragione metodologica della non-linearità è l'incorporazione dell'apprendimento empirico, non una correlazione statistica.",
+          "riferimento": "📖 ESPLORA — Il metodo Lean Startup"
+        }
+      ],
+      "spiegazione": "La non-linearità del Lean Startup è vantaggiosa perché il problema reale spesso emerge solo dopo il primo contatto con gli utenti. Warda ha scoperto che il problema vero era la LOGISTICA (non la comunicazione) solo dopo 6 settimane di MVP WhatsApp. Questa informazione era impossibile da ottenere a priori. Tornare indietro a ridefinire il problema non è un fallimento: è come il processo funziona quando guida l'apprendimento.",
+      "riferimento_principale": "📖 ESPLORA — Il metodo Lean Startup"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo cita l'esempio del Chapter 11 americano (riorganizzazione aziendale senza liquidazione) e il Codice della Crisi d'Impresa italiano. Quale problema sistemico queste normative cercano di risolvere?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La perdita di valore economico e sociale quando imprese temporaneamente in difficoltà vengono liquidate invece di riorganizzarsi: una liquidazione distrugge posti di lavoro, know-how, reti di fornitori anche quando l'impresa potrebbe sopravvivere con un piano di risanamento",
+          "corretto": true,
+          "feedback": "Esatto! La liquidazione (fallimento tradizionale) distrugge il valore economico dell'impresa: i lavoratori perdono i posti, il know-how si disperde, la rete di fornitori e clienti si rompe. Il Chapter 11 e il Codice della Crisi permettono di salvare questo valore riorganizzando l'impresa invece di liquidarla."
+        },
+        {
+          "id": "b",
+          "testo": "La frode fiscale da parte degli imprenditori che dichiarano fallimento per non pagare le tasse",
+          "feedback": "Non corretto. Il Chapter 11 e il Codice della Crisi non riguardano principalmente la frode fiscale ma la conservazione del valore economico delle imprese in difficoltà attraverso la riorganizzazione invece della liquidazione.",
+          "riferimento": "📖 ESPLORA — Il fallimento come risorsa"
+        },
+        {
+          "id": "c",
+          "testo": "La lentezza dei tribunali italiani nel gestire i fallimenti: le normative accelerano le procedure",
+          "feedback": "Non corretto (parzialmente rilevante). La velocità delle procedure è un aspetto, ma il problema sistemico principale che queste normative affrontano è preservare il valore economico delle imprese in difficoltà attraverso la riorganizzazione.",
+          "riferimento": "📖 ESPLORA — Il fallimento come risorsa"
+        },
+        {
+          "id": "d",
+          "testo": "La mancanza di capitali per le startup italiane: le normative obbligano le banche a finanziare le imprese in crisi",
+          "feedback": "Non corretto. Il Chapter 11 e il Codice della Crisi non obbligano le banche a finanziare le imprese. Permettono la riorganizzazione (ristrutturazione del debito, cambio di management) senza liquidare l'impresa.",
+          "riferimento": "📖 ESPLORA — Il fallimento come risorsa"
+        }
+      ],
+      "spiegazione": "Il problema sistemico: una liquidazione (fallimento tradizionale) distrugge valore che la semplice difficoltà finanziaria non avrebbe distrutto. Un'impresa con un buon prodotto ma un'errata struttura finanziaria può essere salvata riorganizzando il debito (capitali), il management o le attività. Chapter 11 (USA) e Codice della Crisi (Italia) permettono questa riorganizzazione, preservando posti di lavoro, know-how e reti economiche che la liquidazione distruggerebbe.",
+      "riferimento_principale": "📖 ESPLORA — Il fallimento come risorsa"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'un'idea senza esecuzione vale zero. Un'esecuzione mediocre con un'idea mediocre può comunque costruire un'impresa solida'. Quale lezione pratica contiene questa affermazione per chi vuole avviare un'impresa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il vantaggio competitivo non viene dall'idea (facilmente copiabile) ma dall'esecuzione: costruire il team, trovare i clienti giusti, iterare rapidamente, gestire le risorse con parsimonia — queste sono competenze rare e difficili da replicare",
+          "corretto": true,
+          "feedback": "Esatto! 7 VC avevano rifiutato l'idea di Airbnb (dormire da uno sconosciuto) prima che diventasse una delle aziende più valutate al mondo. Il vantaggio non era nell'idea ma nell'esecuzione: il team di Airbnb ha costruito la fiducia tra sconosciuti, ha iterato il prodotto, ha scalato in centinaia di città. L'idea era copiabile; l'esecuzione no."
+        },
+        {
+          "id": "b",
+          "testo": "Non vale la pena avere buone idee: l'importante è eseguire qualsiasi progetto velocemente",
+          "feedback": "Non corretto. Le buone idee hanno valore, ma non sono sufficienti da sole. L'affermazione non dice che le idee siano irrilevanti ma che senza esecuzione eccellente nemmeno le migliori idee producono risultati.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "c",
+          "testo": "Le persone con buone idee non hanno bisogno di lavorare sodo: l'idea si vende da sola",
+          "feedback": "Non corretto. L'affermazione del testo dice l'opposto: l'idea vale zero senza esecuzione. Il 'lavoro sodo' dell'esecuzione è precisamente ciò che trasforma un'idea in un'impresa.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "d",
+          "testo": "Le idee non servono: ciò che conta è avere molto denaro per finanziare il progetto",
+          "feedback": "Non corretto. Il testo non dice che il denaro sia il fattore principale. Dice che l'esecuzione (team, iterazione, gestione delle risorse) è più importante dell'idea in sé — ma il denaro non viene menzionato come sostituto dell'esecuzione.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        }
+      ],
+      "spiegazione": "Il paradosso della 'bella idea': molte persone aspettano di avere l'idea perfetta prima di iniziare. I dati mostrano che le idee di successo erano spesso rifiutate da tutti inizialmente (Airbnb, Uber, WhatsApp). Il vantaggio competitivo emerge dall'esecuzione: la capacità di costruire il team giusto, trovare i primi clienti, iterare rapidamente sul prodotto, gestire le risorse con parsimonia. Queste sono competenze rare e difficilmente replicabili.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo presenta l'Innovation Manager come profilo professionale che usa Lean Startup e Design Thinking non solo nelle startup ma nelle 'grandi aziende manifatturiere che devono reinventarsi'. Perché i metodi dell'imprenditorialità sono rilevanti per chi lavora in una grande organizzazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le grandi organizzazioni affrontano gli stessi problemi delle startup (incertezza, risorse limitate per l'innovazione, resistenza al cambiamento) ma con vincoli aggiuntivi (struttura esistente, stakeholder multipli): i metodi Lean aiutano a navigare questa complessità",
+          "corretto": true,
+          "feedback": "Esatto! Un'azienda manifatturiera che deve innovare per la transizione digitale ed ecologica affronta incertezza su quale tecnologia adottare, risorse limitate per la R&D, resistenza interna al cambiamento. Il Lean Startup e il Design Thinking forniscono metodologie per identificare le ipotesi più rischiose e testarle prima di investire massicciamente."
+        },
+        {
+          "id": "b",
+          "testo": "Perché le grandi aziende vogliono diventare startup e quindi assumono Innovation Manager per trasformarsi completamente",
+          "feedback": "Non corretto. Non si tratta di 'diventare startup'. Si tratta di applicare metodi di innovazione (Lean, Design Thinking) all'interno di una struttura aziendale esistente per sviluppare nuovi prodotti/servizi/processi più efficacemente.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "c",
+          "testo": "Perché le grandi aziende hanno bisogno di Innovation Manager solo per rispettare requisiti normativi di innovazione",
+          "feedback": "Non corretto. Non esistono generalmente requisiti normativi di avere un Innovation Manager. Il ruolo è guidato da necessità competitive e di adattamento al cambiamento, non da compliance normativa.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il Lean Startup funziona meglio nelle grandi aziende che nelle startup: ha più risorse per testare",
+          "feedback": "Non corretto. Il Lean Startup non funziona 'meglio' nelle grandi aziende: deve essere adattato al contesto (processi di approvazione interni, stakeholder multipli). L'adattamento metodologico è parte del ruolo dell'Innovation Manager.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        }
+      ],
+      "spiegazione": "L'intrapreneurship (imprenditorialità interna): le grandi aziende affrontano sfide di innovazione simili alle startup. Un colosso automobilistico che deve sviluppare una nuova piattaforma elettrica, un ospedale che vuole digitalizzare i percorsi clinici, un ministero che vuole migliorare i servizi digitali: tutti affrontano incertezza, risorse limitate per l'innovazione, e necessità di testare prima di investire massicciamente. Il Lean Startup e il Design Thinking si applicano questi contesti, con gli adattamenti necessari alla struttura organizzativa.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
     }
   ]
 }

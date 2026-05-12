@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIG-1-02",
-  "titolo": "Ricerca e valutazione delle fonti online",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa valuta la 'A' di Authority nel metodo CRAAP?",
+      "domanda": "Come funziona un motore di ricerca come Google quando cerchi qualcosa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Se il sito ha molti follower",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cerca in internet in tempo reale tutte le pagine che contengono le tue parole",
+          "corretto": false,
+          "feedback": "Non è corretto. Google non cerca in internet in tempo reale: cerca in un indice già costruito in anticipo dai suoi crawler.",
+          "riferimento": "📖 ESPLORA — Come funziona un motore di ricerca"
         },
         {
           "id": "b",
-          "testo": "La competenza e le credenziali di chi ha scritto il contenuto",
+          "testo": "Cerca in un indice già costruito in anticipo, poi ordina i risultati con un algoritmo di ranking",
           "corretto": true,
-          "feedback": "Esatto! Authority = autorevolezza dell'autore."
+          "feedback": "Esatto! Il processo ha tre fasi: crawling (i ragni esplorano il web), indicizzazione (ogni pagina viene catalogata), ranking (l'algoritmo ordina i risultati)."
         },
         {
           "id": "c",
-          "testo": "Se il sito ha molte pubblicità",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Chiede ad altri utenti quali pagine hanno trovato utili e le ordina per popolarità",
+          "corretto": false,
+          "feedback": "Non è corretto. Google usa algoritmi automatici, non sondaggi diretti tra utenti. Il comportamento degli utenti è uno dei molti fattori, non l'unico.",
+          "riferimento": "📖 ESPLORA — Come funziona un motore di ricerca"
         },
         {
           "id": "d",
-          "testo": "Se il testo è lungo e dettagliato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Mostra solo le pagine che hanno pagato per apparire nei risultati",
+          "corretto": false,
+          "feedback": "Non è corretto. I risultati a pagamento (annunci) sono separati dai risultati organici. La maggior parte dei risultati non è a pagamento.",
+          "riferimento": "📖 ESPLORA — Come funziona un motore di ricerca"
         }
       ],
-      "spiegazione": "Authority = autorevolezza dell'autore. Una ricerca medica su pubmed.nih.gov pesa più di un post su un blog senza autore."
+      "spiegazione": "Google usa crawler (ragni) che esplorano il web e catalogano le pagine in un indice. Quando cerchi qualcosa, l'algoritmo di ranking (tra cui il PageRank) ordina i risultati in base ad autorevolezza, pertinenza, freschezza e comportamento degli utenti.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona un motore di ricerca"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Quale estensione indica tipicamente un sito universitario italiano?",
+      "domanda": "Cosa significa la parola 'SIFT' nel metodo per valutare le fonti online?",
       "opzioni": [
         {
           "id": "a",
-          "testo": ".com",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cerca, Indaga, Filtra, Trascrivi",
+          "corretto": false,
+          "feedback": "Non è corretto. SIFT sta per Stop (Fermati), Investigate the source (Indaga la fonte), Find better coverage (Trova copertura migliore), Trace claims (Risali alla fonte originale).",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         },
         {
           "id": "b",
-          "testo": ".it",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Fermati, Indaga la fonte, Trova una copertura migliore, Risali alla fonte originale",
+          "corretto": true,
+          "feedback": "Esatto! SIFT è l'acronimo del metodo in 4 passi: Stop, Investigate the source, Find better coverage, Trace claims."
         },
         {
           "id": "c",
-          "testo": ".unibo.it o .polimi.it",
-          "corretto": true,
-          "feedback": "Esatto! I domini universitari italiani usano il formato nomiuniversità."
+          "testo": "Seleziona, Individua, Falsa, Tesi",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste questa versione dell'acronimo SIFT.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         },
         {
           "id": "d",
-          "testo": ".org",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sistema, Identifica, Fonti, Testo",
+          "corretto": false,
+          "feedback": "Non è corretto. Questa non è la definizione di SIFT usata nel metodo di valutazione delle fonti.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         }
       ],
-      "spiegazione": "I domini universitari italiani usano il formato nomiuniversità.it (es. uniroma1.it, unina.it). In USA usano .edu."
+      "spiegazione": "SIFT è un metodo in 4 passi: Stop (fermati prima di reagire), Investigate the source (indaga chi ha scritto e da dove viene), Find better coverage (cerca altre fonti sullo stesso argomento), Trace claims (risali alla fonte originale di dati e citazioni).",
+      "riferimento_principale": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Le virgolette in una query Google servono a...",
+      "domanda": "Cosa significa usare l'operatore 'site:' in una ricerca su Google?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Cercare solo in italiano",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cerca solo nel titolo della pagina, non nel testo",
+          "corretto": false,
+          "feedback": "Non è corretto. L'operatore site: filtra i risultati per dominio, non per posizione delle parole nella pagina.",
+          "riferimento": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
         },
         {
           "id": "b",
-          "testo": "Trovare pagine con quella frase esatta nell'ordine indicato",
+          "testo": "Cerca solo all'interno di uno specifico dominio o sito web",
           "corretto": true,
-          "feedback": "Esatto! \"ciclo di vita dei materiali\" trova pagine con quella frase precisa."
+          "feedback": "Esatto! Per esempio, 'fotosintesi site:edu' trova risultati solo da siti con dominio .edu (università americane)."
         },
         {
           "id": "c",
-          "testo": "Escludere parole dalla ricerca",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Trova solo siti web con una mappa del sito (sitemap)",
+          "corretto": false,
+          "feedback": "Non è corretto. L'operatore site: non filtra per presenza di una sitemap, ma per il dominio del sito.",
+          "riferimento": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
         },
         {
           "id": "d",
-          "testo": "Cercare immagini",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Mostra il codice sorgente HTML del sito",
+          "corretto": false,
+          "feedback": "Non è corretto. L'operatore site: è un filtro di ricerca, non un comando per visualizzare il codice sorgente.",
+          "riferimento": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
         }
       ],
-      "spiegazione": "\"ciclo di vita dei materiali\" trova pagine con quella frase precisa. Senza virgolette i risultati sono molto più dispersi."
+      "spiegazione": "L'operatore site: limita i risultati a uno specifico dominio. 'cambiamento climatico site:nasa.gov' mostra solo le pagine della NASA sul cambiamento climatico. È utile per trovare fonti autorevoli su un argomento specifico.",
+      "riferimento_principale": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa indica il dominio '.gov' di un sito web?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sito di un'organizzazione non profit",
+          "corretto": false,
+          "feedback": "Non è corretto. I siti non profit usano solitamente il dominio .org, non .gov.",
+          "riferimento": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+        },
+        {
+          "id": "b",
+          "testo": "Un sito di governi e istituzioni governative",
+          "corretto": true,
+          "feedback": "Esatto! Il dominio .gov indica siti governativi ufficiali, come nasa.gov o governo.it. Tendono ad avere contenuti ufficiali, ma anche i governi hanno interessi politici."
+        },
+        {
+          "id": "c",
+          "testo": "Un sito di università e scuole",
+          "corretto": false,
+          "feedback": "Non è corretto. I siti universitari americani usano .edu, non .gov.",
+          "riferimento": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+        },
+        {
+          "id": "d",
+          "testo": "Un sito commerciale con alta affidabilità verificata",
+          "corretto": false,
+          "feedback": "Non è corretto. I siti commerciali usano .com. Il dominio .gov indica istituzione governativa, non affidabilità commerciale.",
+          "riferimento": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+        }
+      ],
+      "spiegazione": "Il dominio .gov indica siti di governi e istituzioni governative (es. nasa.gov, governo.it). Offrono contenuti ufficiali ma, come ricorda il testo, anche i governi hanno interessi politici: il dominio è un indicatore utile, non una garanzia assoluta di neutralità.",
+      "riferimento_principale": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cos'è il 'bias di conferma'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La tendenza a cercare e credere alle informazioni che confermano quello che già pensiamo",
+          "corretto": true,
+          "feedback": "Esatto! Il bias di conferma ci porta a notare e ricordare le informazioni che confermano le nostre credenze, ignorando quelle contrarie."
+        },
+        {
+          "id": "b",
+          "testo": "Un errore tipico dei motori di ricerca che mostrano sempre risultati sbagliati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il bias di conferma è un meccanismo psicologico umano, non un errore tecnico dei motori di ricerca.",
+          "riferimento": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+        },
+        {
+          "id": "c",
+          "testo": "La capacità di un articolo di essere confermato da altri articoli online",
+          "corretto": false,
+          "feedback": "Non è corretto. La 'conferma' nel bias di conferma si riferisce alle nostre credenze preesistenti, non alla verifica da parte di altri articoli.",
+          "riferimento": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema automatico di filtraggio delle fake news da parte dei social media",
+          "corretto": false,
+          "feedback": "Non è corretto. Il bias di conferma è un fenomeno psicologico, non un sistema di filtraggio automatico.",
+          "riferimento": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+        }
+      ],
+      "spiegazione": "Il bias di conferma è la tendenza a cercare, notare e ricordare le informazioni che confermano quello che già crediamo, ignorando quelle contrarie. Chi vuole diffondere disinformazione lo sfrutta: le fake news più efficaci mirano a confermare paure o credenze preesistenti.",
+      "riferimento_principale": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'filter bubble' (bolla di filtraggio)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un software che blocca i contenuti inappropriati online",
+          "corretto": false,
+          "feedback": "Non è corretto. La filter bubble non è un software di protezione, ma un effetto degli algoritmi di raccomandazione che mostrano contenuti sempre simili a quelli già visti.",
+          "riferimento": "📖 ESPLORA — Echo chamber e bolle di filtraggio"
+        },
+        {
+          "id": "b",
+          "testo": "Una versione personalizzata di internet dove l'algoritmo mostra solo contenuti simili a quelli con cui hai già interagito",
+          "corretto": true,
+          "feedback": "Esatto! I social network mostrano contenuti simili a quelli con cui hai interagito. Il risultato è una 'bolla' in cui vedi sempre meno punti di vista diversi."
+        },
+        {
+          "id": "c",
+          "testo": "Il firewall che protegge la tua rete domestica da attacchi esterni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il firewall è una protezione di rete. La filter bubble è un effetto degli algoritmi di raccomandazione dei social media.",
+          "riferimento": "📖 ESPLORA — Echo chamber e bolle di filtraggio"
+        },
+        {
+          "id": "d",
+          "testo": "La lista di siti bloccati dalla scuola o dai genitori",
+          "corretto": false,
+          "feedback": "Non è corretto. La filter bubble è un effetto automatico degli algoritmi di personalizzazione, non un blocco imposto dall'esterno.",
+          "riferimento": "📖 ESPLORA — Echo chamber e bolle di filtraggio"
+        }
+      ],
+      "spiegazione": "La filter bubble è il risultato degli algoritmi di raccomandazione dei social media: mostrano sempre più contenuti simili a quelli con cui hai interagito, creando una versione personalizzata di internet. Anche la stessa ricerca su Google può dare risultati diversi a persone diverse.",
+      "riferimento_principale": "📖 ESPLORA — Echo chamber e bolle di filtraggio"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Prima di condividere una notizia, cosa è più importante controllare?",
+      "domanda": "Stai leggendo un articolo che afferma: 'Le banane radioattive fanno male alla salute.' Applicando il metodo SIFT, qual è il passo più importante prima di condividere?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Se ha molti like e condivisioni",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Condividerlo subito perché sembra urgente",
+          "corretto": false,
+          "feedback": "Non è corretto. L'urgenza percepita è esattamente il meccanismo che le fake news usano per far condividere prima di pensare. Il primo passo di SIFT è fermarsi.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         },
         {
           "id": "b",
-          "testo": "La data di pubblicazione e se esistono aggiornamenti o smentite successive",
+          "testo": "Fermarsi, poi cercare la stessa informazione su fonti scientifiche verificate prima di condividere",
           "corretto": true,
-          "feedback": "Esatto! Le notizie evolvono."
+          "feedback": "Esatto! Il caso della 'banana radioattiva' nel testo mostra che il fatto base è vero (le banane contengono potassio-40), ma il messaggio implicito è fuorviante. Solo cercando fonti verificate si scopre il contesto."
         },
         {
           "id": "c",
-          "testo": "Se è scritta in italiano corretto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Controllare quante persone hanno già condiviso l'articolo: se sono molte, è attendibile",
+          "corretto": false,
+          "feedback": "Non è corretto. La ricerca MIT del 2018 mostra che le notizie false si diffondono 6 volte più velocemente di quelle vere. Il numero di condivisioni non è criterio di veridicità.",
+          "riferimento": "📖 ESPLORA — Cos'è una fake news: come nasce e perché si diffonde"
         },
         {
           "id": "d",
-          "testo": "Se il giornale ha un sito professionale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Leggere solo il titolo e il nome del sito per decidere se è affidabile",
+          "corretto": false,
+          "feedback": "Non è corretto. Il titolo e il nome del sito non bastano. SIFT richiede di indagare chi ha scritto l'articolo, verificare su altre fonti e risalire ai dati originali.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         }
       ],
-      "spiegazione": "Le notizie evolvono. Aggiungere 'smentita' o 'aggiornamento' nella query può rivelare sviluppi successivi che cambiano il quadro."
+      "spiegazione": "Il caso della banana radioattiva nel testo è un esempio di disinformazione per decontestualizzazione: un fatto vero (le banane contengono potassio-40) viene presentato in modo fuorviante. La verifica su Google Scholar mostra che il livello di radioattività è irrilevante per la salute. Il metodo SIFT guida questo processo.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: la storia della banana radioattiva"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cosa indica 'site:' in una query Google?",
+      "domanda": "Cosa si intende per 'lateral reading' (lettura laterale) applicata alla verifica delle fonti?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Cerca siti con molte immagini",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Leggere un articolo dall'inizio alla fine più volte per capirlo meglio",
+          "corretto": false,
+          "feedback": "Non è corretto. La lettura laterale non riguarda rileggere lo stesso articolo, ma cercare informazioni sulla fonte in siti esterni.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         },
         {
           "id": "b",
-          "testo": "Limita la ricerca a un dominio specifico (es. site:nasa.gov)",
+          "testo": "Invece di leggere in profondità una sola pagina, aprire nuove schede per cercare chi parla di quella fonte",
           "corretto": true,
-          "feedback": "Esatto! 'effetto serra site:nasa."
+          "feedback": "Esatto! La lettura laterale significa aprire nuove schede del browser e cercare chi parla della fonte trovata. Se è affidabile, trovi menzioni positive; se è inaffidabile, trovi probabilmente smentite."
         },
         {
           "id": "c",
-          "testo": "Cerca solo in italiano",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Leggere solo le parti laterali della pagina (colonne o barre laterali) dove si trovano le informazioni più affidabili",
+          "corretto": false,
+          "feedback": "Non è corretto. La 'lettura laterale' nel contesto SIFT si riferisce all'apertura di nuove schede per cercare informazioni sulla fonte, non alle colonne laterali di una pagina.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         },
         {
           "id": "d",
-          "testo": "Ordina i risultati per data",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Confrontare la versione italiana e inglese dello stesso articolo per verificare le traduzioni",
+          "corretto": false,
+          "feedback": "Non è corretto. La lettura laterale riguarda la verifica della fonte su siti indipendenti, non il confronto di versioni linguistiche.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
         }
       ],
-      "spiegazione": "'effetto serra site:nasa.gov' cerca solo sul sito NASA. Utile per trovare informazioni da fonti autorevoli specifiche."
+      "spiegazione": "La lettura laterale significa che invece di leggere a fondo una sola pagina, si aprono nuove schede del browser per cercare chi parla di quella fonte o di quell'affermazione. I fact-checker professionisti usano questa tecnica: se la fonte è affidabile, si trovano menzioni positive; se è inaffidabile, si trovano probabilmente smentite o avvertimenti.",
+      "riferimento_principale": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è il 'cherry-picking' delle informazioni?",
+      "domanda": "Perché Google non mostra gli stessi risultati a tutti gli utenti che cercano la stessa cosa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Selezionare solo le informazioni che confermano la tesi, ignorando quelle contrarie",
-          "corretto": true,
-          "feedback": "Esatto! Il cherry-picking è una distorsione cognitiva: si presentano solo i dati favorevoli."
+          "testo": "Perché Google mostra i risultati in ordine alfabetico diverso per ogni paese",
+          "corretto": false,
+          "feedback": "Non è corretto. Google non ordina i risultati alfabeticamente. Li personalizza in base a cronologia, posizione geografica, comportamento di navigazione.",
+          "riferimento": "📖 ESPLORA — Echo chamber e bolle di filtraggio"
         },
         {
           "id": "b",
-          "testo": "Citare troppe fonti in un testo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché Google personalizza i risultati in base alla cronologia, posizione geografica e comportamento di navigazione",
+          "corretto": true,
+          "feedback": "Esatto! La filter bubble si applica anche ai motori di ricerca: due persone che cercano la stessa cosa possono vedere risultati diversi a seconda del proprio profilo digitale."
         },
         {
           "id": "c",
-          "testo": "Usare solo fonti in inglese",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché gli utenti che pagano Google Premium vedono risultati migliori",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste 'Google Premium' per i risultati organici. La personalizzazione è automatica e basata sui dati raccolti su ogni utente.",
+          "riferimento": "📖 ESPLORA — Echo chamber e bolle di filtraggio"
         },
         {
           "id": "d",
-          "testo": "Copiare testo da Wikipedia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i risultati vengono selezionati manualmente da dipendenti di Google",
+          "corretto": false,
+          "feedback": "Non è corretto. I risultati organici sono determinati da algoritmi automatici, non da selezione manuale.",
+          "riferimento": "📖 ESPLORA — Come funziona un motore di ricerca"
         }
       ],
-      "spiegazione": "Il cherry-picking è una distorsione cognitiva: si presentano solo i dati favorevoli. È tecnicamente non falso ma è manipolatorio."
+      "spiegazione": "Google personalizza i risultati di ricerca in base alla cronologia dell'utente, alla posizione geografica, al dispositivo usato e al comportamento di navigazione. Due persone che cercano la stessa cosa da luoghi diversi o con profili digitali diversi possono vedere risultati in ordine diverso.",
+      "riferimento_principale": "📖 ESPLORA — Echo chamber e bolle di filtraggio"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il bias di conferma nella ricerca online?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Perché le notizie false si diffondono più rapidamente di quelle vere, secondo la ricerca MIT del 2018?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un errore tecnico nei motori di ricerca",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i robot automatici (bot) le condividono più velocemente degli esseri umani",
+          "corretto": false,
+          "feedback": "Non è corretto. La ricerca MIT del 2018 ha mostrato che sono le persone, non i bot, responsabili della maggior parte delle condivisioni di fake news.",
+          "riferimento": "📖 ESPLORA — Cos'è una fake news: come nasce e perché si diffonde"
         },
         {
           "id": "b",
-          "testo": "La tendenza a formulare query che già implicano la risposta e a ignorare i risultati contrari",
+          "testo": "Perché suscitano reazioni emotive forti (paura, rabbia) che spingono a condividere prima di verificare",
           "corretto": true,
-          "feedback": "Esatto! Il bias di conferma ci porta a cercare 'prove che X fa male' invece di 'effetti di X'."
+          "feedback": "Esatto! Le notizie false usano titoli emotivamente forti. Il cervello reagisce più velocemente alle minacce, portando a condividere prima di pensare. La ricerca MIT ha trovato che le fake news viaggiano 6 volte più veloci delle vere."
         },
         {
           "id": "c",
-          "testo": "La preferenza dei motori per i siti a pagamento",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i motori di ricerca le posizionano intenzionalmente in cima ai risultati",
+          "corretto": false,
+          "feedback": "Non è corretto. I motori di ricerca non favoriscono intenzionalmente le fake news. Il problema è la velocità di diffusione sui social media attraverso le condivisioni umane.",
+          "riferimento": "📖 ESPLORA — Cos'è una fake news: come nasce e perché si diffonde"
         },
         {
           "id": "d",
-          "testo": "Un tipo di spam nei risultati di ricerca",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché sono scritte in modo più semplice e comprensibile delle notizie vere",
+          "corretto": false,
+          "feedback": "Non è corretto. La semplicità del linguaggio non spiega da sola la velocità di diffusione. Il fattore chiave è la risposta emotiva che generano.",
+          "riferimento": "📖 ESPLORA — Cos'è una fake news: come nasce e perché si diffonde"
         }
       ],
-      "spiegazione": "Il bias di conferma ci porta a cercare 'prove che X fa male' invece di 'effetti di X'. I motori personalizzano i risultati amplificando questa tendenza."
+      "spiegazione": "La ricerca MIT del 2018 su 126.000 storie su Twitter ha dimostrato che le notizie false si diffondono 6 volte più velocemente di quelle vere, e sono le persone (non i bot) a condividerle. Il motivo è psicologico: le notizie false usano titoli emotivi che suscitano paura o indignazione, spingendo a condividere istintivamente prima di verificare.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è una fake news: come nasce e perché si diffonde"
     },
     {
-      "livello": "A",
-      "domanda": "Come funziona il fact-checking inverso?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Che cosa fa l'algoritmo di ranking di Google per decidere quale risultato mostrare per primo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Si chiede a un esperto di verificare la notizia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Verifica manualmente se le informazioni nelle pagine sono vere o false",
+          "corretto": false,
+          "feedback": "Non è corretto. Google non verifica la veridicità dei contenuti. L'algoritmo valuta autorevolezza percepita e popolarità, non la verità delle informazioni.",
+          "riferimento": "📖 ESPLORA — Come funziona un motore di ricerca"
         },
         {
           "id": "b",
-          "testo": "Si cerca la notizia su siti di fact-checking e si risale alla fonte primaria originale: chi l'ha pubblicata per primo e cosa diceva realmente",
+          "testo": "Combina fattori come autorevolezza del dominio, pertinenza del contenuto, freschezza e comportamento degli utenti",
           "corretto": true,
-          "feedback": "Esatto! Le notizie virali spesso perdono contesto lungo la catena di condivisione."
+          "feedback": "Esatto! Il ranking di Google considera quanti siti autorevoli rimandano alla pagina (PageRank), quanto il contenuto risponde alla domanda, quanto è recente, e quanti utenti ci restano dopo aver cliccato."
         },
         {
           "id": "c",
-          "testo": "Si traduce la notizia in un'altra lingua e si controlla",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Mostra prima le pagine più visitate in assoluto su internet, senza personalizzazione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il ranking è personalizzato e considera molti fattori, non solo la popolarità assoluta.",
+          "riferimento": "📖 ESPLORA — Come funziona un motore di ricerca"
         },
         {
           "id": "d",
-          "testo": "Si conta il numero di condivisioni per valutare l'affidabilità",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Mostra prima le pagine dei siti che pagano di più a Google",
+          "corretto": false,
+          "feedback": "Non è corretto. I risultati a pagamento sono indicati esplicitamente come 'annunci'. I risultati organici non dipendono da pagamenti.",
+          "riferimento": "📖 ESPLORA — Come funziona un motore di ricerca"
         }
       ],
-      "spiegazione": "Le notizie virali spesso perdono contesto lungo la catena di condivisione. Il reverse fact-checking risale all'origine per vedere cosa diceva davvero."
+      "spiegazione": "L'algoritmo di ranking di Google combina centinaia di fattori: autorevolezza del dominio (PageRank — quanti siti autorevoli rimandano a questa pagina), pertinenza del contenuto, freschezza dell'informazione, e comportamento degli utenti (quanti ci cliccano e quanti tempo restano). Google non valuta la veridicità: una pagina popolare può contenere informazioni false.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona un motore di ricerca"
     },
     {
-      "livello": "A",
-      "domanda": "Perché molte citazioni in un articolo non garantiscono affidabilità?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il caso del WiFi 'distrugge i neuroni' è un esempio di fake news. Quale tecnica usava per sembrare credibile?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le citazioni rallentano la lettura",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Citava ricerche scientifiche peer-reviewed reali sull'argomento",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esistono studi peer-reviewed che dimostrino danni neurologici del WiFi a livelli normali. La storia usava l'estetica della scienza senza la sua sostanza.",
+          "riferimento": "🔍 OSSERVA — Il caso: la falsa storia del 'WiFi che distrugge i neuroni'"
         },
         {
           "id": "b",
-          "testo": "Le citazioni potrebbero essere mal interpretate, fuori contesto, da fonti non peer-reviewed o addirittura inventate",
+          "testo": "Usava immagini di scansioni cerebrali reali fuori contesto, citava 'esperti' non identificabili, e usava linguaggio tecnico",
           "corretto": true,
-          "feedback": "Esatto! Verificare che il paper citato dica davvero quello che afferma l'articolo è fondamentale."
+          "feedback": "Esatto! La storia usava l'estetica della scienza (immagini di cervelli, 'esperti', linguaggio tecnico) senza la sostanza (metodo peer-review, consenso scientifico)."
         },
         {
           "id": "c",
-          "testo": "Gli articoli con citazioni sono a pagamento",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Proveniva da un sito istituzionale con dominio .gov",
+          "corretto": false,
+          "feedback": "Non è corretto. La storia proveniva da siti senza chiara identità editoriale, con URL che imitavano testate giornalistiche.",
+          "riferimento": "🔍 OSSERVA — Il caso: la falsa storia del 'WiFi che distrugge i neuroni'"
         },
         {
           "id": "d",
-          "testo": "Solo Wikipedia può citare fonti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Era firmata da ricercatori universitari verificabili",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli 'esperti' citati nella storia non erano identificabili. Una fonte credibile indica sempre autori con profili professionali verificabili.",
+          "riferimento": "🔍 OSSERVA — Il caso: la falsa storia del 'WiFi che distrugge i neuroni'"
         }
       ],
-      "spiegazione": "Verificare che il paper citato dica davvero quello che afferma l'articolo è fondamentale. La pratica del 'citation bluffing' è documentata."
+      "spiegazione": "La fake news sul WiFi e i neuroni usava l'estetica della scienza (immagini di scansioni cerebrali prese da studi reali ma su argomenti diversi, citazioni di 'esperti' non identificabili, linguaggio tecnico) senza la sostanza scientifica (studi peer-reviewed, replicabilità, consenso della comunità scientifica).",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la falsa storia del 'WiFi che distrugge i neuroni'"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un articolo cita uno studio secondo cui 'X aumenta del 20% il rischio di Y'. Il titolo della notizia dice 'X causa Y'. Qual è il problema?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Non c'è alcun problema: il 20% di rischio in più equivale a causare Y",
+          "corretto": false,
+          "feedback": "Non è corretto. Un aumento del 20% del rischio non significa causalità. Il rischio può passare da 1% a 1.2% — una differenza enorme rispetto a 'causa Y'.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        },
+        {
+          "id": "b",
+          "testo": "Il titolo distorce il dato originale: un aumento del rischio non è una causalità, e il contesto ('in soggetti con Z') è scomparso",
+          "corretto": true,
+          "feedback": "Esatto! La disinformazione per decontestualizzazione toglie il contesto ('+20% del rischio in soggetti con Z') e trasforma una correlazione statistica in una causalità assoluta."
+        },
+        {
+          "id": "c",
+          "testo": "Il problema è che lo studio originale era sbagliato e il giornalista ha fatto bene a semplificarlo",
+          "corretto": false,
+          "feedback": "Non è corretto. La distorsione non 'corregge' lo studio: rimuove informazioni cruciali che cambiano completamente il significato.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è problema perché tutti i titoli di giornale devono essere sintetici",
+          "corretto": false,
+          "feedback": "Non è corretto. La sintesi è necessaria, ma non giustifica trasformare 'aumenta il rischio del 20%' in 'causa Y' — sono affermazioni con significati molto diversi.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        }
+      ],
+      "spiegazione": "La disinformazione per decontestualizzazione è uno dei meccanismi più comuni: si prende un fatto reale (lo studio esiste) ma si rimuove il contesto che ne limita la portata ('+20% del rischio in soggetti con condizione Z specifici'). Il metodo SIFT chiede di risalire alla fonte originale su Google Scholar per leggere il dato nel suo contesto.",
+      "riferimento_principale": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Un sito si chiama 'abcnews.com.co'. Cosa dovrebbe farti venire il sospetto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Niente: un sito con 'abc' nel nome è sempre affidabile perché ABC è una grande rete televisiva",
+          "corretto": false,
+          "feedback": "Non è corretto. Chiunque può registrare un dominio con 'abc' nel nome. Il sito originale di ABC News è 'abcnews.go.com', non 'abcnews.com.co'.",
+          "riferimento": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+        },
+        {
+          "id": "b",
+          "testo": "Il dominio imita 'abcnews.com' aggiungendo '.co' — una tecnica classica dei siti di disinformazione per sembrare autorevoli",
+          "corretto": true,
+          "feedback": "Esatto! Alcuni siti di disinformazione registrano domini che imitano testate reali con piccole variazioni (aggiungono .co, .net, numeri). Bisogna sempre controllare l'URL per intero."
+        },
+        {
+          "id": "c",
+          "testo": "Il dominio .co è un indicatore di sito colombiano, quindi l'informazione potrebbe essere in spagnolo",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche se .co è il dominio della Colombia, viene usato commercialmente da molti siti internazionali. Il problema qui è l'imitazione del dominio di una testata famosa.",
+          "riferimento": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+        },
+        {
+          "id": "d",
+          "testo": "Niente: tutti i domini .com.co sono siti affidabili registrati in Colombia",
+          "corretto": false,
+          "feedback": "Non è corretto. I domini .com.co possono essere registrati da chiunque. L'affidabilità non dipende dal dominio nazionale.",
+          "riferimento": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+        }
+      ],
+      "spiegazione": "I siti di disinformazione spesso registrano domini che imitano quelli di testate autorevoli con piccole modifiche: 'abcnews.com.co' invece di 'abcnews.com', o aggiungendo numeri o trattini. Il testo avvisa: 'Controlla sempre l'indirizzo per intero.' La parte che conta è prima del primo '/' dopo il dominio principale.",
+      "riferimento_principale": "📖 ESPLORA — I domini: cosa dice l'indirizzo di un sito"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Stai ricercando fonti per una presentazione sull'acqua in Italia. Quale query di ricerca avanzata è più efficace per trovare dati ufficiali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "acqua Italia",
+          "corretto": false,
+          "feedback": "Non è corretto. Questa query senza operatori restituisce milioni di risultati misti (commerciali, informativi, opinioni) senza filtro di qualità.",
+          "riferimento": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
+        },
+        {
+          "id": "b",
+          "testo": "risorse idriche Italia site:isprambiente.it",
+          "corretto": true,
+          "feedback": "Esatto! L'operatore site: limita i risultati a ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale), un ente pubblico con dati verificati sull'acqua in Italia."
+        },
+        {
+          "id": "c",
+          "testo": "acqua OR lago OR fiume",
+          "corretto": false,
+          "feedback": "Non è corretto. L'operatore OR allarga la ricerca, non la restringe. Per dati ufficiali servono filtri più precisi come site: per dominio istituzionale.",
+          "riferimento": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
+        },
+        {
+          "id": "d",
+          "testo": "\"acqua\" filetype:jpg Italia",
+          "corretto": false,
+          "feedback": "Non è corretto. Il filetype:jpg cerca immagini JPEG, non documenti o pagine con dati sull'acqua. Non è utile per trovare fonti istituzionali.",
+          "riferimento": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
+        }
+      ],
+      "spiegazione": "L'operatore site: combinato con il dominio di un ente istituzionale affidabile (ISPRA, ISS, OMS) è la strategia più efficace per trovare dati verificati. 'risorse idriche Italia site:isprambiente.it' restringe i risultati all'Istituto Superiore per la Protezione e la Ricerca Ambientale, fonte autorevole per i dati ambientali italiani.",
+      "riferimento_principale": "📖 ESPLORA — Operatori di ricerca avanzata: cerca meglio"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Stai analizzando un articolo che afferma: 'Uno studio ha dimostrato che lo zucchero causa ADHD nei bambini.' Come applichi correttamente il passo T (Trace) del metodo SIFT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Cerco l'articolo su Google e conto quante persone lo hanno condiviso",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero di condivisioni non verifica la veridicità. Il passo T richiede di risalire allo studio originale, non di misurarne la popolarità.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        },
+        {
+          "id": "b",
+          "testo": "Cerco il titolo dello studio originale su Google Scholar e leggo cosa dice davvero la ricerca peer-reviewed",
+          "corretto": true,
+          "feedback": "Esatto! Il passo T (Trace claims) chiede di risalire alla fonte originale. Le affermazioni scientifiche vanno verificate sullo studio originale, non sulla sua interpretazione giornalistica."
+        },
+        {
+          "id": "c",
+          "testo": "Chiedo a un amico che studia medicina se secondo lui è vero",
+          "corretto": false,
+          "feedback": "Non è corretto. L'opinione di una persona, anche esperta, non sostituisce la verifica della fonte primaria (lo studio scientifico originale).",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        },
+        {
+          "id": "d",
+          "testo": "Guardo se l'articolo ha molte foto e grafici: se sì, è più affidabile",
+          "corretto": false,
+          "feedback": "Non è corretto. La presenza di foto e grafici non garantisce l'accuratezza. Le fake news spesso usano immagini convincenti per sembrare credibili.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        }
+      ],
+      "spiegazione": "Il passo T (Trace claims, quotes and media) del metodo SIFT chiede di risalire alla fonte originale: non fermarsi all'articolo che riassume lo studio, ma cercare lo studio originale su Google Scholar e leggere cosa afferma davvero. Spesso la differenza tra 'correlazione in certi soggetti' e 'causa universale' è cruciale.",
+      "riferimento_principale": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché il bias di conferma rende particolarmente difficile riconoscere le fake news che confermano le nostre credenze?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le fake news usano sempre parole che non conosciamo, quindi le accettiamo senza capirle",
+          "corretto": false,
+          "feedback": "Non è corretto. Le fake news più efficaci usano linguaggio semplice e familiare, non tecnico. Il problema è la risonanza con le nostre credenze preesistenti.",
+          "riferimento": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+        },
+        {
+          "id": "b",
+          "testo": "Perché le informazioni che confermano le nostre credenze costano meno energia cognitiva e vengono accettate più velocemente senza attivare il pensiero critico",
+          "corretto": true,
+          "feedback": "Esatto! Il cervello umano è una macchina predittiva: elabora più velocemente le informazioni che corrispondono ai modelli già esistenti. Le fake news che 'suonano vere' vengono accettate senza riflessione."
+        },
+        {
+          "id": "c",
+          "testo": "Perché le fake news vengono scritte da esperti che sanno come ingannare il cervello umano",
+          "corretto": false,
+          "feedback": "Non è corretto. Il bias di conferma è un meccanismo automatico del cervello, non il risultato di una competenza specifica dei creatori di fake news.",
+          "riferimento": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il nostro cervello non distingue tra informazioni vere e false quando è rilassato",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema non è lo stato di rilassamento, ma il fatto che le informazioni coerenti con le nostre credenze preesistenti richiedono meno sforzo cognitivo per essere elaborate.",
+          "riferimento": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+        }
+      ],
+      "spiegazione": "Il cervello umano è una macchina predittiva che elabora il mondo basandosi su esperienze passate. Le informazioni che confermano i modelli esistenti costano meno energia cognitiva da elaborare. Le fake news più efficaci sfruttano questo: non contraddicono le nostre credenze, le amplificano. La difesa è fermarsi proprio quando una notizia ci fa arrabbiare o ci piace molto.",
+      "riferimento_principale": "📖 ESPLORA — Il bias di conferma: perché crediamo a quello che ci piace credere"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un fact-checker professionista deve verificare una notizia virale che afferma che 'i delfini sono tornati nei canali di Venezia'. Come dovrebbe procedere per una verifica completa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Guardare il numero di like e commenti: se sono molti positivi, la notizia è vera",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero di interazioni positive non verifica la veridicità. Molte fake news virali hanno milioni di like.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        },
+        {
+          "id": "b",
+          "testo": "Applicare SIFT: fermarsi, verificare la fonte originale delle immagini (reverse image search), cercare fonti giornalistiche autorevoli che confermino o smentiscano, e risalire al contesto originale delle foto",
+          "corretto": true,
+          "feedback": "Esatto! Per la storia 'delfini a Venezia', la ricerca inversa delle immagini avrebbe mostrato che erano delfini fotografati a Cagliari, non a Venezia — un caso classico di immagini reali fuori contesto."
+        },
+        {
+          "id": "c",
+          "testo": "Chiedere agli abitanti di Venezia tramite social media se hanno visto i delfini",
+          "corretto": false,
+          "feedback": "Non è corretto. Le testimonianze sui social media non sono una fonte primaria verificabile. Il fact-checking richiede verifica delle immagini e delle fonti documentali.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        },
+        {
+          "id": "d",
+          "testo": "Pubblicare immediatamente la notizia perché è positiva e le buone notizie non hanno bisogno di verifica",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche le notizie positive hanno bisogno di verifica. La storia 'delfini a Venezia' era in realtà disinformazione — le immagini erano di Cagliari, non di Venezia.",
+          "riferimento": "📖 ESPLORA — Come si valuta una fonte: il metodo SIFT"
+        }
+      ],
+      "spiegazione": "La storia 'delfini a Venezia' (citata in 🔬 SPERIMENTA Avanzato) era falsa: le immagini erano di delfini fotografati a Cagliari, non a Venezia. Una verifica completa avrebbe incluso: reverse image search sulle foto (cercare l'immagine originale), ricerca di fonti giornalistiche affidabili che confermino, e lettura dei metadati delle immagini. Questo è il lavoro del fact-checker.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Costruisco un'analisi critica di una fake news"
     }
   ]
 }

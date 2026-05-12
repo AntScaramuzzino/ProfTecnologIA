@@ -1,260 +1,600 @@
 {
   "mc_id": "MC-ALI-2-02",
-  "titolo": "Tecniche di conservazione degli alimenti",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa fa la pastorizzazione?",
+      "domanda": "Quali sono le tre cause principali del deterioramento degli alimenti?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Surgela a -18°C",
-          "feedback": "La surgelazione usa temperature molto più basse."
+          "testo": "Microrganismi, reazioni enzimatiche e ossidazione chimica",
+          "corretto": true,
+          "feedback": "Esatto! Gli alimenti si deteriorano per microrganismi (batteri, muffe, lieviti), reazioni enzimatiche (gli enzimi continuano a lavorare dopo la raccolta) e ossidazione chimica (irrancidimento dei grassi)."
         },
         {
           "id": "b",
-          "testo": "Scalda a 70-85°C eliminando i microrganismi patogeni",
-          "corretto": true,
-          "feedback": "Esatto! La pastorizzazione usa il calore moderato per eliminare i batteri nocivi mantenendo le caratteristiche nutritive."
+          "testo": "Luce, suono e pressione atmosferica",
+          "feedback": "Non è corretto. Luce e ossigeno accelerano l'ossidazione, ma il suono e la pressione non sono cause dirette del deterioramento alimentare.",
+          "riferimento": "📖 ESPLORA — Perché il cibo si deteriora"
         },
         {
           "id": "c",
-          "testo": "Essiccai completamente l'alimento",
-          "feedback": "L'essiccazione è un'altra tecnica."
+          "testo": "Freddo, umidità e contaminazione da metalli",
+          "feedback": "Non è corretto. Il freddo e l'umidità sono fattori che influenzano la velocità del deterioramento, ma non sono le cause primarie. I metalli non sono tra le cause principali indicate nel testo.",
+          "riferimento": "📖 ESPLORA — Perché il cibo si deteriora"
         },
         {
           "id": "d",
-          "testo": "Immergere nell'aceto",
-          "feedback": "Questa è l'acidificazione."
+          "testo": "Peso, volume e superficie di contatto dell'alimento",
+          "feedback": "Non è corretto. Queste sono caratteristiche fisiche degli alimenti, non cause di deterioramento.",
+          "riferimento": "📖 ESPLORA — Perché il cibo si deteriora"
         }
       ],
-      "spiegazione": "La pastorizzazione usa il calore moderato per eliminare i batteri nocivi mantenendo le caratteristiche nutritive."
+      "spiegazione": "Il cibo si deteriora per tre cause: 1) microrganismi (batteri, muffe, lieviti) che si moltiplicano e producono tossine; 2) enzimi che continuano a lavorare dopo la raccolta; 3) ossidazione chimica che irrancidisce i grassi e degrada le vitamine.",
+      "riferimento_principale": "📖 ESPLORA — Perché il cibo si deteriora"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Perché il sale conserva gli alimenti?",
+      "domanda": "Qual è la differenza tra refrigerazione e surgelazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Uccide i batteri con il calore",
-          "feedback": "Il sale non produce calore."
+          "testo": "La refrigerazione usa gas refrigeranti, la surgelazione usa ghiaccio secco",
+          "feedback": "Non è corretto. La differenza fondamentale non è il tipo di refrigerante, ma la temperatura raggiunta e l'effetto sui microrganismi.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
         },
         {
           "id": "b",
-          "testo": "Abbassa l'attività dell'acqua disponibile per i microrganismi",
+          "testo": "La refrigerazione (0-4°C) rallenta i microrganismi; la surgelazione (-18°C o meno) li blocca quasi completamente",
           "corretto": true,
-          "feedback": "Esatto! I batteri hanno bisogno di acqua per sopravvivere."
+          "feedback": "Esatto! La refrigerazione rallenta ma non blocca i microrganismi (il cibo continua a deteriorarsi, solo più lentamente). La surgelazione a -18°C congela l'acqua e blocca quasi completamente l'attività microbica."
         },
         {
           "id": "c",
-          "testo": "Aggiunge vitamine all'alimento",
-          "feedback": "Il sale non aggiunge nutrienti."
+          "testo": "Sono la stessa cosa, solo con nomi diversi usati in contesti diversi",
+          "feedback": "Non è corretto. Le differenze sono sostanziali: temperatura, durata di conservazione e effetto sui microrganismi sono completamente diversi.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
         },
         {
           "id": "d",
-          "testo": "Aumenta il pH",
-          "feedback": "Il sale non modifica significativamente il pH."
+          "testo": "La refrigerazione conserva solo liquidi, la surgelazione conserva solo solidi",
+          "feedback": "Non è corretto. Entrambe si applicano a qualsiasi tipo di alimento. La distinzione è la temperatura, non il tipo di alimento.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
         }
       ],
-      "spiegazione": "I batteri hanno bisogno di acqua per sopravvivere. Il sale la sottrae riducendo l'attività dell'acqua."
+      "spiegazione": "La refrigerazione (0-4°C) rallenta i microrganismi ma non li blocca: l'alimento continua a deteriorarsi lentamente. La surgelazione (-18°C o meno) congela l'acqua, privando i microrganismi del mezzo necessario per vivere.",
+      "riferimento_principale": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "A quale temperatura deve stare il cibo nel freezer?",
+      "domanda": "Cosa significa UHT nel trattamento del latte?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "0°C",
-          "feedback": "A 0°C il cibo non si congela."
+          "testo": "Ultra High Time — sterilizzato per tempi molto lunghi a temperatura moderata",
+          "feedback": "Non è corretto. UHT indica la temperatura, non il tempo. La sterilizzazione UHT usa temperature elevatissime per tempi brevissimi.",
+          "riferimento": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
         },
         {
           "id": "b",
-          "testo": "-8°C",
-          "feedback": "Non è sufficiente per conservare a lungo."
+          "testo": "Ultra High Temperature — trattamento a 135-150°C per 2-4 secondi",
+          "corretto": true,
+          "feedback": "Esatto! UHT significa Ultra High Temperature. Il latte viene portato a 135-150°C per 2-4 secondi, poi confezionato asetticamente. Si conserva 3-6 mesi a temperatura ambiente."
         },
         {
           "id": "c",
-          "testo": "-18°C o inferiore",
-          "corretto": true,
-          "feedback": "Esatto! A -18°C i microrganismi restano inattivi e il cibo si conserva a lungo in sicurezza."
+          "testo": "Uniform Heating Treatment — riscaldamento uniforme a 72°C",
+          "feedback": "Non è corretto. Il trattamento a 72°C per 15 secondi è la pastorizzazione HTST (High Temperature Short Time), non l'UHT.",
+          "riferimento": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
         },
         {
           "id": "d",
-          "testo": "-5°C",
-          "feedback": "Insufficiente per bloccare i microrganismi."
+          "testo": "United Hygienic Treatment — standard europeo di igienizzazione",
+          "feedback": "Non è corretto. UHT è un acronimo tecnico preciso che indica la temperatura elevata del processo, non uno standard di igienizzazione generico.",
+          "riferimento": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
         }
       ],
-      "spiegazione": "A -18°C i microrganismi restano inattivi e il cibo si conserva a lungo in sicurezza."
+      "spiegazione": "UHT (Ultra High Temperature) porta il latte a 135-150°C per 2-4 secondi, distruggendo tutti i microrganismi incluse le spore batteriche. Il latte UHT dura 3-6 mesi a temperatura ambiente senza refrigerazione.",
+      "riferimento_principale": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Qual è la differenza tra 'data di scadenza' e 'termine minimo di conservazione' su un'etichetta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sono sinonimi e indicano entrambi il limite di sicurezza del prodotto",
+          "feedback": "Non è corretto. Sono due indicazioni diverse con significati e conseguenze completamente diversi per la sicurezza del consumatore.",
+          "riferimento": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+        },
+        {
+          "id": "b",
+          "testo": "La data di scadenza riguarda la sicurezza microbiologica; il termine minimo riguarda le qualità organolettiche",
+          "corretto": true,
+          "feedback": "Esatto! La 'data di scadenza' (da consumarsi entro) indica il limite di sicurezza. Il 'termine minimo' (da consumarsi preferibilmente entro) indica solo che dopo quella data le qualità potrebbero essere ridotte, non che sia pericoloso."
+        },
+        {
+          "id": "c",
+          "testo": "Il termine minimo si usa solo per alimenti freschi, la data di scadenza per quelli in scatola",
+          "feedback": "Non è corretto. La data di scadenza si usa per prodotti deperibili (carne, pesce, latticini freschi). Il termine minimo si usa per prodotti stabili come biscotti, pasta, conserve.",
+          "riferimento": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+        },
+        {
+          "id": "d",
+          "testo": "Il termine minimo è obbligatorio per legge; la data di scadenza è facoltativa",
+          "feedback": "Non è corretto. Entrambe sono obbligatorie per legge (Regolamento UE 1169/2011) e si usano su prodotti diversi in base alle caratteristiche di conservabilità.",
+          "riferimento": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+        }
+      ],
+      "spiegazione": "La 'data di scadenza' (da consumarsi entro) è un limite di sicurezza microbiologica per prodotti deperibili. Il 'termine minimo di conservazione' (da consumarsi preferibilmente entro) indica che il prodotto potrebbe essere meno gustoso ma non pericoloso dopo quella data.",
+      "riferimento_principale": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'catena del freddo' nella distribuzione degli alimenti surgelati?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La rete di negozi che vendono prodotti surgelati",
+          "feedback": "Non è corretto. La catena del freddo non è una rete di negozi ma un sistema di controllo della temperatura che deve rimanere continuo.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
+        },
+        {
+          "id": "b",
+          "testo": "Il mantenimento continuo della temperatura a -18°C o meno dal produttore al consumatore",
+          "corretto": true,
+          "feedback": "Esatto! La catena del freddo è la continuità del mantenimento a -18°C dal momento della produzione fino al freezer di casa. Se si interrompe, i microrganismi si risvegliano."
+        },
+        {
+          "id": "c",
+          "testo": "Il sistema di raffreddamento rapido usato nelle industrie alimentari durante la produzione",
+          "feedback": "Non è corretto. Il raffreddamento in produzione è solo la prima fase. La catena del freddo include tutto il percorso fino a casa del consumatore.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
+        },
+        {
+          "id": "d",
+          "testo": "Il calendario stagionale delle temperature ottimali per la conservazione",
+          "feedback": "Non è corretto. La catena del freddo è un sistema logistico attivo, non un calendario stagionale.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
+        }
+      ],
+      "spiegazione": "La catena del freddo è la continuità del mantenimento a -18°C dal produttore al consumatore. Include trasporto refrigerato, magazzini, banchi frigo e freezer domestico. Se si interrompe anche solo per ore, i microrganismi si risvegliano e proliferano.",
+      "riferimento_principale": "📖 ESPLORA — La catena del freddo"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Il processo di liofilizzazione degli alimenti è basato su quale principio fisico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ebollizione ad alta pressione che rimuove l'acqua velocemente",
+          "feedback": "Non è corretto. La liofilizzazione usa il principio opposto: bassa pressione per far sublimare il ghiaccio direttamente in vapore.",
+          "riferimento": "📖 ESPLORA — Disidratazione ed essiccazione"
+        },
+        {
+          "id": "b",
+          "testo": "Sublimazione del ghiaccio in vapore acqueo sotto vuoto, senza passare allo stato liquido",
+          "corretto": true,
+          "feedback": "Esatto! L'alimento viene prima congelato, poi messo sotto vuoto: il ghiaccio sublima direttamente in vapore. Risultato: massima conservazione di struttura, aroma e valori nutritivi."
+        },
+        {
+          "id": "c",
+          "testo": "Evaporazione lenta dell'acqua al sole, come nell'essiccazione tradizionale",
+          "feedback": "Non è corretto. L'essiccazione al sole è la tecnica più antica e semplice. La liofilizzazione è molto più sofisticata e costosa.",
+          "riferimento": "📖 ESPLORA — Disidratazione ed essiccazione"
+        },
+        {
+          "id": "d",
+          "testo": "Centrifugazione che separa meccanicamente l'acqua dagli altri componenti",
+          "feedback": "Non è corretto. La centrifugazione separa fasi diverse ma non è il principio della liofilizzazione.",
+          "riferimento": "📖 ESPLORA — Disidratazione ed essiccazione"
+        }
+      ],
+      "spiegazione": "Nella liofilizzazione, l'alimento viene congelato rapidamente poi messo sotto vuoto. In queste condizioni il ghiaccio sublima direttamente in vapore senza passare allo stato liquido, preservando struttura, colore, aroma e valori nutrizionali quasi intatti.",
+      "riferimento_principale": "📖 ESPLORA — Disidratazione ed essiccazione"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Perché la marmellata dura mesi senza frigorifero?",
+      "domanda": "Perché il surgelamento industriale rapido è migliore del congelamento lento in un freezer domestico?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché è pastorizzata ad alte temperature",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché raggiunge temperature più basse, uccidendo più batteri",
+          "feedback": "Non è corretto. La differenza non è la temperatura finale ma la velocità: entrambi raggiungono -18°C, ma i cristalli di ghiaccio che si formano sono completamente diversi.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
         },
         {
           "id": "b",
-          "testo": "Alto contenuto di zucchero (abbassa l'acqua disponibile) + acidità del frutto",
+          "testo": "Perché forma cristalli di ghiaccio microscopici che non danneggiano le pareti cellulari dell'alimento",
           "corretto": true,
-          "feedback": "Esatto! Zucchero + acidità: entrambi inibiscono i microrganismi rendendo il prodotto stabile senza additivi."
+          "feedback": "Esatto! Il surgelamento rapido industriale (a -40°C) forma cristalli di ghiaccio microscopici. Il congelamento lento forma cristalli grandi che rompono le pareti cellulari, peggiorando la texture dopo lo scongelamento."
         },
         {
           "id": "c",
-          "testo": "Perché non contiene grassi",
-          "feedback": "I grassi non influenzano la conservazione in questo caso."
+          "testo": "Perché usa gas speciali invece dell'aria per congelare gli alimenti",
+          "feedback": "Non è corretto. Alcuni sistemi industriali usano azoto liquido o CO₂, ma il vantaggio principale è la velocità di congelamento e la dimensione dei cristalli di ghiaccio.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
         },
         {
           "id": "d",
-          "testo": "Perché è trattata con raggi UV",
-          "feedback": "Questa è un'altra tecnica industriale."
+          "testo": "Perché sterilizza anche i batteri resistenti al freddo",
+          "feedback": "Non è corretto. Il congelamento non uccide i batteri: li sospende. Sia il surgelamento industriale che domestico non sterilizzano l'alimento.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
         }
       ],
-      "spiegazione": "Zucchero + acidità: entrambi inibiscono i microrganismi rendendo il prodotto stabile senza additivi."
+      "spiegazione": "La velocità di congelamento determina la dimensione dei cristalli di ghiaccio. Il surgelamento industriale rapido (a -40°C o meno) forma cristalli microscopici che non danneggiano le cellule. Il congelamento lento forma cristalli grandi che rompono le pareti cellulari, alterando consistenza e sapore dopo lo scongelamento.",
+      "riferimento_principale": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Differenza tra 'data di scadenza' e 'termine minimo di conservazione' (TMC)?",
+      "domanda": "Perché non bisogna ricongelare un alimento già scongelato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sono la stessa cosa",
-          "feedback": "Sono concetti giuridici distinti."
+          "testo": "Perché la normativa europea lo vieta esplicitamente per tutti i prodotti",
+          "feedback": "Non è corretto. Il divieto è legato a ragioni biologiche, non solo normative. I microrganismi che si risvegliano durante lo scongelamento rimangono nell'alimento.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
         },
         {
           "id": "b",
-          "testo": "Il TMC indica quando le qualità possono calare, la scadenza è il limite di sicurezza alimentare",
+          "testo": "Perché ogni ciclo congela-scongela aumenta il numero di microrganismi e peggiora la qualità microbiologica",
           "corretto": true,
-          "feedback": "Esatto! Dopo il TMC l'alimento può essere ancora sicuro; dopo la data di scadenza non va consumato."
+          "feedback": "Esatto! Quando un alimento si scongela, i microrganismi si risvegliano e si moltiplicano. Se viene ricongelato, i microrganismi restano nell'alimento. Ogni ciclo accumula più rischio microbiologico."
         },
         {
           "id": "c",
-          "testo": "Il TMC è obbligatorio, la scadenza no",
-          "feedback": "Entrambi sono regolamentati dall'UE."
+          "testo": "Perché l'alimento ricongelato perde completamente il suo valore nutrizionale",
+          "feedback": "Non è corretto. Il problema principale è microbiologico (sicurezza), non la perdita dei valori nutritivi, che è un effetto secondario.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
         },
         {
           "id": "d",
-          "testo": "La scadenza si usa solo per i liquidi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché il freddo del secondo congelamento non riesce a raggiungere il centro dell'alimento",
+          "feedback": "Non è corretto. Un freezer domestico riesce a riportare l'alimento a -18°C in tutto il suo volume. Il problema non è fisico ma microbiologico.",
+          "riferimento": "📖 ESPLORA — La catena del freddo"
         }
       ],
-      "spiegazione": "Dopo il TMC l'alimento può essere ancora sicuro; dopo la data di scadenza non va consumato."
+      "spiegazione": "Quando un alimento scongelato si riporta a temperatura ambiente, i microrganismi (che il freddo non aveva ucciso, solo sospeso) si risvegliano e si moltiplicano. Ricongelarlo non li elimina: li intrappola nell'alimento, aumentando il rischio microbiologico ad ogni ciclo.",
+      "riferimento_principale": "📖 ESPLORA — La catena del freddo"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Perché il latte UHT dura mesi mentre quello pastorizzato no?",
+      "domanda": "Come funziona la salatura come metodo di conservazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il latte UHT è privo di grassi",
-          "feedback": "Il tenore di grassi dipende dalla tipologia, non dal trattamento."
+          "testo": "Il sale uccide i microrganismi con un'azione antibiotica simile a quella dei farmaci",
+          "feedback": "Non è corretto. Il sale non ha azione antibiotica nel senso farmacologico. Agisce per osmosi, disidratando le cellule dei microrganismi.",
+          "riferimento": "📖 ESPLORA — Salatura, affumicatura e fermentazione"
         },
         {
           "id": "b",
-          "testo": "Il trattamento UHT a 135-150°C elimina anche le spore batteriche",
+          "testo": "Il sale estrae l'acqua dalle cellule dei microrganismi per osmosi, disidratandoli e uccidendoli",
           "corretto": true,
-          "feedback": "Esatto! UHT = Ultra High Temperature: elimina le spore che la pastorizzazione lascia vive."
+          "feedback": "Esatto! Il sale agisce per osmosi: estrae l'acqua dalle cellule microbiche e riduce l'attività dell'acqua nell'alimento, impedendo la crescita microbica."
         },
         {
           "id": "c",
-          "testo": "Il latte UHT ha conservanti aggiunti",
-          "feedback": "Non ne contiene."
+          "testo": "Il sale abbassa la temperatura dell'alimento per effetto chimico",
+          "feedback": "Non è corretto. Il sale non abbassa la temperatura degli alimenti. Quando disciolto in acqua abbassa il punto di congelamento, ma questo non è il meccanismo di conservazione degli alimenti salati.",
+          "riferimento": "📖 ESPLORA — Salatura, affumicatura e fermentazione"
         },
         {
           "id": "d",
-          "testo": "Il confezionamento è sottovuoto",
-          "feedback": "Il confezionamento asettico aiuta, ma il fattore chiave è il calore."
+          "testo": "Il sale crea uno strato impermeabile sulla superficie che blocca l'ingresso dei batteri",
+          "feedback": "Non è corretto. Il sale non crea una barriera fisica ma agisce chimicamente (osmotica) sull'acqua disponibile per i microrganismi.",
+          "riferimento": "📖 ESPLORA — Salatura, affumicatura e fermentazione"
         }
       ],
-      "spiegazione": "UHT = Ultra High Temperature: elimina le spore che la pastorizzazione lascia vive. Il confezionamento asettico mantiene la sterilità."
+      "spiegazione": "La salatura funziona per osmosi: il sale estrae l'acqua dall'interno delle cellule dei microrganismi, disidratandoli e uccidendoli. Riduce anche l'attività dell'acqua nell'alimento sotto la soglia necessaria alla crescita microbica.",
+      "riferimento_principale": "📖 ESPLORA — Salatura, affumicatura e fermentazione"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'catena del freddo' e perché è critica?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il confezionamento in atmosfera modificata (MAP) sostituisce l'aria con quali gas?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una serie di frigoriferi collegati in fabbrica",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Ozono e vapore d'acqua per disinfezione e protezione dall'essiccamento",
+          "feedback": "Non è corretto. L'ozono è usato in alcuni sistemi di disinfezione industriale, ma non è il gas usato nel MAP per la conservazione degli alimenti in confezione.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
         },
         {
           "id": "b",
-          "testo": "Il mantenimento continuo della temperatura dal produttore al consumatore: ogni interruzione permette la proliferazione batterica",
+          "testo": "Azoto per eliminare l'ossigeno e CO₂ per inibire la crescita batterica e fungina",
           "corretto": true,
-          "feedback": "Esatto! Ogni interruzione anche breve permette ai batteri di moltiplicarsi geometricamente."
+          "feedback": "Esatto! Il MAP sostituisce l'aria con azoto (N₂, che elimina l'ossigeno) e CO₂ (che inibisce batteri e funghi). A volte piccole quantità di ossigeno mantengono il colore rosso della carne."
         },
         {
           "id": "c",
-          "testo": "Un metodo di confezionamento sottovuoto",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Idrogeno e metano per creare un ambiente anaerobico",
+          "feedback": "Non è corretto. Idrogeno e metano non si usano nel MAP. Sarebbero anche infiammabili e pericolosi.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
         },
         {
           "id": "d",
-          "testo": "Il trasporto refrigerato esclusivamente via nave",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Azoto e argon per creare un'atmosfera neutra senza effetti chimici",
+          "feedback": "Non è corretto. L'azoto viene usato, ma l'argon non è citato nel testo come gas principale del MAP. La CO₂ ha un ruolo attivo nell'inibire microrganismi.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
         }
       ],
-      "spiegazione": "Ogni interruzione anche breve permette ai batteri di moltiplicarsi geometricamente. Critica per carni, latticini e pesce."
+      "spiegazione": "Il MAP (Modified Atmosphere Packaging) sostituisce l'aria con azoto (N₂ per eliminare l'ossigeno) e CO₂ (che inibisce batteri e funghi). Permette di raddoppiare o triplicare la shelf life rispetto al normale imballaggio in aria.",
+      "riferimento_principale": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il packaging in 'atmosfera modificata' (MAP)?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Lo yogurt 'con fermenti lattici vivi' differisce dallo yogurt pastorizzato perché...",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La refrigerazione a temperatura controllata",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Contiene più lattosio e ha un sapore meno acido",
+          "feedback": "Non è corretto. Lo yogurt con fermenti vivi ha solitamente più acido lattico (è più acido) perché i batteri continuano a produrre acido anche in frigo.",
+          "riferimento": "🔍 OSSERVA — Il caso: yogurt normale vs. yogurt con fermenti vivi"
         },
         {
           "id": "b",
-          "testo": "La sostituzione dell'aria nella confezione con gas (CO₂, N₂) per rallentare ossidazione e crescita microbica",
+          "testo": "Non è stato pastorizzato dopo la fermentazione, quindi i batteri rimangono vivi e attivi",
           "corretto": true,
-          "feedback": "Esatto! Le buste MAP controllano i gas interni prolungando la conservazione senza additivi chimici."
+          "feedback": "Esatto! Lo yogurt con fermenti vivi non subisce pastorizzazione dopo la fermentazione. I batteri lattici rimangono vivi (100-200 milioni per ml) e possono avere effetti benefici sull'intestino."
         },
         {
           "id": "c",
-          "testo": "L'essiccazione con correnti d'aria",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "È prodotto con latte crudo invece che pastorizzato",
+          "feedback": "Non è corretto. Tutta la produzione industriale di yogurt inizia da latte pastorizzato. La differenza è cosa succede dopo la fermentazione.",
+          "riferimento": "🔍 OSSERVA — Il caso: yogurt normale vs. yogurt con fermenti vivi"
         },
         {
           "id": "d",
-          "testo": "L'irradiazione con raggi gamma",
-          "feedback": "Tecnica diversa."
+          "testo": "Ha una durata più lunga perché i batteri vivi proteggono il prodotto",
+          "feedback": "Non è corretto. È il contrario: lo yogurt con fermenti vivi ha una shelf life più breve perché i batteri continuano a produrre acido lattico, rendendolo progressivamente più acido.",
+          "riferimento": "🔍 OSSERVA — Il caso: yogurt normale vs. yogurt con fermenti vivi"
         }
       ],
-      "spiegazione": "Le buste MAP controllano i gas interni prolungando la conservazione senza additivi chimici. Usata per insalate, carne e formaggi."
+      "spiegazione": "Lo yogurt con fermenti vivi non viene pastorizzato dopo la fermentazione. I batteri lattici rimangono attivi (100-200 milioni per ml), hanno shelf life più breve ma potenziali benefici intestinali. Per legge deve contenere almeno 10 milioni di batteri vivi per grammo al momento della vendita.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: yogurt normale vs. yogurt con fermenti vivi"
     },
     {
-      "livello": "A",
-      "domanda": "Perché il pH < 4.6 è il limite di sicurezza per le conserve?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché il botulismo è particolarmente pericoloso nelle conserve alimentari non correttamente sterilizzate?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché a pH < 4.6 il cibo ha buon sapore",
-          "feedback": "Il gusto non è il criterio."
+          "testo": "Perché il batterio Clostridium botulinum cresce meglio in presenza di ossigeno",
+          "feedback": "Non è corretto. Il Clostridium botulinum è un batterio anaerobico: cresce proprio in assenza di ossigeno. Le conserve sigillate sono il suo ambiente ideale.",
+          "riferimento": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
         },
         {
           "id": "b",
-          "testo": "Sotto pH 4.6 il Clostridium botulinum non produce la tossina botulinica",
+          "testo": "Perché il Clostridium botulinum è anaerobico e le sue spore sopravvivono alla normale pastorizzazione",
           "corretto": true,
-          "feedback": "Esatto! Il botulino prospera in ambiente anaerobico e non acido."
+          "feedback": "Esatto! Il Clostridium botulinum cresce in assenza di ossigeno (condizione ideale nelle conserve) e le sue spore sopravvivono alla pastorizzazione. Solo la sterilizzazione in autoclave a 121°C le distrugge."
         },
         {
           "id": "c",
-          "testo": "Perché è il pH dello stomaco umano",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché la tossina botulinica è instabile e si diffonde rapidamente nell'aria",
+          "feedback": "Non è corretto. La tossina botulinica è stabile nell'alimento conservato. Non si diffonde nell'aria in condizioni normali.",
+          "riferimento": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
         },
         {
           "id": "d",
-          "testo": "Perché a questo pH il cibo non cambia colore",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché altera visibilmente l'aspetto e il sapore del cibo, rendendo la contaminazione facile da riconoscere",
+          "feedback": "Non è corretto. Il botulismo è pericoloso anche perché non altera necessariamente l'aspetto o il sapore dell'alimento. Una lattina gonfia è un segnale d'allarme, ma non sempre presente.",
+          "riferimento": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
         }
       ],
-      "spiegazione": "Il botulino prospera in ambiente anaerobico e non acido. Il pH 4.6 è la soglia fondamentale per le conserve casalinghe sicure."
+      "spiegazione": "Il Clostridium botulinum è anaerobico (prospera senza ossigeno) e le sue spore resistono alla pastorizzazione. Solo la sterilizzazione in autoclave a 121°C per 15 minuti le distrugge. La tossina botulinica è una delle sostanze naturali più letali note.",
+      "riferimento_principale": "📖 ESPLORA — Il calore: pastorizzazione e sterilizzazione"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Se il primo ingrediente di un succo 'alla pesca' è 'acqua', il secondo è 'zucchero' e il terzo è 'concentrato di frutta 10%', cosa si può concludere?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Che il succo è di ottima qualità perché contiene acqua, zucchero e frutta",
+          "feedback": "Non è corretto. L'ordine degli ingredienti è decrescente per peso. Se l'acqua è prima e la frutta solo il 10%, il prodotto è essenzialmente acqua zuccherata con poco frutto.",
+          "riferimento": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+        },
+        {
+          "id": "b",
+          "testo": "Che il prodotto è essenzialmente acqua zuccherata con solo il 10% di componente di frutta",
+          "corretto": true,
+          "feedback": "Esatto! Gli ingredienti sono elencati in ordine decrescente di peso. Se l'acqua è prima e il concentrato di frutta terzo al 10%, stai comprando principalmente acqua zuccherata."
+        },
+        {
+          "id": "c",
+          "testo": "Che il succo rispetta i requisiti di legge minimi per essere chiamato succo di frutta",
+          "feedback": "Parzialmente vero, ma non è la conclusione più rilevante ai fini della consapevolezza del consumatore. La domanda chiede cosa si può concludere sulla composizione.",
+          "riferimento": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+        },
+        {
+          "id": "d",
+          "testo": "Che i valori nutrizionali del prodotto sono equivalenti a quelli di una pesca fresca",
+          "feedback": "Non è corretto. Con solo il 10% di concentrato di frutta, il profilo vitaminico e minerale è molto inferiore a quello di una pesca fresca.",
+          "riferimento": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+        }
+      ],
+      "spiegazione": "La lista degli ingredienti è in ordine decrescente di peso. Se l'acqua è prima e il concentrato di frutta è terzo al 10%, il prodotto è sostanzialmente acqua zuccherata con poco frutto. Leggere questa lista è lo strumento più potente per valutare realmente un prodotto alimentare.",
+      "riferimento_principale": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Un alimento sottovuoto può comunque essere pericoloso per il botulismo. Perché?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché il sottovuoto deteriora le proteine creando tossine chimiche",
+          "feedback": "Non è corretto. Il sottovuoto non crea tossine chimiche. Il pericolo è biologico, non chimico.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+        },
+        {
+          "id": "b",
+          "testo": "Perché il Clostridium botulinum è anaerobico e cresce meglio in assenza di ossigeno, come nel sottovuoto",
+          "corretto": true,
+          "feedback": "Esatto! Il sottovuoto rimuove l'ossigeno che protegge dagli aerobi, ma il Clostridium botulinum è anaerobico: cresce proprio in assenza di ossigeno. Il sottovuoto da solo non protegge dal botulismo."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la plastica del sottovuoto rilascia sostanze tossiche in assenza di aria",
+          "feedback": "Non è corretto. Le plastiche per alimenti approvate dall'UE sono sicure per il contatto alimentare. Il pericolo del botulismo è batterico, non chimico.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+        },
+        {
+          "id": "d",
+          "testo": "Perché senza aria il prodotto non può essere refrigerato efficacemente",
+          "feedback": "Non è corretto. Il sottovuoto non influenza l'efficacia della refrigerazione. Il problema è esclusivamente biologico: il Clostridium botulinum è anaerobico.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+        }
+      ],
+      "spiegazione": "Il Clostridium botulinum è anaerobico: vive e si moltiplica in assenza di ossigeno. Il sottovuoto crea esattamente le condizioni che esso preferisce. Per questo i prodotti sottovuoto devono essere refrigerati e non si basano solo sul confezionamento per garantire la sicurezza microbiologica.",
+      "riferimento_principale": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Un tecnologo alimentare deve prolungare la shelf life di un petto di pollo fresco senza usare conservanti. Qual è la strategia più efficace tra quelle descritte nel testo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Pastorizzare il pollo a 72°C per 15 secondi e venderlo come 'fresco pastorizzato'",
+          "feedback": "Parzialmente corretto, ma la pastorizzazione da sola senza confezionamento adeguato non è la strategia ottimale. La combinazione con l'atmosfera modificata è più efficace.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+        },
+        {
+          "id": "b",
+          "testo": "Confezionarlo in atmosfera modificata con azoto e CO₂, passando da 3-4 giorni a 8-12 giorni di conservazione",
+          "corretto": true,
+          "feedback": "Esatto! Il MAP (atmosfera modificata) senza conservanti è la soluzione che il testo indica esplicitamente per la carne: da 3-4 giorni di shelf life in imballaggio normale a 8-12 giorni in MAP."
+        },
+        {
+          "id": "c",
+          "testo": "Aggiungere sale fino a una concentrazione del 5% per effetto osmotico",
+          "feedback": "Non è corretto. La salatura al 5% cambierebbe il sapore del prodotto in modo significativo. Non è un metodo per 'fresco non conservato'.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+        },
+        {
+          "id": "d",
+          "testo": "Abbassare il pH a 4,5 aggiungendo aceto di vino",
+          "feedback": "Non è corretto. L'acidificazione con aceto cambierebbe completamente le caratteristiche organolettiche del pollo e non è indicata nel testo per la conservazione di carni fresche.",
+          "riferimento": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+        }
+      ],
+      "spiegazione": "Il MAP (Modified Atmosphere Packaging) con azoto e CO₂ porta la shelf life del petto di pollo da 3-4 giorni a 8-12 giorni senza conservanti. La CO₂ inibisce batteri e funghi; il N₂ elimina l'ossigeno che ossida i grassi. Il testo lo cita esplicitamente come esempio.",
+      "riferimento_principale": "📖 ESPLORA — Confezionamento: atmosfera modificata e sottovuoto"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Una famiglia butta mediamente 500 euro di cibo all'anno. Usando le conoscenze di questa MC, quale comportamento avrebbe il maggiore impatto per ridurre questo spreco?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Comprare solo prodotti con data di scadenza lontana, indipendentemente da altri criteri",
+          "feedback": "Non è corretto. La data di scadenza lontana non è il criterio giusto: un prodotto con scadenza lontana ma mal conservato peggiora prima. Il problema è la gestione corretta.",
+          "riferimento": "📖 ESPLORA — Come leggere un'etichetta alimentare"
+        },
+        {
+          "id": "b",
+          "testo": "Saper distinguere scadenza da termine minimo, conservare ogni prodotto nel modo corretto e pianificare gli acquisti",
+          "corretto": true,
+          "feedback": "Esatto! La combinazione di: capire scadenza vs. termine minimo, conservare i prodotti nelle condizioni giuste (frigo, dispensa, freezer) e pianificare gli acquisti è la strategia più efficace contro lo spreco."
+        },
+        {
+          "id": "c",
+          "testo": "Comprare solo prodotti surgelati per azzerare le scadenze ravvicinate",
+          "feedback": "Non è corretto. I surgelati hanno durata lunga ma non azzerano lo spreco: anche i surgelati scadono e vanno gestiti correttamente. E non si possono surgelare tutti gli alimenti.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
+        },
+        {
+          "id": "d",
+          "testo": "Eliminare il frigo e usare solo metodi di conservazione come salatura e affumicatura",
+          "feedback": "Non è corretto. Il frigo è essenziale per la conservazione di molti alimenti moderni. Sostituirlo con salatura e affumicatura cambierebbe completamente le abitudini alimentari e non ridurrebbe necessariamente gli sprechi.",
+          "riferimento": "📖 ESPLORA — Il freddo: refrigerazione e surgelazione"
+        }
+      ],
+      "spiegazione": "Il comportamento più efficace contro lo spreco alimentare domestico combina: 1) capire la differenza tra scadenza e termine minimo; 2) conservare ogni prodotto nelle condizioni corrette; 3) pianificare gli acquisti in base ai consumi reali. Sono le competenze pratiche che questa MC ha sviluppato.",
+      "riferimento_principale": "🌍 AGISCI — Lo scenario"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché la Listeria monocytogenes è considerata particolarmente pericolosa nonostante le buone pratiche di conservazione domestica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché produce spore resistenti alla pastorizzazione come il Clostridium botulinum",
+          "feedback": "Non è corretto. La Listeria non produce spore resistenti. La sua pericolosità deriva da una caratteristica diversa e specifica.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "b",
+          "testo": "Perché cresce anche a temperature di frigorifero (fino a 0°C) senza alterare visibilmente l'alimento",
+          "corretto": true,
+          "feedback": "Esatto! La Listeria è pericolosa perché cresce anche a 0-4°C (temperature di frigorifero) e non altera aspetto né profumo dell'alimento. Un cibo contaminato da Listeria può sembrare perfettamente fresco."
+        },
+        {
+          "id": "c",
+          "testo": "Perché è resistente a tutti i metodi di conservazione inclusa la surgelazione",
+          "feedback": "Non è corretto. La Listeria viene inattivata dalla surgelazione e uccisa dalla cottura a temperature adeguate. Il suo vantaggio è che cresce in frigo.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "d",
+          "testo": "Perché produce tossine che non vengono distrutte neanche dalla cottura ad alta temperatura",
+          "feedback": "Non è corretto. La Listeria viene uccisa dalla cottura a temperature adeguate. Il suo pericolo è a temperature di refrigerazione, non alle temperature di cottura.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        }
+      ],
+      "spiegazione": "La Listeria monocytogenes è pericolosa perché cresce anche a temperature di frigorifero (fino a 0°C) e senza alterare visibilmente l'aspetto o il profumo dell'alimento. Un prodotto contaminato da Listeria può sembrare e profumare perfettamente fresco.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un produttore di mozzarella deve consegnare 50 kg a Milano in 48 ore mantenendo la shelf life di 5-7 giorni a 4°C. Quale punto della catena del freddo è più critico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La produzione della mozzarella nel caseificio, dove si sceglie il latte",
+          "feedback": "Non è corretto. La qualità del latte è importante, ma il rischio durante il trasporto riguarda la catena del freddo logistica, non la fase di produzione.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto la catena del freddo"
+        },
+        {
+          "id": "b",
+          "testo": "Il momento di scarico e stazionamento al magazzino di distribuzione, dove il controllo della temperatura può essere discontinuo",
+          "corretto": true,
+          "feedback": "Esatto! I passaggi di carico/scarico sono i punti critici più frequenti nella catena del freddo: la merce resta temporaneamente fuori dalle celle, la temperatura può salire, specialmente in estate."
+        },
+        {
+          "id": "c",
+          "testo": "Il confezionamento finale al ristorante di Milano prima del servizio",
+          "feedback": "Non è corretto. Il confezionamento al ristorante avviene dopo la consegna: non è parte della catena del freddo del produttore.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto la catena del freddo"
+        },
+        {
+          "id": "d",
+          "testo": "La fase di produzione nel caseificio dove si pastorizza il latte",
+          "feedback": "Non è corretto. La pastorizzazione è una fase di produzione controllata. I rischi maggiori della catena del freddo sono nei trasferimenti logistici.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto la catena del freddo"
+        }
+      ],
+      "spiegazione": "I punti critici della catena del freddo sono i momenti di trasferimento: carico/scarico al magazzino, deposito temporaneo, consegna. In questi momenti la merce è temporaneamente fuori dalle celle refrigerate e la temperatura può salire, specialmente in condizioni estive o con attrezzature non perfette.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Progetto la catena del freddo"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }

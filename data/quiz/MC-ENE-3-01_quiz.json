@@ -1,242 +1,600 @@
 {
   "mc_id": "MC-ENE-3-01",
-  "titolo": "Macchine semplici e principi di meccanica",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa fa una macchina semplice?",
+      "domanda": "Quante sono le macchine semplici fondamentali elencate nel testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Crea energia dal nulla"
+          "testo": "Sei (leva, piano inclinato, cuneo, vite, carrucola, ruota con asse)",
+          "corretto": true,
+          "feedback": "Esatto! Le sei macchine semplici fondamentali sono: leva, piano inclinato, cuneo, vite, carrucola e ruota con asse. Ogni macchina più complessa è una combinazione di queste sei."
         },
         {
           "id": "b",
-          "testo": "Trasforma o trasmette forze per facilitare il lavoro",
-          "corretto": true,
-          "feedback": "Esatto! Le macchine semplici non creano energia, la trasformano rendendola più utile."
+          "testo": "Quattro (leva, piano inclinato, carrucola, vite)",
+          "feedback": "Non corretto. Le macchine semplici fondamentali sono sei, non quattro. Mancano il cuneo e la ruota con asse.",
+          "riferimento": "📖 ESPLORA — Il segreto delle macchine semplici: fare di più con meno fatica"
         },
         {
           "id": "c",
-          "testo": "Elimina completamente la fatica"
+          "testo": "Tre (leva, piano inclinato, carrucola)",
+          "feedback": "Non corretto. Le macchine semplici fondamentali sono sei. Il testo ne elenca esplicitamente: leva, piano inclinato, cuneo, vite, carrucola, ruota con asse.",
+          "riferimento": "📖 ESPLORA — Il segreto delle macchine semplici: fare di più con meno fatica"
         },
         {
           "id": "d",
-          "testo": "Aumenta sempre la velocità",
-          "feedback": "Le macchine semplici possono aumentare forza o velocità, non sempre entrambe."
+          "testo": "Otto (incluse l'ascia e le forbici)",
+          "feedback": "Non corretto. Le macchine semplici fondamentali sono sei. L'ascia è un esempio di cuneo e le forbici sono leve, non macchine semplici aggiuntive.",
+          "riferimento": "📖 ESPLORA — Il segreto delle macchine semplici: fare di più con meno fatica"
         }
       ],
-      "spiegazione": "Una leva, una carrucola, un piano inclinato: tutte trasformano le forze, non le creano."
+      "spiegazione": "Le sei macchine semplici fondamentali sono: leva, piano inclinato, cuneo, vite, carrucola e ruota con asse. Ogni macchina più complessa che esiste (dalla bicicletta all'escavatore) è una combinazione di queste sei forme di base.",
+      "riferimento_principale": "📖 ESPLORA — Il segreto delle macchine semplici: fare di più con meno fatica"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Quale delle seguenti è una macchina semplice?",
+      "domanda": "In una leva di secondo genere, dove si trova il carico rispetto al fulcro e alla forza?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Automobile"
+          "testo": "Il carico è in mezzo, tra il fulcro e il punto di applicazione della forza",
+          "corretto": true,
+          "feedback": "Esatto! In una leva di secondo genere la sequenza è: Fm — Fr — F (fulcro, carico, forza). Il carico è in posizione intermedia. Esempio: la carriola."
         },
         {
           "id": "b",
-          "testo": "Lavatrice"
+          "testo": "Il fulcro è in mezzo, tra il carico e la forza",
+          "feedback": "Non corretto. Questa è la configurazione della leva di PRIMO genere (Fm — F — Fr). Nella leva di secondo genere il carico è in mezzo.",
+          "riferimento": "📖 ESPLORA — La leva"
         },
         {
           "id": "c",
-          "testo": "Leva",
-          "corretto": true,
-          "feedback": "Esatto! La leva è una delle 6 macchine semplici classiche."
+          "testo": "La forza è in mezzo, tra il fulcro e il carico",
+          "feedback": "Non corretto. Questa è la configurazione della leva di TERZO genere. Nella leva di secondo genere il carico è in mezzo.",
+          "riferimento": "📖 ESPLORA — La leva"
         },
         {
           "id": "d",
-          "testo": "Telefono",
-          "feedback": "Il telefono è una macchina complessa che usa principi elettronici, non meccanici semplici."
+          "testo": "Il fulcro, il carico e la forza sono equidistanti tra loro",
+          "feedback": "Non corretto. La posizione relativa di fulcro, carico e forza definisce il genere della leva. Nella leva di secondo genere il carico è tra il fulcro e la forza.",
+          "riferimento": "📖 ESPLORA — La leva"
         }
       ],
-      "spiegazione": "Le 6 macchine semplici sono: leva, piano inclinato, vite, cuneo, carrucola, ruota e assale."
+      "spiegazione": "I tre generi di leva: 1° genere (F — Fulcro — Fr): fulcro in mezzo, es. forbici, bilancia; 2° genere (F — Fr — Fulcro): carico in mezzo, es. carriola; 3° genere (Fulcro — Fm — Fr): forza in mezzo, es. pinzette, braccio umano. Il vantaggio meccanico della leva di 2° genere è sempre > 1.",
+      "riferimento_principale": "📖 ESPLORA — La leva"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Come si chiama il punto fisso attorno a cui ruota una leva?",
+      "domanda": "Qual è la formula del vantaggio meccanico di un piano inclinato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Braccio"
+          "testo": "VM = lunghezza_rampa / altezza",
+          "corretto": true,
+          "feedback": "Esatto! Il vantaggio meccanico di un piano inclinato è il rapporto tra la lunghezza della rampa e l'altezza da superare. Una rampa di 6 m che sale di 1 m ha VM = 6."
         },
         {
           "id": "b",
-          "testo": "Fulcro",
-          "corretto": true,
-          "feedback": "Esatto! Il fulcro è il punto di appoggio della leva."
+          "testo": "VM = altezza / lunghezza_rampa",
+          "feedback": "Non corretto. La formula è invertita. Il VM è lunghezza/altezza (non altezza/lunghezza). Una rampa più lunga ha un vantaggio meccanico maggiore.",
+          "riferimento": "📖 ESPLORA — Il piano inclinato"
         },
         {
           "id": "c",
-          "testo": "Resistenza"
+          "testo": "VM = forza × distanza",
+          "feedback": "Non corretto. Quella è la formula del lavoro meccanico (W = F × s). Il vantaggio meccanico del piano inclinato è lunghezza_rampa / altezza.",
+          "riferimento": "📖 ESPLORA — Il piano inclinato"
         },
         {
           "id": "d",
-          "testo": "Potenza",
-          "feedback": "Potenza e resistenza sono le forze che agiscono sulla leva, non il punto fisso."
+          "testo": "VM = massa × gravità",
+          "feedback": "Non corretto. Massa × gravità dà il peso di un oggetto (forza peso). Il vantaggio meccanico del piano inclinato è lunghezza_rampa / altezza.",
+          "riferimento": "📖 ESPLORA — Il piano inclinato"
         }
       ],
-      "spiegazione": "Con il fulcro nella posizione giusta, una piccola forza può sollevare un peso molto maggiore."
+      "spiegazione": "Il piano inclinato distribuisce il lavoro su una distanza maggiore per ridurre la forza in ogni istante. VM = lunghezza_rampa / altezza. Esempio: rampa per sedie a rotelle con altezza 1 m e lunghezza 6 m → VM = 6: si spinge con 6 volte meno forza, ma si percorre 6 volte più distanza.",
+      "riferimento_principale": "📖 ESPLORA — Il piano inclinato"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'rendimento' di una macchina semplice?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La percentuale del lavoro speso che si trasforma in lavoro utile",
+          "corretto": true,
+          "feedback": "Esatto! Il rendimento η = (W_utile / W_speso) × 100%. Non può mai essere 100% perché parte del lavoro viene dissipata come calore dall'attrito."
+        },
+        {
+          "id": "b",
+          "testo": "La velocità con cui la macchina compie il lavoro",
+          "feedback": "Non corretto. La velocità di compimento del lavoro è la potenza (P = W/t), non il rendimento.",
+          "riferimento": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+        },
+        {
+          "id": "c",
+          "testo": "Il peso massimo che la macchina riesce a spostare",
+          "feedback": "Non corretto. Il peso massimo spostabile non è il rendimento. Il rendimento indica quanta parte del lavoro in ingresso diventa lavoro utile.",
+          "riferimento": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+        },
+        {
+          "id": "d",
+          "testo": "Il numero di volte che la macchina può essere usata prima di rompersi",
+          "feedback": "Non corretto. La durata o affidabilità non è il rendimento. Il rendimento è la percentuale di lavoro in ingresso che diventa lavoro utile.",
+          "riferimento": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+        }
+      ],
+      "spiegazione": "Il rendimento η = (W_utile / W_speso) × 100%. Non può mai essere 100% per il secondo principio della termodinamica: in ogni trasformazione reale, parte dell'energia si disperde come calore per attrito. Una leva ben equilibrata supera il 95%, una vite in legno secco può avere il 20-40%.",
+      "riferimento_principale": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Una carriola ha il fulcro nella ruota, il carico nella vasca, e le mani spingono le stanghe. Di quale genere di leva si tratta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Secondo genere, perché il carico è tra il fulcro (ruota) e la forza (mani)",
+          "corretto": true,
+          "feedback": "Esatto! Nella carriola: fulcro = ruota, carico = vasca con il peso, forza = mani alle stanghe. La sequenza è Fulcro — Carico — Forza: leva di secondo genere, con VM sempre > 1."
+        },
+        {
+          "id": "b",
+          "testo": "Primo genere, perché il fulcro è al centro",
+          "feedback": "Non corretto. Nella carriola il fulcro (ruota) non è al centro tra forza e carico: il carico (vasca) è in posizione intermedia tra fulcro e forza.",
+          "riferimento": "📖 ESPLORA — La leva"
+        },
+        {
+          "id": "c",
+          "testo": "Terzo genere, perché la forza è in posizione intermedia",
+          "feedback": "Non corretto. Nella carriola non è la forza a essere in posizione intermedia, ma il carico (vasca). È quindi una leva di secondo genere.",
+          "riferimento": "📖 ESPLORA — La leva"
+        },
+        {
+          "id": "d",
+          "testo": "Non è una leva: la carriola è un piano inclinato",
+          "feedback": "Non corretto. La carriola è una leva di secondo genere. Il fulcro è la ruota, il carico è il peso nella vasca, la forza è applicata alle stanghe.",
+          "riferimento": "📖 ESPLORA — La leva"
+        }
+      ],
+      "spiegazione": "La carriola è una leva di secondo genere: il fulcro è la ruota anteriore, il carico è nella vasca, le mani spingono le stanghe. Sequenza: F — Fr — Fulcro → carico in mezzo → VM > 1. Permette di spostare sacchi da 50 kg con la sola forza delle braccia.",
+      "riferimento_principale": "📖 ESPLORA — La leva"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Qual è il vantaggio meccanico di una carrucola mobile (a differenza di quella fissa)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "VM = 2: la forza necessaria si dimezza perché il carico è sorretto da due tratti di corda",
+          "corretto": true,
+          "feedback": "Esatto! Nella carrucola mobile il carico è sorretto da due tratti di corda. La forza necessaria è la metà del carico: VM = 2. Ogni tratto di corda supporta metà del peso."
+        },
+        {
+          "id": "b",
+          "testo": "VM = 1: uguale alla carrucola fissa, ma cambia la direzione della forza",
+          "feedback": "Non corretto. VM = 1 è il vantaggio della carrucola FISSA, che cambia solo la direzione della forza. La carrucola mobile ha VM = 2.",
+          "riferimento": "📖 ESPLORA — La carrucola"
+        },
+        {
+          "id": "c",
+          "testo": "VM = 4: il carico è sorretto da quattro tratti di corda",
+          "feedback": "Non corretto. VM = 4 si ottiene con un sistema di due carrucole mobili (paranco). Una singola carrucola mobile ha VM = 2.",
+          "riferimento": "📖 ESPLORA — La carrucola"
+        },
+        {
+          "id": "d",
+          "testo": "VM = 0,5: la carrucola mobile riduce la forza ma aumenta la velocità",
+          "feedback": "Non corretto. VM = 0,5 significherebbe che si deve applicare una forza doppia del carico, il che è controintuitivo. La carrucola mobile ha VM = 2, dimezzando la forza.",
+          "riferimento": "📖 ESPLORA — La carrucola"
+        }
+      ],
+      "spiegazione": "Carrucola fissa: VM = 1, cambia solo la direzione della forza. Carrucola mobile: il carico è sorretto da 2 tratti di corda → VM = 2, la forza necessaria si dimezza. In un paranco con N tratti di corda che supportano il carico, VM = N.",
+      "riferimento_principale": "📖 ESPLORA — La carrucola"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Se il braccio della potenza è doppio del braccio della resistenza, cosa succede alla forza necessaria?",
+      "domanda": "Il testo spiega che le forbici sono due leve di primo genere. Perché è più difficile tagliare un cartone spesso con la punta delle forbici rispetto alla parte vicino al perno?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Rimane uguale"
+          "testo": "Perché con la punta il braccio del carico (distanza perno-materiale) è maggiore, riducendo il vantaggio meccanico",
+          "corretto": true,
+          "feedback": "Esatto! VM = distanza_forza-fulcro / distanza_carico-fulcro. Tagliando con la punta, la distanza tra il materiale e il perno aumenta molto rispetto alla distanza tra le dita e il perno, riducendo il VM."
         },
         {
           "id": "b",
-          "testo": "Si dimezza",
-          "corretto": true,
-          "feedback": "Esatto! Se il braccio è il doppio, serve metà della forza per sollevare lo stesso peso."
+          "testo": "Perché la punta delle forbici è più sottile e si incurva con i materiali spessi",
+          "feedback": "Non corretto. Il problema non è la deformazione meccanica della punta ma il vantaggio meccanico: con la punta il rapporto distanze è meno favorevole.",
+          "riferimento": "📖 ESPLORA — La leva"
         },
         {
           "id": "c",
-          "testo": "Raddoppia"
+          "testo": "Perché vicino al perno il materiale viene tagliato con un moto di compressione, non di taglio",
+          "feedback": "Non corretto. In entrambi i casi il taglio avviene per azione delle lame. Il vantaggio meccanico dipende dalla distanza relativa tra forza, fulcro e carico.",
+          "riferimento": "📖 ESPLORA — La leva"
         },
         {
           "id": "d",
-          "testo": "Diventa zero",
-          "feedback": "Non si elimina mai la forza necessaria, si riduce solo."
+          "testo": "Perché con la punta si usa solo una mano, mentre vicino al perno si usano entrambe le mani",
+          "feedback": "Non corretto. Il numero di mani usate non spiega la differenza. Il vantaggio meccanico dipende dalle distanze dal fulcro (perno).",
+          "riferimento": "📖 ESPLORA — La leva"
         }
       ],
-      "spiegazione": "Questo è il principio del vantaggio meccanico: più lungo il braccio della potenza, meno forza serve."
+      "spiegazione": "VM = distanza_forza-fulcro / distanza_carico-fulcro. Tagliando con la parte vicino al perno, il materiale è vicino al fulcro: VM alto. Tagliando con la punta, il materiale è lontano dal fulcro: VM basso. Stessa forza delle dita, risultati molto diversi perché cambia il rapporto delle distanze.",
+      "riferimento_principale": "📖 ESPLORA — La leva"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Perché le scale a chiocciola sono più facili da salire rispetto a una scala a pioli verticale?",
+      "domanda": "Una vite con circonferenza della testa di 3,14 cm e passo di 0,5 mm ha un vantaggio meccanico di circa 62,8. Cosa significa concretamente questo valore?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché sono più corte"
+          "testo": "Per ogni unità di forza applicata al cacciavite, la vite esercita una forza di penetrazione 62,8 volte maggiore sul materiale",
+          "corretto": true,
+          "feedback": "Esatto! VM = 62,8 significa che se applichi 1 N al cacciavite, la vite esercita circa 62,8 N di forza assiale sul legno. Ecco perché le viti tengono le cose insieme così efficacemente con piccole forze di avvitamento."
         },
         {
           "id": "b",
-          "testo": "Perché funzionano come un piano inclinato: forza minore su distanza maggiore",
-          "corretto": true,
-          "feedback": "Esatto! La scala a chiocciola è un piano inclinato avvolto: si percorre più strada ma con meno fatica."
+          "testo": "La vite avanza di 62,8 mm per ogni giro completo",
+          "feedback": "Non corretto. L'avanzamento per giro è il passo, non il VM. Il passo di questa vite è 0,5 mm per giro. Il VM = 62,8 riguarda il rapporto forza motrice/forza resistente.",
+          "riferimento": "📖 ESPLORA — Le varianti del piano inclinato: cuneo e vite"
         },
         {
           "id": "c",
-          "testo": "Perché hanno i gradini più larghi"
+          "testo": "La vite può essere avvitata 62,8 volte prima di cedere meccanicamente",
+          "feedback": "Non corretto. Il VM non indica la resistenza alla fatica della vite. Indica il rapporto tra la forza che applichi e la forza che la vite esercita sul materiale.",
+          "riferimento": "📖 ESPLORA — Le varianti del piano inclinato: cuneo e vite"
         },
         {
           "id": "d",
-          "testo": "Perché usano la carrucola",
-          "feedback": "Le scale a chiocciola non usano carrucole, ma il principio del piano inclinato."
+          "testo": "La vite ha 62,8 filetti visibili sulla sua lunghezza",
+          "feedback": "Non corretto. Il numero di filetti visibili non è il VM. Il VM = 62,8 indica che con poca forza si ottiene una grande forza di penetrazione.",
+          "riferimento": "📖 ESPLORA — Le varianti del piano inclinato: cuneo e vite"
         }
       ],
-      "spiegazione": "Il lavoro totale è lo stesso, ma la forza necessaria è distribuita su una distanza maggiore."
+      "spiegazione": "VM = circonferenza_testa / passo = 3,14 cm / 0,05 cm = 62,8. Significa che ogni newton di forza applicato al cacciavite produce 62,8 newton di forza assiale della vite nel materiale. Questo spiega perché le viti tengono così efficacemente: trasformano una piccola forza rotatoria in una grande forza di penetrazione.",
+      "riferimento_principale": "📖 ESPLORA — Le varianti del piano inclinato: cuneo e vite"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cosa si conserva sempre nelle macchine semplici ideali (senza attrito)?",
+      "domanda": "Il testo spiega che il braccio umano è una leva di terzo genere con VM < 1. Perché la natura ha 'scelto' questa configurazione svantaggiosa per la forza?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La forza applicata"
+          "testo": "Perché la leva di terzo genere amplifica la distanza e la velocità del movimento: con un piccolo movimento del bicipite la mano si sposta molto di più",
+          "corretto": true,
+          "feedback": "Esatto! La natura ha privilegiato la velocità e la precisione del movimento rispetto alla forza bruta. Con VM < 1 il braccio non amplifica la forza, ma un piccolo accorciamento del bicipite produce un grande spostamento della mano."
         },
         {
           "id": "b",
-          "testo": "La velocità"
+          "testo": "Perché il braccio umano non è una macchina semplice ma un sistema osseo-muscolare complesso",
+          "feedback": "Non corretto. Il testo usa esplicitamente il braccio umano come esempio di leva di terzo genere. La configurazione (bicipite vicino al gomito) è esattamente quella di una leva di terzo genere.",
+          "riferimento": "📖 ESPLORA — La leva"
         },
         {
           "id": "c",
-          "testo": "Il lavoro (forza × spostamento)",
-          "corretto": true,
-          "feedback": "Esatto! In una macchina ideale il lavoro in ingresso è uguale al lavoro in uscita."
+          "testo": "Perché con leva di terzo genere il peso dell'arto è distribuito uniformemente",
+          "feedback": "Non corretto. La distribuzione del peso non è la ragione della configurazione. Il vantaggio della leva di terzo genere è la velocità e l'ampiezza del movimento.",
+          "riferimento": "📖 ESPLORA — La leva"
         },
         {
           "id": "d",
-          "testo": "La potenza",
-          "feedback": "La potenza può variare; è il lavoro totale che si conserva."
+          "testo": "Perché la leva di terzo genere riduce l'usura delle articolazioni nel tempo",
+          "feedback": "Non corretto. Il testo non menziona l'usura delle articolazioni come ragione. Il vantaggio è la velocità e l'ampiezza del movimento della mano.",
+          "riferimento": "📖 ESPLORA — La leva"
         }
       ],
-      "spiegazione": "Questo è il principio di conservazione dell'energia: le macchine la trasformano, non la creano."
+      "spiegazione": "Il braccio umano è una leva di terzo genere: il bicipite si inserisce vicino al gomito (fulcro), lontano dalla mano che regge il peso. VM < 1: la forza non viene amplificata. Ma la natura ha privilegiato la velocità: un piccolo accorciamento del bicipite produce un grande spostamento della mano, permettendo movimenti veloci e precisi.",
+      "riferimento_principale": "📖 ESPLORA — La leva"
     },
     {
-      "livello": "A",
-      "domanda": "Un meccanico usa una chiave inglese con braccio da 30 cm per svitare un bullone. Se fosse necessario il doppio della coppia, quale braccio userebbe?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo afferma che la bicicletta è 'il mezzo di trasporto più efficiente energeticamente mai costruito dall'essere umano' con rendimento 85-95%. Come realizza questa efficienza?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "15 cm"
+          "testo": "Combinando più macchine semplici: ruota con asse, sistema pedali-catena-ingranaggi (ruote con asse), e freni a leva, con pochissimo attrito nelle trasmissioni",
+          "corretto": true,
+          "feedback": "Esatto! La bicicletta combina ruote con asse (ruota anteriore e posteriore), il sistema pedali-catena-ingranaggi (ruote con asse di diversi diametri), e freni a leva. L'efficienza del 85-95% deriva dalla combinazione ottimale di queste macchine semplici con attrito ridotto al minimo."
         },
         {
           "id": "b",
-          "testo": "30 cm"
+          "testo": "Perché usa i muscoli umani che sono più efficienti di qualsiasi motore meccanico",
+          "feedback": "Non corretto. I muscoli umani hanno un'efficienza del 25-35%. L'efficienza elevata della bicicletta deriva dalla combinazione ottimale di macchine semplici con attrito minimizzato.",
+          "riferimento": "📖 ESPLORA — Combinare le macchine semplici: le macchine composte"
         },
         {
           "id": "c",
-          "testo": "60 cm",
-          "corretto": true,
-          "feedback": "Esatto! Coppia = forza × braccio. Per raddoppiare la coppia con la stessa forza, si raddoppia il braccio."
+          "testo": "Perché non usa motori e quindi non disperde energia come calore di combustione",
+          "feedback": "Non corretto. L'assenza di motore a combustione è una condizione ma non la spiegazione dell'efficienza. Anche senza combustione ci sono perdite per attrito. L'efficienza elevata viene dall'ottimizzazione delle macchine semplici.",
+          "riferimento": "📖 ESPLORA — Combinare le macchine semplici: le macchine composte"
         },
         {
           "id": "d",
-          "testo": "90 cm",
-          "feedback": "90 cm triplicherebbe la coppia, non la raddoppierebbe."
+          "testo": "Perché le ruote della bicicletta usano energia potenziale gravitazionale invece di energia muscolare",
+          "feedback": "Non corretto. Le ruote della bicicletta non usano energia potenziale gravitazionale: convertono l'energia muscolare del ciclista in moto. L'efficienza deriva dall'ottimizzazione delle macchine semplici.",
+          "riferimento": "📖 ESPLORA — Combinare le macchine semplici: le macchine composte"
         }
       ],
-      "spiegazione": "Questo è il motivo per cui i meccanici usano chiavi sempre più lunghe per i bulloni più resistenti."
+      "spiegazione": "La bicicletta è una macchina composta che combina: ruota con asse (ruota), sistema pedali-catena-ingranaggi (ruote con asse di diametri variabili — il cambio), freni a leva. L'efficienza del 85-95% deriva dalla combinazione ottimale di queste macchine semplici con attrito ridotto al minimo. È il mezzo di trasporto più efficiente energeticamente mai costruito.",
+      "riferimento_principale": "📖 ESPLORA — Combinare le macchine semplici: le macchine composte"
     },
     {
-      "livello": "A",
-      "domanda": "Perché l'attrito nelle macchine reali è sempre maggiore di zero?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il caso studio delle piramidi di Giza usa rampe con pendenza del 7% e VM = 14. Che calcolo porta a questo valore di VM?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché le superfici dei materiali non sono mai perfettamente lisce a livello microscopico",
+          "testo": "VM = 1/pendenza = 1/0,07 ≈ 14: la rampa lunga 14 volte l'altezza da superare richiede 14 volte meno forza",
           "corretto": true,
-          "feedback": "Esatto! A livello molecolare anche le superfici 'lisce' hanno asperità che generano attrito."
+          "feedback": "Esatto! Il VM di un piano inclinato = lunghezza/altezza. Se la pendenza è 7% significa che per ogni metro di altezza la rampa è lunga 1/0,07 ≈ 14 metri. VM = 14 significa che serve 14 volte meno forza per spingere il blocco sulla rampa rispetto al sollevarlo verticalmente."
         },
         {
           "id": "b",
-          "testo": "Perché le macchine sono mal costruite"
+          "testo": "VM = 14 perché sono stati usati 14 operai per ogni blocco di pietra",
+          "feedback": "Non corretto. Il VM è una proprietà geometrica della rampa, non il numero di operai. VM = lunghezza_rampa / altezza = 1/0,07 ≈ 14.",
+          "riferimento": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
         },
         {
           "id": "c",
-          "testo": "Perché l'attrito è una forma di energia creata"
+          "testo": "VM = 14 perché i blocchi erano costruiti in 14 livelli sovrapposti",
+          "feedback": "Non corretto. La struttura dei blocchi non determina il VM della rampa. VM = lunghezza/altezza = 1/0,07 ≈ 14.",
+          "riferimento": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
         },
         {
           "id": "d",
-          "testo": "Perché dipende dalla temperatura ambientale",
-          "feedback": "La temperatura influenza l'attrito ma non ne è la causa principale."
+          "testo": "VM = 14 perché ogni blocco pesava 14 tonnellate e richiedeva 1 tonnellata di forza",
+          "feedback": "Non corretto. I blocchi pesavano in media 2,5 tonnellate, non 14. E il VM = 14 è una proprietà della rampa (rapporto lunghezza/altezza), non un confronto diretto con la massa.",
+          "riferimento": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
         }
       ],
-      "spiegazione": "L'attrito converte energia meccanica in calore: per questo i motori si scaldano durante il funzionamento."
+      "spiegazione": "VM di una rampa con pendenza 7% = lunghezza/altezza. Se la pendenza è 7% (0,07), per ogni metro di altezza la rampa è lunga 1/0,07 ≈ 14 metri → VM = 14. Un blocco da 25.000 N richiede solo 25.000/14 ≈ 1.800 N di forza di spinta: spostabile da 3-4 persone.",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'rendimento' di una macchina?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo avverte: 'Vantaggio meccanico maggiore non sempre significa macchina migliore'. Quale esempio nel testo dimostra che un VM < 1 può essere la scelta corretta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La velocità massima raggiungibile"
+          "testo": "Le pinzette chirurgiche: VM < 1 perché la chirurgia richiede movimenti precisi e piccoli, non grande forza",
+          "corretto": true,
+          "feedback": "Esatto! Le pinzette sono leve di terzo genere con VM < 1: non amplificano la forza ma amplificano la precisione del movimento. In chirurgia serve controllare spostamenti millimetrici, non forza bruta."
         },
         {
           "id": "b",
-          "testo": "Il rapporto tra lavoro utile prodotto e lavoro totale fornito",
-          "corretto": true,
-          "feedback": "Esatto! Rendimento = Lavoro utile / Lavoro totale. Per le macchine reali è sempre < 1 (< 100%)."
+          "testo": "Il cric dell'automobile: VM < 1 perché deve sollevare pesi enormi con poca forza",
+          "feedback": "Non corretto. Il cric ha un VM molto alto (> 1) per sollevare 1,5 tonnellate con la forza delle braccia. Non è un esempio di VM < 1.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "c",
-          "testo": "La forza massima applicabile"
+          "testo": "La carriola: VM < 1 perché il carico è pesante e la rampa è corta",
+          "feedback": "Non corretto. La carriola è una leva di secondo genere con VM > 1 (amplifica la forza). Non è un esempio di VM < 1.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "Il numero di componenti della macchina",
-          "feedback": "Il numero di componenti non determina il rendimento."
+          "testo": "Le forbici da cucina: VM < 1 perché i bracci sono più corti del lato di taglio",
+          "feedback": "Non corretto. Le forbici da cucina usate correttamente (vicino al perno) hanno VM > 1. E comunque non sono il principale esempio di VM < 1 citato nel testo.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         }
       ],
-      "spiegazione": "Un motore termico ha rendimento ~30-40%: il resto dell'energia si perde in calore, rumore, attrito."
+      "spiegazione": "Le pinzette sono leve di terzo genere: la forza è in posizione intermedia tra fulcro e carico → VM < 1. Non amplificano la forza ma amplificano la precisione del movimento: un piccolo spostamento delle dita produce un movimento ancora più piccolo e preciso delle punte. In chirurgia e lavorazioni di precisione, questo è esattamente quello che serve.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo afferma che il rendimento non può mai essere 100% per il secondo principio della termodinamica. Perché le macchine semplici (es. leva, carrucola) violano apparentemente la legge di conservazione dell'energia se hanno un rendimento < 100%?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Non la violano: l'energia non si perde ma si trasforma in calore per attrito, che è ancora energia — solo non più disponibile per fare lavoro meccanico",
+          "corretto": true,
+          "feedback": "Esatto! La legge di conservazione dell'energia non viene violata: l'energia che 'manca' si è trasformata in calore per attrito. Il calore è ancora energia, ma secondo il secondo principio della termodinamica non è più completamente convertibile in lavoro meccanico utile."
+        },
+        {
+          "id": "b",
+          "testo": "In realtà le macchine semplici violano la legge di conservazione dell'energia: per questo si chiamano 'semplici' invece di 'perfette'",
+          "feedback": "Non corretto. Le macchine semplici non violano la legge di conservazione dell'energia. L'energia 'mancante' si è trasformata in calore per attrito, che è ancora energia.",
+          "riferimento": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+        },
+        {
+          "id": "c",
+          "testo": "Le macchine semplici con rendimento < 100% distruggono una piccola parte dell'energia che ricevono",
+          "feedback": "Non corretto. L'energia non si distrugge mai (primo principio della termodinamica). Si trasforma: parte in lavoro utile, parte in calore per attrito.",
+          "riferimento": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+        },
+        {
+          "id": "d",
+          "testo": "Le macchine semplici con rendimento < 100% creano energia dal nulla per compensare le perdite",
+          "feedback": "Non corretto. Questo sarebbe una violazione del primo principio della termodinamica. Le macchine semplici non creano né distruggono energia: la trasformano.",
+          "riferimento": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+        }
+      ],
+      "spiegazione": "La legge di conservazione dell'energia (primo principio della termodinamica) non viene violata: l'energia si conserva sempre. Ma il secondo principio afferma che l'energia tende a degradarsi: parte del lavoro meccanico si converte in calore per attrito, e quel calore non è più completamente convertibile in lavoro meccanico. Il rendimento < 100% non è una violazione della conservazione: è la natura irreversibile delle trasformazioni energetiche reali.",
+      "riferimento_principale": "📖 ESPLORA — Il rendimento: perché non è mai 100%"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo spiega il 'vantaggio meccanico' come il rapporto Fresistente/Fmotrice. Se si triplica il VM di una leva, cosa succede necessariamente alla distanza che la forza deve percorrere?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La distanza percorsa dalla forza si triplica, perché il lavoro totale (F × d) si conserva",
+          "corretto": true,
+          "feedback": "Esatto! VM = Fresistente/Fmotrice = d_motrice/d_resistente. Se VM triplica (la forza si riduce a 1/3), la distanza percorsa dalla forza deve triplicare per conservare il lavoro: W = F_motrice × d_motrice = F_resistente × d_resistente. Il lavoro si conserva, mai amplifica."
+        },
+        {
+          "id": "b",
+          "testo": "La distanza percorsa dalla forza si riduce a un terzo, perché si fa meno sforzo",
+          "feedback": "Non corretto. Se la forza si riduce a 1/3, la distanza deve triplicare (non ridursi) per conservare il lavoro totale. VM × distanza_forza = costante.",
+          "riferimento": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
+        },
+        {
+          "id": "c",
+          "testo": "La distanza percorsa dalla forza rimane invariata, solo la forza cambia",
+          "feedback": "Non corretto. Il lavoro è F × d. Se F si riduce a 1/3 e il lavoro si conserva, la distanza deve triplicare.",
+          "riferimento": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
+        },
+        {
+          "id": "d",
+          "testo": "La distanza percorsa dalla forza diventa uguale alla distanza percorsa dal carico",
+          "feedback": "Non corretto. Se VM = 3, la distanza percorsa dalla forza è 3 volte quella del carico, non uguale.",
+          "riferimento": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
+        }
+      ],
+      "spiegazione": "Principio di conservazione del lavoro: F_motrice × d_motrice = F_resistente × d_resistente (senza attrito). Se VM = F_resistente/F_motrice = 3, allora F_motrice = F_resistente/3 e d_motrice = 3 × d_resistente. Triplicando il VM, la forza si riduce a 1/3 ma la distanza triplica. Il lavoro totale si conserva: le macchine semplici non creano energia, la trasformano.",
+      "riferimento_principale": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo calcola che un blocco da 2,5 tonnellate su una rampa al 7% richiede circa 1.800 N. Se il rendimento della rampa con attrito legno-sabbia è del 60%, quanta forza sarà effettivamente necessaria?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Circa 3.000 N: la forza reale è forza_teorica / rendimento = 1.800 / 0,60 = 3.000 N",
+          "corretto": true,
+          "feedback": "Esatto! Con attrito, la forza reale = forza_teorica / rendimento = 1.800 N / 0,60 = 3.000 N. Il rendimento del 60% significa che il 40% del lavoro viene dissipato per attrito, quindi servono più forza o più operai."
+        },
+        {
+          "id": "b",
+          "testo": "Circa 1.080 N: la forza reale è forza_teorica × rendimento = 1.800 × 0,60 = 1.080 N",
+          "feedback": "Non corretto. Moltiplicare per il rendimento darebbe una forza minore di quella teorica, il che è fisicamente impossibile: l'attrito aumenta la forza necessaria, non la diminuisce.",
+          "riferimento": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
+        },
+        {
+          "id": "c",
+          "testo": "Circa 1.800 N: l'attrito non cambia la forza necessaria, solo la velocità",
+          "feedback": "Non corretto. L'attrito aumenta la forza necessaria. La forza reale è forza_teorica / rendimento. Con rendimento 60%, servono 3.000 N invece di 1.800 N.",
+          "riferimento": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
+        },
+        {
+          "id": "d",
+          "testo": "Non è possibile calcolarlo senza conoscere il coefficiente di attrito esatto",
+          "feedback": "Non corretto. Il testo fornisce proprio il metodo per calcolare la forza reale dal rendimento: forza_reale = forza_teorica / rendimento. Con rendimento 60%: 1.800/0,60 = 3.000 N.",
+          "riferimento": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
+        }
+      ],
+      "spiegazione": "Con rendimento η = 60%, la forza reale = forza_teorica / η = 1.800 N / 0,60 = 3.000 N. Il rendimento inferiore a 100% significa che si deve applicare più forza del necessario teorico per compensare le perdite per attrito. Servirebbero circa 6 persone (da 500 N ciascuno) invece di 3-4.",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: come gli egizi spostarono blocchi da 2,5 tonnellate"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo descrive la 'ruota di calpestio' medievale: operai che camminavano all'interno di una grande ruota per azionarla. Come si integra nel sistema di macchine semplici?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È una ruota con asse: il peso degli operai che camminano converte l'energia potenziale gravitazionale in moto rotatorio, con VM = raggio_ruota / raggio_asse",
+          "corretto": true,
+          "feedback": "Esatto! La ruota di calpestio è una ruota con asse: gli operai all'interno creano un momento torcente camminando (peso × raggio della ruota). Questo momento si trasmette all'asse centrale con VM = raggio_ruota/raggio_asse, amplificando ulteriormente la forza disponibile."
+        },
+        {
+          "id": "b",
+          "testo": "È un piano inclinato: gli operai camminano su una superficie inclinata all'interno della ruota",
+          "feedback": "Non corretto. La superficie interna della ruota non è un piano inclinato. La ruota di calpestio funziona come una ruota con asse: converte il moto lineare del camminare in moto rotatorio.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto una macchina composta"
+        },
+        {
+          "id": "c",
+          "testo": "È una leva di primo genere: gli operai fanno da contrappeso a un lato della ruota",
+          "feedback": "Non corretto. La ruota di calpestio non funziona per contrappeso ma per il moto continuo degli operai che camminano all'interno, generando coppia motrice continua.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto una macchina composta"
+        },
+        {
+          "id": "d",
+          "testo": "È un cuneo: gli operai concentrano la loro forza in un punto per amplificarla",
+          "feedback": "Non corretto. Il cuneo funziona per deviazione di forze su superfici inclinate. La ruota di calpestio funziona come ruota con asse, convertendo il moto di camminata in rotazione con amplificazione della forza.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto una macchina composta"
+        }
+      ],
+      "spiegazione": "La ruota di calpestio è una ruota con asse: gli operai camminando all'interno della grande ruota creano un momento torcente continuo. VM = raggio_ruota / raggio_asse. Se la ruota ha raggio 2 m e l'asse 0,1 m → VM = 20. Con 4 operai da 800 N ciascuno che camminano nella ruota, la forza all'asse è 4 × 800 × 20 = 64.000 N. Molto più efficiente della trazione diretta.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Progetto una macchina composta"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo afferma: 'ogni robot che vedi in una fabbrica è una combinazione di macchine semplici che conosci già. Il motore è nuovo; il principio ha 2.500 anni.' Quale implicazione metodologica ha questa affermazione per l'apprendimento della tecnologia?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Che i principi fondamentali della meccanica sono invarianti: capire le macchine semplici permette di analizzare e progettare qualsiasi sistema meccanico, anche i più sofisticati",
+          "corretto": true,
+          "feedback": "Esatto! L'affermazione rivela che la comprensione dei principi fondamentali (macchine semplici) offre gli strumenti concettuali per analizzare qualsiasi sistema meccanico complesso. La complessità apparente dei robot si riduce a combinazioni di principi elementari comprensibili."
+        },
+        {
+          "id": "b",
+          "testo": "Che i robot moderni sono inutilmente complicati e andrebbero sostituiti con macchine semplici più efficienti",
+          "feedback": "Non corretto. Il testo non sostiene che i robot siano inutilmente complicati. Afferma che i loro principi fondamentali sono le macchine semplici, non che i robot stessi debbano essere sostituiti.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "c",
+          "testo": "Che l'ingegneria moderna non ha fatto progressi reali rispetto alla meccanica greca antica",
+          "feedback": "Non corretto. Il testo celebra la persistenza dei principi fondamentali, non la stagnazione dell'ingegneria. I motori, i materiali, i controlli sono completamente nuovi: i principi di base sono invarianti.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "d",
+          "testo": "Che gli ingegneri moderni dovrebbero studiare solo la storia antica della meccanica",
+          "feedback": "Non corretto. Il punto è la continuità tra principi fondamentali antichi e applicazioni moderne, non la superiorità della storia antica sulla tecnica moderna.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        }
+      ],
+      "spiegazione": "L'affermazione ha una profonda implicazione metodologica: i principi fondamentali della meccanica (le sei macchine semplici) sono invarianti nel tempo. Comprenderli profondamente permette di analizzare qualsiasi sistema meccanico complesso, dai robot agli aerei, riducendone la complessità apparente a combinazioni di principi elementari. È il potere della comprensione dei fondamentali.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo calcola che sollevare uno zaino da 5 kg richiede W = 50 N × 0,75 m = 37,5 J. Se si usa una leva con VM = 4 per lo stesso lavoro, in che modo cambiano le grandezze fisiche?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La forza si riduce a 12,5 N ma la distanza percorsa dalla forza aumenta a 3 m: il lavoro totale rimane 37,5 J (senza attrito)",
+          "corretto": true,
+          "feedback": "Esatto! Con VM = 4: F_motrice = 50/4 = 12,5 N. Per conservare il lavoro (W = F × d): 12,5 N × d = 37,5 J → d = 3 m. La leva non crea energia: riduce la forza di 4 volte aumentando la distanza di 4 volte. Il lavoro rimane 37,5 J."
+        },
+        {
+          "id": "b",
+          "testo": "La forza si riduce a 12,5 N e anche la distanza si riduce a 0,1875 m: si fa meno lavoro in totale",
+          "feedback": "Non corretto. Se sia la forza sia la distanza si riducessero, si farebbe meno lavoro, violando il principio di conservazione dell'energia. La forza si riduce di 4 volte ma la distanza aumenta di 4 volte.",
+          "riferimento": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
+        },
+        {
+          "id": "c",
+          "testo": "La forza rimane 50 N ma il lavoro si riduce da 37,5 J a 9,375 J grazie alla leva",
+          "feedback": "Non corretto. La leva non riduce il lavoro necessario: lo stesso lavoro deve essere compiuto per sollevare lo zaino. La leva riduce la forza aumentando la distanza.",
+          "riferimento": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
+        },
+        {
+          "id": "d",
+          "testo": "Con VM = 4, sia la forza sia il lavoro si riducono a un quarto: 12,5 N e 9,375 J",
+          "feedback": "Non corretto. Il lavoro non si riduce: si conserva. Con VM = 4 la forza diventa 12,5 N ma la distanza diventa 3 m, mantenendo il lavoro a 37,5 J (senza attrito).",
+          "riferimento": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
+        }
+      ],
+      "spiegazione": "Con VM = 4: F_motrice = F_resistente/VM = 50/4 = 12,5 N. Per conservare il lavoro: W = F_motrice × d_motrice = 12,5 × d = 37,5 J → d = 3 m. La leva non viola la conservazione dell'energia: riduce la forza (da 50 N a 12,5 N, ×4 meno) aumentando proporzionalmente la distanza (da 0,75 m a 3 m, ×4 più). Il lavoro totale rimane 37,5 J.",
+      "riferimento_principale": "📖 ESPLORA — Il vantaggio meccanico: fare più con meno forza"
     }
-  ],
-  "note": "Quiz generato per il sito ProfTecnologIA — validato CARBLE-CDD criterio D"
+  ]
 }

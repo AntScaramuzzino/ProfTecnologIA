@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIS-2-01",
-  "titolo": "Proiezioni ortogonali e sezioni",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Quante viste standard usa il metodo europeo di rappresentazione ortogonale?",
+      "domanda": "Cos'è la 'proiezione ortogonale' e perché si chiama 'ortogonale'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "2",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "È la rappresentazione prospettica di un oggetto, chiamata 'ortogonale' perché usa angoli retti nella composizione",
+          "corretto": false,
+          "feedback": "Non è corretto. La proiezione ortogonale è diversa dalla prospettiva. 'Ortogonale' indica che i raggi di proiezione sono perpendicolari al piano di proiezione — non che usa angoli retti nella composizione.",
+          "riferimento": "📖 ESPLORA — Cos'è una proiezione — e perché 'ortogonale'"
         },
         {
           "id": "b",
-          "testo": "3 (pianta, prospetto frontale, prospetto laterale)",
+          "testo": "Una proiezione in cui i raggi sono perpendicolari al piano di proiezione, come una torcia perfettamente frontale — ogni dimensione dell'oggetto è mantenuta esatta e misurabile",
           "corretto": true,
-          "feedback": "Esatto! Il metodo europeo (ISO 128-30) usa 3 viste principali disposte in modo preciso: pianta in alto, prospetto frontale in basso-sinistra, laterale in basso-destra."
+          "feedback": "Esatto! 'Ortogonale' = raggi di proiezione perpendicolari al piano. L'analogia della torcia: se è perfettamente di fronte, l'ombra mantiene le dimensioni esatte. Non c'è distorsione prospettica."
         },
         {
           "id": "c",
-          "testo": "5",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una proiezione che usa solo angoli di 90° per costruire l'immagine dell'oggetto",
+          "corretto": false,
+          "feedback": "Non è corretto. La proiezione ortogonale non si limita a usare angoli di 90° nella costruzione. L'aggettivo 'ortogonale' si riferisce alla perpendicolarità dei raggi di proiezione al piano.",
+          "riferimento": "📖 ESPLORA — Cos'è una proiezione — e perché 'ortogonale'"
         },
         {
           "id": "d",
-          "testo": "6",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una proiezione usata solo per oggetti con forme ortogonali (cubi, parallelepipedi) e non per forme curve",
+          "corretto": false,
+          "feedback": "Non è corretto. La proiezione ortogonale si applica a qualsiasi forma — inclusi cerchi, sfere e oggetti complessi. Non è limitata a forme rettangolari.",
+          "riferimento": "📖 ESPLORA — Cos'è una proiezione — e perché 'ortogonale'"
         }
       ],
-      "spiegazione": "Il metodo europeo (ISO 128-30) usa 3 viste principali disposte in modo preciso: pianta in alto, prospetto frontale in basso-sinistra, laterale in basso-destra."
+      "spiegazione": "La proiezione ortogonale proietta l'oggetto su un piano con raggi di proiezione perpendicolari al piano stesso. L'analogia della torcia: posta perfettamente di fronte, produce un'ombra che mantiene le dimensioni esatte dell'oggetto. Questo elimina la distorsione prospettica: ogni dimensione è misurabile direttamente sul disegno.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è una proiezione — e perché 'ortogonale'"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cosa rappresenta la 'pianta' di un oggetto?",
+      "domanda": "Nel metodo di Monge (metodo europeo), come si dispongono le tre viste fondamentali sul foglio?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La vista frontale dell'oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La vista frontale al centro, la vista laterale sopra, la vista dall'alto a destra — in triangolo",
+          "corretto": false,
+          "feedback": "Non è corretto. La disposizione standard è: vista frontale al centro-sinistra, vista laterale destra alla stessa altezza della frontale, vista dall'alto sotto la vista frontale.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
         },
         {
           "id": "b",
-          "testo": "La vista dall'alto: mostra larghezza e profondità dell'oggetto",
+          "testo": "Vista frontale al centro-sinistra, vista laterale destra sulla stessa linea orizzontale, vista dall'alto sotto la vista frontale — allineate tra loro",
           "corretto": true,
-          "feedback": "Esatto! La pianta è la proiezione sul piano orizzontale: mostra come l'oggetto si vede dall'alto, con larghezza e profondità."
+          "feedback": "Esatto! La regola fondamentale: le viste devono essere allineate tra loro. Vista laterale = stessa linea orizzontale della frontale. Vista dall'alto = stessa linea verticale della frontale."
         },
         {
           "id": "c",
-          "testo": "La vista laterale sinistra",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le tre viste si posizionano liberamente sul foglio in base all'estetica e allo spazio disponibile",
+          "corretto": false,
+          "feedback": "Non è corretto. La disposizione delle viste non è libera: è una convenzione internazionale precisa. L'allineamento non è decorativo — serve per leggere le corrispondenze tra le viste.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
         },
         {
           "id": "d",
-          "testo": "La sezione orizzontale a metà altezza",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tutte e tre le viste si sovrappongono nella stessa area del foglio, con linee di colori diversi per distinguerle",
+          "corretto": false,
+          "feedback": "Non è corretto. Le viste sono separate e non si sovrappongono. L'allineamento spaziale tra viste separate permette di leggere le corrispondenze.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
         }
       ],
-      "spiegazione": "La pianta è la proiezione sul piano orizzontale: mostra come l'oggetto si vede dall'alto, con larghezza e profondità."
+      "spiegazione": "Nel metodo di Monge (metodo europeo, metodo del primo diedro): la vista frontale è la vista principale (centro-sinistra). La vista laterale destra è sulla stessa linea orizzontale della frontale. La vista dall'alto è sulla stessa linea verticale della frontale, sotto di essa. L'allineamento non è estetico: permette di leggere le corrispondenze tra le viste.",
+      "riferimento_principale": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa indicano le linee tratteggiate in una proiezione ortogonale?",
+      "domanda": "Cosa rappresenta la 'linea tratteggiata' in una vista ortogonale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le dimensioni quotate dell'oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le dimensioni dell'oggetto (le quote)",
+          "corretto": false,
+          "feedback": "Non è corretto. Le quote si indicano con linee di quota (continue fini con frecce). La linea tratteggiata indica i bordi nascosti.",
+          "riferimento": "📖 ESPLORA — Le linee del disegno tecnico: un codice grafico preciso"
         },
         {
           "id": "b",
-          "testo": "Spigoli e superfici non visibili dalla vista corrente (nascosti dalla geometria dell'oggetto)",
+          "testo": "I bordi (spigoli e superfici) dell'oggetto che esistono ma non sono visibili dalla direzione di osservazione di quella vista",
           "corretto": true,
-          "feedback": "Esatto! Le linee tratteggiate completano la descrizione 3D dell'oggetto mostrando cosa c'è 'dall'altra parte', senza dover ruotare la vista."
+          "feedback": "Esatto! La linea tratteggiata indica i contorni nascosti: bordi che ci sono nell'oggetto ma non si vedono da quella direzione perché coperti da altre parti."
         },
         {
           "id": "c",
-          "testo": "Le assi di simmetria",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le linee di simmetria dell'oggetto nella vista",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli assi di simmetria si indicano con la linea mista (tratto-punto). La linea tratteggiata indica i contorni nascosti.",
+          "riferimento": "📖 ESPLORA — Le linee del disegno tecnico: un codice grafico preciso"
         },
         {
           "id": "d",
-          "testo": "Il materiale dell'oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I contorni dell'oggetto che non sono ancora definiti e devono essere completati",
+          "corretto": false,
+          "feedback": "Non è corretto. Un disegno tecnico finito non ha linee 'da completare'. La tratteggiata indica bordi nascosti — elementi reali dell'oggetto non visibili da quella direzione.",
+          "riferimento": "📖 ESPLORA — Le linee del disegno tecnico: un codice grafico preciso"
         }
       ],
-      "spiegazione": "Le linee tratteggiate completano la descrizione 3D dell'oggetto mostrando cosa c'è 'dall'altra parte', senza dover ruotare la vista."
+      "spiegazione": "La linea tratteggiata (0,35 mm, tratti di 3-5 mm con spazi di 2 mm) indica i contorni nascosti — bordi che esistono nell'oggetto ma non sono visibili dalla direzione di osservazione di quella vista perché coperti da altre parti. Esempio: disegnando una scatola dall'alto, il fondo si vede con linea tratteggiata.",
+      "riferimento_principale": "📖 ESPLORA — Le linee del disegno tecnico: un codice grafico preciso"
     },
     {
-      "livello": "I",
+      "id": 4,
+      "livello": "F",
       "domanda": "Cos'è una 'sezione' in un disegno tecnico e quando si usa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un ingrandimento di un dettaglio dell'oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una vista aggiuntiva che mostra l'oggetto da dietro, chiamata sezione perché 'taglia' l'angolo di visione",
+          "corretto": false,
+          "feedback": "Non è corretto. La vista posteriore è una delle 6 viste possibili, non una sezione. La sezione è un piano di taglio immaginario che mostra l'interno dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
         },
         {
           "id": "b",
-          "testo": "La rappresentazione dell'interno di un oggetto dopo un taglio ideale: si usa per mostrare cavità, spessori e geometrie interne altrimenti non visibili",
+          "testo": "Un piano di taglio immaginario che 'taglia' l'oggetto per mostrare l'interno senza smontarlo — usato quando le linee tratteggiate renderebbero il disegno illeggibile",
           "corretto": true,
-          "feedback": "Esatto! La sezione 'taglia' l'oggetto con un piano e mostra l'interno."
+          "feedback": "Esatto! La sezione è una convenzione grafica: si immagina di tagliare l'oggetto e si disegna quello che si vede nel taglio. Non è un vero taglio — è un modo per mostrare cavità, fori, passaggi interni."
         },
         {
           "id": "c",
-          "testo": "Una vista aggiuntiva dal basso",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La parte del cartiglio che descrive le specifiche del materiale dell'oggetto",
+          "corretto": false,
+          "feedback": "Non è corretto. Il cartiglio è la tabella informativa in basso a destra del foglio. La sezione è una vista speciale che mostra l'interno dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
         },
         {
           "id": "d",
-          "testo": "La rappresentazione del materiale con retinatura",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La divisione del foglio in sezioni numerate per organizzare più disegni dello stesso oggetto",
+          "corretto": false,
+          "feedback": "Non è corretto. 'Sezione' in disegno tecnico indica il taglio immaginario di un oggetto per rivelarne l'interno, non la suddivisione del foglio.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
         }
       ],
-      "spiegazione": "La sezione 'taglia' l'oggetto con un piano e mostra l'interno. Senza sezioni, un tubo, un motore o un edificio non sarebbero descrivibili completamente."
+      "spiegazione": "La sezione è una convenzione grafica: si immagina di tagliare l'oggetto con un piano immaginario e si disegna la vista risultante. Non è un vero taglio — l'oggetto non viene danneggiato. Si usa quando le cavità e i fori interni renderebbero le linee tratteggiate troppo numerose per essere leggibili. La parte tagliata viene riempita con un tratteggio a 45°.",
+      "riferimento_principale": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
     },
     {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Qual è la regola fondamentale per le viste di proiezione ortogonale che le distingue da un semplice disegno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le viste devono essere colorate con colori diversi per distinguerle",
+          "corretto": false,
+          "feedback": "Non è corretto. Il disegno tecnico tradizionale non usa colori per distinguere le viste. L'allineamento e le corrispondenze spaziali sono il criterio fondamentale.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
+        },
+        {
+          "id": "b",
+          "testo": "Le viste devono essere allineate tra loro: ogni dimensione deve comparire in almeno due viste e le corrispondenze orizzontali e verticali devono essere rispettate",
+          "corretto": true,
+          "feedback": "Esatto! Il testo spiega: 'se le tre viste sono corrette, ogni dimensione deve comparire in almeno due viste. Se trovi una linea in una sola vista senza corrispondenze nelle altre, c'è un errore nel disegno.'"
+        },
+        {
+          "id": "c",
+          "testo": "Le viste devono avere tutte la stessa dimensione sul foglio",
+          "corretto": false,
+          "feedback": "Non è corretto. Le viste possono avere dimensioni diverse (una vista può essere più larga, un'altra più alta). Il requisito è l'allineamento e la coerenza, non la stessa dimensione.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
+        },
+        {
+          "id": "d",
+          "testo": "Le viste devono essere sempre tre: né di meno né di più",
+          "corretto": false,
+          "feedback": "Non è corretto. In pratica si usano spesso le tre viste fondamentali, ma se l'oggetto lo richiede si possono usare fino a 6 viste. Può anche bastare una sola vista per oggetti semplici.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
+        }
+      ],
+      "spiegazione": "La regola fondamentale: le viste devono essere allineate tra loro e ogni dimensione deve comparire in almeno due viste. Vista frontale e laterale → stessa linea orizzontale (stessa quota). Vista frontale e dall'alto → stessa linea verticale (stessa larghezza). Se una linea appare in una sola vista senza corrispondenze nelle altre, c'è un errore.",
+      "riferimento_principale": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Il caso studio Apple (produzione iPhone) mostra perché il disegno tecnico è importante nell'industria globale. Qual è il punto fondamentale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Apple disegna in 2D e poi i fornitori convertono in 3D usando software propri",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non descrive questa procedura. Il punto è che le stesse norme internazionali (ISO) permettono di comunicare precisamente tra paesi diversi.",
+          "riferimento": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+        },
+        {
+          "id": "b",
+          "testo": "Le norme di disegno tecnico ISO permettono a un fornitore in Cina di produrre un pezzo che si assembla perfettamente con uno prodotto in Irlanda — senza che i due siti si parlino",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'senza la proiezione ortogonale, Apple non potrebbe far costruire pezzi in fabbrica in Cina che poi si montano perfettamente in un'altra fabbrica in Irlanda.'"
+        },
+        {
+          "id": "c",
+          "testo": "Apple usa il disegno tecnico solo per l'approvazione interna — i fornitori ricevono solo file CAD 3D",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo parla di 'tavola tecnica' con viste, sezioni e quote che vengono inviate ai fornitori. I disegni tecnici 2D rimangono fondamentali anche nell'era del CAD 3D.",
+          "riferimento": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+        },
+        {
+          "id": "d",
+          "testo": "Apple usa tolleranze di ±5 mm — abbastanza per permettere variazioni nella produzione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo cita tolleranze di ±0,01 mm (un centesimo di millimetro) per la custodia in alluminio dell'iPhone. Non ±5 mm.",
+          "riferimento": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+        }
+      ],
+      "spiegazione": "Il caso studio Apple mostra il potere del disegno tecnico come linguaggio universale: un ingegnere a Cupertino disegna con norme ISO, un fornitore in Taiwan produce con quelle specifiche, un altro in Irlanda assembla. Le tolleranze di ±0,01 mm sono possibili perché il linguaggio tecnico (norme UNI/ISO) è condiviso globalmente. 'Il linguaggio universale del disegno tecnico è letteralmente ciò che rende possibile la produzione industriale globale.'",
+      "riferimento_principale": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cosa si indica con la retinatura (tratteggio a 45°) in una sezione?",
+      "domanda": "Stai leggendo un disegno ortogonale di un oggetto. Nella vista frontale c'è uno spigolo a 30 mm dal bordo sinistro. Dove devi trovare la corrispondenza nella vista dall'alto?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le parti dell'oggetto che non si vedono",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "A 30 mm dall'alto nella vista laterale destra",
+          "corretto": false,
+          "feedback": "Non è corretto. La distanza di 30 mm dal bordo sinistro della vista frontale corrisponde all'asse orizzontale. La sua corrispondenza nella vista dall'alto è a 30 mm dal bordo sinistro (stessa posizione orizzontale).",
+          "riferimento": "📖 ESPLORA — Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D"
         },
         {
           "id": "b",
-          "testo": "Le zone di materiale solido tagliate dal piano di sezione: distingue il pieno dal vuoto",
+          "testo": "A 30 mm dal bordo sinistro nella vista dall'alto — perché la vista dall'alto è allineata verticalmente con la vista frontale e condivide le misure orizzontali (larghezza)",
           "corretto": true,
-          "feedback": "Esatto! La retinatura a 45° indica materiale solido."
+          "feedback": "Esatto! La strategia delle corrispondenze: la vista dall'alto è sotto la vista frontale, allineata verticalmente. Condividono la coordinata orizzontale (larghezza). Uno spigolo a 30 mm dalla sinistra nella frontale → a 30 mm dalla sinistra nella vista dall'alto."
         },
         {
           "id": "c",
-          "testo": "Le superfici di contatto tra due parti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non esiste una corrispondenza: ogni vista rappresenta l'oggetto in modo indipendente",
+          "corretto": false,
+          "feedback": "Non è corretto. Le corrispondenze tra le viste sono il cuore della lettura del disegno ortogonale. Se una caratteristica è reale, deve comparire in tutte le viste che la mostrano.",
+          "riferimento": "📖 ESPLORA — Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D"
         },
         {
           "id": "d",
-          "testo": "Le parti da realizzare con materiale speciale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "A 60 mm dall'alto della vista frontale — perché la scala delle viste laterali è sempre il doppio di quella delle viste frontali",
+          "corretto": false,
+          "feedback": "Non è corretto. Tutte le viste dello stesso disegno usano la stessa scala. Non c'è una regola che raddoppia le misure tra viste.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
         }
       ],
-      "spiegazione": "La retinatura a 45° indica materiale solido. Se due parti adiacenti hanno lo stesso materiale, si usa diversa inclinazione per distinguerle."
+      "spiegazione": "La strategia delle corrispondenze: la vista frontale e la vista dall'alto sono allineate verticalmente (una sopra l'altra). Condividono la coordinata orizzontale: la larghezza. Uno spigolo a 30 mm dal bordo sinistro della vista frontale corrisponde a una linea a 30 mm dal bordo sinistro della vista dall'alto. La vista laterale condivide invece la coordinata verticale (altezza) con la vista frontale.",
+      "riferimento_principale": "📖 ESPLORA — Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Perché si usa il 'metodo europeo' (ISO E) invece del 'metodo americano' (ISO A)?",
+      "domanda": "Perché la proiezione ortogonale è preferita per i disegni di costruzione, mentre la prospettiva è preferita per la comunicazione visiva?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il metodo europeo usa meno viste",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la proiezione ortogonale è più facile da disegnare; la prospettiva richiede più tempo",
+          "corretto": false,
+          "feedback": "Non è corretto. La difficoltà di esecuzione non è il criterio principale di scelta. La regola pratica del testo è: 'proiezione ortogonale per costruire, assonometria per spiegare, prospettiva per convincere.'",
+          "riferimento": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
         },
         {
           "id": "b",
-          "testo": "Sono due convenzioni di disposizione delle viste sul foglio: in Europa la pianta va sopra il prospetto; in America sotto. Entrambi producono le stesse viste",
+          "testo": "Perché la proiezione ortogonale mantiene le misure esatte e misurabile; la prospettiva distorce le misure per simulare la percezione visiva — chi deve costruire ha bisogno di misure, chi deve decidere ha bisogno di aspetto",
           "corretto": true,
-          "feedback": "Esatto! La differenza è solo di disposizione, non di contenuto."
+          "feedback": "Esatto! La regola pratica del testo: 'proiezione ortogonale per costruire, assonometria per spiegare, prospettiva per convincere.' Chi costruisce ha bisogno di misure precise; chi approva ha bisogno di capire come sarà l'oggetto."
         },
         {
           "id": "c",
-          "testo": "Il metodo europeo è più preciso",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la prospettiva non può essere usata su supporti cartacei; richiede strumenti digitali",
+          "corretto": false,
+          "feedback": "Non è corretto. La prospettiva si può disegnare perfettamente su carta. Il criterio di scelta è funzionale: misurabilità (ortogonale) vs percezione visiva intuitiva (prospettiva).",
+          "riferimento": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
         },
         {
           "id": "d",
-          "testo": "Il metodo americano è obsoleto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la proiezione ortogonale è più moderna: la prospettiva era usata solo nel Rinascimento",
+          "corretto": false,
+          "feedback": "Non è corretto. La prospettiva è ancora usata oggi in architettura e design. Non c'è una relazione di modernità tra i due sistemi.",
+          "riferimento": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
         }
       ],
-      "spiegazione": "La differenza è solo di disposizione, non di contenuto. Conoscere entrambi è fondamentale per leggere disegni internazionali."
+      "spiegazione": "I tre sistemi di rappresentazione hanno scopi diversi: proiezione ortogonale = misure esatte, per chi deve costruire; assonometria = visione tridimensionale con misure, per spiegare; prospettiva = visione come la vede l'occhio, per convincere chi deve approvare. 'La regola pratica: proiezione ortogonale per costruire, assonometria per spiegare, prospettiva per convincere.'",
+      "riferimento_principale": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è una 'sezione parziale' e quando è preferita alla sezione completa?",
+      "id": 9,
+      "livello": "I",
+      "domanda": "Il collegamento STEM dice che la proiezione ortogonale è matematicamente una funzione da ℝ³ a ℝ². Qual è la conseguenza pratica di questo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una sezione che taglia solo metà dell'oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Nessuna conseguenza pratica: la matematica descrive il processo ma non cambia il risultato del disegno",
+          "corretto": false,
+          "feedback": "Non è corretto. La conseguenza pratica è fondamentale: da una sola vista non puoi ricostruire l'oggetto 3D. Servono almeno due viste per recuperare le tre coordinate.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "b",
-          "testo": "Una sezione limitata a una zona specifica dell'oggetto, delineata da una linea a freehand: usata quando interessa mostrare solo un dettaglio interno senza tagliare l'intero pezzo",
+          "testo": "Da una sola vista non puoi risalire alla forma 3D dell'oggetto (la funzione non è invertibile): servono almeno due viste per recuperare tutte le informazioni spaziali",
           "corretto": true,
-          "feedback": "Esatto! La sezione parziale (o spaccato locale) è più informativa e risparmia spazio sul foglio quando si deve mostrare solo un foro, una tasca o una cavità specifica."
+          "feedback": "Esatto! Il testo dice: 'come ogni funzione, non è invertibile: da una sola vista non puoi risalire all'oggetto 3D. Hai bisogno di almeno due viste per recuperare tutte e tre le coordinate.'"
         },
         {
           "id": "c",
-          "testo": "Una sezione con piano inclinato a 45°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Puoi disegnare l'oggetto con tre dimensioni solo usando tre viste — non di più e non di meno",
+          "corretto": false,
+          "feedback": "Non è corretto. Possono bastare due viste (o persino una, per oggetti molto semplici). O possono servire più di tre viste per oggetti complessi. Non c'è un numero fisso richiesto.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "d",
-          "testo": "Una sezione senza retinatura",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ogni oggetto tridimensionale ha esattamente tre proiezioni ortogonali possibili — frontale, laterale, dall'alto — e non possono esisterne altre",
+          "corretto": false,
+          "feedback": "Non è corretto. Esistono 6 viste possibili (frontale, posteriore, laterale sinistra e destra, dall'alto, dal basso) e anche sezioni. Non sono limitate a tre.",
+          "riferimento": "📖 ESPLORA — Come si dispongono le viste sul foglio: la regola delle posizioni"
         }
       ],
-      "spiegazione": "La sezione parziale (o spaccato locale) è più informativa e risparmia spazio sul foglio quando si deve mostrare solo un foro, una tasca o una cavità specifica."
+      "spiegazione": "La proiezione ortogonale è matematicamente una funzione da ℝ³ (spazio 3D) a ℝ² (piano 2D): prende un punto (x,y,z) e produce un punto (x,z) o (x,y) eliminando una coordinata. Come ogni funzione non invertibile: dato solo il piano, non puoi risalire allo spazio 3D. Servono almeno due proiezioni (che eliminano coordinate diverse) per recuperare le tre coordinate originali.",
+      "riferimento_principale": "🔢 Collegamento STEM — Matematica"
     },
     {
-      "livello": "A",
-      "domanda": "Perché certi elementi non vengono sezionati anche se il piano di sezione li attraversa?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il tratteggio a 45° nella sezione serve a indicare la parte tagliata. Cosa succede quando la sezione attraversa due componenti diversi a contatto?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Per semplificare il disegno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Entrambi i componenti si tracciano con lo stesso tratteggio a 45° per indicare che sono in contatto",
+          "corretto": false,
+          "feedback": "Non è corretto. Se entrambi i componenti avessero lo stesso tratteggio sarebbe impossibile distinguerli. I tratteggi devono essere diversi.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
         },
         {
           "id": "b",
-          "testo": "Per convenzione ISO, elementi come bulloni, viti, perni, alberi e razze delle ruote non vengono retinati anche se il piano di sezione li taglia",
+          "testo": "I tratteggi dei due componenti devono avere inclinazioni diverse (es. 45° e 135°, o passo diverso) per distinguerli visivamente",
           "corretto": true,
-          "feedback": "Esatto! La convenzione esiste perché questi elementi sono meglio rappresentati in proiezione (vista esterna)."
+          "feedback": "Esatto! Il testo dice: 'se la sezione mostra parti di due componenti diversi in contatto, i tratteggi devono avere inclinazioni diverse (es. 45° e 135°, oppure passo diverso) per distinguerli visivamente.'"
         },
         {
           "id": "c",
-          "testo": "Perché sono fatti di un materiale diverso",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il componente interno non viene tratteggiato — solo il componente esterno riceve il tratteggio",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambi i componenti che vengono 'tagliati' dalla sezione ricevono un tratteggio. La differenza è nell'inclinazione o nel passo per distinguerli.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
         },
         {
           "id": "d",
-          "testo": "Perché sono troppo piccoli da retinare",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il disegno non può mostrare due componenti diversi nella stessa sezione — si deve fare una sezione separata per ognuno",
+          "corretto": false,
+          "feedback": "Non è corretto. La sezione può attraversare più componenti contemporaneamente. Si distinguono tramite tratteggi diversi.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
         }
       ],
-      "spiegazione": "La convenzione esiste perché questi elementi sono meglio rappresentati in proiezione (vista esterna). Retinateli e il disegno diventerebbe confuso."
+      "spiegazione": "Il tratteggio nella sezione (linee sottili parallele inclinate a 45°) indica il materiale 'tagliato'. Quando la sezione attraversa due componenti diversi in contatto (es. bullone dentro un foro), i tratteggi devono essere diversi per distinguerli: inclinazioni diverse (45° vs 135°) o passi diversi. Per convenzione, bulloni, chiodi e alberi non si sezionano mai.",
+      "riferimento_principale": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'sezione ribaltata' e perché è utile per profili complessi?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Gaspard Monge ha sistematizzato nel 1795 il metodo delle proiezioni ortogonali. Perché questo è considerato un contributo rivoluzionario?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una sezione ruotata di 90° nel disegno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché ha inventato il righello e il compasso come strumenti standard per il disegno tecnico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il righello e il compasso esistevano millenni prima di Monge. Il suo contributo era il sistema geometrico formale delle proiezioni ortogonali.",
+          "riferimento": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
         },
         {
           "id": "b",
-          "testo": "Una sezione che viene ruotata nel piano del disegno e sovrapposta o affiancata alla vista principale: permette di mostrare la forma del profilo trasversale senza vista aggiuntiva",
+          "testo": "Perché ha formalizzato un sistema completo e matematicamente rigoroso per rappresentare oggetti 3D su piani 2D — rendendo possibile la comunicazione tecnica standardizzata nell'industria moderna",
           "corretto": true,
-          "feedback": "Esatto! Per un profilo a T o a I è più efficiente ribaltare la sezione sul posto piuttosto che aggiungere una vista completa."
+          "feedback": "Esatto! Monge ha trasformato una pratica artistica/artigianale in un sistema matematico rigoroso. La geometria descrittiva di Monge è la base del disegno industriale moderno e ancora oggi del CAD."
         },
         {
           "id": "c",
-          "testo": "Una sezione che mostra l'oggetto da sotto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché ha introdotto il colore nel disegno tecnico per distinguere le diverse viste",
+          "corretto": false,
+          "feedback": "Non è corretto. Il disegno tecnico tradizionale non usa colori per le viste — usa diversi tipi di linee. L'introduzione dei colori è una caratteristica dei sistemi CAD moderni, non di Monge.",
+          "riferimento": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
         },
         {
           "id": "d",
-          "testo": "Una sezione speciale per oggetti cilindrici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché ha introdotto l'uso della prospettiva al posto delle viste multiple nel disegno industriale",
+          "corretto": false,
+          "feedback": "Non è corretto. Monge ha formalizzato le proiezioni ortogonali (viste multiple), non la prospettiva. Le proiezioni ortogonali eliminano la distorsione prospettica.",
+          "riferimento": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
         }
       ],
-      "spiegazione": "Per un profilo a T o a I è più efficiente ribaltare la sezione sul posto piuttosto che aggiungere una vista completa. Risparmia spazio e aiuta la lettura."
+      "spiegazione": "Gaspard Monge (1795) ha trasformato le proiezioni ortogonali da pratica empirica in sistema matematico rigoroso — la geometria descrittiva. Ha definito formalmente: i tre piani di proiezione (PO, PV, PL), le linee di terra, i triedri, e le regole precise per 'aprire' lo spazio 3D in un foglio 2D. Questo sistema è ancora la base del disegno industriale moderno e dei software CAD.",
+      "riferimento_principale": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché il connettore USB-C, apparentemente semplice, ha una tavola tecnica complessa con molte viste e sezioni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché USB-C è un brevetto Apple che richiede documentazione aggiuntiva per ragioni legali",
+          "corretto": false,
+          "feedback": "Non è corretto. USB-C è uno standard internazionale (IEC 62680-1-3), non un brevetto Apple. La complessità del disegno riflette la complessità tecnica del connettore.",
+          "riferimento": "🔍 OSSERVA — Il caso: leggere le tavole tecniche di un connettore USB-C"
+        },
+        {
+          "id": "b",
+          "testo": "Perché la sua forma semplice all'esterno nasconde una struttura interna complessa (spine, isolamenti, polarità) che richiede sezioni e viste multiple per essere comunicata univocamente a qualsiasi produttore del mondo",
+          "corretto": true,
+          "feedback": "Esatto! Il testo usa l'USB-C come esempio: sembra un semplice rettangolo arrotondato ma la tavola tecnica è 'un documento di diversi fogli con decine di viste, sezioni e quote' — perché l'interno è complesso."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i connettori hanno regolamentazioni europee che richiedono un numero minimo di viste nel disegno",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste una normativa che impone un numero minimo di viste per tipo di componente. Il numero di viste dipende dalla complessità dell'oggetto.",
+          "riferimento": "🔍 OSSERVA — Il caso: leggere le tavole tecniche di un connettore USB-C"
+        },
+        {
+          "id": "d",
+          "testo": "Perché è un componente prodotto in molti paesi diversi con regole diverse di disegno tecnico",
+          "corretto": false,
+          "feedback": "Non è corretto. Le norme ISO/IEC standardizzano il disegno tecnico a livello internazionale — è esattamente il contrario: c'è un unico standard per comunicare a qualsiasi produttore.",
+          "riferimento": "🔍 OSSERVA — Il caso: leggere le tavole tecniche di un connettore USB-C"
+        }
+      ],
+      "spiegazione": "L'USB-C sembra semplice dall'esterno (un piccolo rettangolo arrotondato) ma nasconde una struttura interna complessa: 24 spine di contatto, isolamenti, struttura meccanica reversibile, specifiche di tolleranza rigide. Per comunicare univocamente queste informazioni a qualsiasi produttore del mondo servono 'decine di viste, sezioni e quote' — la complessità del disegno riflette la complessità tecnica del componente.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: leggere le tavole tecniche di un connettore USB-C"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Stai leggendo un disegno con tre viste. Nella vista frontale c'è un rettangolo con un cerchio al centro. Nella vista laterale c'è un rettangolo senza il cerchio. Nella vista dall'alto c'è un rettangolo con due linee tratteggiate verticali. Cosa descrive questo oggetto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un rettangolo con un cerchio decorativo sulla faccia frontale",
+          "corretto": false,
+          "feedback": "Non è corretto. Le linee tratteggiate nella vista dall'alto indicano che il cerchio è un foro passante o una cavità — non un elemento decorativo di superficie.",
+          "riferimento": "📖 ESPLORA — Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D"
+        },
+        {
+          "id": "b",
+          "testo": "Un parallelepipedo con un foro cilindrico passante (da fronte a retro) — il cerchio nella vista frontale è il foro visto frontalmente; le linee tratteggiate nella vista dall'alto sono i bordi del foro visti dall'alto",
+          "corretto": true,
+          "feedback": "Esatto! La lettura delle tre viste: cerchio nella vista frontale = foro cilindrico; linee tratteggiate nella vista dall'alto = i bordi del foro (nascosti perché il foro è sotto la superficie superiore); assenza nella vista laterale = il foro non è visibile lateralmente."
+        },
+        {
+          "id": "c",
+          "testo": "Un oggetto con tre forme diverse su tre facce diverse: rettangolo davanti, rettangolo di lato, rettangolo sopra con due linee",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo descriverebbe tre forme indipendenti sulle facce, non un oggetto coerente. Le tre viste devono essere lette insieme per ricostruire l'oggetto 3D.",
+          "riferimento": "📖 ESPLORA — Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D"
+        },
+        {
+          "id": "d",
+          "testo": "È impossibile determinare l'oggetto con solo tre viste — servono sempre sei viste per definire univocamente un oggetto",
+          "corretto": false,
+          "feedback": "Non è corretto. Per molti oggetti tre viste sono sufficienti. La chiave è la coerenza tra le viste e l'analisi delle linee tratteggiate (bordi nascosti).",
+          "riferimento": "📖 ESPLORA — Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D"
+        }
+      ],
+      "spiegazione": "La lettura delle tre viste: (1) cerchio nella vista frontale = cilindro o foro cilindrico; (2) linee tratteggiate nella vista dall'alto = bordi del foro che si vedono dall'alto ma sono nascosti sotto la superficie; (3) assenza del cerchio nella vista laterale = il foro non è visibile da quel lato (è perpendicolare alla vista laterale). Conclusione: parallelepipedo con foro cilindrico passante front-to-back.",
+      "riferimento_principale": "📖 ESPLORA — Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il metodo di Monge prevede i tre piani di proiezione ortogonali (PO, PV, PL). Come si 'apre' il triedro per ottenere il disegno sul foglio piano?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I tre piani vengono tagliati e sovrapposti sullo stesso piano — le linee di sovrapposizione diventano le linee di terra",
+          "corretto": false,
+          "feedback": "Non è corretto. I piani non vengono sovrapposti ma 'aperti' come un libro — il piano orizzontale si abbassa e il piano laterale si apre verso destra, mantenendo le linee di terra come asse di rotazione.",
+          "riferimento": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
+        },
+        {
+          "id": "b",
+          "testo": "Il piano orizzontale si ribalta verso il basso (ruotando attorno alla linea di terra orizzontale) e il piano laterale si apre verso destra (ruotando attorno alla linea di terra verticale) — ottenendo il foglio piano con le viste allineate",
+          "corretto": true,
+          "feedback": "Esatto! Il testo descrive l'analogia della 'scatola aperta come una croce': si aprono i sei lati della scatola e si distendono su un foglio. Il movimento di apertura spiega perché le viste si trovano nelle posizioni specifiche sul foglio."
+        },
+        {
+          "id": "c",
+          "testo": "I tre piani vengono fotografati da sopra, di lato e di fronte — le fotografie producono le tre viste",
+          "corretto": false,
+          "feedback": "Non è corretto. La fotografia produce prospettiva, non proiezione ortogonale. L'apertura del triedro è un'operazione geometrica, non fotografica.",
+          "riferimento": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
+        },
+        {
+          "id": "d",
+          "testo": "I tre piani vengono illuminati con una sorgente luminosa infinitamente lontana e le ombre proiettate formano le tre viste",
+          "corretto": false,
+          "feedback": "Non è corretto (anche se l'analogia della torcia è usata nel testo per spiegare il concetto di proiezione). Il metodo formale è geometrico: rotazione dei piani di proiezione attorno alle linee di terra.",
+          "riferimento": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
+        }
+      ],
+      "spiegazione": "Il triedro (tre piani ortogonali che si intersecano) si 'apre' come una scatola: il piano orizzontale PO ruota verso il basso attorno alla linea di terra orizzontale (LT-h); il piano laterale PL ruota verso destra attorno alla linea di terra verticale (LT-v). Risultato: le tre viste si trovano sul foglio piano nelle posizioni standard — frontale al centro, laterale a destra, pianta sotto.",
+      "riferimento_principale": "📖 ESPLORA — Il metodo europeo di Monge: le tre viste fondamentali"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché alcuni elementi — come bulloni, chiodi e alberi — non vengono mai sezionati, anche se il piano di sezione li attraversa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché non è fisicamente possibile sezionare metalli con il piano di sezione grafico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il piano di sezione è immaginario — tecnicamente attraversa qualsiasi elemento. La ragione per non sezionare bulloni e alberi è convenzionale, non fisica.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        },
+        {
+          "id": "b",
+          "testo": "È una convenzione del disegno tecnico: sezionare bulloni e alberi non aggiunge informazioni (sono solidi uniformi) mentre rende più difficile riconoscerli nel disegno",
+          "corretto": true,
+          "feedback": "Esatto! Un bullone sezionato mostrerebbe solo un rettangolo con tratteggio — meno informativo della vista esterna che mostra il profilo, la testa e il filetto. La convenzione preserva la leggibilità."
+        },
+        {
+          "id": "c",
+          "testo": "Perché le norme ISO vietano la sezione di elementi cilindrici per ragioni di sicurezza industriale",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste un divieto ISO per ragioni di sicurezza. È una convenzione grafica che migliora la leggibilità del disegno.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        },
+        {
+          "id": "d",
+          "testo": "Perché solo gli elementi fatti di materiali compositi vengono sezionati; i metalli puri no",
+          "corretto": false,
+          "feedback": "Non è corretto. Il criterio non è il materiale, ma il tipo di elemento. Gli alberi e i bulloni non vengono sezionati per convenzione grafica indipendentemente dal materiale.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        }
+      ],
+      "spiegazione": "La convenzione di non sezionare bulloni, chiodi, alberi, razze di ruote è una scelta di leggibilità: questi elementi sono uniformi internamente — sezionarli mostrerebbe solo un rettangolo con tratteggio, perdendo il loro profilo caratteristico (testa del bullone, filettatura, sezione dell'albero) che invece è visibile nella vista esterna. La sezione aggiunge valore solo quando rivela qualcosa di non altrimenti visibile.",
+      "riferimento_principale": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "La 'semisezione' è usata per oggetti simmetrici. Qual è il vantaggio specifico rispetto alla sezione totale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Permette di risparmiare carta usando solo metà foglio per il disegno",
+          "corretto": false,
+          "feedback": "Non è corretto. Il risparmio di carta non è il vantaggio della semisezione. Il vantaggio è informativo: mostra contemporaneamente interno ed esterno dello stesso oggetto.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        },
+        {
+          "id": "b",
+          "testo": "Mostra contemporaneamente la forma esterna (metà in vista normale) e la forma interna (metà in sezione) — usando un solo disegno invece di due",
+          "corretto": true,
+          "feedback": "Esatto! Il testo spiega: 'usata su oggetti simmetrici. Si mostra metà dell'oggetto in vista esterna e metà in sezione, con l'asse di simmetria come linea di confine. Permette di comunicare contemporaneamente la forma esterna e quella interna.'"
+        },
+        {
+          "id": "c",
+          "testo": "È obbligatoria per tutti gli oggetti con asse di simmetria secondo le norme UNI",
+          "corretto": false,
+          "feedback": "Non è corretto. La semisezione non è obbligatoria — è una scelta del progettista quando l'oggetto è simmetrico e si vuole mostrare sia l'interno che l'esterno in un unico disegno.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        },
+        {
+          "id": "d",
+          "testo": "Permette di usare il tratteggio solo sulla metà più complessa dell'oggetto, risparmiando tempo di disegno",
+          "corretto": false,
+          "feedback": "Non è corretto. Il risparmio di tempo non è il vantaggio principale. Il vantaggio è che un singolo disegno comunica contemporaneamente la forma esterna e quella interna dell'oggetto simmetrico.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        }
+      ],
+      "spiegazione": "La semisezione è usata su oggetti simmetrici: si mostra metà in vista esterna e metà in sezione, con l'asse di simmetria come linea di confine. Vantaggio: un solo disegno comunica contemporaneamente la forma esterna (come appare dall'esterno) e la forma interna (cavità, fori, pareti). Su un oggetto con sezione totale si vedrebbe solo l'interno.",
+      "riferimento_principale": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Nel caso di design globale descritto (Apple con fornitori in Cina, Irlanda, Taiwan), quale proprietà matematica delle proiezioni ortogonali è fondamentale per garantire la compatibilità tra i componenti?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La simmetria: tutti i componenti Apple sono simmetrici e quindi facilmente adattabili",
+          "corretto": false,
+          "feedback": "Non è corretto. Non tutti i componenti Apple sono simmetrici (es. la custodia con il rientro del connettore audio). La proprietà fondamentale è la conservazione delle misure, non la simmetria.",
+          "riferimento": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+        },
+        {
+          "id": "b",
+          "testo": "La conservazione delle misure reali: nelle proiezioni ortogonali ogni dimensione è esatta e misurabile — nessuna distorsione prospettica significa che la tolleranza di ±0,01 mm è comunicabile e verificabile univocamente",
+          "corretto": true,
+          "feedback": "Esatto! È questa la proprietà fondamentale: le proiezioni ortogonali non distorcono le misure. Una quota di 120,00 mm ±0,01 mm è la stessa per il progettista a Cupertino e per l'operaio in Taiwan."
+        },
+        {
+          "id": "c",
+          "testo": "L'universalità visiva: le proiezioni ortogonali sembrano uguali a qualsiasi persona nel mondo indipendentemente dalla cultura",
+          "corretto": false,
+          "feedback": "Non è corretto. Le proiezioni ortogonali non sono 'naturalmente' comprensibili — richiedono apprendimento delle convenzioni. La loro universalità è convenzionale (norme ISO), non visiva.",
+          "riferimento": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+        },
+        {
+          "id": "d",
+          "testo": "La semplicità: le proiezioni ortogonali sono più semplici della prospettiva e quindi più facili da leggere per i lavoratori in fabbrica",
+          "corretto": false,
+          "feedback": "Non è corretto. Le proiezioni ortogonali non sono 'più semplici' da leggere senza formazione — richiedono apprendimento. La proprietà fondamentale è la precisione delle misure, non la semplicità visiva.",
+          "riferimento": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+        }
+      ],
+      "spiegazione": "La proprietà fondamentale delle proiezioni ortogonali per la produzione globale è la conservazione esatta delle misure: nessuna distorsione prospettica significa che una quota di 120,00 mm ±0,01 mm nel disegno corrisponde esattamente a quella dimensione nella realtà. Questa proprietà — che la prospettiva non ha — rende possibile comunicare specifiche di tolleranza rigide tra continenti diversi.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio — Come Apple comunica ai fornitori"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Per la sezione 'a strappo' (o parziale), il confine tra parte sezionata e non sezionata si traccia con una 'linea a mano libera irregolare'. Perché non si usa una linea retta con gli strumenti?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le norme UNI vietano le linee rette per i confini di sezione parziale",
+          "corretto": false,
+          "feedback": "Non è corretto. Le norme UNI definiscono i tipi di linee da usare. La ragione della linea irregolare è semantica: distinguerla chiaramente dagli spigoli reali dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        },
+        {
+          "id": "b",
+          "testo": "Perché una linea irregolare (non-geometrica) segnala visivamente che si tratta di un confine convenzionale del disegno — non di uno spigolo reale dell'oggetto — evitando ambiguità nella lettura",
+          "corretto": true,
+          "feedback": "Esatto! Una linea retta potrebbe essere confusa con uno spigolo reale dell'oggetto. La linea a mano libera irregolare è un segnale visivo inequivocabile: 'questo è un confine del disegno, non un bordo dell'oggetto reale.'"
+        },
+        {
+          "id": "c",
+          "testo": "Perché è più veloce tracciare una linea a mano libera che usare gli strumenti — risparmia tempo nella produzione del disegno",
+          "corretto": false,
+          "feedback": "Non è corretto. Il risparmio di tempo non è la ragione. La ragione è semantica: distinguere visivamente il confine convenzionale dagli spigoli reali dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        },
+        {
+          "id": "d",
+          "testo": "Perché le norme richiedono che il confine sia sempre nella posizione in cui l'oggetto sarebbe più debole strutturalmente",
+          "corretto": false,
+          "feedback": "Non è corretto. Il posizionamento del confine della sezione parziale è scelto dal progettista per mostrare le informazioni necessarie, non per criteri strutturali.",
+          "riferimento": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
+        }
+      ],
+      "spiegazione": "La linea a mano libera irregolare nel confine di sezione parziale è una scelta semantica deliberata: segnala visivamente che si tratta di un confine convenzionale del disegno (non esiste fisicamente nell'oggetto), distinguendolo da tutti gli spigoli reali che vengono sempre tracciati con strumenti geometrici. È una convenzione di leggibilità: il lettore riconosce immediatamente 'questo non è uno spigolo dell'oggetto.'",
+      "riferimento_principale": "📖 ESPLORA — Le sezioni: vedere l'interno senza smontare"
     }
   ]
 }

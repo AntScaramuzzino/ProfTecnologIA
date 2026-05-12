@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-DIS-3-01",
-  "titolo": "Assonometria, prospettiva e progettazione",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è un 'punto di fuga' in una prospettiva?",
+      "domanda": "Nella prospettiva centrale, tutte le rette parallele alla direzione di vista convergono verso un unico punto sulla linea d'orizzonte. Come si chiama questo punto?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il punto dove termina il disegno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Punto di fuga",
+          "corretto": true,
+          "feedback": "Esatto! Il punto di fuga è il punto sulla linea d'orizzonte verso cui convergono le rette nella prospettiva centrale."
         },
         {
           "id": "b",
-          "testo": "Il punto in cui le linee parallele dell'oggetto sembrano convergere sull'orizzonte nella rappresentazione prospettica",
-          "corretto": true,
-          "feedback": "Esatto! In realtà le linee parallele non convergono, ma la nostra percezione visiva le percepisce così."
+          "testo": "Fulcro visivo",
+          "feedback": "Non corretto. Il fulcro è un termine della meccanica. Il punto corretto si chiama punto di fuga.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
         },
         {
           "id": "c",
-          "testo": "Il centro di un cerchio in prospettiva",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Centro ottico",
+          "feedback": "Non corretto. Il centro ottico è un termine dell'ottica. In prospettiva si parla di punto di fuga.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
         },
         {
           "id": "d",
-          "testo": "Il punto più lontano dell'oggetto dal disegnatore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Punto di convergenza zenitale",
+          "feedback": "Non corretto. Non esiste questo termine nella prospettiva tecnica. Il termine corretto è punto di fuga.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
         }
       ],
-      "spiegazione": "In realtà le linee parallele non convergono, ma la nostra percezione visiva le percepisce così. I binari del treno 'convergono' all'orizzonte."
+      "spiegazione": "Nella prospettiva centrale (a un punto di fuga), le rette parallele alla direzione di vista convergono verso il punto di fuga sulla linea d'orizzonte. Le rette parallele al piano del quadro rimangono orizzontali o verticali.",
+      "riferimento_principale": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è la 'prospettiva accidentale' o a due punti di fuga?",
+      "domanda": "In quale anno Walter Gropius fondò il Bauhaus, la scuola che unì arte e tecnica nella progettazione industriale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una prospettiva con errori di disegno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "1919",
+          "corretto": true,
+          "feedback": "Esatto! Gropius fondò il Bauhaus a Weimar nel 1919, segnando la nascita formale del design industriale moderno."
         },
         {
           "id": "b",
-          "testo": "Una prospettiva in cui l'oggetto è ruotato rispetto all'osservatore: due set di linee convergono verso due punti di fuga distinti sull'orizzonte",
-          "corretto": true,
-          "feedback": "Esatto! La prospettiva a 2 punti di fuga è la più usata in architettura: mostra l'angolo di un edificio con due facciate visibili, ciascuna con il proprio punto di fuga."
+          "testo": "1870",
+          "feedback": "Non corretto. Nel 1870 non fu fondato il Bauhaus. La data corretta è il 1919.",
+          "riferimento": "📖 ESPLORA — Dal disegno tecnico al design: una storia di scelte"
         },
         {
           "id": "c",
-          "testo": "La prospettiva vista dall'alto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "1945",
+          "feedback": "Non corretto. Il 1945 è successivo alla chiusura del Bauhaus. La fondazione avvenne nel 1919.",
+          "riferimento": "📖 ESPLORA — Dal disegno tecnico al design: una storia di scelte"
         },
         {
           "id": "d",
-          "testo": "Una prospettiva usata solo per interni",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "1982",
+          "feedback": "Non corretto. Il 1982 è l'anno del lancio di AutoCAD, non della fondazione del Bauhaus.",
+          "riferimento": "📖 ESPLORA — Dal disegno tecnico al design: una storia di scelte"
         }
       ],
-      "spiegazione": "La prospettiva a 2 punti di fuga è la più usata in architettura: mostra l'angolo di un edificio con due facciate visibili, ciascuna con il proprio punto di fuga."
+      "spiegazione": "Il Bauhaus fu fondato da Walter Gropius nel 1919 a Weimar con una tesi radicale: arte e tecnica non sono opposti. Un oggetto bello e un oggetto funzionale possono e devono essere la stessa cosa.",
+      "riferimento_principale": "📖 ESPLORA — Dal disegno tecnico al design: una storia di scelte"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è uno 'schizzo progettuale' e a cosa serve?",
+      "domanda": "Nell'assonometria le misure reali vengono conservate. Nella prospettiva invece cosa succede alle misure?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un disegno tecnico molto semplificato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Vengono deformate intenzionalmente per simulare la percezione visiva",
+          "corretto": true,
+          "feedback": "Esatto! La prospettiva non conserva le misure ma le deforma per riprodurre come gli oggetti appaiono all'occhio umano."
         },
         {
           "id": "b",
-          "testo": "Un disegno rapido e approssimativo usato nelle fasi iniziali di progettazione per esplorare idee e comunicare concetti",
-          "corretto": true,
-          "feedback": "Esatto! Lo schizzo è il pensiero visivo: veloce, schematico, esplorativo."
+          "testo": "Vengono conservate esattamente come nell'assonometria",
+          "feedback": "Non corretto. A differenza dell'assonometria, nella prospettiva le misure vengono deformate, non conservate.",
+          "riferimento": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
         },
         {
           "id": "c",
-          "testo": "Un disegno finale per la produzione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Vengono raddoppiate per renderle più visibili",
+          "feedback": "Non corretto. Le misure non vengono raddoppiate ma deformate in modo prospettico.",
+          "riferimento": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
         },
         {
           "id": "d",
-          "testo": "Un disegno di riferimento per le quote",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Vengono eliminate dal disegno",
+          "feedback": "Non corretto. Le misure non vengono eliminate ma deformate per simulare la percezione umana.",
+          "riferimento": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
         }
       ],
-      "spiegazione": "Lo schizzo è il pensiero visivo: veloce, schematico, esplorativo. Prima di aprire il CAD, lo schizzo permette di valutare molte idee in poco tempo."
+      "spiegazione": "Differenza chiave: nell'assonometria le misure sono conservate (o ridotte con fattore costante), nella prospettiva vengono deformate intenzionalmente per simulare la percezione visiva. Per questo l'assonometria è lo strumento del tecnico, la prospettiva del designer.",
+      "riferimento_principale": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "La disciplina che studia come adattare oggetti e ambienti alle caratteristiche fisiche e cognitive degli esseri umani si chiama:",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ergonomia",
+          "corretto": true,
+          "feedback": "Esatto! L'ergonomia è la disciplina che adatta oggetti, strumenti e ambienti alle caratteristiche fisiche e cognitive umane."
+        },
+        {
+          "id": "b",
+          "testo": "Biomeccanica",
+          "feedback": "Non corretto. La biomeccanica studia il movimento del corpo, non l'adattamento degli oggetti alle persone.",
+          "riferimento": "📖 ESPLORA — Ergonomia: quando la forma segue il corpo"
+        },
+        {
+          "id": "c",
+          "testo": "Cenestesia",
+          "feedback": "Non corretto. La cenestesia riguarda la percezione corporea interna. La disciplina descritta è l'ergonomia.",
+          "riferimento": "📖 ESPLORA — Ergonomia: quando la forma segue il corpo"
+        },
+        {
+          "id": "d",
+          "testo": "Morfologia del prodotto",
+          "feedback": "Non corretto. La morfologia studia la forma degli oggetti, non il loro adattamento alle persone. Il termine corretto è ergonomia.",
+          "riferimento": "📖 ESPLORA — Ergonomia: quando la forma segue il corpo"
+        }
+      ],
+      "spiegazione": "L'ergonomia nasce come disciplina durante la Seconda guerra mondiale per migliorare le interfacce di cockpit. Il suo principio fondamentale è il design centrato sull'utente (UCD): l'oggetto si adatta alle persone, non le persone all'oggetto.",
+      "riferimento_principale": "📖 ESPLORA — Ergonomia: quando la forma segue il corpo"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Nella prospettiva accidentale (a due punti di fuga), quali elementi dell'oggetto rimangono verticali nel disegno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Solo le rette verticali dell'oggetto",
+          "corretto": true,
+          "feedback": "Esatto! In prospettiva accidentale le rette orizzontali convergono verso PF1 o PF2, ma le rette verticali degli oggetti rimangono verticali."
+        },
+        {
+          "id": "b",
+          "testo": "Tutte le rette parallele alla linea d'orizzonte",
+          "feedback": "Non corretto. Le rette orizzontali convergono verso i punti di fuga. Solo le verticali rimangono verticali.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
+        },
+        {
+          "id": "c",
+          "testo": "Le rette che formano angoli di 45° rispetto al piano",
+          "feedback": "Non corretto. Non sono le rette a 45° a rimanere verticali. In prospettiva accidentale rimangono verticali solo le rette verticali dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
+        },
+        {
+          "id": "d",
+          "testo": "Nessuna retta rimane verticale",
+          "feedback": "Non corretto. Gli spigoli verticali degli oggetti rimangono verticali anche in prospettiva accidentale.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
+        }
+      ],
+      "spiegazione": "In prospettiva accidentale (2 punti di fuga): le rette orizzontali verso destra convergono verso PF1, quelle verso sinistra verso PF2. Solo le rette verticali degli oggetti rimangono verticali nel disegno.",
+      "riferimento_principale": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Nel processo progettuale del designer, qual è il primo passo dopo aver ricevuto il brief?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La ricerca: osservare chi userà l'oggetto e in quale contesto",
+          "corretto": true,
+          "feedback": "Esatto! Prima di disegnare, il designer osserva, intervista, studia l'utente. La ricerca include osservazione, interviste, analisi dei prodotti esistenti."
+        },
+        {
+          "id": "b",
+          "testo": "Il render: produrre subito una rappresentazione visiva del prodotto finale",
+          "feedback": "Non corretto. Il render arriva dopo il concept, non subito dopo il brief. Il primo passo è la ricerca sull'utente.",
+          "riferimento": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+        },
+        {
+          "id": "c",
+          "testo": "La prototipazione: costruire un modello fisico dell'oggetto",
+          "feedback": "Non corretto. Il prototipo si costruisce dopo il concept e il render, non subito dopo il brief.",
+          "riferimento": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+        },
+        {
+          "id": "d",
+          "testo": "Lo sketching: disegnare subito più idee possibili",
+          "feedback": "Non corretto. Lo sketching (concept) viene dopo la ricerca. Prima si capisce il problema, poi si generano le idee.",
+          "riferimento": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+        }
+      ],
+      "spiegazione": "Il processo progettuale segue: Brief → Ricerca → Concept → Sketch definito → Render → Prototipo → Test → Iterazione. La ricerca viene prima del disegno: si capisce chi userà l'oggetto, in quale contesto, e quali problemi ha l'utente.",
+      "riferimento_principale": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Come si costruisce geometricamente la prospettiva a un punto di fuga?",
+      "domanda": "La sedia Serie 7 di Jacobsen (1955) ha una scocca a doppia curvatura nel compensato. Perché questa forma è stata scelta invece di una scocca piatta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Si disegnano tutti i lati dell'oggetto in scala reale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La doppia curvatura distribuisce il carico su tutta la superficie, è più resistente e si adatta alla curva della schiena",
+          "corretto": true,
+          "feedback": "Esatto! La doppia curvatura non è decorativa: distribuisce il carico strutturalmente, è più resistente di una scocca piatta, e segue le curve naturali del corpo."
         },
         {
           "id": "b",
-          "testo": "Si disegna la faccia frontale in forma vera, si identifica il punto di fuga sul piano dell'orizzonte, si collegano tutti i vertici al PF per le profondità",
-          "corretto": true,
-          "feedback": "Esatto! La prospettiva a 1 PF è usata per corridoi, interni di stanze, tunnel: una faccia frontale vera + profondità che convergono in un unico punto."
+          "testo": "Perché la doppia curvatura è più economica da produrre rispetto alla forma piatta",
+          "feedback": "Non corretto. La curvatura doppia richiede tecniche specifiche di pressione e calore. L'obiettivo era la funzione strutturale ed ergonomica, non il risparmio.",
+          "riferimento": "🔍 OSSERVA — Il caso: come nasce la forma di una sedia"
         },
         {
           "id": "c",
-          "testo": "Si usa la griglia isometrica con angoli a 30°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché le norme di sicurezza degli anni '50 richiedevano superfici curve nelle sedie",
+          "feedback": "Non corretto. Non esistono tali norme. La scelta era funzionale: resistenza strutturale e adattamento al corpo.",
+          "riferimento": "🔍 OSSERVA — Il caso: come nasce la forma di una sedia"
         },
         {
           "id": "d",
-          "testo": "Si misura direttamente la profondità percepita",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il compensato piatto non esisteva come materiale all'epoca",
+          "feedback": "Non corretto. Il compensato piatto esisteva già. La scelta della doppia curvatura fu deliberata per ragioni strutturali ed ergonomiche.",
+          "riferimento": "🔍 OSSERVA — Il caso: come nasce la forma di una sedia"
         }
       ],
-      "spiegazione": "La prospettiva a 1 PF è usata per corridoi, interni di stanze, tunnel: una faccia frontale vera + profondità che convergono in un unico punto."
+      "spiegazione": "Jacobsen partì da un vincolo materiale: il compensato può essere curvato in doppia curvatura con pressione e calore. Questa forma distribuisce il carico su tutta la superficie (più resistente del piano), si adatta alla curva della schiena, ed è prodotta da una tecnologia specifica. Ogni curva ha una ragione tecnica.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: come nasce la forma di una sedia"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è il 'piano del quadro' in una prospettiva?",
+      "domanda": "Nel design thinking, la fase di 'empatia' precede tutte le altre. Il testo dice che il modo più comune per sbagliare è 'progettare qualcosa che tu trovi utile senza verificare se lo trovano utile anche gli altri'. Cosa questo implica sul processo di design?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il foglio su cui si disegna",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Che senza comprendere l'utente reale si rischia di creare soluzioni che non risolvono problemi veri",
+          "corretto": true,
+          "feedback": "Esatto! L'empatia previene il rischio principale del design: proiettare i propri bisogni sugli utenti invece di comprendere i bisogni reali di chi userà il prodotto."
         },
         {
           "id": "b",
-          "testo": "Il piano immaginario tra l'osservatore e l'oggetto su cui si proiettano le immagini: come lo schermo di una camera oscura",
-          "corretto": true,
-          "feedback": "Esatto! Il piano del quadro è il 'sensore fotografico' della prospettiva: la distanza dall'oggetto determina la grandezza dell'immagine, come una fotocamera."
+          "testo": "Che senza empatia non si possono costruire prototipi fisici",
+          "feedback": "Non corretto. I prototipi si costruiscono nella fase di prototipazione. L'empatia serve a capire il problema reale, non a costruire prototipi.",
+          "riferimento": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
         },
         {
           "id": "c",
-          "testo": "Il piano su cui è posato l'oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Che l'empatia garantisce automaticamente che il prodotto sia esteticamente bello",
+          "feedback": "Non corretto. L'empatia non riguarda l'estetica ma la comprensione dei bisogni reali dell'utente.",
+          "riferimento": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
         },
         {
           "id": "d",
-          "testo": "Il piano che divide l'oggetto in due metà",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Che ogni designer deve intervistare almeno 100 utenti prima di iniziare a disegnare",
+          "feedback": "Non corretto. Non esiste una soglia numerica prescritta. L'importante è capire il problema reale prima di progettare soluzioni.",
+          "riferimento": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
         }
       ],
-      "spiegazione": "Il piano del quadro è il 'sensore fotografico' della prospettiva: la distanza dall'oggetto determina la grandezza dell'immagine, come una fotocamera."
+      "spiegazione": "L'empatia è il punto di partenza del design thinking perché permette di capire chi ha il problema prima di tentare di risolverlo. Senza empatia, il designer rischia di progettare qualcosa che ritiene utile per sé stesso, ma che non risponde ai bisogni reali degli utenti.",
+      "riferimento_principale": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è un 'rendering' in ambito progettuale?",
+      "domanda": "Massimo Vignelli ha distorto deliberatamente le distanze geografiche nella mappa della metro di New York. Quale obiettivo progettuale giustificava questa scelta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il disegno tecnico finale dell'oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rendere leggibili le connessioni tra le linee, prioritariamente rispetto alla precisione geografica",
+          "corretto": true,
+          "feedback": "Esatto! In una mappa del metro, capire come si collegano le linee è più utile che conoscere le distanze esatte tra le stazioni. La distorsione era una scelta comunicativa deliberata."
         },
         {
           "id": "b",
-          "testo": "La rappresentazione visiva realistica di un progetto ancora non realizzato: usato per comunicare l'estetica finale a clienti e committenti",
-          "corretto": true,
-          "feedback": "Esatto! Il rendering permette al cliente di 'vedere' l'oggetto prima che esista."
+          "testo": "Ridurre i costi di stampa semplificando il tracciato",
+          "feedback": "Non corretto. La scelta era comunicativa, non economica: privilegiare la leggibilità delle connessioni rispetto alla fedeltà geografica.",
+          "riferimento": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
         },
         {
           "id": "c",
-          "testo": "La stampa del disegno CAD",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rispettare un obbligo legale di non mostrare distanze reali nelle mappe pubbliche",
+          "feedback": "Non corretto. Non esiste tale obbligo. La distorsione era una scelta progettuale deliberata per migliorare la leggibilità.",
+          "riferimento": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
         },
         {
           "id": "d",
-          "testo": "La scala di un modello fisico in miniatura",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Nascondere la posizione delle stazioni sotterranee per ragioni di sicurezza",
+          "feedback": "Non corretto. Le mappe del metro sono pubbliche. La distorsione serviva a rendere più chiare le connessioni, non a nascondere informazioni.",
+          "riferimento": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
         }
       ],
-      "spiegazione": "Il rendering permette al cliente di 'vedere' l'oggetto prima che esista. Software come Blender, KeyShot o Lumion generano immagini fotorealistiche da modelli 3D."
+      "spiegazione": "Vignelli ha distorto le distanze geografiche perché in quel contesto la priorità comunicativa era capire come le linee si connettono, non conoscere le distanze precise. È un esempio emblematico di come il design privilegia l'efficacia della comunicazione rispetto alla fedeltà letterale.",
+      "riferimento_principale": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'photogrammetria' e come si usa in progettazione?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il 'design for disassembly' progetta giunzioni smontabili e materiali compatibili. Quale problema specifico del riciclo tradizionale intende risolvere?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'uso di fotografie per misurare l'esposizione alla luce",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La difficoltà di separare materiali diversi (plastica + metallo + vetro) per riciclarli correttamente",
+          "corretto": true,
+          "feedback": "Esatto! Un oggetto con materiali diversi incollati o saldati è difficile da riciclare perché non si può separare. Il design for disassembly elimina questo problema progettando la separabilità fin dall'inizio."
         },
         {
           "id": "b",
-          "testo": "La tecnica che ricostruisce modelli 3D da serie di fotografie sovrapposte: usata per rilievi architettonici, preservazione di beni culturali e reverse engineering",
-          "corretto": true,
-          "feedback": "Esatto! Con uno smartphone e un'app si può fare photogrammetria di un oggetto o di un edificio ottenendo un modello 3D preciso senza costosi strumenti topografici."
+          "testo": "Il costo elevato della produzione industriale degli oggetti complessi",
+          "feedback": "Non corretto. Il design for disassembly mira al riciclo a fine vita, non alla riduzione dei costi di produzione.",
+          "riferimento": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
         },
         {
           "id": "c",
-          "testo": "Un tipo di rendering fotorealistico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La scarsa resistenza meccanica degli oggetti progettati per essere smontati",
+          "feedback": "Non corretto. Le giunzioni smontabili possono essere anche molto resistenti. L'obiettivo è facilitare la separazione a fine vita per il riciclo.",
+          "riferimento": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
         },
         {
           "id": "d",
-          "testo": "La correzione geometrica delle distorsioni fotografiche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il problema della corrosione dei materiali metallici negli ambienti umidi",
+          "feedback": "Non corretto. La corrosione è un problema di protezione dei materiali. Il design for disassembly riguarda la separabilità dei materiali a fine vita per il riciclo.",
+          "riferimento": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
         }
       ],
-      "spiegazione": "Con uno smartphone e un'app si può fare photogrammetria di un oggetto o di un edificio ottenendo un modello 3D preciso senza costosi strumenti topografici."
+      "spiegazione": "Il design for disassembly risponde al problema della mescolanza di materiali diversi negli oggetti complessi: plastica + metallo + vetro incollati insieme non si possono riciclare separatamente. Progettando deliberatamente giunzioni smontabili e materiali compatibili, ogni componente può essere separato e riciclato correttamente.",
+      "riferimento_principale": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'ergonomia' e perché è fondamentale nella progettazione?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Nel caso studio dell'iPhone 1, Apple eliminò quasi tutti i pulsanti fisici mantenendone solo tre. Quale vantaggio strategico specifico cita il testo per questa scelta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Lo studio estetico della forma degli oggetti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Permettere di cambiare l'interfaccia utente con aggiornamenti software senza toccare l'hardware",
+          "corretto": true,
+          "feedback": "Esatto! Ogni pulsante fisico è un punto di fragilità meccanica e un limite alla modifica software. Eliminandoli, Apple poteva aggiornare l'esperienza utente via software senza cambiare il telefono."
         },
         {
           "id": "b",
-          "testo": "La disciplina che studia il rapporto tra persone e oggetti/ambienti per ottimizzare comfort, sicurezza ed efficienza d'uso",
-          "corretto": true,
-          "feedback": "Esatto! Un oggetto bello ma ergonomicamente sbagliato è un oggetto fallito."
+          "testo": "Rendere il telefono più leggero riducendo il numero di componenti",
+          "feedback": "Non corretto. Il motivo non era principalmente il peso. Il vantaggio strategico era la possibilità di aggiornare l'interfaccia via software senza modificare l'hardware.",
+          "riferimento": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
         },
         {
           "id": "c",
-          "testo": "La norma che regola le dimensioni degli oggetti di arredo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ridurre il costo di produzione eliminando componenti meccanici costosi",
+          "feedback": "Non corretto. Il costo non era il motivo principale. La motivazione strategica era la flessibilità: cambiare l'interfaccia via software senza toccare l'hardware.",
+          "riferimento": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
         },
         {
           "id": "d",
-          "testo": "L'analisi dei costi di produzione di un oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rendere il telefono impermeabile all'acqua eliminando i fori dei pulsanti",
+          "feedback": "Non corretto. Il testo non menziona l'impermeabilità come motivazione. Il motivo era la flessibilità software: poter modificare l'interfaccia senza toccare l'hardware.",
+          "riferimento": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
         }
       ],
-      "spiegazione": "Un oggetto bello ma ergonomicamente sbagliato è un oggetto fallito. Le dimensioni del corpo umano (antropometria) e i suoi limiti definiscono i vincoli progettuali."
+      "spiegazione": "Eliminare i pulsanti fisici aveva un vantaggio strategico preciso: ogni pulsante fisico è un punto di fragilità e un limite alla modifica software. Senza pulsanti, Apple poteva cambiare completamente l'interfaccia utente con un aggiornamento software, senza toccare l'hardware fisico del telefono.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'Design Thinking' e come si articola nelle sue fasi?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo afferma che nella prospettiva centrale il punto di fuga si posiziona 'all'altezza degli occhi dell'osservatore ideale'. Quale effetto visivo produce la posizione del punto di fuga rispetto all'oggetto disegnato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una metodologia di design basata solo sull'estetica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Determina il punto di vista dell'osservatore: alto, basso o frontale rispetto all'oggetto",
+          "corretto": true,
+          "feedback": "Esatto! La linea d'orizzonte (dove si trova il punto di fuga) corrisponde all'altezza degli occhi dell'osservatore. Alzarla o abbassarla cambia radicalmente il punto di vista dal quale si vede l'oggetto."
         },
         {
           "id": "b",
-          "testo": "Un approccio centrato sull'utente: Empatizzare → Definire il problema → Ideare soluzioni → Prototipare → Testare. Iterativo e non lineare",
-          "corretto": true,
-          "feedback": "Esatto! Il Design Thinking parte dall'utente, non dal prodotto."
+          "testo": "Determina solo le dimensioni dell'oggetto nel disegno, non il punto di vista",
+          "feedback": "Non corretto. Il punto di fuga determina il punto di vista (alto, basso, frontale), non le dimensioni dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
         },
         {
           "id": "c",
-          "testo": "La fase di disegno tecnico del processo produttivo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Determina lo stile estetico del disegno: moderno o tradizionale",
+          "feedback": "Non corretto. La posizione del punto di fuga determina il punto di vista geometrico dell'osservatore, non lo stile estetico.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
         },
         {
           "id": "d",
-          "testo": "Un metodo di valutazione economica di un progetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non ha effetti visivi: la posizione del punto di fuga è solo una convenzione geometrica",
+          "feedback": "Non corretto. La posizione del punto di fuga ha effetti visivi molto concreti: cambia il punto di vista e la percezione delle proporzioni dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
         }
       ],
-      "spiegazione": "Il Design Thinking parte dall'utente, non dal prodotto. La fase di empatia (osservare, intervistare) previene di risolvere il problema sbagliato."
+      "spiegazione": "La linea d'orizzonte corrisponde all'altezza degli occhi dell'osservatore ideale. Posizionare il punto di fuga in alto produce una vista dall'alto (bird's eye view), in basso produce una vista dal basso (worm's eye view), al centro produce una vista frontale. La posizione del PF determina il punto di vista dell'intera rappresentazione.",
+      "riferimento_principale": "📖 ESPLORA — Prospettiva centrale e prospettiva accidentale"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo presenta il caso iPhone 1 come dimostrazione che 'forma e funzione erano inseparabili — non decorazione aggiunta alla tecnica, ma tecnica espressa attraverso la forma.' Questo principio contraddice quale idea comune sul design?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'idea che il design sia solo decorazione aggiunta a un prodotto già funzionante",
+          "corretto": true,
+          "feedback": "Esatto! Il caso iPhone mostra che ogni scelta formale aveva una giustificazione funzionale e ogni scelta funzionale aveva implicazioni formali. Il design non è decorazione post-funzionale ma parte integrante della soluzione tecnica."
+        },
+        {
+          "id": "b",
+          "testo": "L'idea che i prodotti Apple costino troppo rispetto ai concorrenti",
+          "feedback": "Non corretto. Il testo non tratta la questione del prezzo. Il punto è che nel design dell'iPhone forma e funzione erano inseparabili.",
+          "riferimento": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
+        },
+        {
+          "id": "c",
+          "testo": "L'idea che il vetro sia un materiale inadatto per i telefoni cellulari",
+          "feedback": "Non corretto. La questione del materiale è uno degli esempi, non il principio generale. Il punto è che forma e funzione sono inseparabili nel design.",
+          "riferimento": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
+        },
+        {
+          "id": "d",
+          "testo": "L'idea che Steve Jobs fosse principalmente un ingegnere e non un designer",
+          "feedback": "Non corretto. Il testo non valuta il profilo professionale di Jobs. Il punto è il principio generale dell'inseparabilità di forma e funzione.",
+          "riferimento": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
+        }
+      ],
+      "spiegazione": "Il caso iPhone 1 dimostra che il design non è decorazione aggiunta a un prodotto già funzionante. Il vetro Gorilla Glass, il bordo in alluminio, le proporzioni dello schermo, il rientro del connettore — ogni scelta formale risponde a una funzione tecnica precisa. Forma e funzione sono inseparabili.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: il design dell'iPhone 1 (2007)"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo descrive l'iterazione (prototipo → test → modifica) come 'la parte più importante del design'. Perché questa affermazione è controintuitiva rispetto alla visione romantica della creatività?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché nella visione romantica l'idea geniale iniziale è la parte più importante, mentre l'iterazione valorizza invece l'errore e la revisione come fonti di miglioramento",
+          "corretto": true,
+          "feedback": "Esatto! L'iterazione è controintuitiva perché sfida il mito dell'ispirazione geniale. Un prototipo che fallisce nel test è più prezioso di un disegno perfetto non testato: rivela problemi reali che nessuna intuizione avrebbe mostrato."
+        },
+        {
+          "id": "b",
+          "testo": "Perché i prototipi fisici costano molto di più dei disegni digitali e quindi rallentano il processo",
+          "feedback": "Non corretto. Il punto non è il costo, ma il valore epistemologico: il prototipo rivela problemi reali che i disegni non mostrano. Il costo è secondario.",
+          "riferimento": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+        },
+        {
+          "id": "c",
+          "testo": "Perché normalmente si pensa che i clienti non capiscano abbastanza per testare prototipi",
+          "feedback": "Non corretto. Il testo non esprime questa posizione. Al contrario: quello che fanno e dicono gli utenti durante il test è 'la tua informazione più preziosa'.",
+          "riferimento": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+        },
+        {
+          "id": "d",
+          "testo": "Perché l'iterazione richiede teamwork mentre la progettazione è tradizionalmente individuale",
+          "feedback": "Non corretto. Il punto non riguarda il lavoro di team vs individuale, ma il valore dell'errore come fonte di apprendimento nel processo di design.",
+          "riferimento": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+        }
+      ],
+      "spiegazione": "L'iterazione è controintuitiva perché sfida la visione romantica della creatività come ispirazione geniale. Nel design reale, l'errore è prezioso: un prototipo che rivela un problema che non avevi previsto vale più di qualsiasi disegno perfetto. Modificare il progetto dopo un test non è un fallimento, è il processo che produce soluzioni davvero funzionali.",
+      "riferimento_principale": "📖 ESPLORA — Il processo progettuale: dal brief al prodotto"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "La regola pratica nel testo: 'se devi comunicare misure esatte a chi costruisce, usa l'assonometria; se devi comunicare l'aspetto a chi decide, usa la prospettiva'. Questo rivela che la scelta del sistema di rappresentazione dipende fondamentalmente da quale fattore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Dal destinatario della comunicazione e dallo scopo del disegno, non dall'estetica del risultato",
+          "corretto": true,
+          "feedback": "Esatto! La scelta non è estetica ma comunicativa: dipende da chi leggerà il disegno (tecnico vs cliente) e dallo scopo (precisione vs percezione). Un buon progetto usa spesso entrambi."
+        },
+        {
+          "id": "b",
+          "testo": "Dal software CAD disponibile: alcuni programmi generano assonometria, altri prospettiva",
+          "feedback": "Non corretto. La scelta non dipende dal software ma dal contesto comunicativo. Un buon professionista usa entrambi i sistemi in base al destinatario.",
+          "riferimento": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
+        },
+        {
+          "id": "c",
+          "testo": "Dal livello di esperienza del disegnatore: principianti usano assonometria, professionisti prospettiva",
+          "feedback": "Non corretto. Non si tratta di un percorso di apprendimento. Entrambi i sistemi hanno scopi diversi e vengono usati da qualsiasi professionista in contesti diversi.",
+          "riferimento": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
+        },
+        {
+          "id": "d",
+          "testo": "Dalla dimensione dell'oggetto: grandi oggetti richiedono prospettiva, piccoli oggetti assonometria",
+          "feedback": "Non corretto. La dimensione non determina la scelta. La scelta dipende dallo scopo comunicativo e dal destinatario del disegno.",
+          "riferimento": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
+        }
+      ],
+      "spiegazione": "Il disegno tecnico è sempre un atto comunicativo. La scelta del sistema di rappresentazione dipende da chi leggerà il disegno e per quale scopo: assonometria per il tecnico che deve costruire (misure esatte), prospettiva per il cliente che deve decidere (aspetto percepito). Un buon progetto usa spesso entrambi.",
+      "riferimento_principale": "📖 ESPLORA — Confronto tra assonometria e prospettiva"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il concetto 'cradle to cradle' propone due categorie di materiali: ciclo biologico e ciclo tecnico. Quale problema strutturale del design tradizionale questo approccio vuole risolvere?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il fatto che nel modello lineare i materiali a fine vita finiscono in discarica, perdendo il loro valore invece di rientrare in un ciclo produttivo",
+          "corretto": true,
+          "feedback": "Esatto! Il cradle to cradle affronta il modello lineare (estrai → produci → consuma → butta): ogni materiale in discarica è una perdita di valore. La soluzione è progettare i prodotti per rientrare in cicli continui fin dall'inizio."
+        },
+        {
+          "id": "b",
+          "testo": "Il fatto che i produttori non dichiarano la composizione chimica dei materiali usati",
+          "feedback": "Non corretto. Il problema identificato è lo smaltimento in discarica a fine vita, non la mancanza di trasparenza sulla composizione.",
+          "riferimento": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
+        },
+        {
+          "id": "c",
+          "testo": "Il fatto che il design tradizionale produce oggetti esteticamente brutti",
+          "feedback": "Non corretto. Il cradle to cradle non riguarda l'estetica ma il ciclo di vita dei materiali e il loro destino a fine vita.",
+          "riferimento": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
+        },
+        {
+          "id": "d",
+          "testo": "Il fatto che i designer non considerano l'ergonomia nella fase di progettazione",
+          "feedback": "Non corretto. L'ergonomia è un tema separato. Il cradle to cradle affronta il ciclo di vita dei materiali e il problema dello smaltimento in discarica.",
+          "riferimento": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
+        }
+      ],
+      "spiegazione": "Il cradle to cradle (dalla culla alla culla) si oppone al modello lineare cradle-to-grave (dalla culla alla tomba). Il problema che vuole risolvere: ogni materiale che finisce in discarica è una perdita di valore. La soluzione è progettare i prodotti fin dall'inizio per rientrare nel ciclo biologico (biodegradano) o tecnico (vengono riciclati e reimmessi nella produzione).",
+      "riferimento_principale": "📖 ESPLORA — Design sostenibile: progettare il futuro del prodotto prima di costruirlo"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Giugiaro progettò la Fiat Panda con pannelli piatti invece di curve per ridurre i costi di produzione. Il testo dice che 'l'estetica era una conseguenza dell'efficienza'. Quale principio di design questo incarna?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I vincoli produttivi e di costo, quando accettati come parte del problema di design, possono generare forme originali e riconoscibili",
+          "corretto": true,
+          "feedback": "Esatto! Giugiaro non ha subito i vincoli economici ma li ha incorporati come vincoli di design. I pannelli piatti, più economici, hanno generato la forma riconoscibile della Panda. I vincoli non limitano il design: lo definiscono."
+        },
+        {
+          "id": "b",
+          "testo": "Il design minimalista produce sempre oggetti esteticamente superiori perché elimina il superfluo",
+          "feedback": "Non corretto. Non si tratta di una teoria estetica del minimalismo. I pannelli piatti erano una scelta economica che ha generato un'estetica, non il contrario.",
+          "riferimento": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
+        },
+        {
+          "id": "c",
+          "testo": "La produzione industriale richiede sempre forme geometriche semplici per ragioni tecnologiche universali",
+          "feedback": "Non corretto. Non è una necessità tecnologica universale. È una scelta deliberata di Giugiaro per ridurre i costi di produzione della Panda.",
+          "riferimento": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
+        },
+        {
+          "id": "d",
+          "testo": "Le auto economiche devono avere forme diverse da quelle di lusso per segnalare il loro mercato di riferimento",
+          "feedback": "Non corretto. Il punto non è il segnalamento di mercato ma il principio per cui i vincoli produttivi, se integrati nel processo di design, generano forma.",
+          "riferimento": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
+        }
+      ],
+      "spiegazione": "Il caso Fiat Panda dimostra che i vincoli di produzione e costo non sono il contrario del design: sono parte del problema da risolvere. Giugiaro ha incorporato il vincolo economico (pannelli piatti meno costosi da produrre) come vincolo progettuale, generando una forma originale. L'estetica è emersa come conseguenza delle scelte funzionali.",
+      "riferimento_principale": "📖 ESPLORA — I grandi designer italiani: tre storie, tre lezioni"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo afferma che il design thinking 'non è lineare' e che 'si torna indietro, si riscoprono problemi, si ridefinisce il brief'. Come mai questa caratteristica è considerata un vantaggio e non una debolezza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le fasi successive (test, prototipo) rivelano informazioni che non erano disponibili all'inizio, permettendo di produrre soluzioni migliori di quelle previste",
+          "corretto": true,
+          "feedback": "Esatto! La non-linearità è un vantaggio epistemologico: il processo di design rivela informazioni che nessuna analisi preliminare avrebbe potuto fornire. Tornare a ridefinire il problema dopo aver testato è il meccanismo che produce soluzioni davvero funzionali."
+        },
+        {
+          "id": "b",
+          "testo": "Perché la non-linearità riduce i tempi totali del processo rispetto a un approccio sequenziale rigido",
+          "feedback": "Non corretto. Tornare indietro non riduce i tempi. Il vantaggio è la qualità della soluzione finale, non la velocità.",
+          "riferimento": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
+        },
+        {
+          "id": "c",
+          "testo": "Perché senza linearità ogni membro del team può lavorare su una fase diversa contemporaneamente",
+          "feedback": "Non corretto. La non-linearità non riguarda il lavoro parallelo del team ma la capacità del processo di adattarsi alle informazioni scoperte durante il percorso.",
+          "riferimento": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i processi non lineari sono più creativi per definizione rispetto ai processi lineari",
+          "feedback": "Non corretto. Non è una questione di creatività come proprietà intrinseca. La non-linearità del design thinking è un vantaggio perché incorpora l'apprendimento durante il processo, non per una qualità astratta della creatività.",
+          "riferimento": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
+        }
+      ],
+      "spiegazione": "La non-linearità del design thinking è un vantaggio perché ogni fase rivela informazioni che non erano disponibili nella fase precedente. Tornare a ridefinire il problema dopo aver testato un prototipo non è un fallimento: è la prova che il processo sta incorporando nuove informazioni reali, producendo soluzioni migliori di quelle previste all'inizio.",
+      "riferimento_principale": "📖 ESPLORA — Design thinking: il metodo in cinque mosse"
     }
   ]
 }

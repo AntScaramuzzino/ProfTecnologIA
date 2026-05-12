@@ -1,259 +1,597 @@
 {
   "mc_id": "MC-ENE-3-06",
-  "titolo": "Accumulo energetico e smart grid",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è il problema dell'intermittenza nelle energie rinnovabili?",
+      "domanda": "Cosa si intende per 'curtailment' nel contesto delle energie rinnovabili?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le rinnovabili producono troppa energia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il taglio deliberato della produzione di un impianto eolico o solare perché la rete non può assorbire tutta l'energia prodotta",
+          "corretto": true,
+          "feedback": "Esatto! Il curtailment avviene quando le rinnovabili producono più energia di quanta la rete possa assorbire: le turbine vengono rallentate artificialmente e l'energia prodotta si spreca. È uno dei problemi principali dell'integrazione delle rinnovabili."
         },
         {
           "id": "b",
-          "testo": "Sole e vento non producono quando non c'è domanda e non sempre quando c'è: serve accumulo o rete flessibile",
-          "corretto": true,
-          "feedback": "Esatto! L'intermittenza è la principale sfida dell'energia rinnovabile."
+          "testo": "Il taglio dell'energia elettrica ai consumatori durante i picchi di domanda",
+          "feedback": "Non corretto. Quello è il 'load shedding' (distacco del carico). Il curtailment è il contrario: si riduce la produzione di rinnovabili perché c'è troppa energia, non poca.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "c",
-          "testo": "Le rinnovabili sono instabili elettricamente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il prelievo di energia dalla rete da parte di grandi impianti industriali durante la notte",
+          "feedback": "Non corretto. Il prelievo industriale notturno non è curtailment. Il curtailment è la riduzione forzata della produzione rinnovabile quando l'offerta supera la domanda.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "d",
-          "testo": "Le rinnovabili richiedono manutenzione continua",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'interruzione dell'energia durante le manutenzioni programmate degli impianti",
+          "feedback": "Non corretto. Le manutenzioni programmate non sono curtailment. Il curtailment è la riduzione della produzione per eccesso di offerta rispetto alla domanda nella rete.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "L'intermittenza è la principale sfida dell'energia rinnovabile. Il sole splende di giorno, il picco di domanda è sera: serve accumulare o spostare la domanda."
+      "spiegazione": "Il curtailment è il taglio deliberato della produzione di impianti rinnovabili quando la rete non può assorbire tutta l'energia prodotta. Nel 2024 in Germania ci sono stati oltre 400 ore di prezzi negativi: i produttori venivano pagati per NON produrre. È il sintomo più evidente della mancanza di accumulo energetico adeguato.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Come funziona una batteria agli ioni di litio?",
+      "domanda": "Come si calcola l'energia immagazzinata in una batteria a partire dalla sua tensione e capacità in ampereora?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Converte calore in elettricità tramite celle termoelettriche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "E (Wh) = V (volt) × Ah (amperaora): tensione moltiplicata per la capacità in Ah",
+          "corretto": true,
+          "feedback": "Esatto! La formula E = V × Ah permette di calcolare l'energia in wattora. Esempio: batteria da 12V e 100Ah → E = 12 × 100 = 1.200 Wh = 1,2 kWh."
         },
         {
           "id": "b",
-          "testo": "Ioni di litio si spostano tra anodo e catodo durante la carica/scarica: reazione elettrochimica reversibile che accumula energia",
-          "corretto": true,
-          "feedback": "Esatto! Le batterie Li-ion hanno densità energetica ~200 Wh/kg, cicli di vita 500-2000, temperature di lavoro -20°C a +60°C."
+          "testo": "E (Wh) = V (volt) + Ah (amperaora): tensione sommata alla capacità",
+          "feedback": "Non corretto. Si moltiplica, non si somma. E = V × Ah. Tensione e capacità hanno unità di misura diverse (volt e ampereora) e si moltiplicano per ottenere wattora.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Energia immagazzinata in una batteria"
         },
         {
           "id": "c",
-          "testo": "Usa la compressione dell'aria per accumulare energia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "E (Wh) = V (volt) / Ah (amperaora): tensione divisa per la capacità",
+          "feedback": "Non corretto. Si moltiplica, non si divide. E = V × Ah. Dividere volt per ampereora darebbe ohm al quadrato (unità senza senso fisico in questo contesto).",
+          "riferimento": "📖 ESPLORA — Box Fisica — Energia immagazzinata in una batteria"
         },
         {
           "id": "d",
-          "testo": "Funziona come un condensatore ad alta capacità",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "E (Wh) = Ah (amperaora)²: il quadrato della capacità",
+          "feedback": "Non corretto. La formula corretta è E = V × Ah. Il quadrato di Ah darebbe A²h², unità senza senso fisico per l'energia.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Energia immagazzinata in una batteria"
         }
       ],
-      "spiegazione": "Le batterie Li-ion hanno densità energetica ~200 Wh/kg, cicli di vita 500-2000, temperature di lavoro -20°C a +60°C. Il litio si estrae principalmente in Cile, Australia, Argentina."
+      "spiegazione": "E (Wh) = V × Ah. Esempi dal testo: batteria smartphone = 3,7V × 4Ah = 14,8 Wh ≈ 15 Wh; Powerwall Tesla = 50V × 270Ah = 13.500 Wh = 13,5 kWh; batteria auto media = 350V × 200Ah = 70.000 Wh = 70 kWh; impianto utility-scale = 800V × 12.500Ah = 10.000.000 Wh = 10 MWh.",
+      "riferimento_principale": "📖 ESPLORA — Box Fisica — Energia immagazzinata in una batteria"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è una 'smart grid'?",
+      "domanda": "Il costo delle batterie agli ioni di litio è sceso da circa 3.000 $/kWh nel 1991 a circa 90-100 $/kWh nel 2024. Di quanto percentuale è sceso?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una rete elettrica ad alta tensione potenziata",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 97%: (3000-97)/3000 = 0,97 = 97%",
+          "corretto": true,
+          "feedback": "Esatto! Il costo è sceso da 3.000 $/kWh (1991) a circa 90-100 $/kWh (2024). Riduzione percentuale: (3000-97)/3000 ≈ 97%. È la più rapida riduzione di costo di qualsiasi tecnologia energetica nella storia."
         },
         {
           "id": "b",
-          "testo": "Una rete elettrica intelligente che usa sensori, comunicazione digitale e automazione per ottimizzare flussi di energia bidirezionali tra produttori, consumatori e storage",
-          "corretto": true,
-          "feedback": "Esatto! La smart grid trasforma la rete da 'distribuzione monodirezionale' (centrale→casa) a 'rete bidirezionale': le case con solare diventano produttori, le auto batterie distribuite."
+          "testo": "Circa 50%: il prezzo si è dimezzato",
+          "feedback": "Non corretto. Il prezzo non si è dimezzato: è sceso del 97%, ovvero è diventato circa 30 volte meno costoso, non la metà.",
+          "riferimento": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
         },
         {
           "id": "c",
-          "testo": "Una rete di distribuzione per le auto elettriche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 30%: una riduzione significativa ma non straordinaria",
+          "feedback": "Non corretto. Una riduzione del 30% sarebbe ordinaria. Il costo delle batterie è sceso del 97% in 30 anni: da 3.000 a 90-100 $/kWh.",
+          "riferimento": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
         },
         {
           "id": "d",
-          "testo": "Un sistema di contatori intelligenti nelle case",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non si può calcolare perché le unità di misura sono cambiate nel tempo",
+          "feedback": "Non corretto. Le unità di misura ($/kWh) sono rimaste le stesse. Il calcolo è: (3.000 - 97) / 3.000 = 97%.",
+          "riferimento": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
         }
       ],
-      "spiegazione": "La smart grid trasforma la rete da 'distribuzione monodirezionale' (centrale→casa) a 'rete bidirezionale': le case con solare diventano produttori, le auto batterie distribuite."
+      "spiegazione": "Il costo delle batterie al litio è sceso da ~3.000 $/kWh (1991, prima batteria Sony commerciale) a ~90-100 $/kWh (2024): una riduzione del 97% in 30 anni. BloombergNEF prevede meno di 60 $/kWh entro il 2030. Nessuna altra tecnologia energetica ha avuto una curva di apprendimento così rapida. Questo spiega la rapida adozione di auto elettriche e accumuli stazionari.",
+      "riferimento_principale": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Quale sistema di accumulo energetico rappresenta il 90% di tutta la capacità mondiale di accumulo installata?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Accumulo pompato (pumped-storage hydropower): acqua pompata in quota che poi genera elettricità scendendo",
+          "corretto": true,
+          "feedback": "Esatto! L'accumulo pompato con idroelettrico è il sistema più diffuso al mondo: circa 170 GW installati, pari al 90% di tutta la capacità di accumulo energetico mondiale. È la 'batteria' più grande e collaudata dell'umanità."
+        },
+        {
+          "id": "b",
+          "testo": "Batterie agli ioni di litio stazionarie installate nei sistemi di stoccaggio utility-scale",
+          "feedback": "Non corretto. Le batterie al litio utility-scale sono in rapida crescita ma ancora una piccola percentuale della capacità mondiale totale. L'accumulo pompato è dominante al 90%.",
+          "riferimento": "📖 ESPLORA — Accumulo pompato: il gigante invisibile"
+        },
+        {
+          "id": "c",
+          "testo": "Idrogeno verde stoccato in caverne saline e riconvertito in elettricità con fuel cell",
+          "feedback": "Non corretto. L'idrogeno verde è ancora in fase iniziale di sviluppo come sistema di accumulo di rete. L'accumulo pompato domina con il 90% della capacità mondiale.",
+          "riferimento": "📖 ESPLORA — Accumulo pompato: il gigante invisibile"
+        },
+        {
+          "id": "d",
+          "testo": "Volani (flywheel) ad alta velocità in atmosfera di vuoto",
+          "feedback": "Non corretto. I volani sono usati per accumuli di breve durata (millisecondi-secondi) e rappresentano una piccola percentuale della capacità totale. L'accumulo pompato è dominante.",
+          "riferimento": "📖 ESPLORA — Accumulo pompato: il gigante invisibile"
+        }
+      ],
+      "spiegazione": "L'accumulo idroelettrico pompato (pump storage) è il gigante invisibile dell'accumulo energetico: oltre 170 GW installati globalmente, pari al 90% di tutta la capacità mondiale di accumulo. Funziona pompando acqua da un bacino inferiore a uno superiore (carica) e rilasciandola per generare elettricità (scarica). Efficienza del ciclo: 70-85%.",
+      "riferimento_principale": "📖 ESPLORA — Accumulo pompato: il gigante invisibile"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa si intende per V2G (Vehicle-to-Grid)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La possibilità per un'auto elettrica parcheggiata e collegata alla rete di cedere energia dalla sua batteria alla rete elettrica quando serve",
+          "corretto": true,
+          "feedback": "Esatto! Il V2G (Vehicle-to-Grid) permette alle auto elettriche di essere sia consumatori sia produttori di elettricità: si ricaricano quando l'energia è abbondante (e a basso costo) e cedono energia alla rete durante i picchi di domanda."
+        },
+        {
+          "id": "b",
+          "testo": "Il sistema di navigazione GPS integrato nei veicoli elettrici che si aggiorna tramite la rete internet",
+          "feedback": "Non corretto. Il V2G non riguarda la navigazione. È un sistema energetico bidirezionale: l'auto cede o preleva energia dalla rete elettrica.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
+        },
+        {
+          "id": "c",
+          "testo": "Il sistema di ricarica veloce DC (corrente continua) per i veicoli elettrici lungo le autostrade",
+          "feedback": "Non corretto. La ricarica veloce DC è unidirezionale (dalla rete all'auto). Il V2G è bidirezionale: l'auto può sia ricaricarsi sia cedere energia alla rete.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
+        },
+        {
+          "id": "d",
+          "testo": "Il controllo automatico del motore del veicolo tramite la connessione alla rete dati 5G",
+          "feedback": "Non corretto. V2G significa Vehicle-to-Grid (veicolo verso la rete elettrica), non una connessione alla rete 5G. È un sistema di gestione dell'energia bidirezionale.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
+        }
+      ],
+      "spiegazione": "V2G (Vehicle-to-Grid): l'auto elettrica come nodo attivo della rete. Il 94% del tempo un'auto è parcheggiata. Con V2G, la batteria dell'auto (50-100 kWh) si collega alla rete quando parcheggiata: si ricarica nei momenti di basso consumo (e basso costo), e cede energia alla rete nei picchi di domanda. Milioni di auto elettriche potrebbero rappresentare un sistema di accumulo distribuito enorme.",
+      "riferimento_principale": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Dove si trova il 'triangolo del litio', che contiene oltre il 50% delle riserve mondiali di litio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Argentina, Bolivia e Cile, in Sudamerica",
+          "corretto": true,
+          "feedback": "Esatto! Il 'triangolo del litio' è formato da Argentina, Bolivia e Cile. Contiene oltre il 50% delle riserve mondiali di litio, estratto principalmente dai salari (laghi salati) con un processo che usa molte quantità d'acqua."
+        },
+        {
+          "id": "b",
+          "testo": "Repubblica Democratica del Congo, Zambia e Zimbabwe, in Africa",
+          "feedback": "Non corretto. Quell'area africana contiene grandi riserve di cobalto (RDC), non di litio. Il triangolo del litio è in Sudamerica (Argentina, Bolivia, Cile).",
+          "riferimento": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
+        },
+        {
+          "id": "c",
+          "testo": "Australia, Russia e Cina, con riserve distribuite globalmente",
+          "feedback": "Non corretto. Australia ed altri producono litio da rocce dure (spodumene), ma il 'triangolo del litio' è la denominazione specifica dell'area argentino-boliviana-cilena che contiene oltre il 50% delle riserve mondiali.",
+          "riferimento": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
+        },
+        {
+          "id": "d",
+          "testo": "Islanda, Norvegia e Finlandia, nei paesi nordici",
+          "feedback": "Non corretto. I paesi nordici non hanno grandi riserve di litio. Il triangolo del litio è in Sudamerica: Argentina, Bolivia, Cile.",
+          "riferimento": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
+        }
+      ],
+      "spiegazione": "Il 'triangolo del litio' (Argentina, Bolivia, Cile) contiene oltre il 50% delle riserve mondiali di litio. Il litio viene estratto dai salari (laghi salati ad alta quota come l'Atacama) con un processo che usa grandi quantità di acqua: problema serio in zone già aride. L'Europa dipende al 97% dalle importazioni di litio.",
+      "riferimento_principale": "📖 ESPLORA — Le batterie agli ioni di litio: come funzionano davvero"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'pompaggio idroelettrico' e perché è la principale forma di accumulo al mondo?",
+      "domanda": "Il ciclo elettrolisi → stoccaggio → fuel cell dell'idrogeno verde ha efficienza del 25-35%, mentre le batterie al litio raggiungono l'85-90%. Perché l'idrogeno è comunque considerato fondamentale per la transizione energetica?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema di accumulo con batterie collegate alle dighe",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché l'idrogeno può essere stoccato in grandi quantità e per mesi (accumulo stagionale), coprendo i periodi prolungati di poco sole e vento che le batterie non possono coprire economicamente",
+          "corretto": true,
+          "feedback": "Esatto! Le batterie sono ottime per accumulo giornaliero (ore-giorni). Ma per l'accumulo stagionale (estate → inverno, periodi di siccità per l'idroelettrico), servono quantità enormi di energia stoccata per mesi. L'idrogeno si può stoccare in gasdotti, caverne saline, serbatoi — a costi molto inferiori a grandi banchi di batterie."
         },
         {
           "id": "b",
-          "testo": "Un sistema che pompa acqua in quota con energia in eccesso e la rilascia attraverso turbine quando serve: efficienza 70-80%, capacità scalabile a GWh",
-          "corretto": true,
-          "feedback": "Esatto! Il pompaggio idroelettrico è ~95% dello storage elettrico mondiale."
+          "testo": "Perché l'idrogeno sarà presto più efficiente delle batterie grazie a nuovi elettrolizzatori in sviluppo",
+          "feedback": "Non corretto. Anche se l'efficienza degli elettrolizzatori migliorerà, l'idrogeno rimarrà intrinsecamente meno efficiente delle batterie per l'accumulo di breve durata. Il vantaggio è nell'accumulo stagionale, non nel miglioramento dell'efficienza.",
+          "riferimento": "📖 ESPLORA — Accumulo con idrogeno verde: la soluzione stagionale"
         },
         {
           "id": "c",
-          "testo": "La produzione di idrogeno dall'acqua tramite elettrolisi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché l'idrogeno è prodotto da fonti naturali abbondanti senza processo di estrazione",
+          "feedback": "Non corretto. L'idrogeno non esiste quasi mai in forma pura sulla Terra: si produce dalla decomposizione dell'acqua (elettrolisi) o dalla riforma del gas naturale. Non è una fonte naturale come il sole o il vento.",
+          "riferimento": "📖 ESPLORA — Accumulo con idrogeno verde: la soluzione stagionale"
         },
         {
           "id": "d",
-          "testo": "Il raffreddamento degli impianti nucleari con acqua pompata",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché l'idrogeno è più leggero dell'aria e quindi si stoca naturalmente nelle zone alte delle reti di distribuzione",
+          "feedback": "Non corretto. La leggerezza dell'idrogeno è una proprietà fisica, non un vantaggio per lo stoccaggio nelle reti. Il vantaggio è la capacità di accumulo stagionale a costi relativamente bassi in grandi volumi.",
+          "riferimento": "📖 ESPLORA — Accumulo con idrogeno verde: la soluzione stagionale"
         }
       ],
-      "spiegazione": "Il pompaggio idroelettrico è ~95% dello storage elettrico mondiale. Le Alpi svizzere e austriache sono la 'batteria' dell'Europa: pompano di notte, producono di giorno."
+      "spiegazione": "Complementarità batterie/idrogeno: Batterie (85-90% efficienza) per accumulo giornaliero/settimanale. Idrogeno (25-35% efficienza) per accumulo stagionale (mesi). Stoccare l'energia solare estiva per usarla in inverno richiederebbe quantità enormi di batterie a costi elevatissimi. L'idrogeno in gasdotti o caverne saline costa molto meno per grandi volumi e lunghi periodi.",
+      "riferimento_principale": "📖 ESPLORA — Accumulo con idrogeno verde: la soluzione stagionale"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è il 'Vehicle to Grid' (V2G) e quale opportunità rappresenta?",
+      "domanda": "Il testo descrive il 'demand response' (gestione della domanda) come uno degli elementi fondamentali della smart grid. Come funziona concretamente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La ricarica ultrarapida per auto elettriche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La rete invia segnali ai consumatori (grandi industrie, lavatrice intelligente, auto elettrica) per spostare i consumi nei momenti di abbondanza di rinnovabili, in cambio di riduzione in bolletta",
+          "corretto": true,
+          "feedback": "Esatto! Il demand response permette flessibilità lato consumo: quando la rete è sotto stress (troppo poco vento/sole), alcuni consumi vengono temporaneamente ridotti o spostati. Un grande stabilimento industriale spegne macchinari non critici per 30 minuti; una lavatrice posticipa il lavaggio di un'ora."
         },
         {
           "id": "b",
-          "testo": "La capacità delle auto elettriche di cedere energia alla rete durante i picchi: le batterie delle auto diventano storage distribuito",
-          "corretto": true,
-          "feedback": "Esatto! Se ogni auto elettrica ha una batteria da 60-100 kWh e passa ferma il 90% del tempo, può cedere energia alla rete quando serve."
+          "testo": "La rete aumenta automaticamente la produzione delle centrali in risposta all'aumento della domanda",
+          "feedback": "Non corretto. Quello è il tradizionale 'load following' (centrali che seguono la domanda). Il demand response funziona nell'altra direzione: è la domanda che si adatta alla produzione disponibile.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
         },
         {
           "id": "c",
-          "testo": "Un sistema di navigazione intelligente per veicoli elettrici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I consumatori installano pannelli solari per ridurre la dipendenza dalla rete in risposta all'aumento delle tariffe",
+          "feedback": "Non corretto. L'installazione di pannelli è una forma di autoconsumo, non demand response. Il demand response è la variazione temporanea del consumo in risposta a segnali della rete.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
         },
         {
           "id": "d",
-          "testo": "La rete di colonnine per auto elettriche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I gestori di rete spengono l'energia ai consumatori domestici nelle ore di punta senza preavviso",
+          "feedback": "Non corretto. Lo spegnimento forzato senza preavviso è il 'load shedding' (distacco del carico) di emergenza. Il demand response è volontario e incentivato: i partecipanti ricevono compensi per modificare i consumi.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
         }
       ],
-      "spiegazione": "Se ogni auto elettrica ha una batteria da 60-100 kWh e passa ferma il 90% del tempo, può cedere energia alla rete quando serve. Milioni di auto = GWh di storage distribuito."
+      "spiegazione": "Il demand response è la flessibilità lato consumo: invece di (solo) far variare la produzione per seguire la domanda, si modifica la domanda per adattarsi alla produzione disponibile. Grande industria: spegne macchinari non critici per 30 min quando la rete è sotto stress (e riceve compenso). Casa intelligente: la lavatrice parte quando il solare è abbondante. Auto V2G: si ricarica di notte quando c'è vento e i prezzi sono bassi.",
+      "riferimento_principale": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'demand response' nella gestione della rete elettrica?",
+      "domanda": "Il testo descrive i 'prezzi negativi' dell'elettricità come 'il segnale più chiaro dell'urgenza dell'accumulo'. In Germania nel 2024 ci sono stati oltre 400 ore di prezzi negativi. Cosa succede fisicamente durante queste ore?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La risposta automatica dei generatori ai picchi di domanda",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'offerta di rinnovabili supera la domanda: la rete è a rischio di sovrafrequenza, i produttori pagano i consumatori per assorbire l'eccesso, le turbine vengono rallentate",
+          "corretto": true,
+          "feedback": "Esatto! Con prezzi negativi: l'energia rinnovabile supera la domanda, la rete tende verso la sovrafrequenza (pericolosa per i trasformatori), i produttori pagano letteralmente per far assorbire l'elettricità, e alla fine le turbine vengono rallentate (curtailment). È spreco di energia prodotta."
         },
         {
           "id": "b",
-          "testo": "La modulazione dei consumi in risposta ai segnali di prezzo o rete: lavastoviglie che si avviano di notte, industrie che riducono i consumi durante i picchi",
-          "corretto": true,
-          "feedback": "Esatto! La demand response è lo storage 'gratuito': invece di accumulare energia si sposta il consumo."
+          "testo": "I consumatori vengono pagati per consumare più energia durante queste ore, incentivando i riscaldamenti domestici",
+          "feedback": "Non corretto (parzialmente vero). Sì, i consumatori vengono incentivati, ma l'evento fisico sottostante è la sovrapproduzione rinnovabile che mette a rischio la stabilità della rete, non un programma di incentivo al riscaldamento.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
         },
         {
           "id": "c",
-          "testo": "Il sistema di previsione della domanda elettrica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le centrali nucleari o a carbone producono troppo e non possono spegnersi rapidamente: l'eccesso abbassa il prezzo",
+          "feedback": "Non corretto (parzialmente). Le centrali non flessibili (nucleare, carbone) contribuiscono al problema non potendo ridursi rapidamente. Ma il principale driver dei prezzi negativi in Germania nel 2024 è la sovrapproduzione di eolico e solare.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
         },
         {
           "id": "d",
-          "testo": "La gestione delle interruzioni di energia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I costi di trasmissione dell'elettricità diventano negativi per errori di calcolo del gestore di rete",
+          "feedback": "Non corretto. I prezzi negativi non sono errori: sono segnali reali del mercato elettrico all'ingrosso che indicano eccesso di offerta rispetto alla domanda in quel momento.",
+          "riferimento": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
         }
       ],
-      "spiegazione": "La demand response è lo storage 'gratuito': invece di accumulare energia si sposta il consumo. Con tariffe orarie dinamiche e smart appliance questo avviene automaticamente."
+      "spiegazione": "Prezzi negativi: la rete elettrica deve bilanciare produzione e consumo in ogni istante. Quando le rinnovabili producono troppo e la domanda è bassa, la frequenza di rete tende a salire (sovrafrequenza): pericolosa. Per evitarla, i gestori di rete inducono i produttori (pagandoli per ridurre) e i grandi consumatori (pagandoli per consumare di più). Se non basta: curtailment delle turbine = energia sprecata.",
+      "riferimento_principale": "📖 ESPLORA — Smart grid: la rete elettrica intelligente"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è un 'Power Purchase Agreement' (PPA) e perché è importante per le rinnovabili?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "La Gigafactory di Tesla in Nevada nel 2013 produceva 35 GWh/anno da sola, quasi raddoppiando la produzione mondiale. Quale effetto economico specifico voleva ottenere Tesla costruendo questa fabbrica?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un accordo tra produttori di energia per condividere la rete",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sfruttare le economie di scala per abbassare il costo delle batterie: più unità si producono, più il costo per unità scende (curva di apprendimento)",
+          "corretto": true,
+          "feedback": "Esatto! Tesla aveva identificato che il costo delle batterie era il principale ostacolo all'adozione di massa delle auto elettriche. Costruire la fabbrica più grande del mondo avrebbe sfruttato le economie di scala per ridurre il costo/kWh. L'effetto fu una riduzione del 35% tra il 2015 e il 2020."
         },
         {
           "id": "b",
-          "testo": "Un contratto a lungo termine tra un produttore di rinnovabili e un grande acquirente (azienda, comune) a prezzo fisso: garantisce finanziamento e riduce il rischio d'investimento",
-          "corretto": true,
-          "feedback": "Esatto! I PPA sono la formula che ha accelerato le rinnovabili corporate: Google, Amazon, Apple hanno firmato PPA da GW con produttori solari ed eolici per raggiungere il 100% rinnovabile."
+          "testo": "Monopolizzare il mercato delle batterie eliminando i concorrenti giapponesi e coreani",
+          "feedback": "Non corretto. L'obiettivo non era monopolizzare ma abbassare i costi. Panasonic (partner di Tesla nella Gigafactory) è una delle principali aziende giapponesi. L'abbassamento dei costi beneficia tutto il settore.",
+          "riferimento": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
         },
         {
           "id": "c",
-          "testo": "Un prestito bancario per costruire impianti fotovoltaici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ricevere sussidi governativi del Nevada per costruire l'impianto produttivo più grande degli USA",
+          "feedback": "Non corretto. Sebbene la Nevada offrisse incentivi fiscali, il motivo principale era ridurre i costi delle batterie attraverso le economie di scala, non massimizzare i sussidi.",
+          "riferimento": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
         },
         {
           "id": "d",
-          "testo": "Il prezzo di mercato dell'energia rinnovabile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Costruire un'attrazione turistica per promuovere l'immagine di Tesla come azienda tecnologica innovativa",
+          "feedback": "Non corretto. La Gigafactory è uno stabilimento industriale, non un'attrazione turistica. L'obiettivo era industriale e economico: ridurre i costi delle batterie attraverso la produzione di massa.",
+          "riferimento": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
         }
       ],
-      "spiegazione": "I PPA sono la formula che ha accelerato le rinnovabili corporate: Google, Amazon, Apple hanno firmato PPA da GW con produttori solari ed eolici per raggiungere il 100% rinnovabile."
+      "spiegazione": "Tesla ha costruito la Gigafactory perché aveva identificato il problema chiave: le batterie costavano troppo (circa 1.200 $/kWh nel 2010) per rendere le auto elettriche competitive. L'unico modo per ridurre il costo era produrre a scala enorme (economie di scala + curva di apprendimento). La strategia ha funzionato: il costo delle batterie è sceso del 35% tra 2015 e 2020.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è l'idrogeno 'verde', 'blu', 'grigio' e 'turchese'?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo spiega che le batterie al litio 'esaurite' (meno dell'80% di capacità originale) vengono riusate come sistemi di accumulo stazionario prima di essere riciclate. Quale logica economica e ambientale sottende questo approccio?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Colori diversi dell'idrogeno puro usati come carburante",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una batteria con il 75% di capacità residua è ancora utilizzabile per applicazioni stazionarie (casa, rete) dove peso e densità energetica sono meno critici che in un veicolo in movimento",
+          "corretto": true,
+          "feedback": "Esatto! Per un'auto, una batteria al 75% di capacità significa autonomia ridotta: non accettabile. Per un accumulo domestico fisso (Powerwall), la stessa batteria funziona perfettamente: non deve muoversi. Il 'second life' delle batterie auto allunga la vita utile dei materiali prima del riciclo."
         },
         {
           "id": "b",
-          "testo": "Verde: da elettrolisi con rinnovabili (zero CO₂). Blu: da gas con CCS (basse emissioni). Grigio: da gas senza CCS (alte emissioni). Turchese: da metano con pirolisi (CO₂ come solido)",
-          "corretto": true,
-          "feedback": "Esatto! La 'rainbow of hydrogen' riflette il metodo di produzione e l'impronta carbonica."
+          "testo": "Le batterie esaurite vengono riusate per ridurre il prezzo delle auto nuove attraverso sussidi incrociati",
+          "feedback": "Non corretto. Il riuso non genera sussidi per le auto nuove. È una strategia di economia circolare: estrarre valore residuo da un asset prima del riciclo costoso.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "c",
-          "testo": "I 4 stadi di purezza dell'idrogeno industriale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le batterie esaurite delle auto vengono riusate nelle case per risparmiare sui costi di smaltimento",
+          "feedback": "Non corretto. Il riuso non è principalmente motivato dal risparmio sullo smaltimento (che avverrà comunque alla fine del 'second life'). La logica è di estrarre valore residuo dal materiale prima del riciclo finale.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "I 4 metodi di stoccaggio dell'idrogeno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La legge europea obbliga i costruttori a riusare tutte le batterie auto prima di smaltirle",
+          "feedback": "Non corretto. Non esiste tale obbligo legale specifico. Il 'second life' è una scelta economica: la batteria ha ancora valore per applicazioni stazionarie, quindi rivenderla o riusarla è più conveniente che riciclarla subito.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         }
       ],
-      "spiegazione": "La 'rainbow of hydrogen' riflette il metodo di produzione e l'impronta carbonica. Solo il verde è davvero sostenibile. Il 96% dell'idrogeno attuale è grigio."
+      "spiegazione": "'Second life' delle batterie: un'auto con batteria al 75% di capacità ha autonomia ridotta → non accettabile per il guidatore. La stessa batteria in un accumulo stazionario (casa, rete) funziona perfettamente: il peso e la densità energetica non sono critici. Questo 'second life' allunga la vita utile complessiva dei materiali (litio, cobalto, nichel) prima del riciclo finale, riducendo l'impatto ambientale totale.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'grid inertia' e perché le rinnovabili la riducono?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo descrive le batterie a flusso vanadio-redox come aventi 'più di 20.000 cicli' di carica/scarica contro i 1.500-3.000 del litio. Perché questa longevità è rilevante per le applicazioni utility-scale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La resistenza della rete ai cambiamenti di tensione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un impianto utility-scale cicla le batterie 1-2 volte al giorno: con 20.000 cicli dura 27-55 anni contro i 4-8 anni del litio, riducendo drasticamente i costi di sostituzione",
+          "corretto": true,
+          "feedback": "Esatto! A 365-730 cicli/anno (1-2 al giorno), 20.000 cicli = 27-55 anni di vita utile. Il litio a 2.000 cicli dura 3-5 anni. Per un grande impianto da 100 MWh, la sostituzione frequente delle batterie al litio è un costo enorme. La lunga vita del vanadio ammortizza il costo iniziale più alto."
         },
         {
           "id": "b",
-          "testo": "La massa rotante di generatori sincronizzati che stabilizza la frequenza della rete (50 Hz): le rinnovabili non hanno massa rotante e riducono questa riserva di stabilità",
-          "corretto": true,
-          "feedback": "Esatto! Una rete con alta penetrazione rinnovabile (inverter-based) perde inerzia fisica."
+          "testo": "Le batterie a flusso non si scaricano mai completamente, quindi mantengono sempre il 100% di capacità per tutta la vita",
+          "feedback": "Non corretto. Anche le batterie a flusso si degradano leggermente nel tempo e si scaricano durante il funzionamento. Il vantaggio è la longevità in termini di cicli, non l'assenza di degradazione.",
+          "riferimento": "📖 ESPLORA — Batterie a flusso (flow batteries): per impianti grandi"
         },
         {
           "id": "c",
-          "testo": "La capacità della rete di trasportare energia su lunghe distanze",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I 20.000 cicli significano che la batteria può caricarsi 20.000 volte più velocemente del litio",
+          "feedback": "Non corretto. Il numero di cicli indica la longevità (quante volte può essere caricata/scaricata prima di degradarsi significativamente), non la velocità di ricarica.",
+          "riferimento": "📖 ESPLORA — Batterie a flusso (flow batteries): per impianti grandi"
         },
         {
           "id": "d",
-          "testo": "La resilienza della rete ai guasti dei singoli nodi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non è rilevante per le utility-scale perché le batterie vengono sempre sostituite annualmente per contratto",
+          "feedback": "Non corretto. Le batterie utility-scale non vengono sostituite annualmente 'per contratto'. La longevità è un fattore economico critico: meno sostituzioni = meno costi nel lungo periodo.",
+          "riferimento": "📖 ESPLORA — Batterie a flusso (flow batteries): per impianti grandi"
         }
       ],
-      "spiegazione": "Una rete con alta penetrazione rinnovabile (inverter-based) perde inerzia fisica. Ogni guasto rischia oscillazioni di frequenza più rapide e severe. I condensatori sincroni e gli 'inverter virtuali' compensano."
+      "spiegazione": "Per applicazioni utility-scale (100+ MWh che ciclano 1-2 volte al giorno): batterie al litio (1.500-3.000 cicli) → durata 2-8 anni → costose sostituzioni frequenti. Batterie a flusso vanadio (20.000+ cicli) → durata 27-55 anni → minori costi di sostituzione. Il costo iniziale del vanadio è più alto, ma il costo per ciclo nell'arco della vita è competitivo per grandi impianti con utilizzo intensivo.",
+      "riferimento_principale": "📖 ESPLORA — Batterie a flusso (flow batteries): per impianti grandi"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo descrive il 'mito della batteria auto che dura poco': dati Tesla mostrano meno del 10% di degrado della capacità dopo 300.000 km. Come si confronta con le automobili a benzina per prendere una decisione d'acquisto informata?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un motore a benzina percorre in media 200-250.000 km prima di richiedere una revisione maggiore, quindi la batteria Tesla dura più del motore termico equivalente, contraddicendo il 'mito'",
+          "corretto": true,
+          "feedback": "Esatto! Il confronto è favorevole alla batteria: un motore a benzina raggiunge il limite tecnico a 200-250.000 km in media. La batteria Tesla a 300.000 km ha ancora >90% di capacità. Il 'mito della batteria che dura poco' è confutato dai dati reali."
+        },
+        {
+          "id": "b",
+          "testo": "Non è possibile confrontare perché i motori a benzina si misurano in anni, le batterie in chilometri",
+          "feedback": "Non corretto. Sia i motori a benzina sia le batterie si degradano sia per il tempo (anni di uso) sia per il chilometraggio. Il confronto è valido e mostra che le batterie durano quanto o più dei motori a benzina.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "c",
+          "testo": "La batteria è più durevole ma costa molto di più da sostituire quando finalmente si degrada, bilanciando il vantaggio",
+          "feedback": "Non corretto (parzialmente). Il costo di sostituzione è un fattore reale, ma il testo evidenzia che il 'mito della breve durata' è falso basandosi sui dati reali di Tesla. Il confronto corretto include tutti i costi di manutenzione nel ciclo di vita.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "d",
+          "testo": "I dati Tesla sono di marketing e non riflettono l'esperienza reale dei consumatori con condizioni di guida normali",
+          "feedback": "Non corretto. Il testo cita dati reali raccolti dalla flotta Tesla mondiale. I dati di degrado delle batterie sono verificabili e pubblicati da Tesla in modo trasparente.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        }
+      ],
+      "spiegazione": "Il 'mito' della batteria che dura poco è confutato dai dati: batteria Tesla Model S perde <10% di capacità in 300.000 km. Un motore a benzina raggiunge il limite tecnico a 200-250.000 km in media. Le batterie 'esaurite' (<80% capacità) vengono riusate come accumuli stazionari prima del riciclo. Il problema reale delle batterie è diverso: il costo di sostituzione quando arriva, e l'estrazione di litio/cobalto.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo descrive il mini-idroelettrico con la formula P = η × ρ × g × Q × h. Per un torrente con portata Q=50 l/s e dislivello h=40 m, con η=0,85, quale potenza produce?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "P = 0,85 × 1000 kg/m³ × 9,81 m/s² × 0,05 m³/s × 40 m ≈ 16.677 W ≈ 16,7 kW",
+          "corretto": true,
+          "feedback": "Esatto! P = η × ρ × g × Q × h = 0,85 × 1.000 × 9,81 × 0,05 × 40 = 0,85 × 1.000 × 9,81 × 2 = 0,85 × 19.620 = 16.677 W ≈ 16,7 kW. Energia annua ≈ 16,7 kW × 8.760 h = 146.292 kWh/anno ≈ 146 MWh/anno (se il torrente scorre tutto l'anno)."
+        },
+        {
+          "id": "b",
+          "testo": "P = 0,05 × 40 × 0,85 = 1,7 W: piccola potenza insufficiente per uso pratico",
+          "feedback": "Non corretto. La formula usa le unità del SI: ρ = 1.000 kg/m³ e g = 9,81 m/s² devono essere inclusi nel calcolo. P ≈ 16,7 kW, non 1,7 W.",
+          "riferimento": "🌍 AGISCI — Sezione 2: Analisi delle fonti di produzione disponibili"
+        },
+        {
+          "id": "c",
+          "testo": "P = 50 × 40 = 2.000 W = 2 kW: si moltiplicano solo portata e dislivello",
+          "feedback": "Non corretto. La formula richiede ρ (densità dell'acqua = 1.000 kg/m³), g (gravità = 9,81 m/s²) e η (rendimento = 0,85) oltre a Q e h. P ≈ 16,7 kW.",
+          "riferimento": "🌍 AGISCI — Sezione 2: Analisi delle fonti di produzione disponibili"
+        },
+        {
+          "id": "d",
+          "testo": "Non è possibile calcolare senza sapere la temperatura dell'acqua del torrente",
+          "feedback": "Non corretto. La temperatura dell'acqua non entra nella formula della potenza idroelettrica. I parametri sono: η, ρ (costante = 1.000 kg/m³ per l'acqua liquida), g, Q, h.",
+          "riferimento": "🌍 AGISCI — Sezione 2: Analisi delle fonti di produzione disponibili"
+        }
+      ],
+      "spiegazione": "P = η × ρ × g × Q × h = 0,85 × 1.000 × 9,81 × 0,05 × 40. Passo per passo: Q = 50 l/s = 0,05 m³/s. P = 0,85 × 1.000 × 9,81 × 0,05 × 40 = 0,85 × 19.620 W = 16.677 W ≈ 16,7 kW. Energia annua = 16,7 × 8.760 × 0,7 (fattore utilizzo) ≈ 100 MWh/anno (se il torrente non si asciuga mai).",
+      "riferimento_principale": "🌍 AGISCI — Sezione 2: Analisi delle fonti di produzione disponibili"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo descrive il cobalto nella batteria del telefono e le sue origini nella RDC con lavoro minorile. Come si dovrebbe valutare criticamente un produttore che afferma 'le nostre batterie sono etiche' sul proprio sito?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Verificare se esiste una certificazione di terze parti (es. Responsible Minerals Initiative) che audita la catena di fornitura fino alle miniere, non solo le dichiarazioni del produttore",
+          "corretto": true,
+          "feedback": "Esatto! Le dichiarazioni del produttore sono 'greenwashing' potenziale senza verifiche. Le certificazioni come RMI (Responsible Minerals Initiative), CoC (Chain of Custody) verificano la filiera con audit indipendenti. Un'azienda che usa LFP (litio ferro fosfato, senza cobalto) può anche affermare genuinamente l'assenza del problema."
+        },
+        {
+          "id": "b",
+          "testo": "Accettare la dichiarazione perché le aziende europee sono obbligate per legge a dire la verità sul sito web",
+          "feedback": "Non corretto. Le dichiarazioni marketing non sono verificate automaticamente per legge. La Corporate Sustainability Due Diligence Directive (in vigore dal 2026) richiede due diligence sulle filiere, ma la certificazione indipendente rimane il modo più affidabile per verificare.",
+          "riferimento": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
+        },
+        {
+          "id": "c",
+          "testo": "Non è possibile verificare queste affermazioni: la filiera del cobalto è troppo complessa per essere tracciata",
+          "feedback": "Non corretto. Sebbene complessa, la filiera del cobalto è tracciabile con gli strumenti giusti. Organizzazioni come RMI, Fairmined, e certificatori indipendenti audita la catena. Non è semplice ma è possibile.",
+          "riferimento": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
+        },
+        {
+          "id": "d",
+          "testo": "La soluzione più semplice è non comprare smartphone: eliminare la domanda elimina il problema",
+          "feedback": "Non corretto. Rinunciare ai dispositivi elettronici non è una soluzione pratica o equa. Il problema si affronta con trasparenza della filiera, certificazioni, innovazione tecnologica (LFP senza cobalto) e pressione normativa.",
+          "riferimento": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
+        }
+      ],
+      "spiegazione": "Valutare la claim 'batterie etiche': 1) Verifica se esiste certificazione RMI o equivalente (audit indipendente della catena di fornitura). 2) Verifica se il produttore usa LFP (senza cobalto) — Tesla Powerwall e alcuni veicoli già lo usano. 3) Controlla il report di sostenibilità per i dati specifici sulla catena mineraria. Le dichiarazioni non verificate da terze parti indipendenti sono potenziale greenwashing.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la Gigafactory di Tesla in Nevada"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo descrive il sistema V2G con 30 auto elettriche con batterie da 50 kWh che cedono il 30% durante il giorno. Quale calcolo produce la quantità di energia disponibile, e quando conviene usarla?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "15 auto × 50 kWh × 0,30 = 225 kWh disponibili; conviene usarli durante il picco di consumo mattutino (8-10) quando la domanda è alta e la produzione solare non ha ancora raggiunto il massimo",
+          "corretto": true,
+          "feedback": "Esatto! 15 auto × 50 kWh × 0,30 = 225 kWh. Quando usarli: durante il picco mattutino (arrivo in ufficio, 8-10) quando la domanda è alta ma il solare fotovoltaico non ha ancora raggiunto il suo picco di mezzogiorno. Il V2G bilancia la rete proprio dove serve."
+        },
+        {
+          "id": "b",
+          "testo": "30 auto × 50 kWh = 1.500 kWh disponibili subito: meglio cedere tutta l'energia del 100% della batteria di tutte le auto",
+          "feedback": "Non corretto. Il testo dice 'metà delle auto' (15 auto su 30) cedono il 30% della loro capacità. Cedere il 100% lascerebbe le auto senza energia per il ritorno a casa."
+        },
+        {
+          "id": "c",
+          "testo": "15 auto × 50 kWh × 0,70 = 525 kWh: si usa il 70% perché il 30% si perde per l'efficienza della conversione",
+          "feedback": "Non corretto. Il 30% nel testo indica la quota di energia ceduta alla rete (30% della batteria), non le perdite di conversione. La formula corretta è 15 × 50 × 0,30 = 225 kWh."
+        },
+        {
+          "id": "d",
+          "testo": "Non è possibile calcolare senza conoscere la tensione delle batterie delle auto",
+          "feedback": "Non corretto. Per calcolare l'energia in kWh ceduta, si usa direttamente la formula: numero di auto × capacità in kWh × frazione ceduta. La tensione è già incorporata nel dato di capacità in kWh."
+        }
+      ],
+      "spiegazione": "Calcolo V2G: 30 stalli, metà delle auto elettriche = 15 auto. Ognuna ha 50 kWh. Cede il 30%: 50 kWh × 0,30 = 15 kWh per auto. Totale: 15 auto × 15 kWh = 225 kWh disponibili. Timing ottimale: mattina (8-10) durante il picco di consumo degli uffici, quando il fotovoltaico non ha ancora raggiunto il picco di mezzogiorno. Così si bilancia la rete nei momenti di maggiore necessità.",
+      "riferimento_principale": "🌍 AGISCI — Sezione 4: Analisi del sistema V2G"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo descrive le Comunità Energetiche Rinnovabili (CER) come introdotte dal D.Lgs. 199/2021. Il testo nota che la crescita è 'ancora lenta'. Quali ostacoli non tecnologici potrebbe spiegare questa lentezza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Complessità burocratica (iter autorizzativi, forme giuridiche, contratti con il GSE), mancanza di modelli di business chiari, scarsa informazione dei cittadini, e resistenze degli operatori energetici tradizionali",
+          "corretto": true,
+          "feedback": "Esatto! Le CER sono tecnicamente fattibili (impianti fotovoltaici comuni, contatori intelligenti). Gli ostacoli sono non tecnologici: iter burocratici lunghi, incertezza sui modelli di business, mancanza di soggetti competenti per guidare la formazione delle comunità, e posizioni difensive di alcuni operatori di rete."
+        },
+        {
+          "id": "b",
+          "testo": "La tecnologia fotovoltaica non è ancora abbastanza efficiente per soddisfare i bisogni delle comunità",
+          "feedback": "Non corretto. Il testo dice che il costo solare è già competitivo. Il problema non è tecnologico ma burocratico, informativo e di governance.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        },
+        {
+          "id": "c",
+          "testo": "Le CER sono illegali in molte regioni italiane per conflitti con le normative locali",
+          "feedback": "Non corretto. Il D.Lgs. 199/2021 le ha introdotte legalmente in tutta Italia. Il problema non è l'illegalità ma la complessità attuativa e la mancanza di supporto a chi vuole costituirle.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        },
+        {
+          "id": "d",
+          "testo": "I cittadini non vogliono partecipare alle CER perché preferiscono soluzioni individuali come i pannelli solari privati",
+          "feedback": "Non corretto. Ci sono esempi di CER di successo in tutta Italia e in Europa. Il problema non è la mancanza di interesse ma gli ostacoli burocratici e informativi.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        }
+      ],
+      "spiegazione": "Le CER sono tecnicamente possibili e legalmente previste dal 2021. La crescita lenta riflette ostacoli non tecnologici: 1) Iter burocratici complessi (forma giuridica, accordi con GSE, connessione alla rete); 2) Mancanza di 'animatori di comunità' che guidino il processo; 3) Modelli economici ancora poco chiari per i partecipanti; 4) Resistenze degli operatori di rete tradizionali; 5) Scarsa informazione disponibile ai comuni e ai cittadini interessati.",
+      "riferimento_principale": "🌍 AGISCI — La consegna"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'la transizione energetica richiede la soluzione dell'accumulo' e che 'ogni progetto di accumulo contribuisce a dimostrare che il sistema funziona'. Quale meccanismo specifico spiega questo effetto dimostrativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I progetti realizzati abbassano i costi (curva di apprendimento), creano competenze locali, riducono il rischio percepito per altri investitori, e forniscono dati reali sui quali basare le politiche energetiche",
+          "corretto": true,
+          "feedback": "Esatto! L'effetto dimostrativo funziona attraverso: 1) curva di apprendimento industriale (produzione di massa abbassa i costi), 2) creazione di competenze locali (installatori, gestori, ingegneri), 3) riduzione del 'rischio percepito' per banche e investitori (il sistema funziona davvero), 4) dati empirici per calibrare le politiche."
+        },
+        {
+          "id": "b",
+          "testo": "I progetti dimostrativi ricevono sussidi pubblici che rendono competitiva la tecnologia solo artificialmente",
+          "feedback": "Non corretto. Sebbene i sussidi abbiano giocato un ruolo iniziale, l'abbassamento dei costi attraverso la curva di apprendimento è reale e strutturale, non artificiale. Il fotovoltaico è ora economicamente competitivo senza sussidi in molte aree.",
+          "riferimento": "🎯 Badge SDG 7, 9, 13"
+        },
+        {
+          "id": "c",
+          "testo": "Un progetto di accumulo dimostrativo non ha effetti sull'intero settore: ogni progetto è indipendente dagli altri",
+          "feedback": "Non corretto. I progetti non sono indipendenti: i dati di costo, le tecniche di installazione, le competenze sviluppate si accumulano e si diffondono nell'intero settore. Questo è il principio della curva di apprendimento.",
+          "riferimento": "🎯 Badge SDG 7, 9, 13"
+        },
+        {
+          "id": "d",
+          "testo": "L'effetto dimostrativo è solo psicologico: non riduce realmente i costi ma aumenta la fiducia dei consumatori",
+          "feedback": "Non corretto. L'effetto della curva di apprendimento è economicamente reale e misurabile: il costo delle batterie al litio è sceso del 97% in parte per questo meccanismo. Non è solo psicologia.",
+          "riferimento": "🎯 Badge SDG 7, 9, 13"
+        }
+      ],
+      "spiegazione": "L'effetto dimostrativo dell'accumulo funziona attraverso la curva di apprendimento: ogni impianto costruito accumula dati sull'efficienza reale, crea competenze locali (installatori, manutentori), abbassa i costi di produzione (economie di scala), riduce il rischio percepito per gli investitori successivi, e fornisce evidenze empiriche per calibrare le politiche. È il meccanismo con cui ogni tecnologia passa da nicchia a mercato di massa.",
+      "riferimento_principale": "🎯 Badge SDG 7, 9, 13"
     }
   ]
 }

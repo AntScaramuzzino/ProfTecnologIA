@@ -1,259 +1,247 @@
 {
   "mc_id": "MC-COM-3-06",
-  "titolo": "Media digitali, pubblicità e pensiero critico",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa si intende per 'fake news'?",
+      "domanda": "Cos'è l'economia dell'attenzione?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Notizie semplicemente spiacevoli o negative",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Informazioni false o fuorvianti diffuse intenzionalmente come se fossero notizie vere",
-          "corretto": true,
-          "feedback": "Esatto! Le fake news sono progettate per ingannare e manipolare."
-        },
-        {
-          "id": "c",
-          "testo": "Notizie pubblicate senza verificare le fonti",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Contenuti satirici che imitano il giornalismo",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Un sistema economico in cui la risorsa scarsa è la capacità di concentrazione umana, venduta agli inserzionisti", "corretto": true, "feedback": "Esatto! Le piattaforme digitali sono gratuite per l'utente perché il loro prodotto è l'attenzione degli utenti, venduta agli inserzionisti." },
+        { "id": "b", "testo": "Un sistema economico in cui le aziende pagano gli utenti per guardare pubblicità", "corretto": false, "feedback": "Non è corretto. Gli utenti non vengono pagati: la loro attenzione è il 'prodotto' venduto agli inserzionisti senza compenso diretto.", "riferimento": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto" },
+        { "id": "c", "testo": "Un sistema economico basato sulla vendita di abbonamenti digitali", "corretto": false, "feedback": "Non è corretto. Gli abbonamenti sono modelli alternativi. L'economia dell'attenzione è specifica del modello gratuito finanziato dalla pubblicità.", "riferimento": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto" },
+        { "id": "d", "testo": "Il mercato delle app a pagamento sull'App Store", "corretto": false, "feedback": "Non è corretto. Le app a pagamento non si basano sull'economia dell'attenzione: vendono il prodotto direttamente all'utente.", "riferimento": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto" }
       ],
-      "spiegazione": "Le fake news sono progettate per ingannare e manipolare. La satira è legittima quando è riconoscibile come tale."
+      "spiegazione": "L'economia dell'attenzione, descritta dal giurista Tim Wu nel 2006, è il sistema in cui la risorsa scarsa è la capacità di concentrazione umana. Le piattaforme digitali (Google, Facebook, TikTok) sono gratuite perché vendono l'attenzione degli utenti agli inserzionisti: ogni secondo che passi su TikTok ha un valore economico — non per te, ma per TikTok.",
+      "riferimento_principale": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è una 'fonte primaria' nell'informazione?",
+      "domanda": "Cosa distingue la 'misinformazione' dalla 'disinformazione'?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Una fonte molto famosa e seguita",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "La fonte originale dell'informazione: il documento ufficiale, la ricerca scientifica, il comunicato dell'ente",
-          "corretto": true,
-          "feedback": "Esatto! Una fonte primaria è la materia prima dell'informazione."
-        },
-        {
-          "id": "c",
-          "testo": "La prima testata giornalistica che ha pubblicato la notizia",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Una fonte citata da più di 3 giornali diversi",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Misinformazione è condivisa senza intento di ingannare; disinformazione è deliberatamente falsa e ingannevole", "corretto": true, "feedback": "Esatto! Chi diffonde misinformazione ci crede. Chi diffonde disinformazione sa (o non si preoccupa) che è falsa e ha l'intento di ingannare." },
+        { "id": "b", "testo": "Misinformazione è sui social media; disinformazione è sulla televisione", "corretto": false, "feedback": "Non è corretto. Entrambi i fenomeni esistono su tutti i media: la distinzione riguarda l'intenzione, non il canale.", "riferimento": "📖 ESPLORA — Disinformazione, misinformazione, malinformazione: le distinzioni che contano" },
+        { "id": "c", "testo": "Misinformazione riguarda la politica; disinformazione riguarda la scienza", "corretto": false, "feedback": "Non è corretto. Entrambi i fenomeni esistono in tutti i settori: la distinzione è l'intenzione, non l'argomento.", "riferimento": "📖 ESPLORA — Disinformazione, misinformazione, malinformazione: le distinzioni che contano" },
+        { "id": "d", "testo": "Sono sinonimi: entrambe indicano informazioni false", "corretto": false, "feedback": "Non è corretto. Il testo sottolinea che la distinzione è importante perché le risposte appropriate sono diverse.", "riferimento": "📖 ESPLORA — Disinformazione, misinformazione, malinformazione: le distinzioni che contano" }
       ],
-      "spiegazione": "Una fonte primaria è la materia prima dell'informazione. Citare il giornale che cita la ricerca non è citare la fonte primaria."
+      "spiegazione": "La misinformazione è informazione falsa condivisa senza intento di ingannare (chi la diffonde ci crede). La disinformazione è informazione falsa diffusa deliberatamente per ingannare. La malinformazione è informazione vera usata con intento di danno. La distinzione è cruciale perché le risposte appropriate sono diverse.",
+      "riferimento_principale": "📖 ESPLORA — Disinformazione, misinformazione, malinformazione: le distinzioni che contano"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il 'fact-checking'?",
+      "domanda": "Cosa misura il feed algoritmo di TikTok per decidere cosa mostrarti?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "La verifica tecnica della qualità di un sito web",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Il processo sistematico di verifica dell'accuratezza delle affermazioni pubbliche usando fonti verificabili",
-          "corretto": true,
-          "feedback": "Esatto! Il fact-checking professionale (Snopes, FactCheck, Pagella Politica in Italia) verifica le dichiarazioni dei politici e le notizie virali con metodo documentato."
-        },
-        {
-          "id": "c",
-          "testo": "Il controllo dei diritti d'autore online",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "La moderazione dei commenti sui social network",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "I segnali di engagement: quanto hai guardato un video, like, commenti, condivisioni, visite al profilo", "corretto": true, "feedback": "Esatto! TikTok usa questi segnali impliciti per costruire un profilo delle tue preferenze reali e selezionare il contenuto con più probabilità di engagement." },
+        { "id": "b", "testo": "Solo il numero di like che un video ha ricevuto in totale", "corretto": false, "feedback": "Non è corretto. I like totali sono un segnale, ma il sistema usa molti segnali personali: quanto hai guardato, se sei tornato sul profilo, ecc.", "riferimento": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione" },
+        { "id": "c", "testo": "Le tue preferenze dichiarate nel profilo", "corretto": false, "feedback": "Non è corretto. L'algoritmo usa principalmente i comportamenti impliciti (quanto guardi davvero), non le preferenze dichiarate.", "riferimento": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione" },
+        { "id": "d", "testo": "La popolarità globale del video indipendentemente da te", "corretto": false, "feedback": "Non è corretto. La personalizzazione è il punto centrale: il sistema adatta il contenuto al profilo specifico dell'utente.", "riferimento": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione" }
       ],
-      "spiegazione": "Il fact-checking professionale (Snopes, FactCheck, Pagella Politica in Italia) verifica le dichiarazioni dei politici e le notizie virali con metodo documentato."
+      "spiegazione": "L'algoritmo di TikTok usa segnali di engagement personali: quanto tempo guardi ogni video (se guardi i 60 secondi completi vs se scrolli via dopo 3), like, commenti, condivisioni, visite al profilo del creator. Questi segnali rivelano le preferenze implicite — non quelle dichiarate.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'filter bubble' (bolla di filtraggio)?",
+      "opzioni": [
+        { "id": "a", "testo": "L'ambiente informativo personalizzato creato dagli algoritmi che mostra sempre più contenuti simili a quelli già visti", "corretto": true, "feedback": "Esatto! Il termine fu coniato da Eli Pariser nel 2011: gli algoritmi creano bolle personalizzate che restringono gradualmente la visione del mondo senza che ce ne accorgiamo." },
+        { "id": "b", "testo": "Un filtro antispam che blocca le email non desiderate", "corretto": false, "feedback": "Non è corretto. Il filter bubble riguarda la selezione algoritmica dei contenuti sui social, non i filtri email.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" },
+        { "id": "c", "testo": "Una privacy setting che nasconde i tuoi post agli estranei", "corretto": false, "feedback": "Non è corretto. Il filter bubble è un fenomeno algoritmico che riguarda cosa vedi tu, non chi vede i tuoi contenuti.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" },
+        { "id": "d", "testo": "Un sistema che filtra le fake news automaticamente", "corretto": false, "feedback": "Non è corretto. Il filter bubble può amplificare anche le fake news: non è un sistema di protezione ma un effetto collaterale dell'ottimizzazione.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" }
+      ],
+      "spiegazione": "Il termine filter bubble fu coniato da Eli Pariser nel 2011: gli algoritmi di raccomandazione creano ambienti informativi personalizzati mostrando sempre più contenuti simili a quelli con cui hai già interagito. La conseguenza è che la tua visione del mondo si restringe gradualmente senza che te ne accorga.",
+      "riferimento_principale": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Chi sono i 'data broker' nella catena della pubblicità programmatica?",
+      "opzioni": [
+        { "id": "a", "testo": "Aziende che raccolgono, aggregano e rivendono dati su milioni di persone da centinaia di fonti", "corretto": true, "feedback": "Esatto! I data broker (Oracle Data Cloud, Acxiom, Experian) aggregano dati da navigazione web, app, carte fedeltà, acquisti e geolocalizzazione per costruire profili dettagliati." },
+        { "id": "b", "testo": "Le piattaforme che ospitano gli annunci pubblicitari", "corretto": false, "feedback": "Non è corretto. Le piattaforme (Google, Meta) sono supply-side platform o ad network; i data broker sono soggetti separati che vendono profili.", "riferimento": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi" },
+        { "id": "c", "testo": "I creative designer che producono i banner pubblicitari", "corretto": false, "feedback": "Non è corretto. I designer producono i contenuti degli annunci; i data broker gestiscono i dati sugli utenti.", "riferimento": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi" },
+        { "id": "d", "testo": "Gli inserzionisti che comprano spazi pubblicitari", "corretto": false, "feedback": "Non è corretto. Gli inserzionisti comprano visibilità; i data broker vendono i profili degli utenti su cui targetizzare.", "riferimento": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi" }
+      ],
+      "spiegazione": "I data broker (Oracle Data Cloud, Acxiom, Experian) acquistano, aggregano e rivendono dati su centinaia di milioni di persone da centinaia di fonti: navigazione web (cookie), app, carte fedeltà, acquisti con carta, geolocalizzazione, social media. Acxiom dichiara di avere profili su circa 2,5 miliardi di persone nel mondo.",
+      "riferimento_principale": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa prevede il metodo '#ThinkBeforeYouShare' prima di condividere una notizia?",
+      "opzioni": [
+        { "id": "a", "testo": "Verificare la fonte originale, la data, leggere l'articolo completo e chiedersi se si condivide perché è vero o perché conferma ciò in cui si crede", "corretto": true, "feedback": "Esatto! Il metodo prevede 5 domande: fonte originale? data aggiornata? ho letto tutto? sto condividendo per il bias di conferma? mi correggerei se sbagliassi?" },
+        { "id": "b", "testo": "Contare i like che la notizia ha ricevuto prima di condividerla", "corretto": false, "feedback": "Non è corretto. I like non indicano la veridicità: le notizie false spesso hanno più like di quelle vere.", "riferimento": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità" },
+        { "id": "c", "testo": "Chiedere al proprio insegnante se la notizia è vera", "corretto": false, "feedback": "Non è corretto. Il metodo prevede tecniche autonome di verifica, non la dipendenza da un'autorità.", "riferimento": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità" },
+        { "id": "d", "testo": "Aspettare 24 ore prima di condividere qualsiasi notizia", "corretto": false, "feedback": "Non è corretto. L'attesa non è il punto: è la verifica attiva della fonte che conta.", "riferimento": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità" }
+      ],
+      "spiegazione": "Il metodo #ThinkBeforeYouShare (UNESCO) prevede 5 domande: 1) Conosco la fonte originale? 2) Ho controllato la data? 3) Ho letto l'articolo completo? 4) Condivido perché è vero o per bias di conferma? 5) Mi correggerei se sbagliassi? Il metodo tratta chi condivide come parte della catena di diffusione.",
+      "riferimento_principale": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il bias di conferma?",
+      "domanda": "Perché i contenuti emotivamente intensi (rabbia, paura, stupore) ottengono più engagement sui social media?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "La tendenza dei giornali a confermare le notizie solo dopo tre fonti",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "La tendenza psicologica a cercare, interpretare e ricordare informazioni che confermano le proprie credenze preesistenti",
-          "corretto": true,
-          "feedback": "Esatto! Il bias di conferma ci fa accettare acriticamente informazioni che confermano ciò che già crediamo e rifiutare quelle che contraddicono."
-        },
-        {
-          "id": "c",
-          "testo": "Un errore nelle statistiche di ricerca",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "La strategia degli algoritmi per mostrare contenuti simili",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Perché gli algoritmi ottimizzano il tempo di permanenza e le emozioni forti tengono le persone più a lungo sullo schermo", "corretto": true, "feedback": "Esatto! Il testo spiega che le piattaforme hanno interesse economico a mostrare contenuti che massimizzano il tempo di permanenza. I contenuti emotivamente intensi sono più efficaci del contenuto neutro." },
+        { "id": "b", "testo": "Perché le persone preferiscono notizie negative per una ragione evolutiva", "corretto": false, "feedback": "Non è corretto. Sebbene esista un 'negativity bias' evolutivo, il testo spiega la causa strutturale: gli algoritmi amplificano attivamente queste emozioni.", "riferimento": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto" },
+        { "id": "c", "testo": "Perché le piattaforme censurano i contenuti positivi", "corretto": false, "feedback": "Non è corretto. Le piattaforme non censurano il positivo: premiano ciò che genera engagement, che tende ad essere emotivamente intenso.", "riferimento": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto" },
+        { "id": "d", "testo": "Perché i creator producono principalmente contenuti negativi per più visualizzazioni", "corretto": false, "feedback": "Non è corretto. Il problema non è la scelta dei creator ma il sistema di incentivi degli algoritmi che premia certi contenuti.", "riferimento": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto" }
       ],
-      "spiegazione": "Il bias di conferma ci fa accettare acriticamente informazioni che confermano ciò che già crediamo e rifiutare quelle che contraddicono. È amplificato dagli algoritmi dei social."
+      "spiegazione": "Il testo spiega la logica dell'economia dell'attenzione: le piattaforme hanno interesse economico a massimizzare il tempo di permanenza degli utenti. I contenuti emotivamente intensi (rabbia, paura, stupore, indignazione) tengono le persone più a lungo — quindi vengono premiati dall'algoritmo. Questo crea un incentivo strutturale verso i contenuti estremi.",
+      "riferimento_principale": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è il 'deepfake'?",
+      "domanda": "L'esperimento di Eli Pariser nel 2010 (due amici che cercano la stessa parola su Google) ha dimostrato cosa?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Un profilo social falso",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Contenuto video/audio generato con AI che mostra persone che fanno o dicono cose che non hanno mai fatto",
-          "corretto": true,
-          "feedback": "Esatto! I deepfake usano AI generativa per creare video falsi convincenti."
-        },
-        {
-          "id": "c",
-          "testo": "Un filtro fotografico che cambia i connotati",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Un tipo di truffa via email",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Che non esiste una 'stessa Google' per tutti: i risultati sono personalizzati sulla base della storia di ricerche", "corretto": true, "feedback": "Esatto! I due amici ottennero risultati diversi cercando la stessa parola: Google personalizzava già i risultati nel 2010. Questo illustra il filter bubble anche nei motori di ricerca." },
+        { "id": "b", "testo": "Che Google mostra risultati diversi in base alla posizione geografica", "corretto": false, "feedback": "Non è corretto. La geolocalizzazione è un fattore, ma l'esperimento di Pariser mostrava la personalizzazione basata sulla storia di ricerche personali.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" },
+        { "id": "c", "testo": "Che i motori di ricerca sono inaffidabili per trovare notizie", "corretto": false, "feedback": "Non è corretto. L'esperimento non dimostra inaffidabilità ma personalizzazione: mostra che l'informazione che ricevi dipende da chi sei.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" },
+        { "id": "d", "testo": "Che gli algoritmi di Google favoriscono le notizie false", "corretto": false, "feedback": "Non è corretto. L'esperimento riguarda la personalizzazione dei risultati, non la promozione delle fake news.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" }
       ],
-      "spiegazione": "I deepfake usano AI generativa per creare video falsi convincenti. Rappresentano una minaccia alla fiducia nell'informazione visiva che storicamente era difficile falsificare."
+      "spiegazione": "L'esperimento di Pariser nel 2010 mostrò che due amici che cercavano la stessa parola su Google ottenevano risultati diversi — personalizzati sulla base della loro storia di ricerche. Non c'era una 'stessa Google' per tutti. Questo illustra il filter bubble anche nei motori di ricerca, non solo nei social.",
+      "riferimento_principale": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'media literacy' (alfabetizzazione mediatica)?",
+      "domanda": "Nel caso #MacronLeaks (2017), perché i documenti rubati furono lanciati di notte tra venerdì e sabato?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "La capacità di leggere e scrivere articoli giornalistici",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "La capacità di accedere, analizzare, valutare, creare e partecipare ai media in modo critico e consapevole",
-          "corretto": true,
-          "feedback": "Esatto! La media literacy è la competenza del XXI secolo: saper distinguere informazione da opinione, riconoscere la propaganda e valutare le fonti."
-        },
-        {
-          "id": "c",
-          "testo": "La conoscenza delle leggi sulla stampa e la pubblicità",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "La competenza tecnica nell'uso dei social network",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Per sfruttare il fuso orario: in Francia era silenzio elettorale, ma in America (dove fu lanciato l'hashtag) no", "corretto": true, "feedback": "Esatto! Il silenzio elettorale francese iniziava il venerdì sera. L'hashtag fu lanciato da account americani quando in Francia era già illegale parlare delle elezioni, ma non in USA." },
+        { "id": "b", "testo": "Perché di notte ci sono più utenti attivi sui social media in Europa", "corretto": false, "feedback": "Non è corretto. Di notte ci sono meno utenti in Europa. Lo scopo era sfruttare il vuoto normativo del silenzio elettorale.", "riferimento": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)" },
+        { "id": "c", "testo": "Perché i team di sicurezza informatica non lavorano la notte", "corretto": false, "feedback": "Non è corretto. Il timing era strategico rispetto al silenzio elettorale, non ai turni dei team di sicurezza.", "riferimento": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)" },
+        { "id": "d", "testo": "Per evitare il controllo dei servizi segreti francesi", "corretto": false, "feedback": "Non è corretto. Il timing era legato al silenzio elettorale e ai fusi orari, non all'evasione dei servizi segreti.", "riferimento": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)" }
       ],
-      "spiegazione": "La media literacy è la competenza del XXI secolo: saper distinguere informazione da opinione, riconoscere la propaganda e valutare le fonti."
+      "spiegazione": "Il timing era strategico: in Francia scattava il silenzio elettorale (illegale commentare notizie elettorali) dal venerdì sera. L'hashtag fu lanciato da account americani nella notte tra venerdì e sabato — quando in Francia era silenzio ma in America no. I social media non hanno confini geografici per il silenzio elettorale.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'greenwashing' nella comunicazione aziendale?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Perché nel caso #MacronLeaks il team di Macron non specificò quali documenti erano falsi e quali autentici?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Il riciclo dei materiali pubblicitari cartacei",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "La pratica di comunicare un'immagine ambientale positiva non supportata da azioni reali o sovradimensionata rispetto all'impatto effettivo",
-          "corretto": true,
-          "feedback": "Esatto! Il greenwashing è una forma di inganno comunicativo: mina la fiducia dei consumatori e distoglie attenzione dalle aziende genuinamente sostenibili."
-        },
-        {
-          "id": "c",
-          "testo": "La scelta di colori verdi nel design pubblicitario",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "La certificazione ambientale della comunicazione aziendale",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Per rendere impossibile la verifica e costringere i media a non coprire la storia durante il silenzio elettorale",
+          "corretto": true, "feedback": "Esatto! Il testo spiega che fu 'una tattica deliberata': dichiarando una combinazione di vero e falso senza specificare cosa, si rendeva impossibile la verifica rapida." },
+        { "id": "b", "testo": "Perché non sapevano ancora quali documenti fossero stati rubati", "corretto": false, "feedback": "Non è corretto. Il testo descrive la risposta come una tattica deliberata, non come ignoranza.", "riferimento": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)" },
+        { "id": "c", "testo": "Perché farlo avrebbe violato il silenzio elettorale", "corretto": false, "feedback": "Non è corretto. La dichiarazione del team Macron fu fatta appena iniziò a circolare la notizia, prima del silenzio pieno.", "riferimento": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)" },
+        { "id": "d", "testo": "Perché i documenti veri dovevano rimanere segreti per la sicurezza nazionale", "corretto": false, "feedback": "Non è corretto. Il testo spiega che la tattica era comunicativa, non di sicurezza nazionale.", "riferimento": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)" }
       ],
-      "spiegazione": "Il greenwashing è una forma di inganno comunicativo: mina la fiducia dei consumatori e distoglie attenzione dalle aziende genuinamente sostenibili."
+      "spiegazione": "Il testo descrive la risposta del team Macron come 'una tattica deliberata': dichiarando che i documenti erano una 'combinazione di materiale autentico e documenti falsificati' senza specificare quali, rendevano impossibile una verifica rapida. La presenza di documenti reali abbassava la guardia critica del lettore.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: anatomia di una campagna di disinformazione — #MacronLeaks (2017)"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'computational propaganda'?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Come si rompe una filter bubble in modo pratico secondo il testo?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "La propaganda distribuita tramite volantini digitali",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "L'uso di algoritmi, bot e automazione per diffondere disinformazione politica su larga scala manipolando l'opinione pubblica",
-          "corretto": true,
-          "feedback": "Esatto! I bot possono amplificare artificialmente messaggi politici, far sembrare che un'opinione sia maggioritaria quando non lo è, influenzando elezioni e decisioni pubbliche."
-        },
-        {
-          "id": "c",
-          "testo": "La pubblicità politica a pagamento sui social",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "L'analisi dei dati per creare messaggi politici mirati",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Seguire deliberatamente fonti con cui non si è d'accordo, usare il feed cronologico e cercare informazioni fuori dall'algoritmo", "corretto": true, "feedback": "Esatto! Il testo suggerisce queste strategie specifiche: diversificazione attiva delle fonti, uso del feed cronologico (disponibile su Meta/Instagram), ricerca deliberata invece di attendere l'algoritmo." },
+        { "id": "b", "testo": "Eliminare il proprio account dai social media", "corretto": false, "feedback": "Non è corretto. Il testo non suggerisce l'eliminazione degli account ma la consapevolezza e la diversificazione attiva.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" },
+        { "id": "c", "testo": "Usare una VPN per cambiare la propria localizzazione geografica", "corretto": false, "feedback": "Non è corretto. La VPN non rompe il filter bubble: gli algoritmi usano il tuo storico di interazioni, non solo la localizzazione.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" },
+        { "id": "d", "testo": "Guardare solo notizie dai telegiornali tradizionali", "corretto": false, "feedback": "Non è corretto. I telegiornali possono avere bias propri. Il testo suggerisce diversificazione delle fonti, non il ritorno ai media tradizionali.", "riferimento": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono" }
       ],
-      "spiegazione": "I bot possono amplificare artificialmente messaggi politici, far sembrare che un'opinione sia maggioritaria quando non lo è, influenzando elezioni e decisioni pubbliche."
+      "spiegazione": "Il testo suggerisce quattro strategie: 1) Diversificazione attiva delle fonti (seguire chi non si è d'accordo); 2) Uso del feed cronologico quando disponibile; 3) Ricerca deliberata fuori dall'algoritmo (usare il motore di ricerca invece di aspettare); 4) Consapevolezza dei pattern (chiedersi cosa manca nel proprio feed).",
+      "riferimento_principale": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono"
     },
     {
-      "livello": "A",
-      "domanda": "Perché il 'diritto all'oblio' è importante nell'era digitale?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché il GDPR ha introdotto i 'banner dei cookie' su tutti i siti europei?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Perché permette di dimenticare le proprie password",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Perché riconosce il diritto delle persone a richiedere la rimozione di informazioni personali obsolete o irrilevanti dai motori di ricerca",
-          "corretto": true,
-          "feedback": "Esatto! La sentenza Google Spain (CGUE 2014) ha stabilito che le persone hanno diritto a chiedere la de-indicizzazione di contenuti che non riflettono più la loro situazione attuale."
-        },
-        {
-          "id": "c",
-          "testo": "Perché obbliga i social a cancellare i profili inattivi",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Perché limita la durata dei cookie di tracciamento",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Perché richiede il consenso esplicito per la raccolta e l'uso dei dati personali, inclusi i cookie di tracciamento",
+          "corretto": true, "feedback": "Esatto! Il GDPR (2018) richiede consenso esplicito per i cookie di terze parti usati per il profiling. I banner sono la conseguenza diretta di questo obbligo." },
+        { "id": "b", "testo": "Perché i cookie rallentano i siti web e richiedono avvisi tecnici", "corretto": false, "feedback": "Non è corretto. I cookie non richiedono avvisi per ragioni di performance: i banner sono richiesti per il consenso alla raccolta di dati personali.", "riferimento": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi" },
+        { "id": "c", "testo": "Perché l'UE vuole sapere quanti siti web esistono in Europa", "corretto": false, "feedback": "Non è corretto. Il GDPR protegge la privacy degli utenti, non monitora il numero di siti web.", "riferimento": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi" },
+        { "id": "d", "testo": "Perché i cookie possono contenere malware e devono essere approvati dall'utente per sicurezza", "corretto": false, "feedback": "Non è corretto. I banner GDPR riguardano la privacy e il tracciamento, non la sicurezza informatica.", "riferimento": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi" }
       ],
-      "spiegazione": "La sentenza Google Spain (CGUE 2014) ha stabilito che le persone hanno diritto a chiedere la de-indicizzazione di contenuti che non riflettono più la loro situazione attuale."
+      "spiegazione": "Il GDPR (General Data Protection Regulation, 2018) richiede consenso esplicito prima che i siti raccolgano dati personali attraverso cookie di tracciamento di terze parti. I banner cookie che vedi su ogni sito italiano ed europeo sono la diretta conseguenza di questo obbligo legale.",
+      "riferimento_principale": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Lo studio MIT (2018, Science) ha misurato che la disinformazione si diffonde 6 volte più velocemente della verità. Perché?",
+      "opzioni": [
+        { "id": "a", "testo": "Perché è più 'nuova', emotivamente intensa e sorprendente: esattamente i fattori che l'algoritmo premia con più visibilità",
+          "corretto": true, "feedback": "Esatto! Il testo cita lo studio Vosoughi et al. (2018, Science): la disinformazione è più 'nuova', sorprendente e emotivamente intensa — e gli algoritmi premiano esattamente questi fattori per massimizzare l'engagement." },
+        { "id": "b", "testo": "Perché le persone condividono deliberatamente le notizie false sapendo che lo sono", "corretto": false, "feedback": "Non è corretto. La maggior parte di chi diffonde disinformazione ci crede (misinformazione). La velocità dipende dall'intensità emotiva, non dall'intenzione.", "riferimento": "📖 ESPLORA — Collegamento STEM — Matematica" },
+        { "id": "c", "testo": "Perché le piattaforme amplificano intenzionalmente le notizie false", "corretto": false, "feedback": "Non è corretto. Le piattaforme non amplificano intenzionalmente le fake news: è l'effetto collaterale dell'ottimizzazione per l'engagement.", "riferimento": "📖 ESPLORA — Collegamento STEM — Matematica" },
+        { "id": "d", "testo": "Perché ci sono più bot che umani a condividere notizie false", "corretto": false, "feedback": "Non è corretto. Lo studio Vosoughi et al. aveva controllato per i bot: la diffusione più rapida della disinformazione è dovuta agli umani, non ai bot.", "riferimento": "📖 ESPLORA — Collegamento STEM — Matematica" }
+      ],
+      "spiegazione": "Lo studio Vosoughi et al. (2018, Science) ha dimostrato che la disinformazione si diffonde mediamente 6 volte più velocemente della verità su Twitter — e che questo è dovuto agli umani, non ai bot. La disinformazione è strutturalmente più nuova, più sorprendente, più emotivamente intensa: esattamente i fattori che massimizzano l'engagement e che gli algoritmi premiano.",
+      "riferimento_principale": "📖 ESPLORA — Collegamento STEM — Matematica"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Nel caso ucraino (2022), TikTok mostrava versioni opposte della guerra in Russia e in Europa. Qual è la causa strutturale di questo fenomeno?",
+      "opzioni": [
+        { "id": "a", "testo": "Gli algoritmi di engagement amplificano i contenuti che generano più interazione nel contesto locale, non quelli più accurati",
+          "corretto": true, "feedback": "Esatto! Il testo spiega che TikTok non aveva 'politiche esplicite diverse': gli algoritmi amplificavano ciò che generava più engagement in ciascun contesto, e l'emozione dominante era diversa in Russia e in Europa." },
+        { "id": "b", "testo": "TikTok in Russia è gestito da un'azienda governativa cinese diversa", "corretto": false, "feedback": "Non è corretto. TikTok è una sola piattaforma: il fenomeno dipende dall'algoritmo, non da gestioni separate.", "riferimento": "🔍 OSSERVA — Il caso: quando l'algoritmo decide cosa pensiamo della guerra" },
+        { "id": "c", "testo": "I creator russi sono più bravi a produrre contenuti virali", "corretto": false, "feedback": "Non è corretto. Il problema non è la qualità dei creator ma l'effetto sistemico degli algoritmi di engagement in contesti diversi.", "riferimento": "🔍 OSSERVA — Il caso: quando l'algoritmo decide cosa pensiamo della guerra" },
+        { "id": "d", "testo": "La censura russa impedisce ai contenuti europei di entrare in Russia", "corretto": false, "feedback": "Non è corretto. Sebbene la Russia abbia blocchi, il testo descrive un fenomeno algoritmico, non solo un effetto della censura.", "riferimento": "🔍 OSSERVA — Il caso: quando l'algoritmo decide cosa pensiamo della guerra" }
+      ],
+      "spiegazione": "Il testo spiega che TikTok non aveva 'politiche esplicite diverse per i due paesi': il fenomeno era causato dagli algoritmi di engagement che amplificavano i contenuti che generavano più interazione in ciascun contesto. In Russia, l'emozione dominante portava verso certi contenuti; in Europa verso altri. Il risultato: versioni radicalmente diverse della stessa realtà.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: quando l'algoritmo decide cosa pensiamo della guerra"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Applica il metodo del fact-checking: l'affermazione 'I vaccini causano l'autismo' è verificabile? E come si verifica?",
+      "opzioni": [
+        { "id": "a", "testo": "Sì è verificabile: si cercano gli studi peer-reviewed originali e il consenso della comunità scientifica (che la smentisce inequivocabilmente)",
+          "corretto": true, "feedback": "Esatto! Il testo insegna a cercare fonti primarie (studi peer-reviewed) e a verificare il consenso scientifico. Lo studio originale di Wakefield (1998) fu ritrattato e l'autore radiato dall'ordine: la correlazione è stata confutata da decine di studi." },
+        { "id": "b", "testo": "Non è verificabile perché riguarda la salute, che è un'opinione personale", "corretto": false, "feedback": "Non è corretto. Le affermazioni scientifiche su cause ed effetti sono verificabili con metodo scientifico, non sono opinioni.", "riferimento": "📖 ESPLORA — Fact-checking sistematico: metodo e strumenti" },
+        { "id": "c", "testo": "È verificabile solo dai medici: i cittadini non possono valutare studi scientifici", "corretto": false, "feedback": "Non è corretto. Il testo insegna a chiunque i passi del fact-checking: trovare la fonte primaria, verificare se è peer-reviewed, cercare il consenso.", "riferimento": "📖 ESPLORA — Fact-checking sistematico: metodo e strumenti" },
+        { "id": "d", "testo": "È verificabile cercando su Google le prime 3 risultati", "corretto": false, "feedback": "Non è corretto. Il fact-checking richiede fonti primarie (studi originali, siti istituzionali), non le prime posizioni Google.", "riferimento": "📖 ESPLORA — Fact-checking sistematico: metodo e strumenti" }
+      ],
+      "spiegazione": "Applicando il metodo del testo: 1) È un'affermazione verificabile (non un'opinione); 2) Le fonti primarie sono studi peer-reviewed su riviste mediche; 3) Lo studio originale di Wakefield (1998) che la sosteneva fu ritrattato nel 2010 perché basato su dati falsificati; 4) Decine di studi successivi su milioni di bambini non hanno trovato correlazione. Il consenso scientifico smentisce l'affermazione.",
+      "riferimento_principale": "📖 ESPLORA — Fact-checking sistematico: metodo e strumenti"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Stai scrivendo l'articolo de 'Il Bullone' sul post falso della scuola. Quale è il testo più efficace per la call to action finale?",
+      "opzioni": [
+        { "id": "a", "testo": "'Prima di condividere, cerca il sito ufficiale della scuola o chiama in segreteria: bastano 2 minuti per verificare una fonte istituzionale'", "corretto": true, "feedback": "Esatto! Il testo insegna che la call to action efficace non è generica ('verificate sempre') ma concreta: dice esattamente cosa fare, come e dove." },
+        { "id": "b", "testo": "'Non fidatevi di nessuna notizia sui social media'", "corretto": false, "feedback": "Non è corretto. Questa è una risposta di diffidenza totale, non di competenza critica. Il testo insegna a verificare, non a rifiutare tutto.", "riferimento": "🌍 AGISCI — La consegna" },
+        { "id": "c", "testo": "'Verificate sempre le fonti' senza specificare come", "corretto": false, "feedback": "Non è corretto. Il testo insegna esplicitamente che 'verificate sempre le fonti' è troppo generico: bisogna specificare cosa verificare e come.", "riferimento": "🌍 AGISCI — La consegna" },
+        { "id": "d", "testo": "'Segnalate tutte le notizie false alla polizia postale'", "corretto": false, "feedback": "Non è corretto. La polizia postale gestisce reati gravi: per una notizia falsa in un gruppo WhatsApp scolastico, la risposta appropriata è la verifica e la correzione.", "riferimento": "🌍 AGISCI — La consegna" }
+      ],
+      "spiegazione": "Il testo insegna che la call to action deve essere concreta: 'Non scrivere verificate sempre le fonti: scrivi esattamente cosa verificare, come, con quali strumenti.' Una call to action efficace indica l'azione specifica (cercare il sito ufficiale della scuola o chiamare la segreteria), lo strumento (sito ufficiale, telefono), e il tempo necessario (2 minuti).",
+      "riferimento_principale": "🌍 AGISCI — La consegna"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Qual è il 'paradosso del feed curato' rispetto al feed cronologico in termini di autonomia dell'utente?",
+      "opzioni": [
+        { "id": "a", "testo": "Nel feed curato l'algoritmo ha già selezionato prima dell'utente: il controllo è della piattaforma, non dell'utente",
+          "corretto": true, "feedback": "Esatto! Il testo confronta: nel feed cronologico l'utente vede tutto e la qualità dipende da chi ha scelto di seguire. Nel feed curato l'algoritmo pre-seleziona: il controllo e gli obiettivi sono della piattaforma, non dell'utente." },
+        { "id": "b", "testo": "Il feed curato dà più libertà perché mostra più contenuti diversi", "corretto": false, "feedback": "Non è corretto. Il feed curato mostra più contenuti simili a quelli già visti (filter bubble), non più diversità.", "riferimento": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione" },
+        { "id": "c", "testo": "Il feed cronologico è peggiore perché mostra contenuti vecchi irrilevanti", "corretto": false, "feedback": "Non è corretto. Il feed cronologico mostra i contenuti più recenti nell'ordine in cui sono pubblicati: l'utente ha piena visibilità.", "riferimento": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione" },
+        { "id": "d", "testo": "Entrambi i feed danno la stessa autonomia: dipende dalle preferenze personali", "corretto": false, "feedback": "Non è corretto. Il testo distingue chiaramente: nel feed curato 'il controllo è dell'algoritmo', non dell'utente.", "riferimento": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione" }
+      ],
+      "spiegazione": "Il testo distingue chiaramente: nel feed cronologico l'utente 'può vedere tutto' e 'ha il controllo'. Nel feed curato 'il sistema ha già fatto selezione prima che tu arrivi' — il controllo è dell'algoritmo, e i suoi obiettivi non sono i tuoi (sono il massimizzare l'engagement per vendere pubblicità). Questa distinzione ha conseguenze sulla dieta informativa dell'utente.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Quanta responsabilità ha chi condivide un post falso su WhatsApp senza verificarlo, secondo il ragionamento del testo?",
+      "opzioni": [
+        { "id": "a", "testo": "Ha una responsabilità morale come parte della catena di diffusione, anche se l'intenzione era buona",
+          "corretto": true, "feedback": "Esatto! Il testo afferma: 'ogni persona che condivide è parte della catena di diffusione — non un attore passivo'. Il principio #ThinkBeforeYouShare tratta chi condivide come co-responsabile." },
+        { "id": "b", "testo": "Nessuna responsabilità: solo chi ha creato il contenuto falso è responsabile", "corretto": false, "feedback": "Non è corretto. Il testo insegna che chi condivide è 'parte della catena di diffusione' e ha responsabilità nella propagazione.", "riferimento": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità" },
+        { "id": "c", "testo": "Piena responsabilità legale equivalente a chi ha creato il contenuto", "corretto": false, "feedback": "Non è corretto. Il testo discute la responsabilità morale, non equipara la responsabilità legale di chi condivide a chi produce.", "riferimento": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità" },
+        { "id": "d", "testo": "Responsabilità solo se ha molti follower e ha amplificato la disinformazione", "corretto": false, "feedback": "Non è corretto. Il testo non introduce una soglia di follower: qualsiasi condivisione ha un effetto nella rete, anche su piccola scala.", "riferimento": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità" }
+      ],
+      "spiegazione": "Il testo afferma esplicitamente: 'ogni persona che condivide è parte della catena di diffusione — non un attore passivo.' Il principio #ThinkBeforeYouShare tratta chi condivide come moralmente responsabile. La domanda aperta della metacognizione chiede: 'Esiste una responsabilità morale anche quando l'intenzione era buona?' — suggerendo che la risposta sia sì.",
+      "riferimento_principale": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità"
     }
   ]
 }

@@ -1,260 +1,654 @@
 {
   "mc_id": "MC-COM-3-02",
-  "titolo": "Media digitali e comunicazione",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa si intende per 'media digitali'?",
+      "domanda": "Quante ore di video vengono caricate su YouTube ogni minuto nel 2024?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Solo i social network come Facebook e Instagram",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "500 ore al minuto",
+          "corretto": true,
+          "feedback": "Esatto! Nel 2024 vengono caricati su YouTube 500 ore di video al minuto — equivalenti a 82 anni di visione ininterrotta in un solo giorno."
         },
         {
           "id": "b",
-          "testo": "Tutti i mezzi di comunicazione che usano tecnologie digitali per produrre, distribuire e fruire contenuti: web, podcast, video, social, newsletter",
-          "corretto": true,
-          "feedback": "Esatto! I media digitali includono qualsiasi forma di comunicazione basata su bit: dal blog al video virale, dalla newsletter al podcast."
+          "testo": "50 ore al minuto",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero reale è molto più alto: 500 ore al minuto nel 2024.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "c",
-          "testo": "Le televisioni smart con internet",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "5 ore al minuto",
+          "corretto": false,
+          "feedback": "Non è corretto. La quantità reale di upload su YouTube è enormemente superiore: 500 ore al minuto.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "d",
-          "testo": "I giornali in formato PDF",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "5.000 ore al minuto",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero citato nel testo è 500 ore al minuto, non 5.000.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "I media digitali includono qualsiasi forma di comunicazione basata su bit: dal blog al video virale, dalla newsletter al podcast."
+      "spiegazione": "Nel 2024 vengono caricati su YouTube 500 ore di video ogni minuto. Questo equivale a 720.000 ore al giorno, che richiederebbero 82 anni di visione continua. Questa cifra illustra la scala straordinaria della produzione di contenuti digitali.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è il 'clickbait'?",
+      "domanda": "Cosa distingue la compressione 'lossless' da quella 'lossy'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un tipo di pubblicità ingannevole sui social network",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Lossless non perde informazioni; lossy scarta informazioni per ridurre le dimensioni",
+          "corretto": true,
+          "feedback": "Esatto! Con lossless si può ricostruire esattamente l'originale; con lossy si perdono informazioni che l'occhio o l'orecchio percepisce meno."
         },
         {
           "id": "b",
-          "testo": "Titoli o immagini progettati per generare clic attraverso curiosità o emozione, spesso con contenuto deludente o fuorviante",
-          "corretto": true,
-          "feedback": "Esatto! Il clickbait sfrutta la curiosità umana."
+          "testo": "Lossless è più veloce da elaborare; lossy è più lenta",
+          "corretto": false,
+          "feedback": "Non è corretto. La distinzione riguarda la perdita o meno di informazioni, non la velocità di elaborazione.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
         },
         {
           "id": "c",
-          "testo": "Un virus informatico che si diffonde tramite link",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Lossless funziona solo per immagini; lossy funziona solo per audio",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambi i tipi si applicano a immagini, audio e video.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
         },
         {
           "id": "d",
-          "testo": "Una tecnica di SEO per migliorare il posizionamento",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Lossless produce file più piccoli; lossy produce file più grandi",
+          "corretto": false,
+          "feedback": "Non è corretto. È il contrario: lossy produce file più piccoli perché scarta informazioni.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
         }
       ],
-      "spiegazione": "Il clickbait sfrutta la curiosità umana. Il 'curiosity gap' (voglio sapere cosa manca) è uno degli stratagemmi più usati per generare traffico a basso valore."
+      "spiegazione": "La compressione lossless (PNG, FLAC, ZIP) permette di ricostruire esattamente l'originale senza perdita di informazioni. La compressione lossy (JPEG, MP3, H.264) scarta informazioni percettivamente irrilevanti per l'occhio o l'orecchio, producendo file molto più piccoli.",
+      "riferimento_principale": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è un 'algoritmo' dei social media?",
+      "domanda": "Per quanto tempo dura la protezione del diritto d'autore in Italia dopo la morte dell'autore?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il codice che protegge i dati degli utenti",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "70 anni dalla morte dell'autore",
+          "corretto": true,
+          "feedback": "Esatto! In Italia, il diritto d'autore dura per tutta la vita dell'autore più 70 anni dalla sua morte. Solo dopo diventa dominio pubblico."
         },
         {
           "id": "b",
-          "testo": "Un sistema automatico che decide quali contenuti mostrare a ogni utente in base a comportamento, interazioni e profilo",
-          "corretto": true,
-          "feedback": "Esatto! L'algoritmo dei social ottimizza il 'tempo di permanenza' (engagement): mostra contenuti che generano emozioni forti, anche se distorcono la realtà."
+          "testo": "20 anni dalla morte dell'autore",
+          "corretto": false,
+          "feedback": "Non è corretto. La durata legale in Italia è molto più lunga: 70 anni dalla morte dell'autore.",
+          "riferimento": "📖 ESPLORA — Diritto d'autore: come funziona in Italia e quanto dura"
         },
         {
           "id": "c",
-          "testo": "Il motore di ricerca interno ai social",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "50 anni dalla creazione dell'opera",
+          "corretto": false,
+          "feedback": "Non è corretto. Il termine decorre dalla morte dell'autore, non dalla creazione, ed è di 70 anni.",
+          "riferimento": "📖 ESPLORA — Diritto d'autore: come funziona in Italia e quanto dura"
         },
         {
           "id": "d",
-          "testo": "Il sistema di moderazione dei contenuti illegali",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "100 anni dalla morte dell'autore",
+          "corretto": false,
+          "feedback": "Non è corretto. In Italia la durata è di 70 anni dalla morte dell'autore.",
+          "riferimento": "📖 ESPLORA — Diritto d'autore: come funziona in Italia e quanto dura"
         }
       ],
-      "spiegazione": "L'algoritmo dei social ottimizza il 'tempo di permanenza' (engagement): mostra contenuti che generano emozioni forti, anche se distorcono la realtà."
+      "spiegazione": "In Italia, la Legge n. 633 del 1941 (L.D.A.) stabilisce che il diritto d'autore dura per tutta la vita dell'autore più 70 anni dalla sua morte. Solo al termine di questo periodo l'opera entra nel dominio pubblico ed è liberamente utilizzabile.",
+      "riferimento_principale": "📖 ESPLORA — Diritto d'autore: come funziona in Italia e quanto dura"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa significa la sigla 'NC' nelle licenze Creative Commons?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "NonCommercial: non puoi usare l'opera per scopi commerciali",
+          "corretto": true,
+          "feedback": "Esatto! NC sta per NonCommercial: chi usa un contenuto con questa licenza non può farlo per scopi commerciali, ma può usarlo per scopi educativi e personali."
+        },
+        {
+          "id": "b",
+          "testo": "No Copyright: l'opera è di dominio pubblico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il dominio pubblico si indica con CC0, non NC. NC significa NonCommercial.",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
+        },
+        {
+          "id": "c",
+          "testo": "New Content: il contenuto è stato creato di recente",
+          "corretto": false,
+          "feedback": "Non è corretto. NC non è legato alla data di creazione ma alle restrizioni d'uso.",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
+        },
+        {
+          "id": "d",
+          "testo": "No Changes: non puoi modificare l'opera",
+          "corretto": false,
+          "feedback": "Non è corretto. La restrizione sulle modifiche si indica con ND (NoDerivs), non NC.",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
+        }
+      ],
+      "spiegazione": "NC sta per NonCommercial: chi usa un contenuto con questa licenza CC non può farlo per scopi commerciali. Può però usarlo per scopi educativi, personali o non commerciali. Le sei licenze CC combinano diversamente BY, SA, NC e ND.",
+      "riferimento_principale": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Qual è la struttura consigliata per l'hook di un episodio podcast?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Iniziare con un fatto sorprendente, una domanda o una storia breve entro i primi 60-90 secondi",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che i primi 60-90 secondi sono decisivi: se l'ascoltatore non è agganciato, smette. Bisogna partire con un elemento che catturi l'attenzione."
+        },
+        {
+          "id": "b",
+          "testo": "Presentare subito nome del podcast e argomento dell'episodio",
+          "corretto": false,
+          "feedback": "Non è corretto. Iniziare con 'oggi parleremo di...' è esattamente l'approccio da evitare secondo il testo.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+        },
+        {
+          "id": "c",
+          "testo": "Ringraziare gli sponsor prima di ogni altra cosa",
+          "corretto": false,
+          "feedback": "Non è corretto. I ringraziamenti e la musica di apertura fanno parte dell'intro (max 30 sec), non dell'hook.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+        },
+        {
+          "id": "d",
+          "testo": "Leggere il sommario dell'episodio con tutti gli argomenti trattati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo indica che iniziare con un sommario è uno degli approcci meno efficaci per agganciare l'ascoltatore.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+        }
+      ],
+      "spiegazione": "I primi 60-90 secondi del podcast sono decisivi. Il testo consiglia di iniziare con un fatto sorprendente, una domanda o una storia breve — mai con 'oggi parleremo di...'. Se l'ascoltatore non è agganciato entro i primi 90 secondi, smette di ascoltare.",
+      "riferimento_principale": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa sono i 'deepfake'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Video o audio generati da IA che mostrano persone fare cose che non hanno mai fatto",
+          "corretto": true,
+          "feedback": "Esatto! I deepfake sono contenuti generati da intelligenza artificiale (GAN) che mostrano persone dire o fare cose che non hanno mai detto o fatto."
+        },
+        {
+          "id": "b",
+          "testo": "Notizie false distribuite sui social media",
+          "corretto": false,
+          "feedback": "Non è corretto. I deepfake sono specificamente contenuti video/audio manipolati da IA, non notizie false in generale.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+        },
+        {
+          "id": "c",
+          "testo": "Profili social falsi creati per diffondere spam",
+          "corretto": false,
+          "feedback": "Non è corretto. I profili falsi sono una categoria diversa dai deepfake, che riguardano la manipolazione di contenuti audio/video.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+        },
+        {
+          "id": "d",
+          "testo": "Immagini fotoritoccate con Photoshop",
+          "corretto": false,
+          "feedback": "Non è corretto. I deepfake usano reti neurali (GAN) per generare contenuti realistici, che è tecnologicamente diverso dal fotoritocco tradizionale.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+        }
+      ],
+      "spiegazione": "I deepfake sono video o audio generati da sistemi di intelligenza artificiale (GAN — Generative Adversarial Networks) che mostrano persone dire o fare cose che non hanno mai detto o fatto. La tecnologia è diventata accessibile a chiunque nel 2023-2024 grazie a strumenti gratuiti online.",
+      "riferimento_principale": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è la 'camera d'eco' (echo chamber)?",
+      "domanda": "Perché il formato JPEG non è adatto per comprimere loghi o screenshot?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema di ascolto privato sui social",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché JPEG crea artefatti visibili sui bordi netti e nelle aree di colore uniforme",
+          "corretto": true,
+          "feedback": "Esatto! JPEG comprime eliminando dettagli fini, ma questo crea blocchi quadrati (artefatti) sui bordi nitidi, tipici dei loghi. PNG lossless è preferibile per questi casi."
         },
         {
           "id": "b",
-          "testo": "L'ambiente informativo in cui le persone ricevono solo contenuti che confermano le loro opinioni, amplificati dall'algoritmo",
-          "corretto": true,
-          "feedback": "Esatto! Le echo chamber polarizzano: si vedono solo notizie che confermano le proprie idee, si conosce sempre meno il punto di vista altrui."
+          "testo": "Perché JPEG non supporta i colori RGB",
+          "corretto": false,
+          "feedback": "Non è corretto. JPEG supporta pienamente i colori RGB. Il problema sono gli artefatti da compressione sui bordi netti.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
         },
         {
           "id": "c",
-          "testo": "Un metodo per amplificare la propria voce nei media",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché i browser non riescono a visualizzare i file JPEG",
+          "corretto": false,
+          "feedback": "Non è corretto. JPEG è uno dei formati più supportati da tutti i browser.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
         },
         {
           "id": "d",
-          "testo": "Una stanza insonorizzata per podcast e registrazioni audio",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché JPEG produce file troppo grandi per i loghi",
+          "corretto": false,
+          "feedback": "Non è corretto. JPEG produce file piccoli (è lossy), ma crea artefatti visibili sui bordi netti dei loghi.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
         }
       ],
-      "spiegazione": "Le echo chamber polarizzano: si vedono solo notizie che confermano le proprie idee, si conosce sempre meno il punto di vista altrui."
+      "spiegazione": "JPEG usa compressione lossy che elimina dettagli fini. Questo causa artefatti visibili (blocchi quadrati) lungo i bordi netti e nelle aree di colore uniforme — tipiche dei loghi e degli screenshot. Per questi contenuti è preferibile PNG (lossless) che preserva esattamente i bordi senza artefatti.",
+      "riferimento_principale": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Come funziona la pubblicità programmatica (programmatic advertising)?",
+      "domanda": "In Italia, un video pubblicato su YouTube con musica protetta da copyright ma senza guadagno è legale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La pubblicità fatta da programmi TV",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "No: in Italia non esiste un'eccezione automatica per uso educativo o non commerciale",
+          "corretto": true,
+          "feedback": "Esatto! A differenza degli USA (dove esiste il 'fair use'), in Italia l'eccezione per uso educativo non è automatica. Servono licenze esplicite."
         },
         {
           "id": "b",
-          "testo": "Un sistema automatizzato che compra e vende spazi pubblicitari in tempo reale basandosi sul profilo dell'utente: l'annuncio giusto alla persona giusta al momento giusto",
-          "corretto": true,
-          "feedback": "Esatto! In meno di 100 millisecondi (durante il caricamento di una pagina) avviene un'asta automatica per mostrare l'annuncio."
+          "testo": "Sì: se non guadagni, non ci sono problemi di copyright",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo chiarisce che in Italia l'assenza di guadagno non equivale a permesso di usare musica protetta.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "c",
-          "testo": "La pubblicità nei videogiochi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Sì: i video scolastici sono sempre esenti da copyright",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo indica che in Italia non esiste un'eccezione automatica per uso educativo, a differenza degli USA.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "Un sistema per bloccare le pubblicità indesiderate",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Dipende: YouTube decide caso per caso",
+          "corretto": false,
+          "feedback": "Non è corretto. YouTube rimuove automaticamente i video con musica coperta da Content ID, indipendentemente dallo scopo del video.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         }
       ],
-      "spiegazione": "In meno di 100 millisecondi (durante il caricamento di una pagina) avviene un'asta automatica per mostrare l'annuncio. I tuoi dati determinano quale vedi."
+      "spiegazione": "In Italia, diversamente dagli USA (dove esiste il 'fair use'), non c'è un'eccezione automatica per uso educativo o non commerciale nel diritto d'autore. YouTube rimuove automaticamente i video con musica protetta da Content ID. La soluzione è usare musica con licenza CC esplicita che permette l'uso in video.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è un 'influencer' nel marketing digitale?",
+      "domanda": "Perché il podcast del Liceo 'Archimede' ha scelto di pubblicare su Internet Archive invece che su Spotify?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un esperto di informatica che influenza le tendenze tecnologiche",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché Internet Archive è gratuito, open source e senza algoritmi pubblicitari",
+          "corretto": true,
+          "feedback": "Esatto! Il caso studio indica che la classe ha scelto Internet Archive perché è gratuita, open source, e non ha algoritmi pubblicitari che influenzano la distribuzione."
         },
         {
           "id": "b",
-          "testo": "Una persona con una comunità online significativa che, grazie alla fiducia del suo pubblico, è in grado di orientarne le scelte di consumo o opinioni",
-          "corretto": true,
-          "feedback": "Esatto! L'influencer marketing usa la fiducia parasociale (si 'conosce' l'influencer come un amico) per una pubblicità percepita come più autentica."
+          "testo": "Perché Spotify non accetta podcast prodotti da studenti",
+          "corretto": false,
+          "feedback": "Non è corretto. Spotify accetta podcast da chiunque; la scelta di Internet Archive è motivata dai suoi valori open e gratuiti.",
+          "riferimento": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
         },
         {
           "id": "c",
-          "testo": "Un algoritmo che simula l'influenza sociale",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché su Spotify non si possono usare licenze Creative Commons",
+          "corretto": false,
+          "feedback": "Non è corretto. La scelta di Internet Archive è motivata dalla sua natura open source, non da limitazioni di licenza di Spotify.",
+          "riferimento": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
         },
         {
           "id": "d",
-          "testo": "Un moderatore di contenuti sui social network",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché Internet Archive ha più ascoltatori di Spotify",
+          "corretto": false,
+          "feedback": "Non è corretto. Spotify ha molti più utenti di Internet Archive: la scelta è motivata da valori etici, non dall'audience.",
+          "riferimento": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
         }
       ],
-      "spiegazione": "L'influencer marketing usa la fiducia parasociale (si 'conosce' l'influencer come un amico) per una pubblicità percepita come più autentica."
+      "spiegazione": "Il caso studio mostra che la classe ha scelto Internet Archive per i suoi valori: è gratuita, open source, senza algoritmi pubblicitari. Gli episodi sono stati caricati con licenza CC BY-SA, permettendo ad altri di usarli mantenendo la stessa licenza.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'native advertising' e perché è eticamente controverso?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Qual è la differenza tra una licenza CC BY-SA e una CC BY-NC?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La pubblicità prodotta localmente per un mercato specifico",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "CC BY-SA richiede la stessa licenza sulle opere derivate; CC BY-NC vieta l'uso commerciale",
+          "corretto": true,
+          "feedback": "Esatto! SA (ShareAlike) impone che le opere derivate abbiano la stessa licenza. NC (NonCommercial) vieta l'uso per scopi commerciali. Wikipedia usa CC BY-SA."
         },
         {
           "id": "b",
-          "testo": "Contenuto pubblicitario fatto per sembrare un articolo editoriale o contenuto organico: se non è chiaramente etichettato, può ingannare il lettore",
-          "corretto": true,
-          "feedback": "Esatto! Il native advertising ben fatto è difficile da distinguere dal contenuto editoriale."
+          "testo": "CC BY-SA è più restrittiva perché richiede l'attribuzione",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambe le licenze richiedono l'attribuzione (BY). La differenza sta in SA (opere derivate) vs NC (scopi commerciali).",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
         },
         {
           "id": "c",
-          "testo": "La pubblicità che usa immagini di persone del territorio",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "CC BY-NC permette le modifiche; CC BY-SA non le permette",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambe permettono le modifiche. La differenza riguarda le condizioni d'uso (SA = stessa licenza; NC = non commerciale).",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
         },
         {
           "id": "d",
-          "testo": "Annunci che non usano cookie di tracciamento",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Sono identiche: entrambe richiedono solo la citazione dell'autore",
+          "corretto": false,
+          "feedback": "Non è corretto. Hanno condizioni aggiuntive diverse: SA richiede la stessa licenza sulle opere derivate; NC vieta l'uso commerciale.",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
         }
       ],
-      "spiegazione": "Il native advertising ben fatto è difficile da distinguere dal contenuto editoriale. L'obbligo di indicare 'Contenuto sponsorizzato' esiste ma è spesso poco visibile."
+      "spiegazione": "CC BY-SA impone che chiunque modifichi l'opera la distribuisca con la stessa licenza (ShareAlike). CC BY-NC permette usi e modifiche ma vieta gli scopi commerciali (NonCommercial). Wikipedia usa CC BY-SA per garantire che i contenuti derivati rimangano liberamente accessibili.",
+      "riferimento_principale": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
     },
     {
-      "livello": "A",
-      "domanda": "Cosa si intende per 'economia dell'attenzione'?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Quale tecnica usano i GAN per creare deepfake sempre più realistici?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Lo studio economico delle abitudini di consumo dei media",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Un generatore produce immagini false e un discriminatore cerca di rilevarle: si allenano reciprocamente",
+          "corretto": true,
+          "feedback": "Esatto! Il testo descrive la GAN: la rete generatrice migliora cercando di ingannare il discriminatore; il discriminatore migliora cercando di non essere ingannato."
         },
         {
           "id": "b",
-          "testo": "Il modello in cui l'attenzione umana è la risorsa scarsa: social e piattaforme competono per catturarla il più a lungo possibile per monetizzarla con la pubblicità",
-          "corretto": true,
-          "feedback": "Esatto! Le piattaforme non vendono prodotti: vendono l'attenzione degli utenti agli inserzionisti."
+          "testo": "Si copiano pixel da molte foto reali e si sovrappongono",
+          "corretto": false,
+          "feedback": "Non è corretto. I GAN non copiano pixel: generano immagini ex novo attraverso l'addestramento su milioni di esempi.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
         },
         {
           "id": "c",
-          "testo": "La valutazione economica del valore di un brand",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Si usano filtri di elaborazione dell'immagine per modificare il viso",
+          "corretto": false,
+          "feedback": "Non è corretto. I deepfake non usano semplici filtri: usano reti neurali generative profonde che imparano dai dati.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
         },
         {
           "id": "d",
-          "testo": "L'ottimizzazione della pubblicità per massimizzare i clic",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Si registra un video e si modifica la traccia audio",
+          "corretto": false,
+          "feedback": "Non è corretto. I deepfake possono modificare sia audio che video, ma la tecnologia di base è la GAN, non la semplice modifica audio.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
         }
       ],
-      "spiegazione": "Le piattaforme non vendono prodotti: vendono l'attenzione degli utenti agli inserzionisti. Questo crea incentivi a massimizzare il tempo sullo schermo, non il benessere."
+      "spiegazione": "Le GAN (Generative Adversarial Networks) per i deepfake usano due reti neurali: una generatrice che produce immagini false, e una discriminatrice che cerca di distinguere il falso dal vero. Le due si allenano reciprocamente fino a produrre output difficilmente distinguibili dalla realtà.",
+      "riferimento_principale": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'filter bubble' e come la differenziamo dalla camera d'eco?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Qual è il livello audio consigliato per la voce in un podcast rispetto alla musica di sottofondo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sono sinonimi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "La musica deve essere abbassata a -20 dB sotto la voce",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che la musica di sottofondo va aggiunta in un layer separato e abbassata a -20 dB sotto la voce parlante."
         },
         {
           "id": "b",
-          "testo": "La filter bubble è creata dagli algoritmi che filtrano automaticamente i contenuti; la camera d'eco è un fenomeno sociale in cui le persone si circondano volontariamente di voci simili: spesso si sovrappongono",
-          "corretto": true,
-          "feedback": "Esatto! Eli Pariser (2011) ha coniato 'filter bubble': l'algoritmo crea una bolla invisibile."
+          "testo": "La musica e la voce devono avere lo stesso volume",
+          "corretto": false,
+          "feedback": "Non è corretto. La voce deve essere nettamente più alta della musica per garantire la comprensibilità.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
         },
         {
           "id": "c",
-          "testo": "La filter bubble riguarda solo le notizie politiche",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "La musica deve essere a -5 dB sotto la voce",
+          "corretto": false,
+          "feedback": "Non è corretto. -5 dB è insufficiente: la musica coprirebbe troppo la voce. Il testo indica -20 dB.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
         },
         {
           "id": "d",
-          "testo": "La camera d'eco è esclusivamente offline",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "La musica deve essere completamente silenziosa durante la voce",
+          "corretto": false,
+          "feedback": "Non è corretto. La musica può essere presente in sottofondo durante la voce, ma molto ridotta (-20 dB).",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
         }
       ],
-      "spiegazione": "Eli Pariser (2011) ha coniato 'filter bubble': l'algoritmo crea una bolla invisibile. La camera d'eco ha anche una dimensione sociale attiva (seguire, condividere, unirsi a gruppi)."
+      "spiegazione": "Il testo indica che la musica CC deve essere aggiunta in un layer separato e abbassata a -20 dB sotto la voce parlante. Questo garantisce che la voce sia sempre comprensibile mentre la musica crea un'atmosfera senza sovrapporsi.",
+      "riferimento_principale": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Perché il 'show notes' (documento di accompagnamento) è fondamentale per un podcast responsabile?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Rende il contenuto verificabile: elenca fonti, autori, crediti musica e licenze",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che il documento di accompagnamento è ciò che distingue un contenuto responsabile da uno non: permette a chiunque di verificare le fonti e capire le licenze."
+        },
+        {
+          "id": "b",
+          "testo": "Aumenta il numero di ascolti perché migliora il SEO",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non menziona il SEO come motivazione per le show notes: la ragione è la trasparenza e la verificabilità.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+        },
+        {
+          "id": "c",
+          "testo": "È obbligatorio per legge in Italia per qualsiasi podcast pubblico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non cita un obbligo legale: le show notes sono una pratica di responsabilità editoriale.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+        },
+        {
+          "id": "d",
+          "testo": "Permette alle piattaforme di monetizzare meglio il contenuto",
+          "corretto": false,
+          "feedback": "Non è corretto. Le show notes servono alla trasparenza verso gli ascoltatori, non alla monetizzazione.",
+          "riferimento": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+        }
+      ],
+      "spiegazione": "Le show notes (documento di accompagnamento) rendono il podcast verificabile: elencano tutti gli autori, le fonti usate con URL, i crediti per la musica con la licenza specifica. Il testo del caso studio mostra come questo documento sia ciò che distingue un 'contenuto digitale responsabile' da uno opaco.",
+      "riferimento_principale": "📖 ESPLORA — Produzione podcast: dalla struttura alla distribuzione"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Analizza: un deepfake tecnicamente convincente viene dichiarato 'falso' da chi ne è protagonista. Qual è il 'dividendo del bugiardo'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quando i deepfake diventano comuni, qualsiasi video reale può essere dichiarato falso come strategia difensiva",
+          "corretto": true,
+          "feedback": "Esatto! Il testo lo chiama 'liar's dividend': il rischio più grande non è credere a un deepfake, ma che prove reali vengano bollate come deepfake."
+        },
+        {
+          "id": "b",
+          "testo": "I bugiardi guadagnano economicamente creando deepfake per conto di aziende",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 'dividendo del bugiardo' è un concetto di teoria dell'informazione, non economico.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+        },
+        {
+          "id": "c",
+          "testo": "Chi crea deepfake ottiene più follower sui social grazie al sensazionalismo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non menziona i follower: il dividendo riguarda l'erosione della fiducia nelle prove reali.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+        },
+        {
+          "id": "d",
+          "testo": "Chi mente in un deepfake riceve meno conseguenze legali di chi mente in un testo scritto",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non confronta le conseguenze legali: il dividendo riguarda l'epistemologia dell'informazione.",
+          "riferimento": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+        }
+      ],
+      "spiegazione": "Il 'dividendo del bugiardo' (liar's dividend) è il rischio che i deepfake siano usati come scusa per negare prove reali. Quando i deepfake sono comuni, chiunque può dichiarare 'quella registrazione è un deepfake' come difesa contro prove autentiche. Il pericolo non è solo credere ai falsi: è smettere di credere ai veri.",
+      "riferimento_principale": "📖 ESPLORA — Fake video e deepfake: come si riconoscono"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché non è sufficiente scrivere 'immagine da Google' come fonte per una foto usata in un podcast?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché Google non è l'autore: mostra anteprime di immagini altrui senza diritti su di esse",
+          "corretto": true,
+          "feedback": "Esatto! Il testo lo chiarisce: 'Google non è autore di nessuna immagine; ne mostra solo l'anteprima'. Occorre indicare il fotografo e la licenza originale."
+        },
+        {
+          "id": "b",
+          "testo": "Perché Google richiede un pagamento per usare le immagini cercate",
+          "corretto": false,
+          "feedback": "Non è corretto. Google non richiede pagamenti per le ricerche, ma questo non significa che le immagini siano libere da copyright.",
+          "riferimento": "📖 ESPLORA — Plagio vs. citazione: la differenza pratica"
+        },
+        {
+          "id": "c",
+          "testo": "Perché le immagini di Google sono a bassa risoluzione",
+          "corretto": false,
+          "feedback": "Non è corretto. La qualità delle immagini non è rilevante per la questione del copyright.",
+          "riferimento": "📖 ESPLORA — Plagio vs. citazione: la differenza pratica"
+        },
+        {
+          "id": "d",
+          "testo": "Perché Google protegge tutte le immagini con un copyright speciale",
+          "corretto": false,
+          "feedback": "Non è corretto. Google non ha diritti sulle immagini che indicizza: il copyright appartiene ai fotografi originali.",
+          "riferimento": "📖 ESPLORA — Plagio vs. citazione: la differenza pratica"
+        }
+      ],
+      "spiegazione": "Google non è autore di nessuna immagine: è un motore di ricerca che mostra anteprime di immagini di altri. Per citare correttamente una fotografia occorre indicare il nome del fotografo, la fonte originale (sito o pubblicazione) e la licenza. Il copyright appartiene all'autore originale, non a Google.",
+      "riferimento_principale": "📖 ESPLORA — Plagio vs. citazione: la differenza pratica"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Valuta criticamente il caso studio del Liceo 'Archimede': cosa rende quel podcast un 'contenuto digitale responsabile'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È originale, verificato nelle fonti, trasparente sulle licenze e invita alla condivisione con CC BY-SA",
+          "corretto": true,
+          "feedback": "Esatto! Il testo definisce esplicitamente queste quattro caratteristiche come criteri di responsabilità: originalità, verifica, trasparenza, licenza aperta."
+        },
+        {
+          "id": "b",
+          "testo": "Ha ottenuto molti ascolti e una segnalazione da una biblioteca",
+          "corretto": false,
+          "feedback": "Non è corretto. Il successo è una conseguenza, non la definizione di responsabilità. Un contenuto irresponsabile potrebbe ottenere molti ascolti.",
+          "riferimento": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
+        },
+        {
+          "id": "c",
+          "testo": "È stato prodotto usando solo tecnologie gratuite come Audacity",
+          "corretto": false,
+          "feedback": "Non è corretto. L'uso di strumenti gratuiti non determina la responsabilità del contenuto.",
+          "riferimento": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
+        },
+        {
+          "id": "d",
+          "testo": "È stato prodotto da studenti, quindi non soggetto a copyright",
+          "corretto": false,
+          "feedback": "Non è corretto. I contenuti prodotti da studenti sono soggetti al copyright come qualsiasi altra opera.",
+          "riferimento": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
+        }
+      ],
+      "spiegazione": "Il testo conclude il caso studio con questa affermazione: 'Questo è un contenuto digitale responsabile: originale, verificato, trasparente sulle fonti, con licenza che rispetta il lavoro degli autori e invita alla condivisione.' Queste quattro caratteristiche definiscono la responsabilità editoriale digitale.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: un podcast prodotto da studenti, dall'idea alla pubblicazione"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "La MP3 elimina circa il 90% dell'informazione originale. Come è possibile che la qualità sia accettabile?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché elimina solo le frequenze che l'orecchio umano percepisce meno (psicoacustica)",
+          "corretto": true,
+          "feedback": "Esatto! L'algoritmo MP3 usa la psicoacustica: elimina frequenze sopra i 15.000 Hz e suoni 'mascherati' da suoni più forti, che l'orecchio non percepisce bene."
+        },
+        {
+          "id": "b",
+          "testo": "Perché la musica moderna è già compressa prima di essere registrata",
+          "corretto": false,
+          "feedback": "Non è corretto. La qualità dell'MP3 dipende dalla psicoacustica, non dalla qualità della registrazione originale.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
+        },
+        {
+          "id": "c",
+          "testo": "Perché le casse degli smartphone riproducono solo basse frequenze",
+          "corretto": false,
+          "feedback": "Non è corretto. La psicoacustica dell'MP3 funziona indipendentemente dal dispositivo di riproduzione.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il cervello 'completa' automaticamente le frequenze mancanti",
+          "corretto": false,
+          "feedback": "Non è corretto. Il cervello non aggiunge frequenze mancanti: l'MP3 elimina quelle che non si percepiscono in primo luogo.",
+          "riferimento": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
+        }
+      ],
+      "spiegazione": "L'algoritmo MP3 usa la psicoacustica: la scienza di come l'orecchio percepisce il suono. Elimina le frequenze sopra i 15.000 Hz (al limite dell'udito) e i suoni 'mascherati' da suoni più forti. A 128 kbit/s, scarta circa il 90% dell'informazione originale — eppure la maggior parte delle persone non sente differenza in ascolto normale.",
+      "riferimento_principale": "📖 ESPLORA — Compressione: come si riduce un file senza perdere (troppo)"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Hai prodotto un podcast con licenza CC BY. Qualcuno lo usa in un video su YouTube senza citarti. Cosa ti autorizza a fare la licenza CC BY?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Richiedere la rimozione o la correzione del video perché la citazione è obbligatoria in CC BY",
+          "corretto": true,
+          "feedback": "Esatto! CC BY impone sempre l'attribuzione (BY = attribuzione obbligatoria). Chi usa il contenuto senza citare l'autore viola la licenza e può essere soggetto a reclamo."
+        },
+        {
+          "id": "b",
+          "testo": "Nulla: CC BY significa che chiunque può fare qualsiasi cosa",
+          "corretto": false,
+          "feedback": "Non è corretto. CC BY impone la citazione dell'autore: 'BY' sta per 'attribuzione'. Chi non cita viola la licenza.",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
+        },
+        {
+          "id": "c",
+          "testo": "Chiedere un compenso economico perché hanno usato il tuo lavoro",
+          "corretto": false,
+          "feedback": "Non è corretto. CC BY permette l'uso commerciale senza compenso, ma impone la citazione. Il problema non è il compenso ma l'attribuzione mancante.",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
+        },
+        {
+          "id": "d",
+          "testo": "Nulla: il video è di un canale privato e non è soggetto a copyright",
+          "corretto": false,
+          "feedback": "Non è corretto. I canali privati su YouTube sono comunque soggetti al diritto d'autore e alle condizioni delle licenze CC.",
+          "riferimento": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
+        }
+      ],
+      "spiegazione": "La licenza CC BY impone sempre l'attribuzione (BY = attribuzione obbligatoria). Chi usa un contenuto CC BY deve sempre citare l'autore, il titolo e la licenza. Se non lo fa, viola la licenza e il titolare dei diritti può richiedere la correzione o la rimozione del contenuto che viola l'attribuzione.",
+      "riferimento_principale": "📖 ESPLORA — Le licenze Creative Commons: cosa puoi fare con ogni licenza"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }

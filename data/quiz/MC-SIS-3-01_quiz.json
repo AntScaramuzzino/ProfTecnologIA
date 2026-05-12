@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-SIS-3-01",
-  "titolo": "Sistemi economici e processi produttivi",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è un 'sistema economico'?",
+      "domanda": "Quali sono i tre settori tradizionali dell'economia?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La somma del PIL di tutti i paesi del mondo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Primario (agricoltura, estrazione), secondario (industria manifatturiera), terziario (servizi)",
+          "corretto": true,
+          "feedback": "Esatto! La teoria economica classica divide le attività in: settore primario (estrae/raccoglie risorse naturali), secondario (trasforma in prodotti), terziario (produce servizi immateriali)."
         },
         {
           "id": "b",
-          "testo": "L'insieme di istituzioni, regole e meccanismi con cui una società organizza la produzione, distribuzione e consumo di beni e servizi",
-          "corretto": true,
-          "feedback": "Esatto! I principali sistemi economici storici: capitalismo di mercato, economia mista (con Stato), economia pianificata (socialismo)."
+          "testo": "Pubblico, privato e misto",
+          "feedback": "Non corretto. Quella è la distinzione per tipo di proprietà (pubblico vs privato vs misto). I tre settori economici sono primario, secondario e terziario.",
+          "riferimento": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
         },
         {
           "id": "c",
-          "testo": "Il sistema bancario di un paese",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Consumo, produzione e distribuzione",
+          "feedback": "Non corretto. Quella è una classificazione per funzione economica. I tre settori tradizionali sono primario (estrazione), secondario (manifattura), terziario (servizi).",
+          "riferimento": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
         },
         {
           "id": "d",
-          "testo": "Il mercato azionario globale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Locale, nazionale e internazionale",
+          "feedback": "Non corretto. Quella è una classificazione geografica. I tre settori tradizionali sono primario, secondario e terziario.",
+          "riferimento": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
         }
       ],
-      "spiegazione": "I principali sistemi economici storici: capitalismo di mercato, economia mista (con Stato), economia pianificata (socialismo). In realtà tutti i sistemi sono misti con proporzioni diverse."
+      "spiegazione": "I tre settori economici tradizionali: Primario = attività che estraggono/raccolgono risorse naturali (agricoltura, allevamento, pesca, estrazione mineraria). Secondario = attività che trasformano le risorse in prodotti (industria manifatturiera, edilizia, artigianato). Terziario = attività che producono servizi (trasporti, commercio, sanità, istruzione, finanza).",
+      "riferimento_principale": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è la 'catena del valore' di un prodotto?",
+      "domanda": "Cos'è il PIL (Prodotto Interno Lordo)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il prezzo di un bene in diverse fasi della sua produzione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La somma del valore di tutti i beni e servizi prodotti in un paese in un anno",
+          "corretto": true,
+          "feedback": "Esatto! Il PIL misura l'attività economica totale di un paese in un anno, sommando il valore di tutto ciò che viene prodotto: beni manufatti, servizi, costruzioni, ecc."
         },
         {
           "id": "b",
-          "testo": "L'insieme delle attività che aggiungono valore dal fornitore di materie prime al consumatore finale: acquisto, produzione, marketing, distribuzione, assistenza",
-          "corretto": true,
-          "feedback": "Esatto! Il modello di catena del valore (Porter 1985) identifica dove si crea valore e dove si può ottimizzare."
+          "testo": "Il reddito medio di ogni cittadino di un paese",
+          "feedback": "Non corretto. Il reddito pro capite si calcola dividendo il PIL per il numero di abitanti, ma il PIL stesso è il totale della produzione, non la media per persona.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         },
         {
           "id": "c",
-          "testo": "Il valore totale di un'azienda in borsa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il saldo tra le esportazioni e le importazioni di un paese",
+          "feedback": "Non corretto. Quello è il saldo commerciale (o bilancia commerciale). Il PIL è la somma del valore di tutti i beni e servizi prodotti nel paese.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         },
         {
           "id": "d",
-          "testo": "La sequenza di paesi attraverso cui passa un prodotto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il valore delle riserve auree di un paese",
+          "feedback": "Non corretto. Le riserve auree sono una componente delle riserve valutarie della banca centrale, non il PIL. Il PIL misura la produzione annua di beni e servizi.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         }
       ],
-      "spiegazione": "Il modello di catena del valore (Porter 1985) identifica dove si crea valore e dove si può ottimizzare. Chi controlla i nodi chiave della catena cattura il margine maggiore."
+      "spiegazione": "Il PIL (Prodotto Interno Lordo) è la somma del valore di tutti i beni e servizi prodotti in un paese in un anno. È la misura più usata per confrontare le dimensioni e la crescita delle economie. Limite: non misura la distribuzione della ricchezza né la sostenibilità.",
+      "riferimento_principale": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è la 'lean production' (produzione snella)?",
+      "domanda": "In quale paese vengono prodotte fisicamente la maggior parte delle magliette da 5,99 euro, secondo l'analisi della catena del valore nel testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La produzione di oggetti leggeri e di piccole dimensioni",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Bangladesh, Cambogia o Etiopia (paesi con bassi costi del lavoro)",
+          "corretto": true,
+          "feedback": "Esatto! La fase di taglio e cucito della maglietta avviene principalmente in Bangladesh, Cambogia o Etiopia, dove il costo del lavoro è molto basso (il cucitore guadagna meno di un centesimo per maglietta)."
         },
         {
           "id": "b",
-          "testo": "Una filosofia produttiva che mira a eliminare ogni spreco (muda): tempo di attesa, sovrapproduzione, scorte eccessive, movimenti inutili, difetti",
-          "corretto": true,
-          "feedback": "Esatto! La lean production nasce in Toyota (Toyota Production System): il principio è produrre solo quello che serve, quando serve, nella quantità giusta."
+          "testo": "Francia o Germania (paesi con alta qualità manifatturiera)",
+          "feedback": "Non corretto. In Francia e Germania il costo del lavoro è alto: rendono impossibile produrre magliette a 5,99 euro. Il cucito avviene in paesi a basso costo del lavoro come Bangladesh, Cambogia, Etiopia.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         },
         {
           "id": "c",
-          "testo": "La produzione industriale con macchinari automatizzati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cina (per il basso costo delle materie prime)",
+          "feedback": "Non corretto (parzialmente). La Cina è un grande produttore tessile, ma la catena del testo identifica Bangladesh, Cambogia e Etiopia come luoghi principali del cucito, con paesi come Cina e India nella filatura.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         },
         {
           "id": "d",
-          "testo": "Un sistema di produzione artigianale a piccola scala",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Italia (per la qualità del Made in Italy)",
+          "feedback": "Non corretto. Le magliette da 5,99 euro non sono prodotte in Italia: il costo del lavoro italiano (18-22 euro/ora) renderebbe impossibile quel prezzo. Il cucito avviene in paesi con costi del lavoro molto più bassi.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         }
       ],
-      "spiegazione": "La lean production nasce in Toyota (Toyota Production System): il principio è produrre solo quello che serve, quando serve, nella quantità giusta. Zero sprechi."
+      "spiegazione": "Nella catena del valore della maglietta da 5,99 euro: taglio e cucito avviene in Bangladesh, Cambogia o Etiopia (salario cucitore: meno di 1 centesimo per maglietta). Il cotone viene dall'India o USA, la filatura dalla Cina o Turchia, mentre marketing e distribuzione avvengono in Europa dove si accumula il maggiore profitto.",
+      "riferimento_principale": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'inflazione'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'aumento generale del livello dei prezzi nel tempo, che riduce il potere d'acquisto se i salari non aumentano proporzionalmente",
+          "corretto": true,
+          "feedback": "Esatto! L'inflazione è l'aumento generale dei prezzi nel tempo. Se i prezzi aumentano del 5% e il salario rimane invariato, si compra il 5% in meno: il potere d'acquisto diminuisce."
+        },
+        {
+          "id": "b",
+          "testo": "L'aumento del numero di prodotti disponibili sul mercato",
+          "feedback": "Non corretto. L'aumento della varietà di prodotti è legato all'innovazione e alla diversificazione produttiva, non all'inflazione. L'inflazione riguarda il livello dei prezzi.",
+          "riferimento": "📖 ESPLORA — Inflazione e potere d'acquisto"
+        },
+        {
+          "id": "c",
+          "testo": "Il gonfiamento artificiale dei prezzi delle azioni in borsa",
+          "feedback": "Non corretto. Le bolle speculative sono un fenomeno dei mercati finanziari. L'inflazione è l'aumento generale dei prezzi nell'economia reale (beni di consumo, servizi).",
+          "riferimento": "📖 ESPLORA — Inflazione e potere d'acquisto"
+        },
+        {
+          "id": "d",
+          "testo": "L'aumento delle importazioni che supera le esportazioni di un paese",
+          "feedback": "Non corretto. La differenza tra importazioni ed esportazioni è il saldo commerciale (o deficit/surplus commerciale). L'inflazione riguarda il livello generale dei prezzi nell'economia.",
+          "riferimento": "📖 ESPLORA — Inflazione e potere d'acquisto"
+        }
+      ],
+      "spiegazione": "Inflazione: aumento generale del livello dei prezzi nel tempo. Un tasso di inflazione del 5% significa che i beni e servizi costano il 5% in più rispetto a un anno fa. Se il salario rimane invariato con inflazione al 5%, il potere d'acquisto (quanti beni si comprano con il reddito) diminuisce del 5%.",
+      "riferimento_principale": "📖 ESPLORA — Inflazione e potere d'acquisto"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Nella catena del valore della maglietta da 5,99 euro, quale fase cattura il profitto maggiore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Marketing, brand e rivenditore finale (che insieme prendono circa 2,50-4,50 euro sui 5,99 totali)",
+          "corretto": true,
+          "feedback": "Esatto! Marketing/brand cattura 1,00-2,00 euro e il rivenditore 1,50-2,50 euro. Insieme rappresentano la quota maggiore del prezzo finale. Il cucitore a Dhaka guadagna meno di 0,05 euro."
+        },
+        {
+          "id": "b",
+          "testo": "Il coltivatore di cotone (perché la materia prima è il componente più importante)",
+          "feedback": "Non corretto. Il coltivatore guadagna 0,10-0,20 euro per maglietta — una delle quote minori. Il valore si accumula nelle fasi di marketing, brand e distribuzione.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
+        },
+        {
+          "id": "c",
+          "testo": "Il trasporto marittimo (perché le distanze sono enormi)",
+          "feedback": "Non corretto. La logistica e il trasporto guadagnano 0,50-0,80 euro — una quota intermedia. Il massimo profitto va al marketing/brand e al rivenditore finale.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
+        },
+        {
+          "id": "d",
+          "testo": "La tintoria (perché i processi chimici sono costosi)",
+          "feedback": "Non corretto. La tintoria e i finissaggi guadagnano 0,10-0,20 euro. La quota maggiore va a marketing/brand (1,00-2,00 euro) e rivenditore (1,50-2,50 euro).",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
+        }
+      ],
+      "spiegazione": "Distribuzione del valore nella maglietta da 5,99 euro: cucito (<0,05€), cotone (0,10-0,20€), filatura (0,05-0,10€), tintoria (0,10-0,20€), logistica (0,50-0,80€), grossista (0,50-1,00€), marketing/brand (1,00-2,00€), rivenditore (1,50-2,50€). Il valore si accumula nelle fasi dove c'è potere di mercato: brand e distribuzione.",
+      "riferimento_principale": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quante fasi compone il ciclo economico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quattro: espansione, picco, recessione, ripresa",
+          "corretto": true,
+          "feedback": "Esatto! Il ciclo economico ha quattro fasi: 1) Espansione (crescita, bassa disoccupazione), 2) Picco (massima crescita, possibile inflazione), 3) Recessione (rallentamento, disoccupazione sale), 4) Ripresa (la crescita riprende)."
+        },
+        {
+          "id": "b",
+          "testo": "Tre: crescita, stagnazione, declino",
+          "feedback": "Non corretto. Il ciclo economico ha quattro fasi, non tre: espansione, picco, recessione, ripresa.",
+          "riferimento": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+        },
+        {
+          "id": "c",
+          "testo": "Due: boom e bust (crescita e crollo)",
+          "feedback": "Non corretto. Sebbene 'boom and bust' sia un modo colloquiale di descrivere il ciclo, il modello economico classico identifica quattro fasi: espansione, picco, recessione, ripresa.",
+          "riferimento": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+        },
+        {
+          "id": "d",
+          "testo": "Sei: crescita lenta, crescita rapida, picco, recessione lieve, recessione grave, ripresa",
+          "feedback": "Non corretto. Il ciclo economico canonico ha quattro fasi: espansione, picco, recessione, ripresa.",
+          "riferimento": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+        }
+      ],
+      "spiegazione": "Il ciclo economico ha quattro fasi: 1) ESPANSIONE: crescita del PIL, disoccupazione cala, investimenti aumentano; 2) PICCO: massima crescita, rischio inflazione; 3) RECESSIONE: crescita negativa (definizione tecnica: due trimestri consecutivi di PIL negativo), disoccupazione sale; 4) RIPRESA: la crescita riprende, spesso sostenuta da politiche pubbliche.",
+      "riferimento_principale": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'modello di business' di un'azienda?",
+      "domanda": "Il testo afferma che il salario minimo del settore tessile in Bangladesh era 95 euro al mese nel 2023. Come si confronta con il costo del lavoro in Italia (18-22 euro/ora)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il piano industriale quinquennale dell'azienda",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un cucitore italiano lavorerebbe 4-5 ore a parità di paga mensile di un lavoratore bangladeshi: la differenza è di circa 50-100 volte il costo orario",
+          "corretto": true,
+          "feedback": "Esatto! 95 euro/mese in Bangladesh. In Italia con 18-22 euro/ora: 95/18 ≈ 5 ore di lavoro italiano per raggiungere uno stipendio mensile bangladeshi. La differenza di costo orario è di fattore 50-100 (18-22 euro/h in Italia vs ~0,47 euro/h in Bangladesh con 25 giorni × 8 ore)."
         },
         {
           "id": "b",
-          "testo": "La descrizione di come un'azienda crea, consegna e cattura valore: proposta di valore, segmenti di clienti, canali, ricavi, costi",
-          "corretto": true,
-          "feedback": "Esatto! Il Business Model Canvas (Osterwalder 2010) è lo strumento standard per mappare un modello di business in 9 blocchi."
+          "testo": "Non è possibile confrontare perché il costo della vita in Bangladesh è uguale a quello italiano",
+          "feedback": "Non corretto. Il costo della vita in Bangladesh è significativamente inferiore a quello italiano, ma anche tenendo conto del diverso costo della vita, la differenza di salario è enorme e spiega la delocalizzazione.",
+          "riferimento": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
         },
         {
           "id": "c",
-          "testo": "La struttura organizzativa dell'azienda",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La differenza è trascurabile: i costi di trasporto dall'Asia annullano il vantaggio del basso costo del lavoro",
+          "feedback": "Non corretto. Il testo mostra che il trasporto per unità costa 0,20-0,40 euro per paio di jeans, molto inferiore al risparmio sul costo del lavoro. La differenza salariale (50-100×) è il principale motore della delocalizzazione.",
+          "riferimento": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
         },
         {
           "id": "d",
-          "testo": "Il piano di marketing e comunicazione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La differenza di salario non è rilevante perché i lavoratori bangladeshi sono meno produttivi",
+          "feedback": "Non corretto. La produttività dei lavoratori tessili nel Bangladesh non è così inferiore da compensare una differenza di 50-100 volte nel costo orario. La delocalizzazione è guidata principalmente dal costo del lavoro.",
+          "riferimento": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
         }
       ],
-      "spiegazione": "Il Business Model Canvas (Osterwalder 2010) è lo strumento standard per mappare un modello di business in 9 blocchi. Ogni startup deve rispondere: chi paga? per cosa? quanto?"
+      "spiegazione": "Costo del lavoro: Bangladesh 95 euro/mese → ~0,47 euro/ora (25 giorni × 8 ore). Italia: 18-22 euro/ora → 3.500-4.400 euro/mese. Differenza: fattore 38-47. La cucitura di un paio di jeans (60 minuti) costa <0,50 euro in Bangladesh vs 18-22 euro in Italia. Questo spiega la delocalizzazione massiva del tessile dall'Europa verso Asia e Africa.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è la 'globalizzazione dei processi produttivi'?",
+      "domanda": "Il testo presenta il BES (Benessere Equo e Sostenibile) italiano come misura complementare al PIL. Perché 'complementare' e non 'alternativa'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La produzione di beni identici in tutto il mondo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il PIL misura l'attività economica (necessaria ma non sufficiente per valutare il benessere) mentre il BES misura dimensioni che il PIL non cattura: salute, sicurezza, ambiente, relazioni sociali",
+          "corretto": true,
+          "feedback": "Esatto! Il PIL e il BES misurano cose diverse: il PIL misura la produzione economica, il BES misura 12 dimensioni di benessere. Non si escludono: entrambi sono utili per capire lo stato di un paese."
         },
         {
           "id": "b",
-          "testo": "La distribuzione geografica della produzione per sfruttare vantaggi comparativi (costo lavoro, competenze, prossimità ai mercati): ogni paese specializza",
-          "corretto": true,
-          "feedback": "Esatto! Apple progetta a Cupertino, produce semiconduttori a Taiwan, assembla in Cina, vende globalmente."
+          "testo": "Perché il BES è meno preciso del PIL e quindi non può sostituirlo nelle decisioni di policy",
+          "feedback": "Non corretto. Il testo non dice che il BES sia meno preciso. Lo descrive come complementare perché misura dimensioni diverse dal PIL, non perché sia meno affidabile.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         },
         {
           "id": "c",
-          "testo": "L'esportazione di prodotti in tutto il mondo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il PIL è obbligatorio per legge (standard Eurostat) mentre il BES è solo facoltativo",
+          "feedback": "Non corretto. La ragione per cui il BES è complementare non è normativa ma concettuale: misura dimensioni (salute, sicurezza, ambiente) che il PIL non misura.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         },
         {
           "id": "d",
-          "testo": "La standardizzazione internazionale dei prodotti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il BES misura le stesse cose del PIL ma in modo più dettagliato",
+          "feedback": "Non corretto. Il BES non misura le stesse cose del PIL in modo più dettagliato: misura dimensioni DIVERSE (salute, istruzione, benessere soggettivo, ambiente) che il PIL non considera affatto.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         }
       ],
-      "spiegazione": "Apple progetta a Cupertino, produce semiconduttori a Taiwan, assembla in Cina, vende globalmente. La globalizzazione delle supply chain ha creato efficienza ma anche vulnerabilità (COVID, guerre)."
+      "spiegazione": "PIL e BES sono complementari perché misurano cose diverse: PIL = attività economica (produzione totale). BES (12 dimensioni) = salute, istruzione, lavoro, benessere economico, relazioni sociali, sicurezza, ambiente, ricerca, qualità servizi. Il PIL può crescere (disastro naturale che richiede ricostruzione) mentre il benessere cala. Il BES coglie quello che il PIL non vede.",
+      "riferimento_principale": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'produttività del lavoro' e come si misura?",
+      "domanda": "Il testo afferma che l'inflazione italiana del 2022 (8,1%) è stata causata principalmente dall'aumento dei prezzi dell'energia dopo la guerra in Ucraina. Come si trasmette l'aumento dei prezzi dell'energia all'inflazione generale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La velocità con cui un lavoratore completa un'attività",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tramite la propagazione attraverso la catena produttiva: energia più cara → trasporti più cari → prezzi di produzione e distribuzione più alti → prezzi al consumatore più alti in tutti i settori",
+          "corretto": true,
+          "feedback": "Esatto! L'energia entra in ogni fase della produzione e distribuzione: le fabbriche usano energia per produrre, i camion usano carburante per trasportare, i negozi usano energia per funzionare. Un aumento dell'energia si propaga attraverso tutta la catena del valore, aumentando i prezzi finali in quasi tutti i settori."
         },
         {
           "id": "b",
-          "testo": "Il valore aggiunto prodotto per unità di lavoro: PIL/ore lavorate. Alta produttività = più output con le stesse risorse",
-          "corretto": true,
-          "feedback": "Esatto! La produttività è la chiave della competitività."
+          "testo": "Tramite la svalutazione dell'euro: i prezzi dell'energia in dollari aumentano e l'euro si svaluta",
+          "feedback": "Non corretto (parzialmente rilevante). La svalutazione dell'euro può amplificare l'impatto, ma il meccanismo principale è la propagazione attraverso la catena produttiva: l'energia entra come costo in ogni fase di produzione e distribuzione.",
+          "riferimento": "📖 ESPLORA — Inflazione e potere d'acquisto"
         },
         {
           "id": "c",
-          "testo": "Il numero di prodotti realizzati per ora di lavoro",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tramite l'aumento dell'occupazione nel settore energetico che aumenta i salari generali",
+          "feedback": "Non corretto. Il meccanismo non è occupazione/salari. La trasmissione dell'inflazione energetica avviene attraverso i costi di produzione: energia più cara → produzione più cara → prezzi al consumatore più alti.",
+          "riferimento": "📖 ESPLORA — Inflazione e potere d'acquisto"
         },
         {
           "id": "d",
-          "testo": "Il salario medio dei lavoratori in un settore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Solo attraverso il riscaldamento domestico: gli altri prezzi non dipendono dall'energia",
+          "feedback": "Non corretto. Il riscaldamento domestico è una parte dell'impatto, ma l'energia entra in OGNI fase produttiva: produzione industriale, agricoltura, trasporti, distribuzione. L'impatto è pervasivo in tutta l'economia.",
+          "riferimento": "📖 ESPLORA — Inflazione e potere d'acquisto"
         }
       ],
-      "spiegazione": "La produttività è la chiave della competitività. L'Italia ha produttività bassa rispetto alla Germania: non perché i lavoratori siano peggiori, ma per organizzazione, tecnologia e dimensione aziendale."
+      "spiegazione": "Meccanismo di trasmissione dell'inflazione energetica: energia cara → 1) costi di produzione industriale aumentano, 2) costi di trasporto aumentano, 3) costi agricoli aumentano (fertilizzanti, macchinari). Questi aumenti di costo si propagano attraverso tutta la catena produttiva aumentando i prezzi finali di quasi tutti i beni e servizi. È la propagazione 'a cascata' dell'energia nel sistema economico.",
+      "riferimento_principale": "📖 ESPLORA — Inflazione e potere d'acquisto"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'teoria dei giochi' e come si applica all'economia?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo descrive come nella catena del valore della maglietta 'il cucito è facilmente delocalizzabile mentre il brand non lo è'. Quale principio economico spiega questa asimmetria?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Lo studio matematico delle strategie nei giochi da tavolo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le fasi che richiedono solo lavoro non qualificato si delocalizzano facilmente nei paesi a basso costo; le fasi che richiedono reputazione, accesso ai mercati e know-how specifico (il brand) non possono essere spostate",
+          "corretto": true,
+          "feedback": "Esatto! Il cucito richiede lavoro non qualificato + macchine: si può delocalizzare ovunque ci sia manodopera a basso costo. Il brand richiede: reputazione costruita nel tempo, accesso ai mercati, design, comunicazione, relazioni con i rivenditori — tutte competenze non delocalizzabili geograficamente."
         },
         {
           "id": "b",
-          "testo": "Un framework matematico per analizzare decisioni strategiche in cui l'esito dipende dalle scelte degli altri: equilibrio di Nash, dilemma del prigioniero, aste",
-          "corretto": true,
-          "feedback": "Esatto! La teoria dei giochi (Nash, 1950) ha rivoluzionato economia, politica e biologia evoluzionistica."
+          "testo": "Le fasi iniziali della catena (vicino alle materie prime) sono sempre meno redditizie delle fasi finali (vicino al consumatore)",
+          "feedback": "Non corretto (parzialmente vero ma incompleto). Non è solo la posizione nella catena: è il tipo di valore aggiunto. Il brand ha valore alto non perché è 'vicino al consumatore' ma perché richiede competenze specifiche non replicabili altrove.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         },
         {
           "id": "c",
-          "testo": "La teoria economica che studia i comportamenti irrazionali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La legge italiana proibisce di spostare le attività di marketing fuori dal paese",
+          "feedback": "Non corretto. Non esiste tale divieto. La resistenza alla delocalizzazione del brand è economica (reputazione costruita nei mercati di destinazione), non legale.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         },
         {
           "id": "d",
-          "testo": "Un sistema di incentivi per aumentare la produttività",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I consumatori italiani preferiscono brand italiani e quindi il marketing deve restare in Italia",
+          "feedback": "Non corretto (parzialmente rilevante). Le preferenze dei consumatori influenzano le strategie di marketing, ma il punto più generale è che il brand (in qualsiasi paese) richiede competenze e risorse non facilmente spostabili.",
+          "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         }
       ],
-      "spiegazione": "La teoria dei giochi (Nash, 1950) ha rivoluzionato economia, politica e biologia evoluzionistica. Spiega perché le aziende non sempre cooperano anche quando converrebbe."
+      "spiegazione": "L'asimmetria nella catena del valore riflette il potere di mercato: il cucito è una commodity (può essere fatto ovunque con le stesse macchine) → si compete solo sul prezzo del lavoro → delocalizzazione verso i paesi più economici. Il brand è unico (reputazione specifica, relazioni con i rivenditori, design riconoscibile) → potere di mercato alto → non delocalizzabile.",
+      "riferimento_principale": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'disruption' tecnologica di un settore economico?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo descrive le cooperative come imprese 'dove chi lavora decide e il profitto va ai soci-lavoratori'. In quali contesti questo modello può essere preferibile alla società per azioni?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'interruzione della produzione per sciopero o guasto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Quando l'obiettivo è creare valore condiviso per i lavoratori e la comunità locale, non massimizzare il profitto per azionisti esterni",
+          "corretto": true,
+          "feedback": "Esatto! Le cooperative sono vantaggiose quando: i lavoratori hanno interessi di lungo termine nel territorio (non escono se il costo del lavoro aumenta), quando l'obiettivo è la stabilità occupazionale e la distribuzione equa del valore aggiunto, quando i servizi da produrre hanno forte vocazione locale (cooperative sociali, cooperative agricole)."
         },
         {
           "id": "b",
-          "testo": "Il processo con cui una nuova tecnologia o modello di business trasforma radicalmente un settore rendendo obsoleti i player esistenti: Uber/taxi, Netflix/DVD, smartphone/GPS",
-          "corretto": true,
-          "feedback": "Esatto! La disruption (Christensen, 1997) inizia tipicamente con prodotti peggiorativi ma più economici nei segmenti meno esigenti, poi migliora rapidamente conquistando l'intero mercato."
+          "testo": "Quando il profitto atteso è molto alto: le cooperative distribuiscono più profitto delle SRL",
+          "feedback": "Non corretto. Le cooperative non necessariamente distribuiscono più profitto: spesso reinvestono nell'impresa o distribuiscono a tutti i soci in modo eguale. Sono preferibili per stabilità e valore condiviso, non per massimizzare il profitto.",
+          "riferimento": "📖 ESPLORA — Le forme di organizzazione economica: da artigiano a multinazionale"
         },
         {
           "id": "c",
-          "testo": "La crisi economica causata da innovazioni tecnologiche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Quando si vuole evitare qualsiasi forma di tassazione sui profitti",
+          "feedback": "Non corretto. Le cooperative non sono esenti da tassazione: hanno un regime fiscale specifico ma non sono un modo per evitare le tasse. La ragione di scegliere la cooperativa è la governance partecipativa, non la fiscalità.",
+          "riferimento": "📖 ESPLORA — Le forme di organizzazione economica: da artigiano a multinazionale"
         },
         {
           "id": "d",
-          "testo": "La distruzione fisica di infrastrutture produttive",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Quando si vuole raccogliere capitali da molti investitori anonimi in borsa",
+          "feedback": "Non corretto. Per raccogliere capitali da investitori anonimi in borsa si usano le società per azioni quotate. Le cooperative sono di proprietà dei soci-lavoratori, non di investitori anonimi.",
+          "riferimento": "📖 ESPLORA — Le forme di organizzazione economica: da artigiano a multinazionale"
         }
       ],
-      "spiegazione": "La disruption (Christensen, 1997) inizia tipicamente con prodotti peggiorativi ma più economici nei segmenti meno esigenti, poi migliora rapidamente conquistando l'intero mercato."
+      "spiegazione": "Cooperative vs SRL: la cooperativa è preferibile quando: 1) l'obiettivo non è massimizzare il profitto per azionisti esterni ma creare valore per i lavoratori-soci, 2) si vuole stabilità occupazionale a lungo termine nel territorio, 3) il servizio ha forte vocazione locale (cooperative sociali, cooperative agricole). L'1% dei voti per ogni socio (indipendentemente dalla quota) garantisce controllo democratico.",
+      "riferimento_principale": "📖 ESPLORA — Le forme di organizzazione economica: da artigiano a multinazionale"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'reshoring' e perché alcune aziende lo stanno praticando?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo descrive tre limiti del PIL come misura del benessere: cresce anche con eventi negativi, non misura la distribuzione, non misura la sostenibilità. Quale di questi tre limiti è più rilevante per confrontare il benessere tra paesi con PIL simile?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il trasferimento di produzioni in paesi a bassi salari",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il limite della distribuzione: due paesi con PIL identico possono avere livelli di benessere molto diversi se in uno la ricchezza è distribuita equamente e nell'altro è concentrata nel 5% della popolazione",
+          "corretto": true,
+          "feedback": "Esatto! Per confrontare il benessere tra paesi con PIL simile, il limite più rilevante è la distribuzione. L'indice di Gini misura questa distribuzione: due paesi con stesso PIL ma Gini diverso (0,25 vs 0,50) hanno livelli di benessere diffuso molto diversi."
         },
         {
           "id": "b",
-          "testo": "Il rimpatrio di produzioni delocalizzate: motivato da fragilità delle supply chain globali (COVID, guerra), costi energetici, automazione e pressione politica a produrre localmente",
-          "corretto": true,
-          "feedback": "Esatto! La pandemia e la guerra in Ucraina hanno evidenziato i rischi delle supply chain globali ultra-efficienti ma fragili."
+          "testo": "Il limite degli eventi negativi: un paese con molti disastri naturali ha PIL più alto degli altri ma benessere inferiore",
+          "feedback": "Non corretto (rilevante ma non il più rilevante per il confronto tra paesi). Per confrontare paesi con PIL simile, la distribuzione è il fattore più importante: un paese può avere uguale PIL totale ma molto diversa distribuzione.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         },
         {
           "id": "c",
-          "testo": "Il ritorno di emigrati per lavorare nelle industrie locali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il limite della sostenibilità: un paese che esaurisce le risorse naturali ha PIL alto oggi ma basso in futuro",
+          "feedback": "Non corretto (rilevante ma non il più rilevante per il confronto attuale). Per confrontare due paesi con stesso PIL oggi, la distribuzione è più immediatamente rilevante per valutare il benessere diffuso della popolazione.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         },
         {
           "id": "d",
-          "testo": "La riduzione degli stabilimenti produttivi per efficienza",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tutti e tre i limiti sono ugualmente rilevanti: non si può dare priorità a nessuno",
+          "feedback": "Non corretto. Il testo li presenta tutti, ma per il confronto tra paesi con PIL simile la distribuzione è il fattore discriminante più immediato per il benessere diffuso della popolazione.",
+          "riferimento": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
         }
       ],
-      "spiegazione": "La pandemia e la guerra in Ucraina hanno evidenziato i rischi delle supply chain globali ultra-efficienti ma fragili. Il reshoring o nearshoring bilancia efficienza e resilienza."
+      "spiegazione": "Per confrontare paesi con PIL simile, il limite più rilevante è la distribuzione (indice di Gini). Esempio: paesi del Golfo con PIL alto e pochi super-ricchi vs paesi nordici con PIL simile ma distribuzione molto più equa → benessere diffuso molto diverso. Il Gini dell'Italia è ~0,35, della Svezia ~0,28, degli USA ~0,41 (dati Eurostat/OCSE).",
+      "riferimento_principale": "📖 ESPLORA — PIL, benessere e i limiti della misura economica"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'il prezzo basso è spesso il risultato di costi esternalizzati — pagati non da chi compra né da chi vende, ma da chi lavora in condizioni insufficienti o dall'ambiente'. Quale implicazione ha questo per la valutazione del 'prezzo giusto' di un prodotto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il prezzo di mercato non riflette il costo sociale e ambientale totale della produzione: un prodotto economico può avere costi nascosti che ricadono su terzi (lavoratori sfruttati, ecosistemi inquinati) non inclusi nel prezzo",
+          "corretto": true,
+          "feedback": "Esatto! Il 'costo esternalizzato' è la definizione economica di esternalità negativa: costi che ricadono su chi non ha partecipato alla transazione (lavoratori, comunità locali, ambiente). Un prodotto che 'costa poco' può avere costi totali molto più alti che non compaiono nel prezzo."
+        },
+        {
+          "id": "b",
+          "testo": "I prodotti economici sono sempre di qualità inferiore: si ottiene quello per cui si paga",
+          "feedback": "Non corretto. Il testo non dice che la qualità sia bassa: una maglietta da 5,99 euro può essere tecnicamente della stessa qualità di una da 30 euro. La differenza sta nei costi esternalizzati (condizioni di lavoro, impatto ambientale), non nella qualità materiale.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "c",
+          "testo": "Comprare prodotti economici è sempre moralmente sbagliato e va evitato",
+          "feedback": "Non corretto. Il testo non fa una valutazione morale assoluta ma una descrizione economica delle esternalità. Comprare prodotti economici può essere una necessità economica per molte famiglie; la questione è sistemica, non solo individuale.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "d",
+          "testo": "I governi dovrebbero vietare i prodotti a basso prezzo per proteggere i lavoratori",
+          "feedback": "Non corretto. Il testo descrive il problema delle esternalità ma non propone il divieto dei prodotti economici come soluzione. Le soluzioni discusse includono normative sulla due diligence delle filiere, standard di lavoro internazionali, e scelte di consumo consapevole.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        }
+      ],
+      "spiegazione": "La teoria delle esternalità (economista Arthur Pigou, 1920): il prezzo di mercato riflette solo i costi privati (materia prima, lavoro diretto, distribuzione) ma non i costi sociali e ambientali che ricadono su terzi. Una maglietta da 5,99 euro ha un 'costo vero' molto più alto se includi: costi sanitari dei lavoratori esposti a coloranti tossici, degrado ambientale dei fiumi, emissioni dei trasporti. Questi costi non scompaiono: vengono pagati da altri (lavoratori, comunità, governo).",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo descrive la Grande Recessione del 2008-2009 come innescata dai 'mutui subprime' americani. Come si è propagata dalla finanza americana a tutta l'economia globale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le banche americane avevano distribuito il rischio dei mutui ad alto rischio globalmente attraverso prodotti finanziari complessi (CDO, MBS): quando i mutui sono andati in default, il collasso si è diffuso alle banche di tutto il mondo",
+          "corretto": true,
+          "feedback": "Esatto! Le banche americane avevano 'impacchettato' i mutui ad alto rischio in prodotti finanziari (CDO, MBS) venduti globalmente. Quando i default sui mutui sono iniziati, il valore di questi prodotti è crollato ovunque: le banche europee, asiatiche, americane hanno subito perdite simultaneamente."
+        },
+        {
+          "id": "b",
+          "testo": "Il governo americano ha imposto dazi a tutti i paesi del mondo per ridurre le importazioni, causando una recessione globale",
+          "feedback": "Non corretto. Non ci sono stati dazi generalizzati nel 2008. La trasmissione della crisi è avvenuta attraverso i mercati finanziari globali (prodotti finanziari derivati dai mutui subprime distribuiti alle banche di tutto il mondo).",
+          "riferimento": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+        },
+        {
+          "id": "c",
+          "testo": "Il crollo del mercato immobiliare americano ha ridotto la domanda di esportazioni dai paesi europei, causando recessione in Europa",
+          "feedback": "Non corretto (parzialmente rilevante nel secondo effetto). Il meccanismo principale è stato finanziario (CDO/MBS), non commerciale (riduzione delle esportazioni). La crisi si è trasmessa principalmente attraverso il sistema bancario globale.",
+          "riferimento": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+        },
+        {
+          "id": "d",
+          "testo": "Il panico psicologico dei consumatori americani ha contagiato i consumatori di altri paesi tramite i media",
+          "feedback": "Non corretto. Sebbene la fiducia dei consumatori sia stata influenzata, il meccanismo principale di trasmissione è stato il sistema bancario globale attraverso i prodotti finanziari derivati dai mutui subprime.",
+          "riferimento": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+        }
+      ],
+      "spiegazione": "La trasmissione della crisi 2008: 1) Banche americane impacchettano mutui subprime in CDO (Collateralized Debt Obligations) e MBS (Mortgage-Backed Securities), 2) Li vendono a banche di tutto il mondo come investimenti sicuri (con rating AAA), 3) Default sui mutui → valore CDO/MBS crolla → banche globali subiscono perdite simultanee → credit crunch → recessione globale. L'interconnessione finanziaria globale ha trasformato una crisi locale in globale.",
+      "riferimento_principale": "📖 ESPLORA — Il ciclo economico: espansione, picco, recessione, ripresa"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo afferma che il terziario avanzato (informatica, finanza, consulenza) sta subendo una 'trasformazione profonda' per automazione e IA. Quale implicazione paradossale ha questo per la nozione tradizionale di 'lavoro qualificato' come rifugio sicuro dall'automazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'automazione non riguarda più solo i lavori manuali ripetitivi ma anche i lavori cognitivi routinari (analisi di documenti, inserimento dati, compiti contabili standard): la qualificazione non protegge se il lavoro è routinario",
+          "corretto": true,
+          "feedback": "Esatto! La prima ondata di automazione (robot industriali) ha sostituito lavori fisici ripetitivi. L'IA ora automatizza anche lavori cognitivi routinari: analisi legale di contratti, diagnosi medica standardizzata, contabilità di routine. Non è più vero che 'lavoro qualificato = sicuro dall'automazione'."
+        },
+        {
+          "id": "b",
+          "testo": "I lavori del terziario avanzato non possono essere automatizzati perché richiedono creatività e giudizio umano in ogni decisione",
+          "feedback": "Non corretto. Il testo dice esplicitamente che il terziario avanzato sta subendo trasformazioni profonde da automazione e IA. La distinzione non è 'qualificato vs non qualificato' ma 'routinario vs non routinario'.",
+          "riferimento": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
+        },
+        {
+          "id": "c",
+          "testo": "L'automazione del terziario crea solo problemi in Italia ma non in altri paesi europei con sistemi formativi migliori",
+          "feedback": "Non corretto. L'automazione del terziario avanzato è un fenomeno globale, non specifico dell'Italia. La qualità del sistema formativo influenza la velocità di adattamento, non l'esistenza del fenomeno.",
+          "riferimento": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
+        },
+        {
+          "id": "d",
+          "testo": "L'automazione non è un problema reale: creerà sempre più posti di quanti ne eliminerà nel lungo periodo",
+          "feedback": "Non corretto (incerto). Il saldo tra lavori creati e distrutti dall'IA è dibattuto dagli economisti. Il testo non afferma che l'automazione sia automaticamente positiva: descrive la trasformazione come profonda con conseguenze da gestire.",
+          "riferimento": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
+        }
+      ],
+      "spiegazione": "Il paradosso dell'automazione del terziario: la distinzione rilevante non è qualificato/non qualificato ma ROUTINARIO/NON-ROUTINARIO. Lavori qualificati routinari (analisi contrattuale standard, diagnosi su pattern comuni, contabilità) sono automatizzabili dall'IA. Lavori qualificati non routinari (creatività, giudizio in situazioni nuove, empatia, leadership) sono meno automatizzabili. La formazione dovrebbe puntare alla seconda categoria.",
+      "riferimento_principale": "📖 ESPLORA — I tre settori dell'economia (e il quarto che cresce)"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo descrive come l'Italia ha un PIL tra i primi 10 al mondo ma con crescita media tra le più basse dell'Eurozona negli ultimi 20 anni. Quale tensione sistemica rivela questa combinazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un paese può essere grande in valore assoluto (PIL alto) ma stagnante in dinamica (crescita bassa): il stock di ricchezza accumulato non garantisce la capacità di generarne di nuova, se le strutture produttive non si rinnovano",
+          "corretto": true,
+          "feedback": "Esatto! L'Italia ha un grande stock di ricchezza (PIL alto in valore assoluto) ma problemi strutturali che impediscono la crescita: bassa produttività, sistema educativo non allineato con il mercato del lavoro, burocrazia, peso del debito pubblico. PIL alto e crescita lenta coesistono quando le strutture produttive non si rinnovano."
+        },
+        {
+          "id": "b",
+          "testo": "Non c'è tensione: PIL alto e crescita bassa sono la stessa cosa espressa in unità diverse",
+          "feedback": "Non corretto. PIL assoluto (stock) e tasso di crescita (flusso) sono misure diverse. Un paese può avere PIL alto (ricchezza accumulata) e crescita bassa (scarsa creazione di nuova ricchezza). Non sono la stessa cosa.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Studio di caso"
+        },
+        {
+          "id": "c",
+          "testo": "Il PIL basso significa che l'Italia non è davvero tra i primi 10 al mondo: i dati devono essere sbagliati",
+          "feedback": "Non corretto. Il dato che l'Italia sia tra le prime 10 economie mondiali è corretto (circa 9° posto per PIL nominale). Il paradosso è reale: grande economia ma bassa crescita.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Studio di caso"
+        },
+        {
+          "id": "d",
+          "testo": "La crescita bassa significa che l'Italia sta diventando un paese povero che perderà presto la sua posizione",
+          "feedback": "Non corretto (esagerato). Crescita bassa non equivale a impoverimento immediato. Il problema è il rischio di un divario crescente con i paesi che crescono più velocemente nel lungo periodo.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Studio di caso"
+        }
+      ],
+      "spiegazione": "Il paradosso italiano: PIL tra i primi 10 mondiali (stock accumulato) + crescita media ~0,5%/anno negli ultimi 20 anni (flusso molto basso). Spiegazioni possibili: struttura industriale basata su PMI tradizionali con bassa innovazione, sistema educativo/ricerca debole, inefficienze burocratiche, peso del debito pubblico, scarsa concorrenza nei mercati dei servizi. Il PIL alto riflette la ricchezza passata; la crescita bassa segnala difficoltà nel crearne di nuova.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Studio di caso"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo descrive il costo dei jeans da 15 euro: 0,50 euro per 60 minuti di cucitura in Bangladesh. Con un cucitore italiano a 18 euro/ora, quanto costerebbe il solo cucito in Italia?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "18 euro per 60 minuti = 18 euro solo per il cucito — più che il prezzo di vendita finale dei jeans",
+          "corretto": true,
+          "feedback": "Esatto! 60 minuti di cucito × 18 euro/ora = 18 euro. Ma il jeans completo costa 15 euro al consumatore. Se il cucito fosse fatto in Italia, il solo costo del lavoro supererebbe il prezzo di vendita finale. Questo rende impossibile produrre jeans a questi prezzi in Italia senza un radicale cambiamento dei prezzi finali."
+        },
+        {
+          "id": "b",
+          "testo": "5 euro: circa un terzo del costo del lavoro italiano perché il cucito di jeans è parzialmente automatizzato",
+          "feedback": "Non corretto. Non c'è indicazione di automazione del cucito dei jeans a questo livello. Il calcolo è semplice: 1 ora × 18 euro/ora = 18 euro.",
+          "riferimento": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
+        },
+        {
+          "id": "c",
+          "testo": "3 euro: lo stesso del cucito in Bangladesh perché i lavoratori italiani producono 6 volte di più per ora",
+          "feedback": "Non corretto. Anche se un cucitore italiano fosse 6 volte più produttivo (producendo 6 paia di jeans/ora invece di 1), il costo per paio sarebbe 18/6 = 3 euro — comunque 6 volte più del costo in Bangladesh (0,50 euro).",
+          "riferimento": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
+        },
+        {
+          "id": "d",
+          "testo": "Non è possibile produrre jeans a basso costo in Italia nemmeno con i robot: i costi fissi delle fabbriche sono troppo alti",
+          "feedback": "Non corretto (parzialmente rilevante). I costi fissi sono un fattore, ma la domanda chiede specificamente il costo del lavoro per il cucito. Con automazione il costo del lavoro potrebbe diminuire, ma questo non è il calcolo richiesto.",
+          "riferimento": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
+        }
+      ],
+      "spiegazione": "Calcolo: 60 minuti di cucito in Italia = 1 ora × 18 euro/ora = 18 euro. In Bangladesh: 1 ora × 0,47 euro/ora = 0,47 euro. Differenza: 38 volte. Se i jeans da 15 euro fossero cuciti in Italia, il solo costo del lavoro (18 euro) supererebbe il prezzo di vendita finale (15 euro) — prima ancora di aggiungere tessuto, bottoni, trasporto, distribuzione e profitto. Questo spiega matematicamente la delocalizzazione.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la filiera dei jeans da 15 euro"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo presenta il 'Supply Chain Sustainability Analyst' come professione del futuro. Quale competenza trasversale (non tecnica) è più critica per questo ruolo, secondo la descrizione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il pensiero sistemico: la capacità di vedere come le scelte di un'azienda si collegano alle condizioni di lavoro in un paese lontano e agli impatti ambientali lungo tutta la catena",
+          "corretto": true,
+          "feedback": "Esatto! Il Supply Chain Sustainability Analyst deve vedere le connessioni tra decisioni aziendali (scelta del fornitore), condizioni di lavoro (Bangladesh, Congo), impatti ambientali (fiumi, deforestazione), reputazione aziendale, e normative (CSDD). È un ruolo che richiede pensiero sistemico per connettere fenomeni apparentemente distanti."
+        },
+        {
+          "id": "b",
+          "testo": "La conoscenza approfondita della lingua bengalese per comunicare con i fornitori bangladeshi",
+          "feedback": "Non corretto. La conoscenza di lingue specifiche è utile ma non la competenza più critica. Il pensiero sistemico — la capacità di vedere le connessioni tra decisioni e impatti distanti — è la competenza più distintiva del ruolo.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "c",
+          "testo": "La capacità di programmare software di analisi statistica per elaborare grandi dataset aziendali",
+          "feedback": "Non corretto (rilevante ma non la più critica). La capacità di analisi dei dati è utile ma non la competenza più distinctiva. Il pensiero sistemico — connettere scelte aziendali e impatti socio-ambientali distanti — è la competenza chiave.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "d",
+          "testo": "La conoscenza delle normative doganali di importazione per verificare la provenienza delle merci",
+          "feedback": "Non corretto (utile ma non la più critica). Le normative doganali sono uno strumento. La competenza più distintiva è il pensiero sistemico che connette decisioni di acquisto aziendali con impatti sociali e ambientali lungo tutta la filiera.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        }
+      ],
+      "spiegazione": "Il Supply Chain Sustainability Analyst lavora alla intersezione tra decisioni aziendali (quale fornitore scegliere), condizioni sociali (lavoro dignitoso in paesi di produzione), impatti ambientali (qualità dell'acqua, deforestazione, emissioni CO₂) e normative (CSDD europea, SA8000, ISO 14001). La competenza più critica è il pensiero sistemico: la capacità di vedere come questi elementi si connettono e si influenzano reciprocamente attraverso catene di fornitura globali.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
     }
   ]
 }

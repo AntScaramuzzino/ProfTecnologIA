@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-MAT-1-06",
-  "titolo": "Biomateriali e bioplastiche: il futuro dei materiali",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è un 'biomateriale' in senso medico?",
+      "domanda": "Quale fibra naturale ha il più basso impatto ambientale tra le principali fibre tessili, richiedendo quasi nessun pesticida e nessuna irrigazione aggiuntiva?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un materiale prodotto da organismi biologici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il lino",
+          "corretto": true,
+          "feedback": "Esatto! Il lino richiede pochissima acqua (la pioggia naturale in Europa è sufficiente), quasi nessun pesticida (la pianta è naturalmente resistente), e l'intera pianta viene utilizzata (semi, stelo, residui). È la fibra naturale con il minore impatto ambientale."
         },
         {
           "id": "b",
-          "testo": "Un materiale progettato per interagire con i sistemi biologici senza causare risposta immunitaria avversa: usato in impianti, protesi e dispositivi medici",
-          "corretto": true,
-          "feedback": "Esatto! L'acciaio inox delle articolazioni artificiali, il polietilene nelle coppe delle protesi d'anca, il titanio negli impianti dentali sono biomateriali: inerti, biocompatibili e duraturi."
+          "testo": "Il cotone",
+          "feedback": "Non corretto. Il cotone è la coltura più idrovora al mondo (8.000-10.000 litri/kg) e consuma il 16% degli insetticidi mondiali pur occupando solo il 2,5% della superficie agricola.",
+          "riferimento": "📖 ESPLORA — Il lino: la fibra più ecologica"
         },
         {
           "id": "c",
-          "testo": "Un materiale biodegradabile nell'ambiente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La lana",
+          "feedback": "Non corretto. La lana richiede l'allevamento ovino con emissioni di metano e uso del suolo significativi. Il lino ha un impatto ambientale complessivo più basso.",
+          "riferimento": "📖 ESPLORA — Il lino: la fibra più ecologica"
         },
         {
           "id": "d",
-          "testo": "Un materiale estratto da fonti naturali rinnovabili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il poliestere",
+          "feedback": "Non corretto. Il poliestere è una fibra sintetica derivata dal petrolio. Non biodegradabile, produce microplastiche nelle lavatrici. Impatto ambientale molto più alto del lino.",
+          "riferimento": "📖 ESPLORA — Il lino: la fibra più ecologica"
         }
       ],
-      "spiegazione": "L'acciaio inox delle articolazioni artificiali, il polietilene nelle coppe delle protesi d'anca, il titanio negli impianti dentali sono biomateriali: inerti, biocompatibili e duraturi."
+      "spiegazione": "Il lino (Linum usitatissimum) ha il più basso impatto ambientale: richiede zero irrigazione aggiuntiva (piogge europee sufficienti), quasi nessun pesticida, e l'intera pianta viene usata (semi → olio, stelo → fibra tessile, residui → mangime). Produce una fibra forte, fresca, antibatterica e completamente biodegradabile.",
+      "riferimento_principale": "📖 ESPLORA — Il lino: la fibra più ecologica"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cosa distingue una bioplastica 'bio-based' da una 'biodegradabile'?",
+      "domanda": "Quante microfibre sintetiche può rilasciare un carico di lavatrice di tessuti sintetici in un singolo lavaggio?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sono sinonimi: ogni bioplastica è entrambe le cose",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "100.000-700.000 microfibre",
+          "corretto": true,
+          "feedback": "Esatto! Un singolo lavaggio a pieno carico di tessuti sintetici (poliestere, nylon, acrilico) rilascia tra 100.000 e 700.000 microfibre. Queste microplastiche passano parzialmente attraverso i depuratori e raggiungono i fiumi, i mari e la catena alimentare."
         },
         {
           "id": "b",
-          "testo": "Bio-based indica l'origine (da biomasse rinnovabili); biodegradabile indica il fine vita (si degrada naturalmente). Possono essere indipendenti: PET bio-based non è biodegradabile",
-          "corretto": true,
-          "feedback": "Esatto! L'equivoco è comune e sfruttato nel marketing."
+          "testo": "100-500 microfibre",
+          "feedback": "Non corretto. Il numero reale è enormemente maggiore: tra 100.000 e 700.000 microfibre per lavaggio. Non alcune centinaia ma centinaia di migliaia.",
+          "riferimento": "📖 ESPLORA — Il poliestere: la fibra più prodotta al mondo"
         },
         {
           "id": "c",
-          "testo": "La bioplastica bio-based è sempre compostabile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 10 microfibre",
+          "feedback": "Non corretto. Il numero di microfibre rilasciate è nell'ordine delle centinaia di migliaia (100.000-700.000) per lavaggio, non 10.",
+          "riferimento": "📖 ESPLORA — Il poliestere: la fibra più prodotta al mondo"
         },
         {
           "id": "d",
-          "testo": "La bioplastica biodegradabile è sempre di origine fossile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Nessuna microfibra: le fibre sintetiche sono troppo resistenti per rompersi in lavatrice",
+          "feedback": "Non corretto. Il movimento meccanico della lavatrice rompe microscopiche fibre dai tessuti sintetici. Ogni lavaggio rilascia centinaia di migliaia di microfibre.",
+          "riferimento": "📖 ESPLORA — Il poliestere: la fibra più prodotta al mondo"
         }
       ],
-      "spiegazione": "L'equivoco è comune e sfruttato nel marketing. Una bottiglia di PET bio-based (da canna da zucchero) non si degrada in natura: è chimicamente identica al PET fossile."
+      "spiegazione": "Ogni lavaggio di tessuti sintetici rilascia 100.000-700.000 microfibre sintetiche. I depuratori ne trattengono il 72-99% ma non il 100%: le microfibre che sfuggono finiscono nei fiumi, nei mari, nell'intestino dei pesci, poi nel nostro piatto. Le microfibre tessili sintetiche rappresentano il 35% di tutte le microplastiche primarie rilasciate nell'oceano.",
+      "riferimento_principale": "📖 ESPLORA — Il poliestere: la fibra più prodotta al mondo"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il PHA (PolyHydroxyAlkanoate) e cosa lo rende speciale?",
+      "domanda": "Il cemento armato combina cemento e acciaio. Quale proprietà meccanica ha ciascun materiale che rende efficace questa combinazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un tipo di plastica rinforzata con fibre vegetali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cemento: forte in compressione ma fragile in trazione; acciaio: forte in trazione. Insieme resistono a entrambi i tipi di forza",
+          "corretto": true,
+          "feedback": "Esatto! Il cemento regge enormi carichi verticali (compressione) ma si spezza se piegato o tirato (trazione). L'acciaio è eccellente in trazione. Le barre di acciaio vengono inserite nelle zone dove si prevede la trazione: il composito resiste a entrambi."
         },
         {
           "id": "b",
-          "testo": "Un biopolimero prodotto da batteri che usano zuccheri o acidi grassi: è bio-based E biodegradabile in ambienti naturali, incluso l'ambiente marino",
-          "corretto": true,
-          "feedback": "Esatto! Il PHA è il 'Santo Graal' delle bioplastiche: si degrada in acqua dolce, salata e suolo."
+          "testo": "Cemento: forte in trazione; acciaio: forte in compressione. Si complementano perfettamente",
+          "feedback": "Non corretto. È l'inverso: il cemento è forte in COMPRESSIONE, l'acciaio in TRAZIONE. Il cemento armato sfrutta precisamente questa complementarità.",
+          "riferimento": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
         },
         {
           "id": "c",
-          "testo": "Un adesivo naturale derivato da alghe marine",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cemento: leggero; acciaio: pesante. Il composito bilancia il peso in modo ottimale",
+          "feedback": "Non corretto. Il bilanciamento del peso non è la ragione principale del cemento armato. La ragione è la complementarità delle proprietà meccaniche: cemento forte in compressione, acciaio forte in trazione.",
+          "riferimento": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
         },
         {
           "id": "d",
-          "testo": "Un isolante termico prodotto da fibre di canapa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cemento: economico; acciaio: resistente. Il composito riduce i costi usando meno acciaio",
+          "feedback": "Non corretto. La riduzione del costo non è la logica principale del cemento armato. La logica è meccanica: cemento per la compressione, acciaio per la trazione.",
+          "riferimento": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
         }
       ],
-      "spiegazione": "Il PHA è il 'Santo Graal' delle bioplastiche: si degrada in acqua dolce, salata e suolo. Il costo ancora elevato (3-5 €/kg vs 1 €/kg PET) ne limita la diffusione."
+      "spiegazione": "Il cemento armato è il composito più usato al mondo: il cemento regge bene la compressione (pilone che sostiene il peso) ma è fragile in trazione (si spezza se piegato). L'acciaio è eccellente in trazione. Le barre di acciaio vengono inserite nelle zone dove si prevede la trazione: il composito cemento+acciaio regge sia compressione che trazione.",
+      "riferimento_principale": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Qual è il codice numerico della plastica PET (polietilene tereftalato) usata per le bottiglie d'acqua?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "♳ 1",
+          "corretto": true,
+          "feedback": "Esatto! Il PET ha il codice ♳ 1. È la plastica più riciclata per gli imballaggi: bottiglie d'acqua, succhi, contenitori alimentari. Viene riciclato in fibre polar fleece o nuove bottiglie."
+        },
+        {
+          "id": "b",
+          "testo": "♴ 2 (HDPE)",
+          "feedback": "Non corretto. Il codice ♴ 2 è il polietilene alta densità (HDPE), usato per flaconi di shampoo, taniche, sacchetti resistenti.",
+          "riferimento": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+        },
+        {
+          "id": "c",
+          "testo": "♸ 6 (PS)",
+          "feedback": "Non corretto. Il codice ♸ 6 è il polistirolo (PS), usato per bicchieri, vassoi, imballaggi espansi. Quasi mai riciclato.",
+          "riferimento": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+        },
+        {
+          "id": "d",
+          "testo": "♷ 5 (PP)",
+          "feedback": "Non corretto. Il codice ♷ 5 è il polipropilene (PP), usato per contenitori cibo, tappi, parti auto. Il PET è il codice ♳ 1.",
+          "riferimento": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+        }
+      ],
+      "spiegazione": "Il sistema di codifica delle plastiche (1-7) con il simbolo del triangolo con frecce: ♳1 PET (bottiglie acqua), ♴2 HDPE (flaconi shampoo), ♵3 PVC (tubi), ♶4 LDPE (sacchetti), ♷5 PP (tappi), ♸6 PS (bicchieri usa-e-getta), ♹7 ALTRI. Il PET (codice 1) è tra le plastiche più riciclate in Italia.",
+      "riferimento_principale": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "La fibra di carbonio è un composito formato da due componenti. Quali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Fibre di carbonio (filamenti sottilissimi) e resina epossidica (matrice che le incolla insieme)",
+          "corretto": true,
+          "feedback": "Esatto! La fibra di carbonio (CFRP) è un composito a due componenti: 1) fibre di carbonio quasi puro (95-99% C), filamenti sottilissimi da 5-10 micrometri; 2) resina termoindurente (tipicamente epossidica) che tiene insieme le fibre e distribuisce il carico tra esse."
+        },
+        {
+          "id": "b",
+          "testo": "Fibra di vetro e resina polimerica (uguale alla vetroresina)",
+          "feedback": "Non corretto. La fibra di vetro + resina è la vetroresina (GFRP). La fibra di carbonio usa fibre di carbonio (non vetro) e tipicamente resina epossidica.",
+          "riferimento": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
+        },
+        {
+          "id": "c",
+          "testo": "Grafite compressa e binder acrilico",
+          "feedback": "Non corretto. La fibra di carbonio non è grafite compressa. È un composito di filamenti sottilissimi di carbonio quasi puro (~5-10 micrometri) impregnati in resina termoindurente.",
+          "riferimento": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
+        },
+        {
+          "id": "d",
+          "testo": "Alluminio e nanoparticelle di carbonio",
+          "feedback": "Non corretto. La fibra di carbonio non contiene alluminio. È un composito di fibre di carbonio quasi puro e resina epossidica (matrice polimerica).",
+          "riferimento": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
+        }
+      ],
+      "spiegazione": "CFRP (Carbon Fiber Reinforced Polymer): 1) Fibre di carbonio: filamenti di 5-10 micrometri di diametro (10-20 volte più sottili di un capello), 95-99% carbonio puro in struttura grafitica orientata. 2) Resina epossidica (termoindurente): incolla e distribuisce il carico tra le fibre. La combinazione produce la più alta resistenza specifica tra tutti i materiali strutturali.",
+      "riferimento_principale": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'greenwashing'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La pratica di descrivere un prodotto come 'verde' o 'sostenibile' per scopi di marketing senza che le caratteristiche ambientali siano realmente sostanziali",
+          "corretto": true,
+          "feedback": "Esatto! Il greenwashing è l'uso di claim ambientali ('bio', 'eco', 'sostenibile', 'compostabile') a fini di marketing quando le caratteristiche ambientali non sono verificabili, sostanziali o significativamente diverse dai prodotti convenzionali."
+        },
+        {
+          "id": "b",
+          "testo": "La pratica di colorare di verde i prodotti per renderli più attraenti ai consumatori",
+          "feedback": "Non corretto. Il greenwashing non riguarda il colore fisico dei prodotti. È l'uso di claim ambientali non verificabili o esagerati per fini di marketing.",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+        },
+        {
+          "id": "c",
+          "testo": "La pratica di lavare i vestiti verdi in modo da non sbiadirli",
+          "feedback": "Non corretto. Il greenwashing è un termine di marketing, non un processo di lavanderia. Indica l'uso non veritiero di claim ambientali.",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+        },
+        {
+          "id": "d",
+          "testo": "La pratica di produrre energia dall'erba verde e dalle piante in modo sostenibile",
+          "feedback": "Non corretto. Il greenwashing non riguarda la produzione di energia. Indica l'uso di affermazioni ambientali non verificabili per fini di marketing.",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+        }
+      ],
+      "spiegazione": "Il greenwashing: usare termini come 'bio', 'eco', 'compostabile', 'plastic-free', 'sostenibile' su prodotti senza che queste caratteristiche siano sostanziali o verificabili. Per valutare una claim ambientale: è specifica? È misurabile? È verificata da un ente terzo certificatore? In assenza di risposta affermativa a queste domande, è possibile greenwashing.",
+      "riferimento_principale": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'micelium composites' e quali applicazioni ha?",
+      "domanda": "Il cotone richiede 8.000-10.000 litri d'acqua per kg. Il testo dice che la stessa t-shirt tenuta per 10 anni ha un'impronta idrica di 1.000 litri/anno, mentre tenuta per 2 anni 5.000 litri/anno. Quale messaggio comunicano questi dati sulla sostenibilità del cotone?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un materiale composito rinforzato con fibre microbiche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La durata di vita del capo è la variabile più importante: usare a lungo qualsiasi prodotto (anche ad alta impronta ambientale per la produzione) ne distribuisce il costo ambientale nel tempo",
+          "corretto": true,
+          "feedback": "Esatto! L'impronta ambientale non dipende solo dalla produzione ma dall'uso: 10 anni vs 2 anni divide per 5 il costo ambientale annuo. Comprare meno ma più durevole, usare a lungo, riparare invece di buttare — queste azioni riducono l'impatto più del tipo di fibra scelta."
         },
         {
           "id": "b",
-          "testo": "Un materiale cresciuto da funghi (micelio) su substrati agricoli di scarto: imballaggi, isolanti, materiali da costruzione. 100% compostabile, basso impatto",
-          "corretto": true,
-          "feedback": "Esatto! Ecovative Design usa micelio per produrre imballaggi che sostituiscono il polistirolo: stessa funzione, compostabile in giardino in 45 giorni."
+          "testo": "Usare il cotone per pochi anni è sempre preferibile al poliestere perché il cotone è biodegradabile",
+          "feedback": "Non corretto. Il calcolo dell'impronta temporale mostra che usare il cotone per soli 2 anni (5.000 litri/anno) è molto peggio che usarlo per 10 anni (1.000 litri/anno). La breve durata non è compensata dalla biodegradabilità.",
+          "riferimento": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
         },
         {
           "id": "c",
-          "testo": "Un tipo di cemento biologico per l'edilizia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il cotone non dovrebbe mai essere usato perché il suo consumo d'acqua è sempre troppo elevato",
+          "feedback": "Non corretto. Il testo non sostiene l'eliminazione del cotone ma una valutazione contestuale. Con una lunga vita utile (10 anni), l'impronta idrica annua del cotone diventa molto più accettabile.",
+          "riferimento": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
         },
         {
           "id": "d",
-          "testo": "Un rivestimento protettivo derivato da muffe industriali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'acqua usata per produrre un capo di cotone non ha importanza perché ritorna all'ambiente come vapore acqueo",
+          "feedback": "Non corretto. L'acqua usata per irrigare il cotone in zone aride (come il Kazakhstan, causa del prosciugamento del Mar d'Aral) non 'ritorna all'ambiente' come vapore localmente: si evapora, si trasporta altrove, impoverendo le falde locali.",
+          "riferimento": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
         }
       ],
-      "spiegazione": "Ecovative Design usa micelio per produrre imballaggi che sostituiscono il polistirolo: stessa funzione, compostabile in giardino in 45 giorni. Ikea ne ha sperimentato l'uso."
+      "spiegazione": "Il dato 1.000 litri/anno (t-shirt usata 10 anni) vs 5.000 litri/anno (2 anni) rivela un principio importante: l'impatto ambientale per anno d'uso si riduce drasticamente allungando la vita del prodotto. Riparare, usare a lungo, comprare di seconda mano, vendere invece di buttare: queste azioni riducono l'impatto più del tipo di fibra scelto.",
+      "riferimento_principale": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Perché il collagene bovino è usato in medicina rigenerativa?",
+      "domanda": "Il PLA (acido polilattico) viene spesso presentato come una bioplastica biodegradabile. Il testo evidenzia una condizione fondamentale che rende questa affermazione fuorviante. Quale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché è il materiale più resistente disponibile in natura",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il PLA si biodegrada solo in impianti di compostaggio industriale a 58°C con umidità controllata: in una compostiera domestica a 25°C o in discarica normale, impiega decenni o secoli come qualsiasi altra plastica",
+          "corretto": true,
+          "feedback": "Esatto! Il PLA è biodegradabile SOLO in condizioni di compostaggio industriale specifiche (≥58°C, umidità controllata, microorganismi specifici). In compostiera domestica a 25°C: decine di anni. In mare: decenni o secoli. La maggior parte dei consumatori non ha accesso a impianti industriali, quindi il PLA si comporta come plastica convenzionale."
         },
         {
           "id": "b",
-          "testo": "Perché è biocompatibile, biodegradabile, supporta la crescita cellulare e può essere ristrutturato dall'organismo ospite: ideale per scaffold tissutali",
-          "corretto": true,
-          "feedback": "Esatto! Il collagene è la proteina strutturale principale dell'organismo umano."
+          "testo": "Il PLA non è mai biodegradabile: è solo una plastica colorata di verde per sembrare eco-friendly",
+          "feedback": "Non corretto. Il PLA È biodegradabile, ma SOLO in condizioni specifiche di compostaggio industriale (≥58°C). Il problema non è che non si biodegradi mai, ma che le condizioni necessarie sono rare nella pratica.",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
         },
         {
           "id": "c",
-          "testo": "Perché non viene mai rigettato dal sistema immunitario",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il PLA viene prodotto dal mais, quindi compete con la produzione alimentare e non è sostenibile",
+          "feedback": "Non corretto (rilevante ma non è il punto principale del testo). La questione della competizione con la produzione alimentare esiste, ma il testo evidenzia principalmente il problema della biodegradabilità condizionale.",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
         },
         {
           "id": "d",
-          "testo": "Perché può essere prodotto sinteticamente a basso costo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il PLA contiene additivi plastificanti che impediscono la biodegradazione in qualsiasi condizione",
+          "feedback": "Non corretto. Il PLA senza plastificanti è tecnicamente biodegradabile in condizioni industriali specifiche. Il problema non sono gli additivi ma le condizioni necessarie per la biodegradazione (58°C industriali).",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
         }
       ],
-      "spiegazione": "Il collagene è la proteina strutturale principale dell'organismo umano. Scaffold di collagene per la riparazione della cartilagine, della pelle e dei tendini sono già clinicamente usati."
+      "spiegazione": "Il PLA è biodegradabile CONDIZIONALMENTE: richiede impianti di compostaggio industriale a ≥58°C, umidità controllata, microorganismi specifici. In casa (compostiera a 25°C), in mare, in discarica normale: decenni o secoli. Poiché la maggior parte dei consumatori non ha accesso agli impianti industriali, il PLA nel flusso reale di rifiuti si comporta come plastica convenzionale.",
+      "riferimento_principale": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'biotecnologia dei materiali' e quale potenziale ha?",
+      "domanda": "Il testo descrive una giacca tecnica da montagna con membrana PTFE espanso (Gore-Tex). Quale proprietà fisica paradossale ha questa membrana?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La produzione di materiali usando esclusivamente processi biologici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "È impermeabile all'acqua liquida ma traspirante al vapore acqueo: i micropori sono troppo piccoli per le gocce d'acqua (liquida) ma abbastanza grandi per le molecole di vapore acqueo (gas)",
+          "corretto": true,
+          "feedback": "Esatto! Il PTFE espanso ha miliardi di micropori per cm². Le gocce d'acqua liquida (diametro ~100 micrometri) sono troppo grandi per passare. Le molecole di vapore acqueo (diametro ~0,0004 micrometri) passano facilmente. Risultato: l'acqua non entra, il sudore esce."
         },
         {
           "id": "b",
-          "testo": "L'uso di organismi viventi (batteri, lieviti, alghe) come 'fabbriche biologiche' per produrre materiali con proprietà controllate: seta di ragno sintetica, carbonato di calcio bioispirato",
-          "corretto": true,
-          "feedback": "Esatto! La seta di ragno è più resistente e leggera dell'acciaio ma impossibile da produrre in scala dagli animali."
+          "testo": "È impermeabile all'acqua calda ma lascia passare l'acqua fredda: protegge dalla pioggia ma non dalla neve",
+          "feedback": "Non corretto. Il PTFE espanso non distingue tra acqua calda e fredda. La distinzione è tra acqua in fase LIQUIDA (non passa) e acqua in fase GASSOSA/vapore (passa).",
+          "riferimento": "📖 ESPLORA — Il PTFE espanso (Gore-Tex e analoghi): il paradosso impermeabile-traspirante"
         },
         {
           "id": "c",
-          "testo": "Il riciclo biologico dei materiali sintetici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "È impermeabile a 30°C ma diventa permeabile a temperature inferiori a 0°C per una proprietà termica del PTFE",
+          "feedback": "Non corretto. Il PTFE espanso mantiene le sue proprietà impermeabili e traspiranti in un ampio intervallo di temperature. La proprietà non dipende dalla temperatura ma dalla differenza di dimensioni tra gocce d'acqua e molecole di vapore.",
+          "riferimento": "📖 ESPLORA — Il PTFE espanso (Gore-Tex e analoghi): il paradosso impermeabile-traspirante"
         },
         {
           "id": "d",
-          "testo": "Lo studio delle proprietà meccaniche dei tessuti biologici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "È traspirante solo dall'esterno verso l'interno: lascia entrare l'aria fresca ma non lascia uscire il calore corporeo",
+          "feedback": "Non corretto. Il PTFE espanso lascia passare il vapore acqueo (sudore) dall'interno all'esterno ma non l'acqua liquida dall'esterno all'interno. Non è una membrana direzionale per il calore.",
+          "riferimento": "📖 ESPLORA — Il PTFE espanso (Gore-Tex e analoghi): il paradosso impermeabile-traspirante"
         }
       ],
-      "spiegazione": "La seta di ragno è più resistente e leggera dell'acciaio ma impossibile da produrre in scala dagli animali. I batteri OGM che producono proteina di seta aprono possibilità rivoluzionarie."
+      "spiegazione": "Il PTFE espanso ha miliardi di micropori per cm². Dimensioni critiche: goccia d'acqua liquida ≈ 100 micrometri → troppo grande per passare. Molecola di vapore acqueo (H₂O gas) ≈ 0,0004 micrometri → passa facilmente. Risultato: impermeabile all'acqua della pioggia, traspirante per il sudore corporeo. È il principio di funzionamento delle membrane Gore-Tex e simili.",
+      "riferimento_principale": "📖 ESPLORA — Il PTFE espanso (Gore-Tex e analoghi): il paradosso impermeabile-traspirante"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'bioprinting' e quali prospettive apre nella medicina?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo presenta un confronto tra giacca in lana merino e giacca tecnica sintetica. Per un trekking intenso in pioggia, quale è superiore e perché?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La stampa 3D di oggetti con bioplastiche compostabili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La giacca tecnica sintetica è superiore perché è impermeabile con la membrana, pesa meno (280-450g vs 600-900g) e asciuga più velocemente",
+          "corretto": true,
+          "feedback": "Esatto! Per trekking intenso in pioggia: la giacca tecnica ha membrana impermeabile (la lana è solo idrorepellente), pesa meno della metà, e asciuga rapidamente (sintetico). La lana è superiore per confort quotidiano in clima temperato e per la biodegradabilità, ma non per trekking in pioggia intensa."
         },
         {
           "id": "b",
-          "testo": "La stampa 3D di strutture biologiche usando cellule vive come 'bioink': pelle, vasi sanguigni, orecchie cartilaginee e potenzialmente organi completi",
-          "corretto": true,
-          "feedback": "Esatto! Il bioprinting è ancora sperimentale per organi complessi ma già clinicamente usato per innesti di pelle e vasi sanguigni."
+          "testo": "La lana merino è superiore perché è biodegradabile e più sostenibile della sintetica",
+          "feedback": "Non corretto. La biodegradabilità è un vantaggio ambientale, non di prestazione in pioggia intensa. Per trekking in pioggia, la giacca tecnica con membrana impermeabile è superiore nelle prestazioni.",
+          "riferimento": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
         },
         {
           "id": "c",
-          "testo": "La produzione biologica di toner per stampanti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sono equivalenti: la lana merino e le giacche tecniche proteggono allo stesso modo dalla pioggia",
+          "feedback": "Non corretto. La lana è 'resistente all'acqua' ma non impermeabile: si inzuppa in pioggia intensa. Le giacche tecniche con membrana PTFE sono impermeabili. Non sono equivalenti in condizioni di pioggia intensa.",
+          "riferimento": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
         },
         {
           "id": "d",
-          "testo": "Un metodo di stampa su materiali naturali come carta di bambù",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non è possibile confrontarle: dipende dall'intensità della pioggia e dalla temperatura",
+          "feedback": "Non corretto (parzialmente vero). Il testo fa esplicitamente il confronto e conclude che per trekking intenso in pioggia la sintetica è superiore, mentre per uso quotidiano in clima temperato la lana merino può avere un impatto ambientale globale più basso.",
+          "riferimento": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
         }
       ],
-      "spiegazione": "Il bioprinting è ancora sperimentale per organi complessi ma già clinicamente usato per innesti di pelle e vasi sanguigni. La sfida è la vascolarizzazione degli organi spessi."
+      "spiegazione": "Confronto per trekking intenso in pioggia: Giacca tecnica sintetica = impermeabile (membrana PTFE), più leggera (280-450g), asciuga rapidamente. Lana merino = resistente all'acqua ma non impermeabile, più pesante (600-900g), asciuga lentamente. La giacca tecnica è superiore per questa specifica condizione. Per uso quotidiano in clima temperato con lunga durata, la lana merino può avere impatto ambientale globale minore.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'biomimetica' e come ispira il design dei materiali?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "La fibra di carbonio non può essere riciclata facilmente perché la resina epossidica è 'termoindurente'. Cosa significa questa caratteristica e perché impedisce il riciclo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'uso di materiali biologici in applicazioni ingegneristiche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una resina termoindurente forma legami chimici irreversibili durante l'indurimento: non si può sciogliere di nuovo con il calore, impedendo la separazione delle fibre dalla matrice per rifusione",
+          "corretto": true,
+          "feedback": "Esatto! Le plastiche si dividono in termoplastiche (si fondono di nuovo se riscaldate) e termoindurenti (reazione chimica irreversibile durante la polimerizzazione). La resina epossidica termoindurente non si può rifondere: le fibre di carbonio possono essere recuperate solo per pirolisi (bruciare la resina), con perdita di proprietà meccaniche."
         },
         {
           "id": "b",
-          "testo": "L'approccio che si ispira alle strutture e ai processi biologici evolutivamente ottimizzati per risolvere problemi ingegneristici: guscio del nautilus → pressione, piuma → leggerezza",
-          "corretto": true,
-          "feedback": "Esatto! Velcro ispirato ai gancetti dei semi."
+          "testo": "Una resina termoindurente diventa più dura con il freddo, quindi il riciclo funziona solo a temperature elevate",
+          "feedback": "Non corretto. La caratteristica 'termoindurente' riguarda la irreversibilità della polimerizzazione, non il comportamento con il freddo. La resina non si può rifondere con il calore (come invece farebbe una termoplastica).",
+          "riferimento": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
         },
         {
           "id": "c",
-          "testo": "Lo studio scientifico dei materiali di origine biologica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una resina termoindurente è tossica quando riscaldata, quindi il riciclo sarebbe pericoloso per i lavoratori",
+          "feedback": "Non corretto. La tossicità non è la ragione dell'impossibilità di riciclo. La ragione è chimica: la resina termoindurente ha una struttura reticolata irreversibile che non si può sciogliere per rifusione.",
+          "riferimento": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
         },
         {
           "id": "d",
-          "testo": "La riproduzione esatta di materiali naturali in laboratorio",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Una resina termoindurente si scioglie solo a temperature superiori a 3.000°C, incompatibili con qualsiasi processo industriale",
+          "feedback": "Non corretto. Il PTFE espanso (e altre plastiche termoindurenti) si decompongono/carbonizzano a temperature molto inferiori a 3.000°C. Il problema non è la temperatura ma l'irreversibilità della struttura polimerica reticolata.",
+          "riferimento": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
         }
       ],
-      "spiegazione": "Velcro ispirato ai gancetti dei semi. Nanopattern della pelle dello squalo per ridurre la resistenza. Struttura dell'osso per costruire travi leggere. La natura ha già risolto molti problemi ingegneristici."
+      "spiegazione": "Plastiche termoindurenti (epossidi, poliuretani, fenolici): durante la polimerizzazione formano una struttura tridimensionale reticolata con legami covalenti irreversibili. Non si possono rifondere: non c'è una 'temperatura di fusione'. Per recuperare le fibre si usa la pirolisi (brucia la resina in assenza di ossigeno) ma le fibre perdono proprietà meccaniche. Quasi tutti i rifiuti di fibra di carbonio finiscono in discarica.",
+      "riferimento_principale": "📖 ESPLORA — La fibra di carbonio: il composito ad alte prestazioni"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'materials genome initiative' e quale accelerazione promette?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo descrive il cemento armato come con un 'problema': l'umidità porta ossigeno alle barre di acciaio interno che arrugginiscono, espandendosi e spacando il cemento. Quale soluzione menziona il testo per questo problema?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il catalogo genetico completo di tutti i materiali naturali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Usare barre in fibra di vetro (GFRP) invece di acciaio: più leggere, non arrugginiscono, ma più costose e meno duttili",
+          "corretto": true,
+          "feedback": "Esatto! Le barre in fibra di vetro (GFRP - Glass Fiber Reinforced Polymer) non arrugginiscono eliminando il problema della corrosione dell'armatura. Sono più leggere dell'acciaio ma meno duttili e più costose."
         },
         {
           "id": "b",
-          "testo": "Un approccio computazionale che usa database e AI per predire le proprietà di nuovi materiali prima di sintetizzarli: riduce i tempi di sviluppo da 10-20 anni a 2-5 anni",
-          "corretto": true,
-          "feedback": "Esatto! Il Materials Genome Initiative (MGI, USA 2011) ha accelerato la scoperta di superconduttori, batterie e leghe."
+          "testo": "Aggiungere pigmenti resistenti all'acqua nel mix di calcestruzzo per impermeabilizzarlo completamente",
+          "feedback": "Non corretto. L'impermeabilizzazione totale del calcestruzzo è difficile su scala strutturale. Il testo menziona specificamente l'acciaio inossidabile, la protezione epossidica e le barre in GFRP come soluzioni al problema della corrosione dell'armatura.",
+          "riferimento": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
         },
         {
           "id": "c",
-          "testo": "Il sequenziamento del DNA dei materiali biotecnologici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sostituire il cemento armato con plastica rinforzata in tutte le nuove costruzioni",
+          "feedback": "Non corretto. Il testo non suggerisce di eliminare il cemento armato. Le soluzioni menzionate riguardano l'armatura interna (acciaio inossidabile, epossidico, GFRP), non la sostituzione totale del composito.",
+          "riferimento": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
         },
         {
           "id": "d",
-          "testo": "Un programma internazionale per la condivisione dei dati sui materiali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rimuovere completamente l'armatura metallica e usare cemento pre-tensionato per resistere alla trazione",
+          "feedback": "Non corretto (il pre-tensionato esiste ma non elimina il problema). Il testo menziona acciaio inossidabile, rivestimento epossidico, e barre GFRP come soluzioni al problema della corrosione dell'armatura interna.",
+          "riferimento": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
         }
       ],
-      "spiegazione": "Il Materials Genome Initiative (MGI, USA 2011) ha accelerato la scoperta di superconduttori, batterie e leghe. L'AI applicata alla scienza dei materiali è una delle frontiere più promettenti."
+      "spiegazione": "Problema del cemento armato: l'umidità porta ossigeno e sali alle barre di acciaio → ruggine → espansione → fratture nel cemento (visibili nei ponti e viadotti vecchi). Soluzioni menzionate nel testo: 1) acciaio inossidabile nelle strutture critiche; 2) acciaio con rivestimento epossidico; 3) barre in fibra di vetro (GFRP) — più leggere, non arrugginiscono, ma più costose e meno duttili.",
+      "riferimento_principale": "📖 ESPLORA — Il cemento armato: il composito dell'era industriale"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo distingue tra 'plastiche bio-based non biodegradabili' (es. bio-PET) e 'plastiche biodegradabili' (es. PLA). Quale errore comune commettono molti consumatori nel valutare queste categorie?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Confondere l'origine (bio-based = da piante) con il destino (biodegradabile = si decompone): un bio-PET da mais non si biodegrada ma si ricicla come PET normale; un PLA si biodegrada solo in condizioni industriali, non in natura",
+          "corretto": true,
+          "feedback": "Esatto! L'errore è confondere due attributi distinti: ORIGINE (da dove viene la materia prima: petrolio vs piante) e DESTINO (cosa succede a fine vita: si biodegrada, si ricicla, va in discarica). Bio-based non implica biodegradabile; biodegradabile non implica bio-based."
+        },
+        {
+          "id": "b",
+          "testo": "Pensare che tutte le bioplastiche costino meno delle plastiche convenzionali per ragioni di produzione agricola",
+          "feedback": "Non corretto. L'errore del consumatore non riguarda il prezzo ma la confusione tra origine (bio-based) e destino a fine vita (biodegradabile). Le bioplastiche spesso costano di più delle convenzionali.",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+        },
+        {
+          "id": "c",
+          "testo": "Credere che le bioplastiche siano sempre più resistenti delle plastiche convenzionali perché derivano da materie prime naturali",
+          "feedback": "Non corretto. Le bioplastiche non sono generalmente più resistenti delle convenzionali. L'errore è la confusione tra bio-based (origine) e biodegradabile (destino a fine vita).",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+        },
+        {
+          "id": "d",
+          "testo": "Pensare che le bioplastiche non possano essere riciclate perché sono organiche",
+          "feedback": "Non corretto. Alcune bioplastiche (come bio-PET) si riciclano normalmente con il PET convenzionale. L'errore principale è confondere bio-based con biodegradabile, non il riciclo.",
+          "riferimento": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+        }
+      ],
+      "spiegazione": "Due attributi distinti da non confondere: 1) ORIGINE (da dove viene la materia prima): bio-based = da piante/organismi biologici; petro-based = dal petrolio. 2) DESTINO A FINE VITA: biodegradabile = si decompone (in certe condizioni); non biodegradabile = persiste. Un bio-PET è bio-based ma NON biodegradabile (stessa struttura chimica del PET da petrolio). Un PLA è bio-based E biodegradabile (ma SOLO in impianti industriali a 58°C).",
+      "riferimento_principale": "📖 ESPLORA — Le bioplastiche: promessa o greenwashing?"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo afferma che la giacca tecnica sintetica 'è uno dei prodotti tessili più funzionali mai creati' ma allo stesso tempo 'a fine vita è quasi impossibile da riciclare'. Come si valuta questo trade-off nell'ottica del ciclo di vita?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Occorre includere tutte le fasi nel calcolo: produzione (petrolio, energia), uso (funzionalità elevata per anni), e fine vita (non riciclabile) — la scelta dipende da quanti anni dura e da quale alternativa si confronta",
+          "corretto": true,
+          "feedback": "Esatto! L'analisi del ciclo di vita (LCA) include tutte le fasi: produzione (impatto delle materie prime e dei processi), fase d'uso (durata, prestazioni, manutenzione), fine vita (riciclabilità, smaltimento). Una giacca tecnica che dura 15 anni e protegge efficacemente dal freddo e dalla pioggia ha un impatto diverso da una che dura 3 anni e viene sostituita frequentemente."
+        },
+        {
+          "id": "b",
+          "testo": "La giacca tecnica sintetica è sempre preferibile alla lana perché la sua funzionalità superiore compensa qualsiasi problema ambientale",
+          "feedback": "Non corretto. Il trade-off non ha una risposta universale. Dipende dall'uso specifico, dalla durata, dall'alternativa considerata. Una valutazione onesta include tutte le fasi del ciclo di vita, non solo le prestazioni d'uso.",
+          "riferimento": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
+        },
+        {
+          "id": "c",
+          "testo": "La giacca tecnica sintetica non dovrebbe mai essere acquistata perché il problema del fine vita supera qualsiasi vantaggio prestazionale",
+          "feedback": "Non corretto. Il testo non sostiene questo. Il trade-off è contestuale e la scelta dipende dall'uso, dalla durata, dall'alternativa disponibile. Per alpinismo in pioggia intensa, la giacca tecnica può essere la scelta con minor impatto se dura a lungo.",
+          "riferimento": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
+        },
+        {
+          "id": "d",
+          "testo": "Il problema del fine vita non è rilevante finché le aziende come Gore-Tex non lanciano una linea di riciclo",
+          "feedback": "Non corretto. Il problema del fine vita è rilevante ora, non solo nel futuro. Alcune aziende (Patagonia, Arc'teryx) già affrontano il problema con programmi di riparazione e materiali mono-componente.",
+          "riferimento": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
+        }
+      ],
+      "spiegazione": "La valutazione del ciclo di vita (LCA) di una giacca tecnica include: 1) PRODUZIONE: petrolio come materia prima, energia per la laminazione, PFAS per il trattamento DWR. 2) USO: funzionalità eccellente (impermeabilità, leggerezza, durata anni). 3) FINE VITA: strati laminati non separabili → quasi impossibile da riciclare. Qual è il 'meglio'? Dipende dalla durata d'uso, dall'alternativa disponibile, e dall'uso specifico.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: anatomia di una giacca tecnica da montagna"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo descrive il cotone come 'biodegradabile in condizioni naturali' ma il cotone tinto con coloranti sintetici o misto con poliestere si degrada 'molto più lentamente'. Quale implicazione ha questa informazione per l'etichetta 'fibra naturale'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'etichetta 'fibra naturale' descrive l'origine della fibra grezza ma non le caratteristiche del prodotto finito, che spesso contiene additivi chimici o fibre sintetiche che ne cambiano radicalmente le proprietà di fine vita",
+          "corretto": true,
+          "feedback": "Esatto! 'Fibra naturale' = origine della fibra grezza. Ma il prodotto finito è quasi mai 'solo fibra naturale': contiene coloranti sintetici, finishing chimici (ammorbidenti, anti-restringimento), miscele con fibre sintetiche. Questi additivi cambiano le proprietà di biodegradabilità del prodotto finito."
+        },
+        {
+          "id": "b",
+          "testo": "L'etichetta 'fibra naturale' garantisce la completa biodegradabilità in qualsiasi condizione",
+          "feedback": "Non corretto. Il testo dice esplicitamente che il cotone tinto con coloranti sintetici o misto con poliestere si degrada molto più lentamente. 'Fibra naturale' non garantisce biodegradabilità del prodotto finito.",
+          "riferimento": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
+        },
+        {
+          "id": "c",
+          "testo": "I coloranti sintetici devono essere rimossi dai capi di cotone prima di indossarli per evitare problemi di salute",
+          "feedback": "Non corretto. I coloranti sono fissati al tessuto attraverso processi chimici specifici e non rappresentano un problema di salute nell'uso normale. Il punto del testo è la biodegradabilità del prodotto finito, non la sicurezza d'uso.",
+          "riferimento": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
+        },
+        {
+          "id": "d",
+          "testo": "È sempre meglio scegliere cotone non tinto (grezzo) per garantire biodegradabilità completa",
+          "feedback": "Non corretto (parzialmente rilevante). Sebbene il cotone grezzo sia più biodegradabile del tinto, il testo non dà questa raccomandazione pratica. Il punto è la distinzione tra caratteristiche della fibra e caratteristiche del prodotto finito.",
+          "riferimento": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
+        }
+      ],
+      "spiegazione": "'Fibra naturale' descrive l'origine della fibra grezza, non le caratteristiche del prodotto tessile finito. Una t-shirt '100% cotone' quasi certamente contiene: coloranti sintetici, agenti di finishing (anti-restringimento, ammorbidenti), eventualmente miscele con elastan. Questi additivi cambiano le proprietà di biodegradabilità. L'etichetta è parzialmente informativa: descrive il componente principale ma non il prodotto completo.",
+      "riferimento_principale": "📖 ESPLORA — Il cotone: la fibra più usata al mondo"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'non esiste la plastica' ma settantamila materiali diversi. Come questa affermazione dovrebbe cambiare le politiche di riduzione dell'inquinamento da plastica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le politiche devono distinguere tra plastiche ad alto impatto e difficile riciclo (PVC, PS, multistrato) e plastiche con filiere di riciclo funzionanti (PET, HDPE), puntando a eliminare le prime e migliorare le seconde",
+          "corretto": true,
+          "feedback": "Esatto! Se 'la plastica' fossero un materiale omogeneo, si potrebbe regolamentare uniformemente. Ma PET riciclato al 50%, HDPE all'80%, PVC quasi mai, PS quasi mai: politiche uniformi su 'tutta la plastica' sono inefficienti. Occorre differenziare per tipo: incentivare PET e HDPE, eliminare PVC e PS negli usi monouso."
+        },
+        {
+          "id": "b",
+          "testo": "Non ci sono implicazioni per le politiche: se la plastica è settantamila materiali, è impossibile regolamentarla",
+          "feedback": "Non corretto. La complessità non implica impossibilità di regolamentazione. Anzi: conoscere le differenze tra polimeri permette politiche più precise ed efficaci di un divieto generico.",
+          "riferimento": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+        },
+        {
+          "id": "c",
+          "testo": "Ogni tipo di plastica è ugualmente inquinante: non ha senso distinguere tra PET, PVC o PS per le politiche",
+          "feedback": "Non corretto. I diversi polimeri hanno impatti molto diversi: PVC bruciato emette diossine (pericoloso); PET riciclato al 50% (filiera funzionante); PS quasi mai riciclato. Le politiche che non distinguono sono meno efficaci.",
+          "riferimento": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+        },
+        {
+          "id": "d",
+          "testo": "Le politiche dovrebbero vietare tutta la plastica uniformemente, senza distinzioni tra i tipi",
+          "feedback": "Non corretto. Un divieto uniforme di tutta la plastica non sarebbe né pratico né ottimale: il PET riciclato ha un impatto molto inferiore al PVC, e vietarli entrambi allo stesso modo sarebbe ingiustificato.",
+          "riferimento": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+        }
+      ],
+      "spiegazione": "La distinzione tra i 7+ tipi di plastica ha implicazioni politiche reali: tasso di riciclo PET ≈50%, HDPE ≈80%, PVC ≈0%, PS ≈0%. Politiche efficaci: 1) vietare usi monouso di PS e PVC (difficili da riciclare, alta dispersione), 2) migliorare le infrastrutture per PET e HDPE (già riciclabili), 3) richiedere mono-materiale per imballaggi complessi, 4) etichettatura precisa con il codice numerico specifico.",
+      "riferimento_principale": "📖 ESPLORA — Le plastiche: una famiglia di settantamila materiali"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo afferma che la lana merino può 'mantenere il calore anche bagnata' mentre 'il cotone bagnato porta via calore dal corpo molto rapidamente'. Quale meccanismo fisico-chimico spiega questa differenza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La lana ha struttura igroscopica: assorbe il vapore acqueo nello strato corticale della fibra (esotermicamente) senza far sembrare bagnato l'esterno; il cotone si satura d'acqua liquida diventando un conduttore termico freddo",
+          "corretto": true,
+          "feedback": "Esatto! La lana assorbe fino al 35% del suo peso come vapore (non acqua liquida) nello strato corticale: l'interno della fibra è 'umido' ma l'esterno rimane asciutto al tatto. Assorbendo umidità rilascia calore (reazione esotermica). Il cotone si satura di acqua liquida: l'acqua è un buon conduttore termico e porta via il calore corporeo."
+        },
+        {
+          "id": "b",
+          "testo": "La lana è più spessa del cotone e quindi isola di più anche quando bagnata",
+          "feedback": "Non corretto. Lo spessore non è la spiegazione. La differenza è nella struttura della fibra: la lana assorbe l'umidità internamente senza saturarsi di acqua liquida, mentre il cotone si satura di acqua liquida.",
+          "riferimento": "📖 ESPLORA — La lana: l'isolante naturale per eccellenza"
+        },
+        {
+          "id": "c",
+          "testo": "La lana ripelle l'acqua grazie al grasso naturale (lanolina) che la impermeabilizza completamente",
+          "feedback": "Non corretto (parzialmente vero). La lanolina naturale nella lana grezza ha proprietà idrorepellenti, ma la lana lavorata perde gran parte della lanolina. Il meccanismo principale è l'assorbimento igroscopico del vapore, non l'impermeabilità.",
+          "riferimento": "📖 ESPLORA — La lana: l'isolante naturale per eccellenza"
+        },
+        {
+          "id": "d",
+          "testo": "La lana contiene più air pockets del cotone e l'aria intrappolata isola anche in presenza di umidità",
+          "feedback": "Non corretto (parzialmente vero). L'aria intrappolata contribuisce all'isolamento ma si comprime con l'acqua. Il meccanismo principale che distingue lana e cotone bagnati è la struttura igroscopica della fibra laniera che assorbe vapore senza saturarsi di acqua liquida.",
+          "riferimento": "📖 ESPLORA — La lana: l'isolante naturale per eccellenza"
+        }
+      ],
+      "spiegazione": "Differenza chiave lana vs cotone bagnato: La lana ha struttura igroscopica: assorbe vapore acqueo fino al 35% del suo peso nel cortex della fibra (con reazione esotermica), senza sembrare bagnata al tatto. Il cotone assorbe acqua LIQUIDA: 65% del suo peso. Acqua liquida = buon conduttore termico → porta via il calore del corpo. Lana bagnata → caldo. Cotone bagnato → freddo (rischio ipotermia per alpinisti/marinai).",
+      "riferimento_principale": "📖 ESPLORA — La lana: l'isolante naturale per eccellenza"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo descrive il Wallace Carothers di DuPont che nel 1935 scoprì che due molecole derivate dal petrolio 'si concatenavano in catene lunghissime — un polimero'. Quale implicazione sistemica ha avuto questa scoperta per l'industria tessile e l'ambiente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ha creato un'industria tessile basata su materie prime fossili non rinnovabili che oggi produce 55 milioni di tonnellate di poliestere l'anno, con microplastiche come effetto collaterale non previsto al momento della scoperta",
+          "corretto": true,
+          "feedback": "Esatto! Nel 1935 nessuno prevedeva: 1) che la produzione sarebbe arrivata a 55 Mt/anno di poliestere; 2) che ogni lavaggio avrebbe rilasciato centinaia di migliaia di microfibre nei mari; 3) che quelle fibre avrebbero perseverato per secoli nell'ambiente. Le conseguenze sistemiche di lungo periodo non erano prevedibili nel 1935."
+        },
+        {
+          "id": "b",
+          "testo": "Ha migliorato uniformemente la qualità di vita globale senza effetti negativi documentati",
+          "feedback": "Non corretto. Il testo documenta esplicitamente gli effetti negativi: microplastiche (35% delle microplastiche primarie oceaniche), produzione da petrolio (non rinnovabile), non biodegradabilità. Non ci sono stati solo effetti positivi.",
+          "riferimento": "📖 ESPLORA — Le fibre sintetiche: il tessile del petrolio"
+        },
+        {
+          "id": "c",
+          "testo": "Ha immediatamente sostituito tutte le fibre naturali rendendo l'agricoltura tessile obsoleta",
+          "feedback": "Non corretto. Il cotone è ancora la fibra più prodotta al mondo (25-26 Mt/anno), il poliestere ha superato il cotone solo negli anni 2000-2010. La sostituzione non è stata immediata né totale.",
+          "riferimento": "📖 ESPLORA — Le fibre sintetiche: il tessile del petrolio"
+        },
+        {
+          "id": "d",
+          "testo": "Ha creato fibre migliori delle naturali in tutti gli aspetti, senza nessuna differenza ambientale rilevante",
+          "feedback": "Non corretto. Il testo mostra che le fibre sintetiche non sono 'migliori in tutti gli aspetti': producono microplastiche, derivano dal petrolio (non rinnovabile), non si biodegradano. Ci sono trade-off significativi.",
+          "riferimento": "📖 ESPLORA — Le fibre sintetiche: il tessile del petrolio"
+        }
+      ],
+      "spiegazione": "La scoperta del nylon nel 1935 ha aperto l'era dei tessili sintetici. Implicazioni sistemiche non previste: 1) dipendenza dal petrolio come materia prima; 2) produzione mondiale di 55 Mt/anno di poliestere (il doppio del cotone); 3) microplastiche come effetto collaterale del lavaggio (scoperto decenni dopo); 4) persistenza per secoli nell'ambiente (biodegradabilità quasi zero). È un esempio di come innovazioni tecnologiche hanno conseguenze sistemiche di lungo periodo non prevedibili al momento della scoperta.",
+      "riferimento_principale": "📖 ESPLORA — Le fibre sintetiche: il tessile del petrolio"
     }
   ]
 }

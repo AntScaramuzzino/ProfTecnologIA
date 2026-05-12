@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-ENE-3-05",
-  "titolo": "Macchine termiche e motori",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è una 'macchina termica'?",
+      "domanda": "Qual è il rendimento tipico di un motore a benzina di un'automobile comune?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un motore raffreddato ad acqua",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "25-35%",
+          "corretto": true,
+          "feedback": "Esatto! I motori a benzina delle auto comuni hanno un rendimento del 25-35%. Il resto dell'energia della benzina (65-75%) si disperde come calore dal radiatore, dallo scarico e per attrito."
         },
         {
           "id": "b",
-          "testo": "Un sistema che converte energia termica (calore) in energia meccanica (lavoro)",
-          "corretto": true,
-          "feedback": "Esatto! Le macchine termiche (motori a scoppio, turbine a vapore, turbine a gas) sono alla base dell'industria moderna da oltre 200 anni."
+          "testo": "75-85%",
+          "feedback": "Non corretto. Il rendimento del 75-85% è tipico dei motori elettrici, non dei motori a benzina. Il motore a benzina ha un rendimento del 25-35%.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         },
         {
           "id": "c",
-          "testo": "Una macchina che produce calore dall'elettricità",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "50-60%",
+          "feedback": "Non corretto. Il 50-60% è il rendimento di una centrale termoelettrica a ciclo combinato (gas). Un motore a benzina raggiunge solo il 25-35%.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         },
         {
           "id": "d",
-          "testo": "Un sistema di riscaldamento industriale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "5-10%",
+          "feedback": "Non corretto. Anche i motori meno efficienti superano il 20%. Il rendimento tipico di un motore a benzina è 25-35%.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         }
       ],
-      "spiegazione": "Le macchine termiche (motori a scoppio, turbine a vapore, turbine a gas) sono alla base dell'industria moderna da oltre 200 anni."
+      "spiegazione": "I motori a benzina delle auto comuni hanno un rendimento del 25-35%: solo quella percentuale dell'energia chimica della benzina si converte in lavoro meccanico utile. Il resto (65-75%) si disperde come calore attraverso il sistema di raffreddamento (radiatore), i gas di scarico, e l'attrito meccanico.",
+      "riferimento_principale": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Qual è l'efficienza massima teorica di una macchina termica secondo Carnot?",
+      "domanda": "In quale anno James Watt brevettò la macchina a vapore migliorata che rese possibile la Rivoluzione Industriale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "100% se il combustibile è puro",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "1769",
+          "corretto": true,
+          "feedback": "Esatto! Nel 1769, James Watt brevettò la sua macchina a vapore radicalmente più efficiente grazie alla separazione del condensatore dal cilindro: un miglioramento che ridusse enormemente gli sprechi di energia."
         },
         {
           "id": "b",
-          "testo": "η = 1 - T_fredda/T_calda (in Kelvin): sempre < 100%",
-          "corretto": true,
-          "feedback": "Esatto! Il limite di Carnot è fondamentale: nessuna macchina termica può essere più efficiente del ciclo di Carnot tra le stesse temperature."
+          "testo": "1885",
+          "feedback": "Non corretto. Il 1885 è l'anno in cui Karl Benz costruì il primo veicolo a motore. Watt brevettò la macchina a vapore nel 1769.",
+          "riferimento": "📖 ESPLORA — La macchina a vapore: quando tutto cambiò"
         },
         {
           "id": "c",
-          "testo": "70% per le macchine moderne",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "1824",
+          "feedback": "Non corretto. Il 1824 è l'anno in cui Sadi Carnot pubblicò la sua teoria sul rendimento massimo dei motori termici. La macchina a vapore di Watt fu brevettata nel 1769.",
+          "riferimento": "📖 ESPLORA — La macchina a vapore: quando tutto cambiò"
         },
         {
           "id": "d",
-          "testo": "50% per qualsiasi ciclo termodinamico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "1876",
+          "feedback": "Non corretto. Il 1876 è l'anno del primo motore a 4 tempi di Nikolaus Otto. Watt brevettò la macchina a vapore nel 1769.",
+          "riferimento": "📖 ESPLORA — La macchina a vapore: quando tutto cambiò"
         }
       ],
-      "spiegazione": "Il limite di Carnot è fondamentale: nessuna macchina termica può essere più efficiente del ciclo di Carnot tra le stesse temperature. Fisica di base che nessuna ingegneria può superare."
+      "spiegazione": "Nel 1769, James Watt brevettò una macchina a vapore radicalmente più efficiente. La sua innovazione principale: separare il condensatore (dove il vapore si raffredda) dal cilindro (dove spinge il pistone). Prima, ogni ciclo richiedeva di raffreddare e riscaldare l'intero cilindro: uno spreco enorme. Questo miglioramento rese possibile la Rivoluzione Industriale.",
+      "riferimento_principale": "📖 ESPLORA — La macchina a vapore: quando tutto cambiò"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il ciclo 'a 4 tempi' di un motore a scoppio?",
+      "domanda": "In quale tempo del ciclo a 4 tempi si produce effettivamente lavoro utile nel motore a scoppio?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "I 4 tipi di carburante usabili nel motore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Terzo tempo — Scoppio: la miscela esplode e la pressione spinge il pistone verso il basso",
+          "corretto": true,
+          "feedback": "Esatto! Solo il terzo tempo (scoppio/potenza) produce lavoro utile: la scintilla fa esplodere la miscela aria-benzina, la pressione spinge il pistone verso il basso. Gli altri tre tempi (aspirazione, compressione, scarico) sono necessari ma non producono lavoro utile."
         },
         {
           "id": "b",
-          "testo": "Aspirazione → Compressione → Esplosione-Espansione → Scarico: il ciclo che si ripete in ogni cilindro",
-          "corretto": true,
-          "feedback": "Esatto! Ogni ciclo dura due giri completi dell'albero motore."
+          "testo": "Secondo tempo — Compressione: la miscela viene compressa aumentando la sua energia",
+          "feedback": "Non corretto. Il secondo tempo comprime la miscela (aumenta la pressione e la temperatura) ma richiede lavoro, non lo produce. È preparatorio al terzo tempo.",
+          "riferimento": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
         },
         {
           "id": "c",
-          "testo": "I 4 cilindri di un motore standard",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Primo tempo — Aspirazione: l'aria fresca entra nel cilindro con forza",
+          "feedback": "Non corretto. Nel primo tempo il pistone scende aspirando la miscela, che entra grazie alla depressione creata. Non si produce lavoro utile: si prepara il combustibile.",
+          "riferimento": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
         },
         {
           "id": "d",
-          "testo": "Le 4 velocità del cambio automatico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Quarto tempo — Scarico: i gas combusti vengono espulsi con alta pressione",
+          "feedback": "Non corretto. Nel quarto tempo il pistone sale espellendo i gas combusti. Non si produce lavoro utile: si 'pulisce' il cilindro per il ciclo successivo.",
+          "riferimento": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
         }
       ],
-      "spiegazione": "Ogni ciclo dura due giri completi dell'albero motore. A 3000 giri/min ogni cilindro fa 1500 cicli al minuto: circa 25 esplosioni al secondo."
+      "spiegazione": "I 4 tempi: 1° Aspirazione (pistone scende, entra miscela), 2° Compressione (pistone sale, miscela compressa), 3° Scoppio/Potenza (scintilla, esplosione, pistone spinto giù → unico tempo produttivo), 4° Scarico (pistone sale, espelle gas combusti). Per avere moto rotatorio continuo, i motori multi-cilindro sfasano i cicli: mentre un cilindro è in scoppio, gli altri sono negli altri tempi.",
+      "riferimento_principale": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Qual è il rendimento tipico di un motore elettrico moderno (brushless)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "90-95%",
+          "corretto": true,
+          "feedback": "Esatto! I motori elettrici brushless (come quelli delle auto elettriche) hanno un rendimento del 90-95%. Non avendo combustione, non sono soggetti al limite di Carnot che vincola i motori termici al 25-35%."
+        },
+        {
+          "id": "b",
+          "testo": "50-60%",
+          "feedback": "Non corretto. Il 50-60% è il rendimento delle centrali termoelettriche a ciclo combinato. Il motore elettrico raggiunge il 90-95%.",
+          "riferimento": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
+        },
+        {
+          "id": "c",
+          "testo": "25-35%",
+          "feedback": "Non corretto. Il 25-35% è il rendimento del motore a benzina. Il motore elettrico è molto più efficiente: 90-95%.",
+          "riferimento": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
+        },
+        {
+          "id": "d",
+          "testo": "100%: non c'è combustione quindi non si disperde energia",
+          "feedback": "Non corretto. Anche i motori elettrici hanno perdite (attrito nei cuscinetti, calore nei fili di rame per resistenza). Ma il rendimento del 90-95% è molto più vicino al 100% rispetto ai motori termici.",
+          "riferimento": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
+        }
+      ],
+      "spiegazione": "I motori elettrici brushless hanno rendimento del 90-95% perché non si basa su combustione (nessun limite di Carnot). L'energia elettrica si converte quasi direttamente in energia meccanica. Le perdite sono solo per attrito nei cuscinetti e per il calore generato dalla resistenza dei fili di rame — entrambi minimizzabili.",
+      "riferimento_principale": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Il secondo principio della termodinamica afferma che il calore è una forma di energia 'di seconda qualità'. Cosa significa questa affermazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si può convertire lavoro meccanico in calore al 100%, ma non si può convertire calore in lavoro meccanico al 100%: c'è sempre una perdita irrecuperabile",
+          "corretto": true,
+          "feedback": "Esatto! Strofina le mani: hai convertito tutto il lavoro in calore. Ma non si può fare il contrario: nessuna macchina termica converte tutto il calore in lavoro. Una parte si disperde irrecuperabilmente verso la sorgente fredda."
+        },
+        {
+          "id": "b",
+          "testo": "Il calore ha meno energia del lavoro meccanico perché le molecole si muovono più lentamente",
+          "feedback": "Non corretto. Il calore è energia cinetica delle molecole e non è 'inferiore' in termini di quantità di energia. Il problema è la convertibilità: il calore non si converte completamente in lavoro meccanico.",
+          "riferimento": "📖 ESPLORA — Il calore è energia — ma attenzione a come la usi"
+        },
+        {
+          "id": "c",
+          "testo": "Il calore è utile solo per il riscaldamento degli edifici, non per muovere macchine",
+          "feedback": "Non corretto. Il calore è usatissimo per muovere macchine (turbine a vapore, motori termici). Il secondo principio dice che questa conversione non è mai completa al 100%.",
+          "riferimento": "📖 ESPLORA — Il calore è energia — ma attenzione a come la usi"
+        },
+        {
+          "id": "d",
+          "testo": "Il calore è meno utile del lavoro meccanico solo alle alte temperature; a basse temperature sono equivalenti",
+          "feedback": "Non corretto. Il secondo principio vale a qualsiasi temperatura: non si può mai convertire tutto il calore in lavoro, indipendentemente dalla temperatura.",
+          "riferimento": "📖 ESPLORA — Il calore è energia — ma attenzione a come la usi"
+        }
+      ],
+      "spiegazione": "Il secondo principio della termodinamica: il calore è energia ma ha una proprietà asimmetrica. Puoi convertire lavoro meccanico in calore al 100% (attrito). Ma non puoi fare il contrario: convertire calore in lavoro richiede una sorgente fredda dove il calore residuo si disperde. Nessuna macchina termica reale può superare il limite di Carnot.",
+      "riferimento_principale": "📖 ESPLORA — Il calore è energia — ma attenzione a come la usi"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Qual è la principale differenza tra un'auto ibrida HEV (es. Toyota Prius) e un'auto ibrida plug-in PHEV?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il PHEV ha una batteria più grande ricaricabile dalla rete elettrica, permettendo 50-80 km solo in elettrico; l'HEV si ricarica solo durante la frenata rigenerativa",
+          "corretto": true,
+          "feedback": "Esatto! HEV: batteria piccola ricaricata solo dalla frenata rigenerativa e dal motore termico, non si collega alla rete. PHEV: batteria più grande ricaricabile dalla rete, percorre 50-80 km solo in elettrico poi usa il motore termico."
+        },
+        {
+          "id": "b",
+          "testo": "L'HEV non ha motore termico, il PHEV ha sia motore termico che elettrico",
+          "feedback": "Non corretto. Entrambi HEV e PHEV hanno sia motore termico sia motore elettrico. La differenza è la ricaricabilità dalla rete e la dimensione della batteria.",
+          "riferimento": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
+        },
+        {
+          "id": "c",
+          "testo": "Il PHEV usa solo energia elettrica da pannelli solari, l'HEV usa benzina e energia recuperata dalla frenata",
+          "feedback": "Non corretto. Il PHEV non usa pannelli solari: si ricarica dalla rete elettrica. L'HEV recupera energia dalla frenata rigenerativa ma non si collega alla rete.",
+          "riferimento": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza: HEV e PHEV sono due nomi diversi per lo stesso tipo di veicolo",
+          "feedback": "Non corretto. HEV e PHEV sono configurazioni diverse: l'HEV non si collega alla rete, il PHEV sì e ha una batteria più grande per percorrere 50-80 km solo in elettrico.",
+          "riferimento": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
+        }
+      ],
+      "spiegazione": "HEV (Hybrid Electric Vehicle): piccola batteria, nessuna presa di rete, energia recuperata solo da frenata rigenerativa e motore termico. PHEV (Plug-in HEV): batteria più grande ricaricabile dalla rete, percorre 50-80 km solo in elettrico prima di passare al termico. BEV (Battery EV): solo elettrico, nessun motore termico.",
+      "riferimento_principale": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Perché il motore a scoppio spreca circa il 70% dell'energia del carburante?",
+      "domanda": "Il testo calcola che un'auto benzina percorre 100 km con 7 litri (62,3 kWh nell'energia della benzina) ma alle ruote arrivano solo 18,7 kWh (rendimento 30%). Un'auto elettrica percorre gli stessi 100 km con 16 kWh dalla rete. Qual è il rendimento effettivo dell'auto elettrica considerando solo il motore?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché il carburante non brucia completamente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 94%: 16 kWh × 0,94 ≈ 15 kWh alle ruote (le perdite nel motore elettrico e nell'inverter sono del 5-6%)",
+          "corretto": true,
+          "feedback": "Esatto! Un motore elettrico brushless ha rendimento del 90-95%. Se 16 kWh entrano nel motore, circa 15 kWh arrivano alle ruote come lavoro meccanico. Le perdite (5-10%) sono per attrito nei cuscinetti e calore nei fili di rame."
         },
         {
           "id": "b",
-          "testo": "Per il limite termodinamico di Carnot, le perdite all'attrito, il raffreddamento necessario e le perdite allo scarico: solo il 25-35% diventa energia utile",
-          "corretto": true,
-          "feedback": "Esatto! Il limite di Carnot con T_calda ~2000K e T_fredda ~400K dà η_max ≈ 80%."
+          "testo": "50%: metà dell'energia elettrica si disperde come calore per il limite di Carnot",
+          "feedback": "Non corretto. Il limite di Carnot si applica ai motori termici, non ai motori elettrici. Il motore elettrico non converte calore in lavoro: converte energia elettrica direttamente in energia meccanica, con rendimento del 90-95%.",
+          "riferimento": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
         },
         {
           "id": "c",
-          "testo": "Perché il motore è mal progettato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il rendimento del motore elettrico non può essere calcolato senza conoscere la tensione della batteria",
+          "feedback": "Non corretto. Il rendimento è il rapporto W_utile/W_speso, indipendente dalla tensione specifica. Per il motore elettrico: rendimento ≈ 90-95%.",
+          "riferimento": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
         },
         {
           "id": "d",
-          "testo": "Perché la benzina ha poco potere calorifico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "100%: il motore elettrico è un motore 'perpetuo' che non disperde mai energia",
+          "feedback": "Non corretto. Anche il motore elettrico ha perdite (attrito, calore nei fili). Il rendimento è del 90-95%, non del 100%.",
+          "riferimento": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
         }
       ],
-      "spiegazione": "Il limite di Carnot con T_calda ~2000K e T_fredda ~400K dà η_max ≈ 80%. Attrito, raffreddamento e scarico riducono l'efficienza reale a 25-35%."
+      "spiegazione": "Il motore elettrico brushless ha rendimento del 90-95%: non usa combustione (nessun limite di Carnot), converte energia elettrica quasi direttamente in meccanica. Perdite: attrito nei cuscinetti (~2%), calore nei fili di rame (~4-8%). Confronto: motore benzina 25-35% vs motore elettrico 90-95%. La differenza spiega il vantaggio energetico dell'auto elettrica.",
+      "riferimento_principale": "📖 ESPLORA — Il motore elettrico: una fisica completamente diversa"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Come funziona un motore elettrico a livello fisico?",
+      "domanda": "Il testo usa la formula del limite di Carnot: η_max = 1 − (T_C/T_H). Per un motore a benzina con T_H = 2.273K e T_C = 973K, il limite teorico è 57%. Perché i motori reali raggiungono solo il 25-35%?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Converte calore in movimento come il motore a scoppio",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché attrito, perdite di calore attraverso le pareti del cilindro e combustione imperfetta dissipano energia oltre il minimo termodinamico previsto da Carnot",
+          "corretto": true,
+          "feedback": "Esatto! Il ciclo di Carnot è ideale: nessuna perdita oltre il limite termodinamico. Nei motori reali ci sono perdite aggiuntive: calore disperso attraverso le pareti del cilindro, attrito nei cuscinetti e nelle valvole, combustione imperfetta (non tutto il carburante brucia completamente)."
         },
         {
           "id": "b",
-          "testo": "La corrente attraverso bobine crea campo magnetico che interagisce con i magneti permanenti, producendo forza e rotazione: inversione della dinamo",
-          "corretto": true,
-          "feedback": "Esatto! Motore elettrico = dinamo al contrario."
+          "testo": "Perché il motore a benzina non usa le temperature corrette: userebbe temperature più alte per avvicinarsi al 57%",
+          "feedback": "Non corretto. Le temperature nei motori reali sono già al limite dei materiali disponibili. Il gap tra 57% teorico e 25-35% reale è dovuto alle perdite reali (attrito, calore attraverso pareti, combustione imperfetta).",
+          "riferimento": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
         },
         {
           "id": "c",
-          "testo": "Usa la pressione dell'aria compressa per muovere il rotore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il ciclo di Carnot si applica solo ai motori a vapore, non ai motori a benzina",
+          "feedback": "Non corretto. Il ciclo di Carnot è il limite termodinamico universale per qualsiasi macchina termica che converte calore in lavoro, inclusi i motori a benzina.",
+          "riferimento": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
         },
         {
           "id": "d",
-          "testo": "Converte la luce solare in movimento tramite effetto piezoelettrico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché le case automobilistiche limitano artificialmente il rendimento per aumentare i consumi e i profitti",
+          "feedback": "Non corretto. Le case automobilistiche investono enormemente per aumentare il rendimento e ridurre i consumi (anche per le normative sulle emissioni). Il gap tra Carnot e realtà è fisico, non deliberato.",
+          "riferimento": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
         }
       ],
-      "spiegazione": "Motore elettrico = dinamo al contrario. La dinamo converte movimento in elettricità; il motore elettricità in movimento. Efficienza ~90%, vs ~25-35% del termico."
+      "spiegazione": "Il ciclo di Carnot è il massimo teorico per un ciclo ideale (nessuna perdita reale). Nei motori a benzina reali, le perdite aggiuntive includono: calore disperso attraverso le pareti metalliche del cilindro (non si può isolare perfettamente), attrito meccanico (pistoni, valvole, ingranaggi), combustione imperfetta (parte del carburante non brucia completamente). Il risultato è che i motori reali raggiungono 25-35% contro il 57% teorico.",
+      "riferimento_principale": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'rigenerazione' frenante nei veicoli elettrici e ibridi?",
+      "domanda": "Il testo afferma che 'le emissioni dell'auto elettrica dipendono dal mix elettrico della rete'. Perché questo dato è fondamentale per valutare correttamente l'impatto ambientale delle auto elettriche?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il sistema di raffreddamento del motore elettrico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché un'auto elettrica ricaricata con elettricità da carbone può emettere più CO₂ che un'auto a benzina efficiente, mentre ricaricata con rinnovabili è quasi a zero emissioni",
+          "corretto": true,
+          "feedback": "Esatto! L'auto elettrica è 'zero emissioni dirette' ma le emissioni indirette dipendono da come viene prodotta l'elettricità. In Polonia (rete con 70% carbone) le emissioni per 100 km sono maggiori che in Francia (nucleare + rinnovabili)."
         },
         {
           "id": "b",
-          "testo": "La tecnologia che durante la frenata usa il motore come generatore, recuperando energia cinetica e ricaricando la batteria: recupera il 10-30% dell'energia",
-          "corretto": true,
-          "feedback": "Esatto! La rigenerazione trasforma la dissipazione termica dei freni in elettricità."
+          "testo": "Perché il mix elettrico determina la velocità di ricarica della batteria, non solo le emissioni",
+          "feedback": "Non corretto. Il mix elettrico non influenza la velocità di ricarica (che dipende dalla potenza del caricatore). Influenza le emissioni di CO₂ associate all'energia consumata per ricaricare.",
+          "riferimento": "🔍 OSSERVA — Caso studio: confronto energetico per 100 km"
         },
         {
           "id": "c",
-          "testo": "Il riavvio automatico del motore dopo lo stop",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i motori elettrici funzionano meglio con elettricità prodotta da fonti rinnovabili rispetto a quella da fossili",
+          "feedback": "Non corretto. Il motore elettrico funziona allo stesso modo indipendentemente dalla fonte di produzione dell'elettricità. La differenza è nelle emissioni di CO₂ associate all'energia, non nelle prestazioni del motore.",
+          "riferimento": "🔍 OSSERVA — Caso studio: confronto energetico per 100 km"
         },
         {
           "id": "d",
-          "testo": "La ricarica wireless delle batterie durante la guida",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché le auto elettriche costano meno da ricaricare nei paesi con più energie rinnovabili",
+          "feedback": "Non corretto. Il prezzo dell'elettricità non è direttamente determinato dalla quota di rinnovabili (dipende da molti altri fattori: tasse, struttura del mercato). Il punto è le emissioni di CO₂, non il prezzo.",
+          "riferimento": "🔍 OSSERVA — Caso studio: confronto energetico per 100 km"
         }
       ],
-      "spiegazione": "La rigenerazione trasforma la dissipazione termica dei freni in elettricità. Un bus elettrico in città con molte fermate recupera quantità di energia significative."
+      "spiegazione": "L'auto elettrica non produce emissioni dirette dal tubo di scappamento. Ma le emissioni 'indirette' dipendono da come viene prodotta l'elettricità per ricaricarla. In Italia (mix 2024: ~40% rinnovabili, ~250 g CO₂/kWh): auto elettrica ≈ 4,45 kg CO₂/100 km. In Francia (<50 g CO₂/kWh nucleare): ≈ 0,8 kg. In Polonia (~850 g CO₂/kWh carbone): ≈ 15 kg — più dell'auto a benzina! L'analisi corretta è 'well-to-wheel' (dal pozzo alla ruota).",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: confronto energetico per 100 km"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il ciclo Brayton e dove si applica?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo descrive il 'diagramma di Sankey' come strumento per visualizzare la distribuzione dell'energia. In un motore a benzina che parte da 100 unità di energia, quante arrivano alle ruote?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il ciclo termodinamico dei motori diesel",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 25 unità: dispersione dal motore (35), sistema di raffreddamento (30), scarico (5), attrito meccanico (5)",
+          "corretto": true,
+          "feedback": "Esatto! Su 100 unità di benzina: calore dal motore 35, calore dal sistema di raffreddamento (radiatore) 30, calore dallo scarico 5, attrito meccanico 5. Totale disperso: 75. Alle ruote arrivano: 100 - 75 = 25 unità (rendimento ≈ 25%)."
         },
         {
           "id": "b",
-          "testo": "Il ciclo termodinamico delle turbine a gas: compressione aria → combustione → espansione in turbina → scarico. Base di aerei (turbofan) e centrali a gas",
-          "corretto": true,
-          "feedback": "Esatto! Le turbine a gas dei jet usano il ciclo Brayton."
+          "testo": "Circa 60 unità: le perdite principali sono solo nello scarico",
+          "feedback": "Non corretto. Con le perdite descritte nel testo (35 + 30 + 5 + 5 = 75), alle ruote arrivano solo 25 unità, non 60.",
+          "riferimento": "🔬 SPERIMENTA — Base: Analizzo i flussi di energia con uno schema Sankey"
         },
         {
           "id": "c",
-          "testo": "Il ciclo dei motori a vapore delle locomotive",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 50 unità: metà dell'energia si converte in lavoro utile",
+          "feedback": "Non corretto. Il rendimento del 50% è quello di una centrale a ciclo combinato. Un motore a benzina raggiunge circa il 25-35%, non il 50%.",
+          "riferimento": "🔬 SPERIMENTA — Base: Analizzo i flussi di energia con uno schema Sankey"
         },
         {
           "id": "d",
-          "testo": "Il ciclo di funzionamento delle pompe di calore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Zero unità: tutta l'energia si disperde come calore",
+          "feedback": "Non corretto. Se arrivassero zero unità alle ruote, l'auto non si muoverebbe. Il rendimento è 25-35%, quindi arrivano 25-35 unità alle ruote.",
+          "riferimento": "🔬 SPERIMENTA — Base: Analizzo i flussi di energia con uno schema Sankey"
         }
       ],
-      "spiegazione": "Le turbine a gas dei jet usano il ciclo Brayton. Efficienze del 40-55% nelle centrali a ciclo combinato (gas + vapore): le più efficienti tra le termiche."
+      "spiegazione": "Distribuzione dell'energia in un motore a benzina (schema Sankey dal testo): dispersione calore dal motore = 35 unità, dal sistema di raffreddamento = 30 unità, dallo scarico = 5 unità, attrito meccanico = 5 unità. Totale disperso = 75 unità. Alle ruote = 100 - 75 = 25 unità → rendimento = 25%. Il motore elettrico (5 + 3 + 2 = 10 unità disperse) porta 90 unità alle ruote.",
+      "riferimento_principale": "🔬 SPERIMENTA — Base: Analizzo i flussi di energia con uno schema Sankey"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'cogenerazione' (CHP) e perché è efficiente?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo confronta il numero di componenti in movimento: motore a benzina ne ha oltre 200, motore elettrico ne ha 3 (rotore, statore, asse). Quale vantaggio pratico produce questa differenza?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La produzione di energia da più fonti rinnovabili contemporaneamente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il motore elettrico richiede manutenzione molto meno frequente (ogni 100.000+ km contro ogni 15-20.000 km del benzina) perché ha quasi nessun componente soggetto a usura meccanica",
+          "corretto": true,
+          "feedback": "Esatto! Ogni componente meccanico si usura nel tempo: pistoni, valvole, candele, cinghia di distribuzione, frizione, cambio. Con soli 3 componenti in movimento, il motore elettrico ha molti meno punti di usura, riducendo drasticamente la frequenza di manutenzione."
         },
         {
           "id": "b",
-          "testo": "La produzione simultanea di calore ed elettricità da un unico impianto: recupera il calore di scarto invece di dissiparlo, raggiungendo efficienze totali del 80-90%",
-          "corretto": true,
-          "feedback": "Esatto! Una centrale convenzionale genera elettricità (40%) e butta via calore (60%)."
+          "testo": "Il motore elettrico è più potente perché ha meno attrito interno",
+          "feedback": "Non corretto. La potenza del motore non dipende solo dal numero di componenti. I motori a benzina ad alta potenza esistono nonostante i molti componenti. Il vantaggio principale dei pochi componenti è la ridotta manutenzione.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         },
         {
           "id": "c",
-          "testo": "La generazione distribuita di energia nei prosumer",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il motore elettrico è più silenzioso perché ha meno superfici che vibrano",
+          "feedback": "Non corretto. Sebbene il motore elettrico sia più silenzioso, il testo non lo collega al numero di componenti. Il vantaggio principale menzionato è la ridotta manutenzione.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         },
         {
           "id": "d",
-          "testo": "La combinazione di fotovoltaico e solare termico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il motore elettrico è più sicuro perché non ci sono parti che possono volare via in caso di guasto",
+          "feedback": "Non corretto. Sebbene la semplicità riduca alcune modalità di guasto, il testo non fa questo collegamento. Il vantaggio menzionato è la ridotta manutenzione.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         }
       ],
-      "spiegazione": "Una centrale convenzionale genera elettricità (40%) e butta via calore (60%). La cogenerazione recupera quel calore per riscaldamento district heating: efficienza totale 80-90%."
+      "spiegazione": "Componenti in movimento: motore a benzina >200 (pistoni, valvole, candele, cinghia di distribuzione, frizione, cambio, pompa olio, pompa acqua...) → manutenzione ogni 15-20.000 km. Motore elettrico: 3 (rotore, statore, asse) → manutenzione ogni 100.000+ km. Meno componenti = meno punti di usura = meno manutenzione = costi operativi inferiori nel lungo periodo.",
+      "riferimento_principale": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è l'efficienza exergetica e perché è più utile di quella energetica?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo spiega che il motore elettrico ha 'coppia motrice immediata dal punto 0'. Quale vantaggio concreto di guida produce questa caratteristica?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'efficienza calcolata sulle emissioni di CO₂",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'auto elettrica accelera da 0 km/h con la massima forza disponibile subito, senza dover aspettare che il motore termico raggiunga i giri di regime",
+          "corretto": true,
+          "feedback": "Esatto! Il motore termico produce coppia massima solo a un certo numero di giri (curva di coppia). Il motore elettrico produce la coppia massima istantaneamente da 0 giri. Questo spiega perché le auto elettriche accelerano più velocemente delle termiche equivalenti da fermo."
         },
         {
           "id": "b",
-          "testo": "L'efficienza che misura quanta 'qualità' dell'energia viene conservata, non solo la quantità: 1 kWh elettrico (alta exergia) vale più di 1 kWh termico a bassa temperatura (bassa exergia)",
-          "corretto": true,
-          "feedback": "Esatto! Usare elettricità per riscaldare a 20°C è exergeticamente inefficiente: usi alta exergia per produrre bassa exergia."
+          "testo": "L'auto elettrica non ha bisogno del cambio di velocità perché la coppia è costante a qualsiasi velocità",
+          "feedback": "Non corretto (parzialmente). La coppia immediata da 0 riduce la necessità del cambio, ma il punto specifico è che la coppia massima è disponibile immediatamente da 0 km/h, senza aspettare i giri motore.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         },
         {
           "id": "c",
-          "testo": "L'efficienza dei pannelli solari a diverse temperature",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'auto elettrica non ha bisogno della frizione perché il motore non si spegne mai sotto i regimi minimi",
+          "feedback": "Non corretto. La ragione per cui le auto elettriche non hanno frizione non è esattamente questa. Il punto è la coppia immediata da 0 giri, che dà accelerazione massima fin da fermo.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         },
         {
           "id": "d",
-          "testo": "Un modo alternativo di calcolare il rendimento di Carnot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'auto elettrica può spingere il veicolo in salita senza scivolare indietro grazie alla coppia immediata",
+          "feedback": "Non corretto. Sebbene la coppia immediata aiuti nelle partenze in salita, il principale vantaggio di guida citato nel testo è l'accelerazione massima disponibile istantaneamente da 0 km/h.",
+          "riferimento": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
         }
       ],
-      "spiegazione": "Usare elettricità per riscaldare a 20°C è exergeticamente inefficiente: usi alta exergia per produrre bassa exergia. Una pompa di calore fa molto meglio: usa 1 kWh per spostare 3-4 kWh di calore."
+      "spiegazione": "Il motore termico produce coppia massima solo a un certo numero di giri (es. 2.500-4.000 rpm): da fermo si deve accelerare gradualmente (frizione, cambio) per portare il motore ai giri ottimali. Il motore elettrico produce coppia massima da 0 giri: la forza massima è disponibile istantaneamente. Questo spiega le accelerazioni 0-100 km/h straordinarie di Tesla Model S, Ferrari Rimac e altre elettriche di alta prestazione.",
+      "riferimento_principale": "📖 ESPLORA — Confronto finale: termico vs. elettrico"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo dice: 'non esiste il moto perpetuo... chiunque affermi di aver inventato una macchina a energia libera sta violando una legge fisica fondamentale o sta mentendo'. Come si applica questa affermazione per valutare criticamente le notizie tecnologiche?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È uno strumento di verifica: qualsiasi tecnologia che promette di produrre più energia di quanta ne consuma viola il secondo principio della termodinamica ed è fisicamente impossibile",
+          "corretto": true,
+          "feedback": "Esatto! Il secondo principio della termodinamica è una legge fisica verificata sperimentalmente migliaia di volte. Qualsiasi dispositivo che promette 'energia gratuita', 'motore over-unity' o 'rendimento maggiore del 100%' viola questa legge. È un criterio di falsificabilità immediato."
+        },
+        {
+          "id": "b",
+          "testo": "Non si applica alla tecnologia moderna perché il secondo principio è stato dimostrato valido solo per le macchine a vapore del XIX secolo",
+          "feedback": "Non corretto. Il secondo principio della termodinamica è stato verificato in migliaia di contesti moderni: motori, elettronica, processi chimici, fisica quantistica. Non è limitato alle macchine a vapore.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Secondo principio della termodinamica"
+        },
+        {
+          "id": "c",
+          "testo": "Significa che le auto elettriche sono impossibili perché violano il secondo principio producendo coppia da 0 giri",
+          "feedback": "Non corretto. Le auto elettriche non violano il secondo principio: consumano energia elettrica per produrre lavoro meccanico, con rendimento < 100%. Non creano energia dal nulla.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Secondo principio della termodinamica"
+        },
+        {
+          "id": "d",
+          "testo": "Si applica solo ai motori meccanici, non ai dispositivi elettronici che funzionano con principi diversi",
+          "feedback": "Non corretto. Il secondo principio è universale: vale per macchine meccaniche, dispositivi elettronici, processi chimici, sistemi biologici. Non ci sono eccezioni nei sistemi fisici reali.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Secondo principio della termodinamica"
+        }
+      ],
+      "spiegazione": "Il secondo principio della termodinamica è una delle leggi fisiche meglio verificate della scienza. Qualsiasi tecnologia che promette di produrre più energia di quanta ne consuma ('over-unity', 'energia libera') viola questa legge. Non è necessario analizzare i dettagli tecnici: se viola il secondo principio, è impossibile. Questo è un criterio di verifica immediato per valutare criticamente le affermazioni tecnologiche.",
+      "riferimento_principale": "📖 ESPLORA — Box Fisica — Secondo principio della termodinamica"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo calcola la filiera 'well-to-wheel' (dal pozzo alla ruota) per auto elettrica da solare: FV (20%) × inverter solare (97%) × rete (94%) × batteria (90%) × motore (92%). Questo rendimento è molto basso. Perché l'auto elettrica con solare è comunque preferibile in termini di emissioni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché anche se il rendimento complessivo è basso (~16%), le emissioni di CO₂ sono quasi zero: il sole non emette CO₂, il fotovoltaico non brucia carburante",
+          "corretto": true,
+          "feedback": "Esatto! Il rendimento complessivo FV → auto ≈ 20% × 0,97 × 0,94 × 0,90 × 0,92 ≈ 16%. Ma l'energia di partenza è solare (gratuita e a zero emissioni). Anche se 'si spreca' l'84%, il CO₂ emesso è quasi zero. Il carburante fossile ha un rendimento maggiore ma costa emissioni di CO₂."
+        },
+        {
+          "id": "b",
+          "testo": "Perché l'auto elettrica da solare ha un rendimento complessivo del 100% considerando che il sole è infinito",
+          "feedback": "Non corretto. Il rendimento non diventa 100% perché l'input è gratuito. Il rendimento complessivo rimane ~16%. La differenza è nelle emissioni, non nel rendimento.",
+          "riferimento": "🔬 SPERIMENTA — Intermedio: Calcolo rendimenti e confronto filiere energetiche"
+        },
+        {
+          "id": "c",
+          "testo": "Perché il fotovoltaico non usa acqua, riducendo l'impatto idrico rispetto ai combustibili fossili",
+          "feedback": "Non corretto. L'impatto idrico è un vantaggio reale, ma non è la ragione principale per cui l'auto elettrica da solare è preferibile per le emissioni. La ragione è che CO₂ ≈ 0 lungo tutta la filiera.",
+          "riferimento": "🔬 SPERIMENTA — Intermedio: Calcolo rendimenti e confronto filiere energetiche"
+        },
+        {
+          "id": "d",
+          "testo": "Perché nei paesi con molto sole il costo dell'elettricità solare è inferiore alla benzina, riducendo anche il costo operativo",
+          "feedback": "Non corretto. Il costo operativo è un vantaggio reale, ma non risponde alla domanda sulle emissioni. La ragione per cui è preferibile in termini di CO₂ è che la fonte (sole) non emette CO₂.",
+          "riferimento": "🔬 SPERIMENTA — Intermedio: Calcolo rendimenti e confronto filiere energetiche"
+        }
+      ],
+      "spiegazione": "Paradosso: auto elettrica da solare ha rendimento well-to-wheel ~16% (molto basso). Auto a benzina: ~28%. Ma la benzina parte da combustibili fossili: CO₂ ≈ 16 kg/100 km. L'auto da solare parte dall'energia solare (zero CO₂): anche se 'spreca' l'84% dell'energia solare, quella energia era gratuita e a zero emissioni. Il rendimento conta per il costo; le emissioni dipendono dalla fonte.",
+      "riferimento_principale": "🔬 SPERIMENTA — Intermedio: Calcolo rendimenti e confronto filiere energetiche"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo descrive che Nikolaus Otto brevettò il primo motore a 4 tempi nel 1876, poi Karl Benz lo montò su un veicolo nel 1885. Mettendo in prospettiva: questo motore ha dominato il mercato per 140 anni. Quale caratteristica lo ha reso così difficile da sostituire?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'altissima densità energetica dei carburanti liquidi (benzina, gasolio) che in pochi litri contengono decine di kWh, rendendo possibile un'autonomia di 600-800 km con rifornimento in 3-5 minuti",
+          "corretto": true,
+          "feedback": "Esatto! La benzina contiene circa 8,9 kWh/litro. 50 litri = 445 kWh in un serbatoio leggero, rifornito in 5 minuti. Una batteria con 445 kWh peserebbe oltre 2 tonnellate ai costi di oggi. Questa densità energetica dei liquidi è il motivo per cui il motore termico ha dominato per 140 anni."
+        },
+        {
+          "id": "b",
+          "testo": "Il motore a 4 tempi è silenzioso e non produce vibrazioni, rendendolo confortevole rispetto alle alternative",
+          "feedback": "Non corretto. Il motore a benzina è tutt'altro che silenzioso o privo di vibrazioni. Il suo vantaggio principale è la densità energetica dei carburanti liquidi, non il comfort acustico.",
+          "riferimento": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
+        },
+        {
+          "id": "c",
+          "testo": "Il motore a 4 tempi ha rendimento del 100%, rendendo inutile qualsiasi alternativa",
+          "feedback": "Non corretto. Il motore a benzina ha rendimento del 25-35%, ben lontano dal 100%. Il suo dominio è dovuto alla densità energetica dei carburanti, non all'efficienza.",
+          "riferimento": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
+        },
+        {
+          "id": "d",
+          "testo": "Il motore a 4 tempi non produce emissioni di CO₂, rendendolo compatibile con qualsiasi normativa ambientale",
+          "feedback": "Non corretto. Il motore a benzina produce CO₂ ed è proprio questa la ragione per cui si vuole sostituirlo con soluzioni alternative. Il suo dominio storico è dovuto all'energia compatta dei carburanti liquidi.",
+          "riferimento": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
+        }
+      ],
+      "spiegazione": "Il motore a benzina ha dominato per 140 anni non per il rendimento (25-35% contro il 90-95% dell'elettrico) ma per la densità energetica dei carburanti liquidi: benzina ≈ 8,9 kWh/litro, 50 L = 445 kWh in 30 kg, ricaricabili in 5 minuti. Una batteria equivalente pesa oggi >1 tonnellata e si ricarica in 20-45 min. Solo quando le batterie hanno superato una soglia critica di costo/densità energetica, la transizione all'elettrico è diventata pratica.",
+      "riferimento_principale": "📖 ESPLORA — Il motore a scoppio a 4 tempi: la macchina del XX secolo"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo descrive il limite di Carnot con la formula η_max = 1 − (T_C/T_H). Un ricercatore propone di aumentare il rendimento portando T_H a 3.000K (2.727°C). Quale ostacolo fisico-materiale impedisce questa soluzione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I materiali disponibili (acciai speciali, ceramiche) hanno temperatura di fusione o di cedimento meccanico inferiori a 2.727°C, quindi il cilindro si scioglierebbe o si deformerebbe",
+          "corretto": true,
+          "feedback": "Esatto! Anche gli acciai speciali per alta temperatura (superleghe di nichel) cedono attorno a 1.000-1.200°C in condizioni di carico. Le ceramiche resistono di più ma sono fragili. Non esistono materiali strutturali commerciali che resistano a 2.727°C con carichi meccanici significativi."
+        },
+        {
+          "id": "b",
+          "testo": "La legge di Carnot non permette di aumentare T_H oltre il limite di 2.273K previsto dalla termodinamica",
+          "feedback": "Non corretto. La formula di Carnot non fissa un limite a T_H. Il limite è fisico-materiale: i materiali disponibili non resistono a temperature di 2.727°C con carichi meccanici.",
+          "riferimento": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
+        },
+        {
+          "id": "c",
+          "testo": "La benzina non brucia a temperature superiori a 2.000°C perché la reazione chimica si inverte",
+          "feedback": "Non corretto. La dissociazione termica dei prodotti di combustione avviene a temperature molto elevate, ma non è l'ostacolo principale. Il limite è la resistenza dei materiali del motore.",
+          "riferimento": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
+        },
+        {
+          "id": "d",
+          "testo": "La legge di sicurezza europea vieta temperature superiori a 2.000°C nei motori automobilistici",
+          "feedback": "Non corretto. Non esiste tale normativa specifica. Il limite è fisico-materiale: i materiali del motore non resistono a quelle temperature in condizioni di uso continuativo.",
+          "riferimento": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
+        }
+      ],
+      "spiegazione": "Aumentare T_H aumenta il rendimento teorico di Carnot. Ma T_H è limitata dalla resistenza termica dei materiali: anche le superleghe di nichel usate nelle turbine aeronautiche (le più resistenti disponibili) cedono a ~1.100-1.200°C in condizioni di carico meccanico continuativo. A 2.727°C non esistono materiali strutturali commerciali. Questo è il confine pratico che separa il limite teorico di Carnot dal rendimento reale.",
+      "riferimento_principale": "📖 ESPLORA — Il calore come 'carburante' per un motore: il ciclo di Carnot"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo riporta che 'entro il 2035 tutti i nuovi veicoli in Europa saranno a zero emissioni dirette'. Questa normativa avrà effetti a catena su interi settori industriali. Quale catena di effetti produrrà?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Creerà domanda massiccia di ingegneri di propulsione elettrica, ridurrà i meccanici di motori a combustione, aumenterà la domanda di litio/cobalto, trasformerà i distributori di carburante, cambierà le competenze richieste nella formazione tecnica",
+          "corretto": true,
+          "feedback": "Esatto! Una normativa sull'auto elettrica produce effetti sistemici a catena: nuove professioni (ingegneri propulsione elettrica), declino di altre (meccanici ICE), nuove catene di fornitura (batterie), trasformazione delle infrastrutture (colonnine vs distributori), cambiamento nella formazione tecnica. È un esempio di come le politiche energetiche producono trasformazioni occupazionali profonde."
+        },
+        {
+          "id": "b",
+          "testo": "La normativa non avrà effetti sull'occupazione perché i meccanici attuali possono facilmente riqualificarsi per le auto elettriche",
+          "feedback": "Non corretto. La riqualificazione è necessaria ma non è automatica né semplice. La transizione richiede cambiamenti profondi nella formazione tecnica, nelle competenze degli officinisti, nelle infrastrutture di rifornimento.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "c",
+          "testo": "La normativa riguarda solo la produzione di nuove auto: non cambierà nulla per chi usa auto a benzina già in circolazione",
+          "feedback": "Non corretto. Anche chi usa auto a benzina sarà influenzato: diminuiranno i distributori di carburante, aumenteranno le colonnine, cambierà il valore residuo delle auto a benzina usate, cambieranno le norme di accesso alle ZTL urbane.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "d",
+          "testo": "La normativa europea si applica solo ai paesi con PIL superiore alla media europea, non all'Italia",
+          "feedback": "Non corretto. Il Regolamento UE 2023/851 si applica a tutti i paesi dell'Unione Europea, inclusa l'Italia, senza distinzione di PIL.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        }
+      ],
+      "spiegazione": "Il Regolamento UE 2023/851 (zero emissioni per le nuove auto entro il 2035) produce effetti sistemici: nuove professioni richieste (ingegneri propulsione elettrica, esperti di batterie, installatori di colonnine), professioni in declino (meccanici ICE, addetti raffinerie di carburante), nuove catene di fornitura (litio, cobalto, semiconduttori), trasformazione delle infrastrutture (colonnine vs distributori), cambiamento profondo nella formazione tecnica.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo descrive il 'frenata rigenerativa' nelle auto ibride come recupero di energia. Come funziona fisicamente questo meccanismo e quale principio fisico sfrutta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il motore elettrico viene usato come generatore: la forza frenante meccanica fa girare il rotore, che genera corrente elettrica che ricarica la batteria, convertendo energia cinetica in energia elettrica",
+          "corretto": true,
+          "feedback": "Esatto! Nella frenata rigenerativa, il motore elettrico funziona al contrario: invece di consumare elettricità per girare il rotore (motore), usa la forza del rotore che gira (per inerzia del veicolo) per generare corrente (generatore). È la legge di Faraday-Lenz applicata: un conduttore in moto in un campo magnetico genera corrente."
+        },
+        {
+          "id": "b",
+          "testo": "L'auto frena producendo calore che viene convertito in elettricità tramite celle termoelettriche",
+          "feedback": "Non corretto. Le celle termoelettriche convertono differenze di temperatura in elettricità, ma con bassa efficienza e non sono il meccanismo principale della frenata rigenerativa. Il meccanismo è il motore usato come generatore.",
+          "riferimento": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
+        },
+        {
+          "id": "c",
+          "testo": "Le ruote frenano e comprimono molle che accumulano energia meccanica, poi rilasciata per azionare il generatore",
+          "feedback": "Non corretto. Le molle di accumulazione energetica esistono in alcuni sistemi (KERS meccanico nella F1 anni 2000) ma non sono il meccanismo della frenata rigenerativa dei veicoli ibridi/elettrici moderni.",
+          "riferimento": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
+        },
+        {
+          "id": "d",
+          "testo": "Il calore dei freni viene raccolto da dissipatori termici e convertito in elettricità tramite effetto Seebeck",
+          "feedback": "Non corretto. L'effetto Seebeck (termoelettrico) esiste ma ha bassissima efficienza. La frenata rigenerativa usa il motore elettrico come generatore: meccanismo molto più efficiente (60-70% di recupero dell'energia cinetica).",
+          "riferimento": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
+        }
+      ],
+      "spiegazione": "Frenata rigenerativa: il motore elettrico funziona come generatore (legge di Faraday-Lenz). Quando il guidatore frena, il rotore continua a girare per inerzia del veicolo. Questa rotazione nel campo magnetico genera corrente che carica la batteria. L'opposizione del generatore alla rotazione produce la forza frenante. Efficienza di recupero: 60-70% dell'energia cinetica. Negli ibridi, questo riduce i consumi del 20-30% nel traffico urbano (molte frenate).",
+      "riferimento_principale": "📖 ESPLORA — Veicoli ibridi e full electric: le configurazioni"
     }
   ]
 }

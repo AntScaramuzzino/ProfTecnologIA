@@ -1,260 +1,600 @@
 {
   "mc_id": "MC-ALI-2-01",
-  "titolo": "Tecniche agronomiche e coltivazioni",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Qual è la prima fase della filiera alimentare?",
+      "domanda": "Cos'è l'agronomia?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Distribuzione al supermercato",
-          "feedback": "La distribuzione è la quarta fase."
+          "testo": "La scienza che ottimizza suolo, clima, acqua e tecniche di coltivazione",
+          "corretto": true,
+          "feedback": "Esatto! L'agronomia è la disciplina tecnico-scientifica che unisce biologia, chimica, fisica e ingegneria per ottenere raccolti abbondanti, di qualità e sostenibili."
         },
         {
           "id": "b",
-          "testo": "Trasformazione in fabbrica",
-          "feedback": "La trasformazione è la seconda fase."
+          "testo": "La tecnica di costruzione delle serre industriali",
+          "feedback": "Non è corretto. Le serre sono uno strumento usato in agricoltura, ma l'agronomia è molto più ampia: studia tutti i fattori che influenzano la coltivazione.",
+          "riferimento": "📖 ESPLORA — Il cibo inizia dal suolo"
         },
         {
           "id": "c",
-          "testo": "Produzione agricola",
-          "corretto": true,
-          "feedback": "Esatto! La filiera inizia sempre dalla produzione primaria: campo, allevamento, mare."
+          "testo": "La biologia degli animali da allevamento",
+          "feedback": "Non è corretto. L'agronomia riguarda le coltivazioni vegetali, non l'allevamento animale. La zootecnia si occupa degli animali.",
+          "riferimento": "📖 ESPLORA — Il cibo inizia dal suolo"
         },
         {
           "id": "d",
-          "testo": "Consumo da parte del cliente",
-          "feedback": "Il consumo è l'ultima fase."
+          "testo": "L'insieme delle tecnologie per la conservazione del cibo",
+          "feedback": "Non è corretto. La conservazione degli alimenti appartiene alla tecnologia alimentare. L'agronomia si occupa di come si produce il cibo in campo.",
+          "riferimento": "📖 ESPLORA — Il cibo inizia dal suolo"
         }
       ],
-      "spiegazione": "La filiera inizia sempre dalla produzione primaria: campo, allevamento, mare."
+      "spiegazione": "L'agronomia è una disciplina tecnica e scientifica che studia come ottimizzare suolo, clima, acqua e scelte tecniche di coltivazione. Il professionista che la applica si chiama agronomo.",
+      "riferimento_principale": "📖 ESPLORA — Il cibo inizia dal suolo"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cosa significa 'filiera corta'?",
+      "domanda": "Quale componente del suolo fertile è definita 'la componente scura che rende fertile il suolo'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una filiera che dura poco tempo",
-          "feedback": "La durata non è il criterio."
+          "testo": "L'argilla",
+          "feedback": "Non è corretto. L'argilla è un minerale che contribuisce alla struttura del suolo, ma non è quella che gli dà la fertilità principale.",
+          "riferimento": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
         },
         {
           "id": "b",
-          "testo": "Un sistema con pochi intermediari tra produttore e consumatore",
+          "testo": "L'humus",
           "corretto": true,
-          "feedback": "Esatto! Filiera corta = pochi intermediari: prodotto più fresco e più valore al produttore."
+          "feedback": "Esatto! L'humus è la componente scura del suolo, prodotta dalla decomposizione della materia organica da parte di batteri, funghi e lombrichi. È la principale fonte di fertilità."
         },
         {
           "id": "c",
-          "testo": "Una filiera che usa meno acqua",
-          "feedback": "L'acqua non è il criterio."
+          "testo": "Il limo",
+          "feedback": "Non è corretto. Il limo è una particella minerale (tra sabbia e argilla) che contribuisce alla struttura fisica del suolo, non alla fertilità biologica.",
+          "riferimento": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
         },
         {
           "id": "d",
-          "testo": "Un metodo di coltivazione biologica",
-          "feedback": "Il biologico è un metodo di produzione."
+          "testo": "Il calcare",
+          "feedback": "Non è corretto. Il calcare è un minerale che regola il pH del suolo, ma non è la componente scura responsabile della fertilità.",
+          "riferimento": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
         }
       ],
-      "spiegazione": "Filiera corta = pochi intermediari: prodotto più fresco e più valore al produttore."
+      "spiegazione": "L'humus è la componente scura del suolo prodotta dalla scomposizione della materia organica morta da parte di microrganismi e lombrichi. È essenziale per la fertilità del suolo.",
+      "riferimento_principale": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa studia l'agronomia?",
+      "domanda": "Quanti anni servono in natura per formare 1 cm di suolo fertile?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Solo la coltivazione del grano",
-          "feedback": "L'agronomia riguarda tutte le colture."
+          "testo": "Tra 10 e 50 anni",
+          "feedback": "Non è corretto. Questo tempo è troppo breve: il suolo fertile si forma molto più lentamente di quanto si creda.",
+          "riferimento": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
         },
         {
           "id": "b",
-          "testo": "Le tecniche di coltivazione dei terreni e la produzione vegetale",
+          "testo": "Tra 100 e 1.000 anni",
           "corretto": true,
-          "feedback": "Esatto! L'agronomia integra biologia, chimica, fisica ed economia per migliorare le produzioni agricole."
+          "feedback": "Esatto! Formare 1 cm di suolo fertile richiede tra 100 e 1.000 anni. Per questo il suolo è una risorsa non rinnovabile che va protetta."
         },
         {
           "id": "c",
-          "testo": "Solo l'allevamento degli animali",
-          "feedback": "L'allevamento è la zootecnia."
+          "testo": "Tra 5 e 20 anni",
+          "feedback": "Non è corretto. Questo tempo è molto troppo breve. La formazione del suolo è un processo geologico lentissimo.",
+          "riferimento": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
         },
         {
           "id": "d",
-          "testo": "La conservazione degli alimenti",
-          "feedback": "La conservazione è la tecnologia alimentare."
+          "testo": "Più di 10.000 anni",
+          "feedback": "Non è corretto. Il range corretto è tra 100 e 1.000 anni, un tempo già lunghissimo ma non così estremo.",
+          "riferimento": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
         }
       ],
-      "spiegazione": "L'agronomia integra biologia, chimica, fisica ed economia per migliorare le produzioni agricole."
+      "spiegazione": "Per formare 1 cm di suolo fertile in natura servono tra 100 e 1.000 anni. L'agricoltura intensiva sbagliata può erodere quello stesso centimetro in pochi decenni.",
+      "riferimento_principale": "📖 ESPLORA — Il suolo: non è semplice 'terra'"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Nella fotosintesi clorofilliana, cosa producono le piante partendo da CO₂, acqua e luce solare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Proteine e ossigeno",
+          "feedback": "Non è corretto. Le proteine non sono il prodotto diretto della fotosintesi. La fotosintesi produce glucosio e ossigeno.",
+          "riferimento": "📖 ESPLORA — Come le piante si nutrono"
+        },
+        {
+          "id": "b",
+          "testo": "Glucosio e ossigeno",
+          "corretto": true,
+          "feedback": "Esatto! La fotosintesi trasforma CO₂, H₂O e luce in glucosio (il carburante della pianta) e ossigeno. È il processo alla base di tutta la catena alimentare."
+        },
+        {
+          "id": "c",
+          "testo": "Azoto e anidride carbonica",
+          "feedback": "Non è corretto. L'azoto viene assorbito dal suolo tramite le radici, non prodotto dalla fotosintesi. La fotosintesi usa CO₂, non la produce.",
+          "riferimento": "📖 ESPLORA — Come le piante si nutrono"
+        },
+        {
+          "id": "d",
+          "testo": "Acqua e sali minerali",
+          "feedback": "Non è corretto. L'acqua è un ingrediente della fotosintesi, non un prodotto. I sali minerali vengono assorbiti dal suolo.",
+          "riferimento": "📖 ESPLORA — Come le piante si nutrono"
+        }
+      ],
+      "spiegazione": "La fotosintesi clorofilliana produce glucosio (carburante della pianta) e ossigeno. Il glucosio è la base con cui la pianta costruisce radici, foglie, frutti e semi.",
+      "riferimento_principale": "📖 ESPLORA — Come le piante si nutrono: la fotosintesi"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quale sistema di irrigazione è il più efficiente per ridurre il consumo d'acqua?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Irrigazione per scorrimento",
+          "feedback": "Non è corretto. L'irrigazione per scorrimento è il sistema più antico e più inefficiente: gran parte dell'acqua evapora o percola in profondità.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
+        },
+        {
+          "id": "b",
+          "testo": "Irrigazione a pioggia",
+          "feedback": "Non è corretto. L'irrigazione a pioggia è più efficiente della sommersione, ma l'evaporazione rimane significativa. Non è il sistema più efficiente.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
+        },
+        {
+          "id": "c",
+          "testo": "Irrigazione a goccia",
+          "corretto": true,
+          "feedback": "Esatto! L'irrigazione a goccia rilascia acqua direttamente alla zona radicale e riduce il consumo del 50-70% rispetto alla sommersione. È il sistema più efficiente in assoluto."
+        },
+        {
+          "id": "d",
+          "testo": "Irrigazione sotterranea per risalita capillare",
+          "feedback": "Non è corretto. Questo sistema non è descritto nel testo come metodo principale. L'irrigazione a goccia è indicata esplicitamente come la più efficiente.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
+        }
+      ],
+      "spiegazione": "L'irrigazione a goccia porta l'acqua direttamente alle radici tramite tubicini forati. Riduce i consumi del 50-70% rispetto alla sommersione ed è usata per orticole, frutteti e vigneti.",
+      "riferimento_principale": "📖 ESPLORA — L'acqua in agricoltura"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quale fase del ciclo biologico della pianta NON richiede ancora la luce solare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La fioritura",
+          "feedback": "Non è corretto. La fioritura avviene dopo la crescita vegetativa e dipende fortemente dalla luce e dalla fotosintesi.",
+          "riferimento": "📖 ESPLORA — Il ciclo biologico della pianta"
+        },
+        {
+          "id": "b",
+          "testo": "La crescita vegetativa",
+          "feedback": "Non è corretto. Durante la crescita vegetativa la pianta fa fotosintesi attivamente e ha bisogno di luce.",
+          "riferimento": "📖 ESPLORA — Il ciclo biologico della pianta"
+        },
+        {
+          "id": "c",
+          "testo": "La germinazione",
+          "corretto": true,
+          "feedback": "Esatto! Durante la germinazione, il seme usa le riserve energetica dei cotiledoni. La luce non è ancora necessaria in questa fase."
+        },
+        {
+          "id": "d",
+          "testo": "La fruttificazione",
+          "feedback": "Non è corretto. La fruttificazione avviene dopo la fioritura e richiede energia prodotta dalla fotosintesi.",
+          "riferimento": "📖 ESPLORA — Il ciclo biologico della pianta"
+        }
+      ],
+      "spiegazione": "Durante la germinazione il seme usa le riserve energetiche dei cotiledoni (foglie embrionali). La luce non è ancora necessaria: serve solo acqua, calore e ossigeno.",
+      "riferimento_principale": "📖 ESPLORA — Il ciclo biologico della pianta"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cosa è la 'rotazione delle colture'?",
+      "domanda": "Perché le leguminose sono preziose nella rotazione delle colture?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Girare il campo con un trattore",
-          "feedback": "Non riguarda i macchinari."
+          "testo": "Perché producono frutti commestibili in ogni stagione",
+          "feedback": "Non è corretto. Le leguminose sono preziose nella rotazione per una ragione biologica specifica legata ai batteri delle radici, non per la produzione di frutti.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
         },
         {
           "id": "b",
-          "testo": "Alternare diverse colture sullo stesso terreno in anni successivi per mantenerlo fertile",
-          "corretto": true,
-          "feedback": "Esatto! La rotazione evita l'esaurimento del suolo e riduce parassiti specifici di ogni specie."
+          "testo": "Perché richiedono pochissima acqua rispetto ai cereali",
+          "feedback": "Non è corretto. Il valore delle leguminose nella rotazione è biologico-chimico, non idrico.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
         },
         {
           "id": "c",
-          "testo": "Vendere le coltivazioni in rotazione",
-          "feedback": "Non riguarda le vendite."
+          "testo": "Perché i batteri Rhizobium nelle loro radici fissano azoto atmosferico nel suolo",
+          "corretto": true,
+          "feedback": "Esatto! I batteri Rhizobium nelle radici delle leguminose catturano azoto dall'atmosfera e lo trasformano in forme assimilabili dalle piante: è un fertilizzante naturale gratuito."
         },
         {
           "id": "d",
-          "testo": "Irrigare il campo a rotazione",
-          "feedback": "L'irrigazione è un concetto diverso."
+          "testo": "Perché producono pesticidi naturali che eliminano i parassiti",
+          "feedback": "Non è corretto. Le leguminose non producono pesticidi. Il loro valore nella rotazione è la fissazione dell'azoto atmosferico nel suolo.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
         }
       ],
-      "spiegazione": "La rotazione evita l'esaurimento del suolo e riduce parassiti specifici di ogni specie."
+      "spiegazione": "I batteri del genere Rhizobium vivono nelle radici delle leguminose e fissano l'azoto atmosferico in forme assimilabili dalle piante. Questo 'fertilizzante naturale gratuito' riduce la necessità di concimi chimici.",
+      "riferimento_principale": "📖 ESPLORA — La rotazione delle colture"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Perché la stagionalità è importante per la sostenibilità?",
+      "domanda": "Cosa distingue l'agricoltura biologica da quella convenzionale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i prodotti stagionali costano sempre meno",
-          "feedback": "Il prezzo non è necessariamente inferiore."
+          "testo": "Il biologico non usa nessun tipo di pesticida o sostanza chimica",
+          "feedback": "Non è corretto. Questa è un'idea diffusa ma sbagliata. Il biologico esclude i pesticidi di sintesi chimica, ma ammette pesticidi di origine naturale come rame, zolfo e piretro.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "b",
-          "testo": "Perché richiedono meno energia per crescere nel loro ambiente naturale",
+          "testo": "Il biologico esclude fertilizzanti minerali di sintesi, pesticidi chimici sintetici e OGM",
           "corretto": true,
-          "feedback": "Esatto! Prodotti fuori stagione richiedono serre riscaldate o lunghi trasporti: molto più energia."
+          "feedback": "Esatto! Il biologico vieta fertilizzanti minerali di sintesi, pesticidi chimici sintetici e OGM. Usa invece concimi organici, lotta biologica e rotazioni."
         },
         {
           "id": "c",
-          "testo": "Perché i prodotti stagionali durano di più",
-          "feedback": "La durata dipende dal tipo di prodotto."
+          "testo": "Il biologico produce sempre di più rispetto al convenzionale",
+          "feedback": "Non è corretto. Il biologico produce in media il 19-25% in meno rispetto al convenzionale, ma richiede meno energia e preserva meglio la biodiversità.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
         },
         {
           "id": "d",
-          "testo": "Perché è richiesta dalla legge",
-          "feedback": "Non c'è una legge specifica."
+          "testo": "Il biologico non usa mai macchine agricole",
+          "feedback": "Non è corretto. L'agricoltura biologica può usare macchine agricole. La differenza riguarda i prodotti chimici e gli organismi geneticamente modificati.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
         }
       ],
-      "spiegazione": "Prodotti fuori stagione richiedono serre riscaldate o lunghi trasporti: molto più energia."
+      "spiegazione": "L'agricoltura biologica esclude fertilizzanti minerali di sintesi, pesticidi chimici sintetici e OGM. Il marchio UE (Reg. 848/2018) garantisce il rispetto di queste regole, non la totale assenza di sostanze fitosanitarie.",
+      "riferimento_principale": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cosa garantisce il marchio DOP?",
+      "domanda": "Quale percentuale dell'acqua dolce prelevata ogni anno nel mondo viene usata dall'agricoltura?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il prodotto non contiene allergeni",
-          "feedback": "Gli allergeni sono sull'etichetta separatamente."
+          "testo": "Circa il 20%",
+          "feedback": "Non è corretto. La percentuale è molto più alta. L'agricoltura è di gran lunga il settore che consuma più acqua dolce al mondo.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
         },
         {
           "id": "b",
-          "testo": "Il prodotto è integralmente prodotto in una zona geografica specifica con metodo tradizionale",
-          "corretto": true,
-          "feedback": "Esatto! DOP = Denominazione di Origine Protetta: lega il prodotto al territorio e al metodo tradizionale."
+          "testo": "Circa il 40%",
+          "feedback": "Non è corretto. La realtà è ancora più estrema: l'agricoltura consuma quasi il doppio di questa percentuale.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
         },
         {
           "id": "c",
-          "testo": "Il prodotto è biologico certificato",
-          "feedback": "Il biologico ha una certificazione separata."
+          "testo": "Il 70%",
+          "corretto": true,
+          "feedback": "Esatto! L'agricoltura utilizza il 70% dell'acqua dolce prelevata ogni anno nel mondo. È di gran lunga il settore più idrovoro del pianeta."
         },
         {
           "id": "d",
-          "testo": "Il prodotto è a basso contenuto di grassi",
-          "feedback": "Il contenuto nutrizionale non è legato alla DOP."
+          "testo": "Circa il 90%",
+          "feedback": "Non è corretto. La percentuale è alta ma non così estrema. Il valore corretto è il 70%.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
         }
       ],
-      "spiegazione": "DOP = Denominazione di Origine Protetta: lega il prodotto al territorio e al metodo tradizionale."
+      "spiegazione": "L'agricoltura utilizza il 70% dell'acqua dolce prelevata ogni anno nel mondo. Non il 10%, non il 20%: il 70%. Questa cifra spiega perché le scelte alimentari (es. consumo di carne) hanno un impatto idrico enorme.",
+      "riferimento_principale": "📖 ESPLORA — L'acqua in agricoltura"
     },
     {
-      "livello": "A",
-      "domanda": "Cosa è il 'precision farming'?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Qual è il vantaggio principale dell'idroponica rispetto alla coltivazione in terra?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Coltivare solo piccoli appezzamenti",
-          "feedback": "Riguarda la precisione nella gestione, non le dimensioni."
+          "testo": "Costa meno da installare e gestire",
+          "feedback": "Non è corretto. L'idroponica ha costi di installazione più alti rispetto alla coltivazione in terra. Non è un vantaggio economico iniziale.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
         },
         {
           "id": "b",
-          "testo": "Usare tecnologie digitali e sensori per ottimizzare le risorse agricole in ogni punto del campo",
+          "testo": "Consuma circa il 90% meno acqua rispetto alla coltivazione tradizionale",
           "corretto": true,
-          "feedback": "Esatto! Droni, sensori IoT, GPS e AI analizzano il campo metro per metro per ottimizzare risorse."
+          "feedback": "Esatto! L'idroponica riduce il consumo d'acqua del 90% rispetto alla coltivazione in pieno campo, perché l'acqua circola in sistema chiuso e non evapora dal suolo."
         },
         {
           "id": "c",
-          "testo": "Usare solo fertilizzanti chimici precisi",
-          "feedback": "Riduce proprio l'uso di fertilizzanti chimici."
+          "testo": "Si adatta a tutte le specie di piante, inclusi alberi da frutto e cereali",
+          "feedback": "Non è corretto. L'idroponica ha difficoltà con molte specie, tra cui alberi da frutto e cereali. Funziona meglio per orticole, erbe aromatiche e piante a ciclo rapido.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
         },
         {
           "id": "d",
-          "testo": "Un metodo tradizionale giapponese",
-          "feedback": "È un approccio tecnologico moderno."
+          "testo": "Non richiede nessun fertilizzante o soluzione nutritiva",
+          "feedback": "Non è corretto. L'idroponica richiede una soluzione acquosa ricca di nutrienti minerali. Senza di essa le piante non crescono.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
         }
       ],
-      "spiegazione": "Droni, sensori IoT, GPS e AI analizzano il campo metro per metro per ottimizzare risorse."
+      "spiegazione": "L'idroponica riduce il consumo d'acqua del 90% rispetto alla coltivazione tradizionale perché l'acqua circola in un sistema chiuso e non evapora dal suolo. Non richiede pesticidi del terreno né diserbo.",
+      "riferimento_principale": "📖 ESPLORA — Idroponica e coltivazione fuori suolo"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è l'agroecologia?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "In una rotazione classica a 4 anni, quale coltura viene inserita dopo il cereale per restituire azoto al suolo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "È un sinonimo di agricoltura biologica",
-          "feedback": "Il biologico è un sottoinsieme dell'agroecologia."
+          "testo": "Un tubero come la patata",
+          "feedback": "Non è corretto. Il tubero è il terzo anno nella rotazione classica, non il secondo. La sequenza corretta è cereale → leguminosa → tubero → coltura da foglia.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
         },
         {
           "id": "b",
-          "testo": "Applica principi ecologici per creare sistemi produttivi che imitano gli ecosistemi naturali",
-          "corretto": true,
-          "feedback": "Esatto! L'agroecologia integra biodiversità, cicli naturali e conoscenza tradizionale: va oltre il biologico."
+          "testo": "Un'altra coltura di cereali",
+          "feedback": "Non è corretto. Seminare di nuovo cereali sarebbe controproducente: esaurisce ulteriormente l'azoto e favorisce i parassiti specifici dei cereali.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
         },
         {
           "id": "c",
-          "testo": "È un tipo di agricoltura idroponica",
-          "feedback": "L'idroponica è coltivazione senza suolo."
+          "testo": "Una leguminosa come fagioli o piselli",
+          "corretto": true,
+          "feedback": "Esatto! Dopo il cereale (che consuma azoto) si inserisce una leguminosa, i cui batteri radicali fissano azoto dall'atmosfera restituendo fertilità al suolo."
         },
         {
           "id": "d",
-          "testo": "Riguarda solo la produzione biologica per l'export",
-          "feedback": "Non riguarda solo l'export."
+          "testo": "Una coltura da foglia come il cavolo",
+          "feedback": "Non è corretto. La coltura da foglia è il quarto anno nella rotazione classica, quando la fertilità è già stata ricostituita dalla leguminosa.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
         }
       ],
-      "spiegazione": "L'agroecologia integra biodiversità, cicli naturali e conoscenza tradizionale: va oltre il biologico."
+      "spiegazione": "La rotazione classica a 4 anni è: 1. cereale (consuma azoto) → 2. leguminosa (fissa azoto) → 3. tubero (struttura il suolo) → 4. coltura da foglia (sfrutta la fertilità ricostituita).",
+      "riferimento_principale": "📖 ESPLORA — La rotazione delle colture"
     },
     {
-      "livello": "A",
-      "domanda": "Come si chiama la perdita di fertilità del suolo per uso eccessivo?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Quale effetto ha il cambiamento climatico sulle popolazioni di api selvatiche in Italia?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Erosione genetica",
-          "feedback": "L'erosione genetica riguarda la biodiversità delle specie."
+          "testo": "Le fa aumentare perché le temperature più alte favoriscono la loro riproduzione",
+          "feedback": "Non è corretto. Le popolazioni di api selvatiche sono in declino, non in crescita. Pesticidi, perdita di habitat e malattie sono le cause principali.",
+          "riferimento": "📖 ESPLORA — Il ciclo biologico della pianta"
         },
         {
           "id": "b",
-          "testo": "Degradazione del suolo o desertificazione",
+          "testo": "Contribuisce al loro declino, insieme ai pesticidi e alla perdita di habitat",
           "corretto": true,
-          "feedback": "Esatto! La degradazione del suolo per uso eccessivo è una delle emergenze ambientali globali."
+          "feedback": "Esatto! Le api selvatiche sono in declino per la combinazione di pesticidi, perdita di habitat e malattie. Un melo senza api impollinatori produce il 90% in meno."
         },
         {
           "id": "c",
-          "testo": "Salinizzazione",
-          "feedback": "La salinizzazione è una delle cause, non il fenomeno generale."
+          "testo": "Non ha alcun impatto sulle api perché sono insetti molto adattabili",
+          "feedback": "Non è corretto. Il cambiamento climatico ha un impatto diretto sul ciclo biologico delle api e sulla fioritura delle piante che le nutrono.",
+          "riferimento": "📖 ESPLORA — Il ciclo biologico della pianta"
         },
         {
           "id": "d",
-          "testo": "Eutrofizzazione",
-          "feedback": "L'eutrofizzazione riguarda le acque."
+          "testo": "Le spinge a migrare verso nord ma senza conseguenze sulla produzione agricola",
+          "feedback": "Non è corretto. La migrazione verso nord delle api è parziale e il declino delle popolazioni causa perdite enormi: un melo senza api produce il 90% in meno.",
+          "riferimento": "📖 ESPLORA — Il ciclo biologico della pianta"
         }
       ],
-      "spiegazione": "La degradazione del suolo per uso eccessivo è una delle emergenze ambientali globali."
+      "spiegazione": "Le popolazioni di api selvatiche sono in declino per pesticidi, perdita di habitat e malattie. Circa 1/3 del cibo che mangiamo dipende dall'impollinazione degli insetti. Un appezzamento di meli senza api produce il 90% in meno.",
+      "riferimento_principale": "📖 ESPLORA — Il ciclo biologico della pianta"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un campo viene seminato con frumento per 5 anni consecutivi senza rotazione. Quali sono i due principali effetti attesi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Aumento della fertilità azotata e riduzione dei parassiti specifici del frumento",
+          "feedback": "Non è corretto. È l'effetto opposto: la monocoltura esaurisce l'azoto e fa accumulare i parassiti specifici del frumento nel terreno.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
+        },
+        {
+          "id": "b",
+          "testo": "Impoverimento del suolo in azoto e accumulo di parassiti specifici del frumento",
+          "corretto": true,
+          "feedback": "Esatto! La monocoltura esaurisce progressivamente l'azoto (il frumento lo consuma preferibilmente) e permette ai parassiti specifici di moltiplicarsi e stabilizzarsi nel terreno."
+        },
+        {
+          "id": "c",
+          "testo": "Miglioramento della struttura del suolo e aumento del contenuto di acqua",
+          "feedback": "Non è corretto. La monocoltura tende a peggiorare la struttura del suolo e riduce la biodiversità microbica, non la migliora.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
+        },
+        {
+          "id": "d",
+          "testo": "Nessun effetto significativo se si usano fertilizzanti chimici in quantità adeguata",
+          "feedback": "Non è corretto. I fertilizzanti chimici possono compensare parzialmente il deficit azotato, ma non risolvono l'accumulo di parassiti specifici del frumento nel suolo.",
+          "riferimento": "📖 ESPLORA — La rotazione delle colture"
+        }
+      ],
+      "spiegazione": "La monocoltura di frumento esaurisce l'azoto del suolo (il frumento lo consuma preferibilmente) e permette ai parassiti e ai funghi specifici di moltiplicarsi e stabilizzarsi, riducendo progressivamente la resa.",
+      "riferimento_principale": "📖 ESPLORA — La rotazione delle colture"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "L'impronta idrica di 1 kg di manzo è circa 15.000 litri, mentre 1 kg di pomodori ne richiede 180. Cosa implica questo dato per una scelta alimentare consapevole?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Che bisogna smettere completamente di mangiare carne per ridurre i consumi idrici",
+          "feedback": "Non è corretto. Il testo non suggerisce di eliminare la carne ma di 'capire le conseguenze delle proprie scelte alimentari'. La consapevolezza non implica necessariamente l'eliminazione.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
+        },
+        {
+          "id": "b",
+          "testo": "Che il dato è rilevante per capire l'impatto idrico delle scelte alimentari in un pianeta con risorse idriche limitate",
+          "corretto": true,
+          "feedback": "Esatto! Conoscere l'impronta idrica non significa smettere di mangiare carne, ma capire le conseguenze delle proprie scelte in un pianeta dove l'acqua dolce è una risorsa limitata."
+        },
+        {
+          "id": "c",
+          "testo": "Che l'allevamento bovino è la principale causa della siccità in Italia",
+          "feedback": "Non è corretto. L'impronta idrica è un dato globale sulla produzione alimentare. La siccità in Italia ha cause multiple (cambiamento climatico, infrastrutture) che non si riducono all'allevamento.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
+        },
+        {
+          "id": "d",
+          "testo": "Che i pomodori sono sempre la scelta più sostenibile rispetto alla carne",
+          "feedback": "Non è corretto. La sostenibilità dipende da molti fattori oltre all'impronta idrica: tipo di allevamento, metodo di coltivazione, trasporto, sprechi. Non c'è una risposta assoluta.",
+          "riferimento": "📖 ESPLORA — L'acqua in agricoltura"
+        }
+      ],
+      "spiegazione": "L'impronta idrica evidenzia che la produzione di 1 kg di manzo richiede circa 83 volte l'acqua necessaria per 1 kg di pomodori. Non impone scelte, ma rende visibile l'impatto idrico di ciò che mettiamo nel piatto.",
+      "riferimento_principale": "📖 ESPLORA — L'acqua in agricoltura"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Un agronomo deve scegliere tra aratura tradizionale e semina diretta senza aratura. Quale argomento favorirebbe la semina diretta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La semina diretta è più veloce e richiede meno carburante per i macchinari",
+          "feedback": "Vero ma parziale. La ragione principale che il testo indica è biologica: la semina diretta preserva la struttura biologica del suolo e riduce l'erosione.",
+          "riferimento": "📖 ESPLORA — Come si coltiva: le tecniche agronomiche"
+        },
+        {
+          "id": "b",
+          "testo": "La semina diretta preserva la struttura biologica del suolo e riduce l'erosione",
+          "corretto": true,
+          "feedback": "Esatto! L'aratura tradizionale distrugge la struttura biologica del suolo e favorisce l'erosione. La semina diretta e il minimum tillage preservano meglio la vita del suolo."
+        },
+        {
+          "id": "c",
+          "testo": "La semina diretta produce rese più alte rispetto all'aratura in ogni tipo di coltura",
+          "feedback": "Non è corretto. La semina diretta non garantisce rese più alte in tutte le situazioni. L'aratura può essere utile in certi contesti per gestire le infestanti o compattamenti del suolo.",
+          "riferimento": "📖 ESPLORA — Come si coltiva: le tecniche agronomiche"
+        },
+        {
+          "id": "d",
+          "testo": "La semina diretta elimina completamente la necessità di gestire le erbe infestanti",
+          "feedback": "Non è corretto. La semina diretta riduce ma non elimina il problema delle infestanti, che vanno comunque gestite con altre tecniche.",
+          "riferimento": "📖 ESPLORA — Come si coltiva: le tecniche agronomiche"
+        }
+      ],
+      "spiegazione": "L'aratura tradizionale distrugge la struttura biologica del suolo e favorisce l'erosione. La semina diretta, adottata sempre più dall'agricoltura moderna, preserva la vita del suolo e riduce l'erosione.",
+      "riferimento_principale": "📖 ESPLORA — Come si coltiva: le tecniche agronomiche"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il cambiamento climatico sta spostando verso nord le zone viticole italiane. Questo è un esempio di quale effetto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un miglioramento generale dell'agricoltura italiana grazie alle temperature più miti",
+          "feedback": "Non è corretto. Lo spostamento delle zone viticole è un segnale di alterazione dei pattern climatici, non necessariamente un miglioramento. Molte colture tradizionali subiscono danni.",
+          "riferimento": "📖 ESPLORA — Il cambiamento climatico e le colture"
+        },
+        {
+          "id": "b",
+          "testo": "L'alterazione dei calendari di semina e raccolta e dei confini geografici delle colture per variazioni climatiche",
+          "corretto": true,
+          "feedback": "Esatto! Il cambiamento climatico modifica la stagionalità e sposta le zone agricole produttive. La vite si coltiva già in zone che 30 anni fa erano troppo fredde per essa."
+        },
+        {
+          "id": "c",
+          "testo": "Una conseguenza positiva del CO₂ atmosferico che favorisce la fotosintesi delle viti",
+          "feedback": "Non è corretto. Sebbene più CO₂ possa aumentare la fotosintesi in alcuni contesti, gli effetti complessivi del cambiamento climatico sull'agricoltura sono prevalentemente negativi.",
+          "riferimento": "📖 ESPLORA — Il cambiamento climatico e le colture"
+        },
+        {
+          "id": "d",
+          "testo": "Un fenomeno temporaneo legato a variazioni climatiche naturali del ciclo decennale",
+          "feedback": "Non è corretto. Il testo indica chiaramente che si tratta di effetti del cambiamento climatico già in atto o attesi, non di variazioni cicliche naturali.",
+          "riferimento": "📖 ESPLORA — Il cambiamento climatico e le colture"
+        }
+      ],
+      "spiegazione": "Lo spostamento verso nord delle zone viticole è uno dei segnali del cambiamento climatico sull'agricoltura italiana. In zone che 30 anni fa erano troppo fredde, oggi si coltiva la vite con successo.",
+      "riferimento_principale": "📖 ESPLORA — Il cambiamento climatico e le colture"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Se tutta l'agricoltura mondiale diventasse biologica, cosa sarebbe necessario per nutrire comunque 8 miliardi di persone?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Raddoppiare la superficie agricola mondiale coltivata",
+          "feedback": "Non è corretto. Il testo non indica il raddoppio della superficie agricola come soluzione. La risposta scientifica è diversa.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
+        },
+        {
+          "id": "b",
+          "testo": "Una riduzione significativa degli sprechi alimentari e dei consumi di carne",
+          "corretto": true,
+          "feedback": "Esatto! La risposta degli scienziati è: sì, si potrebbe nutrire tutti con agricoltura biologica, ma richiederebbe ridurre gli sprechi alimentari (oggi 1/3 del cibo prodotto viene sprecato) e i consumi di carne."
+        },
+        {
+          "id": "c",
+          "testo": "Non sarebbe possibile in nessuno scenario: il biologico non ha la capacità produttiva sufficiente",
+          "feedback": "Non è corretto. Il testo riporta che secondo gli scienziati sarebbe possibile, ma con condizioni specifiche legate a spreco alimentare e consumi di carne.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
+        },
+        {
+          "id": "d",
+          "testo": "L'uso generalizzato di fertilizzanti organici sintetici di nuova generazione",
+          "feedback": "Non è corretto. Il biologico esclude per definizione i fertilizzanti di sintesi. La soluzione indicata è comportamentale (meno sprechi, meno carne) non tecnica.",
+          "riferimento": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
+        }
+      ],
+      "spiegazione": "Il biologico produce il 19-25% in meno, ma richiederebbe meno energia. Per nutrire 8 miliardi con sola agricoltura biologica servirebbero anche: riduzione degli sprechi (oggi 1/3 del cibo viene sprecato) e riduzione dei consumi di carne.",
+      "riferimento_principale": "📖 ESPLORA — Agricoltura convenzionale, biologica e nuovi modelli"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un agronomo di precisione usa dati satellitari e sensori IoT nel suolo. Quale problema fondamentale risolve rispetto all'agricoltura tradizionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Elimina completamente la necessità di conoscere la biologia vegetale e la chimica del suolo",
+          "feedback": "Non è corretto. La tecnologia amplifica le competenze agronomiche ma non le sostituisce. Un agronomo di precisione deve conoscere profondamente la biologia e la chimica.",
+          "riferimento": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "b",
+          "testo": "Permette di ottimizzare ogni decisione (irrigazione, fertilizzazione, raccolta) con dati in tempo reale, riducendo sprechi",
+          "corretto": true,
+          "feedback": "Esatto! L'agronomo di precisione usa dati satellitari e sensori per applicare il fertilizzante solo dove serve, irrigare solo quando serve, raccogliere al momento ottimale: meno sprechi, rese più alte."
+        },
+        {
+          "id": "c",
+          "testo": "Consente di non usare nessun fertilizzante o pesticida grazie al monitoraggio costante",
+          "feedback": "Non è corretto. L'agricoltura di precisione riduce l'uso di fertilizzanti e pesticidi applicandoli dove e quando servono, ma non li elimina completamente.",
+          "riferimento": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "d",
+          "testo": "Rende possibile coltivare qualsiasi pianta in qualsiasi clima e suolo",
+          "feedback": "Non è corretto. L'agricoltura di precisione ottimizza la gestione di un campo, ma non supera i limiti biologici delle piante rispetto al clima e al tipo di suolo.",
+          "riferimento": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
+        }
+      ],
+      "spiegazione": "L'agronomo di precisione usa droni, sensori IoT e analisi satellitari per ottimizzare ogni decisione: irrigare solo dove e quando serve, fertilizzare solo nelle zone carenti, raccogliere al momento ottimale. Risultato: meno acqua, meno fertilizzanti, rese più alte.",
+      "riferimento_principale": "📖 ESPLORA — Chi lavora con questa competenza nel 2030?"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }

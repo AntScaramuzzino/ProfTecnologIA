@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIG-3-03",
-  "titolo": "Raccolta dati da sensori e sistemi IoT",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa si intende per IoT (Internet of Things)?",
+      "domanda": "Qual è la differenza tra un 'dato grezzo' e un 'dato contestualizzato'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Internet accessibile solo tramite smartphone",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il dato grezzo è in formato digitale; il dato contestualizzato è in formato analogico",
+          "corretto": false,
+          "feedback": "Non è corretto. La differenza non riguarda il formato. Un dato grezzo è un numero senza contesto; un dato contestualizzato è lo stesso numero con informazioni che lo rendono comprensibile.",
+          "riferimento": "📖 ESPLORA — Dal mondo fisico al numero: cos'è un dato"
         },
         {
           "id": "b",
-          "testo": "La rete di oggetti fisici dotati di sensori e connettività che raccolgono e scambiano dati",
+          "testo": "Il dato grezzo è un numero isolato (es. 21,3°C); il dato contestualizzato aggiunge informazioni (ore 11:00 di novembre, dopo 2 ore di lezione) che lo rendono utile e confrontabile",
           "corretto": true,
-          "feedback": "Esatto! L'IoT trasforma oggetti fisici in nodi intelligenti: termostati, lampioni, veicoli, sensori industriali — tutti connessi e comunicanti."
+          "feedback": "Esatto! Il testo usa questo esempio: 21,3°C è un dato grezzo. 21,3°C alle ore 11:00 di novembre, con finestra chiusa, dopo 2 ore di lezione è un dato contestualizzato — confrontabile e interpretabile."
         },
         {
           "id": "c",
-          "testo": "Un protocollo di sicurezza per reti WiFi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il dato grezzo viene raccolto da sensori fisici; il dato contestualizzato viene calcolato matematicamente",
+          "corretto": false,
+          "feedback": "Non è corretto. Il dato contestualizzato non richiede calcoli aggiuntivi: è semplicemente lo stesso dato arricchito di informazioni sul momento e le circostanze della raccolta.",
+          "riferimento": "📖 ESPLORA — Dal mondo fisico al numero: cos'è un dato"
         },
         {
           "id": "d",
-          "testo": "Un sistema di intelligenza artificiale distribuito",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non c'è differenza: sono due nomi per lo stesso concetto",
+          "corretto": false,
+          "feedback": "Non è corretto. La distinzione è fondamentale: il testo dice 'un dato senza contesto è rumore; un dato con contesto è conoscenza.'",
+          "riferimento": "📖 ESPLORA — Dal mondo fisico al numero: cos'è un dato"
         }
       ],
-      "spiegazione": "L'IoT trasforma oggetti fisici in nodi intelligenti: termostati, lampioni, veicoli, sensori industriali — tutti connessi e comunicanti."
+      "spiegazione": "Il testo spiega: '21,3°C è un dato grezzo. Non dice ancora nulla da solo.' Ma '21,3°C alle ore 11:00 di un martedì di novembre, dopo 2 ore di lezione con finestra chiusa' è un dato contestualizzato: puoi confrontarlo con altri giorni e capire se è nella norma. 'La differenza tra un dato e un'informazione è sempre il contesto. Un dato senza contesto è rumore.'",
+      "riferimento_principale": "📖 ESPLORA — Dal mondo fisico al numero: cos'è un dato"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è un 'microcontrollore' come Arduino o micro:bit?",
+      "domanda": "Cosa misura un sensore di CO₂ nell'aula e qual è la soglia raccomandata per il benessere cognitivo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un processore per computer desktop",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Misura il livello di ossigeno; la soglia raccomandata è 21%",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sensore di CO₂ misura l'anidride carbonica, non l'ossigeno. Il 21% di ossigeno è il livello normale nell'aria esterna.",
+          "riferimento": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
         },
         {
           "id": "b",
-          "testo": "Un piccolo chip programmabile con CPU, memoria e pin I/O integrati: legge sensori e controlla attuatori",
+          "testo": "Misura la concentrazione di anidride carbonica in ppm; la soglia raccomandata per il benessere cognitivo è 800 ppm",
           "corretto": true,
-          "feedback": "Esatto! I microcontrollori sono il 'cervello' dei dispositivi IoT: economici, compatti, consumano poca energia."
+          "feedback": "Esatto! L'aria esterna è circa 420 ppm. Nelle aule non ventilate può superare 2.000 ppm. La soglia raccomandata è 800 ppm — oltre 1.200 ppm iniziano stanchezza e difficoltà di concentrazione."
         },
         {
           "id": "c",
-          "testo": "Un software per programmare robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Misura la temperatura in gradi Celsius; la soglia raccomandata è 20°C",
+          "corretto": false,
+          "feedback": "Non è corretto. La temperatura è misurata da sensori diversi (DHT22, termistori). Il sensore CO₂ misura specificatamente l'anidride carbonica in parti per milione (ppm).",
+          "riferimento": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
         },
         {
           "id": "d",
-          "testo": "Un modulo WiFi per dispositivi mobili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Misura le polveri sottili (PM2.5) in microgrammi per metro cubo; la soglia è 25 μg/m³",
+          "corretto": false,
+          "feedback": "Non è corretto. Le polveri sottili (PM2.5) sono misurate da altri sensori come l'SDS011 usato da Sensor.Community. Il sensore CO₂ misura l'anidride carbonica.",
+          "riferimento": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
         }
       ],
-      "spiegazione": "I microcontrollori sono il 'cervello' dei dispositivi IoT: economici, compatti, consumano poca energia."
+      "spiegazione": "I sensori di CO₂ misurano la concentrazione di anidride carbonica in ppm (parti per milione). L'aria esterna è circa 420 ppm. Nelle aule scolastiche non ventilate dopo 2 ore di lezione può superare 2.000 ppm. La soglia raccomandata per il benessere cognitivo è 800 ppm. Sopra 1.200 ppm iniziano stanchezza e difficoltà di concentrazione.",
+      "riferimento_principale": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa si intende per 'dato grezzo' vs 'dato elaborato' in un sistema IoT?",
+      "domanda": "Quando si usa un grafico a linee invece di un grafico a barre?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il dato grezzo è più preciso del dato elaborato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il grafico a linee si usa per confrontare valori tra categorie distinte; il grafico a barre per dati nel tempo",
+          "corretto": false,
+          "feedback": "Non è corretto. È il contrario: il grafico a linee è per dati nel tempo su scala continua; il grafico a barre è per confrontare categorie distinte.",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
         },
         {
           "id": "b",
-          "testo": "Il dato grezzo è la misura diretta del sensore (es. tensione); il dato elaborato è il risultato di calcoli che lo rendono significativo (es. temperatura in °C)",
+          "testo": "Il grafico a linee si usa per dati che cambiano nel tempo su scala continua; il grafico a barre per confrontare valori tra categorie distinte",
           "corretto": true,
-          "feedback": "Esatto! Un sensore di temperatura produce una tensione (dato grezzo)."
+          "feedback": "Esatto! L'andamento della temperatura di un'aula nell'arco della giornata → grafico a linee. Il consumo elettrico di cinque classi diverse → grafico a barre."
         },
         {
           "id": "c",
-          "testo": "Il dato elaborato è più grande del dato grezzo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il grafico a linee si usa quando ci sono molti dati; il grafico a barre quando ce ne sono pochi",
+          "corretto": false,
+          "feedback": "Non è corretto. La scelta tra linee e barre non dipende dalla quantità di dati, ma dalla natura dei dati (continui vs categoriali).",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
         },
         {
           "id": "d",
-          "testo": "Il dato grezzo viene trasmesso via cloud, il dato elaborato no",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non c'è differenza: si può usare indifferentemente uno o l'altro",
+          "corretto": false,
+          "feedback": "Non è corretto. La scelta del grafico influenza l'informazione che emerge. Il testo avverte: 'Scegliere il grafico sbagliato non è solo un errore estetico: può nascondere informazioni importanti o crearne di false.'",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
         }
       ],
-      "spiegazione": "Un sensore di temperatura produce una tensione (dato grezzo). La conversione in gradi Celsius è elaborazione. La scala dei dati cambia tutto."
+      "spiegazione": "Il grafico a linee è per dati continui nel tempo: mostra tendenze, picchi e cali graduali. Il grafico a barre è per confrontare categorie discrete. Il testo avverte: usare il grafico a linee per confrontare paesi (categorie non ordinate) è sbagliato — lì servono le barre. La scelta del grafico non è estetica: determina quale informazione emerge.",
+      "riferimento_principale": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cos'è il progetto Sensor.Community e cosa ha dimostrato?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un progetto di aziende private per installare sensori di qualità dell'aria pagati dai cittadini tramite abbonamento",
+          "corretto": false,
+          "feedback": "Non è corretto. Sensor.Community è un progetto civico open source, non commerciale. Chiunque può costruire e aggiungere un sensore alla rete gratuitamente.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        },
+        {
+          "id": "b",
+          "testo": "Una rete civica di 15.000+ sensori di qualità dell'aria costruiti da cittadini, che ha dimostrato differenze enormi tra quartieri della stessa città invisibili alle reti ufficiali",
+          "corretto": true,
+          "feedback": "Esatto! Il testo: 15.000 sensori in 79 paesi. La mappa mostra differenze di PM2.5 fino al 300% tra una zona trafficata e un parco a 500 metri. Alcuni dati sono stati usati per ottenere modifiche ai piani del traffico."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema governativo europeo per monitorare il cambiamento climatico in tempo reale",
+          "corretto": false,
+          "feedback": "Non è corretto. Sensor.Community è un progetto civico dal basso, partito da attivisti di Stoccarda nel 2015. Non è finanziato o gestito da governi.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        },
+        {
+          "id": "d",
+          "testo": "Una piattaforma commerciale che vende dati di qualità dell'aria a aziende di real estate",
+          "corretto": false,
+          "feedback": "Non è corretto. I dati di Sensor.Community sono pubblici e open. Il progetto è civico, non commerciale.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        }
+      ],
+      "spiegazione": "Sensor.Community (ex Luftdaten) nasce nel 2015 da attivisti di Stoccarda. Ogni sensore costa circa 40€ (Raspberry Pi + sensore SDS011). I dati vengono trasmessi ogni 2,5 minuti a un server centrale e sono pubblici. Con 15.000 sensori in 79 paesi, la mappa mostra differenze di PM2.5 fino al 300% tra una zona trafficata e un parco a 500 m. Alcuni dati sono stati usati per modifiche ai piani urbani.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa sono gli 'open data' nel contesto dei dati ambientali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Dati aperti solo ai ricercatori universitari con accesso speciale",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli open data sono liberamente accessibili a tutti, non solo a ricercatori con accesso speciale.",
+          "riferimento": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
+        },
+        {
+          "id": "b",
+          "testo": "Dati pubblicati da enti pubblici liberamente accessibili a chiunque: ARPA pubblica dati di qualità dell'aria, ISPRA pubblica dati ambientali",
+          "corretto": true,
+          "feedback": "Esatto! Gli open data sono pubblicati senza restrizioni. ARPA (qualità dell'aria), ISPRA (dati ambientali), dati meteo: chiunque può scaricarli, usarli, pubblicarli. La faccia opposta dei dati privati delle piattaforme commerciali."
+        },
+        {
+          "id": "c",
+          "testo": "Dati non cifrati che chiunque può intercettare durante la trasmissione",
+          "corretto": false,
+          "feedback": "Non è corretto. 'Open' negli open data si riferisce all'accesso pubblico, non all'assenza di cifratura durante la trasmissione.",
+          "riferimento": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
+        },
+        {
+          "id": "d",
+          "testo": "Dati condivisi tra aziende private tramite accordi commerciali",
+          "corretto": false,
+          "feedback": "Non è corretto. I dati condivisi tra aziende private tramite accordi sono dati commerciali. Gli open data sono pubblici, spesso pubblicati da enti governativi o organizzazioni no-profit.",
+          "riferimento": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
+        }
+      ],
+      "spiegazione": "Gli open data sono dati pubblicati da enti pubblici liberamente accessibili a tutti. In Italia: ARPA (Agenzia Regionale per la Protezione Ambientale) pubblica dati di qualità dell'aria; ISPRA pubblica dati ambientali. Questi open data vengono usati da ricercatori, giornalisti, studenti e comitati di quartiere per analisi e advocacy.",
+      "riferimento_principale": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa raccoglie il contatore smart elettrico, e perché può essere considerato un dato personale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Raccoglie solo il consumo totale mensile; non è un dato personale perché è aggregato",
+          "corretto": false,
+          "feedback": "Non è corretto. I contatori smart italiani (installati dopo il 2018) registrano il consumo ogni 15 minuti — dati molto granulari che rivelano abitudini.",
+          "riferimento": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
+        },
+        {
+          "id": "b",
+          "testo": "Registra il consumo elettrico ogni 15 minuti, permettendo di dedurre quando sei a casa, quando vai a dormire, se usi la lavatrice di notte — rivelando abitudini dettagliate",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'un algoritmo può dedurre da quei dati quando sei in casa, quando sei a letto, se usi la lavatrice la notte, se hai ospiti.' Il consumo elettrico racconta le abitudini con sorprendente precisione."
+        },
+        {
+          "id": "c",
+          "testo": "Raccoglie solo se la corrente è accesa o spenta in un momento preciso; non è sufficiente per dedurre abitudini",
+          "corretto": false,
+          "feedback": "Non è corretto. I contatori smart registrano il consumo (in Watt) ogni 15 minuti, non solo on/off. Questa granularità è sufficiente per dedurre molte abitudini.",
+          "riferimento": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
+        },
+        {
+          "id": "d",
+          "testo": "Raccoglie i dati solo quando l'ENEL li richiede esplicitamente per la fatturazione",
+          "corretto": false,
+          "feedback": "Non è corretto. I contatori smart trasmettono i dati in modo automatico e continuativo, non solo su richiesta dell'azienda.",
+          "riferimento": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
+        }
+      ],
+      "spiegazione": "I contatori smart italiani (installati in quasi tutte le case dopo il 2018) registrano il consumo elettrico ogni 15 minuti. Il testo spiega: 'un algoritmo può dedurre da quei dati quando sei in casa, quando sei a letto, se usi la lavatrice la notte, se hai ospiti. Il consumo elettrico di una casa racconta le abitudini di chi ci abita con sorprendente precisione.' Sono dati personali secondo il GDPR.",
+      "riferimento_principale": "📖 ESPLORA — Cosa raccolgono i sensori che ti circondano"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il protocollo MQTT e perché è usato nell'IoT?",
+      "domanda": "Perché il grafico a torta (pie chart) è spesso uno dei grafici più abusati e quando NON si dovrebbe usarlo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema di aggiornamento firmware per dispositivi IoT",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché è il grafico più difficile da costruire con i fogli di calcolo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema del pie chart non è la difficoltà di costruzione (i fogli di calcolo lo creano facilmente), ma la difficoltà di confrontare visivamente angoli e aree.",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
         },
         {
           "id": "b",
-          "testo": "Un protocollo di messaggistica leggero publish/subscribe ideale per dispositivi IoT con banda limitata e basso consumo energetico",
+          "testo": "Non funziona per confrontare due torte (mostrare un cambiamento nel tempo) perché gli occhi confrontano angoli e aree con difficoltà; in quel caso meglio due barre affiancate",
           "corretto": true,
-          "feedback": "Esatto! MQTT è progettato per dispositivi con risorse limitate: messaggi piccoli, efficiente su reti lente, modello pub/sub scalabile a milioni di dispositivi."
+          "feedback": "Esatto! Il testo dice: 'dove sbagliare: confrontare due torte per mostrare un cambiamento nel tempo. Gli occhi umani confrontano angoli e aree con molta difficoltà. In quel caso usa due barre affiancate.'"
         },
         {
           "id": "c",
-          "testo": "Un formato di file per salvare i dati dei sensori",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il grafico a torta non può mostrare percentuali negative",
+          "corretto": false,
+          "feedback": "Non è corretto. I valori negativi in un grafico a torta sono rari e problematici, ma non è il motivo principale per cui il pie chart viene criticato.",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
         },
         {
           "id": "d",
-          "testo": "Un protocollo di sicurezza per reti IoT",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il grafico a torta occupa troppo spazio nella pagina rispetto alle informazioni che trasmette",
+          "corretto": false,
+          "feedback": "Non è corretto. Lo spazio occupato non è il problema principale. La difficoltà è cognitiva: il cervello umano confronta lunghezze (barre) meglio di angoli e aree (fette di torta).",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
         }
       ],
-      "spiegazione": "MQTT è progettato per dispositivi con risorse limitate: messaggi piccoli, efficiente su reti lente, modello pub/sub scalabile a milioni di dispositivi."
+      "spiegazione": "Il grafico a torta funziona bene solo con poche categorie (max 4-5) il cui totale ha senso come 100%. Il problema principale: confrontare due torte per mostrare un cambiamento nel tempo è molto difficile perché gli occhi umani confrontano angoli e aree con molta più difficoltà rispetto alle lunghezze. In quel caso due barre affiancate sono molto più leggibili.",
+      "riferimento_principale": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cosa si intende per 'edge computing' in un sistema IoT?",
+      "domanda": "Un grafico a barre mostra i consumi elettrici con asse Y che parte da 950 milioni invece di 0. Qual è l'effetto e perché è un problema?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La computazione eseguita esclusivamente nel cloud",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non è un problema: l'asse può iniziare da qualsiasi valore per enfatizzare le differenze",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive questo come un modo per ingannare il lettore: un'azienda che mostra profitti con asse che parte da 950M fa sembrare una crescita dell'1,5% come se fosse un raddoppio.",
+          "riferimento": "📖 ESPLORA — Come i grafici possono ingannare"
         },
         {
           "id": "b",
-          "testo": "L'elaborazione dei dati il più vicino possibile al sensore (sul dispositivo o in prossimità), riducendo latenza e traffico verso il cloud",
+          "testo": "Fa sembrare le differenze tra le barre molto più grandi di quanto siano realmente, ingannando il lettore sulla vera proporzione tra i valori",
           "corretto": true,
-          "feedback": "Esatto! L'edge computing è fondamentale per applicazioni real-time (veicoli autonomi, controllo industriale) dove inviare ogni dato al cloud è troppo lento."
+          "feedback": "Esatto! L'asse troncato è uno dei trucchi più diffusi: 'un'azienda che mostra profitti con asse che parte da 950M invece di 0 fa sembrare un aumento da 955 a 970M (1,5%) come se i profitti fossero raddoppiati.'"
         },
         {
           "id": "c",
-          "testo": "Un tipo di chip ad alte prestazioni per IoT",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rende il grafico più difficile da leggere perché i valori sull'asse non sono interi",
+          "corretto": false,
+          "feedback": "Non è corretto. La difficoltà di lettura dei valori non è il problema principale. Il problema è la distorsione percettiva delle proporzioni tra le barre.",
+          "riferimento": "📖 ESPLORA — Come i grafici possono ingannare"
         },
         {
           "id": "d",
-          "testo": "Il sistema di aggiornamento dei firmware via internet",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Riduce l'accuratezza dei dati perché alcune barre potrebbero non essere rappresentate correttamente",
+          "corretto": false,
+          "feedback": "Non è corretto. I dati numerici sono accurati indipendentemente dal punto di partenza dell'asse. Il problema è l'impressione visiva distorta che crea il confronto tra le barre.",
+          "riferimento": "📖 ESPLORA — Come i grafici possono ingannare"
         }
       ],
-      "spiegazione": "L'edge computing è fondamentale per applicazioni real-time (veicoli autonomi, controllo industriale) dove inviare ogni dato al cloud è troppo lento."
+      "spiegazione": "L'asse Y troncato (che non parte da 0) fa sembrare le differenze visivamente molto maggiori. Il testo usa l'esempio: aumento da 955M a 970M è solo il 1,5%, ma con asse che parte da 950M visivamente sembra che i profitti siano raddoppiati. La regola pratica: 'guarda sempre dove inizia l'asse Y.'",
+      "riferimento_principale": "📖 ESPLORA — Come i grafici possono ingannare"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'calibrazione' di un sensore e perché è fondamentale?",
+      "domanda": "Perché 'correlazione positiva tra CO₂ e temperatura in un'aula' non significa che la temperatura alta produce CO₂?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La programmazione iniziale del microcontrollore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i sensori di CO₂ e di temperatura hanno errori di misura diversi che li rendono incomparabili",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli errori di misura dei sensori sono reali ma non spiegano il fenomeno. La correlazione spuria ha una causa comune che non è la relazione diretta tra le due variabili.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "b",
-          "testo": "Il processo di correzione sistematica delle misurazioni di un sensore confrontandole con un valore di riferimento noto",
+          "testo": "Perché entrambe (CO₂ e temperatura) aumentano quando entrano più studenti nell'aula — la causa comune è la presenza di persone, non una relazione diretta tra le due variabili",
           "corretto": true,
-          "feedback": "Esatto! Senza calibrazione i dati di un sensore possono essere sistematicamente sbagliati."
+          "feedback": "Esatto! Il testo usa questo esempio: 'la causa comune è la presenza di persone, che respirano (CO₂) e emanano calore. Non è la temperatura a produrre CO₂.' Sempre chiedersi: esiste una terza variabile C che causa sia A che B?"
         },
         {
           "id": "c",
-          "testo": "L'aggiornamento del firmware del sensore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il CO₂ e la temperatura sono variabili di tipo diverso (gas vs temperatura) e non si possono correlare",
+          "corretto": false,
+          "feedback": "Non è corretto. Variabili di tipo diverso si possono correlare statisticamente. Il problema è interpretare la correlazione come causalità diretta.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "La procedura di collegamento fisico del sensore al circuito",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la correlazione positiva significa sempre che le due variabili si influenzano negativamente",
+          "corretto": false,
+          "feedback": "Non è corretto. La correlazione positiva significa che le due variabili crescono insieme, non che si influenzano negativamente. Il problema è interpretarla come causalità.",
+          "riferimento": "📖 ESPLORA — Come i grafici possono ingannare"
         }
       ],
-      "spiegazione": "Senza calibrazione i dati di un sensore possono essere sistematicamente sbagliati. Un sensore CO₂ non calibrato misura bene le variazioni ma non il valore assoluto."
+      "spiegazione": "Il testo chiarisce: CO₂ e temperatura aumentano insieme in un'aula non perché una causa l'altra, ma perché entrambe hanno la stessa causa comune — la presenza di studenti, che respirano (CO₂) ed emanano calore. 'Prima di concludere che A causa B, chiediti sempre: c'è una terza variabile C che causa sia A che B?' Questa è la distinzione fondamentale tra correlazione e causalità.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'digital twin' nel contesto IoT industriale?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Come si calcola la deviazione standard e perché è più informativa della media per valutare il comfort termico di un'aula?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una copia di backup dei dati IoT nel cloud",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Si calcola come la somma di tutti i valori divisa per il numero di misurazioni — è identica alla media",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello è il calcolo della media, non della deviazione standard. La deviazione standard misura la dispersione intorno alla media.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "b",
-          "testo": "Una replica digitale in tempo reale di un asset fisico (macchina, edificio, città) alimentata dai dati IoT: usata per monitoraggio, simulazione e ottimizzazione",
+          "testo": "Misura quanto i valori si discostano dalla media: alta deviazione standard = alta variabilità. Un'aula che oscilla tra 15°C e 25°C ha la stessa media di una stabile a 20°C, ma comfort completamente diverso",
           "corretto": true,
-          "feedback": "Esatto! Il digital twin è la sintesi dell'IoT: dati in tempo reale creano un gemello digitale dell'oggetto fisico."
+          "feedback": "Esatto! Il testo usa questo esempio: 15°C e 25°C alternati hanno la stessa media di 20°C costante, ma vivibilità completamente diversa. La deviazione standard rivela la variabilità che la media nasconde."
         },
         {
           "id": "c",
-          "testo": "Un secondo dispositivo IoT identico al primo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Misura la distanza tra il valore massimo e il valore minimo nel dataset",
+          "corretto": false,
+          "feedback": "Non è corretto. Quella è la definizione di 'range' o 'intervallo'. La deviazione standard misura la dispersione media di tutti i valori intorno alla media.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "d",
-          "testo": "Il database che archivia i dati storici dei sensori",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "È il valore più frequente nel dataset — la moda statistica",
+          "corretto": false,
+          "feedback": "Non è corretto. La moda è il valore più frequente. La deviazione standard misura la dispersione dei dati intorno alla media.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         }
       ],
-      "spiegazione": "Il digital twin è la sintesi dell'IoT: dati in tempo reale creano un gemello digitale dell'oggetto fisico. Si simula senza toccare il reale."
+      "spiegazione": "Il testo spiega: 'una stanza che alterna 15°C e 25°C ha la stessa media di una stabile a 20°C, ma un comfort completamente diverso.' La deviazione standard misura quanto i valori si discostano dalla media. Alta deviazione standard = alta variabilità = sbalzi termici. Per valutare il comfort termico, la media non basta: serve anche la deviazione standard.",
+      "riferimento_principale": "🔢 Collegamento STEM — Matematica"
     },
     {
-      "livello": "A",
-      "domanda": "Quali sono le principali sfide di sicurezza nell'IoT?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Cosa dice il Box T8 sul rischio di un sistema AI addestrato su dati IoT storici quando usato per prevedere eventi futuri?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il consumo eccessivo di energia dei dispositivi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I sistemi AI addestrati su dati IoT sono sempre più accurati dei modelli statistici tradizionali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il Box T8 evidenzia un limite specifico: i sistemi AI assumono che il futuro assomigli al passato, il che può fallire in situazioni anomale.",
+          "riferimento": "📖 ESPLORA — Box T8 — Come l'IA usa i dati IoT"
         },
         {
           "id": "b",
-          "testo": "Dispositivi con risorse limitate che spesso non possono implementare crittografia robusta, aggiornamenti di sicurezza difficili, superficie di attacco enorme",
+          "testo": "I sistemi AI assumono che il futuro assomigli al passato. Se i dati di addestramento erano raccolti in condizioni normali, il modello non saprà gestire eventi anomali come ondate di calore fuori dalla norma",
           "corretto": true,
-          "feedback": "Esatto! Una botnet di termostati e telecamere ha bloccato internet nel 2016 (Mirai)."
+          "feedback": "Esatto! Il Box T8 usa questo esempio: se i dati di addestramento vengono da una stazione che funzionava male d'estate, il modello non saprà gestire le ondate di calore — esattamente quando sarebbe più importante prevederle."
         },
         {
           "id": "c",
-          "testo": "La difficoltà di connettere i dispositivi al WiFi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I sistemi AI addestrati su dati IoT rispettano automaticamente tutte le normative GDPR sulla raccolta dei dati",
+          "corretto": false,
+          "feedback": "Non è corretto. I sistemi AI non rispettano automaticamente il GDPR. La conformità normativa richiede scelte progettuali esplicite da parte dei progettisti.",
+          "riferimento": "📖 ESPLORA — Box T8 — Come l'IA usa i dati IoT"
         },
         {
           "id": "d",
-          "testo": "Il costo elevato dei sensori industriali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I sistemi AI addestrati su dati IoT non hanno problemi perché i sensori fisici non possono commettere errori",
+          "corretto": false,
+          "feedback": "Non è corretto. I sensori fisici possono avere errori, essere mal posizionati, o funzionare male in certi periodi. Questo è uno dei problemi che il Box T8 evidenzia.",
+          "riferimento": "📖 ESPLORA — Box T8 — Come l'IA usa i dati IoT"
         }
       ],
-      "spiegazione": "Una botnet di termostati e telecamere ha bloccato internet nel 2016 (Mirai). L'IoT amplia enormemente la superficie di attacco informatico."
+      "spiegazione": "Il Box T8 spiega il limite fondamentale: 'un sistema AI addestrato su dati IoT storici si basa sull'assunzione che il futuro assomigli al passato.' Se i dati di training vengono da una stazione che malfunzionava d'estate, il modello non prevederà correttamente le ondate di calore — esattamente quando sarebbe più utile. Correlazione non è causalità: un AI che confonde le due può prendere decisioni sbagliate in sistemi automatizzati.",
+      "riferimento_principale": "📖 ESPLORA — Box T8 — Come l'IA usa i dati IoT"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'time series analysis' e perché è centrale nell'IoT?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché il percorso di un dato IoT — da un sensore della smartwatch al server dell'azienda — solleva questioni di privacy GDPR?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'analisi della durata di vita dei sensori",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i dati delle smartwatch sono troppo piccoli per essere protetti dal GDPR",
+          "corretto": false,
+          "feedback": "Non è corretto. La dimensione dei dati non è rilevante per la protezione GDPR. I dati di salute delle smartwatch sono 'categorie speciali' che richiedono protezione rafforzata.",
+          "riferimento": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
         },
         {
           "id": "b",
-          "testo": "L'analisi di sequenze di dati con timestamp per identificare trend, stagionalità e anomalie: fondamentale per previsione guasti e ottimizzazione energetica",
+          "testo": "Perché i dati biometrici e di salute (battito cardiaco, sonno) sono 'categorie speciali' GDPR che richiedono consenso esplicito, e in ogni passaggio del percorso possono essere aggregati con altri dati o condivisi con terze parti",
           "corretto": true,
-          "feedback": "Esatto! I dati IoT sono quasi sempre time series."
+          "feedback": "Esatto! Il percorso: sensore → smartwatch → app → server produttore (spesso USA) → possibile condivisione con partner commerciali. Ogni passaggio è un punto dove i dati possono essere aggregati, analizzati o venduti."
         },
         {
           "id": "c",
-          "testo": "Il calcolo del tempo di trasmissione dei dati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la trasmissione Bluetooth delle smartwatch può essere intercettata da terze parti nella stessa stanza",
+          "corretto": false,
+          "feedback": "Non è corretto. L'intercettazione Bluetooth è un rischio tecnico reale ma non è il focus della questione GDPR descritta nel testo.",
+          "riferimento": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
         },
         {
           "id": "d",
-          "testo": "La sincronizzazione degli orologi tra dispositivi IoT",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché le smartwatch non hanno abbastanza sicurezza per trasmettere dati sensibili",
+          "corretto": false,
+          "feedback": "Non è corretto. La sicurezza tecnica della trasmissione non è il punto principale. Il problema è strutturale: chi ha accesso ai dati lungo il percorso e con quale scopo.",
+          "riferimento": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
         }
       ],
-      "spiegazione": "I dati IoT sono quasi sempre time series. Rilevare che un sensore industriale vibra sempre di più prima di rompersi è manutenzione predittiva via time series."
+      "spiegazione": "Il percorso tipico dei dati IoT: sensore → dispositivo locale → app → server del produttore (spesso USA o Irlanda per GDPR) → possibile condivisione con partner. I dati biometrici e di salute (battito cardiaco, qualità del sonno) sono 'categorie speciali' secondo il GDPR (Art. 9): richiedono consenso esplicito e protezione rafforzata. Il testo confronta Apple (dati di salute restano sul dispositivo) con Fitbit/Google (politiche meno restrittive).",
+      "riferimento_principale": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Stai analizzando dati di PM2.5 di una stazione Sensor.Community e noti un picco molto alto alle 7:30 di un martedì. Come procedere correttamente per spiegare questo dato anomalo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Concludere immediatamente che c'è un problema di inquinamento grave nel quartiere e segnalarlo alle autorità",
+          "corretto": false,
+          "feedback": "Non è corretto. Prima di concludere, bisogna verificare se il picco è reale o se ci sono spiegazioni alternative (nebbia mattutina, problema al sensore, evento straordinario locale).",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
+        },
+        {
+          "id": "b",
+          "testo": "Formulare ipotesi verificabili: orario di punta del traffico (7:30), eventuale nebbia (alta umidità correlata?), o malfunzionamento del sensore (picco isolato o pattern ripetuto?). Poi cercare dati contestuali per verificare",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'la tua spiegazione non deve essere certa — deve essere plausibile e motivata. Scrivi potrebbe essere... non è sicuramente.' Verificare: il picco si ripete tutti i martedì mattina o è isolato? L'umidità era alta quel giorno?"
+        },
+        {
+          "id": "c",
+          "testo": "Eliminare il dato anomalo dal dataset perché probabilmente è un errore del sensore",
+          "corretto": false,
+          "feedback": "Non è corretto. Eliminare i dati senza verificarli è scientificamente scorrretto. Prima bisogna capire se il dato è un errore o un fenomeno reale e insolito.",
+          "riferimento": "🔬 SPERIMENTA — BASE: Leggo e interpreto un grafico già fatto"
+        },
+        {
+          "id": "d",
+          "testo": "Calcolare la media di tutti i dati: se il picco fa alzare la media di poco, non è significativo",
+          "corretto": false,
+          "feedback": "Non è corretto. Un picco di PM2.5 molto alto può essere un evento importante anche se fa alzare poco la media su 30 giorni. La media nasconde i picchi — per questo si analizza anche la distribuzione.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
+        }
+      ],
+      "spiegazione": "Il testo del livello BASE della SPERIMENTA dice: 'la tua spiegazione non deve essere certa — deve essere plausibile e motivata. Scrivi potrebbe essere... non è sicuramente.' Per un picco alle 7:30 di martedì: è l'orario di punta del traffico? L'umidità era alta (nebbia amplifica PM)? Il picco si ripete tutti i martedì? Il sensore funzionava correttamente? Ogni ipotesi richiede dati contestuali per essere verificata.",
+      "riferimento_principale": "🔬 SPERIMENTA — BASE: Leggo e interpreto un grafico già fatto"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il proprietario di un sensore Sensor.Community decide di cancellarsi dalla piattaforma. Dovrebbe cancellare anche i dati storici raccolti? Quale principio GDPR si applica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "No: una volta pubblicati, i dati non possono essere cancellati perché sono patrimonio pubblico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il GDPR garantisce il diritto all'oblio anche per dati che sono stati resi pubblici, sebbene la cancellazione completa possa essere complessa per dati già diffusi.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Analisi critica"
+        },
+        {
+          "id": "b",
+          "testo": "Dipende: i dati ambientali aggregati (senza identificatori personali) sono meno problematici, ma il GDPR permette la richiesta di cancellazione. Dipende anche da quali informazioni sulla vita del proprietario si potrebbero dedurre dall'analisi storica",
+          "corretto": true,
+          "feedback": "Esatto! La domanda del livello Avanzato chiede proprio questo: 'quali informazioni sulla vita del proprietario si potrebbero dedurre dall'analisi di lunga durata di questi dati?' Il diritto all'oblio GDPR esiste ma è complesso applicarlo a dati già pubblicamente diffusi."
+        },
+        {
+          "id": "c",
+          "testo": "No: i dati ambientali non sono dati personali secondo il GDPR e quindi non possono essere cancellati",
+          "corretto": false,
+          "feedback": "Non è corretto. I dati ambientali di un sensore installato in una casa possono rivelare abitudini del proprietario e sono quindi potenzialmente dati personali.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Analisi critica"
+        },
+        {
+          "id": "d",
+          "testo": "Sì: tutti i dati devono essere cancellati immediatamente senza eccezioni appena si cancella l'account",
+          "corretto": false,
+          "feedback": "Non è corretto. La cancellazione immediata e completa non è sempre possibile per dati già distribuiti. Il GDPR prevede il diritto alla cancellazione ma con alcune eccezioni.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Analisi critica"
+        }
+      ],
+      "spiegazione": "Il testo del livello Avanzato pone questa domanda: 'Se il proprietario si trasferisce, dovrebbe cancellare i dati storici? Come è diverso dai dati raccolti da Google Maps?' I dati ambientali di un sensore domestico possono rivelare le abitudini del proprietario attraverso l'analisi storica. Il diritto all'oblio GDPR esiste ma è complesso per dati già pubblicamente distribuiti e aggregati con altri.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Analisi critica"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo descrive la citizen science (Sensor.Community) come 'IoT civico' in contrasto con i dati delle piattaforme commerciali. Qual è la differenza fondamentale tra i due modelli?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I dati civici sono sempre più accurati di quelli commerciali perché i cittadini sono più attenti",
+          "corretto": false,
+          "feedback": "Non è corretto. La precisione dipende dalla qualità del sensore e dalla manutenzione, non dallo scopo. I dati civici e commerciali possono avere qualità simile.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        },
+        {
+          "id": "b",
+          "testo": "I dati civici sono pubblici, raccolti da cittadini per scopi pubblici e verificabili; quelli commerciali sono opachi, raccolti da piattaforme private per scopi commerciali e difficilmente accessibili all'utente",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'Questo è l'IoT civico: dati raccolti da cittadini, per cittadini, con scopi pubblici e verificabili. L'opposto dei dati raccolti da piattaforme commerciali — opachi, privati, usati per profitto.'"
+        },
+        {
+          "id": "c",
+          "testo": "I dati civici richiedono meno sensori; quelli commerciali ne richiedono milioni per funzionare",
+          "corretto": false,
+          "feedback": "Non è corretto. La quantità di sensori non definisce la differenza tra IoT civico e commerciale. La differenza è nel modello di governance, accesso e utilizzo dei dati.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        },
+        {
+          "id": "d",
+          "testo": "I dati civici sono regolamentati dal governo; quelli commerciali no",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambi i tipi di dati sono soggetti alle normative (GDPR per i dati personali). La differenza non è nella regolamentazione ma nel modello di raccolta, governance e uso.",
+          "riferimento": "📖 ESPLORA — Privacy e dati IoT: chi raccoglie cosa, e perché"
+        }
+      ],
+      "spiegazione": "Il testo contrappone esplicitamente i due modelli: 'l'IoT civico: dati raccolti da cittadini, per cittadini, con scopi pubblici e verificabili. L'opposto dei dati raccolti da piattaforme commerciali — opachi, privati, usati per profitto.' Sensor.Community è open data, verificabile, usato per advocacy. Google Maps raccoglie dati di mobilità per migliorare i propri servizi e la propria posizione commerciale.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Costruendo una heatmap di temperatura (ore del giorno vs giorni della settimana), cosa si vede che un grafico a linee sull'intera settimana non mostra chiaramente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il valore massimo e minimo assoluti della settimana",
+          "corretto": false,
+          "feedback": "Non è corretto. Massimi e minimi assoluti si leggono facilmente anche da un grafico a linee. La heatmap rivela qualcosa di diverso.",
+          "riferimento": "📖 ESPLORA — Caso studio: visualizza 30 giorni di temperatura nella tua stanza"
+        },
+        {
+          "id": "b",
+          "testo": "I pattern sistematici: quale fascia oraria è sempre la più calda, quale giorno della settimana ha un profilo diverso dagli altri (es. weekend vs giorni scolastici)",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'la heatmap permette di vedere subito i pattern: le mattine sono sempre le più fredde, il pomeriggio le più calde, il weekend ha un profilo diverso dai giorni scolastici.' Questo pattern sistematico si vede male in una linea continua."
+        },
+        {
+          "id": "c",
+          "testo": "La correlazione tra temperatura e umidità",
+          "corretto": false,
+          "feedback": "Non è corretto. La correlazione tra due variabili diverse si vede in uno scatter plot, non in una heatmap di una sola variabile.",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
+        },
+        {
+          "id": "d",
+          "testo": "Il numero esatto di volte che la temperatura ha superato una certa soglia",
+          "corretto": false,
+          "feedback": "Non è corretto. Contare le occorrenze sopra una soglia si fa meglio con un istogramma o filtro diretto sui dati. La heatmap rivela pattern spaziotemporali sistematici.",
+          "riferimento": "📖 ESPLORA — Come si visualizzano i dati: scegliere il grafico giusto"
+        }
+      ],
+      "spiegazione": "Il testo spiega il valore della heatmap: 'permette di vedere subito i pattern: le mattine sono sempre più fredde, il pomeriggio le più calde, il weekend ha un profilo diverso dai giorni scolastici.' In un grafico a linee con 7 giorni di dati questi pattern sistematici si perdono nella continuità. La heatmap (due dimensioni + colore) rivela strutture bidimensionali che una linea non può mostrare.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: visualizza 30 giorni di temperatura nella tua stanza"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Quando si scaricano dati da Sensor.Community per un'analisi, il testo chiede di rispondere anche alla domanda 'cosa NON ti dicono i dati'. Perché questa domanda è importante quanto 'cosa dicono'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché è un esercizio formale richiesto dal docente, non ha valore pratico",
+          "corretto": false,
+          "feedback": "Non è corretto. Conoscere i limiti di un dataset è fondamentale per non trarre conclusioni non supportate dai dati. È competenza scientifica essenziale.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        },
+        {
+          "id": "b",
+          "testo": "Perché ogni dataset ha limiti (frequenza di campionamento, posizione del sensore, periodo temporale) che determinano quali domande si possono e non si possono rispondere con quei dati",
+          "corretto": true,
+          "feedback": "Esatto! Il testo della consegna AGISCI chiede: 'cosa NON ti dicono i dati? (limiti del dataset, domande a cui non puoi rispondere solo con questi numeri)'. Confondere ciò che i dati mostrano con ciò che i dati provano è un errore comune."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i dati di Sensor.Community hanno sempre errori che devono essere identificati prima dell'uso",
+          "corretto": false,
+          "feedback": "Non è corretto. Non tutti i dati di Sensor.Community hanno errori. La domanda sui limiti riguarda i confini interpretativi del dataset, non la presenza obbligatoria di errori.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        },
+        {
+          "id": "d",
+          "testo": "Perché le autorità locali richiedono che le analisi ambientali includano sempre una sezione sui limiti",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste un requisito normativo che imponga questo nelle analisi scolastiche. È una buona pratica scientifica, non un obbligo formale.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        }
+      ],
+      "spiegazione": "La consegna AGISCI chiede: '2. Cosa NON ti dicono i dati? (limiti del dataset, domande a cui non puoi rispondere solo con questi numeri)'. Un dataset di temperatura da un unico sensore non dice perché la temperatura varia (finestra aperta? riscaldamento?), se la percezione è confortevole (dipende dall'umidità), se il sensore ha errori. Conoscere i limiti è necessario per non sovrinterpretare i dati.",
+      "riferimento_principale": "🌍 AGISCI — La consegna"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "La rete di sensori civici come Sensor.Community è usata per advocacy urbana. Quali caratteristiche dei dati raccolti li rendono efficaci per questo scopo rispetto alle semplici testimonianze dei cittadini?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sono dati prodotti da aziende certificate, quindi le autorità li considerano più affidabili",
+          "corretto": false,
+          "feedback": "Non è corretto. Sensor.Community non è un'azienda certificata. La forza dei dati civici non è la certificazione istituzionale.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        },
+        {
+          "id": "b",
+          "testo": "Sono verificabili, geograficamente precisi, raccolti su periodi lunghi — non aneddoti ma evidenze sistematiche che mostrano pattern reali e confrontabili",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'I dati erano verificabili, geograficamente precisi, raccolti su periodi lunghi — non erano aneddoti ma evidenze.' In alcune città i dati hanno portato a modifiche ai piani del traffico."
+        },
+        {
+          "id": "c",
+          "testo": "Sono prodotti da molte persone contemporaneamente, quindi rappresentano l'opinione della maggioranza",
+          "corretto": false,
+          "feedback": "Non è corretto. I dati IoT non rappresentano opinioni — misurano grandezze fisiche. La loro forza è nella misurabilità e nella sistematicità, non nel numero di persone.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        },
+        {
+          "id": "d",
+          "testo": "Hanno il supporto legale del GDPR che obbliga le autorità a tenerli in considerazione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il GDPR non obbliga le autorità a considerare dati civici nell'advocacy. La forza dei dati è scientifica, non legale.",
+          "riferimento": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
+        }
+      ],
+      "spiegazione": "Il testo evidenzia: i dati Sensor.Community 'erano verificabili, geograficamente precisi, raccolti su periodi lunghi — non erano aneddoti ma evidenze.' Un cittadino che dice 'nel mio quartiere l'aria è cattiva' è un'opinione. Un dataset di 18 mesi con 2.500 misurazioni in 5 punti del quartiere che mostra PM2.5 costantemente oltre la soglia OMS è un'evidenza. In alcune città europee questi dati hanno convinto le amministrazioni a modificare i piani del traffico.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: la rete Sensor.Community"
     }
   ]
 }

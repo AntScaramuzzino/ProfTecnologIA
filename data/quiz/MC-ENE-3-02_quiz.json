@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-ENE-3-02",
-  "titolo": "Fonti energetiche non rinnovabili",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Perché carbone, petrolio e gas sono chiamati 'combustibili fossili'?",
+      "domanda": "Quante tonnellate di materia organica fossile sono necessarie per produrre un litro di benzina, secondo il calcolo citato nel testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché si trovano sotto terra come i fossili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 23,5 tonnellate",
+          "corretto": true,
+          "feedback": "Esatto! Secondo i calcoli del geologo Jeffrey Dukes, un singolo litro di benzina richiede circa 23,5 tonnellate di materia organica fossile originale, formatasi in decine di milioni di anni."
         },
         {
           "id": "b",
-          "testo": "Perché si sono formati in milioni di anni dalla decomposizione di organismi fossili",
-          "corretto": true,
-          "feedback": "Esatto! I combustibili fossili sono energia solare accumulata da organismi vissuti milioni di anni fa."
+          "testo": "Circa 5 tonnellate",
+          "feedback": "Non corretto. Il dato corretto è circa 23,5 tonnellate di materia organica fossile per ogni litro di benzina.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
         },
         {
           "id": "c",
-          "testo": "Perché producono fossili quando bruciano",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 1 tonnellata",
+          "feedback": "Non corretto. La quantità è molto maggiore: circa 23,5 tonnellate di materia organica per ogni litro di benzina.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
         },
         {
           "id": "d",
-          "testo": "Perché sono estratti con macchine chiamate fossili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 100 tonnellate",
+          "feedback": "Non corretto. Il dato corretto è circa 23,5 tonnellate, non 100. Questo dato mostra quanto 'tempo geologico' è concentrato in un litro di benzina.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
         }
       ],
-      "spiegazione": "I combustibili fossili sono energia solare accumulata da organismi vissuti milioni di anni fa. Bruciarli in pochi secoli è un prelievo insostenibile."
+      "spiegazione": "Secondo il geologo Jeffrey Dukes (Climatic Change, 2003), un litro di benzina richiede circa 23,5 tonnellate di materia organica fossile originale — equivalente all'intera produzione biologica di una foresta tropicale per quasi un anno. Questa cifra illustra l'enorme concentrazione di tempo geologico in ogni litro di carburante.",
+      "riferimento_principale": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cosa produce la combustione del carbone oltre all'energia?",
+      "domanda": "Il gas naturale è considerato il combustibile fossile con l'impatto ambientale più basso tra i tre (carbone, petrolio, gas). Quale caratteristica chimica spiega questa differenza?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Solo acqua",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "È composto principalmente da metano (CH₄) che brucia in modo più completo producendo meno CO₂ per unità di energia",
+          "corretto": true,
+          "feedback": "Esatto! Il gas naturale è formato principalmente da metano (CH₄, 70-90%). Brucia più completamente del carbone (meno particolato) e produce meno CO₂ per unità di energia: circa 50 kg CO₂/GJ contro 90 kg del carbone."
         },
         {
           "id": "b",
-          "testo": "CO₂, SO₂, NOx, particolato: i principali responsabili di inquinamento atmosferico e cambiamento climatico",
-          "corretto": true,
-          "feedback": "Esatto! Il carbone è il combustibile fossile più inquinante: produce più CO₂ per unità di energia del gas, più SO₂ (piogge acide) e particolato (polveri sottili)."
+          "testo": "Perché non contiene carbonio, quindi non produce CO₂ durante la combustione",
+          "feedback": "Non corretto. Il gas naturale contiene carbonio (è metano CH₄) e produce CO₂ durante la combustione, ma in quantità inferiori al carbone per unità di energia.",
+          "riferimento": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
         },
         {
           "id": "c",
-          "testo": "Solo CO₂",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché si trova in profondità e la sua estrazione non disturba la superficie",
+          "feedback": "Non corretto. L'impatto ambientale del gas si valuta principalmente sulle emissioni di CO₂ e metano durante uso e distribuzione, non solo sull'estrazione.",
+          "riferimento": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
         },
         {
           "id": "d",
-          "testo": "Vapore acqueo innocuo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché brucia senza produrre calore, quindi non aumenta la temperatura dell'atmosfera",
+          "feedback": "Non corretto. Il gas naturale produce calore quando brucia (è la sua funzione!). La differenza è che produce meno CO₂ per unità di energia rispetto al carbone.",
+          "riferimento": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
         }
       ],
-      "spiegazione": "Il carbone è il combustibile fossile più inquinante: produce più CO₂ per unità di energia del gas, più SO₂ (piogge acide) e particolato (polveri sottili)."
+      "spiegazione": "Il gas naturale è principalmente metano (CH₄) al 70-90%. Brucia più completamente del carbone (meno particolato) e produce circa 50 kg CO₂/GJ contro i 90 kg del carbone. Tuttavia, il metano stesso ha potere climalterante 86 volte superiore alla CO₂ a 20 anni: le perdite nelle reti di distribuzione annullano parte del vantaggio.",
+      "riferimento_principale": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa si intende per 'picco del petrolio' (peak oil)?",
+      "domanda": "In una centrale elettrica a gas a ciclo combinato, qual è il rendimento tipico (cioè quanta energia del gas si trasforma in elettricità)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il prezzo massimo del petrolio",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "50-60%: i gas di combustione caldi vengono usati due volte per azionare una prima turbina a gas e poi una turbina a vapore",
+          "corretto": true,
+          "feedback": "Esatto! Il ciclo combinato usa i gas di combustione per una turbina a gas (come un motore aeronautico stazionario) e poi il calore residuo per produrre vapore che aziona una seconda turbina. Rendimento risultante: 50-60%."
         },
         {
           "id": "b",
-          "testo": "Il momento in cui la produzione mondiale di petrolio raggiunge il massimo e poi inizia a declinare irreversibilmente",
-          "corretto": true,
-          "feedback": "Esatto! Dopo il picco la produzione scende: non perché finisce il petrolio, ma perché diventa sempre più costoso e difficile estrarlo."
+          "testo": "100%: tutta l'energia del gas si trasforma in elettricità",
+          "feedback": "Non corretto. Nessuna macchina termica può avere rendimento 100% per il secondo principio della termodinamica. Il ciclo combinato raggiunge 50-60%.",
+          "riferimento": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
         },
         {
           "id": "c",
-          "testo": "Il punto in cui il petrolio finisce completamente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "10-15%: gran parte dell'energia si disperde durante il trasporto in rete",
+          "feedback": "Non corretto. Il 10-15% è approssimativamente il rendimento di alcuni processi meno efficienti. Il ciclo combinato raggiunge 50-60% solo nella centrale.",
+          "riferimento": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
         },
         {
           "id": "d",
-          "testo": "L'altezza massima delle piattaforme petrolifere",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "25-30%: uguale al motore a benzina di un'automobile",
+          "feedback": "Non corretto. Il 25-30% è il rendimento del motore a benzina. Il ciclo combinato a gas è molto più efficiente: 50-60%.",
+          "riferimento": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
         }
       ],
-      "spiegazione": "Dopo il picco la produzione scende: non perché finisce il petrolio, ma perché diventa sempre più costoso e difficile estrarlo. Molti analisti collocano il picco attorno al 2018-2025."
+      "spiegazione": "Il ciclo combinato usa i gas di combustione per due turbine in sequenza: una turbina a gas (simile a un motore aeronautico stazionario) e poi il calore residuo per produrre vapore che aziona una turbina a vapore. Il rendimento risultante è 50-60%, contro il 30-40% di una centrale tradizionale a singolo ciclo.",
+      "riferimento_principale": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Come funziona la fissione nucleare che alimenta una centrale nucleare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un neutrone lento colpisce un atomo di uranio-235 che si divide, libera calore enorme e 2-3 nuovi neutroni che innescano una reazione a catena controllata",
+          "corretto": true,
+          "feedback": "Esatto! Un neutrone colpisce un nucleo di U-235 che si divide in frammenti più leggeri (bario e kripton), liberando enormi quantità di calore e 2-3 nuovi neutroni. Questi innescano altri atomi → reazione a catena controllata."
+        },
+        {
+          "id": "b",
+          "testo": "L'uranio brucia lentamente come il carbone, producendo calore senza emissioni di CO₂",
+          "feedback": "Non corretto. L'uranio non 'brucia': non c'è combustione chimica. Il processo è la fissione nucleare: rottura dei nuclei atomici, completamente diversa dalla combustione.",
+          "riferimento": "📖 ESPLORA — L'energia nucleare: fissione, uranio e il dibattito aperto"
+        },
+        {
+          "id": "c",
+          "testo": "Due atomi di idrogeno si fondono insieme liberando una quantità enorme di energia",
+          "feedback": "Non corretto. Quella descritta è la fusione nucleare (non ancora tecnologicamente matura per uso commerciale). Nelle centrali esistenti si usa la FISSIONE: rottura di atomi pesanti di uranio.",
+          "riferimento": "📖 ESPLORA — L'energia nucleare: fissione, uranio e il dibattito aperto"
+        },
+        {
+          "id": "d",
+          "testo": "L'uranio viene raffreddato a temperature molto basse, producendo energia per superconduttività",
+          "feedback": "Non corretto. Non è la superconduttività a produrre energia nelle centrali nucleari. Il processo è la fissione: un neutrone colpisce un nucleo di U-235 che si divide liberando calore.",
+          "riferimento": "📖 ESPLORA — L'energia nucleare: fissione, uranio e il dibattito aperto"
+        }
+      ],
+      "spiegazione": "Fissione nucleare: 1) un neutrone lento colpisce U-235; 2) il nucleo si divide in frammenti più leggeri + 2-3 neutroni + enorme calore; 3) i nuovi neutroni colpiscono altri atomi → reazione a catena controllata. Il calore scalda acqua → vapore → turbina → generatore elettrico. 1 grammo di U-235 produce l'equivalente di 3 tonnellate di carbone.",
+      "riferimento_principale": "📖 ESPLORA — L'energia nucleare: fissione, uranio e il dibattito aperto"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Come si forma il petrolio nel sottosuolo, a partire da organismi marini?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Resti di plancton e alghe si depositano sui fondali oceanici, vengono sepolti da sedimenti, e dopo 10-100 milioni di anni di pressione e calore si trasformano in idrocarburi",
+          "corretto": true,
+          "feedback": "Esatto! Il petrolio si forma dalla decomposizione di organismi marini microscopici (plancton, alghe, batteri) depositati in ambienti anossici, poi sepolti da sedimenti. In 10-100 milioni di anni, pressione e calore trasformano la materia organica in idrocarburi."
+        },
+        {
+          "id": "b",
+          "testo": "Resti di dinosauri si accumulano in grotte sotterranee e si liquefano nel tempo",
+          "feedback": "Non corretto. Il petrolio non deriva dai dinosauri ma da organismi marini microscopici (plancton, alghe). I dinosauri erano vertebrati terrestri, non la fonte del petrolio.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        },
+        {
+          "id": "c",
+          "testo": "Il magma vulcanico sottrae carbonio dalla roccia e forma idrocarburi a 3000°C",
+          "feedback": "Non corretto. Il petrolio si forma da materia organica biologica a temperature relativamente moderate (60-150°C), non dal magma. Il processo è biologico-geologico, non vulcanico.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        },
+        {
+          "id": "d",
+          "testo": "L'acqua marina reagisce con le rocce basaltiche del fondale producendo idrocarburi in poche decine di anni",
+          "feedback": "Non corretto. Il processo di formazione del petrolio richiede 10-100 milioni di anni e parte da materia organica biologica, non da reazioni acqua-basalto.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        }
+      ],
+      "spiegazione": "Formazione del petrolio: 1) resti organici (plancton, alghe) si depositano in ambienti anossici; 2) vengono sepolti da strati di sedimenti; 3) pressione (centinaia di atmosfere) e temperatura (60-150°C) aumentano; 4) in 10-100 milioni di anni la materia organica si trasforma in idrocarburi. Il petrolio si raccoglie in giacimenti di roccia porosa intrappolati sotto rocce impermeabili.",
+      "riferimento_principale": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Come funziona l'effetto serra naturale che mantiene la Terra abitabile?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Certi gas atmosferici (CO₂, vapor d'acqua, metano) assorbono la radiazione infrarossa emessa dalla Terra e la riemettono verso il basso, 'intrappolando' parte del calore",
+          "corretto": true,
+          "feedback": "Esatto! La Terra assorbe luce solare (onde corte) e riemette calore (onde lunghe/infrarosse). I gas serra assorbono questo infrarosso e lo riemettono in tutte le direzioni, incluso verso la Terra. Senza effetto serra naturale, la temperatura media sarebbe -18°C invece di +15°C."
+        },
+        {
+          "id": "b",
+          "testo": "L'ozono stratosferico riflette la luce solare, riscaldando l'aria per attrito",
+          "feedback": "Non corretto. L'ozono assorbe i raggi UV, non riscalda per riflessione. L'effetto serra è causato da CO₂, vapor d'acqua, metano che assorbono infrarossi emessi dalla superficie terrestre.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        },
+        {
+          "id": "c",
+          "testo": "Il suolo terrestre assorbe direttamente la radiazione solare e la immagazzina come calore permanente",
+          "feedback": "Non corretto. Il suolo assorbe e riemette calore, ma l'effetto serra è il meccanismo per cui i gas atmosferici trattengono il calore riemesso dalla superficie, non il semplice assorbimento dal suolo.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        },
+        {
+          "id": "d",
+          "testo": "Le nuvole funzionano come una coperta che impedisce al calore di disperdersi nello spazio",
+          "feedback": "Non corretto. Le nuvole hanno effetti sia di riscaldamento (gas serra) sia di raffreddamento (riflettono la luce solare). Il principale meccanismo dell'effetto serra è l'assorbimento di infrarossi da parte dei gas serra (CO₂, vapore d'acqua, metano).",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        }
+      ],
+      "spiegazione": "Effetto serra naturale: la Terra riceve luce solare (onde corte) e riemette calore (infrarossi, onde lunghe). Gas come CO₂, vapor d'acqua e metano assorbono questi infrarossi e li riemettono in tutte le direzioni, incluso verso la Terra. Questo 'intrappola' parte del calore. Senza di esso, la temperatura media sarebbe -18°C. È necessario per la vita.",
+      "riferimento_principale": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'potere calorifico' di un combustibile e come si misura?",
+      "domanda": "Il testo afferma che il metano ha un potere climalterante '86 volte superiore alla CO₂ su un orizzonte di 20 anni'. Perché questa informazione è importante per valutare il gas naturale come fonte 'più pulita' dei fossili?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La velocità di combustione per unità di massa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché anche piccole perdite di metano nelle reti di distribuzione annullano gran parte del vantaggio climatico del gas rispetto al carbone",
+          "corretto": true,
+          "feedback": "Esatto! Il gas naturale brucia producendo meno CO₂ del carbone, ma il metano stesso (quando fuoriesce non bruciato durante estrazione e trasporto) è 86 volte più potente della CO₂ come gas serra. Piccole perdite percentuali cancellano l'intero vantaggio climatico."
         },
         {
           "id": "b",
-          "testo": "La quantità di energia termica liberata dalla combustione completa di un'unità di massa: misurata in MJ/kg o kWh/kg",
-          "corretto": true,
-          "feedback": "Esatto! Il potere calorifico confronta i combustibili: idrogeno (142 MJ/kg) > benzina (46 MJ/kg) > carbone (29 MJ/kg) > legna (17 MJ/kg)."
+          "testo": "Perché significa che il gas naturale è più pericoloso del carbone per il cambiamento climatico in tutti i casi",
+          "feedback": "Non corretto. Non è vero 'in tutti i casi'. Il gas è meno climalterante del carbone se le perdite di metano sono contenute. Il problema emerge solo con perdite significative nelle reti.",
+          "riferimento": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
         },
         {
           "id": "c",
-          "testo": "La temperatura massima raggiunta durante la combustione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il metano emesso dai laghi e dalle paludi naturali è più pericoloso di quello dei pozzi di gas",
+          "feedback": "Non corretto. Il confronto tra fonti naturali e antropiche di metano esiste, ma non è il punto del testo. La questione è che le perdite dalle reti di gas annullano il vantaggio climatico del gas sul carbone.",
+          "riferimento": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
         },
         {
           "id": "d",
-          "testo": "L'efficienza del motore che usa il combustibile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché significa che bisogna eliminare subito tutto il gas naturale dalle abitazioni italiane",
+          "feedback": "Non corretto. Il testo non suggerisce questa azione immediata. Il punto è che il vantaggio climatico del gas dipende dal contenimento delle perdite di metano durante l'intera filiera.",
+          "riferimento": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
         }
       ],
-      "spiegazione": "Il potere calorifico confronta i combustibili: idrogeno (142 MJ/kg) > benzina (46 MJ/kg) > carbone (29 MJ/kg) > legna (17 MJ/kg). Più alto = più energia per chilogrammo."
+      "spiegazione": "Il metano ha potere climalterante 86 volte superiore alla CO₂ a 20 anni. Anche se bruciato produce meno CO₂ del carbone, il metano non bruciato che fuoriesce durante l'estrazione e il trasporto è estremamente potente come gas serra. Piccole percentuali di perdita nelle reti possono annullare completamente il vantaggio climatico del gas rispetto al carbone.",
+      "riferimento_principale": "📖 ESPLORA — Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è l'effetto 'carbon lock-in' nell'economia energetica?",
+      "domanda": "Il percorso dell'elettricità dalla centrale a gas alla presa di casa perde complessivamente il 55-65% dell'energia iniziale. Quale passo del percorso contribuisce più alle perdite?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il blocco delle esportazioni di carbonio tra paesi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La centrale termoelettrica stessa, dove il 40-50% dell'energia del gas si disperde come calore (limite termodinamico)",
+          "corretto": true,
+          "feedback": "Esatto! La centrale a ciclo combinato ha rendimento 50-60%, quindi il 40-50% viene perso come calore. Le perdite di trasmissione in rete sono dell'1-3%, molto minori. La maggior parte delle perdite avviene nella conversione termica."
         },
         {
           "id": "b",
-          "testo": "Il meccanismo per cui le infrastrutture fossili esistenti (raffinerie, centrali, reti) diventano barriere economiche e politiche alla transizione verso le rinnovabili",
-          "corretto": true,
-          "feedback": "Esatto! Una centrale a carbone costruita oggi dura 40 anni."
+          "testo": "Il trasporto via gasdotto, dove il gas perde pressione su distanze lunghe",
+          "feedback": "Non corretto. Le perdite nei gasdotti esistono ma sono relativamente piccole rispetto alle perdite nella conversione termica della centrale (40-50% dell'energia).",
+          "riferimento": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
         },
         {
           "id": "c",
-          "testo": "Il sequestro del carbonio nelle foreste",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il trasformatore sotto casa, che converte la tensione da 20.000 V a 220 V",
+          "feedback": "Non corretto. I trasformatori moderni hanno rendimento del 98-99%. Le perdite maggiori sono nella centrale termoelettrica (40-50% dell'energia del gas).",
+          "riferimento": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
         },
         {
           "id": "d",
-          "testo": "Il prezzo fisso del petrolio stabilito dall'OPEC",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le linee ad alta tensione, dove le perdite per effetto Joule sono enormi su lunghe distanze",
+          "feedback": "Non corretto. Le linee ad alta tensione sono progettate proprio per minimizzare le perdite Joule (alta tensione = bassa corrente = meno calore disperso). Le perdite maggiori sono nella centrale termoelettrica.",
+          "riferimento": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
         }
       ],
-      "spiegazione": "Una centrale a carbone costruita oggi dura 40 anni. Chi la costruisce ha interesse a bloccare la transizione per ammortizzare l'investimento. Il carbon lock-in è la principale forza di inerzia."
+      "spiegazione": "Il percorso dell'elettricità perde principalmente nella centrale termoelettrica: il ciclo combinato ha rendimento 50-60%, quindi il 40-50% dell'energia del gas si disperde come calore. Le perdite nelle linee di trasporto (alte tensioni) e nei trasformatori sono piccole (2-5% complessivamente). Il rendimento complessivo dalla centrale alla presa è 35-45%.",
+      "riferimento_principale": "🔍 OSSERVA — Come arriva la luce in casa tua: dalla centrale alla presa"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Perché il gas naturale è considerato un 'combustibile di transizione'?",
+      "domanda": "La concentrazione di CO₂ atmosferica è passata da 280 ppm (1750) a oltre 420 ppm (2023). Qual è la principale causa di questo aumento del 50% in meno di tre secoli?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché si usa solo durante il giorno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La combustione di combustibili fossili (carbone, petrolio, gas) e la deforestazione, che rilasciano CO₂ accumulata in milioni di anni in pochi secoli",
+          "corretto": true,
+          "feedback": "Esatto! Bruciare combustibili fossili significa rilasciare in pochi secoli CO₂ che la biosfera aveva impiegato centinaia di milioni di anni ad accumulare. La deforestazione riduce anche la capacità dei boschi di riassorbire CO₂."
         },
         {
           "id": "b",
-          "testo": "Perché produce circa metà delle emissioni CO₂ del carbone per unità di energia, ed è più flessibile: utile come backup per le rinnovabili intermittenti",
-          "corretto": true,
-          "feedback": "Esatto! Il gas brucia più pulito del carbone."
+          "testo": "L'aumento della popolazione mondiale che respira più CO₂",
+          "feedback": "Non corretto. La respirazione umana è parte del ciclo naturale del carbonio: il CO₂ emesso respirando era stato precedentemente assorbito dalla vegetazione. La causa dell'aumento sono i combustibili fossili.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
         },
         {
           "id": "c",
-          "testo": "Perché si è formati in tempi più recenti del carbone",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I gas vulcanici che aumentano le emissioni di CO₂ in modo naturale",
+          "feedback": "Non corretto. I vulcani emettono CO₂ ma in quantità molto inferiori alle emissioni umane annuali (circa 50 volte meno). Il cambiamento da 280 a 420 ppm è causato principalmente dai combustibili fossili.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
         },
         {
           "id": "d",
-          "testo": "Perché è l'ultima fonte fossile disponibile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La decomposizione accelerata dei rifiuti urbani nelle discariche moderne",
+          "feedback": "Non corretto. Le discariche producono principalmente metano (non CO₂). L'aumento della CO₂ da 280 a 420 ppm è causato dalla combustione di combustibili fossili.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
         }
       ],
-      "spiegazione": "Il gas brucia più pulito del carbone. Ma è ancora fossile e produce metano nelle perdite (potente gas serra). Il suo ruolo di 'ponte' è controverso."
+      "spiegazione": "La CO₂ è passata da 280 ppm (livelli pre-industriali, 1750) a oltre 420 ppm (2023): un aumento del 50% in meno di 300 anni. La causa principale è la combustione di combustibili fossili, che rilascia in pochi secoli carbonio accumulato in centinaia di milioni di anni. La deforestazione riduce anche la capacità di riassorbimento.",
+      "riferimento_principale": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la CCS (Carbon Capture and Storage) e quali sono le sue sfide?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo presenta un 'errore comune': 'il nucleare è sempre pericoloso — meglio il carbone'. Quale dato specifico confuta questa affermazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una tassa sul carbone applicata dalle aziende",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il carbone causa circa 24 morti per TWh (tra incidenti minerari e malattie respiratorie da inquinamento), il nucleare circa 0,07 morti per TWh",
+          "corretto": true,
+          "feedback": "Esatto! Contando sia gli incidenti diretti sia le morti per inquinamento atmosferico cronico da PM2.5 e SO₂, il carbone causa circa 24 morti/TWh contro 0,07 del nucleare. Il nucleare è statisticamente molto più sicuro del carbone per unità di energia prodotta."
         },
         {
           "id": "b",
-          "testo": "La tecnologia che cattura la CO₂ dalle emissioni di centrali e industrie e la inietta in serbatoi geologici sotterranei: promettente ma costosa e con rischi di fuga",
-          "corretto": true,
-          "feedback": "Esatto! La CCS potrebbe permettere di continuare a usare i fossili abbattendo le emissioni."
+          "testo": "Il nucleare non ha mai causato incidenti gravi nella storia",
+          "feedback": "Non corretto. Chernobyl (1986) e Fukushima (2011) sono stati incidenti gravi con conseguenze reali. Il punto del testo è il confronto statistico per unità di energia prodotta, non l'assenza di incidenti.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "c",
-          "testo": "Un sistema di filtraggio dell'aria nelle città",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il carbone non produce emissioni di CO₂ quando viene usato nelle centrali moderne ad alta efficienza",
+          "feedback": "Non corretto. Il carbone produce sempre CO₂ quando brucia: è la combustione del carbonio (C + O₂ → CO₂). Non esistono centrali a carbone 'a zero emissioni' di CO₂ senza cattura e stoccaggio.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "Il riciclo chimico dei combustibili fossili usati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il nucleare è rinnovabile perché l'uranio si rigenera naturalmente in pochi decenni",
+          "feedback": "Non corretto. L'uranio non è rinnovabile: le riserve sono limitate (circa 130 anni ai ritmi attuali). Il punto del testo è la sicurezza relativa per unità di energia prodotta, non la rinnovabilità.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         }
       ],
-      "spiegazione": "La CCS potrebbe permettere di continuare a usare i fossili abbattendo le emissioni. Ma costa 60-120 $/tonnellata, richiede enormi infrastrutture e solleva questioni di sicurezza a lungo termine."
+      "spiegazione": "Confronto statistico per unità di energia: carbone ~24 morti/TWh (incidenti minerari + malattie respiratorie da PM2.5/SO₂), gas ~2,8 morti/TWh, nucleare ~0,07 morti/TWh. Il nucleare, nonostante incidenti come Chernobyl e Fukushima, causa statisticamente molte meno morti del carbone per unità di energia prodotta. Valutare i rischi richiede dati, non solo intuizioni.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'subsidenza' e come è collegata all'estrazione di idrocarburi?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "La reazione di combustione del metano è: CH₄ + 2O₂ → CO₂ + 2H₂O + calore. Perché ogni kg di carbone bruciato produce circa 3,67 kg di CO₂, molto più del suo peso originale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'aumento del livello del mare nelle aree costiere",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché durante la combustione due atomi di ossigeno dall'aria si uniscono a ogni atomo di carbonio del carbone, aumentando la massa totale",
+          "corretto": true,
+          "feedback": "Esatto! La combustione del carbone è: C + O₂ → CO₂. Il carbonio (massa atomica 12) si combina con due ossigeni dall'aria (massa atomica 16 × 2 = 32), producendo CO₂ (massa 44). Rapporto: 44/12 ≈ 3,67. La massa degli ossigeni atmosferici si aggiunge alla massa del carbonio."
         },
         {
           "id": "b",
-          "testo": "L'abbassamento del suolo conseguente alla rimozione di fluidi (petrolio, gas, acqua) dagli strati geologici: causa danni strutturali e aumenta il rischio di alluvioni",
-          "corretto": true,
-          "feedback": "Esatto! Venezia affonda in parte per la subsidenza causata dall'estrazione di acqua e gas."
+          "testo": "Perché il carbone contiene idrogeno che durante la combustione produce vapore acqueo più pesante della CO₂",
+          "feedback": "Non corretto. Sebbene il carbone contenga idrogeno, il calcolo del 3,67 riguarda solo il carbonio (C + O₂ → CO₂). Il rapporto di massa è 44/12 ≈ 3,67 per il solo carbonio.",
+          "riferimento": "📖 ESPLORA — Box Chimica — Combustione"
         },
         {
           "id": "c",
-          "testo": "L'erosione delle coste per effetto delle onde",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il calore prodotto dalla combustione aumenta la massa della CO₂ secondo E=mc²",
+          "feedback": "Non corretto. L'effetto massa-energia E=mc² è completamente trascurabile in reazioni chimiche ordinarie. La massa maggiore della CO₂ rispetto al carbonio deriva dall'aggiunta degli atomi di ossigeno.",
+          "riferimento": "📖 ESPLORA — Box Chimica — Combustione"
         },
         {
           "id": "d",
-          "testo": "Il cedimento delle piattaforme petrolifere offshore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché durante la combustione il carbone assorbe azoto dall'aria che si aggiunge alla massa finale",
+          "feedback": "Non corretto. Il carbone non reagisce con l'azoto durante la normale combustione. La massa maggiore della CO₂ deriva dall'ossigeno (O₂) che si combina con il carbonio (C) del carbone.",
+          "riferimento": "📖 ESPLORA — Box Chimica — Combustione"
         }
       ],
-      "spiegazione": "Venezia affonda in parte per la subsidenza causata dall'estrazione di acqua e gas. Groningen (Olanda) ha subito terremoti da subsidenza da estrazione di gas."
+      "spiegazione": "Combustione del carbonio: C + O₂ → CO₂. Massa atomica del C = 12, del O = 16 × 2 = 32. Massa della CO₂ = 12 + 32 = 44. Rapporto CO₂/C = 44/12 ≈ 3,67. Il carbonio del carbone 'cattura' due atomi di ossigeno dall'aria: la CO₂ prodotta pesa 3,67 volte più del carbonio bruciato. L'ossigeno atmosferico si aggiunge alla massa.",
+      "riferimento_principale": "📖 ESPLORA — Box Chimica — Combustione"
     },
     {
-      "livello": "A",
-      "domanda": "Come funziona il mercato ETS (Emission Trading System) europeo nel settore energetico?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il volo Roma-New York emette circa 550-600 kg di CO₂ per passeggero, mentre il treno Roma-Milano emette 6-8 kg. Il testo dice che il volo produce '70-100 volte più emissioni'. Come si calcola questo fattore?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Prevede una tassa fissa per ogni tonnellata di CO₂ emessa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il volo percorre circa 7.200 km emettendo ~550 kg, il treno percorre ~600 km emettendo ~7 kg: il confronto è in kg CO₂ totali, non per km (distanze diverse)",
+          "corretto": true,
+          "feedback": "Esatto! Il confronto non è per km ma in emissioni totali del singolo viaggio. Il volo (7.200 km) emette ~550 kg, il treno Roma-Milano (600 km) emette ~7 kg: rapporto = 550/7 ≈ 79 volte. Le distanze sono molto diverse, ma anche normalizzando per km il volo rimane molto più emissivo."
         },
         {
           "id": "b",
-          "testo": "Assegna o vende alle imprese permessi di emissione di CO₂: chi emette meno può vendere i permessi in eccesso, chi emette di più deve comprarli. Il prezzo di mercato incentiva la riduzione",
-          "corretto": true,
-          "feedback": "Esatto! L'ETS crea un prezzo per la CO₂."
+          "testo": "Il 550/7 = 79 è il fattore per km percorso: ogni km in aereo emette 79 volte più del treno",
+          "feedback": "Non corretto. Il 550/7 ≈ 79 è il rapporto dei totali del viaggio, non per km. L'aereo percorre 7.200 km e il treno 600 km: le distanze sono diverse.",
+          "riferimento": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
         },
         {
           "id": "c",
-          "testo": "Vieta le emissioni oltre una soglia fissa per ogni impianto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il fattore 70-100 include solo la CO₂ diretta, senza i contrails di vapore ad alta quota",
+          "feedback": "Non corretto. Il dato di 550-600 kg già include l'effetto dei contrails (indicati nel testo come 'CO₂ equivalente'). Il fattore 70-100 confronta il totale del viaggio aereo con il totale del viaggio in treno.",
+          "riferimento": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
         },
         {
           "id": "d",
-          "testo": "Finanzia le rinnovabili con una quota del prezzo dell'energia fossile",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il fattore è calcolato dividendo il numero di passeggeri del volo per quelli del treno",
+          "feedback": "Non corretto. Il fattore confronta le emissioni per passeggero, non il numero totale di passeggeri sui due mezzi.",
+          "riferimento": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
         }
       ],
-      "spiegazione": "L'ETS crea un prezzo per la CO₂. Con il prezzo attuale (~60-90€/ton) molte centrali a carbone non sono più economicamente competitive rispetto alle rinnovabili."
+      "spiegazione": "Il volo Roma-New York (7.200 km) emette ~550 kg CO₂/passeggero. Il treno Roma-Milano (600 km) emette ~7 kg CO₂/passeggero. Rapporto: 550/7 ≈ 79 volte. Le distanze sono diverse (12× più lungo il volo), ma anche per km l'aereo emette molto di più perché la combustione a quota elevata ha effetti climalteranti amplificati (contrails).",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo descrive i 'feedback loops' del riscaldamento globale (es. scioglimento del ghiaccio artico). Perché questi meccanismi rendono le proiezioni climatiche più difficili e più preoccupanti rispetto a un semplice modello lineare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché ogni aumento di temperatura attiva meccanismi che producono ulteriore riscaldamento, rendendo il sistema non-lineare e potenzialmente autocatalizzante",
+          "corretto": true,
+          "feedback": "Esatto! I feedback positivi (amplificanti) trasformano il riscaldamento da lineare ad autocatalizzante: ghiaccio sciolto → superficie più scura → più calore assorbito → più scioglimento. In un sistema con feedback positivi, piccoli cambiamenti iniziali possono produrre effetti molto più grandi delle semplici proiezioni lineari."
+        },
+        {
+          "id": "b",
+          "testo": "Perché i feedback loops riducono le emissioni di CO₂ nel tempo, rendendo il problema meno grave di quanto previsto",
+          "feedback": "Non corretto. I feedback loops descritti nel testo sono amplificatori (positivi): aumentano il riscaldamento invece di ridurlo. Non riducono le emissioni.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        },
+        {
+          "id": "c",
+          "testo": "Perché i feedback loops sono fenomeni locali che non influenzano il clima globale",
+          "feedback": "Non corretto. I feedback loops descritti (scioglimento del permafrost, albedo del ghiaccio artico) hanno effetti globali sul sistema climatico mondiale.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i feedback loops si annullano a vicenda producendo un effetto netto pari a zero",
+          "feedback": "Non corretto. I feedback loops descritti nel testo si rinforzano a vicenda (tutti amplificano il riscaldamento). Non si annullano.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        }
+      ],
+      "spiegazione": "I feedback positivi (amplificanti) rendono il sistema climatico non-lineare: ghiaccio artico fuso → superficie più scura → più calore assorbito → più scioglimento. Permafrost sciolto → metano rilasciato → più effetto serra → più riscaldamento. Questi meccanismi significano che gli effetti del riscaldamento si autoamplificano nel tempo, rendendo le proiezioni a lungo termine più incerte e potenzialmente più gravi di quelle lineari.",
+      "riferimento_principale": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo riporta che al 2023 il mondo è a +1,2°C rispetto ai livelli preindustriali e il target di Parigi è +1,5°C. Con le politiche attualmente in atto si prevede +2,5-3°C entro fine secolo. Quale implicazione ha questo 'gap' per la valutazione delle politiche climatiche?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Che le promesse degli accordi climatici sono insufficienti rispetto a ciò che i paesi stanno effettivamente implementando, creando un divario tra obiettivi dichiarati e traiettoria reale",
+          "corretto": true,
+          "feedback": "Esatto! Il gap tra target (1,5°C) e traiettoria con le politiche attuali (2,5-3°C) indica che le misure implementate sono insufficienti rispetto agli obiettivi dichiarati. Questa discrepanza è un indicatore critico per valutare l'efficacia reale delle politiche climatiche."
+        },
+        {
+          "id": "b",
+          "testo": "Che il cambiamento climatico è un fenomeno naturale che le politiche umane non possono influenzare",
+          "feedback": "Non corretto. Il testo non afferma che le politiche siano inutili. Il gap indica che le politiche attuali sono insufficienti, non che le politiche siano irrilevanti.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        },
+        {
+          "id": "c",
+          "testo": "Che il target di 1,5°C è già stato superato e non è più rilevante come riferimento politico",
+          "feedback": "Non corretto. Al 2023 si è a +1,2°C, non ancora a 1,5°C. Il target è ancora rilevante come obiettivo, anche se la traiettoria attuale non sembra raggiungerlo.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        },
+        {
+          "id": "d",
+          "testo": "Che i modelli climatici sovrastimano sistematicamente il riscaldamento futuro",
+          "feedback": "Non corretto. Il testo non dice che i modelli sovrastimano. Le proiezioni di +2,5-3°C sono basate sui modelli più aggiornati applicati alle politiche attualmente in vigore.",
+          "riferimento": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+        }
+      ],
+      "spiegazione": "Il gap tra target Parigi (+1,5°C) e traiettoria con politiche attuali (+2,5-3°C) rivela un 'implementation gap': i paesi hanno dichiarato obiettivi ambiziosigli accordi ma le misure concretamente implementate non sono allineate con quegli obiettivi. Questa discrepanza è lo strumento principale per valutare l'efficacia reale delle politiche climatiche globali.",
+      "riferimento_principale": "📖 ESPLORA — L'effetto serra e il cambiamento climatico"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo dice che la produzione di petrolio dalle riserve esistenti recupera al massimo il 50% del petrolio originale, 'il resto rimane intrappolato nella roccia'. Quale implicazione ha questo per le stime delle riserve mondiali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le riserve 'proven' (provate) contengono solo il petrolio economicamente estraibile con tecnologie attuali, non tutto il petrolio fisicamente presente nel sottosuolo — che è molto di più",
+          "corretto": true,
+          "feedback": "Esatto! Le '1.700 miliardi di barili' di riserve provate includono solo il petrolio estraibile con tecnologie attuali a costi ragionevoli. Il petrolio fisicamente presente è molto maggiore, ma il 50% rimane intrappolato nella roccia anche con le migliori tecnologie. Le stime di '50 anni' dipendono dalle tecnologie e dai prezzi."
+        },
+        {
+          "id": "b",
+          "testo": "Significa che le riserve mondiali di petrolio sono già esaurite al 50% e tra 25 anni finiranno definitivamente",
+          "feedback": "Non corretto. La stima di '50 anni' si riferisce alle riserve provate ai ritmi di consumo attuali. Non significa che il 50% è già esaurito: significa che la tecnologia recupera solo il 50% del petrolio presente in ogni giacimento.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        },
+        {
+          "id": "c",
+          "testo": "Significa che tutta la stima di '50 anni di riserve' deve essere divisa per due, quindi il petrolio finirà in 25 anni",
+          "feedback": "Non corretto. La stima di 50 anni si basa sulle riserve già calcolate tenendo conto del tasso di recupero. Non occorre dividerla ulteriormente.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        },
+        {
+          "id": "d",
+          "testo": "Significa che la perforazione tradizionale è inutile e si dovrebbero usare solo tecniche di fratturazione idraulica",
+          "feedback": "Non corretto. Il testo non suggerisce la fratturazione idraulica come soluzione universale. Il punto è che le riserve 'provate' sono quelle economicamente estraibili con tecnologie attuali.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        }
+      ],
+      "spiegazione": "Le '1.700 miliardi di barili' di riserve provate rappresentano solo il petrolio estraibile economicamente con tecnologie attuali. La stima di '50 anni ai ritmi attuali' dipende da: tasso di consumo, tecnologie di estrazione (che possono migliorare), prezzi del petrolio (che determinano cosa è economicamente conveniente estrarre), e nuove scoperte di giacimenti.",
+      "riferimento_principale": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "La distillazione frazionata del petrolio separa diversi prodotti (benzina, cherosene, gasolio, ecc.) a temperature diverse. Il testo include anche 'materie prime petrolchimiche' per plastiche e fibre sintetiche. Quale implicazione ha questo per la transizione energetica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Anche se si sostituisce il petrolio come carburante con fonti rinnovabili, rimarrà una domanda di petrolio per la produzione di materiali (plastiche, fibre, farmaci) non facilmente sostituibili",
+          "corretto": true,
+          "feedback": "Esatto! Il petrolio non è solo un carburante: è la materia prima dell'industria chimica (plastiche, fibre tessili sintetiche, farmaci, cosmetici). La transizione energetica può sostituire il petrolio come combustibile, ma la domanda di petrolio come materia prima chimica è più difficile da eliminare."
+        },
+        {
+          "id": "b",
+          "testo": "La transizione energetica è impossibile perché le energie rinnovabili non producono petrolio per le plastiche",
+          "feedback": "Non corretto. Le energie rinnovabili non devono produrre petrolio: producono elettricità. La questione delle plastiche è separata dalla transizione energetica.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        },
+        {
+          "id": "c",
+          "testo": "La benzina è l'unico prodotto utile della raffinazione del petrolio; tutto il resto è uno spreco da eliminare",
+          "feedback": "Non corretto. Il testo elenca molti prodotti della raffinazione (kerosene, gasolio, lubrificanti, bitume, petrolchimici) tutti con usi importanti. La benzina è solo una delle frazioni.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        },
+        {
+          "id": "d",
+          "testo": "Se si smette di usare petrolio come carburante, il prezzo di tutte le plastiche aumenterà automaticamente del 1000%",
+          "feedback": "Non corretto. Il testo non fa questa affermazione. L'implicazione è che la domanda di petrolio come materia prima chimica persisterà oltre la transizione energetica, ma non necessariamente con aumenti di prezzo così drastici.",
+          "riferimento": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+        }
+      ],
+      "spiegazione": "Il petrolio è sia carburante sia materia prima dell'industria chimica: le plastiche, le fibre tessili sintetiche (poliestere, nylon), i farmaci, i cosmetici, i detersivi derivano tutti dal petrolio. La transizione energetica può sostituire il petrolio come combustibile (con rinnovabili), ma la domanda di petrolio come materia prima chimica è molto più difficile da eliminare e richiede soluzioni separate (chimica verde, bioplastiche).",
+      "riferimento_principale": "📖 ESPLORA — Il petrolio: da dove viene, come arriva a casa tua"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo presenta l'impronta carbonica media italiana di 7-8 tonnellate CO₂/anno e precisa: 'questo dato è utile per contestualizzare le scelte, non per produrre senso di colpa individuale'. Perché questa distinzione è metodologicamente importante?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché la crisi climatica è causata da sistemi economici e infrastrutture collettive (trasporti, energia, industria) che non si risolvono solo con comportamenti individuali, anche se le scelte individuali contribuiscono",
+          "corretto": true,
+          "feedback": "Esatto! La distinzione è importante: i dati sull'impronta carbonica permettono di capire dove si concentrano le emissioni (trasporti, riscaldamento, elettricità) per prendere decisioni informate. Ma la crisi climatica richiede cambiamenti sistemici (infrastrutture, politiche energetiche) oltre alle scelte individuali."
+        },
+        {
+          "id": "b",
+          "testo": "Perché il senso di colpa aumenta la probabilità di prendere decisioni irrazionali e peggiorare le emissioni",
+          "feedback": "Non corretto. Il testo non argomenta che il senso di colpa causi decisioni irrazionali. Il punto è che la crisi richiede risposte sia individuali sia sistemiche, e individualizzare eccessivamente il problema distoglie l'attenzione dalle responsabilità collettive.",
+          "riferimento": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
+        },
+        {
+          "id": "c",
+          "testo": "Perché i dati sull'impronta carbonica sono statisticamente inaffidabili e non dovrebbero guidare le scelte",
+          "feedback": "Non corretto. Il testo usa i dati come strumento utile per 'contestualizzare le scelte'. Non mette in dubbio la loro affidabilità statistica.",
+          "riferimento": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il cambiamento climatico è un problema dei paesi ricchi che i paesi poveri non hanno causato e non devono risolvere",
+          "feedback": "Non corretto. Sebbene esista il tema della giustizia climatica (chi ha emesso di più storicamente), il testo non usa questa distinzione per separare responsabilità tra paesi ricchi e poveri.",
+          "riferimento": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
+        }
+      ],
+      "spiegazione": "La distinzione tra contestualizzazione e senso di colpa è metodologicamente importante perché: 1) i dati aiutano a identificare dove le riduzioni sono più efficaci (trasporti, riscaldamento); 2) la crisi climatica ha cause sistemiche (infrastrutture energetiche, sistemi di trasporto, industria) che non si risolvono solo con scelte individuali; 3) individualizzare eccessivamente il problema può distogliere l'attenzione dalle responsabilità collettive e istituzionali.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: calcola l'impronta carbonica di un volo"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo riporta che la CO₂ è 'il principale responsabile dell'aumento dell'effetto serra' e che 'non è un inquinante nel senso tradizionale — non odora, non si vede'. Perché questa caratteristica rende il cambiamento climatico particolarmente difficile da percepire e gestire politicamente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché la causa (CO₂ invisibile e inodore) è disconnessa dagli effetti (temperatura, eventi estremi) nel tempo e nello spazio, rendendo difficile il collegamento causale immediato per chi prende decisioni",
+          "corretto": true,
+          "feedback": "Esatto! L'inquinamento tradizionale (smog, odori) produce impatti visibili e immediati che motivano azioni rapide. La CO₂ è invisibile, inodore, e i suoi effetti emergono in decenni e sono globali, non locali. Questa disconnessione spazio-temporale rende difficile la risposta politica immediata."
+        },
+        {
+          "id": "b",
+          "testo": "Perché la CO₂ invisibile è più facile da eliminare con filtri chimici rispetto all'inquinamento tradizionale",
+          "feedback": "Non corretto. La CO₂ è molto più difficile da filtrare e stoccare rispetto a molti inquinanti tradizionali. Il problema non è tecnologico ma politico e percettivo.",
+          "riferimento": "📖 ESPLORA — Box Chimica — Combustione"
+        },
+        {
+          "id": "c",
+          "testo": "Perché i governi non sanno che la CO₂ esiste come problema, in quanto non la vedono né la sentono",
+          "feedback": "Non corretto. I governi conoscono il problema della CO₂ da decenni. La difficoltà non è di conoscenza ma di risposta politica a un fenomeno con causa invisibile ed effetti lontani nel tempo e nello spazio.",
+          "riferimento": "📖 ESPLORA — Box Chimica — Combustione"
+        },
+        {
+          "id": "d",
+          "testo": "Perché la CO₂ invisibile può essere aumentata segretamente dai paesi senza che nessuno se ne accorga",
+          "feedback": "Non corretto. Le emissioni di CO₂ vengono monitorate satellitarmente e con reti di misura. Il problema non è la segretezza ma la difficoltà cognitiva di percepire un rischio invisibile con effetti differiti.",
+          "riferimento": "📖 ESPLORA — Box Chimica — Combustione"
+        }
+      ],
+      "spiegazione": "L'invisibilità e inodorità della CO₂ creano una disconnessione causale: non c'è un segnale sensoriale diretto che colleghi 'sto bruciando benzina' a 'il pianeta si scalda'. Gli effetti del cambiamento climatico emergono in decenni (non secondi) e su scala globale (non locale). Questa separazione spazio-temporale tra causa ed effetto è una delle principali ragioni della lentezza della risposta politica al cambiamento climatico.",
+      "riferimento_principale": "📖 ESPLORA — Box Chimica — Combustione"
     }
   ]
 }

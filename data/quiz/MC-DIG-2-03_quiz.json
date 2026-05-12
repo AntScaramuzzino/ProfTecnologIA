@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIG-2-03",
-  "titolo": "Il sistema operativo e la gestione delle risorse",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è un sistema operativo?",
+      "domanda": "Qual è la regola principale per organizzare i file in cartelle, secondo il principio 'un posto per ogni cosa'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il programma principale per navigare in internet",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Mettere tutti i file sul desktop perché è il posto più accessibile",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo avverte che il 'temporaneo' sul desktop diventa permanente in 24 ore e crea il problema di Marco con i file 'relazione DEFINITIVA vera2'.",
+          "riferimento": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
         },
         {
           "id": "b",
-          "testo": "Il software che gestisce le risorse hardware del computer e permette alle applicazioni di funzionare",
+          "testo": "Ogni file deve avere un solo posto in cui trovarlo, prevedibile e sempre lo stesso",
           "corretto": true,
-          "feedback": "Esatto! Il SO è l'intermediario tra hardware e software: gestisce CPU, memoria, storage e periferiche per tutte le applicazioni."
+          "feedback": "Esatto! Il principio è semplice: se metti le cose sempre nello stesso posto, dopo un po' la mano va lì automaticamente. Non ci deve essere ambiguità su dove cercare un file."
         },
         {
           "id": "c",
-          "testo": "Il sistema di protezione da virus del computer",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Creare una cartella separata per ogni singolo file con il nome del file stesso",
+          "corretto": false,
+          "feedback": "Non è corretto. Creare una cartella per ogni file crea una struttura inutilmente profonda. Il testo suggerisce di non nidificare oltre il terzo livello.",
+          "riferimento": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
         },
         {
           "id": "d",
-          "testo": "Il programma che organizza i file in cartelle",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Usare il motore di ricerca del sistema operativo ogni volta che non si trova un file",
+          "corretto": false,
+          "feedback": "Non è corretto. Usare la ricerca ogni volta è il sintomo del problema, non la soluzione. Il testo descrive proprio la situazione di Giulia che usa la ricerca e 'prega che funzioni'.",
+          "riferimento": "🔍 OSSERVA — Il caso: Giulia e il professionista"
         }
       ],
-      "spiegazione": "Il SO è l'intermediario tra hardware e software: gestisce CPU, memoria, storage e periferiche per tutte le applicazioni."
+      "spiegazione": "Il principio fondamentale è 'un posto per ogni cosa': ogni file ha un solo posto prevedibile in cui cercarlo. Se metti le cose sempre nello stesso posto, non devi pensarci. Il testo paragona l'organizzazione dei file a una biblioteca: con i libri ordinati trovi quello che cerchi in 30 secondi; ammucchiati a caso, non lo trovi mai.",
+      "riferimento_principale": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cosa fa il 'processo' in un sistema operativo?",
+      "domanda": "Come si chiama la convenzione di naming professionale per i file e qual è il formato raccomandato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "È un file salvato sul disco rigido",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Si usano nomi brevi come 'doc1', 'doc2', 'doc3' per velocizzare la ricerca",
+          "corretto": false,
+          "feedback": "Non è corretto. Nomi come 'doc1' non contengono alcuna informazione utile sul contenuto o sulla data del file.",
+          "riferimento": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
         },
         {
           "id": "b",
-          "testo": "È un programma in esecuzione con le risorse (memoria, CPU) allocate dal sistema operativo",
+          "testo": "[ANNO-MESE-GIORNO]_[materia]_[argomento]_[versione opzionale] — es. 2026-03-15_tecnologia_relazione-energia_v01.docx",
           "corretto": true,
-          "feedback": "Esatto! Ogni app aperta è un processo."
+          "feedback": "Esatto! Questo formato garantisce ordinamento cronologico automatico, identifica materia e argomento, e permette la gestione delle versioni senza la 'final syndrome'."
         },
         {
           "id": "c",
-          "testo": "È una cartella di sistema protetta",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il nome non importa purché il file sia nella cartella giusta",
+          "corretto": false,
+          "feedback": "Non è corretto. Il nome del file è la prima informazione che hai su quel file. Un nome senza informazioni (come 'documento') è inutile anche nella cartella giusta.",
+          "riferimento": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
         },
         {
           "id": "d",
-          "testo": "È il driver di una periferica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "[materia]_[nome_studente]_[numero] — es. tecnologia_mario_001.docx",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo formato non include la data, che è il campo più importante per l'ordinamento cronologico automatico. Senza data i file si accumulano senza ordine.",
+          "riferimento": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
         }
       ],
-      "spiegazione": "Ogni app aperta è un processo. Il task manager mostra tutti i processi in esecuzione con il loro utilizzo di CPU e RAM."
+      "spiegazione": "La convenzione professionale è [ANNO-MESE-GIORNO]_[materia]_[argomento]_[versione]. La data va per prima nel formato ANNO-MESE-GIORNO perché i file si ordinano automaticamente in ordine cronologico. Il trattino basso separa i blocchi di informazione; il trattino normale lega le parole dello stesso blocco.",
+      "riferimento_principale": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è la 'memoria virtuale'?",
+      "domanda": "Qual è la 'regola 3-2-1' per i backup?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La RAM installata nel computer",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Fare backup ogni 3 giorni, su 2 dispositivi, entro 1 ora",
+          "corretto": false,
+          "feedback": "Non è corretto. La regola 3-2-1 riguarda il numero di copie e i supporti, non la frequenza temporale.",
+          "riferimento": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
         },
         {
           "id": "b",
-          "testo": "Una tecnica che usa parte del disco come estensione della RAM quando questa è piena: rallenta il sistema ma evita crash",
+          "testo": "3 copie del file, su 2 supporti diversi, con 1 copia fuori sede (es. cloud)",
           "corretto": true,
-          "feedback": "Esatto! Quando la RAM è esaurita, il SO sposta temporaneamente i dati meno usati sul disco (file di paging)."
+          "feedback": "Esatto! 3 copie (originale + 2 backup), 2 supporti diversi (es. disco interno + disco esterno), 1 copia fuori sede (cloud) per proteggersi anche da eventi fisici come incendi o furti."
         },
         {
           "id": "c",
-          "testo": "La memoria dei processori grafici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Backup con 3 account cloud diversi, sincronizzati ogni 2 ore, con 1 copia su chiavetta",
+          "corretto": false,
+          "feedback": "Non è corretto. La regola 3-2-1 standard è: 3 copie totali, 2 supporti fisicamente diversi, 1 fuori sede. Non si riferisce al numero di account cloud.",
+          "riferimento": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
         },
         {
           "id": "d",
-          "testo": "Lo spazio usato dal sistema operativo sul disco",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Salvare 3 versioni diverse dello stesso file, con 2 nomi diversi, 1 volta al giorno",
+          "corretto": false,
+          "feedback": "Non è corretto. Il versioning dei file è separato dalla regola 3-2-1. Quest'ultima riguarda la protezione da perdita fisica dei dati, non la gestione delle versioni.",
+          "riferimento": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
         }
       ],
-      "spiegazione": "Quando la RAM è esaurita, il SO sposta temporaneamente i dati meno usati sul disco (file di paging). Il disco è molto più lento: il sistema rallenta visibilmente."
+      "spiegazione": "La regola 3-2-1 è lo standard professionale: 3 copie del file (originale + 2 backup), 2 supporti fisicamente diversi (disco interno + disco esterno), 1 copia fuori sede (cloud). Per uno studente: file sul computer + chiavetta USB + Google Drive è una versione praticabile.",
+      "riferimento_principale": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Perché i cookie di terze parti sono diversi dai cookie tecnici necessari?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I cookie tecnici occupano più spazio sul disco; quelli di terze parti sono più piccoli",
+          "corretto": false,
+          "feedback": "Non è corretto. La differenza non riguarda le dimensioni dei file, ma la funzione: i cookie tecnici servono al funzionamento del sito, quelli di terze parti tracciano il comportamento per la pubblicità.",
+          "riferimento": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
+        },
+        {
+          "id": "b",
+          "testo": "I cookie tecnici permettono al sito di funzionare (login, carrello); quelli di terze parti seguono la navigazione su più siti per costruire un profilo pubblicitario",
+          "corretto": true,
+          "feedback": "Esatto! I cookie tecnici (necessari) ricordano che sei loggato o cosa hai messo nel carrello. I cookie di terze parti provengono da aziende pubblicitarie e tracciano il comportamento su molti siti."
+        },
+        {
+          "id": "c",
+          "testo": "I cookie tecnici funzionano solo su computer; quelli di terze parti funzionano anche sugli smartphone",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambi i tipi di cookie funzionano su tutti i dispositivi con browser.",
+          "riferimento": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
+        },
+        {
+          "id": "d",
+          "testo": "I cookie di terze parti sono illegali in Italia; quelli tecnici sono legali",
+          "corretto": false,
+          "feedback": "Non è corretto. I cookie di terze parti non sono illegali ma richiedono consenso informato secondo il GDPR. La differenza è funzionale, non di legalità assoluta.",
+          "riferimento": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
+        }
+      ],
+      "spiegazione": "I cookie tecnici (necessari) permettono al sito di funzionare: ricordano che sei loggato, cosa hai nel carrello, le tue preferenze. I cookie di terze parti provengono da aziende pubblicitarie diverse dal sito che visiti e tracciano il comportamento su molti siti per costruire un profilo pubblicitario.",
+      "riferimento_principale": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Perché è meglio fare il backup in modo automatico invece che manuale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché il backup automatico è sempre più veloce di quello manuale",
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità del backup dipende dalla quantità di dati, non dal fatto che sia automatico o manuale.",
+          "riferimento": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
+        },
+        {
+          "id": "b",
+          "testo": "Perché se devi ricordarti manualmente di farlo, lo dimenticherai esattamente la sera prima che il computer si rompa",
+          "corretto": true,
+          "feedback": "Esatto! Il testo lo dice chiaramente: 'Il backup deve essere automatico o non viene fatto.' Gli strumenti come Time Machine (Mac) o Cronologia file (Windows) lavorano in background senza richiedere azioni."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il backup manuale richiede che il computer sia spento",
+          "corretto": false,
+          "feedback": "Non è corretto. Il backup manuale non richiede che il computer sia spento. Il problema è la dimenticanza umana, non un requisito tecnico.",
+          "riferimento": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il backup manuale consuma più batteria del backup automatico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il consumo di batteria dipende dalla quantità di dati trasferiti, non dalla modalità (automatica o manuale).",
+          "riferimento": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
+        }
+      ],
+      "spiegazione": "Il backup deve essere automatico perché l'essere umano dimentica. Time Machine (Mac), Cronologia file (Windows) e la sincronizzazione automatica su Drive o OneDrive lavorano in background senza richiedere azioni. La configurazione richiede 20 minuti una volta sola. Poi funziona da sola.",
+      "riferimento_principale": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Perché non si dovrebbe usare 'definitivo', 'finale' o 'usare questo' nel nome di un file?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché questi termini non sono accettati dal sistema operativo Windows",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sistema operativo accetta qualsiasi nome (eccetto certi caratteri speciali). Il problema è pratico, non tecnico.",
+          "riferimento": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
+        },
+        {
+          "id": "b",
+          "testo": "Perché tra sei mesi non ricorderai 'finale' rispetto a cosa, e accumulerai versioni come 'relazione DEFINITIVA vera2 usare questa'",
+          "corretto": true,
+          "feedback": "Esatto! Il testo descrive la 'final syndrome': proliferazione di file con nomi come 'definitivo', 'finale', 'usare questo'. La soluzione è usare numeri di versione (_v01, _v02) e aggiungere _CONSEGNATO alla versione finale."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i motori di ricerca del sistema operativo non trovano file con queste parole nel nome",
+          "corretto": false,
+          "feedback": "Non è corretto. I motori di ricerca trovano qualsiasi file. Il problema è che con molti file 'definitivi' la ricerca restituisce troppi risultati ambigui.",
+          "riferimento": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
+        },
+        {
+          "id": "d",
+          "testo": "Perché queste parole occupano troppo spazio nel nome del file",
+          "corretto": false,
+          "feedback": "Non è corretto. I nomi dei file non hanno un limite di spazio rilevante. Il problema è la perdita di significato, non la lunghezza.",
+          "riferimento": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
+        }
+      ],
+      "spiegazione": "La 'final syndrome' è talmente comune da avere un nome: si accumula una serie di file 'relazione DEFINITIVA vera2 usare questa'. La soluzione è usare sempre numeri di versione (_v01, _v02, _v03). Quando il file è davvero finito, si rimuove il numero di versione o si aggiunge _CONSEGNATO con la data.",
+      "riferimento_principale": "📖 ESPLORA — 2. Nominare i file: la convenzione che ti salva la vita"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è lo 'scheduling' della CPU?",
+      "domanda": "Marco, nel caso studio, impiega 15-20 minuti per sessione a cercare file. Qual è l'impatto concreto di questo problema in un anno scolastico?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il piano di manutenzione del processore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Nessun impatto reale: 15 minuti persi ogni tanto non fanno differenza",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo calcola che 15-20 minuti per sessione, su 200 giorni scolastici, significano ore di lavoro perso.",
+          "riferimento": "🔍 OSSERVA — Il caso: Giulia e il professionista"
         },
         {
           "id": "b",
-          "testo": "L'algoritmo con cui il SO decide quale processo ha accesso alla CPU in ogni istante, garantendo equità e reattività",
+          "testo": "In un anno scolastico con 200 giorni di studio, si perdono circa 50-66 ore solo cercando file — quasi 2 settimane di lavoro",
           "corretto": true,
-          "feedback": "Esatto! Il SO gestisce decine di processi con una sola CPU usando lo scheduling: alterna velocemente tra processi dando l'illusione di parallelismo."
+          "feedback": "Esatto! Il testo quantifica: 'Giulia perde in media 15-20 minuti a sessione cercando file. In un anno scolastico sono ore.' Un sistema organizzato è un investimento di tempo che si ripaga subito."
         },
         {
           "id": "c",
-          "testo": "La frequenza di clock del processore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'impatto è solo emotivo: il fastidio di non trovare i file",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo elenca tre impatti concreti: il tempo perso, lo stress, e il rischio di perdere dati senza backup.",
+          "riferimento": "🔍 OSSERVA — Il caso: Giulia e il professionista"
         },
         {
           "id": "d",
-          "testo": "La temperatura massima di funzionamento del processore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'impatto riguarda solo i file scolastici, non quelli personali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema di organizzazione dei file colpisce qualsiasi tipo di file: scolastici, personali, professionali.",
+          "riferimento": "🔍 OSSERVA — Il caso: Giulia e il professionista"
         }
       ],
-      "spiegazione": "Il SO gestisce decine di processi con una sola CPU usando lo scheduling: alterna velocemente tra processi dando l'illusione di parallelismo."
+      "spiegazione": "Il testo confronta Giulia (15-20 minuti per sessione a cercare file, nessun sistema, nessun backup) con Marco Ferretti (trova un file in 15 secondi, backup automatico). Le differenze concrete: tempo perso (ore in un anno), stress (ansia da consegna), sicurezza dei dati (rischio perdita totale). Un sistema organizzato è un investimento che si ripaga immediatamente.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: Giulia e il professionista"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è un 'driver'?",
+      "domanda": "Perché la struttura a cartelle del file system è matematicamente un 'albero'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un tipo di utente con privilegi elevati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i file si ramificano come i rami di un albero quando si moltiplicano",
+          "corretto": false,
+          "feedback": "Non è corretto. L'analogia dell'albero matematico non riguarda la moltiplicazione dei file, ma la struttura gerarchica delle relazioni tra cartelle.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "b",
-          "testo": "Un software che permette al sistema operativo di comunicare con una periferica hardware specifica (stampante, scheda grafica, webcam)",
+          "testo": "Perché è una struttura gerarchica in cui ogni cartella ha un solo nodo padre e può avere zero o più figli (sottocartelle o file)",
           "corretto": true,
-          "feedback": "Esatto! Senza driver la scheda grafica è 'muta'."
+          "feedback": "Esatto! Un albero matematico ha esattamente questa struttura: ogni nodo ha un solo padre (eccetto la radice) e può avere più figli. 'Documenti → Scuola → Tecnologia' ha profondità 2."
         },
         {
           "id": "c",
-          "testo": "Un programma di ottimizzazione del disco",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i file crescono e si moltiplicano nel tempo come un albero in natura",
+          "corretto": false,
+          "feedback": "Non è corretto. L'albero matematico non è una metafora di crescita biologica, ma una struttura di dati con relazioni gerarchiche precise.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "d",
-          "testo": "Il componente che controlla la velocità del processore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il file system usa colori come un albero: verde per file recenti, giallo per vecchi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il file system non usa necessariamente colori. La struttura ad albero è matematica, non visiva.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         }
       ],
-      "spiegazione": "Senza driver la scheda grafica è 'muta'. I driver traducono i comandi del SO nel linguaggio specifico di ogni periferica."
+      "spiegazione": "Il file system è un albero matematico: ogni cartella (nodo) ha un solo nodo padre e può avere zero o più nodi figli (sottocartelle o file). La profondità si misura dal nodo radice: 'Documenti/Scuola/Tecnologia' ha profondità 2. Gli algoritmi di ricerca nel file system usano esplorazione DFS (depth-first) o BFS (breadth-first) — gli stessi algoritmi per esplorare grafi matematici.",
+      "riferimento_principale": "🔢 Collegamento STEM — Matematica"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è il 'file system' e perché esistono diversi standard?",
+      "domanda": "La regola pratica suggerita dice di non creare cartelle nidificate oltre il terzo livello. Perché?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'interfaccia grafica per navigare tra file e cartelle",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il sistema operativo non supporta cartelle oltre il terzo livello",
+          "corretto": false,
+          "feedback": "Non è corretto. I sistemi operativi supportano cartelle a qualsiasi profondità (centinaia di livelli). Il limite del terzo livello è una regola pratica di usabilità.",
+          "riferimento": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
         },
         {
           "id": "b",
-          "testo": "La struttura logica che organizza i dati sul disco (NTFS per Windows, ext4 per Linux, APFS per Mac): influenza velocità, sicurezza e dimensione massima dei file",
+          "testo": "Perché se devi cliccare più di tre volte per arrivare a un file, la struttura è troppo profonda e difficile da navigare",
           "corretto": true,
-          "feedback": "Esatto! Ogni file system ha vantaggi e limiti."
+          "feedback": "Esatto! Il testo dice: 'Se devi cliccare più di tre volte per arrivare a un file, la struttura è troppo profonda.' Documenti → Scuola → Tecnologia è già tre livelli."
         },
         {
           "id": "c",
-          "testo": "Il programma per cercare file nel computer",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i file nelle cartelle profonde vengono automaticamente cancellati dopo un mese",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sistema operativo non cancella file in base alla profondità della cartella. Il limite del terzo livello è una regola pratica, non tecnica.",
+          "riferimento": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
         },
         {
           "id": "d",
-          "testo": "Il sistema di backup automatico del computer",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i backup automatici non funzionano su cartelle oltre il terzo livello",
+          "corretto": false,
+          "feedback": "Non è corretto. I backup automatici funzionano a qualsiasi profondità di cartelle. La regola del terzo livello è per la navigabilità umana.",
+          "riferimento": "📖 ESPLORA — 3. Backup: la regola 3-2-1"
         }
       ],
-      "spiegazione": "Ogni file system ha vantaggi e limiti. FAT32 (vecchio USB) non supporta file >4GB. NTFS supporta permessi e cifratura."
+      "spiegazione": "Il limite del terzo livello (es. Documenti → Scuola → Tecnologia) è una regola pratica per la navigabilità: più di 3 click per arrivare a un file rende la struttura troppo profonda per essere usata intuitivamente. Aggiungere sottocartelle per ogni singolo compito dentro Tecnologia è eccessivo.",
+      "riferimento_principale": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il kernel e qual è la differenza tra modalità kernel e modalità utente?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Cosa dice il testo sulla modalità privata del browser riguardo a cosa salva e cosa non salva?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il kernel è il processore del computer",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non salva nulla: né la cronologia, né i file scaricati, né le password, né i cookie",
+          "corretto": false,
+          "feedback": "Non è corretto. La modalità privata salva normalmente i file scaricati sul disco. Non li mostra nella cronologia download, ma i file esistono.",
+          "riferimento": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
         },
         {
           "id": "b",
-          "testo": "Il kernel è il nucleo del SO con accesso diretto all'hardware. In modalità kernel il codice ha privilegi completi; in modalità utente le app sono isolate e non possono danneggiare il sistema",
+          "testo": "Non salva cronologia, cookie e password sul dispositivo; ma i file scaricati esistono sul disco e la navigazione è visibile al provider internet",
           "corretto": true,
-          "feedback": "Esatto! La separazione kernel/utente è un meccanismo di sicurezza: un'app in crash in modalità utente non porta giù l'intero sistema."
+          "feedback": "Esatto! La modalità privata (Ctrl+Shift+N in Chrome) non salva cronologia, cookie e password. Ma i file scaricati esistono sul disco e la navigazione è visibile al provider di rete."
         },
         {
           "id": "c",
-          "testo": "Il kernel è il database interno del sistema operativo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Salva solo i cookie necessari per il funzionamento dei siti, ma elimina il resto",
+          "corretto": false,
+          "feedback": "Non è corretto. In modalità privata anche i cookie necessari vengono eliminati alla chiusura della finestra privata.",
+          "riferimento": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
         },
         {
           "id": "d",
-          "testo": "La modalità utente e kernel sono la stessa cosa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Salva tutto come in modalità normale, ma lo cifra automaticamente",
+          "corretto": false,
+          "feedback": "Non è corretto. La modalità privata non cifra i dati: semplicemente non li salva sul dispositivo. La cifratura è un meccanismo separato.",
+          "riferimento": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
         }
       ],
-      "spiegazione": "La separazione kernel/utente è un meccanismo di sicurezza: un'app in crash in modalità utente non porta giù l'intero sistema."
+      "spiegazione": "La modalità privata (Ctrl+Shift+N in Chrome, Ctrl+Shift+P in Firefox) non salva cronologia, cookie e password sul dispositivo. I file scaricati però esistono sul disco. La navigazione NON è nascosta al provider internet (ISP), alla rete scolastica o ai siti visitati che vedono il tuo IP.",
+      "riferimento_principale": "📖 ESPLORA — 6. Privacy del browser: cosa traccia e cosa no"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'virtualizzazione' e come si usa?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Perché scaricare software da siti di 'download gratuiti' che offrono versioni 'craccate' è rischioso?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La creazione di cartelle virtuali senza dati reali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché viola la licenza del software e si può ricevere una multa",
+          "corretto": false,
+          "feedback": "Non è solo una questione legale. Il testo evidenzia un rischio tecnico più immediato: il malware che si installa insieme al software.",
+          "riferimento": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
         },
         {
           "id": "b",
-          "testo": "La tecnologia che permette di far girare sistemi operativi o ambienti isolati (macchine virtuali) dentro un sistema fisico: usata in cloud, sviluppo e sicurezza",
+          "testo": "Perché nel 90% dei casi il software contiene malware che si installa silenziosamente insieme al programma voluto",
           "corretto": true,
-          "feedback": "Esatto! VMware, VirtualBox e i container Docker usano la virtualizzazione."
+          "feedback": "Esatto! Il testo avverte: 'Non scaricare mai programmi da siti di download gratuiti che offrono versioni craccate: il 90% dei casi il programma contiene malware che si installa silenziosamente.'"
         },
         {
           "id": "c",
-          "testo": "La compressione dei file per risparmiare spazio",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i siti di download gratuiti usano connessioni lente che rallentano il computer",
+          "corretto": false,
+          "feedback": "Non è corretto. Il problema non è la velocità di download, ma il rischio di malware incorporato nel software scaricato.",
+          "riferimento": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
         },
         {
           "id": "d",
-          "testo": "La sincronizzazione dei file con il cloud",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il software craccato non funziona sui sistemi operativi moderni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il software craccato spesso funziona — il problema è che porta con sé malware che compromette la sicurezza del sistema.",
+          "riferimento": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
         }
       ],
-      "spiegazione": "VMware, VirtualBox e i container Docker usano la virtualizzazione. I cloud provider (AWS, Azure) dividono server fisici in centinaia di macchine virtuali."
+      "spiegazione": "Il testo avverte: 'Non scaricare mai programmi da siti di download gratuiti che offrono versioni craccate di software a pagamento: nel 90% dei casi il programma contiene malware che si installa silenziosamente.' La fonte sicura è sempre il sito ufficiale del produttore o l'app store del sistema operativo.",
+      "riferimento_principale": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è un 'sistema operativo real-time' (RTOS) e dove si usa?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché gli aggiornamenti del software sono importanti per la sicurezza, non solo per le nuove funzionalità?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema operativo che elabora i dati più velocemente degli altri",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché gli aggiornamenti rendono il computer più veloce ogni volta",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli aggiornamenti non migliorano necessariamente la velocità. La priorità è la correzione delle vulnerabilità di sicurezza.",
+          "riferimento": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
         },
         {
           "id": "b",
-          "testo": "Un sistema operativo progettato per rispondere a eventi entro tempi garantiti (deterministici): usato in controllo industriale, avionica, dispositivi medici e veicoli autonomi",
+          "testo": "Perché la maggior parte degli aggiornamenti corregge vulnerabilità di sicurezza che i criminali informatici possono sfruttare",
           "corretto": true,
-          "feedback": "Esatto! In un freno ABS il sistema deve reagire in millisecondi garantiti."
+          "feedback": "Esatto! Il testo dice: 'Rimandare gli aggiornamenti per settimane è come lasciare una finestra rotta nel tuo appartamento: prima o poi qualcuno ci entra.'"
         },
         {
           "id": "c",
-          "testo": "Il sistema operativo dei server ad alte prestazioni",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché senza aggiornamenti il software smette di funzionare dopo 30 giorni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il software non smette di funzionare automaticamente senza aggiornamenti, ma diventa vulnerabile agli attacchi non corretti.",
+          "riferimento": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
         },
         {
           "id": "d",
-          "testo": "Un SO che aggiorna automaticamente i driver in tempo reale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché gli aggiornamenti aumentano la RAM disponibile per le applicazioni",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli aggiornamenti software non modificano la quantità fisica di RAM. Correggono bug e vulnerabilità.",
+          "riferimento": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
         }
       ],
-      "spiegazione": "In un freno ABS il sistema deve reagire in millisecondi garantiti. Un normale SO come Windows non può garantire tempi di risposta: serve un RTOS."
+      "spiegazione": "La maggior parte degli aggiornamenti software corregge vulnerabilità di sicurezza: falle che i criminali informatici possono usare per entrare nel sistema. Il sistema operativo, il browser e l'antivirus sono i più critici. Il testo usa la metafora efficace: rimandare gli aggiornamenti è come lasciare una finestra rotta — prima o poi qualcuno ci entra.",
+      "riferimento_principale": "📖 ESPLORA — 4. Gestire i programmi: installazione, aggiornamenti e pulizia"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo descrive il 'controllo di versione' (Git) come la soluzione professionale alla gestione dei file. Quale problema specifico risolve rispetto ai nomi come 'relazione_finale'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Git rinomina automaticamente tutti i file seguendo la convenzione di naming professionale",
+          "corretto": false,
+          "feedback": "Non è corretto. Git non rinomina i file automaticamente. Registra ogni modifica, chi l'ha fatta e quando, permettendo di tornare a qualsiasi versione precedente.",
+          "riferimento": "🔍 OSSERVA — Il caso: come un'azienda gestisce i file rispetto a come lo fai tu"
+        },
+        {
+          "id": "b",
+          "testo": "Git registra ogni modifica a ogni file con chi l'ha fatta e quando, permettendo di tornare a qualsiasi versione precedente senza moltiplicare file con nomi diversi",
+          "corretto": true,
+          "feedback": "Esatto! Con Git non servono 'relazione_v01', 'relazione_v02'... Git mantiene un registro completo delle modifiche. Si torna indietro nel tempo invece di avere file duplicati."
+        },
+        {
+          "id": "c",
+          "testo": "Git comprime automaticamente i file per risparmiare spazio sul disco",
+          "corretto": false,
+          "feedback": "Non è corretto. Git usa una forma di compressione interna per il suo database, ma non comprime i file di lavoro. Il suo scopo principale è il versioning.",
+          "riferimento": "🔍 OSSERVA — Il caso: come un'azienda gestisce i file rispetto a come lo fai tu"
+        },
+        {
+          "id": "d",
+          "testo": "Git carica automaticamente tutti i file su Google Drive in tempo reale",
+          "corretto": false,
+          "feedback": "Non è corretto. Git è un sistema di versioning locale (o con repository remoto come GitHub), non un sistema di sincronizzazione cloud automatica come Drive.",
+          "riferimento": "🔍 OSSERVA — Il caso: come un'azienda gestisce i file rispetto a come lo fai tu"
+        }
+      ],
+      "spiegazione": "Git risolve la 'final syndrome' in modo elegante: invece di moltiplicare file con nomi diversi (relazione_v01, relazione_v02...), Git mantiene un database di tutte le modifiche. Si può tornare a qualsiasi versione precedente, confrontare versioni, capire chi ha cambiato cosa e quando. Google Docs ha una versione semplificata integrata (Cronologia versioni).",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: come un'azienda gestisce i file rispetto a come lo fai tu"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Un gruppo di quattro studenti lavora su un documento condiviso. Riccardo usa 'relazione.docx' sul suo computer, Sofia usa 'relazione_mia_versione.docx' sul suo. Qual è il problema fondamentale e come si risolve?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il problema è che i file hanno nomi diversi. La soluzione è rinominarli tutti allo stesso modo",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche con lo stesso nome, lavorare in modo asincrono su file locali separati crea versioni divergenti. Il problema è la mancanza di collaborazione in tempo reale.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Analizzo, confronto, miglioro"
+        },
+        {
+          "id": "b",
+          "testo": "Il problema è la mancanza di un sistema condiviso: lavorare su copie locali divergenti crea versioni incompatibili. La soluzione è un documento condiviso su cloud (Google Docs) con accesso simultaneo",
+          "corretto": true,
+          "feedback": "Esatto! Il testo descrive questo scenario: versioni divergenti su dispositivi separati senza un punto centralizzato. La soluzione è lavorare sullo stesso documento cloud condiviso in tempo reale."
+        },
+        {
+          "id": "c",
+          "testo": "Il problema è la velocità: inviare file via WhatsApp è troppo lento. La soluzione è usare email aziendali",
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità di trasmissione non è il problema fondamentale. Il problema è la mancanza di un punto di verità unico per il documento condiviso.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Analizzo, confronto, miglioro"
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è alcun problema: ognuno lavora sulla sua sezione e poi si uniscono i file alla fine",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive questo scenario come problematico: 'A fine settimana esistono sei versioni diverse. Nessuno sa quale sia la più completa.'",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Analizzo, confronto, miglioro"
+        }
+      ],
+      "spiegazione": "Il scenario del testo mostra il classico problema del lavoro asincrono su copie locali: Riccardo e Sofia lavorano su versioni separate, Marco aggiunge sezioni a una delle due, e alla fine esistono sei versioni incompatibili. La soluzione è un documento cloud condiviso (Google Docs) dove tutti lavorano sullo stesso file in tempo reale.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Analizzo, confronto, miglioro"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Gli SSD hanno una caratteristica fisica importante che li distingue dagli HDD, ma anche un limite. Qual è?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Gli SSD sono più capienti degli HDD ma costano di più",
+          "corretto": false,
+          "feedback": "Non è corretto. Tipicamente è il contrario: gli HDD sono più capienti e costano meno per GB. Gli SSD costano di più ma sono molto più veloci.",
+          "riferimento": "🔬 Collegamento STEM — Scienze"
+        },
+        {
+          "id": "b",
+          "testo": "Gli SSD non hanno parti meccaniche e sono più veloci, ma ogni cella può essere scritta e cancellata un numero limitato di volte (1.000-10.000 cicli)",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'Gli SSD memorizzano i dati come cariche elettriche in celle di silicio. Ogni cella può essere scritta e cancellata un numero limitato di volte (tipicamente 1.000-10.000 cicli).'"
+        },
+        {
+          "id": "c",
+          "testo": "Gli SSD funzionano solo a temperature molto basse, rendendo necessario il raffreddamento artificiale",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli SSD funzionano a temperatura ambiente normale, senza raffreddamento speciale.",
+          "riferimento": "🔬 Collegamento STEM — Scienze"
+        },
+        {
+          "id": "d",
+          "testo": "Gli SSD perdono tutti i dati se non sono collegati all'alimentazione per più di un anno",
+          "corretto": false,
+          "feedback": "Non è corretto nel tempo indicato. Gli SSD possono effettivamente perdere dati se non alimentati per molto tempo (anni in certi modelli), ma il limite principale citato nel testo è il numero di cicli di scrittura.",
+          "riferimento": "🔬 Collegamento STEM — Scienze"
+        }
+      ],
+      "spiegazione": "Gli SSD (Solid State Drive) non hanno parti meccaniche mobili come gli HDD: memorizzano i dati come cariche elettriche in celle di silicio. Vantaggi: 5-10 volte più veloci, più silenziosi, resistono meglio alle cadute. Limite: ogni cella può essere scritta e cancellata un numero limitato di volte (1.000-10.000 cicli) prima di degradarsi.",
+      "riferimento_principale": "🔬 Collegamento STEM — Scienze"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Quando condividi un file su Google Drive con 'chiunque abbia il link', quali rischi concreti corri che non avresti condividendo con persone specifiche?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Nessun rischio: il link è sempre privato e solo chi lo riceve da te può accedervi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il link 'chiunque abbia il link' è accessibile a qualsiasi persona che ottenga quel link, indipendentemente da come ci è arrivata.",
+          "riferimento": "📖 ESPLORA — 5. Cloud storage: comodità e rischi"
+        },
+        {
+          "id": "b",
+          "testo": "Il file diventa accessibile a chiunque ottenga quel link, anche tramite forward accidentale o condivisione non autorizzata da parte di chi lo ha ricevuto",
+          "corretto": true,
+          "feedback": "Esatto! Il testo avverte: 'quando condividi con chiunque abbia il link, quel file diventa accessibile a chiunque ottenga quel link — anche chi non conosci.' Il link può essere inoltrato."
+        },
+        {
+          "id": "c",
+          "testo": "Il file viene automaticamente cancellato da Drive dopo 24 ore se non viene usato",
+          "corretto": false,
+          "feedback": "Non è corretto. Drive non cancella automaticamente i file condivisi pubblicamente. Il rischio è la diffusione incontrollata del link.",
+          "riferimento": "📖 ESPLORA — 5. Cloud storage: comodità e rischi"
+        },
+        {
+          "id": "d",
+          "testo": "Google usa il file per addestrare modelli di intelligenza artificiale",
+          "corretto": false,
+          "feedback": "Non è questo il rischio specifico citato nel testo per la condivisione con link pubblico. Il testo si concentra sull'accesso incontrollato di terze parti.",
+          "riferimento": "📖 ESPLORA — 5. Cloud storage: comodità e rischi"
+        }
+      ],
+      "spiegazione": "Un link 'chiunque abbia il link' può essere inoltrato involontariamente o deliberatamente a persone non previste. Il testo raccomanda: 'Per i compiti scolastici, preferisci sempre la condivisione con persone specifiche (tramite email) piuttosto che il link pubblico.' La condivisione specifica dà il controllo su chi accede al file.",
+      "riferimento_principale": "📖 ESPLORA — 5. Cloud storage: comodità e rischi"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "La struttura a cartelle suggerita include una cartella 'Download-da-ordinare' come punto di transito. Perché questa è una soluzione efficace per la gestione dei file scaricati?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i file nella cartella Download vengono automaticamente eliminati dopo una settimana dal sistema operativo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sistema operativo non elimina automaticamente i file dalla cartella Download. La pulizia deve essere fatta dall'utente.",
+          "riferimento": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
+        },
+        {
+          "id": "b",
+          "testo": "Perché separa il flusso di download (caotico per natura) dall'archivio organizzato, e una pulizia settimanale previene l'accumulo di centinaia di file non catalogati",
+          "corretto": true,
+          "feedback": "Esatto! Il testo raccomanda 'Download-da-ordinare' come punto di transito che si svuota ogni settimana. Il temporaneo che diventa permanente nella cartella Download è uno dei problemi più comuni."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i file nella cartella 'Download-da-ordinare' vengono automaticamente ordinati per tipo dal sistema operativo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sistema operativo non ordina automaticamente i file per tipo in cartelle separate. L'ordinamento manuale settimanale è compito dell'utente.",
+          "riferimento": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
+        },
+        {
+          "id": "d",
+          "testo": "Perché riduce il numero massimo di file che si possono avere sul computer",
+          "corretto": false,
+          "feedback": "Non è corretto. La cartella non riduce il numero di file: fornisce un posto temporaneo da svuotare periodicamente per mantenere l'ordine.",
+          "riferimento": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
+        }
+      ],
+      "spiegazione": "La cartella 'Download-da-ordinare' è un punto di transito: i file scaricati ci vanno temporaneamente, poi ogni settimana si spostano nelle cartelle giuste o si cancellano. Senza questo filtro, il temporaneo diventa permanente: la cartella Download di Giulia aveva 847 file non ordinati, mai svuotata.",
+      "riferimento_principale": "📖 ESPLORA — 1. Organizzare i file: la struttura che ti fa trovare tutto"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il concetto di 'costo totale di possesso' è implicito nel caso studio del professionista Marco Ferretti. Cosa include questo concetto oltre al prezzo di acquisto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Solo il costo della connessione internet necessaria per sincronizzare i backup",
+          "corretto": false,
+          "feedback": "Non è corretto. Il costo totale di possesso è un concetto più ampio che include il tempo, la produttività, il rischio di perdita dati e altri fattori.",
+          "riferimento": "🔍 OSSERVA — Il caso: Giulia e il professionista"
+        },
+        {
+          "id": "b",
+          "testo": "Il tempo perso cercando file (ore in un anno), il costo dello stress, il rischio di perdita di dati importanti, e il costo potenziale di recupero o ricostruzione del lavoro perso",
+          "corretto": true,
+          "feedback": "Esatto! Il testo quantifica le differenze tra Giulia e Marco: tempo perso (15-20 min per sessione = ore in un anno), stress da consegna, rischio totale di perdita dati senza backup."
+        },
+        {
+          "id": "c",
+          "testo": "Solo il prezzo dell'hardware e del software utilizzati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il costo totale di possesso include anche i costi 'nascosti' come il tempo perso, la produttività ridotta e il rischio di perdita dati.",
+          "riferimento": "🔍 OSSERVA — Il caso: Giulia e il professionista"
+        },
+        {
+          "id": "d",
+          "testo": "Il costo dell'abbonamento a servizi cloud come Google Drive o iCloud",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli abbonamenti cloud sono un costo reale ma secondario. Il costo principale è il tempo perso e il rischio di perdita dei dati.",
+          "riferimento": "🔍 OSSERVA — Il caso: Giulia e il professionista"
+        }
+      ],
+      "spiegazione": "Il testo quantifica le differenze concrete tra un sistema organizzato (Marco) e uno disorganizzato (Giulia): tempo perso (15-20 min per sessione × 200 giorni = ore), stress da consegna, rischio di perdita totale dei dati. Il professionista che investe 20 minuti per configurare un sistema recupera quel tempo già nella prima settimana.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: Giulia e il professionista"
     }
   ]
 }

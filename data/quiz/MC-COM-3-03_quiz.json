@@ -1,260 +1,654 @@
 {
   "mc_id": "MC-COM-3-03",
-  "titolo": "Sistemi di trasporto e mobilità sostenibile",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Quale settore produce la percentuale maggiore di emissioni CO₂ nei trasporti globali?",
+      "domanda": "In che anno fu inaugurata la prima ferrovia pubblica a vapore al mondo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Aviazione",
-          "feedback": "L'aviazione è circa il 3% delle emissioni globali."
+          "testo": "1825 (Stockton-Darlington, Inghilterra)",
+          "corretto": true,
+          "feedback": "Esatto! Nel 1825 George Stephenson inaugurò la prima ferrovia pubblica a vapore, che raggiungeva i 25 km/h."
         },
         {
           "id": "b",
-          "testo": "Trasporto marittimo",
-          "feedback": "Il marittimo è circa il 2.9% delle emissioni globali."
+          "testo": "1885 (Germania, con Karl Benz)",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 1885 è l'anno in cui Karl Benz inventò l'automobile. La prima ferrovia è del 1825.",
+          "riferimento": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
         },
         {
           "id": "c",
-          "testo": "Trasporto stradale",
-          "corretto": true,
-          "feedback": "Esatto! Il trasporto stradale (auto private + camion) è responsabile di oltre il 70% delle emissioni del settore trasporti a livello globale."
+          "testo": "1769 (con la macchina a vapore di Watt)",
+          "corretto": false,
+          "feedback": "Non è corretto. Nel 1769 Watt perfezionò la macchina a vapore, ma la prima ferrovia pubblica arrivò più tardi, nel 1825.",
+          "riferimento": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
         },
         {
           "id": "d",
-          "testo": "Trasporto ferroviario",
-          "feedback": "Il ferroviario è uno dei meno emissivi."
+          "testo": "1964 (Giappone, con lo Shinkansen)",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 1964 è l'anno dello Shinkansen giapponese, il primo treno ad alta velocità. La prima ferrovia è del 1825.",
+          "riferimento": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
         }
       ],
-      "spiegazione": "Il trasporto stradale (auto private + camion) è responsabile di oltre il 70% delle emissioni del settore trasporti a livello globale."
+      "spiegazione": "Nel 1825 George Stephenson inaugurò la prima ferrovia pubblica a vapore al mondo sulla tratta Stockton-Darlington in Inghilterra. I treni raggiungevano i 25 km/h — tre volte la velocità di un cavallo al trotto sostenuto.",
+      "riferimento_principale": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è il trasporto intermodale?",
+      "domanda": "Cosa produce il settore dei trasporti a livello di emissioni globali di gas serra?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'uso di un solo mezzo per tutto il viaggio",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il 16% delle emissioni globali, più di tutta l'agricoltura mondiale",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che il settore dei trasporti produce il 16% delle emissioni globali di gas serra, una quota superiore all'intera agricoltura mondiale."
         },
         {
           "id": "b",
-          "testo": "L'integrazione di più modalità di trasporto (treno + nave + camion) per un unico carico, ottimizzando costi e impatto",
-          "corretto": true,
-          "feedback": "Esatto! L'intermodalità è la base della logistica moderna: il container permette di spostare la merce senza ri-imballarla tra nave, treno e camion."
+          "testo": "Il 2% delle emissioni globali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il settore dei trasporti ha un impatto molto maggiore: il 16% delle emissioni globali.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "c",
-          "testo": "Il trasporto di merci pericolose con veicoli speciali",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il 50% delle emissioni globali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il settore dei trasporti produce circa il 16% delle emissioni, non il 50%.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "d",
-          "testo": "Un sistema di trasporto pubblico che usa solo treni",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il 5% delle emissioni globali, meno dell'industria",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo indica il 16%, una quota superiore all'agricoltura mondiale.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "L'intermodalità è la base della logistica moderna: il container permette di spostare la merce senza ri-imballarla tra nave, treno e camion."
+      "spiegazione": "Il settore dei trasporti produce il 16% delle emissioni globali di gas serra — una quota superiore all'intera produzione agricola mondiale. Questa cifra motiva lo studio e la comparazione dei diversi mezzi di trasporto in termini di impatto ambientale.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il 'last mile delivery'?",
+      "domanda": "Quante automobili circolano nel mondo oggi?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La consegna dell'ultimo pacchetto della giornata",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Circa 1,5 miliardi di veicoli a motore",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che oggi nel mondo circolano circa 1,5 miliardi di veicoli a motore."
         },
         {
           "id": "b",
-          "testo": "L'ultimo tratto di consegna dal deposito al destinatario finale: il più costoso, lento e inquinante dell'intera catena logistica",
-          "corretto": true,
-          "feedback": "Esatto! L'ultimo miglio è il problema aperto della logistica urbana: microdepot, cargo bike e droni sono soluzioni sperimentate per renderlo sostenibile."
+          "testo": "Circa 50 milioni di veicoli a motore",
+          "corretto": false,
+          "feedback": "Non è corretto. 50 milioni era la cifra negli USA nel 1950. Oggi sono circa 1,5 miliardi a livello mondiale.",
+          "riferimento": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
         },
         {
           "id": "c",
-          "testo": "Un servizio di corriere espresso internazionale",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Circa 100 milioni di veicoli a motore",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero attuale è molto più alto: circa 1,5 miliardi a livello mondiale.",
+          "riferimento": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
         },
         {
           "id": "d",
-          "testo": "La distanza massima percorribile da un furgone elettrico",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Circa 10 miliardi di veicoli a motore",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero reale è circa 1,5 miliardi di veicoli, non 10 miliardi.",
+          "riferimento": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
         }
       ],
-      "spiegazione": "L'ultimo miglio è il problema aperto della logistica urbana: microdepot, cargo bike e droni sono soluzioni sperimentate per renderlo sostenibile."
+      "spiegazione": "Il testo indica che oggi nel mondo circolano circa 1,5 miliardi di veicoli a motore. Nel 1950, solo negli USA ce n'erano 50 milioni. Questo aumento ha portato con sé enormi emissioni e problemi di mobilità urbana.",
+      "riferimento_principale": "📖 ESPLORA — Dalla ruota al treno superveloce: storia compatta"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'domanda indotta' nel contesto del traffico urbano?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Aggiungere corsie stradali aumenta il traffico perché più persone scelgono l'auto",
+          "corretto": true,
+          "feedback": "Esatto! La 'domanda indotta' è il fenomeno per cui più strade non riducono il traffico: incentivano più persone a usare l'auto, generando altro traffico."
+        },
+        {
+          "id": "b",
+          "testo": "Le auto elettriche inducono un aumento della domanda di energia",
+          "corretto": false,
+          "feedback": "Non è corretto. La 'domanda indotta' nel testo riguarda il traffico, non l'energia.",
+          "riferimento": "📖 ESPLORA — Mobilità urbana: il problema del XXI secolo"
+        },
+        {
+          "id": "c",
+          "testo": "Il trasporto pubblico induce le persone ad abbandonare l'auto",
+          "corretto": false,
+          "feedback": "Non è corretto. L'effetto descritto è l'opposto: la domanda indotta è causata dall'ampliamento delle strade.",
+          "riferimento": "📖 ESPLORA — Mobilità urbana: il problema del XXI secolo"
+        },
+        {
+          "id": "d",
+          "testo": "I nuovi quartieri residenziali inducono un aumento del traffico",
+          "corretto": false,
+          "feedback": "Non è corretto. La 'domanda indotta' nel testo si riferisce specificamente all'aggiunta di corsie stradali, non ai nuovi quartieri.",
+          "riferimento": "📖 ESPLORA — Mobilità urbana: il problema del XXI secolo"
+        }
+      ],
+      "spiegazione": "La 'domanda indotta' è il fenomeno documentato per cui aggiungere corsie stradali aumenta il traffico anziché ridurlo: più strade rendono l'auto più conveniente, più persone la scelgono, generando più traffico. La soluzione non è 'più strade' ma rendere le alternative più attrattive.",
+      "riferimento_principale": "📖 ESPLORA — Mobilità urbana: il problema del XXI secolo"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quale mezzo di trasporto trasporta il 90% delle merci mondiali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il trasporto marittimo (navi portacontainer)",
+          "corretto": true,
+          "feedback": "Esatto! Il 90% delle merci mondiali viaggia via mare. Il trasporto marittimo è il più efficiente per le grandi distanze grazie alla capacità enormedelle navi portacontainer."
+        },
+        {
+          "id": "b",
+          "testo": "Il trasporto aereo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il trasporto aereo è veloce ma costoso e limitato in capacità: copre solo una piccola frazione delle merci mondiali.",
+          "riferimento": "📖 ESPLORA — Trasporto marittimo"
+        },
+        {
+          "id": "c",
+          "testo": "Il trasporto ferroviario",
+          "corretto": false,
+          "feedback": "Non è corretto. Il treno è efficiente su scala continentale, ma non può attraversare gli oceani come le navi.",
+          "riferimento": "📖 ESPLORA — Trasporto marittimo"
+        },
+        {
+          "id": "d",
+          "testo": "Il trasporto su strada",
+          "corretto": false,
+          "feedback": "Non è corretto. Il camion è fondamentale per l'ultimo miglio, ma il 90% delle merci mondiali viaggia via mare.",
+          "riferimento": "📖 ESPLORA — Trasporto marittimo"
+        }
+      ],
+      "spiegazione": "Il trasporto marittimo trasporta il 90% delle merci mondiali. Le grandi navi portacontainer sono il mezzo più efficiente per le lunghe distanze: possono trasportare migliaia di tonnellate usando pochi grammi di carburante per tonnellata-km.",
+      "riferimento_principale": "📖 ESPLORA — Trasporto marittimo"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quante emissioni di CO₂ emette mediamente un'automobile privata con un solo occupante per km?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "120-150 g di CO₂ per km",
+          "corretto": true,
+          "feedback": "Esatto! Un'auto a benzina con un solo passeggero emette mediamente 120-150 g di CO₂ per km — contro i 14-20 g di un treno regionale pieno."
+        },
+        {
+          "id": "b",
+          "testo": "10-20 g di CO₂ per km",
+          "corretto": false,
+          "feedback": "Non è corretto. Queste emissioni sono quelle del treno regionale, non dell'auto privata.",
+          "riferimento": "📖 ESPLORA — Trasporto stradale"
+        },
+        {
+          "id": "c",
+          "testo": "500-600 g di CO₂ per km",
+          "corretto": false,
+          "feedback": "Non è corretto. 500-600 g sono le emissioni di un volo transatlantico per km, non di un'auto.",
+          "riferimento": "📖 ESPLORA — Trasporto stradale"
+        },
+        {
+          "id": "d",
+          "testo": "60-80 g di CO₂ per km",
+          "corretto": false,
+          "feedback": "Non è corretto. Quelle sono le emissioni di un autobus pieno. L'auto privata con un solo occupante emette 120-150 g/km.",
+          "riferimento": "📖 ESPLORA — Trasporto stradale"
+        }
+      ],
+      "spiegazione": "Un'auto a benzina con un solo occupante emette mediamente 120-150 g di CO₂ per km. Per confronto, un treno regionale pieno emette solo 14-20 g/km per passeggero — circa 10 volte meno. Questa differenza giustifica le politiche di incentivazione al trasporto pubblico.",
+      "riferimento_principale": "📖 ESPLORA — Trasporto stradale"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Come funziona il sistema ATC (Air Traffic Control)?",
+      "domanda": "Perché il container, introdotto nel 1956, ha trasformato l'economia globale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema GPS per la navigazione degli aerei",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Ha standardizzato le dimensioni dei carichi, riducendo i costi di movimentazione del 90% rispetto al 1960",
+          "corretto": true,
+          "feedback": "Esatto! Il container ha eliminato il carico/scarico manuale (settimane di lavoro) e standardizzato le misure, rendendo economico produrre in Asia e vendere in Europa."
         },
         {
           "id": "b",
-          "testo": "Il sistema di gestione del traffico aereo che coordina separazione, rotte e atterraggi di migliaia di voli simultaneamente",
-          "corretto": true,
-          "feedback": "Esatto! L'ATC gestisce un'orchestra invisibile di 40."
+          "testo": "Ha aumentato la velocità delle navi portacontainer da 10 a 30 nodi",
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità delle navi non è il fattore principale: la rivoluzione è nella standardizzazione e nei costi di movimentazione.",
+          "riferimento": "📖 ESPLORA — Trasporto merci vs. passeggeri: la logistica globale"
         },
         {
           "id": "c",
-          "testo": "Il pilota automatico degli aeromobili di linea",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Ha permesso di trasportare prodotti deperibili via mare per la prima volta",
+          "corretto": false,
+          "feedback": "Non è corretto. Il container non è specifico per i prodotti deperibili: la sua rivoluzione è la standardizzazione delle dimensioni.",
+          "riferimento": "📖 ESPLORA — Trasporto merci vs. passeggeri: la logistica globale"
         },
         {
           "id": "d",
-          "testo": "Il sistema di prenotazione biglietti aerei",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Ha ridotto i dazi doganali tra i paesi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il container non è uno strumento doganale: è un contenitore standardizzato che riduce i costi di movimentazione.",
+          "riferimento": "📖 ESPLORA — Trasporto merci vs. passeggeri: la logistica globale"
         }
       ],
-      "spiegazione": "L'ATC gestisce un'orchestra invisibile di 40.000+ voli al giorno in Europa. Un errore di comunicazione è la principale causa storica di incidenti aerei."
+      "spiegazione": "Il container (introdotto da Malcolm McLean nel 1956) ha standardizzato le dimensioni dei carichi. Prima, caricare/scaricare una nave richiedeva settimane di lavoro manuale. Con il container, una gru lo fa in minuti. Il costo di spedizione Shanghai-Rotterdam è sceso del 90% in termini reali rispetto al 1960, rendendo economica la globalizzazione.",
+      "riferimento_principale": "📖 ESPLORA — Trasporto merci vs. passeggeri: la logistica globale"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Perché l'alta velocità ferroviaria compete con l'aereo sulle tratte breve-medie?",
+      "domanda": "Perché il treno ad alta velocità Roma-Milano è spesso più rapido dell'aereo porta-a-porta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i treni sono sempre più economici degli aerei",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché il volo include 1,5h di spostamenti aeroportuali e 1h di imbarco, superando le 2h55m del treno",
+          "corretto": true,
+          "feedback": "Esatto! Il treno impiega 2h55m direttamente centro-centro. Il volo pesa ~1h volo + 1,5h aeroporto + 1h imbarco/sbarco = 3,5-4h totali."
         },
         {
           "id": "b",
-          "testo": "Perché il treno AV porta da centro a centro senza aeroporti, tempi di imbarco e attese: su distanze <800km è spesso più rapido porta a porta",
-          "corretto": true,
-          "feedback": "Esatto! Roma-Milano: 2h45 in treno vs 1h di volo + 1h in aeroporto + 30 min atterraggio."
+          "testo": "Perché i treni AV in Italia viaggiano a 600 km/h",
+          "corretto": false,
+          "feedback": "Non è corretto. I treni AV italiani viaggiano fino a circa 300 km/h in servizio commerciale, non 600 km/h.",
+          "riferimento": "📖 ESPLORA — Treno ad alta velocità vs. aereo: il confronto su tratte italiane"
         },
         {
           "id": "c",
-          "testo": "Perché i treni non hanno limitazioni di bagaglio",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché gli aerei sulla tratta Roma-Milano volano a velocità ridotta",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli aerei non volano a velocità ridotta su questa tratta: il problema è il tempo perso negli aeroporti.",
+          "riferimento": "📖 ESPLORA — Treno ad alta velocità vs. aereo: il confronto su tratte italiane"
         },
         {
           "id": "d",
-          "testo": "Perché l'AV è più puntuale degli aerei",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché c'è sempre vento contrario tra Roma e Milano",
+          "corretto": false,
+          "feedback": "Non è corretto. Il vento non è un fattore significativo: il confronto è sul tempo totale porta-a-porta.",
+          "riferimento": "📖 ESPLORA — Treno ad alta velocità vs. aereo: il confronto su tratte italiane"
         }
       ],
-      "spiegazione": "Roma-Milano: 2h45 in treno vs 1h di volo + 1h in aeroporto + 30 min atterraggio. Il treno vince porta a porta."
+      "spiegazione": "Porta-a-porta, il treno AV Roma-Milano (2h55m) è più veloce del volo (1h di volo + ~1,5h spostamenti aeroportuali + ~1h check-in/sbarco = 3,5-4h totali). Il volo è conveniente solo per distanze superiori a 700-900 km.",
+      "riferimento_principale": "📖 ESPLORA — Treno ad alta velocità vs. aereo: il confronto su tratte italiane"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la 'logistica urbana sostenibile'?",
+      "domanda": "Perché gli aerei sono meno tassati del carburante per auto, creando una distorsione di mercato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il trasporto di merci solo con veicoli elettrici in città",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il cherosene aeronautico non è tassato a livello internazionale, a differenza del carburante per auto",
+          "corretto": true,
+          "feedback": "Esatto! Il cherosene per l'aviazione non è tassato internazionalmente: è uno dei più grandi sussidi impliciti ai combustibili fossili, che rende i voli artificialmente economici."
         },
         {
           "id": "b",
-          "testo": "Un approccio integrato per ridurre l'impatto delle consegne in città: consolidamento degli ordini, microdepot, cargo bike, orari off-peak",
-          "corretto": true,
-          "feedback": "Esatto! La logistica urbana sostenibile non è solo la scelta del veicolo, ma la riorganizzazione dell'intero sistema di distribuzione."
+          "testo": "Le compagnie aeree pagano tasse speciali che bilanciano il vantaggio",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo indica che la mancata tassazione del cherosene è una distorsione non compensata da altre tasse.",
+          "riferimento": "📖 ESPLORA — Trasporto aereo"
         },
         {
           "id": "c",
-          "testo": "La creazione di zone industriali fuori dalle città",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il governo italiano sovvenziona i voli per favorire il turismo",
+          "corretto": false,
+          "feedback": "Non è corretto. La distorsione è globale e riguarda la mancata tassazione internazionale del cherosene.",
+          "riferimento": "📖 ESPLORA — Trasporto aereo"
         },
         {
           "id": "d",
-          "testo": "Il divieto di accesso ai centri storici per i furgoni",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "L'aviazione è un settore strategico esente da imposte in tutti i paesi",
+          "corretto": false,
+          "feedback": "Non è corretto. Non è una scelta esplicita di esenzione: è l'assenza di accordi internazionali sulla tassazione del cherosene.",
+          "riferimento": "📖 ESPLORA — Trasporto aereo"
         }
       ],
-      "spiegazione": "La logistica urbana sostenibile non è solo la scelta del veicolo, ma la riorganizzazione dell'intero sistema di distribuzione."
+      "spiegazione": "Il cherosene per l'aviazione non è tassato a livello internazionale — al contrario del carburante per auto. Questo è uno dei più grandi sussidi impliciti ai combustibili fossili globali: abbassa artificialmente il prezzo dei biglietti aerei non includendo il costo ambientale reale.",
+      "riferimento_principale": "📖 ESPLORA — Trasporto aereo"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'freight corridor' europeo e come riduce le emissioni?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Calcola: quante emissioni produce un'auto a benzina con 1 occupante in un anno scolastico (200 giorni, 5 km al giorno andata e ritorno)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un'autostrada dedicata esclusivamente ai camion",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "300 kg di CO₂ all'anno (5km × 2 × 130g/km × 200 = 260 kg ≈ 300 kg)",
+          "corretto": true,
+          "feedback": "Esatto! 5 km × 2 (A/R) × 130 g/km = 1.300 g/giorno = 1,3 kg/giorno × 200 giorni = 260 kg/anno. Circa 300 kg considerando che 130 g è la media."
         },
         {
           "id": "b",
-          "testo": "Corridoi ferroviari merci transeuropei ottimizzati per lo spostamento di carichi su treno invece che su gomma: riducono le emissioni del 70-80% per tonnellata-km",
-          "corretto": true,
-          "feedback": "Esatto! I 9 corridoi RFC europei (Rhine-Alpine, Scandinavia-Mediterranean ecc."
+          "testo": "30 kg di CO₂ all'anno",
+          "corretto": false,
+          "feedback": "Non è corretto. Hai probabilmente dimenticato un fattore nel calcolo. 5 km × 2 × 130 g × 200 = 260.000 g = 260 kg, non 30.",
+          "riferimento": "🔬 SPERIMENTA — BASE — Calcolo le emissioni del mio tragitto"
         },
         {
           "id": "c",
-          "testo": "Un percorso marittimo dedicato alle petroliere",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "3.000 kg di CO₂ all'anno",
+          "corretto": false,
+          "feedback": "Non è corretto. Il risultato è sovrastimato. 5 km × 2 × 130 g × 200 = 260.000 g = 260 kg, non 3.000.",
+          "riferimento": "🔬 SPERIMENTA — BASE — Calcolo le emissioni del mio tragitto"
         },
         {
           "id": "d",
-          "testo": "Una rete di depositi merci nei porti principali",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "130 kg di CO₂ all'anno",
+          "corretto": false,
+          "feedback": "Non è corretto. Hai dimenticato di moltiplicare per i 200 giorni scolastici. Il risultato corretto è circa 260 kg.",
+          "riferimento": "🔬 SPERIMENTA — BASE — Calcolo le emissioni del mio tragitto"
         }
       ],
-      "spiegazione": "I 9 corridoi RFC europei (Rhine-Alpine, Scandinavia-Mediterranean ecc.) facilitano il trasferimento modale dalla strada al treno."
+      "spiegazione": "Calcolo: 5 km (andata) + 5 km (ritorno) = 10 km/giorno × 130 g CO₂/km = 1.300 g/giorno = 1,3 kg/giorno × 200 giorni = 260 kg CO₂/anno. Il testo usa 130 g/km come fattore medio per auto a benzina con 1 occupante.",
+      "riferimento_principale": "🔬 SPERIMENTA — BASE — Calcolo le emissioni del mio tragitto"
     },
     {
-      "livello": "A",
-      "domanda": "Cosa si intende per 'trasporto a zero emissioni' e quali sono le sfide tecnologiche?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Per il trasporto di una gita scolastica con 27 persone su 200 km, perché il pullman pieno è probabilmente la scelta più sostenibile?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il trasporto che non produce alcuna emissione durante l'intero ciclo di vita del veicolo",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché le emissioni per passeggero di un pullman pieno sono simili o inferiori al treno, con più flessibilità",
+          "corretto": true,
+          "feedback": "Esatto! Un pullman con 27 persone emette 20-30 g CO₂/km per passeggero — simile al treno. In più offre flessibilità di orario e partenza porta a porta."
         },
         {
           "id": "b",
-          "testo": "Il trasporto che non produce emissioni al punto di utilizzo: elettrico a batteria o a idrogeno. La sfida è produrre l'energia/idrogeno da fonti rinnovabili e gestire la fine vita delle batterie",
-          "corretto": true,
-          "feedback": "Esatto! Un'auto elettrica alimentata da carbone non è 'zero emissioni' nell'intero ciclo."
+          "testo": "Perché il pullman ha sempre meno emissioni di qualsiasi treno",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo precisa che il confronto dipende dall'occupazione: un treno a piena occupazione può essere migliore.",
+          "riferimento": "🔍 OSSERVA — Il caso: progetta il percorso più sostenibile per una gita scolastica a 200 km"
         },
         {
           "id": "c",
-          "testo": "Il trasporto che compensa le proprie emissioni con crediti carbonio",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché i pullman elettrici hanno zero emissioni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo analizza un pullman diesel convenzionale, non elettrico.",
+          "riferimento": "🔍 OSSERVA — Il caso: progetta il percorso più sostenibile per una gita scolastica a 200 km"
         },
         {
           "id": "d",
-          "testo": "Il trasporto che usa biocombustibili certificati",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché il costo è il più basso tra tutte le opzioni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo indica un costo di 20-22 euro a persona — non necessariamente il più basso — e la scelta è motivata da sostenibilità e praticità.",
+          "riferimento": "🔍 OSSERVA — Il caso: progetta il percorso più sostenibile per una gita scolastica a 200 km"
         }
       ],
-      "spiegazione": "Un'auto elettrica alimentata da carbone non è 'zero emissioni' nell'intero ciclo. La decarbonizzazione richiede sia veicoli puliti sia energia verde."
+      "spiegazione": "Un pullman con 27 persone emette 20-30 g CO₂/km per passeggero — paragonabile al treno regionale. In più offre flessibilità di orario e porta-a-porta. Il testo conclude che per questa specifica situazione il pullman è 'probabilmente la scelta più sostenibile e pratica'.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: progetta il percorso più sostenibile per una gita scolastica a 200 km"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'freight on demand' e perché sta crescendo?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Cosa dimostra il paradosso del trasporto pubblico descritto nel testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il trasporto merci su prenotazione telefonica",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Più persone abbandonano il bus, meno il servizio migliora: è un circolo vizioso reversibile con investimenti",
+          "corretto": true,
+          "feedback": "Esatto! Il testo descrive il ciclo: meno utenti → meno risorse → servizio peggiore → altri abbandonano. Ma il contrario funziona: investire attira utenti, che portano risorse, che migliorano il servizio."
         },
         {
           "id": "b",
-          "testo": "Modelli di consegna iperframmentata e veloce (same-day, same-hour) alimentati dall'e-commerce: aumentano la comodità ma moltiplicano i furgoni in circolazione",
-          "corretto": true,
-          "feedback": "Esatto! L'esplosione dell'e-commerce e dei servizi quick-commerce (consegna in 10 minuti) sta moltiplicando i veicoli in città, aumentando traffico e emissioni."
+          "testo": "Il trasporto pubblico è sempre peggiore dell'auto privata per gli utenti",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo mostra che nelle città con investimenti adeguati (Vienna, Amsterdam) il trasporto pubblico è eccellente.",
+          "riferimento": "📖 ESPLORA — Trasporto pubblico: l'efficienza dimenticata"
         },
         {
           "id": "c",
-          "testo": "Un servizio di noleggio veicoli commerciali a breve termine",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il trasporto pubblico è solo per chi non può permettersi un'auto",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non associa il trasporto pubblico alla povertà: è una questione di scelte di investimento e pianificazione.",
+          "riferimento": "📖 ESPLORA — Trasporto pubblico: l'efficienza dimenticata"
         },
         {
           "id": "d",
-          "testo": "Il trasporto di merci deperibili in atmosfera modificata",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "La differenza tra Italia e Nord Europa è culturale, non economica",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo dice esplicitamente il contrario: 'La differenza non è culturale — è di investimento e pianificazione.'",
+          "riferimento": "📖 ESPLORA — Trasporto pubblico: l'efficienza dimenticata"
         }
       ],
-      "spiegazione": "L'esplosione dell'e-commerce e dei servizi quick-commerce (consegna in 10 minuti) sta moltiplicando i veicoli in città, aumentando traffico e emissioni."
+      "spiegazione": "Il paradosso è un circolo vizioso: più utenti abbandonano il mezzo pubblico, meno risorse ha il sistema, peggio funziona, altri lo abbandonano. Il contrario è anche vero: investire nel trasporto pubblico aumenta gli utenti, che portano entrate, che permettono altri investimenti. La differenza tra le città italiane del Sud e quelle di Nord Europa non è culturale ma di investimento.",
+      "riferimento_principale": "📖 ESPLORA — Trasporto pubblico: l'efficienza dimenticata"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "La fast fashion fa percorrere agli indumenti ~20.000 km prima di arrivare nei negozi. Qual è la conseguenza ambientale principale non visibile nel prezzo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I costi ambientali (emissioni, acqua, smaltimento) sono esternalizzati: non sono nel prezzo del prodotto",
+          "corretto": true,
+          "feedback": "Esatto! Il testo spiega che i 'costi esternalizzati' — le emissioni dei trasporti, l'inquinamento dell'acqua, lo smaltimento — non sono inclusi nel prezzo. Se lo fossero, il capo costerebbe molto di più."
+        },
+        {
+          "id": "b",
+          "testo": "Le emissioni sono ridotte perché le navi usano carburante biocombustibile",
+          "corretto": false,
+          "feedback": "Non è corretto. Le navi portacontainer usano bunker fuel, uno dei combustibili più inquinanti, non biocombustibili.",
+          "riferimento": "🌍 Box Geo — Catene di approvvigionamento globali"
+        },
+        {
+          "id": "c",
+          "testo": "L'impatto è trascurabile perché le navi sono molto efficienti",
+          "corretto": false,
+          "feedback": "Non è corretto. Il trasporto marittimo globale produce il 2,5% delle emissioni mondiali di CO₂ — più dell'aviazione.",
+          "riferimento": "🌍 Box Geo — Catene di approvvigionamento globali"
+        },
+        {
+          "id": "d",
+          "testo": "I costi sono compensati dai governi tramite sussidi ai produttori",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non menziona sussidi ai produttori: indica la mancata internalizzazione dei costi ambientali.",
+          "riferimento": "🌍 Box Geo — Catene di approvvigionamento globali"
+        }
+      ],
+      "spiegazione": "I costi ambientali della fast fashion — emissioni di trasporto, consumo d'acqua nella produzione del cotone, inquinamento dei fiumi bangladeshi dai coloranti, smaltimento dei capi usati — non sono inclusi nel prezzo al consumo. Sono 'esternalizzati': pagati non da chi compra né da chi vende, ma dall'ambiente e dalle comunità.",
+      "riferimento_principale": "🌍 Box Geo — Catene di approvvigionamento globali"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Un'auto elettrica in Italia emette circa 45-55 g CO₂/km. Perché non è zero se non emette durante la guida?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché la produzione della batteria e il mix energetico italiano (non al 100% rinnovabile) contribuiscono alle emissioni del ciclo di vita",
+          "corretto": true,
+          "feedback": "Esatto! Il testo usa il concetto di 'emissioni dell'intero ciclo di vita': include la produzione della batteria e le emissioni legate all'elettricità usata per ricaricare."
+        },
+        {
+          "id": "b",
+          "testo": "Perché le auto elettriche consumano olio motore che viene bruciato",
+          "corretto": false,
+          "feedback": "Non è corretto. Le auto elettriche non hanno motori a combustione interna e non bruciano olio motore.",
+          "riferimento": "📖 ESPLORA — Veicoli elettrici: stato attuale"
+        },
+        {
+          "id": "c",
+          "testo": "Perché i freni generano CO₂ durante la frenata",
+          "corretto": false,
+          "feedback": "Non è corretto. I freni generano calore e particolato, non CO₂.",
+          "riferimento": "📖 ESPLORA — Veicoli elettrici: stato attuale"
+        },
+        {
+          "id": "d",
+          "testo": "Perché le auto elettriche hanno un motore a idrogeno che emette vapore",
+          "corretto": false,
+          "feedback": "Non è corretto. Le auto elettriche usano batterie, non idrogeno. Solo le auto a cella a combustibile usano idrogeno.",
+          "riferimento": "📖 ESPLORA — Veicoli elettrici: stato attuale"
+        }
+      ],
+      "spiegazione": "Le emissioni reali di un'auto elettrica includono tutto il 'ciclo di vita': la produzione della batteria (litio, cobalto, ecc.) e le emissioni dell'elettricità usata per ricaricarla. In Italia, dove il mix energetico include ancora gas e carbone, una Tesla Model 3 emette circa 45-55 g CO₂/km — molto meno dei 120-150 g di un'auto a benzina.",
+      "riferimento_principale": "📖 ESPLORA — Veicoli elettrici: stato attuale"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché l'affermazione 'il treno è sempre la scelta più verde' è un'oversimplificazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché un treno semivuoto emette più CO₂ per passeggero-km di un pullman pieno",
+          "corretto": true,
+          "feedback": "Esatto! Il concetto chiave è 'passeggero-km': le emissioni si dividono per il numero di passeggeri. Un treno semivuoto è meno efficiente di un pullman pieno."
+        },
+        {
+          "id": "b",
+          "testo": "Perché i treni italiani usano ancora carbone per produrre elettricità",
+          "corretto": false,
+          "feedback": "Non è corretto. I treni italiani non bruciano carbone direttamente: l'elettricità viene dalla rete, che include un mix di fonti.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "c",
+          "testo": "Perché il treno è più caro dell'auto e quindi ha un impatto sociale negativo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo discute la sostenibilità ambientale, non il costo come misura di sostenibilità.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i treni ad alta velocità consumano più energia delle auto",
+          "corretto": false,
+          "feedback": "Non è corretto. I treni ad alta velocità sono molto più efficienti per passeggero-km rispetto all'auto privata.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        }
+      ],
+      "spiegazione": "Il testo chiarisce che la sostenibilità non si misura solo sul mezzo ma sull'occupazione. Il concetto chiave è 'passeggero-km': se un treno ha 20 passeggeri su 300 posti disponibili, le emissioni per passeggero-km possono essere superiori a quelle di un pullman pieno. La scelta più sostenibile dipende sempre dal contesto specifico.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il Mobility Planner analizza i flussi di spostamento di una città. Quale dato è fondamentale per proporre soluzioni efficaci?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I dati di passeggero-km per mezzo e la distribuzione dei nodi di spostamento non serviti",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che il Mobility Planner identifica 'i nodi critici dove la gente si sposta ma il trasporto è carente' usando dati di flusso per proporre soluzioni integrate."
+        },
+        {
+          "id": "b",
+          "testo": "Il numero di auto immatricolate ogni anno",
+          "corretto": false,
+          "feedback": "Non è corretto. Le immatricolazioni sono un dato parziale: il Mobility Planner analizza i flussi reali di spostamento, non le auto vendute.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "c",
+          "testo": "Il prezzo della benzina nel mercato internazionale",
+          "corretto": false,
+          "feedback": "Non è corretto. Il prezzo della benzina influenza la mobilità ma non è il dato centrale per progettare sistemi di trasporto.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "d",
+          "testo": "La lunghezza totale delle strade in una città",
+          "corretto": false,
+          "feedback": "Non è corretto. La lunghezza delle strade non rivela dove la gente si sposta e quali sono i nodi critici non serviti.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        }
+      ],
+      "spiegazione": "Il Mobility Planner analizza i flussi di spostamento per identificare i nodi critici: dove le persone si spostano ma il trasporto è inadeguato. Il dato fondamentale è il 'passeggero-km' per mezzo, che permette di confrontare l'efficienza reale e proporre soluzioni integrate (bus + bici + car sharing).",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Stai progettando un piano di mobilità scolastica. La proposta di ridurre le emissioni del 20% viene contestata: 'Troppo poco per fare la differenza'. Come rispondi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I dati raccolti, se condivisi con il Comune, possono influenzare decisioni reali (nuove linee bus, rastrelliere bici)",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che l'impatto non è solo diretto: i dati raccolti da un piano scolastico possono diventare input per decisioni pubbliche con scala ben maggiore."
+        },
+        {
+          "id": "b",
+          "testo": "Il 20% è sufficiente per risolvere il cambiamento climatico da solo",
+          "corretto": false,
+          "feedback": "Non è corretto. Nessuna singola azione locale risolve il cambiamento climatico da sola. L'argomento corretto è l'effetto moltiplicatore e la scala sistemica.",
+          "riferimento": "🌍 AGISCI — Badge SDG 11 e 13"
+        },
+        {
+          "id": "c",
+          "testo": "L'impatto non va calcolato in percentuale ma in numeri assoluti di CO₂",
+          "corretto": false,
+          "feedback": "Non è corretto. Usare percentuali o valori assoluti non cambia l'argomento fondamentale: l'impatto a scala locale può influenzare decisioni a scala maggiore.",
+          "riferimento": "🌍 AGISCI — Badge SDG 11 e 13"
+        },
+        {
+          "id": "d",
+          "testo": "L'azione individuale non ha senso: bisogna aspettare le leggi nazionali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo promuove esattamente l'opposto: le azioni locali e i dati raccolti alimentano le decisioni nazionali.",
+          "riferimento": "🌍 AGISCI — Badge SDG 11 e 13"
+        }
+      ],
+      "spiegazione": "Il testo indica che 'i dati che raccogli, se condivisi con il Comune, possono contribuire a decisioni reali: una nuova linea di bus, una rastrelliera per bici, un percorso pedonale sicuro.' L'azione locale non cambia il clima da sola, ma può innescare decisioni a scala più grande.",
+      "riferimento_principale": "🌍 AGISCI — Badge SDG 11 e 13"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "L'auto elettrica raggiunge il 'break-even' delle emissioni rispetto all'auto a benzina dopo 20.000-40.000 km. Cosa significa per la valutazione della sostenibilità?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La produzione della batteria ha un impatto iniziale elevato che si ammortizza solo con l'uso continuato",
+          "corretto": true,
+          "feedback": "Esatto! Il break-even indica che la produzione della batteria crea un 'debito di carbonio' che l'auto elettrica ripaga guidando con energia più pulita. Chi percorre pochi km non raggiunge mai il vantaggio."
+        },
+        {
+          "id": "b",
+          "testo": "L'auto elettrica è sempre più sostenibile dell'auto a benzina fin dal primo km",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo indica un break-even a 20.000-40.000 km: solo dopo quel punto le emissioni cumulative dell'elettrica superano quelle della benzina.",
+          "riferimento": "📖 ESPLORA — Veicoli elettrici: stato attuale"
+        },
+        {
+          "id": "c",
+          "testo": "L'auto a benzina è sempre meno sostenibile per qualsiasi distanza percorsa",
+          "corretto": false,
+          "feedback": "Non è corretto. Prima del break-even (20.000-40.000 km), le emissioni cumulative dell'auto elettrica (inclusa produzione batteria) possono essere superiori.",
+          "riferimento": "📖 ESPLORA — Veicoli elettrici: stato attuale"
+        },
+        {
+          "id": "d",
+          "testo": "Il break-even si calcola solo in termini economici, non ambientali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo usa il break-even in termini di emissioni cumulative di CO₂, non di costo.",
+          "riferimento": "📖 ESPLORA — Veicoli elettrici: stato attuale"
+        }
+      ],
+      "spiegazione": "Il break-even a 20.000-40.000 km significa che la produzione della batteria crea un 'debito di carbonio' che l'auto elettrica recupera gradualmente con guida a energia più pulita. Solo dopo quel punto le emissioni cumulative dell'elettrica diventano inferiori a quelle dell'equivalente benzina. Chi percorre pochi km non raggiunge mai il vantaggio.",
+      "riferimento_principale": "📖 ESPLORA — Veicoli elettrici: stato attuale"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }

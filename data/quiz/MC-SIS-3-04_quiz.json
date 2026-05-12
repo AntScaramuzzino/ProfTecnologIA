@@ -1,259 +1,597 @@
 {
   "mc_id": "MC-SIS-3-04",
-  "titolo": "Processi produttivi, qualità e certificazioni",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è la 'certificazione ISO 9001'?",
+      "domanda": "Secondo il World Economic Forum Future of Jobs 2023, quale percentuale dei bambini delle scuole primarie di oggi lavorerà in mestieri che non esistono ancora?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un marchio di qualità per i prodotti alimentari",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "65%",
+          "corretto": true,
+          "feedback": "Esatto! Il WEF stima che il 65% dei bambini che oggi frequentano la scuola primaria lavorerà in mestieri che non esistono ancora. Questo non significa che non ci si possa preparare: significa che le competenze trasversali contano più di quelle specifiche."
         },
         {
           "id": "b",
-          "testo": "Lo standard internazionale per i sistemi di gestione della qualità: definisce i requisiti per garantire che i processi aziendali siano documentati, monitorati e migliorati continuamente",
-          "corretto": true,
-          "feedback": "Esatto! ISO 9001 certifica il sistema di gestione, non il prodotto."
+          "testo": "20%",
+          "feedback": "Non corretto. La stima del WEF è molto più alta: il 65% dei bambini attuali lavorerà in mestieri non ancora esistenti. Il cambiamento tecnologico è rapidissimo.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "c",
-          "testo": "Una certificazione ambientale per le aziende produttive",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "5%",
+          "feedback": "Non corretto. Il 5% sarebbe una stima molto conservativa. Il WEF stima il 65% dei bambini attuali lavorerà in professioni non ancora esistenti.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "d",
-          "testo": "Il bollino CE obbligatorio sui prodotti venduti in Europa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "100%",
+          "feedback": "Non corretto. Il 100% significherebbe che nessuna professione attuale sopravviverà, il che è eccessivo. La stima WEF è del 65% per i bambini delle scuole primarie.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "ISO 9001 certifica il sistema di gestione, non il prodotto. Un'azienda con ISO 9001 ha processi documentati per garantire coerenza: stessa qualità ogni volta."
+      "spiegazione": "Il WEF (World Economic Forum) Future of Jobs 2023 stima che il 65% dei bambini attuali delle scuole primarie lavorerà in professioni non ancora esistenti. Per chi è in terza media oggi la percentuale è più bassa, ma il principio resta: prepararsi al futuro significa costruire competenze trasversali, non solo scegliere la professione 'giusta' ora.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cosa indica il marchio 'CE' su un prodotto?",
+      "domanda": "Il modello RIASEC classifica le persone in base a sei tipi di interessi. Cosa significa la lettera 'S' in RIASEC?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Che il prodotto è prodotto in Europa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Social (Sociale): chi ama lavorare con le persone, insegnare, aiutare, curare",
+          "corretto": true,
+          "feedback": "Esatto! RIASEC: R=Realistic (pratico), I=Investigative (analitico), A=Artistic (creativo), S=Social (lavora con le persone), E=Enterprising (intraprendente, persuasivo), C=Conventional (metodico, strutturato)."
         },
         {
           "id": "b",
-          "testo": "Che il produttore dichiara che il prodotto rispetta le direttive europee applicabili: sicurezza, salute, ambiente. È obbligatorio per i prodotti venduti nell'UE",
-          "corretto": true,
-          "feedback": "Esatto! Il CE non è un marchio di qualità: è una dichiarazione di conformità del produttore."
+          "testo": "Scientific (Scientifico): chi ama la ricerca e l'analisi dei dati",
+          "feedback": "Non corretto. Il tipo scientifico nel RIASEC è la lettera I (Investigative). La S sta per Social: chi ama lavorare con le persone, insegnare, aiutare, curare.",
+          "riferimento": "📖 ESPLORA — Il modello RIASEC per l'orientamento vocazionale"
         },
         {
           "id": "c",
-          "testo": "Che il prodotto è certificato da un ente europeo indipendente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Systematic (Sistematico): chi preferisce ambienti ordinati e procedure chiare",
+          "feedback": "Non corretto. Il tipo sistematico e metodico è la lettera C (Conventional). La S sta per Social: chi ama lavorare con le persone.",
+          "riferimento": "📖 ESPLORA — Il modello RIASEC per l'orientamento vocazionale"
         },
         {
           "id": "d",
-          "testo": "Che il prodotto è di qualità garantita dall'Unione Europea",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Skilled (Abile): chi ha abilità manuali eccezionali per i lavori artigianali",
+          "feedback": "Non corretto. Il tipo con forte orientamento manuale è la lettera R (Realistic). La S sta per Social: chi ama lavorare con le persone, insegnare, aiutare, curare.",
+          "riferimento": "📖 ESPLORA — Il modello RIASEC per l'orientamento vocazionale"
         }
       ],
-      "spiegazione": "Il CE non è un marchio di qualità: è una dichiarazione di conformità del produttore. Non richiede verifica da ente terzo per molte categorie. Si distingue dal marchio commerciale 'China Export'."
+      "spiegazione": "Il modello RIASEC (Holland): R=Realistic (manuale, pratico), I=Investigative (analitico, ricerca), A=Artistic (creativo, espressivo), S=Social (persone, aiuto, cura), E=Enterprising (leadership, persuasione), C=Conventional (ordine, procedure, precisione). Il codice Holland è una tripletta (es. ISA) che descrive i tre tipi dominanti di una persona.",
+      "riferimento_principale": "📖 ESPLORA — Il modello RIASEC per l'orientamento vocazionale"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il 'controllo qualità' in un processo produttivo?",
+      "domanda": "Qual è la differenza tra 'soft skills' (competenze trasversali) e competenze tecniche, secondo il testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La fase di progettazione del prodotto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le soft skills (comunicazione, pensiero critico, collaborazione) si trasferiscono da un settore a un altro; le competenze tecniche sono specifiche di un settore e si possono rendere obsolete più rapidamente",
+          "corretto": true,
+          "feedback": "Esatto! Le soft skills sono transferable skills: chi sa comunicare bene e pensare in modo critico lo fa in qualsiasi settore, anche se quello specifico cambia. Le competenze tecniche (programmazione in un linguaggio specifico, uso di un software) possono diventare obsolete in anni."
         },
         {
           "id": "b",
-          "testo": "L'insieme di attività per verificare che il prodotto rispetti le specifiche definite: ispezione, test, misurazioni, campionamento statistico",
-          "corretto": true,
-          "feedback": "Esatto! Il controllo qualità rileva difetti dopo che si sono prodotti."
+          "testo": "Le soft skills si imparano solo tramite corsi specifici; le competenze tecniche si imparano sul lavoro",
+          "feedback": "Non corretto. Le soft skills si sviluppano principalmente attraverso l'esperienza (pratiche di team, laboratori, compiti di realtà), non necessariamente tramite corsi. Le competenze tecniche si imparano sia a scuola sia sul lavoro.",
+          "riferimento": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
         },
         {
           "id": "c",
-          "testo": "La certificazione esterna della qualità del prodotto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le soft skills sono valutate con i voti scolastici; le competenze tecniche con i certificati professionali",
+          "feedback": "Non corretto. Le soft skills (comunicazione, pensiero critico) sono difficilmente valutabili con voti standardizzati. Si dimostrano attraverso portfolio, progetti, esperienze pratiche.",
+          "riferimento": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
         },
         {
           "id": "d",
-          "testo": "Il sistema di feedback dei clienti sul prodotto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le soft skills sono innate e non si possono sviluppare; le competenze tecniche si imparano sempre con lo studio",
+          "feedback": "Non corretto. Le soft skills NON sono innate: si sviluppano attraverso pratica, feedback, esperienza. Il testo dice esplicitamente che il libro stesso è costruito per sviluppare competenze trasversali.",
+          "riferimento": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
         }
       ],
-      "spiegazione": "Il controllo qualità rileva difetti dopo che si sono prodotti. La 'qualità by design' (TQM, Six Sigma) previene i difetti dalla fonte: molto più efficiente."
+      "spiegazione": "Soft skills (competenze trasversali) vs competenze tecniche: Soft skills = comunicazione, collaborazione, pensiero critico, adattabilità, intelligenza emotiva → transferable tra settori diversi, difficilmente automatizzabili. Competenze tecniche = specifiche di un settore/strumento → si possono rendere obsolete rapidamente (es. un linguaggio di programmazione che esce di uso). Nel 2025, >50% dei lavoratori dovrà riqualificarsi significativamente.",
+      "riferimento_principale": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Il testo cita quattro 'megatrend' che stanno trasformando il mercato del lavoro. Quale non fa parte di questi quattro?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'aumento della popolazione mondiale che crea più consumatori",
+          "corretto": true,
+          "feedback": "Esatto! L'aumento della popolazione mondiale (sebbene rilevante per altri aspetti) non è uno dei quattro megatrend citati. I quattro sono: automazione/IA, crisi climatica/transizione ecologica, cambiamenti demografici (invecchiamento), e digitalizzazione."
+        },
+        {
+          "id": "b",
+          "testo": "Automazione e intelligenza artificiale",
+          "feedback": "Non corretto. L'automazione e l'IA è esplicitamente il primo dei quattro megatrend citati nel testo: entro il 2027 si stima la creazione di 69M di nuovi posti e la distruzione di 83M.",
+          "riferimento": "📖 ESPLORA — I megatrend che stanno trasformando il lavoro"
+        },
+        {
+          "id": "c",
+          "testo": "Crisi climatica e transizione ecologica",
+          "feedback": "Non corretto. La crisi climatica e la transizione ecologica è il secondo megatrend: edilizia, energia, industria, trasporti devono decarbonizzarsi, creando nuovi mercati e professioni.",
+          "riferimento": "📖 ESPLORA — I megatrend che stanno trasformando il lavoro"
+        },
+        {
+          "id": "d",
+          "testo": "Cambiamenti demografici (invecchiamento della popolazione)",
+          "feedback": "Non corretto. I cambiamenti demografici (invecchiamento nei paesi sviluppati) sono il terzo megatrend: alta domanda di lavoro nel settore cura/sanità, necessità di produttività più alta.",
+          "riferimento": "📖 ESPLORA — I megatrend che stanno trasformando il lavoro"
+        }
+      ],
+      "spiegazione": "I quattro megatrend del mercato del lavoro citati nel testo: 1) Automazione e IA (saldo -14M posti 2023-2027), 2) Crisi climatica e transizione ecologica (edilizia, energia, industria si trasformano), 3) Cambiamenti demografici (invecchiamento → sanità, cura), 4) Digitalizzazione (anche settori tradizionali incorporano tecnologie digitali). L'aumento della popolazione mondiale non è uno dei quattro megatrend identificati.",
+      "riferimento_principale": "📖 ESPLORA — I megatrend che stanno trasformando il lavoro"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cos'è un 'portfolio delle competenze' secondo il testo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una raccolta di prove concrete di quello che sai fare: progetti realizzati, problemi risolti, processi migliorati — non un curriculum vitae con titoli di studio",
+          "corretto": true,
+          "feedback": "Esatto! Il portfolio non è un CV (lista di titoli, date, posizioni). È una raccolta di prove concrete: 'Ho progettato questo oggetto in CAD', 'Ho analizzato l'impronta carbonica della mia famiglia', 'Ho gestito questo progetto di gruppo'. Ogni compito di realtà del libro è un pezzo potenziale di portfolio."
+        },
+        {
+          "id": "b",
+          "testo": "Un documento contabile con il valore monetario delle competenze di una persona",
+          "feedback": "Non corretto. Il portfolio delle competenze non è un bilancio monetario. È una raccolta di prove concrete di quello che sai fare: progetti, lavori, soluzioni a problemi reali.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        },
+        {
+          "id": "c",
+          "testo": "Una lista di corsi di formazione completati con i relativi certificati",
+          "feedback": "Non corretto. Una lista di corsi è più simile a un CV che a un portfolio. Il portfolio mostra PROVE di competenza (progetti, artefatti), non solo titoli e certificazioni.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        },
+        {
+          "id": "d",
+          "testo": "Un social network professionale come LinkedIn dove si mostrano le esperienze lavorative",
+          "feedback": "Non corretto. LinkedIn è uno strumento per documentare la rete professionale e le esperienze, ma non è la stessa cosa del portfolio. Il portfolio contiene artefatti e prove concrete di competenza, non solo descrizioni di esperienze.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        }
+      ],
+      "spiegazione": "Il portfolio delle competenze: raccolta di PROVE CONCRETE di quello che sai fare. Per uno studente di terza media: il progetto CAD di MC-DIS-3-02, l'analisi dell'impronta carbonica di MC-ENE-3-02, il Business Model Canvas di MC-SIS-3-03, il piano energetico della scuola di MC-ENE-3-03. Ogni compito di realtà è un pezzo potenziale di portfolio. Mostra cosa sai FARE, non solo cosa hai STUDIATO.",
+      "riferimento_principale": "📖 ESPLORA — Come si costruisce un percorso professionale"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa sono i PCTO (Percorsi per le Competenze Trasversali e per l'Orientamento)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Lo strumento istituzionale per acquisire esperienza professionale reale durante la scuola superiore ('alternanza scuola-lavoro')",
+          "corretto": true,
+          "feedback": "Esatto! I PCTO (ex alternanza scuola-lavoro) sono stage e percorsi che le scuole superiori devono attivare per permettere agli studenti di acquisire competenze in contesti lavorativi reali. Non è solo 'fare lo stage': è documentare le competenze acquisite."
+        },
+        {
+          "id": "b",
+          "testo": "Una piattaforma online per trovare lavoro dopo il diploma",
+          "feedback": "Non corretto. I PCTO non sono una piattaforma di job placement. Sono percorsi didattici che combinano formazione scolastica con esperienza in contesti lavorativi reali, durante gli anni della scuola superiore.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        },
+        {
+          "id": "c",
+          "testo": "Esami speciali che si sostituiscono alla maturità per chi vuole entrare nel mondo del lavoro",
+          "feedback": "Non corretto. I PCTO non sostituiscono la maturità. Sono esperienze di apprendimento in contesti lavorativi che integrano la formazione scolastica e vengono presentate al colloquio dell'esame di maturità.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        },
+        {
+          "id": "d",
+          "testo": "Corsi di formazione professionale per adulti disoccupati finanziati dalla Regione",
+          "feedback": "Non corretto. Quelli sono i corsi di formazione professionale regionali (riqualificazione). I PCTO sono percorsi per gli STUDENTI delle scuole superiori, non per adulti disoccupati.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        }
+      ],
+      "spiegazione": "PCTO (Percorsi per le Competenze Trasversali e per l'Orientamento), ex alternanza scuola-lavoro: obbligatori nelle scuole superiori italiane (200-400 ore nei 5 anni, secondo l'indirizzo). Non sono 'solo stage': il valore è nell'acquisire competenze in contesti reali e documentarle per il portfolio. Vanno presentati al colloquio dell'esame di maturità.",
+      "riferimento_principale": "📖 ESPLORA — Come si costruisce un percorso professionale"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'Six Sigma' nella gestione della qualità?",
+      "domanda": "Il testo analizza 5 offerte di lavoro reali (tecnico fotovoltaico, data analyst, educatore, UX designer, agronomo di precisione). Quale competenza trasversale è richiesta da tutti e cinque i profili?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema di classificazione dei difetti in 6 categorie",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Comunicazione chiara, lavoro in team, pensiero critico, capacità di gestire dati di qualche tipo, autonomia organizzativa",
+          "corretto": true,
+          "feedback": "Esatto! Il testo evidenzia esplicitamente: 'tutte e cinque — settori completamente diversi — richiedono: comunicazione chiara, lavoro in team, pensiero critico, capacità di gestire dati di qualche tipo, autonomia organizzativa'. Le competenze tecniche variano; il nucleo trasversale è quasi identico."
         },
         {
           "id": "b",
-          "testo": "Una metodologia di miglioramento qualità che punta a ridurre i difetti a meno di 3.4 per milione di opportunità usando analisi statistica (DMAIC: Define, Measure, Analyze, Improve, Control)",
-          "corretto": true,
-          "feedback": "Esatto! Six Sigma nasce in Motorola (1986) e viene adottato da GE sotto Jack Welch."
+          "testo": "Conoscenza approfondita dell'inglese tecnico specifico del settore",
+          "feedback": "Non corretto. L'inglese non è esplicitamente citato come competenza comune a tutti e 5 i profili. Le competenze trasversali identificate riguardano comunicazione, team, pensiero critico, dati, autonomia.",
+          "riferimento": "🔍 OSSERVA — Il caso: 5 offerte di lavoro reali in 5 settori"
         },
         {
           "id": "c",
-          "testo": "La norma ISO con 6 requisiti fondamentali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Uso avanzato di Microsoft Office e degli strumenti di produttività digitale",
+          "feedback": "Non corretto. Microsoft Office non è citato come competenza comune universale. Il nucleo trasversale comune identificato è comunicazione, team, pensiero critico, gestione dati, autonomia.",
+          "riferimento": "🔍 OSSERVA — Il caso: 5 offerte di lavoro reali in 5 settori"
         },
         {
           "id": "d",
-          "testo": "Un sistema di certificazione per 6 livelli di qualità",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Disponibilità a lavorare in turni e in ambienti difficili",
+          "feedback": "Non corretto. La disponibilità a turni è specifica di alcuni profili (tecnico fotovoltaico, educatore) ma non è una competenza trasversale universale. Il nucleo comune è comunicazione, team, pensiero critico, dati, autonomia.",
+          "riferimento": "🔍 OSSERVA — Il caso: 5 offerte di lavoro reali in 5 settori"
         }
       ],
-      "spiegazione": "Six Sigma nasce in Motorola (1986) e viene adottato da GE sotto Jack Welch. I 'Black Belt' sono esperti certificati in metodologie statistiche di miglioramento."
+      "spiegazione": "Analisi delle 5 offerte di lavoro: tecnico fotovoltaico + data analyst + educatore + UX designer + agronomo di precisione. Tutte e cinque richiedono: comunicazione chiara, lavoro in team, pensiero critico, capacità di gestire dati (in forme diverse), autonomia organizzativa. Le competenze tecniche sono completamente diverse; il nucleo trasversale è quasi identico. Questo conferma che investire nelle soft skills è un'assicurazione sul futuro professionale.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: 5 offerte di lavoro reali in 5 settori"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è la 'norma UNI EN ISO' e cosa garantisce?",
+      "domanda": "Il testo descrive lo 'STEM gap': le donne rappresentano solo il 17% dei laureati in informatica. Il testo elenca cause documentate. Quale NON è una causa documentata nel testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una norma esclusivamente italiana",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Le donne hanno capacità matematiche biologicamente inferiori agli uomini",
+          "corretto": true,
+          "feedback": "Esatto! Questa affermazione è esplicitamente confutata nel testo: 'le ragazze ottengono risultati scolastici uguali o migliori dei ragazzi nelle materie scientifiche fino alla scuola secondaria'. La disparità emerge nelle scelte di indirizzo, non nelle capacità."
         },
         {
           "id": "b",
-          "testo": "Una norma adottata simultaneamente da enti di normazione italiano (UNI), europeo (EN) e internazionale (ISO): garantisce compatibilità e interoperabilità globale",
-          "corretto": true,
-          "feedback": "Esatto! Le norme UNI EN ISO sono recepite contemporaneamente: chi rispetta ISO 9001 rispetta EN 9001 e UNI EN ISO 9001."
+          "testo": "Stereotipi culturali interiorizzati precocemente (prima dei 10 anni) attraverso i giocattoli e i media",
+          "feedback": "Non corretto. Questa è una delle cause documentate nel testo. Il testo dice che l'idea che 'la tecnologia è per i maschi' viene interiorizzata spesso prima dei 10 anni.",
+          "riferimento": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
         },
         {
           "id": "c",
-          "testo": "Una norma che certifica i prodotti di lusso italiani",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Mancanza di modelli di ruolo femminili visibili nelle carriere tecniche",
+          "feedback": "Non corretto. Questa è una delle cause documentate nel testo: 'se non vedi donne che lavorano in informatica, è più difficile immaginarti in quel ruolo'.",
+          "riferimento": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
         },
         {
           "id": "d",
-          "testo": "Un sistema di classificazione delle aziende per settore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Aspettative degli insegnanti (Effetto Pigmalione) che comunicano inconsciamente minori aspettative verso le ragazze in matematica",
+          "feedback": "Non corretto. L'effetto Pigmalione è esplicitamente citato nel testo come causa documentata dello STEM gap.",
+          "riferimento": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
         }
       ],
-      "spiegazione": "Le norme UNI EN ISO sono recepite contemporaneamente: chi rispetta ISO 9001 rispetta EN 9001 e UNI EN ISO 9001. Eliminano barriere tecniche al commercio internazionale."
+      "spiegazione": "Il testo elenca cause documentate dello STEM gap: stereotipi culturali precoci, effetto Pigmalione (aspettative insegnanti), mancanza di modelli di ruolo femminili, ambiente ostile nelle comunità tech. NON elenca 'capacità biologiche inferiori' come causa: il testo afferma esplicitamente che le ragazze hanno risultati uguali o superiori in matematica fino alla scuola secondaria. La disparità è culturale e sociale, non biologica.",
+      "riferimento_principale": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è la tracciabilità di un prodotto e perché è fondamentale nella sicurezza alimentare?",
+      "domanda": "Il testo descrive l''adattabilità' come una competenza trasversale critica. In quale modo specifico la descrive che la distingue dalla semplice 'flessibilità'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il sistema GPS per localizzare i mezzi di trasporto del prodotto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'adattabilità include la capacità di imparare cose nuove rapidamente, lavorare in contesti di incertezza, e cambiare metodo quando quello che funzionava smette di funzionare",
+          "corretto": true,
+          "feedback": "Esatto! L'adattabilità è più specifica della generica 'flessibilità': include la capacità di apprendimento rapido (acquisire nuove competenze in tempi brevi), la tolleranza all'incertezza (lavorare senza tutte le informazioni necessarie), e la capacità di abbandonare metodi consolidati quando non funzionano più."
         },
         {
           "id": "b",
-          "testo": "La capacità di ricostruire la storia e il percorso di un prodotto attraverso la catena di produzione/distribuzione: fondamentale per ritirare prodotti contaminati",
-          "corretto": true,
-          "feedback": "Esatto! Il Regolamento CE 178/2002 impone la tracciabilità alimentare 'un passo avanti, un passo indietro': ogni operatore deve sapere da chi ha ricevuto e a chi ha consegnato."
+          "testo": "L'adattabilità significa essere disponibili a lavorare in qualsiasi posto geografico, anche all'estero",
+          "feedback": "Non corretto. La mobilità geografica non è la definizione di adattabilità nel testo. L'adattabilità riguarda la capacità di apprendimento rapido, la tolleranza all'incertezza, e il cambiamento dei metodi quando necessario.",
+          "riferimento": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
         },
         {
           "id": "c",
-          "testo": "Il codice a barre che identifica il prodotto al supermercato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'adattabilità significa accettare qualsiasi condizione lavorativa senza lamentarsi",
+          "feedback": "Non corretto. L'adattabilità non significa passività o accettazione di condizioni svantaggiose. È una capacità attiva: apprendimento rapido, tolleranza all'incertezza, disponibilità a cambiare metodo.",
+          "riferimento": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
         },
         {
           "id": "d",
-          "testo": "Il sistema di controllo della temperatura nella catena del freddo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'adattabilità è sinonimo di intelligenza emotiva: chi è emotivamente intelligente si adatta bene",
+          "feedback": "Non corretto. Intelligenza emotiva e adattabilità sono due competenze diverse nel testo, entrambe elencate come distinte. L'intelligenza emotiva riguarda il riconoscimento e la gestione delle emozioni; l'adattabilità riguarda l'apprendimento rapido e il cambiamento di metodo.",
+          "riferimento": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
         }
       ],
-      "spiegazione": "Il Regolamento CE 178/2002 impone la tracciabilità alimentare 'un passo avanti, un passo indietro': ogni operatore deve sapere da chi ha ricevuto e a chi ha consegnato."
+      "spiegazione": "Adattabilità nel testo: capacità di imparare cose nuove rapidamente (upskilling veloce), lavorare in contesti di alta incertezza (senza tutte le informazioni), cambiare metodo quando quello attuale smette di funzionare (abbandonare approcci consolidati). Il WEF stima che nel 2025 oltre il 50% dei lavoratori dovrà riqualificarsi: l'adattabilità è la meta-competenza che rende possibile questa riqualificazione.",
+      "riferimento_principale": "📖 ESPLORA — Le competenze trasversali: perché contano più del titolo di studio"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'Total Quality Management' (TQM) e come si distingue dal semplice controllo qualità?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo afferma che le competenze STEM (tecnico fotovoltaico, analista dati, ecc.) offrono alcune delle professioni più richieste ma che lo STEM gap esclude molte persone da queste opportunità. Quali azioni concrete cita il testo per ridurre il gap?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema di controllo qualità automatizzato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Programmi di mentoring con professioniste STEM, rappresentazione nei libri di testo e nei media, laboratori di coding inclusivi, sensibilizzazione degli insegnanti sugli stereotipi inconsci",
+          "corretto": true,
+          "feedback": "Esatto! Il testo cita quattro azioni concrete: 1) mentoring (ragazze con professioniste STEM), 2) rappresentazione (visibilità di modelli femminili nei media e libri di testo), 3) laboratori inclusivi (coding e robotica in contesti non stereotipati), 4) formazione degli insegnanti sugli stereotipi inconsci."
         },
         {
           "id": "b",
-          "testo": "Una filosofia di gestione aziendale in cui la qualità è responsabilità di tutti i livelli dell'organizzazione, non solo del reparto QC: coinvolge design, produzione, fornitori, clienti",
-          "corretto": true,
-          "feedback": "Esatto! Nel TQM la qualità non si controlla dopo la produzione: si costruisce nel processo."
+          "testo": "Abbassare i requisiti matematici nei corsi STEM per renderli più accessibili alle ragazze",
+          "feedback": "Non corretto. Il testo non suggerisce di abbassare gli standard accademici. Il problema non è la difficoltà dei corsi STEM ma le barriere culturali e sociali che scoraggiano le ragazze dall'avvicinarsi a questi percorsi.",
+          "riferimento": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
         },
         {
           "id": "c",
-          "testo": "Il sistema di certificazione ISO di livello avanzato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Creare scuole separate per ragazze e ragazzi in modo da eliminare la competizione mista",
+          "feedback": "Non corretto. La separazione delle scuole non è citata come soluzione nel testo. Le soluzioni proposte riguardano i modelli di ruolo, il mentoring e la sensibilizzazione culturale, non la separazione.",
+          "riferimento": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
         },
         {
           "id": "d",
-          "testo": "Un metodo per ridurre i costi di ispezione finale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rendere obbligatoria la laurea STEM per tutte le professsioni, indipendentemente dal settore",
+          "feedback": "Non corretto. Rendere la laurea STEM obbligatoria non è citato come soluzione. L'obiettivo è permettere a chi vuole scegliere un percorso STEM di farlo senza barriere culturali, non obbligare tutti.",
+          "riferimento": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
         }
       ],
-      "spiegazione": "Nel TQM la qualità non si controlla dopo la produzione: si costruisce nel processo. I fornitori sono partner, i clienti definiscono la qualità, tutti contribuiscono al miglioramento."
+      "spiegazione": "Le quattro azioni concrete citate: 1) Programmi di mentoring (ragazze con professioniste STEM che mostrano che è possibile); 2) Rappresentazione (libri di testo e media con donne in ruoli tecnici); 3) Laboratori inclusivi (coding/robotica con approcci non stereotipati); 4) Sensibilizzazione degli insegnanti (gli stereotipi inconsci influenzano le aspettative che influenzano le prestazioni → effetto Pigmalione). Il testo stesso si presenta come un esempio di tentativo di rappresentazione.",
+      "riferimento_principale": "📖 ESPLORA — Lo STEM gap: perché le ragazze sono sottorappresentate nelle carriere tecniche"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'blockchain' applicata alla tracciabilità dei prodotti?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo afferma che il WEF stima che nel 2025 'oltre il 50% dei lavoratori avrà bisogno di riqualificazione significativa'. Come si collega questa stima al concetto di 'apprendimento continuo' descritto nel testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sistema di pagamento elettronico per le aziende",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'apprendimento non finisce con la scuola: è una pratica permanente necessaria per mantenere la propria rilevanza professionale in un mercato che cambia rapidamente",
+          "corretto": true,
+          "feedback": "Esatto! Se la metà dei lavoratori deve riqualificarsi in 5 anni, il modello 'studio una volta per tutta la vita' non funziona più. L'apprendimento continuo — aggiornare le competenze tramite corsi online, certificazioni, esperienza pratica — diventa una necessità professionale, non un'opzione."
         },
         {
           "id": "b",
-          "testo": "Un registro distribuito e immutabile in cui ogni transazione della supply chain viene registrata: ogni partecipante può verificare l'autenticità senza affidarsi a un'autorità centrale",
-          "corretto": true,
-          "feedback": "Esatto! Walmart usa blockchain per tracciare la lattuga: in caso di contaminazione, identifica la fattoria d'origine in 2 secondi invece di 7 giorni."
+          "testo": "Significa che le scuole sono inutili: tutto si impara meglio sul lavoro e non serve la formazione formale",
+          "feedback": "Non corretto. Il testo non sostiene l'inutilità della scuola. Dice che l'apprendimento non si ferma con la scuola: la formazione iniziale è fondamentale, ma deve essere seguita da apprendimento permanente lungo tutta la carriera.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
         },
         {
           "id": "c",
-          "testo": "Un sistema di crittografia per i documenti aziendali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Significa che i lavoratori sopra i 40 anni devono essere sostituiti da giovani con competenze più aggiornate",
+          "feedback": "Non corretto. Il testo non sostiene la sostituzione dei lavoratori anziani. L'apprendimento continuo riguarda TUTTI i lavoratori di qualsiasi età che devono aggiornare le proprie competenze.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
         },
         {
           "id": "d",
-          "testo": "Una tecnologia di gestione dei magazzini automatizzati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Significa che non si può pianificare la propria carriera: è inutile pensare al futuro professionale",
+          "feedback": "Non corretto. Il testo propone esattamente l'opposto: costruire una mappa di competenze trasversali e un percorso professionale iterativo (come un Lean Startup applicato alla propria vita) è il modo per navigare il cambiamento.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
         }
       ],
-      "spiegazione": "Walmart usa blockchain per tracciare la lattuga: in caso di contaminazione, identifica la fattoria d'origine in 2 secondi invece di 7 giorni. IBM Food Trust è il sistema più diffuso."
+      "spiegazione": "La stima WEF (50% riqualificazione entro 2025) e il concetto di apprendimento continuo si collegano: se le competenze diventano obsolete in 5-7 anni in molti settori, l'apprendimento non può finire con la scuola. Piattaforme come Coursera, edX, Google Skillshop rendono accessibile la formazione continua. L'apprendimento permanente è la risposta individuale alla velocità del cambiamento tecnologico.",
+      "riferimento_principale": "📖 ESPLORA — Come si costruisce un percorso professionale"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'certificazione etica' SA8000 e cosa verifica?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo afferma che i dati di crescita delle professioni ('specialisti big data +2,3M di posti') si confrontano con dati di declino ('addetti data entry -3M'). Quale osservazione metodologica fa il testo su questi dati?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La certificazione ambientale per le aziende manifatturiere",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "'I posti che spariscono sono concentrati in certi settori e geografie; quelli che nascono, in altri.' La distribuzione geografica e settoriale è diversa, non solo il saldo totale",
+          "corretto": true,
+          "feedback": "Esatto! Il testo fa questa osservazione metodologica critica: il saldo netto può essere positivo (69M creati vs 83M eliminati = -14M, ma contando anche quelli creati in altri scenari il saldo cambia) ma la DISTRIBUZIONE non è uniforme. Chi perde lavoro in un settore/area non può automaticamente trovarne uno nell'altro."
         },
         {
           "id": "b",
-          "testo": "Uno standard internazionale per la responsabilità sociale delle aziende nella supply chain: verifica condizioni di lavoro, lavoro minorile, ore, salari, sicurezza, libertà di associazione",
-          "corretto": true,
-          "feedback": "Esatto! SA8000 (Social Accountability International) certifica che la supply chain rispetta i diritti dei lavoratori."
+          "testo": "I dati WEF sono inaffidabili e non dovrebbero essere usati per l'orientamento professionale",
+          "feedback": "Non corretto. Il testo usa i dati WEF come riferimento. L'osservazione metodologica non mette in dubbio l'affidabilità dei dati ma la loro interpretazione (saldo netto ≠ transizione senza problemi).",
+          "riferimento": "📖 ESPLORA — Professioni in crescita e in declino"
         },
         {
           "id": "c",
-          "testo": "La certificazione di bilancio etico-ambientale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I dati di crescita e declino si compensano esattamente: non ci saranno problemi occupazionali complessivi",
+          "feedback": "Non corretto. Il testo non afferma che tutto si compensi perfettamente. Anzi, cita un 'saldo negativo di 14 milioni' e nota che la distribuzione è fondamentalmente diseguale.",
+          "riferimento": "📖 ESPLORA — Professioni in crescita e in declino"
         },
         {
           "id": "d",
-          "testo": "Un sistema di rating ESG per gli investitori",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I dati si riferiscono solo all'Europa e non sono applicabili all'Italia",
+          "feedback": "Non corretto. I dati WEF sono globali, non solo europei. E il testo li usa per discussioni applicabili anche al contesto italiano.",
+          "riferimento": "📖 ESPLORA — Professioni in crescita e in declino"
         }
       ],
-      "spiegazione": "SA8000 (Social Accountability International) certifica che la supply chain rispetta i diritti dei lavoratori. Importante per le aziende che producono in paesi con standard lavorativi bassi."
+      "spiegazione": "L'osservazione metodologica critica: il saldo numerico (+69M creati, -83M eliminati = -14M netto) non cattura la distribuzione geografica e settoriale. I posti di data entry persi sono nelle città e in tutti i settori; i nuovi posti di big data specialist nascono in specifiche aree tecnologiche e geografiche. La transizione richiede politiche attive di riqualificazione, non solo la 'magia del mercato' che compenserebbe automaticamente.",
+      "riferimento_principale": "📖 ESPLORA — Professioni in crescita e in declino"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'non esiste una scelta professionale che garantisce stabilità per 40 anni'. Come cambia questa affermazione il modo di pensare all'orientamento scolastico rispetto al modello tradizionale di 'scegliere la professione giusta'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'orientamento dovrebbe puntare a costruire competenze trasversali solide e flessibili invece di ottimizzare per un singolo percorso professionale: si tratta di aumentare la 'resilienza professionale' nella variabilità",
+          "corretto": true,
+          "feedback": "Esatto! Se nessun percorso professionale garantisce stabilità per 40 anni, l'obiettivo non è 'trovare il lavoro giusto per sempre' ma costruire una base di competenze (soft skills + competenze tecniche aggiornabili) che permetta di adattarsi. Il testo dice: 'non esiste una scelta professionale stabile; esiste un modo di costruire competenze che aumenta la capacità di adattarsi'."
+        },
+        {
+          "id": "b",
+          "testo": "Non ha senso fare orientamento: tanto nessuno sa quale professione fare e qualsiasi scelta è uguale",
+          "feedback": "Non corretto. Il testo non sostiene l'equivalenza di tutte le scelte. Dice che invece di ottimizzare per una singola professione 'sicura', è meglio costruire competenze trasversali che permettano l'adattamento. L'orientamento rimane utile con questo obiettivo diverso."
+        },
+        {
+          "id": "c",
+          "testo": "I giovani dovrebbero evitare qualsiasi specializzazione professionale e rimanere generalisti",
+          "feedback": "Non corretto. Il testo non sostiene il puro generalismo. Dice di costruire competenze sia tecniche (alcune specializzazioni) sia trasversali (trasferibili). Il mix è importante: non specializzazione rigida ma nemmeno mancanza di competenze specifiche."
+        },
+        {
+          "id": "d",
+          "testo": "Gli insegnanti e i genitori non dovrebbero dare consigli sull'orientamento perché il mercato del lavoro è imprevedibile",
+          "feedback": "Non corretto. Il testo non sostiene il silenzio degli adulti sull'orientamento. Chiede invece un orientamento basato su competenze trasversali e autoconoscenza, piuttosto che su previsioni di professioni specifiche 'sicure'."
+        }
+      ],
+      "spiegazione": "Il modello tradizionale: 'scegli il percorso giusto ora → avrai stabilità per sempre'. Il nuovo modello: 'costruisci competenze trasversali solide + alcune specializzazioni aggiornabili → puoi navigare le transizioni professionali future'. Tra il 2000 e il 2020, molti lavori 'sicuri' sono quasi scomparsi (cassieri bancari, tipografi, operatori centralino). Non è pessimismo: è realismo che porta a prepararsi diversamente.",
+      "riferimento_principale": "📖 ESPLORA — Come si costruisce un percorso professionale"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "La mappa 'da MC a professione' mostra che MC-DIG-2-02 (privacy, identità digitale) porta a DPO (Data Protection Officer) e cybersecurity analyst. Come si usa questo tipo di connessione per costruire un percorso formativo coerente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Identificando le MC che sviluppano competenze simili a quelle richieste dalla professione target, poi cercando percorsi formativi (liceo, istituto tecnico) che approfondiscono quelle aree",
+          "corretto": true,
+          "feedback": "Esatto! Se si è interessati alla cybersecurity: 1) identifico le MC rilevanti (DIG-2-02, DIG-3-01, DIG-3-03), 2) cerco quale percorso scolastico superiore sviluppa quelle competenze (istituto tecnico informatico, liceo scientifico con potenziamento digitale), 3) cerco PCTO in aziende di sicurezza informatica, 4) costruisco il portfolio di competenze."
+        },
+        {
+          "id": "b",
+          "testo": "Seguendo solo le MC con il punteggio più alto nel proprio voto scolastico, indipendentemente dalla professione target",
+          "feedback": "Non corretto. Il percorso formativo dovrebbe essere guidato dagli interessi e dalla coerenza con gli obiettivi professionali, non solo dai voti. Spesso le competenze si sviluppano meglio nelle aree dove c'è curiosità e motivazione.",
+          "riferimento": "📖 ESPLORA — Mappa 'da MC a professione'"
+        },
+        {
+          "id": "c",
+          "testo": "Applicando per ogni professione target solo il programma ufficiale del ministero, senza altri apprendimenti",
+          "feedback": "Non corretto. Il testo enfatizza la costruzione attiva di un percorso con portfolio, PCTO, apprendimento continuo. Il programma ministeriale è la base, non l'unico elemento.",
+          "riferimento": "📖 ESPLORA — Mappa 'da MC a professione'"
+        },
+        {
+          "id": "d",
+          "testo": "La mappa ha scopo decorativo e non può essere usata per l'orientamento pratico",
+          "feedback": "Non corretto. Il testo presenta la mappa come strumento pratico di orientamento e ne suggerisce l'uso per il colloquio d'esame di terza media. È uno strumento operativo, non decorativo.",
+          "riferimento": "📖 ESPLORA — Mappa 'da MC a professione'"
+        }
+      ],
+      "spiegazione": "Come usare la mappa MC → professione: 1) Identifica la professione che ti interessa (es. cybersecurity analyst). 2) Guarda quali MC sviluppano competenze rilevanti (MC-DIG-2-02 privacy, MC-DIG-3-01 robotica, MC-DIG-3-03 IoT/dati). 3) Scegli il percorso superiore che approfondisce quelle aree (istituto tecnico informatico, liceo scientifico). 4) Cerca PCTO coerenti. 5) Costruisci il portfolio con i lavori di quelle MC. La mappa collega il presente (scuola media) al futuro (professione).",
+      "riferimento_principale": "📖 ESPLORA — Mappa 'da MC a professione'"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo dice che il career coach 'non dice alle persone cosa fare della loro vita. Le aiuta a vedere quello che già sanno di sé, ma non hanno ancora guardato.' Quale principio metodologico sottende questa distinzione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'orientamento professionale efficace parte dall'autoconoscenza (preferenze, competenze, valori) della persona, non dall'imposizione di percorsi esterni: il coach facilita la riflessione, non prescrive soluzioni",
+          "corretto": true,
+          "feedback": "Esatto! Il principio è la distinzione tra facilitazione e prescrizione nell'orientamento. Prescrivere ('devi fare l'ingegnere') non funziona perché ignora la complessità individuale. Facilitare la riflessione ('quali attività ti hanno coinvolto di più? Quando ti senti più capace?') permette alla persona di costruire autonomamente una direzione più autentica e sostenibile."
+        },
+        {
+          "id": "b",
+          "testo": "Il career coach non può dare consigli perché non conosce abbastanza il mercato del lavoro del futuro",
+          "feedback": "Non corretto. Il career coach usa effettivamente conoscenze del mercato del lavoro. La distinzione non riguarda la competenza professionale ma l'approccio metodologico: facilitazione vs prescrizione.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "c",
+          "testo": "Il career coach fa solo test psicologici standardizzati per determinare la professione adatta",
+          "feedback": "Non corretto. I test (incluso il RIASEC) sono strumenti, non la totalità del processo. Il testo cita un approccio basato su 'evidenze' (test, feedback ricevuti, lavori svolti) non solo sui test psicologici.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "d",
+          "testo": "Il career coach non parla mai direttamente con la persona: usa solo questionari scritti per evitare bias",
+          "feedback": "Non corretto. La relazione con la persona è centrale nel coaching. Il testo descrive un processo che usa 'ascolto attivo' come competenza chiave: richiede interazione diretta, non solo questionari.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        }
+      ],
+      "spiegazione": "Il principio metodologico: nella facilitazione dell'orientamento, il coach NON decide per la persona ma la aiuta a scoprire cosa sa già di sé (preferenze, competenze, valori) ma non ha ancora articolato consapevolmente. Il test RIASEC è uno strumento di riflessione, non una 'macchina che decide'. La distinzione facilita/prescrive è fondamentale: le decisioni di vita autonome (non imposte) sono più sostenibili nel tempo.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'il 65% dei bambini lavorerà in mestieri non ancora esistenti, ma le competenze sì'. Come si trasferisce questo principio alla pianificazione del percorso formativo durante la scuola media?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le competenze trasversali (pensiero critico, comunicazione, adattabilità) e le competenze fondamentali (logica, matematica, lingua) sono stabili e utili anche in professioni sconosciute: costruirle adesso è investire su qualsiasi futuro",
+          "corretto": true,
+          "feedback": "Esatto! 'Le competenze sì' significa che anche se la professione specifica non esiste ancora, le competenze fondamentali (matematica, logica, comunicazione scritta) e trasversali (pensiero critico, collaborazione) saranno rilevanti in qualsiasi contesto professionale futuro."
+        },
+        {
+          "id": "b",
+          "testo": "Non ha senso studiare nulla adesso perché le competenze di oggi saranno obsolete domani",
+          "feedback": "Non corretto. Il testo non dice che le competenze siano obsolete. Dice che le professioni cambieranno, ma le competenze fondamentali e trasversali rimangono utili. 'Le competenze sì' è un messaggio di ottimismo, non di nichilismo.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
+        },
+        {
+          "id": "c",
+          "testo": "Si dovrebbe imparare solo le materie STEM perché quelle sono le uniche stabili nel tempo",
+          "feedback": "Non corretto. Il testo sottolinea il valore sia delle competenze tecniche (incluse STEM) sia di quelle umanistiche e trasversali (comunicazione, pensiero critico). Non c'è un solo tipo di competenza 'sicura'.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
+        },
+        {
+          "id": "d",
+          "testo": "Le scuole medie dovrebbero smettere di insegnare e lasciare che i ragazzi imparino da soli su internet",
+          "feedback": "Non corretto. Il testo valorizza la formazione scolastica come fondamentale per costruire le basi. Il 'prepararsi al futuro' non significa rinunciare alla formazione strutturata ma costruire, accanto alle competenze tecniche, competenze trasversali attraverso approcci attivi.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
+        }
+      ],
+      "spiegazione": "'Le competenze sì' significa che alcune categorie di competenze sono stabili indipendentemente dalle professioni specifiche: competenze matematiche e logiche (fondamento del pensiero quantitativo), competenze linguistiche (comunicazione in qualsiasi contesto), pensiero critico (valutare fonti, argomentare), collaborazione (lavorare in team). Costruire queste basi solide durante la scuola media è investire su qualsiasi futuro professionale, anche su professioni che non esistono ancora.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo descrive la 'rete professionale' come 'non solo chi conosci: è chi ti conosce come professionista'. Perché questa distinzione è importante per il percorso di un giovane che inizia la propria carriera?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Essere riconosciuti come professionisti richiede di contribuire attivamente a comunità del proprio settore, non solo accumulare contatti passivi: la visibilità nasce da quello che si fa e si condivide, non da quante persone si seguono",
+          "corretto": true,
+          "feedback": "Esatto! Una rete passiva (tanti contatti che non ti conoscono) ha poco valore. Una rete attiva (poche persone che ti conoscono come qualcuno che risolve problemi specifici, che ha realizzato progetti rilevanti, che contribuisce a discussioni del settore) ha molto più valore per opportunità professionali."
+        },
+        {
+          "id": "b",
+          "testo": "La rete professionale si costruisce solo dopo aver trovato il primo lavoro: inutile pensarci prima",
+          "feedback": "Non corretto. Il testo suggerisce di costruire la rete partecipando a eventi, contribuendo a progetti, essendo presente nelle comunità del settore — attività possibili anche prima del primo lavoro.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        },
+        {
+          "id": "c",
+          "testo": "La rete professionale è importante solo per chi lavora nelle vendite: per i tecnici conta solo la competenza",
+          "feedback": "Non corretto. Il testo non fa distinzioni per ruolo professionale. La rete professionale è utile per qualsiasi ruolo: anche i tecnici trovano opportunità di lavoro, collaborazioni e aggiornamento attraverso le proprie reti.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        },
+        {
+          "id": "d",
+          "testo": "Avere molti followers su Instagram è equivalente ad avere una rete professionale solida",
+          "feedback": "Non corretto. I follower di Instagram e la rete professionale sono cose diverse. Il testo cita LinkedIn come 'sistema di documentazione della rete professionale digitale' — uno strumento professionale specifico, non i social media in senso generale.",
+          "riferimento": "📖 ESPLORA — Come si costruisce un percorso professionale"
+        }
+      ],
+      "spiegazione": "La distinzione 'chi conosci' vs 'chi ti conosce come professionista' è fondamentale: 1) Connettere passivamente su LinkedIn 500 persone che non ti conoscono → valore limitato. 2) Contribuire a un progetto open source → ti rende visibile come sviluppatore. 3) Pubblicare un'analisi sul tuo settore → ti rende riconoscibile come esperto. 4) Partecipare attivamente a eventi del settore → ti rende conoscibile. La rete si costruisce con contributi, non con accumulo passivo di contatti.",
+      "riferimento_principale": "📖 ESPLORA — Come si costruisce un percorso professionale"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo è definito come 'l'unica MC del libro che ha te come oggetto di studio'. Quale implicazione metodologica ha questa affermazione sull'approccio alla valutazione in questa MC?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La risposta 'corretta' non è quella che il docente vuole ma quella onesta e basata su evidenze: autoconoscenza autentica (cosa so fare, dove ho lacune, cosa mi piace) è più utile di una risposta performativa o socialmente desiderabile",
+          "corretto": true,
+          "feedback": "Esatto! Il testo lo dice esplicitamente nella rubrica: 'Non esiste una risposta giusta. Esistono risposte oneste e risposte disoneste. La risposta onesta non è quella perfetta — è quella che riflette davvero dove sei adesso.' Questo è un criterio di valutazione insolito per la scuola: premia l'autenticità, non la correttezza convenzionale."
+        },
+        {
+          "id": "b",
+          "testo": "Non c'è valutazione in questa MC: essendo soggettiva, non può essere valutata con criteri oggettivi",
+          "feedback": "Non corretto. Il testo include una rubrica di valutazione specifica. La soggettività non esclude la valutazione: il criterio è la qualità dell'autoriflessione (è fondata su evidenze? distingue preferenze da competenze? è onesta sui gap?) non la 'risposta giusta'.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        },
+        {
+          "id": "c",
+          "testo": "Si valuta solo il numero di MC elencate nel portfolio: più MC = voto più alto",
+          "feedback": "Non corretto. La rubrica valuta la qualità dell'autoriflessione, non la quantità di MC elencate. Il portfolio deve distinguere competenze dimostrate da quelle dichiarate e identificare gap da colmare.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        },
+        {
+          "id": "d",
+          "testo": "Questa MC non ha valutazione: serve solo a preparare il colloquio d'esame informalmente",
+          "feedback": "Non corretto. Il testo include una rubrica a 4 criteri. La mappa 'competenze acquisite → professioni possibili' è presentata come documento usabile al colloquio d'esame — non in modo informale ma come documento strutturato di orientamento.",
+          "riferimento": "🌍 AGISCI — La consegna"
+        }
+      ],
+      "spiegazione": "'L'unica MC che ha te come oggetto di studio' implica che il criterio di valutazione è l'autenticità dell'autoanalisi, non la correttezza di informazioni esterne. La rubrica valuta: conoscenza del mercato (informazioni verificabili), mappa competenze-professioni (strumento orientativo), autoconoscenza vocazionale (distingue 'cosa mi piace', 'cosa so fare', 'cosa il mercato cerca'), e portfolio delle competenze (basato su prove, non solo dichiarazioni). Il criterio è la qualità dell'autoriflessione, non una risposta 'giusta' universale.",
+      "riferimento_principale": "🌍 AGISCI — La consegna"
     }
   ]
 }

@@ -1,260 +1,600 @@
 {
   "mc_id": "MC-ALI-2-03",
-  "titolo": "Principi nutritivi e fabbisogno energetico",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Funzione principale dei carboidrati?",
+      "domanda": "Cosa sono i macronutrienti?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Costruire i muscoli",
-          "feedback": "Questa è la funzione delle proteine."
+          "testo": "Sostanze che regolano le reazioni biochimiche senza fornire energia",
+          "feedback": "Non è corretto. Hai descritto i micronutrienti (vitamine e minerali). I macronutrienti hanno una funzione diversa.",
+          "riferimento": "📖 ESPLORA — I macronutrienti"
         },
         {
           "id": "b",
-          "testo": "Fornire energia pronta all'uso",
+          "testo": "Nutrienti che forniscono energia e i mattoni per costruire e riparare i tessuti",
           "corretto": true,
-          "feedback": "Esatto! I carboidrati sono la fonte energetica preferita: si trasformano in glucosio, carburante immediato per ogni cellula."
+          "feedback": "Esatto! I macronutrienti (carboidrati, proteine, grassi) forniscono l'energia e i mattoni strutturali per l'organismo. I micronutrienti invece regolano le reazioni biochimiche."
         },
         {
           "id": "c",
-          "testo": "Proteggere gli organi interni",
-          "feedback": "Questa è la funzione dei grassi."
+          "testo": "Elementi chimici come ferro, calcio e zinco essenziali per il corpo",
+          "feedback": "Non è corretto. Questi sono minerali, una categoria di micronutrienti. I macronutrienti sono carboidrati, proteine e grassi.",
+          "riferimento": "📖 ESPLORA — I macronutrienti"
         },
         {
           "id": "d",
-          "testo": "Regolare il metabolismo",
-          "feedback": "Questa è la funzione delle vitamine."
+          "testo": "Sostanze prodotte dall'organismo durante la digestione",
+          "feedback": "Non è corretto. I macronutrienti sono componenti degli alimenti che introduciamo dall'esterno, non sostanze prodotte dall'organismo.",
+          "riferimento": "📖 ESPLORA — I macronutrienti"
         }
       ],
-      "spiegazione": "I carboidrati sono la fonte energetica preferita: si trasformano in glucosio, carburante immediato per ogni cellula."
+      "spiegazione": "I macronutrienti (carboidrati, proteine, grassi) forniscono energia e i mattoni per costruire tessuti. I micronutrienti (vitamine, minerali) non forniscono energia ma regolano migliaia di reazioni biochimiche essenziali.",
+      "riferimento_principale": "📖 ESPLORA — I macronutrienti"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Quante calorie per grammo di proteine?",
+      "domanda": "Quale macronutriente fornisce 9 kcal per grammo, il valore più alto?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "2 kcal",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "I carboidrati",
+          "feedback": "Non è corretto. I carboidrati forniscono 4 kcal/g. Sono la fonte energetica principale ma non la più concentrata.",
+          "riferimento": "📖 ESPLORA — I macronutrienti: cosa sono, dove si trovano, cosa fanno"
         },
         {
           "id": "b",
-          "testo": "4 kcal",
-          "corretto": true,
-          "feedback": "Esatto! Proteine e carboidrati forniscono entrambi 4 kcal/g."
+          "testo": "Le proteine",
+          "feedback": "Non è corretto. Le proteine forniscono 4 kcal/g, come i carboidrati. La loro funzione primaria è strutturale, non energetica.",
+          "riferimento": "📖 ESPLORA — I macronutrienti: cosa sono, dove si trovano, cosa fanno"
         },
         {
           "id": "c",
-          "testo": "7 kcal",
-          "feedback": "Questo è il valore dell'alcol etilico."
+          "testo": "I grassi (lipidi)",
+          "corretto": true,
+          "feedback": "Esatto! I grassi forniscono 9 kcal per grammo, il doppio di carboidrati e proteine. Sono la fonte energetica più concentrata e sono indispensabili per le membrane cellulari e gli ormoni."
         },
         {
           "id": "d",
-          "testo": "9 kcal",
-          "feedback": "Questo è il valore dei grassi."
+          "testo": "Le fibre alimentari",
+          "feedback": "Non è corretto. Le fibre non sono digeribili dall'uomo e non forniscono calorie significative. Il loro valore è diverso: nutrono il microbioma intestinale.",
+          "riferimento": "📖 ESPLORA — I macronutrienti: cosa sono, dove si trovano, cosa fanno"
         }
       ],
-      "spiegazione": "Proteine e carboidrati forniscono entrambi 4 kcal/g. I grassi 9 kcal/g."
+      "spiegazione": "I grassi forniscono 9 kcal/g, il doppio di carboidrati e proteine (4 kcal/g). Per questo sono la riserva energetica più efficiente del corpo. Il cervello è composto per il 60% da grassi.",
+      "riferimento_principale": "📖 ESPLORA — I macronutrienti: cosa sono, dove si trovano, cosa fanno"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa sono le vitamine?",
+      "domanda": "Cosa distingue i 9 aminoacidi 'essenziali' dagli altri 11?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Fonti di energia concentrate",
-          "feedback": "Questa è la funzione dei grassi."
+          "testo": "Gli essenziali si trovano solo negli alimenti animali",
+          "feedback": "Non è corretto. Alcuni alimenti vegetali come soia, quinoa e amaranto contengono tutti e 9 gli aminoacidi essenziali (proteine complete).",
+          "riferimento": "📖 ESPLORA — Le proteine"
         },
         {
           "id": "b",
-          "testo": "Micronutrienti essenziali che regolano processi metabolici",
+          "testo": "Gli essenziali devono essere introdotti con la dieta perché il corpo non sa produrli",
           "corretto": true,
-          "feedback": "Esatto! Le vitamine non danno energia ma sono indispensabili: senza di loro il metabolismo non funziona."
+          "feedback": "Esatto! Il corpo sa produrre 11 aminoacidi da solo. Gli altri 9 sono 'essenziali' perché devono necessariamente venire dal cibo: senza di loro, alcune proteine non possono essere sintetizzate."
         },
         {
           "id": "c",
-          "testo": "I mattoni delle proteine",
-          "feedback": "Questi sono gli aminoacidi."
+          "testo": "Gli essenziali sono necessari solo durante la crescita, non per gli adulti",
+          "feedback": "Non è corretto. Gli aminoacidi essenziali sono necessari per tutta la vita: per la sintesi proteica, la riparazione dei tessuti, la produzione di ormoni e anticorpi.",
+          "riferimento": "📖 ESPLORA — Le proteine"
         },
         {
           "id": "d",
-          "testo": "Zuccheri semplici",
-          "feedback": "Questi sono i monosaccaridi."
+          "testo": "Gli essenziali forniscono energia, gli altri costruiscono i tessuti",
+          "feedback": "Non è corretto. La distinzione essenziale/non essenziale non riguarda la funzione dell'aminoacido ma la capacità del corpo di sintetizzarlo o meno.",
+          "riferimento": "📖 ESPLORA — Le proteine"
         }
       ],
-      "spiegazione": "Le vitamine non danno energia ma sono indispensabili: senza di loro il metabolismo non funziona."
+      "spiegazione": "Il corpo umano usa 20 aminoacidi: 11 li produce da solo; 9 sono 'essenziali' perché non può sintetizzarli e devono venire obbligatoriamente dall'alimentazione. Una carenza di aminoacidi essenziali compromette la sintesi proteica.",
+      "riferimento_principale": "📖 ESPLORA — Le proteine"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "La piramide alimentare mediterranea mette alla base quale gruppo di alimenti?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Carne e pesce, da consumare ad ogni pasto",
+          "feedback": "Non è corretto. Carne e pesce sono nel secondo livello della piramide. La base è riservata agli alimenti da consumare più frequentemente.",
+          "riferimento": "📖 ESPLORA — La piramide alimentare"
+        },
+        {
+          "id": "b",
+          "testo": "Cereali integrali, frutta, verdura, legumi e olio d'oliva",
+          "corretto": true,
+          "feedback": "Esatto! La piramide mediterranea mette alla base cereali integrali, frutta, verdura, legumi e olio d'oliva: gli alimenti da consumare ad ogni pasto."
+        },
+        {
+          "id": "c",
+          "testo": "Latticini e formaggi, fonti principali di calcio",
+          "feedback": "Non è corretto. I latticini sono nel secondo livello della piramide mediterranea. Non sono alla base.",
+          "riferimento": "📖 ESPLORA — La piramide alimentare"
+        },
+        {
+          "id": "d",
+          "testo": "Dolci e zuccheri, da consumare come fonte energetica principale",
+          "feedback": "Non è corretto. I dolci si trovano al vertice della piramide, da consumare raramente, non alla base.",
+          "riferimento": "📖 ESPLORA — La piramide alimentare"
+        }
+      ],
+      "spiegazione": "La piramide della dieta mediterranea mette alla base cereali integrali, frutta, verdura, legumi e olio d'oliva, da consumare ad ogni pasto. Al vertice ci sono carne rossa e dolci, da consumare raramente.",
+      "riferimento_principale": "📖 ESPLORA — La piramide alimentare"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cos'è la celiachia?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un'allergia stagionale al polline che colpisce anche il sistema digestivo",
+          "feedback": "Non è corretto. La celiachia non è un'allergia stagionale. È una patologia autoimmune permanente legata a uno specifico alimento.",
+          "riferimento": "📖 ESPLORA — Diete speciali"
+        },
+        {
+          "id": "b",
+          "testo": "Un'intolleranza permanente al glutine che causa danni all'intestino tenue per reazione autoimmune",
+          "corretto": true,
+          "feedback": "Esatto! La celiachia è un'intolleranza permanente al glutine: nelle persone celiache il glutine scatena una risposta autoimmune che danneggia l'intestino tenue, compromettendo l'assorbimento di tutti i nutrienti."
+        },
+        {
+          "id": "c",
+          "testo": "Una scelta dietetica di eliminare il glutine per migliorare le prestazioni fisiche",
+          "feedback": "Non è corretto. La celiachia è una patologia medica, non una scelta dietetica. Non va confusa con la dieta senza glutine per altre motivazioni.",
+          "riferimento": "📖 ESPLORA — Diete speciali"
+        },
+        {
+          "id": "d",
+          "testo": "Una condizione che colpisce solo i bambini e che si risolve con la crescita",
+          "feedback": "Non è corretto. La celiachia è una condizione permanente: l'intolleranza al glutine non scompare con l'età. L'unica terapia è l'eliminazione totale e permanente del glutine.",
+          "riferimento": "📖 ESPLORA — Diete speciali"
+        }
+      ],
+      "spiegazione": "La celiachia è un'intolleranza autoimmune permanente al glutine. Il glutine scatena una risposta immunitaria che danneggia le pareti dell'intestino tenue. Colpisce circa l'1% della popolazione italiana. L'unica terapia è l'eliminazione permanente del glutine.",
+      "riferimento_principale": "📖 ESPLORA — Diete speciali"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quale vitamina non si trova in nessun alimento di origine vegetale e deve essere integrata nelle diete vegane?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Vitamina C",
+          "feedback": "Non è corretto. La vitamina C è abbondante in frutta e verdura (agrumi, kiwi, peperoni). Non è un problema per i vegani.",
+          "riferimento": "📖 ESPLORA — I micronutrienti: piccole quantità, effetti enormi"
+        },
+        {
+          "id": "b",
+          "testo": "Vitamina D",
+          "feedback": "Non è corretto. La vitamina D è prodotta dalla pelle con la luce solare. Anche vegetali come funghi esposti al sole ne contengono. Il problema principale dei vegani è la B12.",
+          "riferimento": "📖 ESPLORA — I micronutrienti: piccole quantità, effetti enormi"
+        },
+        {
+          "id": "c",
+          "testo": "Vitamina B12",
+          "corretto": true,
+          "feedback": "Esatto! La vitamina B12 si trova solo in alimenti animali. I vegani devono necessariamente integrarla con supplementi. La sua carenza causa danni neurologici."
+        },
+        {
+          "id": "d",
+          "testo": "Vitamina A",
+          "feedback": "Non è corretto. I vegani possono ottenere vitamina A attraverso il beta-carotene (precursore della vitamina A) presente in molti vegetali arancioni come carote e zucca.",
+          "riferimento": "📖 ESPLORA — I micronutrienti: piccole quantità, effetti enormi"
+        }
+      ],
+      "spiegazione": "La vitamina B12 si trova esclusivamente in alimenti animali. I vegani devono integrarla obbligatoriamente con supplementi o alimenti arricchiti. La sua carenza provoca anemia megaloblastica e danni neurologici progressivi.",
+      "riferimento_principale": "📖 ESPLORA — Diete speciali"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Perché la dieta mediterranea è considerata un modello di riferimento?",
+      "domanda": "Perché i carboidrati complessi (amidi) sono preferibili agli zuccheri semplici come fonte energetica quotidiana?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché è priva di grassi",
-          "feedback": "Include l'olio d'oliva, grasso sano."
+          "testo": "Perché forniscono più calorie per grammo rispetto agli zuccheri semplici",
+          "feedback": "Non è corretto. Sia i carboidrati complessi che gli zuccheri semplici forniscono 4 kcal/g. La differenza riguarda la velocità di assorbimento, non la quantità di calorie.",
+          "riferimento": "📖 ESPLORA — I carboidrati"
         },
         {
           "id": "b",
-          "testo": "Bilancia carboidrati complessi, grassi insaturi, proteine e alto apporto di fibre",
+          "testo": "Perché vengono digeriti lentamente, rilasciando glucosio gradualmente senza picchi glicemici",
           "corretto": true,
-          "feedback": "Esatto! La dieta mediterranea è protettiva per malattie cardiovascolari, diabete e alcune forme di cancro."
+          "feedback": "Esatto! Gli amidi vengono digeriti lentamente e rilasciano glucosio gradualmente nel sangue. Gli zuccheri semplici causano picchi glicemici rapidi che nel lungo periodo aumentano il rischio di diabete."
         },
         {
           "id": "c",
-          "testo": "Perché esclude tutti i latticini",
-          "feedback": "Li include con moderazione."
+          "testo": "Perché non aumentano mai la glicemia, a differenza degli zuccheri semplici",
+          "feedback": "Non è corretto. Anche i carboidrati complessi aumentano la glicemia, ma in modo graduale e controllato. Non la azzerano.",
+          "riferimento": "📖 ESPLORA — I carboidrati"
         },
         {
           "id": "d",
-          "testo": "Perché è identica per tutti i paesi del Mediterraneo",
-          "feedback": "Le varianti regionali sono molte."
+          "testo": "Perché contengono proteine e grassi oltre ai carboidrati",
+          "feedback": "Non è corretto. I carboidrati complessi non contengono naturalmente proteine o grassi significativi. Il vantaggio è il profilo glicemico, non la composizione macronutrizionale.",
+          "riferimento": "📖 ESPLORA — I carboidrati"
         }
       ],
-      "spiegazione": "La dieta mediterranea è protettiva per malattie cardiovascolari, diabete e alcune forme di cancro."
+      "spiegazione": "I carboidrati complessi (amidi) vengono digeriti lentamente, rilasciando glucosio gradualmente. Nessun picco glicemico, energia costante per ore. Gli zuccheri semplici causano picchi rapidi che stimolano la produzione di insulina e, nel lungo periodo, aumentano il rischio di diabete tipo 2.",
+      "riferimento_principale": "📖 ESPLORA — I carboidrati"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è l'indice glicemico (IG)?",
+      "domanda": "Perché la combinazione pasta e fagioli fornisce un profilo proteico completo, pur usando solo alimenti vegetali?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il contenuto di zuccheri in g/100g",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché la cottura insieme crea nuovi aminoacidi",
+          "feedback": "Non è corretto. La cottura non crea aminoacidi. I due alimenti si completano perché hanno profili aminoacidici complementari.",
+          "riferimento": "📖 ESPLORA — Le proteine"
         },
         {
           "id": "b",
-          "testo": "La velocità con cui un alimento fa salire la glicemia rispetto al glucosio puro",
+          "testo": "Perché cereali e legumi hanno profili aminoacidici complementari che insieme coprono tutti e 9 gli aminoacidi essenziali",
           "corretto": true,
-          "feedback": "Esatto! IG alto (pane bianco): glicemia sale veloce."
+          "feedback": "Esatto! I cereali mancano di lisina ma sono ricchi di metionina; i legumi sono ricchi di lisina ma carenti di metionina. Insieme coprono tutti gli aminoacidi essenziali: è un principio scoperto prima ancora della biochimica."
         },
         {
           "id": "c",
-          "testo": "Il numero di calorie per porzione",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché fagioli e pasta hanno entrambi aminoacidi essenziali identici che si sommano",
+          "feedback": "Non è corretto. La complementarità non è nella somma degli stessi aminoacidi, ma nell'integrazione di aminoacidi diversi che ciascun alimento manca.",
+          "riferimento": "📖 ESPLORA — Le proteine"
         },
         {
           "id": "d",
-          "testo": "Il contenuto di grassi saturi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché i fagioli, essendo legumi, contengono proteine complete come quelle animali",
+          "feedback": "Non è corretto. I fagioli hanno un profilo aminoacidico incompleto. La qualità proteica completa si ottiene solo dalla combinazione con i cereali.",
+          "riferimento": "📖 ESPLORA — Le proteine"
         }
       ],
-      "spiegazione": "IG alto (pane bianco): glicemia sale veloce. IG basso (legumi): energia stabile nel tempo."
+      "spiegazione": "Cereali (pasta, riso) e legumi (fagioli, lenticchie) hanno profili aminoacidici complementari: i cereali mancano di alcuni aminoacidi che i legumi hanno, e viceversa. Insieme coprono tutti i 9 aminoacidi essenziali, come le proteine animali complete.",
+      "riferimento_principale": "📖 ESPLORA — Le proteine"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Perché un adolescente ha fabbisogno proteico più alto di un adulto sedentario?",
+      "domanda": "Lo Studio PREDIMED ha dimostrato che la dieta mediterranea riduce del 30% il rischio cardiovascolare. Quali elementi sono stati identificati come protettivi?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i giovani digeriscono peggio le proteine",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "L'alto contenuto di proteine animali e il basso contenuto di carboidrati",
+          "feedback": "Non è corretto. La dieta mediterranea non è una dieta ad alto contenuto proteico animale. La protezione cardiovascolare viene da grassi insaturi, polifenoli, omega-3 e fibre.",
+          "riferimento": "📖 ESPLORA — La dieta mediterranea: patrimonio UNESCO e scienza"
         },
         {
           "id": "b",
-          "testo": "Perché è in fase di crescita: costruisce muscoli, ossa e tessuti",
+          "testo": "Acidi grassi monoinsaturi dell'olio d'oliva, omega-3 del pesce azzurro, polifenoli e fibre dei legumi",
           "corretto": true,
-          "feedback": "Esatto! Durante la crescita il fabbisogno è 1."
+          "feedback": "Esatto! Il PREDIMED ha identificato questi elementi come responsabili della riduzione del 30% del rischio cardiovascolare: olio d'oliva extravergine, pesce azzurro (omega-3), polifenoli e fibre."
         },
         {
           "id": "c",
-          "testo": "Perché gli adolescenti fanno meno attività fisica",
-          "feedback": "Di solito ne fanno di più."
+          "testo": "Il consumo quotidiano di vino rosso in grandi quantità e l'uso del burro come grasso principale",
+          "feedback": "Non è corretto. Il vino è considerato in quantità moderate, non in grandi quantità. Il grasso principale della dieta mediterranea è l'olio d'oliva, non il burro.",
+          "riferimento": "📖 ESPLORA — La dieta mediterranea: patrimonio UNESCO e scienza"
         },
         {
           "id": "d",
-          "testo": "Perché le proteine proteggono dalla fame",
-          "feedback": "Questo è il senso di sazietà."
+          "testo": "L'eliminazione totale dei grassi e dei carboidrati dalla dieta",
+          "feedback": "Non è corretto. La dieta mediterranea non elimina né grassi né carboidrati. È una dieta equilibrata che privilegia i grassi insaturi e i carboidrati complessi.",
+          "riferimento": "📖 ESPLORA — La dieta mediterranea: patrimonio UNESCO e scienza"
         }
       ],
-      "spiegazione": "Durante la crescita il fabbisogno è 1.0-1.2 g/kg/giorno, superiore all'adulto sedentario (0.8 g/kg)."
+      "spiegazione": "Lo Studio PREDIMED (oltre 7.000 adulti) ha dimostrato che la dieta mediterranea riduce del 30% il rischio cardiovascolare. I fattori protettivi chiave: acidi grassi monoinsaturi dell'olio d'oliva, omega-3 del pesce azzurro, polifenoli delle verdure, fibre dei legumi e cereali integrali.",
+      "riferimento_principale": "📖 ESPLORA — La dieta mediterranea: patrimonio UNESCO e scienza"
     },
     {
-      "livello": "A",
-      "domanda": "Perché gli omega-3 sono definiti 'essenziali'?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Quali sono gli acidi grassi trans e perché sono considerati i più pericolosi per la salute cardiovascolare?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sono grassi saturi contenuti nella carne rossa",
-          "feedback": "Questi sono i grassi saturi comuni."
+          "testo": "Sono grassi di origine animale presenti nella carne rossa che aumentano il colesterolo HDL",
+          "feedback": "Non è corretto. I grassi trans si formano dall'idrogenazione industriale degli oli vegetali, non sono naturalmente presenti in grande quantità nella carne. E aumentano il colesterolo LDL (cattivo), non HDL.",
+          "riferimento": "📖 ESPLORA — I grassi (lipidi)"
         },
         {
           "id": "b",
-          "testo": "Acidi grassi polinsaturi che il corpo non sintetizza: devono venire dall'alimentazione",
+          "testo": "Si formano dall'idrogenazione industriale degli oli vegetali e aumentano il colesterolo LDL riducendo quello HDL",
           "corretto": true,
-          "feedback": "Esatto! Gli omega-3 riducono l'infiammazione e proteggono il cuore."
+          "feedback": "Esatto! I grassi trans si formano nell'idrogenazione industriale (produzione di margarine e prodotti da forno). Aumentano il colesterolo LDL (cattivo) e riducono quello HDL (buono): la combinazione peggiore per il sistema cardiovascolare."
         },
         {
           "id": "c",
-          "testo": "Sono un tipo di carboidrato complesso",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Sono grassi polinsaturi naturali presenti nel pesce azzurro che riducono l'infiammazione",
+          "feedback": "Non è corretto. Hai descritto gli omega-3, che sono benefici. I grassi trans sono invece dannosi e artificiali.",
+          "riferimento": "📖 ESPLORA — I grassi (lipidi)"
         },
         {
           "id": "d",
-          "testo": "Sono additivi alimentari sintetici",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Sono grassi tropicali come l'olio di palma e di cocco, vietati in Europa",
+          "feedback": "Non è corretto. L'olio di palma e cocco sono saturi (non trans) e non sono vietati. I grassi trans sono stati limitati dall'UE dal 2021 a max 2% del totale grassi.",
+          "riferimento": "📖 ESPLORA — I grassi (lipidi)"
         }
       ],
-      "spiegazione": "Gli omega-3 riducono l'infiammazione e proteggono il cuore. Fonti: pesce azzurro, noci, semi di lino."
+      "spiegazione": "I grassi trans si formano dall'idrogenazione industriale degli oli vegetali. Aumentano il colesterolo LDL (cattivo) e riducono quello HDL (buono). Dal 2021, nessun olio o grasso in Europa può contenere più del 2% di grassi trans sul totale dei grassi.",
+      "riferimento_principale": "📖 ESPLORA — I grassi (lipidi)"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la biofortificazione?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Un barattolo da 330 ml di bibita zuccherata contiene mediamente 35 g di zucchero. Come si confronta con la quota giornaliera raccomandata per un adolescente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'aggiunta artificiale di vitamine durante la lavorazione",
-          "feedback": "Questa è la fortification standard."
+          "testo": "Rappresenta circa il 10% della quota di zuccheri aggiunti raccomandata giornalmente",
+          "feedback": "Non è corretto. Il rapporto è molto più alto. 35 g di zucchero in una sola bibita è già quasi la quota giornaliera massima.",
+          "riferimento": "📖 ESPLORA — I carboidrati"
         },
         {
           "id": "b",
-          "testo": "L'aumento del contenuto di micronutrienti attraverso selezione genetica o pratiche agricole nella pianta stessa",
+          "testo": "Rappresenta circa l'87% della quota massima di zuccheri aggiunti raccomandata per un adolescente",
           "corretto": true,
-          "feedback": "Esatto! La biofortificazione combatte le carenze nutrizionali nei paesi in via di sviluppo: il nutriente è nella pianta, non aggiunto dopo."
+          "feedback": "Esatto! Il testo indica che 35 g di zucchero in una sola bibita rappresenta già l'87% della quota massima di zuccheri aggiunti raccomandata per un adolescente in un'intera giornata."
         },
         {
           "id": "c",
-          "testo": "L'irradiazione per eliminare i patogeni",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Non supera mai la quota raccomandata perché la bibita contiene anche acqua",
+          "feedback": "Non è corretto. L'acqua della bibita non 'diluisce' il contenuto calorico e non riduce la quantità di zucchero che viene assorbita dall'organismo.",
+          "riferimento": "📖 ESPLORA — I carboidrati"
         },
         {
           "id": "d",
-          "testo": "La riduzione del contenuto calorico",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Rappresenta meno del 50% della quota raccomandata perché gli adolescenti hanno un fabbisogno calorico elevato",
+          "feedback": "Non è corretto. Il fabbisogno calorico elevato non giustifica un alto consumo di zuccheri semplici, soprattutto aggiunti artificialmente.",
+          "riferimento": "📖 ESPLORA — I carboidrati"
         }
       ],
-      "spiegazione": "La biofortificazione combatte le carenze nutrizionali nei paesi in via di sviluppo: il nutriente è nella pianta, non aggiunto dopo."
+      "spiegazione": "Un barattolo da 330 ml contiene mediamente 35 g di zucchero, pari all'87% della quota massima di zuccheri aggiunti raccomandata per un adolescente in un'intera giornata. Il testo indica che la quota non dovrebbe superare il 10% dell'apporto calorico totale.",
+      "riferimento_principale": "📖 ESPLORA — I carboidrati"
     },
     {
-      "livello": "A",
-      "domanda": "Perché contare solo le calorie è insufficiente per valutare la qualità di una dieta?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché lo spreco alimentare ha anche un impatto ambientale oltre a quello economico?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché le calorie sono impossibili da calcolare",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché il cibo sprecato produce metano in discarica che contribuisce al cambiamento climatico",
+          "corretto": true,
+          "feedback": "Esatto! Il cibo sprecato in discarica produce metano (gas serra). Ma lo spreco significa anche sprecare tutta l'acqua, l'energia e il suolo usati per produrre quel cibo. Il sistema alimentare mondiale produce il 26% delle emissioni globali."
         },
         {
           "id": "b",
-          "testo": "Alimenti con stesse calorie possono avere profili nutrizionali completamente diversi e impatti metabolici opposti",
-          "corretto": true,
-          "feedback": "Esatto! 200 kcal di zucchero raffinato e 200 kcal di legumi impattano in modo radicalmente diverso su glicemia, sazietà e salute."
+          "testo": "Perché il cibo sprecato contamina le falde acquifere con sostanze chimiche",
+          "feedback": "Parzialmente corretto ma incompleto. L'impatto principale è più ampio: sprecare cibo significa sprecare anche tutta l'acqua, l'energia e il suolo usati per produrlo.",
+          "riferimento": "📖 ESPLORA — Lo spreco alimentare"
         },
         {
           "id": "c",
-          "testo": "Perché il corpo brucia sempre tutte le calorie ingerite",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché il trasporto del cibo sprecato occupa inutilmente i camion della nettezza urbana",
+          "feedback": "Non è corretto. L'impatto ambientale principale dello spreco alimentare non è il trasporto della spazzatura, ma la produzione di risorse (acqua, terra, energia) che non hanno generato beneficio.",
+          "riferimento": "📖 ESPLORA — Lo spreco alimentare"
         },
         {
           "id": "d",
-          "testo": "Perché solo i grassi hanno calorie",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Perché il cibo sprecato deve essere incenerito con emissione di CO₂ e diossine",
+          "feedback": "Non è corretto. Il problema principale non è lo smaltimento in sé, ma il fatto che tutte le risorse (acqua, terra, energia) impiegate per produrre quel cibo sono state sprecate.",
+          "riferimento": "📖 ESPLORA — Lo spreco alimentare"
         }
       ],
-      "spiegazione": "200 kcal di zucchero raffinato e 200 kcal di legumi impattano in modo radicalmente diverso su glicemia, sazietà e salute."
+      "spiegazione": "Sprecare cibo significa sprecare tutto ciò che è servito per produrlo: acqua, energia, suolo. Se lo spreco alimentare mondiale fosse un Paese, sarebbe il terzo emettitore mondiale di gas serra dopo Cina e USA. Ogni famiglia italiana butta in media 67 kg di cibo l'anno.",
+      "riferimento_principale": "📖 ESPLORA — Lo spreco alimentare"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "La Barretta C (22 g di grassi, 12 g saturi, 32 g zuccheri) è confrontata con la Barretta B (8 g grassi, 1 g saturi, 12 g zuccheri, 14 g proteine) per uno spuntino post-allenamento. Quale sceglieresti e perché?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La Barretta C perché ha più calorie totali e aiuta il recupero energetico post-allenamento",
+          "feedback": "Non è corretto. Le calorie totali non sono il criterio principale per un recupero muscolare ottimale. Il profilo dei macronutrienti (soprattutto proteine e tipo di grassi) è più rilevante.",
+          "riferimento": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+        },
+        {
+          "id": "b",
+          "testo": "La Barretta B perché ha più proteine per il recupero muscolare, meno zuccheri e meno grassi saturi",
+          "corretto": true,
+          "feedback": "Esatto! La B ha 14 g di proteine (ottimo per il recupero muscolare), solo 12 g di zuccheri (meno picco glicemico), 1 g di grassi saturi. È la scelta ottimale per uno spuntino post-allenamento."
+        },
+        {
+          "id": "c",
+          "testo": "La Barretta A perché ha il miglior rapporto tra carboidrati e grassi totali",
+          "feedback": "Non è corretto. La Barretta A ha meno proteine della B e più grassi saturi della B. Non è la scelta ottimale per il recupero post-allenamento.",
+          "riferimento": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+        },
+        {
+          "id": "d",
+          "testo": "Non si può scegliere senza conoscere anche il prezzo di ciascuna barretta",
+          "feedback": "Non è corretto. I valori nutrizionali sono sufficienti per fare una scelta informata. Il prezzo è un fattore aggiuntivo, non necessario per la valutazione nutrizionale.",
+          "riferimento": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+        }
+      ],
+      "spiegazione": "Per uno spuntino post-allenamento, la Barretta B è ottimale: 14 g di proteine (recupero muscolare), 12 g di zuccheri (meno picco glicemico), 1 g di grassi saturi (profilo cardiovascolare migliore). La Barretta C ha il doppio dei grassi saturi e quasi il triplo degli zuccheri.",
+      "riferimento_principale": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Un prodotto pubblicizza 'Light 0% grassi'. Quale analisi critica dell'etichetta dovresti fare prima di concludere che è la scelta più sana?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Verificare solo che il prodotto abbia il marchio di qualità europeo",
+          "feedback": "Non è corretto. Un marchio di qualità non sostituisce la lettura critica dei valori nutrizionali e degli ingredienti. Sono informazioni diverse.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "b",
+          "testo": "Verificare se i grassi sono stati sostituiti con zuccheri o dolcificanti artificiali che possono avere altri effetti",
+          "corretto": true,
+          "feedback": "Esatto! I prodotti light spesso riducono i grassi ma aumentano lo zucchero per compensare il sapore, o usano dolcificanti artificiali (aspartame, stevia) con effetti ancora studiati sul microbioma. La qualità degli ingredienti conta più del profilo calorico."
+        },
+        {
+          "id": "c",
+          "testo": "Comprare comunque il prodotto perché 'light' garantisce sempre meno calorie",
+          "feedback": "Non è corretto. Un prodotto light può avere meno grassi ma più zuccheri, risultando non necessariamente più sano per il metabolismo complessivo.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "d",
+          "testo": "Evitarlo sempre perché i prodotti light contengono sempre additivi pericolosi",
+          "feedback": "Non è corretto. I prodotti light non contengono necessariamente additivi pericolosi. La valutazione corretta richiede di leggere l'etichetta, non di escludere categoricamente una categoria.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        }
+      ],
+      "spiegazione": "I prodotti 'light 0% grassi' spesso compensano la mancanza di grassi aggiungendo zuccheri o dolcificanti artificiali. Un yogurt greco intero con frutti di bosco freschi può essere nutrizionalmente più completo di uno yogurt scremato artificialmente dolcificato. La qualità degli ingredienti conta più del profilo calorico.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo indica che il microbioma intestinale svolge funzioni fondamentali. Quale tipo di dieta lo favorisce?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una dieta ricca di proteine animali per fornire aminoacidi ai batteri intestinali",
+          "feedback": "Non è corretto. Il testo indica che sono le fibre diversificate a nutrire il microbioma. Le proteine animali in eccesso non sono indicate come favorevoli alla diversità microbica intestinale.",
+          "riferimento": "📖 ESPLORA — Collegamento STEM Biologia"
+        },
+        {
+          "id": "b",
+          "testo": "Una dieta ricca di fibre diversificate che nutrono la varietà di batteri intestinali",
+          "corretto": true,
+          "feedback": "Esatto! Il microbioma intestinale ospita 100.000 miliardi di batteri di oltre 1.000 specie. Una dieta ricca di fibre diversificate mantiene alta la diversità del microbioma, con benefici su digestione, sistema immunitario e produzione di neurotrasmettitori."
+        },
+        {
+          "id": "c",
+          "testo": "Una dieta senza carboidrati per evitare fermentazioni batteriche indesiderate",
+          "feedback": "Non è corretto. I carboidrati fermentabili (fibre) sono esattamente il nutrimento principale del microbioma intestinale. Eliminarli riduce la diversità e la salute del microbioma.",
+          "riferimento": "📖 ESPLORA — Collegamento STEM Biologia"
+        },
+        {
+          "id": "d",
+          "testo": "Una dieta liquida per facilitare il transito intestinale e ridurre il carico batterico",
+          "feedback": "Non è corretto. Il microbioma intestinale non va 'ridotto' ma diversificato e nutrito con fibre. Una dieta liquida poverebbe di substrati i batteri benefici.",
+          "riferimento": "📖 ESPLORA — Collegamento STEM Biologia"
+        }
+      ],
+      "spiegazione": "Il microbioma intestinale ospita 100.000 miliardi di batteri di oltre 1.000 specie che producono vitamine, educano il sistema immunitario e producono neurotrasmettitori (il 90% della serotonina viene dall'intestino). Una dieta ricca di fibre diversificate mantiene alta la diversità e la salute del microbioma.",
+      "riferimento_principale": "📖 ESPLORA — Collegamento STEM Biologia"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Perché i disturbi del comportamento alimentare (DCA) non devono essere trattati nel solo contesto scolastico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché sono rari e non riguardano gli studenti delle scuole medie",
+          "feedback": "Non è corretto. I DCA colpiscono anche gli adolescenti. Non sono rari e il contesto scolastico può svolgere un ruolo di sensibilizzazione, ma non di trattamento.",
+          "riferimento": "📖 ESPLORA — Diete speciali"
+        },
+        {
+          "id": "b",
+          "testo": "Perché sono patologie psicologiche che richiedono trattamento specialistico (psicologico, medico, nutrizionale)",
+          "corretto": true,
+          "feedback": "Esatto! I DCA (anoressia, bulimia, binge eating) sono patologie riconosciute che richiedono trattamento multidisciplinare specialistico. Il contesto scolastico non è il luogo appropriato per il trattamento, ma può orientare verso il supporto."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la scuola non ha l'autorizzazione legale per trattare argomenti di salute mentale",
+          "feedback": "Non è corretto. La scuola può affrontare argomenti di salute e benessere. La ragione per cui i DCA richiedono specialisti è clinica, non legale.",
+          "riferimento": "📖 ESPLORA — Diete speciali"
+        },
+        {
+          "id": "d",
+          "testo": "Perché sono causati esclusivamente da abitudini familiari scorrette che la scuola non può modificare",
+          "feedback": "Non è corretto. I DCA hanno cause multifattoriali (psicologiche, sociali, biologiche). Non dipendono solo dalla famiglia e richiedono approcci terapeutici specializzati.",
+          "riferimento": "📖 ESPLORA — Diete speciali"
+        }
+      ],
+      "spiegazione": "I DCA (anoressia, bulimia, binge eating) sono patologie psicologiche che si manifestano attraverso il comportamento alimentare. Non sono capricci o scelte dietetiche. Richiedono trattamento specialistico multidisciplinare. Il Ministero della Salute ha un numero verde dedicato: 800 180 969.",
+      "riferimento_principale": "📖 ESPLORA — Diete speciali"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "La ricerca ha trovato che un'alta 'alfabetizzazione nutrizionale' è associata a scelte più sane indipendentemente dal reddito. Cosa significa questo per l'educazione alimentare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Che l'alimentazione sana è accessibile solo a chi guadagna bene, rendendo l'educazione alimentare secondaria",
+          "feedback": "Non è corretto. È l'affermazione opposta: l'alfabetizzazione nutrizionale migliora le scelte indipendentemente dal reddito. L'educazione alimentare è tanto più importante quanto più il reddito è limitato.",
+          "riferimento": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+        },
+        {
+          "id": "b",
+          "testo": "Che la conoscenza del cibo è uno strumento di autonomia per fare scelte migliori anche con risorse economiche limitate",
+          "corretto": true,
+          "feedback": "Esatto! L'alfabetizzazione nutrizionale — capire etichette, valori nutrizionali, composizione degli alimenti — permette di fare scelte più sane indipendentemente dal reddito. È una competenza di cittadinanza."
+        },
+        {
+          "id": "c",
+          "testo": "Che la scuola può sostituire completamente il ruolo della famiglia nell'educazione alimentare",
+          "feedback": "Non è corretto. La scuola può sviluppare competenze di alfabetizzazione nutrizionale, ma non sostituisce la famiglia. I due ambienti si complementano.",
+          "riferimento": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+        },
+        {
+          "id": "d",
+          "testo": "Che mangiare sano è facile per tutti e che chi non lo fa non ne ha voglia",
+          "feedback": "Non è corretto. Il testo riconosce che le scelte alimentari dipendono da molti fattori (famiglia, pubblicità, disponibilità, ambiente). L'alfabetizzazione nutrizionale è uno strumento, non una garanzia automatica.",
+          "riferimento": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+        }
+      ],
+      "spiegazione": "L'alfabetizzazione nutrizionale — la capacità di leggere etichette, interpretare valori nutrizionali e valutare criticamente le scelte alimentari — è associata a diete più sane indipendentemente dal reddito. È una competenza di cittadinanza che questa MC intende sviluppare.",
+      "riferimento_principale": "📖 ESPLORA — Come si leggono i valori nutrizionali"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il ferro degli alimenti vegetali si assorbe meglio in presenza di vitamina C. Quale pasto è progettato in modo ottimale per un adolescente vegetariano che vuole massimizzare l'apporto di ferro?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Pasta al pomodoro senza condimenti aggiuntivi e yogurt",
+          "feedback": "Non è corretto. La pasta al pomodoro contiene poco ferro e vitamina C. Lo yogurt non aiuta l'assorbimento del ferro. Non è ottimale per un adolescente che vuole massimizzare il ferro.",
+          "riferimento": "📖 ESPLORA — I minerali"
+        },
+        {
+          "id": "b",
+          "testo": "Lenticchie con verdure al pomodoro e peperoni crudi (ricchi di vitamina C)",
+          "corretto": true,
+          "feedback": "Esatto! Le lenticchie sono ricche di ferro non-eme (vegetale). Il pomodoro e i peperoni sono fonti eccellenti di vitamina C che aumenta significativamente l'assorbimento del ferro non-eme dagli alimenti vegetali."
+        },
+        {
+          "id": "c",
+          "testo": "Cereali integrali con latte e caffè al mattino",
+          "feedback": "Non è corretto. Il caffè inibisce l'assorbimento del ferro. I cereali integrali contengono ferro ma il caffè riduce significativamente la biodisponibilità.",
+          "riferimento": "📖 ESPLORA — I minerali"
+        },
+        {
+          "id": "d",
+          "testo": "Broccoli con formaggio grattugiato e pane bianco",
+          "feedback": "Non è corretto. I broccoli contengono ferro e vitamina C, ma il calcio del formaggio può interferire con l'assorbimento del ferro. E il pane bianco ha meno ferro del pane integrale.",
+          "riferimento": "📖 ESPLORA — I minerali"
+        }
+      ],
+      "spiegazione": "Il ferro degli alimenti vegetali (ferro non-eme) ha una biodisponibilità inferiore rispetto al ferro animale. La vitamina C ne aumenta significativamente l'assorbimento. Lenticchie (ricche di ferro) + pomodoro/peperoni (ricchi di vitamina C) è la combinazione ottimale per un vegetariano.",
+      "riferimento_principale": "📖 ESPLORA — I micronutrienti: i minerali"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }

@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-ENE-3-03",
-  "titolo": "Fonti rinnovabili e transizione energetica",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Qual è la fonte rinnovabile più diffusa nel mondo per produzione elettrica?",
+      "domanda": "Tra il 2010 e il 2023, il costo dell'energia solare è diminuito del 90%. Cosa ha reso possibile questa riduzione di costo così rapida?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Solare fotovoltaico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Economie di scala, miglioramenti tecnologici nella produzione di celle fotovoltaiche e aumento della produzione mondiale",
+          "corretto": true,
+          "feedback": "Esatto! La drastica riduzione del costo solare è il risultato combinato di economie di scala (produzione di massa), miglioramenti tecnologici nell'efficienza delle celle, e la 'curva di apprendimento' industriale."
         },
         {
           "id": "b",
-          "testo": "Idroelettrico",
-          "corretto": true,
-          "feedback": "Esatto! L'idroelettrico produce circa il 16% dell'elettricità mondiale ed è la rinnovabile più matura."
+          "testo": "La scoperta di nuovi giacimenti di silicio molto più economici da estrarre",
+          "feedback": "Non corretto. Il silicio è già abbondante (secondo elemento della crosta terrestre). La riduzione di costo non è dovuta alla materia prima ma alla produzione industriale su larga scala.",
+          "riferimento": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
         },
         {
           "id": "c",
-          "testo": "Eolico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La caduta del prezzo dei combustibili fossili che ha ridotto i costi di produzione dei pannelli",
+          "feedback": "Non corretto. Il costo solare è sceso indipendentemente e in modo molto più rapido del prezzo dei fossili. La riduzione è dovuta all'industrializzazione massiccia della filiera fotovoltaica.",
+          "riferimento": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
         },
         {
           "id": "d",
-          "testo": "Geotermico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un accordo internazionale che ha sussidiato la produzione di pannelli in tutti i paesi del mondo",
+          "feedback": "Non corretto. Non esiste un tale accordo universale. La riduzione di costo è il risultato di forze di mercato (economie di scala, innovazione tecnologica) non di un singolo accordo.",
+          "riferimento": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
         }
       ],
-      "spiegazione": "L'idroelettrico produce circa il 16% dell'elettricità mondiale ed è la rinnovabile più matura. Ma ha limiti geografici e impatti ambientali significativi."
+      "spiegazione": "Tra il 2010 e il 2023 il costo del solare è sceso del 90% (da >300 $/MWh a <30 $/MWh). La ragione: economie di scala (la Cina ha industrializzato massicciamente la produzione), miglioramenti tecnologici (celle più efficienti), e la curva di apprendimento (ogni raddoppio della capacità installata riduce i costi del 20-25%). È la più rapida riduzione di costo nella storia delle fonti energetiche.",
+      "riferimento_principale": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Come funziona un pannello solare fotovoltaico?",
+      "domanda": "Qual è il principio fisico alla base del fotovoltaico (effetto fotoelettrico)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Scalda l'acqua usando la luce del sole",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Fotoni di luce cedono energia agli elettroni in materiali semiconduttori, mettendoli in movimento e generando corrente elettrica",
+          "corretto": true,
+          "feedback": "Esatto! L'effetto fotoelettrico: fotoni di luce colpiscono il silicio semiconduttore, cedono energia agli elettroni degli strati superficiali, che si mettono in movimento. Questo flusso ordinato di elettroni è la corrente elettrica."
         },
         {
           "id": "b",
-          "testo": "Converte direttamente la luce solare in elettricità tramite l'effetto fotovoltaico nelle celle di silicio",
-          "corretto": true,
-          "feedback": "Esatto! L'effetto fotovoltaico: i fotoni della luce liberano elettroni nel silicio creando corrente."
+          "testo": "Il calore del sole scalda un fluido che produce vapore che aziona una turbina",
+          "feedback": "Non corretto. Quello descritto è il solare termico a concentrazione (CSP), non il fotovoltaico. Il fotovoltaico converte direttamente la luce in elettricità tramite l'effetto fotoelettrico.",
+          "riferimento": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
         },
         {
           "id": "c",
-          "testo": "Produce vapore per muovere una turbina",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La differenza di temperatura tra il pannello e l'aria genera una differenza di potenziale elettrico",
+          "feedback": "Non corretto. La differenza di temperatura tra pannello e aria non è il principio del fotovoltaico. Il principio è l'effetto fotoelettrico: fotoni → elettroni in movimento.",
+          "riferimento": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
         },
         {
           "id": "d",
-          "testo": "Accumula calore per usarlo di notte",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il silicio riflette la luce solare verso un sistema di specchi che concentra il calore in un punto",
+          "feedback": "Non corretto. Il silicio assorbe la luce (non la riflette) e converte direttamente i fotoni in corrente tramite l'effetto fotoelettrico, senza specchi o calore concentrato.",
+          "riferimento": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
         }
       ],
-      "spiegazione": "L'effetto fotovoltaico: i fotoni della luce liberano elettroni nel silicio creando corrente. Scoperto da Becquerel nel 1839, applicato commercialmente dagli anni '50."
+      "spiegazione": "Il fotovoltaico sfrutta l'effetto fotoelettrico: fotoni di luce colpiscono il silicio (semiconduttore drogato con strati N e P), cedono energia agli elettroni che si mettono in movimento. Il campo elettrico interno alla cella spinge gli elettroni in una direzione, producendo corrente continua (DC). L'inverter la converte in corrente alternata (AC) per l'uso domestico.",
+      "riferimento_principale": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cosa produce più CO₂ per kWh nel ciclo di vita completo?",
+      "domanda": "Qual è il principale vantaggio dell'energia idroelettrica rispetto all'eolico e al solare, in termini di gestione della rete elettrica?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Fotovoltaico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "È dispacciabile: si può regolare a piacimento aprendo o chiudendo le paratoie, a differenza di solare ed eolico che dipendono dalle condizioni meteorologiche",
+          "corretto": true,
+          "feedback": "Esatto! L'idroelettrico è 'dispacciabile': quando serve più elettricità si aumenta il flusso d'acqua, quando ce n'è troppa si riduce. Solare ed eolico sono intermittenti: producono solo quando c'è sole o vento."
         },
         {
           "id": "b",
-          "testo": "Eolico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ha un costo di produzione dell'energia molto inferiore al solare e all'eolico",
+          "feedback": "Non corretto. Il costo dell'energia solare ed eolica è sceso sotto quello di nuovi impianti idroelettrici in molte aree. Il principale vantaggio dell'idroelettrico è la dispacciabilità, non il costo.",
+          "riferimento": "📖 ESPLORA — L'energia idroelettrica: l'acqua che scende"
         },
         {
           "id": "c",
-          "testo": "Nucleare",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Non richiede manutenzione perché l'acqua fa tutto il lavoro automaticamente",
+          "feedback": "Non corretto. Le centrali idroelettriche richiedono manutenzione regolare di turbine, generatori, serbatoi e infrastrutture. Il vantaggio principale è la dispacciabilità, non l'assenza di manutenzione.",
+          "riferimento": "📖 ESPLORA — L'energia idroelettrica: l'acqua che scende"
         },
         {
           "id": "d",
-          "testo": "Gas naturale",
-          "corretto": true,
-          "feedback": "Esatto! Gas: ~490 gCO₂/kWh."
+          "testo": "Non produce emissioni di CO₂ durante il funzionamento, a differenza di solare ed eolico",
+          "feedback": "Non corretto. Anche solare ed eolico non producono CO₂ durante il funzionamento. Il vantaggio dell'idroelettrico è la dispacciabilità, non l'assenza di emissioni in funzionamento.",
+          "riferimento": "📖 ESPLORA — L'energia idroelettrica: l'acqua che scende"
         }
       ],
-      "spiegazione": "Gas: ~490 gCO₂/kWh. Carbone: ~820. Nucleare: ~12. Eolico: ~11. Fotovoltaico: ~45. Le rinnovabili e il nucleare producono 10-40x meno CO₂ del gas."
+      "spiegazione": "L'idroelettrico è 'dispacciabile': si può regolare aprendo o chiudendo le paratoie in base alla domanda. Quando serve più elettricità si aumenta il flusso, quando ce n'è troppa si riduce. Solare ed eolico sono intermittenti: producono solo quando c'è sole o vento, indipendentemente dalla domanda. Questa caratteristica rende l'idroelettrico prezioso per bilanciare la rete.",
+      "riferimento_principale": "📖 ESPLORA — L'energia idroelettrica: l'acqua che scende"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Dove si trova la prima centrale geotermica al mondo, ancora attiva, menzionata nel testo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Larderello, Toscana, inaugurata nel 1904",
+          "corretto": true,
+          "feedback": "Esatto! La prima centrale geotermica commerciale fu inaugurata a Larderello (Toscana) nel 1904 dall'ingegnere Piero Ginori Conti, usando il vapore naturale dei 'soffioni boraciferi'. Produce ancora oggi circa 800 MW."
+        },
+        {
+          "id": "b",
+          "testo": "Geisir, Islanda, inaugurata nel 1920",
+          "feedback": "Non corretto. Larderello (Toscana, 1904) è la prima centrale geotermica commerciale del mondo. L'Islanda ha impianti geotermici importanti ma non i primi.",
+          "riferimento": "📖 ESPLORA — L'energia geotermica: il calore della Terra"
+        },
+        {
+          "id": "c",
+          "testo": "Wairakei, Nuova Zelanda, inaugurata nel 1958",
+          "feedback": "Non corretto. Wairakei è una centrale geotermica importante ma non la prima. La prima fu Larderello (Toscana) nel 1904.",
+          "riferimento": "📖 ESPLORA — L'energia geotermica: il calore della Terra"
+        },
+        {
+          "id": "d",
+          "testo": "Reykjavik, Islanda, inaugurata nel 1930",
+          "feedback": "Non corretto. La prima centrale geotermica commerciale del mondo è a Larderello (Toscana, Italia) inaugurata nel 1904.",
+          "riferimento": "📖 ESPLORA — L'energia geotermica: il calore della Terra"
+        }
+      ],
+      "spiegazione": "La prima centrale geotermica commerciale del mondo fu inaugurata a Larderello (Toscana) nel 1904. L'ingegnere Piero Ginori Conti usò il vapore naturale dei 'soffioni boraciferi' per azionare una turbina. Oggi il campo geotermico di Larderello produce circa 800 MW, quasi il 2% della produzione elettrica italiana, con disponibilità continua 24/7.",
+      "riferimento_principale": "📖 ESPLORA — L'energia geotermica: il calore della Terra"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'potenza di picco' (kWp) di un impianto fotovoltaico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La potenza prodotta nelle condizioni standard di test: 1.000 W/m² di irraggiamento e temperatura di 25°C",
+          "corretto": true,
+          "feedback": "Esatto! La potenza di picco (kWp) è la potenza nominale dell'impianto nelle condizioni standard di test (1.000 W/m² di irraggiamento, 25°C). Nella realtà si produce molto meno: il fattore di carico in Italia è 13-15%."
+        },
+        {
+          "id": "b",
+          "testo": "La massima potenza mai prodotta dall'impianto in un giorno di estate con sole pieno",
+          "feedback": "Non corretto. Il kWp è la potenza in condizioni standard di test standardizzate (1.000 W/m², 25°C), non il massimo storico. Serve come riferimento confrontabile tra impianti diversi.",
+          "riferimento": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
+        },
+        {
+          "id": "c",
+          "testo": "Il picco di consumo familiare che l'impianto è dimensionato per soddisfare",
+          "feedback": "Non corretto. Il kWp misura la capacità di produzione dell'impianto, non i consumi famigliari. La produzione non è sempre uguale al consumo e l'impianto va dimensionato considerando il fattore di carico.",
+          "riferimento": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
+        },
+        {
+          "id": "d",
+          "testo": "Il punto di massima efficienza dell'inverter nella conversione DC/AC",
+          "feedback": "Non corretto. Il kWp riguarda la potenza dei pannelli, non l'efficienza dell'inverter. È la potenza nelle condizioni standard di test.",
+          "riferimento": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
+        }
+      ],
+      "spiegazione": "La potenza di picco (kWp) è la potenza prodotta dall'impianto fotovoltaico nelle condizioni standard di test: irraggiamento 1.000 W/m² e temperatura 25°C. Non è la potenza media: il fattore di carico in Italia è 13-15%, quindi un impianto da 3 kWp produce in media 390-450 W mediato su tutto l'anno (giorno e notte, estate e inverno).",
+      "riferimento_principale": "📖 ESPLORA — L'energia solare fotovoltaica: la luce trasformata in corrente"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "L'idrogeno verde si produce tramite elettrolisi dell'acqua. Cosa rende 'verde' questo idrogeno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'elettricità usata per l'elettrolisi proviene da fonti rinnovabili, quindi non ci sono emissioni di CO₂ nella produzione",
+          "corretto": true,
+          "feedback": "Esatto! L'idrogeno è 'verde' se l'elettricità usata per l'elettrolisi (separazione di H₂O in H₂ e O₂) viene da fonti rinnovabili. Se invece si usa elettricità da gas o carbone, si chiama idrogeno 'grigio' o 'blu'."
+        },
+        {
+          "id": "b",
+          "testo": "L'idrogeno verde è di colore verde a causa dei catalizzatori usati durante l'elettrolisi",
+          "feedback": "Non corretto. L'idrogeno non è letteralmente verde: è un gas incolore. Il termine 'verde' indica che la sua produzione usa energia da fonti rinnovabili, senza emissioni di CO₂.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+        },
+        {
+          "id": "c",
+          "testo": "L'idrogeno verde si estrae da piante di colore verde (alghe) tramite fermentazione",
+          "feedback": "Non corretto. L'idrogeno verde si produce tramite elettrolisi dell'acqua con energia rinnovabile, non dalla fermentazione di alghe.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+        },
+        {
+          "id": "d",
+          "testo": "L'idrogeno verde è biodegradabile, a differenza dell'idrogeno convenzionale",
+          "feedback": "Non corretto. L'idrogeno è H₂, un elemento chimico: non è 'biodegradabile' nel senso usuale. 'Verde' indica solo che la sua produzione è a basse emissioni perché usa energia rinnovabile.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+        }
+      ],
+      "spiegazione": "L'idrogeno è classificato per colore in base alla sua produzione: 'verde' = elettrolisi con energia rinnovabile (zero emissioni), 'grigio' = elettrolisi o riforma a vapore con gas naturale (emissioni di CO₂), 'blu' = riforma a vapore con cattura della CO₂. L'idrogeno verde è a emissioni quasi zero lungo tutta la filiera.",
+      "riferimento_principale": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'fattore di capacità' di un impianto rinnovabile?",
+      "domanda": "Il testo descrive il caso di Samsø (Danimarca): le turbine eoliche erano di proprietà di cooperative di cittadini. Quale effetto specifico ha avuto questo modello di proprietà sulla realizzazione del progetto?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La potenza massima installata in MW",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ha eliminato la resistenza locale alle turbine: chi possiede le turbine e ne riceve i profitti non si lamenta del rumore o dell'impatto visivo",
+          "corretto": true,
+          "feedback": "Esatto! La proprietà cooperativa ha trasformato i residenti da 'soggetti passivi' dell'impatto a 'beneficiari attivi' dei profitti. Chi ha investito nella cooperativa non si lamenta del rumore o dell'impatto visivo delle sue turbine."
         },
         {
           "id": "b",
-          "testo": "Il rapporto tra energia effettivamente prodotta e quella che produrrebbe a piena potenza per tutto l'anno: eolico ~30%, solare ~15-20%, idroelettrico ~45%",
-          "corretto": true,
-          "feedback": "Esatto! Il fattore di capacità riflette l'intermittenza: il sole non splende sempre, il vento non soffia sempre."
+          "testo": "Ha ridotto i costi di installazione del 50% grazie al lavoro volontario dei cittadini",
+          "feedback": "Non corretto. Il testo non menziona una riduzione del 50% dei costi. Il vantaggio principale del modello cooperativo era l'eliminazione della resistenza locale, non il risparmio economico sull'installazione.",
+          "riferimento": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
         },
         {
           "id": "c",
-          "testo": "Il rendimento del pannello fotovoltaico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ha permesso di installare turbine più grandi rispetto al limite consentito per le imprese private",
+          "feedback": "Non corretto. Il testo non menziona differenze normative tra cooperative e imprese private per la dimensione delle turbine. Il vantaggio era l'accettazione locale, non la dimensione.",
+          "riferimento": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
         },
         {
           "id": "d",
-          "testo": "Il costo per kWh installato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Ha garantito che tutta l'elettricità prodotta restasse all'interno dell'isola senza essere esportata",
+          "feedback": "Non corretto. Il testo dice che l'isola esportava il surplus alla rete nazionale. Il vantaggio della proprietà cooperativa era l'accettazione sociale, non l'auto-consumo forzato.",
+          "riferimento": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
         }
       ],
-      "spiegazione": "Il fattore di capacità riflette l'intermittenza: il sole non splende sempre, il vento non soffia sempre. Un solare da 1 MW produce come una centrale fossile da 150-200 kW."
+      "spiegazione": "Il modello cooperativo di Samsø ha eliminato la principale barriera alla transizione: la resistenza locale alle turbine. Chi possiede le turbine e ne riceve i dividendi non si lamenta del rumore o dell'impatto paesaggistico. Questo ha permesso di installare le turbine senza le lunghe contestazioni che rallentano i progetti eolici in molti altri luoghi.",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è il 'levelized cost of energy' (LCOE) e perché è il miglior parametro di confronto?",
+      "domanda": "Il biogas prodotto dalla digestione anaerobica degli scarti organici può essere purificato in biometano (>95% CH₄) e immesso nella rete del gas. Quale vantaggio specifico ha questo rispetto alla combustione diretta del biogas?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il costo dell'energia durante i picchi di consumo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il biometano può sostituire il gas fossile nelle reti esistenti senza modificare le infrastrutture, sostituendo gas fossile in modo quasi neutro per il clima",
+          "corretto": true,
+          "feedback": "Esatto! Il biometano si immette nella rete del gas naturale esistente e può essere usato da qualsiasi utente collegato alla rete senza modifiche. La combustione diretta del biogas in loco richiede invece impianti cogenerativi locali."
         },
         {
           "id": "b",
-          "testo": "Il costo medio per kWh prodotto su tutta la vita dell'impianto, includendo costruzione, operazione e dismissione: permette confronto equo tra tecnologie diverse",
-          "corretto": true,
-          "feedback": "Esatto! Nel 2023 LCOE solare: 0."
+          "testo": "Il biometano ha un contenuto energetico 10 volte superiore al biogas grezzo",
+          "feedback": "Non corretto. Il biometano è biogas purificato: ha un contenuto energetico per m³ maggiore del biogas grezzo (che contiene anche CO₂), ma non è 10 volte maggiore.",
+          "riferimento": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
         },
         {
           "id": "c",
-          "testo": "Il prezzo di mercato dell'energia elettrica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il biometano è completamente biodegradabile, a differenza del biogas che inquina l'aria",
+          "feedback": "Non corretto. Il biogas (principalmente metano) è un combustibile gassoso, non un inquinante dell'aria nel senso usuale. Il vantaggio del biometano è la compatibilità con le reti gas esistenti.",
+          "riferimento": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
         },
         {
           "id": "d",
-          "testo": "Il costo di installazione per MW di potenza",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il biometano elimina completamente le emissioni di CO₂ della combustione",
+          "feedback": "Non corretto. Bruciare biometano produce CO₂ come qualsiasi combustione di metano. La differenza è che quella CO₂ era stata recentemente fissata dalla biomassa (ciclo del carbonio breve), non estratta da riserve fossili millenarie.",
+          "riferimento": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
         }
       ],
-      "spiegazione": "Nel 2023 LCOE solare: 0.04-0.08 $/kWh. Eolico: 0.03-0.05. Gas: 0.06-0.10. Carbone: 0.07-0.15. Le rinnovabili sono ora la fonte più economica in molte regioni."
+      "spiegazione": "Il biometano (biogas purificato >95% CH₄) può essere immesso direttamente nelle reti del gas naturale esistenti e usato da qualsiasi utente collegato senza modifiche. È un vantaggio enorme rispetto alla combustione diretta del biogas grezzo (che richiede cogeneratori locali). In Italia, il biometano immesso in rete rappresenta circa il 10% del gas distribuito.",
+      "riferimento_principale": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Perché la transizione energetica è anche una questione di sicurezza geopolitica?",
+      "domanda": "Il testo dice che il costo del solare è già più basso del fossile in molte zone, ma il costo di 'integrazione nel sistema' è separato e molto rilevante. Cosa comprende questo costo di integrazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i pannelli solari possono essere usati come armi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I costi di accumulo energetico, smart grid, rinforzo delle reti di distribuzione e gestione dell'intermittenza quando la quota di rinnovabili è alta",
+          "corretto": true,
+          "feedback": "Esatto! Il costo di produzione del solare è basso, ma quando la quota di rinnovabili supera il 30-40%, emergono costi aggiuntivi: accumulo (batterie), rinforzo delle reti, gestione in tempo reale dell'intermittenza tramite smart grid. Un sistema al 100% rinnovabili è più costoso da gestire di uno al 30%."
         },
         {
           "id": "b",
-          "testo": "Perché i combustibili fossili creano dipendenza da paesi produttori (Russia, Medioriente): le rinnovabili sono locali e riducono la vulnerabilità energetica",
-          "corretto": true,
-          "feedback": "Esatto! L'Europa importava il 40% del suo gas dalla Russia prima del 2022."
+          "testo": "Il costo delle campagne di marketing per convincere i consumatori a comprare pannelli solari",
+          "feedback": "Non corretto. I costi di marketing non sono i 'costi di integrazione' nel sistema energetico. Il problema tecnico è gestire l'intermittenza quando la quota di rinnovabili è alta.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "c",
-          "testo": "Perché le turbine eoliche interferiscono con i radar militari",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il costo dell'energia elettrica per i consumatori finali, che è diverso dal costo di produzione",
+          "feedback": "Non corretto. Il prezzo al consumatore include molti componenti (tasse, trasporto, oneri di sistema) ma non è quello che il testo chiama 'costo di integrazione'. Il problema specifico è l'intermittenza e la necessità di accumulo.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "Perché l'energia rinnovabile richiede minerali rari controllati da pochi paesi",
-          "feedback": "Questa è anche una preoccupazione reale ma non risponde alla domanda principale."
+          "testo": "Il costo delle normative ambientali che impongono standard elevati ai produttori di pannelli",
+          "feedback": "Non corretto. I costi normativi esistono ma non sono il 'costo di integrazione' descritto nel testo. Il costo di integrazione riguarda la gestione dell'intermittenza nella rete elettrica.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         }
       ],
-      "spiegazione": "L'Europa importava il 40% del suo gas dalla Russia prima del 2022. Le rinnovabili sono energia locale: il sole e il vento non si possono sanzionare."
+      "spiegazione": "L'errore comune è confrontare solo il costo di produzione (solare/eolico) con quello fossile. Il costo reale della transizione include anche: accumulo energetico (batterie, pompato), smart grid per gestione in tempo reale, rinforzo delle reti di distribuzione, e gestione dell'intermittenza. Un sistema al 100% rinnovabili richiede molto più accumulo e flessibilità di uno al 30%, aggiungendo costi che non compaiono nel prezzo del singolo pannello.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'grid parity' delle rinnovabili e quali implicazioni ha?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Un impianto fotovoltaico da 3 kWp in Italia centrale produce circa 3.600-4.000 kWh/anno. Ma la potenza di picco è 3 kW. Perché la produzione annua è così diversa da quello che si otterrebbe se l'impianto funzionasse a piena potenza tutto l'anno?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La distribuzione uniforme dell'energia sulla rete",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il 'fattore di carico' del solare in Italia è 13-15%: l'impianto non produce sempre a piena potenza ma varia con ore del giorno, stagione e condizioni meteorologiche",
+          "corretto": true,
+          "feedback": "Esatto! Un impianto da 3 kWp a piena potenza per 8.760 ore/anno produrrebbe 26.280 kWh. Ma il fattore di carico è 13-15%: la produzione reale è 3.600-4.000 kWh/anno perché il sole non splende sempre e le nuvole riducono l'irraggiamento."
         },
         {
           "id": "b",
-          "testo": "Il punto in cui il costo di produzione da rinnovabili eguaglia quello da fonte fossile senza sussidi: raggiunto per solare ed eolico in molti mercati dopo il 2020",
-          "corretto": true,
-          "feedback": "Esatto! Dopo la grid parity le rinnovabili crescono autonomamente senza incentivi."
+          "testo": "Perché l'inverter converte solo il 13-15% dell'energia prodotta dai pannelli, perdendo il resto",
+          "feedback": "Non corretto. L'inverter moderno ha rendimento del 96-98%, non del 13-15%. Il fattore di carico del 13-15% riguarda la variabilità dell'irraggiamento solare (ore di buio, nuvole, stagioni), non le perdite dell'inverter.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Potenza installata vs. energia prodotta"
         },
         {
           "id": "c",
-          "testo": "La capacità della rete di bilanciare domanda e offerta",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i pannelli si degradano rapidamente e dopo 3 anni producono solo il 13-15% della potenza originale",
+          "feedback": "Non corretto. I pannelli si degradano molto lentamente (0,5-1%/anno). La differenza tra kWp installati e kWh prodotti non dipende dal degrado ma dalla variabilità dell'irraggiamento solare.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Potenza installata vs. energia prodotta"
         },
         {
           "id": "d",
-          "testo": "La parità di potenza installata tra diverse fonti rinnovabili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la legge italiana impone un limite di produzione del 15% della potenza nominale per i privati",
+          "feedback": "Non corretto. Non esiste tale limitazione normativa. Il fattore di carico del 13-15% è una proprietà fisica dell'irraggiamento solare in Italia, non una limitazione normativa.",
+          "riferimento": "📖 ESPLORA — Box Fisica — Potenza installata vs. energia prodotta"
         }
       ],
-      "spiegazione": "Dopo la grid parity le rinnovabili crescono autonomamente senza incentivi. Il crollo del costo del solare (-90% in 10 anni) ha reso obsoleti molti modelli economici energetici."
+      "spiegazione": "Il fattore di carico del fotovoltaico in Italia è 13-15%: significa che di media, considerando notti, nuvole, inverno, l'impianto produce il 13-15% della sua potenza nominale ogni ora dell'anno. Un impianto da 3 kWp produce: 3 kW × 8.760 h/anno × 0,14 ≈ 3.679 kWh/anno. Questo è il motivo per cui il kWp è solo un parametro di targa, non la produzione reale.",
+      "riferimento_principale": "📖 ESPLORA — Box Fisica — Potenza installata vs. energia prodotta"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è l'idrogeno verde e qual è il suo ruolo nella transizione?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo afferma che la transizione energetica non è 'solo sostituire i fossili con le rinnovabili' ma 'riprogettare l'intero sistema energetico'. Quali tre componenti del sistema devono essere riprogettati?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un gas naturale con basse emissioni di CO₂",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Produzione (rinnovabili), distribuzione (smart grid), accumulo (batterie, pompato, idrogeno) e consumo (demand response, veicoli V2G)",
+          "corretto": true,
+          "feedback": "Esatto! La transizione richiede: produzione (fonti rinnovabili), distribuzione (smart grid con gestione intelligente), accumulo (per compensare l'intermittenza), e consumo (flessibilità della domanda, V2G). Non basta sostituire le centrali."
         },
         {
           "id": "b",
-          "testo": "Idrogeno prodotto tramite elettrolisi dell'acqua con energia rinnovabile: zero emissioni, può decarbonizzare settori difficili come acciaio, cemento e trasporto pesante",
-          "corretto": true,
-          "feedback": "Esatto! L'idrogeno verde risolve dove le batterie non arrivano: aerei, navi, forni industriali ad alta temperatura."
+          "testo": "Solo la produzione: sostituendo le centrali fossili con rinnovabili il sistema si adatta automaticamente",
+          "feedback": "Non corretto. Sostituire solo la produzione senza modificare la rete (smart grid), l'accumulo e la gestione della domanda creerebbe problemi di stabilità con alte quote di rinnovabili intermittenti.",
+          "riferimento": "📖 ESPLORA — Smart grid e transizione energetica: riprogettare il sistema"
         },
         {
           "id": "c",
-          "testo": "Un carburante sintetico per auto elettriche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Solo i trasporti: elettrificando le auto il sistema energetico si trasforma automaticamente",
+          "feedback": "Non corretto. L'elettrificazione dei trasporti è una parte della transizione ma non la totalità. Servono anche produzione rinnovabile, smart grid e sistemi di accumulo.",
+          "riferimento": "📖 ESPLORA — Smart grid e transizione energetica: riprogettare il sistema"
         },
         {
           "id": "d",
-          "testo": "Un tipo di biogas prodotto da scarti organici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Solo l'accumulo: con abbastanza batterie qualsiasi sistema energetico funziona",
+          "feedback": "Non corretto. L'accumulo da solo non è sufficiente. Occorre riprogettare anche la produzione (rinnovabili), la distribuzione (smart grid) e la gestione della domanda.",
+          "riferimento": "📖 ESPLORA — Smart grid e transizione energetica: riprogettare il sistema"
         }
       ],
-      "spiegazione": "L'idrogeno verde risolve dove le batterie non arrivano: aerei, navi, forni industriali ad alta temperatura. Il problema è ancora il costo: 3-6 $/kg vs 1-2 del fossile."
+      "spiegazione": "La transizione energetica richiede la riprogettazione dell'intero sistema: produzione (dalle centrali fossili alle rinnovabili), distribuzione (dalle reti tradizionali alle smart grid bidirezionali), accumulo (per compensare l'intermittenza), e consumo (demand response, V2G per flessibilizzare la domanda). Cambiare solo la produzione senza il resto crea problemi di stabilità e costi aggiuntivi.",
+      "riferimento_principale": "📖 ESPLORA — Smart grid e transizione energetica: riprogettare il sistema"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il principio di 'addizionalità' nei meccanismi di incentivo delle rinnovabili?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo cita il caso dell'idroelettrico di pompaggio come la forma di accumulo energetico 'più diffusa al mondo'. Perché questa tecnologia non si può costruire ovunque?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'aggiunta di nuovi impianti alla rete esistente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché richiede un sito geografico con due bacini a quote diverse collegabili: non tutti i territori hanno questa conformazione",
+          "corretto": true,
+          "feedback": "Esatto! L'idroelettrico di pompaggio richiede due bacini a quote diverse (uno in alto, uno in basso) abbastanza vicini da poter essere collegati con condotte. Non tutti i territori hanno questa configurazione geografica, limitando l'applicabilità globale."
         },
         {
           "id": "b",
-          "testo": "Il requisito che gli incentivi finanzino solo progetti che non si sarebbero realizzati senza di essi: previene che i sussidi vadano a impianti già economicamente convenienti",
-          "corretto": true,
-          "feedback": "Esatto! L'addizionalità garantisce che gli incentivi creino valore netto."
+          "testo": "Perché è protetto da brevetti internazionali che ne limitano l'uso ai soli paesi membri dell'IEA",
+          "feedback": "Non corretto. L'idroelettrico di pompaggio non è brevettato. Il limite è geografico: serve una conformazione territoriale con due bacini a quote diverse.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
         },
         {
           "id": "c",
-          "testo": "La somma della potenza di tutti gli impianti incentivati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché l'acqua usata non può essere restituita all'ambiente dopo il pompaggio",
+          "feedback": "Non corretto. L'acqua viene pompata da un bacino inferiore a uno superiore e poi rilasciata di nuovo: è un ciclo chiuso. Non c'è perdita d'acqua nel processo.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
         },
         {
           "id": "d",
-          "testo": "Il principio per cui ogni paese deve raggiungere la stessa quota di rinnovabili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché consuma più acqua di quanta ne restituisce, rendendo insostenibile l'uso in zone aride",
+          "feedback": "Non corretto. Il pompaggio è un ciclo: la stessa acqua viene pompata su e rilasciata giù. Non 'consuma' acqua. Il limite è la conformazione geografica del territorio.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
         }
       ],
-      "spiegazione": "L'addizionalità garantisce che gli incentivi creino valore netto. Se un solare si costruisce senza incentivi, finanziarli è uno spreco di risorse pubbliche."
+      "spiegazione": "L'idroelettrico di pompaggio richiede una conformazione geografica specifica: due bacini a quote diverse (uno alto, uno basso) abbastanza vicini da poter essere collegati con condotte forzate. Non si può costruire in zone pianeggianti o dove manca l'acqua. Per questo è efficace in paesi montagnosi (Alpi, Scandinavia, Svizzera) ma non ovunque.",
+      "riferimento_principale": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il caso Samsø ha dimostrato che la transizione energetica è tecnicamente possibile 'senza tecnologie fantascientifiche'. Tuttavia il testo nota che 'scala è importante'. Quale problema specifico emerge quando si scala da 4.000 a 60 milioni di persone?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La complessità della governance, del bilanciamento della rete, delle interconnessioni regionali e della gestione dell'intermittenza aumenta in modo non-lineare con la scala",
+          "corretto": true,
+          "feedback": "Esatto! In un'isola da 4.000 persone, la comunità può coordinarsi direttamente e l'energia fluisce su breve distanza. Con 60 milioni di persone distribuite su un continente, occorrono: reti di trasmissione nazionali, mercati elettrici in tempo reale, interconnessioni con altri paesi, sistemi di accumulo distribuiti, smart grid con milioni di nodi."
+        },
+        {
+          "id": "b",
+          "testo": "La tecnologia fotovoltaica diventa meno efficiente quando viene installata su scala nazionale",
+          "feedback": "Non corretto. Le celle fotovoltaiche non diventano meno efficienti su scala nazionale. Il problema di scala riguarda la governance e la gestione della rete, non l'efficienza tecnologica.",
+          "riferimento": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
+        },
+        {
+          "id": "c",
+          "testo": "I materiali per costruire turbine eoliche e pannelli solari si esauriscono rapidamente con la scala",
+          "feedback": "Non corretto. Il silicio (solare) e l'acciaio/fibra di vetro (eolico) sono abbondanti. Il collo di bottiglia non sono i materiali ma la complessità di gestione del sistema energetico su scala continentale.",
+          "riferimento": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
+        },
+        {
+          "id": "d",
+          "testo": "I costi di produzione dell'energia rinnovabile aumentano linearmente con il numero di abitanti",
+          "feedback": "Non corretto. I costi tendono a diminuire con la scala (economie di scala). Il problema è la complessità di gestione del sistema, non l'aumento proporzionale dei costi.",
+          "riferimento": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
+        }
+      ],
+      "spiegazione": "La transizione di Samsø (4.000 abitanti, un'isola) era possibile con coordinamento comunitario diretto e rete semplice. A scala nazionale (60 milioni, territorio complesso) emergono: bilanciamento in tempo reale della rete con milioni di produttori distribuiti, interconnessioni internazionali, mercati elettrici sofisticati, smart grid con centinaia di milioni di sensori, e governance di sistemi complessi. La tecnologia è la stessa; la complessità sistemica non è lineare.",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: Samsø — un'isola danese 100% rinnovabile dal 2007"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo spiega che il ciclo dell'idrogeno verde (elettrolisi → stoccaggio → fuel cell) ha un'efficienza complessiva del 30-40%, contro l'85-90% delle batterie. Eppure l'idrogeno è considerato complementare, non alternativo, alle batterie. Perché?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché l'idrogeno può essere stoccato in grandi quantità e per lunghi periodi (stagionale), mentre le batterie sono economiche solo per accumulo di breve durata (giornaliero o settimanale)",
+          "corretto": true,
+          "feedback": "Esatto! Le batterie sono ottime per accumulo giornaliero o settimanale (casa, auto) ma costano molto per grandi capacità (GWh). L'idrogeno può essere stoccato in quantità enormi (gasdotti, caverne saline) per mesi, coprendo il fabbisogno stagionale che le batterie non possono economicamente coprire."
+        },
+        {
+          "id": "b",
+          "testo": "Perché l'idrogeno è già molto più economico delle batterie e le sostituirà completamente nei prossimi anni",
+          "feedback": "Non corretto. L'idrogeno verde è attualmente 4-5 volte più costoso dell'idrogeno da gas naturale, e il ciclo ha efficienza del 30-40%. Non è destinato a sostituire completamente le batterie ma a complementarle per certi usi.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+        },
+        {
+          "id": "c",
+          "testo": "Perché l'idrogeno è più sicuro delle batterie al litio in caso di incendio o esplosione",
+          "feedback": "Non corretto. L'idrogeno è infiammabile e ha specifici rischi di sicurezza. La ragione della complementarità è funzionale: accumulo stagionale vs. giornaliero.",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+        },
+        {
+          "id": "d",
+          "testo": "Perché l'idrogeno non richiede litio, evitando la dipendenza da paesi produttori instabili",
+          "feedback": "Non corretto. Sebbene la dipendenza dal litio sia una questione reale, la ragione della complementarità è funzionale: idrogeno per accumulo stagionale (mesi), batterie per accumulo giornaliero (ore-giorni).",
+          "riferimento": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+        }
+      ],
+      "spiegazione": "Batterie e idrogeno coprono scale temporali diverse: batterie per accumulo giornaliero/settimanale (ore-giorni, alta efficienza 85-90%, costi bassi per capacità moderata), idrogeno per accumulo stagionale (mesi, bassa efficienza 30-40% ma costo di stoccaggio basso per grandi volumi). Un sistema energetico 100% rinnovabile ha bisogno di entrambi: le batterie non sono economiche in GWh, l'idrogeno non è efficiente per lo stoccaggio di breve durata.",
+      "riferimento_principale": "📖 ESPLORA — L'accumulo energetico: la soluzione al problema dell'intermittenza"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo descrive l'ingegnere della transizione energetica come una 'figura in espansione' perché il piano PNIEC richiede di triplicare la capacità fotovoltaica italiana entro il 2030. Quale competenza metodologica è più critica per raggiungere questo obiettivo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La capacità di ottenere autorizzazioni, gestire l'opposizione locale (NIMBYsmo) e integrare gli impianti nelle reti di distribuzione — non solo la competenza tecnica di progettare impianti",
+          "corretto": true,
+          "feedback": "Esatto! Triplicare il fotovoltaico in 7 anni non è un problema solo tecnico: la tecnologia esiste. Il collo di bottiglia è burocratico e sociale: ottenere autorizzazioni (iter lunghi), gestire l'opposizione locale, e integrare migliaia di impianti nella rete di distribuzione esistente."
+        },
+        {
+          "id": "b",
+          "testo": "La capacità di inventare nuovi tipi di celle fotovoltaiche più efficienti di quelle attuali",
+          "feedback": "Non corretto. L'obiettivo di triplicare la capacità usa tecnologie già commerciali, non invenzioni future. Il collo di bottiglia è autorizzativo, logistico e di integrazione nella rete.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "c",
+          "testo": "La capacità di costruire fisicamente gli impianti fotovoltaici più velocemente dei concorrenti stranieri",
+          "feedback": "Non corretto. Il collo di bottiglia non è la velocità di costruzione fisica. Le principali sfide sono le autorizzazioni, l'integrazione nella rete e la gestione del consenso locale.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "d",
+          "testo": "La capacità di produrre pannelli fotovoltaici in Italia per ridurre la dipendenza dalla Cina",
+          "feedback": "Non corretto. Sebbene la dipendenza dalla Cina per i pannelli sia una questione di politica industriale, il piano PNIEC riguarda l'installazione, non la produzione. Il collo di bottiglia è autorizzativo e di rete.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        }
+      ],
+      "spiegazione": "Il piano PNIEC richiede di installare oltre 70 GW fotovoltaici aggiuntivi entro il 2030 (triplicando i 22 GW del 2023). La tecnologia esiste e costa poco. Il collo di bottiglia reale è burocratico e sociale: iter autorizzativi lunghi (spesso 5-7 anni per grandi impianti), opposizione locale (NIMBYsmo), e la necessità di integrare migliaia di impianti distribuiti nelle reti di distribuzione esistenti.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo descrive il 'fattore di carico' dell'eolico offshore come 35-45% contro il 20-25% onshore. Considerando anche i costi, perché l'offshore è preferibile per certi obiettivi e l'onshore per altri?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Offshore: produce più e in modo più costante (meno intermittente) ma è molto più costoso e complesso; onshore: più economico e rapido da installare ma produzione più variabile e impatto paesaggistico",
+          "corretto": true,
+          "feedback": "Esatto! Offshore ha fattore di carico 35-45% (molto più costante, quindi più facile da integrare nella rete) ma costi elevatissimi di installazione e manutenzione in mare. Onshore è 5-10 volte più economico ma più intermittente e causa più opposizione locale per impatto visivo."
+        },
+        {
+          "id": "b",
+          "testo": "Offshore è preferibile in tutti i casi perché il vento in mare è sempre più forte e costante del vento a terra",
+          "feedback": "Non corretto. Non è vero che l'offshore è preferibile 'in tutti i casi'. Per obiettivi di costo minimo con materia prima disponibile, l'onshore rimane competitivo. La scelta dipende dal bilanciamento costo/fattore di carico/contesto geografico.",
+          "riferimento": "📖 ESPLORA — L'energia eolica: il vento trasformato in elettricità"
+        },
+        {
+          "id": "c",
+          "testo": "Onshore è sempre preferibile perché i costi di manutenzione offshore sono proibitivi a lungo termine",
+          "feedback": "Non corretto. I costi offshore sono alti ma non necessariamente proibitivi. Il confronto non è sempre a favore dell'onshore: dipende dalle disponibilità del territorio, dalla distanza dalla costa e dagli obiettivi specifici.",
+          "riferimento": "📖 ESPLORA — L'energia eolica: il vento trasformato in elettricità"
+        },
+        {
+          "id": "d",
+          "testo": "La differenza di fattore di carico tra offshore e onshore è trascurabile perché entrambi sono intermittenti",
+          "feedback": "Non corretto. La differenza tra 20-25% (onshore) e 35-45% (offshore) è significativa: il fattore di carico più alto dell'offshore significa produzione più costante e prevedibile, con meno necessità di backup.",
+          "riferimento": "📖 ESPLORA — L'energia eolica: il vento trasformato in elettricità"
+        }
+      ],
+      "spiegazione": "Tradeoff offshore vs. onshore: Offshore: fattore di carico 35-45% (più costante, meno accumulo necessario), nessun impatto visivo sulle popolazioni, turbine più grandi. Ma costi di installazione e manutenzione 3-5 volte maggiori, tempi di costruzione più lunghi. Onshore: fattore di carico 20-25%, più economico e rapido, ma più intermittente, necessita di più territorio e causa maggiore opposizione locale. La scelta dipende dagli obiettivi specifici.",
+      "riferimento_principale": "📖 ESPLORA — L'energia eolica: il vento trasformato in elettricità"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo presenta le biomasse come 'neutre dal punto di vista climatico' se la foresta viene rigenerata alla stessa velocità con cui viene tagliata. Quale condizione pratica deve essere verificata perché questa neutralità sia reale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il ciclo di rigenerazione deve avvenire nella stessa regione e sullo stesso arco temporale dell'emissione, altrimenti si emette CO₂ ora e si riassorbe in decenni o altrove",
+          "corretto": true,
+          "feedback": "Esatto! La neutralità climatica delle biomasse è condizionale: se si taglia una foresta a crescita lenta in Amazzonia e si brucia in Europa, l'emissione è immediata (oggi) ma il riassorbimento richiede decenni o secoli. La neutralità vale solo se la rigenerazione è locale e tempestivamente comparabile all'emissione."
+        },
+        {
+          "id": "b",
+          "testo": "Le biomasse sono neutrali per il clima solo se vengono bruciate con sistemi di cattura del CO₂",
+          "feedback": "Non corretto. Il concetto di neutralità delle biomasse non richiede cattura del CO₂: si basa sulla chiusura del ciclo del carbonio. La condizione è che la rigenerazione della biomassa assorbano la stessa CO₂ emessa nella combustione.",
+          "riferimento": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
+        },
+        {
+          "id": "c",
+          "testo": "Le biomasse sono neutrali per il clima solo se vengono coltivate in serre con CO₂ controllata",
+          "feedback": "Non corretto. Le biomasse non richiedono serre. La neutralità dipende dalla chiusura del ciclo del carbonio: la rigenerazione della vegetazione deve riassorbire la CO₂ emessa nella combustione.",
+          "riferimento": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
+        },
+        {
+          "id": "d",
+          "testo": "Le biomasse sono sempre neutrali per il clima perché il carbonio che emettono era già nell'atmosfera prima",
+          "feedback": "Non corretto. Non è vero che è sempre neutrale. Se si brucia foresta primaria (che ha accumulato carbonio per secoli), si emette CO₂ che richiede secoli per essere riassorbita: è un impatto climatico reale.",
+          "riferimento": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
+        }
+      ],
+      "spiegazione": "La neutralità climatica delle biomasse è condizionale alla chiusura locale e temporale del ciclo del carbonio: la CO₂ emessa bruciando biomassa deve essere riassorbita dalla rigenerazione della stessa biomassa nello stesso arco temporale. Bruciare foreste primarie che impiegano secoli a rigenerarsi non è neutrale. Le biomasse sostenibili sono residui organici locali, non coltivazioni dedicate che sottraggono terreni agricoli.",
+      "riferimento_principale": "📖 ESPLORA — Biomasse e biogas: l'energia dal ciclo del carbonio"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo cita il calo del 90% del costo solare tra il 2010 e il 2023. Se questa tendenza (curva di apprendimento) continua, quali implicazioni sistemiche ha per le decisioni di investimento nel settore energetico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Gli investimenti in impianti fossili rischiano di diventare 'stranded assets' (attivi bloccati) prima del termine della loro vita utile, perché le rinnovabili continuano a diventare più competitive",
+          "corretto": true,
+          "feedback": "Esatto! Una centrale a carbone costruita oggi ha vita utile di 30-40 anni. Se il solare continua a calare di prezzo, quella centrale potrebbe diventare economicamente non competitiva dopo 10-15 anni (prima del rimborso dell'investimento): uno 'stranded asset'. Questo rende rischiosi gli investimenti in fossili."
+        },
+        {
+          "id": "b",
+          "testo": "Le aziende del solare diventeranno monopolisti globali e potranno aumentare i prezzi a piacimento",
+          "feedback": "Non corretto. La curva di apprendimento non porta necessariamente al monopolio. La produzione di pannelli è distribuita globalmente (principalmente in Cina, con capacità crescente in altri paesi). Il calo di costi beneficia i consumatori.",
+          "riferimento": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
+        },
+        {
+          "id": "c",
+          "testo": "I governi non dovranno più investire in infrastrutture di rete perché i pannelli solari individuale sostituiscono la rete",
+          "feedback": "Non corretto. L'automazione individuale con pannelli solari non elimina la necessità di reti: gli edifici senza sole di notte, in inverno, nelle giornate nuvolose hanno ancora bisogno della rete. L'investimento in smart grid è anzi più necessario con alta penetrazione solare.",
+          "riferimento": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
+        },
+        {
+          "id": "d",
+          "testo": "Le rinnovabili raggiungeranno costo zero tra il 2030 e il 2035, risolvendo automaticamente il problema energetico globale",
+          "feedback": "Non corretto. I costi scendono ma non raggiungono zero (ci sono costi di materiali, installazione, manutenzione). E anche con costi di produzione minimi, i costi di integrazione nella rete rimangono significativi.",
+          "riferimento": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
+        }
+      ],
+      "spiegazione": "La curva di apprendimento del solare (costo dimezzato ogni raddoppio della capacità installata) ha implicazioni per le decisioni di investimento: una centrale fossile costruita oggi con vita utile di 30-40 anni rischia di diventare non competitiva economicamente in 10-15 anni, prima di aver ripagato l'investimento. Questi 'stranded assets' sono un rischio finanziario reale per utilities e investitori che puntano ancora sui fossili.",
+      "riferimento_principale": "📖 ESPLORA — Cosa rende rinnovabile una fonte di energia"
     }
   ]
 }

@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-DIS-3-02",
-  "titolo": "Disegno CAD e progettazione digitale",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è il CAD (Computer Aided Design)?",
+      "domanda": "Cosa significa l'acronimo CAD?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un programma di elaborazione testi per tecnici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Computer-Aided Design",
+          "corretto": true,
+          "feedback": "Esatto! CAD sta per Computer-Aided Design: progettazione assistita da computer."
         },
         {
           "id": "b",
-          "testo": "Software per la progettazione e il disegno tecnico assistito dal computer",
-          "corretto": true,
-          "feedback": "Esatto! Il CAD ha rivoluzionato la progettazione: precisione assoluta, modifica istantanea, condivisione, simulazione e transizione diretta alla produzione CNC."
+          "testo": "Computer-Assisted Drawing",
+          "feedback": "Non corretto. La parola D sta per Design (progettazione), non Drawing (disegno).",
+          "riferimento": "📖 ESPLORA — Storia del CAD: dal tavolo da disegno al cloud"
         },
         {
           "id": "c",
-          "testo": "Un formato di file per le immagini vettoriali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Creative Automated Design",
+          "feedback": "Non corretto. CAD significa Computer-Aided Design, non Creative Automated Design.",
+          "riferimento": "📖 ESPLORA — Storia del CAD: dal tavolo da disegno al cloud"
         },
         {
           "id": "d",
-          "testo": "Un sistema di controllo numerico per macchine utensili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Cubic Area Diagram",
+          "feedback": "Non corretto. CAD è Computer-Aided Design, la tecnologia per la progettazione assistita da computer.",
+          "riferimento": "📖 ESPLORA — Storia del CAD: dal tavolo da disegno al cloud"
         }
       ],
-      "spiegazione": "Il CAD ha rivoluzionato la progettazione: precisione assoluta, modifica istantanea, condivisione, simulazione e transizione diretta alla produzione CNC."
+      "spiegazione": "CAD (Computer-Aided Design) nasce negli anni Cinquanta nei laboratori del MIT. Il salto commerciale avvenne nel 1982 con AutoCAD per personal computer, che rese il CAD accessibile agli studi di progettazione.",
+      "riferimento_principale": "📖 ESPLORA — Storia del CAD: dal tavolo da disegno al cloud"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Qual è la differenza tra CAD 2D e CAD 3D?",
+      "domanda": "In Tinkercad, cosa succede quando si applica l'operazione di 'sottrazione' (Hole) a un solido?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il 2D usa vettori, il 3D pixel",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il solido marcato come 'Hole' viene sottratto da un altro solido, creando una cavità",
+          "corretto": true,
+          "feedback": "Esatto! Nella geometria solida costruttiva (CSG) di Tinkercad, un solido marcato come Hole viene sottratto da un altro solido al momento del raggruppamento, lasciando una cavità."
         },
         {
           "id": "b",
-          "testo": "Il 2D produce disegni piani (piante, sezioni, prospetti); il 3D crea modelli tridimensionali da cui si ricavano automaticamente tutte le viste 2D",
-          "corretto": true,
-          "feedback": "Esatto! AutoCAD, LibreCAD = CAD 2D."
+          "testo": "Il solido viene rimpicciolito della metà",
+          "feedback": "Non corretto. L'operazione Hole non riduce il solido a metà: lo trasforma in uno 'strumento di sottrazione' che scava una cavità in un altro solido.",
+          "riferimento": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
         },
         {
           "id": "c",
-          "testo": "Il 2D è per architettura, il 3D per meccanica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il solido viene colorato di rosso per indicare che è difettoso",
+          "feedback": "Non corretto. Il colore rosso semitrasparente indica che il solido è marcato come Hole (foro), non che è difettoso. Serve per sottrarlo da un altro solido.",
+          "riferimento": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
         },
         {
           "id": "d",
-          "testo": "Non c'è differenza pratica rilevante",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il solido viene spostato fuori dal piano di lavoro",
+          "feedback": "Non corretto. L'operazione Hole non sposta nulla: converte il solido in uno strumento di sottrazione da applicare ad altri solidi al raggruppamento.",
+          "riferimento": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
         }
       ],
-      "spiegazione": "AutoCAD, LibreCAD = CAD 2D. Fusion 360, FreeCAD, SolidWorks = CAD 3D. Il modello 3D è la rappresentazione principale; le tavole 2D si generano in automatico."
+      "spiegazione": "Nella geometria solida costruttiva (CSG) di Tinkercad, ci sono tre operazioni: unione (due solidi diventano uno), sottrazione (un solido Hole viene sottratto da un solido pieno, scavandoci dentro), raggruppamento. La sottrazione corrisponde matematicamente alla differenza insiemistica A \\ B.",
+      "riferimento_principale": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è Tinkercad e perché è adatto a studenti?",
+      "domanda": "Qual è il materiale più usato nelle stampanti 3D FDM in ambito educativo, secondo il testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un software professionale di progettazione CAD avanzata",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "PLA (acido polilattico)",
+          "corretto": true,
+          "feedback": "Esatto! Il PLA è il filamento più usato nell'educazione: economico, si stampa a basse temperature (190-220°C) e si considera biodegradabile in condizioni di compostaggio industriale."
         },
         {
           "id": "b",
-          "testo": "Una piattaforma CAD 3D gratuita, browser-based, con interfaccia intuitiva a blocchi: ideale per iniziare la modellazione 3D",
-          "corretto": true,
-          "feedback": "Esatto! Tinkercad (Autodesk) funziona nel browser senza installazione."
+          "testo": "ABS (acrilonitrile butadiene stirene)",
+          "feedback": "Non corretto. L'ABS si usa per applicazioni più resistenti al calore ma è più difficile da gestire. Il testo indica il PLA come materiale principale nell'educazione.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
         },
         {
           "id": "c",
-          "testo": "Un software di rendering 3D professionale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "PETG (polietilene tereftalato glicole)",
+          "feedback": "Non corretto. Il PETG è più resistente del PLA ma il testo indica il PLA come il filamento più usato nell'educazione.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
         },
         {
           "id": "d",
-          "testo": "Un programma per disegnare circuiti elettrici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Nylon",
+          "feedback": "Non corretto. Il nylon è un filamento tecnico più difficile da stampare. Il testo indica il PLA come il filamento standard nell'educazione.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
         }
       ],
-      "spiegazione": "Tinkercad (Autodesk) funziona nel browser senza installazione. L'approccio CSG (Constructive Solid Geometry) con forme semplici è intuitivo e produce file STL per la stampa 3D."
+      "spiegazione": "Il PLA (acido polilattico) è il filamento più usato nell'educazione: economico, si stampa a basse temperature (190-220°C), non richiede piano riscaldato, e si considera biodegradabile in condizioni di compostaggio industriale a 70°C. Rispetto ad ABS o PETG, è molto più facile da gestire.",
+      "riferimento_principale": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "In un modello CAD parametrico, cosa succede quando si modifica il valore di un parametro (ad esempio 'diametro_pin')?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il software aggiorna automaticamente tutti gli elementi che dipendono da quel parametro",
+          "corretto": true,
+          "feedback": "Esatto! Nel design parametrico ogni dimensione è un parametro e le relazioni tra parametri sono definite esplicitamente. Cambiare un parametro aggiorna automaticamente tutto ciò che dipende da esso."
+        },
+        {
+          "id": "b",
+          "testo": "Solo la dimensione di quell'elemento specifico cambia, gli altri rimangono invariati",
+          "feedback": "Non corretto. Nel design parametrico le relazioni tra parametri sono definite esplicitamente: cambiare un parametro aggiorna automaticamente tutti gli elementi dipendenti.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        },
+        {
+          "id": "c",
+          "testo": "Il modello viene eliminato e deve essere ridisegnato da zero",
+          "feedback": "Non corretto. Il vantaggio principale del design parametrico è esattamente questo: non occorre ridisegnare da zero, basta cambiare il valore del parametro.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        },
+        {
+          "id": "d",
+          "testo": "Il software chiede conferma per ogni elemento che verrebbe modificato",
+          "feedback": "Non corretto. Il software aggiorna automaticamente senza chiedere conferma per ogni elemento. È questo il vantaggio del design parametrico.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        }
+      ],
+      "spiegazione": "Nel design parametrico ogni misura è un parametro con un nome e relazioni esplicite con altri parametri. Cambiare 'diametro_pin' aggiorna automaticamente tutte le dimensioni che dipendono da esso: sedi dei pin, tolleranze, viti di fissaggio. Questo accelera enormemente le varianti di prodotto.",
+      "riferimento_principale": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa fa un software 'slicer' (come Ultimaker Cura) con un file STL prima della stampa 3D?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Divide il modello 3D in strati orizzontali e genera le istruzioni di movimento della testina (G-code)",
+          "corretto": true,
+          "feedback": "Esatto! Lo slicer 'affetta' orizzontalmente il modello 3D in centinaia o migliaia di strati e genera per ogni strato le istruzioni di movimento della testina (file G-code)."
+        },
+        {
+          "id": "b",
+          "testo": "Converte il file STL in formato PDF stampabile su carta",
+          "feedback": "Non corretto. Lo slicer non converte in PDF: 'affetta' il modello 3D in strati e genera le istruzioni di movimento per la stampante 3D.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+        },
+        {
+          "id": "c",
+          "testo": "Verifica automaticamente se il modello ha errori geometrici e li corregge",
+          "feedback": "Non corretto. Alcune funzionalità di controllo esistono, ma la funzione principale dello slicer è dividere il modello in strati e generare il G-code.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+        },
+        {
+          "id": "d",
+          "testo": "Calcola il peso finale dell'oggetto stampato",
+          "feedback": "Non corretto. Il peso può essere stimato, ma la funzione principale dello slicer è dividere in strati e generare le istruzioni di stampa (G-code).",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+        }
+      ],
+      "spiegazione": "Lo slicer (letteralmente 'affettatore') legge il modello 3D solido e lo 'affetta' orizzontalmente in centinaia o migliaia di strati sottili (layer). Per ogni strato genera le istruzioni di movimento della testina di stampa: il file G-code che viene caricato nella stampante.",
+      "riferimento_principale": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'infill' nei parametri di stampa 3D?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La percentuale del volume interno dell'oggetto riempita di materiale",
+          "corretto": true,
+          "feedback": "Esatto! L'infill indica quanto dell'interno dell'oggetto è riempito: 100% è completamente solido, 20% ha una struttura interna a nido d'ape o griglia con molto vuoto."
+        },
+        {
+          "id": "b",
+          "testo": "Il numero di strati che formano la superficie esterna dell'oggetto",
+          "feedback": "Non corretto. Gli strati della superficie esterna si chiamano 'walls' o 'perimetri'. L'infill riguarda la struttura interna dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+        },
+        {
+          "id": "c",
+          "testo": "La velocità di movimento della testina durante la stampa",
+          "feedback": "Non corretto. La velocità di stampa è un parametro separato. L'infill è la percentuale di riempimento del volume interno.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+        },
+        {
+          "id": "d",
+          "testo": "La temperatura del materiale estruso durante la stampa",
+          "feedback": "Non corretto. La temperatura è un parametro separato. L'infill è la percentuale di riempimento del volume interno dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+        }
+      ],
+      "spiegazione": "L'infill (riempimento interno) è la percentuale del volume interno dell'oggetto riempita di materiale. Un infill del 100% è solido ma pesante. Un infill del 20% è più leggero con struttura interna a nido d'ape. Per oggetti funzionali non critici, 15-20% è spesso sufficiente.",
+      "riferimento_principale": "📖 ESPLORA — Dal modello 3D alla stampa 3D: il percorso del file"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è la 'modellazione parametrica' nel CAD 3D?",
+      "domanda": "Il testo descrive il rover NASA Perseverance con oltre 50 componenti in stampa 3D. Una delle tre ragioni è 'geometrie impossibili'. Perché la stampa 3D può produrre geometrie impossibili per la fresatura?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La creazione di modelli con parametri fissi non modificabili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la stampa 3D costruisce dall'interno verso l'esterno, potendo creare canali interni che le macchine utensili non possono raggiungere",
+          "corretto": true,
+          "feedback": "Esatto! La fresatura rimuove materiale dall'esterno. La stampa 3D deposita materiale strato per strato, potendo creare strutture interne (canali di raffreddamento, cavità) inaccessibili a qualsiasi utensile che lavora dall'esterno."
         },
         {
           "id": "b",
-          "testo": "Una tecnica in cui le dimensioni del modello sono definite da parametri modificabili: cambiare un valore aggiorna automaticamente tutto il modello",
-          "corretto": true,
-          "feedback": "Esatto! Con la modellazione parametrica (SolidWorks, Fusion 360) cambiare il diametro di un foro aggiorna automaticamente la filettatura, le tolleranze e il disegno 2D."
+          "testo": "Perché la stampa 3D usa materiali più duri che la fresatura non riesce a lavorare",
+          "feedback": "Non corretto. La difficoltà non riguarda la durezza del materiale ma la geometria: la stampa 3D può creare strutture interne che la fresatura (che lavora dall'esterno) non può raggiungere.",
+          "riferimento": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
         },
         {
           "id": "c",
-          "testo": "La modellazione di superfici curve complesse",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la stampa 3D è più precisa della fresatura nella produzione di superfici curve",
+          "feedback": "Non corretto. La precisione non è il punto: il vantaggio è la possibilità di creare strutture interne inaccessibili agli utensili tradizionali.",
+          "riferimento": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
         },
         {
           "id": "d",
-          "testo": "L'importazione di parametri da un database esterno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la fresatura non funziona nello spazio mentre la stampa 3D sì",
+          "feedback": "Non corretto. Il testo parla di componenti progettati in stampa 3D sulla Terra per poi essere inviati su Marte. Il vantaggio è la geometria impossibile, non il contesto spaziale.",
+          "riferimento": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
         }
       ],
-      "spiegazione": "Con la modellazione parametrica (SolidWorks, Fusion 360) cambiare il diametro di un foro aggiorna automaticamente la filettatura, le tolleranze e il disegno 2D. È la rivoluzione del CAD moderno."
+      "spiegazione": "Alcuni componenti di Perseverance hanno canali di raffreddamento interni così complessi che non potrebbero essere prodotti per fresatura o fusione. La stampa 3D costruisce strato per strato dall'interno verso l'esterno, creando strutture interne inaccessibili a qualsiasi utensile tradizionale.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è un file STL e perché è il formato standard per la stampa 3D?",
+      "domanda": "Nel caso studio del porta-telefono in Tinkercad, il testo dice di 'verificare la stabilità geometrica: il baricentro del telefono + supporto deve cadere dentro la base'. Perché questa verifica è fondamentale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un formato di testo per la documentazione CAD",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se il baricentro cade fuori dalla base, l'oggetto tenderà a ribaltarsi anche senza forze esterne",
+          "corretto": true,
+          "feedback": "Esatto! È un principio fisico fondamentale: un oggetto è stabile solo se il suo baricentro cade all'interno del poligono di supporto (la base). Se cade fuori, il momento torcente generato dal peso stesso farà ribaltare l'oggetto."
         },
         {
           "id": "b",
-          "testo": "Un formato che descrive la geometria 3D come una mesh di triangoli: universalmente supportato dalle stampanti 3D",
-          "corretto": true,
-          "feedback": "Esatto! STL (Stereolithography) rappresenta qualsiasi superficie 3D con triangoli."
+          "testo": "Se il baricentro cade fuori dalla base, il software Tinkercad segnala un errore",
+          "feedback": "Non corretto. Tinkercad non calcola la stabilità fisica. La verifica è fisica, non informatica: un oggetto con baricentro fuori dalla base si rovescia.",
+          "riferimento": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
         },
         {
           "id": "c",
-          "testo": "Il formato nativo di Tinkercad",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se il baricentro cade fuori dalla base, il file STL non può essere esportato",
+          "feedback": "Non corretto. L'esportazione STL non dipende dalla stabilità fisica. La verifica è necessaria per garantire che il prototipo fisico funzioni correttamente.",
+          "riferimento": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
         },
         {
           "id": "d",
-          "testo": "Un formato compresso per i grandi file CAD",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il baricentro deve cadere dentro la base solo se l'oggetto verrà usato in ambienti con vibrazioni",
+          "feedback": "Non corretto. La regola del baricentro vale sempre: un oggetto con baricentro fuori dalla base è instabile indipendentemente dall'ambiente.",
+          "riferimento": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
         }
       ],
-      "spiegazione": "STL (Stereolithography) rappresenta qualsiasi superficie 3D con triangoli. La stampante 3D legge l'STL e calcola gli strati (slicing). Più triangoli = più dettaglio = file più grande."
+      "spiegazione": "È un principio di fisica applicata al design: la stabilità di un oggetto dipende dalla posizione del baricentro rispetto alla base di appoggio. Se il baricentro cade all'interno della base, l'oggetto è stabile. Se cade fuori, si rovescia. Questa verifica deve avvenire in fase di progettazione CAD prima di stampare.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cos'è il processo di 'slicing' nella stampa 3D?",
+      "domanda": "Il testo descrive come il CAD parametrico ha reso costruibili gli edifici di Zaha Hadid (es. il MAXXI di Roma). Quale problema specifico il CAD parametrico ha risolto che prima era impossibile?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il taglio fisico del pezzo dopo la stampa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La definizione matematica precisa di superfici curve complesse e la loro traduzione in istruzioni per le macchine CNC",
+          "corretto": true,
+          "feedback": "Esatto! Prima del CAD parametrico, le superfici che si torcono e si inclinano continuamente non potevano essere definite con precisione. Il CAD parametrico permette di gestire queste forme come superfici matematiche e tradurle in istruzioni per le macchine che tagliano l'acciaio."
         },
         {
           "id": "b",
-          "testo": "La conversione del modello 3D in strati orizzontali (layer) con percorsi di stampa per l'ugello: il slicer calcola supporti, riempimento e temperatura",
-          "corretto": true,
-          "feedback": "Esatto! Lo slicer (Cura, PrusaSlicer) è il 'traduttore' tra modello 3D e comandi macchina."
+          "testo": "Il problema del costo elevato del calcestruzzo armato per le grandi strutture",
+          "feedback": "Non corretto. Il CAD parametrico non risolve il costo dei materiali. Risolve il problema della definizione matematica precisa di forme complesse e della loro realizzazione.",
+          "riferimento": "📖 ESPLORA — Box Geo-Storia: Come il CAD ha trasformato l'architettura"
         },
         {
           "id": "c",
-          "testo": "La fase di rimozione delle supporto di stampa",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il problema della lentezza dei cantieri italiani rispetto a quelli nord-europei",
+          "feedback": "Non corretto. Il testo non parla di velocità dei cantieri. Il problema risolto era la possibilità di definire e costruire forme architettoniche impossibili con il calcolo manuale.",
+          "riferimento": "📖 ESPLORA — Box Geo-Storia: Come il CAD ha trasformato l'architettura"
         },
         {
           "id": "d",
-          "testo": "Il controllo qualità del pezzo stampato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il problema della scarsa resistenza dei materiali disponibili prima degli anni '90",
+          "feedback": "Non corretto. I materiali erano già disponibili. Il problema era la possibilità di progettare con precisione forme complesse e comunicarle alle macchine di produzione.",
+          "riferimento": "📖 ESPLORA — Box Geo-Storia: Come il CAD ha trasformato l'architettura"
         }
       ],
-      "spiegazione": "Lo slicer (Cura, PrusaSlicer) è il 'traduttore' tra modello 3D e comandi macchina. Parametri come altezza layer, riempimento e velocità determinano qualità e tempo di stampa."
+      "spiegazione": "Prima del CAD parametrico, le forme architettoniche erano limitate da ciò che poteva essere calcolato manualmente. Zaha Hadid progettava edifici con superfici che si torcono continuamente: forme impossibili da definire con geometrie standard. Il CAD parametrico permette di definire queste forme come superfici matematiche e trasmetterle con precisione alle macchine CNC.",
+      "riferimento_principale": "📖 ESPLORA — Box Geo-Storia: Come il CAD ha trasformato l'architettura"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'reverse engineering' digitale e quali strumenti usa?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo paragona le operazioni di Tinkercad (aggiunta, sottrazione, intersezione) all'algebra degli insiemi. Quale operazione corrisponde matematicamente alla sottrazione di un 'Hole' da un solido pieno?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La violazione dei brevetti di un prodotto concorrente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La differenza insiemistica A \\ B (A meno B)",
+          "corretto": true,
+          "feedback": "Esatto! Sottrarre un solido Hole (B) da un solido pieno (A) corrisponde alla differenza insiemistica: si ottiene A privato di ciò che aveva in comune con B. È esattamente l'operazione A \\ B."
         },
         {
           "id": "b",
-          "testo": "La ricostruzione di un modello CAD da un oggetto fisico esistente tramite scanner 3D, photogrammetria o misurazioni manuali",
-          "corretto": true,
-          "feedback": "Esatto! Il reverse engineering è fondamentale per ricambi di oggetti senza documentazione, restauro di beni culturali e analisi della concorrenza."
+          "testo": "L'unione degli insiemi A ∪ B",
+          "feedback": "Non corretto. L'unione A ∪ B corrisponde all'addizione di due solidi (l'unione in Tinkercad). La sottrazione corrisponde alla differenza A \\ B.",
+          "riferimento": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
         },
         {
           "id": "c",
-          "testo": "La modifica di un file CAD già esistente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'intersezione degli insiemi A ∩ B",
+          "feedback": "Non corretto. L'intersezione A ∩ B produce solo la parte comune dei due solidi. La sottrazione (Hole) corrisponde alla differenza A \\ B.",
+          "riferimento": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
         },
         {
           "id": "d",
-          "testo": "La conversione di un formato CAD in un altro",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il complementare dell'insieme A rispetto a B",
+          "feedback": "Non corretto. Il complementare di A rispetto a B sarebbe tutto quello che è in B ma non in A. La sottrazione in Tinkercad corrisponde alla differenza A \\ B.",
+          "riferimento": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
         }
       ],
-      "spiegazione": "Il reverse engineering è fondamentale per ricambi di oggetti senza documentazione, restauro di beni culturali e analisi della concorrenza. Lo scanner 3D è lo strumento chiave."
+      "spiegazione": "La geometria solida costruttiva (CSG) è la formalizzazione matematica delle operazioni di Tinkercad. Sottrarre un solido B (Hole) da un solido A corrisponde alla differenza insiemistica A \\ B: si ottiene il volume di A privato della parte che aveva in comune con B. È algebra degli insiemi applicata a oggetti fisici tridimensionali.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: progetta e modella un supporto porta-telefono"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'simulazione FEA' (Finite Element Analysis) nel CAD?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo avverte che 'la stampa 3D con filamento plastico (FDM) produce prototipi e oggetti funzionali in bassa resistenza, non oggetti strutturali definitivi'. Quale implicazione progettuale ha questa limitazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un tipo di rendering fotorealistico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il progettista deve tenere distinto l'uso del prototipo stampato (test di forma e fit) dall'uso del prodotto finale (uso strutturale), che richiederà materiali diversi",
+          "corretto": true,
+          "feedback": "Esatto! Il prototipo FDM in PLA permette di testare forma, ingombro, accessibilità, interfacce. Ma per applicazioni strutturali (un telaio di bici, una staffa portante) serviranno materiali diversi: metallo, compositi, o stampa 3D industriale."
         },
         {
           "id": "b",
-          "testo": "Un metodo computazionale che simula le sollecitazioni meccaniche, termiche o fluidodinamiche su un modello 3D per verificarne la resistenza prima della produzione",
-          "corretto": true,
-          "feedback": "Esatto! FEA divide il modello in migliaia di piccoli elementi finiti e simula come si deforma sotto i carichi."
+          "testo": "Il progettista non dovrebbe mai usare la stampa 3D FDM perché produce solo prototipi inutilizzabili",
+          "feedback": "Non corretto. Il testo non dice che i prototipi FDM sono inutilizzabili. Sono molto utili per testare forma, fit e interfacce. Il limite è l'uso strutturale definitivo.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "c",
-          "testo": "La simulazione del processo di stampa 3D",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il progettista dovrebbe sempre preferire la fresatura CNC alla stampa 3D per tutti gli oggetti",
+          "feedback": "Non corretto. Il testo non suggerisce di preferire sempre la fresatura. La stampa 3D e la fresatura hanno scopi diversi e si usano in contesti diversi.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "Un sistema di controllo qualità automatizzato",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il progettista non può usare la stampa 3D per oggetti che toccano l'acqua perché il PLA si dissolve",
+          "feedback": "Non corretto. Il testo non menziona la dissoluzione in acqua. Il limite del PLA è la bassa resistenza strutturale e la deformazione a temperature superiori ai 60°C.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         }
       ],
-      "spiegazione": "FEA divide il modello in migliaia di piccoli elementi finiti e simula come si deforma sotto i carichi. Previene rotture e ottimizza il peso senza dover costruire prototipi fisici costosi."
+      "spiegazione": "La limitazione della stampa FDM in PLA (bassa resistenza strutturale, deformazione sopra 60°C) implica una distinzione fondamentale: il prototipo serve a testare forma, ingombro, fit e interfacce — non a sostenere carichi strutturali. Per applicazioni strutturali definitive servono materiali diversi: metallo, compositi, o processi di stampa 3D industriale.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
     },
     {
-      "livello": "A",
-      "domanda": "Come il CAD si integra nel processo produttivo CNC?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Nel workflow base di Tinkercad per costruire un porta-matite cilindrico, il passo 4 usa lo strumento 'Allinea' per centrare i due cilindri. Perché questo passo è necessario prima del raggruppamento?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il CAD genera direttamente i pezzi senza macchine",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Se i cilindri non sono centrati sull'asse X e Y, il foro risultante sarà asimmetrico e non al centro dell'oggetto",
+          "corretto": true,
+          "feedback": "Esatto! Se il cilindro interno (Hole) non è centrato rispetto a quello esterno, la cavità risultante non sarà al centro del porta-matite. Il passo di allineamento garantisce la correttezza geometrica prima di raggruppare."
         },
         {
           "id": "b",
-          "testo": "Dal modello CAD si genera il percorso utensile (CAM), che viene tradotto in G-code per controllare la macchina CNC: il processo CAD→CAM→CNC è la base dell'Industry 4.0",
-          "corretto": true,
-          "feedback": "Esatto! CAD→CAM→CNC è la catena digitale-fisica: il modello digitale guida direttamente la fresa, il tornio o il laser."
+          "testo": "L'allineamento è necessario per evitare che il software Tinkercad vada in crash",
+          "feedback": "Non corretto. L'allineamento non è una necessità tecnica del software ma una necessità geometrica: garantisce che il foro sia correttamente posizionato al centro dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Workflow base in Tinkercad: costruire un oggetto passo per passo"
         },
         {
           "id": "c",
-          "testo": "Il CAD è usato solo per la documentazione finale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'allineamento è necessario solo se si vuole esportare in formato OBJ invece che STL",
+          "feedback": "Non corretto. L'allineamento è necessario per la correttezza geometrica dell'oggetto, indipendentemente dal formato di esportazione.",
+          "riferimento": "📖 ESPLORA — Workflow base in Tinkercad: costruire un oggetto passo per passo"
         },
         {
           "id": "d",
-          "testo": "Il CNC non usa file CAD ma programmi separati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'allineamento è un passo opzionale che si può saltare se si è esperti di CAD",
+          "feedback": "Non corretto. L'allineamento non è opzionale: senza di esso la sottrazione produce un foro non centrato, rendendo l'oggetto geometricamente scorretto.",
+          "riferimento": "📖 ESPLORA — Workflow base in Tinkercad: costruire un oggetto passo per passo"
         }
       ],
-      "spiegazione": "CAD→CAM→CNC è la catena digitale-fisica: il modello digitale guida direttamente la fresa, il tornio o il laser. Zero errori di trascrizione, massima precisione."
+      "spiegazione": "Prima di raggruppare il cilindro esterno con il cilindro-foro interno, è essenziale allinearli sull'asse X e Y. Se il cilindro interno non è centrato rispetto a quello esterno, la sottrazione produrrà una cavità asimmetrica, non al centro del porta-matite. L'allineamento garantisce la correttezza geometrica dell'oggetto finale.",
+      "riferimento_principale": "📖 ESPLORA — Workflow base in Tinkercad: costruire un oggetto passo per passo"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo spiega che la prototipazione rapida ha cambiato il ciclo di sviluppo prodotto permettendo '10-15 iterazioni invece di 2-3'. Quale effetto sistemico produce questo cambiamento sulla qualità del prodotto finale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Con più iterazioni si possono scoprire e correggere più problemi prima di produrre in metallo, riducendo errori costosi nelle fasi finali e permettendo team più piccoli",
+          "corretto": true,
+          "feedback": "Esatto! Prima della prototipazione rapida, la limitazione delle iterazioni (2-3 per costo e tempo) significava che molti problemi venivano scoperti tardi, in fasi costose. Più iterazioni in meno tempo = prodotti migliori, meno errori costosi, team più efficienti."
+        },
+        {
+          "id": "b",
+          "testo": "Con più iterazioni il prodotto finale è sempre più pesante perché si aggiungono materiali a ogni ciclo",
+          "feedback": "Non corretto. Le iterazioni non aggiungono materiale al prodotto finale. Ogni iterazione è una versione migliorata del prototipo, non un'addizione cumulativa.",
+          "riferimento": "📖 ESPLORA — Prototipazione rapida: la rivoluzione silenziosa della manifattura"
+        },
+        {
+          "id": "c",
+          "testo": "Con più iterazioni aumenta solo il costo del prodotto finale senza migliorare la qualità",
+          "feedback": "Non corretto. L'obiettivo delle iterazioni è precisamente migliorare la qualità riducendo i costi degli errori nelle fasi avanzate. Più iterazioni precoci = meno errori costosi tardi.",
+          "riferimento": "📖 ESPLORA — Prototipazione rapida: la rivoluzione silenziosa della manifattura"
+        },
+        {
+          "id": "d",
+          "testo": "Il numero di iterazioni non influenza la qualità del prodotto finale, solo la velocità di sviluppo",
+          "feedback": "Non corretto. Le iterazioni influenzano profondamente la qualità: ogni ciclo test-modifica permette di scoprire e correggere problemi che altrimenti arriverebbero al prodotto finale.",
+          "riferimento": "📖 ESPLORA — Prototipazione rapida: la rivoluzione silenziosa della manifattura"
+        }
+      ],
+      "spiegazione": "La prototipazione rapida ha cambiato il ciclo di sviluppo riducendo il costo per iterazione. Più iterazioni = più opportunità di scoprire e correggere problemi prima della fase costosa di produzione finale. Il risultato sistemico: prodotti migliori, meno errori nelle fasi avanzate, e team di progettazione più piccoli che producono risultati di qualità comparabile a team più grandi.",
+      "riferimento_principale": "📖 ESPLORA — Prototipazione rapida: la rivoluzione silenziosa della manifattura"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo descrive come il design parametrico permette a un'azienda di mobili di 'offrire 20 misure diverse dello stesso divano senza ridisegnare nulla'. Quale implicazione ha questa capacità per il rapporto tra design e produzione di massa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il design parametrico permette di separare il lavoro creativo (definire le relazioni tra parametri) dalla personalizzazione (cambiare i valori), rendendo possibile la personalizzazione di massa",
+          "corretto": true,
+          "feedback": "Esatto! Il design parametrico rivoluziona il rapporto tra design e produzione: il designer definisce le relazioni una volta sola, e le varianti (20 misure diverse) si generano automaticamente cambiando i valori dei parametri. È personalizzazione di massa senza costo di ridisegno."
+        },
+        {
+          "id": "b",
+          "testo": "Il design parametrico è utile solo per i mobili, non per altri settori manifatturieri",
+          "feedback": "Non corretto. Il testo usa i mobili come esempio ma il design parametrico si applica a qualsiasi settore: automotive, aerospaziale, dispositivi medici, architettura.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        },
+        {
+          "id": "c",
+          "testo": "Il design parametrico rende i designer sostituibili perché il computer fa tutto il lavoro creativo",
+          "feedback": "Non corretto. Il design parametrico richiede lavoro creativo per definire le relazioni tra parametri (la struttura del modello). Il computer automatizza la generazione delle varianti, non la creatività della struttura.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        },
+        {
+          "id": "d",
+          "testo": "Il design parametrico riduce la qualità del prodotto finale perché le varianti sono generate automaticamente senza controllo",
+          "feedback": "Non corretto. Le varianti generate automaticamente rispettano le relazioni definite dal designer. La qualità dipende dalla correttezza del modello parametrico, non dall'automazione.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        }
+      ],
+      "spiegazione": "Il design parametrico ha trasformato il rapporto tra design e produzione: il designer definisce una volta sola le relazioni tra parametri (la struttura del modello), poi le varianti si generano automaticamente. Questo rende possibile la personalizzazione di massa: un divano in 20 misure senza ridisegnare nulla, un paio di occhiali con pupillare personalizzata, un impianto strutturale adattato a ogni edificio.",
+      "riferimento_principale": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il rover Ingenuity ha le pale del rotore progettate per girare a 2.537 rpm nell'atmosfera rada di Marte (densità ~1% di quella terrestre). Quale proprietà fondamentale del design 3D ha permesso di verificare la resistenza delle pale prima di costruirle?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La possibilità di applicare software di simulazione strutturale al modello CAD per testare virtualmente le forze in condizioni marziane",
+          "corretto": true,
+          "feedback": "Esatto! Il modello CAD 3D permette di applicare simulazioni strutturali (analisi agli elementi finiti) per testare la resistenza delle pale nelle condizioni esatte di Marte prima di costruire fisicamente. Senza questa capacità, testare a 2.537 rpm nell'atmosfera marziana sarebbe stato impossibile sulla Terra."
+        },
+        {
+          "id": "b",
+          "testo": "La possibilità di stampare le pale in titanio con la stampante 3D del laboratorio NASA",
+          "feedback": "Non corretto. Le pale di Ingenuity sono in fibra di carbonio, non titanio. E la verifica strutturale avviene con simulazione software prima della costruzione fisica.",
+          "riferimento": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
+        },
+        {
+          "id": "c",
+          "testo": "La possibilità di testare le pale in camera a vuoto senza software di simulazione",
+          "feedback": "Non corretto. Sebbene i test in camera a vuoto esistano, il testo evidenzia il ruolo del software di simulazione strutturale applicato al modello CAD per verificare la resistenza prima della costruzione.",
+          "riferimento": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
+        },
+        {
+          "id": "d",
+          "testo": "La possibilità di modificare le pale durante il volo tramite aggiornamenti software",
+          "feedback": "Non corretto. Le pale del rotore sono componenti fisici che non si modificano via software durante il volo. La verifica avviene tramite simulazione strutturale sul modello CAD prima della costruzione.",
+          "riferimento": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
+        }
+      ],
+      "spiegazione": "Il modello CAD 3D permette di applicare software di simulazione strutturale (analisi agli elementi finiti) per testare virtualmente le proprietà meccaniche del componente in condizioni specifiche (pressione, temperatura, forze centrifughe a 2.537 rpm nell'atmosfera marziana) prima di costruire fisicamente. È questo che rende il ciclo modello CAD → simulazione → prototipo → test fisico così efficiente.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: come la NASA usa la stampa 3D per esplorare Marte"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo descrive il ciclo di vita di un oggetto stampato in 3D in PLA: il materiale è biodegradabile ma solo 'in condizioni di compostaggio industriale a 70°C'. Quale problema sistemico questo rivela riguardo all'uso del PLA come alternativa 'eco' alla plastica convenzionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Che la biodegradabilità del PLA dipende da infrastrutture di smaltimento specifiche che nella maggior parte dei comuni italiani non esistono, rendendo il PLA di fatto non degradabile in condizioni normali",
+          "corretto": true,
+          "feedback": "Esatto! Il PLA è biodegradabile solo in impianti di compostaggio industriale a 70°C. Se smaltito in discarica normale, nella natura o nel bidone della plastica, non si degrada in tempi utili — proprio come le plastiche convenzionali. La sostenibilità dipende dall'infrastruttura di smaltimento, non solo dal materiale."
+        },
+        {
+          "id": "b",
+          "testo": "Che il PLA è pericoloso per la salute umana se a contatto con il cibo",
+          "feedback": "Non corretto. Il PLA è generalmente considerato sicuro per il contatto alimentare. Il problema evidenziato riguarda le condizioni di compostaggio, non la sicurezza alimentare.",
+          "riferimento": "🌍 SPERIMENTA — avanzato: Dal file al prodotto"
+        },
+        {
+          "id": "c",
+          "testo": "Che il PLA non può essere riciclato in nessuna condizione e deve sempre essere incenerito",
+          "feedback": "Non corretto. Il PLA può essere compostato in condizioni industriali specifiche. Il problema non è che non possa mai essere degradato, ma che le infrastrutture necessarie sono rare.",
+          "riferimento": "🌍 SPERIMENTA — avanzato: Dal file al prodotto"
+        },
+        {
+          "id": "d",
+          "testo": "Che il mais usato per produrre il PLA compete con la produzione alimentare globale",
+          "feedback": "Non corretto. Sebbene esista questa questione, il testo evidenzia specificamente il problema dell'infrastruttura di compostaggio, non la competizione con la produzione alimentare.",
+          "riferimento": "🌍 SPERIMENTA — avanzato: Dal file al prodotto"
+        }
+      ],
+      "spiegazione": "Il PLA è considerato 'ecologico' perché biodegradabile. Ma la biodegradazione richiede condizioni molto specifiche: impianti di compostaggio industriale a 70°C, umidità controllata, microorganismi specifici. In assenza di queste infrastrutture (rare nella maggior parte dei comuni), il PLA in discarica normale si comporta esattamente come la plastica convenzionale. La sostenibilità di un materiale non dipende solo dalla sua chimica ma anche dalle infrastrutture disponibili per il suo smaltimento.",
+      "riferimento_principale": "🌍 SPERIMENTA — avanzato: Dal file al prodotto"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo descrive come Tinkercad usa la geometria solida costruttiva (CSG) con le operazioni di unione, sottrazione e raggruppamento. Perché questo approccio alla modellazione 3D è pedagogicamente efficace per apprendere i principi del CAD professionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le operazioni booleane sugli insiemi sono i principi fondamentali della modellazione solida, presenti in tutti i CAD professionali come Fusion 360, SolidWorks e CATIA",
+          "corretto": true,
+          "feedback": "Esatto! La CSG non è solo un semplice approccio di Tinkercad: è il fondamento matematico della modellazione solida usata in tutti i CAD professionali. Chi impara in Tinkercad sta imparando i principi che si ritrovano in Fusion 360, SolidWorks, CATIA."
+        },
+        {
+          "id": "b",
+          "testo": "Perché Tinkercad è il software più usato nelle aziende industriali italiane",
+          "feedback": "Non corretto. Tinkercad è uno strumento educativo, non quello più usato nell'industria. La sua utilità pedagogica deriva dai principi che insegna (CSG), non dalla sua diffusione industriale.",
+          "riferimento": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
+        },
+        {
+          "id": "c",
+          "testo": "Perché Tinkercad permette di esportare file in tutti i formati CAD professionali direttamente",
+          "feedback": "Non corretto. L'efficacia pedagogica di Tinkercad non dipende dalle sue capacità di esportazione ma dai principi fondamentali (CSG) che insegna.",
+          "riferimento": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
+        },
+        {
+          "id": "d",
+          "testo": "Perché Tinkercad è gratuito e accessibile da browser, rendendolo più conveniente dei software professionali",
+          "feedback": "Non corretto. L'accessibilità è un vantaggio pratico, non la ragione dell'efficacia pedagogica. La ragione è che insegna i principi fondamentali (CSG) della modellazione solida professionale.",
+          "riferimento": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
+        }
+      ],
+      "spiegazione": "Tinkercad usa la geometria solida costruttiva (CSG) con unione, sottrazione e raggruppamento. Questi non sono approcci semplifici di Tinkercad ma i principi fondamentali della modellazione solida professionali: gli stessi che si trovano in Fusion 360, SolidWorks, CATIA. Imparare in Tinkercad significa imparare i concetti che si applicheranno in qualsiasi CAD professionale.",
+      "riferimento_principale": "📖 ESPLORA — Tinkercad: l'ambiente e la logica"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo afferma che nel design parametrico 'cambiare il parametro lunghezza_piano aggiorna automaticamente tutto: le proporzioni, le posizioni dei fori, la distanza tra i supporti.' Quale concetto matematico formalizza questa rete di dipendenze?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le equazioni che definiscono le relazioni tra parametri formano un sistema di vincoli che garantisce la coerenza geometrica del modello dopo ogni modifica",
+          "corretto": true,
+          "feedback": "Esatto! Nel design parametrico, le relazioni tra dimensioni sono equazioni esplicite (es. raggio_foro_parete = lunghezza_piano / 30). Queste equazioni formano un sistema di vincoli: quando un parametro cambia, il risolutore aggiorna tutti i parametri dipendenti mantenendo la coerenza geometrica del modello."
+        },
+        {
+          "id": "b",
+          "testo": "La randomizzazione controllata dei parametri per generare varianti esteticamente diverse dello stesso oggetto",
+          "feedback": "Non corretto. Il design parametrico non è randomizzazione: è la definizione esplicita di relazioni matematiche tra parametri. Ogni modifica è controllata e deterministica.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        },
+        {
+          "id": "c",
+          "testo": "L'intelligenza artificiale che predice le modifiche necessarie quando si cambia una dimensione",
+          "feedback": "Non corretto. Il design parametrico non usa intelligenza artificiale ma equazioni esplicite definite dal progettista. Le relazioni sono deterministiche, non predittive.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        },
+        {
+          "id": "d",
+          "testo": "La memoria del software che registra tutte le modifiche precedenti e le applica automaticamente",
+          "feedback": "Non corretto. Il design parametrico non è una funzione di memoria delle modifiche ma un sistema di vincoli matematici (equazioni tra parametri) che garantisce la coerenza geometrica.",
+          "riferimento": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
+        }
+      ],
+      "spiegazione": "Il design parametrico formalizza matematicamente le relazioni tra dimensioni come equazioni esplicite: 'raggio_foro_parete = lunghezza_piano/30'. Queste equazioni formano un sistema di vincoli. Quando un parametro cambia, il software risolve automaticamente il sistema di equazioni aggiornando tutti i parametri dipendenti. È algebra applicata alla geometria degli oggetti.",
+      "riferimento_principale": "📖 ESPLORA — Cenno al design parametrico: cambiare un parametro cambia tutto"
     }
   ]
 }

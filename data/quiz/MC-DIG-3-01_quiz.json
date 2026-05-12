@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIG-3-01",
-  "titolo": "Robotica educativa e pensiero computazionale avanzato",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa fa un robot 'autonomo'?",
+      "domanda": "Cosa significa la parola 'astrazione' nel pensiero computazionale avanzato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Esegue solo comandi umani in tempo reale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Creare disegni astratti come decorazione per il codice",
+          "corretto": false,
+          "feedback": "Non è corretto. L'astrazione nel pensiero computazionale non ha nulla a che fare con le arti visive. È una strategia di gestione della complessità.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
         },
         {
           "id": "b",
-          "testo": "Prende decisioni in base a sensori e programma, senza intervento umano continuo",
+          "testo": "Ignorare i dettagli irrilevanti e concentrarsi sulle proprietà essenziali del problema per lavorare a un livello di complessità gestibile",
           "corretto": true,
-          "feedback": "Esatto! Un robot autonomo combina sensori, elaborazione e attuatori per agire senza controllo diretto."
+          "feedback": "Esatto! Quando programmi il comportamento di un robot, non ti interessa la tensione esatta dei motori: ti interessa la velocità risultante. L'astrazione elimina i dettagli non necessari."
         },
         {
           "id": "c",
-          "testo": "È controllato da remoto via radio",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tradurre il codice da un linguaggio di programmazione a un altro",
+          "corretto": false,
+          "feedback": "Non è corretto. La traduzione tra linguaggi è transpilazione o compilazione. L'astrazione è una strategia cognitiva per gestire la complessità.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
         },
         {
           "id": "d",
-          "testo": "Funziona solo con intelligenza artificiale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rimuovere tutte le istruzioni ridondanti per rendere il codice più breve",
+          "corretto": false,
+          "feedback": "Non è corretto. Rimuovere codice ridondante è ottimizzazione. L'astrazione è scegliere a quale livello di dettaglio lavorare.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
         }
       ],
-      "spiegazione": "Un robot autonomo combina sensori, elaborazione e attuatori per agire senza controllo diretto."
+      "spiegazione": "L'astrazione è scegliere quale livello di dettaglio è rilevante per il problema che stai risolvendo. Quando programmi il movimento di un robot non ti interessano i voltaggi esatti dei motori: ti interessa la velocità risultante. L'astrazione permette di lavorare a un livello gestibile ignorando complessità irrilevanti.",
+      "riferimento_principale": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è un sensore in robotica?",
+      "domanda": "Qual è la differenza principale tra micro:bit, LEGO Mindstorms EV3 e Arduino?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un motore che muove il robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "micro:bit è il più costoso; Arduino è gratuito; LEGO Mindstorms è per bambini piccoli",
+          "corretto": false,
+          "feedback": "Non è corretto. Le differenze non riguardano principalmente il prezzo o l'età target, ma la filosofia e il tipo di progettazione che supportano.",
+          "riferimento": "📖 ESPLORA — Robot educativi: tre strumenti, tre filosofie"
         },
         {
           "id": "b",
-          "testo": "Un dispositivo che rileva grandezze fisiche (luce, distanza, temperatura) e le converte in segnali digitali",
+          "testo": "micro:bit punta sulla semplicità e l'apertura hardware; EV3 integra costruzione fisica e programmazione; Arduino offre massima flessibilità con linguaggio testuale (C/C++)",
           "corretto": true,
-          "feedback": "Esatto! I sensori sono gli 'occhi e orecchie' del robot: senza di essi non percepisce l'ambiente."
+          "feedback": "Esatto! Tre filosofie diverse: micro:bit = semplicità di accesso; EV3 = costruzione + programmazione integrate; Arduino = massima flessibilità e potenza con linguaggio reale."
         },
         {
           "id": "c",
-          "testo": "Il cervello centrale del robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tutti e tre usano lo stesso linguaggio di programmazione a blocchi, ma hanno hardware diverso",
+          "corretto": false,
+          "feedback": "Non è corretto. Arduino si programma in C/C++ (linguaggio testuale), non a blocchi. micro:bit usa MakeCode (blocchi o JavaScript). EV3 ha il suo ambiente dedicato.",
+          "riferimento": "📖 ESPLORA — Robot educativi: tre strumenti, tre filosofie"
         },
         {
           "id": "d",
-          "testo": "La batteria che alimenta il robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sono strumenti identici con marche diverse",
+          "corretto": false,
+          "feedback": "Non è corretto. Rappresentano tre approcci completamente diversi alla robotica educativa, con architetture hardware e software molto differenti.",
+          "riferimento": "📖 ESPLORA — Robot educativi: tre strumenti, tre filosofie"
         }
       ],
-      "spiegazione": "I sensori sono gli 'occhi e orecchie' del robot: senza di essi non percepisce l'ambiente."
+      "spiegazione": "Tre piattaforme, tre filosofie: micro:bit (4×5 cm, 2015) è per iniziare con l'hardware aperto; LEGO Mindstorms EV3 integra la costruzione fisica dei robot con la programmazione; Arduino (2005, C/C++) offre massima flessibilità ed è usato in prototipazione industriale. La scelta dipende dagli obiettivi didattici.",
+      "riferimento_principale": "📖 ESPLORA — Robot educativi: tre strumenti, tre filosofie"
     },
     {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Cosa fa un sensore di prossimità a ultrasuoni (HC-SR04)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Rileva i colori delle superfici di fronte al robot",
+          "corretto": false,
+          "feedback": "Non è corretto. Rilevare i colori è compito del sensore di colore (TCS34725). Il sensore ultrasuoni misura la distanza da un ostacolo.",
+          "riferimento": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
+        },
+        {
+          "id": "b",
+          "testo": "Emette un impulso sonoro a 40 kHz e misura il tempo di ritorno dell'eco per calcolare la distanza",
+          "corretto": true,
+          "feedback": "Esatto! La formula è: distanza = (tempo × velocità del suono) / 2. Il fattore 2 perché il suono fa andata e ritorno. Range tipico: 2-400 cm, precisione ±3 mm."
+        },
+        {
+          "id": "c",
+          "testo": "Misura la temperatura e l'umidità dell'ambiente circostante",
+          "corretto": false,
+          "feedback": "Non è corretto. Temperatura e umidità sono misurate dal sensore DHT22. Il sensore ultrasuoni misura le distanze dagli oggetti.",
+          "riferimento": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
+        },
+        {
+          "id": "d",
+          "testo": "Regola la velocità dei motori del robot in base al peso del carico",
+          "corretto": false,
+          "feedback": "Non è corretto. La regolazione dei motori è compito degli attuatori. Il sensore ultrasuoni rileva la distanza da ostacoli.",
+          "riferimento": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
+        }
+      ],
+      "spiegazione": "Il sensore HC-SR04 emette un impulso sonoro a 40 kHz (ultrasuoni, inudibili all'orecchio umano) e misura il tempo impiegato dall'eco a tornare. Distanza = (tempo × 343 m/s) / 2. Range: 2-400 cm, precisione ±3 mm. Usato per rilevare ostacoli, misurare livelli, contare presenze.",
+      "riferimento_principale": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cos'è la programmazione 'event-driven' (guidata dagli eventi)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di programmazione dove le istruzioni si eseguono dall'alto verso il basso in ordine fisso",
+          "corretto": false,
+          "feedback": "Non è corretto. La programmazione sequenziale esegue le istruzioni in ordine fisso. La programmazione event-driven esegue il codice in risposta a eventi specifici.",
+          "riferimento": "📖 ESPLORA — Programmazione event-driven: il robot che risponde"
+        },
+        {
+          "id": "b",
+          "testo": "Un paradigma in cui le istruzioni si eseguono quando accade qualcosa (un evento), come un sensore che rileva un ostacolo",
+          "corretto": true,
+          "feedback": "Esatto! Gli eventi possono essere: il sensore rileva distanza < 15 cm, il pulsante viene premuto, passano 5 secondi. Il codice dell'evento si esegue automaticamente quando l'evento si verifica."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema in cui il robot esegue solo le istruzioni più importanti saltando quelle secondarie",
+          "corretto": false,
+          "feedback": "Non è corretto. La programmazione event-driven non filtra le istruzioni per importanza. Esegue codice specifico in risposta a eventi specifici.",
+          "riferimento": "📖 ESPLORA — Programmazione event-driven: il robot che risponde"
+        },
+        {
+          "id": "d",
+          "testo": "Un paradigma dove il programma si ferma e aspetta input dall'utente prima di continuare",
+          "corretto": false,
+          "feedback": "Non è corretto. Aspettare input dall'utente è una forma di interazione sincrona. La programmazione event-driven è asincrona: il codice reagisce agli eventi senza bloccarsi.",
+          "riferimento": "📖 ESPLORA — Programmazione event-driven: il robot che risponde"
+        }
+      ],
+      "spiegazione": "Nella programmazione event-driven, il codice si esegue quando accade qualcosa (un evento): il sensore rileva distanza < 15 cm, il pulsante viene premuto, passano 5 secondi. Il vantaggio: il robot può rispondere a più eventi contemporaneamente senza che uno blocchi l'altro. In MakeCode ogni blocco 'on event X' è un gestore di eventi.",
+      "riferimento_principale": "📖 ESPLORA — Programmazione event-driven: il robot che risponde"
+    },
+    {
+      "id": 5,
       "livello": "F",
       "domanda": "Cos'è un 'attuatore' in un sistema robotico?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un sensore di temperatura",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Un componente che legge le informazioni dall'ambiente (temperatura, luce, distanza)",
+          "corretto": false,
+          "feedback": "Non è corretto. Leggere le informazioni dall'ambiente è il compito dei sensori. Gli attuatori producono azioni sull'ambiente.",
+          "riferimento": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
         },
         {
           "id": "b",
-          "testo": "Un componente che converte segnali elettrici in azioni fisiche: motori, servomotori, LED, altoparlanti",
+          "testo": "Un componente che trasforma i segnali elettrici in azioni fisiche, come motori, LED e buzzer",
           "corretto": true,
-          "feedback": "Esatto! Gli attuatori sono i 'muscoli' del robot: trasformano i comandi digitali in movimenti o azioni fisiche."
+          "feedback": "Esatto! Gli attuatori sono i 'muscoli' del robot: motori DC (movimento), servomotori (angolo preciso), LED (luce), buzzer (suono). Trasformano i comandi del programma in azioni fisiche."
         },
         {
           "id": "c",
-          "testo": "Il processore che elabora i dati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il processore centrale che elabora le istruzioni del programma",
+          "corretto": false,
+          "feedback": "Non è corretto. Il processore centrale è il microcontroller (come quello nel micro:bit). L'attuatore è il componente che esegue l'azione fisica.",
+          "riferimento": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
         },
         {
           "id": "d",
-          "testo": "Il sistema di comunicazione wireless",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il software che coordina la comunicazione tra sensori e robot",
+          "corretto": false,
+          "feedback": "Non è corretto. Il software di coordinazione è il programma. L'attuatore è hardware fisico che esegue azioni.",
+          "riferimento": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
         }
       ],
-      "spiegazione": "Gli attuatori sono i 'muscoli' del robot: trasformano i comandi digitali in movimenti o azioni fisiche."
+      "spiegazione": "Gli attuatori sono i 'muscoli' del robot: trasformano i segnali elettrici in azioni fisiche. Esempi: motori DC (ruotano le ruote), servomotori (angolo preciso 0-180°), LED e display (segnali luminosi), buzzer (suoni). Il sistema robotico completo è: sensori (organi di senso) + microcontroller + programma + attuatori (muscoli).",
+      "riferimento_principale": "📖 ESPLORA — Sensori e attuatori: gli organi di senso e i muscoli del robot"
     },
     {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa distingue un robot con 'comportamento programmato esplicitamente' da uno con 'apprendimento automatico'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il robot con comportamento programmato è sempre più preciso di quello con apprendimento automatico",
+          "corretto": false,
+          "feedback": "Non è corretto. L'apprendimento automatico può produrre comportamenti più efficienti di quelli progettati manualmente in molti contesti (es. AlphaGo vs Go giocato da ingegneri).",
+          "riferimento": "📖 ESPLORA — L'intelligenza dei robot: programmato vs. apprendimento"
+        },
+        {
+          "id": "b",
+          "testo": "Nel comportamento programmato ogni risposta è definita esplicitamente dall'ingegnere; nell'apprendimento automatico il sistema impara le regole dai dati",
+          "corretto": true,
+          "feedback": "Esatto! Il Roomba classico ha regole esplicite scritte da ingegneri (se ostacolo → ruota). AlphaGo ha imparato strategie dai dati (milioni di partite) che nessun ingegnere aveva specificato."
+        },
+        {
+          "id": "c",
+          "testo": "Il robot con apprendimento automatico non può sbagliare perché impara dai propri errori",
+          "corretto": false,
+          "feedback": "Non è corretto. L'apprendimento automatico può produrre comportamenti inefficienti o dannosi se i dati di addestramento sono sbagliati o insufficienti.",
+          "riferimento": "📖 ESPLORA — L'intelligenza dei robot: programmato vs. apprendimento"
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza pratica: entrambi producono lo stesso comportamento",
+          "corretto": false,
+          "feedback": "Non è corretto. La differenza è fondamentale: uno segue regole esplicite scritte da esseri umani; l'altro inferisce regole dai dati in modo che nessun essere umano avrebbe specificato esplicitamente.",
+          "riferimento": "📖 ESPLORA — L'intelligenza dei robot: programmato vs. apprendimento"
+        }
+      ],
+      "spiegazione": "Comportamento programmato: l'ingegnere specifica ogni risposta a ogni condizione ('se distanza < 15cm → ruota destra'). Il Roomba classico funziona così. Apprendimento automatico: il sistema riceve dati e impara regole autonomamente. AlphaGo ha imparato strategie che nessun ingegnere aveva specificato. Il risultato può essere più efficiente ma meno prevedibile.",
+      "riferimento_principale": "📖 ESPLORA — L'intelligenza dei robot: programmato vs. apprendimento"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è la struttura 'sense-plan-act' di un robot?",
+      "domanda": "Il robot Roomba 'sembra' intelligente perché costruisce una mappa della casa. Il testo dice che questa è un'affermazione sbagliata. Cosa fa realmente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il ciclo di ricarica della batteria",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Costruisce una mappa 3D della casa usando telecamere ad alta risoluzione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo dice che il Roomba 'non ha una mappa della tua casa'. Non sa dove si trova — costruisce ogni secondo una stima probabilistica.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "b",
-          "testo": "Il ciclo fondamentale: percepire l'ambiente (sense), elaborare e pianificare (plan), eseguire un'azione (act)",
+          "testo": "Costruisce ogni secondo una stima probabilistica di dove potrebbe trovarsi, basandosi su sensori e algoritmi — non ha una vera 'conoscenza' della casa",
           "corretto": true,
-          "feedback": "Esatto! Sense-Plan-Act è il ciclo base di ogni robot autonomo."
+          "feedback": "Esatto! L'INNESCA spiega: 'Non sa dove si trova. Costruisce ogni secondo una stima probabilistica di dove potrebbe essere.' È un algoritmo che simula un comportamento intelligente."
         },
         {
           "id": "c",
-          "testo": "Il protocollo di comunicazione tra robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Scarica la mappa della casa dal cloud ogni volta che inizia la pulizia",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo parla di stima probabilistica in tempo reale, non di mappe scaricate dal cloud.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "d",
-          "testo": "La sequenza di accensione e spegnimento",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Memorizza la mappa durante la prima pulizia e la riusa nelle successive senza modificarla",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive un processo dinamico: 'costruisce ogni secondo una stima probabilistica'. Non è una mappa statica memorizzata.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "Sense-Plan-Act è il ciclo base di ogni robot autonomo. Si ripete continuamente adattandosi all'ambiente."
+      "spiegazione": "L'INNESCA del testo inizia proprio con questa distinzione critica: 'Il Roomba evita i muri, copre tutta la stanza, torna alla base — ma non ha una mappa della tua casa. Non sa dove si trova. Costruisce ogni secondo una stima probabilistica di dove potrebbe essere.' Sembra intelligente, ma è un algoritmo. Capire la differenza è la competenza fondamentale di questa MC.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è la programmazione 'event-driven' nei robot educativi?",
+      "domanda": "Il Box T8 afferma che 'un robot non pensa, esegue istruzioni'. Perché questa distinzione è importante per la sicurezza?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La programmazione che usa solo cicli for",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i robot che 'pensano' consumano meno energia di quelli che 'eseguono istruzioni'",
+          "corretto": false,
+          "feedback": "Non è corretto. Il consumo energetico non è la ragione della distinzione. Il punto riguarda la responsabilità e la verifica degli errori.",
+          "riferimento": "📖 ESPLORA — Box T8 — IA critica: il robot obbedisce, non pensa"
         },
         {
           "id": "b",
-          "testo": "Un paradigma in cui il robot esegue azioni in risposta a eventi specifici (tocco, suono, ostacolo)",
+          "testo": "Perché quando un robot sbaglia bisogna trovare l'errore nel codice o nei dati, non nella sua 'intenzione'; e attribuire 'intelligenza' porta a fidarsi in modo acritico",
           "corretto": true,
-          "feedback": "Esatto! Nei robot event-driven il codice 'aspetta' che accada qualcosa: più naturale per interazione con l'ambiente."
+          "feedback": "Esatto! Il Box T8 spiega: (1) gli errori hanno cause tecniche verificabili, non intenzioni; (2) attribuire intelligenza porta a fidarsi acriticamente — con conseguenze potenzialmente gravi."
         },
         {
           "id": "c",
-          "testo": "La programmazione che non usa sensori",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i robot che 'pensano' sono proibiti dalla legge europea sulla sicurezza",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste una legge che proibisca robot che 'pensano'. La questione è concettuale: comprendere cosa fa davvero un sistema automatizzato.",
+          "riferimento": "📖 ESPLORA — Box T8 — IA critica: il robot obbedisce, non pensa"
         },
         {
           "id": "d",
-          "testo": "Un tipo di codice che si esegue solo una volta",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i robot più intelligenti richiedono programmatori più esperti e quindi costano di più",
+          "corretto": false,
+          "feedback": "Non è corretto. Il costo non è la ragione della distinzione. Il punto riguarda la responsabilità umana e la verifica del comportamento dei sistemi automatizzati.",
+          "riferimento": "📖 ESPLORA — Box T8 — IA critica: il robot obbedisce, non pensa"
         }
       ],
-      "spiegazione": "Nei robot event-driven il codice 'aspetta' che accada qualcosa: più naturale per interazione con l'ambiente."
+      "spiegazione": "Il Box T8 spiega due ragioni per la distinzione: (1) quando un robot sbaglia, si cerca l'errore nel codice o nei dati di addestramento, non in una 'intenzione malvagia' — questo permette di trovare e correggere il problema; (2) attribuire intelligenza a un sistema che segue regole porta a fidarsi acriticamente, con rischi concreti (es. il robot chirurgico da Vinci: le decisioni rimangono sempre del chirurgo umano).",
+      "riferimento_principale": "📖 ESPLORA — Box T8 — IA critica: il robot obbedisce, non pensa"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Perché la simulazione è utile in robotica prima di programmare il robot fisico?",
+      "domanda": "Il sensore ultrasuoni misura un tempo di eco di 5,8 ms. La velocità del suono nell'aria è 343 m/s. Qual è la distanza dall'ostacolo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i robot fisici sono troppo costosi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 2 metri",
+          "corretto": false,
+          "feedback": "Non è corretto. Distanza = (0,0058 s × 343 m/s) / 2 = 0,995 m ≈ 1 m. Il fattore 2 è perché il suono fa andata E ritorno.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "b",
-          "testo": "Perché permette di testare algoritmi senza rischi fisici, risparmiando tempo e identificando errori logici prima del deploy",
+          "testo": "Circa 1 metro (0,995 m)",
           "corretto": true,
-          "feedback": "Esatto! Il ciclo simulazione→prototipo→robot fisico riduce errori costosi e accelera lo sviluppo."
+          "feedback": "Esatto! Distanza = (tempo × velocità del suono) / 2 = (0,0058 s × 343 m/s) / 2 = 1,989 / 2 = 0,995 m ≈ 1 m. Il fattore 2 perché il suono fa andata e ritorno."
         },
         {
           "id": "c",
-          "testo": "Perché i simulatori sono più veloci dei robot reali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 50 centimetri",
+          "corretto": false,
+          "feedback": "Non è corretto. Il calcolo è: (0,0058 × 343) / 2 = 0,995 m, non 0,5 m.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         },
         {
           "id": "d",
-          "testo": "Perché la simulazione non consuma batteria",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Circa 3 metri",
+          "corretto": false,
+          "feedback": "Non è corretto. Se non si divide per 2, si ottiene 1,99 m. Dividendo per 2 (percorso di andata e ritorno) si ottiene circa 1 m.",
+          "riferimento": "🔢 Collegamento STEM — Matematica"
         }
       ],
-      "spiegazione": "Il ciclo simulazione→prototipo→robot fisico riduce errori costosi e accelera lo sviluppo."
+      "spiegazione": "La formula è: distanza = (tempo × velocità del suono) / 2. Con tempo = 5,8 ms = 0,0058 s e velocità = 343 m/s: distanza = (0,0058 × 343) / 2 = 1,989 / 2 = 0,995 m ≈ 1 m. Il fattore 2 è fondamentale: il suono percorre il tragitto due volte (andata verso l'ostacolo + ritorno come eco).",
+      "riferimento_principale": "🔢 Collegamento STEM — Matematica"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'localizzazione e mappatura simultanea' (SLAM)?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Cosa studia il sistema robotico Amazon Kiva (Proteus) e quale problema ha sollevato socialmente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un algoritmo per evitare ostacoli statici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sostituisce i robot più vecchi nei magazzini senza problemi sociali, poiché è solo un upgrade tecnologico",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo evidenzia esplicitamente: 'Costo sociale: riduzione significativa della manodopera umana nei magazzini.'",
+          "riferimento": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
         },
         {
           "id": "b",
-          "testo": "La capacità di un robot di costruire una mappa dell'ambiente mentre si localizza in esso: fondamentale per robot mobili autonomi",
+          "testo": "Muove scaffalature intere verso gli addetti umani, aumentando la velocità di 3-4 volte; ma riduce significativamente la manodopera umana necessaria",
           "corretto": true,
-          "feedback": "Esatto! Lo SLAM risolve il problema paradossale: per navigare serve una mappa, ma per costruire la mappa serve navigare."
+          "feedback": "Esatto! Il testo descrive il sistema: invece che far camminare gli addetti tra gli scaffali, i robot Kiva portano gli scaffali agli addetti. Velocità 3-4 volte maggiore. Costo sociale: riduzione della manodopera."
         },
         {
           "id": "c",
-          "testo": "Un sistema di navigazione via GPS",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Funziona solo di notte per non interferire con i lavoratori durante il giorno",
+          "corretto": false,
+          "feedback": "Non è corretto. I robot Amazon operano in continuo. Il testo non descrive una distinzione giorno/notte.",
+          "riferimento": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
         },
         {
           "id": "d",
-          "testo": "Un protocollo per comunicazione tra robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Sostituisce completamente gli esseri umani nei magazzini, che sono ormai completamente automatizzati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il sistema lavora con gli addetti umani (porta gli scaffali agli addetti), non li sostituisce completamente. Riduce però il numero necessario.",
+          "riferimento": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
         }
       ],
-      "spiegazione": "Lo SLAM risolve il problema paradossale: per navigare serve una mappa, ma per costruire la mappa serve navigare."
+      "spiegazione": "I robot Amazon Kiva/Proteus navigano nei magazzini usando marker QR code sul pavimento e comunicano via WiFi con un sistema centrale. Portano gli scaffali interi agli addetti umani invece del contrario, triplicando la velocità di prelievo. Il testo evidenzia il costo sociale: riduzione significativa della manodopera umana nei magazzini.",
+      "riferimento_principale": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è l'etica nella robotica e perché è rilevante per la scuola?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Perché il principio KISS (Keep It Simple, Stupid) è particolarmente importante in robotica?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le norme di sicurezza nella manipolazione fisica dei robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i robot semplici sono sempre più veloci di quelli complessi",
+          "corretto": false,
+          "feedback": "Non è corretto. La semplicità non garantisce sempre la velocità. Il principio KISS riguarda l'affidabilità e la manutenibilità del sistema.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "b",
-          "testo": "L'insieme di principi che guidano il design e l'uso dei robot: sicurezza, responsabilità, trasparenza, impatto sul lavoro",
+          "testo": "Perché un robot che funziona in modo semplice e affidabile è più utile di uno con cento funzionalità che fallisce imprevedibilmente",
           "corretto": true,
-          "feedback": "Esatto! Robot autonomi prendono decisioni che impattano le persone."
+          "feedback": "Esatto! Il testo dice: 'la soluzione più semplice che funziona è quasi sempre la migliore.' La tendenza dei principianti è aggiungere funzionalità finché il codice diventa ingestibile."
         },
         {
           "id": "c",
-          "testo": "Le regole di gara nelle competizioni robotiche",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i microcontroller come il micro:bit non hanno abbastanza memoria per programmi complessi",
+          "corretto": false,
+          "feedback": "Non è corretto. I microcontroller hanno memoria limitata, ma il principio KISS non riguarda la memoria fisica. È un principio progettuale generale.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         },
         {
           "id": "d",
-          "testo": "I brevetti sui design dei robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i robot semplici costano meno e quindi sono più accessibili nelle scuole",
+          "corretto": false,
+          "feedback": "Non è corretto. Il principio KISS riguarda la qualità progettuale, non il costo. Un sistema semplice può essere sia economico che costoso.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
         }
       ],
-      "spiegazione": "Robot autonomi prendono decisioni che impattano le persone. Chi è responsabile se un robot sbaglia? L'etica è inseparabile dalla tecnica."
+      "spiegazione": "Il principio KISS (Keep It Simple, Stupid), enunciato dagli ingegneri della Marina americana negli anni '60, dice che la soluzione più semplice che funziona è quasi sempre la migliore. In robotica: la tendenza dei principianti è aggiungere funzionalità finché il codice diventa ingestibile. Un robot con comportamento semplice e affidabile è più utile di uno con cento funzionalità che fallisce.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'ROS' (Robot Operating System) e perché è importante?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Nel robot per studenti con disabilità visiva (caso studio), perché il 90% del lavoro è design centrato sull'utente e non programmazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il sistema operativo installato sui robot Android",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la programmazione per accessibilità richiede linguaggi speciali che richiedono più tempo da imparare",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non parla di linguaggi speciali. Il punto è che l'hardware è semplice (micro:bit + 50€ di componenti) e il problema principale è capire i bisogni reali dell'utente.",
+          "riferimento": "🔍 OSSERVA — Il caso: come un robot aiuta gli studenti con disabilità visiva"
         },
         {
           "id": "b",
-          "testo": "Un framework open-source che fornisce librerie e strumenti per sviluppare software robotico: consente di riusare componenti tra progetti diversi",
+          "testo": "Perché capire chi usa il robot, in quale contesto e con quali bisogni è più critico che scrivere il codice: un robot troppo veloce o con suoni confusi è inutile o pericoloso",
           "corretto": true,
-          "feedback": "Esatto! ROS è il 'Linux della robotica': quasi tutti i robot di ricerca e industriali usano ROS per comunicazione, sensing e controllo."
+          "feedback": "Esatto! Il testo dice: 'Un robot che si muove troppo velocemente per un adolescente non vedente è inutile o pericoloso. Il 90% del lavoro è design centrato sull'utente, non programmazione.'"
         },
         {
           "id": "c",
-          "testo": "Un linguaggio di programmazione per robot",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché gli studenti con disabilità visiva non possono interagire con il codice sorgente del robot",
+          "corretto": false,
+          "feedback": "Non è corretto. La ragione non riguarda l'interazione con il codice, ma il fatto che comprendere i bisogni reali dell'utente è la sfida principale.",
+          "riferimento": "🔍 OSSERVA — Il caso: come un robot aiuta gli studenti con disabilità visiva"
         },
         {
           "id": "d",
-          "testo": "Il firmware base dei robot LEGO",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il micro:bit è troppo semplice per gestire la logica di navigazione avanzata",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo dice che il sistema richiede hardware da meno di 50€ (micro:bit, motori, sensori HC-SR04, modulo audio). La semplicità hardware è un vantaggio, non un limite.",
+          "riferimento": "🔍 OSSERVA — Il caso: come un robot aiuta gli studenti con disabilità visiva"
         }
       ],
-      "spiegazione": "ROS è il 'Linux della robotica': quasi tutti i robot di ricerca e industriali usano ROS per comunicazione, sensing e controllo."
+      "spiegazione": "Il robot per studenti con disabilità visiva usa hardware da meno di 50€. La sfida non è tecnologica: un robot troppo veloce è pericoloso, segnali sonori troppo simili all'ambiente scolastico creano confusione. Il testo afferma: 'Il 90% del lavoro è design centrato sull'utente, non programmazione.' Capire i bisogni reali è sempre la sfida principale.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: come un robot aiuta gli studenti con disabilità visiva"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Qual è la differenza fondamentale tra Deep Blue (1997) e AlphaGo (2016) nella modalità con cui 'battono' i campioni umani?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Deep Blue era più veloce di AlphaGo perché usava hardware migliore",
+          "corretto": false,
+          "feedback": "Non è corretto. La differenza fondamentale non è la velocità hardware, ma il meccanismo di apprendimento: uno cerca esplicitamente, l'altro impara dai dati.",
+          "riferimento": "📖 ESPLORA — Caso studio: Deep Blue vs. AlphaGo"
+        },
+        {
+          "id": "b",
+          "testo": "Deep Blue valutava posizioni con regole scritte da esperti umani; AlphaGo aveva imparato strategie dai dati (milioni di partite) che nessuno aveva specificato esplicitamente",
+          "corretto": true,
+          "feedback": "Esatto! Il testo lo spiega: Deep Blue = intelligenza della somma degli esperti che lo hanno programmato. AlphaGo = ha imparato schemi che nessun umano aveva specificato. Due approcci radicalmente diversi."
+        },
+        {
+          "id": "c",
+          "testo": "Deep Blue giocava a scacchi; AlphaGo giocava a Go. Non si possono confrontare",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo confronta esplicitamente i due sistemi per mostrare la differenza tra AI programmatica (Deep Blue) e AI basata su apprendimento automatico (AlphaGo).",
+          "riferimento": "📖 ESPLORA — Caso studio: Deep Blue vs. AlphaGo"
+        },
+        {
+          "id": "d",
+          "testo": "Entrambi usano lo stesso approccio ma con hardware diverso",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive approcci radicalmente diversi: ricerca esaustiva con funzioni di valutazione definite da umani (Deep Blue) vs. apprendimento da dati (AlphaGo).",
+          "riferimento": "📖 ESPLORA — Caso studio: Deep Blue vs. AlphaGo"
+        }
+      ],
+      "spiegazione": "Il testo spiega la differenza: Deep Blue valutava 200 milioni di posizioni al secondo con regole scritte da ingegneri e Grandmaster — 'la sua intelligenza era la somma dell'intelligenza degli umani che lo avevano programmato.' AlphaGo ha usato apprendimento supervisionato + rinforzo per imparare strategie che nessun essere umano aveva specificato. Alla mossa 78 della 4° partita, Sedol ha giocato una mossa che AlphaGo non aveva mai visto.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: Deep Blue vs. AlphaGo"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il progetto AGISCI chiede di progettare un sistema robotico con implicazioni etiche sulla raccolta di dati. Quale principio del GDPR si applica alla raccolta di dati sul movimento delle persone?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Nessuno: i dati di movimento non sono dati personali secondo il GDPR",
+          "corretto": false,
+          "feedback": "Non è corretto. I dati di movimento e posizione (geolocalizzazione) sono dati personali secondo il GDPR perché possono identificare indirettamente una persona.",
+          "riferimento": "🌍 AGISCI — Lo scenario"
+        },
+        {
+          "id": "b",
+          "testo": "Il principio di 'data minimization': raccogliere solo i dati strettamente necessari alla funzione del sistema, senza raccogliere informazioni aggiuntive",
+          "corretto": true,
+          "feedback": "Esatto! La domanda 4 della metacognizione chiede: 'il sistema raccoglie dati sul movimento delle persone — come potresti modificarlo per raccogliere solo i dati strettamente necessari?' È il principio GDPR di data minimization."
+        },
+        {
+          "id": "c",
+          "testo": "Il principio di 'right to be forgotten': ogni persona può chiedere che i suoi dati vengano cancellati dopo ogni sessione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il right to be forgotten (diritto all'oblio) riguarda la cancellazione di dati già raccolti. La data minimization (raccogliere solo il necessario) è il principio più direttamente applicabile in fase di progettazione.",
+          "riferimento": "🪞 Metacognizione — 4. Etica e dati"
+        },
+        {
+          "id": "d",
+          "testo": "Il principio di 'data portability': gli utenti devono poter scaricare i dati raccolti su di loro",
+          "corretto": false,
+          "feedback": "Non è corretto. La portabilità riguarda il trasferimento dei dati. Il principio più rilevante per la progettazione è la data minimization.",
+          "riferimento": "🪞 Metacognizione — 4. Etica e dati"
+        }
+      ],
+      "spiegazione": "Il progetto AGISCI chiede di progettare un sistema che conta le persone in un corridoio. La domanda 4 della metacognizione lo affronta: 'Il sistema raccoglie dati sul movimento delle persone — chi ha accesso? Come potresti raccogliere solo i dati strettamente necessari?' Il principio GDPR si chiama 'data minimization': raccogliere solo ciò che è strettamente necessario alla funzione dichiarata del sistema.",
+      "riferimento_principale": "🪞 Metacognizione — 4. Etica e dati"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il robot da Vinci è un esempio di sistema 'telemanipolato', non autonomo. Qual è la differenza pratica per la sicurezza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il robot telemanipolato è più lento del robot autonomo, quindi più sicuro",
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità non è la distinzione rilevante. La differenza è chi prende le decisioni critiche.",
+          "riferimento": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
+        },
+        {
+          "id": "b",
+          "testo": "In un sistema telemanipolato il chirurgo umano prende tutte le decisioni e il robot le esegue con precisione amplificata; non decide autonomamente nulla",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'Il robot non decide nulla: è un'estensione amplificata delle mani del chirurgo.' La responsabilità della diagnosi e della decisione chirurgica è sempre del medico umano."
+        },
+        {
+          "id": "c",
+          "testo": "Il robot da Vinci usa l'intelligenza artificiale per decidere quali movimenti sono sicuri e blocca quelli pericolosi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il da Vinci è telemanipolato, non autonomo: traduce i movimenti del chirurgo in movimenti precisi, non prende decisioni autonome su quali movimenti fare.",
+          "riferimento": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza pratica: sia i sistemi autonomi sia quelli telemanipolati hanno gli stessi rischi",
+          "corretto": false,
+          "feedback": "Non è corretto. La distinzione è critica per la sicurezza: in un sistema telemanipolato la responsabilità è chiaramente del chirurgo umano; in un sistema autonomo la catena di responsabilità è più complessa.",
+          "riferimento": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
+        }
+      ],
+      "spiegazione": "Il robot chirurgico da Vinci è telemanipolato: il chirurgo siede a una console e muove joystick; il robot traduce e scala i movimenti in azioni precise con precisione sub-millimetrica ed eliminando il tremore. 'Il robot non decide nulla: è un'estensione amplificata delle mani del chirurgo.' La responsabilità rimane sempre al medico umano.",
+      "riferimento_principale": "📖 ESPLORA — Robotica nella realtà: tre sistemi che cambiano il mondo"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Nel progetto avanzato SPERIMENTA, il sistema a due micro:bit comunicanti via radio deve gestire 'errori di comunicazione'. Qual è il problema algoritmico specifico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I due micro:bit potrebbero contarsi a vicenda come persone che passano nel corridoio",
+          "corretto": false,
+          "feedback": "Non è corretto. I micro:bit non conterebbero se stessi come persone (non attraversano la porta). Il problema di comunicazione è diverso.",
+          "riferimento": "🌍 SPERIMENTA — La sfida dei sistemi distribuiti"
+        },
+        {
+          "id": "b",
+          "testo": "Se un messaggio radio va perso, il terzo micro:bit potrebbe ricevere conteggi non aggiornati e calcolare un numero errato di persone nel corridoio",
+          "corretto": true,
+          "feedback": "Esatto! Il testo del progetto distribuito chiede: 'Cosa succede se un messaggio viene perso?' Se il micro:bit all'uscita non riceve l'aggiornamento dal micro:bit all'entrata, il conteggio totale è errato."
+        },
+        {
+          "id": "c",
+          "testo": "I due micro:bit potrebbero interferire l'uno con l'altro e smettere di funzionare",
+          "corretto": false,
+          "feedback": "Non è corretto. L'interferenza fisica è un problema diverso dalla perdita di messaggi. Il problema algoritmico è la gestione dei messaggi persi, non l'interferenza hardware.",
+          "riferimento": "🌍 SPERIMENTA — La sfida dei sistemi distribuiti"
+        },
+        {
+          "id": "d",
+          "testo": "I due micro:bit consumano la batteria più velocemente se comunicano via radio",
+          "corretto": false,
+          "feedback": "Non è corretto. Il consumo di batteria è un problema tecnico reale ma non è l'errore algoritmico critico descritto nel progetto.",
+          "riferimento": "🌍 SPERIMENTA — La sfida dei sistemi distribuiti"
+        }
+      ],
+      "spiegazione": "Nel sistema distribuito con due micro:bit che comunicano via radio, il problema critico è: 'Cosa succede se un messaggio viene perso?' Se il micro:bit all'uscita non riceve l'aggiornamento del conteggio dall'entrata, il terzo micro:bit (che calcola il numero totale di persone nel corridoio) usa dati obsoleti e mostra un numero errato. Gestire questa eventualità è un classico problema di sistemi distribuiti.",
+      "riferimento_principale": "🌍 SPERIMENTA — La sfida dei sistemi distribuiti"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché il riconoscimento di schemi (pattern recognition) è una competenza così importante nel pensiero computazionale avanzato applicato alla robotica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché permette al robot di riconoscere visivamente le persone in un corridoio",
+          "corretto": false,
+          "feedback": "Non è corretto. Il riconoscimento visivo di persone usa computer vision (non trattato in questa MC). Il riconoscimento di schemi nel pensiero computazionale riguarda i pattern nei problemi.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
+        },
+        {
+          "id": "b",
+          "testo": "Perché identificare strutture ricorrenti permette di riusare soluzioni: un robot che evita ostacoli e un termostato hanno lo stesso pattern (sensore → condizione → azione → verifica)",
+          "corretto": true,
+          "feedback": "Esatto! Il testo usa questo esempio: il pattern 'sensore → condizione → azione → verifica' si applica a un robot che evita ostacoli E a un termostato che controlla la temperatura. Riconoscere il pattern trasferisce la soluzione da un dominio all'altro."
+        },
+        {
+          "id": "c",
+          "testo": "Perché è necessario per capire quali linguaggi di programmazione usano i robot avanzati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il riconoscimento di schemi è una strategia cognitiva generale, non una competenza specifica per linguaggi di programmazione.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
+        },
+        {
+          "id": "d",
+          "testo": "Perché permette al microcontroller di processare più dati contemporaneamente grazie alla parallelizzazione",
+          "corretto": false,
+          "feedback": "Non è corretto. La parallelizzazione è una caratteristica hardware (multi-core). Il riconoscimento di schemi è una strategia mentale per la risoluzione di problemi.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
+        }
+      ],
+      "spiegazione": "Il riconoscimento di schemi (pattern recognition) permette di identificare strutture ricorrenti in problemi diversi. Il testo usa l'esempio: 'Un robot che evita ostacoli e un termostato hanno lo stesso pattern: sensore → condizione → azione → verifica.' Una volta riconosciuto il pattern, la soluzione si trasferisce da un dominio all'altro senza dover ricominciare da zero.",
+      "riferimento_principale": "📖 ESPLORA — Pensiero computazionale avanzato: oltre le istruzioni semplici"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "La documentazione tecnica richiesta nel livello Avanzato della SPERIMENTA include 'implicazioni etiche'. Perché un sistema che conta le persone in un corridoio solleva questioni etiche concrete?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Non solleva questioni etiche: è solo un contatore, non raccoglie dati personali identificativi",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche dati aggregati (numero di persone in un luogo nel tempo) possono rivelare pattern comportamentali rilevanti per la privacy.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto robotico open-ended"
+        },
+        {
+          "id": "b",
+          "testo": "Raccoglie dati sul movimento delle persone (quando entrano, escono, pattern di affollamento) che potrebbero essere usati per monitorare comportamenti o identificare individui indirettamente",
+          "corretto": true,
+          "feedback": "Esatto! Il testo chiede: 'questo sistema raccoglie dati sul movimento delle persone — chi ha accesso a questi dati? Come potrebbero essere usati impropriamente?' Anche dati apparentemente anonimi possono identificare indirettamente."
+        },
+        {
+          "id": "c",
+          "testo": "Perché potrebbe malfunzionare e lasciare passare persone non autorizzate",
+          "corretto": false,
+          "feedback": "Non è corretto. Il malfunzionamento è un problema tecnico, non etico. Le questioni etiche riguardano la raccolta e l'uso dei dati, non il funzionamento tecnico.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto robotico open-ended"
+        },
+        {
+          "id": "d",
+          "testo": "Perché gli studenti hanno meno di 18 anni e non possono progettare sistemi di monitoraggio",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste un'età minima per progettare sistemi di monitoraggio. Le questioni etiche riguardano la gestione responsabile dei dati, non l'età del progettista.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetto robotico open-ended"
+        }
+      ],
+      "spiegazione": "Il sistema che conta persone in un corridoio raccoglie dati comportamentali: quando le persone entrano, escono, pattern di affollamento nel tempo. La documentazione richiesta dal livello Avanzato chiede esplicitamente: 'chi ha accesso a questi dati? Come potrebbero essere usati impropriamente? Come applicare la data minimization?' Anche dati aggregati possono rivelare informazioni sensibili.",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Progetto robotico open-ended"
     }
   ]
 }

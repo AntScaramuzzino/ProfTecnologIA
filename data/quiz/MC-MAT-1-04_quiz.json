@@ -1,259 +1,600 @@
 {
   "mc_id": "MC-MAT-1-04",
-  "titolo": "Rifiuti, riciclaggio e smaltimento",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa significa 'raccolta differenziata'?",
+      "domanda": "Come si chiama la zona dell'oceano Pacifico con una concentrazione enorme di frammenti di plastica, grande circa tre volte la Francia?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Raccogliere rifiuti in zone diverse della città",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Great Pacific Garbage Patch",
+          "corretto": true,
+          "feedback": "Esatto! Il Great Pacific Garbage Patch è la zona di accumulo di plastica nel Pacifico settentrionale. Non è un'isola solida ma una 'zuppa' densa di frammenti microscopici."
         },
         {
           "id": "b",
-          "testo": "Separare i rifiuti per tipologia di materiale (carta, plastica, vetro, organico, indifferenziato) per facilitarne il riciclo",
-          "corretto": true,
-          "feedback": "Esatto! La raccolta differenziata è il primo step della catena del riciclo: senza separazione alla fonte, il riciclo industriale diventa inefficiente o impossibile."
+          "testo": "Pacific Plastic Island",
+          "feedback": "Non corretto. Il nome corretto è Great Pacific Garbage Patch. Non è un'isola solida ma una concentrazione di microplastiche disperse in profondità.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "c",
-          "testo": "Raccogliere i rifiuti in orari diversi del giorno",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "North Pacific Garbage Zone",
+          "feedback": "Non corretto. Il nome usato nel testo è Great Pacific Garbage Patch.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         },
         {
           "id": "d",
-          "testo": "Differenziare i rifiuti per peso",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Oceano di Plastica del Pacifico",
+          "feedback": "Non corretto. Il nome corretto in inglese (usato internazionalmente) è Great Pacific Garbage Patch.",
+          "riferimento": "⚡ INNESCA — Domanda di avvio"
         }
       ],
-      "spiegazione": "La raccolta differenziata è il primo step della catena del riciclo: senza separazione alla fonte, il riciclo industriale diventa inefficiente o impossibile."
+      "spiegazione": "Il Great Pacific Garbage Patch è una zona di accumulo di plastica nel Pacifico settentrionale grande circa tre volte la Francia (1,6 milioni di km²). Non è un'isola solida: è una concentrazione di frammenti e microplastiche disperse in profondità. Nel 2023 ricercatori hanno trovato microplastiche nel sangue di persone dell'entroterra.",
+      "riferimento_principale": "⚡ INNESCA — Domanda di avvio"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è la 'gerarchia dei rifiuti' europea?",
+      "domanda": "Secondo la definizione del Codice Ambientale italiano (D.Lgs. 152/2006), quando un oggetto diventa ufficialmente un 'rifiuto'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La classificazione dei rifiuti per pericolosità",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Quando il detentore si disfa o ha deciso di disfarsi dell'oggetto",
+          "corretto": true,
+          "feedback": "Esatto! Secondo il D.Lgs. 152/2006, un rifiuto è 'qualsiasi sostanza od oggetto di cui il detentore si disfi o abbia deciso di disfarsi'. Un oggetto non usato ma non ancora portato a smaltire non è tecnicamente un rifiuto."
         },
         {
           "id": "b",
-          "testo": "L'ordine di preferenza nel trattamento: Prevenzione → Riuso → Riciclo → Recupero energetico → Smaltimento (discarica)",
-          "corretto": true,
-          "feedback": "Esatto! La gerarchia EU mette la prevenzione al primo posto: il rifiuto migliore è quello che non si produce."
+          "testo": "Quando l'oggetto è rotto o non più funzionante",
+          "feedback": "Non corretto. Un oggetto rotto ma non ancora portato a smaltire non è un rifiuto per la legge italiana. Il criterio è la decisione del detentore di disfarsi dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Cos'è un rifiuto? La definizione legale"
         },
         {
           "id": "c",
-          "testo": "La gerarchia delle responsabilità nella gestione dei rifiuti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Quando l'oggetto ha più di 5 anni di età",
+          "feedback": "Non corretto. L'età non determina se un oggetto è un rifiuto. La definizione legale riguarda la decisione del detentore di disfarsi dell'oggetto.",
+          "riferimento": "📖 ESPLORA — Cos'è un rifiuto? La definizione legale"
         },
         {
           "id": "d",
-          "testo": "La classifica dei paesi per percentuale di riciclo",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Quando l'oggetto viene messo nel bidone della differenziata corretto",
+          "feedback": "Non corretto. L'oggetto diventa rifiuto nel momento in cui il proprietario decide di disfarsene, non nel momento fisico in cui viene messo nel bidone.",
+          "riferimento": "📖 ESPLORA — Cos'è un rifiuto? La definizione legale"
         }
       ],
-      "spiegazione": "La gerarchia EU mette la prevenzione al primo posto: il rifiuto migliore è quello che non si produce. La discarica è l'ultima spiaggia."
+      "spiegazione": "La definizione legale del D.Lgs. 152/2006: un rifiuto è 'qualsiasi sostanza od oggetto di cui il detentore si disfi o abbia deciso di disfarsi.' Un vecchio televisore non ancora portato a smaltire non è tecnicamente un rifiuto (è un bene non usato). Appena viene portato a smaltire, diventa rifiuto.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è un rifiuto? La definizione legale"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è la 'discarica controllata'?",
+      "domanda": "Nella gerarchia europea dei rifiuti (le 5 R), qual è la strategia più efficace ambientalmente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una discarica aperta senza controlli sanitari",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Rifiuta: non produrre il rifiuto in primo luogo",
+          "corretto": true,
+          "feedback": "Esatto! La gerarchia delle 5R ordina le strategie dalla più alla meno efficace: Rifiuta → Riduci → Riusa → Ricicla → Recupera. Rifiutare è la più efficace perché interviene prima che il rifiuto esista, senza bisogno di infrastrutture industriali."
         },
         {
           "id": "b",
-          "testo": "Un sito ingegnerizzato per lo smaltimento sicuro dei rifiuti non recuperabili con impermeabilizzazione del fondo e gestione del biogas e del percolato",
-          "corretto": true,
-          "feedback": "Esatto! La discarica controllata impermeabilizza il suolo per evitare contaminazione delle falde, raccoglie il biogas (metano) per la produzione energetica e tratta il percolato."
+          "testo": "Ricicla: recuperare i materiali è la strategia più importante",
+          "feedback": "Non corretto. Il riciclo è la quarta strategia nella gerarchia (dopo rifiutare, ridurre e riusare). È importante ma non la più efficace. Rifiutare non produrre è sempre meglio che riciclare.",
+          "riferimento": "📖 ESPLORA — La gerarchia dei rifiuti: le 5 R"
         },
         {
           "id": "c",
-          "testo": "Un impianto di compostaggio industriale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Recupera: trasformare i rifiuti in energia è il miglior uso finale",
+          "feedback": "Non corretto. Il recupero energetico (termovalorizzazione) è la quinta e ultima strategia nella gerarchia: la meno preferibile. È meglio di smaltire in discarica, ma molto meno efficiente delle prime quattro R.",
+          "riferimento": "📖 ESPLORA — La gerarchia dei rifiuti: le 5 R"
         },
         {
           "id": "d",
-          "testo": "Un sito per rifiuti industriali pericolosi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Riduci: consumare meno è la soluzione principale",
+          "feedback": "Non corretto. 'Ridurre' è la seconda strategia nella gerarchia, non la prima. La più efficace è 'Rifiuta': non produrre il rifiuto in primo luogo.",
+          "riferimento": "📖 ESPLORA — La gerarchia dei rifiuti: le 5 R"
         }
       ],
-      "spiegazione": "La discarica controllata impermeabilizza il suolo per evitare contaminazione delle falde, raccoglie il biogas (metano) per la produzione energetica e tratta il percolato."
+      "spiegazione": "Gerarchia delle 5R (dalla più alla meno efficace): 1° Rifiuta (non produrre il rifiuto), 2° Riduci (meno quantità), 3° Riusa (stessa forma, più usi), 4° Ricicla (recupero materiali), 5° Recupera (energia dalla termovalorizzazione). L'ordine riflette l'efficacia ambientale: meno risorse e infrastrutture industriali servono, meglio è.",
+      "riferimento_principale": "📖 ESPLORA — La gerarchia dei rifiuti: le 5 R"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Il processo di riciclo della carta produce una 'pasta di carta' immergendo la carta in acqua. Come si chiama questo processo e qual è il suo limite principale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il processo si chiama 'pulper'; il limite è che ogni ciclo accorcia le fibre di cellulosa, rendendo la carta meno resistente dopo 5-7 cicli",
+          "corretto": true,
+          "feedback": "Esatto! Il pulper è la vasca con pale rotanti dove la carta raccolta viene ridotta in sospensione di fibre di cellulosa. Il limite: le fibre si accorciano a ogni ciclo, riducendo la resistenza della carta. Dopo 5-7 cicli le fibre sono troppo corte."
+        },
+        {
+          "id": "b",
+          "testo": "Il processo si chiama 'digestione'; il limite è che produce CO₂ che scalda l'atmosfera",
+          "feedback": "Non corretto. La digestione è il processo anaerobico per l'organico che produce biogas. Il riciclo della carta usa il 'pulper' e il limite è l'accorciamento delle fibre.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+        },
+        {
+          "id": "c",
+          "testo": "Il processo si chiama 'macinazione'; il limite è che consuma molta acqua per ogni tonnellata di carta riciclata",
+          "feedback": "Non corretto. Il processo si chiama 'pulper', non macinazione. Il limite principale non è il consumo d'acqua ma l'accorciamento delle fibre dopo 5-7 cicli.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+        },
+        {
+          "id": "d",
+          "testo": "Il processo si chiama 'flotazione'; il limite è che non può rimuovere inchiostri neri dalla carta",
+          "feedback": "Non corretto. La flotazione è usata nel trattamento delle acque. Il riciclo della carta usa il 'pulper' seguito da de-inkizzazione chimica per rimuovere gli inchiostri.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+        }
+      ],
+      "spiegazione": "Il riciclo della carta: la carta raccolta va al cartificio dove viene immersa nel pulper (vasca con pale rotanti) e ridotta in pasta di cellulosa. Viene de-inkizzata chimicamente, stesa, asciugata, arrotolata. Limite: ogni ciclo accorcia le fibre. Dopo 5-7 cicli le fibre sono troppo corte per carta commerciale: si usano per cartongesso o si perdono.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Perché il vetro è considerato il materiale con la filiera di riciclo più efficiente tra i comuni materiali di imballaggio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché si ricicla all'infinito senza perdita di qualità: una bottiglia riciclata ha le stesse proprietà di una prodotta da materie prime vergini",
+          "corretto": true,
+          "feedback": "Esatto! Il vetro può essere rifuso e riformato infinite volte senza alcuna degradazione delle proprietà. A differenza della carta (fibre si accorciano) o della plastica (proprietà meccaniche peggiorano), il vetro riciclato è identico al vetro vergine."
+        },
+        {
+          "id": "b",
+          "testo": "Perché il riciclo del vetro non richiede energia e quindi ha un impatto ambientale nullo",
+          "feedback": "Non corretto. Il riciclo del vetro richiede energia (circa 1.500°C per la fusione), ma meno dell'1% rispetto alla produzione da sabbia vergine. Il vantaggio principale è la qualità invariata a ogni ciclo.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo del vetro"
+        },
+        {
+          "id": "c",
+          "testo": "Perché il vetro è biodegradabile e si decompone naturalmente dopo il riciclo",
+          "feedback": "Non corretto. Il vetro non è biodegradabile: impiega milioni di anni per decomporsi in natura. Il suo vantaggio è che si può riciclare infinitamente senza perdita di qualità.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo del vetro"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il vetro può essere riciclato mescolando tutti i colori senza problemi",
+          "feedback": "Non corretto. Il vetro NON può essere mescolato per colore: il vetro verde deve essere separato dal trasparente e dal marrone perché i coloranti cambiano le proprietà ottiche del vetro prodotto.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo del vetro"
+        }
+      ],
+      "spiegazione": "Il vetro si ricicla all'infinito senza perdita di qualità: a differenza della carta (fibre che si accorciano) e della plastica (degradazione polimerica), il vetro rifuso ha esattamente le stesse proprietà del vetro vergine. Limite: il vetro è pesante (alti costi di trasporto) e richiede separazione per colore (trasparente, verde, marrone) per mantenere la qualità ottica.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo del vetro"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Perché la 'plastica nera' (vassoi del supermercato, posate usa-e-getta nere) quasi non viene riciclata?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i coloranti carboniosi assorbono la luce infrarossa usata dai sensori di selezione automatica: le telecamere non la 'vedono' e la scartano nell'indifferenziato",
+          "corretto": true,
+          "feedback": "Esatto! Gli impianti di selezione usano telecamere a infrarossi per identificare il tipo di polimero (PET, PP, ecc.) analizzando come riflette la luce. Il nero assorbe tutti gli infrarossi, rendendo la plastica nera invisibile ai sensori."
+        },
+        {
+          "id": "b",
+          "testo": "Perché la plastica nera contiene sostanze tossiche che contaminerebbero il riciclato",
+          "feedback": "Non corretto. I coloranti neri non sono necessariamente tossici. Il problema è tecnologico: i sensori IR non riescono a identificare il tipo di polimero nella plastica nera.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della plastica"
+        },
+        {
+          "id": "c",
+          "testo": "Perché la legge italiana vieta il riciclo della plastica colorata",
+          "feedback": "Non corretto. Non esiste tale divieto. Il problema è tecnico: le telecamere a infrarossi degli impianti di selezione non riconoscono il tipo di polimero nei contenitori neri.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della plastica"
+        },
+        {
+          "id": "d",
+          "testo": "Perché la plastica nera è sempre fatta di PVC, che è difficile da riciclare per la presenza di cloro",
+          "feedback": "Non corretto. La plastica nera può essere fatta di vari polimeri (PS, PP, ecc.), non necessariamente PVC. Il problema è la visibilità ai sensori IR, non la composizione chimica specifica.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della plastica"
+        }
+      ],
+      "spiegazione": "Gli impianti di selezione automatica usano telecamere a infrarossi che identificano il tipo di polimero analizzando come la plastica riflette la luce IR. I coloranti carboniosi nella plastica nera assorbono tutta la luce infrarossa invece di rifletterla: la telecamera non vede nulla e scarta il pezzo nell'indifferenziato. Quasi tutta la plastica nera finisce non riciclata.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo della plastica"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cos'è il 'codice CER' per i rifiuti?",
+      "domanda": "Il testo afferma che il riciclo del vetro è dell'82% in Italia, ma richiede separazione per colore. Perché mescolare vetro di colori diversi peggiora la qualità del riciclato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il codice del barcode sui prodotti riciclabili",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i coloranti metallici nel vetro colorato si distribuiscono uniformemente nella fusione, tingendo tutto il lotto e producendo vetro colorato invece del trasparente desiderato",
+          "corretto": true,
+          "feedback": "Esatto! Quando si fonde insieme vetro verde (ossido di cromo) e vetro trasparente, il colorante si distribuisce uniformemente nel bagno vetroso. Il risultato è vetro leggermente colorato, non utilizzabile per applicazioni che richiedono trasparenza totale (ad esempio bottiglie di acqua trasparenti)."
         },
         {
           "id": "b",
-          "testo": "Il Codice Europeo dei Rifiuti: un codice a 6 cifre che classifica ogni tipo di rifiuto e determina le modalità di gestione e smaltimento",
-          "corretto": true,
-          "feedback": "Esatto! Ogni rifiuto ha un CER che determina come gestirlo."
+          "testo": "Perché il vetro colorato fonde a temperature diverse dal vetro trasparente, creando fessurazioni",
+          "feedback": "Non corretto. I diversi tipi di vetro colorato hanno temperature di fusione simili (intorno ai 1.500°C). Il problema è la contaminazione cromatica dei coloranti, non le diverse temperature di fusione.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo del vetro"
         },
         {
           "id": "c",
-          "testo": "Il numero di identificazione di una discarica autorizzata",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il vetro di colori diversi ha coefficienti di dilatazione termica incompatibili",
+          "feedback": "Non corretto. Il coefficiente di dilatazione termica non è significativamente diverso tra i tipi di vetro da imballaggio colorati. Il problema è la colorazione del riciclato.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo del vetro"
         },
         {
           "id": "d",
-          "testo": "Il codice fiscale dell'azienda produttrice del rifiuto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il vetro verde è radioattivo e contaminerebbe il vetro trasparente",
+          "feedback": "Non corretto. Il vetro verde non è radioattivo. Il colore verde è dato dall'ossido di cromo o di ferro: non radioattivi, ma contaminanti cromatici che tingono tutto il lotto fuso.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo del vetro"
         }
       ],
-      "spiegazione": "Ogni rifiuto ha un CER che determina come gestirlo. I codici con asterisco (*) indicano rifiuti pericolosi con gestione speciale obbligatoria."
+      "spiegazione": "Il vetro colorato contiene ossidi metallici come coloranti: ossido di cromo (verde), ossido di manganese (marrone/ambra), ossido di ferro (verde/blu). Quando si fonde insieme vetro di colori diversi, questi ossidi si sciolgono uniformemente nel bagno vetroso e tingono tutto il lotto. Il vetro trasparente prodotto diventa colorato: meno prezioso commercialmente e non utilizzabile per imballaggi trasparenti.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo del vetro"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cosa si intende per 'RAEE' e perché vanno smaltiti separatamente?",
+      "domanda": "Il testo spiega che 'solo il 9% della plastica prodotta nella storia dell'umanità è stata riciclata'. Quali tre fattori strutturali del riciclo della plastica spiegano questa percentuale così bassa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Rifiuti di Alimenti e Abiti Estivi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Contaminazione alimentare dei contenitori, degradazione della qualità polimerica a ogni ciclo di fusione, e impossibilità di riciclare la plastica nera con i sistemi a infrarossi",
+          "corretto": true,
+          "feedback": "Esatto! Il testo evidenzia tre fattori: 1) contaminazione (un contenitore con residui di cibo compromette tutto il lotto), 2) degradazione a ogni fusione (le proprietà meccaniche peggiorano dopo 2-3 cicli, portando al 'downcycling'), 3) selezione impossibile per la plastica nera."
         },
         {
           "id": "b",
-          "testo": "Rifiuti di Apparecchiature Elettriche ed Elettroniche: contengono metalli preziosi recuperabili (oro, litio, rame) e sostanze pericolose (mercurio, piombo, CFC)",
-          "corretto": true,
-          "feedback": "Esatto! Un computer contiene oro, argento, palladio, rame, litio."
+          "testo": "Costo elevato, mancanza di mercato per il riciclato, e opposizione politica al riciclo",
+          "feedback": "Non corretto. Sebbene costo e mercato siano fattori, il testo identifica cause tecnico-strutturali: contaminazione, degradazione polimerica, e problemi di selezione. Non menziona 'opposizione politica'.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della plastica"
         },
         {
           "id": "c",
-          "testo": "Rifiuti Agricoli e Aziendali Esternalizzati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La plastica è troppo leggera per essere trasportata economicamente agli impianti di riciclo",
+          "feedback": "Non corretto. La leggerezza della plastica non è identificata nel testo come causa del basso tasso di riciclo. Le cause sono tecniche: contaminazione, degradazione polimerica, e problemi di selezione.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della plastica"
         },
         {
           "id": "d",
-          "testo": "Rifiuti Ad Alta Energia",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I consumatori non differenziano correttamente la plastica per mancanza di informazioni",
+          "feedback": "Non corretto (parzialmente rilevante). Il comportamento dei consumatori influisce, ma il testo identifica cause strutturali più profonde: degradazione intrinseca del polimero, diversi tipi di plastica incompatibili, e impossibilità tecnica di riciclare la plastica nera.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della plastica"
         }
       ],
-      "spiegazione": "Un computer contiene oro, argento, palladio, rame, litio. Smaltirlo in discarica è uno spreco di risorse e una fonte di contaminazione. Il riciclo dei RAEE è obbligatorio per legge in EU."
+      "spiegazione": "Il 9% di riciclo della plastica si spiega con fattori strutturali: 1) Contaminazione: un solo contenitore sporco compromette interi lotti. 2) Degradazione polimerica: le catene polimeriche si accorciano a ogni fusione, portando al downcycling (uso meno nobile). 3) Impossibilità tecnica: la plastica nera è invisibile ai sensori IR. 4) Diversità incompatibile di polimeri: PET, HDPE, PVC, PP non si possono mescolare.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo della plastica"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Come funziona un impianto di compostaggio industriale?",
+      "domanda": "Il testo spiega che il riciclo dell'alluminio usa il 95% in meno di energia rispetto alla produzione dalla bauxite. Perché questa differenza è così grande?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Incenerisce i rifiuti organici ad alta temperatura",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la produzione dalla bauxite richiede l'elettrolisi (processo Bayer-Hall-Héroult) che consuma enormi quantità di energia elettrica per separare l'alluminio dall'ossigeno; il riciclo fonde direttamente l'alluminio già metallico",
+          "corretto": true,
+          "feedback": "Esatto! La produzione primaria richiede due passaggi energivori: processo Bayer (separa allumina dalla bauxite) + elettrolisi Hall-Héroult (riduce allumina in alluminio metallico con enormi correnti elettriche). Il riciclo salta entrambi: fonde direttamente l'alluminio già metallico."
         },
         {
           "id": "b",
-          "testo": "Decompone i rifiuti organici tramite microrganismi in condizioni controllate di temperatura (55-70°C) e ossigeno, producendo compost come ammendante del suolo",
-          "corretto": true,
-          "feedback": "Esatto! Il compostaggio industriale è aerobico (con ossigeno)."
+          "testo": "Perché le lattine di alluminio hanno già la forma finale e non devono essere pressate",
+          "feedback": "Non corretto. Il risparmio energetico non dipende dalla forma delle lattine. Dipende dall'eliminazione del processo elettrolitico energivoro necessario per produrre alluminio dalla bauxite.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo dei metalli"
         },
         {
           "id": "c",
-          "testo": "Separa chimicamente le componenti organiche dei rifiuti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la bauxite contiene molta acqua che deve essere evaporata prima di poter estrarre l'alluminio",
+          "feedback": "Non corretto. L'evaporazione dell'acqua non è l'operazione principale energivora. Il consumo energetico è dominato dall'elettrolisi: separare chimicamente l'alluminio dall'ossigeno con grandi correnti elettriche.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo dei metalli"
         },
         {
           "id": "d",
-          "testo": "Produce biogas da rifiuti organici in assenza di ossigeno",
-          "feedback": "Questa è la digestione anaerobica."
+          "testo": "Perché le fornaci per il riciclo dell'alluminio sono più efficienti di quelle usate per la bauxite",
+          "feedback": "Non corretto. La differenza non è nell'efficienza delle fornaci ma nel processo chimico: la bauxite richiede elettrolisi (molto energivora), il riciclo fonde direttamente alluminio già metallico (molto meno energivoro).",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo dei metalli"
         }
       ],
-      "spiegazione": "Il compostaggio industriale è aerobico (con ossigeno). Le alte temperature eliminano patogeni e semi di erbe infestanti. Il compost prodotto sostituisce i fertilizzanti chimici."
+      "spiegazione": "Produzione alluminio dalla bauxite: processo Bayer (bauxite → allumina, Al₂O₃) + elettrolisi Hall-Héroult (allumina → alluminio metallico con enormi correnti elettriche). L'elettrolisi è il processo più energivoro: 13-15 kWh/kg. Riciclo: si fonde direttamente l'alluminio già metallico, saltando completamente i due processi energivori. Risparmio: 95% dell'energia.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo dei metalli"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'downcycling' e perché è diverso dal riciclo vero?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Il testo descrive il compostaggio come 'decomposizione aerobica' che raggiunge 55-70°C. Perché queste temperature elevate sono importanti per il processo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il riciclo di prodotti di alta qualità in materiali di lusso",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché accelerano la decomposizione microbica e uccidono patogeni e semi di piante infestanti presenti nel materiale organico",
+          "corretto": true,
+          "feedback": "Esatto! Le alte temperature (55-70°C) del compostaggio industriale hanno due funzioni: accelerare l'attività batterica (metabolismo più veloce) e igienizzare il materiale (uccidendo batteri patogeni, virus, parassiti e semi di piante infestanti che altrimenti sopravviverebbero)."
         },
         {
           "id": "b",
-          "testo": "Il processo in cui il materiale riciclato ha qualità inferiore al materiale originale e non può essere riciclato indefinitamente: la plastica si degrada ad ogni ciclo",
-          "corretto": true,
-          "feedback": "Esatto! La plastica in bottiglia può diventare fibra sintetica (downcycling), ma la fibra non diventa più bottiglia."
+          "testo": "Perché la cellulosa si decompone solo a temperature superiori a 50°C",
+          "feedback": "Non corretto. La cellulosa si decompone per azione enzimatica batterica, non per temperatura in sé. Le alte temperature accelerano il metabolismo batterico e igienizzano il materiale.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo dell'organico (umido)"
         },
         {
           "id": "c",
-          "testo": "Il recupero di energia dai rifiuti tramite incenerimento",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché il calore sterilizza il composto eliminando tutti i microrganismi, producendo humus puro",
+          "feedback": "Non corretto. Lo scopo non è eliminare tutti i microrganismi: i batteri del compostaggio sono necessari per la decomposizione. Le alte temperature uccidono i PATOGENI, non tutti i microrganismi.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo dell'organico (umido)"
         },
         {
           "id": "d",
-          "testo": "Il riciclo di materiali che non possono essere riciclati normalmente",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la digestione anaerobica avviene solo a temperature superiori a 55°C",
+          "feedback": "Non corretto. Il testo distingue chiaramente compostaggio (aerobico, 55-70°C) da digestione anaerobica (senza ossigeno). La digestione anaerobica può avvenire anche a temperature più basse (mesofila: 35-37°C, termofila: 55°C).",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo dell'organico (umido)"
         }
       ],
-      "spiegazione": "La plastica in bottiglia può diventare fibra sintetica (downcycling), ma la fibra non diventa più bottiglia. Solo il vetro e l'alluminio si riciclano senza perdita di qualità."
+      "spiegazione": "Le alte temperature del compostaggio industriale (55-70°C) servono a: 1) accelerare l'attività microbica (più caldo = metabolismo più veloce), 2) igienizzare il materiale (uccidendo batteri patogeni, virus, parassiti e semi di piante infestanti). Il compostaggio domestico a 25°C non raggiunge queste temperature: più lento e non igienizzante.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo dell'organico (umido)"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'responsabilità estesa del produttore' (EPR)?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Il testo descrive il caso della bottiglia PET dopo la raccolta differenziata: 'entro 1-2 settimane il camion la raccoglie'. Ma non tutta la plastica PET raccolta viene effettivamente riciclata in materiale equivalente. Cosa può impedire il riciclo di qualità?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La responsabilità legale del produttore per i danni del prodotto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Etichette in PVC su bottiglie PET, bottiglie non risciacquate, sacchetti nel bidone giallo, e plastica nera che bypassa i sensori IR",
+          "corretto": true,
+          "feedback": "Esatto! Il testo elenca esplicitamente: etichette PVC interferiscono con la qualità, bottiglie sporche contaminano il lotto, sacchetti di plastica nel bidone giallo (se non parte della raccolta locale), e plastica nera invisibile ai sensori IR."
         },
         {
           "id": "b",
-          "testo": "Il principio per cui il produttore è responsabile del fine vita del proprio prodotto: deve finanziarne la raccolta, il trattamento e il riciclo",
-          "corretto": true,
-          "feedback": "Esatto! L'EPR trasforma gli incentivi: se il produttore paga il fine vita, ha interesse a progettare prodotti più facili da riciclare."
+          "testo": "Bottiglie troppo grandi per entrare nelle macchine di selezione automatica",
+          "feedback": "Non corretto. Le dimensioni non sono identificate come problema. I fattori che impediscono il riciclo di qualità sono: contaminazione alimentare, etichette PVC, plastica nera.",
+          "riferimento": "🔍 OSSERVA — Il caso: cosa succede alla tua bottiglia di plastica"
         },
         {
           "id": "c",
-          "testo": "Il sistema di etichettatura obbligatoria per i produttori",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il colore azzurro o verde delle bottiglie che confonde i sensori a infrarossi",
+          "feedback": "Non corretto. Il colore delle bottiglie non è il problema principale (a differenza della plastica NERA). I sensori IR identificano il polimero indipendentemente dalla colorazione trasparente o semitrasparente.",
+          "riferimento": "🔍 OSSERVA — Il caso: cosa succede alla tua bottiglia di plastica"
         },
         {
           "id": "d",
-          "testo": "La responsabilità ambientale delle aziende verso i clienti",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il materiale del tappo che deve essere sempre rimosso prima della raccolta",
+          "feedback": "Non corretto. Il testo dice che nella maggior parte dei sistemi italiani il tappo in PP può rimanere attaccato. Non è necessario rimuoverlo.",
+          "riferimento": "🔍 OSSERVA — Il caso: cosa succede alla tua bottiglia di plastica"
         }
       ],
-      "spiegazione": "L'EPR trasforma gli incentivi: se il produttore paga il fine vita, ha interesse a progettare prodotti più facili da riciclare. RAEE, imballaggi, batterie sono soggetti all'EPR in EU."
+      "spiegazione": "Fattori che impediscono il riciclo di qualità della plastica: 1) etichette in PVC su bottiglie PET (interferiscono con il riciclato), 2) bottiglie non risciacquate (contaminazione alimentare sporca il lotto), 3) sacchetti di plastica nel bidone giallo non previsti dalla raccolta locale, 4) plastica nera invisibile ai sensori IR, 5) mescolare alluminio e plastica nel bidone sbagliato.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: cosa succede alla tua bottiglia di plastica"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'plastic credit' e quali critiche riceve?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Il testo descrive la 'discarica' come l'ultima opzione nella gerarchia, e la definisce 'un parcheggio lungo'. Quale problema ambientale crea una discarica anche dopo la sua chiusura?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un voucher per l'acquisto di plastica riciclata",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La materia organica continua a produrre metano (gas serra 80 volte più potente della CO₂) per decenni; i materiali plastici rimangono praticamente invariati per secoli",
+          "corretto": true,
+          "feedback": "Esatto! Anche dopo la chiusura: la materia organica sepolta produce metano per anni o decenni (decomposizione anaerobica lenta). Il metano è un gas serra molto potente (80× CO₂ a 20 anni). Le plastiche rimangono per secoli. Il percolato (liquido tossico) può filtrare nelle falde."
         },
         {
           "id": "b",
-          "testo": "Un meccanismo di mercato in cui le aziende acquistano crediti per la raccolta/riciclo di plastica equivalente a quella immessa sul mercato: alternativa o complemento alle EPR",
-          "corretto": true,
-          "feedback": "Esatto! I plastic credit permettono flessibilità ma rischiano di diventare 'offsetting' (compro crediti invece di ridurre): la stessa critica dei carbon credit."
+          "testo": "Il calore generato dai rifiuti in decomposizione può causare incendi spontanei superficiali",
+          "feedback": "Non corretto. Gli incendi spontanei nelle discariche esistono (metano) ma il testo identifica principalmente il metano come gas serra e la persistenza dei materiali come problemi principali.",
+          "riferimento": "📖 ESPLORA — La discarica: non è la fine, è un parcheggio lungo"
         },
         {
           "id": "c",
-          "testo": "Un sistema di certificazione per i prodotti senza plastica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "I rifiuti in discarica attirano animali selvatici che diffondono malattie nelle aree circostanti",
+          "feedback": "Non corretto. Le discariche moderne hanno sistemi di copertura e impermeabilizzazione. Il testo non identifica gli animali come problema principale, ma il metano e la persistenza dei materiali.",
+          "riferimento": "📖 ESPLORA — La discarica: non è la fine, è un parcheggio lungo"
         },
         {
           "id": "d",
-          "testo": "Un incentivo governativo per ridurre l'uso di plastica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Il suolo sopra la discarica diventa permanentemente inutilizzabile per qualsiasi scopo per almeno 100 anni",
+          "feedback": "Non corretto. Il testo non fa questa affermazione specifica sui 100 anni. Molte discariche chiuse vengono trasformate in parchi o aree verdi dopo decenni di monitoraggio.",
+          "riferimento": "📖 ESPLORA — La discarica: non è la fine, è un parcheggio lungo"
         }
       ],
-      "spiegazione": "I plastic credit permettono flessibilità ma rischiano di diventare 'offsetting' (compro crediti invece di ridurre): la stessa critica dei carbon credit. La trasparenza e l'addizionalità sono critiche."
+      "spiegazione": "Una discarica chiusa non è 'finita': 1) la materia organica continua a produrre metano (gas serra potente) per decenni in condizioni anaerobiche, 2) i materiali plastici rimangono praticamente invariati per secoli, 3) il percolato (liquido che si forma dall'acqua che filtra attraverso i rifiuti) può inquinare le falde acquifere se il telo impermeabile si deteriora.",
+      "riferimento_principale": "📖 ESPLORA — La discarica: non è la fine, è un parcheggio lungo"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il testo descrive il termovalorizzatore come preferibile alla discarica, ma con il limite che 'i materiali vengono distrutti'. Quale dilemma sistemico evidenzia questo confronto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Più si investe in termovalorizzatori efficienti, meno si è incentivati a ridurre i rifiuti e a sviluppare infrastrutture di riciclo: l'impianto ha bisogno di rifiuti per funzionare economicamente",
+          "corretto": true,
+          "feedback": "Esatto! Un termovalorizzatore richiede ingenti investimenti fissi (costi di costruzione 500-1000M€). Per ammortizzarli serve una quantità minima garantita di rifiuti. Questo può disincentivare la riduzione dei rifiuti alla fonte e lo sviluppo di filiere di riciclo che 'sottraggono' materia prima all'impianto."
+        },
+        {
+          "id": "b",
+          "testo": "Il termovalorizzatore produce più CO₂ del carbone bruciato nelle centrali elettriche",
+          "feedback": "Non corretto. Il confronto non è tra termovalorizzatore e carbone. Il dilemma è tra termovalorizzatore (recupero energetico immediato ma distruzione del materiale) e investimento in riciclo (più efficiente per i materiali ma richiede infrastrutture diverse).",
+          "riferimento": "📖 ESPLORA — Recupero energetico: la termovalorizzazione"
+        },
+        {
+          "id": "c",
+          "testo": "Il termovalorizzatore è pericoloso per le comunità vicine a causa delle emissioni di diossine e furani",
+          "feedback": "Non corretto (parzialmente rilevante). I moderni termovalorizzatori hanno sistemi di filtraggio avanzati e le emissioni sono regolamentate. Il dilemma sistemico principale non è la sicurezza ma l'incentivo a mantenere i rifiuti invece di ridurli.",
+          "riferimento": "📖 ESPLORA — Recupero energetico: la termovalorizzazione"
+        },
+        {
+          "id": "d",
+          "testo": "La legge europea proibisce di costruire nuovi termovalorizzatori dal 2030 per incentivare il riciclo",
+          "feedback": "Non corretto. Non esiste tale proibizione. La normativa europea regolamenta ma non proibisce i termovalorizzatori. Il dilemma è economico-sistemico, non legale.",
+          "riferimento": "📖 ESPLORA — Recupero energetico: la termovalorizzazione"
+        }
+      ],
+      "spiegazione": "Il dilemma del termovalorizzatore: è meglio della discarica (recupera energia, riduce volume dei rifiuti) ma distrugge i materiali che potrebbero essere riciclati. Il problema sistemico: un impianto da 300-500 M€ deve essere alimentato continuamente per ammortizzare l'investimento. Questo crea un 'bisogno di rifiuti' che può disincentivare la riduzione alla fonte e il riciclo, creando un circolo vizioso.",
+      "riferimento_principale": "📖 ESPLORA — Recupero energetico: la termovalorizzazione"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il testo cita che in Trentino-Alto Adige la raccolta differenziata è all'80%, mentre in alcune zone della Sicilia e Campania è sotto il 40%. Quale fattore strutturale (non solo comportamentale) spiega questa differenza così marcata?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La presenza o assenza di infrastrutture di raccolta (porta-a-porta vs stradale), impianti di trattamento locali, investimenti comunali, e storia industriale del territorio",
+          "corretto": true,
+          "feedback": "Esatto! Il testo evidenzia che i Comuni con alta differenziata usano quasi tutti il porta-a-porta con 5 frazioni. La differenza Nord/Sud non è principalmente culturale o comportamentale: riflette decenni di diversi investimenti pubblici nelle infrastrutture di raccolta, trattamento e smaltimento."
+        },
+        {
+          "id": "b",
+          "testo": "I cittadini del Nord sono culturalmente più rispettosi dell'ambiente rispetto a quelli del Sud",
+          "feedback": "Non corretto. Il testo non fa affermazioni di carattere culturale/geografico su comportamenti. Le differenze riflettono infrastrutture, sistemi di raccolta, e investimenti pubblici storicamente diversi.",
+          "riferimento": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+        },
+        {
+          "id": "c",
+          "testo": "Il Nord Italia produce meno rifiuti pro capite quindi è più facile raggiungere percentuali elevate di differenziata",
+          "feedback": "Non corretto. Il testo indica circa 490 kg/abitante/anno come media nazionale. Il fattore determinante è il sistema di raccolta (porta-a-porta vs stradale) e le infrastrutture di trattamento, non la quantità prodotta.",
+          "riferimento": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+        },
+        {
+          "id": "d",
+          "testo": "La presenza di ecosistemi naturali nel Nord incentiva comportamenti ambientali più responsabili",
+          "feedback": "Non corretto. Il testo non stabilisce tale correlazione. La differenza è spiegabile con fattori strutturali: investimenti pubblici in infrastrutture di raccolta, sistemi porta-a-porta, e impianti di trattamento locali.",
+          "riferimento": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+        }
+      ],
+      "spiegazione": "La differenza nella raccolta differenziata tra Trentino (80%) e alcune zone del Sud (<40%) riflette principalmente fattori strutturali: sistema di raccolta (porta-a-porta vs stradale), investimenti comunali storici, presenza di impianti di trattamento locali, e storia industriale dei territori. I Comuni con alta differenziata usano quasi universalmente il porta-a-porta con 5 frazioni: un sistema che richiede investimenti nella logistica della raccolta.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'riciclare una tonnellata di carta risparmia circa 17 alberi'. Questa affermazione ha delle limitazioni implicite che la rendono un'approssimazione. Quali sono?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Dipende dalla specie di albero (dimensioni diverse), dal tipo di carta prodotta, e dal fatto che le foreste per carta spesso vengono riforestate: il risparmio effettivo dipende dal contesto della filiera forestale",
+          "corretto": true,
+          "feedback": "Esatto! Il dato di '17 alberi per tonnellata' è una media con limitazioni: 1) le dimensioni degli alberi variano enormemente per specie, 2) il tipo di carta (giornale, cartone, carta patinata) ha rese diverse dalla cellulosa, 3) molte foreste da cellulosa sono piantagioni a ciclo rapido che vengono riforestate."
+        },
+        {
+          "id": "b",
+          "testo": "Non ha limitazioni: il dato di 17 alberi è una misura fisica esatta verificata in laboratorio",
+          "feedback": "Non corretto. Qualsiasi dato medio ha variabilità e limitazioni. Il valore '17 alberi' è una stima media che dipende da molti fattori (specie dell'albero, tipo di carta, condizioni della filiera forestale).",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+        },
+        {
+          "id": "c",
+          "testo": "Non ha limitazioni perché si applica a qualsiasi tipo di carta, dalla carta igienica ai quotidiani",
+          "feedback": "Non corretto. Diversi tipi di carta richiedono diverse qualità di cellulosa e diverse quantità di materia prima. Il dato '17 alberi/tonnellata' è una media che varia per tipo di carta.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+        },
+        {
+          "id": "d",
+          "testo": "La limitazione è che gli alberi 'risparmiati' vengono abbattuti comunque per altri usi",
+          "feedback": "Non corretto (parzialmente vero). La destinazione degli alberi non abbattuti dipende dal contesto forestale. La limitazione principale del dato è la variabilità per specie, dimensione dell'albero e tipo di carta prodotta.",
+          "riferimento": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+        }
+      ],
+      "spiegazione": "Il dato '17 alberi per tonnellata di carta riciclata' è una stima media con limitazioni: 1) la dimensione degli alberi varia enormemente (un pino da 10 anni ≠ una quercia da 100 anni), 2) il tipo di carta influenza la resa (carta patinata ha più fibra di cellulosa per kg rispetto alla carta da giornale), 3) molte foreste per carta sono piantagioni a ciclo rapido riforestate. È un dato utile per comunicare ma non una misura fisica esatta.",
+      "riferimento_principale": "📖 ESPLORA — Come funziona il riciclo della carta e del cartone"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il testo descrive il biogas prodotto in discarica come 'CH₄, un gas serra 80 volte più potente della CO₂ a 20 anni'. Perché bruciarlo (anche solo per produrre energia) è comunque meglio di lasciarlo fuggire nell'atmosfera?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché bruciando il metano si produce CO₂ (CH₄ + 2O₂ → CO₂ + 2H₂O), che ha un potere climalterante 80 volte inferiore al metano stesso, riducendo l'impatto climatico complessivo",
+          "corretto": true,
+          "feedback": "Esatto! CH₄ in atmosfera è 80 volte più potente della CO₂ a 20 anni. Bruciandolo si produce CO₂ (molto meno potente), riducendo drasticamente l'impatto climatico. 1 kg di CH₄ non bruciato = 80 kg CO₂eq. Lo stesso kg di CH₄ bruciato produce ~2,75 kg di CO₂ (reazione stechiometrica). Differenza: 80 vs 2,75 kg CO₂eq."
+        },
+        {
+          "id": "b",
+          "testo": "Perché bruciare il metano lo converte in un materiale solido inerte che non disperde più nell'atmosfera",
+          "feedback": "Non corretto. La combustione del metano produce CO₂ e H₂O, non un solido inerte. Il vantaggio è che CO₂ è molto meno potente come gas serra rispetto al metano.",
+          "riferimento": "📖 ESPLORA — Box Scienze — Biometano e clima"
+        },
+        {
+          "id": "c",
+          "testo": "Perché le fiamme della combustione del metano distruggono anche altri inquinanti presenti nella discarica",
+          "feedback": "Non corretto. La combustione del metano non distrugge necessariamente altri inquinanti nell'area della discarica. Il beneficio climatico è la conversione di CH₄ (potente gas serra) in CO₂ (meno potente).",
+          "riferimento": "📖 ESPLORA — Box Scienze — Biometano e clima"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il metano bruciato non contribuisce all'effetto serra, mentre il metano non bruciato sì",
+          "feedback": "Non corretto (parzialmente). Il metano bruciato produce CO₂ che contribuisce all'effetto serra, ma molto meno del metano non bruciato. L'affermazione 'non contribuisce' è imprecisa.",
+          "riferimento": "📖 ESPLORA — Box Scienze — Biometano e clima"
+        }
+      ],
+      "spiegazione": "Calcolo dell'impatto: 1 kg CH₄ non bruciato = 80 kg CO₂eq (in 20 anni). 1 kg CH₄ bruciato (CH₄ + 2O₂ → CO₂ + 2H₂O): produce 2,75 kg CO₂ = 2,75 kg CO₂eq. Differenza: 80 vs 2,75 kg CO₂eq. Bruciare il metano riduce l'impatto climatico di circa 29 volte rispetto a lasciarlo fuggire. Per questo i pozzi di captazione del biogas nelle discariche sono considerati misure di mitigazione climatica.",
+      "riferimento_principale": "📖 ESPLORA — Box Scienze — Biometano e clima"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Il testo cita Cologno Monzese e i Comuni del Trevigiano che superano il 90% di raccolta differenziata come prova che 'il 100% teorico non è lontanissimo'. Quale limite fisico-materiale impedisce di raggiungere veramente il 100%?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ci sarà sempre una quota di materiali contaminati, compositi, o rotti in modi che li rendono non raccoglibili separatamente o non riciclabili con le tecnologie disponibili",
+          "corretto": true,
+          "feedback": "Esatto! Anche con la migliore raccolta differenziata e i cittadini più virtuosi, ci saranno sempre: materiali compositi non separabili (es. blister farmaceutici: plastica + alluminio incollati), oggetti contaminati oltre il recupero, materiali per cui non esiste filiera di riciclo, e frazioni minuscole non identificabili."
+        },
+        {
+          "id": "b",
+          "testo": "La legge italiana fissa il 70% come limite massimo legale della raccolta differenziata per proteggere le aziende termovalorizzatrici",
+          "feedback": "Non corretto. Non esiste tale limite legale. L'obiettivo europeo era il 70% di preparazione per il riutilizzo e il riciclo dei rifiuti urbani entro il 2025, poi incrementato. Non esiste un limite massimo.",
+          "riferimento": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+        },
+        {
+          "id": "c",
+          "testo": "I materiali riciclati perdono sempre qualità, quindi a un certo punto non possono più essere differenziati",
+          "feedback": "Non corretto. Il limite è fisico-materiale (materiali non separabili, contaminati, non riciclabili), non una proprietà della qualità dei materiali differenziati.",
+          "riferimento": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+        },
+        {
+          "id": "d",
+          "testo": "I sistemi di raccolta differenziata non possono gestire quantità superiori al 90% per limiti logistici degli impianti",
+          "feedback": "Non corretto. Non è un limite logistico degli impianti. Il 100% teorico è impossibile per ragioni materiali: ci sarà sempre una quota non differenziabile per contaminazione, composizione mista, o assenza di filiere specifiche.",
+          "riferimento": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+        }
+      ],
+      "spiegazione": "Il 100% di raccolta differenziata è teoricamente impossibile per ragioni materiali: 1) materiali compositi non separabili (blister farmaceutici, tetrapak, imballaggi multistrato), 2) materiali contaminati oltre il recupero, 3) frazioni per cui non esiste filiera di riciclo economicamente sostenibile, 4) residui minuscoli di lavorazione. L'obiettivo realistico è minimizzare questo residuo, non portarlo a zero.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema di raccolta differenziata in Italia"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Il testo afferma che 'la differenziata non è il problema del cittadino. È il prodotto di un sistema che qualcuno ha progettato.' Come cambia il modo di valutare la responsabilità del singolo verso quella sistemica nella gestione dei rifiuti?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il comportamento del cittadino è necessario ma non sufficiente: senza infrastrutture (impianti di selezione, mercato del riciclato, sistemi di raccolta capillari) anche il cittadino più virtuoso non può garantire il riciclo",
+          "corretto": true,
+          "feedback": "Esatto! L'affermazione ridistribuisce la responsabilità: il cittadino può separare perfettamente i rifiuti, ma se mancano gli impianti di selezione, il mercato del riciclato, o la raccolta differenziata corretta, lo sforzo è inutile. Il sistema deve essere progettato bene: la responsabilità è condivisa tra progettisti del sistema e cittadini."
+        },
+        {
+          "id": "b",
+          "testo": "Il comportamento del cittadino non conta: solo la progettazione industriale del sistema determina i risultati",
+          "feedback": "Non corretto. L'affermazione del testo ('la differenziata è il prodotto di un sistema progettato') non elimina la responsabilità del cittadino: la dice insieme a quella del progettista del sistema. Entrambi sono necessari.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "c",
+          "testo": "Il cittadino è sempre il principale responsabile dei risultati della raccolta differenziata: la progettazione del sistema ha un ruolo marginale",
+          "feedback": "Non corretto. Il testo dice esattamente il contrario: il sistema ben progettato (porta-a-porta, contenitori chiari, frequenza adeguata) è determinante per i risultati. Un sistema mal progettato produce scarsi risultati indipendentemente dalla volontà dei cittadini.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        },
+        {
+          "id": "d",
+          "testo": "Nessuno è responsabile dei risultati della raccolta differenziata: è un fenomeno emergente non controllabile",
+          "feedback": "Non corretto. La responsabilità è attribuibile sia ai progettisti del sistema (infrastrutture, logistica, comunicazione) sia ai cittadini (comportamento corretto nella separazione). Non è un fenomeno non controllabile.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
+        }
+      ],
+      "spiegazione": "L'affermazione 'la differenziata è il prodotto di un sistema progettato' ridistribuisce la responsabilità: non è solo un problema di 'educazione civica' dei cittadini. Il sistema di raccolta (porta-a-porta vs stradale), la frequenza di svuotamento, la chiarezza delle etichette, la presenza di impianti locali di trattamento — tutto questo determina i risultati. Cittadino e progettisti del sistema condividono la responsabilità.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030"
     }
   ]
 }

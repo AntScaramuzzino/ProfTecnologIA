@@ -1,259 +1,654 @@
 {
   "mc_id": "MC-DIS-2-02",
-  "titolo": "Assonometria cavaliera e isometrica",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cos'è un disegno assonometrico?",
+      "domanda": "Cos'è l'assonometria e qual è la sua differenza principale rispetto alla proiezione ortogonale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un disegno con tre viste separate",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'assonometria usa meno viste della proiezione ortogonale — di solito solo una invece di tre",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche la proiezione ortogonale può usare una sola vista per oggetti semplici. La differenza fondamentale è che l'assonometria mostra tre facce contemporaneamente su un solo piano.",
+          "riferimento": "📖 ESPLORA — Cos'è l'assonometria — la logica di base"
         },
         {
           "id": "b",
-          "testo": "Una rappresentazione tridimensionale di un oggetto su un piano 2D usando assi obliqui",
+          "testo": "L'assonometria proietta l'oggetto su un unico piano mostrando tre facce contemporaneamente, dando una percezione tridimensionale; la proiezione ortogonale mostra una faccia per volta ma con misure esatte",
           "corretto": true,
-          "feedback": "Esatto! L'assonometria è la rappresentazione 3D più usata nella tecnica: mostra larghezza, altezza e profondità in un unico disegno senza distorsione prospettica."
+          "feedback": "Esatto! L'assonometria mostra profondità, altezza e larghezza in un solo disegno — più intuitiva. La proiezione ortogonale mostra una faccia per volta ma ogni dimensione è esatta e misurabile."
         },
         {
           "id": "c",
-          "testo": "Una vista in sezione di un oggetto",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'assonometria è una versione semplificata della prospettiva, usata quando non si conosce la distanza dell'osservatore",
+          "corretto": false,
+          "feedback": "Non è corretto. L'assonometria e la prospettiva sono sistemi diversi. Nell'assonometria le rette parallele rimangono parallele (nessun punto di fuga); nella prospettiva convergono verso punti di fuga.",
+          "riferimento": "📖 ESPLORA — Cos'è l'assonometria — la logica di base"
         },
         {
           "id": "d",
-          "testo": "Un disegno in prospettiva con punto di fuga",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'assonometria è usata solo per oggetti simmetrici; la proiezione ortogonale per qualsiasi oggetto",
+          "corretto": false,
+          "feedback": "Non è corretto. L'assonometria si applica a qualsiasi forma — simmetrica o no. Non è limitata agli oggetti simmetrici.",
+          "riferimento": "📖 ESPLORA — Cos'è l'assonometria — la logica di base"
         }
       ],
-      "spiegazione": "L'assonometria è la rappresentazione 3D più usata nella tecnica: mostra larghezza, altezza e profondità in un unico disegno senza distorsione prospettica."
+      "spiegazione": "L'assonometria proietta l'oggetto su un unico piano ruotando e inclinando gli assi cartesiani dell'oggetto secondo angoli precisi. Risultato: si vedono tre facce contemporaneamente, l'oggetto sembra tridimensionale. A differenza della proiezione ortogonale (che mostra una faccia per volta con misure esatte) e della prospettiva (che distorce), l'assonometria mantiene misure leggibili e dà percezione 3D.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è l'assonometria — la logica di base"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Nell'assonometria cavaliera obliqua, a che angolo sono proiettate le profondità?",
+      "domanda": "Nell'assonometria cavaliera obliqua, qual è il fattore di riduzione sull'asse obliquo (y)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "90°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "0,816 — lo stesso dell'assonometria isometrica rigorosa",
+          "corretto": false,
+          "feedback": "Non è corretto. 0,816 è il fattore di riduzione dell'isometria rigorosa. Nella cavaliera il fattore è 0,5: la profondità viene ridotta alla metà.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
         },
         {
           "id": "b",
-          "testo": "30°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "0,5 — la profondità viene ridotta alla metà: se un oggetto è profondo 60 mm, lungo l'asse obliquo si disegna come se fosse profondo 30 mm",
+          "corretto": true,
+          "feedback": "Esatto! Nella cavaliera, l'asse y (profondità) a 45° subisce una riduzione del 50%: misura sul disegno = misura reale × 0,5. Gli assi x e z mantengono le misure reali (fattore 1)."
         },
         {
           "id": "c",
-          "testo": "45°",
-          "corretto": true,
-          "feedback": "Esatto! Nell'assonometria cavaliera obliqua le profondità sono proiettate a 45° rispetto all'asse orizzontale."
+          "testo": "1 — la profondità viene mantenuta uguale alla misura reale, come per gli altri assi",
+          "corretto": false,
+          "feedback": "Non è corretto. Se la profondità fosse mantenuta intera a 45°, l'oggetto sembrerebbe schiacciato e innaturale. La riduzione a 0,5 è intenzionale per un aspetto visivo più corretto.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
         },
         {
           "id": "d",
-          "testo": "60°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "2 — la profondità viene raddoppiata per compensare la distorsione visiva dell'angolo obliquo",
+          "corretto": false,
+          "feedback": "Non è corretto. Raddoppiare la profondità renderebbe l'oggetto enormemente deformato. Il fattore 0,5 è scelto per un aspetto visivamente equilibrato.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
         }
       ],
-      "spiegazione": "Nell'assonometria cavaliera obliqua le profondità sono proiettate a 45° rispetto all'asse orizzontale. Le profondità si riducono della metà."
+      "spiegazione": "Nell'assonometria cavaliera: asse x (larghezza) a 0° con fattore 1 (misure reali), asse z (altezza) a 90° con fattore 1, asse y (profondità) a 45° con fattore 0,5 (metà della misura reale). La riduzione del 50% sull'asse obliquo è intenzionale: se si mantenesse la misura intera a 45°, l'oggetto sembrerebbe schiacciato e innaturale.",
+      "riferimento_principale": "📖 ESPLORA — Assonometria cavaliera obliqua"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "In un'assonometria isometrica, quali angoli formano i tre assi tra loro?",
+      "domanda": "Nell'assonometria isometrica (semplificata, quella usata in pratica), qual è il fattore di riduzione degli assi?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "30°, 60°, 90°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "0,5 sull'asse y, 1 sugli altri assi — come nella cavaliera",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo è il fattore della cavaliera. Nell'isometrica semplificata (quella usata in pratica) le misure si riportano in scala reale su tutti e tre gli assi: fattore 1 su tutti.",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
         },
         {
           "id": "b",
-          "testo": "45°, 45°, 90°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "1 su tutti e tre gli assi — le misure si riportano in scala reale su x, y e z",
+          "corretto": true,
+          "feedback": "Esatto! L'isometrica semplificata usa fattore 1 su tutti gli assi. Il disegno risultante è leggermente ingrandito rispetto all'isometria rigorosa (fattore 0,816), ma le proporzioni tra le tre dimensioni sono corrette."
         },
         {
           "id": "c",
-          "testo": "120° tra ogni coppia di assi (asse verticale a 90°, laterali a 30° dall'orizzontale)",
-          "corretto": true,
-          "feedback": "Esatto! L'isometria usa assi a 120° tra loro: l'asse verticale è a 90°, i due orizzontali a 30° dall'orizzontale."
+          "testo": "0,816 su tutti e tre gli assi — la riduzione uniforme dell'isometrica rigorosa",
+          "corretto": false,
+          "feedback": "Non è corretto. L'isometrica rigorosa usa 0,816, ma in pratica si usa quasi sempre l'isometrica semplificata con fattore 1. Il testo dice: 'quasi tutti i manuali scolastici italiani usano l'isometrica semplificata.'",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
         },
         {
           "id": "d",
-          "testo": "Tutti e tre a 90°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "√2/2 ≈ 0,707 su tutti e tre gli assi — derivato dalla geometria dei cubi isometrici",
+          "corretto": false,
+          "feedback": "Non è corretto. 0,707 (= √2/2) non è il fattore dell'isometrica semplificata. Il fattore pratico è 1 su tutti gli assi.",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
         }
       ],
-      "spiegazione": "L'isometria usa assi a 120° tra loro: l'asse verticale è a 90°, i due orizzontali a 30° dall'orizzontale. Le misure sugli assi non si deformano."
+      "spiegazione": "L'isometrica semplificata (quella usata in pratica): fattore di riduzione 1 su tutti e tre gli assi (x, y, z). Le misure si riportano in scala reale. Il disegno è leggermente ingrandito rispetto all'isometrica rigorosa (fattore 0,816), ma le proporzioni tra le tre dimensioni sono corrette. Costruzione: asse z verticale, assi x e y a 30° rispetto all'orizzontale.",
+      "riferimento_principale": "📖 ESPLORA — Assonometria isometrica"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Perché IKEA usa l'assonometria cavaliera (e non la prospettiva o l'isometrica) nelle istruzioni di montaggio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché l'assonometria cavaliera è la più moderna e quella con il miglior aspetto estetico",
+          "corretto": false,
+          "feedback": "Non è corretto. La scelta di IKEA non è estetica, ma funzionale: la cavaliera mostra la faccia frontale senza deformazioni, il che è essenziale per capire come incastrare i pezzi.",
+          "riferimento": "📖 ESPLORA — Caso studio — IKEA e l'assonometria cavaliera"
+        },
+        {
+          "id": "b",
+          "testo": "Perché la faccia frontale dell'oggetto non subisce deformazioni nella cavaliera — un pannello rettangolare appare rettangolare, un foro tondo appare tondo — essenziale per capire come incastrare i pezzi",
+          "corretto": true,
+          "feedback": "Esatto! Il testo dice: 'la cavaliera ha un vantaggio pratico decisivo: la faccia frontale dell'oggetto non subisce nessuna deformazione. Per chi deve capire come incastrare due pezzi, vedere la forma reale è più importante che avere bella tridimensionalità.'"
+        },
+        {
+          "id": "c",
+          "testo": "Perché la cavaliera non richiede strumenti di disegno — si può costruire a mano libera",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche la cavaliera richiede strumenti (riga, squadra a 45°). La ragione della scelta IKEA è funzionale: la faccia frontale non si deforma.",
+          "riferimento": "📖 ESPLORA — Caso studio — IKEA e l'assonometria cavaliera"
+        },
+        {
+          "id": "d",
+          "testo": "Perché IKEA è svedese e la Svezia ha una norma che richiede la cavaliera nelle istruzioni di montaggio",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste una norma svedese specifica sulle istruzioni di montaggio. IKEA ha scelto la cavaliera per ragioni funzionali di usabilità.",
+          "riferimento": "📖 ESPLORA — Caso studio — IKEA e l'assonometria cavaliera"
+        }
+      ],
+      "spiegazione": "IKEA sceglie la cavaliera per una ragione funzionale precisa: nella cavaliera, la faccia frontale dell'oggetto non subisce deformazioni. Rettangoli appaiono rettangoli; cerchi appaiono cerchi. In prospettiva le forme si deformano con la distanza; in isometrica i rettangoli diventano parallelogrammi. Per capire come incastrare i pezzi, vedere la forma reale è fondamentale.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio — IKEA e l'assonometria cavaliera"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Qual è l'angolo dell'asse obliquo nell'assonometria cavaliera e quale squadra si usa per tracciarlo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "30° rispetto all'orizzontale — si usa la squadra 60°-30°",
+          "corretto": false,
+          "feedback": "Non è corretto. 30° è l'angolo degli assi x e y nell'isometrica, non nella cavaliera. Nella cavaliera l'asse obliquo è a 45°.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
+        },
+        {
+          "id": "b",
+          "testo": "45° rispetto all'orizzontale — si usa la squadra a 45°",
+          "corretto": true,
+          "feedback": "Esatto! Nella cavaliera: asse x a 0° (orizzontale), asse z a 90° (verticale), asse y (profondità) a 45° obliquo verso l'alto-destra. La squadra a 45° è lo strumento naturale per tracciare l'asse y."
+        },
+        {
+          "id": "c",
+          "testo": "60° rispetto all'orizzontale — si usa il rapportatore",
+          "corretto": false,
+          "feedback": "Non è corretto. L'asse obliquo della cavaliera è a 45°, non 60°. Il rapportatore non è necessario: la squadra a 45° traccia direttamente l'angolo corretto.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
+        },
+        {
+          "id": "d",
+          "testo": "L'angolo può variare liberamente — l'importante è che i tre assi siano distinti tra loro",
+          "corretto": false,
+          "feedback": "Non è corretto. Nella cavaliera l'angolo dell'asse obliquo è fisso a 45°. Non è variabile: è parte della definizione della cavaliera come tipo specifico di assonometria.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
+        }
+      ],
+      "spiegazione": "Nell'assonometria cavaliera obliqua: asse x (larghezza) a 0° orizzontale, asse z (altezza) a 90° verticale, asse y (profondità) a 45° obliquo verso l'alto-destra. Lo strumento naturale per tracciare l'asse a 45° è la squadra a 45°. Il fattore di riduzione sull'asse y è 0,5 (metà della misura reale).",
+      "riferimento_principale": "📖 ESPLORA — Assonometria cavaliera obliqua"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa è il 'metodo del box' per disegnare oggetti compositi in assonometria?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un sistema che divide l'oggetto in scatole di cartone per la spedizione, calcolandone il volume",
+          "corretto": false,
+          "feedback": "Non è corretto. Il metodo del box è una tecnica di disegno, non di imballaggio. Il 'box' è il parallelepipedo immaginario che contiene l'oggetto.",
+          "riferimento": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+        },
+        {
+          "id": "b",
+          "testo": "Si immagina il volume totale dell'oggetto come un parallelepipedo contenitore, lo si disegna in assonometria, poi si 'scolpisce' l'oggetto rimuovendo e aggiungendo volumi",
+          "corretto": true,
+          "feedback": "Esatto! I passi: (1) parallelepipedo che contiene l'oggetto; (2) disegno del box in assonometria; (3) scolpire tagliando angoli, aggiungendo volumi sporgenti, rimuovendo volumi mancanti; (4) cancellare le linee non appartenenti all'oggetto."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema che disegna prima tutti i bordi dell'oggetto e poi aggiunge le superfici visibili",
+          "corretto": false,
+          "feedback": "Non è corretto. Il metodo del box parte da un parallelepipedo contenitore e lo 'scolpisce' per ottenere la forma finale. Non si parte dai bordi.",
+          "riferimento": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+        },
+        {
+          "id": "d",
+          "testo": "Un sistema per disegnare solo oggetti che hanno forma di scatola (parallelepipedi) — non si applica a forme curve",
+          "corretto": false,
+          "feedback": "Non è corretto. Il metodo del box si applica a qualsiasi forma: forme curve si inseriscono nel box come approssimazione e poi si rifiniscono. Anche i cilindri si costruiscono partendo da un box.",
+          "riferimento": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+        }
+      ],
+      "spiegazione": "Il metodo del box: (1) immagina il parallelepipedo minimo che contiene l'oggetto; (2) disegnalo in assonometria; (3) 'scolpisci' aggiungendo e sottraendo volumi dall'esterno verso l'interno; (4) cancella le linee che non appartengono all'oggetto finale; (5) tratteggia gli spigoli nascosti. Funziona per qualsiasi forma composita.",
+      "riferimento_principale": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Qual è la differenza principale tra assonometria cavaliera e isometrica?",
+      "domanda": "Un oggetto ha profondità reale di 40 mm. In cavaliera lo disegno con fattore 0,5 → 20 mm sull'asse obliquo. In isometrica (semplificata) quanti mm lungo l'asse corrispondente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'isometrica è più semplice da disegnare",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "20 mm — uguale alla cavaliera",
+          "corretto": false,
+          "feedback": "Non è corretto. In isometrica semplificata il fattore è 1 su tutti gli assi. La profondità di 40 mm si riporta come 40 mm (non ridotta).",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
         },
         {
           "id": "b",
-          "testo": "Nella cavaliera le profondità si dimezzano e si proiettano a 45°; nell'isometrica tutte le misure sugli assi mantengono il rapporto reale (fattore 1)",
+          "testo": "40 mm — nell'isometrica semplificata il fattore è 1 su tutti gli assi",
           "corretto": true,
-          "feedback": "Esatto! L'isometrica non deforma le misure sugli assi: ciò che è 10cm nel reale è 10cm nel disegno (sugli assi)."
+          "feedback": "Esatto! Isometrica semplificata: fattore 1 su tutti gli assi → la profondità di 40 mm si riporta come 40 mm lungo l'asse isometrico corrispondente. Cavaliera: 40 × 0,5 = 20 mm."
         },
         {
           "id": "c",
-          "testo": "La cavaliera usa tre viste, l'isometrica una sola",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "32,6 mm — 40 mm × 0,816 (fattore isometrico rigoroso)",
+          "corretto": false,
+          "feedback": "Non è corretto. 0,816 è il fattore dell'isometrica rigorosa, ma in pratica si usa l'isometrica semplificata con fattore 1. Il testo specifica: 'quasi tutti i manuali scolastici italiani usano l'isometrica semplificata.'",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
         },
         {
           "id": "d",
-          "testo": "L'isometrica è solo per oggetti cilindrici",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "28,3 mm — 40 mm × (√2/2)",
+          "corretto": false,
+          "feedback": "Non è corretto. √2/2 ≈ 0,707 non è il fattore dell'isometrica semplificata. Il fattore pratico è 1.",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
         }
       ],
-      "spiegazione": "L'isometrica non deforma le misure sugli assi: ciò che è 10cm nel reale è 10cm nel disegno (sugli assi). La cavaliera deforma la profondità a metà."
+      "spiegazione": "Confronto tra i due tipi: Cavaliera (asse y a 45°, fattore 0,5): 40 mm → 20 mm. Isometrica semplificata (assi a 30°, fattore 1 su tutti): 40 mm → 40 mm. L'isometrica semplificata non riduce le misure — le riporta reali su tutti e tre gli assi. Il disegno risultante è proporzionalmente corretto tra le tre dimensioni.",
+      "riferimento_principale": "📖 ESPLORA — Assonometria isometrica"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Perché nei disegni IKEA si usa l'assonometria cavaliera obliqua?",
+      "domanda": "Perché un cerchio in assonometria cavaliera diventa un'ellisse se è sul piano orizzontale (xy), ma rimane un cerchio se è sul piano frontale (xz)?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché è più moderna dell'isometrica",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la cavaliera usa un asse obliquo a 45° — l'angolo distorce i cerchi in tutti i piani tranne quello frontale",
+          "corretto": false,
+          "feedback": "Non è del tutto corretto. La ragione è più specifica: il piano frontale (xz) non subisce alcuna deformazione nella cavaliera — la faccia frontale rimane invariata. Solo i piani che includono l'asse obliquo y distorcono i cerchi.",
+          "riferimento": "📖 ESPLORA — Le ellissi: come si disegnano i cerchi in assonometria"
         },
         {
           "id": "b",
-          "testo": "Perché la faccia frontale dell'oggetto appare in forma reale (non deformata), facilitando il riconoscimento del prodotto e delle sue proporzioni principali",
+          "testo": "Perché il piano frontale (xz) mantiene le proporzioni reali nella cavaliera (fattori 1 e 1), mentre il piano orizzontale (xy) include l'asse y con fattore 0,5 — la riduzione distorce il cerchio in ellisse",
           "corretto": true,
-          "feedback": "Esatto! La faccia frontale in vista reale è intuitiva: il cliente vede il mobile come lo vedrà davanti a sé."
+          "feedback": "Esatto! Il piano xz usa assi x (fattore 1) e z (fattore 1): nessuna distorsione, il cerchio rimane cerchio. Il piano xy usa assi x (fattore 1) e y (fattore 0,5): la riduzione del 50% sull'asse y trasforma il cerchio in ellisse."
         },
         {
           "id": "c",
-          "testo": "Perché è più veloce da disegnare con il CAD",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché i cerchi orizzontali non sono importanti nel disegno tecnico e si approssimano con ellissi per semplicità",
+          "corretto": false,
+          "feedback": "Non è corretto. I cerchi orizzontali non si 'approssimano' per semplicità: diventano effettivamente ellissi per una proprietà geometrica precisa della proiezione assonometrica.",
+          "riferimento": "📖 ESPLORA — Le ellissi: come si disegnano i cerchi in assonometria"
         },
         {
           "id": "d",
-          "testo": "Perché è l'unico tipo permesso dall'UE per i manuali",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché la squadra a 45° distorce i cerchi quando si usano per tracciare gli archi che li compongono",
+          "corretto": false,
+          "feedback": "Non è corretto. La distorsione non dipende dallo strumento (squadra a 45°). È una proprietà geometrica della proiezione: i cerchi nei piani che includono l'asse obliquo diventano ellissi.",
+          "riferimento": "📖 ESPLORA — Le ellissi: come si disegnano i cerchi in assonometria"
         }
       ],
-      "spiegazione": "La faccia frontale in vista reale è intuitiva: il cliente vede il mobile come lo vedrà davanti a sé. Le profondità deformate sono accettabili per un manuale di montaggio."
+      "spiegazione": "Nella cavaliera, il piano frontale xz ha entrambi i fattori pari a 1: qualsiasi figura su questo piano mantiene le sue proporzioni reali → il cerchio rimane cerchio. Il piano orizzontale xy include l'asse y con fattore 0,5: la dimensione lungo y si riduce della metà → il cerchio si 'schiaccia' in un'ellisse con asse minore = raggio × 0,5 × sin(45°).",
+      "riferimento_principale": "📖 ESPLORA — Le ellissi: come si disegnano i cerchi in assonometria"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Come si disegnano i cerchi nell'assonometria isometrica?",
+      "domanda": "Il collegamento STEM dice che nell'assonometria 'le linee parallele nell'oggetto reale rimangono parallele nel disegno'. Perché questa è una proprietà matematicamente importante?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Come cerchi normali, senza deformazione",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché rende più facile disegnare a mano senza commettere errori",
+          "corretto": false,
+          "feedback": "Non è corretto. La facilità di esecuzione è un vantaggio pratico, ma non la proprietà matematica fondamentale. La proprietà è che l'assonometria è una proiezione parallela, non conica.",
+          "riferimento": "🔢 Collegamento STEM — Geometria euclidea"
         },
         {
           "id": "b",
-          "testo": "Come ellissi: il cerchio viene proiettato e deformato in un'ellisse i cui assi dipendono dall'orientamento del piano",
+          "testo": "Perché distingue l'assonometria dalla prospettiva (proiezione conica): nell'assonometria le misure sono leggibili direttamente sugli assi, nella prospettiva le linee convergono e le misure non si leggono direttamente",
           "corretto": true,
-          "feedback": "Esatto! Un cerchio su un piano isometrico diventa un'ellisse."
+          "feedback": "Esatto! Il testo dice: 'l'assonometria conserva il parallelismo: è una proiezione parallela (o cilindrica), non una proiezione centrale (conica). Questa proprietà matematica è ciò che rende le misure leggibili.' Le misure lungo gli assi si leggono direttamente."
         },
         {
           "id": "c",
-          "testo": "Come esagoni approssimati",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché permette di calcolare l'area e il volume dell'oggetto direttamente dal disegno assonometrico",
+          "corretto": false,
+          "feedback": "Non è corretto. L'area e il volume non si calcolano facilmente da un disegno assonometrico (a meno che non si conosca il fattore di riduzione e lo si compensi). La proprietà rilevante è la leggibilità delle misure lineari sugli assi.",
+          "riferimento": "🔢 Collegamento STEM — Geometria euclidea"
         },
         {
           "id": "d",
-          "testo": "I cerchi non si possono rappresentare in isometria",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché dimostra che l'assonometria è superiore alla prospettiva per qualsiasi uso",
+          "corretto": false,
+          "feedback": "Non è corretto. I due sistemi hanno scopi diversi. L'assonometria è migliore per la misurabilità; la prospettiva è migliore per la percezione visiva realistica. Non c'è un sistema 'superiore' in assoluto.",
+          "riferimento": "🔢 Collegamento STEM — Geometria euclidea"
         }
       ],
-      "spiegazione": "Un cerchio su un piano isometrico diventa un'ellisse. La deformazione dipende dall'orientamento (piano XY, XZ o YZ). Si costruisce con il metodo 'dei 4 centri'."
+      "spiegazione": "Il testo spiega: 'l'assonometria conserva il parallelismo: è una proiezione parallela (cilindrica), non una proiezione centrale (conica).' La conseguenza pratica: se una linea è parallela all'asse x, la sua lunghezza nel disegno corrisponde alla misura reale (o alla misura scalata). Questo è il motivo per cui le misure si leggono direttamente sugli assi — proprietà che la prospettiva non ha.",
+      "riferimento_principale": "🔢 Collegamento STEM — Geometria euclidea"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'prospettiva' e come si distingue dall'assonometria?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Tinkercad è un software CAD 3D. Come si collega con l'assonometria che impari a mano?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sono sinonimi in ingegneria",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tinkercad sostituisce completamente l'assonometria a mano: chi usa il software non ha più bisogno di imparare il metodo manuale",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo dice il contrario: 'guardare la vista isometrica di Tinkercad e sapere disegnare a mano l'assonometria sono la stessa competenza, espressa con strumenti diversi.'",
+          "riferimento": "🔍 OSSERVA — Il caso: Tinkercad e il passaggio dal 2D al 3D"
         },
         {
           "id": "b",
-          "testo": "Nella prospettiva le parallele convergono verso punti di fuga imitando la percezione visiva umana; nell'assonometria restano parallele. La prospettiva è più realistica, l'assonometria più misurabile",
+          "testo": "Tinkercad mostra di default la vista isometrica: chi sa costruire l'assonometria a mano capisce cosa sta guardando nel software e viceversa — la stessa competenza con strumenti diversi",
           "corretto": true,
-          "feedback": "Esatto! L'assonometria è misurabile (puoi ricavare dimensioni reali)."
+          "feedback": "Esatto! Il testo dice: 'Guardare la vista isometrica di Tinkercad e sapere disegnare a mano l'assonometria sono la stessa competenza, espressa con strumenti diversi. Chi sa costruire a mano capisce immediatamente cosa sta guardando nel software 3D.'"
         },
         {
           "id": "c",
-          "testo": "La prospettiva è solo per disegno artistico",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tinkercad usa solo l'assonometria cavaliera, non l'isometrica — quindi chi ha imparato la cavaliera a mano può usarlo immediatamente",
+          "corretto": false,
+          "feedback": "Non è corretto. Tinkercad mostra la vista isometrica per default, non la cavaliera. La comprensione di entrambi i tipi di assonometria aiuta a lavorare con il software.",
+          "riferimento": "🔍 OSSERVA — Il caso: Tinkercad e il passaggio dal 2D al 3D"
         },
         {
           "id": "d",
-          "testo": "La prospettiva usa solo due assi",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Tinkercad usa la prospettiva 3D — non le assonometrie che si imparano a mano",
+          "corretto": false,
+          "feedback": "Non è corretto. Tinkercad usa la proiezione isometrica come vista di default per la navigazione 3D. Non usa la prospettiva tradizionale con punti di fuga.",
+          "riferimento": "🔍 OSSERVA — Il caso: Tinkercad e il passaggio dal 2D al 3D"
         }
       ],
-      "spiegazione": "L'assonometria è misurabile (puoi ricavare dimensioni reali). La prospettiva è più naturale visivamente ma non misurabile direttamente. In tecnica si usa assonometria; in architettura si usa entrambe."
+      "spiegazione": "Il testo stabilisce la continuità: 'Guardare la vista isometrica di Tinkercad e sapere disegnare a mano l'assonometria sono la stessa competenza, espressa con strumenti diversi.' Imparare l'assonometria a mano non è obsoleto nell'era del CAD: è comprendere il principio che il software implementa. Chi ha la competenza manuale capisce meglio il software 3D.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: Tinkercad e il passaggio dal 2D al 3D"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'assonometria militare' e in quali ambiti si usa?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Albrecht Dürer (1471-1528) è citato come precursore delle assonometrie tecniche. Perché il suo lavoro è rilevante oggi?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una tecnica di disegno per veicoli militari",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché ha inventato l'assonometria isometrica moderna con i suoi trattati matematici",
+          "corretto": false,
+          "feedback": "Non è corretto. L'assonometria isometrica moderna come sistema formalizzato è del XIX secolo (William Farish, 1820). Dürer ha esplorato la geometria della rappresentazione spaziale, ma non ha formalizzato l'isometrica.",
+          "riferimento": "📖 ESPLORA — Box Storia — Albrecht Dürer e la prospettiva geometrica"
         },
         {
           "id": "b",
-          "testo": "Un tipo di assonometria obliqua in cui la pianta è vista dall'alto in forma reale (non deformata) e le altezze sono proiettate verticalmente: usata in urbanistica, planimetrie e videogiochi isometrici",
+          "testo": "Perché voleva capire le regole matematiche della percezione della profondità — la stessa domanda che sta alla base delle assonometrie moderne, esplorando la geometria della rappresentazione spaziale",
           "corretto": true,
-          "feedback": "Esatto! L'assonometria militare (o a cavallerizza) mostra la pianta vera e aggiunge le altezze."
+          "feedback": "Esatto! Il testo dice: 'La differenza tra un artista del Rinascimento e un progettista CAD di oggi è minore di quanto sembri: entrambi stanno risolvendo lo stesso problema — la rappresentazione della profondità su un piano — con strumenti diversi ma con la stessa logica geometrica.'"
         },
         {
           "id": "c",
-          "testo": "Una assonometria con angoli di 60°",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché ha disegnato le prime tavole tecniche standardizzate usate ancora oggi nell'industria tedesca",
+          "corretto": false,
+          "feedback": "Non è corretto. Le tavole tecniche standardizzate moderne sono invenzioni del XIX-XX secolo. Dürer era un artista e teorico, non un ingegnere industriale.",
+          "riferimento": "📖 ESPLORA — Box Storia — Albrecht Dürer e la prospettiva geometrica"
         },
         {
           "id": "d",
-          "testo": "La stessa dell'assonometria cavaliera con diverso nome",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "Perché ha dimostrato matematicamente che l'assonometria è superiore alla prospettiva per il disegno tecnico",
+          "corretto": false,
+          "feedback": "Non è corretto. Dürer non dimostrò la superiorità di un sistema sull'altro. Studiava i principi della percezione e della rappresentazione geometrica, non la comparazione dei sistemi tecnici.",
+          "riferimento": "📖 ESPLORA — Box Storia — Albrecht Dürer e la prospettiva geometrica"
         }
       ],
-      "spiegazione": "L'assonometria militare (o a cavallerizza) mostra la pianta vera e aggiunge le altezze. SimCity e molti giochi strategici usano questa proiezione."
+      "spiegazione": "Dürer (1471-1528) è rilevante perché la sua domanda — 'quali regole matematiche governano come l'occhio percepisce la profondità?' — è la stessa domanda alla base di tutti i sistemi di rappresentazione spaziale, incluse le assonometrie moderne. 'La differenza tra un artista del Rinascimento e un progettista CAD di oggi è minore di quanto sembri: la stessa logica geometrica, strumenti diversi.'",
+      "riferimento_principale": "📖 ESPLORA — Box Storia — Albrecht Dürer e la prospettiva geometrica"
     },
     {
-      "livello": "A",
-      "domanda": "Quando è preferibile usare l'assonometria rispetto alle proiezioni ortogonali?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "La tabella di confronto cavaliera/isometrica dice che la cavaliera ha 'impatto visivo più inclinato' e l'isometrica è 'più equilibrata'. Cosa significa praticamente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sempre: l'assonometria è sempre superiore",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La cavaliera è inclinata fisicamente sul foglio; l'isometrica è dritta",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambe le assonometrie sono disegnate su un foglio piano. 'Inclinato' si riferisce all'effetto visivo percepito — non all'orientamento fisico del foglio.",
+          "riferimento": "📖 ESPLORA — Confronto tra i due tipi: quando scegliere quale"
         },
         {
           "id": "b",
-          "testo": "Quando si vuole comunicare la forma 3D in modo immediato a chi non sa leggere le proiezioni ortogonali: clienti, studenti, presentazioni",
+          "testo": "La cavaliera enfatizza visivamente la faccia frontale (le altre due sembrando secondarie per effetto dell'asse a 45°); l'isometrica mostra le tre facce con pari enfasi grazie agli assi simmetrici a 30°",
           "corretto": true,
-          "feedback": "Esatto! Proiezioni ortogonali sono precise e complete ma richiedono training."
+          "feedback": "Esatto! Nella cavaliera, la faccia frontale è inalterata e domina visivamente; le altre due sembrano 'aggiunte'. Nell'isometrica, i tre assi a 120° tra loro danno pari importanza alle tre facce."
         },
         {
           "id": "c",
-          "testo": "Solo per oggetti piccoli",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "La cavaliera dà un effetto simile alla prospettiva con punti di fuga; l'isometrica è più formale e tecnica",
+          "corretto": false,
+          "feedback": "Non è corretto. La cavaliera non crea effetti di punti di fuga (quella è la prospettiva). Sia cavaliera che isometrica sono proiezioni parallele senza punti di fuga.",
+          "riferimento": "📖 ESPLORA — Confronto tra i due tipi: quando scegliere quale"
         },
         {
           "id": "d",
-          "testo": "L'assonometria non si usa in ambito professionale",
-          "feedback": "Rileggi la sezione per approfondire."
+          "testo": "L'impatto visivo non è rilevante nel disegno tecnico: conta solo la precisione delle misure",
+          "corretto": false,
+          "feedback": "Non è corretto. La scelta tra cavaliera e isometrica dipende anche dall'effetto visivo desiderato: cavaliera quando si vuole enfatizzare la faccia frontale, isometrica quando si vogliono le tre facce con pari importanza.",
+          "riferimento": "📖 ESPLORA — Confronto tra i due tipi: quando scegliere quale"
         }
       ],
-      "spiegazione": "Proiezioni ortogonali sono precise e complete ma richiedono training. L'assonometria è immediata ma non completamente misurabile. Si usano insieme: 3 viste + assonometria per chiarezza."
+      "spiegazione": "Nella cavaliera (asse y a 45°, fattore 0,5): la faccia frontale xz è intatta e domina, le altre sembrano aggiunto laterale. Impatto visivo: asimmetrico, la faccia frontale 'comanda'. Nell'isometrica (assi a 120° tra loro, fattore 1): le tre facce hanno pari importanza visiva — l'oggetto sembra 'sospeso' nello spazio in modo equilibrato.",
+      "riferimento_principale": "📖 ESPLORA — Confronto tra i due tipi: quando scegliere quale"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un designer deve presentare un telefono a un cliente non tecnico. Quale sistema di rappresentazione scegliere e perché?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Proiezione ortogonale, perché mostra tutte le dimensioni esatte e il cliente può verificarle",
+          "corretto": false,
+          "feedback": "Non è corretto. Un cliente non tecnico fatica a ricostruire la forma 3D da tre viste separate. La proiezione ortogonale è per chi deve costruire, non per chi deve approvare il design.",
+          "riferimento": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
+        },
+        {
+          "id": "b",
+          "testo": "Prospettiva (o assonometria di alta qualità), perché comunica l'aspetto visivo dell'oggetto in modo intuitivo — il cliente deve capire come sarà il prodotto, non costruirlo",
+          "corretto": true,
+          "feedback": "Esatto! La regola del testo: 'prospettiva per convincere.' Il cliente non ha bisogno di misure precise — ha bisogno di capire come apparirà il telefono. La prospettiva simula la visione reale."
+        },
+        {
+          "id": "c",
+          "testo": "Assonometria cavaliera, perché è la più facile da capire per chiunque grazie alla faccia frontale invariata",
+          "corretto": false,
+          "feedback": "Non è corretto (anche se non è sbagliato). La prospettiva è ancora più intuitiva della cavaliera per un non tecnico — simula la visione reale. La cavaliera rimane un sistema tecnico.",
+          "riferimento": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
+        },
+        {
+          "id": "d",
+          "testo": "Nessun sistema di disegno: si usa direttamente un prototipo fisico",
+          "corretto": false,
+          "feedback": "Non è corretto. I prototipi fisici sono utili ma costosi e richiedono tempo. I sistemi di rappresentazione visiva (prospettiva, render digitale) permettono di comunicare il design prima di produrre un prototipo.",
+          "riferimento": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
+        }
+      ],
+      "spiegazione": "La regola pratica del testo: 'proiezione ortogonale per costruire, assonometria per spiegare, prospettiva per convincere.' Per presentare a un cliente non tecnico si usa la prospettiva (o un render digitale): simula la visione naturale, comunica l'aspetto finale del prodotto, è immediatamente comprensibile senza formazione tecnica. Il cliente deve approvare, non costruire.",
+      "riferimento_principale": "📖 ESPLORA — Tre sistemi di rappresentazione: quando si usa quale"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Stai costruendo in assonometria cavaliera un parallelepipedo 80×60×50 mm (larghezza × profondità × altezza). Quali misure riporti lungo i tre assi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Asse x: 80 mm; asse y (obliquo 45°): 60 mm; asse z: 50 mm",
+          "corretto": false,
+          "feedback": "Non è corretto. Nella cavaliera l'asse y (profondità) ha fattore 0,5. La profondità di 60 mm diventa 30 mm sull'asse obliquo.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
+        },
+        {
+          "id": "b",
+          "testo": "Asse x (0°): 80 mm; asse y (obliquo 45°): 60 × 0,5 = 30 mm; asse z (90°): 50 mm",
+          "corretto": true,
+          "feedback": "Esatto! Nella cavaliera: asse x (larghezza, 0°) = misura reale = 80 mm; asse y (profondità, 45°) = misura reale × 0,5 = 60 × 0,5 = 30 mm; asse z (altezza, 90°) = misura reale = 50 mm."
+        },
+        {
+          "id": "c",
+          "testo": "Asse x: 80 mm; asse y: 30 mm; asse z: 25 mm",
+          "corretto": false,
+          "feedback": "Non è corretto. Nella cavaliera solo l'asse y (profondità) viene ridotto del 50%. L'altezza (asse z) mantiene la misura reale: 50 mm, non 25 mm.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
+        },
+        {
+          "id": "d",
+          "testo": "Tutti e tre gli assi mantengono le misure reali: 80 mm, 60 mm, 50 mm",
+          "corretto": false,
+          "feedback": "Non è corretto. In cavaliera l'asse y (profondità) ha fattore 0,5: la profondità di 60 mm diventa 30 mm. Solo in isometrica semplificata tutti gli assi mantengono le misure reali.",
+          "riferimento": "📖 ESPLORA — Assonometria cavaliera obliqua"
+        }
+      ],
+      "spiegazione": "Cavaliera per parallelepipedo 80×60×50 mm: asse x (larghezza, orizzontale a 0°) = 80 mm (fattore 1), asse y (profondità, obliquo a 45°) = 60 × 0,5 = 30 mm (fattore 0,5), asse z (altezza, verticale a 90°) = 50 mm (fattore 1). Se invece fosse isometrica semplificata: 80 mm, 60 mm, 50 mm su tutti gli assi (fattore 1 su tutto).",
+      "riferimento_principale": "📖 ESPLORA — Assonometria cavaliera obliqua"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "L'errore comune citato dice: 'nell'isometrica le misure orizzontali si riducono ma quella verticale rimane uguale'. Perché questo è sbagliato?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché nell'isometrica è l'asse verticale a ridursi, non quelli orizzontali",
+          "corretto": false,
+          "feedback": "Non è corretto. Nell'isometrica (sia rigorosa sia semplificata) tutti e tre gli assi hanno lo stesso trattamento — nessuno si riduce più degli altri.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "b",
+          "testo": "Perché nell'isometrica semplificata (quella usata in pratica) tutti e tre gli assi hanno fattore 1 — nessuno si riduce rispetto agli altri. Nella rigorosa tutti si riducono ugualmente (0,816)",
+          "corretto": true,
+          "feedback": "Esatto! Il testo spiega: 'nell'isometrica semplificata le misure vengono riportate in scala reale su tutti e tre gli assi (fattore 1). Confondere l'isometrica rigorosa con la semplificata è uno degli errori più comuni.'"
+        },
+        {
+          "id": "c",
+          "testo": "Perché l'errore è nell'opposto: nell'isometrica la misura verticale si riduce, e quelle orizzontali rimangono uguali",
+          "corretto": false,
+          "feedback": "Non è corretto. Nell'isometrica (sia rigorosa che semplificata) non c'è asimmetria tra verticale e orizzontale: tutti gli assi ricevono lo stesso trattamento.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        },
+        {
+          "id": "d",
+          "testo": "Perché la riduzione nell'isometrica riguarda solo le diagonali, non gli assi principali",
+          "corretto": false,
+          "feedback": "Non è corretto. La riduzione nell'isometrica rigorosa (fattore 0,816) si applica a tutti e tre gli assi principali — x, y e z — in modo uniforme.",
+          "riferimento": "🔍 OSSERVA — Errore comune"
+        }
+      ],
+      "spiegazione": "L'errore descritto confonde cavaliera e isometrica: nella cavaliera, l'asse y (profondità) si riduce del 50% mentre x e z rimangono interi. Nell'isometrica semplificata tutti e tre gli assi hanno fattore 1 (misure reali). Nell'isometrica rigorosa tutti si riducono di 0,816. Non c'è mai una differenza tra verticale e orizzontale nell'isometrica.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Il designer di prodotto industriale citato nel testo come professione usa l'assonometria in modo diverso rispetto al tecnico che usa le proiezioni ortogonali. Qual è la differenza di ruolo nella catena progettuale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il designer usa l'assonometria per calcolare le tolleranze; il tecnico usa le ortogonali per l'aspetto estetico",
+          "corretto": false,
+          "feedback": "Non è corretto. È il contrario: le ortogonali servono per le specifiche tecniche precise (incluse tolleranze); l'assonometria serve per comunicare visivamente l'idea del design.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "b",
+          "testo": "Il designer usa l'assonometria per comunicare le idee ai clienti (non tecnici) e nelle fasi di ideazione; poi le proiezioni ortogonali comunicano con i tecnici che producono i pezzi",
+          "corretto": true,
+          "feedback": "Esatto! Il testo descrive la catena: 'schizzi assonometrici veloci durante l'ideazione → modelli CAD 3D → tavole tecniche (proiezioni ortogonali) per la produzione.' La catena parte dall'assonometria come strumento di pensiero visivo."
+        },
+        {
+          "id": "c",
+          "testo": "Il designer usa le proiezioni ortogonali; il tecnico usa l'assonometria — è il contrario di quanto si pensa",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive la sequenza nel lavoro del designer: assonometria nelle fasi di ideazione → ortogonali per la produzione. Non è invertita.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza di ruolo: designer e tecnici usano gli stessi sistemi di rappresentazione per coerenza",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive esplicitamente la differenza: 'il designer usa assonometrie e prospettive per comunicare con i clienti, e proiezioni ortogonali per comunicare con i tecnici che producono i pezzi.'",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        }
+      ],
+      "spiegazione": "Il testo descrive la catena del designer di prodotto: (1) schizzi assonometrici veloci durante l'ideazione (strumento di pensiero visivo); (2) modelli CAD 3D; (3) tavole tecniche in proiezione ortogonale per la produzione. L'assonometria comunica l'idea visiva; le ortogonali comunicano le specifiche tecniche. Due strumenti per due interlocutori diversi.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché nel disegno di un oggetto composito con il metodo del box si inizia dal parallelepipedo contenitore e si 'scolpisce' invece di costruire le parti separatamente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le norme UNI vietano di costruire le parti separatamente nel disegno assonometrico",
+          "corretto": false,
+          "feedback": "Non è corretto. Non esiste una norma che lo vieti. Il metodo del box è una strategia pratica, non un obbligo normativo.",
+          "riferimento": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+        },
+        {
+          "id": "b",
+          "testo": "Perché partire dal volume contenitore garantisce che le proporzioni globali siano corrette prima di definire i dettagli, evitando errori di posizionamento e scala tra le parti",
+          "corretto": true,
+          "feedback": "Esatto! Costruire le parti separatamente rischia di ritrovarsi con pezzi che non si incastrano correttamente. Il box stabilisce il volume globale corretto; poi si scolpisce mantenendo la coerenza geometrica."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il parallelepipedo contenitore è sempre più semplice da disegnare e si finisce prima",
+          "corretto": false,
+          "feedback": "Non è corretto. La semplicità del parallelepipedo non è la ragione principale. Il vantaggio è la garanzia della coerenza geometrica globale prima di procedere ai dettagli.",
+          "riferimento": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il metodo del box è usato solo per oggetti in legno o pietra che vengono letteralmente scolpiti — non si applica a oggetti metallici",
+          "corretto": false,
+          "feedback": "Non è corretto. 'Scolpire' è una metafora per il processo di disegno. Il metodo si applica a qualsiasi materiale e qualsiasi forma composita.",
+          "riferimento": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+        }
+      ],
+      "spiegazione": "Il metodo del box garantisce la coerenza geometrica globale: partendo dal parallelepipedo contenitore, si stabiliscono le proporzioni generali dell'oggetto prima di procedere ai dettagli. Costruire le parti separatamente rischia di ritrovarsi con elementi che non si allineano correttamente tra loro. Il box è un'ancora geometrica per l'intero disegno.",
+      "riferimento_principale": "📖 ESPLORA — Assonometria di figure composte: la strategia per box"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Perché nella assonometria isometrica rigorosa il fattore di riduzione è 0,816 (= 1/√(1.5)) e non un valore 'tondo' come 0,8 o 1?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché 0,816 è stato scelto da ingegneri nel XIX secolo per convenienza di calcolo con i righelli dell'epoca",
+          "corretto": false,
+          "feedback": "Non è corretto. Il fattore 0,816 non è una convenzione arbitraria — è il risultato di un calcolo geometrico preciso legato all'angolo di inclinazione degli assi isometrici.",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
+        },
+        {
+          "id": "b",
+          "testo": "Perché deriva dalla geometria: quando i tre assi formano angoli di 120° tra loro e sono ugualmente inclinati rispetto al piano di proiezione, la lunghezza apparente di ogni asse rispetto alla sua lunghezza reale è 1/√(3/2) ≈ 0,816",
+          "corretto": true,
+          "feedback": "Esatto! Il fattore 0,816 è una conseguenza matematica della geometria isometrica: quando si proiettano su un piano le tre assi cartesiane ugualmente inclinate a 120° tra loro, ogni asse si 'accorcia' di quel fattore preciso."
+        },
+        {
+          "id": "c",
+          "testo": "Perché 0,816 è il reciproco del numero aureo φ ≈ 1,618",
+          "corretto": false,
+          "feedback": "Non è corretto. 1/1,618 ≈ 0,618, non 0,816. Il fattore isometrico deriva dalla geometria delle proiezioni a 120°, non dal numero aureo.",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
+        },
+        {
+          "id": "d",
+          "testo": "Perché 0,816 è il fattore che produce una riduzione visivamente piacevole secondo studi di psicologia della percezione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il fattore 0,816 non è scelto per ragioni estetiche o psicologiche, ma è una conseguenza matematica della geometria isometrica.",
+          "riferimento": "📖 ESPLORA — Assonometria isometrica"
+        }
+      ],
+      "spiegazione": "Il fattore 0,816 ≈ √(2/3) è il risultato matematico della proiezione isometrica: quando i tre assi cartesiani sono ugualmente inclinati rispetto al piano di proiezione (angolo di 35,26° rispetto al piano) e formano angoli di 120° tra loro sul piano, ogni asse si accorcia di questo fattore preciso. Non è scelto arbitrariamente — è determinato dalla geometria. Per praticità, si usa l'isometrica semplificata con fattore 1.",
+      "riferimento_principale": "📖 ESPLORA — Assonometria isometrica"
     }
   ]
 }

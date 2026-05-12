@@ -1,259 +1,244 @@
 {
   "mc_id": "MC-COM-3-05",
-  "titolo": "Reti globali, internet e infrastrutture",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa trasportano i cavi sottomarini in fibra ottica?",
+      "domanda": "Che percentuale del traffico Internet mondiale viaggia su cavi sottomarini?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Corrente elettrica",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Dati digitali sotto forma di impulsi luminosi",
-          "corretto": true,
-          "feedback": "Esatto! I cavi sottomarini in fibra ottica trasportano il 95% del traffico internet globale tra i continenti."
-        },
-        {
-          "id": "c",
-          "testo": "Segnali radio",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Gas naturale",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Il 97% del traffico Internet e delle comunicazioni telefoniche internazionali", "corretto": true, "feedback": "Esatto! Il testo indica che circa 550 cavi sottomarini attivi trasportano il 97% di tutto il traffico Internet e delle comunicazioni telefoniche internazionali." },
+        { "id": "b", "testo": "Il 30% del traffico, il resto via satellite", "corretto": false, "feedback": "Non è corretto. I satelliti sono usati per zone remote e applicazioni specifiche, ma il 97% del traffico globale viaggia su cavi sottomarini.", "riferimento": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet" },
+        { "id": "c", "testo": "Il 50% del traffico Internet, il resto via Wi-Fi", "corretto": false, "feedback": "Non è corretto. Il Wi-Fi è una tecnologia di rete locale, non per le comunicazioni intercontinentali.", "riferimento": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet" },
+        { "id": "d", "testo": "Il 10% del traffico, il resto attraverso i data center", "corretto": false, "feedback": "Non è corretto. I data center ospitano i dati ma non trasmettono intercontinentalmente. La quota dei cavi è il 97%.", "riferimento": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet" }
       ],
-      "spiegazione": "I cavi sottomarini in fibra ottica trasportano il 95% del traffico internet globale tra i continenti."
+      "spiegazione": "Circa 550 cavi sottomarini attivi trasportano il 97% di tutto il traffico Internet e delle comunicazioni telefoniche internazionali. Questi cavi — con da 8 a 24 paia di fibre ottiche — percorrono i fondi degli oceani collegando i continenti.",
+      "riferimento_principale": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è un indirizzo IP?",
+      "domanda": "Qual è il primo messaggio inviato su ARPANET nella storia di Internet?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Il numero seriale del tuo modem",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Un'etichetta numerica che identifica ogni dispositivo in rete",
-          "corretto": true,
-          "feedback": "Esatto! Ogni dispositivo connesso ha un IP."
-        },
-        {
-          "id": "c",
-          "testo": "La velocità della tua connessione",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Il nome del tuo provider internet",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Solo le lettere 'lo' (il sistema crashò prima di completare 'login')", "corretto": true, "feedback": "Esatto! Il 29 ottobre 1969, Charley Kline tentò di inviare 'login' ma il sistema crashò dopo le prime due lettere. Il primo messaggio di Internet è stato 'lo'." },
+        { "id": "b", "testo": "Il messaggio completo 'Hello, World!'", "corretto": false, "feedback": "Non è corretto. 'Hello World' è una tradizione della programmazione, non il primo messaggio di Internet.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "c", "testo": "La parola completa 'login'", "corretto": false, "feedback": "Non è corretto. Il sistema crashò dopo le prime due lettere: il primo messaggio fu solo 'lo'.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "d", "testo": "Il testo 'Message received' di conferma", "corretto": false, "feedback": "Non è corretto. Il messaggio di risposta non fu mai ricevuto perché il sistema crashò dopo 'lo'.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" }
       ],
-      "spiegazione": "Ogni dispositivo connesso ha un IP. Senza di esso i pacchetti di dati non saprebbero dove andare."
+      "spiegazione": "Il 29 ottobre 1969, Charley Kline all'UCLA tentò di inviare 'login' al computer dello Stanford Research Institute via ARPANET. Il sistema crashò dopo le prime due lettere. Il primo messaggio di Internet nella storia è 'lo' — forse la parola più umile e accidentale dell'era digitale.",
+      "riferimento_principale": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il Wi-Fi?",
+      "domanda": "Cosa gestisce ICANN (Internet Corporation for Assigned Names and Numbers)?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Una connessione internet via cavo",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Un protocollo per connessioni wireless a corto raggio basato su onde radio",
-          "corretto": true,
-          "feedback": "Esatto! Il Wi-Fi usa onde radio (2."
-        },
-        {
-          "id": "c",
-          "testo": "Un tipo di fibra ottica domestica",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Il segnale della rete mobile 4G",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Il sistema dei nomi di dominio (DNS) e degli indirizzi IP a livello mondiale", "corretto": true, "feedback": "Esatto! ICANN, con sede a Los Angeles, gestisce il DNS globale e l'assegnazione degli indirizzi IP. Quando registri un dominio (.it, .com), usi il sistema ICANN." },
+        { "id": "b", "testo": "Il contenuto pubblicato su Internet in tutti i paesi", "corretto": false, "feedback": "Non è corretto. ICANN gestisce l'infrastruttura tecnica dei nomi, non i contenuti.", "riferimento": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti" },
+        { "id": "c", "testo": "I cavi sottomarini transatlantici", "corretto": false, "feedback": "Non è corretto. I cavi sottomarini sono di proprietà di aziende private (telecom e big tech). ICANN gestisce i nomi e gli indirizzi.", "riferimento": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti" },
+        { "id": "d", "testo": "La velocità massima delle connessioni Internet", "corretto": false, "feedback": "Non è corretto. La velocità delle connessioni dipende dagli operatori e dalle tecnologie, non da ICANN.", "riferimento": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti" }
       ],
-      "spiegazione": "Il Wi-Fi usa onde radio (2.4 GHz o 5 GHz) per connettere dispositivi senza fili entro poche decine di metri."
+      "spiegazione": "ICANN (Internet Corporation for Assigned Names and Numbers), con sede a Los Angeles, gestisce il sistema DNS globale e l'assegnazione degli indirizzi IP. Dal 2016 risponde a una struttura multistakeholder globale (non più solo al governo americano che la supervisionava dalla fondazione nel 1998).",
+      "riferimento_principale": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti"
     },
     {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa significa 'net neutrality' (neutralità della rete)?",
+      "opzioni": [
+        { "id": "a", "testo": "Tutti i dati su Internet vanno trattati allo stesso modo dagli operatori, senza discriminazioni", "corretto": true, "feedback": "Esatto! La net neutrality impone che nessun sito, servizio o tipo di traffico sia accelerato, rallentato o bloccato preferenzialmente dagli operatori di rete." },
+        { "id": "b", "testo": "Internet deve essere neutro dal punto di vista politico", "corretto": false, "feedback": "Non è corretto. La 'neutralità' riguarda il traffico dati, non i contenuti politici.", "riferimento": "📖 ESPLORA — Neutralità della rete: una battaglia non ancora conclusa" },
+        { "id": "c", "testo": "Tutti gli utenti devono pagare lo stesso prezzo per Internet", "corretto": false, "feedback": "Non è corretto. La net neutrality riguarda come i dati vengono trattati in rete, non il prezzo degli abbonamenti.", "riferimento": "📖 ESPLORA — Neutralità della rete: una battaglia non ancora conclusa" },
+        { "id": "d", "testo": "I governi non possono regolamentare Internet", "corretto": false, "feedback": "Non è corretto. La net neutrality è spesso una regolamentazione governativa che vincola gli operatori privati.", "riferimento": "📖 ESPLORA — Neutralità della rete: una battaglia non ancora conclusa" }
+      ],
+      "spiegazione": "La net neutrality (neutralità della rete) è il principio per cui tutti i dati su Internet devono essere trattati allo stesso modo dagli operatori: nessun sito, servizio o tipo di traffico può essere accelerato, rallentato o bloccato preferenzialmente. In Europa è garantita dal Regolamento (UE) 2015/2120.",
+      "riferimento_principale": "📖 ESPLORA — Neutralità della rete: una battaglia non ancora conclusa"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cos'è il Great Firewall cinese?",
+      "opzioni": [
+        { "id": "a", "testo": "Il sistema nazionale di filtraggio che blocca Google, Facebook, YouTube e Wikipedia in Cina", "corretto": true, "feedback": "Esatto! Il Great Firewall (Golden Shield) blocca i principali servizi digitali occidentali, sostituiti da alternative cinesi: Baidu, WeChat, Weibo." },
+        { "id": "b", "testo": "Un sistema di protezione antivirale per le reti cinesi", "corretto": false, "feedback": "Non è corretto. Il Great Firewall non è un antivirus: è un sistema di censura e filtraggio del traffico Internet.", "riferimento": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall" },
+        { "id": "c", "testo": "Una rete militare separata da Internet civile in Cina", "corretto": false, "feedback": "Non è corretto. La Cina ha Internet civile (censurata), non una rete militare separata come la Corea del Nord.", "riferimento": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall" },
+        { "id": "d", "testo": "Un sistema di pagamento digitale nazionale cinese", "corretto": false, "feedback": "Non è corretto. Il Great Firewall è un sistema di censura di Internet, non un sistema di pagamento.", "riferimento": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall" }
+      ],
+      "spiegazione": "Il Great Firewall (ufficialmente 'Golden Shield') è il sistema cinese di filtraggio di Internet che blocca Google (inclusi Gmail, YouTube, Drive), Facebook, Instagram, Twitter, WhatsApp, Wikipedia e migliaia di altri servizi. Usa blocco IP, filtraggio DNS e Deep Packet Inspection.",
+      "riferimento_principale": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quante persone nel mondo ancora non hanno accesso a Internet nel 2024?",
+      "opzioni": [
+        { "id": "a", "testo": "Circa 2,5 miliardi di persone", "corretto": true, "feedback": "Esatto! Con 5,5 miliardi di utenti Internet nel 2024, circa 2,5 miliardi — concentrati in Africa subsahariana, Asia meridionale e zone rurali — non hanno ancora accesso." },
+        { "id": "b", "testo": "Circa 100 milioni di persone", "corretto": false, "feedback": "Non è corretto. Il digital divide è molto più ampio: circa 2,5 miliardi di persone non hanno accesso.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "c", "testo": "Circa 500 milioni di persone", "corretto": false, "feedback": "Non è corretto. Il numero reale è molto più alto: circa 2,5 miliardi di persone senza accesso.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "d", "testo": "Circa 5 miliardi di persone", "corretto": false, "feedback": "Non è corretto. 5,5 miliardi usano già Internet: i senza accesso sono circa 2,5 miliardi.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" }
+      ],
+      "spiegazione": "Nel 2024, 5,5 miliardi di persone usano Internet. Circa 2,5 miliardi non hanno ancora accesso — concentrati principalmente in Africa subsahariana, Asia meridionale e zone rurali globali. La 'connettività universale' è ancora lontana dall'essere realizzata.",
+      "riferimento_principale": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Cosa fa un router nella rete domestica?",
+      "domanda": "Perché l'architettura originale di ARPANET (1969) è ancora il motivo per cui Internet funziona oggi?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Amplifica il segnale Wi-Fi",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Smista i pacchetti di dati tra la rete locale e internet, assegnando indirizzi IP ai dispositivi",
-          "corretto": true,
-          "feedback": "Esatto! Il router è il 'postino' della rete: riceve pacchetti e li indirizza verso la destinazione giusta, sia in rete locale sia verso internet."
-        },
-        {
-          "id": "c",
-          "testo": "Protegge il computer dai virus",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Comprime i file per velocizzare il download",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Perché fu progettata senza nodo centrale: nessun punto di fallimento unico, nessun controllo unico", "corretto": true, "feedback": "Esatto! ARPANET fu progettata per resistere a un attacco nucleare: se una parte è distrutta, i dati trovano un percorso alternativo. Questo spiega sia la resilienza sia la difficoltà di regolamentazione di Internet." },
+        { "id": "b", "testo": "Perché usava gli stessi cavi in rame delle reti telefoniche", "corretto": false, "feedback": "Non è corretto. La caratteristica fondamentale è l'architettura distribuita, non il mezzo fisico.", "riferimento": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti" },
+        { "id": "c", "testo": "Perché fu finanziata dal governo americano che ne garantisce il funzionamento", "corretto": false, "feedback": "Non è corretto. Il governo americano ha supervisione su ICANN (e neanche più dal 2016): non 'garantisce il funzionamento' di Internet.", "riferimento": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti" },
+        { "id": "d", "testo": "Perché era già predisposta per la fibra ottica", "corretto": false, "feedback": "Non è corretto. Nel 1969 non esisteva la fibra ottica: la scelta architettonica che conta è la distribuzione dei nodi.", "riferimento": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti" }
       ],
-      "spiegazione": "Il router è il 'postino' della rete: riceve pacchetti e li indirizza verso la destinazione giusta, sia in rete locale sia verso internet."
+      "spiegazione": "ARPANET fu progettata specificatamente per 'resistere a un attacco nucleare': nessun nodo centrale significa nessun punto di fallimento unico. Questa architettura distribuita è ancora la ragione per cui Internet funziona — e la ragione per cui è così difficile da regolamentare o censurare completamente.",
+      "riferimento_principale": "📖 ESPLORA — Chi 'possiede' internet? Nessuno — e molti"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è la latenza e quando diventa un problema?",
+      "domanda": "Cosa permise la scelta 'end-to-end' del protocollo TCP/IP (1973-74)?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "La velocità massima di download",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Il ritardo nella trasmissione dei dati: critica per gaming, videochiamate e sistemi real-time",
-          "corretto": true,
-          "feedback": "Esatto! Con latenza alta un videogioco online diventa ingiocabile, una videochiamata si spezza, un veicolo autonomo non può reagire in tempo."
-        },
-        {
-          "id": "c",
-          "testo": "Il numero di dispositivi connessi contemporaneamente",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "La quantità di dati scaricati al mese",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Chiunque poteva costruire nuove applicazioni sopra Internet senza chiedere il permesso a nessuno", "corretto": true, "feedback": "Esatto! Il testo spiega: TCP/IP è 'end-to-end': la rete non conosce il contenuto. L'intelligenza è agli estremi. Per questo web, email, streaming, criptovalute sono stati possibili senza autorizzazione centrale." },
+        { "id": "b", "testo": "La rete era più veloce perché non doveva analizzare i dati", "corretto": false, "feedback": "Non è corretto. Il vantaggio principale non è la velocità ma la capacità di innovare liberamente sopra l'infrastruttura.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "c", "testo": "I dati erano automaticamente cifrati durante il transito", "corretto": false, "feedback": "Non è corretto. TCP/IP non include cifratura nativa. La cifratura è gestita da protocolli superiori come TLS.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "d", "testo": "Internet era accessibile solo ai computer militari americani", "corretto": false, "feedback": "Non è corretto. L'architettura end-to-end fu pensata per essere aperta e accessibile, non riservata.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" }
       ],
-      "spiegazione": "Con latenza alta un videogioco online diventa ingiocabile, una videochiamata si spezza, un veicolo autonomo non può reagire in tempo."
+      "spiegazione": "La scelta end-to-end di TCP/IP (Cerf e Kahn, 1973-74) pose l'intelligenza agli estremi della rete: la rete si limita a consegnare pacchetti senza sapere cosa contengono. Chiunque poteva costruire qualsiasi applicazione sopra Internet senza chiedere permesso. Per questo il web, le email, il gaming online, le criptovalute sono stati tutti possibili.",
+      "riferimento_principale": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi"
     },
     {
+      "id": 9,
       "livello": "I",
-      "domanda": "Cosa si intende per 'cloud computing'?",
+      "domanda": "Il Deep Packet Inspection (DPI) usato nel Great Firewall: in cosa supera il semplice blocco IP?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Software installato localmente sul tuo computer",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Uso di risorse informatiche (storage, elaborazione, app) su server remoti accessibili via internet",
-          "corretto": true,
-          "feedback": "Esatto! Il cloud ha spostato i dati e le applicazioni dai PC locali a data center globali: Google Drive, Dropbox, Office 365 sono tutti cloud."
-        },
-        {
-          "id": "c",
-          "testo": "Una rete di computer connessi via satellite",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Il sistema operativo dei telefoni Android",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Analizza il contenuto dei pacchetti in transito cercando pattern associati a VPN o contenuti proibiti", "corretto": true, "feedback": "Esatto! Il blocco IP è facilmente aggirabile con indirizzi alternativi. La DPI analizza il contenuto stesso dei pacchetti, rilevando anche le VPN dai loro pattern di traffico." },
+        { "id": "b", "testo": "Rallenta tutto il traffico Internet per scoraggiare l'uso", "corretto": false, "feedback": "Non è corretto. La DPI è selettiva: analizza e blocca specifici contenuti, non tutto il traffico.", "riferimento": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall" },
+        { "id": "c", "testo": "Blocca fisicamente i cavi sottomarini verso i paesi censurati", "corretto": false, "feedback": "Non è corretto. I cavi fisici non sono bloccati: il filtraggio avviene a livello software.", "riferimento": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall" },
+        { "id": "d", "testo": "Richiede all'utente di identificarsi prima di accedere a Internet", "corretto": false, "feedback": "Non è corretto. La DPI è trasparente all'utente: analizza i pacchetti senza richiedere autenticazione.", "riferimento": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall" }
       ],
-      "spiegazione": "Il cloud ha spostato i dati e le applicazioni dai PC locali a data center globali: Google Drive, Dropbox, Office 365 sono tutti cloud."
+      "spiegazione": "Il blocco IP blocca indirizzi noti (facilmente aggirabile). Il filtraggio DNS reindirizza le richieste (aggirabile con DNS alternativi). La Deep Packet Inspection (DPI) analizza il contenuto stesso dei pacchetti cercando pattern di VPN, parole chiave, o fingerprint di protocolli proibiti — molto più difficile da aggirare.",
+      "riferimento_principale": "📖 ESPLORA — Censura di internet: come funziona il Great Firewall"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è l'architettura 'edge computing' e perché cresce con l'IoT?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Perché il World Wide Web (1991) non è la stessa cosa di Internet?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Elaborazione dei dati esclusivamente su server centrali lontani",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Elaborazione dei dati il più vicino possibile alla fonte (dispositivo/sensore) per ridurre latenza e traffico verso il cloud centrale",
-          "corretto": true,
-          "feedback": "Esatto! Con miliardi di sensori IoT, inviare tutto al cloud genera colli di bottiglia."
-        },
-        {
-          "id": "c",
-          "testo": "Un sistema di backup distribuito su disco locale",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "La gestione dei dati sui dispositivi mobili offline",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Il Web è un'applicazione costruita sopra Internet: usa HTML, URL e HTTP per collegare pagine ipertestuali", "corretto": true, "feedback": "Esatto! Il testo chiarisce: Internet è l'infrastruttura di rete (cavi, protocolli, router). Il Web (inventato da Berners-Lee nel 1991 al CERN) è una delle tante applicazioni costruite sopra quella infrastruttura." },
+        { "id": "b", "testo": "Il Web è più sicuro di Internet perché usa la cifratura HTTPS", "corretto": false, "feedback": "Non è corretto. La distinzione riguarda cosa sono (infrastruttura vs applicazione), non la sicurezza.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "c", "testo": "Il Web è la parte visibile di Internet; Internet include anche il 'deep web'", "corretto": false, "feedback": "Non è corretto. Il 'deep web' è un concetto diverso. Il Web e Internet si distinguono per essere applicazione vs infrastruttura.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" },
+        { "id": "d", "testo": "Internet è il vecchio sistema; il Web è il nuovo sistema che lo ha sostituito", "corretto": false, "feedback": "Non è corretto. Il Web non ha sostituito Internet: è un servizio che usa Internet, insieme a email, VoIP, gaming, ecc.", "riferimento": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi" }
       ],
-      "spiegazione": "Con miliardi di sensori IoT, inviare tutto al cloud genera colli di bottiglia. L'edge elabora in loco il dato grezzo e manda solo il risultato."
+      "spiegazione": "Internet è l'infrastruttura di rete (cavi, protocolli TCP/IP, router, indirizzi IP). Il World Wide Web — inventato da Tim Berners-Lee nel 1991 al CERN — è un'applicazione costruita sopra Internet, che usa HTML (linguaggio di pagine), URL (indirizzi) e HTTP (protocollo). Esistono molte altre applicazioni su Internet: email, streaming, gaming, VoIP.",
+      "riferimento_principale": "📖 ESPLORA — Geo-Storia: da DARPANET a oggi"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il BGP (Border Gateway Protocol) e perché è critico?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Qual è l'implicazione della 'data sovereignty' (sovranità dei dati) per le aziende che servono cittadini europei?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Un protocollo per cifrare le comunicazioni email",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Il protocollo che permette ai router di condividere le rotte di rete tra i diversi Internet Service Provider: è la 'mappa' di Internet",
-          "corretto": true,
-          "feedback": "Esatto! Il BGP è fragile: un errore di configurazione può 'dirottare' il traffico globale."
-        },
-        {
-          "id": "c",
-          "testo": "Un sistema di sicurezza per le VPN",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Il protocollo che assegna gli indirizzi IP dinamici",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "I dati dei cittadini europei devono essere trattati secondo le norme GDPR, con conseguenze sulla localizzazione dei data center", "corretto": true, "feedback": "Esatto! Il GDPR (2018) impone che i dati dei cittadini europei siano trattati secondo le norme europee, il che ha conseguenze su dove i data center possono essere localizzati o come devono essere configurati." },
+        { "id": "b", "testo": "I dati europei devono essere fisicamente conservati in Europa senza eccezioni", "corretto": false, "feedback": "Non è corretto. Il GDPR non impone necessariamente la localizzazione fisica in Europa: impone le norme di trattamento.", "riferimento": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati" },
+        { "id": "c", "testo": "Le aziende europee non possono usare cloud americano", "corretto": false, "feedback": "Non è corretto. Le aziende europee possono usare cloud americano se garantiscono il rispetto del GDPR.", "riferimento": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati" },
+        { "id": "d", "testo": "I dati dei cittadini europei devono essere gratuiti e accessibili a tutti", "corretto": false, "feedback": "Non è corretto. La data sovereignty riguarda la protezione e la giurisdizione, non la gratuità.", "riferimento": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati" }
       ],
-      "spiegazione": "Il BGP è fragile: un errore di configurazione può 'dirottare' il traffico globale. Nel 2010 un ISP cinese ha accidentalmente sequestrato il 15% del traffico internet mondiale."
+      "spiegazione": "La 'data sovereignty' (sovranità sui dati) riguarda quale legge si applica ai dati. Il GDPR europeo (2018) stabilisce che i dati dei cittadini europei devono essere trattati secondo le norme europee, con conseguenze sulla localizzazione e configurazione dei data center. La Cina va oltre: impone che i dati dei propri cittadini restino fisicamente in Cina.",
+      "riferimento_principale": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 'dark web' e come si distingue dal 'deep web'?",
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché il 'DNS spoofing' è più pericoloso del semplice blocco di un sito web?",
       "opzioni": [
-        {
-          "id": "a",
-          "testo": "Sono sinonimi per indicare contenuti illegali online",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "b",
-          "testo": "Il deep web comprende tutto ciò non indicizzato dai motori di ricerca (es. email, banche dati). Il dark web è un sottoinsieme accessibile solo con browser speciali come Tor, usato sia per privacy legittima sia per attività illegali",
-          "corretto": true,
-          "feedback": "Esatto! La distinzione è importante: il deep web include la tua email e il conto bancario online."
-        },
-        {
-          "id": "c",
-          "testo": "Il dark web è semplicemente internet senza sicurezza",
-          "feedback": "Rileggi la sezione per approfondire."
-        },
-        {
-          "id": "d",
-          "testo": "Il deep web è accessibile solo con VPN a pagamento",
-          "feedback": "Rileggi la sezione per approfondire."
-        }
+        { "id": "a", "testo": "Perché reindirizza l'utente a un sito fraudolento senza che il browser mostri nessun errore visibile", "corretto": true, "feedback": "Esatto! Il DNS spoofing sostituisce l'IP legittimo con uno falso: l'utente digita il sito reale ma arriva su un sito truffaldino, senza alert visibili nel browser." },
+        { "id": "b", "testo": "Perché cancella i file dell'utente", "corretto": false, "feedback": "Non è corretto. Il DNS spoofing non cancella file: reindirizza il traffico verso siti fraudolenti.", "riferimento": "📖 ESPLORA — Il DNS: il sistema dei nomi di internet" },
+        { "id": "c", "testo": "Perché blocca tutti i siti web contemporaneamente", "corretto": false, "feedback": "Non è corretto. Il DNS spoofing è selettivo: colpisce specifici domini, non tutti.", "riferimento": "📖 ESPLORA — Il DNS: il sistema dei nomi di internet" },
+        { "id": "d", "testo": "Perché rallenta la connessione Internet dell'utente", "corretto": false, "feedback": "Non è corretto. Il DNS spoofing non rallenta la connessione: reindirizza silenziosamente il traffico.", "riferimento": "📖 ESPLORA — Il DNS: il sistema dei nomi di internet" }
       ],
-      "spiegazione": "La distinzione è importante: il deep web include la tua email e il conto bancario online. Il dark web richiede Tor e ha usi legittimi (giornalismo, dissidenti) oltre a quelli illegali."
+      "spiegazione": "Il DNS spoofing sostituisce la risposta DNS legittima con un indirizzo IP falso, reindirizzando l'utente su un sito fraudolento. Il browser non mostra nessun errore: l'utente è convinto di essere sul sito corretto. La difesa è DNSSEC, che verifica l'autenticità delle risposte DNS con firma digitale.",
+      "riferimento_principale": "📖 ESPLORA — Il DNS: il sistema dei nomi di internet"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il caso del sabotaggio dei cavi baltici (2024) solleva una domanda di governance: chi è responsabile di proteggere i cavi sottomarini?",
+      "opzioni": [
+        { "id": "a", "testo": "Esiste un vuoto: le convenzioni di Ginevra li proteggono, ma l'enforcement in acque internazionali è quasi impossibile",
+          "corretto": true, "feedback": "Esatto! Il testo indica che i cavi vivono in un 'vuoto di governance internazionale': le convenzioni del 1958 esistono ma l'enforcement è quasi impossibile. La NATO ha creato una Coordination Cell nel 2023." },
+        { "id": "b", "testo": "L'ONU ha piena autorità di proteggere i cavi sottomarini con le proprie forze navali", "corretto": false, "feedback": "Non è corretto. L'ONU non ha forze navali autonome e il testo non indica l'ONU come responsabile della protezione dei cavi.", "riferimento": "🔍 OSSERVA — Il caso: il sabotaggio dei cavi nel Mar Baltico (2024)" },
+        { "id": "c", "testo": "I proprietari privati (Google, Meta) devono proteggere militarmente i propri cavi", "corretto": false, "feedback": "Non è corretto. Le aziende private non hanno mandato militare: la protezione è responsabilità statale e internazionale.", "riferimento": "🔍 OSSERVA — Il caso: il sabotaggio dei cavi nel Mar Baltico (2024)" },
+        { "id": "d", "testo": "I cavi sono già protetti dalle acque profonde: non hanno bisogno di protezione aggiuntiva", "corretto": false, "feedback": "Non è corretto. Il testo indica che 'in acque profonde, la protezione è minima — l'isolamento geografico è la loro principale difesa'.", "riferimento": "🔍 OSSERVA — Il caso: il sabotaggio dei cavi nel Mar Baltico (2024)" }
+      ],
+      "spiegazione": "Il testo descrive un vuoto di governance: le convenzioni di Ginevra del 1958 proteggono i cavi in acque internazionali, ma 'l'enforcement è quasi impossibile'. La NATO ha creato nel 2023 una Coordination Cell specificamente per i cavi atlantici. L'UE li ha inseriti nella Critical Entities Resilience Directive (2022). Ma il quadro rimane frammentato.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: il sabotaggio dei cavi nel Mar Baltico (2024)"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "La Cina impone che i dati dei propri cittadini restino su server fisicamente in Cina. Quali sono le due motivazioni del testo?",
+      "opzioni": [
+        { "id": "a", "testo": "Controllo politico dei dati e sicurezza nazionale", "corretto": true, "feedback": "Esatto! Il testo identifica entrambe le motivazioni: il controllo politico (il governo può accedere ai dati) e la sicurezza nazionale (ridurre l'esposizione ai servizi stranieri)." },
+        { "id": "b", "testo": "Protezione della privacy dei cittadini e riduzione dei costi", "corretto": false, "feedback": "Non è corretto. Il testo non indica la privacy dei cittadini come motivazione: la Cina ha motivazioni di controllo statale, non di tutela della privacy individuale.", "riferimento": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati" },
+        { "id": "c", "testo": "Velocità delle connessioni e riduzione della dipendenza dai cavi sottomarini", "corretto": false, "feedback": "Non è corretto. La velocità non è la motivazione: è il controllo e la sicurezza nazionale.", "riferimento": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati" },
+        { "id": "d", "testo": "Promozione dell'industria tecnologica cinese e tutela del diritto d'autore", "corretto": false, "feedback": "Non è corretto. Sebbene ci siano effetti sull'industria tech cinese, il testo identifica controllo politico e sicurezza nazionale come motivazioni.", "riferimento": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati" }
+      ],
+      "spiegazione": "Il testo indica che la localizzazione forzata dei dati cinesi è 'sia di controllo politico che di sicurezza nazionale'. Controllo politico: il governo può accedere ai dati degli utenti. Sicurezza nazionale: ridurre la dipendenza da servizi stranieri che potrebbero interrompere l'accesso in caso di conflitto.",
+      "riferimento_principale": "📖 ESPLORA — Data center e cloud: dove si trovano fisicamente i dati"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Sei il rappresentante di Wikimedia Italia che deve scrivere una lettera al Parlamento contro una legge di DPI per la disinformazione. Qual è il primo argomento più solido?",
+      "opzioni": [
+        { "id": "a", "testo": "Il meccanismo è facilmente abusabile per bloccare dissenso legittimo, violando la net neutrality EU", "corretto": true, "feedback": "Esatto! Il testo identifica questi due argomenti nel dibattito sul DPI: il rischio di censura del dissenso legittimo e la violazione del Regolamento UE 2015/2120 sulla net neutrality." },
+        { "id": "b", "testo": "Il DPI è tecnicamente impossibile da implementare", "corretto": false, "feedback": "Non è corretto. Il DPI è già usato dal Great Firewall cinese: è tecnicamente possibile. L'argomento efficace riguarda i diritti e la legge.", "riferimento": "🌍 AGISCI — Lo scenario" },
+        { "id": "c", "testo": "La disinformazione non esiste e quindi la legge è inutile", "corretto": false, "feedback": "Non è corretto. La disinformazione esiste: negarlo è un argomento fragile. L'argomentazione deve riguardare il metodo proposto.", "riferimento": "🌍 AGISCI — Lo scenario" },
+        { "id": "d", "testo": "Il costo di implementazione è troppo alto per l'Italia", "corretto": false, "feedback": "Non è corretto. L'argomento economico è debole: se fosse economico, non cambierebbe il problema dei diritti fondamentali.", "riferimento": "🌍 AGISCI — Lo scenario" }
+      ],
+      "spiegazione": "Il testo descrive il dibattito nel compito di realtà: i critici della legge DPI sostengono che 'è censura, crea un meccanismo facilmente abusabile per bloccare dissenso legittimo, e viola la net neutrality garantita dal Regolamento UE 2015/2120'. L'argomento legale (violazione del diritto europeo) è il più forte per un'organizzazione come Wikimedia.",
+      "riferimento_principale": "🌍 AGISCI — Lo scenario"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Un traceroute da Roma verso Seoul attraversa 4-7 paesi. Qual è l'implicazione legale di questo percorso?",
+      "opzioni": [
+        { "id": "a", "testo": "Ogni paese attraversato può richiedere accesso ai dati in transito secondo le proprie leggi nazionali",
+          "corretto": true, "feedback": "Esatto! Il testo lo indica esplicitamente: 'ogni paese i cui cavi vengono usati può teoricamente richiedere accesso ai dati in transito secondo le proprie leggi'." },
+        { "id": "b", "testo": "I dati sono automaticamente protetti dalla legge italiana per tutta la durata del transito", "corretto": false, "feedback": "Non è corretto. La legge italiana non si applica ai server e cavi di altri paesi.", "riferimento": "📖 ESPLORA — Caso studio: traccia il percorso di un pacchetto da Roma a Seoul" },
+        { "id": "c", "testo": "I dati vengono decifrati in ogni paese attraversato", "corretto": false, "feedback": "Non è corretto. I dati cifrati rimangono cifrati in transito: un paese potrebbe registrarli ma non necessariamente decifrarli.", "riferimento": "📖 ESPLORA — Caso studio: traccia il percorso di un pacchetto da Roma a Seoul" },
+        { "id": "d", "testo": "Non ci sono implicazioni legali: Internet è uno spazio senza leggi", "corretto": false, "feedback": "Non è corretto. Internet non è uno spazio senza leggi: ogni paese ha giurisdizione sui propri segmenti di infrastruttura.", "riferimento": "📖 ESPLORA — Caso studio: traccia il percorso di un pacchetto da Roma a Seoul" }
+      ],
+      "spiegazione": "Il testo indica esplicitamente: 'Questo ha implicazioni legali: ogni paese i cui cavi vengono usati può teoricamente richiedere accesso ai dati in transito secondo le proprie leggi.' Un pacchetto da Roma a Seoul che passa per un paese con leggi di sorveglianza permissive è potenzialmente accessibile a quel governo — anche se cifrato (può essere registrato per decifrarlo in futuro).",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: traccia il percorso di un pacchetto da Roma a Seoul"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "L'affermazione 'Internet è decentralizzato, quindi non si può censurare né fermare' è vera o falsa?",
+      "opzioni": [
+        { "id": "a", "testo": "Parzialmente falsa: il traffico fisico si concentra in pochi nodi IXP (Francoforte, Amsterdam) e pochi cavi sottomarini",
+          "corretto": true, "feedback": "Esatto! Il testo chiarisce l'errore comune: l'architettura è distribuita ma il traffico fisico si concentra in pochissimi nodi. Un attacco ai principali IXP o cavi potrebbe avere conseguenze enormi." },
+        { "id": "b", "testo": "Completamente vera: Internet per definizione non ha nodi critici", "corretto": false, "feedback": "Non è corretto. Il testo identifica esplicitamente i nodi IXP e i cavi sottomarini come punti di concentrazione e vulnerabilità.", "riferimento": "🔍 OSSERVA — Errore comune" },
+        { "id": "c", "testo": "Vera: solo il Great Firewall cinese è un'eccezione", "corretto": false, "feedback": "Non è corretto. Il testo indica che anche la censura è possibile in molti paesi, e che i nodi fisici sono vulnerabili.", "riferimento": "🔍 OSSERVA — Errore comune" },
+        { "id": "d", "testo": "Falsa: Internet non è distribuita, ha un centro di controllo fisico", "corretto": false, "feedback": "Non è corretto. Internet ha architettura distribuita, ma il traffico si concentra in certi punti fisici critici.", "riferimento": "🔍 OSSERVA — Errore comune" }
+      ],
+      "spiegazione": "Il testo chiarisce l'errore: 'Internet è stata costruita per essere resiliente agli attacchi — ma la sua infrastruttura fisica è più vulnerabile di quanto sembri.' Il traffico fisico si concentra nei principali IXP mondiali (DE-CIX a Francoforte, AMS-IX ad Amsterdam, LINX a Londra). Un attacco a questi nodi avrebbe conseguenze enormi sul traffico regionale.",
+      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Perché la concentrazione dei cavi sottomarini nelle mani di Google, Meta e Microsoft è considerata un problema geopolitico?",
+      "opzioni": [
+        { "id": "a", "testo": "Perché poche aziende private americane controllano l'infrastruttura di comunicazione globale senza oversight democratico",
+          "corretto": true, "feedback": "Esatto! Il testo indica: 'questo concentra il controllo dell'infrastruttura globale di comunicazione in poche mani private — una concentrazione di potere senza precedenti storici'." },
+        { "id": "b", "testo": "Perché queste aziende fanno pagare tariffe troppo alte per l'uso dei cavi", "corretto": false, "feedback": "Non è corretto. Il testo non menziona tariffe: il problema è la concentrazione del controllo infrastrutturale.", "riferimento": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet" },
+        { "id": "c", "testo": "Perché i cavi privati sono meno affidabili di quelli pubblici", "corretto": false, "feedback": "Non è corretto. Il testo non confronta affidabilità pubblico/privato: il problema è la concentrazione del potere.", "riferimento": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet" },
+        { "id": "d", "testo": "Perché queste aziende usano i cavi solo per i propri servizi e non per quelli concorrenti", "corretto": false, "feedback": "Non è corretto. I cavi trasportano anche traffico di terzi: il problema è il controllo dell'infrastruttura, non l'esclusività.", "riferimento": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet" }
+      ],
+      "spiegazione": "Il testo indica che la proprietà dei cavi da parte di Google, Meta, Amazon, Microsoft 'concentra il controllo dell'infrastruttura di comunicazione globale in poche mani private — una concentrazione di potere che non aveva precedenti storici.' Questo significa che poche aziende private americane controllano l'infrastruttura di cui dipendono miliardi di persone nel mondo.",
+      "riferimento_principale": "📖 ESPLORA — I cavi sottomarini: la spina dorsale fisica di internet"
     }
   ]
 }

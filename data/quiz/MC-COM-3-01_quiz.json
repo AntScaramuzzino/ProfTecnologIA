@@ -1,260 +1,654 @@
 {
   "mc_id": "MC-COM-3-01",
-  "titolo": "Telecomunicazioni e reti",
-  "generato": "2026-05-11",
+  "versione": "2.0",
   "domande": [
     {
+      "id": 1,
       "livello": "F",
-      "domanda": "Cosa trasporta un cavo in fibra ottica?",
+      "domanda": "Cosa significa la parola 'telecomunicazione'?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Corrente elettrica ad alta tensione",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Comunicare a distanza",
+          "corretto": true,
+          "feedback": "Esatto! 'Tele' viene dal greco e significa 'lontano': telecomunicazione = comunicare a distanza."
         },
         {
           "id": "b",
-          "testo": "Segnali luminosi che codificano dati digitali alla velocità della luce",
-          "corretto": true,
-          "feedback": "Esatto! La fibra ottica usa impulsi di luce per trasmettere dati a velocità elevatissime con perdite minime su lunghe distanze."
+          "testo": "Comunicare via telefono",
+          "corretto": false,
+          "feedback": "Non è corretto. Il termine è più ampio: include qualsiasi forma di comunicazione a distanza, non solo il telefono.",
+          "riferimento": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
         },
         {
           "id": "c",
-          "testo": "Onde radio ad alta frequenza",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Comunicare in televisione",
+          "corretto": false,
+          "feedback": "Non è corretto. La televisione è un mezzo di telecomunicazione, non il significato del termine.",
+          "riferimento": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
         },
         {
           "id": "d",
-          "testo": "Fluido refrigerante per i server",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Comunicare in modo digitale",
+          "corretto": false,
+          "feedback": "Non è corretto. Le telecomunicazioni esistevano già in forma analogica prima del digitale.",
+          "riferimento": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
         }
       ],
-      "spiegazione": "La fibra ottica usa impulsi di luce per trasmettere dati a velocità elevatissime con perdite minime su lunghe distanze."
+      "spiegazione": "Telecomunicazione significa letteralmente comunicare a distanza. Il prefisso 'tele' viene dal greco e indica lontananza. Gli esseri umani comunicano a distanza da millenni, con fuochi, tamburi, torri di segnalazione, fino alle reti digitali moderne.",
+      "riferimento_principale": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
     },
     {
+      "id": 2,
       "livello": "F",
-      "domanda": "Cos'è un indirizzo IP?",
+      "domanda": "Chi inventò il telegrafo elettrico nel 1837?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il codice seriale di un dispositivo hardware",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Samuel Morse",
+          "corretto": true,
+          "feedback": "Esatto! Samuel Morse inventò il telegrafo elettrico nel 1837, permettendo per la prima volta di trasmettere messaggi complessi via filo conduttore."
         },
         {
           "id": "b",
-          "testo": "Un'etichetta numerica univoca assegnata a ogni dispositivo in una rete per identificarlo e permettere la comunicazione",
-          "corretto": true,
-          "feedback": "Esatto! L'IP address è come l'indirizzo di casa in internet."
+          "testo": "Alexander Graham Bell",
+          "corretto": false,
+          "feedback": "Non è corretto. Bell inventò il telefono nel 1876, quarant'anni dopo il telegrafo.",
+          "riferimento": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
         },
         {
           "id": "c",
-          "testo": "La velocità di connessione di un dispositivo",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Guglielmo Marconi",
+          "corretto": false,
+          "feedback": "Non è corretto. Marconi realizzò la prima trasmissione radio senza fili nel 1895, quasi 60 anni dopo il telegrafo.",
+          "riferimento": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
         },
         {
           "id": "d",
-          "testo": "Il nome del provider di connessione Internet",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Tim Berners-Lee",
+          "corretto": false,
+          "feedback": "Non è corretto. Berners-Lee inventò il World Wide Web nel 1991.",
+          "riferimento": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
         }
       ],
-      "spiegazione": "L'IP address è come l'indirizzo di casa in internet. Senza di esso i pacchetti di dati non saprebbero dove andare."
+      "spiegazione": "Samuel Morse inventò il telegrafo elettrico nel 1837. Fu la prima tecnologia in grado di trasmettere messaggi complessi attraverso fili conduttori usando impulsi di corrente elettrica, aprendo l'era delle telecomunicazioni moderne.",
+      "riferimento_principale": "📖 ESPLORA — Dal fuoco al fotone: una storia brevissima delle telecomunicazioni"
     },
     {
+      "id": 3,
       "livello": "F",
-      "domanda": "Cos'è il protocollo HTTP?",
+      "domanda": "Cos'è un segnale digitale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un tipo di cavo per connessioni internet",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Un segnale che usa solo due valori: 0 e 1",
+          "corretto": true,
+          "feedback": "Esatto! Un segnale digitale usa solo due valori (spento/acceso, 0/1), a differenza del segnale analogico che varia in modo continuo."
         },
         {
           "id": "b",
-          "testo": "Il protocollo di comunicazione che definisce come browser e server web si scambiano pagine web",
-          "corretto": true,
-          "feedback": "Esatto! HTTP (Hypertext Transfer Protocol) è la lingua comune tra browser e server."
+          "testo": "Un segnale che varia in modo continuo",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello che descrivi è un segnale analogico, non digitale.",
+          "riferimento": "📖 ESPLORA — Segnali analogici e digitali: la differenza che cambia tutto"
         },
         {
           "id": "c",
-          "testo": "Un sistema di sicurezza per le reti wifi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Un segnale trasmesso solo via fibra ottica",
+          "corretto": false,
+          "feedback": "Non è corretto. I segnali digitali si trasmettono su molti tipi di supporto, non solo fibra ottica.",
+          "riferimento": "📖 ESPLORA — Segnali analogici e digitali: la differenza che cambia tutto"
         },
         {
           "id": "d",
-          "testo": "Un formato di compressione dei file multimediali",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Un segnale ad alta frequenza",
+          "corretto": false,
+          "feedback": "Non è corretto. La frequenza non è ciò che distingue un segnale digitale da uno analogico.",
+          "riferimento": "📖 ESPLORA — Segnali analogici e digitali: la differenza che cambia tutto"
         }
       ],
-      "spiegazione": "HTTP (Hypertext Transfer Protocol) è la lingua comune tra browser e server. HTTPS aggiunge la crittografia per la sicurezza."
+      "spiegazione": "Un segnale digitale usa solo due valori: 0 e 1 (spento/acceso). Qualsiasi informazione — voce, immagine, testo — viene convertita in una sequenza di 0 e 1 prima di essere trasmessa. Questa conversione si chiama digitalizzazione.",
+      "riferimento_principale": "📖 ESPLORA — Segnali analogici e digitali: la differenza che cambia tutto"
     },
     {
-      "livello": "I",
-      "domanda": "Cos'è la latenza in una rete e perché è importante?",
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa significa 'latenza' nelle reti mobili?",
       "opzioni": [
         {
           "id": "a",
+          "testo": "Il ritardo nella trasmissione dei dati",
+          "corretto": true,
+          "feedback": "Esatto! La latenza è il ritardo tra l'invio e la ricezione di un segnale. È misurata in millisecondi e distingue le generazioni di rete mobile."
+        },
+        {
+          "id": "b",
           "testo": "La velocità massima di download",
-          "feedback": "Rileggi la sezione per capire meglio."
-        },
-        {
-          "id": "b",
-          "testo": "Il tempo che un pacchetto di dati impiega per andare dalla sorgente alla destinazione e tornare (round-trip time)",
-          "corretto": true,
-          "feedback": "Esatto! La latenza è critica per gaming, videoconferenze e sistemi real-time."
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità di download misura quanti dati si trasferiscono al secondo, non il ritardo.",
+          "riferimento": "📖 ESPLORA — Le reti mobili: da 2G a 5G"
         },
         {
           "id": "c",
-          "testo": "Il numero di dispositivi connessi simultaneamente",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "La copertura geografica della rete",
+          "corretto": false,
+          "feedback": "Non è corretto. La copertura indica dove la rete è disponibile, non la latenza.",
+          "riferimento": "📖 ESPLORA — Le reti mobili: da 2G a 5G"
         },
         {
           "id": "d",
-          "testo": "La quantità di dati trasmessi per secondo",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il numero di dispositivi connessi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero di dispositivi connessi riguarda la capacità della rete, non la latenza.",
+          "riferimento": "📖 ESPLORA — Le reti mobili: da 2G a 5G"
         }
       ],
-      "spiegazione": "La latenza è critica per gaming, videoconferenze e sistemi real-time. Le fibre ottiche sottomarine la riducono al minimo tra continenti."
+      "spiegazione": "La latenza è il ritardo nella trasmissione dei dati, misurato in millisecondi. Il 4G ha una latenza di 30-50 ms; il 5G la riduce a 1-10 ms. Questa differenza è cruciale per applicazioni in tempo reale come veicoli autonomi.",
+      "riferimento_principale": "📖 ESPLORA — Le reti mobili: da 2G a 5G"
     },
     {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa fa un router nella rete?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Collega reti diverse e instrada i pacchetti tra esse",
+          "corretto": true,
+          "feedback": "Esatto! Il router connette reti diverse (es. la tua rete locale con Internet) e instrada i pacchetti basandosi sugli indirizzi IP."
+        },
+        {
+          "id": "b",
+          "testo": "Collega dispositivi all'interno della stessa rete locale",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello che descrivi è la funzione di uno switch, non di un router.",
+          "riferimento": "📖 ESPLORA — Router e switch: i vigili del traffico"
+        },
+        {
+          "id": "c",
+          "testo": "Traduce nomi di dominio in indirizzi IP",
+          "corretto": false,
+          "feedback": "Non è corretto. Quella è la funzione del DNS (Domain Name System), non del router.",
+          "riferimento": "📖 ESPLORA — Router e switch: i vigili del traffico"
+        },
+        {
+          "id": "d",
+          "testo": "Amplifica il segnale Wi-Fi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il router può avere un access point Wi-Fi integrato, ma la sua funzione principale è instradare il traffico tra reti.",
+          "riferimento": "📖 ESPLORA — Router e switch: i vigili del traffico"
+        }
+      ],
+      "spiegazione": "Il router collega reti diverse e instrada i pacchetti tra esse basandosi sull'indirizzo IP. A casa connette la rete locale (LAN) alla rete dell'operatore (WAN). Diverso dallo switch, che collega dispositivi all'interno della stessa rete.",
+      "riferimento_principale": "📖 ESPLORA — Router e switch: i vigili del traffico"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quanti cavi sottomarini trasportano circa il 95% del traffico Internet mondiale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Circa 400 cavi sottomarini attivi",
+          "corretto": true,
+          "feedback": "Esatto! Nel 2024 esistono circa 400 cavi sottomarini attivi, per oltre 1,3 milioni di km di lunghezza totale, che trasportano più del 95% del traffico Internet globale."
+        },
+        {
+          "id": "b",
+          "testo": "Circa 50 cavi sottomarini",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero reale è molto superiore: circa 400 cavi nel 2024.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+        },
+        {
+          "id": "c",
+          "testo": "Circa 20 cavi sottomarini",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo numero sarebbe insufficiente per connettere tutti i continenti con la banda necessaria.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+        },
+        {
+          "id": "d",
+          "testo": "Circa 1.000 cavi sottomarini",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero reale è inferiore: circa 400 cavi nel 2024.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+        }
+      ],
+      "spiegazione": "Nel 2024 esistono circa 400 cavi sottomarini attivi, per una lunghezza totale superiore a 1,3 milioni di km. Questi cavi, spessi quanto un tubo da giardino esternamente, trasportano oltre il 95% di tutto il traffico Internet mondiale.",
+      "riferimento_principale": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+    },
+    {
+      "id": 7,
       "livello": "I",
-      "domanda": "Come funziona il DNS (Domain Name System)?",
+      "domanda": "Perché la luce percorre 9.200 km da Roma a Tokyo in meno di 50 ms, ma il ritardo reale è circa 200 ms?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Protegge la rete dagli attacchi informatici",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "I restanti 150 ms sono dovuti all'elaborazione nei router, conversioni digitali e routing",
+          "corretto": true,
+          "feedback": "Esatto! Il testo lo spiega nel box Fisica: il percorso fisico richiede meno di 50 ms, ma l'elaborazione nei nodi di rete aggiunge circa 150 ms."
         },
         {
           "id": "b",
-          "testo": "Traduce i nomi di dominio leggibili (es. google.com) in indirizzi IP numerici comprensibili dai computer: è la rubrica di Internet",
-          "corretto": true,
-          "feedback": "Esatto! Senza DNS non potremmo usare nomi: dovremmo ricordare indirizzi IP numerici per ogni sito."
+          "testo": "La fibra ottica trasmette la luce più lentamente dell'aria",
+          "corretto": false,
+          "feedback": "Non è corretto. La luce nella fibra viaggia a ~200.000 km/s: la velocità è sufficiente per coprire la distanza in meno di 50 ms.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
         },
         {
           "id": "c",
-          "testo": "Assegna automaticamente gli indirizzi IP ai dispositivi",
-          "feedback": "Questo è il DHCP."
+          "testo": "Il segnale deve essere amplificato ogni 100 km, il che causa ritardi",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche gli amplificatori contribuiscono, ma il testo indica i router e le conversioni digitali come cause principali.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
         },
         {
           "id": "d",
-          "testo": "Gestisce la velocità della connessione internet",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Il cavo sottomarino non va in linea retta e percorre il doppio della distanza",
+          "corretto": false,
+          "feedback": "Non è corretto. Il percorso più lungo spiega parte del ritardo, ma il testo identifica l'elaborazione nei router come causa principale.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
         }
       ],
-      "spiegazione": "Senza DNS non potremmo usare nomi: dovremmo ricordare indirizzi IP numerici per ogni sito. È uno dei servizi più critici di Internet."
+      "spiegazione": "La luce nella fibra ottica percorre 9.200 km in meno di 50 ms. I restanti 150 ms del ritardo reale (~200 ms totali) sono causati dall'elaborazione dei segnali nei router, dalle conversioni digitali e dal routing tra reti diverse lungo il percorso.",
+      "riferimento_principale": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
     },
     {
+      "id": 8,
       "livello": "I",
-      "domanda": "Cos'è la 'banda larga' e come si misura?",
+      "domanda": "Qual è la differenza pratica tra la banda 2,4 GHz e 5 GHz del Wi-Fi?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il numero di dispositivi connessi alla rete",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "2,4 GHz ha più portata ma meno velocità; 5 GHz ha meno portata ma più velocità",
+          "corretto": true,
+          "feedback": "Esatto! Il 2,4 GHz arriva fino a ~30 m al chiuso e penetra meglio i muri; il 5 GHz è più veloce ma raggiunge solo ~15 m e viene assorbito dai muri."
         },
         {
           "id": "b",
-          "testo": "La capacità di trasmissione di una rete, misurata in Megabit o Gigabit per secondo (Mbps/Gbps): maggiore è la banda, più dati si trasmettono contemporaneamente",
-          "corretto": true,
-          "feedback": "Esatto! La banda larga è la larghezza del 'tubo' di internet."
+          "testo": "5 GHz ha sempre più portata e più velocità del 2,4 GHz",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 5 GHz è più veloce ma ha portata inferiore e viene assorbito più facilmente dai muri.",
+          "riferimento": "📖 ESPLORA — Wi-Fi — due bande a confronto"
         },
         {
           "id": "c",
-          "testo": "La distanza coperta da una rete wifi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Le due bande sono equivalenti, si scelgono in base al dispositivo",
+          "corretto": false,
+          "feedback": "Non è corretto. Le due bande hanno caratteristiche tecniche diverse e si scelgono in base a distanza e tipo di utilizzo.",
+          "riferimento": "📖 ESPLORA — Wi-Fi — due bande a confronto"
         },
         {
           "id": "d",
-          "testo": "La sicurezza della connessione internet",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "2,4 GHz è sempre preferibile perché ha meno interferenze",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 2,4 GHz soffre di più interferenze (forni a microonde, Bluetooth) rispetto al 5 GHz.",
+          "riferimento": "📖 ESPLORA — Wi-Fi — due bande a confronto"
         }
       ],
-      "spiegazione": "La banda larga è la larghezza del 'tubo' di internet. Alta banda = molti dati insieme; bassa latenza = dati veloci."
+      "spiegazione": "Il 2,4 GHz offre maggiore portata (~30 m) e penetra meglio le pareti, ma ha velocità inferiore e più interferenze. Il 5 GHz è molto più veloce (fino a 3,5 Gbit/s) ma copre meno distanza (~15 m) e viene assorbito dai muri. Usa il 5 GHz vicino al router, il 2,4 GHz nelle stanze lontane.",
+      "riferimento_principale": "📖 ESPLORA — Wi-Fi — due bande a confronto"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è il 5G e perché cambierà le comunicazioni?",
+      "id": 9,
+      "livello": "I",
+      "domanda": "Cosa garantisce il protocollo TCP rispetto al protocollo IP?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La quinta generazione di telefoni smartphone",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Che tutti i pacchetti arrivino a destinazione e nel giusto ordine",
+          "corretto": true,
+          "feedback": "Esatto! TCP si occupa di garantire che tutti i pacchetti arrivino e nel giusto ordine. Se un pacchetto si perde, TCP lo ritrasmette."
         },
         {
           "id": "b",
-          "testo": "Il quinto standard di telefonia mobile con latenza ultra-bassa (<1ms), altissima capacità e connettività massiva per IoT: abilita veicoli autonomi, telemedicina e industria 4.0",
-          "corretto": true,
-          "feedback": "Esatto! Il 5G non è solo 'internet più veloce': la latenza ultra-bassa e la connettività massiva abilitano applicazioni che il 4G non può supportare."
+          "testo": "Che i dati viaggino alla massima velocità possibile",
+          "corretto": false,
+          "feedback": "Non è corretto. TCP è più lento ma affidabile. UDP è più veloce ma non garantisce la consegna.",
+          "riferimento": "📖 ESPLORA — TCP/IP: la lingua di Internet"
         },
         {
           "id": "c",
-          "testo": "Una rete wifi più veloce del 4G",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Che i pacchetti prendano sempre lo stesso percorso",
+          "corretto": false,
+          "feedback": "Non è corretto. IP non garantisce percorsi fissi: i pacchetti possono passare per router diversi.",
+          "riferimento": "📖 ESPLORA — TCP/IP: la lingua di Internet"
         },
         {
           "id": "d",
-          "testo": "Un sistema di comunicazione via satellite",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Che i dati siano cifrati durante la trasmissione",
+          "corretto": false,
+          "feedback": "Non è corretto. La cifratura è gestita da protocolli come TLS/HTTPS, non da TCP.",
+          "riferimento": "📖 ESPLORA — TCP/IP: la lingua di Internet"
         }
       ],
-      "spiegazione": "Il 5G non è solo 'internet più veloce': la latenza ultra-bassa e la connettività massiva abilitano applicazioni che il 4G non può supportare."
+      "spiegazione": "TCP (Transmission Control Protocol) garantisce che tutti i pacchetti arrivino a destinazione e nel giusto ordine. Se un pacchetto si perde, TCP chiede la ritrasmissione. IP invece si occupa solo di assegnare indirizzi e suddividere i dati in pacchetti.",
+      "riferimento_principale": "📖 ESPLORA — TCP/IP: la lingua di Internet"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è l'architettura 'client-server' e come si distingue dal 'peer-to-peer'?",
+      "id": 10,
+      "livello": "I",
+      "domanda": "Perché si preferisce il protocollo UDP al TCP per il gaming online in tempo reale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Client-server usa server centrali che forniscono servizi ai client; peer-to-peer distribuisce le risorse tra nodi equivalenti",
+          "testo": "UDP è più veloce perché non garantisce la consegna di ogni pacchetto",
           "corretto": true,
-          "feedback": "Esatto! Web, email, cloud = client-server."
+          "feedback": "Esatto! UDP non aspetta la conferma di ricezione di ogni pacchetto, quindi è più veloce. In un gioco in tempo reale, perdere un pacchetto è meglio che attendere la ritrasmissione."
         },
         {
           "id": "b",
-          "testo": "Client-server è più lento, peer-to-peer è più veloce",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "UDP cifra i dati meglio di TCP",
+          "corretto": false,
+          "feedback": "Non è corretto. UDP e TCP non differiscono per cifratura: entrambi trasmettono dati in chiaro senza HTTPS.",
+          "riferimento": "📖 ESPLORA — TCP/IP: la lingua di Internet"
         },
         {
           "id": "c",
-          "testo": "Client-server è per reti locali, peer-to-peer per Internet",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "UDP usa indirizzi IP più efficienti",
+          "corretto": false,
+          "feedback": "Non è corretto. UDP e TCP usano entrambi indirizzi IP: la differenza riguarda l'affidabilità della consegna.",
+          "riferimento": "📖 ESPLORA — TCP/IP: la lingua di Internet"
         },
         {
           "id": "d",
-          "testo": "Non c'è differenza funzionale rilevante",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "UDP comprime i dati in modo più efficiente",
+          "corretto": false,
+          "feedback": "Non è corretto. UDP non comprime i dati: la sua velocità deriva dall'assenza del meccanismo di conferma ricezione.",
+          "riferimento": "📖 ESPLORA — TCP/IP: la lingua di Internet"
         }
       ],
-      "spiegazione": "Web, email, cloud = client-server. BitTorrent, blockchain = peer-to-peer. Il P2P è più resiliente ma meno controllabile."
+      "spiegazione": "UDP (User Datagram Protocol) non garantisce che tutti i pacchetti arrivino a destinazione, ma è molto più veloce di TCP. Nel gaming online in tempo reale, la bassa latenza è fondamentale: è meglio perdere un pacchetto (e avere un piccolo 'lag') che aspettare la ritrasmissione.",
+      "riferimento_principale": "📖 ESPLORA — TCP/IP: la lingua di Internet"
     },
     {
-      "livello": "A",
-      "domanda": "Cos'è la 'net neutrality' (neutralità della rete) e perché è dibattuta?",
+      "id": 11,
+      "livello": "I",
+      "domanda": "Cosa fa un firewall in una rete scolastica?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il principio che Internet deve essere gratuito per tutti i cittadini",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Filtra il traffico in base a regole predefinite su indirizzi IP, porte e protocolli",
+          "corretto": true,
+          "feedback": "Esatto! Il firewall controlla ogni pacchetto in entrata e uscita secondo regole: da quale IP arriva, a quale porta è diretto, che protocollo usa."
         },
         {
           "id": "b",
-          "testo": "Il principio che i provider devono trattare tutto il traffico internet allo stesso modo senza discriminare per contenuto, sito o servizio",
-          "corretto": true,
-          "feedback": "Esatto! Senza net neutrality i provider potrebbero rallentare Netflix per favorire il proprio servizio streaming."
+          "testo": "Cifra tutte le comunicazioni della scuola",
+          "corretto": false,
+          "feedback": "Non è corretto. La cifratura è gestita da VPN o HTTPS, non dal firewall.",
+          "riferimento": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
         },
         {
           "id": "c",
-          "testo": "La distribuzione equa della banda tra i paesi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Aumenta la velocità della connessione Internet",
+          "corretto": false,
+          "feedback": "Non è corretto. Il firewall può rallentare leggermente il traffico per analizzarlo, ma il suo scopo è la sicurezza.",
+          "riferimento": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
         },
         {
           "id": "d",
-          "testo": "La gestione neutrale dei social network da parte dei governi",
-          "feedback": "Rileggi la sezione per capire meglio."
+          "testo": "Distribuisce la connessione tra tutti i dispositivi scolastici",
+          "corretto": false,
+          "feedback": "Non è corretto. La distribuzione della connessione è compito del router e degli switch.",
+          "riferimento": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
         }
       ],
-      "spiegazione": "Senza net neutrality i provider potrebbero rallentare Netflix per favorire il proprio servizio streaming. È una questione fondamentale di libertà di Internet."
+      "spiegazione": "Il firewall filtra il traffico di rete in entrata e uscita secondo regole predefinite. Controlla l'indirizzo IP di origine, la porta di destinazione e il tipo di protocollo. Nelle scuole, impedisce l'accesso a siti non appropriati e blocca connessioni non autorizzate.",
+      "riferimento_principale": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Cosa NON garantisce una VPN gratuita, contrariamente a quanto si crede?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'anonimato completo, perché il server VPN conosce la tua identità",
+          "corretto": true,
+          "feedback": "Esatto! Una VPN non ti rende anonimo: il server VPN sa chi sei. Inoltre, una VPN gratuita spesso vende i tuoi dati per finanziarsi."
+        },
+        {
+          "id": "b",
+          "testo": "La cifratura del traffico",
+          "corretto": false,
+          "feedback": "Non è corretto. Anche una VPN gratuita cifra il traffico tra te e il server VPN. Il problema è l'anonimato e la fiducia nel fornitore.",
+          "riferimento": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
+        },
+        {
+          "id": "c",
+          "testo": "L'accesso a contenuti geograficamente limitati",
+          "corretto": false,
+          "feedback": "Non è corretto. Le VPN possono effettivamente sbloccare contenuti geograficamente limitati.",
+          "riferimento": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
+        },
+        {
+          "id": "d",
+          "testo": "La protezione su reti Wi-Fi pubbliche",
+          "corretto": false,
+          "feedback": "Non è corretto. Le VPN proteggono il traffico anche su reti Wi-Fi pubbliche non sicure.",
+          "riferimento": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
+        }
+      ],
+      "spiegazione": "Una VPN non garantisce l'anonimato: il server VPN sa sempre chi sei (ti ha fornito accesso). Rende più difficile, non impossibile, tracciare il traffico. Le VPN gratuite spesso vendono i dati degli utenti per finanziarsi — esattamente l'opposto del motivo per cui le si usa.",
+      "riferimento_principale": "📖 ESPLORA — Sicurezza delle reti: firewall e VPN"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Il cavo sottomarino MAREA (2017) connette Virginia Beach e Bilbao: quali implicazioni politiche ha il fatto che sia di proprietà di Microsoft e Facebook?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Concentra il controllo dell'infrastruttura di comunicazione globale in poche mani private",
+          "corretto": true,
+          "feedback": "Esatto! Il testo sottolinea che chi possiede i cavi possiede l'infrastruttura della comunicazione globale — con implicazioni politiche che vanno oltre la tecnologia."
+        },
+        {
+          "id": "b",
+          "testo": "Rende il cavo più sicuro perché le aziende private investono in protezione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non indica la sicurezza come conseguenza della proprietà privata, anzi evidenzia la vulnerabilità dei cavi.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+        },
+        {
+          "id": "c",
+          "testo": "Riduce i costi per gli utenti finali grazie alle economie di scala",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non collega la proprietà privata dei cavi ai costi per gli utenti.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+        },
+        {
+          "id": "d",
+          "testo": "Garantisce che il traffico sia sempre neutrale e non monitorato",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo evidenzia proprio il contrario: la proprietà concentrata crea potenziali rischi per la neutralità.",
+          "riferimento": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+        }
+      ],
+      "spiegazione": "Quando Google, Meta, Microsoft e Amazon posseggono i cavi sottomarini, si concentra il controllo dell'infrastruttura di comunicazione globale in poche mani private. Il testo afferma esplicitamente che 'chi possiede i cavi possiede l'infrastruttura della comunicazione globale' con implicazioni politiche enormi.",
+      "riferimento_principale": "📖 ESPLORA — Come viaggia il tuo messaggio: la trasmissione via cavo"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Nel 2022, il vulcano Hunga Tonga recise i cavi sottomarini delle isole Tonga. Quale vulnerabilità sistemica evidenzia questo evento?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il 95% del traffico Internet globale dipende da infrastrutture fisiche facilmente danneggiabili",
+          "corretto": true,
+          "feedback": "Esatto! L'evento di Tonga mostra che Internet, nonostante la sua architettura distribuita, dipende da cavi fisici vulnerabili. 100.000 persone rimasero isolate per 5 settimane."
+        },
+        {
+          "id": "b",
+          "testo": "Le isole remote non dovrebbero dipendere da Internet",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo evidenzia la vulnerabilità dell'infrastruttura come problema sistemico, non suggerisce l'isolamento.",
+          "riferimento": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+        },
+        {
+          "id": "c",
+          "testo": "I satelliti potrebbero sostituire i cavi sottomarini in qualsiasi situazione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non propone i satelliti come soluzione alternativa e non ne discute le limitazioni.",
+          "riferimento": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+        },
+        {
+          "id": "d",
+          "testo": "Solo i vulcani sono una minaccia reale per i cavi sottomarini",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo cita anche ancore, terremoti e sabotaggi deliberati come minacce ai cavi.",
+          "riferimento": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+        }
+      ],
+      "spiegazione": "L'evento di Tonga (2022) dimostra che nonostante Internet sia progettata per essere distribuita e resiliente, la sua infrastruttura fisica — i cavi sottomarini — è vulnerabile. Circa 100.000 persone rimasero isolate per 5 settimane. La riparazione richiede navi specializzate che impiegano settimane.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Analizza la mappa Wi-Fi della tua scuola: perché un segnale di -80 dBm è considerato scarso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i dBm sono logaritmici: -80 dBm è 1.000 volte più debole di -50 dBm",
+          "corretto": true,
+          "feedback": "Esatto! I dBm usano una scala logaritmica dove ogni 10 dB corrispondono a un segnale 10 volte più forte. -50 dBm è ottimo; -80 dBm è sotto la soglia di stabilità."
+        },
+        {
+          "id": "b",
+          "testo": "Perché -80 è un numero troppo grande per il Wi-Fi",
+          "corretto": false,
+          "feedback": "Non è corretto. I dBm sono negativi: più vicino a zero = più forte il segnale. -40 dBm è eccellente, -80 dBm è scarso.",
+          "riferimento": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+        },
+        {
+          "id": "c",
+          "testo": "Perché il router non è configurato correttamente a quella potenza",
+          "corretto": false,
+          "feedback": "Non è corretto. Il valore in dBm indica la potenza del segnale ricevuto, non una configurazione del router.",
+          "riferimento": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+        },
+        {
+          "id": "d",
+          "testo": "Perché gli standard Wi-Fi richiedono un segnale positivo",
+          "corretto": false,
+          "feedback": "Non è corretto. I valori dBm sono sempre negativi per i segnali Wi-Fi: più vicini a zero = più potenti.",
+          "riferimento": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+        }
+      ],
+      "spiegazione": "I dBm usano una scala logaritmica: ogni 10 dB di differenza corrispondono a un segnale 10 volte più forte o debole. Quindi -50 dBm è 10 volte più forte di -60 dBm, e 100 volte più forte di -70 dBm. Sotto -80 dBm la connessione diventa instabile perché il segnale è troppo debole rispetto al rumore di fondo.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "La connessione Internet è lenta. Quale approccio sistematico permette di identificare la causa reale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Testare la velocità con speedtest.net e poi isolare il problema tra Wi-Fi, banda verso Internet, o server remoto",
+          "corretto": true,
+          "feedback": "Esatto! Il testo insegna a separare i possibili problemi: numero di dispositivi sull'access point, saturazione della banda, interferenze Wi-Fi, o problemi sul server remoto."
+        },
+        {
+          "id": "b",
+          "testo": "Riavviare il router: risolve sempre il problema",
+          "corretto": false,
+          "feedback": "Non è corretto. Il riavvio del router può aiutare ma non identifica la causa: il problema potrebbe essere sul server remoto o nella banda dell'operatore.",
+          "riferimento": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+        },
+        {
+          "id": "c",
+          "testo": "Chiedere all'operatore di aumentare la velocità della connessione",
+          "corretto": false,
+          "feedback": "Non è corretto. Prima di contattare l'operatore occorre verificare se il problema dipende da fattori interni (Wi-Fi, dispositivi) o effettivamente dalla connessione.",
+          "riferimento": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+        },
+        {
+          "id": "d",
+          "testo": "Passare sempre alla banda 5 GHz del Wi-Fi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 5 GHz può migliorare la situazione se il problema è il Wi-Fi, ma non risolve problemi di banda verso Internet o sul server remoto.",
+          "riferimento": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+        }
+      ],
+      "spiegazione": "Il testo insegna che la lentezza della connessione può dipendere da cause diverse: troppi dispositivi sull'access point, saturazione della banda dell'operatore, interferenze sul canale Wi-Fi, o problemi sul server remoto. Solo un test sistematico (speedtest, analisi del canale, verifica del numero di dispositivi) permette di identificare la causa reale.",
+      "riferimento_principale": "🔍 OSSERVA — Il caso: mappare l'invisibile — la tua scuola come sistema di reti"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Valuta questa affermazione: 'La distribuzione dei cavi sottomarini è equa a livello globale'. È corretta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "No: la maggior parte dei punti di atterraggio è in Europa occidentale, Nord America e Asia orientale",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che la copertura è molto disomogenea: Africa subsahariana, Oceania rurale e centro-sud dell'Asia hanno copertura molto inferiore."
+        },
+        {
+          "id": "b",
+          "testo": "Sì: Internet è distribuita per definizione, quindi la copertura è uniforme",
+          "corretto": false,
+          "feedback": "Non è corretto. L'architettura distribuita riguarda la resilienza, non l'equità geografica dei punti di atterraggio.",
+          "riferimento": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+        },
+        {
+          "id": "c",
+          "testo": "Sì: il 5G sta colmando le lacune nelle zone non coperte da cavi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 5G è tecnologia radio locale, non un sostituto dei cavi sottomarini per la connettività intercontinentale.",
+          "riferimento": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+        },
+        {
+          "id": "d",
+          "testo": "No, ma solo perché le aree meno sviluppate non hanno domanda di Internet",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo indica che la 'connettività universale è ancora molto lontana', suggerendo che la domanda esiste ma l'offerta non è equamente distribuita.",
+          "riferimento": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+        }
+      ],
+      "spiegazione": "La distribuzione dei cavi sottomarini è profondamente diseguale. Il testo invita a osservare su submarinecablemap.com come la gran parte dei punti di atterraggio sia concentrata in Europa occidentale, Nord America e Asia orientale. Africa subsahariana, Oceania rurale e centro-sud dell'Asia hanno copertura molto inferiore. La 'connettività universale' è ancora lontana dall'essere universale.",
+      "riferimento_principale": "📖 ESPLORA — Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "In che modo il ruolo di Network Infrastructure Designer diventerà più complesso con l'arrivo del 5G e dell'IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché milioni di dispositivi connessi richiedono reti molto più complesse da progettare e proteggere",
+          "corretto": true,
+          "feedback": "Esatto! Il testo indica che con IoT una fabbrica ha migliaia di dispositivi connessi e una città intelligente ne ha milioni: la complessità cresce enormemente."
+        },
+        {
+          "id": "b",
+          "testo": "Perché il 5G eliminerà la necessità dei cavi e semplificherà le reti",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 5G si affianca all'infrastruttura cablata senza eliminarla: la complessità aumenta, non diminuisce.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "c",
+          "testo": "Perché il Network Designer dovrà imparare a riparare i cavi sottomarini",
+          "corretto": false,
+          "feedback": "Non è corretto. La riparazione dei cavi sottomarini è un'attività specializzata diversa dalla progettazione delle reti.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il 5G richiede antenne più grandi e costose da installare",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non menziona le dimensioni delle antenne come fattore di complessità per il Network Designer.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        }
+      ],
+      "spiegazione": "Con il 5G e l'IoT, la complessità delle reti aumenta enormemente: un'abitazione moderna ha decine di dispositivi connessi, una fabbrica 4.0 ne ha migliaia, una città intelligente ne ha milioni. Il Network Infrastructure Designer deve progettare reti che gestiscano questa complessità in modo affidabile e sicuro.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
     }
-  ],
-  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+  ]
 }
