@@ -37,6 +37,7 @@ import ProcessWidget from "@/components/mc/ProcessWidget";
 import MCVisual from "@/components/MCVisual";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
+import ProfessioneCard from "@/components/mc/ProfessioneCard";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
@@ -386,6 +387,16 @@ function ZonePanel({
     return (
       <div className="px-4 py-6 sm:px-6">
         <ReadableBodyInTab body={body} />
+
+        {/* Professione del Futuro — immagine + dati da JSON MC */}
+        {mc.professione_futura?.titolo && (
+          <ProfessioneCard
+            professione={mc.professione_futura as { titolo: string; orizzonte?: string; descrizione_breve?: string; competenze_chiave?: string[] }}
+            mcId={mc.id}
+            areaHex={areaHex}
+          />
+        )}
+
         {/* Gallery video YouTube 9 video */}
         {videoPlaylist.length > 3 && (
           <div className="mt-8">
