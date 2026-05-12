@@ -122,6 +122,21 @@ function splitEsploraIntoAccordion(body: string): { id: string; title: string; b
   return result.length > 0 ? result : [{ id: "esplora-0", title: "Leggi", body }];
 }
 
+// ── Estrae la sezione "Professione del Futuro" dal body di OSSERVA ───────────
+// Restituisce { professioneText, bodyWithout } per evitare duplicazione
+
+function extractProfessioneSection(body: string): { professioneText: string; bodyWithout: string } {
+  // Cerca @@SUBHEAD: che contiene "chi lavora", "professione", "2030", "futuro"
+  const pattern = /\n@@SUBHEAD:([^\n]*(chi lavora|professione|2030|futuro)[^\n]*)\n([\s\S]*?)(?=\n@@SUBHEAD:|\n---|\s*$)/i;
+  const match = body.match(pattern);
+  if (!match) return { professioneText: "", bodyWithout: body };
+
+  const fullMatch = match[0];
+  const professioneText = match[1].trim() + "\n" + match[3].trim(); // titolo + corpo
+  const bodyWithout = body.replace(fullMatch, "\n").replace(/\n{3,}/g, "\n\n").trim();
+  return { professioneText, bodyWithout };
+}
+
 // ── Estrae il body grezzo di AGISCI per il RubricaDrawer ────────────────────
 
 function getAgisciRawBody(text: MCTextContent | null): string {
@@ -384,20 +399,24 @@ function ZonePanel({
 
   // ── OSSERVA ───────────────────────────────────────────────────────────────
   if (tabId === "OSSERVA") {
+    const { professioneText, bodyWithout } = extractProfessioneSection(body);
+
     return (
       <div className="px-4 py-6 sm:px-6">
-        <ReadableBodyInTab body={body} />
+        {/* Testo OSSERVA senza la sezione professione (evita duplicazione) */}
+        <ReadableBodyInTab body={bodyWithout} />
 
-        {/* Professione del Futuro — immagine + dati da JSON MC */}
+        {/* Professione del Futuro — immagine + testo narrativo dal MD + dati JSON */}
         {mc.professione_futura?.titolo && (
           <ProfessioneCard
             professione={mc.professione_futura as { titolo: string; orizzonte?: string; descrizione_breve?: string; competenze_chiave?: string[] }}
+            professioneText={professioneText}
             mcId={mc.id}
             areaHex={areaHex}
           />
         )}
 
-        {/* Gallery video YouTube 9 video */}
+        {/* Gallery video YouTube — 9 video */}
         {videoPlaylist.length > 3 && (
           <div className="mt-8">
             <VideoGallery videos={videoPlaylist.slice(3, 12)} mcTitolo={mc.titolo} />

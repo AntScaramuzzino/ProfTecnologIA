@@ -2,7 +2,9 @@
 
 /**
  * ProfessioneCard — Professione del Futuro 2030
- * Usa <img> plain (stessa strategia di MCVisual) per compatibilità GitHub Pages / static export.
+ *
+ * Mostra immagine img4-professione + testo narrativo estratto da OSSERVA
+ * + dati strutturati dal JSON MC (competenze chiave, orizzonte).
  */
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -16,11 +18,43 @@ export interface ProfessioneFutura {
 
 interface ProfessioneCardProps {
   professione: ProfessioneFutura;
+  /** Testo narrativo estratto dal MD di OSSERVA (descrizione estesa, dove lavora, citazione) */
+  professioneText?: string;
   mcId: string;
   areaHex?: string;
 }
 
-export default function ProfessioneCard({ professione, mcId, areaHex }: ProfessioneCardProps) {
+/** Renderizza il testo della professione: paragrafi, "Dove lavora:", citazione in corsivo */
+function ProfessioneText({ text }: { text: string }) {
+  const blocks = text.split(/\n{2,}/).map(b => b.trim()).filter(Boolean);
+  return (
+    <div className="space-y-3 text-sm leading-6 text-slate-600">
+      {blocks.map((block, i) => {
+        // Citazione in corsivo (es. *"Non posso controllare..."*)
+        if (/^\*".+"\*$/.test(block) || /^".+"$/.test(block)) {
+          return (
+            <blockquote key={i} className="border-l-2 border-slate-300 pl-3 italic text-slate-500">
+              {block.replace(/^\*?"?|"?\*?$/g, "").trim()}
+            </blockquote>
+          );
+        }
+        // "Dove lavora:" o "Competenze chiave:" — evidenzia l'etichetta
+        if (/^(Dove lavora|Competenze chiave)[^:]*:/i.test(block)) {
+          const colonIdx = block.indexOf(":");
+          return (
+            <p key={i}>
+              <span className="font-black text-slate-800">{block.slice(0, colonIdx + 1)}</span>
+              {block.slice(colonIdx + 1)}
+            </p>
+          );
+        }
+        return <p key={i}>{block.replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1")}</p>;
+      })}
+    </div>
+  );
+}
+
+export default function ProfessioneCard({ professione, professioneText, mcId, areaHex }: ProfessioneCardProps) {
   const imgSrc = `${BASE_PATH}/assets/visual/${mcId}/${mcId}_img4-professione.png`;
 
   return (
@@ -59,17 +93,19 @@ export default function ProfessioneCard({ professione, mcId, areaHex }: Professi
         </div>
 
         {/* Testo */}
-        <div className="flex flex-col justify-center gap-3 p-5 sm:gap-4">
+        <div className="flex flex-col gap-4 p-5">
           <h3 className="text-lg font-black leading-tight text-slate-950 sm:text-xl">
             {professione.titolo}
           </h3>
 
-          {professione.descrizione_breve && (
-            <p className="text-sm leading-6 text-slate-600">
-              {professione.descrizione_breve}
-            </p>
-          )}
+          {/* Testo narrativo dal MD (descrizione estesa + dove lavora + citazione) */}
+          {professioneText ? (
+            <ProfessioneText text={professioneText} />
+          ) : professione.descrizione_breve ? (
+            <p className="text-sm leading-6 text-slate-600">{professione.descrizione_breve}</p>
+          ) : null}
 
+          {/* Competenze chiave dal JSON */}
           {professione.competenze_chiave && professione.competenze_chiave.length > 0 && (
             <div>
               <p className="mb-2 text-xs font-black uppercase tracking-wider text-slate-400">
