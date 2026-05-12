@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è la tensione elettrica (V) e come si misura?",
-    "back": "La differenza di potenziale elettrico tra due punti: si misura in Volt con un voltmetro collegato in parallelo\n\nLa tensione è la 'pressione' che spinge gli elettroni. Come il dislivello dell'acqua che fa scorrere il fiume: senza dislivello non c'è corrente.",
+    "front": "Cosa produce il movimento collettivo degli elettroni liberi in un conduttore?",
+    "back": "Corrente elettrica\n\nLa corrente elettrica è il flusso ordinato di elettroni liberi in un conduttore. Nei conduttori (come il rame), gli elettroni degli strati esterni sono 'liberi' e si spostano facilmente. Senza una tensione che li spinga in una direzione precisa, si muovono in modo casuale. La tensione organizza questo movimento in un flusso unidirezionale.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la corrente elettrica (I) e come si misura?",
-    "back": "Il flusso di carica elettrica per unità di tempo: si misura in Ampere con un amperometro collegato in serie\n\nLa corrente è il 'flusso' di elettroni. Come la portata di un fiume (litri/secondo). Amperometro in serie = tutti gli elettroni passano attraverso lo strumento.",
+    "front": "In quale unità di misura si misura la tensione elettrica, e in onore di quale scienziato?",
+    "back": "Volt (V), in onore del fisico italiano Alessandro Volta\n\nLa tensione (o differenza di potenziale) si misura in volt (V), in onore del fisico italiano Alessandro Volta che costruì la prima pila elettrica nel 1800. La tensione è la 'spinta' che mette in movimento gli elettroni nel conduttore: senza tensione, gli elettroni non scorrono in modo ordinato.",
     "tag": "Base"
   },
   {
-    "front": "Enunciato della Legge di Ohm.",
-    "back": "V = R × I\n\nV = R × I è la Legge di Ohm: la tensione è uguale alla resistenza per la corrente. Conoscendo due grandezze si ricava la terza.",
+    "front": "Qual è la legge di Ohm?",
+    "back": "V = R × I (la tensione è uguale alla resistenza moltiplicata per la corrente)\n\nLa legge di Ohm (1827): V = R × I. Le tre forme: V = R × I (se conosci R e I calcoli la tensione), I = V/R (se conosci V e R calcoli la corrente), R = V/I (se conosci V e I calcoli la resistenza). È la legge fondamentale dell'elettronica: permette di calcolare qualsiasi grandezza in un circuito conoscendone due.",
     "tag": "Base"
   },
   {
-    "front": "Come si calcola la resistenza equivalente di resistori in serie?",
-    "back": "R_eq = R1 + R2 + ... + Rn\n\nIn serie la corrente passa attraverso tutti i resistori uno dopo l'altro: le resistenze si sommano. Come tubi in fila che aumentano la lunghezza complessiva.",
+    "front": "Cosa succede in un circuito in serie quando si brucia una lampadina?",
+    "back": "Il circuito si interrompe e tutte le lampadine si spengono\n\nIn un circuito in serie c'è un unico percorso per la corrente. La corrente è la stessa in ogni punto: I_tot = I_1 = I_2 = I_3. Se una componente si brucia (interruzione), il percorso si spezza e la corrente si azzera ovunque. Esempio storico: le luci di Natale vecchie in serie — una bruciata spegneva tutte.",
+    "tag": "Base"
+  },
+  {
+    "front": "In quale tensione opera la rete elettrica domestica italiana, e perché è pericolosa?",
+    "back": "230 V: già 100 mA possono essere letali se attraversano il cuore\n\nLa rete elettrica domestica italiana è a 230 V (corrente alternata, 50 Hz). Il testo avverte: 10 mA causano contrazioni muscolari involontarie, 100 mA possono essere letali se attraversano il cuore. Non aprire mai prese o apparecchi, non inserire oggetti metallici nelle prese, non usare apparecchi elettrici vicino all'acqua.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quale componente elettronico si usa per proteggere un LED dal rischio di bruciarsi quando lo si collega a una batteria?",
+    "back": "Un resistore in serie\n\nUn LED ha tensione di lavoro fissa (1,8-3,3V) e corrente massima (10-30 mA). Collegandolo direttamente a una batteria da 9V, la corrente sarebbe enorme e lo brucerebbe in pochi secondi. Il resistore in serie 'assorbe' la tensione in eccesso (9V - 2V_LED = 7V) e limita la corrente a un valore sicuro: R = V/I = 7/0,02 = 350Ω.",
+    "tag": "Base"
+  },
+  {
+    "front": "In un circuito con tre resistenze in parallelo (60Ω, 30Ω, 20Ω) alimentato a 12V, la corrente si divide nei tre rami. Qual è la corrente nel ramo da 30Ω?",
+    "back": "0,4 A: I = V/R = 12/30 = 0,4 A\n\nIn un circuito in parallelo, la tensione è uguale su tutti i rami (V_tot = V_1 = V_2 = V_3). La corrente in ogni ramo si calcola con la legge di Ohm: I_ramo = V/R_ramo. Per il ramo da 30Ω: I = 12V/30Ω = 0,4A. La corrente è maggiore nei rami con meno resistenza.",
     "tag": "Intermedio"
   },
   {
-    "front": "Come si calcola la resistenza equivalente di resistori in parallelo?",
-    "back": "1/R_eq = 1/R1 + 1/R2 → R_eq = R1×R2/(R1+R2) per due resistori\n\nIn parallelo la corrente si divide su più percorsi: la resistenza totale è minore della più piccola. Come più tubi in parallelo che aumentano la portata.",
+    "front": "Il testo spiega che la rete elettrica domestica usa corrente alternata (AC) a 50 Hz mentre i dispositivi digitali usano corrente continua (DC). Come viene gestita questa incompatibilità dai caricatori?",
+    "back": "Il caricatore converte la AC della presa (230V) in DC a bassa tensione (es. 5V) usando un trasformatore e un raddrizzatore\n\nIl caricatore è un convertitore AC→DC: preleva l'AC a 230V dalla rete domestica, usa un trasformatore per abbassarla, un raddrizzatore (diodi) per convertirla in DC pulsante, e un filtro (condensatore) per stabilizzarla. Il risultato è DC a bassa tensione (5V per telefoni, 19V per laptop) usabile dai dispositivi digitali che richiedono tensione continua stabile.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la potenza elettrica e come si calcola?",
-    "back": "L'energia trasferita per unità di tempo: P = V × I (Watt). Derivabile anche come P = R × I² o P = V²/R\n\nLa potenza dice 'quanto velocemente' si usa l'energia. Una lampadina da 60W usa 60 Joule ogni secondo. P = V×I è la formula base; le altre derivano dalla Legge di Ohm.",
+    "front": "Perché l'impianto elettrico domestico è collegato in parallelo (invece che in serie)?",
+    "back": "Perché ogni utenza riceve la tensione piena (230V) e funziona indipendentemente dalle altre: spegnere una luce non spegne le altre\n\nL'impianto domestico in parallelo garantisce che: 1) ogni utenza riceve sempre la tensione piena (230V), 2) l'accensione/spegnimento di un'utenza non influenza le altre, 3) un guasto o un fusibile saltato in un circuito non spegne l'intera abitazione. In serie, ogni aggiunta di utenze ridurrebbe la tensione disponibile per le altre.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la differenza tra corrente alternata (AC) e corrente continua (DC)?",
-    "back": "Nella DC la corrente scorre sempre nella stessa direzione; nella AC cambia direzione periodicamente (50 Hz in Europa). AC si trasmette meglio su lunghe distanze; DC è usata in elettronica e batterie\n\nTesla vs Edison: la guerra delle correnti. Tesla/Westinghouse vinse con l'AC per la trasmissione a lunga distanza. Oggi l'HVDC (alta tensione continua) compete per trasmissioni intercontinentali.",
+    "front": "La struttura del programma Arduino (sketch) ha due funzioni: setup() e loop(). Qual è la differenza fondamentale tra loro?",
+    "back": "setup() si esegue una sola volta all'avvio, loop() si ripete continuamente all'infinito\n\nLo sketch Arduino ha sempre due funzioni: void setup() esegue il codice di configurazione una sola volta all'avvio (es. pinMode per dichiarare i pin come input/output), void loop() esegue il codice principale in ciclo continuo per sempre (es. leggere sensori, accendere LED, inviare dati). È la struttura fondamentale di qualsiasi programma per microcontrollore.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Nel caso studio del LED su breadboard, si calcola che serve un resistore da 350Ω per collegare un LED rosso (2V, 20mA) a una batteria da 9V. Come si ottiene questo valore?",
+    "back": "R = (V_batteria - V_LED) / I = (9V - 2V) / 0,02A = 7V / 0,02A = 350Ω\n\nCalcolo del resistore di protezione per LED: V_R = V_batteria - V_LED = 9V - 2V = 7V (la tensione che deve 'cadere' sul resistore). I_desiderata = 20 mA = 0,02 A. Per la legge di Ohm: R = V_R / I = 7V / 0,02A = 350Ω. In commercio si usa il valore standard più vicino: 330Ω o 390Ω.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il differenziale (salvavita) si scatta in meno di 30 millisecondi quando rileva una differenza di corrente tra fase e neutro. Perché questa velocità è fondamentale?",
+    "back": "Perché la fibrillazione ventricolare (aritmia mortale) causata dalla corrente elettrica può iniziare entro 50-100 ms dall'esposizione, quindi il salvavita deve interrompere il circuito prima di quel limite\n\nIl differenziale rileva la differenza di corrente tra fase e neutro: se una persona tocca la fase, parte della corrente 'scappa' attraverso il suo corpo verso terra → la differenza supera la soglia (30 mA) → il differenziale si scatta in <30 ms. Questa velocità è fondamentale perché la fibrillazione cardiaca (mortale) può iniziare in 50-100 ms dall'esposizione a correnti di 50-100 mA.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo descrive un problema di design del sistema di segnalazione scolastica: un LED verde (porta aperta) e un LED rosso (porta chiusa) da 9V con autonomia di 30 giorni. Come si calcola la capacità minima della batteria necessaria?",
+    "back": "Capacità = I × t = 15 mA × (8 ore/giorno × 30 giorni) = 15 mA × 240 ore = 3.600 mAh = 3,6 Ah\n\nCalcolo autonomia batteria: consumo = 15 mA, tempo di utilizzo = 8 ore/giorno × 30 giorni = 240 ore. Capacità necessaria = I × t = 15 mA × 240 h = 3.600 mAh = 3,6 Ah. Una batteria 9V standard ha ~500 mAh: durebbe solo 500/15 = 33 ore. Per 30 giorni a 8 h/giorno serve una batteria ~7 volte più grande, o una fonte di alimentazione continua.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è l'effetto Joule e come è collegato al consumo energetico?",
-    "back": "La dissipazione di energia come calore nei conduttori attraversati da corrente: P_calore = R × I². I cavi hanno resistenza non nulla, quindi perdono energia\n\nL'effetto Joule spiega perché i cavi si scaldano e perché si usano altissime tensioni per trasmettere energia su lunghe distanze: alta V = bassa I = bassa perdita Joule.",
+    "front": "Il testo afferma che '10 mA possono causare contrazioni muscolari involontarie' e '100 mA possono essere letali'. Una persona ha resistenza corporea di 1.500Ω. Quale tensione produce esattamente 100 mA attraverso il corpo?",
+    "back": "V = R × I = 1.500Ω × 0,1A = 150V: una tensione inferiore ai 230V domestici ma già potenzialmente letale\n\nPer la legge di Ohm: V = R × I = 1.500Ω × 0,1A = 150V. Questo significa che già a 150V si raggiunge la soglia letale (100 mA). La rete domestica a 230V produce: I = 230V/1.500Ω = 153 mA, ben oltre 100 mA. Nota: la resistenza corporea varia molto (1.000-100.000Ω) e si riduce con la pelle bagnata, aumentando ulteriormente il pericolo.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è un circuito RLC e quali fenomeni mostra?",
-    "back": "Un circuito con Resistore, induttore (L) e Condensatore (C): mostra risonanza alla frequenza di oscillazione propria. Base di radioricevitori, filtri e oscillatori\n\nIl circuito RLC risuona a f = 1/(2π√LC). Sintonizzare una radio significa trovare la frequenza di risonanza del circuito LC uguale alla frequenza della stazione.",
+    "front": "L'invenzione del circuito integrato (Kilby, 1958) ha permesso di miniaturizzare l'elettronica 'da una stanza intera a un'unghia'. Quale implicazione tecnologica fondamentale ha avuto questa miniaturizzazione?",
+    "back": "Ha permesso di integrare miliardi di funzioni logiche in dispositivi tascabili, abilitando l'informatica personale, i telefoni cellulari e ogni dispositivo digitale moderno\n\nIl circuito integrato (Kilby, Texas Instruments, 1958) ha integrato in un singolo chip di silicio componenti che prima richiedevano volumi enormi. Il processore del tuo telefono contiene miliardi di transistor in un chip delle dimensioni di un'unghia. Questo ha abilitato tutta l'elettronica moderna: personal computer, telefoni cellulari, IoT, AI accelerata.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo descrive un sistema LDR (fotoresistore) con un resistore fisso da 10kΩ che forma un 'divisore di tensione'. Come funziona questo sistema per rilevare la luce?",
+    "back": "Al buio il LDR ha alta resistenza → la tensione nel punto di mezzo è alta. Con luce il LDR ha bassa resistenza → tensione nel punto di mezzo bassa. Arduino legge questa variazione di tensione come informazione sulla luce\n\nIl divisore di tensione LDR + 10kΩ: V_medio = 5V × 10kΩ/(R_LDR + 10kΩ). Al buio: R_LDR è grande (100kΩ) → V_medio = 5V × 10k/110k ≈ 0,45V. Con luce: R_LDR piccolo (1kΩ) → V_medio = 5V × 10k/11k ≈ 4,5V. Arduino A0 legge questa tensione (0-1023) e decide quando accendere il LED comparandola con la soglia.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo spiega che le luci di Natale vecchie erano in serie (se una si bruciava, si spegnevano tutte), mentre quelle moderne LED sono in parallelo. Quale scelta progettuale sottostante ha cambiato la configurazione del circuito?",
+    "back": "Le lampadine tradizionali incandescenti richiedevano alta tensione (serie di 20 lampadine × 12V = 240V) perché a bassa tensione il filamento non raggiungeva la temperatura di incandescenza; i LED funzionano efficientemente a 2-3V permettendo il parallelo\n\nLe vecchie lucine a incandescenza erano in serie perché ogni lampadina richiedeva circa 12V e 20 in serie sommavano a 240V dalla rete. I LED funzionano efficientemente a 2-3V: messi in parallelo su un'alimentazione a 3-4V, ognuno riceve la sua tensione di lavoro ottimale, funziona indipendentemente dagli altri, e non crea problemi se uno si brucia.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo descrive il 'stand-by' come un costo reale: '50-100 euro annui per famiglia'. Calcolando con la legge di Ohm e la formula della potenza, se un televisore in stand-by consuma 0,5W a 230V, quanta corrente assorbe e quanto pesa sulla bolletta in un anno?",
+    "back": "I = P/V = 0,5W/230V ≈ 2,2 mA; in un anno: 0,5W × 8.760 h = 4,38 kWh ≈ 1,10 € (a 0,25 €/kWh)\n\nStand-by TV da 0,5W: Corrente I = P/V = 0,5W/230V ≈ 0,0022A = 2,2 mA. Energia annua = 0,0005 kW × 8.760 h = 4,38 kWh ≈ 1,10 €/anno. Con 15-20 dispositivi in stand-by (TV, decoder, microwaves, caricatori, router...) si raggiungono facilmente 50-100 €/anno. La soluzione: spegnere dalla presa, non dal telecomando.",
     "tag": "Avanzato"
   }
 ]

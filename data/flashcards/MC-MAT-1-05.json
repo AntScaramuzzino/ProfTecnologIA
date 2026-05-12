@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è la 'progettazione per il materiale'?",
-    "back": "Il processo di selezione del materiale più adatto per un oggetto basandosi su proprietà tecniche, costi, disponibilità e impatto ambientale\n\nLa selezione del materiale è una decisione critica in progettazione: sbagliare materiale può rendere un prodotto non funzionale, pericoloso o antieconomico.",
+    "front": "Quale minerale è la fonte principale del ferro usato nell'industria siderurgica?",
+    "back": "Ematite (Fe₂O₃)\n\nI principali minerali metallici: ematite (Fe₂O₃) per il ferro, bauxite per l'alluminio, calcopirite (CuFeS₂) per il rame, ilmenite (FeTiO₃) per il titanio. Le miniere di ematite più grandi si trovano in Australia, Brasile e Cina. Da una tonnellata di ematite si ricavano circa 700 kg di ferro.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un 'diagramma di Ashby' per la selezione dei materiali?",
-    "back": "Un grafico bidimensionale che confronta due proprietà dei materiali (es. resistenza vs densità) permettendo di identificare il migliore per ogni applicazione\n\nI diagrammi di Ashby sono lo strumento standard per la selezione dei materiali. La 'bolla' del materiale nel grafico mostra dove eccelle rispetto agli altri.",
+    "front": "Qual è la differenza tra ghisa e acciaio in termini di percentuale di carbonio?",
+    "back": "Ghisa: 2-4,5% carbonio; acciaio: 0,02-2% carbonio\n\nGhisa: ferro + 2-4,5% carbonio. Acciaio: ferro + 0,02-2% carbonio. Questa differenza apparentemente piccola produce proprietà radicalmente diverse: la ghisa è dura ma fragile (si spezza senza deformarsi), l'acciaio è più tenace e si deforma prima di rompersi (duttile).",
     "tag": "Base"
   },
   {
-    "front": "Perché si usa l'alluminio invece dell'acciaio per i cerchi delle biciclette da competizione?",
-    "back": "Perché l'alluminio ha densità molto inferiore (2.7 vs 7.8 g/cm³) mantenendo buona resistenza: il rapporto resistenza/peso è cruciale in bicicletta\n\nIl rapporto resistenza/peso (resistenza specifica) è la metrica chiave per strutture mobili. Alluminio, titanio e fibra di carbonio eccellono su questo parametro.",
+    "front": "L'acciaio inossidabile non arrugginisce grazie alla presenza di cromo. Come funziona questa protezione?",
+    "back": "Il cromo forma uno strato sottilissimo di ossido di cromo (circa 2 nanometri) che sigilla la superficie impedendo all'ossigeno di raggiungere il ferro sottostante\n\nL'acciaio inossidabile contiene almeno 10,5% di cromo. Il cromo forma spontaneamente uno strato di ossido di cromo (Cr₂O₃) sulla superficie, trasparente (~2 nanometri) e aderente. Questo strato protegge il ferro sottostante dall'ossidazione. Se graffiato, si auto-ripara esponendo la superficie all'aria.",
     "tag": "Base"
   },
   {
-    "front": "Come si considera l'impatto ambientale nella selezione di un materiale?",
-    "back": "Usando la LCA (Life Cycle Assessment) per confrontare l'impatto di diversi materiali su tutta la vita: estrazione, lavorazione, uso, fine vita\n\nLa LCA rivela sorprese: un'auto elettrica 'verde' usa materiali rari con grande impatto in estrazione. La valutazione deve coprire l'intero ciclo.",
+    "front": "Quanto pesa un litro di acqua da uno strumento di cucina in acciaio rispetto allo stesso volume in alluminio?",
+    "back": "L'acciaio pesa circa 3 volte l'alluminio (densità: acciaio 7,8 g/cm³, alluminio 2,7 g/cm³)\n\nDensità dei principali metalli: acciaio 7,8 g/cm³, alluminio 2,7 g/cm³, rame 8,9 g/cm³, titanio 4,5 g/cm³, ghisa 7,2 g/cm³. L'alluminio è circa 3 volte più leggero dell'acciaio: un telaio di bici in alluminio pesa 1,0-1,4 kg contro i 2,2-2,8 kg di uno in acciaio delle stesse dimensioni.",
+    "tag": "Base"
+  },
+  {
+    "front": "Il rame è il secondo metallo migliore conduttore elettrico dopo l'argento. Perché non si usa l'argento per i fili elettrici?",
+    "back": "Perché l'argento costa circa 100 volte più del rame e la differenza di conduttività non giustifica il costo aggiuntivo\n\nConduttività elettrica: argento 62 MS/m, rame 58 MS/m, alluminio 37 MS/m, ferro 10 MS/m. L'argento conduce il 7% meglio del rame, ma costa ~100 volte di più. Per le applicazioni pratiche (fili elettrici, motori, trasformatori) il rame offre il miglior rapporto conduttività/costo.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è il processo termico che si applica a una lama d'acciaio per renderla dura e poi si aggiunge il 'rinvenimento' per ridurne la fragilità?",
+    "back": "Tempra: riscaldamento a 800-900°C seguito da raffreddamento rapido in acqua o olio\n\nTrattamenti termici dell'acciaio: Tempra = riscaldamento a 800-900°C + raffreddamento rapido → durezza alta, fragilità alta. Rinvenimento = dopo la tempra, riscaldamento a 150-650°C + raffreddamento lento → riduce fragilità mantenendo durezza. Ricottura = riscaldamento + raffreddamento lento → ammorbidisce, aumenta duttilità. Cementazione = aggiunge carbonio agli strati superficiali.",
+    "tag": "Base"
+  },
+  {
+    "front": "Il testo spiega che la ghisa è 'dura ma fragile' mentre l'acciaio è 'duttile'. Perché questa differenza rende pericolosa la ghisa nelle applicazioni strutturali?",
+    "back": "Perché la ghisa si rompe all'improvviso senza dare segnali visibili di cedimento, mentre l'acciaio si deforma prima di rompersi avvisando del pericolo\n\nLa fragilità è il problema strutturale della ghisa: non si deforma plasticamente prima della rottura (basso allungamento prima della rottura). L'acciaio invece è duttile: prima di rompersi si deforma visibilmente, avvisando del pericolo imminente. Nei ponti in ghisa del XIX secolo, il cedimento era improvviso e senza preavviso — per questo l'acciaio li ha sostituiti.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'resistenza alla fatica' di un materiale e quando è critica?",
-    "back": "La capacità di resistere a carichi ciclici ripetuti a livelli inferiori al limite statico: critica in componenti soggetti a vibrazioni (alberi motore, ali aerei, implanti ossei)\n\nLa fatica è un fenomeno insidioso: una vite regge 1000 N statico ma si rompe dopo 10 milioni di cicli a 500 N. Le cricche microscopiche crescono fino alla rottura catastrofica.",
+    "front": "L'altoforno usa coke (carbone trasformato) per ridurre il minerale di ferro. Qual è il ruolo chimico preciso del coke in questo processo?",
+    "back": "Il carbonio del coke produce monossido di carbonio (CO) che 'ruba' l'ossigeno dall'ossido di ferro (Fe₂O₃), liberando ferro metallico\n\nChimica dell'altoforno: 1) C + O₂ → CO₂ (coke brucia). 2) CO₂ + C → 2CO (monossido si forma). 3) Fe₂O₃ + 3CO → 2Fe + 3CO₂ (CO riduce il ferro). Il CO è il vero agente riducente: 'ruba' l'ossigeno dall'ossido di ferro, liberando ferro metallico. Il calcare (CaCO₃) serve a rimuovere le impurità silicee formando la scoria.",
     "tag": "Intermedio"
   },
   {
-    "front": "Come si sceglie il materiale per una guarnizione di tenuta in un motore ad alta temperatura?",
-    "back": "Si analizzano: temperatura massima di esercizio, compatibilità chimica con i fluidi, resistenza meccanica, durata, coefficiente di espansione termica compatibile con le parti adiacenti\n\nLa selezione di materiali per applicazioni critiche richiede l'analisi simultanea di molti parametri. Non esiste un materiale universalmente migliore: dipende sempre dal contesto.",
+    "front": "Il testo descrive le 'leghe di alluminio serie 7000' (alluminio-zinco-magnesio) come aventi 'resistenza comparabile a certi acciai da costruzione, con un terzo del peso'. Come si spiega questa affermazione paradossale?",
+    "back": "La 'resistenza specifica' (resistenza meccanica divisa per la densità) delle leghe 7000 è paragonabile o superiore all'acciaio: stessa forza per meno peso, non stessa forza per stesso peso\n\nLa 'resistenza specifica' = resistenza a trazione / densità. Confronto dalla tabella: lega Al 7075-T6 ha 572/2,81 = 203 MPa·cm³/g; acciaio dolce: 400/7,8 = 51. La lega 7075 è 4 volte 'più resistente per unità di peso' dell'acciaio dolce. Per costruire una struttura della stessa resistenza, l'alluminio 7075 pesa circa 3-4 volte meno dell'acciaio.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'metallurgia delle polveri' (powder metallurgy) e quali vantaggi offre?",
-    "back": "Un processo in cui polveri metalliche vengono compresse e sinterizzate per produrre componenti con forme complesse, leghe impossibili per fusione e minimo scarto di materiale\n\nLa metallurgia delle polveri è alla base della produzione di cuscinetti sinterizzati, carburi cementati (utensili da taglio) e componenti in metalli refrattari (tungsteno, molibdeno).",
+    "front": "Il testo spiega che l'acciaio zincato protegge il ferro in due modi. Quale secondo meccanismo opera anche quando la superficie è graffiata e il ferro è esposto?",
+    "back": "Il meccanismo dell'anodo sacrificale: lo zinco si corrode al posto del ferro perché ha potenziale elettrochimico più basso, proteggendo il ferro esposto anche senza barriera fisica\n\nL'acciaio zincato protegge in due modi: 1) meccanismo fisico: lo strato di zinco forma una barriera tra ferro e ambiente. 2) meccanismo galvanico (anodo sacrificale): lo zinco ha potenziale elettrochimico più basso del ferro → in presenza di umidità, lo zinco si corrode preferenzialmente. Anche dove il ferro è esposto (graffio), il zinco circostante 'si sacrifica' proteggendo il ferro.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo descrive come il rame si copre di verderame (patina verde) nel tempo. Perché questa patina protegge il rame, mentre la ruggine del ferro non protegge l'acciaio?",
+    "back": "La patina del rame (idrossicarbonato di rame) è densa e aderente, sigillando la superficie; la ruggine del ferro è porosa e lascia filtrare aria e acqua verso il metallo sottostante\n\nDifferenza critica tra patine: Verderame del rame (Cu₂(OH)₂CO₃) = denso, aderente, impermeabile → sigilla la superficie → protezione. Ruggine del ferro (Fe₂O₃·nH₂O) = porosa, voluminosa (occupa più spazio del ferro originale) → lascia filtrare O₂ e H₂O → corrosione progressiva verso l'interno. Per questo il ferro senza protezione continua a corrodersi mentre il rame si auto-protegge.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "La bicicletta da corsa professionale in fibra di carbonio pesa meno di 700g di telaio e ha resistenza a trazione fino a 1.500 MPa. Perché il testo la include nella sezione 'I metalli in una bicicletta' pur non essendo un metallo?",
+    "back": "Perché la fibra di carbonio è il termine di confronto obbligato per valutare la resistenza specifica dei metalli: capire perché i professionisti la usano aiuta a capire i limiti di ciascun metallo\n\nLa fibra di carbonio è inclusa come termine di confronto estremo: telaio in carbonio 0,6-0,9 kg, acciaio 2,2-2,8 kg, alluminio 1,0-1,4 kg, titanio 1,1-1,3 kg. Questo confronto rende comprensibile perché i professionisti usano il carbonio nonostante il costo elevatissimo (1.500-5.000€ solo per il telaio) e la minore riparabilità. Il confronto chiarisce i trade-off di ciascun materiale metallico.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo afferma che la corrosione costa globalmente circa il 3,4% del PIL mondiale (~2.500 miliardi di dollari). Quale implicazione ha questo dato per le scelte progettuali dei materiali?",
+    "back": "Il costo della corrosione deve essere incluso nel costo totale di vita del prodotto (LCA): un materiale più costoso ma anticorrosivo può avere un costo di ciclo di vita inferiore a uno economico ma soggetto a corrosione\n\nIl costo della corrosione (~3,4% PIL mondiale) emerge dall'analisi del ciclo di vita: sostituire strutture corrose, manutenere ponti, riparare tubazioni, fare ispezioni. Implicazione progettuale: scegliere il materiale non solo per il costo iniziale ma per il costo totale di vita. Acciaio inox più costoso ma con vita utile 3-5 volte superiore può costare meno dell'acciaio comune su 30 anni.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'co-design' materiale-processo-forma nel design industriale?",
-    "back": "L'approccio integrato in cui il materiale, il processo produttivo e la forma del prodotto vengono progettati simultaneamente: le limitazioni del processo influenzano la forma, e viceversa\n\nLa forma di un pezzo stampato a iniezione deve rispettare angoli di sformo, spessori uniformi e posizione degli attacchi. Il design nasce dall'interazione materiale-processo-forma, non in sequenza.",
+    "front": "Il titanio ha il rapporto resistenza/peso più alto tra tutti i metalli strutturali. Eppure non ha sostituito l'alluminio e l'acciaio nella maggior parte delle applicazioni. Quale analisi economica spiega questa persistenza?",
+    "back": "Il costo di estrazione (processo Kroll) e lavorazione del titanio è 10-20 volte superiore a quello dell'acciaio: il vantaggio prestazionale non giustifica il costo aggiuntivo per la maggior parte delle applicazioni\n\nIl titanio ha il miglior rapporto resistenza/peso ma il processo Kroll (riduzione di TiCl₄) è costoso: il titanio costa 5-20 volte l'acciaio a parità di peso. Per applicazioni dove il peso non è critico (costruzioni, automobili economiche, mobili), il costo aggiuntivo non è giustificato. Il titanio domina dove il peso è critico e il costo non è il vincolo principale: aerospaziale, medicina, sport d'élite.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'mappatura dei materiali critici' e perché è rilevante oggi?",
-    "back": "L'analisi dei materiali la cui disponibilità è a rischio geopolitico o fisico: terre rare, cobalto, litio, indio. Determinante per la transizione verde e la sovranità industriale\n\nL'EU ha definito 34 'Critical Raw Materials'. Il cobalto del Congo, le terre rare cinesi, il litio sudamericano sono punti di vulnerabilità strategica per auto elettriche, chip e turbine eoliche.",
+    "front": "Il testo afferma che 'ogni robot che vedi in una fabbrica è una combinazione di macchine semplici' — analogia applicata ai metalli: 'ogni allega è ferro/alluminio/rame con impurità controllate'. Quale principio metodologico comune rivela questa analogia?",
+    "back": "La comprensione dei fondamentali (macchine semplici, metalli puri) fornisce gli strumenti per analizzare qualsiasi sistema complesso come combinazione di principi elementari comprensibili\n\nIl principio metodologico comune: i fondamentali (metalli puri, macchine semplici) forniscono gli strumenti concettuali per analizzare sistemi complessi (leghe, robot). Un metallurgista esperto capisce le leghe di nickel per jet engine analizzandole come nickel con impurità controllate di cromo, cobalto, molibdeno — ciascuna con effetto preciso sul reticolo cristallino. I fondamentali rendono comprensibile la complessità.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo presenta la matrice di valutazione per scegliere il materiale delle paline stradali. La soluzione 'acciaio dolce verniciato' ha costo basso (80€) ma scarsa resistenza alla corrosione. Come un progettista dovrebbe confrontare il costo iniziale con il costo di vita del prodotto?",
+    "back": "Calcolare il costo per anno di servizio (costo totale incluse manutenzione e sostituzione diviso anni di vita utile) e confrontarlo tra le opzioni: il materiale più economico all'acquisto può costare di più nel lungo periodo\n\nAnalisi del costo di vita: non confrontare solo il prezzo di acquisto ma il costo per anno di servizio = (prezzo iniziale + costi di manutenzione + costi di sostituzione) / anni di vita utile. Acciaio verniciato: economico inizialmente ma richiede verniciatura periodica (5-7 anni) e sostituzione prima degli altri. Acciaio Corten o inox: più costoso inizialmente ma nessuna manutenzione per 20+ anni → costo annuale potenzialmente inferiore.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo descrive la 'saldabilità' come proprietà tecnologica che varia molto tra i metalli. Perché la ghisa è 'difficilissima da saldare' mentre l'acciaio al carbonio medio è 'il più saldabile in assoluto'?",
+    "back": "La ghisa ha alto contenuto di carbonio (2-4,5%) che durante la saldatura si ossida producendo CO₂ che crea porosità nella saldatura e rende il raffreddamento non uniforme, causando cricche\n\nLa saldabilità dipende principalmente dal contenuto di carbonio: più carbonio = più difficile da saldare. Acciaio dolce (0,1-0,3% C) è il più saldabile: basso carbonio, struttura uniforme, raffreddamento uniforme. Ghisa (2-4,5% C): durante il raffreddamento rapido della zona di saldatura il carbonio forma martensite fragile e la struttura non si unisce uniformemente, causando cricche.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo afferma che 'ogni auto moderna è già progettata per essere smontata' con il 95% del peso recuperabile a fine vita (normativa UE). Quale implicazione ha questa affermazione per il rapporto tra design dei prodotti e economia circolare?",
+    "back": "La normativa UE ha forzato i produttori a integrare il riciclo nel processo di design (design for disassembly): la fine vita del prodotto è ora parte del vincolo di progettazione dall'inizio, non un problema gestito dopo\n\nLa normativa UE sui veicoli a fine vita (95% recuperabilità) ha trasformato il processo di design: i progettisti devono considerare la disassemblabilità e la riciclabilità dei materiali già nelle fasi iniziali. Questo è il design for disassembly applicato su scala industriale: separare acciaio (magneti), alluminio (eddy currents), rame (separazione manuale) richiede che i componenti siano fisicamente separabili nel design originale.",
     "tag": "Avanzato"
   }
 ]

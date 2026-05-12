@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è la crittografia?",
-    "back": "La scienza di proteggere le informazioni trasformandole in un formato leggibile solo da chi ha la chiave\n\nLa crittografia è il fondamento della sicurezza digitale: protegge comunicazioni, dati e transazioni online.",
+    "front": "Cos'è il 'phishing'?",
+    "back": "Un attacco in cui si riceve un messaggio che sembra provenire da una fonte affidabile per convincerti a inserire password o cliccare link falsi\n\nIl phishing prende il nome da 'fishing' (pescare): l'attaccante invia messaggi che sembrano provenire da fonti affidabili (banca, Instagram, scuola) con link a pagine false identiche agli originali. L'obiettivo è far inserire password, dati della carta o altri dati sensibili. È la tecnica di attacco più diffusa su utenti normali.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è HTTPS e perché è importante?",
-    "back": "Il protocollo HTTP con crittografia TLS: garantisce che i dati tra browser e server siano cifrati e non intercettabili\n\nIl lucchetto nel browser indica HTTPS. Senza di esso, chiunque sulla stessa rete potrebbe leggere quello che scrivi (password incluse).",
+    "front": "Qual è la regola più importante per scegliere una password sicura, secondo il testo?",
+    "back": "La lunghezza batte la complessità: una passphrase di 16+ caratteri è più sicura di una password breve con simboli\n\nLa tabella del testo mostra chiaramente: 'password' → meno di 1 secondo; 'P@$$w0rd' → 5 minuti; 'P@$$w0rd!2026' → 3 anni; 'il mio gatto si chiama Biscotto' → più di un miliardo di anni. La lunghezza (e l'imprevedibilità) batte la complessità con caratteri speciali.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un 'malware'?",
-    "back": "Software malevolo progettato per danneggiare, rubare dati o prendere il controllo di un sistema: include virus, ransomware, spyware, trojan\n\nIl malware è l'arma più usata dagli attaccanti. Il ransomware cifra i file e chiede un riscatto; lo spyware spia le attività.",
+    "front": "Cosa fa l'autenticazione a due fattori (2FA)?",
+    "back": "Aggiunge un secondo livello di verifica (es. codice sul telefono) oltre alla password, rendendo inutile la password rubata\n\nIl 2FA (Two-Factor Authentication) aggiunge una seconda serratura: oltre alla password (qualcosa che sai), serve un codice temporaneo generato sul tuo telefono (qualcosa che hai). Cambia ogni 30 secondi. Anche se qualcuno ruba la password, non può accedere senza il secondo fattore fisico.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la crittografia asimmetrica?",
-    "back": "Un sistema con due chiavi correlate: la chiave pubblica (condivisibile) cifra; la chiave privata (segreta) decifra\n\nHTTPS, firma digitale e Bitcoin usano crittografia asimmetrica. Puoi condividere la tua chiave pubblica con tutti: solo la tua chiave privata può decifrare.",
+    "front": "Cosa dovrebbe fare Luca (nella storia dell'account Instagram hackerato) come primo passo immediato dopo aver scoperto l'attacco?",
+    "back": "Cambiare la password immediatamente andando direttamente al sito ufficiale (non tramite link nelle email sospette)\n\nLa sequenza di azioni raccomandata dal testo: (1) cambia la password subito dal sito ufficiale (non dal link nell'email sospetta); (2) cambia la password dell'email — la chiave di recupero di tutti gli altri account; (3) controlla le sessioni attive e disconnetti tutto; (4) attiva il 2FA; (5) avvisa i contatti; (6) segnala.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è il segnale più importante da controllare su un URL prima di inserire dati in una pagina web?",
+    "back": "Il dominio effettivo prima del primo slash: 'instagram.com/qualcosa' è Instagram; 'qualcosa.instagram-login.com' non lo è\n\nLa regola del testo è chiara: 'L'unica parte che conta è prima del primo '/' dopo il doppio punto.' Se vedi 'instagram.com/qualcosa' sei su Instagram. Se vedi 'qualcosa.instagram-login.com' sei su un sito diverso (instagram-login.com) con un sottodominio 'qualcosa'. Il dominio che conta è quello principale.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa si intende per 'impronta digitale permanente' in un contesto di identità online?",
+    "back": "Il fatto che quasi nulla pubblicato online viene davvero cancellato: screenshot, cache e archivi web conservano copia di contenuti eliminati\n\nL'impronta digitale permanente descrive il fatto che contenuti pubblicati online sono quasi impossibili da cancellare completamente: screenshot fatti da altri, versioni in cache dei motori di ricerca, archivi web come la Wayback Machine. Il testo avverte: 'una foto pubblicata a 13 anni può esistere ancora quando ne hai 30.'",
+    "tag": "Base"
+  },
+  {
+    "front": "Nel caso di Luca (account Instagram hackerato), qual era il segnale di phishing più importante che avrebbe dovuto riconoscere prima di inserire la password?",
+    "back": "L'URL della pagina non era 'instagram.com' ma un dominio falso — che Luca non ha controllato prima di inserire la password\n\nLa storia di Luca mostra il percorso tipico di un attacco di phishing: messaggio urgente ('entro 24 ore'), link a pagina falsa identica all'originale, richiesta di credenziali. Il segnale che avrebbe salvato Luca era controllare l'URL della pagina: non era instagram.com ma una copia. La regola: guardare sempre l'URL prima di inserire qualsiasi dato.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è un attacco 'man in the middle'?",
-    "back": "Un attaccante che si interpone tra due parti comunicanti intercettando e modificando i messaggi a loro insaputa\n\nIl Wi-Fi pubblico non sicuro è un vettore classico per attacchi MITM. Per questo HTTPS (che usa crittografia end-to-end) è fondamentale.",
+    "front": "Il 'credential stuffing' è un attacco che sfrutta le stesse password riusate su più siti. Quale delle tre regole delle password protegge specificamente da questo attacco?",
+    "back": "L'unicità: usare una password diversa per ogni account\n\nIl credential stuffing funziona così: quando un database di credenziali viene rubato, software automatici le provano su centinaia di altri siti. Se usi la stessa password su Gmail e su un forum di videogiochi, e il forum viene violato, il tuo Gmail è a rischio. La regola dell'unicità (password diversa per ogni account) è l'unica protezione efficace.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'social engineering' nel contesto della cybersecurity?",
-    "back": "La manipolazione psicologica delle persone per ottenere accesso a sistemi o informazioni sensibili: la debolezza umana è spesso più vulnerabile dei sistemi tecnici\n\nIl phishing è la forma più comune di social engineering. Tecnica semplice ma efficace: 90%+ dei breach inizia da un errore umano.",
+    "front": "Perché il sito 'haveibeenpwned.com' è uno strumento utile per la sicurezza dei propri account?",
+    "back": "Permette di verificare se la tua email è presente in database di credenziali rubate da violazioni note, segnalando account a rischio\n\nHaveibeenpwned.com raccoglie database di credenziali rubate da violazioni note (come 'RockYou2024' con 10 miliardi di credenziali). Inserendo la propria email, si verifica se è presente in qualche fuga di dati conosciuta. Se compare, le credenziali corrispondenti sono probabilmente in circolazione e vanno cambiate immediatamente.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la firma digitale e come garantisce autenticità?",
-    "back": "Un meccanismo crittografico che permette di verificare che un documento proviene davvero da chi dichiara di averlo firmato e non è stato modificato\n\nLa firma digitale usa la chiave privata per 'firmare': chi riceve il documento usa la chiave pubblica per verificare autenticità e integrità. Giuridicamente equivale alla firma autografa.",
+    "front": "Qual è la differenza tra lo 'spear phishing' e il phishing ordinario?",
+    "back": "Lo spear phishing è mirato a una persona specifica e usa informazioni personali (nome, città, scuola) prese dai social per sembrare più credibile\n\nIl phishing ordinario invia lo stesso messaggio a milioni di persone sperando che qualcuno abbocchi. Lo spear phishing è personalizzato per una vittima specifica: usa nome, scuola, città, amici — informazioni prese dai social media — per costruire un messaggio molto più credibile e quindi più efficace.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché un password manager è la soluzione consigliata per gestire molte password diverse e sicure?",
+    "back": "Genera e conserva password uniche e casuali per ogni account, cifrate con un'unica password maestra — risolvendo il problema dell'impossibilità umana di ricordare centinaia di password diverse\n\nUn adulto medio ha 70-100 account digitali. È impossibile ricordare centinaia di password diverse di 16+ caratteri. Il password manager (Bitwarden, 1Password) genera password casuali sicure per ogni sito, le conserva cifrate con la password maestra, e le compila automaticamente. L'utente deve ricordare solo la password maestra.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il messaggio simulato del testo dice: 'Caro utente di Instagram, clicca subito: www.instagram-accounts-security.net. Ha 12 ore.' Quanti segnali di phishing contiene?",
+    "back": "Almeno 5: URL sbagliato, urgenza artificiale, saluto generico, assenza del nome personale, dominio non ufficiale\n\nIl testo analizza questo messaggio e trova almeno 5 segnali: (1) URL sbagliato — instagram-accounts-security.net invece di instagram.com; (2) urgenza artificiale — '12 ore'; (3) saluto generico — 'Caro utente'; (4) assenza del nome personale; (5) probabile mittente non ufficiale. Il testo dice: 'Quanti segnali identifichi? (Risposta: almeno 5)'",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché il Box T8 afferma che il phishing generato dall'IA rende obsoleta la regola 'se il messaggio è grammaticalmente corretto, è autentico'?",
+    "back": "Perché l'IA può imitare lo stile di qualsiasi persona, incluso gli amici della vittima\n\nIl Box T8 spiega che la regola 'phishing = messaggi con errori grammaticali' funzionava perché i truffatori non erano madrelingua. Con i LLM moderni, chiunque può generare testi perfetti nello stile di qualsiasi azienda, con personalizzazioni dai social della vittima. Esistono già deepfake vocali usati per truffe. Le regole che rimangono valide sono strutturali: controlla sempre l'URL, non fornire password via messaggio, usa il 2FA.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'penetration testing'?",
-    "back": "Una simulazione autorizzata di un attacco informatico per identificare vulnerabilità prima che lo facciano i veri attaccanti\n\nLe aziende assumono 'ethical hacker' per fare penetration test. Trovare le vulnerabilità prima degli attaccanti permette di correggerle.",
+    "front": "Perché il caso di Marco (phishing Netflix, nella sezione OSSERVA) mostra che nessuno è immune al phishing, anche quando si conoscono i segnali?",
+    "back": "Perché l'urgenza artificiale ('entro 24 ore') e la pagina graficamente identica a Netflix impediscono il pensiero critico, anche se si conoscono i segnali teoricamente\n\nIl caso di Marco mostra il meccanismo psicologico del phishing: l'urgenza ('entro 24 ore') attiva una risposta emotiva che bypassa il pensiero critico. Marco sapeva probabilmente che esistono truffe online, ma l'urgenza gli ha impedito di fermarsi a controllare l'URL. La difesa strutturale — controlla sempre l'URL PRIMA di interagire — funziona anche sotto pressione emotiva.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'zero-day vulnerability' e perché è particolarmente pericolosa?",
-    "back": "Una vulnerabilità sconosciuta al produttore del software: non esiste ancora una patch, quindi tutti i sistemi sono esposti dal momento in cui viene scoperta e sfruttata\n\nLe zero-day sono l'arma più potente degli attaccanti: nessuna difesa disponibile finché il produttore non rilascia la patch. Vengono vendute per milioni di dollari.",
+    "front": "Usando la matematica dell'entropia delle password citata nel collegamento STEM: perché una passphrase di 4 parole comuni è più sicura di una password di 8 caratteri con simboli?",
+    "back": "Perché 4 parole da un dizionario di 2000 parole danno 2000⁴ = 16 miliardi di combinazioni, contro i 26⁸ = 200 miliardi di una password di 8 lettere... ma le parole reali riducono l'entropia effettiva\n\nIl testo usa il calcolo dell'entropia: una password di 8 lettere minuscole ha 26⁸ ≈ 200 miliardi di possibilità. Una passphrase di 4 parole da un dizionario di 2000 ha 2000⁴ = 16 trilioni di possibilità — 80 volte di più. E la passphrase è molto più facile da ricordare. Il principio: più combinazioni possibili = più tempo per violarla con forza bruta.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Nel 'kit di prima risposta' che devi preparare per il compito dell'AGISCI, perché la sequenza delle azioni è importante quanto le azioni stesse?",
+    "back": "Perché alcune azioni devono precedere le altre per essere efficaci: cambiare la password email prima di quella Instagram, altrimenti l'attaccante usa l'email per reimpostare la password di Instagram\n\nLa sequenza è critica: (1) cambia la password dell'email SUBITO (o in parallelo con Instagram) perché l'email è la chiave di recupero di tutti gli altri account; (2) solo dopo cambio gli altri account. Se l'attaccante controlla l'email, può reimpostare qualsiasi password usando 'ho dimenticato la password', vanificando il cambio su Instagram.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la sicurezza digitale individuale è definita nel testo come 'infrastruttura civica collettiva'?",
+    "back": "Perché quando proteggi il tuo account proteggi anche i tuoi contatti (non ricevono truffe dal tuo profilo) e quando segnali un phishing contribuisci a fermare attaccanti che colpiscono migliaia di persone\n\nIl testo del Badge SDG 16 spiega: quando proteggi il tuo account, i tuoi contatti non riceveranno truffe dal tuo profilo compromesso. Quando segnali tentativi di phishing alle autorità, contribuisci a fermare attaccanti che colpiscono migliaia di persone. La sicurezza individuale ha effetti collettivi: è infrastruttura civica nel senso più letterale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Nel messaggio simulato B del livello BASE (la prof.ssa Morelli che chiede la password), quale meccanismo psicologico usa e perché è particolarmente insidioso per uno studente?",
+    "back": "Usa il meccanismo dell'autorità: la professoressa è una figura di fiducia per uno studente, rendendo difficile rifiutare o mettere in dubbio la richiesta\n\nIl messaggio B sfrutta il social engineering basato sull'autorità: la professoressa è una figura di riferimento, e gli studenti tendono a rispondere alle sue richieste senza interrogarsi sulla legittimità. Il testo avverte: 'Nessuno ha mai una ragione legittima per chiederti la tua password — neanche un'insegnante.' Una persona reale userebbe il sistema ufficiale di recupero password.",
     "tag": "Avanzato"
   }
 ]

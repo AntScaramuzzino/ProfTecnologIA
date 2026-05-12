@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa fa un termostato in un impianto di riscaldamento?",
-    "back": "Misura la temperatura ambiente e regola l'accensione/spegnimento del riscaldamento per mantenere la temperatura impostata\n\nIl termostato è il 'cervello' del riscaldamento: evita sprechi accendendo il sistema solo quando necessario.",
+    "front": "Cosa fa l'interruttore differenziale (salvavita) nel quadro elettrico?",
+    "back": "Interrompe l'alimentazione se rileva una dispersione di corrente verso terra (es. persona che tocca un filo scoperto)\n\nL'interruttore differenziale (salvavita) rileva le dispersioni di corrente verso terra. Se una persona tocca un filo scoperto, parte della corrente scorre attraverso il corpo verso terra: il differenziale rileva questa asimmetria e scatta in millesimi di secondo, potenzialmente salvando la vita.",
     "tag": "Base"
   },
   {
-    "front": "Qual è la funzione del contatore elettrico in casa?",
-    "back": "Misurare l'energia elettrica consumata nell'abitazione in kilowattora (kWh)\n\nIl contatore misura i consumi. I nuovi contatori 'smart' comunicano i dati in tempo reale e permettono letture da remoto.",
+    "front": "La formula P = V × I calcola cosa?",
+    "back": "La potenza elettrica consumata da un dispositivo in Watt\n\nP = V × I calcola la potenza elettrica in Watt. In Italia V = 230V (tensione domestica). L'energia consumata nel tempo si calcola con E = P × t (es. 100W × 4h = 400Wh = 0,4 kWh). Il costo si ottiene moltiplicando per il prezzo dell'energia (circa 0,25-0,35 €/kWh).",
     "tag": "Base"
   },
   {
-    "front": "Cosa si intende per 'cappotto termico' di un edificio?",
-    "back": "Uno strato isolante applicato all'esterno delle pareti per ridurre le dispersioni di calore\n\nIl cappotto termico riduce le dispersioni attraverso le pareti, abbassando i consumi di riscaldamento del 30-50%.",
+    "front": "Perché le reti di trasmissione elettrica usano tensioni altissime (132.000-400.000 V) invece di 230V?",
+    "back": "Perché alta tensione significa bassa corrente, riducendo le perdite per effetto Joule proporzionali al quadrato della corrente\n\nLe perdite per effetto Joule sono P = R × I². Raddoppiare la tensione dimezza la corrente necessaria (stessa potenza trasmessa: P = V × I). Dimezzare la corrente riduce le perdite di quattro volte. Su reti di centinaia di km, questa differenza vale miliardi di kWh risparmiati ogni anno.",
     "tag": "Base"
   },
   {
-    "front": "Perché molte famiglie italiane pagano molto per il riscaldamento?",
-    "back": "Perché il 60-70% degli edifici italiani è stato costruito prima del 1976, senza norme sull'isolamento termico\n\nPrima della Legge 373/1976 non esistevano obblighi di isolamento. Gli edifici 'energivori' del dopoguerra sono la principale causa dei consumi elevati.",
+    "front": "Cosa fa il sifone nel sistema di scarico di un lavandino?",
+    "back": "Trattiene permanentemente dell'acqua nella curva a U, impedendo ai gas fognari tossici di risalire nell'appartamento\n\nIl sifone è una curva a U nel tubo di scarico che trattiene permanentemente dell'acqua. Questa barriera liquida impedisce ai gas fognari (metano, acido solfidrico, altri gas tossici e maleodoranti) di risalire nell'appartamento. Se senti cattivi odori da uno scarico, il sifone si è asciugato: fai scorrere acqua per qualche minuto.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la classe energetica A4 di un edificio e cosa indica rispetto alla classe G?",
+    "back": "La A4 indica un edificio quasi a zero energia (ottima efficienza); la G indica la classe peggiore con altissimo consumo\n\nLa scala energetica degli edifici va da A4 (ottima efficienza, edificio quasi a zero energia) a G (peggiore, altissimi consumi). Un edificio in A4 consuma pochissima energia per il riscaldamento/raffrescamento perché è ben isolato e usa energie rinnovabili. Uno in G può consumare 10-15 volte di più.",
+    "tag": "Base"
+  },
+  {
+    "front": "A quale temperatura funziona un impianto di riscaldamento a radiatori tradizionali vs. a pavimento radiante?",
+    "back": "I radiatori funzionano a 70-80°C; il pavimento radiante a 30-35°C\n\nI radiatori hanno superficie piccola e richiedono acqua a 70-80°C. Il pavimento radiante ha superficie enorme (tutta la superficie del pavimento) e funziona a soli 30-35°C. A temperature basse le pompe di calore sono molto più efficienti (COP più alto), per questo pavimento radiante e pompa di calore sono un'accoppiata ottimale.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché i pannelli fotovoltaici producono energia anche in giornate nuvolose, anche se meno?",
+    "back": "Perché i pannelli reagiscono alla luce diffusa che attraversa le nuvole, non solo alla luce diretta\n\nLe celle fotovoltaiche convertono i fotoni (particelle di luce) in elettricità. In giorni nuvolosi, la luce diffusa che attraversa le nuvole contiene comunque fotoni: i pannelli producono il 20-50% rispetto a una giornata serena. La luce diretta non è necessaria, anche se aumenta significativamente la produzione.",
     "tag": "Intermedio"
   },
   {
-    "front": "Come funziona una pompa di calore?",
-    "back": "Sposta calore dall'esterno all'interno prelevandolo dall'aria, dal suolo o dall'acqua: consuma solo elettricità per muoverlo\n\nLa pompa di calore non produce calore, lo sposta: per ogni kWh di elettricità consumata, ne trasferisce 3-4 dall'ambiente esterno (COP 3-4).",
+    "front": "Perché inserire troppi dispositivi in un'unica presa tramite adattatori multipli è pericoloso?",
+    "back": "Perché la corrente totale supera il limite di 10A (circa 2.200W) della presa, causando surriscaldamento dei cavi e rischio incendio\n\nOgni presa sopporta al massimo 10A (circa 2.200W a 230V). Collegare molti dispositivi tramite adattatori multipli può far superare facilmente questo limite: la corrente in eccesso riscalda il cavo. Il surriscaldamento del cavo è la causa principale degli incendi domestici da impianto elettrico. Gli interruttori magnetotermici nel quadro proteggono, ma spesso il cavo si surriscalda prima che scattino.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è l'efficienza energetica e come si misura in un edificio?",
-    "back": "Il rapporto tra energia utile ottenuta ed energia consumata; negli edifici è indicata dalla classe APE (A4-G)\n\nUn edificio in classe A+ consuma meno di 15 kWh/mq/anno. Uno in classe G può consumarne oltre 300. La differenza in bolletta è enorme.",
+    "front": "Come si calcola il consumo mensile di una lavatrice da 0,6 kWh/lavaggio, usata 4 volte a settimana, con costo energetico di 0,30 €/kWh?",
+    "back": "0,6 × 4 × 4 × 0,30 = 2,88 € al mese\n\n0,6 kWh/lavaggio × 4 lavaggi/settimana × 4 settimane/mese × 0,30 €/kWh = 2,88 €/mese. Su base annua: circa 34,56 €. Questo tipo di calcolo permette di confrontare l'impatto di diversi elettrodomestici e decidere dove vale la pena investire in apparecchi più efficienti.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'Superbonus' e perché ha avuto un impatto così significativo?",
-    "back": "Un incentivo fiscale (originariamente 110%) per riqualificazioni energetiche profonde degli edifici: ha innescato la più grande ristrutturazione del patrimonio edilizio italiano\n\nIl Superbonus ha accelerato la transizione energetica del patrimonio edilizio italiano ma ha generato problemi di gestione della finanza pubblica.",
+    "front": "Perché i tubi di scarico devono avere una pendenza minima del 2%?",
+    "back": "Per garantire che l'acqua scorra per gravità verso le fognature senza creare depositi\n\nI tubi di scarico funzionano per gravità (non per pressione). Devono avere una pendenza minima del 2% verso il basso per garantire che l'acqua scorra continuamente senza fermarsi. Sotto il 2% l'acqua scorre troppo lento e lascia depositi organici che nel tempo ostruiscono il tubo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa fare immediatamente se si sente l'odore di gas (uova marce) in casa?",
+    "back": "Non accendere nessun dispositivo elettrico, aprire porte e finestre, chiudere il rubinetto del gas ed uscire\n\nIn caso di odore di gas: 1) NON accendere luci o qualsiasi dispositivo elettrico (possibile scintilla → esplosione); 2) Aprire immediatamente porte e finestre; 3) Chiudere il rubinetto del gas; 4) Uscire dall'edificio; 5) Chiamare l'emergenza gas: 800-900-700, attivo 24h. Il gas metano è inodore: il mercaptano aggiunto lo rende riconoscibile.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Una bolletta elettrica indica 200 kWh consumati nel mese a 0,30 €/kWh. Come calcoli il costo totale?",
+    "back": "200 × 0,30 = 60 €\n\nCosto energia = consumo (kWh) × prezzo unitario (€/kWh) = 200 × 0,30 = 60 €. In realtà la bolletta include anche quote fisse, oneri di sistema, imposte e IVA. La componente energia pura (a consumo) si calcola con questa formula semplice.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un appartamento ha bollette alte d'inverno. Come utilizzi le conoscenze degli impianti per identificare i possibili responsabili?",
+    "back": "Verificare l'efficienza della caldaia, l'isolamento termico dell'involucro, la classe energetica e i consumi di ogni elettrodomestico\n\nBollette alte d'inverno si analizzano sistematicamente: 1) Caldaia: rendimento, manutenzione, tipo; 2) Isolamento: infissi, pareti, ponti termici; 3) Comportamenti: temperatura termostato, orari; 4) Elettrodomestici: frigorifero vecchio? Lavatrice in classe E? Solo dopo questa diagnosi si può investire nel modo giusto.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cosa si intende per 'comunità energetica rinnovabile' (CER)?",
-    "back": "Un gruppo di cittadini, imprese o enti che producono e condividono energia rinnovabile in modo collettivo con vantaggi economici e ambientali\n\nLe CER permettono di condividere l'energia prodotta da impianti fotovoltaici tra più utenti. Chi produce di giorno condivide con chi consuma di sera.",
+    "front": "Un appartamento usa 3.500 kWh/anno di energia elettrica. Il fotovoltaico produce 1.200 kWh/anno. Quale percentuale del fabbisogno copre?",
+    "back": "Circa il 34%, riducendo significativamente la bolletta ma non azzerando i consumi\n\n1.200 kWh ÷ 3.500 kWh = 0,343 ≈ 34%. Il fotovoltaico copre circa un terzo del fabbisogno annuo. Il restante 66% viene ancora dalla rete. Per azzerare la bolletta servirebbe più potenza installata o un sistema di accumulo (batterie) per usare l'energia prodotta di giorno anche di notte.",
     "tag": "Avanzato"
   },
   {
-    "front": "Come si calcola il 'ritorno sull'investimento' (ROI) di un impianto fotovoltaico domestico?",
-    "back": "Dividendo il costo totale dell'impianto per il risparmio annuo in bolletta (payback period): tipicamente 6-10 anni\n\nUn impianto da 6 kWp costo ~8.000€ può risparmiare ~1.000-1.200€/anno: payback ~7-8 anni, poi produce risparmio puro per 20-25 anni.",
+    "front": "Un genitore chiede perché la bolletta del gas è misurata in m³ ma il costo è in kWh. Come spieghi la conversione?",
+    "back": "Ogni m³ di metano contiene circa 8,5 kWh di energia; la bolletta moltiplica i m³ per il potere calorifico\n\nIl contatore del gas misura i volumi consumati in m³. Poi la bolletta converte in kWh usando il potere calorifico del metano (circa 8,5 kWh/m³). Questa conversione permette di confrontare il costo dell'energia da gas con quella elettrica sulle stesse basi (€/kWh). Le tasse, gli oneri e l'IVA si aggiungono separatamente.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un edificio ha classe energetica G. Quali interventi, nell'ordine di efficacia tipico, dovresti proporre per migliorarla?",
+    "back": "Prima isolare l'involucro (cappotto + infissi), poi aggiornare l'impianto di riscaldamento, poi installare il fotovoltaico\n\nL'ordine logico: 1) Isolare l'involucro (cappotto esterno + infissi) → riduce il fabbisogno; 2) Sostituire il sistema di riscaldamento (caldaia a condensazione o pompa di calore) dimensionato sul nuovo fabbisogno ridotto; 3) Installare fotovoltaico. Fare gli interventi nell'ordine sbagliato spreca investimenti.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Sull'APE (Attestato di Prestazione Energetica) di un appartamento che stai per affittare trovi la classe E con un consumo di 220 kWh/m²/anno. Cosa significa praticamente per il tuo portafoglio?",
+    "back": "È un edificio energeticamente inefficiente: le bollette di riscaldamento saranno significativamente più alte rispetto a un edificio in classe A\n\nUn appartamento in classe E (220 kWh/m²/anno) consume molto più di uno in classe A (<30-50 kWh/m²/anno). In termini pratici: per un appartamento di 80 m², il consumo stimato è 17.600 kWh/anno. Se 60% è gas (6,2 kWh/m³ × prezzo) e 40% elettrico, le bollette saranno significativamente più alte rispetto a un'alternativa in classe A.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché l'energia elettrica viene trasportata ad altissima tensione e poi abbassata più volte prima di arrivare a casa? Quale principio fisico spiega le perdite ridotte?",
+    "back": "Le perdite per effetto Joule (P = R × I²) dipendono dal quadrato della corrente: alta tensione = bassa corrente = perdite enormemente ridotte\n\nLe perdite per effetto Joule nei cavi sono P = R × I². Per trasmettere la stessa potenza (P = V × I), raddoppiare la tensione dimezza la corrente. Dimezzare la corrente riduce le perdite di quattro volte (perché dipendono da I²). Su 300 km di rete, questo risparmio vale milioni di kWh. Per questo: centrale → 400kV → 132kV → 20kV → 230V domestici.",
     "tag": "Avanzato"
   }
 ]

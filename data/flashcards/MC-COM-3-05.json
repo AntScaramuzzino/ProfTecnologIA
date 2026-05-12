@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa trasportano i cavi sottomarini in fibra ottica?",
-    "back": "Dati digitali sotto forma di impulsi luminosi\n\nI cavi sottomarini in fibra ottica trasportano il 95% del traffico internet globale tra i continenti.",
+    "front": "Che percentuale del traffico Internet mondiale viaggia su cavi sottomarini?",
+    "back": "Il 97% del traffico Internet e delle comunicazioni telefoniche internazionali\n\nCirca 550 cavi sottomarini attivi trasportano il 97% di tutto il traffico Internet e delle comunicazioni telefoniche internazionali. Questi cavi — con da 8 a 24 paia di fibre ottiche — percorrono i fondi degli oceani collegando i continenti.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un indirizzo IP?",
-    "back": "Un'etichetta numerica che identifica ogni dispositivo in rete\n\nOgni dispositivo connesso ha un IP. Senza di esso i pacchetti di dati non saprebbero dove andare.",
+    "front": "Qual è il primo messaggio inviato su ARPANET nella storia di Internet?",
+    "back": "Solo le lettere 'lo' (il sistema crashò prima di completare 'login')\n\nIl 29 ottobre 1969, Charley Kline all'UCLA tentò di inviare 'login' al computer dello Stanford Research Institute via ARPANET. Il sistema crashò dopo le prime due lettere. Il primo messaggio di Internet nella storia è 'lo' — forse la parola più umile e accidentale dell'era digitale.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il Wi-Fi?",
-    "back": "Un protocollo per connessioni wireless a corto raggio basato su onde radio\n\nIl Wi-Fi usa onde radio (2.4 GHz o 5 GHz) per connettere dispositivi senza fili entro poche decine di metri.",
+    "front": "Cosa gestisce ICANN (Internet Corporation for Assigned Names and Numbers)?",
+    "back": "Il sistema dei nomi di dominio (DNS) e degli indirizzi IP a livello mondiale\n\nICANN (Internet Corporation for Assigned Names and Numbers), con sede a Los Angeles, gestisce il sistema DNS globale e l'assegnazione degli indirizzi IP. Dal 2016 risponde a una struttura multistakeholder globale (non più solo al governo americano che la supervisionava dalla fondazione nel 1998).",
     "tag": "Base"
   },
   {
-    "front": "Cosa fa un router nella rete domestica?",
-    "back": "Smista i pacchetti di dati tra la rete locale e internet, assegnando indirizzi IP ai dispositivi\n\nIl router è il 'postino' della rete: riceve pacchetti e li indirizza verso la destinazione giusta, sia in rete locale sia verso internet.",
+    "front": "Cosa significa 'net neutrality' (neutralità della rete)?",
+    "back": "Tutti i dati su Internet vanno trattati allo stesso modo dagli operatori, senza discriminazioni\n\nLa net neutrality (neutralità della rete) è il principio per cui tutti i dati su Internet devono essere trattati allo stesso modo dagli operatori: nessun sito, servizio o tipo di traffico può essere accelerato, rallentato o bloccato preferenzialmente. In Europa è garantita dal Regolamento (UE) 2015/2120.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il Great Firewall cinese?",
+    "back": "Il sistema nazionale di filtraggio che blocca Google, Facebook, YouTube e Wikipedia in Cina\n\nIl Great Firewall (ufficialmente 'Golden Shield') è il sistema cinese di filtraggio di Internet che blocca Google (inclusi Gmail, YouTube, Drive), Facebook, Instagram, Twitter, WhatsApp, Wikipedia e migliaia di altri servizi. Usa blocco IP, filtraggio DNS e Deep Packet Inspection.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quante persone nel mondo ancora non hanno accesso a Internet nel 2024?",
+    "back": "Circa 2,5 miliardi di persone\n\nNel 2024, 5,5 miliardi di persone usano Internet. Circa 2,5 miliardi non hanno ancora accesso — concentrati principalmente in Africa subsahariana, Asia meridionale e zone rurali globali. La 'connettività universale' è ancora lontana dall'essere realizzata.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché l'architettura originale di ARPANET (1969) è ancora il motivo per cui Internet funziona oggi?",
+    "back": "Perché fu progettata senza nodo centrale: nessun punto di fallimento unico, nessun controllo unico\n\nARPANET fu progettata specificatamente per 'resistere a un attacco nucleare': nessun nodo centrale significa nessun punto di fallimento unico. Questa architettura distribuita è ancora la ragione per cui Internet funziona — e la ragione per cui è così difficile da regolamentare o censurare completamente.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la latenza e quando diventa un problema?",
-    "back": "Il ritardo nella trasmissione dei dati: critica per gaming, videochiamate e sistemi real-time\n\nCon latenza alta un videogioco online diventa ingiocabile, una videochiamata si spezza, un veicolo autonomo non può reagire in tempo.",
+    "front": "Cosa permise la scelta 'end-to-end' del protocollo TCP/IP (1973-74)?",
+    "back": "Chiunque poteva costruire nuove applicazioni sopra Internet senza chiedere il permesso a nessuno\n\nLa scelta end-to-end di TCP/IP (Cerf e Kahn, 1973-74) pose l'intelligenza agli estremi della rete: la rete si limita a consegnare pacchetti senza sapere cosa contengono. Chiunque poteva costruire qualsiasi applicazione sopra Internet senza chiedere permesso. Per questo il web, le email, il gaming online, le criptovalute sono stati tutti possibili.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa si intende per 'cloud computing'?",
-    "back": "Uso di risorse informatiche (storage, elaborazione, app) su server remoti accessibili via internet\n\nIl cloud ha spostato i dati e le applicazioni dai PC locali a data center globali: Google Drive, Dropbox, Office 365 sono tutti cloud.",
+    "front": "Il Deep Packet Inspection (DPI) usato nel Great Firewall: in cosa supera il semplice blocco IP?",
+    "back": "Analizza il contenuto dei pacchetti in transito cercando pattern associati a VPN o contenuti proibiti\n\nIl blocco IP blocca indirizzi noti (facilmente aggirabile). Il filtraggio DNS reindirizza le richieste (aggirabile con DNS alternativi). La Deep Packet Inspection (DPI) analizza il contenuto stesso dei pacchetti cercando pattern di VPN, parole chiave, o fingerprint di protocolli proibiti — molto più difficile da aggirare.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è l'architettura 'edge computing' e perché cresce con l'IoT?",
-    "back": "Elaborazione dei dati il più vicino possibile alla fonte (dispositivo/sensore) per ridurre latenza e traffico verso il cloud centrale\n\nCon miliardi di sensori IoT, inviare tutto al cloud genera colli di bottiglia. L'edge elabora in loco il dato grezzo e manda solo il risultato.",
+    "front": "Perché il World Wide Web (1991) non è la stessa cosa di Internet?",
+    "back": "Il Web è un'applicazione costruita sopra Internet: usa HTML, URL e HTTP per collegare pagine ipertestuali\n\nInternet è l'infrastruttura di rete (cavi, protocolli TCP/IP, router, indirizzi IP). Il World Wide Web — inventato da Tim Berners-Lee nel 1991 al CERN — è un'applicazione costruita sopra Internet, che usa HTML (linguaggio di pagine), URL (indirizzi) e HTTP (protocollo). Esistono molte altre applicazioni su Internet: email, streaming, gaming, VoIP.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Qual è l'implicazione della 'data sovereignty' (sovranità dei dati) per le aziende che servono cittadini europei?",
+    "back": "I dati dei cittadini europei devono essere trattati secondo le norme GDPR, con conseguenze sulla localizzazione dei data center\n\nLa 'data sovereignty' (sovranità sui dati) riguarda quale legge si applica ai dati. Il GDPR europeo (2018) stabilisce che i dati dei cittadini europei devono essere trattati secondo le norme europee, con conseguenze sulla localizzazione e configurazione dei data center. La Cina va oltre: impone che i dati dei propri cittadini restino fisicamente in Cina.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché il 'DNS spoofing' è più pericoloso del semplice blocco di un sito web?",
+    "back": "Perché reindirizza l'utente a un sito fraudolento senza che il browser mostri nessun errore visibile\n\nIl DNS spoofing sostituisce la risposta DNS legittima con un indirizzo IP falso, reindirizzando l'utente su un sito fraudolento. Il browser non mostra nessun errore: l'utente è convinto di essere sul sito corretto. La difesa è DNSSEC, che verifica l'autenticità delle risposte DNS con firma digitale.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il caso del sabotaggio dei cavi baltici (2024) solleva una domanda di governance: chi è responsabile di proteggere i cavi sottomarini?",
+    "back": "Esiste un vuoto: le convenzioni di Ginevra li proteggono, ma l'enforcement in acque internazionali è quasi impossibile\n\nIl testo descrive un vuoto di governance: le convenzioni di Ginevra del 1958 proteggono i cavi in acque internazionali, ma 'l'enforcement è quasi impossibile'. La NATO ha creato nel 2023 una Coordination Cell specificamente per i cavi atlantici. L'UE li ha inseriti nella Critical Entities Resilience Directive (2022). Ma il quadro rimane frammentato.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il BGP (Border Gateway Protocol) e perché è critico?",
-    "back": "Il protocollo che permette ai router di condividere le rotte di rete tra i diversi Internet Service Provider: è la 'mappa' di Internet\n\nIl BGP è fragile: un errore di configurazione può 'dirottare' il traffico globale. Nel 2010 un ISP cinese ha accidentalmente sequestrato il 15% del traffico internet mondiale.",
+    "front": "La Cina impone che i dati dei propri cittadini restino su server fisicamente in Cina. Quali sono le due motivazioni del testo?",
+    "back": "Controllo politico dei dati e sicurezza nazionale\n\nIl testo indica che la localizzazione forzata dei dati cinesi è 'sia di controllo politico che di sicurezza nazionale'. Controllo politico: il governo può accedere ai dati degli utenti. Sicurezza nazionale: ridurre la dipendenza da servizi stranieri che potrebbero interrompere l'accesso in caso di conflitto.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'dark web' e come si distingue dal 'deep web'?",
-    "back": "Il deep web comprende tutto ciò non indicizzato dai motori di ricerca (es. email, banche dati). Il dark web è un sottoinsieme accessibile solo con browser speciali come Tor, usato sia per privacy legittima sia per attività illegali\n\nLa distinzione è importante: il deep web include la tua email e il conto bancario online. Il dark web richiede Tor e ha usi legittimi (giornalismo, dissidenti) oltre a quelli illegali.",
+    "front": "Sei il rappresentante di Wikimedia Italia che deve scrivere una lettera al Parlamento contro una legge di DPI per la disinformazione. Qual è il primo argomento più solido?",
+    "back": "Il meccanismo è facilmente abusabile per bloccare dissenso legittimo, violando la net neutrality EU\n\nIl testo descrive il dibattito nel compito di realtà: i critici della legge DPI sostengono che 'è censura, crea un meccanismo facilmente abusabile per bloccare dissenso legittimo, e viola la net neutrality garantita dal Regolamento UE 2015/2120'. L'argomento legale (violazione del diritto europeo) è il più forte per un'organizzazione come Wikimedia.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un traceroute da Roma verso Seoul attraversa 4-7 paesi. Qual è l'implicazione legale di questo percorso?",
+    "back": "Ogni paese attraversato può richiedere accesso ai dati in transito secondo le proprie leggi nazionali\n\nIl testo indica esplicitamente: 'Questo ha implicazioni legali: ogni paese i cui cavi vengono usati può teoricamente richiedere accesso ai dati in transito secondo le proprie leggi.' Un pacchetto da Roma a Seoul che passa per un paese con leggi di sorveglianza permissive è potenzialmente accessibile a quel governo — anche se cifrato (può essere registrato per decifrarlo in futuro).",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "L'affermazione 'Internet è decentralizzato, quindi non si può censurare né fermare' è vera o falsa?",
+    "back": "Parzialmente falsa: il traffico fisico si concentra in pochi nodi IXP (Francoforte, Amsterdam) e pochi cavi sottomarini\n\nIl testo chiarisce l'errore: 'Internet è stata costruita per essere resiliente agli attacchi — ma la sua infrastruttura fisica è più vulnerabile di quanto sembri.' Il traffico fisico si concentra nei principali IXP mondiali (DE-CIX a Francoforte, AMS-IX ad Amsterdam, LINX a Londra). Un attacco a questi nodi avrebbe conseguenze enormi sul traffico regionale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la concentrazione dei cavi sottomarini nelle mani di Google, Meta e Microsoft è considerata un problema geopolitico?",
+    "back": "Perché poche aziende private americane controllano l'infrastruttura di comunicazione globale senza oversight democratico\n\nIl testo indica che la proprietà dei cavi da parte di Google, Meta, Amazon, Microsoft 'concentra il controllo dell'infrastruttura di comunicazione globale in poche mani private — una concentrazione di potere che non aveva precedenti storici.' Questo significa che poche aziende private americane controllano l'infrastruttura di cui dipendono miliardi di persone nel mondo.",
     "tag": "Avanzato"
   }
 ]

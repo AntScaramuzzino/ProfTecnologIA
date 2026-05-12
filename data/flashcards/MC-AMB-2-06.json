@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è il dissesto idrogeologico?",
-    "back": "L'insieme dei fenomeni di instabilità del territorio: frane, alluvioni, erosione costiera causati da fattori naturali e umani\n\nL'Italia ha l'81% dei comuni a rischio idrogeologico: la combinazione di territorio fragile, cementificazione e cambiamento climatico rende il problema urgente.",
+    "front": "Qual è la definizione corretta di 'smart city'?",
+    "back": "Una città che usa dati per migliorare i servizi ai propri cittadini\n\nLa smart city usa i dati come strumento per migliorare i servizi ai cittadini (non la tecnologia per sé stessa). Ma questa definizione apre una domanda politica: migliori per chi? I dati vengono raccolti su tutti, ma le decisioni prese con quei dati non avvantaggiano necessariamente tutti allo stesso modo.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è una frana?",
-    "back": "Lo spostamento verso il basso di massa rocciosa o terrigena lungo un versante per effetto della gravità\n\nLe frane si classificano per meccanismo (scivolamento, crollo, colata) e velocità. Alcune si muovono lentamente, altre in pochi secondi.",
+    "front": "Cosa sono le 'spire induttive' nei sensori del traffico?",
+    "back": "Bobine di filo metallico nell'asfalto che rilevano i veicoli metallici che passano alterando il campo magnetico\n\nLe spire induttive sono bobine di filo metallico incorporate nello strato superficiale dell'asfalto. Quando un veicolo metallico le attraversa, altera il campo magnetico: il sensore lo rileva e conta il passaggio. Sono il sistema più diffuso per il conteggio del traffico. Limite: non distinguono il tipo di veicolo.",
     "tag": "Base"
   },
   {
-    "front": "Cosa significa 'impermeabilizzazione del suolo' e perché è pericolosa?",
-    "back": "La copertura del suolo con asfalto o cemento che impedisce l'infiltrazione dell'acqua: aumenta le piene dei corsi d'acqua\n\nOgni metro quadro di suolo cementificato non assorbe pioggia. Nelle città l'acqua scorre tutta in superficie, saturando rapidamente i tombini.",
+    "front": "Cosa sono gli 'open data' urbani?",
+    "back": "Dataset pubblicati dalle pubbliche amministrazioni in formato liberamente accessibile e riutilizzabile da chiunque\n\nGli open data sono dataset della pubblica amministrazione pubblicati in formato liberamente accessibile (CSV, JSON, API). Non richiedono registrazione né pagamento. Esempi: orari dei bus, qualità dell'aria per quartiere, incidenti stradali, dati sul bike sharing. Il portale nazionale è dati.gov.it, quello europeo data.europa.eu.",
     "tag": "Base"
   },
   {
-    "front": "Come funziona il sistema di allerta meteo-idrologica in Italia?",
-    "back": "I centri funzionali regionali emettono allerte (verde/giallo/arancione/rosso) basate su previsioni meteorologiche e soglie di rischio: i comuni attivano i piani di protezione civile\n\nIl sistema di allerta permette prevenzione attiva: scuole chiuse, cantieri sospesi, presidi di monitoraggio — tutto prima che il pericolo diventi emergenza.",
+    "front": "Che risparmio energetico ottengono le lampade stradali 'smart' con sensori di presenza?",
+    "back": "Il 30-50% rispetto all'illuminazione tradizionale non controllata\n\nLe lampade smart hanno sensori di presenza e luminosità. Di notte, in assenza di pedoni o veicoli, si dimezzano. Quando rilevano movimento, tornano a piena potenza. Risparmio: 30-50% rispetto all'illuminazione tradizionale costante. A Roma (300.000 punti luce) il risparmio è nell'ordine di decine di milioni di euro l'anno.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa misura il sensore PM2.5 nell'aria urbana?",
+    "back": "Le particelle solide sospese nell'aria di diametro inferiore a 2,5 micrometri\n\nPM2.5 (particulate matter 2.5) indica la concentrazione di particelle solide sospese nell'aria con diametro inferiore a 2,5 micrometri. Sono le più pericolose per la salute: così piccole da penetrare nei polmoni e nel sangue. Provengono da combustioni (auto, riscaldamento), industrie, attività agricole.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa ha dimostrato lo studio sull'impatto del car sharing nelle città europee?",
+    "back": "I dati sull'impatto sono misti: può ridurre le auto private, ma alcuni utenti aggiungono spostamenti che prima facevano a piedi o in bici\n\nL'impatto del car sharing è ambivalente: positivi (1 auto condivisa sostituisce 4-15 private, meno auto in sosta) e negativi (alcuni utenti aggiungono spostamenti che prima facevano a piedi o in bici, scooter sharing abbandonati sui marciapiedi, concentrazione nei quartieri benestanti). L'impatto reale dipende dal comportamento degli utenti e dal contesto urbano.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché Copenhagen è citata come esempio di smart city 'non dipendente dalla tecnologia'?",
+    "back": "Perché ha investito in infrastrutture ciclabili, trasporto pubblico efficiente e spazi pubblici di qualità: soluzioni che non richiedono sensori IoT ma migliorano la vita dei cittadini\n\nCopenhagen è 'smart' perché ha fatto scelte radicali di pianificazione: 62% dei residenti usa la bici quotidianamente, trasporto pubblico eccellente, obiettivo carbon-neutral. Non servono sensori IoT per questo: serve volontà politica e investimenti in infrastrutture fisiche. La tecnologia amplifica buone scelte, non sostituisce le cattive.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è un 'piano regolatore' e come può ridurre il rischio idrogeologico?",
-    "back": "Lo strumento urbanistico che definisce dove si può costruire: esclude le zone a rischio frana e alluvione dalla nuova edificazione\n\nLe Carte del Rischio PAI (Piano di Assetto Idrogeologico) individuano le zone a rischio: il PRG non può autorizzare nuova edificazione in quelle zone.",
+    "front": "Come usa Milano i dati del traffico per gestire le ZTL (Zone a Traffico Limitato)?",
+    "back": "Con dati in tempo reale da sensori e telecamere per attivare semafori adattativi e ZTL dinamiche quando la qualità dell'aria o il traffico superano soglie critiche\n\nMilano usa dati in tempo reale da sensori di qualità dell'aria (PM2.5, NO₂) e da rilevatori di traffico per attivare semafori adattativi (rallentano il traffico quando l'aria è inquinata) e, in situazioni di emergenza, estendere temporaneamente le zone a traffico limitato. È la ZTL 'dinamica' basata su dati, non solo su calendari fissi.",
     "tag": "Intermedio"
   },
   {
-    "front": "Perché l'abbandono del territorio montano aumenta il rischio idrogeologico?",
-    "back": "Perché senza la manutenzione tradizionale (terrazzamenti, canali, boschi gestiti) il territorio si degrada: frane e piene aumentano\n\nLe comunità montane per secoli hanno mantenuto in equilibrio un territorio fragile. Il loro abbandono ha accelerato il dissesto.",
+    "front": "Qual è il principale vantaggio dei cassonetti 'smart' con sensori di riempimento?",
+    "back": "Permettono di ottimizzare i percorsi dei camion raccoglitori in base al riempimento reale, riducendo i km percorsi e le emissioni\n\nI cassonetti smart hanno sensori ultrasonici che misurano il livello di riempimento e lo trasmettono in tempo reale alla centrale operativa. I camion raccoglitori non seguono percorsi fissi ma una 'mappa di priorità' aggiornata ogni ora: raccolgono dove serve. In alcune città (Barcellona, Amsterdam) i percorsi si riducono del 20-30%.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'permeabilizzazione' e quali tecniche vengono usate per ripristinare il ciclo idrologico in città?",
-    "back": "La sostituzione di superfici impermeabili con pavimentazioni drenanti, giardini pensili, aree verdi e bacini di laminazione per ridurre il rischio alluvioni\n\nLe città spugna (sponge cities) reintroducono il ciclo naturale dell'acqua: ogni mm di pioggia assorbito dal suolo non raggiunge i tombini.",
+    "front": "Perché gli strumenti di partecipazione civica digitale possono escludere sistematicamente alcune categorie di cittadini?",
+    "back": "Perché chi non ha smartphone, internet a casa o padronanza digitale è escluso dai processi decisionali digitali\n\nLa partecipazione civica digitale esclude sistematicamente chi non ha: 1) uno smartphone; 2) connessione internet a casa; 3) competenze digitali adeguate; 4) tempo (chi lavora su più turni ha meno tempo per partecipare). Una smart city che usa solo strumenti digitali raccoglie principalmente le opinioni dei cittadini già avvantaggiati.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Qual è l'esempio descritto nel testo di una scuola di Torino che ha usato i dati per ridurre i consumi?",
+    "back": "Ha usato i dati di consumo energetico rilevati dai contatori smart per identificare sprechi e ridurli con interventi comportamentali e tecnici\n\nLa scuola di Torino ha installato contatori smart che mostravano i consumi energetici in tempo reale (sala per sala, ora per ora). Analizzando i dati hanno identificato sprechi (illuminazione accesa in aule vuote, riscaldamento attivo nei weekend) e li hanno eliminati con interventi combinati tecnici e comportamentali.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Songdo (Corea del Sud) è spesso citata come smart city. Qual è la critica principale che le viene mossa?",
+    "back": "È stata progettata completamente dall'alto, senza partecipazione dei futuri abitanti, risultando in una città tecnologicamente avanzata ma poco vissuta\n\nSongdo è la smart city costruita dall'alto: ogni sensore, ogni sistema, ogni edificio pianificato prima che arrivassero gli abitanti. Il risultato è una città tecnologicamente avanzata ma 'fredda': poca vita di quartiere organica, pochi negozi spontanei, pochi incontri casuali. La tecnologia non crea automaticamente vita urbana.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un comune vuole usare i dati di Bluetooth dei smartphone per misurare i flussi pedonali nella piazza principale. Quali questioni etiche e tecniche deve affrontare?",
+    "back": "Consenso informato dei passanti, anonimizzazione dei dati (no identificazione individuale), trasparenza sull'uso dei dati, e sicurezza del sistema di raccolta\n\nL'uso di dati Bluetooth per misurare flussi pedonali richiede: 1) consenso informato o almeno informativa pubblica chiara; 2) anonimizzazione immediata dei dati (il GDPR impone il principio di minimizzazione dei dati personali); 3) trasparenza (chi accede, per quanto, a che scopo); 4) sicurezza del sistema. I dati anonimi aggregati rimangono eticamente sensibili.",
     "tag": "Avanzato"
   },
   {
-    "front": "Perché il cambiamento climatico aumenta il rischio idrogeologico?",
-    "back": "Perché intensifica gli eventi estremi: piogge più intense e concentrate, siccità prolungate seguite da piogge eccezionali, innalzamento del mare\n\nIl climate change modifica la distribuzione delle piogge: più siccità, poi precipitazioni intense concentrate su terreni aridi che non assorbono. Effetto doppio sul rischio.",
+    "front": "Una città vuole implementare il bilancio partecipativo digitale. Come garantisce che le proposte riflettano la diversità della popolazione e non solo chi ha uno smartphone?",
+    "back": "Affiancando al canale digitale canali fisici (assemblee di quartiere, urne fisiche, mediatori di comunità) per raggiungere chi è escluso dal digitale\n\nPer rendere il bilancio partecipativo realmente inclusivo: 1) canale digitale (app, web) per chi ha smartphone e internet; 2) assemblee fisiche di quartiere; 3) urne fisiche in luoghi accessibili (biblioteche, farmacie, mercati); 4) mediatori di comunità per chi non parla la lingua dominante; 5) orari ampi per chi lavora. Lisbona è il modello più citato con 6 milioni/anno.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'delocalizzazione assistita' e in quali casi viene applicata?",
-    "back": "Lo spostamento di abitazioni e infrastrutture da zone ad alto rischio idrogeologico non mitigabile verso aree sicure: soluzione estrema ma necessaria in alcuni casi\n\nIn alcune zone italiane (es. aree colpite da frane ricorrenti) la delocalizzazione è l'unica soluzione sicura. Richiede consenso sociale e risorse significative.",
+    "front": "Amsterdam è citata come smart city con forte attenzione alla privacy. Quali principi applica che la distinguono da Songdo?",
+    "back": "Applica i principi del 'City data framework': trasparenza su quali dati raccoglie, scopo limitato, accesso pubblico agli open data, e coinvolgimento dei cittadini nella governance dei dati\n\nAmsterdam a differenza di Songdo (top-down, tecnologia prima dei cittadini) applica il 'City data framework': trasparenza pubblica su cosa si raccoglie e perché, limitazione dello scopo (i dati non vengono usati per altri fini), open data per le informazioni di pubblico interesse, e partecipazione nella governance. La tecnologia serve i cittadini, non la sorveglia.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo afferma che la 'smartness non è solo tecnologia'. Cosa significa nella pratica per una città italiana di medie dimensioni?",
+    "back": "Che investire in piste ciclabili, trasporto pubblico efficiente e spazi pubblici di qualità può rendere una città 'smart' più dei sensori IoT più costosi\n\nPer una città italiana di medie dimensioni: essere smart può significare avere un sistema di bike-sharing ben distribuito più che mille sensori, bus che passano ogni 10 minuti più che un'app di monitoraggio del traffico, piazze pedonali vivibili più che telecamere di riconoscimento. La tecnologia amplifica le buone scelte urbanistiche; non le sostituisce.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un giornalista trova nel portale open data del comune i dati sugli incidenti stradali per quartiere degli ultimi 5 anni. Che utilizzi concreti può farne?",
+    "back": "Mappare geograficamente i punti neri, correlare con orari e tipo di infrastruttura, e proporre interventi specifici basati sui dati\n\nCon i dati open sugli incidenti stradali un giornalista (o uno studente di 3ª media con un foglio Google) può: 1) mappare i punti neri (dove avvengono più incidenti); 2) analizzare gli orari (gli incidenti ciclisti aumentano all'alba?); 3) correlare con il tipo di infrastruttura; 4) proporre interventi basati su evidenza. È democrazia dei dati.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Una smart city raccoglie dati sulla mobilità dei cittadini tramite sensori e app. Quali rischi strutturali identifica il testo che vanno oltre le singole violazioni della privacy?",
+    "back": "Il rischio che i dati favoriscano sistematicamente chi ha più potere: le decisioni prese con i dati migliorano la vita dei già avvantaggiati, aumentando le disuguaglianze\n\nIl rischio strutturale principale: i dati sono raccolti su tutti i cittadini, ma le decisioni prese con quei dati non avvantaggiano tutti allo stesso modo. Se i sensori di qualità dell'aria sono solo nei quartieri ricchi, le ZTL vengono attivate solo lì. Se la partecipazione è solo digitale, chi non ha smartphone non decide. I dati possono amplificare le disuguaglianze invece di ridurle.",
     "tag": "Avanzato"
   }
 ]

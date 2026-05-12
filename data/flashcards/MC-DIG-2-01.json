@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è un algoritmo?",
-    "back": "Una sequenza finita di istruzioni per risolvere un problema o completare un compito\n\nUn algoritmo può essere scritto in italiano prima ancora che in codice: è la ricetta del problema.",
+    "front": "Cos'è la 'decomposizione del problema' nel pensiero computazionale?",
+    "back": "Dividere un problema grande in sottoproblemi più piccoli, ciascuno risolvibile separatamente\n\nLa decomposizione è dividere un problema complesso in sottoproblemi più piccoli e gestibili. 'Costruire un quiz interattivo' è troppo grande per essere risolto in un colpo solo. Ma 'mostrare la domanda', 'controllare la risposta', 'aggiornare il punteggio' sono problemi piccoli, ognuno risolvibile in pochi blocchi.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la 'decomposizione' nel pensiero computazionale?",
-    "back": "La strategia di scomporre un problema complesso in sotto-problemi più piccoli e gestibili\n\n'Come mangio un elefante? Un morso alla volta.' La decomposizione rende gestibili i problemi apparentemente impossibili.",
+    "front": "Cosa fa la struttura 'if/else' (selezione) in un programma?",
+    "back": "Controlla una condizione e sceglie quale ramo di codice eseguire\n\nLa selezione (if/else) è una delle tre strutture fondamentali: controlla una condizione e sceglie quale ramo del programma eseguire. Rende il programma 'intelligente' perché può reagire a situazioni diverse in modo diverso. Esempio: se risposta corretta → aggiungi punto; altrimenti → mostra feedback.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'riconoscimento di pattern'?",
-    "back": "L'identificazione di regolarità, similitudini e strutture ricorrenti nei dati o nei problemi\n\nRiconoscere che 'tutti i cicli vitali hanno le stesse fasi' è pattern recognition: permette di applicare soluzioni già note a problemi nuovi.",
+    "front": "Cosa è una 'variabile' in programmazione?",
+    "back": "Un contenitore con un nome che conserva un valore che può cambiare durante l'esecuzione\n\nUna variabile è un contenitore con un nome che conserva un valore. Nel quiz: 'punteggio' parte da 0 e aumenta a ogni risposta corretta; 'domanda_corrente' tiene traccia di quale domanda siamo; 'risposta_utente' contiene quello che l'utente ha digitato. Le variabili sono fondamentali per la selezione (if).",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la 'pseudocodifica'?",
-    "back": "Un modo informale di descrivere un algoritmo usando linguaggio naturale strutturato, prima di tradurlo in codice\n\nLa pseudocodifica aiuta a pensare alla logica prima di preoccuparsi della sintassi. È come fare lo schema di un tema prima di scriverlo.",
+    "front": "Cos'è lo 'stage' (palcoscenico) in Scratch?",
+    "back": "L'area dove si vede l'esecuzione del programma, con i personaggi che si muovono\n\nLo stage (palcoscenico) è l'area di Scratch dove si vede l'esecuzione del programma: i personaggi (sprite) si muovono, le immagini appaiono, i testi vengono visualizzati. Il programmatore assembla i blocchi nella zona script; il risultato si vede nello stage.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quali sono le tre strutture fondamentali con cui si costruisce qualsiasi programma?",
+    "back": "Sequenza, selezione (if/else) e iterazione (ciclo)\n\nLe tre strutture fondamentali della programmazione sono: sequenza (istruzioni eseguite una dopo l'altra), selezione (if/else: scelta tra rami alternativi basata su una condizione), iterazione (ciclo/loop: un blocco che si ripete). Qualsiasi programma al mondo è costruito combinando queste tre strutture.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa il 'broadcast' (trasmissione) in Scratch?",
+    "back": "Permette a uno sprite di inviare un messaggio a tutti gli altri sprite per coordinarsi\n\nIl broadcast (trasmissione) in Scratch permette a uno sprite di inviare un messaggio a tutti gli altri sprite. È il meccanismo di coordinazione: quando lo sprite della domanda risponde correttamente, manda un broadcast 'prossima_domanda', e lo sprite del punteggio aggiunge 1 al punteggio quando riceve quel messaggio.",
+    "tag": "Base"
+  },
+  {
+    "front": "Un quiz in Scratch gestisce le domande con tre liste separate: 'domande', 'risposte_corrette' e 'feedback_sbagliato'. Qual è il vantaggio di questa struttura rispetto a gestire ogni domanda con blocchi separati?",
+    "back": "Lo stesso codice (struttura if + domanda_corrente) funziona per tutte le domande: cambiando le liste si aggiunge o modifica il quiz senza riscrivere il codice\n\nLe liste permettono di usare lo stesso codice per tutte le domande. La variabile 'domanda_corrente' funziona come indice: 'mostra elemento domanda_corrente di domande'. Per aggiungere una quinta domanda basta aggiungere un elemento alle tre liste — il codice non cambia. È il principio del 'riconoscimento di schemi' nel pensiero computazionale.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è un 'caso limite' (edge case) nel testing di un algoritmo?",
-    "back": "Un input ai limiti del normale o inaspettato che può rivelare difetti nascosti nell'algoritmo\n\nEdge case: cosa succede se inserisco 0? O un numero negativo? O una stringa vuota? Testare i casi limite previene i bug in produzione.",
+    "front": "Cosa significa 'debugging' nel contesto della programmazione?",
+    "back": "Il processo di identificazione e correzione degli errori (bug) nel codice\n\nIl debugging è il processo di trovare e correggere gli errori (bug) nel codice. Esistono errori di sintassi (in Scratch quasi impossibili perché i blocchi si incastrano solo se compatibili) ed errori logici (il programma gira ma fa qualcosa di sbagliato). I programmatori trascorrono circa il 50% del tempo a fare debugging.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'complessità' di un algoritmo?",
-    "back": "La misura di quanto tempo (tempo) o memoria (spazio) richiede al crescere della dimensione del problema\n\nUn algoritmo O(n²) diventa inutilizzabile con grandi dataset, mentre O(log n) scala bene. La complessità determina l'applicabilità reale.",
+    "front": "Qual è la differenza tra un errore di sintassi e un errore logico (bug) in un programma?",
+    "back": "L'errore di sintassi non segue le regole del linguaggio e blocca l'esecuzione; l'errore logico permette l'esecuzione ma produce risultati sbagliati\n\nErrore di sintassi: il codice non segue le regole del linguaggio — in Scratch quasi impossibile perché i blocchi si incastrano solo se compatibili; nei linguaggi testuali blocca l'esecuzione. Errore logico (bug): il codice è sintatticamente corretto ma fa qualcosa di diverso dall'intenzione del programmatore. Questi sono i più difficili da trovare.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'ricorsione' nella programmazione?",
-    "back": "Una funzione che chiama se stessa con un sotto-problema più piccolo fino a raggiungere un caso base: usata per problemi naturalmente auto-simili\n\nLa ricorsione è elegante per problemi come il calcolo del fattoriale o la ricerca in alberi. Rischio: stack overflow se manca il caso base.",
+    "front": "Un algoritmo di raccomandazione come quello di YouTube usa una struttura 'per ogni video guardato dall'utente: trova altri utenti simili...'. Quale struttura fondamentale è questa?",
+    "back": "Iterazione (ciclo/loop)\n\nL'algoritmo di YouTube è costruito con le stesse strutture fondamentali: 'per ogni video guardato dall'utente' è un ciclo (iterazione) su una lista; 'se il video è già stato guardato → salta' è una selezione; 'calcola un punteggio' è un'operazione su variabili. Il testo mostra che anche algoritmi complessi usano solo le tre strutture di base.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Nel quiz in Scratch, la variabile 'domanda_corrente' viene usata per accedere agli elementi delle liste. Come funziona questo meccanismo?",
+    "back": "La variabile funge da indice: 'elemento domanda_corrente della lista domande' mostra la domanda nella posizione corrente\n\nLa variabile 'domanda_corrente' funziona come indice: inizia a 1 e aumenta di 1 dopo ogni risposta. 'Mostra elemento domanda_corrente della lista domande' accede all'elemento nella posizione corrispondente. Questo meccanismo è detto 'accesso indicizzato' ed è fondamentale per gestire liste in modo dinamico.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il quiz adattivo avanzato usa due blocchi di domande: uno standard e uno avanzato. Quale struttura permette di scegliere il blocco giusto dopo le prime 3 domande?",
+    "back": "Una selezione (if/else) che controlla se 'risposte_corrette_blocco1 >= 2' e sceglie la lista avanzata o quella di base\n\nIl quiz adattivo usa una selezione (if/else): 'Se risposte_corrette_blocco1 >= 2, allora usa la lista domande_avanzate per le ultime 2 domande; altrimenti usa domande_base.' È esattamente la logica di Duolingo e Khan Academy: reagire al livello dimostrato con domande appropriate.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "L'algoritmo di raccomandazione di YouTube non è neutrale. Quale problema etico fondamentale crea quando è ottimizzato per massimizzare il tempo di visualizzazione?",
+    "back": "Tende a mostrare contenuti che tengono l'utente sul sito più a lungo, che possono includere contenuti sensazionalistici o di nicchia, influenzando ciò che vede e pensa\n\nL'algoritmo di YouTube ottimizzato per il tempo di visualizzazione può favorire contenuti che tengono l'utente incollato allo schermo — non necessariamente contenuti che gli fanno bene. Chi progetta l'algoritmo decide cosa viene mostrato e cosa non viene mostrato, influenzando indirettamente ciò che le persone imparano e pensano. 'Un algoritmo di raccomandazione non è neutrale.'",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'debugging' e quali strategie usa?",
-    "back": "Il processo sistematico di identificazione e correzione degli errori nel codice: usa print debugging, breakpoint, test unitari e rubber duck debugging\n\nIl rubber duck debugging consiste nello spiegare il codice ad alta voce (o a un'anatra di gomma): verbalizzare il problema spesso rivela l'errore.",
+    "front": "Il tuo quiz in Scratch non mostra il feedback per le risposte sbagliate. Come potresti trovare il bug usando la strategia di debugging del testo?",
+    "back": "Attivare la visualizzazione della variabile 'risposta_utente' sullo stage durante l'esecuzione e verificare se contiene il valore atteso al momento della selezione if/else\n\nLa strategia di debugging del testo include: '3. Verifica i valori delle variabili: attiva la visualizzazione delle variabili sullo stage.' Vedere il valore di 'risposta_utente' durante l'esecuzione rivela se il blocco 'Chiedi e aspetta' funziona, e se il confronto con 'risposte_corrette' nella selezione if è corretto. Spesso il bug è in una condizione scritta al contrario.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'refactoring' del codice?",
-    "back": "Il miglioramento della struttura interna del codice senza modificarne il comportamento esterno: rende il codice più leggibile e manutenibile\n\nIl refactoring è come rifare l'ordine in casa: il risultato esterno (la casa funziona) non cambia, ma l'organizzazione interna è molto migliore.",
+    "front": "Perché la parola 'algoritmo' viene dal nome del matematico al-Khwarizmi? Cosa ci dice questo della storia della matematica?",
+    "back": "Il pensiero algoritmico ha radici profonde nella matematica islamica medievale, e le sue opere hanno introdotto in Europa anche il sistema di numerazione decimale che usiamo oggi\n\nLa parola 'algoritmo' deriva dal nome del matematico persiano Muhammad ibn Musa al-Khwarizmi (IX secolo). Le sue opere, tradotte in latino nel Medioevo, introdussero in Europa sia il concetto di algoritmo (procedura risolutiva) sia il sistema di numerazione decimale. Questo mostra come la matematica moderna sia costruita su contributi di culture diverse.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo dice che il quiz ha bisogno di un 'feedback per risposta sbagliata che spieghi perché quella risposta è sbagliata'. Perché questo è pedagogicamente importante rispetto a scrivere solo 'sbagliato'?",
+    "back": "Perché spiegare perché una risposta è sbagliata aiuta lo studente a correggere l'errore di comprensione, trasformando il quiz da test di memoria a strumento di apprendimento\n\nUn feedback che spiega 'perché la risposta è sbagliata' è pedagogicamente superiore al semplice 'sbagliato' perché: (1) corregge l'errore di comprensione specifico; (2) spiega il concetto corretto nel contesto dell'errore commesso; (3) trasforma il quiz da strumento di valutazione a strumento di apprendimento. La rubrica della MC richiede feedback esplicativi per il livello ottimo.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la storia della falena di Grace Hopper nel 1947 è importante per la storia dell'informatica?",
+    "back": "Perché da quella falena trovata nel relè del computer Mark II nasce il termine 'bug' per indicare un errore nel codice o nell'hardware\n\nNel settembre 1947, Grace Hopper trovò una falena nel relè 70 del computer Mark II che causava un malfunzionamento. Incollò l'insetto al registro di bordo scrivendo 'First actual case of bug being found.' Da quel giorno, un errore in un programma si chiama 'bug' e trovarlo si chiama 'debugging'. La falena originale è conservata al Museo Nazionale della Storia Americana a Washington.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un quiz in Scratch viene testato solo con risposte corrette. Perché questo approccio di test è insufficiente e cosa manca?",
+    "back": "Perché mancano i test per i casi limite (punteggio 0, punteggio massimo) e i casi di risposta sbagliata o vuota, che potrebbero rivelare bug non visibili con solo risposte corrette\n\nIl test deve coprire tutti i casi rilevanti: (1) caso normale — risposte corrette e sbagliate; (2) casi limite — punteggio 0 (tutte sbagliate) e punteggio massimo (tutte corrette); (3) casi anomali — cosa succede se l'utente non scrive nulla. Un programma che 'gira' in un caso normale può bloccarsi o dare risultati sbagliati in casi limite.",
     "tag": "Avanzato"
   }
 ]

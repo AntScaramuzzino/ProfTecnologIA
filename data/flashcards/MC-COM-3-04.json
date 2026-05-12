@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è l'automazione industriale?",
-    "back": "L'uso di macchine, sistemi di controllo e software per eseguire processi produttivi riducendo l'intervento umano diretto\n\nL'automazione non sostituisce necessariamente l'uomo: spesso lo affianca, eliminando le mansioni ripetitive e pericolose.",
+    "front": "In quale anno fu coniato il termine 'Industria 4.0'?",
+    "back": "2011, in Germania come strategia industriale nazionale\n\nIl termine 'Industria 4.0' fu coniato nel 2011 in Germania come strategia industriale nazionale. Descrive l'integrazione di quattro tecnologie — IoT, Big Data, IA, Cloud — che, prese insieme, creano qualcosa di radicalmente nuovo rispetto alle rivoluzioni industriali precedenti.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un 'robot collaborativo' (cobot)?",
-    "back": "Un robot progettato per lavorare accanto agli esseri umani in modo sicuro, integrandosi nella stessa postazione senza barriere di sicurezza\n\nI cobot sono dotati di sensori che rilevano la presenza umana e riducono forza e velocità. Permettono collaborazione uomo-macchina flessibile.",
+    "front": "Cosa distingue l'automazione rigida da quella flessibile?",
+    "back": "L'automazione rigida fa una sola cosa; quella flessibile si adatta a compiti diversi\n\nL'automazione rigida (es. imbottigliatrice) fa una sola cosa con altissima velocità: se il prodotto cambia, bisogna fermare e riconfigurare tutto. L'automazione flessibile (es. braccio robotico programmabile) è più lenta ma si adatta a compiti diversi senza smontarla fisicamente.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è l'Industria 4.0?",
-    "back": "La quarta rivoluzione industriale basata su automazione, IoT, big data, AI e connettività per creare fabbriche intelligenti e interconnesse\n\nL'Industria 4.0 integra mondo fisico e digitale: macchine che comunicano, si auto-diagnosticano e si adattano in tempo reale.",
+    "front": "Cosa misura la 'ripetibilità' di un robot industriale?",
+    "back": "La precisione con cui torna esattamente allo stesso punto ogni ciclo (±0,01 mm)\n\nLa ripetibilità di un robot industriale misura con quanta precisione torna esattamente allo stesso punto ogni ciclo. I migliori hanno ±0,01 mm — 5 volte più precisi di un chirurgo esperto (±0,1 mm) e 50 volte più precisi della mano umana media (±0,5 mm).",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'digital twin' in ambito industriale?",
-    "back": "Una replica digitale in tempo reale di un impianto fisico che simula il comportamento e permette ottimizzazione senza fermare la produzione\n\nIl digital twin permette di simulare guasti, ottimizzare parametri e formare operatori senza toccare la macchina reale.",
+    "front": "Cos'è un 'cobot'?",
+    "back": "Un robot collaborativo progettato per lavorare fianco a fianco con gli esseri umani senza gabbie di sicurezza\n\nI cobot (collaborative robots) sono robot industriali progettati per operare nello stesso spazio fisico degli esseri umani senza gabbie di protezione. Hanno sensori di forza su tutti i giunti: se toccano qualcosa di inaspettato, si fermano immediatamente o cedono.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza principale tra stampa FDM e stampa SLS?",
+    "back": "FDM usa filamento plastico fuso; SLS usa laser per fondere polveri (metallo, nylon)\n\nFDM (Fused Deposition Modeling) deposita filamento plastico fuso strato per strato: economica ma con superfici 'a strisce' e resistenza non uniforme. SLS (Selective Laser Sintering) usa un laser per fondere polveri di nylon o metallo: produce pezzi con resistenza meccanica paragonabile a quelli stampati tradizionalmente.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa un sistema di 'manutenzione predittiva' in una fabbrica IoT?",
+    "back": "Prevede i guasti prima che si verifichino analizzando i dati dei sensori in tempo reale\n\nLa manutenzione predittiva usa i dati IoT (temperatura, vibrazione, consumo energetico) per prevedere quando una macchina si guasterà, prima che accada. Invece di aspettare il guasto (reattiva) o fermarsi a intervalli fissi (preventiva), il sistema dice 'questa macchina si guasterà tra 48 ore' con un livello di probabilità calcolato.",
+    "tag": "Base"
+  },
+  {
+    "front": "In cosa consiste la differenza fondamentale tra automazione e intelligenza artificiale in fabbrica?",
+    "back": "L'automazione segue regole fisse; l'IA apprende dai dati e generalizza a situazioni nuove\n\nL'automazione segue regole fisse scritte da un programmatore: 'se temperatura > 80°C, apri la valvola'. L'IA apprende da milioni di esempi e generalizza: riconosce i difetti anche in modi mai visti. Il Box T8 chiarisce che la maggior parte dei sistemi in fabbrica è automazione, non IA vera.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'manutenzione predittiva'?",
-    "back": "L'uso di sensori e AI per prevedere i guasti prima che avvengano, intervenendo solo quando necessario\n\nLa manutenzione predittiva riduce i fermi macchina non programmati del 40-60%. Analizza vibrazioni, temperatura e parametri per identificare anomalie.",
+    "front": "Quali tre vantaggi specifici ha il gemello digitale (digital twin) rispetto alla progettazione tradizionale?",
+    "back": "Simula prima di costruire, manutenzione predittiva avanzata, ottimizzazione continua su tutti gli impianti\n\nIl testo identifica tre funzioni del gemello digitale: 1) simulare configurazioni prima di costruire fisicamente; 2) manutenzione predittiva personalizzata su quella specifica macchina (non stime medie); 3) ottimizzazione continua distribuita su tutti gli impianti del mondo contemporaneamente.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa si intende per 'fabbrica intelligente' (smart factory)?",
-    "back": "Un impianto produttivo in cui macchine, sistemi e persone sono connessi e comunicano in tempo reale ottimizzando efficienza, qualità e flessibilità\n\nLa smart factory usa IoT, AI, big data e digital twin per adattarsi in tempo reale alla domanda e ai guasti, minimizzando sprechi.",
+    "front": "Perché i cobot BMW nello stabilimento di Dingolfing non sostituiscono gli operai ma lavorano con loro?",
+    "back": "Il montaggio delle guarnizioni richiede sia la forza del robot sia il giudizio dell'operaio per la traiettoria irregolare\n\nIl testo descrive il caso BMW: montare guarnizioni flessibili in scanalature su percorsi curvi irregolari. Il robot fa la forza precisa e la ripetibilità millimetrica; l'operaio guida la traiettoria adattandosi alle variazioni. Il risultato è qualcosa che nessuno dei due potrebbe fare da solo.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'manifattura additiva' e come si distingue da quella tradizionale?",
-    "back": "La fabbricazione per aggiunta di materiale strato per strato (stampa 3D): permette geometrie impossibili con lavorazioni tradizionali e zero scarti di materiale\n\nLa manifattura additiva elimina i vincoli delle lavorazioni per sottrazione (fresatura, tornitura): solo quello che serve, dove serve.",
+    "front": "Nel caso domotico di nonno Carmelo, perché il monitoraggio del frigorifero è preferito alle videocamere?",
+    "back": "Perché monitora i pattern di vita rispettando la privacy senza riprendere Carmelo\n\nIl testo spiega che 'Carmelo le rifiuterebbe, giustamente'. I sistemi di monitoraggio del benessere registrano pattern di vita (frigorifero aperto, tv accesa, uscita e rientro) senza video, garantendo sicurezza senza invadere la privacy. Questo dimostra che la progettazione domotica parte sempre dai bisogni e dai valori dell'utente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Qual è il protocollo domotico più recente (2022) che punta a risolvere il problema della compatibilità tra marche?",
+    "back": "Matter, sostenuto da Apple, Google, Amazon, Samsung\n\nMatter (2022), sostenuto da Apple, Google, Amazon e Samsung, è il protocollo domotico più recente progettato per risolvere la frammentazione: un dispositivo Matter funziona con qualsiasi sistema domotico Matter, indipendentemente dalla marca. È basato su IP e funziona su Wi-Fi e Thread.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come funziona la componente 'D' (Derivativa) del controllo PID in un sistema automatico?",
+    "back": "Anticipa il comportamento futuro: se la variabile si avvicina rapidamente al target, riduce la correzione prima di arrivarci\n\nLa componente D (Derivativa) del PID misura quanto velocemente la variabile controllata si sta avvicinando al target. Se si avvicina troppo rapidamente, riduce la correzione anticipatamente per evitare di superare il valore desiderato per inerzia. È usata in droni, auto a guida autonoma, bracci robotici.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Nel caso Lamborghini, perché il reparto interni è fatto quasi interamente a mano senza robot, mentre la carrozzeria usa cobot?",
+    "back": "Perché il valore del prodotto deriva dall'unicità artigianale, che non è replicabile automaticamente\n\nIl testo indica che Lamborghini ha fatto una scelta deliberata: 'il valore del prodotto è nell'unicità artigianale, e quella unicità non è replicabile automaticamente.' Il caso Lamborghini mostra che l'Industria 4.0 non è 'tutto automatizzato': è l'integrazione intelligente che decide dove ha senso la macchina e dove l'umano.",
     "tag": "Avanzato"
   },
   {
-    "front": "Quali implicazioni ha l'automazione sul mercato del lavoro?",
-    "back": "Elimina mansioni routinarie e ripetitive, crea nuove professioni in gestione/manutenzione dei sistemi automatizzati, richiede una transizione con upskilling continuo\n\nIl WEF stima che entro il 2025 l'automazione elimini 85 milioni di posti ma ne crei 97 milioni diversi. La sfida è la transizione e la formazione continua.",
+    "front": "Progetti un sistema domotico per una scuola: un sensore di movimento nel corridoio non rileva l'alunno perché è fermo a leggere. Questo è un limite di quale tipo?",
+    "back": "Un caso di fuori-parametro dell'automazione: il sistema non gestisce eccezioni non previste dalla regola\n\nIl Box T8 spiega che l'automazione funziona 'finché le condizioni rientrano in quelle previste' e 'crolla se succede qualcosa fuori dai parametri'. Un alunno fermo a leggere non produce movimento: la regola 'nessun movimento = assenza' è corretta nel 99% dei casi ma sbaglia in questo caso limite. Un sistema IA potrebbe imparare il pattern.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è l'etica nell'automazione industriale?",
-    "back": "L'insieme di questioni su responsabilità in caso di incidenti causati da macchine autonome, trasparenza degli algoritmi decisionali, impatto sociale dell'automazione e governance dei dati produttivi\n\nChi è responsabile quando un robot sbaglia? Come si garantisce la trasparenza degli algoritmi? Come si proteggono i lavoratori in transizione? Sono le domande aperte dell'etica della robotica.",
+    "front": "La stampa 3D SLS consente di creare 'geometrie impossibili'. Qual è un esempio concreto e perché è importante per l'aerospazio?",
+    "back": "Canali di raffreddamento a spirale interni a un pezzo: impossibili da forare dall'esterno, ottimali per le turbine\n\nIl testo cita 'canali di raffreddamento a spirale dentro una componente metallica, impossibili da forare dall'esterno' come esempio di geometria impossibile. Per le turbine aeronautiche, poter raffreddare in modo ottimale i componenti internamente (senza forature esterne) aumenta l'efficienza termica e la durata.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Se un sistema automatico prende una decisione sbagliata che danneggia qualcuno, chi è responsabile?",
+    "back": "La responsabilità è distribuita tra progettista, produttore, installatore e utente: dipende da dove si è originato l'errore\n\nIl testo pone esplicitamente questa domanda come aperta: 'chi è responsabile? Il programmatore? Il produttore del sensore? Chi ha installato il sistema? Chi ha scelto di affidarsi a quella tecnologia?' La responsabilità è distribuita lungo la catena e dipende da dove si è originato l'errore: nel design, nella produzione, nell'installazione o nell'uso.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la Germania ha sviluppato l'Industria 4.0 come strategia nazionale contro la concorrenza dei paesi a basso costo del lavoro?",
+    "back": "Perché rendere le fabbriche 'smart' le rende difficilmente replicabili, compensando i salari più alti con produttività e qualità superiori\n\nIl box Geo-Storia spiega: la Germania, con economia basata sulla manifattura di alta qualità, ha risposto alla concorrenza dei paesi a basso costo del lavoro non abbassando i salari, ma rendendo le fabbriche 'smart' — con produttività e personalizzazione talmente elevate da essere irreplicabili altrove.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Quali sono le differenze fondamentali tra i protocolli Zigbee e Matter per la domotica?",
+    "back": "Zigbee è aperto, a bassa energia, per sensori a batteria; Matter è recente (2022), basato su IP, pensato per la compatibilità universale tra marche\n\nZigbee è un protocollo aperto a basso consumo energetico, ideale per sensori a batteria che devono durare anni, con rete a maglia (mesh). Matter (2022) è il nuovo protocollo basato su IP, sostenuto dai principali ecosystem (Apple, Google, Amazon, Samsung), progettato per garantire compatibilità universale tra dispositivi di marche diverse.",
     "tag": "Avanzato"
   }
 ]

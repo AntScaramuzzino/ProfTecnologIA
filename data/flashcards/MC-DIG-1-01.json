@@ -1,47 +1,92 @@
 [
   {
-    "front": "Qual è la funzione principale della CPU?",
-    "back": "Elaborare le istruzioni e fare i calcoli\n\nCPU = Central Processing Unit: è il cervello del computer, esegue le istruzioni dei programmi.",
+    "front": "Cos'è l'hardware di un computer?",
+    "back": "La parte fisica che puoi toccare, come lo schermo, la tastiera e il processore\n\nL'hardware è tutto ciò che puoi toccare fisicamente: schermo, tastiera, processore, batteria, cavi. Il software invece è la parte logica (programmi, app, sistema operativo) che non puoi toccare.",
     "tag": "Base"
   },
   {
-    "front": "Cosa succede ai dati nella RAM quando spegni il computer?",
-    "back": "Vengono persi: la RAM è memoria volatile\n\nLa RAM è volatile: funziona solo con il computer acceso. Spegnendo si svuota.",
+    "front": "Cosa fa la CPU di un computer?",
+    "back": "Esegue i calcoli e interpreta le istruzioni del software\n\nLa CPU (Central Processing Unit) è il processore centrale: esegue i calcoli, interpreta le istruzioni del software e coordina tutte le altre componenti. Contiene miliardi di transistor che si accendono e spengono miliardi di volte al secondo.",
     "tag": "Base"
   },
   {
-    "front": "Differenza fondamentale tra hardware e software?",
-    "back": "L'hardware si può toccare fisicamente, il software no\n\nHardware = componenti fisici. Software = programmi e dati. Entrambi indispensabili.",
+    "front": "Qual è la differenza tra RAM e storage (SSD/HDD)?",
+    "back": "La RAM contiene i dati temporanei mentre il computer è acceso; lo storage li salva in modo permanente\n\nLa RAM è la memoria temporanea di lavoro: velocissima, ma si cancella allo spegnimento. Lo storage (SSD o HDD) conserva i dati permanentemente. Aumentare la RAM riduce i rallentamenti; avere più storage significa poter salvare più file.",
     "tag": "Base"
   },
   {
-    "front": "Perché 16 GB di RAM è meglio di 4 GB?",
-    "back": "Può eseguire più programmi contemporaneamente senza rallentare\n\nLa RAM è la scrivania di lavoro: più è grande, più programmi puoi tenere aperti.",
+    "front": "Cosa si intende per 'sistema operativo'?",
+    "back": "Un programma che coordina l'hardware e permette alle altre applicazioni di funzionare\n\nIl sistema operativo (OS) è il software fondamentale che gestisce tutto: coordina CPU, RAM e storage, controlla le periferiche, e permette alle altre applicazioni di funzionare. Senza OS nessun programma potrebbe girare. Esempi: Windows, macOS, Android, iOS.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza tra internet e il web?",
+    "back": "Internet è la rete fisica globale; il web è l'insieme delle pagine web accessibili tramite browser\n\nInternet è l'infrastruttura fisica globale: cavi, router, server, connessioni wireless. Il web è uno dei servizi che gira su internet, inventato da Tim Berners-Lee nel 1989: l'insieme di pagine web collegate da link e accessibili tramite browser.",
+    "tag": "Base"
+  },
+  {
+    "front": "Un monitor standard è una periferica di input, di output, o entrambe?",
+    "back": "Solo di output, perché mostra le immagini prodotte dal computer\n\nUn monitor standard è una periferica di output: porta dati dal computer verso l'utente (mostra immagini e testo). Uno schermo touchscreen è invece sia input (riceve i tocchi) sia output (visualizza immagini). Mouse e tastiera sono esempi di periferiche solo di input.",
+    "tag": "Base"
+  },
+  {
+    "front": "Un computer ha 4 GB di RAM e il sistema operativo ne richiede già 4. Cosa succede quando apri molti programmi contemporaneamente?",
+    "back": "Il computer rallenta perché i programmi si contendono lo spazio in RAM\n\nLa RAM è la scrivania di lavoro del computer. Quando è piena, il sistema usa lo storage come memoria virtuale, ma lo storage è molto più lento, causando rallentamenti evidenti. Con 4 GB di RAM, tenere aperte tante app contemporaneamente è un problema reale.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa fa il sistema operativo?",
-    "back": "Gestisce le risorse hardware e offre un'interfaccia per le applicazioni\n\nIl SO è il gestore condominiale: alloca RAM, gestisce file, controlla l'hardware per tutte le app.",
+    "front": "Perché un computer diventa lento quando lo storage è quasi pieno?",
+    "back": "Perché il sistema operativo non riesce a creare i file temporanei necessari per funzionare\n\nQuando lo storage è quasi pieno, il sistema operativo fatica a creare i file temporanei necessari (memoria virtuale, cache). Liberare spazio sullo storage spesso risolve il problema del rallentamento senza cambiare hardware.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa significa che un file è nella 'cartella radice'?",
-    "back": "Si trova al livello più alto della struttura di cartelle\n\nLa radice è il livello più alto dell'albero: C:\\ su Windows, / su Linux/Mac.",
+    "front": "Qual è la differenza principale tra un'applicazione desktop e una web app?",
+    "back": "Le applicazioni desktop si installano sul dispositivo e funzionano offline; le web app girano nel browser e richiedono internet\n\nLe applicazioni desktop si installano sul computer e funzionano anche offline. Le web app girano sui server di chi le ha create, si accede tramite browser, e richiedono connessione internet. Il cloud computing sposta sempre più verso le web app.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa significa architettura '64 bit' di un processore?",
-    "back": "Elabora 64 bit per ciclo e può gestire più di 4 GB di RAM\n\nCon 64 bit il processore può indirizzare 2^64 indirizzi — oltre 4 miliardi di GB teorici.",
+    "front": "Cosa si intende per 'cloud computing' e qual è il principale svantaggio?",
+    "back": "Dati e programmi su server remoti accessibili da qualsiasi dispositivo; svantaggio: dipendenza da internet e dati gestiti da terze parti\n\nIl cloud computing significa che dati e programmi sono su server remoti (di Amazon, Google, Microsoft) accessibili da qualsiasi dispositivo tramite internet. Vantaggi: accessibilità e backup automatico. Svantaggi: dipende dalla connessione internet e i dati sono gestiti da terze parti.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché un processore con più core è utile per le attività quotidiane?",
+    "back": "Perché permette di eseguire più attività contemporaneamente in parallelo senza rallentamenti\n\nUn processore multi-core ha più unità di calcolo che lavorano in parallelo. Con 4 core puoi gestire contemporaneamente musica, browser, notifiche e aggiornamenti senza rallentamenti. È come avere 4 cervelli che lavorano insieme.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Uno smartphone moderno usa un SoC invece di componenti separati. Qual è il vantaggio principale?",
+    "back": "Integra CPU, GPU e modem in un chip compatto, riducendo dimensioni e consumi energetici\n\nUn SoC (System on a Chip) integra CPU, GPU, modem, Neural Engine e altri blocchi in un unico chip. I vantaggi sono dimensioni ridotte, minor consumo energetico e migliore integrazione. Il chip Apple A17 ha 19 miliardi di transistor nelle dimensioni di un'unghia.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un computer ha 8 GB di RAM e un SSD quasi pieno (240/256 GB). L'utente sente il computer molto lento. Qual è la soluzione più efficace?",
+    "back": "Liberare spazio sull'SSD cancellando file inutili o trasferendoli su cloud\n\nUn SSD quasi pieno (240/256 GB) causa rallentamenti perché il sistema operativo non trova spazio per i file temporanei e la memoria virtuale. Con 8 GB di RAM il sistema è già adeguato, quindi il problema principale è lo storage esaurito. Liberare spazio è la soluzione prioritaria.",
     "tag": "Avanzato"
   },
   {
-    "front": "Differenza tra SSD e HDD?",
-    "back": "L'SSD usa memoria flash senza parti in movimento: molto più veloce e resistente\n\nSSD = Solid State Drive: chip flash senza meccanica. 3-10x più veloce, meno fragile.",
+    "front": "Android e iOS sono entrambi sistemi operativi per smartphone. Qual è la differenza fondamentale tra i due?",
+    "back": "Android è open source e permette installazione da fonti esterne; iOS è chiuso e permette solo app dall'App Store ufficiale\n\nAndroid è basato su Linux, open source, e permette di installare app da fonti diverse dall'app store ufficiale. iOS è un sistema chiuso di Apple: rigido nel controllo delle app. Android ha circa il 72% del mercato smartphone mondiale, iOS domina nel segmento premium.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il kernel di un sistema operativo?",
-    "back": "Il nucleo del SO che gestisce direttamente hardware e risorse\n\nIl kernel gira con i massimi privilegi: gestisce memoria, CPU, I/O. Le app passano attraverso di esso.",
+    "front": "Perché la GPU elabora le immagini dello schermo invece della CPU, pur essendo la CPU il componente principale?",
+    "back": "Perché la GPU è ottimizzata per milioni di calcoli semplici in parallelo, come ricalcolare il colore di ogni pixel molte volte al secondo\n\nLa CPU è ottima per pochi calcoli complessi in sequenza. La GPU è ottima per milioni di calcoli semplici in parallelo. Un monitor Full HD a 60 fps richiede di ricalcolare 120 milioni di pixel al secondo (2M pixel × 60 fps). Senza GPU dedicata la CPU non reggerebbe.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Una scuola deve scegliere tra computer desktop da 480€ (durata 8-10 anni) e tablet da 280€ (durata 3-5 anni) per 25 postazioni. Quale valutazione economica è corretta?",
+    "back": "Il costo totale su 5 anni dei desktop (480€ × 25 = 12.000€) è simile o inferiore a quello dei tablet se questi richiedono riacquisto\n\nIl costo totale di possesso (TCO) considera prezzo unitario, durata e costi di manutenzione. 25 desktop da 480€ = 12.000€ totali, durata 8-10 anni. 25 tablet da 280€ = 7.000€ ma con durata 3-5 anni — possibile riacquisto in 5 anni porta il totale a 14.000€. I desktop possono risultare più convenienti nel lungo periodo.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la 'modalità privata' del browser non rende anonimi su internet?",
+    "back": "Perché il provider internet e i siti visitati vedono comunque il tuo indirizzo IP e la tua attività\n\nLa modalità privata impedisce al browser di salvare cronologia, cookie e password sul dispositivo locale. Non nasconde però la navigazione al provider internet (ISP), alla rete scolastica o aziendale a cui sei connesso, ai siti visitati (che vedono il tuo IP) o alle reti pubblicitarie che usano il fingerprinting del browser.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "I transistor in una CPU moderna hanno dimensioni di 3-5 nanometri. Cosa significa questo in termini pratici per le prestazioni?",
+    "back": "Significa che miliardi di transistor stanno in un chip piccolo come un'unghia, consentendo enormi capacità di calcolo a basso consumo\n\nI transistor da 3-5 nm (20.000 volte più sottili di un capello umano) sono fatti di silicio con processo di doping. Dimensioni così ridotte permettono di inserire miliardi di transistor in un chip piccolo come un'unghia: più transistor = più calcolo con meno consumo energetico. Il chip Apple A17 ha 19 miliardi di transistor.",
     "tag": "Avanzato"
   }
 ]

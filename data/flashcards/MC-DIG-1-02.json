@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa valuta la 'A' di Authority nel metodo CRAAP?",
-    "back": "La competenza e le credenziali di chi ha scritto il contenuto\n\nAuthority = autorevolezza dell'autore. Una ricerca medica su pubmed.nih.gov pesa più di un post su un blog senza autore.",
+    "front": "Come funziona un motore di ricerca come Google quando cerchi qualcosa?",
+    "back": "Cerca in un indice già costruito in anticipo, poi ordina i risultati con un algoritmo di ranking\n\nGoogle usa crawler (ragni) che esplorano il web e catalogano le pagine in un indice. Quando cerchi qualcosa, l'algoritmo di ranking (tra cui il PageRank) ordina i risultati in base ad autorevolezza, pertinenza, freschezza e comportamento degli utenti.",
     "tag": "Base"
   },
   {
-    "front": "Quale estensione indica tipicamente un sito universitario italiano?",
-    "back": ".unibo.it o .polimi.it\n\nI domini universitari italiani usano il formato nomiuniversità.it (es. uniroma1.it, unina.it). In USA usano .edu.",
+    "front": "Cosa significa la parola 'SIFT' nel metodo per valutare le fonti online?",
+    "back": "Fermati, Indaga la fonte, Trova una copertura migliore, Risali alla fonte originale\n\nSIFT è un metodo in 4 passi: Stop (fermati prima di reagire), Investigate the source (indaga chi ha scritto e da dove viene), Find better coverage (cerca altre fonti sullo stesso argomento), Trace claims (risali alla fonte originale di dati e citazioni).",
     "tag": "Base"
   },
   {
-    "front": "Le virgolette in una query Google servono a...",
-    "back": "Trovare pagine con quella frase esatta nell'ordine indicato\n\n\"ciclo di vita dei materiali\" trova pagine con quella frase precisa. Senza virgolette i risultati sono molto più dispersi.",
+    "front": "Cosa significa usare l'operatore 'site:' in una ricerca su Google?",
+    "back": "Cerca solo all'interno di uno specifico dominio o sito web\n\nL'operatore site: limita i risultati a uno specifico dominio. 'cambiamento climatico site:nasa.gov' mostra solo le pagine della NASA sul cambiamento climatico. È utile per trovare fonti autorevoli su un argomento specifico.",
     "tag": "Base"
   },
   {
-    "front": "Prima di condividere una notizia, cosa è più importante controllare?",
-    "back": "La data di pubblicazione e se esistono aggiornamenti o smentite successive\n\nLe notizie evolvono. Aggiungere 'smentita' o 'aggiornamento' nella query può rivelare sviluppi successivi che cambiano il quadro.",
+    "front": "Cosa indica il dominio '.gov' di un sito web?",
+    "back": "Un sito di governi e istituzioni governative\n\nIl dominio .gov indica siti di governi e istituzioni governative (es. nasa.gov, governo.it). Offrono contenuti ufficiali ma, come ricorda il testo, anche i governi hanno interessi politici: il dominio è un indicatore utile, non una garanzia assoluta di neutralità.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il 'bias di conferma'?",
+    "back": "La tendenza a cercare e credere alle informazioni che confermano quello che già pensiamo\n\nIl bias di conferma è la tendenza a cercare, notare e ricordare le informazioni che confermano quello che già crediamo, ignorando quelle contrarie. Chi vuole diffondere disinformazione lo sfrutta: le fake news più efficaci mirano a confermare paure o credenze preesistenti.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa si intende per 'filter bubble' (bolla di filtraggio)?",
+    "back": "Una versione personalizzata di internet dove l'algoritmo mostra solo contenuti simili a quelli con cui hai già interagito\n\nLa filter bubble è il risultato degli algoritmi di raccomandazione dei social media: mostrano sempre più contenuti simili a quelli con cui hai interagito, creando una versione personalizzata di internet. Anche la stessa ricerca su Google può dare risultati diversi a persone diverse.",
+    "tag": "Base"
+  },
+  {
+    "front": "Stai leggendo un articolo che afferma: 'Le banane radioattive fanno male alla salute.' Applicando il metodo SIFT, qual è il passo più importante prima di condividere?",
+    "back": "Fermarsi, poi cercare la stessa informazione su fonti scientifiche verificate prima di condividere\n\nIl caso della banana radioattiva nel testo è un esempio di disinformazione per decontestualizzazione: un fatto vero (le banane contengono potassio-40) viene presentato in modo fuorviante. La verifica su Google Scholar mostra che il livello di radioattività è irrilevante per la salute. Il metodo SIFT guida questo processo.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa indica 'site:' in una query Google?",
-    "back": "Limita la ricerca a un dominio specifico (es. site:nasa.gov)\n\n'effetto serra site:nasa.gov' cerca solo sul sito NASA. Utile per trovare informazioni da fonti autorevoli specifiche.",
+    "front": "Cosa si intende per 'lateral reading' (lettura laterale) applicata alla verifica delle fonti?",
+    "back": "Invece di leggere in profondità una sola pagina, aprire nuove schede per cercare chi parla di quella fonte\n\nLa lettura laterale significa che invece di leggere a fondo una sola pagina, si aprono nuove schede del browser per cercare chi parla di quella fonte o di quell'affermazione. I fact-checker professionisti usano questa tecnica: se la fonte è affidabile, si trovano menzioni positive; se è inaffidabile, si trovano probabilmente smentite o avvertimenti.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'cherry-picking' delle informazioni?",
-    "back": "Selezionare solo le informazioni che confermano la tesi, ignorando quelle contrarie\n\nIl cherry-picking è una distorsione cognitiva: si presentano solo i dati favorevoli. È tecnicamente non falso ma è manipolatorio.",
+    "front": "Perché Google non mostra gli stessi risultati a tutti gli utenti che cercano la stessa cosa?",
+    "back": "Perché Google personalizza i risultati in base alla cronologia, posizione geografica e comportamento di navigazione\n\nGoogle personalizza i risultati di ricerca in base alla cronologia dell'utente, alla posizione geografica, al dispositivo usato e al comportamento di navigazione. Due persone che cercano la stessa cosa da luoghi diversi o con profili digitali diversi possono vedere risultati in ordine diverso.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il bias di conferma nella ricerca online?",
-    "back": "La tendenza a formulare query che già implicano la risposta e a ignorare i risultati contrari\n\nIl bias di conferma ci porta a cercare 'prove che X fa male' invece di 'effetti di X'. I motori personalizzano i risultati amplificando questa tendenza.",
+    "front": "Perché le notizie false si diffondono più rapidamente di quelle vere, secondo la ricerca MIT del 2018?",
+    "back": "Perché suscitano reazioni emotive forti (paura, rabbia) che spingono a condividere prima di verificare\n\nLa ricerca MIT del 2018 su 126.000 storie su Twitter ha dimostrato che le notizie false si diffondono 6 volte più velocemente di quelle vere, e sono le persone (non i bot) a condividerle. Il motivo è psicologico: le notizie false usano titoli emotivi che suscitano paura o indignazione, spingendo a condividere istintivamente prima di verificare.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Che cosa fa l'algoritmo di ranking di Google per decidere quale risultato mostrare per primo?",
+    "back": "Combina fattori come autorevolezza del dominio, pertinenza del contenuto, freschezza e comportamento degli utenti\n\nL'algoritmo di ranking di Google combina centinaia di fattori: autorevolezza del dominio (PageRank — quanti siti autorevoli rimandano a questa pagina), pertinenza del contenuto, freschezza dell'informazione, e comportamento degli utenti (quanti ci cliccano e quanti tempo restano). Google non valuta la veridicità: una pagina popolare può contenere informazioni false.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il caso del WiFi 'distrugge i neuroni' è un esempio di fake news. Quale tecnica usava per sembrare credibile?",
+    "back": "Usava immagini di scansioni cerebrali reali fuori contesto, citava 'esperti' non identificabili, e usava linguaggio tecnico\n\nLa fake news sul WiFi e i neuroni usava l'estetica della scienza (immagini di scansioni cerebrali prese da studi reali ma su argomenti diversi, citazioni di 'esperti' non identificabili, linguaggio tecnico) senza la sostanza scientifica (studi peer-reviewed, replicabilità, consenso della comunità scientifica).",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un articolo cita uno studio secondo cui 'X aumenta del 20% il rischio di Y'. Il titolo della notizia dice 'X causa Y'. Qual è il problema?",
+    "back": "Il titolo distorce il dato originale: un aumento del rischio non è una causalità, e il contesto ('in soggetti con Z') è scomparso\n\nLa disinformazione per decontestualizzazione è uno dei meccanismi più comuni: si prende un fatto reale (lo studio esiste) ma si rimuove il contesto che ne limita la portata ('+20% del rischio in soggetti con condizione Z specifici'). Il metodo SIFT chiede di risalire alla fonte originale su Google Scholar per leggere il dato nel suo contesto.",
     "tag": "Avanzato"
   },
   {
-    "front": "Come funziona il fact-checking inverso?",
-    "back": "Si cerca la notizia su siti di fact-checking e si risale alla fonte primaria originale: chi l'ha pubblicata per primo e cosa diceva realmente\n\nLe notizie virali spesso perdono contesto lungo la catena di condivisione. Il reverse fact-checking risale all'origine per vedere cosa diceva davvero.",
+    "front": "Un sito si chiama 'abcnews.com.co'. Cosa dovrebbe farti venire il sospetto?",
+    "back": "Il dominio imita 'abcnews.com' aggiungendo '.co' — una tecnica classica dei siti di disinformazione per sembrare autorevoli\n\nI siti di disinformazione spesso registrano domini che imitano quelli di testate autorevoli con piccole modifiche: 'abcnews.com.co' invece di 'abcnews.com', o aggiungendo numeri o trattini. Il testo avvisa: 'Controlla sempre l'indirizzo per intero.' La parte che conta è prima del primo '/' dopo il dominio principale.",
     "tag": "Avanzato"
   },
   {
-    "front": "Perché molte citazioni in un articolo non garantiscono affidabilità?",
-    "back": "Le citazioni potrebbero essere mal interpretate, fuori contesto, da fonti non peer-reviewed o addirittura inventate\n\nVerificare che il paper citato dica davvero quello che afferma l'articolo è fondamentale. La pratica del 'citation bluffing' è documentata.",
+    "front": "Stai ricercando fonti per una presentazione sull'acqua in Italia. Quale query di ricerca avanzata è più efficace per trovare dati ufficiali?",
+    "back": "risorse idriche Italia site:isprambiente.it\n\nL'operatore site: combinato con il dominio di un ente istituzionale affidabile (ISPRA, ISS, OMS) è la strategia più efficace per trovare dati verificati. 'risorse idriche Italia site:isprambiente.it' restringe i risultati all'Istituto Superiore per la Protezione e la Ricerca Ambientale, fonte autorevole per i dati ambientali italiani.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Stai analizzando un articolo che afferma: 'Uno studio ha dimostrato che lo zucchero causa ADHD nei bambini.' Come applichi correttamente il passo T (Trace) del metodo SIFT?",
+    "back": "Cerco il titolo dello studio originale su Google Scholar e leggo cosa dice davvero la ricerca peer-reviewed\n\nIl passo T (Trace claims, quotes and media) del metodo SIFT chiede di risalire alla fonte originale: non fermarsi all'articolo che riassume lo studio, ma cercare lo studio originale su Google Scholar e leggere cosa afferma davvero. Spesso la differenza tra 'correlazione in certi soggetti' e 'causa universale' è cruciale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché il bias di conferma rende particolarmente difficile riconoscere le fake news che confermano le nostre credenze?",
+    "back": "Perché le informazioni che confermano le nostre credenze costano meno energia cognitiva e vengono accettate più velocemente senza attivare il pensiero critico\n\nIl cervello umano è una macchina predittiva che elabora il mondo basandosi su esperienze passate. Le informazioni che confermano i modelli esistenti costano meno energia cognitiva da elaborare. Le fake news più efficaci sfruttano questo: non contraddicono le nostre credenze, le amplificano. La difesa è fermarsi proprio quando una notizia ci fa arrabbiare o ci piace molto.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un fact-checker professionista deve verificare una notizia virale che afferma che 'i delfini sono tornati nei canali di Venezia'. Come dovrebbe procedere per una verifica completa?",
+    "back": "Applicare SIFT: fermarsi, verificare la fonte originale delle immagini (reverse image search), cercare fonti giornalistiche autorevoli che confermino o smentiscano, e risalire al contesto originale delle foto\n\nLa storia 'delfini a Venezia' (citata in 🔬 SPERIMENTA Avanzato) era falsa: le immagini erano di delfini fotografati a Cagliari, non a Venezia. Una verifica completa avrebbe incluso: reverse image search sulle foto (cercare l'immagine originale), ricerca di fonti giornalistiche affidabili che confermino, e lettura dei metadati delle immagini. Questo è il lavoro del fact-checker.",
     "tag": "Avanzato"
   }
 ]

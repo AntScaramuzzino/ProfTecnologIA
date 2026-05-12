@@ -1,47 +1,92 @@
 [
   {
-    "front": "Quale materiale è il principale componente del calcestruzzo?",
-    "back": "Cemento + sabbia + ghiaia + acqua\n\nIl calcestruzzo è un conglomerato di cemento, aggregati (sabbia e ghiaia) e acqua. Il cemento è il 'collante' che lega tutto.",
+    "front": "Cosa si intende per 'compressione' in una struttura edilizia?",
+    "back": "La forza che spinge un elemento strutturale da due parti opposte verso il suo centro\n\nLa compressione si genera quando un elemento strutturale viene spinto da due parti opposte verso il suo centro. I pilastri, le colonne e i mattoni lavorano principalmente in compressione. Materiali come pietra, mattoni e calcestruzzo resistono bene alla compressione ma male alla trazione.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è una fondazione in un edificio?",
-    "back": "La struttura che trasferisce il peso dell'edificio al terreno sottostante\n\nLe fondazioni sono la base invisibile dell'edificio: distribuiscono i carichi sul terreno impedendo cedimenti.",
+    "front": "Perché un arco in pietra o mattoni riesce a resistere a carichi elevati?",
+    "back": "Perché la forma curva distribuisce il peso in forze di compressione lungo tutta la curva\n\nUn arco distribuisce il peso in forze di compressione lungo la curva. Ogni mattone spinge quello accanto verso il basso e verso l'esterno. Nessun elemento è in trazione, solo in compressione. Per questo gli archi romani durano: usano materiali (pietra, mattone) che resistono perfettamente alla compressione.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un solaio?",
-    "back": "L'elemento orizzontale che divide i piani di un edificio e sorregge i carichi verticali\n\nIl solaio divide i piani e trasmette i carichi alla struttura verticale. Può essere in cemento armato, legno o acciaio.",
+    "front": "Cosa è il cemento armato e perché combina cemento e acciaio?",
+    "back": "È cemento con barre di acciaio: il cemento gestisce la compressione, l'acciaio gestisce la trazione\n\nIl cemento armato (inventato nell'Ottocento) combina calcestruzzo (che regge bene la compressione) con barre di acciaio all'interno (che reggono bene la trazione). Insieme realizzano ciò che nessuno dei due potrebbe fare da solo: una struttura che regge sia compressione che trazione.",
     "tag": "Base"
   },
   {
-    "front": "Perché il cemento armato (c.a.) è più resistente del calcestruzzo semplice?",
-    "back": "Perché le barre di acciaio resistono alla trazione mentre il calcestruzzo resiste alla compressione: insieme lavorano in modo complementare\n\nIl calcestruzzo è forte in compressione ma fragile in trazione. L'acciaio compensa questa debolezza: il cemento armato unisce i punti di forza di entrambi.",
+    "front": "Qual è la differenza principale tra un muro portante e un muro tramezza?",
+    "back": "Il muro portante regge i carichi dell'edificio; il muro tramezza divide solo gli spazi senza portare carichi\n\nUn muro portante è un elemento strutturale: trasmette i carichi dal solaio alle fondazioni. Non si può abbattere senza rischi. Un muro tramezza divide solo gli spazi interni e non porta carichi strutturali: può essere abbattuto senza problemi strutturali. Nei telai in c.a. quasi tutte le pareti interne sono tramezze.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché i pali di fondazione vengono usati quando il suolo superficiale non è resistente?",
+    "back": "Per trasferire i carichi dell'edificio fino a uno strato di suolo resistente in profondità\n\nI pali di fondazione sono elementi profondi (5-60 m) che vengono conficcati nel suolo fino a raggiungere uno strato resistente. È il sistema usato a Venezia, costruita su milioni di pali di legno di rovere e larice nell'argilla. Il campanile di San Marco poggiava su oltre 1.000 pali.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché le strutture in acciaio vengono rivestite con materiali ignifughi?",
+    "back": "Perché l'acciaio perde il 50% della resistenza sopra i 500-600°C, rischiando il collasso strutturale\n\nL'acciaio strutturale è resistente ma ha un punto debole: perde rapidamente resistenza ad alte temperature. Sopra i 500-600°C perde il 50% della resistenza e rischia il collasso. I rivestimenti ignifughi (ceramici, proiettati) rallentano il riscaldamento, dando tempo per l'evacuazione.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché la flessione è più complessa della semplice compressione o trazione?",
+    "back": "Perché genera contemporaneamente compressione (parte superiore della trave) e trazione (parte inferiore) nello stesso elemento\n\nUna trave in flessione non è solo compressa né solo in trazione: nella zona superiore si genera compressione; in quella inferiore si genera trazione. Per gestire entrambe, le travi in acciaio hanno la sezione a H (HEA, HEB, IPE): le ali orizzontali portano i carichi di flessione, l'anima verticale resiste al taglio.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa si intende per 'classe energetica' di un edificio?",
-    "back": "Un indice (da A4 a G) che misura il consumo energetico per riscaldamento/raffrescamento per metro quadro\n\nLa classe energetica (APE — Attestato di Prestazione Energetica) è obbligatoria per vendita e affitto e indica l'efficienza dell'involucro e degli impianti.",
+    "front": "Perché il legno lamellare (CLT) si comporta meglio del legno massiccio nelle grandi strutture?",
+    "back": "Perché gli strati di legno incollati con fibre alternate annullano i difetti del legno massiccio (nodi, deformazioni) aumentando la resistenza\n\nIl legno lamellare incolla strati di legno essiccato alternando le direzioni della fibra. Questo annulla i difetti del legno massiccio (nodi, deformazioni irregolari) e crea un materiale con resistenza uniforme superiore. L'arena del Forum di Assago ha una copertura in CLT con luci di 75 metri.",
     "tag": "Intermedio"
   },
   {
-    "front": "Perché la muratura portante è stata progressivamente sostituita dal telaio in c.a.?",
-    "back": "Il telaio permette flessibilità nella distribuzione interna, altezze maggiori e resistenza sismica superiore\n\nIl telaio in c.a. o acciaio separa la struttura dalle partizioni interne: si può riorganizzare lo spazio senza toccare la struttura.",
+    "front": "La Torre di Pisa si inclina perché il suolo ha ceduto di più su un lato. Quale tipo di fondazione avrebbe potuto prevenire questo problema?",
+    "back": "Pali profondi che raggiungessero uno strato di suolo uniforme e resistente più in profondità\n\nLa Torre di Pisa si inclina perché fu costruita su argilla morbida non uniforme: il lato sud cedette di più. Pali di fondazione profondi avrebbero trasferito i carichi a uno strato di suolo più profondo, resistente e uniforme, prevenendo il cedimento differenziale. L'intervento degli anni '90 ha rimosso terra dal lato nord per raddrizzarla parzialmente.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il metodo 'BIM' (Building Information Modeling)?",
-    "back": "Un processo che usa modelli digitali 3D contenenti tutte le informazioni dell'edificio (struttura, impianti, materiali) per gestire l'intero ciclo di vita\n\nIl BIM rivoluziona la progettazione: tutti i professionisti (architetto, strutturista, impiantista) lavorano sullo stesso modello digitale condiviso.",
+    "front": "Perché il sughero è un buon materiale isolante termico e ha anche vantaggi ambientali?",
+    "back": "Perché è estratto dalla corteccia della quercia da sughero senza abbatterla, è biodegradabile e la corteccia ricresce in 9-12 anni\n\nIl sughero è estratto dalla corteccia della quercia da sughero (Quercus suber) senza abbatterla: la corteccia ricresce in 9-12 anni. È biodegradabile, naturalmente ignifugo, ottimo isolante termico (lambda 0,037-0,042) e acustico. Principalmente prodotto in Portogallo e in Sardegna.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un edificio in zona sismica 1 deve resistere a forze di taglio orizzontali. Perché i terremoti generano forze laterali invece che verticali?",
+    "back": "Perché le onde sismiche si propagano orizzontalmente attraverso il suolo e spostano le fondazioni lateralmente\n\nLe onde sismiche si propagano orizzontalmente nel suolo (onde S e onde di Love). Spostano rapidamente le fondazioni di lato, generando enormi forze di taglio orizzontali nella struttura. Gli edifici tradizionali sono progettati per i carichi verticali: il taglio sismico li coglie di sorpresa.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "La trasmittanza termica U=0,24 W/m²·K è il limite per le pareti esterne in zona E. Una parete di mattoni da 30 cm ha U≈1,5. Cosa significa questo confronto?",
+    "back": "La parete di mattoni da 30 cm supera il limite di 6 volte: non è ammessa nelle nuove costruzioni senza isolamento aggiuntivo\n\nLa trasmittanza U misura la dispersione termica. Una parete di mattoni da 30 cm (U≈1,5) disperde calore quasi 6 volte più del limite normativo italiano (U≤0,24 in zona E). Nelle nuove costruzioni è obbligatorio aggiungere isolamento per portare U sotto il limite.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "In un appartamento con struttura a telaio in c.a. si vuole abbattere una parete per creare un open space. Come si determina se è portante?",
+    "back": "In un telaio in c.a. quasi tutte le pareti interne sono tramezze: solo i pilastri e le travi sono strutturali\n\nIn un edificio con telaio in c.a., i carichi vengono trasmessi da pilastri e travi, non dalle pareti. Le pareti interne sono quasi sempre tramezze non strutturali: si possono abbattere. Ma prima di qualsiasi intervento è fondamentale verificare con un tecnico strutturista o consultare il progetto originale.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cosa si intende per edificio 'NZEB' (Nearly Zero Energy Building)?",
-    "back": "Un edificio con fabbisogno energetico quasi zero, coperto in grande misura da energie rinnovabili prodotte in loco\n\nDal 2021 tutti i nuovi edifici pubblici UE devono essere NZEB. Combinano ottima isolazione, ventilazione meccanica controllata e rinnovabili.",
+    "front": "Il cemento è il materiale da costruzione più usato al mondo (4 miliardi di tonnellate/anno). Qual è il suo principale impatto ambientale?",
+    "back": "La produzione di circa l'8% delle emissioni globali di CO₂, principalmente nella produzione del clinker\n\nL'industria del cemento produce circa l'8% delle emissioni globali di CO₂. La fonte principale: la calcinazione del calcare (CaCO₃ → CaO + CO₂) nella produzione del clinker. Non è solo l'energia usata: la reazione chimica stessa rilascia CO₂ inevitabilmente con i processi tradizionali.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'rigenerazione urbana' e perché è preferita alla nuova edificazione?",
-    "back": "Il recupero e trasformazione di edifici e aree dismesse senza consumare nuovo suolo: riduce sprawl, emissioni e costi infrastrutturali\n\nIl suolo è una risorsa non rinnovabile. La rigenerazione urbana è la strategia preferita dall'UE per limitare il consumo di territorio.",
+    "front": "Un ingegnere deve scegliere tra acciaio e legno lamellare per la copertura di un palazzetto sportivo con luce di 40 m. Quali fattori favoriscono il legno?",
+    "back": "Il legno lamellare è più leggero (500-600 kg/m³ vs 7.800 kg/m³ dell'acciaio), ha comportamento sismico eccellente e sequestra carbonio\n\nIl legno lamellare (CLT/Glulam) pesa ~500-600 kg/m³, quasi 13 volte meno dell'acciaio (7.800 kg/m³). A parità di peso, la resistenza specifica è comparabile. In zone sismiche il legno è eccellente: si piega senza collassare. E gli alberi abbattuti hanno già sequestrato CO₂: l'edificio è un serbatoio di carbonio.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Dopo il terremoto di Amatrice (2016, Mw 6.2), molti edifici crollarono mentre costruzioni simili del XX secolo in altri paesi resistettero. Qual è la ragione strutturale principale?",
+    "back": "Molti edifici erano stati costruiti prima delle norme antisismiche adeguate, senza le armature necessarie per resistere alle forze di taglio sismico\n\nIn Italia il 44% del territorio è in zona sismica 1 o 2, ma molti edifici sono stati costruiti prima che esistessero norme antisismiche adeguate. Mancavano armature trasversali (staffe nei pilastri), giunti duttili, controventi: elementi indispensabili per resistere alle forze di taglio sismico orizzontale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "La flessione di una trave cresce con il quadrato della lunghezza. Cosa significa praticamente per la progettazione di un grande auditorium?",
+    "back": "Raddoppiando la luce, la flessione quadruplica: le travi di grandi spazi richiedono sezioni molto più grandi o sistemi strutturali alternativi\n\nLa freccia di flessione cresce con il quadrato della lunghezza (L²). Raddoppiare la luce quadruplica la flessione. Per un auditorium con luci di 20-30 m, questo significa usare travi molto profonde, capriate (reticoli triangolari), archi o shell strutturali per distribuire i carichi in modo più efficiente.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un costruttore propone fondazioni superficiali (platea) per un edificio di 5 piani su terreno argilloso con falda superficiale. Quale rischio principale devi segnalare?",
+    "back": "Il terreno argilloso saturo ha bassa capacità portante e può cedere differenzialmente sotto i carichi, causando lesioni o collasso\n\nIl terreno argilloso saturo ha bassa capacità portante e alta compressibilità. Fondazioni superficiali su argilla rischiano cedimenti differenziali (più su un lato che sull'altro), che causano lesioni diagonali nelle pareti e nei casi peggiori il collasso. Come la Torre di Pisa. Pali profondi fino a uno strato competente sono la soluzione corretta.",
     "tag": "Avanzato"
   }
 ]

@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa si intende per 'fake news'?",
-    "back": "Informazioni false o fuorvianti diffuse intenzionalmente come se fossero notizie vere\n\nLe fake news sono progettate per ingannare e manipolare. La satira è legittima quando è riconoscibile come tale.",
+    "front": "Cos'è l'economia dell'attenzione?",
+    "back": "Un sistema economico in cui la risorsa scarsa è la capacità di concentrazione umana, venduta agli inserzionisti\n\nL'economia dell'attenzione, descritta dal giurista Tim Wu nel 2006, è il sistema in cui la risorsa scarsa è la capacità di concentrazione umana. Le piattaforme digitali (Google, Facebook, TikTok) sono gratuite perché vendono l'attenzione degli utenti agli inserzionisti: ogni secondo che passi su TikTok ha un valore economico — non per te, ma per TikTok.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è una 'fonte primaria' nell'informazione?",
-    "back": "La fonte originale dell'informazione: il documento ufficiale, la ricerca scientifica, il comunicato dell'ente\n\nUna fonte primaria è la materia prima dell'informazione. Citare il giornale che cita la ricerca non è citare la fonte primaria.",
+    "front": "Cosa distingue la 'misinformazione' dalla 'disinformazione'?",
+    "back": "Misinformazione è condivisa senza intento di ingannare; disinformazione è deliberatamente falsa e ingannevole\n\nLa misinformazione è informazione falsa condivisa senza intento di ingannare (chi la diffonde ci crede). La disinformazione è informazione falsa diffusa deliberatamente per ingannare. La malinformazione è informazione vera usata con intento di danno. La distinzione è cruciale perché le risposte appropriate sono diverse.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'fact-checking'?",
-    "back": "Il processo sistematico di verifica dell'accuratezza delle affermazioni pubbliche usando fonti verificabili\n\nIl fact-checking professionale (Snopes, FactCheck, Pagella Politica in Italia) verifica le dichiarazioni dei politici e le notizie virali con metodo documentato.",
+    "front": "Cosa misura il feed algoritmo di TikTok per decidere cosa mostrarti?",
+    "back": "I segnali di engagement: quanto hai guardato un video, like, commenti, condivisioni, visite al profilo\n\nL'algoritmo di TikTok usa segnali di engagement personali: quanto tempo guardi ogni video (se guardi i 60 secondi completi vs se scrolli via dopo 3), like, commenti, condivisioni, visite al profilo del creator. Questi segnali rivelano le preferenze implicite — non quelle dichiarate.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il bias di conferma?",
-    "back": "La tendenza psicologica a cercare, interpretare e ricordare informazioni che confermano le proprie credenze preesistenti\n\nIl bias di conferma ci fa accettare acriticamente informazioni che confermano ciò che già crediamo e rifiutare quelle che contraddicono. È amplificato dagli algoritmi dei social.",
+    "front": "Cosa si intende per 'filter bubble' (bolla di filtraggio)?",
+    "back": "L'ambiente informativo personalizzato creato dagli algoritmi che mostra sempre più contenuti simili a quelli già visti\n\nIl termine filter bubble fu coniato da Eli Pariser nel 2011: gli algoritmi di raccomandazione creano ambienti informativi personalizzati mostrando sempre più contenuti simili a quelli con cui hai già interagito. La conseguenza è che la tua visione del mondo si restringe gradualmente senza che te ne accorga.",
+    "tag": "Base"
+  },
+  {
+    "front": "Chi sono i 'data broker' nella catena della pubblicità programmatica?",
+    "back": "Aziende che raccolgono, aggregano e rivendono dati su milioni di persone da centinaia di fonti\n\nI data broker (Oracle Data Cloud, Acxiom, Experian) acquistano, aggregano e rivendono dati su centinaia di milioni di persone da centinaia di fonti: navigazione web (cookie), app, carte fedeltà, acquisti con carta, geolocalizzazione, social media. Acxiom dichiara di avere profili su circa 2,5 miliardi di persone nel mondo.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa prevede il metodo '#ThinkBeforeYouShare' prima di condividere una notizia?",
+    "back": "Verificare la fonte originale, la data, leggere l'articolo completo e chiedersi se si condivide perché è vero o perché conferma ciò in cui si crede\n\nIl metodo #ThinkBeforeYouShare (UNESCO) prevede 5 domande: 1) Conosco la fonte originale? 2) Ho controllato la data? 3) Ho letto l'articolo completo? 4) Condivido perché è vero o per bias di conferma? 5) Mi correggerei se sbagliassi? Il metodo tratta chi condivide come parte della catena di diffusione.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché i contenuti emotivamente intensi (rabbia, paura, stupore) ottengono più engagement sui social media?",
+    "back": "Perché gli algoritmi ottimizzano il tempo di permanenza e le emozioni forti tengono le persone più a lungo sullo schermo\n\nIl testo spiega la logica dell'economia dell'attenzione: le piattaforme hanno interesse economico a massimizzare il tempo di permanenza degli utenti. I contenuti emotivamente intensi (rabbia, paura, stupore, indignazione) tengono le persone più a lungo — quindi vengono premiati dall'algoritmo. Questo crea un incentivo strutturale verso i contenuti estremi.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'deepfake'?",
-    "back": "Contenuto video/audio generato con AI che mostra persone che fanno o dicono cose che non hanno mai fatto\n\nI deepfake usano AI generativa per creare video falsi convincenti. Rappresentano una minaccia alla fiducia nell'informazione visiva che storicamente era difficile falsificare.",
+    "front": "L'esperimento di Eli Pariser nel 2010 (due amici che cercano la stessa parola su Google) ha dimostrato cosa?",
+    "back": "Che non esiste una 'stessa Google' per tutti: i risultati sono personalizzati sulla base della storia di ricerche\n\nL'esperimento di Pariser nel 2010 mostrò che due amici che cercavano la stessa parola su Google ottenevano risultati diversi — personalizzati sulla base della loro storia di ricerche. Non c'era una 'stessa Google' per tutti. Questo illustra il filter bubble anche nei motori di ricerca, non solo nei social.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'media literacy' (alfabetizzazione mediatica)?",
-    "back": "La capacità di accedere, analizzare, valutare, creare e partecipare ai media in modo critico e consapevole\n\nLa media literacy è la competenza del XXI secolo: saper distinguere informazione da opinione, riconoscere la propaganda e valutare le fonti.",
+    "front": "Nel caso #MacronLeaks (2017), perché i documenti rubati furono lanciati di notte tra venerdì e sabato?",
+    "back": "Per sfruttare il fuso orario: in Francia era silenzio elettorale, ma in America (dove fu lanciato l'hashtag) no\n\nIl timing era strategico: in Francia scattava il silenzio elettorale (illegale commentare notizie elettorali) dal venerdì sera. L'hashtag fu lanciato da account americani nella notte tra venerdì e sabato — quando in Francia era silenzio ma in America no. I social media non hanno confini geografici per il silenzio elettorale.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'greenwashing' nella comunicazione aziendale?",
-    "back": "La pratica di comunicare un'immagine ambientale positiva non supportata da azioni reali o sovradimensionata rispetto all'impatto effettivo\n\nIl greenwashing è una forma di inganno comunicativo: mina la fiducia dei consumatori e distoglie attenzione dalle aziende genuinamente sostenibili.",
+    "front": "Perché nel caso #MacronLeaks il team di Macron non specificò quali documenti erano falsi e quali autentici?",
+    "back": "Per rendere impossibile la verifica e costringere i media a non coprire la storia durante il silenzio elettorale\n\nIl testo descrive la risposta del team Macron come 'una tattica deliberata': dichiarando che i documenti erano una 'combinazione di materiale autentico e documenti falsificati' senza specificare quali, rendevano impossibile una verifica rapida. La presenza di documenti reali abbassava la guardia critica del lettore.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come si rompe una filter bubble in modo pratico secondo il testo?",
+    "back": "Seguire deliberatamente fonti con cui non si è d'accordo, usare il feed cronologico e cercare informazioni fuori dall'algoritmo\n\nIl testo suggerisce quattro strategie: 1) Diversificazione attiva delle fonti (seguire chi non si è d'accordo); 2) Uso del feed cronologico quando disponibile; 3) Ricerca deliberata fuori dall'algoritmo (usare il motore di ricerca invece di aspettare); 4) Consapevolezza dei pattern (chiedersi cosa manca nel proprio feed).",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché il GDPR ha introdotto i 'banner dei cookie' su tutti i siti europei?",
+    "back": "Perché richiede il consenso esplicito per la raccolta e l'uso dei dati personali, inclusi i cookie di tracciamento\n\nIl GDPR (General Data Protection Regulation, 2018) richiede consenso esplicito prima che i siti raccolgano dati personali attraverso cookie di tracciamento di terze parti. I banner cookie che vedi su ogni sito italiano ed europeo sono la diretta conseguenza di questo obbligo legale.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Lo studio MIT (2018, Science) ha misurato che la disinformazione si diffonde 6 volte più velocemente della verità. Perché?",
+    "back": "Perché è più 'nuova', emotivamente intensa e sorprendente: esattamente i fattori che l'algoritmo premia con più visibilità\n\nLo studio Vosoughi et al. (2018, Science) ha dimostrato che la disinformazione si diffonde mediamente 6 volte più velocemente della verità su Twitter — e che questo è dovuto agli umani, non ai bot. La disinformazione è strutturalmente più nuova, più sorprendente, più emotivamente intensa: esattamente i fattori che massimizzano l'engagement e che gli algoritmi premiano.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'computational propaganda'?",
-    "back": "L'uso di algoritmi, bot e automazione per diffondere disinformazione politica su larga scala manipolando l'opinione pubblica\n\nI bot possono amplificare artificialmente messaggi politici, far sembrare che un'opinione sia maggioritaria quando non lo è, influenzando elezioni e decisioni pubbliche.",
+    "front": "Nel caso ucraino (2022), TikTok mostrava versioni opposte della guerra in Russia e in Europa. Qual è la causa strutturale di questo fenomeno?",
+    "back": "Gli algoritmi di engagement amplificano i contenuti che generano più interazione nel contesto locale, non quelli più accurati\n\nIl testo spiega che TikTok non aveva 'politiche esplicite diverse per i due paesi': il fenomeno era causato dagli algoritmi di engagement che amplificavano i contenuti che generavano più interazione in ciascun contesto. In Russia, l'emozione dominante portava verso certi contenuti; in Europa verso altri. Il risultato: versioni radicalmente diverse della stessa realtà.",
     "tag": "Avanzato"
   },
   {
-    "front": "Perché il 'diritto all'oblio' è importante nell'era digitale?",
-    "back": "Perché riconosce il diritto delle persone a richiedere la rimozione di informazioni personali obsolete o irrilevanti dai motori di ricerca\n\nLa sentenza Google Spain (CGUE 2014) ha stabilito che le persone hanno diritto a chiedere la de-indicizzazione di contenuti che non riflettono più la loro situazione attuale.",
+    "front": "Applica il metodo del fact-checking: l'affermazione 'I vaccini causano l'autismo' è verificabile? E come si verifica?",
+    "back": "Sì è verificabile: si cercano gli studi peer-reviewed originali e il consenso della comunità scientifica (che la smentisce inequivocabilmente)\n\nApplicando il metodo del testo: 1) È un'affermazione verificabile (non un'opinione); 2) Le fonti primarie sono studi peer-reviewed su riviste mediche; 3) Lo studio originale di Wakefield (1998) che la sosteneva fu ritrattato nel 2010 perché basato su dati falsificati; 4) Decine di studi successivi su milioni di bambini non hanno trovato correlazione. Il consenso scientifico smentisce l'affermazione.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Stai scrivendo l'articolo de 'Il Bullone' sul post falso della scuola. Quale è il testo più efficace per la call to action finale?",
+    "back": "'Prima di condividere, cerca il sito ufficiale della scuola o chiama in segreteria: bastano 2 minuti per verificare una fonte istituzionale'\n\nIl testo insegna che la call to action deve essere concreta: 'Non scrivere verificate sempre le fonti: scrivi esattamente cosa verificare, come, con quali strumenti.' Una call to action efficace indica l'azione specifica (cercare il sito ufficiale della scuola o chiamare la segreteria), lo strumento (sito ufficiale, telefono), e il tempo necessario (2 minuti).",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Qual è il 'paradosso del feed curato' rispetto al feed cronologico in termini di autonomia dell'utente?",
+    "back": "Nel feed curato l'algoritmo ha già selezionato prima dell'utente: il controllo è della piattaforma, non dell'utente\n\nIl testo distingue chiaramente: nel feed cronologico l'utente 'può vedere tutto' e 'ha il controllo'. Nel feed curato 'il sistema ha già fatto selezione prima che tu arrivi' — il controllo è dell'algoritmo, e i suoi obiettivi non sono i tuoi (sono il massimizzare l'engagement per vendere pubblicità). Questa distinzione ha conseguenze sulla dieta informativa dell'utente.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Quanta responsabilità ha chi condivide un post falso su WhatsApp senza verificarlo, secondo il ragionamento del testo?",
+    "back": "Ha una responsabilità morale come parte della catena di diffusione, anche se l'intenzione era buona\n\nIl testo afferma esplicitamente: 'ogni persona che condivide è parte della catena di diffusione — non un attore passivo.' Il principio #ThinkBeforeYouShare tratta chi condivide come moralmente responsabile. La domanda aperta della metacognizione chiede: 'Esiste una responsabilità morale anche quando l'intenzione era buona?' — suggerendo che la risposta sia sì.",
     "tag": "Avanzato"
   }
 ]

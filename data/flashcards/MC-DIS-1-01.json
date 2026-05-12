@@ -1,47 +1,92 @@
 [
   {
-    "front": "Quale strumento si usa per tracciare cerchi nel disegno tecnico?",
-    "back": "Il compasso\n\nIl compasso permette di tracciare cerchi e archi di raggio preciso. La distanza tra punta e mina = raggio del cerchio.",
+    "front": "Cosa rappresenta la 'linea continua grossa' (spessore 0,5-0,7 mm) in un disegno tecnico?",
+    "back": "I contorni visibili dell'oggetto — i bordi che si vedono guardando l'oggetto dalla direzione del disegno\n\nNel disegno tecnico ogni tipo di linea ha un significato preciso (norma UNI). La linea continua grossa (0,5-0,7 mm) indica i contorni visibili — i bordi che si vedono guardando l'oggetto dalla direzione del disegno. Usarla in modo sbagliato trasmette informazioni errate.",
     "tag": "Base"
   },
   {
-    "front": "Quante volte si 'stacca' il raggio sulla circonferenza per costruire un esagono?",
-    "back": "6\n\nIl raggio si stacca esattamente 6 volte sulla circonferenza: questo è il principio geometrico alla base della costruzione dell'esagono con il solo compasso.",
+    "front": "Cosa è la 'matita HB' e quando si usa nel disegno tecnico?",
+    "back": "La matita standard con equilibrio tra durezza e morbidezza, usata per le linee definitive nel disegno tecnico\n\nLa durezza della matita è indicata da H (Hard = duro, tratto sottile e chiaro) e B (Black = morbido, tratto spesso e scuro). HB è l'equilibrio: né troppo dura né troppo morbida. Per il disegno tecnico si usa H o 2H per le linee di costruzione leggere (da cancellare) e HB per le linee definitive.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'cartiglio' in un disegno tecnico?",
-    "back": "Il riquadro in basso a destra con dati identificativi: nome, data, scala, numero tavola\n\nIl cartiglio è obbligatorio e standardizzato (UNI EN ISO 7200). Senza di esso un disegno tecnico non è identificabile né tracciabile.",
+    "front": "Come si costruisce la bisettrice di un angolo con riga e compasso?",
+    "back": "Dal vertice si traccia un arco che interseca entrambi i lati dell'angolo; poi con la stessa apertura dai due punti di intersezione si trovano due archi il cui incrocio indica la direzione della bisettrice\n\nLa costruzione della bisettrice: (1) Dal vertice O, con apertura qualsiasi, tracciare un arco che interseca i lati dell'angolo nei punti A e B. (2) Da A e B, con la stessa apertura > AB/2, tracciare archi che si intersecano nel punto C. (3) La retta OC è la bisettrice. Perché funziona: i triangoli OAC e OBC sono congruenti (LLL), quindi gli angoli AOC e BOC sono uguali.",
     "tag": "Base"
   },
   {
-    "front": "Cosa distingue una linea 'continua grossa' da una 'tratteggiata fine' nel disegno tecnico?",
-    "back": "La grossa indica i contorni visibili dell'oggetto; la tratteggiata rappresenta spigoli e superfici nascosti (non visibili dalla vista)\n\nLa convenzione grafica è universale (ISO 128): ogni tipo di linea ha un significato preciso leggibile da qualsiasi tecnico nel mondo.",
+    "front": "A cosa serve la 'linea mista' (tratto-punto) nel disegno tecnico?",
+    "back": "A rappresentare gli assi di simmetria e i piani di sezione dell'oggetto\n\nLa linea mista (linea-punto: — · — · —) ha due usi principali: (1) asse di simmetria — ogni oggetto simmetrico ha questa linea che passa per il centro; (2) piano di sezione — indica dove l'oggetto viene 'tagliato' per mostrare l'interno, con frecce che indicano la direzione di vista.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché nel disegno dell'esagono regolare inscritto in una circonferenza, si usa un'apertura del compasso pari al raggio della circonferenza?",
+    "back": "Perché il lato di un esagono regolare inscritto è uguale al raggio della circonferenza — si può dimostrare geometricamente che il triangolo formato da due raggi e un lato è equilatero\n\nIl teorema fondamentale degli esagoni regolari: il lato di un esagono regolare inscritto in una circonferenza è uguale al raggio. Ogni 'passo' del compasso (con apertura = raggio) divide la circonferenza in 1/6. I 6 triangoli formati dai raggi e dai lati dell'esagono sono equilateri — tre lati uguali al raggio.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è il ruolo del rapportatore nel disegno tecnico?",
+    "back": "Misurare e tracciare angoli con precisione, da 0° a 180°\n\nIl rapportatore è un semicerchio graduato da 0° a 180°. Per misurare un angolo: posiziona il centro sul vertice, allinea il lato di riferimento allo 0°, leggi il valore dove passa il secondo lato. Attenzione alle due scale (0-180 e 180-0): usa sempre quella che parte da 0° sul lato di riferimento.",
+    "tag": "Base"
+  },
+  {
+    "front": "La costruzione della perpendicolare da un punto P a una retta r usa il compasso per trovare due punti equidistanti. Quale teorema geometrico garantisce che la retta PQ sia perpendicolare a r?",
+    "back": "La congruenza dei triangoli (LLL): i triangoli PAQ e PBQ hanno tutti e tre i lati uguali, quindi gli angoli APQ e BPQ sono uguali e siccome insieme formano 180°, ciascuno è 90°\n\nLa costruzione della perpendicolare da P a r funziona perché i due triangoli creati (PAQ e PBQ) hanno tutti e tre i lati uguali (PA = PB per costruzione con arco da P; QA = QB per costruzione con stessa apertura da A e da B; PQ in comune). Per il caso LLL (tre lati eguali) i triangoli sono congruenti, quindi l'angolo APQ = angolo BPQ = 90°.",
     "tag": "Intermedio"
   },
   {
-    "front": "Come si biseca geometricamente un segmento con riga e compasso?",
-    "back": "Si tracciano due archi dal raggio > metà del segmento da entrambe le estremità: la retta che unisce le intersezioni è la bisettrice perpendicolare\n\nLa costruzione geometrica è esatta, non approssimativa. Non serve misurare: bastano riga e compasso con il metodo corretto.",
+    "front": "Perché il metodo delle parallele divide un segmento in parti uguali anche quando le misure non vengono 'tonde'?",
+    "back": "Perché si basa sul teorema di Talete: se due trasversali tagliano un fascio di rette parallele, lo fanno in segmenti proporzionali — quindi se i punti sulla semiretta ausiliaria sono equidistanti, i segmenti su AB lo sono anch'essi\n\nIl metodo delle parallele si basa sul teorema di Talete: quando rette parallele vengono tagliate da due trasversali, i segmenti corrispondenti sono proporzionali. Se sulla semiretta ausiliaria i n punti sono equidistanti (stessa apertura del compasso), le rette parallele tracciate dai punti dividono il segmento AB in n parti uguali. Funziona per qualsiasi n, anche quando 100 ÷ n non dà un numero intero.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa significa che un poligono è 'inscritto' in una circonferenza?",
-    "back": "Tutti i vertici del poligono giacciono sulla circonferenza\n\nInscritto = tutti i vertici sul cerchio. Circoscritto = tutti i lati tangenti al cerchio. Due relazioni fondamentali in geometria euclidea.",
+    "front": "Il disegno tecnico è definito un 'linguaggio universale'. Cosa rende possibile questa universalità?",
+    "back": "La standardizzazione delle convenzioni grafiche attraverso norme internazionali (UNI/ISO): stessi tipi di linee, stessa disposizione delle viste, stesse scale — in tutto il mondo\n\nL'universalità del disegno tecnico si fonda sulla standardizzazione: le norme UNI (Italia), EN (Europa), ISO (internazionale) definiscono regole precise per ogni elemento grafico. Quando un ingegnere in Italia disegna un componente con linee tratteggiate per i bordi nascosti, un tecnico in Giappone legge lo stesso significato — senza parlare la stessa lingua verbale.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'sezione aurea' e perché viene usata in design?",
-    "back": "La proporzione 1:1.618 (φ) ritenuta esteticamente armoniosa: usata in architettura, grafica e design perché risulta naturalmente piacevole alla percezione\n\nIl Partenone, la Gioconda, il logo Apple: la sezione aurea compare dove la proporzione è considerata perfetta. Non è magia: è percezione visiva evolutivamente ottimizzata.",
+    "front": "Leonardo da Vinci ha introdotto un'innovazione fondamentale nel disegno tecnico del Rinascimento. Di cosa si trattava?",
+    "back": "Ha introdotto le viste multiple: disegnare lo stesso oggetto di fronte, di lato, dall'alto e in sezione, invece di una sola vista prospettica\n\nLeonardo da Vinci (XV-XVI sec.) rivoluzionò il disegno tecnico introducendo le viste multiple: la stessa macchina disegnata di fronte, di lato, dall'alto, con il taglio interno in sezione. Prima si usava la prospettiva (come una fotografia). Con Leonardo l'oggetto viene 'spiegato' da angoli diversi, ciascuno con informazioni diverse. Questa intuizione è ancora la base del disegno meccanico industriale.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Le due squadre (45° e 60°-30°) usate insieme permettono di tracciare rette parallele. Come funziona tecnicamente questo metodo?",
+    "back": "Si appoggia una squadra al righello (o all'altra squadra) come guida; la seconda squadra scorre lungo il bordo della prima — ogni linea tracciata è parallela alla precedente\n\nIl metodo delle squadre per le parallele: (1) appoggia una squadra al righello come guida fissa; (2) la seconda squadra scorre lungo il bordo della prima mantenendo lo stesso angolo; (3) ogni linea tracciata con la seconda squadra è parallela alla precedente. Funziona perché lo scorrimento preserva l'orientamento angolare della seconda squadra.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come si collega la costruzione del triangolo equilatero (dato il lato) con la costruzione dell'esagono regolare inscritto in una circonferenza?",
+    "back": "Il triangolo equilatero si costruisce con la stessa apertura del compasso del raggio della circonferenza; poiché i triangoli equilateri hanno angoli di 60°, sei di essi coprono esattamente i 360° della circonferenza\n\nIl collegamento è diretto e pratico: nella costruzione del triangolo equilatero dato il lato AB, l'apertura del compasso = AB. Applicando la stessa costruzione 6 volte partendo da un punto A₁ sulla circonferenza (con apertura = raggio), si ottengono 6 punti equidistanti A₁...A₆ — i vertici dell'esagono. I 6 triangoli formati dai raggi e dai lati sono equilateri.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Nel collegamento STEM con l'informatica, il testo dice che ogni operazione del computer 'viene ridotta a sequenze di 0 e 1'. Come si collega questo con le costruzioni geometriche del disegno tecnico?",
+    "back": "Chi impara le costruzioni geometriche capisce cosa fa il computer quando esegue operazioni geometriche in CAD: non è solo un utilizzatore passivo di software, ma comprende i principi sottostanti\n\nIl testo stabilisce che 'chi impara le costruzioni geometriche con gli strumenti fisici capisce cosa fa il computer'. I programmi CAD eseguono le stesse operazioni: tracciare una perpendicolare in AutoCAD usa gli stessi principi geometrici della costruzione con compasso. Conoscere la geometria euclidea rende migliori utenti del CAD — e potenziali progettisti di algoritmi geometrici.",
     "tag": "Avanzato"
   },
   {
-    "front": "Perché si usa ancora il disegno a mano nell'era del CAD?",
-    "back": "Perché sviluppa il ragionamento spaziale, la comprensione delle relazioni geometriche e l'intuizione progettuale che il CAD non può sostituire\n\nIl disegno a mano è pensiero visivo. Capire perché un esagono si costruisce così sviluppa un'intuizione geometrica che il software usa ma non insegna.",
+    "front": "Il 'Right to Repair' citato nel collegamento con i dispositivi digitali è collegato a un principio del disegno tecnico. Qual è il collegamento?",
+    "back": "Per riparare un dispositivo serve la documentazione tecnica (disegni, istruzioni) che i produttori spesso non forniscono. Il disegno tecnico è lo strumento con cui quella documentazione viene comunicata\n\nIl testo nella sezione OSSERVA collega il Right to Repair con il disegno tecnico: per riparare un dispositivo si devono avere disegni tecnici dei componenti (esplosi, sezioni, specifiche dei pezzi di ricambio). Dal 2021 l'UE obbliga i produttori di certi elettrodomestici a garantire pezzi di ricambio per 10 anni — e con essi la documentazione tecnica (disegni) necessaria per la riparazione.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cosa è la norma ISO 128 e cosa regola?",
-    "back": "Lo standard internazionale per la rappresentazione grafica nei disegni tecnici: tipi di linea, spessori, convenzioni di visualizzazione\n\nISO 128 garantisce che un disegno tecnico sia leggibile allo stesso modo a Tokyo, Milano o São Paulo. La standardizzazione è la base della comunicazione tecnica globale.",
+    "front": "Nel compito AGISCI, devi valutare se 10 computer donati sono 'ancora utilizzabili per le attività didattiche'. Quale criterio del disegno tecnico si applica alla raccolta delle specifiche hardware?",
+    "back": "La competenza di 'identificazione e raccolta sistematica delle specifiche' è analoga al 'leggere un disegno tecnico': entrambe richiedono saper trovare, leggere e interpretare dati tecnici precisi\n\nLa competenza trasversale è la raccolta sistematica e l'interpretazione di dati tecnici precisi. Leggere le specifiche hardware di un computer (processore, RAM, storage, OS) richiede le stesse competenze di lettura di un disegno tecnico: sapere dove trovare le informazioni, capire le unità di misura (GHz, GB, TB), interpretare i valori nel contesto. La rubrica valuta 'completezza e precisione del linguaggio' — lo stesso criterio del disegno tecnico.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "La storia del disegno tecnico mostra che i Sumeri del 3000 a.C. e Leonardo da Vinci del 1500 d.C. usavano entrambi principi geometrici simili. Cosa dice questo sulla matematica come fondamento del disegno?",
+    "back": "Che i principi geometrici fondamentali (angoli retti, proporzioni, scale) non cambiano nel tempo — cambiano solo gli strumenti (stilo, righello, CAD) ma la matematica sottostante rimane la stessa\n\nIl testo afferma: 'il principio del disegno tecnico — rappresentare la realtà in modo preciso, misurabile e non ambiguo — non è cambiato in 4.000 anni. È cambiato lo strumento: dallo stilo su argilla, alla matita su carta, al CAD, ai droni LiDAR.' La geometria euclidea di Euclide (IV sec. a.C.) è ancora alla base del CAD e del rendering 3D del XXI secolo.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il 'GIS' (Geographic Information System) è citato come evoluzione del disegno tecnico. Quale principio fondamentale del disegno tecnico tradizionale applica?",
+    "back": "I principi di scala di rappresentazione (il territorio reale ridotto a una mappa misurabile), proiezione (dalla 3D reale alla 2D della mappa) e quotatura (ogni punto ha coordinate precise)\n\nIl GIS applica i principi fondamentali del disegno tecnico a scala geografica: (1) scala di rappresentazione — il territorio reale ridotto a una mappa; (2) proiezione — dalla superficie sferica della Terra a un piano 2D; (3) quotatura — ogni punto ha coordinate precise (longitudine, latitudine, altitudine). Il GIS è, in sostanza, un disegno tecnico digitale e interattivo del territorio.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "La costruzione geometrica della perpendicolare a una retta nel punto P dimostra che 'ogni volta che usi il compasso stai dimostrando qualcosa'. Cosa dimostra esattamente questa costruzione?",
+    "back": "Dimostra che i triangoli APC e BPC sono congruenti (caso LLL), quindi gli angoli APC e BPC sono uguali, e siccome insieme formano 180°, ciascuno è 90° — ovvero la retta PC è perpendicolare\n\nIl testo spiega: la costruzione della perpendicolare dimostra fisicamente il teorema della congruenza dei triangoli (caso LLL). I triangoli APC e BPC hanno: PA = PB (stesso raggio dal punto P), AC = BC (stesso raggio da A e da B), PC in comune. LLL → congruenza → angoli APC = BPC. Insieme formano 180°, quindi ciascuno è 90°. Ogni costruzione geometrica è una dimostrazione del teorema sottostante.",
     "tag": "Avanzato"
   }
 ]

@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa sono i sensori IoT nel contesto urbano?",
-    "back": "Dispositivi connessi che raccolgono dati in tempo reale (temperatura, traffico, rumore, consumo energetico) e li inviano al cloud\n\nI sensori IoT sono il 'sistema nervoso' della smart city: raccolgono i dati che permettono di ottimizzare i servizi urbani.",
+    "front": "Quante sono le fasi del ciclo artificiale dell'acqua urbana?",
+    "back": "Sei: captazione, potabilizzazione, distribuzione, uso, fognatura, depurazione e restituzione\n\nIl ciclo artificiale dell'acqua urbana ha sei fasi: 1) Captazione (da fiumi, laghi, falde); 2) Potabilizzazione (filtrazione, sedimentazione, disinfezione); 3) Distribuzione (acquedotto, torri d'acqua); 4) Uso (domestico, industriale); 5) Fognatura e raccolta (reti separate); 6) Depurazione e restituzione all'ambiente.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un 'digital twin' urbano?",
-    "back": "Una replica digitale in tempo reale della città che simula traffico, flussi energetici e scenari futuri per supportare le decisioni\n\nI digital twin urbani permettono di simulare l'impatto di decisioni (es. chiudere una strada) prima di attuarle realmente.",
+    "front": "Qual è la percentuale media di perdite nella rete idrica italiana?",
+    "back": "Il 42% dell'acqua immessa in rete\n\nL'Italia perde mediamente il 42% dell'acqua immessa in rete (Germania: 6%, media UE: 23%). Le cause: tubature vecchie (molte degli anni '50-'60), rotture non rilevate tempestivamente, allacci abusivi. Ogni anno si disperdono miliardi di m³ di acqua già potabilizzata e pompata.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'smart lighting' (illuminazione intelligente)?",
-    "back": "Sistemi di illuminazione che si adattano alla presenza di persone, condizioni meteo e orario, riducendo i consumi del 50-80%\n\nIl smart lighting usa sensori di presenza e luminosità: si accende solo quando serve e regola l'intensità, abbattendo consumi ed emissioni.",
+    "front": "Perché l'acqua del rubinetto a volte ha sapore o odore di cloro?",
+    "back": "Perché il cloro reagisce con sostanze organiche dell'acqua formando cloramine, che evaporano lasciando l'acqua in un bicchiere aperto per 30 minuti\n\nIl 'sapore di piscina' dell'acqua del rubinetto non viene dal cloro libero (0,2-0,5 mg/L, innocuo) ma dalle cloramine: composti che si formano quando il cloro reagisce con azoto organico presente nell'acqua. Lasciare l'acqua in un bicchiere aperto per 30 minuti fa evaporare le cloramine e il sapore scompare.",
     "tag": "Base"
   },
   {
-    "front": "Come l'AI ottimizza il traffico urbano?",
-    "back": "Analizzando in tempo reale i flussi veicolari da sensori e telecamere per sincronizzare i semafori e ridurre code e tempi di sosta\n\nSistemi come SCATS o Surtrac usano AI per 'onda verde' intelligente e adattiva: riducono le code del 25-40% senza nuove infrastrutture.",
+    "front": "Cos'è il 'principio di invarianza idraulica' per le nuove costruzioni?",
+    "back": "Il principio che ogni nuova costruzione non deve aumentare il deflusso di acque piovane rispetto alla situazione preesistente\n\nIl principio di invarianza idraulica impone che ogni nuova costruzione non aumenti il deflusso di acque piovane rispetto alla situazione prima della costruzione. Se prima c'era un prato (50-60% di infiltrazione), dopo la costruzione l'acqua che esce deve essere uguale. Si realizza con vasche di laminazione, pavimentazioni permeabili, tetti verdi.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quanti litri d'acqua consuma mediamente un italiano al giorno?",
+    "back": "Circa 220 litri al giorno\n\nIn Italia il consumo medio domestico è di circa 220 litri per persona al giorno. Include: bere/cucinare (5-10 L), igiene personale (80-100 L), WC (40-50 L), lavatrice (40-60 L), lavastoviglie (15-20 L), altro. Molto più dei 50-100 L/giorno dei paesi in via di sviluppo.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quale percentuale dell'acqua dolce presente sulla Terra è effettivamente disponibile per l'uso umano?",
+    "back": "Il 2,5%\n\nSolo il 2,5% dell'acqua sulla Terra è dolce. Di questo 2,5%, circa il 70% è intrappolato nei ghiacciai e nelle nevi perenni; il 30% è in falde sotterranee (spesso profonde). Solo l'1% circa è facilmente accessibile (fiumi, laghi, falde superficiali). L'acqua dolce è una risorsa preziosa e limitata.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché la disinfezione UV dell'acqua potabile non sostituisce completamente la clorazione nelle reti?",
+    "back": "Perché i raggi UV non garantiscono protezione lungo tutta la rete dopo l'impianto: il cloro rimane attivo nell'acqua mentre gli UV no\n\nI raggi UV distruggono il DNA dei microrganismi nell'impianto di trattamento, ma non lasciano residui nell'acqua. Il cloro invece rimane attivo nell'acqua durante il percorso in rete (effetto residuo), proteggendo contro eventuali contaminazioni lungo i km di tubature. Per questo i due metodi si usano spesso in combinazione.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa si intende per 'open data' nel contesto della smart city?",
-    "back": "Dati pubblici resi liberamente accessibili a cittadini, ricercatori e imprese per incentivare innovazione e trasparenza\n\nGli open data urbani (orari bus, qualità dell'aria, rifiuti) permettono di creare app e servizi senza doverli costruire da zero.",
+    "front": "Il Mar d'Aral si è quasi completamente prosciugato. Qual è la causa principale descritta nel testo?",
+    "back": "L'URSS ha deviato i due fiumi tributari per irrigare i campi di cotone, privando il lago del suo rifornimento d'acqua\n\nIl Mar d'Aral (un tempo quarto lago del mondo) si è prosciugato perché l'URSS ha deviato i due fiumi tributari (Amu Darya e Syr Darya) per irrigare enormi campi di cotone in Kazakistan e Uzbekistan. Il lago, privato del suo rifornimento naturale, ha perso il 90% del suo volume in pochi decenni. È uno dei peggiori disastri ambientali del XX secolo.",
     "tag": "Intermedio"
   },
   {
-    "front": "Quali rischi porta la concentrazione di dati nella smart city?",
-    "back": "Rischi per la privacy dei cittadini, possibili violazioni di sicurezza dei dati, e rischio di sorveglianza di massa\n\nLa smart city richiede un equilibrio tra efficienza e privacy. La governance dei dati urbani è una delle questioni etiche più urgenti del nostro tempo.",
+    "front": "Come funzionano le pavimentazioni permeabili per rispettare il principio di invarianza idraulica?",
+    "back": "Permettono all'acqua piovana di infiltrarsi nel sottosuolo attraverso la struttura porosa, riducendo il deflusso superficiale\n\nLe pavimentazioni permeabili (blocchi drenanti, asfalto poroso, ghiaia stabilizzata) permettono all'acqua piovana di filtrare nel sottosuolo invece di scorrere in superficie. Sono una delle misure di invarianza idraulica: mantengono il comportamento idrologico del terreno simile a quello naturale (prato), riducendo il rischio di allagamenti urbani.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'città dei 15 minuti' e come si collega alla smart city?",
-    "back": "Un modello urbano dove tutti i servizi essenziali sono raggiungibili a piedi o in bici entro 15 minuti da casa: la smart city ne facilita la realizzazione con analisi dei dati\n\nLa città dei 15 minuti (C. Moreno) riduce i km percorsi quotidianamente. I dati urbani permettono di identificare i servizi mancanti e pianificare la loro localizzazione.",
+    "front": "Cape Town nel 2018 ha quasi raggiunto il 'Day Zero', il giorno senza più acqua. Qual è stata la causa principale?",
+    "back": "Tre anni consecutivi di siccità eccezionale in combinazione con la crescita demografica che aveva superato le infrastrutture idriche\n\nCape Town ha quasi raggiunto il 'Day Zero' nel 2018 per due cause combinate: 1) tre anni consecutivi di siccità eccezionale che hanno svuotato i sei bacini idrici della città; 2) crescita demografica (da 3 a 4 milioni in pochi anni) che aveva superato la capacità delle infrastrutture idriche. Il razionamento a 50 L/persona/giorno ha evitato il Day Zero.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "L'impronta idrica di 1 kg di carne bovina è circa 15.000 litri. Cosa include questo calcolo?",
+    "back": "Tutta l'acqua usata in ogni fase della produzione: l'acqua per coltivare il cibo dell'animale, per abbeverarlo e per le strutture di allevamento\n\nL'impronta idrica include tutta l'acqua usata in ogni fase della produzione (water footprint). Per la carne bovina: ~90% per coltivare il mangime vegetale (cereali, soia), ~5% per abbeverare la mucca, ~5% per strutture e lavorazione. La parte della 'bere diretto' è minima rispetto al mangime.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché le reti fognarie separate per acque reflue e acque meteoriche sono preferibili alle reti combinate?",
+    "back": "Perché evitano di sovraccaricare il depuratore durante i temporali con enormi volumi di acqua piovana diluita\n\nNelle reti combinate, i temporali intensi portano enormi volumi di acqua piovana nei depuratori: questi si saturano e scaricano le acque miste (reflue + piovane) non completamente trattate nei fiumi. Le reti separate mandano le acque reflue al depuratore (flusso controllato) e le piovane direttamente ai corsi d'acqua, riducendo il rischio di scarichi non trattati.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "La crisi del Po nell'estate 2022 ha mostrato che l'Italia non è 'povera d'acqua' in termini assoluti ma ha problemi specifici. Quali?",
+    "back": "Distribuzione temporale squilibrata delle piogge (siccità estive, piogge intense autunnali) e infrastrutture insufficienti di raccolta e stoccaggio\n\nL'Italia ha precipitazioni medie di 800-900 mm/anno (non un paese arido) ma ha due problemi: 1) distribuzione temporale squilibrata (secco d'estate, abbondante in primavera/autunno); 2) solo il 13% delle precipitazioni viene raccolto in bacini artificiali (Spagna: 40%). Questo, combinato con le perdite in rete (42%), crea crisi idriche come quella del Po nel 2022.",
     "tag": "Avanzato"
   },
   {
-    "front": "Come si concilia la smart city con i principi di 'giustizia digitale'?",
-    "back": "Garantendo che le tecnologie smart non escludano anziani, persone a basso reddito o con bassa alfabetizzazione digitale: la smart city deve essere per tutti\n\nIl rischio del 'digital divide' urbano è reale. Una smart city che ottimizza i servizi solo per chi ha smartphone non è equa.",
+    "front": "Un comune italiano vuole costruire un nuovo quartiere residenziale in un'area precedentemente verde. Quali misure di invarianza idraulica deve prevedere?",
+    "back": "Combinare pavimentazioni permeabili, vasche di laminazione sotterranee, tetti verdi e giardini della pioggia per mantenere il deflusso pre-costruzione\n\nL'invarianza idraulica si realizza con una combinazione di misure: 1) pavimentazioni permeabili (parcheggi, vialetti); 2) vasche di laminazione sotterranee che trattengono l'acqua durante i picchi di pioggia e la rilasciano lentamente; 3) tetti verdi che trattengono fino all'80% dell'acqua; 4) giardini della pioggia (rain gardens) che raccolgono il deflusso. L'obiettivo: il quartiere deve 'comportarsi' idrologicamente come il verde preesistente.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il concetto di 'sovranità dei dati' nella governance urbana?",
-    "back": "Il principio che i dati generati dai cittadini appartengono alla collettività e devono essere gestiti nell'interesse pubblico, non ceduti a piattaforme private\n\nLa cessione dei dati urbani a GAFAM (Google, Amazon ecc.) in cambio di servizi smart è una delle questioni di governance più critiche per le città del futuro.",
+    "front": "Come calcoli l'impronta idrica di un pasto con 150g di carne bovina (15.000 L/kg), 80g di pasta (1.500 L/kg) e 100g di insalata (130 L/kg)?",
+    "back": "2.250 + 120 + 13 = 2.383 litri\n\nImpronta idrica: carne (0,15 kg × 15.000) = 2.250 L + pasta (0,08 kg × 1.500) = 120 L + insalata (0,10 kg × 130) = 13 L = totale 2.383 litri. La carne bovina (150g) rappresenta il 94% dell'impronta idrica dell'intero pasto. Confronta con un pasto vegetariano equivalente: pasta (120L) + verdure (20L) = ~140 litri. Differenza: 17 volte.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un ingegnere idraulico deve scegliere tra clorazione e UV per trattare l'acqua di un piccolo acquedotto. Quali fattori determinano la scelta?",
+    "back": "La lunghezza della rete di distribuzione: per reti lunghe il cloro è necessario per l'effetto residuo; per impianti chiusi piccoli gli UV possono essere sufficienti\n\nIl fattore chiave: il cloro mantiene l'effetto antimicrobico lungo tutta la rete di distribuzione (effetto residuo). Gli UV agiscono solo nell'impianto. Per acquedotti con reti lunghe (km), il cloro è necessario. Per sistemi chiusi di piccola dimensione (edificio, piccola comunità), gli UV possono essere sufficienti — e non lasciano sapore.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "L'Italia perde il 42% dell'acqua in rete. Se rinnovasse le tubature riducendo le perdite al 15% (standard tedesco), quanta acqua risparmierebbe su 10 miliardi di m³ immessi annualmente?",
+    "back": "Risparmierebbe 2,7 miliardi di m³, che è il 27% dei 10 miliardi immessi\n\nPerdite attuali: 42% × 10 mld m³ = 4,2 mld. Perdite target (15%): 15% × 10 mld = 1,5 mld. Risparmio: 4,2 - 1,5 = 2,7 miliardi di m³ all'anno. Per riferimento: 2,7 miliardi di m³ è più del consumo annuo di acqua dell'intera Lombardia. Acqua già potabilizzata, già pompata, che invece di disperdersi nelle tubature arriverebbe agli utenti.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché il ciclo naturale dell'acqua e quello artificiale urbano spesso entrano in conflitto?",
+    "back": "Perché le superfici impermeabili delle città alterano il ciclo naturale (riducendo l'infiltrazione, aumentando il deflusso) e le estrazioni di falda possono superare la capacità di ricarica naturale\n\nIl ciclo artificiale urbano entra in conflitto con quello naturale su due fronti principali: 1) impermeabilizzazione (asfalto, cemento riduce l'infiltrazione, aumenta il deflusso superficiale e diminuisce la ricarica delle falde); 2) estrazioni (prelievi dalle falde che in certi periodi superano la ricarica naturale, abbassando progressivamente la falda). La città altera la geometria idrologica del territorio.",
     "tag": "Avanzato"
   }
 ]

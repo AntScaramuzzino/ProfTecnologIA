@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è un sistema operativo?",
-    "back": "Il software che gestisce le risorse hardware del computer e permette alle applicazioni di funzionare\n\nIl SO è l'intermediario tra hardware e software: gestisce CPU, memoria, storage e periferiche per tutte le applicazioni.",
+    "front": "Qual è la regola principale per organizzare i file in cartelle, secondo il principio 'un posto per ogni cosa'?",
+    "back": "Ogni file deve avere un solo posto in cui trovarlo, prevedibile e sempre lo stesso\n\nIl principio fondamentale è 'un posto per ogni cosa': ogni file ha un solo posto prevedibile in cui cercarlo. Se metti le cose sempre nello stesso posto, non devi pensarci. Il testo paragona l'organizzazione dei file a una biblioteca: con i libri ordinati trovi quello che cerchi in 30 secondi; ammucchiati a caso, non lo trovi mai.",
     "tag": "Base"
   },
   {
-    "front": "Cosa fa il 'processo' in un sistema operativo?",
-    "back": "È un programma in esecuzione con le risorse (memoria, CPU) allocate dal sistema operativo\n\nOgni app aperta è un processo. Il task manager mostra tutti i processi in esecuzione con il loro utilizzo di CPU e RAM.",
+    "front": "Come si chiama la convenzione di naming professionale per i file e qual è il formato raccomandato?",
+    "back": "[ANNO-MESE-GIORNO]_[materia]_[argomento]_[versione opzionale] — es. 2026-03-15_tecnologia_relazione-energia_v01.docx\n\nLa convenzione professionale è [ANNO-MESE-GIORNO]_[materia]_[argomento]_[versione]. La data va per prima nel formato ANNO-MESE-GIORNO perché i file si ordinano automaticamente in ordine cronologico. Il trattino basso separa i blocchi di informazione; il trattino normale lega le parole dello stesso blocco.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la 'memoria virtuale'?",
-    "back": "Una tecnica che usa parte del disco come estensione della RAM quando questa è piena: rallenta il sistema ma evita crash\n\nQuando la RAM è esaurita, il SO sposta temporaneamente i dati meno usati sul disco (file di paging). Il disco è molto più lento: il sistema rallenta visibilmente.",
+    "front": "Qual è la 'regola 3-2-1' per i backup?",
+    "back": "3 copie del file, su 2 supporti diversi, con 1 copia fuori sede (es. cloud)\n\nLa regola 3-2-1 è lo standard professionale: 3 copie del file (originale + 2 backup), 2 supporti fisicamente diversi (disco interno + disco esterno), 1 copia fuori sede (cloud). Per uno studente: file sul computer + chiavetta USB + Google Drive è una versione praticabile.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è lo 'scheduling' della CPU?",
-    "back": "L'algoritmo con cui il SO decide quale processo ha accesso alla CPU in ogni istante, garantendo equità e reattività\n\nIl SO gestisce decine di processi con una sola CPU usando lo scheduling: alterna velocemente tra processi dando l'illusione di parallelismo.",
+    "front": "Perché i cookie di terze parti sono diversi dai cookie tecnici necessari?",
+    "back": "I cookie tecnici permettono al sito di funzionare (login, carrello); quelli di terze parti seguono la navigazione su più siti per costruire un profilo pubblicitario\n\nI cookie tecnici (necessari) permettono al sito di funzionare: ricordano che sei loggato, cosa hai nel carrello, le tue preferenze. I cookie di terze parti provengono da aziende pubblicitarie diverse dal sito che visiti e tracciano il comportamento su molti siti per costruire un profilo pubblicitario.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché è meglio fare il backup in modo automatico invece che manuale?",
+    "back": "Perché se devi ricordarti manualmente di farlo, lo dimenticherai esattamente la sera prima che il computer si rompa\n\nIl backup deve essere automatico perché l'essere umano dimentica. Time Machine (Mac), Cronologia file (Windows) e la sincronizzazione automatica su Drive o OneDrive lavorano in background senza richiedere azioni. La configurazione richiede 20 minuti una volta sola. Poi funziona da sola.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché non si dovrebbe usare 'definitivo', 'finale' o 'usare questo' nel nome di un file?",
+    "back": "Perché tra sei mesi non ricorderai 'finale' rispetto a cosa, e accumulerai versioni come 'relazione DEFINITIVA vera2 usare questa'\n\nLa 'final syndrome' è talmente comune da avere un nome: si accumula una serie di file 'relazione DEFINITIVA vera2 usare questa'. La soluzione è usare sempre numeri di versione (_v01, _v02, _v03). Quando il file è davvero finito, si rimuove il numero di versione o si aggiunge _CONSEGNATO con la data.",
+    "tag": "Base"
+  },
+  {
+    "front": "Marco, nel caso studio, impiega 15-20 minuti per sessione a cercare file. Qual è l'impatto concreto di questo problema in un anno scolastico?",
+    "back": "In un anno scolastico con 200 giorni di studio, si perdono circa 50-66 ore solo cercando file — quasi 2 settimane di lavoro\n\nIl testo confronta Giulia (15-20 minuti per sessione a cercare file, nessun sistema, nessun backup) con Marco Ferretti (trova un file in 15 secondi, backup automatico). Le differenze concrete: tempo perso (ore in un anno), stress (ansia da consegna), sicurezza dei dati (rischio perdita totale). Un sistema organizzato è un investimento che si ripaga immediatamente.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è un 'driver'?",
-    "back": "Un software che permette al sistema operativo di comunicare con una periferica hardware specifica (stampante, scheda grafica, webcam)\n\nSenza driver la scheda grafica è 'muta'. I driver traducono i comandi del SO nel linguaggio specifico di ogni periferica.",
+    "front": "Perché la struttura a cartelle del file system è matematicamente un 'albero'?",
+    "back": "Perché è una struttura gerarchica in cui ogni cartella ha un solo nodo padre e può avere zero o più figli (sottocartelle o file)\n\nIl file system è un albero matematico: ogni cartella (nodo) ha un solo nodo padre e può avere zero o più nodi figli (sottocartelle o file). La profondità si misura dal nodo radice: 'Documenti/Scuola/Tecnologia' ha profondità 2. Gli algoritmi di ricerca nel file system usano esplorazione DFS (depth-first) o BFS (breadth-first) — gli stessi algoritmi per esplorare grafi matematici.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'file system' e perché esistono diversi standard?",
-    "back": "La struttura logica che organizza i dati sul disco (NTFS per Windows, ext4 per Linux, APFS per Mac): influenza velocità, sicurezza e dimensione massima dei file\n\nOgni file system ha vantaggi e limiti. FAT32 (vecchio USB) non supporta file >4GB. NTFS supporta permessi e cifratura.",
+    "front": "La regola pratica suggerita dice di non creare cartelle nidificate oltre il terzo livello. Perché?",
+    "back": "Perché se devi cliccare più di tre volte per arrivare a un file, la struttura è troppo profonda e difficile da navigare\n\nIl limite del terzo livello (es. Documenti → Scuola → Tecnologia) è una regola pratica per la navigabilità: più di 3 click per arrivare a un file rende la struttura troppo profonda per essere usata intuitivamente. Aggiungere sottocartelle per ogni singolo compito dentro Tecnologia è eccessivo.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il kernel e qual è la differenza tra modalità kernel e modalità utente?",
-    "back": "Il kernel è il nucleo del SO con accesso diretto all'hardware. In modalità kernel il codice ha privilegi completi; in modalità utente le app sono isolate e non possono danneggiare il sistema\n\nLa separazione kernel/utente è un meccanismo di sicurezza: un'app in crash in modalità utente non porta giù l'intero sistema.",
+    "front": "Cosa dice il testo sulla modalità privata del browser riguardo a cosa salva e cosa non salva?",
+    "back": "Non salva cronologia, cookie e password sul dispositivo; ma i file scaricati esistono sul disco e la navigazione è visibile al provider internet\n\nLa modalità privata (Ctrl+Shift+N in Chrome, Ctrl+Shift+P in Firefox) non salva cronologia, cookie e password sul dispositivo. I file scaricati però esistono sul disco. La navigazione NON è nascosta al provider internet (ISP), alla rete scolastica o ai siti visitati che vedono il tuo IP.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché scaricare software da siti di 'download gratuiti' che offrono versioni 'craccate' è rischioso?",
+    "back": "Perché nel 90% dei casi il software contiene malware che si installa silenziosamente insieme al programma voluto\n\nIl testo avverte: 'Non scaricare mai programmi da siti di download gratuiti che offrono versioni craccate di software a pagamento: nel 90% dei casi il programma contiene malware che si installa silenziosamente.' La fonte sicura è sempre il sito ufficiale del produttore o l'app store del sistema operativo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché gli aggiornamenti del software sono importanti per la sicurezza, non solo per le nuove funzionalità?",
+    "back": "Perché la maggior parte degli aggiornamenti corregge vulnerabilità di sicurezza che i criminali informatici possono sfruttare\n\nLa maggior parte degli aggiornamenti software corregge vulnerabilità di sicurezza: falle che i criminali informatici possono usare per entrare nel sistema. Il sistema operativo, il browser e l'antivirus sono i più critici. Il testo usa la metafora efficace: rimandare gli aggiornamenti è come lasciare una finestra rotta — prima o poi qualcuno ci entra.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo descrive il 'controllo di versione' (Git) come la soluzione professionale alla gestione dei file. Quale problema specifico risolve rispetto ai nomi come 'relazione_finale'?",
+    "back": "Git registra ogni modifica a ogni file con chi l'ha fatta e quando, permettendo di tornare a qualsiasi versione precedente senza moltiplicare file con nomi diversi\n\nGit risolve la 'final syndrome' in modo elegante: invece di moltiplicare file con nomi diversi (relazione_v01, relazione_v02...), Git mantiene un database di tutte le modifiche. Si può tornare a qualsiasi versione precedente, confrontare versioni, capire chi ha cambiato cosa e quando. Google Docs ha una versione semplificata integrata (Cronologia versioni).",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'virtualizzazione' e come si usa?",
-    "back": "La tecnologia che permette di far girare sistemi operativi o ambienti isolati (macchine virtuali) dentro un sistema fisico: usata in cloud, sviluppo e sicurezza\n\nVMware, VirtualBox e i container Docker usano la virtualizzazione. I cloud provider (AWS, Azure) dividono server fisici in centinaia di macchine virtuali.",
+    "front": "Un gruppo di quattro studenti lavora su un documento condiviso. Riccardo usa 'relazione.docx' sul suo computer, Sofia usa 'relazione_mia_versione.docx' sul suo. Qual è il problema fondamentale e come si risolve?",
+    "back": "Il problema è la mancanza di un sistema condiviso: lavorare su copie locali divergenti crea versioni incompatibili. La soluzione è un documento condiviso su cloud (Google Docs) con accesso simultaneo\n\nIl scenario del testo mostra il classico problema del lavoro asincrono su copie locali: Riccardo e Sofia lavorano su versioni separate, Marco aggiunge sezioni a una delle due, e alla fine esistono sei versioni incompatibili. La soluzione è un documento cloud condiviso (Google Docs) dove tutti lavorano sullo stesso file in tempo reale.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è un 'sistema operativo real-time' (RTOS) e dove si usa?",
-    "back": "Un sistema operativo progettato per rispondere a eventi entro tempi garantiti (deterministici): usato in controllo industriale, avionica, dispositivi medici e veicoli autonomi\n\nIn un freno ABS il sistema deve reagire in millisecondi garantiti. Un normale SO come Windows non può garantire tempi di risposta: serve un RTOS.",
+    "front": "Gli SSD hanno una caratteristica fisica importante che li distingue dagli HDD, ma anche un limite. Qual è?",
+    "back": "Gli SSD non hanno parti meccaniche e sono più veloci, ma ogni cella può essere scritta e cancellata un numero limitato di volte (1.000-10.000 cicli)\n\nGli SSD (Solid State Drive) non hanno parti meccaniche mobili come gli HDD: memorizzano i dati come cariche elettriche in celle di silicio. Vantaggi: 5-10 volte più veloci, più silenziosi, resistono meglio alle cadute. Limite: ogni cella può essere scritta e cancellata un numero limitato di volte (1.000-10.000 cicli) prima di degradarsi.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Quando condividi un file su Google Drive con 'chiunque abbia il link', quali rischi concreti corri che non avresti condividendo con persone specifiche?",
+    "back": "Il file diventa accessibile a chiunque ottenga quel link, anche tramite forward accidentale o condivisione non autorizzata da parte di chi lo ha ricevuto\n\nUn link 'chiunque abbia il link' può essere inoltrato involontariamente o deliberatamente a persone non previste. Il testo raccomanda: 'Per i compiti scolastici, preferisci sempre la condivisione con persone specifiche (tramite email) piuttosto che il link pubblico.' La condivisione specifica dà il controllo su chi accede al file.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "La struttura a cartelle suggerita include una cartella 'Download-da-ordinare' come punto di transito. Perché questa è una soluzione efficace per la gestione dei file scaricati?",
+    "back": "Perché separa il flusso di download (caotico per natura) dall'archivio organizzato, e una pulizia settimanale previene l'accumulo di centinaia di file non catalogati\n\nLa cartella 'Download-da-ordinare' è un punto di transito: i file scaricati ci vanno temporaneamente, poi ogni settimana si spostano nelle cartelle giuste o si cancellano. Senza questo filtro, il temporaneo diventa permanente: la cartella Download di Giulia aveva 847 file non ordinati, mai svuotata.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il concetto di 'costo totale di possesso' è implicito nel caso studio del professionista Marco Ferretti. Cosa include questo concetto oltre al prezzo di acquisto?",
+    "back": "Il tempo perso cercando file (ore in un anno), il costo dello stress, il rischio di perdita di dati importanti, e il costo potenziale di recupero o ricostruzione del lavoro perso\n\nIl testo quantifica le differenze concrete tra un sistema organizzato (Marco) e uno disorganizzato (Giulia): tempo perso (15-20 min per sessione × 200 giorni = ore), stress da consegna, rischio di perdita totale dei dati. Il professionista che investe 20 minuti per configurare un sistema recupera quel tempo già nella prima settimana.",
     "tag": "Avanzato"
   }
 ]

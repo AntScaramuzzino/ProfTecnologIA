@@ -1,47 +1,92 @@
 [
   {
-    "front": "La scala 1:50 significa...",
-    "back": "1 cm nel disegno corrisponde a 50 cm nella realtà\n\n1:50 → ogni centimetro sul foglio = 50 cm nella realtà. Formula: misura foglio = misura reale ÷ denominatore.",
+    "front": "Cosa significa la scala 1:50 in un disegno tecnico?",
+    "back": "Ogni 50 cm reali corrispondono 1 cm sul foglio: l'oggetto reale è 50 volte più grande di come appare nel disegno\n\nScala 1:50 è una scala di riduzione: ogni 50 cm reali = 1 cm sul foglio. 'Il numero dopo i due punti dice quante volte l'oggetto è più grande di come lo vedi sul disegno.' Formula: misura sul disegno = misura reale ÷ 50. Usata tipicamente per stanze e piccoli edifici.",
     "tag": "Base"
   },
   {
-    "front": "Una porta è larga 90 cm. In scala 1:20, quanto misura nel disegno?",
-    "back": "Sia b che c sono corretti\n\n90 ÷ 20 = 4.5 cm = 45 mm. Entrambe le misure sono corrette (stessa misura in unità diverse).",
+    "front": "Una finestra misura 2,4 cm sul disegno a scala 1:50. Quanto misura nella realtà?",
+    "back": "120 cm (1,2 m)\n\nFormula per trovare la misura reale: misura reale = misura sul disegno × n (dove n è il denominatore della scala). Con scala 1:50: 2,4 cm × 50 = 120 cm = 1,2 m. La misura reale è sempre più grande della misura sul disegno in una scala di riduzione.",
     "tag": "Base"
   },
   {
-    "front": "Cosa indicano le frecce alle estremità delle linee di quota?",
-    "back": "I limiti dell'elemento quotato: la misura riportata al centro è sempre la dimensione reale dell'oggetto\n\nLe linee di quota con frecce e numero al centro sono il linguaggio universale per comunicare le dimensioni reali indipendentemente dalla scala del disegno.",
+    "front": "Cosa si intende per 'scala 1:1'?",
+    "back": "La dimensione sul disegno è uguale alla dimensione reale dell'oggetto\n\nScala 1:1 (scala naturale): dimensione sul disegno = dimensione reale. L'oggetto è rappresentato con le sue dimensioni vere. Usata per oggetti di dimensione 'da foglio': un raccordo idraulico, una placca elettrica, un documento d'identità. È il punto di equilibrio tra scale di riduzione (1:2, 1:5...) e scale di ingrandimento (2:1, 5:1...).",
     "tag": "Base"
   },
   {
-    "front": "Perché le quote in un disegno tecnico indicano SEMPRE le misure reali?",
-    "back": "Perché chi legge il disegno in produzione deve sapere le dimensioni reali senza fare calcoli: è una convenzione universale\n\nUn operaio in officina non deve calcolare: legge 90mm e taglia 90mm. La quota è sempre la realtà, non il disegno.",
+    "front": "Perché il formato A4 è il risultato di dividere a metà il formato A3?",
+    "back": "Perché la norma ISO 216 prevede che ogni formato sia ottenuto dimezzando il lato lungo del precedente, mantenendo costante il rapporto tra i lati (√2 ≈ 1,414)\n\nLa norma ISO 216 definisce i formati serie A con una proprietà matematica elegante: il rapporto lato lungo / lato corto = √2 ≈ 1,414. Dimezzando il lato lungo si ottiene il formato inferiore con lo stesso rapporto. Questa proprietà garantisce che i disegni si scalino proporzionalmente tra formati — fondamentale per il disegno tecnico.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa si intende per scala di ingrandimento 5:1?",
+    "back": "Il disegno è 5 volte più grande dell'oggetto reale — usata per componenti molto piccoli come ingranaggi o chip\n\nLe scale di ingrandimento si usano quando l'oggetto è troppo piccolo. Scala 5:1: ogni cm reale = 5 cm sul disegno. Il disegno è 5 volte più grande dell'originale. Usata per componenti meccanici di piccole dimensioni (ingranaggi, viti, chip elettronici). 'Il numero prima dei due punti dice quante volte più grande è il disegno rispetto all'oggetto reale.'",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la scala standard più adatta per disegnare un appartamento di 10 metri × 8 metri su un foglio A3 (297×420 mm)?",
+    "back": "Scala 1:100 (1 m reale = 1 cm sul foglio)\n\nCon scala 1:100: 10 m = 10 cm e 8 m = 8 cm sul foglio. Il disegno occupa 10×8 cm su un foglio A3 (297×420 mm). È la scala standard per piante di appartamenti. Il testo spiega il ragionamento: 'calcola il rapporto tra la dimensione massima dell'oggetto e lo spazio disponibile sul foglio, poi scegli la scala standard più vicina.'",
+    "tag": "Base"
+  },
+  {
+    "front": "Un bullone è lungo 18 mm nella realtà e deve essere disegnato a scala 5:1. Quanto misura sul disegno?",
+    "back": "90 mm (9 cm)\n\nCon le scale di ingrandimento (n:1), la misura sul disegno = misura reale × n. Con scala 5:1: 18 mm × 5 = 90 mm = 9 cm. Il disegno è 5 volte più grande dell'oggetto reale. Il testo usa questo esempio esatto nell'Esempio 3 della sezione 'Come si calcola la scala'.",
     "tag": "Intermedio"
   },
   {
-    "front": "Quale scala useresti per la planimetria di un edificio di 20m × 15m su un foglio A4?",
-    "back": "1:200 o 1:250\n\n1:200 → 20m = 10cm; 15m = 7.5cm: entra su A4. 1:250 → 20m = 8cm; 15m = 6cm: anche meglio.",
+    "front": "Perché il formato A4 ha lato lungo/lato corto = 29,7/21,0 = √2 ≈ 1,414? Qual è la proprietà pratica di questo rapporto?",
+    "back": "Dimezzando il lato lungo di A4 si ottiene A5 con lo stesso rapporto tra i lati — e raddoppiando A4 si ottiene A3 con lo stesso rapporto. I disegni si scalano proporzionalmente tra formati\n\nIl rapporto √2 ≈ 1,414 è l'unico rapporto per cui dimezzare un rettangolo conserva le proporzioni. Se lato lungo / lato corto = √2, allora dopo il dimezzamento il lato lungo diventa il vecchio lato corto, e il nuovo lato corto è il vecchio lato lungo / 2 = (lato corto × √2) / 2 = lato corto / √2. Il rapporto rimane √2. Utilità pratica: scala e riproduci i disegni tra formati senza distorsioni.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'scala di ingrandimento' e quando si usa?",
-    "back": "Una scala con il numeratore maggiore del denominatore: es. 5:1 → 1cm reale = 5cm nel disegno\n\nScale di ingrandimento (5:1, 10:1, 20:1) si usano per componenti minuscoli (microchip, viti, gioielli) che altrimenti sarebbero invisibili nel disegno.",
+    "front": "Il collegamento STEM con la matematica descrive la scala come 'proporzionalità diretta'. Cosa significa e come si traduce in un grafico?",
+    "back": "Il rapporto tra misura sul disegno e misura reale è costante (= 1/n per la scala 1:n). Nel grafico è una retta che passa per l'origine: inclinazione proporzionale a 1/n\n\nLa scala è proporzionalità diretta: il rapporto misura_disegno / misura_reale = 1/n è costante per qualsiasi misura. Nel grafico (asse x = misura reale, asse y = misura sul disegno) è una retta che passa per l'origine con inclinazione 1/n. Raddoppiando la misura reale, raddoppia anche quella sul disegno — il rapporto rimane 1/n.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'tolleranza' in una quota e perché è fondamentale in produzione?",
-    "back": "L'intervallo di variazione ammissibile della dimensione reale: es. 50±0.1mm significa che la dimensione può variare tra 49.9 e 50.1mm\n\nTolleranza stretta = lavorazione costosa. Tolleranza larga = produzione economica ma accoppiamento impreciso. Scegliere la tolleranza giusta è un'arte ingegneristica.",
+    "front": "Per il compito AGISCI si deve disegnare l'aula scolastica (dimensioni stimate 8×6 m) su un foglio A4. Come si sceglie la scala adatta?",
+    "back": "Si calcola: spazio utile A4 (circa 25 cm con margini) ÷ dimensione massima aula (800 cm) = 1/32. La scala standard più vicina è 1:50 (800 ÷ 50 = 16 cm — entra comodamente)\n\nIl procedimento per scegliere la scala: (1) misura massima = 800 cm; (2) spazio utile sul foglio A4 con margini ≈ 25 cm; (3) rapporto = 800 ÷ 25 = 32 → denominatore minimo; (4) scala standard più vicina con denominatore ≥ 32 = 1:50. Con 1:50: 8 m → 16 cm; 6 m → 12 cm — entra comodamente con spazio per quote e cartiglio.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il collegamento con MC-DIS-1-01 dice che la scala è 'la continuazione della proporzionalità imparata nelle costruzioni geometriche'. Come si collega il teorema di Talete con le scale?",
+    "back": "Il teorema di Talete stabilisce che rette parallele dividono i segmenti in parti proporzionali — la stessa proporzionalità diretta che governa le scale (misura_disegno / misura_reale = costante)\n\nLa proporzionalità diretta è il filo matematico comune: il teorema di Talete (rette parallele dividono segmenti proporzionalmente) e le scale di rappresentazione (misura_disegno / misura_reale = costante 1/n) usano la stessa struttura. In entrambi i casi c'è un rapporto costante tra due quantità. Studiare il teorema di Talete in geometria prepara alla comprensione matematica delle scale.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Per il compito AGISCI si deve stimare la scala dell'astuccio (22 cm) da inserire su metà foglio A4. Quale stima è corretta?",
+    "back": "Scala 1:2, perché l'astuccio di 22 cm diventa 11 cm sul disegno — lasciando spazio per due o tre viste su metà foglio A4\n\nIl testo usa l'esempio dell'astuccio: 22 cm in scala 1:1 occuperebbe quasi tutta la lunghezza di un A4 (29,7 cm), senza spazio per l'altezza e la larghezza. Con scala 1:2 l'astuccio diventa 11 cm — la metà — lasciando spazio per 2-3 viste che mostrano lunghezza, altezza e larghezza. La scelta della scala è sempre un equilibrio tra leggibilità e spazio disponibile.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un ingegnere riceve un disegno con indicazione 'scala 1:200' ma sospetta che la scala sia sbagliata. Misura sul disegno una porta che conosce (è standard italiana, 210 cm). La porta misura 0,8 cm sul disegno. La scala è corretta?",
+    "back": "No, la scala è sbagliata. Con scala 1:200, la porta dovrebbe misurare 210 ÷ 200 = 1,05 cm. Se misura 0,8 cm, la scala reale è 210 ÷ 0,8 = 1:262,5 — non è una scala standard\n\nMetodo di verifica: scala reale = misura reale ÷ misura sul disegno = 210 cm ÷ 0,8 cm = 262,5. Quindi la scala reale è 1:262,5 — non una scala standard. Con scala 1:200, la porta dovrebbe misurare 210 ÷ 200 = 1,05 cm. La discrepanza (1,05 cm vs 0,8 cm) è del 24% — inaccettabile in disegno tecnico. Il disegno ha una scala errata o il foglio è stato ridotto in fotocopia.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cosa indica la norma ISO 129 e perché è importante?",
-    "back": "Le regole internazionali per la quotatura: posizione dei numeri, tipo di frecce, quote di riferimento, quotatura funzionale\n\nISO 129 garantisce che le quote siano lette allo stesso modo ovunque. La quotatura 'funzionale' (dove serve la misura per il funzionamento) è preferita a quella 'geometrica'.",
+    "front": "Il disegno tecnico ha 5.000 anni di storia (dai Sumeri a oggi). Quale continuità fondamentale mostra questa storia?",
+    "back": "Che il principio fondamentale — rappresentare la realtà in modo preciso, misurabile e non ambiguo — non è cambiato: è cambiato solo lo strumento\n\nIl testo dice: 'il principio del disegno tecnico — rappresentare la realtà in modo preciso, misurabile e non ambiguo — non è cambiato in 4.000 anni. È cambiato lo strumento.' Da Mesopotamia (stilo su argilla, 3000 a.C.) a Leonardo (penna, XV sec.) a Monge (geometria descrittiva, 1795) al CAD (1960) al LiDAR (XXI sec.) — il principio è lo stesso. La scala di rappresentazione è parte integrante di quel principio immutabile.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la quotatura 'in catena' vs 'in parallelo'?",
-    "back": "In catena le quote si sommano dalla stessa origine; in parallelo ogni quota parte da un riferimento comune. Gli errori si accumulano in catena, non in parallelo\n\nLa quotatura in catena accumula gli errori di produzione da un elemento all'altro. Quella in parallelo (coordinate) garantisce precisione assoluta rispetto all'origine.",
+    "front": "Un tecnico medico deve disegnare un osso lungo 15 mm per un manuale clinico, in modo che siano visibili i dettagli strutturali. Quale scala e quale formato scegliere?",
+    "back": "Scala 10:1 su foglio A4 o A3: l'osso di 15 mm diventa 150 mm = 15 cm sul disegno — abbastanza grande per vedere i dettagli strutturali\n\nUn osso di 15 mm (1,5 cm) è troppo piccolo per mostrare i dettagli strutturali. Si usa una scala di ingrandimento. Con scala 10:1: 15 mm × 10 = 150 mm = 15 cm — visibile su foglio A4 o A3. Il testo cita le scale di ingrandimento (10:1) come usate in 'orologeria, microelettronica, biologia (disegni di cellule, tessuti, strutture microscopiche)'.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "La domanda di avvio dice di misurare il foglio A4 e trovare il rapporto lato lungo/lato corto. Perché quel numero (√2 ≈ 1,41) non è 'casuale'?",
+    "back": "Perché √2 è l'unico rapporto per cui dimezzando il foglio (piegandolo a metà lungo il lato lungo) si ottiene un foglio con lo stesso rapporto tra i lati — rendendo i formati della serie A tutti simili tra loro\n\nLa domanda di avvio della MC chiede di misurare il foglio A4 e calcolare 29,7 ÷ 21,0 = 1,414... ≈ √2. Questo numero non è casuale: √2 è l'unico rapporto per cui dimezzare il lato lungo produce un foglio con lo stesso rapporto. Quindi A4 dimezzato → A5 con rapporto √2; A4 × 2 → A3 con rapporto √2. La serie A è geometricamente coerente.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Nel disegno tecnico professionale, perché un file CAD di un componente meccanico include sempre l'indicazione della scala, anche se il file è digitale e si può zoomare?",
+    "back": "Perché la scala comunica le dimensioni reali dell'oggetto: quando il disegno viene stampato o visualizzato su schermo a una certa dimensione, la scala permette di calcolare le misure reali con un righello o per divisione\n\nAnche in un file CAD digitale, la scala è un'informazione semantica critica. Indica: (1) le dimensioni reali dell'oggetto, permettendo di capire 'quanto è grande' anche senza misurare; (2) la coerenza tra le viste — tutte le viste di uno stesso disegno devono usare la stessa scala; (3) la base per le quote — le misure annotate sono in unità reali (mm), non in unità dello schermo.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché il tecnico medico che usa un GIS per mappare la distribuzione spaziale di una malattia e l'architetto che disegna un edificio usano entrambi la 'scala di rappresentazione', pur lavorando su oggetti di dimensioni radicalmente diverse?",
+    "back": "Perché la scala è il principio universale che permette di rappresentare qualsiasi realtà fisica — da nanometri (chip) a chilometri (mappe) — su un supporto fisico di dimensioni finite, mantenendo le proporzioni e la misurabilità\n\nLa scala è il principio universale della rappresentazione tecnica: permette di ridurre qualsiasi oggetto fisico — da un chip di 2 mm (scala 100:1) a un continente (scala 1:50.000.000) — su un supporto di dimensioni finite, mantenendo le proporzioni e permettendo di ricavare le misure reali per semplice moltiplicazione. È la stessa struttura matematica (proporzionalità diretta) in tutti i domini.",
     "tag": "Avanzato"
   }
 ]

@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è un 'punto di fuga' in una prospettiva?",
-    "back": "Il punto in cui le linee parallele dell'oggetto sembrano convergere sull'orizzonte nella rappresentazione prospettica\n\nIn realtà le linee parallele non convergono, ma la nostra percezione visiva le percepisce così. I binari del treno 'convergono' all'orizzonte.",
+    "front": "Nella prospettiva centrale, tutte le rette parallele alla direzione di vista convergono verso un unico punto sulla linea d'orizzonte. Come si chiama questo punto?",
+    "back": "Punto di fuga\n\nNella prospettiva centrale (a un punto di fuga), le rette parallele alla direzione di vista convergono verso il punto di fuga sulla linea d'orizzonte. Le rette parallele al piano del quadro rimangono orizzontali o verticali.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la 'prospettiva accidentale' o a due punti di fuga?",
-    "back": "Una prospettiva in cui l'oggetto è ruotato rispetto all'osservatore: due set di linee convergono verso due punti di fuga distinti sull'orizzonte\n\nLa prospettiva a 2 punti di fuga è la più usata in architettura: mostra l'angolo di un edificio con due facciate visibili, ciascuna con il proprio punto di fuga.",
+    "front": "In quale anno Walter Gropius fondò il Bauhaus, la scuola che unì arte e tecnica nella progettazione industriale?",
+    "back": "1919\n\nIl Bauhaus fu fondato da Walter Gropius nel 1919 a Weimar con una tesi radicale: arte e tecnica non sono opposti. Un oggetto bello e un oggetto funzionale possono e devono essere la stessa cosa.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è uno 'schizzo progettuale' e a cosa serve?",
-    "back": "Un disegno rapido e approssimativo usato nelle fasi iniziali di progettazione per esplorare idee e comunicare concetti\n\nLo schizzo è il pensiero visivo: veloce, schematico, esplorativo. Prima di aprire il CAD, lo schizzo permette di valutare molte idee in poco tempo.",
+    "front": "Nell'assonometria le misure reali vengono conservate. Nella prospettiva invece cosa succede alle misure?",
+    "back": "Vengono deformate intenzionalmente per simulare la percezione visiva\n\nDifferenza chiave: nell'assonometria le misure sono conservate (o ridotte con fattore costante), nella prospettiva vengono deformate intenzionalmente per simulare la percezione visiva. Per questo l'assonometria è lo strumento del tecnico, la prospettiva del designer.",
     "tag": "Base"
   },
   {
-    "front": "Come si costruisce geometricamente la prospettiva a un punto di fuga?",
-    "back": "Si disegna la faccia frontale in forma vera, si identifica il punto di fuga sul piano dell'orizzonte, si collegano tutti i vertici al PF per le profondità\n\nLa prospettiva a 1 PF è usata per corridoi, interni di stanze, tunnel: una faccia frontale vera + profondità che convergono in un unico punto.",
+    "front": "La disciplina che studia come adattare oggetti e ambienti alle caratteristiche fisiche e cognitive degli esseri umani si chiama:",
+    "back": "Ergonomia\n\nL'ergonomia nasce come disciplina durante la Seconda guerra mondiale per migliorare le interfacce di cockpit. Il suo principio fondamentale è il design centrato sull'utente (UCD): l'oggetto si adatta alle persone, non le persone all'oggetto.",
+    "tag": "Base"
+  },
+  {
+    "front": "Nella prospettiva accidentale (a due punti di fuga), quali elementi dell'oggetto rimangono verticali nel disegno?",
+    "back": "Solo le rette verticali dell'oggetto\n\nIn prospettiva accidentale (2 punti di fuga): le rette orizzontali verso destra convergono verso PF1, quelle verso sinistra verso PF2. Solo le rette verticali degli oggetti rimangono verticali nel disegno.",
+    "tag": "Base"
+  },
+  {
+    "front": "Nel processo progettuale del designer, qual è il primo passo dopo aver ricevuto il brief?",
+    "back": "La ricerca: osservare chi userà l'oggetto e in quale contesto\n\nIl processo progettuale segue: Brief → Ricerca → Concept → Sketch definito → Render → Prototipo → Test → Iterazione. La ricerca viene prima del disegno: si capisce chi userà l'oggetto, in quale contesto, e quali problemi ha l'utente.",
+    "tag": "Base"
+  },
+  {
+    "front": "La sedia Serie 7 di Jacobsen (1955) ha una scocca a doppia curvatura nel compensato. Perché questa forma è stata scelta invece di una scocca piatta?",
+    "back": "La doppia curvatura distribuisce il carico su tutta la superficie, è più resistente e si adatta alla curva della schiena\n\nJacobsen partì da un vincolo materiale: il compensato può essere curvato in doppia curvatura con pressione e calore. Questa forma distribuisce il carico su tutta la superficie (più resistente del piano), si adatta alla curva della schiena, ed è prodotta da una tecnologia specifica. Ogni curva ha una ragione tecnica.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'piano del quadro' in una prospettiva?",
-    "back": "Il piano immaginario tra l'osservatore e l'oggetto su cui si proiettano le immagini: come lo schermo di una camera oscura\n\nIl piano del quadro è il 'sensore fotografico' della prospettiva: la distanza dall'oggetto determina la grandezza dell'immagine, come una fotocamera.",
+    "front": "Nel design thinking, la fase di 'empatia' precede tutte le altre. Il testo dice che il modo più comune per sbagliare è 'progettare qualcosa che tu trovi utile senza verificare se lo trovano utile anche gli altri'. Cosa questo implica sul processo di design?",
+    "back": "Che senza comprendere l'utente reale si rischia di creare soluzioni che non risolvono problemi veri\n\nL'empatia è il punto di partenza del design thinking perché permette di capire chi ha il problema prima di tentare di risolverlo. Senza empatia, il designer rischia di progettare qualcosa che ritiene utile per sé stesso, ma che non risponde ai bisogni reali degli utenti.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è un 'rendering' in ambito progettuale?",
-    "back": "La rappresentazione visiva realistica di un progetto ancora non realizzato: usato per comunicare l'estetica finale a clienti e committenti\n\nIl rendering permette al cliente di 'vedere' l'oggetto prima che esista. Software come Blender, KeyShot o Lumion generano immagini fotorealistiche da modelli 3D.",
+    "front": "Massimo Vignelli ha distorto deliberatamente le distanze geografiche nella mappa della metro di New York. Quale obiettivo progettuale giustificava questa scelta?",
+    "back": "Rendere leggibili le connessioni tra le linee, prioritariamente rispetto alla precisione geografica\n\nVignelli ha distorto le distanze geografiche perché in quel contesto la priorità comunicativa era capire come le linee si connettono, non conoscere le distanze precise. È un esempio emblematico di come il design privilegia l'efficacia della comunicazione rispetto alla fedeltà letterale.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'photogrammetria' e come si usa in progettazione?",
-    "back": "La tecnica che ricostruisce modelli 3D da serie di fotografie sovrapposte: usata per rilievi architettonici, preservazione di beni culturali e reverse engineering\n\nCon uno smartphone e un'app si può fare photogrammetria di un oggetto o di un edificio ottenendo un modello 3D preciso senza costosi strumenti topografici.",
+    "front": "Il 'design for disassembly' progetta giunzioni smontabili e materiali compatibili. Quale problema specifico del riciclo tradizionale intende risolvere?",
+    "back": "La difficoltà di separare materiali diversi (plastica + metallo + vetro) per riciclarli correttamente\n\nIl design for disassembly risponde al problema della mescolanza di materiali diversi negli oggetti complessi: plastica + metallo + vetro incollati insieme non si possono riciclare separatamente. Progettando deliberatamente giunzioni smontabili e materiali compatibili, ogni componente può essere separato e riciclato correttamente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Nel caso studio dell'iPhone 1, Apple eliminò quasi tutti i pulsanti fisici mantenendone solo tre. Quale vantaggio strategico specifico cita il testo per questa scelta?",
+    "back": "Permettere di cambiare l'interfaccia utente con aggiornamenti software senza toccare l'hardware\n\nEliminare i pulsanti fisici aveva un vantaggio strategico preciso: ogni pulsante fisico è un punto di fragilità e un limite alla modifica software. Senza pulsanti, Apple poteva cambiare completamente l'interfaccia utente con un aggiornamento software, senza toccare l'hardware fisico del telefono.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo afferma che nella prospettiva centrale il punto di fuga si posiziona 'all'altezza degli occhi dell'osservatore ideale'. Quale effetto visivo produce la posizione del punto di fuga rispetto all'oggetto disegnato?",
+    "back": "Determina il punto di vista dell'osservatore: alto, basso o frontale rispetto all'oggetto\n\nLa linea d'orizzonte corrisponde all'altezza degli occhi dell'osservatore ideale. Posizionare il punto di fuga in alto produce una vista dall'alto (bird's eye view), in basso produce una vista dal basso (worm's eye view), al centro produce una vista frontale. La posizione del PF determina il punto di vista dell'intera rappresentazione.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo presenta il caso iPhone 1 come dimostrazione che 'forma e funzione erano inseparabili — non decorazione aggiunta alla tecnica, ma tecnica espressa attraverso la forma.' Questo principio contraddice quale idea comune sul design?",
+    "back": "L'idea che il design sia solo decorazione aggiunta a un prodotto già funzionante\n\nIl caso iPhone 1 dimostra che il design non è decorazione aggiunta a un prodotto già funzionante. Il vetro Gorilla Glass, il bordo in alluminio, le proporzioni dello schermo, il rientro del connettore — ogni scelta formale risponde a una funzione tecnica precisa. Forma e funzione sono inseparabili.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'ergonomia' e perché è fondamentale nella progettazione?",
-    "back": "La disciplina che studia il rapporto tra persone e oggetti/ambienti per ottimizzare comfort, sicurezza ed efficienza d'uso\n\nUn oggetto bello ma ergonomicamente sbagliato è un oggetto fallito. Le dimensioni del corpo umano (antropometria) e i suoi limiti definiscono i vincoli progettuali.",
+    "front": "Il testo descrive l'iterazione (prototipo → test → modifica) come 'la parte più importante del design'. Perché questa affermazione è controintuitiva rispetto alla visione romantica della creatività?",
+    "back": "Perché nella visione romantica l'idea geniale iniziale è la parte più importante, mentre l'iterazione valorizza invece l'errore e la revisione come fonti di miglioramento\n\nL'iterazione è controintuitiva perché sfida la visione romantica della creatività come ispirazione geniale. Nel design reale, l'errore è prezioso: un prototipo che rivela un problema che non avevi previsto vale più di qualsiasi disegno perfetto. Modificare il progetto dopo un test non è un fallimento, è il processo che produce soluzioni davvero funzionali.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'Design Thinking' e come si articola nelle sue fasi?",
-    "back": "Un approccio centrato sull'utente: Empatizzare → Definire il problema → Ideare soluzioni → Prototipare → Testare. Iterativo e non lineare\n\nIl Design Thinking parte dall'utente, non dal prodotto. La fase di empatia (osservare, intervistare) previene di risolvere il problema sbagliato.",
+    "front": "La regola pratica nel testo: 'se devi comunicare misure esatte a chi costruisce, usa l'assonometria; se devi comunicare l'aspetto a chi decide, usa la prospettiva'. Questo rivela che la scelta del sistema di rappresentazione dipende fondamentalmente da quale fattore?",
+    "back": "Dal destinatario della comunicazione e dallo scopo del disegno, non dall'estetica del risultato\n\nIl disegno tecnico è sempre un atto comunicativo. La scelta del sistema di rappresentazione dipende da chi leggerà il disegno e per quale scopo: assonometria per il tecnico che deve costruire (misure esatte), prospettiva per il cliente che deve decidere (aspetto percepito). Un buon progetto usa spesso entrambi.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il concetto 'cradle to cradle' propone due categorie di materiali: ciclo biologico e ciclo tecnico. Quale problema strutturale del design tradizionale questo approccio vuole risolvere?",
+    "back": "Il fatto che nel modello lineare i materiali a fine vita finiscono in discarica, perdendo il loro valore invece di rientrare in un ciclo produttivo\n\nIl cradle to cradle (dalla culla alla culla) si oppone al modello lineare cradle-to-grave (dalla culla alla tomba). Il problema che vuole risolvere: ogni materiale che finisce in discarica è una perdita di valore. La soluzione è progettare i prodotti fin dall'inizio per rientrare nel ciclo biologico (biodegradano) o tecnico (vengono riciclati e reimmessi nella produzione).",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Giugiaro progettò la Fiat Panda con pannelli piatti invece di curve per ridurre i costi di produzione. Il testo dice che 'l'estetica era una conseguenza dell'efficienza'. Quale principio di design questo incarna?",
+    "back": "I vincoli produttivi e di costo, quando accettati come parte del problema di design, possono generare forme originali e riconoscibili\n\nIl caso Fiat Panda dimostra che i vincoli di produzione e costo non sono il contrario del design: sono parte del problema da risolvere. Giugiaro ha incorporato il vincolo economico (pannelli piatti meno costosi da produrre) come vincolo progettuale, generando una forma originale. L'estetica è emersa come conseguenza delle scelte funzionali.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo afferma che il design thinking 'non è lineare' e che 'si torna indietro, si riscoprono problemi, si ridefinisce il brief'. Come mai questa caratteristica è considerata un vantaggio e non una debolezza?",
+    "back": "Perché le fasi successive (test, prototipo) rivelano informazioni che non erano disponibili all'inizio, permettendo di produrre soluzioni migliori di quelle previste\n\nLa non-linearità del design thinking è un vantaggio perché ogni fase rivela informazioni che non erano disponibili nella fase precedente. Tornare a ridefinire il problema dopo aver testato un prototipo non è un fallimento: è la prova che il processo sta incorporando nuove informazioni reali, producendo soluzioni migliori di quelle previste all'inizio.",
     "tag": "Avanzato"
   }
 ]

@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa si intende per 'media digitali'?",
-    "back": "Tutti i mezzi di comunicazione che usano tecnologie digitali per produrre, distribuire e fruire contenuti: web, podcast, video, social, newsletter\n\nI media digitali includono qualsiasi forma di comunicazione basata su bit: dal blog al video virale, dalla newsletter al podcast.",
+    "front": "Quante ore di video vengono caricate su YouTube ogni minuto nel 2024?",
+    "back": "500 ore al minuto\n\nNel 2024 vengono caricati su YouTube 500 ore di video ogni minuto. Questo equivale a 720.000 ore al giorno, che richiederebbero 82 anni di visione continua. Questa cifra illustra la scala straordinaria della produzione di contenuti digitali.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'clickbait'?",
-    "back": "Titoli o immagini progettati per generare clic attraverso curiosità o emozione, spesso con contenuto deludente o fuorviante\n\nIl clickbait sfrutta la curiosità umana. Il 'curiosity gap' (voglio sapere cosa manca) è uno degli stratagemmi più usati per generare traffico a basso valore.",
+    "front": "Cosa distingue la compressione 'lossless' da quella 'lossy'?",
+    "back": "Lossless non perde informazioni; lossy scarta informazioni per ridurre le dimensioni\n\nLa compressione lossless (PNG, FLAC, ZIP) permette di ricostruire esattamente l'originale senza perdita di informazioni. La compressione lossy (JPEG, MP3, H.264) scarta informazioni percettivamente irrilevanti per l'occhio o l'orecchio, producendo file molto più piccoli.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un 'algoritmo' dei social media?",
-    "back": "Un sistema automatico che decide quali contenuti mostrare a ogni utente in base a comportamento, interazioni e profilo\n\nL'algoritmo dei social ottimizza il 'tempo di permanenza' (engagement): mostra contenuti che generano emozioni forti, anche se distorcono la realtà.",
+    "front": "Per quanto tempo dura la protezione del diritto d'autore in Italia dopo la morte dell'autore?",
+    "back": "70 anni dalla morte dell'autore\n\nIn Italia, la Legge n. 633 del 1941 (L.D.A.) stabilisce che il diritto d'autore dura per tutta la vita dell'autore più 70 anni dalla sua morte. Solo al termine di questo periodo l'opera entra nel dominio pubblico ed è liberamente utilizzabile.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la 'camera d'eco' (echo chamber)?",
-    "back": "L'ambiente informativo in cui le persone ricevono solo contenuti che confermano le loro opinioni, amplificati dall'algoritmo\n\nLe echo chamber polarizzano: si vedono solo notizie che confermano le proprie idee, si conosce sempre meno il punto di vista altrui.",
+    "front": "Cosa significa la sigla 'NC' nelle licenze Creative Commons?",
+    "back": "NonCommercial: non puoi usare l'opera per scopi commerciali\n\nNC sta per NonCommercial: chi usa un contenuto con questa licenza CC non può farlo per scopi commerciali. Può però usarlo per scopi educativi, personali o non commerciali. Le sei licenze CC combinano diversamente BY, SA, NC e ND.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la struttura consigliata per l'hook di un episodio podcast?",
+    "back": "Iniziare con un fatto sorprendente, una domanda o una storia breve entro i primi 60-90 secondi\n\nI primi 60-90 secondi del podcast sono decisivi. Il testo consiglia di iniziare con un fatto sorprendente, una domanda o una storia breve — mai con 'oggi parleremo di...'. Se l'ascoltatore non è agganciato entro i primi 90 secondi, smette di ascoltare.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa sono i 'deepfake'?",
+    "back": "Video o audio generati da IA che mostrano persone fare cose che non hanno mai fatto\n\nI deepfake sono video o audio generati da sistemi di intelligenza artificiale (GAN — Generative Adversarial Networks) che mostrano persone dire o fare cose che non hanno mai detto o fatto. La tecnologia è diventata accessibile a chiunque nel 2023-2024 grazie a strumenti gratuiti online.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché il formato JPEG non è adatto per comprimere loghi o screenshot?",
+    "back": "Perché JPEG crea artefatti visibili sui bordi netti e nelle aree di colore uniforme\n\nJPEG usa compressione lossy che elimina dettagli fini. Questo causa artefatti visibili (blocchi quadrati) lungo i bordi netti e nelle aree di colore uniforme — tipiche dei loghi e degli screenshot. Per questi contenuti è preferibile PNG (lossless) che preserva esattamente i bordi senza artefatti.",
     "tag": "Intermedio"
   },
   {
-    "front": "Come funziona la pubblicità programmatica (programmatic advertising)?",
-    "back": "Un sistema automatizzato che compra e vende spazi pubblicitari in tempo reale basandosi sul profilo dell'utente: l'annuncio giusto alla persona giusta al momento giusto\n\nIn meno di 100 millisecondi (durante il caricamento di una pagina) avviene un'asta automatica per mostrare l'annuncio. I tuoi dati determinano quale vedi.",
+    "front": "In Italia, un video pubblicato su YouTube con musica protetta da copyright ma senza guadagno è legale?",
+    "back": "No: in Italia non esiste un'eccezione automatica per uso educativo o non commerciale\n\nIn Italia, diversamente dagli USA (dove esiste il 'fair use'), non c'è un'eccezione automatica per uso educativo o non commerciale nel diritto d'autore. YouTube rimuove automaticamente i video con musica protetta da Content ID. La soluzione è usare musica con licenza CC esplicita che permette l'uso in video.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è un 'influencer' nel marketing digitale?",
-    "back": "Una persona con una comunità online significativa che, grazie alla fiducia del suo pubblico, è in grado di orientarne le scelte di consumo o opinioni\n\nL'influencer marketing usa la fiducia parasociale (si 'conosce' l'influencer come un amico) per una pubblicità percepita come più autentica.",
+    "front": "Perché il podcast del Liceo 'Archimede' ha scelto di pubblicare su Internet Archive invece che su Spotify?",
+    "back": "Perché Internet Archive è gratuito, open source e senza algoritmi pubblicitari\n\nIl caso studio mostra che la classe ha scelto Internet Archive per i suoi valori: è gratuita, open source, senza algoritmi pubblicitari. Gli episodi sono stati caricati con licenza CC BY-SA, permettendo ad altri di usarli mantenendo la stessa licenza.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'native advertising' e perché è eticamente controverso?",
-    "back": "Contenuto pubblicitario fatto per sembrare un articolo editoriale o contenuto organico: se non è chiaramente etichettato, può ingannare il lettore\n\nIl native advertising ben fatto è difficile da distinguere dal contenuto editoriale. L'obbligo di indicare 'Contenuto sponsorizzato' esiste ma è spesso poco visibile.",
+    "front": "Qual è la differenza tra una licenza CC BY-SA e una CC BY-NC?",
+    "back": "CC BY-SA richiede la stessa licenza sulle opere derivate; CC BY-NC vieta l'uso commerciale\n\nCC BY-SA impone che chiunque modifichi l'opera la distribuisca con la stessa licenza (ShareAlike). CC BY-NC permette usi e modifiche ma vieta gli scopi commerciali (NonCommercial). Wikipedia usa CC BY-SA per garantire che i contenuti derivati rimangano liberamente accessibili.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Quale tecnica usano i GAN per creare deepfake sempre più realistici?",
+    "back": "Un generatore produce immagini false e un discriminatore cerca di rilevarle: si allenano reciprocamente\n\nLe GAN (Generative Adversarial Networks) per i deepfake usano due reti neurali: una generatrice che produce immagini false, e una discriminatrice che cerca di distinguere il falso dal vero. Le due si allenano reciprocamente fino a produrre output difficilmente distinguibili dalla realtà.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Qual è il livello audio consigliato per la voce in un podcast rispetto alla musica di sottofondo?",
+    "back": "La musica deve essere abbassata a -20 dB sotto la voce\n\nIl testo indica che la musica CC deve essere aggiunta in un layer separato e abbassata a -20 dB sotto la voce parlante. Questo garantisce che la voce sia sempre comprensibile mentre la musica crea un'atmosfera senza sovrapporsi.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché il 'show notes' (documento di accompagnamento) è fondamentale per un podcast responsabile?",
+    "back": "Rende il contenuto verificabile: elenca fonti, autori, crediti musica e licenze\n\nLe show notes (documento di accompagnamento) rendono il podcast verificabile: elencano tutti gli autori, le fonti usate con URL, i crediti per la musica con la licenza specifica. Il testo del caso studio mostra come questo documento sia ciò che distingue un 'contenuto digitale responsabile' da uno opaco.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cosa si intende per 'economia dell'attenzione'?",
-    "back": "Il modello in cui l'attenzione umana è la risorsa scarsa: social e piattaforme competono per catturarla il più a lungo possibile per monetizzarla con la pubblicità\n\nLe piattaforme non vendono prodotti: vendono l'attenzione degli utenti agli inserzionisti. Questo crea incentivi a massimizzare il tempo sullo schermo, non il benessere.",
+    "front": "Analizza: un deepfake tecnicamente convincente viene dichiarato 'falso' da chi ne è protagonista. Qual è il 'dividendo del bugiardo'?",
+    "back": "Quando i deepfake diventano comuni, qualsiasi video reale può essere dichiarato falso come strategia difensiva\n\nIl 'dividendo del bugiardo' (liar's dividend) è il rischio che i deepfake siano usati come scusa per negare prove reali. Quando i deepfake sono comuni, chiunque può dichiarare 'quella registrazione è un deepfake' come difesa contro prove autentiche. Il pericolo non è solo credere ai falsi: è smettere di credere ai veri.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'filter bubble' e come la differenziamo dalla camera d'eco?",
-    "back": "La filter bubble è creata dagli algoritmi che filtrano automaticamente i contenuti; la camera d'eco è un fenomeno sociale in cui le persone si circondano volontariamente di voci simili: spesso si sovrappongono\n\nEli Pariser (2011) ha coniato 'filter bubble': l'algoritmo crea una bolla invisibile. La camera d'eco ha anche una dimensione sociale attiva (seguire, condividere, unirsi a gruppi).",
+    "front": "Perché non è sufficiente scrivere 'immagine da Google' come fonte per una foto usata in un podcast?",
+    "back": "Perché Google non è l'autore: mostra anteprime di immagini altrui senza diritti su di esse\n\nGoogle non è autore di nessuna immagine: è un motore di ricerca che mostra anteprime di immagini di altri. Per citare correttamente una fotografia occorre indicare il nome del fotografo, la fonte originale (sito o pubblicazione) e la licenza. Il copyright appartiene all'autore originale, non a Google.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Valuta criticamente il caso studio del Liceo 'Archimede': cosa rende quel podcast un 'contenuto digitale responsabile'?",
+    "back": "È originale, verificato nelle fonti, trasparente sulle licenze e invita alla condivisione con CC BY-SA\n\nIl testo conclude il caso studio con questa affermazione: 'Questo è un contenuto digitale responsabile: originale, verificato, trasparente sulle fonti, con licenza che rispetta il lavoro degli autori e invita alla condivisione.' Queste quattro caratteristiche definiscono la responsabilità editoriale digitale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "La MP3 elimina circa il 90% dell'informazione originale. Come è possibile che la qualità sia accettabile?",
+    "back": "Perché elimina solo le frequenze che l'orecchio umano percepisce meno (psicoacustica)\n\nL'algoritmo MP3 usa la psicoacustica: la scienza di come l'orecchio percepisce il suono. Elimina le frequenze sopra i 15.000 Hz (al limite dell'udito) e i suoni 'mascherati' da suoni più forti. A 128 kbit/s, scarta circa il 90% dell'informazione originale — eppure la maggior parte delle persone non sente differenza in ascolto normale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Hai prodotto un podcast con licenza CC BY. Qualcuno lo usa in un video su YouTube senza citarti. Cosa ti autorizza a fare la licenza CC BY?",
+    "back": "Richiedere la rimozione o la correzione del video perché la citazione è obbligatoria in CC BY\n\nLa licenza CC BY impone sempre l'attribuzione (BY = attribuzione obbligatoria). Chi usa un contenuto CC BY deve sempre citare l'autore, il titolo e la licenza. Se non lo fa, viola la licenza e il titolare dei diritti può richiedere la correzione o la rimozione del contenuto che viola l'attribuzione.",
     "tag": "Avanzato"
   }
 ]

@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa trasporta un cavo in fibra ottica?",
-    "back": "Segnali luminosi che codificano dati digitali alla velocità della luce\n\nLa fibra ottica usa impulsi di luce per trasmettere dati a velocità elevatissime con perdite minime su lunghe distanze.",
+    "front": "Cosa significa la parola 'telecomunicazione'?",
+    "back": "Comunicare a distanza\n\nTelecomunicazione significa letteralmente comunicare a distanza. Il prefisso 'tele' viene dal greco e indica lontananza. Gli esseri umani comunicano a distanza da millenni, con fuochi, tamburi, torri di segnalazione, fino alle reti digitali moderne.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un indirizzo IP?",
-    "back": "Un'etichetta numerica univoca assegnata a ogni dispositivo in una rete per identificarlo e permettere la comunicazione\n\nL'IP address è come l'indirizzo di casa in internet. Senza di esso i pacchetti di dati non saprebbero dove andare.",
+    "front": "Chi inventò il telegrafo elettrico nel 1837?",
+    "back": "Samuel Morse\n\nSamuel Morse inventò il telegrafo elettrico nel 1837. Fu la prima tecnologia in grado di trasmettere messaggi complessi attraverso fili conduttori usando impulsi di corrente elettrica, aprendo l'era delle telecomunicazioni moderne.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il protocollo HTTP?",
-    "back": "Il protocollo di comunicazione che definisce come browser e server web si scambiano pagine web\n\nHTTP (Hypertext Transfer Protocol) è la lingua comune tra browser e server. HTTPS aggiunge la crittografia per la sicurezza.",
+    "front": "Cos'è un segnale digitale?",
+    "back": "Un segnale che usa solo due valori: 0 e 1\n\nUn segnale digitale usa solo due valori: 0 e 1 (spento/acceso). Qualsiasi informazione — voce, immagine, testo — viene convertita in una sequenza di 0 e 1 prima di essere trasmessa. Questa conversione si chiama digitalizzazione.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è la latenza in una rete e perché è importante?",
-    "back": "Il tempo che un pacchetto di dati impiega per andare dalla sorgente alla destinazione e tornare (round-trip time)\n\nLa latenza è critica per gaming, videoconferenze e sistemi real-time. Le fibre ottiche sottomarine la riducono al minimo tra continenti.",
+    "front": "Cosa significa 'latenza' nelle reti mobili?",
+    "back": "Il ritardo nella trasmissione dei dati\n\nLa latenza è il ritardo nella trasmissione dei dati, misurato in millisecondi. Il 4G ha una latenza di 30-50 ms; il 5G la riduce a 1-10 ms. Questa differenza è cruciale per applicazioni in tempo reale come veicoli autonomi.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa un router nella rete?",
+    "back": "Collega reti diverse e instrada i pacchetti tra esse\n\nIl router collega reti diverse e instrada i pacchetti tra esse basandosi sull'indirizzo IP. A casa connette la rete locale (LAN) alla rete dell'operatore (WAN). Diverso dallo switch, che collega dispositivi all'interno della stessa rete.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quanti cavi sottomarini trasportano circa il 95% del traffico Internet mondiale?",
+    "back": "Circa 400 cavi sottomarini attivi\n\nNel 2024 esistono circa 400 cavi sottomarini attivi, per una lunghezza totale superiore a 1,3 milioni di km. Questi cavi, spessi quanto un tubo da giardino esternamente, trasportano oltre il 95% di tutto il traffico Internet mondiale.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché la luce percorre 9.200 km da Roma a Tokyo in meno di 50 ms, ma il ritardo reale è circa 200 ms?",
+    "back": "I restanti 150 ms sono dovuti all'elaborazione nei router, conversioni digitali e routing\n\nLa luce nella fibra ottica percorre 9.200 km in meno di 50 ms. I restanti 150 ms del ritardo reale (~200 ms totali) sono causati dall'elaborazione dei segnali nei router, dalle conversioni digitali e dal routing tra reti diverse lungo il percorso.",
     "tag": "Intermedio"
   },
   {
-    "front": "Come funziona il DNS (Domain Name System)?",
-    "back": "Traduce i nomi di dominio leggibili (es. google.com) in indirizzi IP numerici comprensibili dai computer: è la rubrica di Internet\n\nSenza DNS non potremmo usare nomi: dovremmo ricordare indirizzi IP numerici per ogni sito. È uno dei servizi più critici di Internet.",
+    "front": "Qual è la differenza pratica tra la banda 2,4 GHz e 5 GHz del Wi-Fi?",
+    "back": "2,4 GHz ha più portata ma meno velocità; 5 GHz ha meno portata ma più velocità\n\nIl 2,4 GHz offre maggiore portata (~30 m) e penetra meglio le pareti, ma ha velocità inferiore e più interferenze. Il 5 GHz è molto più veloce (fino a 3,5 Gbit/s) ma copre meno distanza (~15 m) e viene assorbito dai muri. Usa il 5 GHz vicino al router, il 2,4 GHz nelle stanze lontane.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'banda larga' e come si misura?",
-    "back": "La capacità di trasmissione di una rete, misurata in Megabit o Gigabit per secondo (Mbps/Gbps): maggiore è la banda, più dati si trasmettono contemporaneamente\n\nLa banda larga è la larghezza del 'tubo' di internet. Alta banda = molti dati insieme; bassa latenza = dati veloci.",
+    "front": "Cosa garantisce il protocollo TCP rispetto al protocollo IP?",
+    "back": "Che tutti i pacchetti arrivino a destinazione e nel giusto ordine\n\nTCP (Transmission Control Protocol) garantisce che tutti i pacchetti arrivino a destinazione e nel giusto ordine. Se un pacchetto si perde, TCP chiede la ritrasmissione. IP invece si occupa solo di assegnare indirizzi e suddividere i dati in pacchetti.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 5G e perché cambierà le comunicazioni?",
-    "back": "Il quinto standard di telefonia mobile con latenza ultra-bassa (<1ms), altissima capacità e connettività massiva per IoT: abilita veicoli autonomi, telemedicina e industria 4.0\n\nIl 5G non è solo 'internet più veloce': la latenza ultra-bassa e la connettività massiva abilitano applicazioni che il 4G non può supportare.",
+    "front": "Perché si preferisce il protocollo UDP al TCP per il gaming online in tempo reale?",
+    "back": "UDP è più veloce perché non garantisce la consegna di ogni pacchetto\n\nUDP (User Datagram Protocol) non garantisce che tutti i pacchetti arrivino a destinazione, ma è molto più veloce di TCP. Nel gaming online in tempo reale, la bassa latenza è fondamentale: è meglio perdere un pacchetto (e avere un piccolo 'lag') che aspettare la ritrasmissione.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa fa un firewall in una rete scolastica?",
+    "back": "Filtra il traffico in base a regole predefinite su indirizzi IP, porte e protocolli\n\nIl firewall filtra il traffico di rete in entrata e uscita secondo regole predefinite. Controlla l'indirizzo IP di origine, la porta di destinazione e il tipo di protocollo. Nelle scuole, impedisce l'accesso a siti non appropriati e blocca connessioni non autorizzate.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa NON garantisce una VPN gratuita, contrariamente a quanto si crede?",
+    "back": "L'anonimato completo, perché il server VPN conosce la tua identità\n\nUna VPN non garantisce l'anonimato: il server VPN sa sempre chi sei (ti ha fornito accesso). Rende più difficile, non impossibile, tracciare il traffico. Le VPN gratuite spesso vendono i dati degli utenti per finanziarsi — esattamente l'opposto del motivo per cui le si usa.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il cavo sottomarino MAREA (2017) connette Virginia Beach e Bilbao: quali implicazioni politiche ha il fatto che sia di proprietà di Microsoft e Facebook?",
+    "back": "Concentra il controllo dell'infrastruttura di comunicazione globale in poche mani private\n\nQuando Google, Meta, Microsoft e Amazon posseggono i cavi sottomarini, si concentra il controllo dell'infrastruttura di comunicazione globale in poche mani private. Il testo afferma esplicitamente che 'chi possiede i cavi possiede l'infrastruttura della comunicazione globale' con implicazioni politiche enormi.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è l'architettura 'client-server' e come si distingue dal 'peer-to-peer'?",
-    "back": "Client-server usa server centrali che forniscono servizi ai client; peer-to-peer distribuisce le risorse tra nodi equivalenti\n\nWeb, email, cloud = client-server. BitTorrent, blockchain = peer-to-peer. Il P2P è più resiliente ma meno controllabile.",
+    "front": "Nel 2022, il vulcano Hunga Tonga recise i cavi sottomarini delle isole Tonga. Quale vulnerabilità sistemica evidenzia questo evento?",
+    "back": "Il 95% del traffico Internet globale dipende da infrastrutture fisiche facilmente danneggiabili\n\nL'evento di Tonga (2022) dimostra che nonostante Internet sia progettata per essere distribuita e resiliente, la sua infrastruttura fisica — i cavi sottomarini — è vulnerabile. Circa 100.000 persone rimasero isolate per 5 settimane. La riparazione richiede navi specializzate che impiegano settimane.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'net neutrality' (neutralità della rete) e perché è dibattuta?",
-    "back": "Il principio che i provider devono trattare tutto il traffico internet allo stesso modo senza discriminare per contenuto, sito o servizio\n\nSenza net neutrality i provider potrebbero rallentare Netflix per favorire il proprio servizio streaming. È una questione fondamentale di libertà di Internet.",
+    "front": "Analizza la mappa Wi-Fi della tua scuola: perché un segnale di -80 dBm è considerato scarso?",
+    "back": "Perché i dBm sono logaritmici: -80 dBm è 1.000 volte più debole di -50 dBm\n\nI dBm usano una scala logaritmica: ogni 10 dB di differenza corrispondono a un segnale 10 volte più forte o debole. Quindi -50 dBm è 10 volte più forte di -60 dBm, e 100 volte più forte di -70 dBm. Sotto -80 dBm la connessione diventa instabile perché il segnale è troppo debole rispetto al rumore di fondo.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "La connessione Internet è lenta. Quale approccio sistematico permette di identificare la causa reale?",
+    "back": "Testare la velocità con speedtest.net e poi isolare il problema tra Wi-Fi, banda verso Internet, o server remoto\n\nIl testo insegna che la lentezza della connessione può dipendere da cause diverse: troppi dispositivi sull'access point, saturazione della banda dell'operatore, interferenze sul canale Wi-Fi, o problemi sul server remoto. Solo un test sistematico (speedtest, analisi del canale, verifica del numero di dispositivi) permette di identificare la causa reale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Valuta questa affermazione: 'La distribuzione dei cavi sottomarini è equa a livello globale'. È corretta?",
+    "back": "No: la maggior parte dei punti di atterraggio è in Europa occidentale, Nord America e Asia orientale\n\nLa distribuzione dei cavi sottomarini è profondamente diseguale. Il testo invita a osservare su submarinecablemap.com come la gran parte dei punti di atterraggio sia concentrata in Europa occidentale, Nord America e Asia orientale. Africa subsahariana, Oceania rurale e centro-sud dell'Asia hanno copertura molto inferiore. La 'connettività universale' è ancora lontana dall'essere universale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "In che modo il ruolo di Network Infrastructure Designer diventerà più complesso con l'arrivo del 5G e dell'IoT?",
+    "back": "Perché milioni di dispositivi connessi richiedono reti molto più complesse da progettare e proteggere\n\nCon il 5G e l'IoT, la complessità delle reti aumenta enormemente: un'abitazione moderna ha decine di dispositivi connessi, una fabbrica 4.0 ne ha migliaia, una città intelligente ne ha milioni. Il Network Infrastructure Designer deve progettare reti che gestiscano questa complessità in modo affidabile e sicuro.",
     "tag": "Avanzato"
   }
 ]

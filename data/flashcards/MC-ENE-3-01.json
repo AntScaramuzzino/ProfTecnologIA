@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa fa una macchina semplice?",
-    "back": "Trasforma o trasmette forze per facilitare il lavoro\n\nUna leva, una carrucola, un piano inclinato: tutte trasformano le forze, non le creano.",
+    "front": "Quante sono le macchine semplici fondamentali elencate nel testo?",
+    "back": "Sei (leva, piano inclinato, cuneo, vite, carrucola, ruota con asse)\n\nLe sei macchine semplici fondamentali sono: leva, piano inclinato, cuneo, vite, carrucola e ruota con asse. Ogni macchina più complessa che esiste (dalla bicicletta all'escavatore) è una combinazione di queste sei forme di base.",
     "tag": "Base"
   },
   {
-    "front": "Quale delle seguenti è una macchina semplice?",
-    "back": "Leva\n\nLe 6 macchine semplici sono: leva, piano inclinato, vite, cuneo, carrucola, ruota e assale.",
+    "front": "In una leva di secondo genere, dove si trova il carico rispetto al fulcro e alla forza?",
+    "back": "Il carico è in mezzo, tra il fulcro e il punto di applicazione della forza\n\nI tre generi di leva: 1° genere (F — Fulcro — Fr): fulcro in mezzo, es. forbici, bilancia; 2° genere (F — Fr — Fulcro): carico in mezzo, es. carriola; 3° genere (Fulcro — Fm — Fr): forza in mezzo, es. pinzette, braccio umano. Il vantaggio meccanico della leva di 2° genere è sempre > 1.",
     "tag": "Base"
   },
   {
-    "front": "Come si chiama il punto fisso attorno a cui ruota una leva?",
-    "back": "Fulcro\n\nCon il fulcro nella posizione giusta, una piccola forza può sollevare un peso molto maggiore.",
+    "front": "Qual è la formula del vantaggio meccanico di un piano inclinato?",
+    "back": "VM = lunghezza_rampa / altezza\n\nIl piano inclinato distribuisce il lavoro su una distanza maggiore per ridurre la forza in ogni istante. VM = lunghezza_rampa / altezza. Esempio: rampa per sedie a rotelle con altezza 1 m e lunghezza 6 m → VM = 6: si spinge con 6 volte meno forza, ma si percorre 6 volte più distanza.",
     "tag": "Base"
   },
   {
-    "front": "Se il braccio della potenza è doppio del braccio della resistenza, cosa succede alla forza necessaria?",
-    "back": "Si dimezza\n\nQuesto è il principio del vantaggio meccanico: più lungo il braccio della potenza, meno forza serve.",
+    "front": "Cosa si intende per 'rendimento' di una macchina semplice?",
+    "back": "La percentuale del lavoro speso che si trasforma in lavoro utile\n\nIl rendimento η = (W_utile / W_speso) × 100%. Non può mai essere 100% per il secondo principio della termodinamica: in ogni trasformazione reale, parte dell'energia si disperde come calore per attrito. Una leva ben equilibrata supera il 95%, una vite in legno secco può avere il 20-40%.",
+    "tag": "Base"
+  },
+  {
+    "front": "Una carriola ha il fulcro nella ruota, il carico nella vasca, e le mani spingono le stanghe. Di quale genere di leva si tratta?",
+    "back": "Secondo genere, perché il carico è tra il fulcro (ruota) e la forza (mani)\n\nLa carriola è una leva di secondo genere: il fulcro è la ruota anteriore, il carico è nella vasca, le mani spingono le stanghe. Sequenza: F — Fr — Fulcro → carico in mezzo → VM > 1. Permette di spostare sacchi da 50 kg con la sola forza delle braccia.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è il vantaggio meccanico di una carrucola mobile (a differenza di quella fissa)?",
+    "back": "VM = 2: la forza necessaria si dimezza perché il carico è sorretto da due tratti di corda\n\nCarrucola fissa: VM = 1, cambia solo la direzione della forza. Carrucola mobile: il carico è sorretto da 2 tratti di corda → VM = 2, la forza necessaria si dimezza. In un paranco con N tratti di corda che supportano il carico, VM = N.",
+    "tag": "Base"
+  },
+  {
+    "front": "Il testo spiega che le forbici sono due leve di primo genere. Perché è più difficile tagliare un cartone spesso con la punta delle forbici rispetto alla parte vicino al perno?",
+    "back": "Perché con la punta il braccio del carico (distanza perno-materiale) è maggiore, riducendo il vantaggio meccanico\n\nVM = distanza_forza-fulcro / distanza_carico-fulcro. Tagliando con la parte vicino al perno, il materiale è vicino al fulcro: VM alto. Tagliando con la punta, il materiale è lontano dal fulcro: VM basso. Stessa forza delle dita, risultati molto diversi perché cambia il rapporto delle distanze.",
     "tag": "Intermedio"
   },
   {
-    "front": "Perché le scale a chiocciola sono più facili da salire rispetto a una scala a pioli verticale?",
-    "back": "Perché funzionano come un piano inclinato: forza minore su distanza maggiore\n\nIl lavoro totale è lo stesso, ma la forza necessaria è distribuita su una distanza maggiore.",
+    "front": "Una vite con circonferenza della testa di 3,14 cm e passo di 0,5 mm ha un vantaggio meccanico di circa 62,8. Cosa significa concretamente questo valore?",
+    "back": "Per ogni unità di forza applicata al cacciavite, la vite esercita una forza di penetrazione 62,8 volte maggiore sul materiale\n\nVM = circonferenza_testa / passo = 3,14 cm / 0,05 cm = 62,8. Significa che ogni newton di forza applicato al cacciavite produce 62,8 newton di forza assiale della vite nel materiale. Questo spiega perché le viti tengono così efficacemente: trasformano una piccola forza rotatoria in una grande forza di penetrazione.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa si conserva sempre nelle macchine semplici ideali (senza attrito)?",
-    "back": "Il lavoro (forza × spostamento)\n\nQuesto è il principio di conservazione dell'energia: le macchine la trasformano, non la creano.",
+    "front": "Il testo spiega che il braccio umano è una leva di terzo genere con VM < 1. Perché la natura ha 'scelto' questa configurazione svantaggiosa per la forza?",
+    "back": "Perché la leva di terzo genere amplifica la distanza e la velocità del movimento: con un piccolo movimento del bicipite la mano si sposta molto di più\n\nIl braccio umano è una leva di terzo genere: il bicipite si inserisce vicino al gomito (fulcro), lontano dalla mano che regge il peso. VM < 1: la forza non viene amplificata. Ma la natura ha privilegiato la velocità: un piccolo accorciamento del bicipite produce un grande spostamento della mano, permettendo movimenti veloci e precisi.",
     "tag": "Intermedio"
   },
   {
-    "front": "Un meccanico usa una chiave inglese con braccio da 30 cm per svitare un bullone. Se fosse necessario il doppio della coppia, quale braccio userebbe?",
-    "back": "60 cm\n\nQuesto è il motivo per cui i meccanici usano chiavi sempre più lunghe per i bulloni più resistenti.",
+    "front": "Il testo afferma che la bicicletta è 'il mezzo di trasporto più efficiente energeticamente mai costruito dall'essere umano' con rendimento 85-95%. Come realizza questa efficienza?",
+    "back": "Combinando più macchine semplici: ruota con asse, sistema pedali-catena-ingranaggi (ruote con asse), e freni a leva, con pochissimo attrito nelle trasmissioni\n\nLa bicicletta è una macchina composta che combina: ruota con asse (ruota), sistema pedali-catena-ingranaggi (ruote con asse di diametri variabili — il cambio), freni a leva. L'efficienza del 85-95% deriva dalla combinazione ottimale di queste macchine semplici con attrito ridotto al minimo. È il mezzo di trasporto più efficiente energeticamente mai costruito.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il caso studio delle piramidi di Giza usa rampe con pendenza del 7% e VM = 14. Che calcolo porta a questo valore di VM?",
+    "back": "VM = 1/pendenza = 1/0,07 ≈ 14: la rampa lunga 14 volte l'altezza da superare richiede 14 volte meno forza\n\nVM di una rampa con pendenza 7% = lunghezza/altezza. Se la pendenza è 7% (0,07), per ogni metro di altezza la rampa è lunga 1/0,07 ≈ 14 metri → VM = 14. Un blocco da 25.000 N richiede solo 25.000/14 ≈ 1.800 N di forza di spinta: spostabile da 3-4 persone.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo avverte: 'Vantaggio meccanico maggiore non sempre significa macchina migliore'. Quale esempio nel testo dimostra che un VM < 1 può essere la scelta corretta?",
+    "back": "Le pinzette chirurgiche: VM < 1 perché la chirurgia richiede movimenti precisi e piccoli, non grande forza\n\nLe pinzette sono leve di terzo genere: la forza è in posizione intermedia tra fulcro e carico → VM < 1. Non amplificano la forza ma amplificano la precisione del movimento: un piccolo spostamento delle dita produce un movimento ancora più piccolo e preciso delle punte. In chirurgia e lavorazioni di precisione, questo è esattamente quello che serve.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Il testo afferma che il rendimento non può mai essere 100% per il secondo principio della termodinamica. Perché le macchine semplici (es. leva, carrucola) violano apparentemente la legge di conservazione dell'energia se hanno un rendimento < 100%?",
+    "back": "Non la violano: l'energia non si perde ma si trasforma in calore per attrito, che è ancora energia — solo non più disponibile per fare lavoro meccanico\n\nLa legge di conservazione dell'energia (primo principio della termodinamica) non viene violata: l'energia si conserva sempre. Ma il secondo principio afferma che l'energia tende a degradarsi: parte del lavoro meccanico si converte in calore per attrito, e quel calore non è più completamente convertibile in lavoro meccanico. Il rendimento < 100% non è una violazione della conservazione: è la natura irreversibile delle trasformazioni energetiche reali.",
     "tag": "Avanzato"
   },
   {
-    "front": "Perché l'attrito nelle macchine reali è sempre maggiore di zero?",
-    "back": "Perché le superfici dei materiali non sono mai perfettamente lisce a livello microscopico\n\nL'attrito converte energia meccanica in calore: per questo i motori si scaldano durante il funzionamento.",
+    "front": "Il testo spiega il 'vantaggio meccanico' come il rapporto Fresistente/Fmotrice. Se si triplica il VM di una leva, cosa succede necessariamente alla distanza che la forza deve percorrere?",
+    "back": "La distanza percorsa dalla forza si triplica, perché il lavoro totale (F × d) si conserva\n\nPrincipio di conservazione del lavoro: F_motrice × d_motrice = F_resistente × d_resistente (senza attrito). Se VM = F_resistente/F_motrice = 3, allora F_motrice = F_resistente/3 e d_motrice = 3 × d_resistente. Triplicando il VM, la forza si riduce a 1/3 ma la distanza triplica. Il lavoro totale si conserva: le macchine semplici non creano energia, la trasformano.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'rendimento' di una macchina?",
-    "back": "Il rapporto tra lavoro utile prodotto e lavoro totale fornito\n\nUn motore termico ha rendimento ~30-40%: il resto dell'energia si perde in calore, rumore, attrito.",
+    "front": "Il testo calcola che un blocco da 2,5 tonnellate su una rampa al 7% richiede circa 1.800 N. Se il rendimento della rampa con attrito legno-sabbia è del 60%, quanta forza sarà effettivamente necessaria?",
+    "back": "Circa 3.000 N: la forza reale è forza_teorica / rendimento = 1.800 / 0,60 = 3.000 N\n\nCon rendimento η = 60%, la forza reale = forza_teorica / η = 1.800 N / 0,60 = 3.000 N. Il rendimento inferiore a 100% significa che si deve applicare più forza del necessario teorico per compensare le perdite per attrito. Servirebbero circa 6 persone (da 500 N ciascuno) invece di 3-4.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo descrive la 'ruota di calpestio' medievale: operai che camminavano all'interno di una grande ruota per azionarla. Come si integra nel sistema di macchine semplici?",
+    "back": "È una ruota con asse: il peso degli operai che camminano converte l'energia potenziale gravitazionale in moto rotatorio, con VM = raggio_ruota / raggio_asse\n\nLa ruota di calpestio è una ruota con asse: gli operai camminando all'interno della grande ruota creano un momento torcente continuo. VM = raggio_ruota / raggio_asse. Se la ruota ha raggio 2 m e l'asse 0,1 m → VM = 20. Con 4 operai da 800 N ciascuno che camminano nella ruota, la forza all'asse è 4 × 800 × 20 = 64.000 N. Molto più efficiente della trazione diretta.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo afferma: 'ogni robot che vedi in una fabbrica è una combinazione di macchine semplici che conosci già. Il motore è nuovo; il principio ha 2.500 anni.' Quale implicazione metodologica ha questa affermazione per l'apprendimento della tecnologia?",
+    "back": "Che i principi fondamentali della meccanica sono invarianti: capire le macchine semplici permette di analizzare e progettare qualsiasi sistema meccanico, anche i più sofisticati\n\nL'affermazione ha una profonda implicazione metodologica: i principi fondamentali della meccanica (le sei macchine semplici) sono invarianti nel tempo. Comprenderli profondamente permette di analizzare qualsiasi sistema meccanico complesso, dai robot agli aerei, riducendone la complessità apparente a combinazioni di principi elementari. È il potere della comprensione dei fondamentali.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il testo calcola che sollevare uno zaino da 5 kg richiede W = 50 N × 0,75 m = 37,5 J. Se si usa una leva con VM = 4 per lo stesso lavoro, in che modo cambiano le grandezze fisiche?",
+    "back": "La forza si riduce a 12,5 N ma la distanza percorsa dalla forza aumenta a 3 m: il lavoro totale rimane 37,5 J (senza attrito)\n\nCon VM = 4: F_motrice = F_resistente/VM = 50/4 = 12,5 N. Per conservare il lavoro: W = F_motrice × d_motrice = 12,5 × d = 37,5 J → d = 3 m. La leva non viola la conservazione dell'energia: riduce la forza (da 50 N a 12,5 N, ×4 meno) aumentando proporzionalmente la distanza (da 0,75 m a 3 m, ×4 più). Il lavoro totale rimane 37,5 J.",
     "tag": "Avanzato"
   }
 ]

@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cos'è un 'dato personale' secondo il GDPR?",
-    "back": "Qualsiasi informazione che permette di identificare direttamente o indirettamente una persona fisica: nome, email, IP, localizzazione, dati biometrici\n\nIl GDPR ha una definizione ampia: anche un indirizzo IP può essere un dato personale se permette di identificare l'utente.",
+    "front": "Secondo il GDPR, quale di questi è un dato personale?",
+    "back": "L'indirizzo IP del dispositivo, il comportamento di navigazione, la geolocalizzazione GPS\n\nIl GDPR (Regolamento UE 2016/679) definisce dato personale come 'qualsiasi informazione che, da sola o combinata con altre, può identificare una persona fisica'. Questa definizione include: indirizzo IP, cookie, geolocalizzazione, dati biometrici, dati sanitari, dati comportamentali online.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il consenso nel GDPR?",
-    "back": "Un'azione libera, specifica, informata e inequivocabile con cui la persona autorizza il trattamento dei propri dati\n\nIl consenso deve essere attivo (non pre-spuntato), specifico (per ogni finalità) e revocabile in qualsiasi momento.",
+    "front": "Cosa sono i 'cookie di profilazione' in un sito web?",
+    "back": "File che tracciano il comportamento su più siti per costruire un profilo delle preferenze e mostrare pubblicità mirata\n\nI cookie di profilazione (spesso cookie di terze parti) tracciano il tuo comportamento su molti siti diversi. Il sito di notizie che stai leggendo può contenere cookie di 20 aziende pubblicitarie diverse che ti seguono ovunque sul web, costruendo un profilo per mostrare pubblicità personalizzata.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è l'identità digitale?",
-    "back": "L'insieme delle informazioni e delle tracce digitali che definiscono la presenza di una persona online: profili, post, acquisti, dati\n\nLa nostra identità digitale ci precede: un recruiter vedrà il tuo profilo LinkedIn prima di conoscerti. Gestirla consapevolmente è una competenza chiave.",
+    "front": "Cosa significa 'diritto all'oblio' nel GDPR?",
+    "back": "Il diritto di richiedere la cancellazione dei propri dati personali da una piattaforma\n\nIl diritto all'oblio (Art. 17 GDPR) permette di richiedere la cancellazione dei propri dati personali da una piattaforma. Non è assoluto: le piattaforme possono rifiutare se hanno un motivo legale per conservarli. Le piattaforme hanno 30 giorni di tempo per rispondere alle richieste.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'phishing'?",
-    "back": "Un attacco informatico che imita comunicazioni legittime (banca, Amazon, PayPal) per rubare credenziali o dati finanziari\n\nIl phishing sfrutta la fiducia: email o SMS apparentemente da entità note chiedono di cliccare un link e inserire dati sensibili su un sito falso.",
+    "front": "Cosa fa il 'pixel di tracciamento' (tracking pixel) incorporato in un'email?",
+    "back": "Informa il mittente che hai aperto l'email, comunicando il tuo IP, il browser, il dispositivo e l'ora di apertura\n\nIl pixel di tracciamento è un'immagine invisibile 1×1 pixel incorporata in una pagina web o in un'email. Quando la carichi, il server del mittente riceve: il tuo indirizzo IP, il browser, il sistema operativo, e l'ora esatta in cui hai aperto l'email. È come un segnale automatico invisibile.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa si intende per 'cyberbullismo' secondo la legge italiana?",
+    "back": "Comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali verso una persona\n\nIl cyberbullismo (Legge n. 71/2017) è comportamento aggressivo, intenzionale e ripetuto tramite strumenti digitali. Le caratteristiche sono: ripetitività (non un singolo episodio), intenzionalità (non accidentale), squilibrio di potere. Forme: molestie dirette, esclusione online, diffusione di immagini imbarazzanti, stalking digitale.",
+    "tag": "Base"
+  },
+  {
+    "front": "A quanti anni si può creare un account sui social media in Italia senza il consenso dei genitori?",
+    "back": "14 anni\n\nIl GDPR stabilisce che i minori di 14 anni non possono creare account sui social media senza il consenso dei genitori. La soglia può variare tra 13 e 16 anni nei diversi paesi UE: in Italia è fissata a 14 anni. I social network richiedono l'età alla registrazione, ma non la verificano davvero.",
+    "tag": "Base"
+  },
+  {
+    "front": "Come funziona la pubblicità personalizzata tramite Real-Time Bidding? Cosa succede nei 50 millisecondi prima che tu veda un annuncio?",
+    "back": "Diverse aziende pubblicitarie fanno un'asta automatica in circa 50 ms per mostrare la loro pubblicità nel tuo browser, basandosi sul tuo profilo costruito dai cookie\n\nIl Real-Time Bidding funziona così: quando apri una pagina, in ~50 millisecondi molte aziende pubblicitarie fanno un'asta automatica per mostrare la loro pubblicità nel tuo browser. Vince chi offre di più per il tuo profilo. Il profilo è costruito dai cookie di terze parti che ti seguono su molti siti diversi.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa sono i cookie e perché il GDPR richiede il consenso?",
-    "back": "Piccoli file salvati dal browser che tracciano il comportamento online: i cookie di profilazione richiedono consenso esplicito perché raccolgono dati personali\n\nI cookie tecnici (carrello, login) non richiedono consenso. I cookie di profilazione (tracciamento comportamentale per pubblicità) sì.",
+    "front": "Cos'è il 'browser fingerprinting'? Come differisce dai cookie?",
+    "back": "È l'identificazione del browser tramite la combinazione di caratteristiche tecniche (OS, font, risoluzione) senza salvare nessun file sul dispositivo, a differenza dei cookie\n\nIl browser fingerprinting identifica il browser attraverso la combinazione di caratteristiche tecniche: tipo e versione del browser, sistema operativo, risoluzione dello schermo, font installati, plugin, lingua, fuso orario. Questa combinazione è unica o quasi. Diversamente dai cookie, non richiede nessun file salvato sul dispositivo.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'diritto all'oblio' digitale?",
-    "back": "Il diritto riconosciuto dal GDPR di richiedere la de-indicizzazione di informazioni personali obsolete o non più rilevanti dai motori di ricerca\n\nLa sentenza CGUE 2014 (Google Spain) ha stabilito che le persone possono chiedere la rimozione dai risultati di ricerca di informazioni che non riflettono più la situazione attuale.",
+    "front": "Lo scandalo Cambridge Analytica è importante perché mostra come i dati Facebook possano essere usati. Quante persone sono state coinvolte e come?",
+    "back": "Circa 87 milioni di persone: 270.000 utenti dell'app più i loro amici Facebook che non avevano dato alcun consenso\n\nUn'app (un quiz di personalità) raccolta dati da 270.000 utenti. All'epoca, le policy Facebook permettevano alle app di raccogliere anche i dati di tutti gli amici degli utenti — senza il loro consenso. 270.000 × ~300 amici = circa 87 milioni di profili. Questi dati furono usati per costruire modelli psicologici di elettori per campagne politiche.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è l'autenticazione a due fattori (2FA) e perché è importante?",
-    "back": "Un sistema che richiede due prove di identità distinte: qualcosa che sai (password) + qualcosa che hai (SMS, app authenticator): protegge anche se la password è compromessa\n\nCon il 2FA, anche se un hacker ruba la tua password, non può accedere senza il secondo fattore. Riduce del 99% il rischio di account takeover.",
+    "front": "Cosa significa 'diritto alla portabilità' dei dati previsto dall'Art. 20 del GDPR?",
+    "back": "Il diritto di ricevere i propri dati in un formato leggibile e di trasferirli a un'altra piattaforma\n\nIl diritto alla portabilità (Art. 20 GDPR) garantisce il diritto di ricevere i propri dati in un formato leggibile e di trasferirli a un'altra piattaforma. Se vuoi cambiare servizio, puoi portare i tuoi dati con te. Google Takeout permette di scaricare tutto quello che Google ha su di te in pochi clic.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché la modalità privata del browser NON protegge la privacy rispetto al proprio provider internet (ISP)?",
+    "back": "Perché la modalità privata impedisce solo al browser di salvare la cronologia localmente, ma non nasconde il traffico di rete al provider\n\nLa modalità privata del browser impedisce solo al browser di salvare cronologia, cookie e password sul dispositivo locale. Non cifra il traffico di rete: il provider internet (ISP), la rete scolastica o aziendale, e i siti visitati vedono comunque la tua attività attraverso il tuo indirizzo IP.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché il GDPR si applica anche a Google, Facebook e TikTok, pur avendo sede fuori dall'Europa?",
+    "back": "Perché il GDPR si applica a qualsiasi organizzazione che raccoglie o tratta dati di cittadini europei, indipendentemente dalla sede\n\nIl GDPR ha effetto extraterritoriale: si applica a qualsiasi organizzazione nel mondo che raccoglie o tratta dati di cittadini europei, indipendentemente da dove ha la propria sede. Google, Facebook/Meta, Amazon, TikTok devono rispettare il GDPR. Facebook ha pagato una multa di 1,2 miliardi di euro per violazioni nel 2023.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "La combinazione di dati apparentemente innocui può rivelare informazioni molto sensibili. Dai un esempio concreto che il testo usa per spiegare questo concetto.",
+    "back": "La sequenza di siti visitati in un pomeriggio può rivelare la propria condizione di salute; gli orari di attività online possono rivelare se sei a casa o no\n\nIl testo mostra come la combinazione di dati apparentemente innocui riveli molto: la sequenza di siti visitati in un pomeriggio può rivelare una condizione di salute; gli orari di attività online possono rivelare se sei a casa; il tipo di musica ascoltata può essere usato per inferire umore e preferenze politiche. I dati isolati sembrano innocui; combinati diventano rivelatori.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'social engineering' e come si difende?",
-    "back": "La manipolazione psicologica delle persone per ottenere accesso a sistemi o informazioni riservate: si difende con consapevolezza, verifica delle identità e protocolli\n\nIl social engineering sfrutta la fiducia, l'urgenza e l'autorità. La telefonata 'sono dell'IT, ho bisogno della tua password' è un classico esempio.",
+    "front": "Un'azienda usa un sistema AI per le decisioni di assunzione, addestrato sui dati storici delle assunzioni passate. Quale diritto GDPR si applica se il sistema rifiuta automaticamente la candidatura senza revisione umana?",
+    "back": "Il diritto relativo alle decisioni automatizzate (Art. 22) — che garantisce il diritto a una revisione umana per decisioni che hanno impatto significativo\n\nL'Art. 22 GDPR tutela dalle decisioni automatizzate significative: se un algoritmo (senza revisione umana) decide su assunzione, credito bancario, diagnosi medica, o condanna penale, hai il diritto di chiedere una revisione umana e di conoscere la logica dell'algoritmo. Questo diritto è particolarmente importante per i sistemi AI applicati alle risorse umane.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è il 'data breach' e quali obblighi crea per le aziende?",
-    "back": "Una violazione di sicurezza che compromette dati personali: il GDPR obbliga la notifica all'autorità (Garante) entro 72 ore e agli interessati se il rischio è elevato\n\nI data breach di Meta, LinkedIn, Yahoo hanno esposto miliardi di dati. La notifica obbligatoria responsabilizza le aziende sulla sicurezza.",
+    "front": "Hai pubblicato a 13 anni una foto imbarazzante su un social. Ora ne hai 17 e vuoi toglierla definitivamente. Quali ostacoli tecnici e legali potresti incontrare?",
+    "back": "Chiunque potrebbe aver fatto uno screenshot; gli archivi web potrebbero avere una copia; le cache dei motori di ricerca potrebbero mostrarla ancora per un periodo\n\nL'impronta digitale è difficile da cancellare completamente: (1) chiunque abbia visto la foto può averne fatto uno screenshot; (2) la Wayback Machine (Internet Archive) potrebbe avere una versione archivata; (3) le cache dei motori di ricerca mostrano pagine ancora per un periodo. Il diritto all'oblio GDPR esiste ma è complesso da esercitare su contenuti già ampiamente diffusi.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un modello di AI viene addestrato su dati raccolti senza consenso esplicito degli utenti (es. testi da forum pubblici). Quale questione solleva il Box T8 della MC?",
+    "back": "Chi ha autorizzato l'uso di quei dati per addestrare un modello AI? Il GDPR richiede una base legale; i modelli possono anche 'memorizzare' e riprodurre informazioni personali\n\nIl Box T8 solleva due questioni distinte: (1) di diritto — chi ha autorizzato l'uso di quei dati? L'autorizzazione può stare nei termini di servizio non letti, o non esserci affatto; (2) tecnica — i modelli possono memorizzare informazioni sui dati di addestramento e riprodurle (es. citare testi specifici di utenti). Il GDPR richiede una base legale per qualsiasi trattamento di dati, incluso l'addestramento AI.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Costruire la 'mappa dell'impronta digitale' di un utente tipo è il compito del 🌍 AGISCI. Quale categoria di dati è più sorprendente per la maggior parte degli utenti che non ne sono consapevoli?",
+    "back": "I dati comportamentali: per quanto tempo hai guardato un video, su quali post ti sei fermato nel feed, quante volte hai aperto un'app in un giorno\n\nI dati comportamentali sono i più sorprendenti: per quanto tempo hai guardato un video prima di skipparlo, su quali post ti sei fermato nel feed, quante volte apri un'app in un giorno. Il testo li descrive come 'estremamente preziosi perché rivelano preferenze reali — non quello che dici di preferire, ma quello che fai davvero.' Sono raccolti automaticamente, senza scelta consapevole.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Quale connessione c'è tra la MC-DIG-2-01 (il quiz in Scratch) e questa MC (privacy digitale)? Come il quiz può sollevare una questione di dati personali?",
+    "back": "Il quiz in Scratch raccoglie le risposte dell'utente (dati personali se identificabili). Chi può vedere quei dati? Come vengono usati? Il progetto Scratch è pubblico per default\n\nIl collegamento tra le due MC è esplicito nel testo: 'Il tuo quiz in Scratch raccoglie un tipo di dato: la risposta dell'utente. Cosa fa con quelli? Chi può vederli?' Un progetto Scratch pubblicato è pubblico: chiunque lo giochi lascia una traccia. Questo introduce la domanda fondamentale della privacy: ogni software che raccoglie input dall'utente gestisce dati che richiedono considerazioni etiche.",
     "tag": "Avanzato"
   }
 ]

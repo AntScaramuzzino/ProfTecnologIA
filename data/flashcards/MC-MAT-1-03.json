@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa sono le bioplastiche?",
-    "back": "Plastiche derivate da fonti biologiche rinnovabili (mais, canna da zucchero, alghe) invece che dal petrolio\n\nLe bioplastiche riducono la dipendenza dal petrolio. Attenzione: bio-based ≠ biodegradabile. Una bioplastica può essere durevole quanto quella fossile.",
+    "front": "Cosa sono le bioplastiche 'bio-based'?",
+    "back": "Plastiche prodotte da materie prime biologiche rinnovabili (mais, canna da zucchero, amido) invece che dal petrolio\n\nBio-based indica che la plastica è prodotta da fonti biologiche rinnovabili invece che dal petrolio. Non implica biodegradabilità: esistono plastiche bio-based non biodegradabili (es. PEF da zuccheri vegetali, simile al PET). E viceversa: esistono plastiche biodegradabili da petrolio. Le due caratteristiche sono indipendenti.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un materiale 'composito'?",
-    "back": "Un materiale formato da due o più componenti con proprietà superiori ai singoli presi separatamente\n\nLa fibra di carbonio + resina epossidica = composito: leggero come la plastica, rigido come l'acciaio. Usato in aeronautica, F1, bici professionali.",
+    "front": "Il PLA (acido polilattico) è biodegradabile solo in quali condizioni?",
+    "back": "In impianti di compostaggio industriale a 55-60°C con umidità controllata e microbioma specifico\n\nIl PLA si biodegrada efficacemente SOLO in impianti di compostaggio industriale: temperatura 55-60°C, umidità controllata, microorganismi specifici. In compostaggio domestico si degrada molto lentamente (mesi o anni). In natura (suolo, mare) si comporta simile alla plastica convenzionale. La scritta 'biodegradabile' senza specificare le condizioni è fuorviante.",
     "tag": "Base"
   },
   {
-    "front": "Cosa caratterizza un materiale 'aerogel'?",
-    "back": "Estrema leggerezza e capacità isolante eccezionale: composto al 99.8% d'aria con struttura nanometrica solida\n\nL'aerogel di silice è il solido meno denso mai creato: 1.9 kg/m³ (l'aria è 1.2 kg/m³). Ottimo isolante termico usato in tute spaziali e edilizia ad alte prestazioni.",
+    "front": "Chi ha scoperto il grafene e in che anno ha vinto il Premio Nobel?",
+    "back": "Andre Geim e Konstantin Novoselov nel 2010, con un metodo semplice usando uno scotch\n\nAndre Geim e Konstantin Novoselov dell'Università di Manchester hanno isolato il grafene nel 2004 con un metodo sorprendentemente semplice: staccare ripetutamente strati sottili di grafite con uno scotch (esfoliazione meccanica). Hanno vinto il Premio Nobel per la Fisica nel 2010.",
     "tag": "Base"
   },
   {
-    "front": "Perché una bioplastica 'biodegradabile' non sempre si degrada nell'ambiente naturale?",
-    "back": "Perché molte bioplastiche 'compostabili' richiedono impianti industriali a 60°C+ per degradarsi: nell'ambiente naturale restano intatte per anni\n\nIl marchio 'compostabile' significa compostaggio industriale, non compostabile in mare o in un normale compost domestico. Informazione critica per evitare greenwashing.",
+    "front": "Cos'è una 'materia prima critica' secondo l'Unione Europea?",
+    "back": "Una materia prima la cui fornitura è a rischio perché viene da pochi paesi e non ha sostituti immediati\n\nL'UE ha definito 34 materie prime critiche: materiali la cui fornitura è a rischio perché: 1) sono concentrate in pochi paesi (spesso politicamente instabili); 2) non hanno sostituti immediati per le applicazioni strategiche. Litio, cobalto, terre rare, grafite naturale: tutte usate nella transizione energetica.",
+    "tag": "Base"
+  },
+  {
+    "front": "Il grafene è considerato 'bidimensionale'. Cosa significa in fisica dei materiali?",
+    "back": "Che il grafene ha spessore di un solo atomo: larghezza e lunghezza esistono ma l'altezza è pari al diametro di un atomo di carbonio\n\nIl grafene è uno strato singolo di atomi di carbonio disposti in griglia esagonale. Ha larghezza e lunghezza (infinita in teoria), ma in altezza ha le dimensioni di un singolo atomo: ~0,34 nm (un nanometro è un milionesimo di mm). È il primo materiale veramente bidimensionale isolato. La sua natura 2D gli conferisce proprietà eccezionali.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché la cellulosa batterica è considerata promettente come materiale innovativo?",
+    "back": "Perché ha struttura nanometrica ultra-pura con alta resistenza meccanica e biodegradabilità, adatta per medicazioni avanzate e packaging\n\nLa cellulosa batterica (prodotta da batteri Acetobacter e altri) ha struttura nanometrica ultra-pura: senza lignina, emicellulosa o impurità. Alta resistenza meccanica, ottima biocompatibilità, biodegradabilità. Si usa in medicazioni avanzate per ferite croniche, membrane per dialisi, packaging biotecnologico.",
+    "tag": "Base"
+  },
+  {
+    "front": "Perché una posata compostabile in PLA non va buttata nell'umido domestico in molti comuni italiani?",
+    "back": "Perché il PLA si degrada solo in impianti industriali a 55-60°C: nel compostaggio domestico rimane quasi intatto e poi finisce in discarica come i rifiuti normali\n\nIl PLA si degrada efficacemente SOLO in compostaggio industriale (55-60°C). In compostaggio domestico (temperatura ambiente, 20-30°C) si degrada molto lentamente. Se un comune non ha un impianto di compostaggio industriale certificato che accetta bioplastiche, le posate in PLA finiscono in discarica. Il corretto smaltimento delle bioplastiche richiede l'infrastruttura giusta.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'grafene' e perché è considerato il materiale del futuro?",
-    "back": "Un singolo strato di atomi di carbonio in struttura esagonale: conduce elettricità meglio del rame, è più resistente dell'acciaio, è quasi trasparente\n\nIl grafene ha proprietà straordinarie su ogni dimensione. La sfida è produrlo in quantità industriali a costo competitivo. Nobel per la Fisica 2010 (Geim e Novoselov).",
+    "front": "Perché il grafene è 200 volte più resistente dell'acciaio a parità di peso ma non è ancora usato nelle costruzioni?",
+    "back": "Perché produrlo di alta qualità in grandi quantità rimane costoso e tecnicamente molto difficile con i metodi attuali\n\nIl grafene ha proprietà eccezionali, ma la produzione di grafene ad alta qualità (grande area superficiale, pochi difetti) a costi industriali competitivi rimane la sfida principale. Il metodo CVD (Chemical Vapour Deposition) su substrati metallici è scalabile ma ancora costoso. Attualmente il grafene è economicamente conveniente solo per applicazioni ad alto valore aggiunto.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'cradle-to-cradle' (C2C) design?",
-    "back": "Un approccio dove ogni materiale è progettato come 'nutrimento biologico' (torna in natura) o 'nutrimento tecnico' (torna in produzione): zero rifiuti per design\n\nIl C2C va oltre il riciclo: ridisegna il prodotto dall'origine. McDonough e Braungart (2002) hanno proposto il paradigma che ha ispirato l'economia circolare.",
+    "front": "Il Mater-Bi della Novamont è un biopolimero da amido di mais usato nei sacchetti compostabili. Qual è il suo vantaggio principale rispetto al sacchetto di plastica convenzionale?",
+    "back": "Se smaltito correttamente in un impianto di compostaggio industriale, si degrada in compost invece di persistere come plastica per centinaia di anni\n\nIl Mater-Bi compostabile (da amido di mais, Novamont) si degrada in impianti di compostaggio industriale certificati in poche settimane, producendo compost. La plastica convenzionale persiste per centinaia di anni. Il vantaggio è nella fine vita. Ma la condizione è avere l'impianto giusto: senza di esso, anche il Mater-Bi finisce in discarica.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è un 'materiale a cambiamento di fase' (PCM) e come funziona?",
-    "back": "Un materiale che accumula o rilascia grandi quantità di calore latente durante la transizione di fase (es. solido↔liquido), mantenendo temperatura costante\n\nLa paraffina scioglie a 25-30°C assorbendo calore. Integrata nelle pareti, raffredda gli ambienti di giorno (assorbe calore) e rilascia di notte. Edilizia passiva ad alta efficienza.",
+    "front": "Come si valuta la sostenibilità complessiva di un materiale innovativo?",
+    "back": "Valutando l'intero ciclo di vita: materie prime, processo produttivo, energia usata, durata, fine vita e impatto su ecosistemi\n\nLa sostenibilità di un materiale si valuta con l'LCA (Life Cycle Assessment): 1) materie prime (rinnovabili? critiche?); 2) processo produttivo (energia, emissioni, acqua); 3) uso (durata, manutenzione, prestazioni); 4) fine vita (riciclabile, compostabile, discarica). Un materiale 'ecologico' in una fase può avere grandi impatti in un'altra.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché i materiali compositi come la fibra di carbonio hanno proprietà superiori ai singoli componenti (fibra + resina)?",
+    "back": "Perché i due materiali vengono uniti in modo da combinare le proprietà eccellenti di ciascuno: la fibra dà resistenza, la matrice dà coesione e forma\n\nIl composito sfrutta le proprietà migliori di ciascun componente: la fibra (carbonio, vetro, aramide) fornisce altissima resistenza meccanica; la matrice (resina epossidica, polimerica) tiene le fibre insieme, distribuisce i carichi, dà forma e regge la compressione. Il risultato: resistenza specifica (per unità di peso) superiore ai singoli componenti. '1+1=3' nel composito.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché i materiali innovativi non sostituiranno immediatamente i materiali tradizionali anche quando sono tecnicamente superiori?",
+    "back": "Perché il costo di produzione dei materiali innovativi è spesso ancora molto alto e la scalabilità della produzione richiede tempo e investimenti enormi\n\nI materiali innovativi (grafene, PHA, compositi avanzati) hanno proprietà superiori, ma la transizione richiede: 1) riduzione dei costi di produzione (scala industriale); 2) sviluppo di processi produttivi affidabili; 3) standard normativi; 4) catene di fornitura; 5) fiducia degli utilizzatori industriali. Tutti questi richiedono tempo e investimenti enormi.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un'azienda di packaging alimentare deve scegliere tra plastica PET e PLA compostabile per i vasetti dello yogurt. Quali sono i fattori determinanti?",
+    "back": "La disponibilità di impianti di compostaggio industriale nel mercato target, le proprietà barriera richieste, il costo, e le aspettative del consumatore sul packaging sostenibile\n\nLa scelta PET vs. PLA per packaging yogurt dipende da: 1) Infrastrutture locali: esiste raccolta e compostaggio industriale? Senza di esse il PLA finisce in discarica. 2) Proprietà barriera: il PLA ha barriera a O₂ e CO₂ inferiore al PET (problema per prodotti deperibili). 3) Costo: PLA costa 2-3x più del PET. 4) Comunicazione: il consumatore sa cosa fare del vasetto?",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è la 'nanotecnologia' e quali applicazioni ha nei materiali?",
-    "back": "La manipolazione della materia a scala nanometrica (1-100 nm) per creare materiali con proprietà radicalmente nuove: nanoparticelle d'argento antibatteriche, nanotubi di carbonio per compositi ultra-leggeri\n\nA scala nanometrica i materiali si comportano diversamente: l'oro diventa rosso, l'alluminio diventa combustibile. La nanotecnologia apre proprietà fisiche altrimenti impossibili.",
+    "front": "Il grafene conduce l'elettricità meglio del rame ma non lo sostituirà nell'immediato nei cavi elettrici. Perché?",
+    "back": "Perché produrre chilometri di filo di grafene di alta qualità e a costi competitivi con il rame è tecnicamente molto difficile con i processi attuali\n\nIl grafene conduce l'elettricità a velocità paragonabili alla luce e senza quasi resistenza. Ma produrre 'filo di grafene' lungo, continuo, senza difetti su scala industriale è tecnicamente molto difficile con i metodi attuali. Il rame ha processi produttivi maturi, costi bassi, infrastrutture esistenti. Il grafene sostituirà il rame solo quando la produzione sarà scalabile e competitiva.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cosa si intende per 'economia circolare' nel ciclo dei materiali?",
-    "back": "Un modello economico che mantiene i materiali in uso il più a lungo possibile, massimizzando il valore e minimizzando i rifiuti: fine vita = inizio di un nuovo ciclo\n\nL'economia circolare contrappone al modello lineare 'estrai-produci-usa-butta'. Il valore dei materiali è mantenuto nel sistema attraverso riuso, riparazione, ricondizionamento e riciclo.",
+    "front": "Perché avere prodotti da fonti rinnovabili (bio-based) non garantisce automaticamente un impatto ambientale inferiore ai prodotti da petrolio?",
+    "back": "Perché le colture bio-based (mais, canna da zucchero) richiedono terreno agricolo, acqua e pesticidi che hanno il loro impatto ambientale\n\nBio-based non garantisce automaticamente minore impatto ambientale. Coltivare le colture bio-based richiede: suolo (possibilmente deforestato), acqua (spesso scarsa), pesticidi e fertilizzanti (emissioni N₂O), macchinari agricoli (CO₂). La raffinazione chimica richiede energia. Un LCA completo può mostrare che in certi contesti il PET da petrolio ha impatto inferiore al PLA da mais.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il packaging di un caffè in capsula è in alluminio. Un produttore vuole passare a capsule compostabili. Quali sfide specifiche deve affrontare?",
+    "back": "Trovare un materiale compostabile con barriera a ossigeno, umidità e aromi equivalente all'alluminio (che protegge il caffè per 12-18 mesi), e garantire l'accesso degli utenti al compostaggio industriale\n\nSostituire l'alluminio nelle capsule caffè con materiali compostabili richiede: 1) proprietà barriera a O₂, umidità e aromi equivalenti (il caffè ossidato non sa di caffè); 2) tenuta alla pressione dell'espresso; 3) disponibilità di impianti di compostaggio industriale per gli utenti; 4) costo accettabile. È un problema tecnico-infrastrutturale, non solo di marketing.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il PHA (poleidrossialcanoato) prodotto da batteri è 'biodegradabile anche in acqua di mare'. Qual è l'implicazione pratica più importante?",
+    "back": "Che a differenza del PLA (che richiede impianti industriali), il PHA limita i danni di dispersioni accidentali nell'ambiente, degradandosi anche fuori da impianti controllati\n\nLa biodegradabilità del PHA in acqua di mare e in suolo (non solo in compostaggio industriale come il PLA) è cruciale per materiali che possono dispersi accidentalmente nell'ambiente. Le reti da pesca abbandonate in nylon persistono secoli. Un'equivalente in PHA si degraderebbe in mesi. È la differenza critica tra un 'safety net' per dispersioni accidentali e un persistente inquinante.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un laboratorio di ricerca ha sviluppato un nuovo materiale con resistenza pari all'acciaio ma peso pari all'alluminio, prodotto da biomassa. È pronto per il mercato?",
+    "back": "Non necessariamente: servono ancora scalabilità della produzione, valutazione del costo, test di durata, standard normativi, catene di fornitura e fiducia degli utilizzatori\n\nDal risultato di laboratorio al prodotto di mercato il percorso tipico dura 10-20 anni e include: 1) Scalabilità della produzione (da grammi a tonnellate); 2) Costo competitivo a scala; 3) Test di durabilità in condizioni reali (vibrazioni, temperature, corrosione su anni); 4) Standard normativi (ingegneri strutturali non usano materiali senza norme); 5) Supply chain; 6) Certificazioni settoriali. Le scoperte di laboratorio richiedono decenni per arrivare al mercato.",
     "tag": "Avanzato"
   }
 ]

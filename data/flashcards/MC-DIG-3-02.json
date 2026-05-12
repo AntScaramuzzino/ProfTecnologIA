@@ -1,47 +1,92 @@
 [
   {
-    "front": "Cosa si intende per 'machine learning'?",
-    "back": "Un sistema che apprende da dati migliorando le proprie prestazioni senza essere esplicitamente programmato per ogni caso\n\nIl machine learning è la base dell'IA moderna: invece di regole scritte dal programmatore, il sistema le ricava dai dati.",
+    "front": "Cos'è il 'Test di Turing' e cosa afferma Alan Turing?",
+    "back": "Un esperimento mentale: se un umano non riesce a capire se sta parlando con una macchina o un altro umano, la macchina può essere considerata 'intelligente'\n\nAlan Turing propone nel 1950 il test: se un essere umano, conversando per iscritto, non riesce a capire se sta parlando con un uomo o una macchina, la macchina può essere considerata 'intelligente'. Il testo precisa: Turing non stava dicendo che una macchina che supera il test capisce davvero — stava solo definendo un criterio operativo per una domanda filosoficamente difficile.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è un 'dataset' nell'addestramento di un modello AI?",
-    "back": "L'insieme di dati (esempi, immagini, testi) usato per addestrare un modello AI a riconoscere pattern\n\nUn dataset di qualità è fondamentale: garbage in, garbage out. Dati distorti producono modelli distorti.",
+    "front": "Cosa sono le 'allucinazioni' in un modello linguistico come ChatGPT?",
+    "back": "Risposte false prodotte con lo stesso tono sicuro delle risposte vere, perché il modello genera testo plausibile indipendentemente dalla sua verità\n\nLe allucinazioni sono risposte false prodotte da un LLM con lo stesso tono sicuro delle risposte vere. Il modello genera il token statisticamente più probabile, ma 'plausibile' non significa 'corretto'. Esempi: citazioni scientifiche con titoli, autori e riviste plausibili ma non esistenti; eventi storici con date errate descritti in modo fluente.",
     "tag": "Base"
   },
   {
-    "front": "Cosa fa un algoritmo di 'classificazione'?",
-    "back": "Assegna ogni dato a una categoria predefinita: es. 'spam/non spam', 'cane/gatto', 'positivo/negativo'\n\nLa classificazione è uno dei compiti più comuni del ML: riconoscimento facciale, diagnosi mediche, filtri email.",
+    "front": "Cosa ha dimostrato lo studio Gender Shades (2018) di Joy Buolamwini?",
+    "back": "Che i sistemi commerciali di classificazione del genere avevano tassi di errore fino al 34,7% per le donne con pelle scura, contro meno dell'1% per gli uomini con pelle chiara\n\nJoy Buolamwini e Timnit Gebru (2018) hanno analizzato sistemi commerciali di classificazione del genere da immagine facciale. Risultati: errore < 1% per uomini dalla pelle chiara; errore fino al 34,7% per donne dalla pelle scura. Causa: dataset di addestramento prevalentemente composti da volti maschili e di pelle chiara — il sistema aveva imparato dai dati disponibili, che erano sbilanciati.",
     "tag": "Base"
   },
   {
-    "front": "Cos'è il 'bias' (distorsione) in un modello AI e perché è pericoloso?",
-    "back": "Una distorsione sistematica nelle previsioni del modello, spesso derivante da dati di addestramento non rappresentativi\n\nUn modello addestrato su dati sbilanciati riproduce e amplifica i bias: sistemi di riconoscimento facciale con prestazioni peggiori per persone di colore ne sono un esempio documentato.",
+    "front": "Cos'è l'apprendimento supervisionato nel machine learning?",
+    "back": "Il sistema riceve esempi etichettati (input + output corretto) e impara a riprodurre l'associazione su nuovi input mai visti\n\nNell'apprendimento supervisionato il sistema riceve coppie (input, output corretto) chiamate esempi etichettati. Un classificatore di email spam viene addestrato su 100.000 email già etichettate come 'spam' o 'non spam'. Dopo l'addestramento, data una nuova email non etichettata, il sistema predice la categoria. Applicazioni: riconoscimento di immagini, traduzione automatica, diagnosi medica.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa stabilisce il rischio 'inaccettabile' nell'AI Act europeo (2024)?",
+    "back": "Sistemi come il social scoring, la manipolazione subliminale e il riconoscimento biometrico in tempo reale in spazi pubblici — vietati esplicitamente\n\nL'AI Act (agosto 2024) classifica i sistemi AI per rischio. Rischio inaccettabile (vietati): social scoring basato su caratteristiche protette, manipolazione subliminale, classificazione per etnia/religione/orientamento sessuale, riconoscimento delle emozioni al lavoro e a scuola, identificazione biometrica in tempo reale in spazi pubblici (con eccezioni).",
+    "tag": "Base"
+  },
+  {
+    "front": "Come genera testo un LLM (Large Language Model) come GPT-4?",
+    "back": "Dato un testo di input, calcola per ogni possibile token successivo la probabilità che compaia in quella posizione e seleziona token con alta probabilità uno alla volta\n\nUn LLM genera testo un token alla volta: dato il testo di input, calcola la distribuzione di probabilità su tutti i possibili token successivi e seleziona uno con alta probabilità. Il processo si ripete finché la risposta è completa. Il parametro 'temperature' controlla la casualità: bassa = risposte conservative; alta = risposte creative ma meno accurate.",
+    "tag": "Base"
+  },
+  {
+    "front": "Il caso COMPAS del 2016 mostra un AI usato nei tribunali americani per predire la recidiva. Qual era il bias documentato e cosa lo causava?",
+    "back": "Il sistema classificava erroneamente i cittadini neri come 'ad alto rischio' quasi il doppio delle volte rispetto ai bianchi, perché i dati storici riflettevano discriminazioni storiche nel sistema penale\n\nProPublica ha analizzato 7.000 casi in Florida: il sistema COMPAS classificava erroneamente i cittadini neri come 'ad alto rischio di recidiva' il 28% delle volte vs il 16% per i bianchi. La causa: i dati storici di addestramento riflettevano discriminazioni già presenti nel sistema penale. Il sistema ha imparato — e amplificato — le disuguaglianze preesistenti.",
     "tag": "Intermedio"
   },
   {
-    "front": "Cosa distingue un modello 'supervised' da uno 'unsupervised'?",
-    "back": "Nel supervised i dati di addestramento hanno etichette (risposta corretta nota); nell'unsupervised il modello trova pattern da solo nei dati non etichettati\n\nSupervised: imparare con un insegnante. Unsupervised: esplorare da soli. Ogni approccio ha applicazioni diverse.",
+    "front": "Cosa si intende per 'inverni dell'IA' nella storia dell'intelligenza artificiale?",
+    "back": "Periodi di riduzione drastica dei finanziamenti e dell'interesse verso l'IA, dopo che le promesse ottimistiche non si erano realizzate nei tempi previsti\n\nLa storia dell'IA alterna cicli di ottimismo esagerato e delusione ('inverni'). Primo inverno (1969-1974): le promesse degli anni '50 ('entro 20 anni macchine che fanno qualsiasi lavoro umano') si rivelano irrealistiche. Secondo inverno (1987-1993): i sistemi esperti falliscono. La lezione: 'ogni nuova tecnologia viene sopravvalutata nel breve periodo e spesso sottovalutata nel lungo.'",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è il 'transfer learning' e perché è importante?",
-    "back": "La tecnica che permette di riutilizzare un modello pre-addestrato su un compito per adattarlo a un compito simile con pochi dati aggiuntivi\n\nGPT, BERT, ResNet: questi modelli enormi vengono 'raffinati' (fine-tuning) per applicazioni specifiche con pochi esempi. È la base dell'IA generativa moderna.",
+    "front": "Perché il Box T8 stabilisce che 'mai descrivere l'IA senza menzionare errori, limiti, verifica, controllo umano'?",
+    "back": "Perché ogni sistema AI sbaglia, ha limiti di dominio, può produrre allucinazioni, e le decisioni significative devono rimanere in mano a esseri umani responsabili\n\nIl Box T8 stabilisce 4 principi obbligatori per ogni MC che parla di IA: Errori (il tasso di errore zero non esiste), Limiti (ogni sistema ha un dominio di competenza specifico), Verifica (ogni output factual va verificato su fonti indipendenti), Controllo umano (per decisioni significative — assunzione, credito, diagnosi — la decisione finale deve rimanere umana).",
     "tag": "Intermedio"
   },
   {
-    "front": "Cos'è la 'explainability' (spiegabilità) nell'AI e perché è fondamentale in certi ambiti?",
-    "back": "La capacità di un sistema AI di spiegare come ha preso una decisione: fondamentale in medicina, giustizia e credito dove le decisioni impattano diritti\n\nUn modello che nega un mutuo o suggerisce una diagnosi deve poter spiegare perché. Il regolamento EU AI Act impone explainability per i sistemi ad alto rischio.",
+    "front": "Cosa ha rivoluzionato la ricerca AI nel 2012 con AlexNet, rispetto ai metodi precedenti?",
+    "back": "AlexNet ha usato reti neurali profonde addestrate su GPU, ottenendo il 15,3% di errore contro il 26,2% del secondo classificato — aprendo l'era del deep learning\n\nAl contest ImageNet 2012, AlexNet di Geoffrey Hinton ha ottenuto il 15,3% di errore contro il 26,2% del secondo classificato — quasi la metà. AlexNet usava una rete neurale profonda addestrata su GPU. Il risultato ha dimostrato che il deep learning con GPU era decisamente superiore ai metodi precedenti, aprendo l'era moderna dell'IA.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché ChatGPT ha raggiunto 1 milione di utenti in 5 giorni (vs 75 giorni di Instagram) ed è considerato un momento di svolta?",
+    "back": "Perché ha reso accessibile a chiunque un sistema capace di conversare, scrivere e spiegare in linguaggio naturale — democratizzando l'IA generativa\n\nChatGPT (novembre 2022) ha raggiunto 1 milione di utenti in 5 giorni — Instagram ne aveva impiegati 75, Netflix 41 mesi. La ragione: ha reso accessibile a chiunque l'IA generativa. Per la prima volta senza competenze tecniche si poteva conversare, ottenere spiegazioni, generare testi e codice. Il testo lo chiama 'democratizzazione dell'IA generativa'.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa impara un sistema AI con l'apprendimento per rinforzo, e come lo usa AlphaGo?",
+    "back": "Impara attraverso interazione con un ambiente, ricevendo ricompense per azioni corrette. AlphaGo si è allenato giocando milioni di partite contro se stesso, imparando da vittorie e sconfitte\n\nL'apprendimento per rinforzo: un agente interagisce con un ambiente, riceve ricompense per azioni corrette e penalità per quelle sbagliate, e aggiorna la strategia per massimizzare le ricompense totali. AlphaGo ha usato prima apprendimento supervisionato (milioni di partite umane), poi per rinforzo (milioni di partite contro se stesso). Alla mossa 78 della 4° partita, Lee Sedol ha giocato una mossa che AlphaGo non aveva mai visto.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un LLM citato ha detto che 'il ricercatore italiano Marco Bertoni ha contribuito alla teoria della relatività'. Come si verifica questa affermazione e cosa ci si aspetta?",
+    "back": "Si cerca su Google Scholar e sull'Enciclopedia Treccani — quasi certamente non si trova nessun 'Marco Bertoni' nella storia della relatività, rivelando un'allucinazione classica\n\nIl testo descrive il 'test di allucinazione deliberata' nell'esperimento avanzato: chiedere di un personaggio immaginario che suona plausibile. Il LLM spesso genera una biografia dettagliata e convincente. La verifica su Google Scholar, Treccani o simili mostra che il personaggio non esiste. Questa è un'allucinazione classica: informazione falsa presentata con sicurezza.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è l'AI Act europeo e quali categorie di rischio prevede?",
-    "back": "Il primo regolamento globale sull'AI: classifica i sistemi AI per livello di rischio (inaccettabile/alto/limitato/minimo) e impone requisiti proporzionali\n\nL'AI Act UE è il primo framework regolatorio globale: vieta certi usi (punteggio sociale), regolamenta altri (IA in medicina, giustizia), lascia liberi quelli a basso rischio.",
+    "front": "Il sistema di raccomandazione della biblioteca proposto nella SPERIMENTA Avanzata deve 'diversificare le letture'. Perché un sistema supervisionato che impara dalle preferenze passate va contro questo obiettivo?",
+    "back": "Perché un sistema che apprende dalle preferenze passate tende a consigliare 'più dello stesso', creando una 'bubble effect' che riduce la varietà delle letture invece di ampliarla\n\nIl bubble effect dei sistemi di raccomandazione: se uno studente ha letto solo fantasy, il sistema raccomanda solo fantasy (massimizza la probabilità di lettura). L'obiettivo della biblioteca è diversificare — obiettivo opposto. La soluzione richiede vincoli espliciti (es. quota minima di generi diversi, autori di culture diverse) che vanno contro la pura ottimizzazione delle preferenze.",
     "tag": "Avanzato"
   },
   {
-    "front": "Cos'è un 'Large Language Model' (LLM) e come funziona a livello concettuale?",
-    "back": "Un modello addestrato su miliardi di testi che impara a predire il token successivo: emergono capacità di ragionamento, traduzione e generazione\n\nGPT, Claude, Gemini sono LLM. Addestrati a predire la parola successiva su trilioni di token, 'emergono' capacità che non erano state programmate esplicitamente.",
+    "front": "Perché la statistica GDPR del 2016 citata dal testo (82% degli studenti che non distinguono pubblicità da articolo giornalistico) è collegata all'SDG 16?",
+    "back": "Perché l'SDG 16 chiede istituzioni solide e partecipazione democratica: riconoscere la disinformazione è un prerequisito per essere cittadini informati e per la tenuta delle istituzioni democratiche\n\nIl collegamento è esplicito nel testo: 'La disinformazione è una minaccia diretta all'SDG 16: mina la fiducia nelle istituzioni, polarizza l'opinione pubblica, può influenzare elezioni.' Se l'82% degli studenti non distingue pubblicità da articolo giornalistico, la base informativa della democrazia è fragile. Saper valutare le fonti 'è esercizio attivo di cittadinanza democratica.'",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché, secondo il collegamento STEM-Matematica, la questione della 'giustizia algoritmica' (come nel caso COMPAS) non è solo filosofica ma matematica?",
+    "back": "Perché le disuguaglianze algoritmiche sono misurabili con metriche statistiche precise (sensitivity, specificity, false positive rate per gruppo demografico) e le scelte di quali metriche ottimizzare riflettono valori umani\n\nIl collegamento STEM spiega: quando ProPublica ha analizzato COMPAS, ha misurato sensitivity, specificity e false positive rate separatamente per gruppo demografico. Questi sono strumenti statistici precisi che rendono il problema misurabile. 'Le scelte di quali metriche ottimizzare riflettono scelte di valori': ottimizzare l'accuratezza complessiva può nascondere disuguaglianze per sottogruppi.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Il test di bias nella SPERIMENTA Avanzata chiede di porre la stessa domanda variando genere ed etnia (es. 'grandi architetti del XX secolo' vs 'grandi architetti donne' vs 'grandi architetti africani'). Cosa ci si aspetta di trovare e cosa significa?",
+    "back": "Ci si aspetta differenze: la risposta su 'architetti' sarà più ricca che su 'architetti donne' o 'africani', riflettendo bias nel corpus di addestramento che a sua volta riflette disuguaglianze storiche nella rappresentazione culturale\n\nIl test di bias confronta le risposte del LLM su 'architetti del XX secolo' vs 'architetti donne' vs 'architetti africani'. Il testo dice: 'Confronta le risposte. Cosa osservi?' Ci si aspetta differenze quantitative e qualitative che riflettono bias nel corpus di addestramento — a sua volta specchio delle disuguaglianze storiche nella rappresentazione e documentazione culturale.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché l'errore comune 'L'IA non ha opinioni, quindi è neutrale e obiettiva' è sbagliato secondo il testo?",
+    "back": "Perché ogni scelta di design (quali dati usare, quale funzione ottimizzare, quale architettura scegliere) riflette preferenze e valori umani — un LLM su dati anglofoni dà risposte migliori su argomenti anglofoni\n\nIl testo spiega: 'Nessun sistema AI è neutrale. Ogni scelta — quali dati usare, quale funzione ottimizzare, quale architettura scegliere — riflette le preferenze e i valori di chi ha costruito il sistema.' Un LLM addestrato su testo prevalentemente anglofono dà risposte migliori su argomenti anglofoni. Un sistema ottimizzato per il 'tempo di sessione' mostra contenuti che tengono incollati allo schermo, non necessariamente utili.",
     "tag": "Avanzato"
   }
 ]
