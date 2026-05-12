@@ -25,6 +25,8 @@ import { useMemo, useCallback, useState, useEffect } from "react";
 import { MCNavigator, type NavigatorTab } from "@/components/mc/MCNavigator";
 import { AccordionSection, type AccordionItem } from "@/components/mc/AccordionSection";
 import { LevelTabs, type DigCompLevel } from "@/components/mc/LevelTabs";
+import ChecklistWidget from "@/components/mc/ChecklistWidget";
+import ProcessWidget from "@/components/mc/ProcessWidget";
 import { CalloutBoxFromText } from "@/components/mc/CalloutBox";
 import { RubricaDrawer } from "@/components/mc/RubricaDrawer";
 import AudioPlayer from "@/components/mc/AudioPlayer";
@@ -328,11 +330,42 @@ function ZonePanel({
   text?: MCTextContent | null;
   quizData?: QuizQuestion[] | null;
   flashcards?: FlashcardItem[];
+  microlearningData?: MicrolearningInteractives | null;
 }) {
   // ── RIPASSA — non dipende da sezione MD, render sempre ───────────────────
   if (tabId === "RIPASSA") {
     return (
       <div className="space-y-8 px-4 py-6 sm:px-6">
+
+        {/* Process — passi chiave del concetto */}
+        {microlearningData?.process && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              🔄 Processo
+            </p>
+            <ProcessWidget
+              titolo={microlearningData.process.titolo}
+              steps={microlearningData.process.steps}
+              areaHex={areaHex}
+            />
+          </div>
+        )}
+
+        {/* Checklist — attività di verifica pratica */}
+        {microlearningData?.checklist && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              ✅ Checklist
+            </p>
+            <ChecklistWidget
+              titolo={microlearningData.checklist.titolo}
+              istruzione={microlearningData.checklist.istruzione}
+              voci={microlearningData.checklist.voci}
+              areaHex={areaHex}
+            />
+          </div>
+        )}
+
         {/* Quiz interattivo */}
         {quizData && quizData.length > 0 && (
           <div>
@@ -357,11 +390,9 @@ function ZonePanel({
           </div>
         )}
 
-        {(!quizData || quizData.length === 0) && (!flashcards || flashcards.length === 0) && (
+        {!microlearningData && (!quizData || quizData.length === 0) && (!flashcards || flashcards.length === 0) && (
           <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
-            <p className="text-sm text-slate-500">
-              Quiz e flashcard per questa MC saranno disponibili prossimamente.
-            </p>
+            <p className="text-sm text-slate-500">Contenuti di ripasso in arrivo.</p>
           </div>
         )}
       </div>
@@ -600,6 +631,7 @@ export function MCPageClient({
             text={text}
             quizData={quizData}
             flashcards={flashcards}
+            microlearningData={microlearningData}
           />
         )}
       </MCNavigator>
