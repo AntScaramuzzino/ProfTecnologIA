@@ -2,12 +2,10 @@
 
 /**
  * ProfessioneCard — Professione del Futuro 2030
- *
- * Visualizza l'immagine img4-professione + titolo + descrizione + competenze
- * della professione futura collegata alla MC. Posizionata nella zona OSSERVA.
+ * Usa <img> plain (stessa strategia di MCVisual) per compatibilità GitHub Pages / static export.
  */
 
-import Image from "next/image";
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export interface ProfessioneFutura {
   titolo: string;
@@ -23,8 +21,7 @@ interface ProfessioneCardProps {
 }
 
 export default function ProfessioneCard({ professione, mcId, areaHex }: ProfessioneCardProps) {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-  const imgSrc = `${basePath}/assets/visual/${mcId}/${mcId}_img4-professione.png`;
+  const imgSrc = `${BASE_PATH}/assets/visual/${mcId}/${mcId}_img4-professione.png`;
 
   return (
     <div
@@ -50,15 +47,12 @@ export default function ProfessioneCard({ professione, mcId, areaHex }: Professi
       {/* Immagine + contenuto */}
       <div className="flex flex-col sm:flex-row">
         {/* Immagine */}
-        <div className="relative h-52 w-full shrink-0 overflow-hidden sm:h-auto sm:w-64 lg:w-72">
-          <Image
+        <div className="h-56 w-full shrink-0 overflow-hidden sm:h-auto sm:w-64 lg:w-72">
+          <img
             src={imgSrc}
             alt={`Professione del futuro: ${professione.titolo}`}
-            fill
-            className="object-cover"
-            sizes="(max-width: 640px) 100vw, 288px"
+            className="h-full w-full object-cover"
             onError={(e) => {
-              // Nascondi il contenitore immagine se il file non esiste
               (e.currentTarget.parentElement as HTMLElement).style.display = "none";
             }}
           />
@@ -86,7 +80,10 @@ export default function ProfessioneCard({ professione, mcId, areaHex }: Professi
                   <span
                     key={comp}
                     className="rounded-full border px-2.5 py-0.5 text-xs font-semibold text-slate-700"
-                    style={{ borderColor: areaHex ? `${areaHex}55` : "#d1d5db", backgroundColor: areaHex ? `${areaHex}0D` : "#f8fafc" }}
+                    style={{
+                      borderColor: areaHex ? `${areaHex}55` : "#d1d5db",
+                      backgroundColor: areaHex ? `${areaHex}0D` : "#f8fafc",
+                    }}
                   >
                     {comp}
                   </span>
