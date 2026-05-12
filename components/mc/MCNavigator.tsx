@@ -32,23 +32,12 @@ const DEFAULT_TABS: NavigatorTab[] = [
 ];
 
 export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onForcedTabConsumed, children }: MCNavigatorProps) {
-  // P1.2 — localStorage persistence (mcId opzionale per namespace per MC)
-  const storageKey = `mc-nav-tab-${tabs.map(t => t.id).join(",")}`;
-  const [activeId, setActiveId] = useState<string>(() => {
-    // Non accedere a localStorage durante SSR
-    if (typeof window === "undefined") return tabs[0]?.id ?? "INNESCA";
-    try {
-      const saved = window.localStorage.getItem(storageKey);
-      if (saved && tabs.some((t) => t.id === saved)) return saved;
-    } catch { /* ignore */ }
-    return tabs[0]?.id ?? "INNESCA";
-  });
+  // Sempre parte da INNESCA (tabs[0]) — non legge localStorage per l'apertura iniziale
+  const [activeId, setActiveId] = useState<string>(tabs[0]?.id ?? "INNESCA");
 
-  // Persiste la tab attiva su localStorage ad ogni cambio
   const persistTab = useCallback((id: string) => {
     setActiveId(id);
-    try { window.localStorage.setItem(storageKey, id); } catch { /* ignore */ }
-  }, [storageKey]);
+  }, []);
   const navRef = useRef<HTMLDivElement>(null);
   const panelId = useId();
 
@@ -97,9 +86,9 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
               data-tab={tab.id}
               onClick={() => persistTab(tab.id)}
               className={cx(
-                "flex shrink-0 flex-col items-center gap-0.5 px-3 py-2.5 text-center",
-                "text-xs font-black uppercase tracking-wider transition-colors duration-150",
-                "min-w-[72px] sm:min-w-[88px] sm:px-4 sm:py-3 sm:text-sm",
+                "flex shrink-0 flex-col items-center gap-0 px-2 py-2 text-center",
+                "text-[10px] font-black uppercase tracking-tight transition-colors duration-150",
+                "min-w-[56px] sm:min-w-[80px] sm:gap-0.5 sm:px-4 sm:py-3 sm:text-sm sm:tracking-wider",
                 "border-b-[3px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-1",
                 isActive
                   ? "border-b-current text-slate-900"
@@ -108,7 +97,7 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
               style={isActive && areaHex ? { borderBottomColor: areaHex, color: "#0f172a" } : undefined}
             >
               {tab.emoji && (
-                <span className="text-base leading-none sm:text-lg" aria-hidden>
+                <span className="text-sm leading-none sm:text-lg" aria-hidden>
                   {tab.emoji}
                 </span>
               )}

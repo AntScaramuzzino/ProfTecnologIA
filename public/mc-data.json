@@ -37,7 +37,7 @@
         "visual": "Schema anatomia del computer: vista esplosa con etichette e funzioni.",
         "livelloDigComp": "F"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "hardware",
         "software",
@@ -55,7 +55,45 @@
       "note_didattiche": {
         "base": "Usare uno schema già etichettato con 4 componenti. Lo studente deve solo abbinare la funzione.",
         "avanzato": "Costruire un glossario personale dei componenti hardware con immagini cercate autonomamente e una frase descrittiva per ciascuno."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.6,
+        "durata_secondi": 214
+      },
+      "professione_futura": {
+        "titolo": "Digital Literacy Educator",
+        "orizzonte": "2030",
+        "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+        "competenze_chiave": [
+          "DigComp 3.0",
+          "media literacy",
+          "cybersecurity base",
+          "formazione digitale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "privacy",
+          "inglese": "privacy",
+          "ipa": "ˈprɪvəsi"
+        },
+        {
+          "italiano": "algoritmo",
+          "inglese": "algorithm",
+          "ipa": "ˈælɡərɪðəm"
+        },
+        {
+          "italiano": "sicurezza informatica",
+          "inglese": "cybersecurity",
+          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-DIG-1-02",
@@ -112,7 +150,45 @@
       "note_didattiche": {
         "base": "Fornire le 3 fonti già selezionate e la checklist pre-stampata. Lo studente compila solo i punteggi.",
         "avanzato": "Cercare autonomamente le 3 fonti, applicare la checklist e scrivere un paragrafo critico sulle differenze trovate."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.5,
+        "durata_secondi": 212
+      },
+      "professione_futura": {
+        "titolo": "Cybersecurity Analyst",
+        "orizzonte": "2030",
+        "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
+        "competenze_chiave": [
+          "sicurezza informatica",
+          "analisi vulnerabilità",
+          "GDPR",
+          "ethical hacking"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "privacy",
+          "inglese": "privacy",
+          "ipa": "ˈprɪvəsi"
+        },
+        {
+          "italiano": "algoritmo",
+          "inglese": "algorithm",
+          "ipa": "ˈælɡərɪðəm"
+        },
+        {
+          "italiano": "sicurezza informatica",
+          "inglese": "cybersecurity",
+          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-DIS-1-01",
@@ -150,7 +226,7 @@
         "visual": "Poster sintetico: 6 costruzioni fondamentali con nome, strumenti, procedura in 3 passi.",
         "livelloDigComp": "F"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "disegno tecnico",
         "geometria",
@@ -166,7 +242,45 @@
       "note_didattiche": {
         "base": "Fornire il foglio già impostato con la cornice e il cartiglio. Lo studente deve solo eseguire la costruzione indicata.",
         "avanzato": "Aggiungere una seconda pianta in scala diversa (1:50) e discutere come cambia la rappresentazione."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.6,
+        "durata_secondi": 218
+      },
+      "professione_futura": {
+        "titolo": "BIM Designer / Architetto Digitale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+        "competenze_chiave": [
+          "BIM modeling",
+          "AutoCAD",
+          "Revit",
+          "disegno tecnico avanzato"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "scala",
+          "inglese": "scale",
+          "ipa": "skeɪl"
+        },
+        {
+          "italiano": "proiezione",
+          "inglese": "projection",
+          "ipa": "prəˈdʒekʃən"
+        },
+        {
+          "italiano": "sezione",
+          "inglese": "cross-section",
+          "ipa": "krɒs ˈsekʃən"
+        },
+        {
+          "italiano": "disegno tecnico",
+          "inglese": "technical drawing",
+          "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-DIS-1-02",
@@ -222,7 +336,45 @@
       "note_didattiche": {
         "base": "Fornire la scala già calcolata. Lo studente deve solo disegnare e apporre le quote su un oggetto semplice (cubo).",
         "avanzato": "Disegnare l'oggetto in due scale diverse e confrontare l'effetto visivo. Discutere quando si usa ciascuna."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.6,
+        "durata_secondi": 37
+      },
+      "professione_futura": {
+        "titolo": "Progettista CAD/CAM Industriale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Traduce idee progettuali in modelli digitali per la produzione industriale.",
+        "competenze_chiave": [
+          "CAD 3D",
+          "prototipazione rapida",
+          "disegno tecnico",
+          "tolleranze geometriche"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "scala",
+          "inglese": "scale",
+          "ipa": "skeɪl"
+        },
+        {
+          "italiano": "proiezione",
+          "inglese": "projection",
+          "ipa": "prəˈdʒekʃən"
+        },
+        {
+          "italiano": "sezione",
+          "inglese": "cross-section",
+          "ipa": "krɒs ˈsekʃən"
+        },
+        {
+          "italiano": "disegno tecnico",
+          "inglese": "technical drawing",
+          "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-MAT-1-01",
@@ -261,7 +413,7 @@
         "visual": "Infografica radiale: materiale al centro, proprietà sui raggi, esempi d'uso sui bordi. Versione interattiva: clic su ogni raggio mostra un esempio animato.",
         "livelloDigComp": "F"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "materiali",
         "proprietà fisiche",
@@ -287,8 +439,9 @@
         "titolo": "Trenta materiali. Un paio di scarpe.",
         "oggetto_reale": "scarpe da ginnastica",
         "domanda_avvio": "Quanti materiali diversi pensi che contengano le tue scarpe da ginnastica?",
-        "durata_min": 2,
-        "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti."
+        "durata_min": 3.6,
+        "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti.",
+        "durata_secondi": 218
       },
       "professione_futura": {
         "titolo": "Materials Scientist circolare",
@@ -394,8 +547,9 @@
         "titolo": "Il viaggio segreto della tua felpa: 40.000 km prima di arrivare nel tuo armadio",
         "oggetto_reale": "una felpa di cotone",
         "domanda_avvio": "Hai mai pensato a quante persone, paesi e chilometri ci sono stati dietro prima che quella felpa finisse nel tuo armadio?",
-        "durata_min": 3,
-        "note_script": "Aprire con il dato che una felpa media percorre circa 40.000 km prima di essere venduta (cotone dal Texas, filatura in India, tessitura in Bangladesh, tintura in Vietnam, assemblaggio in Cambogia, logistica in Europa). Raccontare la storia come un viaggio in prima persona. Chiudere con: 'E quando la butti — il viaggio ricomincia da capo, o si ferma in una discarica?'. Tono: narrativo e leggermente sorprendente."
+        "durata_min": 3.5,
+        "note_script": "Aprire con il dato che una felpa media percorre circa 40.000 km prima di essere venduta (cotone dal Texas, filatura in India, tessitura in Bangladesh, tintura in Vietnam, assemblaggio in Cambogia, logistica in Europa). Raccontare la storia come un viaggio in prima persona. Chiudere con: 'E quando la butti — il viaggio ricomincia da capo, o si ferma in una discarica?'. Tono: narrativo e leggermente sorprendente.",
+        "durata_secondi": 207
       },
       "professione_futura": {
         "titolo": "Supply Chain Sustainability Manager",
@@ -489,7 +643,45 @@
       "note_didattiche": {
         "base": "Fornire una scheda con 3 materiali innovativi già descritti. Lo studente sceglie solo tra quelli dati.",
         "avanzato": "Ricercare autonomamente un materiale innovativo non in elenco, documentare le fonti e presentarlo alla classe."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.4,
+        "durata_secondi": 203
+      },
+      "professione_futura": {
+        "titolo": "Ingegnere dei Materiali Sostenibili",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta materiali circolari per ridurre sprechi e impatto ambientale.",
+        "competenze_chiave": [
+          "analisi LCA",
+          "economia circolare",
+          "materiali compositi",
+          "chimica green"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "materiale",
+          "inglese": "material",
+          "ipa": "məˈtɪərɪəl"
+        },
+        {
+          "italiano": "proprietà",
+          "inglese": "property",
+          "ipa": "ˈprɒpəti"
+        },
+        {
+          "italiano": "riciclo",
+          "inglese": "recycling",
+          "ipa": "riːˈsaɪklɪŋ"
+        },
+        {
+          "italiano": "ciclo di vita",
+          "inglese": "life cycle",
+          "ipa": "laɪf ˈsaɪkəl"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-MAT-1-04",
@@ -547,7 +739,45 @@
       "note_didattiche": {
         "base": "Concentrarsi solo sulle 3 categorie principali (plastica/carta/indifferenziato). Usare immagini degli oggetti invece dei nomi.",
         "avanzato": "Calcolare il tasso di raccolta differenziata della classe per una settimana e confrontarlo con il dato comunale."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.6,
+        "durata_secondi": 219
+      },
+      "professione_futura": {
+        "titolo": "Supply Chain Sustainability Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
+        "competenze_chiave": [
+          "analisi ciclo di vita",
+          "logistica sostenibile",
+          "reportistica ESG",
+          "economia circolare"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "materiale",
+          "inglese": "material",
+          "ipa": "məˈtɪərɪəl"
+        },
+        {
+          "italiano": "proprietà",
+          "inglese": "property",
+          "ipa": "ˈprɒpəti"
+        },
+        {
+          "italiano": "riciclo",
+          "inglese": "recycling",
+          "ipa": "riːˈsaɪklɪŋ"
+        },
+        {
+          "italiano": "ciclo di vita",
+          "inglese": "life cycle",
+          "ipa": "laɪf ˈsaɪkəl"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-MAT-1-05",
@@ -605,7 +835,45 @@
       "note_didattiche": {
         "base": "Fornire la tabella dei criteri già impostata. Lo studente deve solo assegnare punteggi da 1 a 3.",
         "avanzato": "Lo studente aggiunge autonomamente un 5° criterio di valutazione e riflette su eventuali compromessi tra criteri in conflitto."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.6,
+        "durata_secondi": 36
+      },
+      "professione_futura": {
+        "titolo": "Ingegnere dei Materiali Sostenibili",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta materiali circolari per ridurre sprechi e impatto ambientale.",
+        "competenze_chiave": [
+          "analisi LCA",
+          "economia circolare",
+          "materiali compositi",
+          "chimica green"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "materiale",
+          "inglese": "material",
+          "ipa": "məˈtɪərɪəl"
+        },
+        {
+          "italiano": "proprietà",
+          "inglese": "property",
+          "ipa": "ˈprɒpəti"
+        },
+        {
+          "italiano": "riciclo",
+          "inglese": "recycling",
+          "ipa": "riːˈsaɪklɪŋ"
+        },
+        {
+          "italiano": "ciclo di vita",
+          "inglese": "life cycle",
+          "ipa": "laɪf ˈsaɪkəl"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-MAT-1-06",
@@ -664,7 +932,45 @@
       "note_didattiche": {
         "base": "Fornire 3 prodotti già selezionati con le etichette analizzate. Lo studente confronta i dati già estratti.",
         "avanzato": "Progettare un esperimento semplice per testare la biodegradabilità in classe (interrare campioni, osservare per 2 settimane)."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.7,
+        "durata_secondi": 39
+      },
+      "professione_futura": {
+        "titolo": "Supply Chain Sustainability Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
+        "competenze_chiave": [
+          "analisi ciclo di vita",
+          "logistica sostenibile",
+          "reportistica ESG",
+          "economia circolare"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "materiale",
+          "inglese": "material",
+          "ipa": "məˈtɪərɪəl"
+        },
+        {
+          "italiano": "proprietà",
+          "inglese": "property",
+          "ipa": "ˈprɒpəti"
+        },
+        {
+          "italiano": "riciclo",
+          "inglese": "recycling",
+          "ipa": "riːˈsaɪklɪŋ"
+        },
+        {
+          "italiano": "ciclo di vita",
+          "inglese": "life cycle",
+          "ipa": "laɪf ˈsaɪkəl"
+        }
+      ],
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
     },
     {
       "id": "MC-ALI-2-01",
@@ -702,7 +1008,7 @@
         "visual": "Schema: convenzionale vs. biologico vs. idroponico — 3 colonne × 4 parametri.",
         "livelloDigComp": "F"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "agronomia",
         "coltivazione",
@@ -719,7 +1025,45 @@
       "note_didattiche": {
         "base": "Fornire la scheda di osservazione pre-strutturata con le colonne da compilare. Usare una pianta a crescita veloce (rucola).",
         "avanzato": "Confrontare due piante uguali cresciute in condizioni diverse (es. con e senza concime) e analizzare le differenze."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.9,
+        "durata_secondi": 232
+      },
+      "professione_futura": {
+        "titolo": "Food Technologist / Nutrizionista Industriale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+        "competenze_chiave": [
+          "sicurezza alimentare",
+          "HACCP",
+          "etichettatura",
+          "analisi nutrizionale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "nutriente",
+          "inglese": "nutrient",
+          "ipa": "ˈnjuːtrɪənt"
+        },
+        {
+          "italiano": "filiera",
+          "inglese": "supply chain",
+          "ipa": "səˈplaɪ tʃeɪn"
+        },
+        {
+          "italiano": "conservazione",
+          "inglese": "preservation",
+          "ipa": "ˌprezəˈveɪʃən"
+        },
+        {
+          "italiano": "spreco alimentare",
+          "inglese": "food waste",
+          "ipa": "fuːd weɪst"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-ALI-2-02",
@@ -776,7 +1120,45 @@
       "note_didattiche": {
         "base": "Fornire la lista dei 10 alimenti e la tabella con le colonne da compilare. Concentrarsi solo su 3 metodi principali.",
         "avanzato": "Progettare una catena del freddo per un prodotto deperibile: dal produttore al consumatore, indicando ogni punto critico."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.9,
+        "durata_secondi": 232
+      },
+      "professione_futura": {
+        "titolo": "Agri-food Supply Chain Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+        "competenze_chiave": [
+          "tracciabilità filiera",
+          "logistica alimentare",
+          "certificazioni DOP/IGP",
+          "sostenibilità"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "nutriente",
+          "inglese": "nutrient",
+          "ipa": "ˈnjuːtrɪənt"
+        },
+        {
+          "italiano": "filiera",
+          "inglese": "supply chain",
+          "ipa": "səˈplaɪ tʃeɪn"
+        },
+        {
+          "italiano": "conservazione",
+          "inglese": "preservation",
+          "ipa": "ˌprezəˈveɪʃən"
+        },
+        {
+          "italiano": "spreco alimentare",
+          "inglese": "food waste",
+          "ipa": "fuːd weɪst"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-ALI-2-03",
@@ -833,7 +1215,45 @@
       "note_didattiche": {
         "base": "Fornire la tabella del diario già strutturata con i gruppi alimentari pre-etichettati. Concentrarsi su un solo giorno.",
         "avanzato": "Calcolare l'apporto calorico giornaliero medio e confrontarlo con il fabbisogno energetico per la propria età e attività."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.5,
+        "durata_secondi": 210
+      },
+      "professione_futura": {
+        "titolo": "Food Technologist / Nutrizionista Industriale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+        "competenze_chiave": [
+          "sicurezza alimentare",
+          "HACCP",
+          "etichettatura",
+          "analisi nutrizionale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "nutriente",
+          "inglese": "nutrient",
+          "ipa": "ˈnjuːtrɪənt"
+        },
+        {
+          "italiano": "filiera",
+          "inglese": "supply chain",
+          "ipa": "səˈplaɪ tʃeɪn"
+        },
+        {
+          "italiano": "conservazione",
+          "inglese": "preservation",
+          "ipa": "ˌprezəˈveɪʃən"
+        },
+        {
+          "italiano": "spreco alimentare",
+          "inglese": "food waste",
+          "ipa": "fuːd weɪst"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-ALI-2-04",
@@ -891,7 +1311,45 @@
       "note_didattiche": {
         "base": "Fornire le 3 etichette già stampate con le sezioni evidenziate. Lo studente deve solo compilare una tabella comparativa.",
         "avanzato": "Confrontare la filiera di un prodotto locale vs. uno importato: calcolare la stima delle emissioni di CO₂ per il trasporto."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.7,
+        "durata_secondi": 42
+      },
+      "professione_futura": {
+        "titolo": "Agri-food Supply Chain Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+        "competenze_chiave": [
+          "tracciabilità filiera",
+          "logistica alimentare",
+          "certificazioni DOP/IGP",
+          "sostenibilità"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "nutriente",
+          "inglese": "nutrient",
+          "ipa": "ˈnjuːtrɪənt"
+        },
+        {
+          "italiano": "filiera",
+          "inglese": "supply chain",
+          "ipa": "səˈplaɪ tʃeɪn"
+        },
+        {
+          "italiano": "conservazione",
+          "inglese": "preservation",
+          "ipa": "ˌprezəˈveɪʃən"
+        },
+        {
+          "italiano": "spreco alimentare",
+          "inglese": "food waste",
+          "ipa": "fuːd weɪst"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-ALI-2-05",
@@ -950,7 +1408,45 @@
       "note_didattiche": {
         "base": "Concentrarsi solo sullo spreco domestico. Fornire tabella di monitoraggio semplificata (3 categorie).",
         "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.6,
+        "durata_secondi": 37
+      },
+      "professione_futura": {
+        "titolo": "Food Technologist / Nutrizionista Industriale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+        "competenze_chiave": [
+          "sicurezza alimentare",
+          "HACCP",
+          "etichettatura",
+          "analisi nutrizionale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "nutriente",
+          "inglese": "nutrient",
+          "ipa": "ˈnjuːtrɪənt"
+        },
+        {
+          "italiano": "filiera",
+          "inglese": "supply chain",
+          "ipa": "səˈplaɪ tʃeɪn"
+        },
+        {
+          "italiano": "conservazione",
+          "inglese": "preservation",
+          "ipa": "ˌprezəˈveɪʃən"
+        },
+        {
+          "italiano": "spreco alimentare",
+          "inglese": "food waste",
+          "ipa": "fuːd weɪst"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-ALI-2-06",
@@ -1008,7 +1504,45 @@
       "note_didattiche": {
         "base": "Fornire una scheda-intervista con le domande già formulate. Lo studente deve solo compilare le risposte.",
         "avanzato": "Creare una mappa digitale della biodiversità alimentare del proprio comune usando Google Maps con pin e schede informative."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.7,
+        "durata_secondi": 39
+      },
+      "professione_futura": {
+        "titolo": "Agri-food Supply Chain Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+        "competenze_chiave": [
+          "tracciabilità filiera",
+          "logistica alimentare",
+          "certificazioni DOP/IGP",
+          "sostenibilità"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "nutriente",
+          "inglese": "nutrient",
+          "ipa": "ˈnjuːtrɪənt"
+        },
+        {
+          "italiano": "filiera",
+          "inglese": "supply chain",
+          "ipa": "səˈplaɪ tʃeɪn"
+        },
+        {
+          "italiano": "conservazione",
+          "inglese": "preservation",
+          "ipa": "ˌprezəˈveɪʃən"
+        },
+        {
+          "italiano": "spreco alimentare",
+          "inglese": "food waste",
+          "ipa": "fuːd weɪst"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-AMB-2-01",
@@ -1046,7 +1580,7 @@
         "visual": "Sezione di un edificio a strati: ogni elemento strutturale evidenziato con nome e materiale.",
         "livelloDigComp": "F"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "strutture edilizie",
         "costruzione",
@@ -1062,7 +1596,45 @@
       "note_didattiche": {
         "base": "Fornire un progetto guidato (triangolo base + colonna) già testato. Lo studente segue le istruzioni e osserva il risultato.",
         "avanzato": "Progettare una struttura antisisminca: come cambia il design se la struttura deve resistere a vibrazioni laterali?"
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.9,
+        "durata_secondi": 236
+      },
+      "professione_futura": {
+        "titolo": "Urban Planner Sostenibile",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+        "competenze_chiave": [
+          "GIS",
+          "pianificazione urbana",
+          "mobilità sostenibile",
+          "Nature-Based Solutions"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "struttura",
+          "inglese": "structure",
+          "ipa": "ˈstrʌktʃə"
+        },
+        {
+          "italiano": "impianto",
+          "inglese": "system / plant",
+          "ipa": "ˈsɪstəm"
+        },
+        {
+          "italiano": "rischio",
+          "inglese": "risk",
+          "ipa": "rɪsk"
+        },
+        {
+          "italiano": "urbanistica",
+          "inglese": "urban planning",
+          "ipa": "ˈɜːbən ˈplænɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-AMB-2-02",
@@ -1119,7 +1691,45 @@
       "note_didattiche": {
         "base": "Fornire la pianta della casa già disegnata. Lo studente deve solo aggiungere i simboli degli impianti su overlay.",
         "avanzato": "Calcolare il consumo mensile dell'intera abitazione e identificare i 3 elettrodomestici più energivori con proposte di sostituzione."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.7,
+        "durata_secondi": 224
+      },
+      "professione_futura": {
+        "titolo": "Green Building Designer / Certificatore LEED",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+        "competenze_chiave": [
+          "LEED",
+          "efficienza energetica",
+          "materiali bio-based",
+          "BIM"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "struttura",
+          "inglese": "structure",
+          "ipa": "ˈstrʌktʃə"
+        },
+        {
+          "italiano": "impianto",
+          "inglese": "system / plant",
+          "ipa": "ˈsɪstəm"
+        },
+        {
+          "italiano": "rischio",
+          "inglese": "risk",
+          "ipa": "rɪsk"
+        },
+        {
+          "italiano": "urbanistica",
+          "inglese": "urban planning",
+          "ipa": "ˈɜːbən ˈplænɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-AMB-2-03",
@@ -1175,7 +1785,45 @@
       "note_didattiche": {
         "base": "Fornire la mappa del quartiere già stampata con le zone pre-etichettate. Lo studente identifica solo i servizi mancanti.",
         "avanzato": "Confrontare il proprio quartiere con un quartiere di un'altra città italiana o europea: stesso numero di abitanti, diversa qualità dei servizi — perché?"
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.9,
+        "durata_secondi": 235
+      },
+      "professione_futura": {
+        "titolo": "Urban Planner Sostenibile",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+        "competenze_chiave": [
+          "GIS",
+          "pianificazione urbana",
+          "mobilità sostenibile",
+          "Nature-Based Solutions"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "struttura",
+          "inglese": "structure",
+          "ipa": "ˈstrʌktʃə"
+        },
+        {
+          "italiano": "impianto",
+          "inglese": "system / plant",
+          "ipa": "ˈsɪstəm"
+        },
+        {
+          "italiano": "rischio",
+          "inglese": "risk",
+          "ipa": "rɪsk"
+        },
+        {
+          "italiano": "urbanistica",
+          "inglese": "urban planning",
+          "ipa": "ˈɜːbən ˈplænɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-AMB-2-04",
@@ -1232,7 +1880,45 @@
       "note_didattiche": {
         "base": "Fornire la tabella con i parametri e i valori già inseriti per 3 materiali. Lo studente aggiunge solo il 4°.",
         "avanzato": "Calcolare approssimativamente la dispersione termica di una parete non isolata vs. isolata usando i valori di conduttività termica forniti."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.8,
+        "durata_secondi": 45
+      },
+      "professione_futura": {
+        "titolo": "Green Building Designer / Certificatore LEED",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+        "competenze_chiave": [
+          "LEED",
+          "efficienza energetica",
+          "materiali bio-based",
+          "BIM"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "struttura",
+          "inglese": "structure",
+          "ipa": "ˈstrʌktʃə"
+        },
+        {
+          "italiano": "impianto",
+          "inglese": "system / plant",
+          "ipa": "ˈsɪstəm"
+        },
+        {
+          "italiano": "rischio",
+          "inglese": "risk",
+          "ipa": "rɪsk"
+        },
+        {
+          "italiano": "urbanistica",
+          "inglese": "urban planning",
+          "ipa": "ˈɜːbən ˈplænɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-AMB-2-05",
@@ -1289,7 +1975,45 @@
       "note_didattiche": {
         "base": "Fornire 3 problemi pre-selezionati e 3 soluzioni possibili. Lo studente sceglie e motiva.",
         "avanzato": "Analizzare i dati aperti (open data) del proprio comune: cosa pubblica? Cosa manca? Cosa si potrebbe fare con quei dati?"
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.6,
+        "durata_secondi": 37
+      },
+      "professione_futura": {
+        "titolo": "Urban Planner Sostenibile",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+        "competenze_chiave": [
+          "GIS",
+          "pianificazione urbana",
+          "mobilità sostenibile",
+          "Nature-Based Solutions"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "struttura",
+          "inglese": "structure",
+          "ipa": "ˈstrʌktʃə"
+        },
+        {
+          "italiano": "impianto",
+          "inglese": "system / plant",
+          "ipa": "ˈsɪstəm"
+        },
+        {
+          "italiano": "rischio",
+          "inglese": "risk",
+          "ipa": "rɪsk"
+        },
+        {
+          "italiano": "urbanistica",
+          "inglese": "urban planning",
+          "ipa": "ˈɜːbən ˈplænɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-AMB-2-06",
@@ -1347,7 +2071,45 @@
       "note_didattiche": {
         "base": "Fornire la scheda del comune già compilata parzialmente. Lo studente aggiunge solo la misura di prevenzione.",
         "avanzato": "Confrontare due comuni italiani con lo stesso livello di rischio ma diversa capacità di risposta: cosa fa la differenza?"
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.7,
+        "durata_secondi": 41
+      },
+      "professione_futura": {
+        "titolo": "Green Building Designer / Certificatore LEED",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+        "competenze_chiave": [
+          "LEED",
+          "efficienza energetica",
+          "materiali bio-based",
+          "BIM"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "struttura",
+          "inglese": "structure",
+          "ipa": "ˈstrʌktʃə"
+        },
+        {
+          "italiano": "impianto",
+          "inglese": "system / plant",
+          "ipa": "ˈsɪstəm"
+        },
+        {
+          "italiano": "rischio",
+          "inglese": "risk",
+          "ipa": "rɪsk"
+        },
+        {
+          "italiano": "urbanistica",
+          "inglese": "urban planning",
+          "ipa": "ˈɜːbən ˈplænɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-DIG-2-01",
@@ -1405,7 +2167,45 @@
       "note_didattiche": {
         "base": "Fornire il progetto Scratch con la struttura già impostata (1 domanda funzionante). Lo studente aggiunge solo le altre 4.",
         "avanzato": "Aggiungere livelli di difficoltà adattivi: le domande successive cambiano in base alle risposte precedenti."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4,
+        "durata_secondi": 242
+      },
+      "professione_futura": {
+        "titolo": "Digital Literacy Educator",
+        "orizzonte": "2030",
+        "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+        "competenze_chiave": [
+          "DigComp 3.0",
+          "media literacy",
+          "cybersecurity base",
+          "formazione digitale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "privacy",
+          "inglese": "privacy",
+          "ipa": "ˈprɪvəsi"
+        },
+        {
+          "italiano": "algoritmo",
+          "inglese": "algorithm",
+          "ipa": "ˈælɡərɪðəm"
+        },
+        {
+          "italiano": "sicurezza informatica",
+          "inglese": "cybersecurity",
+          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-DIG-2-02",
@@ -1461,7 +2261,45 @@
       "note_didattiche": {
         "base": "Fornire la lista di 5 app pre-selezionate con le privacy policy già semplificate. Lo studente deve solo valutare i dati raccolti.",
         "avanzato": "Richiedere formalmente la copia dei propri dati a una piattaforma (es. Google Takeout) e analizzare cosa ha raccolto."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4,
+        "durata_secondi": 237
+      },
+      "professione_futura": {
+        "titolo": "Cybersecurity Analyst",
+        "orizzonte": "2030",
+        "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
+        "competenze_chiave": [
+          "sicurezza informatica",
+          "analisi vulnerabilità",
+          "GDPR",
+          "ethical hacking"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "privacy",
+          "inglese": "privacy",
+          "ipa": "ˈprɪvəsi"
+        },
+        {
+          "italiano": "algoritmo",
+          "inglese": "algorithm",
+          "ipa": "ˈælɡərɪðəm"
+        },
+        {
+          "italiano": "sicurezza informatica",
+          "inglese": "cybersecurity",
+          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-DIG-2-03",
@@ -1525,8 +2363,9 @@
         "titolo": "Chi comanda davvero nel tuo computer?",
         "oggetto_reale": "il task manager / Activity Monitor",
         "domanda_avvio": "Hai mai aperto il task manager e ti sei chiesto: ma cosa sono tutti questi processi misteriosi che girano in background?",
-        "durata_min": 2,
-        "note_script": "Usare la metafora del SO come 'direttore d'orchestra': senza di lui ogni applicazione suonerebbe per conto suo e nessuno si sentirebbe. Raccontare cosa succede quando si apre un'app: il SO alloca memoria, crea un processo, assegna il processore a turno. Dato sorprendente: su un computer normale girano sempre tra 50 e 200 processi anche quando 'non stai facendo niente'. Tono: curioso, tecnico ma accessibile."
+        "durata_min": 0.9,
+        "note_script": "Usare la metafora del SO come 'direttore d'orchestra': senza di lui ogni applicazione suonerebbe per conto suo e nessuno si sentirebbe. Raccontare cosa succede quando si apre un'app: il SO alloca memoria, crea un processo, assegna il processore a turno. Dato sorprendente: su un computer normale girano sempre tra 50 e 200 processi anche quando 'non stai facendo niente'. Tono: curioso, tecnico ma accessibile.",
+        "durata_secondi": 56
       },
       "professione_futura": {
         "titolo": "DevOps Engineer",
@@ -1627,8 +2466,9 @@
         "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
         "oggetto_reale": "un messaggio cifrato",
         "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-        "durata_min": 3,
-        "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale."
+        "durata_min": 0.9,
+        "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
+        "durata_secondi": 56
       },
       "professione_futura": {
         "titolo": "Cybersecurity Analyst",
@@ -1721,7 +2561,45 @@
       "note_didattiche": {
         "base": "Fornire un solido elementare (parallelepipedo) con le misure già date. Lo studente deve solo posizionare e disegnare le 3 viste.",
         "avanzato": "Disegnare le viste ortogonali di un oggetto con almeno un foro passante e una sezione trasversale per evidenziarne l'interno."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 3.7,
+        "durata_secondi": 224
+      },
+      "professione_futura": {
+        "titolo": "BIM Designer / Architetto Digitale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+        "competenze_chiave": [
+          "BIM modeling",
+          "AutoCAD",
+          "Revit",
+          "disegno tecnico avanzato"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "scala",
+          "inglese": "scale",
+          "ipa": "skeɪl"
+        },
+        {
+          "italiano": "proiezione",
+          "inglese": "projection",
+          "ipa": "prəˈdʒekʃən"
+        },
+        {
+          "italiano": "sezione",
+          "inglese": "cross-section",
+          "ipa": "krɒs ˈsekʃən"
+        },
+        {
+          "italiano": "disegno tecnico",
+          "inglese": "technical drawing",
+          "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-2 — La Città che Vorrei"
     },
     {
       "id": "MC-DIS-2-02",
@@ -1785,8 +2663,9 @@
         "titolo": "IKEA e il segreto del disegno cavaliero",
         "oggetto_reale": "manuale di montaggio IKEA",
         "domanda_avvio": "Hai mai notato che tutti i disegni IKEA hanno sempre lo stesso strano angolo di 45°?",
-        "durata_min": 2,
-        "note_script": "Aprire con la domanda sull'angolo dei disegni IKEA. Spiegare che è assonometria cavaliera — scelta deliberata per essere comprensibile in qualsiasi cultura senza parole."
+        "durata_min": 0.8,
+        "note_script": "Aprire con la domanda sull'angolo dei disegni IKEA. Spiegare che è assonometria cavaliera — scelta deliberata per essere comprensibile in qualsiasi cultura senza parole.",
+        "durata_secondi": 48
       },
       "professione_futura": {
         "titolo": "Industrial Designer",
@@ -1861,7 +2740,7 @@
         "visual": "Mappa: anatomia di Internet — cavi sottomarini, data center, ultimo miglio, dispositivo finale.",
         "livelloDigComp": "I"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "reti",
         "Internet",
@@ -1878,7 +2757,45 @@
       "note_didattiche": {
         "base": "Fornire la pianta della scuola già stampata e l'app già installata. Lo studente misura e colora solo 4 punti.",
         "avanzato": "Aggiungere l'analisi dei canali WiFi in uso (interferenze) e proporre una configurazione ottimale dei punti di accesso."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.3,
+        "durata_secondi": 258
+      },
+      "professione_futura": {
+        "titolo": "Digital Communication Specialist",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
+        "competenze_chiave": [
+          "social media",
+          "content strategy",
+          "SEO",
+          "storytelling digitale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "comunicazione",
+          "inglese": "communication",
+          "ipa": "kəˌmjuːnɪˈkeɪʃən"
+        },
+        {
+          "italiano": "trasporto",
+          "inglese": "transport",
+          "ipa": "ˈtrænspɔːt"
+        },
+        {
+          "italiano": "automazione",
+          "inglese": "automation",
+          "ipa": "ˌɔːtəˈmeɪʃən"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-COM-3-02",
@@ -1934,7 +2851,45 @@
       "note_didattiche": {
         "base": "Fornire lo script già scritto. Lo studente si concentra solo sulla registrazione e sulla corretta citazione della musica CC.",
         "avanzato": "Pubblicare il podcast su una piattaforma open (es. Internet Archive) con licenza CC scelta e giustificata dallo studente."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.2,
+        "durata_secondi": 250
+      },
+      "professione_futura": {
+        "titolo": "Mobility & Logistics Engineer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Ottimizza reti di trasporto e logistica per ridurre emissioni e inefficienze.",
+        "competenze_chiave": [
+          "logistica sostenibile",
+          "mobilità urbana",
+          "GIS",
+          "trasporto intermodale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "comunicazione",
+          "inglese": "communication",
+          "ipa": "kəˌmjuːnɪˈkeɪʃən"
+        },
+        {
+          "italiano": "trasporto",
+          "inglese": "transport",
+          "ipa": "ˈtrænspɔːt"
+        },
+        {
+          "italiano": "automazione",
+          "inglese": "automation",
+          "ipa": "ˌɔːtəˈmeɪʃən"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-COM-3-03",
@@ -1972,7 +2927,10 @@
         "visual": "Confronto modale: grafico a bolle — X = velocità, Y = emissioni, dimensione bolla = costo.",
         "livelloDigComp": "I"
       },
-      "prerequisiti": null,
+      "prerequisiti": [
+        "MC-COM-3-01",
+        "MC-COM-3-02"
+      ],
       "tags": [
         "trasporti",
         "mobilità sostenibile",
@@ -1989,7 +2947,45 @@
       "note_didattiche": {
         "base": "Fornire il sondaggio già predisposto e i fattori di emissione. Lo studente analizza i dati di una sola classe.",
         "avanzato": "Presentare il piano al Consiglio di Istituto come proposta concreta con dati, obiettivi e azioni da approvare."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.3,
+        "durata_secondi": 256
+      },
+      "professione_futura": {
+        "titolo": "Digital Communication Specialist",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
+        "competenze_chiave": [
+          "social media",
+          "content strategy",
+          "SEO",
+          "storytelling digitale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "comunicazione",
+          "inglese": "communication",
+          "ipa": "kəˌmjuːnɪˈkeɪʃən"
+        },
+        {
+          "italiano": "trasporto",
+          "inglese": "transport",
+          "ipa": "ˈtrænspɔːt"
+        },
+        {
+          "italiano": "automazione",
+          "inglese": "automation",
+          "ipa": "ˌɔːtəˈmeɪʃən"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-COM-3-04",
@@ -2047,7 +3043,45 @@
       "note_didattiche": {
         "base": "Fornire le 5 esigenze già identificate. Lo studente deve solo scegliere la tecnologia e descrivere brevemente il funzionamento.",
         "avanzato": "Simulare il sistema con Arduino/micro:bit: costruire il prototipo di almeno uno dei 5 sistemi progettati."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.3,
+        "durata_secondi": 261
+      },
+      "professione_futura": {
+        "titolo": "Mobility & Logistics Engineer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Ottimizza reti di trasporto e logistica per ridurre emissioni e inefficienze.",
+        "competenze_chiave": [
+          "logistica sostenibile",
+          "mobilità urbana",
+          "GIS",
+          "trasporto intermodale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "comunicazione",
+          "inglese": "communication",
+          "ipa": "kəˌmjuːnɪˈkeɪʃən"
+        },
+        {
+          "italiano": "trasporto",
+          "inglese": "transport",
+          "ipa": "ˈtrænspɔːt"
+        },
+        {
+          "italiano": "automazione",
+          "inglese": "automation",
+          "ipa": "ˌɔːtəˈmeɪʃən"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-COM-3-05",
@@ -2114,8 +3148,9 @@
         "titolo": "Il cavo che tiene in piedi internet",
         "oggetto_reale": "cavo sottomarino transatlantico",
         "domanda_avvio": "Se un peschereccio strappasse accidentalmente il cavo che collega Europa e America, cosa smetterebbe di funzionare?",
-        "durata_min": 2,
-        "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica."
+        "durata_min": 0.8,
+        "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica.",
+        "durata_secondi": 47
       },
       "professione_futura": {
         "titolo": "Internet Infrastructure Analyst",
@@ -2223,8 +3258,9 @@
         "titolo": "Come TikTok sa già cosa vuoi vedere",
         "oggetto_reale": "feed di TikTok",
         "domanda_avvio": "Hai mai aperto TikTok per 5 minuti e ti sei ritrovato dopo un'ora — senza capire come?",
-        "durata_min": 2,
-        "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione."
+        "durata_min": 0.8,
+        "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione.",
+        "durata_secondi": 45
       },
       "professione_futura": {
         "titolo": "Fact-checker e verificatore digitale",
@@ -2322,7 +3358,45 @@
       "note_didattiche": {
         "base": "Fornire il problema già definito e lo scheletro del codice con le funzioni principali già scritte. Lo studente completa il corpo delle funzioni.",
         "avanzato": "Aggiungere un'interfaccia utente (display, LED o app mobile via Bluetooth) e documentare il progetto in un portfolio digitale."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.3,
+        "durata_secondi": 259
+      },
+      "professione_futura": {
+        "titolo": "Digital Literacy Educator",
+        "orizzonte": "2030",
+        "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+        "competenze_chiave": [
+          "DigComp 3.0",
+          "media literacy",
+          "cybersecurity base",
+          "formazione digitale"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "privacy",
+          "inglese": "privacy",
+          "ipa": "ˈprɪvəsi"
+        },
+        {
+          "italiano": "algoritmo",
+          "inglese": "algorithm",
+          "ipa": "ˈælɡərɪðəm"
+        },
+        {
+          "italiano": "sicurezza informatica",
+          "inglese": "cybersecurity",
+          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-DIG-3-02",
@@ -2381,7 +3455,45 @@
       "note_didattiche": {
         "base": "Fornire le 3 app e la tabella di analisi con le categorie già indicate. Lo studente deve solo compilare le righe.",
         "avanzato": "Progettare un sistema IA per un problema scolastico (es. raccomandatore di libri per la biblioteca): definire dataset necessario, tipo di apprendimento e rischi etici da gestire."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.8,
+        "durata_secondi": 286
+      },
+      "professione_futura": {
+        "titolo": "Cybersecurity Analyst",
+        "orizzonte": "2030",
+        "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
+        "competenze_chiave": [
+          "sicurezza informatica",
+          "analisi vulnerabilità",
+          "GDPR",
+          "ethical hacking"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "rete",
+          "inglese": "network",
+          "ipa": "ˈnetwɜːk"
+        },
+        {
+          "italiano": "privacy",
+          "inglese": "privacy",
+          "ipa": "ˈprɪvəsi"
+        },
+        {
+          "italiano": "algoritmo",
+          "inglese": "algorithm",
+          "ipa": "ˈælɡərɪðəm"
+        },
+        {
+          "italiano": "sicurezza informatica",
+          "inglese": "cybersecurity",
+          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-DIG-3-03",
@@ -2447,8 +3559,9 @@
         "titolo": "Il tuo quartiere respira — ma lo sai quanto bene?",
         "oggetto_reale": "una centralina meteo fai-da-te con micro:bit",
         "domanda_avvio": "Sai quanta CO2 c'è adesso nell'aria della tua aula — e se è abbastanza per stare svegli e concentrati?",
-        "durata_min": 3,
-        "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico."
+        "durata_min": 1,
+        "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico.",
+        "durata_secondi": 58
       },
       "professione_futura": {
         "titolo": "IoT Solutions Architect",
@@ -2550,8 +3663,9 @@
         "titolo": "Navigare al buio: come usa internet chi non vede",
         "oggetto_reale": "uno screen reader (lettore di schermo)",
         "domanda_avvio": "Hai mai provato a usare il computer con gli occhi chiusi — e a capire cosa c'è sullo schermo solo dall'audio?",
-        "durata_min": 3,
-        "note_script": "Aprire con una simulazione audio: descrizione di come suona una pagina web normale quando la legge uno screen reader (rapidissimo, confuso, ordine casuale dei link). Poi confrontare con una pagina accessibile (logica, comprensibile). Dato: in Italia ci sono circa 350.000 persone con disabilità visiva grave. In Europa il 15% della popolazione ha una disabilità. Il European Accessibility Act del 2025 obbliga tutte le aziende con più di 10 dipendenti ad avere prodotti digitali accessibili. Tono: empatico e pratico — 'puoi fare la differenza con 3 regole semplici'."
+        "durata_min": 0.9,
+        "note_script": "Aprire con una simulazione audio: descrizione di come suona una pagina web normale quando la legge uno screen reader (rapidissimo, confuso, ordine casuale dei link). Poi confrontare con una pagina accessibile (logica, comprensibile). Dato: in Italia ci sono circa 350.000 persone con disabilità visiva grave. In Europa il 15% della popolazione ha una disabilità. Il European Accessibility Act del 2025 obbliga tutte le aziende con più di 10 dipendenti ad avere prodotti digitali accessibili. Tono: empatico e pratico — 'puoi fare la differenza con 3 regole semplici'.",
+        "durata_secondi": 57
       },
       "professione_futura": {
         "titolo": "UX Accessibility Specialist",
@@ -2644,7 +3758,45 @@
       "note_didattiche": {
         "base": "Partire dall'assonometria cavaliera di un parallelepipedo semplice. Lo studente aggiunge solo la prospettiva a un punto di fuga.",
         "avanzato": "Realizzare il modello 3D digitale in SketchUp e produrre render fotorealistici dell'oggetto progettato con diversi materiali applicati."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.7,
+        "durata_secondi": 279
+      },
+      "professione_futura": {
+        "titolo": "BIM Designer / Architetto Digitale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+        "competenze_chiave": [
+          "BIM modeling",
+          "AutoCAD",
+          "Revit",
+          "disegno tecnico avanzato"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "scala",
+          "inglese": "scale",
+          "ipa": "skeɪl"
+        },
+        {
+          "italiano": "proiezione",
+          "inglese": "projection",
+          "ipa": "prəˈdʒekʃən"
+        },
+        {
+          "italiano": "sezione",
+          "inglese": "cross-section",
+          "ipa": "krɒs ˈsekʃən"
+        },
+        {
+          "italiano": "disegno tecnico",
+          "inglese": "technical drawing",
+          "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-DIS-3-02",
@@ -2701,7 +3853,45 @@
       "note_didattiche": {
         "base": "Seguire un tutorial guidato passo-passo per costruire un oggetto pre-scelto. Limitarsi a 2 operazioni booleane.",
         "avanzato": "Progettare autonomamente l'oggetto partendo da un brief di design (vincoli dimensionali + funzionali), iterare 2 versioni e argomentare le modifiche apportate."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.6,
+        "durata_secondi": 36
+      },
+      "professione_futura": {
+        "titolo": "Progettista CAD/CAM Industriale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Traduce idee progettuali in modelli digitali per la produzione industriale.",
+        "competenze_chiave": [
+          "CAD 3D",
+          "prototipazione rapida",
+          "disegno tecnico",
+          "tolleranze geometriche"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "scala",
+          "inglese": "scale",
+          "ipa": "skeɪl"
+        },
+        {
+          "italiano": "proiezione",
+          "inglese": "projection",
+          "ipa": "prəˈdʒekʃən"
+        },
+        {
+          "italiano": "sezione",
+          "inglese": "cross-section",
+          "ipa": "krɒs ˈsekʃən"
+        },
+        {
+          "italiano": "disegno tecnico",
+          "inglese": "technical drawing",
+          "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-ENE-3-01",
@@ -2739,7 +3929,7 @@
         "visual": "Poster: le 6 macchine semplici — schema, formula, 3 esempi di oggetti quotidiani per ciascuna.",
         "livelloDigComp": "I"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "macchine semplici",
         "leva",
@@ -2755,7 +3945,45 @@
       "note_didattiche": {
         "base": "Concentrarsi solo sulla leva (I, II, III genere) con esempi scelti tra oggetti comuni. Formula fornita.",
         "avanzato": "Progettare una macchina composta (combinazione di 2+ macchine semplici) che risolva un problema domestico concreto."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.2,
+        "durata_secondi": 249
+      },
+      "professione_futura": {
+        "titolo": "Renewable Energy Engineer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
+        "competenze_chiave": [
+          "fotovoltaico",
+          "eolico",
+          "storage energetico",
+          "grid parity"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "energia",
+          "inglese": "energy",
+          "ipa": "ˈenədʒi"
+        },
+        {
+          "italiano": "rinnovabile",
+          "inglese": "renewable",
+          "ipa": "rɪˈnjuːəbəl"
+        },
+        {
+          "italiano": "efficienza",
+          "inglese": "efficiency",
+          "ipa": "ɪˈfɪʃənsi"
+        },
+        {
+          "italiano": "circuito",
+          "inglese": "circuit",
+          "ipa": "ˈsɜːkɪt"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-ENE-3-02",
@@ -2793,7 +4021,9 @@
         "visual": "Infografica: 'Come arriva la luce in casa?' — dal giacimento di gas alla presa elettrica in 6 passi.",
         "livelloDigComp": "I"
       },
-      "prerequisiti": null,
+      "prerequisiti": [
+        "MC-ENE-3-01"
+      ],
       "tags": [
         "combustibili fossili",
         "energia non rinnovabile",
@@ -2810,7 +4040,45 @@
       "note_didattiche": {
         "base": "Fornire i fattori di conversione e un esempio già calcolato per il riscaldamento. Lo studente calcola solo trasporti ed elettricità.",
         "avanzato": "Simulare 3 scenari di riduzione (auto elettrica, pannelli solari, casa ben isolata) e calcolare il risparmio di CO₂ per ciascuno."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.3,
+        "durata_secondi": 260
+      },
+      "professione_futura": {
+        "titolo": "Energy Manager Aziendale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
+        "competenze_chiave": [
+          "audit energetico",
+          "efficienza energetica",
+          "rinnovabili",
+          "reportistica ESG"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "energia",
+          "inglese": "energy",
+          "ipa": "ˈenədʒi"
+        },
+        {
+          "italiano": "rinnovabile",
+          "inglese": "renewable",
+          "ipa": "rɪˈnjuːəbəl"
+        },
+        {
+          "italiano": "efficienza",
+          "inglese": "efficiency",
+          "ipa": "ɪˈfɪʃənsi"
+        },
+        {
+          "italiano": "circuito",
+          "inglese": "circuit",
+          "ipa": "ˈsɜːkɪt"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-ENE-3-03",
@@ -2867,7 +4135,45 @@
       "note_didattiche": {
         "base": "Fornire il consumo annuo della scuola già calcolato. Lo studente sceglie solo la fonte rinnovabile e giustifica la scelta.",
         "avanzato": "Aggiungere una batteria di accumulo al sistema: come cambia l'autoconsumo? Calcolare il payback period dell'investimento."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.5,
+        "durata_secondi": 270
+      },
+      "professione_futura": {
+        "titolo": "Renewable Energy Engineer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
+        "competenze_chiave": [
+          "fotovoltaico",
+          "eolico",
+          "storage energetico",
+          "grid parity"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "energia",
+          "inglese": "energy",
+          "ipa": "ˈenədʒi"
+        },
+        {
+          "italiano": "rinnovabile",
+          "inglese": "renewable",
+          "ipa": "rɪˈnjuːəbəl"
+        },
+        {
+          "italiano": "efficienza",
+          "inglese": "efficiency",
+          "ipa": "ɪˈfɪʃənsi"
+        },
+        {
+          "italiano": "circuito",
+          "inglese": "circuit",
+          "ipa": "ˈsɜːkɪt"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-ENE-3-04",
@@ -2923,7 +4229,45 @@
       "note_didattiche": {
         "base": "Usare Tinkercad Circuits per la simulazione virtuale invece del montaggio fisico. Fornire lo schema già disegnato.",
         "avanzato": "Aggiungere un secondo sensore (temperatura o movimento) e gestire le due condizioni con logica AND/OR nel codice."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.4,
+        "durata_secondi": 263
+      },
+      "professione_futura": {
+        "titolo": "Energy Manager Aziendale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
+        "competenze_chiave": [
+          "audit energetico",
+          "efficienza energetica",
+          "rinnovabili",
+          "reportistica ESG"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "energia",
+          "inglese": "energy",
+          "ipa": "ˈenədʒi"
+        },
+        {
+          "italiano": "rinnovabile",
+          "inglese": "renewable",
+          "ipa": "rɪˈnjuːəbəl"
+        },
+        {
+          "italiano": "efficienza",
+          "inglese": "efficiency",
+          "ipa": "ɪˈfɪʃənsi"
+        },
+        {
+          "italiano": "circuito",
+          "inglese": "circuit",
+          "ipa": "ˈsɜːkɪt"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-ENE-3-05",
@@ -2990,8 +4334,9 @@
         "titolo": "Perché il cofano è caldo?",
         "oggetto_reale": "motore di un'automobile",
         "domanda_avvio": "Se un motore a benzina spreca il 70% dell'energia come calore, perché lo usiamo ancora?",
-        "durata_min": 2,
-        "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica."
+        "durata_min": 1,
+        "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica.",
+        "durata_secondi": 58
       },
       "professione_futura": {
         "titolo": "Ingegnere della propulsione elettrica",
@@ -3094,8 +4439,9 @@
         "titolo": "L'isola che produce più energia di quanta ne consuma",
         "oggetto_reale": "turbina eolica su Samsø, Danimarca",
         "domanda_avvio": "Se potessimo immagazzinare l'energia del sole e del vento, avremmo già risolto il problema climatico?",
-        "durata_min": 2,
-        "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica."
+        "durata_min": 0.9,
+        "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica.",
+        "durata_secondi": 56
       },
       "professione_futura": {
         "titolo": "Energy Storage Engineer",
@@ -3174,7 +4520,7 @@
         "visual": "Mappa catena produttiva globale: da dove vengono i 10 componenti principali di uno smartphone.",
         "livelloDigComp": "I"
       },
-      "prerequisiti": null,
+      "prerequisiti": [],
       "tags": [
         "economia",
         "produzione",
@@ -3191,7 +4537,45 @@
       "note_didattiche": {
         "base": "Fornire le 5 aziende già selezionate con le informazioni di base. Lo studente deve solo classificarle e collegarle.",
         "avanzato": "Analizzare una multinazionale presente nel territorio: dove produce, dove ha sede fiscale, quanti dipendenti locali — e confrontare con una PMI locale."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.3,
+        "durata_secondi": 258
+      },
+      "professione_futura": {
+        "titolo": "Business Analyst / Consulente Aziendale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Analizza processi aziendali e propone soluzioni per migliorare l'efficienza.",
+        "competenze_chiave": [
+          "analisi di processo",
+          "KPI",
+          "lean management",
+          "digital transformation"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "economia",
+          "inglese": "economy",
+          "ipa": "ɪˈkɒnəmi"
+        },
+        {
+          "italiano": "sistema produttivo",
+          "inglese": "production system",
+          "ipa": "prəˈdʌkʃən ˈsɪstəm"
+        },
+        {
+          "italiano": "qualità",
+          "inglese": "quality",
+          "ipa": "ˈkwɒlɪti"
+        },
+        {
+          "italiano": "imprenditorialità",
+          "inglese": "entrepreneurship",
+          "ipa": "ˌɒntrəprəˈnɜːʃɪp"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-SIS-3-02",
@@ -3249,7 +4633,45 @@
       "note_didattiche": {
         "base": "Fornire i 5 prodotti e i link già trovati ai prodotti alternativi. Lo studente deve solo confrontare prezzi e descrivere gli impatti.",
         "avanzato": "Produrre un vero volantino per un GAS della scuola con dati, prodotti scelti e argomentazione della scelta da distribuire ai genitori."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 4.4,
+        "durata_secondi": 264
+      },
+      "professione_futura": {
+        "titolo": "Entrepreneur / Innovation Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Crea e gestisce startup o progetti di innovazione in ambito tecnologico.",
+        "competenze_chiave": [
+          "business model canvas",
+          "design thinking",
+          "fundraising",
+          "AgileScrum"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "economia",
+          "inglese": "economy",
+          "ipa": "ɪˈkɒnəmi"
+        },
+        {
+          "italiano": "sistema produttivo",
+          "inglese": "production system",
+          "ipa": "prəˈdʌkʃən ˈsɪstəm"
+        },
+        {
+          "italiano": "qualità",
+          "inglese": "quality",
+          "ipa": "ˈkwɒlɪti"
+        },
+        {
+          "italiano": "imprenditorialità",
+          "inglese": "entrepreneurship",
+          "ipa": "ˌɒntrəprəˈnɜːʃɪp"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-SIS-3-03",
@@ -3306,7 +4728,45 @@
       "note_didattiche": {
         "base": "Fornire un problema già identificato e un BMC con 3 blocchi già compilati come esempio. Lo studente completa i 2 mancanti.",
         "avanzato": "Condurre 3 interviste reali con potenziali 'clienti' (compagni, insegnanti) per validare le ipotesi del BMC prima di presentarlo."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.7,
+        "durata_secondi": 44
+      },
+      "professione_futura": {
+        "titolo": "Business Analyst / Consulente Aziendale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Analizza processi aziendali e propone soluzioni per migliorare l'efficienza.",
+        "competenze_chiave": [
+          "analisi di processo",
+          "KPI",
+          "lean management",
+          "digital transformation"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "economia",
+          "inglese": "economy",
+          "ipa": "ɪˈkɒnəmi"
+        },
+        {
+          "italiano": "sistema produttivo",
+          "inglese": "production system",
+          "ipa": "prəˈdʌkʃən ˈsɪstəm"
+        },
+        {
+          "italiano": "qualità",
+          "inglese": "quality",
+          "ipa": "ˈkwɒlɪti"
+        },
+        {
+          "italiano": "imprenditorialità",
+          "inglese": "entrepreneurship",
+          "ipa": "ˌɒntrəprəˈnɜːʃɪp"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     },
     {
       "id": "MC-SIS-3-04",
@@ -3363,7 +4823,45 @@
       "note_didattiche": {
         "base": "Fornire i 5 prodotti già selezionati con i loghi già evidenziati. Lo studente deve solo cercare il significato di 3 certificazioni.",
         "avanzato": "Simulare un audit di qualità scolastico: definire 3 standard di qualità per la mensa scolastica e verificare se vengono rispettati attraverso osservazione diretta."
-      }
+      },
+      "hook_audio": {
+        "durata_min": 0.8,
+        "durata_secondi": 45
+      },
+      "professione_futura": {
+        "titolo": "Entrepreneur / Innovation Manager",
+        "orizzonte": "2030",
+        "descrizione_breve": "Crea e gestisce startup o progetti di innovazione in ambito tecnologico.",
+        "competenze_chiave": [
+          "business model canvas",
+          "design thinking",
+          "fundraising",
+          "AgileScrum"
+        ]
+      },
+      "clil_termini": [
+        {
+          "italiano": "economia",
+          "inglese": "economy",
+          "ipa": "ɪˈkɒnəmi"
+        },
+        {
+          "italiano": "sistema produttivo",
+          "inglese": "production system",
+          "ipa": "prəˈdʌkʃən ˈsɪstəm"
+        },
+        {
+          "italiano": "qualità",
+          "inglese": "quality",
+          "ipa": "ˈkwɒlɪti"
+        },
+        {
+          "italiano": "imprenditorialità",
+          "inglese": "entrepreneurship",
+          "ipa": "ˌɒntrəprəˈnɜːʃɪp"
+        }
+      ],
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
     }
   ]
 }

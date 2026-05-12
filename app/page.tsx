@@ -273,6 +273,9 @@ export default function HomePage() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <span className="text-sm font-black text-emerald-400">ProfTecnologIA</span>
+              <span className="rounded-full border border-emerald-800 px-2 py-0.5 font-mono text-xs font-bold text-emerald-500">
+                v0.1
+              </span>
               <span className="text-slate-700">·</span>
               <span className="text-xs text-slate-500">
                 © 2026 Prof. Ing. Antonio Scaramuzzino

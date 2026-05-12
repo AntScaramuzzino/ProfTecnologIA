@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
 import Breadcrumb from "@/components/Breadcrumb";
+import SiteFooter from "@/components/SiteFooter";
 import { AREA_META, getMCsByAnno } from "@/lib/mc-loader";
 import { levelBadge } from "@/lib/ui";
 
@@ -75,6 +76,7 @@ export default async function AnnoPage({ params }: PageProps) {
           </section>
         ))}
       </div>
+      <SiteFooter />
     </main>
   );
 }

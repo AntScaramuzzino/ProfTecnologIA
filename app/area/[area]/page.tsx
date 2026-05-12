@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
 import Breadcrumb from "@/components/Breadcrumb";
+import SiteFooter from "@/components/SiteFooter";
 import { AREA_META, getAllMCs, getMCsByArea } from "@/lib/mc-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
@@ -87,6 +88,7 @@ export default async function AreaPage({ params }: PageProps) {
           </div>
         </section>
       </div>
+      <SiteFooter />
     </main>
   );
 }

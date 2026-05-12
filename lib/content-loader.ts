@@ -308,6 +308,51 @@ export function getVideoPlaylist(mcId: string): VideoItem[] {
   }
 }
 
+// ── MICROLEARNING INTERACTIVES ──────────────────────────────────────────────
+
+export interface MicrolearningChecklist {
+  titolo: string;
+  istruzione?: string;
+  voci: string[];
+}
+
+export interface MicrolearningProcessStep {
+  numero: number;
+  titolo: string;
+  attore: string;
+  domanda?: string;
+  impatto?: string;
+}
+
+export interface MicrolearningProcess {
+  titolo: string;
+  steps: MicrolearningProcessStep[];
+}
+
+export interface MicrolearningInteractives {
+  mc_id: string;
+  generated_by: string;
+  score: number;
+  decisione: string;
+  checklist?: MicrolearningChecklist;
+  process?: MicrolearningProcess;
+}
+
+const MICROLEARNING_ROOT = path.join(process.cwd(), "data", "microlearning");
+
+export function getMCMicrolearningInteractives(mcId: string): MicrolearningInteractives | null {
+  const file = path.join(MICROLEARNING_ROOT, `${mcId}.json`);
+  if (!fs.existsSync(file)) return null;
+  try {
+    const data = JSON.parse(fs.readFileSync(file, "utf-8")) as MicrolearningInteractives;
+    // Solo APPROVATO entra nel sito
+    if (data.decisione !== "APPROVATO") return null;
+    return data;
+  } catch {
+    return null;
+  }
+}
+
 function assetRank(name: string): number {
   // Rank 0 — infografiche (migliore per card hero e dettaglio)
   if (name.includes("infografica") || name.includes("img2-infografica")) return 0;

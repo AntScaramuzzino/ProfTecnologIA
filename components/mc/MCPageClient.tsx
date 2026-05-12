@@ -21,7 +21,7 @@
  * P0.5 — RubricaDrawer (estrae tabella rubrica da AGISCI a runtime)
  */
 
-import { useMemo, useCallback, useState } from "react";
+import { useMemo, useCallback, useState, useEffect } from "react";
 import { MCNavigator, type NavigatorTab } from "@/components/mc/MCNavigator";
 import { AccordionSection, type AccordionItem } from "@/components/mc/AccordionSection";
 import { LevelTabs, buildLevelTabs, type DigCompLevel } from "@/components/mc/LevelTabs";
@@ -32,10 +32,12 @@ import FlippedVideos from "@/components/mc/FlippedVideos";
 import QuizWidget from "@/components/mc/QuizWidget";
 import FlashcardDeck from "@/components/mc/FlashcardDeck";
 import VideoGallery from "@/components/mc/VideoGallery";
+import ChecklistWidget from "@/components/mc/ChecklistWidget";
+import ProcessWidget from "@/components/mc/ProcessWidget";
 import MCVisual from "@/components/MCVisual";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
-import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem } from "@/lib/content-loader";
+import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
 // ── Tipi ────────────────────────────────────────────────────────────────────
@@ -50,6 +52,7 @@ interface MCPageClientProps {
   flashcards: FlashcardItem[];
   videoPlaylist: VideoItem[];
   visuals: VisualAsset[];
+  microlearningData?: MicrolearningInteractives | null;
 }
 
 // ── Mapping sezione MD → tab ID ──────────────────────────────────────────────
@@ -124,6 +127,18 @@ function getAgisciRawBody(text: MCTextContent | null): string {
   if (!text) return "";
   const section = text.sections.find((s) => /AGISCI/i.test(s.title));
   return section?.body ?? "";
+}
+
+// ── Rimuove la sezione Rubrica dal body AGISCI (già esposta dal RubricaDrawer) ──
+
+function stripRubricaFromBody(body: string): string {
+  // Rimuove: heading "Rubrica di valutazione" + tabella Markdown che segue
+  return body
+    // Rimuove la riga heading della rubrica (es: "### 📋 Rubrica di valutazione")
+    .replace(/\n?(?:#{1,4}\s*)?📋\s*Rubrica[^\n]*\n?/gi, "\n")
+    // Rimuove il blocco tabella Markdown (righe che iniziano con |)
+    .replace(/\n(\|[^\n]+\n)+/g, "\n")
+    .trim();
 }
 
 // ── Renderer inline Markdown (bold/italic) — senza dipendenze ────────────────
@@ -407,13 +422,15 @@ function ZonePanel({
 
   // ── AGISCI ────────────────────────────────────────────────────────────────
   if (tabId === "AGISCI") {
+    // Rimuove la rubrica dal body inline: è già accessibile tramite il drawer
+    const bodyWithoutRubrica = stripRubricaFromBody(body);
     return (
       <div className="px-4 py-6 sm:px-6">
-        {/* Rubrica drawer — sticky in cima alla zona AGISCI */}
+        {/* Rubrica — solo bottone, si apre in drawer */}
         <div className="mb-6">
           <RubricaDrawer agisciBody={agisciRawBody} areaHex={areaHex} />
         </div>
-        <ReadableBodyInTab body={body} />
+        <ReadableBodyInTab body={bodyWithoutRubrica} />
       </div>
     );
   }
@@ -444,6 +461,7 @@ export function MCPageClient({
   flashcards,
   videoPlaylist,
   visuals,
+  microlearningData,
 }: MCPageClientProps) {
   // Pre-computa la sezione APPENDICE (fuori dai 5 tab)
   const appendiceSection = useMemo(() => {
@@ -469,6 +487,11 @@ export function MCPageClient({
 
   const agisciRawBody = getAgisciRawBody(text);
   const mcLevel = mc.outputApp.livelloDigComp === "H" ? "A" : (mc.outputApp.livelloDigComp as DigCompLevel);
+
+  // Scroll al top ad ogni apertura di pagina MC
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [mc.id]);
 
   // P1.3 — stato navigazione condiviso per ResourcesPanel.onNavigate
   const [forcedTab, setForcedTab] = useState<string | null>(null);
@@ -504,13 +527,43 @@ export function MCPageClient({
         )}
       </MCNavigator>
 
-      {/* ── Ripasso — Quiz interattivo + Flashcard ── */}
-      {(quizData || flashcards.length > 0) && (
+      {/* ── Ripasso — Quiz + Flashcard + Interattivi microlearning ── */}
+      {(quizData || flashcards.length > 0 || microlearningData) && (
         <section className="border-t border-slate-100 bg-gradient-to-b from-slate-50 to-white px-4 py-8 sm:px-6 sm:py-10">
           <div className="mb-6 flex items-center gap-3">
             <span className="text-xs font-black uppercase tracking-widest text-indigo-500">🃏 Ripasso</span>
             <div className="h-px flex-1 bg-slate-200" />
+            {microlearningData && (
+              <span className="rounded-full bg-indigo-50 border border-indigo-200 px-2.5 py-0.5 text-xs font-bold text-indigo-600">
+                ✦ modulo microlearning
+              </span>
+            )}
           </div>
+
+          {/* Process cliccabile — se generato dall'agente */}
+          {microlearningData?.process && (
+            <div className="mb-8">
+              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Processo</p>
+              <ProcessWidget
+                titolo={microlearningData.process.titolo}
+                steps={microlearningData.process.steps}
+                areaHex={areaHex}
+              />
+            </div>
+          )}
+
+          {/* Checklist operativa — se generata dall'agente */}
+          {microlearningData?.checklist && (
+            <div className="mb-8">
+              <p className="mb-3 text-sm font-black text-slate-500 uppercase tracking-wide">Checklist</p>
+              <ChecklistWidget
+                titolo={microlearningData.checklist.titolo}
+                istruzione={microlearningData.checklist.istruzione}
+                voci={microlearningData.checklist.voci}
+                areaHex={areaHex}
+              />
+            </div>
+          )}
 
           {/* Quiz interattivo */}
           {quizData && (

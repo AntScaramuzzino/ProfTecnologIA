@@ -14,6 +14,7 @@ import {
   getMCQuizData,
   getMCFlashcards,
   getVideoPlaylist,
+  getMCMicrolearningInteractives,
 } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
@@ -52,10 +53,11 @@ export default async function MCPage({ params }: Props) {
   const text = getMCTextContent(mc.id);
   const hookAudioSrc   = getMCHookAudio(mc.id);
   const hookTranscript = getMCHookTranscript(mc.id);
-  const quizData       = getMCQuizData(mc.id);
-  const flashcards     = getMCFlashcards(mc.id);
-  const videoPlaylist  = getVideoPlaylist(mc.id);
-  const prereqs        = getPrerequisiteChain(mc.id);
+  const quizData             = getMCQuizData(mc.id);
+  const flashcards           = getMCFlashcards(mc.id);
+  const videoPlaylist        = getVideoPlaylist(mc.id);
+  const microlearningData    = getMCMicrolearningInteractives(mc.id);
+  const prereqs              = getPrerequisiteChain(mc.id);
   const related = getAllMCs()
     .filter((item) => item.area === mc.area && item.id !== mc.id)
     .slice(0, 3);
@@ -124,21 +126,12 @@ export default async function MCPage({ params }: Props) {
             flashcards={flashcards}
             videoPlaylist={videoPlaylist}
             visuals={visuals}
+            microlearningData={microlearningData}
           />
         </div>
 
         {/* Aside destra — stessa struttura di prima */}
         <aside className="hidden min-w-0 space-y-5 lg:block">
-          {/* Asset app previsti */}
-          <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="mb-3 text-sm font-black text-slate-500">Asset app previsti</p>
-            <div className="space-y-3">
-              <AssetBox title="Quiz" body={mc.outputApp.quiz} />
-              <AssetBox title="Microlearning" body={mc.outputApp.microlearning} />
-              <AssetBox title="Visual" body={mc.outputApp.visual} />
-            </div>
-          </section>
-
           {/* Differenziazione */}
           <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-black text-slate-500">Differenziazione</p>
@@ -203,6 +196,16 @@ export default async function MCPage({ params }: Props) {
               </div>
             </section>
           )}
+
+          {/* Asset app previsti */}
+          <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+            <p className="mb-3 text-sm font-black text-slate-500">Asset app previsti</p>
+            <div className="space-y-3">
+              <AssetBox title="Quiz" body={mc.outputApp.quiz} />
+              <AssetBox title="Microlearning" body={mc.outputApp.microlearning} />
+              <AssetBox title="Visual" body={mc.outputApp.visual} />
+            </div>
+          </section>
         </aside>
       </div>
 
