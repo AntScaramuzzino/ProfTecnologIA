@@ -306,16 +306,24 @@ export default function ArchitetturaPage() {
           <h2 className="mb-4 text-xl font-black text-white">Documenti di riferimento</h2>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              { label: "Protocollo CARBLE-CDD v1.0", desc: "I.C. Nicotera Costabile, 13/05/2026", href: "/credits" },
-              { label: "Pagina Credits e fonti", desc: "Dichiarazione uso AI · fonti video · bibliografiche", href: "/credits" },
-              { label: "INDICE_ProfTecnologIA_v1.0", desc: "Blueprint editoriale — 52 MC, 3 anni, appendici", href: "#" },
-              { label: "Architettura v2.1", desc: "Documento architetturale completo del progetto", href: "#" },
+              { label: "Protocollo CARBLE-CDD v1.0", desc: "I.C. Nicotera Costabile, 13/05/2026", href: "/credits", external: false },
+              { label: "Pagina Credits e fonti", desc: "Dichiarazione uso AI · fonti video · bibliografiche", href: "/credits", external: false },
+              { label: "INDICE_ProfTecnologIA_v1.0", desc: "Blueprint editoriale — 52 MC, 3 anni, appendici", href: "/docs/INDICE_ProfTecnologIA_v1.0.md", external: true },
+              { label: "Architettura v2.2", desc: "Documento architetturale completo del progetto", href: "/docs/architettura_v2.2.md", external: true },
             ].map((d) => (
-              <Link key={d.label} href={d.href}
-                className="rounded-xl border border-slate-800 bg-slate-900 p-4 hover:border-emerald-700 transition">
-                <p className="font-bold text-white text-sm">{d.label}</p>
-                <p className="mt-0.5 text-xs text-slate-400">{d.desc}</p>
-              </Link>
+              d.external ? (
+                <a key={d.label} href={d.href} target="_blank" rel="noopener noreferrer"
+                  className="rounded-xl border border-slate-800 bg-slate-900 p-4 hover:border-emerald-700 transition block">
+                  <p className="font-bold text-white text-sm">{d.label} ↗</p>
+                  <p className="mt-0.5 text-xs text-slate-400">{d.desc}</p>
+                </a>
+              ) : (
+                <Link key={d.label} href={d.href}
+                  className="rounded-xl border border-slate-800 bg-slate-900 p-4 hover:border-emerald-700 transition">
+                  <p className="font-bold text-white text-sm">{d.label}</p>
+                  <p className="mt-0.5 text-xs text-slate-400">{d.desc}</p>
+                </Link>
+              )
             ))}
           </div>
           <p className="mt-6 text-xs text-slate-500">
