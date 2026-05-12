@@ -163,7 +163,7 @@ function _cleanScriptText(raw: string): string {
     .replace(/^#.*$/gm, "")                                   // rimuovi titoli rimasti
     .replace(/^\*\*\[BLOCCO[^\]]*\]\*\*\s*$/gm, "")           // rimuovi header blocchi [BLOCCO N — ...]
     .replace(/^---+\s*$/gm, "")                               // rimuovi separatori ---
-    .replace(/^\*\*[A-Za-ZÀ-ÿ][^*\n]+:\*\*[^\n]*$/gm, "")    // rimuovi righe metadati **Chiave:** valore
+    .replace(/^\*\*\S[^*\n]+:\*\*[^\n]*$/gm, "")               // rimuovi righe metadati **Chiave:** valore
     .replace(/\[PAUSA\]/g, "")
     .replace(/\[ENFASI\]/g, "")
     .replace(/\*{1,2}([^*\n]+)\*{1,2}/g, "$1")                // rimuovi bold/italic residui
