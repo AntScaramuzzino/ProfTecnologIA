@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-2-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 93,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Mappa la mia impronta digitale — un utente tipo in una settimana",
+    "istruzione": "Costruisci la mappa dell'impronta digitale di un utente tipo di 13 anni per una settimana normale. Non usare dati reali tuoi.",
+    "voci": [
+      "Ho elencato almeno 5 piattaforme che un ragazzo di 13 anni usa regolarmente e per ognuna ho identificato almeno 2 categorie di dati raccolti.",
+      "Ho descritto il meccanismo di raccolta principale di almeno 2 piattaforme (cookie, dati comportamentali, geolocalizzazione, fingerprinting).",
+      "Ho verificato nelle impostazioni di un browser reale quanti cookie di terze parti sono presenti e da quanti domini diversi provengono.",
+      "Ho identificato almeno 3 diritti GDPR che l'utente tipo potrebbe esercitare sulle sue piattaforme principali, con la procedura concreta per farlo.",
+      "Ho aggiunto nella mappa la sezione 'Cosa puoi fare': per ogni categoria di dati, almeno un'azione concreta per ridurre la raccolta o proteggersi.",
+      "Ho scritto una valutazione di 3-4 righe: i dati raccolti da queste piattaforme sono più o meno di quelli che mi aspettavo? Cosa mi ha sorpreso?"
+    ]
+  },
+  "process": {
+    "titolo": "Il viaggio di un dato personale: dal sensore al profilo pubblicitario",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Generazione del dato",
+        "attore": "Utente / dispositivo",
+        "domanda": "Quanti dati personali generi in un'ora di utilizzo normale dello smartphone, senza mai toccare un campo 'nome' o 'cognome'?",
+        "impatto": "Dati comportamentali (quanto tempo guardi un video, dove ti fermi nel feed, a che ora apri l'app) rivelano preferenze, stati d'animo e routine con una precisione che supera spesso le dichiarazioni esplicite."
+      },
+      {
+        "numero": 2,
+        "titolo": "Raccolta tramite meccanismi tecnici",
+        "attore": "Cookie / pixel / fingerprinting",
+        "domanda": "La modalità privata del browser impedisce il fingerprinting del browser. Vero o falso? Spiega perché.",
+        "impatto": "Falso: il fingerprinting non usa file salvati sul dispositivo — usa le caratteristiche tecniche del browser stesso. La modalità privata non cambia queste caratteristiche."
+      },
+      {
+        "numero": 3,
+        "titolo": "Trasmissione al server",
+        "attore": "App / server del fornitore",
+        "domanda": "Quando carichi una pagina web con pubblicità, in 50 millisecondi avviene un'asta tra aziende pubblicitarie. Chi compra il tuo profilo? A che prezzo?",
+        "impatto": "Il Real-Time Bidding vende il tuo profilo a centesimi di euro per impression. La somma di milioni di aste genera miliardi di ricavi per le piattaforme."
+      },
+      {
+        "numero": 4,
+        "titolo": "Profilazione e combinazione dei dati",
+        "attore": "Rete pubblicitaria / data broker",
+        "domanda": "Cambridge Analytica ha costruito profili psicologici di 87 milioni di persone senza che quasi nessuna lo sapesse. Come è stato possibile con una singola app quiz?",
+        "impatto": "Ogni app che accede ai tuoi dati Facebook poteva (prima del 2018) raccogliere anche i dati di tutti i tuoi amici senza il loro consenso. 270.000 utenti diretti × 300 amici = 87 milioni."
+      },
+      {
+        "numero": 5,
+        "titolo": "Esercizio dei diritti GDPR",
+        "attore": "Utente / piattaforma",
+        "domanda": "Se richiedi a Google tutti i dati che ha raccolto su di te (tramite Google Takeout), cosa ti aspetti di trovare? Cosa potrebbe sorprenderti?",
+        "impatto": "Il diritto di accesso (Art. 15 GDPR) esiste e funziona. Scaricarlo richiede pochi clic. Il file risultante è spesso enorme e rivela anni di ricerche, posizioni, visualizzazioni."
+      }
+    ]
+  }
+}

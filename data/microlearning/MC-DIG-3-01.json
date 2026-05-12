@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-3-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Progetto robotico per la scuola: dall'analisi al prototipo documentato",
+    "istruzione": "Osserva la tua scuola per un giorno. Identifica un problema reale risolvibile con hardware disponibile in laboratorio, poi seguilo fino al prototipo.",
+    "voci": [
+      "Ho identificato almeno 3 problemi reali della scuola risolvibili con robotica, li ho valutati per fattibilità hardware e ho scelto quello più promettente con motivazione scritta.",
+      "Ho scritto l'analisi del problema con input (cosa misura), output (cosa segnala) e almeno 3 casi limite (situazioni anomale che il sistema deve gestire).",
+      "Ho prodotto un diagramma di flusso o pseudocodice dell'algoritmo prima di scrivere una sola riga di codice, coprendo tutti i casi identificati nell'analisi.",
+      "Ho implementato il programma usando la programmazione event-driven: almeno 2 gestori di eventi distinti che reagiscono a condizioni diverse del sensore.",
+      "Ho compilato la tabella di debugging con almeno 2 bug reali trovati durante il test: condizione di occorrenza, causa identificata, soluzione applicata e verifica.",
+      "Ho affrontato nella relazione tecnica le implicazioni etiche: il sistema raccoglie dati su persone? Chi vi accede? Come applico il principio di minimizzazione dei dati?"
+    ]
+  },
+  "process": {
+    "titolo": "Dal problema fisico al sistema robotico funzionante: il ciclo ingegneristico",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Analisi del problema e scelta dei sensori",
+        "attore": "Ingegnere / progettista",
+        "domanda": "Il Roomba non ha una mappa della tua casa eppure la copre tutta. Che tipo di sensori usa e come costruisce una stima della sua posizione senza GPS interno?",
+        "impatto": "Il Roomba usa sensori IR di prossimità, contatori di rotazione delle ruote e algoritmi probabilistici. Ogni secondo calcola 'dove potrei essere' basandosi su dove era e quanto si è mosso."
+      },
+      {
+        "numero": 2,
+        "titolo": "Programmazione event-driven",
+        "attore": "Sviluppatore embedded",
+        "domanda": "Qual è la differenza pratica tra un programma sequenziale e uno event-driven per un robot che deve rispondere a eventi multipli contemporaneamente?",
+        "impatto": "Un programma sequenziale blocca tutto mentre elabora un evento. L'event-driven permette al robot di reagire a ostacoli, pulsanti e timer simultaneamente senza che uno blocchi l'altro."
+      },
+      {
+        "numero": 3,
+        "titolo": "Test sistematico e rilevamento dei bug",
+        "attore": "Sviluppatore / tester",
+        "domanda": "Perché il debug di un sistema robotico fisico è più difficile del debug di un programma software puro?",
+        "impatto": "I bug nei robot possono avere cause hardware (sensore mal posizionato, pin sbagliato) o software (logica errata). Isolare quale sia l'origine richiede testare hardware e software separatamente."
+      },
+      {
+        "numero": 4,
+        "titolo": "Iterazione e miglioramento",
+        "attore": "Ingegnere",
+        "domanda": "Il principio KISS dice 'Keep It Simple, Stupid'. Perché un robot con 10 funzionalità che fallisce imprevedibilmente è peggio di uno con 2 funzionalità che funziona sempre?",
+        "impatto": "La complessità è il nemico dell'affidabilità. Ogni funzionalità aggiunta aumenta la probabilità di un bug e la difficoltà di trovarlo. Il MVP (Minimum Viable Product) funzionante vale più del prototipo ambizioso instabile."
+      },
+      {
+        "numero": 5,
+        "titolo": "Valutazione etica e privacy",
+        "attore": "Progettista / comunità scolastica",
+        "domanda": "Il tuo sistema conta le persone che passano in un corridoio. Questa informazione, conservata nel tempo, cosa potrebbe rivelare sulla vita scolastica di chi vi transita?",
+        "impatto": "Il principio di minimizzazione dei dati (GDPR, Art. 5) richiede di raccogliere solo i dati strettamente necessari alla funzione. Un contatore che mostra 'libero/affollato' è meno invasivo di uno che registra orari e frequenze."
+      }
+    ]
+  }
+}

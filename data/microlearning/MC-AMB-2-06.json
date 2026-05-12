@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-AMB-2-06",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Progettista di una soluzione smart per il mio quartiere",
+    "istruzione": "Identifica un problema reale nel quartiere della tua scuola e usa questa checklist per progettare una soluzione tecnologica basata su dati.",
+    "voci": [
+      "Ho identificato un problema specifico e osservabile nel quartiere (traffico, qualità dell'aria, rifiuti abbandonati, parcheggi, illuminazione, verde) e l'ho documentato con almeno un'osservazione diretta.",
+      "Ho cercato se esistono open data pubblici che documentano questo problema su dati.gov.it o sul portale del mio Comune, trovando almeno un dataset rilevante.",
+      "Ho identificato il tipo di sensore o tecnologia digitale che potrebbe raccogliere dati utili per risolvere il problema, cercando un esempio di città che lo usa già.",
+      "Ho valutato chi potrebbe essere svantaggiato dalla tecnologia che propongo (anziani senza smartphone, persone senza accesso a internet, chi non parla italiano).",
+      "Ho stimato il costo approssimativo della mia proposta cercando online il prezzo di sensori simili (Arduino, Raspberry Pi, sensori commerciali).",
+      "Ho scritto la proposta in forma di candidatura per un bando comunale, con problema, soluzione, costi e impatto atteso in massimo 15 righe."
+    ]
+  },
+  "process": {
+    "titolo": "Come funziona una smart city: dai dati ai servizi, con le domande che nessuno fa",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Raccolta dati con sensori urbani",
+        "attore": "Sensori IoT / telecamere / spire induttive",
+        "domanda": "Le lampade intelligenti di una smart city rilevano quando passi e si accendono. Chi sa quando sei uscito di casa e a che ora sei rientrato?",
+        "impatto": "Una città con 300.000 punti luce intelligenti può risparmiare il 30-50% di energia rispetto all'illuminazione tradizionale. Roma risparmierebbe decine di milioni di euro l'anno. Ma ogni lampada che ti segue è anche un punto di raccolta dati sul tuo movimento."
+      },
+      {
+        "numero": 2,
+        "titolo": "Analisi dei dati e ottimizzazione",
+        "attore": "Algoritmi di analisi / Comune / operatori dei servizi",
+        "domanda": "I cassonetti smart trasmettono il loro livello di riempimento in tempo reale. Se il camion dei rifiuti passa solo quando il cassonetto è pieno, chi decide l'algoritmo che gestisce il percorso?",
+        "impatto": "Barcellona e Amsterdam hanno ridotto i percorsi dei camion raccolta rifiuti del 20-30% con sensori di riempimento. Meno km = meno emissioni, meno rumore. Ma richiede infrastrutture di rete e contratti di manutenzione."
+      },
+      {
+        "numero": 3,
+        "titolo": "Open data e trasparenza",
+        "attore": "Pubbliche amministrazioni / cittadini / sviluppatori",
+        "domanda": "Il Comune di Milano pubblica in tempo reale la disponibilità delle biciclette del bike sharing. Questo dato è disponibile gratuitamente per chiunque voglia usarlo. Quante persone pensi lo usino davvero?",
+        "impatto": "Gli open data urbani esistono ma sono poco conosciuti. Un'app sviluppata da studenti universitari di Bologna usando dati aperti del Comune ha ottenuto 100.000 download in tre mesi. Il problema non è l'accesso ai dati: è la capacità di usarli."
+      },
+      {
+        "numero": 4,
+        "titolo": "Partecipazione civica digitale",
+        "attore": "Cittadini / piattaforme di segnalazione / Comune",
+        "domanda": "Le app di segnalazione dei problemi urbani (una buca, un lampione rotto, un albero pericolante) funzionano davvero? Hai mai provato a segnalare qualcosa al tuo Comune?",
+        "impatto": "Bologna, Torino e Roma hanno piattaforme di segnalazione civica digitale. Il tasso di risoluzione delle segnalazioni varia dal 30% al 70% a seconda del Comune. La tecnologia è già disponibile: la sfida è organizzativa e politica."
+      },
+      {
+        "numero": 5,
+        "titolo": "Inclusione e digital divide",
+        "attore": "Progettisti di servizi / assistenti sociali / anziani",
+        "domanda": "Se il tuo Comune elimina gli sportelli fisici e sposta tutti i servizi online, cosa succede ai cittadini anziani o a chi non usa internet?",
+        "impatto": "In Italia il 43% degli over 65 non usa internet. Una smart city che digitalizza tutti i servizi senza prevedere canali alternativi esclude una parte significativa della popolazione — spesso la più vulnerabile."
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-MAT-1-05",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Scheda tecnica dei metalli attorno a me",
+    "istruzione": "Scegli tre oggetti metallici del tuo ambiente quotidiano con funzioni diverse e usa questa checklist per analizzarli come farebbe un tecnico dei materiali.",
+    "voci": [
+      "Ho scelto tre oggetti metallici svolgendo funzioni diverse: almeno uno esposto all'esterno, uno a contatto con alimenti o acqua, uno soggetto a sollecitazioni meccaniche.",
+      "Per ogni oggetto ho identificato il metallo o la lega principale usando il colore, il test con la calamita (l'acciaio è magnetico, l'alluminio no) e il peso relativo.",
+      "Ho identificato la proprietà principale che rende quel metallo adatto alla sua funzione (durezza, duttilità, resistenza alla corrosione, conduttività termica o elettrica) e ho spiegato il collegamento.",
+      "Ho verificato se ogni oggetto ha un trattamento superficiale visibile (verniciatura, zincatura, cromatura, anodizzazione) e ho capito perché è stato applicato.",
+      "Ho cercato se uno dei tre oggetti è riciclabile e come viene smaltito correttamente nella mia città (RAEE, centro di raccolta, bidone del metallo).",
+      "Ho scritto una modifica di design che apporterei a uno dei tre oggetti per migliorarne la durabilità o ridurne l'impatto ambientale, motivandola con le proprietà dei metalli studiate."
+    ]
+  },
+  "process": {
+    "titolo": "Dalla miniera all'oggetto: il viaggio di un metallo",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Estrazione del minerale",
+        "attore": "Industria mineraria / lavoratori / ingegneri geotecnici",
+        "domanda": "La miniera di rame Chuquicamata in Cile è larga 4,3 km e profonda 850 m — visibile dallo spazio. Cosa pensi che debba succedere a quel territorio dopo che il minerale finisce?",
+        "impatto": "Per ottenere 100 kg di rame bisogna processare circa 330 kg di roccia. Una miniera a cielo aperto produce cavità permanenti, polveri, acque acide e modifica il paesaggio in modo irreversibile su scala secolare."
+      },
+      {
+        "numero": 2,
+        "titolo": "Fusione e produzione della lega",
+        "attore": "Altoforno / acciaieria / operai specializzati",
+        "domanda": "La ghisa è ferro con il 2-4% di carbonio; l'acciaio con lo 0,02-2%. Una differenza di pochi punti percentuali cambia tutto. Come può una piccola variazione di composizione produrre materiali così diversi?",
+        "impatto": "La produzione di acciaio primario (da minerale) emette circa 1,8 tonnellate di CO₂ per tonnellata di acciaio prodotto. L'acciaio è il materiale strutturale più prodotto al mondo: 1,9 miliardi di tonnellate nel 2023."
+      },
+      {
+        "numero": 3,
+        "titolo": "Lavorazione e trattamento termico",
+        "attore": "Officina meccanica / stampaggio / trattamentista",
+        "domanda": "L'acciaio inossidabile dei tuoi posateria non arrugginisce grazie al cromo aggiunto (minimo 10,5%). Eppure il ferro dell'armatura nel cemento si ossida e fa scoppiare il calcestruzzo. Come mai lo stesso elemento base si comporta così diversamente?",
+        "impatto": "Il cromo nell'acciaio inossidabile forma uno strato di ossido di cromo sulla superficie — invisibile, durissimo, che si autoripara se graffiato. Senza questo strato, l'acciaio rugginirebbe in poche settimane a contatto con umidità e ossigeno."
+      },
+      {
+        "numero": 4,
+        "titolo": "Trattamento superficiale",
+        "attore": "Zincatore / verniciatore / anodizzatore",
+        "domanda": "I guardrail stradali sono acciaio zincato: immersi in zinco fuso a 450°C, si ricoprono di uno strato di lega zinco-ferro. Perché usare zinco invece di vernice, che sarebbe più economica?",
+        "impatto": "La zincatura galvanica dura 50-100 anni senza manutenzione su acciaio esposto all'esterno. La vernice richiede ritocchi ogni 5-10 anni. Il costo iniziale più alto si ripaga abbondantemente nel ciclo di vita del manufatto."
+      },
+      {
+        "numero": 5,
+        "titolo": "Fine vita e riciclo",
+        "attore": "Rottamatore / acciaieria elettrica / utente",
+        "domanda": "Riciclare alluminio richiede il 95% in meno di energia rispetto a produrlo dalla bauxite. Nonostante questo, il 25% delle lattine italiane finisce ancora in discarica. Come spieghi questa contraddizione?",
+        "impatto": "In Italia vengono riciclati l'80% degli imballaggi in alluminio e circa il 70% dell'acciaio. Ma i RAEE (elettrodomestici, telefoni) contengono metalli rari come oro, palladio e indio che vengono recuperati solo in parte, disperdendo risorse preziose."
+      }
+    ]
+  }
+}

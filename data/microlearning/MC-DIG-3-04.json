@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-3-04",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Audit di accessibilità: dal report WAVE al piano d'azione concreto",
+    "istruzione": "Analizza il sito della tua scuola (o del tuo comune) con WAVE. Produci un report professionale indirizzato al responsabile del sito.",
+    "voci": [
+      "Ho analizzato il sito con WAVE (wave.webaim.org) e ho registrato il numero totale di errori critici (rossi) e di avvisi (gialli) trovati nella homepage.",
+      "Ho identificato i 5 problemi più gravi e per ognuno ho collegato il tipo di barriera all'utente concreto che esclude, con una descrizione specifica dell'impatto.",
+      "Ho testato la navigazione da tastiera (Tab + Invio) per almeno 3 minuti, documentando se riesco a raggiungere il menu principale, i link principali e almeno un form.",
+      "Ho verificato il contrasto di almeno 3 combinazioni testo/sfondo principali del sito usando il Color Contrast Checker di WebAIM, registrando il rapporto ottenuto e il minimo richiesto (4,5:1).",
+      "Ho collegato ogni errore identificato al principio WCAG violato (P - Percepibile, O - Operabile, U - Comprensibile, R - Robusto) e al criterio di successo specifico.",
+      "Ho scritto il report come lettera formale al dirigente: tono professionale e costruttivo, con 5 problemi, le correzioni concrete e la priorità di intervento (immediata vs. strutturale)."
+    ]
+  },
+  "process": {
+    "titolo": "Dal sito inaccessibile al design per tutti: il processo di audit e correzione",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Identificazione delle barriere digitali",
+        "attore": "UX Accessibility Specialist",
+        "domanda": "Quante persone in Italia incontrano barriere digitali ogni giorno? Solo chi ha una disabilità certificata o un numero molto più alto?",
+        "impatto": "Il 15% della popolazione ha una disabilità (9 milioni in Italia), ma le barriere digitali colpiscono anche anziani, chi usa il telefono con una mano sola, chi legge in lingue straniere. Il numero reale supera il doppio."
+      },
+      {
+        "numero": 2,
+        "titolo": "Analisi con strumenti automatici",
+        "attore": "Auditor",
+        "domanda": "WAVE trova automaticamente molti problemi di accessibilità. Perché però non può trovare tutti i problemi — quali deve sempre verificare un essere umano?",
+        "impatto": "Gli strumenti automatici trovano problemi tecnici (alt text mancante, contrasto insufficiente). Non possono giudicare se un alt text descrive correttamente l'immagine o se un testo è comprensibile a chi ha dislessia."
+      },
+      {
+        "numero": 3,
+        "titolo": "Test con utente reale o simulazione",
+        "attore": "Auditor / utente con disabilità",
+        "domanda": "Chiudi gli occhi e premi Tab sul sito della tua scuola. Cosa succede? Riesci a capire dove sei e dove puoi andare solo dall'audio del sistema?",
+        "impatto": "La navigazione da tastiera è il test minimo di accessibilità motoria. Chi non può usare il mouse — per tremori, lesioni, paralisi — dipende interamente da questa funzionalità."
+      },
+      {
+        "numero": 4,
+        "titolo": "Prioritizzazione delle correzioni",
+        "attore": "Auditor / team tecnico",
+        "domanda": "Aggiungere l'alt text a un'immagine richiede 30 secondi. Cambiare la struttura semantica di un intero sito richiede settimane. Come decidi cosa fare prima?",
+        "impatto": "La matrice impatto/sforzo: correzioni ad alto impatto (escludono molti utenti) e basso sforzo (30 minuti di lavoro) vanno fatte subito. Le ristrutturazioni strutturali vanno pianificate nel medio termine."
+      },
+      {
+        "numero": 5,
+        "titolo": "Verifica della conformità normativa",
+        "attore": "Responsabile del sito / ente pubblico",
+        "domanda": "L'European Accessibility Act (2025) estende gli obblighi di accessibilità anche alle aziende private. Chi non si adegua rischia cosa?",
+        "impatto": "Sanzioni amministrative e obbligo di adeguamento. Ma oltre alle sanzioni: un sito inaccessibile viola un diritto fondamentale sancito dalla Convenzione ONU sui Diritti delle Persone con Disabilità, ratificata dall'Italia nel 2009."
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-ENE-3-06",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 94,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Dimensiono il sistema energetico autonomo per un piccolo Comune dell'Appennino",
+    "istruzione": "Usa i dati del Comune dello scenario (torrente 50 l/s, tetti 2.000 m², parcheggio 30 stalli, serbatoio a 60 m) e questa checklist per calcolare produzione, fabbisogno, accumulo e proporre un piano fattibile.",
+    "voci": [
+      "Calcolo il fabbisogno annuo del Comune con la formula: 2.000 persone × 1.200 kWh/anno + 30% edifici pubblici = risultato in kWh/anno — e verifico se le fonti disponibili possono coprirlo",
+      "Calcolo la potenza del mini-idroelettrico usando P = η × ρ × g × Q × h (con η=0,85, ρ=1000, g=9,81, Q=0,05 m³/s, h=40 m) e la produzione annua moltiplicando per 8.760 ore",
+      "Calcolo l'energia del fotovoltaico su 2.000 m² con efficienza 20% e irraggiamento 1.300 kWh/m²/anno — e confronto il totale con il fabbisogno per verificare se l'indipendenza energetica è raggiungibile",
+      "Per l'accumulo pompato uso E = m × g × h con il volume del serbatoio (500 m³, quindi m = 500.000 kg), g = 9,81 e h = 60 m — convertendo il risultato in kWh (divido i Joule per 3.600.000)",
+      "Per il sistema V2G calcolo: 15 auto × 50 kWh × 30% = energia disponibile in kWh — e identifico il momento ottimale (mattina o pomeriggio) in base al profilo di consumo scolastico e pubblico",
+      "La raccomandazione finale indica quale combinazione di fonti scelgo come primo passo, perché, e quali dati aggiuntivi servirebbero per una progettazione definitiva — dichiarando le ipotesi più fragili"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo dell'accumulo energetico: dal curtailment alla smart grid",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Il problema dell'intermittenza e del curtailment",
+        "attore": "Il gestore di rete / i produttori eolici",
+        "domanda": "In Danimarca a dicembre di notte il vento produce più energia di quanta il paese possa usare — e i produttori vengono pagati per non produrre: come è possibile che 'troppa energia' sia un problema?",
+        "impatto": "La rete deve bilanciare produzione e consumo in ogni istante; l'eccesso di frequenza può danneggiare i trasformatori; il curtailment spreca energia rinnovabile — l'accumulo è la soluzione ma richiede investimenti enormi"
+      },
+      {
+        "numero": 2,
+        "titolo": "Batterie agli ioni di litio: chimica, calcolo e costi",
+        "attore": "Produttore di batterie / utilizzatore finale",
+        "domanda": "Il costo delle batterie al litio è sceso del 97% in 30 anni (da 3.000 a 90 $/kWh) — perché questo calo cambia completamente la competitività delle auto elettriche e degli impianti di stoccaggio?",
+        "impatto": "E (Wh) = V × Ah: una batteria da 350V e 200Ah immagazzina 70.000 Wh = 70 kWh; sotto i 100 $/kWh le batterie diventano economicamente convenienti per accumulo stazionario su scala urbana"
+      },
+      {
+        "numero": 3,
+        "titolo": "Accumulo pompato: la batteria più grande del mondo",
+        "attore": "Gestore impianto idroelettrico di pompaggio",
+        "domanda": "L'accumulo pompato copre il 90% di tutta la capacità di stoccaggio energetico mondiale eppure quasi nessuno lo conosce: come fa a 'caricarsi' di notte e 'scaricarsi' nelle ore di picco?",
+        "impatto": "E = mgh: 500.000 kg × 9,81 × 60 m = 294.300.000 J ÷ 3.600.000 = 81,75 kWh — un serbatoio relativamente piccolo può accumulare decine di kWh con efficienza del 70-85%, senza batterie e senza litio"
+      },
+      {
+        "numero": 4,
+        "titolo": "Idrogeno verde e accumulo stagionale",
+        "attore": "Produttore di idrogeno / operatore fuel cell",
+        "domanda": "Se le batterie al litio hanno efficienza del 90% e l'idrogeno verde solo del 25-35%, perché l'UE prevede 10 milioni di tonnellate di idrogeno verde all'anno entro il 2030 — non conviene usare solo batterie?",
+        "impatto": "L'idrogeno può essere stoccato in grande quantità e per mesi (l'estate per l'inverno) in gasdotti e caverne saline: le batterie sono ideali per l'accumulo giornaliero, l'idrogeno per quello stagionale — non sono alternative ma complementari"
+      },
+      {
+        "numero": 5,
+        "titolo": "Smart grid, V2G e Comunità Energetiche Rinnovabili",
+        "attore": "Lo studente-consulente del Comune",
+        "domanda": "15 auto elettriche parcheggiate cedono energia alla rete mentre i dipendenti lavorano — quando è più utile cederla: la mattina (alta produzione solare) o il pomeriggio (picco di consumo)?",
+        "impatto": "Il V2G trasforma ogni auto elettrica in un nodo attivo della rete; le CER (D.Lgs. 199/2021) permettono ai Comuni di condividere l'energia prodotta tra più utenti: insieme rendono l'indipendenza energetica locale economicamente praticabile"
+      }
+    ]
+  }
+}

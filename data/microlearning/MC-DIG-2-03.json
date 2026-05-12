@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-DIG-2-03",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 89,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Diagnostico del mio computer: analisi e piano di miglioramento",
+    "istruzione": "Analizza il computer o il dispositivo che usi di più. Non cancellare nulla senza essere sicuro — l'obiettivo è capire, non eliminare.",
+    "voci": [
+      "Ho contato quanti file ci sono direttamente nella cartella Documenti (o Download) senza aprire sottocartelle, e ho annotato il numero.",
+      "Ho cercato nella cartella principale un file con 'finale', 'definitivo' o 'versione' nel nome: ho trovato quante versioni esistono dello stesso documento.",
+      "Ho aperto le impostazioni del browser e ho verificato quanti cookie sono salvati e da quanti siti diversi provengono.",
+      "Ho verificato quando è stato fatto l'ultimo backup del dispositivo (o se non è mai stato fatto), identificando qual è il file più importante che rischierei di perdere.",
+      "Ho progettato la struttura di cartelle che adotterei usando i principi della MC: massimo 3 livelli di profondità, convenzione di naming con data e materia.",
+      "Ho scritto il piano di backup che adotterei: quale strumento, con quale frequenza, e qual è la 'finestra di perdita massima' accettabile per i miei file più importanti."
+    ]
+  },
+  "process": {
+    "titolo": "Dalla cartella caotica al sistema ordinato: il ciclo della gestione digitale",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Diagnosi della situazione attuale",
+        "attore": "Utente",
+        "domanda": "Marco ha 47 file sul desktop con nomi come 'relazione DEFINITIVA vera2 usare questa'. Quante ore all'anno stima perda cercando file?",
+        "impatto": "Studi sulla produttività stimano 15-20 minuti persi per sessione nella ricerca di file non organizzati. In un anno scolastico sono ore sottratte allo studio."
+      },
+      {
+        "numero": 2,
+        "titolo": "Progettazione della struttura",
+        "attore": "Utente",
+        "domanda": "Perché la struttura di cartelle con più di 3 livelli di profondità è controproducente, anche se sembra più ordinata?",
+        "impatto": "Più livelli significano più click per trovare un file. La prevedibilità conta più della precisione: un sistema semplice usato sempre è migliore di uno elaborato usato raramente."
+      },
+      {
+        "numero": 3,
+        "titolo": "Naming convention: data prima di tutto",
+        "attore": "Utente",
+        "domanda": "Perché scrivere la data nel formato ANNO-MESE-GIORNO (2026-03-15) invece di GIORNO-MESE-ANNO (15-03-2026) cambia tutto quando ordini i file per nome?",
+        "impatto": "Il formato ISO 8601 (AAAA-MM-GG) fa ordinare automaticamente i file in ordine cronologico quando sono ordinati per nome alfabetico."
+      },
+      {
+        "numero": 4,
+        "titolo": "Implementazione della regola 3-2-1",
+        "attore": "Utente / servizi cloud",
+        "domanda": "Se il tuo computer si rompesse stanotte, quanto lavoro perderesti? Calcola in ore di lavoro, non in file.",
+        "impatto": "La regola 3-2-1 (3 copie, 2 supporti diversi, 1 fuori sede) riduce la perdita massima a meno di 24 ore se il backup è automatico e giornaliero."
+      },
+      {
+        "numero": 5,
+        "titolo": "Configurazione del backup automatico",
+        "attore": "Sistema operativo / servizio cloud",
+        "domanda": "Perché il backup manuale non funziona nella pratica, anche per persone molto organizzate?",
+        "impatto": "Il backup manuale viene dimenticato esattamente nei periodi di maggiore lavoro — quelli in cui un guasto sarebbe più costoso. L'automazione rimuove la dipendenza dalla memoria umana."
+      },
+      {
+        "numero": 6,
+        "titolo": "Manutenzione e pulizia periodica",
+        "attore": "Utente",
+        "domanda": "Qual è la regola pratica per decidere se un programma installato vale la pena di tenerlo o è meglio disinstallarlo?",
+        "impatto": "Se non hai usato un programma nei tre mesi successivi all'installazione, probabilmente non ti servirà. Ogni programma inutilizzato occupa spazio e può rallentare l'avvio."
+      }
+    ]
+  }
+}

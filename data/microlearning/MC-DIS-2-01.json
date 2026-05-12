@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIS-2-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Tavola tecnica di un oggetto reale: tre viste + sezione",
+    "istruzione": "Scegli un oggetto semplice e geometrico (max 15×10×10 cm). Misuralo, scegli la scala, disegna la tavola tecnica completa come documento professionale.",
+    "voci": [
+      "Ho misurato l'oggetto con righello o calibro e ho annotato tutte le misure su uno schizzo di rilievo prima di iniziare il disegno definitivo.",
+      "Ho disposto le tre viste sul foglio nella posizione standard (frontale al centro-sinistra, laterale destra a destra, pianta sopra la frontale) e le ho allineate con linee di corrispondenza leggere.",
+      "Ho usato correttamente i quattro tipi di linea: continua grossa per i contorni visibili, tratteggiata per i contorni nascosti, mista per gli assi di simmetria, continua fine per le linee di quota.",
+      "Se l'oggetto ha un foro o cavità, ho eseguito la sezione A-A con piano di taglio etichettato, frecce di direzione e tratteggio UNI a 45°.",
+      "Il disegno è allineato: ogni elemento visibile in una vista ha la sua corrispondenza geometrica nelle altre due viste (stessa quota sull'asse corrispondente).",
+      "Il cartiglio nell'angolo inferiore destro è compilato con: titolo (nome oggetto + tipo di disegno), scala, data, nome, materiale stimato dell'oggetto."
+    ]
+  },
+  "process": {
+    "titolo": "Come si rappresenta un oggetto 3D su carta 2D: il metodo di Monge",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Scelta delle viste e del punto di osservazione",
+        "attore": "Progettista tecnico",
+        "domanda": "La vista frontale è quella che mostra meglio la forma caratteristica dell'oggetto. Come decidi quale faccia mettere di fronte quando non è ovvio?",
+        "impatto": "Si sceglie la vista che riduce al minimo le linee tratteggiate: se l'interno complesso è visibile frontalmente, serve meno la sezione. La scelta della vista principale è una decisione progettuale, non arbitraria."
+      },
+      {
+        "numero": 2,
+        "titolo": "Proiezione ortogonale e costruzione delle viste",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Perché la proiezione ortogonale conserva le misure reali mentre la prospettiva le distorce, e qual è la conseguenza pratica per chi deve costruire l'oggetto?",
+        "impatto": "La proiezione ortogonale usa raggi paralleli perpendicolari al piano: ogni dimensione è misurabile. Chi costruisce legge le misure dalle quote, non dalla percezione visiva distorta dalla prospettiva."
+      },
+      {
+        "numero": 3,
+        "titolo": "Allineamento delle viste con le corrispondenze",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Se nella vista frontale uno spigolo verticale è a 30 mm dal bordo sinistro, in quale posizione deve trovarsi nella vista dall'alto e perché?",
+        "impatto": "A 30 mm dal bordo sinistro anche nella pianta: le viste devono condividere le coordinate. L'allineamento non è decorativo — serve per leggere le corrispondenze tra dimensioni nelle tre direzioni."
+      },
+      {
+        "numero": 4,
+        "titolo": "Sezione per mostrare l'interno",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Perché le linee tratteggiate per i contorni nascosti diventano insufficienti quando l'interno è complesso, e quando è obbligatorio ricorrere alla sezione?",
+        "impatto": "Troppe tratteggiate si sovrappongono e rendono il disegno illeggibile. La sezione 'taglia' l'oggetto e mostra direttamente l'interno, eliminando l'ambiguità per chi deve costruire."
+      },
+      {
+        "numero": 5,
+        "titolo": "Verifica della coerenza del disegno",
+        "attore": "Progettista / tecnico di produzione",
+        "domanda": "Un tecnico che non ha mai visto l'oggetto originale può costruirlo esattamente uguale leggendo solo il tuo disegno. Come verifichi che questo sia vero?",
+        "impatto": "Il test del 'costruttore cieco': ogni dimensione deve apparire in almeno due viste. Ogni linea visibile in una vista deve avere corrispondenza nelle altre. Una linea senza corrispondenza indica un errore."
+      }
+    ]
+  }
+}

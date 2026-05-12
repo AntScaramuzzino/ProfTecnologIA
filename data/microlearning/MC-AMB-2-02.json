@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-AMB-2-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Consulente energetico di casa mia",
+    "istruzione": "Usa questa checklist per analizzare i consumi energetici della tua abitazione e produrre tre proposte concrete di risparmio.",
+    "voci": [
+      "Ho trovato il quadro elettrico di casa e ho contato quanti circuiti separati ha, verificando se è presente il differenziale (salvavita).",
+      "Ho elencato almeno 6 elettrodomestici di casa con la loro potenza in watt (scritta sulla targhetta o cercata online) e ho stimato le ore di uso al giorno.",
+      "Ho calcolato il consumo mensile in kWh di almeno un elettrodomestico usando la formula: (Potenza in W × ore/giorno × 30) / 1000.",
+      "Ho identificato almeno tre dispositivi in stand-by che consumano energia anche quando sembrano spenti e ho stimato il loro consumo annuo.",
+      "Ho proposto un'azione a costo zero per ridurre i consumi e ho stimato il risparmio annuo in kWh.",
+      "Ho verificato la classe energetica degli elettrodomestici principali di casa (A, B, C...) e ho calcolato quanto si risparmierebbe sostituendo il più vecchio con uno di classe superiore."
+    ]
+  },
+  "process": {
+    "titolo": "Il percorso dell'energia elettrica: dalla centrale alla presa",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Produzione e trasmissione ad altissima tensione",
+        "attore": "Centrali elettriche / Terna (gestore della rete)",
+        "domanda": "L'energia si trasmette a 400.000 Volt per ridurre le perdite. Se raddoppi la tensione, le perdite si riducono di 4 volte. Perché non si può usare questa altissima tensione direttamente in casa?",
+        "impatto": "Le perdite di rete in Italia sono circa il 6-7% dell'energia prodotta. A livello europeo questo spreco vale miliardi di euro l'anno. Le reti intelligenti (smart grid) promettono di ridurre ulteriormente queste perdite."
+      },
+      {
+        "numero": 2,
+        "titolo": "Trasformazione e distribuzione locale",
+        "attore": "Cabine di trasformazione / distributore locale (ENEL, A2A...)",
+        "domanda": "Quante cabine di trasformazione ci sono nel tuo quartiere? Hai mai notato quei piccoli edifici grigi con il triangolo giallo 'pericolo di morte'?",
+        "impatto": "La rete di distribuzione italiana ha circa 1,1 milioni di km di linee elettriche e 280.000 cabine di trasformazione. Modernizzarla per gestire l'energia solare distribuita richiede investimenti nell'ordine di decine di miliardi."
+      },
+      {
+        "numero": 3,
+        "titolo": "Contatore e quadro elettrico",
+        "attore": "Utente / installatore elettrico",
+        "domanda": "Il salvavita nel quadro elettrico scatta se c'è una dispersione di corrente verso terra. In quale situazione domestica pensi sia più probabile che questo accada?",
+        "impatto": "Gli incendi domestici da impianto elettrico sono la seconda causa di incendio in Italia dopo le cucine. La manutenzione del quadro elettrico e il non sovraccaricare le prese possono prevenire la maggior parte di questi eventi."
+      },
+      {
+        "numero": 4,
+        "titolo": "Consumo degli elettrodomestici",
+        "attore": "Utente / elettrodomestici",
+        "domanda": "Il frigorifero è acceso 24 ore su 24 per tutta la vita, il ferro da stiro 1 ora alla settimana. Quale dei due consuma più energia in un anno?",
+        "impatto": "Un frigorifero di classe A consuma circa 150-200 kWh l'anno. Un frigorifero vecchio di classe D/E può consumare 400-600 kWh. La differenza vale circa 50-70 euro l'anno in bolletta — e la durata media di un frigorifero è 15 anni."
+      },
+      {
+        "numero": 5,
+        "titolo": "Stand-by e consumi fantasma",
+        "attore": "Utente / produttori di elettronica",
+        "domanda": "Il televisore in stand-by consuma circa 1-2 W continuamente. Moltiplicato per tutti i dispositivi in stand-by di casa, quante ore di luce accesa equivale ogni giorno?",
+        "impatto": "I consumi in stand-by rappresentano in media il 5-10% della bolletta elettrica domestica in Europa. Una multipresa con interruttore da 5 euro può eliminare completamente questi consumi se si spegne prima di dormire."
+      },
+      {
+        "numero": 6,
+        "titolo": "Autoproduzione e efficienza energetica",
+        "attore": "Utente prosumer / installatori fotovoltaico",
+        "domanda": "Un pannello solare da 1 kWp produce in media 1.100-1.300 kWh all'anno in Italia centrale. Il fabbisogno medio di una famiglia italiana è circa 2.700 kWh. Quanti pannelli servirebbero per coprire metà del consumo?",
+        "impatto": "Il 39% delle emissioni globali di CO₂ viene dal settore edilizio. L'efficienza energetica degli edifici (isolamento, impianti, rinnovabili) è la leva più potente per ridurre queste emissioni nei prossimi decenni."
+      }
+    ]
+  }
+}

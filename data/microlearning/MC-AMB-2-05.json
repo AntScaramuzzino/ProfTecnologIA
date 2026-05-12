@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-AMB-2-05",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Dossier acqua della mia scuola",
+    "istruzione": "Osserva come viene usata e sprecata l'acqua nella tua scuola per una settimana e usa questa checklist per costruire il tuo dossier.",
+    "voci": [
+      "Ho stimato il consumo idrico annuale della mia scuola moltiplicando il numero di persone presenti per i litri medi per persona per giorno a scuola (20-30 litri) e per i giorni di scuola.",
+      "Ho osservato i bagni della scuola per almeno due giorni e ho annotato almeno 3 situazioni di spreco (rubinetti che gocciolano, sciacquoni rotti, rubinetti lasciati aperti).",
+      "Ho confrontato l'acqua del rubinetto con quella in bottiglia cercando online l'analisi dell'acqua del mio Comune e verificando i parametri principali.",
+      "Ho verificato se nella mia scuola ci sono sistemi di risparmio idrico (rompigetto ai rubinetti, cassette WC a doppio tasto) e ho contato quanti ne mancano.",
+      "Ho cercato quale percentuale di acqua immessa in rete perde il mio Comune prima di arrivare ai rubinetti, confrontandola con la media italiana (42%).",
+      "Ho scritto almeno due proposte concrete per ridurre lo spreco idrico nella scuola, indicando il costo stimato di ciascuna."
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo artificiale dell'acqua: dalla sorgente al depuratore",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Captazione e presa d'acqua",
+        "attore": "Gestore idrico / ingegnere idraulico",
+        "domanda": "L'acqua del tuo rubinetto viene da un fiume, da un lago o da una falda sotterranea? Hai mai cercato da dove viene l'acqua del tuo Comune?",
+        "impatto": "Solo il 2,5% dell'acqua sulla Terra è dolce, e di questa solo lo 0,3% è facilmente accessibile in fiumi e laghi. La gestione delle fonti idriche è già oggi una delle principali cause di conflitti internazionali."
+      },
+      {
+        "numero": 2,
+        "titolo": "Potabilizzazione",
+        "attore": "Impianto di potabilizzazione / chimico dell'acqua",
+        "domanda": "L'acqua del rubinetto contiene cloro a 0,2-0,5 mg per litro. La candeggina ne contiene 50.000 mg per litro. Se il sapore di cloro ti disturba, cosa potresti fare di semplice prima di berla?",
+        "impatto": "La clorazione dell'acqua ha praticamente eliminato le epidemie di colera e tifo nelle città italiane. Prima degli acquedotti moderni, queste malattie uccidevano migliaia di persone ogni anno nelle stesse città dove oggi viviamo."
+      },
+      {
+        "numero": 3,
+        "titolo": "Distribuzione e rete idrica",
+        "attore": "Gestore idrico / rete di tubature",
+        "domanda": "L'Italia perde il 42% dell'acqua immessa in rete prima che arrivi ai rubinetti. In alcune città del sud si perde il 60%. Perché questa perdita non viene riparata se è così costosa?",
+        "impatto": "Riparare tutte le reti idriche italiane richiederebbe circa 65 miliardi di euro di investimento. Ogni giorno di ritardo aumenta il costo del ritardo climatico, dato che le siccità rendono ogni litro sprecato più costoso."
+      },
+      {
+        "numero": 4,
+        "titolo": "Uso domestico e consapevolezza",
+        "attore": "Utente / famiglia",
+        "domanda": "Un italiano usa in media 220 litri di acqua al giorno. Un tedesco 125 litri. Cosa pensi che faccia la differenza — il comportamento individuale, le infrastrutture o la cultura?",
+        "impatto": "Lo sciacquone del WC consuma 6-12 litri per utilizzo ed è il maggiore consumo idrico domestico. Una cassetta a doppio tasto (da 3-6 euro di differenza) riduce questo consumo del 50% per tutto il ciclo di vita del rubinetto."
+      },
+      {
+        "numero": 5,
+        "titolo": "Fognatura e raccolta delle acque reflue",
+        "attore": "Gestore fognature / ingegnere idraulico",
+        "domanda": "In molte città italiane la rete fognaria e la rete delle acque piovane sono miste. Cosa succede quando piove molto in una città con rete mista?",
+        "impatto": "Le reti fognarie miste in caso di piogge intense inviano acqua piovana diluita nei depuratori, saturandoli. In molte città questo causa lo sversamento di acque miste non trattate nei fiumi, peggiorando la qualità delle acque superficiali."
+      },
+      {
+        "numero": 6,
+        "titolo": "Depurazione e restituzione all'ambiente",
+        "attore": "Impianto di depurazione / ingegnere ambientale",
+        "domanda": "I batteri nei depuratori biologici 'mangiano' la sostanza organica delle acque reflue. Sono gli stessi batteri che si trovano nell'intestino degli animali. Trovi strano che la nostra acqua pulita dipenda dai batteri?",
+        "impatto": "L'Italia depura circa il 90% delle acque reflue urbane, ma molti impianti del Sud sono inadeguati o non funzionanti. La Commissione Europea ha aperto procedure di infrazione all'Italia per la gestione delle acque reflue in diverse regioni."
+      }
+    ]
+  }
+}

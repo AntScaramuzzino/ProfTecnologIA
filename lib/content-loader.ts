@@ -154,19 +154,19 @@ export function getMCHookAudio(mcId: string): string | null {
 const TRANSCRIPTS_ROOT = path.join(process.cwd(), "data", "transcripts");
 
 function _cleanScriptText(raw: string): string {
-  // Se il file ha una sezione ## SCRIPT, prendi solo quella parte
-  // eliminando tutto il blocco metadati iniziale (Titolo, MC, Classe, Durata, ecc.)
-  const scriptSectionMatch = raw.match(/^##\s*SCRIPT\s*\n([\s\S]*)$/im);
-  const text = scriptSectionMatch ? scriptSectionMatch[1] : raw;
+  // Estrai SOLO il contenuto tra ## SCRIPT e il successivo ## (METADATI, NOTE DI REGIA, ecc.)
+  const scriptMatch = raw.match(/^##\s*SCRIPT\s*\n([\s\S]*?)(?=\n##\s|\s*$)/im);
+  const text = scriptMatch ? scriptMatch[1] : raw;
 
   return text
-    .replace(/^#.*$/gm, "")                                   // rimuovi titoli rimasti
-    .replace(/^\*\*\[BLOCCO[^\]]*\]\*\*\s*$/gm, "")           // rimuovi header blocchi [BLOCCO N — ...]
-    .replace(/^---+\s*$/gm, "")                               // rimuovi separatori ---
+    .replace(/```[\s\S]*?```/g, "")                            // rimuovi blocchi codice (```json...```)
+    .replace(/^#.*$/gm, "")                                    // rimuovi titoli ##
+    .replace(/^\*\*\[BLOCCO[^\]]*\]\*\*\s*$/gm, "")            // rimuovi header blocchi
+    .replace(/^---+\s*$/gm, "")                                // rimuovi separatori ---
     .replace(/^\*\*\S[^*\n]+:\*\*[^\n]*$/gm, "")               // rimuovi righe metadati **Chiave:** valore
     .replace(/\[PAUSA\]/g, "")
     .replace(/\[ENFASI\]/g, "")
-    .replace(/\*{1,2}([^*\n]+)\*{1,2}/g, "$1")                // rimuovi bold/italic residui
+    .replace(/\*{1,2}([^*\n]+)\*{1,2}/g, "$1")                 // rimuovi bold/italic residui
     .replace(/\n{3,}/g, "\n\n")
     .trim();
 }

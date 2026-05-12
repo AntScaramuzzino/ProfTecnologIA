@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-ALI-2-05",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 89,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Audit imballaggi del mio pasto",
+    "istruzione": "Scegli un pasto completo che hai fatto di recente e usa questa checklist per analizzare tutti gli imballaggi degli ingredienti usati.",
+    "voci": [
+      "Ho elencato tutti gli imballaggi presenti nel mio pasto (incluse confezioni di condimenti, spezie, pasta, scatolame).",
+      "Per ogni imballaggio ho identificato il materiale principale (plastica, vetro, cartone, alluminio, multistrato) e ho cercato il simbolo di riciclabilità.",
+      "Ho verificato come si smaltisce correttamente ogni imballaggio nel sistema di raccolta differenziata del mio Comune.",
+      "Ho individuato almeno un caso di over-packaging (imballaggio eccessivo rispetto alla necessità di protezione del prodotto).",
+      "Ho trovato almeno un imballaggio con funzione di conservazione attiva (atmosfera modificata, sottovuoto o barriera UV) e ho capito perché è necessario.",
+      "Ho proposto un'alternativa concreta per sostituire l'imballaggio più problematico del pasto analizzato."
+    ]
+  },
+  "process": {
+    "titolo": "Le cinque funzioni di un imballaggio: dal progetto allo smaltimento",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Protezione meccanica",
+        "attore": "Progettista del packaging / industria alimentare",
+        "domanda": "Le patatine in busta contengono azoto invece di aria per creare un cuscino protettivo. Se non ci fosse questo gas, cosa troverebbero le patatine nel sacchetto?",
+        "impatto": "Senza protezione meccanica adeguata, la percentuale di cibo rovinato prima di arrivare al consumatore aumenterebbe enormemente, peggiorando gli sprechi lungo tutta la filiera."
+      },
+      {
+        "numero": 2,
+        "titolo": "Conservazione e barriera",
+        "attore": "Tecnologo alimentare / chimico del packaging",
+        "domanda": "Un petto di pollo in imballaggio standard dura 3-4 giorni in frigo; lo stesso in atmosfera modificata dura 8-12 giorni. Quanto spreco alimentare in meno produrrebbe un supermercato usando sempre l'atmosfera modificata?",
+        "impatto": "Il confezionamento in atmosfera modificata (azoto + CO₂) elimina l'ossigeno, bloccando ossidazione e crescita batterica. Può raddoppiare o triplicare la shelf life senza conservanti chimici aggiuntivi."
+      },
+      {
+        "numero": 3,
+        "titolo": "Informazione obbligatoria",
+        "attore": "Produttore / legislatore UE (Reg. 1169/2011)",
+        "domanda": "Sull'etichetta di un succo di frutta, cosa ti dice di più sulla qualità reale del prodotto: il nome commerciale o la lista degli ingredienti in ordine decrescente?",
+        "impatto": "Il Regolamento UE 1169/2011 rende obbligatoria la lista degli ingredienti in ordine decrescente di peso, i 14 allergeni in evidenza e la dichiarazione nutrizionale per 100 g — strumenti per confrontare prodotti in modo oggettivo."
+      },
+      {
+        "numero": 4,
+        "titolo": "Comunicazione di marketing",
+        "attore": "Reparto marketing / brand designer",
+        "domanda": "Il termine 'naturale' su un imballaggio alimentare non ha una definizione legale europea. Puoi scriverlo su quasi qualsiasi prodotto. Cosa ti dice davvero e cosa non ti dice?",
+        "impatto": "Saper distinguere le informazioni obbligatorie (verificabili e regolamentate) dai claim di marketing (non sempre precisi) è una delle competenze chiave del consumatore informato."
+      },
+      {
+        "numero": 5,
+        "titolo": "Fine vita e smaltimento",
+        "attore": "Consumatore / sistema di raccolta / impianto di riciclo",
+        "domanda": "Un bicchiere di plastica PET e un bicchiere in bioplastica PLA compostabile sembrano identici. Cosa succede se li butti entrambi nel bidone della plastica?",
+        "impatto": "I materiali compostabili contaminano il flusso della plastica riciclabile se smaltiti in modo errato. La differenziazione corretta degli imballaggi richiede formazione continua del consumatore e sistemi di raccolta adeguati."
+      },
+      {
+        "numero": 6,
+        "titolo": "Innovazione verso l'economia circolare",
+        "attore": "Ricercatori / start-up del packaging sostenibile",
+        "domanda": "Un imballaggio di alghe marine che si scioglie in acqua o una scatola di micelio fungino che cresce e poi si composta. Quale limite di questi materiali pensi impedisca ancora la loro diffusione di massa?",
+        "impatto": "L'UE punta a rendere tutti gli imballaggi riutilizzabili o riciclabili entro il 2030 (Regolamento PPWR). La transizione richiede investimenti in infrastrutture di raccolta oltre che in nuovi materiali."
+      }
+    ]
+  }
+}

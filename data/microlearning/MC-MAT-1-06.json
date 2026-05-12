@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-MAT-1-06",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Audit delle etichette nel mio armadio",
+    "istruzione": "Scegli tre prodotti con etichetta di composizione (abbigliamento, imballaggi o altro) e usa questa checklist per decodificare cosa contengono davvero.",
+    "voci": [
+      "Ho scelto tre prodotti con etichetta di composizione, di cui almeno uno con un claim 'bio', 'eco', 'compostabile' o 'sostenibile', e ho copiato esattamente la composizione dichiarata.",
+      "Per ogni fibra o materiale dichiarato ho identificato se è naturale o sintetico, la sua origine e se produce microplastiche durante il lavaggio.",
+      "Ho verificato il claim ecologico presente su almeno un prodotto cercando online la definizione tecnica e la certificazione che dovrebbe supportarlo.",
+      "Ho calcolato l'impronta idrica approssimativa di un capo di abbigliamento in cotone puro del mio armadio, usando il dato di 2.700 litri per una t-shirt.",
+      "Ho cercato l'etichetta di cura di un capo sintetico e ho verificato se si possono usare sacchetti lavaggio anti-microplastiche per ridurre le fibre rilasciate.",
+      "Ho scritto un giudizio motivato su uno dei tre prodotti: lo ricomprerei dopo questa analisi? Cosa cambieresti nel prodotto o nel tuo comportamento di acquisto?"
+    ]
+  },
+  "process": {
+    "titolo": "Dalle fibre all'impronta: il ciclo di vita dei tessuti",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Produzione della fibra grezza",
+        "attore": "Agricoltore (cotone/lino) / allevatore (lana/seta) / industria petrolchimica (sintetici)",
+        "domanda": "Il Mar d'Aral era il quarto lago più grande del mondo. Si è quasi prosciugato per irrigare i campi di cotone dell'Uzbekistan. Sapendo questo, guarda la tua t-shirt preferita in cotone: cosa pensi?",
+        "impatto": "Produrre 1 kg di cotone richiede 8.000-10.000 litri d'acqua. Il cotone biologico usa il 91% in meno di acqua nei processi di tintura e finissaggio, ma le rese per ettaro sono più basse, richiedendo più terra."
+      },
+      {
+        "numero": 2,
+        "titolo": "Filatura e tessitura",
+        "attore": "Industria tessile / filatoi / telai industriali",
+        "domanda": "La fibra di lana ha scaglie microscopiche che la fanno feltrate con il calore e l'attrito. Perché la maggior parte delle etichette di lana dice 'lavare a mano o a 30°C'?",
+        "impatto": "Un capo in lana feltrata è inutilizzabile. Ma la lana lavata con cura dura decenni: un maglione di buona lana può resistere 30 anni con la manutenzione corretta, riducendo enormemente il suo impatto per anno d'uso."
+      },
+      {
+        "numero": 3,
+        "titolo": "Tintura e finissaggio",
+        "attore": "Tintorie industriali / chimici tessili",
+        "domanda": "Il 20% dell'inquinamento idrico industriale mondiale viene dalle tintorie tessili. La maglietta colorata che indossi è stata tinta con sostanze chimiche che finiscono nei fiumi dove non ci sono impianti di trattamento. Cambierebbe qualcosa se questo fosse scritto sull'etichetta?",
+        "impatto": "Il Bangladesh e la Cina ospitano gran parte delle tintorie mondiali con normative ambientali meno stringenti che in Europa. Le certificazioni GOTS e OEKO-TEX garantiscono processi di tintura con meno impatto, ma coprono ancora una minoranza del mercato."
+      },
+      {
+        "numero": 4,
+        "titolo": "Uso e lavaggio",
+        "attore": "Consumatore / lavatrice",
+        "domanda": "Ogni lavaggio di un capo sintetico rilascia circa 700.000 microfibre di plastica nell'acqua, che attraversano i depuratori e finiscono nel mare. Stai lavando plastica nel mare ogni settimana?",
+        "impatto": "Si stima che il 35% delle microplastiche negli oceani provenga dal lavaggio di tessuti sintetici. Sacchetti lavaggio anti-microplastiche (Guppyfriend) riducono del 54% le fibre rilasciate. I depuratori ne trattengono il 70-80%, ma il resto passa."
+      },
+      {
+        "numero": 5,
+        "titolo": "Fine vita e economia circolare del tessile",
+        "attore": "Consumatore / raccolta usato / riciclo tessile",
+        "domanda": "Solo l'1% dell'abbigliamento nel mondo viene riciclato in nuovi tessuti. Il 73% finisce in discarica o incenerito. Se potessi disegnare il tuo prossimo capo pensando già a dove andrà a finire, cosa cambieresti?",
+        "impatto": "L'UE ha reso obbligatoria la raccolta separata dei tessili usati in tutti gli Stati Membri dal 2025. L'obiettivo è aumentare il tasso di riuso e riciclo tessile dall'attuale 1% a oltre il 50% entro il 2030 — una sfida enorme per l'infrastruttura di raccolta."
+      }
+    ]
+  }
+}

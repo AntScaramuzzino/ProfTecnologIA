@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-ENE-3-03",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 93,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Dimensiono l'impianto fotovoltaico della mia scuola e valuto la convenienza della batteria",
+    "istruzione": "Misura (o stima da Google Maps) la superficie del tetto della scuola, raccoglie il consumo annuo se disponibile, e usa questa checklist per calcolare produzione, risparmio economico e payback period con e senza sistema di accumulo.",
+    "voci": [
+      "Calcolo la potenza massima installabile dividendo la superficie disponibile per 8 m²/kWp — non dimentico di escludere almeno il 30% per ombre e passaggi tecnici",
+      "Moltiplico i kWp installati per 1.250 kWh/kWp/anno (Italia centrale, tetto Sud 25°) per ottenere la produzione annua — e capisco perché questo valore scende del 20-30% se il tetto è orientato a Est",
+      "Distinguo la potenza di picco (kWp) dalla produzione reale: un impianto da 3 kWp non produce sempre 3 kW ma ha un fattore di carico del 13-15% — questo vuol dire circa 3.900 kWh/anno in media italiana",
+      "Calcolo il payback period netto applicando la detrazione fiscale del 50% al costo lordo dell'impianto — e verifico se rientra nei 20 anni di vita utile dei pannelli",
+      "Per il livello avanzato con batteria: calcolo quanta energia va in rete senza accumulo (40% della produzione) e quanta ne recupero con la batteria (60% di quella quota) — verificando se il payback dell'investimento totale migliora o peggiora",
+      "Nella relazione al consiglio di istituto uso almeno un paragone comprensibile per i non tecnici (es. 'equivale a togliere X automobili dalla strada per 10 anni') e dichiaro esplicitamente l'incertezza più grande nei miei calcoli"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo delle fonti rinnovabili: dalla raccolta all'integrazione nella rete",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Principi fisici e caratteristiche delle fonti rinnovabili",
+        "attore": "La fonte naturale (sole, vento, acqua, terra)",
+        "domanda": "In 90 minuti il Sole invia alla Terra tanta energia quanta ne consuma tutta l'umanità in un anno — perché allora non abbiamo già risolto il problema energetico?",
+        "impatto": "Il calo del 90% dei costi del solare in 13 anni rende la produzione economicamente competitiva, ma il problema non è produrre: è raccogliere l'energia nel momento giusto e trasportarla dove serve"
+      },
+      {
+        "numero": 2,
+        "titolo": "Effetto fotoelettrico e struttura di un impianto fotovoltaico",
+        "attore": "Il pannello fotovoltaico → l'inverter → la rete",
+        "domanda": "Una cella fotovoltaica produce corrente continua a 0,5V — come fanno decine di celle a produrre i 220V che servono in casa, senza trasformatori tradizionali?",
+        "impatto": "Celle in serie aumentano la tensione, stringhe in parallelo aumentano la corrente, l'inverter converte DC in AC: capire questa catena permette di calcolare correttamente la configurazione di un impianto reale"
+      },
+      {
+        "numero": 3,
+        "titolo": "Intermittenza e problema del bilanciamento della rete",
+        "attore": "Il gestore di rete (Terna in Italia)",
+        "domanda": "Perché l'isola di Samsø è riuscita a diventare 100% rinnovabile nel 2007 ma non ha potuto decarbonizzare i trasporti fino agli anni 2020 — e cosa mancava?",
+        "impatto": "Il fotovoltaico produce il picco a mezzogiorno mentre il consumo picca tra le 18 e le 21: l'accumulo (batterie, pompaggio, idrogeno) è il tassello mancante per superare il 40-50% di rinnovabili nel mix"
+      },
+      {
+        "numero": 4,
+        "titolo": "Tecnologie di accumulo e smart grid",
+        "attore": "Batterie, impianti di pompaggio, smart grid",
+        "domanda": "L'idrogeno verde ha un'efficienza del ciclo del 30-40% contro il 90% delle batterie al litio — eppure è la soluzione preferita per l'accumulo stagionale: perché?",
+        "impatto": "Le batterie sono perfette per l'accumulo giornaliero (carica di giorno, scarica di sera); l'idrogeno permette di stoccare l'energia dell'estate in grande quantità per usarla in inverno — due soluzioni complementari, non alternative"
+      },
+      {
+        "numero": 5,
+        "titolo": "Dimensionamento e analisi economica di un impianto reale",
+        "attore": "Lo studente-consulente energetico",
+        "domanda": "Un impianto fotovoltaico per la scuola ha un payback period di 8 anni su una vita utile di 20 anni — è un buon investimento anche se non produce un profitto diretto?",
+        "impatto": "Il calcolo completo (produzione, autoconsumo, credito da immissione, costo netto con detrazione, payback) trasforma il concetto astratto di 'energia rinnovabile' in una decisione concreta con numeri verificabili"
+      }
+    ]
+  }
+}

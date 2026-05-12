@@ -62,9 +62,10 @@
     "titolo": "Il tuo quartiere respira — ma lo sai quanto bene?",
     "oggetto_reale": "una centralina meteo fai-da-te con micro:bit",
     "domanda_avvio": "Sai quanta CO2 c'è adesso nell'aria della tua aula — e se è abbastanza per stare svegli e concentrati?",
-    "durata_min": 1.0,
+    "durata_min": 1.1,
     "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico.",
-    "durata_secondi": 58
+    "durata_secondi": 58,
+    "durata_sec": 65
   },
   "professione_futura": {
     "titolo": "IoT Solutions Architect",

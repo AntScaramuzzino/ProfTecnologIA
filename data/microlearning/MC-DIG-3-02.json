@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-3-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 94,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Scheda di analisi critica di tre app IA che uso ogni giorno",
+    "istruzione": "Scegli 3 app con IA che usi regolarmente. Per ognuna, compila la scheda critica completa senza accontentarti delle risposte generiche.",
+    "voci": [
+      "Per ogni app ho identificato cosa impara l'IA su di me: dati espliciti (like, ricerche) e dati comportamentali impliciti (tempo di visione, dove mi fermo nel feed).",
+      "Ho verificato almeno una affermazione factual prodotta da un LLM su un argomento che conosco bene, documentando il risultato nella tabella di verifica con fonte esterna.",
+      "Ho identificato un bias specifico in almeno una delle tre app analizzate, spiegando da dove potrebbe provenire nel processo di addestramento.",
+      "Ho condotto il test di bias: ho posto la stessa domanda con soggetti di genere o etnia diversa e ho confrontato le risposte, documentando le differenze osservate.",
+      "Ho condotto il test di allucinazione deliberata su un LLM usando una persona o evento immaginario ma plausibile, documentando come ha risposto il sistema.",
+      "Ho scritto la conclusione argomentata: per quale tipo di compiti userei questi sistemi? Per quali non li userei mai? Quali condizioni renderebbero l'uso responsabile?"
+    ]
+  },
+  "process": {
+    "titolo": "Come un sistema IA impara, sbaglia e può amplificare le disuguaglianze",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Raccolta e preparazione dei dati di addestramento",
+        "attore": "Team di dati / ingegneri ML",
+        "domanda": "Il sistema di riconoscimento facciale studiato da Joy Buolamwini aveva errori fino al 34,7% per le donne dalla pelle scura. Come è potuto succedere se il sistema 'imparava' dai dati?",
+        "impatto": "Se il dataset di addestramento è sbilanciato (prevalentemente maschi dalla pelle chiara), il modello impara a riconoscere bene ciò che ha visto di più. Il bias nei dati diventa bias nel modello."
+      },
+      {
+        "numero": 2,
+        "titolo": "Addestramento del modello",
+        "attore": "Algoritmo di ML / GPU farm",
+        "domanda": "GPT-4 ha circa 1 trilione di parametri. Cosa sono questi parametri e perché cambiarne anche uno solo piccolo può produrre risposte molto diverse?",
+        "impatto": "I parametri (pesi) determinano l'importanza relativa di ogni associazione appresa. Modificarli cambia le probabilità di ogni output: piccole variazioni si amplificano attraverso miliardi di calcoli."
+      },
+      {
+        "numero": 3,
+        "titolo": "Generazione dell'output e allucinazione",
+        "attore": "Modello LLM",
+        "domanda": "Perché un LLM produce informazioni false con lo stesso tono sicuro delle informazioni vere, senza 'sapere' di stare sbagliando?",
+        "impatto": "Il modello genera il token statisticamente più probabile dato il contesto. Non ha un sistema interno di verifica della verità. Plausibilità statistica e accuratezza fattuale sono cose diverse."
+      },
+      {
+        "numero": 4,
+        "titolo": "Verifica critica dell'output",
+        "attore": "Utente / ricercatore",
+        "domanda": "Se un LLM ti cita uno studio scientifico con autori, rivista e anno plausibili, qual è il modo più rapido per verificare se esiste davvero?",
+        "impatto": "Cercarlo su Google Scholar con titolo e autori. Se non esiste, è un'allucinazione. Le allucinazioni su citazioni scientifiche sono tra le più pericolose perché sembrano autorevoli."
+      },
+      {
+        "numero": 5,
+        "titolo": "Valutazione del rischio e dell'impatto sociale",
+        "attore": "Ethicist / policy maker",
+        "domanda": "L'AI Act europeo vieta alcuni sistemi IA 'ad alto rischio'. Il sistema COMPAS (usato nei tribunali per prevedere la recidiva) sarebbe vietato o solo regolamentato sotto l'AI Act?",
+        "impatto": "Sarebbe classificato ad 'alto rischio' (decisioni in ambito giudiziario) con obblighi stringenti: supervisione umana, trasparenza, test di accuratezza per sottogruppi demografici. Non vietato, ma con vincoli severi."
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIS-2-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Dal parallelepipedo alla scatola da scarpe: assonometria cavaliera e isometrica",
+    "istruzione": "Scegli un oggetto rettangolare che hai sul banco. Misura le tre dimensioni. Disegnalo nei due tipi di assonometria sullo stesso foglio A3.",
+    "voci": [
+      "Ho misurato lunghezza, larghezza e altezza dell'oggetto scelto con il righello e ho annotato le misure in millimetri prima di iniziare il disegno.",
+      "Ho costruito l'assonometria cavaliera con asse obliquo a 45° e fattore di riduzione 0,5 sull'asse di profondità: le misure sull'asse obliquo sono esattamente la metà di quelle reali.",
+      "Ho costruito l'assonometria isometrica con i due assi obliqui a 30° e misure riportate in scala reale su tutti e tre gli assi (isometrica semplificata).",
+      "Ho tracciato gli spigoli nascosti (non visibili dalla direzione di osservazione) con linea tratteggiata in entrambi i disegni.",
+      "Ho verificato la correttezza delle proporzioni: in assonometria cavaliera la faccia frontale ha le proporzioni reali; in isometrica tutte le facce sono leggermente deformate ma proporzionate tra loro.",
+      "Ho scritto 5-8 righe di confronto: quale delle due rappresentazioni trasmette meglio la forma dell'oggetto? A chi useresti la cavaliera e a chi l'isometrica? Perché?"
+    ]
+  },
+  "process": {
+    "titolo": "Come si rappresenta la profondità su un foglio piano: dalla cavaliera all'isometrica",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Scelta del tipo di assonometria in base allo scopo",
+        "attore": "Designer / progettista",
+        "domanda": "IKEA usa l'assonometria cavaliera (non la prospettiva, non l'isometrica) per le istruzioni di montaggio. Qual è il vantaggio concreto per chi deve montare il mobile?",
+        "impatto": "La cavaliera preserva la forma della faccia frontale: i fori, i rettangoli, i profili rimangono non deformati. Chi deve incastrare pezzi vede la forma reale della faccia che conta, non una versione deformata dall'angolazione."
+      },
+      {
+        "numero": 2,
+        "titolo": "Costruzione degli assi e del box",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Perché si costruisce prima il parallelepipedo che 'contiene' l'oggetto (il box), anche per oggetti che hanno parti mancanti o aggiunte?",
+        "impatto": "Il metodo del box garantisce che le proporzioni globali siano corrette prima di aggiungere dettagli. Partire dai dettagli porta spesso a proporzioni sbagliate nell'insieme."
+      },
+      {
+        "numero": 3,
+        "titolo": "Applicazione del fattore di riduzione (cavaliera)",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Se un oggetto è profondo 80 mm reali, nella cavaliera quanto misura sull'asse obliquo? E perché questa riduzione rende l'oggetto più 'naturale' alla percezione?",
+        "impatto": "40 mm sull'asse obliquo (80 × 0,5). Senza riduzione, l'asse a 45° sembrerebbe più lungo del normale per un effetto ottico: la riduzione del 50% compensa questa distorsione percettiva."
+      },
+      {
+        "numero": 4,
+        "titolo": "Disegno delle ellissi per elementi circolari",
+        "attore": "Disegnatore tecnico",
+        "domanda": "In assonometria cavaliera, un foro circolare sul piano frontale rimane un cerchio. Ma lo stesso foro sul piano superiore diventa cosa?",
+        "impatto": "Diventa un'ellisse. Solo le forme sul piano frontale (xz) rimangono invariate nella cavaliera. Su tutti gli altri piani, i cerchi diventano ellissi: la costruzione richiede il metodo del quadrato assonometrico."
+      },
+      {
+        "numero": 5,
+        "titolo": "Confronto critico e scelta progettuale",
+        "attore": "Designer",
+        "domanda": "Un catalogo di arredamento usa la prospettiva per le foto, l'isometrica per le viste tecniche e la cavaliera per le istruzioni di montaggio. Spiega la logica di questa triplice scelta.",
+        "impatto": "Prospettiva per il cliente (impatto emotivo, percezione reale). Isometrica per il tecnico (misure proporzionate, tre facce equilibrate). Cavaliera per l'assemblatore (faccia frontale fedele, profondità comprensibile). Tre pubblici, tre strumenti."
+      }
+    ]
+  }
+}

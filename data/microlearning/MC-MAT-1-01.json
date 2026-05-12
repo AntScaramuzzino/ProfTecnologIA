@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-MAT-1-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Investigatore dei materiali di casa",
+    "istruzione": "Scegli 5 oggetti di casa con materiali diversi e usa questa checklist per analizzarli come farebbe un tecnologo dei materiali.",
+    "voci": [
+      "Ho scelto 5 oggetti di materiali diversi (almeno uno di metallo, uno di plastica, uno di legno o carta, uno di vetro o ceramica) e ho annotato dove si trovano in casa.",
+      "Per ogni oggetto ho identificato il materiale principale e ho deciso se è naturale (viene direttamente dalla natura) o artificiale (trasformato da processi industriali).",
+      "Per ogni oggetto ho indicato almeno una proprietà specifica che lo rende adatto alla sua funzione, spiegando il perché con una frase completa.",
+      "Ho verificato come si smaltisce correttamente ogni oggetto a fine vita secondo le regole della differenziata del mio Comune.",
+      "Ho trovato l'oggetto che avrebbe il maggiore impatto ambientale nel suo smaltimento scorretto e ho spiegato perché.",
+      "Ho cercato da dove viene la materia prima del materiale più 'lontano' tra i miei 5 oggetti (es. la bauxite per l'alluminio, il petrolio per la plastica) e ho stimato quanti km ha percorso."
+    ]
+  },
+  "process": {
+    "titolo": "Dalla materia prima all'oggetto: il ciclo dei materiali",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Estrazione della materia prima",
+        "attore": "Industria mineraria / lavoratori delle miniere",
+        "domanda": "Prima di essere la sedia su cui sei seduto, era legno. Prima di essere legno, era un albero in una foresta. Prima di essere un albero, era un seme. Quanto tempo ci vuole per rimpiazzare quello che è diventato la tua sedia?",
+        "impatto": "Ogni oggetto ha un 'debito temporale' con la natura: il petrolio delle plastiche si è formato in 300 milioni di anni; un albero da legno duro impiega 100-200 anni. Questa asimmetria è alla base del problema della sostenibilità dei materiali."
+      },
+      {
+        "numero": 2,
+        "titolo": "Classificazione e selezione del materiale",
+        "attore": "Tecnologo dei materiali / progettista",
+        "domanda": "Perché le finestre sono di vetro e non di legno? Perché i fili elettrici sono ricoperti di plastica e non di metallo? Prova a rispondere usando il concetto di proprietà dei materiali.",
+        "impatto": "La scelta sbagliata del materiale in fase di progetto può causare guasti, pericoli o sprechi enormi. L'ingegneria dei materiali è una disciplina che studia esattamente questa compatibilità tra proprietà e funzione."
+      },
+      {
+        "numero": 3,
+        "titolo": "Trasformazione industriale",
+        "attore": "Industria / operai specializzati / ingegneri",
+        "domanda": "Il minerale di ferro viene trasformato in ghisa nell'altoforno a 1.500°C, poi in acciaio riducendo il carbonio, poi in lamiera, poi nell'auto. Ogni passaggio consuma energia. Chi paga questa energia alla fine?",
+        "impatto": "La produzione di acciaio è responsabile di circa l'8% delle emissioni mondiali di CO₂. Produrre acciaio riciclato consuma il 75% in meno di energia rispetto all'acciaio da minerale vergine."
+      },
+      {
+        "numero": 4,
+        "titolo": "Uso e vita utile",
+        "attore": "Consumatore / utente finale",
+        "domanda": "Un maglione di lana usato per 10 anni ha un impatto ambientale per anno molto inferiore allo stesso maglione usato per 2 anni. Come cambia il tuo comportamento di acquisto sapendo questo?",
+        "impatto": "Il concetto di 'ciclo di vita' di un materiale include produzione, uso e smaltimento. Aumentare la vita utile di un oggetto è spesso l'azione più efficace per ridurne l'impatto ambientale totale."
+      },
+      {
+        "numero": 5,
+        "titolo": "Fine vita: riciclo, riuso o smaltimento",
+        "attore": "Utente / sistema di raccolta / impianto di riciclo",
+        "domanda": "L'alluminio può essere riciclato infinite volte senza perdere proprietà. Il PET delle bottiglie in plastica si degrada ogni ciclo di riciclo. Cosa cambieresti nel modo in cui selezioni i materiali degli oggetti che compri?",
+        "impatto": "L'alluminio riciclato richiede il 95% in meno di energia rispetto a quello prodotto dalla bauxite. In Italia vengono riciclati circa l'80% delle lattine e il 68% degli imballaggi in alluminio — tra i tassi più alti d'Europa."
+      }
+    ]
+  }
+}

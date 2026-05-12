@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-ALI-2-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Detective della dispensa",
+    "istruzione": "Apri frigo e dispensa di casa e usa questa checklist per classificare almeno 8 alimenti presenti, scoprendo la tecnologia che li conserva.",
+    "voci": [
+      "Ho trovato almeno un alimento conservato col freddo (refrigerazione o surgelazione) e ho letto la data di scadenza distinguendo se è 'da consumarsi entro' o 'preferibilmente entro'.",
+      "Ho trovato almeno un alimento sterilizzato (lattina, latte UHT, conserva in vetro) e ho verificato se la confezione è integra (nessun rigonfiamento o ammaccatura).",
+      "Ho trovato almeno un alimento disidratato o liofilizzato (caffè solubile, erbe aromatiche secche, funghi secchi) e ho capito perché non ha bisogno di frigo.",
+      "Ho controllato l'etichetta di un alimento e ho identificato almeno un numero E, cercando a cosa corrisponde.",
+      "Ho verificato se c'è un alimento conservato nel posto sbagliato (es. qualcosa che dice 'conservare in frigo dopo l'apertura' ma è fuori dal frigo).",
+      "Ho scelto l'alimento della dispensa che mi ha sorpreso di più per durata o metodo di conservazione e ho scritto il motivo."
+    ]
+  },
+  "process": {
+    "titolo": "Come si blocca il deterioramento: dal campo alla scatoletta",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Identificazione del nemico",
+        "attore": "Ricercatore / tecnologo alimentare",
+        "domanda": "Hai mai mangiato qualcosa che sembrava buono ma ti ha fatto sentire male dopo? Quale delle tre cause di deterioramento pensi fosse in gioco?",
+        "impatto": "Microrganismi, enzimi e ossidazione agiscono sempre contemporaneamente. Conoscere la causa principale di un alimento permette di scegliere il metodo di conservazione giusto."
+      },
+      {
+        "numero": 2,
+        "titolo": "Scelta del metodo di conservazione",
+        "attore": "Tecnologo alimentare / industria alimentare",
+        "domanda": "Perché il latte UHT dura mesi fuori dal frigo ma quello fresco dura solo una settimana in frigo, se entrambi vengono riscaldati?",
+        "impatto": "La pastorizzazione (72°C per 15s) elimina solo i patogeni; la sterilizzazione UHT (135°C per 2-4s) elimina anche le spore. Una differenza di temperatura che vale mesi di conservazione."
+      },
+      {
+        "numero": 3,
+        "titolo": "Applicazione del trattamento",
+        "attore": "Impianto industriale / operatore",
+        "domanda": "Un surgelato industriale e uno congelato nel tuo freezer di casa sono la stessa cosa? Cosa cambia tra cristalli di ghiaccio piccoli e grandi?",
+        "impatto": "Il surgelamento rapido a −40°C forma cristalli microscopici che non danneggiano le cellule. Il congelamento lento forma cristalli grandi che rompono la struttura e peggiorano consistenza e valori nutrizionali."
+      },
+      {
+        "numero": 4,
+        "titolo": "Confezionamento e barriera",
+        "attore": "Industria del packaging / tecnologo",
+        "domanda": "Le buste di insalata pre-lavata contengono azoto invece di aria. Se non lo facessero, cosa succederebbe all'insalata in tre giorni?",
+        "impatto": "Il confezionamento in atmosfera modificata (MAP) può raddoppiare o triplicare la shelf life di carne, verdura e formaggi, riducendo gli sprechi lungo tutta la filiera."
+      },
+      {
+        "numero": 5,
+        "titolo": "Etichettatura e comunicazione",
+        "attore": "Produttore / legislatore UE",
+        "domanda": "La data di scadenza e il termine minimo di conservazione sulle etichette non sono la stessa cosa. Qual è la differenza che potrebbe evitare uno spreco alimentare?",
+        "impatto": "Ogni anno in Italia si buttano alimenti ancora sicuri perché si confonde il 'preferibilmente entro' con il 'da consumarsi entro'. Il costo dello spreco alimentare domestico italiano è circa 500 euro per famiglia all'anno."
+      },
+      {
+        "numero": 6,
+        "titolo": "Catena del freddo e controllo logistico",
+        "attore": "Distributore / trasportatore / supermercato",
+        "domanda": "Se un surgelato viene scongelato per due ore durante il trasporto e poi ricongelato, perché non si deve ricongelare di nuovo una volta scongelato a casa?",
+        "impatto": "Ogni ciclo scongelamento-ricongelamento moltiplica il numero di microrganismi presenti. La brina in eccesso sulla confezione è il segnale visibile che la catena del freddo è stata interrotta."
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIS-3-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Modella, esporta, rifletti: dal brief al file STL per l'accessibilità scolastica",
+    "istruzione": "Progetta in Tinkercad un oggetto che rende la scuola più accessibile per un utente specifico. Documenta ogni fase prima di passare alla successiva.",
+    "voci": [
+      "Ho scritto il brief di mezza pagina con: utente specifico (es. 'studente non vedente'), problema concreto che risolve l'oggetto, e vincoli dimensionali misurati con il righello.",
+      "Ho prodotto almeno 2 sketch del concept a mano con annotazioni sulla funzione e il principio di aggancio o supporto, prima di aprire Tinkercad.",
+      "Ho costruito il modello in Tinkercad usando almeno 3 operazioni booleane (aggiunte e sottrazioni), con misure dimensionalmente corrette rispetto al brief.",
+      "Ho identificato almeno un overhang potenzialmente problematico per la stampa 3D e ho descritto come lo gestire (orientamento di stampa, supporti nello slicer, o modifica del design).",
+      "Ho prodotto le proiezioni ortogonali quotate delle tre viste principali a mano (possono essere approssimate ma devono essere coerenti con il modello 3D).",
+      "Ho scritto la nota di 5 righe su materiale scelto, motivazione della scelta, e ciclo di vita dell'oggetto a fine utilizzo (riusabilità, riciclabilità del PLA in condizioni specifiche)."
+    ]
+  },
+  "process": {
+    "titolo": "Dal file digitale all'oggetto fisico: il ciclo del design additivo",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Analisi del problema e sketch iniziale",
+        "attore": "Designer / ingegnere",
+        "domanda": "Sara Conte ha modificato il diametro di un pin da 3 mm a 3,6 mm in Fusion 360 e ha risolto il problema del portaborraccia che vibrava. Perché il CAD parametrico ha reso questa modifica possibile in 15 minuti invece di una settimana?",
+        "impatto": "In un modello parametrico, ogni misura è una variabile con relazioni esplicite. Cambiare una variabile aggiorna automaticamente tutto ciò che da essa dipende: sedi, tolleranze, viti. Nessun ridisegno manuale."
+      },
+      {
+        "numero": 2,
+        "titolo": "Modellazione con operazioni booleane",
+        "attore": "Modellatore CAD",
+        "domanda": "Costruire un tubo cavo in Tinkercad richiede un cilindro pieno + un cilindro 'hole' più piccolo, raggruppati. Quale operazione matematica degli insiemi corrisponde a questo processo?",
+        "impatto": "La differenza insiemistica: A \\ B. Il risultato è il volume di A privato del volume di B. La Geometria Solida Costruttiva (CSG) è algebra degli insiemi applicata a oggetti fisici tridimensionali."
+      },
+      {
+        "numero": 3,
+        "titolo": "Analisi della stampabilità",
+        "attore": "Modellatore / operatore stampa 3D",
+        "domanda": "Un overhang a 90° (una sporgenza orizzontale senza supporto) non può essere stampato in FDM perché il filamento non può essere depositato nell'aria. Quale angolo massimo è generalmente stampabile senza supporti?",
+        "impatto": "45° è la regola empirica: oltre questo angolo servono supporti. Progettare tenendo conto della stampabilità (design for additive manufacturing) riduce i supporti, il materiale sprecato e i difetti superficiali."
+      },
+      {
+        "numero": 4,
+        "titolo": "Esportazione e slicing",
+        "attore": "Operatore stampa 3D",
+        "domanda": "Scegliendo un infill del 15% invece del 100% per un porta-matite, risparmi il 85% di materiale. La resistenza però non cala dell'85%. Perché?",
+        "impatto": "La struttura a nido d'ape o a griglia dell'infill distribuisce i carichi in modo efficiente: con il 20% di infill si ottiene spesso il 60-70% della resistenza del solido pieno. La geometria interna conta quanto la quantità di materiale."
+      },
+      {
+        "numero": 5,
+        "titolo": "Valutazione del ciclo di vita",
+        "attore": "Designer sostenibile",
+        "domanda": "Il PLA è biodegradabile, ma solo in compostaggio industriale a 70°C con microrganismi specifici. Cosa significa praticamente per smaltire un oggetto stampato in PLA nel comune italiano medio?",
+        "impatto": "Nel comune medio non esiste la filiera per il PLA: va nella plastica mista o nell'indifferenziato. 'Biodegradabile' non è sinonimo di 'smaltibile ovunque'. Il design sostenibile inizia dalla scelta del materiale giusto per il contesto di smaltimento reale."
+      }
+    ]
+  }
+}

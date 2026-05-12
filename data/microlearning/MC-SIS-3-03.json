@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-SIS-3-03",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Costruisco un Business Model Canvas per un problema reale che conosco",
+    "istruzione": "Identifica un problema reale nella scuola o nel quartiere (osservato direttamente, non inventato) e usa questa checklist per compilare il BMC, identificare le ipotesi rischiose e definire l'MVP più rapido per testarle.",
+    "voci": [
+      "Il mio punto di partenza è un problema reale osservato direttamente — non un'idea tecnologica in cerca di un problema: scrivo prima 'chi ha questo problema e quando si manifesta?' e solo dopo 'come risolverlo?'",
+      "Compilo tutti e 9 i blocchi del BMC (segmenti, proposta di valore, canali, relazioni, ricavi, risorse, attività, partner, costi) — e marco in rosso quelli su cui non ho dati perché sono ipotesi, non fatti",
+      "La mia proposta di valore dice il beneficio che il cliente riceve ('aiuto X a fare Y meglio/più velocemente/a meno costo') — non descrive il prodotto ('vendo un'app che...')",
+      "Identifico le 3 ipotesi più rischiose nel BMC (quelle che, se false, manderebbero tutto in crisi) e per ognuna descrivo come la testerei in meno di una settimana senza costruire il prodotto completo",
+      "L'MVP che propongo è la cosa più piccola e rapida che permette di testare la prima ipotesi rischiosa — non una versione ridotta del prodotto finale ma il minimo per ottenere feedback autentici da persone reali",
+      "Nella presentazione di 3 minuti uso la struttura: problema → soluzione → chi paga → primo test — e sono preparato a rispondere alle obiezioni del 'critico costruttivo' con dati o con 'non so ancora, lo terò con...'"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo Lean Startup: dal problema all'impresa in modo iterativo",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Identificazione e validazione del problema",
+        "attore": "Lo studente-imprenditore",
+        "domanda": "Prima dell'app, Warda ha fatto 40 interviste a ristoratori e agricoltori per capire se il problema esisteva davvero — perché è più rischioso costruire il prodotto sbagliato che fare interviste?",
+        "impatto": "Il 95% delle startup fallisce per mancanza di mercato (nessuno vuole il prodotto) non per mancanza di tecnologia: le interviste di validazione separano il problema percepito da quello reale prima di spendere energie"
+      },
+      {
+        "numero": 2,
+        "titolo": "Compilazione del Business Model Canvas",
+        "attore": "Lo studente-imprenditore",
+        "domanda": "Airbnb ha cominciato come tre foto di un appartamento su una pagina web senza pagamenti online né sistema di recensioni — questo era un fallimento di progettazione oppure l'MVP minimo per testare l'ipotesi più rischiosa?",
+        "impatto": "Il BMC connette i 9 blocchi in modo coerente: la proposta di valore dipende dalle risorse chiave, che determinano i costi, che devono essere coperti dalle fonti di ricavo — capire queste dipendenze è la vera competenza del Canvas"
+      },
+      {
+        "numero": 3,
+        "titolo": "Identificazione delle ipotesi rischiose e costruzione dell'MVP",
+        "attore": "Lo studente-imprenditore",
+        "domanda": "Il primo 'prodotto' di Warda era un gruppo WhatsApp con 5 ristoratori e 3 agricoltori — era un'app? No. Era un test. Come distingui un MVP da una versione ridotta del prodotto finale?",
+        "impatto": "Un MVP non è un prodotto a metà: è un esperimento che risponde a una domanda specifica ('qualcuno pagherebbe per questo?') nel minor tempo possibile; Flickr era un videogioco, Slack era uno strumento interno — il pivot è possibile solo se non hai costruito troppo"
+      },
+      {
+        "numero": 4,
+        "titolo": "Ciclo Build-Measure-Learn e decisione di pivot o scala",
+        "attore": "Lo studente-imprenditore",
+        "domanda": "Warda ha scoperto che il vero collo di bottiglia non era la comunicazione ma la logistica dell'ultimo miglio — questo era un fallimento o un apprendimento? E qual è la differenza in un contesto Lean?",
+        "impatto": "Il pivot (cambio strategico basato sui dati) non è un fallimento: è un aggiornamento della mappa; misurare cosa succede dopo l'MVP (quante persone lo usano? tornano?) è ciò che trasforma l'intuizione in decisione basata su evidenza"
+      },
+      {
+        "numero": 5,
+        "titolo": "Scelta della forma giuridica e delle fonti di finanziamento",
+        "attore": "Lo studente-imprenditore",
+        "domanda": "Una SRL ti protegge il patrimonio personale ma richiede notaio e registro imprese; una ditta individuale si apre subito ma ti espone illimitatamente: quale forma sceglieresti per un'impresa sociale di quartiere e perché la cooperativa è un'alternativa diversa da entrambe?",
+        "impatto": "Bootstrap → FFF → crowdfunding → angel → VC: ogni fase corrisponde a una dimensione d'impresa e a un livello di rinuncia al controllo; il crowdfunding equity non è solo raccolta fondi ma anche validazione di mercato — 1.000 persone che investono piccole cifre valgono più di un sondaggio"
+      }
+    ]
+  }
+}

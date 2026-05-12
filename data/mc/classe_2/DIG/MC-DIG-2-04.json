@@ -61,9 +61,10 @@
     "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
     "oggetto_reale": "un messaggio cifrato",
     "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-    "durata_min": 0.9,
+    "durata_min": 1.0,
     "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
-    "durata_secondi": 56
+    "durata_secondi": 56,
+    "durata_sec": 59
   },
   "professione_futura": {
     "titolo": "Cybersecurity Analyst",

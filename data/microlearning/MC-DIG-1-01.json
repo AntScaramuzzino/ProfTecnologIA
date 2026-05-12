@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-DIG-1-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Conosco il computer che ho in tasca",
+    "istruzione": "Scegli il dispositivo che usi di più ogni giorno e usa questa checklist per esplorare come è fatto davvero.",
+    "voci": [
+      "Ho trovato nelle impostazioni del mio dispositivo il nome del processore (o SoC) e la quantità di RAM installata.",
+      "Ho verificato quanto storage ho in totale e quanto ne sto usando, identificando cosa occupa più spazio.",
+      "Ho identificato il sistema operativo installato e la sua versione, e ho stabilito a quale 'famiglia' appartiene (iOS, Android, Windows, macOS).",
+      "Ho distinto almeno tre periferiche di input e tre di output presenti nel mio dispositivo, spiegando la funzione di ognuna.",
+      "Ho verificato se i miei file più importanti esistono solo sul dispositivo locale o sono anche salvati in cloud, e in quale servizio.",
+      "Ho scritto una frase che spiega perché hardware e software sono inseparabili, usando un esempio concreto del mio dispositivo."
+    ]
+  },
+  "process": {
+    "titolo": "Come funziona un computer: dal dato fisico all'elaborazione",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Input — il dato entra nel sistema",
+        "attore": "Utente / periferica di input",
+        "domanda": "Quante volte al giorno dai un input al tuo smartphone senza accorgertene — tocchi, voci, movimenti?",
+        "impatto": "Ogni tocco sullo schermo è un segnale elettrico che il processore deve interpretare in meno di 16 millisecondi per sembrare istantaneo."
+      },
+      {
+        "numero": 2,
+        "titolo": "Elaborazione — la CPU calcola",
+        "attore": "CPU / SoC",
+        "domanda": "Se la tua CPU esegue 3 miliardi di cicli al secondo, quanti cicli avvengono nel tempo che impieghi a leggere questa frase?",
+        "impatto": "Troppi programmi aperti contemporaneamente si contendono l'accesso alla CPU e alla RAM: ecco perché il dispositivo rallenta."
+      },
+      {
+        "numero": 3,
+        "titolo": "Memoria di lavoro — la RAM gestisce il presente",
+        "attore": "RAM / sistema operativo",
+        "domanda": "Perché quando riapri un'app dopo averla chiusa da poco, si riapre istantaneamente, mentre la prima volta ci vuole di più?",
+        "impatto": "La RAM conserva i dati delle app recenti anche dopo la chiusura: il sistema operativo li ricarica senza doverli rileggere dallo storage."
+      },
+      {
+        "numero": 4,
+        "titolo": "Archiviazione — lo storage conserva il passato",
+        "attore": "SSD / storage interno",
+        "domanda": "Il computer diventa lento nel tempo non perché il processore invecchi. Qual è la causa più comune?",
+        "impatto": "Uno storage quasi pieno rallenta il sistema perché il SO non riesce a creare i file temporanei di lavoro. Liberare il 20% dello spazio spesso risolve."
+      },
+      {
+        "numero": 5,
+        "titolo": "Sistema operativo — il gestore di tutto",
+        "attore": "OS (iOS, Android, Windows, macOS)",
+        "domanda": "Senza sistema operativo, nessuna app potrebbe funzionare. Cosa succederebbe se due app chiedessero la RAM nello stesso momento senza un arbitro?",
+        "impatto": "Il SO coordina CPU, RAM e storage, decide le priorità e impedisce che un'app monopolizzi le risorse bloccando le altre."
+      },
+      {
+        "numero": 6,
+        "titolo": "Output — il risultato torna all'utente",
+        "attore": "Periferiche di output / schermo / altoparlanti",
+        "domanda": "Il tuo schermo ricalcola l'immagine 60 volte al secondo. Quanti pixel ridisegna la GPU ogni secondo su un display Full HD?",
+        "impatto": "120 milioni di pixel al secondo su Full HD a 60 fps: senza GPU dedicata, la CPU da sola non reggerebbe. Ecco perché la GPU esiste."
+      }
+    ]
+  }
+}

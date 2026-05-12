@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-ENE-3-04",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Progetto il sistema di segnalazione luminosa con LED e Arduino",
+    "istruzione": "Progetta su carta (o simula su Tinkercad) un sistema con due LED (verde = porta aperta, rosso = porta chiusa) alimentato da una batteria da 9V, e usa questa checklist per verificare che ogni scelta tecnica sia corretta e documentata.",
+    "voci": [
+      "Per ogni LED calcolo la resistenza in serie necessaria con la formula R = (V_batteria - V_LED) / I_LED usando i valori esatti: V_LED rosso = 2V, V_LED verde = 2,2V, I = 15 mA = 0,015 A",
+      "Calcolo l'autonomia della batteria in ore (500 mAh / 15 mA = 33 ore) e in giorni scolastici (33 h / 8 h al giorno ≈ 4 giorni) — e valuto se è sufficiente o se serve un intervento",
+      "Scelgo la configurazione in parallelo per i due LED e spiego perché quella in serie non funzionerebbe: in serie la tensione si dividerebbe tra i LED e nessuno riceverebbe i 2V necessari",
+      "Nel circuito fisico su breadboard verifico la polarità del LED (anodo = gamba lunga = positivo) prima di collegare la batteria — e so che collegarlo al contrario non lo rompe ma non si accende",
+      "Misuro con il multimetro la tensione ai capi di batteria, resistore e LED verificando che sommino correttamente (legge di Kirchhoff sulle tensioni) e confronto con il calcolo teorico",
+      "Per la proposta Arduino descrivo quale pin usare, come si legge un sensore di apertura porta (reed switch) e con quale istruzione digitalWrite si accende e spegne un LED"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo dell'elettricità: dagli elettroni liberi al circuito progettato",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Comprensione delle tre grandezze fondamentali",
+        "attore": "Lo studente",
+        "domanda": "La scossa che prendi dalla maniglia metallica in inverno è la stessa forza che fa girare i motori degli aerei — come è possibile che scale così diverse nascano dallo stesso fenomeno?",
+        "impatto": "Tensione (V = spinta), corrente (A = flusso di elettroni), resistenza (Ω = ostacolo): la legge di Ohm V = R × I le collega in modo preciso — già 10 mA possono contrarre i muscoli e 100 mA attraverso il cuore possono essere letali"
+      },
+      {
+        "numero": 2,
+        "titolo": "Applicazione della legge di Ohm",
+        "attore": "Lo studente",
+        "domanda": "Vuoi che nel LED scorra 20 mA con una batteria da 5V — ma il LED 'consuma' già 2V: a quale resistenza serve nei calcoli e quale valore standard trovi in commercio?",
+        "impatto": "R = (5-2) / 0,02 = 150Ω → si usa il valore standard più vicino (160Ω); il resistore protegge il LED da correnti eccessive — senza di esso il LED si brucia in pochi secondi per sovracorrente"
+      },
+      {
+        "numero": 3,
+        "titolo": "Circuiti in serie vs in parallelo",
+        "attore": "Lo studente",
+        "domanda": "Le luci di Natale vecchie erano in serie — se si bruciava una si spegnevano tutte: perché quelle moderne a LED sono in parallelo e cosa cambia nel calcolo della corrente totale?",
+        "impatto": "In serie: I uguale ovunque, tensioni si sommano; in parallelo: V uguale su tutti i rami, correnti si sommano; l'impianto elettrico di casa è in parallelo perché permette di spegnere una luce senza spegnere le altre"
+      },
+      {
+        "numero": 4,
+        "titolo": "Potenza e calcolo dei consumi in bolletta",
+        "attore": "Lo studente",
+        "domanda": "Il tuo televisore in stand-by consuma quanto un LED acceso tutto il giorno — e se tutte le famiglie europee lo spegnessero dalla presa invece del telecomando, quanti miliardi di kWh si risparmierebbero?",
+        "impatto": "P = V × I → Energia (kWh) = Potenza (kW) × Ore: con 0,25 €/kWh, una lavatrice da 2kW che gira 1,5 ore costa 0,75 € — trasformare ogni azione domestica in costo reale è la base della gestione energetica"
+      },
+      {
+        "numero": 5,
+        "titolo": "Dal circuito discreto al microcontrollore Arduino",
+        "attore": "Lo studente",
+        "domanda": "Arduino è un circuito integrato che ha un processore, memoria e pin I/O nello stesso chip delle dimensioni di un'unghia — come è possibile che questo micro-oggetto possa controllare sensori, LED e motori?",
+        "impatto": "La struttura void setup() / void loop() con pinMode e digitalWrite è il modello fondamentale di qualsiasi sistema embedded: dal termostato intelligente al sensore medico, la logica è la stessa con diversi livelli di complessità"
+      }
+    ]
+  }
+}

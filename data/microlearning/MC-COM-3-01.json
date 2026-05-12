@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-COM-3-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Mappa la rete invisibile: dal segnale radio al cavo sottomarino",
+    "istruzione": "Scegli un percorso di comunicazione reale (un messaggio WhatsApp, una videochiamata, una ricerca Google) e usa questa checklist per tracciare ogni salto fisico che fa il segnale prima di arrivare a destinazione.",
+    "voci": [
+      "Identifico il mezzo di trasmissione usato nella prima tratta (Wi-Fi, 4G, cavo Ethernet) e ne indico la frequenza o il tipo",
+      "Distinguo correttamente segnale analogico da segnale digitale e spiego perché il digitale viene preferito per la trasmissione a lunga distanza",
+      "Descrivo il ruolo del protocollo TCP/IP: come i dati vengono suddivisi in pacchetti e come viene garantita la consegna completa",
+      "Spiego la funzione del DNS: come il nome di dominio viene tradotto in indirizzo IP e quanti millisecondi impiega il lookup",
+      "Riconosco la differenza tra router e switch e indico dove ciascuno entra in gioco nel percorso del mio messaggio",
+      "Verifico se il percorso passa per un cavo sottomarino e identifico almeno un rischio reale di interruzione documentato (es. terremoto a Taiwan 2007, Tonga 2022)"
+    ]
+  },
+  "process": {
+    "titolo": "Il viaggio di un messaggio da Roma a Tokyo",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Digitalizzazione e impacchettamento",
+        "attore": "Il dispositivo mittente",
+        "domanda": "Come viene trasformato il tuo messaggio in una sequenza di 0 e 1, e poi in pacchetti pronti per viaggiare?",
+        "impatto": "Ogni carattere, immagine o voce diventa bit; TCP divide il file in ~1.400 pacchetti, ognuno con indirizzo sorgente, destinazione e numero d'ordine"
+      },
+      {
+        "numero": 2,
+        "titolo": "Trasmissione via radio o cavo locale",
+        "attore": "Antenna Wi-Fi / cella 4G-5G / cavo in rame",
+        "domanda": "Perché usare il 5 GHz invece del 2,4 GHz per lo streaming, e quando conviene il contrario?",
+        "impatto": "I pacchetti lasciano il dispositivo e raggiungono il primo nodo di rete (access point o antenna mobile) a velocità che variano da 9 kbit/s (2G) a 1 Gbit/s (5G)"
+      },
+      {
+        "numero": 3,
+        "titolo": "Instradamento nella rete nazionale",
+        "attore": "Router del provider (ISP)",
+        "domanda": "Come decide il router quale percorso è più efficiente in quel preciso momento tra tutti quelli disponibili?",
+        "impatto": "Il DNS traduce il nome di dominio in indirizzo IP; i router consultano tabelle di routing e scelgono il percorso con meno hop e latenza minore"
+      },
+      {
+        "numero": 4,
+        "titolo": "Transito sul cavo sottomarino",
+        "attore": "Fibra ottica sottomarina (fotoni a 200.000 km/s)",
+        "domanda": "Chi possiede fisicamente il cavo che porta il tuo messaggio sott'oceano, e cosa succederebbe se venisse tagliato?",
+        "impatto": "Il 95% del traffico globale viaggia su ~550 cavi sottomarini; un singolo cavo come MAREA trasporta 200 Tbit/s — ma le riparazioni richiedono settimane di nave specializzata"
+      },
+      {
+        "numero": 5,
+        "titolo": "Riassemblaggio e consegna",
+        "attore": "Il dispositivo destinatario",
+        "domanda": "Cosa succede se uno dei 1.400 pacchetti si perde durante il viaggio — e come fa TCP ad accorgersene?",
+        "impatto": "TCP verifica la sequenza, richiede la ritrasmissione dei pacchetti mancanti e riconsegna il messaggio completo in millisecondi, in modo totalmente trasparente"
+      }
+    ]
+  }
+}

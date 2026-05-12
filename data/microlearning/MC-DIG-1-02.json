@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-1-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Cacciatore di fonti: SIFT applicato a una notizia reale",
+    "istruzione": "Scegli una notizia o un'affermazione che hai letto online di recente e applica il metodo SIFT passo per passo.",
+    "voci": [
+      "Mi sono fermato prima di condividere o credere, identificando quale emozione il titolo ha suscitato in me (paura, rabbia, sorpresa).",
+      "Ho investigato la fonte: ho controllato l'URL completo, ho cercato il nome del sito su un motore di ricerca separato e ho trovato chi lo gestisce.",
+      "Ho cercato almeno una seconda fonte indipendente che trattasse la stessa notizia, verificando se le informazioni coincidevano o si contraddicevano.",
+      "Ho risalito alla fonte originale di almeno un dato o citazione presente nell'articolo, controllando se era riportato correttamente nel contesto originale.",
+      "Ho usato almeno un operatore di ricerca avanzato (virgolette, site:, filetype:) per affinare la mia ricerca su questo argomento.",
+      "Ho scritto una valutazione finale di 2-3 righe: la fonte è affidabile? Cosa avrei rischiato condividendo senza verificare?"
+    ]
+  },
+  "process": {
+    "titolo": "Come una notizia falsa nasce, si diffonde e può essere smontata",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Creazione della fake news",
+        "attore": "Autore / sito di disinformazione",
+        "domanda": "Perché una fake news efficace non è completamente falsa, ma contiene sempre un nucleo di verità?",
+        "impatto": "Una bugia totale viene smentita facilmente. Una verità decontestualizzata sopravvive a lungo perché ogni verifica parziale sembra confermarla."
+      },
+      {
+        "numero": 2,
+        "titolo": "Titolo emotivo e prima condivisione",
+        "attore": "Utente / algoritmo social",
+        "domanda": "Le notizie false si diffondono 6 volte più velocemente delle notizie vere (MIT, 2018). Cosa hanno in comune i titoli delle notizie più condivise?",
+        "impatto": "L'algoritmo amplifica i contenuti che generano reazioni forti (like, commenti, rabbia): un titolo scandaloso ottiene più visibilità di una notizia accurata ma neutra."
+      },
+      {
+        "numero": 3,
+        "titolo": "Bias di conferma — il filtro invisibile",
+        "attore": "Cervello umano",
+        "domanda": "Se leggi una notizia che conferma esattamente quello che già pensi, sei più o meno portato a verificarla rispetto a una che ti sorprende?",
+        "impatto": "Il bias di conferma ci fa accettare senza critica le informazioni che confermano le nostre idee e a dubitare automaticamente di quelle che le contraddicono."
+      },
+      {
+        "numero": 4,
+        "titolo": "Crawling e indicizzazione del motore di ricerca",
+        "attore": "Bot di Google / indice di ricerca",
+        "domanda": "Google non controlla se una pagina è vera o falsa. Cosa controlla davvero per decidere se mostrarla in cima ai risultati?",
+        "impatto": "Il ranking di Google valuta autorevolezza percepita (link ricevuti) e popolarità (click): una pagina falsa ma molto linkata può superare una fonte istituzionale accurata."
+      },
+      {
+        "numero": 5,
+        "titolo": "Verifica laterale — la difesa più efficace",
+        "attore": "Lettore critico",
+        "domanda": "Perché è più efficace cercare informazioni *sulla* fonte piuttosto che leggere in profondità solo l'articolo sospetto?",
+        "impatto": "La lettura laterale (aprire nuove schede per cercare la reputazione della fonte) richiede 2-3 minuti e identifica la maggior parte delle fonti inaffidabili prima ancora di leggere il contenuto."
+      }
+    ]
+  }
+}

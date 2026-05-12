@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-AMB-2-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Rilievo strutturale del mio edificio",
+    "istruzione": "Scegli un edificio che puoi osservare direttamente (la tua scuola, il palazzo di casa, un edificio storico del quartiere) e usa questa checklist per analizzarne la struttura.",
+    "voci": [
+      "Ho identificato il sistema strutturale dell'edificio (muri portanti in muratura, telaio in cemento armato o struttura in acciaio) osservando facciata, pilastri e aperture.",
+      "Ho individuato almeno un elemento in compressione (pilastro, colonna, muro portante) e ho verificato di che materiale è fatto.",
+      "Ho cercato un elemento in trazione o in flessione (trave, solaio, cavo) e ho identificato se è in acciaio o in cemento armato.",
+      "Ho osservato se l'edificio ha elementi antisismici visibili (controventi, giunti sismici, isolatori alla base) o se è chiaramente privo di adeguamento sismico.",
+      "Ho stimato l'anno di costruzione dell'edificio basandomi su stile architettonico, tipo di finestre e materiali visibili.",
+      "Ho scritto una domanda che farei a un ingegnere strutturale su una scelta costruttiva che non riesco a spiegare osservando l'edificio."
+    ]
+  },
+  "process": {
+    "titolo": "Come le forze viaggiano in un edificio: dalla copertura alle fondamenta",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "I carichi e la loro origine",
+        "attore": "Ingegnere strutturale / normativa tecnica (NTC 2018)",
+        "domanda": "Il peso delle persone in un edificio è solo il 5-10% del carico totale. Il peso dell'edificio stesso è il 90%. Cosa pensi che cambi nella progettazione di un grattacielo rispetto a una casa unifamiliare?",
+        "impatto": "Un metro quadro di solaio residenziale deve reggere un carico accidentale di 200 kg/m². Un solaio di biblioteca deve reggere 300 kg/m², uno di magazzino fino a 600 kg/m². Sottovalutare i carichi causa crolli."
+      },
+      {
+        "numero": 2,
+        "titolo": "Compressione: pilastri e muri portanti",
+        "attore": "Muratore / carpentiere / betonista",
+        "domanda": "L'arco romano in mattoni dura 2.000 anni perché ogni mattone è solo in compressione. Perché non costruiamo ancora ponti in mattoni?",
+        "impatto": "La pietra e i mattoni resistono bene alla compressione ma non alla trazione. Questa limitazione ha determinato la forma di tutte le costruzioni romane e medievali: archi, volte e cupole che distribuiscono i carichi come compressione."
+      },
+      {
+        "numero": 3,
+        "titolo": "Trazione e cemento armato",
+        "attore": "Ingegnere / operaio specializzato",
+        "domanda": "Joseph Monier, il giardiniere che ha brevettato il cemento armato nel 1867, ha avuto l'idea mettendo ferro dentro i vasi di cemento per i fichi. Come pensi abbia capito che il ferro avrebbe risolto il problema della trazione?",
+        "impatto": "Il cemento armato — cemento per la compressione, acciaio per la trazione — è il materiale che ha permesso l'architettura moderna. Senza di esso, non esisterebbero solai piani, ponti a campata lunga o grattacieli."
+      },
+      {
+        "numero": 4,
+        "titolo": "Flessione e progetto delle travi",
+        "attore": "Ingegnere strutturale / software BIM",
+        "domanda": "Una trave lunga il doppio si abbassa al centro quattro volte di più, non due. Come pensi che questo influenzi la progettazione delle grandi sale senza pilastri di un teatro o di una palestra?",
+        "impatto": "Le travi reticolari (Pratt, Warren) usano un sistema di triangoli per trasformare la flessione in forze assiali di compressione e trazione, riducendo il materiale necessario. Questo principio geometrico permette coperture di 50-100 m senza pilastri intermedi."
+      },
+      {
+        "numero": 5,
+        "titolo": "Azione sismica e duttilità",
+        "attore": "Ingegnere antisismico / normativa NTC 2018",
+        "domanda": "In Giappone le case in legno resistono ai terremoti meglio di quelle in cemento perché il legno si piega invece di sbriciolarsi. Perché non costruiamo tutte le case in legno in Italia?",
+        "impatto": "Il 70% del territorio italiano è in zona sismica. Gli edifici costruiti prima del 1981 (prima delle norme antisismiche) sono la principale causa di vittime nei terremoti italiani. L'adeguamento sismico del patrimonio edilizio italiano costerebbe circa 100 miliardi di euro."
+      },
+      {
+        "numero": 6,
+        "titolo": "Fondazioni e interazione col suolo",
+        "attore": "Geologo / ingegnere geotecnico",
+        "domanda": "La Torre di Pisa si inclina perché le fondazioni spingono su suoli di durezza diversa. Se fossi l'ingegnere incaricato di raddrizzarla, da dove inizieresti — dalla punta o dalle fondazioni?",
+        "impatto": "La scelta del tipo di fondazione (diretta, su pali, su platea) dipende dalla portanza del suolo. Su suoli argillosi o sabbiosi saturi d'acqua, il cedimento differenziale è il rischio principale per la stabilità dell'intera struttura."
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-COM-3-04",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 93,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Progetto il sistema domotico per un anziano che vuole restare a casa",
+    "istruzione": "Scegli una persona reale (un nonno, un vicino anziano) con esigenze concrete e usa questa checklist per progettare un sistema domotico che parta dai bisogni — non dalla tecnologia.",
+    "voci": [
+      "Per ogni esigenza identificata scrivo prima 'qual è il problema?' e solo dopo 'con quale tecnologia lo risolvo?' — non parto mai dalla tecnologia per trovare il problema",
+      "Verifico che il protocollo scelto (Zigbee, Z-Wave o Matter) sia compatibile tra i dispositivi che ho selezionato — non assumo mai che due prodotti smart parlino tra loro solo perché sono entrambi 'smart'",
+      "Calcolo il costo totale del sistema e verifico che non superi il budget; se lo supera, gerarchizzare: sicurezza prima, salute, poi comfort, poi risparmio energetico",
+      "Per ogni dispositivo che raccoglie dati sull'anziano (sensori di movimento, telecamere, apertura porte) mi chiedo: chi può accedere a questi dati? L'anziano ha acconsentito esplicitamente?",
+      "Distinguo automazione da intelligenza artificiale: il sensore PIR che accende le luci è automazione con regole fisse — non IA — e so spiegare la differenza con un esempio concreto",
+      "Identifico almeno un caso in cui il sistema potrebbe prendere una decisione sbagliata (falso negativo sulla caduta, falso allarme) e propongo come mitigarlo senza eliminare l'automazione"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo di progettazione di un sistema automatico centrato sull'utente",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Analisi delle esigenze reali",
+        "attore": "Il progettista / lo studente",
+        "domanda": "Perché 3.000 robot Amazon non sanno dove si trovano eppure gestiscono 750.000 articoli senza errori — e cosa ci dice questo sull'automazione 'intelligente'?",
+        "impatto": "Partire dalle esigenze concrete (sicurezza notturna, promemoria farmaci, connessione familiare) invece che dalla tecnologia è il principio che distingue un buon progetto da un gadget inutile"
+      },
+      {
+        "numero": 2,
+        "titolo": "Scelta delle tecnologie appropriate",
+        "attore": "Il progettista / lo studente",
+        "domanda": "Perché Zigbee è preferibile al Wi-Fi per sensori a batteria che devono durare 2 anni senza manutenzione?",
+        "impatto": "La scelta del protocollo di comunicazione (Zigbee = basso consumo mesh, Z-Wave = standardizzato, Matter = compatibilità universale) condiziona tutto il sistema e la sua manutenibilità futura"
+      },
+      {
+        "numero": 3,
+        "titolo": "Progettazione della logica di controllo",
+        "attore": "Il progettista / lo studente",
+        "domanda": "Come funziona il controllo PID che regola il termostato intelligente — e perché la componente 'derivativa' evita di 'superare' la temperatura desiderata per inerzia?",
+        "impatto": "Il loop sensore-controllo-attuatore con feedback è il meccanismo fondamentale di ogni sistema automatico, dal termostato al braccio robotico industriale: capirlo permette di progettare logiche corrette"
+      },
+      {
+        "numero": 4,
+        "titolo": "Test e validazione su scenari reali",
+        "attore": "Il progettista / lo studente",
+        "domanda": "Se Carmelo rimane sveglio a leggere fino all'1 di notte, il tuo sistema domotico di sicurezza notturna si comporta correttamente — oppure lo disturba ogni volta che si muove?",
+        "impatto": "Eseguire il 'dry run' del diagramma di flusso su almeno 3 scenari diversi (sveglia notturna, lettura tardiva, ospite) prima di implementare è ciò che separa un progetto funzionante da uno pieno di eccezioni non gestite"
+      },
+      {
+        "numero": 5,
+        "titolo": "Analisi etica e dei limiti",
+        "attore": "Il progettista / lo studente",
+        "domanda": "Se il sistema non rileva la caduta di Giuseppina perché lei era ferma sul pavimento (non caduta), chi è responsabile — il programmatore, il produttore del sensore o chi ha scelto quella tecnologia?",
+        "impatto": "Ogni sistema automatico ha casi in cui fallisce: documentare i limiti e le condizioni di fallimento non è ammettere debolezza, è il prerequisito per una progettazione responsabile"
+      }
+    ]
+  }
+}

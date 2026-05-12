@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-COM-3-05",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Traccia il viaggio fisico di un pacchetto dati e analizza chi lo controlla",
+    "istruzione": "Usa il comando traceroute dal tuo computer verso almeno due siti su continenti diversi e usa questa checklist per analizzare il percorso fisico, le organizzazioni coinvolte e le implicazioni geopolitiche.",
+    "voci": [
+      "Eseguo il traceroute verso almeno un sito europeo e uno asiatico, salvo l'output completo e identifico quanti 'hop' conta il percorso più lungo",
+      "Per almeno 3 hop uso ipinfo.io per verificare a quale paese e provider appartiene quell'indirizzo IP — e mi accorgo se il percorso passa per paesi che non mi aspettavo",
+      "Distinguo le funzioni di ICANN (nomi di dominio), IETF (standard tecnici) e IGF (governance politica) — non confondo chi gestisce la rubrica telefonica di internet con chi scrive le regole di comunicazione",
+      "So spiegare perché il 'Great Firewall' cinese usa DPI (Deep Packet Inspection) invece del semplice blocco IP, e perché quest'ultimo è più difficile da aggirare con una VPN",
+      "Argomento la differenza tra net neutrality garantita (UE dal 2016) e la situazione negli USA dove la battaglia legale è ancora aperta — con almeno un effetto concreto per gli utenti",
+      "Identifico almeno un Internet Exchange Point (IXP) che il mio traceroute attraversa (Francoforte DE-CIX, Amsterdam AMS-IX) e capisco perché la concentrazione in pochi nodi crea vulnerabilità"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo della governance globale di internet: dalla fibra alla politica",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Comprensione dell'infrastruttura fisica",
+        "attore": "Lo studente",
+        "domanda": "Se il 'cloud' è solo metafora e internet è fisico — cavi, server, antenne — dove si trovano fisicamente i dati che hai salvato su Google Drive adesso?",
+        "impatto": "I circa 550 cavi sottomarini che trasportano il 97% del traffico mondiale sono posati sul fondale degli oceani da navi specializzate: ogni interruzione richiede settimane di riparazione e isola intere regioni"
+      },
+      {
+        "numero": 2,
+        "titolo": "Mappatura del percorso di un pacchetto",
+        "attore": "Lo studente",
+        "domanda": "Perché il tuo pacchetto da Roma a Seoul potrebbe attraversare gli USA invece di andare direttamente Est — e qual è il ruolo degli accordi commerciali tra operatori in questa scelta?",
+        "impatto": "Il traceroute rivela 5-15 aziende diverse che 'vedono' il tuo pacchetto; ogni paese attraversato può teoricamente applicare le proprie leggi di sorveglianza al traffico in transito"
+      },
+      {
+        "numero": 3,
+        "titolo": "Analisi della governance e dei suoi attori",
+        "attore": "Lo studente",
+        "domanda": "Perché la scelta originale del 1974 di rendere TCP/IP 'end-to-end' (la rete non sa nulla del contenuto) ha permesso a qualcuno di inventare YouTube, le criptovalute e TikTok senza chiedere il permesso a nessuno?",
+        "impatto": "La governance frammentata di internet (ICANN, IETF, IGF) è deliberata: nessun nodo centrale significa nessuna censura centrale, ma anche nessuna protezione centrale dalle vulnerabilità"
+      },
+      {
+        "numero": 4,
+        "titolo": "Analisi della censura e dei meccanismi di controllo",
+        "attore": "Lo studente",
+        "domanda": "La censura del Great Firewall è efficace al 100% oppure chi vuole davvero accedere a internet globale riesce sempre a farlo — e cosa dice questo sull'effettiva controllabilità di internet?",
+        "impatto": "Il blocco IP, il filtraggio DNS e il DPI sono i tre livelli del Great Firewall cinese; ognuno ha contromisure (VPN, DNS over HTTPS, Tor) — la censura è un braccio di ferro tecnologico in corso"
+      },
+      {
+        "numero": 5,
+        "titolo": "Argomentazione su net neutrality e sovranità digitale",
+        "attore": "Lo studente",
+        "domanda": "Se il tuo operatore internet potesse rallentare Netflix perché ha fatto un accordo con un servizio concorrente, cosa perderesti tu come utente — e perché questo non è possibile in Europa?",
+        "impatto": "La neutralità della rete è una questione di uguaglianza nell'accesso all'informazione: senza di essa nasce un internet a due velocità dove chi ha più denaro acquista la corsia preferenziale"
+      }
+    ]
+  }
+}

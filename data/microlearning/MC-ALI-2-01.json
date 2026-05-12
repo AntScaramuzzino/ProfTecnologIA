@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-ALI-2-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Il passaporto del mio cibo",
+    "istruzione": "Scegli un alimento che hai mangiato oggi e usa questa checklist per ricostruire da dove viene e come è stato prodotto.",
+    "voci": [
+      "Ho identificato l'alimento scelto e annotato il paese di origine (dall'etichetta o da una ricerca online).",
+      "Ho scoperto qual è la pianta o l'animale di partenza e il suolo o habitat in cui viene prodotto.",
+      "Ho individuato almeno due dei quattro fattori di crescita che influenzano la sua produzione (suolo, clima, acqua, scelte tecniche).",
+      "Ho verificato se è coltivato con metodo convenzionale, biologico o idroponico, cercando informazioni sull'etichetta o sul sito del produttore.",
+      "Ho stimato quanta acqua è servita per produrre la quantità che ho mangiato, usando i dati sull'impronta idrica.",
+      "Ho scritto una frase su cosa cambierei nel mio comportamento come consumatore dopo aver scoperto questa storia."
+    ]
+  },
+  "process": {
+    "titolo": "Dal suolo alla tavola: il ciclo biologico di una pianta alimentare",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Preparazione del suolo",
+        "attore": "Agronomo / agricoltore",
+        "domanda": "Il suolo che mangi sulla tua tavola è lo stesso suolo di cent'anni fa. Cosa pensi sia cambiato in quel suolo nel tempo?",
+        "impatto": "Per formare 1 cm di suolo fertile servono fino a 1.000 anni; l'agricoltura intensiva può distruggerlo in pochi decenni. Il 33% dei suoli agricoli mondiali è già degradato."
+      },
+      {
+        "numero": 2,
+        "titolo": "Semina e germinazione",
+        "attore": "Agricoltore / macchina seminatrice",
+        "domanda": "Un seme ha tutto il necessario per diventare pianta tranne tre cose. Quali sono?",
+        "impatto": "La scelta tra semina diretta e trapianto influenza i costi e la vulnerabilità della coltura alle gelate e ai parassiti nelle fasi iniziali."
+      },
+      {
+        "numero": 3,
+        "titolo": "Crescita vegetativa e irrigazione",
+        "attore": "Pianta / sistema di irrigazione / agricoltore",
+        "domanda": "L'agricoltura usa il 70% dell'acqua dolce del pianeta. Se potessi cambiare un solo sistema di irrigazione nella tua regione, quale sceglieresti e perché?",
+        "impatto": "L'irrigazione a goccia riduce il consumo idrico del 50-70% rispetto alla sommersione, ma ha costi di installazione più alti."
+      },
+      {
+        "numero": 4,
+        "titolo": "Fioritura e impollinazione",
+        "attore": "Pianta / insetti impollinatori (api, bombi) / vento",
+        "domanda": "Un terzo del cibo che mangi dipende dall'impollinazione degli insetti. Se le api sparissero, quali tre cose della tua dieta scomparirebbero per prime?",
+        "impatto": "Il declino delle api selvatiche può ridurre la resa dei meli del 90%. I pesticidi e la perdita di habitat sono le cause principali."
+      },
+      {
+        "numero": 5,
+        "titolo": "Maturazione e raccolta",
+        "attore": "Pianta / agricoltore / macchine agricole",
+        "domanda": "Una mela comprata in dicembre è stata raccolta in agosto. Cosa pensi sia successo nei quattro mesi tra raccolta e acquisto?",
+        "impatto": "La scelta del momento di raccolta influenza valore nutritivo, durata e food miles: raccogliere prima per trasportare lontano significa meno qualità nutrizionale."
+      },
+      {
+        "numero": 6,
+        "titolo": "Rotazione e sostenibilità del suolo",
+        "attore": "Agronomo / cooperativa agricola",
+        "domanda": "Se seminassi lo stesso campo di grano per dieci anni di fila, cosa succederebbe al suolo e alle rese?",
+        "impatto": "La rotazione delle colture riduce il bisogno di fertilizzanti chimici e pesticidi. Le leguminose fissano azoto atmosferico gratuitamente nel suolo."
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-3-03",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Analista di dati ambientali: scarica, visualizza, interpreta, proteggi",
+    "istruzione": "Scarica un dataset reale da ARPA, Sensor.Community o OpenMeteo relativo alla tua città. Analizzalo seguendo questa checklist in ordine.",
+    "voci": [
+      "Ho scaricato almeno 7 giorni di dati ambientali reali da una fonte pubblica (ARPA, Sensor.Community, OpenMeteo) e ho identificato chi ha raccolto i dati, con quale scopo e con quale licenza.",
+      "Ho costruito almeno due grafici diversi (tipo a scelta motivata) sugli stessi dati, descrivendo per ognuno quale informazione emerge che nell'altro non si vede.",
+      "Ho identificato almeno un momento nei dati in cui i valori sembrano anomali e ho formulato un'ipotesi verificabile su cosa potrebbe averli causati.",
+      "Ho individuato una correlazione tra due variabili nel dataset e ho spiegato se potrebbe essere causale o spuriea, identificando la possibile variabile comune.",
+      "Ho verificato che nessuno dei miei grafici usi un asse Y troncato o una scala non dichiarata che potrebbe distorcere la percezione dei dati.",
+      "Ho risposto alle domande sulla privacy: i dati del sensore usato rivelano informazioni sulla vita del proprietario? Come è diverso dai dati raccolti da piattaforme commerciali?"
+    ]
+  },
+  "process": {
+    "titolo": "Dal dato grezzo all'informazione: il ciclo dell'analisi dati ambientali",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Raccolta e contestualizzazione del dato grezzo",
+        "attore": "Sensore IoT / cittadino / ente pubblico",
+        "domanda": "La temperatura nell'aula è 21,3°C. Quando questo dato diventa un'informazione utile e quando rimane solo un numero?",
+        "impatto": "Un dato senza contesto è rumore. Lo stesso valore alle 8:00 di lunedì con 25 studenti e finestra chiusa diventa un'informazione su benessere termico, ventilazione e riscaldamento."
+      },
+      {
+        "numero": 2,
+        "titolo": "Scelta del tipo di grafico",
+        "attore": "Analista dati",
+        "domanda": "Hai 30 giorni di valori di CO₂. Quale grafico scegli se vuoi capire 'quale giorno della settimana ha i picchi più alti'? E quale se vuoi capire 'come è cambiata la media mensile'?",
+        "impatto": "Heatmap (ora×giorno) per i pattern settimanali. Grafico a linee con media mobile per il trend mensile. Lo stesso dataset racconta storie diverse con grafici diversi."
+      },
+      {
+        "numero": 3,
+        "titolo": "Riconoscimento dei pattern e delle anomalie",
+        "attore": "Analista dati",
+        "domanda": "In una stanza con sensore di CO₂, il venerdì pomeriggio i valori scendono bruscamente sempre alle 13:00. Qual è la spiegazione più probabile?",
+        "impatto": "La fine delle lezioni del venerdì svuota l'aula: meno persone che respirano = meno CO₂. Riconoscere i pattern di causa ed effetto è più utile dei valori assoluti."
+      },
+      {
+        "numero": 4,
+        "titolo": "Verifica della correlazione — causa o coincidenza?",
+        "attore": "Analista dati / statistico",
+        "domanda": "Trovi che nelle giornate umide i valori di PM2.5 nel tuo dataset sono più alti. Questo significa che l'umidità produce polveri sottili?",
+        "impatto": "No: probabilmente entrambi dipendono da una terza variabile (stabilità atmosferica che trattiene sia umidità che particolato al suolo). Correlazione non è causalità."
+      },
+      {
+        "numero": 5,
+        "titolo": "Comunicazione responsabile dei dati",
+        "attore": "Analista / comunicatore",
+        "domanda": "Un grafico con asse Y che inizia a 18°C invece di 0°C fa sembrare un aumento da 19°C a 21°C come un raddoppio visivo. Perché questo è un problema etico oltre che tecnico?",
+        "impatto": "Un grafico distorto influenza decisioni reali — politiche, acquisti, comportamenti. Chi sceglie consapevolmente di usare assi troncati senza dichiararlo sta manipolando, non comunicando."
+      }
+    ]
+  }
+}

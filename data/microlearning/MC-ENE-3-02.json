@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-ENE-3-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Calcolo l'impronta carbonica della mia famiglia e confronto 3 scenari di riduzione",
+    "istruzione": "Cerca le bollette del gas e dell'elettricità di casa tua (o usa i dati medi italiani forniti) e usa questa checklist per calcolare le emissioni mensili in tre settori e simulare almeno uno scenario di riduzione.",
+    "voci": [
+      "Trovo il consumo mensile di gas sulla bolletta in kWh (o in mc, dove 1 mc ≈ 10 kWh) e moltiplico per 0,202 kg CO₂/kWh — non confondo l'unità di misura del gas con quella dell'elettricità",
+      "Calcolo le emissioni dell'elettricità usando il fattore corretto per l'Italia (0,233 kg CO₂/kWh nel 2023) e capisco perché questo fattore cambia di paese in paese in base al mix energetico",
+      "Per i trasporti stimo i km mensili percorsi in auto dalla famiglia e applico il fattore giusto (0,21 kg/km per benzina, 0,17 per diesel) — distinguendo le emissioni per passeggero da quelle totali del veicolo",
+      "Confronto il totale mensile della mia famiglia con la media italiana (circa 583 kg CO₂/mese) e identifico il settore con l'impatto maggiore — motivando perché con i dati calcolati",
+      "Per almeno uno dei 3 scenari (auto elettrica, fotovoltaico 3 kWp, isolamento termico +30%) calcolo la riduzione mensile in kg CO₂ e il costo dell'intervento per valutare il rapporto costo/beneficio",
+      "Nella raccomandazione ai miei genitori uso i numeri calcolati — non opinioni generali — e riconosco almeno un'incertezza nei miei dati (es. 'questa stima dipende dal mix elettrico italiano che potrebbe cambiare')"
+    ]
+  },
+  "process": {
+    "titolo": "Il viaggio dell'energia: dal giacimento fossile alla presa di casa",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Formazione dei combustibili fossili",
+        "attore": "La natura (in 10-100 milioni di anni)",
+        "domanda": "Un litro di benzina ha richiesto 23,5 tonnellate di materia organica antica e un milione di anni — come è possibile che costi solo 1,80 euro al distributore?",
+        "impatto": "Il prezzo al distributore non include il costo ambientale reale (mancanza di tassazione del cherosene aereo, assenza di carbon pricing): questa distorsione spiega perché il volo low cost a 20 euro emette 130-180 g CO₂/passeggero mentre il treno ne emette 35-50"
+      },
+      {
+        "numero": 2,
+        "titolo": "Estrazione, raffinazione e distribuzione",
+        "attore": "Industria petrolifera e gas",
+        "domanda": "Il petrolio grezzo non è benzina — com'è la distillazione frazionata trasforma lo stesso barile in GPL, benzina, cherosene, gasolio, bitume e materie prime plastiche?",
+        "impatto": "La raffinazione produce 8 famiglie di prodotti; la plastica, la gomma sintetica e i detersivi derivano tutti dal petrolio — la transizione energetica richiede alternative non solo per i carburanti ma per tutta la chimica"
+      },
+      {
+        "numero": 3,
+        "titolo": "Combustione e emissioni di CO₂",
+        "attore": "Motori, caldaie, centrali",
+        "domanda": "La CO₂ non odora e non si vede — perché allora è il principale problema climatico invece dei fumi neri che si vedono chiaramente dalle ciminiere?",
+        "impatto": "CH₄ + 2O₂ → CO₂ + 2H₂O + calore: ogni kg di carbone bruciato produce 3,67 kg di CO₂; la CO₂ è trasparente e si accumula in atmosfera per secoli — invisibile ma persistente"
+      },
+      {
+        "numero": 4,
+        "titolo": "Effetto serra potenziato e feedback loops",
+        "attore": "Il sistema climatico",
+        "domanda": "Il permafrost siberiano che si scongela rilascia metano che fa sciogliere più permafrost che rilascia più metano — questo ciclo si può fermare, o una volta avviato è autosufficiente?",
+        "impatto": "I feedback loops (ghiaccio artico, permafrost, foreste amazzoni) amplificano il riscaldamento iniziale in modo non lineare: ecco perché il target di Parigi a +1,5°C è fisicamente molto diverso da +2°C o +3°C"
+      },
+      {
+        "numero": 5,
+        "titolo": "Conversione in elettricità e perdite nella rete",
+        "attore": "Centrale a gas → rete → casa",
+        "domanda": "Dalla centrale a gas alla presa di casa arriva solo il 35-45% dell'energia del gas originale — dove va il resto, e perché è impossibile recuperarlo per il secondo principio della termodinamica?",
+        "impatto": "Il ciclo combinato (50-60% di rendimento) è il migliore tra le centrali termoelettriche; le perdite nella rete di trasmissione aggiungono un ulteriore 5-10%: capire questa catena spiega perché l'efficienza energetica è prioritaria rispetto alla sola produzione"
+      }
+    ]
+  }
+}

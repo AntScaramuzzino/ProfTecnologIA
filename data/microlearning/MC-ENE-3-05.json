@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-ENE-3-05",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Consiglio alla mia famiglia quale auto scegliere: benzina, ibrida o elettrica",
+    "istruzione": "Usa i dati di consumo, emissioni e costi energetici della tua famiglia reale (15.000 km/anno, 70% città) e questa checklist per produrre una raccomandazione motivata con numeri verificabili.",
+    "voci": [
+      "Calcolo le emissioni annuali di CO₂ per ciascuna opzione usando i dati del caso studio (benzina: 16,2 kg/100 km; ibrida: 10,4 kg/100 km; elettrica: 4,45 kg/100 km con mix italiano 2024) scalati per 15.000 km",
+      "Calcolo il costo energetico annuo per ciascuna opzione usando i prezzi corretti: benzina 1,80 €/l (7 l/100 km), elettricità pubblica 0,40 €/kWh (16 kWh/100 km) — non confondo il prezzo domestico con quello delle colonnine pubbliche",
+      "Identifico il problema specifico dell'auto elettrica per una famiglia senza posto auto privato e propongo almeno una soluzione concreta disponibile in Italia nel 2026 (es. ricarica nel parcheggio condominiale, accordo con il comune)",
+      "Applico correttamente la formula del rendimento di Carnot per capire perché il motore a benzina non può superare il 57% teorico e i motori reali si fermano al 25-35%",
+      "So spiegare perché il rendimento del motore elettrico (90-95%) non è limitato dal secondo principio della termodinamica mentre quello termico sì — e lo faccio in parole comprensibili senza usare 'entropia' come scatola nera",
+      "La mia raccomandazione finale include sia le emissioni sia il costo sia il limite pratico (ricarica) e dichiaro in quale condizione la risposta cambierebbe (es. 'se avessero un posto auto con presa, consiglierei l'elettrica')"
+    ]
+  },
+  "process": {
+    "titolo": "Dal vapore al motore elettrico: la rivoluzione del rendimento",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Il limite termodinamico e il ciclo di Carnot",
+        "attore": "La fisica (secondo principio della termodinamica)",
+        "domanda": "Il motore della moto di tuo nonno bruciava benzina con un rendimento del 25% — ma il limite teorico di Carnot è 57%: dove va il 32% restante, e perché i fisici dicono che è impossibile recuperarlo?",
+        "impatto": "η_max = 1 - T_C/T_H: aumentare la temperatura della camera di combustione migliora il rendimento, ma richiede materiali che resistano a 2.000°C — il compromesso tecnico spiega perché i motori diesel più efficienti arrivano al 45% ma non oltre"
+      },
+      {
+        "numero": 2,
+        "titolo": "Il ciclo a 4 tempi del motore a benzina",
+        "attore": "Il motore a scoppio (in ogni automobile)",
+        "domanda": "Su 4 tempi del motore a scoppio, solo 1 produce lavoro utile — gli altri 3 servono per 'ricaricare' il sistema: questo è un difetto di progetto o è fisicamente inevitabile?",
+        "impatto": "Aspirazione → Compressione → Scoppio (unico tempo attivo) → Scarico: la candela scocca nel momento di massima compressione, moltiplicando la pressione dei gas per spingere il pistone; i motori multicilindro sfasano i cicli per avere potenza continua"
+      },
+      {
+        "numero": 3,
+        "titolo": "Il motore elettrico: fisica diversa, rendimento diverso",
+        "attore": "Il motore brushless (nelle auto elettriche)",
+        "domanda": "Il motore elettrico ha 3 parti in movimento contro le 200+ del termico, non ha olio motore, si scalda appena e ha rendimento del 90-95%: perché ha impiegato 100 anni a diventare dominante nel settore auto?",
+        "impatto": "Il campo magnetico rotante dello statore trascina il rotore (magnete permanente) senza combustione: nessun limite di Carnot significa che l'efficienza fisica è molto superiore, ma le batterie erano troppo costose e pesanti fino agli anni 2020"
+      },
+      {
+        "numero": 4,
+        "titolo": "Confronto well-to-wheel: l'analisi completa della filiera",
+        "attore": "Lo studente-analista",
+        "domanda": "Un'auto elettrica ricaricata con energia da carbone in Polonia emette più CO₂ di un'auto a benzina efficiente — questo significa che l'auto elettrica non è 'verde' oppure che dipende da dove sei?",
+        "impatto": "Il ciclo well-to-wheel (dal pozzo alla ruota) include estrazione, trasformazione e uso: benzina (28,3% efficienza totale), elettrica da gas (20,5%), elettrica da solare (16,7%); ma con rete 100% rinnovabile l'elettrica è imbattibile"
+      },
+      {
+        "numero": 5,
+        "titolo": "Confronto economico e raccomandazione pratica",
+        "attore": "Lo studente-consulente familiare",
+        "domanda": "Con 15.000 km/anno e benzina a 1,80€/l, spendi 1.890€/anno di carburante; con l'elettrica e ricarica pubblica a 0,40€/kWh spendi 960€/anno — quanto ci vuole a recuperare la differenza di prezzo d'acquisto?",
+        "impatto": "Il calcolo emissioni + costi annui + limite pratico (ricarica senza posto auto) trasforma una scelta ideologica in una decisione razionale basata sui dati: è il modello di ragionamento che si applica a qualsiasi decisione tecnico-economica"
+      }
+    ]
+  }
+}

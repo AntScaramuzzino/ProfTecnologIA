@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-2-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Costruisco il mio quiz in Scratch: dalla decomposizione al debug",
+    "istruzione": "Prima di aprire Scratch, decomponi il problema su carta. Poi costruisci il quiz seguendo questo ordine.",
+    "voci": [
+      "Ho scritto su carta la decomposizione del problema: ho elencato almeno 4 sottoproblemi distinti che il quiz deve risolvere.",
+      "Ho creato le variabili necessarie (almeno 'punteggio' e 'domanda_corrente') e le liste per domande, risposte corrette e feedback.",
+      "Ho costruito lo script principale con almeno un ciclo, una selezione (if/else) e un broadcast tra sprite diversi.",
+      "Il punteggio si aggiorna correttamente: si incrementa solo per le risposte corrette e appare visibile sullo stage durante il quiz.",
+      "Ho testato il programma con almeno due scenari: rispondendo tutto corretto e sbagliando almeno tre risposte, verificando il comportamento in entrambi i casi.",
+      "Ho documentato almeno un bug trovato durante il test: ho scritto cosa faceva di sbagliato, dove era l'errore e come l'ho risolto."
+    ]
+  },
+  "process": {
+    "titolo": "Dal problema al programma funzionante: il ciclo del coding",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Decomposizione del problema",
+        "attore": "Progettista / sviluppatore",
+        "domanda": "Perché 'costruire un quiz' è troppo vago per iniziare a programmare, mentre 'mostrare la domanda numero 3 e aspettare la risposta' è un punto di partenza concreto?",
+        "impatto": "La decomposizione trasforma problemi paralizzanti in compiti gestibili: ogni sottoproblema può essere codificato, testato e corretto indipendentemente."
+      },
+      {
+        "numero": 2,
+        "titolo": "Riconoscimento del pattern ricorrente",
+        "attore": "Progettista",
+        "domanda": "Le 5 domande del quiz seguono tutte lo stesso schema. Quante righe di codice in meno scrivi usando questo pattern rispetto a ripetere il codice 5 volte?",
+        "impatto": "Il pattern recognition evita la duplicazione di codice: meno codice significa meno bug da trovare e meno lavoro per modificare il comportamento in futuro."
+      },
+      {
+        "numero": 3,
+        "titolo": "Implementazione delle strutture di controllo",
+        "attore": "Sviluppatore",
+        "domanda": "Qual è la differenza pratica tra un ciclo 'ripeti 5 volte' e un ciclo 'ripeti finché domanda_corrente > 5' nel contesto del quiz?",
+        "impatto": "I cicli condizionali permettono al programma di reagire a situazioni impreviste: se si aggiungono domande, il secondo ciclo funziona senza modifiche, il primo no."
+      },
+      {
+        "numero": 4,
+        "titolo": "Test sistematico",
+        "attore": "Sviluppatore / tester",
+        "domanda": "Perché testare solo il caso 'rispondo tutto corretto' non è sufficiente per dire che il quiz funziona?",
+        "impatto": "I bug emergono nei casi limite e negli scenari inaspettati: risposta vuota, risposta con maiuscole diverse, punteggio 0, punteggio massimo sono tutti casi da testare esplicitamente."
+      },
+      {
+        "numero": 5,
+        "titolo": "Debug e correzione",
+        "attore": "Sviluppatore",
+        "domanda": "Grace Hopper nel 1947 trovò un insetto fisico dentro un computer. Come si chiama oggi un errore nel codice e perché il termine è rimasto?",
+        "impatto": "Il debug occupa il 50-70% del tempo di sviluppo professionale. La differenza tra un programmatore esperto e uno principiante non è quanti bug fa, ma quanto velocemente li trova."
+      }
+    ]
+  }
+}

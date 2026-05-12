@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-COM-3-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Produco un podcast responsabile: dalla ricerca alla pubblicazione",
+    "istruzione": "Scegli un tema tecnologico che ti interessa e usa questa checklist per produrre un episodio podcast di 3 minuti che rispetti tutte le regole su fonti, licenze e qualità audio.",
+    "voci": [
+      "Ho trovato almeno 3 fonti diverse per il mio tema e per ognuna ho annotato: autore, titolo, URL e data — non mi basta scrivere 'immagine da Google'",
+      "Per ogni suono o musica che uso verifico la licenza CC specifica (CC0, BY, BY-NC) e so esattamente cosa posso e non posso fare con ciascuna",
+      "Ho scritto lo script completo prima di registrare, l'ho letto ad alta voce almeno due volte ed eliminato le frasi che fanno inciampare",
+      "Il documento di accompagnamento (show notes) include: titolo, autori, data, fonti complete con URL, crediti della musica con link a Freesound e tipo di licenza",
+      "Ho verificato con un tool (FotoForensics, Google Reverse Image Search) almeno un'immagine o un video che volevo citare — per escludere che sia decontestualizzato o manipolato",
+      "Prima di condividere un contenuto ho risposto alle 5 domande ThinkBeforeYouShare: conosco la fonte originale? Ho letto tutto (non solo il titolo)? Sto condividendo perché è vero o perché mi fa sentire che ho ragione?"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo di produzione di un contenuto digitale responsabile",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Ricerca e verifica delle fonti",
+        "attore": "Lo studente-autore",
+        "domanda": "Come distingui una fonte primaria (il dato originale) da una secondaria (che lo riporta), e perché questa distinzione cambia tutto?",
+        "impatto": "Ogni affermazione nel podcast deve avere una fonte verificabile: un articolo scientifico, un dato ISTAT, un documento ufficiale — non la notizia di seconda mano"
+      },
+      {
+        "numero": 2,
+        "titolo": "Scelta delle licenze e dei materiali riutilizzabili",
+        "attore": "Lo studente-autore",
+        "domanda": "Se usi una canzone CC BY-NC in un video pubblicato su YouTube, stai violando la licenza — anche se non guadagni un centesimo?",
+        "impatto": "In Italia non esiste l'eccezione automatica per uso educativo come negli USA: pubblicare online con musica protetta espone a reclami automatici; la soluzione è Freesound con licenza CC esplicita"
+      },
+      {
+        "numero": 3,
+        "titolo": "Scrittura dello script",
+        "attore": "Lo studente-autore",
+        "domanda": "Perché i primi 60-90 secondi di un podcast decidono se l'ascoltatore resta o abbandona?",
+        "impatto": "La struttura hook-corpo-conclusione con 150 parole al minuto riempie esattamente 3 minuti; frasi troppo lunghe vanno eliminate perché 'non suonano' ad alta voce"
+      },
+      {
+        "numero": 4,
+        "titolo": "Registrazione e montaggio",
+        "attore": "Lo studente-autore + Audacity",
+        "domanda": "Perché registrare in un armadio pieno di vestiti produce audio migliore di una stanza vuota, anche se sembra assurdo?",
+        "impatto": "Taglia le pause superiori a 1 secondo, normalizza a -16 LUFS, aggiungi la musica CC a -20 dB sotto la voce: queste tre operazioni trasformano una registrazione grezza in un podcast ascoltabile"
+      },
+      {
+        "numero": 5,
+        "titolo": "Pubblicazione e documentazione",
+        "attore": "Lo studente-autore",
+        "domanda": "Perché pubblicare su Internet Archive con licenza CC BY-SA è più onesto di caricare su YouTube senza dichiarare le fonti?",
+        "impatto": "Il documento di accompagnamento completo (fonti, crediti, licenza scelta e motivata) è la differenza tra un contenuto usabile da altri e uno che finisce nel dimenticatoio"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-AMB-2-04",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Analisi bioclimatica della mia scuola",
+    "istruzione": "Osserva l'edificio della tua scuola dall'esterno e dall'interno e usa questa checklist per valutarne le scelte bioclimatiche.",
+    "voci": [
+      "Ho determinato l'orientamento della facciata principale della scuola usando una bussola o l'app del telefono, e ho verificato su quale lato si trovano le aule principali.",
+      "Ho osservato se i balconi o gli aggetti del tetto bloccano il sole estivo ma lasciano entrare quello invernale, misurando approssimativamente la profondità di un aggetto.",
+      "Ho toccato una parete esterna in un giorno soleggiato e una in ombra e ho stimato la differenza di temperatura, ragionando sulla massa termica dell'edificio.",
+      "Ho contato le finestre su ciascun lato dell'edificio e ho valutato se la distribuzione è bioclimaticamente razionale (più finestre a sud, meno a nord).",
+      "Ho verificato se ci sono pannelli solari o fotovoltaici visibili sull'edificio e, se no, ho valutato se il tetto potrebbe ospitarli per orientamento e superficie.",
+      "Ho scritto un giudizio motivato sull'efficienza bioclimatica dell'edificio, indicando la principale mancanza e una proposta di miglioramento fattibile."
+    ]
+  },
+  "process": {
+    "titolo": "Costruire con il sole: come la geometria solare determina il comfort di un edificio",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Analisi del sito e orientamento",
+        "attore": "Architetto / progettista bioclimatico",
+        "domanda": "Prima di progettare un edificio, un architetto studia per un anno le ombre che cadono sul sito nelle diverse stagioni. Perché dedicare un anno a studiare le ombre prima di disegnare una sola parete?",
+        "impatto": "Un orientamento sbagliato di un edificio si paga in bolletta per i prossimi 50 anni. Un edificio mal orientato può richiedere il 30-40% in più di energia per il riscaldamento e il raffrescamento."
+      },
+      {
+        "numero": 2,
+        "titolo": "Progetto delle finestre e degli aggetti",
+        "attore": "Progettista / geometra / normativa energetica",
+        "domanda": "A Roma il sole di dicembre è a 24,5° sull'orizzonte; quello di giugno è a 71,5°. Disegna mentalmente una finestra con un aggetto sopra: il sole invernale entra o no?",
+        "impatto": "Un aggetto dimensionato correttamente sulla latitudine può bloccare completamente il sole estivo (fonte di surriscaldamento) e lasciar entrare quello invernale (fonte di riscaldamento gratuito), riducendo il fabbisogno energetico del 30-40%."
+      },
+      {
+        "numero": 3,
+        "titolo": "Massa termica e accumulo di calore",
+        "attore": "Muri in laterizio / calcestruzzo / pietra",
+        "domanda": "Un muro di pietra di 60 cm assorbe calore durante il giorno e lo rilascia di notte sfasando il picco termico di 8-12 ore. Questo è un vantaggio o uno svantaggio in estate? E in inverno?",
+        "impatto": "La massa termica regola gli sbalzi di temperatura quotidiani. Gli edifici in muratura massiccia del centro storico italiano erano già bioclimaticamente efficienti secoli prima che esistesse il concetto — per ragioni empiriche capite dagli artigiani."
+      },
+      {
+        "numero": 4,
+        "titolo": "Isolamento termico dell'involucro",
+        "attore": "Cappotto termico / isolanti / certificatori energetici",
+        "domanda": "Un cappotto termico esterno da 10 cm di lana di roccia può ridurre le dispersioni termiche del muro del 70-80%. Perché molti condomini italiani degli anni '60-'70 non lo hanno ancora?",
+        "impatto": "Il 60% degli edifici italiani è stato costruito prima delle prime norme sull'efficienza energetica (1976). Portarli tutti in classe A+ richiederebbe investimenti nell'ordine dei centinaia di miliardi, ma ridurrebbe le emissioni del settore edilizio di oltre il 50%."
+      },
+      {
+        "numero": 5,
+        "titolo": "Ventilazione naturale e raffrescamento passivo",
+        "attore": "Progettista / effetto camino / geometria degli spazi",
+        "domanda": "In un edificio bioclimatico, le finestre alte rilasciano l'aria calda mentre quelle basse aspirano aria fresca dal basso. Hai mai notato questo effetto aprendo le finestre in estate?",
+        "impatto": "La ventilazione naturale incrociata può ridurre la temperatura interna di 3-5°C senza consumare energia, sostituendo parzialmente o totalmente il condizionatore nelle stagioni di transizione."
+      }
+    ]
+  }
+}

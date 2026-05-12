@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-ALI-2-04",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Mappa della filiera del mio scaffale",
+    "istruzione": "Scegli un prodotto confezionato che hai in casa e usa questa checklist per ricostruire la sua filiera completa dall'etichetta.",
+    "voci": [
+      "Ho letto l'etichetta del prodotto scelto e ho trovato il paese di origine degli ingredienti principali.",
+      "Ho identificato il nome e la sede dello stabilimento produttore, cercando se è una grande industria o una piccola azienda.",
+      "Ho ricostruito la filiera in almeno quattro passaggi: produttore primario → trasformatore → distributore → punto vendita → io.",
+      "Ho stimato le food miles del prodotto, cioè la distanza approssimativa percorsa dagli ingredienti principali per arrivare nel mio frigo.",
+      "Ho verificato se il prodotto ha certificazioni (DOP, IGP, Bio, Fair Trade) e ho cercato cosa garantisce ciascuna.",
+      "Ho calcolato quanta parte del prezzo che ho pagato penso sia andata al produttore primario, motivando la mia stima."
+    ]
+  },
+  "process": {
+    "titolo": "Il viaggio di un alimento: dalla terra allo scaffale",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Produzione primaria",
+        "attore": "Agricoltore / allevatore / pescatore",
+        "domanda": "Il produttore primario spesso riceve tra il 5% e il 15% del prezzo finale. Per una bottiglia di olio d'oliva da 6 euro, l'olivicoltore guadagna meno di 60 centesimi. Ti sembra giusto?",
+        "impatto": "I produttori primari sono l'anello più vulnerabile della filiera: subiscono le crisi climatiche, le fluttuazioni dei prezzi internazionali e il potere contrattuale delle grandi industrie."
+      },
+      {
+        "numero": 2,
+        "titolo": "Trasformazione industriale",
+        "attore": "Industria alimentare (mulino, pastificio, caseificio, conservificio)",
+        "domanda": "Il grano diventa farina, poi pasta, poi pasta pronta al forno. Ogni passaggio aggiunge valore e prezzo. In quale passaggio pensi venga aggiunto più valore e perché?",
+        "impatto": "L'industria alimentare italiana vale circa 180 miliardi di euro l'anno e l'export supera i 50 miliardi. Ma ogni trasformazione aggiunge costi energetici, imballaggi e trasporti."
+      },
+      {
+        "numero": 3,
+        "titolo": "Distribuzione e logistica",
+        "attore": "Distributore / flotta di trasporto refrigerato / magazzino",
+        "domanda": "Un camion di mozzarella deve mantenere 4°C per 400 km. Cosa pensi succeda ai profitti dell'azienda se la catena del freddo si interrompe anche solo per 2 ore?",
+        "impatto": "La logistica alimentare è uno dei sistemi più complessi al mondo: prodotti con scadenze diverse, temperature diverse, regole di tracciabilità diverse, tutto coordinato 24 ore su 24."
+      },
+      {
+        "numero": 4,
+        "titolo": "Grande distribuzione organizzata",
+        "attore": "Supermercato / buyer / reparto acquisti",
+        "domanda": "Il supermercato decide quali prodotti mettere sullo scaffale e a quale altezza. Perché i prodotti più costosi sono spesso all'altezza degli occhi e quelli economici in basso?",
+        "impatto": "La grande distribuzione ha un potere contrattuale enorme: può imporre prezzi ai fornitori, richiedere esclusività, decidere le promozioni. Questo influenza direttamente cosa i produttori decidono di coltivare."
+      },
+      {
+        "numero": 5,
+        "titolo": "Consumo e impatto finale",
+        "attore": "Consumatore",
+        "domanda": "Se comprassi solo prodotti a filiera corta (dal produttore al consumatore in meno di due passaggi), cosa cambierebbe nel prezzo e nella qualità?",
+        "impatto": "Le certificazioni DOP, IGP e Fair Trade garantiscono trasparenza sulla filiera, ma coprono solo una parte dei prodotti. Il consumatore informato ha strumenti per scegliere, ma richiede tempo e conoscenza."
+      }
+    ]
+  }
+}

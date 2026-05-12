@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-COM-3-06",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Faccio il fact-checking di una notizia virale prima di condividerla",
+    "istruzione": "Scegli una notizia che hai visto circolare sui social nelle ultime settimane e usa questa checklist per verificarla sistematicamente prima di decidere se condividerla o meno.",
+    "voci": [
+      "Identifico la fonte originale (non il sito che la riporta) e verifico se è una fonte primaria (dati ISTAT, studio peer-reviewed, documento ufficiale) o secondaria",
+      "Controllo la data: molte notizie 'virali' sono vere ma di anni fa e il contesto è cambiato completamente",
+      "Classifico il contenuto: è misinformazione (falso diffuso in buona fede), disinformazione (falso diffuso intenzionalmente) o malinformazione (vero ma usato per causare danno)?",
+      "Cerco il contraddittorio su Pagella Politica, FactaNews o AFP Fact Check Italia — se nessun fact-checker professionale l'ha già analizzata, lo faccio io seguendo il metodo: affermazione → fonte primaria → contesto → contraddittorio",
+      "Mi chiedo quale emozione ha attivato questa notizia in me (rabbia, paura, stupore, indignazione) — e se è un'emozione forte mi fermo, perché le notizie progettate per massimizzare l'engagement si diffondono 6 volte più velocemente di quelle vere",
+      "Se decido di condividere, aggiungo contesto: non condivido il titolo da solo ma spiego perché la condivido e cosa ho verificato"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo della pubblicità programmatica e della difesa critica",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Riconoscimento dell'economia dell'attenzione",
+        "attore": "Lo studente / il lettore digitale",
+        "domanda": "Ogni secondo che passi su TikTok ha un valore economico — non per te, ma per TikTok che lo rivende agli inserzionisti: hai mai pensato di essere il prodotto, non il cliente?",
+        "impatto": "L'asta in tempo reale (RTB) in 200 millisecondi analizza il tuo profilo da centinaia di attributi raccolti da data broker come Acxiom; capisci chi sei per loro prima ancora di sapere cosa stai per leggere"
+      },
+      {
+        "numero": 2,
+        "titolo": "Analisi del funzionamento degli algoritmi di raccomandazione",
+        "attore": "Lo studente / il lettore digitale",
+        "domanda": "Il feed cronologico e il feed curato da algoritmo sembrano la stessa cosa — ma uno ti mostra ciò che hai scelto di seguire, l'altro ciò che il sistema prevede che ti 'coinvolga': qual è la differenza reale?",
+        "impatto": "TikTok costruisce il profilo delle tue preferenze implicite (quanto guardi, se scrolli via dopo 3 secondi) non di quelle dichiarate: ogni tua azione affina il profilo in secondi, creando la filter bubble senza che te ne accorga"
+      },
+      {
+        "numero": 3,
+        "titolo": "Riconoscimento di filter bubble ed echo chamber",
+        "attore": "Lo studente / il lettore digitale",
+        "domanda": "Come si rompe una bolla di filtraggio — e se per definizione non sai di essere in una bolla, come fai a cercare cosa manca invece di guardare cosa c'è?",
+        "impatto": "La diversificazione attiva delle fonti, l'uso cronologico del feed e la ricerca deliberata fuori dall'algoritmo sono le tre contromisure concrete contro la bolla: non basta 'essere critici', serve un metodo"
+      },
+      {
+        "numero": 4,
+        "titolo": "Verifica sistematica con metodo fact-checking",
+        "attore": "Lo studente / il lettore digitale",
+        "domanda": "Nel caso #MacronLeaks del 2017, i documenti erano una combinazione di materiale autentico e falsificato — perché questo mix è più pericoloso del materiale interamente falso?",
+        "impatto": "Il metodo IFCN in 5 passi (affermazione verificabile → fonte primaria → contesto → contraddittorio → interesse della fonte) si applica a qualsiasi contenuto; i tool come InVID/WeVerify e FotoForensics automatizzano la parte tecnica"
+      },
+      {
+        "numero": 5,
+        "titolo": "Produzione di contenuti verificati e trasparenti",
+        "attore": "Lo studente / il lettore digitale",
+        "domanda": "Se scrivi un fact-checking per il giornalino della scuola sul post virale del riconoscimento facciale, come fai a non diventare tu stesso una fonte di disinformazione pur partendo da buone intenzioni?",
+        "impatto": "La struttura 'affermazione → verifica → analisi della diffusione → call to action concreta' non è solo giornalistica: è il formato che rende utile il fact-checking invece di produrre altro rumore informativo"
+      }
+    ]
+  }
+}

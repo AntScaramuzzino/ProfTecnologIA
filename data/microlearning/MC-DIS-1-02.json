@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIS-1-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 89,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Rilievo tecnico di uno spazio reale: dalla misura al disegno in scala",
+    "istruzione": "Scegli uno spazio accessibile (aula, corridoio, laboratorio). Misura, calcola la scala, disegna con cartiglio. La precisione conta.",
+    "voci": [
+      "Ho misurato lo spazio con il metro a nastro e ho registrato tutte le misure su uno schizzo preliminare a mano libera prima di iniziare il disegno definitivo.",
+      "Ho calcolato la scala appropriata usando la formula misura_disegno = misura_reale ÷ n, verificando che il disegno entri nel foglio con margini adeguati.",
+      "Ho disegnato le pareti con linea continua grossa, le finestre con la convenzione architettonica (doppia linea sottile che interrompe il muro) e le porte con arco di apertura.",
+      "Ho aggiunto le linee di quota per le dimensioni principali: le cifre indicano le misure reali (non quelle in scala), le frecce sono alle estremità delle linee di misura.",
+      "Ho compilato il cartiglio nell'angolo inferiore destro con tutti i campi obbligatori: titolo, scala, data, nome.",
+      "Ho scritto la proposta migliorativa in 3-4 righe: una modifica realistica allo spazio disegnato (spostare una finestra, allargare una porta) con motivazione tecnica o funzionale."
+    ]
+  },
+  "process": {
+    "titolo": "Dal rilievo alla tavola tecnica: il processo dell'architetto",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Rilievo delle misure reali",
+        "attore": "Architetto / tecnico",
+        "domanda": "L'arch. Ferrara misura sempre due volte prima di disegnare. Perché la regola 'misura due volte, disegna una volta' vale tanto in architettura quanto nella sartoria?",
+        "impatto": "Un errore di misura scoperto sul foglio costa gomma e tempo. Scoperto in cantiere costa cemento, manodopera e settimane. La precisione nel rilievo è l'investimento meno costoso dell'intero processo."
+      },
+      {
+        "numero": 2,
+        "titolo": "Calcolo della scala di rappresentazione",
+        "attore": "Progettista",
+        "domanda": "Un'aula di 8 m × 6 m deve entrare in un foglio A4 (lato lungo utile ~24 cm). Qual è la scala minima necessaria e quale scala standard sceglieresti?",
+        "impatto": "Denominatore minimo: 800 ÷ 24 = 33. La scala standard più vicina con denominatore ≥ 33 è 1:50. A 1:50, l'aula occupa 16 cm × 12 cm sul foglio: entra con spazio per quote e cartiglio."
+      },
+      {
+        "numero": 3,
+        "titolo": "Impostazione del foglio e del cartiglio",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Perché il cartiglio si trova sempre nell'angolo inferiore destro del foglio tecnico, e perché il titolo deve essere leggibile anche quando il foglio è piegato in A4?",
+        "impatto": "Convenzione normativa UNI: il cartiglio è sempre visibile quando il foglio è piegato per archiviazione. Chi cerca un disegno in un archivio legge il cartiglio senza aprire il foglio."
+      },
+      {
+        "numero": 4,
+        "titolo": "Disegno con convenzioni grafiche corrette",
+        "attore": "Disegnatore tecnico",
+        "domanda": "In una pianta architettonica, le quote indicano 120 cm per una finestra. Questo significa che sul foglio in scala 1:50 la finestra è larga quanti millimetri?",
+        "impatto": "120 cm ÷ 50 = 2,4 cm = 24 mm sul foglio. Le quote indicano sempre le misure reali: chi costruisce usa le quote, non il righello sul disegno. Confonderle è un errore che in cantiere costa caro."
+      },
+      {
+        "numero": 5,
+        "titolo": "Verifica della coerenza del disegno",
+        "attore": "Progettista / committente",
+        "domanda": "Come verifichi che il disegno sia sufficientemente completo da permettere a qualcuno che non ha mai visto lo spazio di capirne la geometria?",
+        "impatto": "Test del 'lettore esterno': chiedi a un compagno di ricavare le dimensioni di ogni stanza solo dalle quote del disegno, senza guardare lo spazio reale. Se ci riesce, il disegno funziona come documento tecnico."
+      }
+    ]
+  }
+}

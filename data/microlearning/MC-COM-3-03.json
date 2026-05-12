@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-COM-3-03",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Calcolo l'impronta di carbonio degli spostamenti della mia classe",
+    "istruzione": "Scegli un tragitto reale (casa-scuola o la gita scolastica di 200 km) e usa questa checklist per confrontare le emissioni di almeno due alternative di trasporto con dati numerici precisi.",
+    "voci": [
+      "Misuro la distanza con Google Maps (non stimo a occhio) e uso il fattore passeggero-km corretto per ogni mezzo — non confondo le emissioni totali con quelle per passeggero",
+      "Calcolo le emissioni annuali moltiplicando per 200 giorni scolastici e le esprimo in kg CO₂ (non solo in grammi) per capire l'ordine di grandezza reale",
+      "So spiegare il paradosso del 'treno sempre più verde': un treno semivuoto emette più per passeggero di un pullman pieno — l'occupazione conta quanto il mezzo",
+      "Quando confronto treno vs aereo su una tratta italiana (es. Roma-Milano), includo il tempo porta-a-porta reale, non solo il tempo di volo",
+      "Identifico almeno un'azione concreta di riduzione delle emissioni della mia mobilità scolastica e ne stimo il risparmio in kg CO₂/anno",
+      "Se produco un sondaggio sulla mobilità della classe, garantisco l'anonimato delle risposte e uso domande chiare (massimo 5) per evitare abbandoni"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo di analisi della mobilità sostenibile",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Raccolta dati sulla mobilità reale",
+        "attore": "Lo studente / il gruppo classe",
+        "domanda": "Come mai lo zaino che porti ogni giorno ha già percorso 20.000 km prima di arrivare da te — e cosa c'entra questo con il sistema dei trasporti globali?",
+        "impatto": "Il settore dei trasporti produce il 16% delle emissioni globali di gas serra; mappare come si sposta la classe è il primo passo per capire dove agire"
+      },
+      {
+        "numero": 2,
+        "titolo": "Calcolo delle emissioni per mezzo e per passeggero",
+        "attore": "Lo studente / il gruppo classe",
+        "domanda": "Perché un'auto privata con un solo occupante e un autobus urbano mezzo pieno hanno emissioni per passeggero simili, ma l'auto occupa 10 volte più spazio?",
+        "impatto": "Applicando i fattori di emissione (130 g/km per auto benzina, 65 g/km per bus pieno), lo studente trasforma dati di mobilità in dati di impatto climatico confrontabili"
+      },
+      {
+        "numero": 3,
+        "titolo": "Confronto tra alternative",
+        "attore": "Lo studente / il gruppo classe",
+        "domanda": "Se la tua classe andasse in gita a 200 km in pullman pieno invece che in auto dei genitori, di quanti kg CO₂ ridurreste le emissioni totali — e quanti alberi ci vorrebbero per assorbirle?",
+        "impatto": "Il confronto numerico rende concreto il concetto astratto di 'scelta sostenibile' e mostra che il mezzo più verde non è sempre quello che sembra"
+      },
+      {
+        "numero": 4,
+        "titolo": "Identificazione delle cause strutturali",
+        "attore": "Lo studente / il gruppo classe",
+        "domanda": "Il trasporto pubblico funziona male nella tua zona per colpa dei cittadini che preferiscono l'auto, oppure i cittadini preferiscono l'auto perché il trasporto pubblico funziona male?",
+        "impatto": "Il paradosso della domanda indotta mostra che 'più strade non riducono il traffico': capire questa logica sistemica è necessario per proporre soluzioni reali al consiglio scolastico"
+      },
+      {
+        "numero": 5,
+        "titolo": "Proposta di piano di mobilità sostenibile",
+        "attore": "Lo studente / il gruppo classe",
+        "domanda": "Se la scuola adottasse il Pedibus (gruppo di studenti che camminano insieme), quante auto private sparirebbero ogni mattina e quanti kg CO₂ si risparmierebbe in un anno scolastico?",
+        "impatto": "Le proposte concrete (costo zero, basso costo, medio termine) con stima quantificata dell'impatto trasformano il lavoro di analisi in uno strumento reale per il Consiglio di Istituto"
+      }
+    ]
+  }
+}

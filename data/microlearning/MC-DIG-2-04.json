@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIG-2-04",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Kit di prima risposta: sicurezza digitale pratica",
+    "istruzione": "Scegli l'account più importante che possiedi e verifica sistematicamente il suo livello di protezione. Non inserire password reali durante questo esercizio.",
+    "voci": [
+      "Ho identificato almeno 5 dei 7 segnali di phishing in ciascuno dei tre messaggi simulati forniti dal docente, spiegando la logica psicologica di ognuno.",
+      "Ho verificato su haveibeenpwned.com se la mia email principale risulta in database di credenziali violate, e per ogni violazione trovata ho descritto l'azione da intraprendere.",
+      "Ho valutato la robustezza di almeno 3 password (senza usare quelle reali — inventane di simili) usando i criteri di lunghezza, unicità e imprevedibilità.",
+      "Ho verificato nelle impostazioni di almeno un account importante le sessioni attive: quanti dispositivi sono connessi e li riconosco tutti?",
+      "Ho attivato o verificato l'attivazione del 2FA su almeno un account critico (email o social principale), documentando il tipo di secondo fattore usato.",
+      "Ho scritto il piano di risposta in 7 passi che seguirei se scoprissi che un mio account è stato compromesso, nell'ordine corretto."
+    ]
+  },
+  "process": {
+    "titolo": "Anatomia di un attacco phishing riuscito — e come difendersi",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Costruzione dell'esca",
+        "attore": "Attaccante",
+        "domanda": "Luca ha ricevuto un messaggio con logo Instagram, tono professionale e link che sembrava autentico. Quali 3 elementi tecnici rivelano che era falso?",
+        "impatto": "L'URL era 'instagram-accounts-security.net' invece di 'instagram.com'. Il mittente era un numero SMS falsificato. La richiesta di password via messaggio è sempre una truffa."
+      },
+      {
+        "numero": 2,
+        "titolo": "Urgenza artificiale — il fattore psicologico chiave",
+        "attore": "Attaccante / vittima",
+        "domanda": "Perché 'hai 12 ore per agire' è il meccanismo più potente in un tentativo di phishing?",
+        "impatto": "L'urgenza disattiva il pensiero critico: il cervello passa in modalità reattiva e bypassa la verifica. La pausa di 5 secondi — anche solo per respirare — è la difesa più efficace."
+      },
+      {
+        "numero": 3,
+        "titolo": "Furto delle credenziali",
+        "attore": "Sito falso / attaccante",
+        "domanda": "Il sito falso era visivamente identico a Instagram. Come potresti distinguerlo senza leggere l'URL completo?",
+        "impatto": "Non puoi — l'aspetto visivo è inaffidabile. L'unica verifica affidabile è l'URL nella barra del browser. Navigare direttamente al sito ufficiale digitandolo a mano è la contromisura corretta."
+      },
+      {
+        "numero": 4,
+        "titolo": "Credential stuffing — la reazione a catena",
+        "attore": "Software automatico / attaccante",
+        "domanda": "Se usi la stessa password su 5 siti e uno viene violato, in quanto tempo un software automatico testa le tue credenziali sugli altri 4?",
+        "impatto": "Minuti. Il credential stuffing è automatizzato: migliaia di account vengono testati al secondo. Una password unica per ogni sito interrompe la catena al primo link."
+      },
+      {
+        "numero": 5,
+        "titolo": "Risposta all'incidente — i 7 passi nell'ordine giusto",
+        "attore": "Vittima / piattaforma",
+        "domanda": "Luca ha impiegato 3 giorni per riprendere il controllo del profilo. Qual è la prima cosa da fare entro i primi 10 minuti dalla scoperta?",
+        "impatto": "Cambiare la password dell'email è il passo più urgente: l'email è la chiave di recupero di tutti gli altri account. Chi controlla l'email controlla tutto il resto."
+      }
+    ]
+  }
+}

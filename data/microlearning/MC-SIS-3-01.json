@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-SIS-3-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Mappa l'economia del mio territorio: 5 imprese, 3 settori, le relazioni tra loro",
+    "istruzione": "Identifica 5 imprese reali nel tuo comune o provincia (almeno una per settore primario, secondario, terziario) e usa questa checklist per classificarle, analizzare le relazioni e produrre una mappa del sistema economico locale.",
+    "voci": [
+      "Per ogni impresa cerco almeno un dato concreto (numero dipendenti su LinkedIn, fatturato su Registro Imprese) e lo uso per classificarla correttamente: artigianato (<5 dipendenti), PMI (<250), grande impresa (>250) o multinazionale (presente in più paesi)",
+      "Identifico a quale settore appartiene ogni impresa (primario = estrae/raccoglie, secondario = trasforma, terziario = servizi) e so spiegare perché 'un ristorante' è terziario anche se trasforma materie prime",
+      "Per almeno una delle 5 imprese ricostruisco la catena del valore: da dove vengono le materie prime, dove avviene la produzione, chi distribuisce, dove si accumula il maggiore profitto",
+      "Sulla mappa indico le relazioni tra le 5 imprese con frecce: fornitore → cliente, concorrente, partner — e identifico almeno una dipendenza critica (es. tutte le imprese locali dipendono da un unico grande acquirente esterno)",
+      "Nell'analisi scritta rispondo alla domanda: l'economia del mio territorio è dominata da PMI o grandi imprese? Da un settore o diversificata? Quali sono i rischi di questa struttura in caso di crisi di settore?",
+      "Se confronto una multinazionale con una PMI locale, uso almeno 4 dimensioni: impatto sull'occupazione locale, distribuzione del valore nel territorio, resilienza alle crisi, sostenibilità della filiera"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo della catena del valore: chi produce, chi distribuisce, chi guadagna",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Comprensione del sistema economico e dei suoi modelli",
+        "attore": "Lo studente",
+        "domanda": "Una maglietta da 5,99 euro è passata per almeno 4 continenti prima di arrivare sullo scaffale: qual è il fattore che rende conveniente produrre in Bangladesh e vendere in Italia — e chi paga il costo che manca nel prezzo?",
+        "impatto": "Il sistema economico misto (mercato + Stato) è il modello di quasi tutti i paesi reali: capire dove finisce il mercato e dove inizia la regolazione pubblica è la chiave per leggere qualsiasi notizia di economia"
+      },
+      {
+        "numero": 2,
+        "titolo": "Classificazione delle imprese e forme organizzative",
+        "attore": "Lo studente",
+        "domanda": "Una cooperativa dove ogni socio ha un voto indipendentemente dalla quota investita e una SRL dove chi ha più quote decide: quale forma sceglieresti per un'impresa di quartiere che vuole tenere i profitti nella comunità locale?",
+        "impatto": "I 4 fattori di produzione (lavoro, capitale, terra, tecnologia) si combinano in modo diverso nelle diverse forme d'impresa: artigiano, PMI, grande impresa, multinazionale, startup — capire la forma significa capire chi decide e chi guadagna"
+      },
+      {
+        "numero": 3,
+        "titolo": "Analisi della catena del valore",
+        "attore": "Lo studente",
+        "domanda": "Il cucitore di Bangladesh che passa 60 minuti a cucire un paio di jeans guadagna meno di 0,50€ — il brand che mette il logo guadagna 5-7€: il valore si crea nel lavoro fisico o nel marchio, e perché?",
+        "impatto": "La catena del valore di Porter mostra dove si accumula il profitto: nelle fasi delocalizzabili (cucito) il potere di mercato è zero; nelle fasi non delocalizzabili (brand, distribuzione, IP) il potere di mercato è altissimo"
+      },
+      {
+        "numero": 4,
+        "titolo": "PIL, BES e limiti della misurazione economica",
+        "attore": "Lo studente",
+        "domanda": "Se un'alluvione devastasse il tuo comune, il PIL crescerebbe per le spese di ricostruzione: questo dimostra che il PIL è uno strumento inutile, oppure che va affiancato con altri indicatori?",
+        "impatto": "Il BES (Benessere Equo e Sostenibile) di ISTAT misura 12 dimensioni che il PIL non coglie: salute, relazioni sociali, sicurezza, paesaggio — capire i limiti di uno strumento di misura è competenza analitica fondamentale"
+      },
+      {
+        "numero": 5,
+        "titolo": "Ciclo economico e inflazione nella vita reale",
+        "attore": "Lo studente",
+        "domanda": "Nel 2022 l'inflazione italiana era all'8,1% — il livello più alto dal 1985: se il tuo stipendio futuro restasse fisso per un anno con questa inflazione, quanto meno potresti comprare — e quale categoria di lavoratori ne soffre di più?",
+        "impatto": "Indice prezzi = (Prezzo anno corrente / Prezzo anno base) × 100: chi ha stipendi indicizzati all'inflazione è protetto; chi ha contratti a termine o lavoro autonomo perde potere d'acquisto — l'inflazione non è uguale per tutti"
+      }
+    ]
+  }
+}

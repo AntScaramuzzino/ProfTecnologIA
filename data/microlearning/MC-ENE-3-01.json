@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-ENE-3-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Misuro il vantaggio meccanico di 5 oggetti in casa",
+    "istruzione": "Cerca 5 oggetti in casa che contengono una macchina semplice (forbici, rubinetto, rampa, apribottiglie, vite) e usa questa checklist per misurare, calcolare e interpretare il vantaggio meccanico di ciascuno.",
+    "voci": [
+      "Per ogni oggetto identifico il tipo di macchina semplice (leva/piano inclinato/cuneo/vite/carrucola/ruota con asse) e — per le leve — il genere (I, II o III) con la posizione di fulcro, forza e carico",
+      "Misuro con un righello le grandezze necessarie (distanze dal fulcro, diametri, lunghezza e altezza della rampa) e applico la formula corretta: VM = d_forza/d_fulcro o VM = L_rampa/altezza o VM = r_ruota/r_asse",
+      "Esprimo il risultato in parole: 'questa leva moltiplica la forza per X' — non mi limito a scrivere il numero senza interpretarlo",
+      "Spiego perché le pinzette hanno VM < 1 senza pensare che sia un difetto: capisco che alcune macchine semplici amplificano la velocità o la precisione invece della forza",
+      "Calcolo almeno per un oggetto la differenza tra VM teorico (senza attrito) e VM effettivo stimato, tenendo conto del rendimento reale (es. carrucola 85%, vite in legno 30%)",
+      "Nel compito avanzato (500 kg a 4 m di altezza con 10 operai medievali), verifico che i 5.000 N disponibili siano sufficienti per il sistema progettato, tenendo conto del rendimento del 70%"
+    ]
+  },
+  "process": {
+    "titolo": "Il ciclo delle macchine semplici: da Archimede alla gru moderna",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Comprensione del lavoro meccanico e del vantaggio meccanico",
+        "attore": "Lo studente",
+        "domanda": "Archimede disse 'datemi un punto d'appoggio e solleverò il mondo' — i calcoli fisici confermano che è possibile, ma c'è un problema: qual è?",
+        "impatto": "W = F × s mostra che lo stesso lavoro si può fare con forza piccola e distanza grande: moltiplicare la forza per 4 con una leva significa percorrere 4 volte la distanza — il lavoro totale rimane invariato"
+      },
+      {
+        "numero": 2,
+        "titolo": "Classificazione e calcolo del vantaggio meccanico",
+        "attore": "Lo studente",
+        "domanda": "Perché le forbici tagliano il cartone con molta meno fatica se usi la parte vicina al perno invece della punta — e come puoi calcolarlo numericamente prima di fare la prova?",
+        "impatto": "VM = d_forza/d_fulcro: spostando il punto di taglio dal centro al perno, il vantaggio meccanico sale da 1 a 4-5; la stessa logica spiega perché la carriola permette di sollevare 50 kg con le braccia"
+      },
+      {
+        "numero": 3,
+        "titolo": "Applicazione alle varianti: cuneo, vite, piano inclinato",
+        "attore": "Lo studente",
+        "domanda": "Una lama da chef con VM = 100 è molto più efficiente di un'ascia con VM = 5 — ma allora perché non usiamo sempre lame sottilissime per tutto?",
+        "impatto": "Il cuneo (VM = lunghezza/spessore) e la vite (VM = circonferenza_testa/passo) mostrano che il vantaggio meccanico estremo richiede materiali ad alta resistenza: la lama sottile si spezza sotto carichi che l'ascia sopporta"
+      },
+      {
+        "numero": 4,
+        "titolo": "Comprensione del rendimento e dell'attrito",
+        "attore": "Lo studente",
+        "domanda": "Le macchine semplici si scaldano nell'uso: quel calore è energia 'rubata' al lavoro utile — ma dove finisce quell'energia? Sparisce?",
+        "impatto": "η = W_utile / W_speso: il calore non sparisce (conservazione dell'energia), ma non è più disponibile per lavoro meccanico — il secondo principio della termodinamica in azione anche nella leva del barista"
+      },
+      {
+        "numero": 5,
+        "titolo": "Analisi di sistemi composti: bicicletta, cric, escavatore",
+        "attore": "Lo studente",
+        "domanda": "La bicicletta ha un rendimento del 90-95% — è il mezzo di trasporto più efficiente energeticamente mai costruito dall'umanità: quali macchine semplici combinate spiegano questo primato?",
+        "impatto": "Ruota con asse (pedaliera e ruota posteriore) + leva (freno) + rapporto variabile (cambio marcia come sistema di ruote con asse di diametri diversi): capire la bici come sistema composto è capire l'ingegneria meccanica"
+      }
+    ]
+  }
+}

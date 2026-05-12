@@ -313,6 +313,7 @@ function ZonePanel({
   text,
   quizData,
   flashcards,
+  microlearningData,
 }: {
   tabId: string;
   section: { title: string; body: string } | undefined;

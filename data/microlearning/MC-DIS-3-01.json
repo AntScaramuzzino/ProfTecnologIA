@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIS-3-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Dal brief al render: progetta un oggetto per la biblioteca della scuola",
+    "istruzione": "Segui le fasi del processo progettuale nell'ordine corretto. Non aprire Tinkercad o altri strumenti digitali finché non hai completato sketch e proiezioni ortogonali a mano.",
+    "voci": [
+      "Ho scritto il brief di una pagina: descrizione del problema, utente target, vincoli dimensionali (max 3 materiali, compatibile con tavolo 80×160 cm, smontabile per pulizia).",
+      "Ho prodotto almeno 3 sketch del concept a mano libera con annotazioni sulle funzioni, indicando per ognuno quale problema specifico dell'utente risolve.",
+      "Ho scelto la soluzione migliore con motivazione scritta di 3 righe, spiegando perché ho scartato le altre due opzioni.",
+      "Ho disegnato le proiezioni ortogonali quotate dell'oggetto finale (tre viste, scala 1:2 o 1:5) con tutti i tipi di linea corretti e il cartiglio compilato.",
+      "Ho prodotto un render in prospettiva accidentale (due punti di fuga) che mostra l'oggetto nel suo contesto d'uso reale (angolo di tavolo, mani che lo usano).",
+      "Ho scritto la nota sui materiali (2-3 righe): perché quei materiali, come va smaltito l'oggetto a fine vita, e una considerazione sul design for disassembly."
+    ]
+  },
+  "process": {
+    "titolo": "Dal brief al prodotto: le cinque fasi del processo di design thinking",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Empatia — osservare prima di progettare",
+        "attore": "Designer",
+        "domanda": "La sedia Serie 7 di Arne Jacobsen è la più venduta nella storia del design. Prima di disegnarla, cosa ha osservato Jacobsen sul comportamento delle persone sedute?",
+        "impatto": "Ha osservato che la schiena si muove continuamente, non resta ferma. La doppia curvatura del compensato — che segue il movimento del corpo — è la risposta progettuale a quell'osservazione, non una scelta estetica."
+      },
+      {
+        "numero": 2,
+        "titolo": "Definizione — un problema chiaro",
+        "attore": "Designer",
+        "domanda": "Qual è la differenza tra 'la biblioteca ha un problema di gestione spazi' e 'gli studenti non trovano mai un posto libero durante la pausa pranzo'? Quale dei due è un buon enunciato del problema?",
+        "impatto": "Il secondo è specifico, misurabile e centrato sull'utente. Il primo è vago e non indica nessuna direzione progettuale. Un problema ben definito vale già il 50% della soluzione."
+      },
+      {
+        "numero": 3,
+        "titolo": "Ideazione — quantità prima di qualità",
+        "attore": "Designer",
+        "domanda": "Perché il brainstorming visivo (sketch veloci senza valutare) produce risultati migliori del pensare a lungo alla soluzione perfetta prima di disegnare?",
+        "impatto": "Il 90% delle idee generate nel brainstorming vengono scartate. Ma senza quel 90%, non si trova il 10% che funziona. La quantità di idee è il prerequisito della qualità della soluzione."
+      },
+      {
+        "numero": 4,
+        "titolo": "Prototipazione — fisico prima del digitale",
+        "attore": "Designer / prototipista",
+        "domanda": "Ogni scelta formale nell'iPhone 1 (vetro al posto della plastica, bordo in alluminio, zero pulsanti fisici) aveva una giustificazione funzionale precisa. Quale vantaggio funzionale dava il bordo in alluminio?",
+        "impatto": "Il bordo metallico fungeva da antenna, dissipava il calore e resisteva agli urti laterali. La forma comunicava qualità, ma la scelta era prima ingegneristica: forma e funzione erano inseparabili."
+      },
+      {
+        "numero": 5,
+        "titolo": "Test e iterazione — il ciclo non finisce mai",
+        "attore": "Designer / utente",
+        "domanda": "Dopo aver usato il tuo prototipo di cartone per un giorno, hai scoperto un problema che nessun disegno avrebbe mostrato. Qual è il tipo di problema che emerge solo dall'uso fisico?",
+        "impatto": "Ergonomia reale, peso percepito, punti di contatto con le mani, rumori inaspettati, interferenze con oggetti vicini. Nessun disegno, nemmeno il più preciso, sostituisce un'ora di uso in condizioni reali."
+      }
+    ]
+  }
+}

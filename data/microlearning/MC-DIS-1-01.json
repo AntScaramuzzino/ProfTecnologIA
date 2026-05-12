@@ -1,0 +1,58 @@
+{
+  "mc_id": "MC-DIS-1-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Geometra per un giorno: costruzioni con riga e compasso",
+    "istruzione": "Scegli una superficie piana (foglio A4, quaderno, cartoncino) e strumenti reali (matita, righello, compasso). Esegui le costruzioni nell'ordine indicato.",
+    "voci": [
+      "Ho eseguito la costruzione della perpendicolare a una retta in un punto P (Costruzione 1) e ho verificato con la squadra che l'angolo sia 90° ± 1°.",
+      "Ho eseguito la bisettrice di un angolo di 70° (Costruzione 2) e ho misurato i due angoli risultanti con il rapportatore, verificando che siano entrambi 35° ± 1°.",
+      "Ho costruito il triangolo equilatero dato un lato di 6 cm (Costruzione 5) e ho misurato i tre lati con il righello, verificando che siano tutti 6 cm ± 1 mm.",
+      "Ho costruito l'esagono regolare inscritto in una circonferenza di raggio 4 cm (Costruzione 6) e ho verificato che i sei lati siano uguali al raggio (4 cm ± 1 mm).",
+      "Ho usato correttamente almeno quattro tipi di linea nella stessa tavola: continua grossa per i contorni definitivi, continua fine per le linee ausiliarie, mista per gli assi, tratteggiata se presente.",
+      "Ho applicato almeno una delle costruzioni a un oggetto reale: ho disegnato la pianta di un oggetto geometrico con cartiglio (titolo, data, nome, scala)."
+    ]
+  },
+  "process": {
+    "titolo": "Dalle costruzioni geometriche di Euclide all'oggetto progettato: 2400 anni di metodo",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Analisi del problema geometrico",
+        "attore": "Geometra / progettista",
+        "domanda": "Perché la divisione di un segmento in 5 parti uguali con le parallele (metodo di Talete) funziona anche quando le misure non vengono 'tonde' con la divisione aritmetica?",
+        "impatto": "Il teorema di Talete garantisce la proporzionalità geometrica indipendentemente dai valori numerici: se 5 punti equidistanti su una semiretta, le parallele dividono il segmento in 5 parti uguali sempre."
+      },
+      {
+        "numero": 2,
+        "titolo": "Scelta degli strumenti e impostazione del compasso",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Perché la precisione del compasso dipende dall'apertura fissa durante tutta la costruzione, e aprirlo 'a occhio' è inaccettabile nel disegno tecnico?",
+        "impatto": "Ogni millimetro di errore nell'apertura del compasso si propaga in tutta la costruzione. In un esagono regolare, un'apertura imprecisa produce lati diseguali che rendono la figura inutilizzabile come base per un dado meccanico."
+      },
+      {
+        "numero": 3,
+        "titolo": "Esecuzione della costruzione passo a passo",
+        "attore": "Disegnatore tecnico",
+        "domanda": "La costruzione della perpendicolare usa i triangoli congruenti. Puoi spiegare con parole tue perché i triangoli APC e BPC sono congruenti nel caso LLL?",
+        "impatto": "PA = PB (stesso raggio dal punto P), AC = BC (stesso raggio dai punti A e B), PC in comune: tre lati uguali = triangoli congruenti = angoli uguali = 90°. La geometria non mente mai."
+      },
+      {
+        "numero": 4,
+        "titolo": "Verifica del risultato con misura",
+        "attore": "Disegnatore tecnico",
+        "domanda": "Dopo aver costruito un esagono regolare, come verifichi che sia davvero regolare senza dover misurare tutti i 6 lati uno per uno?",
+        "impatto": "Misura le tre diagonali principali (quelle che passano per il centro): devono essere tutte uguali al doppio del raggio. Se le diagonali sono uguali, l'esagono è regolare."
+      },
+      {
+        "numero": 5,
+        "titolo": "Applicazione alla progettazione reale",
+        "attore": "Progettista tecnico",
+        "domanda": "I Romani costruivano archi a tutto sesto usando solo corda e paletti. Come applicavano la costruzione della semicirconferenza senza compasso?",
+        "impatto": "Una corda fissata al centro e tesa al raggio desiderato sostituisce il compasso su grande scala. Il principio geometrico è identico: il costruttore romano di ponti e il disegnatore tecnico moderno usano lo stesso teorema."
+      }
+    ]
+  }
+}
