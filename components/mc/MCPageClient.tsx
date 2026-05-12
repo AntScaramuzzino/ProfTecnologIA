@@ -24,7 +24,7 @@
 import { useMemo, useCallback, useState, useEffect } from "react";
 import { MCNavigator, type NavigatorTab } from "@/components/mc/MCNavigator";
 import { AccordionSection, type AccordionItem } from "@/components/mc/AccordionSection";
-import { LevelTabs, buildLevelTabs, type DigCompLevel } from "@/components/mc/LevelTabs";
+import { LevelTabs, type DigCompLevel } from "@/components/mc/LevelTabs";
 import { CalloutBoxFromText } from "@/components/mc/CalloutBox";
 import { RubricaDrawer } from "@/components/mc/RubricaDrawer";
 import AudioPlayer from "@/components/mc/AudioPlayer";
@@ -32,14 +32,10 @@ import FlippedVideos from "@/components/mc/FlippedVideos";
 import QuizWidget from "@/components/mc/QuizWidget";
 import FlashcardDeck from "@/components/mc/FlashcardDeck";
 import VideoGallery from "@/components/mc/VideoGallery";
-import ChecklistWidget from "@/components/mc/ChecklistWidget";
-import ProcessWidget from "@/components/mc/ProcessWidget";
 import MCVisual from "@/components/MCVisual";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
-import SintesiCornell from "@/components/mc/SintesiCornell";
-import MappaConcettuale from "@/components/mc/MappaConcettuale";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
