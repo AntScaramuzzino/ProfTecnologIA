@@ -38,11 +38,12 @@ const PIPELINE = [
 ];
 
 const ZONE = [
-  { emoji: "⚡", nome: "INNESCA", desc: "QR code audio + podcast narrativo 2–3 min su un oggetto reale. Domanda stimolo che attiva la curiosità.", colore: "#E67E22", bg: "#FEF9E7" },
-  { emoji: "📖", nome: "ESPLORA", desc: "Testo espositivo max 200 parole + infografica. Un concetto, una visual.", colore: "#2980B9", bg: "#EBF5FB" },
-  { emoji: "🔍", nome: "OSSERVA", desc: "Case study su oggetto concreto. Sidebar: Professione del Futuro 2030 + illustrazione simbolica.", colore: "#27AE60", bg: "#E9F7EF" },
-  { emoji: "🔬", nome: "SPERIMENTA", desc: "Attività pratiche differenziate su 3 livelli DigComp: ● Base · ●● Intermedio · ●●● Avanzato.", colore: "#8E44AD", bg: "#F5EEF8" },
-  { emoji: "🌍", nome: "AGISCI", desc: "Scenario autentico → consegna → rubrica di valutazione → badge SDG → domande di metacognizione.", colore: "#16A085", bg: "#E8F8F5" },
+  { emoji: "⚡", nome: "INNESCA", desc: "Hook audio 2–3 min su un oggetto reale (edge-tts Isabella). Domanda stimolo in evidenza. 3 video flipped classroom.", colore: "#E67E22", bg: "#FEF9E7" },
+  { emoji: "📖", nome: "ESPLORA", desc: "Testo espositivo con accordion per le sottosezioni. Galleria visual AI (ai-fotorealistica, mindmap, infografica).", colore: "#2980B9", bg: "#EBF5FB" },
+  { emoji: "🔍", nome: "OSSERVA", desc: "Case study su oggetto concreto. Professione del Futuro 2030 con immagine, testo narrativo e competenze chiave CLIL.", colore: "#27AE60", bg: "#E9F7EF" },
+  { emoji: "🔬", nome: "SPERIMENTA", desc: "Attività pratiche su 3 livelli DigComp selezionabili: ● Base · ●● Intermedio · ●●● Avanzato.", colore: "#8E44AD", bg: "#F5EEF8" },
+  { emoji: "🌍", nome: "AGISCI", desc: "Compito di realtà autentico. Rubrica di valutazione accessibile via drawer sticky. Metacognizione.", colore: "#16A085", bg: "#E8F8F5" },
+  { emoji: "🃏", nome: "RIPASSA", desc: "Processo interattivo (4-7 step), checklist di verifica, quiz 18 domande (6F+6I+6A) con feedback, 18 flashcard.", colore: "#6366F1", bg: "#EEF2FF" },
 ];
 
 const FRAMEWORK = [
@@ -54,11 +55,12 @@ const FRAMEWORK = [
 ];
 
 const TECH_STACK = [
-  { cat: "Sito", items: ["Next.js 16 (App Router, SSG)", "TypeScript", "Tailwind CSS 4", "Netlify (deploy)"] },
-  { cat: "Generazione immagini", items: ["GPT Image 2 via Higgsfield API", "Cinematic Studio 2.5", "Soul V2 — immagini AI"] },
-  { cat: "Audio TTS", items: ["edge-tts 7.2.8", "Voce: it-IT-IsabellaNeural (Microsoft)", "50 MP3 · 51 MB totali"] },
-  { cat: "Knowledge base", items: ["Pinecone brain-tecnologia (9.879 chunk)", "multilingual-e5-large embeddings", "14 libri indicizzati"] },
-  { cat: "AI Generativa", items: ["Claude Sonnet/Opus (testi narrativi)", "GPT Image 2 (infografiche)", "NotebookLM (sintesi bibliografica)"] },
+  { cat: "Sito", items: ["Next.js 16.2.2 (App Router, SSG)", "TypeScript · Tailwind CSS 4", "69 pagine statiche · 0 errori TS"] },
+  { cat: "Deploy", items: ["Vercel (primario) · vercel.json framework null", "Netlify · netlify.toml", "GitHub Pages · Actions workflow auto-deploy"] },
+  { cat: "Generazione immagini", items: ["GPT Image 2 (OpenAI) — gpt_image_2", "4 tipologie: fotorealistica, contesto, professione, mindmap"] },
+  { cat: "Audio TTS", items: ["edge-tts 7.2.8 (Microsoft Neural TTS)", "Voce: it-IT-IsabellaNeural", "50 MP3 con durate reali nel JSON MC"] },
+  { cat: "Knowledge base", items: ["Pinecone brain-tecnologia (9.879 chunk)", "multilingual-e5-large embeddings", "20 libri di Tecnologia indicizzati"] },
+  { cat: "AI Generativa", items: ["Claude Sonnet 4.6 / Opus 4.6 (testi, quiz, microlearning)", "GPT Image 2 (visual didattici)", "NotebookLM (sintesi bibliografica)"] },
   { cat: "Validazione", items: ["Protocollo CARBLE-CDD v1.0", "I.C. Nicotera Costabile, 13/05/2026", "7 criteri D·C·A·R·B·L·E"] },
 ];
 
@@ -84,7 +86,8 @@ export default function ArchitetturaPage() {
           </h1>
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             ProfTecnologIA è un ecosistema didattico integrato: un libro strutturato su micro-competenze,
-            un sistema di 5 agenti AI per la produzione dei contenuti, e un sito per la fruizione digitale.
+            un sistema di 5 agenti AI per la produzione dei contenuti, e un sito Next.js per la fruizione digitale.
+            Ogni MC ha 6 zone di apprendimento, quiz 18 domande, flashcard, microlearning e professione del futuro.
             Questa pagina documenta la struttura del sistema per editori, docenti e ricercatori.
           </p>
         </div>
@@ -97,7 +100,7 @@ export default function ArchitetturaPage() {
               { v: totale.toString(), l: "Micro-competenze" },
               { v: "9", l: "Aree tematiche" },
               { v: "3", l: "Anni di scuola" },
-              { v: "5", l: "Zone per MC" },
+              { v: "6", l: "Zone per MC" },
               { v: "50", l: "Audio hook MP3" },
               { v: "492", l: "Video YouTube" },
             ].map(({ v, l }) => (
@@ -111,8 +114,8 @@ export default function ArchitetturaPage() {
 
         {/* Le 5 zone */}
         <section>
-          <h2 className="mb-2 text-xl font-black text-slate-950">Le 5 zone di ogni MC</h2>
-          <p className="mb-5 text-sm text-slate-500">Struttura fissa e immutabile. Lo studente sa sempre dove si trova.</p>
+          <h2 className="mb-2 text-xl font-black text-slate-950">Le 6 zone di ogni MC</h2>
+          <p className="mb-5 text-sm text-slate-500">Struttura fissa. Lo studente sa sempre dove si trova. Navigazione a tab sticky con colore area.</p>
           <div className="space-y-3">
             {ZONE.map((z, i) => (
               <div key={z.nome} className="flex items-start gap-4 rounded-xl border p-4"
