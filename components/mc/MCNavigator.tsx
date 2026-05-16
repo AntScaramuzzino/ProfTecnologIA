@@ -29,6 +29,7 @@ const DEFAULT_TABS: NavigatorTab[] = [
   { id: "OSSERVA",   label: "OSSERVA",   emoji: "🔍" },
   { id: "SPERIMENTA",label: "SPERIMENTA",emoji: "🔬" },
   { id: "AGISCI",    label: "AGISCI",    emoji: "🌍" },
+  { id: "RIPASSA",   label: "RIPASSA",   emoji: "🃏" },
 ];
 
 export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onForcedTabConsumed, children }: MCNavigatorProps) {
@@ -40,6 +41,22 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
   }, []);
   const navRef = useRef<HTMLDivElement>(null);
   const panelId = useId();
+
+  // WCAG 2.1.1 — keyboard navigation: ArrowLeft/ArrowRight tra i tab (WAI-ARIA Tabs pattern)
+  const handleKeyDown = useCallback((e: React.KeyboardEvent, currentIndex: number) => {
+    let nextIndex: number | null = null;
+    if (e.key === "ArrowRight") nextIndex = (currentIndex + 1) % tabs.length;
+    if (e.key === "ArrowLeft") nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+    if (e.key === "Home") nextIndex = 0;
+    if (e.key === "End") nextIndex = tabs.length - 1;
+    if (nextIndex !== null) {
+      e.preventDefault();
+      const nextTab = tabs[nextIndex];
+      persistTab(nextTab.id);
+      const btn = navRef.current?.querySelector<HTMLElement>(`[data-tab="${nextTab.id}"]`);
+      btn?.focus();
+    }
+  }, [tabs, persistTab]);
 
   // P1.3 — forza navigazione programmatica dall'esterno (ResourcesPanel)
   useEffect(() => {
@@ -85,6 +102,8 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
               aria-selected={isActive}
               data-tab={tab.id}
               onClick={() => persistTab(tab.id)}
+              onKeyDown={(e) => handleKeyDown(e, tabs.indexOf(tab))}
+              tabIndex={isActive ? 0 : -1}
               className={cx(
                 "flex shrink-0 flex-col items-center gap-0 px-2 py-2 text-center",
                 "text-[10px] font-black uppercase tracking-tight transition-colors duration-150",

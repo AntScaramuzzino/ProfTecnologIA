@@ -228,7 +228,9 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
             <button
               key={l}
               onClick={() => setSelectedLevel(l)}
-              className={`rounded-full border px-2.5 py-0.5 text-xs font-medium transition-colors sm:px-3 ${
+              aria-pressed={selectedLevel === l}
+              aria-label={`Livello ${LEVEL_LABELS[l]}`}
+              className={`rounded-full border px-2.5 py-0.5 text-xs font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1 sm:px-3 ${
                 selectedLevel === l
                   ? LEVEL_COLORS[l]
                   : "border-gray-200 bg-white text-gray-500 hover:bg-gray-100"
@@ -266,7 +268,7 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
             )}
             <button
               onClick={handleRestart}
-              className="mt-2 rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition-colors"
+              className="mt-2 rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
             >
               Riprova
             </button>
@@ -356,14 +358,15 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
                 <button
                   onClick={handleConfirm}
                   disabled={!selected}
-                  className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                  aria-disabled={!selected}
+                  className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
                 >
                   Conferma
                 </button>
               ) : (
                 <button
                   onClick={handleNext}
-                  className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition-colors"
+                  className="rounded-lg bg-indigo-600 px-5 py-2 text-sm font-medium text-white hover:bg-indigo-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
                 >
                   {currentQ + 1 >= totalQ ? "Vedi risultati" : "Prossima →"}
                 </button>

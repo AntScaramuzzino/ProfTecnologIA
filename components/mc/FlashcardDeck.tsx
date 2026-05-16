@@ -80,13 +80,15 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
         <div className="flex gap-2">
           <button
             onClick={shuffle}
-            className="rounded-full border border-indigo-200 px-3 py-1 text-xs font-semibold text-indigo-600 hover:bg-indigo-50"
+            aria-label="Rimescola le flashcard in ordine casuale"
+            className="rounded-full border border-indigo-200 px-3 py-1 text-xs font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1"
           >
             🔀 Rimescola
           </button>
           <button
             onClick={reset}
-            className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-500 hover:bg-slate-100"
+            aria-label="Ricomincia dal principio"
+            className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-1"
           >
             Ricomincia
           </button>
@@ -107,9 +109,10 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
             >
               {/* Fronte — sempre visibile */}
               <button
-                className="w-full cursor-pointer px-4 py-4 text-left"
+                className="w-full cursor-pointer px-4 py-4 text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-indigo-500 rounded-t-xl"
                 onClick={() => toggle(cardIdx)}
                 aria-expanded={isRevealed}
+                aria-label={`${isRevealed ? "Chiudi" : "Apri"} risposta: ${card.front}`}
               >
                 <div className="flex items-start justify-between gap-2">
                   <div className="min-w-0 flex-1">
@@ -129,30 +132,32 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
               {/* Retro — espandibile */}
               {isRevealed && (
                 <div className="border-t border-slate-100 px-4 pb-4 pt-3">
-                  <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-400">Risposta</p>
+                  <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500">Risposta</p>
                   <p className="text-sm leading-6 text-slate-700">{card.back}</p>
 
                   {/* Azioni */}
-                  <div className="mt-3 flex gap-2">
+                  <div className="mt-3 flex gap-2" role="group" aria-label="Segna questa card">
                     <button
                       onClick={() => mark(cardIdx, "known")}
-                      className={`flex-1 rounded-lg border py-1.5 text-xs font-bold transition-colors ${
+                      aria-pressed={cardStatus === "known"}
+                      className={`flex-1 rounded-lg border py-1.5 text-xs font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 ${
                         cardStatus === "known"
                           ? "border-emerald-400 bg-emerald-100 text-emerald-800"
                           : "border-emerald-200 text-emerald-700 hover:bg-emerald-50"
                       }`}
                     >
-                      ✓ La so
+                      {cardStatus === "known" ? "✓ Nota" : "✓ La so"}
                     </button>
                     <button
                       onClick={() => mark(cardIdx, "review")}
-                      className={`flex-1 rounded-lg border py-1.5 text-xs font-bold transition-colors ${
+                      aria-pressed={cardStatus === "review"}
+                      className={`flex-1 rounded-lg border py-1.5 text-xs font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-1 ${
                         cardStatus === "review"
                           ? "border-rose-400 bg-rose-100 text-rose-800"
                           : "border-rose-200 text-rose-600 hover:bg-rose-50"
                       }`}
                     >
-                      Ripassare
+                      {cardStatus === "review" ? "⟳ Da ripassare" : "Ripassare"}
                     </button>
                   </div>
                 </div>
@@ -172,7 +177,8 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
           </p>
           <button
             onClick={reset}
-            className="mt-3 rounded-full bg-indigo-600 px-5 py-2 text-sm font-bold text-white hover:bg-indigo-700"
+            aria-label="Ricomincia tutte le flashcard"
+            className="mt-3 rounded-full bg-indigo-600 px-5 py-2 text-sm font-bold text-white hover:bg-indigo-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
           >
             Ripeti
           </button>
