@@ -92,6 +92,14 @@ export default function HomePage() {
                 >
                   Inizia dalla 1ª media →
                 </Link>
+                <a
+                  href="https://eduwiki-tecnologia.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-blue-300 bg-blue-50 px-5 py-3 text-sm font-bold text-blue-700 hover:bg-blue-100 hover:border-blue-400"
+                >
+                  EduWiki didattico →
+                </a>
               </div>
             </div>
 
@@ -218,6 +226,14 @@ export default function HomePage() {
                   🌐 www.proftecnologia.it
                 </a>
                 <a
+                  href="https://eduwiki-tecnologia.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-blue-700 px-4 py-2 text-xs font-bold text-blue-400 hover:bg-blue-900"
+                >
+                  📚 EduWiki didattico
+                </a>
+                <a
                   href="mailto:antonio.scaramuzzino@coopinrete.it"
                   className="rounded-full border border-slate-700 px-4 py-2 text-xs font-bold text-slate-400 hover:border-slate-500"
                 >
@@ -289,6 +305,15 @@ export default function HomePage() {
               <Link href="/architettura" className="hover:text-slate-300">Architettura</Link>
               <span className="text-slate-700">·</span>
               <Link href="/credits" className="hover:text-slate-300">Credits</Link>
+              <span className="text-slate-700">·</span>
+              <a
+                href="https://eduwiki-tecnologia.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-400 text-blue-500"
+              >
+                EduWiki
+              </a>
               <span className="text-slate-700">·</span>
               <a
                 href="https://github.com/AntScaramuzzino/ProfTecnologIA"
