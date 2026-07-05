@@ -84,7 +84,8 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
         role="tablist"
         aria-label="Sezioni della micro-competenza"
         className={cx(
-          "sticky top-0 z-20 flex overflow-x-auto bg-white/95 backdrop-blur-sm",
+          /* top-14 = 56 px — offset per il SiteHeader sticky (h ≈ 56 px) */
+          "sticky top-14 z-20 flex overflow-x-auto bg-white/95 backdrop-blur-sm",
           "border-b border-slate-200 shadow-sm",
           // nasconde la scrollbar ma mantiene la funzionalità
           "scrollbar-none [-ms-overflow-style:none] [scrollbar-width:none]",

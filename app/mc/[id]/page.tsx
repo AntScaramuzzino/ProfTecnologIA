@@ -103,9 +103,15 @@ export default async function MCPage({ params }: Props) {
 
       {/* ── Compito di realtà — sempre visibile sopra il navigator ── */}
       <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
-        <section className="rounded-lg border border-amber-200 bg-[#fff7dd] p-4 sm:p-5">
-          <p className="text-sm font-black text-amber-800">Compito di realtà</p>
-          <p className="mt-2 text-base font-bold leading-7 text-amber-950 sm:mt-3 sm:text-lg sm:leading-9">
+        <section
+          className="rounded-lg border border-amber-200 bg-[#fff7dd] p-4 sm:p-5"
+          style={{ borderTopColor: areaHex ?? "#f59e0b", borderTopWidth: 3 }}
+        >
+          <div className="mb-2 flex items-center gap-2">
+            <span className="text-lg leading-none" aria-hidden="true">🎯</span>
+            <p className="text-sm font-black uppercase tracking-wide text-amber-800">Compito di realtà</p>
+          </div>
+          <p className="text-base font-bold leading-7 text-amber-950 sm:text-lg sm:leading-9">
             {mc.compito_realta}
           </p>
         </section>
@@ -197,14 +203,23 @@ export default async function MCPage({ params }: Props) {
             </section>
           )}
 
-          {/* Asset app previsti */}
-          <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="mb-3 text-sm font-black text-slate-500">Asset app previsti</p>
-            <div className="space-y-3">
-              <AssetBox title="Quiz" body={mc.outputApp.quiz} />
-              <AssetBox title="Microlearning" body={mc.outputApp.microlearning} />
-              <AssetBox title="Visual" body={mc.outputApp.visual} />
-            </div>
+          {/* Asset app previsti — collassato (info tecniche per l'autore) */}
+          <section className="rounded-lg border border-slate-200 bg-white shadow-sm">
+            <details className="group">
+              <summary className="flex cursor-pointer select-none items-center justify-between px-5 py-3 text-sm font-black text-slate-400 transition-colors hover:text-slate-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
+                <span>Asset app previsti</span>
+                <svg className="h-3.5 w-3.5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </summary>
+              <div className="border-t border-slate-100 px-5 pb-5 pt-4">
+                <div className="space-y-3">
+                  <AssetBox title="Quiz" body={mc.outputApp.quiz} />
+                  <AssetBox title="Microlearning" body={mc.outputApp.microlearning} />
+                  <AssetBox title="Visual" body={mc.outputApp.visual} />
+                </div>
+              </div>
+            </details>
           </section>
         </aside>
       </div>

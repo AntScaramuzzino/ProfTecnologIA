@@ -109,7 +109,7 @@ export default function HomePage() {
                 <Link
                   key={anno}
                   href={`/anno/${anno}`}
-                  className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md sm:p-6"
+                  className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:p-6"
                 >
                   <div className="text-3xl font-black text-slate-950 sm:text-4xl">{anno}<span className="text-lg font-bold text-slate-400">ª</span></div>
                   <div className="mt-0.5 text-xs font-semibold text-slate-500">media</div>
@@ -148,7 +148,7 @@ export default function HomePage() {
               key={code}
               href={`/area/${code}`}
               className={cx(
-                "group rounded-xl border bg-gradient-to-br p-4 transition hover:-translate-y-0.5 hover:shadow-md",
+                "group rounded-xl border bg-gradient-to-br p-4 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2",
                 areaAccent[code]
               )}
             >
@@ -285,27 +285,26 @@ export default function HomePage() {
 
       {/* ── FOOTER ───────────────────────────────────────────────────────── */}
       <footer className="border-t border-slate-800 bg-slate-950">
-        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
-              <span className="text-sm font-black text-emerald-400">ProfTecnologIA</span>
-              <span className="rounded-full border border-emerald-800 px-2 py-0.5 font-mono text-xs font-bold text-emerald-500">
-                v0.1
-              </span>
+        <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+
+            {/* Riga brand + copyright */}
+            <div className="flex items-center gap-2 text-xs text-slate-500">
+              <span className="font-black text-emerald-400">ProfTecnologIA</span>
               <span className="text-slate-700">·</span>
-              <span className="text-xs text-slate-500">
-                © 2026 Prof. Ing. Antonio Scaramuzzino
-              </span>
+              <span>© 2026 Prof. Ing. Antonio Scaramuzzino</span>
+              <span className="text-slate-700">·</span>
+              <span className="text-slate-600">IN 2025 · DigComp 3.0</span>
             </div>
-            <div className="flex items-center gap-4 text-xs text-slate-500">
-              <span>Allineato alle IN 2025 · D.M. n. 221/2025</span>
-              <span className="text-slate-700">·</span>
-              <span>DigComp 3.0</span>
-              <span className="text-slate-700">·</span>
-              <Link href="/architettura" className="hover:text-slate-300">Architettura</Link>
-              <span className="text-slate-700">·</span>
-              <Link href="/credits" className="hover:text-slate-300">Credits</Link>
-              <span className="text-slate-700">·</span>
+
+            {/* Riga link navigazione */}
+            <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+              <Link href="/architettura" className="transition-colors hover:text-slate-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-400">Architettura</Link>
+              <span className="text-slate-700" aria-hidden="true">·</span>
+              <Link href="/glossario" className="transition-colors hover:text-slate-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-400">Glossario</Link>
+              <span className="text-slate-700" aria-hidden="true">·</span>
+              <Link href="/credits" className="transition-colors hover:text-slate-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-400">Credits</Link>
+              <span className="text-slate-700" aria-hidden="true">·</span>
               <a
                 href="https://eduwiki-tecnologia.vercel.app"
                 target="_blank"
@@ -319,7 +318,7 @@ export default function HomePage() {
                 href="https://github.com/AntScaramuzzino/ProfTecnologIA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-slate-300"
+                className="transition-colors hover:text-slate-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-400"
               >
                 GitHub
               </a>

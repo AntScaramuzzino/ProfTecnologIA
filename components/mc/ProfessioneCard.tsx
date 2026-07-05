@@ -1,5 +1,7 @@
 "use client";
 
+import CompetenzaTag from "@/components/mc/CompetenzaTag";
+
 /**
  * ProfessioneCard — Professione del Futuro 2030
  *
@@ -109,20 +111,18 @@ export default function ProfessioneCard({ professione, professioneText, mcId, ar
           {professione.competenze_chiave && professione.competenze_chiave.length > 0 && (
             <div>
               <p className="mb-2 text-xs font-black uppercase tracking-wider text-slate-400">
-                Competenze chiave
+                Competenze chiave{" "}
+                <span className="font-normal normal-case text-slate-400">
+                  — clicca per vedere la definizione
+                </span>
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {professione.competenze_chiave.map((comp) => (
-                  <span
+                  <CompetenzaTag
                     key={comp}
-                    className="rounded-full border px-2.5 py-0.5 text-xs font-semibold text-slate-700"
-                    style={{
-                      borderColor: areaHex ? `${areaHex}55` : "#d1d5db",
-                      backgroundColor: areaHex ? `${areaHex}0D` : "#f8fafc",
-                    }}
-                  >
-                    {comp}
-                  </span>
+                    competenza={comp}
+                    areaHex={areaHex}
+                  />
                 ))}
               </div>
             </div>

@@ -11,9 +11,10 @@ export default function MCCard({ mc }: { mc: MC }) {
   return (
     <Link
       href={`/mc/${mc.id}`}
-      className="group grid overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md"
+      className="group grid overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
     >
-      <div className={cx("relative h-32 overflow-hidden bg-gradient-to-br sm:h-40", areaAccent[mc.area] ?? "from-slate-100 to-white")}>
+      {/* Immagine — aspect 16/9 fisso per coerenza tra larghezze */}
+      <div className={cx("relative aspect-video overflow-hidden bg-gradient-to-br", areaAccent[mc.area] ?? "from-slate-100 to-white")}>
         {visual ? (
           <img src={visual.src} alt="" className="h-full w-full object-cover opacity-90 transition duration-300 group-hover:scale-[1.03]" />
         ) : (
@@ -23,6 +24,8 @@ export default function MCCard({ mc }: { mc: MC }) {
           {area?.emoji} {mc.area}
         </div>
       </div>
+
+      {/* Contenuto testuale */}
       <div className="p-4">
         <div className="mb-2 flex items-center justify-between gap-2">
           <span className="font-mono text-xs text-slate-400">{mc.id}</span>
@@ -30,7 +33,7 @@ export default function MCCard({ mc }: { mc: MC }) {
             {level}
           </span>
         </div>
-        <h3 className="text-sm font-bold leading-snug text-slate-900 group-hover:text-sky-800">
+        <h3 className="text-sm font-bold leading-snug text-slate-900 group-hover:text-emerald-800">
           {mc.titolo}
         </h3>
         <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">

@@ -18,6 +18,8 @@ export default function SiteFooter() {
         <div className="flex items-center gap-3">
           <Link href="/" className="hover:text-slate-700">Home</Link>
           <span>·</span>
+          <Link href="/glossario" className="hover:text-slate-700">Glossario</Link>
+          <span>·</span>
           <Link href="/credits" className="hover:text-slate-700">Credits</Link>
           <span>·</span>
           <a
