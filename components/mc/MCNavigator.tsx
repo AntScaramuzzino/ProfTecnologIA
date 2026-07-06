@@ -133,7 +133,9 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
         id={`${panelId}-panel`}
         aria-labelledby={`tab-${activeId}`}
         tabIndex={0}
-        className="min-h-[40vh] focus-visible:outline-none"
+        /* scroll-mt-28 = 112 px — accounts for sticky SiteHeader (~56px) + this tab bar (~48px)
+           so keyboard-focus / scroll-into-view never hides the first panel element */
+        className="min-h-[40vh] scroll-mt-28 focus-visible:outline-none"
       >
         {children(activeId)}
       </div>

@@ -121,7 +121,12 @@ export default async function MCPage({ params }: Props) {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-0 px-0 sm:gap-6 sm:px-6 sm:pb-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-8">
 
         {/* Colonna sinistra: MCPageClient con navigator a 5 tab */}
-        <div className="min-w-0 overflow-hidden rounded-lg border-0 bg-white sm:border sm:border-slate-200 sm:shadow-sm">
+        {/* [overflow:clip] instead of overflow-hidden: clips visually (preserves rounded corners)
+            but does NOT create a scroll container, so the MCNavigator sticky tab bar
+            (top-14) continues to stick relative to the viewport, not this div.
+            overflow:hidden would trap sticky inside this container and cause the
+            tab-panel's first element (AudioPlayer) to render partially cut off. */}
+        <div className="min-w-0 [overflow:clip] rounded-lg border-0 bg-white sm:border sm:border-slate-200 sm:shadow-sm">
           <MCPageClient
             mc={mc}
             areaHex={areaHex}
