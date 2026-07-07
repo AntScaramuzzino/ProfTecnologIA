@@ -44,6 +44,8 @@ const ZONE = [
   { emoji: "🔬", nome: "SPERIMENTA", desc: "Attività pratiche su 3 livelli DigComp selezionabili: ● Base · ●● Intermedio · ●●● Avanzato.", colore: "#8E44AD", bg: "#F5EEF8" },
   { emoji: "🌍", nome: "AGISCI", desc: "Compito di realtà autentico. Rubrica di valutazione accessibile via drawer sticky. Metacognizione.", colore: "#16A085", bg: "#E8F8F5" },
   { emoji: "🃏", nome: "RIPASSA", desc: "Processo interattivo (4-7 step), checklist di verifica, quiz 18 domande (6F+6I+6A) con feedback, 18 flashcard.", colore: "#6366F1", bg: "#EEF2FF" },
+  { emoji: "💼", nome: "PROFESSIONI", desc: "2 Professioni del Futuro 2030: immagine AI dedicata, testo narrativo da OSSERVA, lista competenze chiave con tag colore per ciascuna.", colore: "#0E7490", bg: "#ECFEFF" },
+  { emoji: "🌐", nome: "CLIL", desc: "4 termini chiave in italiano e inglese con pronuncia IPA, esempio d'uso in contesto e link semantico alla MC.", colore: "#B45309", bg: "#FFFBEB" },
 ];
 
 const FRAMEWORK = [
@@ -87,8 +89,9 @@ export default function ArchitetturaPage() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             ProfTecnologIA è un ecosistema didattico integrato: un libro strutturato su micro-competenze,
             un sistema di 5 agenti AI per la produzione dei contenuti, e un sito Next.js per la fruizione digitale.
-            Ogni MC ha 6 zone di apprendimento, 2 professioni del futuro 2030, quiz 18 domande, 18 flashcard,
-            microlearning Process + Checklist, e un glossario di 297 competenze in 13 macro-categorie.
+            Ogni MC ha 8 tab nel navigator: 6 zone di apprendimento (INNESCA → RIPASSA) + 2 tab supplementari
+            (PROFESSIONI con 2 professioni 2030, CLIL con 4 termini bilingue). Più quiz 18 domande,
+            18 flashcard, microlearning, e glossario 297 competenze in 13 macro-categorie.
             Questa pagina documenta la struttura del sistema per editori, docenti e ricercatori.
           </p>
         </div>
@@ -101,7 +104,7 @@ export default function ArchitetturaPage() {
               { v: totale.toString(), l: "Micro-competenze" },
               { v: "9", l: "Aree tematiche" },
               { v: "3", l: "Anni di scuola" },
-              { v: "6", l: "Zone per MC" },
+              { v: "8", l: "Tab per MC" },
               { v: "50", l: "Audio hook MP3" },
               { v: "297", l: "Competenze 2030" },
             ].map(({ v, l }) => (
@@ -115,8 +118,8 @@ export default function ArchitetturaPage() {
 
         {/* Le 5 zone */}
         <section>
-          <h2 className="mb-2 text-xl font-black text-slate-950">Le 6 zone di ogni MC</h2>
-          <p className="mb-5 text-sm text-slate-500">Struttura fissa. Lo studente sa sempre dove si trova. Navigazione a tab sticky con colore area.</p>
+          <h2 className="mb-2 text-xl font-black text-slate-950">Gli 8 tab del navigator per ogni MC</h2>
+          <p className="mb-5 text-sm text-slate-500">6 zone di apprendimento + 2 tab supplementari (PROFESSIONI, CLIL). Navigator sticky con colore area. Lo studente sa sempre dove si trova.</p>
           <div className="space-y-3">
             {ZONE.map((z, i) => (
               <div key={z.nome} className="flex items-start gap-4 rounded-xl border p-4"
