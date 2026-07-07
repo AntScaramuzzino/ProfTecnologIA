@@ -3,652 +3,598 @@
   "versione": "2.0",
   "domande": [
     {
-      "id": 1,
+      "id": "1",
       "livello": "F",
-      "domanda": "Secondo il GDPR, quale di questi è un dato personale?",
+      "domanda": "Secondo il GDPR, quale di queste informazioni è considerata un dato personale?",
       "opzioni": [
         {
           "id": "a",
           "testo": "Solo il nome e il cognome di una persona",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR definisce dato personale in modo molto ampio: qualsiasi informazione che, da sola o combinata con altre, può identificare una persona fisica.",
-          "riferimento": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+          "feedback": "Non è corretto. Il GDPR definisce dato personale in modo molto ampio: qualsiasi informazione che, da sola o combinata con altre, può identificare una persona fisica. Nome e cognome sono solo uno degli esempi più ovvi."
         },
         {
           "id": "b",
-          "testo": "L'indirizzo IP del dispositivo, il comportamento di navigazione, la geolocalizzazione GPS",
+          "testo": "L'indirizzo IP del dispositivo",
           "corretto": true,
-          "feedback": "Esatto! Il GDPR include come dati personali anche indirizzi IP, cookie che identificano il browser, dati di geolocalizzazione, dati biometrici e dati comportamentali online."
+          "feedback": "Esatto. L'indirizzo IP è un dato personale secondo il GDPR: identifica il dispositivo e, associato ad altri dati, identifica la persona che lo usa. Lo stesso vale per geolocalizzazione, cookie, dati biometrici e comportamenti di navigazione."
         },
         {
           "id": "c",
-          "testo": "Solo i documenti di identità come passaporto o carta d'identità",
+          "testo": "Solo i dati sui documenti di identità fisici (passaporto, carta d'identità)",
           "corretto": false,
-          "feedback": "Non è corretto. I documenti di identità sono dati personali, ma la definizione GDPR è molto più ampia e include dati digitali come IP, cookie e comportamenti di navigazione.",
-          "riferimento": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+          "feedback": "Non è corretto. Il GDPR si applica specificamente anche ai dati digitali. I documenti fisici sono solo una categoria. L'IP, i cookie, la geolocalizzazione e i comportamenti online sono dati personali a tutti gli effetti."
         },
         {
           "id": "d",
-          "testo": "Nessun dato digitale è personale perché non è fisico",
+          "testo": "Nessun dato digitale è personale perché non è associato a un documento ufficiale",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR si applica specificamente ai dati digitali. I dati digitali possono identificare una persona con la stessa precisione (o di più) dei dati fisici.",
-          "riferimento": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+          "feedback": "Non è corretto. Il GDPR è nato proprio per proteggere i dati digitali. Un documento ufficiale non è necessario: basta che il dato possa identificare una persona, anche indirettamente o combinato con altri dati."
         }
       ],
-      "spiegazione": "Il GDPR (Regolamento UE 2016/679) definisce dato personale come 'qualsiasi informazione che, da sola o combinata con altre, può identificare una persona fisica'. Questa definizione include: indirizzo IP, cookie, geolocalizzazione, dati biometrici, dati sanitari, dati comportamentali online.",
-      "riferimento_principale": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+      "spiegazione": "Il GDPR (Regolamento UE 2016/679, applicato da maggio 2018) definisce dato personale come 'qualsiasi informazione riguardante una persona fisica identificata o identificabile'. La definizione include: indirizzo IP, cookie, geolocalizzazione GPS, dati biometrici, dati sanitari, comportamenti di navigazione. Anche dati apparentemente innocui possono diventare personali se combinati con altri.",
+      "riferimento_principale": "Cos'è un dato personale — e perché sembra ovvio ma non lo è"
     },
     {
-      "id": 2,
+      "id": "2",
       "livello": "F",
-      "domanda": "Cosa sono i 'cookie di profilazione' in un sito web?",
+      "domanda": "Cosa sono i cookie di profilazione e come differiscono dai cookie tecnici?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "File che salvano le preferenze tecniche del sito (es. il fatto che sei loggato)",
+          "testo": "I cookie di profilazione migliorano la velocità del sito; i cookie tecnici lo rallentano",
           "corretto": false,
-          "feedback": "Non è corretto. Quelli sono i cookie tecnici (necessari). I cookie di profilazione tracciano il tuo comportamento per costruire un profilo pubblicitario.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. La velocità del sito è migliorata dalla cache del browser, non dai cookie. I cookie tecnici sono necessari per il funzionamento (es. mantenerti loggato); i cookie di profilazione tracciano il comportamento per pubblicità."
         },
         {
           "id": "b",
-          "testo": "File che tracciano il comportamento su più siti per costruire un profilo delle preferenze e mostrare pubblicità mirata",
+          "testo": "I cookie tecnici sono necessari per far funzionare il sito (es. sessione di login); i cookie di profilazione tracciano il comportamento per costruire un profilo pubblicitario",
           "corretto": true,
-          "feedback": "Esatto! I cookie di profilazione (spesso di terze parti) seguono la navigazione su molti siti diversi per costruire un profilo dei tuoi interessi e mostrare pubblicità personalizzata."
+          "feedback": "Esatto. I cookie tecnici sono indispensabili (senza di essi il sito non funziona). I cookie di profilazione — spesso di terze parti — seguono la tua navigazione su molti siti diversi per costruire un profilo delle tue preferenze."
         },
         {
           "id": "c",
-          "testo": "File che migliorano la velocità di caricamento delle pagine web",
+          "testo": "I cookie di profilazione proteggono il sito dagli hacker; i cookie tecnici raccolgono statistiche",
           "corretto": false,
-          "feedback": "Non è corretto. La velocità di caricamento è migliorata dalla cache del browser, non dai cookie di profilazione.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. La protezione dagli hacker è compito dei sistemi di sicurezza lato server, non dei cookie. I cookie di profilazione servono per la pubblicità mirata, non per la sicurezza."
         },
         {
           "id": "d",
-          "testo": "File che proteggono il sito dagli attacchi informatici",
+          "testo": "Sono la stessa cosa: tutti i cookie raccolgono dati personali allo stesso modo",
           "corretto": false,
-          "feedback": "Non è corretto. La protezione dagli attacchi è compito dei sistemi di sicurezza lato server, non dei cookie.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. Esistono almeno tre categorie distinte di cookie: tecnici (necessari), analitici (statistiche anonimizzate) e di profilazione (tracking pubblicitario). La differenza è importante sia tecnicamente sia legalmente."
         }
       ],
-      "spiegazione": "I cookie di profilazione (spesso cookie di terze parti) tracciano il tuo comportamento su molti siti diversi. Il sito di notizie che stai leggendo può contenere cookie di 20 aziende pubblicitarie diverse che ti seguono ovunque sul web, costruendo un profilo per mostrare pubblicità personalizzata.",
-      "riferimento_principale": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+      "spiegazione": "I cookie sono file salvati dal browser. I cookie tecnici permettono il funzionamento base (mantenerti loggato, salvare il carrello). I cookie analitici raccolgono statistiche di navigazione. I cookie di profilazione — spesso di terze parti — tracciano il comportamento su molti siti diversi per costruire un profilo e vendere pubblicità. Il GDPR richiede consenso esplicito solo per analitici e di profilazione.",
+      "riferimento_principale": "Come vengono raccolti i tuoi dati: i meccanismi tecnici"
     },
     {
-      "id": 3,
+      "id": "3",
       "livello": "F",
-      "domanda": "Cosa significa 'diritto all'oblio' nel GDPR?",
+      "domanda": "Cosa permette di fare il 'diritto all'oblio' previsto dall'Art. 17 del GDPR?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il diritto a non ricordare le password e a reimpostarle liberamente",
+          "testo": "Dimenticare la password e reimpostarla senza conseguenze legali",
           "corretto": false,
-          "feedback": "Non è corretto. Il diritto all'oblio riguarda la cancellazione dei propri dati personali, non la gestione delle password.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Il diritto all'oblio riguarda i dati personali conservati da aziende e piattaforme, non la gestione delle password. È uno dei sei diritti fondamentali del GDPR."
         },
         {
           "id": "b",
-          "testo": "Il diritto di richiedere la cancellazione dei propri dati personali da una piattaforma",
+          "testo": "Richiedere la cancellazione dei propri dati personali da una piattaforma, con alcune limitazioni",
           "corretto": true,
-          "feedback": "Esatto! L'Art. 17 del GDPR garantisce il diritto alla cancellazione (diritto all'oblio): in certi casi puoi chiedere che i tuoi dati vengano eliminati, anche se non è assoluto."
+          "feedback": "Esatto. Il diritto all'oblio (Art. 17 GDPR) permette di chiedere la cancellazione dei propri dati. Non è assoluto: le piattaforme possono rifiutare se hanno motivi legali per conservarli (es. obblighi fiscali). Hanno 30 giorni per rispondere."
         },
         {
           "id": "c",
-          "testo": "Il diritto di accedere ai dati raccolti su di te da qualsiasi azienda",
+          "testo": "Accedere a tutti i dati che una piattaforma ha raccolto su di te",
           "corretto": false,
-          "feedback": "Non è corretto. Accedere ai propri dati è il diritto di accesso (Art. 15). Il diritto all'oblio (Art. 17) riguarda la cancellazione dei dati.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Accedere ai propri dati è il diritto di accesso (Art. 15), non il diritto all'oblio. Il diritto all'oblio (Art. 17) riguarda la cancellazione — due diritti distinti con procedure diverse."
         },
         {
           "id": "d",
-          "testo": "Il diritto a usare internet in modo anonimo senza registrarsi",
+          "testo": "Navigare su internet in modo completamente anonimo senza tracce",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR non garantisce l'anonimato su internet. Il diritto all'oblio riguarda la richiesta di cancellazione di dati già raccolti.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Il GDPR non garantisce l'anonimato nella navigazione. Il diritto all'oblio riguarda la cancellazione di dati già raccolti su di te da piattaforme specifiche."
         }
       ],
-      "spiegazione": "Il diritto all'oblio (Art. 17 GDPR) permette di richiedere la cancellazione dei propri dati personali da una piattaforma. Non è assoluto: le piattaforme possono rifiutare se hanno un motivo legale per conservarli. Le piattaforme hanno 30 giorni di tempo per rispondere alle richieste.",
-      "riferimento_principale": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+      "spiegazione": "Il diritto all'oblio (Art. 17 GDPR) consente di chiedere a una piattaforma di cancellare i propri dati personali. Non è assoluto: la richiesta può essere rifiutata se i dati sono necessari per adempiere a obblighi legali, per interesse pubblico, o per difendere diritti in sede legale. Le piattaforme hanno 30 giorni per rispondere. Nella pratica, esercitare questo diritto su contenuti già ampiamente diffusi è molto più complicato.",
+      "riferimento_principale": "Il GDPR semplificato: i tuoi diritti"
     },
     {
-      "id": 4,
+      "id": "4",
       "livello": "F",
-      "domanda": "Cosa fa il 'pixel di tracciamento' (tracking pixel) incorporato in un'email?",
+      "domanda": "Cos'è il GDPR e da quando è in applicazione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Migliora la qualità grafica delle immagini nell'email",
+          "testo": "Un sistema di valutazione dei siti web creato da Google nel 2010",
           "corretto": false,
-          "feedback": "Non è corretto. Il tracking pixel è un'immagine invisibile 1×1, non una tecnologia per migliorare la qualità delle immagini.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. Il GDPR non è un sistema di Google. È un regolamento dell'Unione Europea sulla protezione dei dati personali. Google è soggetta al GDPR come qualsiasi altra azienda che tratta dati di cittadini europei."
         },
         {
           "id": "b",
-          "testo": "Informa il mittente che hai aperto l'email, comunicando il tuo IP, il browser, il dispositivo e l'ora di apertura",
+          "testo": "Il Regolamento Generale sulla Protezione dei Dati dell'Unione Europea (2016/679), applicato dal 25 maggio 2018",
           "corretto": true,
-          "feedback": "Esatto! Un'immagine invisibile 1×1 pixel, quando si carica, invia al server del mittente: il tuo indirizzo IP, browser, sistema operativo e l'ora esatta in cui hai aperto l'email."
+          "feedback": "Esatto. GDPR = General Data Protection Regulation, Regolamento UE 2016/679. Adottato nel 2016 e applicato dal 25 maggio 2018 in tutti i paesi dell'Unione Europea. È uno dei sistemi di protezione dei dati più stringenti al mondo."
         },
         {
           "id": "c",
-          "testo": "Protegge l'email dai virus e dai malware",
+          "testo": "Una legge italiana del 2022 che regola l'uso dei social media da parte dei minorenni",
           "corretto": false,
-          "feedback": "Non è corretto. I sistemi antivirus sono separati. Il tracking pixel è uno strumento di tracciamento, non di protezione.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. Il GDPR è un regolamento europeo, non una legge italiana. Si applica in tutti i 27 paesi dell'Unione Europea dall'anno 2018, non dal 2022."
         },
         {
           "id": "d",
-          "testo": "Permette di leggere l'email anche senza connessione internet",
+          "testo": "Un accordo volontario tra le grandi aziende tecnologiche per tutelare la privacy degli utenti",
           "corretto": false,
-          "feedback": "Non è corretto. Il tracking pixel funziona solo quando si è connessi a internet (perché deve caricare l'immagine dal server del mittente).",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. Il GDPR è un regolamento vincolante con forza di legge — non un accordo volontario. Le aziende che lo violano ricevono sanzioni fino al 4% del fatturato annuo globale."
         }
       ],
-      "spiegazione": "Il pixel di tracciamento è un'immagine invisibile 1×1 pixel incorporata in una pagina web o in un'email. Quando la carichi, il server del mittente riceve: il tuo indirizzo IP, il browser, il sistema operativo, e l'ora esatta in cui hai aperto l'email. È come un segnale automatico invisibile.",
-      "riferimento_principale": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+      "spiegazione": "Il GDPR (General Data Protection Regulation) è il Regolamento UE 2016/679, in applicazione dal 25 maggio 2018. È vincolante in tutti i paesi dell'Unione Europea e ha effetto extraterritoriale: si applica a qualsiasi organizzazione nel mondo che raccoglie dati di cittadini europei. Le sanzioni possono arrivare al 4% del fatturato annuo globale — questo spiega perché anche Google e Meta debbano rispettarlo.",
+      "riferimento_principale": "Il GDPR semplificato: i tuoi diritti"
     },
     {
-      "id": 5,
+      "id": "5",
       "livello": "F",
-      "domanda": "Cosa si intende per 'cyberbullismo' secondo la legge italiana?",
+      "domanda": "Quale caratteristica distingue il cyberbullismo da un normale litigio tra compagni?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Qualsiasi uso di internet da parte di minorenni senza supervisione",
+          "testo": "Il cyberbullismo avviene solo su Instagram; i litigi normali avvengono di persona",
           "corretto": false,
-          "feedback": "Non è corretto. Il cyberbullismo non riguarda l'uso di internet in sé, ma comportamenti aggressivi specifici tramite strumenti digitali.",
-          "riferimento": "📖 ESPLORA — Cyberbullismo e hate speech: definizioni e conseguenze"
+          "feedback": "Non è corretto. Il cyberbullismo può avvenire su qualsiasi piattaforma digitale — messaggistica, giochi online, email, commenti. La piattaforma specifica non definisce il cyberbullismo."
         },
         {
           "id": "b",
-          "testo": "Comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali verso una persona",
+          "testo": "Il cyberbullismo è ripetuto, intenzionale e implica uno squilibrio di potere tra chi agisce e chi subisce",
           "corretto": true,
-          "feedback": "Esatto! Il cyberbullismo ha tre caratteristiche: è ripetuto (non un singolo episodio), è intenzionale (non accidentale), e implica uno squilibrio di potere tra chi agisce e chi subisce."
+          "feedback": "Esatto. La Legge n. 71/2017 definisce il cyberbullismo attraverso tre criteri: è ripetuto (non un episodio isolato), è intenzionale (non accidentale), e c'è uno squilibrio di potere (es. molti contro uno, o anonimato)."
         },
         {
           "id": "c",
-          "testo": "Solo i commenti negativi pubblicati sui social media",
+          "testo": "Il cyberbullismo è un crimine penale solo se commesso da adulti; tra minorenni non è reato",
           "corretto": false,
-          "feedback": "Non è corretto. I commenti negativi sono solo una forma di cyberbullismo. Include anche molestie dirette, esclusione sistematica, diffusione di immagini imbarazzanti, stalking digitale.",
-          "riferimento": "📖 ESPLORA — Cyberbullismo e hate speech: definizioni e conseguenze"
+          "feedback": "Non è corretto. La Legge n. 71/2017 si applica specificamente al cyberbullismo tra minorenni. Prevede strumenti di tutela anche senza procedimento penale: le vittime possono chiedere la rimozione dei contenuti direttamente alle piattaforme."
         },
         {
           "id": "d",
-          "testo": "Un virus informatico che prende il controllo dei social media",
+          "testo": "Il cyberbullismo esiste solo se la vittima lo denuncia alle forze dell'ordine",
           "corretto": false,
-          "feedback": "Non è corretto. Il cyberbullismo è un comportamento umano, non un virus informatico.",
-          "riferimento": "📖 ESPLORA — Cyberbullismo e hate speech: definizioni e conseguenze"
+          "feedback": "Non è corretto. La Legge n. 71/2017 permette alla vittima minorenne di chiedere la rimozione dei contenuti direttamente alle piattaforme, e al questore di ammonire l'autore, senza necessità di una denuncia penale formale."
         }
       ],
-      "spiegazione": "Il cyberbullismo (Legge n. 71/2017) è comportamento aggressivo, intenzionale e ripetuto tramite strumenti digitali. Le caratteristiche sono: ripetitività (non un singolo episodio), intenzionalità (non accidentale), squilibrio di potere. Forme: molestie dirette, esclusione online, diffusione di immagini imbarazzanti, stalking digitale.",
-      "riferimento_principale": "📖 ESPLORA — Cyberbullismo e hate speech: definizioni e conseguenze"
+      "spiegazione": "Il cyberbullismo (Legge n. 71/2017) è comportamento aggressivo, intenzionale e ripetuto tramite strumenti digitali verso una persona. I tre criteri che lo distinguono da un conflitto normale: (1) ripetitività — non un singolo episodio; (2) intenzionalità — deliberato, non accidentale; (3) squilibrio di potere — l'autore ha un vantaggio (anonimato, numero, influenza) rispetto alla vittima.",
+      "riferimento_principale": "Cyberbullismo e hate speech: definizioni e conseguenze"
     },
     {
-      "id": 6,
+      "id": "6",
       "livello": "F",
-      "domanda": "A quanti anni si può creare un account sui social media in Italia senza il consenso dei genitori?",
+      "domanda": "La modalità privata (o 'in incognito') del browser — cosa fa e cosa NON fa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "12 anni",
+          "testo": "Ti rende completamente anonimo su internet, nascondendo la tua identità a tutti i siti",
           "corretto": false,
-          "feedback": "Non è corretto. La soglia in Italia è 14 anni, non 12.",
-          "riferimento": "📖 ESPLORA — Identità digitale vs identità reale"
+          "feedback": "Non è corretto. La modalità privata non ti rende anonimo. Il tuo indirizzo IP è ancora visibile ai siti che visiti, al tuo provider internet, e alla rete scolastica o aziendale."
         },
         {
           "id": "b",
-          "testo": "14 anni",
+          "testo": "Non salva cronologia, cookie e password sul tuo dispositivo — ma il tuo IP rimane visibile ai siti e al provider internet",
           "corretto": true,
-          "feedback": "Esatto! Il GDPR stabilisce che i minori di 14 anni non possono creare account sui social media senza il consenso dei genitori. In Italia la soglia è fissata a 14 anni."
+          "feedback": "Esatto. La modalità privata protegge solo la privacy locale (sul tuo dispositivo): nessun altro che usa quel computer vedrà la cronologia. Ma non cifra il traffico: il provider e i siti visitati vedono comunque la tua attività."
         },
         {
           "id": "c",
-          "testo": "16 anni",
+          "testo": "Cifra tutto il traffico internet come una VPN, proteggendoti dagli hacker",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR dà agli stati membri la possibilità di fissare la soglia tra 13 e 16 anni. In Italia la soglia è 14 anni.",
-          "riferimento": "📖 ESPLORA — Identità digitale vs identità reale"
+          "feedback": "Non è corretto. La modalità privata non cifra il traffico di rete. Una VPN (Virtual Private Network) fa questo. La modalità privata è semplicemente una sessione del browser che non salva dati localmente."
         },
         {
           "id": "d",
-          "testo": "18 anni",
+          "testo": "Blocca tutti i cookie, inclusi quelli tecnici, rendendo inaccessibili i siti che richiedono login",
           "corretto": false,
-          "feedback": "Non è corretto. La soglia per i social media in Italia è 14 anni (con il consenso dei genitori sotto quella età), non 18.",
-          "riferimento": "📖 ESPLORA — Identità digitale vs identità reale"
+          "feedback": "Non è corretto. La modalità privata non blocca tutti i cookie durante la sessione — li accetta ma non li salva dopo la chiusura della finestra. Puoi fare login normalmente, ma al termine della sessione il cookie viene eliminato."
         }
       ],
-      "spiegazione": "Il GDPR stabilisce che i minori di 14 anni non possono creare account sui social media senza il consenso dei genitori. La soglia può variare tra 13 e 16 anni nei diversi paesi UE: in Italia è fissata a 14 anni. I social network richiedono l'età alla registrazione, ma non la verificano davvero.",
-      "riferimento_principale": "📖 ESPLORA — Identità digitale vs identità reale"
+      "spiegazione": "La modalità privata del browser impedisce solo al browser di salvare localmente cronologia, cookie e password sulla sessione corrente. Non cifra il traffico di rete: il tuo indirizzo IP è ancora visibile ai siti visitati, al provider internet (ISP), e alla rete scolastica o aziendale. Per una protezione più completa esistono strumenti diversi come VPN o Tor — con caratteristiche e limiti propri.",
+      "riferimento_principale": "Errore comune sulla modalità privata"
     },
     {
-      "id": 7,
+      "id": "7",
       "livello": "I",
-      "domanda": "Come funziona la pubblicità personalizzata tramite Real-Time Bidding? Cosa succede nei 50 millisecondi prima che tu veda un annuncio?",
+      "domanda": "Cos'è il browser fingerprinting e cosa lo rende diverso dai cookie?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Google sceglie manualmente l'annuncio più adatto in base alle tue ricerche precedenti",
+          "testo": "È la funzione di riconoscimento delle impronte digitali fisiche per sbloccare il telefono — simile ai cookie perché salva un file biometrico",
           "corretto": false,
-          "feedback": "Non è corretto. Il processo è automatizzato, non manuale. Avviene in 50 millisecondi tramite un'asta tra molte aziende pubblicitarie.",
-          "riferimento": "📖 ESPLORA — Tracciamento online: come funziona la pubblicità personalizzata"
+          "feedback": "Non è corretto. Il browser fingerprinting non riguarda le impronte digitali fisiche. È una tecnica di identificazione del browser attraverso le sue caratteristiche tecniche, senza salvare nessun file sul dispositivo."
         },
         {
           "id": "b",
-          "testo": "Diverse aziende pubblicitarie fanno un'asta automatica in circa 50 ms per mostrare la loro pubblicità nel tuo browser, basandosi sul tuo profilo costruito dai cookie",
+          "testo": "Identifica il browser attraverso la combinazione di caratteristiche tecniche (OS, risoluzione, font, plugin) senza salvare alcun file — diversamente dai cookie che richiedono un file",
           "corretto": true,
-          "feedback": "Esatto! Il Real-Time Bidding è un'asta automatizzata che avviene in ~50 millisecondi tra reti pubblicitarie diverse. Chi offre di più per il tuo profilo vince e mostra il suo annuncio."
+          "feedback": "Esatto. Il fingerprinting analizza dozzine di caratteristiche del tuo browser e dispositivo. La combinazione è statisticamente unica o quasi. Eliminando i cookie non lo blocchi: non c'è nessun file da eliminare."
         },
         {
           "id": "c",
-          "testo": "Il sito web che visiti sceglie gli annunci in base al suo argomento principale",
+          "testo": "È un virus che copia i cookie da un browser e li trasmette ad altri siti senza consenso",
           "corretto": false,
-          "feedback": "Non è corretto. Gli annunci nel Real-Time Bidding si basano sul tuo profilo personale costruito dai cookie, non sull'argomento del sito che stai visitando.",
-          "riferimento": "📖 ESPLORA — Tracciamento online: come funziona la pubblicità personalizzata"
+          "feedback": "Non è corretto. Il browser fingerprinting non è un virus e non copia cookie. È una tecnica legale (anche se controversa) usata da molti siti per identificare i visitatori senza cookie."
         },
         {
           "id": "d",
-          "testo": "Hai scelto tu le categorie di pubblicità preferite quando hai creato l'account Google",
+          "testo": "È identico ai cookie di profilazione: entrambi salvano un file nel browser con le informazioni dell'utente",
           "corretto": false,
-          "feedback": "Non è corretto. Il sistema di targeting non si basa su preferenze esplicitamente dichiarate, ma sul comportamento implicito tracciato dai cookie.",
-          "riferimento": "📖 ESPLORA — Tracciamento online: come funziona la pubblicità personalizzata"
+          "feedback": "Non è corretto. Questa è la differenza chiave: i cookie salvano un file; il fingerprinting no. Questo rende il fingerprinting molto più difficile da bloccare, perché non c'è nulla da cancellare sul dispositivo."
         }
       ],
-      "spiegazione": "Il Real-Time Bidding funziona così: quando apri una pagina, in ~50 millisecondi molte aziende pubblicitarie fanno un'asta automatica per mostrare la loro pubblicità nel tuo browser. Vince chi offre di più per il tuo profilo. Il profilo è costruito dai cookie di terze parti che ti seguono su molti siti diversi.",
-      "riferimento_principale": "📖 ESPLORA — Tracciamento online: come funziona la pubblicità personalizzata"
+      "spiegazione": "Il browser fingerprinting identifica il browser attraverso la combinazione di caratteristiche tecniche: browser e versione, sistema operativo, risoluzione schermo, font installati, plugin, lingua, fuso orario, scheda grafica. Questa combinazione è unica o quasi per ogni dispositivo. Diversamente dai cookie, non richiede nessun file salvato: cancellare la cronologia o i cookie non blocca il fingerprinting.",
+      "riferimento_principale": "Come vengono raccolti i tuoi dati: i meccanismi tecnici"
     },
     {
-      "id": 8,
+      "id": "8",
       "livello": "I",
-      "domanda": "Cos'è il 'browser fingerprinting'? Come differisce dai cookie?",
+      "domanda": "Quale diritto del GDPR ti permette di usare Google Takeout per scaricare tutti i dati che Google ha su di te?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "È una funzione di sicurezza che verifica l'impronta digitale del dito per accedere al sito",
+          "testo": "Il diritto all'oblio (Art. 17) — per eliminare tutti i dati di Google",
           "corretto": false,
-          "feedback": "Non è corretto. Il browser fingerprinting non riguarda l'impronta digitale fisica. È una tecnica di identificazione del browser tramite le sue caratteristiche tecniche.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. Il diritto all'oblio (Art. 17) è il diritto di CANCELLARE i dati. Google Takeout serve per SCARICARE (ottenere una copia) dei dati — che è il diritto di accesso e portabilità."
         },
         {
           "id": "b",
-          "testo": "È l'identificazione del browser tramite la combinazione di caratteristiche tecniche (OS, font, risoluzione) senza salvare nessun file sul dispositivo, a differenza dei cookie",
+          "testo": "Il diritto di accesso (Art. 15) — per sapere quali dati Google ha raccolto e riceverne copia",
           "corretto": true,
-          "feedback": "Esatto! Il browser fingerprinting non salva file. Identifica il browser attraverso dozzine di caratteristiche (browser, OS, risoluzione, font installati, fuso orario) — la combinazione è unica."
+          "feedback": "Esatto. L'Art. 15 GDPR garantisce il diritto di accesso: sapere quali dati ha raccolto su di te e richiederne copia. Google Takeout è lo strumento pratico per esercitare questo diritto: scarichi email, ricerche, posizioni, video guardati su YouTube e molto altro."
         },
         {
           "id": "c",
-          "testo": "È un virus che copia i cookie da un browser e li trasmette ad altri siti",
+          "testo": "Il diritto di opposizione (Art. 21) — per opporsi all'uso dei tuoi dati per il marketing",
           "corretto": false,
-          "feedback": "Non è corretto. Il browser fingerprinting non è un virus e non copia cookie. È una tecnica legale (anche se controversa) di identificazione dell'utente.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. Il diritto di opposizione (Art. 21) riguarda il blocco dell'uso dei dati per marketing diretto — non il download dei dati. Google Takeout esercita il diritto di accesso (Art. 15)."
         },
         {
           "id": "d",
-          "testo": "È la funzione che ricorda le password salvate nel browser",
+          "testo": "Il diritto relativo a decisioni automatizzate (Art. 22) — per capire come gli algoritmi Google ti classificano",
           "corretto": false,
-          "feedback": "Non è corretto. Le password salvate sono gestite dal gestore di password del browser. Il fingerprinting è una tecnica di tracciamento basata sulle caratteristiche tecniche del browser.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. L'Art. 22 riguarda il diritto a una revisione umana delle decisioni automatizzate significative. Google Takeout scarica i dati raccolti su di te — esercitando il diritto di accesso (Art. 15)."
         }
       ],
-      "spiegazione": "Il browser fingerprinting identifica il browser attraverso la combinazione di caratteristiche tecniche: tipo e versione del browser, sistema operativo, risoluzione dello schermo, font installati, plugin, lingua, fuso orario. Questa combinazione è unica o quasi. Diversamente dai cookie, non richiede nessun file salvato sul dispositivo.",
-      "riferimento_principale": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+      "spiegazione": "L'Art. 15 GDPR garantisce il diritto di accesso: puoi richiedere a qualsiasi organizzazione che tratta i tuoi dati di sapere quali dati ha, perché li usa, con chi li condivide, e di riceverne copia. Google Takeout (takeout.google.com) è lo strumento di Google per esercitare questo diritto: permette di scaricare email, ricerche, cronologia YouTube, posizioni GPS, contatti. I file scaricati rivelano spesso quanto dati vengano raccolti.",
+      "riferimento_principale": "Il GDPR semplificato: i tuoi diritti"
     },
     {
-      "id": 9,
+      "id": "9",
       "livello": "I",
-      "domanda": "Lo scandalo Cambridge Analytica è importante perché mostra come i dati Facebook possano essere usati. Quante persone sono state coinvolte e come?",
+      "domanda": "Lo scandalo Cambridge Analytica: come sono stati raccolti i dati di circa 87 milioni di profili se solo 270.000 persone avevano installato l'app?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Circa 270.000 persone che avevano installato l'app — solo i loro dati diretti",
+          "testo": "Cambridge Analytica aveva hackerato i server di Facebook rubando i dati",
           "corretto": false,
-          "feedback": "Non è corretto. L'app raccoglieva anche i dati degli amici degli utenti, moltiplicando enormemente il numero di persone coinvolte.",
-          "riferimento": "📖 ESPLORA — Lo scandalo Cambridge Analytica: come funzionava"
+          "feedback": "Non è corretto. Non si trattò di un hack. Facebook consentiva legalmente alle app di raccogliere anche i dati degli amici degli utenti che le installavano — senza che quegli amici avessero dato consenso."
         },
         {
           "id": "b",
-          "testo": "Circa 87 milioni di persone: 270.000 utenti dell'app più i loro amici Facebook che non avevano dato alcun consenso",
+          "testo": "Le policy di Facebook dell'epoca permettevano alle app di raccogliere i dati degli amici degli utenti senza il loro consenso: 270.000 utenti × ~300 amici = ~87 milioni di profili",
           "corretto": true,
-          "feedback": "Esatto! 270.000 utenti diretti × ~300 amici ciascuno = circa 87 milioni di profili. All'epoca le policy Facebook permettevano alle app di raccogliere anche i dati degli amici."
+          "feedback": "Esatto. All'epoca Facebook permetteva alle app di raccogliere non solo i dati dell'utente che le installava, ma anche quelli di tutti i suoi amici. 270.000 utenti diretti × media ~300 amici = ~87 milioni di profili, senza che quegli amici avessero mai acconsentito."
         },
         {
           "id": "c",
-          "testo": "Solo Mark Zuckerberg e i dirigenti di Facebook erano a conoscenza del problema",
+          "testo": "Cambridge Analytica aveva comprato i dati direttamente da Facebook con un contratto regolare",
           "corretto": false,
-          "feedback": "Non è corretto. Lo scandalo riguardava milioni di utenti comuni le cui informazioni erano state cedute a Cambridge Analytica per targettizzazione politica.",
-          "riferimento": "📖 ESPLORA — Lo scandalo Cambridge Analytica: come funzionava"
+          "feedback": "Non è corretto. I dati furono raccolti tramite un'app esterna (un quiz di personalità). Non fu un acquisto diretto da Facebook: fu uno sfruttamento delle API di Facebook che all'epoca consentivano l'accesso ai dati degli amici."
         },
         {
           "id": "d",
-          "testo": "Solo le persone che avevano interagito con annunci politici su Facebook",
+          "testo": "Gli utenti avevano condiviso volontariamente i propri dati su Facebook, che erano quindi pubblici",
           "corretto": false,
-          "feedback": "Non è corretto. I dati erano stati raccolti da un'app apparentemente innocua (un quiz di personalità), non attraverso interazioni con annunci politici.",
-          "riferimento": "📖 ESPLORA — Lo scandalo Cambridge Analytica: come funzionava"
+          "feedback": "Non è corretto. I dati degli amici non erano pubblici: erano informazioni del profilo personale. Il punto è che le API di Facebook permettevano alle app di accedervi senza che quegli amici avessero dato consenso specifico."
         }
       ],
-      "spiegazione": "Un'app (un quiz di personalità) raccolta dati da 270.000 utenti. All'epoca, le policy Facebook permettevano alle app di raccogliere anche i dati di tutti gli amici degli utenti — senza il loro consenso. 270.000 × ~300 amici = circa 87 milioni di profili. Questi dati furono usati per costruire modelli psicologici di elettori per campagne politiche.",
-      "riferimento_principale": "📖 ESPLORA — Lo scandalo Cambridge Analytica: come funzionava"
+      "spiegazione": "Cambridge Analytica usò un'app ('thisisyourdigitallife', un quiz di personalità) che raccoglieva dati dagli utenti di Facebook. Le policy di Facebook del 2014 permettevano alle app di raccogliere anche i dati degli amici degli utenti che le installavano — senza consenso di quegli amici. 270.000 utenti × media ~300 amici = ~87 milioni di profili. Questi dati furono usati per costruire modelli psicologici degli elettori americani e targetizzare messaggi politici personalizzati.",
+      "riferimento_principale": "Lo scandalo Cambridge Analytica: come funzionava"
     },
     {
-      "id": 10,
+      "id": "10",
       "livello": "I",
-      "domanda": "Cosa significa 'diritto alla portabilità' dei dati previsto dall'Art. 20 del GDPR?",
+      "domanda": "Cosa succede nei circa 50 millisecondi che passano mentre la pagina web sta caricando, prima che tu veda un annuncio pubblicitario?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il diritto di usare lo stesso account su più dispositivi diversi",
+          "testo": "Google seleziona manualmente l'annuncio più adatto in base alla tua ultima ricerca",
           "corretto": false,
-          "feedback": "Non è corretto. Il diritto alla portabilità non riguarda l'accesso multi-dispositivo, ma la possibilità di ottenere i propri dati in un formato trasferibile.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Il processo è completamente automatizzato, non manuale. Avviene in ~50 millisecondi — nessun essere umano potrebbe farlo in quel tempo."
         },
         {
           "id": "b",
-          "testo": "Il diritto di ricevere i propri dati in un formato leggibile e di trasferirli a un'altra piattaforma",
+          "testo": "Si svolge un'asta automatica (Real-Time Bidding) tra centinaia di inserzionisti che offrono per mostrarti il loro annuncio basandosi sul tuo profilo",
           "corretto": true,
-          "feedback": "Esatto! Se vuoi passare da un servizio a un altro, puoi portare i tuoi dati con te. Google Takeout è un esempio concreto: scarichi tutti i tuoi dati in formato leggibile."
+          "feedback": "Esatto. Il Real-Time Bidding è un'asta lampo: in ~50ms centinaia di reti pubblicitarie accedono al tuo profilo (costruito dai cookie) e fanno offerte automatiche. Chi offre di più vince e mostra il suo annuncio."
         },
         {
           "id": "c",
-          "testo": "Il diritto di portare il proprio smartphone all'estero senza restrizioni",
+          "testo": "Il sito web che stai visitando sceglie l'annuncio più coerente con il suo argomento",
           "corretto": false,
-          "feedback": "Non è corretto. Il diritto alla portabilità dei dati riguarda i dati digitali personali, non il diritto fisico di portare dispositivi in viaggio.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Nel Real-Time Bidding, l'annuncio non si basa sull'argomento del sito ma sul profilo dell'utente. Lo stesso sito può mostrare annunci completamente diversi a utenti diversi."
         },
         {
           "id": "d",
-          "testo": "Il diritto di portare i propri dati nella sede fisica dell'azienda per la verifica",
+          "testo": "Il browser carica un database locale di annunci salvati in precedenza e ne sceglie uno a caso",
           "corretto": false,
-          "feedback": "Non è corretto. Il diritto alla portabilità riguarda la ricezione dei dati in formato digitale trasferibile, non una verifica fisica.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Non esiste un database locale di annunci nel browser. Il Real-Time Bidding avviene su server remoti in tempo reale — non localmente."
         }
       ],
-      "spiegazione": "Il diritto alla portabilità (Art. 20 GDPR) garantisce il diritto di ricevere i propri dati in un formato leggibile e di trasferirli a un'altra piattaforma. Se vuoi cambiare servizio, puoi portare i tuoi dati con te. Google Takeout permette di scaricare tutto quello che Google ha su di te in pochi clic.",
-      "riferimento_principale": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+      "spiegazione": "Il Real-Time Bidding (RTB) è il sistema che sta dietro alla pubblicità personalizzata: in ~50 millisecondi (mentre la pagina carica) si svolge un'asta automatica tra centinaia di reti pubblicitarie. Ognuna ha accesso al tuo profilo (costruito dai cookie di terze parti) e fa un'offerta automatica per mostrarti il proprio annuncio. Vince chi offre di più per quel profilo in quel momento.",
+      "riferimento_principale": "Tracciamento online: come funziona la pubblicità personalizzata"
     },
     {
-      "id": 11,
+      "id": "11",
       "livello": "I",
-      "domanda": "Perché la modalità privata del browser NON protegge la privacy rispetto al proprio provider internet (ISP)?",
+      "domanda": "La Legge n. 71/2017 sul cyberbullismo: cosa può fare concretamente una vittima minorenne senza aspettare un processo penale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la modalità privata richiede internet, che passa sempre dal provider",
+          "testo": "Niente: deve aspettare la maggiore età per sporgere denuncia formale alle forze dell'ordine",
           "corretto": false,
-          "feedback": "Non è corretto (anche se la connessione passa dal provider). Il punto è che la modalità privata non cifra il traffico verso il provider — il provider vede i siti visitati.",
-          "riferimento": "🔍 OSSERVA — Errore comune"
+          "feedback": "Non è corretto. La Legge n. 71/2017 è nata proprio per dare strumenti rapidi alle vittime minorenni senza dover attendere un processo penale, che è lento e non sempre applicabile."
         },
         {
           "id": "b",
-          "testo": "Perché la modalità privata impedisce solo al browser di salvare la cronologia localmente, ma non nasconde il traffico di rete al provider",
+          "testo": "Può chiedere direttamente alle piattaforme la rimozione dei contenuti; il questore può ammonire l'autore senza denuncia penale formale",
           "corretto": true,
-          "feedback": "Esatto! La modalità privata impedisce al browser di salvare la cronologia sul tuo dispositivo. Non cifra il traffico verso il provider internet, che vede comunque quali siti stai visitando."
+          "feedback": "Esatto. La legge prevede due strumenti rapidi: (1) la vittima minorenne (o un genitore) può chiedere direttamente alla piattaforma la rimozione dei contenuti entro 24 ore; (2) il questore può emettere un'ammonizione verso l'autore senza procedimento penale."
         },
         {
           "id": "c",
-          "testo": "Perché la modalità privata usa un server proxy lento che rallenta la connessione",
+          "testo": "Può bloccare l'autore sui social media — questa è l'unica tutela prevista dalla legge",
           "corretto": false,
-          "feedback": "Non è corretto. La modalità privata non usa proxy e non rallenta la connessione. È semplicemente una modalità del browser che non salva la cronologia localmente.",
-          "riferimento": "🔍 OSSERVA — Errore comune"
+          "feedback": "Non è corretto. Bloccare l'autore è una misura personale, non uno strumento legale. La Legge n. 71/2017 prevede strumenti più efficaci: richiesta di rimozione alle piattaforme e ammonizione del questore."
         },
         {
           "id": "d",
-          "testo": "Perché la modalità privata è solo per i browser commerciali, non per i browser open source",
+          "testo": "Può pubblicare i nomi degli autori online in risposta — la legge protegge il diritto di difendersi",
           "corretto": false,
-          "feedback": "Non è corretto. La modalità privata (o in incognito) è disponibile su tutti i principali browser, sia commerciali sia open source.",
-          "riferimento": "🔍 OSSERVA — Errore comune"
+          "feedback": "Non è corretto. Pubblicare nomi altrui potrebbe configurare a sua volta diffamazione. La legge offre strumenti di tutela formali — rimozione contenuti e ammonizione — non autorizza azioni ritorsive."
         }
       ],
-      "spiegazione": "La modalità privata del browser impedisce solo al browser di salvare cronologia, cookie e password sul dispositivo locale. Non cifra il traffico di rete: il provider internet (ISP), la rete scolastica o aziendale, e i siti visitati vedono comunque la tua attività attraverso il tuo indirizzo IP.",
-      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+      "spiegazione": "La Legge n. 71/2017 prevede procedure rapide per le vittime minorenni: (1) la vittima o un genitore può segnalare i contenuti alla piattaforma, che ha 24 ore per rispondere (48 in casi complessi); (2) il questore — su richiesta della vittima — può convocare e ammonire l'autore, senza avviare un processo penale formale. L'ammonizione è un avvertimento ufficiale che crea un precedente in caso di recidiva.",
+      "riferimento_principale": "Cyberbullismo e hate speech: definizioni e conseguenze"
     },
     {
-      "id": 12,
+      "id": "12",
       "livello": "I",
-      "domanda": "Perché il GDPR si applica anche a Google, Facebook e TikTok, pur avendo sede fuori dall'Europa?",
+      "domanda": "Quale categoria di dati costituisce la 'zona grigia' più pericolosa dell'identità digitale — apparentemente privata ma spesso accessibile a molti?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché queste aziende hanno uffici fisici in almeno un paese europeo",
+          "testo": "I dati di pagamento (numero carta di credito) — ovviamente sensibili ma protetti dalle banche",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR si applica non per la presenza fisica in Europa, ma perché trattano dati di cittadini europei.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. I dati di pagamento sono sensibili e generalmente protetti da standard di sicurezza specifici (PCI-DSS). La 'zona grigia' riguarda dati che sembrano privati ma non lo sono."
         },
         {
           "id": "b",
-          "testo": "Perché il GDPR si applica a qualsiasi organizzazione che raccoglie o tratta dati di cittadini europei, indipendentemente dalla sede",
+          "testo": "La lista degli amici, le foto con geolocalizzazione e i commenti in gruppi 'chiusi' — sembrano privati ma sono accessibili a molti",
           "corretto": true,
-          "feedback": "Esatto! Il GDPR ha effetto extraterritoriale: qualsiasi azienda del mondo che raccoglie dati di cittadini europei deve rispettarlo, pena sanzioni significative."
+          "feedback": "Esatto. I gruppi 'chiusi' su Facebook possono avere migliaia di membri. Le foto con geolocalizzazione rivelano abitudini, luoghi frequentati, domicilio. La lista degli amici può rivelare affiliazioni politiche o religiose."
         },
         {
           "id": "c",
-          "testo": "Perché queste aziende hanno firmato accordi volontari con l'Unione Europea",
+          "testo": "Il nome utente e la foto del profilo — pubblici per definizione",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR è un regolamento vincolante, non dipende da accordi volontari. Si applica per legge a chiunque tratti dati di cittadini europei.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Nome utente e foto del profilo sono consapevolmente pubblici — non sono 'zona grigia'. La zona grigia riguarda dati che si crede siano privati ma in realtà sono accessibili a molte persone."
         },
         {
           "id": "d",
-          "testo": "Non si applica: solo le leggi nazionali italiane si applicano a queste aziende",
+          "testo": "I messaggi privati in chat — completamente al sicuro perché cifrati end-to-end",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR è un regolamento europeo con effetto extraterritoriale. Facebook ha già pagato miliardi di euro di sanzioni per violazioni del GDPR.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Non tutti i servizi di messaggistica usano la cifratura end-to-end, e anche quando la usano i metadati (chi ha scritto a chi, quando, da dove) rimangono spesso accessibili. Inoltre i messaggi possono essere salvati dagli interlocutori."
         }
       ],
-      "spiegazione": "Il GDPR ha effetto extraterritoriale: si applica a qualsiasi organizzazione nel mondo che raccoglie o tratta dati di cittadini europei, indipendentemente da dove ha la propria sede. Google, Facebook/Meta, Amazon, TikTok devono rispettare il GDPR. Facebook ha pagato una multa di 1,2 miliardi di euro per violazioni nel 2023.",
-      "riferimento_principale": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+      "spiegazione": "La zona grigia dell'identità digitale include dati che sembrano privati ma non lo sono: gruppi Facebook 'chiusi' con migliaia di membri, foto con geolocalizzazione integrata (EXIF), commenti in community online, elenco degli amici (che può rivelare appartenenze politiche o religiose), reazioni e like visibili ad altri. Questi dati, combinati, costruiscono un profilo molto dettagliato anche senza accesso diretto ai messaggi privati.",
+      "riferimento_principale": "Identità digitale vs identità reale"
     },
     {
-      "id": 13,
+      "id": "13",
       "livello": "A",
-      "domanda": "La combinazione di dati apparentemente innocui può rivelare informazioni molto sensibili. Dai un esempio concreto che il testo usa per spiegare questo concetto.",
+      "domanda": "Il D.M. 183/2024 (Traguardo D2) afferma che la privacy è un diritto fondamentale, non solo una preferenza personale. Quale argomento supporta meglio questa posizione?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il nome di una persona unito al cognome può rivelare la nazionalità",
+          "testo": "Perché le persone stanno più tranquille sapendo che i loro dati sono al sicuro",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo usa esempi più sofisticati: la sequenza di siti visitati che rivela una condizione di salute, o gli orari di attività online che rivelano se sei a casa o no.",
-          "riferimento": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+          "feedback": "Non è corretto. Il benessere soggettivo non è la base del diritto. La privacy è un diritto fondamentale perché tutela libertà concrete: di pensiero, di associazione, di voto — senza le quali la democrazia non funziona."
         },
         {
           "id": "b",
-          "testo": "La sequenza di siti visitati in un pomeriggio può rivelare la propria condizione di salute; gli orari di attività online possono rivelare se sei a casa o no",
+          "testo": "Perché è sancita dalla Carta dei Diritti UE (Art. 8), tutela la libertà di pensiero e associazione, e — come mostra Cambridge Analytica — la sua violazione può influenzare elezioni",
           "corretto": true,
-          "feedback": "Esatto! Il testo mostra come dati 'innocui' combinati rivelino molto: siti visitati → condizione di salute; orari di connessione → presenza in casa; musica ascoltata → umore e preferenze politiche."
+          "feedback": "Esatto. La privacy non è solo comfort personale: è un pilastro della democrazia. Senza privacy, non c'è libertà di pensiero, associazione o voto. Cambridge Analytica ha dimostrato che la raccolta massiva di dati può influenzare il comportamento elettorale di milioni di persone."
         },
         {
           "id": "c",
-          "testo": "Il numero di foto caricate sui social rivela l'età della persona",
+          "testo": "Perché le aziende che violano la privacy devono pagare multe elevate — e le multe fanno paura",
           "corretto": false,
-          "feedback": "Non è corretto. Il numero di foto non rivela necessariamente l'età. Il testo usa esempi più sofisticati sulla combinazione di dati comportamentali.",
-          "riferimento": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+          "feedback": "Non è corretto. Le sanzioni sono un meccanismo di enforcement, non la ragione per cui la privacy è un diritto. La ragione è più profonda: la privacy protegge le condizioni di possibilità della democrazia stessa."
         },
         {
           "id": "d",
-          "testo": "Il colore preferito scelto nel profilo può rivelare l'orientamento politico",
+          "testo": "Perché i dati personali hanno un valore economico elevato sul mercato pubblicitario",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo non fa questo esempio. Gli esempi riguardano dati comportamentali (siti visitati, orari di attività, musica ascoltata).",
-          "riferimento": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+          "feedback": "Non è corretto. Il valore economico dei dati descrive il problema, non il fondamento del diritto. La privacy è un diritto fondamentale per ragioni politiche e democratiche, non per ragioni di mercato."
         }
       ],
-      "spiegazione": "Il testo mostra come la combinazione di dati apparentemente innocui riveli molto: la sequenza di siti visitati in un pomeriggio può rivelare una condizione di salute; gli orari di attività online possono rivelare se sei a casa; il tipo di musica ascoltata può essere usato per inferire umore e preferenze politiche. I dati isolati sembrano innocui; combinati diventano rivelatori.",
-      "riferimento_principale": "📖 ESPLORA — Cos'è un dato personale — e perché sembra ovvio ma non lo è"
+      "spiegazione": "L'Art. 8 della Carta dei Diritti Fondamentali dell'UE sancisce la protezione dei dati personali come diritto fondamentale. Il D.M. 183/2024 Traguardo D2 chiede di comprenderne le implicazioni: la privacy non è solo riservatezza individuale — protegge la libertà di pensiero (sapere di essere osservati cambia il comportamento), di associazione, e di voto (Cambridge Analytica: 87 milioni di profili usati per messaggi politici personalizzati). La violazione della privacy di massa può alterare processi democratici.",
+      "riferimento_principale": "Educazione Civica digitale — Traguardo D2"
     },
     {
-      "id": 14,
+      "id": "14",
       "livello": "A",
-      "domanda": "Un'azienda usa un sistema AI per le decisioni di assunzione, addestrato sui dati storici delle assunzioni passate. Quale diritto GDPR si applica se il sistema rifiuta automaticamente la candidatura senza revisione umana?",
+      "domanda": "Il caso Cambridge Analytica mostra una connessione diretta tra raccolta massiva di dati personali e democrazia. Quale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il diritto di accesso (Art. 15) — per vedere quali dati l'azienda ha raccolto su di te",
+          "testo": "Che Facebook ha violato la legge americana sulle donazioni politiche finanziando direttamente i candidati",
           "corretto": false,
-          "feedback": "Non è corretto. Il diritto di accesso riguarda vedere i propri dati. Il problema qui è la decisione automatica senza intervento umano.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Il caso Cambridge Analytica non riguardava finanziamenti politici diretti, ma l'uso di profili psicologici costruiti sui dati di 87 milioni di persone per targetizzare messaggi politici personalizzati."
         },
         {
           "id": "b",
-          "testo": "Il diritto relativo alle decisioni automatizzate (Art. 22) — che garantisce il diritto a una revisione umana per decisioni che hanno impatto significativo",
+          "testo": "I dati psicologici di 87 milioni di persone furono usati per targetizzare messaggi politici personalizzati — dimostrando che la privacy individuale ha conseguenze collettive e può influenzare elezioni",
           "corretto": true,
-          "feedback": "Esatto! L'Art. 22 GDPR dice: se una decisione che ti riguarda è presa automaticamente da un algoritmo senza intervento umano, hai il diritto di chiedere una revisione umana e di conoscere la logica dell'algoritmo."
+          "feedback": "Esatto. Cambridge Analytica costruì profili psicologici degli elettori usando i dati Facebook e li usò per inviare messaggi politici su misura per le paure e i valori di ciascuno. La privacy non era solo una questione individuale: la sua violazione influenzò (o tentò di influenzare) il risultato di elezioni."
         },
         {
           "id": "c",
-          "testo": "Il diritto all'oblio (Art. 17) — per far cancellare tutti i dati della candidatura",
+          "testo": "Che i social media sono stati creati deliberatamente per raccogliere dati politici fin dall'inizio",
           "corretto": false,
-          "feedback": "Non è corretto. Il diritto all'oblio riguarda la cancellazione dei dati. Il problema della decisione automatizzata è coperto dall'Art. 22.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. I social media non furono creati per raccogliere dati politici. Cambridge Analytica sfruttò le API di Facebook — progettate per altri scopi — per raccogliere dati e usarli in modo politico non previsto originariamente."
         },
         {
           "id": "d",
-          "testo": "Il diritto alla portabilità (Art. 20) — per trasferire il proprio CV a un'altra azienda",
+          "testo": "Che le elezioni americane del 2016 furono annullate a causa della violazione dei dati di Facebook",
           "corretto": false,
-          "feedback": "Non è corretto. La portabilità riguarda il trasferimento dei dati tra servizi. L'Art. 22 tutela specificamente dalle decisioni automatizzate significative.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Le elezioni del 2016 non furono annullate. L'impatto reale di Cambridge Analytica sul risultato è dibattuto. Ma il caso ha dimostrato la possibilità tecnica di usare dati personali per influenzare il comportamento elettorale su larga scala."
         }
       ],
-      "spiegazione": "L'Art. 22 GDPR tutela dalle decisioni automatizzate significative: se un algoritmo (senza revisione umana) decide su assunzione, credito bancario, diagnosi medica, o condanna penale, hai il diritto di chiedere una revisione umana e di conoscere la logica dell'algoritmo. Questo diritto è particolarmente importante per i sistemi AI applicati alle risorse umane.",
-      "riferimento_principale": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+      "spiegazione": "Cambridge Analytica raccolse i dati di ~87 milioni di profili Facebook tramite un'app, li analizzò per costruire profili psicologici dettagliati degli elettori, e li usò per inviare messaggi politici personalizzati — adattati alle paure e ai valori specifici di ciascuno. Il caso dimostrò che la privacy individuale ha conseguenze collettive: quando i dati di molte persone vengono aggregati e usati politicamente, ne può risentire la democrazia stessa. Facebook pagò $5 miliardi di multa alla FTC.",
+      "riferimento_principale": "Lo scandalo Cambridge Analytica: come funzionava"
     },
     {
-      "id": 15,
+      "id": "15",
       "livello": "A",
-      "domanda": "Hai pubblicato a 13 anni una foto imbarazzante su un social. Ora ne hai 17 e vuoi toglierla definitivamente. Quali ostacoli tecnici e legali potresti incontrare?",
+      "domanda": "Perché i dati comportamentali (per quanto tempo hai guardato un video, dove ti sei fermato nel feed) sono più preziosi per le piattaforme rispetto ai dati che hai dichiarato nel profilo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Nessun ostacolo: eliminare la foto dall'account la cancella immediatamente e definitivamente da internet",
+          "testo": "Perché sono più facili da raccogliere tecnicamente rispetto ai dati del profilo",
           "corretto": false,
-          "feedback": "Non è corretto. Eliminare la foto dall'account non la cancella dalle copie già fatte da altri, dagli archivi web, dalle cache dei motori di ricerca.",
-          "riferimento": "📖 ESPLORA — L'impronta digitale permanente"
+          "feedback": "Non è corretto. Entrambi i tipi di dati sono relativamente facili da raccogliere. La differenza di valore non è tecnica ma informativa: i dati comportamentali rivelano preferenze reali che l'utente stesso non dichiarebbe."
         },
         {
           "id": "b",
-          "testo": "Chiunque potrebbe aver fatto uno screenshot; gli archivi web potrebbero avere una copia; le cache dei motori di ricerca potrebbero mostrarla ancora per un periodo",
+          "testo": "Perché rivelano preferenze reali e non dichiarate — non ciò che dici di preferire, ma ciò che fai davvero — e non sono falsificabili come i dati del profilo",
           "corretto": true,
-          "feedback": "Esatto! Il testo spiega: screenshot, copie su altri server, versioni in cache. Il diritto all'oblio GDPR esiste, ma è complicato esercitarlo su contenuti già diffusi."
+          "feedback": "Esatto. Nel profilo puoi scrivere qualsiasi cosa. I dati comportamentali no: il tempo passato su un video, il punto esatto dove hai smesso di guardare, i post su cui ti sei fermato nel feed rivelano preferenze autentiche che non falsifichi consapevolmente."
         },
         {
           "id": "c",
-          "testo": "Non ci sono ostacoli se hai cambiato il nome del tuo account social",
+          "testo": "Perché i dati dichiarati nel profilo sono protetti dal GDPR, mentre i dati comportamentali no",
           "corretto": false,
-          "feedback": "Non è corretto. Cambiare il nome dell'account non elimina la foto già pubblicata né le sue copie su altri dispositivi o archivi web.",
-          "riferimento": "📖 ESPLORA — L'impronta digitale permanente"
+          "feedback": "Non è corretto. Il GDPR protegge entrambe le categorie di dati — sia quelli dichiarati sia quelli comportamentali, se possono identificare una persona. La differenza di valore non è legale ma informativa."
         },
         {
           "id": "d",
-          "testo": "La foto non è mai veramente tua dopo la pubblicazione, quindi non puoi richiederla",
+          "testo": "Perché i dati comportamentali possono essere venduti alle aziende farmaceutiche, mentre i dati del profilo no",
           "corretto": false,
-          "feedback": "Non è corretto. I tuoi dati personali (incluse foto in cui appari) rimangono tuoi secondo il GDPR. Il diritto all'oblio esiste, ma è difficile da esercitare pienamente su contenuti già diffusi.",
-          "riferimento": "📖 ESPLORA — Il GDPR semplificato: i tuoi diritti"
+          "feedback": "Non è corretto. Entrambe le categorie di dati possono teoricamente essere cedute a terzi (con i limiti del GDPR). Il valore superiore dei dati comportamentali dipende dalla loro autenticità e predittività, non dal destinatario."
         }
       ],
-      "spiegazione": "L'impronta digitale è difficile da cancellare completamente: (1) chiunque abbia visto la foto può averne fatto uno screenshot; (2) la Wayback Machine (Internet Archive) potrebbe avere una versione archivata; (3) le cache dei motori di ricerca mostrano pagine ancora per un periodo. Il diritto all'oblio GDPR esiste ma è complesso da esercitare su contenuti già ampiamente diffusi.",
-      "riferimento_principale": "📖 ESPLORA — L'impronta digitale permanente"
+      "spiegazione": "I dati comportamentali sono considerati i più preziosi dalle piattaforme per tre motivi: (1) sono autentici — non falsificabili consciamente, come i dati del profilo; (2) sono predittivi — permettono di anticipare comportamenti futuri con alta accuratezza; (3) sono granulari — rivelano sfumature che nessun questionario cattura (es. ti fermi sui contenuti politici di sinistra per 3 secondi, poi scorri via; sui contenuti di destra ti fermi 15 secondi). Questi dati costruiscono modelli psicologici molto precisi.",
+      "riferimento_principale": "Come vengono raccolti i tuoi dati: i meccanismi tecnici"
     },
     {
-      "id": 16,
+      "id": "16",
       "livello": "A",
-      "domanda": "Un modello di AI viene addestrato su dati raccolti senza consenso esplicito degli utenti (es. testi da forum pubblici). Quale questione solleva il Box T8 della MC?",
+      "domanda": "Hai pubblicato una foto a 13 anni. Ora ne hai 17 e vuoi toglierla definitivamente. Perché il 'diritto all'oblio' GDPR non risolve completamente il problema?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Nessuna questione: i dati pubblici su internet possono essere usati liberamente da chiunque per qualsiasi scopo",
+          "testo": "Perché il GDPR non si applica ai minorenni: devi aspettare i 18 anni per esercitare questo diritto",
           "corretto": false,
-          "feedback": "Non è corretto. Il Box T8 evidenzia che il GDPR richiede una base legale per il trattamento dei dati, anche per quelli 'pubblici' su internet.",
-          "riferimento": "📖 ESPLORA — Box T8 (IA critica)"
+          "feedback": "Non è corretto. Il GDPR si applica a tutti, indipendentemente dall'età. Un minorenne (o un genitore per conto suo) può esercitare il diritto all'oblio. Il problema non è legale ma tecnico: le copie già fatte da altri."
         },
         {
           "id": "b",
-          "testo": "Chi ha autorizzato l'uso di quei dati per addestrare un modello AI? Il GDPR richiede una base legale; i modelli possono anche 'memorizzare' e riprodurre informazioni personali",
+          "testo": "Perché chiunque ha visto la foto può averne fatto uno screenshot, copie possono esistere su server terzi, la Wayback Machine può averne una versione archiviata — il contenuto esiste indipendentemente dall'originale",
           "corretto": true,
-          "feedback": "Esatto! Il Box T8 solleva due questioni: (1) chi ha dato l'autorizzazione? (2) i modelli possono memorizzare e riprodurre informazioni degli individui nel corpus di addestramento."
+          "feedback": "Esatto. Il diritto all'oblio rimuove la fonte originale, ma non le copie già distribuite: screenshot salvati da altri, versioni in cache dei motori di ricerca, archivi web come archive.org, copie su altri server. Ogni contenuto pubblicato può avere una vita indipendente dall'originale."
         },
         {
           "id": "c",
-          "testo": "Il problema è solo che i modelli AI sono troppo potenti e potrebbero sostituire i programmatori umani",
+          "testo": "Perché la piattaforma può rifiutare sempre la richiesta di cancellazione se la foto ha ricevuto molti like",
           "corretto": false,
-          "feedback": "Non è corretto. Il Box T8 si concentra sulle questioni di privacy dei dati di addestramento, non sul rischio di sostituzione dei programmatori.",
-          "riferimento": "📖 ESPLORA — Box T8 (IA critica)"
+          "feedback": "Non è corretto. Il numero di like non è un motivo legale per rifiutare la cancellazione. Le piattaforme possono rifiutare solo per motivi specifici (obblighi legali, interesse pubblico). Il problema è la diffusione delle copie, non il rifiuto della piattaforma."
         },
         {
           "id": "d",
-          "testo": "Non c'è alcun problema perché i modelli AI non leggono i dati, li elaborano solo statisticamente",
+          "testo": "Perché il GDPR si applica solo alle aziende europee — le piattaforme americane possono ignorarlo",
           "corretto": false,
-          "feedback": "Non è corretto. Il Box T8 evidenzia che i modelli possono 'memorizzare' informazioni sui dati di addestramento e riprodurle — un rischio reale per la privacy.",
-          "riferimento": "📖 ESPLORA — Box T8 (IA critica)"
+          "feedback": "Non è corretto. Il GDPR ha effetto extraterritoriale: si applica a qualsiasi azienda che tratta dati di cittadini europei, incluse le piattaforme americane come Facebook, Instagram, TikTok."
         }
       ],
-      "spiegazione": "Il Box T8 solleva due questioni distinte: (1) di diritto — chi ha autorizzato l'uso di quei dati? L'autorizzazione può stare nei termini di servizio non letti, o non esserci affatto; (2) tecnica — i modelli possono memorizzare informazioni sui dati di addestramento e riprodurle (es. citare testi specifici di utenti). Il GDPR richiede una base legale per qualsiasi trattamento di dati, incluso l'addestramento AI.",
-      "riferimento_principale": "📖 ESPLORA — Box T8 (IA critica)"
+      "spiegazione": "Il diritto all'oblio (Art. 17 GDPR) è reale ma limitato: può far rimuovere l'originale dalla piattaforma, ma non elimina le copie già distribuite. Le copie possono esistere come: screenshot salvati da chiunque abbia visto la foto, versioni archiviate su Wayback Machine (archive.org), copie in cache dei motori di ricerca, reposts su altri siti o account. L'impronta digitale è 'permanente' non perché sia impossibile cancellare l'originale, ma perché le copie si moltiplicano indipendentemente.",
+      "riferimento_principale": "L'impronta digitale permanente"
     },
     {
-      "id": 17,
+      "id": "17",
       "livello": "A",
-      "domanda": "Costruire la 'mappa dell'impronta digitale' di un utente tipo è il compito del 🌍 AGISCI. Quale categoria di dati è più sorprendente per la maggior parte degli utenti che non ne sono consapevoli?",
+      "domanda": "Il D.M. 183/2024 (Traguardo D3) chiede di distinguere cyberbullismo e hate speech. Qual è il confine tra i due e quali norme li regolano?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "I dati di identità come nome e cognome",
+          "testo": "Sono la stessa cosa: entrambi sono reati penali regolati dall'Art. 604-bis del codice penale",
           "corretto": false,
-          "feedback": "Non è corretto. Nome e cognome sono dati che gli utenti sanno di condividere. I dati più sorprendenti sono quelli raccolti in modo implicito e automatico.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. Cyberbullismo e hate speech sono fenomeni distinti con norme diverse. Il cyberbullismo (L. 71/2017) riguarda comportamenti ripetuti verso un individuo; l'hate speech (Art. 604-bis c.p.) riguarda l'incitamento all'odio verso gruppi."
         },
         {
           "id": "b",
-          "testo": "I dati comportamentali: per quanto tempo hai guardato un video, su quali post ti sei fermato nel feed, quante volte hai aperto un'app in un giorno",
+          "testo": "Cyberbullismo (L. 71/2017) = comportamento ripetuto verso un individuo specifico; hate speech (Art. 604-bis c.p.) = incitamento all'odio verso gruppi per caratteristiche identitarie — possono sovrapporsi",
           "corretto": true,
-          "feedback": "Esatto! Il testo dice: 'i dati comportamentali sono estremamente preziosi perché rivelano preferenze reali — non quello che dici di preferire, ma quello che fai davvero.'"
+          "feedback": "Esatto. Un attacco ripetuto online verso una persona per la sua etnia, religione o orientamento sessuale può configurare entrambi: cyberbullismo (ripetuto verso individuo, L. 71/2017) e hate speech (incitamento odio per caratteristiche identitarie, Art. 604-bis c.p.)."
         },
         {
           "id": "c",
-          "testo": "Il numero di amici che hai su un social network",
+          "testo": "Il cyberbullismo riguarda solo i minorenni; l'hate speech riguarda solo gli adulti — due fenomeni completamente separati",
           "corretto": false,
-          "feedback": "Non è corretto. Il numero di amici è visibile e consapevolmente scelto. I dati comportamentali impliciti (tempo di visione, pattern di scrolling) sono molto meno visibili.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. La L. 71/2017 si applica specificamente al cyberbullismo che coinvolge minorenni (vittime o autori). L'hate speech può coinvolgere chiunque. Ma i fenomeni possono sovrapporsi: un minorenne può commettere hate speech, e un adulto cyberbullismo."
         },
         {
           "id": "d",
-          "testo": "Le foto che hai caricato pubblicamente",
+          "testo": "L'hate speech è sempre meno grave del cyberbullismo perché non si rivolge a una persona specifica",
           "corretto": false,
-          "feedback": "Non è corretto. Le foto pubbliche sono consapevolmente condivise. I dati comportamentali impliciti sono raccolti automaticamente senza scelta attiva dell'utente.",
-          "riferimento": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+          "feedback": "Non è corretto. La gravità non dipende dal target specifico vs gruppo. L'hate speech può avere effetti devastanti sulle comunità bersaglio e può incitare a violenza reale. La gravità dipende dal contesto, dall'intensità e dagli effetti."
         }
       ],
-      "spiegazione": "I dati comportamentali sono i più sorprendenti: per quanto tempo hai guardato un video prima di skipparlo, su quali post ti sei fermato nel feed, quante volte apri un'app in un giorno. Il testo li descrive come 'estremamente preziosi perché rivelano preferenze reali — non quello che dici di preferire, ma quello che fai davvero.' Sono raccolti automaticamente, senza scelta consapevole.",
-      "riferimento_principale": "📖 ESPLORA — Come vengono raccolti i tuoi dati: i meccanismi tecnici"
+      "spiegazione": "Il D.M. 183/2024 Traguardo D3 chiede di distinguere: cyberbullismo (L. 71/2017) = comportamento aggressivo ripetuto verso un individuo specifico tramite strumenti digitali, con squilibrio di potere; hate speech (Art. 604-bis c.p.) = istigazione all'odio, alla discriminazione o alla violenza verso gruppi per razza, etnia, religione, orientamento sessuale. I due possono sovrapporsi: un attacco ripetuto verso qualcuno per la sua identità può essere entrambi contemporaneamente.",
+      "riferimento_principale": "Cyberbullismo e hate speech: definizioni e conseguenze"
     },
     {
-      "id": 18,
+      "id": "18",
       "livello": "A",
-      "domanda": "Quale connessione c'è tra la MC-DIG-2-01 (il quiz in Scratch) e questa MC (privacy digitale)? Come il quiz può sollevare una questione di dati personali?",
+      "domanda": "I modelli di intelligenza artificiale vengono spesso addestrati su testi e immagini raccolti da internet, spesso senza consenso esplicito degli utenti. Quale questione di diritto questo solleva rispetto al GDPR?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Nessuna connessione: la programmazione Scratch e la privacy sono argomenti completamente separati",
+          "testo": "Nessuna: i dati pubblici su internet possono essere usati liberamente da chiunque per qualsiasi scopo, incluso l'addestramento di AI",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo del collegamento con MC-DIG-2-01 stabilisce esplicitamente la connessione: il quiz raccoglie risposte degli utenti — dati che richiedono considerazioni sulla privacy.",
-          "riferimento": "🔗 Collegamento con MC-DIG-2-01"
+          "feedback": "Non è corretto. Il GDPR non distingue tra dati 'pubblici' e 'privati' nel senso comune: se un dato può identificare una persona, è personale indipendentemente dal fatto che sia visibile online. Il trattamento per addestramento AI richiede una base legale."
         },
         {
           "id": "b",
-          "testo": "Il quiz in Scratch raccoglie le risposte dell'utente (dati personali se identificabili). Chi può vedere quei dati? Come vengono usati? Il progetto Scratch è pubblico per default",
+          "testo": "Il GDPR richiede una base legale per qualsiasi trattamento di dati personali, incluso l'addestramento AI; i modelli possono memorizzare e riprodurre informazioni personali presenti nel corpus",
           "corretto": true,
-          "feedback": "Esatto! Il collegamento finale dice: 'il tuo quiz in Scratch raccoglie le risposte dell'utente. Cosa fa con quelli? Chi può vederli?' Un progetto Scratch pubblico espone i dati di chi lo usa."
+          "feedback": "Esatto. Due questioni distinte: (1) legale — il trattamento dei dati per addestramento AI richiede una base legale GDPR (consenso, legittimo interesse, contratto); (2) tecnica — i modelli possono memorizzare e riprodurre informazioni personali presenti nel corpus di addestramento."
         },
         {
           "id": "c",
-          "testo": "La connessione è solo temporale: entrambe le MC si studiano in seconda media",
+          "testo": "Il problema è solo il copyright: i testi usati per addestrare AI possono essere coperti da diritto d'autore",
           "corretto": false,
-          "feedback": "Non è corretto. La connessione è concettuale, non solo temporale. I dati raccolti da un programma sollevano questioni di privacy.",
-          "riferimento": "🔗 Collegamento con MC-DIG-2-01"
+          "feedback": "Non è corretto. Il copyright è un problema reale e separato. Ma la questione GDPR riguarda specificamente i dati personali: l'addestramento su testi che contengono informazioni identificabili sulle persone richiede una base legale."
         },
         {
           "id": "d",
-          "testo": "La connessione è che Scratch usa un sistema di login che richiede consenso GDPR",
+          "testo": "Non c'è nessun problema perché i modelli AI non leggono i testi: li elaborano solo statisticamente senza 'capire' le persone",
           "corretto": false,
-          "feedback": "Non è corretto. La connessione non riguarda il login di Scratch, ma il fatto che qualsiasi programma che raccoglie dati (anche risposte a quiz) solleva questioni di privacy.",
-          "riferimento": "🔗 Collegamento con MC-DIG-2-01"
+          "feedback": "Non è corretto. Il fatto che i modelli elaborino statisticamente non elimina il problema: studi dimostrano che i modelli linguistici possono memorizzare e riprodurre quasi testualmente porzioni del corpus di addestramento, incluse informazioni personali."
         }
       ],
-      "spiegazione": "Il collegamento tra le due MC è esplicito nel testo: 'Il tuo quiz in Scratch raccoglie un tipo di dato: la risposta dell'utente. Cosa fa con quelli? Chi può vederli?' Un progetto Scratch pubblicato è pubblico: chiunque lo giochi lascia una traccia. Questo introduce la domanda fondamentale della privacy: ogni software che raccoglie input dall'utente gestisce dati che richiedono considerazioni etiche.",
-      "riferimento_principale": "🔗 Collegamento con MC-DIG-2-01"
+      "spiegazione": "L'addestramento di modelli AI su dati raccolti da internet solleva due questioni GDPR distinte: (1) base legale — qualsiasi trattamento di dati personali richiede una base legale (consenso, legittimo interesse, contratto); i termini di servizio spesso non coprono esplicitamente questo uso; (2) memorizzazione — i modelli linguistici possono memorizzare e riprodurre quasi testualmente porzioni del corpus, incluse informazioni personali. L'Autorità Garante italiana ha già avviato istruttorie su questo tema.",
+      "riferimento_principale": "AI e dati personali: questioni aperte"
     }
   ]
 }

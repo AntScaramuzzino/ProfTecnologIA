@@ -1,92 +1,92 @@
 [
   {
-    "front": "Quante ore di video vengono caricate su YouTube ogni minuto nel 2024?",
-    "back": "500 ore al minuto\n\nNel 2024 vengono caricati su YouTube 500 ore di video ogni minuto. Questo equivale a 720.000 ore al giorno, che richiederebbero 82 anni di visione continua. Questa cifra illustra la scala straordinaria della produzione di contenuti digitali.",
+    "front": "Qual è la differenza tra compressione lossless e lossy? Esempi di entrambe.",
+    "back": "Lossless: ricostruisce esattamente l'originale, nessuna informazione persa. Esempi: PNG (immagini), FLAC (audio), ZIP (file). Lossy: scarta informazioni percettivamente irrilevanti per file molto più piccoli. Esempi: JPEG (foto), MP3 (audio), H.264 (video). 5.000 foto JPEG ≈ 15 GB; stesse foto RAW ≈ 75-150 GB.",
     "tag": "Base"
   },
   {
-    "front": "Cosa distingue la compressione 'lossless' da quella 'lossy'?",
-    "back": "Lossless non perde informazioni; lossy scarta informazioni per ridurre le dimensioni\n\nLa compressione lossless (PNG, FLAC, ZIP) permette di ricostruire esattamente l'originale senza perdita di informazioni. La compressione lossy (JPEG, MP3, H.264) scarta informazioni percettivamente irrilevanti per l'occhio o l'orecchio, producendo file molto più piccoli.",
+    "front": "Quando nasce il diritto d'autore? Quanto dura in Italia?",
+    "back": "Nasce automaticamente al momento della creazione e fissazione su un supporto — senza registrazione, senza il simbolo ©. Dura tutta la vita dell'autore più 70 anni dalla sua morte (L. 633/1941). Solo dopo l'opera entra nel dominio pubblico e può essere usata liberamente da chiunque.",
     "tag": "Base"
   },
   {
-    "front": "Per quanto tempo dura la protezione del diritto d'autore in Italia dopo la morte dell'autore?",
-    "back": "70 anni dalla morte dell'autore\n\nIn Italia, la Legge n. 633 del 1941 (L.D.A.) stabilisce che il diritto d'autore dura per tutta la vita dell'autore più 70 anni dalla sua morte. Solo al termine di questo periodo l'opera entra nel dominio pubblico ed è liberamente utilizzabile.",
+    "front": "Cosa permette la licenza CC0? Cosa permette CC BY?",
+    "back": "CC0: uso totalmente libero — modifica, uso commerciale — senza alcun obbligo di citazione. Equivale al dominio pubblico. CC BY: uso libero incluso commerciale, ma con obbligo di citare l'autore, il titolo e la licenza. 'BY' = attribuzione obbligatoria. Chi non cita viola la licenza.",
     "tag": "Base"
   },
   {
-    "front": "Cosa significa la sigla 'NC' nelle licenze Creative Commons?",
-    "back": "NonCommercial: non puoi usare l'opera per scopi commerciali\n\nNC sta per NonCommercial: chi usa un contenuto con questa licenza CC non può farlo per scopi commerciali. Può però usarlo per scopi educativi, personali o non commerciali. Le sei licenze CC combinano diversamente BY, SA, NC e ND.",
+    "front": "Cosa significa CC BY-SA? Quale piattaforma famosa la usa?",
+    "back": "CC BY-SA = attribuzione obbligatoria (BY) + ShareAlike (SA = condividi allo stesso modo). Chi modifica un'opera CC BY-SA deve distribuirla con la stessa licenza — le versioni derivate restano aperte. Wikipedia usa CC BY-SA per garantire che i contenuti derivati rimangano liberamente accessibili.",
     "tag": "Base"
   },
   {
-    "front": "Qual è la struttura consigliata per l'hook di un episodio podcast?",
-    "back": "Iniziare con un fatto sorprendente, una domanda o una storia breve entro i primi 60-90 secondi\n\nI primi 60-90 secondi del podcast sono decisivi. Il testo consiglia di iniziare con un fatto sorprendente, una domanda o una storia breve — mai con 'oggi parleremo di...'. Se l'ascoltatore non è agganciato entro i primi 90 secondi, smette di ascoltare.",
+    "front": "Struttura di un podcast efficace: qual è il ruolo del hook?",
+    "back": "Struttura: Intro (max 30 sec) → Hook narrativo (60-90 sec, DECISIVO) → Corpo (sequenze 3-5 min) → Conclusione → Outro. Il hook deve agganciare con un fatto sorprendente, una domanda o una storia breve — mai con 'oggi parleremo di...'. Se l'ascoltatore non è agganciato entro 90 secondi, smette.",
     "tag": "Base"
   },
   {
-    "front": "Cosa sono i 'deepfake'?",
-    "back": "Video o audio generati da IA che mostrano persone fare cose che non hanno mai fatto\n\nI deepfake sono video o audio generati da sistemi di intelligenza artificiale (GAN — Generative Adversarial Networks) che mostrano persone dire o fare cose che non hanno mai detto o fatto. La tecnologia è diventata accessibile a chiunque nel 2023-2024 grazie a strumenti gratuiti online.",
+    "front": "Cosa sono i deepfake? Qual è il segnale visivo più facile da individuare?",
+    "back": "Contenuti (video, audio, immagini) generati da AI (GAN — Generative Adversarial Networks) per far sembrare che una persona abbia detto o fatto qualcosa che non ha mai fatto. Segnale più facile: bordi del viso incoerenti (capelli, orecchie) in luce laterale, e occhi che non battono le palpebre in modo naturale.",
     "tag": "Base"
   },
   {
-    "front": "Perché il formato JPEG non è adatto per comprimere loghi o screenshot?",
-    "back": "Perché JPEG crea artefatti visibili sui bordi netti e nelle aree di colore uniforme\n\nJPEG usa compressione lossy che elimina dettagli fini. Questo causa artefatti visibili (blocchi quadrati) lungo i bordi netti e nelle aree di colore uniforme — tipiche dei loghi e degli screenshot. Per questi contenuti è preferibile PNG (lossless) che preserva esattamente i bordi senza artefatti.",
+    "front": "Perché JPEG non è adatto per loghi e screenshot? Quando usare PNG?",
+    "back": "JPEG (lossy) crea artefatti visibili — blocchi quadrati — sui bordi netti e nelle aree di colore uniforme tipiche di loghi, icone e screenshot. PNG (lossless) preserva esattamente i bordi senza artefatti. Regola: fotografie naturali → JPEG; loghi, icone, screenshot, testi → PNG.",
     "tag": "Intermedio"
   },
   {
-    "front": "In Italia, un video pubblicato su YouTube con musica protetta da copyright ma senza guadagno è legale?",
-    "back": "No: in Italia non esiste un'eccezione automatica per uso educativo o non commerciale\n\nIn Italia, diversamente dagli USA (dove esiste il 'fair use'), non c'è un'eccezione automatica per uso educativo o non commerciale nel diritto d'autore. YouTube rimuove automaticamente i video con musica protetta da Content ID. La soluzione è usare musica con licenza CC esplicita che permette l'uso in video.",
+    "front": "Come funziona Content ID di YouTube? Perché 'uso scolastico' non protegge in Italia?",
+    "back": "Content ID: sistema automatico che confronta ogni video caricato con un database di impronte audio/video dei titolari dei diritti. Agisce al caricamento, indipendentemente dalle visualizzazioni. In Italia non esiste un'eccezione automatica per uso educativo (a differenza del 'fair use' USA): la soluzione è usare musica con licenza CC esplicita.",
     "tag": "Intermedio"
   },
   {
-    "front": "Perché il podcast del Liceo 'Archimede' ha scelto di pubblicare su Internet Archive invece che su Spotify?",
-    "back": "Perché Internet Archive è gratuito, open source e senza algoritmi pubblicitari\n\nIl caso studio mostra che la classe ha scelto Internet Archive per i suoi valori: è gratuita, open source, senza algoritmi pubblicitari. Gli episodi sono stati caricati con licenza CC BY-SA, permettendo ad altri di usarli mantenendo la stessa licenza.",
+    "front": "Come si cita correttamente un'immagine trovata online?",
+    "back": "Nome del fotografo/autore originale (non chi l'ha trovata) + fonte/sito in cui è stata pubblicata originalmente (non il motore di ricerca) + tipo di licenza (es. CC BY 4.0). 'Immagine da Google' non è una citazione: Google non è autore di nessuna immagine — è un motore di ricerca che mostra anteprime di immagini di altri.",
     "tag": "Intermedio"
   },
   {
-    "front": "Qual è la differenza tra una licenza CC BY-SA e una CC BY-NC?",
-    "back": "CC BY-SA richiede la stessa licenza sulle opere derivate; CC BY-NC vieta l'uso commerciale\n\nCC BY-SA impone che chiunque modifichi l'opera la distribuisca con la stessa licenza (ShareAlike). CC BY-NC permette usi e modifiche ma vieta gli scopi commerciali (NonCommercial). Wikipedia usa CC BY-SA per garantire che i contenuti derivati rimangano liberamente accessibili.",
+    "front": "Come funziona la psicoacustica nell'algoritmo MP3?",
+    "back": "Principio del masking: suoni forti mascherano i suoni deboli presenti nello stesso momento (masking simultaneo) e in momenti vicini (masking temporale). Le frequenze >15 kHz sono meno percepite. Eliminando tutto ciò che il cervello non percepirebbe comunque, l'MP3 scarta ~90% dell'informazione originale senza perdita soggettiva percepibile a 256 kbit/s.",
     "tag": "Intermedio"
   },
   {
-    "front": "Quale tecnica usano i GAN per creare deepfake sempre più realistici?",
-    "back": "Un generatore produce immagini false e un discriminatore cerca di rilevarle: si allenano reciprocamente\n\nLe GAN (Generative Adversarial Networks) per i deepfake usano due reti neurali: una generatrice che produce immagini false, e una discriminatrice che cerca di distinguere il falso dal vero. Le due si allenano reciprocamente fino a produrre output difficilmente distinguibili dalla realtà.",
+    "front": "Cosa devono contenere le show notes di un podcast responsabile?",
+    "back": "Titolo, data, autori/conduttori, riassunto dell'episodio, elenco completo delle fonti con URL verificabili, crediti per la musica con la licenza specifica (es. 'Musica: nome brano, autore, Freesound.org, CC BY 3.0'). Le show notes rendono il contenuto verificabile: è ciò che distingue un contenuto responsabile da uno opaco.",
     "tag": "Intermedio"
   },
   {
-    "front": "Qual è il livello audio consigliato per la voce in un podcast rispetto alla musica di sottofondo?",
-    "back": "La musica deve essere abbassata a -20 dB sotto la voce\n\nIl testo indica che la musica CC deve essere aggiunta in un layer separato e abbassata a -20 dB sotto la voce parlante. Questo garantisce che la voce sia sempre comprensibile mentre la musica crea un'atmosfera senza sovrapporsi.",
+    "front": "Quante parole servono per un podcast di 5 minuti? Perché lo script è indispensabile?",
+    "back": "150 parole/minuto × 5 min = 750 parole. Lo script è indispensabile: riduce pause prolungate e incoerenze, rende il montaggio più veloce e garantisce che i fatti siano stati verificati prima della registrazione. I podcast che 'suonano naturali' sono quasi sempre il risultato di uno script ben scritto letto con abilità.",
     "tag": "Intermedio"
   },
   {
-    "front": "Perché il 'show notes' (documento di accompagnamento) è fondamentale per un podcast responsabile?",
-    "back": "Rende il contenuto verificabile: elenca fonti, autori, crediti musica e licenze\n\nLe show notes (documento di accompagnamento) rendono il podcast verificabile: elencano tutti gli autori, le fonti usate con URL, i crediti per la musica con la licenza specifica. Il testo del caso studio mostra come questo documento sia ciò che distingue un 'contenuto digitale responsabile' da uno opaco.",
+    "front": "DM 183/2024 D1+D2: in che senso produrre contenuti responsabili è un atto di cittadinanza?",
+    "back": "Traguardo D1: veridicità dei contenuti che si producono. Traguardo D2: rispetto dei diritti altrui online (copyright, privacy, identità digitale). Ogni contenuto falso o plagiato degrada l'ecosistema informativo condiviso. Un podcast con fonti verificate, licenze rispettate e metodologia documentata è un contributo positivo alla qualità del dibattito pubblico — non solo un compito scolastico.",
     "tag": "Avanzato"
   },
   {
-    "front": "Analizza: un deepfake tecnicamente convincente viene dichiarato 'falso' da chi ne è protagonista. Qual è il 'dividendo del bugiardo'?",
-    "back": "Quando i deepfake diventano comuni, qualsiasi video reale può essere dichiarato falso come strategia difensiva\n\nIl 'dividendo del bugiardo' (liar's dividend) è il rischio che i deepfake siano usati come scusa per negare prove reali. Quando i deepfake sono comuni, chiunque può dichiarare 'quella registrazione è un deepfake' come difesa contro prove autentiche. Il pericolo non è solo credere ai falsi: è smettere di credere ai veri.",
+    "front": "Perché scegliere CC BY-SA per un podcast scolastico è una decisione strategica educativa?",
+    "back": "CC BY-SA permette ad altri insegnanti e studenti di riusare e modificare il lavoro, a condizione che le versioni derivate restino ugualmente aperte (ShareAlike). Contribuisce agli Open Educational Resources (OER). Il meccanismo garantisce che l'apertura si propaghi nelle generazioni successive di modifiche — moltiplicando l'impatto educativo senza rinunciare al riconoscimento dell'autore.",
     "tag": "Avanzato"
   },
   {
-    "front": "Perché non è sufficiente scrivere 'immagine da Google' come fonte per una foto usata in un podcast?",
-    "back": "Perché Google non è l'autore: mostra anteprime di immagini altrui senza diritti su di esse\n\nGoogle non è autore di nessuna immagine: è un motore di ricerca che mostra anteprime di immagini di altri. Per citare correttamente una fotografia occorre indicare il nome del fotografo, la fonte originale (sito o pubblicazione) e la licenza. Il copyright appartiene all'autore originale, non a Google.",
+    "front": "GAN: perché la corsa agli armamenti tra generatori e rilevatori di deepfake peggiora nel tempo?",
+    "back": "La GAN addestra il generatore (produce falsi) e il discriminatore (li rileva) reciprocamente: il generatore migliora quando il discriminatore lo inganna meno, e il discriminatore migliora quando il generatore lo inganna. Il sistema converge quando il generatore produce output indistinguibili dal reale persino per l'AI — e la qualità dei deepfake migliora costantemente in questa corsa.",
     "tag": "Avanzato"
   },
   {
-    "front": "Valuta criticamente il caso studio del Liceo 'Archimede': cosa rende quel podcast un 'contenuto digitale responsabile'?",
-    "back": "È originale, verificato nelle fonti, trasparente sulle licenze e invita alla condivisione con CC BY-SA\n\nIl testo conclude il caso studio con questa affermazione: 'Questo è un contenuto digitale responsabile: originale, verificato, trasparente sulle fonti, con licenza che rispetta il lavoro degli autori e invita alla condivisione.' Queste quattro caratteristiche definiscono la responsabilità editoriale digitale.",
+    "front": "No 'fair use' in Italia: implicazioni pratiche per chi produce video scolastici",
+    "back": "In Italia non esiste eccezione automatica per uso educativo o non commerciale (a differenza degli USA). Content ID di YouTube agisce automaticamente su tutti i video, inclusi quelli privati o scolastici. La soluzione: usare SOLO musica con licenza CC esplicita che permette l'uso in video, e documentare la licenza nelle show notes. Non esistono 'regole dei 30 secondi' nel diritto italiano.",
     "tag": "Avanzato"
   },
   {
-    "front": "La MP3 elimina circa il 90% dell'informazione originale. Come è possibile che la qualità sia accettabile?",
-    "back": "Perché elimina solo le frequenze che l'orecchio umano percepisce meno (psicoacustica)\n\nL'algoritmo MP3 usa la psicoacustica: la scienza di come l'orecchio percepisce il suono. Elimina le frequenze sopra i 15.000 Hz (al limite dell'udito) e i suoni 'mascherati' da suoni più forti. A 128 kbit/s, scarta circa il 90% dell'informazione originale — eppure la maggior parte delle persone non sente differenza in ascolto normale.",
+    "front": "CC BY senza citazione: diritti del titolare secondo DM 183/2024 D2",
+    "back": "CC BY impone un solo obbligo ma inderogabile: l'attribuzione (BY). Chi usa un'opera CC BY senza citare l'autore viola la licenza. Il titolare ha il diritto di: richiedere la correzione (aggiunta della citazione), richiedere la rimozione del contenuto, segnalare la piattaforma, agire legalmente in casi gravi. La CC BY non è 'senza diritti': è una licenza con un obbligo preciso.",
     "tag": "Avanzato"
   },
   {
-    "front": "Hai prodotto un podcast con licenza CC BY. Qualcuno lo usa in un video su YouTube senza citarti. Cosa ti autorizza a fare la licenza CC BY?",
-    "back": "Richiedere la rimozione o la correzione del video perché la citazione è obbligatoria in CC BY\n\nLa licenza CC BY impone sempre l'attribuzione (BY = attribuzione obbligatoria). Chi usa un contenuto CC BY deve sempre citare l'autore, il titolo e la licenza. Se non lo fa, viola la licenza e il titolare dei diritti può richiedere la correzione o la rimozione del contenuto che viola l'attribuzione.",
+    "front": "Il podcast come modello di contenuto verificabile e civicamente responsabile",
+    "back": "Un podcast responsabile ha: fonti verificabili documentate nelle show notes (D1 — veridicità); licenze della musica rispettate (D2 — diritti altrui); produzione originale con citazioni corrette (D2 — copyright); licenza aperta che permette il riuso educativo (contributo all'OER). Non è solo correttezza formale: è la risposta pratica alla disinformazione — produrre ciò che si vorrebbe trovare nel mondo informativo.",
     "tag": "Avanzato"
   }
 ]

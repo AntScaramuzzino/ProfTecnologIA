@@ -5,650 +5,596 @@
     {
       "id": 1,
       "livello": "F",
-      "domanda": "Cos'è il 'Test di Turing' e cosa afferma Alan Turing?",
-      "opzioni": [
-        {
-          "id": "a",
-          "testo": "Un test tecnico che misura la velocità di elaborazione di un sistema AI",
-          "corretto": false,
-          "feedback": "Non è corretto. Il Test di Turing non misura la velocità. È un esperimento mentale sulla percezione dell'intelligenza in una conversazione.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
-        },
-        {
-          "id": "b",
-          "testo": "Un esperimento mentale: se un umano non riesce a capire se sta parlando con una macchina o un altro umano, la macchina può essere considerata 'intelligente'",
-          "corretto": true,
-          "feedback": "Esatto! Il test di Turing (1950) definisce un criterio operativo per l'intelligenza macchina. Il testo nota però che Turing non stava dicendo che una macchina che supera il test 'capisce' davvero."
-        },
-        {
-          "id": "c",
-          "testo": "Un test che verifica se i dati di addestramento di un'IA contengono bias razziali o di genere",
-          "corretto": false,
-          "feedback": "Non è corretto. Il test dei bias algoritmici è una pratica moderna (come il Gender Shades Study del 2018). Il Test di Turing (1950) precede di decenni questi concetti.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
-        },
-        {
-          "id": "d",
-          "testo": "Una prova matematica che dimostra che le macchine non potranno mai superare l'intelligenza umana",
-          "corretto": false,
-          "feedback": "Non è corretto. Il Test di Turing non è una prova matematica di impossibilità: è un criterio operativo per definire quando una macchina può essere considerata 'intelligente'.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
-        }
-      ],
-      "spiegazione": "Alan Turing propone nel 1950 il test: se un essere umano, conversando per iscritto, non riesce a capire se sta parlando con un uomo o una macchina, la macchina può essere considerata 'intelligente'. Il testo precisa: Turing non stava dicendo che una macchina che supera il test capisce davvero — stava solo definendo un criterio operativo per una domanda filosoficamente difficile.",
-      "riferimento_principale": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
-    },
-    {
-      "id": 2,
-      "livello": "F",
       "domanda": "Cosa sono le 'allucinazioni' in un modello linguistico come ChatGPT?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Effetti visivi anomali che il sistema AI produce quando è sovraccarico",
+          "testo": "Effetti visivi anomali che il sistema AI produce quando è sovraccarico di richieste",
           "corretto": false,
-          "feedback": "Non è corretto. Le allucinazioni non sono effetti visivi. Sono risposte testuali che contengono informazioni false presentate con sicurezza.",
-          "riferimento": "📖 ESPLORA — Allucinazioni: quando l'IA inventa con sicurezza"
+          "feedback": "Non è corretto. Le allucinazioni non sono effetti visivi. Sono risposte testuali che contengono informazioni false presentate con lo stesso tono sicuro delle risposte vere."
         },
         {
           "id": "b",
-          "testo": "Risposte false prodotte con lo stesso tono sicuro delle risposte vere, perché il modello genera testo plausibile indipendentemente dalla sua verità",
+          "testo": "Risposte false prodotte con lo stesso tono sicuro delle risposte vere — il modello non ha un sistema di verifica interno tra vero e falso e genera testo plausibile, non necessariamente corretto",
           "corretto": true,
-          "feedback": "Esatto! Il testo spiega: 'Il modello non sa di stare sbagliando. Non ha un sistema di verifica interno che distingue il vero dal falso. Produce testo plausibile — e plausibile non significa corretto.'"
+          "feedback": "Esatto! Il modello non sa di stare sbagliando. Non ha un meccanismo che distingua il vero dal falso: genera il token statisticamente più probabile, che può essere plausibile ma errato."
         },
         {
           "id": "c",
           "testo": "Risposte che il modello fornisce solo quando non ha abbastanza dati di addestramento sull'argomento",
           "corretto": false,
-          "feedback": "Non è corretto. Le allucinazioni possono avvenire anche su argomenti molto rappresentati nel corpus di addestramento. Non dipendono dalla quantità di dati.",
-          "riferimento": "📖 ESPLORA — Allucinazioni: quando l'IA inventa con sicurezza"
+          "feedback": "Non è corretto. Le allucinazioni possono avvenire anche su argomenti molto rappresentati nel corpus di addestramento. Non dipendono dalla quantità di dati disponibili."
         },
         {
           "id": "d",
           "testo": "Errori grammaticali che il modello commette in lingue diverse dall'inglese",
           "corretto": false,
-          "feedback": "Non è corretto. Le allucinazioni non sono errori grammaticali: sono informazioni false presentate come vere, indipendentemente dalla lingua.",
-          "riferimento": "📖 ESPLORA — Allucinazioni: quando l'IA inventa con sicurezza"
+          "feedback": "Non è corretto. Le allucinazioni non sono errori grammaticali. Sono informazioni fattuali false presentate come vere, indipendentemente dalla lingua."
         }
       ],
-      "spiegazione": "Le allucinazioni sono risposte false prodotte da un LLM con lo stesso tono sicuro delle risposte vere. Il modello genera il token statisticamente più probabile, ma 'plausibile' non significa 'corretto'. Esempi: citazioni scientifiche con titoli, autori e riviste plausibili ma non esistenti; eventi storici con date errate descritti in modo fluente.",
+      "spiegazione": "Le allucinazioni sono risposte false prodotte da un LLM con lo stesso tono sicuro delle risposte vere. Il modello genera il token statisticamente più probabile dato il contesto, ma 'plausibile' non significa 'corretto'. Esempi classici: citazioni scientifiche con titoli, autori e riviste plausibili ma inesistenti; date storiche errate descritte in modo fluente; funzioni di codice che non esistono.",
       "riferimento_principale": "📖 ESPLORA — Allucinazioni: quando l'IA inventa con sicurezza"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Cosa afferma davvero il Test di Turing del 1950 — e cosa NON afferma?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Afferma che le macchine hanno già superato l'intelligenza umana in tutti i compiti cognitivi",
+          "corretto": false,
+          "feedback": "Non è corretto. Turing non afferma questo. Il test è un criterio operativo per definire quando una macchina può essere considerata 'intelligente' in senso pratico, non una dichiarazione di superiorità."
+        },
+        {
+          "id": "b",
+          "testo": "Definisce un criterio operativo: se un umano non riesce a distinguere in una conversazione scritta se sta parlando con una macchina o un umano, la macchina può essere considerata 'intelligente' — senza implicare che la macchina 'capisce' davvero",
+          "corretto": true,
+          "feedback": "Esatto! Turing propone un criterio operativo per evitare la domanda filosofica 'le macchine possono pensare?' Il test non afferma che la macchina comprende — afferma solo che se supera il test, il comportamento è indistinguibile da quello intelligente."
+        },
+        {
+          "id": "c",
+          "testo": "Dimostra matematicamente che le macchine non potranno mai superare l'intelligenza umana",
+          "corretto": false,
+          "feedback": "Non è corretto. Il Test di Turing non è una prova matematica di impossibilità. È un esperimento mentale che propone un criterio pratico per valutare l'intelligenza delle macchine."
+        },
+        {
+          "id": "d",
+          "testo": "Misura la velocità di elaborazione di un sistema AI rispetto a quella del cervello umano",
+          "corretto": false,
+          "feedback": "Non è corretto. Il test non misura la velocità di elaborazione. È basato sulla qualità e l'indistinguibilità di una conversazione in linguaggio naturale, non sulle prestazioni computazionali."
+        }
+      ],
+      "spiegazione": "Alan Turing propone nel 1950 un criterio operativo: se un essere umano, conversando per iscritto con un interlocutore nascosto, non riesce a capire se sta parlando con un uomo o una macchina, la macchina può essere considerata 'intelligente'. Il testo sottolinea: Turing non stava dicendo che una macchina che supera il test capisce davvero — stava definendo un criterio pratico per una domanda filosoficamente difficile.",
+      "riferimento_principale": "📖 ESPLORA — Storia dell'intelligenza artificiale"
     },
     {
       "id": 3,
       "livello": "F",
-      "domanda": "Cosa ha dimostrato lo studio Gender Shades (2018) di Joy Buolamwini?",
+      "domanda": "Cos'è il machine learning 'supervisionato' e come si differenzia dagli altri tipi?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Che i sistemi AI di riconoscimento facciale funzionano perfettamente su tutti i gruppi demografici",
+          "testo": "Il sistema impara guardando un supervisore umano che esegue compiti in tempo reale",
           "corretto": false,
-          "feedback": "Non è corretto. Gender Shades ha dimostrato esattamente il contrario: grandi differenze nelle prestazioni tra gruppi demografici diversi.",
-          "riferimento": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
+          "feedback": "Non è corretto. 'Supervisionato' non significa che c'è un umano che supervisiona durante l'apprendimento. Si riferisce al fatto che i dati di addestramento sono 'supervisionati', cioè già etichettati con le risposte corrette."
         },
         {
           "id": "b",
-          "testo": "Che i sistemi commerciali di classificazione del genere avevano tassi di errore fino al 34,7% per le donne con pelle scura, contro meno dell'1% per gli uomini con pelle chiara",
+          "testo": "Il sistema riceve esempi etichettati (coppie input + output corretto) e impara a riprodurre l'associazione su nuovi input mai visti",
           "corretto": true,
-          "feedback": "Esatto! Il testo cita i risultati: errore < 1% per uomini dalla pelle chiara; errore fino al 34,7% per donne dalla pelle scura. Causa: dataset di addestramento prevalentemente maschili e con pelle chiara."
+          "feedback": "Esatto! Un classificatore di spam addestrato su 100.000 email già etichettate ('spam' o 'non spam') impara a classificare nuove email. L'etichetta è la 'supervisione' — l'output corretto già fornito."
         },
         {
           "id": "c",
-          "testo": "Che le donne sono biologicamente più difficili da riconoscere da un sistema AI rispetto agli uomini",
+          "testo": "Il sistema trova strutture e pattern nei dati autonomamente, senza etichette predefinite",
           "corretto": false,
-          "feedback": "Non è corretto. Il problema non è biologico ma tecnico: i dataset erano sbilanciati. Con dataset bilanciati le prestazioni migliorano su tutti i gruppi.",
-          "riferimento": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
+          "feedback": "Non è corretto. Trovare strutture senza etichette è il machine learning non supervisionato (es. clustering). Nell'apprendimento supervisionato ogni esempio ha un output corretto associato."
         },
         {
           "id": "d",
-          "testo": "Che il riconoscimento facciale è impossibile con intelligenza artificiale",
+          "testo": "Il sistema impara attraverso l'interazione con un ambiente, ricevendo reward per azioni corrette e penalità per quelle sbagliate",
           "corretto": false,
-          "feedback": "Non è corretto. Il riconoscimento facciale funziona — ma con prestazioni molto diverse su diversi gruppi demografici a causa dei bias nei dati di addestramento.",
-          "riferimento": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
+          "feedback": "Non è corretto. Quello che descrivi è l'apprendimento per rinforzo. Nel supervisionato il sistema riceve coppie (input, output corretto) già pronte, senza interagire con un ambiente."
         }
       ],
-      "spiegazione": "Joy Buolamwini e Timnit Gebru (2018) hanno analizzato sistemi commerciali di classificazione del genere da immagine facciale. Risultati: errore < 1% per uomini dalla pelle chiara; errore fino al 34,7% per donne dalla pelle scura. Causa: dataset di addestramento prevalentemente composti da volti maschili e di pelle chiara — il sistema aveva imparato dai dati disponibili, che erano sbilanciati.",
-      "riferimento_principale": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
-    },
-    {
-      "id": 4,
-      "livello": "F",
-      "domanda": "Cos'è l'apprendimento supervisionato nel machine learning?",
-      "opzioni": [
-        {
-          "id": "a",
-          "testo": "Un sistema che impara guardando un supervisore umano che esegue compiti",
-          "corretto": false,
-          "feedback": "Non è corretto. 'Supervisionato' si riferisce ai dati etichettati forniti al sistema, non alla supervisione da parte di un umano durante l'esecuzione.",
-          "riferimento": "📖 ESPLORA — Machine learning: come le macchine imparano"
-        },
-        {
-          "id": "b",
-          "testo": "Il sistema riceve esempi etichettati (input + output corretto) e impara a riprodurre l'associazione su nuovi input mai visti",
-          "corretto": true,
-          "feedback": "Esatto! Esempio: un classificatore di spam addestrato su 100.000 email etichettate 'spam/non spam' impara a classificare nuove email. L'etichetta è la 'supervisione'."
-        },
-        {
-          "id": "c",
-          "testo": "Un sistema che controlla continuamente se stesso per trovare e correggere i propri errori",
-          "corretto": false,
-          "feedback": "Non è corretto. Questo sarebbe più vicino all'apprendimento per rinforzo o all'autoapprendimento. Nell'apprendimento supervisionato i dati etichettati vengono forniti esternamente.",
-          "riferimento": "📖 ESPLORA — Machine learning: come le macchine imparano"
-        },
-        {
-          "id": "d",
-          "testo": "Un sistema che trova strutture e pattern nei dati senza etichette predefinite",
-          "corretto": false,
-          "feedback": "Non è corretto. Trovare strutture senza etichette è apprendimento non supervisionato. Nell'apprendimento supervisionato ogni esempio ha un output corretto (etichetta) associato.",
-          "riferimento": "📖 ESPLORA — Machine learning: come le macchine imparano"
-        }
-      ],
-      "spiegazione": "Nell'apprendimento supervisionato il sistema riceve coppie (input, output corretto) chiamate esempi etichettati. Un classificatore di email spam viene addestrato su 100.000 email già etichettate come 'spam' o 'non spam'. Dopo l'addestramento, data una nuova email non etichettata, il sistema predice la categoria. Applicazioni: riconoscimento di immagini, traduzione automatica, diagnosi medica.",
+      "spiegazione": "Nell'apprendimento supervisionato il sistema riceve esempi etichettati: coppie (input, output corretto). Un riconoscitore di immagini viene addestrato su milioni di foto già etichettate ('gatto', 'cane', 'auto'). Dopo l'addestramento, dato un nuovo input mai visto, il sistema predice la categoria. È il tipo più diffuso in applicazioni pratiche: filtri antispam, diagnosi medica, riconoscimento facciale.",
       "riferimento_principale": "📖 ESPLORA — Machine learning: come le macchine imparano"
     },
     {
-      "id": 5,
-      "livello": "F",
-      "domanda": "Cosa stabilisce il rischio 'inaccettabile' nell'AI Act europeo (2024)?",
-      "opzioni": [
-        {
-          "id": "a",
-          "testo": "I sistemi AI che costano più di 1 milione di euro devono essere approvati dal governo",
-          "corretto": false,
-          "feedback": "Non è corretto. L'AI Act classifica i sistemi per tipo di rischio potenziale sulla società, non per costo.",
-          "riferimento": "📖 ESPLORA — L'AI Act europeo: la prima grande regolamentazione dell'IA nel mondo"
-        },
-        {
-          "id": "b",
-          "testo": "Sistemi come il social scoring, la manipolazione subliminale e il riconoscimento biometrico in tempo reale in spazi pubblici — vietati esplicitamente",
-          "corretto": true,
-          "feedback": "Esatto! L'AI Act vieta i sistemi 'inaccettabili': social scoring (come in Cina), manipolazione subliminale, identificazione biometrica in tempo reale in spazi pubblici (con poche eccezioni per sicurezza nazionale)."
-        },
-        {
-          "id": "c",
-          "testo": "Tutti i sistemi AI usati da aziende private: solo le pubbliche amministrazioni possono usare l'IA",
-          "corretto": false,
-          "feedback": "Non è corretto. L'AI Act non proibisce alle aziende private di usare l'IA. Stabilisce obblighi diversi in base al livello di rischio del sistema specifico.",
-          "riferimento": "📖 ESPLORA — L'AI Act europeo: la prima grande regolamentazione dell'IA nel mondo"
-        },
-        {
-          "id": "d",
-          "testo": "Qualsiasi sistema AI che non è in grado di spiegare le proprie decisioni in linguaggio umano",
-          "corretto": false,
-          "feedback": "Non è corretto. La spiegabilità (XAI) è un requisito per certi sistemi ad alto rischio, non la definizione di rischio inaccettabile.",
-          "riferimento": "📖 ESPLORA — L'AI Act europeo: la prima grande regolamentazione dell'IA nel mondo"
-        }
-      ],
-      "spiegazione": "L'AI Act (agosto 2024) classifica i sistemi AI per rischio. Rischio inaccettabile (vietati): social scoring basato su caratteristiche protette, manipolazione subliminale, classificazione per etnia/religione/orientamento sessuale, riconoscimento delle emozioni al lavoro e a scuola, identificazione biometrica in tempo reale in spazi pubblici (con eccezioni).",
-      "riferimento_principale": "📖 ESPLORA — L'AI Act europeo: la prima grande regolamentazione dell'IA nel mondo"
-    },
-    {
-      "id": 6,
+      "id": 4,
       "livello": "F",
       "domanda": "Come genera testo un LLM (Large Language Model) come GPT-4?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Cerca nelle sue basi di dati la risposta più recente all'argomento richiesto",
+          "testo": "Cerca nel suo database interno la risposta più recente all'argomento richiesto",
           "corretto": false,
-          "feedback": "Non è corretto. I LLM non cercano in database in tempo reale (a meno di strumenti specifici). Generano testo token per token basandosi su distribuzioni statistiche apprese durante il training.",
-          "riferimento": "📖 ESPLORA — IA generativa: come funziona un LLM"
+          "feedback": "Non è corretto. I LLM non cercano in database in tempo reale (a meno di strumenti aggiuntivi). Generano testo token per token basandosi su distribuzioni statistiche apprese durante il training."
         },
         {
           "id": "b",
-          "testo": "Dato un testo di input, calcola per ogni possibile token successivo la probabilità che compaia in quella posizione e seleziona token con alta probabilità uno alla volta",
+          "testo": "Dato il testo di input, calcola la probabilità di ogni possibile token successivo e seleziona uno con alta probabilità — un token alla volta, ripetendo il processo",
           "corretto": true,
-          "feedback": "Esatto! La risposta viene generata un token alla volta. Ogni token è condizionato da tutti quelli precedenti. Il parametro 'temperature' controlla quanto è casuale la selezione."
+          "feedback": "Esatto! La risposta viene costruita un token alla volta. Ogni token è condizionato da tutti quelli precedenti. Il parametro 'temperature' controlla quanto è casuale la selezione."
         },
         {
           "id": "c",
           "testo": "Chiede a ingegneri umani di verificare le risposte prima di mostrarle all'utente",
           "corretto": false,
-          "feedback": "Non è corretto. I LLM generano risposte automaticamente senza intervento umano in tempo reale. La supervisione umana avviene nell'addestramento (RLHF), non durante le conversazioni.",
-          "riferimento": "📖 ESPLORA — IA generativa: come funziona un LLM"
+          "feedback": "Non è corretto. I LLM generano risposte automaticamente senza intervento umano in tempo reale. La supervisione umana avviene nella fase di addestramento (RLHF), non durante le conversazioni."
         },
         {
           "id": "d",
-          "testo": "Copia e incolla frasi da siti web che corrispondono alla domanda",
+          "testo": "Copia e incolla frasi da siti web che corrispondono semanticamente alla domanda",
           "corretto": false,
-          "feedback": "Non è corretto. I LLM non copiano da siti web in tempo reale: generano nuovo testo basandosi su pattern statistici appresi durante l'addestramento.",
-          "riferimento": "📖 ESPLORA — IA generativa: come funziona un LLM"
+          "feedback": "Non è corretto. I LLM non copiano da siti web in tempo reale: generano nuovo testo basandosi su pattern statistici appresi durante l'addestramento. Non è una funzione di copia-incolla."
         }
       ],
-      "spiegazione": "Un LLM genera testo un token alla volta: dato il testo di input, calcola la distribuzione di probabilità su tutti i possibili token successivi e seleziona uno con alta probabilità. Il processo si ripete finché la risposta è completa. Il parametro 'temperature' controlla la casualità: bassa = risposte conservative; alta = risposte creative ma meno accurate.",
+      "spiegazione": "Un LLM genera testo un token alla volta: dato il testo di input (il prompt), calcola la distribuzione di probabilità su tutti i possibili token successivi (decine di migliaia di opzioni) e seleziona uno con alta probabilità. Il processo si ripete finché la risposta è completa. Il parametro 'temperature' controlla la casualità: bassa = risposte conservative e prevedibili; alta = risposte più creative ma meno accurate.",
       "riferimento_principale": "📖 ESPLORA — IA generativa: come funziona un LLM"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cos'è un 'bias algoritmico' in un sistema di intelligenza artificiale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un errore casuale di calcolo causato da imprecisioni nella matematica del processore",
+          "corretto": false,
+          "feedback": "Non è corretto. Il bias algoritmico non è casuale né un errore di calcolo. È una distorsione sistematica e ripetibile nei risultati del sistema, appresa durante l'addestramento."
+        },
+        {
+          "id": "b",
+          "testo": "Una distorsione sistematica nei risultati di un sistema AI, causata da bias nei dati di addestramento, nella definizione del problema o nel meccanismo di feedback — non è casuale, è appresa",
+          "corretto": true,
+          "feedback": "Esatto! Un sistema ML impara dai dati: se i dati riflettono bias del mondo reale (es. dataset prevalentemente maschile), il sistema li apprende e può amplificarli. Il bias non è un bug casuale — è un pattern."
+        },
+        {
+          "id": "c",
+          "testo": "Un bug nel codice sorgente del sistema che produce errori solo in certi casi",
+          "corretto": false,
+          "feedback": "Non è corretto. Il bias algoritmico non è un bug nel codice. Il codice può funzionare perfettamente dal punto di vista tecnico e produrre comunque risultati distorti, perché il bias è nei dati o nelle scelte di design."
+        },
+        {
+          "id": "d",
+          "testo": "Un problema che riguarda solo i sistemi di riconoscimento facciale, non i LLM",
+          "corretto": false,
+          "feedback": "Non è corretto. Il bias algoritmico può colpire qualsiasi sistema AI: sistemi di raccomandazione, LLM, sistemi di selezione del personale, sistemi di credito — non solo il riconoscimento facciale."
+        }
+      ],
+      "spiegazione": "Il bias algoritmico è una distorsione sistematica nei risultati di un sistema AI. Tre fonti principali: (1) dati di addestramento sbilanciati (es. dataset prevalentemente maschile e con pelle chiara → errori maggiori su donne con pelle scura); (2) definizione del problema — cosa si ottimizza; (3) feedback loop — le raccomandazioni amplificano preferenze esistenti. Non è casuale: è appreso e ripetibile.",
+      "riferimento_principale": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "L'AI Act europeo (Reg. UE 2024/1689) classifica come 'rischio inaccettabile' e vieta esplicitamente alcune categorie di sistemi AI. Quale delle seguenti rientra in questa categoria?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I filtri antispam nelle email",
+          "corretto": false,
+          "feedback": "Non è corretto. I filtri antispam sono classificati come rischio minimo dall'AI Act — non richiedono obblighi specifici perché il rischio per le persone è trascurabile."
+        },
+        {
+          "id": "b",
+          "testo": "Il social scoring: sistemi che assegnano punteggi ai cittadini in base al loro comportamento per determinare l'accesso a servizi o opportunità",
+          "corretto": true,
+          "feedback": "Esatto! Il social scoring (come quello usato in Cina) è vietato come rischio inaccettabile, insieme a: manipolazione subliminale, identificazione biometrica in tempo reale in spazi pubblici, riconoscimento delle emozioni a scuola e al lavoro."
+        },
+        {
+          "id": "c",
+          "testo": "I chatbot di assistenza clienti usati dalle aziende per rispondere alle domande frequenti",
+          "corretto": false,
+          "feedback": "Non è corretto. I chatbot per l'assistenza clienti sono classificati come rischio limitato dall'AI Act. Devono dichiarare di essere AI, ma non sono vietati."
+        },
+        {
+          "id": "d",
+          "testo": "I sistemi AI usati per personalizzare i risultati di ricerca su Google",
+          "corretto": false,
+          "feedback": "Non è corretto. I sistemi di personalizzazione dei risultati di ricerca sono classificati come rischio minimo o limitato. Il rischio inaccettabile riguarda sistemi che minano i diritti fondamentali o che manipolano il comportamento in modo occulto."
+        }
+      ],
+      "spiegazione": "L'AI Act (agosto 2024) classifica i sistemi AI per livello di rischio. Rischio inaccettabile (vietati): social scoring, manipolazione subliminale, sistemi di classificazione per etnia/religione/orientamento sessuale, riconoscimento delle emozioni in contesti lavorativi e scolastici, identificazione biometrica in tempo reale in spazi pubblici (con poche eccezioni). Questi sistemi sono considerati incompatibili con i valori fondamentali dell'UE.",
+      "riferimento_principale": "📖 ESPLORA — L'AI Act europeo"
     },
     {
       "id": 7,
       "livello": "I",
-      "domanda": "Il caso COMPAS del 2016 mostra un AI usato nei tribunali americani per predire la recidiva. Qual era il bias documentato e cosa lo causava?",
+      "domanda": "Lo studio Gender Shades (2018, Joy Buolamwini e Timnit Gebru, MIT) ha rivelato tassi di errore molto diversi nei sistemi di riconoscimento facciale. Quali erano i risultati e cosa li causava?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il sistema era più accurato in estate che in inverno a causa della temperatura dei server",
+          "testo": "Errore maggiore per le persone anziane rispetto ai giovani, causato dalla qualità delle foto nelle banche dati",
           "corretto": false,
-          "feedback": "Non è corretto. Il bias non aveva cause ambientali. Era un bias demografico legato alla composizione del dataset di addestramento.",
-          "riferimento": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
+          "feedback": "Non è corretto. Lo studio ha analizzato le differenze per genere e tono della pelle, non per età. Il bias demografico rilevato riguardava donne con pelle scura, non anziani."
         },
         {
           "id": "b",
-          "testo": "Il sistema classificava erroneamente i cittadini neri come 'ad alto rischio' quasi il doppio delle volte rispetto ai bianchi, perché i dati storici riflettevano discriminazioni storiche nel sistema penale",
+          "testo": "Errore < 1% per uomini con pelle chiara; fino al 34,7% per donne con pelle scura — causato da dataset di addestramento sbilanciati, prevalentemente maschili e con pelle chiara",
           "corretto": true,
-          "feedback": "Esatto! ProPublica ha trovato: 28% di falsi positivi per cittadini neri vs 16% per bianchi. La causa: dati storici che riflettevano discriminazioni preesistenti nel sistema di giustizia americano."
+          "feedback": "Esatto! I sistemi avevano imparato principalmente da dataset sbilanciati. Con meno esempi di donne con pelle scura nel training, il sistema era molto meno preciso su quel gruppo."
         },
         {
           "id": "c",
-          "testo": "Il sistema funzionava solo per reati minori e non per crimini gravi, causando decisioni errate per la criminalità seria",
+          "testo": "Errore uguale per tutti i gruppi demografici, circa il 15% — lo studio ha concluso che i sistemi erano giusti",
           "corretto": false,
-          "feedback": "Non è corretto. Il bias descritto nel testo è demografico (differenze nei tassi di errore per diversi gruppi etnici), non legato al tipo di reato.",
-          "riferimento": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
+          "feedback": "Non è corretto. Gender Shades ha dimostrato esattamente il contrario: grandi differenze nei tassi di errore tra gruppi demografici. L'errore variava da < 1% a 34,7% — una differenza enorme."
         },
         {
           "id": "d",
-          "testo": "Il sistema non era stato aggiornato da 10 anni e i dati erano obsoleti",
+          "testo": "Errore maggiore di notte rispetto al giorno, a causa delle condizioni di illuminazione delle fotocamere",
           "corretto": false,
-          "feedback": "Non è corretto. Il problema non era l'obsolescenza dei dati, ma il fatto che i dati storici riflettevano discriminazioni sistemiche preesistenti che il sistema aveva imparato e amplificato.",
-          "riferimento": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
+          "feedback": "Non è corretto. Il bias rilevato da Gender Shades era demografico (genere e tono della pelle), non ambientale. Le condizioni di illuminazione sono un problema tecnico diverso."
         }
       ],
-      "spiegazione": "ProPublica ha analizzato 7.000 casi in Florida: il sistema COMPAS classificava erroneamente i cittadini neri come 'ad alto rischio di recidiva' il 28% delle volte vs il 16% per i bianchi. La causa: i dati storici di addestramento riflettevano discriminazioni già presenti nel sistema penale. Il sistema ha imparato — e amplificato — le disuguaglianze preesistenti.",
+      "spiegazione": "Joy Buolamwini (MIT) e Timnit Gebru (Google Brain) hanno analizzato tre sistemi commerciali di classificazione del genere da immagine facciale: errore < 1% per uomini con pelle chiara; fino al 34,7% per donne con pelle scura. Causa: dataset di addestramento prevalentemente composti da volti maschili e di pelle chiara. Il sistema aveva appreso dai dati disponibili, che erano sistematicamente sbilanciati.",
       "riferimento_principale": "📖 ESPLORA — Bias algoritmici: quando i dati riflettono le disuguaglianze"
     },
     {
       "id": 8,
       "livello": "I",
-      "domanda": "Cosa si intende per 'inverni dell'IA' nella storia dell'intelligenza artificiale?",
+      "domanda": "Il sistema COMPAS (2016) veniva usato nei tribunali americani per predire la probabilità di recidiva. ProPublica ha dimostrato che era discriminatorio — ma l'azienda produttrice sosteneva che fosse 'statisticamente calibrato'. Come è possibile che entrambe le affermazioni siano vere?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Periodi in cui le temperature nei data center erano troppo basse per far funzionare i computer",
+          "testo": "Non è possibile: se un sistema è statisticamente calibrato, non può essere discriminatorio per definizione",
           "corretto": false,
-          "feedback": "Non è corretto. Gli 'inverni dell'IA' non hanno nulla a che fare con la temperatura fisica. Sono periodi metaforici di declino dei finanziamenti e dell'interesse.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. Accuratezza statistica globale e giustizia tra sottogruppi sono metriche diverse che possono essere in conflitto. Un sistema può essere accurato sulla media e al contempo distribuire gli errori in modo ineguale tra gruppi."
         },
         {
           "id": "b",
-          "testo": "Periodi di riduzione drastica dei finanziamenti e dell'interesse verso l'IA, dopo che le promesse ottimistiche non si erano realizzate nei tempi previsti",
+          "testo": "'Calibrato' significa accurato sulla media statistica del gruppo totale — ma il tasso di falsi positivi era quasi doppio per i cittadini neri (28%) rispetto ai bianchi (16%): le medie nascondono le disuguaglianze tra sottogruppi",
           "corretto": true,
-          "feedback": "Esatto! La storia dell'IA alterna cicli di ottimismo esagerato e delusione. Il testo descrive due inverni principali: 1969-1974 e 1987-1993, entrambi seguiti da promesse non mantenute."
+          "feedback": "Esatto! Il sistema era calibrato nel senso che la sua accuratezza globale era simile tra i gruppi. Ma la distribuzione degli errori era sistematicamente ineguale: i cittadini neri venivano erroneamente classificati come 'ad alto rischio' quasi il doppio delle volte."
         },
         {
           "id": "c",
-          "testo": "Periodi in cui i ricercatori si incontravano meno frequentemente a causa del maltempo",
+          "testo": "L'azienda mentiva: i dati di ProPublica dimostrano che il sistema non era calibrato in nessun senso",
           "corretto": false,
-          "feedback": "Non è corretto. Gli 'inverni dell'IA' sono una metafora che indica periodi di riduzione dei finanziamenti e dell'attività di ricerca, non eventi climatici.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. L'azienda usava una definizione tecnica legittima di 'calibrazione' (accuratezza globale simile tra gruppi). Il problema era che questa metrica non cattura la distribuzione ineguale dei falsi positivi."
         },
         {
           "id": "d",
-          "testo": "Il periodo invernale in cui i computer funzionano meglio perché le temperature sono più basse",
+          "testo": "ProPublica usava dati sbagliati: il sistema era sia calibrato sia non discriminatorio",
           "corretto": false,
-          "feedback": "Non è corretto. È una metafora storica, non un fenomeno fisico. Gli 'inverni' indicano periodi di riduzione dei finanziamenti e dell'interesse accademico e industriale verso l'IA.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. ProPublica ha analizzato 7.000 casi reali in Florida con una metodologia peer-reviewed. I risultati hanno aperto un dibattito scientifico su quali metriche usare per valutare la 'giustizia' algoritmica."
         }
       ],
-      "spiegazione": "La storia dell'IA alterna cicli di ottimismo esagerato e delusione ('inverni'). Primo inverno (1969-1974): le promesse degli anni '50 ('entro 20 anni macchine che fanno qualsiasi lavoro umano') si rivelano irrealistiche. Secondo inverno (1987-1993): i sistemi esperti falliscono. La lezione: 'ogni nuova tecnologia viene sopravvalutata nel breve periodo e spesso sottovalutata nel lungo.'",
-      "riferimento_principale": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+      "spiegazione": "Il caso COMPAS illustra il conflitto tra diverse definizioni di 'giustizia algoritmica'. L'azienda aveva ottimizzato la calibrazione complessiva (l'accuratezza media era simile per tutti i gruppi). ProPublica ha misurato il false positive rate per sottogruppo: 28% per cittadini neri vs 16% per bianchi. Le scelte di quali metriche ottimizzare riflettono scelte di valori — e queste scelte possono essere in conflitto matematico.",
+      "riferimento_principale": "📖 ESPLORA — Bias algoritmici: il caso COMPAS"
     },
     {
       "id": 9,
       "livello": "I",
-      "domanda": "Perché il Box T8 stabilisce che 'mai descrivere l'IA senza menzionare errori, limiti, verifica, controllo umano'?",
+      "domanda": "Come si distingue il machine learning 'per rinforzo' dall'apprendimento supervisionato, e come lo ha usato AlphaGo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché è un requisito legale dell'AI Act europeo per tutte le comunicazioni sull'IA",
+          "testo": "Non ci sono differenze: il rinforzo è solo un modo più rapido di fare apprendimento supervisionato",
           "corretto": false,
-          "feedback": "Non è corretto. Il Box T8 non è un riferimento all'AI Act, ma una linea guida editoriale di questo libro per un uso critico dell'IA nella didattica.",
-          "riferimento": "📖 ESPLORA — Box T8 — IA critica: mai descrivere l'IA senza menzionare errori, limiti, verifica, controllo umano"
+          "feedback": "Non è corretto. Sono paradigmi fondamentalmente diversi. Nel supervisionato il sistema riceve esempi già etichettati. Nel rinforzo non ci sono etichette: il sistema impara dall'interazione con un ambiente tramite reward e penalità."
         },
         {
           "id": "b",
-          "testo": "Perché ogni sistema AI sbaglia, ha limiti di dominio, può produrre allucinazioni, e le decisioni significative devono rimanere in mano a esseri umani responsabili",
+          "testo": "Nel rinforzo non ci sono esempi etichettati: un agente interagisce con un ambiente, riceve reward per azioni corrette e penalità per quelle errate. AlphaGo ha giocato milioni di partite contro se stesso per imparare strategie che nessun umano aveva mai concepito",
           "corretto": true,
-          "feedback": "Esatto! Le 4 regole del Box T8: Errori (ogni sistema AI sbaglia), Limiti (ogni sistema ha un dominio), Verifica (ogni output va verificato), Controllo umano (per decisioni significative)."
+          "feedback": "Esatto! AlphaGo ha usato prima apprendimento supervisionato (partite umane) poi per rinforzo (auto-play). Dalla fase di rinforzo sono emerse strategie talmente inusuali che i maestri di Go le hanno studiate come nuove aperture."
         },
         {
           "id": "c",
-          "testo": "Perché le aziende AI pagano per avere recensioni positive e quindi i testi scolastici devono bilanciare con critiche",
+          "testo": "Il rinforzo usa etichette negative (penalità) invece di etichette positive (output corretto) — è solo una variante del supervisionato",
           "corretto": false,
-          "feedback": "Non è corretto. Il Box T8 non riguarda il bilanciamento delle recensioni commerciali. È una guida metodologica per un uso critico e consapevole dell'IA.",
-          "riferimento": "📖 ESPLORA — Box T8 — IA critica"
+          "feedback": "Non è corretto. Il rinforzo non usa etichette nel senso tradizionale. L'agente scopre da solo cosa funziona interagendo con l'ambiente: non esiste un 'output corretto' predefinito per ogni azione."
         },
         {
           "id": "d",
-          "testo": "Perché i minori di 14 anni non possono usare sistemi AI senza la supervisione di un adulto",
+          "testo": "Il rinforzo non è adatto a giochi come il Go: AlphaGo ha usato solo apprendimento supervisionato",
           "corretto": false,
-          "feedback": "Non è corretto. Il Box T8 non riguarda le fasce d'età. Stabilisce principi metodologici per un uso critico dell'IA a qualsiasi età.",
-          "riferimento": "📖 ESPLORA — Box T8 — IA critica"
+          "feedback": "Non è corretto. AlphaGo ha usato entrambi i tipi: prima supervisionato per apprendere dalle partite umane, poi per rinforzo giocando milioni di partite contro se stesso. La fase di rinforzo ha prodotto le strategie più innovative."
         }
       ],
-      "spiegazione": "Il Box T8 stabilisce 4 principi obbligatori per ogni MC che parla di IA: Errori (il tasso di errore zero non esiste), Limiti (ogni sistema ha un dominio di competenza specifico), Verifica (ogni output factual va verificato su fonti indipendenti), Controllo umano (per decisioni significative — assunzione, credito, diagnosi — la decisione finale deve rimanere umana).",
-      "riferimento_principale": "📖 ESPLORA — Box T8 — IA critica: mai descrivere l'IA senza menzionare errori, limiti, verifica, controllo umano"
+      "spiegazione": "Apprendimento per rinforzo: un agente esplora un ambiente, riceve reward per azioni corrette e penalità per quelle sbagliate, e aggiorna la strategia per massimizzare il reward totale. Non ci sono etichette: il sistema scopre da solo cosa funziona. AlphaGo: fase 1 — supervisionato su milioni di partite umane; fase 2 — rinforzo con milioni di partite contro se stesso. Dalla fase 2 sono emerse mosse che i maestri di Go non avevano mai visto.",
+      "riferimento_principale": "📖 ESPLORA — Machine learning: come le macchine imparano"
     },
     {
       "id": 10,
       "livello": "I",
-      "domanda": "Cosa ha rivoluzionato la ricerca AI nel 2012 con AlexNet, rispetto ai metodi precedenti?",
+      "domanda": "Il parametro 'temperature' di un LLM controlla la casualità nella generazione del testo. Cosa cambia tra una temperature bassa e una alta?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "AlexNet ha usato più regole scritte a mano dagli esperti di immagini, ottenendo più precisione",
+          "testo": "La temperature controlla la velocità di risposta: alta = risposta più veloce, bassa = risposta più lenta",
           "corretto": false,
-          "feedback": "Non è corretto. AlexNet ha usato esattamente il contrario: reti neurali profonde addestrate sui dati, senza regole scritte a mano.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. La temperature non influisce sulla velocità di generazione. Controlla la distribuzione di probabilità usata per selezionare il token successivo, non la velocità di calcolo."
         },
         {
           "id": "b",
-          "testo": "AlexNet ha usato reti neurali profonde addestrate su GPU, ottenendo il 15,3% di errore contro il 26,2% del secondo classificato — aprendo l'era del deep learning",
+          "testo": "Temperature alta → più casualità nella selezione del token → risposte più creative ma meno accurate; bassa → sceglie quasi sempre il token più probabile → risposte prevedibili e conservative",
           "corretto": true,
-          "feedback": "Esatto! Al contest ImageNet 2012, AlexNet ha dimostrato che le reti neurali profonde addestrate su GPU erano decisamente superiori ai metodi tradizionali. Da quel momento il deep learning è diventato lo standard."
+          "feedback": "Esatto! Con temperature bassa il modello sceglie quasi sempre il token con probabilità più alta — risposte coerenti e accurate. Con temperature alta introduce più casualità — risposte più creative e variabili, ma con maggiore rischio di errori."
         },
         {
           "id": "c",
-          "testo": "AlexNet ha usato un database più grande di immagini, ma lo stesso algoritmo dei sistemi precedenti",
+          "testo": "La temperature determina la lunghezza della risposta: alta = risposta lunga, bassa = risposta corta",
           "corretto": false,
-          "feedback": "Non è corretto. La rivoluzione non era solo nella quantità dei dati, ma nell'architettura (rete neurale profonda) e nell'uso delle GPU per l'addestramento.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. La lunghezza della risposta è controllata da altri parametri (es. max_tokens). La temperature controlla solo la distribuzione di probabilità nella selezione di ogni token."
         },
         {
           "id": "d",
-          "testo": "AlexNet ha introdotto i sistemi esperti con migliaia di regole su come classificare le immagini",
+          "testo": "Non cambia nulla nel risultato finale: la temperature è un parametro tecnico interno senza effetti visibili",
           "corretto": false,
-          "feedback": "Non è corretto. I sistemi esperti erano stati il paradigma precedente (anni '80) e avevano fallito. AlexNet ha usato l'approccio opposto: apprendimento da dati.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. La temperature ha effetti molto visibili sul tipo di risposta. A temperature 0 il modello è quasi deterministico (risponde sempre allo stesso modo alla stessa domanda). A temperature 1+ le risposte variano significativamente."
         }
       ],
-      "spiegazione": "Al contest ImageNet 2012, AlexNet di Geoffrey Hinton ha ottenuto il 15,3% di errore contro il 26,2% del secondo classificato — quasi la metà. AlexNet usava una rete neurale profonda addestrata su GPU. Il risultato ha dimostrato che il deep learning con GPU era decisamente superiore ai metodi precedenti, aprendo l'era moderna dell'IA.",
-      "riferimento_principale": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+      "spiegazione": "La temperature regola la 'casualità' nella generazione: modifica la distribuzione di probabilità da cui il modello campiona il token successivo. Temperature bassa (0-0.3): favorisce quasi sempre il token più probabile — risposte prevedibili, accurate, adatte a compiti tecnici. Temperature alta (0.7-1.5): distribuisce la probabilità su più opzioni — risposte più creative e variabili, adatte alla generazione creativa ma con maggiore rischio di allucinazioni.",
+      "riferimento_principale": "📖 ESPLORA — IA generativa: come funziona un LLM"
     },
     {
       "id": 11,
       "livello": "I",
-      "domanda": "Perché ChatGPT ha raggiunto 1 milione di utenti in 5 giorni (vs 75 giorni di Instagram) ed è considerato un momento di svolta?",
+      "domanda": "GPT-4 ha circa 1 trilione di parametri. Cosa rappresentano questi parametri e cosa NON rappresentano?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché era gratuito mentre Instagram inizialmente aveva un costo",
+          "testo": "Rappresentano le righe di codice sorgente del modello: più codice = più intelligente",
           "corretto": false,
-          "feedback": "Non è corretto. Instagram era gratuito sin dall'inizio. La differenza sta nel tipo di capacità offerta: un sistema che conversa in linguaggio naturale era senza precedenti.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. I parametri non sono righe di codice. Sono valori numerici (pesi) della rete neurale, modificati durante il training per minimizzare gli errori."
         },
         {
           "id": "b",
-          "testo": "Perché ha reso accessibile a chiunque un sistema capace di conversare, scrivere e spiegare in linguaggio naturale — democratizzando l'IA generativa",
+          "testo": "Sono i pesi numerici della rete neurale, modificati durante l'addestramento — non rappresentano 'conoscenza' memorizzata ma associazioni statistiche tra token che guidano la generazione",
           "corretto": true,
-          "feedback": "Esatto! Il testo lo chiama 'democratizzazione dell'IA generativa': per la prima volta chiunque con un browser poteva interagire con un sistema AI sofisticato. Un momento paragonabile all'introduzione del web."
+          "feedback": "Esatto! I parametri sono numeri reali che pesano le connessioni nella rete neurale. Non c'è 'conoscenza' esplicita memorizzata: ci sono pattern statistici appresi dall'enorme corpus di testo su cui il modello è stato addestrato."
         },
         {
           "id": "c",
-          "testo": "Perché era tecnicamente superiore a qualsiasi sistema precedente in tutte le misure",
+          "testo": "Rappresentano i fatti memorizzati nel database del modello: 1 trilione di parametri = 1 trilione di fatti",
           "corretto": false,
-          "feedback": "Non è corretto. La superiorità tecnica assoluta non è l'unica ragione. La ragione principale è l'accessibilità: per la prima volta un sistema AI avanzato era usabile da chiunque senza competenze tecniche.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. I parametri non sono fatti memorizzati in modo discreto. Sono pesi continui di una rete neurale: la 'conoscenza' è distribuita tra miliardi di parametri, non archiviata come record singoli."
         },
         {
           "id": "d",
-          "testo": "Perché il governo americano aveva investito miliardi per renderlo popolare",
+          "testo": "Sono campioni del corpus di testo usato per l'addestramento: il modello memorizza frasi intere",
           "corretto": false,
-          "feedback": "Non è corretto. OpenAI non è un'azienda governativa. La diffusione rapida è stata organica — il risultato dell'utilità immediata percepita dagli utenti.",
-          "riferimento": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+          "feedback": "Non è corretto. I LLM non memorizzano frasi intere del corpus (a meno di overfitting). I parametri sono pesi appresi che generalizzano i pattern del corpus, non copie delle frasi originali."
         }
       ],
-      "spiegazione": "ChatGPT (novembre 2022) ha raggiunto 1 milione di utenti in 5 giorni — Instagram ne aveva impiegati 75, Netflix 41 mesi. La ragione: ha reso accessibile a chiunque l'IA generativa. Per la prima volta senza competenze tecniche si poteva conversare, ottenere spiegazioni, generare testi e codice. Il testo lo chiama 'democratizzazione dell'IA generativa'.",
-      "riferimento_principale": "📖 ESPLORA — Storia dell'intelligenza artificiale: un percorso non lineare"
+      "spiegazione": "I parametri di un LLM sono i pesi numerici della rete neurale — circa 1 trilione per GPT-4. Durante il training, la backpropagation modifica questi pesi per minimizzare l'errore di predizione sul corpus. I parametri non rappresentano fatti discreti: la 'conoscenza' è distribuita e implicita nelle associazioni statistiche tra token. L'addestramento di GPT-4 ha richiesto mesi su migliaia di GPU specializzate.",
+      "riferimento_principale": "📖 ESPLORA — Reti neurali e LLM"
     },
     {
       "id": 12,
       "livello": "I",
-      "domanda": "Cosa impara un sistema AI con l'apprendimento per rinforzo, e come lo usa AlphaGo?",
+      "domanda": "Perché il 2012 è considerato un anno di svolta nella storia dell'intelligenza artificiale, grazie ad AlexNet?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Impara guardando video di esperti che giocano e ripete i loro movimenti",
+          "testo": "Perché AlexNet ha usato più dati con lo stesso algoritmo dei sistemi precedenti, ottenendo risultati leggermente migliori",
           "corretto": false,
-          "feedback": "Non è corretto. Quello sarebbe apprendimento supervisionato (imitazione). Il rinforzo impara attraverso ricompense e penalità dall'interazione con l'ambiente.",
-          "riferimento": "📖 ESPLORA — Machine learning: come le macchine imparano"
+          "feedback": "Non è corretto. La rivoluzione non era solo nella quantità dei dati, ma nell'architettura (rete neurale profonda con più strati) e nell'uso delle GPU per l'addestramento — un approccio radicalmente diverso."
         },
         {
           "id": "b",
-          "testo": "Impara attraverso interazione con un ambiente, ricevendo ricompense per azioni corrette. AlphaGo si è allenato giocando milioni di partite contro se stesso, imparando da vittorie e sconfitte",
+          "testo": "AlexNet ha usato reti neurali profonde addestrate su GPU, ottenendo il 15,3% di errore su ImageNet contro il 26,2% del secondo classificato — quasi la metà — aprendo l'era del deep learning",
           "corretto": true,
-          "feedback": "Esatto! Il testo descrive: AlphaGo ha usato apprendimento supervisionato (partite umane) e poi per rinforzo (milioni di partite contro se stesso). Le strategie che ne sono emerse erano al di là di qualsiasi intuizione umana."
+          "feedback": "Esatto! Il salto di prestazione era così netto (da 26% a 15% di errore) da convincere l'intera comunità scientifica ad abbandonare i metodi tradizionali in favore del deep learning con GPU."
         },
         {
           "id": "c",
-          "testo": "Impara da un database statico di partite precedenti senza ulteriore interazione",
+          "testo": "Perché AlexNet ha introdotto i sistemi esperti con migliaia di regole scritte a mano dagli esperti di visione artificiale",
           "corretto": false,
-          "feedback": "Non è corretto. Usare un database statico è apprendimento supervisionato. Il rinforzo è dinamico: il sistema gioca, osserva le conseguenze, e aggiorna le sue strategie.",
-          "riferimento": "📖 ESPLORA — Machine learning: come le macchine imparano"
+          "feedback": "Non è corretto. I sistemi esperti con regole scritte a mano erano il paradigma precedente — quello che AlexNet ha superato. AlexNet usava l'approccio opposto: apprendimento automatico dai dati senza regole esplicite."
         },
         {
           "id": "d",
-          "testo": "Non fa nulla — AlphaGo usa solo apprendimento supervisionato, non per rinforzo",
+          "testo": "Perché AlexNet ha creato il primo chatbot capace di conversare in linguaggio naturale",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo descrive esplicitamente che AlphaGo ha usato una combinazione di apprendimento supervisionato e apprendimento per rinforzo (RLHF).",
-          "riferimento": "📖 ESPLORA — Machine learning: come le macchine imparano"
+          "feedback": "Non è corretto. AlexNet era un sistema di classificazione di immagini, non un chatbot. I LLM conversazionali sono arrivati molto dopo: GPT-3 nel 2020, ChatGPT nel 2022."
         }
       ],
-      "spiegazione": "L'apprendimento per rinforzo: un agente interagisce con un ambiente, riceve ricompense per azioni corrette e penalità per quelle sbagliate, e aggiorna la strategia per massimizzare le ricompense totali. AlphaGo ha usato prima apprendimento supervisionato (milioni di partite umane), poi per rinforzo (milioni di partite contro se stesso). Alla mossa 78 della 4° partita, Lee Sedol ha giocato una mossa che AlphaGo non aveva mai visto.",
-      "riferimento_principale": "📖 ESPLORA — Machine learning: come le macchine imparano"
+      "spiegazione": "Al contest ImageNet 2012, AlexNet (Krizhevsky, Sutskever e Hinton) ha ottenuto il 15,3% di errore contro il 26,2% del secondo classificato — quasi la metà. AlexNet usava una rete neurale profonda (8 strati) addestrata su GPU NVIDIA. Il risultato era così netto da segnare l'inizio dell'era del deep learning: da quel momento, le reti neurali profonde su GPU sono diventate lo standard per tutti i problemi di AI.",
+      "riferimento_principale": "📖 ESPLORA — Storia dell'intelligenza artificiale"
     },
     {
       "id": 13,
       "livello": "A",
-      "domanda": "Un LLM citato ha detto che 'il ricercatore italiano Marco Bertoni ha contribuito alla teoria della relatività'. Come si verifica questa affermazione e cosa ci si aspetta?",
+      "domanda": "L'AI Act europeo impone ai chatbot di dichiarare che sono AI (rischio limitato — obbligo di trasparenza). Perché il DM 183/2024 Traguardo D3 collega questa norma alla cittadinanza digitale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Si cerca 'Marco Bertoni relativita' su Google — se appare in molti siti, è probabile che sia vero",
+          "testo": "Perché l'obbligo di trasparenza serve principalmente alle aziende per evitare sanzioni, non ha rilevanza civica per i singoli utenti",
           "corretto": false,
-          "feedback": "Non è corretto. Il numero di siti che riportano un'informazione non verifica la sua veridicità — specialmente se altri siti hanno copiato da fonti di AI.",
-          "riferimento": "🌍 SPERIMENTA — Esperimento reale: testa un LLM"
+          "feedback": "Non è corretto. Il Traguardo D3 collega esplicitamente la norma alla cittadinanza: il diritto di sapere con chi si interagisce è un prerequisito per esercitare il giudizio critico, che è una competenza civica fondamentale."
         },
         {
           "id": "b",
-          "testo": "Si cerca su Google Scholar e sull'Enciclopedia Treccani — quasi certamente non si trova nessun 'Marco Bertoni' nella storia della relatività, rivelando un'allucinazione classica",
+          "testo": "Perché il cittadino ha il diritto di sapere se sta interagendo con una macchina o un essere umano: senza questa trasparenza non può esercitare giudizio critico sull'affidabilità delle informazioni — prerequisito per la libertà di scelta informata",
           "corretto": true,
-          "feedback": "Esatto! Il testo descrive questo come 'test di allucinazione deliberata': chiedere di una persona immaginaria plausibile. Se il LLM inventa una biografia, è un'allucinazione classica. La verifica su fonti autorevoli rivela l'errore."
+          "feedback": "Esatto! Sapere che si sta interagendo con un AI cambia come si valuta l'informazione ricevuta: si sa che può allucinare, che non ha esperienza vissuta, che le sue risposte dipendono da pattern statistici."
         },
         {
           "id": "c",
-          "testo": "Si chiede a un altro LLM più avanzato — se anche lui conferma, l'informazione è vera",
+          "testo": "Perché i chatbot AI devono essere usati solo a scuola, non nella vita privata: la dichiarazione serve a separare i due contesti",
           "corretto": false,
-          "feedback": "Non è corretto. Due LLM che concordano non verificano la veridicità. Entrambi potrebbero generare la stessa allucinazione plausibile dalla stessa distribuzione statistica.",
-          "riferimento": "📖 ESPLORA — Allucinazioni: quando l'IA inventa con sicurezza"
+          "feedback": "Non è corretto. L'AI Act non limita l'uso dei chatbot alla sfera scolastica. L'obbligo di trasparenza si applica in tutti i contesti perché il diritto a sapere con chi si interagisce è universale."
         },
         {
           "id": "d",
-          "testo": "Si accetta la risposta perché il LLM è più aggiornato di Wikipedia",
+          "testo": "Perché la norma protegge i minori dal rischio di innamorarsi di un chatbot, un problema medico riconosciuto dall'OMS",
           "corretto": false,
-          "feedback": "Non è corretto. I LLM non sono più affidabili di Wikipedia su fatti storici. Tendono ad allucinare su personaggi poco noti o immaginari con la stessa sicurezza di personaggi reali.",
-          "riferimento": "📖 ESPLORA — Allucinazioni: quando l'IA inventa con sicurezza"
+          "feedback": "Non è corretto. Sebbene esistano preoccupazioni sull'attaccamento emotivo ai chatbot, il DM 183/2024 D3 non fa riferimento a questo. La norma riguarda il diritto fondamentale a sapere con chi si interagisce per esercitare giudizio critico."
         }
       ],
-      "spiegazione": "Il testo descrive il 'test di allucinazione deliberata' nell'esperimento avanzato: chiedere di un personaggio immaginario che suona plausibile. Il LLM spesso genera una biografia dettagliata e convincente. La verifica su Google Scholar, Treccani o simili mostra che il personaggio non esiste. Questa è un'allucinazione classica: informazione falsa presentata con sicurezza.",
-      "riferimento_principale": "🌍 SPERIMENTA — Esperimento reale: testa un LLM"
+      "spiegazione": "Il Traguardo D3 del DM 183/2024 riguarda la valutazione critica dei sistemi IA come tema di cittadinanza. L'obbligo dell'AI Act di dichiarare che un chatbot è AI è rilevante per la cittadinanza perché: (1) il cittadino ha il diritto di sapere se sta ricevendo informazioni da una macchina; (2) senza questa trasparenza non può calibrare criticamente la fiducia; (3) la libertà di scelta informata — prerequisito della partecipazione democratica — richiede consapevolezza delle proprie fonti.",
+      "riferimento_principale": "📖 ESPLORA — L'AI Act europeo + DM 183/2024 D3"
     },
     {
       "id": 14,
       "livello": "A",
-      "domanda": "Il sistema di raccomandazione della biblioteca proposto nella SPERIMENTA Avanzata deve 'diversificare le letture'. Perché un sistema supervisionato che impara dalle preferenze passate va contro questo obiettivo?",
+      "domanda": "L'AI Act classifica alcuni sistemi come 'ad alto rischio' quando usati in istruzione o nell'occupazione. Quali obblighi impone e perché sono più stringenti rispetto ai sistemi a rischio limitato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i sistemi supervisionati sono troppo lenti per aggiornare le raccomandazioni in tempo reale",
+          "testo": "Nessun obbligo specifico aggiuntivo: i sistemi ad alto rischio in istruzione funzionano come quelli a rischio minimo",
           "corretto": false,
-          "feedback": "Non è corretto. La lentezza non è il problema. Il problema è strutturale: un sistema che apprende dalle preferenze passate tende a rafforzare quelle preferenze, non a diversificarle.",
-          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetta un sistema IA"
+          "feedback": "Non è corretto. L'AI Act prevede obblighi molto più stringenti per i sistemi ad alto rischio proprio perché le decisioni impattano direttamente le opportunità di vita delle persone."
         },
         {
           "id": "b",
-          "testo": "Perché un sistema che apprende dalle preferenze passate tende a consigliare 'più dello stesso', creando una 'bubble effect' che riduce la varietà delle letture invece di ampliarla",
+          "testo": "Valutazione di conformità prima del deployment, supervisione umana obbligatoria, documentazione trasparente, accuratezza e robustezza certificate — perché le decisioni impattano direttamente vita e opportunità delle persone",
           "corretto": true,
-          "feedback": "Esatto! Il testo chiede: 'Un sistema che impara dalle preferenze passate tende a raccomandare sempre più dello stesso. Come eviti il bubble effect?' Questo è il problema fondamentale dei sistemi di raccomandazione."
+          "feedback": "Esatto! Un sistema che decide chi viene ammesso a un corso universitario o chi ottiene un lavoro ha conseguenze enormi sulla vita reale. Per questo servono garanzie stringenti prima che il sistema possa essere usato."
         },
         {
           "id": "c",
-          "testo": "Perché il catalogo della biblioteca è troppo piccolo per addestrare un sistema supervisionato",
+          "testo": "Sono vietati come il rischio inaccettabile: nessun sistema AI può essere usato in istruzione o occupazione",
           "corretto": false,
-          "feedback": "Non è corretto. Il problema non è la dimensione del catalogo, ma il meccanismo intrinseco dei sistemi di raccomandazione basati su preferenze storiche.",
-          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetta un sistema IA"
+          "feedback": "Non è corretto. L'AI Act non vieta l'uso dell'AI in istruzione e occupazione. Lo permette, ma con obblighi stringenti: valutazione di conformità, supervisione umana, documentazione. I sistemi vietati sono solo quelli a rischio inaccettabile."
         },
         {
           "id": "d",
-          "testo": "Perché i sistemi supervisionati richiedono etichette che gli studenti non vogliono fornire",
+          "testo": "Solo l'obbligo di dichiarare che il sistema è AI — lo stesso dei chatbot a rischio limitato",
           "corretto": false,
-          "feedback": "Non è corretto. Le etichette (libri letti, valutazioni) possono essere raccolte automaticamente. Il problema è il bubble effect: il sistema apprende preferenze e le amplifica.",
-          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetta un sistema IA"
+          "feedback": "Non è corretto. La dichiarazione di essere AI è l'obbligo minimo dei sistemi a rischio limitato. I sistemi ad alto rischio hanno obblighi molto più ampi: conformità, supervisione umana, accuratezza certificata, registrazione in un database europeo."
         }
       ],
-      "spiegazione": "Il bubble effect dei sistemi di raccomandazione: se uno studente ha letto solo fantasy, il sistema raccomanda solo fantasy (massimizza la probabilità di lettura). L'obiettivo della biblioteca è diversificare — obiettivo opposto. La soluzione richiede vincoli espliciti (es. quota minima di generi diversi, autori di culture diverse) che vanno contro la pura ottimizzazione delle preferenze.",
-      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Progetta un sistema IA"
+      "spiegazione": "L'AI Act applica il principio di proporzionalità: più alto il rischio per le persone, più stringenti gli obblighi. Per i sistemi ad alto rischio in istruzione e occupazione: (1) valutazione di conformità obbligatoria prima del deployment; (2) supervisione umana obbligatoria — nessuna decisione automatica finale; (3) documentazione trasparente del funzionamento; (4) accuratezza, robustezza e sicurezza certificate; (5) registrazione in un database europeo. La ragione: un sistema che decide l'ammissione universitaria o la selezione del personale impatta direttamente la vita delle persone.",
+      "riferimento_principale": "📖 ESPLORA — L'AI Act europeo"
     },
     {
       "id": 15,
       "livello": "A",
-      "domanda": "Perché la statistica GDPR del 2016 citata dal testo (82% degli studenti che non distinguono pubblicità da articolo giornalistico) è collegata all'SDG 16?",
+      "domanda": "I sistemi di raccomandazione (TikTok, YouTube, Spotify) amplificano le preferenze esistenti tramite un meccanismo di feedback. Quale problema etico strutturale emerge?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché il SDG 16 riguarda la protezione delle foreste e le pubblicità online distruggono il senso critico ambientale degli studenti",
+          "testo": "Amplificano solo le fake news, non i contenuti autentici: il problema è solo informativo, non valoriale",
           "corretto": false,
-          "feedback": "Non è corretto. L'SDG 16 riguarda 'Pace, giustizia e istituzioni solide', non l'ambiente. L'SDG 13 è quello sul clima.",
-          "riferimento": "📖 ESPLORA — SDG 16 — Disinformazione e democrazia"
+          "feedback": "Non è corretto. Il problema non è limitato alle fake news. Qualsiasi contenuto — autentico o falso — che genera engagement viene amplificato. Il problema valoriale è che la bolla si restringe progressivamente, indipendentemente dalla qualità del contenuto."
         },
         {
           "id": "b",
-          "testo": "Perché l'SDG 16 chiede istituzioni solide e partecipazione democratica: riconoscere la disinformazione è un prerequisito per essere cittadini informati e per la tenuta delle istituzioni democratiche",
+          "testo": "La bolla informativa si restringe progressivamente — il sistema mostra più di ciò che già consumi, eliminando prospettive diverse; le piattaforme non hanno incentivo economico a diversificare perché l'engagement è massimizzato dalla specializzazione",
           "corretto": true,
-          "feedback": "Esatto! Il collegamento nel testo: 'saper distinguere una fonte affidabile da una fonte di disinformazione è — letteralmente — un atto politico: contribuisce a costruire la qualità del dibattito pubblico.'"
+          "feedback": "Esatto! È un conflitto strutturale: la piattaforma ottimizza l'engagement (che massimizza i ricavi pubblicitari) — la diversificazione riduce l'engagement, quindi va contro gli interessi economici della piattaforma."
         },
         {
           "id": "c",
-          "testo": "Perché l'SDG 16 richiede che tutte le pubblicità online siano chiaramente marcate come tali",
+          "testo": "Il problema si risolve facilmente se gli utenti scelgono consapevolmente cosa guardare: la responsabilità è solo individuale",
           "corretto": false,
-          "feedback": "Non è corretto. L'SDG 16 (Pace, giustizia e istituzioni solide) non contiene requisiti specifici sulla marcatura delle pubblicità. La connessione è più profonda: riguarda la democrazia informata.",
-          "riferimento": "📖 ESPLORA — SDG 16 — Disinformazione e democrazia"
+          "feedback": "Non è corretto. Il design del sistema è costruito per ridurre la scelta consapevole e massimizzare il tempo di sessione. Affidarsi alla sola responsabilità individuale trascura il potere strutturale del design dell'interfaccia."
         },
         {
           "id": "d",
-          "testo": "Perché l'SDG 16 è finanziato dalle aziende di fact-checking e quindi devono essere supportate nelle scuole",
+          "testo": "Riguarda solo le piattaforme di notizie, non le piattaforme di intrattenimento come TikTok o Spotify",
           "corretto": false,
-          "feedback": "Non è corretto. L'SDG 16 è un obiettivo dell'Agenda 2030 dell'ONU, non finanziato da aziende private.",
-          "riferimento": "📖 ESPLORA — SDG 16 — Disinformazione e democrazia"
+          "feedback": "Non è corretto. Il feedback loop colpisce tutte le piattaforme basate su raccomandazione algoritmica, indipendentemente dal tipo di contenuto. Anche le playlist musicali e i video di intrattenimento creano bubble di preferenza."
         }
       ],
-      "spiegazione": "Il collegamento è esplicito nel testo: 'La disinformazione è una minaccia diretta all'SDG 16: mina la fiducia nelle istituzioni, polarizza l'opinione pubblica, può influenzare elezioni.' Se l'82% degli studenti non distingue pubblicità da articolo giornalistico, la base informativa della democrazia è fragile. Saper valutare le fonti 'è esercizio attivo di cittadinanza democratica.'",
-      "riferimento_principale": "📖 ESPLORA — SDG 16 — Disinformazione e democrazia"
+      "spiegazione": "Il feedback loop dei sistemi di raccomandazione: il sistema mostra contenuti simili a quelli già consumati (massimizza l'engagement) → l'utente consuma più di quei contenuti → il sistema ne mostra ancora di più. La bolla si restringe progressivamente. Il problema etico strutturale: le piattaforme traggono ricavi dall'engagement, non dalla qualità informativa. Diversificare le raccomandazioni riduce l'engagement → riduce i ricavi. Non c'è incentivo economico a rompere la bolla.",
+      "riferimento_principale": "📖 ESPLORA — Bias algoritmici e feedback loop"
     },
     {
       "id": 16,
       "livello": "A",
-      "domanda": "Perché, secondo il collegamento STEM-Matematica, la questione della 'giustizia algoritmica' (come nel caso COMPAS) non è solo filosofica ma matematica?",
+      "domanda": "L'affermazione 'l'IA non ha opinioni, quindi è neutrale e obiettiva' è un errore comune. Perché è sbagliata, secondo il testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i giudici devono usare la matematica per capire le sentenze algoritmica",
+          "testo": "Perché i sistemi AI hanno effettivamente opinioni politiche programmate dagli ingegneri che li costruiscono",
           "corretto": false,
-          "feedback": "Non è corretto. Il punto non è la competenza matematica dei giudici, ma il fatto che le disuguaglianze algoritmiche sono misurabili con strumenti statistici precisi.",
-          "riferimento": "🔢 Collegamento STEM — Matematica e Statistica"
+          "feedback": "Non è corretto. I sistemi AI non hanno 'opinioni' nel senso umano, e gli ingegneri non programmano ideologie esplicitamente. Il problema è più sottile: ogni scelta di design riflette valori, indipendentemente dalle intenzioni."
         },
         {
           "id": "b",
-          "testo": "Perché le disuguaglianze algoritmiche sono misurabili con metriche statistiche precise (sensitivity, specificity, false positive rate per gruppo demografico) e le scelte di quali metriche ottimizzare riflettono valori umani",
+          "testo": "Perché ogni scelta di design — quali dati usare, quale funzione ottimizzare, quale architettura scegliere — riflette preferenze e valori umani; un LLM su dati prevalentemente anglofoni performa meglio su argomenti anglofoni",
           "corretto": true,
-          "feedback": "Esatto! Il testo dice: 'La giustizia algoritmica non è un problema filosofico astratto — è un problema di ottimizzazione matematica con vincoli etici. Le scelte di quali metriche ottimizzare riflettono scelte di valori.'"
+          "feedback": "Esatto! La 'neutralità' è impossibile: scegliere quali dati includere, cosa ottimizzare, chi ha accesso al sistema — sono tutte scelte valoriali. Il sistema riflette le priorità di chi lo ha costruito."
         },
         {
           "id": "c",
-          "testo": "Perché solo i matematici sono in grado di progettare sistemi AI giusti",
+          "testo": "Perché i sistemi AI mentono deliberatamente per proteggere gli interessi economici delle aziende che li producono",
           "corretto": false,
-          "feedback": "Non è corretto. Il punto non è l'esclusività professionale. È che le disuguaglianze algoritmiche sono misurabili matematicamente, il che permette di verificarle oggettivamente.",
-          "riferimento": "🔢 Collegamento STEM — Matematica e Statistica"
+          "feedback": "Non è corretto. I LLM non 'mentono deliberatamente'. Il problema della non-neutralità non riguarda l'intenzione di ingannare ma le scelte progettuali (dati, funzione obiettivo) che producono risultati sistematicamente influenzati da certe prospettive."
         },
         {
           "id": "d",
-          "testo": "Perché i tribunali usano la formula di Bayes per calcolare la probabilità di colpevolezza degli imputati",
+          "testo": "Perché l'IA usa matematica, e la matematica non è neutrale perché i numeri hanno un valore politico intrinseco",
           "corretto": false,
-          "feedback": "Non è corretto. I tribunali non usano direttamente la formula di Bayes. Il punto è che il bias del sistema COMPAS è misurabile con metriche statistiche come il false positive rate per gruppo demografico.",
-          "riferimento": "🔢 Collegamento STEM — Matematica e Statistica"
+          "feedback": "Non è corretto. La matematica non ha un valore politico intrinseco. Il problema non è il calcolo matematico in sé, ma le scelte umane su quali dati raccogliere, quale obiettivo ottimizzare, quale architettura usare."
         }
       ],
-      "spiegazione": "Il collegamento STEM spiega: quando ProPublica ha analizzato COMPAS, ha misurato sensitivity, specificity e false positive rate separatamente per gruppo demografico. Questi sono strumenti statistici precisi che rendono il problema misurabile. 'Le scelte di quali metriche ottimizzare riflettono scelte di valori': ottimizzare l'accuratezza complessiva può nascondere disuguaglianze per sottogruppi.",
-      "riferimento_principale": "🔢 Collegamento STEM — Matematica e Statistica"
+      "spiegazione": "Nessun sistema AI è neutrale perché nessuna delle scelte che lo costituiscono è neutrale: (1) quali dati raccogliere (e quali escludere); (2) quale funzione ottimizzare (engagement? accuratezza? equità? profit?); (3) quale architettura usare; (4) chi ha accesso e a quale costo. Un LLM addestrato su testo prevalentemente anglofono performa meglio su argomenti della cultura anglofona. Un sistema ottimizzato per il 'tempo di sessione' mostra contenuti che tengono incollati, non contenuti utili. La neutralità è un'illusione — e riconoscerlo è la prima forma di pensiero critico.",
+      "riferimento_principale": "📖 ESPLORA — Bias algoritmici e neutralità dell'IA"
     },
     {
       "id": 17,
       "livello": "A",
-      "domanda": "Il test di bias nella SPERIMENTA Avanzata chiede di porre la stessa domanda variando genere ed etnia (es. 'grandi architetti del XX secolo' vs 'grandi architetti donne' vs 'grandi architetti africani'). Cosa ci si aspetta di trovare e cosa significa?",
+      "domanda": "Il caso COMPAS mostra che un sistema AI può essere 'statisticamente calibrato' e al tempo stesso discriminatorio. Come è matematicamente possibile?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ci si aspetta risposte identiche: i LLM moderni sono liberi da bias",
+          "testo": "Non è possibile: la definizione matematica di calibrazione include automaticamente l'assenza di discriminazione tra sottogruppi",
           "corretto": false,
-          "feedback": "Non è corretto. I LLM sono addestrati su corpus di testo che riflettono le disuguaglianze della produzione culturale storica. Le risposte varieranno significativamente.",
-          "riferimento": "🌍 SPERIMENTA — Esperimento reale: testa un LLM"
+          "feedback": "Non è corretto. Le definizioni matematiche di 'calibrazione' e di 'equità demografica' sono distinte e possono essere in conflitto — questo è un risultato dimostrato formalmente (il teorema di impossibilità di Chouldechova, 2017)."
         },
         {
           "id": "b",
-          "testo": "Ci si aspetta differenze: la risposta su 'architetti' sarà più ricca che su 'architetti donne' o 'africani', riflettendo bias nel corpus di addestramento che a sua volta riflette disuguaglianze storiche nella rappresentazione culturale",
+          "testo": "La calibrazione misura l'accuratezza globale media, ma il false positive rate può essere distribuito in modo sistematicamente disuguale tra sottogruppi — ottimizzare una metrica può andare a discapito dell'altra",
           "corretto": true,
-          "feedback": "Esatto! I LLM imparano dai dati disponibili. Se la letteratura critica su architetti donne o africani è meno abbondante o meno digitalizzata, il modello ha meno da cui imparare."
+          "feedback": "Esatto! Questo è il cuore del dibattito sulla 'giustizia algoritmica': le diverse definizioni matematiche di equità sono in conflitto. Non si possono soddisfare tutte contemporaneamente — bisogna scegliere quale privilegiare, e questa è una scelta di valori."
         },
         {
           "id": "c",
-          "testo": "Ci si aspetta risposte più corte: i LLM generano meno testo per domande su minoranze per rispettare le normative sulla privacy",
+          "testo": "La 'calibrazione statistica' non è una misura reale di accuratezza: è un termine di marketing usato dalle aziende AI per giustificare sistemi discriminatori",
           "corretto": false,
-          "feedback": "Non è corretto. Le normative sulla privacy non limitano la lunghezza delle risposte su gruppi demografici. Il problema è la qualità e varietà delle risposte, non la lunghezza.",
-          "riferimento": "🌍 SPERIMENTA — Esperimento reale: testa un LLM"
+          "feedback": "Non è corretto. La calibrazione statistica è una metrica tecnica legittima e ampiamente usata in statistica. Il problema non è che sia falsa, ma che non cattura tutte le dimensioni rilevanti dell'equità."
         },
         {
           "id": "d",
-          "testo": "Ci si aspetta che il LLM si rifiuti di rispondere su alcuni gruppi demografici per rispettare le regole sull'hate speech",
+          "testo": "ProPublica ha sbagliato la metodologia: un sistema calibrato non può avere tassi di falsi positivi diversi tra gruppi",
           "corretto": false,
-          "feedback": "Non è corretto. Chiedere di grandi architetti di diversi generi o etnie non è hate speech. Il LLM risponde, ma la qualità e varietà delle risposte può variare significativamente.",
-          "riferimento": "🌍 SPERIMENTA — Esperimento reale: testa un LLM"
+          "feedback": "Non è corretto. La metodologia di ProPublica è stata esaminata da ricercatori accademici e la discrepanza nei false positive rate è stata confermata. La questione scientifica riguarda quale metrica usare per valutare la 'giustizia', non se i dati siano corretti."
         }
       ],
-      "spiegazione": "Il test di bias confronta le risposte del LLM su 'architetti del XX secolo' vs 'architetti donne' vs 'architetti africani'. Il testo dice: 'Confronta le risposte. Cosa osservi?' Ci si aspetta differenze quantitative e qualitative che riflettono bias nel corpus di addestramento — a sua volta specchio delle disuguaglianze storiche nella rappresentazione e documentazione culturale.",
-      "riferimento_principale": "🌍 SPERIMENTA — Esperimento reale: testa un LLM"
+      "spiegazione": "Il teorema di impossibilità di Chouldechova (2017) dimostra formalmente che alcune definizioni di equità algoritmica sono in conflitto matematico: non si possono soddisfare tutte simultaneamente quando i tassi di base differiscono tra gruppi. COMPAS era calibrato nel senso che la sua probabilità prevista corrispondeva alla frequenza osservata — ma questo è compatibile con false positive rate diversi tra sottogruppi. La scelta di quale metrica ottimizzare è una scelta di valori, non solo tecnica.",
+      "riferimento_principale": "📖 ESPLORA — Bias algoritmici: il caso COMPAS + STEM Matematica"
     },
     {
       "id": 18,
       "livello": "A",
-      "domanda": "Perché l'errore comune 'L'IA non ha opinioni, quindi è neutrale e obiettiva' è sbagliato secondo il testo?",
+      "domanda": "Un LLM ha affermato che 'il politico Rossi ha votato contro la legge X nel 2023'. Come dovresti verificare questa affermazione prima di citarla in un articolo scolastico?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché l'IA ha effettivamente opinioni politiche programmate dai suoi creatori",
+          "testo": "Chiedere la stessa cosa a un secondo LLM più avanzato: se anche lui conferma, l'informazione è affidabile",
           "corretto": false,
-          "feedback": "Non è corretto. I sistemi AI non hanno 'opinioni' nel senso umano. Il problema è diverso: ogni scelta di design riflette i valori di chi ha costruito il sistema.",
-          "riferimento": "🔍 OSSERVA — Errore comune"
+          "feedback": "Non è corretto. Due LLM che concordano non verificano la veridicità: possono entrambi allucinare la stessa risposta plausibile dalla stessa distribuzione statistica. La conferma tra modelli non è una fonte indipendente."
         },
         {
           "id": "b",
-          "testo": "Perché ogni scelta di design (quali dati usare, quale funzione ottimizzare, quale architettura scegliere) riflette preferenze e valori umani — un LLM su dati anglofoni dà risposte migliori su argomenti anglofoni",
+          "testo": "Verificare su fonti primarie indipendenti: sito ufficiale del Parlamento, archivi giornalistici affidabili, fonti istituzionali — 'il modello ha detto X' non è sufficiente; serve 'ho verificato su Y e confermato perché Z'",
           "corretto": true,
-          "feedback": "Esatto! Il testo dice: 'Ogni scelta di design riflette le preferenze e i valori di chi ha costruito il sistema.' Un sistema ottimizzato per il 'tempo di sessione' mostra contenuti che tengono incollati allo schermo, non necessariamente utili."
+          "feedback": "Esatto! Il modello non sa di stare sbagliando — può affermare con sicurezza fatti falsi o distorti. Ogni affermazione fattuale deve essere verificata su fonti indipendenti prima di essere citata."
         },
         {
           "id": "c",
-          "testo": "Perché i sistemi AI mentono deliberatamente per proteggere gli interessi delle aziende che li producono",
+          "testo": "Accettare l'informazione se il tono della risposta è sicuro e dettagliato: i modelli avanzati non allucinano su fatti politici recenti",
           "corretto": false,
-          "feedback": "Non è corretto. I LLM non 'mentono deliberatamente' — producono testo plausibile. Il problema della non-neutralità riguarda le scelte progettuali, non l'intenzione di ingannare.",
-          "riferimento": "🔍 OSSERVA — Errore comune"
+          "feedback": "Non è corretto. Il tono sicuro e la ricchezza di dettaglio sono caratteristiche delle allucinazioni, non garanzie di accuratezza. I modelli allucinano con la stessa sicurezza sia su fatti veri che falsi."
         },
         {
           "id": "d",
-          "testo": "Perché l'IA è sempre parziale verso i prodotti commerciali delle aziende che la finanziano",
+          "testo": "Cercare su Wikipedia: se corrisponde a quanto detto dal LLM, è confermato",
           "corretto": false,
-          "feedback": "Non è corretto. La non-neutralità non riguarda necessariamente il favoritismo commerciale. Riguarda il fatto che i dati e le scelte progettuali riflettono prospettive parziali.",
-          "riferimento": "🔍 OSSERVA — Errore comune"
+          "feedback": "Non è corretto. Wikipedia può essere aggiornata con ritardo o contenere errori. Inoltre, alcuni LLM sono stati addestrati su Wikipedia — concordare con Wikipedia non garantisce l'indipendenza della verifica. Per fatti politici recenti, usa fonti istituzionali primarie."
         }
       ],
-      "spiegazione": "Il testo spiega: 'Nessun sistema AI è neutrale. Ogni scelta — quali dati usare, quale funzione ottimizzare, quale architettura scegliere — riflette le preferenze e i valori di chi ha costruito il sistema.' Un LLM addestrato su testo prevalentemente anglofono dà risposte migliori su argomenti anglofoni. Un sistema ottimizzato per il 'tempo di sessione' mostra contenuti che tengono incollati allo schermo, non necessariamente utili.",
-      "riferimento_principale": "🔍 OSSERVA — Errore comune"
+      "spiegazione": "Il Box T8 stabilisce la regola della verifica: ogni output su cui fare affidamento va verificato su fonti indipendenti. Per fatti politici: (1) sito ufficiale del Parlamento (es. camera.it, senato.it); (2) archivi giornalistici di testate verificate; (3) fonti istituzionali primarie. Il ragionamento corretto non è 'il modello ha detto X' ma 'il modello ha suggerito X, ho verificato su Y (fonte istituzionale), ho confermato perché Z (link diretto al documento)'. Solo così una fonte è citabile.",
+      "riferimento_principale": "📖 ESPLORA — Box T8: IA critica + DM 183/2024 D3"
     }
   ]
 }

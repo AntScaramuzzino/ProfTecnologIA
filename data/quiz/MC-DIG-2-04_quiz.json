@@ -5,650 +5,596 @@
     {
       "id": 1,
       "livello": "F",
-      "domanda": "Cos'è il 'phishing'?",
+      "domanda": "Da dove viene il nome 'phishing' e qual è la definizione corretta di questo attacco?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un virus che si installa automaticamente visitando certi siti web",
+          "testo": "Da 'phishing' in tedesco, che significa 'truffa informatica automatizzata'",
           "corretto": false,
-          "feedback": "Non è corretto. Un virus che si installa automaticamente è malware. Il phishing usa messaggi ingannevoli che ti convincono a inserire dati o cliccare link.",
-          "riferimento": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+          "feedback": "Non è corretto. Il termine non viene dal tedesco e non indica automazione. La parola è inglese e si riferisce al verbo 'to fish' — pescare."
         },
         {
           "id": "b",
-          "testo": "Un attacco in cui si riceve un messaggio che sembra provenire da una fonte affidabile per convincerti a inserire password o cliccare link falsi",
+          "testo": "Da 'fishing' (pescare): l'attaccante lancia un'esca — il messaggio falso — e aspetta che qualcuno abbocchi inserendo le proprie credenziali su una pagina falsa",
           "corretto": true,
-          "feedback": "Esatto! Il nome viene da 'fishing' (pescare): l'attaccante lancia un'esca (il messaggio falso) e aspetta che qualcuno abbocchi. Il link porta a una pagina falsa identica all'originale."
+          "feedback": "Esatto! Come un pescatore che lancia la lenza, l'attaccante invia messaggi a molte persone sperando che qualcuno cada nella trappola. La 'f' è stata sostituita da 'ph' nella cultura hacker degli anni '70."
         },
         {
           "id": "c",
-          "testo": "Un attacco fisico ai cavi di rete che rallenta la connessione internet",
+          "testo": "Da 'phreaking': una tecnica per rubare le password intercettando segnali telefonici",
           "corretto": false,
-          "feedback": "Non è corretto. Il phishing è un attacco psicologico che sfrutta la fiducia, non un attacco fisico all'infrastruttura di rete.",
-          "riferimento": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+          "feedback": "Non è corretto. Il phreaking riguardava la manipolazione dei sistemi telefonici negli anni '70. Il phishing è un attacco via messaggi ingannevoli, non un'intercettazione di segnali."
         },
         {
           "id": "d",
-          "testo": "Un sistema per rubare dati biometrici come impronte digitali tramite scanner falsi",
+          "testo": "Da 'fishing', ma indica specificamente i virus che si installano aprendo allegati email",
           "corretto": false,
-          "feedback": "Non è corretto. Il phishing non riguarda i dati biometrici fisici, ma la manipolazione psicologica per ottenere credenziali digitali.",
-          "riferimento": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+          "feedback": "Non è corretto. I virus che si installano tramite allegati sono malware (es. trojan). Il phishing è un attacco psicologico che punta a farti inserire dati su una pagina falsa, non a installarti un virus."
         }
       ],
-      "spiegazione": "Il phishing prende il nome da 'fishing' (pescare): l'attaccante invia messaggi che sembrano provenire da fonti affidabili (banca, Instagram, scuola) con link a pagine false identiche agli originali. L'obiettivo è far inserire password, dati della carta o altri dati sensibili. È la tecnica di attacco più diffusa su utenti normali.",
-      "riferimento_principale": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+      "spiegazione": "Il phishing prende il nome da 'fishing' (pescare): come un pescatore, l'attaccante lancia esche — messaggi falsi — e aspetta che qualcuno abbocchi. L'obiettivo è convincerti a cliccare su un link che porta a una pagina finta, identica all'originale, dove inserisci credenziali o dati sensibili. È la tecnica di attacco più diffusa perché sfrutta l'errore umano, non le vulnerabilità tecniche.",
+      "riferimento_principale": "📖 ESPLORA — 1. I tipi di attacchi"
     },
     {
       "id": 2,
       "livello": "F",
-      "domanda": "Qual è la regola più importante per scegliere una password sicura, secondo il testo?",
+      "domanda": "Tra i 7 segnali per riconoscere il phishing, il numero 3 dice: 'richiesta di password o dati sensibili via messaggio'. Perché questa è SEMPRE una truffa, senza eccezioni?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Usare una combinazione di numeri, lettere maiuscole e caratteri speciali",
+          "testo": "Perché le aziende legittime usano altre parole come 'codice di accesso' invece di 'password'",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo mostra che la complessità (con caratteri speciali) è meno efficace della lunghezza. 'P@$$w0rd' impiega 5 minuti a essere violata; una passphrase di 30 caratteri impiega miliardi di anni.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Il problema non è la terminologia. Qualsiasi richiesta di credenziali via messaggio o email è sospetta, indipendentemente dalle parole usate."
         },
         {
           "id": "b",
-          "testo": "La lunghezza batte la complessità: una passphrase di 16+ caratteri è più sicura di una password breve con simboli",
+          "testo": "Perché nessuna azienda legittima ha mai bisogno di chiederti la password: la conosce già (in forma cifrata) o usa sistemi di recupero che non richiedono di rivelarla",
           "corretto": true,
-          "feedback": "Esatto! Il testo mostra con una tabella che 'P@$$word' si viola in 5 minuti, mentre 'il mio gatto si chiama Biscotto' richiede più di un miliardo di anni."
+          "feedback": "Esatto! Se hai un account su un sito, quell'azienda ha già la tua password nel suo database (cifrata). Se l'avesse persa, ti inviterebbe a reimpostarla tramite un link ufficiale — non a rivelartela."
         },
         {
           "id": "c",
-          "testo": "Usare il proprio nome e la data di nascita perché sono facili da ricordare",
+          "testo": "Perché il GDPR vieta alle aziende di chiedere password via email dal 2018",
           "corretto": false,
-          "feedback": "Non è corretto. Nome e data di nascita sono tra le prime cose che vengono provate in un attacco. Il testo dice: 'Niente data di nascita, niente nome del gatto.'",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Il GDPR riguarda la protezione e il trattamento dei dati personali, non specificamente le comunicazioni di password. La ragione è tecnica: un'azienda legittima non ha mai bisogno di chiederti la password."
         },
         {
           "id": "d",
-          "testo": "Usare la stessa password su tutti i siti per non dimenticarla",
+          "testo": "Perché è vero solo per le banche, mentre per i social media può essere una richiesta legittima",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo dice che usare la stessa password su più siti è il punto meno rispettato ma il più importante: se uno dei siti viene violato, tutti gli account sono a rischio.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Nessuna piattaforma — banca, social, streaming, scuola — ha mai una ragione valida per chiederti la password via messaggio. Nessuna eccezione."
         }
       ],
-      "spiegazione": "La tabella del testo mostra chiaramente: 'password' → meno di 1 secondo; 'P@$$w0rd' → 5 minuti; 'P@$$w0rd!2026' → 3 anni; 'il mio gatto si chiama Biscotto' → più di un miliardo di anni. La lunghezza (e l'imprevedibilità) batte la complessità con caratteri speciali.",
-      "riferimento_principale": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+      "spiegazione": "La regola è assoluta: se ricevi un messaggio che ti chiede di inserire la password o dati sensibili, è sempre una truffa. Un'azienda legittima conosce già le tue credenziali nel database; se hai perso l'accesso, ti manda un link per reimpostare la password tramite sistemi sicuri, non te la chiede direttamente. Questa regola vale per banche, social, email, servizi di ogni tipo.",
+      "riferimento_principale": "📖 ESPLORA — 2. I 7 segnali del phishing"
     },
     {
       "id": 3,
       "livello": "F",
-      "domanda": "Cosa fa l'autenticazione a due fattori (2FA)?",
+      "domanda": "Tra le tre forme di 2FA (app di autenticazione, SMS, email), quale è la più sicura e perché?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Richiede due password diverse per lo stesso account",
+          "testo": "Gli SMS, perché il numero di telefono è associato all'identità reale e difficile da falsificare",
           "corretto": false,
-          "feedback": "Non è corretto. Il 2FA aggiunge un secondo fattore di tipo diverso (qualcosa che hai, come il telefono), non una seconda password (qualcosa che sai).",
-          "riferimento": "📖 ESPLORA — 4. Autenticazione a due fattori (2FA): la seconda serratura"
+          "feedback": "Non è corretto. Gli SMS sono vulnerabili al SIM swapping: un attaccante può convincere il tuo operatore a trasferire il tuo numero su una SIM che controlla lui, intercettando i codici 2FA."
         },
         {
           "id": "b",
-          "testo": "Aggiunge un secondo livello di verifica (es. codice sul telefono) oltre alla password, rendendo inutile la password rubata",
+          "testo": "L'app di autenticazione (es. Google Authenticator): il codice viene generato localmente sul tuo telefono fisico e non viaggia mai in rete",
           "corretto": true,
-          "feedback": "Esatto! Con il 2FA, anche se qualcuno ruba la tua password, non può accedere senza il secondo fattore (il codice sul tuo telefono che cambia ogni 30 secondi)."
+          "feedback": "Esatto! Il codice generato dall'app non viene trasmesso via SMS né via email. Cambia ogni 30 secondi ed esiste solo sul dispositivo fisico: non può essere intercettato durante la trasmissione."
         },
         {
           "id": "c",
-          "testo": "Cifra automaticamente tutti i file salvati sul computer",
+          "testo": "L'email, perché è il metodo più verificabile e le email di sicurezza arrivano cifrate",
           "corretto": false,
-          "feedback": "Non è corretto. La cifratura dei file è separata dall'autenticazione. Il 2FA riguarda l'accesso agli account, non la protezione dei file.",
-          "riferimento": "📖 ESPLORA — 4. Autenticazione a due fattori (2FA): la seconda serratura"
+          "feedback": "Non è corretto. Se un attaccante ha già compromesso la tua email, può leggere anche i codici 2FA inviati lì. Il 2FA via email su un account già violato non fornisce protezione reale."
         },
         {
           "id": "d",
-          "testo": "Richiede di inserire la password due volte per confermarla",
+          "testo": "Tutti e tre equivalenti: l'importante è avere un secondo fattore qualsiasi",
           "corretto": false,
-          "feedback": "Non è corretto. Inserire la password due volte serve per verificare che non ci siano errori di battitura durante la creazione. Il 2FA è un secondo fattore di tipo diverso.",
-          "riferimento": "📖 ESPLORA — 4. Autenticazione a due fattori (2FA): la seconda serratura"
+          "feedback": "Non è corretto. I tre metodi hanno livelli di sicurezza diversi: App > SMS > Email. L'app è la più sicura perché il codice non transita mai su una rete esterna."
         }
       ],
-      "spiegazione": "Il 2FA (Two-Factor Authentication) aggiunge una seconda serratura: oltre alla password (qualcosa che sai), serve un codice temporaneo generato sul tuo telefono (qualcosa che hai). Cambia ogni 30 secondi. Anche se qualcuno ruba la password, non può accedere senza il secondo fattore fisico.",
-      "riferimento_principale": "📖 ESPLORA — 4. Autenticazione a due fattori (2FA): la seconda serratura"
+      "spiegazione": "Livello di sicurezza 2FA in ordine decrescente: App di autenticazione > SMS > Email. L'app è la più sicura perché genera il codice localmente sul dispositivo, senza trasmissione via rete. Gli SMS sono vulnerabili al SIM swap. Il 2FA via email è il più debole: se l'email è compromessa, lo è anche il codice di verifica. La regola: usa almeno gli SMS, meglio ancora l'app.",
+      "riferimento_principale": "📖 ESPLORA — 4. Autenticazione a due fattori (2FA)"
     },
     {
       "id": 4,
       "livello": "F",
-      "domanda": "Cosa dovrebbe fare Luca (nella storia dell'account Instagram hackerato) come primo passo immediato dopo aver scoperto l'attacco?",
+      "domanda": "Le tre regole per una buona password sono: Lunga, Unica, Non ovvia. Quale è la più importante per proteggerti se un sito su cui sei iscritto viene violato?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Cancellare l'account Instagram per evitare ulteriori danni",
+          "testo": "Lunga: una password di 20 caratteri è impossibile da violare con la forza bruta",
           "corretto": false,
-          "feedback": "Non è corretto. Cancellare l'account è una misura drastica che potrebbe non essere necessaria. Il primo passo è cambiare la password e recuperare l'accesso.",
-          "riferimento": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+          "feedback": "Non è corretto. La lunghezza protegge dagli attacchi a forza bruta, ma se il sito viene violato e la tua password rubata, la lunghezza non ti protegge se la stessa password è usata altrove."
         },
         {
           "id": "b",
-          "testo": "Cambiare la password immediatamente andando direttamente al sito ufficiale (non tramite link nelle email sospette)",
+          "testo": "Unica: una password diversa per ogni account, perché se un sito viene violato e la password rubata, gli altri account restano al sicuro",
           "corretto": true,
-          "feedback": "Esatto! Il testo lista i passi in ordine: primo, cambiare la password dal sito ufficiale. Poi cambiare anche la password dell'email (la chiave di recupero di tutti gli altri account)."
+          "feedback": "Esatto! Il credential stuffing funziona perché molte persone usano la stessa password ovunque. Se ogni account ha una password unica, la violazione di un sito non compromette tutti gli altri."
         },
         {
           "id": "c",
-          "testo": "Aspettare che la piattaforma si accorga dell'attacco e risolva automaticamente",
+          "testo": "Non ovvia: non usare mai il nome del gatto o la data di nascita",
           "corretto": false,
-          "feedback": "Non è corretto. La piattaforma non risolve automaticamente gli account compromessi. Ogni minuto conta: l'attaccante può fare danni crescenti nel tempo.",
-          "riferimento": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+          "feedback": "Non è corretto. La non ovvietà protegge dagli attacchi a dizionario (parole e date comuni). Ma non protegge dal credential stuffing, che usa password reali già rubate, non ipotesi."
         },
         {
           "id": "d",
-          "testo": "Rispondere al messaggio di phishing originale per chiedere spiegazioni all'attaccante",
+          "testo": "Tutte e tre ugualmente importanti: non si può dire quale sia la più critica",
           "corretto": false,
-          "feedback": "Non è corretto. Rispondere al messaggio di phishing è inutile e potenzialmente dannoso. L'attaccante non è il mittente apparente del messaggio.",
-          "riferimento": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+          "feedback": "Non è corretto. Le tre regole servono contro minacce diverse. Nel contesto attuale, dove miliardi di credenziali circolano nel dark web, il credential stuffing è l'attacco più diffuso: solo l'unicità lo ferma."
         }
       ],
-      "spiegazione": "La sequenza di azioni raccomandata dal testo: (1) cambia la password subito dal sito ufficiale (non dal link nell'email sospetta); (2) cambia la password dell'email — la chiave di recupero di tutti gli altri account; (3) controlla le sessioni attive e disconnetti tutto; (4) attiva il 2FA; (5) avvisa i contatti; (6) segnala.",
-      "riferimento_principale": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+      "spiegazione": "Le tre regole servono contro minacce diverse: Lunga → contro attacchi a forza bruta; Non ovvia → contro attacchi a dizionario; Unica → contro il credential stuffing. Nel panorama attuale, dove miliardi di credenziali già rubate vengono usate automaticamente su altri siti, l'unicità è la regola più critica: anche una password breve ma unica per ogni account rende inutile il database rubato.",
+      "riferimento_principale": "📖 ESPLORA — 3. Password forti"
     },
     {
       "id": 5,
       "livello": "F",
-      "domanda": "Qual è il segnale più importante da controllare su un URL prima di inserire dati in una pagina web?",
+      "domanda": "Un tuo compagno è vittima di cyberbullismo: qualcuno ha pubblicato sue foto su un profilo falso. Cosa può fare concretamente, secondo la L. 71/2017, senza necessariamente andare in tribunale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il colore della barra degli indirizzi: verde significa sicuro",
+          "testo": "Non può fare nulla: la legge si applica solo agli adulti e i minori devono aspettare i 18 anni",
           "corretto": false,
-          "feedback": "Non è corretto. Il colore verde della barra degli indirizzi (HTTPS) indica solo che la connessione è cifrata, non che il sito sia legittimo. Una pagina di phishing può avere HTTPS.",
-          "riferimento": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+          "feedback": "Non è corretto. La L. 71/2017 è stata creata specificamente per tutelare i minorenni vittime di cyberbullismo e prevede strumenti rapidi e accessibili."
         },
         {
           "id": "b",
-          "testo": "Il dominio effettivo prima del primo slash: 'instagram.com/qualcosa' è Instagram; 'qualcosa.instagram-login.com' non lo è",
+          "testo": "Può chiedere direttamente alla piattaforma di rimuovere il contenuto; lui o i genitori possono chiedere al questore di ammonire l'autore senza procedimento penale formale",
           "corretto": true,
-          "feedback": "Esatto! Il testo spiega: 'L'unica parte che conta è prima del primo '/' dopo il doppio punto.' instagram-login.com è un dominio falso che imita Instagram."
+          "feedback": "Esatto! La L. 71/2017 prevede due strumenti rapidi: (1) richiesta di rimozione diretta alla piattaforma, che deve rispondere entro 48 ore; (2) istanza al questore per ammonire l'autore, senza aprire un processo penale."
         },
         {
           "id": "c",
-          "testo": "La lunghezza dell'URL: gli URL brevi sono sempre più sicuri di quelli lunghi",
+          "testo": "Può soltanto bloccare l'autore sui social media: le altre misure richiedono la firma di un genitore e un avvocato",
           "corretto": false,
-          "feedback": "Non è corretto. La lunghezza dell'URL non è un indicatore di sicurezza. URL corti possono essere link abbreviati che portano a siti pericolosi.",
-          "riferimento": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+          "feedback": "Non è corretto. La L. 71/2017 prevede strumenti accessibili senza necessariamente richiedere un avvocato nelle prime fasi: richiesta alla piattaforma (anche autonomamente se maggiore di 14 anni) e istanza al questore."
         },
         {
           "id": "d",
-          "testo": "La presenza del logo della piattaforma nella barra degli indirizzi",
+          "testo": "Deve documentare i contenuti con screenshot, poi aspettare 30 giorni che la piattaforma li rimuova autonomamente",
           "corretto": false,
-          "feedback": "Non è corretto. I browser moderni mostrano icone favicon accanto all'URL, ma queste possono essere falsificate. Il dominio reale è l'unica cosa da verificare.",
-          "riferimento": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+          "feedback": "Non è corretto. Documentare con screenshot è utile, ma la L. 71/2017 obbliga la piattaforma a rispondere entro 48 ore alla richiesta di rimozione, non 30 giorni. Non è necessario aspettare passivamente."
         }
       ],
-      "spiegazione": "La regola del testo è chiara: 'L'unica parte che conta è prima del primo '/' dopo il doppio punto.' Se vedi 'instagram.com/qualcosa' sei su Instagram. Se vedi 'qualcosa.instagram-login.com' sei su un sito diverso (instagram-login.com) con un sottodominio 'qualcosa'. Il dominio che conta è quello principale.",
-      "riferimento_principale": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+      "spiegazione": "La L. 71/2017 prevede strumenti rapidi per i minorenni vittime di cyberbullismo: (1) richiesta diretta alla piattaforma di rimuovere il contenuto entro 48 ore; (2) se la piattaforma non risponde, richiesta al Garante Privacy; (3) istanza al questore per ammonimento dell'autore, disponibile per vittime minorenni o genitori, senza procedimento penale formale. Pubblicare foto/video di altri senza consenso, diffondere notizie false, escludere sistematicamente possono avere conseguenze legali anche per gli autori minorenni.",
+      "riferimento_principale": "📖 ESPLORA — 7. Leggi e norme"
     },
     {
       "id": 6,
       "livello": "F",
-      "domanda": "Cosa si intende per 'impronta digitale permanente' in un contesto di identità online?",
+      "domanda": "Quale tra queste è la password più sicura, secondo la tabella dei tempi di violazione nel testo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il riconoscimento biometrico dell'impronta digitale del dito per accedere agli account",
+          "testo": "'P@$$w0rd!2026' — ha maiuscole, minuscole, numeri e simboli speciali",
           "corretto": false,
-          "feedback": "Non è corretto. L'impronta digitale permanente in questo contesto riguarda le tracce lasciate online (post, foto, commenti), non la biometria fisica.",
-          "riferimento": "📖 ESPLORA — 6. Reputazione online e identità digitale"
+          "feedback": "Non è corretto. Nonostante la complessità apparente, questa password è di soli 14 caratteri e segue uno schema prevedibile. Il testo stima circa 3 anni per violarla con forza bruta — molto meno di una passphrase."
         },
         {
           "id": "b",
-          "testo": "Il fatto che quasi nulla pubblicato online viene davvero cancellato: screenshot, cache e archivi web conservano copia di contenuti eliminati",
+          "testo": "'il mio gatto si chiama Biscotto' — una frase normale ma di 29 caratteri",
           "corretto": true,
-          "feedback": "Esatto! Il testo spiega: chiunque può fare screenshot, i motori di ricerca mantengono cache, la Wayback Machine archivia pagine. Una foto pubblicata a 13 anni può esistere ancora a 30."
+          "feedback": "Esatto! La lunghezza batte la complessità: una passphrase di 29 caratteri richiede più di un miliardo di anni per essere violata con forza bruta, contro i 3 anni di una password complessa ma corta."
         },
         {
           "id": "c",
-          "testo": "Il numero di volte che le tue impronte digitali fisiche vengono registrate sui dispositivi che tocchi",
+          "testo": "'password1234' — facile da ricordare e abbastanza lunga",
           "corretto": false,
-          "feedback": "Non è corretto. L'impronta digitale permanente nel contesto della MC riguarda le tracce digitali online, non le impronte fisiche.",
-          "riferimento": "📖 ESPLORA — 6. Reputazione online e identità digitale"
+          "feedback": "Non è corretto. 'password1234' è una delle password più usate al mondo: viene violata in meno di 1 secondo perché è sia prevedibile (presente nei dizionari degli hacker) sia relativamente breve."
         },
         {
           "id": "d",
-          "testo": "Il diritto GDPR a mantenere un profilo digitale permanente sui social media",
+          "testo": "Tutte e tre equivalenti se usate con il 2FA attivo",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR non garantisce un profilo permanente — anzi, il diritto all'oblio permette di richiedere la cancellazione. L'impronta permanente è un problema tecnico, non un diritto.",
-          "riferimento": "📖 ESPLORA — 6. Reputazione online e identità digitale"
+          "feedback": "Non è corretto. La lunghezza della password conta anche con il 2FA attivo: in certi scenari (es. il sito non supporta 2FA, il secondo fattore viene aggirato) la forza della password è l'unica difesa."
         }
       ],
-      "spiegazione": "L'impronta digitale permanente descrive il fatto che contenuti pubblicati online sono quasi impossibili da cancellare completamente: screenshot fatti da altri, versioni in cache dei motori di ricerca, archivi web come la Wayback Machine. Il testo avverte: 'una foto pubblicata a 13 anni può esistere ancora quando ne hai 30.'",
-      "riferimento_principale": "📖 ESPLORA — 6. Reputazione online e identità digitale"
+      "spiegazione": "La tabella del testo: 'password' → < 1 sec; 'P@$$w0rd' → ~5 min; 'P@$$w0rd!2026' → ~3 anni; passphrase di 29 caratteri → > 1 miliardo di anni. La lunghezza conta molto più della complessità con simboli speciali. Una passphrase — una frase normale facile da ricordare — è matematicamente superiore a qualsiasi password breve con simboli.",
+      "riferimento_principale": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
     },
     {
       "id": 7,
       "livello": "I",
-      "domanda": "Nel caso di Luca (account Instagram hackerato), qual era il segnale di phishing più importante che avrebbe dovuto riconoscere prima di inserire la password?",
+      "domanda": "Il database RockYou2024 ha reso pubbliche 10 miliardi di credenziali. Cos'è il 'credential stuffing' e come sfrutta questo tipo di database?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il messaggio era scritto in inglese invece che in italiano",
+          "testo": "Un hacker testa manualmente password comuni su un singolo account fino a trovare quella giusta",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo non descrive la lingua del messaggio come il segnale principale. Il segnale più evidente era l'URL della pagina finta.",
-          "riferimento": "⚡ INNESCA — Scenario"
+          "feedback": "Non è corretto. Testare password manualmente sarebbe troppo lento. Il credential stuffing usa software automatici che testano coppie reali già rubate su centinaia di siti in parallelo, non password generiche."
         },
         {
           "id": "b",
-          "testo": "L'URL della pagina non era 'instagram.com' ma un dominio falso — che Luca non ha controllato prima di inserire la password",
+          "testo": "Software automatici prendono coppie email/password da violazioni note e le provano su centinaia di siti in parallelo, sfruttando il fatto che molte persone usano la stessa password ovunque",
           "corretto": true,
-          "feedback": "Esatto! Il testo dice: 'Il link portava a una pagina identica a Instagram. L'URL nella barra del browser... Marco non la guarda.' Verificare l'URL prima di inserire dati avrebbe evitato tutto."
+          "feedback": "Esatto! Il software non deve indovinare: usa credenziali reali già rubate. Se usi la stessa password su 5 siti diversi e uno viene violato, le tue credenziali vengono provate automaticamente sugli altri 4."
         },
         {
           "id": "c",
-          "testo": "Il messaggio non aveva l'emoji di Instagram",
+          "testo": "Un virus che si installa sul computer e registra tutte le password che digiti (keylogger)",
           "corretto": false,
-          "feedback": "Non è corretto. Le emoji non sono un segnale di autenticità. Il segnale fondamentale era l'URL della pagina di login falsa.",
-          "riferimento": "⚡ INNESCA — Scenario"
+          "feedback": "Non è corretto. Quello che descrivi è un keylogger, un tipo di malware. Il credential stuffing non richiede l'installazione di nulla sul dispositivo della vittima: usa database già esistenti."
         },
         {
           "id": "d",
-          "testo": "Il messaggio era arrivato alle 3 di notte invece che in orario di lavoro",
+          "testo": "Un attacco che riempie i moduli di login con dati casuali fino a bloccare il server",
           "corretto": false,
-          "feedback": "Non è corretto. L'orario di ricezione non è citato come segnale di phishing. Il segnale era l'urgenza artificiale ('entro 24 ore') e l'URL falso.",
-          "riferimento": "⚡ INNESCA — Scenario"
+          "feedback": "Non è corretto. Quello che descrivi è un attacco DoS (Denial of Service). Il credential stuffing usa dati specifici e reali (credenziali rubate), non dati casuali."
         }
       ],
-      "spiegazione": "La storia di Luca mostra il percorso tipico di un attacco di phishing: messaggio urgente ('entro 24 ore'), link a pagina falsa identica all'originale, richiesta di credenziali. Il segnale che avrebbe salvato Luca era controllare l'URL della pagina: non era instagram.com ma una copia. La regola: guardare sempre l'URL prima di inserire qualsiasi dato.",
-      "riferimento_principale": "⚡ INNESCA — Scenario"
+      "spiegazione": "Il credential stuffing funziona così: (1) una violazione rivela milioni di coppie email/password reali; (2) software automatico prova quelle coppie su centinaia di siti in parallelo; (3) anche un tasso di successo del 2% su 10 miliardi = 200 milioni di account compromessi. La difesa: una password unica per ogni sito rende inutile il database rubato, perché anche se una coppia è esposta, non funziona sugli altri siti.",
+      "riferimento_principale": "📖 ESPLORA — 3. Password forti + Box RockYou2024"
     },
     {
       "id": 8,
       "livello": "I",
-      "domanda": "Il 'credential stuffing' è un attacco che sfrutta le stesse password riusate su più siti. Quale delle tre regole delle password protegge specificamente da questo attacco?",
+      "domanda": "Ricevi un'email con questo link: 'www.qualcosa.instagram-security-check.net/login'. Analizzando l'URL, sei davvero su Instagram?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "La lunghezza della password",
+          "testo": "Sì, perché l'URL contiene la parola 'instagram'",
           "corretto": false,
-          "feedback": "Non è corretto. La lunghezza migliora la resistenza agli attacchi a forza bruta (indovinare la password), ma non al credential stuffing che usa password già rubate.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. La parola 'instagram' nell'URL non significa essere su instagram.com. L'attaccante può inserire 'instagram' ovunque — in un sottodominio, nel nome di percorso o nel nome del sito falso."
         },
         {
           "id": "b",
-          "testo": "L'unicità: usare una password diversa per ogni account",
+          "testo": "No: la parte che conta è il dominio principale prima del primo '/', che è 'instagram-security-check.net' — un sito completamente diverso da instagram.com",
           "corretto": true,
-          "feedback": "Esatto! Il credential stuffing funziona solo se usi la stessa password su più siti. Se ogni account ha una password diversa, la violazione di uno non compromette gli altri."
+          "feedback": "Esatto! La regola: l'unica parte che conta è il dominio principale tra il punto e il primo '/'. 'instagram-security-check.net' è un dominio diverso da 'instagram.com'. Il 'qualcosa.' prima è solo un sottodominio del sito falso."
         },
         {
           "id": "c",
-          "testo": "La non ovvietà: non usare date di nascita o nomi",
+          "testo": "Sì, perché l'URL inizia con 'www' come tutti i siti ufficiali",
           "corretto": false,
-          "feedback": "Non è corretto. La non ovvietà protegge dagli attacchi a dizionario (indovinare password comuni). Il credential stuffing usa password reali già rubate, non ipotesi.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Il prefisso 'www' non garantisce nulla: qualsiasi sito può usarlo. È il dominio principale (instagram.com vs instagram-security-check.net) che identifica il sito reale."
         },
         {
           "id": "d",
-          "testo": "Cambiare la password ogni 30 giorni",
+          "testo": "Dipende: se la pagina è visivamente identica a Instagram, è sicuramente Instagram",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo non cita la frequenza di cambio password tra le tre regole principali. L'unicità per ogni sito è la protezione specifica contro il credential stuffing.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Copiare il design di una pagina è semplice — basta salvare il codice HTML. Le pagine di phishing sono progettate per essere identiche all'originale. Solo l'URL nella barra del browser rivela la truffa."
         }
       ],
-      "spiegazione": "Il credential stuffing funziona così: quando un database di credenziali viene rubato, software automatici le provano su centinaia di altri siti. Se usi la stessa password su Gmail e su un forum di videogiochi, e il forum viene violato, il tuo Gmail è a rischio. La regola dell'unicità (password diversa per ogni account) è l'unica protezione efficace.",
-      "riferimento_principale": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+      "spiegazione": "La regola aurea per l'URL: l'unica parte che conta è il dominio principale, ovvero la parte tra 'https://' e il primo '/'. In 'www.qualcosa.instagram-security-check.net/login', il dominio principale è 'instagram-security-check.net' — un sito che non ha nulla a che fare con Instagram. La parola 'instagram' è solo un sottodominio usato per ingannare. Regola pratica: prima di inserire dati, guarda sempre il dominio nel campo indirizzi del browser.",
+      "riferimento_principale": "📖 ESPLORA — 2. I 7 segnali del phishing"
     },
     {
       "id": 9,
       "livello": "I",
-      "domanda": "Perché il sito 'haveibeenpwned.com' è uno strumento utile per la sicurezza dei propri account?",
+      "domanda": "Il tuo account Instagram è stato hackerato. Hai già cambiato la password di Instagram. Qual è il passaggio SUCCESSIVO più urgente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Permette di cambiare le password di tutti gli account in un'unica operazione",
+          "testo": "Attivare il 2FA su Instagram",
           "corretto": false,
-          "feedback": "Non è corretto. Haveibeenpwned non cambia le password: verifica se la tua email è presente in database di credenziali rubate conosciute.",
-          "riferimento": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+          "feedback": "Non è corretto. Il 2FA è importante, ma non è il secondo passo più urgente. Prima di tutto devi proteggere l'account email, che è la chiave per reimpostare tutte le altre password."
         },
         {
           "id": "b",
-          "testo": "Permette di verificare se la tua email è presente in database di credenziali rubate da violazioni note, segnalando account a rischio",
+          "testo": "Cambiare la password dell'account email — perché chiunque la controlli può resettare la password di Instagram e di qualsiasi altro account tramite 'ho dimenticato la password'",
           "corretto": true,
-          "feedback": "Esatto! Il testo dice: inserisci la tua email e scopri se è presente in qualche fuga di dati conosciuta. Se la tua email compare, cambia subito le password di quegli account."
+          "feedback": "Esatto! L'email è la chiave di recupero universale: tramite il link 'password dimenticata' si può reimpostare qualsiasi account. Se l'attaccante controlla la tua email, può rientrare su Instagram (e ovunque) anche dopo che hai cambiato la password."
         },
         {
           "id": "c",
-          "testo": "Genera automaticamente password sicure per ogni sito che usi",
+          "testo": "Avvisare immediatamente tutti i tuoi contatti che l'account è stato compromesso",
           "corretto": false,
-          "feedback": "Non è corretto. Generare password sicure è la funzione di un password manager. Haveibeenpwned controlla se le credenziali sono state compromesse in violazioni note.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Avvisare i contatti è importante, ma non è il secondo passo più urgente. Prima di comunicare all'esterno, devi mettere in sicurezza il perimetro: email e altri account a rischio."
         },
         {
           "id": "d",
-          "testo": "Blocca automaticamente i tentativi di accesso sospetti agli account Google",
+          "testo": "Disconnettere tutti i dispositivi dalle sessioni attive di Instagram",
           "corretto": false,
-          "feedback": "Non è corretto. Il blocco dei tentativi sospetti è una funzionalità di Google stesso. Haveibeenpwned è un database di consultazione di violazioni note.",
-          "riferimento": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+          "feedback": "Non è corretto. Disconnettere le sessioni è utile ma non è il passo più critico. Se l'attaccante controlla la tua email e tu non l'hai protetta, può rientrare su Instagram anche dopo aver disconnesso le sessioni."
         }
       ],
-      "spiegazione": "Haveibeenpwned.com raccoglie database di credenziali rubate da violazioni note (come 'RockYou2024' con 10 miliardi di credenziali). Inserendo la propria email, si verifica se è presente in qualche fuga di dati conosciuta. Se compare, le credenziali corrispondenti sono probabilmente in circolazione e vanno cambiate immediatamente.",
+      "spiegazione": "La sequenza critica: (1) cambia la password di Instagram; (2) cambia SUBITO la password dell'email — è la chiave di recupero di tutti gli account; (3) disconnetti le sessioni attive; (4) attiva il 2FA; (5) avvisa i contatti; (6) controlla gli altri account con la stessa password; (7) segnala se necessario. Il motivo del secondo posto dell'email: tramite 'ho dimenticato la password' si può reimpostare qualsiasi account. Se l'email è compromessa, tutto il resto è vulnerabile.",
       "riferimento_principale": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
     },
     {
       "id": 10,
       "livello": "I",
-      "domanda": "Qual è la differenza tra lo 'spear phishing' e il phishing ordinario?",
+      "domanda": "Come si distingue un attacco di 'social engineering' dal phishing ordinario?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Lo spear phishing usa email, il phishing ordinario usa solo SMS",
+          "testo": "Il social engineering usa solo telefonate (vishing), mentre il phishing usa solo email",
           "corretto": false,
-          "feedback": "Non è corretto. Entrambi possono usare qualsiasi canale di comunicazione (email, SMS, messaggi social). La differenza è nella personalizzazione.",
-          "riferimento": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+          "feedback": "Non è corretto. Entrambe le tecniche possono usare qualsiasi canale. Il social engineering si distingue per il metodo — costruisce una relazione — non per il canale di comunicazione."
         },
         {
           "id": "b",
-          "testo": "Lo spear phishing è mirato a una persona specifica e usa informazioni personali (nome, città, scuola) prese dai social per sembrare più credibile",
+          "testo": "Il social engineering costruisce una relazione di fiducia nel tempo prima di chiedere qualcosa, sfruttando empatia, urgenza emotiva o autorità — il phishing è un singolo messaggio di truffa immediata",
           "corretto": true,
-          "feedback": "Esatto! Il testo descrive lo spear phishing come 'phishing mirato a una persona specifica, con informazioni personalizzate prese dai tuoi social per sembrare ancora più credibile.'"
+          "feedback": "Esatto! Un attaccante che pratica il social engineering può passare settimane a costruire una relazione con la vittima, fingendosi un collega, un tecnico o un fornitore, prima di chiedere accesso a dati sensibili."
         },
         {
           "id": "c",
-          "testo": "Lo spear phishing ruba solo le password; il phishing ordinario ruba solo i dati bancari",
+          "testo": "Il social engineering è legale, il phishing è illegale",
           "corretto": false,
-          "feedback": "Non è corretto. Entrambi possono puntare a qualsiasi tipo di dato sensibile. La differenza è nella personalizzazione del messaggio, non nel tipo di dato preso di mira.",
-          "riferimento": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+          "feedback": "Non è corretto. Entrambi sono attività criminali. Il social engineering è più difficile da identificare come reato perché non sempre implica intrusioni tecniche, ma l'obiettivo (accesso non autorizzato) è illegale."
         },
         {
           "id": "d",
-          "testo": "Lo spear phishing è illegale; il phishing ordinario è legale in molti paesi",
+          "testo": "Non c'è differenza: 'social engineering' è solo un altro nome per il phishing",
           "corretto": false,
-          "feedback": "Non è corretto. Entrambi sono attività criminali in tutti i paesi. La distinzione non è legale ma tecnica: uno è generico, l'altro è personalizzato.",
-          "riferimento": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+          "feedback": "Non è corretto. Il phishing è un caso specifico di social engineering — usa un singolo messaggio urgente. Il social engineering è più ampio: include tecniche di manipolazione psicologica che possono durare settimane."
         }
       ],
-      "spiegazione": "Il phishing ordinario invia lo stesso messaggio a milioni di persone sperando che qualcuno abbocchi. Lo spear phishing è personalizzato per una vittima specifica: usa nome, scuola, città, amici — informazioni prese dai social media — per costruire un messaggio molto più credibile e quindi più efficace.",
-      "riferimento_principale": "📖 ESPLORA — 1. I tipi di attacchi che riguardano te"
+      "spiegazione": "Il phishing è un'esca rapida: un messaggio che crea urgenza e porta su una pagina falsa. Il social engineering è più insidioso: l'attaccante costruisce una relazione genuina nel tempo, conquistando fiducia, prima di chiedere qualcosa. Può fingersi un collega, un tecnico di supporto, un fornitore. Lo sfruttamento di fiducia, empatia e senso di obbligo rende il social engineering molto più efficace del phishing singolo.",
+      "riferimento_principale": "📖 ESPLORA — 1. I tipi di attacchi"
     },
     {
       "id": 11,
       "livello": "I",
-      "domanda": "Perché un password manager è la soluzione consigliata per gestire molte password diverse e sicure?",
+      "domanda": "A cosa serve 'haveibeenpwned.com' e quando dovresti usarlo?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché ricorda automaticamente le password senza che tu debba fare nulla",
+          "testo": "Genera password sicure casuali per i tuoi account",
           "corretto": false,
-          "feedback": "Non è corretto (anche se i password manager compilano automaticamente i campi). Il valore principale è la generazione di password uniche e sicure per ogni sito.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Generare password sicure è la funzione di un password manager. Haveibeenpwned è un servizio di verifica che controlla se le tue credenziali sono apparse in violazioni note."
         },
         {
           "id": "b",
-          "testo": "Genera e conserva password uniche e casuali per ogni account, cifrate con un'unica password maestra — risolvendo il problema dell'impossibilità umana di ricordare centinaia di password diverse",
+          "testo": "Permette di verificare se la tua email è presente in database di credenziali rubate da violazioni note — se compare, quella password è probabilmente in circolazione e va cambiata subito",
           "corretto": true,
-          "feedback": "Esatto! Un adulto medio ha 70-100 account. Nessuno ricorda 100 password diverse di 16 caratteri. Il password manager risolve questo problema: una sola password maestra, tutte le altre generate e gestite dal software."
+          "feedback": "Esatto! Haveibeenpwned raccoglie database da centinaia di violazioni (incluso RockYou2024 con 10 miliardi di credenziali). Inserendo la tua email, scopri quali siti sono stati violati e puoi agire immediatamente."
         },
         {
           "id": "c",
-          "testo": "Evita di dover inserire le password condividendole automaticamente con i siti fidati",
+          "testo": "Blocca automaticamente i tentativi di accesso non autorizzati ai tuoi account su tutti i siti",
           "corretto": false,
-          "feedback": "Non è corretto. Il password manager non condivide le password con i siti — le inserisce compilando i campi del browser. Non c'è trasmissione delle password ai siti.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Haveibeenpwned è un servizio passivo di consultazione: ti informa se sei stato esposto, ma non blocca nulla. La protezione attiva dipende dalle tue azioni dopo aver ricevuto l'informazione."
         },
         {
           "id": "d",
-          "testo": "Blocca automaticamente i siti di phishing prima che si aprano nel browser",
+          "testo": "Segnala automaticamente le violazioni alla Polizia Postale per conto degli utenti registrati",
           "corretto": false,
-          "feedback": "Non è corretto. Il blocco dei siti di phishing è una funzionalità dei browser e degli antivirus. Il password manager gestisce le password, non la sicurezza della navigazione.",
-          "riferimento": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+          "feedback": "Non è corretto. Haveibeenpwned è un servizio privato creato dal ricercatore di sicurezza Troy Hunt. Non ha legami con le forze dell'ordine e non effettua segnalazioni automatiche."
         }
       ],
-      "spiegazione": "Un adulto medio ha 70-100 account digitali. È impossibile ricordare centinaia di password diverse di 16+ caratteri. Il password manager (Bitwarden, 1Password) genera password casuali sicure per ogni sito, le conserva cifrate con la password maestra, e le compila automaticamente. L'utente deve ricordare solo la password maestra.",
-      "riferimento_principale": "📖 ESPLORA — 3. Password forti: la lunghezza batte la complessità"
+      "spiegazione": "Haveibeenpwned.com raccoglie database di credenziali rubate da centinaia di violazioni note. Inserendo la propria email, si scopre se compare in qualche breach conosciuto. Se la tua email appare, le credenziali associate sono probabilmente in circolazione: cambia subito le password di quegli account. Dovresti usarlo quando sospetti una violazione, periodicamente come check di sicurezza preventiva, o quando senti notizie di un servizio online compromesso.",
+      "riferimento_principale": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
     },
     {
       "id": 12,
       "livello": "I",
-      "domanda": "Il messaggio simulato del testo dice: 'Caro utente di Instagram, clicca subito: www.instagram-accounts-security.net. Ha 12 ore.' Quanti segnali di phishing contiene?",
+      "domanda": "Quando è appropriato segnalare un problema di sicurezza digitale a 'poliziapostale.it' invece di risolverlo autonomamente?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Nessuno: è un messaggio di sicurezza legittimo",
+          "testo": "Per qualsiasi messaggio di phishing ricevuto, anche quelli che non hanno avuto conseguenze",
           "corretto": false,
-          "feedback": "Non è corretto. Il messaggio contiene almeno 5 segnali di phishing evidenti che il testo elenca esplicitamente.",
-          "riferimento": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+          "feedback": "Non è corretto. Segnalare ogni email di spam o phishing sarebbe impraticabile. Le segnalazioni alla Polizia Postale sono appropriate per reati con conseguenze reali: furto di dati, perdite economiche, estorsione."
         },
         {
           "id": "b",
-          "testo": "Almeno 5: URL sbagliato, urgenza artificiale, saluto generico, assenza del nome personale, dominio non ufficiale",
+          "testo": "Per reati informatici con conseguenze concrete: account takeover con danni patrimoniali o personali, estorsione online, distribuzione di materiale illecito, truffe con perdite economiche",
           "corretto": true,
-          "feedback": "Esatto! Il testo elenca i segnali di questo messaggio specifico: URL sbagliato (instagram-accounts-security.net, non instagram.com), urgenza (12 ore), saluto generico (Caro utente), assenza del nome personale, nessuna email ufficiale come mittente."
+          "feedback": "Esatto! La Polizia Postale gestisce reati informatici gravi. Una segnalazione è appropriata quando c'è un danno concreto: hai perso denaro in una truffa, sei vittima di estorsione, qualcuno ha diffuso materiale privato tuo senza consenso."
         },
         {
           "id": "c",
-          "testo": "Solo uno: l'URL è leggermente diverso",
+          "testo": "Solo per reati commessi da persone adulte: per i minorenni ci sono uffici diversi",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo identifica almeno 5 segnali in quel messaggio specifico, non solo l'URL.",
-          "riferimento": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+          "feedback": "Non è corretto. La Polizia Postale si occupa di reati informatici indipendentemente dall'età degli autori. Per i reati tra minorenni la L. 71/2017 prevede anche percorsi alternativi (questore), ma la segnalazione alla Polizia Postale è sempre possibile."
         },
         {
           "id": "d",
-          "testo": "Non è possibile saperlo senza controllare l'email del mittente",
+          "testo": "Solo dopo aver provato a risolvere il problema con la piattaforma per almeno 6 mesi",
           "corretto": false,
-          "feedback": "Non è corretto. Molti segnali sono visibili nel testo del messaggio stesso, senza bisogno di controllare il mittente (anche se quello è un segnale importante).",
-          "riferimento": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+          "feedback": "Non è corretto. Per reati gravi come estorsione o furto d'identità non bisogna aspettare: la segnalazione immediata permette alle forze dell'ordine di agire mentre le prove sono ancora fresche."
         }
       ],
-      "spiegazione": "Il testo analizza questo messaggio e trova almeno 5 segnali: (1) URL sbagliato — instagram-accounts-security.net invece di instagram.com; (2) urgenza artificiale — '12 ore'; (3) saluto generico — 'Caro utente'; (4) assenza del nome personale; (5) probabile mittente non ufficiale. Il testo dice: 'Quanti segnali identifichi? (Risposta: almeno 5)'",
-      "riferimento_principale": "📖 ESPLORA — 2. Come riconoscere un'email di phishing: sette segnali"
+      "spiegazione": "Poliziapostale.it è il portale per segnalare reati informatici. È appropriato usarlo per: truffe online con perdite economiche, furti di identità digitale con danni, estorsione con materiale privato (es. revenge porn), account takeover con conseguenze serie, distribuzione di materiale illecito. Per spam o phishing senza conseguenze, è meglio segnalare direttamente alla piattaforma o al provider email.",
+      "riferimento_principale": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare + 7. Leggi e norme"
     },
     {
       "id": 13,
       "livello": "A",
-      "domanda": "Perché il Box T8 afferma che il phishing generato dall'IA rende obsoleta la regola 'se il messaggio è grammaticalmente corretto, è autentico'?",
+      "domanda": "Il DM 183/2024 (Linee guida Educazione Civica) include nel Traguardo D2 'proteggere i propri dati e quelli degli altri'. Perché proteggere il proprio account è anche un atto di responsabilità verso la propria rete di contatti?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché l'IA può imitare lo stile di qualsiasi persona, incluso gli amici della vittima",
-          "corretto": true,
-          "feedback": "Esatto! Il Box T8 spiega: 'Con i modelli linguistici avanzati, chiunque può generare un testo perfettamente grammaticale, nello stile di un'azienda specifica, con riferimenti personalizzati dai social della vittima.'"
+          "testo": "Perché le aziende condividono i tuoi dati di sicurezza con le autorità per prevenire crimini",
+          "corretto": false,
+          "feedback": "Non è corretto. Il DM 183/2024 non riguarda la condivisione istituzionale dei dati. La dimensione collettiva della sicurezza riguarda l'impatto diretto che la compromissione del tuo account ha sui tuoi contatti."
         },
         {
           "id": "b",
-          "testo": "Perché la grammatica italiana è troppo complessa per rilevare errori facilmente",
-          "corretto": false,
-          "feedback": "Non è corretto. Il problema non è la complessità della grammatica italiana, ma il fatto che i modelli AI generano testi grammaticalmente perfetti in qualsiasi lingua.",
-          "riferimento": "📖 ESPLORA — Box T8 — L'IA e il phishing: arma a doppio taglio"
+          "testo": "Perché un account compromesso diventa uno strumento contro la tua rete: invia truffe ai tuoi contatti, diffonde link malevoli usando la tua identità — la tua sicurezza è parte dell'infrastruttura di sicurezza collettiva",
+          "corretto": true,
+          "feedback": "Esatto! Il Traguardo D2 include la protezione dei dati altrui. Quando il tuo account Instagram viene compromesso, l'attaccante invia truffe a tutti i tuoi follower usando la tua identità di cui si fidano."
         },
         {
           "id": "c",
-          "testo": "Perché i filtri antispam moderni bloccano automaticamente tutti i messaggi con errori",
+          "testo": "Perché la legge ti obbliga a segnalare ogni violazione della tua sicurezza digitale alle autorità entro 24 ore",
           "corretto": false,
-          "feedback": "Non è corretto. È il contrario: i filtri antispam bloccano i messaggi con errori (caratteristica dei phishing vecchi). Il problema è che i nuovi phishing AI non hanno errori.",
-          "riferimento": "📖 ESPLORA — Box T8 — L'IA e il phishing: arma a doppio taglio"
+          "feedback": "Non è corretto. Non esiste un obbligo legale per i privati cittadini di segnalare violazioni della propria sicurezza digitale entro 24 ore. La dimensione civica è etica, non strettamente legale per i privati."
         },
         {
           "id": "d",
-          "testo": "Perché la grammatica corretta è un diritto garantito dal GDPR anche per i messaggi di phishing",
+          "testo": "Perché la tua sicurezza digitale determina il punteggio di credito degli altri membri della tua famiglia",
           "corretto": false,
-          "feedback": "Non è corretto. Il GDPR non ha nulla a che fare con la grammatica dei messaggi. Il problema è tecnico: i modelli AI generano testi perfetti rendendo inefficace il vecchio criterio della grammatica.",
-          "riferimento": "📖 ESPLORA — Box T8 — L'IA e il phishing: arma a doppio taglio"
+          "feedback": "Non è corretto. La sicurezza digitale non influisce direttamente sul credito familiare. L'impatto collettivo riguarda la fiducia nelle comunicazioni digitali e il rischio concreto per i contatti diretti."
         }
       ],
-      "spiegazione": "Il Box T8 spiega che la regola 'phishing = messaggi con errori grammaticali' funzionava perché i truffatori non erano madrelingua. Con i LLM moderni, chiunque può generare testi perfetti nello stile di qualsiasi azienda, con personalizzazioni dai social della vittima. Esistono già deepfake vocali usati per truffe. Le regole che rimangono valide sono strutturali: controlla sempre l'URL, non fornire password via messaggio, usa il 2FA.",
-      "riferimento_principale": "📖 ESPLORA — Box T8 — L'IA e il phishing: arma a doppio taglio"
+      "spiegazione": "Il Traguardo D2 del DM 183/2024 estende la responsabilità dalla sfera personale a quella collettiva: proteggere i propri dati include proteggere quelli degli altri. Un account compromesso è una minaccia per tutta la rete di contatti: l'attaccante può inviare truffe a migliaia di persone usando la tua identità, diffondere malware, compromettere la fiducia. La sicurezza individuale è infrastruttura civica: le tue scelte di sicurezza hanno effetti che vanno oltre la tua sfera personale.",
+      "riferimento_principale": "📖 ESPLORA — DM 183/2024 Traguardo D2"
     },
     {
       "id": 14,
       "livello": "A",
-      "domanda": "Perché il caso di Marco (phishing Netflix, nella sezione OSSERVA) mostra che nessuno è immune al phishing, anche quando si conoscono i segnali?",
+      "domanda": "L'AI genera testi grammaticalmente perfetti con stile autentico, rendendo il phishing più difficile da riconoscere. Quali dei 7 segnali rimangono validi anche contro il phishing generato dall'AI?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché Marco era troppo giovane per riconoscere i segnali",
+          "testo": "Nessuno: con l'AI il phishing è diventato impossibile da distinguere e l'unica soluzione è smettere di usare email",
           "corretto": false,
-          "feedback": "Non è corretto. Il testo non suggerisce che l'età sia il fattore principale. Il problema è l'urgenza emotiva che disattiva il pensiero critico.",
-          "riferimento": "📖 ESPLORA — Caso studio: anatomia di un attacco di phishing riuscito"
+          "feedback": "Non è corretto. Alcune difese rimangono strutturalmente valide indipendentemente dalla qualità del testo. L'AI migliora solo la componente testuale del phishing, non la struttura dell'attacco."
         },
         {
           "id": "b",
-          "testo": "Perché l'urgenza artificiale ('entro 24 ore') e la pagina graficamente identica a Netflix impediscono il pensiero critico, anche se si conoscono i segnali teoricamente",
+          "testo": "Le regole strutturali: controlla sempre l'URL (indipendente dalla qualità del testo), non fornire mai la password via messaggio (regola assoluta), usa il 2FA (protegge anche se la password è rubata)",
           "corretto": true,
-          "feedback": "Esatto! Il testo mostra che Marco non ha guardato l'URL perché l'urgenza lo aveva già messo in modalità 'risolvi subito'. La pressione temporale è progettata per impedire la riflessione."
+          "feedback": "Esatto! L'AI può eliminare gli errori grammaticali e personalizzare lo stile, ma non può fare in modo che instagram.com e instagram-security-check.net siano lo stesso URL. Le difese strutturali non dipendono dalla qualità del testo."
         },
         {
           "id": "c",
-          "testo": "Perché Netflix non avrebbe dovuto gestire la carta di credito della madre di Marco",
+          "testo": "Solo il segnale del mittente sospetto: i modelli AI non riescono ancora a falsificare gli indirizzi email",
           "corretto": false,
-          "feedback": "Non è corretto. Questo è un problema legale (minore che usa carta di credito altrui), non la ragione principale per cui Marco è caduto nel phishing.",
-          "riferimento": "📖 ESPLORA — Caso studio: anatomia di un attacco di phishing riuscito"
+          "feedback": "Non è corretto. I mittenti email possono essere falsificati (email spoofing) indipendentemente dall'AI. Il segnale del mittente è utile ma non è il più robusto contro attacchi sofisticati."
         },
         {
           "id": "d",
-          "testo": "Perché il phishing funziona solo quando si inseriscono dati bancari, non quando si inserisce solo la password",
+          "testo": "Tutti i 7 segnali rimangono ugualmente validi: l'AI non cambia la logica del phishing",
           "corretto": false,
-          "feedback": "Non è corretto. Il phishing è efficace anche quando si ruba solo la password. Nel caso di Marco, il danno maggiore è venuto dai dati della carta — ma l'attacco è iniziato con la password.",
-          "riferimento": "📖 ESPLORA — Caso studio: anatomia di un attacco di phishing riuscito"
+          "feedback": "Non è corretto. L'AI elimina efficacemente alcuni segnali tradizionali: gli errori grammaticali (segnale 5) sono ora rari nei phishing generati da LLM; il saluto generico (segnale 7) può essere personalizzato automaticamente."
         }
       ],
-      "spiegazione": "Il caso di Marco mostra il meccanismo psicologico del phishing: l'urgenza ('entro 24 ore') attiva una risposta emotiva che bypassa il pensiero critico. Marco sapeva probabilmente che esistono truffe online, ma l'urgenza gli ha impedito di fermarsi a controllare l'URL. La difesa strutturale — controlla sempre l'URL PRIMA di interagire — funziona anche sotto pressione emotiva.",
-      "riferimento_principale": "📖 ESPLORA — Caso studio: anatomia di un attacco di phishing riuscito"
+      "spiegazione": "L'AI ha reso alcuni segnali meno affidabili: gli errori grammaticali (segnale 5) possono essere eliminati da un LLM; il saluto generico (segnale 7) può essere personalizzato estraendo il nome dai social. Le difese strutturali rimangono valide: (1) URL — l'AI non può cambiare il dominio falso; (2) mai condividere password — regola assoluta indipendente dal testo; (3) 2FA — protegge anche se la password viene rubata; (4) non agire sotto urgenza artificiale — l'AI la mantiene perché funziona.",
+      "riferimento_principale": "📖 ESPLORA — Box T8 e 2. I 7 segnali del phishing"
     },
     {
       "id": 15,
       "livello": "A",
-      "domanda": "Usando la matematica dell'entropia delle password citata nel collegamento STEM: perché una passphrase di 4 parole comuni è più sicura di una password di 8 caratteri con simboli?",
+      "domanda": "Il database RockYou2024 contiene 10 miliardi di credenziali aggregate da violazioni degli anni precedenti. Perché il credential stuffing con questi dati è ancora efficace nel 2026?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la passphrase è più facile da ricordare e quindi viene cambiata meno spesso",
+          "testo": "Perché le credenziali vengono aggiornate dagli hacker in tempo reale man mano che le persone cambiano le password",
           "corretto": false,
-          "feedback": "Non è corretto. Il vantaggio della passphrase non è solo psicologico (facilità di memoria) ma matematico: ha molte più combinazioni possibili.",
-          "riferimento": "🔢 Collegamento STEM — Matematica"
+          "feedback": "Non è corretto. Gli hacker non aggiornano i database in tempo reale. L'efficacia del credential stuffing dipende dal comportamento delle vittime, non dall'aggiornamento dei dati rubati."
         },
         {
           "id": "b",
-          "testo": "Perché 4 parole da un dizionario di 2000 parole danno 2000⁴ = 16 miliardi di combinazioni, contro i 26⁸ = 200 miliardi di una password di 8 lettere... ma le parole reali riducono l'entropia effettiva",
+          "testo": "Perché molte persone non cambiano le password per anni e le usano su più siti: anche un 2% di successo su 10 miliardi equivale a 200 milioni di account compromessi",
           "corretto": true,
-          "feedback": "Esatto! Il testo mostra il calcolo: una passphrase di 4 parole ha 2000⁴ possibilità (se le parole sono casuali), contro 26⁸ per sole lettere minuscole. La passphrase casuale vince in lunghezza."
+          "feedback": "Esatto! La matematica rende il credential stuffing redditizio anche con dati vecchi: se il 2% delle credenziali è ancora valido su altri siti, 10 miliardi × 2% = 200 milioni di account. La scala rende efficace anche un basso tasso di successo."
         },
         {
           "id": "c",
-          "testo": "Perché i computer non riescono a testare parole complete, solo caratteri singoli",
+          "testo": "Perché i siti web non aggiornano i sistemi di sicurezza abbastanza velocemente",
           "corretto": false,
-          "feedback": "Non è corretto. I computer possono testare parole, frasi e dizionari interi. L'attacco a dizionario prova proprio le parole comuni. Il vantaggio della passphrase è la lunghezza e la combinazione casuale.",
-          "riferimento": "🔢 Collegamento STEM — Matematica"
+          "feedback": "Non è corretto. Il problema principale non è la lentezza degli aggiornamenti dei siti, ma il comportamento degli utenti che riusano la stessa password su più siti senza cambiarla dopo una violazione."
         },
         {
           "id": "d",
-          "testo": "Perché le passphrase non vengono rubate dai data breach, a differenza delle password brevi",
+          "testo": "Perché il credential stuffing funziona solo su siti piccoli senza sistemi di sicurezza avanzati",
           "corretto": false,
-          "feedback": "Non è corretto. Qualsiasi password (lunga o breve) può essere rubata da un data breach se salvata in chiaro. Il vantaggio della passphrase è la resistenza agli attacchi a forza bruta, non ai breach.",
-          "riferimento": "🔢 Collegamento STEM — Matematica"
+          "feedback": "Non è corretto. Il credential stuffing colpisce anche grandi piattaforme. La difesa efficace non dipende dalla dimensione del sito ma dal comportamento dell'utente: password uniche per ogni account."
         }
       ],
-      "spiegazione": "Il testo usa il calcolo dell'entropia: una password di 8 lettere minuscole ha 26⁸ ≈ 200 miliardi di possibilità. Una passphrase di 4 parole da un dizionario di 2000 ha 2000⁴ = 16 trilioni di possibilità — 80 volte di più. E la passphrase è molto più facile da ricordare. Il principio: più combinazioni possibili = più tempo per violarla con forza bruta.",
-      "riferimento_principale": "🔢 Collegamento STEM — Matematica"
+      "spiegazione": "RockYou2024 aggrega credenziali da centinaia di violazioni degli anni precedenti. Rimane efficace per due ragioni: (1) molte persone non cambiano le password dopo una violazione — quelle credenziali restano valide; (2) molte persone usano la stessa password su più siti — credenziali rubate da un sito minore funzionano su siti importanti. Matematicamente: su 10 miliardi di credenziali, un tasso di successo del 2% equivale a 200 milioni di account compromessi.",
+      "riferimento_principale": "📖 ESPLORA — Box RockYou2024"
     },
     {
       "id": 16,
       "livello": "A",
-      "domanda": "Nel 'kit di prima risposta' che devi preparare per il compito dell'AGISCI, perché la sequenza delle azioni è importante quanto le azioni stesse?",
+      "domanda": "Il 'diritto all'oblio' (GDPR Art. 17) permette di richiedere la cancellazione dei propri dati online. Perché NON risolve completamente il problema della reputazione digitale?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Non è importante: qualsiasi ordine va bene purché si facciano tutte le azioni",
+          "testo": "Perché il GDPR si applica solo in Europa e non ai siti americani come Google",
           "corretto": false,
-          "feedback": "Non è corretto. L'ordine è critico. Cambiare la password di Instagram prima della password dell'email lascia l'attaccante con accesso al meccanismo di recupero.",
-          "riferimento": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+          "feedback": "Non è corretto. Il GDPR si applica a tutte le aziende che trattano dati di cittadini europei, incluse Google, Facebook e Meta, anche se hanno sede fuori dall'UE. Il problema non è la giurisdizione."
         },
         {
           "id": "b",
-          "testo": "Perché alcune azioni devono precedere le altre per essere efficaci: cambiare la password email prima di quella Instagram, altrimenti l'attaccante usa l'email per reimpostare la password di Instagram",
+          "testo": "Perché copie già scaricate, screenshot, cache dei motori di ricerca e archivi web sopravvivono indipendentemente dall'originale; la richiesta a Google è accettata solo in determinate condizioni",
           "corretto": true,
-          "feedback": "Esatto! Il testo dice: 'cambia la password dell'email subito, o in parallelo. L'email è la chiave di recupero di tutti gli altri account.' Se l'attaccante controlla l'email, può reimpostare qualsiasi password."
+          "feedback": "Esatto! Rimuovere un contenuto dall'originale non cancella le copie già fatte da altri, le cache dei motori di ricerca, gli archivi digitali come la Wayback Machine. La diffusione virale è praticamente irreversibile."
         },
         {
           "id": "c",
-          "testo": "Perché le azioni in ordine diverso richiedono più tempo totale",
+          "testo": "Perché il diritto all'oblio non esiste nella legge italiana, solo a livello europeo",
           "corretto": false,
-          "feedback": "Non è corretto. Il problema non è il tempo totale ma l'efficacia: alcune azioni successive dipendono da quelle precedenti per funzionare correttamente.",
-          "riferimento": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+          "feedback": "Non è corretto. Il diritto all'oblio è sancito dal GDPR (regolamento europeo direttamente applicabile in tutti gli Stati membri, Italia inclusa) e supportato da sentenze della Corte di Giustizia UE."
         },
         {
           "id": "d",
-          "testo": "Perché le piattaforme bloccano le richieste di cambio password se non seguono un protocollo preciso",
+          "testo": "Perché richiede un processo legale lungo anni che nessuno ha le risorse per affrontare",
           "corretto": false,
-          "feedback": "Non è corretto. Le piattaforme non richiedono un ordine specifico nelle azioni dell'utente. Il problema è strategico: proteggere prima il punto debole centrale (l'email) che permette il recupero di tutti gli altri account.",
-          "riferimento": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+          "feedback": "Non è corretto. Il diritto all'oblio può essere esercitato tramite richiesta formale online su Google, senza necessariamente avviare un processo legale. Il problema è tecnico: anche con la rimozione dall'indice, le copie rimangono."
         }
       ],
-      "spiegazione": "La sequenza è critica: (1) cambia la password dell'email SUBITO (o in parallelo con Instagram) perché l'email è la chiave di recupero di tutti gli altri account; (2) solo dopo cambio gli altri account. Se l'attaccante controlla l'email, può reimpostare qualsiasi password usando 'ho dimenticato la password', vanificando il cambio su Instagram.",
-      "riferimento_principale": "📖 ESPLORA — 5. Se vieni attaccato: cosa fare"
+      "spiegazione": "Il diritto all'oblio (GDPR Art. 17) permette di richiedere la deindicizzazione da Google (il contenuto scompare dai risultati ma non dal sito originale) o la rimozione diretta (solo in certi casi). I limiti strutturali: (1) copie già scaricate esistono indipendentemente; (2) la Wayback Machine archivia automaticamente; (3) screenshot non sono tracciabili; (4) Google accetta le richieste solo in determinate condizioni (interesse pubblico, personaggio pubblico, ecc.). La pubblicazione online è quasi sempre irreversibile.",
+      "riferimento_principale": "📖 ESPLORA — 6. Reputazione online e identità digitale"
     },
     {
       "id": 17,
       "livello": "A",
-      "domanda": "Perché la sicurezza digitale individuale è definita nel testo come 'infrastruttura civica collettiva'?",
+      "domanda": "Esiste una tensione tra sicurezza digitale individuale e sorveglianza statale. Cos'è una 'backdoor crittografica' e perché è controversa?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché le aziende di sicurezza guadagnano denaro pubblico per proteggere i cittadini",
+          "testo": "Un'uscita di emergenza fisica nei data center che permette agli agenti di confiscare fisicamente i server",
           "corretto": false,
-          "feedback": "Non è corretto. Il concetto di infrastruttura civica non riguarda il modello economico delle aziende di sicurezza, ma l'impatto collettivo delle scelte individuali.",
-          "riferimento": "🎯 Badge SDG 16"
+          "feedback": "Non è corretto. Una backdoor crittografica è un meccanismo software, non fisico. Riguarda la crittografia delle comunicazioni digitali, non l'accesso fisico all'hardware."
         },
         {
           "id": "b",
-          "testo": "Perché quando proteggi il tuo account proteggi anche i tuoi contatti (non ricevono truffe dal tuo profilo) e quando segnali un phishing contribuisci a fermare attaccanti che colpiscono migliaia di persone",
+          "testo": "Un accesso speciale intenzionale inserito nella crittografia su richiesta governativa — controverso perché qualsiasi backdoor indebolisce la sicurezza per tutti, anche contro attori malevoli non governativi",
           "corretto": true,
-          "feedback": "Esatto! Il testo del Badge SDG 16 dice: 'La sicurezza digitale individuale è infrastruttura civica collettiva.' Il tuo account compromesso può danneggare tutti i tuoi contatti."
+          "feedback": "Esatto! Questo è il 'going dark debate': i governi vogliono accesso ai messaggi cifrati (WhatsApp, Signal); i critici sostengono che una backdoor per le autorità è anche una potenziale backdoor per hacker e governi autoritari."
         },
         {
           "id": "c",
-          "testo": "Perché il governo italiano gestisce centralizzato tutti i sistemi di sicurezza informatica delle famiglie",
+          "testo": "Un bug nascosto nei sistemi operativi che gli sviluppatori usano per accedere ai dispositivi senza autorizzazione",
           "corretto": false,
-          "feedback": "Non è corretto. Il governo non gestisce centralmente la sicurezza informatica delle famiglie. Il concetto di infrastruttura civica si riferisce all'interdipendenza delle scelte individuali.",
-          "riferimento": "🎯 Badge SDG 16"
+          "feedback": "Non è corretto. Quello è una vulnerabilità o un trojan. Le backdoor crittografiche nel dibattito politico sono meccanismi intenzionali richiesti esplicitamente dalle autorità governative, non bug accidentali."
         },
         {
           "id": "d",
-          "testo": "Perché le password sono proprietà dello Stato e non degli individui",
+          "testo": "Un protocollo sicuro che permette ai provider di recuperare le password dimenticate dagli utenti: utile e privo di rischi",
           "corretto": false,
-          "feedback": "Non è corretto. Le password sono private. Il concetto di infrastruttura civica si riferisce all'impatto collettivo delle pratiche di sicurezza individuali.",
-          "riferimento": "🎯 Badge SDG 16"
+          "feedback": "Non è corretto. Il recupero delle password usa meccanismi diversi (link di reset via email). Le backdoor crittografiche sono controverse proprio perché qualsiasi accesso speciale inserito nella crittografia può essere scoperto e sfruttato da chiunque."
         }
       ],
-      "spiegazione": "Il testo del Badge SDG 16 spiega: quando proteggi il tuo account, i tuoi contatti non riceveranno truffe dal tuo profilo compromesso. Quando segnali tentativi di phishing alle autorità, contribuisci a fermare attaccanti che colpiscono migliaia di persone. La sicurezza individuale ha effetti collettivi: è infrastruttura civica nel senso più letterale.",
-      "riferimento_principale": "🎯 Badge SDG 16"
+      "spiegazione": "Il 'going dark debate': i governi sostengono di non riuscire a intercettare comunicazioni criminali cifrate e chiedono backdoor obbligatorie nelle app di messaggistica. I critici — ricercatori di sicurezza, aziende tech, organizzazioni per i diritti civili — rispondono: qualsiasi backdoor è una vulnerabilità. Non esiste un accesso 'solo per le autorità buone': una chiave crittografica può essere rubata o abusata. Questa tensione tra sicurezza degli utenti e sorveglianza statale è uno dei dibattiti fondamentali della cittadinanza digitale.",
+      "riferimento_principale": "📖 ESPLORA — Approfondimento cittadinanza digitale avanzata"
     },
     {
       "id": 18,
       "livello": "A",
-      "domanda": "Nel messaggio simulato B del livello BASE (la prof.ssa Morelli che chiede la password), quale meccanismo psicologico usa e perché è particolarmente insidioso per uno studente?",
+      "domanda": "Perché l'account email è definito 'la chiave di recupero di tutti gli altri account' e dovrebbe essere il primo da proteggere con il 2FA?",
       "opzioni": [
         {
           "id": "a",
-          "testo": "Usa il meccanismo dell'urgenza: la professoressa dice che serve subito",
+          "testo": "Perché l'email contiene messaggi personali importanti che sarebbe devastante perdere",
           "corretto": false,
-          "feedback": "Non è corretto. Il messaggio B non usa principalmente l'urgenza. Usa l'autorità: la professoressa è una figura di riferimento per gli studenti.",
-          "riferimento": "🔬 SPERIMENTA — BASE: Riconosco e classifico"
+          "feedback": "Non è corretto. Il valore sentimentale dei messaggi è un motivo di protezione, ma non è la ragione strutturale per cui l'email è 'la chiave di recupero'. La ragione è architettonica: l'email è il meccanismo di autenticazione di tutti gli altri servizi."
         },
         {
           "id": "b",
-          "testo": "Usa il meccanismo dell'autorità: la professoressa è una figura di fiducia per uno studente, rendendo difficile rifiutare o mettere in dubbio la richiesta",
+          "testo": "Perché quasi tutti i servizi online permettono di reimpostare la password via email — chi controlla la tua email può resettare le password di tutti gli altri account",
           "corretto": true,
-          "feedback": "Esatto! Il testo dice: 'questo è un esempio di social engineering che sfrutta il ruolo di autorità.' Uno studente tende a rispondere alle richieste di un'insegnante senza mettere in dubbio la loro legittimità."
+          "feedback": "Esatto! Il meccanismo 'password dimenticata' invia un link di reset all'email. Se qualcuno controlla la tua email, può resettare la password di Instagram, della banca, di Netflix — di qualsiasi servizio che usa quell'indirizzo."
         },
         {
           "id": "c",
-          "testo": "Usa il meccanismo della paura: lo studente ha paura delle conseguenze del non rispondere",
+          "testo": "Perché l'email è il servizio più difficile da hackerare e quindi protegge gli altri account per riflesso",
           "corretto": false,
-          "feedback": "Non è corretto. La paura non è il meccanismo principale nel messaggio B. È l'autorità che rende insidioso il messaggio: si tende a fidarsi degli insegnanti.",
-          "riferimento": "🔬 SPERIMENTA — BASE: Riconosco e classifico"
+          "feedback": "Non è corretto. L'email non è il servizio più sicuro in assoluto. È il più critico da proteggere perché compromettendola si ha accesso a tutto il resto tramite il meccanismo di recupero password."
         },
         {
           "id": "d",
-          "testo": "Non usa nessun meccanismo psicologico: è solo una richiesta normale che dovrebbe essere ignorata",
+          "testo": "Perché il GDPR richiede che le aziende contattino gli utenti via email per qualsiasi problema di sicurezza",
           "corretto": false,
-          "feedback": "Non è corretto. Il messaggio usa deliberatamente l'autorità dell'insegnante. Il testo avverte: 'Una persona reale in quella posizione userebbe il sistema di recupero password ufficiale.'",
-          "riferimento": "🔬 SPERIMENTA — BASE: Riconosco e classifico"
+          "feedback": "Non è corretto. Il GDPR riguarda la notifica delle violazioni di dati, non il meccanismo di recupero delle password. La centralità dell'email è architettonica: è il sistema di recupero universale usato da quasi tutti i servizi online."
         }
       ],
-      "spiegazione": "Il messaggio B sfrutta il social engineering basato sull'autorità: la professoressa è una figura di riferimento, e gli studenti tendono a rispondere alle sue richieste senza interrogarsi sulla legittimità. Il testo avverte: 'Nessuno ha mai una ragione legittima per chiederti la tua password — neanche un'insegnante.' Una persona reale userebbe il sistema ufficiale di recupero password.",
-      "riferimento_principale": "🔬 SPERIMENTA — BASE: Riconosco e classifico"
+      "spiegazione": "La struttura di sicurezza di internet si basa sull'email come identità digitale primaria. Quasi ogni servizio usa l'email per: (1) creare l'account; (2) recuperare la password tramite link di reset; (3) inviare notifiche di sicurezza. Chi controlla la tua email può accedere a qualsiasi account registrato con quell'indirizzo, semplicemente cliccando 'ho dimenticato la password'. Per questo il 2FA sull'email è la prima misura di sicurezza da attivare — prima ancora dei social.",
+      "riferimento_principale": "📖 ESPLORA — 4. 2FA + 5. Se vieni attaccato"
     }
   ]
 }
