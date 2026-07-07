@@ -20,7 +20,7 @@ const PIPELINE = [
     output: "Asset JSON strutturati in 04_CONTENUTI/",
     trigger: "Batch/asincrono — NotebookLM non ha API real-time" },
   { nome: "Agente Generatore Asset", emoji: "🎨", colore: "#7D3C98", bg: "#F5EEF8",
-    cosa: "Produce 7 tipologie di immagini AI (GPT Image 2, Higgsfield), script hook audio (struttura 5 blocchi), MP3 con edge-tts voce Isabella.",
+    cosa: "Produce 7 tipologie di immagini AI (GPT Image 2): fotorealistica, contesto, mindmap, professione (×2), immagine_da_md, infografica. Script hook audio (5 blocchi), MP3 con edge-tts voce Isabella.",
     non: "Non gestisce fonti, non interagisce con il profilo studente.",
     output: "PNG in 04_CONTENUTI/visual/ · MP3 + trascrizioni in 04_CONTENUTI/microlearning/hook/",
     trigger: "Dopo ogni definizione o aggiornamento di MC" },
@@ -40,7 +40,7 @@ const PIPELINE = [
 const ZONE = [
   { emoji: "⚡", nome: "INNESCA", desc: "Hook audio 2–3 min su un oggetto reale (edge-tts Isabella). Domanda stimolo in evidenza. 3 video flipped classroom.", colore: "#E67E22", bg: "#FEF9E7" },
   { emoji: "📖", nome: "ESPLORA", desc: "Testo espositivo con accordion per le sottosezioni. Galleria visual AI (ai-fotorealistica, mindmap, infografica).", colore: "#2980B9", bg: "#EBF5FB" },
-  { emoji: "🔍", nome: "OSSERVA", desc: "Case study su oggetto concreto. Professione del Futuro 2030 con immagine, testo narrativo e competenze chiave CLIL.", colore: "#27AE60", bg: "#E9F7EF" },
+  { emoji: "🔍", nome: "OSSERVA", desc: "Case study su oggetto concreto. 2 Professioni del Futuro 2030 ciascuna con immagine AI, testo narrativo e competenze chiave CLIL.", colore: "#27AE60", bg: "#E9F7EF" },
   { emoji: "🔬", nome: "SPERIMENTA", desc: "Attività pratiche su 3 livelli DigComp selezionabili: ● Base · ●● Intermedio · ●●● Avanzato.", colore: "#8E44AD", bg: "#F5EEF8" },
   { emoji: "🌍", nome: "AGISCI", desc: "Compito di realtà autentico. Rubrica di valutazione accessibile via drawer sticky. Metacognizione.", colore: "#16A085", bg: "#E8F8F5" },
   { emoji: "🃏", nome: "RIPASSA", desc: "Processo interattivo (4-7 step), checklist di verifica, quiz 18 domande (6F+6I+6A) con feedback, 18 flashcard.", colore: "#6366F1", bg: "#EEF2FF" },
@@ -55,9 +55,9 @@ const FRAMEWORK = [
 ];
 
 const TECH_STACK = [
-  { cat: "Sito", items: ["Next.js 16.2.2 (App Router, SSG)", "TypeScript · Tailwind CSS 4", "69 pagine statiche · 0 errori TS"] },
+  { cat: "Sito", items: ["Next.js 16.2.2 (App Router, SSG)", "TypeScript · Tailwind CSS 4", "71 pagine statiche · 0 errori TS", "Glossario 297 competenze · 13 macro-categorie"] },
   { cat: "Deploy", items: ["Vercel (primario) · vercel.json framework null", "Netlify · netlify.toml", "GitHub Pages · Actions workflow auto-deploy"] },
-  { cat: "Generazione immagini", items: ["GPT Image 2 (OpenAI) — gpt_image_2", "4 tipologie: fotorealistica, contesto, professione, mindmap"] },
+  { cat: "Generazione immagini", items: ["GPT Image 2 (OpenAI) — gpt_image_2", "7 tipologie: ai-fotorealistica · ai-contesto · mindmap · immagine_da_md · img4-professione · img4-professione-2 · img2-infografica"] },
   { cat: "Audio TTS", items: ["edge-tts 7.2.8 (Microsoft Neural TTS)", "Voce: it-IT-IsabellaNeural", "50 MP3 con durate reali nel JSON MC"] },
   { cat: "Knowledge base", items: ["Pinecone brain-tecnologia (9.879 chunk)", "multilingual-e5-large embeddings", "20 libri di Tecnologia indicizzati"] },
   { cat: "AI Generativa", items: ["Claude Sonnet 4.6 / Opus 4.6 (testi, quiz, microlearning)", "GPT Image 2 (visual didattici)", "NotebookLM (sintesi bibliografica)"] },
@@ -87,7 +87,8 @@ export default function ArchitetturaPage() {
           <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
             ProfTecnologIA è un ecosistema didattico integrato: un libro strutturato su micro-competenze,
             un sistema di 5 agenti AI per la produzione dei contenuti, e un sito Next.js per la fruizione digitale.
-            Ogni MC ha 6 zone di apprendimento, quiz 18 domande, flashcard, microlearning e professione del futuro.
+            Ogni MC ha 6 zone di apprendimento, 2 professioni del futuro 2030, quiz 18 domande, 18 flashcard,
+            microlearning Process + Checklist, e un glossario di 297 competenze in 13 macro-categorie.
             Questa pagina documenta la struttura del sistema per editori, docenti e ricercatori.
           </p>
         </div>
@@ -102,7 +103,7 @@ export default function ArchitetturaPage() {
               { v: "3", l: "Anni di scuola" },
               { v: "6", l: "Zone per MC" },
               { v: "50", l: "Audio hook MP3" },
-              { v: "492", l: "Video YouTube" },
+              { v: "297", l: "Competenze 2030" },
             ].map(({ v, l }) => (
               <div key={l} className="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
                 <div className="text-2xl font-black text-emerald-700">{v}</div>
@@ -214,7 +215,8 @@ export default function ArchitetturaPage() {
                   ["compito_realta", "string", "✅", "Compito autentico con verbo d'azione"],
                   ["sdg", "number[]", "✅", "Numeri SDG collegati (1-17)"],
                   ["hook_audio", "object", "v2.0", "titolo, oggetto_reale, domanda_avvio, durata_min"],
-                  ["professione_futura", "object", "v2.0", "titolo, orizzonte, descrizione_breve, competenze_chiave"],
+                  ["professioni_future", "object[]", "v2.1", "Array di 2 professioni: titolo, orizzonte, descrizione_breve, competenze_chiave (campo attuale)"],
+                  ["professione_futura", "object", "legacy", "Singola professione — mantenuto per compatibilità, rimpiazzato da professioni_future"],
                   ["clil_termini", "object[]", "v2.0", "italiano, inglese, pronuncia_ipa — 4 termini chiave"],
                   ["uda_collegata", "string", "v2.0", "ID dell'UDA interdisciplinare collegata"],
                   ["note_didattiche", "object", "✅", "base e avanzato (testi differenziati)"],
