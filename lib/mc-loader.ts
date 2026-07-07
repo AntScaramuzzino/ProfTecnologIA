@@ -57,6 +57,8 @@ export interface MC {
   prerequisiti: string[] | null;
   tags: string[];
   compito_realta: string;
+  /** Elenco esteso di compiti autentici (versione multi-task; sovrascrive compito_realta se presente) */
+  compiti_realta?: string[];
   sdg?: number[];
   note_didattiche: NoteDid;
   hook_audio?: HookAudio;

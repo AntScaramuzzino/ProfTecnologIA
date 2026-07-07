@@ -24,8 +24,8 @@
       "nota": "Lo studente analizza le decisioni algoritmiche con pensiero critico identificando possibili bias e conseguenze"
     },
     "EV": {
-      "ref": "SDG 9 — Innovazione; SDG 10 — Ridurre le disuguaglianze; SDG 16 — Giustizia",
-      "nota": "L'IA amplifica sia le opportunità che le disuguaglianze — comprenderla è competenza civica urgente"
+      "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D3 (IA come tema civico urgente); L. 92/2019 art. 5; SDG 9 — Innovazione; SDG 10 — Ridurre le disuguaglianze; SDG 16 — Giustizia",
+      "nota": "Il D.M. 183/2024 cita esplicitamente l'IA nel Traguardo D3: 'la rapida evoluzione tecnologica nel campo dell'Intelligenza Artificiale suggerisce adeguati approfondimenti'. Comprendere e valutare i sistemi IA è competenza civica urgente — l'IA amplifica sia le opportunità che le disuguaglianze."
     }
   },
   "outputApp": {
@@ -57,12 +57,11 @@
     "avanzato": "Progettare un sistema IA per un problema scolastico (es. raccomandatore di libri per la biblioteca): definire dataset necessario, tipo di apprendimento e rischi etici da gestire."
   },
   "hook_audio": {
-    "durata_min": 2.9,
-    "durata_secondi": 286,
-    "durata_sec": 172
+    "durata_min": 4.8,
+    "durata_secondi": 286
   },
   "professione_futura": {
-    "titolo": "AI ethicist, responsabile IA, data scientist",
+    "titolo": "Cybersecurity Analyst",
     "orizzonte": "2030",
     "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
     "competenze_chiave": [
@@ -74,25 +73,41 @@
   },
   "clil_termini": [
     {
-      "italiano": "rete",
-      "inglese": "network",
-      "ipa": "ˈnetwɜːk"
+      "it": "intelligenza artificiale",
+      "en": "artificial intelligence (AI)",
+      "def": "Insieme di tecnologie che permettono ai computer di svolgere compiti che normalmente richiedono intelligenza umana"
     },
     {
-      "italiano": "privacy",
-      "inglese": "privacy",
-      "ipa": "ˈprɪvəsi"
+      "it": "rete neurale artificiale",
+      "en": "artificial neural network",
+      "def": "Modello computazionale ispirato al cervello umano, formato da nodi interconnessi che elaborano e trasmettono informazioni"
     },
     {
-      "italiano": "algoritmo",
-      "inglese": "algorithm",
-      "ipa": "ˈælɡərɪðəm"
+      "it": "allucinazione (AI)",
+      "en": "AI hallucination",
+      "def": "Risposta di un sistema di IA che presenta informazioni false come se fossero vere, con apparente sicurezza"
     },
     {
-      "italiano": "sicurezza informatica",
-      "inglese": "cybersecurity",
-      "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+      "it": "bias algoritmico",
+      "en": "algorithmic bias",
+      "def": "Distorsione sistematica nei risultati di un algoritmo causata da dati di addestramento non rappresentativi"
+    },
+    {
+      "it": "AI Act",
+      "en": "EU AI Act",
+      "def": "Primo regolamento europeo sull'intelligenza artificiale (2024) che classifica i sistemi di IA per livello di rischio"
+    },
+    {
+      "it": "modello linguistico (LLM)",
+      "en": "Large Language Model (LLM)",
+      "def": "Sistema di IA addestrato su enormi quantità di testo per generare, tradurre e rispondere a linguaggio naturale"
+    },
+    {
+      "it": "IA generativa",
+      "en": "generative AI",
+      "def": "Tipo di intelligenza artificiale capace di creare nuovi contenuti (testo, immagini, audio) a partire da dati di addestramento"
     }
   ],
-  "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+  "uda_collegata": "L'IA sotto la lente: testare, verificare e valutare criticamente le risposte di un sistema di intelligenza artificiale (Tecnologia + Italiano + Educazione Civica + Matematica)",
+  "sdg_principale": 16
 }

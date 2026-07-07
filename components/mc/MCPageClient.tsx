@@ -318,6 +318,7 @@ function ZonePanel({
   flashcards,
   microlearningData,
   professioneText,
+  appendiceSection,
 }: {
   tabId: string;
   section: { title: string; body: string } | undefined;
@@ -338,6 +339,8 @@ function ZonePanel({
   microlearningData?: MicrolearningInteractives | null;
   /** Testo narrativo "Professione del Futuro" estratto dal body OSSERVA */
   professioneText?: string;
+  /** Sezione APPENDICE — mostrata solo dentro il tab CLIL */
+  appendiceSection?: { title: string; body: string } | null;
 }) {
   // ── RIPASSA — non dipende da sezione MD, render sempre ───────────────────
   if (tabId === "RIPASSA") {
@@ -433,64 +436,83 @@ function ZonePanel({
     );
   }
 
-  // ── CLIL — AppendiceTech in English ─────────────────────────────────────
+  // ── CLIL — AppendiceTech in English (vocabulario + Appendice MD) ──────────
   if (tabId === "CLIL") {
     const terms = mc.clil_termini ?? [];
     return (
-      <div className="px-4 py-6 sm:px-6">
-        {/* Header in English */}
-        <div className="mb-6">
-          <h2 className="text-xl font-black tracking-tight text-slate-900">
-            📎 Tech Vocabulary
-          </h2>
-          <p className="mt-1 text-sm text-slate-500">
-            Key technical terms for this unit — Italian · English · IPA pronunciation.
-          </p>
-        </div>
+      <div className="px-4 py-6 sm:px-6 space-y-8">
+        {/* Vocabolario CLIL */}
+        <div>
+          <div className="mb-6">
+            <h2 className="text-xl font-black tracking-tight text-slate-900">
+              📎 Tech Vocabulary
+            </h2>
+            <p className="mt-1 text-sm text-slate-500">
+              Key technical terms for this unit — Italian · English · IPA pronunciation.
+            </p>
+          </div>
 
-        {terms.length > 0 ? (
-          <div className="grid gap-4 sm:grid-cols-2">
-            {terms.map((t, i) => (
-              <div
-                key={i}
-                className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
-              >
-                {/* Fascia colore area */}
+          {terms.length > 0 ? (
+            <div className="grid gap-4 sm:grid-cols-2">
+              {terms.map((t, i) => (
                 <div
-                  className="h-1.5 w-full"
-                  style={{ backgroundColor: areaHex ?? "#94a3b8" }}
-                />
-                <div className="p-4">
-                  {/* Italiano */}
-                  <p className="mb-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                    IT
-                  </p>
-                  <p className="text-sm font-semibold text-slate-600">{t.italiano}</p>
-
-                  {/* English + IPA */}
-                  <div className="mt-3 border-t border-slate-100 pt-3">
+                  key={i}
+                  className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
+                >
+                  {/* Fascia colore area */}
+                  <div
+                    className="h-1.5 w-full"
+                    style={{ backgroundColor: areaHex ?? "#94a3b8" }}
+                  />
+                  <div className="p-4">
+                    {/* Italiano */}
                     <p className="mb-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                      EN
+                      IT
                     </p>
-                    <p
-                      className="text-lg font-black leading-tight"
-                      style={{ color: areaHex ?? "#1e293b" }}
-                    >
-                      {t.inglese}
-                    </p>
-                    {t.pronuncia_ipa && (
-                      <p className="mt-1 font-mono text-xs text-slate-500">
-                        {t.pronuncia_ipa}
+                    <p className="text-sm font-semibold text-slate-600">{t.italiano}</p>
+
+                    {/* English + IPA */}
+                    <div className="mt-3 border-t border-slate-100 pt-3">
+                      <p className="mb-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                        EN
                       </p>
-                    )}
+                      <p
+                        className="text-lg font-black leading-tight"
+                        style={{ color: areaHex ?? "#1e293b" }}
+                      >
+                        {t.inglese}
+                      </p>
+                      {t.pronuncia_ipa && (
+                        <p className="mt-1 font-mono text-xs text-slate-500">
+                          {t.pronuncia_ipa}
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
-            <p className="text-sm text-slate-500">No CLIL terms available for this unit.</p>
+              ))}
+            </div>
+          ) : (
+            <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
+              <p className="text-sm text-slate-500">No CLIL terms available for this unit.</p>
+            </div>
+          )}
+        </div>
+
+        {/* AppendiceTech in English — solo qui dentro il tab CLIL */}
+        {appendiceSection && (
+          <div className="border-t border-slate-200 pt-6">
+            <div className="mb-4 flex items-center gap-2">
+              <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-black uppercase tracking-wider text-slate-600">
+                📖 AppendiceTech in English
+              </span>
+              <span className="text-sm font-semibold text-slate-500">
+                {appendiceSection.title.replace(/APPENDICE\s*[—-]?\s*/i, "")}
+              </span>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-5">
+              <ReadableBodyInTab body={appendiceSection.body} />
+            </div>
           </div>
         )}
       </div>
@@ -623,15 +645,72 @@ function ZonePanel({
 
   // ── AGISCI ────────────────────────────────────────────────────────────────
   if (tabId === "AGISCI") {
-    // Rimuove la rubrica dal body inline: è già accessibile tramite il drawer
     const bodyWithoutRubrica = stripRubricaFromBody(body);
+    // Supporta sia un singolo compito_realta (stringa) sia l'array compiti_realta
+    const compiti: string[] = mc.compiti_realta?.length
+      ? mc.compiti_realta
+      : mc.compito_realta
+        ? [mc.compito_realta]
+        : [];
+
     return (
-      <div className="px-4 py-6 sm:px-6">
-        {/* Rubrica — solo bottone, si apre in drawer */}
-        <div className="mb-6">
-          <RubricaDrawer agisciBody={agisciRawBody} areaHex={areaHex} />
+      <div className="space-y-6 px-4 py-6 sm:px-6">
+
+        {/* ── Compito/i di Realtà ─────────────────────────────────────────── */}
+        {compiti.length > 0 && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              🎯 {compiti.length > 1 ? "Compiti di Realtà" : "Compito di Realtà"}
+            </p>
+            <div className="space-y-3">
+              {compiti.map((c, i) => (
+                <div
+                  key={i}
+                  className="rounded-xl border border-amber-200 bg-amber-50 p-4"
+                  style={{ borderLeftColor: areaHex ?? "#f59e0b", borderLeftWidth: 4 }}
+                >
+                  {compiti.length > 1 && (
+                    <p className="mb-1 text-[10px] font-black uppercase tracking-widest text-amber-500">
+                      Compito {i + 1}
+                    </p>
+                  )}
+                  <p className="text-sm font-bold leading-6 text-amber-950">{c}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* ── Differenziazione ────────────────────────────────────────────── */}
+        {mc.note_didattiche && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              ⚖️ Differenziazione
+            </p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="rounded-xl border border-blue-100 bg-blue-50 p-4">
+                <p className="mb-1.5 text-[10px] font-black uppercase tracking-widest text-blue-600">
+                  ● Base
+                </p>
+                <p className="text-sm leading-6 text-blue-900">{mc.note_didattiche.base}</p>
+              </div>
+              <div className="rounded-xl border border-orange-100 bg-orange-50 p-4">
+                <p className="mb-1.5 text-[10px] font-black uppercase tracking-widest text-orange-600">
+                  ●●● Avanzato
+                </p>
+                <p className="text-sm leading-6 text-orange-900">{mc.note_didattiche.avanzato}</p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* ── Rubrica + corpo AGISCI dal markdown ─────────────────────────── */}
+        <div>
+          <div className="mb-6">
+            <RubricaDrawer agisciBody={agisciRawBody} areaHex={areaHex} />
+          </div>
+          <ReadableBodyInTab body={bodyWithoutRubrica} />
         </div>
-        <ReadableBodyInTab body={bodyWithoutRubrica} />
       </div>
     );
   }
@@ -698,7 +777,7 @@ export function MCPageClient({
   const availableTabs = ZONE_TABS.filter((tab) => {
     if (tab.id === "RIPASSA") return true;
     if (tab.id === "PROFESSIONE") return !!mc.professione_futura?.titolo;
-    if (tab.id === "CLIL") return (mc.clil_termini?.length ?? 0) > 0;
+    if (tab.id === "CLIL") return (mc.clil_termini?.length ?? 0) > 0 || !!appendiceSection;
     return sectionMapClean.has(tab.id);
   });
   const tabs = availableTabs.length > 0 ? availableTabs : ZONE_TABS;
@@ -746,22 +825,10 @@ export function MCPageClient({
             flashcards={flashcards}
             microlearningData={microlearningData}
             professioneText={professioneText}
+            appendiceSection={appendiceSection}
           />
         )}
       </MCNavigator>
-
-      {/* ── APPENDICE — fuori dai tab, sempre visibile ── */}
-      {appendiceSection && (
-        <section className="border-t border-slate-200 bg-slate-50 px-4 py-8 sm:px-6">
-          <div className="mb-4 flex items-center gap-2">
-            <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-black uppercase tracking-wider text-slate-600">
-              📎 Appendice
-            </span>
-            <span className="text-sm font-semibold text-slate-500">{appendiceSection.title.replace(/APPENDICE\s*[—-]?\s*/i, "")}</span>
-          </div>
-          <ReadableBodyInTab body={appendiceSection.body} />
-        </section>
-      )}
     </div>
   );
 }

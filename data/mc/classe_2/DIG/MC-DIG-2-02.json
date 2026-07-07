@@ -24,8 +24,8 @@
       "nota": "Lo studente comprende come la propria presenza digitale impatta sugli altri"
     },
     "EV": {
-      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-      "nota": "La privacy digitale è diritto fondamentale in una democrazia"
+      "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D2 (privacy/dati personali) e Traguardo D3 (prevenzione cyberbullismo); L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "Doppio aggancio ai Traguardi prescrittivi del D.M. 183/2024: D2 'privacy e tutela dei dati e dell'identità personale' e D3 'prevenire e contrastare il cyberbullismo'. La gestione consapevole dell'identità digitale è precondizione per entrambi i traguardi."
     }
   },
   "outputApp": {
@@ -42,6 +42,7 @@
     "GDPR",
     "dati personali",
     "identità digitale",
+    "cyberbullismo",
     "classe-2",
     "DIG"
   ],
@@ -54,12 +55,11 @@
     "avanzato": "Richiedere formalmente la copia dei propri dati a una piattaforma (es. Google Takeout) e analizzare cosa ha raccolto."
   },
   "hook_audio": {
-    "durata_min": 2.4,
-    "durata_secondi": 237,
-    "durata_sec": 142
+    "durata_min": 4.0,
+    "durata_secondi": 237
   },
   "professione_futura": {
-    "titolo": "Data Protection Officer (DPO) — Responsabile della Protezione dei Dati",
+    "titolo": "Cybersecurity Analyst",
     "orizzonte": "2030",
     "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
     "competenze_chiave": [
@@ -71,25 +71,41 @@
   },
   "clil_termini": [
     {
-      "italiano": "rete",
-      "inglese": "network",
-      "ipa": "ˈnetwɜːk"
+      "it": "dato personale",
+      "en": "personal data",
+      "def": "Qualsiasi informazione che permette di identificare direttamente o indirettamente una persona fisica"
     },
     {
-      "italiano": "privacy",
-      "inglese": "privacy",
-      "ipa": "ˈprɪvəsi"
+      "it": "GDPR",
+      "en": "GDPR (General Data Protection Regulation)",
+      "def": "Regolamento europeo del 2018 che tutela i dati personali dei cittadini UE e regola il loro trattamento"
     },
     {
-      "italiano": "algoritmo",
-      "inglese": "algorithm",
-      "ipa": "ˈælɡərɪðəm"
+      "it": "cookie",
+      "en": "cookie",
+      "def": "Piccolo file di testo salvato dal browser per ricordare preferenze, sessioni di login e comportamento di navigazione"
     },
     {
-      "italiano": "sicurezza informatica",
-      "inglese": "cybersecurity",
-      "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+      "it": "identità digitale",
+      "en": "digital identity",
+      "def": "Insieme di informazioni online (profili social, attività, dati) che costruiscono la presenza di una persona in rete"
+    },
+    {
+      "it": "cyberbullismo",
+      "en": "cyberbullying",
+      "def": "Comportamento aggressivo, intenzionale e ripetuto attraverso strumenti digitali ai danni di una persona"
+    },
+    {
+      "it": "impronta digitale",
+      "en": "digital footprint",
+      "def": "Traccia permanente di dati lasciata da ogni azione online: ricerche, acquisti, post, navigazione"
+    },
+    {
+      "it": "autenticazione",
+      "en": "authentication",
+      "def": "Processo di verifica dell'identità di un utente tramite password, PIN, biometria o autenticazione a due fattori"
     }
   ],
-  "uda_collegata": "UDA-2 — La Città che Vorrei"
+  "uda_collegata": "I nostri dati in rete: chi li raccoglie, come ci protegiamo — simulazione di una verifica GDPR per un'app fittizia (Tecnologia + Italiano + Educazione Civica)",
+  "sdg_principale": 16
 }

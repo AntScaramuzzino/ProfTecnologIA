@@ -24,8 +24,8 @@
       "nota": "Lo studente comprende le responsabilità legali ed etiche della pubblicazione online"
     },
     "EV": {
-      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-      "nota": "Il rispetto del diritto d'autore e delle licenze è esercizio di cittadinanza digitale responsabile"
+      "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D1 (veridicità contenuti condivisi) e D2 (rispetto identità altrui); L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "Produrre contenuti responsabili aggancia i Traguardi D1 (veridicità e accuratezza delle informazioni condivise) e D2 (rispetto dell'identità altrui, diritti d'autore, licenze). Il diritto d'autore e le licenze Creative Commons sono esercizio concreto di cittadinanza digitale."
     }
   },
   "outputApp": {
@@ -54,12 +54,11 @@
     "avanzato": "Pubblicare il podcast su una piattaforma open (es. Internet Archive) con licenza CC scelta e giustificata dallo studente."
   },
   "hook_audio": {
-    "durata_min": 2.5,
-    "durata_secondi": 250,
-    "durata_sec": 150
+    "durata_min": 4.2,
+    "durata_secondi": 250
   },
   "professione_futura": {
-    "titolo": "Content Strategist con specializzazione etica",
+    "titolo": "Mobility & Logistics Engineer",
     "orizzonte": "2030",
     "descrizione_breve": "Ottimizza reti di trasporto e logistica per ridurre emissioni e inefficienze.",
     "competenze_chiave": [
@@ -71,25 +70,41 @@
   },
   "clil_termini": [
     {
-      "italiano": "rete",
-      "inglese": "network",
-      "ipa": "ˈnetwɜːk"
+      "it": "contenuto digitale",
+      "en": "digital content",
+      "def": "Qualsiasi testo, immagine, audio o video creato, distribuito o consumato in formato digitale"
     },
     {
-      "italiano": "comunicazione",
-      "inglese": "communication",
-      "ipa": "kəˌmjuːnɪˈkeɪʃən"
+      "it": "diritto d'autore",
+      "en": "copyright",
+      "def": "Diritto esclusivo dell'autore di riprodurre, distribuire e modificare la propria opera creativa"
     },
     {
-      "italiano": "trasporto",
-      "inglese": "transport",
-      "ipa": "ˈtrænspɔːt"
+      "it": "licenza Creative Commons",
+      "en": "Creative Commons license",
+      "def": "Sistema di licenze standard che permette agli autori di condividere opere con libertà definite e condizioni chiare"
     },
     {
-      "italiano": "automazione",
-      "inglese": "automation",
-      "ipa": "ˌɔːtəˈmeɪʃən"
+      "it": "compressione dati",
+      "en": "data compression",
+      "def": "Riduzione della dimensione di un file eliminando ridondanze (lossless) o informazioni meno percettibili (lossy)"
+    },
+    {
+      "it": "deepfake",
+      "en": "deepfake",
+      "def": "Contenuto video o audio manipolato con intelligenza artificiale per far sembrare reale qualcosa che non è accaduto"
+    },
+    {
+      "it": "plagio",
+      "en": "plagiarism",
+      "def": "Appropriazione indebita del lavoro intellettuale altrui presentandolo come proprio, senza citare la fonte"
+    },
+    {
+      "it": "podcast",
+      "en": "podcast",
+      "def": "Contenuto audio digitale distribuito online in episodi scaricabili, su qualsiasi argomento e struttura"
     }
   ],
-  "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+  "uda_collegata": "Il nostro giornalino digitale: produrre contenuti multimediali responsabili su temi scolastici (Tecnologia + Italiano + Arte + Educazione Civica)",
+  "sdg_principale": 16
 }

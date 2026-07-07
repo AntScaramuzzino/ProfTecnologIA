@@ -101,18 +101,27 @@ export default async function MCPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── Compito di realtà — sempre visibile sopra il navigator ── */}
+      {/* ── Traguardo di competenza — sostituisce il Compito di realtà sopra il navigator ── */}
       <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
         <section
-          className="rounded-lg border border-amber-200 bg-[#fff7dd] p-4 sm:p-5"
-          style={{ borderTopColor: areaHex ?? "#f59e0b", borderTopWidth: 3 }}
+          className="rounded-lg border border-slate-200 bg-white p-4 sm:p-5"
+          style={{ borderLeftColor: areaHex ?? "#10B981", borderLeftWidth: 4 }}
         >
-          <div className="mb-2 flex items-center gap-2">
-            <span className="text-lg leading-none" aria-hidden="true">🎯</span>
-            <p className="text-sm font-black uppercase tracking-wide text-amber-800">Compito di realtà</p>
+          <div className="mb-2 flex flex-wrap items-center gap-2">
+            <p className="text-xs font-black uppercase tracking-wide text-slate-500">
+              📌 Cosa imparo in questa MC
+            </p>
+            {mc.frameworks?.DC?.ref && (
+              <span
+                className="ml-auto rounded-full px-2.5 py-0.5 text-[10px] font-black text-white"
+                style={{ backgroundColor: areaHex ?? "#10B981" }}
+              >
+                DigComp {mc.outputApp.livelloDigComp} · {mc.frameworks.DC.ref.split(" ").slice(0, 2).join(" ")}
+              </span>
+            )}
           </div>
-          <p className="text-base font-bold leading-7 text-amber-950 sm:text-lg sm:leading-9">
-            {mc.compito_realta}
+          <p className="text-base leading-7 text-slate-800 sm:text-lg sm:leading-9">
+            {mc.frameworks?.IN?.traguardo ?? mc.frameworks?.DC?.nota ?? mc.descrizione}
           </p>
         </section>
       </div>
@@ -141,23 +150,8 @@ export default async function MCPage({ params }: Props) {
           />
         </div>
 
-        {/* Aside destra — stessa struttura di prima */}
+        {/* Aside destra */}
         <aside className="hidden min-w-0 space-y-5 lg:block">
-          {/* Differenziazione */}
-          <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-sm font-black text-slate-500">Differenziazione</p>
-            <div className="mt-4 space-y-4">
-              <div>
-                <h3 className="text-sm font-black text-blue-900">Base</h3>
-                <p className="mt-1 text-sm leading-6 text-slate-600">{mc.note_didattiche?.base}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-black text-orange-900">Avanzato</h3>
-                <p className="mt-1 text-sm leading-6 text-slate-600">{mc.note_didattiche?.avanzato}</p>
-              </div>
-            </div>
-          </section>
-
           {/* Framework */}
           <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-black text-slate-500">Framework</p>
