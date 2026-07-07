@@ -60,6 +60,18 @@ export interface MC {
     descrizione_breve?: string;
     competenze_chiave?: string[];
   };
+  /**
+   * Immagine opzionale da Wikimedia Commons (CC BY / CC BY-SA / CC0 / Public Domain)
+   * da mostrare nella tab ESPLORA prima dell'accordion di testo.
+   * src: path relativo a /public/ — es. "/images/wiki/MC-MAT-1-02/fotosintesi.jpg"
+   */
+  immagine_esplora?: {
+    src: string;
+    alt: string;
+    caption: string;      // es. "Autore: John Doe, via Wikimedia Commons"
+    license: string;      // es. "CC BY-SA 4.0"
+    wikimedia_url?: string;
+  };
 }
 
 // Legge prima da data/mc/ (repo standalone), poi da ../../01_MATRICE_MC (workspace locale)

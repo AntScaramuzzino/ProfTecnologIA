@@ -38,6 +38,7 @@ import MCVisual from "@/components/MCVisual";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
+import { WikiImage } from "@/components/mc/WikiImage";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
@@ -457,6 +458,16 @@ function ZonePanel({
 
     return (
       <div className="px-4 py-4 sm:px-6">
+        {/* Immagine da Wikimedia Commons — opzionale, sopra il testo */}
+        {mc.immagine_esplora && (
+          <WikiImage
+            src={mc.immagine_esplora.src}
+            alt={mc.immagine_esplora.alt}
+            caption={mc.immagine_esplora.caption}
+            license={mc.immagine_esplora.license}
+            wikimedia_url={mc.immagine_esplora.wikimedia_url}
+          />
+        )}
         <AccordionSection items={items} defaultFirstOpen areaHex={areaHex} />
         {/* Galleria visual aggiuntiva dopo ESPLORA */}
         {visuals.length > 1 && (
