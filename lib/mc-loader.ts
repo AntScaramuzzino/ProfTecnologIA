@@ -107,8 +107,18 @@ function loadMCsFromDisk(): MC[] {
     walkDir(MC_ROOT);
   }
 
+  // DIS e DIG vanno sempre in coda per ogni anno (dopo tutte le altre aree)
+  function areaSortKey(area: string): number {
+    if (area === "DIS") return 1;
+    if (area === "DIG") return 2;
+    return 0;
+  }
+
   return mcs.sort((a, b) => {
     if (a.anno !== b.anno) return a.anno - b.anno;
+    const ka = areaSortKey(a.area);
+    const kb = areaSortKey(b.area);
+    if (ka !== kb) return ka - kb;          // DIS e DIG in fondo
     if (a.area !== b.area) return a.area.localeCompare(b.area);
     return a.id.localeCompare(b.id);
   });
