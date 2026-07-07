@@ -60,12 +60,13 @@ interface MCPageClientProps {
 // ── Mapping sezione MD → tab ID ──────────────────────────────────────────────
 
 const ZONE_TABS: NavigatorTab[] = [
-  { id: "INNESCA",    label: "INNESCA",    emoji: "⚡" },
-  { id: "ESPLORA",    label: "ESPLORA",    emoji: "📖" },
-  { id: "OSSERVA",    label: "OSSERVA",    emoji: "🔍" },
-  { id: "SPERIMENTA", label: "SPERIMENTA", emoji: "🔬" },
-  { id: "AGISCI",     label: "AGISCI",     emoji: "🌍" },
-  { id: "RIPASSA",    label: "RIPASSA",    emoji: "🃏" },
+  { id: "INNESCA",      label: "INNESCA",      emoji: "⚡" },
+  { id: "ESPLORA",      label: "ESPLORA",      emoji: "📖" },
+  { id: "OSSERVA",      label: "OSSERVA",      emoji: "🔍" },
+  { id: "SPERIMENTA",   label: "SPERIMENTA",   emoji: "🔬" },
+  { id: "AGISCI",       label: "AGISCI",       emoji: "🌍" },
+  { id: "RIPASSA",      label: "RIPASSA",      emoji: "🃏" },
+  { id: "PROFESSIONE",  label: "PROFESSIONE",  emoji: "💼" },
 ];
 
 function sectionToTabId(title: string): string | null {
@@ -315,6 +316,7 @@ function ZonePanel({
   quizData,
   flashcards,
   microlearningData,
+  professioneText,
 }: {
   tabId: string;
   section: { title: string; body: string } | undefined;
@@ -333,6 +335,8 @@ function ZonePanel({
   quizData?: QuizQuestion[] | null;
   flashcards?: FlashcardItem[];
   microlearningData?: MicrolearningInteractives | null;
+  /** Testo narrativo "Professione del Futuro" estratto dal body OSSERVA */
+  professioneText?: string;
 }) {
   // ── RIPASSA — non dipende da sezione MD, render sempre ───────────────────
   if (tabId === "RIPASSA") {
@@ -395,6 +399,33 @@ function ZonePanel({
         {!microlearningData && (!quizData || quizData.length === 0) && (!flashcards || flashcards.length === 0) && (
           <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
             <p className="text-sm text-slate-500">Contenuti di ripasso in arrivo.</p>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // ── PROFESSIONE DEL FUTURO — tab dedicato dopo RIPASSA ──────────────────
+  if (tabId === "PROFESSIONE") {
+    return (
+      <div className="px-4 py-6 sm:px-6">
+        {mc.professione_futura?.titolo ? (
+          <ProfessioneCard
+            professione={
+              mc.professione_futura as {
+                titolo: string;
+                orizzonte?: string;
+                descrizione_breve?: string;
+                competenze_chiave?: string[];
+              }
+            }
+            professioneText={professioneText ?? ""}
+            mcId={mc.id}
+            areaHex={areaHex}
+          />
+        ) : (
+          <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
+            <p className="text-sm text-slate-500">Dati professione non disponibili.</p>
           </div>
         )}
       </div>
@@ -598,9 +629,12 @@ export function MCPageClient({
     return { professioneText: extracted.professioneText, sectionMapClean: map };
   }, [sectionMap, mc.professione_futura]);
 
-  // Tab con contenuto MD + RIPASSA (sempre presente, non dipende dal Markdown)
-  const ALWAYS_VISIBLE = new Set(["RIPASSA"]);
-  const availableTabs = ZONE_TABS.filter((tab) => sectionMapClean.has(tab.id) || ALWAYS_VISIBLE.has(tab.id));
+  // Tab con contenuto MD + tab speciali (non dipendono dal Markdown)
+  const availableTabs = ZONE_TABS.filter((tab) => {
+    if (tab.id === "RIPASSA") return true;
+    if (tab.id === "PROFESSIONE") return !!mc.professione_futura?.titolo;
+    return sectionMapClean.has(tab.id);
+  });
   const tabs = availableTabs.length > 0 ? availableTabs : ZONE_TABS;
 
   const agisciRawBody = getAgisciRawBody(text);
@@ -645,33 +679,10 @@ export function MCPageClient({
             quizData={quizData}
             flashcards={flashcards}
             microlearningData={microlearningData}
+            professioneText={professioneText}
           />
         )}
       </MCNavigator>
-
-      {/* ── PROFESSIONE DEL FUTURO — sezione standalone dopo RIPASSA ── */}
-      {mc.professione_futura?.titolo && (
-        <section className="border-t border-slate-200 bg-white px-4 py-8 sm:px-6">
-          <div className="mb-5 flex items-center gap-2">
-            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black uppercase tracking-wider text-slate-600">
-              💼 Professione del Futuro
-            </span>
-          </div>
-          <ProfessioneCard
-            professione={
-              mc.professione_futura as {
-                titolo: string;
-                orizzonte?: string;
-                descrizione_breve?: string;
-                competenze_chiave?: string[];
-              }
-            }
-            professioneText={professioneText}
-            mcId={mc.id}
-            areaHex={areaHex}
-          />
-        </section>
-      )}
 
       {/* ── APPENDICE — fuori dai tab, sempre visibile ── */}
       {appendiceSection && (
