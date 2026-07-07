@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La notifica che non riesci a ignorare"**
-> 🎧 *Ascolta prima di leggere. Durata: 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 20 sec.*
 > *(Script completo: MC-DIG-2-05_hook-script.md)*
 
 **Domanda di avvio:**

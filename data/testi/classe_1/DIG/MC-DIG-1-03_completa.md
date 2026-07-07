@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il cameriere che non sbaglia mai"**
-> 🎧 *Ascolta prima di leggere. Durata: 28 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 22 sec.*
 > *(Script completo: MC-DIG-1-03_hook-script.md)*
 
 **Domanda di avvio:**
