@@ -35,6 +35,7 @@ import QuizWidget from "@/components/mc/QuizWidget";
 import FlashcardDeck from "@/components/mc/FlashcardDeck";
 import VideoGallery from "@/components/mc/VideoGallery";
 import MCVisual from "@/components/MCVisual";
+import MCImageCarousel from "@/components/mc/MCImageCarousel";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
@@ -607,15 +608,11 @@ function ZonePanel({
           />
         )}
         <AccordionSection items={items} defaultFirstOpen areaHex={areaHex} />
-        {/* Galleria visual aggiuntiva dopo ESPLORA */}
-        {visuals.length > 1 && (
+        {/* Galleria visual con carosello e zoom */}
+        {visuals.length > 0 && (
           <div className="mt-8">
             <p className="mb-4 text-xs font-black uppercase tracking-wide text-slate-500">Galleria visuale</p>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
-              {visuals.slice(1).map((asset) => (
-                <MCVisual key={asset.src} asset={asset} alt={`${asset.label} per ${mc.titolo}`} />
-              ))}
-            </div>
+            <MCImageCarousel visuals={visuals} mcTitolo={mc.titolo} />
           </div>
         )}
       </div>
