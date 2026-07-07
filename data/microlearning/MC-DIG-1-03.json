@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-DIG-1-03",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Il mio primo algoritmo della giornata",
+    "istruzione": "Pensa al primo compito che fai ogni mattina (es. prepararti per la scuola) e usa questa checklist per trasformarlo in un algoritmo preciso.",
+    "voci": [
+      "Ho scritto ogni singolo passo della mia routine mattutina in ordine, come se lo spiegassi a un robot che non sa nulla di me.",
+      "Ho trovato almeno una struttura CONDIZIONE (SE/ALLORA) nel mio algoritmo mattutino e l'ho evidenziata.",
+      "Ho trovato almeno una struttura CICLO (RIPETI FINCHÉ) nel mio algoritmo mattutino e l'ho evidenziata.",
+      "Ho disegnato il diagramma di flusso del mio algoritmo usando le forme standard: ovale (start/stop), rettangolo (azione), rombo (decisione), frecce.",
+      "Ho 'testato' l'algoritmo seguendolo alla lettera passo per passo: ha prodotto il risultato atteso, oppure ho trovato passi ambigui o mancanti da correggere?",
+      "Ho spiegato il mio algoritmo a un compagno come se fosse un 'robot umano': ha eseguito ogni passo senza fare domande, o ha incontrato ambiguità?"
+    ]
+  },
+  "process": {
+    "titolo": "Come ragiona un computer: dall'istruzione al risultato",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Comprendi il problema — decomposizione",
+        "attore": "Programmatore / pensiero computazionale",
+        "domanda": "Se ti chiedessero di 'fare colazione', sai già come farlo — ma potresti scrivere istruzioni talmente precise che un robot non farebbe nessuna domanda?",
+        "impatto": "Scomporre un problema in passi elementari è il primo atto del pensiero computazionale — ed è la competenza più rara e preziosa in qualsiasi lavoro che richieda di risolvere problemi complessi."
+      },
+      {
+        "numero": 2,
+        "titolo": "Progetta la SEQUENZA — ogni passo al posto giusto",
+        "attore": "Progettista dell'algoritmo",
+        "domanda": "Cosa succede se uno step dipende dal precedente ma non l'hai scritto nell'ordine giusto? Es: 'Versa il latte' scritto prima di 'Apri il frigo'.",
+        "impatto": "L'ordine delle istruzioni non è negoziabile. Un algoritmo non interpreta — segue la sequenza alla lettera, anche se è sbagliata. Scrivere i passi nell'ordine corretto è già metà del lavoro."
+      },
+      {
+        "numero": 3,
+        "titolo": "Aggiungi le CONDIZIONI — gestisci i casi diversi",
+        "attore": "Progettista dell'algoritmo / struttura SE-ALLORA-ALTRIMENTI",
+        "domanda": "Quante cose fai diversamente ogni mattina in base a qualcosa che controlli? Es: 'SE piove, prendo l'ombrello. ALTRIMENTI no.' Quante di queste hai già in testa senza accorgertene?",
+        "impatto": "Le condizioni trasformano un algoritmo rigido in uno flessibile. Senza di esse, l'algoritmo funziona solo in un caso specifico — non nel mondo reale, dove le situazioni variano."
+      },
+      {
+        "numero": 4,
+        "titolo": "Inserisci i CICLI — evita le ripetizioni inutili",
+        "attore": "Progettista dell'algoritmo / struttura RIPETI FINCHÉ",
+        "domanda": "Spazzolarsi i denti richiede movimenti ripetuti. Ogni app social mostra post dopo post. Cosa succederebbe se ogni ripetizione fosse scritta come un'istruzione separata?",
+        "impatto": "Senza cicli, un programma che scarica 100 email dovrebbe avere 100 istruzioni identiche. I cicli rendono il codice sintetico, leggibile e gestibile — qualunque sia la dimensione del problema."
+      },
+      {
+        "numero": 5,
+        "titolo": "Testa e correggi — il debugging",
+        "attore": "Programmatore / team di test",
+        "domanda": "Hai mai seguito istruzioni alla lettera e ottenuto un risultato sbagliato — non perché tu avessi sbagliato, ma perché le istruzioni erano ambigue o incomplete?",
+        "impatto": "Il 50% del tempo di un programmatore professionista è dedicato al debugging. Non è un segnale di debolezza — è il metodo scientifico applicato al codice: ipotesi, test, correzione, ripetizione."
+      },
+      {
+        "numero": 6,
+        "titolo": "Riusa e migliora — dall'algoritmo al programma",
+        "attore": "Sviluppatore software",
+        "domanda": "Se hai già risolto bene un sottoproblema, perché non riusarlo ogni volta che quel sottoproblema si ripresenta? Cosa ti impedisce?",
+        "impatto": "Le funzioni sono algoritmi con un nome. Scrivere buone funzioni riusabili è la differenza tra codice che dura 6 mesi e codice che dura 10 anni — e tra un programmatore junior e uno senior."
+      }
+    ]
+  }
+}

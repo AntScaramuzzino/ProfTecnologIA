@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Cos'è un algoritmo?",
+    "back": "Una sequenza precisa e ordinata di istruzioni per risolvere un problema o completare un compito. Può essere scritto in linguaggio naturale, con un diagramma di flusso o in codice.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa si intende per SEQUENZA in un algoritmo?",
+    "back": "Una struttura di controllo in cui le istruzioni vengono eseguite una dopo l'altra, nell'ordine in cui appaiono. Nessun passo viene saltato o ripetuto.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un diagramma di flusso?",
+    "back": "Una rappresentazione grafica di un algoritmo che usa forme standard: ovale (start/stop), rettangolo (azione), rombo (decisione), frecce (flusso di esecuzione).",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un bug?",
+    "back": "Un errore in un algoritmo o programma che causa un comportamento sbagliato o inatteso. Può essere un errore logico (risultato sbagliato) o sintattico (il programma non gira affatto).",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa significa 'decomposizione' nel pensiero computazionale?",
+    "back": "Scomporre un problema complesso in sottoproblemi più piccoli e gestibili, affrontandoli e risolvendoli uno alla volta.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quale struttura si usa per RIPETERE un'azione fino a quando una condizione è vera?",
+    "back": "Il CICLO (o loop): permette di ripetere un blocco di istruzioni finché una condizione è soddisfatta. Es: 'RIPETI sciacqua finché i capelli sono puliti.'",
+    "tag": "Base"
+  },
+  {
+    "front": "Quando si usa la struttura SE/ALLORA/ALTRIMENTI?",
+    "back": "Quando un algoritmo deve scegliere tra due percorsi diversi in base a una condizione vera o falsa. Es: 'SE il latte è freddo, riscaldalo ALTRIMENTI versalo direttamente.'",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Qual è la differenza tra un bug logico e un bug sintattico?",
+    "back": "Bug sintattico: il programma non gira perché c'è un errore di scrittura nel codice. Bug logico: il programma gira ma dà risultati sbagliati perché la logica è errata. Il secondo è più difficile da trovare.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa dimostra l'attività 'robot umano'?",
+    "back": "Che un algoritmo deve essere preciso e non ambiguo: il 'robot' (chi esegue le istruzioni) le segue alla lettera senza interpretare. Ogni ambiguità emerge subito come blocco o errore.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il debugging?",
+    "back": "Il processo di ricerca, identificazione e correzione di bug in un algoritmo o programma. Tecnica efficace: dividere il codice in parti e testare ogni parte separatamente per isolare il problema.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché un algoritmo deve essere PRECISO?",
+    "back": "Perché chi esegue — uomo o macchina — segue le istruzioni alla lettera senza interpretare. Se le istruzioni sono ambigue, il risultato è imprevedibile o sbagliato.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Quali sono le 4 fasi del pensiero computazionale?",
+    "back": "1. Decomposizione — dividi il problema in parti. 2. Riconoscimento di schemi — cerca pattern ricorrenti. 3. Astrazione — ignora i dettagli irrilevanti. 4. Algoritmo — progetta la sequenza di passi.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Qual è la differenza tra un algoritmo e un programma?",
+    "back": "L'algoritmo è la procedura logica per risolvere un problema, scritta in linguaggio naturale o con diagrammi. Il programma è l'implementazione concreta dell'algoritmo in un linguaggio di programmazione.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cosa fa un algoritmo ADATTIVO?",
+    "back": "Modifica il proprio comportamento in base ai dati ricevuti in tempo reale. Es: il semaforo intelligente analizza il flusso di traffico e regola i tempi dinamicamente, riducendo l'attesa del 20-25%.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è l'efficienza algoritmica?",
+    "back": "Una misura di quante operazioni un algoritmo deve eseguire in relazione alla dimensione del problema. Un algoritmo efficiente risolve il problema con il minor numero possibile di operazioni — decisivo su dataset grandi.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la decomposizione è fondamentale per la programmazione professionale?",
+    "back": "I problemi reali sono troppo complessi per essere risolti in un unico blocco. Decomporli permette di sviluppare e testare ogni parte separatamente, ridurre i bug e riutilizzare le soluzioni (funzioni).",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è una funzione in programmazione?",
+    "back": "Un blocco di codice con un nome, che esegue un compito specifico e può essere richiamato più volte. È il risultato pratico della decomposizione: ogni funzione risolve un sottoproblema.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Qual è il limite principale di un algoritmo deterministico?",
+    "back": "Non può gestire situazioni non previste in fase di progettazione. Se arriva un input o un caso non scritto nelle regole, l'algoritmo non sa cosa fare. I sistemi di IA possono invece adattarsi a casi nuovi imparando dai dati.",
+    "tag": "Avanzato"
+  }
+]

@@ -1,0 +1,654 @@
+{
+  "mc_id": "MC-DIG-1-03",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Cos'è un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una sequenza precisa e ordinata di istruzioni per risolvere un problema o completare un compito",
+          "corretto": true,
+          "feedback": "Esatto! Un algoritmo è una ricetta di istruzioni: devono essere precise, ordinate e devono portare a un risultato definito."
+        },
+        {
+          "id": "b",
+          "testo": "Un programma scritto in un linguaggio di programmazione come Python o JavaScript",
+          "corretto": false,
+          "feedback": "Non è corretto. Un programma è l'implementazione di un algoritmo in un linguaggio specifico. L'algoritmo è l'idea logica che sta dietro al programma.",
+          "riferimento": "📖 ESPLORA — Algoritmo: cos'è e perché lo usi già"
+        },
+        {
+          "id": "c",
+          "testo": "Un tipo di intelligenza artificiale che impara dai dati",
+          "corretto": false,
+          "feedback": "Non è corretto. L'IA può usare algoritmi molto complessi, ma un algoritmo è semplicemente una sequenza di istruzioni — non deve essere intelligente o imparare.",
+          "riferimento": "📖 ESPLORA — Algoritmo: cos'è e perché lo usi già"
+        },
+        {
+          "id": "d",
+          "testo": "Un dispositivo hardware che elabora i dati nel computer",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello che descrivi è la CPU. Un algoritmo è invece una procedura logica — non è hardware, è un'idea.",
+          "riferimento": "📖 ESPLORA — Algoritmo: cos'è e perché lo usi già"
+        }
+      ],
+      "spiegazione": "Un algoritmo è una ricetta di passi precisi per risolvere un problema. Può essere scritto in linguaggio naturale, con un diagramma o in codice — l'importante è che le istruzioni siano chiare, ordinate e portino al risultato desiderato.",
+      "riferimento_principale": "📖 ESPLORA — Algoritmo: cos'è e perché lo usi già"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Quale delle seguenti è una struttura di controllo di tipo CONDIZIONE?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Fai la cosa A, poi la cosa B, poi la cosa C",
+          "corretto": false,
+          "feedback": "Questa è una SEQUENZA, non una condizione. Le istruzioni vengono eseguite una dopo l'altra senza verificare nulla.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "b",
+          "testo": "SE il latte è caldo ALLORA versalo nel bicchiere ALTRIMENTI riscaldalo ancora",
+          "corretto": true,
+          "feedback": "Esatto! Questa è la struttura SE/ALLORA/ALTRIMENTI (condizione): l'algoritmo verifica qualcosa e prende strade diverse a seconda del risultato."
+        },
+        {
+          "id": "c",
+          "testo": "Ripeti 'lava un piatto' finché tutti i piatti sono puliti",
+          "corretto": false,
+          "feedback": "Questa è la struttura CICLO (RIPETI), non una condizione. Ripete un'azione finché una condizione diventa vera — ma la struttura principale è la ripetizione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "d",
+          "testo": "Apri la porta, esci di casa, chiudi la porta a chiave",
+          "corretto": false,
+          "feedback": "Questa è una SEQUENZA: tre azioni in ordine fisso, senza verifiche. Non c'è nessun bivio né ripetizione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        }
+      ],
+      "spiegazione": "La CONDIZIONE (SE/ALLORA/ALTRIMENTI) permette all'algoritmo di scegliere tra due percorsi in base a una verifica. Se la condizione è vera, si esegue il ramo ALLORA; se è falsa, il ramo ALTRIMENTI. Senza condizioni, un algoritmo può funzionare solo in un caso specifico.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "In un diagramma di flusso, quale forma rappresenta una DECISIONE?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il rettangolo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il rettangolo rappresenta un'AZIONE o un'operazione — qualcosa che l'algoritmo fa (es. 'Versa il latte').",
+          "riferimento": "📖 ESPLORA — Il diagramma di flusso: vedere l'algoritmo"
+        },
+        {
+          "id": "b",
+          "testo": "L'ovale",
+          "corretto": false,
+          "feedback": "Non è corretto. L'ovale rappresenta START o STOP — il punto di inizio o fine dell'algoritmo.",
+          "riferimento": "📖 ESPLORA — Il diagramma di flusso: vedere l'algoritmo"
+        },
+        {
+          "id": "c",
+          "testo": "Il rombo",
+          "corretto": true,
+          "feedback": "Esatto! Il rombo rappresenta una DECISIONE: l'algoritmo verifica una condizione e da esso partono due frecce, una per il ramo Sì e una per il ramo No."
+        },
+        {
+          "id": "d",
+          "testo": "La freccia",
+          "corretto": false,
+          "feedback": "Non è corretto. Le frecce indicano il FLUSSO dell'algoritmo — la direzione in cui si passa da un blocco all'altro. Non rappresentano una decisione.",
+          "riferimento": "📖 ESPLORA — Il diagramma di flusso: vedere l'algoritmo"
+        }
+      ],
+      "spiegazione": "Nel diagramma di flusso ci sono 4 elementi principali: ovale (start/stop), rettangolo (azione), rombo (decisione/condizione), frecce (flusso). Il rombo è il cuore della struttura SE/ALLORA/ALTRIMENTI: ha sempre un ingresso e due uscite (Sì / No).",
+      "riferimento_principale": "📖 ESPLORA — Il diagramma di flusso: vedere l'algoritmo"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa significa 'decomposizione' nel pensiero computazionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Eliminare le parti inutili di un algoritmo per renderlo più veloce",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello che descrivi si avvicina all'ottimizzazione. La decomposizione non elimina — divide.",
+          "riferimento": "📖 ESPLORA — Scomporre per conquistare: la decomposizione"
+        },
+        {
+          "id": "b",
+          "testo": "Scomporre un problema complesso in sottoproblemi più piccoli e gestibili",
+          "corretto": true,
+          "feedback": "Esatto! La decomposizione è la prima mossa del pensiero computazionale: se un problema è troppo grande, lo dividi in parti più piccole che puoi risolvere una alla volta."
+        },
+        {
+          "id": "c",
+          "testo": "Tradurre un algoritmo scritto in linguaggio naturale in codice informatico",
+          "corretto": false,
+          "feedback": "Non è corretto. Questa è la fase di implementazione (programmazione). La decomposizione avviene prima, durante la progettazione del problema.",
+          "riferimento": "📖 ESPLORA — Scomporre per conquistare: la decomposizione"
+        },
+        {
+          "id": "d",
+          "testo": "Convertire numeri decimali in numeri binari per i calcoli del computer",
+          "corretto": false,
+          "feedback": "Non è corretto. La conversione decimale-binario è un'operazione matematica del computer, non ha nulla a che fare con la decomposizione.",
+          "riferimento": "📖 ESPLORA — Scomporre per conquistare: la decomposizione"
+        }
+      ],
+      "spiegazione": "La decomposizione è dividere un problema grande in parti più piccole. Es: 'organizza una gita scolastica' → prenota il pullman + avvisa i genitori + prepara i permessi + organizza il pranzo. Ogni sottoproblema è più semplice da risolvere separatamente.",
+      "riferimento_principale": "📖 ESPLORA — Scomporre per conquistare: la decomposizione"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cos'è un 'bug' in un programma?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un virus informatico che si diffonde da un dispositivo all'altro",
+          "corretto": false,
+          "feedback": "Non è corretto. Un virus è un tipo di malware — software malevolo. Un bug è un errore nel codice, non qualcosa di intenzionalmente dannoso.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        },
+        {
+          "id": "b",
+          "testo": "Una funzionalità non documentata che però funziona",
+          "corretto": false,
+          "feedback": "Non è corretto. Quella è a volte chiamata 'feature' non documentata. Un bug è un errore che causa comportamento sbagliato o inatteso.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        },
+        {
+          "id": "c",
+          "testo": "Un errore nell'algoritmo o nel programma che causa un comportamento sbagliato o inatteso",
+          "corretto": true,
+          "feedback": "Esatto! Un bug è un errore — può essere nella logica (il programma gira ma dà risultati sbagliati) o nella sintassi (il programma non gira affatto). Il debugging è il processo per trovarlo e correggerlo."
+        },
+        {
+          "id": "d",
+          "testo": "Un aggiornamento software che migliora le prestazioni del programma",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello che descrivi è un update o una patch. Un bug è l'errore che spesso una patch va a correggere.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        }
+      ],
+      "spiegazione": "Il termine 'bug' (letteralmente: insetto) viene usato in informatica dal 1947, quando la programmatrice Grace Hopper trovò letteralmente una falena intrappolata in un relè del computer che causava malfunzionamenti. Oggi indica qualsiasi errore che causa comportamento inatteso.",
+      "riferimento_principale": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quale struttura di controllo useresti per sciacquare i capelli 'finché non sono puliti'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "SEQUENZA — eseguo i passi in ordine",
+          "corretto": false,
+          "feedback": "Non è corretto. Una sequenza esegue ogni passo una sola volta, in ordine. Non può ripetere automaticamente un'azione finché una condizione è vera.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "b",
+          "testo": "CONDIZIONE — SE i capelli sono sporchi, sciacqua",
+          "corretto": false,
+          "feedback": "Non completamente corretto. Una condizione verifica una volta sola. Se i capelli non sono ancora puliti dopo il primo risciacquo, devi ripetere — e per questo serve un ciclo.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "c",
+          "testo": "CICLO — RIPETI 'sciacqua' FINCHÉ i capelli sono puliti",
+          "corretto": true,
+          "feedback": "Esatto! Il CICLO (RIPETI) è perfetto quando non sai quante volte ripetere un'azione e vuoi fermarti solo quando una condizione diventa vera."
+        },
+        {
+          "id": "d",
+          "testo": "DECOMPOSIZIONE — divido l'azione in parti più piccole",
+          "corretto": false,
+          "feedback": "Non è corretto. La decomposizione è una strategia per affrontare problemi complessi, non una struttura di controllo dell'esecuzione delle istruzioni.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        }
+      ],
+      "spiegazione": "Il CICLO (loop) serve quando vuoi ripetere un'azione un numero variabile di volte — finché una condizione è vera. 'Sciacqua i capelli finché non sono puliti' è un ciclo perfetto: non sai in anticipo quante ripetizioni servono.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "Nel 'robot umano', uno studente esegue istruzioni alla lettera senza interpretarle. Qual è l'obiettivo principale di questa attività?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Imparare i movimenti fisici necessari per lavorare con i robot industriali",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 'robot umano' è un'attività didattica astratta — non c'entrano i robot industriali.",
+          "riferimento": "🔬 SPERIMENTA — Attività unplugged: il robot umano"
+        },
+        {
+          "id": "b",
+          "testo": "Mostrare quanto deve essere preciso un algoritmo: se l'istruzione è ambigua, il robot non sa cosa fare",
+          "corretto": true,
+          "feedback": "Esatto! Quando una persona esegue istruzioni alla lettera — senza interpretare — emerge subito ogni ambiguità. Questo replica esattamente come un computer legge il codice: nessuna inferenza, solo esecuzione letterale."
+        },
+        {
+          "id": "c",
+          "testo": "Praticare la velocità di esecuzione delle istruzioni, come fa una CPU",
+          "corretto": false,
+          "feedback": "Non è corretto. L'obiettivo non è la velocità — è la precisione e l'assenza di ambiguità nelle istruzioni.",
+          "riferimento": "🔬 SPERIMENTA — Attività unplugged: il robot umano"
+        },
+        {
+          "id": "d",
+          "testo": "Sviluppare la memoria procedurale attraverso la ripetizione di sequenze fisiche",
+          "corretto": false,
+          "feedback": "Non è corretto. La memoria procedurale non è l'obiettivo. L'attività serve a capire cosa significa scrivere istruzioni non ambigue — la competenza centrale del pensiero computazionale.",
+          "riferimento": "🔬 SPERIMENTA — Attività unplugged: il robot umano"
+        }
+      ],
+      "spiegazione": "Il 'robot umano' è un'attività unplugged: una persona (il robot) segue istruzioni scritte da un'altra (il programmatore) alla lettera, senza interpretare. Ogni ambiguità emerge immediatamente — il robot si blocca o fa cose sbagliate. Questo mostra perché gli algoritmi devono essere precisi.",
+      "riferimento_principale": "🔬 SPERIMENTA — Attività unplugged: il robot umano"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "Leggi questo algoritmo: 'Prendi i cereali. Prendi il latte. SE il latte è freddo, riscaldalo ALTRIMENTI versalo direttamente. Versa i cereali nella ciotola. Aggiungi il latte.' Quale struttura di controllo viene usata?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Solo SEQUENZA",
+          "corretto": false,
+          "feedback": "Non è corretto. C'è una sequenza, ma anche qualcosa di più: un punto in cui l'algoritmo prende una decisione in base a una condizione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "b",
+          "testo": "SEQUENZA + CONDIZIONE",
+          "corretto": true,
+          "feedback": "Esatto! L'algoritmo usa principalmente la sequenza (i passi in ordine) ma include una CONDIZIONE (SE il latte è freddo... ALTRIMENTI...) per gestire due casi diversi."
+        },
+        {
+          "id": "c",
+          "testo": "SEQUENZA + CICLO",
+          "corretto": false,
+          "feedback": "Non è corretto. Non c'è nessuna ripetizione in questo algoritmo — nessun passo viene eseguito più volte. C'è invece una decisione condizionale.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "d",
+          "testo": "SEQUENZA + CONDIZIONE + CICLO",
+          "corretto": false,
+          "feedback": "Non è corretto. Non c'è nessun ciclo (ripetizione) in questo algoritmo. Ogni passo viene eseguito una volta sola.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        }
+      ],
+      "spiegazione": "L'algoritmo della colazione usa SEQUENZA per i passi principali e CONDIZIONE per gestire il caso 'latte freddo' vs 'latte già caldo'. La combinazione di queste due strutture è sufficiente per moltissimi algoritmi della vita quotidiana.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Nel caso del semaforo intelligente descritto nel testo, cosa fa l'algoritmo adattivo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Mantiene tempi fissi per ogni fase (rosso/verde/giallo) tutto il giorno",
+          "corretto": false,
+          "feedback": "Non è corretto. Un semaforo a tempi fissi non è 'adattivo' — è un semplice ciclo preimpostato. L'algoritmo adattivo fa qualcosa di diverso.",
+          "riferimento": "🔍 OSSERVA — Caso studio: il semaforo intelligente"
+        },
+        {
+          "id": "b",
+          "testo": "Spegne i semafori di notte per risparmiare energia",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo non ha nulla a che fare con l'adattività descritta nel caso studio.",
+          "riferimento": "🔍 OSSERVA — Caso studio: il semaforo intelligente"
+        },
+        {
+          "id": "c",
+          "testo": "Analizza il flusso di traffico in tempo reale e regola i tempi di verde/rosso per ridurre le code",
+          "corretto": true,
+          "feedback": "Esatto! Il semaforo intelligente usa sensori per misurare quante auto ci sono su ogni corsia e modifica dinamicamente i tempi — riducendo l'attesa del 20-25%."
+        },
+        {
+          "id": "d",
+          "testo": "Mostra messaggi informativi ai guidatori sul traffico nelle strade vicine",
+          "corretto": false,
+          "feedback": "Non è corretto. I messaggi informativi sono un'altra tecnologia (pannelli a messaggio variabile). Il semaforo intelligente agisce sui propri tempi, non comunica con i guidatori.",
+          "riferimento": "🔍 OSSERVA — Caso studio: il semaforo intelligente"
+        }
+      ],
+      "spiegazione": "Il semaforo intelligente usa sensori che misurano il numero di veicoli in attesa su ogni corsia. Un algoritmo analizza questi dati in tempo reale e decide quanto deve durare ogni fase — verde più lungo dove ci sono più auto. Risultato: -20-25% sui tempi di attesa medi.",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: il semaforo intelligente"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Quale delle seguenti sequenze descrive correttamente le quattro fasi del pensiero computazionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Programmazione → Test → Debug → Pubblicazione",
+          "corretto": false,
+          "feedback": "Non è corretto. Questa è la pipeline di sviluppo software, non il pensiero computazionale. Il pensiero computazionale è più generale e si applica anche senza codice.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        },
+        {
+          "id": "b",
+          "testo": "Decomposizione → Riconoscimento di schemi → Astrazione → Algoritmo",
+          "corretto": true,
+          "feedback": "Esatto! Queste sono le quattro fasi del pensiero computazionale: prima scomponi, poi cerchi pattern, poi astrai i dettagli irrilevanti, infine progetta la soluzione (algoritmo)."
+        },
+        {
+          "id": "c",
+          "testo": "Analisi → Sintesi → Valutazione → Creazione",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo è il framework della tassonomia di Bloom, usata in pedagogia. Non corrisponde alle fasi del pensiero computazionale.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        },
+        {
+          "id": "d",
+          "testo": "Input → Elaborazione → Output → Feedback",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo è il modello di funzionamento di un computer (ciclo di elaborazione). Le fasi del pensiero computazionale sono diverse.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        }
+      ],
+      "spiegazione": "Il pensiero computazionale ha 4 fasi: (1) Decomposizione — dividi il problema; (2) Riconoscimento di schemi — cerca pattern ricorrenti; (3) Astrazione — ignora i dettagli irrilevanti, focalizzati su ciò che conta; (4) Algoritmo — progetta la sequenza di passi per la soluzione.",
+      "riferimento_principale": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Un algoritmo per trovare il cappotto dice: 'Vai all'armadietto. SE il cappotto c'è, prendilo. ALTRIMENTI, cerca in classe. SE lo trovi, prendilo. ALTRIMENTI, chiedi all'insegnante.' Quante strutture CONDIZIONE usa questo algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una",
+          "corretto": false,
+          "feedback": "Non è corretto. Conta di nuovo le strutture SE/ALTRIMENTI: ce n'è più di una.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "b",
+          "testo": "Due",
+          "corretto": true,
+          "feedback": "Esatto! Ci sono due strutture SE/ALTRIMENTI: la prima verifica se il cappotto è nell'armadietto; la seconda verifica se lo hai trovato in classe. Le condizioni possono essere concatenate per gestire scenari complessi."
+        },
+        {
+          "id": "c",
+          "testo": "Tre",
+          "corretto": false,
+          "feedback": "Non è corretto. Rileggi l'algoritmo e conta le parole SE — ci sono meno di tre strutture condizione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "d",
+          "testo": "Nessuna — è tutto una sequenza",
+          "corretto": false,
+          "feedback": "Non è corretto. L'algoritmo usa chiaramente la struttura SE/ALTRIMENTI — che è la definizione stessa di condizione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        }
+      ],
+      "spiegazione": "L'algoritmo usa due strutture condizione: il primo SE verifica la presenza del cappotto nell'armadietto, il secondo SE verifica se è stato trovato in classe. Le condizioni possono essere nidificate o concatenate per gestire scenari con più possibilità.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Stai scrivendo un algoritmo per preparare la pasta. A un certo punto scrivi: 'Assaggia la pasta. SE è al dente, scola. ALTRIMENTI torna al passo precedente.' Il 'torna al passo precedente' crea quale struttura?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una SEQUENZA — perché torna a un passo già scritto",
+          "corretto": false,
+          "feedback": "Non è corretto. Tornare a un passo precedente rompe la linearità della sequenza — stai creando qualcosa di diverso.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "b",
+          "testo": "Un CICLO — perché ripete i passi finché la condizione è vera",
+          "corretto": true,
+          "feedback": "Esatto! 'Torna al passo precedente' crea un loop: il controllo riparte dall'assaggio e si ripete finché la pasta è al dente. Questo è esattamente la struttura RIPETI/FINCHÉ."
+        },
+        {
+          "id": "c",
+          "testo": "Una CONDIZIONE — perché usa SE/ALTRIMENTI",
+          "corretto": false,
+          "feedback": "Parzialmente corretto: c'è una condizione. Ma la caratteristica più importante è che 'torna al passo precedente' crea una ripetizione — un ciclo.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "d",
+          "testo": "Una DECOMPOSIZIONE — perché divide il problema in parti",
+          "corretto": false,
+          "feedback": "Non è corretto. La decomposizione è una strategia di analisi del problema — non una struttura di controllo che si vede nell'algoritmo scritto.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        }
+      ],
+      "spiegazione": "Ogni volta che un algoritmo 'torna indietro' finché una condizione non è soddisfatta, si crea un CICLO. 'Assaggia → SE non è pronto → torna ad assaggiare' è un loop classico. In programmazione si scrive come WHILE (finché) o DO-WHILE.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un algoritmo con molte condizioni SE nidificate (SE dentro SE dentro SE...) diventa difficile da leggere e modificare. Come si chiama questo problema e come si può risolvere?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si chiama 'loop infinito' e si risolve aggiungendo un CICLO",
+          "corretto": false,
+          "feedback": "Non è corretto. Il loop infinito è un ciclo che non termina mai — un problema diverso. Le condizioni nidificate sono il cosiddetto 'spaghetti code' o 'arrow code'.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        },
+        {
+          "id": "b",
+          "testo": "Si chiama 'spaghetti code' e si risolve scomponendo con la decomposizione (funzioni separate per ogni caso)",
+          "corretto": true,
+          "feedback": "Esatto! Condizioni nidificate profonde rendono il codice illeggibile. La soluzione è decomporlo: estrarre ogni ramo in una funzione separata con un nome chiaro. Il codice diventa più corto, più leggibile e più facile da testare."
+        },
+        {
+          "id": "c",
+          "testo": "Si chiama 'overflow' e si risolve usando meno variabili",
+          "corretto": false,
+          "feedback": "Non è corretto. L'overflow è un errore numerico (quando un numero supera la capacità di memoria disponibile). Il problema delle condizioni nidificate è di leggibilità e manutenibilità.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        },
+        {
+          "id": "d",
+          "testo": "Non è un problema reale: più condizioni ci sono, più l'algoritmo è preciso e corretto",
+          "corretto": false,
+          "feedback": "Non è corretto. La precisione e la leggibilità sono entrambe importanti. Un algoritmo corretto ma incomprensibile è un problema serio — chi lo deve modificare in futuro non capirà cosa fa.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        }
+      ],
+      "spiegazione": "Condizioni nidificate profonde — SE dentro SE dentro SE — creano il cosiddetto 'arrow code' (il codice a forma di freccia). La soluzione è applicare la decomposizione: estrarre ogni blocco di condizioni in una funzione separata con un nome descrittivo. Il risultato è codice modulare, testabile e comprensibile.",
+      "riferimento_principale": "📖 ESPLORA — Scomporre per conquistare: la decomposizione"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Il debugging è la ricerca e correzione dei bug. Qual è la strategia più efficace per trovare un bug in un algoritmo complesso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Riscrivere tutto l'algoritmo da capo, senza guardare il vecchio codice",
+          "corretto": false,
+          "feedback": "Non è una strategia efficace. Riscrivere da zero non garantisce di non ripetere lo stesso errore se non hai capito dove stava il problema.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        },
+        {
+          "id": "b",
+          "testo": "Dividere l'algoritmo in parti più piccole e testare ogni parte separatamente per isolare dove si trova l'errore",
+          "corretto": true,
+          "feedback": "Esatto! Dividere per testare è il metodo scientifico applicato al debugging: isola ogni componente, verifica che funzioni correttamente da sola. Quando trovi la parte che non funziona, hai trovato il bug."
+        },
+        {
+          "id": "c",
+          "testo": "Chiedere all'IA di correggere il codice senza capire dove sta l'errore",
+          "corretto": false,
+          "feedback": "Non è la strategia ottimale. L'IA può suggerire correzioni, ma se non capisci il bug non puoi valutare se la soluzione è corretta — e il bug potrebbe riapparire in una forma diversa.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        },
+        {
+          "id": "d",
+          "testo": "Eseguire l'algoritmo mille volte sperando che il bug si manifesti sempre",
+          "corretto": false,
+          "feedback": "Non è una strategia efficiente. Alcuni bug sono deterministici (si manifestano sempre), altri sono intermittenti. Eseguire a ripetizione non aiuta a capire dove sta l'errore.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        }
+      ],
+      "spiegazione": "Il debugging sistematico funziona così: (1) riproduci il bug in modo affidabile; (2) dividi il codice in sezioni e testa ogni sezione separatamente; (3) quando trovi la sezione che produce il risultato sbagliato, hai isolato il bug; (4) analizza quella sezione per trovare la causa. È il metodo scientifico applicato al codice.",
+      "riferimento_principale": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Quale delle seguenti affermazioni sul pensiero computazionale è più accurata?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il pensiero computazionale è utile solo per chi vuole diventare programmatore",
+          "corretto": false,
+          "feedback": "Non è corretto. La decomposizione, il riconoscimento di schemi, l'astrazione e la progettazione di algoritmi sono utili in medicina, design, architettura, management — in qualsiasi campo che richieda di risolvere problemi complessi.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        },
+        {
+          "id": "b",
+          "testo": "Il pensiero computazionale richiede di sapere già programmare per essere applicato",
+          "corretto": false,
+          "feedback": "Non è corretto. Le attività 'unplugged' (robot umano, algoritmi scritti a mano, diagrammi di flusso su carta) mostrano che il pensiero computazionale funziona anche senza computer.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        },
+        {
+          "id": "c",
+          "testo": "Il pensiero computazionale è un modo di ragionare per risolvere problemi complessi, applicabile in qualsiasi campo",
+          "corretto": true,
+          "feedback": "Esatto! Scomporre problemi, cercare schemi, astrarre e progettare soluzioni sono competenze cognitive trasversali — non legate solo all'informatica."
+        },
+        {
+          "id": "d",
+          "testo": "Il pensiero computazionale è equivalente alla logica matematica — chi è bravo in matematica lo possiede già",
+          "corretto": false,
+          "feedback": "Non è corretto. Ci sono sovrapposizioni, ma il pensiero computazionale è specifico: include la decomposizione e la progettazione di algoritmi, che la logica matematica tradizionale non copre completamente.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        }
+      ],
+      "spiegazione": "Il pensiero computazionale è una competenza trasversale: le sue quattro fasi (decomposizione, riconoscimento di schemi, astrazione, algoritmo) si applicano a qualsiasi problema complesso — dalla ricerca medica all'urbanistica alla cucina professionale. Non richiede di saper programmare.",
+      "riferimento_principale": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Vuoi scrivere un algoritmo per ordinare una lista di numeri dal più piccolo al più grande. Quale concetto è INDISPENSABILE?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La decomposizione — divido la lista in sotto-liste",
+          "corretto": false,
+          "feedback": "La decomposizione può essere utile (es. nel merge sort), ma non è l'unico modo e non è sempre indispensabile per qualsiasi algoritmo di ordinamento.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        },
+        {
+          "id": "b",
+          "testo": "Il CICLO — perché devo confrontare e spostare elementi più volte finché la lista è ordinata",
+          "corretto": true,
+          "feedback": "Esatto! Qualsiasi algoritmo di ordinamento (bubble sort, insertion sort, selection sort...) deve ripetere confronti e scambi più volte — finché la lista è in ordine. Senza cicli, potresti ordinare solo liste di lunghezza fissa e nota in anticipo."
+        },
+        {
+          "id": "c",
+          "testo": "Il diagramma di flusso — senza disegnarlo prima, l'algoritmo non funzionerà",
+          "corretto": false,
+          "feedback": "Non è corretto. Il diagramma di flusso è uno strumento di progettazione utile, ma non è indispensabile per far funzionare un algoritmo.",
+          "riferimento": "📖 ESPLORA — Il diagramma di flusso: vedere l'algoritmo"
+        },
+        {
+          "id": "d",
+          "testo": "Il debugging — perché gli algoritmi di ordinamento hanno sempre molti bug",
+          "corretto": false,
+          "feedback": "Non è corretto. Il debugging è utile per correggere errori, ma non è la struttura concettuale indispensabile per un algoritmo di ordinamento.",
+          "riferimento": "📖 ESPLORA — Bug e debugging: trovare l'errore"
+        }
+      ],
+      "spiegazione": "Gli algoritmi di ordinamento confrontano elementi tra loro e li spostano ripetutamente fino a raggiungere l'ordine desiderato. Questo processo di 'ripetizione finché la condizione è soddisfatta' è la definizione stessa di CICLO. Senza cicli, potresti ordinare solo liste di lunghezza fissa conoscendo in anticipo quante operazioni fare.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Due algoritmi diversi producono lo stesso risultato finale ma con un numero diverso di operazioni. Quale dei seguenti termini descrive questa differenza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Accuratezza — uno è più preciso dell'altro",
+          "corretto": false,
+          "feedback": "Non è corretto. L'accuratezza riguarda la correttezza del risultato — entrambi producono lo stesso risultato. La differenza è nel numero di operazioni necessarie.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        },
+        {
+          "id": "b",
+          "testo": "Efficienza algoritmica — uno usa meno operazioni dell'altro",
+          "corretto": true,
+          "feedback": "Esatto! L'efficienza algoritmica misura quante operazioni un algoritmo deve fare per risolvere un problema. Più è efficiente, meno operazioni servono — e più è veloce, soprattutto su dataset grandi."
+        },
+        {
+          "id": "c",
+          "testo": "Polimorfismo — lo stesso problema ha molte soluzioni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il polimorfismo è un concetto della programmazione orientata agli oggetti — non riguarda l'efficienza degli algoritmi.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        },
+        {
+          "id": "d",
+          "testo": "Ridondanza — uno dei due è inutile e va eliminato",
+          "corretto": false,
+          "feedback": "Non è corretto. Un algoritmo meno efficiente non è 'inutile' — può essere più semplice da capire e corretto per dataset piccoli. La ridondanza è un termine diverso.",
+          "riferimento": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+        }
+      ],
+      "spiegazione": "L'efficienza algoritmica misura il 'costo' di un algoritmo — di solito in termini di operazioni eseguite (tempo) o memoria usata. Due algoritmi corretti possono avere efficienze molto diverse: su una lista di 10 elementi la differenza è trascurabile; su 1 milione di elementi, uno può impiegare secondi e l'altro ore.",
+      "riferimento_principale": "📖 ESPLORA — Pensiero computazionale: non solo per i programmatori"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un algoritmo deterministico produce sempre lo stesso output dato lo stesso input. Qual è il suo limite principale rispetto a un sistema di IA?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Non può essere scritto in linguaggio naturale — serve sempre il codice",
+          "corretto": false,
+          "feedback": "Non è corretto. Un algoritmo può essere scritto in linguaggio naturale, con un diagramma o in pseudocodice — non serve necessariamente il codice.",
+          "riferimento": "📖 ESPLORA — Algoritmo: cos'è e perché lo usi già"
+        },
+        {
+          "id": "b",
+          "testo": "Non può gestire situazioni che non erano state previste in fase di progettazione",
+          "corretto": true,
+          "feedback": "Esatto! Un algoritmo deterministico segue regole fisse decise dal programmatore. Se arriva un caso non previsto (una condizione non scritta, un input inatteso), l'algoritmo non sa cosa fare. L'IA può invece imparare dai dati e gestire casi nuovi."
+        },
+        {
+          "id": "c",
+          "testo": "È troppo lento rispetto ai sistemi di IA",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli algoritmi deterministici sono spesso più veloci dei sistemi di IA — che richiedono molte più operazioni. Il limite non è la velocità.",
+          "riferimento": "📖 ESPLORA — Algoritmo: cos'è e perché lo usi già"
+        },
+        {
+          "id": "d",
+          "testo": "Non può usare strutture di controllo come SE/ALLORA o RIPETI",
+          "corretto": false,
+          "feedback": "Non è corretto. Le strutture di controllo (condizioni e cicli) sono componenti fondamentali degli algoritmi deterministici — non sono una limitazione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali: sequenza, condizione, ciclo"
+        }
+      ],
+      "spiegazione": "Un algoritmo deterministico è progettato per un insieme definito di casi. Il semaforo intelligente del caso studio può gestire bene le situazioni previste (più traffico → verde più lungo), ma se arriva un'ambulanza non prevista nell'algoritmo, non sa come reagire. I sistemi di IA possono invece adattarsi a situazioni nuove imparando dai dati.",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: il semaforo intelligente"
+    }
+  ]
+}

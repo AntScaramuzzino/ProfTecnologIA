@@ -1,0 +1,654 @@
+{
+  "mc_id": "MC-DIG-2-05",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Cos'è la dopamina e che ruolo ha nel rapporto con gli schermi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un ormone che regola il sonno — viene bloccato dalla luce blu degli schermi",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello che descrivi è la melatonina. La dopamina è un neurotrasmettitore diverso, legato al sistema di ricompensa.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        },
+        {
+          "id": "b",
+          "testo": "Un neurotrasmettitore che il cervello rilascia in risposta a una ricompensa — attivato anche solo dall'anticipazione di essa",
+          "corretto": true,
+          "feedback": "Esatto! La dopamina è il meccanismo che le app sfruttano: si attiva prima ancora di aprire la notifica — solo vedendola non letta — e crea la sensazione di 'voglio guardare'."
+        },
+        {
+          "id": "c",
+          "testo": "Una proteina che rafforza la memoria durante il sonno",
+          "corretto": false,
+          "feedback": "Non è corretto. La dopamina è un neurotrasmettitore, non una proteina, e la sua funzione principale riguarda il sistema di ricompensa — non la memoria del sonno.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        },
+        {
+          "id": "d",
+          "testo": "Un segnale chimico che regola la frequenza cardiaca sotto stress",
+          "corretto": false,
+          "feedback": "Non è corretto. Il segnale principale dello stress cardiaco è l'adrenalina (epinefrina). La dopamina ha un ruolo diverso — nel sistema di ricompensa e motivazione.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        }
+      ],
+      "spiegazione": "La dopamina viene rilasciata in anticipazione della ricompensa, non quando la ricevi. Questo spiega perché la notifica non letta crea tensione: il cervello anticipa qualcosa di interessante e rilascia dopamina — prima ancora che tu apra l'app.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Qual è la definizione corretta di cyberbullismo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Qualsiasi commento negativo pubblicato online, anche se fatto una sola volta",
+          "corretto": false,
+          "feedback": "Non è corretto. Un singolo commento cattivo è brutto, ma non è cyberbullismo. La parola 'ripetuto' è fondamentale nella definizione — il cyberbullismo è un pattern sistematico.",
+          "riferimento": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+        },
+        {
+          "id": "b",
+          "testo": "Comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali contro chi non può facilmente difendersi",
+          "corretto": true,
+          "feedback": "Esatto! Le tre caratteristiche chiave sono: aggressivo (intenzionalmente offensivo), ripetuto (non un episodio isolato), e con uno squilibrio di potere (la vittima non può difendersi facilmente)."
+        },
+        {
+          "id": "c",
+          "testo": "L'uso eccessivo dei social media da parte dei ragazzi, con conseguenze negative sulla salute",
+          "corretto": false,
+          "feedback": "Non è corretto. Quello che descrivi è l'uso problematico della tecnologia. Il cyberbullismo riguarda un comportamento aggressivo verso una persona specifica.",
+          "riferimento": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+        },
+        {
+          "id": "d",
+          "testo": "Il furto di identità digitale attraverso phishing o hacking",
+          "corretto": false,
+          "feedback": "Non è corretto. Il furto di identità è un reato informatico diverso. Può essere collegato al cyberbullismo (es. nell'impersonificazione), ma non è la sua definizione.",
+          "riferimento": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+        }
+      ],
+      "spiegazione": "La definizione di cyberbullismo ha tre elementi indispensabili: (1) intenzionale — non è un malinteso; (2) ripetuto — un pattern sistematico, non un episodio singolo; (3) squilibrio di potere — la vittima non può facilmente difendersi. Tutti e tre devono essere presenti.",
+      "riferimento_principale": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Quale meccanismo di design rende i social media più potenti per creare abitudini — secondo il testo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Le notifiche — perché arrivano sempre nello stesso momento della giornata",
+          "corretto": false,
+          "feedback": "Non è corretto. Le notifiche sono importanti, ma non è la loro prevedibilità a creare le abitudini più forti — è esattamente il contrario.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        },
+        {
+          "id": "b",
+          "testo": "La ricompensa a intervallo variabile — like e notifiche arrivano in modo irregolare e imprevedibile",
+          "corretto": true,
+          "feedback": "Esatto! La variabilità è il meccanismo più potente: non sai quando arriverà il prossimo like, quindi controlli continuamente. È lo stesso principio delle slot machine."
+        },
+        {
+          "id": "c",
+          "testo": "La qualità dei contenuti — più i video sono interessanti, più si torna sull'app",
+          "corretto": false,
+          "feedback": "Non è corretto. La qualità dei contenuti conta, ma non è il meccanismo psicologico più potente per creare abitudini compulsive. La variabilità della ricompensa lo è.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        },
+        {
+          "id": "d",
+          "testo": "La gratuità dell'app — siccome non si paga, si tende a usarla di più",
+          "corretto": false,
+          "feedback": "Non è corretto. La gratuità è parte del modello di business, ma non è il meccanismo psicologico che crea l'abitudine. Le app a pagamento possono essere ugualmente addictive.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        }
+      ],
+      "spiegazione": "La ricompensa a intervallo variabile è il meccanismo psicologico più potente per creare comportamenti ripetitivi. Non sai quando arriverà la prossima ricompensa (like, messaggio, notifica interessante) — quindi continui a controllare. È lo stesso principio delle slot machine.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa fa la luce blu degli schermi al sonno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Stimola la produzione di melatonina, aiutando ad addormentarsi prima",
+          "corretto": false,
+          "feedback": "Non è corretto — è esattamente il contrario. La luce blu blocca la produzione di melatonina, rendendo più difficile addormentarsi.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        },
+        {
+          "id": "b",
+          "testo": "Blocca la produzione di melatonina, ritardando l'addormentamento e riducendo la qualità del sonno",
+          "corretto": true,
+          "feedback": "Esatto! La melatonina è l'ormone che regola il sonno. La luce blu degli schermi segnala al cervello che è ancora giorno, bloccandone la produzione e ritardando l'addormentamento."
+        },
+        {
+          "id": "c",
+          "testo": "Non ha effetti scientificamente documentati sul sonno degli adolescenti",
+          "corretto": false,
+          "feedback": "Non è corretto. L'effetto della luce blu sulla melatonina è ben documentato dalla ricerca scientifica. Non è un'opinione — è fisiologia.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        },
+        {
+          "id": "d",
+          "testo": "Causa affaticamento visivo che porta ad addormentarsi prima",
+          "corretto": false,
+          "feedback": "Non è corretto. L'affaticamento visivo è reale ma diverso dall'effetto sulla melatonina. La luce blu agisce a livello ormonale, non solo visivo.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        }
+      ],
+      "spiegazione": "La melatonina è l'ormone che dice al cervello 'è ora di dormire'. La luce blu degli schermi — che simula la luce del giorno — blocca questa produzione. Usare lo schermo nelle ore prima di dormire ritarda l'addormentamento e riduce la qualità del sonno.",
+      "riferimento_principale": "📖 ESPLORA — Tempo schermo e salute"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quante ore di sonno ha bisogno un adolescente? E qual è la media reale italiana dei ragazzi tra 12 e 15 anni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Necessario: 6-7 ore. Media italiana: 6 ore.",
+          "corretto": false,
+          "feedback": "Non è corretto. 6-7 ore non sono sufficienti per un adolescente in pieno sviluppo.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        },
+        {
+          "id": "b",
+          "testo": "Necessario: 8-10 ore. Media italiana: circa 7 ore.",
+          "corretto": true,
+          "feedback": "Esatto! Gli adolescenti hanno bisogno di 8-10 ore di sonno — ma la media italiana è di circa 7. La differenza di 1-2 ore al giorno è spesso occupata da schermi nelle ore serali."
+        },
+        {
+          "id": "c",
+          "testo": "Necessario: 7-8 ore. Media italiana: 7,5 ore.",
+          "corretto": false,
+          "feedback": "Non è corretto. 7-8 ore è la raccomandazione per gli adulti, non per gli adolescenti che sono in piena crescita e sviluppo neurologico.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        },
+        {
+          "id": "d",
+          "testo": "Non esistono raccomandazioni scientifiche precise — dipende dal singolo ragazzo",
+          "corretto": false,
+          "feedback": "Non è corretto. Le organizzazioni sanitarie internazionali (OMS, CDC, AAP) hanno linee guida chiare: 8-10 ore per gli adolescenti tra 13 e 18 anni.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        }
+      ],
+      "spiegazione": "Gli adolescenti hanno bisogno di 8-10 ore di sonno per supportare lo sviluppo fisico e neurologico. La media italiana dei 12-15enni è circa 7 ore — un deficit di 1-3 ore che si accumula ogni giorno. La differenza è spesso occupata dall'uso degli schermi nelle ore serali.",
+      "riferimento_principale": "📖 ESPLORA — Tempo schermo e salute"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cos'è lo 'scroll infinito' e perché è progettato così?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una funzione che accelera lo scorrimento dei contenuti per risparmiare tempo all'utente",
+          "corretto": false,
+          "feedback": "Non è corretto. Lo scroll infinito non è pensato per risparmiare tempo — è progettato per eliminarti qualsiasi segnale che ti dica 'hai finito, puoi fermarti'.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        },
+        {
+          "id": "b",
+          "testo": "Un design senza fine: l'app carica sempre nuovi contenuti senza mai dire 'hai finito', perché fermarsi richiede una decisione attiva",
+          "corretto": true,
+          "feedback": "Esatto! Lo scroll infinito elimina il segnale di stop naturale. Continuare è il percorso di minor resistenza — fermarsi richiede una scelta consapevole. E spesso quella scelta non viene presa."
+        },
+        {
+          "id": "c",
+          "testo": "Una tecnologia che personalizza i contenuti in base ai tuoi interessi",
+          "corretto": false,
+          "feedback": "Non è corretto. Quella è la personalizzazione algoritmica (recommendation engine). Lo scroll infinito riguarda invece l'assenza di un punto di fine — non i contenuti specifici mostrati.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        },
+        {
+          "id": "d",
+          "testo": "Una forma di pubblicità nascosta che mostra più annunci rispetto alle app tradizionali",
+          "corretto": false,
+          "feedback": "Non è corretto. Lo scroll infinito è una scelta di design dell'interfaccia, non un formato pubblicitario.",
+          "riferimento": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+        }
+      ],
+      "spiegazione": "Lo scroll infinito elimina il segnale di stop: un libro finisce, un film finisce, un feed non finisce mai. L'effetto è che continuare è automatico (percorso di minor resistenza) mentre fermarsi richiede una decisione attiva — che molti non prendono.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema del reward: dopamina e notifiche"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "Nel cyberbullismo, quale forma consiste nel rivelare informazioni private (foto, segreti) senza consenso, spesso dopo averle ottenute con l'inganno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Cyberstalking",
+          "corretto": false,
+          "feedback": "Non è corretto. Il cyberstalking è il monitoraggio ossessivo e continuo di qualcuno online — seguire il profilo, messaggi continui non desiderati. Non riguarda la rivelazione di informazioni private.",
+          "riferimento": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+        },
+        {
+          "id": "b",
+          "testo": "Outing e trickery",
+          "corretto": true,
+          "feedback": "Esatto! L'outing è la rivelazione non consensuale di informazioni private. Il trickery è ottenerle con l'inganno per poi rivelarle. Spesso vanno insieme: si conquista la fiducia della vittima per avere informazioni che poi si usano contro di lei."
+        },
+        {
+          "id": "c",
+          "testo": "Impersonificazione",
+          "corretto": false,
+          "feedback": "Non è corretto. L'impersonificazione è creare profili falsi fingendo di essere qualcun altro. Non riguarda la rivelazione di informazioni private reali.",
+          "riferimento": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+        },
+        {
+          "id": "d",
+          "testo": "Esclusione",
+          "corretto": false,
+          "feedback": "Non è corretto. L'esclusione è escludere deliberatamente qualcuno da gruppi online o conversazioni condivise — non riguarda la rivelazione di informazioni.",
+          "riferimento": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+        }
+      ],
+      "spiegazione": "L'outing (rivelare informazioni private senza consenso) e il trickery (ottenerle con l'inganno) sono spesso combinati: qualcuno conquista la fiducia di una persona per farsi rivelare segreti, foto o informazioni personali — e poi le usa per danneggiarla pubblicamente.",
+      "riferimento_principale": "📖 ESPLORA — Il cyberbullismo: definizione, forme e responsabilità"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "Nel cyberbullismo, il TESTIMONE è la figura più numerosa. Quale azione è descritta come la più efficace — e meno rischiosa — per un testimone?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Scontrarsi pubblicamente nel gruppo con l'autore per difendere la vittima",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo dice esplicitamente che lo scontro frontale pubblico può peggiorare la situazione per il testimone e per la vittima. Non è la strategia raccomandata.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        },
+        {
+          "id": "b",
+          "testo": "Supportare privatamente la vittima + segnalare il contenuto alla piattaforma + coinvolgere un adulto",
+          "corretto": true,
+          "feedback": "Esatto! L'azione meno visibile è spesso la più efficace: il supporto privato alla vittima riduce l'isolamento; la segnalazione alla piattaforma può rimuovere il contenuto; il coinvolgimento di un adulto porta risorse reali."
+        },
+        {
+          "id": "c",
+          "testo": "Non fare nulla per non esporsi — è un problema tra autore e vittima",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testimone silenzioso rafforza la percezione dell'autore di agire impunemente. Non fare nulla — o peggio, mettere like — contribuisce al problema.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        },
+        {
+          "id": "d",
+          "testo": "Pubblicare uno screenshot del cyberbullismo per 'smascherare' l'autore agli altri",
+          "corretto": false,
+          "feedback": "Non è corretto. Ridiffondere il contenuto — anche con buone intenzioni — può aumentare il danno alla vittima (la cui reputazione viene ulteriormente esposta). Non è la strategia raccomandata.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        }
+      ],
+      "spiegazione": "Il testimone ha più potere di quanto pensi. La strategia raccomandata è a tre livelli: (1) non amplificare (no like, no condivisioni); (2) supportare privatamente la vittima — riduce l'isolamento; (3) segnalare alla piattaforma e coinvolgere un adulto. Lo scontro frontale pubblico è da evitare perché spesso peggiora la situazione.",
+      "riferimento_principale": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Giulia controlla il telefono appena sveglia, prova irritabilità quando non può usarlo, e continua a scrollare anche dopo aver detto 'adesso smetto'. Quale categoria descrive meglio il suo comportamento?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Uso sano — questi comportamenti sono normali per una ragazza della sua età",
+          "corretto": false,
+          "feedback": "Non è corretto. Controllare il telefono prima ancora di alzarsi, l'irritabilità senza dispositivo, e l'incapacità di fermarsi sono tutti segnali di uso problematico elencati nel testo.",
+          "riferimento": "📖 ESPLORA — Uso consapevole vs uso problematico"
+        },
+        {
+          "id": "b",
+          "testo": "Segnali di uso problematico — indicatori che il rapporto con la tecnologia merita attenzione",
+          "corretto": true,
+          "feedback": "Esatto! Il testo elenca esattamente questi tre come segnali di uso problematico: controllo del telefono appena svegli, irritabilità senza dispositivo, continuare a usare anche dopo aver deciso di smettere."
+        },
+        {
+          "id": "c",
+          "testo": "Dipendenza clinica — Giulia ha bisogno di cure mediche immediate",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo specifica che questi segnali non significano automaticamente 'dipendenza' — sono indicatori che il rapporto merita attenzione. La diagnosi clinica richiede una valutazione professionale.",
+          "riferimento": "📖 ESPLORA — Uso consapevole vs uso problematico"
+        },
+        {
+          "id": "d",
+          "testo": "Comportamento adolescenziale normale legato allo sviluppo cognitivo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo distingue chiaramente tra la normalità dello sviluppo neurologico adolescenziale (corteccia prefrontale in sviluppo) e i segnali specifici di uso problematico.",
+          "riferimento": "📖 ESPLORA — Uso consapevole vs uso problematico"
+        }
+      ],
+      "spiegazione": "Il testo elenca 6 segnali di uso problematico. Giulia ne mostra almeno tre: controlla il telefono appena sveglia, prova irritabilità senza di esso, continua dopo aver deciso di smettere. Non è una diagnosi di dipendenza — ma è un segnale che il suo rapporto con la tecnologia merita riflessione.",
+      "riferimento_principale": "📖 ESPLORA — Uso consapevole vs uso problematico"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Quale funzione dello smartphone permette di vedere i dati reali del proprio uso quotidiano?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La cronologia del browser",
+          "corretto": false,
+          "feedback": "Non è corretto. La cronologia mostra i siti visitati, non il tempo totale trascorso sulle app.",
+          "riferimento": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+        },
+        {
+          "id": "b",
+          "testo": "'Tempo schermo' (iPhone) o 'Benessere digitale' (Android)",
+          "corretto": true,
+          "feedback": "Esatto! Queste funzioni, disponibili su tutti gli smartphone moderni, mostrano quante ore al giorno hai usato il telefono, quali app hai usato di più, quante notifiche hai ricevuto. Sono molto più affidabili della memoria."
+        },
+        {
+          "id": "c",
+          "testo": "Le statistiche di utilizzo dati della SIM",
+          "corretto": false,
+          "feedback": "Non è corretto. Le statistiche dati mostrano quanti MB/GB hai consumato, non il tempo trascorso sulle singole app.",
+          "riferimento": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+        },
+        {
+          "id": "d",
+          "testo": "Il calendario del telefono — puoi calcolare il tempo confrontando gli appuntamenti",
+          "corretto": false,
+          "feedback": "Non è corretto. Il calendario mostra gli eventi programmati, non il tempo di utilizzo effettivo dello smartphone.",
+          "riferimento": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+        }
+      ],
+      "spiegazione": "La funzione 'Tempo schermo' (iPhone) o 'Benessere digitale' (Android) è già integrata in tutti gli smartphone moderni e mostra dati precisi: ore totali di utilizzo, app più usate, numero di notifiche. Il testo suggerisce di guardarli perché 'probabilmente ti sorprenderà'.",
+      "riferimento_principale": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Cosa prevede la Legge n. 71/2017 per le vittime minorenni di cyberbullismo in Italia?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La vittima può denunciare solo tramite i genitori presso la procura dei minori",
+          "corretto": false,
+          "feedback": "Non è corretto. La legge prevede un percorso più diretto, senza obbligo di denuncia penale formale come primo passo.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        },
+        {
+          "id": "b",
+          "testo": "La vittima può chiedere direttamente alle piattaforme di rimuovere i contenuti; il questore può ammonire l'autore",
+          "corretto": true,
+          "feedback": "Esatto! La L. 71/2017 ha creato un percorso specifico per i minori: richiesta diretta di rimozione alle piattaforme (senza passare per il tribunale) e ammonimento del questore per l'autore."
+        },
+        {
+          "id": "c",
+          "testo": "Vieta alle piattaforme social di permettere l'iscrizione ai minori di 14 anni",
+          "corretto": false,
+          "feedback": "Non è corretto. Questo è il limite di età per l'iscrizione ai social (in parte regolato dal GDPR), non il contenuto della L. 71/2017 sul cyberbullismo.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        },
+        {
+          "id": "d",
+          "testo": "Rende obbligatorio l'insegnamento del cyberbullismo in tutte le scuole italiane",
+          "corretto": false,
+          "feedback": "Non è corretto. Il D.M. 183/2024 (Linee guida Educazione Civica) inserisce il tema nelle scuole. La L. 71/2017 si occupa invece della tutela delle vittime.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        }
+      ],
+      "spiegazione": "La Legge n. 71/2017 tutela i minori vittime di cyberbullismo con un doppio strumento: (1) la vittima può chiedere direttamente alle piattaforme di rimuovere o bloccare i contenuti lesivi; (2) il questore può ammonire l'autore anche senza denuncia penale formale.",
+      "riferimento_principale": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Tra le seguenti strategie per ridurre l'uso inconsapevole della tecnologia, quale è descritta come più efficace perché 'non richiede forza di volontà costante'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Disinstallare le app social dal telefono",
+          "corretto": false,
+          "feedback": "Non è descritto nel testo come la strategia raccomandata — richiede una scelta radicale che spesso non è sostenibile nel lungo periodo.",
+          "riferimento": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+        },
+        {
+          "id": "b",
+          "testo": "Stabilire zone e orari senza schermo (es. niente telefono a tavola, niente schermo un'ora prima di dormire)",
+          "corretto": true,
+          "feedback": "Esatto! Le regole contestuali (per zona o per orario) funzionano perché creano automatismi — si smette di dover decidere ogni volta. Non c'è bisogno di 'forza di volontà' perché la regola è già stata presa."
+        },
+        {
+          "id": "c",
+          "testo": "Usare il telefono solo per 30 minuti al giorno in totale",
+          "corretto": false,
+          "feedback": "Non è la strategia descritta nel testo. Limiti di tempo rigidi e molto bassi richiedono costante monitoraggio e autocontrollo — non sono automatici.",
+          "riferimento": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+        },
+        {
+          "id": "d",
+          "testo": "Chiedere ai genitori di controllare il telefono ogni sera",
+          "corretto": false,
+          "feedback": "Non è la strategia descritta nel testo. Il controllo esterno non sviluppa la capacità personale di gestire il proprio uso — è una misura contingente, non una competenza.",
+          "riferimento": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+        }
+      ],
+      "spiegazione": "Le ricerche mostrano che le 'zone senza schermo' (niente telefono a tavola, niente schermo un'ora prima di dormire) riducono significativamente l'uso inconsapevole — senza richiedere forza di volontà costante. La regola viene decisa una volta sola e poi si applica automaticamente al contesto.",
+      "riferimento_principale": "📖 ESPLORA — Strategie concrete per un uso consapevole"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Perché è più difficile resistere alle notifiche a 13 anni che a 25, secondo il testo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i ragazzi di 13 anni hanno meno esperienza nell'uso dei dispositivi",
+          "corretto": false,
+          "feedback": "Non è corretto. Non è una questione di esperienza — è una questione neurologica. I ragazzi di 13 anni usano i dispositivi spesso tanto quanto gli adulti.",
+          "riferimento": "📖 ESPLORA — Collegamento STEM — Scienze/Biologia"
+        },
+        {
+          "id": "b",
+          "testo": "Perché la corteccia prefrontale — la parte che gestisce il controllo degli impulsi — è ancora in sviluppo negli adolescenti",
+          "corretto": true,
+          "feedback": "Esatto! La corteccia prefrontale completa il suo sviluppo solo intorno ai 25 anni. È la parte del cervello che gestisce il controllo degli impulsi e il pensiero a lungo termine — il 'freno neurologico' è ancora in costruzione."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i social media sono progettati specificamente per i giovani",
+          "corretto": false,
+          "feedback": "Non è corretto. I social media sono progettati per tutti gli utenti — non esiste un design specifico per gli adolescenti. La differenza nella resistenza è neurologica, non di design.",
+          "riferimento": "📖 ESPLORA — Collegamento STEM — Scienze/Biologia"
+        },
+        {
+          "id": "d",
+          "testo": "Perché gli adulti hanno più impegni e meno tempo per controllare il telefono",
+          "corretto": false,
+          "feedback": "Non è corretto. Gli adulti con molti impegni non necessariamente resistono meglio alle notifiche. La differenza è neurologica — non dipende dal tempo disponibile.",
+          "riferimento": "📖 ESPLORA — Collegamento STEM — Scienze/Biologia"
+        }
+      ],
+      "spiegazione": "La corteccia prefrontale — responsabile del controllo degli impulsi, della valutazione delle conseguenze e del pensiero a lungo termine — non completa lo sviluppo fino ai 25 anni circa. Questo non è un difetto, è una fase normale dello sviluppo. Ma spiega perché il 'freno neurologico' degli adolescenti è più debole — non è mancanza di volontà, è biologia.",
+      "riferimento_principale": "📖 ESPLORA — Collegamento STEM — Scienze/Biologia"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Quale affermazione dimostra meglio che 'la qualità dell'uso conta più della quantità'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Guardare un video su YouTube per 2 ore è sempre dannoso, indipendentemente dal contenuto",
+          "corretto": false,
+          "feedback": "Non è corretto. È esattamente il contrario di ciò che il testo sostiene: la qualità — cosa stai facendo e perché — conta più della durata.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        },
+        {
+          "id": "b",
+          "testo": "Chiamare un amico su FaceTime per un'ora ha un impatto diverso dallo scrollare passivamente il feed per un'ora — stessa durata, uso qualitativamente diverso",
+          "corretto": true,
+          "feedback": "Esatto! Stessa durata, impatto radicalmente diverso: la video-chiamata è interazione sociale attiva; lo scroll passivo è consumo senza scopo. La differenza non è il tempo — è cosa e come."
+        },
+        {
+          "id": "c",
+          "testo": "Le app educative sono sempre migliori dei social media, qualunque sia il tempo di utilizzo",
+          "corretto": false,
+          "feedback": "Non è corretto. La distinzione non è per categoria di app, ma per qualità dell'uso: un'app educativa usata passivamente e senza scopo può essere meno benefica di un social usato per una comunicazione significativa.",
+          "riferimento": "📖 ESPLORA — Tempo schermo e salute"
+        },
+        {
+          "id": "d",
+          "testo": "Nessuna tecnologia digitale è davvero utile — il tempo al computer è sempre meno produttivo del tempo di persona",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non sostiene questa posizione: 'usare la tecnologia non è di per sé un problema — il problema è la qualità e la consapevolezza dell'uso'.",
+          "riferimento": "📖 ESPLORA — Uso consapevole vs uso problematico"
+        }
+      ],
+      "spiegazione": "La stessa durata può avere impatti molto diversi in base alla qualità dell'uso: chiamare un amico, imparare a suonare con un tutorial, leggere un approfondimento sono attività diverse dallo scroll passivo per un'ora. La ricerca suggerisce di chiedersi 'cosa sto facendo e perché' — non solo 'quante ore'.",
+      "riferimento_principale": "📖 ESPLORA — Tempo schermo e salute"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Un'app social introduce un indicatore del tempo trascorso e suggerisce pause ogni 45 minuti. Qual è l'impatto probabile sul modello di business dell'app?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Nessun impatto — gli utenti ignorano le notifiche di pausa",
+          "corretto": false,
+          "feedback": "Non è corretto. Le ricerche mostrano che i nudge (piccoli spinti) cambiano il comportamento. Se le pause funzionassero anche solo per il 20% degli utenti, l'impatto sul tempo totale — e sulle entrate pubblicitarie — sarebbe significativo.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetta un'interfaccia più etica"
+        },
+        {
+          "id": "b",
+          "testo": "Riduzione del tempo trascorso sull'app → meno pubblicità visualizzata → meno entrate",
+          "corretto": true,
+          "feedback": "Esatto! Il modello di business si basa sul tempo di attenzione: più tempo sullo schermo = più pubblicità = più entrate. Qualsiasi design che riduca il tempo riduce anche le entrate nel breve termine — è il 'costo' del design etico."
+        },
+        {
+          "id": "c",
+          "testo": "Aumento delle entrate — gli utenti si fidano di più dell'app e la usano per più anni",
+          "corretto": false,
+          "feedback": "Questo è un argomento che alcuni difensori del design etico fanno (fiducia a lungo termine = retention), ma il testo non lo presenta come l'effetto immediato. L'effetto diretto è una riduzione del tempo e delle entrate.",
+          "riferimento": "🔬 SPERIMENTA — Avanzato: Progetta un'interfaccia più etica"
+        },
+        {
+          "id": "d",
+          "testo": "Nessun impatto — le entrate vengono da abbonamenti premium, non dalla pubblicità",
+          "corretto": false,
+          "feedback": "Non è corretto — il testo specifica che la maggior parte delle app gratuite guadagna dalla pubblicità: più tempo = più pubblicità = più entrate. La premessa della risposta è sbagliata.",
+          "riferimento": "📖 ESPLORA — La tecnologia non è neutrale"
+        }
+      ],
+      "spiegazione": "Il conflitto di interessi è reale: le app gratuite guadagnano dalla pubblicità, quindi ogni minuto in meno sull'app riduce le entrate. Design etico (indicatori del tempo, pause suggerite) è un costo immediato per l'azienda — bilanciato da potenziali benefici a lungo termine (fiducia, normativa favorevole).",
+      "riferimento_principale": "🔬 SPERIMENTA — Avanzato: Progetta un'interfaccia più etica"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Nel caso del WhatsApp di classe descritto (scenario INTERMEDIO), le 12 persone che mettono like o aggiungono commenti simili: sono autori o testimoni?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sono testimoni passivi — non hanno iniziato loro il cyberbullismo",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo specifica che chi mette like o condivide contribuisce al problema — non è semplicemente un testimone passivo. Il like amplifica il contenuto e rinforza l'autore.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        },
+        {
+          "id": "b",
+          "testo": "Si trovano in una zona grigia: sono inizialmente testimoni ma diventano co-autori amplificando il contenuto",
+          "corretto": true,
+          "feedback": "Esatto! Il testo riconosce questa sfumatura: chi mette like o commenta non ha iniziato il cyberbullismo, ma contribuisce a esso. È una zona grigia — 'è autore o testimone?' — che il testo invita esplicitamente ad analizzare."
+        },
+        {
+          "id": "c",
+          "testo": "Sono autori a tutti gli effetti — la legge li tratta come l'iniziatore del cyberbullismo",
+          "corretto": false,
+          "feedback": "Non è corretto. La legge distingue tra autore principale e chi amplifica. La situazione legale è complessa, ma il testo non equipara chi mette like all'autore principale.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        },
+        {
+          "id": "d",
+          "testo": "Sono testimoni innocenti — la responsabilità è solo di chi ha pubblicato il messaggio iniziale",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo dice esplicitamente che 'il testimone silenzioso rafforza la percezione dell'autore di agire impunemente' — e chi mette like fa ancora di più.",
+          "riferimento": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+        }
+      ],
+      "spiegazione": "Il caso dello scenario INTERMEDIO mostra la zona grigia del testimone: le 12 persone non hanno iniziato il cyberbullismo, ma mettendo like e commenti simili lo amplificano — aumentano la visibilità del contenuto offensivo e segnalano all'autore che il comportamento è socialmente accettato. Il testo invita esplicitamente a riflettere su questa sfumatura.",
+      "riferimento_principale": "📖 ESPLORA — Tre ruoli, tre responsabilità"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "La Francia ha vietato gli smartphone nelle scuole (2018) con risultati positivi. Perché il testo presenta questa come una questione 'complessa' piuttosto che come una soluzione semplice?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché il veto è illegale secondo la normativa europea sui diritti digitali",
+          "corretto": false,
+          "feedback": "Non è corretto. La Francia ha potuto vietare legalmente gli smartphone nelle scuole — la normativa europea non lo impedisce.",
+          "riferimento": "🔍 OSSERVA — Caso studio: la modalità riposo di alcuni paesi europei"
+        },
+        {
+          "id": "b",
+          "testo": "Perché interseca diritti individuali, salute pubblica e responsabilità di decisione (famiglie, scuole, governo, ragazzi) senza una risposta unica corretta",
+          "corretto": true,
+          "feedback": "Esatto! Il testo conclude con 'la domanda da porsi: chi deve prendere questa decisione — famiglie, scuole, governo, o i ragazzi stessi?' Non c'è una risposta unica — è una questione di bilanciamento tra valori diversi."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la tecnologia è cambiata così tanto che le regole del 2018 sono già obsolete",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo non usa questo argomento. La complessità è di natura etica e politica — non tecnologica.",
+          "riferimento": "🔍 OSSERVA — Caso studio: la modalità riposo di alcuni paesi europei"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i dati della Francia mostrano risultati negativi che non vengono riportati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo riporta risultati positivi del caso francese: più socializzazione, meno bullismo, nessun impatto negativo sui risultati scolastici.",
+          "riferimento": "🔍 OSSERVA — Caso studio: la modalità riposo di alcuni paesi europei"
+        }
+      ],
+      "spiegazione": "Il testo presenta la questione come complessa perché coinvolge valori in tensione: salute pubblica (i risultati positivi della Francia), libertà individuale e autonomia (dei ragazzi, delle famiglie), e ruoli diversi (chi decide — scuole, governo, famiglie, ragazzi?). Non esiste una risposta scientificamente 'corretta' — è una scelta politica e valoriale.",
+      "riferimento_principale": "🔍 OSSERVA — Caso studio: la modalità riposo di alcuni paesi europei"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Cosa distingue fondamentalmente un 'design etico' da un 'design per l'engagement massimo'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il design etico è gratuito; il design per l'engagement è a pagamento",
+          "corretto": false,
+          "feedback": "Non è corretto. Il modello di pagamento non definisce l'eticità del design — un'app gratuita può avere un design etico, e una a pagamento può massimizzare l'engagement.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "b",
+          "testo": "Il design etico ottimizza per il benessere dell'utente; il design per l'engagement ottimizza per il tempo sullo schermo e le entrate pubblicitarie",
+          "corretto": true,
+          "feedback": "Esatto! È una questione di obiettivo di ottimizzazione: il design etico si chiede 'cosa fa bene all'utente?'; il design per l'engagement si chiede 'come facciamo restare l'utente più a lungo possibile?'. I due obiettivi spesso si scontrano."
+        },
+        {
+          "id": "c",
+          "testo": "Il design etico è riservato alle app per bambini; il design per l'engagement è per gli adulti",
+          "corretto": false,
+          "feedback": "Non è corretto. Il design etico è un approccio applicabile a qualsiasi prodotto digitale, indipendentemente dall'età dell'utente.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        },
+        {
+          "id": "d",
+          "testo": "Il design etico rimuove tutte le funzionalità social; il design per l'engagement le massimizza",
+          "corretto": false,
+          "feedback": "Non è corretto. Il design etico non rimuove le funzionalità — le ridisegna per ridurre i danni. Es: le notifiche rimangono, ma diventano meno invadenti e più controllabili dall'utente.",
+          "riferimento": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+        }
+      ],
+      "spiegazione": "Il design etico e il design per l'engagement massimizzano cose diverse: il primo il benessere dell'utente, il secondo il tempo sullo schermo. Esempi di design etico: indicatori del tempo trascorso, pause suggerite, notifiche controllabili, assenza di scroll infinito. Questi riducono il fatturato nel breve termine ma costruiscono fiducia a lungo termine.",
+      "riferimento_principale": "🔍 OSSERVA — Chi lavora con questa competenza nel 2030?"
+    }
+  ]
+}
