@@ -170,19 +170,24 @@ export function getPrerequisiteChain(mcId: string): MC[] {
   return chain;
 }
 
+// ATTENZIONE: l'ordine delle chiavi determina l'ordine di visualizzazione
+// nelle pagine anno (Object.entries preserva l'ordine di inserimento).
+// Regola editoriale: DIS e DIG sempre in coda per ogni anno.
 export const AREA_META: Record<
   string,
   { label: string; emoji: string; color: string; hex: string }
 > = {
-  MAT: { label: "Materiali e Rifiuti",       emoji: "🪨", color: "amber",  hex: "#B45309" },
-  DIS: { label: "Disegno Tecnico",            emoji: "📐", color: "blue",   hex: "#1D4ED8" },
-  DIG: { label: "Digitale / Coding / AI",    emoji: "💻", color: "purple", hex: "#7C3AED" },
-  ALI: { label: "Alimentazione",             emoji: "🌾", color: "green",  hex: "#15803D" },
-  AMB: { label: "Abitazione e Città",        emoji: "🏗️", color: "orange", hex: "#C2410C" },
-  INF: { label: "Informatica",              emoji: "🔢", color: "indigo", hex: "#4338CA" },
-  ENE: { label: "Energia e Macchine",        emoji: "⚡", color: "yellow", hex: "#B45309" },
-  COM: { label: "Comunicazioni e Trasporti", emoji: "📡", color: "cyan",   hex: "#0E7490" },
-  SIS: { label: "Sistemi ed Economia",       emoji: "⚙️", color: "gray",   hex: "#374151" },
+  // ── Aree per anno (ordine editoriale) ────────────────────────────────────
+  MAT: { label: "Materiali e Rifiuti",       emoji: "🪨", color: "amber",  hex: "#B45309" }, // 1ª
+  ALI: { label: "Alimentazione",             emoji: "🌾", color: "green",  hex: "#15803D" }, // 2ª
+  AMB: { label: "Abitazione e Città",        emoji: "🏗️", color: "orange", hex: "#C2410C" }, // 2ª
+  COM: { label: "Comunicazioni e Trasporti", emoji: "📡", color: "cyan",   hex: "#0E7490" }, // 3ª
+  ENE: { label: "Energia e Macchine",        emoji: "⚡", color: "yellow", hex: "#B45309" }, // 3ª
+  SIS: { label: "Sistemi ed Economia",       emoji: "⚙️", color: "gray",   hex: "#374151" }, // 3ª
+  INF: { label: "Informatica",               emoji: "🔢", color: "indigo", hex: "#4338CA" }, // 1ª·2ª·3ª
+  // ── Sempre in coda per ogni anno ─────────────────────────────────────────
+  DIS: { label: "Disegno Tecnico",           emoji: "📐", color: "blue",   hex: "#1D4ED8" }, // 1ª·2ª·3ª
+  DIG: { label: "Digitale / Coding / AI",   emoji: "💻", color: "purple", hex: "#7C3AED" }, // 1ª·2ª·3ª
 };
 
 export const LEVEL_META: Record<
