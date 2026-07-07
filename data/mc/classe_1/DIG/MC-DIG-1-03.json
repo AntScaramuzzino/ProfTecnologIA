@@ -1,0 +1,103 @@
+{
+  "id": "MC-DIG-1-03",
+  "area": "DIG",
+  "anno": 1,
+  "titolo": "Pensiero computazionale e algoritmi di base",
+  "titolo_libro": "Come pensa una macchina: dai passi agli algoritmi",
+  "descrizione": "Introduzione al pensiero computazionale attraverso attività unplugged e semi-plugged: decomposizione di problemi complessi in passi elementari, scrittura e lettura di semplici algoritmi, uso di sequenze, condizioni (se/allora) e cicli (ripeti). Costruzione di diagrammi di flusso per rappresentare procedure della vita quotidiana. Prerequisito fondamentale per il coding con Scratch (MC-DIG-2-01) e la robotica avanzata (MC-DIG-3-01).",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Tecnologia/Informatica, Scuola Secondaria I Grado",
+      "traguardo": "Lo studente sa analizzare procedure scomponendo le sequenze di azione, costruisce semplici diagrammi di flusso e realizza elementari procedure di istruzione anche unplugged"
+    },
+    "DC": {
+      "ref": "DigComp 3.0 — 5.1 Identificare i bisogni e rispondere con soluzioni tecnologiche",
+      "livello": "F",
+      "nota": "Livello Foundation: lo studente riconosce problemi risolvibili con un approccio sistematico e sa costruire semplici sequenze di istruzioni"
+    },
+    "EC": {
+      "ref": "EntreComp — 1.2 Creatività e ideazione; 2.4 Problem solving",
+      "nota": "Lo studente scompone un problema in sottoproblemi gestibili (decomposizione) e individua pattern ricorrenti — abilità trasversali fondamentali per l'innovazione"
+    },
+    "LC": {
+      "ref": "LifeComp — Pensiero critico (area cognitiva); Imparare a imparare",
+      "nota": "Lo studente affronta il debug come processo metacognitivo: riconosce l'errore, ne individua la causa nella sequenza e lo corregge sistematicamente"
+    },
+    "EV": {
+      "ref": "L. 92/2019 Educazione civica; D.M. 183/2024 — Cittadinanza digitale; SDG 4 — Istruzione di qualità",
+      "nota": "Il pensiero computazionale è alfabetizzazione del XXI secolo: comprendere come funzionano gli algoritmi è prerequisito per essere cittadini consapevoli in una società governata da sistemi automatizzati"
+    }
+  },
+  "outputApp": {
+    "quiz": "Quiz a 18 domande (6F + 6I + 6A): F sulle strutture base (sequenza, condizione, ciclo), I su diagrammi di flusso, A su decomposizione di problemi reali",
+    "microlearning": "Schede processo 6 passi + checklist costruzione algoritmo in 3 minuti",
+    "visual": "Diagramma di flusso annotato con 3 strutture fondamentali (sequenza/condizione/ciclo) + infografica 'dalla ricetta all'algoritmo'",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [
+    "MC-DIG-1-01"
+  ],
+  "tags": [
+    "pensiero computazionale",
+    "algoritmo",
+    "diagramma di flusso",
+    "unplugged",
+    "sequenza",
+    "condizione",
+    "ciclo",
+    "decomposizione",
+    "debug",
+    "coding",
+    "classe-1",
+    "DIG"
+  ],
+  "compito_realta": "Analizza una procedura quotidiana (es. preparare la colazione, uscire di casa, fare una ricerca online) e trasformala in un algoritmo scritto con parole e in un diagramma di flusso. Testa l'algoritmo facendolo eseguire a un compagno: trova almeno un errore (bug) e correggilo.",
+  "hook_audio": {
+    "titolo": "Il cameriere che non sbaglia mai",
+    "script": "Immagina un cameriere che non dimentica mai un ordine e non confonde mai i tavoli. Come fa? Segue un algoritmo — una sequenza precisa di passi. E indovina? Il tuo cervello fa lo stesso ogni mattina quando ti alzi. Oggi scopriamo come funzionano le macchine... e forse anche noi.",
+    "durata_sec": 28
+  },
+  "professione_futura": {
+    "titolo": "Sviluppatore software / Computational Thinker",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta soluzioni a problemi reali trasformandoli in algoritmi eseguibili da macchine o persone.",
+    "competenze_chiave": [
+      "Problem decomposition",
+      "Pattern recognition",
+      "Abstraction",
+      "Algorithm design"
+    ]
+  },
+  "clil_termini": {
+    "it": [
+      "algoritmo",
+      "diagramma di flusso",
+      "sequenza",
+      "condizione",
+      "ciclo",
+      "debug",
+      "decomposizione"
+    ],
+    "en": [
+      "algorithm",
+      "flowchart",
+      "sequence",
+      "condition/if-then",
+      "loop",
+      "debug",
+      "decomposition"
+    ]
+  },
+  "uda_collegata": "UDA interdisciplinare: Matematica (procedure di calcolo come algoritmi) + Italiano (istruzioni e testi regolativi come sequenze) + Tecnologia",
+  "sdg_principale": 4,
+  "sdg": [
+    "4",
+    "9"
+  ],
+  "stem_connections": [
+    "Matematica — procedura di calcolo come algoritmo",
+    "Italiano — testo regolativo come sequenza di istruzioni",
+    "Scienze — metodo scientifico come algoritmo di osservazione/ipotesi/verifica"
+  ]
+}

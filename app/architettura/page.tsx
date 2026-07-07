@@ -275,7 +275,7 @@ export default function ArchitetturaPage() {
             <table className="min-w-full text-sm">
               <thead className="bg-slate-50">
                 <tr>
-                  {["Area", "1ª Media", "2ª Media", "3ª Media"].map((h) => (
+                  {["Area", "Classe 1ª", "Classe 2ª", "Classe 3ª"].map((h) => (
                     <th key={h} className="border-b border-slate-200 px-4 py-3 text-left text-xs font-black uppercase tracking-wide text-slate-500">{h}</th>
                   ))}
                 </tr>

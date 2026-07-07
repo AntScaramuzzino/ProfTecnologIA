@@ -1,5 +1,5 @@
 {
-  "total": 50,
+  "total": 52,
   "mcs": [
     {
       "id": "MC-DIG-1-01",
@@ -57,8 +57,9 @@
         "avanzato": "Costruire un glossario personale dei componenti hardware con immagini cercate autonomamente e una frase descrittiva per ciascuno."
       },
       "hook_audio": {
-        "durata_min": 3.6,
-        "durata_secondi": 214
+        "durata_min": 2.1,
+        "durata_secondi": 214,
+        "durata_sec": 129
       },
       "professione_futura": {
         "titolo": "Tecnico di supporto IT e riparatore di dispositivi",
@@ -152,8 +153,9 @@
         "avanzato": "Cercare autonomamente le 3 fonti, applicare la checklist e scrivere un paragrafo critico sulle differenze trovate."
       },
       "hook_audio": {
-        "durata_min": 3.5,
-        "durata_secondi": 212
+        "durata_min": 2.1,
+        "durata_secondi": 212,
+        "durata_sec": 128
       },
       "professione_futura": {
         "titolo": "Fact-checker e verificatore di informazioni digitali",
@@ -189,6 +191,109 @@
         }
       ],
       "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+    },
+    {
+      "id": "MC-DIG-1-03",
+      "area": "DIG",
+      "anno": 1,
+      "titolo": "Pensiero computazionale e algoritmi di base",
+      "titolo_libro": "Come pensa una macchina: dai passi agli algoritmi",
+      "descrizione": "Introduzione al pensiero computazionale attraverso attività unplugged e semi-plugged: decomposizione di problemi complessi in passi elementari, scrittura e lettura di semplici algoritmi, uso di sequenze, condizioni (se/allora) e cicli (ripeti). Costruzione di diagrammi di flusso per rappresentare procedure della vita quotidiana. Prerequisito fondamentale per il coding con Scratch (MC-DIG-2-01) e la robotica avanzata (MC-DIG-3-01).",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Tecnologia/Informatica, Scuola Secondaria I Grado",
+          "traguardo": "Lo studente sa analizzare procedure scomponendo le sequenze di azione, costruisce semplici diagrammi di flusso e realizza elementari procedure di istruzione anche unplugged"
+        },
+        "DC": {
+          "ref": "DigComp 3.0 — 5.1 Identificare i bisogni e rispondere con soluzioni tecnologiche",
+          "livello": "F",
+          "nota": "Livello Foundation: lo studente riconosce problemi risolvibili con un approccio sistematico e sa costruire semplici sequenze di istruzioni"
+        },
+        "EC": {
+          "ref": "EntreComp — 1.2 Creatività e ideazione; 2.4 Problem solving",
+          "nota": "Lo studente scompone un problema in sottoproblemi gestibili (decomposizione) e individua pattern ricorrenti — abilità trasversali fondamentali per l'innovazione"
+        },
+        "LC": {
+          "ref": "LifeComp — Pensiero critico (area cognitiva); Imparare a imparare",
+          "nota": "Lo studente affronta il debug come processo metacognitivo: riconosce l'errore, ne individua la causa nella sequenza e lo corregge sistematicamente"
+        },
+        "EV": {
+          "ref": "L. 92/2019 Educazione civica; D.M. 183/2024 — Cittadinanza digitale; SDG 4 — Istruzione di qualità",
+          "nota": "Il pensiero computazionale è alfabetizzazione del XXI secolo: comprendere come funzionano gli algoritmi è prerequisito per essere cittadini consapevoli in una società governata da sistemi automatizzati"
+        }
+      },
+      "outputApp": {
+        "quiz": "Quiz a 18 domande (6F + 6I + 6A): F sulle strutture base (sequenza, condizione, ciclo), I su diagrammi di flusso, A su decomposizione di problemi reali",
+        "microlearning": "Schede processo 6 passi + checklist costruzione algoritmo in 3 minuti",
+        "visual": "Diagramma di flusso annotato con 3 strutture fondamentali (sequenza/condizione/ciclo) + infografica 'dalla ricetta all'algoritmo'",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-DIG-1-01"
+      ],
+      "tags": [
+        "pensiero computazionale",
+        "algoritmo",
+        "diagramma di flusso",
+        "unplugged",
+        "sequenza",
+        "condizione",
+        "ciclo",
+        "decomposizione",
+        "debug",
+        "coding",
+        "classe-1",
+        "DIG"
+      ],
+      "compito_realta": "Analizza una procedura quotidiana (es. preparare la colazione, uscire di casa, fare una ricerca online) e trasformala in un algoritmo scritto con parole e in un diagramma di flusso. Testa l'algoritmo facendolo eseguire a un compagno: trova almeno un errore (bug) e correggilo.",
+      "hook_audio": {
+        "titolo": "Il cameriere che non sbaglia mai",
+        "script": "Immagina un cameriere che non dimentica mai un ordine e non confonde mai i tavoli. Come fa? Segue un algoritmo — una sequenza precisa di passi. E indovina? Il tuo cervello fa lo stesso ogni mattina quando ti alzi. Oggi scopriamo come funzionano le macchine... e forse anche noi.",
+        "durata_sec": 28
+      },
+      "professione_futura": {
+        "titolo": "Sviluppatore software / Computational Thinker",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta soluzioni a problemi reali trasformandoli in algoritmi eseguibili da macchine o persone.",
+        "competenze_chiave": [
+          "Problem decomposition",
+          "Pattern recognition",
+          "Abstraction",
+          "Algorithm design"
+        ]
+      },
+      "clil_termini": {
+        "it": [
+          "algoritmo",
+          "diagramma di flusso",
+          "sequenza",
+          "condizione",
+          "ciclo",
+          "debug",
+          "decomposizione"
+        ],
+        "en": [
+          "algorithm",
+          "flowchart",
+          "sequence",
+          "condition/if-then",
+          "loop",
+          "debug",
+          "decomposition"
+        ]
+      },
+      "uda_collegata": "UDA interdisciplinare: Matematica (procedure di calcolo come algoritmi) + Italiano (istruzioni e testi regolativi come sequenze) + Tecnologia",
+      "sdg_principale": 4,
+      "sdg": [
+        "4",
+        "9"
+      ],
+      "stem_connections": [
+        "Matematica — procedura di calcolo come algoritmo",
+        "Italiano — testo regolativo come sequenza di istruzioni",
+        "Scienze — metodo scientifico come algoritmo di osservazione/ipotesi/verifica"
+      ]
     },
     {
       "id": "MC-DIS-1-01",
@@ -244,8 +349,9 @@
         "avanzato": "Aggiungere una seconda pianta in scala diversa (1:50) e discutere come cambia la rappresentazione."
       },
       "hook_audio": {
-        "durata_min": 3.6,
-        "durata_secondi": 218
+        "durata_min": 2.2,
+        "durata_secondi": 218,
+        "durata_sec": 131
       },
       "professione_futura": {
         "titolo": "Progettista CAD-fisico (CAD/CAM Designer)",
@@ -338,8 +444,9 @@
         "avanzato": "Disegnare l'oggetto in due scale diverse e confrontare l'effetto visivo. Discutere quando si usa ciascuna."
       },
       "hook_audio": {
-        "durata_min": 0.6,
-        "durata_secondi": 37
+        "durata_min": 0.9,
+        "durata_secondi": 37,
+        "durata_sec": 55
       },
       "professione_futura": {
         "titolo": "BIM Coordinator (Building Information Modeling)",
@@ -439,9 +546,10 @@
         "titolo": "Trenta materiali. Un paio di scarpe.",
         "oggetto_reale": "scarpe da ginnastica",
         "domanda_avvio": "Quanti materiali diversi pensi che contengano le tue scarpe da ginnastica?",
-        "durata_min": 3.6,
+        "durata_min": 2.2,
         "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti.",
-        "durata_secondi": 218
+        "durata_secondi": 218,
+        "durata_sec": 131
       },
       "professione_futura": {
         "titolo": "Materials Scientist circolare",
@@ -547,9 +655,10 @@
         "titolo": "Il viaggio segreto della tua felpa: 40.000 km prima di arrivare nel tuo armadio",
         "oggetto_reale": "una felpa di cotone",
         "domanda_avvio": "Hai mai pensato a quante persone, paesi e chilometri ci sono stati dietro prima che quella felpa finisse nel tuo armadio?",
-        "durata_min": 3.5,
+        "durata_min": 2.1,
         "note_script": "Aprire con il dato che una felpa media percorre circa 40.000 km prima di essere venduta (cotone dal Texas, filatura in India, tessitura in Bangladesh, tintura in Vietnam, assemblaggio in Cambogia, logistica in Europa). Raccontare la storia come un viaggio in prima persona. Chiudere con: 'E quando la butti — il viaggio ricomincia da capo, o si ferma in una discarica?'. Tono: narrativo e leggermente sorprendente.",
-        "durata_secondi": 207
+        "durata_secondi": 207,
+        "durata_sec": 125
       },
       "professione_futura": {
         "titolo": "Supply Chain Sustainability Manager",
@@ -645,8 +754,9 @@
         "avanzato": "Ricercare autonomamente un materiale innovativo non in elenco, documentare le fonti e presentarlo alla classe."
       },
       "hook_audio": {
-        "durata_min": 3.4,
-        "durata_secondi": 203
+        "durata_min": 2,
+        "durata_secondi": 203,
+        "durata_sec": 122
       },
       "professione_futura": {
         "titolo": "Materials Innovation Engineer (Ingegnere dei Materiali per l'Innovazione Sostenibile)",
@@ -741,8 +851,9 @@
         "avanzato": "Calcolare il tasso di raccolta differenziata della classe per una settimana e confrontarlo con il dato comunale."
       },
       "hook_audio": {
-        "durata_min": 3.6,
-        "durata_secondi": 219
+        "durata_min": 2.2,
+        "durata_secondi": 219,
+        "durata_sec": 131
       },
       "professione_futura": {
         "titolo": "Urban Waste Systems Designer (Progettista di Sistemi Urbani per i Rifiuti)",
@@ -837,8 +948,9 @@
         "avanzato": "Lo studente aggiunge autonomamente un 5° criterio di valutazione e riflette su eventuali compromessi tra criteri in conflitto."
       },
       "hook_audio": {
-        "durata_min": 0.6,
-        "durata_secondi": 36
+        "durata_min": 0.9,
+        "durata_secondi": 36,
+        "durata_sec": 54
       },
       "professione_futura": {
         "titolo": "Ingegnere metallurgico dei materiali avanzati",
@@ -934,8 +1046,9 @@
         "avanzato": "Progettare un esperimento semplice per testare la biodegradabilità in classe (interrare campioni, osservare per 2 settimane)."
       },
       "hook_audio": {
-        "durata_min": 0.7,
-        "durata_secondi": 39
+        "durata_min": 0.9,
+        "durata_secondi": 39,
+        "durata_sec": 57
       },
       "professione_futura": {
         "titolo": "Ingegnere dei biomateriali e dei polimeri sostenibili",
@@ -1027,8 +1140,9 @@
         "avanzato": "Confrontare due piante uguali cresciute in condizioni diverse (es. con e senza concime) e analizzare le differenze."
       },
       "hook_audio": {
-        "durata_min": 3.9,
-        "durata_secondi": 232
+        "durata_min": 2.3,
+        "durata_secondi": 232,
+        "durata_sec": 140
       },
       "professione_futura": {
         "titolo": "Agronomo di precisione",
@@ -1122,8 +1236,9 @@
         "avanzato": "Progettare una catena del freddo per un prodotto deperibile: dal produttore al consumatore, indicando ogni punto critico."
       },
       "hook_audio": {
-        "durata_min": 3.9,
-        "durata_secondi": 232
+        "durata_min": 2.3,
+        "durata_secondi": 232,
+        "durata_sec": 140
       },
       "professione_futura": {
         "titolo": "Food Technologist (Tecnologo alimentare)",
@@ -1217,8 +1332,9 @@
         "avanzato": "Calcolare l'apporto calorico giornaliero medio e confrontarlo con il fabbisogno energetico per la propria età e attività."
       },
       "hook_audio": {
-        "durata_min": 3.5,
-        "durata_secondi": 210
+        "durata_min": 2.1,
+        "durata_secondi": 210,
+        "durata_sec": 126
       },
       "professione_futura": {
         "titolo": "Nutrizionista e Dietista",
@@ -1313,8 +1429,9 @@
         "avanzato": "Confrontare la filiera di un prodotto locale vs. uno importato: calcolare la stima delle emissioni di CO₂ per il trasporto."
       },
       "hook_audio": {
-        "durata_min": 0.7,
-        "durata_secondi": 42
+        "durata_min": 0.9,
+        "durata_secondi": 42,
+        "durata_sec": 54
       },
       "professione_futura": {
         "titolo": "Supply Chain Manager agroalimentare",
@@ -1410,8 +1527,9 @@
         "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
       },
       "hook_audio": {
-        "durata_min": 0.6,
-        "durata_secondi": 37
+        "durata_min": 0.9,
+        "durata_secondi": 37,
+        "durata_sec": 53
       },
       "professione_futura": {
         "titolo": "Packaging Designer sostenibile",
@@ -1506,8 +1624,9 @@
         "avanzato": "Creare una mappa digitale della biodiversità alimentare del proprio comune usando Google Maps con pin e schede informative."
       },
       "hook_audio": {
-        "durata_min": 0.7,
-        "durata_secondi": 39
+        "durata_min": 0.9,
+        "durata_secondi": 39,
+        "durata_sec": 55
       },
       "professione_futura": {
         "titolo": "Food Technologist",
@@ -1598,8 +1717,9 @@
         "avanzato": "Progettare una struttura antisisminca: come cambia il design se la struttura deve resistere a vibrazioni laterali?"
       },
       "hook_audio": {
-        "durata_min": 3.9,
-        "durata_secondi": 236
+        "durata_min": 2.4,
+        "durata_secondi": 236,
+        "durata_sec": 142
       },
       "professione_futura": {
         "titolo": "Ingegnere strutturale per la rigenerazione urbana",
@@ -1693,8 +1813,9 @@
         "avanzato": "Calcolare il consumo mensile dell'intera abitazione e identificare i 3 elettrodomestici più energivori con proposte di sostituzione."
       },
       "hook_audio": {
-        "durata_min": 3.7,
-        "durata_secondi": 224
+        "durata_min": 2.2,
+        "durata_secondi": 224,
+        "durata_sec": 135
       },
       "professione_futura": {
         "titolo": "Energy manager domestico e di comunità",
@@ -1787,8 +1908,9 @@
         "avanzato": "Confrontare il proprio quartiere con un quartiere di un'altra città italiana o europea: stesso numero di abitanti, diversa qualità dei servizi — perché?"
       },
       "hook_audio": {
-        "durata_min": 3.9,
-        "durata_secondi": 235
+        "durata_min": 2.4,
+        "durata_secondi": 235,
+        "durata_sec": 141
       },
       "professione_futura": {
         "titolo": "Urbanista per la città del quarto d'ora",
@@ -1882,8 +2004,9 @@
         "avanzato": "Calcolare approssimativamente la dispersione termica di una parete non isolata vs. isolata usando i valori di conduttività termica forniti."
       },
       "hook_audio": {
-        "durata_min": 0.8,
-        "durata_secondi": 45
+        "durata_min": 1,
+        "durata_secondi": 45,
+        "durata_sec": 59
       },
       "professione_futura": {
         "titolo": "Ingegnere dell'efficienza energetica degli edifici (Energy Performance Engineer)",
@@ -1977,8 +2100,9 @@
         "avanzato": "Analizzare i dati aperti (open data) del proprio comune: cosa pubblica? Cosa manca? Cosa si potrebbe fare con quei dati?"
       },
       "hook_audio": {
-        "durata_min": 0.6,
-        "durata_secondi": 37
+        "durata_min": 0.9,
+        "durata_secondi": 37,
+        "durata_sec": 52
       },
       "professione_futura": {
         "titolo": "Ingegnere ambientale — specializzazione risorse idriche",
@@ -2073,8 +2197,9 @@
         "avanzato": "Confrontare due comuni italiani con lo stesso livello di rischio ma diversa capacità di risposta: cosa fa la differenza?"
       },
       "hook_audio": {
-        "durata_min": 0.7,
-        "durata_secondi": 41
+        "durata_min": 0.9,
+        "durata_secondi": 41,
+        "durata_sec": 56
       },
       "professione_futura": {
         "titolo": "Urban Data Analyst / Analista di dati urbani",
@@ -2169,8 +2294,9 @@
         "avanzato": "Aggiungere livelli di difficoltà adattivi: le domande successive cambiano in base alle risposte precedenti."
       },
       "hook_audio": {
-        "durata_min": 4,
-        "durata_secondi": 242
+        "durata_min": 2.4,
+        "durata_secondi": 242,
+        "durata_sec": 146
       },
       "professione_futura": {
         "titolo": "Sviluppatore educativo (EdTech developer)",
@@ -2263,8 +2389,9 @@
         "avanzato": "Richiedere formalmente la copia dei propri dati a una piattaforma (es. Google Takeout) e analizzare cosa ha raccolto."
       },
       "hook_audio": {
-        "durata_min": 4,
-        "durata_secondi": 237
+        "durata_min": 2.4,
+        "durata_secondi": 237,
+        "durata_sec": 142
       },
       "professione_futura": {
         "titolo": "Data Protection Officer (DPO) — Responsabile della Protezione dei Dati",
@@ -2363,9 +2490,10 @@
         "titolo": "Chi comanda davvero nel tuo computer?",
         "oggetto_reale": "il task manager / Activity Monitor",
         "domanda_avvio": "Hai mai aperto il task manager e ti sei chiesto: ma cosa sono tutti questi processi misteriosi che girano in background?",
-        "durata_min": 0.9,
+        "durata_min": 1,
         "note_script": "Usare la metafora del SO come 'direttore d'orchestra': senza di lui ogni applicazione suonerebbe per conto suo e nessuno si sentirebbe. Raccontare cosa succede quando si apre un'app: il SO alloca memoria, crea un processo, assegna il processore a turno. Dato sorprendente: su un computer normale girano sempre tra 50 e 200 processi anche quando 'non stai facendo niente'. Tono: curioso, tecnico ma accessibile.",
-        "durata_secondi": 56
+        "durata_secondi": 56,
+        "durata_sec": 61
       },
       "professione_futura": {
         "titolo": "DevOps Engineer",
@@ -2466,9 +2594,10 @@
         "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
         "oggetto_reale": "un messaggio cifrato",
         "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-        "durata_min": 0.9,
+        "durata_min": 1,
         "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
-        "durata_secondi": 56
+        "durata_secondi": 56,
+        "durata_sec": 59
       },
       "professione_futura": {
         "titolo": "Cybersecurity Analyst",
@@ -2505,6 +2634,109 @@
         }
       ],
       "uda_collegata": null
+    },
+    {
+      "id": "MC-DIG-2-05",
+      "area": "DIG",
+      "anno": 2,
+      "titolo": "Benessere digitale e cittadinanza responsabile",
+      "titolo_libro": "Staccare la spina: vivere bene con e senza schermo",
+      "descrizione": "Come usare la tecnologia in modo sano e consapevole: riconoscere segnali di uso problematico di device, social media e gaming; strategie pratiche per gestire il tempo-schermo; definizione, riconoscimento e risposta al cyberbullismo (vittima, testimone, autore); diritto a disconnettersi e benessere psicofisico nell'era digitale. Traguardo prescrittivo di Educazione Civica (DM 183/2024): Cittadinanza digitale D3 + Sviluppo economico S3.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Tecnologia/Informatica + Competenza Digitale, Scuola Secondaria I Grado",
+          "traguardo": "Lo studente agisce in modo consapevole e responsabile nell'uso delle tecnologie informatiche anche online, riconosce situazioni di rischio per il proprio benessere e adotta comportamenti preventivi e correttivi"
+        },
+        "DC": {
+          "ref": "DigComp 3.0 — 4.3 Proteggere la salute e il benessere digitale",
+          "livello": "I",
+          "nota": "Livello Intermediate: lo studente sa analizzare il proprio comportamento digitale, riconosce segnali di uso problematico e adotta autonomamente strategie di gestione consapevole"
+        },
+        "EC": {
+          "ref": "EntreComp — 1.3 Motivazione e perseveranza; 2.2 Visione; 3.4 Agire in modo responsabile",
+          "nota": "Lo studente gestisce la propria energia e attenzione come risorse limitate, sviluppando autonomia e responsabilità nelle scelte digitali quotidiane"
+        },
+        "LC": {
+          "ref": "LifeComp — 1.3 Gestione del sé (benessere, emozioni); 2.3 Empatia; 3.1 Pensiero critico",
+          "nota": "Riconoscere come lo schermo influenza le proprie emozioni e relazioni richiede autoregolazione emotiva e capacità empatica di comprendere l'impatto del proprio comportamento digitale sugli altri"
+        },
+        "EV": {
+          "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D3 (cyberbullismo) + Sviluppo economico Traguardo S3 (dipendenze tecnologiche); L. 92/2019 art. 5; SDG 3 — Salute e benessere; SDG 16 — Pace e giustizia",
+          "nota": "Doppio aggancio prescrittivo al DM 183/2024: il Traguardo D3 richiede di 'prevenire e contrastare attività di cyberbullismo', il Traguardo S3 di affrontare 'uso patologico del web, gaming e gioco d'azzardo'. Entrambi urgenti per questa fascia d'età."
+        }
+      },
+      "outputApp": {
+        "quiz": "Quiz a 18 domande (6F + 6I + 6A): F sul riconoscimento del cyberbullismo e delle dipendenze, I su strategie di risposta e gestione del tempo digitale, A su riflessione critica sui meccanismi di engagement dei social media",
+        "microlearning": "Scheda processo 'Cosa fare in caso di cyberbullismo' (7 passi) + checklist 'La mia settimana digitale sana'",
+        "visual": "Infografica 'I segni del sovraccarico digitale' + schema 'Come rispondere al cyberbullismo: vittima / testimone / autore'",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-DIG-2-02",
+        "MC-DIG-2-04"
+      ],
+      "tags": [
+        "benessere digitale",
+        "cyberbullismo",
+        "tempo schermo",
+        "dipendenze tecnologiche",
+        "social media",
+        "gaming",
+        "salute digitale",
+        "diritto a disconnettersi",
+        "identità online",
+        "classe-2",
+        "DIG"
+      ],
+      "compito_realta": "Tieni un 'diario digitale' per una settimana annotando quando e come usi il telefono o il PC: per studio, svago, social, gaming. Analizza i dati raccolti e costruisci un piano personale per un uso più consapevole. Presenta la tua analisi alla classe discutendo cosa ti ha sorpreso.",
+      "hook_audio": {
+        "titolo": "La notifica che non riesci a ignorare",
+        "script": "Sai quella sensazione quando senti il telefono vibrare e non riesci a non guardare? Non sei debole — è progettato apposta. Ogni notifica è un piccolo gancio. Ma tu puoi imparare a scegliere: quando connetterti e quando no. Essere padroni della tecnologia, non il contrario.",
+        "durata_sec": 30
+      },
+      "professione_futura": {
+        "titolo": "Digital Wellbeing Specialist / Educatore digitale",
+        "orizzonte": "2030",
+        "descrizione_breve": "Aiuta individui e organizzazioni a sviluppare un rapporto sano con la tecnologia, progettando ambienti digitali e programmi educativi che promuovono il benessere.",
+        "competenze_chiave": [
+          "Psicologia comportamentale digitale",
+          "Design etico delle interfacce",
+          "Educazione emotiva",
+          "Mediazione dei conflitti online"
+        ]
+      },
+      "clil_termini": {
+        "it": [
+          "benessere digitale",
+          "cyberbullismo",
+          "dipendenza tecnologica",
+          "tempo schermo",
+          "notifica",
+          "engagement",
+          "disconnessione"
+        ],
+        "en": [
+          "digital wellbeing",
+          "cyberbullying",
+          "technology addiction",
+          "screen time",
+          "notification",
+          "engagement",
+          "digital detox"
+        ]
+      },
+      "uda_collegata": "UDA interdisciplinare: Scienze/Biologia (sistema nervoso e dopamina) + Italiano (analisi del testo persuasivo, pubblicità) + Ed. Civica (Cittadinanza digitale, DM 183/2024)",
+      "sdg_principale": 3,
+      "sdg": [
+        "3",
+        "16"
+      ],
+      "stem_connections": [
+        "Scienze — neurologia del reward system e dopamina",
+        "Statistica — analisi del proprio uso digitale con dati reali",
+        "Biologia — effetti degli schermi sul ritmo circadiano e sul sonno"
+      ]
     },
     {
       "id": "MC-DIS-2-01",
@@ -2563,8 +2795,9 @@
         "avanzato": "Disegnare le viste ortogonali di un oggetto con almeno un foro passante e una sezione trasversale per evidenziarne l'interno."
       },
       "hook_audio": {
-        "durata_min": 3.7,
-        "durata_secondi": 224
+        "durata_min": 2.2,
+        "durata_secondi": 224,
+        "durata_sec": 134
       },
       "professione_futura": {
         "titolo": "Progettista meccanico CAD",
@@ -2663,9 +2896,10 @@
         "titolo": "IKEA e il segreto del disegno cavaliero",
         "oggetto_reale": "manuale di montaggio IKEA",
         "domanda_avvio": "Hai mai notato che tutti i disegni IKEA hanno sempre lo stesso strano angolo di 45°?",
-        "durata_min": 0.8,
+        "durata_min": 0.9,
         "note_script": "Aprire con la domanda sull'angolo dei disegni IKEA. Spiegare che è assonometria cavaliera — scelta deliberata per essere comprensibile in qualsiasi cultura senza parole.",
-        "durata_secondi": 48
+        "durata_secondi": 48,
+        "durata_sec": 57
       },
       "professione_futura": {
         "titolo": "Designer di prodotto industriale",
@@ -2759,8 +2993,9 @@
         "avanzato": "Aggiungere l'analisi dei canali WiFi in uso (interferenze) e proporre una configurazione ottimale dei punti di accesso."
       },
       "hook_audio": {
-        "durata_min": 4.3,
-        "durata_secondi": 258
+        "durata_min": 2.6,
+        "durata_secondi": 258,
+        "durata_sec": 155
       },
       "professione_futura": {
         "titolo": "Network Infrastructure Designer",
@@ -2853,8 +3088,9 @@
         "avanzato": "Pubblicare il podcast su una piattaforma open (es. Internet Archive) con licenza CC scelta e giustificata dallo studente."
       },
       "hook_audio": {
-        "durata_min": 4.2,
-        "durata_secondi": 250
+        "durata_min": 2.5,
+        "durata_secondi": 250,
+        "durata_sec": 150
       },
       "professione_futura": {
         "titolo": "Content Strategist con specializzazione etica",
@@ -2949,8 +3185,9 @@
         "avanzato": "Presentare il piano al Consiglio di Istituto come proposta concreta con dati, obiettivi e azioni da approvare."
       },
       "hook_audio": {
-        "durata_min": 4.3,
-        "durata_secondi": 256
+        "durata_min": 2.6,
+        "durata_secondi": 256,
+        "durata_sec": 154
       },
       "professione_futura": {
         "titolo": "Mobility Planner urbano",
@@ -3045,8 +3282,9 @@
         "avanzato": "Simulare il sistema con Arduino/micro:bit: costruire il prototipo di almeno uno dei 5 sistemi progettati."
       },
       "hook_audio": {
-        "durata_min": 4.3,
-        "durata_secondi": 261
+        "durata_min": 2.6,
+        "durata_secondi": 261,
+        "durata_sec": 157
       },
       "professione_futura": {
         "titolo": "Systems Integration Engineer — Industria 4.0",
@@ -3148,9 +3386,10 @@
         "titolo": "Il cavo che tiene in piedi internet",
         "oggetto_reale": "cavo sottomarino transatlantico",
         "domanda_avvio": "Se un peschereccio strappasse accidentalmente il cavo che collega Europa e America, cosa smetterebbe di funzionare?",
-        "durata_min": 0.8,
+        "durata_min": 1,
         "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica.",
-        "durata_secondi": 47
+        "durata_secondi": 47,
+        "durata_sec": 59
       },
       "professione_futura": {
         "titolo": "Network Security Analyst — Infrastrutture critiche",
@@ -3258,9 +3497,10 @@
         "titolo": "Come TikTok sa già cosa vuoi vedere",
         "oggetto_reale": "feed di TikTok",
         "domanda_avvio": "Hai mai aperto TikTok per 5 minuti e ti sei ritrovato dopo un'ora — senza capire come?",
-        "durata_min": 0.8,
+        "durata_min": 0.9,
         "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione.",
-        "durata_secondi": 45
+        "durata_secondi": 45,
+        "durata_sec": 55
       },
       "professione_futura": {
         "titolo": "Digital Misinformation Analyst (Media Literacy Specialist)",
@@ -3360,8 +3600,9 @@
         "avanzato": "Aggiungere un'interfaccia utente (display, LED o app mobile via Bluetooth) e documentare il progetto in un portfolio digitale."
       },
       "hook_audio": {
-        "durata_min": 4.3,
-        "durata_secondi": 259
+        "durata_min": 2.6,
+        "durata_secondi": 259,
+        "durata_sec": 156
       },
       "professione_futura": {
         "titolo": "Ingegnere di sistemi robotici e automation specialist",
@@ -3457,8 +3698,9 @@
         "avanzato": "Progettare un sistema IA per un problema scolastico (es. raccomandatore di libri per la biblioteca): definire dataset necessario, tipo di apprendimento e rischi etici da gestire."
       },
       "hook_audio": {
-        "durata_min": 4.8,
-        "durata_secondi": 286
+        "durata_min": 2.9,
+        "durata_secondi": 286,
+        "durata_sec": 172
       },
       "professione_futura": {
         "titolo": "AI ethicist, responsabile IA, data scientist",
@@ -3559,9 +3801,10 @@
         "titolo": "Il tuo quartiere respira — ma lo sai quanto bene?",
         "oggetto_reale": "una centralina meteo fai-da-te con micro:bit",
         "domanda_avvio": "Sai quanta CO2 c'è adesso nell'aria della tua aula — e se è abbastanza per stare svegli e concentrati?",
-        "durata_min": 1,
+        "durata_min": 1.1,
         "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico.",
-        "durata_secondi": 58
+        "durata_secondi": 58,
+        "durata_sec": 65
       },
       "professione_futura": {
         "titolo": "IoT Solutions Architect",
@@ -3663,9 +3906,10 @@
         "titolo": "Navigare al buio: come usa internet chi non vede",
         "oggetto_reale": "uno screen reader (lettore di schermo)",
         "domanda_avvio": "Hai mai provato a usare il computer con gli occhi chiusi — e a capire cosa c'è sullo schermo solo dall'audio?",
-        "durata_min": 0.9,
+        "durata_min": 1,
         "note_script": "Aprire con una simulazione audio: descrizione di come suona una pagina web normale quando la legge uno screen reader (rapidissimo, confuso, ordine casuale dei link). Poi confrontare con una pagina accessibile (logica, comprensibile). Dato: in Italia ci sono circa 350.000 persone con disabilità visiva grave. In Europa il 15% della popolazione ha una disabilità. Il European Accessibility Act del 2025 obbliga tutte le aziende con più di 10 dipendenti ad avere prodotti digitali accessibili. Tono: empatico e pratico — 'puoi fare la differenza con 3 regole semplici'.",
-        "durata_secondi": 57
+        "durata_secondi": 57,
+        "durata_sec": 59
       },
       "professione_futura": {
         "titolo": "UX Accessibility Specialist",
@@ -3760,8 +4004,9 @@
         "avanzato": "Realizzare il modello 3D digitale in SketchUp e produrre render fotorealistici dell'oggetto progettato con diversi materiali applicati."
       },
       "hook_audio": {
-        "durata_min": 4.7,
-        "durata_secondi": 279
+        "durata_min": 2.8,
+        "durata_secondi": 279,
+        "durata_sec": 168
       },
       "professione_futura": {
         "titolo": "Designer di prodotto e service designer",
@@ -3855,8 +4100,9 @@
         "avanzato": "Progettare autonomamente l'oggetto partendo da un brief di design (vincoli dimensionali + funzionali), iterare 2 versioni e argomentare le modifiche apportate."
       },
       "hook_audio": {
-        "durata_min": 0.6,
-        "durata_secondi": 36
+        "durata_min": 0.9,
+        "durata_secondi": 36,
+        "durata_sec": 52
       },
       "professione_futura": {
         "titolo": "Ingegnere di produzione digitale e maker educator",
@@ -3947,8 +4193,9 @@
         "avanzato": "Progettare una macchina composta (combinazione di 2+ macchine semplici) che risolva un problema domestico concreto."
       },
       "hook_audio": {
-        "durata_min": 4.2,
-        "durata_secondi": 249
+        "durata_min": 2.5,
+        "durata_secondi": 249,
+        "durata_sec": 150
       },
       "professione_futura": {
         "titolo": "Ingegnere di produzione e automazione",
@@ -4042,8 +4289,9 @@
         "avanzato": "Simulare 3 scenari di riduzione (auto elettrica, pannelli solari, casa ben isolata) e calcolare il risparmio di CO₂ per ciascuno."
       },
       "hook_audio": {
-        "durata_min": 4.3,
-        "durata_secondi": 260
+        "durata_min": 2.6,
+        "durata_secondi": 260,
+        "durata_sec": 156
       },
       "professione_futura": {
         "titolo": "Analista di sistema energetico",
@@ -4137,8 +4385,9 @@
         "avanzato": "Aggiungere una batteria di accumulo al sistema: come cambia l'autoconsumo? Calcolare il payback period dell'investimento."
       },
       "hook_audio": {
-        "durata_min": 4.5,
-        "durata_secondi": 270
+        "durata_min": 2.7,
+        "durata_secondi": 270,
+        "durata_sec": 162
       },
       "professione_futura": {
         "titolo": "Ingegnere della transizione energetica",
@@ -4231,8 +4480,9 @@
         "avanzato": "Aggiungere un secondo sensore (temperatura o movimento) e gestire le due condizioni con logica AND/OR nel codice."
       },
       "hook_audio": {
-        "durata_min": 4.4,
-        "durata_secondi": 263
+        "durata_min": 2.6,
+        "durata_secondi": 263,
+        "durata_sec": 158
       },
       "professione_futura": {
         "titolo": "Ingegnere elettronico embedded",
@@ -4334,9 +4584,10 @@
         "titolo": "Perché il cofano è caldo?",
         "oggetto_reale": "motore di un'automobile",
         "domanda_avvio": "Se un motore a benzina spreca il 70% dell'energia come calore, perché lo usiamo ancora?",
-        "durata_min": 1,
+        "durata_min": 1.1,
         "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica.",
-        "durata_secondi": 58
+        "durata_secondi": 58,
+        "durata_sec": 64
       },
       "professione_futura": {
         "titolo": "Ingegnere della propulsione elettrica e ibrida",
@@ -4439,9 +4690,10 @@
         "titolo": "L'isola che produce più energia di quanta ne consuma",
         "oggetto_reale": "turbina eolica su Samsø, Danimarca",
         "domanda_avvio": "Se potessimo immagazzinare l'energia del sole e del vento, avremmo già risolto il problema climatico?",
-        "durata_min": 0.9,
+        "durata_min": 1,
         "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica.",
-        "durata_secondi": 56
+        "durata_secondi": 56,
+        "durata_sec": 61
       },
       "professione_futura": {
         "titolo": "Energy Storage System Engineer (Ingegnere dei sistemi di accumulo energetico)",
@@ -4539,8 +4791,9 @@
         "avanzato": "Analizzare una multinazionale presente nel territorio: dove produce, dove ha sede fiscale, quanti dipendenti locali — e confrontare con una PMI locale."
       },
       "hook_audio": {
-        "durata_min": 4.3,
-        "durata_secondi": 258
+        "durata_min": 2.6,
+        "durata_secondi": 258,
+        "durata_sec": 155
       },
       "professione_futura": {
         "titolo": "Supply Chain Sustainability Analyst",
@@ -4635,8 +4888,9 @@
         "avanzato": "Produrre un vero volantino per un GAS della scuola con dati, prodotti scelti e argomentazione della scelta da distribuire ai genitori."
       },
       "hook_audio": {
-        "durata_min": 4.4,
-        "durata_secondi": 264
+        "durata_min": 2.6,
+        "durata_secondi": 264,
+        "durata_sec": 159
       },
       "professione_futura": {
         "titolo": "ESG Analyst (Environmental, Social, Governance)",
@@ -4730,8 +4984,9 @@
         "avanzato": "Condurre 3 interviste reali con potenziali 'clienti' (compagni, insegnanti) per validare le ipotesi del BMC prima di presentarlo."
       },
       "hook_audio": {
-        "durata_min": 0.7,
-        "durata_secondi": 44
+        "durata_min": 1,
+        "durata_secondi": 44,
+        "durata_sec": 58
       },
       "professione_futura": {
         "titolo": "Innovation Manager",
@@ -4825,8 +5080,9 @@
         "avanzato": "Simulare un audit di qualità scolastico: definire 3 standard di qualità per la mensa scolastica e verificare se vengono rispettati attraverso osservazione diretta."
       },
       "hook_audio": {
-        "durata_min": 0.8,
-        "durata_secondi": 45
+        "durata_min": 1,
+        "durata_secondi": 45,
+        "durata_sec": 58
       },
       "professione_futura": {
         "titolo": "Career Coach e Counselor di orientamento",

@@ -64,7 +64,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
       {/* Header toolbar */}
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div>
-          <p className="text-xs text-slate-500">
+          <p className="text-sm text-slate-500">
             {cards.length} card · <span className="font-semibold text-emerald-600">{known} note</span>
             {review > 0 && <> · <span className="font-semibold text-rose-500">{review} da ripassare</span></>}
           </p>
@@ -81,14 +81,14 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
           <button
             onClick={shuffle}
             aria-label="Rimescola le flashcard in ordine casuale"
-            className="rounded-full border border-indigo-200 px-3 py-1 text-xs font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1"
+            className="rounded-full border border-indigo-200 px-3 py-1 text-sm font-semibold text-indigo-600 hover:bg-indigo-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1"
           >
             🔀 Rimescola
           </button>
           <button
             onClick={reset}
             aria-label="Ricomincia dal principio"
-            className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-1"
+            className="rounded-full border border-slate-200 px-3 py-1 text-sm font-semibold text-slate-600 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-400 focus-visible:ring-offset-1"
           >
             Ricomincia
           </button>
@@ -132,7 +132,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
               {/* Retro — espandibile */}
               {isRevealed && (
                 <div className="border-t border-slate-100 px-4 pb-4 pt-3">
-                  <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-slate-500">Risposta</p>
+                  <p className="mb-2 text-sm font-semibold uppercase tracking-wider text-slate-500">Risposta</p>
                   <p className="text-sm leading-6 text-slate-700">{card.back}</p>
 
                   {/* Azioni */}
@@ -140,7 +140,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
                     <button
                       onClick={() => mark(cardIdx, "known")}
                       aria-pressed={cardStatus === "known"}
-                      className={`flex-1 rounded-lg border py-1.5 text-xs font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 ${
+                      className={`flex-1 rounded-lg border py-1.5 text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 ${
                         cardStatus === "known"
                           ? "border-emerald-400 bg-emerald-100 text-emerald-800"
                           : "border-emerald-200 text-emerald-700 hover:bg-emerald-50"
@@ -151,7 +151,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
                     <button
                       onClick={() => mark(cardIdx, "review")}
                       aria-pressed={cardStatus === "review"}
-                      className={`flex-1 rounded-lg border py-1.5 text-xs font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-1 ${
+                      className={`flex-1 rounded-lg border py-1.5 text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-1 ${
                         cardStatus === "review"
                           ? "border-rose-400 bg-rose-100 text-rose-800"
                           : "border-rose-200 text-rose-600 hover:bg-rose-50"

@@ -38,12 +38,12 @@ export default async function AnnoPage({ params }: PageProps) {
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       <Breadcrumb items={[
         { label: "ProfTecnologIA", href: "/" },
-        { label: `${yearLabel} media` },
+        { label: `Classe ${annoNum}ª` },
       ]} />
 
       <header className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
         <p className="text-xs font-black uppercase tracking-wide text-emerald-700 sm:text-sm">Percorso annuale</p>
-        <h1 className="mt-2 text-2xl font-black tracking-tight sm:text-4xl">{yearLabel} media</h1>
+        <h1 className="mt-2 text-2xl font-black tracking-tight sm:text-4xl">Classe {annoNum}ª</h1>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
           {mcs.length} micro-competenze organizzate per area tematica, con testi, immagini,
           compiti di realtà e livelli DigComp progressivi.

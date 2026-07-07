@@ -1,0 +1,103 @@
+{
+  "id": "MC-DIG-2-05",
+  "area": "DIG",
+  "anno": 2,
+  "titolo": "Benessere digitale e cittadinanza responsabile",
+  "titolo_libro": "Staccare la spina: vivere bene con e senza schermo",
+  "descrizione": "Come usare la tecnologia in modo sano e consapevole: riconoscere segnali di uso problematico di device, social media e gaming; strategie pratiche per gestire il tempo-schermo; definizione, riconoscimento e risposta al cyberbullismo (vittima, testimone, autore); diritto a disconnettersi e benessere psicofisico nell'era digitale. Traguardo prescrittivo di Educazione Civica (DM 183/2024): Cittadinanza digitale D3 + Sviluppo economico S3.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Tecnologia/Informatica + Competenza Digitale, Scuola Secondaria I Grado",
+      "traguardo": "Lo studente agisce in modo consapevole e responsabile nell'uso delle tecnologie informatiche anche online, riconosce situazioni di rischio per il proprio benessere e adotta comportamenti preventivi e correttivi"
+    },
+    "DC": {
+      "ref": "DigComp 3.0 — 4.3 Proteggere la salute e il benessere digitale",
+      "livello": "I",
+      "nota": "Livello Intermediate: lo studente sa analizzare il proprio comportamento digitale, riconosce segnali di uso problematico e adotta autonomamente strategie di gestione consapevole"
+    },
+    "EC": {
+      "ref": "EntreComp — 1.3 Motivazione e perseveranza; 2.2 Visione; 3.4 Agire in modo responsabile",
+      "nota": "Lo studente gestisce la propria energia e attenzione come risorse limitate, sviluppando autonomia e responsabilità nelle scelte digitali quotidiane"
+    },
+    "LC": {
+      "ref": "LifeComp — 1.3 Gestione del sé (benessere, emozioni); 2.3 Empatia; 3.1 Pensiero critico",
+      "nota": "Riconoscere come lo schermo influenza le proprie emozioni e relazioni richiede autoregolazione emotiva e capacità empatica di comprendere l'impatto del proprio comportamento digitale sugli altri"
+    },
+    "EV": {
+      "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D3 (cyberbullismo) + Sviluppo economico Traguardo S3 (dipendenze tecnologiche); L. 92/2019 art. 5; SDG 3 — Salute e benessere; SDG 16 — Pace e giustizia",
+      "nota": "Doppio aggancio prescrittivo al DM 183/2024: il Traguardo D3 richiede di 'prevenire e contrastare attività di cyberbullismo', il Traguardo S3 di affrontare 'uso patologico del web, gaming e gioco d'azzardo'. Entrambi urgenti per questa fascia d'età."
+    }
+  },
+  "outputApp": {
+    "quiz": "Quiz a 18 domande (6F + 6I + 6A): F sul riconoscimento del cyberbullismo e delle dipendenze, I su strategie di risposta e gestione del tempo digitale, A su riflessione critica sui meccanismi di engagement dei social media",
+    "microlearning": "Scheda processo 'Cosa fare in caso di cyberbullismo' (7 passi) + checklist 'La mia settimana digitale sana'",
+    "visual": "Infografica 'I segni del sovraccarico digitale' + schema 'Come rispondere al cyberbullismo: vittima / testimone / autore'",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-DIG-2-02",
+    "MC-DIG-2-04"
+  ],
+  "tags": [
+    "benessere digitale",
+    "cyberbullismo",
+    "tempo schermo",
+    "dipendenze tecnologiche",
+    "social media",
+    "gaming",
+    "salute digitale",
+    "diritto a disconnettersi",
+    "identità online",
+    "classe-2",
+    "DIG"
+  ],
+  "compito_realta": "Tieni un 'diario digitale' per una settimana annotando quando e come usi il telefono o il PC: per studio, svago, social, gaming. Analizza i dati raccolti e costruisci un piano personale per un uso più consapevole. Presenta la tua analisi alla classe discutendo cosa ti ha sorpreso.",
+  "hook_audio": {
+    "titolo": "La notifica che non riesci a ignorare",
+    "script": "Sai quella sensazione quando senti il telefono vibrare e non riesci a non guardare? Non sei debole — è progettato apposta. Ogni notifica è un piccolo gancio. Ma tu puoi imparare a scegliere: quando connetterti e quando no. Essere padroni della tecnologia, non il contrario.",
+    "durata_sec": 30
+  },
+  "professione_futura": {
+    "titolo": "Digital Wellbeing Specialist / Educatore digitale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Aiuta individui e organizzazioni a sviluppare un rapporto sano con la tecnologia, progettando ambienti digitali e programmi educativi che promuovono il benessere.",
+    "competenze_chiave": [
+      "Psicologia comportamentale digitale",
+      "Design etico delle interfacce",
+      "Educazione emotiva",
+      "Mediazione dei conflitti online"
+    ]
+  },
+  "clil_termini": {
+    "it": [
+      "benessere digitale",
+      "cyberbullismo",
+      "dipendenza tecnologica",
+      "tempo schermo",
+      "notifica",
+      "engagement",
+      "disconnessione"
+    ],
+    "en": [
+      "digital wellbeing",
+      "cyberbullying",
+      "technology addiction",
+      "screen time",
+      "notification",
+      "engagement",
+      "digital detox"
+    ]
+  },
+  "uda_collegata": "UDA interdisciplinare: Scienze/Biologia (sistema nervoso e dopamina) + Italiano (analisi del testo persuasivo, pubblicità) + Ed. Civica (Cittadinanza digitale, DM 183/2024)",
+  "sdg_principale": 3,
+  "sdg": [
+    "3",
+    "16"
+  ],
+  "stem_connections": [
+    "Scienze — neurologia del reward system e dopamina",
+    "Statistica — analisi del proprio uso digitale con dati reali",
+    "Biologia — effetti degli schermi sul ritmo circadiano e sul sonno"
+  ]
+}

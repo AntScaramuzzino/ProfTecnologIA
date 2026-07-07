@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useState } from "react";
 
 const NAV_ANNO = [
-  { href: "/anno/1", label: "1ª media" },
-  { href: "/anno/2", label: "2ª media" },
-  { href: "/anno/3", label: "3ª media" },
+  { href: "/anno/1", label: "Classe 1ª" },
+  { href: "/anno/2", label: "Classe 2ª" },
+  { href: "/anno/3", label: "Classe 3ª" },
 ];
 
 export default function SiteHeader() {

@@ -90,7 +90,7 @@ export default function HomePage() {
                   href="/anno/1"
                   className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-800 hover:border-slate-500"
                 >
-                  Inizia dalla 1ª media →
+                  Inizia dalla Classe 1ª →
                 </Link>
                 <a
                   href="https://eduwiki-tecnologia.vercel.app"
@@ -111,8 +111,8 @@ export default function HomePage() {
                   href={`/anno/${anno}`}
                   className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:p-6"
                 >
+                  <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Classe</div>
                   <div className="text-3xl font-black text-slate-950 sm:text-4xl">{anno}<span className="text-lg font-bold text-slate-400">ª</span></div>
-                  <div className="mt-0.5 text-xs font-semibold text-slate-500">media</div>
                   <div className="mt-4 text-2xl font-black text-emerald-700">{mcs.length}</div>
                   <div className="text-xs font-medium text-slate-500">MC</div>
                 </Link>
@@ -185,7 +185,7 @@ export default function HomePage() {
           {years.map(({ anno, mcs }) => (
             <div key={anno} className="mb-10 last:mb-0">
               <div className="mb-4 flex items-center justify-between">
-                <h2 className="text-xl font-black sm:text-2xl">{anno}ª media</h2>
+                <h2 className="text-xl font-black sm:text-2xl">Classe {anno}ª</h2>
                 <Link href={`/anno/${anno}`} className="text-sm font-bold text-emerald-700 hover:text-emerald-900">
                   Vedi tutto →
                 </Link>

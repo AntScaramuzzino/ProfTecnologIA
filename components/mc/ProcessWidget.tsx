@@ -87,7 +87,7 @@ export default function ProcessWidget({ titolo, steps, areaHex }: ProcessWidgetP
                   </span>
                   {/* Titolo */}
                   <span
-                    className={`text-xs font-bold leading-tight ${
+                    className={`text-sm font-bold leading-tight ${
                       isActive ? "text-blue-900" : isVisited ? "text-emerald-800" : "text-slate-700"
                     }`}
                   >
@@ -127,20 +127,20 @@ export default function ProcessWidget({ titolo, steps, areaHex }: ProcessWidgetP
               </div>
 
               <div className="flex items-start gap-2">
-                <span className="text-xs font-bold text-slate-400 w-14 flex-shrink-0 mt-0.5">Chi:</span>
+                <span className="text-sm font-semibold text-slate-400 w-16 flex-shrink-0 mt-0.5">Chi:</span>
                 <span className="text-sm font-semibold text-slate-700">{step.attore}</span>
               </div>
 
               {step.impatto && (
                 <div className="flex items-start gap-2">
-                  <span className="text-xs font-bold text-slate-400 w-14 flex-shrink-0 mt-0.5">Impatto:</span>
+                  <span className="text-sm font-semibold text-slate-400 w-16 flex-shrink-0 mt-0.5">Impatto:</span>
                   <span className="text-sm text-slate-600">{step.impatto}</span>
                 </div>
               )}
 
               {step.domanda && (
                 <div className="mt-2 rounded-lg border border-yellow-200 bg-yellow-50 px-3 py-2">
-                  <p className="text-xs font-black text-yellow-700 mb-0.5">Domanda riflessiva</p>
+                  <p className="text-sm font-black text-yellow-700 mb-0.5">Domanda riflessiva</p>
                   <p className="text-sm italic text-yellow-900">{step.domanda}</p>
                 </div>
               )}
@@ -154,7 +154,7 @@ export default function ProcessWidget({ titolo, steps, areaHex }: ProcessWidgetP
             <p className="text-sm font-bold text-blue-800">
               ✅ Hai esplorato tutte le fasi del ciclo tecnologico.
             </p>
-            <p className="mt-1 text-xs text-blue-600">
+            <p className="mt-1 text-sm text-blue-600">
               Ora prova a compilare il passaporto tecnologico con un oggetto reale.
             </p>
           </div>
