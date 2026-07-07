@@ -153,17 +153,16 @@ I campi `prerequisiti` e `compito_realta` sono obbligatori nelle MC dalla versio
 
 ## 6. I 5 AGENTI — RUOLI E CONFINI
 
-### AGENTE CURATORE
-- **Cosa fa:** monitora e raccoglie nuove fonti (articoli, video, paper) e le aggiunge ai notebook NotebookLM appropriati. Ricerca video YouTube da fonti prioritarie (case editrici, Geopop, insegnanti SSIG, aziende e consorzi) per ogni MC.
-- **Non fa:** sintetizza, non genera contenuti didattici.
-- **Trigger:** periodico (settimanale) o su richiesta esplicita.
-- **Output:** lista di fonti aggiunte (NB-TESTI | NB-VIDEO | NB-ARTICOLI) + file `data/videos/[MC-ID].json`.
+### AGENTE CURATORE *(futuro opzionale — non operativo)*
+- **Cosa fa (progettato):** monitora e raccoglie nuove fonti (articoli, video, paper) e le aggiunge ai notebook NotebookLM appropriati. Ricerca video YouTube da fonti prioritarie per ogni MC.
+- **Stato attuale:** NB-VIDEO e NB-ARTICOLI non esistono; NB-TESTI ha solo `CATALOGO_LIBRI.md` senza contenuti caricati. I PDF editoriali (Paci, Hypertech) non sono stati indicizzati in NotebookLM.
+- **Output (se operativo):** lista di fonti + file `data/videos/[MC-ID].json`.
 
-### AGENTE SINTETIZZATORE
-- **Cosa fa:** interroga NotebookLM in modalità asincrona, estrae output (brief, quiz, mappe, flashcard) e li formatta secondo lo schema MC.
-- **Non fa:** non crea infografiche, non interagisce con lo studente.
-- **Modalità:** NotebookLM NON ha API in tempo reale — opera sempre in batch/asincrono.
-- **Output:** asset JSON strutturati depositati in `04_CONTENUTI/`.
+### AGENTE SINTETIZZATORE *(futuro opzionale — non eseguibile)*
+- **Cosa fa (progettato):** interroga NotebookLM in modalità asincrona, estrae output (brief, quiz, mappe, flashcard) e li formatta secondo lo schema MC.
+- **Stato attuale:** `sintetizzatore.py` richiede credenziali NotebookLM + Notion che non esistono. Non è mai stato eseguito. I quiz, le flashcard e il microlearning delle 52 MC sono stati prodotti via **Claude API in batch direttamente in `05_APP/tecnologia-sito-web/data/`** — non attraverso questa pipeline.
+- **Modalità futura:** NotebookLM NON ha API in tempo reale — opererebbe sempre in batch/asincrono.
+- **Output (se operativo):** asset JSON strutturati depositati in `04_CONTENUTI/`.
 
 ### AGENTE GENERATORE DI ASSET
 - **Cosa fa:** produce immagini AI (6 tipologie per MC con GPT Image 2 / Higgsfield), audio hook podcast (edge-tts voce it-IT-IsabellaNeural), script hook narrativi, quiz situazionali.
@@ -184,12 +183,32 @@ I campi `prerequisiti` e `compito_realta` sono obbligatori nelle MC dalla versio
 - **Non fa:** non genera contenuti, non raccoglie fonti.
 - **Output:** percorso JSON personalizzato per studente con MC ordinate e livello DigComp attuale.
 
-### Pipeline degli agenti
+### Pipeline reale v1 (operativa — luglio 2026)
+
+Questa è la pipeline effettivamente in produzione. Qualsiasi documento che descriva altro è superato.
+
+```
+Claude API (batch interattivo con autore)
+        ↓
+05_APP/tecnologia-sito-web/data/
+   ├── mc/           ← 52 JSON MC (fonte canonica strutturata)
+   ├── quiz/         ← 52 × 18 domande
+   ├── flashcards/   ← 52 × 18 card
+   └── microlearning/← 52 × process + checklist
+        ↓
+next build → static export (out/)
+        ↓
+GitHub Pages / Vercel / Netlify
+```
+
+**Fonte canonica (SSOT):** `05_APP/tecnologia-sito-web/data/` + `public/assets/` — non Notion, non Airtable, non NotebookLM.
+
+### Pipeline aspirazionale v2 (futura — non implementata)
 
 ```
 Agente Curatore         → fonti, video YouTube per MC
         ↓
-Agente Sintetizzatore   → asset JSON strutturati
+Agente Sintetizzatore   → asset JSON strutturati (richiede NB + Notion)
         ↓
 Agente Generatore Asset → immagini AI, audio, quiz, script
         ↓
@@ -265,8 +284,8 @@ Agente Personalizzatore → percorso personalizzato studente
 - I contenuti di livello Foundation (F) devono essere accessibili anche a studenti con BES lievi.
 
 ### Vincoli tecnici da non violare
-- NotebookLM non è interrogabile via API in tempo reale. Opera sempre in modalità batch.
-- Il Layer 2 (Notion o Airtable) è il punto di verità per i contenuti strutturati — non il file system.
+- **SSOT:** la fonte canonica di tutti i contenuti consumati dall'app è `05_APP/tecnologia-sito-web/data/`. Notion, Airtable e NotebookLM non sono attivi come sistemi di verità — non esistono come layer strutturati in questo progetto. Non fare riferimento a "Layer 2" come punto di verità: è un'architettura progettata, non costruita.
+- NotebookLM non è interrogabile via API in tempo reale. Se mai venisse implementato, opererebbe sempre in modalità batch/asincrona.
 - Non aggiungere MC oltre le 52 previste (target aggiornato da 48 a 52 — vedi INDICE_ProfTecnologIA_v1.0 §5.1) senza prima aggiornare il documento architetturale.
 - Non modificare la progressione tematica per anno (1ª = Materiali, 2ª = Alimentazione+Città, 3ª = Energia+Comunicazioni) — è una scelta editoriale di Antonio Scaramuzzino.
 
@@ -343,18 +362,20 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 | 2 | Guida operativa per Agente CARBLE-CDD (workflow validazione + report) | ⬜ Da fare |
 | 3 | Guida operativa NotebookLM (set-up 3 notebook + ingestion) | ⬜ Da fare |
 
-### Sistema agenti e NotebookLM
+### Sistema agenti e NotebookLM *(pipeline v2 — futuro opzionale, non prioritario)*
+
+> **Nota (luglio 2026):** i contenuti delle 52 MC sono stati prodotti via Claude API batch e risiedono in `05_APP/tecnologia-sito-web/data/`. NotebookLM e Notion non sono operativi. Le task qui sotto si attivano solo se si decide di implementare la pipeline v2.
 
 | Priorità | Task | Stato |
 |----------|------|-------|
 | ✅ | Agente microlearning — prompt e README | ✅ Fatto — `02_AGENTI/agente_microlearning/` |
-| ✅ | Script Python Agente Sintetizzatore | ✅ Fatto — `sintetizzatore.py` e `notion_setup.py` presenti (non testati in produzione) |
-| ✅ | NB-TESTI catalogo libri | ✅ Parziale — `CATALOGO_LIBRI.md` presente; caricamento Paci + Hypertech ⬜ |
-| 2 | Caricare Paci + Hypertech su NB-TESTI | ⬜ Da fare |
-| 2 | Creare NB-VIDEO con URL YouTube selezionati per area | ⬜ Da fare |
-| 2 | Creare NB-ARTICOLI con feed innovazione | ⬜ Da fare |
-| 3 | Parser NotebookLM → schema MC v2.0 | ⬜ Da fare |
-| 3 | Connettore verso Notion (Layer 2) | ⬜ Da fare |
+| ⏸️ | Script Python Agente Sintetizzatore | ⏸️ Non eseguibile — `sintetizzatore.py` presente ma richiede credenziali NB + Notion mai configurate |
+| ⏸️ | NB-TESTI catalogo libri | ⏸️ Parziale — `CATALOGO_LIBRI.md` presente; caricamento Paci + Hypertech bloccato (PDF editoriali rimossi da git per copyright) |
+| F | Caricare Paci + Hypertech su NB-TESTI | 🔮 Futuro opzionale |
+| F | Creare NB-VIDEO con URL YouTube selezionati per area | 🔮 Futuro opzionale |
+| F | Creare NB-ARTICOLI con feed innovazione | 🔮 Futuro opzionale |
+| F | Parser NotebookLM → schema MC v2.0 | 🔮 Futuro opzionale |
+| F | Connettore verso Notion | 🔮 Futuro opzionale — Notion non è e non è mai stato il Layer 2 attivo |
 
 ### App studenti
 
@@ -401,4 +422,4 @@ Aggiorna questo backlog ad ogni sessione di lavoro.
 
 ---
 
-*Ultima modifica: 2026-07-07 — Sessione 3: quiz+flashcard rigenerati per 6 MC con DM 183/2024 EV (MC-DIG-1-02, MC-DIG-2-02, MC-DIG-2-04, MC-DIG-3-02, MC-COM-3-06, MC-COM-3-02) ✅ · LC.nota aggiornato in 22 MC ✅ · EC.nota aggiornato in 4 MC ✅ · contatori quiz/flashcard/microlearning aggiornati a 52 MC · CLAUDE.md v1.3*
+*Ultima modifica: 2026-07-08 — Sessione 4 (audit e allineamento documentazione): pipeline reale v1 documentata in §6 ✅ · Agente Sintetizzatore e Curatore retrocessi a "futuro opzionale" ✅ · regola falsa "Layer 2 è punto di verità" rimossa da §9 ✅ · SSOT dichiarato come `05_APP/tecnologia-sito-web/data/` ✅ · backlog NB/Notion marcato come futuro opzionale ✅ · PNG→WebP (331 immagini, -92%) ✅ · MCImageCarousel con lightbox e touch swipe ✅ · root repo history rewrite in corso · CLAUDE.md v1.4*
