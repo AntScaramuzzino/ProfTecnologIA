@@ -359,16 +359,16 @@ export function getMCMicrolearningInteractives(mcId: string): MicrolearningInter
 }
 
 function assetRank(name: string): number {
-  // Rank 0 — infografiche (migliore per card hero e dettaglio)
-  if (name.includes("infografica") || name.includes("img2-infografica")) return 0;
-  // Rank 1 — immagini fotorealistiche AI e illustrazioni (hero visivo)
+  // Rank 0 — fotorealistica AI (hero principale della MC)
   if (name.includes("ai-fotorealistica") || name.includes("img1-soggetto")
-      || name.includes("illustrazione") || name.includes("soggetto_")) return 1;
-  // Rank 2 — contesto documentaristico
-  if (name.includes("ai-contesto") || name.includes("img3-contesto")) return 2;
-  // Rank 3 — immagini da testo e diagrammi
-  if (name.includes("immagine_da_md") || name.includes("ciclo") || name.includes("diagram")) return 3;
-  // Rank 4 — ritratti professione e altro
+      || name.includes("illustrazione") || name.includes("soggetto_")) return 0;
+  // Rank 1 — contesto documentaristico
+  if (name.includes("ai-contesto") || name.includes("img3-contesto")) return 1;
+  // Rank 2 — immagini da testo e diagrammi
+  if (name.includes("immagine_da_md") || name.includes("ciclo") || name.includes("diagram")) return 2;
+  // Rank 3 — infografiche (mostrate in galleria, non come hero)
+  if (name.includes("infografica") || name.includes("img2-infografica")) return 3;
+  // Rank 4 — ritratti professione, mindmap e altro
   return 4;
 }
 
