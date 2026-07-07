@@ -14,12 +14,18 @@ interface PopoverState {
   label: string;
 }
 
+interface PopoverPos {
+  top: number;
+  left: number;
+}
+
 export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProps) {
   const [popover, setPopover] = useState<PopoverState>({
     visible: false,
     entry: null,
     label: "",
   });
+  const [pos, setPos] = useState<PopoverPos>({ top: 0, left: 0 });
   const tagRef = useRef<HTMLButtonElement>(null);
   const popoverRef = useRef<HTMLDivElement>(null);
   const entry = cercaCompetenza(competenza);
@@ -32,6 +38,14 @@ export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProp
     if (popover.visible) {
       close();
     } else {
+      // Calcola posizione fixed per sfuggire a qualsiasi overflow-hidden antenato
+      if (tagRef.current) {
+        const rect = tagRef.current.getBoundingClientRect();
+        const POPOVER_W = 320;
+        const MARGIN = 8;
+        const left = Math.max(MARGIN, Math.min(rect.left, window.innerWidth - POPOVER_W - MARGIN));
+        setPos({ top: rect.bottom + MARGIN, left });
+      }
       setPopover({ visible: true, entry, label: competenza });
     }
   };
@@ -61,6 +75,14 @@ export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProp
     };
     document.addEventListener("keydown", handle);
     return () => document.removeEventListener("keydown", handle);
+  }, [popover.visible, close]);
+
+  // Chiudi se la pagina scrolla (il popover fixed non segue il bottone)
+  useEffect(() => {
+    if (!popover.visible) return;
+    const handle = () => close();
+    window.addEventListener("scroll", handle, { passive: true });
+    return () => window.removeEventListener("scroll", handle);
   }, [popover.visible, close]);
 
   // Stile del tag — con definizione = cliccabile e sottolineato tratteggiato
@@ -97,19 +119,18 @@ export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProp
             onClick={close}
           />
 
-          {/* Popover */}
+          {/* Popover — position:fixed per sfuggire a overflow-hidden del genitore */}
           <div
             ref={popoverRef}
             role="dialog"
             aria-label={`Definizione: ${popover.label}`}
-            className={[
-              "absolute z-50 w-80 max-w-[calc(100vw-2rem)] rounded-2xl border border-slate-200 bg-white shadow-xl",
-              // posizionamento sotto il tag, allineato a sinistra
-              "left-0 top-full mt-2",
-              // su mobile: fixed centrato
-              "sm:absolute sm:left-0 sm:top-full",
-            ].join(" ")}
-            style={{ maxHeight: "80vh", overflowY: "auto" }}
+            className="fixed z-50 w-80 rounded-2xl border border-slate-200 bg-white shadow-xl"
+            style={{
+              top: pos.top,
+              left: pos.left,
+              maxHeight: "80vh",
+              overflowY: "auto",
+            }}
           >
             {/* Header */}
             <div
