@@ -81,6 +81,8 @@ export default function MCImageCarousel({ visuals, mcTitolo }: MCImageCarouselPr
             src={selected.src}
             alt={`${selected.label} — ${mcTitolo}`}
             className="max-h-[480px] w-full object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+            loading="eager"
+            decoding="async"
           />
           <span className="absolute bottom-3 right-3 rounded-full bg-black/40 p-1.5 text-white opacity-0 transition-opacity group-hover:opacity-100" aria-hidden="true">
             <ZoomIcon />
@@ -124,6 +126,8 @@ export default function MCImageCarousel({ visuals, mcTitolo }: MCImageCarouselPr
           className="max-h-[480px] w-full object-contain transition-all duration-300"
           onClick={openLightbox}
           role="img"
+          loading="eager"
+          decoding="async"
         />
 
         {/* Zoom hint */}
@@ -303,6 +307,8 @@ function Lightbox({
           alt={`${asset.label} — ${mcTitolo}`}
           className="max-h-full max-w-full object-contain"
           style={{ userSelect: "none" }}
+          loading="eager"
+          decoding="async"
         />
 
         {total > 1 && (

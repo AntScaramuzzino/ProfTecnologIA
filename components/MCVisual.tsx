@@ -24,6 +24,8 @@ export default function MCVisual({ asset, alt, className = "" }: MCVisualProps) 
         src={asset.src}
         alt={descriptiveAlt}
         className="h-full w-full max-w-full rounded-lg object-contain"
+        loading="lazy"
+        decoding="async"
       />
       <figcaption className="mt-2 text-xs text-slate-500">
         {asset.label}
