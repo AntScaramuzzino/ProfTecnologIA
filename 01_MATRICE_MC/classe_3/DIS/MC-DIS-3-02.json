@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Seguire un tutorial guidato passo-passo per costruire un oggetto pre-scelto. Limitarsi a 2 operazioni booleane.",
     "avanzato": "Progettare autonomamente l'oggetto partendo da un brief di design (vincoli dimensionali + funzionali), iterare 2 versioni e argomentare le modifiche apportate."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.6,
+    "durata_secondi": 36
+  },
+  "professione_futura": {
+    "titolo": "Progettista CAD/CAM Industriale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Traduce idee progettuali in modelli digitali per la produzione industriale.",
+    "competenze_chiave": [
+      "CAD 3D",
+      "prototipazione rapida",
+      "disegno tecnico",
+      "tolleranze geometriche"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "CAD (Computer-Aided Design)",
+      "en": "CAD (Computer-Aided Design)",
+      "def": "Software professionale per la progettazione tecnica al computer; sostituisce matita e righello nei laboratori"
+    },
+    {
+      "it": "modellazione 3D",
+      "en": "3D modelling",
+      "def": "Creazione di rappresentazioni tridimensionali di oggetti al computer tramite geometrie, superfici o solidi"
+    },
+    {
+      "it": "stampa 3D",
+      "en": "3D printing / additive manufacturing",
+      "def": "Tecnologia che costruisce oggetti fisici strato per strato da un modello digitale 3D"
+    },
+    {
+      "it": "file STL",
+      "en": "STL file",
+      "def": "Formato di file standard per modelli 3D destinati alla stampa 3D; descrive la superficie come triangoli"
+    },
+    {
+      "it": "prototipazione rapida",
+      "en": "rapid prototyping",
+      "def": "Produzione veloce di prototipi fisici da modelli digitali per testare forma, funzione ed ergonomia"
+    },
+    {
+      "it": "design parametrico",
+      "en": "parametric design",
+      "def": "Approccio in cui la forma di un oggetto è definita da parametri modificabili; cambiare un valore cambia l'intera geometria"
+    },
+    {
+      "it": "slicer",
+      "en": "slicer (slicing software)",
+      "def": "Software che converte un modello 3D in istruzioni strato per strato (G-code) leggibili dalla stampante 3D"
+    }
+  ],
+  "uda_collegata": "Dal modello digitale all'oggetto reale: progettare e stampare in 3D un accessorio utile per la vita scolastica (Tecnologia + Matematica + Arte + Scienze)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "Progettista CAD/CAM Industriale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Traduce idee progettuali in modelli digitali per la produzione industriale.",
+      "competenze_chiave": [
+        "CAD 3D",
+        "prototipazione rapida",
+        "disegno tecnico",
+        "tolleranze geometriche"
+      ]
+    },
+    {
+      "titolo": "Rapid Prototyping Specialist / Maker Educator",
+      "orizzonte": "2028",
+      "descrizione_breve": "Prototipa rapidamente prodotti e componenti combinando CAD parametrico, stampa 3D FDM/SLA e taglio laser, lavorando in ambienti FabLab e makespace.",
+      "competenze_chiave": [
+        "Fusion 360",
+        "stampa 3D FDM/SLA",
+        "taglio laser",
+        "iterazione rapida",
+        "documentazione maker"
+      ]
+    }
+  ]
 }

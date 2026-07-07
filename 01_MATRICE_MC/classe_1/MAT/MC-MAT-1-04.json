@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente si riconosce come agente attivo nella gestione sostenibile dei rifiuti"
+      "nota": "Lo studente si riconosce come agente attivo nella gestione sostenibile dei rifiuti. Analizzare i propri comportamenti di smaltimento è metacognizione applicata: lo studente porta a coscienza abitudini automatiche, ne valuta la coerenza con valori dichiarati e pianifica cambiamenti concreti."
     },
     "EV": {
       "ref": "SDG 11 — Città e comunità sostenibili; SDG 12 — Consumo responsabile",
@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Concentrarsi solo sulle 3 categorie principali (plastica/carta/indifferenziato). Usare immagini degli oggetti invece dei nomi.",
     "avanzato": "Calcolare il tasso di raccolta differenziata della classe per una settimana e confrontarlo con il dato comunale."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.6,
+    "durata_secondi": 219
+  },
+  "professione_futura": {
+    "titolo": "Supply Chain Sustainability Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
+    "competenze_chiave": [
+      "analisi ciclo di vita",
+      "logistica sostenibile",
+      "reportistica ESG",
+      "economia circolare"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "rifiuto urbano",
+      "en": "municipal solid waste",
+      "def": "Rifiuto prodotto dalle abitazioni e da attività simili; gestito dal servizio di raccolta del Comune"
+    },
+    {
+      "it": "raccolta differenziata",
+      "en": "separate waste collection",
+      "def": "Raccolta dei rifiuti separata per tipologia di materiale per consentirne il riciclo specifico"
+    },
+    {
+      "it": "riciclaggio",
+      "en": "recycling",
+      "def": "Processo di trasformazione di un rifiuto in materia prima secondaria per produrre nuovi oggetti"
+    },
+    {
+      "it": "discarica",
+      "en": "landfill",
+      "def": "Sito controllato dove vengono depositati i rifiuti non altrimenti smaltibili; ultima scelta nella gerarchia"
+    },
+    {
+      "it": "gerarchia dei rifiuti",
+      "en": "waste hierarchy",
+      "def": "Ordine di priorità: prevenzione → riuso → riciclo → recupero → smaltimento"
+    },
+    {
+      "it": "microplastica",
+      "en": "microplastic",
+      "def": "Frammento di plastica inferiore a 5 mm che contamina oceani, suoli e organismi viventi"
+    },
+    {
+      "it": "rifiuto speciale",
+      "en": "special waste",
+      "def": "Rifiuto prodotto da attività industriali, artigianali o sanitarie, soggetto a norme di smaltimento specifiche"
+    }
+  ],
+  "uda_collegata": "Zero rifiuti a scuola: analisi e proposta per ridurre i rifiuti nella nostra classe (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 12,
+  "professioni_future": [
+    {
+      "titolo": "Supply Chain Sustainability Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
+      "competenze_chiave": [
+        "analisi ciclo di vita",
+        "logistica sostenibile",
+        "reportistica ESG",
+        "economia circolare"
+      ]
+    },
+    {
+      "titolo": "Waste-to-Resource Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Coordina il recupero e la valorizzazione dei rifiuti industriali e urbani, trasformandoli in risorse secondarie attraverso processi di upcycling e trattamento specializzato.",
+      "competenze_chiave": [
+        "gestione rifiuti",
+        "normativa RENTRI",
+        "upcycling",
+        "biogas e compost",
+        "economia circolare"
+      ]
+    }
+  ]
 }

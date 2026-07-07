@@ -16,8 +16,8 @@
       "nota": "Lo studente crea e condivide una presentazione digitale argomentata su un tema di economia sostenibile"
     },
     "EC": {
-      "ref": "Ideas and opportunities / Sustainability",
-      "nota": "Lo studente valuta modelli economici alternativi (economia circolare, B-Corp) rispetto al modello lineare dominante"
+      "ref": "Ideas and opportunities / Sustainability; Valuing ideas; Into action / Planning; Ethical and sustainable thinking",
+      "nota": "Lo studente valuta modelli economici alternativi (economia circolare, B-Corp, cooperative) rispetto al modello lineare dominante. La valutazione critica dei modelli di impresa è la competenza EntreComp più avanzata: lo studente non solo capisce come funzionano le organizzazioni, ma impara a immaginare come potrebbero funzionare diversamente — creatività imprenditoriale applicata alla sostenibilità come scelta di valore, non solo come vincolo normativo."
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire i 5 prodotti e i link già trovati ai prodotti alternativi. Lo studente deve solo confrontare prezzi e descrivere gli impatti.",
     "avanzato": "Produrre un vero volantino per un GAS della scuola con dati, prodotti scelti e argomentazione della scelta da distribuire ai genitori."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.4,
+    "durata_secondi": 264
+  },
+  "professione_futura": {
+    "titolo": "Entrepreneur / Innovation Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Crea e gestisce startup o progetti di innovazione in ambito tecnologico.",
+    "competenze_chiave": [
+      "business model canvas",
+      "design thinking",
+      "fundraising",
+      "AgileScrum"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "globalizzazione",
+      "en": "globalization",
+      "def": "Processo di crescente integrazione economica, culturale e politica tra i paesi del mondo"
+    },
+    {
+      "it": "delocalizzazione",
+      "en": "offshoring / relocation",
+      "def": "Trasferimento di attività produttive di un'impresa in paesi con costi del lavoro o risorse più vantaggiosi"
+    },
+    {
+      "it": "economia circolare",
+      "en": "circular economy",
+      "def": "Modello economico che mantiene prodotti e materiali in uso il più a lungo possibile, riducendo i rifiuti a zero"
+    },
+    {
+      "it": "commercio equo e solidale",
+      "en": "fair trade",
+      "def": "Sistema commerciale che garantisce prezzi equi ai produttori dei paesi in via di sviluppo, migliorandone le condizioni di vita"
+    },
+    {
+      "it": "green economy",
+      "en": "green economy",
+      "def": "Economia a basse emissioni di carbonio, efficiente nell'uso delle risorse e inclusiva; crea lavori verdi"
+    },
+    {
+      "it": "materia prima critica",
+      "en": "critical raw material",
+      "def": "Risorsa essenziale per l'economia con rischio elevato di approvvigionamento (es. cobalto per le batterie)"
+    },
+    {
+      "it": "diritti del lavoro",
+      "en": "labour rights",
+      "def": "Diritti fondamentali dei lavoratori: salario dignitoso, sicurezza, contratto, assenza di discriminazioni"
+    }
+  ],
+  "uda_collegata": "Il prezzo nascosto delle cose: dalla batteria del telefono al cioccolato, tracciare l'impatto globale dei nostri consumi (Tecnologia + Scienze + Matematica + Storia + Educazione Civica)",
+  "sdg_principale": 8,
+  "professioni_future": [
+    {
+      "titolo": "Entrepreneur / Innovation Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Crea e gestisce startup o progetti di innovazione in ambito tecnologico.",
+      "competenze_chiave": [
+        "business model canvas",
+        "design thinking",
+        "fundraising",
+        "AgileScrum"
+      ]
+    },
+    {
+      "titolo": "Corporate Sustainability Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa e implementa la strategia ESG di un'azienda, gestendo rendicontazione non finanziaria (GRI, CSRD), relazioni con stakeholder e obiettivi Net Zero.",
+      "competenze_chiave": [
+        "GRI Standards",
+        "CSRD",
+        "carbon accounting",
+        "stakeholder engagement",
+        "obiettivi SBTi"
+      ]
+    }
+  ]
 }

@@ -24,8 +24,8 @@
       "nota": "Lo studente mette in discussione le fonti invece di accettarle acriticamente"
     },
     "EV": {
-      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-      "nota": "Saper distinguere informazione verificata da disinformazione è esercizio di cittadinanza democratica"
+      "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D1; L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "Traguardo D1 del D.M. 183/2024 (prescrittivo per il primo ciclo): 'valutare criticamente dati e notizie in rete, individuando fonti attendibili e modalità di ricerca adeguate'. Saper distinguere informazione verificata da disinformazione è esercizio fondamentale di cittadinanza democratica."
     }
   },
   "outputApp": {
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire le 3 fonti già selezionate e la checklist pre-stampata. Lo studente compila solo i punteggi.",
     "avanzato": "Cercare autonomamente le 3 fonti, applicare la checklist e scrivere un paragrafo critico sulle differenze trovate."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.5,
+    "durata_secondi": 212
+  },
+  "professione_futura": {
+    "titolo": "Cybersecurity Analyst",
+    "orizzonte": "2030",
+    "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
+    "competenze_chiave": [
+      "sicurezza informatica",
+      "analisi vulnerabilità",
+      "GDPR",
+      "ethical hacking"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "motore di ricerca",
+      "en": "search engine",
+      "def": "Strumento che indicizza e ordina le pagine web in base alla pertinenza rispetto alla ricerca"
+    },
+    {
+      "it": "indice web",
+      "en": "web index",
+      "def": "Database gigantesco di pagine web costruito dai crawler e usato per rispondere alle ricerche"
+    },
+    {
+      "it": "affidabilità della fonte",
+      "en": "source reliability",
+      "def": "Grado di credibilità di un sito o autore valutato tramite criteri verificabili"
+    },
+    {
+      "it": "notizia falsa",
+      "en": "fake news",
+      "def": "Informazione deliberatamente falsa o fuorviante diffusa come se fosse vera"
+    },
+    {
+      "it": "diritto d'autore",
+      "en": "copyright",
+      "def": "Tutela legale che protegge le opere creative dall'uso non autorizzato"
+    },
+    {
+      "it": "verifica delle fonti",
+      "en": "fact-checking",
+      "def": "Processo di controllo della veridicità di un'informazione attraverso fonti indipendenti"
+    },
+    {
+      "it": "operatori di ricerca",
+      "en": "search operators",
+      "def": "Comandi speciali (es. site:, filetype:, \"\") che rendono le ricerche più precise e mirate"
+    }
+  ],
+  "uda_collegata": "Vero o falso? Come orientarsi nell'informazione digitale (Tecnologia + Italiano + Educazione Civica)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "Cybersecurity Analyst",
+      "orizzonte": "2030",
+      "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
+      "competenze_chiave": [
+        "sicurezza informatica",
+        "analisi vulnerabilità",
+        "GDPR",
+        "ethical hacking"
+      ]
+    },
+    {
+      "titolo": "Information Literacy Specialist / Educatore ai Media",
+      "orizzonte": "2028",
+      "descrizione_breve": "Sviluppa programmi di educazione all'uso critico delle informazioni online, con focus su disinformazione, verifica delle fonti e pensiero critico digitale.",
+      "competenze_chiave": [
+        "media literacy",
+        "fact-checking",
+        "progettazione educativa",
+        "valutazione fonti",
+        "pensiero critico"
+      ]
+    }
+  ]
 }

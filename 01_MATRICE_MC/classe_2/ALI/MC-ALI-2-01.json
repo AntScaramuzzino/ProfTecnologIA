@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente comprende il legame tra pratiche agricole e benessere collettivo"
+      "nota": "Lo studente comprende il legame tra pratiche agricole e benessere collettivo, ricostruendo la filiera dal campo alla tavola. La mappa della filiera è un esercizio di pensiero sistemico e di imparare a imparare: lo studente organizza concetti complessi in reti di relazioni e trasferisce questo schema interpretativo ad altri domini."
     },
     "EV": {
       "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
@@ -34,7 +34,7 @@
     "visual": "Schema: convenzionale vs. biologico vs. idroponico — 3 colonne × 4 parametri.",
     "livelloDigComp": "F"
   },
-  "prerequisiti": null,
+  "prerequisiti": [],
   "tags": [
     "agronomia",
     "coltivazione",
@@ -51,5 +51,84 @@
   "note_didattiche": {
     "base": "Fornire la scheda di osservazione pre-strutturata con le colonne da compilare. Usare una pianta a crescita veloce (rucola).",
     "avanzato": "Confrontare due piante uguali cresciute in condizioni diverse (es. con e senza concime) e analizzare le differenze."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.9,
+    "durata_secondi": 232
+  },
+  "professione_futura": {
+    "titolo": "Food Technologist / Nutrizionista Industriale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+    "competenze_chiave": [
+      "sicurezza alimentare",
+      "HACCP",
+      "etichettatura",
+      "analisi nutrizionale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "fotosintesi clorofilliana",
+      "en": "photosynthesis",
+      "def": "Processo con cui le piante trasformano luce solare, CO₂ e acqua in glucosio e ossigeno"
+    },
+    {
+      "it": "suolo agricolo",
+      "en": "agricultural soil",
+      "def": "Strato superficiale della Terra ricco di minerali, sostanza organica e microrganismi che supporta le colture"
+    },
+    {
+      "it": "rotazione delle colture",
+      "en": "crop rotation",
+      "def": "Alternanza programmata di diverse colture sullo stesso terreno per mantenere la fertilità del suolo"
+    },
+    {
+      "it": "irrigazione",
+      "en": "irrigation",
+      "def": "Apporto artificiale di acqua alle colture per integrare le precipitazioni naturali insufficienti"
+    },
+    {
+      "it": "agricoltura biologica",
+      "en": "organic farming",
+      "def": "Sistema agricolo che esclude pesticidi e fertilizzanti chimici di sintesi, privilegiando metodi naturali"
+    },
+    {
+      "it": "coltura idroponica",
+      "en": "hydroponic cultivation",
+      "def": "Tecnica di coltivazione senza suolo in cui le radici crescono in soluzione nutriente acquosa"
+    },
+    {
+      "it": "nutrienti del suolo",
+      "en": "soil nutrients",
+      "def": "Elementi chimici (azoto, fosforo, potassio e altri) essenziali per la crescita delle piante"
+    }
+  ],
+  "uda_collegata": "Dal seme al piatto: progettare un orto scolastico e analizzarne il ciclo produttivo (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 2,
+  "professioni_future": [
+    {
+      "titolo": "Food Technologist / Nutrizionista Industriale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+      "competenze_chiave": [
+        "sicurezza alimentare",
+        "HACCP",
+        "etichettatura",
+        "analisi nutrizionale"
+      ]
+    },
+    {
+      "titolo": "Vertical Farming Specialist / Agronomo Indoor",
+      "orizzonte": "2030",
+      "descrizione_breve": "Gestisce coltivazioni idroponiche e aeroponiche in ambienti controllati (urban farm, container farm), ottimizzando luce LED, nutrienti e consumo idrico per produzioni ad alto resa.",
+      "competenze_chiave": [
+        "idroponica",
+        "sistemi LED grow",
+        "gestione nutrienti",
+        "clima controllato",
+        "agricoltura urbana"
+      ]
+    }
+  ]
 }

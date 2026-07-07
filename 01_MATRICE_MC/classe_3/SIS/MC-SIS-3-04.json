@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire i 5 prodotti già selezionati con i loghi già evidenziati. Lo studente deve solo cercare il significato di 3 certificazioni.",
     "avanzato": "Simulare un audit di qualità scolastico: definire 3 standard di qualità per la mensa scolastica e verificare se vengono rispettati attraverso osservazione diretta."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.8,
+    "durata_secondi": 45
+  },
+  "professione_futura": {
+    "titolo": "Entrepreneur / Innovation Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Crea e gestisce startup o progetti di innovazione in ambito tecnologico.",
+    "competenze_chiave": [
+      "business model canvas",
+      "design thinking",
+      "fundraising",
+      "AgileScrum"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "megatrend",
+      "en": "megatrend",
+      "def": "Tendenza di lungo periodo che trasforma profondamente la società, l'economia e il lavoro (es. automazione, invecchiamento)"
+    },
+    {
+      "it": "competenza trasversale",
+      "en": "transversal competence / soft skill",
+      "def": "Abilità non tecnica applicabile in contesti diversi: comunicazione, problem solving, lavoro di squadra, pensiero critico"
+    },
+    {
+      "it": "modello RIASEC",
+      "en": "RIASEC model (Holland model)",
+      "def": "Strumento di orientamento vocazionale che classifica personalità e professioni in 6 tipi: Realistico, Investigativo, Artistico, Sociale, Imprenditoriale, Convenzionale"
+    },
+    {
+      "it": "green jobs",
+      "en": "green jobs",
+      "def": "Professioni legate alla transizione ecologica: installatori fotovoltaico, tecnici efficienza energetica, esperti economia circolare"
+    },
+    {
+      "it": "STEM gap",
+      "en": "STEM gender gap",
+      "def": "Sottorappresentazione delle donne nelle carriere scientifiche, tecnologiche, ingegneristiche e matematiche"
+    },
+    {
+      "it": "portfolio delle competenze",
+      "en": "competence portfolio",
+      "def": "Raccolta documentata delle competenze, esperienze e progetti di una persona, usata per l'orientamento e la selezione"
+    },
+    {
+      "it": "automazione del lavoro",
+      "en": "work automation",
+      "def": "Sostituzione di attività lavorative umane con sistemi automatici o intelligenza artificiale"
+    }
+  ],
+  "uda_collegata": "Chi sarò da grande? Orientamento professionale attraverso l'analisi delle competenze del triennio e i megatrend del futuro del lavoro (Tecnologia + Italiano + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 12,
+  "professioni_future": [
+    {
+      "titolo": "Entrepreneur / Innovation Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Crea e gestisce startup o progetti di innovazione in ambito tecnologico.",
+      "competenze_chiave": [
+        "business model canvas",
+        "design thinking",
+        "fundraising",
+        "AgileScrum"
+      ]
+    },
+    {
+      "titolo": "Quality Manager / Responsabile Qualità",
+      "orizzonte": "2028",
+      "descrizione_breve": "Gestisce il sistema di gestione qualità (SGQ) aziendale secondo ISO 9001, coordinando audit interni, azioni correttive e la formazione del personale sui processi.",
+      "competenze_chiave": [
+        "ISO 9001:2015",
+        "audit interni",
+        "FMEA",
+        "statistical process control",
+        "gestione NC"
+      ]
+    }
+  ]
 }

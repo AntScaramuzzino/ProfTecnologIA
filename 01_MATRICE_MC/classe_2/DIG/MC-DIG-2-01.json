@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire il progetto Scratch con la struttura già impostata (1 domanda funzionante). Lo studente aggiunge solo le altre 4.",
     "avanzato": "Aggiungere livelli di difficoltà adattivi: le domande successive cambiano in base alle risposte precedenti."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.0,
+    "durata_secondi": 242
+  },
+  "professione_futura": {
+    "titolo": "Digital Literacy Educator",
+    "orizzonte": "2030",
+    "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+    "competenze_chiave": [
+      "DigComp 3.0",
+      "media literacy",
+      "cybersecurity base",
+      "formazione digitale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "pensiero computazionale",
+      "en": "computational thinking",
+      "def": "Approccio alla risoluzione di problemi che usa decomposizione, astrazione, riconoscimento di pattern e algoritmi"
+    },
+    {
+      "it": "algoritmo",
+      "en": "algorithm",
+      "def": "Sequenza finita di istruzioni precise e non ambigue per risolvere un problema o raggiungere un obiettivo"
+    },
+    {
+      "it": "variabile",
+      "en": "variable",
+      "def": "Contenitore con un nome che memorizza un valore che può cambiare durante l'esecuzione del programma"
+    },
+    {
+      "it": "ciclo (loop)",
+      "en": "loop",
+      "def": "Struttura di controllo che ripete un blocco di istruzioni finché una condizione è vera"
+    },
+    {
+      "it": "condizione (if/else)",
+      "en": "conditional statement",
+      "def": "Struttura che esegue istruzioni diverse a seconda che una condizione sia vera o falsa"
+    },
+    {
+      "it": "debug",
+      "en": "debugging",
+      "def": "Processo sistematico di ricerca e correzione degli errori (bug) in un programma"
+    },
+    {
+      "it": "evento",
+      "en": "event (event-driven programming)",
+      "def": "Azione dell'utente o del sistema (clic, tasto premuto, timer) che avvia l'esecuzione di un blocco di codice"
+    }
+  ],
+  "uda_collegata": "Un algoritmo per la nostra scuola: progettare in Scratch un gioco interattivo su un tema interdisciplinare (Tecnologia + Matematica + Arte)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "Digital Literacy Educator",
+      "orizzonte": "2030",
+      "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+      "competenze_chiave": [
+        "DigComp 3.0",
+        "media literacy",
+        "cybersecurity base",
+        "formazione digitale"
+      ]
+    },
+    {
+      "titolo": "Junior App Developer / Sviluppatore Mobile",
+      "orizzonte": "2028",
+      "descrizione_breve": "Sviluppa applicazioni mobile per Android e iOS usando framework cross-platform (Flutter, React Native), dalla progettazione UI al rilascio sugli store.",
+      "competenze_chiave": [
+        "Flutter/React Native",
+        "UI/UX mobile",
+        "API REST",
+        "Git",
+        "pubblicazione store"
+      ]
+    }
+  ]
 }

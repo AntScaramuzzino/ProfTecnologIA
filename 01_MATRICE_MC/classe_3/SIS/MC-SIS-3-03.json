@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire un problema già identificato e un BMC con 3 blocchi già compilati come esempio. Lo studente completa i 2 mancanti.",
     "avanzato": "Condurre 3 interviste reali con potenziali 'clienti' (compagni, insegnanti) per validare le ipotesi del BMC prima di presentarlo."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.7,
+    "durata_secondi": 44
+  },
+  "professione_futura": {
+    "titolo": "Business Analyst / Consulente Aziendale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Analizza processi aziendali e propone soluzioni per migliorare l'efficienza.",
+    "competenze_chiave": [
+      "analisi di processo",
+      "KPI",
+      "lean management",
+      "digital transformation"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "impresa",
+      "en": "enterprise / business",
+      "def": "Organizzazione economica che combina risorse per produrre beni o servizi con l'obiettivo di creare valore"
+    },
+    {
+      "it": "modello di business (BMC)",
+      "en": "business model (BMC)",
+      "def": "Rappresentazione di come un'organizzazione crea, distribuisce e cattura valore; include clienti, risorse e ricavi"
+    },
+    {
+      "it": "startup",
+      "en": "startup",
+      "def": "Impresa nascente ad alto potenziale di crescita, spesso tecnologica, che cerca di scalare rapidamente un modello di business innovativo"
+    },
+    {
+      "it": "metodo Lean Startup",
+      "en": "Lean Startup method",
+      "def": "Approccio imprenditoriale basato su cicli brevi build-measure-learn per validare idee con il minimo investimento"
+    },
+    {
+      "it": "imprenditoria sociale",
+      "en": "social entrepreneurship",
+      "def": "Attività imprenditoriale il cui obiettivo principale è generare valore sociale o ambientale oltre al profitto"
+    },
+    {
+      "it": "prototipo",
+      "en": "prototype / MVP (Minimum Viable Product)",
+      "def": "Versione minimale di un prodotto con le funzionalità essenziali per testarlo con i primi utenti reali"
+    },
+    {
+      "it": "forma giuridica",
+      "en": "legal form (business structure)",
+      "def": "Struttura legale che regola responsabilità, tassazione e governance di un'impresa (ditta individuale, SRL, cooperativa)"
+    }
+  ],
+  "uda_collegata": "La nostra piccola impresa: dalla Business Model Canvas al pitch di presentazione di un'idea per risolvere un problema scolastico reale (Tecnologia + Matematica + Italiano + Educazione Civica)",
+  "sdg_principale": 9,
+  "professioni_future": [
+    {
+      "titolo": "Business Analyst / Consulente Aziendale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Analizza processi aziendali e propone soluzioni per migliorare l'efficienza.",
+      "competenze_chiave": [
+        "analisi di processo",
+        "KPI",
+        "lean management",
+        "digital transformation"
+      ]
+    },
+    {
+      "titolo": "Startup Founder / Imprenditore Digitale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Fonda e sviluppa una startup innovativa, gestendo ideazione del prodotto, validazione con il mercato, fundraising e scaling, applicando metodologie lean e agili.",
+      "competenze_chiave": [
+        "lean startup",
+        "pitch deck",
+        "business model canvas",
+        "fundraising",
+        "product-market fit"
+      ]
+    }
+  ]
 }

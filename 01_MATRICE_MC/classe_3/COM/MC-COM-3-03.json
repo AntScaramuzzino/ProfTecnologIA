@@ -34,7 +34,10 @@
     "visual": "Confronto modale: grafico a bolle — X = velocità, Y = emissioni, dimensione bolla = costo.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": null,
+  "prerequisiti": [
+    "MC-COM-3-01",
+    "MC-COM-3-02"
+  ],
   "tags": [
     "trasporti",
     "mobilità sostenibile",
@@ -51,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire il sondaggio già predisposto e i fattori di emissione. Lo studente analizza i dati di una sola classe.",
     "avanzato": "Presentare il piano al Consiglio di Istituto come proposta concreta con dati, obiettivi e azioni da approvare."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.3,
+    "durata_secondi": 256
+  },
+  "professione_futura": {
+    "titolo": "Digital Communication Specialist",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
+    "competenze_chiave": [
+      "social media",
+      "content strategy",
+      "SEO",
+      "storytelling digitale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "trasporto sostenibile",
+      "en": "sustainable transport",
+      "def": "Sistema di mobilità che riduce emissioni di CO₂ e inquinanti, privilegiando mezzi a basso impatto ambientale"
+    },
+    {
+      "it": "logistica",
+      "en": "logistics",
+      "def": "Pianificazione e gestione del flusso di merci, informazioni e risorse dai punti di origine ai destinatari"
+    },
+    {
+      "it": "emissioni di CO₂",
+      "en": "CO₂ emissions",
+      "def": "Quantità di anidride carbonica prodotta da un veicolo o sistema di trasporto; misura principale dell'impatto climatico"
+    },
+    {
+      "it": "veicolo elettrico",
+      "en": "electric vehicle (EV)",
+      "def": "Veicolo alimentato da motori elettrici; zero emissioni dirette, ricaricato da rete elettrica o accumuli"
+    },
+    {
+      "it": "intermodalità",
+      "en": "intermodality",
+      "def": "Uso di più mezzi di trasporto in sequenza per lo stesso viaggio, ottimizzando efficienza e riduzione degli impatti"
+    },
+    {
+      "it": "mobilità condivisa",
+      "en": "shared mobility",
+      "def": "Sistema di trasporto basato sulla condivisione di veicoli (car sharing, bike sharing) per ridurre il numero di auto private"
+    },
+    {
+      "it": "alta velocità ferroviaria",
+      "en": "high-speed rail (HSR)",
+      "def": "Servizio ferroviario che supera i 250 km/h su infrastrutture dedicate; alternativa competitiva all'aereo su tratte medie"
+    }
+  ],
+  "uda_collegata": "Come arriviamo a scuola? Analisi della mobilità scolastica e proposta di piano di spostamento sostenibile (Tecnologia + Scienze + Matematica + Educazione Civica + Geografia)",
+  "sdg_principale": 11,
+  "professioni_future": [
+    {
+      "titolo": "Digital Communication Specialist",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
+      "competenze_chiave": [
+        "social media",
+        "content strategy",
+        "SEO",
+        "storytelling digitale"
+      ]
+    },
+    {
+      "titolo": "Autonomous Vehicle & Mobility Engineer",
+      "orizzonte": "2032",
+      "descrizione_breve": "Sviluppa sistemi di guida autonoma e gestisce la transizione verso la mobilità intelligente, integrando sensori LIDAR, algoritmi di navigazione e normative di sicurezza stradale.",
+      "competenze_chiave": [
+        "guida autonoma",
+        "LIDAR/radar/camera",
+        "simulazione CARLA",
+        "normativa UNECE",
+        "mobilità as a service"
+      ]
+    }
+  ]
 }

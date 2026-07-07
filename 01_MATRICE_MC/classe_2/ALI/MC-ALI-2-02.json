@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Problem solving",
-      "nota": "Lo studente spiega perché un metodo di conservazione funziona usando i principi fisici/chimici"
+      "nota": "Lo studente spiega perché un metodo di conservazione funziona usando i principi fisici e chimici alla base del deterioramento. Spiegare un fenomeno richiede di controllare la propria comprensione: lo studente individua lacune nel proprio modello mentale e le colma con dati verificabili — metacognizione applicata alla scienza."
     },
     "EV": {
       "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire la lista dei 10 alimenti e la tabella con le colonne da compilare. Concentrarsi solo su 3 metodi principali.",
     "avanzato": "Progettare una catena del freddo per un prodotto deperibile: dal produttore al consumatore, indicando ogni punto critico."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.9,
+    "durata_secondi": 232
+  },
+  "professione_futura": {
+    "titolo": "Agri-food Supply Chain Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+    "competenze_chiave": [
+      "tracciabilità filiera",
+      "logistica alimentare",
+      "certificazioni DOP/IGP",
+      "sostenibilità"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "conservazione degli alimenti",
+      "en": "food preservation",
+      "def": "Insieme di tecniche che prolungano la durata degli alimenti impedendo la crescita di microrganismi"
+    },
+    {
+      "it": "catena del freddo",
+      "en": "cold chain",
+      "def": "Sistema di trasporto e stoccaggio a temperatura controllata che mantiene intatti gli alimenti deperibili"
+    },
+    {
+      "it": "pastorizzazione",
+      "en": "pasteurization",
+      "def": "Trattamento termico a 72°C per 15 secondi che elimina i batteri patogeni mantenendo le proprietà nutritive"
+    },
+    {
+      "it": "sterilizzazione",
+      "en": "sterilization",
+      "def": "Trattamento termico intenso (>100°C) che elimina tutti i microrganismi, incluse le spore batteriche"
+    },
+    {
+      "it": "microrganismo patogeno",
+      "en": "pathogen microorganism",
+      "def": "Batterio, muffa o lievito capace di causare malattie se ingerito con il cibo in concentrazione sufficiente"
+    },
+    {
+      "it": "data di scadenza",
+      "en": "expiry date / best before date",
+      "def": "Indicazione sulla confezione che segnala quando l'alimento non è più sicuro o perde le sue caratteristiche ottimali"
+    },
+    {
+      "it": "fermentazione",
+      "en": "fermentation",
+      "def": "Trasformazione degli zuccheri ad opera di microrganismi (batteri o lieviti); base di yogurt, pane, formaggi, vino"
+    }
+  ],
+  "uda_collegata": "Dalla dispensa al laboratorio: tecniche di conservazione degli alimenti a confronto (Tecnologia + Scienze + Matematica)",
+  "sdg_principale": 2,
+  "professioni_future": [
+    {
+      "titolo": "Agri-food Supply Chain Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+      "competenze_chiave": [
+        "tracciabilità filiera",
+        "logistica alimentare",
+        "certificazioni DOP/IGP",
+        "sostenibilità"
+      ]
+    },
+    {
+      "titolo": "Quality Control Manager Agroalimentare",
+      "orizzonte": "2028",
+      "descrizione_breve": "Supervisiona i processi di controllo qualità negli impianti di produzione alimentare, gestendo certificazioni (ISO 22000, BRC, IFS) e prevenendo contaminazioni e non conformità.",
+      "competenze_chiave": [
+        "HACCP",
+        "ISO 22000",
+        "audit qualità",
+        "microbiologia applicata",
+        "tracciabilità prodotto"
+      ]
+    }
+  ]
 }

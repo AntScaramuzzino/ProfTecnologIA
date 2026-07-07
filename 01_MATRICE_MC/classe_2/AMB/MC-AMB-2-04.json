@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Systems thinking",
-      "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita"
+      "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita. Valutare materiali con criteri multipli (prestazioni, costo, impatto ambientale) è un esercizio di pensiero multi-criterio trasferibile a qualsiasi scelta complessa: imparare a pesare variabili in conflitto."
     },
     "EV": {
       "ref": "SDG 11 — Città sostenibili; SDG 13 — Lotta al cambiamento climatico",
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire la tabella con i parametri e i valori già inseriti per 3 materiali. Lo studente aggiunge solo il 4°.",
     "avanzato": "Calcolare approssimativamente la dispersione termica di una parete non isolata vs. isolata usando i valori di conduttività termica forniti."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.8,
+    "durata_secondi": 45
+  },
+  "professione_futura": {
+    "titolo": "Green Building Designer / Certificatore LEED",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+    "competenze_chiave": [
+      "LEED",
+      "efficienza energetica",
+      "materiali bio-based",
+      "BIM"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "bioedilizia",
+      "en": "green building / bioclimatic architecture",
+      "def": "Progettazione che sfrutta le risorse naturali (sole, vento, vegetazione) per ridurre il consumo energetico"
+    },
+    {
+      "it": "massa termica",
+      "en": "thermal mass",
+      "def": "Capacità di un materiale di assorbire e accumulare calore per rilasciarlo gradualmente (es. muri in pietra)"
+    },
+    {
+      "it": "trasmittanza termica",
+      "en": "thermal transmittance (U-value)",
+      "def": "Misura della dispersione di calore attraverso una parete; più è bassa, migliore è l'isolamento"
+    },
+    {
+      "it": "ventilazione naturale",
+      "en": "natural ventilation",
+      "def": "Rinnovo dell'aria in un edificio sfruttando differenze di pressione e temperatura senza impianti meccanici"
+    },
+    {
+      "it": "tetto verde",
+      "en": "green roof",
+      "def": "Copertura dell'edificio parzialmente ricoperta da vegetazione; isola termicamente e gestisce le acque piovane"
+    },
+    {
+      "it": "certificazione LEED",
+      "en": "LEED certification",
+      "def": "Sistema di certificazione internazionale (Leadership in Energy and Environmental Design) per edifici sostenibili"
+    },
+    {
+      "it": "orientamento solare",
+      "en": "solar orientation",
+      "def": "Posizionamento dell'edificio rispetto ai punti cardinali per massimizzare o minimizzare l'irraggiamento solare"
+    }
+  ],
+  "uda_collegata": "La nostra scuola consuma troppo? Progettare interventi bioclimatici per l'edificio scolastico (Tecnologia + Scienze + Matematica + Arte)",
+  "sdg_principale": 11,
+  "professioni_future": [
+    {
+      "titolo": "Green Building Designer / Certificatore LEED",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+      "competenze_chiave": [
+        "LEED",
+        "efficienza energetica",
+        "materiali bio-based",
+        "BIM"
+      ]
+    },
+    {
+      "titolo": "Green Building Consultant / Esperto Bioarchitettura",
+      "orizzonte": "2030",
+      "descrizione_breve": "Assiste progettisti e committenti nella scelta di materiali e sistemi costruttivi a basso impatto, supportando il raggiungimento di certificazioni LEED, Passive House e NZEB.",
+      "competenze_chiave": [
+        "LEED/BREEAM",
+        "Passive House",
+        "analisi ciclo vita edificio",
+        "comfort termico",
+        "acustica edilizia"
+      ]
+    }
+  ]
 }

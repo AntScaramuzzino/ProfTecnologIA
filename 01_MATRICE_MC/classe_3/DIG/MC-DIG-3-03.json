@@ -16,8 +16,8 @@
       "nota": "Lo studente raccoglie dati fisici reali tramite sensori, li organizza in formato strutturato e li analizza per trarne conclusioni"
     },
     "EC": {
-      "ref": "Ideas and opportunities / Creativity",
-      "nota": "Lo studente progetta un sistema di monitoraggio per un problema reale della scuola o della comunità"
+      "ref": "Ideas and opportunities / Creativity; Into action / Problem solving; Working with others / Mobilizing others",
+      "nota": "Lo studente progetta un sistema IoT di monitoraggio per un problema reale della scuola o della comunità. Questo è il prototipo più completo di attività imprenditoriale: individuazione di un problema reale (opportunità), ideazione creativa della soluzione, implementazione con risorse limitate, testing sul campo. EntreComp nella sua forma più autentica — la soluzione deve funzionare davvero, non solo in teoria."
     },
     "LC": {
       "ref": "Thinking / Problem solving",
@@ -62,8 +62,9 @@
     "titolo": "Il tuo quartiere respira — ma lo sai quanto bene?",
     "oggetto_reale": "una centralina meteo fai-da-te con micro:bit",
     "domanda_avvio": "Sai quanta CO2 c'è adesso nell'aria della tua aula — e se è abbastanza per stare svegli e concentrati?",
-    "durata_min": 3,
-    "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico."
+    "durata_min": 1.0,
+    "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico.",
+    "durata_secondi": 58
   },
   "professione_futura": {
     "titolo": "IoT Solutions Architect",
@@ -97,7 +98,37 @@
       "italiano": "flusso di dati",
       "inglese": "data stream",
       "pronuncia_ipa": "/ˈdeɪtə striːm/"
+    },
+    {
+      "italiano": "microcontrollore",
+      "inglese": "microcontroller",
+      "pronuncia_ipa": "/ˌmaɪkrəʊkənˈtrəʊlər/"
     }
   ],
-  "uda_collegata": null
+  "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+  "professioni_future": [
+    {
+      "titolo": "IoT Solutions Architect",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta sistemi di raccolta e analisi dati distribuiti (smart city, industria 4.0, agricoltura di precisione) che connettono sensori fisici al cloud per prendere decisioni automatizzate.",
+      "competenze_chiave": [
+        "programmazione embedded",
+        "protocolli di comunicazione IoT (MQTT, LoRa)",
+        "analisi dati in tempo reale",
+        "progettazione sistemi distribuiti"
+      ]
+    },
+    {
+      "titolo": "Embedded Systems Developer / Firmware Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa firmware per microcontrollori (Arduino, ESP32, STM32) che collegano sensori e attuatori al cloud IoT, ottimizzando consumo energetico e affidabilità.",
+      "competenze_chiave": [
+        "C/C++ embedded",
+        "RTOS",
+        "protocolli IoT (MQTT)",
+        "basso consumo",
+        "debug hardware"
+      ]
+    }
+  ]
 }

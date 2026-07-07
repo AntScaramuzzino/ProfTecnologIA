@@ -77,6 +77,13 @@
       "scienze": "Come questa MC si collega a Scienze (fisica, chimica, biologia). null se non rilevante.",
       "arte_geo_storia": "Come questa MC si collega ad Arte, Geografia o Storia. null se non rilevante.",
       "frase_ponte": "Una frase breve (max 15 parole) che mostra il link STEM in modo memorabile."
+    },
+    "immagine_esplora": {
+      "src": "/images/wiki/MC-[AREA]-[ANNO]-[NN]/nome-file.jpg",
+      "alt": "Descrizione accessibile dell'immagine (obbligatoria per WCAG)",
+      "caption": "Autore: Nome Cognome / Ente, via Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "wikimedia_url": "https://commons.wikimedia.org/wiki/File:nome-file.jpg"
     }
   },
   "regole_di_validazione": {

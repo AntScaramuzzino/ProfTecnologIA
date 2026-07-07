@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Critical thinking",
-      "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'"
+      "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'. Questa competenza epistemica è trasversale: lo studente costruisce criteri propri per valutare l'attendibilità delle fonti e li trasferisce oltre il contesto dei materiali, in qualsiasi campo informativo."
     },
     "EV": {
       "ref": "SDG 9 — Innovazione; SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
@@ -55,5 +55,84 @@
   "note_didattiche": {
     "base": "Fornire 3 prodotti già selezionati con le etichette analizzate. Lo studente confronta i dati già estratti.",
     "avanzato": "Progettare un esperimento semplice per testare la biodegradabilità in classe (interrare campioni, osservare per 2 settimane)."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.7,
+    "durata_secondi": 39
+  },
+  "professione_futura": {
+    "titolo": "Supply Chain Sustainability Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
+    "competenze_chiave": [
+      "analisi ciclo di vita",
+      "logistica sostenibile",
+      "reportistica ESG",
+      "economia circolare"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "fibra sintetica",
+      "en": "synthetic fibre",
+      "def": "Fibra tessile prodotta per sintesi chimica dal petrolio (es. nylon, poliestere, polipropilene)"
+    },
+    {
+      "it": "polimero",
+      "en": "polymer",
+      "def": "Molecola gigante formata da molte unità ripetute (monomeri); base di tutte le plastiche e fibre sintetiche"
+    },
+    {
+      "it": "plastica biodegradabile",
+      "en": "biodegradable plastic",
+      "def": "Plastica che si decompone in tempi brevi grazie all'azione di microrganismi, senza lasciare residui tossici"
+    },
+    {
+      "it": "materiale composito",
+      "en": "composite material",
+      "def": "Materiale formato da fibre ad alta resistenza (es. carbonio) incorporate in una matrice polimerica"
+    },
+    {
+      "it": "impermeabilità",
+      "en": "waterproofing / water resistance",
+      "def": "Capacità di un materiale di non lasciar passare l'acqua, ottenuta con trattamenti chimici (coating)"
+    },
+    {
+      "it": "impronta ecologica",
+      "en": "ecological footprint",
+      "def": "Misura dell'impatto ambientale di un prodotto o attività, calcolata in termini di risorse consumate e CO₂ emessa"
+    },
+    {
+      "it": "ciclo di vita",
+      "en": "life cycle assessment (LCA)",
+      "def": "Analisi dell'impatto ambientale di un prodotto in tutte le sue fasi: produzione, uso, smaltimento"
+    }
+  ],
+  "uda_collegata": "Cosa indossiamo davvero? Impatto ambientale della moda e dei materiali tessili (Tecnologia + Scienze + Educazione Civica + Arte)",
+  "sdg_principale": 15,
+  "professioni_future": [
+    {
+      "titolo": "Supply Chain Sustainability Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
+      "competenze_chiave": [
+        "analisi ciclo di vita",
+        "logistica sostenibile",
+        "reportistica ESG",
+        "economia circolare"
+      ]
+    },
+    {
+      "titolo": "Biopackaging Designer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta imballaggi compostabili e biodegradabili da biomasse (alghe, amido di mais, micelio) in sostituzione delle plastiche convenzionali, testando resistenza e compatibilità alimentare.",
+      "competenze_chiave": [
+        "bioplastiche",
+        "compostabilità",
+        "normativa imballaggi",
+        "design industriale",
+        "test meccanici"
+      ]
+    }
+  ]
 }

@@ -52,5 +52,84 @@
   "note_didattiche": {
     "base": "Usare Tinkercad Circuits per la simulazione virtuale invece del montaggio fisico. Fornire lo schema già disegnato.",
     "avanzato": "Aggiungere un secondo sensore (temperatura o movimento) e gestire le due condizioni con logica AND/OR nel codice."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.4,
+    "durata_secondi": 263
+  },
+  "professione_futura": {
+    "titolo": "Energy Manager Aziendale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
+    "competenze_chiave": [
+      "audit energetico",
+      "efficienza energetica",
+      "rinnovabili",
+      "reportistica ESG"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "tensione elettrica",
+      "en": "voltage (V)",
+      "def": "Differenza di potenziale tra due punti di un circuito; forza che spinge gli elettroni nel conduttore; si misura in volt (V)"
+    },
+    {
+      "it": "corrente elettrica",
+      "en": "electric current (I)",
+      "def": "Flusso di cariche elettriche (elettroni) attraverso un conduttore; si misura in ampere (A)"
+    },
+    {
+      "it": "resistenza elettrica",
+      "en": "electrical resistance (R)",
+      "def": "Opposizione al passaggio della corrente in un conduttore; si misura in ohm (Ω). Dipende da materiale, lunghezza, sezione"
+    },
+    {
+      "it": "legge di Ohm",
+      "en": "Ohm's Law",
+      "def": "Relazione fondamentale: V = R × I — la tensione è uguale alla resistenza moltiplicata per la corrente"
+    },
+    {
+      "it": "circuito in serie",
+      "en": "series circuit",
+      "def": "Circuito in cui i componenti sono collegati in sequenza; la corrente è uguale ovunque, la tensione si divide"
+    },
+    {
+      "it": "circuito in parallelo",
+      "en": "parallel circuit",
+      "def": "Circuito in cui i componenti sono collegati su rami separati; la tensione è uguale, la corrente si divide"
+    },
+    {
+      "it": "potenza elettrica",
+      "en": "electric power (P)",
+      "def": "Energia elettrica trasformata nell'unità di tempo; P = V × I, si misura in watt (W)"
+    }
+  ],
+  "uda_collegata": "Elettricità in classe: costruire e misurare circuiti reali in serie e parallelo (Tecnologia + Scienze + Matematica)",
+  "sdg_principale": 9,
+  "professioni_future": [
+    {
+      "titolo": "Energy Manager Aziendale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
+      "competenze_chiave": [
+        "audit energetico",
+        "efficienza energetica",
+        "rinnovabili",
+        "reportistica ESG"
+      ]
+    },
+    {
+      "titolo": "Tecnico Impianti Elettrici / Elettricista Industriale",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta e realizza impianti elettrici civili e industriali a norma CEI, gestendo cablaggi, quadri elettrici, domotica e verifica degli impianti a regola d'arte.",
+      "competenze_chiave": [
+        "norma CEI 64-8",
+        "quadri elettrici",
+        "domotica KNX",
+        "verifica impianti",
+        "lettura planimetrie elettriche"
+      ]
+    }
+  ]
 }

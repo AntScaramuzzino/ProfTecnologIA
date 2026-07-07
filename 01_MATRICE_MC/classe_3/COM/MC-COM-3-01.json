@@ -34,7 +34,7 @@
     "visual": "Mappa: anatomia di Internet — cavi sottomarini, data center, ultimo miglio, dispositivo finale.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": null,
+  "prerequisiti": [],
   "tags": [
     "reti",
     "Internet",
@@ -51,5 +51,84 @@
   "note_didattiche": {
     "base": "Fornire la pianta della scuola già stampata e l'app già installata. Lo studente misura e colora solo 4 punti.",
     "avanzato": "Aggiungere l'analisi dei canali WiFi in uso (interferenze) e proporre una configurazione ottimale dei punti di accesso."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.3,
+    "durata_secondi": 258
+  },
+  "professione_futura": {
+    "titolo": "Digital Communication Specialist",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
+    "competenze_chiave": [
+      "social media",
+      "content strategy",
+      "SEO",
+      "storytelling digitale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "protocollo di rete",
+      "en": "network protocol",
+      "def": "Insieme di regole che definisce come i dispositivi comunicano su una rete (es. TCP/IP, HTTP, DNS)"
+    },
+    {
+      "it": "segnale digitale",
+      "en": "digital signal",
+      "def": "Segnale che trasmette informazioni in formato binario (0 e 1), più resistente ai disturbi rispetto all'analogico"
+    },
+    {
+      "it": "larghezza di banda",
+      "en": "bandwidth",
+      "def": "Quantità massima di dati che può essere trasmessa in un canale in un dato tempo (Mbps, Gbps)"
+    },
+    {
+      "it": "router",
+      "en": "router",
+      "def": "Dispositivo che instrada i pacchetti di dati tra reti diverse, trovando il percorso più efficiente"
+    },
+    {
+      "it": "DNS (Domain Name System)",
+      "en": "DNS (Domain Name System)",
+      "def": "Sistema che traduce i nomi di dominio (es. google.com) negli indirizzi IP numerici dei server corrispondenti"
+    },
+    {
+      "it": "firewall",
+      "en": "firewall",
+      "def": "Sistema di sicurezza che filtra il traffico di rete, bloccando accessi non autorizzati secondo regole definite"
+    },
+    {
+      "it": "pacchetto dati",
+      "en": "data packet",
+      "def": "Unità di dati in cui viene suddiviso un messaggio per la trasmissione in rete; contiene dati e informazioni di instradamento"
+    }
+  ],
+  "uda_collegata": "Come comunica la nostra scuola? Mappare e analizzare la rete informatica dell'istituto (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 9,
+  "professioni_future": [
+    {
+      "titolo": "Digital Communication Specialist",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
+      "competenze_chiave": [
+        "social media",
+        "content strategy",
+        "SEO",
+        "storytelling digitale"
+      ]
+    },
+    {
+      "titolo": "5G Network Specialist / Ingegnere delle Telecomunicazioni",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e ottimizza reti 5G e beyond, gestendo il deployment di antenne, la pianificazione delle frequenze e l'integrazione con infrastrutture edge computing.",
+      "competenze_chiave": [
+        "5G/6G",
+        "RF planning",
+        "core network",
+        "edge computing",
+        "normativa AGCOM"
+      ]
+    }
+  ]
 }

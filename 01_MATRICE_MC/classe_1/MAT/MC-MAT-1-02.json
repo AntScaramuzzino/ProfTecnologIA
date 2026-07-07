@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Systems thinking",
-      "nota": "Lo studente analizza le interdipendenze tra fasi produttive, logistica, distribuzione e impatto ambientale come sistema"
+      "nota": "Lo studente analizza le interdipendenze tra fasi produttive, logistica, distribuzione e impatto ambientale nel ciclo di vita di un materiale. Tracciare questo percorso completo allena il pensiero sistemico e la capacità di imparare a imparare: riconoscere schemi causa-effetto e trasferirli a contesti nuovi."
     },
     "EV": {
       "ref": "SDG 12 — Consumo e produzione responsabili; SDG 15 — Vita sulla terra; SDG 9 — Industria, innovazione, infrastrutture",
@@ -61,8 +61,9 @@
     "titolo": "Il viaggio segreto della tua felpa: 40.000 km prima di arrivare nel tuo armadio",
     "oggetto_reale": "una felpa di cotone",
     "domanda_avvio": "Hai mai pensato a quante persone, paesi e chilometri ci sono stati dietro prima che quella felpa finisse nel tuo armadio?",
-    "durata_min": 3,
-    "note_script": "Aprire con il dato che una felpa media percorre circa 40.000 km prima di essere venduta (cotone dal Texas, filatura in India, tessitura in Bangladesh, tintura in Vietnam, assemblaggio in Cambogia, logistica in Europa). Raccontare la storia come un viaggio in prima persona. Chiudere con: 'E quando la butti — il viaggio ricomincia da capo, o si ferma in una discarica?'. Tono: narrativo e leggermente sorprendente."
+    "durata_min": 3.5,
+    "note_script": "Aprire con il dato che una felpa media percorre circa 40.000 km prima di essere venduta (cotone dal Texas, filatura in India, tessitura in Bangladesh, tintura in Vietnam, assemblaggio in Cambogia, logistica in Europa). Raccontare la storia come un viaggio in prima persona. Chiudere con: 'E quando la butti — il viaggio ricomincia da capo, o si ferma in una discarica?'. Tono: narrativo e leggermente sorprendente.",
+    "durata_secondi": 207
   },
   "professione_futura": {
     "titolo": "Supply Chain Sustainability Manager",
@@ -96,7 +97,37 @@
       "italiano": "ciclo tecnologico",
       "inglese": "technological cycle",
       "pronuncia_ipa": "/ˌteknəˈlɒdʒɪkəl ˈsaɪkəl/"
+    },
+    {
+      "italiano": "smaltimento",
+      "inglese": "disposal",
+      "pronuncia_ipa": "/dɪˈspəʊzəl/"
     }
   ],
-  "uda_collegata": null
+  "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+  "professioni_future": [
+    {
+      "titolo": "Supply Chain Sustainability Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Analizza e ottimizza le catene di fornitura aziendali per ridurre le emissioni, garantire condizioni di lavoro etiche e minimizzare i rifiuti lungo tutto il ciclo tecnologico.",
+      "competenze_chiave": [
+        "analisi ciclo di vita (LCA)",
+        "logistica sostenibile",
+        "economia circolare",
+        "reportistica ESG"
+      ]
+    },
+    {
+      "titolo": "Circular Economy Consultant",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta modelli di business circolari per aziende manifatturiere, identificando opportunità di riduzione degli sprechi e di riutilizzo dei materiali.",
+      "competenze_chiave": [
+        "economia circolare",
+        "reverse logistics",
+        "design for disassembly",
+        "stakeholder management",
+        "reporting di sostenibilità"
+      ]
+    }
+  ]
 }

@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Problem solving",
-      "nota": "Lo studente affronta la sfida strutturale (spaghetti/marshmallow) con approccio metodico"
+      "nota": "Lo studente affronta la sfida strutturale con approccio metodico, iterando la soluzione in base ai feedback. La challenge (spaghetti/marshmallow) è metacognizione in azione: lo studente sperimenta il proprio processo di problem solving, ne identifica i punti critici e li migliora nel ciclo successivo — imparare a imparare attraverso l'errore."
     },
     "EV": {
       "ref": "SDG 11 — Città e comunità sostenibili",
@@ -34,7 +34,7 @@
     "visual": "Sezione di un edificio a strati: ogni elemento strutturale evidenziato con nome e materiale.",
     "livelloDigComp": "F"
   },
-  "prerequisiti": null,
+  "prerequisiti": [],
   "tags": [
     "strutture edilizie",
     "costruzione",
@@ -50,5 +50,84 @@
   "note_didattiche": {
     "base": "Fornire un progetto guidato (triangolo base + colonna) già testato. Lo studente segue le istruzioni e osserva il risultato.",
     "avanzato": "Progettare una struttura antisisminca: come cambia il design se la struttura deve resistere a vibrazioni laterali?"
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.9,
+    "durata_secondi": 236
+  },
+  "professione_futura": {
+    "titolo": "Urban Planner Sostenibile",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+    "competenze_chiave": [
+      "GIS",
+      "pianificazione urbana",
+      "mobilità sostenibile",
+      "Nature-Based Solutions"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "struttura portante",
+      "en": "load-bearing structure",
+      "def": "Insieme degli elementi di un edificio che reggono e trasferiscono i carichi al suolo"
+    },
+    {
+      "it": "compressione",
+      "en": "compression",
+      "def": "Forza che schiaccia un elemento strutturale riducendone le dimensioni; i muri in muratura lavorano in compressione"
+    },
+    {
+      "it": "trazione",
+      "en": "tension",
+      "def": "Forza che tira un elemento strutturale allungandolo; le funi e le catene lavorano in trazione"
+    },
+    {
+      "it": "cemento armato",
+      "en": "reinforced concrete",
+      "def": "Materiale composito formato da calcestruzzo (resistente a compressione) e barre d'acciaio (resistenti a trazione)"
+    },
+    {
+      "it": "fondazione",
+      "en": "foundation",
+      "def": "Parte inferiore dell'edificio che trasferisce i carichi della struttura al terreno in modo sicuro"
+    },
+    {
+      "it": "telaio strutturale",
+      "en": "structural frame",
+      "def": "Sistema costruttivo formato da travi e pilastri che formano una griglia rigida in grado di reggere l'edificio"
+    },
+    {
+      "it": "vantaggio meccanico",
+      "en": "mechanical advantage",
+      "def": "Rapporto tra forza resistente e forza applicata in una macchina semplice o sistema strutturale"
+    }
+  ],
+  "uda_collegata": "Costruire senza cadere: analisi delle forze strutturali e progettazione di un ponte in carta (Tecnologia + Scienze + Matematica)",
+  "sdg_principale": 11,
+  "professioni_future": [
+    {
+      "titolo": "Urban Planner Sostenibile",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+      "competenze_chiave": [
+        "GIS",
+        "pianificazione urbana",
+        "mobilità sostenibile",
+        "Nature-Based Solutions"
+      ]
+    },
+    {
+      "titolo": "Construction Project Manager",
+      "orizzonte": "2028",
+      "descrizione_breve": "Coordina tutte le fasi di cantiere — dalla progettazione esecutiva alla consegna — gestendo tempi, costi, subappaltatori e sicurezza secondo le norme D.Lgs. 81/2008.",
+      "competenze_chiave": [
+        "project management",
+        "MS Project/Primavera",
+        "sicurezza cantieri",
+        "computo metrico",
+        "gestione subappalti"
+      ]
+    }
+  ]
 }

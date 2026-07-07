@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire il consumo annuo della scuola già calcolato. Lo studente sceglie solo la fonte rinnovabile e giustifica la scelta.",
     "avanzato": "Aggiungere una batteria di accumulo al sistema: come cambia l'autoconsumo? Calcolare il payback period dell'investimento."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.5,
+    "durata_secondi": 270
+  },
+  "professione_futura": {
+    "titolo": "Renewable Energy Engineer",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
+    "competenze_chiave": [
+      "fotovoltaico",
+      "eolico",
+      "storage energetico",
+      "grid parity"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "fonte rinnovabile",
+      "en": "renewable energy source",
+      "def": "Fonte energetica che si rigenera naturalmente in tempi brevi: sole, vento, acqua, biomasse, calore terrestre"
+    },
+    {
+      "it": "energia fotovoltaica",
+      "en": "photovoltaic energy",
+      "def": "Energia elettrica prodotta da pannelli solari tramite l'effetto fotovoltaico: fotoni solari liberano elettroni"
+    },
+    {
+      "it": "energia eolica",
+      "en": "wind energy",
+      "def": "Energia cinetica del vento convertita in energia elettrica da turbine eoliche con pale rotanti"
+    },
+    {
+      "it": "accumulo energetico",
+      "en": "energy storage",
+      "def": "Tecnologia (batterie, idrogeno, pompaggio idro) che conserva l'energia prodotta in eccesso per usarla quando serve"
+    },
+    {
+      "it": "smart grid",
+      "en": "smart grid",
+      "def": "Rete elettrica intelligente che integra produttori e consumatori, ottimizzando distribuzione e uso dell'energia in tempo reale"
+    },
+    {
+      "it": "transizione energetica",
+      "en": "energy transition",
+      "def": "Processo di trasformazione del sistema energetico globale da fonti fossili a fonti rinnovabili e pulite"
+    },
+    {
+      "it": "intermittenza",
+      "en": "intermittency",
+      "def": "Caratteristica delle fonti rinnovabili (sole, vento) di non produrre energia in modo costante e prevedibile"
+    }
+  ],
+  "uda_collegata": "La nostra scuola a zero emissioni: progettare un piano di transizione energetica per l'edificio scolastico (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 7,
+  "professioni_future": [
+    {
+      "titolo": "Renewable Energy Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
+      "competenze_chiave": [
+        "fotovoltaico",
+        "eolico",
+        "storage energetico",
+        "grid parity"
+      ]
+    },
+    {
+      "titolo": "Solar Energy Technician / Installatore Fotovoltaico",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta, installa e mette in manutenzione impianti fotovoltaici residenziali e utility-scale, gestendo pratiche di allaccio, incentivi e sistemi di storage abbinati.",
+      "competenze_chiave": [
+        "dimensionamento FV",
+        "inverter e storage",
+        "GSE pratiche",
+        "normativa CEI 0-21",
+        "manutenzione ordinaria"
+      ]
+    }
+  ]
 }

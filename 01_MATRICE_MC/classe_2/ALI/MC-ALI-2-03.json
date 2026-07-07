@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Self-management / Wellbeing",
-      "nota": "Lo studente collega scelte alimentari consapevoli al proprio benessere fisico e mentale"
+      "nota": "Lo studente collega scelte alimentari consapevoli al proprio benessere fisico e mentale. Questo collegamento è un esercizio di autovalutazione e di imparare a imparare: lo studente costruisce criteri propri per le decisioni quotidiane e impara a monitorarne gli effetti nel tempo."
     },
     "EV": {
       "ref": "SDG 3 — Salute e benessere; SDG 12 — Consumo responsabile",
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire la tabella del diario già strutturata con i gruppi alimentari pre-etichettati. Concentrarsi su un solo giorno.",
     "avanzato": "Calcolare l'apporto calorico giornaliero medio e confrontarlo con il fabbisogno energetico per la propria età e attività."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.5,
+    "durata_secondi": 210
+  },
+  "professione_futura": {
+    "titolo": "Food Technologist / Nutrizionista Industriale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+    "competenze_chiave": [
+      "sicurezza alimentare",
+      "HACCP",
+      "etichettatura",
+      "analisi nutrizionale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "macronutriente",
+      "en": "macronutrient",
+      "def": "Nutriente necessario in grandi quantità (carboidrati, proteine, grassi) che fornisce energia al corpo"
+    },
+    {
+      "it": "micronutriente",
+      "en": "micronutrient",
+      "def": "Nutriente essenziale in piccole quantità (vitamine, minerali) che regola processi biologici fondamentali"
+    },
+    {
+      "it": "dieta mediterranea",
+      "en": "Mediterranean diet",
+      "def": "Modello alimentare basato su cereali integrali, verdure, legumi, frutta, olio d'oliva e pesce; patrimonio UNESCO"
+    },
+    {
+      "it": "valore nutrizionale",
+      "en": "nutritional value",
+      "def": "Contenuto in nutrienti (calorie, proteine, grassi, carboidrati, vitamine) di un alimento per 100 g"
+    },
+    {
+      "it": "spreco alimentare",
+      "en": "food waste",
+      "def": "Alimenti prodotti per il consumo umano ma scartati o persi in qualsiasi fase della filiera"
+    },
+    {
+      "it": "caloria",
+      "en": "calorie (kcal)",
+      "def": "Unità di misura dell'energia fornita dagli alimenti; 1 kcal = energia per alzare 1 kg d'acqua di 1°C"
+    },
+    {
+      "it": "piramide alimentare",
+      "en": "food pyramid",
+      "def": "Schema visivo che indica le proporzioni consigliate dei diversi gruppi alimentari in una dieta equilibrata"
+    }
+  ],
+  "uda_collegata": "Cosa mangio e perché: analisi nutrizionale della mensa scolastica e proposta di menu settimanale equilibrato (Tecnologia + Scienze + Matematica)",
+  "sdg_principale": 3,
+  "professioni_future": [
+    {
+      "titolo": "Food Technologist / Nutrizionista Industriale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+      "competenze_chiave": [
+        "sicurezza alimentare",
+        "HACCP",
+        "etichettatura",
+        "analisi nutrizionale"
+      ]
+    },
+    {
+      "titolo": "Public Health Educator / Educatore alla Salute Alimentare",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta campagne e programmi di promozione della salute alimentare in contesti scolastici e comunitari, contrastando obesità, disturbi alimentari e scelte nutrizionali scorrette.",
+      "competenze_chiave": [
+        "comunicazione sanitaria",
+        "progettazione programmi",
+        "epidemiologia nutrizionale",
+        "psicologia alimentare",
+        "salute pubblica"
+      ]
+    }
+  ]
 }

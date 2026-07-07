@@ -22,7 +22,7 @@
     },
     "LC": {
       "ref": "Thinking / Critical thinking",
-      "nota": "Lo studente valuta scelte progettuali basate sulle proprietà dei materiali, argomentando perché un materiale è adatto o inadatto a una funzione"
+      "nota": "Lo studente valuta scelte progettuali basate sulle proprietà dei materiali, argomentando perché un materiale è adeguato a una funzione specifica. La comparazione sistematica sviluppa la competenza metacognitiva di valutare le proprie strategie di selezione: riconoscere criteri, pesarli, riformularli quando cambiano i vincoli."
     },
     "EV": {
       "ref": "SDG 12 — Consumo e produzione responsabili · L. 92/2019 Educazione Civica — Sviluppo sostenibile",
@@ -35,7 +35,7 @@
     "visual": "Infografica radiale: materiale al centro, proprietà sui raggi, esempi d'uso sui bordi. Versione interattiva: clic su ogni raggio mostra un esempio animato.",
     "livelloDigComp": "F"
   },
-  "prerequisiti": null,
+  "prerequisiti": [],
   "tags": [
     "materiali",
     "proprietà fisiche",
@@ -48,7 +48,10 @@
     "foundation"
   ],
   "compito_realta": "Analizza 5 oggetti di casa: per ognuno identifica la materia prima principale, una proprietà che lo rende adatto alla sua funzione, e come va smaltito a fine vita.",
-  "sdg": [12, 9],
+  "sdg": [
+    12,
+    9
+  ],
   "sdg_principale": 12,
   "note_didattiche": {
     "base": "Fornire scheda pre-compilata con i 5 materiali già elencati e le proprietà in lista. Lo studente deve solo abbinare materiale → proprietà → smaltimento. Ammettere l'uso del libro di testo aperto durante il compito.",
@@ -58,8 +61,9 @@
     "titolo": "Trenta materiali. Un paio di scarpe.",
     "oggetto_reale": "scarpe da ginnastica",
     "domanda_avvio": "Quanti materiali diversi pensi che contengano le tue scarpe da ginnastica?",
-    "durata_min": 2,
-    "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti."
+    "durata_min": 3.6,
+    "note_script": "Script completo in 08_TESTI/classe_1/MAT/MC-MAT-1-01_hook-script.md. Struttura: dato sorprendente (30-40 materiali) → viaggio di ogni componente nel mondo → colpo di scena (le scarpe finiscono in discarica intere, non separabili) → aggancio al concetto (classificare i materiali serve a capire come smaltirli). Tono: narrativo, lento, curioso. Livello F: frasi brevi, pause frequenti.",
+    "durata_secondi": 218
   },
   "professione_futura": {
     "titolo": "Materials Scientist circolare",
@@ -94,11 +98,36 @@
       "pronuncia_ipa": "/ˌbaɪəʊdɪˈɡreɪdəbl/"
     }
   ],
-  "uda_collegata": "UDA-1",
+  "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
   "stem_connections": {
     "matematica": "Percentuali e proporzioni: calcolo della quota riciclabile per massa di materiale (es. 'questa bottiglia è al 30% di plastica riciclata').",
     "scienze": "Chimica dei polimeri: perché la plastica non si degrada biologicamente in tempi brevi. Fisica: densità come proprietà misurabile.",
     "arte_geo_storia": "Geografia: distribuzione delle materie prime nel mondo — da dove vengono i materiali che usiamo (gomma dall'Indonesia, cotone dall'India, acciaio dalla Cina).",
     "frase_ponte": "Ogni materiale obbedisce a leggi fisiche e chimiche che puoi misurare."
-  }
+  },
+  "professioni_future": [
+    {
+      "titolo": "Materials Scientist circolare",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta materiali che possono essere completamente separati e riciclati a fine vita — risolvendo il problema delle scarpe che finiscono in discarica.",
+      "competenze_chiave": [
+        "chimica dei polimeri",
+        "economia circolare",
+        "progettazione per il disassemblaggio",
+        "analisi del ciclo di vita (LCA)"
+      ]
+    },
+    {
+      "titolo": "Life Cycle Assessment (LCA) Specialist",
+      "orizzonte": "2030",
+      "descrizione_breve": "Valuta l'impatto ambientale di prodotti e processi lungo tutto il loro ciclo di vita, dall'estrazione delle materie prime allo smaltimento finale.",
+      "competenze_chiave": [
+        "LCA",
+        "analisi ambientale",
+        "carbon footprint",
+        "EPD (Environmental Product Declaration)",
+        "database ecoinvent"
+      ]
+    }
+  ]
 }

@@ -34,7 +34,7 @@
     "visual": "Schema anatomia del computer: vista esplosa con etichette e funzioni.",
     "livelloDigComp": "F"
   },
-  "prerequisiti": null,
+  "prerequisiti": [],
   "tags": [
     "hardware",
     "software",
@@ -52,5 +52,84 @@
   "note_didattiche": {
     "base": "Usare uno schema già etichettato con 4 componenti. Lo studente deve solo abbinare la funzione.",
     "avanzato": "Costruire un glossario personale dei componenti hardware con immagini cercate autonomamente e una frase descrittiva per ciascuno."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.6,
+    "durata_secondi": 214
+  },
+  "professione_futura": {
+    "titolo": "Digital Literacy Educator",
+    "orizzonte": "2030",
+    "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+    "competenze_chiave": [
+      "DigComp 3.0",
+      "media literacy",
+      "cybersecurity base",
+      "formazione digitale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "hardware",
+      "en": "hardware",
+      "def": "Componenti fisici di un computer: processore, scheda madre, RAM, storage, periferiche"
+    },
+    {
+      "it": "software",
+      "en": "software",
+      "def": "Programmi e istruzioni logiche che fanno funzionare l'hardware; non si può toccare"
+    },
+    {
+      "it": "processore",
+      "en": "CPU (Central Processing Unit)",
+      "def": "Componente che esegue i calcoli e coordina tutte le altre parti del computer"
+    },
+    {
+      "it": "memoria di lavoro",
+      "en": "RAM (Random Access Memory)",
+      "def": "Memoria temporanea che contiene i dati usati in quel momento; si svuota allo spegnimento"
+    },
+    {
+      "it": "sistema operativo",
+      "en": "operating system (OS)",
+      "def": "Software di base che gestisce le risorse del computer e permette alle app di funzionare"
+    },
+    {
+      "it": "archiviazione di massa",
+      "en": "storage",
+      "def": "Memoria permanente dove si salvano file, app e sistema operativo (HDD o SSD)"
+    },
+    {
+      "it": "ambiente digitale",
+      "en": "digital environment",
+      "def": "Spazio costruito da hardware, software, dati e connessioni in cui si opera ogni giorno"
+    }
+  ],
+  "uda_collegata": "Cosa c'è dentro la mia scuola digitale: analisi dell'infrastruttura tecnologica scolastica (Tecnologia + Scienze + Matematica)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "Digital Literacy Educator",
+      "orizzonte": "2030",
+      "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+      "competenze_chiave": [
+        "DigComp 3.0",
+        "media literacy",
+        "cybersecurity base",
+        "formazione digitale"
+      ]
+    },
+    {
+      "titolo": "Digital Skills Trainer / Formatore ICT",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta e eroga corsi di alfabetizzazione digitale per adulti, lavoratori in transizione e cittadini, usando metodologie attive e piattaforme e-learning.",
+      "competenze_chiave": [
+        "instructional design",
+        "LMS (Moodle/Teams)",
+        "DigComp",
+        "UDL",
+        "facilitazione gruppi"
+      ]
+    }
+  ]
 }

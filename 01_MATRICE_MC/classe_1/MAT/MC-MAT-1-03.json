@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Critical thinking",
-      "nota": "Lo studente confronta pro e contro di materiali tradizionali vs. innovativi"
+      "nota": "Lo studente confronta pro e contro di materiali tradizionali vs. innovativi, sviluppando una griglia di valutazione personale. Il confronto per coppie contrarie è un metodo di apprendimento per contrasto: lo studente impara a organizzare la conoscenza per categorie e a riconoscere quando le proprie categorie mentali vanno aggiornate."
     },
     "EV": {
       "ref": "SDG 9 — Innovazione e infrastrutture; SDG 12 — Consumo responsabile",
@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire una scheda con 3 materiali innovativi già descritti. Lo studente sceglie solo tra quelli dati.",
     "avanzato": "Ricercare autonomamente un materiale innovativo non in elenco, documentare le fonti e presentarlo alla classe."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.4,
+    "durata_secondi": 203
+  },
+  "professione_futura": {
+    "titolo": "Ingegnere dei Materiali Sostenibili",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta materiali circolari per ridurre sprechi e impatto ambientale.",
+    "competenze_chiave": [
+      "analisi LCA",
+      "economia circolare",
+      "materiali compositi",
+      "chimica green"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "materiale innovativo",
+      "en": "advanced material",
+      "def": "Materiale con proprietà superiori sviluppato in laboratorio per rispondere a problemi tecnici specifici"
+    },
+    {
+      "it": "grafene",
+      "en": "graphene",
+      "def": "Materiale formato da un singolo strato di atomi di carbonio; 200 volte più resistente dell'acciaio"
+    },
+    {
+      "it": "bioplastica",
+      "en": "bioplastic",
+      "def": "Plastica derivata da fonti biologiche rinnovabili (mais, canna da zucchero) anziché dal petrolio"
+    },
+    {
+      "it": "materia prima critica",
+      "en": "critical raw material",
+      "def": "Materiale essenziale per l'economia europea ma a rischio di approvvigionamento (es. litio, cobalto)"
+    },
+    {
+      "it": "sostenibilità",
+      "en": "sustainability",
+      "def": "Capacità di soddisfare i bisogni presenti senza compromettere la possibilità delle generazioni future di fare lo stesso"
+    },
+    {
+      "it": "nanotecnologia",
+      "en": "nanotechnology",
+      "def": "Tecnologia che manipola la materia a scala nanometrica (1 nm = 0,000001 mm) per ottenere nuove proprietà"
+    },
+    {
+      "it": "materiale composito",
+      "en": "composite material",
+      "def": "Materiale formato da due o più componenti diversi combinati per ottenere proprietà migliori di ciascuno"
+    }
+  ],
+  "uda_collegata": "Il futuro nei materiali: dalla ricerca scientifica alla vita quotidiana (Tecnologia + Scienze + Matematica)",
+  "sdg_principale": 12,
+  "professioni_future": [
+    {
+      "titolo": "Ingegnere dei Materiali Sostenibili",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta materiali circolari per ridurre sprechi e impatto ambientale.",
+      "competenze_chiave": [
+        "analisi LCA",
+        "economia circolare",
+        "materiali compositi",
+        "chimica green"
+      ]
+    },
+    {
+      "titolo": "Ricercatore in Nanomateriali e Materiali Smart",
+      "orizzonte": "2032",
+      "descrizione_breve": "Studia e sviluppa materiali intelligenti (che cambiano proprietà in risposta a stimoli), aerogel, grafene e compositi avanzati per applicazioni industriali e medicali.",
+      "competenze_chiave": [
+        "nanotecnologia",
+        "microscopia elettronica",
+        "caratterizzazione materiali",
+        "prototipazione",
+        "pubblicazione scientifica"
+      ]
+    }
+  ]
 }

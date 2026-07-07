@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente si riconosce come abitante attivo e responsabile della propria comunità urbana"
+      "nota": "Lo studente si riconosce come abitante attivo e responsabile della propria comunità urbana. Progettare proposte per la propria città richiede di attivare creatività e pensiero critico in parallelo — competenza metacognitiva che distingue la fase di ideazione dalla fase di valutazione, entrambe componenti dell'imparare a imparare."
     },
     "EV": {
       "ref": "SDG 11 — Città e comunità sostenibili",
@@ -52,5 +52,84 @@
   "note_didattiche": {
     "base": "Fornire la mappa del quartiere già stampata con le zone pre-etichettate. Lo studente identifica solo i servizi mancanti.",
     "avanzato": "Confrontare il proprio quartiere con un quartiere di un'altra città italiana o europea: stesso numero di abitanti, diversa qualità dei servizi — perché?"
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.9,
+    "durata_secondi": 235
+  },
+  "professione_futura": {
+    "titolo": "Urban Planner Sostenibile",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+    "competenze_chiave": [
+      "GIS",
+      "pianificazione urbana",
+      "mobilità sostenibile",
+      "Nature-Based Solutions"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "piano regolatore",
+      "en": "urban master plan",
+      "def": "Strumento urbanistico che stabilisce come usare ogni area di una città: residenziale, commerciale, verde, servizi"
+    },
+    {
+      "it": "zoning",
+      "en": "zoning",
+      "def": "Suddivisione del territorio urbano in zone con destinazioni d'uso specifiche e norme edificatorie distinte"
+    },
+    {
+      "it": "infrastruttura urbana",
+      "en": "urban infrastructure",
+      "def": "Rete di servizi essenziali di una città: strade, fognature, acquedotti, reti elettriche, telecomunicazioni"
+    },
+    {
+      "it": "mobilità sostenibile",
+      "en": "sustainable mobility",
+      "def": "Sistema di trasporto urbano che riduce emissioni e congestione favorendo mezzi pubblici, bici e percorsi pedonali"
+    },
+    {
+      "it": "riqualificazione urbana",
+      "en": "urban regeneration",
+      "def": "Processo di trasformazione e miglioramento di aree urbane degradate o in disuso"
+    },
+    {
+      "it": "sprawl urbano",
+      "en": "urban sprawl",
+      "def": "Espansione incontrollata della città verso la periferia con bassa densità e forte dipendenza dall'auto"
+    },
+    {
+      "it": "spazio pubblico",
+      "en": "public space",
+      "def": "Area della città accessibile a tutti e di uso collettivo: piazze, parchi, strade, marciapiedi"
+    }
+  ],
+  "uda_collegata": "La città che vorrei: analisi urbanistica del quartiere scolastico e proposta di miglioramento (Tecnologia + Matematica + Arte + Educazione Civica + Storia)",
+  "sdg_principale": 11,
+  "professioni_future": [
+    {
+      "titolo": "Urban Planner Sostenibile",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+      "competenze_chiave": [
+        "GIS",
+        "pianificazione urbana",
+        "mobilità sostenibile",
+        "Nature-Based Solutions"
+      ]
+    },
+    {
+      "titolo": "Landscape Architect / Paesaggista",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta spazi verdi, parchi urbani e infrastrutture naturali per migliorare la qualità della vita in città, integrando biodiversità e gestione sostenibile delle acque piovane.",
+      "competenze_chiave": [
+        "progettazione paesaggistica",
+        "AutoCAD/Rhino",
+        "botanica applicata",
+        "infrastrutture verdi",
+        "regolamenti urbanistici"
+      ]
+    }
+  ]
 }

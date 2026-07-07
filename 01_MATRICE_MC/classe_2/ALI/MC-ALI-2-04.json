@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente esercita scelte di consumo informate come atto di cittadinanza"
+      "nota": "Lo studente esercita scelte di consumo informate come atto di cittadinanza, leggendo e interpretando etichette. Decodificare sistemi informativi compatti (etichette, schede tecniche, contratti) è una competenza trasversale dell'imparare a imparare che lo studente trasferisce ben oltre il contesto alimentare."
     },
     "EV": {
       "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire le 3 etichette già stampate con le sezioni evidenziate. Lo studente deve solo compilare una tabella comparativa.",
     "avanzato": "Confrontare la filiera di un prodotto locale vs. uno importato: calcolare la stima delle emissioni di CO₂ per il trasporto."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.7,
+    "durata_secondi": 42
+  },
+  "professione_futura": {
+    "titolo": "Agri-food Supply Chain Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+    "competenze_chiave": [
+      "tracciabilità filiera",
+      "logistica alimentare",
+      "certificazioni DOP/IGP",
+      "sostenibilità"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "filiera alimentare",
+      "en": "food supply chain",
+      "def": "Insieme delle fasi dalla produzione al consumo: produttore → trasformatore → distributore → dettagliante → consumatore"
+    },
+    {
+      "it": "food miles",
+      "en": "food miles",
+      "def": "Distanza percorsa da un alimento dal luogo di produzione al punto di consumo; indicatore dell'impatto ambientale"
+    },
+    {
+      "it": "tracciabilità",
+      "en": "food traceability",
+      "def": "Capacità di seguire un alimento in ogni fase della filiera per garantirne la sicurezza e l'origine"
+    },
+    {
+      "it": "commercio equo",
+      "en": "fair trade",
+      "def": "Sistema commerciale che garantisce prezzi giusti ai produttori nei paesi in via di sviluppo"
+    },
+    {
+      "it": "filiera corta",
+      "en": "short food supply chain",
+      "def": "Sistema di distribuzione con pochi intermediari tra produttore e consumatore; es. mercati contadini locali"
+    },
+    {
+      "it": "logistica",
+      "en": "logistics",
+      "def": "Pianificazione e gestione del flusso di merci, informazioni e risorse lungo la catena di distribuzione"
+    },
+    {
+      "it": "import-export",
+      "en": "import-export",
+      "def": "Acquisto (import) e vendita (export) di merci attraverso i confini nazionali nel commercio internazionale"
+    }
+  ],
+  "uda_collegata": "Quanta strada fa il nostro cibo? Mappare la filiera di tre prodotti della mensa scolastica (Tecnologia + Scienze + Matematica + Educazione Civica + Geografia)",
+  "sdg_principale": 2,
+  "professioni_future": [
+    {
+      "titolo": "Agri-food Supply Chain Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+      "competenze_chiave": [
+        "tracciabilità filiera",
+        "logistica alimentare",
+        "certificazioni DOP/IGP",
+        "sostenibilità"
+      ]
+    },
+    {
+      "titolo": "Food Blockchain Traceability Specialist",
+      "orizzonte": "2030",
+      "descrizione_breve": "Implementa sistemi di tracciabilità digitale (blockchain, QR code, IoT) lungo la filiera alimentare, garantendo trasparenza al consumatore e conformità normativa.",
+      "competenze_chiave": [
+        "blockchain supply chain",
+        "IoT sensori",
+        "normativa UE 178/2002",
+        "interoperabilità sistemi",
+        "digital twin filiera"
+      ]
+    }
+  ]
 }

@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Cultural awareness",
-      "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità"
+      "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità. Il confronto tra sistemi alimentari di culture diverse allena la decentrazione cognitiva — lo studente impara a uscire dal proprio frame interpretativo e a riconoscere la logica interna di sistemi diversi dal proprio."
     },
     "EV": {
       "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire una scheda-intervista con le domande già formulate. Lo studente deve solo compilare le risposte.",
     "avanzato": "Creare una mappa digitale della biodiversità alimentare del proprio comune usando Google Maps con pin e schede informative."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.7,
+    "durata_secondi": 39
+  },
+  "professione_futura": {
+    "titolo": "Agri-food Supply Chain Manager",
+    "orizzonte": "2030",
+    "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+    "competenze_chiave": [
+      "tracciabilità filiera",
+      "logistica alimentare",
+      "certificazioni DOP/IGP",
+      "sostenibilità"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "agricoltura di precisione",
+      "en": "precision agriculture",
+      "def": "Tecnica agricola che usa sensori, droni e dati satellitari per ottimizzare irrigazione, fertilizzanti e raccolti"
+    },
+    {
+      "it": "vertical farming",
+      "en": "vertical farming",
+      "def": "Coltivazione di piante in ambienti chiusi su livelli sovrapposti, con luce artificiale e idroponica"
+    },
+    {
+      "it": "carne coltivata",
+      "en": "cell-cultivated meat",
+      "def": "Carne prodotta in laboratorio da cellule animali coltivate in bioreattori, senza allevare o macellare animali"
+    },
+    {
+      "it": "biotecnologia alimentare",
+      "en": "food biotechnology",
+      "def": "Applicazione di tecnologie biologiche (fermentazione, ingegneria genetica) alla produzione di alimenti"
+    },
+    {
+      "it": "tracciabilità blockchain",
+      "en": "blockchain traceability",
+      "def": "Uso della tecnologia blockchain per registrare in modo immutabile ogni fase della filiera alimentare"
+    },
+    {
+      "it": "insetti edibili",
+      "en": "edible insects",
+      "def": "Insetti utilizzati come fonte proteica alternativa; alta efficienza nutrizionale con impatto ambientale minimo"
+    },
+    {
+      "it": "food tech",
+      "en": "food technology / food tech",
+      "def": "Settore che applica tecnologie avanzate alla produzione, trasformazione e distribuzione degli alimenti"
+    }
+  ],
+  "uda_collegata": "Il cibo del futuro: confronto tra tecnologie alimentari innovative per sostenibilità, nutrizione e accessibilità (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 2,
+  "professioni_future": [
+    {
+      "titolo": "Agri-food Supply Chain Manager",
+      "orizzonte": "2030",
+      "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
+      "competenze_chiave": [
+        "tracciabilità filiera",
+        "logistica alimentare",
+        "certificazioni DOP/IGP",
+        "sostenibilità"
+      ]
+    },
+    {
+      "titolo": "Gastronomo / Food Heritage Curator",
+      "orizzonte": "2030",
+      "descrizione_breve": "Documenta, valorizza e promuove la biodiversità alimentare e il patrimonio gastronomico locale, lavorando con enti culturali, musei del gusto e programmi UNESCO.",
+      "competenze_chiave": [
+        "etno-gastronomia",
+        "valorizzazione DOP/IGP",
+        "comunicazione culturale",
+        "turismo enogastronomico",
+        "ricerca storica"
+      ]
+    }
+  ]
 }

@@ -34,7 +34,7 @@
     "visual": "Poster: le 6 macchine semplici — schema, formula, 3 esempi di oggetti quotidiani per ciascuna.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": null,
+  "prerequisiti": [],
   "tags": [
     "macchine semplici",
     "leva",
@@ -50,5 +50,84 @@
   "note_didattiche": {
     "base": "Concentrarsi solo sulla leva (I, II, III genere) con esempi scelti tra oggetti comuni. Formula fornita.",
     "avanzato": "Progettare una macchina composta (combinazione di 2+ macchine semplici) che risolva un problema domestico concreto."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.2,
+    "durata_secondi": 249
+  },
+  "professione_futura": {
+    "titolo": "Renewable Energy Engineer",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
+    "competenze_chiave": [
+      "fotovoltaico",
+      "eolico",
+      "storage energetico",
+      "grid parity"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "macchina semplice",
+      "en": "simple machine",
+      "def": "Dispositivo meccanico elementare che modifica la direzione o l'intensità di una forza (leva, piano inclinato, carrucola)"
+    },
+    {
+      "it": "lavoro meccanico",
+      "en": "mechanical work",
+      "def": "Prodotto tra forza applicata e spostamento nella direzione della forza; si misura in joule (J)"
+    },
+    {
+      "it": "vantaggio meccanico",
+      "en": "mechanical advantage",
+      "def": "Rapporto tra forza resistente e forza applicata in una macchina; indica di quanto si moltiplica la forza"
+    },
+    {
+      "it": "leva",
+      "en": "lever",
+      "def": "Macchina semplice formata da un'asta rigida che ruota attorno a un fulcro; distribuisce le forze in base alle distanze"
+    },
+    {
+      "it": "piano inclinato",
+      "en": "inclined plane",
+      "def": "Superficie piana inclinata rispetto all'orizzontale che permette di sollevare carichi con forza minore"
+    },
+    {
+      "it": "rendimento",
+      "en": "efficiency",
+      "def": "Rapporto tra energia utile prodotta ed energia totale fornita; sempre inferiore a 1 (100%) per le perdite per attrito"
+    },
+    {
+      "it": "potenza",
+      "en": "power",
+      "def": "Quantità di lavoro compiuta nell'unità di tempo; si misura in watt (W). P = W / t"
+    }
+  ],
+  "uda_collegata": "Le macchine semplici intorno a noi: identificare, analizzare e calcolare il vantaggio meccanico di strumenti quotidiani (Tecnologia + Scienze + Matematica)",
+  "sdg_principale": 9,
+  "professioni_future": [
+    {
+      "titolo": "Renewable Energy Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
+      "competenze_chiave": [
+        "fotovoltaico",
+        "eolico",
+        "storage energetico",
+        "grid parity"
+      ]
+    },
+    {
+      "titolo": "Mechatronics Technician / Manutentore Industriale",
+      "orizzonte": "2028",
+      "descrizione_breve": "Mantiene e ripara macchinari industriali complessi integrando competenze meccaniche, elettroniche e di controllo, riducendo i fermi-macchina con approcci di manutenzione predittiva.",
+      "competenze_chiave": [
+        "manutenzione predittiva",
+        "sensori vibrazione/temperatura",
+        "PdM (predictive maintenance)",
+        "pneumatica/oleodinamica",
+        "troubleshooting"
+      ]
+    }
+  ]
 }

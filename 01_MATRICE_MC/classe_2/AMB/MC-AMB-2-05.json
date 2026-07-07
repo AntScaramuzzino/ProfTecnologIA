@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini"
+      "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini. Analizzare dilemmi con valori in conflitto allena il pensiero dilemmatico: lo studente impara a stare nell'incertezza, a costruire argomentazioni fondate e a riconoscere che non sempre esiste una risposta unica — competenza adulta dell'imparare a imparare."
     },
     "EV": {
       "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Innovazione",
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire 3 problemi pre-selezionati e 3 soluzioni possibili. Lo studente sceglie e motiva.",
     "avanzato": "Analizzare i dati aperti (open data) del proprio comune: cosa pubblica? Cosa manca? Cosa si potrebbe fare con quei dati?"
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.6,
+    "durata_secondi": 37
+  },
+  "professione_futura": {
+    "titolo": "Urban Planner Sostenibile",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+    "competenze_chiave": [
+      "GIS",
+      "pianificazione urbana",
+      "mobilità sostenibile",
+      "Nature-Based Solutions"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "ciclo idrologico",
+      "en": "water cycle (hydrological cycle)",
+      "def": "Continua circolazione dell'acqua tra oceani, atmosfera e terra attraverso evaporazione, precipitazione e deflusso"
+    },
+    {
+      "it": "acquedotto",
+      "en": "aqueduct / water supply network",
+      "def": "Sistema di condotte e impianti che trasporta l'acqua potabile dalla fonte alle abitazioni"
+    },
+    {
+      "it": "potabilizzazione",
+      "en": "water treatment / purification",
+      "def": "Processo che rende l'acqua sicura per il consumo umano tramite filtrazione, sedimentazione e disinfezione"
+    },
+    {
+      "it": "impronta idrica",
+      "en": "water footprint",
+      "def": "Quantità totale di acqua utilizzata per produrre un bene o servizio, inclusa quella dei processi produttivi"
+    },
+    {
+      "it": "scarsità idrica",
+      "en": "water scarcity",
+      "def": "Situazione in cui la domanda di acqua supera la disponibilità in una certa area e periodo"
+    },
+    {
+      "it": "depurazione",
+      "en": "wastewater treatment",
+      "def": "Processo che rimuove inquinanti dall'acqua di scarico prima di restituirla all'ambiente naturale"
+    },
+    {
+      "it": "invarianza idraulica",
+      "en": "hydraulic invariance",
+      "def": "Principio per cui nuove costruzioni non devono aumentare il deflusso d'acqua piovana rispetto allo stato naturale"
+    }
+  ],
+  "uda_collegata": "L'acqua che usiamo: dall'acquedotto allo scarico, misurare e ridurre il consumo idrico scolastico (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 11,
+  "professioni_future": [
+    {
+      "titolo": "Urban Planner Sostenibile",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
+      "competenze_chiave": [
+        "GIS",
+        "pianificazione urbana",
+        "mobilità sostenibile",
+        "Nature-Based Solutions"
+      ]
+    },
+    {
+      "titolo": "Smart City Developer / Pianificatore IoT Urbano",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e integra soluzioni IoT (lampioni intelligenti, reti di sensori, parcheggi smart) nelle infrastrutture urbane, analizzando i dati per ottimizzare i servizi ai cittadini.",
+      "competenze_chiave": [
+        "IoT urbano",
+        "urban data platform",
+        "LoRaWAN/5G",
+        "open data",
+        "digital twin città"
+      ]
+    }
+  ]
 }

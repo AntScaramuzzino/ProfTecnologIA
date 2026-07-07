@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali"
+      "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali. Progettare azioni anti-spreco richiede pianificazione e autovalutazione: lo studente impara a tradurre intenzioni in comportamenti misurabili, competenza centrale dell'imparare a imparare."
     },
     "EV": {
       "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile; SDG 13 — Lotta al cambiamento climatico",
@@ -55,5 +55,84 @@
   "note_didattiche": {
     "base": "Concentrarsi solo sullo spreco domestico. Fornire tabella di monitoraggio semplificata (3 categorie).",
     "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.6,
+    "durata_secondi": 37
+  },
+  "professione_futura": {
+    "titolo": "Food Technologist / Nutrizionista Industriale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+    "competenze_chiave": [
+      "sicurezza alimentare",
+      "HACCP",
+      "etichettatura",
+      "analisi nutrizionale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "imballaggio alimentare",
+      "en": "food packaging",
+      "def": "Materiale che contiene, protegge e conserva un alimento durante distribuzione, vendita e uso"
+    },
+    {
+      "it": "over-packaging",
+      "en": "over-packaging",
+      "def": "Uso eccessivo di imballaggio rispetto alle reali esigenze di protezione del prodotto"
+    },
+    {
+      "it": "barriera",
+      "en": "barrier (packaging)",
+      "def": "Proprietà dell'imballaggio che impedisce il passaggio di ossigeno, umidità o luce per preservare l'alimento"
+    },
+    {
+      "it": "riciclabilità",
+      "en": "recyclability",
+      "def": "Capacità di un materiale di essere reintrodotto nel ciclo produttivo dopo l'uso, riducendo i rifiuti"
+    },
+    {
+      "it": "economia circolare",
+      "en": "circular economy",
+      "def": "Modello economico che elimina i rifiuti riutilizzando i materiali in cicli chiusi anziché smaltirli"
+    },
+    {
+      "it": "bioplastica",
+      "en": "bioplastic",
+      "def": "Plastica derivata da materie prime rinnovabili (amido, canna da zucchero) anziché da fonti fossili"
+    },
+    {
+      "it": "packaging sostenibile",
+      "en": "sustainable packaging",
+      "def": "Imballaggio progettato per ridurre l'impatto ambientale: meno materiale, materiali riciclabili o compostabili"
+    }
+  ],
+  "uda_collegata": "La vita degli imballaggi: analisi del packaging di 10 prodotti alimentari e proposta di alternative sostenibili (Tecnologia + Scienze + Educazione Civica)",
+  "sdg_principale": 2,
+  "professioni_future": [
+    {
+      "titolo": "Food Technologist / Nutrizionista Industriale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
+      "competenze_chiave": [
+        "sicurezza alimentare",
+        "HACCP",
+        "etichettatura",
+        "analisi nutrizionale"
+      ]
+    },
+    {
+      "titolo": "Food Waste Reduction Consultant",
+      "orizzonte": "2028",
+      "descrizione_breve": "Analizza i flussi di spreco alimentare in ristorazione, GDO e produzione industriale, progettando interventi di prevenzione, redistribuzione e valorizzazione degli scarti.",
+      "competenze_chiave": [
+        "analisi flussi rifiuti",
+        "normativa donazione alimenti",
+        "reportistica ESG",
+        "economia circolare food",
+        "gestione last-minute"
+      ]
+    }
+  ]
 }

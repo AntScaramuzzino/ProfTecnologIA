@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio"
+      "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio. Studiare i rischi del proprio territorio è apprendimento situato: lo studente collega concetti astratti (sismicità, idrogeologia, rischio alluvionale) a luoghi concreti, rinforzando la memoria con l'ancoraggio geografico e personale."
     },
     "EV": {
       "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire la scheda del comune già compilata parzialmente. Lo studente aggiunge solo la misura di prevenzione.",
     "avanzato": "Confrontare due comuni italiani con lo stesso livello di rischio ma diversa capacità di risposta: cosa fa la differenza?"
-  }
+  },
+  "hook_audio": {
+    "durata_min": 0.7,
+    "durata_secondi": 41
+  },
+  "professione_futura": {
+    "titolo": "Green Building Designer / Certificatore LEED",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+    "competenze_chiave": [
+      "LEED",
+      "efficienza energetica",
+      "materiali bio-based",
+      "BIM"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "smart city",
+      "en": "smart city",
+      "def": "Città che usa tecnologie digitali e dati per migliorare i servizi urbani, la mobilità e la qualità della vita"
+    },
+    {
+      "it": "sensore urbano",
+      "en": "urban sensor",
+      "def": "Dispositivo installato in città che raccoglie dati in tempo reale (traffico, qualità dell'aria, temperatura)"
+    },
+    {
+      "it": "open data",
+      "en": "open data",
+      "def": "Dati pubblici liberamente accessibili, scaricabili e riutilizzabili da chiunque senza restrizioni"
+    },
+    {
+      "it": "IoT (Internet delle Cose)",
+      "en": "IoT (Internet of Things)",
+      "def": "Rete di oggetti fisici dotati di sensori e connessione internet che raccolgono e scambiano dati"
+    },
+    {
+      "it": "mobilità condivisa",
+      "en": "shared mobility",
+      "def": "Sistemi di trasporto (car sharing, bike sharing, monopattini) che permettono l'uso condiviso di veicoli"
+    },
+    {
+      "it": "partecipazione civica digitale",
+      "en": "digital civic participation",
+      "def": "Coinvolgimento dei cittadini nelle decisioni pubbliche tramite piattaforme digitali e strumenti online"
+    },
+    {
+      "it": "algoritmo di ottimizzazione",
+      "en": "optimization algorithm",
+      "def": "Sequenza di calcoli che trova la soluzione migliore a un problema (es. gestione dei semafori, raccolta rifiuti)"
+    }
+  ],
+  "uda_collegata": "La nostra città è smart? Analisi dei dati urbani aperti e proposta di miglioramento per il quartiere (Tecnologia + Matematica + Educazione Civica + Arte)",
+  "sdg_principale": 11,
+  "professioni_future": [
+    {
+      "titolo": "Green Building Designer / Certificatore LEED",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+      "competenze_chiave": [
+        "LEED",
+        "efficienza energetica",
+        "materiali bio-based",
+        "BIM"
+      ]
+    },
+    {
+      "titolo": "Hydrogeological Risk Specialist",
+      "orizzonte": "2030",
+      "descrizione_breve": "Valuta e mappa i rischi idrogeologici (frane, alluvioni) usando GIS e modelli idrologici, supportando la pianificazione territoriale e la progettazione di opere di mitigazione.",
+      "competenze_chiave": [
+        "GIS/QGIS",
+        "idrologia",
+        "modellazione HEC-RAS",
+        "normativa PAI",
+        "early warning systems"
+      ]
+    }
+  ]
 }

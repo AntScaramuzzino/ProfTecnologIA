@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Problem solving",
-      "nota": "Lo studente affronta la costruzione come problema con procedura definita da rispettare"
+      "nota": "Lo studente affronta la costruzione geometrica come problema con procedura definita da rispettare. Il disegno tecnico come sequenza di passi controllabili sviluppa la capacità di monitorare il proprio lavoro step-by-step — competenza metacognitiva diretta dell'imparare a imparare, trasferibile a qualsiasi compito strutturato."
     },
     "EV": {
       "ref": "SDG 4 — Istruzione di qualità",
@@ -34,7 +34,7 @@
     "visual": "Poster sintetico: 6 costruzioni fondamentali con nome, strumenti, procedura in 3 passi.",
     "livelloDigComp": "F"
   },
-  "prerequisiti": null,
+  "prerequisiti": [],
   "tags": [
     "disegno tecnico",
     "geometria",
@@ -50,5 +50,84 @@
   "note_didattiche": {
     "base": "Fornire il foglio già impostato con la cornice e il cartiglio. Lo studente deve solo eseguire la costruzione indicata.",
     "avanzato": "Aggiungere una seconda pianta in scala diversa (1:50) e discutere come cambia la rappresentazione."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.6,
+    "durata_secondi": 218
+  },
+  "professione_futura": {
+    "titolo": "BIM Designer / Architetto Digitale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+    "competenze_chiave": [
+      "BIM modeling",
+      "AutoCAD",
+      "Revit",
+      "disegno tecnico avanzato"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "disegno tecnico",
+      "en": "technical drawing",
+      "def": "Rappresentazione grafica precisa di oggetti o strutture, con regole standardizzate a livello internazionale"
+    },
+    {
+      "it": "costruzione geometrica",
+      "en": "geometric construction",
+      "def": "Procedura per tracciare figure geometriche con riga, squadra e compasso seguendo passaggi precisi"
+    },
+    {
+      "it": "norma UNI/ISO",
+      "en": "UNI/ISO standard",
+      "def": "Regola tecnica condivisa a livello nazionale o internazionale che garantisce la compatibilità tra disegni"
+    },
+    {
+      "it": "squadra",
+      "en": "set square",
+      "def": "Strumento triangolare per tracciare angoli precisi (30-60-90° o 45-45-90°) nel disegno tecnico"
+    },
+    {
+      "it": "compasso",
+      "en": "compass",
+      "def": "Strumento a due punte per tracciare archi e circonferenze di raggio preciso"
+    },
+    {
+      "it": "asse di simmetria",
+      "en": "axis of symmetry",
+      "def": "Linea che divide una figura in due parti speculari perfettamente uguali"
+    },
+    {
+      "it": "perpendicolare",
+      "en": "perpendicular",
+      "def": "Retta che forma un angolo di 90° con un'altra retta o con un piano"
+    }
+  ],
+  "uda_collegata": "Il linguaggio universale delle forme: dal disegno tecnico alla comunicazione visiva (Tecnologia + Matematica + Arte)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "BIM Designer / Architetto Digitale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+      "competenze_chiave": [
+        "BIM modeling",
+        "AutoCAD",
+        "Revit",
+        "disegno tecnico avanzato"
+      ]
+    },
+    {
+      "titolo": "Tecnico Disegnatore / Drafting Specialist",
+      "orizzonte": "2028",
+      "descrizione_breve": "Produce documentazione tecnica di precisione (tavole, esplosi, manuali) per industria meccanica, edilizia e design del prodotto, usando CAD 2D e 3D.",
+      "competenze_chiave": [
+        "AutoCAD",
+        "GD&T (tolleranze geometriche)",
+        "norme ISO disegno",
+        "documentazione tecnica",
+        "revisione tavole"
+      ]
+    }
+  ]
 }

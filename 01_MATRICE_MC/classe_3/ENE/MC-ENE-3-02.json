@@ -34,7 +34,9 @@
     "visual": "Infografica: 'Come arriva la luce in casa?' — dal giacimento di gas alla presa elettrica in 6 passi.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": null,
+  "prerequisiti": [
+    "MC-ENE-3-01"
+  ],
   "tags": [
     "combustibili fossili",
     "energia non rinnovabile",
@@ -51,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire i fattori di conversione e un esempio già calcolato per il riscaldamento. Lo studente calcola solo trasporti ed elettricità.",
     "avanzato": "Simulare 3 scenari di riduzione (auto elettrica, pannelli solari, casa ben isolata) e calcolare il risparmio di CO₂ per ciascuno."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.3,
+    "durata_secondi": 260
+  },
+  "professione_futura": {
+    "titolo": "Energy Manager Aziendale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
+    "competenze_chiave": [
+      "audit energetico",
+      "efficienza energetica",
+      "rinnovabili",
+      "reportistica ESG"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "combustibile fossile",
+      "en": "fossil fuel",
+      "def": "Fonte energetica (carbone, petrolio, gas naturale) formata da resti di organismi antichi; non rinnovabile"
+    },
+    {
+      "it": "effetto serra",
+      "en": "greenhouse effect",
+      "def": "Riscaldamento dell'atmosfera causato dall'accumulo di gas (CO₂, metano) che trattengono il calore solare"
+    },
+    {
+      "it": "energia nucleare",
+      "en": "nuclear energy",
+      "def": "Energia liberata dalla fissione del nucleo di atomi pesanti (uranio); produce vapore per turbine senza CO₂ diretta"
+    },
+    {
+      "it": "impronta carbonica",
+      "en": "carbon footprint",
+      "def": "Quantità di CO₂ equivalente emessa da un'attività, prodotto o persona; misura dell'impatto climatico"
+    },
+    {
+      "it": "raffineria",
+      "en": "oil refinery",
+      "def": "Impianto che separa il petrolio grezzo nei suoi componenti (benzina, diesel, kerosene, plastica) tramite distillazione"
+    },
+    {
+      "it": "fissione nucleare",
+      "en": "nuclear fission",
+      "def": "Reazione in cui un nucleo pesante si divide in due nuclei più leggeri liberando enormi quantità di energia"
+    },
+    {
+      "it": "centrale termoelettrica",
+      "en": "thermal power plant",
+      "def": "Impianto che brucia combustibili fossili per produrre vapore, che aziona turbine collegate a generatori elettrici"
+    }
+  ],
+  "uda_collegata": "Calcola la tua impronta carbonica: dalla casa alla scuola, misurare e proporre soluzioni (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 7,
+  "professioni_future": [
+    {
+      "titolo": "Energy Manager Aziendale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
+      "competenze_chiave": [
+        "audit energetico",
+        "efficienza energetica",
+        "rinnovabili",
+        "reportistica ESG"
+      ]
+    },
+    {
+      "titolo": "Energy Auditor / Consulente Energetico",
+      "orizzonte": "2028",
+      "descrizione_breve": "Esegue diagnosi energetiche di edifici e impianti industriali, identificando inefficienze e interventi di risparmio energetico, con validazione tramite certificazione EGE.",
+      "competenze_chiave": [
+        "diagnosi energetica",
+        "APE (Attestato Prestazione Energetica)",
+        "D.Lgs. 102/2014",
+        "simulazione energetica",
+        "analisi costi-benefici"
+      ]
+    }
+  ]
 }

@@ -16,8 +16,8 @@
       "nota": "Lo studente diagnostica e corregge errori nel codice e nel comportamento fisico del robot in modo autonomo"
     },
     "EC": {
-      "ref": "Into action / Planning and management",
-      "nota": "Lo studente gestisce un progetto robotico dalla specifica al test finale con documentazione"
+      "ref": "Into action / Planning and management; Creativity and ideation; Mobilizing resources",
+      "nota": "Lo studente gestisce un progetto robotico completo dalla specifica al test finale con documentazione iterativa. L'intera pipeline (progettazione, prototipazione, debug, presentazione) è un ciclo imprenditoriale in miniatura: lo studente sperimenta creatività e ideazione nella fase di concetto, pianificazione e gestione nella fase di sviluppo, e assunzione di rischi calcolati nel testing. Competenza EntreComp che va oltre la robotica."
     },
     "LC": {
       "ref": "Thinking / Problem solving",
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire il problema già definito e lo scheletro del codice con le funzioni principali già scritte. Lo studente completa il corpo delle funzioni.",
     "avanzato": "Aggiungere un'interfaccia utente (display, LED o app mobile via Bluetooth) e documentare il progetto in un portfolio digitale."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.3,
+    "durata_secondi": 259
+  },
+  "professione_futura": {
+    "titolo": "Digital Literacy Educator",
+    "orizzonte": "2030",
+    "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+    "competenze_chiave": [
+      "DigComp 3.0",
+      "media literacy",
+      "cybersecurity base",
+      "formazione digitale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "robotica educativa",
+      "en": "educational robotics",
+      "def": "Uso di robot programmabili in ambito scolastico per sviluppare pensiero computazionale e competenze STEM"
+    },
+    {
+      "it": "sensore",
+      "en": "sensor",
+      "def": "Componente del robot che rileva informazioni dall'ambiente (luce, distanza, colore, tatto) per guidare il comportamento"
+    },
+    {
+      "it": "attuatore",
+      "en": "actuator",
+      "def": "Componente che produce un'azione fisica in risposta a un segnale (motore, altoparlante, LED)"
+    },
+    {
+      "it": "programmazione event-driven",
+      "en": "event-driven programming",
+      "def": "Paradigma di programmazione in cui l'esecuzione è guidata da eventi esterni (sensori, input utente, timer)"
+    },
+    {
+      "it": "apprendimento automatico",
+      "en": "machine learning",
+      "def": "Capacità di un sistema di migliorare le proprie prestazioni tramite l'analisi di dati, senza essere esplicitamente programmato"
+    },
+    {
+      "it": "debugging sistematico",
+      "en": "systematic debugging",
+      "def": "Processo strutturato di ricerca degli errori in un programma: isolare, testare, correggere, verificare"
+    },
+    {
+      "it": "algoritmo adattivo",
+      "en": "adaptive algorithm",
+      "def": "Algoritmo che modifica il proprio comportamento in base all'input ricevuto e ai risultati precedenti"
+    }
+  ],
+  "uda_collegata": "Un robot per la nostra scuola: progettare e programmare un robot che risolve un problema reale dell'istituto (Tecnologia + Scienze + Matematica + Arte)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "Digital Literacy Educator",
+      "orizzonte": "2030",
+      "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+      "competenze_chiave": [
+        "DigComp 3.0",
+        "media literacy",
+        "cybersecurity base",
+        "formazione digitale"
+      ]
+    },
+    {
+      "titolo": "Robotics Software Developer / Programmatore ROS",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa software per robot autonomi usando ROS 2 (Robot Operating System), implementando algoritmi di navigazione, percezione e pianificazione del movimento.",
+      "competenze_chiave": [
+        "ROS 2",
+        "Python/C++",
+        "SLAM",
+        "computer vision",
+        "simulazione Gazebo"
+      ]
+    }
+  ]
 }

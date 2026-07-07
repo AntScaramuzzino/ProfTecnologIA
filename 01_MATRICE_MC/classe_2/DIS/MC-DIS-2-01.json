@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Thinking / Problem solving",
-      "nota": "Lo studente risolve problemi di corrispondenza tra le viste applicando le regole di proiezione"
+      "nota": "Lo studente risolve problemi di corrispondenza tra le viste applicando le regole di proiezione ortogonale. Questa risoluzione richiede di controllare la coerenza tra proiezioni diverse — lo studente sviluppa l'abitudine a verificare il proprio lavoro prima di considerarlo concluso: metacognizione applicata al disegno tecnico."
     },
     "EV": {
       "ref": "SDG 4 — Istruzione di qualità",
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire un solido elementare (parallelepipedo) con le misure già date. Lo studente deve solo posizionare e disegnare le 3 viste.",
     "avanzato": "Disegnare le viste ortogonali di un oggetto con almeno un foro passante e una sezione trasversale per evidenziarne l'interno."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.7,
+    "durata_secondi": 224
+  },
+  "professione_futura": {
+    "titolo": "BIM Designer / Architetto Digitale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+    "competenze_chiave": [
+      "BIM modeling",
+      "AutoCAD",
+      "Revit",
+      "disegno tecnico avanzato"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "proiezione ortogonale",
+      "en": "orthographic projection",
+      "def": "Metodo di rappresentazione che mostra un oggetto 3D attraverso viste piatte perpendicolari (fronte, lato, alto)"
+    },
+    {
+      "it": "metodo di Monge",
+      "en": "Monge's method (first-angle projection)",
+      "def": "Sistema europeo di proiezione ortogonale con tre viste: frontale, laterale e dall'alto, disposte secondo regole precise"
+    },
+    {
+      "it": "sezione",
+      "en": "cross-section",
+      "def": "Vista che mostra l'interno di un oggetto come se fosse tagliato da un piano immaginario"
+    },
+    {
+      "it": "linea di costruzione",
+      "en": "construction line",
+      "def": "Linea sottile e ausiliaria usata per costruire il disegno, non rappresenta il contorno dell'oggetto"
+    },
+    {
+      "it": "vista frontale",
+      "en": "front view",
+      "def": "Proiezione principale che mostra l'oggetto visto di fronte; da essa si derivano le altre due viste"
+    },
+    {
+      "it": "convenzione grafica",
+      "en": "graphic convention",
+      "def": "Regola standardizzata (spessori di linea, tratteggi, simboli) che rende il disegno tecnico universalmente leggibile"
+    },
+    {
+      "it": "assonometria",
+      "en": "axonometric projection",
+      "def": "Rappresentazione tridimensionale di un oggetto su un piano con assi inclinati; mostra profondità senza prospettiva"
+    }
+  ],
+  "uda_collegata": "Progettare uno spazio: rappresentazione ortogonale di un ambiente reale della scuola (Tecnologia + Matematica + Arte)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "BIM Designer / Architetto Digitale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+      "competenze_chiave": [
+        "BIM modeling",
+        "AutoCAD",
+        "Revit",
+        "disegno tecnico avanzato"
+      ]
+    },
+    {
+      "titolo": "Process Engineer / Tecnico di Produzione",
+      "orizzonte": "2028",
+      "descrizione_breve": "Ottimizza i processi produttivi in ambito industriale usando le proiezioni ortogonali per leggere e creare disegni di officina, gestendo la sequenza di lavorazione dei componenti.",
+      "competenze_chiave": [
+        "disegno di officina",
+        "tolleranze dimensionali",
+        "cicli di lavorazione",
+        "lean manufacturing",
+        "SolidWorks/Inventor"
+      ]
+    }
+  ]
 }

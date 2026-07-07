@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Partire dall'assonometria cavaliera di un parallelepipedo semplice. Lo studente aggiunge solo la prospettiva a un punto di fuga.",
     "avanzato": "Realizzare il modello 3D digitale in SketchUp e produrre render fotorealistici dell'oggetto progettato con diversi materiali applicati."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.7,
+    "durata_secondi": 279
+  },
+  "professione_futura": {
+    "titolo": "BIM Designer / Architetto Digitale",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+    "competenze_chiave": [
+      "BIM modeling",
+      "AutoCAD",
+      "Revit",
+      "disegno tecnico avanzato"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "prospettiva",
+      "en": "perspective drawing",
+      "def": "Tecnica di rappresentazione che simula la percezione visiva umana con punti di fuga e riduzione in profondità"
+    },
+    {
+      "it": "design thinking",
+      "en": "design thinking",
+      "def": "Metodologia di progettazione centrata sull'utente in 5 fasi: empatia, definizione, ideazione, prototipazione, test"
+    },
+    {
+      "it": "ergonomia",
+      "en": "ergonomics",
+      "def": "Disciplina che adatta strumenti e ambienti alle caratteristiche fisiche e cognitive dell'essere umano"
+    },
+    {
+      "it": "design sostenibile",
+      "en": "sustainable design",
+      "def": "Progettazione che considera l'intero ciclo di vita del prodotto minimizzando l'impatto ambientale"
+    },
+    {
+      "it": "brief di progetto",
+      "en": "design brief",
+      "def": "Documento che definisce obiettivi, vincoli, destinatari e criteri di valutazione di un progetto di design"
+    },
+    {
+      "it": "prototipo",
+      "en": "prototype",
+      "def": "Modello preliminare di un prodotto usato per testare idee, funzionalità ed ergonomia prima della produzione definitiva"
+    },
+    {
+      "it": "punto di fuga",
+      "en": "vanishing point",
+      "def": "Punto sull'orizzonte verso cui convergono le linee parallele nella prospettiva centrale o accidentale"
+    }
+  ],
+  "uda_collegata": "Progetta il tuo spazio ideale: dal design thinking al rendering prospettico di un ambiente scolastico migliorato (Tecnologia + Arte + Matematica + Educazione Civica)",
+  "sdg_principale": 4,
+  "professioni_future": [
+    {
+      "titolo": "BIM Designer / Architetto Digitale",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
+      "competenze_chiave": [
+        "BIM modeling",
+        "AutoCAD",
+        "Revit",
+        "disegno tecnico avanzato"
+      ]
+    },
+    {
+      "titolo": "Architetto / Interior Designer",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta spazi abitativi e commerciali coniugando estetica, funzionalità e sostenibilità, dalle fasi di concept e prospettiva manuale fino ai dettagli costruttivi in BIM.",
+      "competenze_chiave": [
+        "ArchiCAD/Revit",
+        "prospettiva e rendering",
+        "normativa edilizia",
+        "progettazione bioclimatica",
+        "gestione cliente"
+      ]
+    }
+  ]
 }

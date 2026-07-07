@@ -21,7 +21,7 @@
     },
     "LC": {
       "ref": "Self-management / Responsible decisions",
-      "nota": "Lo studente assume responsabilità nelle scelte energetiche domestiche quotidiane"
+      "nota": "Lo studente assume responsabilità nelle scelte energetiche domestiche quotidiane. Calcolare i consumi reali è un esercizio di auto-monitoraggio e di imparare a imparare: lo studente raccoglie dati sul proprio comportamento, li analizza e riformula decisioni in base ai risultati."
     },
     "EV": {
       "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Lotta al cambiamento climatico",
@@ -53,5 +53,84 @@
   "note_didattiche": {
     "base": "Fornire la pianta della casa già disegnata. Lo studente deve solo aggiungere i simboli degli impianti su overlay.",
     "avanzato": "Calcolare il consumo mensile dell'intera abitazione e identificare i 3 elettrodomestici più energivori con proposte di sostituzione."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 3.7,
+    "durata_secondi": 224
+  },
+  "professione_futura": {
+    "titolo": "Green Building Designer / Certificatore LEED",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+    "competenze_chiave": [
+      "LEED",
+      "efficienza energetica",
+      "materiali bio-based",
+      "BIM"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "impianto elettrico",
+      "en": "electrical system",
+      "def": "Insieme di cavi, interruttori e prese che distribuisce l'energia elettrica all'interno di un edificio"
+    },
+    {
+      "it": "classe energetica",
+      "en": "energy class",
+      "def": "Classificazione degli edifici (dalla G alla A4) in base al consumo di energia per riscaldamento e raffrescamento"
+    },
+    {
+      "it": "pannello fotovoltaico",
+      "en": "photovoltaic panel",
+      "def": "Dispositivo che converte direttamente la luce solare in corrente elettrica tramite effetto fotovoltaico"
+    },
+    {
+      "it": "isolamento termico",
+      "en": "thermal insulation",
+      "def": "Strato di materiale con bassa conducibilità che riduce la dispersione di calore attraverso pareti e tetti"
+    },
+    {
+      "it": "kWh (chilowattora)",
+      "en": "kWh (kilowatt-hour)",
+      "def": "Unità di misura dell'energia elettrica consumata; 1 kWh = energia usata da un dispositivo da 1000W per un'ora"
+    },
+    {
+      "it": "bolletta energetica",
+      "en": "energy bill",
+      "def": "Documento che riporta il consumo di energia elettrica o gas di un utente in un dato periodo"
+    },
+    {
+      "it": "efficienza energetica",
+      "en": "energy efficiency",
+      "def": "Rapporto tra l'energia utile prodotta e l'energia totale consumata; maggiore è, meno si spreca"
+    }
+  ],
+  "uda_collegata": "Quanto consuma la nostra scuola? Audit energetico e proposta di risparmio (Tecnologia + Scienze + Matematica + Educazione Civica)",
+  "sdg_principale": 7,
+  "professioni_future": [
+    {
+      "titolo": "Green Building Designer / Certificatore LEED",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
+      "competenze_chiave": [
+        "LEED",
+        "efficienza energetica",
+        "materiali bio-based",
+        "BIM"
+      ]
+    },
+    {
+      "titolo": "Installatore Impianti da Fonti Rinnovabili / Termotecnico",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta e installa impianti fotovoltaici, pompe di calore e solare termico per edifici residenziali e commerciali, gestendo pratiche GSE e incentivi statali.",
+      "competenze_chiave": [
+        "fotovoltaico",
+        "pompe di calore",
+        "Conto Energia/Superbonus",
+        "normativa CEI",
+        "diagnosi energetica"
+      ]
+    }
+  ]
 }

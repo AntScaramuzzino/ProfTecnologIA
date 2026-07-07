@@ -24,8 +24,8 @@
       "nota": "Lo studente analizza messaggi sospetti, siti web e richieste di dati con pensiero critico per identificare tentativi di manipolazione"
     },
     "EV": {
-      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-      "nota": "La sicurezza informatica è diritto e responsabilità civica: proteggere la propria identità digitale contribuisce a proteggere anche quella degli altri"
+      "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D2 (tutela dati/identità); L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "Il D.M. 183/2024 prescrive la 'tutela dei dati e dell'identità personale' come traguardo di Cittadinanza digitale (D2). La cifratura e la sicurezza informatica sono gli strumenti tecnici che rendono concretamente possibile questo diritto civico."
     }
   },
   "outputApp": {
@@ -61,8 +61,9 @@
     "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
     "oggetto_reale": "un messaggio cifrato",
     "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-    "durata_min": 3,
-    "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale."
+    "durata_min": 0.9,
+    "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
+    "durata_secondi": 56
   },
   "professione_futura": {
     "titolo": "Cybersecurity Analyst",
@@ -96,7 +97,37 @@
       "italiano": "malware",
       "inglese": "malware",
       "pronuncia_ipa": "/ˈmælweər/"
+    },
+    {
+      "italiano": "crittografia",
+      "inglese": "cryptography",
+      "pronuncia_ipa": "/krɪpˈtɒɡrəfi/"
     }
   ],
-  "uda_collegata": null
+  "uda_collegata": "UDA-2 — La Città che Vorrei",
+  "professioni_future": [
+    {
+      "titolo": "Cybersecurity Analyst",
+      "orizzonte": "2030",
+      "descrizione_breve": "Protegge sistemi informatici e dati aziendali da attacchi, analizza le vulnerabilità e progetta difese — una delle professioni con maggiore carenza di profili in Europa.",
+      "competenze_chiave": [
+        "crittografia applicata",
+        "analisi delle vulnerabilità",
+        "risposta agli incidenti",
+        "ethical hacking"
+      ]
+    },
+    {
+      "titolo": "Penetration Tester / Ethical Hacker",
+      "orizzonte": "2030",
+      "descrizione_breve": "Esegue test di intrusione autorizzati su sistemi informatici per identificarne le vulnerabilità prima che lo facciano attori malevoli, producendo report di remediation.",
+      "competenze_chiave": [
+        "Kali Linux",
+        "OWASP Top 10",
+        "Metasploit",
+        "social engineering",
+        "report vulnerabilità"
+      ]
+    }
+  ]
 }

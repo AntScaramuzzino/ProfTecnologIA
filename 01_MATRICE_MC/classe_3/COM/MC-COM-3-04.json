@@ -54,5 +54,84 @@
   "note_didattiche": {
     "base": "Fornire le 5 esigenze già identificate. Lo studente deve solo scegliere la tecnologia e descrivere brevemente il funzionamento.",
     "avanzato": "Simulare il sistema con Arduino/micro:bit: costruire il prototipo di almeno uno dei 5 sistemi progettati."
-  }
+  },
+  "hook_audio": {
+    "durata_min": 4.3,
+    "durata_secondi": 261
+  },
+  "professione_futura": {
+    "titolo": "Mobility & Logistics Engineer",
+    "orizzonte": "2030",
+    "descrizione_breve": "Ottimizza reti di trasporto e logistica per ridurre emissioni e inefficienze.",
+    "competenze_chiave": [
+      "logistica sostenibile",
+      "mobilità urbana",
+      "GIS",
+      "trasporto intermodale"
+    ]
+  },
+  "clil_termini": [
+    {
+      "it": "automazione industriale",
+      "en": "industrial automation",
+      "def": "Uso di sistemi tecnologici (robot, PLC, sensori) per eseguire processi produttivi senza intervento umano diretto"
+    },
+    {
+      "it": "robot collaborativo (cobot)",
+      "en": "collaborative robot (cobot)",
+      "def": "Robot progettato per lavorare in sicurezza fianco a fianco con operatori umani in ambienti condivisi"
+    },
+    {
+      "it": "Industria 4.0",
+      "en": "Industry 4.0",
+      "def": "Quarta rivoluzione industriale basata su IoT, big data, intelligenza artificiale e interconnessione digitale dei sistemi produttivi"
+    },
+    {
+      "it": "gemello digitale",
+      "en": "digital twin",
+      "def": "Replica virtuale di un oggetto, processo o sistema fisico aggiornata in tempo reale per simulare e ottimizzare"
+    },
+    {
+      "it": "domotica",
+      "en": "home automation (domotics)",
+      "def": "Sistema integrato di tecnologie che automatizza e controlla impianti e dispositivi di un'abitazione da remoto"
+    },
+    {
+      "it": "sensore",
+      "en": "sensor",
+      "def": "Dispositivo che rileva una grandezza fisica (temperatura, pressione, luce, posizione) e la converte in segnale elettrico"
+    },
+    {
+      "it": "stampa 3D",
+      "en": "3D printing (additive manufacturing)",
+      "def": "Tecnologia di produzione che costruisce oggetti tridimensionali aggiungendo materiale strato per strato"
+    }
+  ],
+  "uda_collegata": "La fabbrica del futuro: progettare una linea produttiva automatizzata per un oggetto di uso scolastico (Tecnologia + Scienze + Matematica + Arte)",
+  "sdg_principale": 9,
+  "professioni_future": [
+    {
+      "titolo": "Mobility & Logistics Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Ottimizza reti di trasporto e logistica per ridurre emissioni e inefficienze.",
+      "competenze_chiave": [
+        "logistica sostenibile",
+        "mobilità urbana",
+        "GIS",
+        "trasporto intermodale"
+      ]
+    },
+    {
+      "titolo": "PLC Programmer / Automation Technician",
+      "orizzonte": "2028",
+      "descrizione_breve": "Programma controllori logici (PLC) per automatizzare linee di produzione industriali, integrando robot, sensori e SCADA in ambienti Industry 4.0.",
+      "competenze_chiave": [
+        "PLC (Siemens/Rockwell)",
+        "ladder logic",
+        "SCADA/HMI",
+        "robotica industriale",
+        "diagnosi guasti"
+      ]
+    }
+  ]
 }
