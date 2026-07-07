@@ -90,7 +90,8 @@ export function AccordionSection({
               </button>
             </h3>
 
-            {/* Pannello collassabile — usa grid-rows per animazione CSS senza JS height calc */}
+            {/* Pannello collassabile — usa grid-rows per animazione CSS senza JS height calc.
+                inert quando chiuso: impedisce il focus su elementi interni (WCAG 2.1.1). */}
             <div
               id={panelId}
               role="region"
@@ -100,7 +101,9 @@ export function AccordionSection({
                 isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
               )}
             >
-              <div className="min-h-0">
+              {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+              {/* @ts-ignore — inert è un attributo HTML5 standard, non ancora tipizzato in React */}
+              <div className="min-h-0" {...(!isOpen ? { inert: "" } : {})}>
                 <div className="pb-6 pt-1">
                   {item.children}
                 </div>

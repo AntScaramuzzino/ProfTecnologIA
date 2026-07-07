@@ -161,7 +161,16 @@ export function getMCsByAnno(anno: 1 | 2 | 3): MC[] {
   return getAllMCs().filter((mc) => mc.anno === anno);
 }
 
-export function getPrerequisiteChain(mcId: string): MC[] {
+export function getPrerequisiteChain(mcId: string, _visited = new Set<string>()): MC[] {
+  // Guardia anti-ciclo: un arco A→B→A causerebbe stack overflow senza questo check.
+  if (_visited.has(mcId)) {
+    if (process.env.NODE_ENV !== "production") {
+      console.warn(`[getPrerequisiteChain] Ciclo rilevato in ${mcId}. Percorso: ${[..._visited].join(" → ")}`);
+    }
+    return [];
+  }
+  _visited.add(mcId);
+
   const all = getAllMCs();
   const mc = all.find((m) => m.id === mcId);
   if (!mc || !mc.prerequisiti) return [];
@@ -170,8 +179,7 @@ export function getPrerequisiteChain(mcId: string): MC[] {
   for (const prereqId of mc.prerequisiti) {
     const prereq = all.find((m) => m.id === prereqId);
     if (prereq) {
-      // Ricorsivo per la catena completa
-      chain.push(...getPrerequisiteChain(prereqId), prereq);
+      chain.push(...getPrerequisiteChain(prereqId, new Set(_visited)), prereq);
     }
   }
   return chain;

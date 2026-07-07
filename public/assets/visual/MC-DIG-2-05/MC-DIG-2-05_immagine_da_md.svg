@@ -1,81 +1,40 @@
-<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, sans-serif">
-  <!-- Background -->
-  <rect width="800" height="500" fill="#F0FDF4" rx="16"/>
-  
-  <!-- Header bar -->
-  <rect x="0" y="0" width="800" height="72" fill="#15803D" rx="16"/>
-  <rect x="0" y="56" width="800" height="16" fill="#15803D"/>
-  <text x="40" y="30" font-size="13" font-weight="700" fill="#BBF7D0" letter-spacing="2">MC-DIG-2-05 · BENESSERE DIGITALE</text>
-  <text x="40" y="54" font-size="20" font-weight="900" fill="white">I segni del sovraccarico digitale</text>
-
-  <!-- Central icon: phone with warning -->
-  <rect x="356" y="100" width="88" height="140" rx="12" fill="white" stroke="#DC2626" stroke-width="3"/>
-  <rect x="366" y="114" width="68" height="98" rx="4" fill="#FEE2E2"/>
-  <text x="400" y="178" font-size="36" text-anchor="middle">📵</text>
-  <rect x="386" y="222" width="28" height="6" rx="3" fill="#DC2626"/>
-
-  <!-- Warning label -->
-  <rect x="330" y="248" width="140" height="28" rx="14" fill="#DC2626"/>
-  <text x="400" y="267" font-size="12" font-weight="700" fill="white" text-anchor="middle">ATTENZIONE!</text>
-
-  <!-- Signs — 6 cards arranged around centre -->
-  <!-- 1. Sonno -->
-  <rect x="30" y="100" width="180" height="80" rx="12" fill="white" stroke="#6366F1" stroke-width="2"/>
-  <text x="50" y="132" font-size="22">😴</text>
-  <text x="82" y="128" font-size="13" font-weight="700" fill="#3730A3">Sonno disturbato</text>
-  <text x="50" y="148" font-size="11" fill="#4B5563">Difficoltà ad addormentarsi,</text>
-  <text x="50" y="162" font-size="11" fill="#4B5563">svegliarsi stanchi</text>
-
-  <!-- 2. Attenzione -->
-  <rect x="590" y="100" width="180" height="80" rx="12" fill="white" stroke="#F59E0B" stroke-width="2"/>
-  <text x="610" y="132" font-size="22">🎯</text>
-  <text x="642" y="128" font-size="13" font-weight="700" fill="#92400E">Difficoltà di concentrazione</text>
-  <text x="610" y="148" font-size="11" fill="#4B5563">Non si riesce a stare</text>
-  <text x="610" y="162" font-size="11" fill="#4B5563">su un compito per lungo</text>
-
-  <!-- 3. Ansia -->
-  <rect x="30" y="210" width="180" height="80" rx="12" fill="white" stroke="#EC4899" stroke-width="2"/>
-  <text x="50" y="242" font-size="22">😰</text>
-  <text x="82" y="238" font-size="13" font-weight="700" fill="#9D174D">Ansia senza telefono</text>
-  <text x="50" y="258" font-size="11" fill="#4B5563">Disagio o agitazione</text>
-  <text x="50" y="272" font-size="11" fill="#4B5563">quando offline</text>
-
-  <!-- 4. Isolamento -->
-  <rect x="590" y="210" width="180" height="80" rx="12" fill="white" stroke="#06B6D4" stroke-width="2"/>
-  <text x="610" y="242" font-size="22">🏠</text>
-  <text x="642" y="238" font-size="13" font-weight="700" fill="#155E75">Isolamento sociale</text>
-  <text x="610" y="258" font-size="11" fill="#4B5563">Preferire il virtuale</text>
-  <text x="610" y="272" font-size="11" fill="#4B5563">al reale</text>
-
-  <!-- 5. Umore -->
-  <rect x="30" y="320" width="180" height="80" rx="12" fill="white" stroke="#8B5CF6" stroke-width="2"/>
-  <text x="50" y="352" font-size="22">😠</text>
-  <text x="82" y="348" font-size="13" font-weight="700" fill="#5B21B6">Irritabilità offline</text>
-  <text x="50" y="368" font-size="11" fill="#4B5563">Nervosismo quando</text>
-  <text x="50" y="382" font-size="11" fill="#4B5563">si toglie il dispositivo</text>
-
-  <!-- 6. Fisico -->
-  <rect x="590" y="320" width="180" height="80" rx="12" fill="white" stroke="#10B981" stroke-width="2"/>
-  <text x="610" y="352" font-size="22">👁️</text>
-  <text x="642" y="348" font-size="13" font-weight="700" fill="#065F46">Sintomi fisici</text>
-  <text x="610" y="368" font-size="11" fill="#4B5563">Occhi stanchi, mal di</text>
-  <text x="610" y="382" font-size="11" fill="#4B5563">testa, dolori al collo</text>
-
-  <!-- Connecting lines from cards to centre -->
-  <line x1="210" y1="140" x2="356" y2="158" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <line x1="590" y1="140" x2="444" y2="158" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <line x1="210" y1="250" x2="356" y2="200" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <line x1="590" y1="250" x2="444" y2="200" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <line x1="210" y1="360" x2="356" y2="230" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <line x1="590" y1="360" x2="444" y2="230" stroke="#94A3B8" stroke-width="1.5" stroke-dasharray="5,3"/>
-
-  <!-- Bottom: the solution -->
-  <rect x="240" y="320" width="320" height="90" rx="12" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
-  <text x="400" y="346" font-size="13" font-weight="900" fill="#15803D" text-anchor="middle">💡 LA REGOLA DEL 20-20-20</text>
-  <text x="400" y="366" font-size="11" fill="#166534" text-anchor="middle">Ogni 20 minuti di schermo:</text>
-  <text x="400" y="382" font-size="11" fill="#166534" text-anchor="middle">guarda un oggetto a 6 m per 20 secondi</text>
-  <text x="400" y="398" font-size="11" fill="#166534" text-anchor="middle">→ riduce l'affaticamento visivo del 40%</text>
-
-  <!-- Footer -->
-  <text x="400" y="480" font-size="10" fill="#6B7280" text-anchor="middle">ProfTecnologIA · MC-DIG-2-05 · Benessere digitale e cittadinanza responsabile</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<rect width="1600" height="1000" fill="#F8FBFD"/>
+<defs><filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#12313F" flood-opacity="0.14"/></filter></defs>
+<text x="80" y="80.0" text-anchor="start" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="30" font-weight="800" fill="#17313B">MC-DIG-2-05</text>
+<text x="80" y="135.0" text-anchor="start" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="44" font-weight="800" fill="#0277BD">Benessere digitale: segnali e risposte</text>
+<g filter="url(#shadow)"><rect x="95" y="215" width="440" height="590" rx="24" fill="white" stroke="#1565C0" stroke-width="6"/><rect x="95" y="215" width="440" height="96" rx="24" fill="#1565C0"/><rect x="95" y="265" width="440" height="46" fill="#1565C0"/></g>
+<text x="315" y="263.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="34" font-weight="800" fill="white">Segnali</text>
+<circle cx="315" cy="382" r="64" fill="#E3F2FD" stroke="#1565C0" stroke-width="6"/><path d="M315 342 L315 392 L345 414" fill="none" stroke="#1565C0" stroke-width="10" stroke-linecap="round"/>
+<rect x="150" y="507" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#1565C0" stroke-width="4"/>
+<text x="315" y="535.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">sonno disturbato</text>
+<rect x="150" y="573" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#1565C0" stroke-width="4"/>
+<text x="315" y="601.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">notifiche continue</text>
+<rect x="150" y="639" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#1565C0" stroke-width="4"/>
+<text x="315" y="667.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">fatica a concentrarsi</text>
+<rect x="150" y="705" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#1565C0" stroke-width="4"/>
+<text x="315" y="733.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">irritazione offline</text>
+<g filter="url(#shadow)"><rect x="600" y="215" width="440" height="590" rx="24" fill="white" stroke="#00695C" stroke-width="6"/><rect x="600" y="215" width="440" height="96" rx="24" fill="#00695C"/><rect x="600" y="265" width="440" height="46" fill="#00695C"/></g>
+<text x="820" y="263.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="34" font-weight="800" fill="white">Strategie</text>
+<rect x="750" y="326" width="140" height="108" rx="24" fill="#E0F2F1" stroke="#00695C" stroke-width="6"/><circle cx="820" cy="445" r="9" fill="#00695C"/><path d="M758 486 C805 456 835 456 882 486" fill="none" stroke="#00695C" stroke-width="9" stroke-linecap="round"/>
+<rect x="655" y="507" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#00695C" stroke-width="4"/>
+<text x="820" y="535.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">orari senza schermo</text>
+<rect x="655" y="573" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#00695C" stroke-width="4"/>
+<text x="820" y="601.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">notifiche ridotte</text>
+<rect x="655" y="639" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#00695C" stroke-width="4"/>
+<text x="820" y="667.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">diario digitale</text>
+<rect x="655" y="705" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#00695C" stroke-width="4"/>
+<text x="820" y="733.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">pause intenzionali</text>
+<g filter="url(#shadow)"><rect x="1105" y="215" width="440" height="590" rx="24" fill="white" stroke="#E65100" stroke-width="6"/><rect x="1105" y="215" width="440" height="96" rx="24" fill="#E65100"/><rect x="1105" y="265" width="440" height="46" fill="#E65100"/></g>
+<text x="1325" y="263.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="34" font-weight="800" fill="white">Cyberbullismo</text>
+<path d="M1245 362 Q1325 302 1405 362 Q1325 434 1245 362 Z" fill="#FBE9E7" stroke="#E65100" stroke-width="6"/><circle cx="1325" cy="365" r="34" fill="white" stroke="#E65100" stroke-width="6"/>
+<rect x="1160" y="507" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#E65100" stroke-width="4"/>
+<text x="1325" y="535.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">salva le prove</text>
+<rect x="1160" y="573" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#E65100" stroke-width="4"/>
+<text x="1325" y="601.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">non rispondere da solo</text>
+<rect x="1160" y="639" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#E65100" stroke-width="4"/>
+<text x="1325" y="667.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">chiedi aiuto</text>
+<rect x="1160" y="705" width="330" height="56" rx="17" fill="#FFFFFF" stroke="#E65100" stroke-width="4"/>
+<text x="1325" y="733.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="22" font-weight="750" fill="#17313B">segnala la piattaforma</text>
+<text x="800" y="915.0" text-anchor="middle" dominant-baseline="middle" font-family="Inter, Nunito, Arial, sans-serif" font-size="28" font-weight="800" fill="#445B66">Idea chiave: la tecnologia è utile quando sei tu a scegliere tempi, scopi e limiti.</text>
 </svg>

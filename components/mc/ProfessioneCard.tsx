@@ -9,8 +9,8 @@ import type { ProfessioneFutura } from "@/lib/mc-loader";
  * Mostra immagine img4-professione[-N] + testo narrativo estratto da OSSERVA
  * + dati strutturati dal JSON MC (competenze chiave, orizzonte).
  *
- * imageIndex 0  → img4-professione.png   (immagine AI già generata)
- * imageIndex 1+ → img4-professione-{N+1}.png (immagini future; onError le nasconde)
+ * imageIndex 0  → img4-professione.webp   (immagine AI, convertita da PNG)
+ * imageIndex 1+ → img4-professione-{N+1}.webp (immagini future; onError le nasconde)
  */
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -59,9 +59,10 @@ function ProfessioneText({ text }: { text: string }) {
 }
 
 export default function ProfessioneCard({ professione, professioneText, mcId, areaHex, imageIndex = 0 }: ProfessioneCardProps) {
-  // index 0 → img4-professione.png, index 1 → img4-professione-2.png, ...
+  // index 0 → img4-professione.webp, index 1 → img4-professione-2.webp, ...
+  // Tutte le immagini sono state convertite in WebP (commit 6e2b203).
   const imgSuffix = imageIndex === 0 ? "img4-professione" : `img4-professione-${imageIndex + 1}`;
-  const imgSrc = `${BASE_PATH}/assets/visual/${mcId}/${mcId}_${imgSuffix}.png`;
+  const imgSrc = `${BASE_PATH}/assets/visual/${mcId}/${mcId}_${imgSuffix}.webp`;
 
   return (
     <div

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useId } from "react";
+import { useState, useId, useRef } from "react";
 import { cx } from "@/lib/ui";
 
 export type DigCompLevel = "F" | "I" | "A";
@@ -52,8 +52,24 @@ export function LevelTabs({ tabs, defaultLevel, className = "" }: LevelTabsProps
       ? defaultLevel
       : tabs[0]?.level ?? "F";
   const [active, setActive] = useState<DigCompLevel>(initialLevel);
+  const tabRefs = useRef<Record<string, HTMLButtonElement | null>>({});
 
   const activeTab = tabs.find((t) => t.level === active) ?? tabs[0];
+
+  // WAI-ARIA Tabs: frecce spostano il focus E selezionano il tab (automatic activation)
+  function handleKeyDown(e: React.KeyboardEvent, idx: number) {
+    let targetIdx: number | null = null;
+    if (e.key === "ArrowRight") targetIdx = (idx + 1) % tabs.length;
+    else if (e.key === "ArrowLeft") targetIdx = (idx - 1 + tabs.length) % tabs.length;
+    else if (e.key === "Home") targetIdx = 0;
+    else if (e.key === "End") targetIdx = tabs.length - 1;
+    if (targetIdx !== null) {
+      e.preventDefault();
+      const target = tabs[targetIdx];
+      setActive(target.level);
+      tabRefs.current[target.level]?.focus();
+    }
+  }
 
   return (
     <div className={cx("rounded-xl border border-slate-200 bg-white shadow-sm overflow-hidden", className)}>
@@ -63,17 +79,20 @@ export function LevelTabs({ tabs, defaultLevel, className = "" }: LevelTabsProps
         aria-label="Livello di difficoltà"
         className="flex border-b border-slate-200 bg-slate-50"
       >
-        {tabs.map((tab) => {
+        {tabs.map((tab, idx) => {
           const isActive = tab.level === active;
           const s = LEVEL_STYLES[tab.level];
           return (
             <button
               key={tab.level}
+              ref={(el) => { tabRefs.current[tab.level] = el; }}
               role="tab"
               id={`${baseId}-tab-${tab.level}`}
               aria-controls={`${baseId}-panel-${tab.level}`}
               aria-selected={isActive}
+              tabIndex={isActive ? 0 : -1}
               onClick={() => setActive(tab.level)}
+              onKeyDown={(e) => handleKeyDown(e, idx)}
               className={cx(
                 "flex-1 py-3 px-2 text-center text-xs font-black uppercase tracking-wider",
                 "border-b-[3px] transition-colors duration-150",

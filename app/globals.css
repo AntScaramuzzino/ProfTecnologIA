@@ -13,11 +13,39 @@
   --font-mono: "JetBrains Mono", "Fira Code", "SFMono-Regular", "Cascadia Mono", Consolas, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Dark mode rimossa: il progetto non ha implementato dark: variant Tailwind nei componenti.
+   Un tema scuro incompleto è peggio di nessun tema scuro (confonde OS scuro + contenuti chiari).
+   Riaprire quando si implementa theming reale con toggle. */
+
+/* ── Accessibilità: riduce animazioni per utenti con prefers-reduced-motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
+}
+
+/* ── Skip link (WCAG 2.4.1 — link al contenuto principale) ── */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 1rem;
+  z-index: 9999;
+  padding: 0.5rem 1rem;
+  background: #0f172a;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 0;
 }
 
 html {

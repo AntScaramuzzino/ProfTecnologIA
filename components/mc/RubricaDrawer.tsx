@@ -71,24 +71,47 @@ export function RubricaDrawer({ agisciBody, areaHex, className = "" }: RubricaDr
 
   const rows = parseRubricaTable(agisciBody);
 
-  // Chiudi con Escape
+  const FOCUSABLE = 'a[href], button:not([disabled]), input, textarea, select, [tabindex]:not([tabindex="-1"])';
+
+  // Chiudi con Escape + focus trap Tab/Shift+Tab + blocco scroll body
   useEffect(() => {
     if (!isOpen) return;
+
+    // Blocca scroll del body quando drawer è aperto
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
     const handler = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setIsOpen(false);
         triggerRef.current?.focus();
+        return;
+      }
+      // Focus trap: Tab e Shift+Tab restano dentro il drawer
+      if (e.key === "Tab" && drawerRef.current) {
+        const focusable = Array.from(drawerRef.current.querySelectorAll<HTMLElement>(FOCUSABLE));
+        if (focusable.length === 0) { e.preventDefault(); return; }
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey) {
+          if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+        } else {
+          if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+        }
       }
     };
     document.addEventListener("keydown", handler);
-    return () => document.removeEventListener("keydown", handler);
+    return () => {
+      document.removeEventListener("keydown", handler);
+      document.body.style.overflow = prevOverflow;
+    };
   }, [isOpen]);
 
-  // Focus trap semplice: quando il drawer si apre, sposta il focus
+  // Focus sul primo elemento del drawer quando si apre
   useEffect(() => {
-    if (isOpen) {
-      drawerRef.current?.focus();
-    }
+    if (!isOpen || !drawerRef.current) return;
+    const first = drawerRef.current.querySelector<HTMLElement>(FOCUSABLE);
+    (first ?? drawerRef.current).focus();
   }, [isOpen]);
 
   if (rows.length === 0) return null;

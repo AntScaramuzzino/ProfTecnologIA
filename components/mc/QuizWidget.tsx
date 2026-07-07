@@ -54,7 +54,7 @@ const LEVEL_COLORS: Record<string, string> = {
   A: "bg-purple-100 text-purple-800 border-purple-200",
 };
 
-// Demo quiz data — in production this is loaded from 04_CONTENUTI/quiz/
+// Demo quiz data — in produzione i quiz reali sono in data/quiz/ (Claude API batch)
 function buildDemoQuiz(mcId: string, livello: "F" | "I" | "A"): QuizData {
   const byLevel: Record<"F" | "I" | "A", QuizDomanda[]> = {
     F: [
@@ -169,7 +169,7 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
   if (!quiz || quiz.domande.length === 0) {
     return (
       <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 text-center text-gray-500">
-        Nessuna domanda disponibile per questo livello. Genera prima gli asset con l&apos;Agente Sintetizzatore.
+        Nessuna domanda disponibile per il livello selezionato.
       </div>
     );
   }
@@ -278,13 +278,20 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
           <div className="space-y-4">
             {/* Progress bar */}
             <div className="flex items-center gap-3">
-              <div className="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
+              <div
+                className="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden"
+                role="progressbar"
+                aria-valuenow={currentQ}
+                aria-valuemin={0}
+                aria-valuemax={totalQ}
+                aria-label={`Domanda ${currentQ + 1} di ${totalQ}`}
+              >
                 <div
                   className="h-full rounded-full bg-indigo-400 transition-all"
-                  style={{ width: `${((currentQ) / totalQ) * 100}%` }}
+                  style={{ width: `${(currentQ / totalQ) * 100}%` }}
                 />
               </div>
-              <span className="text-xs text-gray-400">{currentQ + 1}/{totalQ}</span>
+              <span className="text-xs text-gray-400" aria-hidden>{currentQ + 1}/{totalQ}</span>
             </div>
 
             {/* Question */}
@@ -326,7 +333,8 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
               })}
             </div>
 
-            {/* Feedback after confirm */}
+            {/* Feedback after confirm — aria-live annuncia il risultato agli screen reader */}
+            <div aria-live="polite" aria-atomic="true">
             {confirmed && (
               <div
                 className={`rounded-lg border px-4 py-3 text-sm ${
@@ -351,6 +359,7 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
                 )}
               </div>
             )}
+            </div>
 
             {/* Actions */}
             <div className="flex justify-end gap-3 pt-1">
