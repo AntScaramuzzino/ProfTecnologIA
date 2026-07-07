@@ -1,29 +1,31 @@
 "use client";
 
 import CompetenzaTag from "@/components/mc/CompetenzaTag";
+import type { ProfessioneFutura } from "@/lib/mc-loader";
 
 /**
- * ProfessioneCard — Professione del Futuro 2030
+ * ProfessioneCard — Professioni del Futuro 2030
  *
- * Mostra immagine img4-professione + testo narrativo estratto da OSSERVA
+ * Mostra immagine img4-professione[-N] + testo narrativo estratto da OSSERVA
  * + dati strutturati dal JSON MC (competenze chiave, orizzonte).
+ *
+ * imageIndex 0  → img4-professione.png   (immagine AI già generata)
+ * imageIndex 1+ → img4-professione-{N+1}.png (immagini future; onError le nasconde)
  */
 
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
-export interface ProfessioneFutura {
-  titolo: string;
-  orizzonte?: string;
-  descrizione_breve?: string;
-  competenze_chiave?: string[];
-}
+// ProfessioneFutura è definita e importata da @/lib/mc-loader — re-export per chi la importa da qui
+export type { ProfessioneFutura };
 
 interface ProfessioneCardProps {
   professione: ProfessioneFutura;
-  /** Testo narrativo estratto dal MD di OSSERVA (descrizione estesa, dove lavora, citazione) */
+  /** Testo narrativo estratto dal MD di OSSERVA (solo per la prima professione) */
   professioneText?: string;
   mcId: string;
   areaHex?: string;
+  /** Indice 0-based nella lista professioni — determina il nome dell'immagine */
+  imageIndex?: number;
 }
 
 /** Renderizza il testo della professione: paragrafi, "Dove lavora:", citazione in corsivo */
@@ -56,8 +58,10 @@ function ProfessioneText({ text }: { text: string }) {
   );
 }
 
-export default function ProfessioneCard({ professione, professioneText, mcId, areaHex }: ProfessioneCardProps) {
-  const imgSrc = `${BASE_PATH}/assets/visual/${mcId}/${mcId}_img4-professione.png`;
+export default function ProfessioneCard({ professione, professioneText, mcId, areaHex, imageIndex = 0 }: ProfessioneCardProps) {
+  // index 0 → img4-professione.png, index 1 → img4-professione-2.png, ...
+  const imgSuffix = imageIndex === 0 ? "img4-professione" : `img4-professione-${imageIndex + 1}`;
+  const imgSrc = `${BASE_PATH}/assets/visual/${mcId}/${mcId}_${imgSuffix}.png`;
 
   return (
     <div

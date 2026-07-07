@@ -66,7 +66,7 @@ const ZONE_TABS: NavigatorTab[] = [
   { id: "SPERIMENTA",   label: "SPERIMENTA",   emoji: "🔬" },
   { id: "AGISCI",       label: "AGISCI",       emoji: "🌍" },
   { id: "RIPASSA",      label: "RIPASSA",      emoji: "🃏" },
-  { id: "PROFESSIONE",  label: "PROFESSIONE",  emoji: "💼" },
+  { id: "PROFESSIONE",  label: "PROFESSIONI",  emoji: "💼" },
   { id: "CLIL",         label: "CLIL",         emoji: "📎" },
 ];
 
@@ -409,29 +409,49 @@ function ZonePanel({
     );
   }
 
-  // ── PROFESSIONE DEL FUTURO — tab dedicato dopo RIPASSA ──────────────────
+  // ── PROFESSIONI DEL FUTURO — tab dedicato dopo RIPASSA ─────────────────
   if (tabId === "PROFESSIONE") {
-    return (
-      <div className="px-4 py-6 sm:px-6">
-        {mc.professione_futura?.titolo ? (
-          <ProfessioneCard
-            professione={
-              mc.professione_futura as {
-                titolo: string;
-                orizzonte?: string;
-                descrizione_breve?: string;
-                competenze_chiave?: string[];
-              }
-            }
-            professioneText={professioneText ?? ""}
-            mcId={mc.id}
-            areaHex={areaHex}
-          />
-        ) : (
+    // Usa professioni_future (array) se presente, altrimenti fallback su professione_futura
+    const profList = mc.professioni_future?.length
+      ? mc.professioni_future
+      : mc.professione_futura?.titolo
+        ? [mc.professione_futura as { titolo: string; orizzonte?: string; descrizione_breve?: string; competenze_chiave?: string[] }]
+        : [];
+
+    if (profList.length === 0) {
+      return (
+        <div className="px-4 py-6 sm:px-6">
           <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
             <p className="text-sm text-slate-500">Dati professione non disponibili.</p>
           </div>
-        )}
+        </div>
+      );
+    }
+
+    return (
+      <div className="px-4 py-6 sm:px-6 space-y-2">
+        {/* Intro header */}
+        <div className="mb-2">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-500">
+            🚀 Professioni del Futuro — orizzonte 2030
+          </p>
+          <p className="mt-1 text-sm text-slate-400">
+            {profList.length > 1
+              ? `${profList.length} ruoli professionali collegati a questa micro-competenza`
+              : "Ruolo professionale collegato a questa micro-competenza"}
+          </p>
+        </div>
+
+        {profList.map((prof, idx) => (
+          <ProfessioneCard
+            key={idx}
+            professione={prof}
+            professioneText={idx === 0 ? (professioneText ?? "") : ""}
+            mcId={mc.id}
+            areaHex={areaHex}
+            imageIndex={idx}
+          />
+        ))}
       </div>
     );
   }
@@ -776,7 +796,7 @@ export function MCPageClient({
   // Tab con contenuto MD + tab speciali (non dipendono dal Markdown)
   const availableTabs = ZONE_TABS.filter((tab) => {
     if (tab.id === "RIPASSA") return true;
-    if (tab.id === "PROFESSIONE") return !!mc.professione_futura?.titolo;
+    if (tab.id === "PROFESSIONE") return !!(mc.professioni_future?.length || mc.professione_futura?.titolo);
     if (tab.id === "CLIL") return (mc.clil_termini?.length ?? 0) > 0 || !!appendiceSection;
     return sectionMapClean.has(tab.id);
   });

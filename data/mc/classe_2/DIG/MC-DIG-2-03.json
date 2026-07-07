@@ -99,5 +99,30 @@
       "pronuncia_ipa": "/ræm/"
     }
   ],
-  "uda_collegata": null
+  "uda_collegata": null,
+  "professioni_future": [
+    {
+      "titolo": "DevOps Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Gestisce i sistemi operativi server e cloud per garantire che le applicazioni web funzionino in modo efficiente, sicuro e scalabile — competenza che inizia dalla comprensione del SO.",
+      "competenze_chiave": [
+        "Linux administration",
+        "gestione processi e memoria",
+        "containerizzazione (Docker)",
+        "automazione infrastrutturale"
+      ]
+    },
+    {
+      "titolo": "System Administrator / IT Manager",
+      "orizzonte": "2028",
+      "descrizione_breve": "Gestisce l'infrastruttura IT di organizzazioni (server, reti, backup, sicurezza), garantendo continuità operativa e supporto agli utenti.",
+      "competenze_chiave": [
+        "Linux/Windows Server",
+        "virtualizzazione",
+        "backup/disaster recovery",
+        "Active Directory",
+        "monitoraggio sistemi"
+      ]
+    }
+  ]
 }

@@ -92,5 +92,30 @@
       "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
     }
   ],
-  "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+  "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+  "professioni_future": [
+    {
+      "titolo": "Ingegnere di sistemi robotici e automation specialist",
+      "orizzonte": "2030",
+      "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
+      "competenze_chiave": [
+        "DigComp 3.0",
+        "media literacy",
+        "cybersecurity base",
+        "formazione digitale"
+      ]
+    },
+    {
+      "titolo": "Robotics Software Developer / Programmatore ROS",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa software per robot autonomi usando ROS 2 (Robot Operating System), implementando algoritmi di navigazione, percezione e pianificazione del movimento.",
+      "competenze_chiave": [
+        "ROS 2",
+        "Python/C++",
+        "SLAM",
+        "computer vision",
+        "simulazione Gazebo"
+      ]
+    }
+  ]
 }

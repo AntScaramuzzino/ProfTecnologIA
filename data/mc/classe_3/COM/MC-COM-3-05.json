@@ -107,5 +107,30 @@
     "scienze": "La fibra ottica trasmette fotoni a 200.000 km/s nel vetro (vs 300.000 nel vuoto). La latenza Roma-Tokyo via fibra (~180ms) è limitata fondamentalmente dalla velocità della luce.",
     "arte_geo_storia": "ARPANET (1969): il Dipartimento della Difesa USA finanziò una rete che sopravvivesse a un attacco nucleare. Quella scelta architetturale — nessun nodo centrale — è ancora il motivo per cui nessuno può 'spegnere' internet.",
     "frase_ponte": "Ogni comunicazione è un segnale fisico che viaggia attraverso infrastrutture reali possedute da qualcuno."
-  }
+  },
+  "professioni_future": [
+    {
+      "titolo": "Network Security Analyst — Infrastrutture critiche",
+      "orizzonte": "2030",
+      "descrizione_breve": "Monitora la resilienza dell'infrastruttura internet globale, analizza vulnerabilità geopolitiche e supporta decisioni di governance digitale per governi e organizzazioni internazionali.",
+      "competenze_chiave": [
+        "reti TCP/IP avanzate",
+        "geopolitica digitale",
+        "sicurezza delle infrastrutture critiche",
+        "analisi dei dati di rete"
+      ]
+    },
+    {
+      "titolo": "Cloud Infrastructure Architect",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e gestisce infrastrutture cloud scalabili e sicure (AWS, Azure, GCP), ottimizzando costi, resilienza e conformità alle normative di sicurezza informatica.",
+      "competenze_chiave": [
+        "cloud computing",
+        "Terraform/Kubernetes",
+        "sicurezza cloud",
+        "disaster recovery",
+        "certificazioni AWS/Azure"
+      ]
+    }
+  ]
 }

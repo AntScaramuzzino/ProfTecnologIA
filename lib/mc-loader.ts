@@ -39,6 +39,13 @@ export interface ClilTermine {
   pronuncia_ipa?: string;
 }
 
+export interface ProfessioneFutura {
+  titolo: string;
+  orizzonte?: string;
+  descrizione_breve?: string;
+  competenze_chiave?: string[];
+}
+
 export interface MC {
   id: string;
   area: string;
@@ -62,12 +69,10 @@ export interface MC {
   sdg?: number[];
   note_didattiche: NoteDid;
   hook_audio?: HookAudio;
-  professione_futura?: {
-    titolo?: string;
-    orizzonte?: string;
-    descrizione_breve?: string;
-    competenze_chiave?: string[];
-  };
+  /** Singola professione del futuro — legacy, sostituita da professioni_future */
+  professione_futura?: ProfessioneFutura;
+  /** Array di ≥2 professioni del futuro correlate alla MC */
+  professioni_future?: ProfessioneFutura[];
   /** Vocabolario CLIL — termini tecnici chiave in italiano e inglese con pronuncia IPA */
   clil_termini?: ClilTermine[];
   /**
