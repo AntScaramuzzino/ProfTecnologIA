@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Alle tre di notte, il vento soffia — ma la città dorme"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 40 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 56 sec.*
 
 **Domanda di avvio:**
 Immagina un campo eolico in Danimarca a dicembre. Sono le tre di notte. Il vento soffia forte — perfetto per produrre energia. Le turbine girano a piena potenza e producono più elettricità di quanta la Danimarca riesca ad assorbire in quel momento.
@@ -198,25 +198,26 @@ Il cobalto è un elemento presente in molte celle ai ioni di litio (nelle chimic
 
 ---
 
-### ⚡ Chi lavora con questa competenza nel 2030?
 
-**Energy Storage System Engineer (Ingegnere dei sistemi di accumulo energetico)**
+### 🏡 Chi lavora con questa competenza nel 2030?
 
-Con l'esplosione del mercato delle rinnovabili e degli impianti di stoccaggio utility-scale, c'è una domanda enorme di ingegneri capaci di progettare, dimensionare e gestire sistemi di accumulo: dai Megapack Tesla alle centrali di accumulo pompato, dai sistemi V2G alle reti di accumulo distribuito con milioni di auto elettriche.
+**Energy Efficiency Advisor**
 
-Il ruolo combina chimica delle batterie, ingegneria elettrica, gestione dei sistemi e analisi dei mercati energetici. È una delle professioni con la più alta crescita di domanda in Europa nel settore energy.
+Ottimizza impianti elettrici e domotici per ridurre i consumi negli edifici, progettando soluzioni di smart home e certificando le prestazioni energetiche secondo normativa.
 
-Dove lavora: utility (Enel, Eni, RWE), startup di stoccaggio energetico, aziende di elettromobilità, gestori di rete (Terna in Italia).
+Dove lavora: aziende di facility management, property company, strutture ricettive e alberghiere, grandi aziende con patrimoni immobiliari estesi.
 
-Competenze chiave che inizia a costruire da qui: chimica delle celle · calcolo energetico (Wh = V × Ah) · smart grid · mercato elettrico · sistemi V2G
+Competenze chiave che inizia a costruire da qui: domotica avanzata · normativa CEI · auditing energetico · smart home · certificazioni APE
 
-*"L'energia del sole di luglio la useremo a gennaio. Sto costruendo il ponte nel tempo."*
+*"Una casa efficiente non rinuncia al comfort. Consuma meno per dare di più."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 
 ---
 
@@ -452,10 +453,10 @@ Se hai conservato i dati delle MC precedenti, hai già molto del materiale di cu
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Questa MC è al livello Advanced: 6 pagine. La 📖 ESPLORA occupa 3 pagine, la 🔬 SPERIMENTA e 5 2 pagine ciascuna.
+- Questa MC è al livello Advanced: 6 pagine. La Zona 2 occupa 3 pagine, la Zona 4 e 5 2 pagine ciascuna.
 - Il box "Dati" (calo costi batterie litio) va in evidenza grafica con grande numero "97%" come elemento visivo dominante.
 - La tabella di confronto tra sistemi di accumulo (sezione laboratorio) va su foglio largo con colori.
-- La 🌍 AGISCI (compito di realtà) ha una rubrica a 4 livelli anziché 3 — prevedere una colonna aggiuntiva nella tabella.
+- La Zona 5 (compito di realtà) ha una rubrica a 4 livelli anziché 3 — prevedere una colonna aggiuntiva nella tabella.
 
 **Per l'agente generatore asset:**
 - Visual 1: infografica "Curva di apprendimento delle batterie litio" — asse x: anni dal 1991 al 2024; asse y: costo in $/kWh (scala logaritmica). Mostrare chiaramente il calo da 3.000 a 90 $/kWh.

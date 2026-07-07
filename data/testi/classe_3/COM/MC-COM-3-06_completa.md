@@ -8,9 +8,9 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "I 200 millisecondi più costosi del mondo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 45 sec.*
 
-**Script della ⚡ INNESCA (in assenza del file audio separato):**
+**Script della Zona 1 (in assenza del file audio separato):**
 
 Stai aprendo una pagina web. Non una pagina speciale — qualsiasi pagina con pubblicità.
 
@@ -264,23 +264,26 @@ La domanda che pone questo caso non è "quale versione era vera?" — entrambe c
 
 ---
 
-### 📰 Chi lavora con questa competenza nel 2030?
 
-**Digital Misinformation Analyst (Media Literacy Specialist)**
+### 💬 Chi lavora con questa competenza nel 2030?
 
-Lavora in: testate giornalistiche con unità di fact-checking, organizzazioni internazionali (UNESCO, OCSE, Commissione Europea), piattaforme social media come Trust & Safety specialist, ONG di media literacy.
+**Conversational AI Designer**
 
-Cosa fa concretamente: monitora campagne di disinformazione emergenti, analizza l'architettura delle reti di diffusione (chi ha condiviso cosa, quando, con quale reach), produce report pubblici sull'origine delle campagne, sviluppa strumenti e curricula di media literacy.
+Progetta chatbot, assistenti vocali e interfacce conversazionali che comunicano in modo naturale con le persone, combinando UX, linguistica computazionale e intelligenza artificiale.
 
-Competenze chiave: analisi dei social network (SNA — Social Network Analysis) · OSINT (Open Source Intelligence) · statistica e visualizzazione dei dati · conoscenza dei framework legali (GDPR, DSA) · scrittura per il pubblico generale.
+Dove lavora: aziende tech che sviluppano assistenti vocali, banche e assicurazioni, centri di customer service, startup di chatbot.
 
-*"Il mio lavoro non è dire alla gente cosa credere. È darle gli strumenti per non doversi fidare ciecamente di nessuno — inclusa me."*
+Competenze chiave che inizia a costruire da qui: UX conversazionale · NLP · linguistica · UI vocale · AI design
+
+*"Un assistente vocale deve sembrare presente, non robotico. La differenza sta in come risponde quando non capisce."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -488,10 +491,10 @@ Il compito di realtà (articolo per *Il Bullone*) contribuisce anche alla valuta
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: distribuire su 4 pagine (struttura ampliata livello A). Il Box T8 sui deepfake come box colorato su sfondo arancione chiaro (warning).
+- Zona 2: distribuire su 4 pagine (struttura ampliata livello A). Il Box T8 sui deepfake come box colorato su sfondo arancione chiaro (warning).
 - Il caso studio #MacronLeaks come testo in box separato con titolo e bordo.
-- La tabella della 🔬 SPERIMENTA Base come scheda fotocopiabile.
-- L'articolo de *Il Bullone* (🌍 AGISCI) come pagina separata con layout simulato di giornale scolastico.
+- La tabella della Zona 4 Base come scheda fotocopiabile.
+- L'articolo de *Il Bullone* (Zona 5) come pagina separata con layout simulato di giornale scolastico.
 - I box STEM (Matematica e Geo-Storia) come sidebar laterali.
 
 **Per l'agente generatore asset:**

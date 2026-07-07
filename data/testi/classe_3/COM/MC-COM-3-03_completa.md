@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il tuo zaino ha percorso 20.000 chilometri"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 35 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 16 sec.*
 > *(Script completo: MC-COM-3-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -245,25 +245,26 @@ L'auto privata sembra economica ma distribuisce le emissioni su mezzi privati, a
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Mobility Planner urbano**
+### 📡 Chi lavora con questa competenza nel 2030?
 
-Le città del futuro devono ridurre le emissioni dei trasporti del 55% entro il 2030 per rispettare gli Accordi di Parigi. Questo non si può fare solo vendendo più auto elettriche — richiede riprogettare come le persone si spostano: più trasporto pubblico, più bici, meno auto private in città, più intermodalità.
+**Urban Sensor Network Manager**
 
-Il Mobility Planner analizza i flussi di spostamento di una città, identifica i nodi critici (dove la gente si sposta ma il trasporto è carente), progetta soluzioni integrate (combinare bus + bici + car sharing), calcola l'impatto ambientale delle alternative, e comunica le proposte alle amministrazioni e ai cittadini.
+Gestisce le reti di telecomunicazione e sensori nelle infrastrutture urbane, dalla fibra ottica ai nodi IoT, garantendo connettività affidabile e raccolta dati continua per le smart city.
 
-Dove lavora: comuni e città metropolitane, agenzie per la mobilità, studi di pianificazione urbanistica, organizzazioni internazionali (ONU, BEI, World Bank), aziende di mobilità condivisa.
+Dove lavora: comuni e municipalità, aziende di utility urbane, gestori di infrastrutture critiche, startup IoT urbano.
 
-Competenze chiave che inizia a costruire da qui: analisi dei dati di mobilità · calcolo delle emissioni · conoscenza dei sistemi di trasporto · pianificazione urbana · comunicazione tecnica ai decisori politici
+Competenze chiave che inizia a costruire da qui: reti IoT · telecomunicazioni urbane · data visualization · manutenzione infrastrutture · 5G
 
-*"Non progetto strade. Progetto come le persone si muovono — che è molto più complicato, e molto più importante."*
+*"Cinquecento sensori per km². La città mi parla in dati — io la ascolto e rispondo in decisioni."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -396,7 +397,7 @@ Il tuo compito è raccogliere i dati, analizzarli, e proporre un piano realistic
 
 - Browser per Google Moduli (gratuito) o fogli di carta per il sondaggio
 - Google Fogli o Excel per i calcoli (gratuiti)
-- I fattori di emissione per mezzo di trasporto (forniti in 🔬 SPERIMENTA Base)
+- I fattori di emissione per mezzo di trasporto (forniti in Zona 4 Base)
 - Nessun costo aggiuntivo
 
 > **Suggerimento:** il sondaggio funziona meglio se è breve — massimo 5 domande. Se ci vuole più di 2 minuti per compilarlo, molti compagni lo abbandonano a metà. Testa il sondaggio su te stesso prima di distribuirlo: cronometra quanto ci vuole.
@@ -492,10 +493,10 @@ Il progetto UDA risponde alla domanda: *"Se questa scuola fosse una città, quan
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: distribuire su 3 pagine. La tabella comparativa dei sistemi di trasporto va in evidenza grafica centrale. Il Box Geo sulle catene di approvvigionamento va come riquadro laterale con una mappa stilizzata delle rotte.
+- Zona 2: distribuire su 3 pagine. La tabella comparativa dei sistemi di trasporto va in evidenza grafica centrale. Il Box Geo sulle catene di approvvigionamento va come riquadro laterale con una mappa stilizzata delle rotte.
 - La tabella mobilità urbana (m² per passeggero) va come infografica visiva comparativa.
 - La tabella treno vs aereo su tratte italiane va come scheda comparativa evidenziata.
-- Le tabelle della 🔬 SPERIMENTA vanno come schede fotocopiabili.
+- Le tabelle della Zona 4 vanno come schede fotocopiabili.
 
 **Per l'agente generatore asset:**
 - Visual richiesto: grafico a bolle — X = velocità, Y = emissioni g CO₂/passeggero-km, dimensione bolla = costo medio per 100 km. Include auto, bus, treno AV, aereo, bici, nave. Formato: PNG 1200×800 + SVG.

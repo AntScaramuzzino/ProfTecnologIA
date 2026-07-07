@@ -141,25 +141,26 @@ La buona notizia: molti degli errori più comuni si correggono in pochi minuti. 
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**UX Accessibility Specialist**
+### 📊 Chi lavora con questa competenza nel 2030?
 
-Garantisce che le app e i siti web siano utilizzabili da tutti. Nella pratica: conduce test di usabilità con utenti che hanno diverse disabilità, verifica la conformità alle normative (WCAG 2.1/2.2, European Accessibility Act), forma i team di sviluppo sui principi di progettazione accessibile, e produce report tecnici che traducono i problemi di accessibilità in correzioni concrete per sviluppatori e designer.
+**Data Scientist**
 
-Il ruolo è diventato essenziale dopo l'entrata in vigore dell'European Accessibility Act nel 2025: migliaia di aziende private devono adeguarsi, e chi sa fare audit di accessibilità e guidare la conformità è una figura molto richiesta.
+Estrae conoscenza dai big data applicando statistica, machine learning e visualizzazione dati per supportare decisioni aziendali basate sull'evidenza in ogni settore.
 
-Dove lavora: agenzie di UX e design, studi di sviluppo web, enti pubblici, aziende di e-commerce, settore bancario e assicurativo, startup di edtech e healthtech.
+Dove lavora: grandi aziende data-driven (finanza, retail, salute), startup analitiche, istituti di ricerca, enti pubblici con open data.
 
-Competenze chiave che inizia a costruire da qui: WCAG 2.1/2.2 · testing con screen reader · Universal Design · conformità normativa europea · empatia progettuale
+Competenze chiave che inizia a costruire da qui: Python / R · SQL · machine learning · data visualization · statistica inferenziale
 
-*"Progettare per tutti non è una limitazione. È il test più difficile e più importante che puoi fare su un prodotto."*
+*"I dati raccontano sempre una storia. Il mio lavoro è capire se la storia è vera."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -365,8 +366,8 @@ L'accessibilità riguarda anche l'IA. I sistemi di intelligenza artificiale che 
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la tabella POUR (4 principi) va come infografica visuale con icona per ciascun principio. Il box "chi beneficia" va come sidebar con dato numerico in evidenza (1 miliardo).
-- La tabella errori WAVE nella 🔬 SPERIMENTA Base va su sfondo colorato per renderla una guida rapida consultabile.
+- Zona 2: la tabella POUR (4 principi) va come infografica visuale con icona per ciascun principio. Il box "chi beneficia" va come sidebar con dato numerico in evidenza (1 miliardo).
+- La tabella errori WAVE nella Zona 4 Base va su sfondo colorato per renderla una guida rapida consultabile.
 - Il collegamento con MC-DIG-1-02 e il box STEM vanno come riquadri laterali in colore.
 - La lettera al dirigente scolastico (livello Avanzato) va come template con riga tratteggiata per la firma.
 

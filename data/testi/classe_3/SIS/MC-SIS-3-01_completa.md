@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Una maglietta da €5,99. Un centesimo al cucitore."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 38 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 18 sec.*
 > *(Script completo: MC-SIS-3-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -184,23 +184,26 @@ Questo non è necessariamente uno scandalo da indignazione immediata — è la d
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Supply Chain Sustainability Analyst**
+### 🪙 Chi lavora con questa competenza nel 2030?
 
-Analizza le catene di fornitura globali per identificare rischi sociali e ambientali — lavoro non dignitoso, emissioni di carbonio, gestione dell'acqua, trasparenza. Lavora con aziende che vogliono certificare la sostenibilità della propria filiera (standard SA8000 per il lavoro, ISO 14001 per l'ambiente, Fairtrade) o che devono conformarsi alla normativa europea sulla due diligence (Corporate Sustainability Due Diligence Directive, in vigore dal 2026).
+**Token Economy Designer**
 
-Dove lavora: grandi aziende manifatturiere, consulenze di sostenibilità, ONG internazionali, enti di certificazione.
+Progetta ecosistemi di incentivi digitali basati su token per piattaforme decentralizzate, combinando teoria economica, game design e tecnologia blockchain.
 
-Competenze chiave che inizia a costruire da qui: analisi della catena del valore · conoscenza dei sistemi economici globali · capacità di ricerca e verifica di dati · pensiero sistemico
+Dove lavora: startup crypto e DeFi, aziende che sviluppano piattaforme decentralizzate, fondi di venture capital blockchain, DAO e cooperative digitali.
 
-*"Non mi interessa solo che il prodotto sia bello o economico. Mi interessa sapere come è arrivato qui — e chi ha pagato il prezzo vero."*
+Competenze chiave che inizia a costruire da qui: economia decentralizzata · blockchain · behavioral economics · game theory · tokenomics
+
+*"Gli incentivi giusti fanno sì che le persone facciano spontaneamente quello che serve al sistema. Questo è il design."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -392,7 +395,7 @@ Questa MC ti ha dato gli strumenti per leggere un sistema economico locale. MC-S
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la tabella della catena del valore della maglietta va come infografica visuale con frecce orizzontali e barre proporzionali al guadagno per fase.
+- Zona 2: la tabella della catena del valore della maglietta va come infografica visuale con frecce orizzontali e barre proporzionali al guadagno per fase.
 - Il confronto tra PIL e BES va come tabella a due colonne con icone per le 12 dimensioni BES.
 - Il ciclo economico va come grafico a onda con le 4 fasi etichettate.
 - Il box STEM Matematica (indice dei prezzi) va come sidebar con formula in evidenza.

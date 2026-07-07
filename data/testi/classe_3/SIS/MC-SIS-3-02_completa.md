@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "40.000 bambini. La batteria del tuo telefono."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 38 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 24 sec.*
 > *(Script completo: MC-SIS-3-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -184,23 +184,26 @@ La domanda legittima: il commercio equo risolve il problema, o lo gestisce senza
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**ESG Analyst (Environmental, Social, Governance)**
+### 🤝 Chi lavora con questa competenza nel 2030?
 
-Valuta l'impatto ambientale, sociale e di governance delle imprese per conto di investitori, fondi pensione, banche e grandi aziende. In seguito alla normativa europea sulla rendicontazione di sostenibilità (CSRD, in vigore dal 2024), le aziende con più di 250 dipendenti devono pubblicare un report ESG dettagliato — e hanno bisogno di chi sa costruirlo e verificarlo. L'analista ESG non fa la rendicontazione per le aziende: valuta se è credibile, completa e non è greenwashing.
+**Human-AI Collaboration Specialist**
 
-Dove lavora: società di revisione e consulenza (Big Four), fondi di investimento sostenibile (ESG funds), agenzie di rating di sostenibilità.
+Supporta le organizzazioni nella transizione verso team misti umani-AI, gestendo il cambiamento culturale e progettando processi lavorativi in cui le persone e i sistemi si completano.
 
-Competenze chiave che inizia a costruire da qui: comprensione dei sistemi economici globali · pensiero critico sui dati · conoscenza dei framework di rendicontazione (GRI, SASB, TCFD)
+Dove lavora: grandi aziende in trasformazione con AI, centri di ricerca sull'ergonomia cognitiva, società di consulenza HR, startup di HR tech.
 
-*"Il mio lavoro è rendere visibile quello che i bilanci tradizionali non mostrano."*
+Competenze chiave che inizia a costruire da qui: change management · AI generativa · psicologia del lavoro · HR e organizzazione · facilitazione
+
+*"L'AI non prende il posto delle persone. Prende il posto dei compiti che non dovevano fare le persone."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---

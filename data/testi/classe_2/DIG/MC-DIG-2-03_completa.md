@@ -265,26 +265,23 @@ Le competenze che stai imparando qui — naming dei file, struttura delle cartel
 
 ---
 
-> **Chi lavora con questa competenza nel 2030?**
+### 🔄 Chi lavora con questa competenza nel 2030?
 
-**DevOps Engineer**
+**Digital and Innovation Manager**
 
-Un DevOps engineer non lavora solo con il codice: lavora con i *sistemi* che fanno funzionare le applicazioni. Gestisce i server (che sono computer come il tuo, ma molto più potenti), automatizza i processi di backup e aggiornamento, si assicura che quando un server si rompe i dati non vadano persi e il servizio riparta in pochi minuti.
+Gestisce l'attività aziendale in termini di processi digitali, stimolando la ricerca e favorendo il consolidamento di innovazioni per lo sviluppo competitivo dell'organizzazione.
 
-Concretamente: configura sistemi di backup automatici per dati critici di aziende con milioni di utenti, gestisce la struttura dei file sui server, automatizza gli aggiornamenti dei sistemi operativi per garantire che le vulnerabilità vengano corrette senza interruzioni di servizio.
+Dove lavora: PMI in digitalizzazione, società di consulenza IT e management, filiali italiane di multinazionali, enti pubblici in innovazione.
 
-Le competenze che inizia a costruire da qui: organizzazione dei file system, comprensione del SO, backup e ridondanza dei dati, gestione dei permessi.
+Competenze chiave che inizia a costruire da qui: digital transformation · gestione software aziendale · processi digitali · innovation management · change management
 
-*"La differenza tra un sistema che funziona e uno che crolla non è quasi mai il codice — è la gestione dell'infrastruttura."*
-
-Dove lavora: aziende tech, startup, banche, ospedali — ovunque ci siano sistemi digitali critici.
-Livello di domanda nel 2030 in Europa: altissimo (carenza stimata di 500.000 profili).
+*"Digitalizzare non significa comprare software. Significa ridisegnare come si lavora."*
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -325,7 +322,7 @@ Livello di domanda nel 2030 in Europa: altissimo (carenza stimata di 500.000 pro
 
 **Parte A — Struttura cartelle:**
 
-1. Crea sul computer (o su Drive, se preferisci lavorare su cloud) la struttura di cartelle descritta nella 📖 ESPLORA, adattata alla tua situazione reale: inserisci le materie che studi veramente, aggiungi cartelle per attività extra-scolastiche se le hai.
+1. Crea sul computer (o su Drive, se preferisci lavorare su cloud) la struttura di cartelle descritta nella Zona 2, adattata alla tua situazione reale: inserisci le materie che studi veramente, aggiungi cartelle per attività extra-scolastiche se le hai.
 
 2. Sposta almeno 10 file esistenti nelle cartelle appropriate. Per ogni file spostato, verifica che il nome rispetti la convenzione [data]_[materia]_[argomento]. Rinomina quelli che non la rispettano.
 
@@ -497,10 +494,10 @@ Le competenze di questa MC sono strumenti trasversali per l'UDA interdisciplinar
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: distribuire su 2 colonne. I blocchi di codice (struttura cartelle) vanno in font monospace su sfondo grigio chiaro.
+- Zona 2: distribuire su 2 colonne. I blocchi di codice (struttura cartelle) vanno in font monospace su sfondo grigio chiaro.
 - Il box DIG↔INF è un riquadro evidenziato con bordo laterale colorato — colore diverso dai box "Lo sapevi" per distinguerli.
 - La tabella comparativa dei servizi cloud va in pagina separata o come infografica laterale.
-- Le istruzioni della 🔬 SPERIMENTA Intermedio/Avanzato vanno come schede separabili.
+- Le istruzioni della Zona 4 Intermedio/Avanzato vanno come schede separabili.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema ad albero della struttura cartelle raccomandata — formato PNG 1200×900 + SVG.

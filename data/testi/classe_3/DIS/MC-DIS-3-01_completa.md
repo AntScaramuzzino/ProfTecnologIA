@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "100 milioni di ore per un film. Ogni fotogramma è matematica."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 38 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 39 sec.*
 > *(Script completo: MC-DIS-3-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -133,13 +133,20 @@ Il principio fondamentale dell'ergonomia si chiama **design centrato sull'utente
 
 ---
 
-### Design sostenibile: progettare il futuro del prodotto prima di costruirlo
 
-Un oggetto ben progettato oggi include già la risposta a una domanda: cosa succede alla fine della sua vita? Il **design sostenibile** risponde a questa domanda durante la fase di progettazione — non dopo.
+### 💡 Chi lavora con questa competenza nel 2030?
 
-**Cradle to cradle (dalla culla alla culla):** il concetto, sviluppato dagli architetti William McDonough e Michael Braungart nel loro libro del 2002, propone che gli oggetti vengano progettati in due categorie distinte: quelli che rientrano nel ciclo biologico (si biodegradano) e quelli che rientrano nel ciclo tecnico (vengono riciclati e reimmessi nella produzione). Nessun materiale dovrebbe finire in discarica — è sempre una perdita di valore.
+**Innovation Designer**
 
-**Design for disassembly (progettare per lo smontaggio):** un oggetto composto da materiali diversi (plastica + metallo + vetro) è difficile da riciclare perché i materiali devono essere separati. Il design for disassembly progetta deliberatamente giunzioni smontabili, materiali compatibili, codici di riconoscimento visibili. La scarpa Adidas "Futurecraft Loop" (2019) è un esempio: è fatta di un solo materiale — poliestere — e può essere restituita all'azienda alla fine della vita per essere fusa e trasformata in una nuova scarpa.
+Gestisce e guida i processi di transizione e innovazione in team multidisciplinari, usando strumenti di design e facilitazione per raggiungere la situazione aziendale desiderata.
+
+Dove lavora: studi di design strategico, centri di innovazione corporate, laboratori universitari di design, aziende in trasformazione organizzativa.
+
+Competenze chiave che inizia a costruire da qui: design management · facilitazione creativa · innovazione di processo · leadership · problem solving
+
+*"Il design non riguarda come appaiono le cose. Riguarda come funzionano e come fanno sentire le persone."*
+
+---
 
 ---
 
@@ -221,7 +228,7 @@ Competenze chiave che inizia a costruire da qui: disegno tecnico tridimensionale
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -434,11 +441,11 @@ Conserva tutto il materiale prodotto: brief, sketch, proiezioni ortogonali e ren
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la sezione sul processo progettuale (brief → render → prototipo) va con una linea temporale visiva laterale.
+- Zona 2: la sezione sul processo progettuale (brief → render → prototipo) va con una linea temporale visiva laterale.
 - Il confronto tabellare assonometria/prospettiva va in box evidenziato a piena larghezza.
 - I box "Design e Bauhaus" e "Caso studio iPhone" vanno come box di approfondimento con bordo colorato.
 - I grandi designer italiani: tre riquadri affiancati con foto/illustrazione + 3-4 righe descrittive.
-- 🔬 SPERIMENTA Avanzato: la rubrica e la consegna del compito sono fotocopiabili — pagina separata.
+- Zona 4 Avanzato: la rubrica e la consegna del compito sono fotocopiabili — pagina separata.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: poster comparativo — stessa stanza disegnata in assonometria isometrica vs. prospettiva centrale vs. prospettiva accidentale. Formato: PNG 1200×900 + SVG.

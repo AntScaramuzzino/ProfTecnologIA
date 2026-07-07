@@ -150,7 +150,7 @@ Costruisce le pipeline che raccolgono, puliscono e distribuiscono i flussi di da
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica in Zona 5.**
 
 ---
 

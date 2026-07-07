@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il motore della moto di tuo nonno"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 58 sec.*
 
 **Domanda di avvio:**
 Immagina una moto degli anni Settanta. Un motore a 4 cilindri, 750 cc di cilindrata, rumore sordo e odore di benzina bruciata. Tuoi nonni probabilmente ne avevano una.
@@ -218,27 +218,26 @@ Mettiamo a confronto tre vetture equivalenti per dimensioni e prestazioni — st
 
 ---
 
-### ⚙️ Chi lavora con questa competenza nel 2030?
 
-**Ingegnere della propulsione elettrica e ibrida**
+### 🔌 Chi lavora con questa competenza nel 2030?
 
-Con la transizione verso l'elettrico, le case automobilistiche hanno bisogno di ingegneri capaci di progettare sistemi di propulsione ibridi e full electric — non solo il motore in sé, ma l'intero powertrain: motore elettrico, inverter, batteria, sistema di gestione termica, software di controllo.
+**Smart Grid Analyst**
 
-È una figura professionale che deve capire sia la termodinamica (per ottimizzare i motori termici residui nei plug-in hybrid) sia l'elettrotecnica e l'elettronica di potenza (per i sistemi di gestione del motore elettrico).
+Analizza e ottimizza i circuiti e le reti elettriche intelligenti, usando software SCADA e AI per bilanciare domanda e offerta di energia in tempo reale.
 
-Il mercato è in esplosione: entro il 2035 tutti i nuovi veicoli immatricolati in Europa saranno a zero emissioni dirette (Regolamento UE 2023/851). Servono decine di migliaia di ingegneri che non esistono ancora.
+Dove lavora: operatori di reti di distribuzione elettrica, centri di controllo energetico regionale, aziende di automazione industriale, centri di ricerca sul grid.
 
-Dove lavora: case automobilistiche (Stellantis, Volkswagen Group, Toyota), fornitori Tier 1 (Bosch, Denso, Valeo), startup della mobilità elettrica.
+Competenze chiave che inizia a costruire da qui: circuiti elettrici · software SCADA · data analysis · AI applicata · reti di distribuzione
 
-Competenze chiave che inizia a costruire da qui: termodinamica · elettrotecnica · rendimento dei sistemi · analisi del ciclo di vita
+*"Milioni di dati al secondo. La rete intelligente non dorme mai — e nemmeno io."*
 
-*"Non sto solo sostituendo il motore a benzina con uno elettrico. Sto riprogettando il concetto di veicolo da zero."*
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 
 ---
 
@@ -356,7 +355,7 @@ Ti chiedono di fare un'analisi tecnica per aiutarli a scegliere.
 
 Prepara una relazione di massimo 2 pagine (o una presentazione di 6 slide) che risponda a queste domande:
 
-1. **Emissioni**: quante tonnellate di CO₂ emette ogni opzione in un anno? (usa i dati del caso studio della 🔍 OSSERVA come riferimento, adattali ai 15.000 km)
+1. **Emissioni**: quante tonnellate di CO₂ emette ogni opzione in un anno? (usa i dati del caso studio della Zona 3 come riferimento, adattali ai 15.000 km)
 
 2. **Costo energetico**: quanto si spende in benzina/elettricità per 15.000 km con ciascuna opzione? (prezzi: benzina 1,80 €/l, elettricità pubblica 0,40 €/kWh, consumi indicativi: benzina 7 l/100 km, ibrida 4,5 l/100 km, elettrica 16 kWh/100 km)
 
@@ -368,7 +367,7 @@ Prepara una relazione di massimo 2 pagine (o una presentazione di 6 slide) che r
 
 ### Materiali che ti servono
 
-- I dati del caso studio della 🔍 OSSERVA (rielaborali per 15.000 km)
+- I dati del caso studio della Zona 3 (rielaborali per 15.000 km)
 - Calcolatrice
 - Accesso a internet: cerca "costo ricarica pubblica Italia 2026" e "colonnine ricarica appartamento senza garage"
 
@@ -419,7 +418,7 @@ Nella relazione per la tua famiglia, hai dovuto scegliere un'auto. Il tuo giudiz
 ---
 
 **4. Connessione con la fisica**
-Hai usato il concetto di rendimento (η = W_utile / Q_assorbito) in questa MC. Lo stesso concetto si usa in termodinamica, in chimica, in elettrotecnica. Riesci a spiegare perché un rendimento del 100% è impossibile nelle macchine termiche, ma non nei motori elettrici? (Non è una domanda trabocchetto — la risposta è nella 📖 ESPLORA.)
+Hai usato il concetto di rendimento (η = W_utile / Q_assorbito) in questa MC. Lo stesso concetto si usa in termodinamica, in chimica, in elettrotecnica. Riesci a spiegare perché un rendimento del 100% è impossibile nelle macchine termiche, ma non nei motori elettrici? (Non è una domanda trabocchetto — la risposta è nella Zona 2.)
 
 *Scrivi 3-4 righe:* ___________________________________________
 

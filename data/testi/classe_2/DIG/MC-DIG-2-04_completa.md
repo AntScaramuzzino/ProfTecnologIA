@@ -260,26 +260,23 @@ Tu puoi controllare solo la tua parte — ma la tua parte è anche la più impor
 
 ---
 
-> **Chi lavora con questa competenza nel 2030?**
+### 🔐 Chi lavora con questa competenza nel 2030?
 
-**Cybersecurity Analyst**
+**Esperto in Cybersecurity**
 
-Un cybersecurity analyst protegge sistemi e dati aziendali da attacchi. Analizza i tentativi di intrusione, studia le vulnerabilità dei sistemi, progetta difese, risponde agli incidenti. Quando un'azienda viene attaccata, è il cybersecurity analyst che capisce cosa è successo, come è entrato l'attaccante, e come evitare che succeda di nuovo.
+Protegge sistemi informatici, reti e dati personali da attacchi informatici, usando crittografia, analisi del rischio e normative GDPR per garantire sicurezza e conformità.
 
-Concretamente: simula attacchi per trovare vulnerabilità prima che le trovino i criminali (penetration testing), configura sistemi di rilevamento degli accessi anomali, forma i dipendenti a riconoscere il phishing, risponde agli incidenti di sicurezza in tempo reale.
+Dove lavora: SOC (Security Operations Center) aziendali, società di consulenza in sicurezza informatica, banche e assicurazioni, pubblica amministrazione.
 
-Le competenze che inizia a costruire da qui: comprensione degli attacchi (come funziona il phishing, il malware, il social engineering), pensiero critico applicato ai sistemi, conoscenza dei protocolli di sicurezza (2FA, crittografia, HTTPS).
+Competenze chiave che inizia a costruire da qui: crittografia · analisi del rischio · normative GDPR · ethical hacking · sicurezza delle reti
 
-*"Il 95% degli attacchi informatici riesce a causa di errori umani. Il mio lavoro è fare in modo che le persone smettano di essere il punto debole."*
-
-Dove lavora: banche, ospedali, aziende tecnologiche, pubblica amministrazione, forze dell'ordine (Polizia Postale).
-Livello di domanda nel 2030 in Europa: critico (carenza stimata di 3,5 milioni di profili a livello mondiale).
+*"Non proteggo i computer. Proteggo le persone che ci sono dietro."*
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 > **Nota di sicurezza:** nessuna attività di questo laboratorio richiede di inserire password reali o dati personali. Se un'attività chiede di controllare le password, usa password inventate come esempi. Non usare mai password reali durante un'attività scolastica.
@@ -510,11 +507,11 @@ La sicurezza digitale è una componente infrastrutturale della città del futuro
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: il box "Test rapido" va in evidenza grafica (riquadro colorato con sfondo diverso).
+- Zona 2: il box "Test rapido" va in evidenza grafica (riquadro colorato con sfondo diverso).
 - Il box T8 (IA e sicurezza) va come riquadro a larghezza piena, con icona AI in evidenza — elemento visivo riconoscibile per distinguerlo dai box informativi standard.
 - La tabella "tempo per rompere una password" va in formato infografica orizzontale con barra di lunghezza proporzionale al tempo.
-- I messaggi simulati della 🔬 SPERIMENTA Base vanno in formato "screenshot simulato" — stile bolla di messaggio o finestra email, non testo normale.
-- La 🔬 SPERIMENTA Avanzato contiene la "domanda aperta" sul backdoor: va in evidenza come "per chi vuole andare oltre".
+- I messaggi simulati della Zona 4 Base vanno in formato "screenshot simulato" — stile bolla di messaggio o finestra email, non testo normale.
+- La Zona 4 Avanzato contiene la "domanda aperta" sul backdoor: va in evidenza come "per chi vuole andare oltre".
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica "Anatomia di un'email di phishing" — email simulata annotata con frecce e spiegazioni dei 7 segnali.

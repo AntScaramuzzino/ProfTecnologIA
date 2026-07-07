@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La giacca che ti salva la vita"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 39 sec.*
 
 **Scenario di avvio:**
 
@@ -376,27 +376,26 @@ Non esiste una risposta unica. La giacca giusta dipende dall'uso: per trekking i
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere dei biomateriali e dei polimeri sostenibili**
+### 🧵 Chi lavora con questa competenza nel 2030?
 
-Lavora per trovare alternative ai polimeri sintetici convenzionali: studia fibre da alghe, chitina da gusci di gamberi e granchi, seta bacterica prodotta da batteri modificati geneticamente, PLA rinforzato con fibre di canapa.
+**Fashion and Textile Designer**
 
-Non si tratta solo di trovare materiali "bio" — si tratta di trovare materiali con le stesse prestazioni tecniche delle plastiche convenzionali, ma con cicli di vita che non generano accumulo ambientale.
+Progetta capi, accessori e materiali tessili innovativi, sperimentando fibre naturali, sintetiche e compositi avanzati per rispondere alle esigenze estetiche e funzionali del mercato.
 
-Il lavoro è a metà tra la chimica, la biologia molecolare e l'ingegneria dei materiali. È un campo in rapida crescita: aziende come Bolt Threads (seta batterica), Ecovative (mycelium compositi), MycoWorks (pelle da fungo) stanno portando questi materiali dal laboratorio al mercato.
+Dove lavora: case di moda e brand tessili, reparti creativi di grandi gruppi fashion, studi di design indipendenti, startup fashion tech.
 
-Dove lavora: laboratori universitari, startup dei materiali, divisioni R&D di grandi aziende tessili (H&M Conscious, Zara Inditex Sustainability Lab) e dell'imballaggio alimentare.
+Competenze chiave che inizia a costruire da qui: disegno tessile · tecnologie di produzione moda · materiali avanzati · CAD moda · sostenibilità
 
-Competenze che inizia a costruire da qui: chimica dei polimeri · biologia cellulare · analisi del ciclo di vita · economia circolare · valutazione critica delle fonti.
+*"Il tessuto è il mio mezzo di comunicazione. Ogni fibra racconta qualcosa di chi lo indossa."*
 
-*"Il mio obiettivo non è solo che il materiale funzioni bene oggi. È che tra cento anni non sia ancora nell'oceano."*
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Organizza il tuo lavoro tenendo presente i criteri di valutazione dall'inizio.
 
 ---
@@ -666,11 +665,11 @@ Il prodotto con la claim "bio" più discutibile è spesso quello che genera la r
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la tabella dei 7 tipi di plastica va a tutta larghezza con sfondo colorato per riga (colori chiari diversi per ogni tipo). Fondamentale la colonna "Riciclabile?" con icona chiara (✓/✗/parziale).
+- Zona 2: la tabella dei 7 tipi di plastica va a tutta larghezza con sfondo colorato per riga (colori chiari diversi per ogni tipo). Fondamentale la colonna "Riciclabile?" con icona chiara (✓/✗/parziale).
 - Il riquadro greenwashing (⚠️) va in box colorato a tutta larghezza — è un concetto chiave da evidenziare graficamente.
 - Il confronto giacca lana vs. sintetica va come tabella comparativa con colori alternati.
-- Le schede della 🔬 SPERIMENTA Intermedio e le schede 🌍 AGISCI vanno come pagine fotocopiabili separate.
-- La 🔬 SPERIMENTA Avanzato (packaging miele) può essere presentata come "brief di progetto" con intestazione formale.
+- Le schede della Zona 4 Intermedio e le schede Zona 5 vanno come pagine fotocopiabili separate.
+- La Zona 4 Avanzato (packaging miele) può essere presentata come "brief di progetto" con intestazione formale.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica "ciclo di vita di una t-shirt" — cotone convenzionale vs. poliestere riciclato su due colonne, con flusso materia prima → filatura → tintura → uso → fine vita.

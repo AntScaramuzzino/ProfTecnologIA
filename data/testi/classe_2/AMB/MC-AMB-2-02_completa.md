@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La finestra aperta che riscaldi tutto l'anno"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 44 sec.*
 > *(Script completo: MC-AMB-2-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -340,25 +340,26 @@ Guarda "stand-by": 35 kWh al mese per dispositivi spenti o in stand-by equivalgo
 
 ---
 
-### 💡 Chi lavora con questa competenza nel 2030?
 
-**Energy manager domestico e di comunità**
+### 🌿 Chi lavora con questa competenza nel 2030?
 
-L'energy manager è una figura già riconosciuta dalla legge italiana (D.Lgs. 102/2014) per le grandi aziende. Nel prossimo decennio, con la diffusione delle **Comunità Energetiche Rinnovabili (CER)** — gruppi di famiglie e piccole imprese che condividono la produzione e il consumo di energia rinnovabile locale — questa figura si trasforma: non gestisce più una fabbrica, ma una comunità di 10-200 famiglie con pannelli solari, batterie di accumulo, pompe di calore e auto elettriche.
+**Green Building Architect**
 
-Il suo compito: ottimizzare i flussi di energia della comunità in tempo reale. Quando c'è troppa produzione fotovoltaica e poca domanda, la eccedenza va alle batterie o alle auto elettriche in carica. Quando c'è poca produzione e alta domanda, si attinge dalle batterie o dalla rete nazionale. L'obiettivo: minimizzare i costi energetici della comunità e massimizzare l'autoconsumo delle fonti rinnovabili locali.
+Progetta edifici eco-sostenibili usando materiali ecocompatibili, sistemi di energia rinnovabile e certificazioni LEED o BREEAM, riducendo l'impatto ambientale delle costruzioni.
 
-Dove lavora: cooperative energetiche, Comuni, aziende di gestione immobiliare, startup di gestione energetica.
+Dove lavora: studi di architettura sostenibile, enti di certificazione LEED e BREEAM, imprese edili innovative, uffici tecnici comunali e regionali.
 
-Competenze chiave che inizia a costruire da qui: fisica dell'energia · lettura e analisi dei dati di consumo · sistemi di controllo automatico · normativa sull'efficienza energetica (D.Lgs. 192/2005, Reg. UE EPBD)
+Competenze chiave che inizia a costruire da qui: bioarchitettura · certificazioni LEED/BREEAM · software BIM · materiali ecocompatibili · efficienza energetica
 
-*"Un edificio efficiente non è un lusso: è la norma verso cui stiamo andando — che ci piaccia o no."*
+*"Il migliore edificio green è quello che consuma così poco da quasi non accorgersi che esiste."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -622,10 +623,10 @@ L'azione di risparmio "a costo medio-alto" che hai proposto potrebbe diventare l
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: il Box Fisica (legge di Ohm) va come sidebar colorata con le formule in grande.
+- Zona 2: il Box Fisica (legge di Ohm) va come sidebar colorata con le formule in grande.
 - La tabella delle classi energetiche (dalla G alla A4) va in evidenza grafica con una scala cromatica dal rosso (G) al verde (A4).
-- La bolletta semplificata della 🔍 OSSERVA va in un box con bordo, come una vera bolletta semplificata.
-- Le schede di 🔬 SPERIMENTA (Intermedio e Avanzato) e la Scheda di Consulenza Energetica (🌍 AGISCI) vanno come schede fotocopiabili separate.
+- La bolletta semplificata della Zona 3 va in un box con bordo, come una vera bolletta semplificata.
+- Le schede di Zona 4 (Intermedio e Avanzato) e la Scheda di Consulenza Energetica (Zona 5) vanno come schede fotocopiabili separate.
 
 **Per l'agente generatore asset:**
 - Visual 1: schema della casa con i tre impianti sovrapposti in colori diversi (elettrico rosso, idrico blu, gas/termico giallo). Sezione verticale con tutti i percorsi visibili.

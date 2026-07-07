@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il giorno in cui Cape Town quasi rimase senza acqua"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 37 sec.*
 
 **Script del podcast:**
 
@@ -199,25 +199,26 @@ Cape Town non aveva investito abbastanza in fonti alternative (dissalazione, riu
 
 ---
 
-### 🔧 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere ambientale — specializzazione risorse idriche**
+### 🚌 Chi lavora con questa competenza nel 2030?
 
-Con i cambiamenti climatici che aumentano la frequenza e l'intensità delle siccità, e con il 40% della rete idrica italiana che ha più di 40 anni e disperde quasi la metà dell'acqua, questa figura professionale è tra le più richieste nel settore pubblico e privato.
+**Mobility as a Service (MaaS) Designer**
 
-Concretamente lavora su: progettazione e gestione di acquedotti, impianti di depurazione e sistemi di raccolta delle acque piovane; valutazione delle perdite di rete con tecnologie di monitoraggio (sensori di pressione, correlatori acustici, droni per ispezioni); progettazione di soluzioni per la resilienza idrica delle città (dissalazione, riuso delle acque trattate, invarianza idraulica); analisi dell'impronta idrica di processi industriali e agroalimentari.
+Progetta sistemi integrati di mobilità urbana sostenibile che combinano trasporto pubblico, bike sharing, car sharing e micro-mobilità in un'unica piattaforma digitale accessibile a tutti.
 
-Dove lavora: gestori idrici pubblici (Comuni, consorzi, aziende municipalizzate), ARPA e agenzie ambientali regionali, società di ingegneria, enti internazionali come ONU-Ambiente, UNICEF (programmi accesso all'acqua), Banca Mondiale.
+Dove lavora: aziende di trasporto pubblico locale, startup di mobilità urbana, comuni e regioni, operatori di sharing mobility.
 
-Competenze chiave che inizia a costruire da qui: idraulica e idrogeologia · chimica delle acque · sistemi GIS per la mappatura delle reti · normativa idrica europea (Water Framework Directive) · gestione delle emergenze idriche
+Competenze chiave che inizia a costruire da qui: urbanistica · UX design · gestione mobilità · app design · sostenibilità dei trasporti
 
-*"Il mio lavoro è fare in modo che l'acqua sia sempre disponibile per tutti — oggi e tra cinquant'anni."*
+*"Non vendo mezzi di trasporto. Vendo la libertà di spostarsi senza possedere un'auto."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -280,7 +281,7 @@ Calcola il tuo consumo diretto totale per 2 giorni e dividilo per 2 per ottenere
 
 **Parte 2 — Acqua virtuale (quella che non vedi):**
 
-Fai l'inventario di quello che hai mangiato e bevuto negli ultimi 2 giorni. Usa la tabella dell'impronta idrica in 📖 ESPLORA per stimare i litri "incorporati" in ogni alimento.
+Fai l'inventario di quello che hai mangiato e bevuto negli ultimi 2 giorni. Usa la tabella dell'impronta idrica in Zona 2 per stimare i litri "incorporati" in ogni alimento.
 
 **Tabella impronta idrica aggiuntiva per questo esercizio:**
 - 1 uovo: 200 litri
@@ -384,7 +385,7 @@ Osserva la scuola per una settimana e segnala almeno 3 sprechi osservati:
 
 **PARTE 3 — L'acqua che consumiamo a casa**
 
-Calcola la tua impronta idrica giornaliera usando il metodo della 🔬 SPERIMENTA (Intermedio). Distingui acqua diretta e acqua virtuale. Riporta i tre comportamenti che modificheresti.
+Calcola la tua impronta idrica giornaliera usando il metodo della Zona 4 (Intermedio). Distingui acqua diretta e acqua virtuale. Riporta i tre comportamenti che modificheresti.
 
 ---
 
@@ -458,7 +459,7 @@ Guarda la tua impronta idrica. Qual è la scelta di consumo — non il comportam
 
 ### 🔗 Collegamento con MC-AMB-2-03 — Città, servizi urbani e pianificazione
 
-La rete idrica è uno dei "sistemi invisibili" che rendono funzionale una città — insieme alla rete elettrica, alle fognature, ai trasporti. MC-AMB-2-03 ti ha dato la visione d'insieme della città come sistema di servizi. Questa MC entra nel dettaglio di uno dei più critici. Nella 🔬 SPERIMENTA Avanzato hai lavorato sulla resilienza: è la stessa logica che si applica a tutti i sistemi urbani critici.
+La rete idrica è uno dei "sistemi invisibili" che rendono funzionale una città — insieme alla rete elettrica, alle fognature, ai trasporti. MC-AMB-2-03 ti ha dato la visione d'insieme della città come sistema di servizi. Questa MC entra nel dettaglio di uno dei più critici. Nella Zona 4 Avanzato hai lavorato sulla resilienza: è la stessa logica che si applica a tutti i sistemi urbani critici.
 
 ---
 
@@ -483,17 +484,17 @@ La rete idrica è uno dei "sistemi invisibili" che rendono funzionale una città
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: lo schema delle sei fasi del ciclo artificiale va come infografica lineare (frecce da sinistra a destra con icone per ogni fase). Occupa tutta la larghezza della pagina.
+- Zona 2: lo schema delle sei fasi del ciclo artificiale va come infografica lineare (frecce da sinistra a destra con icone per ogni fase). Occupa tutta la larghezza della pagina.
 - La tabella dell'impronta idrica va in un box colorato evidenziato (stile "dati che sorprendono").
 - Il box "Collegamento STEM — Chimica" (clorazione) va come sidebar nella sezione potabilizzazione.
-- Le tabelle della 🔬 SPERIMENTA (Intermedio e Avanzato) vanno su pagine separate come schede fotocopiabili.
-- La scheda del dossier in 🌍 AGISCI va come pagina separata (fotocopiabile / scaricabile con QR).
+- Le tabelle della Zona 4 (Intermedio e Avanzato) vanno su pagine separate come schede fotocopiabili.
+- La scheda del dossier in Zona 5 va come pagina separata (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema circolare del ciclo artificiale dell'acqua — 6 fasi con icone, frecce, e indicazione della perdita del 42% alla fase 3.
 - Visual richiesto 2: confronto infografico impronta idrica — hamburger vs. legumi, cotone vs. tessuto riciclato.
 - Visual richiesto 3: mappa siccità europea 2022 con evidenziato il bacino del Po.
-- Hook audio: script podcast disponibile in ⚡ INNESCA di questo file.
+- Hook audio: script podcast disponibile in Zona 1 di questo file.
 
 ---
 

@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Un materiale spesso un atomo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 10 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 23 sec.*
 > *(Script completo: MC-MAT-1-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -26,15 +26,20 @@ I materiali cambiano il mondo. Non solo quelli che già conosci — anche quelli
 
 ## 📖 ESPLORA
 
-### I materiali del futuro non vengono dallo spazio. Vengono dal laboratorio.
 
-Nei secoli passati, ogni nuovo materiale che l'essere umano imparava a usare cambiava la storia. La pietra levigata permise le prime città. I metalli permisero le armi, gli aratri, le navi. L'acciaio permise i ponti sospesi e i grattacieli. La plastica permise il confezionamento di massa, la medicina monouso, l'elettronica consumer.
+### ⛓️ Chi lavora con questa competenza nel 2030?
 
-Ogni volta, il cambiamento non era solo tecnico: era sociale, economico, politico. I materiali non sono mai neutrali — cambiano cosa possiamo fare, come viviamo, chi ha potere e chi no.
+**Waste Blockchain Auditor**
 
-Oggi ci troviamo in un altro di questi momenti. I laboratori di ricerca stanno sviluppando materiali con proprietà che sembrano impossibili — trasparenti e resistenti come acciaio, biodegradabili come foglie, conduttivi come rame ma leggerissimi come carta. Materiali che non esistevano cinquant'anni fa e che nei prossimi decenni cambieranno come costruiamo case, come vestiamo, come immagazziniamo energia, come curiamo le malattie.
+Usa la tecnologia blockchain per tracciare i flussi di rifiuti lungo tutta la catena di smaltimento, garantendo la conformità alle normative ambientali e prevenendo smaltimenti illeciti.
 
-Per valutare questi materiali non basta sapere cosa fanno — bisogna anche sapere quanto costano, come si producono, e soprattutto cosa succede quando finiscono. La sostenibilità non è un'aggiunta facoltativa alla valutazione di un materiale: è un criterio tecnico come la resistenza o la leggerezza.
+Dove lavora: consorzi di recupero materiali, aziende di waste management, enti di verifica ambientale, startup greentech di tracciabilità.
+
+Competenze chiave che inizia a costruire da qui: blockchain · normativa ambientale · auditing · tracciabilità rifiuti · smart contract
+
+*"La tracciabilità non è burocrazia. È la prova documentata che il rifiuto è diventato risorsa."*
+
+---
 
 ---
 
@@ -258,7 +263,7 @@ Competenze chiave: chimica dei polimeri · analisi del ciclo di vita · scienza 
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -527,10 +532,10 @@ Questa MC è la fase 3 dell'UDA interdisciplinare del primo anno. Hai classifica
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: il paragrafo sul grafene si presta a una sidebar con visualizzazione dell'esagono di carbonio e i dati numerici (200× acciaio, 0,77 mg/m², Nobel 2010) come infografica dati.
-- La tabella comparativa "Materiali innovativi vs. tradizionali" a fine 📖 ESPLORA va in riquadro a larghezza intera.
-- La 🔬 SPERIMENTA Avanzato (proposta packaging) va come scheda fotocopiabile separata.
-- La scheda 🌍 AGISCI (proposta al preside) va come pagina separata.
+- Zona 2: il paragrafo sul grafene si presta a una sidebar con visualizzazione dell'esagono di carbonio e i dati numerici (200× acciaio, 0,77 mg/m², Nobel 2010) come infografica dati.
+- La tabella comparativa "Materiali innovativi vs. tradizionali" a fine Zona 2 va in riquadro a larghezza intera.
+- La Zona 4 Avanzato (proposta packaging) va come scheda fotocopiabile separata.
+- La scheda Zona 5 (proposta al preside) va come pagina separata.
 
 **Per l'agente generatore asset:**
 - Visual 1: tabella comparativa grafica (5 materiali innovativi con icone, vantaggio principale e limite principale visualizzati con sistema semaforo verde/arancio/rosso).

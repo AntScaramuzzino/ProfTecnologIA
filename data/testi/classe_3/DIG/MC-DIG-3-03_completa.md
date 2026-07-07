@@ -147,23 +147,26 @@ Questo è l'IoT civico: dati raccolti da cittadini, per cittadini, con scopi pub
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**IoT Solutions Architect**
+### 🔓 Chi lavora con questa competenza nel 2030?
 
-Progetta sistemi di raccolta e analisi dati distribuiti che connettono sensori fisici al cloud per supportare decisioni in ambito di smart city, agricoltura di precisione, industria 4.0, salute pubblica. Non si occupa solo della parte tecnica (come connettere il sensore): progetta l'intero flusso dal dato grezzo alla decisione — quali dati raccogliere, con quale frequenza, come visualizzarli, chi ha il diritto di accedervi, come proteggerli.
+**Esperto in Cybersecurity**
 
-Dove lavora: aziende di smart city, settore agricoltura di precisione, ospedali con infrastrutture IoT, enti pubblici, startup ambientali.
+Protegge infrastrutture critiche da attacchi informatici usando crittografia avanzata, ethical hacking e metodologie di incident response per garantire continuità e conformità normativa.
 
-Competenze chiave che inizia a costruire da qui: analisi critica dei dati · visualizzazione · privacy dei dati (GDPR) · citizen science · valutazione di fonti di dati
+Dove lavora: red team di grandi aziende, CERT nazionali e agenzie di cybersicurezza, banche e infrastrutture critiche, forze dell'ordine specializzate.
 
-*"Non mi interessa solo che il sensore funzioni. Mi interessa che il dato raccolto venga usato bene — e da chi di dovere."*
+Competenze chiave che inizia a costruire da qui: crittografia avanzata · ethical hacking · normative GDPR/NIS2 · penetration testing · analisi del rischio
+
+*"Attaccare è la mia professione. Per difendere davvero, devo pensare esattamente come chi vuole entrare."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -361,10 +364,10 @@ I dati che hai analizzato in questa MC sono esattamente il carburante dei sistem
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: distribuire su 2 colonne. I box "correlazione vs causalità" e "T8 — IA e dati IoT" vanno come sidebar con colore di sfondo diverso.
+- Zona 2: distribuire su 2 colonne. I box "correlazione vs causalità" e "T8 — IA e dati IoT" vanno come sidebar con colore di sfondo diverso.
 - La tabella "tipi di grafico" va come infografica visuale con esempi mini-grafico per ogni tipo.
 - Le due note STEM e il collegamento MC-DIG-1-02 vanno come riquadri laterali.
-- La rubrica di 🌍 AGISCI va su pagina separata o come scheda fotocopiabile.
+- La rubrica di Zona 5 va su pagina separata o come scheda fotocopiabile.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema "dato grezzo → contesto → informazione" con esempio pratico (temperatura 21.3°C → quando, dove, confronto).

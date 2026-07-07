@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La mela che hai comprato in dicembre è di agosto"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 52 sec.*
 > *(Script completo: MC-ALI-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -208,25 +208,26 @@ La pianta idroponica crescerà più velocemente e con foglie più grandi e verde
 
 ---
 
-### 👨‍🌾 Chi lavora con questa competenza nel 2030?
 
-**Agronomo di precisione**
+### 🦠 Chi lavora con questa competenza nel 2030?
 
-Il lavoro dell'agronomo oggi non si fa solo con le mani in terra. Si fa con droni che mappano le condizioni del suolo a 2 metri di risoluzione, con sensori IoT che misurano umidità e temperatura in tempo reale, con software di intelligenza artificiale che analizzano immagini satellitari per prevedere lo stress idrico delle colture prima ancora che sia visibile a occhio nudo.
+**Microbiome Specialist**
 
-L'**agronomo di precisione** usa questi dati per ottimizzare ogni decisione: quando irrigare, dove applicare il fertilizzante (non su tutto il campo, ma solo dove serve), quando raccogliere. Il risultato è meno acqua usata, meno fertilizzante disperso, rese più alte. In Italia molte aziende agricole del Nord stanno già adottando questi sistemi.
+Studia il ruolo dei microorganismi intestinali nel benessere, nella nutrizione personalizzata e nella prevenzione delle malattie, aprendo nuovi orizzonti in medicina e food tech.
 
-Dove lavora: aziende agricole, cooperative di produttori, start-up agritech, enti pubblici (regioni, agenzie per l'ambiente).
+Dove lavora: laboratori di ricerca universitari, startup biotech della salute, centri di nutrizione personalizzata, industria farmaceutica e nutraceutica.
 
-Competenze chiave che inizia a costruire da qui: biologia vegetale · chimica del suolo · analisi di dati · drone piloting · programmazione di sensori
+Competenze chiave che inizia a costruire da qui: microbiologia · nutrizione personalizzata · biotecnologia · biologia molecolare · analisi di laboratorio
 
-*"Non posso controllare il clima, ma posso conoscerlo abbastanza bene da anticiparlo."*
+*"Siamo fatti di batteri tanto quanto di cellule. Chi capisce il microbioma capisce la salute."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -347,7 +348,7 @@ Coltiva una piantina (fagiolo, basilico, rucola, germogli di lenticchia — sceg
 - Scrivi due previsioni: cosa ti aspetti di vedere dopo 1 settimana? E dopo 3 settimane?
 
 **Fase 2 — Durante la coltivazione (3 settimane):**
-- Compila la scheda di osservazione (come quella in 🔬 SPERIMENTA BASE) ogni 2-3 giorni
+- Compila la scheda di osservazione (come quella in Zona 4 BASE) ogni 2-3 giorni
 - Scatta una foto ogni 3-4 giorni (o disegna la pianta se non hai uno smartphone)
 - Annota ogni anomalia: la pianta è gialla? Non cresce? Ha foglie mangiate da qualcosa?
 
@@ -452,11 +453,11 @@ Questa MC è il punto di partenza dell'UDA interdisciplinare del secondo anno: *
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: il box Scienze (fotosintesi) va come sidebar colorata. Il box impronta idrica va come infografica comparativa (una goccia d'acqua con numeri all'interno per ogni alimento).
+- Zona 2: il box Scienze (fotosintesi) va come sidebar colorata. Il box impronta idrica va come infografica comparativa (una goccia d'acqua con numeri all'interno per ogni alimento).
 - Lo schema di rotazione delle colture (4 anni) va come infografica circolare, non come elenco.
 - La tabella comparativa convenzionale/biologico/idroponico va come griglia visiva 3 colonne.
-- Le schede della 🔬 SPERIMENTA (BASE e INTERMEDIO) vanno come pagine fotocopiabili separate.
-- La scheda di osservazione della 🌍 AGISCI va come pagina separata fotocopiabile/scaricabile con QR.
+- Le schede della Zona 4 (BASE e INTERMEDIO) vanno come pagine fotocopiabili separate.
+- La scheda di osservazione della Zona 5 va come pagina separata fotocopiabile/scaricabile con QR.
 
 **Per l'agente generatore asset:**
 - Visual 1: infografica radiale "Il ciclo della pianta" — dal seme al frutto, con etichette delle fasi.

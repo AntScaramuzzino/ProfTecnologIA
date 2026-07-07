@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il cemento che migliora con l'acqua di mare"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 56 sec.*
 > *(Script completo: MC-AMB-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -302,25 +302,26 @@ La struttura del Colosseo — progettata senza la minima conoscenza della sismic
 
 ---
 
-### 👷 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere strutturale per la rigenerazione urbana**
+### 🏛️ Chi lavora con questa competenza nel 2030?
 
-L'Italia ha un enorme problema: il 70% del patrimonio edilizio residenziale è stato costruito prima del 1981, spesso senza norme antisismiche e senza isolamento termico adeguato. Demolire e ricostruire non è sostenibile — né economicamente né ambientalmente. La soluzione è il **retrofit strutturale**: rinforzare gli edifici esistenti senza abbatterli.
+**Architetto d'Interni**
 
-L'ingegnere strutturale per la rigenerazione lavora a questo: analizza la struttura esistente, calcola le sue carenze sismiche e termiche, e progetta interventi minimali ma efficaci. Potrebbe installare un sistema di isolamento alla base sotto un condominio degli anni Settanta senza che i condomini debbano uscire. Potrebbe aggiungere fibre di carbonio sulle pareti per aumentare la resistenza al taglio di un edificio scolastico.
+Progetta gli spazi interni di luoghi privati, commerciali ed espositivi, curando aspetti pratici e funzionali del vivere lo spazio: dimensioni, qualità della luce, salubrità e comfort degli ambienti.
 
-Dove lavora: studi di ingegneria civile, amministrazioni pubbliche (Comuni, Province, Protezione Civile), enti come l'ENEA e il Consiglio Superiore dei Lavori Pubblici.
+Dove lavora: studi di architettura e interior design, aziende di arredamento contract, strutture alberghiere e catene retail, studi di progettazione residenziale.
 
-Competenze chiave che inizia a costruire da qui: meccanica strutturale · scienza delle costruzioni · normativa sismica (NTC 2018) · materiali innovativi · modellazione BIM
+Competenze chiave che inizia a costruire da qui: progettazione architettonica · ergonomia · materiali e finiture · CAD · normativa edilizia
 
-*"Non abbatto. Capisco come è fatto — e lo faccio diventare migliore."*
+*"Lo spazio non è neutro. Ogni scelta di proporzioni, luce e materiale cambia come ci sentiamo."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -545,7 +546,7 @@ C'è stato qualcosa che non riuscivi a capire — come funziona una parte della 
 ---
 
 **3. L'errore come risorsa**
-Nel laboratorio (🔬 SPERIMENTA), la tua struttura ha ceduto in un punto che non ti aspettavi? Oppure hai cambiato idea su qualcosa mentre costruivi o mentre analizzavi l'edificio reale?
+Nel laboratorio (Zona 4), la tua struttura ha ceduto in un punto che non ti aspettavi? Oppure hai cambiato idea su qualcosa mentre costruivi o mentre analizzavi l'edificio reale?
 
 *Cosa ti ha fatto capire che avevi sbagliato? Come hai corretto il tiro?*
 
@@ -589,11 +590,11 @@ L'edificio che ti ha colpito di più o che ti ha fatto più domande è spesso il
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: il testo sulle quattro forze (compressione, trazione, flessione, taglio) va affiancato da un'infografica con frecce colorate su una trave schematica.
+- Zona 2: il testo sulle quattro forze (compressione, trazione, flessione, taglio) va affiancato da un'infografica con frecce colorate su una trave schematica.
 - Il box "Il segreto dell'arco" va messo come sidebar con una foto di un arco romano.
 - La tabella dei materiali isolanti va in un box colorato separato.
-- Le schede di 🔬 SPERIMENTA (Intermedio e Avanzato) vanno come schede fotocopiabili separate.
-- La Scheda di Rilievo Strutturale di 🌍 AGISCI va come pagina separata (fotocopiabile / scaricabile con QR).
+- Le schede di Zona 4 (Intermedio e Avanzato) vanno come schede fotocopiabili separate.
+- La Scheda di Rilievo Strutturale di Zona 5 va come pagina separata (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual 1: sezione esplosa di un edificio a tre piani in c.a. con tutti gli elementi strutturali etichettati (pilastri, travi, solai, fondazioni, tamponamenti).

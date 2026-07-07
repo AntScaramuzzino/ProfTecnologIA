@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "I tuoi dati valgono 0,47 centesimi. Per adesso."**
-> *Ascolta prima di leggere. Durata: 2 min 28 sec.*
+> *Ascolta prima di leggere. Durata: 3 min 57 sec.*
 > *(Script completo: MC-DIG-2-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -203,25 +203,26 @@ Questo è solo uno strato dell'impronta. Ci sono anche i dati lasciati su Google
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Data Protection Officer (DPO) — Responsabile della Protezione dei Dati**
+### ✨ Chi lavora con questa competenza nel 2030?
 
-Il DPO è la figura professionale introdotta obbligatoriamente dal GDPR per le organizzazioni che trattano grandi quantità di dati personali. Supervisiona che l'organizzazione rispetti la normativa sulla privacy, consulta le funzioni tecniche e legali, è il punto di contatto per i cittadini che esercitano i propri diritti e per le autorità di controllo (in Italia: il Garante per la Protezione dei Dati Personali).
+**AI Brand Strategist**
 
-Non è un ruolo esclusivamente tecnico: richiede conoscenza del diritto (GDPR, normativa nazionale), comprensione dei sistemi informatici e delle architetture dati, e capacità di comunicare con persone di background molto diversi.
+Sviluppa strategie di marketing digitale e brand identity potenziando la creatività umana con strumenti di AI generativa, ottimizzando la comunicazione sui canali social e digitali.
 
-Dove lavora: qualsiasi organizzazione con più di 250 dipendenti, ospedali, scuole, enti pubblici, piattaforme digitali. È una delle figure professionali con la maggiore domanda in Europa dall'entrata in vigore del GDPR.
+Dove lavora: agenzie creative e di comunicazione, dipartimenti marketing di grandi aziende, startup media tech, brand che integrano AI nella comunicazione.
 
-Competenze che inizia a costruire da qui: conoscenza dei dati personali e del GDPR · pensiero critico sulle tecnologie digitali · comprensione dei meccanismi di tracciamento · comunicazione chiara di concetti tecnici a non-tecnici
+Competenze chiave che inizia a costruire da qui: marketing digitale · AI generativa · data strategy · comunicazione visiva · social media marketing
 
-*"La privacy non è un problema tecnico. È un problema di fiducia. E la fiducia si costruisce con la trasparenza."*
+*"L'AI genera contenuti infiniti. Il mio lavoro è decidere quale vale la pena pubblicare."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -421,11 +422,11 @@ Nella MC-INF-2-02 (Informatica, 2ª media) studierai come funziona tecnicamente 
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la sezione sui diritti GDPR va come infografica con 6 card (una per diritto), colori diversi per ciascuna.
+- Zona 2: la sezione sui diritti GDPR va come infografica con 6 card (una per diritto), colori diversi per ciascuna.
 - La sezione sul tracciamento pubblicitario va come schema a flusso con i 3 attori: utente → sito → rete pubblicitaria.
 - Lo scandalo Cambridge Analytica va come box con sfondo scuro e timeline degli eventi.
 - Il box T8 (IA critica) va come sidebar con icona dedicata.
-- La rubrica in 🌍 AGISCI va su pagina separata (fotocopiabile / scaricabile con QR).
+- La rubrica in Zona 5 va su pagina separata (fotocopiabile / scaricabile con QR).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: mappa dell'impronta digitale (template compilabile) — categorie di dati, piattaforme, frecce. Formato PNG 1200×900 + versione editabile per l'attività di laboratorio.

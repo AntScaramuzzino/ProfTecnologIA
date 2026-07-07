@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Un litro di benzina. 23 tonnellate di storia."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 38 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 20 sec.*
 > *(Script completo: MC-ENE-3-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -200,25 +200,26 @@ Ogni volta che accendi la luce, stai usufruendo di una catena di trasformazioni 
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Analista di sistema energetico**
+### ⚡ Chi lavora con questa competenza nel 2030?
 
-Non è un ingegnere di centrali, ma qualcuno che modella l'intero sistema energetico di un paese, di una regione o di un'azienda: da dove viene l'energia, come si trasporta, come si usa, cosa emette, quanto costa. Questi professionisti producono i dati su cui governi e imprese fondano le decisioni di investimento — costruire una nuova centrale, acquistare gas da questo o quel paese, investire in efficienza energetica o in rinnovabili.
+**Smart Grid Analyst**
 
-Nel 2030, questa figura è cruciale per gestire la transizione energetica: le decisioni sbagliate costano decenni e miliardi.
+Integra le fonti rinnovabili — solare, eolico, idro — in reti elettriche intelligenti, ottimizzando distribuzione e stoccaggio dell'energia con dati in tempo reale e AI.
 
-Dove lavora: ministeri dell'energia, società di consulenza energetica, Terna (il gestore della rete elettrica italiana), Snam (gas), grandi industrie, agenzie internazionali come IEA e IRENA.
+Dove lavora: gestori di reti elettriche nazionali e regionali, ENEA, aziende di energy management, startup grid-tech.
 
-Competenze chiave che inizia a costruire da qui: analisi dei dati energetici · chimica degli idrocarburi · termodinamica applicata · modelli economici
+Competenze chiave che inizia a costruire da qui: ingegneria elettrica · software SCADA · energie rinnovabili · data analysis · AI applicata all'energia
 
-*"Non diciamo se l'energia è 'buona' o 'cattiva'. Diciamo quanta CO₂ emette, quanto costa, quanto dura, e quante persone può alimentare."*
+*"La rete elettrica del futuro non aspetta che produciamo energia. Anticipa quando ne avremo bisogno."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -362,7 +363,7 @@ I tuoi genitori stanno pensando di comprare una nuova automobile. Stanno discute
 
 **Parte A — Calcolo dell'impronta attuale**
 
-Segui i passaggi del livello Intermedio della 🔬 SPERIMENTA per calcolare l'impronta carbonica mensile della tua famiglia in tre settori: gas per riscaldamento, elettricità, trasporti in auto.
+Segui i passaggi del livello Intermedio della Zona 4 per calcolare l'impronta carbonica mensile della tua famiglia in tre settori: gas per riscaldamento, elettricità, trasporti in auto.
 
 Se non hai accesso alle bollette: usa i dati medi italiani forniti nella tabella del laboratorio.
 
@@ -387,7 +388,7 @@ Scrivi 8-10 righe che rispondano alla domanda dei tuoi genitori:
 - Bollette di gas ed elettricità (se disponibili, o usa i dati medi)
 - Dati sui km percorsi in auto ogni mese dalla famiglia
 - Calcolatrice
-- Tabella dei fattori di conversione (fornita nella 🔬 SPERIMENTA Intermedio)
+- Tabella dei fattori di conversione (fornita nella Zona 4 Intermedio)
 - Questa scheda: fotocopiabile dal libro o scaricabile con QR code
 
 ---
@@ -468,10 +469,10 @@ Hai calcolato quanto emettono i combustibili fossili. Nella MC successiva (MC-EN
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la spiegazione della catena di raffinazione del petrolio va con un diagramma di flusso verticale nella colonna destra.
+- Zona 2: la spiegazione della catena di raffinazione del petrolio va con un diagramma di flusso verticale nella colonna destra.
 - Il box Chimica (combustione) va evidenziato con sfondo grigio e formula in grassetto.
-- La 🔬 SPERIMENTA (Intermedio e Avanzato) va come schede fotocopiabili con tabelle di calcolo.
-- La 🌍 AGISCI va come pagina separata con le istruzioni passo-passo e le tabelle di calcolo già predisposte.
+- La Zona 4 (Intermedio e Avanzato) va come schede fotocopiabili con tabelle di calcolo.
+- La Zona 5 va come pagina separata con le istruzioni passo-passo e le tabelle di calcolo già predisposte.
 - La sezione "Come arriva la luce in casa tua" può essere visualizzata come infografica lineare a 6 step.
 
 **Per l'agente generatore asset:**

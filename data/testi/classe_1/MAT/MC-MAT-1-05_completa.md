@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La bici che gira il mondo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 36 sec.*
 
 **Scenario di avvio:**
 
@@ -312,7 +312,7 @@ Un telaio da corsa professionale in carbonio pesa meno di 700 g e raggiunge limi
 | Titanio | 1,1–1,3 kg | 600–1.500 € | Difficilmente | 50+ anni |
 | Carbonio | 0,6–0,9 kg | 1.500–5.000 € | No | 10–15 anni (uso intenso) |
 
-**Risposta alla domanda della ⚡ INNESCA:**
+**Risposta alla domanda della Zona 1:**
 La bici più leggera non è quella più economica. La bici più economica (acciaio) è quella che dura di più. La bici più leggera (carbonio) non è quella più sostenibile — si produce con molta energia e non si ricicla facilmente. Non esiste il materiale perfetto per tutti: esiste il materiale giusto per ogni uso specifico.
 
 ---
@@ -331,25 +331,26 @@ La bici più leggera non è quella più economica. La bici più economica (accia
 
 ---
 
-### 👨‍🔧 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere metallurgico dei materiali avanzati**
+### 🤖 Chi lavora con questa competenza nel 2030?
 
-Non disegna le macchine — progetta la *materia* con cui le macchine sono costruite. Lavora a monte del processo produttivo: decide la composizione di una lega, i trattamenti termici da applicare, le specifiche di resistenza e leggerezza richieste per ogni applicazione.
+**Digital Twin Engineer**
 
-Nel 2030, il lavoro si concentra su tre sfide: sviluppare acciai ad altissima resistenza con meno carbonio (per ridurre le emissioni degli altiforni), creare leghe di alluminio e titanio stampabili in 3D con proprietà meccaniche controllate, progettare leghe per ambienti estremi (motori ad idrogeno, motori elettrici ad alta temperatura, strutture aerospaziali).
+Crea repliche digitali (Industry 5.0) di impianti metallurgici e linee produttive per simulare processi, ottimizzare la resa dei materiali e ridurre scarti e tempi di fermo.
 
-Dove lavora: centri ricerca di aziende siderurgiche (Danieli, Tenaris, Arcelor-Mittal), laboratori aerospaziali (Airbus, Leonardo), startup di manifattura additiva (stampa 3D di metalli), istituti di ricerca universitari.
+Dove lavora: aziende manifatturiere avanzate, centri di ricerca su Industry 5.0, system integrator, fornitori di piattaforme IIoT.
 
-Competenze che inizia a costruire da qui: proprietà dei materiali metallici · leghe e trattamenti termici · meccanica dei materiali · chimica metallurgica · analisi al microscopio elettronico.
+Competenze chiave che inizia a costruire da qui: IoT · modellazione 3D · ingegneria dei sistemi · simulazione industriale · Industry 5.0
 
-*"Non invento solo oggetti più leggeri. Invento materiali che rendono possibile quello che oggi non si può ancora fare."*
+*"Il gemello digitale non è una copia. È una macchina del tempo che ti mostra il futuro del sistema fisico."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già esattamente quali criteri vengono valutati: organizza il lavoro di conseguenza.
 
 ---
@@ -641,12 +642,12 @@ L'oggetto che ha mostrato il percorso più interessante (una lega speciale, un t
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la tabella di confronto metalli strutturali va su una doppia colonna a tutta larghezza, con il titolo "I metalli a confronto" e leggenda sotto.
+- Zona 2: la tabella di confronto metalli strutturali va su una doppia colonna a tutta larghezza, con il titolo "I metalli a confronto" e leggenda sotto.
 - Il riquadro sull'altoforno (💡 box) va come sidebar laterale con icona di forno industriale.
 - I riquadri STEM (fisica e chimica) vanno come sidebar alternate su pagine diverse.
-- La tabella della 🔬 SPERIMENTA Intermedio (Parte A) va come scheda separata o colonna autonoma.
-- La matrice di valutazione della 🔬 SPERIMENTA Avanzato va come tabella a tutta larghezza con spazio per compilare.
-- La Scheda Tecnica della 🌍 AGISCI va come pagina fotocopiabile/scaricabile.
+- La tabella della Zona 4 Intermedio (Parte A) va come scheda separata o colonna autonoma.
+- La matrice di valutazione della Zona 4 Avanzato va come tabella a tutta larghezza con spazio per compilare.
+- La Scheda Tecnica della Zona 5 va come pagina fotocopiabile/scaricabile.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: infografica comparativa bicicletta — 4 telai (acciaio, alluminio, titanio, carbonio) con barre proporzionali per peso, resistenza, costo, durata.

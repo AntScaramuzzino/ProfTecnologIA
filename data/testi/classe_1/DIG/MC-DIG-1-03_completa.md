@@ -194,17 +194,20 @@ Risultato: i semafori intelligenti riducono i tempi di attesa del 20-25% rispett
 
 ---
 
-### 👩‍💻 Chi lavora con questa competenza nel 2030?
 
-**Sviluppatore software**
+### ⚖️ Chi lavora con questa competenza nel 2030?
 
-Progetta e scrive algoritmi che risolvono problemi reali — dalla gestione degli ordini di un e-commerce all'ottimizzazione dei percorsi di un servizio di consegna, dal riconoscimento vocale di un assistente AI all'algoritmo di raccomandazione di una piattaforma streaming.
+**Algorithm Auditor**
 
-Ma il pensiero computazionale non serve solo ai programmatori. Serve ai **medici** che progettano protocolli diagnostici, ai **logisti** che ottimizzano le catene di approvvigionamento, agli **architetti** che usano software parametrico, agli **insegnanti** che progettano percorsi di apprendimento personalizzati.
+Verifica equità, trasparenza e assenza di bias negli algoritmi usati da aziende e istituzioni, garantendo che le decisioni automatizzate rispettino i diritti delle persone.
 
-Competenze che costruisci qui: scomposizione di problemi · pensiero sequenziale · astrazione · riconoscimento di pattern · debug sistematico
+Dove lavora: enti regolatori dell'AI (AI Office europeo), grandi aziende tech, studi legali specializzati in diritto digitale, ONG per i diritti digitali.
 
-*"Un algoritmo non è magia. È chiarezza di pensiero trasformata in istruzioni."*
+Competenze chiave che inizia a costruire da qui: pensiero computazionale · statistica · AI · diritto digitale · inclusione e accessibilità
+
+*"Se non puoi spiegare perché l'algoritmo ha deciso così, non puoi difenderti dalla sua decisione sbagliata."*
+
+---
 
 ---
 

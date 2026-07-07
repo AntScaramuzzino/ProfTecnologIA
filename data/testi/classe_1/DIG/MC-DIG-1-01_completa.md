@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Più potente della NASA. In tasca."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 15 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 34 sec.*
 > *(Script completo: MC-DIG-1-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -251,23 +251,26 @@ Tutti questi componenti sono incollati, saldati e assemblati in modi che rendono
 
 ---
 
-### 👨‍💻 Chi lavora con questa competenza nel 2030?
 
-**Tecnico di supporto IT e riparatore di dispositivi**
+### 🚀 Chi lavora con questa competenza nel 2030?
 
-Con la crescita del "Right to Repair" e la pressione verso la sostenibilità, la riparazione e la manutenzione di dispositivi digitali diventa un settore in espansione. Il tecnico IT di prossima generazione non si limita a installare software: diagnostica problemi hardware, sostituisce componenti, configura ambienti di lavoro digitali per aziende e scuole, e forma gli utenti a usare i propri dispositivi in modo più efficiente e consapevole.
+**Digital and Innovation Manager**
 
-Dove lavora: reti di riparazione autorizzata, cooperative di riuso digitale, uffici IT di scuole e aziende, startup dell'economia circolare dell'elettronica.
+Assicura la gestione dell'innovazione digitale in un'impresa, stimolando processi organizzativi basati sulle tecnologie, dalla selezione degli strumenti allo sviluppo delle competenze.
 
-Competenze chiave che inizi a costruire qui: comprensione dell'architettura hardware · orientamento nei sistemi operativi · pensiero diagnostico ("cosa non funziona e perché?") · sostenibilità dei dispositivi
+Dove lavora: grandi aziende in trasformazione digitale, società di consulenza strategica, startup scale-up, enti pubblici in innovazione.
 
-*"Il dispositivo più sostenibile è quello che già esiste e funziona ancora. Riparare è più verde che riciclare."*
+Competenze chiave che inizia a costruire da qui: digital transformation · project management · tecnologie digitali · change management · innovation management
+
+*"La tecnologia è facile da acquistare. Difficile è cambiare il modo in cui le persone lavorano."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -303,7 +306,7 @@ Sotto trovi l'elenco dei 6 componenti principali di un computer. Accanto a ciasc
 
 **Domanda finale:** il monitor è una periferica di input, di output, o entrambe? Spiega in una frase.
 
-> 💡 **Aiuto:** se non ricordi la funzione di un componente, cerca nel testo della 📖 ESPLORA il nome del componente e rileggi le prime due frasi di quella sezione.
+> 💡 **Aiuto:** se non ricordi la funzione di un componente, cerca nel testo della Zona 2 il nome del componente e rileggi le prime due frasi di quella sezione.
 
 ---
 
@@ -431,7 +434,7 @@ Per ogni parte della tua valutazione, cita il componente specifico che ti ha por
 ### Materiali che ti servono
 
 - Un dispositivo a cui hai accesso (vedi sopra)
-- Le istruzioni per trovare le specifiche hardware (nella 🔬 SPERIMENTA, livello Intermedio)
+- Le istruzioni per trovare le specifiche hardware (nella Zona 4, livello Intermedio)
 - Questa scheda: stampabile dal QR code → o fotocopiabile dal libro
 
 > **Suggerimento:** se non sai come trovare le specifiche del tuo dispositivo, cerca online "[nome del tuo dispositivo] specifiche tecniche" — quasi sempre il produttore le pubblica sul sito ufficiale.
@@ -529,11 +532,11 @@ Questa MC è la base per la prossima: **MC-DIG-1-02 — Ricerca e valutazione de
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: struttura a colonne. Il testo dei componenti hardware (CPU, RAM, SSD, GPU, scheda madre) va nella colonna sinistra. L'infografica "anatomia del computer — vista esplosa" va nella colonna destra. I due box STEM (informatica e scienze) vanno come sidebar laterali.
+- Zona 2: struttura a colonne. Il testo dei componenti hardware (CPU, RAM, SSD, GPU, scheda madre) va nella colonna sinistra. L'infografica "anatomia del computer — vista esplosa" va nella colonna destra. I due box STEM (informatica e scienze) vanno come sidebar laterali.
 - Il box INF/DIG (T7 e T8) va come riquadro a colore differenziato rispetto ai box STEM — usa un colore specifico per la distinzione DIG/INF.
-- Le tabelle della 🔬 SPERIMENTA (Intermedio e Avanzato) possono richiedere una pagina separata o una scheda fotocopiabile allegata.
-- La scheda "Relazione tecnica" della 🌍 AGISCI va come pagina separata (fotocopiabile / scaricabile con QR).
-- Il riquadro "Errore comune" in 🔍 OSSERVA va in evidenza grafica (box colorato).
+- Le tabelle della Zona 4 (Intermedio e Avanzato) possono richiedere una pagina separata o una scheda fotocopiabile allegata.
+- La scheda "Relazione tecnica" della Zona 5 va come pagina separata (fotocopiabile / scaricabile con QR).
+- Il riquadro "Errore comune" in Zona 3 va in evidenza grafica (box colorato).
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: schema "anatomia del computer — vista esplosa" con etichette e funzioni per CPU, RAM, SSD, GPU, scheda madre, alimentatore. Formato: PNG 1200×900 + SVG.

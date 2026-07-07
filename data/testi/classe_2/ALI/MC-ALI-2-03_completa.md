@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il paese che ha inventato la dieta sana. E la ignora."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 28 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 30 sec.*
 > *(Script completo: MC-ALI-2-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -214,27 +214,26 @@ Una ricerca pubblicata sul British Medical Journal (2021) ha seguito le abitudin
 
 ---
 
-### 👩‍⚕️ Chi lavora con questa competenza nel 2030?
 
-**Nutrizionista e Dietista**
+### 🌾 Chi lavora con questa competenza nel 2030?
 
-La differenza tra nutrizionista e dietista è spesso confusa. In Italia, il **dietista** è una figura sanitaria con laurea triennale specifica (L/SNT3 — Professioni Sanitarie) che opera in ambito clinico: prescrive diete terapeutiche per pazienti con patologie (diabete, insufficienza renale, disturbi del comportamento alimentare, celiachia). Il **nutrizionista** può essere un biologo o un medico con specializzazione in scienze dell'alimentazione: opera in ambito di prevenzione e benessere, oltre che in quello clinico.
+**Soil Regeneration Expert**
 
-Il lavoro moderno di queste figure integra sempre più la tecnologia: app per il tracking alimentare, analisi del microbioma con next-generation sequencing, diete personalizzate basate sul genotipo (nutrigenomica), coaching nutrizionale digitale.
+Ripristina la fertilità e la biodiversità del suolo attraverso pratiche di agricoltura rigenerativa, garantendo coltivazioni sane e una filiera alimentare sostenibile nel lungo periodo.
 
-Un'area in crescita è la **nutrizione applicata allo sport**: con l'esplosione dell'interesse per il fitness e il benessere, i dietisti sportivi che lavorano con atleti professionisti e amatoriali sono tra le figure più richieste nel settore.
+Dove lavora: aziende agricole biologiche e biodinamiche, enti di certificazione, cooperative agricole, consulenti agronomici, enti pubblici ambientali.
 
-Dove lavora: ospedali, cliniche, studi privati, palestre e centri sportivi, industria alimentare (R&D), enti di ricerca, scuole (programmi di educazione alimentare).
+Competenze chiave che inizia a costruire da qui: agronomia · chimica organica del suolo · agricoltura rigenerativa · gestione del suolo · sostenibilità
 
-Competenze chiave che inizia a costruire da qui: biochimica degli alimenti · fisiologia umana · lettura critica della letteratura scientifica · comunicazione efficace · tecnologia digitale per il tracking
+*"Un centimetro di suolo sano ha impiegato mille anni a formarsi. Il mio lavoro è fermarne la perdita."*
 
-*"Il mio lavoro non è dire alle persone cosa non possono mangiare. È aiutarle a capire come mangiare bene senza rinunciare al piacere."*
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -364,7 +363,7 @@ Il medico di base della tua scuola ha avviato un programma di educazione aliment
 ### La consegna
 
 **Fase 1 — Diario (3 giorni):**
-Annota tutto quello che mangi e bevi in 3 giorni (di cui almeno uno scolastico e uno di fine settimana). Usa il formato della 🔬 SPERIMENTA Intermedio o inventa il tuo — l'importante è che ci siano: il pasto, l'alimento, una stima della porzione.
+Annota tutto quello che mangi e bevi in 3 giorni (di cui almeno uno scolastico e uno di fine settimana). Usa il formato della Zona 4 Intermedio o inventa il tuo — l'importante è che ci siano: il pasto, l'alimento, una stima della porzione.
 
 **Fase 2 — Analisi (dopo il diario):**
 - Conta quante porzioni di frutta e verdura hai mangiato in media al giorno.
@@ -471,11 +470,11 @@ Questa MC chiude il triangolo dell'UDA-2: MC-ALI-2-01 ha mostrato come il cibo v
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la tabella comparativa "fast food vs. pasto mediterraneo" va come infografica visiva con due piatti affiancati e le barre nutrizionali.
+- Zona 2: la tabella comparativa "fast food vs. pasto mediterraneo" va come infografica visiva con due piatti affiancati e le barre nutrizionali.
 - La piramide alimentare mediterranea va come infografica a colori su mezza pagina, con frecce per la frequenza di consumo.
 - Il box Scienze (digestione) va come sidebar anatomica con schema semplificato dell'apparato digerente.
-- La tabella valori nutrizionali della 🔬 SPERIMENTA Avanzato va come scheda separata fotocopiabile.
-- Il diario alimentare della 🌍 AGISCI va come pagina separata fotocopiabile/scaricabile con QR.
+- La tabella valori nutrizionali della Zona 4 Avanzato va come scheda separata fotocopiabile.
+- Il diario alimentare della Zona 5 va come pagina separata fotocopiabile/scaricabile con QR.
 
 **Per l'agente generatore asset:**
 - Visual 1: piramide alimentare mediterranea interattiva (versione app: tocca ogni livello per vedere frequenza e porzioni raccomandate).

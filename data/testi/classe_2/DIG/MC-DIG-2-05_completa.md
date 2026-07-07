@@ -157,15 +157,20 @@ Negli ultimi anni diversi paesi hanno iniziato a regolamentare l'uso degli smart
 
 ---
 
-### 👩‍💻 Chi lavora con questa competenza nel 2030?
 
-**Digital Wellbeing Specialist / Educatore digitale**
+### 💆 Chi lavora con questa competenza nel 2030?
 
-Una professione emergente: individui e organizzazioni che aiutano persone, scuole e aziende a sviluppare un rapporto sano con la tecnologia. Progettano programmi educativi, workshop, campagne di sensibilizzazione. Lavorano con psicologi, educatori, designer di interfacce.
+**Digital Wellness Advisor**
 
-In parallelo, cresce la domanda di **designer etici** — professionisti che progettano app con principi di "design etico" (es. notifiche meno invadenti, indicatori del tempo trascorso, pause suggerite) anziché massimizzare l'engagement a tutti i costi. Alcune grandi aziende tech (Google, Apple) hanno iniziato a inserire queste funzioni nei loro sistemi operativi — in parte per scelta, in parte per pressione regolamentare.
+Aiuta persone e organizzazioni a sviluppare un rapporto sano e consapevole con il digitale, bilanciando produttività e benessere attraverso coaching, educazione ai media e mindfulness.
 
-*"Progettare per il benessere delle persone è più difficile che progettare per il loro engagement — ma è quello che vale la pena fare."*
+Dove lavora: scuole e università, aziende con programmi di welfare digitale, ospedali e cliniche psicologiche, piattaforme di benessere digitale.
+
+Competenze chiave che inizia a costruire da qui: coaching digitale · educazione ai media · mindfulness · psicologia · salute digitale
+
+*"La tecnologia è lo strumento più potente della storia. Usarla bene richiede consapevolezza, non solo competenza."*
+
+---
 
 ---
 

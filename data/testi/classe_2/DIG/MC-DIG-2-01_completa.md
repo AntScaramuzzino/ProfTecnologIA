@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il semaforo che è esploso"**
-> *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> *Ascolta prima di leggere. Durata: 4 min 2 sec.*
 > *(Script completo: MC-DIG-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -239,7 +239,7 @@ Un quiz "normale" mostra le stesse domande a tutti nello stesso ordine. Un quiz 
 
 Questo è esattamente il tipo di quiz che le piattaforme educative professionali (Duolingo, Khan Academy) usano per personalizzare l'apprendimento. Il principio algoritmico è quello che hai già visto: selezione basata sul valore di variabili, liste di domande organizzate per livello, broadcast tra script diversi.
 
-La versione avanzata della tua attività (Livello Avanzato in 🔬 SPERIMENTA) ti chiede di costruire esattamente questo.
+La versione avanzata della tua attività (Livello Avanzato in Zona 4) ti chiede di costruire esattamente questo.
 
 ---
 
@@ -248,25 +248,26 @@ La versione avanzata della tua attività (Livello Avanzato in 🔬 SPERIMENTA) t
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Sviluppatore educativo (EdTech developer)**
+### 🛡️ Chi lavora con questa competenza nel 2030?
 
-Lo sviluppatore educativo crea applicazioni per l'apprendimento: quiz adattativi, simulazioni, ambienti di pratica. Combina la conoscenza della pedagogia (come si impara) con quella della programmazione (come si costruisce uno strumento digitale).
+**Data Trust Officer**
 
-Il pensiero computazionale — decomposizione, pattern, astrazione, algoritmo — è la competenza fondamentale. Non importa quale linguaggio di programmazione viene usato: Python, JavaScript, Swift. Le strutture sono sempre le stesse tre: sequenza, selezione, iterazione.
+Governa l'uso etico e sicuro dei dati nelle reti aziendali, garantendo la conformità al GDPR, la protezione della privacy e la fiducia degli utenti nelle piattaforme digitali.
 
-Dove lavora: startup EdTech, piattaforme educative globali (Duolingo, Coursera), team digitali di grandi editori scolastici, divisioni formazione di aziende.
+Dove lavora: grandi aziende con portafogli di dati, enti pubblici, autorità garanti, studi legali specializzati in privacy e compliance.
 
-Competenze che inizia a costruire da qui: pensiero computazionale · strutture di controllo · variabili e liste · debug sistematico · progettazione dell'esperienza utente
+Competenze chiave che inizia a costruire da qui: governance dei dati · GDPR · cyberlaw · protezione dati · etica digitale
 
-*"Ogni volta che scrivo una nuova funzione, prima disegno su carta l'algoritmo. Il codice viene dopo. Sempre."*
+*"I dati non sono il nuovo petrolio. Sono persone. E le persone hanno diritti."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -297,7 +298,7 @@ Uno sprite (il gatto di default va bene) che:
 
 **Obiettivo:** costruire il quiz completo descritto nel Passo Guidato della Zona 2 — 5 domande, punteggio, feedback, schermata finale.
 
-**Segui i 6 passi guidati della 📖 ESPLORA**, adattando le domande al tema che preferisci (alimentazione, materiali, città, un argomento di storia o scienze).
+**Segui i 6 passi guidati della Zona 2**, adattando le domande al tema che preferisci (alimentazione, materiali, città, un argomento di storia o scienze).
 
 **Requisiti minimi:**
 - Almeno 5 domande in una lista.
@@ -453,7 +454,7 @@ Il quiz che hai costruito raccoglie un tipo di dato: la risposta dell'utente. Ne
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la tabella delle categorie di Scratch va come infografica colorata con i colori reali delle categorie.
+- Zona 2: la tabella delle categorie di Scratch va come infografica colorata con i colori reali delle categorie.
 - Il caso studio YouTube va come box con sfondo scuro.
 - Il diagramma del progetto guidato (6 passi) va come flowchart verticale nella colonna destra.
 - Il box storia su Grace Hopper va come sidebar con foto (dominio pubblico — disponibile dalla US Navy).

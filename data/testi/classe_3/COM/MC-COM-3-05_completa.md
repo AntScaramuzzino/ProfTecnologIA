@@ -8,9 +8,9 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il cavo che passa sotto l'Atlantico"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 47 sec.*
 
-**Script della ⚡ INNESCA (in assenza del file audio separato):**
+**Script della Zona 1 (in assenza del file audio separato):**
 
 Quando scrivi un messaggio a qualcuno in America, sai dove va prima di arrivare?
 
@@ -207,23 +207,26 @@ Questo caso illustra una tensione fondamentale di internet: è stata costruita p
 
 ---
 
-### 🌐 Chi lavora con questa competenza nel 2030?
 
-**Network Security Analyst — Infrastrutture critiche**
+### 🚁 Chi lavora con questa competenza nel 2030?
 
-Monitora la sicurezza delle reti di telecomunicazione nazionali e internazionali. Lavora per operatori di rete, agenzie governative, centri di sicurezza informatica (CERT).
+**Drone Logistic Operator**
 
-Cosa fa concretamente: analizza pattern anomali nel traffico di rete che potrebbero indicare attacchi o malfunzionamenti, risponde agli incidenti, documenta le vulnerabilità, propone architetture di rete più resilienti.
+Gestisce flotte di droni per la distribuzione automatizzata di merci, pianificando rotte ottimali, garantendo la sicurezza delle operazioni e integrando i droni nella supply chain.
 
-Competenze chiave: protocolli di rete (TCP/IP, BGP, DNS) · crittografia · analisi dei log · gestione degli incidenti · framework di sicurezza (NIST, ISO 27001)
+Dove lavora: aziende di logistica last-mile, ospedali e laboratori per consegne urgenti, operatori portuali, catene di e-commerce.
 
-*"Non difendo un computer. Difendo l'infrastruttura da cui dipendono ospedali, banche, sistemi elettorali. Quando dormono bene, vuol dire che ho fatto bene il mio lavoro."*
+Competenze chiave che inizia a costruire da qui: pilotaggio remoto · logistica supply chain · geolocalizzazione · automazione · normativa ENAC/EASA
+
+*"Un pacco in 30 minuti senza un furgone in città. Il drone non è futuro — è già presente."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 
 ---
 
@@ -420,10 +423,10 @@ Questa MC fornisce le basi per capire la MC successiva (MC-COM-3-06): i media di
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: distribuire su 2 pagine con mappa dei cavi sottomarini (da submarinecablemap.com — licenza aperta) come elemento visivo principale nella pagina 1.
+- Zona 2: distribuire su 2 pagine con mappa dei cavi sottomarini (da submarinecablemap.com — licenza aperta) come elemento visivo principale nella pagina 1.
 - Il Box Geo-Storia (DARPANET→oggi) su sidebar colorata.
-- La tabella della 🔬 SPERIMENTA Intermedio (pro/contro) come scheda fotocopiabile.
-- La scheda Lettera Aperta (🌍 AGISCI) come pagina separata con linee per la scrittura.
+- La tabella della Zona 4 Intermedio (pro/contro) come scheda fotocopiabile.
+- La scheda Lettera Aperta (Zona 5) come pagina separata con linee per la scrittura.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: mappa dei cavi sottomarini principali (Atlantico + Pacifico + Mediterraneo) con punti di vulnerabilità documentati.

@@ -181,23 +181,26 @@ Questo percorso — problema → validazione → MVP → pivot → finanziamento
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Innovation Manager**
+### 🏢 Chi lavora con questa competenza nel 2030?
 
-Guida i processi di innovazione all'interno di imprese esistenti (non solo startup), usando metodi come il Design Thinking, il Lean Startup e il Business Model Canvas per identificare nuove opportunità di business o per trasformare processi esistenti. Non è necessariamente un tecnico: il suo valore è nella metodologia di problem solving applicata al contesto aziendale.
+**Digital and Innovation Manager**
 
-Sempre più richiesto in: grandi aziende manifatturiere che devono reinventarsi con la transizione digitale ed ecologica, Pubbliche Amministrazioni che devono innovare i servizi, organizzazioni non profit che vogliono aumentare l'impatto.
+Guida l'innovazione dei processi produttivi aziendali attraverso tecnologie digitali, standardizzando operazioni e sviluppando nuove soluzioni per la competitività sul mercato.
 
-Competenze chiave che inizia a costruire da qui: Business Model Canvas · metodo Lean Startup · pensiero sistemico · facilitazione di gruppi · tolleranza dell'incertezza
+Dove lavora: aziende manifatturiere in trasformazione 4.0, grandi gruppi con dipartimenti di innovazione, PMI che scalano con il digitale, associazioni di categoria.
 
-*"Il mio lavoro non è avere la risposta giusta. È fare le domande giuste nel momento giusto."*
+Competenze chiave che inizia a costruire da qui: digital transformation · gestione processi produttivi · innovazione aziendale · project management · Industry 4.0
+
+*"Innovare non è adottare tecnologia. È cambiare il modo in cui un'azienda crea valore per i suoi clienti."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -206,11 +209,11 @@ Competenze chiave che inizia a costruire da qui: Business Model Canvas · metodo
 
 **Obiettivo:** familiarizzare con i 9 blocchi del BMC applicandoli a un caso già studiato.
 
-**Materiali:** questa scheda, accesso alla storia della startup presentata in 🔍 OSSERVA (o di un'altra startup italiana a tua scelta).
+**Materiali:** questa scheda, accesso alla storia della startup presentata in Zona 3 (o di un'altra startup italiana a tua scelta).
 
 **Procedura:**
 
-1. Scegli la startup presentata in 🔍 OSSERVA (o cercane una italiana: Satispay, Cortilia, Soplaya, TOBii).
+1. Scegli la startup presentata in Zona 3 (o cercane una italiana: Satispay, Cortilia, Soplaya, TOBii).
 
 2. Usando le informazioni disponibili online (sito web, profilo LinkedIn, articoli di stampa), completa il Business Model Canvas semplificato qui sotto con le informazioni che riesci a trovare. Lascia vuoti i blocchi di cui non riesci a trovare informazioni.
 

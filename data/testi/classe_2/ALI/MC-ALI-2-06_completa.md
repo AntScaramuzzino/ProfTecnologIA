@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Nel 2050 saremo 10 miliardi. E il sistema alimentare attuale non basta."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 39 sec.*
 
 **Domanda di avvio:**
 Se domani mattina tutta l'umanità si svegliasse e la metà di quello che c'è nei frigoriferi e nei magazzini del mondo fosse sparita, cosa succederebbe?
@@ -265,29 +265,26 @@ Prezzo: leggermente più caro del corrispondente convenzionale (10-30% di più).
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Food Technologist**
+### 🍽️ Chi lavora con questa competenza nel 2030?
 
-Il Food Technologist — tecnologo alimentare — è la figura professionale che si occupa di applicare le tecnologie ai processi di produzione alimentare. Lavora nell'industria alimentare, in centri di ricerca, in startup food-tech.
+**3D Food Printing Technician**
 
-Progetta nuovi prodotti e processi, migliora la shelf-life e la qualità nutrizionale degli alimenti, valuta l'impatto ambientale delle tecnologie di produzione, garantisce il rispetto delle normative di sicurezza alimentare.
+Applica le tecnologie additive alla trasformazione e presentazione degli alimenti, creando forme personalizzate e prodotti funzionali per ristorazione, industria e dietetica specializzata.
 
-Le sottosezioni più innovative e in crescita oggi:
-- **Cellular agriculture:** tecnologia della carne e del latte coltivati
-- **Fermentation engineering:** progettazione di bioreattori e selezione di ceppi microbici
-- **Precision nutrition:** personalizzazione della dieta basata su dati genetici e del microbioma
-- **Food AI:** uso dell'intelligenza artificiale per ottimizzare ricette, prevedere la shelf-life, monitorare la qualità in produzione
+Dove lavora: ospedali con programmi di dietoterapia avanzata, alta ristorazione sperimentale, centri di formazione culinaria, aziende di ingredienti funzionali.
 
-Competenze chiave che inizia a costruire da qui: biologia e chimica di base · analisi dei dati · pensiero sistemico · valutazione dell'impatto ambientale · lettura critica delle fonti scientifiche
+Competenze chiave che inizia a costruire da qui: tecnologie additive alimentari · progettazione CAD · biochimica alimentare · nutrizione · innovazione di prodotto
 
-*"Il mio lavoro è capire come nutrire le persone in modo migliore — non solo più efficiente, ma più sano, più equo, più sostenibile."*
+*"Personalizzare un pasto per 200 pazienti con esigenze diverse? Con la stampa 3D alimentare, è routine."*
+
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -515,7 +512,7 @@ Nella fase conclusiva dell'UDA-2, ogni studente presenterà alla classe un'anali
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: la sequenza delle tecnologie (6 tecnologie) va su una doppia pagina con una timeline visiva che mostra "tecnologia antica → tecnologia moderna" per evidenziare la continuità storica.
+- Zona 2: la sequenza delle tecnologie (6 tecnologie) va su una doppia pagina con una timeline visiva che mostra "tecnologia antica → tecnologia moderna" per evidenziare la continuità storica.
 - Il box fermentazione (bio-chimica) va come sidebar scientifica con schema della reazione di fermentazione del glucosio.
 - La tabella FCR (indice di conversione alimentare) va come infografica comparativa con icone degli animali.
 - Il caso studio "3 tecnologie in vendita in Italia" va su pagina dedicata con box per ciascun prodotto.

@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il segreto del foglio A4"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 10 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 38 sec.*
 > *(Script completo: MC-DIS-1-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -412,27 +412,26 @@ Questo semplice oggetto richiede tutte le costruzioni che hai imparato: la circo
 
 ---
 
-### 👩‍💻 Chi lavora con questa competenza nel 2030?
 
-**Progettista CAD-fisico (CAD/CAM Designer)**
+### 🎨 Chi lavora con questa competenza nel 2030?
 
-Nel 2030 quasi nessun professionista disegna su carta tutto il giorno. Ma ogni professionista che usa un software CAD ha bisogno di capire la geometria che il software esegue automaticamente. Il Progettista CAD-fisico lavora con software di modellazione 3D (SolidWorks, Fusion 360, Catia) per creare oggetti che poi vengono prodotti con stampanti 3D, fresatrici CNC e robot industriali.
+**Graphic Designer**
 
-La competenza di base che inizia qui: saper ragionare geometricamente in 2D — perché ogni modello 3D è costruito partendo da profili 2D estrudibili.
+Progetta la comunicazione visiva di aziende e prodotti, raccontando messaggi efficaci attraverso linguaggi grafici convincenti: illustrazioni, tipografia, layout e composizione.
 
-Concretamente: disegna profili 2D con strumenti di geometria computazionale, aggiunge vincoli geometrici (perpendicolarità, simmetria, tangenza) che corrispondono esattamente alle costruzioni che hai imparato, esporta il disegno tecnico quotato per la produzione.
+Dove lavora: agenzie creative e di comunicazione, reparti marketing aziendali, case editrici, startup tech che curano il brand visivo.
 
-Dove lavora: uffici tecnici di aziende manifatturiere (automotive, meccanica di precisione, produzione di componenti per aeronautica), studi di ingegneria e architettura, laboratori di prototipazione rapida (Fab Lab, officine digitali).
+Competenze chiave che inizia a costruire da qui: composizione visiva · tipografia · software grafici (Adobe CC) · comunicazione · design thinking
 
-Competenze chiave che inizia a costruire da qui: geometria euclidea · norme UNI/ISO · software CAD 2D e 3D · lettura del disegno tecnico · tolleranze dimensionali
+*"Il buon design non si nota. Ci vivi dentro senza accorgertene."*
 
-*"Il programma fa la costruzione. Ma devo sapere quale costruzione chiedergli di fare."*
+---
 
 ---
 
 ## 🔬 SPERIMENTA
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 > Sai già quali criteri vengono valutati: organizza il tuo lavoro di conseguenza.
 
 ---
@@ -453,7 +452,7 @@ Il foglio è già diviso in due zone. Nella zona A (metà sinistra) esegui la Co
 
 Sul tuo foglio, il docente ha già tracciato (o tu devi tracciare) una retta r orizzontale e un punto P su di essa, a circa 2/3 dal bordo sinistro.
 
-Segui i passi della Costruzione 1 esattamente come descritta in 📖 ESPLORA. Dopo ogni passo, metti un segno di spunta sul tuo foglio accanto al numero del passo.
+Segui i passi della Costruzione 1 esattamente come descritta in Zona 2. Dopo ogni passo, metti un segno di spunta sul tuo foglio accanto al numero del passo.
 
 Quando hai finito, verifica con la squadra: metti il lato corto della squadra a 45° lungo la retta r, fai scorrere il lato lungo fino a toccare la linea che hai tracciato. I due lati della squadra formano 90°? La tua perpendicolare è corretta.
 
@@ -501,7 +500,7 @@ Esegui la Costruzione 6 (esagono regolare). Usa le linee miste per gli assi di s
 Misura i sei lati con il righello: devono essere tutti 4 cm ± 1 mm (uguali al raggio).
 
 **Domanda di riflessione (da scrivere sul foglio):**
-Perché il lato dell'esagono regolare è uguale al raggio della circonferenza? Spiega con parole tue — senza copiare dalla 📖 ESPLORA. Se non ti ricordi, rileggi la spiegazione e poi scrivi la tua versione.
+Perché il lato dell'esagono regolare è uguale al raggio della circonferenza? Spiega con parole tue — senza copiare dalla Zona 2. Se non ti ricordi, rileggi la spiegazione e poi scrivi la tua versione.
 
 ---
 
@@ -684,10 +683,10 @@ La pianta dell'aula che hai disegnato in questa MC sarà il punto di partenza pe
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- 📖 ESPLORA: le costruzioni geometriche (sezioni Costruzione 1–8) vanno su pagine separate, ciascuna con uno spazio vuoto accanto ai passi per permettere allo studente di eseguire la costruzione sul libro stesso (opzione libri interattivi) o come guida per il foglio separato.
+- Zona 2: le costruzioni geometriche (sezioni Costruzione 1–8) vanno su pagine separate, ciascuna con uno spazio vuoto accanto ai passi per permettere allo studente di eseguire la costruzione sul libro stesso (opzione libri interattivi) o come guida per il foglio separato.
 - Il box STEM Matematica va come sidebar laterale destra nella pagina delle costruzioni.
 - Il box STEM Storia e Arte va come sidebar nella pagina del caso studio (arco romano).
-- La tabella della rubrica in 🌍 AGISCI va su pagina separata come scheda fotocopiabile.
+- La tabella della rubrica in Zona 5 va su pagina separata come scheda fotocopiabile.
 - Il box ⚠️ Sicurezza va in evidenza grafica (bordo colorato).
 
 **Per l'agente generatore asset:**

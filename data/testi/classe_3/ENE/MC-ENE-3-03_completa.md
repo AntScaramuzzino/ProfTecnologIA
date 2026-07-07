@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "90 minuti. Un anno intero."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 35 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 30 sec.*
 > *(Script completo: MC-ENE-3-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -191,27 +191,26 @@ Nel 1997, l'isola danese di Samsø (4.000 abitanti) vinse un concorso del govern
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere della transizione energetica**
+### 🏠 Chi lavora con questa competenza nel 2030?
 
-Non è un solo ruolo — è un campo in espansione che comprende progettisti di impianti fotovoltaici ed eolici, esperti di accumulo, ingegneri di smart grid, analisti di politiche energetiche, consulenti per la decarbonizzazione industriale.
+**Energy Efficiency Advisor**
 
-Nel 2030, con gli obiettivi europei che richiedono il 42,5% di rinnovabili nel mix energetico finale entro il 2030, ogni paese europeo ha bisogno di migliaia di questi professionisti — per progettare impianti, ottenere autorizzazioni, gestire le reti, sviluppare le tecnologie di accumulo.
+Analizza i consumi energetici di edifici, impianti e processi produttivi e progetta interventi mirati per ridurre gli sprechi, abbassare le bollette e migliorare le certificazioni energetiche.
 
-In Italia, il piano PNIEC (Piano Nazionale Integrato per l'Energia e il Clima) richiede di installare oltre 70 GW di fotovoltaico aggiuntivo entro il 2030. Per confronto, tutta la potenza installata esistente nel 2023 era di circa 22 GW. Questo significa triplicare la capacità in 7 anni.
+Dove lavora: ESCo (Energy Service Company), studi di ingegneria energetica, pubblica amministrazione, grandi condomini e patrimoni immobiliari.
 
-Dove lavora: aziende di energia (Enel Green Power, ERG, Eni), studi di ingegneria, autorità regolatrici (ARERA), Ministero dell'Ambiente e della Sicurezza Energetica, comuni e regioni.
+Competenze chiave che inizia a costruire da qui: auditing energetico · termotecnica · normativa CEE/APE · certificazioni energetiche · domotica
 
-Competenze chiave che inizia a costruire da qui: fisica delle conversioni energetiche · analisi dei dati di produzione e consumo · progettazione di impianti · economia dell'energia · normative ambientali
+*"L'energia più economica è quella che non consumi. Ma qualcuno deve dimostrarlo con i dati."*
 
-*"Non vendo più energia dal sottosuolo. La raccoglie dal cielo e dal vento — e il mio lavoro è fare in modo che arrivi dove serve, quando serve."*
+---
 
 ---
 
 ## 🔬 SPERIMENTA — base e intermedio
 
-> **Prima di iniziare, leggi la rubrica di valutazione in 🌍 AGISCI.**
+> **Prima di iniziare, leggi la rubrica di valutazione in Zona 5.**
 
 ---
 
@@ -385,11 +384,11 @@ Se possibile, cerca di raccogliere:
 3. L'orientamento del tetto (bussola o orientamento su mappa)
 4. La posizione geografica (comune) per determinare l'irraggiamento solare
 
-Se non riesci a raccogliere dati reali, usa i dati medi forniti nella 🔬 SPERIMENTA Intermedio.
+Se non riesci a raccogliere dati reali, usa i dati medi forniti nella Zona 4 Intermedio.
 
 **Parte B — Calcoli (individuale o in coppia)**
 
-Segui i passaggi della 🔬 SPERIMENTA Intermedio per l'impianto base. Poi segui i passaggi della Zona 4b Avanzato per l'analisi con batteria.
+Segui i passaggi della Zona 4 Intermedio per l'impianto base. Poi segui i passaggi della Zona 4b Avanzato per l'analisi con batteria.
 
 Produci:
 - Tabella con i calcoli documentati
@@ -416,7 +415,7 @@ Prepara una presentazione di 5 slide (su carta o digitale) per esporre la tua pr
 - Dati della scuola (bollette o dati medi forniti)
 - Google Maps o Bing Maps per misurare la superficie del tetto (funzione "Misura distanze")
 - Calcolatrice
-- Tabella dei fattori tecnici (in 🔬 SPERIMENTA)
+- Tabella dei fattori tecnici (in Zona 4)
 - Questa scheda: fotocopiabile dal libro o scaricabile via QR code
 
 ---
@@ -502,11 +501,11 @@ Il piano energetico che hai progettato si basa su dati e calcoli. Ma in un edifi
 
 **Per l'impaginatore:**
 - Questa MC occupa 6 pagine (3 doppie pagine) essendo livello A.
-- 📖 ESPLORA pp. 1-2: distribuire il testo delle fonti su 2 colonne con schemi e immagini nelle colonne laterali. Il box Fisica (potenza vs energia) va come sidebar evidenziata.
-- 🔍 OSSERVA p. 3: caso studio Samsø va come doppia pagina illustrata con mappa dell'isola e infografica delle fonti usate.
+- Zona 2 pp. 1-2: distribuire il testo delle fonti su 2 colonne con schemi e immagini nelle colonne laterali. Il box Fisica (potenza vs energia) va come sidebar evidenziata.
+- Zona 3 p. 3: caso studio Samsø va come doppia pagina illustrata con mappa dell'isola e infografica delle fonti usate.
 - Zona 4a p. 4: tabella delle rinnovabili e scheda del dimensionamento FV — formato fotocopiabile.
 - Zona 4b p. 5: schema dei calcoli con batteria — formato fotocopiabile con tabelle predisposte.
-- 🌍 AGISCI p. 6: compito, rubrica e metacognizione — formato fotocopiabile. La rubrica a 4 criteri va come tabella in evidenza grafica prima del compito.
+- Zona 5 p. 6: compito, rubrica e metacognizione — formato fotocopiabile. La rubrica a 4 criteri va come tabella in evidenza grafica prima del compito.
 
 **Per l'agente generatore asset:**
 - Visual richiesto 1: grafico evoluzione mix energetico italiano 2000→2024 con proiezione 2030 (dati GSE/Terna). Formato linee con area colorata per fonte. PNG 1200×800.
