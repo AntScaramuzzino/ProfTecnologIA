@@ -67,6 +67,7 @@ const ZONE_TABS: NavigatorTab[] = [
   { id: "AGISCI",       label: "AGISCI",       emoji: "🌍" },
   { id: "RIPASSA",      label: "RIPASSA",      emoji: "🃏" },
   { id: "PROFESSIONE",  label: "PROFESSIONE",  emoji: "💼" },
+  { id: "CLIL",         label: "CLIL",         emoji: "📎" },
 ];
 
 function sectionToTabId(title: string): string | null {
@@ -432,6 +433,70 @@ function ZonePanel({
     );
   }
 
+  // ── CLIL — AppendiceTech in English ─────────────────────────────────────
+  if (tabId === "CLIL") {
+    const terms = mc.clil_termini ?? [];
+    return (
+      <div className="px-4 py-6 sm:px-6">
+        {/* Header in English */}
+        <div className="mb-6">
+          <h2 className="text-xl font-black tracking-tight text-slate-900">
+            📎 Tech Vocabulary
+          </h2>
+          <p className="mt-1 text-sm text-slate-500">
+            Key technical terms for this unit — Italian · English · IPA pronunciation.
+          </p>
+        </div>
+
+        {terms.length > 0 ? (
+          <div className="grid gap-4 sm:grid-cols-2">
+            {terms.map((t, i) => (
+              <div
+                key={i}
+                className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
+              >
+                {/* Fascia colore area */}
+                <div
+                  className="h-1.5 w-full"
+                  style={{ backgroundColor: areaHex ?? "#94a3b8" }}
+                />
+                <div className="p-4">
+                  {/* Italiano */}
+                  <p className="mb-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                    IT
+                  </p>
+                  <p className="text-sm font-semibold text-slate-600">{t.italiano}</p>
+
+                  {/* English + IPA */}
+                  <div className="mt-3 border-t border-slate-100 pt-3">
+                    <p className="mb-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                      EN
+                    </p>
+                    <p
+                      className="text-lg font-black leading-tight"
+                      style={{ color: areaHex ?? "#1e293b" }}
+                    >
+                      {t.inglese}
+                    </p>
+                    {t.pronuncia_ipa && (
+                      <p className="mt-1 font-mono text-xs text-slate-500">
+                        {t.pronuncia_ipa}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
+            <p className="text-sm text-slate-500">No CLIL terms available for this unit.</p>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   if (!section) {
     return (
       <div className="px-4 py-10 text-center text-slate-400 sm:px-6">
@@ -633,6 +698,7 @@ export function MCPageClient({
   const availableTabs = ZONE_TABS.filter((tab) => {
     if (tab.id === "RIPASSA") return true;
     if (tab.id === "PROFESSIONE") return !!mc.professione_futura?.titolo;
+    if (tab.id === "CLIL") return (mc.clil_termini?.length ?? 0) > 0;
     return sectionMapClean.has(tab.id);
   });
   const tabs = availableTabs.length > 0 ? availableTabs : ZONE_TABS;

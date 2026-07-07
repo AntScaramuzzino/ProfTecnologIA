@@ -33,6 +33,12 @@ export interface HookAudio {
   note_script?: string;
 }
 
+export interface ClilTermine {
+  italiano: string;
+  inglese: string;
+  pronuncia_ipa?: string;
+}
+
 export interface MC {
   id: string;
   area: string;
@@ -60,6 +66,8 @@ export interface MC {
     descrizione_breve?: string;
     competenze_chiave?: string[];
   };
+  /** Vocabolario CLIL — termini tecnici chiave in italiano e inglese con pronuncia IPA */
+  clil_termini?: ClilTermine[];
   /**
    * Immagine opzionale da Wikimedia Commons (CC BY / CC BY-SA / CC0 / Public Domain)
    * da mostrare nella tab ESPLORA prima dell'accordion di testo.
