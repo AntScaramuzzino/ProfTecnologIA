@@ -486,22 +486,10 @@ function ZonePanel({
 
   // ── OSSERVA ───────────────────────────────────────────────────────────────
   if (tabId === "OSSERVA") {
-    const { professioneText, bodyWithout } = extractProfessioneSection(body);
-
     return (
       <div className="px-4 py-6 sm:px-6">
-        {/* Testo OSSERVA senza la sezione professione (evita duplicazione) */}
-        <ReadableBodyInTab body={bodyWithout} />
-
-        {/* Professione del Futuro — immagine + testo narrativo dal MD + dati JSON */}
-        {mc.professione_futura?.titolo && (
-          <ProfessioneCard
-            professione={mc.professione_futura as { titolo: string; orizzonte?: string; descrizione_breve?: string; competenze_chiave?: string[] }}
-            professioneText={professioneText}
-            mcId={mc.id}
-            areaHex={areaHex}
-          />
-        )}
+        {/* Il body arriva già senza la sezione Professione (estratta in MCPageClient) */}
+        <ReadableBodyInTab body={body} />
 
         {/* Gallery video YouTube — 9 video */}
         {videoPlaylist.length > 3 && (
@@ -597,9 +585,22 @@ export function MCPageClient({
     return map;
   }, [text]);
 
+  // Estrae il blocco "Professione del Futuro" da OSSERVA e lo rimuove dal body:
+  // il blocco viene spostato nella sezione standalone sotto il navigator.
+  const { professioneText, sectionMapClean } = useMemo(() => {
+    const osserva = sectionMap.get("OSSERVA");
+    if (!osserva?.body || !mc.professione_futura?.titolo) {
+      return { professioneText: "", sectionMapClean: sectionMap };
+    }
+    const extracted = extractProfessioneSection(osserva.body);
+    const map = new Map(sectionMap);
+    map.set("OSSERVA", { ...osserva, body: extracted.bodyWithout });
+    return { professioneText: extracted.professioneText, sectionMapClean: map };
+  }, [sectionMap, mc.professione_futura]);
+
   // Tab con contenuto MD + RIPASSA (sempre presente, non dipende dal Markdown)
   const ALWAYS_VISIBLE = new Set(["RIPASSA"]);
-  const availableTabs = ZONE_TABS.filter((tab) => sectionMap.has(tab.id) || ALWAYS_VISIBLE.has(tab.id));
+  const availableTabs = ZONE_TABS.filter((tab) => sectionMapClean.has(tab.id) || ALWAYS_VISIBLE.has(tab.id));
   const tabs = availableTabs.length > 0 ? availableTabs : ZONE_TABS;
 
   const agisciRawBody = getAgisciRawBody(text);
@@ -630,7 +631,7 @@ export function MCPageClient({
         {(activeId) => (
           <ZonePanel
             tabId={activeId}
-            section={sectionMap.get(activeId)}
+            section={sectionMapClean.get(activeId)}
             mc={mc}
             hookAudioSrc={hookAudioSrc}
             hookTranscript={hookTranscript}
@@ -647,6 +648,30 @@ export function MCPageClient({
           />
         )}
       </MCNavigator>
+
+      {/* ── PROFESSIONE DEL FUTURO — sezione standalone dopo RIPASSA ── */}
+      {mc.professione_futura?.titolo && (
+        <section className="border-t border-slate-200 bg-white px-4 py-8 sm:px-6">
+          <div className="mb-5 flex items-center gap-2">
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black uppercase tracking-wider text-slate-600">
+              💼 Professione del Futuro
+            </span>
+          </div>
+          <ProfessioneCard
+            professione={
+              mc.professione_futura as {
+                titolo: string;
+                orizzonte?: string;
+                descrizione_breve?: string;
+                competenze_chiave?: string[];
+              }
+            }
+            professioneText={professioneText}
+            mcId={mc.id}
+            areaHex={areaHex}
+          />
+        </section>
+      )}
 
       {/* ── APPENDICE — fuori dai tab, sempre visibile ── */}
       {appendiceSection && (
