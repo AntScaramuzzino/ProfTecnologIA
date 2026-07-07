@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il giorno in cui Cape Town quasi rimase senza acqua"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 37 sec.*
 
 **Script del podcast:**
 
@@ -199,19 +199,20 @@ Cape Town non aveva investito abbastanza in fonti alternative (dissalazione, riu
 
 ---
 
-### 🔧 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere ambientale — specializzazione risorse idriche**
+### 🚌 Chi lavora con questa competenza nel 2030?
 
-Con i cambiamenti climatici che aumentano la frequenza e l'intensità delle siccità, e con il 40% della rete idrica italiana che ha più di 40 anni e disperde quasi la metà dell'acqua, questa figura professionale è tra le più richieste nel settore pubblico e privato.
+**Mobility as a Service (MaaS) Designer**
 
-Concretamente lavora su: progettazione e gestione di acquedotti, impianti di depurazione e sistemi di raccolta delle acque piovane; valutazione delle perdite di rete con tecnologie di monitoraggio (sensori di pressione, correlatori acustici, droni per ispezioni); progettazione di soluzioni per la resilienza idrica delle città (dissalazione, riuso delle acque trattate, invarianza idraulica); analisi dell'impronta idrica di processi industriali e agroalimentari.
+Progetta sistemi integrati di mobilità urbana sostenibile che combinano trasporto pubblico, bike sharing, car sharing e micro-mobilità in un'unica piattaforma digitale accessibile a tutti.
 
-Dove lavora: gestori idrici pubblici (Comuni, consorzi, aziende municipalizzate), ARPA e agenzie ambientali regionali, società di ingegneria, enti internazionali come ONU-Ambiente, UNICEF (programmi accesso all'acqua), Banca Mondiale.
+Dove lavora: aziende di trasporto pubblico locale, startup di mobilità urbana, comuni e regioni, operatori di sharing mobility.
 
-Competenze chiave che inizia a costruire da qui: idraulica e idrogeologia · chimica delle acque · sistemi GIS per la mappatura delle reti · normativa idrica europea (Water Framework Directive) · gestione delle emergenze idriche
+Competenze chiave che inizia a costruire da qui: urbanistica · UX design · gestione mobilità · app design · sostenibilità dei trasporti
 
-*"Il mio lavoro è fare in modo che l'acqua sia sempre disponibile per tutti — oggi e tra cinquant'anni."*
+*"Non vendo mezzi di trasporto. Vendo la libertà di spostarsi senza possedere un'auto."*
+
+---
 
 ---
 

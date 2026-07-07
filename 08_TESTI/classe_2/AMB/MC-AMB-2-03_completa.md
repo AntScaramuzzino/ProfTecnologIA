@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il 65% della città è parcheggio"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 28 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 55 sec.*
 > *(Script completo: MC-AMB-2-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -356,21 +356,20 @@ Il modello Barcellona è stato adottato (con varianti) da Parigi, Milano, Oslo, 
 
 ---
 
-### 🏗️ Chi lavora con questa competenza nel 2030?
 
-**Urbanista per la città del quarto d'ora**
+### ⚡ Chi lavora con questa competenza nel 2030?
 
-Il concetto di **città del quarto d'ora** (15-minute city), lanciato dall'urbanista franco-colombiano Carlos Moreno nel 2016 e reso famoso dal Sindaco di Parigi Anne Hidalgo, propone un obiettivo semplice: tutti i servizi essenziali (lavoro, scuola, negozi alimentari, strutture sanitarie, verde) devono essere raggiungibili a piedi o in bici in 15 minuti dalla propria abitazione.
+**Smart Grid Analyst**
 
-L'urbanista per la città del quarto d'ora lavora su: analisi GIS (Geographic Information Systems) per mappare l'accessibilità dei servizi, progettazione di reti ciclabili e pedonali, riconversione di spazi urbani sottoutilizzati (negozi sfitti, parcheggi multi-piano, edifici industriali dismessi), e processi partecipativi con i cittadini.
+Gestisce reti elettriche intelligenti integrate negli edifici, ottimizzando la distribuzione e l'uso dell'energia attraverso dati in tempo reale e algoritmi predittivi.
 
-Non è solo una questione di comfort: la prossimità dei servizi riduce i km percorsi in auto, le emissioni di CO₂, l'inquinamento acustico, e aumenta l'attività fisica degli abitanti — con benefici diretti sulla salute pubblica.
+Dove lavora: gestori di reti elettriche nazionali, aziende di energy management, utility municipali, centri di ricerca sull'energia.
 
-Dove lavora: Comuni e Regioni, studi di urbanistica e pianificazione, agenzie europee (EEA — European Environment Agency), ONG di sviluppo urbano sostenibile.
+Competenze chiave che inizia a costruire da qui: ingegneria elettrica · software SCADA · data analysis · IoT · AI applicata all'energia
 
-Competenze chiave che inizia a costruire da qui: analisi spaziale (GIS) · pianificazione del territorio · mobilità sostenibile · processi partecipativi · normativa urbanistica italiana (Legge 1150/1942, D.P.R. 380/2001)
+*"La rete elettrica intelligente non trasporta solo energia. Trasporta informazioni."*
 
-*"Non progetto edifici. Progetto le condizioni perché le persone possano vivere bene."*
+---
 
 ---
 

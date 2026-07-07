@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il motore della moto di tuo nonno"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 58 sec.*
 
 **Domanda di avvio:**
 Immagina una moto degli anni Settanta. Un motore a 4 cilindri, 750 cc di cilindrata, rumore sordo e odore di benzina bruciata. Tuoi nonni probabilmente ne avevano una.
@@ -218,21 +218,20 @@ Mettiamo a confronto tre vetture equivalenti per dimensioni e prestazioni — st
 
 ---
 
-### ⚙️ Chi lavora con questa competenza nel 2030?
 
-**Ingegnere della propulsione elettrica e ibrida**
+### 🔌 Chi lavora con questa competenza nel 2030?
 
-Con la transizione verso l'elettrico, le case automobilistiche hanno bisogno di ingegneri capaci di progettare sistemi di propulsione ibridi e full electric — non solo il motore in sé, ma l'intero powertrain: motore elettrico, inverter, batteria, sistema di gestione termica, software di controllo.
+**Smart Grid Analyst**
 
-È una figura professionale che deve capire sia la termodinamica (per ottimizzare i motori termici residui nei plug-in hybrid) sia l'elettrotecnica e l'elettronica di potenza (per i sistemi di gestione del motore elettrico).
+Analizza e ottimizza i circuiti e le reti elettriche intelligenti, usando software SCADA e AI per bilanciare domanda e offerta di energia in tempo reale.
 
-Il mercato è in esplosione: entro il 2035 tutti i nuovi veicoli immatricolati in Europa saranno a zero emissioni dirette (Regolamento UE 2023/851). Servono decine di migliaia di ingegneri che non esistono ancora.
+Dove lavora: operatori di reti di distribuzione elettrica, centri di controllo energetico regionale, aziende di automazione industriale, centri di ricerca sul grid.
 
-Dove lavora: case automobilistiche (Stellantis, Volkswagen Group, Toyota), fornitori Tier 1 (Bosch, Denso, Valeo), startup della mobilità elettrica.
+Competenze chiave che inizia a costruire da qui: circuiti elettrici · software SCADA · data analysis · AI applicata · reti di distribuzione
 
-Competenze chiave che inizia a costruire da qui: termodinamica · elettrotecnica · rendimento dei sistemi · analisi del ciclo di vita
+*"Milioni di dati al secondo. La rete intelligente non dorme mai — e nemmeno io."*
 
-*"Non sto solo sostituendo il motore a benzina con uno elettrico. Sto riprogettando il concetto di veicolo da zero."*
+---
 
 ---
 

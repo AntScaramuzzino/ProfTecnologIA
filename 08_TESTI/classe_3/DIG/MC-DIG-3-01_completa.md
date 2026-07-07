@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il robot che non sa dove si trova"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 38 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 19 sec.*
 > *(Script completo: MC-DIG-3-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -182,19 +182,20 @@ Questo sistema non richiede hardware sofisticato: micro:bit, motori DC, sensori 
 
 ---
 
-### 🤖 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere di sistemi robotici e automation specialist**
+### 🧠 Chi lavora con questa competenza nel 2030?
 
-L'ingegnere di sistemi robotici progetta robot e sistemi automatizzati per applicazioni industriali, mediche, agricole, logistiche. Non scrive solo codice: deve capire l'hardware (sensori, attuatori, strutture meccaniche), il software (algoritmi di controllo, interfacce), e il contesto (chi userà il robot, in quale ambiente, con quali vincoli di sicurezza).
+**Artificial Intelligence Specialist**
 
-L'automation specialist progetta sistemi automatizzati in ambienti industriali: linee di montaggio, magazzini, sistemi di qualità. In Italia, l'Industria 4.0 ha creato una domanda crescente di questi professionisti: migliaia di PMI manifatturiere stanno automatizzando processi che erano manuali.
+Sviluppa sistemi di intelligenza artificiale avanzati — da modelli di machine learning a reti neurali profonde — per automatizzare processi complessi e creare prodotti intelligenti.
 
-Dove lavorano: aziende manifatturiere, aziende logistiche, settore sanitario, agroalimentare, aziende di automazione (ABB, FANUC, Comau).
+Dove lavora: centri di ricerca AI d'eccellenza, aziende tech globali, dipartimenti universitari di informatica avanzata, startup deep-tech.
 
-Competenze chiave che inizia a costruire da qui: programmazione event-driven · debug sistematico · sensori e attuatori · progettazione algoritmica · documentazione tecnica
+Competenze chiave che inizia a costruire da qui: Python · TensorFlow / PyTorch · machine learning · deep learning · etica AI
 
-*"Un robot non è mai finito. Ogni deployment rivela un bug che il laboratorio non aveva previsto."*
+*"Addestrare un modello è facile. Capire perché sbaglia è la parte difficile — e quella che conta davvero."*
+
+---
 
 ---
 

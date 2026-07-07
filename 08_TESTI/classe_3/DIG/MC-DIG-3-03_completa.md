@@ -147,17 +147,20 @@ Questo è l'IoT civico: dati raccolti da cittadini, per cittadini, con scopi pub
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**IoT Solutions Architect**
+### 🔓 Chi lavora con questa competenza nel 2030?
 
-Progetta sistemi di raccolta e analisi dati distribuiti che connettono sensori fisici al cloud per supportare decisioni in ambito di smart city, agricoltura di precisione, industria 4.0, salute pubblica. Non si occupa solo della parte tecnica (come connettere il sensore): progetta l'intero flusso dal dato grezzo alla decisione — quali dati raccogliere, con quale frequenza, come visualizzarli, chi ha il diritto di accedervi, come proteggerli.
+**Esperto in Cybersecurity**
 
-Dove lavora: aziende di smart city, settore agricoltura di precisione, ospedali con infrastrutture IoT, enti pubblici, startup ambientali.
+Protegge infrastrutture critiche da attacchi informatici usando crittografia avanzata, ethical hacking e metodologie di incident response per garantire continuità e conformità normativa.
 
-Competenze chiave che inizia a costruire da qui: analisi critica dei dati · visualizzazione · privacy dei dati (GDPR) · citizen science · valutazione di fonti di dati
+Dove lavora: red team di grandi aziende, CERT nazionali e agenzie di cybersicurezza, banche e infrastrutture critiche, forze dell'ordine specializzate.
 
-*"Non mi interessa solo che il sensore funzioni. Mi interessa che il dato raccolto venga usato bene — e da chi di dovere."*
+Competenze chiave che inizia a costruire da qui: crittografia avanzata · ethical hacking · normative GDPR/NIS2 · penetration testing · analisi del rischio
+
+*"Attaccare è la mia professione. Per difendere davvero, devo pensare esattamente come chi vuole entrare."*
+
+---
 
 ---
 

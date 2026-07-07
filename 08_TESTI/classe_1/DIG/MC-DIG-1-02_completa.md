@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Otto milioni di condivisioni. Zero letture."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 32 sec.*
 > *(Script completo: MC-DIG-1-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -272,19 +272,20 @@ Vediamo cosa accade se usi il metodo SIFT su questa storia.
 
 ---
 
-### 👩‍💻 Chi lavora con questa competenza nel 2030?
 
-**Fact-checker e verificatore di informazioni digitali**
+### 🤖 Chi lavora con questa competenza nel 2030?
 
-L'aumento della disinformazione online ha creato una nuova figura professionale: il fact-checker — chi verifica sistematicamente la veridicità di affermazioni, notizie e dati che circolano online e sui media. In Italia esistono organizzazioni dedicate (come Pagella Politica e Facta.news); a livello europeo e globale operano reti di fact-checking come l'IFCN (International Fact-Checking Network).
+**Artificial Intelligence Specialist**
 
-Ma la competenza non è solo per chi fa questo di mestiere: è una competenza chiave per giornalisti, ricercatori, operatori della comunicazione istituzionale, dipendenti pubblici, insegnanti — chiunque debba prendere decisioni basate su informazioni.
+Sviluppa algoritmi e sistemi di intelligenza artificiale, applicando machine learning e deep learning per automatizzare processi, riconoscere pattern e generare previsioni.
 
-Strumenti usati ogni giorno: motori di ricerca avanzata · Google Scholar · Reverse image search (ricerca inversa di immagini) · archive.org (Wayback Machine — per vedere versioni precedenti di siti web) · strumenti di verifica di screenshot e metadati digitali.
+Dove lavora: aziende tech come Google, Amazon, startup AI, laboratori universitari di ricerca, centri di innovazione.
 
-Competenze chiave che inizi a costruire qui: ricerca avanzata · valutazione delle fonti · pensiero critico · media literacy · cittadinanza digitale
+Competenze chiave che inizia a costruire da qui: Python · TensorFlow / PyTorch · machine learning · etica AI · logica computazionale
 
-*"Verificare richiede 5 minuti. Smentire una fake news già diffusa a milioni di persone può richiedere anni."*
+*"Non programmo solo algoritmi. Insegno alle macchine a riconoscere pattern che un umano non riuscirebbe a vedere."*
+
+---
 
 ---
 

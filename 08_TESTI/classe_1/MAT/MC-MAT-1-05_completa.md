@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La bici che gira il mondo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 36 sec.*
 
 **Scenario di avvio:**
 
@@ -331,19 +331,20 @@ La bici più leggera non è quella più economica. La bici più economica (accia
 
 ---
 
-### 👨‍🔧 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere metallurgico dei materiali avanzati**
+### 🤖 Chi lavora con questa competenza nel 2030?
 
-Non disegna le macchine — progetta la *materia* con cui le macchine sono costruite. Lavora a monte del processo produttivo: decide la composizione di una lega, i trattamenti termici da applicare, le specifiche di resistenza e leggerezza richieste per ogni applicazione.
+**Digital Twin Engineer**
 
-Nel 2030, il lavoro si concentra su tre sfide: sviluppare acciai ad altissima resistenza con meno carbonio (per ridurre le emissioni degli altiforni), creare leghe di alluminio e titanio stampabili in 3D con proprietà meccaniche controllate, progettare leghe per ambienti estremi (motori ad idrogeno, motori elettrici ad alta temperatura, strutture aerospaziali).
+Crea repliche digitali (Industry 5.0) di impianti metallurgici e linee produttive per simulare processi, ottimizzare la resa dei materiali e ridurre scarti e tempi di fermo.
 
-Dove lavora: centri ricerca di aziende siderurgiche (Danieli, Tenaris, Arcelor-Mittal), laboratori aerospaziali (Airbus, Leonardo), startup di manifattura additiva (stampa 3D di metalli), istituti di ricerca universitari.
+Dove lavora: aziende manifatturiere avanzate, centri di ricerca su Industry 5.0, system integrator, fornitori di piattaforme IIoT.
 
-Competenze che inizia a costruire da qui: proprietà dei materiali metallici · leghe e trattamenti termici · meccanica dei materiali · chimica metallurgica · analisi al microscopio elettronico.
+Competenze chiave che inizia a costruire da qui: IoT · modellazione 3D · ingegneria dei sistemi · simulazione industriale · Industry 5.0
 
-*"Non invento solo oggetti più leggeri. Invento materiali che rendono possibile quello che oggi non si può ancora fare."*
+*"Il gemello digitale non è una copia. È una macchina del tempo che ti mostra il futuro del sistema fisico."*
+
+---
 
 ---
 

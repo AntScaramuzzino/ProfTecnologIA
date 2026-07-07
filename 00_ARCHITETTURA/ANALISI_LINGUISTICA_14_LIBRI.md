@@ -247,7 +247,7 @@ Per ogni libro sono stati valutati:
 - **Frasi:** brevissime nelle consegne (5-8 parole).
 - **Hook:** "Ora tocca a te!" è una formula ripetuta che funziona come ritual marker.
 - **Interazione:** la più alta del corpus in termini di volume di esercizi (100 interattivi + 50 presentazioni).
-- **Giudizio:** non è un libro da leggere, è un libro da fare. Filosofia opposta agli altri. Utile come modello per la Zona 4 (laboratorio) ma non per le zone espositivo-narrative.
+- **Giudizio:** non è un libro da leggere, è un libro da fare. Filosofia opposta agli altri. Utile come modello per la 🔬 SPERIMENTA (laboratorio) ma non per le zone espositivo-narrative.
 
 ---
 
@@ -289,7 +289,7 @@ Per ogni libro sono stati valutati:
 - **Frasi:** medie, con costruzione comparativa frequente (volume 1 → confronto → volume 2 → scalabilità).
 - **Hook:** i dati globali sono il vero hook — "75 milioni di giovani disoccupati" è più forte di qualsiasi metafora.
 - **Interazione:** le attività di Cooperative Learning sono le più elaborate del corpus: hanno ruoli assegnati, prodotto finale definito, criteri di confronto espliciti.
-- **Giudizio:** il modello per la Zona 5 (compito di realtà) dei livelli Intermediate e Advanced. I dati globali calibrati (anni precisi, numeri verificabili) possono essere usati sistematicamente come apertura dei compiti di realtà per rendere il problema autentico e urgente.
+- **Giudizio:** il modello per la 🌍 AGISCI (compito di realtà) dei livelli Intermediate e Advanced. I dati globali calibrati (anni precisi, numeri verificabili) possono essere usati sistematicamente come apertura dei compiti di realtà per rendere il problema autentico e urgente.
 
 ---
 
@@ -359,15 +359,15 @@ Per ogni libro sono stati valutati:
 
 | Cluster | Libri | Caratteristica dominante | Uso nel nuovo libro |
 |---|---|---|---|
-| **Enciclopedico-tecnico** | Atlas Vol.B, SEI Vol.unico, Hypertech Parte1 | Definizioni lunghe, forma passiva, tecnicismo denso, gerarchia visiva con bullets | Zona 2 solo per livello A, come approfondimento e dizionario di settore |
-| **Divulgativo-bilanciato** | Mondadori, SEI Tecnologia, Zanichelli, Atlas Materiali | Terza persona, frasi medie, dati a supporto, "cioè" esplicativo | Zona 2 standard (livello I) |
-| **Narrativo-storico** | DeAgostini Vol.A, Zanichelli Pianeta, RCS vol.2 | Inizio dal presente familiare o dal dato storico, contrasto temporale | **Apertura Zona 2 per tutti i livelli** |
+| **Enciclopedico-tecnico** | Atlas Vol.B, SEI Vol.unico, Hypertech Parte1 | Definizioni lunghe, forma passiva, tecnicismo denso, gerarchia visiva con bullets | 📖 ESPLORA solo per livello A, come approfondimento e dizionario di settore |
+| **Divulgativo-bilanciato** | Mondadori, SEI Tecnologia, Zanichelli, Atlas Materiali | Terza persona, frasi medie, dati a supporto, "cioè" esplicativo | 📖 ESPLORA standard (livello I) |
+| **Narrativo-storico** | DeAgostini Vol.A, Zanichelli Pianeta, RCS vol.2 | Inizio dal presente familiare o dal dato storico, contrasto temporale | **Apertura 📖 ESPLORA per tutti i livelli** |
 | **Narrativo-esplorativo** | Lattes Settori, Hypertech Parte1 (intro) | Prima persona plurale ("seguiamo", "scopriamo"), metafora del "viaggio" | Aperture di area tematica e introduzioni annuali |
-| **Dialogico-interrogativo** | Zanichelli Paci, DeAgostini (esercizi) | Domanda → risposta, seconda persona diretta, podcast narrativo | **Zona 1 (hook audio) e Zona 4** |
-| **Analitico-globale** | Hypertech Parte2, Zanichelli Pianeta | Dati globali reali con anni precisi, impatto mondiale, registro quasi-giornalistico | **Zona 5 livelli I e A** (compiti di realtà con urgenza autentica) |
+| **Dialogico-interrogativo** | Zanichelli Paci, DeAgostini (esercizi) | Domanda → risposta, seconda persona diretta, podcast narrativo | **⚡ INNESCA (hook audio) e 🔬 SPERIMENTA** |
+| **Analitico-globale** | Hypertech Parte2, Zanichelli Pianeta | Dati globali reali con anni precisi, impatto mondiale, registro quasi-giornalistico | **🌍 AGISCI livelli I e A** (compiti di realtà con urgenza autentica) |
 | **Ragionativo** | Pearson/Sanoma | Argomenta il perché dei nomi e delle categorie, "non è casuale" | Area SIS/COM (economia, sistemi) |
 | **Sintetico-DSA** | Raffaello, Mondadori Progettare, RCS vol.1 | Una frase = una informazione, parentesi esplicative, "cioè", struttura parallela | **Livello base (Foundation) di ogni MC** |
-| **Con "ci" collettivo** | RCS vol.2, DeAgostini Vol.A | "Ci accompagna", "ci sembra" — lo studente non osserva, appartiene | Hook di appartenenza in Zona 2 e Zona 1 |
+| **Con "ci" collettivo** | RCS vol.2, DeAgostini Vol.A | "Ci accompagna", "ci sembra" — lo studente non osserva, appartiene | Hook di appartenenza in 📖 ESPLORA e ⚡ INNESCA |
 
 ---
 
@@ -385,7 +385,7 @@ Ogni termine tecnico nuovo è immediatamente seguito da "cioè + spiegazione in 
 Prima frase del testo espositivo = qualcosa che lo studente già conosce o fa ogni giorno.
 > *"Oggi ci sembra normale che gran parte del lavoro sia svolto dalle macchine"*
 
-**Regola:** ogni MC inizia il testo espositivo (Zona 2) con una frase che descrive un'esperienza che lo studente ha già vissuto. La definizione tecnica arriva solo nella seconda frase.
+**Regola:** ogni MC inizia il testo espositivo (📖 ESPLORA) con una frase che descrive un'esperienza che lo studente ha già vissuto. La definizione tecnica arriva solo nella seconda frase.
 
 ### 4.3 Hook da headline giornalistica — Pearson/Sanoma
 I titoli dei compiti di realtà devono essere titoli da articolo, non descrizioni del compito.
@@ -397,7 +397,7 @@ I titoli dei compiti di realtà devono essere titoli da articolo, non descrizion
 Un dato numerico inaspettato sostituisce la descrizione qualitativa dell'importanza.
 > *"risparmio del 100% di alberi, del 99% di acqua e del 75% dell'energia"*
 
-**Regola:** ogni MC ha almeno un dato quantitativo verificabile nella Zona 2. Non usare mai "molto", "tanti", "numerosi" quando esiste un numero.
+**Regola:** ogni MC ha almeno un dato quantitativo verificabile nella 📖 ESPLORA. Non usare mai "molto", "tanti", "numerosi" quando esiste un numero.
 
 ### 4.5 "Non è casuale" — Pearson/Sanoma
 Prima di dare una definizione, anticipare che la parola scelta non è arbitraria.
@@ -433,7 +433,7 @@ Un numero reale su scala mondiale sostituisce le formule vaghe di importanza.
 Lo studente esegue un'osservazione o un mini-compito PRIMA di leggere il testo.
 > *"Osserva le immagini. Sapresti dire quanti di questi sono robot? Contali." → poi il testo.*
 
-**Regola:** la Zona 4 (laboratorio) può essere spezzata: parte prima del testo (attivazione) e parte dopo (consolidamento). Questa struttura è la Flipped Classroom in miniatura a livello di pagina.
+**Regola:** la 🔬 SPERIMENTA (laboratorio) può essere spezzata: parte prima del testo (attivazione) e parte dopo (consolidamento). Questa struttura è la Flipped Classroom in miniatura a livello di pagina.
 
 ---
 
@@ -465,8 +465,8 @@ ZONA 5 (compito di realtà):
 → Metacognizione: stile Pearson/Sanoma ("Com'è andata?")
 ```
 
-**Persona target:** seconda persona singolare in Zona 1, 4, 5. Terza persona con "ci" collettivo in Zona 2-3. Prima persona plurale ("seguiamo", "scopriamo") solo nelle aperture di area tematica.
-**Lunghezza target per frase espositiva (Zona 2):** 12-16 parole per livello F, 16-22 per livello I, 22-30 per livello A.
+**Persona target:** seconda persona singolare in ⚡ INNESCA, 4, 5. Terza persona con "ci" collettivo in Zona 2-3. Prima persona plurale ("seguiamo", "scopriamo") solo nelle aperture di area tematica.
+**Lunghezza target per frase espositiva (📖 ESPLORA):** 12-16 parole per livello F, 16-22 per livello I, 22-30 per livello A.
 **Regola d'oro:** ogni tecnicismo ha il suo "cioè". Ogni zona ha il suo registro. Non mischiare.
 
 ### Dispositivi per zona — tabella rapida

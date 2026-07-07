@@ -355,21 +355,20 @@ Esattamente lo stesso ragionamento fa l'arch. Ferrara quando sceglie tra scala 1
 
 ---
 
-### 👩‍🏛️ Chi lavora con questa competenza nel 2030?
 
-**BIM Coordinator (Building Information Modeling)**
+### ✏️ Chi lavora con questa competenza nel 2030?
 
-Un tempo, un edificio era progettato su carta da un architetto, poi i calcoli strutturali erano rifatti da ingegneri, poi gli impianti erano progettati da un altro tecnico ancora — spesso su fogli diversi, con scale diverse, con informazioni che non coincidevano. Il risultato: cantieri pieni di sorprese, costi fuori controllo, ritardi.
+**Designer di Prodotto**
 
-Il BIM Coordinator costruisce un **modello digitale 3D dell'edificio** che contiene tutto — geometria, struttura, impianti, materiali, costi — in un unico file coordinato. Ogni scala, ogni quota, ogni vista si genera automaticamente dal modello. Ma il BIM Coordinator deve sapere interpretare le quote, scegliere le scale giuste per ogni elaborato, riconoscere gli errori nel modello.
+Traduce idee tridimensionali in disegni tecnici precisi, definendo forma, materiali e funzioni di un prodotto attraverso viste ortogonali, sezioni e schede tecniche.
 
-Concretamente: gestisce file BIM (Revit, ArchiCAD, Allplan), coordina i conflitti tra gli impianti (dove il tubo dell'idraulica interferisce con la trave strutturale), produce tavole tecniche per il cantiere, verifica che le scale e le quote siano corrette e complete.
+Dove lavora: studi di design indipendenti, reparti R&D di aziende manifatturiere, laboratori di prototipazione, scuole di design.
 
-Dove lavora: studi di architettura e ingegneria, imprese di costruzione, enti pubblici (comuni, aziende ospedaliere, scuole), società di gestione patrimoniale.
+Competenze chiave che inizia a costruire da qui: disegno tecnico · modellazione · creatività · materiali e tecnologie · documentazione di progetto
 
-Competenze chiave che inizia a costruire da qui: scale di rappresentazione · quotatura · lettura del disegno tecnico · norme UNI/ISO · software BIM
+*"Un oggetto ben progettato non ha bisogno di un manuale. Si capisce da solo."*
 
-*"Il disegno sbagliato in cantiere costa centinaia di migliaia di euro. La scala giusta e le quote corrette non sono dettagli — sono la differenza tra un edificio che si costruisce e uno che si demolisce."*
+---
 
 ---
 

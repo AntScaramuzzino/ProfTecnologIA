@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il semaforo che ti conosce"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 41 sec.*
 
 **Script del podcast:**
 
@@ -173,19 +173,20 @@ Ma la cosa più interessante non sono i dati — sono i ragazzi. Sanno leggere u
 
 ---
 
-### 🏙️ Chi lavora con questa competenza nel 2030?
 
-**Urban Data Analyst / Analista di dati urbani**
+### 🌍 Chi lavora con questa competenza nel 2030?
 
-Le città producono quantità enormi di dati — dai sensori IoT, dai sistemi di trasporto pubblico, dalle app di segnalazione, dai dati fiscali e demografici, dagli open data pubblicati da altri enti. Qualcuno deve raccoglierli, pulirli, analizzarli e trasformarli in informazioni utili per chi prende decisioni sulla città.
+**Geo-engineer Ambientale**
 
-Concretamente lavora su: analisi dei flussi di traffico per ottimizzare la mobilità pubblica; valutazione dell'impatto di misure come ZTL, piste ciclabili, zone 30 km/h; identificazione di zone con qualità dell'aria problematica correlata a fonti di inquinamento specifiche; monitoraggio dell'efficacia dei servizi pubblici (raccolta rifiuti, illuminazione, manutenzione strade); supporto alla partecipazione civica (analisi delle segnalazioni dei cittadini per prioritizzare gli interventi).
+Analizza dati geospaziali e caratteristiche del territorio per pianificare interventi di tutela ambientale, prevenzione del rischio geologico e ripristino degli ecosistemi.
 
-Dove lavora: Comuni e aziende municipalizzate, aziende di trasporto pubblico, società di pianificazione urbana, startup del settore "govtech", organizzazioni internazionali (ONU-Habitat).
+Dove lavora: agenzie ambientali regionali (ARPA), studi di geologia e ingegneria ambientale, parchi naturali, protezione civile.
 
-Competenze chiave che inizia a costruire da qui: analisi dati (fogli di calcolo avanzati, Python/R) · GIS (sistemi geografici informativi) · comprensione dei sistemi urbani · comunicazione pubblica dei dati · etica e governance dei dati
+Competenze chiave che inizia a costruire da qui: geologia · GIS e telerilevamento · ingegneria ambientale · analisi geospaziale · modellazione territoriale
 
-*"Raccogliere dati è facile. La difficoltà è fare le domande giuste — e stare attento a chi risponde la tecnologia e chi viene lasciato fuori."*
+*"Il territorio racconta la sua storia. Il mio lavoro è capirla prima che diventi un'emergenza."*
+
+---
 
 ---
 

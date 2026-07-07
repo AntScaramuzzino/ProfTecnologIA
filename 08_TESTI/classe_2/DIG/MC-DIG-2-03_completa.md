@@ -265,20 +265,17 @@ Le competenze che stai imparando qui — naming dei file, struttura delle cartel
 
 ---
 
-> **Chi lavora con questa competenza nel 2030?**
+### 🔄 Chi lavora con questa competenza nel 2030?
 
-**DevOps Engineer**
+**Digital and Innovation Manager**
 
-Un DevOps engineer non lavora solo con il codice: lavora con i *sistemi* che fanno funzionare le applicazioni. Gestisce i server (che sono computer come il tuo, ma molto più potenti), automatizza i processi di backup e aggiornamento, si assicura che quando un server si rompe i dati non vadano persi e il servizio riparta in pochi minuti.
+Gestisce l'attività aziendale in termini di processi digitali, stimolando la ricerca e favorendo il consolidamento di innovazioni per lo sviluppo competitivo dell'organizzazione.
 
-Concretamente: configura sistemi di backup automatici per dati critici di aziende con milioni di utenti, gestisce la struttura dei file sui server, automatizza gli aggiornamenti dei sistemi operativi per garantire che le vulnerabilità vengano corrette senza interruzioni di servizio.
+Dove lavora: PMI in digitalizzazione, società di consulenza IT e management, filiali italiane di multinazionali, enti pubblici in innovazione.
 
-Le competenze che inizia a costruire da qui: organizzazione dei file system, comprensione del SO, backup e ridondanza dei dati, gestione dei permessi.
+Competenze chiave che inizia a costruire da qui: digital transformation · gestione software aziendale · processi digitali · innovation management · change management
 
-*"La differenza tra un sistema che funziona e uno che crolla non è quasi mai il codice — è la gestione dell'infrastruttura."*
-
-Dove lavora: aziende tech, startup, banche, ospedali — ovunque ci siano sistemi digitali critici.
-Livello di domanda nel 2030 in Europa: altissimo (carenza stimata di 500.000 profili).
+*"Digitalizzare non significa comprare software. Significa ridisegnare come si lavora."*
 
 ---
 

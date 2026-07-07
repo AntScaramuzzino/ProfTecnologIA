@@ -214,19 +214,20 @@ Il team di ingegneri che ha progettato Ingenuity ha usato Fusion 360 e CATIA per
 
 ---
 
-### 👩‍💻 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere di produzione digitale e maker educator**
+### 🖥️ Chi lavora con questa competenza nel 2030?
 
-Il professionista che sa tradurre un problema fisico in un modello CAD — poi in un prototipo stamapato, poi in un prodotto rifinito — lavora in quasi tutti i settori industriali, dalla moda all'aerospazio, dal medicale all'arredamento. Non è un CAD drafter (chi disegna istruzioni di altri): è qualcuno che progetta autonomamente, usa il digitale come strumento di pensiero, non solo di rappresentazione.
+**3D Designer**
 
-Il **maker educator** è la versione educativa: insegna a studenti e adulti a usare FabLab, stampanti 3D, tagliatrici laser, Arduino. È una delle professioni in più rapida crescita nel sistema educativo mondiale — la rete Fab Foundation conta oltre 2.500 FabLab in 100 paesi.
+Crea modelli tridimensionali digitali — per prodotti, architetture, personaggi o ambienti — con spiccato senso estetico e padronanza dei software di modellazione 3D professionali.
 
-Dove lavorano: aziende manifatturiere, startup hardware, FabLab e makerspaces, scuole tecniche, ospedali (dispositivi medici personalizzati), settore aerospaziale.
+Dove lavora: studi di architettura e interior design, case di produzione per cinema e pubblicità, aziende di product design avanzato, piattaforme gaming.
 
-Competenze chiave che inizia a costruire da qui: modellazione CAD 3D · geometria solida costruttiva · design parametrico · prototipazione rapida · pensiero iterativo
+Competenze chiave che inizia a costruire da qui: modellazione 3D (Blender, Rhino, SolidWorks) · rendering · senso estetico · stampa 3D · texturing
 
-*"Il file CAD è il punto di partenza. Il prototipo fisico è il punto di arrivo. E poi si ricomincia."*
+*"Tutto quello che vedi in un film di fantascienza è stato prima disegnato da qualcuno come me."*
+
+---
 
 ---
 

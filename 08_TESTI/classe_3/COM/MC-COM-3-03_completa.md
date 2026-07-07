@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il tuo zaino ha percorso 20.000 chilometri"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 35 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 16 sec.*
 > *(Script completo: MC-COM-3-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -245,19 +245,20 @@ L'auto privata sembra economica ma distribuisce le emissioni su mezzi privati, a
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Mobility Planner urbano**
+### 📡 Chi lavora con questa competenza nel 2030?
 
-Le città del futuro devono ridurre le emissioni dei trasporti del 55% entro il 2030 per rispettare gli Accordi di Parigi. Questo non si può fare solo vendendo più auto elettriche — richiede riprogettare come le persone si spostano: più trasporto pubblico, più bici, meno auto private in città, più intermodalità.
+**Urban Sensor Network Manager**
 
-Il Mobility Planner analizza i flussi di spostamento di una città, identifica i nodi critici (dove la gente si sposta ma il trasporto è carente), progetta soluzioni integrate (combinare bus + bici + car sharing), calcola l'impatto ambientale delle alternative, e comunica le proposte alle amministrazioni e ai cittadini.
+Gestisce le reti di telecomunicazione e sensori nelle infrastrutture urbane, dalla fibra ottica ai nodi IoT, garantendo connettività affidabile e raccolta dati continua per le smart city.
 
-Dove lavora: comuni e città metropolitane, agenzie per la mobilità, studi di pianificazione urbanistica, organizzazioni internazionali (ONU, BEI, World Bank), aziende di mobilità condivisa.
+Dove lavora: comuni e municipalità, aziende di utility urbane, gestori di infrastrutture critiche, startup IoT urbano.
 
-Competenze chiave che inizia a costruire da qui: analisi dei dati di mobilità · calcolo delle emissioni · conoscenza dei sistemi di trasporto · pianificazione urbana · comunicazione tecnica ai decisori politici
+Competenze chiave che inizia a costruire da qui: reti IoT · telecomunicazioni urbane · data visualization · manutenzione infrastrutture · 5G
 
-*"Non progetto strade. Progetto come le persone si muovono — che è molto più complicato, e molto più importante."*
+*"Cinquecento sensori per km². La città mi parla in dati — io la ascolto e rispondo in decisioni."*
+
+---
 
 ---
 

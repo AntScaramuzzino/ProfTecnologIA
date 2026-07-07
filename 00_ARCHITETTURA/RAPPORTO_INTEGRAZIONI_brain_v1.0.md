@@ -45,12 +45,12 @@ I 50 testi _completa.md già scritti incorporano la maggior parte dei contenuti 
 **MC-MAT-1-02 — Ciclo di vita**
 - *Gap:* LCA è citato ma senza un esempio applicato end-to-end.
 - *Fonte:* Atlas 9788826824376 p.26-28: esempio completo ciclo di vita del giornale (foresta → cartiera → lettore → riciclo/discarica) con LCA per ogni fase.
-- *Azione:* aggiungere il caso giornale come esempio in Zona 3 OSSERVA.
+- *Azione:* aggiungere il caso giornale come esempio in 🔍 OSSERVA OSSERVA.
 
 **MC-MAT-1-03 — Materiali innovativi**
 - *Gap:* nessun riferimento ai biopolimeri estratti da alghe o mais.
 - *Fonte:* Atlas 9788826824376 p.106: "plastiche naturali: caucciù, cellulosa, biopolimeri estratti da alghe o mais".
-- *Azione:* integrare in Zona 2 nella sezione plastiche bio.
+- *Azione:* integrare in 📖 ESPLORA nella sezione plastiche bio.
 
 ---
 
@@ -82,12 +82,12 @@ I 50 testi _completa.md già scritti incorporano la maggior parte dei contenuti 
 **MC-ENE-3-02 — Fonti rinnovabili**
 - *Gap:* nessun dato specifico su numero di pannelli per fabbisogno domestico.
 - *Fonte:* Tubia/Rizzoli 9788891579850 p.337: quanti pannelli servono per produrre energia domestica; Zanichelli 9788800360043 p.268: "una cella fotovoltaica può essere unita ad altre per formare un pannello; un pannello da 3-4 m² produce circa 300-400 W in condizioni standard".
-- *Azione:* aggiungere dato orientativo in Zona 3 OSSERVA.
+- *Azione:* aggiungere dato orientativo in 🔍 OSSERVA OSSERVA.
 
 **MC-ENE-3-04 — Circuiti elettrici**
 - *Gap:* verificare presenza della formula per calcolo consumo elettrico (kWh = W × ore / 1000).
 - *Fonte:* Mondadori 9788829861521 p.346: "se nell'Unione Europea tutti gli utenti spegnessero il comando di stand-by del proprio televisore" — esempio stand-by con calcolo risparmio energetico.
-- *Azione:* integrare l'esempio stand-by TV come esercizio di calcolo in Zona 4.
+- *Azione:* integrare l'esempio stand-by TV come esercizio di calcolo in 🔬 SPERIMENTA.
 
 ---
 
@@ -110,7 +110,7 @@ I 50 testi _completa.md già scritti incorporano la maggior parte dei contenuti 
 **MC-SIS-3-02 — Economia circolare**
 - *Gap:* verificare presenza del modello aziendale agricolo circolare come esempio pratico.
 - *Fonte:* Lattes 9788869177064 p.203: esempio di fattoria con ciclo produttivo circolare (mais → mangimi → carne → reflui → biogas → energia → fertilizzanti → mais).
-- *Azione:* aggiungere come caso studio in Zona 3 OSSERVA.
+- *Azione:* aggiungere come caso studio in 🔍 OSSERVA OSSERVA.
 
 ---
 

@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "L'IA non pensa. Calcola."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 40 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 46 sec.*
 > *(Script completo: MC-DIG-3-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -205,19 +205,20 @@ Questo esercizio non ha l'obiettivo di "smontare" i LLM — ha l'obiettivo di sv
 
 ---
 
-### 🔬 Chi lavora con questa competenza nel 2030?
 
-**AI ethicist, responsabile IA, data scientist**
+### 👁️ Chi lavora con questa competenza nel 2030?
 
-L'AI ethicist valuta i sistemi di IA prima del loro deployment per identificare bias, rischi di discriminazione, violazioni della privacy e implicazioni sociali. Non è necessariamente un tecnico di deep learning: deve capire sia la statistica sia il diritto, sia l'ingegneria del software sia le scienze sociali. È una delle professioni in più rapida crescita nel settore tecnologico — ogni grande azienda tech e ogni ente pubblico che usa sistemi IA deve avere processi di valutazione etica.
+**Computer Vision Engineer**
 
-Il data scientist costruisce i modelli, analizza i dati, valuta le prestazioni dei sistemi. Lavora con Python, librerie di ML (scikit-learn, TensorFlow, PyTorch), e strumenti statistici. La combinazione di competenze tecniche e pensiero critico sui dati è fondamentale.
+Sviluppa sistemi che permettono alle macchine di 'vedere' e interpretare immagini e video, applicando deep learning per riconoscimento di oggetti, volti e scene in tempo reale.
 
-Dove lavorano: aziende tecnologiche, banche e assicurazioni, sanità, pubblica amministrazione, organizzazioni internazionali (ONU, Commissione Europea), think tank, università.
+Dove lavora: aziende di manifattura avanzata, startup di guida autonoma, centri medici con diagnostica AI, sistemi di sorveglianza industriale.
 
-Competenze chiave che inizia a costruire da qui: pensiero critico sui dati · comprensione del machine learning · etica algortimica · valutazione dei rischi · comunicazione delle limitazioni
+Competenze chiave che inizia a costruire da qui: OpenCV · deep learning · Python · matematica applicata · elaborazione immagini
 
-*"La cosa più pericolosa nell'IA non è la macchina che sbaglia. È la macchina che sbaglia e nessuno se ne accorge."*
+*"Insegno alle macchine a vedere. Ma vedere non basta — devono anche capire cosa guardano."*
+
+---
 
 ---
 

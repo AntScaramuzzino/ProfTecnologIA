@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il segreto del foglio A4"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 10 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 38 sec.*
 > *(Script completo: MC-DIS-1-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -412,21 +412,20 @@ Questo semplice oggetto richiede tutte le costruzioni che hai imparato: la circo
 
 ---
 
-### 👩‍💻 Chi lavora con questa competenza nel 2030?
 
-**Progettista CAD-fisico (CAD/CAM Designer)**
+### 🎨 Chi lavora con questa competenza nel 2030?
 
-Nel 2030 quasi nessun professionista disegna su carta tutto il giorno. Ma ogni professionista che usa un software CAD ha bisogno di capire la geometria che il software esegue automaticamente. Il Progettista CAD-fisico lavora con software di modellazione 3D (SolidWorks, Fusion 360, Catia) per creare oggetti che poi vengono prodotti con stampanti 3D, fresatrici CNC e robot industriali.
+**Graphic Designer**
 
-La competenza di base che inizia qui: saper ragionare geometricamente in 2D — perché ogni modello 3D è costruito partendo da profili 2D estrudibili.
+Progetta la comunicazione visiva di aziende e prodotti, raccontando messaggi efficaci attraverso linguaggi grafici convincenti: illustrazioni, tipografia, layout e composizione.
 
-Concretamente: disegna profili 2D con strumenti di geometria computazionale, aggiunge vincoli geometrici (perpendicolarità, simmetria, tangenza) che corrispondono esattamente alle costruzioni che hai imparato, esporta il disegno tecnico quotato per la produzione.
+Dove lavora: agenzie creative e di comunicazione, reparti marketing aziendali, case editrici, startup tech che curano il brand visivo.
 
-Dove lavora: uffici tecnici di aziende manifatturiere (automotive, meccanica di precisione, produzione di componenti per aeronautica), studi di ingegneria e architettura, laboratori di prototipazione rapida (Fab Lab, officine digitali).
+Competenze chiave che inizia a costruire da qui: composizione visiva · tipografia · software grafici (Adobe CC) · comunicazione · design thinking
 
-Competenze chiave che inizia a costruire da qui: geometria euclidea · norme UNI/ISO · software CAD 2D e 3D · lettura del disegno tecnico · tolleranze dimensionali
+*"Il buon design non si nota. Ci vivi dentro senza accorgertene."*
 
-*"Il programma fa la costruzione. Ma devo sapere quale costruzione chiedergli di fare."*
+---
 
 ---
 

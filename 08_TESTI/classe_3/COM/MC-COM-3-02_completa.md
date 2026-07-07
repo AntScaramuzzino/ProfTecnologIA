@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "500 ore al minuto. Quanto vale il tuo video?"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 35 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 10 sec.*
 > *(Script completo: MC-COM-3-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -262,19 +262,20 @@ Il Liceo Scientifico "Archimede" di una città italiana ha prodotto nel 2025 un 
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Content Strategist con specializzazione etica**
+### 🎬 Chi lavora con questa competenza nel 2030?
 
-Produrre contenuti digitali non è solo una questione tecnica — è una questione di strategia e responsabilità. Il Content Strategist decide cosa produrre, per chi, con quale obiettivo, su quali piattaforme, con quali risorse. Nel 2030, la componente etica del ruolo è diventata centrale: con la proliferazione di contenuti AI-generated, la capacità di produrre contenuti autentici, verificati e dichiaratamente umani diventa un valore differenziale.
+**AI-Assisted Scriptwriter**
 
-Attività quotidiane: scrivere brief editoriali, supervisionare team di produzione, verificare le fonti, gestire le licenze, monitorare come i contenuti si diffondono e vengono modificati online, rispondere a reclami di copyright.
+Scrive sceneggiature, script e contenuti per media audiovisivi usando l'AI generativa come strumento creativo per accelerare la produzione e sperimentare nuove forme narrative.
 
-Dove lavora: testate giornalistiche, agenzie di comunicazione, organizzazioni non profit, istituzioni pubbliche (enti locali, scuole, musei), aziende con forte identità comunicativa.
+Dove lavora: case di produzione audiovisiva, piattaforme di streaming, agenzie di branded content, studi di sviluppo di videogiochi.
 
-Competenze chiave che inizia a costruire da qui: scrittura verificata · diritto d'autore · licenze CC · produzione podcast/video · media literacy · storytelling basato su dati
+Competenze chiave che inizia a costruire da qui: scrittura creativa · storytelling · AI generativa · sceneggiatura · media digitali
 
-*"Non mi interessa solo che il contenuto funzioni. Mi interessa che sia vero, che sia mio, e che rispetti il lavoro degli altri."*
+*"L'AI genera 50 varianti in un secondo. Io scelgo quella che fa venire i brividi."*
+
+---
 
 ---
 

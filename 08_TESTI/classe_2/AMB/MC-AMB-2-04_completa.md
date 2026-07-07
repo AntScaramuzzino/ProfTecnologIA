@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La casa che respira con le stagioni"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 45 sec.*
 
 **Script del podcast:**
 
@@ -210,19 +210,20 @@ La combinazione di legno locale, orientamento solare calcolato e isolamento spin
 
 ---
 
-### 👷 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere dell'efficienza energetica degli edifici (Energy Performance Engineer)**
+### 🏙️ Chi lavora con questa competenza nel 2030?
 
-Nel 2030, con la direttiva europea "Case Green" che impone la ristrutturazione dei 15 milioni di edifici più inefficienti d'Italia entro il 2035, questa figura professionale sarà tra le più richieste in assoluto.
+**Smart City Planner**
 
-Concretamente lavora su: audit energetico degli edifici (misura i consumi reali, identifica i ponti termici con termocamere, calcola il potenziale di risparmio), progettazione degli interventi di retrofit (cappotto, finestre, VMC), scelta dei materiali isolanti, calcolo del ritorno sull'investimento per il committente, certificazione energetica (rilascia l'attestato di prestazione energetica, APE).
+Pianifica città intelligenti integrando IoT urbano, mobilità sostenibile, gestione energetica e servizi digitali ai cittadini, usando GIS e big data per decisioni basate sull'evidenza.
 
-Dove lavora: studi di ingegneria e architettura, imprese di costruzione e ristrutturazione, enti pubblici (Comuni, scuole, ospedali), società di consulenza per il settore immobiliare.
+Dove lavora: comuni e città metropolitane, società di consulenza urbana, agenzie di sviluppo territoriale, startup smart city.
 
-Competenze chiave che inizia a costruire da qui: fisica del calore · materiali da costruzione · termocamere e misure termografiche · software di simulazione energetica (EnergyPlus, TRNSYS, Edilclima) · normativa energetica europea e italiana
+Competenze chiave che inizia a costruire da qui: urbanistica · IoT urbano · GIS · pianificazione energetica · data-driven governance
 
-*"Il mio lavoro è trasformare edifici vecchi in edifici nuovi — senza buttarli giù. E ogni kWh risparmiato è CO₂ che non va nell'atmosfera."*
+*"I dati non costruiscono la città. Ma senza dati costruiamo la città sbagliata."*
+
+---
 
 ---
 

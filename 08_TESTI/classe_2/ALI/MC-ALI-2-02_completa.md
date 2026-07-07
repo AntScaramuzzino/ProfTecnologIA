@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "L'invenzione che Napoleone ha pagato"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 52 sec.*
 > *(Script completo: MC-ALI-2-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -191,19 +191,20 @@ Differenza pratica in conservazione: lo yogurt con fermenti vivi va sempre tenut
 
 ---
 
-### 👨‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Food Technologist (Tecnologo alimentare)**
+### 🍽️ Chi lavora con questa competenza nel 2030?
 
-Il tecnologo alimentare è la figura professionale che sta tra la scienza e la produzione: studia come i processi fisici, chimici e biologici trasformano le materie prime in alimenti sicuri, nutrienti e duraturi, e progetta i processi industriali per ottimizzare qualità, sicurezza e sostenibilità.
+**3D Food Printing Technician**
 
-Concretamente: un tecnologo alimentare lavora alla formulazione di un nuovo prodotto (quante calorie deve avere? quale shelf life? come si comporta a temperature diverse?), alla progettazione delle linee di produzione (che tipo di pastorizzazione usare? a quale temperatura? per quanto tempo?), al controllo qualità (il prodotto è microbiologicamente sicuro? le etichette sono corrette?), e all'innovazione (come ridurre il sale o lo zucchero senza perdere gusto? come estendere la shelf life senza aggiungere conservanti?).
+Usa stampanti 3D alimentari per produrre cibi personalizzati per forma, nutrienti e consistenza, aprendo nuove possibilità nella ristorazione, nella dietetica e nella produzione industriale.
 
-Dove lavora: industrie alimentari (da piccole a multinazionali), laboratori di analisi, autorità sanitarie (EFSA, Ministero della Salute, ASL), organizzazioni internazionali (FAO, WHO).
+Dove lavora: laboratori di food innovation, ospedali e case di cura con dietoterapia speciale, ristoranti d'avanguardia, aziende di tecnologie alimentari.
 
-Competenze chiave che inizia a costruire da qui: microbiologia degli alimenti · chimica organica · analisi delle etichette · normativa europea sulla sicurezza alimentare · processi industriali
+Competenze chiave che inizia a costruire da qui: biochimica alimentare · progettazione CAD · tecnologie additive · nutrizione · food manufacturing
 
-*"Il mio lavoro è fare in modo che quello che mangi sia quello che pensi di mangiare."*
+*"La stampante 3D non cucina. Ma permette di cucinare ciò che non era mai stato possibile prima."*
+
+---
 
 ---
 

@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il semaforo che è esploso"**
-> *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> *Ascolta prima di leggere. Durata: 4 min 2 sec.*
 > *(Script completo: MC-DIG-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -248,19 +248,20 @@ La versione avanzata della tua attività (Livello Avanzato in Zona 4) ti chiede 
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Sviluppatore educativo (EdTech developer)**
+### 🛡️ Chi lavora con questa competenza nel 2030?
 
-Lo sviluppatore educativo crea applicazioni per l'apprendimento: quiz adattativi, simulazioni, ambienti di pratica. Combina la conoscenza della pedagogia (come si impara) con quella della programmazione (come si costruisce uno strumento digitale).
+**Data Trust Officer**
 
-Il pensiero computazionale — decomposizione, pattern, astrazione, algoritmo — è la competenza fondamentale. Non importa quale linguaggio di programmazione viene usato: Python, JavaScript, Swift. Le strutture sono sempre le stesse tre: sequenza, selezione, iterazione.
+Governa l'uso etico e sicuro dei dati nelle reti aziendali, garantendo la conformità al GDPR, la protezione della privacy e la fiducia degli utenti nelle piattaforme digitali.
 
-Dove lavora: startup EdTech, piattaforme educative globali (Duolingo, Coursera), team digitali di grandi editori scolastici, divisioni formazione di aziende.
+Dove lavora: grandi aziende con portafogli di dati, enti pubblici, autorità garanti, studi legali specializzati in privacy e compliance.
 
-Competenze che inizia a costruire da qui: pensiero computazionale · strutture di controllo · variabili e liste · debug sistematico · progettazione dell'esperienza utente
+Competenze chiave che inizia a costruire da qui: governance dei dati · GDPR · cyberlaw · protezione dati · etica digitale
 
-*"Ogni volta che scrivo una nuova funzione, prima disegno su carta l'algoritmo. Il codice viene dopo. Sempre."*
+*"I dati non sono il nuovo petrolio. Sono persone. E le persone hanno diritti."*
+
+---
 
 ---
 

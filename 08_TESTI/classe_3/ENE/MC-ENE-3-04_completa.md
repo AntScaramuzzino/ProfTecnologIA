@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il filo che muove il mondo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 23 sec.*
 
 **Domanda di avvio:**
 Hai presente quando tocchi una maniglia di metallo in inverno e senti una piccola scossa?
@@ -299,19 +299,20 @@ Con un sensore LDR (Light Dependent Resistor — resistore fotosensibile), il LE
 
 ---
 
-### 🔌 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere elettronico embedded**
+### 💧 Chi lavora con questa competenza nel 2030?
 
-I sistemi embedded sono processori incorporati in oggetti fisici: l'elettronica di controllo di un'automobile, il termostato intelligente della tua casa, il sensore di un pannello solare, il controller di un drone. L'ingegnere embedded progetta sia il circuito hardware (quale microcontrollore, quali sensori, quale schema di alimentazione) sia il software che lo fa funzionare.
+**Hydrogen Station Manager**
 
-Il mercato dei dispositivi IoT (Internet of Things) — oggetti fisici connessi a internet — sta crescendo rapidamente: si stima che nel 2030 ci siano oltre 25 miliardi di dispositivi connessi nel mondo. Ognuno ha bisogno di qualcuno che l'abbia progettato.
+Gestisce stazioni di rifornimento a idrogeno per veicoli a celle a combustibile, garantendo sicurezza, conformità normativa e continuità del servizio nella rete di distribuzione.
 
-Dove lavora: aziende di automazione industriale, automotive (i software dell'auto elettrica), domotica, dispositivi medici, robotica.
+Dove lavora: gestori di infrastrutture energetiche, aziende di trasporto pesante e logistica, porti e aeroporti, startup dell'idrogeno verde.
 
-Competenze chiave che inizia a costruire da qui: legge di Ohm · circuiti digitali · programmazione C/C++ · microcontrollori · debug di circuiti
+Competenze chiave che inizia a costruire da qui: ingegneria chimica · sicurezza industriale · normative ambientali H₂ · logistica energetica · termodinamica
 
-*"Il mondo fisico e il mondo digitale si parlano attraverso l'elettronica embedded. Io costruisco quella conversazione."*
+*"L'idrogeno non è la soluzione magica. È lo strumento giusto per i problemi giusti."*
+
+---
 
 ---
 

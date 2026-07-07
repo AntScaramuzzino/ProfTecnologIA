@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "IKEA parla senza parole"**
-> *Ascolta prima di leggere. Durata: 2 min 22 sec.*
+> *Ascolta prima di leggere. Durata: 3 min 44 sec.*
 > *(Script completo: MC-DIS-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -215,19 +215,20 @@ Nel 2014, la specifica tecnica del connettore USB-C fu pubblicata in una version
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Progettista meccanico CAD**
+### 🖨️ Chi lavora con questa competenza nel 2030?
 
-Il progettista meccanico crea le tavole tecniche degli oggetti che verranno prodotti. Oggi quasi sempre lavora con software CAD 3D (Autodesk Inventor, SolidWorks, Catia) che generano automaticamente le viste ortogonali dal modello tridimensionale. Ma per impostare correttamente il modello, scegliere le viste, definire le sezioni giuste e verificare la correttezza delle quote, deve conoscere a fondo le regole della proiezione ortogonale.
+**Modellista e Prototipista Industriale 4.0**
 
-Un progettista che non conosce le basi del disegno tecnico non riesce a interpretare i risultati del software, non sa riconoscere un errore nelle viste generate automaticamente, e non sa comunicare con i fornitori che producono le parti fisiche.
+Coniuga competenze di modellistica tradizionale con strumenti CAD avanzati per creare prototipi industriali precisi nei settori manifatturiero, automobilistico e della moda.
 
-Dove lavora: studi di ingegneria, uffici tecnici di aziende manifatturiere, studi di design industriale, aziende di automotive, elettronica di consumo, medicale.
+Dove lavora: aziende manifatturiere con produzione in serie, centri di prototipazione rapida, reparti R&D industriali, studi di progettazione meccanica.
 
-Competenze che inizia a costruire da qui: proiezioni ortogonali · quotatura UNI/ISO · lettura di tavole tecniche · software CAD 2D e 3D
+Competenze chiave che inizia a costruire da qui: CAD 2D/3D · prototipazione industriale · modellistica · Industria 4.0 · progettazione tecnica
 
-*"Il disegno tecnico è il contratto tra chi progetta e chi costruisce. Se il contratto è ambiguo, il risultato non funziona."*
+*"Il prototipo racconta più di mille riunioni. Finché non lo tocchi con mano, non sai davvero come funziona."*
+
+---
 
 ---
 

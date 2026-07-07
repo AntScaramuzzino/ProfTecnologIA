@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La mela che hai comprato in dicembre è di agosto"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 52 sec.*
 > *(Script completo: MC-ALI-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -208,19 +208,20 @@ La pianta idroponica crescerà più velocemente e con foglie più grandi e verde
 
 ---
 
-### 👨‍🌾 Chi lavora con questa competenza nel 2030?
 
-**Agronomo di precisione**
+### 🦠 Chi lavora con questa competenza nel 2030?
 
-Il lavoro dell'agronomo oggi non si fa solo con le mani in terra. Si fa con droni che mappano le condizioni del suolo a 2 metri di risoluzione, con sensori IoT che misurano umidità e temperatura in tempo reale, con software di intelligenza artificiale che analizzano immagini satellitari per prevedere lo stress idrico delle colture prima ancora che sia visibile a occhio nudo.
+**Microbiome Specialist**
 
-L'**agronomo di precisione** usa questi dati per ottimizzare ogni decisione: quando irrigare, dove applicare il fertilizzante (non su tutto il campo, ma solo dove serve), quando raccogliere. Il risultato è meno acqua usata, meno fertilizzante disperso, rese più alte. In Italia molte aziende agricole del Nord stanno già adottando questi sistemi.
+Studia il ruolo dei microorganismi intestinali nel benessere, nella nutrizione personalizzata e nella prevenzione delle malattie, aprendo nuovi orizzonti in medicina e food tech.
 
-Dove lavora: aziende agricole, cooperative di produttori, start-up agritech, enti pubblici (regioni, agenzie per l'ambiente).
+Dove lavora: laboratori di ricerca universitari, startup biotech della salute, centri di nutrizione personalizzata, industria farmaceutica e nutraceutica.
 
-Competenze chiave che inizia a costruire da qui: biologia vegetale · chimica del suolo · analisi di dati · drone piloting · programmazione di sensori
+Competenze chiave che inizia a costruire da qui: microbiologia · nutrizione personalizzata · biotecnologia · biologia molecolare · analisi di laboratorio
 
-*"Non posso controllare il clima, ma posso conoscerlo abbastanza bene da anticiparlo."*
+*"Siamo fatti di batteri tanto quanto di cellule. Chi capisce il microbioma capisce la salute."*
+
+---
 
 ---
 

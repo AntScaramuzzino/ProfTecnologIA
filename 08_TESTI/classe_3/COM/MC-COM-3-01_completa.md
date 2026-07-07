@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "200 millisecondi. Roma-Tokyo."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 38 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 18 sec.*
 > *(Script completo: MC-COM-3-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -225,19 +225,20 @@ Ogni punto di misura, riportato sulla pianta dell'edificio, contribuisce a costr
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Network Infrastructure Designer**
+### 📖 Chi lavora con questa competenza nel 2030?
 
-In un mondo in cui ogni edificio, ogni veicolo, ogni dispositivo è connesso, qualcuno deve progettare reti che funzionino in modo affidabile, sicuro ed efficiente. Il Network Infrastructure Designer non si limita a installare router: analizza le esigenze di traffico, sceglie le tecnologie, progetta la topologia della rete, verifica la sicurezza e documenta l'infrastruttura.
+**Storyteller**
 
-Con l'arrivo del 5G e dell'IoT (Internet of Things — oggetti connessi a Internet), la complessità delle reti aumenta enormemente: un'abitazione moderna ha decine di dispositivi connessi; una fabbrica 4.0 ne ha migliaia; una città intelligente ne ha milioni.
+Racconta storie coinvolgenti per aziende, prodotti e organizzazioni, suscitando interesse ed emozione nell'utente attraverso narrazioni che rafforzano l'identità e la missione del brand.
 
-Dove lavora: aziende di telecomunicazioni, system integrator, pubblica amministrazione (smart city), ospedali (reti critiche), aziende manifatturiere con impianti 4.0.
+Dove lavora: agenzie di comunicazione e brand storytelling, reti televisive e web, uffici stampa aziendali, testate giornalistiche digitali.
 
-Competenze chiave che inizia a costruire da qui: protocolli di rete · sicurezza informatica · propagazione radio · analisi del traffico · topologia delle reti
+Competenze chiave che inizia a costruire da qui: narrazione d'impresa · scrittura creativa · digital content · branding · storytelling multimediale
 
-*"Non installo cavi: progetto il sistema nervoso di un edificio, di una città, di un'azienda."*
+*"I dati convincono la mente. Le storie conquistano il cuore. Ho bisogno di entrambi."*
+
+---
 
 ---
 

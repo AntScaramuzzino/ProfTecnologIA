@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "3.000 robot. Zero senso dell'orientamento."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 35 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 21 sec.*
 > *(Script completo: MC-COM-3-04_hook-script.md)*
 
 **Domanda di avvio:**
@@ -243,19 +243,20 @@ Questo esempio mostra che progettare un sistema domotico reale richiede partire 
 
 ---
 
-### 🧑‍💻 Chi lavora con questa competenza nel 2030?
 
-**Systems Integration Engineer — Industria 4.0**
+### 🚆 Chi lavora con questa competenza nel 2030?
 
-Non è il programmatore che scrive codice. Non è l'elettricista che stende i cavi. È la persona che fa funzionare insieme sistemi diversi — robot, sensori, software, protocolli — in modo coerente e affidabile.
+**Mobility as a Service (MaaS) Designer**
 
-Lavora su: come connettere una macchina CNC del 1995 (che non ha protocollo IoT) all'infrastruttura digitale di una fabbrica moderna. Come fare parlare un robot Fanuc con un sistema MES (Manufacturing Execution System) SAP. Come gestire la sicurezza informatica in una fabbrica in cui 2.000 dispositivi sono connessi a internet.
+Progetta sistemi integrati di mobilità urbana che combinano trasporto pubblico, sharing e micro-mobilità in piattaforme digitali, riducendo l'uso dell'auto privata.
 
-Dove lavora: integratori di sistemi industriali, reparti IT/OT (Operational Technology) di grandi manifatturieri, startup di automazione.
+Dove lavora: operatori di trasporto multimodale, città metropolitane, ministeri dei trasporti, startup di app di mobilità integrata.
 
-Competenze chiave che inizia a costruire da qui: comprensione dei sistemi di controllo · protocolli di comunicazione industriale (OPC-UA, MQTT) · sicurezza informatica OT · project management tecnico.
+Competenze chiave che inizia a costruire da qui: urbanistica dei trasporti · UX design · gestione mobilità · app design · intermodalità
 
-*"La mia professione non esiste nei libri di testo. Ho imparato che ogni sistema è diverso — e che la vera competenza è saper capire velocemente qualcosa che non hai mai visto prima."*
+*"Un'unica app per muoversi ovunque: bici, bus, treno, monopattino. Questo è il trasporto del futuro."*
+
+---
 
 ---
 

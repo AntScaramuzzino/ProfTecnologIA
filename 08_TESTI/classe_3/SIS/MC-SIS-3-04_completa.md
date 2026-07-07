@@ -130,27 +130,20 @@ Un percorso professionale non si pianifica una volta per sempre: si costruisce i
 
 ---
 
-### Mappa "da MC a professione"
 
-Ogni MC di questo libro sviluppa competenze reali che si traducono in aree professionali. Questa mappa non è esaustiva — le competenze sono combinabili in modi infiniti:
+### 🏭 Chi lavora con questa competenza nel 2030?
 
-| MC | Competenza principale sviluppata | Aree professionali correlate |
-|----|----------------------------------|------------------------------|
-| MC-MAT-1-01/02/03 | Analisi ciclo di vita materiali, scelta materiali | Materials scientist, supply chain sustainability analyst, progettista prodotto |
-| MC-DIS-1/2/3 | Disegno tecnico, progettazione 3D | Architetto, ingegnere meccanico, industrial designer, urbanista |
-| MC-DIG-1-01/02 | Navigazione critica, valutazione fonti | Giornalista, fact-checker, analista media, bibliotecario digitale |
-| MC-DIG-2-01 | Coding, pensiero computazionale | Sviluppatore software, data analyst, AI engineer |
-| MC-DIG-2-02 | Privacy, identità digitale | DPO (Data Protection Officer), cybersecurity analyst, consulente GDPR |
-| MC-DIG-3-01 | Robotica, automazione | Tecnico robotica, ingegnere automazione, ricercatore AI |
-| MC-DIG-3-02 | Etica IA, analisi applicazioni AI | AI ethicist, product manager IA, policy analyst |
-| MC-DIG-3-03 | Dati IoT, visualizzazione, privacy | Data analyst, IoT architect, giornalismo dati |
-| MC-DIG-3-04 | Accessibilità digitale | UX accessibility specialist, UX designer, consulente accessibilità |
-| MC-ENE-3-01/02/03 | Energia, macchine, transizione | Ingegnere energetico, tecnico fotovoltaico, energy manager |
-| MC-COM-3-01/02 | Reti, contenuti digitali | Network engineer, content creator, podcast producer |
-| MC-SIS-3-01 | Sistemi economici, catena del valore | Supply chain manager, analista economico |
-| MC-SIS-3-02 | Economia globale, sostenibilità | ESG analyst, consulente sostenibilità |
-| MC-SIS-3-03 | Imprenditorialità, business model | Innovation manager, imprenditore, venture developer |
-| MC-SIS-3-04 | Orientamento, competenze trasversali | Career coach, HR specialist, formatore |
+**Digital Twin Engineer**
+
+Crea gemelli digitali di impianti automatizzati e robot industriali per simularne il comportamento, ottimizzare i processi e testare nuove configurazioni senza fermare la produzione.
+
+Dove lavora: aziende di automazione industriale, system integrator per Industry 4.0/5.0, centri di ricerca applicata, aziende aerospaziali e della difesa.
+
+Competenze chiave che inizia a costruire da qui: IoT industriale · modellazione 3D · simulazione Industry 5.0 · robotica · ingegneria dei sistemi
+
+*"Prima di costruire, simulo. Prima di fermarmi, prevedo. Il gemello digitale è il mio laboratorio permanente."*
+
+---
 
 ---
 

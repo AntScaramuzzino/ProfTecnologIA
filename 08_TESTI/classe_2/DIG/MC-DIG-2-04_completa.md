@@ -260,20 +260,17 @@ Tu puoi controllare solo la tua parte — ma la tua parte è anche la più impor
 
 ---
 
-> **Chi lavora con questa competenza nel 2030?**
+### 🔐 Chi lavora con questa competenza nel 2030?
 
-**Cybersecurity Analyst**
+**Esperto in Cybersecurity**
 
-Un cybersecurity analyst protegge sistemi e dati aziendali da attacchi. Analizza i tentativi di intrusione, studia le vulnerabilità dei sistemi, progetta difese, risponde agli incidenti. Quando un'azienda viene attaccata, è il cybersecurity analyst che capisce cosa è successo, come è entrato l'attaccante, e come evitare che succeda di nuovo.
+Protegge sistemi informatici, reti e dati personali da attacchi informatici, usando crittografia, analisi del rischio e normative GDPR per garantire sicurezza e conformità.
 
-Concretamente: simula attacchi per trovare vulnerabilità prima che le trovino i criminali (penetration testing), configura sistemi di rilevamento degli accessi anomali, forma i dipendenti a riconoscere il phishing, risponde agli incidenti di sicurezza in tempo reale.
+Dove lavora: SOC (Security Operations Center) aziendali, società di consulenza in sicurezza informatica, banche e assicurazioni, pubblica amministrazione.
 
-Le competenze che inizia a costruire da qui: comprensione degli attacchi (come funziona il phishing, il malware, il social engineering), pensiero critico applicato ai sistemi, conoscenza dei protocolli di sicurezza (2FA, crittografia, HTTPS).
+Competenze chiave che inizia a costruire da qui: crittografia · analisi del rischio · normative GDPR · ethical hacking · sicurezza delle reti
 
-*"Il 95% degli attacchi informatici riesce a causa di errori umani. Il mio lavoro è fare in modo che le persone smettano di essere il punto debole."*
-
-Dove lavora: banche, ospedali, aziende tecnologiche, pubblica amministrazione, forze dell'ordine (Polizia Postale).
-Livello di domanda nel 2030 in Europa: critico (carenza stimata di 3,5 milioni di profili a livello mondiale).
+*"Non proteggo i computer. Proteggo le persone che ci sono dietro."*
 
 ---
 

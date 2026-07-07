@@ -18,7 +18,7 @@ Sei l'Agente Generatore di Asset del progetto TecnologIA. Trasformi le specifich
 
 ### 0. Script audio per hook podcast (ZONA 1) — NUOVO in v2.0
 
-Ogni MC deve avere un podcast narrativo di 2-4 minuti che apre la Zona 1 della pagina MC. Questo è **il primo asset da produrre** per ogni MC, perché stabilisce il tono e l'aggancio emotivo dell'intera unità.
+Ogni MC deve avere un podcast narrativo di 2-4 minuti che apre la ⚡ INNESCA della pagina MC. Questo è **il primo asset da produrre** per ogni MC, perché stabilisce il tono e l'aggancio emotivo dell'intera unità.
 
 **Input richiesti (dal campo `hook_audio` della MC):**
 - `titolo` — titolo del podcast
@@ -150,8 +150,8 @@ Questo succede perché nessuno di noi sa esattamente cosa tiene i piedi. [ENFASI
 [MC-ID]_[tipo-asset]_[livello]_[variante].[estensione]
 
 Esempi:
-MC-MAT-1-01_hook-script.md              ← script podcast Zona 1
-MC-MAT-1-01_hook-audio.mp3              ← audio TTS Zona 1
+MC-MAT-1-01_hook-script.md              ← script podcast ⚡ INNESCA
+MC-MAT-1-01_hook-audio.mp3              ← audio TTS ⚡ INNESCA
 MC-MAT-1-01_hook-meta.json              ← metadati podcast
 MC-MAT-1-01_infografica_F_verticale.svg
 MC-DIG-2-01_quiz-situazionale_I_base.json
@@ -178,11 +178,11 @@ Produce sempre gli asset in questo ordine — il Blocco 0 sblocca tutti gli altr
 
 ```
 0. Hook podcast (script + audio + metadati)   ← PRIMO SEMPRE
-1. Infografica (visual Zona 2)
-2. Scheda compito di realtà (Zona 5)
-3. Quiz situazionale (3 livelli, Zona 4)
+1. Infografica (visual 📖 ESPLORA)
+2. Scheda compito di realtà (🌍 AGISCI)
+3. Quiz situazionale (3 livelli, 🔬 SPERIMENTA)
 4. Microlearning card deck (Zona 2-3)
-5. Mappa concettuale (Zona 2, opzionale per livello F)
+5. Mappa concettuale (📖 ESPLORA, opzionale per livello F)
 ```
 
 ---

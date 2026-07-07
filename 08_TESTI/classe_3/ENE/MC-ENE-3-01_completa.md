@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Datemi un punto d'appoggio e solleverò il mondo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 35 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 9 sec.*
 > *(Script completo: MC-ENE-3-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -253,19 +253,20 @@ La costruzione della Grande Piramide di Giza è uno dei più grandi enigmi ingeg
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere di produzione e automazione**
+### 🌍 Chi lavora con questa competenza nel 2030?
 
-I principi delle macchine semplici sono la base concettuale di ogni sistema meccanico produttivo. Un ingegnere di produzione progetta le linee di assemblaggio di qualsiasi oggetto — dai telefoni agli aerei — ottimizzando la combinazione di macchine semplici e composte per massimizzare rendimento e velocità.
+**Energy Transition Specialist**
 
-Nel 2030, questo ruolo si incrocia sempre di più con l'automazione: i robot industriali sono macchine composte controllate da software, e capire la meccanica di base è indispensabile per progettarli, mantenerli e migliorarli.
+Guida organizzazioni e territori nella transizione da fonti fossili a energie rinnovabili, combinando politiche energetiche, project management e competenze di sostenibilità ambientale.
 
-Dove lavora: industrie manifatturiere, centri di ricerca, aziende di automazione e robotica.
+Dove lavora: agenzie per la transizione energetica, utility e gestori di rete, ministeri dell'ambiente e della transizione ecologica, società di consulenza strategica.
 
-Competenze chiave che inizia a costruire da qui: meccanica applicata · fisica del moto · analisi dei sistemi · CAD/CAM
+Competenze chiave che inizia a costruire da qui: politiche energetiche · project management · sostenibilità ambientale · energie rinnovabili · normativa EU
 
-*"Ogni robot che vedi in una fabbrica è una combinazione di macchine semplici che conosci già. Il motore è nuovo; il principio ha 2.500 anni."*
+*"La transizione energetica non è un problema tecnico. È un problema di governance, economia e consenso sociale."*
+
+---
 
 ---
 

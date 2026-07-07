@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Un materiale spesso un atomo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 10 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 23 sec.*
 > *(Script completo: MC-MAT-1-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -26,15 +26,20 @@ I materiali cambiano il mondo. Non solo quelli che già conosci — anche quelli
 
 ## 📖 ESPLORA
 
-### I materiali del futuro non vengono dallo spazio. Vengono dal laboratorio.
 
-Nei secoli passati, ogni nuovo materiale che l'essere umano imparava a usare cambiava la storia. La pietra levigata permise le prime città. I metalli permisero le armi, gli aratri, le navi. L'acciaio permise i ponti sospesi e i grattacieli. La plastica permise il confezionamento di massa, la medicina monouso, l'elettronica consumer.
+### ⛓️ Chi lavora con questa competenza nel 2030?
 
-Ogni volta, il cambiamento non era solo tecnico: era sociale, economico, politico. I materiali non sono mai neutrali — cambiano cosa possiamo fare, come viviamo, chi ha potere e chi no.
+**Waste Blockchain Auditor**
 
-Oggi ci troviamo in un altro di questi momenti. I laboratori di ricerca stanno sviluppando materiali con proprietà che sembrano impossibili — trasparenti e resistenti come acciaio, biodegradabili come foglie, conduttivi come rame ma leggerissimi come carta. Materiali che non esistevano cinquant'anni fa e che nei prossimi decenni cambieranno come costruiamo case, come vestiamo, come immagazziniamo energia, come curiamo le malattie.
+Usa la tecnologia blockchain per tracciare i flussi di rifiuti lungo tutta la catena di smaltimento, garantendo la conformità alle normative ambientali e prevenendo smaltimenti illeciti.
 
-Per valutare questi materiali non basta sapere cosa fanno — bisogna anche sapere quanto costano, come si producono, e soprattutto cosa succede quando finiscono. La sostenibilità non è un'aggiunta facoltativa alla valutazione di un materiale: è un criterio tecnico come la resistenza o la leggerezza.
+Dove lavora: consorzi di recupero materiali, aziende di waste management, enti di verifica ambientale, startup greentech di tracciabilità.
+
+Competenze chiave che inizia a costruire da qui: blockchain · normativa ambientale · auditing · tracciabilità rifiuti · smart contract
+
+*"La tracciabilità non è burocrazia. È la prova documentata che il rifiuto è diventato risorsa."*
+
+---
 
 ---
 

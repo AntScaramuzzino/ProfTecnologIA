@@ -38,7 +38,7 @@ La voce del libro non è quella dell'enciclopedia, né del professore che parla 
 **Dopo:**
 > Guarda il banco, una matita e una porta: sono tutti di legno. Si comportano allo stesso modo? Da cosa dipende la differenza?
 
-**Regola:** ogni MC ha almeno un verbo imperativo attivo nella Zona 2. Non iniziare mai un'unità con una definizione.
+**Regola:** ogni MC ha almeno un verbo imperativo attivo nella 📖 ESPLORA. Non iniziare mai un'unità con una definizione.
 
 ---
 
@@ -54,7 +54,7 @@ La voce del libro non è quella dell'enciclopedia, né del professore che parla 
 **Dopo:**
 > La plastica è leggera, economica e resistente. Ma cosa succede quando diventa rifiuto? In quali casi è utile? In quali casi è un problema?
 
-**Regola:** ogni MC ha almeno una domanda sulle conseguenze nella Zona 5. Struttura ricorrente: *Quale problema risolve? / Quale problema può creare? / Chi ne trae vantaggio? / Quali rischi produce?*
+**Regola:** ogni MC ha almeno una domanda sulle conseguenze nella 🌍 AGISCI. Struttura ricorrente: *Quale problema risolve? / Quale problema può creare? / Chi ne trae vantaggio? / Quali rischi produce?*
 
 ---
 
@@ -120,7 +120,7 @@ La voce del libro non è quella dell'enciclopedia, né del professore che parla 
 
 **Coerenza con IN2025:** sostenibilità come dimensione trasversale di tutta l'educazione tecnologica (SDG, L. 92/2019).
 
-**Formula ricorrente nella Zona 5:**
+**Formula ricorrente nella 🌍 AGISCI:**
 > Da dove viene? Quanto dura? Si può riparare? Si può riciclare? Che impatto ha sulle persone e sull'ambiente?
 
 **Regola:** non usare mai "sostenibile" senza spiegare cosa significa in quel contesto specifico. "Un materiale è sostenibile quando il suo uso produce pochi danni all'ambiente e può essere gestito nel tempo senza sprecare risorse." Poi: *"In pratica: da dove viene? Quanto dura? Si può riparare?"*
@@ -172,7 +172,7 @@ La voce del libro non è quella dell'enciclopedia, né del professore che parla 
 > Il primo prototipo raramente funziona perfettamente. Osserva l'errore, capisci da cosa dipende e modifica il progetto.
 > Che cosa non ha funzionato? Quale ipotesi puoi cambiare? Che prova puoi fare per verificarla?
 
-**Regola:** ogni compito di realtà (Zona 5) ha una domanda di revisione post-consegna ("Se potessi rifarlo, cosa cambieresti?"). Le rubriche di valutazione includono sempre un criterio "revisione e miglioramento".
+**Regola:** ogni compito di realtà (🌍 AGISCI) ha una domanda di revisione post-consegna ("Se potessi rifarlo, cosa cambieresti?"). Le rubriche di valutazione includono sempre un criterio "revisione e miglioramento".
 
 ---
 
@@ -190,7 +190,7 @@ La voce del libro non è quella dell'enciclopedia, né del professore che parla 
 - `●● intermedio` — consegna aperta con vincoli definiti
 - `●●● avanzato` — progettazione autonoma, scenario aperto, scelta dei materiali
 
-**Regola:** le sintesi di fine MC (Zona 5) usano sempre il carattere ad alta leggibilità e la struttura schematica (bullet + grassetto), non paragrafi densi. Mai un blocco di testo senza interruzioni visive nelle sintesi.
+**Regola:** le sintesi di fine MC (🌍 AGISCI) usano sempre il carattere ad alta leggibilità e la struttura schematica (bullet + grassetto), non paragrafi densi. Mai un blocco di testo senza interruzioni visive nelle sintesi.
 
 ---
 
@@ -218,7 +218,7 @@ Le forbici si passano con il manico verso l'altra persona.
 
 **Coerenza con IN2025:** autovalutazione, rubriche, consapevolezza del percorso.
 
-**Formula di rubrica (Zona 5):**
+**Formula di rubrica (🌍 AGISCI):**
 > Il tuo lavoro sarà valutato su quattro aspetti: **funzionalità** (funziona?), **scelta dei materiali** (perché hai scelto questi?), **chiarezza del disegno** (si capisce?), **motivazione delle decisioni** (sai spiegare perché?).
 
 **Regola:** ogni compito di realtà ha 3-5 criteri di valutazione visibili, con un indicatore per livello (L/P/A oppure base/intermedio/avanzato). Mai criteri vaghi come "qualità del lavoro".
@@ -231,11 +231,11 @@ Le forbici si passano con il manico verso l'altra persona.
 
 | Zona | Verbi prioritari |
 |---|---|
-| Zona 1 (hook) | ascolta, immagina, pensa, hai mai notato |
-| Zona 2 (concetto) | osserva, identifica, confronta, collega, distingui |
-| Zona 3 (esempio) | guarda, analizza, nota, spiega, come mai |
-| Zona 4 (laboratorio) | misura, costruisci, progetta, verifica, documenta, modifica |
-| Zona 5 (compito) | progetta, realizza, valuta, presenta, motiva, migliora |
+| ⚡ INNESCA (hook) | ascolta, immagina, pensa, hai mai notato |
+| 📖 ESPLORA (concetto) | osserva, identifica, confronta, collega, distingui |
+| 🔍 OSSERVA (esempio) | guarda, analizza, nota, spiega, come mai |
+| 🔬 SPERIMENTA (laboratorio) | misura, costruisci, progetta, verifica, documenta, modifica |
+| 🌍 AGISCI (compito) | progetta, realizza, valuta, presenta, motiva, migliora |
 
 ### 3.2 Formule consigliate
 
@@ -256,7 +256,7 @@ Le forbici si passano con il manico verso l'altra persona.
 La prima persona plurale ("seguiamo", "scopriamo", "osserviamo insieme") abbassa la barriera di accesso all'inizio di un'area tematica nuova, mettendo il narratore accanto allo studente invece che di fronte. È efficace — ma solo se usata con tre vincoli precisi.
 
 **Vincolo 1 — Frequenza massima: 2 occorrenze per area.**
-Il "seguiamo/scopriamo" compare al massimo nella frase di apertura dell'area e, se serve, nella frase di chiusura dell'area. Mai all'interno di una MC singola, mai nel testo espositivo della Zona 2, mai nelle consegne.
+Il "seguiamo/scopriamo" compare al massimo nella frase di apertura dell'area e, se serve, nella frase di chiusura dell'area. Mai all'interno di una MC singola, mai nel testo espositivo della 📖 ESPLORA, mai nelle consegne.
 
 **Vincolo 2 — Verbi consentiti.**
 Solo verbi che implicano movimento o scoperta condivisa:
@@ -268,10 +268,10 @@ Solo verbi che implicano movimento o scoperta condivisa:
 I verbi vietati hanno il sapore del maestro che guida la classe. I verbi consentiti implicano parità di scoperta.
 
 **Vincolo 3 — Mai in sintesi DSA, consegne e rubriche.**
-Nelle sintesi di fine MC, nelle consegne di Zona 4 e 5 e nelle rubriche di valutazione si usa sempre la seconda persona singolare ("tu", "il tuo") o la forma impersonale. Il "seguiamo" funziona solo nell'apertura narrativa di area — dove lo studente non deve ancora lavorare in autonomia.
+Nelle sintesi di fine MC, nelle consegne di 🔬 SPERIMENTA e 5 e nelle rubriche di valutazione si usa sempre la seconda persona singolare ("tu", "il tuo") o la forma impersonale. Il "seguiamo" funziona solo nell'apertura narrativa di area — dove lo studente non deve ancora lavorare in autonomia.
 
-**Perché il "ci" collettivo è preferibile nella Zona 2.**
-"L'energia elettrica ci accompagna in tutti i momenti della nostra giornata" ottiene lo stesso effetto di appartenenza del "seguiamo" senza il rischio del paternalismo. Il "ci" include lo studente nel fenomeno senza presupporre che si muova in gruppo con il narratore. Usarlo nella Zona 2 in sostituzione della prima persona plurale.
+**Perché il "ci" collettivo è preferibile nella 📖 ESPLORA.**
+"L'energia elettrica ci accompagna in tutti i momenti della nostra giornata" ottiene lo stesso effetto di appartenenza del "seguiamo" senza il rischio del paternalismo. Il "ci" include lo studente nel fenomeno senza presupporre che si muova in gruppo con il narratore. Usarlo nella 📖 ESPLORA in sostituzione della prima persona plurale.
 
 **Caso limite: studenti BES e assenti.**
 Il "noi" presuppone un gruppo che si muove insieme. Uno studente che riprende il libro a casa da solo, o che ha mancato le lezioni precedenti, non è in quel "noi". Il "tu" lo raggiunge individualmente; il "seguiamo" rischia di farlo sentire escluso da un viaggio che gli altri hanno già fatto. Per questo il "seguiamo" è confinato all'apertura di area — dove si può sempre leggere/ascoltare autonomamente — e mai nelle attività operative.
@@ -368,18 +368,18 @@ Ogni MC segue questa sequenza obbligatoria. La struttura è visibile fisicamente
 
 | Principio IN2025 | Impatto sul linguaggio del libro | Zona MC |
 |---|---|---|
-| Approccio STEM integrato | Ogni MC ha collegamento con almeno una disciplina STEM diversa | Zona 3 (UDA collegata) |
-| Didattica laboratoriale | La Zona 4 è fisicamente prima del testo in alcune MC (flipped) | Zona 4 |
+| Approccio STEM integrato | Ogni MC ha collegamento con almeno una disciplina STEM diversa | 🔍 OSSERVA (UDA collegata) |
+| Didattica laboratoriale | La 🔬 SPERIMENTA è fisicamente prima del testo in alcune MC (flipped) | 🔬 SPERIMENTA |
 | Centralità della persona | Seconda persona singolare nelle consegne, "ci" collettivo nel testo | Tutte |
-| Prevedere conseguenze | Box "rischi e conseguenze" + domande nella Zona 5 | Zona 5 |
+| Prevedere conseguenze | Box "rischi e conseguenze" + domande nella 🌍 AGISCI | 🌍 AGISCI |
 | Competenze digitali vs. informatiche | Distinguere esplicitamente nel testo DIG: "usare bene un'app è competenza digitale; capire come raccoglie dati è competenza informatica" | DIG |
 | Uso critico dell'IA | Lessico obbligatorio (bias, allucinazione, verifica) + mai descrizione celebrativa | DIG livello A |
-| Educazione civica embedded | SDG badge + box "Tecnologia e società" in ogni MC | Zona 5 |
+| Educazione civica embedded | SDG badge + box "Tecnologia e società" in ogni MC | 🌍 AGISCI |
 | Inclusione UDL | 3 livelli visibili, consegne multimodali, sintesi DSA-friendly | Zona 4-5 |
-| Valutazione autentica | Rubrica esplicita con criteri visibili prima del compito | Zona 5 |
-| Errore come risorsa | Domanda di revisione obbligatoria nella metacognizione | Zona 5 |
-| Sicurezza | Box sicurezza in tutte le MC con attività fisiche | Zona 4 |
-| Sostenibilità trasversale | SDG badge + domande Da dove viene? / Dove finisce? in ogni MC | Zona 5 |
+| Valutazione autentica | Rubrica esplicita con criteri visibili prima del compito | 🌍 AGISCI |
+| Errore come risorsa | Domanda di revisione obbligatoria nella metacognizione | 🌍 AGISCI |
+| Sicurezza | Box sicurezza in tutte le MC con attività fisiche | 🔬 SPERIMENTA |
+| Sostenibilità trasversale | SDG badge + domande Da dove viene? / Dove finisce? in ogni MC | 🌍 AGISCI |
 
 ---
 
@@ -391,18 +391,18 @@ Usa questa checklist prima di approvare qualsiasi testo per il libro.
 - [ ] Il testo usa la seconda persona nelle consegne
 - [ ] Il testo usa la terza persona con "ci" collettivo nell'espositivo
 - [ ] Se compare la prima persona plurale ("seguiamo", "scopriamo"), è solo nell'apertura di area (max 2 volte) e usa solo i verbi consentiti (§3.2a)
-- [ ] La prima persona plurale è assente da Zona 2, Zona 4, Zona 5, sintesi DSA e rubriche
+- [ ] La prima persona plurale è assente da 📖 ESPLORA, 🔬 SPERIMENTA, 🌍 AGISCI, sintesi DSA e rubriche
 - [ ] Non ci sono frasi più lunghe di 30 parole nel testo espositivo livello F
 - [ ] Ogni termine tecnico nuovo è introdotto con "cioè" o coppia esempio/controesempio
 - [ ] Non ci sono parole o formule nella lista "da limitare" (§3.3)
 - [ ] Il titolo della MC è una domanda o una frase con verbo attivo
 
 ### ✅ Struttura e contenuto
-- [ ] La Zona 2 apre con il presente familiare o un dato storico — non con una definizione
+- [ ] La 📖 ESPLORA apre con il presente familiare o un dato storico — non con una definizione
 - [ ] C'è almeno un dato quantitativo verificabile (non "molti", "numerosi", ecc.)
 - [ ] Il visual è attivato esplicitamente nel testo ("guarda il punto X...")
-- [ ] La Zona 4 ha i 3 livelli (base / intermedio / avanzato) visibili
-- [ ] La Zona 5 ha il titolo in forma di headline, non di etichetta tematica
+- [ ] La 🔬 SPERIMENTA ha i 3 livelli (base / intermedio / avanzato) visibili
+- [ ] La 🌍 AGISCI ha il titolo in forma di headline, non di etichetta tematica
 
 ### ✅ Allineamento didattico
 - [ ] C'è almeno una domanda sulle conseguenze (rischi, limiti, chi è svantaggiato)
@@ -429,7 +429,7 @@ Usa questa checklist prima di approvare qualsiasi testo per il libro.
 Quando generi testo espositivo per una MC, usa questo prompt interno:
 
 ```
-Scrivi il testo espositivo (Zona 2) per la MC [MC-ID].
+Scrivi il testo espositivo (📖 ESPLORA) per la MC [MC-ID].
 
 VINCOLI OBBLIGATORI:
 - Apri con una frase che parte dal presente familiare dello studente o da un fatto storico. Non iniziare mai con una definizione.
@@ -438,7 +438,7 @@ VINCOLI OBBLIGATORI:
 - Includi almeno un dato quantitativo verificabile.
 - Usa la terza persona nel corpo. Usa il "ci" collettivo almeno una volta.
 - Attiva il visual con "Guarda il punto X..." o "Osserva nello schema...".
-- Chiudi con una domanda aperta (non retorica) che prepara la Zona 4.
+- Chiudi con una domanda aperta (non retorica) che prepara la 🔬 SPERIMENTA.
 
 VIETATO:
 - Iniziare con "Si definisce..." / "Esistono numerosi..." / "È importante sapere..."

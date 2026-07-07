@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Una banana ha percorso 9.000 chilometri per finire nel tuo zaino."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 42 sec.*
 
 **Domanda di avvio:**
 Hai mai tenuto in mano una banana e pensato da dove viene?
@@ -248,17 +248,20 @@ La filiera della pasta è lunga, complessa, e distribuisce il valore in modo mol
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Supply Chain Manager agroalimentare**
+### 🧬 Chi lavora con questa competenza nel 2030?
 
-La gestione della filiera alimentare è una delle professioni più richieste nel settore food. Un Supply Chain Manager agroalimentare coordina tutti i passaggi dalla materia prima al punto di vendita: contratta con i fornitori, gestisce i magazzini, ottimizza i trasporti, monitora la qualità e la tracciabilità in ogni punto della catena.
+**Synthetic Food Developer**
 
-Oggi, questa figura usa software gestionali avanzati (ERP, sistemi di tracciabilità blockchain) per sapere in tempo reale dove si trova ogni lotto di prodotto, a quale temperatura è stato mantenuto, chi l'ha gestito.
+Riduce l'impatto ambientale della produzione alimentare sviluppando proteine alternative, carne coltivata e ingredienti biotech che richiedono meno terra, acqua ed energia rispetto all'allevamento.
 
-Competenze chiave che inizia a costruire da qui: logistica · gestione dei dati di filiera · conoscenza dei sistemi di certificazione · economia internazionale
+Dove lavora: startup food tech, centri R&D di grandi aziende alimentari, laboratori di biochimica applicata, acceleratori agri-food.
 
-*"Il mio lavoro è fare in modo che il cibo giusto arrivi nel posto giusto al momento giusto — fresco, sicuro e al costo più basso possibile."*
+Competenze chiave che inizia a costruire da qui: biotecnologie alimentari · biochimica · sostenibilità · life cycle assessment · food tech
+
+*"Non sto sostituendo il cibo. Sto reinventando come lo produciamo."*
+
+---
 
 ---
 

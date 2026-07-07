@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Hai aperto una confezione con tre strati di plastica per trovare una caramella."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 37 sec.*
 
 **Domanda di avvio:**
 Quante volte hai aperto un prodotto e l'imballaggio era più grande del cibo che conteneva?
@@ -188,17 +188,20 @@ Il packaging è coperto di simboli e loghi. Alcuni sono obbligatori per legge, a
 
 ---
 
-### Packaging intelligente: il futuro è già in commercio
 
-Il **packaging intelligente** (o *smart packaging*) usa tecnologie integrate nell'imballaggio per aggiungere funzioni oltre alla protezione e all'informazione.
+### 🔬 Chi lavora con questa competenza nel 2030?
 
-**Indicatori di freschezza:** sensori chimici o biologici inseriti nell'imballaggio che cambiano colore quando il prodotto si deteriora. Già disponibili su alcune confezioni di carne e pesce in Paesi nordici. Ti dicono non solo la data di scadenza scritta, ma lo stato reale del prodotto.
+**Microbiome Specialist**
 
-**Etichette RFID:** chip radio-frequenza microscopici inseriti nell'etichetta che permettono di tracciare ogni singola confezione lungo tutta la filiera, in tempo reale, senza contatto visivo. Già usati dalla GDO per la gestione delle scorte.
+Analizza i microorganismi presenti negli alimenti e nell'intestino per garantire la sicurezza alimentare, sviluppare probiotici mirati e prevenire contaminazioni nella filiera produttiva.
 
-**QR code dinamici:** codici QR che rimandano a pagine web aggiornate con informazioni sulla filiera, l'origine degli ingredienti, le condizioni di produzione. Permettono una trasparenza molto maggiore dell'etichetta stampata.
+Dove lavora: centri di ricerca sul microbioma, startup di nutrizione personalizzata, ospedali con reparti di gastroenterologia avanzata, aziende di testing del microbiota.
 
-**Imballaggi antimicrobici:** film plastici o rivestimenti che rilasciano lentamente sostanze antimicrobiche naturali (come il nitruro d'argento o estratti di piante) per inibire la crescita batterica sulla superficie dell'alimento.
+Competenze chiave che inizia a costruire da qui: microbiologia alimentare · HACCP · analisi di laboratorio · biologia molecolare · sicurezza alimentare
+
+*"Ogni intestino è un ecosistema unico. Il mio lavoro è imparare a leggerlo."*
+
+---
 
 ---
 

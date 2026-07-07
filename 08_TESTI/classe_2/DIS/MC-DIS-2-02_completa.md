@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il manuale che non parla"**
-> *Ascolta prima di leggere. Durata: 2 min 18 sec.*
+> *Ascolta prima di leggere. Durata: 48 sec.*
 > *(Hook creato per questa MC — script disponibile in MC-DIS-2-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -189,19 +189,20 @@ Guardare la vista isometrica di Tinkercad e sapere disegnare a mano l'assonometr
 
 ---
 
-### Chi lavora con questa competenza nel 2030?
 
-**Designer di prodotto industriale**
+### 🔧 Chi lavora con questa competenza nel 2030?
 
-Il designer di prodotto lavora all'interfaccia tra l'idea creativa e la produzione tecnica. Usa assonometrie e prospettive per comunicare i propri progetti ai clienti (che non sanno leggere le proiezioni ortogonali), e proiezioni ortogonali per comunicare con i tecnici che producono i pezzi.
+**Product Designer**
 
-Concretamente: disegna a mano schizzi assonometrici veloci durante le fasi di ideazione — questi schizzi diventano modelli CAD 3D, poi tavole tecniche per la produzione. La catena parte sempre dall'assonometria come strumento di pensiero visivo.
+Analizza i bisogni degli utenti e della società per ideare prodotti che ancora non esistono o che risolvono problemi reali, usando design thinking e prototipazione rapida.
 
-Dove lavora: studi di design industriale, aziende di arredamento, automotive, consumer electronics, giocattoli, packaging.
+Dove lavora: studi di industrial design, aziende di arredo e oggettistica di consumo, startup di hardware, reparti prodotto di aziende consumer.
 
-Competenze che inizia a costruire da qui: assonometria manuale · software 3D (Tinkercad, Fusion 360) · rendering · progettazione per la produzione
+Competenze chiave che inizia a costruire da qui: design thinking · prototipazione rapida · ergonomia · user research · design industriale
 
-*"Il bello del design è che l'assonometria è contemporaneamente il modo in cui penso e il modo in cui comunico. Non sono cose separate."*
+*"Ogni oggetto che progettiamo entra nella vita di qualcuno. Questa responsabilità guida ogni mia scelta."*
+
+---
 
 ---
 

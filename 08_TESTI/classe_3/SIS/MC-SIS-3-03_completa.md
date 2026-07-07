@@ -181,17 +181,20 @@ Questo percorso — problema → validazione → MVP → pivot → finanziamento
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Innovation Manager**
+### 🏢 Chi lavora con questa competenza nel 2030?
 
-Guida i processi di innovazione all'interno di imprese esistenti (non solo startup), usando metodi come il Design Thinking, il Lean Startup e il Business Model Canvas per identificare nuove opportunità di business o per trasformare processi esistenti. Non è necessariamente un tecnico: il suo valore è nella metodologia di problem solving applicata al contesto aziendale.
+**Digital and Innovation Manager**
 
-Sempre più richiesto in: grandi aziende manifatturiere che devono reinventarsi con la transizione digitale ed ecologica, Pubbliche Amministrazioni che devono innovare i servizi, organizzazioni non profit che vogliono aumentare l'impatto.
+Guida l'innovazione dei processi produttivi aziendali attraverso tecnologie digitali, standardizzando operazioni e sviluppando nuove soluzioni per la competitività sul mercato.
 
-Competenze chiave che inizia a costruire da qui: Business Model Canvas · metodo Lean Startup · pensiero sistemico · facilitazione di gruppi · tolleranza dell'incertezza
+Dove lavora: aziende manifatturiere in trasformazione 4.0, grandi gruppi con dipartimenti di innovazione, PMI che scalano con il digitale, associazioni di categoria.
 
-*"Il mio lavoro non è avere la risposta giusta. È fare le domande giuste nel momento giusto."*
+Competenze chiave che inizia a costruire da qui: digital transformation · gestione processi produttivi · innovazione aziendale · project management · Industry 4.0
+
+*"Innovare non è adottare tecnologia. È cambiare il modo in cui un'azienda crea valore per i suoi clienti."*
+
+---
 
 ---
 

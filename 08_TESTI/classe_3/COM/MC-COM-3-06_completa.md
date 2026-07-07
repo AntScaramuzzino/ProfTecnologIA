@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "I 200 millisecondi più costosi del mondo"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 25 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 45 sec.*
 
 **Script della Zona 1 (in assenza del file audio separato):**
 
@@ -264,17 +264,20 @@ La domanda che pone questo caso non è "quale versione era vera?" — entrambe c
 
 ---
 
-### 📰 Chi lavora con questa competenza nel 2030?
 
-**Digital Misinformation Analyst (Media Literacy Specialist)**
+### 💬 Chi lavora con questa competenza nel 2030?
 
-Lavora in: testate giornalistiche con unità di fact-checking, organizzazioni internazionali (UNESCO, OCSE, Commissione Europea), piattaforme social media come Trust & Safety specialist, ONG di media literacy.
+**Conversational AI Designer**
 
-Cosa fa concretamente: monitora campagne di disinformazione emergenti, analizza l'architettura delle reti di diffusione (chi ha condiviso cosa, quando, con quale reach), produce report pubblici sull'origine delle campagne, sviluppa strumenti e curricula di media literacy.
+Progetta chatbot, assistenti vocali e interfacce conversazionali che comunicano in modo naturale con le persone, combinando UX, linguistica computazionale e intelligenza artificiale.
 
-Competenze chiave: analisi dei social network (SNA — Social Network Analysis) · OSINT (Open Source Intelligence) · statistica e visualizzazione dei dati · conoscenza dei framework legali (GDPR, DSA) · scrittura per il pubblico generale.
+Dove lavora: aziende tech che sviluppano assistenti vocali, banche e assicurazioni, centri di customer service, startup di chatbot.
 
-*"Il mio lavoro non è dire alla gente cosa credere. È darle gli strumenti per non doversi fidare ciecamente di nessuno — inclusa me."*
+Competenze chiave che inizia a costruire da qui: UX conversazionale · NLP · linguistica · UI vocale · AI design
+
+*"Un assistente vocale deve sembrare presente, non robotico. La differenza sta in come risponde quando non capisce."*
+
+---
 
 ---
 

@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Più potente della NASA. In tasca."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 15 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 34 sec.*
 > *(Script completo: MC-DIG-1-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -251,17 +251,20 @@ Tutti questi componenti sono incollati, saldati e assemblati in modi che rendono
 
 ---
 
-### 👨‍💻 Chi lavora con questa competenza nel 2030?
 
-**Tecnico di supporto IT e riparatore di dispositivi**
+### 🚀 Chi lavora con questa competenza nel 2030?
 
-Con la crescita del "Right to Repair" e la pressione verso la sostenibilità, la riparazione e la manutenzione di dispositivi digitali diventa un settore in espansione. Il tecnico IT di prossima generazione non si limita a installare software: diagnostica problemi hardware, sostituisce componenti, configura ambienti di lavoro digitali per aziende e scuole, e forma gli utenti a usare i propri dispositivi in modo più efficiente e consapevole.
+**Digital and Innovation Manager**
 
-Dove lavora: reti di riparazione autorizzata, cooperative di riuso digitale, uffici IT di scuole e aziende, startup dell'economia circolare dell'elettronica.
+Assicura la gestione dell'innovazione digitale in un'impresa, stimolando processi organizzativi basati sulle tecnologie, dalla selezione degli strumenti allo sviluppo delle competenze.
 
-Competenze chiave che inizi a costruire qui: comprensione dell'architettura hardware · orientamento nei sistemi operativi · pensiero diagnostico ("cosa non funziona e perché?") · sostenibilità dei dispositivi
+Dove lavora: grandi aziende in trasformazione digitale, società di consulenza strategica, startup scale-up, enti pubblici in innovazione.
 
-*"Il dispositivo più sostenibile è quello che già esiste e funziona ancora. Riparare è più verde che riciclare."*
+Competenze chiave che inizia a costruire da qui: digital transformation · project management · tecnologie digitali · change management · innovation management
+
+*"La tecnologia è facile da acquistare. Difficile è cambiare il modo in cui le persone lavorano."*
+
+---
 
 ---
 

@@ -63,7 +63,7 @@ Ogni immagine deve avere un accento cromatico coerente con l'area tematica:
 
 ## Template dei 4 prompt
 
-### PROMPT 1 — SOGGETTO (Zona 1 — INNESCA)
+### PROMPT 1 — SOGGETTO (⚡ INNESCA)
 
 **Scopo:** L'immagine di impatto che lo studente vede aprendo la MC. Deve evocare curiosità sull'oggetto reale descritto nell'hook audio.
 
@@ -117,7 +117,7 @@ no text, no labels, 16:9 landscape
 
 ---
 
-### PROMPT 2 — INFOGRAFICA (Zona 2 — ESPLORA)
+### PROMPT 2 — INFOGRAFICA (📖 ESPLORA)
 
 **Scopo:** Visualizzazione del concetto principale della MC. Stile flat design, leggibile su doppia pagina del libro stampato.
 
@@ -166,7 +166,7 @@ modern Italian school textbook illustration style, no photos, vector-style, 1:1 
 
 ---
 
-### PROMPT 3 — CONTESTO (Zona 3 — OSSERVA)
+### PROMPT 3 — CONTESTO (🔍 OSSERVA)
 
 **Scopo:** Fotografia documentaristica che mostra l'esempio reale citato nella MC. Nessun testo sovrapposto — l'immagine deve parlare da sola.
 
@@ -217,7 +217,7 @@ rich detailed scene with multiple elements, photorealistic, 4:3 landscape
 
 ---
 
-### PROMPT 7 — PROFESSIONE DEL FUTURO (Zona 3 sidebar — OSSERVA)
+### PROMPT 7 — PROFESSIONE DEL FUTURO (🔍 OSSERVA sidebar — OSSERVA)
 
 **Scopo:** Illustrazione simbolica per la sidebar "Chi lavora con questa competenza nel 2030?". **Non un ritratto fotografico** — una composizione editoriale che visualizza gli strumenti, le competenze chiave e l'ambiente della professione come metafora visiva. Lo studente deve capire *cosa fa* quella professione guardando gli oggetti, non guardando una persona.
 

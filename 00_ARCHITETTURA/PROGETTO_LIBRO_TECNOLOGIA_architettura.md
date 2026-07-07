@@ -1,10 +1,11 @@
 # PROGETTO: Libro di Tecnologia + Sistema Agenti + App Personalizzata
-**Documento di architettura — versione 2.1**
+**Documento di architettura — versione 2.2**
 Data: Aprile 2026 — revisione maggiore Maggio 2026
 Autore: Antonio Scaramuzzino
 
 > **Nota di versione 2.0:** questa revisione integra l'analisi comparata dei 14 libri di tecnologia indicizzati nel brain (9.879 chunk). Ogni scelta editoriale è motivata da uno o più punti di forza identificati nei testi esistenti. Le sezioni 1–5 e 7–11 sono aggiornate; la sezione 12 (Sintesi punti di forza) e la sezione 2.5 (DNA editoriale) sono nuove.
 > **Nota di versione 2.1:** aggiunta la sezione 14 (Modello linguistico e allineamento IN2025), l'analisi estesa a 19 testi, e aggiornato il backlog con le priorità linguistiche. Il documento normativo di riferimento per il linguaggio è `00_ARCHITETTURA/LINEE_GUIDA_LINGUISTICHE.md`.
+> **Nota di versione 2.2:** aggiornate le sezioni 6.3 (Layer 3 — App), 6.4 (Agenti), 7 (Output App), 8 (Stack tecnologico), 9 (Prossimi passi), 10 (Stato workspace). Aggiunte le sezioni 15 (Architettura App Template MC v2) e 16 (Protocollo CARBLE-CDD). Riflette lo stato realizzato al 2026-05-12: 50 MC JSON, 56 testi narrativi, app Next.js buildata e deployabile, quiz e flashcard per 50 MC, hook audio TTS per 50 MC.
 
 ---
 
@@ -459,119 +460,234 @@ Database/CMS centrale dove confluisce il materiale elaborato.
 
 ### 6.3 Layer 3 — App/Sito per studenti
 
-- Legge dal Layer 2
-- Traccia il progresso dello studente per MC
-- Adatta il percorso (quiz adattativi, raccomandazione next MC)
-- Genera percorsi personalizzati basati su livello DigComp raggiunto
-- **AI Coach** (nuovo in v2.0): risponde a domande sulla MC corrente, suggerisce risorse integrative, genera varianti del compito di realtà per livello
+L'app è un'applicazione **Next.js + React + TypeScript** (v16.2.2 / React 19) con output statico (SSG), deployata su GitHub Pages, Netlify e Vercel. Percorso: `05_APP/tecnologia-sito-web/`.
 
-### 6.4 I 4 Agenti
+**Template MC v2** — ogni micro-competenza è una pagina con 6 tab sticky organizzati attorno alle 5 zone del libro + una zona dedicata al ripasso:
+
+| Tab | Emoji | Contenuto principale |
+|---|---|---|
+| INNESCA | ⚡ | AudioPlayer + trascrizione accessibile + domanda stimolo in giallo + FlippedVideos (3 video) + ResourcesPanel |
+| ESPLORA | 📖 | AccordionSection: sottosezioni `###` del testo MD collassabili, primo item aperto di default |
+| OSSERVA | 🔍 | ReadableBody + ProfessioneCard (immagine `img4-professione` + testo narrativo estratto da MD + CompetenzaTag interattivi) |
+| SPERIMENTA | 🔬 | LevelTabs: ●Base / ●●Intermedio / ●●●Avanzato — livello default dal campo DigComp MC |
+| AGISCI | 🌍 | RubricaDrawer sticky + ReadableBody — rubrica estratta a runtime dalla sezione AGISCI del MD |
+| RIPASSA | 🃏 | ProcessWidget (4-7 step) + ChecklistWidget (5-6 voci) + QuizWidget (18 domande 6F+6I+6A) + FlashcardDeck (18 card) |
+
+**Componenti core realizzati:**
+
+- `MCNavigator` — tab bar sticky con `role="tablist"` ARIA, scroll orizzontale mobile, indicatore bordo colorato con `areaHex`, persistenza su `localStorage`, navigazione programmatica via `forcedActiveId`
+- `AccordionSection` — animazione CSS pura `grid-template-rows: 0fr → 1fr`, `aria-expanded`/`aria-controls` compliant
+- `LevelTabs` — split del body SPERIMENTA su marker `@@SUBHEAD:●`, degrado graceful se assenti
+- `CalloutBox` — 5 tipi semantici rilevati automaticamente dal testo: `safety` (rosso), `physics` (blu), `error` (giallo), `question` (sky), `info` (amber); CSS custom properties in `globals.css`
+- `RubricaDrawer` — parser Markdown che cerca `### 📋 Rubrica di valutazione` e legge la tabella; slide-up su mobile, pannello laterale 600px su desktop; focus trap + chiusura `Escape`
+- `ResourcesPanel` — pannello collassabile in INNESCA con griglia asset disponibili e navigazione rapida verso le zone
+- `ProfessioneCard` — immagine `img4-professione` + testo narrativo + `CompetenzaTag` interattivi (glossario CLIL)
+- `MCPageClient` — orchestratore Client Component (~430 righe); separato dal Server Component `page.tsx` (~150 righe) che gestisce `generateStaticParams()` e `generateMetadata()`
+
+**SEO e accessibilità:**
+- `generateMetadata()` produce titolo dinamico formato `"ProfTecnologIA {Area} — {Titolo MC}"`
+- Breadcrumb con JSON-LD strutturato e colori area
+- `SiteFooter` con versione `v0.1`
+
+**Build:** ✅ 69 pagine statiche, 0 errori TypeScript (2026-05-11)
+
+### 6.4 I 5 Agenti
 
 ```
 AGENTE CURATORE
 ├── Monitora fonti (nuovi articoli, video, paper)
 ├── Aggiunge fonti ai notebook NotebookLM appropriati
+├── Ricerca video YouTube per ogni MC (case editrici, Geopop, SSIG, consorzi)
 └── Trigger: periodico o su richiesta
 
 AGENTE SINTETIZZATORE
-├── Interroga NotebookLM
+├── Interroga NotebookLM (modalità asincrona/batch — nessuna API in tempo reale)
 ├── Estrae output (quiz, brief, flashcard, mappe)
-├── Formatta secondo schema MC (inclusi campi v2.0)
+├── Formatta secondo schema MC v2.0 (inclusi campi hook_audio, professione_futura, sdg_principale, clil_termini, uda_collegata)
 └── Deposita nel Layer 2 (Notion/database)
 
 AGENTE GENERATORE DI ASSET
-├── Produce infografiche (via Claude API + tool visivo)
-├── Genera mappe concettuali
-├── Crea microlearning cards
-├── Produce quiz situazionali da compiti di realtà
-└── Genera script audio per hook podcast (INNESCA) — nuovo in v2.0
+├── Produce immagini AI: 4 tipologie (ai-fotorealistica, ai-contesto, img4-professione, mindmap) via GPT Image 2 (OpenAI)
+├── Genera hook audio (MP3 2-3 min) con edge-tts v7.2.8 voce it-IT-IsabellaNeural
+├── Crea microlearning JSON (Process + Checklist) e quiz situazionali
+├── Genera script hook narrativi e playlist video YouTube per ogni MC
+└── Output: PNG in `04_CONTENUTI/visual/`, MP3 in `public/assets/audio/`, JSON in `data/`
+
+AGENTE CARBLE-CDD  ← NUOVO (quality assurance)
+├── Valida ogni CDD secondo 7 criteri D-C-A-R-B-L-E:
+│   ├── D — Disegno didattico (obiettivo, azione studente, verifica, evidenza)
+│   ├── C — Correttezza e accuratezza (dati, definizioni, riferimenti normativi)
+│   ├── A — Adeguatezza didattica, curricolare e contestuale (età, prerequisiti, BES)
+│   ├── R — Rilevamento di bias e stereotipi (genere, cultura, disabilità)
+│   ├── B — Fonti, licenze e citabilità (fonti verificabili, licenze CC)
+│   ├── L — Linguaggio inclusivo e accessibile (leggibilità, consegne chiare, DSA)
+│   └── E — Etica, sicurezza e valori educativi (tutela minori, trasparenza IA)
+├── Soglie di esito: ✅ Validabile → pubblica · ⚠️ Da rivedere → notifica autore · 🚫 Non validabile → blocca
+├── Produce parere istruttorio (non modifica direttamente i file) — la decisione finale spetta all'autore umano
+├── Output: scheda JSON + report Markdown in `04_CONTENUTI/validazione/`
+└── Riferimento: `00_ARCHITETTURA/Protocollo_CARBLE_CDD_v1.0.md`
 
 AGENTE PERSONALIZZATORE
 ├── Legge profilo studente e progressi
 ├── Seleziona MC appropriate per livello
 ├── Sequenzia contenuti (prerequisiti → MC target)
 ├── Aggiorna percorso dopo ogni interazione
-└── Alimenta il coach AI con contesto studente — nuovo in v2.0
+└── Output: percorso JSON personalizzato con MC ordinate e livello DigComp attuale
+```
+
+**Pipeline degli agenti:**
+
+```
+Agente Curatore         → fonti, video YouTube per MC
+        ↓
+Agente Sintetizzatore   → asset JSON strutturati (batch/asincrono)
+        ↓
+Agente Generatore Asset → immagini AI, audio TTS, microlearning, quiz, script
+        ↓
+Agente CARBLE-CDD       → validazione D-C-A-R-B-L-E
+        ↓              [correzioni manuali autore se necessario]
+Agente Personalizzatore → percorso personalizzato studente
 ```
 
 ---
 
 ## 7. STRUTTURA OUTPUT APP PER OGNI MC
 
-Ogni micro-competenza genera automaticamente:
+Ogni micro-competenza produce i seguenti asset (stato al 2026-05-12):
 
-| Tipo asset | Formato | Strumento |
-|---|---|---|
-| **Hook audio** | Podcast narrativo 2-3 min su oggetto reale | Claude API (script) + TTS |
-| **Quiz** | Drag & drop, scenario, multipla, vero/falso (3 livelli) | Claude API |
-| **Microlearning** | Video 3-5 min, card deck, podcast | NotebookLM Audio + Claude |
-| **Visual** | Infografica, mappa concettuale, flowchart | Claude API + Canva API |
-| **Compito di realtà** | Scheda progetto strutturata con metacognizione | Claude API |
-| **Flashcard** | Fronte/retro per spaced repetition | NotebookLM |
-| **Glossario CLIL** | 3-5 termini chiave in inglese con pronuncia | Claude API |
+| Tipo asset | Formato | Strumento | Stato |
+|---|---|---|---|
+| **Hook audio** | MP3 2-3 min, voce neurale italiana | edge-tts v7.2.8, voce it-IT-IsabellaNeural | ✅ 50 MC |
+| **Trascrizione audio** | MD accessibile con script completo | Generata insieme all'audio | ✅ 50 MC |
+| **Quiz** | 18 domande (6F + 6I + 6A) con feedback specifico per risposta errata e riferimenti IN/DC | Claude API batch | ✅ 50 MC |
+| **Microlearning** | Process (4-7 step) + Checklist (5-6 voci) in JSON | Claude API batch + validazione CARBLE-CDD | ✅ 50 MC |
+| **Flashcard** | 18 card con tag livello (F/I/A), layout griglia verticale | Generato da dati quiz/MC | ✅ 50 MC |
+| **Visual** | 4 tipologie per MC: `ai-fotorealistica`, `ai-contesto`, `img4-professione`, `mindmap` | GPT Image 2 (OpenAI) | ✅ 50 MC |
+| **Playlist video** | 3 video flipped classroom + galleria video area; JSON con metadati | Agente Curatore | ✅ 50 MC |
+| **Professione del futuro** | Card con immagine `img4-professione` + testo narrativo MD + CompetenzaTag CLIL | Claude API + JSON MC | ✅ 50 MC |
+| **Glossario CLIL** | 7 termini IT/EN con pronuncia IPA, CompetenzaTag interattivi nel tab OSSERVA | Claude API, campo `clil_termini` nel JSON MC | ✅ 50 MC |
+| **Testo narrativo 5 zone** | File MD con sezioni INNESCA/ESPLORA/OSSERVA/SPERIMENTA/AGISCI (250-400 parole per zona) | Autore + Claude API | ✅ 56 file (50 standard + 6 INF) |
+| **Visual brief ESPLORA** | Brief con 423 prompt descrittivi di scena, 10 tipologie immagine, per generazione immagini AI | Generatore Python | ✅ 56 brief |
+
+**Struttura dei file dati per ogni MC nell'app:**
+
+```
+data/mc/classe_N/AREA/MC-ID.json          ← metadati MC (JSON schema v2.0)
+data/testi/classe_N/AREA/MC-ID_completa.md ← testo narrativo 5 zone
+data/quiz/MC-ID_quiz.json                  ← 18 domande (6F+6I+6A) con feedback e riferimenti
+data/flashcards/MC-ID.json                 ← 18 flashcard con tag livello
+data/microlearning/MC-ID.json             ← Process + Checklist (validato CARBLE-CDD)
+data/transcripts/MC-ID_hook-script.md     ← trascrizione audio accessibile
+data/videos/MC-ID.json                    ← playlist YouTube (3 flipped + galleria)
+public/assets/audio/MC-ID_hook-audio.mp3  ← hook audio TTS (durata nel JSON)
+public/assets/visual/MC-ID/               ← immagini AI (4 tipologie)
+```
 
 ---
 
-## 8. STACK TECNOLOGICO CONSIGLIATO
+## 8. STACK TECNOLOGICO
 
-| Layer | Strumento | Ruolo |
-|---|---|---|
-| Knowledge repo | NotebookLM (3 notebook) | Elaborazione fonti |
-| Database | Notion (già connesso) | Layer 2 strutturato |
-| AI Engine | Claude API (claude-sonnet-4-6) | Agenti + generazione contenuti + coach |
-| App frontend | React / Next.js | Interfaccia studenti |
-| Asset visivi | Canva API | Infografiche e mappe |
-| Coding lab | Scratch, micro:bit, Tinkercad | Attività pratiche |
-| Audio | TTS (ElevenLabs o simile) | Podcast hook per ogni MC |
+Stack effettivamente utilizzato al 2026-05-12:
+
+| Layer | Strumento | Versione / Dettaglio | Stato |
+|---|---|---|---|
+| **App frontend** | Next.js + React + TypeScript | Next.js 16.2.2, React 19 | ✅ In produzione |
+| **CSS** | Tailwind CSS | v4.3 | ✅ |
+| **Audio TTS** | edge-tts (Microsoft Neural TTS) | v7.2.8, voce `it-IT-IsabellaNeural` | ✅ 50 MC |
+| **Immagini AI** | GPT Image 2 (OpenAI) | `gpt_image_2` | ✅ |
+| **Knowledge base** | Pinecone (`brain-tecnologia`) | namespace `tecnologia-libro`, modello `multilingual-e5-large`, ~9.879 chunk | ✅ |
+| **AI Engine** | Claude API | `claude-sonnet-4-6` / `claude-opus-4-6` | ✅ |
+| **Deploy GitHub Pages** | GitHub Actions | `.github/workflows/deploy.yml`, auto-deploy su push | ✅ |
+| **Deploy Netlify** | netlify.toml | `output: export → out/` | ✅ |
+| **Deploy Vercel** | vercel.json | `framework: null`, `outputDirectory: out` | ✅ |
+| **Knowledge repo** | NotebookLM (3 notebook) | NB-TESTI / NB-VIDEO / NB-ARTICOLI — modalità asincrona | ⬜ Da creare |
+| **Database Layer 2** | Notion o Airtable | Layer 2 strutturato (connettore da costruire) | ⬜ Da fare |
+| **Coding lab** | Scratch, micro:bit, Tinkercad | Attività pratiche in laboratorio | — |
 
 ---
 
 ## 9. PROSSIMI PASSI (backlog prioritizzato)
 
-### Priorità 1 — Completare la matrice con i nuovi campi v2.0
-- [ ] Aggiungere `hook_audio`, `professione_futura`, `sdg_principale`, `clil_termini`, `uda_collegata` a ogni MC esistente
-- [ ] Aggiungere campo `prerequisiti` a ogni MC (catena di dipendenze)
-- [ ] Documentare progressione verticale DIG e DIS (F → I → A esplicitata)
-- [ ] Portare le MC da 24 a ~48 (6 MC per area, tutte le aree)
+> **Stato al 2026-05-12:** 50 MC JSON in matrice · 56 testi `_completa.md` · app Next.js buildata · quiz e flashcard per 50 MC · hook audio TTS per 50 MC · microlearning per 50 MC · syllabus completi · design system · template MC v2 (6 tab).
 
-### Priorità 2 — Creare i notebook NotebookLM
-- [ ] Creare NB-TESTI — caricare in ordine di priorità:
-  - ⭐⭐⭐ `Guida Hypertech.pdf` + `9788808899798_Tecnologia.pdf` (Paci) + `Paci_guida_ins.pdf`
-  - ⭐⭐⭐ `9788869175978_Competenze.pdf` (Hypertech PRO)
-  - ⭐⭐ Capitoli metodologici Hypertech (1-6) + Compiti AR1-AR7 + ZR3-ZR9
-  - ⭐ Tutti gli altri PDF in `08_TESTI/TESTI/`
-- [ ] Creare NB-VIDEO — raccogliere URL YouTube per ogni area MC
-- [ ] Creare NB-ARTICOLI — caricare: La sostenibilità (Douglas Scotti), Idee per Insegnare (3 PDF)
+### Completati ✅
 
-### Priorità 3 — Costruire l'Agente Sintetizzatore
-- [ ] Script Python che interroga NotebookLM via API
-- [ ] Parser che mappa output NotebookLM → schema MC v2.0
-- [ ] Connettore verso Notion (Layer 2)
-- [ ] Modulo generazione script audio per hook podcast
+- ✅ Portare le MC da 24 a 50 JSON (matrice completa)
+- ✅ Aggiungere `hook_audio`, `professione_futura`, `sdg_principale`, `clil_termini`, `uda_collegata`, `prerequisiti` a ogni MC
+- ✅ Documentare progressione verticale DIG e DIS — `01_MATRICE_MC/PROGRESSIONE_VERTICALE_DIG_DIS.md`
+- ✅ Testi narrativi 5 zone per tutte le MC (56 file `_completa.md`, incluse 6 INF)
+- ✅ Hook audio TTS (50 MC) — edge-tts it-IT-IsabellaNeural
+- ✅ Quiz 18 domande (6F+6I+6A con feedback e riferimenti) per 50 MC
+- ✅ Microlearning JSON (Process + Checklist) per 50 MC — validati CARBLE-CDD
+- ✅ Flashcard JSON per 50 MC
+- ✅ Immagini AI (4 tipologie per MC) via GPT Image 2
+- ✅ App Next.js con template MC v2 (6 tab sticky, build 69 pagine, 0 errori TypeScript)
+- ✅ Syllabus annuali (docenti, studenti, famiglie) per tutte e 3 le classi
+- ✅ Design system + design tokens (`TecnologIA_Design_System.html`)
+- ✅ Agente CARBLE-CDD — protocollo v1.0 in `00_ARCHITETTURA/Protocollo_CARBLE_CDD_v1.0.md`
+- ✅ Visual brief ESPLORA v2 — generatore Python + 56 brief + 423 prompt di scena
+- ✅ Configurazioni deploy (GitHub Pages, Netlify, Vercel)
+- ✅ Agente Sintetizzatore — script Python `sintetizzatore.py` + `notion_setup.py` (da testare in produzione)
 
-### Priorità 4 — Prototipo app studenti con AI Coach
-- [ ] Interfaccia React con navigazione per MC (struttura 5 zone)
-- [ ] Sistema di tracciamento progressi per studente
-- [ ] Quiz adattivi (3 livelli di difficoltà per ogni MC)
-- [ ] AI Coach integrato per ogni MC (risponde su contesto MC + profilo studente)
-- [ ] Player audio hook podcast
+### Priorità 1 — Matrice MC (gap residui)
 
-### Priorità 5 — Syllabus e guide
-- [ ] Unità per unità con titoli, obiettivi, tempi
-- [ ] Allineamento al PTOF
-- [ ] Versione per studenti (semplificata)
-- [ ] Versione per famiglie
+- [ ] Creare 6 JSON MC-INF in `01_MATRICE_MC/` (testi già pronti in `08_TESTI/`)
+- [ ] Completare `sdg_principale` nelle 39 MC mancanti (11/50 compilati)
+- [ ] Raggiungere target 52 MC JSON (identificare 2 MC aggiuntive in DIS o SIS)
+- [ ] Decidere se le 6 MC-INF rientrano nel target 52 o sono extratarget
+
+### Priorità 2 — Infrastruttura agenti e NotebookLM
+
+- [ ] Creare NB-TESTI — caricare Paci (`9788808899798`) + Hypertech PRO (`9788869175978`) + guide docenti
+- [ ] Creare NB-VIDEO — playlist YouTube già raccolte in `data/videos/` come punto di partenza
+- [ ] Creare NB-ARTICOLI — La sostenibilità (Douglas Scotti), Idee per Insegnare (3 PDF)
+- [ ] Parser NotebookLM → schema MC v2.0 (Agente Sintetizzatore)
+- [ ] Connettore verso Notion/Airtable (Layer 2)
+- [ ] Guida operativa Agente Curatore (config NB-* + ricerca video)
+- [ ] Guida operativa Agente CARBLE-CDD (workflow validazione + report)
+
+### Priorità 2 — App studenti (backlog P2/P3 da refactor)
+
+- [ ] **P2.1** Stepper mobile progress indicator sopra i tab (viewport < 480px)
+- [ ] **P2.2** Keyboard navigation MCNavigator (ArrowLeft/ArrowRight) — WCAG WAI-ARIA Tabs
+- [ ] **P2.3** Focus management al cambio tab (WCAG 2.4.3)
+- [ ] **P2.4** Scroll-to-top del pannello al cambio tab (UX mobile)
+- [ ] **P2.5** AccordionSection: opzione "espandi tutti"
+- [ ] **P2.6** RubricaDrawer: versione stampabile (`@media print`)
+- [ ] Deploy Netlify definitivo (guida in `DEPLOY_NETLIFY.md`)
+
+### Priorità 3 — Feature app e debt tecnico
+
+- [ ] **P3.1** Progress tracker per zona (collegare `useProgress.ts` al MCNavigator)
+- [ ] **P3.2** URL hash sync per deep-link zona (`#innesca`, `#esplora`, ecc.)
+- [ ] **P3.3** LevelTabs: memoria del livello selezionato su localStorage per MC
+- [ ] **P3.5** Aside mobile — Framework/Tag/Prerequisiti su pannello espandibile
+- [ ] **D1** Unificare `ReadableBodyInTab` / `ReadableText` in `lib/readable-text.tsx`
+- [ ] Audit WCAG AA contrasti + focus visibili
+- [ ] Audit performance immagini AI (WebP + srcset + lazy loading)
+- [ ] Sistema AI Coach integrato per ogni MC
+
+### Priorità 4 — Contenuti e sincronizzazione
+
+- [ ] Sincronizzare asset in `04_CONTENUTI/compiti_realta/`, `flashcard/`, `quiz/` con quelli in `05_APP/data/`
+- [ ] Applicare integrazioni brain residue (vedi `00_ARCHITETTURA/RAPPORTO_INTEGRAZIONI_brain_v1.0.md`)
+- [ ] Espandere MC Advanced da 4 a 6 pagine nell'Indice (12 MC interessate)
+- [ ] Aggiungere 2 UDA interdisciplinari bonus all'Indice
 
 ---
 
-## 10. STATO ATTUALE DEL WORKSPACE (v2.0)
+## 10. STATO ATTUALE DEL WORKSPACE (v2.2 — 2026-05-12)
 
 | Elemento | Stato | Percorso |
 |---|---|---|
-| Documento architettura | ✅ v2.0 | `00_ARCHITETTURA/` |
-| Schema MC canonico | ⚠️ Da aggiornare a v2.0 (nuovi campi) | `01_MATRICE_MC/schema_MC.json` |
-| Matrice 24 MC | ✅ v1.0 — da portare a 48 con campi v2.0 | `01_MATRICE_MC/` (JSON da creare) |
-| Prompt 4 agenti | ⚠️ Da aggiornare (agente generatore: script audio) | `02_AGENTI/*/prompt.md` |
+| Documento architettura | ✅ v2.2 | `00_ARCHITETTURA/` |
+| Schema MC canonico | ✅ v2.0 con tutti i campi | `01_MATRICE_MC/schema_MC.json` |
+| Matrice MC JSON | ✅ 50 MC con campi v2.0 completi | `01_MATRICE_MC/` |
+| Matrice MC JSON — area INF | ⬜ 0/6 JSON (testi pronti in `08_TESTI/`) | `01_MATRICE_MC/` |
+| Testi narrativi (ESPLORA) | ✅ 56 file `_completa.md` (50 std + 6 INF) | `08_TESTI/` |
+| Progressione verticale DIG/DIS | ✅ Documentata | `01_MATRICE_MC/PROGRESSIONE_VERTICALE_DIG_DIS.md` |
+| SDG principale nelle MC | ⚠️ Parziale — 11/50 compilati | `01_MATRICE_MC/` |
+| Prompt 5 agenti | ✅ CARBLE-CDD aggiunto · microlearning separato | `02_AGENTI/*/prompt.md` |
 | Repository PDF locali | ✅ 63 PDF | `08_TESTI/` + `07_GUIDE/` |
 | Catalogo libri | ✅ Aggiornato | `03_NOTEBOOKLM/NB-TESTI/CATALOGO_LIBRI.md` |
 | NotebookLM NB-TESTI | ⬜ Da creare | — |
@@ -691,8 +807,150 @@ La checklist in §6 di quel documento è lo strumento di quality check su ogni t
 
 ---
 
+## 15. ARCHITETTURA APP — TEMPLATE MC v2
+
+Documentazione tecnica dell'app Next.js realizzata in `05_APP/tecnologia-sito-web/`.
+
+### 15.1 Pattern Server/Client Component
+
+```
+app/mc/[id]/page.tsx                  ← Server Component (~150 righe)
+│   generateStaticParams()            ← SSG per tutti gli ID MC
+│   generateMetadata()                ← titolo "ProfTecnologIA {Area} — {Titolo MC}"
+│   carica: MC JSON + testo MD + audio + video + quiz + flashcard + microlearning
+└── <MCPageClient {...props} />       ← serializza tutto come props
+
+components/mc/MCPageClient.tsx        ← Client Component (~430 righe)
+    MCNavigator                       ← 6 tab sticky con colore areaHex
+    ├── ⚡ INNESCA
+    │   ├── AudioPlayer (src: hook-audio.mp3)
+    │   ├── Domanda stimolo (box giallo)
+    │   ├── ReadableBody (testo zona INNESCA del MD)
+    │   ├── FlippedVideos (3 video flipped)
+    │   └── ResourcesPanel (griglia asset + navigazione rapida)
+    ├── 📖 ESPLORA
+    │   └── AccordionSection (sottosezioni ### del MD, primo item aperto)
+    ├── 🔍 OSSERVA
+    │   ├── ReadableBody (testo zona OSSERVA del MD)
+    │   └── ProfessioneCard
+    │       ├── Immagine img4-professione
+    │       ├── Testo narrativo professione (estratto dal MD)
+    │       └── CompetenzaTag[] (glossario CLIL interattivo)
+    ├── 🔬 SPERIMENTA
+    │   └── LevelTabs
+    │       ├── ● Base (testo livello Foundation)
+    │       ├── ●● Intermedio (testo livello Intermediate)
+    │       └── ●●● Avanzato (testo livello Advanced)
+    ├── 🌍 AGISCI
+    │   ├── RubricaDrawer (estrae tabella rubrica da MD a runtime)
+    │   └── ReadableBody (testo zona AGISCI del MD)
+    └── 🃏 RIPASSA
+        ├── ProcessWidget (4-7 step da microlearning JSON)
+        ├── ChecklistWidget (5-6 voci da microlearning JSON)
+        ├── QuizWidget (18 domande 6F+6I+6A con feedback)
+        └── FlashcardDeck (18 card con tag livello, layout griglia)
+
+    [APPENDICE — fuori dai tab, sempre visibile sotto il navigator]
+    SiteFooter (versione v0.1)
+```
+
+### 15.2 Marker di parsing nel testo MD
+
+Il Server Component e i componenti client usano marker testuali per segmentare il file `_completa.md`:
+
+| Marker | Effetto |
+|---|---|
+| `## ⚡ INNESCA` | Delimita la zona INNESCA |
+| `## 📖 ESPLORA` | Delimita la zona ESPLORA |
+| `## 🔍 OSSERVA` | Delimita la zona OSSERVA |
+| `## 🔬 SPERIMENTA` | Delimita la zona SPERIMENTA |
+| `## 🌍 AGISCI` | Delimita la zona AGISCI |
+| `### titolo` | In ESPLORA: crea item accordion · In SPERIMENTA: demarca i livelli |
+| `@@SUBHEAD:●...` | In SPERIMENTA: separatore livello Base/Intermedio/Avanzato |
+| `@@CALLOUT: tipo | testo` | Genera `CalloutBox` semantico (safety/physics/error/question/info) |
+| `### 📋 Rubrica di valutazione` | In AGISCI: tabella MD letta da `RubricaDrawer` |
+
+### 15.3 Componenti UI disponibili
+
+| Componente | File | Funzione |
+|---|---|---|
+| `MCNavigator` | `components/mc/MCNavigator.tsx` | 6 tab sticky con aria, localStorage, colore area |
+| `AccordionSection` | `components/mc/AccordionSection.tsx` | Accordion collassabile per ESPLORA |
+| `LevelTabs` | `components/mc/LevelTabs.tsx` | Tab 3 livelli per SPERIMENTA |
+| `CalloutBox` | `components/mc/CalloutBox.tsx` | 5 callout semantici |
+| `RubricaDrawer` | `components/mc/RubricaDrawer.tsx` | Drawer rubrica (mobile slide-up, desktop laterale) |
+| `ResourcesPanel` | `components/mc/ResourcesPanel.tsx` | Pannello asset + navigazione rapida zone |
+| `ProfessioneCard` | `components/mc/ProfessioneCard.tsx` | Card professione del futuro |
+| `CompetenzaTag` | `components/mc/CompetenzaTag.tsx` | Tag CLIL interattivi |
+| `AudioPlayer` | `components/mc/AudioPlayer.tsx` | Player audio con trascrizione |
+| `FlippedVideos` | `components/mc/FlippedVideos.tsx` | 3 video flipped classroom |
+| `VideoGallery` | `components/mc/VideoGallery.tsx` | Galleria video area |
+| `QuizWidget` | `components/mc/QuizWidget.tsx` | Quiz interattivo 18 domande |
+| `FlashcardDeck` | `components/mc/FlashcardDeck.tsx` | Deck flashcard con spaced repetition |
+| `ProcessWidget` | `components/mc/ProcessWidget.tsx` | Sequenza passaggi microlearning |
+| `ChecklistWidget` | `components/mc/ChecklistWidget.tsx` | Checklist punti chiave |
+| `FormulaCard` | `components/mc/FormulaCard.tsx` | Card formula con rendering LaTeX/testo |
+| `ProcedureList` | `components/mc/ProcedureList.tsx` | Lista procedura numerata |
+| `MCPageClient` | `components/mc/MCPageClient.tsx` | Orchestratore Client Component |
+
+### 15.4 Debt tecnico noto
+
+| ID | Problema | File | Urgenza |
+|---|---|---|---|
+| D1 | `ReadableBodyInTab` in MCPageClient duplica logica da `ReadableText` — unificare in `lib/readable-text.tsx` | `MCPageClient.tsx` | Media |
+| D2 | `splitSperimentaByLevel` usa offset fisso (+15) per saltare l'header — fragile | `MCPageClient.tsx` | Media |
+| D3 | Parser rubrica cerca `📋 Rubrica` ma alcune MC potrebbero mancare l'emoji — aggiungere fallback | `RubricaDrawer.tsx` | Bassa |
+| D4 | `.fuse_hidden` in FUSE impedisce `npm run build` in place — build deve avvenire in `/tmp` | `next.config.ts` | Bassa |
+| D5 | `MCNavigator` usa chiave localStorage basata sui tab ID — usare `mcId` come namespace | `MCNavigator.tsx` | Bassa |
+
+---
+
+## 16. PROTOCOLLO CARBLE-CDD
+
+Il Protocollo CARBLE-CDD (I.C. Nicotera Costabile, v1.0 — 13 maggio 2026) è la procedura standardizzata per la progettazione, costruzione, validazione e archiviazione dei Contenuti Didattici Digitali (CDD), anche quando prodotti con IA generativa.
+
+Documento completo: `00_ARCHITETTURA/Protocollo_CARBLE_CDD_v1.0.md`
+
+### 16.1 I 7 criteri (acronimo D-C-A-R-B-L-E)
+
+| Lettera | Criterio | Domanda guida |
+|---|---|---|
+| **D** | Disegno didattico | Il CDD ha un obiettivo chiaro, un'azione dello studente, una modalità di verifica? |
+| **C** | Correttezza e accuratezza | Questo contenuto può essere usato senza trasmettere errori agli studenti? |
+| **A** | Adeguatezza didattica, curricolare e contestuale | È adatto all'età, al livello, al contesto e ai prerequisiti? |
+| **R** | Rilevamento di bias e stereotipi | Qualcuno potrebbe sentirsi escluso o rappresentato male? |
+| **B** | Fonti, licenze e citabilità | Se mi chiedono da dove viene, posso rispondere con chiarezza? |
+| **L** | Linguaggio inclusivo, accessibile e comprensibile | È comprensibile anche da chi parte più indietro o apprende in modo diverso? |
+| **E** | Etica, sicurezza e valori educativi | Rispetta la dignità delle persone, tutela gli studenti, mantiene chiara la responsabilità umana? |
+
+### 16.2 Livelli di validazione
+
+| Livello | Quando si usa |
+|---|---|
+| Informale | Materiali personali del docente: appunti, bozze, prompt preparatori |
+| Base | CDD usati in una singola classe: schede, esercizi, quiz, presentazioni brevi |
+| Formale | CDD con valore istituzionale, valutativo, pubblico o replicabile |
+
+### 16.3 Esiti possibili
+
+| Esito | Significato | Azione |
+|---|---|---|
+| ✅ Validabile senza modifiche | Tutti i criteri Conformi | Pubblicazione consentita |
+| ⚠️ Validabile con modifiche | Uno o più criteri "Da rivedere" | Revisione autore prima della pubblicazione |
+| 🚫 Non validabile — da rigenerare | Uno o più criteri "Non conforme" | Blocco — rigenerazione obbligatoria |
+
+### 16.4 Integrazione nel progetto ProfTecnologIA
+
+- Tutti i microlearning JSON (Process + Checklist) per le 50 MC sono stati prodotti con validazione CARBLE-CDD.
+- L'Agente CARBLE-CDD (§6.4) applica il protocollo in modo sistematico prima della pubblicazione di ogni asset.
+- La formula di trasparenza obbligatoria: *"Questo materiale è stato realizzato con il supporto di strumenti IA e successivamente controllato, adattato e validato secondo il Protocollo CARBLE-CDD."*
+- Riferimento normativo: AI Act (UE) 2024/1689, DM 166/2025, IN 2025 (D.M. n. 221/2025).
+
+---
+
 *Documento originale generato in sessione Claude — Aprile 2026*
 *v1.1: catalogazione 63 PDF locali e 14 guide docenti — Aprile 2026*
 *v1.2: allineamento alle Nuove Indicazioni Nazionali D.M. n. 221/2025 — Maggio 2026*
 *v2.0: revisione maggiore — analisi comparata 14 libri, DNA editoriale, struttura 5 zone, AI Coach, DSA First, Flipped Classroom by default — Maggio 2026*
 *v2.1: modello linguistico IN2025, analisi estesa a 19 testi, aggiornamento backlog e agenti — Maggio 2026*
+*v2.2: app Next.js template MC v2 (6 tab), Agente CARBLE-CDD, stack tecnologico reale, stato workspace aggiornato, sezioni 15 e 16 — Maggio 2026*

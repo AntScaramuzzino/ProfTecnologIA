@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il tuo telefono ha viaggiato più di te"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 27 sec.*
 > *(Script completo: MC-MAT-1-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -232,19 +232,20 @@ Riciclare il cotone in fibra tessile di qualità equivalente al cotone originale
 
 ---
 
-### 👩‍💼 Chi lavora con questa competenza nel 2030?
 
-**Supply Chain Sustainability Manager**
+### 👗 Chi lavora con questa competenza nel 2030?
 
-Il ruolo esiste già oggi in molte grandi aziende, ma nel 2030 diventerà una funzione centrale in quasi tutte le organizzazioni che producono o distribuiscono beni fisici. La ragione è semplice: le normative europee (in particolare il **Corporate Sustainability Reporting Directive**, CSRD, in vigore dal 2024) obbligano le aziende di una certa dimensione a rendicontare l'impatto ambientale e sociale di tutta la loro catena di fornitura — non solo delle loro operazioni dirette.
+**Circular Fashion Specialist**
 
-Cosa fa concretamente: analizza ogni fase della supply chain per misurare le emissioni di CO₂, il consumo idrico, le condizioni di lavoro, la percentuale di materiali riciclati usati. Identifica i punti critici dove si può ridurre l'impatto. Propone fornitori alternativi con pratiche più sostenibili. Comunica i dati all'esterno sotto forma di **report ESG** (Environmental, Social, Governance).
+Applica i principi dell'economia circolare alla filiera dei prodotti, scegliendo materiali rigenerabili e progettando oggetti che possano essere smontati, riparati e riciclati a fine vita.
 
-Dove lavora: grandi aziende manifatturiere (moda, automotive, elettronica), catene di distribuzione, società di consulenza specializzate in sostenibilità, enti di certificazione.
+Dove lavora: aziende di moda con programmi di take-back, piattaforme di seconda mano, enti di certificazione tessile, consulenti di sostenibilità per brand.
 
-Competenze chiave che inizia a costruire da questa MC: analisi del ciclo di vita (LCA) · logistica sostenibile · economia circolare · reportistica ESG · negoziazione con fornitori internazionali
+Competenze chiave che inizia a costruire da qui: economia circolare · materiali rigenerabili · design circolare · tracciabilità di filiera · sostenibilità
 
-*"Non posso controllare cosa fa il mio fornitore in Vietnam. Posso scegliere fornitori che rispettano certi standard — e verificare che li rispettino davvero."*
+*"Il capo più sostenibile è quello che non produci. Il secondo è quello che produci per durare vent'anni."*
+
+---
 
 ---
 

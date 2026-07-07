@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Trenta materiali. Un paio di scarpe."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 15 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 38 sec.*
 > *(Script completo: MC-MAT-1-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -381,19 +381,20 @@ Alcune aziende stanno cercando di risolvere questo problema progettando scarpe c
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Materials Scientist circolare**
+### ♻️ Chi lavora con questa competenza nel 2030?
 
-Una volta, il compito di chi progettava materiali era rendere i prodotti più resistenti, più leggeri, più economici. Oggi, un obiettivo altrettanto importante è renderli *riparabili*, *smontabili* e *riciclabili*. Il Materials Scientist circolare lavora a monte del processo produttivo: sceglie o inventa materiali che possono essere completamente separati e recuperati a fine vita.
+**Green Product Designer**
 
-Concretamente: progetta scarpe che si smontano in tre parti con un solo gesto, crea adesivi che si sciolgono a 80°C in acqua, sviluppa plastiche monocomponente che sostituiscono strutture composte da dieci materiali diversi.
+Progetta oggetti che semplificano la vita quotidiana tenendo conto delle esigenze degli utenti e dell'ambiente. Coniuga estetica, innovazione, sostenibilità e funzionalità scegliendo materiali naturali a basso impatto.
 
-Dove lavora: laboratori di ricerca universitari, centri R&D di grandi aziende manifatturiere (moda, automotive, elettronica), startup dell'economia circolare.
+Dove lavora: studi di design indipendenti, reparti R&D di aziende manifatturiere, startup dell'economia circolare, laboratori universitari di material design.
 
-Competenze chiave che inizia a costruire da qui: chimica dei polimeri · analisi del ciclo di vita (LCA) · economia circolare · progettazione per il disassemblaggio
+Competenze chiave che inizia a costruire da qui: design del prodotto · scienza dei materiali · sostenibilità ambientale · LCA (analisi del ciclo di vita) · innovazione
 
-*"Non mi interessa solo che il materiale funzioni. Mi interessa cosa gli succede dopo."*
+*"Il mio lavoro non finisce quando il prodotto è venduto. Finisce quando il materiale ritorna."*
+
+---
 
 ---
 

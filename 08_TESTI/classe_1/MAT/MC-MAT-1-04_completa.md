@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Una macchia grande tre volte la Francia"**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 3 min 39 sec.*
 > *(Script completo: MC-MAT-1-04_hook-script.md)*
 
 **Domanda di avvio:**
@@ -273,21 +273,20 @@ Il PET riciclato (rPET) può diventare: nuove bottiglie per acqua e succhi (se d
 
 ---
 
-### 👷 Chi lavora con questa competenza nel 2030?
 
-**Urban Waste Systems Designer (Progettista di Sistemi Urbani per i Rifiuti)**
+### 🌡️ Chi lavora con questa competenza nel 2030?
 
-Questa professione esiste già, ma cambierà radicalmente nel corso del decennio. Non si tratta solo di chi progetta i camion della raccolta differenziata: è chi progetta l'intero sistema — il numero e la posizione dei punti di raccolta, i flussi logistici, i percorsi ottimizzati, il tipo di tecnologia di selezione, i contratti con i riciclatori, la comunicazione ai cittadini.
+**Carbon Footprint Analyst**
 
-Nelle città europee più avanzate (Copenaghen, Amsterdam, Monaco), la gestione dei rifiuti è diventata una delle principali voci del piano urbano sostenibile — con obiettivi quantitativi, monitoraggio in tempo reale dei bidoni (sensori IoT che misurano il riempimento), ottimizzazione dei percorsi di raccolta tramite algoritmi, e sistemi di incentivo/disincentivo per i cittadini (meno rifiuti produci, meno paghi).
+Misura e riduce l'impatto ambientale di prodotti e processi lungo tutto il ciclo di vita, applicando metodologie LCA e strumenti certificati per orientare scelte di economia circolare.
 
-In Italia, la disparità Nord-Sud nella gestione dei rifiuti è uno dei problemi ambientali più gravi: alcune regioni del Sud hanno ancora territori con rifiuti gestiti male, discariche abusive, filiere di riciclo assenti. Il fabbisogno di competenze tecniche in questo campo è enorme.
+Dove lavora: aziende manifatturiere con obiettivi net-zero, società di consulenza ambientale, enti di certificazione carbon neutral, investitori ESG.
 
-Cosa fa concretamente: progetta l'infrastruttura di raccolta per un nuovo quartiere urbano o per ristrutturare il sistema esistente. Analizza i dati sui flussi di rifiuti per ottimizzare la frequenza di raccolta. Valuta l'introduzione di nuove tecnologie (sensori sui bidoni, robot di selezione, digestori anaerobici di quartiere). Disegna le campagne di comunicazione per aumentare la qualità della differenziata.
+Competenze chiave che inizia a costruire da qui: LCA · ISO 14064 · emissioni CO₂ · economia circolare · EPD (Environmental Product Declaration)
 
-Competenze chiave: ingegneria ambientale · logistica · sistemi IoT · analisi dei dati · comunicazione pubblica · normativa ambientale
+*"Non mi interessa l'impronta di carbonio come numero. Mi interessa dove posso tagliarla davvero."*
 
-*"La differenziata non è il problema del cittadino. È il prodotto di un sistema che qualcuno ha progettato — bene o male."*
+---
 
 ---
 

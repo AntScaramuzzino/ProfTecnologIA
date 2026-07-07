@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "90 minuti. Un anno intero."**
-> 🎧 *Ascolta prima di leggere. Durata: 2 min 35 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: 4 min 30 sec.*
 > *(Script completo: MC-ENE-3-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -191,21 +191,20 @@ Nel 1997, l'isola danese di Samsø (4.000 abitanti) vinse un concorso del govern
 
 ---
 
-### 👩‍🔬 Chi lavora con questa competenza nel 2030?
 
-**Ingegnere della transizione energetica**
+### 🏠 Chi lavora con questa competenza nel 2030?
 
-Non è un solo ruolo — è un campo in espansione che comprende progettisti di impianti fotovoltaici ed eolici, esperti di accumulo, ingegneri di smart grid, analisti di politiche energetiche, consulenti per la decarbonizzazione industriale.
+**Energy Efficiency Advisor**
 
-Nel 2030, con gli obiettivi europei che richiedono il 42,5% di rinnovabili nel mix energetico finale entro il 2030, ogni paese europeo ha bisogno di migliaia di questi professionisti — per progettare impianti, ottenere autorizzazioni, gestire le reti, sviluppare le tecnologie di accumulo.
+Analizza i consumi energetici di edifici, impianti e processi produttivi e progetta interventi mirati per ridurre gli sprechi, abbassare le bollette e migliorare le certificazioni energetiche.
 
-In Italia, il piano PNIEC (Piano Nazionale Integrato per l'Energia e il Clima) richiede di installare oltre 70 GW di fotovoltaico aggiuntivo entro il 2030. Per confronto, tutta la potenza installata esistente nel 2023 era di circa 22 GW. Questo significa triplicare la capacità in 7 anni.
+Dove lavora: ESCo (Energy Service Company), studi di ingegneria energetica, pubblica amministrazione, grandi condomini e patrimoni immobiliari.
 
-Dove lavora: aziende di energia (Enel Green Power, ERG, Eni), studi di ingegneria, autorità regolatrici (ARERA), Ministero dell'Ambiente e della Sicurezza Energetica, comuni e regioni.
+Competenze chiave che inizia a costruire da qui: auditing energetico · termotecnica · normativa CEE/APE · certificazioni energetiche · domotica
 
-Competenze chiave che inizia a costruire da qui: fisica delle conversioni energetiche · analisi dei dati di produzione e consumo · progettazione di impianti · economia dell'energia · normative ambientali
+*"L'energia più economica è quella che non consumi. Ma qualcuno deve dimostrarlo con i dati."*
 
-*"Non vendo più energia dal sottosuolo. La raccoglie dal cielo e dal vento — e il mio lavoro è fare in modo che arrivi dove serve, quando serve."*
+---
 
 ---
 

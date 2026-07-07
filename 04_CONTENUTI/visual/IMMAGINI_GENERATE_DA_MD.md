@@ -1,6 +1,6 @@
 # Immagini generate dai Markdown
 
-Data generazione: 2026-05-09
+Data generazione: 2026-05-11
 
 Questa è una prima passata completa in SVG editabile: una tavola visuale per ogni file `*_completa.md` in `08_TESTI/`.
 Le immagini sono pensate come base controllabile per il libro: callout, testi e struttura restano modificabili; per gli asset finali più ricchi si può sostituire il soggetto centrale con una generazione raster.
@@ -11,6 +11,8 @@ Le immagini sono pensate come base controllabile per il libro: callout, testi e 
 | MC-DIG-1-02 | Ricerca e valutazione delle fonti online | `08_TESTI/classe_1/DIG/MC-DIG-1-02_completa.md` | `04_CONTENUTI/visual/MC-DIG-1-02/MC-DIG-1-02_immagine_da_md.svg` |
 | MC-DIS-1-01 | Basi del disegno e costruzioni geometriche | `08_TESTI/classe_1/DIS/MC-DIS-1-01_completa.md` | `04_CONTENUTI/visual/MC-DIS-1-01/MC-DIS-1-01_immagine_da_md.svg` |
 | MC-DIS-1-02 | Scale di rappresentazione e quotatura di base | `08_TESTI/classe_1/DIS/MC-DIS-1-02_completa.md` | `04_CONTENUTI/visual/MC-DIS-1-02/MC-DIS-1-02_immagine_da_md.svg` |
+| MC-INF-1-01 | MC INF 1 01 — Come fa una macchina a capire una foto? | `08_TESTI/classe_1/INF/MC-INF-1-01_completa.md` | `04_CONTENUTI/visual/MC-INF-1-01/MC-INF-1-01_immagine_da_md.svg` |
+| MC-INF-1-02 | MC INF 1 02 — Come si insegna a una macchina a fare le cose? | `08_TESTI/classe_1/INF/MC-INF-1-02_completa.md` | `04_CONTENUTI/visual/MC-INF-1-02/MC-INF-1-02_immagine_da_md.svg` |
 | MC-MAT-1-01 | Classificare i materiali per proprietà | `08_TESTI/classe_1/MAT/MC-MAT-1-01_completa.md` | `04_CONTENUTI/visual/MC-MAT-1-01/MC-MAT-1-01_immagine_da_md.svg` |
 | MC-MAT-1-02 | Ciclo di vita dei materiali e cicli tecnologici | `08_TESTI/classe_1/MAT/MC-MAT-1-02_completa.md` | `04_CONTENUTI/visual/MC-MAT-1-02/MC-MAT-1-02_immagine_da_md.svg` |
 | MC-MAT-1-03 | Materiali innovativi e sostenibili | `08_TESTI/classe_1/MAT/MC-MAT-1-03_completa.md` | `04_CONTENUTI/visual/MC-MAT-1-03/MC-MAT-1-03_immagine_da_md.svg` |
@@ -35,6 +37,8 @@ Le immagini sono pensate come base controllabile per il libro: callout, testi e 
 | MC-DIG-2-04 | Cifratura, sicurezza informatica e identità in rete | `08_TESTI/classe_2/DIG/MC-DIG-2-04_completa.md` | `04_CONTENUTI/visual/MC-DIG-2-04/MC-DIG-2-04_immagine_da_md.svg` |
 | MC-DIS-2-01 | Proiezioni ortogonali e sezioni | `08_TESTI/classe_2/DIS/MC-DIS-2-01_completa.md` | `04_CONTENUTI/visual/MC-DIS-2-01/MC-DIS-2-01_immagine_da_md.svg` |
 | MC-DIS-2-02 | Assonometria cavaliera e isometrica | `08_TESTI/classe_2/DIS/MC-DIS-2-02_completa.md` | `04_CONTENUTI/visual/MC-DIS-2-02/MC-DIS-2-02_immagine_da_md.svg` |
+| MC-INF-2-01 | MC INF 2 01 — Chi organizza tutto quello che succede dentro al computer? | `08_TESTI/classe_2/INF/MC-INF-2-01_completa.md` | `04_CONTENUTI/visual/MC-INF-2-01/MC-INF-2-01_immagine_da_md.svg` |
+| MC-INF-2-02 | MC INF 2 02 — Come si protegge un segreto nell'era digitale? | `08_TESTI/classe_2/INF/MC-INF-2-02_completa.md` | `04_CONTENUTI/visual/MC-INF-2-02/MC-INF-2-02_immagine_da_md.svg` |
 | MC-COM-3-01 | Telecomunicazioni e reti | `08_TESTI/classe_3/COM/MC-COM-3-01_completa.md` | `04_CONTENUTI/visual/MC-COM-3-01/MC-COM-3-01_immagine_da_md.svg` |
 | MC-COM-3-02 | Produzione di contenuti digitali responsabili | `08_TESTI/classe_3/COM/MC-COM-3-02_completa.md` | `04_CONTENUTI/visual/MC-COM-3-02/MC-COM-3-02_immagine_da_md.svg` |
 | MC-COM-3-03 | Sistemi di trasporto e mobilità sostenibile | `08_TESTI/classe_3/COM/MC-COM-3-03_completa.md` | `04_CONTENUTI/visual/MC-COM-3-03/MC-COM-3-03_immagine_da_md.svg` |
@@ -53,6 +57,8 @@ Le immagini sono pensate come base controllabile per il libro: callout, testi e 
 | MC-ENE-3-04 | Elettricità e circuiti | `08_TESTI/classe_3/ENE/MC-ENE-3-04_completa.md` | `04_CONTENUTI/visual/MC-ENE-3-04/MC-ENE-3-04_immagine_da_md.svg` |
 | MC-ENE-3-05 | Macchine termiche e motori | `08_TESTI/classe_3/ENE/MC-ENE-3-05_completa.md` | `04_CONTENUTI/visual/MC-ENE-3-05/MC-ENE-3-05_immagine_da_md.svg` |
 | MC-ENE-3-06 | Accumulo energetico e smart grid | `08_TESTI/classe_3/ENE/MC-ENE-3-06_completa.md` | `04_CONTENUTI/visual/MC-ENE-3-06/MC-ENE-3-06_immagine_da_md.svg` |
+| MC-INF-3-01 | MC INF 3 01 — Quando gli oggetti parlano: sensori, dati e Internet delle Cose | `08_TESTI/classe_3/INF/MC-INF-3-01_completa.md` | `04_CONTENUTI/visual/MC-INF-3-01/MC-INF-3-01_immagine_da_md.svg` |
+| MC-INF-3-02 | MC INF 3 02 — Come imparano le macchine? E cosa possono sbagliare? | `08_TESTI/classe_3/INF/MC-INF-3-02_completa.md` | `04_CONTENUTI/visual/MC-INF-3-02/MC-INF-3-02_immagine_da_md.svg` |
 | MC-SIS-3-01 | Sistemi economici e processi produttivi | `08_TESTI/classe_3/SIS/MC-SIS-3-01_completa.md` | `04_CONTENUTI/visual/MC-SIS-3-01/MC-SIS-3-01_immagine_da_md.svg` |
 | MC-SIS-3-02 | Economia globale, lavoro e sostenibilità | `08_TESTI/classe_3/SIS/MC-SIS-3-02_completa.md` | `04_CONTENUTI/visual/MC-SIS-3-02/MC-SIS-3-02_immagine_da_md.svg` |
 | MC-SIS-3-03 | Imprenditorialità e innovazione tecnologica | `08_TESTI/classe_3/SIS/MC-SIS-3-03_completa.md` | `04_CONTENUTI/visual/MC-SIS-3-03/MC-SIS-3-03_immagine_da_md.svg` |
