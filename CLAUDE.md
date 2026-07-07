@@ -2,7 +2,7 @@
 
 **Progetto:** Libro di Tecnologia + Sistema Agenti + App Personalizzata
 **Autore:** Antonio Scaramuzzino
-**Versione:** 1.1 — Maggio 2026
+**Versione:** 1.2 — Luglio 2026
 
 ---
 
@@ -36,6 +36,7 @@ TecnologIA/
 │   └── NB-ARTICOLI/
 ├── 04_CONTENUTI/                      ← asset didattici generati dagli agenti
 │   ├── quiz/ · microlearning/ · visual/ · flashcard/ · compiti_realta/
+│   └── visual_esplora/                ← 56 brief con prompt descrittivi per immagini ESPLORA + generatore Python
 ├── 05_APP/                            ← frontend React/Next.js per studenti
 ├── 06_SYLLABUS/                       ← syllabus annuali (docenti, studenti, famiglie)
 │   ├── classe_1/ · classe_2/ · classe_3/
@@ -277,8 +278,9 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 ## 10. BACKLOG PRIORITIZZATO (stato attuale)
 
 > **Target MC aggiornato: 52** (da 48) — vedi INDICE_ProfTecnologIA_v1.0.md §5.1 per motivazione.
-> **Stato al 2026-05-10:** 50 MC JSON in matrice · 56 testi _completa.md (50 standard + 6 INF) · app Next.js buildata · syllabus completi · design system ✅
+> **Stato al 2026-07-07:** **52 MC JSON in matrice** (50 precedenti + MC-DIG-1-03 + MC-DIG-2-05) · 56 testi _completa.md (50 standard + 6 INF, testi per le 2 nuove MC da produrre) · app Next.js buildata (69 pagine statiche, 0 errori TS) · syllabus completi · design system ✅ · template MC v2 (navigator **6 tab**: INNESCA/ESPLORA/OSSERVA/SPERIMENTA/AGISCI/RIPASSA) ✅ · microlearning JSON (52 MC × Process + Checklist) ✅ · quiz 18 domande (52 MC × 6F+6I+6A) ✅ · flashcard 18 card (52 MC) ✅ · Analisi allineamento IN2025 completata ✅ (`00_ARCHITETTURA/ANALISI_IN2025_aggiornamento_MC.md`) · 6 MC aggiornate con riferimenti DM 183/2024 ✅ · quiz+flashcard rigenerati per 6 MC con DM 183/2024 EV (D1/D2/D3) ✅ · Pagina /glossario app ✅
 > **Risoluzione DIG/INF:** MC-DIG-2-03/04 e MC-DIG-3-03/04 coesistono in matrice. Area INF (Informatica) è separata con 6 testi in 08_TESTI ma ancora senza JSON in matrice.
+> **Allineamento DM 183/2024:** EV framework aggiornato in MC-DIG-1-02, MC-DIG-2-02, MC-DIG-2-04, MC-DIG-3-02, MC-COM-3-06, MC-COM-3-02 con riferimenti espliciti ai Traguardi D1/D2/D3 di Cittadinanza digitale.
 
 ### Architettura e indice
 
@@ -290,6 +292,9 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 | ✅ | Aggiornare ref IN 2012→2025 in tutte le MC esistenti | ✅ Fatto — tutte le 50 MC usano già "IN 2025 (D.M. n. 221/2025)" |
 | ✅ | Aggiornare MC-MAT-1-02 con Cicli tecnologici (IN 2025) | ✅ Fatto — campo IN aggiornato con "Cicli tecnologici" |
 | ⚠️ | ~~Aggiungere MC-DIG-2-03/04 (Sistema operativo, Cifratura)~~ | ⚠️ Ridefinito — DIG-2-03/04 e DIG-3-03/04 esistono in matrice; INF-2-01/02 coprono il versante informatico. |
+| ✅ | Analisi allineamento IN2025 e DM 183/2024 → 50 MC esistenti | ✅ Fatto — 2026-07-07 · `00_ARCHITETTURA/ANALISI_IN2025_aggiornamento_MC.md` |
+| ✅ | Aggiungere MC-DIG-1-03 (Pensiero computazionale) e MC-DIG-2-05 (Benessere digitale) | ✅ Fatto — 2026-07-07 · target 52 raggiunto |
+| ✅ | Aggiornare EV framework in 6 MC con riferimenti DM 183/2024 Traguardi D1/D2/D3 | ✅ Fatto — 2026-07-07 |
 | 0 | ⚡ **Decidere target definitivo MC**: il target 52 include o esclude le 6 MC-INF? | ⬜ Decisione editoriale da prendere |
 | 1 | Espandere MC Advanced da 4 a 6 pagine nell'Indice (12 MC interessate) | ⬜ Da fare |
 | 1 | Aggiungere 2 UDA interdisciplinari bonus all'Indice (sezione conclusiva per anno) | ⬜ Da fare |
@@ -298,27 +303,29 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 
 | Priorità | Task | Stato |
 |----------|------|-------|
-| ✅ | Portare le MC a 50 JSON (da 30) | ✅ Fatto — 50 MC JSON in 01_MATRICE_MC |
+| ✅ | Portare le MC a 52 JSON (target) | ✅ Fatto — 52 MC JSON in 01_MATRICE_MC (2026-07-07) |
 | ✅ | MC-MAT-1-05 (Metalli) e MC-MAT-1-06 (Fibre/compositi) come JSON | ✅ Fatto |
 | ✅ | Documentare progressione verticale DIG/DIS come file dedicato | ✅ Fatto — `01_MATRICE_MC/PROGRESSIONE_VERTICALE_DIG_DIS.md` |
-| ✅ | Campo `prerequisiti` in ogni MC (struttura catena dipendenze) | ✅ Parziale — 40/50 MC con prerequisiti compilati, 10 ancora vuoti |
-| ✅ | Campi v2.0 (`hook_audio`, `professione_futura`, `sdg_principale`, `clil_termini`, `uda_collegata`) | ✅ Parziale — 11/50 MC aggiornate (MAT-1-01/02, DIG-2-03/04, DIG-3-03/04, ENE-3-05/06, COM-3-05/06, DIS-2-02) |
+| ✅ | Campo `prerequisiti` in ogni MC (struttura catena dipendenze) | ✅ Fatto — 42/50 compilati; 8 vuoti sono le MC-*-01 di ogni area (primo della sequenza, nessun prerequisito per design) |
+| ✅ | Campi v2.0 (`hook_audio`, `professione_futura`, `clil_termini`, `uda_collegata`) | ✅ Fatto — 50/50 MC aggiornate |
+| ✅ | Campo v2.0 `sdg_principale` | ✅ Parziale — 11/50 MC; 39 ancora senza |
 | 1 | Creare 6 JSON MC-INF in `01_MATRICE_MC/` (testi già pronti in 08_TESTI) | ⬜ Da fare — INF-1-01/02, INF-2-01/02, INF-3-01/02 |
-| 1 | Completare prerequisiti nelle 10 MC con campo vuoto | ⬜ Da fare |
-| 1 | Aggiungere campi v2.0 alle 39 MC ancora senza | ⬜ Da fare |
-| 2 | Raggiungere target 52 MC JSON (mancano 2 rispetto alle 50 attuali, escluse INF) | ⬜ Da fare — identificare quali aree espandere (DIS o SIS candidati) |
+| ✅ | Completare `sdg_principale` nelle 39 MC mancanti | ✅ Fatto — 2026-07-07 · tutte le 52 MC hanno `sdg_principale` come intero |
+| ✅ | Raggiungere target 52 MC JSON | ✅ Fatto — MC-DIG-1-03 + MC-DIG-2-05 (2026-07-07) |
+| ✅ | Creare testi _completa.md per MC-DIG-1-03 e MC-DIG-2-05 | ✅ Fatto — 2026-07-07 · `08_TESTI/classe_1/DIG/MC-DIG-1-03_completa.md` (Pensiero computazionale) · `08_TESTI/classe_2/DIG/MC-DIG-2-05_completa.md` (Benessere digitale) |
 
 ### Struttura editoriale e contenuti
 
 | Priorità | Task | Stato |
 |----------|------|-------|
 | ✅ | Testi narrativi (ESPLORA) per tutte le MC | ✅ Fatto — 56 _completa.md (50 standard + 6 INF) |
-| ✅ | Hook audio (script podcast) per MC pilota | ✅ Parziale — ~34 hook presenti; mancano 22 MC (ALI-2-04/05/06, AMB-2-04/05/06, COM-3-05/06, DIG-2-03/04, DIG-3-03/04, DIS-1-02, DIS-2-02, DIS-3-02, ENE-3-04/05/06, MAT-1-05/06, SIS-3-03/04) |
+| ✅ | Hook audio (script podcast) per tutte le MC | ✅ Fatto — 56 hook presenti (50 standard + 6 INF), copertura completa |
 | ✅ | SVG visual per tutte le MC standard | ✅ Fatto — SVG generati per tutte le 50 MC |
+| ✅ | Visual brief ESPLORA v2 — generatore + 56 file con 423 prompt descrittivi di scena | ✅ Fatto — 2026-05-12 · `04_CONTENUTI/visual_esplora/_generate_visual_briefs.py` + `_INDEX.md` · 10 tipologie immagine (timeline, flowchart, comparison, anatomy, taxonomy, formula, case, scene, diagram, map) · vocabolario visivo per area · etichette italiane curate con filtro garbage |
 | ✅ | Brain integration (RAPPORTO_INTEGRAZIONI_brain_v1.0.md) | ✅ Fatto — 14 integrazioni applicate su 12 MC; ~8 integrazioni residue raccomandate |
-| 2 | Completare hook script per le 22 MC mancanti | ⬜ Da fare |
 | 2 | Applicare integrazioni brain residue (vedi `00_ARCHITETTURA/RAPPORTO_INTEGRAZIONI_brain_v1.0.md`) | ⬜ Da fare |
-| 3 | Creare asset in `04_CONTENUTI/compiti_realta/`, `flashcard/`, `quiz/` (cartelle ancora vuote) | ⬜ Da fare |
+| ✅ | Quiz (52 MC × 18 domande 6F+6I+6A con feedback) e Flashcard JSON (52 MC) | ✅ Fatto — 2026-05-11 · aggiornato 2026-07-07 · in `05_APP/data/quiz/` e `05_APP/data/flashcards/` |
+| 3 | Creare asset in `04_CONTENUTI/compiti_realta/`, `flashcard/`, `quiz/` (cartelle ancora vuote) | ⬜ Da fare — sincronizzare con quelli già generati in `05_APP/data/` |
 
 ### Syllabus
 
@@ -326,6 +333,15 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 |----------|------|-------|
 | ✅ | Syllabus annuale dettagliato per docenti (tutte e 3 le classi) | ✅ Fatto |
 | ✅ | Versione syllabus per studenti e famiglie (tutte e 3 le classi) | ✅ Fatto |
+
+### Guide operative
+
+| Priorità | Task | Stato |
+|----------|------|-------|
+| ✅ | Guida prompt patterns visual ESPLORA v1.0 | ✅ Fatto — 2026-05-12 · `07_GUIDE/operative/PROMPT_PATTERNS_visual_ESPLORA.md` · regole non negoziabili, 10 tipologie, vocabolario per area, esempi prima/dopo, manutenzione |
+| 2 | Guida operativa per Agente Curatore (config NB-* + ricerca video) | ⬜ Da fare |
+| 2 | Guida operativa per Agente CARBLE-CDD (workflow validazione + report) | ⬜ Da fare |
+| 3 | Guida operativa NotebookLM (set-up 3 notebook + ingestion) | ⬜ Da fare |
 
 ### Sistema agenti e NotebookLM
 
@@ -344,14 +360,45 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 
 | Priorità | Task | Stato |
 |----------|------|-------|
-| ✅ | App Next.js con navigazione MC (struttura per anno/area/MC) | ✅ Fatto — `05_APP/tecnologia-sito-web/` buildata e pronta per deploy Netlify |
+| ✅ | App Next.js con navigazione MC (struttura per anno/area/MC) | ✅ Fatto — `05_APP/tecnologia-sito-web/` buildata, 69 pagine statiche, 0 errori TypeScript |
 | ✅ | Design system + design tokens | ✅ Fatto — `TecnologIA_Design_System.html` + `design-tokens.json` |
-| 4 | Sistema tracciamento progressi studente per MC | ⬜ Da verificare/completare nell'app |
-| 4 | Quiz adattivi (3 livelli per MC) | ⬜ Da verificare/completare nell'app |
-| 4 | Deploy Netlify | ⬜ Da fare — guida pronta in `DEPLOY_NETLIFY.md` |
+| ✅ | Template MC v2 — navigator **6 tab** sticky (INNESCA/ESPLORA/OSSERVA/SPERIMENTA/AGISCI/RIPASSA) | ✅ Fatto — 2026-05-11 · `MCNavigator`, `AccordionSection`, `LevelTabs`, `MCPageClient` |
+| ✅ | Callout semantici (5 tipi: safety, physics, error, question, info) + CSS custom properties | ✅ Fatto — 2026-05-11 · `CalloutBox.tsx` + `globals.css` |
+| ✅ | RubricaDrawer — estrazione rubrica a runtime da AGISCI, drawer mobile/desktop | ✅ Fatto — 2026-05-11 · `RubricaDrawer.tsx` |
+| ✅ | ResourcesPanel — pannello risorse aggregate (audio, video, quiz, flashcard) in INNESCA | ✅ Fatto — 2026-05-11 · `ResourcesPanel.tsx` |
+| ✅ | ProfessioneCard — card professione con img4-professione + testo MD + CompetenzaTag CLIL | ✅ Fatto — `ProfessioneCard.tsx` + `CompetenzaTag.tsx` |
+| ✅ | Tab RIPASSA — ProcessWidget + ChecklistWidget + QuizWidget + FlashcardDeck unificati | ✅ Fatto — 2026-05-11 |
+| ✅ | Microlearning JSON (52 MC × Process + Checklist) | ✅ Fatto — `data/microlearning/` · validati CARBLE-CDD |
+| ✅ | Fix breadcrumb area link (case-sensitive GitHub Pages) + generateMetadata titolo dinamico | ✅ Fatto — 2026-05-11 · titolo formato "ProfTecnologIA {Area} — {Titolo MC}" |
+| ✅ | Quiz reali (52 MC × 18 domande, 6F+6I+6A con feedback e riferimenti) | ✅ Fatto — `data/quiz/` · 6 MC DM 183/2024 rigenerate 2026-07-07 |
+| ✅ | Flashcard JSON (52 MC × 18 card con tag livello) | ✅ Fatto — `data/flashcards/` · 6 MC DM 183/2024 rigenerate 2026-07-07 |
+| ✅ | SiteFooter con versione v0.1 | ✅ Fatto |
+| ✅ | Configurazioni deploy GitHub Pages + Netlify + Vercel | ✅ Fatto — `.github/workflows/deploy.yml` + `netlify.toml` + `vercel.json` (framework: null per static export) |
+| ✅ | FlashcardDeck layout verticale a griglia — card espandibili, no 3D flip | ✅ Fatto — 2026-05-13 |
+| ✅ | Durate audio reali da MP3 — aggiornate in tutti i 50 JSON MC | ✅ Fatto — 2026-05-13 |
+| ✅ | Durate hook audio verificate e corrette in tutti i _completa.md (42 file) | ✅ Fatto — 2026-07-07 · estratte da JSON (`durata_secondi`/`durata_sec`), range 36 sec – 4 min 46 sec |
+| ✅ | CSS RIPASSA: ProcessWidget + FlashcardDeck — text-xs → text-sm per etichette, titoli step, bottoni | ✅ Fatto — 2026-07-07 |
+| ✅ | Transcript hook: rimosso blocco METADATI/JSON/NOTE DI REGIA | ✅ Fatto — 2026-05-13 · `content-loader.ts` |
+| ✅ | professione_futura.titolo allineato al testo OSSERVA (44 MC corrette) | ✅ Fatto — 2026-05-13 |
+| ✅ | Documenti architettura serviti in public/docs/ (INDICE + architettura v2.2) | ✅ Fatto — 2026-05-13 |
+| ✅ | Pagina architettura: link funzionanti a INDICE e architettura v2.2 | ✅ Fatto — 2026-05-13 |
+| 2 | Deploy Netlify definitivo | ⬜ Da fare — guida pronta in `DEPLOY_NETLIFY.md` |
+| 2 | Stepper progress indicator mobile — P2.1 (`refactor-backlog.md`) | ⬜ Da fare |
+| 2 | Keyboard navigation MCNavigator (ArrowLeft/ArrowRight) — WCAG WAI-ARIA Tabs — P2.2 | ⬜ Da fare |
+| 2 | Focus management al cambio tab — WCAG 2.4.3 — P2.3 | ⬜ Da fare |
+| 2 | Scroll-to-top pannello al cambio tab (UX mobile) — P2.4 | ⬜ Da fare |
+| 2 | AccordionSection: opzione "espandi tutti" — P2.5 | ⬜ Da fare |
+| 2 | RubricaDrawer: versione stampabile @media print — P2.6 | ⬜ Da fare |
+| 3 | URL hash sync per deep link zona (#innesca, #esplora...) — P3.2 | ⬜ Da fare |
+| 3 | Aside mobile — contenuti Framework/Tag/Prerequisiti su pannello espandibile (P3.5) | ⬜ Da fare |
+| 3 | Audit WCAG AA contrasti + focus visibili | ⬜ Da fare — vedi `docs/refactor-backlog.md` |
+| 3 | Audit performance immagini AI (WebP + srcset + lazy loading) | ⬜ Da fare |
+| 3 | Unificare ReadableBodyInTab / ReadableText in `lib/readable-text.tsx` (debt D1) | ⬜ Da fare |
+| 4 | Sistema tracciamento progressi studente per MC (useProgress.ts già in lib/) | ⬜ Da collegare al MCNavigator |
+| 4 | Sistema AI Coach integrato per ogni MC | ⬜ Da fare |
 
 Aggiorna questo backlog ad ogni sessione di lavoro.
 
 ---
 
-*Ultima modifica: 2026-05-10*
+*Ultima modifica: 2026-07-07 — Sessione 3: quiz+flashcard rigenerati per 6 MC con DM 183/2024 EV (MC-DIG-1-02, MC-DIG-2-02, MC-DIG-2-04, MC-DIG-3-02, MC-COM-3-06, MC-COM-3-02) ✅ · LC.nota aggiornato in 22 MC ✅ · EC.nota aggiornato in 4 MC ✅ · contatori quiz/flashcard/microlearning aggiornati a 52 MC · CLAUDE.md v1.3*
