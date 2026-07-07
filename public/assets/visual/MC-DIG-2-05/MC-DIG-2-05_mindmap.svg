@@ -1,0 +1,67 @@
+<svg viewBox="0 0 800 480" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,-apple-system,sans-serif">
+  <rect width="800" height="480" fill="#F0FDF4" rx="14"/>
+  <!-- Nodo centrale -->
+  <ellipse cx="400" cy="240" rx="92" ry="46" fill="#15803D"/>
+  <text x="400" y="234" font-size="13" font-weight="900" fill="white" text-anchor="middle">💻 BENESSERE</text>
+  <text x="400" y="252" font-size="13" font-weight="900" fill="white" text-anchor="middle">DIGITALE</text>
+
+  <!-- Branch 1: Tempo schermo -->
+  <line x1="310" y1="214" x2="178" y2="128" stroke="#6366F1" stroke-width="2.5"/>
+  <rect x="60" y="88" width="148" height="80" rx="10" fill="#EEF2FF" stroke="#6366F1" stroke-width="2"/>
+  <text x="134" y="116" font-size="12" font-weight="800" fill="#3730A3" text-anchor="middle">⏱ Tempo schermo</text>
+  <text x="134" y="134" font-size="10" fill="#4338CA" text-anchor="middle">Regola 20-20-20</text>
+  <text x="134" y="150" font-size="10" fill="#4338CA" text-anchor="middle">Pause attive</text>
+
+  <!-- Branch 2: Social media -->
+  <line x1="350" y1="196" x2="238" y2="100" stroke="#EC4899" stroke-width="2.5"/>
+  <rect x="152" y="48" width="148" height="80" rx="10" fill="#FDF2F8" stroke="#EC4899" stroke-width="2"/>
+  <text x="226" y="76" font-size="12" font-weight="800" fill="#9D174D" text-anchor="middle">📱 Social media</text>
+  <text x="226" y="94" font-size="10" fill="#BE185D" text-anchor="middle">Like e dopamina</text>
+  <text x="226" y="110" font-size="10" fill="#BE185D" text-anchor="middle">Ricompensa variabile</text>
+
+  <!-- Branch 3: Cyberbullismo -->
+  <line x1="400" y1="194" x2="400" y2="90" stroke="#F59E0B" stroke-width="2.5"/>
+  <rect x="310" y="28" width="180" height="68" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="56" font-size="12" font-weight="800" fill="#92400E" text-anchor="middle">⚠️ Cyberbullismo</text>
+  <text x="400" y="74" font-size="10" fill="#B45309" text-anchor="middle">Vittima · Testimone · Autore</text>
+  <text x="400" y="88" font-size="10" fill="#B45309" text-anchor="middle">Come reagire</text>
+
+  <!-- Branch 4: Privacy -->
+  <line x1="450" y1="196" x2="562" y2="100" stroke="#0EA5E9" stroke-width="2.5"/>
+  <rect x="498" y="48" width="148" height="80" rx="10" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+  <text x="572" y="76" font-size="12" font-weight="800" fill="#0C4A6E" text-anchor="middle">🔒 Privacy</text>
+  <text x="572" y="94" font-size="10" fill="#0369A1" text-anchor="middle">Dati personali</text>
+  <text x="572" y="110" font-size="10" fill="#0369A1" text-anchor="middle">Impronta digitale</text>
+
+  <!-- Branch 5: Dipendenza -->
+  <line x1="490" y1="214" x2="622" y2="128" stroke="#DC2626" stroke-width="2.5"/>
+  <rect x="590" y="88" width="148" height="80" rx="10" fill="#FEF2F2" stroke="#DC2626" stroke-width="2"/>
+  <text x="664" y="116" font-size="12" font-weight="800" fill="#991B1B" text-anchor="middle">🎮 Dipendenze tech</text>
+  <text x="664" y="134" font-size="10" fill="#DC2626" text-anchor="middle">Gaming · Scroll</text>
+  <text x="664" y="150" font-size="10" fill="#DC2626" text-anchor="middle">Segnali di allarme</text>
+
+  <!-- Branch 6: Autonomia digitale -->
+  <line x1="490" y1="266" x2="622" y2="352" stroke="#10B981" stroke-width="2.5"/>
+  <rect x="590" y="312" width="148" height="80" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="664" y="340" font-size="12" font-weight="800" fill="#065F46" text-anchor="middle">✅ Autonomia</text>
+  <text x="664" y="358" font-size="10" fill="#047857" text-anchor="middle">Scegliere quando</text>
+  <text x="664" y="374" font-size="10" fill="#047857" text-anchor="middle">connettersi</text>
+
+  <!-- Branch 7: Benessere fisico -->
+  <line x1="400" y1="286" x2="400" y2="390" stroke="#8B5CF6" stroke-width="2.5"/>
+  <rect x="310" y="388" width="180" height="68" rx="10" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/>
+  <text x="400" y="416" font-size="12" font-weight="800" fill="#5B21B6" text-anchor="middle">👁️ Benessere fisico</text>
+  <text x="400" y="434" font-size="10" fill="#6D28D9" text-anchor="middle">Occhi · Sonno · Postura</text>
+  <text x="400" y="448" font-size="10" fill="#6D28D9" text-anchor="middle">Attività offline</text>
+
+  <!-- Branch 8: Relazioni reali -->
+  <line x1="310" y1="266" x2="178" y2="352" stroke="#F97316" stroke-width="2.5"/>
+  <rect x="60" y="312" width="148" height="80" rx="10" fill="#FFF7ED" stroke="#F97316" stroke-width="2"/>
+  <text x="134" y="340" font-size="12" font-weight="800" fill="#9A3412" text-anchor="middle">🤝 Relazioni reali</text>
+  <text x="134" y="358" font-size="10" fill="#C2410C" text-anchor="middle">Online vs offline</text>
+  <text x="134" y="374" font-size="10" fill="#C2410C" text-anchor="middle">Qualità dei legami</text>
+
+  <!-- DigComp label -->
+  <rect x="30" y="440" width="740" height="28" rx="8" fill="#15803D" opacity="0.12"/>
+  <text x="400" y="459" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">DigComp 3.0 · Livello Intermediate (I) · MC-DIG-2-05 · Classe 2ª</text>
+</svg>
