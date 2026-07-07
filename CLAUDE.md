@@ -2,7 +2,7 @@
 
 **Progetto:** Libro di Tecnologia + Sistema Agenti + App Personalizzata
 **Autore:** Antonio Scaramuzzino
-**Versione:** 1.2 — Luglio 2026
+**Versione:** 1.4 — Luglio 2026
 
 ---
 
@@ -49,7 +49,7 @@ TecnologIA/
 │   ├── classe_1/  → MAT · DIS · DIG
 │   ├── classe_2/  → ALI · AMB · DIS · DIG
 │   └── classe_3/  → ENE · COM · SIS · DIS · DIG
-└── O9_INDICAZIONI_NAZIONALI/          ← Nuove IN 2025 (D.M. n. 221/2025) + analisi delta
+└── 09_INDICAZIONI_NAZIONALI/          ← Nuove IN 2025 (D.M. n. 221/2025) + analisi delta
 ```
 
 ### Distinzione chiave tra cartelle simili
@@ -278,7 +278,7 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 ## 10. BACKLOG PRIORITIZZATO (stato attuale)
 
 > **Target MC aggiornato: 52** (da 48) — vedi INDICE_ProfTecnologIA_v1.0.md §5.1 per motivazione.
-> **Stato al 2026-07-07:** **52 MC JSON in matrice** (50 precedenti + MC-DIG-1-03 + MC-DIG-2-05) · 56 testi _completa.md (50 standard + 6 INF, testi per le 2 nuove MC da produrre) · app Next.js buildata (69 pagine statiche, 0 errori TS) · syllabus completi · design system ✅ · template MC v2 (navigator **6 tab**: INNESCA/ESPLORA/OSSERVA/SPERIMENTA/AGISCI/RIPASSA) ✅ · microlearning JSON (52 MC × Process + Checklist) ✅ · quiz 18 domande (52 MC × 6F+6I+6A) ✅ · flashcard 18 card (52 MC) ✅ · Analisi allineamento IN2025 completata ✅ (`00_ARCHITETTURA/ANALISI_IN2025_aggiornamento_MC.md`) · 6 MC aggiornate con riferimenti DM 183/2024 ✅ · quiz+flashcard rigenerati per 6 MC con DM 183/2024 EV (D1/D2/D3) ✅ · Pagina /glossario app ✅
+> **Stato al 2026-07-07:** **52 MC JSON in matrice** (50 precedenti + MC-DIG-1-03 + MC-DIG-2-05) · 56 testi _completa.md (50 standard + 6 INF, testi per le 2 nuove MC da produrre) · app Next.js buildata (69 pagine statiche, 0 errori TS) · syllabus completi · design system ✅ · template MC v2 (navigator **8 tab**: INNESCA/ESPLORA/OSSERVA/SPERIMENTA/AGISCI/RIPASSA + PROFESSIONI + CLIL) ✅ · microlearning JSON (52 MC × Process + Checklist) ✅ · quiz 18 domande (52 MC × 6F+6I+6A) ✅ · flashcard 18 card (52 MC) ✅ · Analisi allineamento IN2025 completata ✅ (`00_ARCHITETTURA/ANALISI_IN2025_aggiornamento_MC.md`) · 6 MC aggiornate con riferimenti DM 183/2024 ✅ · quiz+flashcard rigenerati per 6 MC con DM 183/2024 EV (D1/D2/D3) ✅ · Pagina /glossario app ✅
 > **Risoluzione DIG/INF:** MC-DIG-2-03/04 e MC-DIG-3-03/04 coesistono in matrice. Area INF (Informatica) è separata con 6 testi in 08_TESTI ma ancora senza JSON in matrice.
 > **Allineamento DM 183/2024:** EV framework aggiornato in MC-DIG-1-02, MC-DIG-2-02, MC-DIG-2-04, MC-DIG-3-02, MC-COM-3-06, MC-COM-3-02 con riferimenti espliciti ai Traguardi D1/D2/D3 di Cittadinanza digitale.
 

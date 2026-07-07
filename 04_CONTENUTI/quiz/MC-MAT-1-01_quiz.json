@@ -1,0 +1,242 @@
+{
+  "mc_id": "MC-MAT-1-01",
+  "titolo": "Classificare i materiali per proprietà",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Quale proprietà misura la capacità di un materiale di condurre il calore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Elasticità"
+        },
+        {
+          "id": "b",
+          "testo": "Conduttività termica",
+          "corretto": true,
+          "feedback": "Esatto! La conduttività termica misura quanto bene un materiale trasmette calore."
+        },
+        {
+          "id": "c",
+          "testo": "Trasparenza"
+        },
+        {
+          "id": "d",
+          "testo": "Durezza",
+          "feedback": "La durezza misura la resistenza ai graffi, non la trasmissione di calore."
+        }
+      ],
+      "spiegazione": "La conduttività termica spiega perché le padelle sono di metallo e i manici di plastica."
+    },
+    {
+      "livello": "F",
+      "domanda": "Perché le bottiglie d'acqua sono spesso di plastica invece che di vetro?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché la plastica è più trasparente"
+        },
+        {
+          "id": "b",
+          "testo": "Perché la plastica è più leggera e resistente agli urti",
+          "corretto": true,
+          "feedback": "Esatto! Peso e resistenza agli urti sono le proprietà decisive per un contenitore portatile."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il vetro non è riciclabile"
+        },
+        {
+          "id": "d",
+          "testo": "Perché la plastica è più costosa",
+          "feedback": "La plastica è generalmente meno costosa del vetro."
+        }
+      ],
+      "spiegazione": "Ogni materiale viene scelto in base alle proprietà più utili per quella specifica funzione."
+    },
+    {
+      "livello": "F",
+      "domanda": "Quale materiale è un buon isolante elettrico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Rame"
+        },
+        {
+          "id": "b",
+          "testo": "Alluminio"
+        },
+        {
+          "id": "c",
+          "testo": "Plastica",
+          "corretto": true,
+          "feedback": "Esatto! La plastica non conduce l'elettricità, per questo riveste i cavi elettrici."
+        },
+        {
+          "id": "d",
+          "testo": "Ferro",
+          "feedback": "Il ferro è un buon conduttore elettrico, non un isolante."
+        }
+      ],
+      "spiegazione": "I cavi elettrici hanno il filo di rame (conduttore) avvolto in plastica (isolante)."
+    },
+    {
+      "livello": "I",
+      "domanda": "Un architetto sceglie i materiali per una finestra. Quali due proprietà sono entrambe essenziali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Durezza e conduttività elettrica"
+        },
+        {
+          "id": "b",
+          "testo": "Trasparenza e resistenza meccanica",
+          "corretto": true,
+          "feedback": "Esatto! La finestra deve lasciar passare la luce (trasparenza) e reggere agli agenti atmosferici (resistenza)."
+        },
+        {
+          "id": "c",
+          "testo": "Elasticità e peso elevato"
+        },
+        {
+          "id": "d",
+          "testo": "Magnetismo e plasticità",
+          "feedback": "Il magnetismo non è rilevante per una finestra."
+        }
+      ],
+      "spiegazione": "La scelta del materiale dipende sempre da QUALI proprietà servono per quella funzione specifica."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa significa che un materiale è 'elastico'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si rompe facilmente"
+        },
+        {
+          "id": "b",
+          "testo": "Ritorna alla forma originale dopo una deformazione",
+          "corretto": true,
+          "feedback": "Esatto! Elasticità = capacità di recuperare la forma originale."
+        },
+        {
+          "id": "c",
+          "testo": "Conduce bene l'elettricità"
+        },
+        {
+          "id": "d",
+          "testo": "Ha una superficie dura",
+          "feedback": "La durezza è una proprietà diversa dall'elasticità."
+        }
+      ],
+      "spiegazione": "La gomma è elastica; la plastilina è plastica (cambia forma senza tornare indietro)."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché un cavo elettrico è fatto di rame avvolto in plastica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Per renderlo più pesante"
+        },
+        {
+          "id": "b",
+          "testo": "Il rame conduce l'elettricità, la plastica la blocca: funzioni complementari",
+          "corretto": true,
+          "feedback": "Esatto! Ogni materiale svolge una funzione precisa: conduttore + isolante."
+        },
+        {
+          "id": "c",
+          "testo": "Il rame da solo non conduce"
+        },
+        {
+          "id": "d",
+          "testo": "Solo per estetica",
+          "feedback": "La scelta dei materiali è sempre funzionale, non estetica."
+        }
+      ],
+      "spiegazione": "Questo è un esempio perfetto di come la scelta dei materiali dipende dalle loro proprietà."
+    },
+    {
+      "livello": "A",
+      "domanda": "In quale caso NON si usa il metallo nonostante la sua alta resistenza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quando serve leggerezza estrema (es. parti aeronautiche di precisione)",
+          "corretto": true,
+          "feedback": "Esatto! In aeronautica si usano compositi come la fibra di carbonio per ottenere resistenza senza peso eccessivo."
+        },
+        {
+          "id": "b",
+          "testo": "Quando serve conduttività termica"
+        },
+        {
+          "id": "c",
+          "testo": "Quando serve resistenza agli urti"
+        },
+        {
+          "id": "d",
+          "testo": "Quando serve durezza superficiale",
+          "feedback": "In questi casi il metallo è spesso la scelta migliore."
+        }
+      ],
+      "spiegazione": "Resistenza e peso sono spesso in conflitto: la fibra di carbonio risolve questo problema."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa sono le 'proprietà meccaniche' di un materiale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Come reagisce alle forze fisiche (trazione, compressione, flessione)",
+          "corretto": true,
+          "feedback": "Esatto! Le proprietà meccaniche descrivono il comportamento sotto l'azione di forze."
+        },
+        {
+          "id": "b",
+          "testo": "Come conduce il calore"
+        },
+        {
+          "id": "c",
+          "testo": "Il suo colore e aspetto esteriore"
+        },
+        {
+          "id": "d",
+          "testo": "Come reagisce all'elettricità",
+          "feedback": "Questa è la proprietà elettrica, non meccanica."
+        }
+      ],
+      "spiegazione": "Le proprietà meccaniche sono fondamentali in ingegneria strutturale e nella progettazione di oggetti."
+    },
+    {
+      "livello": "A",
+      "domanda": "Un designer vuole un oggetto 'bioresorbibile' (si dissolve nel corpo). Quale area di ricerca è coinvolta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Metallurgia tradizionale"
+        },
+        {
+          "id": "b",
+          "testo": "Biomateriali e materiali biocompatibili",
+          "corretto": true,
+          "feedback": "Esatto! I biomateriali sono progettati per interagire con i sistemi biologici senza danneggiamenti."
+        },
+        {
+          "id": "c",
+          "testo": "Ceramica industriale"
+        },
+        {
+          "id": "d",
+          "testo": "Polimeri termoplastici rigidi",
+          "feedback": "I polimeri rigidi non si dissolvono nel corpo."
+        }
+      ],
+      "spiegazione": "I biomateriali bioresorbibili eliminano la necessità di un secondo intervento chirurgico per rimuovere l'impianto."
+    }
+  ],
+  "note": "Quiz generato per il sito ProfTecnologIA — validato CARBLE-CDD criterio D"
+}

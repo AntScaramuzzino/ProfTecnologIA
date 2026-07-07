@@ -1,0 +1,260 @@
+{
+  "mc_id": "MC-DIG-1-01",
+  "titolo": "Orientarsi nell'ambiente digitale",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Qual è la funzione principale della CPU?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Memorizzare i dati permanentemente",
+          "feedback": "Questa è la funzione dell'SSD."
+        },
+        {
+          "id": "b",
+          "testo": "Elaborare le istruzioni e fare i calcoli",
+          "corretto": true,
+          "feedback": "Esatto! CPU = Central Processing Unit: è il cervello del computer, esegue le istruzioni dei programmi."
+        },
+        {
+          "id": "c",
+          "testo": "Visualizzare le immagini sul monitor",
+          "feedback": "Questa è la scheda grafica."
+        },
+        {
+          "id": "d",
+          "testo": "Connettere il computer a internet",
+          "feedback": "Questa è la scheda di rete."
+        }
+      ],
+      "spiegazione": "CPU = Central Processing Unit: è il cervello del computer, esegue le istruzioni dei programmi."
+    },
+    {
+      "livello": "F",
+      "domanda": "Cosa succede ai dati nella RAM quando spegni il computer?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Rimangono salvati per sempre",
+          "feedback": "Solo l'SSD conserva i dati senza alimentazione."
+        },
+        {
+          "id": "b",
+          "testo": "Vengono copiati automaticamente nell'SSD",
+          "feedback": "Il salvataggio automatico non avviene da solo."
+        },
+        {
+          "id": "c",
+          "testo": "Vengono persi: la RAM è memoria volatile",
+          "corretto": true,
+          "feedback": "Esatto! La RAM è volatile: funziona solo con il computer acceso."
+        },
+        {
+          "id": "d",
+          "testo": "Vengono inviati al cloud",
+          "feedback": "Il cloud richiede salvataggio esplicito."
+        }
+      ],
+      "spiegazione": "La RAM è volatile: funziona solo con il computer acceso. Spegnendo si svuota."
+    },
+    {
+      "livello": "F",
+      "domanda": "Differenza fondamentale tra hardware e software?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'hardware è gratuito, il software a pagamento",
+          "feedback": "Non è una questione di costo."
+        },
+        {
+          "id": "b",
+          "testo": "L'hardware si può toccare fisicamente, il software no",
+          "corretto": true,
+          "feedback": "Esatto! Hardware = componenti fisici."
+        },
+        {
+          "id": "c",
+          "testo": "L'hardware è più importante del software",
+          "feedback": "Uno senza l'altro non funziona."
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza pratica",
+          "feedback": "La differenza è fondamentale."
+        }
+      ],
+      "spiegazione": "Hardware = componenti fisici. Software = programmi e dati. Entrambi indispensabili."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché 16 GB di RAM è meglio di 4 GB?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ha un monitor migliore",
+          "feedback": "Il monitor non influisce sulla velocità."
+        },
+        {
+          "id": "b",
+          "testo": "Può eseguire più programmi contemporaneamente senza rallentare",
+          "corretto": true,
+          "feedback": "Esatto! La RAM è la scrivania di lavoro: più è grande, più programmi puoi tenere aperti."
+        },
+        {
+          "id": "c",
+          "testo": "Ha più spazio di archiviazione",
+          "feedback": "Lo spazio di archiviazione è l'SSD."
+        },
+        {
+          "id": "d",
+          "testo": "La batteria dura di più",
+          "feedback": "La batteria dipende da altri fattori."
+        }
+      ],
+      "spiegazione": "La RAM è la scrivania di lavoro: più è grande, più programmi puoi tenere aperti."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa fa il sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Solo riproduce musica e video",
+          "feedback": "Il SO fa molto di più."
+        },
+        {
+          "id": "b",
+          "testo": "Gestisce le risorse hardware e offre un'interfaccia per le applicazioni",
+          "corretto": true,
+          "feedback": "Esatto! Il SO è il gestore condominiale: alloca RAM, gestisce file, controlla l'hardware per tutte le app."
+        },
+        {
+          "id": "c",
+          "testo": "È un tipo di processore avanzato",
+          "feedback": "Il SO è software, non hardware."
+        },
+        {
+          "id": "d",
+          "testo": "Memorizza solo i documenti",
+          "feedback": "I documenti sono gestiti dalle applicazioni."
+        }
+      ],
+      "spiegazione": "Il SO è il gestore condominiale: alloca RAM, gestisce file, controlla l'hardware per tutte le app."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa significa che un file è nella 'cartella radice'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È un file molto importante",
+          "feedback": "L'importanza non dipende dalla posizione."
+        },
+        {
+          "id": "b",
+          "testo": "Si trova al livello più alto della struttura di cartelle",
+          "corretto": true,
+          "feedback": "Esatto! La radice è il livello più alto dell'albero: C:\\ su Windows, / su Linux/Mac."
+        },
+        {
+          "id": "c",
+          "testo": "È un file nascosto",
+          "feedback": "I file nascosti hanno un attributo specifico."
+        },
+        {
+          "id": "d",
+          "testo": "È di sistema e non modificabile",
+          "feedback": "Anche i file normali possono essere nella radice."
+        }
+      ],
+      "spiegazione": "La radice è il livello più alto dell'albero: C:\\ su Windows, / su Linux/Mac."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cosa significa architettura '64 bit' di un processore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ha 64 core",
+          "feedback": "64 core e 64 bit sono concetti diversi."
+        },
+        {
+          "id": "b",
+          "testo": "Elabora 64 bit per ciclo e può gestire più di 4 GB di RAM",
+          "corretto": true,
+          "feedback": "Esatto! Con 64 bit il processore può indirizzare 2^64 indirizzi — oltre 4 miliardi di GB teorici."
+        },
+        {
+          "id": "c",
+          "testo": "Funziona a 64 GHz",
+          "feedback": "I processori attuali lavorano a 2-5 GHz."
+        },
+        {
+          "id": "d",
+          "testo": "Ha 64 GB di RAM integrata",
+          "feedback": "La RAM è separata dal processore."
+        }
+      ],
+      "spiegazione": "Con 64 bit il processore può indirizzare 2^64 indirizzi — oltre 4 miliardi di GB teorici."
+    },
+    {
+      "livello": "A",
+      "domanda": "Differenza tra SSD e HDD?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'SSD usa dischi magnetici rotanti, l'HDD no",
+          "feedback": "È il contrario."
+        },
+        {
+          "id": "b",
+          "testo": "L'SSD usa memoria flash senza parti in movimento: molto più veloce e resistente",
+          "corretto": true,
+          "feedback": "Esatto! SSD = Solid State Drive: chip flash senza meccanica."
+        },
+        {
+          "id": "c",
+          "testo": "L'HDD è sempre più veloce dell'SSD",
+          "feedback": "L'SSD è nettamente più veloce."
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza di velocità",
+          "feedback": "La differenza di velocità è enorme."
+        }
+      ],
+      "spiegazione": "SSD = Solid State Drive: chip flash senza meccanica. 3-10x più veloce, meno fragile."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il kernel di un sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'interfaccia grafica del desktop",
+          "feedback": "Il desktop è la shell grafica."
+        },
+        {
+          "id": "b",
+          "testo": "Il nucleo del SO che gestisce direttamente hardware e risorse",
+          "corretto": true,
+          "feedback": "Esatto! Il kernel gira con i massimi privilegi: gestisce memoria, CPU, I/O."
+        },
+        {
+          "id": "c",
+          "testo": "Il browser web integrato",
+          "feedback": "Il browser è un'applicazione separata."
+        },
+        {
+          "id": "d",
+          "testo": "Il programma di aggiornamento",
+          "feedback": "Gli aggiornamenti sono un servizio distinto."
+        }
+      ],
+      "spiegazione": "Il kernel gira con i massimi privilegi: gestisce memoria, CPU, I/O. Le app passano attraverso di esso."
+    }
+  ],
+  "note": "Quiz validato CARBLE-CDD — ProfTecnologIA"
+}

@@ -1,7 +1,18 @@
-# Next.js
-05_APP/tecnologia-app/.next/
-05_APP/tecnologia-app/out/
-05_APP/tecnologia-app/node_modules/
+# Next.js app (percorso corretto)
+05_APP/tecnologia-sito-web/.next/
+05_APP/tecnologia-sito-web/out/
+05_APP/tecnologia-sito-web/node_modules/
+05_APP/tecnologia-sito-web/.next_old/
+05_APP/tecnologia-sito-web/.next_mac_backup/
+
+# Script temporanei
+convert_webp.py
+convert_webp_result.txt
+convert_residui.txt
+cleanup_result.txt
+1c_result.txt
+do_push.sh
+push_result.txt
 
 # Sistema
 .DS_Store
@@ -18,3 +29,9 @@ Thumbs.db
 # Log
 npm-debug.log*
 yarn-debug.log*
+
+# Materiale di consultazione editoriale (non versionare — copyright)
+08_TESTI/TESTI/
+08_TESTI/Altri Testi/PlaneT.zip
+08_TESTI/Altri Testi/*.pdf
+*.zip

@@ -1,0 +1,242 @@
+{
+  "mc_id": "MC-ENE-3-01",
+  "titolo": "Macchine semplici e principi di meccanica",
+  "generato": "2026-05-11",
+  "domande": [
+    {
+      "livello": "F",
+      "domanda": "Cosa fa una macchina semplice?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Crea energia dal nulla"
+        },
+        {
+          "id": "b",
+          "testo": "Trasforma o trasmette forze per facilitare il lavoro",
+          "corretto": true,
+          "feedback": "Esatto! Le macchine semplici non creano energia, la trasformano rendendola più utile."
+        },
+        {
+          "id": "c",
+          "testo": "Elimina completamente la fatica"
+        },
+        {
+          "id": "d",
+          "testo": "Aumenta sempre la velocità",
+          "feedback": "Le macchine semplici possono aumentare forza o velocità, non sempre entrambe."
+        }
+      ],
+      "spiegazione": "Una leva, una carrucola, un piano inclinato: tutte trasformano le forze, non le creano."
+    },
+    {
+      "livello": "F",
+      "domanda": "Quale delle seguenti è una macchina semplice?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Automobile"
+        },
+        {
+          "id": "b",
+          "testo": "Lavatrice"
+        },
+        {
+          "id": "c",
+          "testo": "Leva",
+          "corretto": true,
+          "feedback": "Esatto! La leva è una delle 6 macchine semplici classiche."
+        },
+        {
+          "id": "d",
+          "testo": "Telefono",
+          "feedback": "Il telefono è una macchina complessa che usa principi elettronici, non meccanici semplici."
+        }
+      ],
+      "spiegazione": "Le 6 macchine semplici sono: leva, piano inclinato, vite, cuneo, carrucola, ruota e assale."
+    },
+    {
+      "livello": "F",
+      "domanda": "Come si chiama il punto fisso attorno a cui ruota una leva?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Braccio"
+        },
+        {
+          "id": "b",
+          "testo": "Fulcro",
+          "corretto": true,
+          "feedback": "Esatto! Il fulcro è il punto di appoggio della leva."
+        },
+        {
+          "id": "c",
+          "testo": "Resistenza"
+        },
+        {
+          "id": "d",
+          "testo": "Potenza",
+          "feedback": "Potenza e resistenza sono le forze che agiscono sulla leva, non il punto fisso."
+        }
+      ],
+      "spiegazione": "Con il fulcro nella posizione giusta, una piccola forza può sollevare un peso molto maggiore."
+    },
+    {
+      "livello": "I",
+      "domanda": "Se il braccio della potenza è doppio del braccio della resistenza, cosa succede alla forza necessaria?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Rimane uguale"
+        },
+        {
+          "id": "b",
+          "testo": "Si dimezza",
+          "corretto": true,
+          "feedback": "Esatto! Se il braccio è il doppio, serve metà della forza per sollevare lo stesso peso."
+        },
+        {
+          "id": "c",
+          "testo": "Raddoppia"
+        },
+        {
+          "id": "d",
+          "testo": "Diventa zero",
+          "feedback": "Non si elimina mai la forza necessaria, si riduce solo."
+        }
+      ],
+      "spiegazione": "Questo è il principio del vantaggio meccanico: più lungo il braccio della potenza, meno forza serve."
+    },
+    {
+      "livello": "I",
+      "domanda": "Perché le scale a chiocciola sono più facili da salire rispetto a una scala a pioli verticale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché sono più corte"
+        },
+        {
+          "id": "b",
+          "testo": "Perché funzionano come un piano inclinato: forza minore su distanza maggiore",
+          "corretto": true,
+          "feedback": "Esatto! La scala a chiocciola è un piano inclinato avvolto: si percorre più strada ma con meno fatica."
+        },
+        {
+          "id": "c",
+          "testo": "Perché hanno i gradini più larghi"
+        },
+        {
+          "id": "d",
+          "testo": "Perché usano la carrucola",
+          "feedback": "Le scale a chiocciola non usano carrucole, ma il principio del piano inclinato."
+        }
+      ],
+      "spiegazione": "Il lavoro totale è lo stesso, ma la forza necessaria è distribuita su una distanza maggiore."
+    },
+    {
+      "livello": "I",
+      "domanda": "Cosa si conserva sempre nelle macchine semplici ideali (senza attrito)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La forza applicata"
+        },
+        {
+          "id": "b",
+          "testo": "La velocità"
+        },
+        {
+          "id": "c",
+          "testo": "Il lavoro (forza × spostamento)",
+          "corretto": true,
+          "feedback": "Esatto! In una macchina ideale il lavoro in ingresso è uguale al lavoro in uscita."
+        },
+        {
+          "id": "d",
+          "testo": "La potenza",
+          "feedback": "La potenza può variare; è il lavoro totale che si conserva."
+        }
+      ],
+      "spiegazione": "Questo è il principio di conservazione dell'energia: le macchine la trasformano, non la creano."
+    },
+    {
+      "livello": "A",
+      "domanda": "Un meccanico usa una chiave inglese con braccio da 30 cm per svitare un bullone. Se fosse necessario il doppio della coppia, quale braccio userebbe?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "15 cm"
+        },
+        {
+          "id": "b",
+          "testo": "30 cm"
+        },
+        {
+          "id": "c",
+          "testo": "60 cm",
+          "corretto": true,
+          "feedback": "Esatto! Coppia = forza × braccio. Per raddoppiare la coppia con la stessa forza, si raddoppia il braccio."
+        },
+        {
+          "id": "d",
+          "testo": "90 cm",
+          "feedback": "90 cm triplicherebbe la coppia, non la raddoppierebbe."
+        }
+      ],
+      "spiegazione": "Questo è il motivo per cui i meccanici usano chiavi sempre più lunghe per i bulloni più resistenti."
+    },
+    {
+      "livello": "A",
+      "domanda": "Perché l'attrito nelle macchine reali è sempre maggiore di zero?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché le superfici dei materiali non sono mai perfettamente lisce a livello microscopico",
+          "corretto": true,
+          "feedback": "Esatto! A livello molecolare anche le superfici 'lisce' hanno asperità che generano attrito."
+        },
+        {
+          "id": "b",
+          "testo": "Perché le macchine sono mal costruite"
+        },
+        {
+          "id": "c",
+          "testo": "Perché l'attrito è una forma di energia creata"
+        },
+        {
+          "id": "d",
+          "testo": "Perché dipende dalla temperatura ambientale",
+          "feedback": "La temperatura influenza l'attrito ma non ne è la causa principale."
+        }
+      ],
+      "spiegazione": "L'attrito converte energia meccanica in calore: per questo i motori si scaldano durante il funzionamento."
+    },
+    {
+      "livello": "A",
+      "domanda": "Cos'è il 'rendimento' di una macchina?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La velocità massima raggiungibile"
+        },
+        {
+          "id": "b",
+          "testo": "Il rapporto tra lavoro utile prodotto e lavoro totale fornito",
+          "corretto": true,
+          "feedback": "Esatto! Rendimento = Lavoro utile / Lavoro totale. Per le macchine reali è sempre < 1 (< 100%)."
+        },
+        {
+          "id": "c",
+          "testo": "La forza massima applicabile"
+        },
+        {
+          "id": "d",
+          "testo": "Il numero di componenti della macchina",
+          "feedback": "Il numero di componenti non determina il rendimento."
+        }
+      ],
+      "spiegazione": "Un motore termico ha rendimento ~30-40%: il resto dell'energia si perde in calore, rumore, attrito."
+    }
+  ],
+  "note": "Quiz generato per il sito ProfTecnologIA — validato CARBLE-CDD criterio D"
+}
