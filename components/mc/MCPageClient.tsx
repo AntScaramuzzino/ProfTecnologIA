@@ -615,44 +615,19 @@ function ZonePanel({
   // ── ESPLORA — AccordionSection ────────────────────────────────────────────
   if (tabId === "ESPLORA") {
     const accordionItems = splitEsploraIntoAccordion(body);
-
-    // Infografiche del processo produttivo — iniettate nel testo, non come blocco separato
-    const processoAssets = visuals.filter(
-      (v) =>
-        v.src.includes("infografica_processo") ||
-        v.src.includes("infografica_latte") ||
-        v.src.includes("infografica_lavorazione")
-    );
-
-    // Trova la sezione dell'accordion che descrive il processo (ciclo, fasi, lavorazione…)
-    const processoKeywords = /fase|fasi|ciclo|processo|produttiv|lavorazione|fabbricaz|trasform|come si|come viene|come arriva|come funziona|passaggi/i;
-    const matchIdx = accordionItems.findIndex((ai) => processoKeywords.test(ai.title));
-    // Fallback: seconda sezione (idx 1) se nessuna fa match, o la prima se è l'unica
-    const injectIdx = processoAssets.length > 0
-      ? (matchIdx >= 0 ? matchIdx : Math.min(1, accordionItems.length - 1))
-      : -1;
-
-    const items: AccordionItem[] = accordionItems.map((ai, idx) => ({
+    const items: AccordionItem[] = accordionItems.map((ai) => ({
       id: ai.id,
       title: ai.title,
-      children: (
-        <>
-          <ReadableBodyInTab body={ai.body} />
-          {/* Infografica processo — in fondo alla sezione rilevante */}
-          {idx === injectIdx && (
-            <div className="mt-6 space-y-4">
-              {processoAssets.map((asset, i) => (
-                <MCVisual key={i} asset={asset} alt={`Processo produttivo — ${mc.titolo}`} />
-              ))}
-            </div>
-          )}
-        </>
-      ),
+      children: <ReadableBodyInTab body={ai.body} />,
     }));
 
-    // Galleria residua: esclude sketchnote (→ RIPASSA) e infografiche processo (→ nel testo)
+    // Galleria residua: esclude sketchnote (→ RIPASSA) e infografiche processo (→ OSSERVA)
     const galleriaAssets = visuals.filter(
-      (v) => v.label !== "Ripassa" && !processoAssets.includes(v)
+      (v) =>
+        v.label !== "Ripassa" &&
+        !v.src.includes("infografica_processo") &&
+        !v.src.includes("infografica_latte") &&
+        !v.src.includes("infografica_lavorazione")
     );
 
     return (
@@ -680,10 +655,30 @@ function ZonePanel({
 
   // ── OSSERVA ───────────────────────────────────────────────────────────────
   if (tabId === "OSSERVA") {
+    // Infografiche del processo produttivo — osservare come funziona nella realtà
+    const processoAssets = visuals.filter(
+      (v) =>
+        v.src.includes("infografica_processo") ||
+        v.src.includes("infografica_latte") ||
+        v.src.includes("infografica_lavorazione")
+    );
+
     return (
       <div className="px-4 py-6 sm:px-6">
         {/* Il body arriva già senza la sezione Professione (estratta in MCPageClient) */}
         <ReadableBodyInTab body={body} />
+
+        {/* Infografica del processo — dopo il testo, prima dei video */}
+        {processoAssets.length > 0 && (
+          <div className="mt-8">
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              🏭 Il processo in dettaglio
+            </p>
+            {processoAssets.map((asset, i) => (
+              <MCVisual key={i} asset={asset} alt={`Processo — ${mc.titolo}`} className={i > 0 ? "mt-4" : ""} />
+            ))}
+          </div>
+        )}
 
         {/* Gallery video YouTube — 9 video */}
         {videoPlaylist.length > 3 && (
