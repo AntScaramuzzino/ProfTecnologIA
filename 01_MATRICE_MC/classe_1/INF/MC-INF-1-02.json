@@ -1,0 +1,142 @@
+{
+  "id": "MC-INF-1-02",
+  "area": "INF",
+  "anno": 1,
+  "titolo": "Algoritmi e pensiero computazionale: dare istruzioni precise",
+  "descrizione": "Lo studente comprende cos'è un algoritmo e le sue tre strutture fondamentali (sequenza, selezione, iterazione), sa scrivere semplici algoritmi in pseudocodice e diagrammi di flusso, e sviluppa la capacità di scomporre un problema in passi precisi e privi di ambiguità.",
+  "fonte": "Hypertech 2020 + originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Utilizza il pensiero computazionale per analizzare e risolvere problemi in modo sistematico",
+      "traguardo": "Lo studente sa progettare algoritmi per risolvere problemi semplici, usando le strutture di sequenza, selezione e iterazione"
+    },
+    "DC": {
+      "ref": "5.2 Identificare bisogni e risposte tecnologiche",
+      "livello": "F",
+      "nota": "Lo studente traduce bisogni concreti in sequenze di istruzioni precise eseguibili da un sistema automatico"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Creativity",
+      "nota": "Lo studente applica il pensiero algoritmico per progettare soluzioni sistematiche a problemi quotidiani"
+    },
+    "LC": {
+      "ref": "Thinking / Problem solving",
+      "nota": "Lo studente scompone problemi complessi in passi elementari e identifica le strutture logiche necessarie"
+    },
+    "EV": {
+      "ref": "SDG 4 — Istruzione di qualità",
+      "nota": "Il pensiero algoritmico è competenza trasversale fondamentale per affrontare problemi complessi in modo sistematico in qualsiasi disciplina"
+    }
+  },
+  "outputApp": {
+    "quiz": "Domande su strutture di controllo, pseudocodice, debug, efficienza algoritmi. 18 domande 6F+6I+6A con feedback.",
+    "microlearning": "Process: 5 passi — dal problema all'algoritmo (analisi, selezione strutture, pseudocodice, test, debug). Checklist: verifica completezza algoritmo.",
+    "visual": "Infografica 'Le 3 strutture di controllo': tre colonne — Sequenza (blocchi in fila), Selezione (rombo con due rami), Iterazione (ciclo con freccia).",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": ["MC-INF-1-01"],
+  "tags": [
+    "algoritmo",
+    "pensiero computazionale",
+    "sequenza",
+    "selezione",
+    "iterazione",
+    "pseudocodice",
+    "diagramma di flusso",
+    "bug",
+    "debug",
+    "informatica",
+    "classe-1",
+    "INF"
+  ],
+  "compito_realta": "Progetta e scrivi in pseudocodice un algoritmo per ordinare alfabeticamente i 64 partecipanti a un torneo scolastico, conta il numero di confronti nel caso peggiore e scrivi una riflessione su come cambia l'efficienza con 64.000 partecipanti.",
+  "sdg": [4],
+  "sdg_principale": 4,
+  "note_didattiche": {
+    "base": "Scrivere le istruzioni passo-passo per un'azione quotidiana semplice (aprire lo zaino, prendere il quaderno), poi scambiare l'algoritmo con un compagno e seguirlo alla lettera per trovare ambiguità.",
+    "avanzato": "Analizzare l'efficienza comparata della ricerca sequenziale vs ricerca binaria su liste di 100, 1.000, 10.000 elementi; calcolare log₂(N) e scrivere una riflessione sui contesti in cui l'efficienza conta davvero."
+  },
+  "hook_audio": {
+    "durata_min": 2.42,
+    "durata_secondi": 145,
+    "titolo_hook": "Il panino impossibile"
+  },
+  "professione_futura": {
+    "titolo": "Data Scientist e analista di dati",
+    "orizzonte": "2030",
+    "descrizione_breve": "Scrive algoritmi per pulire, trasformare, analizzare e visualizzare dati grezzi, trasformando sequenze di numeri in informazioni utili per decisioni aziendali o scientifiche.",
+    "competenze_chiave": [
+      "pensiero algoritmico",
+      "sequenza logica",
+      "gestione di condizioni e cicli",
+      "approccio sistematico al problema"
+    ]
+  },
+  "professioni_future": [
+    {
+      "titolo": "Data Scientist e analista di dati",
+      "orizzonte": "2030",
+      "descrizione_breve": "Scrive algoritmi per trasformare dati grezzi in informazioni utili per decisioni aziendali o scientifiche.",
+      "competenze_chiave": [
+        "pensiero algoritmico",
+        "sequenza logica",
+        "gestione condizioni e cicli",
+        "approccio sistematico"
+      ]
+    },
+    {
+      "titolo": "Software Engineer",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta e implementa software traducendo problemi reali in algoritmi precisi e in codice eseguibile da computer.",
+      "competenze_chiave": [
+        "algoritmi e strutture dati",
+        "debugging sistematico",
+        "analisi della complessità",
+        "linguaggi di programmazione"
+      ]
+    }
+  ],
+  "clil_termini": [
+    {
+      "it": "algoritmo",
+      "en": "algorithm",
+      "def": "Sequenza finita di istruzioni precise e non ambigue che risolve un problema in un numero finito di passi"
+    },
+    {
+      "it": "variabile",
+      "en": "variable",
+      "def": "Spazio di memoria con un nome in cui si può salvare e modificare un valore durante l'esecuzione di un algoritmo"
+    },
+    {
+      "it": "condizione",
+      "en": "condition",
+      "def": "Espressione che può essere vera o falsa; determina quale ramo eseguire nella struttura di selezione"
+    },
+    {
+      "it": "ciclo / iterazione",
+      "en": "loop / iteration",
+      "def": "Struttura che ripete un blocco di istruzioni finché una condizione rimane vera"
+    },
+    {
+      "it": "selezione",
+      "en": "selection / if-then-else",
+      "def": "Struttura che esegue un blocco di istruzioni diverso in base al valore di una condizione"
+    },
+    {
+      "it": "errore / bug",
+      "en": "bug",
+      "def": "Errore nell'algoritmo: istruzione sbagliata, condizione formulata male o sequenza nell'ordine sbagliato"
+    },
+    {
+      "it": "ricerca binaria",
+      "en": "binary search",
+      "def": "Algoritmo che trova un elemento in una lista ordinata dimezzando lo spazio di ricerca a ogni confronto"
+    },
+    {
+      "it": "diagramma di flusso",
+      "en": "flowchart",
+      "def": "Rappresentazione grafica di un algoritmo che usa simboli standard: rettangolo (azione), rombo (condizione), ovale (inizio/fine)"
+    }
+  ],
+  "uda_collegata": "Dal problema alla soluzione: pensiero algoritmico nella vita quotidiana — UDA interdisciplinare (Tecnologia + Matematica)"
+}
