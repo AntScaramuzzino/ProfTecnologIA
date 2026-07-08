@@ -75,18 +75,6 @@ export interface MC {
   professioni_future?: ProfessioneFutura[];
   /** Vocabolario CLIL — termini tecnici chiave in italiano e inglese con pronuncia IPA */
   clil_termini?: ClilTermine[];
-  /**
-   * Immagine opzionale da Wikimedia Commons (CC BY / CC BY-SA / CC0 / Public Domain)
-   * da mostrare nella tab ESPLORA prima dell'accordion di testo.
-   * src: path relativo a /public/ — es. "/images/wiki/MC-MAT-1-02/fotosintesi.jpg"
-   */
-  immagine_esplora?: {
-    src: string;
-    alt: string;
-    caption: string;      // es. "Autore: John Doe, via Wikimedia Commons"
-    license: string;      // es. "CC BY-SA 4.0"
-    wikimedia_url?: string;
-  };
 }
 
 // Legge prima da data/mc/ (repo standalone), poi da ../../01_MATRICE_MC (workspace locale)
@@ -182,7 +170,16 @@ export function getPrerequisiteChain(mcId: string, _visited = new Set<string>())
       chain.push(...getPrerequisiteChain(prereqId, new Set(_visited)), prereq);
     }
   }
-  return chain;
+
+  // Deduplicazione: stessa MC può comparire più volte se è prereq transitivo
+  // di più rami (es. MC-DIG-1-01 prerequisito di sia MC-DIG-2-01 che MC-DIG-2-02).
+  // Si mantiene la prima occorrenza per preservare l'ordine topologico.
+  const seen = new Set<string>();
+  return chain.filter((item) => {
+    if (seen.has(item.id)) return false;
+    seen.add(item.id);
+    return true;
+  });
 }
 
 // ATTENZIONE: l'ordine delle chiavi determina l'ordine di visualizzazione

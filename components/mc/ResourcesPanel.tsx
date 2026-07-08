@@ -26,6 +26,8 @@ export interface ResourcesSummary {
   quizCount: number;
   /** numero di immagini nella galleria visuale */
   visualCount: number;
+  /** numero di slide della presentazione (deck NotebookLM in ESPLORA) */
+  deckSlideCount?: number;
 }
 
 interface ResourcesPanelProps {
@@ -79,6 +81,17 @@ function buildItems(summary: ResourcesSummary): ResourceItem[] {
       available: true,
       zoneId: "SPERIMENTA",
       ariaLabel: "Attività in 3 livelli",
+    },
+    {
+      icon: "📽️",
+      label: "Presentazione",
+      count: summary.deckSlideCount ?? null,
+      available: (summary.deckSlideCount ?? 0) > 0,
+      zoneId: "ESPLORA",
+      ariaLabel:
+        (summary.deckSlideCount ?? 0) > 0
+          ? `Presentazione con ${summary.deckSlideCount} slide in ESPLORA`
+          : "Presentazione non disponibile",
     },
     {
       icon: "🃏",

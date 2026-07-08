@@ -1,0 +1,2081 @@
+{
+  "economia circolare": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "♻️",
+    "definizione": "Saper progettare prodotti e sistemi in modo che i materiali vengano riusati, riparati o riciclati invece di finire in discarica. Chi lavora con l'economia circolare aiuta aziende e istituzioni a passare da 'usa e getta' a 'usa di nuovo'.",
+    "esempio": "Un ingegnere dell'economia circolare ridisegna le scarpe in modo che si smontino facilmente: gomma, tessuto e schiuma possono essere riciclati separatamente.",
+    "area_correlata": "MAT"
+  },
+  "efficienza energetica": {
+    "categoria": "Energia",
+    "emoji": "⚡",
+    "definizione": "Capacità di ridurre la quantità di energia necessaria per fare la stessa cosa — illuminare un ufficio, riscaldare un edificio, far funzionare una macchina.",
+    "esempio": "Un energy manager installa sensori di presenza per le luci e isola le pareti di una scuola: riduce i consumi del 40% senza cambiare il comfort.",
+    "area_correlata": "ENE"
+  },
+  "reportistica esg": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📊",
+    "definizione": "Saper raccogliere, elaborare e comunicare i dati ambientali, sociali e di governance (ESG) di un'azienda. Le grandi aziende europee sono obbligate per legge a pubblicare questi rapporti dal 2024.",
+    "esempio": "Un analista ESG calcola quanta CO₂ emette ogni prodotto dell'azienda e presenta il tutto in un rapporto che investitori e clienti leggono prima di scegliere con chi lavorare.",
+    "area_correlata": "SIS"
+  },
+  "logistica sostenibile": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚛",
+    "definizione": "Progettare e gestire il trasporto di merci riducendo emissioni, sprechi e costi: scelta dei mezzi, ottimizzazione dei percorsi, riduzione degli imballaggi.",
+    "esempio": "Un logista sostenibile analizza 500 spedizioni settimanali e trova che il 30% può essere consolidato in meno viaggi, riducendo km e CO₂.",
+    "area_correlata": "COM"
+  },
+  "gis": {
+    "categoria": "Architettura & Città",
+    "emoji": "🗺️",
+    "definizione": "GIS (Geographic Information System) è un sistema informatico che permette di visualizzare, analizzare e interpretare dati geografici su mappe interattive. Si usa per pianificare città, gestire trasporti, monitorare l'ambiente.",
+    "esempio": "Un urban planner sovrappone mappa del traffico, piste ciclabili e zone a rischio alluvione e decide dove costruire nuovi percorsi protetti.",
+    "area_correlata": "AMB"
+  },
+  "ethical hacking": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔐",
+    "definizione": "Simulare attacchi informatici contro sistemi autorizzati per trovare le vulnerabilità prima che lo facciano gli hacker malintenzionati. È legale solo con il permesso scritto del proprietario.",
+    "esempio": "Un ethical hacker viene pagato da una banca per tentare di entrare nei suoi sistemi: trova una falla nel software e la segnala prima che qualcun altro la sfrutti.",
+    "area_correlata": "DIG"
+  },
+  "sicurezza informatica": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🛡️",
+    "definizione": "Insieme di tecniche per proteggere computer, reti e dati da accessi non autorizzati: crittografia, autenticazione, firewall, backup e formazione degli utenti.",
+    "esempio": "Un analista monitora il traffico di rete di un ospedale 24h su 24 e blocca in tempo reale un attacco proveniente dall'estero.",
+    "area_correlata": "DIG"
+  },
+  "analisi vulnerabilità": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔍",
+    "definizione": "Processo sistematico per identificare i punti deboli di un sistema: software non aggiornati, password deboli, configurazioni errate — prima che vengano sfruttati.",
+    "esempio": "Uno scan su 500 computer aziendali rivela che 80 hanno il sistema operativo non aggiornato. La patch viene applicata subito.",
+    "area_correlata": "DIG"
+  },
+  "gdpr": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "⚖️",
+    "definizione": "Il GDPR è la legge europea sulla protezione dei dati personali. Saperlo applicare significa progettare sistemi che rispettano i diritti degli utenti: accesso, cancellazione, portabilità dei propri dati.",
+    "esempio": "Un consulente GDPR aiuta un e-commerce a capire quali dati raccoglie, per quanto tempo li conserva, e come permettere la cancellazione facilmente.",
+    "area_correlata": "DIG"
+  },
+  "digcomp 3.0": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "💻",
+    "definizione": "Framework europeo che definisce le competenze digitali di tutti i cittadini. Chi lo conosce può valutare il livello digitale di persone o organizzazioni e progettare percorsi di formazione mirati.",
+    "esempio": "Un formatore valuta le competenze degli insegnanti con DigComp, identifica le lacune sulla sicurezza online e organizza un corso specifico.",
+    "area_correlata": "DIG"
+  },
+  "media literacy": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📱",
+    "definizione": "Capacità di leggere criticamente i media digitali: riconoscere fonti affidabili, identificare notizie false, capire come funzionano gli algoritmi, produrre contenuti responsabili.",
+    "esempio": "Un esperto insegna a verificare le immagini virali con il reverse image search e a riconoscere i segnali di una notizia costruita per creare panico.",
+    "area_correlata": "DIG"
+  },
+  "cybersecurity base": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔒",
+    "definizione": "Pratiche fondamentali di sicurezza informatica: gestione delle password, riconoscimento del phishing, aggiornamenti del software, backup dei dati, navigazione sicura.",
+    "esempio": "Un formatore insegna ai dipendenti di una PMI a usare un password manager e ad attivare l'autenticazione a due fattori — riducendo il rischio di attacco del 70%.",
+    "area_correlata": "DIG"
+  },
+  "formazione digitale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🎓",
+    "definizione": "Progettare e condurre percorsi di apprendimento sulle competenze digitali per diversi tipi di utenti: studenti, lavoratori, anziani.",
+    "esempio": "Un formatore crea un corso online per insegnanti che non hanno mai usato strumenti di collaborazione digitale: video brevi, esercizi pratici, assistenza individuale.",
+    "area_correlata": "DIG"
+  },
+  "prototipazione rapida": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🖨️",
+    "definizione": "Costruire velocemente un primo modello fisico o digitale di un oggetto per testarlo e migliorarlo prima di produrlo in serie. Si usano stampa 3D, laser cutting, CNC.",
+    "esempio": "Un designer stampa il prototipo di un manico ergonomico in 4 ore, lo fa testare a 10 utenti, raccoglie feedback e stampa una versione migliorata lo stesso giorno.",
+    "area_correlata": "DIS"
+  },
+  "bim modeling": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏗️",
+    "definizione": "BIM (Building Information Modeling) è progettare edifici come modelli 3D digitali intelligenti dove ogni elemento ha dimensioni, materiale, costo e vita utile. Permette di simulare il comportamento dell'edificio prima di costruirlo.",
+    "esempio": "Un progettista BIM crea il modello di una scuola: simula il consumo energetico, trova i conflitti tra impianti, calcola il costo di ogni variante — tutto prima del primo mattone.",
+    "area_correlata": "DIS"
+  },
+  "autocad": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📐",
+    "definizione": "Il software di disegno tecnico 2D più usato nel mondo professionale. Permette di creare piante, sezioni, prospetti e dettagli tecnici con precisione millimetrica.",
+    "esempio": "Un tecnico disegna la pianta di un appartamento da ristrutturare, posiziona pareti, porte e impianti, e produce tavole tecniche per l'impresa edile.",
+    "area_correlata": "DIS"
+  },
+  "revit": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏛️",
+    "definizione": "Principale software BIM di Autodesk. Permette modelli 3D intelligenti dove ogni elemento è collegato agli altri: se sposti una parete, porte e finestre si aggiornano automaticamente.",
+    "esempio": "Un architetto progetta un ospedale in Revit: quando il cliente chiede di cambiare i pavimenti, il software calcola automaticamente il nuovo costo e aggiorna tutte le tavole.",
+    "area_correlata": "DIS"
+  },
+  "disegno tecnico avanzato": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "✏️",
+    "definizione": "Padronanza completa del linguaggio grafico tecnico: proiezioni, sezioni, quotatura, tolleranze geometriche, norme ISO/UNI. Il linguaggio con cui ingegneri e architetti comunicano ai costruttori.",
+    "esempio": "Un progettista meccanico disegna un componente di motore con tutte le quote e tolleranze. Il disegno viene inviato a una fonderia in Polonia che lo produce esattamente come specificato.",
+    "area_correlata": "DIS"
+  },
+  "leed": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌿",
+    "definizione": "LEED (Leadership in Energy and Environmental Design) è la più diffusa certificazione internazionale per edifici sostenibili. Un edificio LEED dimostra di usare poca energia, poca acqua e materiali sostenibili.",
+    "esempio": "Un consulente LEED verifica che i materiali siano certificati, che il fotovoltaico copra il 40% dei consumi, che ci siano colonnine per bici — e ottiene la certificazione LEED Gold.",
+    "area_correlata": "AMB"
+  },
+  "materiali bio-based": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌱",
+    "definizione": "Conoscere, valutare e progettare con materiali derivati da fonti biologiche rinnovabili — amido di mais, canna da zucchero, mycelium, fibre naturali — in sostituzione dei materiali fossili.",
+    "esempio": "Un designer sostituisce la schiuma di polistirolo negli imballaggi con mycelium (radici di funghi): stesso potere ammortizzante, completamente biodegradabile in 30 giorni.",
+    "area_correlata": "MAT"
+  },
+  "bim": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏗️",
+    "definizione": "Metodologia in cui architetti, ingegneri e costruttori collaborano su un unico modello digitale dell'edificio. Riduce errori, costi e tempi di costruzione.",
+    "esempio": "In un cantiere BIM, quando l'impiantista aggiunge un tubo, il sistema avvisa automaticamente se entra in conflitto con una trave strutturale.",
+    "area_correlata": "AMB"
+  },
+  "pianificazione urbana": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏙️",
+    "definizione": "Disciplina che studia e progetta lo sviluppo delle città: dove si costruiscono case, uffici, parchi, strade, scuole. Bilancia bisogni degli abitanti, sostenibilità e fattibilità economica.",
+    "esempio": "Un urban planner analizza un quartiere periferico: decide dove costruire la nuova fermata del metro, quale via pedonalizzare e dove serve un parco, coinvolgendo i cittadini.",
+    "area_correlata": "AMB"
+  },
+  "mobilità sostenibile": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚲",
+    "definizione": "Progettare e promuovere sistemi di trasporto che riducono emissioni e congestione: piste ciclabili, trasporto pubblico efficiente, veicoli elettrici, car sharing.",
+    "esempio": "Un consulente analizza gli spostamenti casa-lavoro dei dipendenti di un'azienda e propone abbonamenti al trasporto pubblico e due giorni di smart working — riduzione del 35% delle auto.",
+    "area_correlata": "AMB"
+  },
+  "nature-based solutions": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌳",
+    "definizione": "Soluzioni ispirate dalla natura per problemi urbani: tetti verdi che isolano e assorbono l'acqua, alberi in città che riducono le temperature, paludi artificiali che depurano le acque.",
+    "esempio": "Tetti verdi su tutti gli edifici pubblici di un quartiere: in estate la temperatura scende di 3°C, le alluvioni si riducono del 40% e la biodiversità aumenta.",
+    "area_correlata": "AMB"
+  },
+  "sicurezza alimentare": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🍽️",
+    "definizione": "Garantire che gli alimenti prodotti siano sicuri per il consumo: assenza di patogeni e contaminanti. Include gestione della catena del freddo, controlli di laboratorio e certificazioni.",
+    "esempio": "Un responsabile controlla temperatura e umidità in ogni fase della produzione casearia, esegue test microbiologici e garantisce che nessun lotto esca con contaminazioni.",
+    "area_correlata": "ALI"
+  },
+  "haccp": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "📋",
+    "definizione": "Sistema obbligatorio in tutti gli stabilimenti alimentari europei. Identifica i punti critici del processo produttivo dove un pericolo può contaminare il cibo e stabilisce i controlli necessari.",
+    "esempio": "In un pastificio, il tecnico HACCP identifica la fase di cottura come punto critico: installa sensori di temperatura e un sistema di allarme automatico.",
+    "area_correlata": "ALI"
+  },
+  "etichettatura": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🏷️",
+    "definizione": "Conoscenza della normativa europea sull'etichettatura degli alimenti: ingredienti, valori nutrizionali, allergeni, date di scadenza, indicazioni di origine.",
+    "esempio": "Un esperto verifica che le etichette di biscotti rispettino il Regolamento UE 1169/2011: allergeni in grassetto, valori nutrizionali per 100g e per porzione.",
+    "area_correlata": "ALI"
+  },
+  "analisi nutrizionale": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🥗",
+    "definizione": "Calcolare e interpretare i valori nutrizionali di alimenti e pasti: calorie, macronutrienti, vitamine, minerali. Si usa per formulare nuovi prodotti o valutare la qualità di una dieta.",
+    "esempio": "Un nutrizionista industriale analizza una nuova barretta per ciclisti: calcola proteine e carboidrati, verifica le normative e ottimizza la formulazione.",
+    "area_correlata": "ALI"
+  },
+  "tracciabilità filiera": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🔗",
+    "definizione": "Seguire un prodotto in ogni fase della catena produttiva — dal campo al consumatore — documentando ogni passaggio per garantire qualità, sicurezza e rispetto degli standard etici.",
+    "esempio": "Un sistema QR code permette al consumatore di scannerizzare una tavoletta di cioccolato e vedere la fattoria in Ecuador dove è stato coltivato il cacao.",
+    "area_correlata": "ALI"
+  },
+  "logistica alimentare": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "📦",
+    "definizione": "Gestione del trasporto e dello stoccaggio degli alimenti rispettando la catena del freddo, i tempi di consegna e le normative igieniche.",
+    "esempio": "Un logista organizza la distribuzione di 10.000 kg di pesce fresco ogni giorno da Genova ai ristoranti del nord Italia, garantendo i 2-4°C in tutto il percorso.",
+    "area_correlata": "ALI"
+  },
+  "certificazioni dop/igp": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🏅",
+    "definizione": "DOP (Denominazione di Origine Protetta) e IGP (Indicazione Geografica Protetta) sono certificazioni europee che garantiscono che un prodotto provenga da una zona specifica e sia prodotto secondo metodi tradizionali.",
+    "esempio": "Un consulente accompagna un consorzio di produttori di mozzarella di bufala campana nell'iter di certificazione DOP europeo.",
+    "area_correlata": "ALI"
+  },
+  "sostenibilità": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌍",
+    "definizione": "Valutare e ridurre l'impatto ambientale e sociale di prodotti, processi e organizzazioni. Include SDG, analisi LCA, rendicontazione ESG e strategie di riduzione delle emissioni.",
+    "esempio": "Un manager calcola l'impronta idrica di ogni capo di abbigliamento e stabilisce un piano per ridurre i consumi d'acqua del 50% in tre anni.",
+    "area_correlata": "MAT"
+  },
+  "analisi di processo": {
+    "categoria": "Business & Management",
+    "emoji": "⚙️",
+    "definizione": "Mappare, misurare e migliorare i processi aziendali: dove si perdono tempo e risorse, dove si possono fare automazioni. Si usano diagrammi di flusso, dati e interviste.",
+    "esempio": "Un business analyst scopre che le fatture impiegano 45 giorni invece dei 15 necessari: identifica 3 colli di bottiglia e propone un'automazione che riduce i tempi del 60%.",
+    "area_correlata": "SIS"
+  },
+  "kpi": {
+    "categoria": "Business & Management",
+    "emoji": "📈",
+    "definizione": "KPI (Key Performance Indicator) sono le misure quantitative che indicano se un'organizzazione sta raggiungendo i suoi obiettivi. Saper sceglierli, misurarli e interpretarli è essenziale per prendere decisioni basate sui dati.",
+    "esempio": "Un manager definisce 5 KPI per un negozio online: tasso di conversione, valore medio dell'ordine, tempo di risposta, tasso di reso, NPS. Li monitora ogni settimana.",
+    "area_correlata": "SIS"
+  },
+  "lean management": {
+    "categoria": "Business & Management",
+    "emoji": "🏭",
+    "definizione": "Filosofia nata dalla Toyota che punta a eliminare tutti gli sprechi (tempo, materiali, movimenti, attese) dai processi produttivi e aziendali.",
+    "esempio": "Un consulente lean riorganizza una fabbrica di mobili: elimina il magazzino intermedio e riduce il tempo di produzione di un tavolo da 8 giorni a 3.",
+    "area_correlata": "SIS"
+  },
+  "digital transformation": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🔄",
+    "definizione": "Processo con cui un'organizzazione integra le tecnologie digitali in tutti i suoi processi, cambiando il modo in cui opera. Include automazione, analisi dei dati, cloud computing.",
+    "esempio": "Un consulente aiuta una fabbrica a connettere le macchine a Internet (IoT) e raccogliere dati in tempo reale per prevedere i guasti prima che fermino la linea produttiva.",
+    "area_correlata": "SIS"
+  },
+  "business model canvas": {
+    "categoria": "Business & Management",
+    "emoji": "🎯",
+    "definizione": "Strumento visivo che descrive il modello di business in 9 blocchi: clienti, proposta di valore, canali, relazioni, ricavi, risorse, attività, partner e costi.",
+    "esempio": "Un aspirante imprenditore compila il Canvas della sua app di car pooling scolastico: identifica i genitori come clienti, la riduzione del traffico come valore e le scuole come partner.",
+    "area_correlata": "SIS"
+  },
+  "design thinking": {
+    "categoria": "Design & Creatività",
+    "emoji": "💡",
+    "definizione": "Processo creativo per risolvere problemi complessi partendo dai bisogni reali delle persone. Fasi: empatia, definizione, ideazione, prototipazione, test.",
+    "esempio": "Un team usa il design thinking per riprogettare la sala d'aspetto di un ospedale: intervista pazienti, scopre che l'ansia è il vero problema, propone pareti con scene naturali e musica.",
+    "area_correlata": "SIS"
+  },
+  "fundraising": {
+    "categoria": "Business & Management",
+    "emoji": "💰",
+    "definizione": "Raccogliere fondi per un progetto: bandi europei, crowdfunding, business angel, venture capital. Richiede saper presentare il progetto in modo convincente.",
+    "esempio": "Una startup di tecnologia agricola raccoglie 200.000€ da business angel mostrando i dati sui test, il mercato potenziale e il team.",
+    "area_correlata": "SIS"
+  },
+  "agilescrum": {
+    "categoria": "Business & Management",
+    "emoji": "🔁",
+    "definizione": "Metodo di lavoro iterativo per sviluppare prodotti. Il lavoro è diviso in 'sprint' di 1-4 settimane, con obiettivi chiari, revisioni frequenti e adattamento rapido ai cambiamenti.",
+    "esempio": "Un team lavora in sprint di 2 settimane: ogni sprint produce una versione funzionante che gli utenti testano. Il feedback orienta il prossimo sprint.",
+    "area_correlata": "SIS"
+  },
+  "audit energetico": {
+    "categoria": "Energia",
+    "emoji": "🔋",
+    "definizione": "Analisi sistematica dei consumi energetici di un edificio o un'azienda per identificare dove si spreca energia e cosa si può fare per ridurla.",
+    "esempio": "Un energy auditor scopre che i motori di una fabbrica tessile consumano energia anche in standby. L'installazione di inverter riduce i consumi del 22%.",
+    "area_correlata": "ENE"
+  },
+  "rinnovabili": {
+    "categoria": "Energia",
+    "emoji": "☀️",
+    "definizione": "Tecnologie per produrre energia da fonti che si rigenerano naturalmente: sole, vento, acqua, biomasse, geotermia. Include dimensionamento, installazione e gestione degli impianti.",
+    "esempio": "Un tecnico dimensiona il fotovoltaico per una scuola: calcola il fabbisogno annuo, l'irraggiamento locale e il numero di pannelli — con payback di 8 anni.",
+    "area_correlata": "ENE"
+  },
+  "fotovoltaico": {
+    "categoria": "Energia",
+    "emoji": "🔆",
+    "definizione": "Tecnologia che converte la luce solare in energia elettrica. Comprende progettazione, installazione, monitoraggio e manutenzione di impianti solari.",
+    "esempio": "Un installatore usa PVGIS per stimare la produzione annua di un impianto da 10 kWp su una casa a Milano, scegliendo orientamento e tipo di inverter ottimali.",
+    "area_correlata": "ENE"
+  },
+  "eolico": {
+    "categoria": "Energia",
+    "emoji": "💨",
+    "definizione": "Tecnologia che converte l'energia cinetica del vento in elettricità tramite turbine eoliche. Comprende la valutazione del sito, la progettazione e la gestione operativa.",
+    "esempio": "Un ingegnere eolico analizza i dati del vento di una collina toscana su 20 anni e dimensiona un parco da 5 turbine da 3 MW ciascuna.",
+    "area_correlata": "ENE"
+  },
+  "storage energetico": {
+    "categoria": "Energia",
+    "emoji": "🔋",
+    "definizione": "Tecnologie per immagazzinare energia da fonti rinnovabili: batterie litio, accumulatori a flusso, pompaggio idroelettrico, idrogeno verde.",
+    "esempio": "Un progettista dimensiona 500 kWh di batterie litio per un'isola turistica: coprono la notte e i giorni nuvolosi, riducendo la dipendenza dal generatore diesel dell'80%.",
+    "area_correlata": "ENE"
+  },
+  "grid parity": {
+    "categoria": "Energia",
+    "emoji": "⚡",
+    "definizione": "Condizione in cui il costo di produzione da fonti rinnovabili raggiunge o scende sotto il costo dell'energia dalla rete tradizionale. Quando avviene, le rinnovabili diventano convenienti senza incentivi.",
+    "esempio": "Il fotovoltaico ha raggiunto la grid parity in Italia nel 2020: costo di produzione 0,04 €/kWh vs. prezzo della rete 0,22 €/kWh.",
+    "area_correlata": "ENE"
+  },
+  "cad 3d": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🖥️",
+    "definizione": "Progettazione assistita da computer in tre dimensioni. Permette di creare modelli digitali di oggetti con forme, dimensioni e materiali precisi, poi inviarli a macchine per la produzione.",
+    "esempio": "Un progettista meccanico usa il CAD 3D per simulare un componente di motore sotto stress virtuale, verifica che regga i carichi e invia il file alla fresa CNC.",
+    "area_correlata": "DIS"
+  },
+  "disegno tecnico": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📏",
+    "definizione": "Linguaggio grafico standardizzato (norme UNI/ISO) per comunicare le caratteristiche di oggetti, edifici o impianti in modo non ambiguo: proiezioni, sezioni, quotatura, tolleranze.",
+    "esempio": "Un tecnico disegna la sezione di una parete con tutti i materiali isolanti e gli strati impermeabilizzanti. L'impresa la usa per costruire esattamente come progettato.",
+    "area_correlata": "DIS"
+  },
+  "tolleranze geometriche": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔬",
+    "definizione": "Sistema (GD&T) per specificare quanto un pezzo meccanico può variare dalla forma perfetta pur funzionando. Essenziali per la produzione in serie di pezzi interscambiabili.",
+    "esempio": "Una tolleranza di planarità di 0,02 mm significa: se la superficie è curva di più, il pezzo non si accoppia con quello adiacente e viene scartato.",
+    "area_correlata": "DIS"
+  },
+  "mobilità urbana": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚌",
+    "definizione": "Studio e gestione di come le persone si spostano in città. Analisi dei flussi di traffico, progettazione di infrastrutture, sviluppo di politiche per ridurre congestione ed emissioni.",
+    "esempio": "Un mobility planner analizza 2 anni di dati GPS degli autobus, identifica 5 linee cronicamente in ritardo e propone corsie riservate: i tempi medi calano del 18%.",
+    "area_correlata": "COM"
+  },
+  "trasporto intermodale": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚢",
+    "definizione": "Sistema di trasporto che combina più modalità (nave, treno, camion) usando container standardizzati. Riduce costi e emissioni rispetto al solo trasporto su strada.",
+    "esempio": "Un logista organizza il trasporto di 20 tonnellate da Shenzhen a Bologna: nave fino a Genova (21 giorni), treno merci fino a Bologna (3 ore). Risparmio del 30% sull'aereo.",
+    "area_correlata": "COM"
+  },
+  "social media": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📲",
+    "definizione": "Conoscenza delle piattaforme social (Instagram, TikTok, LinkedIn, YouTube) e delle strategie per comunicare efficacemente su ciascuna: formati, algoritmi, metriche di engagement.",
+    "esempio": "Un social media manager gestisce i profili di un museo: reel su TikTok, stories su Instagram, articoli su LinkedIn — ogni piattaforma con linguaggio e formati diversi.",
+    "area_correlata": "COM"
+  },
+  "content strategy": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "✍️",
+    "definizione": "Pianificazione di lungo periodo dei contenuti digitali: cosa comunicare, a chi, su quali canali, con quale frequenza e tono. Collega la comunicazione agli obiettivi di business.",
+    "esempio": "Una content strategist pianifica il calendario editoriale di un'università: 3 articoli/settimana per gli studenti, 1 webinar/mese per i professionisti, 5 post/giorno su LinkedIn per i recruiter.",
+    "area_correlata": "COM"
+  },
+  "seo": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🔎",
+    "definizione": "SEO (Search Engine Optimization) migliora la visibilità di un sito nei risultati di ricerca organici su Google. Include ottimizzazione dei testi, struttura del sito, link in entrata.",
+    "esempio": "Un esperto SEO ottimizza i titoli e le descrizioni di un e-commerce di scarpe artigianali: in 3 mesi il traffico organico aumenta del 65%.",
+    "area_correlata": "COM"
+  },
+  "storytelling digitale": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📖",
+    "definizione": "Arte di raccontare storie attraverso media digitali (video, podcast, social, blog) per creare connessione emotiva con il pubblico.",
+    "esempio": "Un content creator racconta la storia di un agricoltore biologico in 6 episodi su YouTube: 200.000 visualizzazioni e vendite dirette aumentate del 40%.",
+    "area_correlata": "COM"
+  },
+  "analisi ciclo di vita": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🔄",
+    "definizione": "Metodologia scientifica (ISO 14040) per valutare l'impatto ambientale di un prodotto in tutte le fasi: estrazione, produzione, trasporto, uso e smaltimento.",
+    "esempio": "Un'analisi LCA confronta due borse: quella di cotone biologico deve essere usata 149 volte per avere un impatto inferiore alla borsa di plastica — perché il cotone consuma moltissima acqua.",
+    "area_correlata": "MAT"
+  },
+  "analisi lca": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "♻️",
+    "definizione": "LCA (Life Cycle Assessment) è la metodologia ISO per quantificare l'impatto ambientale di un prodotto dalla culla alla tomba: in kg di CO₂ equivalente, litri d'acqua, m² di suolo.",
+    "esempio": "Un ingegnere usa l'LCA per confrontare imballaggio tetrapack vs. bottiglia di vetro per un succo: analizzando produzione, trasporto e smaltimento per i 20 anni di vita del prodotto.",
+    "area_correlata": "MAT"
+  },
+  "materiali compositi": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔧",
+    "definizione": "Materiali formati da due o più componenti con proprietà diverse per un risultato superiore a ciascuno da solo. Esempi: fibra di carbonio, cemento armato, fiberglass.",
+    "esempio": "Una pala di turbina eolica in fibra di carbonio è più leggera e resistente dell'acciaio: pale più lunghe catturano più vento, aumentando la produzione energetica del 15%.",
+    "area_correlata": "MAT"
+  },
+  "chimica green": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🧪",
+    "definizione": "Approccio alla chimica industriale che minimizza l'uso di sostanze pericolose, usa materie prime rinnovabili e progetta processi più efficienti.",
+    "esempio": "Un chimico sviluppa un solvente derivato da scarti di mais per sostituire i solventi petrolchimici tossici usati nelle vernici: biodegradabile e meno pericoloso per i lavoratori.",
+    "area_correlata": "MAT"
+  },
+  "termodinamica applicata": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔥",
+    "definizione": "Applicazione pratica delle leggi della termodinamica a macchine termiche, impianti di riscaldamento/raffreddamento, motori.",
+    "esempio": "Un ingegnere ottimizza un impianto di cogenerazione: recupera il calore di scarto del motore per riscaldare un edificio, portando l'efficienza totale dal 40% all'80%.",
+    "area_correlata": "ENE"
+  },
+  "elettrotecnica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚡",
+    "definizione": "Branca dell'ingegneria che studia produzione, trasmissione e utilizzo dell'energia elettrica: circuiti, macchine elettriche, impianti e sicurezza.",
+    "esempio": "Un elettrotecnico progetta l'impianto di una nuova fabbrica: calcola le sezioni dei cavi, sceglie i quadri di distribuzione e garantisce il rispetto delle norme CEI.",
+    "area_correlata": "ENE"
+  },
+  "simulazione cae": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "💻",
+    "definizione": "CAE (Computer-Aided Engineering) usa software per simulare il comportamento di un oggetto o sistema prima di costruirlo: analisi strutturale, fluidodinamica, termica.",
+    "esempio": "Un ingegnere simula virtualmente lo schianto frontale di un'auto: vede come si deforma la carrozzeria e se l'abitacolo rimane integro — senza costruire un prototipo fisico.",
+    "area_correlata": "ENE"
+  },
+  "gestione batterie bms": {
+    "categoria": "Energia",
+    "emoji": "🔋",
+    "definizione": "BMS (Battery Management System) monitora e protegge le batterie agli ioni di litio: controlla temperatura, tensione e corrente per massimizzare durata e sicurezza.",
+    "esempio": "Un ingegnere BMS sviluppa il sistema per un'auto elettrica: monitora 400 celle, previene il surriscaldamento e garantisce che la batteria duri 10 anni.",
+    "area_correlata": "ENE"
+  },
+  "elettrochimica delle batterie": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "⚗️",
+    "definizione": "Studio dei processi chimici che avvengono nelle batterie durante carica e scarica: reazioni redox, movimenti ionici, degradazione degli elettrodi.",
+    "esempio": "Un ricercatore studia perché le batterie litio perdono capacità dopo 500 cicli: trova la causa (dendriti sull'anodo) e sviluppa un nuovo materiale che dura 2000 cicli.",
+    "area_correlata": "ENE"
+  },
+  "gestione dei sistemi energetici": {
+    "categoria": "Energia",
+    "emoji": "🏭",
+    "definizione": "Pianificare, controllare e ottimizzare l'uso dell'energia in un edificio, un'azienda o una rete elettrica.",
+    "esempio": "Un energy manager sposta i carichi energetici nelle ore a tariffa ridotta, usa la batteria per ridurre i picchi di domanda e ottimizza i setpoint di riscaldamento automaticamente.",
+    "area_correlata": "ENE"
+  },
+  "simulazione energetica": {
+    "categoria": "Energia",
+    "emoji": "📊",
+    "definizione": "Uso di software per simulare i consumi energetici di un edificio o sistema prima di costruirlo, per confrontare diverse soluzioni e scegliere la più efficiente.",
+    "esempio": "Un progettista usa EnergyPlus per simulare 3 varianti di isolamento e 4 orientamenti del tetto FV: sceglie la combinazione che minimizza il costo energetico su 20 anni.",
+    "area_correlata": "ENE"
+  },
+  "analisi economica lca": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "💹",
+    "definizione": "Valutazione economica integrata nell'analisi del ciclo di vita: non solo impatto ambientale, ma anche costi e benefici economici di ogni fase.",
+    "esempio": "Un analista calcola il costo totale di un impianto solare in 25 anni: installazione, manutenzione, sostituzione inverter, smaltimento pannelli — vs. costo energia dalla rete. Risparmio netto: 45.000€.",
+    "area_correlata": "ENE"
+  },
+  "programmazione embedded": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🤖",
+    "definizione": "Scrittura di codice per microcontrollori e sistemi integrati con risorse limitate (CPU lenta, poca memoria). Usata in tutti i dispositivi IoT: Arduino, ESP32, STM32.",
+    "esempio": "Un programmatore scrive il firmware per un sensore di qualità dell'aria: ogni 60 secondi misura CO₂, temperatura e umidità, e invia i dati via WiFi con 0,1W di consumo.",
+    "area_correlata": "DIG"
+  },
+  "protocolli di comunicazione iot (mqtt, lora)": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📡",
+    "definizione": "MQTT e LoRa sono protocolli per dispositivi IoT con bassa potenza. MQTT per connessioni WiFi/4G, LoRa per lunghe distanze senza infrastruttura (raggio 5 km, batteria 5 anni).",
+    "esempio": "200 sensori di umidità su 50 ettari di vigneto comunicano via LoRa al sistema di irrigazione automatica — senza cavi e senza sostituire le batterie per 5 anni.",
+    "area_correlata": "DIG"
+  },
+  "analisi dati in tempo reale": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "📈",
+    "definizione": "Elaborare e interpretare grandi quantità di dati nel momento in cui vengono generati. Usata per allarmi, monitoraggio industriale, trading finanziario, veicoli autonomi.",
+    "esempio": "Un sistema analizza i dati di 5.000 turbine eoliche in tempo reale: rileva vibrazioni anomale in 3 turbine e attiva la manutenzione preventiva — evitando guasti da 100.000€.",
+    "area_correlata": "DIG"
+  },
+  "progettazione sistemi distribuiti": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🌐",
+    "definizione": "Progettare sistemi informatici composti da molti componenti che comunicano in rete come se fossero uno solo: affidabili, scalabili e resistenti ai guasti parziali.",
+    "esempio": "10.000 richieste/secondo vengono distribuite su 50 server in 3 datacenter: se un datacenter va offline, gli altri due gestiscono tutto senza interruzioni.",
+    "area_correlata": "DIG"
+  },
+  "wcag 2.1 / 2.2": {
+    "categoria": "Design & Creatività",
+    "emoji": "♿",
+    "definizione": "WCAG (Web Content Accessibility Guidelines) definiscono come rendere i contenuti web accessibili a persone con disabilità. Dal 2025 sono obbligatorie per i siti della PA italiana.",
+    "esempio": "Un'esperta analizza il sito di un comune: trova immagini senza testo alternativo (non accessibili ai ciechi) e contrasti insufficienti. Produce un piano di correzione.",
+    "area_correlata": "DIG"
+  },
+  "testing con screen reader": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎧",
+    "definizione": "Verificare l'accessibilità di un sito usando software che leggono ad alta voce il contenuto dello schermo (NVDA, JAWS, VoiceOver) — come li usano le persone non vedenti.",
+    "esempio": "Un tester scopre che il modulo di accesso di una banca non ha etichette leggibili dallo screen reader: un cliente non vedente non può accedere al conto autonomamente.",
+    "area_correlata": "DIG"
+  },
+  "universal design": {
+    "categoria": "Design & Creatività",
+    "emoji": "🌐",
+    "definizione": "Approccio progettuale che crea prodotti, ambienti e servizi usabili da tutte le persone senza bisogno di adattamenti speciali. 'Progettare per tutti' come standard, non come eccezione.",
+    "esempio": "Il MoMA di New York: rampe integrate nell'architettura, bagni accessibili ovunque, audio guide in linguaggio semplice — utili per tutti, essenziali per molti.",
+    "area_correlata": "DIG"
+  },
+  "conformità normativa europea (eaa 2025)": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📜",
+    "definizione": "L'European Accessibility Act (giugno 2025) obbliga prodotti e servizi digitali privati ad essere accessibili. Un esperto di conformità aiuta le aziende a rispettarla ed evitare sanzioni.",
+    "esempio": "Un consulente EAA verifica l'app di un supermercato online: controlla testi alternativi, navigazione da tastiera, contrasti — e accompagna il team tecnico nelle correzioni entro scadenza.",
+    "area_correlata": "DIG"
+  },
+  "reti tcp/ip avanzate": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🌐",
+    "definizione": "Conoscenza approfondita dei protocolli che governano Internet: instradamento dei pacchetti, firewall, load balancer, BGP (il 'GPS' di Internet), diagnosi dei problemi di rete.",
+    "esempio": "Un network engineer rileva che i video in streaming sono lenti solo dalla Germania: trova il router congestionato a Francoforte e riconfigura il BGP per instradare il traffico via Amsterdam.",
+    "area_correlata": "COM"
+  },
+  "geopolitica digitale": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🌍",
+    "definizione": "Studio di come la tecnologia digitale — Internet, dati, cloud, semiconduttori — influenza le relazioni di potere tra stati e aziende.",
+    "esempio": "Un analista studia come il blocco USA all'export di chip avanzati alla Cina stia cambiando la catena di produzione globale dei semiconduttori.",
+    "area_correlata": "COM"
+  },
+  "sicurezza delle infrastrutture critiche": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🏭",
+    "definizione": "Protezione di sistemi essenziali per un paese: reti elettriche, acquedotti, ospedali, trasporti, banche. Un attacco a queste infrastrutture può causare crisi nazionali.",
+    "esempio": "Un analista simula un attacco alla rete idrica di una città: trova che i sensori di pressione sono controllabili senza autenticazione e propone l'isolamento dei sistemi di controllo.",
+    "area_correlata": "COM"
+  },
+  "analisi dei dati di rete": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📊",
+    "definizione": "Raccogliere, elaborare e interpretare i dati generati dal traffico di rete per rilevare anomalie, ottimizzare le prestazioni e identificare minacce alla sicurezza.",
+    "esempio": "Un analista rileva che un server interno sta inviando 10GB di dati alle 3:00 verso un IP sconosciuto — segnale di esfiltrazione dati. Blocca il traffico e avvia un'investigazione.",
+    "area_correlata": "COM"
+  },
+  "metodologia osint": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔍",
+    "definizione": "OSINT (Open Source Intelligence) è la raccolta e analisi sistematica di informazioni da fonti pubbliche: web, social media, database, immagini satellitari. Usata da giornalisti investigativi e analisti di sicurezza.",
+    "esempio": "Un investigatore OSINT verifica l'autenticità di un video virale: usa reverse image search, metadati, ombre per calcolare l'ora, Google Maps per identificare l'edificio — scopre che il video è vecchio di 2 anni.",
+    "area_correlata": "COM"
+  },
+  "analisi forense di immagini e video": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🎥",
+    "definizione": "Tecniche per verificare l'autenticità di immagini e video digitali: rilevare manipolazioni, deepfake, metadata falsificati. Strumenti: FotoForensics, InVID, analisi della compressione JPEG.",
+    "esempio": "Un analista forense verifica una foto 'dell'inondazione di ieri': i metadata EXIF rivelano che è stata scattata 3 anni fa in Brasile. Pubblica la smentita con le prove tecniche.",
+    "area_correlata": "COM"
+  },
+  "comprensione degli algoritmi di raccomandazione": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🤖",
+    "definizione": "Conoscere come funzionano i sistemi che suggeriscono contenuti su YouTube, Netflix, TikTok, Spotify: usano dati comportamentali per predire cosa vuole l'utente e massimizzare il tempo sulla piattaforma.",
+    "esempio": "Un ricercatore scopre che YouTube amplifica i video con commenti controversi perché aumentano il tempo di permanenza — portando gradualmente gli utenti verso contenuti sempre più estremi.",
+    "area_correlata": "COM"
+  },
+  "giornalismo di dati": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📰",
+    "definizione": "Approccio giornalistico che usa analisi statistica e visualizzazione di grandi dataset per produrre notizie basate su evidenze quantitative. Combina programmazione, statistica e narrazione.",
+    "esempio": "Un data journalist analizza 500.000 dichiarazioni dei redditi pubbliche dei parlamentari, le incrocia con gli appalti pubblici vinti dalle loro aziende collegate — e produce un'inchiesta documentata.",
+    "area_correlata": "COM"
+  },
+  "linux administration": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🐧",
+    "definizione": "Gestione di server e sistemi Linux: installazione e configurazione del SO, gestione degli utenti e dei permessi, monitoraggio, sicurezza, scripting per l'automazione.",
+    "esempio": "Un sysadmin Linux automatizza i backup notturni con uno script bash, monitora CPU e memoria con Grafana, e applica le patch di sicurezza senza interrompere i servizi.",
+    "area_correlata": "DIG"
+  },
+  "gestione processi e memoria": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "⚙️",
+    "definizione": "Come un sistema operativo gestisce i programmi in esecuzione e la memoria RAM: priorità, multitasking, memoria virtuale, prevenzione dei deadlock e dei memory leak.",
+    "esempio": "Un DevOps engineer scopre un memory leak: un'applicazione web non libera la RAM allocata. Identifica il processo, corregge il codice e risolve i crash che avvenivano ogni 6 ore.",
+    "area_correlata": "DIG"
+  },
+  "containerizzazione (docker)": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🐳",
+    "definizione": "Docker impacchetta un'applicazione con tutto il suo ambiente in un container portatile. Il container funziona identicamente su qualsiasi macchina, eliminando il problema 'sul mio computer funziona'.",
+    "esempio": "Un DevOps containerizza un'app web: crea un Dockerfile che installa le dipendenze e configura tutto. Il container viene deployato su 20 server in produzione in 5 minuti.",
+    "area_correlata": "DIG"
+  },
+  "automazione infrastrutturale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🔄",
+    "definizione": "Automatizzare la creazione, configurazione e gestione dell'infrastruttura IT usando codice (Infrastructure as Code). Strumenti: Terraform, Ansible. Elimina le operazioni manuali ripetitive.",
+    "esempio": "Un ingegnere scrive uno script Terraform che in 10 minuti crea automaticamente su AWS: 10 server, 3 database, un load balancer e 5 regole di firewall — invece delle 3 ore manuali.",
+    "area_correlata": "DIG"
+  },
+  "crittografia applicata": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔐",
+    "definizione": "Uso pratico degli algoritmi crittografici per proteggere dati e comunicazioni: AES, RSA, SHA-256, firme digitali, certificati TLS. La base di Internet sicuro.",
+    "esempio": "Un ingegnere implementa la crittografia end-to-end in un'app di messaggistica: ogni messaggio è cifrato con una chiave che solo mittente e destinatario conoscono.",
+    "area_correlata": "DIG"
+  },
+  "analisi delle vulnerabilità": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔍",
+    "definizione": "Processo sistematico per identificare i punti deboli di un sistema attraverso scan automatici e test manuali. Produce un rapporto con le vulnerabilità, la loro gravità e le contromisure.",
+    "esempio": "Un analista trova una vulnerabilità SQL injection su un sito e-commerce che permetterebbe di estrarre tutti i dati dei clienti. La segnala con priorità critica per la correzione immediata.",
+    "area_correlata": "DIG"
+  },
+  "risposta agli incidenti": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🚨",
+    "definizione": "Processo strutturato per gestire un attacco informatico: rilevamento, contenimento, eradicazione, ripristino e analisi post-incidente. Riduce i danni e previene le recidive.",
+    "esempio": "Un team di incident response isola i computer colpiti da ransomware, identifica il vettore di ingresso (email di phishing), ripristina dai backup e aggiorna le policy di sicurezza.",
+    "area_correlata": "DIG"
+  },
+  "pensiero spaziale": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎯",
+    "definizione": "Abilità di visualizzare e manipolare mentalmente oggetti e forme nello spazio tridimensionale. Essenziale per designer, architetti e ingegneri. Si sviluppa con disegno tecnico e modellazione.",
+    "esempio": "Un designer con ottimo pensiero spaziale immagina come sarà un oggetto da 5 angolazioni diverse senza disegnarlo — poi lo traduce in un modello 3D preciso in poche ore.",
+    "area_correlata": "DIS"
+  },
+  "comunicazione visiva": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Trasmettere informazioni e idee attraverso elementi visivi — grafica, immagini, infografiche, layout — in modo chiaro, efficace ed esteticamente equilibrato.",
+    "esempio": "Un designer trasforma un rapporto annuale di 80 pagine in un documento di 20 con grafici e visualizzazioni: stessa informazione, comprensibile in 5 minuti.",
+    "area_correlata": "DIS"
+  },
+  "software 3d": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🖥️",
+    "definizione": "Padronanza di software di modellazione, rendering o animazione 3D: Blender, Maya, Tinkercad, Fusion 360. Usati in architettura, design industriale, cinema, videogiochi, stampa 3D.",
+    "esempio": "Un visual designer usa Blender per creare la visualizzazione fotorealistica di un nuovo edificio: luce solare in diverse ore del giorno, materiali delle facciate, persone in scala.",
+    "area_correlata": "DIS"
+  },
+  "chimica dei polimeri": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧬",
+    "definizione": "Studio della struttura, sintesi e proprietà delle macromolecole (polimeri) come plastiche, gomme, fibre sintetiche e biomateriali. Permette di progettare nuovi materiali con proprietà su misura.",
+    "esempio": "Un chimico studia perché il PLA (bioplastica) si degrada solo a 58°C e non nella compostiera di casa. Modifica la struttura molecolare per accelerare la degradazione anche a 30°C.",
+    "area_correlata": "MAT"
+  },
+  "progettazione per il disassemblaggio": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🔩",
+    "definizione": "Approccio progettuale che considera fin dall'inizio come il prodotto verrà smontato a fine vita per recuperare i materiali. Usa giunzioni meccaniche invece di colle e materiali compatibili.",
+    "esempio": "Un designer applica questo approccio a uno smartphone: viti standard, batteria removibile, schermo staccabile con riscaldamento. Si smonta in 10 minuti invece di 4 ore.",
+    "area_correlata": "MAT"
+  },
+  "analisi del ciclo di vita (lca)": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "♻️",
+    "definizione": "Metodologia ISO per quantificare l'impatto ambientale di un prodotto dalla culla alla tomba: estrazione, produzione, trasporto, uso, fine vita. Risultato in kg di CO₂ equivalente.",
+    "esempio": "Una maglietta di cotone biologico usa meno pesticidi ma 7.000 litri d'acqua. Quella di poliestere riciclato usa meno acqua ma rilascia microplastiche. Il risultato dipende da quale impatto si considera prioritario.",
+    "area_correlata": "MAT"
+  },
+  "5g": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "📡",
+    "definizione": "La quinta generazione di reti mobili: velocità fino a 10 Gbit/s, latenza quasi zero. Abilita veicoli autonomi, chirurgia remota, fabbriche connesse.",
+    "esempio": "Un ingegnere 5G installa antenne in una zona industriale: le macchine comunicano in 1 ms anziché 50 ms — abbastanza veloci per la robotica collaborativa.",
+    "area_correlata": "COM"
+  },
+  "agricoltura rigenerativa": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🌾",
+    "definizione": "Insieme di pratiche agricole che non solo riducono l'impatto ambientale, ma rigenerano attivamente la salute del suolo: rotazioni, no-tillage, cover crops, integrazione animale.",
+    "esempio": "Un agronomo converte un'azienda cerealicola: elimina l'aratura, semina leguminose tra i filari di grano. Dopo 3 anni il carbonio organico nel suolo è aumentato del 0,4%.",
+    "area_correlata": "ALI"
+  },
+  "agronomia": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🚜",
+    "definizione": "Scienza che studia le tecniche di coltivazione delle piante per massimizzare produzione, qualità e sostenibilità: nutrizione del suolo, varietà, irrigazione, difesa fitosanitaria.",
+    "esempio": "Un agronomo analizza le mappe di fertilità di 200 ettari e prescrive la concimazione differenziata zona per zona — riducendo l'uso di azoto del 18% senza perdita di resa.",
+    "area_correlata": "ALI"
+  },
+  "ai": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🤖",
+    "definizione": "Capacità di sistemi informatici di svolgere compiti che normalmente richiedono intelligenza umana: riconoscere immagini, capire il linguaggio, fare previsioni, prendere decisioni.",
+    "esempio": "Un sistema AI analizza 10.000 radiografie al giorno e segnala al medico le 23 dove rileva anomalie: il medico le esamina in dettaglio invece di rivedere tutte.",
+    "area_correlata": "DIG"
+  },
+  "ai applicata": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "⚙️",
+    "definizione": "Uso pratico degli strumenti di intelligenza artificiale per risolvere problemi reali in settori specifici: produzione, salute, energia, trasporti.",
+    "esempio": "Un ingegnere usa un modello AI per prevedere quando una pompa industriale si guasterà, basandosi su vibrazione e temperatura — riducendo i fermi non pianificati del 40%.",
+    "area_correlata": "ENE"
+  },
+  "ai applicata all’energia": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "⚡",
+    "definizione": "Uso di algoritmi di machine learning per ottimizzare produzione, distribuzione e consumo di energia: previsione della domanda, manutenzione predittiva, trading energetico.",
+    "esempio": "Un sistema AI prevede la produzione solare del giorno dopo con l'85% di accuratezza: la rete elettrica si prepara esattamente con le risorse di backup necessarie.",
+    "area_correlata": "ENE"
+  },
+  "ai design": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🎨",
+    "definizione": "Progettare interfacce, esperienze e comunicazioni visive usando strumenti di intelligenza artificiale generativa come supporto al processo creativo.",
+    "esempio": "Un designer usa AI generativa per creare 50 varianti di logo in 10 minuti, seleziona le 3 più promettenti e le raffina manualmente fino alla versione finale.",
+    "area_correlata": "COM"
+  },
+  "ai generativa": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "✨",
+    "definizione": "Classe di sistemi AI capaci di produrre contenuti nuovi — testo, immagini, audio, video, codice — a partire da un prompt. Esempi: GPT-4, Midjourney, Sora.",
+    "esempio": "Un copywriter usa AI generativa per produrre 20 varianti di un'email promozionale, le testa con un A/B test e tiene quella con il 34% di click in più.",
+    "area_correlata": "DIG"
+  },
+  "analisi del rischio": {
+    "categoria": "Business & Management",
+    "emoji": "⚠️",
+    "definizione": "Identificare, valutare e gestire i rischi che possono compromettere un progetto, sistema o organizzazione: probabilità dell'evento × impatto potenziale.",
+    "esempio": "Un analista valuta 30 rischi per un data center: definisce quelli critici (guasto elettrico, incendio), calcola il costo atteso e propone le contromisure più economicamente vantaggiose.",
+    "area_correlata": "DIG"
+  },
+  "analisi di laboratorio": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🔬",
+    "definizione": "Eseguire test chimici, microbiologici e fisici su campioni alimentari per verificare composizione, sicurezza e conformità alle normative.",
+    "esempio": "Un tecnico analizza 50 campioni di latte fresco: conta i batteri, misura pH, acidità e presenza di antibiotici. Solo i lotti conformi vengono inviati alla pastorizzazione.",
+    "area_correlata": "ALI"
+  },
+  "analisi geospaziale": {
+    "categoria": "Architettura & Città",
+    "emoji": "🗺️",
+    "definizione": "Elaborare e interpretare dati georeferenziati — immagini satellitari, rilievi drone, dati GPS — per analizzare fenomeni territoriali e supportare decisioni.",
+    "esempio": "Un analista sovrappone mappe di uso del suolo, rischio idrogeologico e densità abitativa: individua le aree dove un'alluvione causerebbe i danni maggiori.",
+    "area_correlata": "AMB"
+  },
+  "app design": {
+    "categoria": "Design & Creatività",
+    "emoji": "📱",
+    "definizione": "Progettare l'interfaccia e l'esperienza utente di applicazioni mobili: wireframe, flussi di navigazione, componenti visivi, test con utenti reali.",
+    "esempio": "Una UX designer testa il prototipo di un'app di mobilità con 15 utenti reali: scopre che l'80% non trova il tasto prenotazione — lo sposta in alto e i completamenti aumentano del 60%.",
+    "area_correlata": "COM"
+  },
+  "auditing": {
+    "categoria": "Business & Management",
+    "emoji": "📋",
+    "definizione": "Verifica sistematica e documentata che un'organizzazione rispetti le regole, le procedure e gli standard applicabili — ambientali, fiscali, di sicurezza o di qualità.",
+    "esempio": "Un auditor verifica che tutti i fornitori di un'azienda moda abbiano certificazioni sociali: visita 12 fabbriche in Asia, documenta le non conformità e segue le correzioni.",
+    "area_correlata": "MAT"
+  },
+  "auditing energetico": {
+    "categoria": "Energia",
+    "emoji": "🔍",
+    "definizione": "Verifica formale dei consumi energetici di un edificio o impianto secondo normative (ISO 50001, D.Lgs 102/2014). Produce un rapporto con misure di risparmio ordinate per convenienza.",
+    "esempio": "Un energy auditor certifica che una fabbrica ha consumato 8 GWh nell'anno: il rapporto identifica 5 interventi con payback sotto i 3 anni per un risparmio totale di 1,5 GWh.",
+    "area_correlata": "ENE"
+  },
+  "automazione": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🤖",
+    "definizione": "Uso di macchine, software e sistemi di controllo per eseguire operazioni ripetitive senza intervento umano continuo: PLC, robot, RPA, script.",
+    "esempio": "Un ingegnere automatizza la linea di imbottigliamento: robot caricano le bottiglie, sensori controllano il peso, un PLC coordina tutto — 3000 bottiglie/ora senza operatori manuali.",
+    "area_correlata": "COM"
+  },
+  "behavioral economics": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧠",
+    "definizione": "Studio di come le persone prendono realmente le decisioni economiche, spesso in modo irrazionale. Usa questa conoscenza per progettare sistemi che guidano verso scelte migliori (nudging).",
+    "esempio": "Un consulente ridisegna il menu di una mensa scolastica mettendo la frutta all'altezza degli occhi e la pizza in fondo: il consumo di frutta aumenta del 35% senza vietare nulla.",
+    "area_correlata": "SIS"
+  },
+  "bioarchitettura": {
+    "categoria": "Architettura & Città",
+    "emoji": "🌿",
+    "definizione": "Progettare edifici in armonia con l'ambiente: materiali naturali e locali, comfort bioclimatico passivo, integrazione di verde, minimo impatto sul territorio.",
+    "esempio": "Un bioarchitetto progetta una scuola in legno di filiera locale: nessun impianto di climatizzazione grazie all'orientamento ottimale, alle finestre studiate e all'isolamento in fibra di legno.",
+    "area_correlata": "AMB"
+  },
+  "biochimica": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "⚗️",
+    "definizione": "Studio delle reazioni chimiche che avvengono negli organismi viventi: metabolismo, enzimi, proteine, DNA. Base per biotecnologie, farmacologia e scienze alimentari.",
+    "esempio": "Un biochimico studia come un enzima specifico rompe il lattosio: sviluppa un processo produttivo per un latte delattosato più economico del 30% rispetto ai metodi esistenti.",
+    "area_correlata": "ALI"
+  },
+  "biochimica alimentare": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🧬",
+    "definizione": "Applicazione della biochimica al settore alimentare: studio delle reazioni che modificano sapore, colore, nutrienti durante la produzione, conservazione e cottura.",
+    "esempio": "Una ricercatrice studia la reazione di Maillard (la 'doratura') nel pane: capisce come temperatura e umidità influenzano sapore e crosta — e ottimizza il processo del forno.",
+    "area_correlata": "ALI"
+  },
+  "biologia molecolare": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔬",
+    "definizione": "Studio dei meccanismi molecolari della vita: replicazione del DNA, espressione genica, proteine. Base per diagnostica, OGM, farmaci biologici.",
+    "esempio": "Un biologo molecolare sviluppa un test PCR per identificare in 4 ore se un lotto di carne è contaminato da Salmonella — invece dei 3 giorni del test classico.",
+    "area_correlata": "ALI"
+  },
+  "biotecnologia": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧬",
+    "definizione": "Uso di organismi viventi o loro componenti per produrre o migliorare prodotti e processi. Include fermentazione, enzimi industriali, organismi geneticamente modificati.",
+    "esempio": "Un biotecnologo migliora il ceppo di lievito usato in una cantina: il nuovo ceppo fermenta più velocemente e produce profumi fruttati più intensi nel vino.",
+    "area_correlata": "ALI"
+  },
+  "biotecnologie alimentari": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🍶",
+    "definizione": "Applicazione delle biotecnologie alla produzione di alimenti: fermentazione avanzata, enzimi per la lavorazione, miglioramento varietale, alimenti funzionali.",
+    "esempio": "Un tecnico sviluppa un formaggio vegano usando proteine del latte prodotte da lieviti modificati: stesso gusto e texture, zero animali coinvolti.",
+    "area_correlata": "ALI"
+  },
+  "blockchain": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "⛓️",
+    "definizione": "Registro digitale distribuito dove ogni transazione è registrata in modo permanente e verificabile da tutti, senza un'autorità centrale. Usato per tracciabilità, contratti e criptovalute.",
+    "esempio": "Un produttore di olio extravergine registra ogni lotto su blockchain: il consumatore scansiona il QR e vede la data di raccolta, il frantoio e tutti i passaggi fino al negozio.",
+    "area_correlata": "MAT"
+  },
+  "branding": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🏷️",
+    "definizione": "Costruire e gestire l'identità di un marchio: nome, logo, valori, tono di voce, esperienza che lascia nel cliente. Un brand forte crea fiducia e permette prezzi più alti.",
+    "esempio": "Un brand manager riposiziona un marchio di pasta da 'economico' a 'artigianale italiano': cambia packaging, tono, distribuzione — il prezzo percepito aumenta del 25%.",
+    "area_correlata": "COM"
+  },
+  "cad": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📐",
+    "definizione": "Computer-Aided Design: software per creare disegni tecnici precisi in 2D e modelli 3D. Usato da architetti, ingegneri e designer per progettare prima di costruire.",
+    "esempio": "Un progettista disegna in CAD la pianta di un appartamento con tutte le misure: la condivide con l'impresa e i serramentisti, evitando errori di misura in cantiere.",
+    "area_correlata": "AMB"
+  },
+  "cad 2d/3d": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🖥️",
+    "definizione": "Padronanza dei software CAD per disegno piatto (2D) e modellazione tridimensionale (3D). Il 2D serve per tavole tecniche, il 3D per visualizzare e simulare il prodotto finito.",
+    "esempio": "Un tecnico disegna in 2D la pianta di un impianto, poi costruisce il modello 3D per simulare i percorsi operatori e verificare che non ci siano conflitti tra macchine.",
+    "area_correlata": "DIS"
+  },
+  "cad moda": {
+    "categoria": "Design & Creatività",
+    "emoji": "👗",
+    "definizione": "Software CAD specializzati per la moda: CLO3D, Lectra, Gerber. Permettono di creare cartamodelli digitali, simulare la vestibilità su avatar 3D e ottimizzare il consumo di tessuto.",
+    "esempio": "Una modellista usa CLO3D per simulare la caduta di un abito su avatar di taglie diverse: trova e corregge le difettosità senza tagliare un solo metro di tessuto fisico.",
+    "area_correlata": "MAT"
+  },
+  "certificazioni ape": {
+    "categoria": "Energia",
+    "emoji": "🏠",
+    "definizione": "APE (Attestato di Prestazione Energetica) è il documento obbligatorio in Italia che certifica il consumo energetico di un edificio con classi da A4 a G. Richiesto per vendita e affitto.",
+    "esempio": "Un certificatore APE analizza l'isolamento, il riscaldamento e le finestre di una villa: la classifica G (la peggiore). Propone tre interventi per portarla in classe B e aumentarne il valore.",
+    "area_correlata": "ENE"
+  },
+  "certificazioni energetiche": {
+    "categoria": "Energia",
+    "emoji": "📜",
+    "definizione": "Certificazioni che attestano le prestazioni energetiche di edifici e impianti: APE in Italia, EPC in Europa, LEED, BREEAM. Sempre più richieste da banche e investitori.",
+    "esempio": "Un esperto certifica un edificio per uffici: raccoglie i consumi reali, calcola l'EUI (energia per m²) e ottiene la certificazione LEED Silver che aumenta il valore di mercato del 7%.",
+    "area_correlata": "ENE"
+  },
+  "certificazioni leed/breeam": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌿",
+    "definizione": "LEED (americano) e BREEAM (britannico) sono le certificazioni internazionali più riconosciute per edifici sostenibili. Valutano energia, acqua, materiali, qualità dell'aria, innovazione.",
+    "esempio": "Un consulente segue la certificazione BREEAM di un nuovo campus universitario: coordina 8 specialisti, raccoglie 120 prove documentali e ottiene il livello Excellent.",
+    "area_correlata": "AMB"
+  },
+  "change management": {
+    "categoria": "Business & Management",
+    "emoji": "🔄",
+    "definizione": "Gestire i processi di trasformazione organizzativa in modo che le persone accettino e adottino i cambiamenti: comunicazione, formazione, coinvolgimento, resistenza al cambiamento.",
+    "esempio": "Un consulente guida 500 dipendenti nell'adozione di un nuovo ERP: workshop, affiancamento, champion interni. Dopo 3 mesi il 90% usa il sistema correttamente.",
+    "area_correlata": "DIG"
+  },
+  "chimica organica del suolo": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌱",
+    "definizione": "Studio della materia organica nel suolo — humus, microbi, radici decomposte — e come influenza fertilità, struttura, ritenzione idrica e sequestro di CO₂.",
+    "esempio": "Un ricercatore analizza suoli di 40 aziende agricole: quelle con più sostanza organica (3% vs 1%) trattengono il doppio dell'acqua e resistono meglio alla siccità estiva.",
+    "area_correlata": "ALI"
+  },
+  "circuiti elettrici": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚡",
+    "definizione": "Comprensione e progettazione di circuiti elettrici: legge di Ohm, serie e parallelo, calcolo di correnti e tensioni, protezioni. Base per ogni impianto elettrico.",
+    "esempio": "Un tecnico analizza il circuito di un quadro elettrico industriale: calcola che la protezione da 16A è sottodimensionata e la sostituisce con una da 25A per evitare scatti continui.",
+    "area_correlata": "ENE"
+  },
+  "coaching digitale": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "💬",
+    "definizione": "Supporto individuale o di gruppo per sviluppare competenze digitali e gestire il benessere nell'ambiente digitale: equilibrio schermo-vita reale, produttività, relazioni online.",
+    "esempio": "Un coach digitale lavora con un manager che controlla le email ogni 5 minuti: introduce finestre di 'deep work' di 90 minuti. La produttività aumenta e lo stress scende.",
+    "area_correlata": "DIG"
+  },
+  "composizione visiva": {
+    "categoria": "Design & Creatività",
+    "emoji": "🖼️",
+    "definizione": "Arte di organizzare gli elementi visivi (forme, colori, testi, spazi) in una pagina o schermo per guidare l'occhio dello spettatore e comunicare in modo efficace.",
+    "esempio": "Una graphic designer usa la regola dei terzi e contrasti di colore per far risaltare il messaggio principale di un manifesto: i passanti lo leggono in 3 secondi.",
+    "area_correlata": "DIS"
+  },
+  "comunicazione": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "💬",
+    "definizione": "Capacità di trasmettere idee e informazioni in modo chiaro ed efficace attraverso parola, testo, immagini e gesti, adattando il messaggio all'interlocutore.",
+    "esempio": "Un tecnico spiega a un cliente non esperto perché l'isolamento della sua casa fa risparmiare: usa l'analogia del maglione invece di numeri di resistenza termica.",
+    "area_correlata": "DIS"
+  },
+  "creatività": {
+    "categoria": "Design & Creatività",
+    "emoji": "💡",
+    "definizione": "Capacità di generare idee nuove e originali, combinare concetti in modo inusuale, trovare soluzioni non convenzionali a problemi. Si coltiva con pratica e contaminazione tra discipline.",
+    "esempio": "Un designer si ispira alle strutture delle ossa per progettare un telaio di bicicletta: resistente come l'osso, leggero come il tendine. Brevetto depositato.",
+    "area_correlata": "DIS"
+  },
+  "crittografia": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔐",
+    "definizione": "Scienza che protegge le informazioni trasformandole in codice illeggibile senza la chiave di decifrazione. Ogni comunicazione sicura su Internet usa la crittografia.",
+    "esempio": "Un ingegnere implementa TLS 1.3 su un sito e-commerce: le comunicazioni tra browser e server sono cifrate — i dati di pagamento non possono essere intercettati.",
+    "area_correlata": "DIG"
+  },
+  "crittografia avanzata": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔏",
+    "definizione": "Algoritmi crittografici avanzati: crittografia post-quantum (resistente ai computer quantistici), zero-knowledge proof, crittografia omomorfica (calcolare su dati cifrati senza decifrarli).",
+    "esempio": "Un ricercatore implementa una firma digitale basata su reticoli (post-quantum): anche se un giorno esistessero computer quantistici, i documenti firmati resterebbero verificabili.",
+    "area_correlata": "DIG"
+  },
+  "cyberlaw": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "⚖️",
+    "definizione": "Diritto applicato al mondo digitale: crimini informatici, responsabilità per i contenuti online, diritto d'autore digitale, contratti elettronici, protezione dei dati.",
+    "esempio": "Un avvocato cyber aiuta un'azienda vittima di ransomware: verifica gli obblighi di notifica al Garante entro 72 ore, gestisce la comunicazione agli utenti colpiti.",
+    "area_correlata": "DIG"
+  },
+  "data analysis": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "📊",
+    "definizione": "Raccogliere, pulire, esplorare e interpretare dati per ricavare informazioni utili a prendere decisioni: statistiche descrittive, visualizzazioni, correlazioni, anomalie.",
+    "esempio": "Un analista confronta i consumi energetici di 50 edifici simili: trova che 8 consumano il 40% in più. Analizzando i dati orari scopre che restano in modalità 'giorno' anche di notte.",
+    "area_correlata": "ENE"
+  },
+  "data strategy": {
+    "categoria": "Business & Management",
+    "emoji": "🎯",
+    "definizione": "Definire come un'organizzazione raccoglie, gestisce, condivide e valorizza i propri dati: governance, qualità, sicurezza, infrastruttura, competenze.",
+    "esempio": "Un Chief Data Officer definisce la strategia dati di un gruppo retail: unico data lake centralizzato, glossario condiviso, responsabili per ogni dataset — i dati diventano affidabili e usabili.",
+    "area_correlata": "DIG"
+  },
+  "data visualization": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📈",
+    "definizione": "Trasformare dati numerici in grafici, mappe e infografiche che rendono i pattern visibili a colpo d'occhio. Strumenti: Tableau, Power BI, D3.js.",
+    "esempio": "Un analista trasforma 500.000 righe di dati su incidenti stradali in una mappa interattiva: il sindaco vede subito i 5 incroci più pericolosi e decide dove installare i semafori.",
+    "area_correlata": "COM"
+  },
+  "data-driven governance": {
+    "categoria": "Business & Management",
+    "emoji": "🏛️",
+    "definizione": "Processo decisionale nelle istituzioni pubbliche basato su dati raccolti e analizzati sistematicamente: monitoraggio dei servizi, politiche evidence-based, trasparenza.",
+    "esempio": "Un comune raccoglie dati da 200 sensori urbani: qualità dell'aria, traffico, rumore, rifiuti. Il sindaco usa la dashboard per decidere dove aprire nuove zone a traffico limitato.",
+    "area_correlata": "AMB"
+  },
+  "deep learning": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🧠",
+    "definizione": "Sottocampo del machine learning che usa reti neurali con molti strati per apprendere da grandi quantità di dati. Alla base del riconoscimento vocale, visione artificiale, traduzione automatica.",
+    "esempio": "Una rete neurale deep learning analizza 1 milione di immagini di melanomi: impara a distinguere quelli maligni dai benigni con il 94% di accuratezza, al livello dei dermatologi esperti.",
+    "area_correlata": "DIG"
+  },
+  "design circolare": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "♻️",
+    "definizione": "Approccio progettuale che considera fin dall'inizio il ciclo di vita del prodotto: materiali riciclabili, componenti riparabili, smontaggio facile, nessun rifiuto non recuperabile.",
+    "esempio": "Un designer applica il design circolare a uno zaino: struttura modulare, cerniere riparabili, tessuto in PET riciclato e tintura senza acqua. Quando è consumato, tutto può essere riciclato.",
+    "area_correlata": "MAT"
+  },
+  "design del prodotto": {
+    "categoria": "Design & Creatività",
+    "emoji": "✏️",
+    "definizione": "Progettare oggetti fisici che risolvono problemi reali: funzione, forma, materiali, produzione, ergonomia, estetica. Dall'idea al prototipo al prodotto di serie.",
+    "esempio": "Un product designer studia come le persone anziane tengono in mano una tazza — e progetta un manico con 4 aree di presa diverse. Venduta in 30 paesi, premiata al Red Dot Award.",
+    "area_correlata": "MAT"
+  },
+  "design industriale": {
+    "categoria": "Design & Creatività",
+    "emoji": "🏭",
+    "definizione": "Disciplina che progetta prodotti di serie combinando estetica, funzionalità, ergonomia e fattibilità produttiva. Collega creatività e ingegneria.",
+    "esempio": "Un designer industriale ridisegna un aspirapolvere: stessa potenza, peso ridotto del 30%, facile da svuotare con una mano. Le vendite aumentano del 45% il primo anno.",
+    "area_correlata": "DIS"
+  },
+  "design management": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎯",
+    "definizione": "Gestire il design come leva strategica in un'organizzazione: coordinare team creativi, integrare il design nei processi aziendali, misurarne il valore economico.",
+    "esempio": "Un design manager coordina 12 designer in 4 paesi per rinnovare l'intera linea prodotti di un'azienda: definisce il design system, le milestone e garantisce coerenza visiva globale.",
+    "area_correlata": "DIS"
+  },
+  "digital content": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📱",
+    "definizione": "Creare e gestire contenuti per canali digitali: testi, immagini, video, podcast, newsletter. Ogni formato richiede competenze specifiche e adattamento alla piattaforma.",
+    "esempio": "Un content creator produce un reel da 30 secondi per Instagram, un thread di 7 tweet per X e un articolo da 800 parole per il blog — stesso tema, 3 formati completamente diversi.",
+    "area_correlata": "COM"
+  },
+  "diritto digitale": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "⚖️",
+    "definizione": "Insieme delle norme giuridiche che regolano il mondo digitale: GDPR, AI Act, copyright online, responsabilità delle piattaforme, contratti elettronici.",
+    "esempio": "Un esperto di diritto digitale verifica che un'app di fitness rispetti il GDPR e l'AI Act europeo: suggerisce di aggiungere spiegabilità alle raccomandazioni AI e il consenso esplicito ai dati sanitari.",
+    "area_correlata": "DIG"
+  },
+  "disegno tessile": {
+    "categoria": "Design & Creatività",
+    "emoji": "🧵",
+    "definizione": "Progettare pattern, stampe e texture per tessuti: motivi ripetuti, gestione del rapport, scelta dei colori in base ai processi produttivi (stampa digitale, jacquard, ricamo).",
+    "esempio": "Una textile designer crea 30 varianti di un motivo floreale per una collezione: usa software come Photoshop e Textile Design Pro per simulare come appariranno sul tessuto finito.",
+    "area_correlata": "MAT"
+  },
+  "documentazione di progetto": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📄",
+    "definizione": "Produrre e gestire tutta la documentazione tecnica di un progetto: relazioni, tavole, specifiche, verbali, manuali. Essenziale per la comunicazione tra tutti gli attori coinvolti.",
+    "esempio": "Un tecnico produce il fascicolo dell'opera per una ristrutturazione: piante, sezioni, particolari costruttivi, specifiche materiali. Il documento viene consegnato al committente per 20 anni di manutenzione.",
+    "area_correlata": "DIS"
+  },
+  "domotica": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏠",
+    "definizione": "Sistemi che automatizzano e controllano in modo intelligente funzioni dell'abitazione: illuminazione, riscaldamento, sicurezza, elettrodomestici — spesso controllabili da smartphone.",
+    "esempio": "Un installatore configura un sistema KNX: le luci si spengono quando non c'è nessuno, il riscaldamento si abbassa alle 23:00, le tapparelle scendono con il sole. Risparmio energetico del 25%.",
+    "area_correlata": "ENE"
+  },
+  "domotica avanzata": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏡",
+    "definizione": "Sistemi integrati di automazione domestica con AI: apprendimento delle abitudini, integrazione con reti energetiche (Virtual Power Plant), gestione automatica dello storage.",
+    "esempio": "Un sistema domotico avanzato impara i ritmi familiari: carica l'auto elettrica di notte al prezzo più basso, anticipa il riscaldamento di 30 minuti, ottimizza l'uso del fotovoltaico.",
+    "area_correlata": "ENE"
+  },
+  "economia decentralizzata": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🌐",
+    "definizione": "Sistemi economici basati su blockchain e smart contract che operano senza intermediari tradizionali (banche, notai, piattaforme): DeFi, DAO, NFT, criptovalute.",
+    "esempio": "Una cooperativa agricola usa una DAO (organizzazione decentralizzata): i soci votano le decisioni con token, i profitti sono distribuiti automaticamente via smart contract senza bisogno di un consiglio.",
+    "area_correlata": "SIS"
+  },
+  "educazione ai media": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📚",
+    "definizione": "Formare le persone a comprendere, analizzare e usare criticamente i media digitali: algoritmi, bolle informative, economia dell'attenzione, produzione responsabile di contenuti.",
+    "esempio": "Un educatore media mostra a 25 ragazzi di 13 anni come l'algoritmo di TikTok crea bolle: stessa query, profili diversi, risultati completamente diversi. I ragazzi iniziano a cercare opinioni diverse.",
+    "area_correlata": "DIG"
+  },
+  "elaborazione immagini": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🖼️",
+    "definizione": "Tecniche per analizzare e modificare immagini digitali con algoritmi: rilevamento di oggetti, riconoscimento facciale, classificazione, segmentazione semantica.",
+    "esempio": "Un sistema di elaborazione immagini ispeziona 10.000 capsule farmaceutiche al minuto: rileva difetti di 0,1 mm con il 99,8% di accuratezza, scaricando automaticamente i pezzi non conformi.",
+    "area_correlata": "DIG"
+  },
+  "emissioni co₂": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌡️",
+    "definizione": "Calcolare, monitorare e ridurre le emissioni di CO₂ e altri gas serra prodotte da un'organizzazione, prodotto o attività. Misurate in kg o tonnellate di CO₂ equivalente.",
+    "esempio": "Un analista calcola le emissioni di una PMI alimentare: 60% dalla logistica, 25% dalla produzione, 15% dagli uffici. Propone di elettrificare la flotta come intervento più impattante.",
+    "area_correlata": "MAT"
+  },
+  "energie rinnovabili": {
+    "categoria": "Energia",
+    "emoji": "☀️",
+    "definizione": "Tecnologie per produrre energia da fonti inesauribili: solare fotovoltaico, eolico, idroelettrico, geotermico, biomasse. Conoscere principi, costi e normative per progettare impianti.",
+    "esempio": "Un progettista dimensiona l'impianto energetico di un nuovo quartiere: fotovoltaico sui tetti, palo eolico per la palestra, accumulatori. Fabbisogno coperto al 90% da rinnovabili.",
+    "area_correlata": "ENE"
+  },
+  "epd (environmental product declaration)": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📋",
+    "definizione": "Dichiarazione ambientale verificata di prodotto: documento standardizzato (ISO 14025) che quantifica l'impatto ambientale di un prodotto lungo tutto il ciclo di vita. Richiesta nei capitolati pubblici europei.",
+    "esempio": "Un produttore di cemento ottiene l'EPD per il suo prodotto: dimostra con dati verificati da terzi che emette 650 kg CO₂/t invece dei 900 kg della media di settore.",
+    "area_correlata": "MAT"
+  },
+  "ergonomia": {
+    "categoria": "Design & Creatività",
+    "emoji": "🪑",
+    "definizione": "Scienza che adatta ambienti, strumenti e prodotti alle capacità e ai limiti umani — fisici e cognitivi — per aumentare comfort, sicurezza e prestazioni.",
+    "esempio": "Un ergonomo analizza la postazione di 50 operai in una catena di montaggio: rileva posture scorrette e riprogetta l'altezza del banco. Gli infortuni alla schiena calano del 40% in 6 mesi.",
+    "area_correlata": "DIS"
+  },
+  "etica ai": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "⚖️",
+    "definizione": "Valutare l'impatto etico dei sistemi di intelligenza artificiale: bias, trasparenza, responsabilità, privacy, impatto sul lavoro. Competenza fondamentale per chi progetta o usa sistemi AI.",
+    "esempio": "Un esperto analizza un algoritmo di selezione del personale: scopre che penalizza i CV con nomi stranieri. Propone tecniche di debiasing e audit periodici prima del rilascio.",
+    "area_correlata": "DIG"
+  },
+  "etica digitale": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🤝",
+    "definizione": "Principi e pratiche per agire in modo responsabile nel mondo digitale: rispetto della privacy, lotta alla disinformazione, uso equo dei dati, impatto sociale della tecnologia.",
+    "esempio": "Un responsabile digitale di un comune definisce le linee guida per l'uso dell'AI nella PA: trasparenza sulle decisioni automatizzate, revisione umana obbligatoria per i casi a impatto alto.",
+    "area_correlata": "DIG"
+  },
+  "facilitazione": {
+    "categoria": "Business & Management",
+    "emoji": "🤝",
+    "definizione": "Arte di guidare un gruppo verso obiettivi condivisi usando tecniche strutturate: gestire il tempo, bilanciare le voci, gestire i conflitti, fare emergere le idee migliori.",
+    "esempio": "Un facilitatore guida 20 dirigenti in un workshop strategico di 2 giorni: usa World Café, fishbowl e dot voting. Il risultato: 5 priorità condivise e un piano d'azione concreto.",
+    "area_correlata": "SIS"
+  },
+  "facilitazione creativa": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Guidare workshop e processi creativi usando tecniche di design thinking, brainstorming strutturato, LEGO Serious Play — per generare idee nuove in gruppo.",
+    "esempio": "Una facilitatrice guida 15 designer in un design sprint di 5 giorni: dal problema al prototipo testato in una settimana. Il metodo elimina mesi di riunioni infruttuose.",
+    "area_correlata": "DIS"
+  },
+  "food manufacturing": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🏭",
+    "definizione": "Gestione dei processi industriali di produzione alimentare: linee di trasformazione, macchine, automazione, qualità, efficienza produttiva, sicurezza degli impianti.",
+    "esempio": "Un ingegnere ottimizza la linea di produzione di un pastificio: riduce i tempi di cambio formato da 4 ore a 45 minuti aumentando la produzione del 20% a parità di personale.",
+    "area_correlata": "ALI"
+  },
+  "food tech": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🍽️",
+    "definizione": "Applicazione di tecnologie innovative nel settore alimentare: stampa 3D di cibo, coltivazione cellulare (carne in vitro), fermentazione di precisione, packaging intelligente.",
+    "esempio": "Una startup food tech produce proteine di carne da cellule staminali bovine: stessa struttura del muscolo, zero macelli, 90% di acqua in meno rispetto all'allevamento tradizionale.",
+    "area_correlata": "ALI"
+  },
+  "game theory": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "♟️",
+    "definizione": "Studio matematico di come agenti razionali prendono decisioni strategiche quando l'esito dipende dalle scelte degli altri. Usata in economia, politica, biologia e design di mercati.",
+    "esempio": "Un economista usa la teoria dei giochi per progettare le regole di un'asta per frequenze 5G: il meccanismo spinge gli operatori a fare offerte reali invece di strategiche.",
+    "area_correlata": "SIS"
+  },
+  "geolocalizzazione": {
+    "categoria": "Architettura & Città",
+    "emoji": "📍",
+    "definizione": "Determinare la posizione geografica di un oggetto o persona usando GPS, WiFi, celle radio o beacon Bluetooth. Base per navigatori, consegne, tracking asset, geofencing.",
+    "esempio": "Un sistema di geolocalizzazione traccia 300 container in un porto: quando uno si sposta senza autorizzazione, l'allarme parte in 30 secondi.",
+    "area_correlata": "COM"
+  },
+  "geologia": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🪨",
+    "definizione": "Studio della composizione, struttura e storia della Terra: rocce, suoli, fenomeni sismici e vulcanici, risorse minerarie, rischio idrogeologico.",
+    "esempio": "Un geologo analizza il terreno dove si costruirà un ponte: esegue sondaggi, identifica strati di argilla molle e raccomanda fondazioni su pali profondi 25 metri.",
+    "area_correlata": "AMB"
+  },
+  "gestione del suolo": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🌍",
+    "definizione": "Pratiche per mantenere e migliorare la salute del suolo agricolo: lavorazioni, concimazione, drenaggio, prevenzione dell'erosione, incremento della sostanza organica.",
+    "esempio": "Un agronomo introduce le cover crops invernali su 100 ettari: in primavera il suolo è coperto e protetto dall'erosione, con 0,3% in più di sostanza organica rispetto all'anno precedente.",
+    "area_correlata": "ALI"
+  },
+  "gestione mobilità": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚌",
+    "definizione": "Pianificare e coordinare servizi di trasporto per ridurre congestione, emissioni e tempi di spostamento: integrazione modale, MaaS, gestione della domanda.",
+    "esempio": "Un mobility manager aziendale riduce del 35% gli spostamenti in auto privata: abbonamenti al trasporto pubblico, bike sharing, car pooling e 2 giorni di smart working a settimana.",
+    "area_correlata": "COM"
+  },
+  "gestione processi produttivi": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚙️",
+    "definizione": "Pianificare, organizzare e ottimizzare i processi di produzione: sequenza delle operazioni, gestione dei materiali, controllo qualità, riduzione degli sprechi.",
+    "esempio": "Un operations manager riorganizza la produzione di un mobilificio: introduce il flusso tirato (pull), elimina il magazzino intermedio e riduce i tempi di consegna da 8 a 4 settimane.",
+    "area_correlata": "SIS"
+  },
+  "gestione software aziendale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "💼",
+    "definizione": "Implementare, configurare e gestire software gestionali aziendali: ERP (SAP, Odoo), CRM, software di contabilità, MES per la produzione.",
+    "esempio": "Un consulente implementa Odoo in un'azienda da 80 persone: configura 6 moduli (vendite, acquisti, magazzino, produzione, contabilità, HR), forma il personale in 3 mesi.",
+    "area_correlata": "DIG"
+  },
+  "gis e telerilevamento": {
+    "categoria": "Architettura & Città",
+    "emoji": "🛰️",
+    "definizione": "Combinazione di GIS con dati da satellite e drone: analizzare il territorio a scala globale usando immagini multispettrali per monitorare vegetazione, ghiacciai, usi del suolo.",
+    "esempio": "Un analista usa immagini Sentinel-2 ogni 5 giorni per monitorare lo stato dei campi: l'indice NDVI segnala quali appezzamenti sono in stress idrico prima che il danno sia visibile.",
+    "area_correlata": "AMB"
+  },
+  "governance dei dati": {
+    "categoria": "Business & Management",
+    "emoji": "🏛️",
+    "definizione": "Politiche, processi e standard che definiscono come i dati vengono raccolti, gestiti, protetti e usati in un'organizzazione: qualità, ownership, accesso, ciclo di vita.",
+    "esempio": "Un Data Governance Manager definisce che ogni dataset ha un 'data owner' responsabile, con aggiornamenti almeno mensili e classificazione della sensibilità. La qualità dei dati migliora dell'80%.",
+    "area_correlata": "DIG"
+  },
+  "hr e organizzazione": {
+    "categoria": "Business & Management",
+    "emoji": "👥",
+    "definizione": "Gestire le persone in un'organizzazione: selezione, formazione, valutazione delle prestazioni, sviluppo della cultura aziendale, relazioni sindacali.",
+    "esempio": "Un HR manager introduce un sistema di OKR (Obiettivi e Risultati Chiave) per 200 dipendenti: ogni trimestre gli obiettivi individuali sono allineati con quelli aziendali, la produttività aumenta del 18%.",
+    "area_correlata": "SIS"
+  },
+  "inclusione e accessibilità": {
+    "categoria": "Design & Creatività",
+    "emoji": "♿",
+    "definizione": "Progettare prodotti, servizi e ambienti digitali accessibili a tutti, incluse persone con disabilità fisiche, cognitive o sensoriali.",
+    "esempio": "Un designer verifica un'app scolastica con utenti ipovedenti: i contrasti sono insufficienti, le icone non hanno etichette. Dopo le correzioni, l'app è usabile anche con tastiera e screen reader.",
+    "area_correlata": "DIG"
+  },
+  "industria 4.0": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🏭",
+    "definizione": "Quarta rivoluzione industriale: integrazione di IoT, AI, robotica, big data e cloud nella produzione manifatturiera per creare 'fabbriche intelligenti' che si auto-ottimizzano.",
+    "esempio": "Una fabbrica 4.0: i robot collaborativi lavorano accanto agli operai, i sensori trasmettono dati in tempo reale, l'AI prevede i guasti — zero fermi non pianificati per 3 mesi.",
+    "area_correlata": "DIS"
+  },
+  "industry 4.0": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚙️",
+    "definizione": "Integrazione di tecnologie digitali avanzate nella produzione industriale: gemelli digitali, manutenzione predittiva, produzione su misura di massa, supply chain trasparente.",
+    "esempio": "Un gemello digitale replica ogni componente di una turbina: quando il sensore rileva una vibrazione anomala, il modello digitale simula il guasto e ordina il pezzo di ricambio automaticamente.",
+    "area_correlata": "SIS"
+  },
+  "industry 5.0": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🤝",
+    "definizione": "Evoluzione dell'Industry 4.0 che rimette l'essere umano al centro: robot come collaboratori (cobots), produzione sostenibile, resilienza. L'obiettivo non è solo efficienza ma benessere.",
+    "esempio": "In una fabbrica Industry 5.0, un cobot tiene la parte pesante mentre l'operaio fa il lavoro di precisione: nessun infortunio alla schiena, qualità superiore ai robot autonomi.",
+    "area_correlata": "MAT"
+  },
+  "ingegneria ambientale": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🌍",
+    "definizione": "Applicazione dei principi ingegneristici per proteggere e ripristinare l'ambiente: trattamento acque, gestione dei rifiuti, bonifica di siti contaminati, controllo dell'inquinamento.",
+    "esempio": "Un ingegnere ambientale progetta un impianto di fitodepurazione per un piccolo comune: piante acquatiche purificano le acque reflue a zero consumo energetico.",
+    "area_correlata": "AMB"
+  },
+  "ingegneria chimica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚗️",
+    "definizione": "Progettare e gestire processi industriali che trasformano materie prime in prodotti chimici, energetici o alimentari: reattori, separatori, scambiatori di calore.",
+    "esempio": "Un ingegnere chimico ottimizza il processo di produzione dell'idrogeno da elettrolisi: aumenta la temperatura di 10°C, riduce il consumo energetico del 12% senza diminuire la resa.",
+    "area_correlata": "ENE"
+  },
+  "ingegneria dei sistemi": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔧",
+    "definizione": "Approccio interdisciplinare per progettare sistemi complessi dove molti componenti devono funzionare insieme: architettura del sistema, interfacce, testing, ciclo di vita.",
+    "esempio": "Un systems engineer coordina 6 team per progettare un satellite: definisce le interfacce tra struttura, propulsione, elettronica e software — ogni team conosce esattamente cosa devono dare agli altri.",
+    "area_correlata": "SIS"
+  },
+  "ingegneria elettrica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚡",
+    "definizione": "Progettare sistemi per generare, trasmettere e distribuire energia elettrica: impianti di produzione, reti di trasmissione, quadri elettrici, protezioni.",
+    "esempio": "Un ingegnere elettrico progetta il collegamento di un parco solare da 50 MW alla rete: calcola il trasformatore, il tipo di connessione e le protezioni contro i fulmini.",
+    "area_correlata": "ENE"
+  },
+  "innovation management": {
+    "categoria": "Business & Management",
+    "emoji": "💡",
+    "definizione": "Strutturare e gestire i processi di innovazione in un'organizzazione: ideazione, selezione dei progetti, gestione del portafoglio, collaborazione con startup ed ecosistemi.",
+    "esempio": "Un innovation manager lancia un programma interno di open innovation: 300 idee raccolte, 20 selezionate, 5 diventate prodotti. ROI: 8× rispetto all'investimento in 3 anni.",
+    "area_correlata": "DIG"
+  },
+  "innovazione": {
+    "categoria": "Business & Management",
+    "emoji": "🚀",
+    "definizione": "Capacità di introdurre idee, processi o prodotti nuovi che creano valore. Include la tolleranza al rischio, il pensiero laterale, la prototipazione rapida e l'apprendimento dal fallimento.",
+    "esempio": "Un team innova il packaging di un detersivo: elimina la plastica, usa carta idrorepellente e concentra il prodotto ×3. Stesso effetto, peso ridotto dell'80%, zero polimeri.",
+    "area_correlata": "MAT"
+  },
+  "innovazione aziendale": {
+    "categoria": "Business & Management",
+    "emoji": "🏢",
+    "definizione": "Introdurre cambiamenti significativi nel modello di business, nei processi o nei prodotti di un'azienda per creare vantaggio competitivo e nuovi flussi di ricavi.",
+    "esempio": "Un manager trasforma un produttore di trapani in un 'servizio di fori garantiti': il cliente non compra il trapano, paga per il numero di fori all'anno. Rientro clienti aumentato del 60%.",
+    "area_correlata": "SIS"
+  },
+  "innovazione di processo": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔄",
+    "definizione": "Ridisegnare come si producono beni o si erogano servizi introducendo nuove tecnologie o metodologie per essere più veloci, economici o di qualità superiore.",
+    "esempio": "Un direttore di produzione introduce la stampa 3D per gli stampi: i nuovi stampi costano il 70% in meno e sono pronti in 2 giorni invece di 3 settimane.",
+    "area_correlata": "DIS"
+  },
+  "innovazione di prodotto": {
+    "categoria": "Business & Management",
+    "emoji": "✨",
+    "definizione": "Sviluppare prodotti nuovi o significativamente migliorati che soddisfano bisogni non ancora soddisfatti o creano nuovi mercati.",
+    "esempio": "Un team R&D lancia una pasta ad alto contenuto proteico da farina di legumi: 20g di proteine per porzione vs 7g della pasta tradizionale. Nuovo segmento: sportivi e fitness.",
+    "area_correlata": "ALI"
+  },
+  "intermodalità": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🔀",
+    "definizione": "Coordinare il trasporto usando due o più modalità (camion + treno + nave) in sequenza ottimizzata per ridurre costi, tempi ed emissioni rispetto all'uso di un solo mezzo.",
+    "esempio": "Un logista riprogetta le spedizioni Italia-Cina: sostituisce il solo aereo con mare+ferrovia transiberiana. Costo -55%, CO₂ -80%, tempo 22 giorni invece di 3 ma accettabile per merci non urgenti.",
+    "area_correlata": "COM"
+  },
+  "iot": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📡",
+    "definizione": "Internet of Things: rete di oggetti fisici dotati di sensori e connettività che raccolgono e scambiano dati automaticamente — da sensori industriali a termostati intelligenti.",
+    "esempio": "100 sensori IoT monitorano una rete idrica: rilevano variazioni di pressione che segnalano perdite invisibili. La manutenzione preventiva riduce le perdite d'acqua del 30%.",
+    "area_correlata": "MAT"
+  },
+  "iot industriale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🏭",
+    "definizione": "Industrial IoT: applicazione dell'IoT in ambito produttivo — sensori su macchine, robot connessi, gemelli digitali — per manutenzione predittiva, qualità e ottimizzazione della produzione.",
+    "esempio": "200 sensori su una linea produttiva raccolgono temperatura, vibrazione e corrente ogni secondo: il sistema predice il guasto di un cuscinetto 3 settimane prima, azzerando i fermi non pianificati.",
+    "area_correlata": "SIS"
+  },
+  "iot urbano": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏙️",
+    "definizione": "Infrastruttura di sensori e sistemi connessi che raccolgono dati sulla città in tempo reale: traffico, qualità dell'aria, rifiuti, illuminazione — per ottimizzare i servizi urbani.",
+    "esempio": "500 sensori nei cestini della spazzatura di Milano inviano un segnale quando sono pieni all'80%: i camion raccolgono solo i cestini pieni, riducendo km percorsi del 40%.",
+    "area_correlata": "AMB"
+  },
+  "iso 14064": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📋",
+    "definizione": "Norma internazionale per la quantificazione, il monitoraggio, la rendicontazione e la verifica dei gas serra emessi da un'organizzazione. Usata per le dichiarazioni di carbon neutrality.",
+    "esempio": "Un'azienda certifica le sue emissioni secondo ISO 14064: un verificatore esterno controlla tutti i dati di Scope 1, 2 e 3. La dichiarazione è ora credibile per gli investitori ESG.",
+    "area_correlata": "MAT"
+  },
+  "lca": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "♻️",
+    "definizione": "Life Cycle Assessment: metodologia per valutare l'impatto ambientale di un prodotto o processo analizzando ogni fase dalla produzione allo smaltimento.",
+    "esempio": "Un'LCA confronta bottiglia di vetro vs PET: il vetro pesa 6 volte di più (più emissioni di trasporto), ma il PET è difficile da riciclare. Il risultato dipende dal numero di riusi.",
+    "area_correlata": "MAT"
+  },
+  "lca (analisi del ciclo di vita)": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🔄",
+    "definizione": "Strumento ISO (14040/14044) per quantificare l'impatto ambientale totale di un prodotto: dall'estrazione delle materie prime allo smaltimento finale. Input: energia, acqua, materiali. Output: CO₂, tossici, scarti.",
+    "esempio": "Un'LCA di una t-shirt di cotone: 7.000 litri d'acqua per produrla, 20 kg di CO₂ per produzione e trasporto. La stessa in fibra riciclata: 1.500 litri e 10 kg CO₂.",
+    "area_correlata": "MAT"
+  },
+  "leadership": {
+    "categoria": "Business & Management",
+    "emoji": "👑",
+    "definizione": "Capacità di guidare un gruppo verso obiettivi comuni: ispirare, motivare, prendere decisioni, gestire i conflitti, sviluppare il talento dei collaboratori.",
+    "esempio": "Una design director guida 8 designer attraverso una ristrutturazione aziendale difficile: mantiene la motivazione alta con obiettivi chiari, autonomia e riconoscimento del contributo individuale.",
+    "area_correlata": "DIS"
+  },
+  "life cycle assessment": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌿",
+    "definizione": "Metodologia completa per misurare l'impatto ambientale di un prodotto o servizio lungo tutta la sua vita: produzione, uso, fine vita. Usata per decisioni di design e comunicazione ambientale.",
+    "esempio": "Il Life Cycle Assessment di un burger a base vegetale vs uno di manzo: il vegetale emette l'85% di CO₂ in meno, usa il 96% meno acqua, occupa il 99% meno suolo.",
+    "area_correlata": "ALI"
+  },
+  "linguistica": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔤",
+    "definizione": "Studio scientifico del linguaggio umano: struttura grammaticale, significato, suoni, acquisizione linguistica. Base teorica per il natural language processing e la comunicazione interculturale.",
+    "esempio": "Una linguista analizza le ambiguità di un chatbot bancario: individua 50 domande degli utenti interpretate male dall'AI e propone come riformulare le risposte per ridurre i malintesi.",
+    "area_correlata": "COM"
+  },
+  "logica computazionale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🧩",
+    "definizione": "Ragionamento strutturato per scomporre problemi complessi in istruzioni elementari eseguibili da un computer: algoritmi, strutture dati, complessità computazionale.",
+    "esempio": "Un programmatore progetta un algoritmo di instradamento per 1.000 corrieri: invece di calcolare tutte le combinazioni possibili (impossibile), usa un'euristica che trova una soluzione buona in 2 secondi.",
+    "area_correlata": "DIG"
+  },
+  "logistica energetica": {
+    "categoria": "Energia",
+    "emoji": "⛽",
+    "definizione": "Gestire la catena di approvvigionamento, stoccaggio e distribuzione di vettori energetici — idrogeno, gas, combustibili — dalla produzione all'utilizzo finale.",
+    "esempio": "Un logista energetico pianifica la distribuzione di idrogeno verde da 3 elettrolizzatori a 50 stazioni di rifornimento: sceglie tra trasporto in camion pressurizzati o pipeline dedicata.",
+    "area_correlata": "ENE"
+  },
+  "logistica supply chain": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "📦",
+    "definizione": "Gestire il flusso di materiali, informazioni e denaro lungo tutta la catena di approvvigionamento: fornitori, produzione, magazzini, distribuzione, cliente finale.",
+    "esempio": "Un supply chain manager ridisegna la rete di 8 magazzini in Europa: con analisi dei flussi trova che 5 magazzini coprono il 95% delle consegne next-day, risparmiando 2M€/anno.",
+    "area_correlata": "COM"
+  },
+  "machine learning": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🤖",
+    "definizione": "Sottocampo dell'AI dove i sistemi imparano dai dati senza essere esplicitamente programmati per ogni caso. Algoritmi come regressione, alberi decisionali, SVM, reti neurali.",
+    "esempio": "Un modello ML analizza 10 anni di dati sulle turbine eoliche: impara a riconoscere i pattern di vibrazione che precedono un guasto — e genera un allarme 2 settimane prima.",
+    "area_correlata": "DIG"
+  },
+  "manutenzione infrastrutture": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔧",
+    "definizione": "Pianificare, eseguire e documentare le attività di manutenzione di strade, ponti, reti idriche, ferroviarie e digitali per garantirne sicurezza ed efficienza nel tempo.",
+    "esempio": "Un ingegnere usa il BIM e sensori di deformazione per monitorare un viadotto di 40 anni: decide in base ai dati quando e dove intervenire — senza chiudere il ponte inutilmente.",
+    "area_correlata": "COM"
+  },
+  "marketing digitale": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📱",
+    "definizione": "Promuovere prodotti e servizi attraverso canali digitali: SEO, SEM, social media advertising, email marketing, influencer marketing, analisi delle performance.",
+    "esempio": "Un digital marketer gestisce il budget pubblicitario di un e-commerce: testa 20 varianti di annuncio, ottimizza giornalmente basandosi sul ROAS, riduce il costo di acquisizione da 15€ a 9€.",
+    "area_correlata": "DIG"
+  },
+  "matematica applicata": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "📐",
+    "definizione": "Uso di strumenti matematici (algebra lineare, calcolo, statistica, ottimizzazione) per risolvere problemi concreti in ingegneria, fisica, economia, informatica.",
+    "esempio": "Un ingegnere usa la trasformata di Fourier per analizzare il rumore di un motore: scompone il segnale nelle sue frequenze e identifica la frequenza anomala che segnala un cuscinetto usurato.",
+    "area_correlata": "DIG"
+  },
+  "materiali avanzati": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔬",
+    "definizione": "Materiali con proprietà superiori ai tradizionali: superlega per turbine, grafene, aerogel, metamateriali. Sviluppati per applicazioni ad alte prestazioni in aerospazio, medicina, energia.",
+    "esempio": "Un ingegnere dei materiali sviluppa una superlega di nichel per pale di turbina a gas: resiste a 1.200°C invece degli 800°C dell'acciaio — efficienza del motore aumentata del 5%.",
+    "area_correlata": "MAT"
+  },
+  "materiali e finiture": {
+    "categoria": "Architettura & Città",
+    "emoji": "🪵",
+    "definizione": "Conoscenza delle caratteristiche tecniche ed estetiche di materiali da costruzione e decorazione: legno, pietra, ceramica, metalli, tessuti tecnici — e come si lavorano e si mantengono.",
+    "esempio": "Un interior designer sceglie il rivestimento per una cucina di un ristorante: non solo il colore, ma la resistenza alle alte temperature, facilità di pulizia e costo di sostituzione.",
+    "area_correlata": "AMB"
+  },
+  "materiali e tecnologie": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚙️",
+    "definizione": "Conoscenza delle proprietà dei materiali (metalli, polimeri, ceramici, compositi) e dei processi tecnologici per trasformarli: fusione, stampaggio, lavorazione, trattamenti superficiali.",
+    "esempio": "Uno studente sceglie l'alluminio anodizzato per la sua lampada: leggero, non si corrode, si colora senza vernice — e capisce come ogni materiale porta con sé il processo con cui si lavora.",
+    "area_correlata": "DIS"
+  },
+  "materiali ecocompatibili": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌱",
+    "definizione": "Materiali con basso impatto ambientale lungo tutto il ciclo di vita: riciclati, riciclabili, rinnovabili, locali, privi di sostanze tossiche.",
+    "esempio": "Un architetto sostituisce il cartongesso tradizionale con pannelli in fibra di canapa locale: stesso isolamento, CO₂ sequestrata invece di emessa, produzione a 50 km dal cantiere.",
+    "area_correlata": "AMB"
+  },
+  "materiali rigenerabili": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌿",
+    "definizione": "Materiali che provengono da fonti che si rigenerano naturalmente in tempi umani: legno, bambù, cotone, lino, canapa, fibra di cocco, mycelium.",
+    "esempio": "Un designer sostituisce il cartone negli imballaggi con mycelium (radici di funghi): cresce in 7 giorni nella forma desiderata, biodegradabile al 100%, resistente quanto il polistirolo.",
+    "area_correlata": "MAT"
+  },
+  "media digitali": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📺",
+    "definizione": "Produrre, distribuire e gestire contenuti attraverso canali digitali: video, podcast, streaming, social media, newsletter. Include tecniche di produzione e strategie di distribuzione.",
+    "esempio": "Un producer digitale coordina la produzione di una serie podcast in 6 episodi: registrazione, editing, copertine, distribuzione su Spotify e Apple Podcasts, newsletter di lancio.",
+    "area_correlata": "COM"
+  },
+  "microbiologia": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🦠",
+    "definizione": "Studio dei microrganismi — batteri, virus, funghi, protozoi — e del loro impatto su salute, ambiente e industria. Base per la produzione di antibiotici, fermentazione, analisi igienica.",
+    "esempio": "Un microbiologo analizza il suolo di un campo: trova una diversità batterica 3× superiore alla media. Correlata con la salute delle piante e la resistenza alle malattie.",
+    "area_correlata": "ALI"
+  },
+  "microbiologia alimentare": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🔬",
+    "definizione": "Studio dei microrganismi negli alimenti: patogeni che causano intossicazioni (Salmonella, Listeria) e microrganismi utili per la fermentazione (lieviti, lactobacilli).",
+    "esempio": "Un tecnico analizza un campione di ricotta: trova 10.000 UFC/g di Listeria monocytogenes — limite UE è 100 UFC/g. Il lotto viene bloccato prima della distribuzione.",
+    "area_correlata": "ALI"
+  },
+  "mindfulness": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧘",
+    "definizione": "Pratica di consapevolezza mentale che allena l'attenzione al momento presente, riducendo stress, ansia e reattività automatica. Applicata al benessere digitale e alla prevenzione del burnout.",
+    "esempio": "Un'azienda introduce 10 minuti di mindfulness prima delle riunioni importanti: i partecipanti arrivano più concentrati, il numero di decisioni rimpiante nei 30 giorni successivi scende del 25%.",
+    "area_correlata": "DIG"
+  },
+  "modellazione": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🏗️",
+    "definizione": "Costruire rappresentazioni semplificata di oggetti, sistemi o fenomeni — fisiche o digitali — per comprenderli, testarli o comunicarli prima della realizzazione definitiva.",
+    "esempio": "Uno studente modella in argilla il suo progetto di lampada: può valutare le proporzioni, il peso visivo e le ombre prima di passare al CAD o al prototipo in materiale definitivo.",
+    "area_correlata": "DIS"
+  },
+  "modellazione 3d": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🖥️",
+    "definizione": "Creare rappresentazioni tridimensionali digitali di oggetti o ambienti usando software come SolidWorks, Rhino, Blender, Revit. Output: visualizzazioni, file per stampa 3D o CNC.",
+    "esempio": "Un ingegnere modella in 3D un componente di pompa: simula i flussi interni con CFD (fluidodinamica computazionale), ottimizza le curve e riduce le perdite di pressione del 15%.",
+    "area_correlata": "SIS"
+  },
+  "modellazione 3d (blender, rhino, solidworks)": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Blender per animazione e rendering artistico, Rhino per forme libere in architettura e design, SolidWorks per meccanica di precisione. Tre strumenti per tre mondi diversi.",
+    "esempio": "Un designer usa Rhino per la forma organica di una sedia, poi SolidWorks per la struttura metallica che la regge: i due modelli vengono assemblati per verificare che tutto si incastri.",
+    "area_correlata": "DIS"
+  },
+  "modellazione territoriale": {
+    "categoria": "Architettura & Città",
+    "emoji": "🗺️",
+    "definizione": "Creare modelli digitali del territorio — DTM, DSM, modelli 3D delle città — per simulare scenari: alluvioni, crescita urbana, impatto visivo di nuovi edifici.",
+    "esempio": "Un urbanista crea un modello 3D di un quartiere in FME e CityGML: simula l'ombreggiamento dei pannelli solari su ogni tetto — identifica i 200 edifici più favorevoli per il fotovoltaico.",
+    "area_correlata": "AMB"
+  },
+  "modellistica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📐",
+    "definizione": "Creazione di modelli fisici in scala ridotta o a grandezza naturale per verificare forma, proporzioni e fattibilità di oggetti, abiti o architetture prima della produzione.",
+    "esempio": "Una modellista crea il primo prototipo di un abito sartoriale in tela: verifica la costruzione, segna le correzioni su ogni cucitura prima di tagliare il tessuto pregiato definitivo.",
+    "area_correlata": "DIS"
+  },
+  "narrazione d’impresa": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📖",
+    "definizione": "Costruire e raccontare la storia di un'azienda o organizzazione in modo autentico e coinvolgente: origini, valori, missione, persone — per attrarre clienti, talenti e investitori.",
+    "esempio": "Un brand storyteller trasforma la storia di un piccolo birrificio artigianale in una narrativa su 3 generazioni di tradizione familiare: le vendite online triplicano in un anno.",
+    "area_correlata": "COM"
+  },
+  "nlp": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "💬",
+    "definizione": "Natural Language Processing: tecniche AI per far capire, generare e tradurre il linguaggio umano alle macchine. Alla base dei chatbot, traduttori automatici, motori di ricerca.",
+    "esempio": "Un sistema NLP analizza 50.000 recensioni di un supermercato: estrae automaticamente i temi principali (attesa, prezzi, qualità frutta) e li presenta al management con grafici.",
+    "area_correlata": "COM"
+  },
+  "normativa ambientale": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📜",
+    "definizione": "Conoscenza delle leggi e regolamenti europei e italiani sulla protezione dell'ambiente: Codice dell'Ambiente (D.Lgs 152/2006), REACH, End of Waste, regolamenti UE su imballaggi.",
+    "esempio": "Un consulente ambientale aiuta un'azienda chimica a ottenere l'autorizzazione AIA (Autorizzazione Integrata Ambientale): raccoglie tutti i dati richiesti e gestisce l'iter con la Regione.",
+    "area_correlata": "MAT"
+  },
+  "normativa cee/ape": {
+    "categoria": "Energia",
+    "emoji": "📋",
+    "definizione": "Normativa europea e italiana sull'efficienza energetica degli edifici: EPBD (direttiva case green), requisiti minimi di prestazione, obblighi di riqualificazione, Attestati di Prestazione Energetica.",
+    "esempio": "Un tecnico verifica se un edificio del 1980 rispetta i nuovi requisiti EPBD: la classe G attuale richiede un salto a classe E entro il 2033. Propone il percorso di riqualificazione.",
+    "area_correlata": "ENE"
+  },
+  "normativa cei": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⚡",
+    "definizione": "Norme tecniche del Comitato Elettrotecnico Italiano (CEI) che regolano la progettazione, installazione e manutenzione degli impianti elettrici in sicurezza.",
+    "esempio": "Un installatore verifica che un impianto fotovoltaico rispetti la norma CEI 0-21: usa le protezioni richieste, installa il contatore bidirezionale e ottiene il certificato di conformità.",
+    "area_correlata": "ENE"
+  },
+  "normativa edilizia": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🏗️",
+    "definizione": "Regole che governano la progettazione e costruzione degli edifici: DPR 380/2001 (Testo Unico Edilizia), regolamenti comunali, norme antisismiche, barriere architettoniche.",
+    "esempio": "Un tecnico verifica il progetto di un ampliamento: rispetta la distanza dal confine (5m), l'altezza massima (10m) e le norme antisismiche per la zona 2 dove si trova l'edificio.",
+    "area_correlata": "AMB"
+  },
+  "normativa enac/easa": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "✈️",
+    "definizione": "Regolamenti europei (EASA) e italiani (ENAC) per l'uso di droni UAS: classi di rischio, requisiti per il pilota, zone di volo consentite, assicurazione obbligatoria.",
+    "esempio": "Un operatore drone verifica il volo su un sito industriale: zona U-space, richiede autorizzazione ENAC 24h prima, assicurazione 1M€, brevetto A1/A3 e registrazione del drone.",
+    "area_correlata": "COM"
+  },
+  "normativa eu": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🇪🇺",
+    "definizione": "Conoscenza della legislazione europea che impatta il settore energetico: RED III (rinnovabili), EU ETS (mercato carbonio), Fit for 55, direttiva EED (efficienza energetica).",
+    "esempio": "Un consulente guida un'azienda nell'ottenimento dei certificati bianchi (TEE) previsti dalla normativa EU sull'efficienza: risparmia 200.000€ in 3 anni grazie agli incentivi sull'energia risparmiata.",
+    "area_correlata": "ENE"
+  },
+  "normative ambientali h₂": {
+    "categoria": "Energia",
+    "emoji": "💧",
+    "definizione": "Regolamenti sulla produzione, stoccaggio, trasporto e uso dell'idrogeno come vettore energetico: classificazione (verde/grigio/blu), requisiti di sicurezza, standard europei.",
+    "esempio": "Un ingegnere verifica che un'stazione di rifornimento H₂ rispetti ATEX (zone pericolose gas), i requisiti di pressione (700 bar) e le distanze di sicurezza obbligatorie per la localizzazione.",
+    "area_correlata": "ENE"
+  },
+  "normative gdpr": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔒",
+    "definizione": "Il Regolamento Generale sulla Protezione dei Dati (GDPR) definisce come raccogliere, trattare e conservare i dati personali degli europei. Applicabile a qualsiasi organizzazione che tratti dati UE.",
+    "esempio": "Un DPO verifica un'app di fitness: i dati di salute richiedono consenso esplicito separato, non possono essere trasferiti in USA senza garanzie adeguate, devono essere cancellati su richiesta.",
+    "area_correlata": "DIG"
+  },
+  "normative gdpr/nis2": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "⚖️",
+    "definizione": "GDPR sulla protezione dei dati personali e NIS2 sulla cybersicurezza delle infrastrutture critiche: due regolamenti europei che le organizzazioni medie e grandi devono rispettare insieme.",
+    "esempio": "Un CISO verifica la conformità a entrambe le normative: GDPR richiede registro dei trattamenti e DPO, NIS2 impone misure di sicurezza minime e notifica incidenti entro 24 ore.",
+    "area_correlata": "DIG"
+  },
+  "nutrizione": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🥗",
+    "definizione": "Studio di come gli alimenti influenzano la salute: macronutrienti, micronutrienti, metabolismo energetico, fabbisogni per diverse popolazioni, relazione dieta-malattia.",
+    "esempio": "Una nutrizionista progetta il menu scolastico di un comune: bilancia calorie, proteine e verdure per fascia di età, rispetta le linee guida INRAN e tiene conto delle allergie.",
+    "area_correlata": "ALI"
+  },
+  "nutrizione personalizzata": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🧬",
+    "definizione": "Adattare le raccomandazioni nutrizionali al profilo individuale: genetica (nutrigenomica), microbioma intestinale, dati di glucosio in continuo, stile di vita.",
+    "esempio": "Un nutrizionista usa i dati del microbioma di un paziente: scopre che non metabolizza bene certi amidi e suggerisce una dieta personalizzata che migliora i livelli di energia del 40%.",
+    "area_correlata": "ALI"
+  },
+  "opencv": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "👁️",
+    "definizione": "OpenCV è la libreria open source più usata per la visione artificiale: rilevamento di oggetti, tracking, calibrazione telecamere, analisi di immagini in tempo reale.",
+    "esempio": "Un ingegnere usa OpenCV per sviluppare un sistema di conteggio automatico di persone all'ingresso di un supermercato: 99% di accuratezza, funziona in tempo reale a 30 fps.",
+    "area_correlata": "DIG"
+  },
+  "penetration testing": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔓",
+    "definizione": "Test di sicurezza autorizzato che simula attacchi reali per scoprire vulnerabilità prima degli hacker. Include ricognizione, sfruttamento delle vulnerabilità, escalation dei privilegi, reporting.",
+    "esempio": "Un penetration tester scopre che il server di un'azienda ha una vulnerabilità in una libreria non aggiornata: ottiene accesso root in 20 minuti. Il report porta alla patch immediata.",
+    "area_correlata": "DIG"
+  },
+  "pensiero computazionale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🧩",
+    "definizione": "Approccio al problem solving che usa concetti dell'informatica: scomposizione, riconoscimento di pattern, astrazione e definizione di algoritmi. Applicabile in ogni campo, non solo in informatica.",
+    "esempio": "Una logista usa il pensiero computazionale per ottimizzare 500 consegne: scompone il problema (ordine → zona → veicolo), trova i pattern (stessa strada due volte), progetta l'algoritmo di instradamento.",
+    "area_correlata": "DIG"
+  },
+  "pianificazione energetica": {
+    "categoria": "Energia",
+    "emoji": "📊",
+    "definizione": "Progettare la strategia energetica di un territorio o organizzazione su 10-30 anni: scenari di domanda, mix di fonti, infrastrutture necessarie, costi e obiettivi di decarbonizzazione.",
+    "esempio": "Un pianificatore elabora il Piano Energetico di un comune: fotovoltaico su tutti gli edifici pubblici, teleriscaldamento dal biogas, comunità energetiche nei quartieri — zero emissioni entro il 2040.",
+    "area_correlata": "AMB"
+  },
+  "pilotaggio remoto": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🚁",
+    "definizione": "Pilotare veicoli aerei non pilotati (droni) a distanza per uso professionale: ispezioni, fotogrammetria, agricoltura di precisione, sorveglianza.",
+    "esempio": "Un pilota drone professionale sorvola un viadotto con camera termica: individua 7 punti di infiltrazione d'acqua invisibili dall'esterno — l'ispezione costa il 70% meno di quella tradizionale su ponteggi.",
+    "area_correlata": "COM"
+  },
+  "politiche energetiche": {
+    "categoria": "Energia",
+    "emoji": "🏛️",
+    "definizione": "Conoscere e influenzare le politiche pubbliche che regolano il settore energetico: incentivi alle rinnovabili, mercati elettrici, tassazione CO₂, obiettivi climatici europei.",
+    "esempio": "Un analista di politiche energetiche elabora un parere sull'aumento del carbon price europeo: stima l'impatto su 200 settori industriali e suggerisce misure di accompagnamento per i più esposti.",
+    "area_correlata": "ENE"
+  },
+  "problem solving": {
+    "categoria": "Business & Management",
+    "emoji": "🔑",
+    "definizione": "Affrontare situazioni nuove o complesse con metodo: definire il problema, raccogliere informazioni, generare soluzioni, valutarle, scegliere e verificare il risultato.",
+    "esempio": "Un designer scopre che il suo prodotto si rompe in un punto inaspettato: analizza le forze, intervista gli utenti, riconosce che il problema è nell'uso reale diverso da quello previsto — e ridisegna il punto critico.",
+    "area_correlata": "DIS"
+  },
+  "processi digitali": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🔄",
+    "definizione": "Mappare e ottimizzare i processi aziendali usando strumenti digitali: workflow automation, firma digitale, fatturazione elettronica, gestione documentale.",
+    "esempio": "Un consulente digitalizza il processo di approvazione fatture di un'azienda da 200 persone: da 3 settimane a 3 giorni usando un sistema di workflow digitale con notifiche automatiche.",
+    "area_correlata": "DIG"
+  },
+  "progettazione architettonica": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏛️",
+    "definizione": "Progettare edifici e spazi abitati combinando funzionalità, estetica, struttura, impianti e rispetto delle normative — dall'idea al progetto esecutivo.",
+    "esempio": "Un architetto progetta una biblioteca pubblica: studia i flussi degli utenti, sceglie la luce naturale come tema, progetta scaffali modulari adattabili — e rispetta il budget del comune.",
+    "area_correlata": "AMB"
+  },
+  "progettazione cad": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "💻",
+    "definizione": "Sviluppare progetti tecnici completi usando software CAD: dalla prima idea al disegno costruttivo con quote, materiali e dettagli esecutivi pronti per la produzione.",
+    "esempio": "Un tecnico progetta in CAD una linea di confezionamento per pasta fresca: disegna ogni componente, verifica gli ingombri, produce i disegni per i fornitori di ogni parte meccanica.",
+    "area_correlata": "ALI"
+  },
+  "progettazione tecnica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📐",
+    "definizione": "Sviluppare la soluzione tecnica a un problema ingegneristico: scelta dei materiali, calcolo strutturale, verifica delle normative, produzione dei documenti costruttivi.",
+    "esempio": "Un tecnico progetta un soppalco in acciaio per un magazzino: calcola i carichi, sceglie i profili, verifica la stabilità e produce i disegni per il montaggio e la domanda in Comune.",
+    "area_correlata": "DIS"
+  },
+  "project management": {
+    "categoria": "Business & Management",
+    "emoji": "📅",
+    "definizione": "Pianificare, organizzare e controllare le risorse (persone, tempo, budget) per raggiungere obiettivi definiti entro scadenza. Metodologie: PMBOK, PRINCE2, Agile.",
+    "esempio": "Un PM coordina la ristrutturazione di 50 appartamenti in parallelo: usa MS Project per schedulare 200 attività, monitora lo stato ogni settimana e risolve i conflitti tra squadre.",
+    "area_correlata": "DIG"
+  },
+  "protezione dati": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🛡️",
+    "definizione": "Misure tecniche e organizzative per proteggere i dati personali da perdita, furto o accesso non autorizzato: pseudonimizzazione, cifratura, controllo degli accessi, backup.",
+    "esempio": "Un data protection officer implementa la pseudonimizzazione dei dati clinici di ricerca: i ricercatori lavorano con dati utili ma senza poter identificare i pazienti.",
+    "area_correlata": "DIG"
+  },
+  "prototipazione industriale": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🏭",
+    "definizione": "Costruire prototipi fisici per testare un prodotto nelle condizioni reali di utilizzo e produzione: verifica funzionale, test di usura, compatibilità con i processi produttivi di serie.",
+    "esempio": "Un ingegnere costruisce 5 prototipi di un nuovo raccordo idraulico e li sottopone a 100.000 cicli di pressione: 4 cedono, il 5° con la geometria modificata supera il test.",
+    "area_correlata": "DIS"
+  },
+  "psicologia": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧠",
+    "definizione": "Studio del comportamento umano e dei processi mentali. Applicata al benessere digitale, alla UX, al marketing, all'organizzazione e alla formazione.",
+    "esempio": "Uno psicologo aziendale analizza i tassi di burnout in un'azienda tech: identifica le cause (riunioni infinite, interruzioni frequenti) e propone cambiamenti organizzativi che riducono l'assenteismo del 30%.",
+    "area_correlata": "DIG"
+  },
+  "psicologia del lavoro": {
+    "categoria": "Business & Management",
+    "emoji": "👥",
+    "definizione": "Applicazione della psicologia all'ambiente lavorativo: motivazione, comportamento organizzativo, selezione del personale, benessere dei lavoratori, gestione dei conflitti.",
+    "esempio": "Uno psicologo del lavoro valuta le capacità di leadership di 10 candidati per una posizione direttiva: usa test strutturati, colloqui comportamentali e assessment center.",
+    "area_correlata": "SIS"
+  },
+  "python": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🐍",
+    "definizione": "Linguaggio di programmazione versatile, leggibile e con un ecosistema enorme di librerie. Usato per automazione, analisi dati (pandas, numpy), machine learning (scikit-learn, TensorFlow), web.",
+    "esempio": "Un analista scrive uno script Python che raccoglie dati da 30 fonti diverse, li pulisce, calcola le statistiche e produce automaticamente un report PDF — ogni lunedì mattina in 2 minuti.",
+    "area_correlata": "DIG"
+  },
+  "python / r": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📊",
+    "definizione": "I due linguaggi più usati in data science: Python per uso generale e ML, R per analisi statistica avanzata. Molti professionisti usano entrambi a seconda del task.",
+    "esempio": "Un biostatistico usa R per il modello di regressione logistica di uno studio clinico (output standard per le pubblicazioni scientifiche) e Python per automatizzare la generazione dei grafici.",
+    "area_correlata": "DIG"
+  },
+  "rendering": {
+    "categoria": "Design & Creatività",
+    "emoji": "🖼️",
+    "definizione": "Processo di generazione di immagini fotorealistiche da modelli 3D usando luci, materiali e ambienti virtuali. Usato per visualizzare prodotti o edifici prima di costruirli.",
+    "esempio": "Un visual artist crea il rendering di un nuovo modello di automobile: luce del tramonto, ambiente urbano, riflessi realistici sulla carrozzeria — identico a una foto, prodotto 6 mesi prima del lancio.",
+    "area_correlata": "DIS"
+  },
+  "reti di distribuzione": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔌",
+    "definizione": "Infrastrutture che portano l'energia elettrica dalle centrali di produzione agli utenti finali: linee ad alta, media e bassa tensione, cabine, smart grid.",
+    "esempio": "Un ingegnere di rete gestisce l'integrazione di 50 MW di fotovoltaico in una rete di distribuzione locale: verifica la stabilità di tensione e installa sistemi di controllo per evitare sovratensioni.",
+    "area_correlata": "ENE"
+  },
+  "reti iot": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📡",
+    "definizione": "Infrastrutture di rete per connettere dispositivi IoT: WiFi, Ethernet industriale, LoRaWAN, NB-IoT, Zigbee — ciascuno con range, consumo e banda diversi.",
+    "esempio": "Un ingegnere progetta la rete IoT di un'area industriale: WiFi 6 per robot veloci, LoRaWAN per sensori remoti a bassa frequenza, NB-IoT per dispositivi che devono durare 10 anni a batteria.",
+    "area_correlata": "COM"
+  },
+  "robotica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🤖",
+    "definizione": "Progettare, costruire e programmare sistemi robotici: meccanica, attuatori, sensori, controllo del movimento, pianificazione del percorso, sicurezza. Dai robot industriali ai collaborativi.",
+    "esempio": "Un ingegnere robotico sviluppa un cobot (robot collaborativo) per assemblare componenti elettronici: impara dai movimenti dell'operaio umano e li replica con precisione di ±0,1 mm.",
+    "area_correlata": "SIS"
+  },
+  "salute digitale": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "💊",
+    "definizione": "Gestire il proprio benessere nell'era digitale: equilibrio tra tempo online e offline, riconoscere i meccanismi di dipendenza delle piattaforme, tutela della salute mentale nell'ambiente digitale.",
+    "esempio": "Un esperto di salute digitale analizza le abitudini di uso dello smartphone di 100 adolescenti: i più ansiosi controllano il telefono 200 volte al giorno. Propone protocolli di 'phone detox' graduali.",
+    "area_correlata": "DIG"
+  },
+  "sceneggiatura": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🎬",
+    "definizione": "Scrittura di storie per la narrazione audiovisiva: struttura in atti, dialoghi, descrizioni di scena, timing. Applicata a film, serie, videogiochi, podcast, branded content.",
+    "esempio": "Una sceneggiatrice scrive un branded content per un'azienda di ciclismo: 3 episodi da 5 minuti che raccontano storie reali di persone che hanno cambiato vita grazie alla bici. Milioni di view organiche.",
+    "area_correlata": "COM"
+  },
+  "scienza dei materiali": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔬",
+    "definizione": "Disciplina che studia la relazione tra struttura atomica, proprietà e prestazioni dei materiali. Permette di sviluppare nuovi materiali o selezionare quelli giusti per ogni applicazione.",
+    "esempio": "Una scienziata dei materiali sviluppa un nuovo acciaio per pale di turbina: modificando la composizione del 2% aumenta la resistenza a fatica del 40%, estendendo la vita utile da 20 a 30 anni.",
+    "area_correlata": "MAT"
+  },
+  "scrittura creativa": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "✍️",
+    "definizione": "Produrre testi originali e coinvolgenti per scopi narrativi o comunicativi: storie, blog, copy, podcast, video script. Combina tecnica e ispirazione.",
+    "esempio": "Un copywriter scrive il manifesto di un brand di abbigliamento sostenibile: 200 parole che diventano virali perché parlano di chi compra, non del prodotto — 50.000 condivisioni organiche.",
+    "area_correlata": "COM"
+  },
+  "senso estetico": {
+    "categoria": "Design & Creatività",
+    "emoji": "👁️",
+    "definizione": "Capacità di percepire, valutare e creare bellezza visiva: armonia delle proporzioni, coerenza dei colori, equilibrio tra elementi. Si sviluppa studiando arte, design e osservando il mondo.",
+    "esempio": "Un designer riconosce che le proporzioni di un'interfaccia sono 'spente': aggiusta i margini di 4px e la dimensione di un titolo di 2pt — il risultato sembra improvvisamente professionale.",
+    "area_correlata": "DIS"
+  },
+  "sicurezza delle reti": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🌐",
+    "definizione": "Proteggere le infrastrutture di rete da accessi non autorizzati e attacchi: firewall, IDS/IPS, segmentazione VLAN, VPN, monitoraggio del traffico, risposta agli incidenti di rete.",
+    "esempio": "Un network security engineer segmenta la rete di un ospedale: i dispositivi medici IoT sono isolati dai computer degli uffici — un malware non può propagarsi dalla reception ai macchinari critici.",
+    "area_correlata": "DIG"
+  },
+  "simulazione industriale": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "💻",
+    "definizione": "Usare software per simulare il comportamento di macchine, linee produttive o sistemi complessi prima di costruirli: trovare i colli di bottiglia, testare varianti, ottimizzare.",
+    "esempio": "Un ingegnere simula una nuova linea di produzione di automobili in Plant Simulation: testa 50 configurazioni di robot e buffer in 2 giorni — trova quella che produce 500 auto/giorno invece di 420.",
+    "area_correlata": "MAT"
+  },
+  "simulazione industry 5.0": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🤝",
+    "definizione": "Simulazione digitale di scenari Industry 5.0: gemelli digitali di linee produttive con cobots, ergonomia del lavoro umano-robot, ottimizzazione considerando benessere e sostenibilità oltre l'efficienza.",
+    "esempio": "Un ingegnere simula 10 configurazioni di una cella di assemblaggio con cobot: sceglie quella che minimizza i movimenti scomodi dell'operaio, mantiene il ritmo produttivo e usa il 20% di energia in meno.",
+    "area_correlata": "SIS"
+  },
+  "smart contract": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📝",
+    "definizione": "Programmi che si eseguono automaticamente su blockchain quando si verificano certe condizioni, senza intermediari. Sostituiscono contratti tradizionali per transazioni semplici e ripetitive.",
+    "esempio": "Un cooperativa usa uno smart contract per la distribuzione dei profitti: quando arriva un pagamento, il contratto divide automaticamente i fondi tra i 50 soci in proporzione alle quote — zero burocrazia.",
+    "area_correlata": "MAT"
+  },
+  "smart home": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏡",
+    "definizione": "Abitazione con sistemi intelligenti connessi e integrati: luci, riscaldamento, sicurezza, elettrodomestici controllabili da app o voce, e automatizzati in base a orari e comportamenti.",
+    "esempio": "Una smart home gestisce la pompa di calore secondo il prezzo dell'elettricità: si attiva nelle ore più economiche, accumula calore nell'acqua del bollitore, spende il 35% in meno per lo stesso comfort.",
+    "area_correlata": "ENE"
+  },
+  "social media marketing": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📲",
+    "definizione": "Usare i social media per raggiungere obiettivi di marketing: brand awareness, lead generation, vendite. Include advertising a pagamento, content organico, community management.",
+    "esempio": "Un social media marketer lancia una campagna Instagram per un'azienda di cosmetici biologici: target donne 25-40 interessate a sostenibilità, budget 5.000€, ritorno in vendite 28.000€.",
+    "area_correlata": "DIG"
+  },
+  "software bim": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏗️",
+    "definizione": "Padronanza di software BIM professionali (Revit, ArchiCAD, Navisworks) per la progettazione collaborativa di edifici in 3D intelligente con gestione delle informazioni integrate.",
+    "esempio": "Un team di 15 progettisti collabora su un ospedale in Revit: strutture, impianti e architettura nello stesso modello. Il clash detection automatico trova 320 conflitti tra tubi e travi — risolti prima del cantiere.",
+    "area_correlata": "AMB"
+  },
+  "software grafici (adobe cc)": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Adobe Creative Cloud: suite di strumenti professionali per grafica (Illustrator), fotoritocco (Photoshop), impaginazione (InDesign), video (Premiere), motion (After Effects).",
+    "esempio": "Una graphic designer usa Illustrator per il logo (vettoriale), Photoshop per le foto, InDesign per l'impaginazione del catalogo — poi esporta tutto in PDF per la stampa e in formati web.",
+    "area_correlata": "DIS"
+  },
+  "software scada": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🖥️",
+    "definizione": "SCADA (Supervisory Control and Data Acquisition): sistemi per monitorare e controllare in tempo reale impianti industriali, reti energetiche, acquedotti. Interfaccia grafica dei processi automatizzati.",
+    "esempio": "Un operatore monitora 50 km di pipeline sul SCADA: una perdita di pressione anomala a 30 km appare in rosso. In 2 minuti chiude la valvola corrispondente e attiva la squadra di manutenzione.",
+    "area_correlata": "ENE"
+  },
+  "sostenibilità ambientale": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌍",
+    "definizione": "Valutare e ridurre l'impatto ambientale di prodotti, processi e organizzazioni: emissioni di CO₂, consumo di acqua, biodiversità, uso del suolo. Base per la transizione ecologica.",
+    "esempio": "Un analista calcola l'impronta di carbonio di un'azienda manifatturiera: Scope 1+2+3. L'88% delle emissioni viene dalla supply chain, non dalla fabbrica — la priorità è cambiare i fornitori.",
+    "area_correlata": "MAT"
+  },
+  "sostenibilità dei trasporti": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚌",
+    "definizione": "Ridurre l'impatto ambientale e sociale del sistema dei trasporti: elettrificazione dei veicoli, modale shift verso treno e bici, ottimizzazione dei flussi, last-mile verde.",
+    "esempio": "Un consulente analizza i trasporti di un comune: sostituire il 30% dei tragitti in auto con bici+bus equivale a togliere dalla strada 5.000 auto/giorno — e risparmia 2M€/anno in sanità pubblica.",
+    "area_correlata": "AMB"
+  },
+  "sql": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🗄️",
+    "definizione": "Linguaggio per interrogare e manipolare database relazionali. Con SQL si estraggono dati, si fanno calcoli, si uniscono tabelle diverse — competenza base per ogni data analyst.",
+    "esempio": "Un analista scrive una query SQL che unisce 3 tabelle da 10 milioni di righe: in 15 secondi ottiene il fatturato per cliente per trimestre — senza dover aprire Excel.",
+    "area_correlata": "DIG"
+  },
+  "stampa 3d": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🖨️",
+    "definizione": "Produzione additiva: costruire oggetti strato per strato da un file digitale. Tecnologie principali: FDM (plastica), SLA (resina), SLS (polvere), DMLS (metallo).",
+    "esempio": "Un chirurgo e un ingegnere stampano in 3D il modello esatto del cranio di un paziente prima dell'operazione: pianificano ogni taglio sul modello fisico — tempo operatorio ridotto del 30%.",
+    "area_correlata": "DIS"
+  },
+  "statistica": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "📊",
+    "definizione": "Raccogliere, analizzare e interpretare dati numerici per descrivere fenomeni e fare previsioni. Include statistiche descrittive, probabilità, inferenza statistica, test di ipotesi.",
+    "esempio": "Un analista usa la statistica per confrontare due metodi di insegnamento: con un campione di 200 studenti dimostra che il metodo B migliora i voti del 12% con p-value < 0,05.",
+    "area_correlata": "DIG"
+  },
+  "statistica inferenziale": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "📈",
+    "definizione": "Usare un campione per fare conclusioni su tutta la popolazione, quantificando l'incertezza: intervalli di confidenza, test di ipotesi, regressione, ANOVA.",
+    "esempio": "Un ricercatore testa un nuovo fertilizzante su 200 appezzamenti: il test t mostra che il rendimento è superiore con p < 0,01. Può concludere che il fertilizzante funziona su tutti i campi simili.",
+    "area_correlata": "DIG"
+  },
+  "storytelling": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📖",
+    "definizione": "Arte di raccontare storie efficaci: struttura narrativa, personaggi, tensione, risoluzione. Una storia ben raccontata è ricordata 22 volte più di un elenco di fatti.",
+    "esempio": "Un manager presenta i dati di bilancio come una storia: il protagonista (l'azienda) affronta una crisi (calo vendite), trova la soluzione (nuovo mercato), e mostra il lieto fine (crescita 20%). I dipendenti capiscono e si motivano.",
+    "area_correlata": "COM"
+  },
+  "storytelling multimediale": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🎥",
+    "definizione": "Raccontare storie usando più media integrati: testo, immagini, video, audio, infografiche interattive. Il messaggio viene adattato al mezzo per creare un'esperienza coerente.",
+    "esempio": "Un giornalista racconta la storia di un quartiere a rischio alluvione: testo esplicativo, foto d'epoca, video dei residenti, mappa interattiva delle zone pericolose — ogni elemento aggiunge informazione.",
+    "area_correlata": "COM"
+  },
+  "tecnologie additive": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🖨️",
+    "definizione": "Insieme delle tecnologie di produzione additiva (stampa 3D): FDM, SLA, SLS, DMLS, bioprinting. Permette forme impossibili con lavorazioni tradizionali e personalizzazione a costo zero.",
+    "esempio": "Un ingegnere usa DMLS (sinterizzazione laser di metallo) per produrre 50 pezzi di ricambio di un macchinario obsoleto: nessun fornitore ha più lo stampo, ma il file 3D è disponibile e la produzione è immediata.",
+    "area_correlata": "ALI"
+  },
+  "tecnologie additive alimentari": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🍽️",
+    "definizione": "Stampa 3D di alimenti: cioccolato, pasta fresca, carne vegetale — per personalizzare forme, nutrienti e texture. Usata in alta ristorazione, ospedali, personalizzazione di massa.",
+    "esempio": "Un ospedale usa la stampa 3D di alimenti per pazienti con disfagia: il pasto ha l'aspetto visivo normale (un pollo arrosto) ma la texture è perfettamente morbida per chi fa fatica a deglutire.",
+    "area_correlata": "ALI"
+  },
+  "tecnologie di produzione moda": {
+    "categoria": "Design & Creatività",
+    "emoji": "👗",
+    "definizione": "Conoscere i processi industriali del settore moda: taglio automatizzato, cucitura, trattamenti, tintura, finishing. Essenziale per gestire la produzione rispettando tempi e qualità.",
+    "esempio": "Un tecnico di produzione ottimizza il piano di taglio per 500 pezzi: l'algoritmo di nesting riduce gli scarti dal 18% al 11% — risparmio di 3.000€ al mese solo in tessuto.",
+    "area_correlata": "MAT"
+  },
+  "tecnologie digitali": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "💻",
+    "definizione": "Conoscere e saper usare le principali tecnologie digitali per trasformare processi, prodotti e modelli di business: cloud, AI, IoT, blockchain, automazione.",
+    "esempio": "Un manager introduce le tecnologie digitali nel processo di approvazione ordini: firma digitale, workflow automatizzato, notifiche — da 5 giorni medi a 4 ore.",
+    "area_correlata": "DIG"
+  },
+  "telecomunicazioni urbane": {
+    "categoria": "Architettura & Città",
+    "emoji": "📡",
+    "definizione": "Infrastrutture di comunicazione per le città: fibra ottica, 5G, reti mesh, LoRaWAN per IoT. La base tecnologica delle smart city.",
+    "esempio": "Un progettista pianifica la copertura 5G di un quartiere industriale: 12 antenne small cell sui lampioni coprono tutta l'area con latenza <1ms — requisito per i robot autonomi in fabbrica.",
+    "area_correlata": "COM"
+  },
+  "tensorflow / pytorch": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🤖",
+    "definizione": "TensorFlow (Google) e PyTorch (Meta) sono le librerie Python più usate per sviluppare reti neurali e modelli di deep learning. PyTorch preferito in ricerca, TensorFlow in produzione.",
+    "esempio": "Un ricercatore addestra un modello PyTorch su 100.000 immagini di cellule tumorali: dopo 24 ore di training su GPU, il modello riconosce 5 tipi di tumore con il 91% di accuratezza.",
+    "area_correlata": "DIG"
+  },
+  "termodinamica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔥",
+    "definizione": "Studio delle trasformazioni energetiche — calore, lavoro, energia interna — e delle loro leggi. Base per capire motori, refrigerazione, processi chimici industriali.",
+    "esempio": "Un ingegnere analizza il ciclo Rankine di una centrale a vapore: usando la termodinamica calcola come alzare la pressione del vapore del 10% aumenta l'efficienza della turbina del 3%.",
+    "area_correlata": "ENE"
+  },
+  "termotecnica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🌡️",
+    "definizione": "Ingegneria del calore applicata agli edifici e agli impianti: riscaldamento, raffrescamento, ventilazione, produzione di acqua calda. Base per progettare impianti HVAC efficienti.",
+    "esempio": "Un termotecnico progetta il sistema di riscaldamento di una scuola: calcola il fabbisogno termico, sceglie la pompa di calore e dimensiona il sistema di distribuzione per ogni aula.",
+    "area_correlata": "ENE"
+  },
+  "texturing": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Applicare materiali e texture ai modelli 3D per renderli fotorealistici: colori, riflessi, rugosità, trasparenza. Trasforma un modello grigio in un oggetto con l'aspetto del metallo, legno, tessuto.",
+    "esempio": "Un artista 3D crea le texture di un'auto da corsa: scansiona campioni reali di vernice, fibra di carbonio e gomma — il rendering finale è indistinguibile da una fotografia.",
+    "area_correlata": "DIS"
+  },
+  "tipografia": {
+    "categoria": "Design & Creatività",
+    "emoji": "🔤",
+    "definizione": "Arte e tecnica di scegliere, combinare e impaginare i caratteri tipografici per comunicare efficacemente: leggibilità, gerarchia visiva, personalità del brand.",
+    "esempio": "Un art director sceglie 2 font per un quotidiano online: uno serif per i titoli (autorevolezza), uno sans-serif per il corpo testo (leggibilità digitale). Il tempo medio di lettura aumenta del 20%.",
+    "area_correlata": "DIS"
+  },
+  "tokenomics": {
+    "categoria": "Business & Management",
+    "emoji": "🪙",
+    "definizione": "Progettare l'economia di un token digitale: distribuzione iniziale, meccanismi di incentivo, inflazione/deflazione, utilità del token nel sistema. Determina se un progetto blockchain è sostenibile.",
+    "esempio": "Un tokenomics designer progetta il sistema incentivi di una piattaforma DeFi: i liquidity provider ricevono token con vesting 12 mesi — riduce il 'dump' immediato e incentiva la fedeltà al progetto.",
+    "area_correlata": "SIS"
+  },
+  "tracciabilità di filiera": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🔗",
+    "definizione": "Documentare e comunicare ogni passaggio di un prodotto dalla materia prima al consumatore finale: chi ha prodotto cosa, quando, dove e come. Strumenti: blockchain, QR code, RFID.",
+    "esempio": "Un sistema traccia la lana da una fattoria in Nuova Zelanda a un maglione in vendita a Milano: ogni passaggio è registrato e verificabile. Il consumatore vede il DNA dell'ovino su un'app.",
+    "area_correlata": "MAT"
+  },
+  "tracciabilità rifiuti": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🗑️",
+    "definizione": "Seguire il percorso dei rifiuti dalla produzione al trattamento finale per garantire che vengano smaltiti legalmente: registro carico/scarico, formulari FIR, MUD annuale.",
+    "esempio": "Un responsabile ambientale tiene il registro dei rifiuti di una fonderia: ogni settimana documenta tipo, quantità e destinatario dei rifiuti. In caso di ispezione, traccia ogni kg di scarto prodotto.",
+    "area_correlata": "MAT"
+  },
+  "ui vocale": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎙️",
+    "definizione": "Progettare interfacce controllate dalla voce: assistenti vocali (Siri, Alexa, Google), IVR telefonici, comandi vocali in auto. L'utente interagisce parlando invece di toccare.",
+    "esempio": "Un designer vocale progetta i dialoghi di un assistente per anziani: frasi brevi, nessuna ambiguità, conferma sempre prima di agire — 'Ha detto che vuole chiamare il medico, giusto?'",
+    "area_correlata": "COM"
+  },
+  "urbanistica": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏙️",
+    "definizione": "Disciplina che regola l'uso del suolo e lo sviluppo delle città: PRG, PUC, varianti urbanistiche, standard (parcheggi, verde, servizi). Gestisce la crescita delle città nel lungo periodo.",
+    "esempio": "Un urbanista rivede il Piano Regolatore di un comune: libera le aree industriali dismesse per uso misto residenziale-commerciale, aumenta le zone verdi del 15% e riduce il consumo di suolo.",
+    "area_correlata": "AMB"
+  },
+  "urbanistica dei trasporti": {
+    "categoria": "Architettura & Città",
+    "emoji": "🚆",
+    "definizione": "Integrare la pianificazione dei trasporti con quella urbana: localizzare funzioni (uffici, negozi, scuole) vicino ai nodi di trasporto pubblico per ridurre la dipendenza dall'auto.",
+    "esempio": "Un pianificatore usa il TOD (Transit-Oriented Development) per un nuovo quartiere: alta densità residenziale entro 500m dalla stazione, parcheggi solo per i pendolari, tutto a piedi o in bici.",
+    "area_correlata": "COM"
+  },
+  "user research": {
+    "categoria": "Design & Creatività",
+    "emoji": "🔍",
+    "definizione": "Tecniche per capire chi sono gli utenti, cosa vogliono e come si comportano: interviste, osservazioni, sondaggi, analisi dei dati di utilizzo, test di usabilità.",
+    "esempio": "Una UX researcher osserva 10 utenti usare un'app bancaria: 8 di loro non trovano come fare un bonifico internazionale. Con 5 screenshot documenta il percorso confuso e propone 3 alternative.",
+    "area_correlata": "DIS"
+  },
+  "ux conversazionale": {
+    "categoria": "Design & Creatività",
+    "emoji": "💬",
+    "definizione": "Progettare l'esperienza utente di chatbot, assistenti vocali e interfacce conversazionali: flussi di dialogo, gestione degli errori, personalità del bot, tono di voce.",
+    "esempio": "Una UX designer ridisegna il chatbot di un'assicurazione: invece di menu rigidi, conversazione naturale con comprensione del linguaggio. Il tasso di risoluzione al primo tentativo sale dal 40% al 72%.",
+    "area_correlata": "COM"
+  },
+  "ux design": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎯",
+    "definizione": "User Experience Design: progettare l'intera esperienza di un utente con un prodotto digitale — dall'arrivo alla conversione, senza frustrazioni. Include wireframing, prototipazione e test.",
+    "esempio": "Una UX designer ridisegna il checkout di un e-commerce: elimina 4 passaggi inutili, aggiunge il guest checkout, ottimizza per mobile. Il tasso di abbandono del carrello scende del 22%.",
+    "area_correlata": "COM"
+  },
+  "ai applicata all'energia": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "⚡",
+    "definizione": "Uso di algoritmi di machine learning per ottimizzare produzione, distribuzione e consumo di energia: previsione della domanda, manutenzione predittiva, trading energetico.",
+    "esempio": "Un sistema AI prevede la produzione solare del giorno dopo con l'85% di accuratezza: la rete elettrica si prepara esattamente con le risorse di backup necessarie.",
+    "area_correlata": "ENE"
+  },
+  "narrazione d'impresa": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📖",
+    "definizione": "Costruire e raccontare la storia di un'azienda o organizzazione in modo autentico e coinvolgente: origini, valori, missione, persone — per attrarre clienti, talenti e investitori.",
+    "esempio": "Un brand storyteller trasforma la storia di un piccolo birrificio artigianale in una narrativa su 3 generazioni di tradizione familiare: le vendite online triplicano in un anno.",
+    "area_correlata": "COM"
+  },
+  "sicurezza industriale": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "⛑️",
+    "definizione": "Prevenire infortuni e malattie professionali negli ambienti industriali: analisi dei rischi, DPI, procedure di sicurezza, formazione, gestione delle emergenze. Obbligatoria per legge (D.Lgs 81/2008).",
+    "esempio": "Un RSPP analizza i rischi di una fonderia: identifica 12 situazioni critiche, introduce schermi di protezione, modifica le procedure di movimentazione e riduce gli infortuni del 60% in un anno.",
+    "area_correlata": "ENE"
+  }
+}

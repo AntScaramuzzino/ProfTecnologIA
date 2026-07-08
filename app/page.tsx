@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MCCard from "@/components/MCCard";
-import { AREA_META, getAllMCs } from "@/lib/mc-loader";
+import { AREA_META, getAllMCs, type MC } from "@/lib/mc-loader";
 import { areaAccent, cx } from "@/lib/ui";
 
 export default function HomePage() {
@@ -16,20 +16,18 @@ export default function HomePage() {
       count: allMCs.filter((mc) => mc.area === code).length,
     }))
     .filter((area) => area.count > 0);
-  const featured = [
-    "MC-ALI-2-02", "MC-MAT-1-02", "MC-DIG-3-02",
-    "MC-ENE-3-04", "MC-AMB-2-05", "MC-COM-3-03",
-  ]
-    .map((id) => allMCs.find((mc) => mc.id === id))
-    .filter(Boolean);
+  // Una MC rappresentativa per area (prima della lista), max 6 in vetrina
+  const featured = areas
+    .flatMap(({ code }) => allMCs.filter((mc) => mc.area === code).slice(0, 1))
+    .slice(0, 6) as MC[];
 
   const stats = [
     { value: allMCs.length.toString(), label: "Micro-competenze" },
-    { value: "9",   label: "Aree tematiche" },
-    { value: "3",   label: "Anni di scuola" },
-    { value: "5",   label: "Zone per MC" },
-    { value: "IN 2025", label: "D.M. n. 221/2025" },
-    { value: "DC 3.0",  label: "DigComp" },
+    { value: areas.length.toString(),  label: "Aree tematiche" },
+    { value: "3",                      label: "Anni di scuola" },
+    { value: "6",                      label: "Zone per MC" },
+    { value: "IN 2025",                label: "D.M. n. 221/2025" },
+    { value: "DC 3.0",                 label: "DigComp" },
   ];
 
   return (
@@ -65,7 +63,7 @@ export default function HomePage() {
               </p>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                {allMCs.length} micro-competenze strutturate in 5 zone didattiche,
+                {allMCs.length} micro-competenze strutturate in 6 zone didattiche,
                 testi narrativi, immagini AI, hook audio, video e compiti di realtà
                 per la scuola secondaria di I grado.
               </p>
@@ -139,7 +137,7 @@ export default function HomePage() {
       {/* ── AREE TEMATICHE ───────────────────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
         <div className="mb-5">
-          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">9 aree tematiche</p>
+          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">{areas.length} aree tematiche</p>
           <h2 className="text-2xl font-black sm:text-3xl">Il percorso triennale</h2>
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

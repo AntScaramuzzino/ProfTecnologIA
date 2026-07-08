@@ -62,7 +62,7 @@
         "durata_sec": 129
       },
       "professione_futura": {
-        "titolo": "Tecnico di supporto IT e riparatore di dispositivi",
+        "titolo": "Digital and Innovation Manager",
         "orizzonte": "2030",
         "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
         "competenze_chiave": [
@@ -70,7 +70,8 @@
           "media literacy",
           "cybersecurity base",
           "formazione digitale"
-        ]
+        ],
+        "testo": "**Digital and Innovation Manager**\n\nAssicura la gestione dell'innovazione digitale in un'impresa, stimolando processi organizzativi basati sulle tecnologie, dalla selezione degli strumenti allo sviluppo delle competenze.\n\nDove lavora: grandi aziende in trasformazione digitale, società di consulenza strategica, startup scale-up, enti pubblici in innovazione.\n\nCompetenze chiave che inizia a costruire da qui: digital transformation · project management · tecnologie digitali · change management · innovation management\n\n*\"La tecnologia è facile da acquistare. Difficile è cambiare il modo in cui le persone lavorano.\"*"
       },
       "clil_termini": [
         {
@@ -94,7 +95,33 @@
           "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+      "professioni_future": [
+        {
+          "titolo": "Digital and Innovation Manager",
+          "orizzonte": "2028",
+          "descrizione_breve": "Assicura la gestione dell'innovazione digitale in un'impresa, stimolando processi organizzativi basati sulle tecnologie, dalla selezione degli strumenti allo sviluppo delle competenze.",
+          "competenze_chiave": [
+            "digital transformation",
+            "project management",
+            "tecnologie digitali",
+            "change management",
+            "innovation management"
+          ]
+        },
+        {
+          "titolo": "AI-Assisted Educator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Usa strumenti di intelligenza artificiale per personalizzare l'apprendimento digitale, adattando contenuti e ritmi ai bisogni di ogni studente e potenziando l'efficacia didattica.",
+          "competenze_chiave": [
+            "didattica digitale",
+            "AI per l'education",
+            "instructional design",
+            "LMS",
+            "DigComp"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-1-02",
@@ -122,8 +149,8 @@
           "nota": "Lo studente mette in discussione le fonti invece di accettarle acriticamente"
         },
         "EV": {
-          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-          "nota": "Saper distinguere informazione verificata da disinformazione è esercizio di cittadinanza democratica"
+          "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D1; L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "Traguardo D1 del D.M. 183/2024 (prescrittivo per il primo ciclo): 'valutare criticamente dati e notizie in rete, individuando fonti attendibili e modalità di ricerca adeguate'. Saper distinguere informazione verificata da disinformazione è esercizio fondamentale di cittadinanza democratica."
         }
       },
       "outputApp": {
@@ -153,12 +180,11 @@
         "avanzato": "Cercare autonomamente le 3 fonti, applicare la checklist e scrivere un paragrafo critico sulle differenze trovate."
       },
       "hook_audio": {
-        "durata_min": 2.1,
-        "durata_secondi": 212,
-        "durata_sec": 128
+        "durata_min": 3.5,
+        "durata_secondi": 212
       },
       "professione_futura": {
-        "titolo": "Fact-checker e verificatore di informazioni digitali",
+        "titolo": "Artificial Intelligence Specialist",
         "orizzonte": "2030",
         "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
         "competenze_chiave": [
@@ -166,31 +192,74 @@
           "analisi vulnerabilità",
           "GDPR",
           "ethical hacking"
-        ]
+        ],
+        "testo": "**Artificial Intelligence Specialist**\n\nSviluppa algoritmi e sistemi di intelligenza artificiale, applicando machine learning e deep learning per automatizzare processi, riconoscere pattern e generare previsioni.\n\nDove lavora: aziende tech come Google, Amazon, startup AI, laboratori universitari di ricerca, centri di innovazione.\n\nCompetenze chiave che inizia a costruire da qui: Python · TensorFlow / PyTorch · machine learning · etica AI · logica computazionale\n\n*\"Non programmo solo algoritmi. Insegno alle macchine a riconoscere pattern che un umano non riuscirebbe a vedere.\"*"
       },
       "clil_termini": [
         {
-          "italiano": "rete",
-          "inglese": "network",
-          "ipa": "ˈnetwɜːk"
+          "it": "motore di ricerca",
+          "en": "search engine",
+          "def": "Strumento che indicizza e ordina le pagine web in base alla pertinenza rispetto alla ricerca"
         },
         {
-          "italiano": "privacy",
-          "inglese": "privacy",
-          "ipa": "ˈprɪvəsi"
+          "it": "indice web",
+          "en": "web index",
+          "def": "Database gigantesco di pagine web costruito dai crawler e usato per rispondere alle ricerche"
         },
         {
-          "italiano": "algoritmo",
-          "inglese": "algorithm",
-          "ipa": "ˈælɡərɪðəm"
+          "it": "affidabilità della fonte",
+          "en": "source reliability",
+          "def": "Grado di credibilità di un sito o autore valutato tramite criteri verificabili"
         },
         {
-          "italiano": "sicurezza informatica",
-          "inglese": "cybersecurity",
-          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+          "it": "notizia falsa",
+          "en": "fake news",
+          "def": "Informazione deliberatamente falsa o fuorviante diffusa come se fosse vera"
+        },
+        {
+          "it": "diritto d'autore",
+          "en": "copyright",
+          "def": "Tutela legale che protegge le opere creative dall'uso non autorizzato"
+        },
+        {
+          "it": "verifica delle fonti",
+          "en": "fact-checking",
+          "def": "Processo di controllo della veridicità di un'informazione attraverso fonti indipendenti"
+        },
+        {
+          "it": "operatori di ricerca",
+          "en": "search operators",
+          "def": "Comandi speciali (es. site:, filetype:, \"\") che rendono le ricerche più precise e mirate"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "Vero o falso? Come orientarsi nell'informazione digitale (Tecnologia + Italiano + Educazione Civica)",
+      "sdg_principale": 4,
+      "professioni_future": [
+        {
+          "titolo": "Artificial Intelligence Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Sviluppa algoritmi e sistemi di intelligenza artificiale, applicando machine learning e deep learning per automatizzare processi, riconoscere pattern e generare previsioni.",
+          "competenze_chiave": [
+            "Python",
+            "TensorFlow / PyTorch",
+            "machine learning",
+            "etica AI",
+            "logica computazionale"
+          ]
+        },
+        {
+          "titolo": "Computer Animation and Visual Effects",
+          "orizzonte": "2028",
+          "descrizione_breve": "Usa il codice e strumenti digitali avanzati per creare animazioni, effetti speciali e mondi virtuali per cinema, televisione, videogiochi e produzioni web.",
+          "competenze_chiave": [
+            "animazione digitale 3D",
+            "software VFX",
+            "coding creativo",
+            "storytelling visivo",
+            "competenze culturali e psicologiche"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-1-03",
@@ -250,10 +319,11 @@
       "hook_audio": {
         "titolo": "Il cameriere che non sbaglia mai",
         "script": "Immagina un cameriere che non dimentica mai un ordine e non confonde mai i tavoli. Come fa? Segue un algoritmo — una sequenza precisa di passi. E indovina? Il tuo cervello fa lo stesso ogni mattina quando ti alzi. Oggi scopriamo come funzionano le macchine... e forse anche noi.",
-        "durata_sec": 28
+        "durata_sec": 192,
+        "durata_min": "3:12"
       },
       "professione_futura": {
-        "titolo": "Sviluppatore software / Computational Thinker",
+        "titolo": "Algorithm Auditor",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta soluzioni a problemi reali trasformandoli in algoritmi eseguibili da macchine o persone.",
         "competenze_chiave": [
@@ -261,7 +331,8 @@
           "Pattern recognition",
           "Abstraction",
           "Algorithm design"
-        ]
+        ],
+        "testo": "**Algorithm Auditor**\n\nVerifica equità, trasparenza e assenza di bias negli algoritmi usati da aziende e istituzioni, garantendo che le decisioni automatizzate rispettino i diritti delle persone.\n\nDove lavora: enti regolatori dell'AI (AI Office europeo), grandi aziende tech, studi legali specializzati in diritto digitale, ONG per i diritti digitali.\n\nCompetenze chiave che inizia a costruire da qui: pensiero computazionale · statistica · AI · diritto digitale · inclusione e accessibilità\n\n*\"Se non puoi spiegare perché l'algoritmo ha deciso così, non puoi difenderti dalla sua decisione sbagliata.\"*"
       },
       "clil_termini": {
         "it": [
@@ -293,6 +364,32 @@
         "Matematica — procedura di calcolo come algoritmo",
         "Italiano — testo regolativo come sequenza di istruzioni",
         "Scienze — metodo scientifico come algoritmo di osservazione/ipotesi/verifica"
+      ],
+      "professioni_future": [
+        {
+          "titolo": "Algorithm Auditor",
+          "orizzonte": "2030",
+          "descrizione_breve": "Verifica equità, trasparenza e assenza di bias negli algoritmi usati da aziende e istituzioni, garantendo che le decisioni automatizzate rispettino i diritti delle persone.",
+          "competenze_chiave": [
+            "pensiero computazionale",
+            "statistica",
+            "AI",
+            "diritto digitale",
+            "inclusione e accessibilità"
+          ]
+        },
+        {
+          "titolo": "Interaction Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta l'interazione tra esseri umani e sistemi digitali, combinando conoscenze di grafica, psicologia cognitiva e informatica per creare interfacce intuitive e piacevoli da usare.",
+          "competenze_chiave": [
+            "UX design",
+            "psicologia cognitiva",
+            "prototipazione",
+            "graphic design",
+            "sistemi informatici"
+          ]
+        }
       ]
     },
     {
@@ -318,7 +415,7 @@
         },
         "LC": {
           "ref": "Thinking / Problem solving",
-          "nota": "Lo studente affronta la costruzione come problema con procedura definita da rispettare"
+          "nota": "Lo studente affronta la costruzione geometrica come problema con procedura definita da rispettare. Il disegno tecnico come sequenza di passi controllabili sviluppa la capacità di monitorare il proprio lavoro step-by-step — competenza metacognitiva diretta dell'imparare a imparare, trasferibile a qualsiasi compito strutturato."
         },
         "EV": {
           "ref": "SDG 4 — Istruzione di qualità",
@@ -354,7 +451,7 @@
         "durata_sec": 131
       },
       "professione_futura": {
-        "titolo": "Progettista CAD-fisico (CAD/CAM Designer)",
+        "titolo": "Graphic Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
         "competenze_chiave": [
@@ -362,7 +459,8 @@
           "AutoCAD",
           "Revit",
           "disegno tecnico avanzato"
-        ]
+        ],
+        "testo": "**Graphic Designer**\n\nProgetta la comunicazione visiva di aziende e prodotti, raccontando messaggi efficaci attraverso linguaggi grafici convincenti: illustrazioni, tipografia, layout e composizione.\n\nDove lavora: agenzie creative e di comunicazione, reparti marketing aziendali, case editrici, startup tech che curano il brand visivo.\n\nCompetenze chiave che inizia a costruire da qui: composizione visiva · tipografia · software grafici (Adobe CC) · comunicazione · design thinking\n\n*\"Il buon design non si nota. Ci vivi dentro senza accorgertene.\"*"
       },
       "clil_termini": [
         {
@@ -386,7 +484,33 @@
           "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+      "professioni_future": [
+        {
+          "titolo": "Graphic Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta la comunicazione visiva di aziende e prodotti, raccontando messaggi efficaci attraverso linguaggi grafici convincenti: illustrazioni, tipografia, layout e composizione.",
+          "competenze_chiave": [
+            "composizione visiva",
+            "tipografia",
+            "software grafici (Adobe CC)",
+            "comunicazione",
+            "design thinking"
+          ]
+        },
+        {
+          "titolo": "Product Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Usa il disegno e la prototipazione per ideare prodotti che rispondono ai bisogni degli utenti. Analizza il contesto, genera concept e trasforma le idee in soluzioni concrete e desiderabili.",
+          "competenze_chiave": [
+            "disegno tecnico",
+            "ideazione",
+            "prototipazione rapida",
+            "design thinking",
+            "ergonomia"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIS-1-02",
@@ -411,7 +535,7 @@
         },
         "LC": {
           "ref": "Thinking / Problem solving",
-          "nota": "Lo studente applica proporzioni matematiche per risolvere problemi di scala"
+          "nota": "Lo studente applica proporzioni matematiche per risolvere problemi di scala in contesti reali. La conversione tra misure reali e rappresentazione richiede consapevolezza dell'errore: lo studente impara a controllare il risultato intermedio e a identificare in quale passaggio ha sbagliato il ragionamento."
         },
         "EV": {
           "ref": "SDG 4 — Istruzione di qualità",
@@ -449,7 +573,7 @@
         "durata_sec": 55
       },
       "professione_futura": {
-        "titolo": "BIM Coordinator (Building Information Modeling)",
+        "titolo": "Designer di Prodotto",
         "orizzonte": "2030",
         "descrizione_breve": "Traduce idee progettuali in modelli digitali per la produzione industriale.",
         "competenze_chiave": [
@@ -457,7 +581,8 @@
           "prototipazione rapida",
           "disegno tecnico",
           "tolleranze geometriche"
-        ]
+        ],
+        "testo": "**Designer di Prodotto**\n\nTraduce idee tridimensionali in disegni tecnici precisi, definendo forma, materiali e funzioni di un prodotto attraverso viste ortogonali, sezioni e schede tecniche.\n\nDove lavora: studi di design indipendenti, reparti R&D di aziende manifatturiere, laboratori di prototipazione, scuole di design.\n\nCompetenze chiave che inizia a costruire da qui: disegno tecnico · modellazione · creatività · materiali e tecnologie · documentazione di progetto\n\n*\"Un oggetto ben progettato non ha bisogno di un manuale. Si capisce da solo.\"*"
       },
       "clil_termini": [
         {
@@ -481,7 +606,33 @@
           "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+      "professioni_future": [
+        {
+          "titolo": "Designer di Prodotto",
+          "orizzonte": "2030",
+          "descrizione_breve": "Traduce idee tridimensionali in disegni tecnici precisi, definendo forma, materiali e funzioni di un prodotto attraverso viste ortogonali, sezioni e schede tecniche.",
+          "competenze_chiave": [
+            "disegno tecnico",
+            "modellazione",
+            "creatività",
+            "materiali e tecnologie",
+            "documentazione di progetto"
+          ]
+        },
+        {
+          "titolo": "Modellista e Prototipista Industriale 4.0",
+          "orizzonte": "2028",
+          "descrizione_breve": "Coniuga competenze di modellistica tradizionale con la progettazione CAD avanzata per realizzare prototipi industriali ad alta precisione nel settore manifatturiero e della moda.",
+          "competenze_chiave": [
+            "CAD",
+            "modellistica industriale",
+            "prototipazione",
+            "progettazione tecnica",
+            "Industria 4.0"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-MAT-1-01",
@@ -507,7 +658,7 @@
         },
         "LC": {
           "ref": "Thinking / Critical thinking",
-          "nota": "Lo studente valuta scelte progettuali basate sulle proprietà dei materiali, argomentando perché un materiale è adatto o inadatto a una funzione"
+          "nota": "Lo studente valuta scelte progettuali basate sulle proprietà dei materiali, argomentando perché un materiale è adeguato a una funzione specifica. La comparazione sistematica sviluppa la competenza metacognitiva di valutare le proprie strategie di selezione: riconoscere criteri, pesarli, riformularli quando cambiano i vincoli."
         },
         "EV": {
           "ref": "SDG 12 — Consumo e produzione responsabili · L. 92/2019 Educazione Civica — Sviluppo sostenibile",
@@ -552,7 +703,7 @@
         "durata_sec": 131
       },
       "professione_futura": {
-        "titolo": "Materials Scientist circolare",
+        "titolo": "Green Product Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta materiali che possono essere completamente separati e riciclati a fine vita — risolvendo il problema delle scarpe che finiscono in discarica.",
         "competenze_chiave": [
@@ -560,7 +711,8 @@
           "economia circolare",
           "progettazione per il disassemblaggio",
           "analisi del ciclo di vita (LCA)"
-        ]
+        ],
+        "testo": "**Green Product Designer**\n\nProgetta oggetti che semplificano la vita quotidiana tenendo conto delle esigenze degli utenti e dell'ambiente. Coniuga estetica, innovazione, sostenibilità e funzionalità scegliendo materiali naturali a basso impatto.\n\nDove lavora: studi di design indipendenti, reparti R&D di aziende manifatturiere, startup dell'economia circolare, laboratori universitari di material design.\n\nCompetenze chiave che inizia a costruire da qui: design del prodotto · scienza dei materiali · sostenibilità ambientale · LCA (analisi del ciclo di vita) · innovazione\n\n*\"Il mio lavoro non finisce quando il prodotto è venduto. Finisce quando il materiale ritorna.\"*"
       },
       "clil_termini": [
         {
@@ -590,7 +742,33 @@
         "scienze": "Chimica dei polimeri: perché la plastica non si degrada biologicamente in tempi brevi. Fisica: densità come proprietà misurabile.",
         "arte_geo_storia": "Geografia: distribuzione delle materie prime nel mondo — da dove vengono i materiali che usiamo (gomma dall'Indonesia, cotone dall'India, acciaio dalla Cina).",
         "frase_ponte": "Ogni materiale obbedisce a leggi fisiche e chimiche che puoi misurare."
-      }
+      },
+      "professioni_future": [
+        {
+          "titolo": "Green Product Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta oggetti che semplificano la vita quotidiana tenendo conto delle esigenze degli utenti e dell'ambiente. Coniuga estetica, innovazione, sostenibilità e funzionalità scegliendo materiali naturali a basso impatto.",
+          "competenze_chiave": [
+            "design del prodotto",
+            "scienza dei materiali",
+            "sostenibilità ambientale",
+            "LCA (analisi del ciclo di vita)",
+            "innovazione"
+          ]
+        },
+        {
+          "titolo": "Carbon Footprint Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Valuta l'impatto ambientale dei materiali e dei processi produttivi lungo tutto il ciclo di vita, dall'estrazione delle materie prime allo smaltimento finale, orientando scelte sostenibili.",
+          "competenze_chiave": [
+            "LCA",
+            "ISO 14064",
+            "calcolo emissioni CO₂",
+            "sostenibilità aziendale",
+            "database ecoinvent"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-MAT-1-02",
@@ -615,7 +793,7 @@
         },
         "LC": {
           "ref": "Thinking / Systems thinking",
-          "nota": "Lo studente analizza le interdipendenze tra fasi produttive, logistica, distribuzione e impatto ambientale come sistema"
+          "nota": "Lo studente analizza le interdipendenze tra fasi produttive, logistica, distribuzione e impatto ambientale nel ciclo di vita di un materiale. Tracciare questo percorso completo allena il pensiero sistemico e la capacità di imparare a imparare: riconoscere schemi causa-effetto e trasferirli a contesti nuovi."
         },
         "EV": {
           "ref": "SDG 12 — Consumo e produzione responsabili; SDG 15 — Vita sulla terra; SDG 9 — Industria, innovazione, infrastrutture",
@@ -661,7 +839,7 @@
         "durata_sec": 125
       },
       "professione_futura": {
-        "titolo": "Supply Chain Sustainability Manager",
+        "titolo": "Circular Fashion Specialist",
         "orizzonte": "2030",
         "descrizione_breve": "Analizza e ottimizza le catene di fornitura aziendali per ridurre le emissioni, garantire condizioni di lavoro etiche e minimizzare i rifiuti lungo tutto il ciclo tecnologico.",
         "competenze_chiave": [
@@ -669,7 +847,8 @@
           "logistica sostenibile",
           "economia circolare",
           "reportistica ESG"
-        ]
+        ],
+        "testo": "**Circular Fashion Specialist**\n\nApplica i principi dell'economia circolare alla filiera dei prodotti, scegliendo materiali rigenerabili e progettando oggetti che possano essere smontati, riparati e riciclati a fine vita.\n\nDove lavora: aziende di moda con programmi di take-back, piattaforme di seconda mano, enti di certificazione tessile, consulenti di sostenibilità per brand.\n\nCompetenze chiave che inizia a costruire da qui: economia circolare · materiali rigenerabili · design circolare · tracciabilità di filiera · sostenibilità\n\n*\"Il capo più sostenibile è quello che non produci. Il secondo è quello che produci per durare vent'anni.\"*"
       },
       "sdg_principale": 12,
       "clil_termini": [
@@ -694,7 +873,33 @@
           "pronuncia_ipa": "/ˌteknəˈlɒdʒɪkəl ˈsaɪkəl/"
         }
       ],
-      "uda_collegata": null
+      "uda_collegata": null,
+      "professioni_future": [
+        {
+          "titolo": "Circular Fashion Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Applica i principi dell'economia circolare alla filiera dei prodotti, scegliendo materiali rigenerabili e progettando oggetti che possano essere smontati, riparati e riciclati a fine vita.",
+          "competenze_chiave": [
+            "economia circolare",
+            "materiali rigenerabili",
+            "design circolare",
+            "tracciabilità di filiera",
+            "sostenibilità"
+          ]
+        },
+        {
+          "titolo": "Designer and Ecospace Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Ridisegna città, spazi e oggetti liberandoli da ostacoli visivi, ristrutturando il patrimonio materiale e immateriale con materiali eco-compatibili per creare ambienti sostenibili per persone e pianeta.",
+          "competenze_chiave": [
+            "eco-design",
+            "materiali sostenibili",
+            "progettazione ambientale",
+            "ergonomia",
+            "innovazione di prodotto"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-MAT-1-03",
@@ -719,7 +924,7 @@
         },
         "LC": {
           "ref": "Thinking / Critical thinking",
-          "nota": "Lo studente confronta pro e contro di materiali tradizionali vs. innovativi"
+          "nota": "Lo studente confronta pro e contro di materiali tradizionali vs. innovativi, sviluppando una griglia di valutazione personale. Il confronto per coppie contrarie è un metodo di apprendimento per contrasto: lo studente impara a organizzare la conoscenza per categorie e a riconoscere quando le proprie categorie mentali vanno aggiornate."
         },
         "EV": {
           "ref": "SDG 9 — Innovazione e infrastrutture; SDG 12 — Consumo responsabile",
@@ -767,7 +972,8 @@
           "economia circolare",
           "materiali compositi",
           "chimica green"
-        ]
+        ],
+        "testo": "**Materials Innovation Engineer (Ingegnere dei Materiali per l'Innovazione Sostenibile)**\n\nÈ una figura che non esisteva con questo nome vent'anni fa. Lavora all'intersezione tra chimica dei materiali, ingegneria del prodotto e sostenibilità ambientale. Il suo obiettivo: trovare o sviluppare il materiale giusto per ogni applicazione, considerando prestazioni, costo e impatto ambientale come un insieme unico — non come priorità separate.\n\nCosa fa concretamente: analizza i requisiti funzionali di un prodotto e identifica i materiali candidati (convenzionali e innovativi). Commissiona test di laboratorio sulle proprietà meccaniche, termiche, chimiche. Valuta il ciclo di vita di ogni candidato con metodi LCA. Propone il materiale ottimale con una relazione tecnica che giustifica la scelta su tutti e tre i fronti.\n\nUn esempio di lavoro recente: un produttore di caschi da bicicletta vuole sostituire il polistirolo espanso (EPS) nell'interno del casco con un materiale biodegradabile che abbia le stesse proprietà di assorbimento degli impatti. Il Materials Innovation Engineer analizza le bioplastiche espanse, il mycelium, le schiume di PHA, e propone quella che soddisfa le normative di sicurezza CE (test di impatto standardizzati) con il minore impatto ambientale.\n\nDove lavora: centri R&D di grandi aziende manifatturiere, startup deeptech sui materiali, centri di ricerca universitari, agenzie di certificazione.\n\nCompetenze chiave: chimica dei polimeri · analisi del ciclo di vita · scienza delle superfici e delle strutture · normative di sicurezza sui materiali · calcolo strutturale\n\n*\"Non esiste il materiale perfetto. Esiste il materiale giusto per quello specifico problema, in quello specifico contesto, con quello specifico sistema di smaltimento disponibile.\"*"
       },
       "clil_termini": [
         {
@@ -791,7 +997,33 @@
           "ipa": "laɪf ˈsaɪkəl"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+      "professioni_future": [
+        {
+          "titolo": "Waste Blockchain Auditor",
+          "orizzonte": "2030",
+          "descrizione_breve": "Usa la tecnologia blockchain per tracciare i flussi di rifiuti lungo tutta la catena di smaltimento, garantendo la conformità alle normative ambientali e prevenendo smaltimenti illeciti.",
+          "competenze_chiave": [
+            "blockchain",
+            "normativa ambientale",
+            "auditing",
+            "tracciabilità rifiuti",
+            "smart contract"
+          ]
+        },
+        {
+          "titolo": "Decarbonization Consultant",
+          "orizzonte": "2030",
+          "descrizione_breve": "Supporta aziende e istituzioni nella misurazione e riduzione della propria impronta di carbonio, guidando la transizione verso modelli produttivi e logistici a emissioni zero.",
+          "competenze_chiave": [
+            "carbon footprint",
+            "auditing ambientale",
+            "standard ISO 14064",
+            "economia circolare",
+            "ESG"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-MAT-1-04",
@@ -816,7 +1048,7 @@
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente si riconosce come agente attivo nella gestione sostenibile dei rifiuti"
+          "nota": "Lo studente si riconosce come agente attivo nella gestione sostenibile dei rifiuti. Analizzare i propri comportamenti di smaltimento è metacognizione applicata: lo studente porta a coscienza abitudini automatiche, ne valuta la coerenza con valori dichiarati e pianifica cambiamenti concreti."
         },
         "EV": {
           "ref": "SDG 11 — Città e comunità sostenibili; SDG 12 — Consumo responsabile",
@@ -856,7 +1088,7 @@
         "durata_sec": 131
       },
       "professione_futura": {
-        "titolo": "Urban Waste Systems Designer (Progettista di Sistemi Urbani per i Rifiuti)",
+        "titolo": "Carbon Footprint Analyst",
         "orizzonte": "2030",
         "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
         "competenze_chiave": [
@@ -864,7 +1096,8 @@
           "logistica sostenibile",
           "reportistica ESG",
           "economia circolare"
-        ]
+        ],
+        "testo": "**Carbon Footprint Analyst**\n\nMisura e riduce l'impatto ambientale di prodotti e processi lungo tutto il ciclo di vita, applicando metodologie LCA e strumenti certificati per orientare scelte di economia circolare.\n\nDove lavora: aziende manifatturiere con obiettivi net-zero, società di consulenza ambientale, enti di certificazione carbon neutral, investitori ESG.\n\nCompetenze chiave che inizia a costruire da qui: LCA · ISO 14064 · emissioni CO₂ · economia circolare · EPD (Environmental Product Declaration)\n\n*\"Non mi interessa l'impronta di carbonio come numero. Mi interessa dove posso tagliarla davvero.\"*"
       },
       "clil_termini": [
         {
@@ -888,7 +1121,33 @@
           "ipa": "laɪf ˈsaɪkəl"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+      "professioni_future": [
+        {
+          "titolo": "Carbon Footprint Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Misura e riduce l'impatto ambientale di prodotti e processi lungo tutto il ciclo di vita, applicando metodologie LCA e strumenti certificati per orientare scelte di economia circolare.",
+          "competenze_chiave": [
+            "LCA",
+            "ISO 14064",
+            "emissioni CO₂",
+            "economia circolare",
+            "EPD (Environmental Product Declaration)"
+          ]
+        },
+        {
+          "titolo": "Decarbonization Consultant",
+          "orizzonte": "2030",
+          "descrizione_breve": "Guida la transizione delle organizzazioni verso produzione e consumi decarbonizzati, combinando auditing ambientale, standard ISO e strategia di economia circolare.",
+          "competenze_chiave": [
+            "carbon footprint",
+            "auditing ambientale",
+            "standard ISO",
+            "sostenibilità",
+            "reporting ESG"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-MAT-1-05",
@@ -913,7 +1172,7 @@
         },
         "LC": {
           "ref": "Thinking / Problem solving",
-          "nota": "Lo studente affronta un problema progettuale con un approccio strutturato e multi-criterio"
+          "nota": "Lo studente affronta un problema progettuale con un approccio strutturato e multi-criterio. La progettazione con vincoli (resistenza, peso, costo, lavorabilità) allena il pensiero strategico e l'imparare a imparare: lo studente pianifica, stima, revisa le proprie scelte in base ai risultati ottenuti."
         },
         "EV": {
           "ref": "SDG 12 — Consumo e produzione responsabili",
@@ -953,7 +1212,7 @@
         "durata_sec": 54
       },
       "professione_futura": {
-        "titolo": "Ingegnere metallurgico dei materiali avanzati",
+        "titolo": "Digital Twin Engineer",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta materiali circolari per ridurre sprechi e impatto ambientale.",
         "competenze_chiave": [
@@ -961,7 +1220,8 @@
           "economia circolare",
           "materiali compositi",
           "chimica green"
-        ]
+        ],
+        "testo": "**Digital Twin Engineer**\n\nCrea repliche digitali (Industry 5.0) di impianti metallurgici e linee produttive per simulare processi, ottimizzare la resa dei materiali e ridurre scarti e tempi di fermo.\n\nDove lavora: aziende manifatturiere avanzate, centri di ricerca su Industry 5.0, system integrator, fornitori di piattaforme IIoT.\n\nCompetenze chiave che inizia a costruire da qui: IoT · modellazione 3D · ingegneria dei sistemi · simulazione industriale · Industry 5.0\n\n*\"Il gemello digitale non è una copia. È una macchina del tempo che ti mostra il futuro del sistema fisico.\"*"
       },
       "clil_termini": [
         {
@@ -985,7 +1245,33 @@
           "ipa": "laɪf ˈsaɪkəl"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+      "professioni_future": [
+        {
+          "titolo": "Digital Twin Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Crea repliche digitali (Industry 5.0) di impianti metallurgici e linee produttive per simulare processi, ottimizzare la resa dei materiali e ridurre scarti e tempi di fermo.",
+          "competenze_chiave": [
+            "IoT",
+            "modellazione 3D",
+            "ingegneria dei sistemi",
+            "simulazione industriale",
+            "Industry 5.0"
+          ]
+        },
+        {
+          "titolo": "Predictive Maintenance Analyst",
+          "orizzonte": "2028",
+          "descrizione_breve": "Analizza i dati dei sensori installati sugli impianti per prevedere guasti e programmare interventi di manutenzione prima che causino fermi produttivi e sprechi di materiale.",
+          "competenze_chiave": [
+            "sensoristica",
+            "big data",
+            "machine learning",
+            "manutenzione industriale",
+            "analisi predittiva"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-MAT-1-06",
@@ -1010,7 +1296,7 @@
         },
         "LC": {
           "ref": "Thinking / Critical thinking",
-          "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'"
+          "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'. Questa competenza epistemica è trasversale: lo studente costruisce criteri propri per valutare l'attendibilità delle fonti e li trasferisce oltre il contesto dei materiali, in qualsiasi campo informativo."
         },
         "EV": {
           "ref": "SDG 9 — Innovazione; SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
@@ -1051,7 +1337,7 @@
         "durata_sec": 57
       },
       "professione_futura": {
-        "titolo": "Ingegnere dei biomateriali e dei polimeri sostenibili",
+        "titolo": "Fashion and Textile Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Ottimizza le filiere produttive per ridurre emissioni e garantire condizioni etiche.",
         "competenze_chiave": [
@@ -1059,7 +1345,8 @@
           "logistica sostenibile",
           "reportistica ESG",
           "economia circolare"
-        ]
+        ],
+        "testo": "**Fashion and Textile Designer**\n\nProgetta capi, accessori e materiali tessili innovativi, sperimentando fibre naturali, sintetiche e compositi avanzati per rispondere alle esigenze estetiche e funzionali del mercato.\n\nDove lavora: case di moda e brand tessili, reparti creativi di grandi gruppi fashion, studi di design indipendenti, startup fashion tech.\n\nCompetenze chiave che inizia a costruire da qui: disegno tessile · tecnologie di produzione moda · materiali avanzati · CAD moda · sostenibilità\n\n*\"Il tessuto è il mio mezzo di comunicazione. Ogni fibra racconta qualcosa di chi lo indossa.\"*"
       },
       "clil_termini": [
         {
@@ -1083,7 +1370,33 @@
           "ipa": "laɪf ˈsaɪkəl"
         }
       ],
-      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto"
+      "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
+      "professioni_future": [
+        {
+          "titolo": "Fashion and Textile Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta capi, accessori e materiali tessili innovativi, sperimentando fibre naturali, sintetiche e compositi avanzati per rispondere alle esigenze estetiche e funzionali del mercato.",
+          "competenze_chiave": [
+            "disegno tessile",
+            "tecnologie di produzione moda",
+            "materiali avanzati",
+            "CAD moda",
+            "sostenibilità"
+          ]
+        },
+        {
+          "titolo": "Textile Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Crea collezioni di tessuti tecnici e decorativi, sia per abbigliamento sia per complementi d'arredo, combinando conoscenza delle fibre, tecniche di tessitura e strumenti digitali di progettazione.",
+          "competenze_chiave": [
+            "progettazione tessile",
+            "fibre e compositi",
+            "tecniche di tessitura",
+            "CAD",
+            "creatività applicata"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ALI-2-01",
@@ -1108,7 +1421,7 @@
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente comprende il legame tra pratiche agricole e benessere collettivo"
+          "nota": "Lo studente comprende il legame tra pratiche agricole e benessere collettivo, ricostruendo la filiera dal campo alla tavola. La mappa della filiera è un esercizio di pensiero sistemico e di imparare a imparare: lo studente organizza concetti complessi in reti di relazioni e trasferisce questo schema interpretativo ad altri domini."
         },
         "EV": {
           "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
@@ -1145,7 +1458,7 @@
         "durata_sec": 140
       },
       "professione_futura": {
-        "titolo": "Agronomo di precisione",
+        "titolo": "Microbiome Specialist",
         "orizzonte": "2030",
         "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
         "competenze_chiave": [
@@ -1153,7 +1466,8 @@
           "HACCP",
           "etichettatura",
           "analisi nutrizionale"
-        ]
+        ],
+        "testo": "**Microbiome Specialist**\n\nStudia il ruolo dei microorganismi intestinali nel benessere, nella nutrizione personalizzata e nella prevenzione delle malattie, aprendo nuovi orizzonti in medicina e food tech.\n\nDove lavora: laboratori di ricerca universitari, startup biotech della salute, centri di nutrizione personalizzata, industria farmaceutica e nutraceutica.\n\nCompetenze chiave che inizia a costruire da qui: microbiologia · nutrizione personalizzata · biotecnologia · biologia molecolare · analisi di laboratorio\n\n*\"Siamo fatti di batteri tanto quanto di cellule. Chi capisce il microbioma capisce la salute.\"*"
       },
       "clil_termini": [
         {
@@ -1177,7 +1491,33 @@
           "ipa": "fuːd weɪst"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Microbiome Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Studia il ruolo dei microorganismi intestinali nel benessere, nella nutrizione personalizzata e nella prevenzione delle malattie, aprendo nuovi orizzonti in medicina e food tech.",
+          "competenze_chiave": [
+            "microbiologia",
+            "nutrizione personalizzata",
+            "biotecnologia",
+            "biologia molecolare",
+            "analisi di laboratorio"
+          ]
+        },
+        {
+          "titolo": "Synthetic Food Developer",
+          "orizzonte": "2035",
+          "descrizione_breve": "Sviluppa nuove fonti di cibo — come la carne coltivata o le proteine da microalghe — per nutrire 10 miliardi di persone con un impatto ambientale radicalmente ridotto.",
+          "competenze_chiave": [
+            "biotecnologie alimentari",
+            "biochimica",
+            "food tech",
+            "bioreattori",
+            "sicurezza alimentare"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ALI-2-02",
@@ -1202,7 +1542,7 @@
         },
         "LC": {
           "ref": "Thinking / Problem solving",
-          "nota": "Lo studente spiega perché un metodo di conservazione funziona usando i principi fisici/chimici"
+          "nota": "Lo studente spiega perché un metodo di conservazione funziona usando i principi fisici e chimici alla base del deterioramento. Spiegare un fenomeno richiede di controllare la propria comprensione: lo studente individua lacune nel proprio modello mentale e le colma con dati verificabili — metacognizione applicata alla scienza."
         },
         "EV": {
           "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
@@ -1241,7 +1581,7 @@
         "durata_sec": 140
       },
       "professione_futura": {
-        "titolo": "Food Technologist (Tecnologo alimentare)",
+        "titolo": "3D Food Printing Technician",
         "orizzonte": "2030",
         "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
         "competenze_chiave": [
@@ -1249,7 +1589,8 @@
           "logistica alimentare",
           "certificazioni DOP/IGP",
           "sostenibilità"
-        ]
+        ],
+        "testo": "**3D Food Printing Technician**\n\nUsa stampanti 3D alimentari per produrre cibi personalizzati per forma, nutrienti e consistenza, aprendo nuove possibilità nella ristorazione, nella dietetica e nella produzione industriale.\n\nDove lavora: laboratori di food innovation, ospedali e case di cura con dietoterapia speciale, ristoranti d'avanguardia, aziende di tecnologie alimentari.\n\nCompetenze chiave che inizia a costruire da qui: biochimica alimentare · progettazione CAD · tecnologie additive · nutrizione · food manufacturing\n\n*\"La stampante 3D non cucina. Ma permette di cucinare ciò che non era mai stato possibile prima.\"*"
       },
       "clil_termini": [
         {
@@ -1273,7 +1614,33 @@
           "ipa": "fuːd weɪst"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "3D Food Printing Technician",
+          "orizzonte": "2030",
+          "descrizione_breve": "Usa stampanti 3D alimentari per produrre cibi personalizzati per forma, nutrienti e consistenza, aprendo nuove possibilità nella ristorazione, nella dietetica e nella produzione industriale.",
+          "competenze_chiave": [
+            "biochimica alimentare",
+            "progettazione CAD",
+            "tecnologie additive",
+            "nutrizione",
+            "food manufacturing"
+          ]
+        },
+        {
+          "titolo": "Vertical Farmer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce coltivazioni indoor multi-piano con luce LED, idroponica e automazione, producendo ortaggi e frutta senza pesticidi con minimo consumo d'acqua e suolo.",
+          "competenze_chiave": [
+            "agricoltura di precisione",
+            "automazione",
+            "biotecnologie",
+            "IoT e sensoristica",
+            "gestione ambientale"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ALI-2-03",
@@ -1298,7 +1665,7 @@
         },
         "LC": {
           "ref": "Self-management / Wellbeing",
-          "nota": "Lo studente collega scelte alimentari consapevoli al proprio benessere fisico e mentale"
+          "nota": "Lo studente collega scelte alimentari consapevoli al proprio benessere fisico e mentale. Questo collegamento è un esercizio di autovalutazione e di imparare a imparare: lo studente costruisce criteri propri per le decisioni quotidiane e impara a monitorarne gli effetti nel tempo."
         },
         "EV": {
           "ref": "SDG 3 — Salute e benessere; SDG 12 — Consumo responsabile",
@@ -1337,7 +1704,7 @@
         "durata_sec": 126
       },
       "professione_futura": {
-        "titolo": "Nutrizionista e Dietista",
+        "titolo": "Soil Regeneration Expert",
         "orizzonte": "2030",
         "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
         "competenze_chiave": [
@@ -1345,7 +1712,8 @@
           "HACCP",
           "etichettatura",
           "analisi nutrizionale"
-        ]
+        ],
+        "testo": "**Soil Regeneration Expert**\n\nRipristina la fertilità e la biodiversità del suolo attraverso pratiche di agricoltura rigenerativa, garantendo coltivazioni sane e una filiera alimentare sostenibile nel lungo periodo.\n\nDove lavora: aziende agricole biologiche e biodinamiche, enti di certificazione, cooperative agricole, consulenti agronomici, enti pubblici ambientali.\n\nCompetenze chiave che inizia a costruire da qui: agronomia · chimica organica del suolo · agricoltura rigenerativa · gestione del suolo · sostenibilità\n\n*\"Un centimetro di suolo sano ha impiegato mille anni a formarsi. Il mio lavoro è fermarne la perdita.\"*"
       },
       "clil_termini": [
         {
@@ -1369,7 +1737,33 @@
           "ipa": "fuːd weɪst"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Soil Regeneration Expert",
+          "orizzonte": "2030",
+          "descrizione_breve": "Ripristina la fertilità e la biodiversità del suolo attraverso pratiche di agricoltura rigenerativa, garantendo coltivazioni sane e una filiera alimentare sostenibile nel lungo periodo.",
+          "competenze_chiave": [
+            "agronomia",
+            "chimica organica del suolo",
+            "agricoltura rigenerativa",
+            "gestione del suolo",
+            "sostenibilità"
+          ]
+        },
+        {
+          "titolo": "Urban Farming Coordinator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Organizza e gestisce sistemi di produzione alimentare urbana (orti condivisi, rooftop farm, community garden), accorciando la filiera e portando cibo fresco nelle città.",
+          "competenze_chiave": [
+            "agricoltura urbana",
+            "logistica",
+            "sostenibilità",
+            "community management",
+            "economia locale"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ALI-2-04",
@@ -1394,7 +1788,7 @@
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente esercita scelte di consumo informate come atto di cittadinanza"
+          "nota": "Lo studente esercita scelte di consumo informate come atto di cittadinanza, leggendo e interpretando etichette. Decodificare sistemi informativi compatti (etichette, schede tecniche, contratti) è una competenza trasversale dell'imparare a imparare che lo studente trasferisce ben oltre il contesto alimentare."
         },
         "EV": {
           "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile",
@@ -1434,7 +1828,7 @@
         "durata_sec": 54
       },
       "professione_futura": {
-        "titolo": "Supply Chain Manager agroalimentare",
+        "titolo": "Synthetic Food Developer",
         "orizzonte": "2030",
         "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
         "competenze_chiave": [
@@ -1442,7 +1836,8 @@
           "logistica alimentare",
           "certificazioni DOP/IGP",
           "sostenibilità"
-        ]
+        ],
+        "testo": "**Synthetic Food Developer**\n\nRiduce l'impatto ambientale della produzione alimentare sviluppando proteine alternative, carne coltivata e ingredienti biotech che richiedono meno terra, acqua ed energia rispetto all'allevamento.\n\nDove lavora: startup food tech, centri R&D di grandi aziende alimentari, laboratori di biochimica applicata, acceleratori agri-food.\n\nCompetenze chiave che inizia a costruire da qui: biotecnologie alimentari · biochimica · sostenibilità · life cycle assessment · food tech\n\n*\"Non sto sostituendo il cibo. Sto reinventando come lo produciamo.\"*"
       },
       "clil_termini": [
         {
@@ -1466,7 +1861,33 @@
           "ipa": "fuːd weɪst"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Synthetic Food Developer",
+          "orizzonte": "2035",
+          "descrizione_breve": "Riduce l'impatto ambientale della produzione alimentare sviluppando proteine alternative, carne coltivata e ingredienti biotech che richiedono meno terra, acqua ed energia rispetto all'allevamento.",
+          "competenze_chiave": [
+            "biotecnologie alimentari",
+            "biochimica",
+            "sostenibilità",
+            "life cycle assessment",
+            "food tech"
+          ]
+        },
+        {
+          "titolo": "Vertical Farmer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Coltiva in ambienti chiusi controllati, usando il 95% di acqua in meno rispetto all'agricoltura tradizionale, senza pesticidi e con raccolti tutto l'anno, indipendentemente dal clima.",
+          "competenze_chiave": [
+            "idroponica e aeroponica",
+            "risparmio idrico",
+            "automazione",
+            "IoT",
+            "sostenibilità alimentare"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ALI-2-05",
@@ -1491,7 +1912,7 @@
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali"
+          "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali. Progettare azioni anti-spreco richiede pianificazione e autovalutazione: lo studente impara a tradurre intenzioni in comportamenti misurabili, competenza centrale dell'imparare a imparare."
         },
         "EV": {
           "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile; SDG 13 — Lotta al cambiamento climatico",
@@ -1540,7 +1961,8 @@
           "HACCP",
           "etichettatura",
           "analisi nutrizionale"
-        ]
+        ],
+        "testo": "**Packaging Designer sostenibile**\n\nIl Packaging Designer tradizionale progettava imballaggi belli e funzionali. Il Packaging Designer sostenibile — figura in crescita rapida nel settore alimentare — deve fare tutto questo e in più:\n- Minimizzare la quantità di materiale usato senza perdere la funzione di protezione.\n- Scegliere materiali con il minore impatto ambientale complessivo (inclusa la fine vita).\n- Garantire la riciclabilità nell'infrastruttura di raccolta del Paese di destinazione.\n- Rispettare le normative sempre più stringenti dell'UE.\n- Comunicare al consumatore in modo chiaro e non ingannevole.\n\nLavora in: agenzie di design, reparti R&D di aziende alimentari, startup del packaging sostenibile.\n\nCompetenze chiave che inizia a costruire da qui: chimica dei materiali · normativa ambientale UE · analisi del ciclo di vita (LCA) · design thinking · conoscenza dei sistemi di raccolta e riciclo\n\n*\"Il mio packaging migliore è quello che non si nota — perché non c'è niente di superfluo.\"*"
       },
       "clil_termini": [
         {
@@ -1564,7 +1986,33 @@
           "ipa": "fuːd weɪst"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Microbiome Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Analizza i microorganismi presenti negli alimenti e nell'intestino per garantire la sicurezza alimentare, sviluppare probiotici mirati e prevenire contaminazioni nella filiera produttiva.",
+          "competenze_chiave": [
+            "microbiologia alimentare",
+            "HACCP",
+            "analisi di laboratorio",
+            "biologia molecolare",
+            "sicurezza alimentare"
+          ]
+        },
+        {
+          "titolo": "Blockchain Legal Consultant",
+          "orizzonte": "2028",
+          "descrizione_breve": "Garantisce la tracciabilità legale e la trasparenza della filiera alimentare usando smart contract su blockchain, facilitando la conformità normativa e la lotta alle frodi.",
+          "competenze_chiave": [
+            "blockchain",
+            "diritto contrattuale",
+            "tracciabilità alimentare",
+            "smart contract",
+            "GDPR"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ALI-2-06",
@@ -1589,7 +2037,7 @@
         },
         "LC": {
           "ref": "Social / Cultural awareness",
-          "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità"
+          "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità. Il confronto tra sistemi alimentari di culture diverse allena la decentrazione cognitiva — lo studente impara a uscire dal proprio frame interpretativo e a riconoscere la logica interna di sistemi diversi dal proprio."
         },
         "EV": {
           "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
@@ -1629,7 +2077,7 @@
         "durata_sec": 55
       },
       "professione_futura": {
-        "titolo": "Food Technologist",
+        "titolo": "3D Food Printing Technician",
         "orizzonte": "2030",
         "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
         "competenze_chiave": [
@@ -1637,7 +2085,8 @@
           "logistica alimentare",
           "certificazioni DOP/IGP",
           "sostenibilità"
-        ]
+        ],
+        "testo": "**3D Food Printing Technician**\n\nApplica le tecnologie additive alla trasformazione e presentazione degli alimenti, creando forme personalizzate e prodotti funzionali per ristorazione, industria e dietetica specializzata.\n\nDove lavora: ospedali con programmi di dietoterapia avanzata, alta ristorazione sperimentale, centri di formazione culinaria, aziende di ingredienti funzionali.\n\nCompetenze chiave che inizia a costruire da qui: tecnologie additive alimentari · progettazione CAD · biochimica alimentare · nutrizione · innovazione di prodotto\n\n*\"Personalizzare un pasto per 200 pazienti con esigenze diverse? Con la stampa 3D alimentare, è routine.\"*"
       },
       "clil_termini": [
         {
@@ -1661,7 +2110,33 @@
           "ipa": "fuːd weɪst"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "3D Food Printing Technician",
+          "orizzonte": "2030",
+          "descrizione_breve": "Applica le tecnologie additive alla trasformazione e presentazione degli alimenti, creando forme personalizzate e prodotti funzionali per ristorazione, industria e dietetica specializzata.",
+          "competenze_chiave": [
+            "tecnologie additive alimentari",
+            "progettazione CAD",
+            "biochimica alimentare",
+            "nutrizione",
+            "innovazione di prodotto"
+          ]
+        },
+        {
+          "titolo": "Packaging Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta confezioni alimentari che proteggono il prodotto, raccontano la storia del brand e minimizzano l'impatto ambientale, usando materiali sostenibili e design attraente.",
+          "competenze_chiave": [
+            "design del packaging",
+            "storytelling visivo",
+            "sostenibilità dei materiali",
+            "marketing",
+            "normativa alimentare"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-AMB-2-01",
@@ -1686,7 +2161,7 @@
         },
         "LC": {
           "ref": "Thinking / Problem solving",
-          "nota": "Lo studente affronta la sfida strutturale (spaghetti/marshmallow) con approccio metodico"
+          "nota": "Lo studente affronta la sfida strutturale con approccio metodico, iterando la soluzione in base ai feedback. La challenge (spaghetti/marshmallow) è metacognizione in azione: lo studente sperimenta il proprio processo di problem solving, ne identifica i punti critici e li migliora nel ciclo successivo — imparare a imparare attraverso l'errore."
         },
         "EV": {
           "ref": "SDG 11 — Città e comunità sostenibili",
@@ -1722,7 +2197,7 @@
         "durata_sec": 142
       },
       "professione_futura": {
-        "titolo": "Ingegnere strutturale per la rigenerazione urbana",
+        "titolo": "Architetto d'Interni",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
         "competenze_chiave": [
@@ -1730,7 +2205,8 @@
           "pianificazione urbana",
           "mobilità sostenibile",
           "Nature-Based Solutions"
-        ]
+        ],
+        "testo": "**Architetto d'Interni**\n\nProgetta gli spazi interni di luoghi privati, commerciali ed espositivi, curando aspetti pratici e funzionali del vivere lo spazio: dimensioni, qualità della luce, salubrità e comfort degli ambienti.\n\nDove lavora: studi di architettura e interior design, aziende di arredamento contract, strutture alberghiere e catene retail, studi di progettazione residenziale.\n\nCompetenze chiave che inizia a costruire da qui: progettazione architettonica · ergonomia · materiali e finiture · CAD · normativa edilizia\n\n*\"Lo spazio non è neutro. Ogni scelta di proporzioni, luce e materiale cambia come ci sentiamo.\"*"
       },
       "clil_termini": [
         {
@@ -1754,7 +2230,33 @@
           "ipa": "ˈɜːbən ˈplænɪŋ"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Architetto d'Interni",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta gli spazi interni di luoghi privati, commerciali ed espositivi, curando aspetti pratici e funzionali del vivere lo spazio: dimensioni, qualità della luce, salubrità e comfort degli ambienti.",
+          "competenze_chiave": [
+            "progettazione architettonica",
+            "ergonomia",
+            "materiali e finiture",
+            "CAD",
+            "normativa edilizia"
+          ]
+        },
+        {
+          "titolo": "Interior Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta spazi interni abitativi e commerciali occupandosi di arredi, illuminazione e funzionalità, dominando i temi degli spazi e delle loro funzioni per rispondere alle esigenze del cliente.",
+          "competenze_chiave": [
+            "progettazione d'interni",
+            "arredamento",
+            "illuminotecnica",
+            "CAD 3D",
+            "ergonomia"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-AMB-2-02",
@@ -1779,7 +2281,7 @@
         },
         "LC": {
           "ref": "Self-management / Responsible decisions",
-          "nota": "Lo studente assume responsabilità nelle scelte energetiche domestiche quotidiane"
+          "nota": "Lo studente assume responsabilità nelle scelte energetiche domestiche quotidiane. Calcolare i consumi reali è un esercizio di auto-monitoraggio e di imparare a imparare: lo studente raccoglie dati sul proprio comportamento, li analizza e riformula decisioni in base ai risultati."
         },
         "EV": {
           "ref": "SDG 7 — Energia pulita e accessibile; SDG 13 — Lotta al cambiamento climatico",
@@ -1818,7 +2320,7 @@
         "durata_sec": 135
       },
       "professione_futura": {
-        "titolo": "Energy manager domestico e di comunità",
+        "titolo": "Green Building Architect",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
         "competenze_chiave": [
@@ -1826,7 +2328,8 @@
           "efficienza energetica",
           "materiali bio-based",
           "BIM"
-        ]
+        ],
+        "testo": "**Green Building Architect**\n\nProgetta edifici eco-sostenibili usando materiali ecocompatibili, sistemi di energia rinnovabile e certificazioni LEED o BREEAM, riducendo l'impatto ambientale delle costruzioni.\n\nDove lavora: studi di architettura sostenibile, enti di certificazione LEED e BREEAM, imprese edili innovative, uffici tecnici comunali e regionali.\n\nCompetenze chiave che inizia a costruire da qui: bioarchitettura · certificazioni LEED/BREEAM · software BIM · materiali ecocompatibili · efficienza energetica\n\n*\"Il migliore edificio green è quello che consuma così poco da quasi non accorgersi che esiste.\"*"
       },
       "clil_termini": [
         {
@@ -1850,7 +2353,33 @@
           "ipa": "ˈɜːbən ˈplænɪŋ"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Green Building Architect",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta edifici eco-sostenibili usando materiali ecocompatibili, sistemi di energia rinnovabile e certificazioni LEED o BREEAM, riducendo l'impatto ambientale delle costruzioni.",
+          "competenze_chiave": [
+            "bioarchitettura",
+            "certificazioni LEED/BREEAM",
+            "software BIM",
+            "materiali ecocompatibili",
+            "efficienza energetica"
+          ]
+        },
+        {
+          "titolo": "Designer and Ecospace Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Ridisegna spazi costruiti riducendo gli ostacoli visivi, ristrutturando il patrimonio materiale con materiali a basso impatto e creando ambienti sostenibili per le generazioni future.",
+          "competenze_chiave": [
+            "eco-design costruttivo",
+            "materiali sostenibili",
+            "ergonomia ambientale",
+            "progettazione BIM",
+            "normativa energetica"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-AMB-2-03",
@@ -1875,7 +2404,7 @@
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente si riconosce come abitante attivo e responsabile della propria comunità urbana"
+          "nota": "Lo studente si riconosce come abitante attivo e responsabile della propria comunità urbana. Progettare proposte per la propria città richiede di attivare creatività e pensiero critico in parallelo — competenza metacognitiva che distingue la fase di ideazione dalla fase di valutazione, entrambe componenti dell'imparare a imparare."
         },
         "EV": {
           "ref": "SDG 11 — Città e comunità sostenibili",
@@ -1913,7 +2442,7 @@
         "durata_sec": 141
       },
       "professione_futura": {
-        "titolo": "Urbanista per la città del quarto d'ora",
+        "titolo": "Smart Grid Analyst",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
         "competenze_chiave": [
@@ -1921,7 +2450,8 @@
           "pianificazione urbana",
           "mobilità sostenibile",
           "Nature-Based Solutions"
-        ]
+        ],
+        "testo": "**Smart Grid Analyst**\n\nGestisce reti elettriche intelligenti integrate negli edifici, ottimizzando la distribuzione e l'uso dell'energia attraverso dati in tempo reale e algoritmi predittivi.\n\nDove lavora: gestori di reti elettriche nazionali, aziende di energy management, utility municipali, centri di ricerca sull'energia.\n\nCompetenze chiave che inizia a costruire da qui: ingegneria elettrica · software SCADA · data analysis · IoT · AI applicata all'energia\n\n*\"La rete elettrica intelligente non trasporta solo energia. Trasporta informazioni.\"*"
       },
       "clil_termini": [
         {
@@ -1945,7 +2475,33 @@
           "ipa": "ˈɜːbən ˈplænɪŋ"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Smart Grid Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce reti elettriche intelligenti integrate negli edifici, ottimizzando la distribuzione e l'uso dell'energia attraverso dati in tempo reale e algoritmi predittivi.",
+          "competenze_chiave": [
+            "ingegneria elettrica",
+            "software SCADA",
+            "data analysis",
+            "IoT",
+            "AI applicata all'energia"
+          ]
+        },
+        {
+          "titolo": "Energy Efficiency Advisor",
+          "orizzonte": "2028",
+          "descrizione_breve": "Analizza i consumi degli impianti elettrici, termici e idraulici di un edificio e progetta interventi per ridurre gli sprechi energetici, guidando le certificazioni di efficienza.",
+          "competenze_chiave": [
+            "auditing energetico",
+            "termotecnica",
+            "normativa CEE",
+            "certificazioni APE",
+            "domotica"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-AMB-2-04",
@@ -1970,7 +2526,7 @@
         },
         "LC": {
           "ref": "Thinking / Systems thinking",
-          "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita"
+          "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita. Valutare materiali con criteri multipli (prestazioni, costo, impatto ambientale) è un esercizio di pensiero multi-criterio trasferibile a qualsiasi scelta complessa: imparare a pesare variabili in conflitto."
         },
         "EV": {
           "ref": "SDG 11 — Città sostenibili; SDG 13 — Lotta al cambiamento climatico",
@@ -2009,7 +2565,7 @@
         "durata_sec": 59
       },
       "professione_futura": {
-        "titolo": "Ingegnere dell'efficienza energetica degli edifici (Energy Performance Engineer)",
+        "titolo": "Smart City Planner",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
         "competenze_chiave": [
@@ -2017,7 +2573,8 @@
           "efficienza energetica",
           "materiali bio-based",
           "BIM"
-        ]
+        ],
+        "testo": "**Smart City Planner**\n\nPianifica città intelligenti integrando IoT urbano, mobilità sostenibile, gestione energetica e servizi digitali ai cittadini, usando GIS e big data per decisioni basate sull'evidenza.\n\nDove lavora: comuni e città metropolitane, società di consulenza urbana, agenzie di sviluppo territoriale, startup smart city.\n\nCompetenze chiave che inizia a costruire da qui: urbanistica · IoT urbano · GIS · pianificazione energetica · data-driven governance\n\n*\"I dati non costruiscono la città. Ma senza dati costruiamo la città sbagliata.\"*"
       },
       "clil_termini": [
         {
@@ -2041,7 +2598,33 @@
           "ipa": "ˈɜːbən ˈplænɪŋ"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Smart City Planner",
+          "orizzonte": "2030",
+          "descrizione_breve": "Pianifica città intelligenti integrando IoT urbano, mobilità sostenibile, gestione energetica e servizi digitali ai cittadini, usando GIS e big data per decisioni basate sull'evidenza.",
+          "competenze_chiave": [
+            "urbanistica",
+            "IoT urbano",
+            "GIS",
+            "pianificazione energetica",
+            "data-driven governance"
+          ]
+        },
+        {
+          "titolo": "Urban Sensor Network Manager",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce le reti di sensori installate nelle infrastrutture urbane per raccogliere dati su traffico, qualità dell'aria e consumi, alimentando dashboard e sistemi decisionali in tempo reale.",
+          "competenze_chiave": [
+            "reti IoT",
+            "data visualization",
+            "urban analytics",
+            "telecomunicazioni",
+            "manutenzione infrastrutture"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-AMB-2-05",
@@ -2066,7 +2649,7 @@
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini"
+          "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini. Analizzare dilemmi con valori in conflitto allena il pensiero dilemmatico: lo studente impara a stare nell'incertezza, a costruire argomentazioni fondate e a riconoscere che non sempre esiste una risposta unica — competenza adulta dell'imparare a imparare."
         },
         "EV": {
           "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Innovazione",
@@ -2105,7 +2688,7 @@
         "durata_sec": 52
       },
       "professione_futura": {
-        "titolo": "Ingegnere ambientale — specializzazione risorse idriche",
+        "titolo": "Mobility as a Service (MaaS) Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
         "competenze_chiave": [
@@ -2113,7 +2696,8 @@
           "pianificazione urbana",
           "mobilità sostenibile",
           "Nature-Based Solutions"
-        ]
+        ],
+        "testo": "**Mobility as a Service (MaaS) Designer**\n\nProgetta sistemi integrati di mobilità urbana sostenibile che combinano trasporto pubblico, bike sharing, car sharing e micro-mobilità in un'unica piattaforma digitale accessibile a tutti.\n\nDove lavora: aziende di trasporto pubblico locale, startup di mobilità urbana, comuni e regioni, operatori di sharing mobility.\n\nCompetenze chiave che inizia a costruire da qui: urbanistica · UX design · gestione mobilità · app design · sostenibilità dei trasporti\n\n*\"Non vendo mezzi di trasporto. Vendo la libertà di spostarsi senza possedere un'auto.\"*"
       },
       "clil_termini": [
         {
@@ -2137,7 +2721,33 @@
           "ipa": "ˈɜːbən ˈplænɪŋ"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Mobility as a Service (MaaS) Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta sistemi integrati di mobilità urbana sostenibile che combinano trasporto pubblico, bike sharing, car sharing e micro-mobilità in un'unica piattaforma digitale accessibile a tutti.",
+          "competenze_chiave": [
+            "urbanistica",
+            "UX design",
+            "gestione mobilità",
+            "app design",
+            "sostenibilità dei trasporti"
+          ]
+        },
+        {
+          "titolo": "Habitat Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Studia e progetta strutture fisiche naturali e artificiali, dagli spazi verdi agli oggetti di uso quotidiano, secondo diverse scale di intervento per migliorare ambienti urbani e periurbani.",
+          "competenze_chiave": [
+            "architettura paesaggistica",
+            "bioingegneria",
+            "design ambientale",
+            "sostenibilità",
+            "spazi verdi"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-AMB-2-06",
@@ -2162,7 +2772,7 @@
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio"
+          "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio. Studiare i rischi del proprio territorio è apprendimento situato: lo studente collega concetti astratti (sismicità, idrogeologia, rischio alluvionale) a luoghi concreti, rinforzando la memoria con l'ancoraggio geografico e personale."
         },
         "EV": {
           "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
@@ -2202,7 +2812,7 @@
         "durata_sec": 56
       },
       "professione_futura": {
-        "titolo": "Urban Data Analyst / Analista di dati urbani",
+        "titolo": "Geo-engineer Ambientale",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
         "competenze_chiave": [
@@ -2210,7 +2820,8 @@
           "efficienza energetica",
           "materiali bio-based",
           "BIM"
-        ]
+        ],
+        "testo": "**Geo-engineer Ambientale**\n\nAnalizza dati geospaziali e caratteristiche del territorio per pianificare interventi di tutela ambientale, prevenzione del rischio geologico e ripristino degli ecosistemi.\n\nDove lavora: agenzie ambientali regionali (ARPA), studi di geologia e ingegneria ambientale, parchi naturali, protezione civile.\n\nCompetenze chiave che inizia a costruire da qui: geologia · GIS e telerilevamento · ingegneria ambientale · analisi geospaziale · modellazione territoriale\n\n*\"Il territorio racconta la sua storia. Il mio lavoro è capirla prima che diventi un'emergenza.\"*"
       },
       "clil_termini": [
         {
@@ -2234,7 +2845,33 @@
           "ipa": "ˈɜːbən ˈplænɪŋ"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Geo-engineer Ambientale",
+          "orizzonte": "2030",
+          "descrizione_breve": "Analizza dati geospaziali e caratteristiche del territorio per pianificare interventi di tutela ambientale, prevenzione del rischio geologico e ripristino degli ecosistemi.",
+          "competenze_chiave": [
+            "geologia",
+            "GIS e telerilevamento",
+            "ingegneria ambientale",
+            "analisi geospaziale",
+            "modellazione territoriale"
+          ]
+        },
+        {
+          "titolo": "Climate Risk Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Valuta i rischi climatici su territori, infrastrutture e filiere produttive, fornendo analisi quantitative per orientare politiche di adattamento e strategie ESG aziendali.",
+          "competenze_chiave": [
+            "climatologia",
+            "risk analysis",
+            "ESG",
+            "data science",
+            "modellazione climatica"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-2-01",
@@ -2299,7 +2936,7 @@
         "durata_sec": 146
       },
       "professione_futura": {
-        "titolo": "Sviluppatore educativo (EdTech developer)",
+        "titolo": "Data Trust Officer",
         "orizzonte": "2030",
         "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
         "competenze_chiave": [
@@ -2307,7 +2944,8 @@
           "media literacy",
           "cybersecurity base",
           "formazione digitale"
-        ]
+        ],
+        "testo": "**Data Trust Officer**\n\nGoverna l'uso etico e sicuro dei dati nelle reti aziendali, garantendo la conformità al GDPR, la protezione della privacy e la fiducia degli utenti nelle piattaforme digitali.\n\nDove lavora: grandi aziende con portafogli di dati, enti pubblici, autorità garanti, studi legali specializzati in privacy e compliance.\n\nCompetenze chiave che inizia a costruire da qui: governance dei dati · GDPR · cyberlaw · protezione dati · etica digitale\n\n*\"I dati non sono il nuovo petrolio. Sono persone. E le persone hanno diritti.\"*"
       },
       "clil_termini": [
         {
@@ -2331,7 +2969,33 @@
           "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Data Trust Officer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Governa l'uso etico e sicuro dei dati nelle reti aziendali, garantendo la conformità al GDPR, la protezione della privacy e la fiducia degli utenti nelle piattaforme digitali.",
+          "competenze_chiave": [
+            "governance dei dati",
+            "GDPR",
+            "cyberlaw",
+            "protezione dati",
+            "etica digitale"
+          ]
+        },
+        {
+          "titolo": "Web Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta siti web e piattaforme interattive curandosi della progettazione visiva, della messa a punto delle immagini e del rispetto dei principi di usabilità e accessibilità.",
+          "competenze_chiave": [
+            "HTML/CSS",
+            "UX/UI design",
+            "accessibilità web",
+            "grafica web",
+            "CMS"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-2-02",
@@ -2359,8 +3023,8 @@
           "nota": "Lo studente comprende come la propria presenza digitale impatta sugli altri"
         },
         "EV": {
-          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-          "nota": "La privacy digitale è diritto fondamentale in una democrazia"
+          "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D2 (privacy/dati personali) e Traguardo D3 (prevenzione cyberbullismo); L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "Doppio aggancio ai Traguardi prescrittivi del D.M. 183/2024: D2 'privacy e tutela dei dati e dell'identità personale' e D3 'prevenire e contrastare il cyberbullismo'. La gestione consapevole dell'identità digitale è precondizione per entrambi i traguardi."
         }
       },
       "outputApp": {
@@ -2377,6 +3041,7 @@
         "GDPR",
         "dati personali",
         "identità digitale",
+        "cyberbullismo",
         "classe-2",
         "DIG"
       ],
@@ -2389,12 +3054,11 @@
         "avanzato": "Richiedere formalmente la copia dei propri dati a una piattaforma (es. Google Takeout) e analizzare cosa ha raccolto."
       },
       "hook_audio": {
-        "durata_min": 2.4,
-        "durata_secondi": 237,
-        "durata_sec": 142
+        "durata_min": 4,
+        "durata_secondi": 237
       },
       "professione_futura": {
-        "titolo": "Data Protection Officer (DPO) — Responsabile della Protezione dei Dati",
+        "titolo": "AI Brand Strategist",
         "orizzonte": "2030",
         "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
         "competenze_chiave": [
@@ -2402,31 +3066,74 @@
           "analisi vulnerabilità",
           "GDPR",
           "ethical hacking"
-        ]
+        ],
+        "testo": "**AI Brand Strategist**\n\nSviluppa strategie di marketing digitale e brand identity potenziando la creatività umana con strumenti di AI generativa, ottimizzando la comunicazione sui canali social e digitali.\n\nDove lavora: agenzie creative e di comunicazione, dipartimenti marketing di grandi aziende, startup media tech, brand che integrano AI nella comunicazione.\n\nCompetenze chiave che inizia a costruire da qui: marketing digitale · AI generativa · data strategy · comunicazione visiva · social media marketing\n\n*\"L'AI genera contenuti infiniti. Il mio lavoro è decidere quale vale la pena pubblicare.\"*"
       },
       "clil_termini": [
         {
-          "italiano": "rete",
-          "inglese": "network",
-          "ipa": "ˈnetwɜːk"
+          "it": "dato personale",
+          "en": "personal data",
+          "def": "Qualsiasi informazione che permette di identificare direttamente o indirettamente una persona fisica"
         },
         {
-          "italiano": "privacy",
-          "inglese": "privacy",
-          "ipa": "ˈprɪvəsi"
+          "it": "GDPR",
+          "en": "GDPR (General Data Protection Regulation)",
+          "def": "Regolamento europeo del 2018 che tutela i dati personali dei cittadini UE e regola il loro trattamento"
         },
         {
-          "italiano": "algoritmo",
-          "inglese": "algorithm",
-          "ipa": "ˈælɡərɪðəm"
+          "it": "cookie",
+          "en": "cookie",
+          "def": "Piccolo file di testo salvato dal browser per ricordare preferenze, sessioni di login e comportamento di navigazione"
         },
         {
-          "italiano": "sicurezza informatica",
-          "inglese": "cybersecurity",
-          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+          "it": "identità digitale",
+          "en": "digital identity",
+          "def": "Insieme di informazioni online (profili social, attività, dati) che costruiscono la presenza di una persona in rete"
+        },
+        {
+          "it": "cyberbullismo",
+          "en": "cyberbullying",
+          "def": "Comportamento aggressivo, intenzionale e ripetuto attraverso strumenti digitali ai danni di una persona"
+        },
+        {
+          "it": "impronta digitale",
+          "en": "digital footprint",
+          "def": "Traccia permanente di dati lasciata da ogni azione online: ricerche, acquisti, post, navigazione"
+        },
+        {
+          "it": "autenticazione",
+          "en": "authentication",
+          "def": "Processo di verifica dell'identità di un utente tramite password, PIN, biometria o autenticazione a due fattori"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "I nostri dati in rete: chi li raccoglie, come ci protegiamo — simulazione di una verifica GDPR per un'app fittizia (Tecnologia + Italiano + Educazione Civica)",
+      "sdg_principale": 16,
+      "professioni_future": [
+        {
+          "titolo": "AI Brand Strategist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Sviluppa strategie di marketing digitale e brand identity potenziando la creatività umana con strumenti di AI generativa, ottimizzando la comunicazione sui canali social e digitali.",
+          "competenze_chiave": [
+            "marketing digitale",
+            "AI generativa",
+            "data strategy",
+            "comunicazione visiva",
+            "social media marketing"
+          ]
+        },
+        {
+          "titolo": "Digital Strategist",
+          "orizzonte": "2028",
+          "descrizione_breve": "Definisce la corretta strategia digitale per aziende e brand, sviluppando piani di marketing su misura e implementando strategie di comunicazione per i vari canali digitali.",
+          "competenze_chiave": [
+            "digital marketing",
+            "social media strategy",
+            "analisi dati",
+            "branding",
+            "SEO/SEM"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-2-03",
@@ -2496,7 +3203,7 @@
         "durata_sec": 61
       },
       "professione_futura": {
-        "titolo": "DevOps Engineer",
+        "titolo": "Digital and Innovation Manager",
         "orizzonte": "2030",
         "descrizione_breve": "Gestisce i sistemi operativi server e cloud per garantire che le applicazioni web funzionino in modo efficiente, sicuro e scalabile — competenza che inizia dalla comprensione del SO.",
         "competenze_chiave": [
@@ -2504,7 +3211,8 @@
           "gestione processi e memoria",
           "containerizzazione (Docker)",
           "automazione infrastrutturale"
-        ]
+        ],
+        "testo": "**Digital and Innovation Manager**\n\nGestisce l'attività aziendale in termini di processi digitali, stimolando la ricerca e favorendo il consolidamento di innovazioni per lo sviluppo competitivo dell'organizzazione.\n\nDove lavora: PMI in digitalizzazione, società di consulenza IT e management, filiali italiane di multinazionali, enti pubblici in innovazione.\n\nCompetenze chiave che inizia a costruire da qui: digital transformation · gestione software aziendale · processi digitali · innovation management · change management\n\n*\"Digitalizzare non significa comprare software. Significa ridisegnare come si lavora.\"*"
       },
       "sdg_principale": 9,
       "clil_termini": [
@@ -2529,7 +3237,33 @@
           "pronuncia_ipa": "/ræm/"
         }
       ],
-      "uda_collegata": null
+      "uda_collegata": null,
+      "professioni_future": [
+        {
+          "titolo": "Digital and Innovation Manager",
+          "orizzonte": "2028",
+          "descrizione_breve": "Gestisce l'attività aziendale in termini di processi digitali, stimolando la ricerca e favorendo il consolidamento di innovazioni per lo sviluppo competitivo dell'organizzazione.",
+          "competenze_chiave": [
+            "digital transformation",
+            "gestione software aziendale",
+            "processi digitali",
+            "innovation management",
+            "change management"
+          ]
+        },
+        {
+          "titolo": "Computer Animation and Visual Effects",
+          "orizzonte": "2028",
+          "descrizione_breve": "Usa software professionali per produrre animazioni digitali e effetti visivi per cinema, TV e videogiochi, combinando conoscenze tecniche, culturali e creative.",
+          "competenze_chiave": [
+            "software 3D (Maya, Blender)",
+            "animazione digitale",
+            "VFX",
+            "storytelling",
+            "tecnica e creatività"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-2-04",
@@ -2557,8 +3291,8 @@
           "nota": "Lo studente analizza messaggi sospetti, siti web e richieste di dati con pensiero critico per identificare tentativi di manipolazione"
         },
         "EV": {
-          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-          "nota": "La sicurezza informatica è diritto e responsabilità civica: proteggere la propria identità digitale contribuisce a proteggere anche quella degli altri"
+          "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D2 (tutela dati/identità); L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "Il D.M. 183/2024 prescrive la 'tutela dei dati e dell'identità personale' come traguardo di Cittadinanza digitale (D2). La cifratura e la sicurezza informatica sono gli strumenti tecnici che rendono concretamente possibile questo diritto civico."
         }
       },
       "outputApp": {
@@ -2594,13 +3328,12 @@
         "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
         "oggetto_reale": "un messaggio cifrato",
         "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-        "durata_min": 1,
+        "durata_min": 0.9,
         "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
-        "durata_secondi": 56,
-        "durata_sec": 59
+        "durata_secondi": 56
       },
       "professione_futura": {
-        "titolo": "Cybersecurity Analyst",
+        "titolo": "Esperto in Cybersecurity",
         "orizzonte": "2030",
         "descrizione_breve": "Protegge sistemi informatici e dati aziendali da attacchi, analizza le vulnerabilità e progetta difese — una delle professioni con maggiore carenza di profili in Europa.",
         "competenze_chiave": [
@@ -2608,7 +3341,8 @@
           "analisi delle vulnerabilità",
           "risposta agli incidenti",
           "ethical hacking"
-        ]
+        ],
+        "testo": "**Esperto in Cybersecurity**\n\nProtegge sistemi informatici, reti e dati personali da attacchi informatici, usando crittografia, analisi del rischio e normative GDPR per garantire sicurezza e conformità.\n\nDove lavora: SOC (Security Operations Center) aziendali, società di consulenza in sicurezza informatica, banche e assicurazioni, pubblica amministrazione.\n\nCompetenze chiave che inizia a costruire da qui: crittografia · analisi del rischio · normative GDPR · ethical hacking · sicurezza delle reti\n\n*\"Non proteggo i computer. Proteggo le persone che ci sono dietro.\"*"
       },
       "sdg_principale": 16,
       "clil_termini": [
@@ -2631,9 +3365,40 @@
           "italiano": "malware",
           "inglese": "malware",
           "pronuncia_ipa": "/ˈmælweər/"
+        },
+        {
+          "italiano": "crittografia",
+          "inglese": "cryptography",
+          "pronuncia_ipa": "/krɪpˈtɒɡrəfi/"
         }
       ],
-      "uda_collegata": null
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Esperto in Cybersecurity",
+          "orizzonte": "2030",
+          "descrizione_breve": "Protegge sistemi informatici, reti e dati personali da attacchi informatici, usando crittografia, analisi del rischio e normative GDPR per garantire sicurezza e conformità.",
+          "competenze_chiave": [
+            "crittografia",
+            "analisi del rischio",
+            "normative GDPR",
+            "ethical hacking",
+            "sicurezza delle reti"
+          ]
+        },
+        {
+          "titolo": "Digital Identity Curator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce l'identità digitale e la reputazione online di persone e aziende, proteggendo i dati personali e costruendo una presenza digitale coerente, sicura e professionale.",
+          "competenze_chiave": [
+            "digital reputation",
+            "GDPR",
+            "sicurezza informatica",
+            "personal branding",
+            "privacy by design"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-2-05",
@@ -2693,10 +3458,11 @@
       "hook_audio": {
         "titolo": "La notifica che non riesci a ignorare",
         "script": "Sai quella sensazione quando senti il telefono vibrare e non riesci a non guardare? Non sei debole — è progettato apposta. Ogni notifica è un piccolo gancio. Ma tu puoi imparare a scegliere: quando connetterti e quando no. Essere padroni della tecnologia, non il contrario.",
-        "durata_sec": 30
+        "durata_sec": 186,
+        "durata_min": "3:05"
       },
       "professione_futura": {
-        "titolo": "Digital Wellbeing Specialist / Educatore digitale",
+        "titolo": "Digital Wellness Advisor",
         "orizzonte": "2030",
         "descrizione_breve": "Aiuta individui e organizzazioni a sviluppare un rapporto sano con la tecnologia, progettando ambienti digitali e programmi educativi che promuovono il benessere.",
         "competenze_chiave": [
@@ -2704,7 +3470,8 @@
           "Design etico delle interfacce",
           "Educazione emotiva",
           "Mediazione dei conflitti online"
-        ]
+        ],
+        "testo": "**Digital Wellness Advisor**\n\nAiuta persone e organizzazioni a sviluppare un rapporto sano e consapevole con il digitale, bilanciando produttività e benessere attraverso coaching, educazione ai media e mindfulness.\n\nDove lavora: scuole e università, aziende con programmi di welfare digitale, ospedali e cliniche psicologiche, piattaforme di benessere digitale.\n\nCompetenze chiave che inizia a costruire da qui: coaching digitale · educazione ai media · mindfulness · psicologia · salute digitale\n\n*\"La tecnologia è lo strumento più potente della storia. Usarla bene richiede consapevolezza, non solo competenza.\"*"
       },
       "clil_termini": {
         "it": [
@@ -2736,6 +3503,32 @@
         "Scienze — neurologia del reward system e dopamina",
         "Statistica — analisi del proprio uso digitale con dati reali",
         "Biologia — effetti degli schermi sul ritmo circadiano e sul sonno"
+      ],
+      "professioni_future": [
+        {
+          "titolo": "Digital Wellness Advisor",
+          "orizzonte": "2030",
+          "descrizione_breve": "Aiuta persone e organizzazioni a sviluppare un rapporto sano e consapevole con il digitale, bilanciando produttività e benessere attraverso coaching, educazione ai media e mindfulness.",
+          "competenze_chiave": [
+            "coaching digitale",
+            "educazione ai media",
+            "mindfulness",
+            "psicologia",
+            "salute digitale"
+          ]
+        },
+        {
+          "titolo": "Tech-Free Time Facilitator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta esperienze immersive che permettono alle persone di disconnettersi dalla tecnologia, riscoprire il contatto umano e sviluppare resilienza emotiva in un mondo iper-connesso.",
+          "competenze_chiave": [
+            "psicologia",
+            "design esperienziale",
+            "pedagogia",
+            "mindfulness",
+            "benessere digitale"
+          ]
+        }
       ]
     },
     {
@@ -2761,7 +3554,7 @@
         },
         "LC": {
           "ref": "Thinking / Problem solving",
-          "nota": "Lo studente risolve problemi di corrispondenza tra le viste applicando le regole di proiezione"
+          "nota": "Lo studente risolve problemi di corrispondenza tra le viste applicando le regole di proiezione ortogonale. Questa risoluzione richiede di controllare la coerenza tra proiezioni diverse — lo studente sviluppa l'abitudine a verificare il proprio lavoro prima di considerarlo concluso: metacognizione applicata al disegno tecnico."
         },
         "EV": {
           "ref": "SDG 4 — Istruzione di qualità",
@@ -2800,7 +3593,7 @@
         "durata_sec": 134
       },
       "professione_futura": {
-        "titolo": "Progettista meccanico CAD",
+        "titolo": "Modellista e Prototipista Industriale 4.0",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta edifici e spazi con software 3D integrati e modelli informativi.",
         "competenze_chiave": [
@@ -2808,7 +3601,8 @@
           "AutoCAD",
           "Revit",
           "disegno tecnico avanzato"
-        ]
+        ],
+        "testo": "**Modellista e Prototipista Industriale 4.0**\n\nConiuga competenze di modellistica tradizionale con strumenti CAD avanzati per creare prototipi industriali precisi nei settori manifatturiero, automobilistico e della moda.\n\nDove lavora: aziende manifatturiere con produzione in serie, centri di prototipazione rapida, reparti R&D industriali, studi di progettazione meccanica.\n\nCompetenze chiave che inizia a costruire da qui: CAD 2D/3D · prototipazione industriale · modellistica · Industria 4.0 · progettazione tecnica\n\n*\"Il prototipo racconta più di mille riunioni. Finché non lo tocchi con mano, non sai davvero come funziona.\"*"
       },
       "clil_termini": [
         {
@@ -2832,7 +3626,33 @@
           "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
         }
       ],
-      "uda_collegata": "UDA-2 — La Città che Vorrei"
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
+      "professioni_future": [
+        {
+          "titolo": "Modellista e Prototipista Industriale 4.0",
+          "orizzonte": "2028",
+          "descrizione_breve": "Coniuga competenze di modellistica tradizionale con strumenti CAD avanzati per creare prototipi industriali precisi nei settori manifatturiero, automobilistico e della moda.",
+          "competenze_chiave": [
+            "CAD 2D/3D",
+            "prototipazione industriale",
+            "modellistica",
+            "Industria 4.0",
+            "progettazione tecnica"
+          ]
+        },
+        {
+          "titolo": "Designer di Prodotto",
+          "orizzonte": "2028",
+          "descrizione_breve": "Usa il CAD come strumento principale per definire la forma, i materiali e le funzioni di un prodotto, traducendo idee creative in disegni tecnici pronti per la produzione.",
+          "competenze_chiave": [
+            "CAD 2D avanzato",
+            "creatività",
+            "design industriale",
+            "materiali e tecnologie",
+            "documentazione tecnica"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIS-2-02",
@@ -2858,7 +3678,7 @@
         },
         "LC": {
           "ref": "Thinking / Problem solving",
-          "nota": "Lo studente sviluppa la capacità di pensiero spaziale passando dalla proiezione ortogonale alla rappresentazione 3D"
+          "nota": "Lo studente sviluppa la capacità di pensiero spaziale passando dalla proiezione ortogonale alla rappresentazione assonometrica. Questo salto cognitivo richiede consapevolezza del proprio processo di visualizzazione: lo studente costruisce strategie personali per immaginare oggetti nello spazio e impara a imparare dal confronto tra rappresentazioni diverse."
         },
         "EV": {
           "ref": "SDG 4 — Istruzione di qualità",
@@ -2902,7 +3722,7 @@
         "durata_sec": 57
       },
       "professione_futura": {
-        "titolo": "Designer di prodotto industriale",
+        "titolo": "Product Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta oggetti d'uso comunicando le idee con sketch 3D digitali e fisici, utilizzando assonometria come linguaggio universale con fornitori e clienti.",
         "competenze_chiave": [
@@ -2910,7 +3730,8 @@
           "comunicazione visiva",
           "prototipazione rapida",
           "software 3D"
-        ]
+        ],
+        "testo": "**Product Designer**\n\nAnalizza i bisogni degli utenti e della società per ideare prodotti che ancora non esistono o che risolvono problemi reali, usando design thinking e prototipazione rapida.\n\nDove lavora: studi di industrial design, aziende di arredo e oggettistica di consumo, startup di hardware, reparti prodotto di aziende consumer.\n\nCompetenze chiave che inizia a costruire da qui: design thinking · prototipazione rapida · ergonomia · user research · design industriale\n\n*\"Ogni oggetto che progettiamo entra nella vita di qualcuno. Questa responsabilità guida ogni mia scelta.\"*"
       },
       "clil_termini": [
         {
@@ -2936,7 +3757,33 @@
         "arte_geo_storia": "Albrecht Dürer (1525) usò sistematicamente l'assonometria per i suoi studi prospettici. L'assonometria è il linguaggio dei manuali tecnici mondiali — da IKEA ai costruttori aeronautici.",
         "frase_ponte": "Il disegno tecnico è geometria applicata alla costruzione e alla comunicazione."
       },
-      "_nota_editoriale": "Il JSON originale descriveva 'Quotatura e lettura di un disegno tecnico' — contenuto valido ma separato, da sviluppare come MC-DIS-2-03 in una versione futura della matrice. Il _completa.md è corretto (assonometria, allineato a INDICE v1.0)."
+      "_nota_editoriale": "Il JSON originale descriveva 'Quotatura e lettura di un disegno tecnico' — contenuto valido ma separato, da sviluppare come MC-DIS-2-03 in una versione futura della matrice. Il _completa.md è corretto (assonometria, allineato a INDICE v1.0).",
+      "professioni_future": [
+        {
+          "titolo": "Product Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Analizza i bisogni degli utenti e della società per ideare prodotti che ancora non esistono o che risolvono problemi reali, usando design thinking e prototipazione rapida.",
+          "competenze_chiave": [
+            "design thinking",
+            "prototipazione rapida",
+            "ergonomia",
+            "user research",
+            "design industriale"
+          ]
+        },
+        {
+          "titolo": "Green Product Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta prodotti che coniugano funzionalità, estetica e sostenibilità, tenendo conto dell'intero ciclo di vita del prodotto e dell'impatto ambientale dei materiali scelti.",
+          "competenze_chiave": [
+            "design sostenibile",
+            "LCA",
+            "materiali eco",
+            "ergonomia",
+            "innovazione di prodotto"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-COM-3-01",
@@ -2998,7 +3845,7 @@
         "durata_sec": 155
       },
       "professione_futura": {
-        "titolo": "Network Infrastructure Designer",
+        "titolo": "Storyteller",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
         "competenze_chiave": [
@@ -3006,7 +3853,8 @@
           "content strategy",
           "SEO",
           "storytelling digitale"
-        ]
+        ],
+        "testo": "**Storyteller**\n\nRacconta storie coinvolgenti per aziende, prodotti e organizzazioni, suscitando interesse ed emozione nell'utente attraverso narrazioni che rafforzano l'identità e la missione del brand.\n\nDove lavora: agenzie di comunicazione e brand storytelling, reti televisive e web, uffici stampa aziendali, testate giornalistiche digitali.\n\nCompetenze chiave che inizia a costruire da qui: narrazione d'impresa · scrittura creativa · digital content · branding · storytelling multimediale\n\n*\"I dati convincono la mente. Le storie conquistano il cuore. Ho bisogno di entrambi.\"*"
       },
       "clil_termini": [
         {
@@ -3030,7 +3878,33 @@
           "ipa": "ˌɔːtəˈmeɪʃən"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Storyteller",
+          "orizzonte": "2028",
+          "descrizione_breve": "Racconta storie coinvolgenti per aziende, prodotti e organizzazioni, suscitando interesse ed emozione nell'utente attraverso narrazioni che rafforzano l'identità e la missione del brand.",
+          "competenze_chiave": [
+            "narrazione d'impresa",
+            "scrittura creativa",
+            "digital content",
+            "branding",
+            "storytelling multimediale"
+          ]
+        },
+        {
+          "titolo": "Comunicatore d'Arte e Communication Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Immagina e realizza l'aspetto visivo-strategico di progetti pubblicitari, di branding o di comunicazione culturale, usando il codice del linguaggio visivo per costruire messaggi efficaci.",
+          "competenze_chiave": [
+            "comunicazione visiva",
+            "branding",
+            "strategic design",
+            "copywriting",
+            "advertising"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-COM-3-02",
@@ -3058,8 +3932,8 @@
           "nota": "Lo studente comprende le responsabilità legali ed etiche della pubblicazione online"
         },
         "EV": {
-          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
-          "nota": "Il rispetto del diritto d'autore e delle licenze è esercizio di cittadinanza digitale responsabile"
+          "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D1 (veridicità contenuti condivisi) e D2 (rispetto identità altrui); L. 92/2019 art. 5; SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "Produrre contenuti responsabili aggancia i Traguardi D1 (veridicità e accuratezza delle informazioni condivise) e D2 (rispetto dell'identità altrui, diritti d'autore, licenze). Il diritto d'autore e le licenze Creative Commons sono esercizio concreto di cittadinanza digitale."
         }
       },
       "outputApp": {
@@ -3088,12 +3962,11 @@
         "avanzato": "Pubblicare il podcast su una piattaforma open (es. Internet Archive) con licenza CC scelta e giustificata dallo studente."
       },
       "hook_audio": {
-        "durata_min": 2.5,
-        "durata_secondi": 250,
-        "durata_sec": 150
+        "durata_min": 4.2,
+        "durata_secondi": 250
       },
       "professione_futura": {
-        "titolo": "Content Strategist con specializzazione etica",
+        "titolo": "AI-Assisted Scriptwriter",
         "orizzonte": "2030",
         "descrizione_breve": "Ottimizza reti di trasporto e logistica per ridurre emissioni e inefficienze.",
         "competenze_chiave": [
@@ -3101,31 +3974,74 @@
           "mobilità urbana",
           "GIS",
           "trasporto intermodale"
-        ]
+        ],
+        "testo": "**AI-Assisted Scriptwriter**\n\nScrive sceneggiature, script e contenuti per media audiovisivi usando l'AI generativa come strumento creativo per accelerare la produzione e sperimentare nuove forme narrative.\n\nDove lavora: case di produzione audiovisiva, piattaforme di streaming, agenzie di branded content, studi di sviluppo di videogiochi.\n\nCompetenze chiave che inizia a costruire da qui: scrittura creativa · storytelling · AI generativa · sceneggiatura · media digitali\n\n*\"L'AI genera 50 varianti in un secondo. Io scelgo quella che fa venire i brividi.\"*"
       },
       "clil_termini": [
         {
-          "italiano": "rete",
-          "inglese": "network",
-          "ipa": "ˈnetwɜːk"
+          "it": "contenuto digitale",
+          "en": "digital content",
+          "def": "Qualsiasi testo, immagine, audio o video creato, distribuito o consumato in formato digitale"
         },
         {
-          "italiano": "comunicazione",
-          "inglese": "communication",
-          "ipa": "kəˌmjuːnɪˈkeɪʃən"
+          "it": "diritto d'autore",
+          "en": "copyright",
+          "def": "Diritto esclusivo dell'autore di riprodurre, distribuire e modificare la propria opera creativa"
         },
         {
-          "italiano": "trasporto",
-          "inglese": "transport",
-          "ipa": "ˈtrænspɔːt"
+          "it": "licenza Creative Commons",
+          "en": "Creative Commons license",
+          "def": "Sistema di licenze standard che permette agli autori di condividere opere con libertà definite e condizioni chiare"
         },
         {
-          "italiano": "automazione",
-          "inglese": "automation",
-          "ipa": "ˌɔːtəˈmeɪʃən"
+          "it": "compressione dati",
+          "en": "data compression",
+          "def": "Riduzione della dimensione di un file eliminando ridondanze (lossless) o informazioni meno percettibili (lossy)"
+        },
+        {
+          "it": "deepfake",
+          "en": "deepfake",
+          "def": "Contenuto video o audio manipolato con intelligenza artificiale per far sembrare reale qualcosa che non è accaduto"
+        },
+        {
+          "it": "plagio",
+          "en": "plagiarism",
+          "def": "Appropriazione indebita del lavoro intellettuale altrui presentandolo come proprio, senza citare la fonte"
+        },
+        {
+          "it": "podcast",
+          "en": "podcast",
+          "def": "Contenuto audio digitale distribuito online in episodi scaricabili, su qualsiasi argomento e struttura"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "Il nostro giornalino digitale: produrre contenuti multimediali responsabili su temi scolastici (Tecnologia + Italiano + Arte + Educazione Civica)",
+      "sdg_principale": 16,
+      "professioni_future": [
+        {
+          "titolo": "AI-Assisted Scriptwriter",
+          "orizzonte": "2030",
+          "descrizione_breve": "Scrive sceneggiature, script e contenuti per media audiovisivi usando l'AI generativa come strumento creativo per accelerare la produzione e sperimentare nuove forme narrative.",
+          "competenze_chiave": [
+            "scrittura creativa",
+            "storytelling",
+            "AI generativa",
+            "sceneggiatura",
+            "media digitali"
+          ]
+        },
+        {
+          "titolo": "Videomaker",
+          "orizzonte": "2028",
+          "descrizione_breve": "Realizza contenuti visivi per comunicare storie e messaggi attraverso la miglior combinazione di immagini e suoni, per piattaforme social, aziende, eventi e produzioni culturali.",
+          "competenze_chiave": [
+            "ripresa video",
+            "montaggio",
+            "storytelling audiovisivo",
+            "post-produzione",
+            "comunicazione digitale"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-COM-3-03",
@@ -3190,7 +4106,7 @@
         "durata_sec": 154
       },
       "professione_futura": {
-        "titolo": "Mobility Planner urbano",
+        "titolo": "Urban Sensor Network Manager",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta strategie di comunicazione digitale multicanale per organizzazioni.",
         "competenze_chiave": [
@@ -3198,7 +4114,8 @@
           "content strategy",
           "SEO",
           "storytelling digitale"
-        ]
+        ],
+        "testo": "**Urban Sensor Network Manager**\n\nGestisce le reti di telecomunicazione e sensori nelle infrastrutture urbane, dalla fibra ottica ai nodi IoT, garantendo connettività affidabile e raccolta dati continua per le smart city.\n\nDove lavora: comuni e municipalità, aziende di utility urbane, gestori di infrastrutture critiche, startup IoT urbano.\n\nCompetenze chiave che inizia a costruire da qui: reti IoT · telecomunicazioni urbane · data visualization · manutenzione infrastrutture · 5G\n\n*\"Cinquecento sensori per km². La città mi parla in dati — io la ascolto e rispondo in decisioni.\"*"
       },
       "clil_termini": [
         {
@@ -3222,7 +4139,33 @@
           "ipa": "ˌɔːtəˈmeɪʃən"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Urban Sensor Network Manager",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce le reti di telecomunicazione e sensori nelle infrastrutture urbane, dalla fibra ottica ai nodi IoT, garantendo connettività affidabile e raccolta dati continua per le smart city.",
+          "competenze_chiave": [
+            "reti IoT",
+            "telecomunicazioni urbane",
+            "data visualization",
+            "manutenzione infrastrutture",
+            "5G"
+          ]
+        },
+        {
+          "titolo": "Space Traffic Controller",
+          "orizzonte": "2035",
+          "descrizione_breve": "Gestisce il traffico di satelliti e segnali nell'orbita terrestre, coordinando le traiettorie dei veicoli spaziali per evitare collisioni e garantire comunicazioni sicure.",
+          "competenze_chiave": [
+            "astrodinamica",
+            "telecomunicazioni spaziali",
+            "software di monitoraggio orbitale",
+            "gestione del rischio",
+            "matematica"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-COM-3-04",
@@ -3287,7 +4230,7 @@
         "durata_sec": 157
       },
       "professione_futura": {
-        "titolo": "Systems Integration Engineer — Industria 4.0",
+        "titolo": "Mobility as a Service (MaaS) Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Ottimizza reti di trasporto e logistica per ridurre emissioni e inefficienze.",
         "competenze_chiave": [
@@ -3295,7 +4238,8 @@
           "mobilità urbana",
           "GIS",
           "trasporto intermodale"
-        ]
+        ],
+        "testo": "**Mobility as a Service (MaaS) Designer**\n\nProgetta sistemi integrati di mobilità urbana che combinano trasporto pubblico, sharing e micro-mobilità in piattaforme digitali, riducendo l'uso dell'auto privata.\n\nDove lavora: operatori di trasporto multimodale, città metropolitane, ministeri dei trasporti, startup di app di mobilità integrata.\n\nCompetenze chiave che inizia a costruire da qui: urbanistica dei trasporti · UX design · gestione mobilità · app design · intermodalità\n\n*\"Un'unica app per muoversi ovunque: bici, bus, treno, monopattino. Questo è il trasporto del futuro.\"*"
       },
       "clil_termini": [
         {
@@ -3319,7 +4263,33 @@
           "ipa": "ˌɔːtəˈmeɪʃən"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Mobility as a Service (MaaS) Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta sistemi integrati di mobilità urbana che combinano trasporto pubblico, sharing e micro-mobilità in piattaforme digitali, riducendo l'uso dell'auto privata.",
+          "competenze_chiave": [
+            "urbanistica dei trasporti",
+            "UX design",
+            "gestione mobilità",
+            "app design",
+            "intermodalità"
+          ]
+        },
+        {
+          "titolo": "Drone Logistic Operator",
+          "orizzonte": "2028",
+          "descrizione_breve": "Opera flotte di droni per la consegna di merci, farmaci e pacchi in aree urbane e rurali difficili da raggiungere, ottimizzando rotte e rispettando le normative ENAC/EASA.",
+          "competenze_chiave": [
+            "pilotaggio remoto",
+            "geolocalizzazione",
+            "regolamenti ENAC/EASA",
+            "logistica",
+            "automazione"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-COM-3-05",
@@ -3392,7 +4362,7 @@
         "durata_sec": 59
       },
       "professione_futura": {
-        "titolo": "Network Security Analyst — Infrastrutture critiche",
+        "titolo": "Drone Logistic Operator",
         "orizzonte": "2030",
         "descrizione_breve": "Monitora la resilienza dell'infrastruttura internet globale, analizza vulnerabilità geopolitiche e supporta decisioni di governance digitale per governi e organizzazioni internazionali.",
         "competenze_chiave": [
@@ -3400,7 +4370,8 @@
           "geopolitica digitale",
           "sicurezza delle infrastrutture critiche",
           "analisi dei dati di rete"
-        ]
+        ],
+        "testo": "**Drone Logistic Operator**\n\nGestisce flotte di droni per la distribuzione automatizzata di merci, pianificando rotte ottimali, garantendo la sicurezza delle operazioni e integrando i droni nella supply chain.\n\nDove lavora: aziende di logistica last-mile, ospedali e laboratori per consegne urgenti, operatori portuali, catene di e-commerce.\n\nCompetenze chiave che inizia a costruire da qui: pilotaggio remoto · logistica supply chain · geolocalizzazione · automazione · normativa ENAC/EASA\n\n*\"Un pacco in 30 minuti senza un furgone in città. Il drone non è futuro — è già presente.\"*"
       },
       "clil_termini": [
         {
@@ -3430,7 +4401,33 @@
         "scienze": "La fibra ottica trasmette fotoni a 200.000 km/s nel vetro (vs 300.000 nel vuoto). La latenza Roma-Tokyo via fibra (~180ms) è limitata fondamentalmente dalla velocità della luce.",
         "arte_geo_storia": "ARPANET (1969): il Dipartimento della Difesa USA finanziò una rete che sopravvivesse a un attacco nucleare. Quella scelta architetturale — nessun nodo centrale — è ancora il motivo per cui nessuno può 'spegnere' internet.",
         "frase_ponte": "Ogni comunicazione è un segnale fisico che viaggia attraverso infrastrutture reali possedute da qualcuno."
-      }
+      },
+      "professioni_future": [
+        {
+          "titolo": "Drone Logistic Operator",
+          "orizzonte": "2028",
+          "descrizione_breve": "Gestisce flotte di droni per la distribuzione automatizzata di merci, pianificando rotte ottimali, garantendo la sicurezza delle operazioni e integrando i droni nella supply chain.",
+          "competenze_chiave": [
+            "pilotaggio remoto",
+            "logistica supply chain",
+            "geolocalizzazione",
+            "automazione",
+            "normativa ENAC/EASA"
+          ]
+        },
+        {
+          "titolo": "Drone Security Coordinator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Garantisce la sicurezza delle operazioni con droni in spazi urbani e aree sensibili, gestendo i rischi, rispettando la regolamentazione e coordinando con autorità di controllo del territorio.",
+          "competenze_chiave": [
+            "regolamentazione ENAC/EASA",
+            "sicurezza aerea",
+            "gestione del rischio",
+            "coordinamento operazioni",
+            "telerilevamento"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-COM-3-06",
@@ -3459,8 +4456,8 @@
           "nota": "Lo studente smonta sistematicamente meccanismi di manipolazione dell'informazione sviluppando autonomia epistemica"
         },
         "EV": {
-          "ref": "SDG 16 — Pace, giustizia, istituzioni solide; L. 92/2019 Educazione Civica",
-          "nota": "La disinformazione è minaccia diretta alla democrazia — riconoscerla e contrastarla è competenza civica fondamentale nel XXI secolo"
+          "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D1 (valutare criticamente fonti e notizie); L. 92/2019 art. 5; SDG 16 — Pace, giustizia, istituzioni solide",
+          "nota": "Traguardo D1 del D.M. 183/2024 (prescrittivo): 'valutare criticamente dati e notizie in rete, individuando fonti attendibili e modalità di ricerca adeguate'. Questa MC è il punto di arrivo avanzato del percorso di media literacy — dalla verifica delle fonti (MC-DIG-1-02, 1ª) alla decostruzione dei meccanismi di disinformazione (3ª)."
         }
       },
       "outputApp": {
@@ -3497,13 +4494,12 @@
         "titolo": "Come TikTok sa già cosa vuoi vedere",
         "oggetto_reale": "feed di TikTok",
         "domanda_avvio": "Hai mai aperto TikTok per 5 minuti e ti sei ritrovato dopo un'ora — senza capire come?",
-        "durata_min": 0.9,
+        "durata_min": 0.8,
         "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione.",
-        "durata_secondi": 45,
-        "durata_sec": 55
+        "durata_secondi": 45
       },
       "professione_futura": {
-        "titolo": "Digital Misinformation Analyst (Media Literacy Specialist)",
+        "titolo": "Conversational AI Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Verifica sistematicamente la veridicità di contenuti digitali virali per testate giornalistiche, piattaforme social e organizzazioni internazionali, usando strumenti avanzati di analisi forense dei media.",
         "competenze_chiave": [
@@ -3511,7 +4507,8 @@
           "analisi forense di immagini e video",
           "comprensione degli algoritmi di raccomandazione",
           "giornalismo di dati"
-        ]
+        ],
+        "testo": "**Conversational AI Designer**\n\nProgetta chatbot, assistenti vocali e interfacce conversazionali che comunicano in modo naturale con le persone, combinando UX, linguistica computazionale e intelligenza artificiale.\n\nDove lavora: aziende tech che sviluppano assistenti vocali, banche e assicurazioni, centri di customer service, startup di chatbot.\n\nCompetenze chiave che inizia a costruire da qui: UX conversazionale · NLP · linguistica · UI vocale · AI design\n\n*\"Un assistente vocale deve sembrare presente, non robotico. La differenza sta in come risponde quando non capisce.\"*"
       },
       "clil_termini": [
         {
@@ -3535,13 +4532,39 @@
           "pronuncia_ipa": "/rɪəl taɪm ˈbɪdɪŋ/"
         }
       ],
-      "uda_collegata": "UDA-2",
+      "uda_collegata": "UDA-2 — La Città che Vorrei",
       "stem_connections": {
         "matematica": "Il coefficiente di engagement (like + commenti + condivisioni) / visualizzazioni è la metrica chiave degli algoritmi. Un post con engagement rate dell'8% viene distribuito esponenzialmente di più di uno con il 2%.",
         "scienze": "Neuroscienza del bias di conferma: il cervello elabora le informazioni coerenti con le credenze preesistenti più velocemente. Questo meccanismo evolutivo è sfruttato dagli algoritmi per aumentare il tempo di permanenza.",
         "arte_geo_storia": "Cambridge Analytica (2018): dati di 87 milioni di utenti Facebook usati per micro-targeting politico nelle elezioni USA 2016 e nel referendum Brexit — primo caso documentato di weaponization dei dati per influenzare la democrazia.",
         "frase_ponte": "Ogni algoritmo è matematica che decide cosa vedi e cosa non vedi."
-      }
+      },
+      "professioni_future": [
+        {
+          "titolo": "Conversational AI Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta chatbot, assistenti vocali e interfacce conversazionali che comunicano in modo naturale con le persone, combinando UX, linguistica computazionale e intelligenza artificiale.",
+          "competenze_chiave": [
+            "UX conversazionale",
+            "NLP",
+            "linguistica",
+            "UI vocale",
+            "AI design"
+          ]
+        },
+        {
+          "titolo": "Synthetic Voice Architect",
+          "orizzonte": "2030",
+          "descrizione_breve": "Costruisce voci sintetiche realistiche per media, app e assistenti digitali, usando machine learning e sound design per creare identità vocali distintive ed eticamente responsabili.",
+          "competenze_chiave": [
+            "sound design",
+            "linguistica computazionale",
+            "machine learning",
+            "etica vocale AI",
+            "text-to-speech"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-3-01",
@@ -3561,8 +4584,8 @@
           "nota": "Lo studente diagnostica e corregge errori nel codice e nel comportamento fisico del robot in modo autonomo"
         },
         "EC": {
-          "ref": "Into action / Planning and management",
-          "nota": "Lo studente gestisce un progetto robotico dalla specifica al test finale con documentazione"
+          "ref": "Into action / Planning and management; Creativity and ideation; Mobilizing resources",
+          "nota": "Lo studente gestisce un progetto robotico completo dalla specifica al test finale con documentazione iterativa. L'intera pipeline (progettazione, prototipazione, debug, presentazione) è un ciclo imprenditoriale in miniatura: lo studente sperimenta creatività e ideazione nella fase di concetto, pianificazione e gestione nella fase di sviluppo, e assunzione di rischi calcolati nel testing. Competenza EntreComp che va oltre la robotica."
         },
         "LC": {
           "ref": "Thinking / Problem solving",
@@ -3605,7 +4628,7 @@
         "durata_sec": 156
       },
       "professione_futura": {
-        "titolo": "Ingegnere di sistemi robotici e automation specialist",
+        "titolo": "Artificial Intelligence Specialist",
         "orizzonte": "2030",
         "descrizione_breve": "Forma cittadini e lavoratori all'uso critico e sicuro del digitale.",
         "competenze_chiave": [
@@ -3613,7 +4636,8 @@
           "media literacy",
           "cybersecurity base",
           "formazione digitale"
-        ]
+        ],
+        "testo": "**Artificial Intelligence Specialist**\n\nSviluppa sistemi di intelligenza artificiale avanzati — da modelli di machine learning a reti neurali profonde — per automatizzare processi complessi e creare prodotti intelligenti.\n\nDove lavora: centri di ricerca AI d'eccellenza, aziende tech globali, dipartimenti universitari di informatica avanzata, startup deep-tech.\n\nCompetenze chiave che inizia a costruire da qui: Python · TensorFlow / PyTorch · machine learning · deep learning · etica AI\n\n*\"Addestrare un modello è facile. Capire perché sbaglia è la parte difficile — e quella che conta davvero.\"*"
       },
       "clil_termini": [
         {
@@ -3637,7 +4661,33 @@
           "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Artificial Intelligence Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Sviluppa sistemi di intelligenza artificiale avanzati — da modelli di machine learning a reti neurali profonde — per automatizzare processi complessi e creare prodotti intelligenti.",
+          "competenze_chiave": [
+            "Python",
+            "TensorFlow / PyTorch",
+            "machine learning",
+            "deep learning",
+            "etica AI"
+          ]
+        },
+        {
+          "titolo": "Ethical AI Officer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Garantisce che i sistemi AI rispettino principi etici, normative internazionali e diritti fondamentali, supervisionando lo sviluppo responsabile e la trasparenza degli algoritmi.",
+          "competenze_chiave": [
+            "etica dell'AI",
+            "policy e normative AI",
+            "audit degli algoritmi",
+            "AI Act europeo",
+            "bias detection"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-3-02",
@@ -3665,8 +4715,8 @@
           "nota": "Lo studente analizza le decisioni algoritmiche con pensiero critico identificando possibili bias e conseguenze"
         },
         "EV": {
-          "ref": "SDG 9 — Innovazione; SDG 10 — Ridurre le disuguaglianze; SDG 16 — Giustizia",
-          "nota": "L'IA amplifica sia le opportunità che le disuguaglianze — comprenderla è competenza civica urgente"
+          "ref": "D.M. 183/2024 — Cittadinanza digitale Traguardo D3 (IA come tema civico urgente); L. 92/2019 art. 5; SDG 9 — Innovazione; SDG 10 — Ridurre le disuguaglianze; SDG 16 — Giustizia",
+          "nota": "Il D.M. 183/2024 cita esplicitamente l'IA nel Traguardo D3: 'la rapida evoluzione tecnologica nel campo dell'Intelligenza Artificiale suggerisce adeguati approfondimenti'. Comprendere e valutare i sistemi IA è competenza civica urgente — l'IA amplifica sia le opportunità che le disuguaglianze."
         }
       },
       "outputApp": {
@@ -3698,12 +4748,11 @@
         "avanzato": "Progettare un sistema IA per un problema scolastico (es. raccomandatore di libri per la biblioteca): definire dataset necessario, tipo di apprendimento e rischi etici da gestire."
       },
       "hook_audio": {
-        "durata_min": 2.9,
-        "durata_secondi": 286,
-        "durata_sec": 172
+        "durata_min": 4.8,
+        "durata_secondi": 286
       },
       "professione_futura": {
-        "titolo": "AI ethicist, responsabile IA, data scientist",
+        "titolo": "Computer Vision Engineer",
         "orizzonte": "2030",
         "descrizione_breve": "Protegge reti e sistemi da attacchi informatici e violazioni della privacy.",
         "competenze_chiave": [
@@ -3711,31 +4760,74 @@
           "analisi vulnerabilità",
           "GDPR",
           "ethical hacking"
-        ]
+        ],
+        "testo": "**Computer Vision Engineer**\n\nSviluppa sistemi che permettono alle macchine di 'vedere' e interpretare immagini e video, applicando deep learning per riconoscimento di oggetti, volti e scene in tempo reale.\n\nDove lavora: aziende di manifattura avanzata, startup di guida autonoma, centri medici con diagnostica AI, sistemi di sorveglianza industriale.\n\nCompetenze chiave che inizia a costruire da qui: OpenCV · deep learning · Python · matematica applicata · elaborazione immagini\n\n*\"Insegno alle macchine a vedere. Ma vedere non basta — devono anche capire cosa guardano.\"*"
       },
       "clil_termini": [
         {
-          "italiano": "rete",
-          "inglese": "network",
-          "ipa": "ˈnetwɜːk"
+          "it": "intelligenza artificiale",
+          "en": "artificial intelligence (AI)",
+          "def": "Insieme di tecnologie che permettono ai computer di svolgere compiti che normalmente richiedono intelligenza umana"
         },
         {
-          "italiano": "privacy",
-          "inglese": "privacy",
-          "ipa": "ˈprɪvəsi"
+          "it": "rete neurale artificiale",
+          "en": "artificial neural network",
+          "def": "Modello computazionale ispirato al cervello umano, formato da nodi interconnessi che elaborano e trasmettono informazioni"
         },
         {
-          "italiano": "algoritmo",
-          "inglese": "algorithm",
-          "ipa": "ˈælɡərɪðəm"
+          "it": "allucinazione (AI)",
+          "en": "AI hallucination",
+          "def": "Risposta di un sistema di IA che presenta informazioni false come se fossero vere, con apparente sicurezza"
         },
         {
-          "italiano": "sicurezza informatica",
-          "inglese": "cybersecurity",
-          "ipa": "ˌsaɪbəsɪˈkjʊərɪti"
+          "it": "bias algoritmico",
+          "en": "algorithmic bias",
+          "def": "Distorsione sistematica nei risultati di un algoritmo causata da dati di addestramento non rappresentativi"
+        },
+        {
+          "it": "AI Act",
+          "en": "EU AI Act",
+          "def": "Primo regolamento europeo sull'intelligenza artificiale (2024) che classifica i sistemi di IA per livello di rischio"
+        },
+        {
+          "it": "modello linguistico (LLM)",
+          "en": "Large Language Model (LLM)",
+          "def": "Sistema di IA addestrato su enormi quantità di testo per generare, tradurre e rispondere a linguaggio naturale"
+        },
+        {
+          "it": "IA generativa",
+          "en": "generative AI",
+          "def": "Tipo di intelligenza artificiale capace di creare nuovi contenuti (testo, immagini, audio) a partire da dati di addestramento"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "L'IA sotto la lente: testare, verificare e valutare criticamente le risposte di un sistema di intelligenza artificiale (Tecnologia + Italiano + Educazione Civica + Matematica)",
+      "sdg_principale": 16,
+      "professioni_future": [
+        {
+          "titolo": "Computer Vision Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Sviluppa sistemi che permettono alle macchine di 'vedere' e interpretare immagini e video, applicando deep learning per riconoscimento di oggetti, volti e scene in tempo reale.",
+          "competenze_chiave": [
+            "OpenCV",
+            "deep learning",
+            "Python",
+            "matematica applicata",
+            "elaborazione immagini"
+          ]
+        },
+        {
+          "titolo": "Web Interaction Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Trova sintesi tra complessità tecnica e semplicità d'uso, progettando interazioni web che riducono al minimo gli sforzi dell'utente e massimizzano coinvolgimento e soddisfazione.",
+          "competenze_chiave": [
+            "UX/UI design",
+            "interaction design",
+            "frontend development",
+            "accessibilità",
+            "usability testing"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-3-03",
@@ -3755,8 +4847,8 @@
           "nota": "Lo studente raccoglie dati fisici reali tramite sensori, li organizza in formato strutturato e li analizza per trarne conclusioni"
         },
         "EC": {
-          "ref": "Ideas and opportunities / Creativity",
-          "nota": "Lo studente progetta un sistema di monitoraggio per un problema reale della scuola o della comunità"
+          "ref": "Ideas and opportunities / Creativity; Into action / Problem solving; Working with others / Mobilizing others",
+          "nota": "Lo studente progetta un sistema IoT di monitoraggio per un problema reale della scuola o della comunità. Questo è il prototipo più completo di attività imprenditoriale: individuazione di un problema reale (opportunità), ideazione creativa della soluzione, implementazione con risorse limitate, testing sul campo. EntreComp nella sua forma più autentica — la soluzione deve funzionare davvero, non solo in teoria."
         },
         "LC": {
           "ref": "Thinking / Problem solving",
@@ -3807,7 +4899,7 @@
         "durata_sec": 65
       },
       "professione_futura": {
-        "titolo": "IoT Solutions Architect",
+        "titolo": "Esperto in Cybersecurity",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta sistemi di raccolta e analisi dati distribuiti (smart city, industria 4.0, agricoltura di precisione) che connettono sensori fisici al cloud per prendere decisioni automatizzate.",
         "competenze_chiave": [
@@ -3815,7 +4907,8 @@
           "protocolli di comunicazione IoT (MQTT, LoRa)",
           "analisi dati in tempo reale",
           "progettazione sistemi distribuiti"
-        ]
+        ],
+        "testo": "**Esperto in Cybersecurity**\n\nProtegge infrastrutture critiche da attacchi informatici usando crittografia avanzata, ethical hacking e metodologie di incident response per garantire continuità e conformità normativa.\n\nDove lavora: red team di grandi aziende, CERT nazionali e agenzie di cybersicurezza, banche e infrastrutture critiche, forze dell'ordine specializzate.\n\nCompetenze chiave che inizia a costruire da qui: crittografia avanzata · ethical hacking · normative GDPR/NIS2 · penetration testing · analisi del rischio\n\n*\"Attaccare è la mia professione. Per difendere davvero, devo pensare esattamente come chi vuole entrare.\"*"
       },
       "sdg_principale": 11,
       "clil_termini": [
@@ -3840,7 +4933,33 @@
           "pronuncia_ipa": "/ˈdeɪtə striːm/"
         }
       ],
-      "uda_collegata": null
+      "uda_collegata": null,
+      "professioni_future": [
+        {
+          "titolo": "Esperto in Cybersecurity",
+          "orizzonte": "2030",
+          "descrizione_breve": "Protegge infrastrutture critiche da attacchi informatici usando crittografia avanzata, ethical hacking e metodologie di incident response per garantire continuità e conformità normativa.",
+          "competenze_chiave": [
+            "crittografia avanzata",
+            "ethical hacking",
+            "normative GDPR/NIS2",
+            "penetration testing",
+            "analisi del rischio"
+          ]
+        },
+        {
+          "titolo": "Cyber Intelligence Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Raccoglie e analizza intelligence su minacce informatiche usando OSINT e tecniche di threat detection, per anticipare attacchi e proteggere organizzazioni pubbliche e private.",
+          "competenze_chiave": [
+            "OSINT",
+            "threat detection",
+            "cyber intelligence",
+            "dark web analysis",
+            "sicurezza informatica"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIG-3-04",
@@ -3912,7 +5031,7 @@
         "durata_sec": 59
       },
       "professione_futura": {
-        "titolo": "UX Accessibility Specialist",
+        "titolo": "Data Scientist",
         "orizzonte": "2030",
         "descrizione_breve": "Garantisce che le app e i siti web siano utilizzabili da tutti, conducendo test con utenti con disabilità, verificando la conformità alle normative (WCAG, EAA) e formando i team di sviluppo.",
         "competenze_chiave": [
@@ -3920,7 +5039,8 @@
           "testing con screen reader",
           "Universal Design",
           "conformità normativa europea (EAA 2025)"
-        ]
+        ],
+        "testo": "**Data Scientist**\n\nEstrae conoscenza dai big data applicando statistica, machine learning e visualizzazione dati per supportare decisioni aziendali basate sull'evidenza in ogni settore.\n\nDove lavora: grandi aziende data-driven (finanza, retail, salute), startup analitiche, istituti di ricerca, enti pubblici con open data.\n\nCompetenze chiave che inizia a costruire da qui: Python / R · SQL · machine learning · data visualization · statistica inferenziale\n\n*\"I dati raccontano sempre una storia. Il mio lavoro è capire se la storia è vera.\"*"
       },
       "sdg_principale": 10,
       "clil_termini": [
@@ -3945,7 +5065,33 @@
           "pronuncia_ipa": "/skriːn ˈriːdər/"
         }
       ],
-      "uda_collegata": null
+      "uda_collegata": null,
+      "professioni_future": [
+        {
+          "titolo": "Data Scientist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Estrae conoscenza dai big data applicando statistica, machine learning e visualizzazione dati per supportare decisioni aziendali basate sull'evidenza in ogni settore.",
+          "competenze_chiave": [
+            "Python / R",
+            "SQL",
+            "machine learning",
+            "data visualization",
+            "statistica inferenziale"
+          ]
+        },
+        {
+          "titolo": "Digital Twin Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Costruisce e analizza modelli digitali gemelli di sistemi reali — fabbriche, reti energetiche, quartieri — per simulare scenari, prevedere comportamenti e ottimizzare le prestazioni.",
+          "competenze_chiave": [
+            "simulazione",
+            "modellazione dati",
+            "IoT",
+            "cloud computing",
+            "data analysis"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIS-3-01",
@@ -4017,7 +5163,8 @@
           "AutoCAD",
           "Revit",
           "disegno tecnico avanzato"
-        ]
+        ],
+        "testo": "**Designer di prodotto e service designer**\n\nIl designer di prodotto del 2030 lavora su oggetti fisici e digitali allo stesso tempo: progetta non solo la forma di un oggetto ma l'intera esperienza di uso — dall'imballaggio all'app di controllo, dall'assistenza alla fine vita. Usa strumenti digitali (CAD parametrico, stampa 3D, rendering fotorealistico) ma la sua competenza fondamentale rimane la capacità di tradurre un bisogno umano in forma fisica.\n\nIl service designer progetta esperienze: il modo in cui accedi a un servizio di trasporto, come funziona il flusso di pazienti in un ospedale, come si svolge la visita in un museo. Non disegna oggetti — disegna sequenze di interazioni.\n\nDove lavorano: studi di design, uffici tecnici di aziende manifatturiere, agenzie creative, startup di prodotto, settore sanitario, settore pubblico.\n\nCompetenze chiave che inizia a costruire da qui: disegno tecnico tridimensionale · design thinking · prototipazione rapida · ergonomia · software CAD\n\n*\"Ogni forma comunica qualcosa. La mia responsabilità è che comunichi la cosa giusta.\"*"
       },
       "clil_termini": [
         {
@@ -4041,7 +5188,33 @@
           "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Innovation Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Gestisce e guida i processi di transizione e innovazione in team multidisciplinari, usando strumenti di design e facilitazione per raggiungere la situazione aziendale desiderata.",
+          "competenze_chiave": [
+            "design management",
+            "facilitazione creativa",
+            "innovazione di processo",
+            "leadership",
+            "problem solving"
+          ]
+        },
+        {
+          "titolo": "Progettista Artistico per l'Impresa di Moda",
+          "orizzonte": "2028",
+          "descrizione_breve": "Sviluppa competenze progettuali avanzate e pratica dei strumenti tecnico-espressivi tradizionali e digitali, applicando principi di spazio, design e comunicazione visiva.",
+          "competenze_chiave": [
+            "disegno tecnico avanzato",
+            "strumenti CAD",
+            "progettazione moda",
+            "design di prodotto",
+            "normative di settore"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-DIS-3-02",
@@ -4105,7 +5278,7 @@
         "durata_sec": 52
       },
       "professione_futura": {
-        "titolo": "Ingegnere di produzione digitale e maker educator",
+        "titolo": "3D Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Traduce idee progettuali in modelli digitali per la produzione industriale.",
         "competenze_chiave": [
@@ -4113,7 +5286,8 @@
           "prototipazione rapida",
           "disegno tecnico",
           "tolleranze geometriche"
-        ]
+        ],
+        "testo": "**3D Designer**\n\nCrea modelli tridimensionali digitali — per prodotti, architetture, personaggi o ambienti — con spiccato senso estetico e padronanza dei software di modellazione 3D professionali.\n\nDove lavora: studi di architettura e interior design, case di produzione per cinema e pubblicità, aziende di product design avanzato, piattaforme gaming.\n\nCompetenze chiave che inizia a costruire da qui: modellazione 3D (Blender, Rhino, SolidWorks) · rendering · senso estetico · stampa 3D · texturing\n\n*\"Tutto quello che vedi in un film di fantascienza è stato prima disegnato da qualcuno come me.\"*"
       },
       "clil_termini": [
         {
@@ -4137,7 +5311,33 @@
           "ipa": "ˈteknɪkəl ˈdrɔːɪŋ"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "3D Designer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Crea modelli tridimensionali digitali — per prodotti, architetture, personaggi o ambienti — con spiccato senso estetico e padronanza dei software di modellazione 3D professionali.",
+          "competenze_chiave": [
+            "modellazione 3D (Blender, Rhino, SolidWorks)",
+            "rendering",
+            "senso estetico",
+            "stampa 3D",
+            "texturing"
+          ]
+        },
+        {
+          "titolo": "Digital Twin Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Replica digitalmente prodotti, impianti e infrastrutture in ambienti virtuali per testare comportamenti, ottimizzare le prestazioni e ridurre i costi di prototipazione fisica.",
+          "competenze_chiave": [
+            "modellazione 3D avanzata",
+            "IoT",
+            "ingegneria dei sistemi",
+            "simulazione Industry 5.0",
+            "CAD parametrico"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ENE-3-01",
@@ -4198,7 +5398,7 @@
         "durata_sec": 150
       },
       "professione_futura": {
-        "titolo": "Ingegnere di produzione e automazione",
+        "titolo": "Energy Transition Specialist",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
         "competenze_chiave": [
@@ -4206,7 +5406,8 @@
           "eolico",
           "storage energetico",
           "grid parity"
-        ]
+        ],
+        "testo": "**Energy Transition Specialist**\n\nGuida organizzazioni e territori nella transizione da fonti fossili a energie rinnovabili, combinando politiche energetiche, project management e competenze di sostenibilità ambientale.\n\nDove lavora: agenzie per la transizione energetica, utility e gestori di rete, ministeri dell'ambiente e della transizione ecologica, società di consulenza strategica.\n\nCompetenze chiave che inizia a costruire da qui: politiche energetiche · project management · sostenibilità ambientale · energie rinnovabili · normativa EU\n\n*\"La transizione energetica non è un problema tecnico. È un problema di governance, economia e consenso sociale.\"*"
       },
       "clil_termini": [
         {
@@ -4230,7 +5431,33 @@
           "ipa": "ˈsɜːkɪt"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Energy Transition Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Guida organizzazioni e territori nella transizione da fonti fossili a energie rinnovabili, combinando politiche energetiche, project management e competenze di sostenibilità ambientale.",
+          "competenze_chiave": [
+            "politiche energetiche",
+            "project management",
+            "sostenibilità ambientale",
+            "energie rinnovabili",
+            "normativa EU"
+          ]
+        },
+        {
+          "titolo": "Predictive Maintenance Analyst",
+          "orizzonte": "2028",
+          "descrizione_breve": "Analizza i dati dei sensori sulle macchine per prevedere guasti e programmare manutenzioni preventive, aumentando l'efficienza e la vita utile degli impianti.",
+          "competenze_chiave": [
+            "sensoristica IoT",
+            "big data",
+            "machine learning",
+            "manutenzione industriale",
+            "analisi predittiva"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ENE-3-02",
@@ -4294,7 +5521,7 @@
         "durata_sec": 156
       },
       "professione_futura": {
-        "titolo": "Analista di sistema energetico",
+        "titolo": "Smart Grid Analyst",
         "orizzonte": "2030",
         "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
         "competenze_chiave": [
@@ -4302,7 +5529,8 @@
           "efficienza energetica",
           "rinnovabili",
           "reportistica ESG"
-        ]
+        ],
+        "testo": "**Smart Grid Analyst**\n\nIntegra le fonti rinnovabili — solare, eolico, idro — in reti elettriche intelligenti, ottimizzando distribuzione e stoccaggio dell'energia con dati in tempo reale e AI.\n\nDove lavora: gestori di reti elettriche nazionali e regionali, ENEA, aziende di energy management, startup grid-tech.\n\nCompetenze chiave che inizia a costruire da qui: ingegneria elettrica · software SCADA · energie rinnovabili · data analysis · AI applicata all'energia\n\n*\"La rete elettrica del futuro non aspetta che produciamo energia. Anticipa quando ne avremo bisogno.\"*"
       },
       "clil_termini": [
         {
@@ -4326,7 +5554,33 @@
           "ipa": "ˈsɜːkɪt"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Smart Grid Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Integra le fonti rinnovabili — solare, eolico, idro — in reti elettriche intelligenti, ottimizzando distribuzione e stoccaggio dell'energia con dati in tempo reale e AI.",
+          "competenze_chiave": [
+            "ingegneria elettrica",
+            "software SCADA",
+            "energie rinnovabili",
+            "data analysis",
+            "AI applicata all'energia"
+          ]
+        },
+        {
+          "titolo": "Microgrid System Integrator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta e installa sistemi energetici locali autonomi che integrano fonti rinnovabili, accumulo e gestione intelligente dei flussi, per comunità, aziende e quartieri indipendenti dalla rete.",
+          "competenze_chiave": [
+            "ingegneria elettrica",
+            "IoT",
+            "energie rinnovabili",
+            "sistemi di accumulo",
+            "gestione energetica"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ENE-3-03",
@@ -4390,7 +5644,7 @@
         "durata_sec": 162
       },
       "professione_futura": {
-        "titolo": "Ingegnere della transizione energetica",
+        "titolo": "Energy Efficiency Advisor",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta e gestisce impianti di energia solare, eolica e idroelettrica.",
         "competenze_chiave": [
@@ -4398,7 +5652,8 @@
           "eolico",
           "storage energetico",
           "grid parity"
-        ]
+        ],
+        "testo": "**Energy Efficiency Advisor**\n\nAnalizza i consumi energetici di edifici, impianti e processi produttivi e progetta interventi mirati per ridurre gli sprechi, abbassare le bollette e migliorare le certificazioni energetiche.\n\nDove lavora: ESCo (Energy Service Company), studi di ingegneria energetica, pubblica amministrazione, grandi condomini e patrimoni immobiliari.\n\nCompetenze chiave che inizia a costruire da qui: auditing energetico · termotecnica · normativa CEE/APE · certificazioni energetiche · domotica\n\n*\"L'energia più economica è quella che non consumi. Ma qualcuno deve dimostrarlo con i dati.\"*"
       },
       "clil_termini": [
         {
@@ -4422,7 +5677,33 @@
           "ipa": "ˈsɜːkɪt"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Energy Efficiency Advisor",
+          "orizzonte": "2028",
+          "descrizione_breve": "Analizza i consumi energetici di edifici, impianti e processi produttivi e progetta interventi mirati per ridurre gli sprechi, abbassare le bollette e migliorare le certificazioni energetiche.",
+          "competenze_chiave": [
+            "auditing energetico",
+            "termotecnica",
+            "normativa CEE/APE",
+            "certificazioni energetiche",
+            "domotica"
+          ]
+        },
+        {
+          "titolo": "Energy Storage Systems Manager",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce i sistemi di accumulo energetico — batterie agli ioni di litio, idrogeno, supercondensatori — per ottimizzare la distribuzione e il riuso dell'energia prodotta da rinnovabili.",
+          "competenze_chiave": [
+            "ingegneria energetica",
+            "elettrochimica",
+            "sistemi di accumulo",
+            "gestione impianti",
+            "safety industriale"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ENE-3-04",
@@ -4485,7 +5766,7 @@
         "durata_sec": 158
       },
       "professione_futura": {
-        "titolo": "Ingegnere elettronico embedded",
+        "titolo": "Hydrogen Station Manager",
         "orizzonte": "2030",
         "descrizione_breve": "Ottimizza i consumi energetici di aziende e pubblica amministrazione.",
         "competenze_chiave": [
@@ -4493,7 +5774,8 @@
           "efficienza energetica",
           "rinnovabili",
           "reportistica ESG"
-        ]
+        ],
+        "testo": "**Hydrogen Station Manager**\n\nGestisce stazioni di rifornimento a idrogeno per veicoli a celle a combustibile, garantendo sicurezza, conformità normativa e continuità del servizio nella rete di distribuzione.\n\nDove lavora: gestori di infrastrutture energetiche, aziende di trasporto pesante e logistica, porti e aeroporti, startup dell'idrogeno verde.\n\nCompetenze chiave che inizia a costruire da qui: ingegneria chimica · sicurezza industriale · normative ambientali H₂ · logistica energetica · termodinamica\n\n*\"L'idrogeno non è la soluzione magica. È lo strumento giusto per i problemi giusti.\"*"
       },
       "clil_termini": [
         {
@@ -4517,7 +5799,33 @@
           "ipa": "ˈsɜːkɪt"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Hydrogen Station Manager",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce stazioni di rifornimento a idrogeno per veicoli a celle a combustibile, garantendo sicurezza, conformità normativa e continuità del servizio nella rete di distribuzione.",
+          "competenze_chiave": [
+            "ingegneria chimica",
+            "sicurezza industriale",
+            "normative ambientali H₂",
+            "logistica energetica",
+            "termodinamica"
+          ]
+        },
+        {
+          "titolo": "Predictive Maintenance Analyst",
+          "orizzonte": "2028",
+          "descrizione_breve": "Ottimizza le prestazioni di motori e macchine termiche analizzando dati dei sensori per anticipare usure, guasti e inefficienze nei cicli termodinamici.",
+          "competenze_chiave": [
+            "sensoristica",
+            "big data",
+            "manutenzione predittiva",
+            "termodinamica applicata",
+            "analisi delle vibrazioni"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ENE-3-05",
@@ -4590,7 +5898,7 @@
         "durata_sec": 64
       },
       "professione_futura": {
-        "titolo": "Ingegnere della propulsione elettrica e ibrida",
+        "titolo": "Smart Grid Analyst",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta sistemi di propulsione per veicoli elettrici e ibridi, ottimizzando il recupero energetico in frenata e l'efficienza complessiva della trasmissione.",
         "competenze_chiave": [
@@ -4598,7 +5906,8 @@
           "elettrotecnica",
           "simulazione CAE",
           "gestione batterie BMS"
-        ]
+        ],
+        "testo": "**Smart Grid Analyst**\n\nAnalizza e ottimizza i circuiti e le reti elettriche intelligenti, usando software SCADA e AI per bilanciare domanda e offerta di energia in tempo reale.\n\nDove lavora: operatori di reti di distribuzione elettrica, centri di controllo energetico regionale, aziende di automazione industriale, centri di ricerca sul grid.\n\nCompetenze chiave che inizia a costruire da qui: circuiti elettrici · software SCADA · data analysis · AI applicata · reti di distribuzione\n\n*\"Milioni di dati al secondo. La rete intelligente non dorme mai — e nemmeno io.\"*"
       },
       "clil_termini": [
         {
@@ -4623,7 +5932,33 @@
         "scienze": "Secondo principio della termodinamica: il calore non può essere convertito completamente in lavoro in un ciclo. L'entropia aumenta sempre.",
         "arte_geo_storia": "La macchina a vapore di James Watt (1769) ha innescato la Prima Rivoluzione Industriale — senza termodinamica non ci sarebbe stato il capitalismo industriale moderno.",
         "frase_ponte": "L'energia obbedisce a leggi fisiche immutabili — e una di queste dice che non puoi mai convertire tutto il calore in lavoro."
-      }
+      },
+      "professioni_future": [
+        {
+          "titolo": "Smart Grid Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Analizza e ottimizza i circuiti e le reti elettriche intelligenti, usando software SCADA e AI per bilanciare domanda e offerta di energia in tempo reale.",
+          "competenze_chiave": [
+            "circuiti elettrici",
+            "software SCADA",
+            "data analysis",
+            "AI applicata",
+            "reti di distribuzione"
+          ]
+        },
+        {
+          "titolo": "Microgrid System Integrator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta e collega fonti di energia rinnovabile a microreti locali, gestendo i flussi di corrente e l'accumulo per garantire continuità energetica a comunità e impianti.",
+          "competenze_chiave": [
+            "ingegneria elettrica",
+            "IoT",
+            "reti di distribuzione",
+            "energie rinnovabili",
+            "elettronica di potenza"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-ENE-3-06",
@@ -4696,7 +6031,7 @@
         "durata_sec": 61
       },
       "professione_futura": {
-        "titolo": "Energy Storage System Engineer (Ingegnere dei sistemi di accumulo energetico)",
+        "titolo": "Energy Efficiency Advisor",
         "orizzonte": "2035",
         "descrizione_breve": "Progetta e dimensiona sistemi di accumulo energetico per edifici, quartieri e reti elettriche, ottimizzando l'integrazione con le fonti rinnovabili e la smart grid.",
         "competenze_chiave": [
@@ -4704,7 +6039,8 @@
           "gestione dei sistemi energetici",
           "simulazione energetica",
           "analisi economica LCA"
-        ]
+        ],
+        "testo": "**Energy Efficiency Advisor**\n\nOttimizza impianti elettrici e domotici per ridurre i consumi negli edifici, progettando soluzioni di smart home e certificando le prestazioni energetiche secondo normativa.\n\nDove lavora: aziende di facility management, property company, strutture ricettive e alberghiere, grandi aziende con patrimoni immobiliari estesi.\n\nCompetenze chiave che inizia a costruire da qui: domotica avanzata · normativa CEI · auditing energetico · smart home · certificazioni APE\n\n*\"Una casa efficiente non rinuncia al comfort. Consuma meno per dare di più.\"*"
       },
       "clil_termini": [
         {
@@ -4734,7 +6070,33 @@
         "scienze": "Elettrolisi dell'acqua: 2H₂O → 2H₂ + O₂ (con energia elettrica). Fuel cell: H₂ + O₂ → H₂O + energia elettrica. Il ciclo idrogeno verde è chiuso senza emissioni se l'elettricità viene da rinnovabili.",
         "arte_geo_storia": "Geopolitica: il litio si trova principalmente in Cile, Bolivia e Argentina ('litio triangle'). Chi controlla il litio nel 2050 avrà il potere che il petrolio ha dato al Medio Oriente nel XX secolo.",
         "frase_ponte": "L'energia obbedisce a leggi fisiche immutabili — e ogni trasformazione disperde qualcosa."
-      }
+      },
+      "professioni_future": [
+        {
+          "titolo": "Energy Efficiency Advisor",
+          "orizzonte": "2028",
+          "descrizione_breve": "Ottimizza impianti elettrici e domotici per ridurre i consumi negli edifici, progettando soluzioni di smart home e certificando le prestazioni energetiche secondo normativa.",
+          "competenze_chiave": [
+            "domotica avanzata",
+            "normativa CEI",
+            "auditing energetico",
+            "smart home",
+            "certificazioni APE"
+          ]
+        },
+        {
+          "titolo": "Urban Sensor Network Manager",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce reti di sensori per smart building e domotica avanzata, raccogliendo dati su consumi, comfort e sicurezza per ottimizzare la gestione automatizzata degli edifici.",
+          "competenze_chiave": [
+            "IoT building",
+            "domotica",
+            "data visualization",
+            "reti di sensori",
+            "building management system (BMS)"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-SIS-3-01",
@@ -4754,8 +6116,8 @@
           "nota": "Lo studente ricerca online la catena produttiva di un prodotto tecnologico"
         },
         "EC": {
-          "ref": "Ideas and opportunities / Valuing ideas",
-          "nota": "Lo studente comprende come il valore si crea lungo la catena produttiva e dove si concentra il profitto"
+          "ref": "Ideas and opportunities / Valuing ideas; Recognizing opportunities; Into action / Taking initiative",
+          "nota": "Lo studente comprende come il valore si crea lungo la catena produttiva e dove si concentra il profitto. Riconoscere dove si concentra il valore in un sistema economico è la competenza fondamentale dell'imprenditore e del lavoratore consapevole: saper valutare le proprie idee non in astratto ma in relazione al mercato, alle risorse e alle persone. EntreComp tradotta in lettura critica del sistema economico."
         },
         "LC": {
           "ref": "Thinking / Systems thinking",
@@ -4796,7 +6158,7 @@
         "durata_sec": 155
       },
       "professione_futura": {
-        "titolo": "Supply Chain Sustainability Analyst",
+        "titolo": "Token Economy Designer",
         "orizzonte": "2030",
         "descrizione_breve": "Analizza processi aziendali e propone soluzioni per migliorare l'efficienza.",
         "competenze_chiave": [
@@ -4804,7 +6166,8 @@
           "KPI",
           "lean management",
           "digital transformation"
-        ]
+        ],
+        "testo": "**Token Economy Designer**\n\nProgetta ecosistemi di incentivi digitali basati su token per piattaforme decentralizzate, combinando teoria economica, game design e tecnologia blockchain.\n\nDove lavora: startup crypto e DeFi, aziende che sviluppano piattaforme decentralizzate, fondi di venture capital blockchain, DAO e cooperative digitali.\n\nCompetenze chiave che inizia a costruire da qui: economia decentralizzata · blockchain · behavioral economics · game theory · tokenomics\n\n*\"Gli incentivi giusti fanno sì che le persone facciano spontaneamente quello che serve al sistema. Questo è il design.\"*"
       },
       "clil_termini": [
         {
@@ -4828,7 +6191,33 @@
           "ipa": "ˌɒntrəprəˈnɜːʃɪp"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Token Economy Designer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta ecosistemi di incentivi digitali basati su token per piattaforme decentralizzate, combinando teoria economica, game design e tecnologia blockchain.",
+          "competenze_chiave": [
+            "economia decentralizzata",
+            "blockchain",
+            "behavioral economics",
+            "game theory",
+            "tokenomics"
+          ]
+        },
+        {
+          "titolo": "Decentralized Finance (DeFi) Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Analizza i mercati finanziari decentralizzati su blockchain, valutando protocolli DeFi, opportunità di yield e rischi nel nuovo ecosistema della finanza senza intermediari.",
+          "competenze_chiave": [
+            "smart contract",
+            "finanza decentralizzata",
+            "cryptoasset",
+            "analisi di mercato",
+            "blockchain"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-SIS-3-02",
@@ -4848,8 +6237,8 @@
           "nota": "Lo studente crea e condivide una presentazione digitale argomentata su un tema di economia sostenibile"
         },
         "EC": {
-          "ref": "Ideas and opportunities / Sustainability",
-          "nota": "Lo studente valuta modelli economici alternativi (economia circolare, B-Corp) rispetto al modello lineare dominante"
+          "ref": "Ideas and opportunities / Sustainability; Valuing ideas; Into action / Planning; Ethical and sustainable thinking",
+          "nota": "Lo studente valuta modelli economici alternativi (economia circolare, B-Corp, cooperative) rispetto al modello lineare dominante. La valutazione critica dei modelli di impresa è la competenza EntreComp più avanzata: lo studente non solo capisce come funzionano le organizzazioni, ma impara a immaginare come potrebbero funzionare diversamente — creatività imprenditoriale applicata alla sostenibilità come scelta di valore, non solo come vincolo normativo."
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
@@ -4893,7 +6282,7 @@
         "durata_sec": 159
       },
       "professione_futura": {
-        "titolo": "ESG Analyst (Environmental, Social, Governance)",
+        "titolo": "Human-AI Collaboration Specialist",
         "orizzonte": "2030",
         "descrizione_breve": "Crea e gestisce startup o progetti di innovazione in ambito tecnologico.",
         "competenze_chiave": [
@@ -4901,7 +6290,8 @@
           "design thinking",
           "fundraising",
           "AgileScrum"
-        ]
+        ],
+        "testo": "**Human-AI Collaboration Specialist**\n\nSupporta le organizzazioni nella transizione verso team misti umani-AI, gestendo il cambiamento culturale e progettando processi lavorativi in cui le persone e i sistemi si completano.\n\nDove lavora: grandi aziende in trasformazione con AI, centri di ricerca sull'ergonomia cognitiva, società di consulenza HR, startup di HR tech.\n\nCompetenze chiave che inizia a costruire da qui: change management · AI generativa · psicologia del lavoro · HR e organizzazione · facilitazione\n\n*\"L'AI non prende il posto delle persone. Prende il posto dei compiti che non dovevano fare le persone.\"*"
       },
       "clil_termini": [
         {
@@ -4925,7 +6315,33 @@
           "ipa": "ˌɒntrəprəˈnɜːʃɪp"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Human-AI Collaboration Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Supporta le organizzazioni nella transizione verso team misti umani-AI, gestendo il cambiamento culturale e progettando processi lavorativi in cui le persone e i sistemi si completano.",
+          "competenze_chiave": [
+            "change management",
+            "AI generativa",
+            "psicologia del lavoro",
+            "HR e organizzazione",
+            "facilitazione"
+          ]
+        },
+        {
+          "titolo": "Crowdsourced Policy Facilitator",
+          "orizzonte": "2030",
+          "descrizione_breve": "Facilita processi decisionali partecipativi coinvolgendo cittadini e comunità nella co-creazione di politiche pubbliche, usando piattaforme di civic tech e metodologie collaborative.",
+          "competenze_chiave": [
+            "policy making partecipativo",
+            "civic tech",
+            "community engagement",
+            "facilitazione",
+            "democrazia digitale"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-SIS-3-03",
@@ -4989,7 +6405,7 @@
         "durata_sec": 58
       },
       "professione_futura": {
-        "titolo": "Innovation Manager",
+        "titolo": "Digital and Innovation Manager",
         "orizzonte": "2030",
         "descrizione_breve": "Analizza processi aziendali e propone soluzioni per migliorare l'efficienza.",
         "competenze_chiave": [
@@ -4997,7 +6413,8 @@
           "KPI",
           "lean management",
           "digital transformation"
-        ]
+        ],
+        "testo": "**Digital and Innovation Manager**\n\nGuida l'innovazione dei processi produttivi aziendali attraverso tecnologie digitali, standardizzando operazioni e sviluppando nuove soluzioni per la competitività sul mercato.\n\nDove lavora: aziende manifatturiere in trasformazione 4.0, grandi gruppi con dipartimenti di innovazione, PMI che scalano con il digitale, associazioni di categoria.\n\nCompetenze chiave che inizia a costruire da qui: digital transformation · gestione processi produttivi · innovazione aziendale · project management · Industry 4.0\n\n*\"Innovare non è adottare tecnologia. È cambiare il modo in cui un'azienda crea valore per i suoi clienti.\"*"
       },
       "clil_termini": [
         {
@@ -5021,7 +6438,33 @@
           "ipa": "ˌɒntrəprəˈnɜːʃɪp"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Digital and Innovation Manager",
+          "orizzonte": "2028",
+          "descrizione_breve": "Guida l'innovazione dei processi produttivi aziendali attraverso tecnologie digitali, standardizzando operazioni e sviluppando nuove soluzioni per la competitività sul mercato.",
+          "competenze_chiave": [
+            "digital transformation",
+            "gestione processi produttivi",
+            "innovazione aziendale",
+            "project management",
+            "Industry 4.0"
+          ]
+        },
+        {
+          "titolo": "Fashion Sustainability Manager",
+          "orizzonte": "2028",
+          "descrizione_breve": "Coordina la sostenibilità lungo tutta la filiera produttiva, dalla materia prima alla vendita, implementando strategie ESG e rendendo i processi sempre più responsabili.",
+          "competenze_chiave": [
+            "gestione sostenibilità",
+            "supply chain ESG",
+            "CSR",
+            "reporting ambientale",
+            "normativa EU sostenibilità"
+          ]
+        }
+      ]
     },
     {
       "id": "MC-SIS-3-04",
@@ -5093,7 +6536,8 @@
           "design thinking",
           "fundraising",
           "AgileScrum"
-        ]
+        ],
+        "testo": "**Career Coach e Counselor di orientamento**\n\nAiuta studenti, giovani e adulti in transizione professionale a mappare le proprie competenze, identificare le opportunità di mercato, costruire percorsi formativi e professionali realistici. Non è solo \"consigliare cosa studiare\": usa strumenti di assessment (come il RIASEC), analisi del mercato del lavoro e tecniche di coaching per accompagnare decisioni consapevoli.\n\nDove lavora: servizi di orientamento scolastico, centri per l'impiego, agenzie di formazione, piattaforme digitali di carriera, consulenza HR.\n\nCompetenze chiave che inizia a costruire da qui: ascolto attivo · conoscenza del mercato del lavoro · strumenti di orientamento · pensiero sistemico · empatia\n\n*\"Non dico alle persone cosa fare della loro vita. Le aiuto a vedere quello che già sanno di sé, ma non hanno ancora guardato.\"*"
       },
       "clil_termini": [
         {
@@ -5117,7 +6561,33 @@
           "ipa": "ˌɒntrəprəˈnɜːʃɪp"
         }
       ],
-      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola"
+      "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
+      "professioni_future": [
+        {
+          "titolo": "Digital Twin Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Crea gemelli digitali di impianti automatizzati e robot industriali per simularne il comportamento, ottimizzare i processi e testare nuove configurazioni senza fermare la produzione.",
+          "competenze_chiave": [
+            "IoT industriale",
+            "modellazione 3D",
+            "simulazione Industry 5.0",
+            "robotica",
+            "ingegneria dei sistemi"
+          ]
+        },
+        {
+          "titolo": "Predictive Maintenance Analyst",
+          "orizzonte": "2028",
+          "descrizione_breve": "Monitora e ottimizza sistemi automatizzati e robot industriali analizzando dati in continuo, prevedendo guasti e programmando interventi per minimizzare i fermi di produzione.",
+          "competenze_chiave": [
+            "sensoristica IoT",
+            "big data",
+            "manutenzione predittiva robot",
+            "machine learning",
+            "Industry 4.0"
+          ]
+        }
+      ]
     }
   ]
 }

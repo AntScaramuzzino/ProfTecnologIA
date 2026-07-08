@@ -39,8 +39,11 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
   const persistTab = useCallback((id: string) => {
     setActiveId(id);
   }, []);
-  const navRef = useRef<HTMLDivElement>(null);
-  const panelId = useId();
+  const navRef   = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const panelId  = useId();
+  // Flag per saltare lo scroll al mount iniziale
+  const isFirstMount = useRef(true);
 
   // WCAG 2.1.1 — keyboard navigation: ArrowLeft/ArrowRight tra i tab (WAI-ARIA Tabs pattern)
   const handleKeyDown = useCallback((e: React.KeyboardEvent, currentIndex: number) => {
@@ -66,7 +69,7 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
     }
   }, [forcedActiveId]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Scorri il tab attivo in vista su mobile
+  // Scorri il tab attivo in vista su mobile (tab bar)
   useEffect(() => {
     const nav = navRef.current;
     if (!nav) return;
@@ -74,6 +77,17 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
     if (btn) {
       btn.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
     }
+  }, [activeId]);
+
+  // P2.4 — scroll-to-top del pannello al cambio tab (UX mobile e desktop)
+  // Salta il mount iniziale: l'utente arriva sulla pagina nella posizione corretta.
+  useEffect(() => {
+    if (isFirstMount.current) { isFirstMount.current = false; return; }
+    const panel = panelRef.current;
+    if (!panel) return;
+    // 56 px SiteHeader + 48 px tab bar = 104 px di offset sticky cumulativo
+    const panelTop = panel.getBoundingClientRect().top + window.scrollY - 104;
+    window.scrollTo({ top: Math.max(0, panelTop), behavior: "smooth" });
   }, [activeId]);
 
   return (
@@ -129,6 +143,7 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
 
       {/* ── Contenuto del tab attivo ── */}
       <div
+        ref={panelRef}
         role="tabpanel"
         id={`${panelId}-panel`}
         aria-labelledby={`tab-${activeId}`}

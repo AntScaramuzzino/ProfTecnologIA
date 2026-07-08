@@ -252,6 +252,13 @@ export default function SiteHeader({ mcIndex = [] }: SiteHeaderProps) {
               Glossario
             </Link>
 
+            <Link
+              href="/progressi"
+              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              📊 Progressi
+            </Link>
+
             {/* ── Search button (desktop) ── */}
             <button
               type="button"
@@ -334,6 +341,13 @@ export default function SiteHeader({ mcIndex = [] }: SiteHeaderProps) {
                 className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
               >
                 Glossario
+              </Link>
+              <Link
+                href="/progressi"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              >
+                📊 Progressi
               </Link>
               <Link
                 href="/architettura"

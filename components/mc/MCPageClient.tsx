@@ -22,6 +22,7 @@
  */
 
 import { useMemo, useCallback, useState, useEffect } from "react";
+import { useProgress } from "@/lib/useProgress";
 import { MCNavigator, type NavigatorTab } from "@/components/mc/MCNavigator";
 import { AccordionSection, type AccordionItem } from "@/components/mc/AccordionSection";
 import { LevelTabs, type DigCompLevel } from "@/components/mc/LevelTabs";
@@ -39,7 +40,6 @@ import MCImageCarousel from "@/components/mc/MCImageCarousel";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
-import { WikiImage } from "@/components/mc/WikiImage";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
@@ -56,6 +56,8 @@ interface MCPageClientProps {
   videoPlaylist: VideoItem[];
   visuals: VisualAsset[];
   microlearningData?: MicrolearningInteractives | null;
+  /** Slide della presentazione (deck NotebookLM → immagini) per il carosello in apertura di ESPLORA */
+  deckSlides?: VisualAsset[];
 }
 
 // ── Mapping sezione MD → tab ID ──────────────────────────────────────────────
@@ -318,8 +320,10 @@ function ZonePanel({
   quizData,
   flashcards,
   microlearningData,
+  deckSlides = [],
   professioneText,
   appendiceSection,
+  onQuizComplete,
 }: {
   tabId: string;
   section: { title: string; body: string } | undefined;
@@ -338,15 +342,36 @@ function ZonePanel({
   quizData?: QuizQuestion[] | null;
   flashcards?: FlashcardItem[];
   microlearningData?: MicrolearningInteractives | null;
+  /** Slide della presentazione (deck NotebookLM → immagini) mostrate in apertura di ESPLORA */
+  deckSlides?: VisualAsset[];
   /** Testo narrativo "Professione del Futuro" estratto dal body OSSERVA */
   professioneText?: string;
   /** Sezione APPENDICE — mostrata solo dentro il tab CLIL */
   appendiceSection?: { title: string; body: string } | null;
+  /** Callback al termine del quiz — forwarded a useProgress.recordQuizResult */
+  onQuizComplete?: (score: number, total: number, level: "F" | "I" | "A") => void;
 }) {
   // ── RIPASSA — non dipende da sezione MD, render sempre ───────────────────
   if (tabId === "RIPASSA") {
+    // Seleziona la migliore sketchnote: preferisce playground-densa, poi ripassa-sketchnote base
+    const sketchnoteAssets = visuals.filter((v) => v.label === "Ripassa");
+    const bestSketchnote =
+      sketchnoteAssets.find((v) => v.src.includes("playground-densa")) ??
+      sketchnoteAssets[0] ??
+      null;
+
     return (
       <div className="space-y-8 px-4 py-6 sm:px-6">
+
+        {/* Sketchnote di ripasso — visual sintetica degli elementi chiave */}
+        {bestSketchnote && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              🖊️ Sketchnote di ripasso
+            </p>
+            <MCVisual asset={bestSketchnote} alt={`Sketchnote di ripasso — ${mc.titolo}`} />
+          </div>
+        )}
 
         {/* Process — passi chiave del concetto */}
         {microlearningData?.process && (
@@ -387,6 +412,7 @@ function ZonePanel({
               mcId={mc.id}
               livello={mc.outputApp.livelloDigComp === "H" ? "A" : mc.outputApp.livelloDigComp as "F" | "I" | "A"}
               quizData={quizData}
+              onComplete={onQuizComplete}
             />
           </div>
         )}
@@ -401,7 +427,7 @@ function ZonePanel({
           </div>
         )}
 
-        {!microlearningData && (!quizData || quizData.length === 0) && (!flashcards || flashcards.length === 0) && (
+        {!bestSketchnote && !microlearningData && (!quizData || quizData.length === 0) && (!flashcards || flashcards.length === 0) && (
           <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-8 text-center">
             <p className="text-sm text-slate-500">Contenuti di ripasso in arrivo.</p>
           </div>
@@ -597,22 +623,21 @@ function ZonePanel({
 
     return (
       <div className="px-4 py-4 sm:px-6">
-        {/* Immagine da Wikimedia Commons — opzionale, sopra il testo */}
-        {mc.immagine_esplora && (
-          <WikiImage
-            src={mc.immagine_esplora.src}
-            alt={mc.immagine_esplora.alt}
-            caption={mc.immagine_esplora.caption}
-            license={mc.immagine_esplora.license}
-            wikimedia_url={mc.immagine_esplora.wikimedia_url}
-          />
+        {/* Presentazione — deck NotebookLM come carosello di slide, in apertura di ESPLORA */}
+        {deckSlides.length > 0 && (
+          <div className="mb-8">
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              📽️ Presentazione — esplora con le slide
+            </p>
+            <MCImageCarousel visuals={deckSlides} mcTitolo={mc.titolo} />
+          </div>
         )}
         <AccordionSection items={items} defaultFirstOpen areaHex={areaHex} />
-        {/* Galleria visual con carosello e zoom */}
-        {visuals.length > 0 && (
+        {/* Galleria visual con carosello e zoom — esclude sketchnote (stanno in RIPASSA) */}
+        {visuals.filter((v) => v.label !== "Ripassa").length > 0 && (
           <div className="mt-8">
             <p className="mb-4 text-xs font-black uppercase tracking-wide text-slate-500">Galleria visuale</p>
-            <MCImageCarousel visuals={visuals} mcTitolo={mc.titolo} />
+            <MCImageCarousel visuals={visuals.filter((v) => v.label !== "Ripassa")} mcTitolo={mc.titolo} />
           </div>
         )}
       </div>
@@ -759,6 +784,7 @@ export function MCPageClient({
   videoPlaylist,
   visuals,
   microlearningData,
+  deckSlides = [],
 }: MCPageClientProps) {
   // Pre-computa la sezione APPENDICE (fuori dai 5 tab)
   const appendiceSection = useMemo(() => {
@@ -802,6 +828,21 @@ export function MCPageClient({
   const agisciRawBody = getAgisciRawBody(text);
   const mcLevel = mc.outputApp.livelloDigComp === "H" ? "A" : (mc.outputApp.livelloDigComp as DigCompLevel);
 
+  // ── Tracking progressi studente ──────────────────────────────────────────
+  const { markVisited, recordQuizResult } = useProgress();
+
+  // Segna la MC come visitata al primo caricamento
+  useEffect(() => {
+    markVisited(mc.id, mcLevel);
+  }, [mc.id]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleQuizComplete = useCallback(
+    (score: number, total: number, level: "F" | "I" | "A") => {
+      recordQuizResult(mc.id, score, total, level);
+    },
+    [mc.id, recordQuizResult],
+  );
+
   // Scroll al top ad ogni apertura di pagina MC
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "instant" });
@@ -818,7 +859,8 @@ export function MCPageClient({
     flashcardCount: flashcards.length,
     quizCount: quizData ? quizData.length : 0,
     visualCount: visuals.length,
-  }), [hookAudioSrc, videoPlaylist, flashcards, quizData, visuals]);
+    deckSlideCount: deckSlides.length,
+  }), [hookAudioSrc, videoPlaylist, flashcards, quizData, visuals, deckSlides]);
 
   return (
     <div className="flex flex-col">
@@ -841,8 +883,10 @@ export function MCPageClient({
             quizData={quizData}
             flashcards={flashcards}
             microlearningData={microlearningData}
+            deckSlides={deckSlides}
             professioneText={professioneText}
             appendiceSection={appendiceSection}
+            onQuizComplete={handleQuizComplete}
           />
         )}
       </MCNavigator>

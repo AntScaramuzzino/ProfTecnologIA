@@ -141,6 +141,31 @@ export function getPrimaryVisual(mcId: string): VisualAsset | null {
   return getVisualAssets(mcId)[0] ?? null;
 }
 
+// ── SLIDE PRESENTAZIONE (deck NotebookLM convertito in immagini) ──────────────
+
+const PUBLIC_DECK_ROOT = path.join(process.cwd(), "public", "assets", "presentazioni");
+
+/**
+ * Slide della presentazione della MC come immagini per il carosello.
+ * Convenzione: public/assets/presentazioni/{mcId}/slide-NN.webp
+ * (deck generato via NotebookLM dal prompt in 04_CONTENUTI/presentazioni/,
+ * poi convertito in WebP.)
+ */
+export function getMCDeckSlides(mcId: string): VisualAsset[] {
+  const dir = path.join(PUBLIC_DECK_ROOT, mcId);
+  if (!fs.existsSync(dir)) return [];
+
+  return fs
+    .readdirSync(dir)
+    .filter((name) => /^slide-\d+\.(webp|png|jpe?g)$/i.test(name))
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+    .map((name, i) => ({
+      kind: "other" as const,
+      label: `Slide ${i + 1}`,
+      src: `${PUBLIC_BASE_PATH}/assets/presentazioni/${mcId}/${name}`,
+    }));
+}
+
 const PUBLIC_AUDIO_ROOT = path.join(process.cwd(), "public", "assets", "audio");
 
 export function getMCHookAudio(mcId: string): string | null {
@@ -368,12 +393,14 @@ function assetRank(name: string): number {
   if (name.includes("immagine_da_md") || name.includes("ciclo") || name.includes("diagram")) return 2;
   // Rank 3 — infografiche (mostrate in galleria, non come hero)
   if (name.includes("infografica") || name.includes("img2-infografica")) return 3;
+  if (name.includes("ripassa-sketchnote")) return 3;
   // Rank 4 — ritratti professione, mindmap e altro
   return 4;
 }
 
 function getAssetKind(name: string): VisualAsset["kind"] {
   if (name.includes("infografica") || name.includes("img2-infografica")) return "generated";
+  if (name.includes("ripassa-sketchnote")) return "diagram";
   if (name.includes("ai-fotorealistica") || name.includes("img1-soggetto")
       || name.includes("illustrazione") || name.includes("soggetto")) return "hero";
   if (name.includes("ai-contesto") || name.includes("img3-contesto")) return "generated";
@@ -383,6 +410,7 @@ function getAssetKind(name: string): VisualAsset["kind"] {
 
 function getAssetLabel(name: string): string {
   if (name.includes("infografica") || name.includes("img2-infografica")) return "Infografica";
+  if (name.includes("ripassa-sketchnote")) return "Ripassa";
   if (name.includes("ai-fotorealistica")) return "Illustrazione AI";
   if (name.includes("img1-soggetto")) return "Soggetto";
   if (name.includes("ai-contesto") || name.includes("img3-contesto")) return "Contesto reale";

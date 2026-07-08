@@ -40,6 +40,8 @@ interface QuizWidgetProps {
   mcId: string;
   livello: "F" | "I" | "A";
   quizData?: RealQuizQuestion[]; // quiz reali validati — se assenti usa demo
+  /** Chiamata al termine del quiz con punteggio finale — usata da useProgress */
+  onComplete?: (score: number, total: number, level: "F" | "I" | "A") => void;
 }
 
 const LEVEL_LABELS: Record<string, string> = {
@@ -54,76 +56,7 @@ const LEVEL_COLORS: Record<string, string> = {
   A: "bg-purple-100 text-purple-800 border-purple-200",
 };
 
-// Demo quiz data — in produzione i quiz reali sono in data/quiz/ (Claude API batch)
-function buildDemoQuiz(mcId: string, livello: "F" | "I" | "A"): QuizData {
-  const byLevel: Record<"F" | "I" | "A", QuizDomanda[]> = {
-    F: [
-      {
-        id: "q1",
-        domanda: `Quale delle seguenti è la descrizione più corretta per la competenza "${mcId}"?`,
-        opzioni: [
-          { id: "a", testo: "Saper riconoscere e denominare il concetto principale" },
-          { id: "b", testo: "Saper ignorare il contesto" },
-          { id: "c", testo: "Saper applicare formule senza capirle", feedback_errato: "Applicare senza capire non è una competenza reale." },
-          { id: "d", testo: "Nessuna delle precedenti", feedback_errato: "Rileggi la scheda della competenza." },
-        ],
-        risposta_corretta: "a",
-        livello: "F",
-        spiegazione: "Il primo passo è sempre riconoscere e saper nominare correttamente un concetto.",
-      },
-      {
-        id: "q2",
-        domanda: "In quale momento della giornata usi di più le tecnologie digitali?",
-        opzioni: [
-          { id: "a", testo: "Al mattino a scuola" },
-          { id: "b", testo: "Nel pomeriggio a casa" },
-          { id: "c", testo: "Sempre, continuamente" },
-          { id: "d", testo: "Mai, non le uso", feedback_errato: "Se stai usando questa app, stai già usando tecnologia digitale!" },
-        ],
-        risposta_corretta: "b",
-        livello: "F",
-        spiegazione: "Non esiste una risposta 'sbagliata' qui — l'importante è essere consapevoli del proprio uso.",
-      },
-    ],
-    I: [
-      {
-        id: "q3",
-        domanda: "Quale strategia applicheresti per risolvere un problema legato a questa competenza?",
-        opzioni: [
-          { id: "a", testo: "Cerco la soluzione online senza valutarla", feedback_errato: "Le fonti online vanno sempre valutate criticamente." },
-          { id: "b", testo: "Applico i passaggi appresi e verifico il risultato" },
-          { id: "c", testo: "Chiedo sempre all'insegnante prima di provare", feedback_errato: "L'autonomia è parte della competenza intermedia." },
-          { id: "d", testo: "Ignoro il problema se è difficile", feedback_errato: "Affrontare la difficoltà è fondamentale per crescere." },
-        ],
-        risposta_corretta: "b",
-        livello: "I",
-        spiegazione: "A livello intermedio sai applicare procedimenti e verificare autonomamente i risultati.",
-      },
-    ],
-    A: [
-      {
-        id: "q4",
-        domanda: "Come adatteresti questa competenza a una situazione completamente nuova e complessa?",
-        opzioni: [
-          { id: "a", testo: "Seguirei esattamente i passaggi già noti", feedback_errato: "Le situazioni nuove richiedono adattamento, non sola ripetizione." },
-          { id: "b", testo: "Rifiuterei di affrontarla perché è troppo difficile", feedback_errato: "Il livello avanzato include la capacità di affrontare l'incertezza." },
-          { id: "c", testo: "Analizzi il contesto, trasferisci principi noti, valuti l'impatto" },
-          { id: "d", testo: "Chiederei a un esperto di fare tutto al posto mio", feedback_errato: "L'autonomia esperta include sapere quando collaborare, non delegare tutto." },
-        ],
-        risposta_corretta: "c",
-        livello: "A",
-        spiegazione: "A livello avanzato sai trasferire competenze tra contesti, analizzare l'impatto e gestire l'incertezza.",
-      },
-    ],
-  };
-
-  return {
-    mc_id: mcId,
-    domande: byLevel[livello],
-  };
-}
-
-export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps) {
+export default function QuizWidget({ mcId, livello, quizData, onComplete }: QuizWidgetProps) {
   const [selectedLevel, setSelectedLevel] = useState<"F" | "I" | "A">(livello);
   const [quiz, setQuiz] = useState<QuizData | null>(null);
   const [currentQ, setCurrentQ] = useState(0);
@@ -135,36 +68,39 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
   const isReal = !!quizData && quizData.length > 0;
 
   useEffect(() => {
-    // Usa quiz reali validati se disponibili, altrimenti demo
-    let data: QuizData;
-    if (isReal) {
-      // Converte il formato RealQuizQuestion → QuizDomanda interno
-      const domande: QuizDomanda[] = quizData!
-        .filter((q) => q.livello === selectedLevel)
-        .map((q, i) => ({
-          id: `q${i}`,
-          domanda: q.domanda,
-          livello: q.livello,
-          spiegazione: q.spiegazione,
-          risposta_corretta: q.opzioni.find((o) => o.corretto)?.id ?? "a",
-          opzioni: q.opzioni.map((o) => ({
-            id: o.id,
-            testo: o.testo,
-            feedback_errato: o.corretto ? undefined : o.feedback,
-          })),
-        }));
-      data = { mc_id: mcId, domande };
-    } else {
-      data = buildDemoQuiz(mcId, selectedLevel);
+    if (!isReal || !quizData) {
+      setQuiz(null);
+      setCurrentQ(0);
+      setSelected(null);
+      setConfirmed(false);
+      setScore(0);
+      setFinished(false);
+      setAnswers({});
+      return;
     }
-    setQuiz(data);
+    // Converte il formato RealQuizQuestion → QuizDomanda interno
+    const domande: QuizDomanda[] = quizData
+      .filter((q) => q.livello === selectedLevel)
+      .map((q, i) => ({
+        id: `q${i}`,
+        domanda: q.domanda,
+        livello: q.livello,
+        spiegazione: q.spiegazione,
+        risposta_corretta: q.opzioni.find((o) => o.corretto)?.id ?? "a",
+        opzioni: q.opzioni.map((o) => ({
+          id: o.id,
+          testo: o.testo,
+          feedback_errato: o.corretto ? undefined : o.feedback,
+        })),
+      }));
+    setQuiz({ mc_id: mcId, domande });
     setCurrentQ(0);
     setSelected(null);
     setConfirmed(false);
     setScore(0);
     setFinished(false);
     setAnswers({});
-  }, [mcId, selectedLevel]);
+  }, [mcId, selectedLevel, quizData, isReal]);
 
   if (!quiz || quiz.domande.length === 0) {
     return (
@@ -192,6 +128,8 @@ export default function QuizWidget({ mcId, livello, quizData }: QuizWidgetProps)
   function handleNext() {
     if (currentQ + 1 >= quiz!.domande.length) {
       setFinished(true);
+      // Notifica il parent (MCPageClient → useProgress) con il punteggio finale
+      onComplete?.(score, totalQ, selectedLevel);
     } else {
       setCurrentQ((q) => q + 1);
       setSelected(null);
