@@ -615,11 +615,45 @@ function ZonePanel({
   // ── ESPLORA — AccordionSection ────────────────────────────────────────────
   if (tabId === "ESPLORA") {
     const accordionItems = splitEsploraIntoAccordion(body);
-    const items: AccordionItem[] = accordionItems.map((ai) => ({
+
+    // Infografiche del processo produttivo — iniettate nel testo, non come blocco separato
+    const processoAssets = visuals.filter(
+      (v) =>
+        v.src.includes("infografica_processo") ||
+        v.src.includes("infografica_latte") ||
+        v.src.includes("infografica_lavorazione")
+    );
+
+    // Trova la sezione dell'accordion che descrive il processo (ciclo, fasi, lavorazione…)
+    const processoKeywords = /fase|fasi|ciclo|processo|produttiv|lavorazione|fabbricaz|trasform|come si|come viene|come arriva|come funziona|passaggi/i;
+    const matchIdx = accordionItems.findIndex((ai) => processoKeywords.test(ai.title));
+    // Fallback: seconda sezione (idx 1) se nessuna fa match, o la prima se è l'unica
+    const injectIdx = processoAssets.length > 0
+      ? (matchIdx >= 0 ? matchIdx : Math.min(1, accordionItems.length - 1))
+      : -1;
+
+    const items: AccordionItem[] = accordionItems.map((ai, idx) => ({
       id: ai.id,
       title: ai.title,
-      children: <ReadableBodyInTab body={ai.body} />,
+      children: (
+        <>
+          <ReadableBodyInTab body={ai.body} />
+          {/* Infografica processo — in fondo alla sezione rilevante */}
+          {idx === injectIdx && (
+            <div className="mt-6 space-y-4">
+              {processoAssets.map((asset, i) => (
+                <MCVisual key={i} asset={asset} alt={`Processo produttivo — ${mc.titolo}`} />
+              ))}
+            </div>
+          )}
+        </>
+      ),
     }));
+
+    // Galleria residua: esclude sketchnote (→ RIPASSA) e infografiche processo (→ nel testo)
+    const galleriaAssets = visuals.filter(
+      (v) => v.label !== "Ripassa" && !processoAssets.includes(v)
+    );
 
     return (
       <div className="px-4 py-4 sm:px-6">
@@ -633,11 +667,11 @@ function ZonePanel({
           </div>
         )}
         <AccordionSection items={items} defaultFirstOpen areaHex={areaHex} />
-        {/* Galleria visual con carosello e zoom — esclude sketchnote (stanno in RIPASSA) */}
-        {visuals.filter((v) => v.label !== "Ripassa").length > 0 && (
+        {/* Galleria visual — esclude sketchnote (RIPASSA) e infografiche processo (nel testo) */}
+        {galleriaAssets.length > 0 && (
           <div className="mt-8">
             <p className="mb-4 text-xs font-black uppercase tracking-wide text-slate-500">Galleria visuale</p>
-            <MCImageCarousel visuals={visuals.filter((v) => v.label !== "Ripassa")} mcTitolo={mc.titolo} />
+            <MCImageCarousel visuals={galleriaAssets} mcTitolo={mc.titolo} />
           </div>
         )}
       </div>

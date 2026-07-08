@@ -126,9 +126,18 @@ export function getVisualAssets(mcId: string): VisualAsset[] {
   const dir = path.join(PUBLIC_VISUAL_ROOT, mcId);
   if (!fs.existsSync(dir)) return [];
 
-  return fs
-    .readdirSync(dir)
-    .filter((name) => /\.(svg|png|jpe?g|webp)$/i.test(name))
+  const all = fs.readdirSync(dir).filter((name) => /\.(svg|png|jpe?g|webp)$/i.test(name));
+
+  // Prefer WebP: se esiste .webp per una data base, salta il .png corrispondente
+  const webpBases = new Set(
+    all.filter((n) => /\.webp$/i.test(n)).map((n) => n.replace(/\.webp$/i, ""))
+  );
+
+  return all
+    .filter((name) => {
+      if (/\.png$/i.test(name) && webpBases.has(name.replace(/\.png$/i, ""))) return false;
+      return true;
+    })
     .sort((a, b) => assetRank(a) - assetRank(b) || a.localeCompare(b))
     .map((name) => ({
       kind: getAssetKind(name),
