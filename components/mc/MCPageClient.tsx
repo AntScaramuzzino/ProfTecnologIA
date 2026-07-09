@@ -666,38 +666,24 @@ function ZonePanel({
 
     return (
       <div className="px-4 py-6 sm:px-6 space-y-8">
-        {/* Process interattivo — fasi del ciclo tecnologico */}
-        {microlearningData?.process && (
+        {/* Infografica del processo — in cima, prima del testo */}
+        {processoAssets.length > 0 && (
           <div>
             <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
-              🔄 Il processo passo per passo
+              🏭 Il processo in dettaglio
             </p>
-            <ProcessWidget
-              titolo={microlearningData.process.titolo}
-              steps={microlearningData.process.steps}
-              areaHex={areaHex}
-            />
+            {processoAssets.map((asset, i) => (
+              <MCVisual key={i} asset={asset} alt={`Processo — ${mc.titolo}`} className={i > 0 ? "mt-4" : ""} zoomable />
+            ))}
           </div>
         )}
 
         {/* Il body arriva già senza la sezione Professione (estratta in MCPageClient) */}
         <ReadableBodyInTab body={body} />
 
-        {/* Infografica del processo — dopo il testo, prima dei video */}
-        {processoAssets.length > 0 && (
-          <div className="mt-8">
-            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
-              🏭 Il processo in dettaglio
-            </p>
-            {processoAssets.map((asset, i) => (
-              <MCVisual key={i} asset={asset} alt={`Processo — ${mc.titolo}`} className={i > 0 ? "mt-4" : ""} />
-            ))}
-          </div>
-        )}
-
         {/* Gallery video YouTube — 9 video */}
         {videoPlaylist.length > 3 && (
-          <div className="mt-8">
+          <div>
             <VideoGallery videos={videoPlaylist.slice(3, 12)} mcTitolo={mc.titolo} />
           </div>
         )}
