@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useProgress, type MCProgress } from "@/lib/useProgress";
+import { SDG_BADGES, getBadgeState } from "@/lib/sdg-badges";
 
 // ── Metadati area (statici — niente import da mc-loader che usa fs) ───────────
 
@@ -30,6 +31,7 @@ export interface MCIndexEntry {
   area:  string;
   anno:  number;
   tags:  string[];
+  sdg:   number[];
 }
 
 interface ProgressiClientProps {
@@ -69,6 +71,7 @@ function ScoreBadge({ r }: { r: MCProgress }) {
 
 export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
   const { store, hydrated, completedCount, passedCount, reset } = useProgress();
+  const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   // Indice rapido: id → MC
   const mcMap = new Map(mcIndex.map((m) => [m.id, m]));
@@ -93,6 +96,24 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
   const sortedRecords = Object.values(store.completedMCs).sort(
     (a, b) => new Date(b.completedAt).getTime() - new Date(a.completedAt).getTime(),
   );
+
+  const badgeProgress = SDG_BADGES.map((badge) => {
+    const linkedMCs = mcIndex.filter((mc) => mc.sdg.includes(badge.sdg));
+    const visited = linkedMCs.filter((mc) => store.completedMCs[mc.id]).length;
+    const passed = linkedMCs.filter((mc) => {
+      const rec = store.completedMCs[mc.id];
+      return rec ? isPassed(rec) : false;
+    }).length;
+    const pct = Math.min(100, Math.round((passed / badge.requiredPassed) * 100));
+    return {
+      badge,
+      linkedMCs,
+      visited,
+      passed,
+      pct,
+      state: getBadgeState(passed, badge.requiredPassed),
+    };
+  });
 
   const total = mcIndex.length;
   const visitedPct = total > 0 ? Math.round((completedCount / total) * 100) : 0;
@@ -181,6 +202,104 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
             </div>
           </>
         )}
+      </div>
+
+      {/* ── Badge Agenda 2030 ─────────────────────────────────────────────── */}
+      <div className="mb-8">
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-sm font-black uppercase tracking-widest text-slate-500">
+            Badge Agenda 2030
+          </h2>
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-black text-slate-600">
+            {badgeProgress.filter((b) => b.state === "unlocked").length}/{SDG_BADGES.length} sbloccati
+          </span>
+        </div>
+
+        {/* Griglia badge — 2 col mobile, 3 col sm+ */}
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+          {[...badgeProgress]
+            .sort((a, b) => {
+              const order: Record<string, number> = { unlocked: 0, progress: 1, locked: 2 };
+              return order[a.state] - order[b.state];
+            })
+            .map(({ badge, linkedMCs, visited, passed, pct, state }) => {
+              const isUnlocked = state === "unlocked";
+              const isProgress = state === "progress";
+              const isLocked   = state === "locked";
+
+              return (
+                <div
+                  key={badge.id}
+                  className={`relative flex flex-col items-center overflow-hidden rounded-xl border bg-white px-3 pb-4 pt-4 text-center shadow-sm transition-shadow hover:shadow-md ${
+                    isUnlocked
+                      ? "border-emerald-300 ring-1 ring-emerald-200"
+                      : isProgress
+                        ? "border-slate-200"
+                        : "border-slate-100"
+                  }`}
+                >
+                  {/* Stato chip — in alto a destra */}
+                  <span
+                    className={`absolute right-2 top-2 rounded-full px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wide ${
+                      isUnlocked
+                        ? "bg-emerald-100 text-emerald-700"
+                        : isProgress
+                          ? "bg-amber-100 text-amber-700"
+                          : "bg-slate-100 text-slate-400"
+                    }`}
+                  >
+                    {isUnlocked ? "✓" : isProgress ? "…" : "🔒"}
+                  </span>
+
+                  {/* Immagine badge */}
+                  <div className="relative mb-2">
+                    <img
+                      src={`${publicBasePath}${badge.assetSrc}`}
+                      alt={`${badge.shortTitle}: ${badge.title}`}
+                      width={72}
+                      height={72}
+                      className={`h-[72px] w-[72px] rounded-xl transition ${
+                        isLocked ? "grayscale opacity-35" : "opacity-100 drop-shadow-sm"
+                      }`}
+                    />
+                  </div>
+
+                  {/* Titoli */}
+                  <p
+                    className="text-[11px] font-black uppercase tracking-widest"
+                    style={{ color: isLocked ? "#94a3b8" : badge.accent }}
+                  >
+                    {badge.shortTitle}
+                  </p>
+                  <p className={`mt-0.5 text-xs font-bold leading-tight ${isLocked ? "text-slate-400" : "text-slate-800"}`}>
+                    {badge.title}
+                  </p>
+
+                  {/* Progress bar */}
+                  <div className="mt-3 w-full">
+                    <div className="mb-1 flex justify-between text-[9px] font-bold text-slate-400">
+                      <span>{passed}/{badge.requiredPassed} quiz</span>
+                      <span>{visited}/{linkedMCs.length} MC</span>
+                    </div>
+                    <div className="h-1.5 overflow-hidden rounded-full bg-slate-100">
+                      <div
+                        className="h-full rounded-full transition-all duration-700"
+                        style={{
+                          width: `${pct}%`,
+                          backgroundColor: isUnlocked ? "#16a34a" : isLocked ? "#cbd5e1" : badge.accent,
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+        </div>
+
+        {/* Legenda */}
+        <p className="mt-3 text-center text-[10px] text-slate-400">
+          Supera i quiz delle MC collegate per sbloccare ogni badge
+        </p>
       </div>
 
       {/* ── Per area ────────────────────────────────────────────────────────── */}
