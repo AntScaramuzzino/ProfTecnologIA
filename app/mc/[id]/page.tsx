@@ -125,31 +125,6 @@ export default async function MCPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── Traguardo di competenza — sostituisce il Compito di realtà sopra il navigator ── */}
-      <section className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
-        <div
-          className="rounded-lg border border-slate-200 bg-white p-4 sm:p-5"
-          style={{ borderLeftColor: areaHex ?? "#10B981", borderLeftWidth: 4 }}
-        >
-          <div className="mb-2 flex flex-wrap items-center gap-2">
-            <p className="text-xs font-black uppercase tracking-wide text-slate-500">
-              📌 Cosa imparo in questa MC
-            </p>
-            {mc.frameworks?.DC?.ref && (
-              <span
-                className="ml-auto rounded-full px-2.5 py-0.5 text-[10px] font-black text-white"
-                style={{ backgroundColor: areaHex ?? "#10B981" }}
-              >
-                DigComp {mc.outputApp.livelloDigComp} · {mc.frameworks.DC.ref.split(" ").slice(0, 2).join(" ")}
-              </span>
-            )}
-          </div>
-          <p className="text-base leading-7 text-slate-800 sm:text-lg sm:leading-9">
-            {mc.frameworks?.IN?.traguardo ?? mc.frameworks?.DC?.nota ?? mc.descrizione}
-          </p>
-        </div>
-      </section>
-
       {/* ── Layout principale: MCPageClient (navigator + contenuto) + aside ── */}
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-0 px-0 sm:gap-6 sm:px-6 sm:pb-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-8">
 
