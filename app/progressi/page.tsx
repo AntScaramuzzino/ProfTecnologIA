@@ -19,6 +19,7 @@ export default function ProgressiPage() {
     area:   mc.area,
     anno:   mc.anno as number,
     tags:   mc.tags ?? [],
+    sdg:    mc.sdg ?? [],
   }));
 
   return <ProgressiClient mcIndex={mcIndex} />;
