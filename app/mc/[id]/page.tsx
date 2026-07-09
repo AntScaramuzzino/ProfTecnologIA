@@ -156,6 +156,51 @@ export default async function MCPage({ params }: Props) {
         {/* Aside destra */}
         <aside className="hidden min-w-0 space-y-5 lg:block">
 
+          {/* QR Assistente AI */}
+          <section className="overflow-hidden rounded-lg border border-emerald-200 bg-white shadow-sm">
+            <div
+              className="flex items-center gap-2 border-b border-emerald-100 px-4 py-2.5"
+              style={{ backgroundColor: areaHex ? `${areaHex}18` : "#d1fae510" }}
+            >
+              <span className="text-base">🤖</span>
+              <p className="text-sm font-black text-slate-700">Chiedi all&apos;Assistente AI</p>
+            </div>
+            <div className="flex flex-col items-center gap-3 px-4 py-4">
+              <a
+                href="https://chatgpt.com/g/g-r8SUrcWtt-proftecnologia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block transition-opacity hover:opacity-80"
+                aria-label="Apri ProfTecnologIA su ChatGPT"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/qr-proftecnologia.webp"
+                  alt="QR Code ProfTecnologIA Assistant"
+                  width={180}
+                  height={180}
+                  className="rounded-lg"
+                />
+              </a>
+              <div className="text-center">
+                <p className="text-xs font-semibold text-slate-600">
+                  Scansiona o clicca per aprire
+                </p>
+                <p className="mt-0.5 text-[10px] text-slate-400">
+                  ProfTecnologIA · GPT Assistant
+                </p>
+              </div>
+              <a
+                href="https://chatgpt.com/g/g-r8SUrcWtt-proftecnologia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full rounded-lg border border-emerald-300 bg-emerald-50 px-3 py-2 text-center text-xs font-black text-emerald-800 transition-colors hover:bg-emerald-100"
+              >
+                Apri l&apos;assistente →
+              </a>
+            </div>
+          </section>
+
           {/* Prerequisiti — in cima all'aside per rendere visibile il percorso */}
           {prereqs.length > 0 && (
             <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
