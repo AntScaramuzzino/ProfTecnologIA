@@ -161,6 +161,73 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
         </div>
       </div>
 
+      {/* ── Challenge Agenda 2030 — guida sempre visibile ───────────────────── */}
+      <div className="mb-8 overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
+        {/* Header verde */}
+        <div className="flex items-center gap-3 border-b border-emerald-100 bg-emerald-50 px-5 py-4">
+          <span className="text-2xl">🏆</span>
+          <div>
+            <p className="text-xs font-black uppercase tracking-widest text-emerald-600">
+              ProfTecnologIA Challenge
+            </p>
+            <p className="text-base font-black text-slate-900">
+              Sblocca i 12 Badge Agenda 2030
+            </p>
+          </div>
+          <div className="ml-auto shrink-0 rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">
+            {total} MC · 12 badge
+          </div>
+        </div>
+
+        {/* 3 passi */}
+        <div className="grid grid-cols-1 divide-y divide-slate-100 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+          {[
+            {
+              step: "1",
+              emoji: "📖",
+              title: "Esplora le MC",
+              body: "Apri una micro-competenza dal catalogo. Leggi il testo in ESPLORA e guarda i video in OSSERVA.",
+              color: "#1D4ED8",
+            },
+            {
+              step: "2",
+              emoji: "🎯",
+              title: "Supera il quiz",
+              body: "Vai in RIPASSA e completa il quiz. Servono almeno 70% di risposte corrette per contare come quiz superato.",
+              color: "#15803D",
+            },
+            {
+              step: "3",
+              emoji: "🏅",
+              title: "Sblocca il badge",
+              body: "Ogni MC è collegata a un obiettivo dell'Agenda 2030. Supera abbastanza quiz nello stesso SDG per conquistare il badge.",
+              color: "#C2410C",
+            },
+          ].map(({ step, emoji, title, body, color }) => (
+            <div key={step} className="flex gap-3 px-5 py-4">
+              <span
+                className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-black text-white"
+                style={{ backgroundColor: color }}
+              >
+                {step}
+              </span>
+              <div>
+                <p className="text-sm font-black text-slate-900">{emoji} {title}</p>
+                <p className="mt-1 text-xs leading-relaxed text-slate-500">{body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Footer con SDG reference */}
+        <div className="border-t border-slate-100 bg-slate-50 px-5 py-3">
+          <p className="text-[10px] leading-relaxed text-slate-400">
+            <span className="font-bold text-slate-500">Gli Obiettivi di Sviluppo Sostenibile (SDG)</span> sono i 17 traguardi dell&apos;Agenda 2030 dell&apos;ONU per un futuro equo e sostenibile.
+            Ogni MC di ProfTecnologIA è allineata a uno o più SDG — studia, supera i quiz e dimostra la tua competenza.
+          </p>
+        </div>
+      </div>
+
       {/* ── Contatori principali ─────────────────────────────────────────────── */}
       <div className="mb-8 grid grid-cols-3 gap-3">
         {[
