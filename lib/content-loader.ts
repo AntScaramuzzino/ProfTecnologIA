@@ -403,11 +403,14 @@ function assetRank(name: string): number {
   // Rank 3 — infografiche (mostrate in galleria, non come hero)
   if (name.includes("infografica") || name.includes("img2-infografica")) return 3;
   if (name.includes("ripassa-sketchnote")) return 3;
-  // Rank 4 — ritratti professione, mindmap e altro
-  return 4;
+  // Rank 4 — compito di realtà (destinato alla tab AGISCI)
+  if (name.includes("compito_realta")) return 4;
+  // Rank 5 — ritratti professione, mindmap e altro
+  return 5;
 }
 
 function getAssetKind(name: string): VisualAsset["kind"] {
+  if (name.includes("compito_realta")) return "generated";
   if (name.includes("infografica") || name.includes("img2-infografica")) return "generated";
   if (name.includes("ripassa-sketchnote")) return "diagram";
   if (name.includes("ai-fotorealistica") || name.includes("img1-soggetto")
@@ -418,6 +421,7 @@ function getAssetKind(name: string): VisualAsset["kind"] {
 }
 
 function getAssetLabel(name: string): string {
+  if (name.includes("compito_realta")) return "Compito di Realtà";
   if (name.includes("infografica") || name.includes("img2-infografica")) return "Infografica";
   if (name.includes("ripassa-sketchnote")) return "Ripassa";
   if (name.includes("ai-fotorealistica")) return "Illustrazione AI";

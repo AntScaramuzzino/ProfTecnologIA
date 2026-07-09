@@ -621,10 +621,11 @@ function ZonePanel({
       children: <ReadableBodyInTab body={ai.body} />,
     }));
 
-    // Galleria residua: esclude sketchnote (→ RIPASSA) e infografiche processo (→ OSSERVA)
+    // Galleria residua: esclude sketchnote (→ RIPASSA), infografiche processo (→ OSSERVA), compito_realta (→ AGISCI)
     const galleriaAssets = visuals.filter(
       (v) =>
         v.label !== "Ripassa" &&
+        v.label !== "Compito di Realtà" &&
         !v.src.includes("infografica_processo") &&
         !v.src.includes("infografica_latte") &&
         !v.src.includes("infografica_lavorazione")
@@ -751,6 +752,20 @@ function ZonePanel({
             </div>
           </div>
         )}
+
+        {/* ── Visual compito di realtà ─────────────────────────────────── */}
+        {(() => {
+          const compitoAsset = visuals.find((v) => v.label === "Compito di Realtà");
+          return compitoAsset ? (
+            <div>
+              <MCVisual
+                asset={compitoAsset}
+                alt={`Scenario del compito di realtà — ${mc.titolo}`}
+                zoomable
+              />
+            </div>
+          ) : null;
+        })()}
 
         {/* ── Differenziazione ────────────────────────────────────────────── */}
         {mc.note_didattiche && (
