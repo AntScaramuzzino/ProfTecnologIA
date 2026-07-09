@@ -18,6 +18,7 @@ import {
   getMCDeckSlides,
 } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
+import { SDG_BADGES } from "@/lib/sdg-badges";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -60,6 +61,11 @@ export default async function MCPage({ params }: Props) {
   const microlearningData    = getMCMicrolearningInteractives(mc.id);
   const deckSlides           = getMCDeckSlides(mc.id);
   const prereqs              = getPrerequisiteChain(mc.id);
+  // SDG index per badge unlock detection (client)
+  const sdgIndex = getAllMCs().map((m) => ({ id: m.id, sdg: m.sdg ?? [] }));
+  // Badge principale per chip SDG
+  const sdgPrincipale = (mc as { sdg_principale?: number }).sdg_principale ?? null;
+  const sdgBadge = sdgPrincipale ? SDG_BADGES.find((b) => b.sdg === sdgPrincipale) ?? null : null;
   const related = getAllMCs()
     .filter((item) => item.area === mc.area && item.id !== mc.id)
     .slice(0, 3);
@@ -91,6 +97,22 @@ export default async function MCPage({ params }: Props) {
               <span className={cx("rounded-full border px-2.5 py-1 text-xs font-bold sm:px-3 sm:text-sm", levelBadge[level])}>
                 DigComp {level}
               </span>
+              {sdgBadge && (
+                <Link
+                  href="/progressi"
+                  className="flex items-center gap-1.5 rounded-full bg-white/85 px-2.5 py-1 text-xs font-bold text-slate-700 shadow-sm hover:bg-white sm:px-3 sm:text-sm"
+                  title={`Badge: ${sdgBadge.title}`}
+                >
+                  <img
+                    src={`/assets/badges/sdg/${sdgBadge.assetSrc.split("/").pop()}`}
+                    alt={sdgBadge.shortTitle}
+                    width={16}
+                    height={16}
+                    className="h-4 w-4"
+                  />
+                  <span style={{ color: sdgBadge.accent }}>{sdgBadge.shortTitle}</span>
+                </Link>
+              )}
             </div>
             <h1 className="max-w-3xl text-2xl font-black leading-tight text-slate-950 sm:text-4xl md:text-5xl">
               {mc.titolo}
@@ -150,6 +172,7 @@ export default async function MCPage({ params }: Props) {
             visuals={visuals}
             microlearningData={microlearningData}
             deckSlides={deckSlides}
+            sdgIndex={sdgIndex}
           />
         </div>
 
@@ -200,6 +223,37 @@ export default async function MCPage({ params }: Props) {
               </a>
             </div>
           </section>
+
+          {/* Card badge SDG */}
+          {sdgBadge && (
+            <section className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+              <div
+                className="h-1 w-full"
+                style={{ backgroundColor: sdgBadge.accent }}
+              />
+              <div className="flex items-center gap-3 px-4 py-3">
+                <img
+                  src={`/assets/badges/sdg/${sdgBadge.assetSrc.split("/").pop()}`}
+                  alt={sdgBadge.shortTitle}
+                  width={44}
+                  height={44}
+                  className="h-11 w-11 shrink-0 rounded-lg"
+                />
+                <div className="min-w-0">
+                  <p className="text-[10px] font-black uppercase tracking-widest" style={{ color: sdgBadge.accent }}>
+                    {sdgBadge.shortTitle}
+                  </p>
+                  <p className="text-xs font-bold leading-tight text-slate-800">{sdgBadge.title}</p>
+                  <Link
+                    href="/progressi"
+                    className="mt-0.5 block text-[10px] font-semibold text-slate-400 hover:text-emerald-600 transition-colors"
+                  >
+                    Supera i quiz per sbloccarlo →
+                  </Link>
+                </div>
+              </div>
+            </section>
+          )}
 
           {/* Prerequisiti — in cima all'aside per rendere visibile il percorso */}
           {prereqs.length > 0 && (

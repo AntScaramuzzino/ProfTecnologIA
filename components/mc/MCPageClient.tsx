@@ -23,6 +23,8 @@
 
 import { useMemo, useCallback, useState, useEffect } from "react";
 import { useProgress } from "@/lib/useProgress";
+import { useBadgeUnlock, type SdgEntry } from "@/lib/useBadgeUnlock";
+import BadgeUnlockToast from "@/components/mc/BadgeUnlockToast";
 import { MCNavigator, type NavigatorTab } from "@/components/mc/MCNavigator";
 import { AccordionSection, type AccordionItem } from "@/components/mc/AccordionSection";
 import { LevelTabs, type DigCompLevel } from "@/components/mc/LevelTabs";
@@ -58,6 +60,8 @@ interface MCPageClientProps {
   microlearningData?: MicrolearningInteractives | null;
   /** Slide della presentazione (deck NotebookLM → immagini) per il carosello in apertura di ESPLORA */
   deckSlides?: VisualAsset[];
+  /** Indice SDG di tutte le MC — usato per rilevare badge appena sbloccati */
+  sdgIndex?: SdgEntry[];
 }
 
 // ── Mapping sezione MD → tab ID ──────────────────────────────────────────────
@@ -829,6 +833,7 @@ export function MCPageClient({
   visuals,
   microlearningData,
   deckSlides = [],
+  sdgIndex = [],
 }: MCPageClientProps) {
   // Pre-computa la sezione APPENDICE (fuori dai 5 tab)
   const appendiceSection = useMemo(() => {
@@ -873,7 +878,11 @@ export function MCPageClient({
   const mcLevel = mc.outputApp.livelloDigComp === "H" ? "A" : (mc.outputApp.livelloDigComp as DigCompLevel);
 
   // ── Tracking progressi studente ──────────────────────────────────────────
-  const { markVisited, recordQuizResult } = useProgress();
+  const { store, hydrated, markVisited, recordQuizResult } = useProgress();
+
+  // ── Badge unlock detection ────────────────────────────────────────────────
+  const { newlyUnlocked, clearUnlocked } = useBadgeUnlock(store, sdgIndex, hydrated);
+  const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
   // Segna la MC come visitata al primo caricamento
   useEffect(() => {
@@ -908,6 +917,15 @@ export function MCPageClient({
 
   return (
     <div className="flex flex-col">
+      {/* ── Badge unlock toast ── */}
+      {newlyUnlocked && (
+        <BadgeUnlockToast
+          badge={newlyUnlocked}
+          onClose={clearUnlocked}
+          publicBasePath={publicBasePath}
+        />
+      )}
+
       {/* ── 5-zone navigator ── */}
       <MCNavigator tabs={tabs} areaHex={areaHex} forcedActiveId={forcedTab} onForcedTabConsumed={() => setForcedTab(null)}>
         {(activeId) => (
