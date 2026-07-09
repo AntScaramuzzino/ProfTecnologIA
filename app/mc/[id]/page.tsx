@@ -126,8 +126,8 @@ export default async function MCPage({ params }: Props) {
       </section>
 
       {/* ── Traguardo di competenza — sostituisce il Compito di realtà sopra il navigator ── */}
-      <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
-        <section
+      <section className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
+        <div
           className="rounded-lg border border-slate-200 bg-white p-4 sm:p-5"
           style={{ borderLeftColor: areaHex ?? "#10B981", borderLeftWidth: 4 }}
         >
@@ -147,8 +147,8 @@ export default async function MCPage({ params }: Props) {
           <p className="text-base leading-7 text-slate-800 sm:text-lg sm:leading-9">
             {mc.frameworks?.IN?.traguardo ?? mc.frameworks?.DC?.nota ?? mc.descrizione}
           </p>
-        </section>
-      </div>
+        </div>
+      </section>
 
       {/* ── Layout principale: MCPageClient (navigator + contenuto) + aside ── */}
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-0 px-0 sm:gap-6 sm:px-6 sm:pb-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-8">
