@@ -1,11 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Placeholder badge SDG 11 — sostituire con SVG definitivo da Codex -->
-  <circle cx="100" cy="100" r="96" fill="#FD9D24" />
-  <circle cx="100" cy="100" r="88" fill="none" stroke="white" stroke-width="3" opacity="0.4"/>
-  <text x="100" y="72" text-anchor="middle" font-family="Arial Black, sans-serif"
-        font-size="13" font-weight="900" fill="white" letter-spacing="2" opacity="0.85">SDG</text>
-  <text x="100" y="122" text-anchor="middle" font-family="Arial Black, sans-serif"
-        font-size="46" font-weight="900" fill="white">11</text>
-  <text x="100" y="152" text-anchor="middle" font-family="Arial, sans-serif"
-        font-size="14" font-weight="700" fill="white" opacity="0.9">Città</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Badge SDG 11 - Città e comunità sostenibili</title>
+  <desc id="desc">Badge app per i progressi: SDG 11, Città e comunità sostenibili.</desc>
+  <defs>
+    <linearGradient id="sdg11g" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.38" stop-color="#FD9D24"/>
+      <stop offset="1" stop-color="#944b00"/>
+    </linearGradient>
+    <filter id="sdg11s" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#944b00" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#f8fafc"/>
+  <rect x="34" y="34" width="444" height="444" rx="82" fill="url(#sdg11g)" filter="url(#sdg11s)"/>
+  <path d="M77 391h358" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.28"/>
+  <path d="M145 365V203h76v162M236 365V151h88v214M340 365V230h54v135" fill="none" stroke="#ffffff" stroke-width="24" stroke-linejoin="round"/><path d="M174 242h18m0 47h-18m95-91h22m0 49h-22m0 49h22m76-24h2m0 43h-2" stroke="#944b00" stroke-width="14" stroke-linecap="round" opacity="0.5"/><path d="M119 365h274" stroke="#ffffff" stroke-width="20" stroke-linecap="round" opacity="0.78"/>
+  <rect x="67" y="63" width="118" height="118" rx="32" fill="#ffffff"/>
+  <text x="126" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#FD9D24">11</text>
+  <path d="M365 77h48m-24-24v48" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.86"/>
+  <text x="256" y="438" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="900" letter-spacing="1.5" fill="#ffffff">CITTA</text>
 </svg>
