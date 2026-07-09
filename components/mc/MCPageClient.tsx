@@ -665,7 +665,21 @@ function ZonePanel({
     );
 
     return (
-      <div className="px-4 py-6 sm:px-6">
+      <div className="px-4 py-6 sm:px-6 space-y-8">
+        {/* Process interattivo — fasi del ciclo tecnologico */}
+        {microlearningData?.process && (
+          <div>
+            <p className="mb-3 text-xs font-black uppercase tracking-widest text-slate-500">
+              🔄 Il processo passo per passo
+            </p>
+            <ProcessWidget
+              titolo={microlearningData.process.titolo}
+              steps={microlearningData.process.steps}
+              areaHex={areaHex}
+            />
+          </div>
+        )}
+
         {/* Il body arriva già senza la sezione Professione (estratta in MCPageClient) */}
         <ReadableBodyInTab body={body} />
 
