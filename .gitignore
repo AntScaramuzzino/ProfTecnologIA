@@ -45,3 +45,6 @@ next-env.d.ts
 /.next_old/
 /tmp/
 .fuse_hidden*
+
+# PNG originali — tenuti localmente, solo WebP in git
+public/assets/visual/**/*.png
