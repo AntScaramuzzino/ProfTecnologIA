@@ -3,6 +3,7 @@ import { Atkinson_Hyperlegible } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import { getAllMCs } from "@/lib/mc-loader";
+import { Analytics } from "@vercel/analytics/next";
 
 /**
  * Caricamento font Atkinson Hyperlegible via next/font (self-hosted da Vercel/GitHub Pages).
@@ -48,6 +49,7 @@ export default function RootLayout({
         <main id="main-content" className="flex-1 flex flex-col">
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
