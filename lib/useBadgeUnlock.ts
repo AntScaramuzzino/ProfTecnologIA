@@ -9,18 +9,18 @@
  */
 
 import { useRef, useEffect, useState } from "react";
-import { SDG_BADGES, getBadgeState, hasSdg, type SDGBadgeDefinition, type SdgValue } from "@/lib/sdg-badges";
+import { SDG_BADGES, getBadgeState, type SDGBadgeDefinition } from "@/lib/sdg-badges";
 import type { ProgressStore } from "@/lib/useProgress";
 
 export interface SdgEntry {
   id: string;
-  sdg: SdgValue[];
+  sdg: number[];
 }
 
 function computeUnlockedIds(store: ProgressStore, sdgIndex: SdgEntry[]): Set<string> {
   const unlocked = new Set<string>();
   for (const badge of SDG_BADGES) {
-    const linkedMCs = sdgIndex.filter((mc) => hasSdg(mc.sdg, badge.sdg));
+    const linkedMCs = sdgIndex.filter((mc) => mc.sdg.includes(badge.sdg));
     const passed = linkedMCs.filter((mc) => {
       const rec = store.completedMCs[mc.id];
       return rec ? rec.quizTotal > 0 && rec.quizScore / rec.quizTotal >= 0.7 : false;

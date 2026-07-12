@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useProgress, type MCProgress } from "@/lib/useProgress";
-import { SDG_BADGES, getBadgeState, hasSdg, type SdgValue } from "@/lib/sdg-badges";
+import { SDG_BADGES, getBadgeState } from "@/lib/sdg-badges";
 
 // ── Metadati area (statici — niente import da mc-loader che usa fs) ───────────
 
@@ -32,7 +32,7 @@ export interface MCIndexEntry {
   area:  string;
   anno:  number;
   tags:  string[];
-  sdg:   SdgValue[];
+  sdg:   number[];
 }
 
 interface ProgressiClientProps {
@@ -111,7 +111,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
   );
 
   const badgeProgress = SDG_BADGES.map((badge) => {
-    const linkedMCs = mcIndex.filter((mc) => hasSdg(mc.sdg, badge.sdg));
+    const linkedMCs = mcIndex.filter((mc) => mc.sdg.includes(badge.sdg));
     const visited = linkedMCs.filter((mc) => store.completedMCs[mc.id]).length;
     const passed = linkedMCs.filter((mc) => {
       const rec = store.completedMCs[mc.id];
