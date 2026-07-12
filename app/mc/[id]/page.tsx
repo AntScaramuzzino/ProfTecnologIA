@@ -18,7 +18,7 @@ import {
   getMCDeckSlides,
 } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
-import { SDG_BADGES } from "@/lib/sdg-badges";
+import { getSdgBadge, normalizeSdgList } from "@/lib/sdg-badges";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -62,10 +62,10 @@ export default async function MCPage({ params }: Props) {
   const deckSlides           = getMCDeckSlides(mc.id);
   const prereqs              = getPrerequisiteChain(mc.id);
   // SDG index per badge unlock detection (client)
-  const sdgIndex = getAllMCs().map((m) => ({ id: m.id, sdg: m.sdg ?? [] }));
+  const sdgIndex = getAllMCs().map((m) => ({ id: m.id, sdg: normalizeSdgList(m.sdg) }));
   // Badge principale per chip SDG
-  const sdgPrincipale = (mc as { sdg_principale?: number }).sdg_principale ?? null;
-  const sdgBadge = sdgPrincipale ? SDG_BADGES.find((b) => b.sdg === sdgPrincipale) ?? null : null;
+  const sdgPrincipale = (mc as { sdg_principale?: number | string }).sdg_principale ?? normalizeSdgList(mc.sdg)[0] ?? null;
+  const sdgBadge = getSdgBadge(sdgPrincipale);
   const related = getAllMCs()
     .filter((item) => item.area === mc.area && item.id !== mc.id)
     .slice(0, 3);

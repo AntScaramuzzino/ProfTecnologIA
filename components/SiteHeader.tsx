@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef, useCallback } from "react";
+import { useStudentSession } from "@/lib/useStudentSession";
 
 const NAV_ANNO = [
   { href: "/anno/1", label: "Classe 1ª" },
@@ -197,6 +198,7 @@ interface SiteHeaderProps {
 export default function SiteHeader({ mcIndex = [] }: SiteHeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const { hydrated, studentName, hasStudentName } = useStudentSession();
 
   // ⌘K / Ctrl+K apre la palette
   useEffect(() => {
@@ -258,6 +260,16 @@ export default function SiteHeader({ mcIndex = [] }: SiteHeaderProps) {
             >
               📊 Progressi
             </Link>
+
+            {hydrated && hasStudentName && (
+              <Link
+                href="/progressi"
+                className="max-w-32 truncate rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-black text-emerald-800 transition-colors hover:bg-emerald-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                title={`Sessione di ${studentName}`}
+              >
+                Ciao {studentName}
+              </Link>
+            )}
 
             {/* ── Search button (desktop) ── */}
             <button
@@ -347,7 +359,7 @@ export default function SiteHeader({ mcIndex = [] }: SiteHeaderProps) {
                 onClick={() => setMenuOpen(false)}
                 className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
               >
-                📊 Progressi
+                📊 Progressi{hydrated && hasStudentName ? ` · ${studentName}` : ""}
               </Link>
               <Link
                 href="/architettura"

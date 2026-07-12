@@ -9,6 +9,8 @@ export interface SDGBadgeDefinition {
   requiredPassed: number;
 }
 
+export type SdgValue = number | string | null | undefined;
+
 // Colori ufficiali Agenda 2030 (UN SDG brand palette)
 export const SDG_BADGES: SDGBadgeDefinition[] = [
   {
@@ -137,4 +139,23 @@ export function getBadgeState(passed: number, required: number) {
   if (passed >= required) return "unlocked";
   if (passed > 0) return "progress";
   return "locked";
+}
+
+export function normalizeSdgList(values: SdgValue[] | null | undefined): number[] {
+  if (!values) return [];
+  return [...new Set(
+    values
+      .map((value) => Number(value))
+      .filter((value) => Number.isInteger(value) && value >= 1 && value <= 17),
+  )];
+}
+
+export function hasSdg(values: SdgValue[] | null | undefined, sdg: number): boolean {
+  return normalizeSdgList(values).includes(sdg);
+}
+
+export function getSdgBadge(sdg: SdgValue): SDGBadgeDefinition | null {
+  const normalized = Number(sdg);
+  if (!Number.isInteger(normalized)) return null;
+  return SDG_BADGES.find((badge) => badge.sdg === normalized) ?? null;
 }

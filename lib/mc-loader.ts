@@ -66,7 +66,7 @@ export interface MC {
   compito_realta: string;
   /** Elenco esteso di compiti autentici (versione multi-task; sovrascrive compito_realta se presente) */
   compiti_realta?: string[];
-  sdg?: number[];
+  sdg?: (number | string)[];
   note_didattiche: NoteDid;
   hook_audio?: HookAudio;
   /** Singola professione del futuro — legacy, sostituita da professioni_future */
@@ -77,10 +77,9 @@ export interface MC {
   clil_termini?: ClilTermine[];
 }
 
-// Legge prima da data/mc/ (repo standalone), poi da ../../01_MATRICE_MC (workspace locale)
-const MC_ROOT = fs.existsSync(path.resolve(process.cwd(), "data/mc"))
-  ? path.resolve(process.cwd(), "data/mc")
-  : path.resolve(process.cwd(), "../../01_MATRICE_MC");
+// Il sito usa la copia locale delle MC generata in data/.
+// Tenere i path dentro la root Next evita tracing Turbopack fuori progetto.
+const MC_ROOT = path.resolve(process.cwd(), "data", "mc");
 
 function loadMCsFromDisk(): MC[] {
   const mcs: MC[] = [];

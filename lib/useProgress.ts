@@ -11,6 +11,7 @@
  */
 
 import { useState, useEffect, useCallback } from "react";
+import { useStudentSession } from "@/lib/useStudentSession";
 
 export interface MCProgress {
   mcId: string;
@@ -29,6 +30,11 @@ export interface ProgressStore {
 }
 
 const STORAGE_KEY = "tecnologia_app_progress";
+const STORAGE_PREFIX = "tecnologia_app_progress:";
+
+function getStorageKey(studentId: string): string {
+  return `${STORAGE_PREFIX}${studentId}`;
+}
 
 function getDefaultStore(studentId?: string): ProgressStore {
   return {
@@ -49,29 +55,47 @@ function inferDigcompLevel(completed: Record<string, MCProgress>): "F" | "I" | "
   return "F";
 }
 
-export function useProgress(studentId?: string) {
+export function useProgress(studentIdOverride?: string) {
+  const session = useStudentSession();
+  const studentId = studentIdOverride ?? session.studentId;
   const [store, setStore] = useState<ProgressStore>(() => getDefaultStore(studentId));
   const [hydrated, setHydrated] = useState(false);
 
   // Hydrate from localStorage on mount (client only)
   useEffect(() => {
+    if (!session.hydrated && !studentIdOverride) return;
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const storageKey = getStorageKey(studentId);
+      let raw = localStorage.getItem(storageKey);
+      const legacyRaw = localStorage.getItem(STORAGE_KEY);
+
+      // Migrazione dolce: se lo studente inserisce il nome per la prima volta,
+      // conserva i progressi già accumulati nella vecchia sessione anonima.
+      if (!raw && legacyRaw) {
+        raw = legacyRaw;
+        if (studentId !== "anonimo") {
+          localStorage.setItem(storageKey, legacyRaw);
+          localStorage.removeItem(STORAGE_KEY);
+        }
+      }
+
       if (raw) {
         const parsed: ProgressStore = JSON.parse(raw);
-        setStore(parsed);
+        setStore({ ...parsed, studentId });
+      } else {
+        setStore(getDefaultStore(studentId));
       }
     } catch {
-      // ignore parse errors
+      setStore(getDefaultStore(studentId));
     }
     setHydrated(true);
-  }, []);
+  }, [session.hydrated, studentId, studentIdOverride]);
 
   // Persist on every change
   useEffect(() => {
     if (!hydrated) return;
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+      localStorage.setItem(getStorageKey(store.studentId), JSON.stringify(store));
     } catch {
       // quota exceeded or private mode
     }
@@ -138,6 +162,10 @@ export function useProgress(studentId?: string) {
   return {
     store,
     hydrated,
+    studentName: session.studentName,
+    hasStudentName: session.hasStudentName,
+    setStudentName: session.setStudentName,
+    clearStudentName: session.clearStudentName,
     completedCount,
     passedCount,
     recordQuizResult,

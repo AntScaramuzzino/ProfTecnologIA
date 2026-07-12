@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getAllMCs } from "@/lib/mc-loader";
+import { normalizeSdgList } from "@/lib/sdg-badges";
 import ProgressiClient from "./ProgressiClient";
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function ProgressiPage() {
     area:   mc.area,
     anno:   mc.anno as number,
     tags:   mc.tags ?? [],
-    sdg:    mc.sdg ?? [],
+    sdg:    normalizeSdgList(mc.sdg),
   }));
 
   return <ProgressiClient mcIndex={mcIndex} />;

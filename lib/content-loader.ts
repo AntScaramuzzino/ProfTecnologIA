@@ -1,10 +1,9 @@
 import fs from "fs";
 import path from "path";
 
-// Legge testi da data/testi/ (repo standalone) o da ../../08_TESTI (workspace locale)
-const TESTI_ROOT = fs.existsSync(path.join(process.cwd(), "data/testi"))
-  ? path.join(process.cwd(), "data/testi")
-  : path.join(path.resolve(process.cwd(), "../.."), "08_TESTI");
+// Il sito usa la copia locale dei contenuti generata in data/.
+// Tenere i path dentro la root Next evita tracing Turbopack fuori progetto.
+const TESTI_ROOT = path.join(process.cwd(), "data", "testi");
 const PROJECT_ROOT = TESTI_ROOT;
 const PUBLIC_VISUAL_ROOT = path.join(process.cwd(), "public", "assets", "visual");
 const PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";

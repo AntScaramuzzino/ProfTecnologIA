@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { useProgress, type MCProgress } from "@/lib/useProgress";
-import { SDG_BADGES, getBadgeState } from "@/lib/sdg-badges";
+import { SDG_BADGES, getBadgeState, hasSdg, type SdgValue } from "@/lib/sdg-badges";
 
 // ── Metadati area (statici — niente import da mc-loader che usa fs) ───────────
 
@@ -31,7 +32,7 @@ export interface MCIndexEntry {
   area:  string;
   anno:  number;
   tags:  string[];
-  sdg:   number[];
+  sdg:   SdgValue[];
 }
 
 interface ProgressiClientProps {
@@ -70,7 +71,19 @@ function ScoreBadge({ r }: { r: MCProgress }) {
 // ── Componente principale ────────────────────────────────────────────────────
 
 export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
-  const { store, hydrated, completedCount, passedCount, reset } = useProgress();
+  const {
+    store,
+    hydrated,
+    studentName,
+    hasStudentName,
+    setStudentName,
+    clearStudentName,
+    completedCount,
+    passedCount,
+    reset,
+  } = useProgress();
+  const [nameDraft, setNameDraft] = useState("");
+  const [editingName, setEditingName] = useState(false);
   const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   // Indice rapido: id → MC
@@ -98,7 +111,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
   );
 
   const badgeProgress = SDG_BADGES.map((badge) => {
-    const linkedMCs = mcIndex.filter((mc) => mc.sdg.includes(badge.sdg));
+    const linkedMCs = mcIndex.filter((mc) => hasSdg(mc.sdg, badge.sdg));
     const visited = linkedMCs.filter((mc) => store.completedMCs[mc.id]).length;
     const passed = linkedMCs.filter((mc) => {
       const rec = store.completedMCs[mc.id];
@@ -131,6 +144,13 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
     );
   }
 
+  function handleNameSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setStudentName(nameDraft);
+    setNameDraft("");
+    setEditingName(false);
+  }
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6">
 
@@ -141,7 +161,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
             Il mio percorso
           </p>
           <h1 className="mt-1 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">
-            Progressi
+            {hasStudentName ? `Progressi di ${studentName}` : "Progressi"}
           </h1>
           {store.lastActive && (
             <p className="mt-1 text-xs text-slate-400">
@@ -159,6 +179,86 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
           <p className="text-2xl font-black leading-none">{store.digcompLevel}</p>
           <p className="mt-0.5 text-[10px] font-bold">{DIGCOMP_LABEL[store.digcompLevel]}</p>
         </div>
+      </div>
+
+      {/* ── Sessione studente ─────────────────────────────────────────────── */}
+      <div className="mb-8 rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm">
+        {hasStudentName && !editingName ? (
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-widest text-emerald-600">
+                Sessione attiva
+              </p>
+              <p className="mt-1 text-sm font-bold text-slate-800">
+                Ciao {studentName}, questi progressi vengono ricordati su questo dispositivo.
+              </p>
+              <p className="mt-0.5 text-[10px] text-slate-400">
+                ID locale: {store.studentId}
+              </p>
+            </div>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setNameDraft(studentName);
+                  setEditingName(true);
+                }}
+                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-600 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              >
+                Cambia nome
+              </button>
+              <button
+                type="button"
+                onClick={clearStudentName}
+                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-400 transition-colors hover:bg-slate-50 hover:text-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
+              >
+                Esci
+              </button>
+            </div>
+          </div>
+        ) : (
+          <form onSubmit={handleNameSubmit} className="flex flex-col gap-3 sm:flex-row sm:items-end">
+            <div className="min-w-0 flex-1">
+              <label htmlFor="student-name" className="text-xs font-black uppercase tracking-widest text-slate-500">
+                Ricorda il mio nome
+              </label>
+              <input
+                id="student-name"
+                type="text"
+                value={nameDraft}
+                onChange={(event) => setNameDraft(event.target.value)}
+                placeholder="Scrivi il tuo nome"
+                autoComplete="given-name"
+                maxLength={40}
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-800 outline-none transition-colors placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white focus:ring-2 focus:ring-emerald-100"
+              />
+              <p className="mt-1 text-[10px] text-slate-400">
+                Il nome resta solo nel browser e separa i progressi da quelli di altri studenti.
+              </p>
+            </div>
+            <div className="flex gap-2">
+              {editingName && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEditingName(false);
+                    setNameDraft("");
+                  }}
+                  className="rounded-full border border-slate-200 px-4 py-2 text-xs font-bold text-slate-500 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-300"
+                >
+                  Annulla
+                </button>
+              )}
+              <button
+                type="submit"
+                disabled={!nameDraft.trim()}
+                className="rounded-full bg-emerald-700 px-4 py-2 text-xs font-black text-white transition-colors hover:bg-emerald-800 disabled:cursor-not-allowed disabled:bg-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+              >
+                Salva sessione
+              </button>
+            </div>
+          </form>
+        )}
       </div>
 
       {/* ── Challenge Agenda 2030 — guida sempre visibile ───────────────────── */}

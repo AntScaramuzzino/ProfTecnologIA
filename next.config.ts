@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -20,9 +21,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
 
-  // Permette import da fuori la cartella app (per leggere i dati del progetto)
-  experimental: {
-    // Nessun experimental flag necessario per ora
+  // Evita che Turbopack risalga al workspace utente quando trova più lockfile.
+  turbopack: {
+    root: path.resolve(__dirname),
   },
 };
 
