@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-INF-2-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 91,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Dentro il mio dispositivo: chi comanda davvero?",
+    "istruzione": "Apri il task manager (Windows) o il monitor attività (Mac) o le impostazioni di sviluppatore (Android/iOS) del dispositivo che hai a disposizione e usa questa checklist per scoprire cosa sta succedendo in questo momento.",
+    "voci": [
+      "Ho aperto il task manager e ho identificato il processo che consuma più CPU in questo momento, e ho scritto perché secondo me sta lavorando così tanto.",
+      "Ho contato quanti processi sono attivi contemporaneamente sul mio dispositivo anche con tutte le app visibili chiuse.",
+      "Ho individuato almeno tre processi di sistema (non app dell'utente) e ho spiegato con parole mie cosa fa ciascuno.",
+      "Ho confrontato l'utilizzo di RAM quando ho una sola app aperta e quando ne ho cinque aperte, e ho scritto la differenza in megabyte.",
+      "Ho trovato nel mio dispositivo dove si può vedere il tempo trascorso dall'ultimo avvio (uptime) e ho riflettuto su cosa succederebbe se il sistema operativo non si riavviasse mai.",
+      "Ho scritto una frase che spiega perché il sistema operativo è necessario: cosa succederebbe se un'app potesse accedere direttamente all'hardware senza passare per il SO?"
+    ]
+  },
+  "process": {
+    "titolo": "Cosa fa il tuo computer nei 10 secondi dopo che premi il tasto di accensione",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "POST — il BIOS/UEFI controlla che tutto funzioni",
+        "attore": "Firmware BIOS / UEFI (chip sulla scheda madre)",
+        "domanda": "Prima ancora che vedi qualcosa sullo schermo, il computer sta già lavorando. Come fa a sapere se la RAM è difettosa o se manca un disco?",
+        "impatto": "Il Power-On Self Test (POST) verifica CPU, RAM, storage e periferiche in meno di 2 secondi: se trova un errore, emette una sequenza di beep in codice prima ancora di accendere lo schermo."
+      },
+      {
+        "numero": 2,
+        "titolo": "Bootloader — il sistema trova dove avviarsi",
+        "attore": "Bootloader (GRUB / Windows Boot Manager)",
+        "domanda": "Se hai due sistemi operativi installati (Windows e Linux), come decide il computer quale avviare? Chi prende questa decisione?",
+        "impatto": "Il bootloader occupa pochi kilobyte ma ha un compito critico: leggere la tabella delle partizioni del disco e caricare in RAM il kernel del sistema operativo scelto."
+      },
+      {
+        "numero": 3,
+        "titolo": "Kernel — il nucleo del sistema prende il controllo",
+        "attore": "Kernel del sistema operativo (Linux kernel / NT kernel)",
+        "domanda": "Il kernel è la parte più importante del sistema operativo, ma non la vedi mai. Cosa sta facendo in questo preciso momento mentre leggi questa frase?",
+        "impatto": "Il kernel gestisce milioni di operazioni al secondo: schedula i processi, alloca la RAM, intercetta le richieste hardware. Windows 11 ha un kernel con oltre 50 milioni di righe di codice."
+      },
+      {
+        "numero": 4,
+        "titolo": "Driver — le periferiche iniziano a funzionare",
+        "attore": "Driver di dispositivo (forniti dal produttore hardware)",
+        "domanda": "Perché una stampante nuova non funziona subito dopo averla collegata, mentre una tastiera USB funziona all'istante senza installare nulla?",
+        "impatto": "I driver sono traduttori tra il linguaggio del sistema operativo e quello del dispositivo fisico: Windows include oltre 7.000 driver pre-installati, ma i dispositivi complessi (stampanti, schede video) ne richiedono di specifici."
+      },
+      {
+        "numero": 5,
+        "titolo": "Login — l'identità dell'utente viene verificata",
+        "attore": "Servizio di autenticazione del SO",
+        "domanda": "Quando inserisci la password al login, il sistema operativo confronta quello che hai digitato con cosa esattamente? La tua password è salvata in chiaro da qualche parte?",
+        "impatto": "Il sistema operativo non salva mai la password in chiaro: confronta un hash crittografico. Su Windows, l'hash NTLM o Kerberos viene verificato localmente o tramite Active Directory in meno di 100 millisecondi."
+      },
+      {
+        "numero": 6,
+        "titolo": "Desktop — l'ambiente grafico è pronto, i processi in background sono già attivi",
+        "attore": "Window Manager / Compositor grafico",
+        "domanda": "Quando finalmente vedi il desktop, quanti programmi sono già in esecuzione in background senza che tu li abbia avviati?",
+        "impatto": "Un Windows 11 appena avviato ha mediamente 150-200 processi attivi in background: antivirus, servizi di aggiornamento, sincronizzazione cloud, telemetria. Ogni processo consuma RAM anche senza fare nulla di visibile."
+      }
+    ]
+  }
+}

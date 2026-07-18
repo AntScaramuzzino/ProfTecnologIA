@@ -1,0 +1,600 @@
+{
+  "mc_id": "MC-INF-2-02",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Cosa fa la crittografia a un messaggio?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Lo cancella in modo permanente in modo che nessuno possa leggerlo",
+          "feedback": "Non è corretto. La crittografia non cancella il messaggio: lo trasforma in una forma illeggibile (testo cifrato) che può essere ripristinata con la chiave corretta. Un messaggio cancellato non è recuperabile; uno cifrato sì.",
+          "riferimento": "📖 ESPLORA — Cos'è la crittografia"
+        },
+        {
+          "id": "b",
+          "testo": "Lo trasforma in un testo illeggibile (cifrato) che può essere decifrato solo con la chiave corretta",
+          "corretto": true,
+          "feedback": "Esatto! La crittografia trasforma il messaggio originale (testo in chiaro) in un testo cifrato (ciphertext) illeggibile per chi non possiede la chiave di decifratura. Solo chi ha la chiave corretta può ripristinare il messaggio originale."
+        },
+        {
+          "id": "c",
+          "testo": "Lo comprime per occupare meno spazio e trasferirsi più velocemente",
+          "feedback": "Non è corretto. La compressione riduce le dimensioni di un file senza scopo di riservatezza — i dati compressi sono ancora leggibili se si conosce l'algoritmo. La crittografia mira alla riservatezza: rende il messaggio illeggibile a chi non ha la chiave.",
+          "riferimento": "📖 ESPLORA — Cos'è la crittografia"
+        },
+        {
+          "id": "d",
+          "testo": "Lo duplica e lo invia su più canali per garantire che arrivi a destinazione",
+          "feedback": "Non è corretto. Quello descritto è un meccanismo di ridondanza per l'affidabilità della trasmissione. La crittografia serve alla riservatezza: trasforma il messaggio in testo cifrato che solo il destinatario autorizzato può decifrare.",
+          "riferimento": "📖 ESPLORA — Cos'è la crittografia"
+        }
+      ],
+      "spiegazione": "La crittografia è la scienza di trasformare un messaggio (testo in chiaro) in una forma illeggibile (testo cifrato) tramite un algoritmo e una chiave. Solo chi possiede la chiave corretta può decifrare il testo cifrato e recuperare il messaggio originale. L'obiettivo è garantire la riservatezza delle comunicazioni.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è la crittografia"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Come funziona il cifrario di Cesare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sostituisce ogni lettera con il suo numero di posizione nell'alfabeto",
+          "feedback": "Non è corretto. Sostituire ogni lettera con il suo numero (A=1, B=2...) è una codifica semplice, non il cifrario di Cesare. Il cifrario di Cesare sposta ogni lettera di un numero fisso di posizioni nell'alfabeto.",
+          "riferimento": "📖 ESPLORA — Il cifrario di Cesare"
+        },
+        {
+          "id": "b",
+          "testo": "Inverte l'ordine delle lettere nel messaggio (dall'ultima alla prima)",
+          "feedback": "Non è corretto. Invertire l'ordine è un'altra tecnica crittografica elementare chiamata trasposizione. Il cifrario di Cesare sostituisce ogni lettera con quella che si trova N posizioni più avanti nell'alfabeto.",
+          "riferimento": "📖 ESPLORA — Il cifrario di Cesare"
+        },
+        {
+          "id": "c",
+          "testo": "Sostituisce ogni lettera con quella che si trova N posizioni più avanti nell'alfabeto",
+          "corretto": true,
+          "feedback": "Esatto! Il cifrario di Cesare (usato da Giulio Cesare per le comunicazioni militari) sostituisce ogni lettera con quella che si trova N posizioni più avanti nell'alfabeto. Con N=3: A→D, B→E, C→F, Z→C (si ricomincia dall'inizio). Decifrare significa spostare indietro di N posizioni."
+        },
+        {
+          "id": "d",
+          "testo": "Usa una tabella casuale per associare ogni lettera a un simbolo segreto",
+          "feedback": "Non è corretto. Una tabella casuale lettera→simbolo è un cifrario a sostituzione monoalfabetica, ma non il cifrario di Cesare. Il cifrario di Cesare usa una traslazione sistematica dell'alfabeto di N posizioni, non una tabella casuale.",
+          "riferimento": "📖 ESPLORA — Il cifrario di Cesare"
+        }
+      ],
+      "spiegazione": "Il cifrario di Cesare è un cifrario a sostituzione per traslazione: ogni lettera viene sostituita con quella che si trova N posizioni più avanti nell'alfabeto (di solito N=3). Esempio con N=3: A→D, B→E, X→A, Y→B, Z→C. Per decifrare si traslano le lettere indietro di N posizioni. È uno dei cifrari più antichi documentati — usato da Giulio Cesare per le comunicazioni militari — ed è facilmente violabile con analisi della frequenza delle lettere.",
+      "riferimento_principale": "📖 ESPLORA — Il cifrario di Cesare"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Qual è la caratteristica principale della crittografia simmetrica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Usa due chiavi diverse: una pubblica per cifrare e una privata per decifrare",
+          "feedback": "Non è corretto. Quella descritta è la crittografia asimmetrica (a coppia di chiavi). La crittografia simmetrica usa la stessa chiave sia per cifrare che per decifrare.",
+          "riferimento": "📖 ESPLORA — Crittografia simmetrica"
+        },
+        {
+          "id": "b",
+          "testo": "Usa la stessa chiave segreta sia per cifrare che per decifrare",
+          "corretto": true,
+          "feedback": "Esatto! Nella crittografia simmetrica mittente e destinatario usano la stessa chiave segreta: il mittente la usa per cifrare, il destinatario la usa per decifrare. È veloce ed efficiente, ma ha un problema: come trasmettere la chiave in modo sicuro?"
+        },
+        {
+          "id": "c",
+          "testo": "Non usa nessuna chiave: il messaggio viene cifrato in base alla data e all'ora di invio",
+          "feedback": "Non è corretto. Tutti i sistemi crittografici moderni usano una chiave. Un sistema basato solo su data e ora sarebbe facilissimo da violare perché la data/ora è pubblica. La crittografia simmetrica usa una chiave segreta condivisa tra mittente e destinatario.",
+          "riferimento": "📖 ESPLORA — Crittografia simmetrica"
+        },
+        {
+          "id": "d",
+          "testo": "Funziona solo per cifrare testi brevi di meno di 256 caratteri",
+          "feedback": "Non è corretto. La crittografia simmetrica non ha limitazioni pratiche sulla lunghezza del messaggio. Algoritmi simmetrici come AES cifrano dati di qualsiasi dimensione in modalità 'a blocchi' o 'in streaming'.",
+          "riferimento": "📖 ESPLORA — Crittografia simmetrica"
+        }
+      ],
+      "spiegazione": "La crittografia simmetrica usa una singola chiave segreta condivisa tra mittente e destinatario: la stessa chiave che cifra può decifrare. Vantaggi: molto veloce (adatta per grandi quantità di dati). Svantaggio critico: il problema della distribuzione della chiave — come si fa a far avere la chiave segreta al destinatario senza che qualcuno la intercetti durante la trasmissione? Esempi: AES, DES, ChaCha20.",
+      "riferimento_principale": "📖 ESPLORA — Crittografia simmetrica"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa significa il lucchetto verde o l'icona HTTPS nella barra del browser?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il sito web è stato verificato come affidabile e non pubblica contenuti falsi",
+          "feedback": "Non è corretto. HTTPS garantisce che la comunicazione tra il browser e il server è cifrata, ma non certifica l'affidabilità del contenuto del sito. Un sito con HTTPS può comunque contenere informazioni false o essere malevolo.",
+          "riferimento": "📖 ESPLORA — HTTPS e TLS"
+        },
+        {
+          "id": "b",
+          "testo": "La connessione tra il browser e il server è cifrata tramite TLS",
+          "corretto": true,
+          "feedback": "Esatto! HTTPS (HTTP Secure) usa il protocollo TLS (Transport Layer Security) per cifrare la comunicazione tra browser e server. Questo impedisce a chi intercetta il traffico di rete di leggere i dati scambiati (password, dati bancari, messaggi privati)."
+        },
+        {
+          "id": "c",
+          "testo": "Il sito è ospitato su un server sicuro in Italia e rispetta il GDPR",
+          "feedback": "Non è corretto. HTTPS non fornisce informazioni sulla localizzazione del server né sulla conformità al GDPR. Indica solo che la connessione tra browser e server è cifrata tramite TLS.",
+          "riferimento": "📖 ESPLORA — HTTPS e TLS"
+        },
+        {
+          "id": "d",
+          "testo": "Il sito non ha pubblicità invasive e rispetta la privacy dell'utente",
+          "feedback": "Non è corretto. HTTPS non ha nulla a che fare con le pubblicità o le politiche di privacy del sito. Indica esclusivamente che la connessione è cifrata: i dati trasmessi non possono essere letti da terze parti che intercettano il traffico di rete.",
+          "riferimento": "📖 ESPLORA — HTTPS e TLS"
+        }
+      ],
+      "spiegazione": "HTTPS usa TLS (Transport Layer Security, precedentemente SSL) per cifrare la comunicazione tra il browser e il server. Questo protegge da intercettazioni (eavesdropping) e modifiche dei dati in transito (man-in-the-middle). HTTPS garantisce: riservatezza (dati cifrati), autenticità (il sito è chi dice di essere, tramite certificato digitale), integrità (i dati non sono stati modificati). Non garantisce la veridicità del contenuto del sito.",
+      "riferimento_principale": "📖 ESPLORA — HTTPS e TLS"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Chi ha contribuito a decifrare la macchina Enigma durante la Seconda Guerra Mondiale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Albert Einstein, usando la teoria della relatività applicata ai codici",
+          "feedback": "Non è corretto. Albert Einstein si occupava di fisica teorica, non di crittoanalisi. La macchina Enigma fu decifrata principalmente grazie al lavoro di Alan Turing e del suo team a Bletchley Park.",
+          "riferimento": "📖 ESPLORA — Enigma e Alan Turing"
+        },
+        {
+          "id": "b",
+          "testo": "Alan Turing, costruendo la macchina 'Bombe' per trovare le impostazioni giornaliere di Enigma",
+          "corretto": true,
+          "feedback": "Esatto! Alan Turing (1912–1954) ha guidato il team di Bletchley Park che ha progettato la macchina 'Bombe', in grado di trovare le impostazioni giornaliere di Enigma. La sua contribuzione alla cripto-analisi di Enigma ha avuto un impatto decisivo sulla durata e sull'esito della Seconda Guerra Mondiale."
+        },
+        {
+          "id": "c",
+          "testo": "Tim Berners-Lee, il creatore del World Wide Web",
+          "feedback": "Non è corretto. Tim Berners-Lee ha inventato il World Wide Web nel 1989-1991, quasi mezzo secolo dopo la Seconda Guerra Mondiale. La decifrazione di Enigma è opera principalmente di Alan Turing e del team di Bletchley Park.",
+          "riferimento": "📖 ESPLORA — Enigma e Alan Turing"
+        },
+        {
+          "id": "d",
+          "testo": "Grace Hopper, che ha trovato il primo bug informatico nella storia",
+          "feedback": "Non è corretto. Grace Hopper è famosa per aver trovato il primo 'bug' fisico in un computer (la falena nel Harvard Mark II nel 1947) e per aver sviluppato i primi compilatori. La decifrazione di Enigma è opera di Alan Turing e del suo team.",
+          "riferimento": "📖 ESPLORA — Enigma e Alan Turing"
+        }
+      ],
+      "spiegazione": "Alan Turing (1912–1954) ha guidato il team di matematici e crittografi a Bletchley Park durante la Seconda Guerra Mondiale. Ha progettato la 'Bombe', una macchina elettromeccanica che sfruttava le debolezze strutturali di Enigma per trovare le impostazioni giornaliere dei cifrari tedeschi. Si stima che il suo lavoro abbia abbreviato la guerra di 2-4 anni.",
+      "riferimento_principale": "📖 ESPLORA — Enigma e Alan Turing"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cos'è una funzione hash in crittografia?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una chiave segreta usata per cifrare i messaggi",
+          "feedback": "Non è corretto. La chiave è un parametro usato con un algoritmo di cifratura. Una funzione hash è invece una funzione matematica che trasforma dati di qualsiasi dimensione in un output di lunghezza fissa, e non è invertibile.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        },
+        {
+          "id": "b",
+          "testo": "Una funzione che trasforma dati di qualsiasi dimensione in un output di lunghezza fissa, non invertibile",
+          "corretto": true,
+          "feedback": "Esatto! Una funzione hash (es. SHA-256) prende dati di qualsiasi dimensione in input e produce sempre un output di lunghezza fissa (es. 256 bit per SHA-256). La funzione è non invertibile: dall'hash non si può ricavare l'input originale. Cambiare anche un solo bit dell'input cambia completamente l'hash."
+        },
+        {
+          "id": "c",
+          "testo": "Un protocollo per trasmettere dati cifrati su reti non sicure",
+          "feedback": "Non è corretto. I protocolli per trasmettere dati cifrati si chiamano TLS/SSL, HTTPS, SSH ecc. La funzione hash è un algoritmo matematico che produce un 'impronta digitale' di dati — usata per verificare l'integrità, non per cifrare la trasmissione.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        },
+        {
+          "id": "d",
+          "testo": "Un metodo per comprimere file di grandi dimensioni",
+          "feedback": "Non è corretto. La compressione riduce le dimensioni di un file mantenendo tutti (lossless) o parte (lossy) dei dati originali. La funzione hash produce un output di dimensione fissa (es. 32 byte per SHA-256) indipendentemente dalla dimensione dell'input, e non permette di recuperare i dati originali.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        }
+      ],
+      "spiegazione": "Una funzione hash crittografica (es. SHA-256, MD5, bcrypt) ha tre proprietà fondamentali: 1) Determinismo: lo stesso input produce sempre lo stesso hash; 2) Non invertibilità: dall'hash non si può ricavare l'input; 3) Effetto valanga: cambiare anche un solo bit dell'input cambia completamente l'hash. Usi tipici: verifica dell'integrità dei file scaricati, conservazione sicura delle password (non si salva la password ma il suo hash), firme digitali.",
+      "riferimento_principale": "📖 ESPLORA — Hash e integrità"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "Qual è il problema principale della crittografia simmetrica per le comunicazioni su internet?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È troppo lenta per cifrare grandi quantità di dati",
+          "feedback": "Non è corretto. Al contrario, la crittografia simmetrica (es. AES) è molto veloce ed efficiente per grandi quantità di dati. Il suo problema principale non è la velocità, ma il modo in cui la chiave segreta viene condivisa tra mittente e destinatario.",
+          "riferimento": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+        },
+        {
+          "id": "b",
+          "testo": "Come trasmettere la chiave segreta al destinatario in modo sicuro senza che qualcuno la intercetti",
+          "corretto": true,
+          "feedback": "Esatto! Il problema della distribuzione delle chiavi: se mittente e destinatario devono condividere la stessa chiave segreta, come possono farlo su un canale non sicuro (come internet) senza che qualcuno la intercetti? Se qualcuno intercetta la chiave durante la trasmissione, può decifrare tutti i messaggi successivi."
+        },
+        {
+          "id": "c",
+          "testo": "Funziona solo per messaggi di testo, non per file immagine o video",
+          "feedback": "Non è corretto. La crittografia simmetrica (come AES) funziona su qualsiasi sequenza di byte, indipendentemente dal tipo di contenuto: testo, immagini, video, qualsiasi file digitale.",
+          "riferimento": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+        },
+        {
+          "id": "d",
+          "testo": "Non può essere usata su computer con sistema operativo diverso",
+          "feedback": "Non è corretto. Gli algoritmi di crittografia simmetrica sono standard aperti implementabili su qualsiasi piattaforma. Il problema della crittografia simmetrica è la distribuzione della chiave, non la compatibilità tra sistemi operativi.",
+          "riferimento": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+        }
+      ],
+      "spiegazione": "Il 'problema della distribuzione delle chiavi' è il principale limite della crittografia simmetrica: mittente e destinatario devono concordare una chiave segreta prima di comunicare, ma se comunicano su internet (canale non sicuro) qualcuno potrebbe intercettare la chiave. La crittografia asimmetrica (Diffie-Hellman, RSA) risolve questo problema: permette di concordare una chiave condivisa su canale pubblico senza che un osservatore esterno possa calcolarla.",
+      "riferimento_principale": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "A cosa serve la chiave pubblica nella crittografia asimmetrica?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "A decifrare i messaggi ricevuti in modo segreto",
+          "feedback": "Non è corretto. La chiave pubblica serve per cifrare, non per decifrare. Chi vuole inviare un messaggio segreto al destinatario usa la chiave pubblica del destinatario per cifrarlo. Solo il destinatario, con la sua chiave privata, può decifrarlo.",
+          "riferimento": "📖 ESPLORA — Crittografia asimmetrica"
+        },
+        {
+          "id": "b",
+          "testo": "A cifrare i messaggi che solo il proprietario della chiave privata corrispondente può decifrare",
+          "corretto": true,
+          "feedback": "Esatto! Nella crittografia asimmetrica: la chiave pubblica (condivisibile con tutti) serve per cifrare il messaggio; la chiave privata (segreta, solo del destinatario) serve per decifrarlo. Chiunque può inviare messaggi cifrati con la chiave pubblica, ma solo il proprietario della chiave privata può leggerli."
+        },
+        {
+          "id": "c",
+          "testo": "A verificare l'identità dell'utente tramite una password visibile sul sito web",
+          "feedback": "Non è corretto. Le password sono un meccanismo di autenticazione separato dalla crittografia asimmetrica. La chiave pubblica serve per cifrare messaggi destinati al proprietario della chiave privata corrispondente.",
+          "riferimento": "📖 ESPLORA — Crittografia asimmetrica"
+        },
+        {
+          "id": "d",
+          "testo": "A velocizzare la cifratura simmetrica dividendo il lavoro tra due chiavi",
+          "feedback": "Non è corretto. La crittografia asimmetrica non velocizza la simmetrica — in realtà è molto più lenta della simmetrica. In pratica le due si combinano: la crittografia asimmetrica scambia in modo sicuro una chiave simmetrica, poi la comunicazione usa la più veloce crittografia simmetrica.",
+          "riferimento": "📖 ESPLORA — Crittografia asimmetrica"
+        }
+      ],
+      "spiegazione": "Nella crittografia asimmetrica esistono due chiavi matematicamente collegate: chiave pubblica (distribuita liberamente) e chiave privata (segreta). La chiave pubblica cifra; la chiave privata decifra. Chiunque conosca la chiave pubblica di Alice può inviarle messaggi cifrati che solo Alice (con la sua chiave privata) può leggere. La brillante intuizione: non serve scambiarsi segreti per comunicare in modo sicuro.",
+      "riferimento_principale": "📖 ESPLORA — Crittografia asimmetrica"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Su quale problema matematico si basa la sicurezza dell'algoritmo RSA?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Sulla difficoltà di calcolare la radice quadrata di numeri molto grandi",
+          "feedback": "Non è corretto. Calcolare la radice quadrata di un numero grande è un'operazione relativamente semplice anche per i computer. RSA si basa sulla difficoltà della fattorizzazione: moltiplicare due numeri primi grandi è facile, ma trovare i due fattori dato il prodotto è estremamente difficile.",
+          "riferimento": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+        },
+        {
+          "id": "b",
+          "testo": "Sulla difficoltà di fattorizzare il prodotto di due numeri primi molto grandi",
+          "corretto": true,
+          "feedback": "Esatto! RSA si basa su un'asimmetria computazionale: moltiplicare due numeri primi grandi (p × q = n) è un'operazione velocissima. Ma dato solo n, trovare p e q (fattorizzare) è un problema computazionalmente difficilissimo: nessun algoritmo classico lo risolve in tempo ragionevole per numeri di 2048+ bit."
+        },
+        {
+          "id": "c",
+          "testo": "Sulla difficoltà di decifrare messaggi scritti in lingue sconosciute",
+          "feedback": "Non è corretto. RSA è un algoritmo matematico che non dipende da lingue naturali. Si basa sulla difficoltà computazionale della fattorizzazione di numeri grandi, un problema puramente matematico.",
+          "riferimento": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+        },
+        {
+          "id": "d",
+          "testo": "Sulla difficoltà di generare numeri casuali in modo prevedibile",
+          "feedback": "Non è corretto. La generazione di numeri casuali riguarda la qualità delle chiavi crittografiche, ma non è il fondamento matematico di RSA. RSA si basa sulla difficoltà della fattorizzazione: dato n = p×q con p e q numeri primi grandi, trovare p e q conoscendo solo n è computazionalmente difficile.",
+          "riferimento": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+        }
+      ],
+      "spiegazione": "RSA (Rivest, Shamir, Adleman, 1977) sfrutta l'asimmetria computazionale della fattorizzazione: dati due numeri primi p e q, calcolare n = p×q è banale (microsecondi). Ma dato solo n con p e q sconosciuti e molto grandi (1024+ cifre), trovare p e q richiede tempo astronomico con i computer attuali. La chiave pubblica contiene n, la chiave privata contiene p e q. RSA è vulnerabile ai computer quantistici, che potrebbero fattorizzare efficientemente.",
+      "riferimento_principale": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Come si usa una funzione hash per verificare l'integrità di un file scaricato da internet?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si cifra il file con la chiave pubblica del sito e si verifica con la chiave privata",
+          "feedback": "Non è corretto. Quello descritto è un processo di cifratura asimmetrica, non di verifica dell'integrità tramite hash. La verifica dell'integrità confronta l'hash calcolato sul file ricevuto con l'hash dichiarato dal produttore.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        },
+        {
+          "id": "b",
+          "testo": "Si calcola l'hash del file ricevuto e lo si confronta con l'hash dichiarato dalla fonte originale",
+          "corretto": true,
+          "feedback": "Esatto! Il produttore pubblica l'hash SHA-256 del file originale. Dopo il download, si calcola l'hash del file ricevuto: se i due hash coincidono, il file è identico all'originale (non corrotto né modificato). Anche un solo bit cambiato produce un hash completamente diverso."
+        },
+        {
+          "id": "c",
+          "testo": "Si apre il file con un programma antivirus che ne controlla la firma digitale",
+          "feedback": "Non è corretto. L'antivirus analizza il contenuto per rilevare malware, non verifica l'integrità tramite hash. La firma digitale è un meccanismo separato che verifica l'autenticità (chi ha firmato), non solo l'integrità (il file è intatto).",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        },
+        {
+          "id": "d",
+          "testo": "Si scarica il file due volte e si verifica che le due copie siano identiche",
+          "feedback": "Non è corretto. Scaricare due volte non protegge da un file modificato sul server: entrambe le copie risulterebbero identiche tra loro ma diverse dall'originale. L'hash fornito dalla fonte originale è l'unico riferimento affidabile per verificare l'integrità.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        }
+      ],
+      "spiegazione": "Verifica dell'integrità tramite hash: 1) Il produttore calcola SHA-256 del file originale e lo pubblica (es. 'SHA256: a3f2c8...'). 2) Dopo il download, l'utente calcola l'hash del file ricevuto. 3) Se i due hash coincidono → il file è identico all'originale (non corrotto, non manomesso). 4) Se differiscono → il file è stato modificato (corruzione nella trasmissione o attacco). Proprietà chiave: anche 1 solo bit cambiato produce un hash completamente diverso.",
+      "riferimento_principale": "📖 ESPLORA — Hash e integrità"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Cosa ha reso rivoluzionaria la crittografia di Diffie-Hellman proposta nel 1976?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ha reso possibile cifrare messaggi senza usare nessuna chiave",
+          "feedback": "Non è corretto. Diffie-Hellman usa chiavi. La rivoluzione è che permette a due parti di concordare una chiave segreta condivisa su un canale pubblico, senza che un osservatore esterno possa calcolarla — anche se vede tutto lo scambio.",
+          "riferimento": "📖 ESPLORA — Diffie-Hellman e lo scambio di chiavi"
+        },
+        {
+          "id": "b",
+          "testo": "Ha dimostrato come due parti possono concordare una chiave segreta su un canale pubblico, senza doversi incontrare fisicamente",
+          "corretto": true,
+          "feedback": "Esatto! Prima di Diffie-Hellman (1976), due parti che volevano comunicare in modo sicuro dovevano incontrarsi fisicamente per scambiarsi la chiave segreta. Diffie-Hellman ha dimostrato che è matematicamente possibile concordare una chiave condivisa su un canale completamente pubblico, senza che un osservatore esterno possa calcolarla."
+        },
+        {
+          "id": "c",
+          "testo": "Ha inventato il protocollo HTTPS usato nei siti web",
+          "feedback": "Non è corretto. HTTPS usa TLS (Transport Layer Security), sviluppato negli anni '90. Diffie-Hellman (1976) ha introdotto il concetto di scambio di chiavi su canale pubblico, che è poi diventato un componente fondamentale di TLS e di molti altri protocolli sicuri.",
+          "riferimento": "📖 ESPLORA — Diffie-Hellman e lo scambio di chiavi"
+        },
+        {
+          "id": "d",
+          "testo": "Ha scoperto che tutti i cifrari storici erano vulnerabili ad attacchi di forza bruta",
+          "feedback": "Non è corretto. La vulnerabilità degli attacchi di forza bruta era già nota prima di Diffie-Hellman. La rivoluzione di Diffie-Hellman (1976) è stata il concetto di scambio di chiavi su canale pubblico — una soluzione al problema della distribuzione delle chiavi che sembrava impossibile da risolvere.",
+          "riferimento": "📖 ESPLORA — Diffie-Hellman e lo scambio di chiavi"
+        }
+      ],
+      "spiegazione": "Diffie e Hellman (1976) hanno pubblicato il paper 'New Directions in Cryptography' che ha rivoluzionato la crittografia: hanno dimostrato matematicamente che due parti possono concordare una chiave segreta condivisa su un canale pubblico, senza che un osservatore che vede tutto lo scambio possa calcolare la chiave. Questo si basa sul problema matematico del logaritmo discreto. La loro intuizione è alla base di quasi tutta la crittografia moderna usata su internet.",
+      "riferimento_principale": "📖 ESPLORA — Diffie-Hellman e lo scambio di chiavi"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Cosa si intende per 'firma digitale' in crittografia?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La scansione della firma autografa del mittente allegata al documento digitale",
+          "feedback": "Non è corretto. Scansionare una firma autografa è una semplice immagine — non ha nessuna proprietà crittografica e può essere facilmente copiata da chiunque. La firma digitale è un meccanismo matematico basato sulla crittografia asimmetrica.",
+          "riferimento": "📖 ESPLORA — Firma digitale"
+        },
+        {
+          "id": "b",
+          "testo": "Un meccanismo crittografico che prova che il documento è stato firmato dal proprietario della chiave privata e non è stato modificato",
+          "corretto": true,
+          "feedback": "Esatto! La firma digitale usa la chiave privata del firmatario per creare un 'sigillo' matematico sul documento. Chiunque con la chiave pubblica può verificare che: il documento è stato firmato dal proprietario della chiave privata (autenticità) e non è stato modificato dopo la firma (integrità)."
+        },
+        {
+          "id": "c",
+          "testo": "Una password lunga e complessa usata per proteggere i file importanti",
+          "feedback": "Non è corretto. Una password è un segreto condiviso per autenticarsi. La firma digitale è un meccanismo crittografico asimmetrico: usa la chiave privata per firmare e la chiave pubblica per verificare — chiunque può verificare, solo il proprietario può firmare.",
+          "riferimento": "📖 ESPLORA — Firma digitale"
+        },
+        {
+          "id": "d",
+          "testo": "Il numero di serie univoco assegnato a ogni documento elettronico dalla pubblica amministrazione",
+          "feedback": "Non è corretto. Il numero di serie è un identificativo amministrativo. La firma digitale è un costrutto crittografico che garantisce autenticità e integrità del documento, indipendentemente da qualsiasi identificativo amministrativo.",
+          "riferimento": "📖 ESPLORA — Firma digitale"
+        }
+      ],
+      "spiegazione": "La firma digitale funziona così: 1) Si calcola l'hash del documento. 2) L'hash viene cifrato con la chiave privata del firmatario → questa è la firma. 3) La firma viene allegata al documento. 4) Il verificatore decifra la firma con la chiave pubblica del firmatario, ottiene l'hash originale. 5) Calcola l'hash del documento ricevuto. 6) Se i due hash coincidono: documento autentico e non modificato. La firma digitale è legalmente riconosciuta in Europa (eIDAS) e in Italia (CADeS, PAdES).",
+      "riferimento_principale": "📖 ESPLORA — Firma digitale"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Perché la crittografia simmetrica è problematica come unico sistema per proteggere le comunicazioni tra milioni di utenti su internet?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché la crittografia simmetrica è troppo lenta per internet ad alta velocità",
+          "feedback": "Non è corretto. La crittografia simmetrica (AES) è estremamente veloce — molte schede di rete e processori moderni la accelerano via hardware. Il problema è il numero di chiavi da gestire: in un sistema con N utenti servono N×(N-1)/2 chiavi segrete distinte.",
+          "riferimento": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+        },
+        {
+          "id": "b",
+          "testo": "Perché in un sistema con N utenti servirebbero N×(N-1)/2 chiavi segrete distinte, con un problema di distribuzione sicura impossibile da scalare",
+          "corretto": true,
+          "feedback": "Esatto! Con N=1.000 utenti: 1000×999/2 = 499.500 chiavi. Con N=1 miliardo: circa 5×10¹⁷ chiavi. Ogni coppia di utenti avrebbe bisogno della propria chiave segreta, e tutte andrebbero distribuite in modo sicuro prima di comunicare. È un problema di scala insolvibile solo con crittografia simmetrica."
+        },
+        {
+          "id": "c",
+          "testo": "Perché la crittografia simmetrica non funziona su connessioni WiFi, solo su cavi fisici",
+          "feedback": "Non è corretto. La crittografia simmetrica funziona su qualsiasi mezzo di trasmissione — WiFi, fibra ottica, cavi, satellite. Il suo limite non riguarda il mezzo fisico ma la distribuzione sicura delle chiavi tra le parti.",
+          "riferimento": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+        },
+        {
+          "id": "d",
+          "testo": "Perché la crittografia simmetrica richiede hardware specializzato non disponibile ai comuni utenti",
+          "feedback": "Non è corretto. La crittografia simmetrica (AES) è implementata in software su qualsiasi computer, smartphone o router. Non richiede hardware specializzato. Il problema è la distribuzione sicura delle chiavi su scala globale.",
+          "riferimento": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+        }
+      ],
+      "spiegazione": "Il problema di scala della crittografia simmetrica: ogni coppia di utenti che vuole comunicare in modo sicuro deve avere una chiave segreta condivisa. Con N utenti: N×(N-1)/2 chiavi. Per 1 miliardo di utenti: circa 5×10¹⁷ chiavi, tutte da distribuire in modo sicuro prima di comunicare. La crittografia asimmetrica risolve questo: ogni utente ha una sola coppia (pubblica+privata), e chiunque può comunicare con chiunque senza scambio preventivo di segreti.",
+      "riferimento_principale": "📖 ESPLORA — Il problema della distribuzione delle chiavi"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Cosa significa che una firma digitale è 'non ripudiabile'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Significa che la firma non può essere rimossa da nessuno, nemmeno dal firmatario",
+          "feedback": "Non è corretto. Non ripudio significa che il firmatario non può negare di aver firmato, non che la firma non possa essere tecnicamente rimossa. L'affermazione corretta riguarda l'impossibilità di negare l'autoria, non la rimozione tecnica della firma.",
+          "riferimento": "📖 ESPLORA — Firma digitale"
+        },
+        {
+          "id": "b",
+          "testo": "Significa che il firmatario non può negare di aver creato la firma, perché solo lui possiede la chiave privata che l'ha generata",
+          "corretto": true,
+          "feedback": "Esatto! Il non ripudio è una proprietà fondamentale della firma digitale: dato che solo il proprietario ha accesso alla chiave privata usata per firmare, non può in seguito sostenere che la firma è stata creata da qualcun altro. Questo la rende equiparabile alla firma autografa in termini legali."
+        },
+        {
+          "id": "c",
+          "testo": "Significa che la firma funziona anche senza connessione a internet",
+          "feedback": "Non è corretto. La disponibilità della connessione non è collegata al concetto di non ripudio. Il non ripudio riguarda l'impossibilità del firmatario di negare di aver firmato, grazie all'uso della chiave privata di sua esclusiva disponibilità.",
+          "riferimento": "📖 ESPLORA — Firma digitale"
+        },
+        {
+          "id": "d",
+          "testo": "Significa che la firma viene automaticamente aggiornata se il documento viene modificato",
+          "feedback": "Non è corretto. Se il documento viene modificato dopo la firma, la firma diventa invalida — non si aggiorna. Il non ripudio è la proprietà per cui il firmatario non può negare di aver firmato la versione originale del documento.",
+          "riferimento": "📖 ESPLORA — Firma digitale"
+        }
+      ],
+      "spiegazione": "Il non ripudio è una delle quattro proprietà fondamentali della sicurezza dell'informazione (insieme a riservatezza, integrità e disponibilità). In crittografia, il non ripudio garantisce che il firmatario non possa negare di aver firmato: poiché la chiave privata è di esclusiva disponibilità del firmatario, la firma dimostra matematicamente che lui l'ha creata. Questo ha valore legale: il Regolamento eIDAS dell'UE equipara la firma digitale qualificata alla firma autografa.",
+      "riferimento_principale": "📖 ESPLORA — Firma digitale"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "In quale scenario la crittografia end-to-end è critica e non è sufficiente la sola crittografia della connessione (HTTPS)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quando si vuole navigare in modo anonimo su internet",
+          "feedback": "Non è corretto. L'anonimato richiede tecnologie come Tor o VPN, non la crittografia end-to-end. HTTPS protegge il contenuto della comunicazione; end-to-end va oltre: protegge anche dal provider del servizio stesso.",
+          "riferimento": "📖 ESPLORA — Crittografia end-to-end"
+        },
+        {
+          "id": "b",
+          "testo": "Quando si vuole che solo mittente e destinatario possano leggere i messaggi, escludendo anche il provider del servizio (es. WhatsApp, Telegram)",
+          "corretto": true,
+          "feedback": "Esatto! HTTPS cifra la comunicazione tra utente e server del provider — ma il provider stesso può leggere i messaggi in chiaro sul suo server. La crittografia end-to-end (E2E) cifra i messaggi sul dispositivo del mittente e li decifra solo sul dispositivo del destinatario: nemmeno il provider può leggerli."
+        },
+        {
+          "id": "c",
+          "testo": "Quando si trasmettono file di dimensioni superiori a 1 GB",
+          "feedback": "Non è corretto. La dimensione dei file non determina la necessità di crittografia end-to-end. La scelta dipende da chi si vuole escludere dalla lettura del contenuto: se anche il provider non deve poter leggere, serve E2E.",
+          "riferimento": "📖 ESPLORA — Crittografia end-to-end"
+        },
+        {
+          "id": "d",
+          "testo": "Quando si usano reti WiFi pubbliche che potrebbero essere non sicure",
+          "feedback": "Non è corretto. Le reti WiFi pubbliche sono protette da HTTPS per la trasmissione. La crittografia end-to-end serve quando non ci si fida nemmeno del provider del servizio — non è specifica per il tipo di rete usata.",
+          "riferimento": "📖 ESPLORA — Crittografia end-to-end"
+        }
+      ],
+      "spiegazione": "HTTPS protegge la trasmissione tra utente e server del provider (es. WhatsApp), ma il provider stesso vede i messaggi in chiaro. La crittografia end-to-end (E2E) cifra i messaggi sul dispositivo del mittente con la chiave pubblica del destinatario: solo il destinatario può decifrarli. Il provider gestisce solo dati cifrati e non può leggerli. WhatsApp, Signal e iMessage usano E2E (con diverse implementazioni e garanzie). E2E è fondamentale per proteggere comunicazioni sensibili da provider, governi o attaccanti che compromettano i server.",
+      "riferimento_principale": "📖 ESPLORA — Crittografia end-to-end"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Perché SHA-256 non è sufficiente come unico meccanismo per proteggere le password in un database, senza salting?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché SHA-256 è troppo lento per calcolare l'hash di una password",
+          "feedback": "Non è corretto. SHA-256 è estremamente veloce — e questa è proprio parte del problema per il suo uso con le password. Algoritmi come bcrypt o Argon2 vengono preferiti per le password perché sono deliberatamente più lenti, rendendo gli attacchi di forza bruta meno pratici.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        },
+        {
+          "id": "b",
+          "testo": "Perché è vulnerabile ad attacchi rainbow table: un attaccante può precalcolare gli hash delle password comuni e confrontarli con quelli nel database",
+          "corretto": true,
+          "feedback": "Esatto! Una rainbow table è un dizionario precompilato che mappa password comuni nei loro hash. Senza salting, se due utenti hanno la stessa password, hanno lo stesso hash — e l'attaccante può trovare la password in secondi cercando l'hash nella rainbow table. Il salting aggiunge un valore casuale unico per ogni utente prima di calcolare l'hash."
+        },
+        {
+          "id": "c",
+          "testo": "Perché SHA-256 non supporta password con caratteri speciali o emoji",
+          "feedback": "Non è corretto. SHA-256 opera su sequenze di byte e accetta qualsiasi input, incluse password con caratteri speciali, emoji o testi in qualsiasi lingua. Il problema non riguarda i tipi di caratteri supportati.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        },
+        {
+          "id": "d",
+          "testo": "Perché SHA-256 può essere invertito con computer quantistici",
+          "feedback": "Non è corretto. I computer quantistici potrebbero indebolire SHA-256 (algoritmo di Grover riduce la sicurezza a 128 bit equivalenti), ma non 'invertono' la funzione hash. Il problema pratico attuale di SHA-256 per le password è la vulnerabilità alle rainbow table, non i computer quantistici.",
+          "riferimento": "📖 ESPLORA — Hash e integrità"
+        }
+      ],
+      "spiegazione": "Il problema degli hash di password senza salting: se la password 'cane123' produce sempre lo stesso hash SHA-256, un attaccante può precalcolare una 'rainbow table' con milioni di hash di password comuni e confrontarli con i hash del database compromesso. Il salting risolve il problema: si aggiunge un valore casuale unico (salt) a ogni password prima dell'hash. Anche se due utenti hanno la stessa password, i loro hash sono diversi. Per le password si usano algoritmi lenti (bcrypt, Argon2, scrypt) che rendono gli attacchi di forza bruta computazionalmente costosi.",
+      "riferimento_principale": "📖 ESPLORA — Hash e integrità"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché RSA potrebbe diventare insicuro con l'avvento dei computer quantistici?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i computer quantistici sono più veloci e riescono a provare tutte le chiavi possibili in meno tempo",
+          "feedback": "Non è corretto. Probare tutte le chiavi possibili (forza bruta) è impraticabile anche per i computer quantistici su chiavi RSA di 2048+ bit. Il problema specifico di RSA con i computer quantistici è l'algoritmo di Shor, che fattorizza efficientemente i numeri grandi.",
+          "riferimento": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+        },
+        {
+          "id": "b",
+          "testo": "Perché l'algoritmo di Shor, eseguibile su computer quantistici, fattorizza efficientemente numeri grandi in tempo polinomiale",
+          "corretto": true,
+          "feedback": "Esatto! L'algoritmo di Shor (1994) dimostra che un computer quantistico sufficientemente potente può fattorizzare numeri grandi in tempo polinomiale — molto più velocemente di qualsiasi algoritmo classico conosciuto. Questo minerebbe la sicurezza di RSA, che si basa proprio sulla difficoltà della fattorizzazione per i computer classici."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i computer quantistici usano qubit invece di bit e RSA è basato sui bit classici",
+          "feedback": "Non è corretto. Il fatto che RSA usi bit classici non è di per sé il problema — l'algoritmo è matematico e può essere implementato su qualsiasi architettura. Il problema specifico è che l'algoritmo di Shor, eseguibile su computer quantistici, risolve efficientemente la fattorizzazione, invalidando il fondamento matematico di RSA.",
+          "riferimento": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i computer quantistici possono leggere la chiave privata direttamente dalla memoria del computer",
+          "feedback": "Non è corretto. Leggere la memoria di un computer è un attacco fisico che non richiede computer quantistici. L'algoritmo di Shor è un attacco matematico: permette di derivare la chiave privata RSA partendo solo dalla chiave pubblica, risolvendo il problema della fattorizzazione.",
+          "riferimento": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+        }
+      ],
+      "spiegazione": "L'algoritmo di Shor (1994) dimostra che un computer quantistico con abbastanza qubit stabili (corretti dagli errori) può fattorizzare n = p×q in tempo polinomiale O(log³ n), contro il tempo esponenziale degli algoritmi classici migliori. Questo invaliderebbe RSA e altri sistemi basati sulla fattorizzazione. La crittografia post-quantistica (NIST ha standardizzato CRYSTALS-Kyber e CRYSTALS-Dilithium nel 2024) usa problemi matematici diversi (lattice-based, hash-based) resistenti anche ai computer quantistici.",
+      "riferimento_principale": "📖 ESPLORA — RSA e la difficoltà della fattorizzazione"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un'azienda usa HTTPS per il suo sito web di e-commerce. Un cliente inserisce il numero di carta di credito. Quale affermazione descrive correttamente il livello di protezione offerto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il numero di carta è completamente sicuro: nessuno al mondo può vederlo",
+          "feedback": "Non è corretto. HTTPS protegge il dato durante la trasmissione da browser a server. Una volta arrivato al server, il dato è in chiaro nei sistemi dell'azienda. Se il server viene compromesso, o se l'azienda ha dipendenti malintenzionati, il dato può essere esposto.",
+          "riferimento": "📖 ESPLORA — HTTPS e TLS"
+        },
+        {
+          "id": "b",
+          "testo": "HTTPS protegge il dato durante la trasmissione (da browser a server), ma non protegge dai rischi sul server dell'azienda",
+          "corretto": true,
+          "feedback": "Esatto! HTTPS cifra la comunicazione tra il browser dell'utente e il server dell'azienda — nessuno che intercetti il traffico di rete può leggere il numero di carta. Ma una volta arrivato al server, il dato deve essere protetto da altre misure: cifratura del database, controllo degli accessi, conformità PCI-DSS, gestione sicura delle credenziali dei dipendenti."
+        },
+        {
+          "id": "c",
+          "testo": "HTTPS non protegge affatto il numero di carta perché i siti di e-commerce sono sempre vulnerabili",
+          "feedback": "Non è corretto. HTTPS offre protezione reale durante la trasmissione: cifra il canale di comunicazione tra browser e server con TLS. Questa protezione è fondamentale e standard. Il punto è che HTTPS da solo non è sufficiente — servono misure aggiuntive sul server.",
+          "riferimento": "📖 ESPLORA — HTTPS e TLS"
+        },
+        {
+          "id": "d",
+          "testo": "HTTPS protegge il numero di carta sia durante la trasmissione che sul server dell'azienda",
+          "feedback": "Non è corretto. HTTPS protegge solo la trasmissione. Sul server, la responsabilità di proteggere i dati è dell'azienda (cifratura del database, controllo accessi, conformità PCI-DSS). HTTPS non ha controllo su come l'azienda gestisce i dati una volta ricevuti.",
+          "riferimento": "📖 ESPLORA — HTTPS e TLS"
+        }
+      ],
+      "spiegazione": "La sicurezza di una transazione e-commerce richiede più strati: 1) HTTPS/TLS: protegge la trasmissione da browser a server (nessuno intercetta il traffico); 2) Server sicuro: il dato deve essere cifrato a riposo nel database; 3) PCI-DSS: standard di sicurezza obbligatorio per chi gestisce dati di carte di pagamento; 4) Token: idealmente il numero di carta non viene salvato — viene sostituito da un token dal processore di pagamento; 5) Conformità GDPR: trattamento dei dati personali conforme alla normativa EU. HTTPS è necessario ma non sufficiente.",
+      "riferimento_principale": "📖 ESPLORA — HTTPS e TLS"
+    }
+  ]
+}

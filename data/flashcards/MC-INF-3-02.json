@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Cos'è il machine learning?",
+    "back": "Un ramo dell'intelligenza artificiale in cui i sistemi imparano dai dati, migliorano le prestazioni con l'esperienza senza essere esplicitamente programmati.\n\nInvece di scrivere regole precise, si mostrano migliaia di esempi e il sistema trova da solo i pattern. Spotify impara i tuoi gusti musicali ascoltando le tue scelte.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un dataset?",
+    "back": "Un insieme strutturato di dati usato per addestrare, validare e testare un modello di machine learning.\n\nLa qualità del dataset determina la qualità del modello: dati errati o sbilanciati producono modelli che sbagliano sistematicamente. Un dataset per riconoscere i gatti contiene migliaia di foto etichettate.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un'etichetta (label) nel machine learning?",
+    "back": "L'informazione che indica la risposta corretta per un esempio del dataset, usata nell'apprendimento supervisionato.\n\nOgni email nel dataset di spam è etichettata \"spam\" o \"non spam\". Il modello impara a classificare nuove email guardando i pattern delle email etichettate.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è una rete neurale artificiale?",
+    "back": "Un modello computazionale ispirato al cervello umano, composto da strati di \"neuroni\" artificiali connessi che elaborano informazioni.\n\nI neuroni di uno strato ricevono segnali da quello precedente, li pesano e li trasmettono al successivo. Con molti strati si ottiene il deep learning.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il bias algoritmico?",
+    "back": "Un errore sistematico nelle previsioni di un modello AI causato da dati di addestramento non rappresentativi o da scelte progettuali distorte.\n\nSe un sistema di riconoscimento facciale viene addestrato prevalentemente su volti di una sola etnia, performerà peggio sulle altre. Il bias algoritmico può amplificare discriminazioni sociali.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è l'AI generativa?",
+    "back": "Un tipo di intelligenza artificiale capace di creare nuovi contenuti originali (testi, immagini, audio, video) a partire da un prompt dell'utente.\n\nGPT-4, Gemini e Claude generano testi; DALL-E e Midjourney generano immagini. L'AI generativa apprende la struttura dei dati di addestramento e produce nuovi esempi.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quali sono le tre tipologie principali di apprendimento nel machine learning?",
+    "back": "Supervisionato (con etichette), non supervisionato (senza etichette), per rinforzo (tramite ricompense e penalità).\n\nSupervisionato: classificare email spam. Non supervisionato: raggruppare clienti per comportamenti simili. Per rinforzo: addestrare un robot a camminare premiando ogni passo corretto.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è l'overfitting in un modello di machine learning?",
+    "back": "Il problema in cui un modello impara i dati di addestramento troppo bene — inclusi i rumori casuali — e poi performa male su nuovi dati.\n\nCome un alunno che memorizza le domande invece di capire i concetti: supera il test del libro ma fallisce con domande nuove. Si contrasta dividendo i dati in training set e test set.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il deep learning e in cosa si distingue dal machine learning tradizionale?",
+    "back": "Il deep learning usa reti neurali con molti strati capaci di imparare rappresentazioni sempre più astratte dei dati.\n\nIl ML tradizionale richiede che le caratteristiche rilevanti siano definite a mano. Il deep learning le impara autonomamente: impara da solo a riconoscere bordi, forme e infine oggetti nelle immagini.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come fa un algoritmo di raccomandazione a prevedere cosa potrebbe piacerti?",
+    "back": "Analizza il tuo comportamento passato e lo confronta con quello di utenti simili (collaborative filtering).\n\nSe tu e un altro utente avete ascoltato le stesse 20 canzoni, l'algoritmo ti propone ciò che l'altro ha ascoltato in più. Non capisce la musica: vede solo pattern di comportamento.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è un'\"allucinazione\" in un modello AI generativo?",
+    "back": "Quando un modello genera informazioni false o inventate presentandole con sicurezza come se fossero vere.\n\nI modelli linguistici non \"sanno\" se quello che dicono è vero: generano la sequenza di testo più probabile. Se non hanno dati su qualcosa, possono inventare riferimenti, date e citazioni plausibili ma inesistenti.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa si intende per \"opacità del modello\" (black box) in AI?",
+    "back": "La difficoltà di capire perché un modello AI ha preso una certa decisione, anche analizzando il suo codice interno.\n\nUn modello con miliardi di parametri prende decisioni attraverso operazioni matematiche incomprensibili. È un problema etico quando l'AI decide su prestiti bancari, diagnosi mediche o ammissioni universitarie.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché AlphaGo ha rappresentato un salto storico per l'intelligenza artificiale?",
+    "back": "Perché ha battuto il campione mondiale di Go nel 2016, un gioco con più possibili mosse degli atomi nell'universo, dove le regole euristiche tradizionali non bastano.\n\nAlphaGo usa reinforcement learning e reti neurali: ha imparato giocando milioni di partite contro se stesso. Nessun approccio basato su regole esplicite avrebbe potuto competere.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la sola \"accuratezza\" può ingannare nella valutazione di un modello di classificazione?",
+    "back": "Con dataset sbilanciati un modello che prevede sempre la classe maggioritaria raggiunge alta accuratezza senza imparare nulla.\n\nCon il 99% di email legittime, un modello che dice sempre \"non spam\" raggiunge il 99% di accuratezza. Metriche migliori: precisione, recall e F1-score (media armonica tra i due).",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché addestrare un Large Language Model (LLM) richiede enormi risorse computazionali?",
+    "back": "Perché il training ottimizza miliardi di parametri su centinaia di miliardi di token usando il gradiente discendente — un processo iterativo intensivo.\n\nGPT-4 ha richiesto migliaia di GPU per mesi, consumando energia paragonabile a quella di una piccola città. L'inference (rispondere) è molto più economica del training.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come i dati di addestramento influenzano il comportamento di un modello AI?",
+    "back": "I dati di addestramento determinano le conoscenze, i bias e i limiti del modello.\n\nUn modello addestrato su testi del 2020 non conosce eventi del 2024. Se i dati contengono stereotipi, il modello li riprodurrà. I dati di addestramento sono la \"visione del mondo\" del modello.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come si può ridurre il bias algoritmico in un sistema di riconoscimento facciale?",
+    "back": "Bilanciare il dataset (uguale rappresentazione di età, etnie, genere), testare separatamente le prestazioni su ogni sottogruppo, e coinvolgere team diversificati nella progettazione.\n\nSe il dataset ha l'80% di volti maschili, il modello performerà peggio sui volti femminili. L'audit esterno e le metriche disaggregate per gruppo sono pratiche essenziali.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché l'apprendimento per rinforzo è adatto alla robotica ma non alla classificazione di immagini?",
+    "back": "Perché il reinforcement learning impara per interazione con l'ambiente tramite reward/penalità — ideale quando la risposta corretta non è nota in anticipo ma emerge dall'esperienza.\n\nPer classificare immagini esistono già label esplicite: il supervised learning è più efficiente. Il RL eccelle dove si deve esplorare uno spazio di azioni senza esempi pre-etichettati.",
+    "tag": "Avanzato"
+  }
+]

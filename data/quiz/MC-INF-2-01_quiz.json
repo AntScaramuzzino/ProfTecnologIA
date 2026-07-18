@@ -1,0 +1,600 @@
+{
+  "mc_id": "MC-INF-2-01",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Qual è la funzione principale di un sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Gestire le risorse hardware e permettere ai programmi applicativi di funzionare",
+          "corretto": true,
+          "feedback": "Esatto! Il sistema operativo è lo strato software che si trova tra l'hardware (componenti fisici) e i programmi applicativi. Gestisce processore, memoria, file e periferiche, consentendo a più programmi di funzionare senza conflitti."
+        },
+        {
+          "id": "b",
+          "testo": "Proteggere il computer dai virus informatici e dal malware",
+          "feedback": "Non è corretto. La protezione dai virus è compito dei software antivirus, non del sistema operativo in senso stretto. Il sistema operativo gestisce le risorse hardware e permette ai programmi di funzionare — la sicurezza è solo una delle sue tante funzioni.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        },
+        {
+          "id": "c",
+          "testo": "Connettersi automaticamente a internet e aggiornare i programmi installati",
+          "feedback": "Non è corretto. La connessione a internet e gli aggiornamenti sono servizi specifici che il sistema operativo può offrire, ma non sono la sua funzione principale. Il ruolo fondamentale dell'OS è fare da intermediario tra hardware e software.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        },
+        {
+          "id": "d",
+          "testo": "Produrre l'output visivo sullo schermo per tutte le applicazioni",
+          "feedback": "Non è corretto. La visualizzazione sullo schermo avviene attraverso il driver della scheda grafica e le API del sistema operativo, ma non è la funzione principale dell'OS. Il sistema operativo gestisce processore, memoria, file system e tutte le periferiche.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        }
+      ],
+      "spiegazione": "Il sistema operativo (OS) è il software di base che fa da intermediario tra l'hardware (componenti fisici del computer) e i programmi applicativi (browser, editor, giochi). Le sue quattro funzioni principali sono: gestione processi, gestione memoria, gestione file system, gestione periferiche tramite driver.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Chi ha creato CP/M, il primo sistema operativo diffuso per personal computer, e in quale anno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Bill Gates di Microsoft nel 1981",
+          "feedback": "Non è corretto. Bill Gates ha fondato Microsoft e ha commercializzato MS-DOS nel 1981, ma CP/M è precedente. Il primo OS per PC è CP/M, creato da Gary Kildall nel 1974.",
+          "riferimento": "📖 ESPLORA — Gary Kildall e la nascita degli OS"
+        },
+        {
+          "id": "b",
+          "testo": "Steve Jobs di Apple nel 1977",
+          "feedback": "Non è corretto. Steve Jobs ha co-fondato Apple e ha contribuito allo sviluppo dell'Apple II (1977), ma CP/M è stato creato da Gary Kildall per Digital Research nel 1974, tre anni prima.",
+          "riferimento": "📖 ESPLORA — Gary Kildall e la nascita degli OS"
+        },
+        {
+          "id": "c",
+          "testo": "Gary Kildall di Digital Research nel 1974",
+          "corretto": true,
+          "feedback": "Esatto! Gary Kildall ha creato CP/M (Control Program for Microcomputers) nel 1974 per Digital Research. È stato il primo sistema operativo ampiamente diffuso per microcomputer, ed è diventato lo standard de facto fino all'arrivo di MS-DOS nel 1981."
+        },
+        {
+          "id": "d",
+          "testo": "Linus Torvalds nel 1991",
+          "feedback": "Non è corretto. Linus Torvalds ha creato il kernel Linux nel 1991. CP/M è molto più antico: è del 1974. Linux è arrivato 17 anni dopo CP/M.",
+          "riferimento": "📖 ESPLORA — Gary Kildall e la nascita degli OS"
+        }
+      ],
+      "spiegazione": "Gary Kildall (1942–1994) ha creato CP/M (Control Program for Microcomputers) nel 1974 per la sua azienda Digital Research. CP/M è stato il primo sistema operativo ampiamente adottato per i microcomputer degli anni '70 e '80. La storia di come IBM scelse MS-DOS invece di CP/M per il PC IBM è uno degli episodi più controversi della storia dell'informatica.",
+      "riferimento_principale": "📖 ESPLORA — Gary Kildall e la nascita degli OS"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Cos'è il kernel di un sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'interfaccia grafica che l'utente vede e usa ogni giorno",
+          "feedback": "Non è corretto. L'interfaccia grafica (GUI) è il livello visivo con cui l'utente interagisce: finestre, icone, menu. Il kernel è il nucleo nascosto dell'OS che gestisce direttamente l'hardware, invisibile all'utente.",
+          "riferimento": "📖 ESPLORA — Il kernel: il nucleo invisibile"
+        },
+        {
+          "id": "b",
+          "testo": "Il programma installato per primo su un computer nuovo",
+          "feedback": "Non è corretto. Il primo programma che si carica all'avvio è il BIOS/UEFI, non il kernel. Il kernel è il nucleo del sistema operativo che gestisce direttamente le risorse hardware: processore, memoria, periferiche.",
+          "riferimento": "📖 ESPLORA — Il kernel: il nucleo invisibile"
+        },
+        {
+          "id": "c",
+          "testo": "Il nucleo del sistema operativo che gestisce direttamente le risorse hardware",
+          "corretto": true,
+          "feedback": "Esatto! Il kernel è il nucleo dell'OS: il componente più vicino all'hardware. Gestisce l'allocazione della CPU tra i processi, la memoria RAM, l'accesso alle periferiche tramite driver. È il primo programma che si carica dopo il BIOS e rimane in memoria durante tutta la sessione."
+        },
+        {
+          "id": "d",
+          "testo": "Il database in cui il sistema operativo salva le impostazioni dell'utente",
+          "feedback": "Non è corretto. Il database delle impostazioni si chiama 'registro di sistema' in Windows o 'file di configurazione' in Linux. Il kernel è il nucleo del sistema operativo che gestisce hardware e risorse di sistema.",
+          "riferimento": "📖 ESPLORA — Il kernel: il nucleo invisibile"
+        }
+      ],
+      "spiegazione": "Il kernel è il nucleo del sistema operativo: il componente più vicino all'hardware, che gira con i massimi privilegi di sistema. Gestisce i processi (scheduling della CPU), la memoria RAM (allocazione e protezione), le periferiche (tramite driver) e il file system. È il primo componente del SO caricato in memoria all'avvio e vi rimane per tutta la sessione.",
+      "riferimento_principale": "📖 ESPLORA — Il kernel: il nucleo invisibile"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'multitasking' in un sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La possibilità di collegare più monitor allo stesso computer",
+          "feedback": "Non è corretto. Collegare più monitor è una funzionalità hardware, non multitasking. Il multitasking riguarda l'esecuzione concorrente di più programmi, non la gestione dei display.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        },
+        {
+          "id": "b",
+          "testo": "La capacità del sistema operativo di eseguire più programmi contemporaneamente condividendo le risorse",
+          "corretto": true,
+          "feedback": "Esatto! Il multitasking permette di eseguire più programmi 'contemporaneamente'. In realtà su un solo core la CPU li esegue uno alla volta, ma li alterna così rapidamente (a fettine di tempo chiamate 'time slice') che sembrano simultanei all'utente."
+        },
+        {
+          "id": "c",
+          "testo": "La funzione che permette di salvare più file contemporaneamente su un disco",
+          "feedback": "Non è corretto. Salvare file è una funzione del file system, non il multitasking. Il multitasking riguarda l'esecuzione concorrente di più processi (programmi in esecuzione).",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        },
+        {
+          "id": "d",
+          "testo": "La capacità di un processore di eseguire più istruzioni nella stessa operazione",
+          "feedback": "Non è corretto. Eseguire più istruzioni nella stessa operazione si chiama 'pipelining' o 'parallelismo a livello di istruzione' e riguarda l'architettura del processore, non il multitasking dell'OS. Il multitasking gestisce la condivisione della CPU tra più processi.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        }
+      ],
+      "spiegazione": "Il multitasking è la capacità del sistema operativo di eseguire più programmi 'contemporaneamente'. Su un singolo core, la CPU in realtà esegue un solo processo per volta, ma li alterna molto rapidamente (ogni pochi millisecondi) assegnando a ciascuno una 'fetta di tempo' (time slice). Il sistema operativo gestisce questa rotazione tramite lo scheduler, che decide l'ordine e la durata di esecuzione di ogni processo.",
+      "riferimento_principale": "📖 ESPLORA — Gestione dei processi e multitasking"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quale dei seguenti è un sistema operativo per dispositivi mobili?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Windows 11",
+          "feedback": "Non è corretto. Windows 11 è un sistema operativo per computer desktop e laptop, sviluppato da Microsoft. Per dispositivi mobili Windows ha avuto Windows Phone (oggi dismesso), ma Windows 11 è destinato ai PC.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "b",
+          "testo": "macOS Sequoia",
+          "feedback": "Non è corretto. macOS è il sistema operativo per i computer Mac di Apple (iMac, MacBook). Per iPhone e iPad Apple usa iOS e iPadOS — sistemi operativi distinti e ottimizzati per dispositivi touch.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "c",
+          "testo": "Android",
+          "corretto": true,
+          "feedback": "Esatto! Android è il sistema operativo per dispositivi mobili sviluppato da Google (basato sul kernel Linux). È il sistema operativo mobile più diffuso al mondo, usato dalla maggior parte degli smartphone e tablet non Apple."
+        },
+        {
+          "id": "d",
+          "testo": "Ubuntu",
+          "feedback": "Non è corretto. Ubuntu è una distribuzione Linux sviluppata da Canonical per desktop e server. Per i dispositivi mobili esistono versioni sperimentali di Ubuntu Touch, ma non è un sistema operativo mobile mainstream.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        }
+      ],
+      "spiegazione": "I principali sistemi operativi per dispositivi mobili sono Android (Google, basato su kernel Linux, open source per i produttori) e iOS (Apple, solo per iPhone). Per desktop/laptop: Windows (Microsoft), macOS (Apple), Linux (open source). Per server: prevalentemente Linux e Windows Server.",
+      "riferimento_principale": "📖 ESPLORA — I principali sistemi operativi"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa significa 'interfaccia CLI' in un sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un'interfaccia con finestre, icone e menu gestiti col mouse",
+          "feedback": "Non è corretto. Quella descritta è la GUI (Graphical User Interface). La CLI è l'interfaccia a riga di comando: l'utente digita comandi testuali e riceve risposte in testo.",
+          "riferimento": "📖 ESPLORA — CLI e GUI: due modi di parlare al sistema"
+        },
+        {
+          "id": "b",
+          "testo": "Un'interfaccia testuale dove l'utente digita comandi e riceve risposte in testo",
+          "corretto": true,
+          "feedback": "Esatto! CLI (Command Line Interface) è l'interfaccia a riga di comando: l'utente digita comandi testuali (es. 'ls', 'cd', 'mkdir') e il sistema risponde con testo. È meno intuitiva della GUI ma più potente per automazione e scripting."
+        },
+        {
+          "id": "c",
+          "testo": "Un sistema di aggiornamento automatico del sistema operativo",
+          "feedback": "Non è corretto. Gli aggiornamenti automatici sono una funzionalità specifica del sistema operativo. CLI (Command Line Interface) è un tipo di interfaccia utente — il modo in cui l'utente interagisce con il sistema tramite comandi testuali.",
+          "riferimento": "📖 ESPLORA — CLI e GUI: due modi di parlare al sistema"
+        },
+        {
+          "id": "d",
+          "testo": "Il linguaggio di programmazione usato per scrivere il sistema operativo",
+          "feedback": "Non è corretto. Il linguaggio di programmazione usato per i sistemi operativi è tipicamente C o C++. CLI (Command Line Interface) è un tipo di interfaccia utente, non un linguaggio di programmazione.",
+          "riferimento": "📖 ESPLORA — CLI e GUI: due modi di parlare al sistema"
+        }
+      ],
+      "spiegazione": "CLI (Command Line Interface) è l'interfaccia a riga di comando: l'utente interagisce col sistema digitando comandi testuali (es. nel terminale di Linux/macOS o nel prompt dei comandi di Windows) e riceve risposte in formato testo. GUI (Graphical User Interface) usa invece finestre, icone e mouse. La CLI è meno intuitiva ma più potente per automazione, scripting e controllo fine del sistema.",
+      "riferimento_principale": "📖 ESPLORA — CLI e GUI: due modi di parlare al sistema"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "Come gestisce il sistema operativo la situazione in cui la RAM è esaurita?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Spegne automaticamente i processi che usano più memoria per liberare spazio",
+          "feedback": "Non è corretto. Spegnere i processi arbitrariamente causerebbe perdita di dati. Il sistema operativo usa principalmente lo swap (memoria virtuale): sposta parti di memoria RAM sull'archiviazione di massa per liberare RAM, senza terminare i processi.",
+          "riferimento": "📖 ESPLORA — Gestione della memoria RAM"
+        },
+        {
+          "id": "b",
+          "testo": "Usa parte dello storage (SSD/HDD) come memoria virtuale (swap) per estendere la RAM disponibile",
+          "corretto": true,
+          "feedback": "Esatto! Quando la RAM è esaurita, il sistema operativo usa lo swap (o file di paging): sposta i dati dei processi inattivi dalla RAM allo storage (SSD/HDD) per liberare spazio. Questo rallenta il sistema (lo storage è molto più lento della RAM) ma permette di eseguire più programmi di quanta RAM fisica sia disponibile."
+        },
+        {
+          "id": "c",
+          "testo": "Chiede all'utente di inserire un modulo RAM aggiuntivo prima di continuare",
+          "feedback": "Non è corretto. Il sistema operativo non può chiedere hardware aggiuntivo in tempo reale. Gestisce la carenza di RAM tramite meccanismi software come lo swap o la memoria virtuale, senza richiedere intervento fisico.",
+          "riferimento": "📖 ESPLORA — Gestione della memoria RAM"
+        },
+        {
+          "id": "d",
+          "testo": "Copia l'intera RAM su un file di backup e la svuota completamente",
+          "feedback": "Non è corretto. Il sistema operativo non svuota l'intera RAM: gestirebbe ogni processo perdendo lo stato di tutti i programmi aperti. Lo swap sposta selettivamente solo le parti di memoria dei processi temporaneamente inattivi.",
+          "riferimento": "📖 ESPLORA — Gestione della memoria RAM"
+        }
+      ],
+      "spiegazione": "Quando la RAM è piena, il sistema operativo usa la memoria virtuale (swap/file di paging): sposta i dati dei processi meno attivi dalla RAM allo storage (SSD o HDD) e carica in RAM i dati necessari ai processi attivi. Il sistema appare come se avesse più RAM di quella fisica disponibile, ma è molto più lento perché gli SSD sono 10-100 volte più lenti della RAM, gli HDD ancora di più.",
+      "riferimento_principale": "📖 ESPLORA — Gestione della memoria RAM"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "Come è organizzato il file system di un sistema operativo moderno?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "In una lista piatta di file tutti allo stesso livello senza cartelle",
+          "feedback": "Non è corretto. Una struttura piatta sarebbe impossibile da navigare con milioni di file. I file system moderni usano una struttura ad albero gerarchica: cartelle che contengono file e altre cartelle, con una directory radice al vertice.",
+          "riferimento": "📖 ESPLORA — Gestione del file system"
+        },
+        {
+          "id": "b",
+          "testo": "In una struttura ad albero gerarchica con cartelle annidate che partono da una directory radice",
+          "corretto": true,
+          "feedback": "Esatto! Il file system è organizzato ad albero: una directory radice (in Windows 'C:\\', in Linux '/') contiene cartelle, che possono contenere altre cartelle e file. Il percorso (path) di un file descrive il cammino dalla radice fino al file stesso."
+        },
+        {
+          "id": "c",
+          "testo": "In un database relazionale con tabelle e chiavi primarie per ogni file",
+          "feedback": "Non è corretto. I database relazionali sono usati per dati strutturati delle applicazioni. Il file system ha una propria struttura ad albero gerarchica, distinta dai database. Alcuni file system moderni usano concetti simili ai database per i metadati, ma la struttura di base è ad albero.",
+          "riferimento": "📖 ESPLORA — Gestione del file system"
+        },
+        {
+          "id": "d",
+          "testo": "In ordine cronologico di creazione, con i file più vecchi archiviati automaticamente",
+          "feedback": "Non è corretto. L'ordine cronologico è uno dei possibili criteri di visualizzazione, non la struttura del file system. Il file system è organizzato ad albero gerarchico, indipendentemente dalla data di creazione dei file.",
+          "riferimento": "📖 ESPLORA — Gestione del file system"
+        }
+      ],
+      "spiegazione": "Il file system è organizzato ad albero gerarchico: una directory radice (in Windows 'C:\\', in Linux e macOS '/') contiene cartelle (directory) che possono contenere altre cartelle e file. Ogni file ha: un nome, un percorso (path) che indica la sua posizione nell'albero, metadati (data creazione, dimensione, permessi) e il contenuto effettivo. I permessi di lettura/scrittura/esecuzione controllano chi può accedere a ogni file.",
+      "riferimento_principale": "📖 ESPLORA — Gestione del file system"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Cosa fa un driver nel sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Protegge il computer da virus che si nascondono nei dispositivi USB",
+          "feedback": "Non è corretto. La protezione da virus è compito del software antivirus. Un driver è un programma che permette al sistema operativo di comunicare con una specifica periferica hardware (stampante, scheda grafica, tastiera ecc.).",
+          "riferimento": "📖 ESPLORA — Gestione delle periferiche e i driver"
+        },
+        {
+          "id": "b",
+          "testo": "Traduce i comandi generici del sistema operativo in istruzioni specifiche per un dispositivo hardware",
+          "corretto": true,
+          "feedback": "Esatto! Un driver è un software che fa da traduttore tra il sistema operativo e un dispositivo hardware specifico. Il sistema operativo invia comandi generici ('stampa questo documento'); il driver li traduce nelle istruzioni specifiche che la stampante capisce."
+        },
+        {
+          "id": "c",
+          "testo": "Gestisce la velocità del processore in base al carico di lavoro",
+          "feedback": "Non è corretto. La gestione della velocità del processore (scaling della frequenza) è compito del kernel e del gestore dell'alimentazione. Un driver gestisce la comunicazione tra OS e un dispositivo hardware specifico.",
+          "riferimento": "📖 ESPLORA — Gestione delle periferiche e i driver"
+        },
+        {
+          "id": "d",
+          "testo": "Comprime i file prima di salvarli sull'archiviazione di massa",
+          "feedback": "Non è corretto. La compressione dei file è una funzione del file system o di programmi specifici. Un driver gestisce la comunicazione tra il sistema operativo e un dispositivo hardware (stampante, scheda grafica, tastiera, mouse ecc.).",
+          "riferimento": "📖 ESPLORA — Gestione delle periferiche e i driver"
+        }
+      ],
+      "spiegazione": "Un driver è un software che fa da traduttore tra il sistema operativo e un dispositivo hardware specifico. Il sistema operativo parla un linguaggio generico; ogni periferica (stampante, scheda grafica, tastiera, mouse, webcam) ha le sue istruzioni proprietarie. Il driver traduce le richieste generiche dell'OS in comandi specifici comprensibili dal dispositivo. Per questo motivo collegare una nuova periferica richiede spesso di installare il suo driver.",
+      "riferimento_principale": "📖 ESPLORA — Gestione delle periferiche e i driver"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Come funziona il multitasking su un computer con un singolo core di CPU?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il processore esegue tutti i processi nello stesso momento dividendo la sua potenza",
+          "feedback": "Non è corretto. Un singolo core non può fisicamente eseguire più istruzioni simultaneamente. Il multitasking simula la simultaneità alternando rapidamente tra i processi: ogni processo riceve una 'fetta di tempo' (time slice) di pochi millisecondi.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        },
+        {
+          "id": "b",
+          "testo": "Il sistema operativo alterna rapidamente tra i processi, assegnando a ciascuno una fetta di tempo (time slice)",
+          "corretto": true,
+          "feedback": "Esatto! Su un singolo core, il processore esegue un solo processo alla volta. Lo scheduler del sistema operativo alterna tra i processi ogni pochi millisecondi (time slice). La velocità di alternanza è tale che all'utente sembra che i programmi girino simultaneamente."
+        },
+        {
+          "id": "c",
+          "testo": "I processi aspettano in fila e vengono eseguiti uno alla volta completamente prima del successivo",
+          "feedback": "Non è corretto. Quella descritta è l'esecuzione batch (sequenziale), non il multitasking. Nel multitasking i processi si alternano rapidamente e nessuno aspetta che un altro finisca completamente prima di avere accesso alla CPU.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema operativo usa la RAM al posto della CPU per eseguire i processi in parallelo",
+          "feedback": "Non è corretto. La RAM è memoria, non un'unità di calcolo. Il calcolo avviene sempre nella CPU. Il multitasking è gestito dallo scheduler del sistema operativo, che alterna l'accesso alla CPU tra i processi.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        }
+      ],
+      "spiegazione": "Su un singolo core CPU, il multitasking è implementato tramite time-sharing: lo scheduler del kernel assegna a ogni processo una fetta di tempo (time slice, tipicamente 1-50 ms), poi passa al processo successivo. Ogni processo conserva il proprio 'contesto' (stato dei registri, stack, variabili) mentre aspetta. La velocità di alternanza (centinaia di volte al secondo) crea l'illusione di esecuzione simultanea.",
+      "riferimento_principale": "📖 ESPLORA — Gestione dei processi e multitasking"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Qual è la principale differenza tra Windows e Linux come sistemi operativi?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Windows funziona solo su PC, Linux funziona solo su server",
+          "feedback": "Non è corretto. Linux funziona su una gamma enorme di dispositivi: desktop, server, smartphone (Android è basato su Linux), router, dispositivi embedded. Windows funziona prevalentemente su PC e server, ma la distinzione non è assoluta.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "b",
+          "testo": "Windows è un software proprietario a pagamento di Microsoft; Linux è open source e liberamente distribuibile",
+          "corretto": true,
+          "feedback": "Esatto! Windows è sviluppato da Microsoft, è software proprietario (il codice sorgente non è pubblico) e richiede l'acquisto di una licenza. Linux è open source: il codice sorgente è pubblico, liberamente modificabile e distribuibile. È sviluppato collaborativamente da una comunità globale."
+        },
+        {
+          "id": "c",
+          "testo": "Windows è più sicuro di Linux perché ha più aggiornamenti di sicurezza",
+          "feedback": "Non è corretto. Linux è generalmente considerato più sicuro per i server, specialmente perché il codice sorgente è pubblico e esaminato da milioni di sviluppatori. Gli aggiornamenti di sicurezza esistono in entrambi i sistemi.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "d",
+          "testo": "Linux non ha un'interfaccia grafica, Windows sì",
+          "feedback": "Non è corretto. Linux ha molte interfacce grafiche (GNOME, KDE, Xfce ecc.), alcune paragonabili a Windows in termini di usabilità. La differenza principale riguarda la natura del software (proprietario vs open source), non la presenza di GUI.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        }
+      ],
+      "spiegazione": "Windows (Microsoft): software proprietario, codice sorgente chiuso, licenza a pagamento, mercato prevalentemente consumer e aziendale desktop. Linux: open source (kernel rilasciato da Linus Torvalds nel 1991), codice pubblico, gratuito, altamente configurabile. Linux domina i server web (>90% dei server internet), i supercomputer (100% dei top 500), i sistemi embedded e i dispositivi Android.",
+      "riferimento_principale": "📖 ESPLORA — I principali sistemi operativi"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Perché un dispositivo smette di funzionare correttamente quando il suo driver non è compatibile con il sistema operativo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché il driver incompatibile usa troppa RAM e rallenta il sistema",
+          "feedback": "Non è corretto. Il consumo di RAM non è la causa principale. Un driver incompatibile non riesce a tradurre correttamente le comunicazioni tra OS e hardware: il dispositivo non riceve le istruzioni giuste o le riceve in formato incomprensibile.",
+          "riferimento": "📖 ESPLORA — Gestione delle periferiche e i driver"
+        },
+        {
+          "id": "b",
+          "testo": "Perché senza il driver corretto il sistema operativo non sa come comunicare con quel dispositivo specifico",
+          "corretto": true,
+          "feedback": "Esatto! Il driver è l'unico traduttore tra le richieste generiche del SO e i comandi specifici del dispositivo. Se il driver è incompatibile, il SO invia comandi in un 'dialetto' sbagliato che il dispositivo non capisce, oppure riceve risposte che non sa interpretare. Risultato: il dispositivo non funziona o viene ignorato."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i driver incompatibili cancellano automaticamente i file del dispositivo",
+          "feedback": "Non è corretto. I driver non gestiscono i file utente e non li cancellano. Un driver incompatibile causa problemi di comunicazione tra OS e hardware, non perdita di dati.",
+          "riferimento": "📖 ESPLORA — Gestione delle periferiche e i driver"
+        },
+        {
+          "id": "d",
+          "testo": "Perché il sistema operativo blocca automaticamente tutti i driver non aggiornati",
+          "feedback": "Non è corretto. Il sistema operativo non blocca i driver solo perché non aggiornati — verifica la compatibilità con la versione del kernel. Un driver incompatibile crea problemi di comunicazione tra OS e dispositivo.",
+          "riferimento": "📖 ESPLORA — Gestione delle periferiche e i driver"
+        }
+      ],
+      "spiegazione": "Il driver è l'unico 'traduttore' tra le chiamate generiche del sistema operativo e i comandi specifici del dispositivo hardware. Se il driver non è compatibile con la versione del sistema operativo (es. un driver per Windows 10 su Windows 11), le interfacce di programmazione potrebbero essere cambiate e il driver non riesce più a fare la traduzione correttamente. Il dispositivo risulta 'sconosciuto' o non funzionante.",
+      "riferimento_principale": "📖 ESPLORA — Gestione delle periferiche e i driver"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Perché il sistema operativo è necessario come strato intermedio tra hardware e software applicativo? Cosa succederebbe senza di esso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Senza OS i programmi sarebbero più veloci perché accederebbero direttamente all'hardware senza intermediari",
+          "feedback": "Non è corretto. Senza OS ogni programma dovrebbe includere al suo interno tutto il codice per gestire CPU, memoria, disco, schermo — moltiplicate per ogni combinazione hardware esistente. Il risultato sarebbe programmi enormi, incompatibili tra loro e impossibili da mantenere. L'OS è un'astrazione necessaria.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        },
+        {
+          "id": "b",
+          "testo": "Senza OS ogni programma dovrebbe gestire l'hardware direttamente, rendendo impossibile la compatibilità e la condivisione delle risorse",
+          "corretto": true,
+          "feedback": "Esatto! Senza OS: ogni programma dovrebbe contenere driver per ogni possibile hardware; due programmi non potrebbero condividere la RAM senza sovrapporsi; non ci sarebbe protezione tra i processi; ogni applicazione dovrebbe reimplementare accesso al disco, rete, schermo ecc. L'OS risolve tutti questi problemi offrendo un'interfaccia comune e controllando l'accesso alle risorse."
+        },
+        {
+          "id": "c",
+          "testo": "Senza OS il computer non potrebbe essere spento correttamente e perderebbe tutti i dati",
+          "feedback": "Non è corretto. Lo spegnimento sicuro è una funzionalità utile dell'OS, ma non è la ragione fondamentale per cui un OS è necessario. La ragione principale è la gestione delle risorse condivise e l'astrazione dell'hardware per i programmi applicativi.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        },
+        {
+          "id": "d",
+          "testo": "Senza OS il computer avrebbe bisogno di più RAM per funzionare",
+          "feedback": "Non è corretto. La quantità di RAM dipende dalle applicazioni usate, non dall'assenza dell'OS. Senza OS il problema fondamentale è l'impossibilità di gestire hardware diverse e risorse condivise in modo sicuro e compatibile.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        }
+      ],
+      "spiegazione": "L'OS risolve tre problemi fondamentali: 1) Astrazione: offre alle applicazioni un'interfaccia uniforme indipendentemente dall'hardware sottostante (es. 'scrivi su file' funziona uguale su SSD Samsung o HDD WD). 2) Isolamento: impedisce che i processi si sovrappongano in memoria o interferiscano tra loro. 3) Condivisione: gestisce l'accesso ordinato alle risorse condivise (CPU, RAM, disco, rete) tra processi multipli.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Come protegge il sistema operativo la memoria di un processo da quella di un altro processo che gira contemporaneamente?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Assegna a ogni processo una 'memoria virtuale' separata e controlla ogni accesso tramite il kernel",
+          "corretto": true,
+          "feedback": "Esatto! Ogni processo riceve un spazio di memoria virtuale privato: il processo 'crede' di avere accesso a tutta la memoria, ma in realtà il kernel mappa indirizzi virtuali su indirizzi fisici reali. Se un processo tenta di accedere alla memoria di un altro, il kernel genera un 'segmentation fault' e termina il processo colpevole."
+        },
+        {
+          "id": "b",
+          "testo": "Cifra la memoria di ogni processo così che gli altri non possano leggerla",
+          "feedback": "Non è corretto. La cifratura della memoria è una tecnica di sicurezza opzionale, non il meccanismo principale di protezione della memoria. Il sistema operativo usa la memoria virtuale e la MMU (Memory Management Unit) per isolare i processi.",
+          "riferimento": "📖 ESPLORA — Gestione della memoria RAM"
+        },
+        {
+          "id": "c",
+          "testo": "Avvia ogni processo su un core di CPU diverso così che non condividano la stessa memoria",
+          "feedback": "Non è corretto. Avere core diversi non isola automaticamente la memoria: su architetture multicore i processi condividono comunque la stessa RAM fisica. L'isolamento è garantito dalla memoria virtuale e dai permessi gestiti dal kernel, non dalla distribuzione sui core.",
+          "riferimento": "📖 ESPLORA — Gestione della memoria RAM"
+        },
+        {
+          "id": "d",
+          "testo": "Riavvia automaticamente il computer ogni volta che un processo tenta di accedere alla memoria di un altro",
+          "feedback": "Non è corretto. Un riavvio per ogni violazione di memoria renderebbe il sistema inutilizzabile. Il kernel termina solo il processo che ha tentato l'accesso non autorizzato (con un errore 'segmentation fault'), lasciando il resto del sistema operativo funzionante.",
+          "riferimento": "📖 ESPLORA — Gestione della memoria RAM"
+        }
+      ],
+      "spiegazione": "Il sistema operativo usa la memoria virtuale per isolare i processi: ogni processo riceve uno spazio di indirizzi virtuali privato (es. da 0 a 4 GB). La MMU (Memory Management Unit, un componente hardware del processore) traduce ogni indirizzo virtuale in indirizzo fisico reale, in base alle tabelle gestite dal kernel. Se un processo tenta di accedere a un indirizzo fuori dal suo spazio virtuale, la MMU genera un'eccezione di protezione e il kernel termina il processo.",
+      "riferimento_principale": "📖 ESPLORA — Gestione della memoria RAM"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché Linux domina il mercato dei server web (oltre il 90% dei server internet) rispetto a Windows Server?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché Linux è più facile da usare per gli amministratori di sistema",
+          "feedback": "Non è corretto. Linux richiede una curva di apprendimento più ripida rispetto a Windows, specialmente per la gestione via CLI. I vantaggi di Linux sui server sono altri: costo zero, stabilità, personalizzabilità, sicurezza e un ecosistema di strumenti open source.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "b",
+          "testo": "Perché è gratuito, open source, altamente stabile, personalizzabile e ha un ecosistema di strumenti server maturi",
+          "corretto": true,
+          "feedback": "Esatto! Linux sui server offre: costo zero (nessuna licenza), open source (codice ispezionabile e personalizzabile), stabilità elevata (uptime di anni senza riavvii), leggerezza (può girare senza GUI), vasto ecosistema di strumenti server gratuiti (Apache, Nginx, MySQL, PostgreSQL) e una comunità di supporto globale."
+        },
+        {
+          "id": "c",
+          "testo": "Perché Microsoft non vende Windows Server, solo Windows per desktop",
+          "feedback": "Non è corretto. Microsoft vende Windows Server come prodotto separato e ha una quota significativa del mercato server (specialmente in ambienti aziendali con Active Directory). Ma Linux domina i server web pubblici per i vantaggi sopra descritti.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "d",
+          "testo": "Perché Linux è l'unico sistema operativo che supporta la connessione a internet",
+          "feedback": "Non è corretto. Tutti i sistemi operativi moderni supportano la connessione a internet. Linux domina i server per ragioni economiche (gratuito), tecniche (stabile, leggero) e di ecosistema (strumenti open source maturi).",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        }
+      ],
+      "spiegazione": "Linux domina i server web per una combinazione di fattori: 1) Costo: nessuna licenza (Windows Server costa centinaia di €/anno per macchina). 2) Stabilità: sistemi Linux con uptime di anni senza riavvio. 3) Leggerezza: può girare senza GUI, usando meno risorse. 4) Personalizzabilità: si può ottimizzare esattamente per il workload specifico. 5) Ecosistema: Apache, Nginx, MySQL, PostgreSQL, Docker sono nativamente Linux. 6) Sicurezza: codice open source esaminato da milioni di sviluppatori.",
+      "riferimento_principale": "📖 ESPLORA — I principali sistemi operativi"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Come gestisce lo scheduler del sistema operativo le priorità tra processi? Quale problema deve evitare?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Assegna sempre tutta la CPU al processo che ha usato meno tempo in totale, per garantire equità assoluta",
+          "feedback": "Non è corretto. Una politica di 'equità assoluta' ignora le priorità: un processo critico (es. driver audio) potrebbe essere ritardato da un processo in background (es. backup). Gli scheduler reali bilanciano priorità, equità e reattività.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        },
+        {
+          "id": "b",
+          "testo": "Assegna livelli di priorità ai processi e garantisce più tempo CPU a quelli più importanti, evitando la 'starvation' dei processi a bassa priorità",
+          "corretto": true,
+          "feedback": "Esatto! Lo scheduler assegna priorità (es. processi kernel > processi interattivi > processi in background). Il problema da evitare è la 'starvation': un processo a bassa priorità che non riceve mai la CPU perché i processi ad alta priorità la monopolizzano. Gli scheduler moderni usano tecniche come l'invecchiamento (aging) per aumentare gradualmente la priorità dei processi in attesa da troppo tempo."
+        },
+        {
+          "id": "c",
+          "testo": "Lascia che ogni processo richieda alla CPU esattamente il tempo che gli serve, senza limiti",
+          "feedback": "Non è corretto. Se i processi potessero usare la CPU senza limiti, un singolo processo potrebbe bloccare l'intero sistema. Lo scheduler preemptivo interrompe i processi che superano il loro time slice, anche contro la loro volontà.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        },
+        {
+          "id": "d",
+          "testo": "Spegne tutti i processi meno prioritari quando il sistema è sotto carico elevato",
+          "feedback": "Non è corretto. Spegnere processi è una misura estrema (il 'killer OOM' lo fa solo in casi critici di memoria). Lo scheduler gestisce le priorità allocando il tempo CPU proporzionalmente, non terminando i processi meno prioritari.",
+          "riferimento": "📖 ESPLORA — Gestione dei processi e multitasking"
+        }
+      ],
+      "spiegazione": "Lo scheduler del kernel assegna priorità ai processi e usa algoritmi per decidere quale processo eseguire e per quanto tempo. Il problema critico da evitare è la 'starvation': un processo a bassa priorità che attende indefinitamente perché quelli ad alta priorità occupano sempre la CPU. La soluzione tipica è l'aging: la priorità di un processo aumenta proporzionalmente al tempo trascorso in attesa, garantendo che prima o poi ogni processo venga eseguito.",
+      "riferimento_principale": "📖 ESPLORA — Gestione dei processi e multitasking"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché i sistemi operativi mobile (iOS, Android) impongono restrizioni più rigide all'accesso hardware rispetto ai sistemi desktop?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i processori dei telefoni sono troppo deboli per gestire accessi hardware diretti",
+          "feedback": "Non è corretto. I processori moderni degli smartphone sono potenti quanto molti laptop. Le restrizioni non dipendono dalla potenza del processore, ma da scelte architetturali deliberate per sicurezza e durata della batteria.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "b",
+          "testo": "Per ragioni di sicurezza (sandbox delle app), stabilità e ottimizzazione della durata della batteria",
+          "corretto": true,
+          "feedback": "Esatto! Nei sistemi mobile ogni app è eseguita in una 'sandbox' (ambiente isolato) con accesso limitato a risorse di sistema. Questo impedisce a un'app malevola di leggere i dati di un'altra app o controllare hardware sensibile (microfono, GPS, fotocamera) senza esplicita autorizzazione. Limita anche il consumo energetico, estendendo la durata della batteria."
+        },
+        {
+          "id": "c",
+          "testo": "Perché le leggi sulla privacy vietano alle app mobile di accedere all'hardware",
+          "feedback": "Non è corretto. Le leggi sulla privacy (es. GDPR) impongono obblighi sul trattamento dei dati personali, non limitano direttamente l'architettura del sistema operativo. Le restrizioni di iOS e Android sono scelte tecniche, non obblighi legali.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i telefoni non hanno un kernel come i computer desktop",
+          "feedback": "Non è corretto. iOS è basato su XNU (un kernel derivato da Mach/BSD Unix) e Android è basato sul kernel Linux — lo stesso kernel dei computer desktop. Le restrizioni sono scelte architetturali deliberate, non conseguenza dell'assenza del kernel.",
+          "riferimento": "📖 ESPLORA — I principali sistemi operativi"
+        }
+      ],
+      "spiegazione": "I sistemi mobile usano il modello 'sandbox' (isolamento delle app): ogni app gira in un ambiente confinato e deve richiedere esplicite autorizzazioni per accedere a risorse sensibili (fotocamera, microfono, GPS, contatti, posizione). Questo design: 1) limita i danni di app malevole; 2) dà all'utente il controllo su cosa ogni app può fare; 3) ottimizza il consumo energetico impedendo ad app in background di accedere continuamente all'hardware; 4) garantisce la stabilità del sistema.",
+      "riferimento_principale": "📖 ESPLORA — I principali sistemi operativi"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un server web riceve 10.000 richieste al secondo da utenti diversi. Quale funzionalità del sistema operativo è più critica per gestire questo carico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La gestione dell'interfaccia grafica, per mostrare le risposte agli utenti in modo visivo",
+          "feedback": "Non è corretto. I server web producono risposte HTTP (testo, HTML, JSON) indipendentemente da qualsiasi interfaccia grafica. I server di produzione tipicamente girano senza GUI per risparmiare risorse. La funzionalità critica è la gestione dei processi/thread e della rete.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        },
+        {
+          "id": "b",
+          "testo": "La gestione concorrente dei processi/thread e delle connessioni di rete, per servire migliaia di richieste simultanee senza blocchi",
+          "corretto": true,
+          "feedback": "Esatto! Con 10.000 richieste/secondo il SO deve: creare e gestire thread/processi per ogni richiesta (o usare I/O asincrono), allocare e deallocare memoria rapidamente, gestire migliaia di connessioni TCP simultanee tramite il network stack del kernel, schedulare i processi in modo efficiente per minimizzare la latenza di risposta."
+        },
+        {
+          "id": "c",
+          "testo": "La gestione del risparmio energetico, per ridurre la bolletta del datacenter",
+          "feedback": "Non è corretto. Il risparmio energetico è importante ma non è la funzionalità critica per gestire 10.000 richieste/secondo. Sotto carico il server deve massimizzare le prestazioni, non l'efficienza energetica. La gestione concorrente dei processi è ciò che determina la capacità di servire quelle richieste.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        },
+        {
+          "id": "d",
+          "testo": "La gestione del file system, per leggere rapidamente i file HTML dal disco",
+          "feedback": "Non è corretto. La lettura dal file system è importante ma non è il collo di bottiglia principale a 10.000 richieste/secondo. I server moderni usano cache in RAM per i file statici. Il collo di bottiglia critico è la gestione concorrente delle connessioni di rete e dei thread di elaborazione.",
+          "riferimento": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+        }
+      ],
+      "spiegazione": "Un server web ad alto traffico dipende criticamente dal sistema operativo per: 1) Gestione concorrente: creare e schedulare migliaia di thread/processi; 2) Network stack: gestire connessioni TCP concorrenti (apertura, trasmissione, chiusura); 3) Allocazione memoria: allocare/deallocare memoria rapidamente per ogni richiesta; 4) I/O asincrono (epoll su Linux): permettere a un singolo thread di gestire migliaia di connessioni simultanee senza bloccarsi. È per questo che i server ad alto traffico usano quasi universalmente Linux: il suo kernel è ottimizzato per questo tipo di carico.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema operativo: lo strato che gestisce tutto"
+    }
+  ]
+}

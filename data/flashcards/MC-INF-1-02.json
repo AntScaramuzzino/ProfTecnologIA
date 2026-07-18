@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Cos'è un algoritmo?",
+    "back": "Un insieme finito di istruzioni precise per risolvere un problema in modo determinato.\n\nCome una ricetta di cucina: ogni passo è chiaro e non lascia spazio all'ambiguità. Partendo dagli stessi dati si ottiene sempre lo stesso risultato.",
+    "tag": "Base"
+  },
+  {
+    "front": "Chi era Al-Khwārizmī e perché è importante per l'informatica?",
+    "back": "Un matematico persiano del IX secolo d.C. dal cui nome deriva la parola \"algoritmo\".\n\nAl-Khwārizmī codificò procedimenti matematici rigorosi e step-by-step. Dal titolo del suo trattato deriva anche la parola \"algebra\".",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la struttura di controllo \"sequenza\" in un algoritmo?",
+    "back": "Un insieme di istruzioni eseguite una dopo l'altra, nell'ordine scritto.\n\nÈ la struttura più semplice: l'istruzione 1 si esegue prima dell'istruzione 2. Nessuna istruzione può essere saltata o eseguita prima del suo turno.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa la struttura \"SE...ALLORA\" (selezione) in un algoritmo?",
+    "back": "Esegue istruzioni diverse a seconda che una condizione sia vera o falsa.\n\nSE la temperatura supera i 30°C ALLORA accendi il ventilatore ALTRIMENTI spegnilo. La selezione permette all'algoritmo di prendere decisioni basate sui dati di ingresso.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è l'iterazione in un algoritmo?",
+    "back": "La ripetizione di un blocco di istruzioni finché una condizione è vera, o per un numero fisso di volte.\n\nCon l'iterazione si evita di scrivere decine di volte la stessa istruzione. Esempio: MENTRE ci sono voti non registrati: leggi il voto e aggiornalo.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il debugging?",
+    "back": "Il processo di trovare e correggere gli errori (bug) in un algoritmo o in un programma.\n\n\"Bug\" (insetto) fu coniato da Grace Hopper nel 1947, quando trovò letteralmente una falena in un computer. Il debugging è parte normale dello sviluppo, non un segno di fallimento.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza tra pseudocodice e diagramma di flusso?",
+    "back": "Il pseudocodice descrive l'algoritmo con testo simile al linguaggio naturale; il diagramma di flusso lo rappresenta con forme geometriche collegate da frecce.\n\nIl pseudocodice è più veloce da scrivere; il diagramma è più visivo. Entrambi descrivono lo stesso algoritmo in modo diverso.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa rappresenta un rombo in un diagramma di flusso?",
+    "back": "Una decisione: un punto in cui il flusso si divide in due percorsi in base a una condizione vera o falsa.\n\nIl rombo ha sempre due uscite: \"Sì\" e \"No\". I rettangoli indicano azioni; gli ovali indicano inizio e fine del processo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la decomposizione nel pensiero computazionale?",
+    "back": "Scomporre un problema complesso in sottoproblemi più semplici e affrontabili separatamente.\n\nPer organizzare un torneo scolastico si decompone in: gestire iscrizioni, creare il tabellone, registrare risultati, calcolare classifiche. Ogni sottoproblema si risolve indipendentemente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è l'astrazione nel pensiero computazionale?",
+    "back": "Eliminare i dettagli non rilevanti per concentrarsi sugli aspetti essenziali del problema.\n\nPer scrivere un algoritmo che ordina nomi non serve sapere chi è quella persona: bastano le lettere. L'astrazione semplifica e generalizza la soluzione.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è una variabile in un algoritmo?",
+    "back": "Uno spazio di memoria temporaneo con un nome e un valore che può cambiare durante l'esecuzione.\n\nCome una cassetta etichettata: puoi mettere dentro un valore, recuperarlo o sostituirlo con uno nuovo. Nel ciclo \"Per ogni studente: leggi voto\" il \"voto\" è una variabile.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il \"determinismo\" di un algoritmo?",
+    "back": "La proprietà per cui un algoritmo produce sempre lo stesso risultato dagli stessi dati di ingresso.\n\nQuesta proprietà è fondamentale per i computer: vuoi che 2+2 faccia sempre 4. Un algoritmo non deterministico produce risultati diversi a ogni esecuzione.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Quale rischio comporta un ciclo MENTRE senza una condizione di uscita raggiungibile?",
+    "back": "Il programma entra in un loop infinito e non termina mai.\n\nUn algoritmo deve sempre terminare: questa proprietà si chiama finitezza. Se la condizione del MENTRE non diventa mai falsa, il computer resta bloccato in quel ciclo consumando risorse.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come si distingue un bug logico da un bug sintattico?",
+    "back": "Il bug sintattico impedisce l'esecuzione del programma (errore di scrittura); il bug logico permette l'esecuzione ma produce risultati sbagliati.\n\nUn bug sintattico è come una parola sbagliata: il programma non parte. Un bug logico è come un'istruzione sbagliata nella ricetta: il piatto viene, ma è diverso da quello voluto.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché il pensiero computazionale è utile anche fuori dall'informatica?",
+    "back": "Perché insegna a scomporre problemi complessi, riconoscere pattern e costruire soluzioni sistematiche.\n\nUno scienziato usa la decomposizione per dividere un esperimento; un medico usa il riconoscimento di pattern per le diagnosi; un musicista usa l'astrazione per rappresentare la melodia con il pentagramma.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "In che modo un diagramma di flusso può rivelare un errore logico prima di programmare?",
+    "back": "Seguendo le frecce si verifica se tutti i percorsi portano all'uscita e se nessuna condizione è irraggiungibile.\n\nUn ramo di decisione che non riceve mai il flusso indica un bug logico. Disegnare il diagramma prima di scrivere codice aiuta a trovare questi errori gratuitamente.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Qual è la differenza tra un algoritmo corretto ma inefficiente e uno corretto ed efficiente?",
+    "back": "Entrambi producono il risultato giusto, ma quello inefficiente richiede molte più operazioni (tempo e risorse).\n\nOrdinare 64 nomi con Bubble Sort richiede fino a 2.016 confronti; con Merge Sort ne bastano circa 384. Per liste piccole la differenza è trascurabile; per milioni di dati diventa decisiva.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché un algoritmo di ordinamento è più efficiente se i dati sono già parzialmente ordinati?",
+    "back": "Perché alcuni algoritmi (es. Insertion Sort) riducono i confronti da O(n²) a O(n) se l'array è quasi ordinato.\n\nNel caso peggiore (array rovesciato) il Bubble Sort esegue n×(n-1)/2 confronti. La scelta dell'algoritmo dipende dal caso medio atteso, non solo dal caso peggiore.",
+    "tag": "Avanzato"
+  }
+]

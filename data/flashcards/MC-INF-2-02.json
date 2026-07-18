@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Cos'è la crittografia?",
+    "back": "La tecnica di trasformare un messaggio leggibile (testo in chiaro) in uno incomprensibile (testo cifrato) per proteggerne il contenuto.\n\nUsata da millenni per trasmettere messaggi segreti, oggi protegge le nostre password, i pagamenti online e le comunicazioni digitali.",
+    "tag": "Base"
+  },
+  {
+    "front": "Come funziona il cifrario di Cesare?",
+    "back": "Sostituisce ogni lettera del messaggio con la lettera che si trova N posizioni dopo nell'alfabeto.\n\nCon chiave 3: A→D, B→E, \"CIAO\"→\"FLDR\". Giulio Cesare usava questa tecnica per i suoi generali. È il cifrario a sostituzione più semplice, ma facilmente violabile.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è una \"chiave\" in crittografia?",
+    "back": "Un'informazione segreta (numero o sequenza di bit) che governa il processo di cifratura e decifratura.\n\nSenza la chiave corretta un messaggio cifrato è illeggibile. La stessa chiave può cifrare e decifrare (simmetrica) oppure esistono due chiavi distinte (asimmetrica).",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa indica \"HTTPS\" in un indirizzo web?",
+    "back": "Che la comunicazione tra il browser e il sito è cifrata con il protocollo TLS.\n\nLa \"S\" sta per Secure. Senza HTTPS i dati viaggiano in chiaro sulla rete: chiunque si interponga può leggere password e dati personali. Oggi tutti i siti seri usano HTTPS.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un certificato digitale?",
+    "back": "Un documento elettronico firmato da un'autorità di certificazione (CA) che garantisce l'identità di un sito web.\n\nIl certificato dice: \"questo sito è davvero google.com e non un sito falso\". Cliccando sul lucchetto nel browser si leggono le informazioni del certificato.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è una firma digitale?",
+    "back": "Un meccanismo crittografico che garantisce che un documento sia autentico e non sia stato modificato dopo la firma.\n\nCome una firma autografa, ma matematicamente impossibile da falsificare. Usata per contratti digitali, email aziendali e aggiornamenti software.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza tra crittografia simmetrica e asimmetrica?",
+    "back": "Nella simmetrica la stessa chiave cifra e decifra; nell'asimmetrica esistono due chiavi: una pubblica (per cifrare) e una privata (per decifrare).\n\nLa crittografia simmetrica (es. AES) è più veloce; quella asimmetrica (es. RSA) risolve il problema della distribuzione sicura della chiave.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come funziona la crittografia a chiave pubblica/privata?",
+    "back": "Chiunque può cifrare un messaggio con la tua chiave pubblica, ma solo tu puoi decifrarlo con la tua chiave privata.\n\nÈ come una cassetta delle lettere: tutti possono infilarci messaggi (chiave pubblica = buca), ma solo il proprietario può aprirla (chiave privata = chiave di accesso).",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è una funzione hash e perché è utile per le password?",
+    "back": "Trasforma un dato di qualsiasi lunghezza in una stringa di lunghezza fissa, in modo irreversibile.\n\nLe password vengono salvate come hash, non in chiaro: anche se il database viene rubato, le password originali non sono recuperabili senza attacchi a forza bruta. SHA-256 produce sempre 256 bit.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come funziona TLS per proteggere una connessione HTTPS?",
+    "back": "Prima scambia le chiavi in modo sicuro (handshake asimmetrico), poi cifra tutta la comunicazione con crittografia simmetrica più veloce.\n\nIl browser verifica il certificato del server, poi si accordano su una chiave di sessione temporanea. Questo ibrido unisce sicurezza e velocità.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché Alan Turing e la macchina Enigma sono importanti nella storia della crittografia?",
+    "back": "Perché decifrare Enigma fu fondamentale per la vittoria degli Alleati nella Seconda guerra mondiale e gettò le basi dell'informatica moderna.\n\nTuring costruì il \"Bombe\", una macchina che trovava la chiave giornaliera di Enigma. Il lavoro a Bletchley Park rimase segreto per 30 anni.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il protocollo Diffie-Hellman?",
+    "back": "Un metodo matematico che permette a due parti di accordarsi su una chiave segreta condivisa senza mai trasmetterla sul canale pubblico.\n\nCome mescolare colori: ogni parte aggiunge il proprio colore segreto e alla fine entrambi ottengono lo stesso colore finale, senza che un osservatore possa replicarlo.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché la crittografia RSA si basa sui numeri primi e sulla difficoltà di fattorizzazione?",
+    "back": "Perché moltiplicare due grandi numeri primi è facile, ma trovare i due fattori dato il prodotto è computazionalmente proibitivo.\n\nRSA usa questa asimmetria: la chiave pubblica è il prodotto di due grandi numeri primi segreti. Con 2048 bit, la fattorizzazione richiederebbe miliardi di anni.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cos'è un attacco man-in-the-middle e come lo previene HTTPS?",
+    "back": "Un attaccante si inserisce tra mittente e destinatario intercettando e modificando le comunicazioni a loro insaputa.\n\nHTTPS previene questo tramite i certificati digitali: il browser verifica che il sito sia firmato da un'autorità fidata. Se il certificato è falso o scaduto, il browser mostra un avviso.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un sito salva le password come hash SHA-256 senza \"sale\" (salt). Quale attacco è possibile?",
+    "back": "Un attacco con rainbow table: pre-calcolare gli hash di tutte le password comuni e confrontarli con quelli rubati.\n\nIl \"sale\" (una stringa casuale aggiunta alla password prima dell'hash) rende ogni hash unico anche per password identiche, rendendo le rainbow table inutili.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la lunghezza della chiave è importante in crittografia?",
+    "back": "Perché determina il numero di combinazioni possibili: ogni bit aggiunto raddoppia lo spazio delle chiavi.\n\nUna chiave a 8 bit ha 256 combinazioni (violabile in secondi). Una chiave AES a 256 bit ha 2²⁵⁶ combinazioni: un attacco a forza bruta richiederebbe più tempo della vita dell'universo.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la crittografia end-to-end (E2E) è diversa dalla semplice crittografia in transito?",
+    "back": "In E2E solo mittente e destinatario hanno le chiavi per decifrare: nemmeno il server che instrada i messaggi può leggerli.\n\nIn una crittografia solo in transito il server vede il contenuto in chiaro. WhatsApp e Signal usano E2E: nemmeno le aziende possono leggere i tuoi messaggi.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché i computer quantistici rappresentano una minaccia per la crittografia attuale?",
+    "back": "Perché l'algoritmo di Shor, eseguibile su computer quantistici, può fattorizzare grandi numeri in tempo polinomiale, rendendo RSA vulnerabile.\n\nI computer quantistici sfruttano la sovrapposizione quantistica per esplorare molte soluzioni in parallelo. Il NIST sta già standardizzando algoritmi \"post-quantistici\" resistenti.",
+    "tag": "Avanzato"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-INF-3-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 94,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "L'algoritmo che mi conosce meglio di mia madre",
+    "istruzione": "Apri Spotify, Netflix o YouTube e guarda i contenuti che ti vengono consigliati in questo momento. Usa questa checklist per analizzare criticamente cosa l'algoritmo pensa di te.",
+    "voci": [
+      "Ho elencato 5 contenuti che la piattaforma mi ha consigliato oggi e ho ipotizzato quali miei comportamenti passati hanno portato a ciascun consiglio.",
+      "Ho identificato almeno un consiglio che trovo sbagliato o fuori luogo, e ho scritto cosa potrebbe aver confuso il modello.",
+      "Ho spiegato con parole mie la differenza tra un algoritmo basato su regole (se ascolta X, consiglia Y) e un modello di machine learning che impara dai dati.",
+      "Ho riflettuto su cosa succederebbe ai miei consigli se un amico usasse il mio account per una settimana: cambierebbe qualcosa? Perché?",
+      "Ho identificato almeno un rischio concreto legato al fatto che un algoritmo modelli i miei gusti e li usi per mostrarmi contenuti (es. bolla informativa, dipendenza).",
+      "Ho scritto una domanda che farei agli ingegneri di Spotify o Netflix per capire se il loro algoritmo rispetta i miei diritti digitali."
+    ]
+  },
+  "process": {
+    "titolo": "Come un modello AI ha imparato a distinguere un gatto da un cane guardando 10 milioni di foto",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Raccolta dati — il dataset di immagini etichettate",
+        "attore": "Team di data engineering e annotatori umani",
+        "domanda": "Per insegnare a un computer a riconoscere un gatto, quante foto di gatti servono davvero? E chi ha detto al computer quale foto era un gatto e quale un cane?",
+        "impatto": "ImageNet, il dataset usato per addestrare i modelli di classificazione più famosi, contiene 14 milioni di immagini etichettate da 25.000 volontari umani nel corso di 3 anni. Senza etichette umane, il modello non può imparare nulla."
+      },
+      {
+        "numero": 2,
+        "titolo": "Preprocessing — le immagini vengono preparate e standardizzate",
+        "attore": "Pipeline di preprocessing (codice Python + librerie NumPy / OpenCV)",
+        "domanda": "Una foto scattata di notte con un vecchio telefono e una foto in alta risoluzione in pieno sole mostrano entrambe un gatto. Come fa il modello a trattarle allo stesso modo?",
+        "impatto": "Il preprocessing ridimensiona tutte le immagini a 224×224 pixel, normalizza i valori RGB tra 0 e 1, e applica data augmentation (rotazioni, specchiature, variazioni di luminosità): aumenta artificialmente il dataset di 10 volte e riduce l'overfitting del 30-40%."
+      },
+      {
+        "numero": 3,
+        "titolo": "Architettura — la rete neurale convoluzionale (CNN) è costruita",
+        "attore": "Ricercatori di machine learning (architettura ResNet / VGG / EfficientNet)",
+        "domanda": "Il cervello umano riconosce un gatto istantaneamente anche in un disegno stilizzato. Qual è la struttura matematica che ha permesso alle macchine di avvicinarsi a questa capacità?",
+        "impatto": "ResNet-50 ha 50 strati e 25 milioni di parametri (pesi numerici): ogni strato impara a rilevare caratteristiche sempre più astratte, dai bordi nei primi strati fino a 'orecchie appuntite' e 'baffi' negli ultimi. L'architettura ha vinto ImageNet nel 2015 con il 96,4% di accuratezza."
+      },
+      {
+        "numero": 4,
+        "titolo": "Training — il modello aggiusta i propri pesi milioni di volte",
+        "attore": "GPU cluster (NVIDIA A100 / H100) + algoritmo di backpropagation",
+        "domanda": "Come fa un modello a 'imparare' dai propri errori? C'è qualcuno che gli dice quando sbaglia o capisce da solo?",
+        "impatto": "Ad ogni immagine, il modello prevede un'etichetta, calcola quanto è lontano dalla risposta giusta (loss), e aggiusta tutti i 25 milioni di pesi di una frazione minuscola nella direzione giusta (gradient descent). Questo ciclo si ripete 1 milione di volte in un addestramento tipico: su una GPU moderna ci vogliono 3 giorni; su CPU, oltre 30 anni."
+      },
+      {
+        "numero": 5,
+        "titolo": "Validazione — il modello viene testato su dati mai visti prima",
+        "attore": "Team di valutazione (test set separato, non usato nel training)",
+        "domanda": "Un modello che va bene sulle foto di addestramento va bene anche su foto nuove? Come si scopre se ha 'memorizzato' le risposte invece di imparare davvero?",
+        "impatto": "L'overfitting è il problema più comune nel ML: un modello che ha memorizzato il training set raggiunge il 99% di accuratezza sui dati noti ma crolla al 60% su dati nuovi. La soluzione è riservare il 20% dei dati solo per il test e non mostrarli mai durante l'addestramento."
+      },
+      {
+        "numero": 6,
+        "titolo": "Deployment — il modello entra in un'app e incontra il mondo reale",
+        "attore": "MLOps engineer (infrastruttura di produzione)",
+        "domanda": "Un modello addestrato nel 2022 vede nel 2025 una razza di gatto rara che non era nel dataset. Cosa succede? Chi si accorge dell'errore?",
+        "impatto": "Il model drift è il degrado graduale delle performance quando il mondo reale cambia rispetto ai dati di addestramento: Google monitora i propri modelli in produzione ogni ora e li riaddestra ogni settimana. Un modello di classificazione non monitorato perde mediamente il 15% di accuratezza in 12 mesi."
+      }
+    ]
+  }
+}

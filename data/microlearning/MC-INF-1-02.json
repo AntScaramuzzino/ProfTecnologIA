@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-INF-1-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 92,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "L'algoritmo dello zaino perfetto",
+    "istruzione": "Prendi una routine quotidiana che fai ogni mattina (preparare lo zaino, fare colazione, aspettare l'autobus) e trasformala in un algoritmo scritto passo per passo.",
+    "voci": [
+      "Ho scritto in italiano semplice tutti i passi della mia routine mattutina, nell'ordine esatto in cui li eseguo.",
+      "Ho identificato almeno un punto di decisione (condizione) nella mia routine: 'Se piove, allora... altrimenti...'.",
+      "Ho individuato almeno una sequenza di azioni che si ripete (ciclo), per esempio 'Per ogni libro nel programma, metti nello zaino'.",
+      "Ho riscritto la routine come pseudocodice o diagramma di flusso, usando blocchi di sequenza, selezione e iterazione.",
+      "Ho confrontato la mia routine con quella di un compagno e ho trovato almeno una differenza nell'ordine dei passi che porta comunque allo stesso risultato.",
+      "Ho riflettuto su quale delle due routine è più efficiente (meno passi, meno tempo) e ho scritto un motivo concreto."
+    ]
+  },
+  "process": {
+    "titolo": "Come un algoritmo di navigazione trova il percorso più breve",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Input — partenza e destinazione entrano nel sistema",
+        "attore": "App di navigazione (utente + GPS)",
+        "domanda": "Prima che l'app ti dica dove girare, cosa deve sapere di preciso? Solo l'indirizzo di destinazione basta davvero?",
+        "impatto": "Google Maps raccoglie in tempo reale la posizione GPS, la velocità attuale, il tipo di veicolo e i dati di traffico da 1 miliardo di utenti attivi ogni mese."
+      },
+      {
+        "numero": 2,
+        "titolo": "Rappresentazione — la città diventa un grafo",
+        "attore": "Motore cartografico (grafo stradale)",
+        "domanda": "Come fa un computer a 'capire' una città con strade, incroci e sensi unici? In quale forma deve trasformare la mappa?",
+        "impatto": "OpenStreetMap contiene oltre 800 milioni di nodi e 900 milioni di strade: ogni incrocio è un nodo, ogni tratto di strada è un arco con un peso (distanza + tempo stimato)."
+      },
+      {
+        "numero": 3,
+        "titolo": "Ricerca — l'algoritmo esplora i percorsi possibili",
+        "attore": "Algoritmo di Dijkstra / A*",
+        "domanda": "Se ci sono milioni di percorsi possibili tra casa tua e scuola, come fa l'algoritmo a non provarli tutti uno per uno?",
+        "impatto": "L'algoritmo A* usa una stima intelligente della distanza rimanente (euristica) per scartare subito i percorsi chiaramente peggiori: trova l'ottimo in millisecondi invece che in ore."
+      },
+      {
+        "numero": 4,
+        "titolo": "Ottimizzazione — il percorso migliore viene scelto",
+        "attore": "Motore di routing",
+        "domanda": "Il percorso più breve in chilometri è sempre il più veloce? Quali altri fattori cambiano la risposta?",
+        "impatto": "Waze considera 12 variabili in tempo reale: incidenti, cantieri, code, semafori intelligenti, limiti di velocità dinamici e persino eventi locali. Il percorso 'ottimo' cambia ogni 30 secondi."
+      },
+      {
+        "numero": 5,
+        "titolo": "Output — le istruzioni arrivano all'utente passo per passo",
+        "attore": "Interfaccia vocale / display",
+        "domanda": "L'app potrebbe darti tutte le istruzioni in una volta sola. Perché invece te le dà una alla volta, solo quando ne hai bisogno?",
+        "impatto": "Il cervello umano elabora in modo affidabile al massimo 7 informazioni alla volta: dare un'istruzione per volta riduce gli errori di guida del 40% rispetto alla navigazione su carta."
+      },
+      {
+        "numero": 6,
+        "titolo": "Aggiornamento — il percorso si ricalcola se le condizioni cambiano",
+        "attore": "Sistema in tempo reale (cloud + sensori stradali)",
+        "domanda": "Se il tuo autobus viene deviato per un incidente, l'app se ne accorge da sola? Come fa a saperlo senza telecamere su ogni strada?",
+        "impatto": "Google Maps rileva automaticamente gli ingorghi raccogliendo i dati GPS anonimizzati degli smartphone degli automobilisti: se 50 veicoli rallentano sullo stesso tratto, l'algoritmo deduce un ingorgo in 90 secondi."
+      }
+    ]
+  }
+}

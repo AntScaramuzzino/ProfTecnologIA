@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-INF-2-02",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 93,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Il lucchetto verde: fidati o no?",
+    "istruzione": "Scegli 3 siti web che usi regolarmente (es. la tua scuola, un sito di notizie, un social) e usa questa checklist per valutarne davvero la sicurezza della connessione.",
+    "voci": [
+      "Ho verificato se i 3 siti usano HTTPS (lucchetto verde) o HTTP, e ho annotato la differenza di rischio tra i due protocolli.",
+      "Ho aperto i dettagli del certificato SSL/TLS di un sito e ho identificato: chi lo ha emesso (CA), a chi appartiene e quando scade.",
+      "Ho spiegato con parole mie perché una connessione HTTPS non garantisce che il sito sia affidabile, ma solo che la comunicazione è cifrata.",
+      "Ho distinto la crittografia asimmetrica (usata nell'handshake) da quella simmetrica (usata durante la sessione), e ho spiegato perché si usano entrambe.",
+      "Ho cercato almeno un esempio reale di sito di phishing che usava HTTPS e ho riflettuto su cosa lo rendeva comunque pericoloso.",
+      "Ho scritto tre consigli pratici per riconoscere una connessione sicura da una potenzialmente rischiosa, spiegando il ragionamento dietro ognuno."
+    ]
+  },
+  "process": {
+    "titolo": "Cosa succede in 0,3 secondi quando clicchi sul lucchetto verde",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Richiesta di connessione — il browser contatta il server",
+        "attore": "Browser (Chrome / Firefox / Safari)",
+        "domanda": "Quando digiti 'https://...' e premi Invio, il browser sa già se il sito è sicuro prima ancora di ricevere una risposta?",
+        "impatto": "Il browser invia un 'Client Hello' che elenca i protocolli crittografici che supporta: TLS 1.3 (lo standard attuale) è 2 volte più veloce di TLS 1.2 e richiede un solo scambio di messaggi invece di due."
+      },
+      {
+        "numero": 2,
+        "titolo": "Certificato — il server mostra la sua identità",
+        "attore": "Server web (con certificato SSL/TLS installato)",
+        "domanda": "Come fa il tuo browser a sapere che il sito di Amazon è davvero Amazon e non qualcuno che si finge Amazon?",
+        "impatto": "Il certificato digitale è come un documento d'identità firmato da una Certification Authority (CA) come DigiCert o Let's Encrypt: il browser ha pre-installato i certificati radice di oltre 150 CA fidate."
+      },
+      {
+        "numero": 3,
+        "titolo": "Verifica — il browser controlla la firma della CA",
+        "attore": "Browser (motore di verifica certificati)",
+        "domanda": "Se qualcuno rubasse il certificato di una banca e lo usasse su un altro server, il browser se ne accorgerebbe? Come?",
+        "impatto": "Il browser verifica la firma digitale del certificato usando la chiave pubblica della CA: se anche un solo bit è stato modificato, la firma non corrisponde e il browser mostra l'avviso 'Connessione non privata'."
+      },
+      {
+        "numero": 4,
+        "titolo": "Handshake — le due parti si accordano su una chiave segreta",
+        "attore": "Protocollo TLS (client e server insieme)",
+        "domanda": "Come possono browser e server mettersi d'accordo su un codice segreto condiviso, sapendo che qualcuno potrebbe intercettare tutti i messaggi scambiati?",
+        "impatto": "Lo scambio di chiavi Diffie-Hellman permette a due parti di costruire un segreto condiviso su un canale pubblico senza mai trasmetterlo: anche intercettando tutto il traffico, un attaccante non può ricostruire la chiave."
+      },
+      {
+        "numero": 5,
+        "titolo": "Sessione cifrata — i dati viaggiano in codice",
+        "attore": "Algoritmo AES-256 (crittografia simmetrica)",
+        "domanda": "Perché durante la sessione si usa un algoritmo diverso da quello usato nell'handshake? Non sarebbe più semplice usare lo stesso per tutto?",
+        "impatto": "La crittografia asimmetrica (RSA) è 1000 volte più lenta di quella simmetrica (AES): usarla per cifrare ogni pacchetto di dati renderebbe la navigazione impossibilmente lenta. L'handshake la usa solo per scambiare la chiave di sessione."
+      },
+      {
+        "numero": 6,
+        "titolo": "Decifrazione — il browser mostra la pagina in chiaro",
+        "attore": "Browser (stack di decifrazione TLS)",
+        "domanda": "Se la pagina che stai leggendo è stata cifrata e decifrata in tempo reale, perché non senti nessun rallentamento rispetto a una pagina HTTP?",
+        "impatto": "I moderni processori hanno istruzioni hardware dedicate (AES-NI) per cifrare e decifrare dati: un CPU Intel Core i7 può elaborare 10 GB di dati cifrati al secondo, rendendo il costo computazionale del TLS praticamente trascurabile."
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Cos'è un bit?",
+    "back": "La più piccola unità di informazione digitale; può valere solo 0 oppure 1.\n\nUn bit corrisponde a un transistor del processore: acceso = 1, spento = 0. Da solo rappresenta pochissimo: ci vogliono 8 bit per formare un byte, abbastanza per codificare un singolo carattere.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quante cifre usa il sistema binario?",
+    "back": "Solo due: 0 e 1.\n\nA differenza del sistema decimale (10 cifre, 0–9), il sistema binario usa solo 0 e 1. Questo lo rende naturale per i circuiti elettronici: transistor acceso = 1, transistor spento = 0.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quanti byte ha 1 KB?",
+    "back": "1 KB = 1.024 byte (2¹⁰).\n\nIl computer conta in potenze di 2, non in multipli di 10. Un file di testo semplice di un paragrafo occupa circa 1–2 KB.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un byte?",
+    "back": "Un gruppo di 8 bit, unità base per misurare l'informazione digitale.\n\nCon 1 byte si possono rappresentare 256 combinazioni diverse (2⁸ = 256), abbastanza per codificare un singolo carattere del testo.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa rappresenta il codice ASCII?",
+    "back": "La corrispondenza tra i caratteri della tastiera e numeri binari, per standardizzare la comunicazione tra computer.\n\nASCII definisce 128 caratteri: la lettera \"A\" vale 65 decimale = 01000001 in binario. Copre l'alfabeto inglese, le cifre e la punteggiatura di base.",
+    "tag": "Base"
+  },
+  {
+    "front": "Quanti colori può rappresentare un pixel con profondità di colore a 24 bit?",
+    "back": "Circa 16,7 milioni di colori (2²⁴).\n\nCon 24 bit (8 bit per ciascuno dei tre canali R, G, B) ogni pixel può assumere 16.777.216 colori diversi. È il formato standard per le immagini fotografiche di qualità.",
+    "tag": "Base"
+  },
+  {
+    "front": "Come si calcola la dimensione non compressa di un'immagine digitale?",
+    "back": "Larghezza × Altezza (pixel) × Profondità di colore (bit), poi si converte in byte dividendo per 8.\n\nUn'immagine 1920 × 1080 px a 24 bit occupa circa 5,93 MB non compressa. La compressione JPEG la riduce di 5–10 volte.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché è stato creato Unicode dopo ASCII?",
+    "back": "Per supportare tutte le lingue e gli alfabeti del mondo, non solo l'alfabeto latino.\n\nASCII copre solo 128 caratteri (inglese). Unicode gestisce oltre 149.000 caratteri: arabo, cinese, emoji, simboli matematici e ogni sistema di scrittura umano conosciuto.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "In che modo il sistema binario è collegato alla struttura fisica di un computer?",
+    "back": "Perché i transistor nei chip hanno solo due stati fisici: acceso (1) o spento (0).\n\nI processori moderni contengono miliardi di transistor. Il sistema binario è naturale perché rispecchia questa realtà: due stati fisici = due cifre.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è la compressione lossy?",
+    "back": "Una tecnica che riduce le dimensioni di un file eliminando definitivamente informazioni considerate poco percepibili.\n\nJPEG e MP3 usano la compressione lossy. Il file si riduce molto (5–10 volte), ma la qualità originale non è mai completamente recuperabile.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché un file PNG è più grande di un JPEG della stessa immagine?",
+    "back": "Perché PNG usa compressione lossless (senza perdita) che garantisce qualità identica all'originale ma comprime meno.\n\nJPEG riduce il file di 5–10 volte eliminando dettagli; PNG di 2–3 volte senza eliminarne. PNG è preferito per loghi e testi, JPEG per fotografie.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa significa \"MB\" e come si converte in bit?",
+    "back": "MB = megabyte = 1.048.576 byte = 8.388.608 bit.\n\nLa gerarchia è: 8 bit = 1 byte → 1024 byte = 1 KB → 1024 KB = 1 MB. Conoscere queste conversioni è fondamentale per calcolare dimensioni di file e capacità di archiviazione.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Qual è la differenza tra compressione lossy e lossless? Fai un esempio per ciascuna.",
+    "back": "Lossy (con perdita) elimina informazioni definitivamente; lossless (senza perdita) le comprime senza eliminarne alcuna.\n\nJPEG è lossy (riduzione 5–10×, qualità degradata); PNG è lossless (riduzione 2–3×, qualità identica). Foto web → JPEG; logo con testo → PNG.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come si converte il numero decimale 13 in binario?",
+    "back": "Si divide ripetutamente per 2 leggendo i resti in ordine inverso: 13÷2=6 r.1 → 6÷2=3 r.0 → 3÷2=1 r.1 → 1÷2=0 r.1 → risultato: 1101.\n\n1101 in binario = 8+4+0+1 = 13. Ogni cifra rappresenta una potenza di 2 (8, 4, 2, 1).",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un'immagine 4K (3840 × 2160 px) a 24 bit quanto pesa non compressa?",
+    "back": "3840 × 2160 × 24 = 199.065.600 bit ÷ 8 = 24.883.200 byte ÷ 1024 ÷ 1024 ≈ 23,7 MB.\n\nOgni pixel usa 3 byte (R, G, B × 8 bit). Moltiplicando pixel × profondità si ottengono i bit totali, poi si converte in MB dividendo per 8.388.608.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come fa UTF-8 a gestire migliaia di simboli restando compatibile con ASCII?",
+    "back": "Usa sequenze di lunghezza variabile: i caratteri ASCII usano 1 byte, quelli rari fino a 4 byte.\n\nI primi 128 codici UTF-8 sono identici ad ASCII: retrocompatibilità garantita. Un emoji occupa 4 byte. UTF-8 è il formato più diffuso su internet.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché due immagini con la stessa risoluzione possono avere dimensioni in byte molto diverse?",
+    "back": "Per il formato, la compressione e il contenuto visivo dell'immagine.\n\nUna JPEG con sfondo uniforme si comprime molto meglio di una con alta varietà cromatica. La stessa immagine in PNG pesa 3–5 volte di più che in JPEG. Risoluzione e dimensione del file non sono la stessa cosa.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un sensore IoT trasmette la temperatura ogni secondo con risoluzione a 12 bit. Quanti dati genera in 24 ore?",
+    "back": "12 bit × 3.600 × 24 = 1.036.800 bit al giorno = circa 126 KB.\n\nCon 12 bit si rappresentano 4.096 valori distinti: precisione sufficiente per misure da -40°C a +85°C. 126 KB/giorno è trascurabile per un singolo sensore, ma si moltiplica per migliaia di dispositivi in rete.",
+    "tag": "Avanzato"
+  }
+]

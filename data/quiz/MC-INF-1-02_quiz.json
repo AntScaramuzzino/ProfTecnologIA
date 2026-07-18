@@ -1,0 +1,600 @@
+{
+  "mc_id": "MC-INF-1-02",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Cos'è un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un tipo di linguaggio di programmazione usato solo per i computer",
+          "feedback": "Non è corretto. I linguaggi di programmazione (Python, Java, C++) sono strumenti per scrivere codice. Un algoritmo è qualcosa di più generale: è una sequenza di istruzioni per risolvere un problema, indipendentemente dal linguaggio usato.",
+          "riferimento": "📖 ESPLORA — Cos'è un algoritmo"
+        },
+        {
+          "id": "b",
+          "testo": "Una sequenza finita di istruzioni precise e prive di ambiguità che porta a un risultato",
+          "corretto": true,
+          "feedback": "Esatto! Un algoritmo è una sequenza finita di istruzioni precise e non ambigue che porta sempre allo stesso risultato partendo dagli stessi dati. Non è esclusivo dei computer: una ricetta di cucina e le istruzioni per montare un mobile sono algoritmi."
+        },
+        {
+          "id": "c",
+          "testo": "Il risultato finale di un programma informatico",
+          "feedback": "Non è corretto. L'algoritmo è il procedimento, non il risultato. È il 'come si fa', non il 'cosa si ottiene'. Il risultato dipende dall'algoritmo e dai dati in ingresso.",
+          "riferimento": "📖 ESPLORA — Cos'è un algoritmo"
+        },
+        {
+          "id": "d",
+          "testo": "Un componente hardware del computer che esegue calcoli matematici",
+          "feedback": "Non è corretto. Il componente hardware che esegue calcoli è la CPU. Un algoritmo è un concetto logico — una sequenza di istruzioni — non un oggetto fisico.",
+          "riferimento": "📖 ESPLORA — Cos'è un algoritmo"
+        }
+      ],
+      "spiegazione": "Un algoritmo è una sequenza finita di istruzioni precise, prive di ambiguità, che produce sempre lo stesso risultato partendo dagli stessi dati (proprietà di determinismo). Il concetto esiste in matematica da millenni — ben prima dei computer. La ricetta di un piatto, le istruzioni per montare un mobile, i passi per eseguire una moltiplicazione sono tutti algoritmi.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è un algoritmo"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Da quale matematico deriva la parola 'algoritmo'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Da Alan Turing, che ha formalizzato il concetto di calcolo automatico",
+          "feedback": "Non è corretto. Alan Turing ha dato contributi fondamentali all'informatica teorica con la macchina di Turing (1936), ma la parola 'algoritmo' viene da un matematico vissuto molto prima: Al-Khwārizmī (780–850 d.C.).",
+          "riferimento": "📖 ESPLORA — Cos'è un algoritmo"
+        },
+        {
+          "id": "b",
+          "testo": "Da Al-Khwārizmī, matematico persiano del IX secolo il cui nome fu latinizzato in 'Algoritmi'",
+          "corretto": true,
+          "feedback": "Esatto! Al-Khwārizmī (780–850 d.C.) era un matematico persiano che scrisse un trattato sul calcolo con numeri arabi. Quando i suoi testi furono tradotti in latino nel XII secolo, il suo nome fu latinizzato in 'Algoritmi' — e da lì è nata la parola 'algoritmo'."
+        },
+        {
+          "id": "c",
+          "testo": "Da George Boole, che ha inventato l'algebra logica",
+          "feedback": "Non è corretto. George Boole (1815–1864) ha sviluppato l'algebra booleana (operazioni AND, OR, NOT), fondamentale per i circuiti digitali. Ma la parola 'algoritmo' viene da Al-Khwārizmī, vissuto mille anni prima.",
+          "riferimento": "📖 ESPLORA — Cos'è un algoritmo"
+        },
+        {
+          "id": "d",
+          "testo": "Da Euclide, che ha scritto il primo algoritmo matematico della storia",
+          "feedback": "Non è corretto. Euclide (circa 300 a.C.) ha effettivamente scritto uno dei primi algoritmi documentati (per trovare il MCD), ma la parola 'algoritmo' non deriva dal suo nome. Deriva dal matematico persiano Al-Khwārizmī.",
+          "riferimento": "📖 ESPLORA — Cos'è un algoritmo"
+        }
+      ],
+      "spiegazione": "La parola 'algoritmo' deriva dal nome del matematico persiano Al-Khwārizmī (780–850 d.C.), autore di un trattato fondamentale sul calcolo con numeri arabi. Quando i suoi testi furono tradotti in latino nel XII secolo, il suo nome divenne 'Algoritmi'. Anche la parola 'algebra' deriva dal titolo di un suo altro libro: 'Al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr'.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è un algoritmo"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Quale simbolo si usa in un diagramma di flusso per rappresentare una decisione (condizione)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un rettangolo",
+          "feedback": "Non è corretto. Il rettangolo in un diagramma di flusso rappresenta un'azione o un'istruzione da eseguire, non una decisione. Le azioni sono cose come 'Leggi il numero' o 'Stampa il risultato'.",
+          "riferimento": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+        },
+        {
+          "id": "b",
+          "testo": "Un ovale",
+          "feedback": "Non è corretto. L'ovale (o ellisse) in un diagramma di flusso rappresenta l'inizio o la fine dell'algoritmo. Appare una volta all'inizio ('INIZIO') e una volta alla fine ('FINE').",
+          "riferimento": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+        },
+        {
+          "id": "c",
+          "testo": "Un rombo",
+          "corretto": true,
+          "feedback": "Esatto! Il rombo in un diagramma di flusso rappresenta una condizione (decisione). Dal rombo escono due frecce: una per il caso 'Sì' (condizione vera) e una per il caso 'No' (condizione falsa)."
+        },
+        {
+          "id": "d",
+          "testo": "Un parallelogramma",
+          "feedback": "Non è corretto. Il parallelogramma in un diagramma di flusso rappresenta un'operazione di input o output (es. 'Leggi un numero dall'utente' oppure 'Mostra il risultato'). Le decisioni si rappresentano con il rombo.",
+          "riferimento": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+        }
+      ],
+      "spiegazione": "I simboli standard dei diagrammi di flusso: ovale = inizio/fine; rettangolo = azione/istruzione; rombo = condizione (decisione, con due uscite: Sì/No); parallelogramma = input/output; frecce = flusso dell'algoritmo. Il rombo è il simbolo della struttura di selezione (SE...ALLORA...ALTRIMENTI).",
+      "riferimento_principale": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Quale delle seguenti descrive correttamente la struttura di 'selezione' in un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Ripete un blocco di istruzioni per un numero fisso di volte",
+          "feedback": "Non è corretto. Ripetere un blocco per un numero fisso di volte è la struttura di iterazione (ciclo PER). La selezione invece sceglie tra due percorsi in base a una condizione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "b",
+          "testo": "Esegue le istruzioni una dopo l'altra nell'ordine scritto senza deviazioni",
+          "feedback": "Non è corretto. Eseguire le istruzioni in ordine senza deviazioni è la struttura di sequenza, la più semplice. La selezione permette di deviare: sceglie quale blocco eseguire in base a una condizione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "c",
+          "testo": "Esegue un blocco di istruzioni SE una condizione è vera, altrimenti ne esegue un altro",
+          "corretto": true,
+          "feedback": "Esatto! La struttura di selezione (SE...ALLORA...ALTRIMENTI) valuta una condizione: se è vera esegue il blocco A, se è falsa esegue il blocco B (o non fa nulla). La condizione deve essere sempre verificabile in modo oggettivo: vero o falso."
+        },
+        {
+          "id": "d",
+          "testo": "Divide il problema in sottoproblemi più piccoli e li risolve separatamente",
+          "feedback": "Non è corretto. Dividere un problema in sottoproblemi è la tecnica di 'decomposizione' del pensiero computazionale, non una struttura di controllo. Le strutture di controllo degli algoritmi sono sequenza, selezione e iterazione.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        }
+      ],
+      "spiegazione": "La struttura di selezione ha la forma: SE [condizione] ALLORA [azioni A] ALTRIMENTI [azioni B]. La condizione deve essere sempre verificabile oggettivamente (vero o falso): 'se fa caldo' è ambiguo; 'se la temperatura supera 30°C' è preciso. Dalla struttura di selezione escono sempre esattamente due percorsi.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa significa che un algoritmo è 'deterministico'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Significa che l'algoritmo è molto veloce nell'esecuzione",
+          "feedback": "Non è corretto. La velocità di esecuzione non è il significato di 'deterministico'. Un algoritmo deterministico potrebbe essere lento o veloce — quello che conta è che produce sempre lo stesso output dagli stessi input.",
+          "riferimento": "📖 ESPLORA — Un computer fa esattamente quello che gli dici"
+        },
+        {
+          "id": "b",
+          "testo": "Significa che l'algoritmo è scritto da una sola persona",
+          "feedback": "Non è corretto. Il numero di autori non ha nulla a che fare con il determinismo. Il determinismo riguarda il comportamento dell'algoritmo: dati gli stessi input, produce sempre lo stesso output.",
+          "riferimento": "📖 ESPLORA — Un computer fa esattamente quello che gli dici"
+        },
+        {
+          "id": "c",
+          "testo": "Significa che a partire dagli stessi dati, l'algoritmo produce sempre lo stesso risultato",
+          "corretto": true,
+          "feedback": "Esatto! Il determinismo è una proprietà fondamentale degli algoritmi: le stesse istruzioni con gli stessi dati producono sempre lo stesso risultato, senza eccezioni e senza variazioni casuali. Il computer non improvvisa, non interpreta, non si adatta al contesto."
+        },
+        {
+          "id": "d",
+          "testo": "Significa che l'algoritmo è già stato testato e non contiene errori",
+          "feedback": "Non è corretto. Il determinismo non ha nulla a che fare con la correttezza o i test. Un algoritmo deterministico può contenere bug — produrrà sempre lo stesso risultato sbagliato. Il determinismo descrive la prevedibilità, non la correttezza.",
+          "riferimento": "📖 ESPLORA — Un computer fa esattamente quello che gli dici"
+        }
+      ],
+      "spiegazione": "Il determinismo è la proprietà per cui un algoritmo, dati gli stessi input, produce sempre lo stesso output. Il computer non capisce il contesto, non interpreta, non chiede chiarimenti: esegue esattamente le istruzioni ricevute, né di più né di meno. Questo è alla base della riproducibilità e della testabilità degli algoritmi.",
+      "riferimento_principale": "📖 ESPLORA — Un computer fa esattamente quello che gli dici"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cos'è un 'bug' in un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un virus informatico che infetta i programmi",
+          "feedback": "Non è corretto. Un virus informatico è un programma malevolo che si replica e danneggia altri programmi. Un bug è un errore nella logica o nella scrittura dell'algoritmo — non è malevolo, è semplicemente sbagliato.",
+          "riferimento": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+        },
+        {
+          "id": "b",
+          "testo": "Un errore nell'algoritmo che causa un comportamento inatteso o sbagliato",
+          "corretto": true,
+          "feedback": "Esatto! Un bug è un errore nell'algoritmo: un'istruzione sbagliata, una condizione formulata male, una sequenza nell'ordine errato. Il nome 'bug' (insetto) viene da una falena trovata inceppata in un relè del computer Harvard Mark II nel 1947, incollata nel registro di bordo da Grace Hopper."
+        },
+        {
+          "id": "c",
+          "testo": "Una funzionalità aggiuntiva non prevista che migliora il programma",
+          "feedback": "Non è corretto. Una funzionalità che migliora il programma è una 'feature'. Un bug è un errore che causa comportamento inatteso o sbagliato — è sempre qualcosa da correggere, non da lasciare.",
+          "riferimento": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+        },
+        {
+          "id": "d",
+          "testo": "La documentazione scritta per spiegare il funzionamento di un programma",
+          "feedback": "Non è corretto. La documentazione è un testo che spiega come funziona un programma. Il bug è un errore nel programma stesso — è la causa di un funzionamento scorretto.",
+          "riferimento": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+        }
+      ],
+      "spiegazione": "Un bug è un errore nell'algoritmo: un'istruzione sbagliata, una condizione mal formulata, una sequenza nell'ordine errato, un caso non gestito. Il nome viene da una falena trovata inceppata in un relè del computer Harvard Mark II nel 1947. Il processo di trovare e correggere i bug si chiama 'debug'. Tutti gli algoritmi possono contenere bug — la differenza sta nel trovarli e correggerli sistematicamente.",
+      "riferimento_principale": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "In quale struttura di controllo un blocco di istruzioni viene ripetuto finché una condizione rimane vera?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Nella struttura di sequenza",
+          "feedback": "Non è corretto. La sequenza esegue le istruzioni una dopo l'altra nell'ordine scritto, senza ripetizioni e senza condizioni. Non c'è nessun meccanismo di ritorno indietro.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "b",
+          "testo": "Nella struttura di selezione",
+          "feedback": "Non è corretto. La selezione (SE...ALLORA...ALTRIMENTI) sceglie tra due blocchi di istruzioni in base a una condizione, ma le esegue una sola volta. Non ripete mai lo stesso blocco.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "c",
+          "testo": "Nella struttura di iterazione",
+          "corretto": true,
+          "feedback": "Esatto! L'iterazione (o ciclo) ripete un blocco di istruzioni finché una condizione rimane vera. Può essere un ciclo MENTRE (WHILE), che verifica la condizione all'inizio, o un ciclo PER (FOR), che ripete un numero fisso di volte."
+        },
+        {
+          "id": "d",
+          "testo": "Nella struttura di astrazione",
+          "feedback": "Non è corretto. L'astrazione è una tecnica del pensiero computazionale per semplificare un problema nascondendo i dettagli non essenziali, ma non è una delle tre strutture di controllo di un algoritmo (sequenza, selezione, iterazione).",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        }
+      ],
+      "spiegazione": "L'iterazione (o ciclo) ha la forma: RIPETI [azioni] FINCHÉ [condizione è vera]. Il blocco di istruzioni viene eseguito ripetutamente finché la condizione è vera. Quando la condizione diventa falsa, il ciclo si interrompe e l'algoritmo prosegue oltre. Attenzione ai cicli infiniti: se la condizione non diventa mai falsa, il programma si blocca.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "Cosa rappresenta una 'variabile' in un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un passaggio opzionale dell'algoritmo che può essere saltato",
+          "feedback": "Non è corretto. Un passaggio opzionale è gestito con una struttura di selezione. Una variabile è uno spazio di memoria con un nome dove si conservano i dati temporanei durante l'esecuzione dell'algoritmo.",
+          "riferimento": "📖 ESPLORA — Variabili: dove metti i dati mentre lavori"
+        },
+        {
+          "id": "b",
+          "testo": "Uno spazio di memoria con un nome, dove si può salvare e modificare un valore durante l'esecuzione",
+          "corretto": true,
+          "feedback": "Esatto! Una variabile è come una scatola con un'etichetta (il nome). Dentro si conserva un valore (un numero, una parola, vero/falso) che può cambiare durante l'esecuzione dell'algoritmo. Ad esempio: temperatura può valere 28 al mattino e 35 nel pomeriggio."
+        },
+        {
+          "id": "c",
+          "testo": "Un algoritmo più piccolo usato all'interno di un algoritmo più grande",
+          "feedback": "Non è corretto. Un algoritmo usato all'interno di un algoritmo più grande si chiama 'subroutine' o 'funzione'. Una variabile è uno spazio di memoria, non un algoritmo.",
+          "riferimento": "📖 ESPLORA — Variabili: dove metti i dati mentre lavori"
+        },
+        {
+          "id": "d",
+          "testo": "Il risultato finale prodotto dall'algoritmo al termine dell'esecuzione",
+          "feedback": "Non è corretto. Il risultato finale è l'output dell'algoritmo. Le variabili sono spazi di lavoro intermedi: contengono dati temporanei che vengono usati, modificati e aggiornati durante tutta l'esecuzione, non solo alla fine.",
+          "riferimento": "📖 ESPLORA — Variabili: dove metti i dati mentre lavori"
+        }
+      ],
+      "spiegazione": "Una variabile è uno spazio di memoria con un nome (etichetta) che può contenere un valore modificabile. Esempi: 'temperatura = 28', 'nome_utente = Giulia', 'sessione_aperta = vero'. Le variabili cambiano valore durante l'esecuzione dell'algoritmo. Sono fondamentali per conservare dati intermedi, contatori dei cicli, risultati parziali.",
+      "riferimento_principale": "📖 ESPLORA — Variabili: dove metti i dati mentre lavori"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Come funziona l'algoritmo di ricerca binaria su una lista ordinata?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Controlla ogni elemento della lista dall'inizio alla fine finché trova quello cercato",
+          "feedback": "Non è corretto. Controllare ogni elemento dall'inizio è la ricerca sequenziale (lineare), non quella binaria. La ricerca sequenziale nel caso peggiore richiede di controllare tutti gli N elementi della lista.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "b",
+          "testo": "Divide ogni elemento in due parti e cerca nella metà più piccola",
+          "feedback": "Non è corretto. La ricerca binaria non divide gli elementi, ma la lista. Ad ogni passo controlla l'elemento centrale: se il valore cercato è più piccolo scarta la metà destra, se è più grande scarta la metà sinistra.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "c",
+          "testo": "Controlla l'elemento centrale della lista e scarta metà della lista ad ogni passo",
+          "corretto": true,
+          "feedback": "Esatto! La ricerca binaria controlla l'elemento centrale: se il valore cercato è più piccolo, scarta la metà destra e ripete nella metà sinistra; se è più grande, scarta la metà sinistra. Ad ogni passo la lista si dimezza. Su 1.000 elementi: al massimo 10 confronti. Su 1.000.000: al massimo 20."
+        },
+        {
+          "id": "d",
+          "testo": "Ordina la lista in ordine inverso e poi cerca dal fondo",
+          "feedback": "Non è corretto. La ricerca binaria non riordina la lista — si limita a dividerla a metà ripetutamente. Richiede però che la lista sia già ordinata per funzionare correttamente.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        }
+      ],
+      "spiegazione": "La ricerca binaria funziona solo su liste ordinate e segue questi passi: 1) guarda l'elemento centrale; 2) se uguale al cercato → trovato; 3) se il cercato è più piccolo → ripeti nella metà sinistra; 4) se il cercato è più grande → ripeti nella metà destra. Ad ogni passo la lista si dimezza → crescita logaritmica O(log n). Con N=1.000.000 bastano ≈20 confronti.",
+      "riferimento_principale": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Cosa afferma il Teorema di Böhm-Jacopini (1966)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Qualsiasi algoritmo può essere espresso usando solo tre strutture: sequenza, selezione e iterazione",
+          "corretto": true,
+          "feedback": "Esatto! Il Teorema di Böhm-Jacopini (1966) dimostra che qualsiasi programma informatico può essere scritto usando solo tre strutture di controllo: sequenza, selezione e iterazione. Non ne esistono altre necessarie. Questo risultato è alla base della programmazione strutturata."
+        },
+        {
+          "id": "b",
+          "testo": "Tutti i problemi computazionali hanno una soluzione algoritmica",
+          "feedback": "Non è corretto. Il Teorema di Böhm-Jacopini riguarda le strutture di controllo sufficienti per scrivere qualsiasi programma (sequenza, selezione, iterazione). L'affermazione che tutti i problemi hanno soluzione è falsa: esistono problemi non calcolabili (come dimostra la macchina di Turing).",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "c",
+          "testo": "Un algoritmo corretto è necessariamente più veloce di uno incorretto",
+          "feedback": "Non è corretto. La correttezza e l'efficienza di un algoritmo sono proprietà separate. Un algoritmo può essere corretto ma lento, o corretto e veloce. Il Teorema di Böhm-Jacopini non riguarda la velocità.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "d",
+          "testo": "La ricerca binaria è sempre più efficiente della ricerca sequenziale",
+          "feedback": "Non è corretto. La ricerca binaria è più efficiente su liste ordinate, ma richiede che la lista sia già ordinata. Se la lista non è ordinata, non si può applicare la ricerca binaria. Il Teorema di Böhm-Jacopini non riguarda gli algoritmi di ricerca.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        }
+      ],
+      "spiegazione": "Il Teorema di Böhm-Jacopini (1966) è uno dei risultati fondamentali dell'informatica teorica: dimostra che qualsiasi programma può essere scritto usando solo tre strutture di controllo — sequenza, selezione e iterazione. Non ne servono altre. Questo ha posto le basi della programmazione strutturata, che ha sostituito il vecchio approccio con i 'salti' (GOTO) non controllati.",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Qual è la differenza principale tra pseudocodice e un programma scritto in un linguaggio di programmazione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il pseudocodice è più veloce del codice vero perché è semplificato",
+          "feedback": "Non è corretto. Il pseudocodice non viene eseguito dal computer, quindi non ha una velocità di esecuzione. Serve per ragionare sull'algoritmo in linguaggio quasi-naturale prima di tradurlo in codice reale.",
+          "riferimento": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+        },
+        {
+          "id": "b",
+          "testo": "Il pseudocodice è leggibile dall'uomo ma non eseguibile dal computer; il codice vero è eseguibile",
+          "corretto": true,
+          "feedback": "Esatto! Il pseudocodice è scritto in linguaggio quasi-naturale con struttura precisa — serve al progettista per ragionare sull'algoritmo senza preoccuparsi della sintassi specifica di un linguaggio. Il codice in un linguaggio reale (Python, Java, C++) è invece direttamente eseguibile dal computer."
+        },
+        {
+          "id": "c",
+          "testo": "Il pseudocodice usa solo variabili numeriche, il codice vero può usare testi e immagini",
+          "feedback": "Non è corretto. Il pseudocodice può descrivere operazioni su qualsiasi tipo di dato (numeri, testi, immagini). La distinzione non riguarda i tipi di dati, ma il fatto che il pseudocodice non è eseguibile da nessun computer.",
+          "riferimento": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+        },
+        {
+          "id": "d",
+          "testo": "Il pseudocodice si usa solo per gli algoritmi semplici, il codice vero per quelli complessi",
+          "feedback": "Non è corretto. Il pseudocodice si usa per algoritmi di qualsiasi complessità come strumento di progettazione. Anche gli algoritmi più complessi vengono spesso prima abbozzati in pseudocodice, poi tradotti nel linguaggio di programmazione specifico.",
+          "riferimento": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+        }
+      ],
+      "spiegazione": "Il pseudocodice è una rappresentazione intermedia: ha struttura precisa (usa parole chiave come SE, ALLORA, RIPETI, FINCHÉ) ma non è eseguibile da nessun computer. Serve al progettista per ragionare sull'algoritmo senza pensare alla sintassi di un linguaggio specifico. Una volta validato il pseudocodice, si traduce nel linguaggio di programmazione scelto.",
+      "riferimento_principale": "📖 ESPLORA — Pseudocodice e diagrammi di flusso"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Qual è la tecnica più efficace per fare il debug di un algoritmo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Riscrivere l'intero algoritmo da zero sperando di non fare gli stessi errori",
+          "feedback": "Non è corretto. Riscrivere da zero non garantisce di trovare l'errore originale e rischia di introdurne di nuovi. La tecnica più efficace è seguire l'algoritmo passo per passo con dati concreti per individuare esattamente dove il risultato diverge dall'atteso.",
+          "riferimento": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+        },
+        {
+          "id": "b",
+          "testo": "Eseguire l'algoritmo passo per passo con dati concreti, verificando a ogni passaggio se il risultato è quello atteso",
+          "corretto": true,
+          "feedback": "Esatto! La tecnica più efficace è la simulazione manuale passo per passo: si scelgono dati concreti di input, si eseguono mentalmente (o su carta) le istruzioni una per una, e si controlla se a ogni passo il valore delle variabili è quello atteso. Il passo dove il risultato diverge è dove si trova il bug."
+        },
+        {
+          "id": "c",
+          "testo": "Mostrare il codice a più persone e scegliere la spiegazione più comune dell'errore",
+          "feedback": "Non è corretto. Il code review è utile ma non sostituisce l'analisi sistematica. Raccogliere opinioni senza un metodo preciso non porta necessariamente al bug. La traccia passo-passo con dati concreti è l'approccio sistematicamente più efficace.",
+          "riferimento": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+        },
+        {
+          "id": "d",
+          "testo": "Aspettare che il bug si ripresenti in modo spontaneo e osservare le condizioni",
+          "feedback": "Non è corretto. Aspettare che il bug si ripresenti è un approccio passivo e non sistematico. I bug andrebbero riprodotti intenzionalmente con dati di test specifici, non aspettati casualmente.",
+          "riferimento": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+        }
+      ],
+      "spiegazione": "Il debug sistematico richiede di: 1) scegliere dati di test che riproducono il bug; 2) tracciare l'esecuzione passo per passo (su carta o con un debugger software); 3) verificare a ogni passo il valore delle variabili; 4) identificare il passo in cui il risultato diverge dall'atteso. Quel passo contiene il bug. La differenza tra un programmatore esperto e uno inesperto non è che l'esperto non fa errori, ma che li trova e corregge sistematicamente.",
+      "riferimento_principale": "📖 ESPLORA — Bug e debug: quando l'algoritmo sbaglia"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un algoritmo di ordinamento confronta ogni elemento della lista con tutti gli altri una volta. Per una lista di N elementi, quanti confronti fa nel caso peggiore?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "N confronti",
+          "feedback": "Non è corretto. N confronti corrisponderebbero a un solo passaggio sulla lista. Confrontare ogni elemento con tutti gli altri richiede N×(N-1)/2 confronti — molto di più di N per liste grandi.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        },
+        {
+          "id": "b",
+          "testo": "N×(N-1)/2 confronti",
+          "corretto": true,
+          "feedback": "Esatto! Se ogni elemento viene confrontato con tutti gli altri una volta sola: il primo elemento ha N-1 confronti, il secondo N-2, ... fino all'ultimo che ha 0 confronti. La somma è N×(N-1)/2. Per 100 elementi: 4.950 confronti. Questo è l'ordine O(n²) — quadratico."
+        },
+        {
+          "id": "c",
+          "testo": "log₂(N) confronti",
+          "feedback": "Non è corretto. log₂(N) è il numero di confronti della ricerca binaria — un algoritmo di ricerca molto efficiente. Ma per confrontare ogni elemento con tutti gli altri il numero di confronti cresce in modo quadratico: N×(N-1)/2.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        },
+        {
+          "id": "d",
+          "testo": "2^N confronti",
+          "feedback": "Non è corretto. 2^N sarebbe un numero astronomico (per N=100 si avrebbe più confronti degli atomi nell'universo). Confrontare ogni elemento con tutti gli altri richiede N×(N-1)/2 confronti — quadratico, non esponenziale.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        }
+      ],
+      "spiegazione": "Quando confronti ogni elemento con tutti gli altri (una volta sola per coppia): elemento 1 fa N-1 confronti, elemento 2 ne fa N-2, ... elemento N-1 ne fa 1, elemento N ne fa 0. Totale: (N-1)+(N-2)+...+1+0 = N×(N-1)/2. Per N=100: 4.950 confronti. Per N=1.000: 499.500. Questo è l'algoritmo bubble sort nel caso peggiore: complessità O(n²).",
+      "riferimento_principale": "📖 SPERIMENTA — ●●● AVANZATO"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Quanti confronti al massimo servono con la ricerca binaria per trovare un elemento in una lista ordinata di 1.000.000 di voci?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Circa 1.000.000 confronti",
+          "feedback": "Non è corretto. 1.000.000 di confronti nel caso peggiore è il costo della ricerca sequenziale (lineare), non di quella binaria. La ricerca binaria ha costo logaritmico: log₂(1.000.000) ≈ 20.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "b",
+          "testo": "Circa 500.000 confronti",
+          "feedback": "Non è corretto. 500.000 confronti sarebbe il costo medio della ricerca sequenziale (metà della lista). La ricerca binaria è enormemente più efficiente: log₂(1.000.000) ≈ 20 confronti.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "c",
+          "testo": "Circa 20 confronti",
+          "corretto": true,
+          "feedback": "Esatto! La ricerca binaria ha complessità O(log₂ n). Con n = 1.000.000: log₂(1.000.000) ≈ 19,93 ≈ 20 confronti nel caso peggiore. Ad ogni confronto la lista si dimezza: dopo 20 dimezzamenti rimane un solo elemento."
+        },
+        {
+          "id": "d",
+          "testo": "Circa 1.000 confronti",
+          "feedback": "Non è corretto. 1.000 confronti corrisponderebbero a log₁₀(1.000.000) = 6 in base 10 o a n/1.000. La ricerca binaria usa log₂: log₂(1.000.000) ≈ 20 confronti.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        }
+      ],
+      "spiegazione": "La ricerca binaria dimezza la lista ad ogni confronto. Il numero massimo di confronti è log₂(N). Per N=1.000.000: log₂(1.000.000) = log(1.000.000)/log(2) ≈ 6/0,301 ≈ 19,93 → 20 confronti. Confronta con la ricerca sequenziale: fino a 1.000.000 confronti. La ricerca binaria è circa 50.000 volte più efficiente su liste di questa dimensione.",
+      "riferimento_principale": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Un algoritmo cicla all'infinito su un certo input. Qual è la causa più probabile?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'algoritmo ha troppi passaggi: occorre semplificarlo riducendo le istruzioni",
+          "feedback": "Non è corretto. Il numero di istruzioni non causa un ciclo infinito. La causa è nella condizione di uscita del ciclo: se la condizione non diventa mai falsa, il ciclo non termina mai. Ridurre le istruzioni non risolverebbe il problema.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "b",
+          "testo": "La condizione di uscita del ciclo non diventa mai falsa con quell'input specifico",
+          "corretto": true,
+          "feedback": "Esatto! Un ciclo infinito si verifica quando la condizione del ciclo non diventa mai falsa. Può succedere perché: la variabile che dovrebbe cambiare non viene aggiornata correttamente, oppure la condizione è scritta in modo che non possa mai essere falsa con quell'input specifico."
+        },
+        {
+          "id": "c",
+          "testo": "Il computer non ha abbastanza RAM per eseguire l'algoritmo",
+          "feedback": "Non è corretto. Insufficienza di RAM causerebbe un crash o un rallentamento, non un ciclo infinito. Un ciclo infinito è un problema logico nell'algoritmo: la condizione di uscita non viene mai raggiunta.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        },
+        {
+          "id": "d",
+          "testo": "L'algoritmo usa variabili con nomi troppo lunghi che causano confusione",
+          "feedback": "Non è corretto. I nomi delle variabili non influiscono sull'esecuzione dell'algoritmo. Un ciclo infinito dipende dalla logica della condizione di uscita, non dalla nomenclatura usata.",
+          "riferimento": "📖 ESPLORA — Le tre strutture fondamentali"
+        }
+      ],
+      "spiegazione": "Un ciclo infinito si verifica quando la condizione di uscita del ciclo non diventa mai falsa. Cause tipiche: 1) la variabile che controlla il ciclo non viene aggiornata nel corpo del ciclo; 2) la condizione di uscita è scritta con un errore logico (es. >= invece di >); 3) la variabile viene resettata ogni volta nel corpo del ciclo. Questa è una classe di bug comune nei cicli MENTRE (WHILE).",
+      "riferimento_principale": "📖 ESPLORA — Le tre strutture fondamentali"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "In quale scenario la ricerca sequenziale è preferibile alla ricerca binaria?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quando la lista è molto grande (più di 1.000 elementi)",
+          "feedback": "Non è corretto. Per liste molto grandi la ricerca binaria è enormemente più efficiente (O(log n) vs O(n)). La dimensione grande favorisce la binaria, non la sequenziale.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "b",
+          "testo": "Quando la lista non è ordinata e ordinarla costerebbe più del guadagno di efficienza nella ricerca",
+          "corretto": true,
+          "feedback": "Esatto! La ricerca binaria richiede che la lista sia ordinata. Se la lista non è ordinata, bisogna prima ordinarla (costo O(n log n) con quicksort). Se si deve fare una sola ricerca, potrebbe costare meno usare la ricerca sequenziale O(n) che ordinare la lista e poi applicare la binaria."
+        },
+        {
+          "id": "c",
+          "testo": "Quando il valore cercato si trova sempre nell'ultima posizione della lista",
+          "feedback": "Non è corretto. Se il valore è sempre nell'ultima posizione, la ricerca sequenziale è la peggiore possibile (deve scorrere tutta la lista). La ricerca binaria convergerebbe comunque in log₂(n) passi. La posizione del valore cercato non è nota a priori.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "d",
+          "testo": "Quando il computer ha poca memoria RAM disponibile",
+          "feedback": "Non è corretto. La memoria RAM necessaria per l'algoritmo non è la ragione per scegliere tra ricerca sequenziale e binaria. Entrambi usano quantità molto simili di memoria. La discriminante è se la lista è ordinata o meno.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        }
+      ],
+      "spiegazione": "La ricerca binaria richiede una lista ordinata come precondizione. Se la lista non è ordinata: per una singola ricerca, potrebbe convenire la ricerca sequenziale O(n) anziché ordinare O(n log n) e poi cercare O(log n). Tuttavia, se si prevede di fare molte ricerche sulla stessa lista, conviene ordinarla una volta sola e poi usare la ricerca binaria ripetutamente.",
+      "riferimento_principale": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Stai analizzando un algoritmo che deve trovare il nome di un contatto in una rubrica di 10.000 voci. Quale affermazione descrive correttamente il trade-off tra ricerca sequenziale e binaria?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La ricerca sequenziale è sempre preferibile perché è più semplice da implementare",
+          "feedback": "Non è corretto. La semplicità di implementazione è un fattore valido per liste piccole. Ma su 10.000 voci la ricerca sequenziale nel caso peggiore richiede 10.000 confronti, mentre la binaria ne richiede ≈14. La semplicità non giustifica questo divario su liste grandi.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "b",
+          "testo": "La ricerca binaria è sempre preferibile perché non richiede precondizioni sulla lista",
+          "feedback": "Non è corretto. La ricerca binaria richiede che la lista sia ordinata come precondizione fondamentale. Se la rubrica non è ordinata alfabeticamente, la ricerca binaria non funziona correttamente.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        },
+        {
+          "id": "c",
+          "testo": "La ricerca binaria è molto più efficiente ma richiede la lista ordinata; se la lista è già ordinata, la binaria è la scelta migliore su grandi volumi",
+          "corretto": true,
+          "feedback": "Esatto! Su 10.000 voci: ricerca sequenziale = fino a 10.000 confronti; ricerca binaria = fino a log₂(10.000) ≈ 14 confronti. Se la rubrica è già ordinata (come tipicamente avviene), la ricerca binaria è circa 700 volte più efficiente nel caso peggiore. Il costo di mantenere la lista ordinata si ammortizza rapidamente su molte ricerche."
+        },
+        {
+          "id": "d",
+          "testo": "La differenza di efficienza tra i due algoritmi su 10.000 voci è trascurabile",
+          "feedback": "Non è corretto. La differenza è enorme: 10.000 vs 14 confronti nel caso peggiore. Su dati di questa dimensione un fattore 700× di efficienza può fare la differenza tra un'app che risponde istantaneamente e una che ha un ritardo percettibile.",
+          "riferimento": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+        }
+      ],
+      "spiegazione": "Il trade-off tra ricerca sequenziale e binaria: sequenziale O(n) = semplice, funziona su qualsiasi lista, ma lenta su liste grandi. Binaria O(log n) = velocissima, ma richiede lista ordinata. Per una rubrica telefonica (sempre mantenuta in ordine alfabetico) la ricerca binaria è la scelta ovvia: log₂(10.000) ≈ 14 confronti vs fino a 10.000 confronti della sequenziale.",
+      "riferimento_principale": "📖 OSSERVA — Caso studio: l'algoritmo di ricerca binaria"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un programmatore deve scegliere tra bubble sort (O(n²)) e quicksort (O(n log n)) per ordinare 1.000.000 di record. Quale considerazione è determinante nella scelta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il bubble sort è sempre preferibile perché il nome è più familiare agli sviluppatori junior",
+          "feedback": "Non è corretto. La familiarità del nome non è un criterio tecnico valido per la scelta di un algoritmo. Con 1.000.000 di record, bubble sort esegue circa 5×10¹¹ confronti, quicksort circa 20.000.000. La differenza è circa 25.000 volte.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        },
+        {
+          "id": "b",
+          "testo": "Con 1.000.000 di record la differenza di complessità O(n²) vs O(n log n) produce tempi di esecuzione radicalmente diversi: quicksort è la scelta corretta",
+          "corretto": true,
+          "feedback": "Esatto! Per n=1.000.000: bubble sort O(n²) esegue circa n²/2 = 5×10¹¹ confronti; quicksort O(n log n) esegue circa n×log₂(n) ≈ 1.000.000×20 = 20.000.000 confronti. Rapporto: circa 25.000×. Su un computer moderno, bubble sort impiegherebbe ore, quicksort secondi."
+        },
+        {
+          "id": "c",
+          "testo": "Dipende solo dalla quantità di RAM disponibile, non dall'algoritmo scelto",
+          "feedback": "Non è corretto. La RAM influisce sulla gestione di dati molto grandi, ma la scelta dell'algoritmo è determinata principalmente dalla complessità computazionale (numero di operazioni). Su 1.000.000 di record, O(n²) vs O(n log n) fa una differenza di circa 25.000 volte nel numero di confronti.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        },
+        {
+          "id": "d",
+          "testo": "I due algoritmi hanno le stesse prestazioni perché alla fine entrambi producono la lista ordinata",
+          "feedback": "Non è corretto. Il risultato finale (lista ordinata) è lo stesso, ma il numero di operazioni per arrivarci è radicalmente diverso. La complessità algoritmica misura proprio questa differenza: O(n²) scala molto peggio di O(n log n) all'aumentare di n.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        }
+      ],
+      "spiegazione": "Per n=1.000.000 di record: bubble sort O(n²) → circa n²/2 ≈ 5×10¹¹ operazioni; quicksort O(n log n) → circa n×log₂(n) ≈ 2×10⁷ operazioni. Rapporto: circa 25.000×. Su hardware moderno (10⁹ operazioni/secondo): bubble sort ≈ 500 secondi (8 min), quicksort ≈ 0,02 secondi. L'analisi della complessità algoritmica è critica nelle applicazioni reali che gestiscono grandi volumi di dati.",
+      "riferimento_principale": "📖 SPERIMENTA — ●●● AVANZATO"
+    }
+  ]
+}

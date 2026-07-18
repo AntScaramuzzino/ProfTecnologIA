@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Cos'è un sistema operativo (OS)?",
+    "back": "Il software fondamentale che gestisce l'hardware e permette alle applicazioni di funzionare.\n\nSenza sistema operativo il computer è un insieme di componenti fisici che non sanno come comunicare. Esempi: Windows, macOS, Linux per computer; Android e iOS per smartphone.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il kernel?",
+    "back": "Il cuore del sistema operativo: la parte che comunica direttamente con l'hardware e gestisce le risorse di base.\n\nIl kernel è sempre in esecuzione e gestisce CPU, RAM e periferiche. Le applicazioni non comunicano direttamente con l'hardware: passano sempre attraverso il kernel.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa si intende per \"multitasking\" nel sistema operativo?",
+    "back": "La capacità di eseguire più programmi contemporaneamente condividendo la CPU.\n\nIn realtà la CPU esegue un programma alla volta, ma alterna tra essi così rapidamente da sembrare simultaneo. Il kernel decide quale programma usa la CPU in ogni istante.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è il file system?",
+    "back": "Il sistema con cui il sistema operativo organizza e gestisce i file sul disco di archiviazione.\n\nIl file system struttura i file in cartelle (directory) disposte ad albero. Esempi: NTFS (Windows), ext4 (Linux), APFS (macOS), FAT32 (schede SD).",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un driver?",
+    "back": "Un programma che permette al sistema operativo di comunicare con un dispositivo hardware specifico.\n\nOgni stampante, webcam e scheda grafica ha il suo driver. Se installi una stampante nuova, il sistema cerca il driver corretto: senza di esso la stampante non funziona.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza tra GUI e CLI?",
+    "back": "La GUI (Graphic User Interface) usa icone e menu grafici; la CLI (Command Line Interface) richiede comandi testuali.\n\nLa GUI è più intuitiva per l'uso quotidiano. La CLI è più precisa e potente: permette di automatizzare attività e configurare il sistema in dettaglio.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la memoria virtuale (swap)?",
+    "back": "Uno spazio sul disco di archiviazione usato come estensione della RAM quando quest'ultima è esaurita.\n\nQuando la RAM è piena, il kernel sposta i dati meno usati sul disco. Lo swap è molto più lento della RAM: usarlo troppo causa rallentamenti evidenti.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa si intende per \"percorso\" (path) in un file system?",
+    "back": "L'indirizzo completo di un file o cartella nell'albero del file system.\n\nIn Windows: C:\\Utenti\\Antonio\\Documenti\\relazione.pdf. In Linux/macOS: /home/antonio/documenti/relazione.pdf. Ogni nome nella sequenza è un ramo dell'albero da attraversare.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è lo scheduling della CPU?",
+    "back": "L'algoritmo con cui il kernel decide quale processo deve usare la CPU e per quanto tempo.\n\nLo scheduling garantisce che nessun programma monopolizzi il processore. Algoritmi comuni: Round Robin (turni uguali), Priority Scheduling (chi ha priorità alta va prima).",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cosa sono i metadati di un file?",
+    "back": "Informazioni sul file stesso: nome, dimensione, data di creazione e modifica, permessi di accesso.\n\nI metadati non fanno parte del contenuto del file: sono dati \"sul\" dato. Quando cerchi un file per data o dimensione, il sistema legge i metadati senza aprire il file.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è un processo nel sistema operativo?",
+    "back": "Un programma in esecuzione con il suo spazio di memoria privato e le sue risorse assegnate.\n\nAprire due finestre di Firefox crea due processi separati. Ogni processo ha un PID (Process ID) univoco. Se un processo si blocca, si può terminarlo senza chiudere gli altri.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché Linux è il sistema operativo più usato sui server, pur essendo minoritario sui PC?",
+    "back": "Perché è gratuito, open source, stabile, personalizzabile e ottimizzato per funzionare senza interfaccia grafica.\n\nI server non hanno tastiera e monitor: girano solo con CLI. Linux può essere configurato con il minimo di risorse, senza GUI che consumerebbe RAM inutilmente.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Come fa il kernel a garantire che due programmi non sovrascrivano la stessa area di RAM?",
+    "back": "Usando la memoria virtuale: ogni processo vede il proprio spazio di indirizzi privato, mappato fisicamente dal kernel.\n\nI processi non comunicano mai direttamente sulla RAM fisica: passano attraverso la MMU (Memory Management Unit) che traduce gli indirizzi virtuali in fisici.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché la struttura ad albero del file system è preferibile a una lista piatta di file?",
+    "back": "Perché permette di organizzare gerarchicamente milioni di file in categorie annidate, rendendo la navigazione e la ricerca rapide.\n\nUna lista piatta con 100.000 file sarebbe ingestibile. L'albero permette di dividere: sistema > utenti > documenti > anno > materia.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Cosa succede a livello di sistema quando fai doppio clic su un file .pdf?",
+    "back": "Il sistema legge l'estensione, cerca l'applicazione registrata per .pdf, la avvia come nuovo processo passando il percorso del file come argomento.\n\nIl kernel alloca RAM per il nuovo processo, carica l'eseguibile dal disco e inizia l'esecuzione. L'associazione file è configurabile dall'utente.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché il percorso relativo è preferibile al percorso assoluto in uno script di automazione?",
+    "back": "Perché un percorso relativo funziona indipendentemente da dove è installato il programma o su quale computer gira.\n\nUn percorso assoluto come C:\\Utenti\\Antonio\\script.py rompe lo script su ogni altro computer. Il percorso relativo ./script.py funziona sempre, purché la directory di lavoro sia corretta.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Un utente installa un programma senza privilegi di amministratore. Dove può installarlo?",
+    "back": "Solo nella sua directory utente (es. /home/antonio/ su Linux), non nelle directory di sistema.\n\nIl principio del privilegio minimo impedisce a un utente normale di modificare file di sistema: riduce i danni in caso di virus o errori. Le directory di sistema richiedono privilegi root.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché eliminare un file nel sistema operativo non cancella immediatamente i dati dal disco?",
+    "back": "Perché il sistema elimina solo i metadati (entry nel file system), marcando i blocchi come liberi senza sovrascriverli.\n\nI dati restano fisicamente sul disco finché non vengono sovrascritti da nuovi file. Per cancellare in modo sicuro è necessario sovrascrivere i blocchi con dati casuali.",
+    "tag": "Avanzato"
+  }
+]

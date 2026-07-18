@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-INF-3-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 89,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "Un sensore per la nostra aula",
+    "istruzione": "Progetta (anche solo su carta) un sistema IoT per monitorare qualcosa di utile nella tua aula: temperatura, luminosità, rumore, qualità dell'aria. Usa questa checklist per verificare che il progetto sia completo.",
+    "voci": [
+      "Ho scelto quale grandezza fisica voglio misurare nella mia aula e ho identificato il tipo di sensore fisico che la rileva (es. termistore, fotoresistenza, microfono, sensore CO2).",
+      "Ho descritto come il sensore converte la grandezza fisica in un segnale elettrico, specificando se il segnale è analogico o digitale.",
+      "Ho identificato quale microcontrollore (es. Arduino, Raspberry Pi, ESP32) userebbe il mio sistema e ho spiegato cosa fa con il dato ricevuto dal sensore.",
+      "Ho scelto il protocollo di trasmissione wireless più adatto (Wi-Fi, Bluetooth, LoRaWAN, Zigbee) giustificando la scelta in base alla distanza e al consumo energetico.",
+      "Ho descritto dove vengono archiviati e analizzati i dati (cloud, server locale, edge computing) e ho spiegato cosa succede se la connessione si interrompe.",
+      "Ho identificato almeno un rischio per la privacy dei dati raccolti dal mio sistema IoT e ho proposto una misura concreta per ridurlo."
+    ]
+  },
+  "process": {
+    "titolo": "Come una centralina meteo IoT misura la temperatura e la manda a un server a 500 km di distanza",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Sensore — il termistore misura la resistenza elettrica",
+        "attore": "Termistore NTC (componente elettronico passivo)",
+        "domanda": "Un termometro analogico usa il mercurio che si dilata con il caldo. Come fa un componente elettronico a 'sentire' la temperatura senza nessun liquido?",
+        "impatto": "Un termistore NTC varia la propria resistenza elettrica di circa il 4% per ogni grado Celsius: a 0°C ha una resistenza di 10.000 Ohm, a 25°C scende a circa 3.600 Ohm. La variazione è misurabile con precisione al centesimo di grado."
+      },
+      {
+        "numero": 2,
+        "titolo": "ADC — il segnale analogico diventa un numero digitale",
+        "attore": "Convertitore Analogico-Digitale (ADC, integrato nel microcontrollore)",
+        "domanda": "La tensione elettrica è un valore continuo che può assumere infiniti valori. Come fa un computer, che capisce solo 0 e 1, a leggere questo valore?",
+        "impatto": "Un ADC a 12 bit divide la scala di tensione (0-3,3V) in 4.096 livelli discreti: ogni livello corrisponde a circa 0,8 millivolt. Una risoluzione sufficiente per misurare variazioni di temperatura di 0,1°C."
+      },
+      {
+        "numero": 3,
+        "titolo": "Microcontrollore — elabora il dato e aggiunge contesto",
+        "attore": "Microcontrollore ESP32 (processore + Wi-Fi + Bluetooth integrati)",
+        "domanda": "Il microcontrollore potrebbe inviare subito ogni lettura del sensore. Perché invece aspetta, elabora e aggiunge informazioni prima di trasmettere?",
+        "impatto": "L'ESP32 consuma 240 mA in trasmissione Wi-Fi ma solo 10 microampere in deep sleep: trasmettere ogni 10 minuti invece che ogni secondo riduce il consumo energetico del 99,9%, permettendo 6 mesi di autonomia con una batteria AA."
+      },
+      {
+        "numero": 4,
+        "titolo": "Trasmissione wireless — il pacchetto dati viaggia via LoRaWAN",
+        "attore": "Modulo radio LoRa (Long Range Wide Area Network)",
+        "domanda": "Il Wi-Fi di casa arriva a 30 metri. Come fa una centralina in un campo aperto, senza corrente elettrica, a trasmettere dati per 15 km con una batteria?",
+        "impatto": "LoRaWAN trasmette piccoli pacchetti (fino a 255 byte) con una potenza di soli 25 milliwatt su frequenze libere (868 MHz in Europa): raggiunge distanze fino a 15 km in pianura o 2-5 km in città con consumi minimi."
+      },
+      {
+        "numero": 5,
+        "titolo": "Gateway — aggrega i dati da centinaia di sensori",
+        "attore": "Gateway LoRaWAN (dispositivo fisso con connessione internet)",
+        "domanda": "Un singolo gateway può ricevere segnali da migliaia di sensori contemporaneamente. Come fa a non confondersi tra tutti questi messaggi che arrivano nello stesso momento?",
+        "impatto": "Ogni messaggio LoRa include un DevEUI univoco (identificatore a 64 bit del dispositivo) e un timestamp: il gateway instrada i pacchetti al server cloud in meno di 100 millisecondi, anche con 10.000 dispositivi attivi nella stessa area."
+      },
+      {
+        "numero": 6,
+        "titolo": "Cloud / Edge — archivia, analizza e attiva allarmi",
+        "attore": "Piattaforma IoT cloud (The Things Network / AWS IoT / Azure IoT Hub)",
+        "domanda": "Una volta che il dato arriva al server cloud, cosa ci fa davvero? Viene solo salvato o succede qualcos'altro in automatico?",
+        "impatto": "Le piattaforme IoT cloud analizzano i dati in tempo reale con regole predefinite: se la temperatura supera 35°C, inviano un allarme SMS in 2 secondi. Alcune reti meteorologiche IoT italiane gestiscono oltre 5.000 stazioni con un unico server."
+      }
+    ]
+  }
+}

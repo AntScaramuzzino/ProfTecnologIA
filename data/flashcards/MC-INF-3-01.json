@@ -1,0 +1,92 @@
+[
+  {
+    "front": "Cos'è l'IoT (Internet delle Cose)?",
+    "back": "La rete di oggetti fisici connessi a internet che raccolgono e scambiano dati automaticamente.\n\nOggi sono connessi miliardi di oggetti: termostati, smartwatch, sensori industriali, lampioni stradali. Entro il 2030 si prevedono oltre 50 miliardi di dispositivi IoT attivi nel mondo.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un sensore in un sistema IoT?",
+    "back": "Un dispositivo che misura una grandezza fisica (temperatura, luce, pressione, movimento) e la converte in un segnale elettrico.\n\nIl sensore è il \"senso\" del dispositivo IoT: percepisce il mondo fisico. Un sensore di temperatura può misurare tra -55°C e +125°C con precisione al decimo di grado.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cosa fa un ADC (convertitore analogico-digitale) in un sistema IoT?",
+    "back": "Converte il segnale analogico continuo del sensore in un numero digitale discreto.\n\nI segnali del mondo reale (temperatura, suono, luce) sono continui; i microcontrollori lavorano con numeri interi. L'ADC è il \"traduttore\" tra il mondo fisico e quello digitale.",
+    "tag": "Base"
+  },
+  {
+    "front": "Qual è la differenza tra Wi-Fi e Bluetooth per l'IoT?",
+    "back": "Il Wi-Fi ha portata più lunga e velocità maggiore ma consuma più energia; il Bluetooth ha portata più corta ma consuma pochissimo.\n\nBluetooth Low Energy (BLE) è ideale per sensori a batteria come smartwatch. Wi-Fi è preferito per dispositivi sempre connessi alla presa elettrica.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è un \"gemello digitale\"?",
+    "back": "Una replica virtuale e aggiornata in tempo reale di un oggetto fisico, che simula il suo comportamento.\n\nUna turbina eolica con gemello digitale ha un modello virtuale che replica rotazione, temperatura e usura dei cuscinetti. I tecnici testano simulazioni senza rischi sulla turbina reale.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è la \"superficie d'attacco\" in sicurezza IoT?",
+    "back": "L'insieme di tutti i punti potenzialmente vulnerabili attraverso cui un attaccante potrebbe compromettere un sistema.\n\nOgni dispositivo IoT connesso alla rete amplia la superficie d'attacco. Una casa con 15 dispositivi smart ha 15 potenziali punti di ingresso per un hacker.",
+    "tag": "Base"
+  },
+  {
+    "front": "Cos'è l'edge computing e perché è utile per l'IoT?",
+    "back": "L'elaborazione dei dati direttamente sul dispositivo IoT o su un nodo vicino, anziché inviare tutto al cloud.\n\nRiduce latenza, consumo di banda e dipendenza dalla connessione. Una telecamera con edge computing analizza i frame localmente e invia solo gli alert, non tutto il video.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Quali sono i 4 strati dell'architettura IoT?",
+    "back": "Things (dispositivi), Connectivity (rete), Processing (elaborazione dati), Application (interfacce utente e servizi).\n\nI sensori raccolgono dati (Things), li trasmettono (Connectivity), vengono elaborati (Processing: edge o cloud) e presentati all'utente (Application: dashboard, app, alert).",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il campionamento in un sistema IoT?",
+    "back": "La misurazione di un segnale analogico continuo a intervalli regolari per trasformarlo in una sequenza di valori digitali.\n\nIl Teorema di Nyquist dice che la frequenza di campionamento deve essere almeno il doppio della frequenza massima del segnale. Una frequenza troppo bassa perde informazioni importanti.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Perché LoRaWAN è preferito al Wi-Fi per i sensori agricoli in campo aperto?",
+    "back": "Perché LoRaWAN ha portata di 15–20 km, consuma pochissima energia e penetra bene gli ostacoli, anche se è lento.\n\nUn sensore per l'umidità del suolo lontano invia pochi byte ogni ora: LoRaWAN è perfetto. Il Wi-Fi copre solo decine di metri e consumerebbe troppa energia.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è il firmware di un dispositivo IoT e perché è critico per la sicurezza?",
+    "back": "Il software embedded programmato nel chip del dispositivo che ne controlla il comportamento di base.\n\nIl firmware è spesso la prima fonte di vulnerabilità IoT: molti produttori non rilasciano aggiornamenti di sicurezza, lasciando dispositivi con bug noti esposti alla rete per anni.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Cos'è l'industria 4.0 e che ruolo ha l'IoT?",
+    "back": "La quarta rivoluzione industriale, basata sull'integrazione di sensori IoT, big data, AI e automazione nei processi produttivi.\n\nI sensori IoT in fabbrica monitorano ogni macchina in tempo reale: prevedono i guasti (manutenzione predittiva) prima che accadano, riducendo fermi produttivi e costi.",
+    "tag": "Intermedio"
+  },
+  {
+    "front": "Un sensore IoT con risoluzione a 12 bit e frequenza di campionamento di 10 Hz genera quanti dati in un'ora?",
+    "back": "10 campioni/s × 3.600 s × 12 bit = 432.000 bit = circa 52,7 KB/ora.\n\nCon 12 bit di risoluzione si hanno 4.096 livelli distinti. 52,7 KB/ora è gestibile anche con LoRaWAN, pur nella sua lentezza. Mille sensori genererebbero 52,7 MB/ora.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché un attaccante che compromette un router domestico può controllare tutti i dispositivi IoT della rete?",
+    "back": "Perché il router è il gateway che controlla il traffico di rete di tutti i dispositivi connessi.\n\nCompromesso il router, l'attaccante può intercettare il traffico non cifrato e raggiungere dispositivi IoT non aggiornati. La segmentazione di rete (VLAN per i dispositivi IoT) isola questo rischio.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Qual è la differenza tra edge computing e cloud computing nell'elaborazione IoT?",
+    "back": "L'edge elabora i dati localmente sul dispositivo o su un nodo vicino; il cloud li elabora su server remoti.\n\nLatenza: edge < 1 ms, cloud 50–200 ms. Per applicazioni critiche come la guida autonoma, l'edge è obbligatorio. Il cloud è preferito per l'analisi storica di grandi quantità di dati.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come funziona un sistema di manutenzione predittiva basato su IoT?",
+    "back": "I sensori raccolgono dati in tempo reale (vibrazioni, temperatura), un modello ML individua anomalie che precedono i guasti, e il sistema invia alert prima del fallimento.\n\nNelle fabbriche con manutenzione predittiva i fermi non pianificati si riducono del 30–50%.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Perché il protocollo 5G è rilevante per lo sviluppo dell'IoT industriale?",
+    "back": "Per la sua bassa latenza (<1 ms), alta densità di dispositivi (1 milione per km²) e velocità elevata.\n\nL'IoT industriale richiede latenza ultra-bassa per il controllo in tempo reale dei robot e alta densità per ambienti con migliaia di sensori vicini. Il 4G non è sufficiente per questi requisiti.",
+    "tag": "Avanzato"
+  },
+  {
+    "front": "Come si progetta un sistema IoT per l'agricoltura di precisione?",
+    "back": "Si identificano i parametri (umidità suolo, temperatura, pioggia), si scelgono i sensori, si definisce la rete (LoRaWAN), si configura il processing (edge per alert, cloud per analisi) e si progetta il dashboard.\n\nL'obiettivo è ridurre acqua e pesticidi del 20–40% mantenendo o migliorando i raccolti.",
+    "tag": "Avanzato"
+  }
+]

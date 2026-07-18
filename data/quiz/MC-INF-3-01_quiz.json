@@ -1,0 +1,600 @@
+{
+  "mc_id": "MC-INF-3-01",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Cosa significa l'acronimo IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Internet of Technology — la rete di tutte le tecnologie digitali",
+          "feedback": "Non è corretto. IoT non significa 'Internet of Technology'. La sigla corretta è 'Internet of Things' (Internet delle Cose): la rete di oggetti fisici connessi a internet dotati di sensori e logica.",
+          "riferimento": "📖 ESPLORA — Cos'è l'IoT"
+        },
+        {
+          "id": "b",
+          "testo": "Internet of Things — oggetti fisici connessi a internet con sensori e capacità di elaborazione",
+          "corretto": true,
+          "feedback": "Esatto! IoT (Internet of Things, Internet delle Cose) indica l'ecosistema di oggetti fisici — dai termostati intelligenti ai sensori industriali, dagli smartwatch alle auto connesse — dotati di sensori, connettività internet e capacità di elaborare dati."
+        },
+        {
+          "id": "c",
+          "testo": "Input-Output Terminal — i dispositivi che gestiscono input e output dei computer",
+          "feedback": "Non è corretto. I dispositivi di input/output (tastiera, mouse, monitor) hanno terminologia propria nell'architettura dei computer. IoT significa Internet of Things (Internet delle Cose) — oggetti fisici connessi e intelligenti.",
+          "riferimento": "📖 ESPLORA — Cos'è l'IoT"
+        },
+        {
+          "id": "d",
+          "testo": "Integrated Operating Technology — il sistema che integra hardware e software nei dispositivi moderni",
+          "feedback": "Non è corretto. IoT è l'acronimo di Internet of Things (Internet delle Cose). Non descrive l'integrazione hardware-software in senso generale, ma la connessione di oggetti fisici a internet con capacità di sensing e comunicazione.",
+          "riferimento": "📖 ESPLORA — Cos'è l'IoT"
+        }
+      ],
+      "spiegazione": "IoT (Internet of Things, Internet delle Cose) è il paradigma che descrive oggetti fisici connessi a internet dotati di sensori (per raccogliere dati dall'ambiente), connettività (per trasmettere i dati) e logica di elaborazione (per prendere decisioni). Nel 2024 si stimano circa 17 miliardi di dispositivi IoT connessi nel mondo.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è l'IoT"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Cosa fa un sensore in un dispositivo IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Trasmette dati a internet tramite antenna wireless",
+          "feedback": "Non è corretto. Trasmettere dati a internet è compito del modulo di connettività (WiFi, Bluetooth, LoRaWAN ecc.). Il sensore fa qualcosa di diverso: converte una grandezza fisica in un segnale elettrico misurabile.",
+          "riferimento": "📖 ESPLORA — Sensori e trasduzione"
+        },
+        {
+          "id": "b",
+          "testo": "Converte una grandezza fisica (temperatura, luce, pressione) in un segnale elettrico misurabile",
+          "corretto": true,
+          "feedback": "Esatto! Il sensore è il componente che percepisce il mondo fisico: converte una grandezza fisica (temperatura, umidità, luminosità, pressione, accelerazione, suono) in un segnale elettrico che il dispositivo può misurare. Questo processo si chiama trasduzione."
+        },
+        {
+          "id": "c",
+          "testo": "Esegue i calcoli necessari per analizzare i dati raccolti",
+          "feedback": "Non è corretto. I calcoli sono eseguiti dal microcontrollore o dal processore del dispositivo. Il sensore si limita a convertire grandezze fisiche in segnali elettrici — non elabora né analizza.",
+          "riferimento": "📖 ESPLORA — Sensori e trasduzione"
+        },
+        {
+          "id": "d",
+          "testo": "Alimenta il dispositivo con energia elettrica",
+          "feedback": "Non è corretto. L'alimentazione è fornita da batterie, pannelli solari o connessione alla rete elettrica. Il sensore misura l'ambiente fisico convertendo grandezze fisiche in segnali elettrici — non produce energia.",
+          "riferimento": "📖 ESPLORA — Sensori e trasduzione"
+        }
+      ],
+      "spiegazione": "Un sensore è un trasduttore: converte una grandezza fisica (temperatura, umidità, luce, pressione, accelerazione, gas, suono) in un segnale elettrico misurabile dal sistema digitale. Ad esempio: un termistore converte la temperatura in resistenza elettrica; un fotodiodo converte la luce in corrente. L'ADC (Analog-to-Digital Converter) trasforma poi il segnale analogico in valori digitali che il processore può elaborare.",
+      "riferimento_principale": "📖 ESPLORA — Sensori e trasduzione"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Quale dei seguenti è un esempio concreto di dispositivo IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una tastiera meccanica USB collegata a un computer fisso",
+          "feedback": "Non è corretto. Una tastiera USB è un dispositivo di input tradizionale, non IoT. I dispositivi IoT sono oggetti fisici con sensori propri, connettività di rete autonoma e capacità di elaborare e trasmettere dati — non semplici periferiche che necessitano di un computer host.",
+          "riferimento": "📖 ESPLORA — Esempi di dispositivi IoT"
+        },
+        {
+          "id": "b",
+          "testo": "Un monitor per la qualità dell'aria che misura PM2.5, temperatura e umidità e invia i dati a un'app",
+          "corretto": true,
+          "feedback": "Esatto! Un monitor per la qualità dell'aria è un dispositivo IoT: ha sensori propri (particolato PM2.5, temperatura, umidità), connettività (WiFi o Bluetooth), elaborazione locale dei dati e trasmissione a un server cloud o un'app. Non richiede un computer host per funzionare."
+        },
+        {
+          "id": "c",
+          "testo": "Un hard disk esterno con interfaccia USB-C",
+          "feedback": "Non è corretto. Un hard disk esterno è un dispositivo di archiviazione passivo che necessita di un computer host per funzionare. Un dispositivo IoT è autonomo: ha sensori, elaborazione e connettività proprie.",
+          "riferimento": "📖 ESPLORA — Esempi di dispositivi IoT"
+        },
+        {
+          "id": "d",
+          "testo": "Un cavo HDMI per collegare il computer al proiettore",
+          "feedback": "Non è corretto. Un cavo HDMI è un semplice mezzo trasmissivo — non ha sensori, processore, connettività di rete né capacità di elaborazione. I dispositivi IoT sono oggetti con intelligenza autonoma e connettività internet.",
+          "riferimento": "📖 ESPLORA — Esempi di dispositivi IoT"
+        }
+      ],
+      "spiegazione": "Un dispositivo IoT ha tre caratteristiche fondamentali: 1) Sensing: misura l'ambiente fisico tramite sensori; 2) Connectivity: trasmette dati tramite protocolli di rete (WiFi, Bluetooth, LoRaWAN...); 3) Processing: elabora i dati localmente (edge) o li invia al cloud. Esempi: termostato smart, smartwatch, irrigatore automatico, sensore di qualità dell'aria, contatore elettrico intelligente (smart meter), veicolo connesso.",
+      "riferimento_principale": "📖 ESPLORA — Esempi di dispositivi IoT"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Qual è il vantaggio principale dell'edge computing rispetto all'elaborazione solo su cloud nell'IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "L'edge computing è sempre più economico del cloud in termini di costi di hardware",
+          "feedback": "Non è corretto. I costi dipendono dall'applicazione specifica. L'edge computing può richiedere hardware più robusto sui dispositivi locali, che ha un costo. Il vantaggio principale dell'edge non è il costo, ma la riduzione della latenza.",
+          "riferimento": "📖 ESPLORA — Edge computing"
+        },
+        {
+          "id": "b",
+          "testo": "Riduce la latenza elaborando i dati vicino alla fonte, senza dipendere dalla connettività al cloud",
+          "corretto": true,
+          "feedback": "Esatto! L'edge computing elabora i dati sul dispositivo o su un server locale vicino alla fonte. Questo riduce la latenza (il tempo di risposta), riduce il traffico verso il cloud, permette di operare anche con connettività intermittente, e protegge la privacy non inviando tutti i dati raw al cloud."
+        },
+        {
+          "id": "c",
+          "testo": "Permette di usare connessioni internet molto lente perché i dati vengono compressi prima di partire",
+          "feedback": "Non è corretto. La compressione dei dati è una tecnica separata dall'edge computing. L'edge computing riduce la quantità di dati trasmessi elaborando localmente, ma il suo vantaggio principale è la riduzione della latenza, non la gestione delle connessioni lente.",
+          "riferimento": "📖 ESPLORA — Edge computing"
+        },
+        {
+          "id": "d",
+          "testo": "Elimina completamente la necessità di connessione internet per i dispositivi IoT",
+          "feedback": "Non è corretto. L'edge computing riduce la dipendenza dal cloud, ma molti sistemi edge mantengono una connessione internet per sincronizzazione, aggiornamenti e analytics avanzati. Non elimina necessariamente la connettività, ma rende il sistema meno dipendente dalla latenza cloud.",
+          "riferimento": "📖 ESPLORA — Edge computing"
+        }
+      ],
+      "spiegazione": "L'edge computing sposta l'elaborazione vicino alla fonte dei dati (dispositivo o server locale) invece del cloud remoto. Vantaggi: 1) Latenza ridotta: decisioni in millisecondi senza round-trip al cloud; 2) Banda ridotta: si trasmettono solo i dati rilevanti, non tutti i dati raw; 3) Resilienza: funziona anche con connettività intermittente; 4) Privacy: i dati sensibili non escono dalla rete locale. Critico per: veicoli autonomi, robot industriali, monitoraggio medico in tempo reale.",
+      "riferimento_principale": "📖 ESPLORA — Edge computing"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quale protocollo IoT è progettato per lunghe distanze e basso consumo energetico?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Bluetooth",
+          "feedback": "Non è corretto. Bluetooth è progettato per comunicazioni a corto raggio (tipicamente 10-100 m) tra dispositivi vicini (cuffie, smartwatch, controller). Non è adatto per lunghe distanze. LoRaWAN è il protocollo IoT ottimizzato per lunga distanza e basso consumo.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "b",
+          "testo": "Wi-Fi",
+          "feedback": "Non è corretto. Wi-Fi offre alta banda ma consuma molta energia e ha un raggio limitato (tipicamente fino a 100 m). Non è ottimale per dispositivi IoT a batteria che devono trasmettere dati su chilometri.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "c",
+          "testo": "LoRaWAN",
+          "corretto": true,
+          "feedback": "Esatto! LoRaWAN (Long Range Wide Area Network) è progettato per comunicazioni IoT a lunga distanza (fino a 15 km in aree rurali) con bassissimo consumo energetico. Perfetto per sensori che trasmettono pochi dati periodicamente: contatori idrici, sensori meteo, tracker GPS di bestiame, sensori per smart city."
+        },
+        {
+          "id": "d",
+          "testo": "HDMI",
+          "feedback": "Non è corretto. HDMI (High-Definition Multimedia Interface) è uno standard per trasmettere segnali audio/video tra dispositivi multimediali tramite cavo fisico. Non è un protocollo di comunicazione wireless per l'IoT.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        }
+      ],
+      "spiegazione": "Confronto protocolli IoT: WiFi = alta banda, alto consumo, breve distanza (100m), adatto per dispositivi sempre alimentati. Bluetooth/BLE = bassa potenza, breve distanza (10-100m), adatto per wearable. Zigbee = mesh network, basso consumo, corta distanza (<100m), adatto per domotica. LoRaWAN = lunghissima distanza (fino a 15km), bassissimo consumo, bassa banda, adatto per sensori remoti. 5G = alta banda, bassa latenza, media potenza, adatto per veicoli connessi e industria.",
+      "riferimento_principale": "📖 ESPLORA — Protocolli IoT"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cos'è un Digital Twin (gemello digitale)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Una copia di backup di tutti i dati di un dispositivo IoT salvata su cloud",
+          "feedback": "Non è corretto. Un backup conserva i dati storici per il ripristino. Un Digital Twin è una replica virtuale dinamica dell'oggetto fisico: simula il comportamento dell'oggetto reale in tempo reale, non si limita a conservarne i dati.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        },
+        {
+          "id": "b",
+          "testo": "Una replica virtuale di un oggetto fisico che ne simula il comportamento in tempo reale",
+          "corretto": true,
+          "feedback": "Esatto! Il Digital Twin è un modello digitale dinamico di un oggetto fisico (impianto, turbina, edificio, veicolo) che riceve dati in tempo reale dall'oggetto reale tramite sensori IoT e ne simula il comportamento. Permette di prevedere guasti, ottimizzare le prestazioni e testare scenari senza fermare l'impianto reale."
+        },
+        {
+          "id": "c",
+          "testo": "Un secondo dispositivo IoT identico usato come riserva in caso di guasto del primo",
+          "feedback": "Non è corretto. Un dispositivo di riserva (ridondanza hardware) è una soluzione di continuità operativa. Il Digital Twin è un modello software virtuale dell'oggetto fisico, non un duplicato hardware.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        },
+        {
+          "id": "d",
+          "testo": "Un robot fisico che replica i movimenti di un operatore umano in un'altra posizione",
+          "feedback": "Non è corretto. Un robot teleoperato è un sistema fisico di telerobotica. Il Digital Twin è un modello virtuale (software) di un oggetto fisico — non è un oggetto fisico esso stesso.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        }
+      ],
+      "spiegazione": "Il Digital Twin (gemello digitale) è un modello virtuale dinamico di un oggetto fisico, alimentato dai dati in tempo reale dei sensori IoT dell'oggetto reale. Usi: manutenzione predittiva (prevedere guasti prima che avvengano), ottimizzazione delle prestazioni, test di scenari virtuali prima di applicarli al sistema reale, monitoraggio dello stato. Applicazioni: turbine eoliche, motori a reazione, impianti industriali, edifici (BIM evoluto), città intelligenti.",
+      "riferimento_principale": "📖 ESPLORA — Digital Twin"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "Quali sono i 4 strati dell'architettura IoT nell'ordine corretto (dal dispositivo all'applicazione)?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Application → Processing → Connectivity → Things",
+          "feedback": "Non è corretto. Questo ordine è invertito rispetto al flusso dei dati. Nell'architettura IoT i dati partono dai dispositivi fisici (Things), vengono trasmessi (Connectivity), elaborati (Processing) e infine presentati all'utente (Application).",
+          "riferimento": "📖 ESPLORA — Architettura IoT a 4 strati"
+        },
+        {
+          "id": "b",
+          "testo": "Things → Connectivity → Processing → Application",
+          "corretto": true,
+          "feedback": "Esatto! L'architettura IoT a 4 strati: 1) Things (oggetti fisici con sensori); 2) Connectivity (reti: WiFi, Bluetooth, LoRaWAN, 5G); 3) Processing (elaborazione: edge o cloud, analytics, ML); 4) Application (interfacce utente, dashboard, automazione, servizi). I dati fluiscono dal basso verso l'alto."
+        },
+        {
+          "id": "c",
+          "testo": "Processing → Things → Application → Connectivity",
+          "feedback": "Non è corretto. Questa sequenza non ha senso logico: l'elaborazione non avviene prima della raccolta dei dati dai sensori (Things). L'ordine corretto riflette il flusso dei dati: Things → Connectivity → Processing → Application.",
+          "riferimento": "📖 ESPLORA — Architettura IoT a 4 strati"
+        },
+        {
+          "id": "d",
+          "testo": "Connectivity → Things → Processing → Application",
+          "feedback": "Non è corretto. La connettività non precede i dispositivi fisici nella catena causale: prima esistono i dispositivi (Things) con i loro sensori, poi questi trasmettono dati tramite rete (Connectivity). L'ordine corretto è Things → Connectivity → Processing → Application.",
+          "riferimento": "📖 ESPLORA — Architettura IoT a 4 strati"
+        }
+      ],
+      "spiegazione": "L'architettura IoT a 4 strati descrive il percorso dei dati: 1) Things: sensori/attuatori che raccolgono dati dal mondo fisico. 2) Connectivity: protocolli di rete per trasmettere i dati (WiFi, Bluetooth, Zigbee, LoRaWAN, 5G). 3) Processing: elaborazione dei dati (su edge locale o cloud remoto: pulizia, analisi, ML, decisioni). 4) Application: interfacce e servizi per l'utente finale (dashboard, alert, automazione, API).",
+      "riferimento_principale": "📖 ESPLORA — Architettura IoT a 4 strati"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "Cosa fa un ADC (Analog-to-Digital Converter) in un dispositivo IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Comprime i dati digitali per ridurre il traffico verso il cloud",
+          "feedback": "Non è corretto. La compressione è una funzione separata, gestita da algoritmi software. L'ADC si occupa di convertire segnali analogici (continui) in valori digitali (discreti) che il processore può elaborare.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        },
+        {
+          "id": "b",
+          "testo": "Converte un segnale analogico continuo (es. la tensione di un sensore) in valori numerici digitali discreti",
+          "corretto": true,
+          "feedback": "Esatto! I sensori producono segnali analogici continui (tensioni variabili). Il processore digitale può elaborare solo numeri. L'ADC campiona il segnale analogico a intervalli regolari (frequenza di campionamento) e converte ogni campione in un numero digitale (con una certa risoluzione in bit)."
+        },
+        {
+          "id": "c",
+          "testo": "Accelera la trasmissione dei dati convertendo i pacchetti di rete in segnali radio",
+          "feedback": "Non è corretto. La conversione dei pacchetti di rete in segnali radio è compito del modem/transceiver wireless. L'ADC converte segnali analogici provenienti dai sensori in valori digitali.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        },
+        {
+          "id": "d",
+          "testo": "Gestisce la distribuzione dell'energia elettrica ai diversi sensori del dispositivo",
+          "feedback": "Non è corretto. La gestione dell'energia è compito del PMIC (Power Management IC). L'ADC (Analog-to-Digital Converter) converte segnali analogici in valori digitali — è un componente di acquisizione del segnale, non di gestione dell'energia.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        }
+      ],
+      "spiegazione": "L'ADC (Analog-to-Digital Converter) è il ponte tra il mondo analogico dei sensori e il mondo digitale del processore. Funziona attraverso il campionamento: misura la tensione del segnale analogico a intervalli regolari (frequenza di campionamento, es. 1000 Hz = 1000 misure al secondo) e converte ogni misura in un numero digitale con una certa risoluzione (es. 12 bit = 4096 livelli possibili). La qualità dell'ADC determina la precisione della misura.",
+      "riferimento_principale": "📖 ESPLORA — ADC e campionamento"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Perché i dispositivi IoT con firmware non aggiornato rappresentano un rischio di sicurezza per la rete?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché consumano troppa energia e rallentano la connessione internet della rete",
+          "feedback": "Non è corretto. Il consumo energetico o la velocità della connessione non sono i rischi di sicurezza principali di un firmware obsoleto. Il problema è che il firmware non aggiornato non ha le patch per le vulnerabilità note.",
+          "riferimento": "📖 ESPLORA — Sicurezza IoT"
+        },
+        {
+          "id": "b",
+          "testo": "Perché non hanno le patch per le vulnerabilità note e possono diventare un punto d'accesso per attacchi alla rete",
+          "corretto": true,
+          "feedback": "Esatto! Il firmware è il software che controlla il dispositivo. Se non viene aggiornato, rimane vulnerabile a falle di sicurezza scoperte dopo la produzione. Un attaccante può sfruttare queste vulnerabilità per compromettere il dispositivo e usarlo come punto d'accesso alla rete interna (pivot point)."
+        },
+        {
+          "id": "c",
+          "testo": "Perché inviano dati non cifrati che aumentano il traffico di rete",
+          "feedback": "Non è corretto. L'invio di dati non cifrati è un problema di sicurezza diverso dalla mancanza di aggiornamenti firmware. Il rischio principale del firmware non aggiornato è la presenza di vulnerabilità non patchate che possono essere sfruttate da un attaccante.",
+          "riferimento": "📖 ESPLORA — Sicurezza IoT"
+        },
+        {
+          "id": "d",
+          "testo": "Perché si disconnettono automaticamente dalla rete ogni volta che viene rilevata una minaccia",
+          "feedback": "Non è corretto. I dispositivi IoT con firmware non aggiornato in genere non hanno meccanismi di rilevamento delle minacce o auto-disconnessione. Al contrario, rimangono connessi e vulnerabili senza protezione contro le minacce note.",
+          "riferimento": "📖 ESPLORA — Sicurezza IoT"
+        }
+      ],
+      "spiegazione": "La sicurezza IoT è un problema critico: milioni di dispositivi (router, telecamere, smart TV, lampadine intelligenti) vengono installati e dimenticati per anni senza aggiornamenti firmware. Le vulnerabilità scoperte dopo il rilascio non vengono corrette. Un attaccante che compromette un dispositivo IoT può: usarlo per attaccare altri sistemi in rete (pivot), includerlo in una botnet per attacchi DDoS (come Mirai nel 2016 che ha colpito gran parte dell'internet USA), o spiare la rete locale.",
+      "riferimento_principale": "📖 ESPLORA — Sicurezza IoT"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Come si usa un Digital Twin nell'industria 4.0 per la manutenzione predittiva?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si produce un secondo macchinario fisico identico all'originale per testare le condizioni di stress",
+          "feedback": "Non è corretto. Un secondo macchinario fisico sarebbe costoso e non permetterebbe la stessa flessibilità. Il Digital Twin è un modello virtuale software: si testano gli scenari sul gemello digitale senza toccare l'impianto reale.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        },
+        {
+          "id": "b",
+          "testo": "Il modello virtuale riceve i dati in tempo reale dai sensori del macchinario reale e prevede guasti prima che avvengano",
+          "corretto": true,
+          "feedback": "Esatto! Il Digital Twin riceve continuamente dati dai sensori del macchinario reale (vibrazioni, temperatura, pressione, corrente) e li usa per simulare lo stato interno dell'impianto. Confrontando il comportamento simulato con i valori attesi, il sistema rileva anomalie e prevede il momento del guasto settimane o mesi prima che avvenga."
+        },
+        {
+          "id": "c",
+          "testo": "Un operatore umano controlla il gemello digitale ogni settimana per verificare visivamente se ci sono anomalie",
+          "feedback": "Non è corretto. Il valore del Digital Twin è nell'analisi automatica continua dei dati, non nel controllo visivo periodico umano. Il sistema analizza centinaia di parametri in tempo reale — un controllo umano settimanale perderebbe la maggior parte dei segnali precoci di guasto.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        },
+        {
+          "id": "d",
+          "testo": "Il Digital Twin sostituisce completamente il macchinario fisico, eliminando la necessità di manutenzione",
+          "feedback": "Non è corretto. Il Digital Twin non sostituisce il macchinario fisico — è un suo modello virtuale. La manutenzione fisica rimane necessaria; il Digital Twin la rende più efficiente prevedendo quando è effettivamente necessaria (manutenzione predittiva vs manutenzione preventiva a calendario).",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        }
+      ],
+      "spiegazione": "La manutenzione predittiva con Digital Twin funziona così: 1) Sensori IoT sul macchinario raccolgono dati continui (vibrazione, temperatura, corrente, pressione). 2) Il Digital Twin riceve questi dati e aggiorna il modello virtuale in tempo reale. 3) Algoritmi ML rilevano pattern anomali che precedono i guasti. 4) Il sistema genera un alert con il tempo stimato al guasto e il componente specifico. Risultati tipici: riduzione del 25-30% dei costi di manutenzione, eliminazione del 70% dei downtime non pianificati.",
+      "riferimento_principale": "📖 ESPLORA — Digital Twin"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Qual è la differenza principale tra Zigbee e Wi-Fi come protocolli di comunicazione per dispositivi IoT?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Zigbee è più veloce di Wi-Fi e viene usato per lo streaming video in alta definizione",
+          "feedback": "Non è corretto. Zigbee è molto più lento di Wi-Fi in termini di banda massima e non è adatto per lo streaming video. Zigbee è ottimizzato per basso consumo e rete mesh di sensori — non per alta banda.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "b",
+          "testo": "Zigbee consuma molto meno energia ed è ottimizzato per reti mesh di sensori a corto raggio; Wi-Fi offre alta banda ma consuma più energia",
+          "corretto": true,
+          "feedback": "Esatto! Zigbee: basso consumo (batterie durano anni), bassa banda, raggio ~100m, crea reti mesh dove ogni nodo fa da router, usato per smart home (lampadine Philips Hue, sensori porte/finestre). Wi-Fi: alta banda, alto consumo, raggio ~100m, richiede access point centrale — usato per dispositivi IoT alimentati a rete (telecamere, smart speaker)."
+        },
+        {
+          "id": "c",
+          "testo": "Wi-Fi funziona solo al chiuso, Zigbee solo all'esterno",
+          "feedback": "Non è corretto. Entrambi i protocolli funzionano sia al chiuso che all'esterno. La differenza principale è il consumo energetico e la topologia di rete: Zigbee è a basso consumo con topologia mesh, Wi-Fi è ad alta banda con topologia stella.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "d",
+          "testo": "Zigbee è proprietario di un'unica azienda, Wi-Fi è uno standard aperto",
+          "feedback": "Non è corretto. Entrambi sono standard aperti gestiti da consorzi internazionali (Zigbee Alliance, ora Connectivity Standards Alliance; IEEE 802.11 per Wi-Fi). La differenza principale riguarda il consumo energetico e la topologia di rete.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        }
+      ],
+      "spiegazione": "Confronto Zigbee vs Wi-Fi per IoT: Zigbee = basso consumo (dispositivi a batteria durano anni), bassa banda (250 kbps), raggio ~100m, topologia mesh (ogni dispositivo amplifica il segnale degli altri), adatto per domotica (sensori, attuatori, lampadine smart). Wi-Fi = alta banda (centinaia di Mbps), alto consumo (richiede alimentazione a rete), raggio ~100m, topologia stella con access point, adatto per dispositivi IoT che trasmettono molto (telecamere, smart speaker).",
+      "riferimento_principale": "📖 ESPLORA — Protocolli IoT"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Cosa significa 'campionamento' in un sensore IoT e da cosa dipende la qualità del segnale acquisito?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Campionamento significa prendere un campione casuale di dati da una grande raccolta di misure",
+          "feedback": "Non è corretto. In statistica 'campionamento' può significare questo, ma in ambito IoT/segnali indica qualcosa di preciso: la misura periodica di un segnale analogico a intervalli regolari nel tempo. Non è casuale ma sistematico.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        },
+        {
+          "id": "b",
+          "testo": "Misurare il valore di un segnale analogico a intervalli regolari; la qualità dipende da frequenza di campionamento e risoluzione in bit",
+          "corretto": true,
+          "feedback": "Esatto! Il campionamento misura il segnale analogico a intervalli regolari (frequenza di campionamento). La qualità dipende da: 1) frequenza di campionamento (più alta = più fedele, ma più dati); 2) risoluzione in bit dell'ADC (più bit = più livelli di quantizzazione, misure più precise). Un ADC a 12 bit distingue 4096 livelli, uno a 8 bit solo 256."
+        },
+        {
+          "id": "c",
+          "testo": "Campionamento significa testare il dispositivo IoT in laboratorio prima dell'installazione sul campo",
+          "feedback": "Non è corretto. Il testing in laboratorio è una fase del processo di sviluppo, non il 'campionamento' del segnale. In IoT/elettronica, il campionamento è la misura periodica di un segnale analogico per convertirlo in forma digitale.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        },
+        {
+          "id": "d",
+          "testo": "Campionamento significa selezionare i sensori più adatti per una certa applicazione IoT",
+          "feedback": "Non è corretto. La selezione dei sensori è una fase di progettazione del sistema. Il campionamento (sampling) è il processo di acquisizione del segnale: misurare il valore di un segnale analogico a intervalli regolari nel tempo.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        }
+      ],
+      "spiegazione": "Il campionamento (sampling) è il processo di misurare un segnale analogico continuo a intervalli regolari per convertirlo in una sequenza di valori digitali. Due parametri critici: 1) Frequenza di campionamento (campioni/secondo): deve essere almeno doppia della frequenza massima del segnale (Teorema di Nyquist-Shannon) per evitare l'aliasing. 2) Risoluzione dell'ADC (bit): determina la granularità della misura. 12 bit = 4096 livelli; 16 bit = 65536 livelli. Più bit = misura più precisa.",
+      "riferimento_principale": "📖 ESPLORA — ADC e campionamento"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un sistema IoT per l'agricoltura di precisione deve monitorare un campo di 50 ettari con sensori di umidità del suolo. Quale protocollo di comunicazione è più adatto e perché?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Wi-Fi, perché offre alta banda per trasmettere grandi quantità di dati dai sensori",
+          "feedback": "Non è corretto. Wi-Fi ha portata massima di ~100m e consuma molta energia. Coprire 50 ettari (area quadrata con lato ~700m) richiederebbe decine di access point. I sensori di umidità trasmettono pochi byte a bassa frequenza — l'alta banda di Wi-Fi è inutile e il consumo energetico troppo alto per batterie a lunga durata.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "b",
+          "testo": "LoRaWAN, perché copre chilometri di distanza con bassissimo consumo energetico, adatto per sensori a batteria su vaste aree",
+          "corretto": true,
+          "feedback": "Esatto! LoRaWAN è ideale per questo scenario: copertura fino a 15 km (un gateway copre l'intero campo da una posizione centrale), bassissimo consumo energetico (batterie che durano anni), bassa banda sufficiente per trasmettere pochi byte di dati di umidità ogni ora, e buona penetrazione del segnale nei terreni coltivati."
+        },
+        {
+          "id": "c",
+          "testo": "Bluetooth, perché è il protocollo più diffuso e garantisce la massima compatibilità con i dispositivi mobili",
+          "feedback": "Non è corretto. Bluetooth ha portata di soli 10-100m — completamente inadeguata per 50 ettari. Richiederebbe centinaia di nodi relay. La 'compatibilità con dispositivi mobili' non è un requisito per sensori di campo.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "d",
+          "testo": "5G, perché la bassa latenza è critica per reagire immediatamente alle variazioni di umidità del suolo",
+          "feedback": "Non è corretto. La latenza non è critica per sensori di umidità del suolo: le variazioni sono lente (ore/giorni) e non richiedono risposta in millisecondi. Il 5G consuma molta energia e richiede infrastruttura di rete non sempre presente in zone rurali.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        }
+      ],
+      "spiegazione": "Scelta del protocollo IoT per agricoltura di precisione: LoRaWAN eccelle perché 1) Copertura: un gateway LoRa può coprire 15 km di raggio da una torre; 2) Energia: le batterie dei sensori durano 2-10 anni (ideale per dispositivi in campo aperto senza alimentazione); 3) Costo: hardware economico; 4) Banda: sufficiente per pochi byte di dati periodici (umidità, temperatura, pH). In un campo da 50 ettari, un singolo gateway LoRa posizionato centralmente gestisce centinaia di sensori.",
+      "riferimento_principale": "📖 ESPLORA — Protocolli IoT"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Qual è il principale rischio di sicurezza di un dispositivo IoT con firmware non aggiornato connesso a una rete aziendale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il dispositivo consuma troppa energia e fa aumentare la bolletta aziendale",
+          "feedback": "Non è corretto. Il consumo energetico di un dispositivo IoT non aggiornato non cambia significativamente rispetto a uno aggiornato. Il rischio principale è la sicurezza della rete: il dispositivo può diventare un vettore di attacco per compromettere la rete interna.",
+          "riferimento": "📖 ESPLORA — Sicurezza IoT"
+        },
+        {
+          "id": "b",
+          "testo": "Può essere compromesso da un attaccante che sfrutta vulnerabilità note, diventando un punto d'accesso alla rete interna aziendale",
+          "corretto": true,
+          "feedback": "Esatto! Un dispositivo IoT con firmware obsoleto ha vulnerabilità note (pubblicate nei CVE — Common Vulnerabilities and Exposures). Un attaccante può sfruttarle per compromettere il dispositivo e usarlo come 'pivot': da lì attaccare altri sistemi nella rete interna aziendale, bypassando i firewall perimetrali che proteggono dall'esterno."
+        },
+        {
+          "id": "c",
+          "testo": "Il dispositivo smette di funzionare automaticamente quando il firmware è troppo vecchio",
+          "feedback": "Non è corretto. I dispositivi IoT con firmware obsoleto continuano tipicamente a funzionare — è questo il problema. Non si 'spengono' automaticamente. Rimangono attivi e connessi alla rete, con le loro vulnerabilità non patchate.",
+          "riferimento": "📖 ESPLORA — Sicurezza IoT"
+        },
+        {
+          "id": "d",
+          "testo": "Il dispositivo non riesce più a connettersi ai server cloud del produttore",
+          "feedback": "Non è corretto. La perdita di connettività al cloud del produttore potrebbe avvenire se il produttore dismette il servizio, ma non è un rischio di sicurezza diretto. Il rischio principale del firmware non aggiornato è la presenza di vulnerabilità non patchate sfruttabili da attaccanti.",
+          "riferimento": "📖 ESPLORA — Sicurezza IoT"
+        }
+      ],
+      "spiegazione": "Il rischio del firmware non aggiornato nell'IoT è reale e documentato. Il caso più famoso: botnet Mirai (2016) ha compromesso 600.000 dispositivi IoT (telecamere, router, DVR) sfruttando credenziali di default e vulnerabilità note per lanciare un attacco DDoS che ha reso inaccessibili Twitter, Netflix, Reddit per ore. In una rete aziendale, un dispositivo IoT compromesso (stampante, termostato, telecamera) può essere usato come punto d'appoggio per attacchi laterali ai server e ai dati sensibili.",
+      "riferimento_principale": "📖 ESPLORA — Sicurezza IoT"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché l'edge computing è preferibile al cloud computing puro per applicazioni IoT che richiedono risposta in tempo reale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i server edge sono sempre più potenti dei server cloud",
+          "feedback": "Non è corretto. I server cloud sono generalmente molto più potenti dei dispositivi edge. Il vantaggio dell'edge non è la potenza computazionale ma la vicinanza alla fonte dei dati, che riduce la latenza.",
+          "riferimento": "📖 ESPLORA — Edge computing"
+        },
+        {
+          "id": "b",
+          "testo": "Perché elabora i dati vicino alla fonte, eliminando il round-trip verso il cloud (che introduce decine o centinaia di ms di latenza)",
+          "corretto": true,
+          "feedback": "Esatto! Un round-trip verso un server cloud introduce tipicamente 20-200 ms di latenza (dipende dalla distanza geografica e dalla rete). Per applicazioni che richiedono reazione in tempo reale (es. rilevamento di un difetto su una linea di produzione a 1000 pezzi/minuto, o arresto di emergenza di un robot industriale), 200 ms possono essere insufficienti o persino pericolosi."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il cloud non può gestire più di 100 dispositivi IoT contemporaneamente",
+          "feedback": "Non è corretto. Il cloud è scalabile e gestisce miliardi di connessioni simultanee. Il limite del cloud per IoT real-time non è la capacità, ma la latenza introdotta dal trasferimento dei dati dal dispositivo al server remoto e ritorno.",
+          "riferimento": "📖 ESPLORA — Edge computing"
+        },
+        {
+          "id": "d",
+          "testo": "Perché le leggi sulla protezione dei dati vietano di inviare dati IoT al cloud",
+          "feedback": "Non è corretto. Le normative (GDPR, NIS2) regolamentano il trattamento dei dati personali ma non vietano l'uso del cloud in generale. Il vantaggio tecnico dell'edge è la riduzione della latenza, non una questione normativa.",
+          "riferimento": "📖 ESPLORA — Edge computing"
+        }
+      ],
+      "spiegazione": "La latenza del cloud per applicazioni IoT real-time: un pacchetto di dati da un sensore industriale che va a un server cloud in un datacenter remoto e torna con la decisione impiega tipicamente 20-200 ms. Per un robot industriale che lavora a 2000 operazioni/minuto, 100 ms di ritardo equivale a 3 operazioni eseguite prima che la decisione arrivi. L'edge computing (elaborazione sul dispositivo stesso o su un gateway locale) riduce la latenza a 1-5 ms. Applicazioni critiche: veicoli autonomi, chirurgia robotica remota, controllo qualità industriale ad alta velocità.",
+      "riferimento_principale": "📖 ESPLORA — Edge computing"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Come si sceglie la frequenza di campionamento ottimale per un sensore IoT che misura vibrazioni di un motore industriale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si usa sempre la frequenza massima supportata dall'ADC per avere la massima qualità possibile",
+          "feedback": "Non è corretto. Usare la frequenza massima produce volumi enormi di dati inutili se le frequenze di interesse sono più basse, e aumenta il consumo energetico. La frequenza ottimale è determinata dal Teorema di Nyquist: almeno il doppio della frequenza massima del segnale da misurare.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        },
+        {
+          "id": "b",
+          "testo": "La frequenza deve essere almeno il doppio della frequenza massima delle vibrazioni da rilevare (Teorema di Nyquist-Shannon)",
+          "corretto": true,
+          "feedback": "Esatto! Il Teorema di Nyquist-Shannon stabilisce che per rappresentare fedelmente un segnale con frequenza massima f_max, si deve campionare ad almeno 2×f_max. Se le vibrazioni anomale di un motore si manifestano a frequenze fino a 5000 Hz, servono almeno 10.000 campioni/secondo. Campionare meno crea 'aliasing': frequenze fittizie che non corrispondono alle vibrazioni reali."
+        },
+        {
+          "id": "c",
+          "testo": "Si usa la frequenza minima che consenta al trasmettitore di inviare tutti i dati al cloud in tempo reale",
+          "feedback": "Non è corretto. La frequenza di campionamento si determina in base alle caratteristiche del segnale fisico da misurare (Teorema di Nyquist), non dalla capacità di trasmissione. Se la banda è insufficiente, si usa l'edge computing per elaborare localmente i dati senza trasmetterli tutti.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        },
+        {
+          "id": "d",
+          "testo": "Si usa la stessa frequenza di campionamento per tutti i tipi di sensori, in modo da standardizzare il sistema",
+          "feedback": "Non è corretto. La frequenza ottimale dipende dal segnale specifico. Un sensore di temperatura può bastare con 1 campione/minuto; un sensore di vibrazioni per rilevare guasti dei cuscinetti può richiedere 50.000 campioni/secondo. Standardizzare significa o sprecare risorse o perdere informazioni.",
+          "riferimento": "📖 ESPLORA — ADC e campionamento"
+        }
+      ],
+      "spiegazione": "Il Teorema di Nyquist-Shannon: la frequenza di campionamento deve essere almeno il doppio della frequenza massima del segnale (frequenza di Nyquist). Per un motore con anomalie alle frequenze delle pale (es. fino a 5 kHz): frequenza di campionamento minima = 10.000 Hz (10 kSa/s). Campionare meno causa aliasing: frequenze alte sembrano frequenze basse fittizie, rendendo impossibile diagnosticare correttamente il guasto. In pratica si usa 2,5-5× la frequenza di Nyquist per margine di sicurezza.",
+      "riferimento_principale": "📖 ESPLORA — ADC e campionamento"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Quale affermazione descrive correttamente il principale trade-off nella scelta tra protocolli IoT ad alta banda (Wi-Fi/5G) e a bassa potenza (Zigbee/LoRaWAN) per una smart city?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "I protocolli ad alta banda sono sempre preferibili perché i costi di batteria sono trascurabili nelle smart city",
+          "feedback": "Non è corretto. In una smart city i sensori sono migliaia o milioni. Sostituire o ricaricare le batterie di ogni sensore Wi-Fi ogni pochi mesi è operativamente impossibile. I protocolli a bassa potenza (LoRaWAN, Zigbee) con batterie da anni sono l'unica soluzione pratica per sensori remoti su larga scala.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "b",
+          "testo": "Alta banda = maggiore consumo energetico e breve raggio; bassa potenza = minore consumo energetico e lungo raggio; la scelta dipende da quantità di dati e autonomia richiesta",
+          "corretto": true,
+          "feedback": "Esatto! Il trade-off fondamentale: Wi-Fi/5G offrono alta banda (Mbps/Gbps) per dati ricchi (video, audio, dati frequenti), ma consumano molto e hanno raggio limitato. Zigbee/LoRaWAN offrono bassissimo consumo (batterie anni) e lungo raggio (LoRa fino a 15 km), ma bassa banda (kbps). Per una smart city: telecamere di sorveglianza → 5G/Wi-Fi; sensori di qualità dell'aria → LoRaWAN."
+        },
+        {
+          "id": "c",
+          "testo": "Nella smart city si usa sempre un solo protocollo per semplificare l'infrastruttura",
+          "feedback": "Non è corretto. Le smart city reali usano più protocolli in parallelo per diversi use case: LoRaWAN per sensori remoti di lunga durata, Wi-Fi/5G per telecamere e sistemi ad alta banda, Zigbee per domotica, NB-IoT per contatori intelligenti. L'eterogeneità è una caratteristica, non un difetto.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        },
+        {
+          "id": "d",
+          "testo": "I protocolli a bassa potenza trasmettono dati più accurati perché campionano più frequentemente",
+          "feedback": "Non è corretto. La precisione dei dati dipende dall'ADC e dal sensore, non dal protocollo di comunicazione. I protocolli a bassa potenza trasmettono meno dati (per risparmiare energia), non dati più accurati. La frequenza di campionamento è una scelta di progetto indipendente dal protocollo di trasmissione.",
+          "riferimento": "📖 ESPLORA — Protocolli IoT"
+        }
+      ],
+      "spiegazione": "Il progetto di una smart city usa protocolli diversi per use case diversi: Telecamere di sicurezza → 5G (alta banda, bassa latenza, mobilità). Sensori di qualità dell'aria → LoRaWAN (batterie anni, copertura chilometrica). Smart meter (contatori intelligenti) → NB-IoT (penetrazione indoor, bassa potenza). Semafori intelligenti → fibra ottica + 5G (latenza minima per safety). Parking sensors → Sigfox o LoRaWAN (bassissimo consumo, pochi dati). Il progettista sceglie il protocollo in base a: quantità di dati, latenza richiesta, durata batteria, copertura necessaria, costo.",
+      "riferimento_principale": "📖 ESPLORA — Protocolli IoT"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Come riduce il Digital Twin i costi di manutenzione in un impianto industriale rispetto alla manutenzione tradizionale a calendario?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Elimina completamente la necessità di tecnici specializzati perché il gemello digitale esegue automaticamente le riparazioni",
+          "feedback": "Non è corretto. Il Digital Twin non esegue riparazioni fisiche — è un modello software. L'intervento fisico dei tecnici rimane necessario. Il vantaggio è che i tecnici intervengono al momento giusto e con le parti di ricambio corrette, riducendo sprechi e downtime.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        },
+        {
+          "id": "b",
+          "testo": "Permette di intervenire solo quando il guasto è effettivamente previsto (manutenzione predittiva), evitando sia interventi preventivi inutili sia fermi macchina non pianificati",
+          "corretto": true,
+          "feedback": "Esatto! La manutenzione tradizionale è a calendario (es. cambio olio ogni 3 mesi, indipendentemente dallo stato). Il Digital Twin permette la manutenzione predittiva: si interviene quando il modello prevede che il guasto avverrà a breve, evitando interventi prematuri (spreco) e guasti improvvisi (downtime costoso)."
+        },
+        {
+          "id": "c",
+          "testo": "Riduce i costi acquistando parti di ricambio in quantità maggiore grazie alle previsioni di guasto",
+          "feedback": "Non è corretto. Gli sconti per acquisto in quantità sono un effetto secondario e non garantito. Il risparmio principale del Digital Twin è la riduzione del downtime non pianificato (che nei settori industriali può costare decine di migliaia di euro/ora) e l'ottimizzazione degli interventi di manutenzione.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        },
+        {
+          "id": "d",
+          "testo": "Riduce i costi perché il gemello digitale può essere usato da tecnici non specializzati invece di ingegneri costosi",
+          "feedback": "Non è corretto. I Digital Twin richiedono competenze specializzate per la configurazione, la calibrazione e l'interpretazione dei risultati. Non sostituiscono le competenze tecniche — le potenziano. Il risparmio viene dalla riduzione dei guasti improvvisi e dall'ottimizzazione degli interventi.",
+          "riferimento": "📖 ESPLORA — Digital Twin"
+        }
+      ],
+      "spiegazione": "Confronto tra strategie di manutenzione: 1) Reattiva: si interviene dopo il guasto → costo alto per fermo macchina non pianificato. 2) Preventiva a calendario: si interviene periodicamente indipendentemente dallo stato → sprechi di parti e manodopera ancora funzionanti. 3) Predittiva con Digital Twin: si interviene quando il modello prevede il guasto imminente → si sostituisce solo ciò che sta per guastarsi, si pianifica l'intervento durante una finestra di manutenzione programmata. Risultati documentati: -25-40% costi manutenzione, -70% downtime non pianificati, +20-25% vita utile delle macchine.",
+      "riferimento_principale": "📖 ESPLORA — Digital Twin"
+    }
+  ]
+}

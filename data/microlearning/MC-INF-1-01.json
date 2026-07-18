@@ -1,0 +1,65 @@
+{
+  "mc_id": "MC-INF-1-01",
+  "generated_by": "agente_microlearning_v1.0",
+  "score": 90,
+  "decisione": "APPROVATO",
+  "checklist": {
+    "titolo": "L'archivio fotografico della nostra scuola",
+    "istruzione": "La tua scuola vuole digitalizzare 200 foto storiche degli anni '70. Usa questa checklist per capire quanto spazio serve e come funziona davvero una foto digitale.",
+    "voci": [
+      "Ho capito che un'immagine digitale è una griglia di punti (pixel) e ho contato quanti pixel ha una foto scattata con il telefono di casa.",
+      "Ho identificato i tre valori RGB (rosso, verde, blu) di almeno un pixel in un'immagine, usando uno strumento online di color picker.",
+      "Ho convertito il numero 255 in binario (11111111) e ho spiegato perché 8 bit bastano a rappresentare tutti i colori di un canale RGB.",
+      "Ho calcolato la dimensione teorica (non compressa) di una foto da 12 megapixel: pixel × 3 byte × 8 bit.",
+      "Ho confrontato la dimensione teorica con quella reale di un file JPEG, e ho scritto perché sono così diverse.",
+      "Ho stimato lo spazio necessario per archiviare 200 foto storiche scansionate a 300 DPI e ho suggerito il formato di file più adatto."
+    ]
+  },
+  "process": {
+    "titolo": "Come il tuo telefono trasforma una foto in 36 milioni di numeri",
+    "steps": [
+      {
+        "numero": 1,
+        "titolo": "Lo scatto — il sensore cattura la luce",
+        "attore": "Sensore CMOS della fotocamera",
+        "domanda": "Quando premi il tasto di scatto, cosa sta davvero catturando il telefono: colori, luce o qualcos'altro?",
+        "impatto": "Il sensore di un iPhone 15 ha 48 milioni di fotodiodi: ognuno misura l'intensità della luce in un punto preciso in meno di 1/1000 di secondo."
+      },
+      {
+        "numero": 2,
+        "titolo": "Pixel — la luce diventa una griglia di punti",
+        "attore": "Processore immagine (ISP)",
+        "domanda": "Se stampassi la tua foto al naturale senza elaborazione, come apparirebbe? Perché il sensore vede il mondo in modo diverso dall'occhio umano?",
+        "impatto": "Ogni fotodiodo è coperto da un filtro colorato (rosso, verde o blu): la foto grezza è una scacchiera di colori chiamata pattern Bayer, non un'immagine normale."
+      },
+      {
+        "numero": 3,
+        "titolo": "RGB — tre numeri per ogni punto di colore",
+        "attore": "Algoritmo di demosaicing dell'ISP",
+        "domanda": "Quanti numeri ci vogliono per descrivere esattamente il colore di un singolo pixel di una foto a colori?",
+        "impatto": "Tre valori (R, G, B) da 0 a 255: bastano 16,7 milioni di combinazioni diverse per rappresentare tutti i colori visibili dall'occhio umano."
+      },
+      {
+        "numero": 4,
+        "titolo": "Binario — ogni numero diventa una sequenza di 0 e 1",
+        "attore": "Sistema binario del processore",
+        "domanda": "Il processore del tuo telefono non capisce i numeri come li intendiamo noi. Come fa a rappresentare il numero 200 con solo due simboli?",
+        "impatto": "Il numero 200 in binario è 11001000: 8 bit per un solo valore, 24 bit per un pixel RGB, 72 miliardi di bit per una foto da 3 megapixel non compressa."
+      },
+      {
+        "numero": 5,
+        "titolo": "Compressione — eliminare quello che l'occhio non vede",
+        "attore": "Algoritmo JPEG / HEIC",
+        "domanda": "Se una foto da 12 megapixel non compressa pesa 36 MB, come fa a diventare un file da 3 MB senza che tu noti la differenza?",
+        "impatto": "L'algoritmo JPEG elimina i dettagli di colore che l'occhio umano percepisce meno: riduce il file del 90% con una perdita di qualità quasi impercettibile."
+      },
+      {
+        "numero": 6,
+        "titolo": "Trasmissione — i bit viaggiano verso il cloud",
+        "attore": "Stack di rete Wi-Fi / 5G",
+        "domanda": "Quando condividi una foto su WhatsApp, quanti bit attraversano l'aria tra il tuo telefono e il router in un secondo?",
+        "impatto": "Un Wi-Fi 6 trasmette fino a 9,6 gigabit al secondo: una foto da 3 MB si trasferisce in meno di 3 millisecondi. Il collo di bottiglia è quasi sempre la connessione internet, non il Wi-Fi domestico."
+      }
+    ]
+  }
+}

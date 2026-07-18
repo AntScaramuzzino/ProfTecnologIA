@@ -1,0 +1,600 @@
+{
+  "mc_id": "MC-INF-3-02",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Cosa distingue il Machine Learning dalla programmazione tradizionale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il Machine Learning usa computer più veloci rispetto alla programmazione tradizionale",
+          "feedback": "Non è corretto. La velocità del computer non è la distinzione tra ML e programmazione tradizionale. La differenza fondamentale riguarda come si ottiene il comportamento desiderato: con regole esplicite (programmazione tradizionale) o con l'apprendimento da esempi (ML).",
+          "riferimento": "📖 ESPLORA — Cos'è il Machine Learning"
+        },
+        {
+          "id": "b",
+          "testo": "Nel ML il sistema apprende da esempi e ottimizza le proprie prestazioni su dati, invece di seguire regole esplicite programmate",
+          "corretto": true,
+          "feedback": "Esatto! Nella programmazione tradizionale lo sviluppatore scrive regole esplicite ('SE spam ALLORA...'). Nel ML il sistema riceve esempi (email spam e non spam) e 'impara' da soli le regole che le distinguono, senza che nessuno le abbia codificate esplicitamente."
+        },
+        {
+          "id": "c",
+          "testo": "Il ML funziona solo su testi e immagini, la programmazione tradizionale su tutti i tipi di dati",
+          "feedback": "Non è corretto. Il ML si applica a dati di qualsiasi tipo: testo, immagini, audio, video, dati numerici, serie temporali, grafi. Non è limitato a testo e immagini.",
+          "riferimento": "📖 ESPLORA — Cos'è il Machine Learning"
+        },
+        {
+          "id": "d",
+          "testo": "Il ML richiede una connessione internet permanente, la programmazione tradizionale no",
+          "feedback": "Non è corretto. I modelli ML una volta addestrati possono funzionare completamente offline (es. riconoscimento vocale on-device su smartphone). La connessione internet non è una caratteristica discriminante.",
+          "riferimento": "📖 ESPLORA — Cos'è il Machine Learning"
+        }
+      ],
+      "spiegazione": "Nella programmazione tradizionale il programmatore scrive regole esplicite (if-then-else) che definiscono il comportamento del sistema. Nel Machine Learning il sistema riceve dati di esempio (training data) e apprende autonomamente i pattern che permettono di generalizzare su nuovi dati. Il ML non 'pensa' — ottimizza una funzione matematica su dati, trovando parametri che minimizzano l'errore sugli esempi.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è il Machine Learning"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Qual è la caratteristica che definisce il Machine Learning supervisionato?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il modello impara senza dati: crea da solo le regole basandosi solo sull'algoritmo",
+          "feedback": "Non è corretto. Nessun tipo di ML impara senza dati. Il ML supervisionato impara da dati etichettati (input con l'output corretto già noto). Il ML non supervisionato impara da dati non etichettati trovando pattern.",
+          "riferimento": "📖 ESPLORA — ML supervisionato"
+        },
+        {
+          "id": "b",
+          "testo": "I dati di addestramento sono etichettati: ogni esempio ha l'output corretto già noto",
+          "corretto": true,
+          "feedback": "Esatto! Nel ML supervisionato ogni esempio di training ha un'etichetta che indica la risposta corretta. Esempio: migliaia di email già classificate come 'spam' o 'non spam'. Il modello impara ad associare le caratteristiche dell'input alla risposta giusta e generalizza su nuovi dati."
+        },
+        {
+          "id": "c",
+          "testo": "Un supervisore umano controlla ogni predizione del modello e la corregge in tempo reale",
+          "feedback": "Non è corretto. 'Supervisionato' non significa che un umano supervisiona ogni predizione in tempo reale — si riferisce al tipo di dati usati per l'addestramento: esempi già etichettati con la risposta corretta. Dopo l'addestramento il modello opera autonomamente.",
+          "riferimento": "📖 ESPLORA — ML supervisionato"
+        },
+        {
+          "id": "d",
+          "testo": "Il modello viene addestrato solo su dati prodotti da altri modelli ML, non da umani",
+          "feedback": "Non è corretto. Quella descritta è una pratica emergente (modelli addestrati su dati sintetici o generati da altri modelli), ma non è la definizione di ML supervisionato. Il ML supervisionato usa dati etichettati da umani (o processi affidabili) che indicano la risposta corretta.",
+          "riferimento": "📖 ESPLORA — ML supervisionato"
+        }
+      ],
+      "spiegazione": "Il ML supervisionato usa dati di training etichettati: ogni esempio (x) ha un'etichetta corrispondente (y) che indica la risposta corretta. Il modello impara a mappare x→y. Esempi: classificazione email (spam/non spam), riconoscimento di immagini (gatto/cane), previsione del prezzo delle case (dato metratura, zona...). L'obiettivo è generalizzare: predire y correttamente su nuovi dati x mai visti prima.",
+      "riferimento_principale": "📖 ESPLORA — ML supervisionato"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Cos'è un dataset nel contesto del Machine Learning?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il programma software che esegue l'algoritmo di Machine Learning",
+          "feedback": "Non è corretto. Il programma software è l'implementazione dell'algoritmo (es. in Python con TensorFlow o PyTorch). Il dataset è la raccolta di dati usata per addestrare e valutare il modello.",
+          "riferimento": "📖 ESPLORA — Cos'è il Machine Learning"
+        },
+        {
+          "id": "b",
+          "testo": "Un insieme strutturato di dati usato per addestrare, validare e testare un modello ML",
+          "corretto": true,
+          "feedback": "Esatto! Un dataset è una raccolta strutturata di esempi usata nelle diverse fasi del ML: training set (per addestrare il modello), validation set (per ottimizzare i parametri) e test set (per valutare le prestazioni finali su dati mai visti). La qualità del dataset determina la qualità del modello."
+        },
+        {
+          "id": "c",
+          "testo": "Il risultato finale prodotto da un modello ML dopo l'addestramento",
+          "feedback": "Non è corretto. Il risultato prodotto dal modello si chiama output o predizione. Il dataset è la raccolta di dati di input (con le etichette nel ML supervisionato) usata per costruire il modello.",
+          "riferimento": "📖 ESPLORA — Cos'è il Machine Learning"
+        },
+        {
+          "id": "d",
+          "testo": "La memoria RAM utilizzata dal modello durante l'addestramento",
+          "feedback": "Non è corretto. La RAM è la memoria hardware dove i calcoli vengono eseguiti. Il dataset è la raccolta di dati (esempi, etichette, features) che viene usata per costruire e valutare il modello ML.",
+          "riferimento": "📖 ESPLORA — Cos'è il Machine Learning"
+        }
+      ],
+      "spiegazione": "Un dataset ML è un insieme strutturato di esempi, tipicamente diviso in: 1) Training set (60-80%): usato per addestrare il modello — il modello 'vede' questi dati e aggiusta i suoi parametri. 2) Validation set (10-20%): usato per ottimizzare gli iperparametri e monitorare l'overfitting durante l'addestramento. 3) Test set (10-20%): usato una sola volta alla fine per valutare le prestazioni reali del modello su dati mai visti. La qualità del dataset (quantità, diversità, correttezza delle etichette) è il fattore più importante per la qualità del modello.",
+      "riferimento_principale": "📖 ESPLORA — Cos'è il Machine Learning"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'bias algoritmico' in un modello di Machine Learning?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un errore matematico nell'algoritmo che causa calcoli sbagliati",
+          "feedback": "Non è corretto. Un errore matematico nell'algoritmo è un bug di programmazione, non un bias algoritmico. Il bias algoritmico è una distorsione sistematica nelle predizioni del modello causata da squilibri o discriminazioni nei dati di training.",
+          "riferimento": "📖 ESPLORA — Bias algoritmico"
+        },
+        {
+          "id": "b",
+          "testo": "Una distorsione sistematica nelle predizioni del modello causata da squilibri o discriminazioni nei dati di training",
+          "corretto": true,
+          "feedback": "Esatto! Se i dati di training riflettono discriminazioni storiche (es. un dataset di curriculum con candidati assunti prevalentemente maschi), il modello le amplifica: imparerà a preferire i curriculum maschili anche per posizioni dove il genere non è rilevante. Il modello amplifica le distorsioni dei dati."
+        },
+        {
+          "id": "c",
+          "testo": "La tendenza del modello a preferire dati numerici rispetto a dati testuali",
+          "feedback": "Non è corretto. La preferenza per tipi di dati diversi è una caratteristica dell'architettura del modello, non il bias algoritmico. Il bias algoritmico è una distorsione sistematica nelle predizioni che riflette squilibri nei dati di training.",
+          "riferimento": "📖 ESPLORA — Bias algoritmico"
+        },
+        {
+          "id": "d",
+          "testo": "Il tempo aggiuntivo necessario per addestrare il modello quando il dataset è molto grande",
+          "feedback": "Non è corretto. Il tempo di addestramento su dataset grandi è una questione computazionale, non di bias. Il bias algoritmico è una distorsione sistematica nelle predizioni causata da dati sbilanciati o discriminatori nel training set.",
+          "riferimento": "📖 ESPLORA — Bias algoritmico"
+        }
+      ],
+      "spiegazione": "Il bias algoritmico si verifica quando il modello ML eredita e amplifica le distorsioni presenti nei dati di training. Esempi documentati: sistemi di riconoscimento facciale con tassi di errore più alti per persone con pelle scura (addestrati su dataset prevalentemente con persone bianche); sistemi di valutazione del credito che discriminano per zona geografica; algoritmi di selezione del personale che penalizzano le donne. La soluzione richiede dataset più bilanciati e tecniche di fairness nel training.",
+      "riferimento_principale": "📖 ESPLORA — Bias algoritmico"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Cosa ha reso AlphaGo famoso nel 2016?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È stato il primo programma a vincere un torneo di scacchi contro un campione del mondo",
+          "feedback": "Non è corretto. Negli scacchi il traguardo fu raggiunto da Deep Blue (IBM) nel 1997 contro Kasparov. AlphaGo è famoso per una sfida diversa: ha vinto contro il campione mondiale di Go nel 2016.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo e AlphaGo"
+        },
+        {
+          "id": "b",
+          "testo": "Ha sconfitto il campione mondiale di Go, un gioco di strategia considerato troppo complesso per le macchine",
+          "corretto": true,
+          "feedback": "Esatto! AlphaGo (DeepMind/Google) ha sconfitto Lee Sedol, campione mondiale di Go, 4 a 1. Go era considerato il bastione dell'intelligenza umana contro le macchine: ha 10¹⁷⁰ possibili posizioni (più atomi dell'universo osservabile) e richiede intuizione strategica che si pensava impossibile da formalizzare."
+        },
+        {
+          "id": "c",
+          "testo": "Ha prodotto la prima immagine digitale generata interamente da un'intelligenza artificiale",
+          "feedback": "Non è corretto. Le prime immagini generate da AI risalgono agli anni '60-'70. AlphaGo è celebre per la vittoria contro il campione mondiale di Go nel 2016, usando un'architettura di reinforcement learning combinata con deep learning.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo e AlphaGo"
+        },
+        {
+          "id": "d",
+          "testo": "Ha superato il test di Turing conversando con umani in modo indistinguibile da una persona reale",
+          "feedback": "Non è corretto. Il test di Turing valuta la capacità conversazionale. AlphaGo è un sistema specializzato per giocare a Go — non ha capacità conversazionali. La sua celebrità deriva dalla vittoria contro il campione mondiale di Go nel 2016.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo e AlphaGo"
+        }
+      ],
+      "spiegazione": "AlphaGo (DeepMind, 2016) ha battuto Lee Sedol 4-1 al Go. Il Go era considerato troppo complesso per le macchine perché il numero di possibili partite supera il numero di atomi nell'universo osservabile. AlphaGo usava reinforcement learning (imparare giocando contro se stesso) combinato con deep learning (reti neurali profonde per valutare le posizioni). AlphaZero (2017) ha migliorato ulteriormente il metodo: ha imparato solo giocando contro se stesso, senza dati di partite umane.",
+      "riferimento_principale": "📖 ESPLORA — ML per rinforzo e AlphaGo"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Cosa si intende per 'allucinazione' in un modello di AI generativa?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quando il modello produce immagini con colori o forme distorte",
+          "feedback": "Non è corretto. Le distorsioni nelle immagini generate sono artefatti visivi, non allucinazioni. Le 'allucinazioni' dell'AI si riferiscono specificamente alla generazione di testo che afferma fatti falsi con apparente sicurezza.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+        },
+        {
+          "id": "b",
+          "testo": "Quando il modello genera informazioni false o inesistenti presentandole con sicurezza come se fossero vere",
+          "corretto": true,
+          "feedback": "Esatto! Un'allucinazione dell'AI si verifica quando il modello genera testo che afferma fatti falsi, cita articoli scientifici inesistenti, inventa biografie o dati, ma lo fa con la stessa sicurezza con cui fornirebbe informazioni corrette. Il modello non 'mente' consapevolmente: genera ciò che statisticamente appare plausibile."
+        },
+        {
+          "id": "c",
+          "testo": "Quando il modello si rifiuta di rispondere a domande difficili",
+          "feedback": "Non è corretto. Rifiutarsi di rispondere a domande problematiche è un comportamento di sicurezza (guardrail) deliberato, non un'allucinazione. L'allucinazione è il contrario: il modello risponde con sicurezza fornendo informazioni false.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+        },
+        {
+          "id": "d",
+          "testo": "Quando il modello impara troppo dai dati di training e non riesce a generalizzare",
+          "feedback": "Non è corretto. Quello descritto è l'overfitting, un problema di generalizzazione. Le allucinazioni sono specifiche dell'AI generativa: il modello produce informazioni false presentate come vere, senza alcun meccanismo interno di verifica dei fatti.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+        }
+      ],
+      "spiegazione": "Le allucinazioni dell'AI sono un limite fondamentale dei modelli linguistici generativi: producono testo statisticamente plausibile ma fatalmente non vincolato alla verità. Il modello non ha accesso a un database di fatti verificati — genera sequenze di token basandosi su pattern statistici nei dati di training. Risultato: può citare articoli scientifici mai pubblicati, attribuire citazioni a persone che non le hanno mai dette, inventare date o statistiche. È fondamentale verificare sempre le affermazioni fattuali prodotte dall'AI.",
+      "riferimento_principale": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "Qual è la differenza tra ML supervisionato e non supervisionato?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il supervisionato usa grandi quantità di dati, il non supervisionato usa pochi dati",
+          "feedback": "Non è corretto. La distinzione non riguarda la quantità di dati. Il ML supervisionato usa dati etichettati (con risposta corretta nota); il non supervisionato usa dati non etichettati e cerca autonomamente strutture e pattern nei dati.",
+          "riferimento": "📖 ESPLORA — ML non supervisionato"
+        },
+        {
+          "id": "b",
+          "testo": "Il supervisionato usa dati etichettati per predire output; il non supervisionato trova pattern nei dati senza etichette",
+          "corretto": true,
+          "feedback": "Esatto! ML supervisionato: dati etichettati (input+output corretto), obiettivo predire l'output su nuovi dati. ML non supervisionato: solo input senza etichette, l'algoritmo trova autonomamente strutture, gruppi (clustering) o rappresentazioni nei dati senza sapere cosa cercare."
+        },
+        {
+          "id": "c",
+          "testo": "Il supervisionato è sempre più accurato del non supervisionato per qualsiasi problema",
+          "feedback": "Non è corretto. La scelta tra supervisionato e non supervisionato dipende dal problema e dalla disponibilità di etichette, non da una superiorità assoluta. Il non supervisionato è l'unica opzione quando le etichette non esistono o sono troppo costose da produrre.",
+          "riferimento": "📖 ESPLORA — ML non supervisionato"
+        },
+        {
+          "id": "d",
+          "testo": "Il non supervisionato richiede un supervisore umano che guida il modello durante ogni iterazione",
+          "feedback": "Non è corretto. 'Non supervisionato' significa l'opposto: nessun supervisore umano guida l'apprendimento. L'algoritmo trova autonomamente strutture nei dati senza feedback esterno su cosa è giusto o sbagliato.",
+          "riferimento": "📖 ESPLORA — ML non supervisionato"
+        }
+      ],
+      "spiegazione": "ML supervisionato (supervised): usa dati etichettati (input + output corretto). Obiettivo: imparare a predire y dato x. Esempi: classificazione spam, riconoscimento immagini, previsione prezzi. ML non supervisionato (unsupervised): usa solo input non etichettati. Obiettivo: trovare strutture nascoste nei dati. Esempi: clustering (raggruppare clienti simili), riduzione della dimensionalità (PCA), anomaly detection. ML per rinforzo (RL): un agente impara tramite interazione con un ambiente, ricevendo ricompense o penalità.",
+      "riferimento_principale": "📖 ESPLORA — ML non supervisionato"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "Come funziona una rete neurale artificiale nella sua struttura di base?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Imita il cervello umano con neuroni biologici connessi tramite sinapsi fisiche",
+          "feedback": "Non è corretto. Le reti neurali artificiali si ispirano vagamente al cervello, ma non lo imitano fisicamente. I neuroni artificiali sono funzioni matematiche (somma pesata + funzione di attivazione), non componenti biologici.",
+          "riferimento": "📖 ESPLORA — Reti neurali"
+        },
+        {
+          "id": "b",
+          "testo": "Trasforma l'input attraverso strati di nodi (neuroni artificiali con pesi) producendo un output",
+          "corretto": true,
+          "feedback": "Esatto! Una rete neurale ha: strato di input (riceve i dati), strati nascosti (hidden layers, che trasformano i dati tramite neuroni artificiali con pesi e funzioni di attivazione), strato di output (produce il risultato). Durante il training, i pesi vengono aggiustati per minimizzare l'errore."
+        },
+        {
+          "id": "c",
+          "testo": "Usa un database di regole if-then programmate manualmente per ogni possibile input",
+          "feedback": "Non è corretto. I sistemi basati su regole if-then sono i sistemi esperti tradizionali, non le reti neurali. Le reti neurali apprendono i propri 'pesi' automaticamente dai dati, senza regole programmate manualmente.",
+          "riferimento": "📖 ESPLORA — Reti neurali"
+        },
+        {
+          "id": "d",
+          "testo": "Memorizza tutti gli esempi del training set e restituisce il risultato dell'esempio più simile",
+          "feedback": "Non è corretto. Memorizzare tutti gli esempi e trovare il più simile è l'algoritmo k-Nearest Neighbors (kNN), non una rete neurale. Le reti neurali generalizzano: imparano rappresentazioni interne (i pesi) che catturano i pattern nei dati.",
+          "riferimento": "📖 ESPLORA — Reti neurali"
+        }
+      ],
+      "spiegazione": "Una rete neurale artificiale è composta da: Input layer (riceve i dati grezzi: pixel, parole, numeri), Hidden layer(s) (ogni neurone calcola una somma pesata degli input + applica una funzione di attivazione non lineare come ReLU o sigmoid), Output layer (produce la predizione finale: una classe, un numero, una probabilità). Durante il training, l'algoritmo di backpropagation aggiusta i pesi per minimizzare l'errore del modello. Il deep learning usa molti strati nascosti.",
+      "riferimento_principale": "📖 ESPLORA — Reti neurali"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Come funziona il Machine Learning per rinforzo e in quale scenario è più adatto?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Un agente impara da un dataset di esempi etichettati da esperti umani del settore",
+          "feedback": "Non è corretto. Quello descritto è il ML supervisionato, non il rinforzo. Il ML per rinforzo non usa dati etichettati: l'agente impara interagendo direttamente con un ambiente, ricevendo ricompense o penalità per le sue azioni.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo"
+        },
+        {
+          "id": "b",
+          "testo": "Un agente impara tramite interazione con un ambiente: riceve ricompense per azioni corrette e penalità per quelle sbagliate",
+          "corretto": true,
+          "feedback": "Esatto! Nel reinforcement learning (RL) un agente esegue azioni in un ambiente, osserva lo stato risultante e riceve una ricompensa (positiva o negativa). L'obiettivo è massimizzare la ricompensa cumulativa nel tempo. Non ci sono etichette — solo feedback dall'ambiente. Adatto per problemi sequenziali dove non esiste una risposta predefinita."
+        },
+        {
+          "id": "c",
+          "testo": "Un agente trova automaticamente i cluster nei dati senza supervisione umana",
+          "feedback": "Non è corretto. Trovare cluster senza supervisione è il clustering non supervisionato. Il ML per rinforzo usa invece la dinamica agente-ambiente-ricompensa: l'agente interagisce con il mondo e impara dalle conseguenze delle sue azioni.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo"
+        },
+        {
+          "id": "d",
+          "testo": "Un agente crea i propri dati di training sintetici per ridurre i costi di etichettatura",
+          "feedback": "Non è corretto. La generazione di dati sintetici è una tecnica di data augmentation usata in vari contesti. Il ML per rinforzo si basa sull'interazione con un ambiente (reale o simulato) e sul meccanismo di ricompensa, non sulla generazione di dati sintetici.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo"
+        }
+      ],
+      "spiegazione": "Il Reinforcement Learning (RL) modella l'apprendimento per prove ed errori: un Agente osserva lo Stato dell'Ambiente, compie un'Azione, riceve una Ricompensa e aggiorna la sua Politica per massimizzare la ricompensa cumulativa futura. Scenari ideali: giochi (Go, scacchi, videogiochi), robotica, ottimizzazione di sistemi complessi (trading, gestione energetica), veicoli autonomi. Non richiede dati etichettati da umani, ma richiede un ambiente (reale o simulato) con cui interagire.",
+      "riferimento_principale": "📖 ESPLORA — ML per rinforzo"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Cosa si intende per 'overfitting' in un modello di Machine Learning?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il modello usa troppa memoria RAM e rallenta il computer durante l'addestramento",
+          "feedback": "Non è corretto. L'overfitting è un concetto di apprendimento automatico, non di consumo di risorse. Riguarda le prestazioni del modello: alta accuratezza sui dati di training, bassa accuratezza su dati nuovi.",
+          "riferimento": "📖 ESPLORA — Overfitting e underfitting"
+        },
+        {
+          "id": "b",
+          "testo": "Il modello impara troppo specificamente i dati di training (incluso il rumore) e non generalizza su dati nuovi",
+          "corretto": true,
+          "feedback": "Esatto! In overfitting il modello 'memorizza' i dati di training (inclusi gli errori e il rumore) invece di imparare i pattern generali. Risultato: accuratezza altissima sul training set, accuratezza molto bassa su dati mai visti. È come uno studente che memorizza le domande passate invece di capire il concetto."
+        },
+        {
+          "id": "c",
+          "testo": "Il modello ha troppi pochi parametri per catturare i pattern nei dati",
+          "feedback": "Non è corretto. Quello descritto è l'underfitting: il modello è troppo semplice e non riesce a catturare i pattern nei dati. L'overfitting è il problema opposto: il modello è troppo complesso e si adatta troppo ai dati di training, incluso il rumore.",
+          "riferimento": "📖 ESPLORA — Overfitting e underfitting"
+        },
+        {
+          "id": "d",
+          "testo": "Il dataset di training è troppo grande e il modello impiega troppo tempo ad addestrarsi",
+          "feedback": "Non è corretto. Avere un dataset grande è generalmente positivo per il ML. L'overfitting si verifica tipicamente con dataset piccoli e modelli complessi: il modello memorizza i pochi esempi disponibili invece di generalizzare.",
+          "riferimento": "📖 ESPLORA — Overfitting e underfitting"
+        }
+      ],
+      "spiegazione": "Overfitting: il modello ha troppi parametri rispetto ai dati disponibili e 'memorizza' il training set, incluso il rumore. Risultato: training accuracy ≈ 99%, test accuracy ≈ 60% (generalizza male). Underfitting: il modello è troppo semplice e non cattura i pattern. Risultato: training accuracy ≈ 60%, test accuracy ≈ 60% (entrambe basse). La soluzione all'overfitting: più dati, regolarizzazione, dropout, early stopping, cross-validation.",
+      "riferimento_principale": "📖 ESPLORA — Overfitting e underfitting"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Qual è la differenza tra deep learning e Machine Learning tradizionale in termini di feature engineering?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il deep learning richiede più feature engineering manuale del ML tradizionale",
+          "feedback": "Non è corretto. È il contrario: il ML tradizionale tipicamente richiede feature engineering manuale (estrarre e selezionare le caratteristiche rilevanti dai dati grezzi). Il deep learning impara automaticamente le feature utili dagli strati nascosti della rete.",
+          "riferimento": "📖 ESPLORA — Deep learning"
+        },
+        {
+          "id": "b",
+          "testo": "Il deep learning impara automaticamente le feature rilevanti dai dati; il ML tradizionale richiede feature engineering manuale da parte di esperti del dominio",
+          "corretto": true,
+          "feedback": "Esatto! Nel ML tradizionale (regressione, SVM, random forest) un esperto del dominio deve estrarre manualmente le feature rilevanti dai dati grezzi (es. da un'immagine: estrarre bordi, texture, colori). Il deep learning impara automaticamente le feature utili attraverso i suoi strati nascosti."
+        },
+        {
+          "id": "c",
+          "testo": "Il ML tradizionale è sempre più veloce da addestrare del deep learning",
+          "feedback": "Non è corretto. Il tempo di addestramento dipende dalla dimensione del dataset e dalla complessità del modello. Su dataset piccoli il ML tradizionale è più veloce; ma non è questo il punto di distinzione principale riguardo al feature engineering.",
+          "riferimento": "📖 ESPLORA — Deep learning"
+        },
+        {
+          "id": "d",
+          "testo": "Il deep learning funziona solo con testi, il ML tradizionale con immagini e numeri",
+          "feedback": "Non è corretto. Il deep learning si applica a tutti i tipi di dati: immagini (CNN), testo (Transformer/BERT/GPT), audio (RNN/Transformer), dati tabellari. Il ML tradizionale si applica anch'esso a tutti i tipi di dati (con feature engineering appropriato).",
+          "riferimento": "📖 ESPLORA — Deep learning"
+        }
+      ],
+      "spiegazione": "Il ML tradizionale (SVM, random forest, gradient boosting) richiede feature engineering: esperti del dominio estraggono manualmente caratteristiche rilevanti dai dati grezzi. Per il riconoscimento di immagini: estrarre bordi, texture, istogrammi colore. Per il testo: tf-idf, n-gram. Il deep learning impara automaticamente le feature attraverso gli strati nascosti — le prime reti neurali imparano feature semplici (bordi), quelle più profonde feature complesse (forme, oggetti). Vantaggio: funziona bene con dati grezzi. Svantaggio: richiede molto più dati e potenza di calcolo.",
+      "riferimento_principale": "📖 ESPLORA — Deep learning"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Come funziona il clustering come tecnica di ML non supervisionato? Fai un esempio concreto.",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il clustering ordina i dati in ordine alfabetico e poi li divide in gruppi uguali",
+          "feedback": "Non è corretto. Il clustering non ordina i dati alfabeticamente né li divide in parti uguali. Raggruppa i dati in cluster (gruppi) in base alla loro similarità, usando misure di distanza matematiche — senza sapere a priori quanti o quali gruppi esistono.",
+          "riferimento": "📖 ESPLORA — ML non supervisionato"
+        },
+        {
+          "id": "b",
+          "testo": "Il clustering raggruppa automaticamente dati simili tra loro; es. Spotify raggruppa brani con caratteristiche simili per creare playlist personalizzate",
+          "corretto": true,
+          "feedback": "Esatto! Il clustering trova autonomamente strutture nei dati raggruppando esempi simili. Spotify usa clustering per raggruppare brani con caratteristiche simili (BPM, tono, energia, valenza) e identificare 'micro-generi'. Nessuno ha etichettato a mano i generi — il modello li ha trovati da solo."
+        },
+        {
+          "id": "c",
+          "testo": "Il clustering predice il cluster di appartenenza di nuovi dati basandosi su etichette storiche",
+          "feedback": "Non è corretto. Predire l'appartenenza a una categoria usando etichette storiche è classificazione supervisionata. Il clustering è non supervisionato: non usa etichette e scopre gruppi naturali nei dati senza avere una risposta 'corretta' di riferimento.",
+          "riferimento": "📖 ESPLORA — ML non supervisionato"
+        },
+        {
+          "id": "d",
+          "testo": "Il clustering usa internet per scaricare dati simili da siti web e aggiungerli al dataset",
+          "feedback": "Non è corretto. Il clustering è un algoritmo matematico che opera sui dati già disponibili nel dataset, non un meccanismo di acquisizione di nuovi dati da internet.",
+          "riferimento": "📖 ESPLORA — ML non supervisionato"
+        }
+      ],
+      "spiegazione": "Il clustering raggruppa dati in base alla loro similarità senza usare etichette predefinite. K-means, il più comune, assegna ogni punto al cluster il cui centro è più vicino e aggiorna iterativamente i centri. Usi reali: segmentazione clienti (raggruppa clienti simili per comportamento d'acquisto), anomaly detection (punti lontani da qualsiasi cluster), compressione immagini, scoperta di strutture nei dati genomici, personalizzazione contenuti (Spotify, Netflix).",
+      "riferimento_principale": "📖 ESPLORA — ML non supervisionato"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Perché i modelli di AI generativa tendono a 'allucinare' — generare informazioni false con apparente sicurezza?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i programmatori non hanno inserito un database di fatti verificati nell'AI",
+          "feedback": "Non è corretto. Alcuni sistemi AI integrano database di conoscenza, ma la causa fondamentale delle allucinazioni è strutturale: i modelli linguistici generativi ottimizzano la probabilità statistica del testo successivo, non la sua veridicità. Non 'sanno' cosa è vero — generano ciò che sembra plausibile.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+        },
+        {
+          "id": "b",
+          "testo": "Perché ottimizzano la probabilità statistica del testo successivo, senza un meccanismo interno di verifica dei fatti: generano ciò che sembra plausibile, non ciò che è vero",
+          "corretto": true,
+          "feedback": "Esatto! I Large Language Models (LLM) come GPT sono addestrati a predire il token successivo più probabile dato il contesto. Non hanno accesso a un 'ground truth' dei fatti del mondo — generano sequenze statisticamente plausibili. Quando mancano di informazioni, generano testo che sembra corretto stilisticamente ma può essere fattualmente falso."
+        },
+        {
+          "id": "c",
+          "testo": "Perché usano dati di training obsoleti che non includono le informazioni più recenti",
+          "feedback": "Non è corretto. L'obsolescenza dei dati causa lacune di conoscenza recente, ma non spiega le allucinazioni su fatti storici ben documentati. Le allucinazioni avvengono anche su argomenti ampiamente presenti nei dati di training. La causa è strutturale: l'ottimizzazione sulla plausibilità, non sulla verità.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i modelli AI non hanno abbastanza potenza di calcolo per verificare ogni affermazione prima di produrla",
+          "feedback": "Non è corretto. Aumentare la potenza di calcolo non risolve il problema strutturale: i modelli attuali generano testo ottimizzando la probabilità statistica, non la veridicità. La verifica dei fatti richiederebbe un'architettura diversa, con accesso a fonti esterne affidabili.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+        }
+      ],
+      "spiegazione": "I LLM (Large Language Models) sono addestrati con l'obiettivo di predire il token successivo più probabile dato il contesto (next token prediction). Non hanno un modello interno della verità — ottimizzano la fluidità e la plausibilità statistica del testo. Quando il modello 'non sa' qualcosa, non dice 'non lo so' (il token meno plausibile in molti contesti) — genera il testo più plausibile, che può essere falso. Soluzioni parziali: Retrieval Augmented Generation (RAG) che permette al modello di consultare fonti esterne, chain-of-thought prompting, verifica umana.",
+      "riferimento_principale": "📖 ESPLORA — Limiti dell'AI: allucinazioni"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Come si può ridurre il rischio di bias algoritmico in un sistema di ML usato per la selezione del personale?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Rimuovere il nome del candidato dal curriculum analizzato dal modello",
+          "feedback": "Non è corretto. Rimuovere il nome è una misura parziale di 'blind recruitment'. Ma il bias può persistere attraverso altre variabili correlate (istituto scolastico frequentato, zona geografica, attività extracurriculari). Non è sufficiente come unica misura.",
+          "riferimento": "📖 ESPLORA — Bias algoritmico"
+        },
+        {
+          "id": "b",
+          "testo": "Usare dataset bilanciati demograficamente, applicare metriche di fairness durante il training e auditare regolarmente i risultati per gruppi protetti",
+          "corretto": true,
+          "feedback": "Esatto! Ridurre il bias richiede un approccio multi-strato: 1) Dataset bilanciato: assicurare rappresentazione equa di tutti i gruppi demografici; 2) Fairness constraints nel training: ottimizzare anche per equità, non solo per accuratezza; 3) Audit periodici: analizzare le predizioni separatamente per gruppi demografici; 4) Trasparenza: rendere spiegabili le decisioni del modello."
+        },
+        {
+          "id": "c",
+          "testo": "Usare il modello ML solo come supporto decisionale, con revisione umana finale di tutte le decisioni di assunzione",
+          "feedback": "Non è del tutto sbagliato (la revisione umana è utile), ma non risponde alla domanda su come ridurre il bias nel modello ML stesso. Il bias algoritmico va affrontato alla fonte: nei dati e nell'architettura del modello, non solo aggiungendo una revisione umana che può perpetuare gli stessi bias.",
+          "riferimento": "📖 ESPLORA — Bias algoritmico"
+        },
+        {
+          "id": "d",
+          "testo": "Aumentare la dimensione del dataset: con più dati il bias si riduce automaticamente",
+          "feedback": "Non è corretto. Aumentare un dataset sbilanciato amplifica il bias, non lo riduce. Se storicamente le donne sono state sottorappresentate nelle posizioni manageriali e il dataset lo riflette, addestrare su più dati storici rafforzerà questa distorsione. Servono dati bilanciati, non solo più dati.",
+          "riferimento": "📖 ESPLORA — Bias algoritmico"
+        }
+      ],
+      "spiegazione": "Il bias algoritmico nella selezione del personale è documentato: Amazon ha dismesso nel 2018 un sistema ML per la selezione dei CV perché penalizzava sistematicamente le candidate donne (addestrato su 10 anni di assunzioni prevalentemente maschili). Le best practice: 1) Audit del dataset per bilanciamento demografico. 2) Rimozione delle feature proxy (variabili correlate a genere, etnia, classe). 3) Fairness-aware machine learning: ottimizzare anche per equità demografica. 4) Monitoraggio continuo delle decisioni per disparità. 5) Obbligo normativo (EU AI Act richiede valutazioni di conformità per sistemi AI ad alto rischio come la selezione del personale).",
+      "riferimento_principale": "📖 ESPLORA — Bias algoritmico"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Perché l'opacità dei modelli di deep learning è un problema etico in applicazioni critiche come la diagnosi medica o la concessione del credito?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché i modelli opachi sono sempre meno accurati di quelli trasparenti",
+          "feedback": "Non è corretto. Spesso accade il contrario: i modelli di deep learning (opachi) raggiungono accuratezze superiori ai modelli interpretabili (alberi di decisione, regressione logistica). Il problema dell'opacità non è l'accuratezza ma l'impossibilità di spiegare le decisioni.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: opacità"
+        },
+        {
+          "id": "b",
+          "testo": "Perché non è possibile spiegare il ragionamento della decisione, rendendo impossibile contestarla, correggerla o verificarne la correttezza",
+          "corretto": true,
+          "feedback": "Esatto! Se un modello opaco nega un mutuo o suggerisce una diagnosi sbagliata, né il paziente/cliente né il medico/banca sanno perché. Questo viola il diritto alla spiegazione (Art. 22 GDPR), rende impossibile correggere errori sistematici, e impedisce di verificare se la decisione è basata su feature legittime o su correlazioni spurie (bias)."
+        },
+        {
+          "id": "c",
+          "testo": "Perché i modelli opachi consumano più energia dei modelli trasparenti",
+          "feedback": "Non è corretto. Il consumo energetico non è il problema etico dell'opacità. Il problema è che le decisioni di modelli opachi non possono essere spiegate, contestate o verificate — critico in ambiti dove le decisioni impattano diritti fondamentali (salute, credito, libertà).",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: opacità"
+        },
+        {
+          "id": "d",
+          "testo": "Perché i modelli opachi sono più vulnerabili agli attacchi informatici",
+          "feedback": "Non è corretto. La vulnerabilità agli attacchi (adversarial examples) esiste per tutti i tipi di modelli ML, opachi o trasparenti. Il problema etico dell'opacità è l'impossibilità di spiegare, contestare e correggere le decisioni del modello.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: opacità"
+        }
+      ],
+      "spiegazione": "Il problema della 'scatola nera' (black box) nel deep learning: i modelli con milioni di parametri prendono decisioni attraverso trasformazioni matematiche complesse impossibili da tradurre in ragionamento leggibile. In applicazioni critiche: un paziente a cui viene negato un trapianto basandosi su un modello opaco non può contestare la decisione; un richiedente di credito non sa quali caratteristiche l'hanno penalizzato; un giudice non può verificare se una diagnosi AI è basata su correlazioni legittime. EU AI Act (2024) impone requisiti di trasparenza e spiegabilità per sistemi AI ad alto rischio.",
+      "riferimento_principale": "📖 ESPLORA — Limiti dell'AI: opacità"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "In quale scenario il ML per rinforzo è chiaramente più adatto rispetto al ML supervisionato?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Quando si ha un grande dataset di immagini etichettate da classificare in categorie predefinite",
+          "feedback": "Non è corretto. Un grande dataset etichettato di immagini è il caso ideale per il ML supervisionato (classificazione con CNN). Il ML per rinforzo non usa dataset etichettati — impara interagendo con un ambiente dinamico.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo"
+        },
+        {
+          "id": "b",
+          "testo": "Quando un agente deve imparare a prendere decisioni sequenziali in un ambiente dinamico, dove non esiste una risposta 'corretta' predefinita ma solo una funzione di ricompensa",
+          "corretto": true,
+          "feedback": "Esatto! Il RL eccelle in problemi sequenziali con feedback ritardato: il gioco del Go (ogni mossa influenza posizioni future), il trading algoritmico (le decisioni di acquisto influenzano i prezzi futuri), la robotica (sequenze di movimenti per completare un compito), i veicoli autonomi (decisioni di guida continue). Non esiste una risposta 'giusta' predefinita — solo una ricompensa cumulativa da massimizzare."
+        },
+        {
+          "id": "c",
+          "testo": "Quando il dataset non ha etichette e si vogliono trovare gruppi naturali nei dati",
+          "feedback": "Non è corretto. Trovare gruppi naturali in dati non etichettati è il clustering (ML non supervisionato). Il ML per rinforzo non riguarda la scoperta di pattern in dataset statici — usa la dinamica agente-ambiente-ricompensa.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo"
+        },
+        {
+          "id": "d",
+          "testo": "Quando si vuole generare testo o immagini realistiche simili a esempi esistenti",
+          "feedback": "Non è corretto. La generazione di testo realistico è il dominio dei modelli generativi (GPT, diffusion models) addestrati con ML supervisionato su grandi corpora. Il ML per rinforzo si applica a problemi di decisione sequenziale con ricompensa, non alla generazione di contenuti.",
+          "riferimento": "📖 ESPLORA — ML per rinforzo"
+        }
+      ],
+      "spiegazione": "Il Reinforcement Learning è la scelta naturale per: 1) Giochi (Go, Atari, scacchi) — non esistono partite 'corrette', solo vincere o perdere. 2) Robotica — il robot deve imparare sequenze di movimenti per completare compiti, con ricompensa solo al completamento. 3) Trading algoritmico — le decisioni influenzano i prezzi futuri. 4) Ottimizzazione di sistemi complessi (raffreddamento datacenter, gestione traffico). 5) Dialogo (RLHF: fine-tuning dei LLM con feedback umano). Limite principale: richiede un simulatore affidabile o un ambiente reale con cui interagire sicuramente.",
+      "riferimento_principale": "📖 ESPLORA — ML per rinforzo"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Come si valuta se un modello ML è in overfitting o underfitting durante lo sviluppo?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si valuta solo l'accuratezza finale sul dataset di test",
+          "feedback": "Non è corretto. Valutare solo il test set non permette di distinguere overfitting da underfitting. Per diagnosticare il problema bisogna confrontare le prestazioni su training set e test set: è il divario tra le due che rivela overfitting o underfitting.",
+          "riferimento": "📖 ESPLORA — Overfitting e underfitting"
+        },
+        {
+          "id": "b",
+          "testo": "Confrontando le prestazioni su training set e test set: overfitting = alta accuratezza su training, bassa su test; underfitting = bassa accuratezza su entrambi",
+          "corretto": true,
+          "feedback": "Esatto! La diagnosi si fa confrontando training e test performance. Overfitting: training accuracy = 99%, test accuracy = 65% → il modello ha memorizzato il training. Underfitting: training accuracy = 65%, test accuracy = 63% → il modello è troppo semplice. Good fit: training ≈ test con entrambi alti."
+        },
+        {
+          "id": "c",
+          "testo": "Misurando la velocità di addestramento: modelli in overfitting si addestrano più lentamente",
+          "feedback": "Non è corretto. La velocità di addestramento dipende dall'architettura del modello, dalla dimensione del dataset e dall'hardware — non dall'overfitting. Un modello in overfitting può addestrarsi velocemente o lentamente indipendentemente dal fenomeno.",
+          "riferimento": "📖 ESPLORA — Overfitting e underfitting"
+        },
+        {
+          "id": "d",
+          "testo": "Verificando che il modello produca sempre la stessa predizione per input simili",
+          "feedback": "Non è corretto. La consistenza delle predizioni (determinismo) è una caratteristica degli algoritmi ML in generale, non un modo per diagnosticare overfitting. Persino un modello in overfitting è deterministico: dà sempre la stessa risposta a parità di input.",
+          "riferimento": "📖 ESPLORA — Overfitting e underfitting"
+        }
+      ],
+      "spiegazione": "Diagnosticare overfitting vs underfitting: si tracciano le curve di learning (training loss e validation loss in funzione delle epoche di addestramento). Overfitting: training loss scende continuamente, validation loss scende poi risale → il modello sta memorizzando. Underfitting: entrambe le loss sono alte e non scendono → il modello è troppo semplice. Good fit: entrambe le loss scendono e si stabilizzano a livelli simili. Soluzioni overfitting: dropout, L1/L2 regularization, data augmentation, early stopping, più dati.",
+      "riferimento_principale": "📖 ESPLORA — Overfitting e underfitting"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un sistema di ML supervisionato per la diagnosi di tumori ha un'accuratezza del 95% sul test set. Un medico obietta che questo non è sufficiente per l'uso clinico. Quale analisi critica supporta la sua posizione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il 95% di accuratezza è sempre sufficiente per qualsiasi applicazione clinica",
+          "feedback": "Non è corretto. L'accuratezza media nasconde problemi critici per applicazioni mediche. Su 10.000 pazienti, 5% di errori = 500 diagnosi errate. Se la maggior parte degli errori sono falsi negativi (tumori non rilevati), l'impatto clinico è devastante indipendentemente dall'accuratezza globale.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: valutazione critica"
+        },
+        {
+          "id": "b",
+          "testo": "L'accuratezza globale non distingue falsi negativi (tumori non rilevati) da falsi positivi (allarmi inutili): in oncologia un falso negativo è molto più pericoloso e richiede analisi di sensibilità e specificità",
+          "corretto": true,
+          "feedback": "Esatto! Per la diagnosi oncologica, l'accuratezza globale è insufficiente come unica metrica. Serve analizzare: Sensibilità (recall): quanti tumori veri vengono rilevati? Specificità: quanti sani vengono correttamente classificati sani? Un sistema con 95% di accuratezza ma bassa sensibilità può perdere molti tumori reali — un errore clinicamente inaccettabile."
+        },
+        {
+          "id": "c",
+          "testo": "Il 95% di accuratezza è insufficiente solo se il dataset di test era più piccolo di 1000 pazienti",
+          "feedback": "Non è corretto. La dimensione del dataset influenza l'affidabilità statistica della stima di accuratezza, ma non è la critica principale del medico. Il problema fondamentale è la distribuzione degli errori tra falsi positivi e falsi negativi, non la dimensione del test set.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: valutazione critica"
+        },
+        {
+          "id": "d",
+          "testo": "Il sistema ML non può essere approvato per uso clinico perché non è stato programmato da medici specialisti",
+          "feedback": "Non è corretto. La professione di chi ha sviluppato il sistema non è il criterio di approvazione clinica. Le autorità regolatorie (FDA, EMA) valutano le prestazioni cliniche del dispositivo, la validazione su popolazioni diverse, la trasparenza del metodo e l'integrazione nel flusso di lavoro clinico.",
+          "riferimento": "📖 ESPLORA — Limiti dell'AI: valutazione critica"
+        }
+      ],
+      "spiegazione": "In applicazioni mediche, l'accuratezza globale è una metrica insufficiente. Le metriche critiche: Sensibilità (Recall) = TP/(TP+FN): percentuale di malati correttamente identificati. Specificità = TN/(TN+FP): percentuale di sani correttamente identificati. Valore predittivo positivo (Precision). AUC-ROC: capacità discriminativa globale. In oncologia, un sistema con 95% accuratezza ma 70% sensibilità perde il 30% dei tumori — inaccettabile. Oltre alle metriche, per l'approvazione clinica servono: validazione su popolazioni diverse (età, etnia, equipaggiamento), trasparenza (XAI), integrazione workflow clinico, approvazione regolatoria (EU AI Act Class III, FDA 510k).",
+      "riferimento_principale": "📖 ESPLORA — Limiti dell'AI: valutazione critica"
+    }
+  ]
+}

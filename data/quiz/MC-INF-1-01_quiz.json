@@ -1,0 +1,600 @@
+{
+  "mc_id": "MC-INF-1-01",
+  "versione": "2.0",
+  "domande": [
+    {
+      "id": 1,
+      "livello": "F",
+      "domanda": "Cos'è un bit?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La più piccola unità di informazione digitale, che può valere solo 0 oppure 1",
+          "corretto": true,
+          "feedback": "Esatto! Il bit (binary digit) è la cifra binaria: la più piccola informazione possibile, e può valere solo 0 o 1."
+        },
+        {
+          "id": "b",
+          "testo": "Un gruppo di 8 byte usato per misurare la memoria",
+          "feedback": "Non è corretto. Sono i byte a raggruppare i bit: 1 byte = 8 bit, non il contrario. Il bit è l'unità minima, non un raggruppamento.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "c",
+          "testo": "Il nome del processore centrale di un computer",
+          "feedback": "Non è corretto. Il processore centrale si chiama CPU (Central Processing Unit). Il bit è un'unità di informazione, non un componente fisico.",
+          "riferimento": "📖 ESPLORA — Perché proprio 0 e 1?"
+        },
+        {
+          "id": "d",
+          "testo": "Un tipo di file usato per le immagini digitali",
+          "feedback": "Non è corretto. I formati file immagine si chiamano JPEG, PNG, WebP ecc. Il bit è la cifra binaria di base del sistema informatico.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        }
+      ],
+      "spiegazione": "Il bit (binary digit) è la più piccola unità di informazione digitale. Può assumere solo due valori: 0 oppure 1. Corrisponde allo stato di un transistor: corrente che non passa (0) o corrente che passa (1).",
+      "riferimento_principale": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+    },
+    {
+      "id": 2,
+      "livello": "F",
+      "domanda": "Quanti bit compongono un byte?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "4 bit",
+          "feedback": "Non è corretto. 4 bit formano un nibble, non un byte. Il byte è il doppio: 8 bit.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "b",
+          "testo": "8 bit",
+          "corretto": true,
+          "feedback": "Esatto! Un byte è composto da 8 bit e può rappresentare 256 valori distinti (da 0 a 255). È l'unità di base con cui il computer misura le informazioni."
+        },
+        {
+          "id": "c",
+          "testo": "16 bit",
+          "feedback": "Non è corretto. 16 bit equivalgono a 2 byte. Un singolo byte contiene 8 bit.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "d",
+          "testo": "1024 bit",
+          "feedback": "Non è corretto. 1024 byte formano un kilobyte (KB). Un byte contiene solo 8 bit.",
+          "riferimento": "📖 ESPLORA — Le unità di misura dell'informazione"
+        }
+      ],
+      "spiegazione": "Un byte è composto esattamente da 8 bit. Con 8 bit si possono rappresentare 2⁸ = 256 valori diversi (da 0 a 255). Il byte è l'unità fondamentale con cui si misura la memoria: un carattere di testo ASCII occupa tipicamente 1 byte.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+    },
+    {
+      "id": 3,
+      "livello": "F",
+      "domanda": "Come funziona un transistor all'interno di un computer?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "È una batteria che immagazzina energia per il processore",
+          "feedback": "Non è corretto. Le batterie immagazzinano energia elettrica, ma i transistor sono interruttori elettronici che controllano il flusso di corrente in un circuito.",
+          "riferimento": "📖 ESPLORA — Perché proprio 0 e 1?"
+        },
+        {
+          "id": "b",
+          "testo": "È un minuscolo interruttore elettronico che può essere acceso (1) o spento (0)",
+          "corretto": true,
+          "feedback": "Esatto! Il transistor funziona come un interruttore: può essere in due stati — corrente che passa (1) o corrente che non passa (0). Miliardi di transistor, accesi e spenti miliardi di volte al secondo, realizzano tutta l'informatica moderna."
+        },
+        {
+          "id": "c",
+          "testo": "È il componente che visualizza le immagini sullo schermo",
+          "feedback": "Non è corretto. Le immagini sono visualizzate dai pixel dello schermo. I transistor sono dentro il processore e controllano i segnali elettrici dei circuiti logici.",
+          "riferimento": "📖 ESPLORA — Perché proprio 0 e 1?"
+        },
+        {
+          "id": "d",
+          "testo": "È un tipo di connettore USB che trasferisce dati",
+          "feedback": "Non è corretto. USB è uno standard di connessione fisica. I transistor sono componenti elettronici microscopici dentro i chip.",
+          "riferimento": "📖 ESPLORA — Perché proprio 0 e 1?"
+        }
+      ],
+      "spiegazione": "Il transistor è un minuscolo interruttore elettronico che può trovarsi in due stati: corrente che passa (1) o corrente che non passa (0). Un processore moderno contiene miliardi di transistor e li accende e spegne miliardi di volte al secondo. Questo è il motivo per cui il computer usa solo 0 e 1.",
+      "riferimento_principale": "📖 ESPLORA — Perché proprio 0 e 1?"
+    },
+    {
+      "id": 4,
+      "livello": "F",
+      "domanda": "Quale numero decimale corrisponde al numero binario '10'?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "10",
+          "feedback": "Non è corretto. In binario, '10' non vale dieci. Il sistema binario usa base 2, non base 10: '10' in binario significa 1×2¹ + 0×2⁰ = 2.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "b",
+          "testo": "2",
+          "corretto": true,
+          "feedback": "Esatto! In binario '10' vale 1×2¹ + 0×2⁰ = 2. Quando in binario si finiscono le cifre (si arriva a 1), si va a capo mettendo uno 0 e aggiungendo 1 a sinistra — esattamente come nel sistema decimale si va da 9 a 10."
+        },
+        {
+          "id": "c",
+          "testo": "1",
+          "feedback": "Non è corretto. In binario '1' vale uno, ma '10' è diverso: vale 1×2 + 0 = 2, perché la seconda cifra da destra rappresenta la potenza 2¹.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "d",
+          "testo": "4",
+          "feedback": "Non è corretto. Il numero binario '100' vale 4 (1×2² = 4), non '10'. Il valore '10' in binario è 1×2¹ + 0×2⁰ = 2.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        }
+      ],
+      "spiegazione": "In binario ogni posizione vale una potenza di 2, partendo da destra: posizione 0 = 2⁰ = 1, posizione 1 = 2¹ = 2, posizione 2 = 2² = 4 ecc. Il numero '10' in binario vale quindi 1×2¹ + 0×2⁰ = 2+0 = 2 in decimale.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+    },
+    {
+      "id": 5,
+      "livello": "F",
+      "domanda": "Quante componenti di colore usa il sistema RGB per descrivere un pixel?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "2 (rosso e blu)",
+          "feedback": "Non è corretto. Il sistema RGB usa tre componenti, non due: Rosso (Red), Verde (Green) e Blu (Blue). Omettere il verde impedirebbe di rappresentare gran parte dei colori.",
+          "riferimento": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+        },
+        {
+          "id": "b",
+          "testo": "4 (rosso, verde, blu e trasparenza)",
+          "feedback": "Non è corretto. Il sistema RGB standard usa 3 componenti. La trasparenza (canale alpha) è un'aggiunta del formato RGBA, non del sistema RGB base.",
+          "riferimento": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+        },
+        {
+          "id": "c",
+          "testo": "3 (rosso, verde e blu)",
+          "corretto": true,
+          "feedback": "Esatto! Il sistema RGB usa tre componenti: Rosso (Red), Verde (Green) e Blu (Blue). Ognuna ha un valore da 0 a 255 (1 byte), quindi ogni pixel occupa 3 byte in totale."
+        },
+        {
+          "id": "d",
+          "testo": "8 (tanti quanti i bit di un byte)",
+          "feedback": "Non è corretto. I bit del byte sono l'unità di misura usata per ogni componente, non il numero di componenti colore. RGB usa 3 componenti, ognuna rappresentata da 8 bit.",
+          "riferimento": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+        }
+      ],
+      "spiegazione": "Il sistema RGB usa tre componenti: Rosso, Verde e Blu. Ogni componente ha un valore da 0 a 255 (8 bit = 1 byte). Combinando i tre valori si ottengono 256×256×256 ≈ 16 milioni di colori diversi. Ogni pixel di un'immagine digitale occupa quindi 3 byte.",
+      "riferimento_principale": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+    },
+    {
+      "id": 6,
+      "livello": "F",
+      "domanda": "Quale delle seguenti rappresenta la progressione corretta delle unità di misura dell'informazione, dalla più piccola alla più grande?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "byte → bit → KB → MB → GB",
+          "feedback": "Non è corretto. Il bit è più piccolo del byte, non il contrario. L'ordine corretto parte da bit, poi byte, poi KB, MB, GB.",
+          "riferimento": "📖 ESPLORA — Le unità di misura dell'informazione"
+        },
+        {
+          "id": "b",
+          "testo": "bit → byte → KB → MB → GB",
+          "corretto": true,
+          "feedback": "Esatto! La progressione corretta è: bit (cifra binaria) → byte (8 bit) → kilobyte (circa 1000 byte) → megabyte (circa 1 milione di byte) → gigabyte (circa 1 miliardo di byte)."
+        },
+        {
+          "id": "c",
+          "testo": "KB → MB → GB → byte → bit",
+          "feedback": "Non è corretto. Questa sequenza è capovolta: KB, MB e GB sono molto più grandi di byte e bit. La sequenza parte sempre dalle unità più piccole verso quelle più grandi.",
+          "riferimento": "📖 ESPLORA — Le unità di misura dell'informazione"
+        },
+        {
+          "id": "d",
+          "testo": "bit → byte → MB → KB → GB",
+          "feedback": "Non è corretto. KB (kilobyte) viene prima di MB (megabyte): 1 MB = 1000 KB, quindi MB è più grande di KB, non il contrario.",
+          "riferimento": "📖 ESPLORA — Le unità di misura dell'informazione"
+        }
+      ],
+      "spiegazione": "Le unità di misura dell'informazione, dalla più piccola alla più grande, sono: bit → byte (8 bit) → kilobyte (KB, ~1000 byte) → megabyte (MB, ~1 milione di byte) → gigabyte (GB, ~1 miliardo di byte) → terabyte (TB, ~1000 GB).",
+      "riferimento_principale": "📖 ESPLORA — Le unità di misura dell'informazione"
+    },
+    {
+      "id": 7,
+      "livello": "I",
+      "domanda": "Quanti valori distinti possono essere rappresentati con 8 bit?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "8",
+          "feedback": "Non è corretto. Con 8 bit non si rappresentano 8 valori, ma 2⁸ valori. Ogni bit raddoppia le possibilità: 2×2×2×2×2×2×2×2 = 256.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "b",
+          "testo": "128",
+          "feedback": "Non è corretto. 128 = 2⁷, cioè le possibilità con 7 bit. Con 8 bit si arriva al doppio: 2⁸ = 256.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "c",
+          "testo": "256",
+          "corretto": true,
+          "feedback": "Esatto! Con N bit si rappresentano 2^N valori distinti. Con 8 bit: 2⁸ = 256 valori, che vanno da 0 a 255. Questa è la ragione per cui ogni componente RGB ha valori da 0 a 255."
+        },
+        {
+          "id": "d",
+          "testo": "1024",
+          "feedback": "Non è corretto. 1024 = 2¹⁰ richiede 10 bit, non 8. Con 8 bit si ottengono 2⁸ = 256 valori.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        }
+      ],
+      "spiegazione": "Con N bit si possono rappresentare 2^N valori distinti. Con 8 bit: 2⁸ = 256 valori (da 0 a 255). Questa formula è fondamentale: 1 bit → 2 valori, 2 bit → 4, 4 bit → 16, 8 bit → 256, 16 bit → 65.536, 24 bit → oltre 16 milioni (i colori RGB a piena profondità).",
+      "riferimento_principale": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+    },
+    {
+      "id": 8,
+      "livello": "I",
+      "domanda": "A quale numero decimale corrisponde la lettera maiuscola 'A' nella tabella ASCII?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "1",
+          "feedback": "Non è corretto. Il numero 1 nella tabella ASCII è un carattere di controllo non stampabile. La lettera 'A' maiuscola ha il codice 65.",
+          "riferimento": "📖 OSSERVA — Caso studio: una lettera dentro al computer"
+        },
+        {
+          "id": "b",
+          "testo": "41",
+          "feedback": "Non è corretto. Il numero 41 in ASCII corrisponde alla parentesi chiusa ')'. La lettera 'A' maiuscola ha il codice 65.",
+          "riferimento": "📖 OSSERVA — Caso studio: una lettera dentro al computer"
+        },
+        {
+          "id": "c",
+          "testo": "65",
+          "corretto": true,
+          "feedback": "Esatto! Nella tabella ASCII la lettera 'A' maiuscola ha il codice 65, che in binario è 01000001. Le lettere maiuscole vanno da A=65 (A) a Z=90, quelle minuscole da a=97 a z=122."
+        },
+        {
+          "id": "d",
+          "testo": "97",
+          "feedback": "Non è corretto. Il codice 97 corrisponde alla 'a' minuscola, non alla 'A' maiuscola. ASCII distingue tra lettere maiuscole e minuscole: le maiuscole iniziano da 65, le minuscole da 97.",
+          "riferimento": "📖 OSSERVA — Caso studio: una lettera dentro al computer"
+        }
+      ],
+      "spiegazione": "Nel codice ASCII (American Standard Code for Information Interchange), ogni carattere ha un numero univoco. La 'A' maiuscola = 65 (binario: 01000001), la 'a' minuscola = 97. Le lettere maiuscole vanno da 65 (A) a 90 (Z), le minuscole da 97 (a) a 122 (z). La differenza di 32 tra maiuscola e minuscola è una scelta di progettazione originale del 1963.",
+      "riferimento_principale": "📖 OSSERVA — Caso studio: una lettera dentro al computer"
+    },
+    {
+      "id": 9,
+      "livello": "I",
+      "domanda": "Quanto spazio occupa una foto da 6 megapixel in formato RGB non compresso?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Circa 6 MB",
+          "feedback": "Non è corretto. 6 MB sarebbe il peso solo se ogni pixel usasse 1 byte, ma in RGB ogni pixel occupa 3 byte (uno per rosso, uno per verde, uno per blu). Il calcolo corretto è: 6.000.000 × 3 = 18.000.000 byte ≈ 18 MB.",
+          "riferimento": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+        },
+        {
+          "id": "b",
+          "testo": "Circa 18 MB",
+          "corretto": true,
+          "feedback": "Esatto! Ogni pixel in RGB occupa 3 byte (1 per rosso, 1 per verde, 1 per blu). Con 6 milioni di pixel: 6.000.000 × 3 = 18.000.000 byte ≈ 18 MB. Le foto che vedi sul telefono pesano molto meno grazie alla compressione."
+        },
+        {
+          "id": "c",
+          "testo": "Circa 48 MB",
+          "feedback": "Non è corretto. 48 MB corrisponderebbe a 8 byte per pixel, non a 3. In RGB standard si usano 3 byte per pixel (24 bit di profondità colore).",
+          "riferimento": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+        },
+        {
+          "id": "d",
+          "testo": "Circa 1 MB",
+          "feedback": "Non è corretto. 1 MB equivale a circa 333.000 pixel in RGB, non a 6 milioni. Una foto da 6 megapixel non compressa occupa circa 18 MB.",
+          "riferimento": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+        }
+      ],
+      "spiegazione": "Calcolo: 6.000.000 pixel × 3 byte/pixel (RGB) = 18.000.000 byte ≈ 18 MB. Questo è il peso non compresso. I formati JPEG, PNG e WebP applicano algoritmi di compressione per ridurre le dimensioni mantenendo una qualità accettabile.",
+      "riferimento_principale": "📖 ESPLORA — Da bit a immagine: come funziona davvero una foto"
+    },
+    {
+      "id": 10,
+      "livello": "I",
+      "domanda": "Qual è la differenza principale tra compressione lossy e compressione lossless?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "La lossy comprime solo i testi, la lossless comprime solo le immagini",
+          "feedback": "Non è corretto. Entrambe le tipologie di compressione si applicano a qualsiasi tipo di file (immagini, audio, video, testi). La differenza riguarda se vengono perse informazioni, non il tipo di file.",
+          "riferimento": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+        },
+        {
+          "id": "b",
+          "testo": "La lossy elimina alcuni dati in modo permanente, la lossless riduce lo spazio senza perdere informazioni",
+          "corretto": true,
+          "feedback": "Esatto! Nella compressione lossy alcune informazioni vengono eliminate in modo permanente (non recuperabili), riducendo di più la dimensione ma a scapito della qualità. Nella lossless l'informazione originale è completamente recuperabile: il file decompresso è identico all'originale."
+        },
+        {
+          "id": "c",
+          "testo": "La lossless è più veloce ma produce file più grandi, la lossy è più lenta ma produce file più piccoli",
+          "feedback": "Non è corretto. La velocità di compressione dipende dall'algoritmo specifico, non dal tipo (lossy/lossless). La distinzione fondamentale riguarda la perdita di dati, non la velocità.",
+          "riferimento": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+        },
+        {
+          "id": "d",
+          "testo": "La lossy funziona solo su computer Windows, la lossless solo su Mac",
+          "feedback": "Non è corretto. La compressione lossy e lossless sono tecniche matematiche indipendenti dal sistema operativo. JPEG (lossy) e PNG (lossless) funzionano su qualsiasi piattaforma.",
+          "riferimento": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+        }
+      ],
+      "spiegazione": "La compressione lossy (come JPEG) elimina alcune informazioni in modo permanente ottenendo file molto più piccoli, ma con una certa perdita di qualità. La compressione lossless (come PNG) riduce le dimensioni trovando pattern ripetuti ma conserva tutti i dati originali: il file decompresso è identico all'originale.",
+      "riferimento_principale": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+    },
+    {
+      "id": 11,
+      "livello": "I",
+      "domanda": "Perché è stato necessario creare Unicode per sostituire ASCII?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Perché ASCII era troppo lento per i computer moderni",
+          "feedback": "Non è corretto. La velocità non è il problema di ASCII. ASCII è un sistema di codifica, non un protocollo di trasmissione. Il problema era la limitata copertura dei caratteri: solo 128 simboli, insufficienti per le lingue non latine.",
+          "riferimento": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+        },
+        {
+          "id": "b",
+          "testo": "Perché ASCII copriva solo 128 caratteri, insufficienti per le lingue non latine e gli emoji",
+          "corretto": true,
+          "feedback": "Esatto! ASCII con 7 bit copre solo 128 caratteri: lettere latine, numeri e punteggiatura di base. Non aveva à, è, ü, caratteri cinesi, arabi, hindi o emoji. Unicode risolve questo assegnando un codice univoco a oltre 140.000 caratteri in più di 150 sistemi di scrittura."
+        },
+        {
+          "id": "c",
+          "testo": "Perché ASCII usava troppa memoria rispetto a Unicode",
+          "feedback": "Non è corretto. È il contrario: ASCII usa solo 1 byte per carattere (efficiente), mentre Unicode in formato UTF-8 può usare fino a 4 byte per i caratteri più rari. Unicode è stato creato per coprire più caratteri, non per risparmiare memoria.",
+          "riferimento": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+        },
+        {
+          "id": "d",
+          "testo": "Perché ASCII non funzionava su internet",
+          "feedback": "Non è corretto. ASCII funzionava perfettamente su internet per testi in inglese. Il problema era rappresentare testi in altre lingue del mondo. Unicode è stato creato per l'inclusività linguistica, non per motivi di compatibilità internet.",
+          "riferimento": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+        }
+      ],
+      "spiegazione": "ASCII usa 7 bit (128 caratteri) e copre solo l'alfabeto latino di base con punteggiatura. Non può rappresentare lettere accentate, alfabeti non latini (cinese, arabo, hindi...) o emoji. Unicode assegna un codice univoco a oltre 140.000 caratteri in più di 150 sistemi di scrittura. UTF-8 è l'implementazione più diffusa di Unicode.",
+      "riferimento_principale": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+    },
+    {
+      "id": 12,
+      "livello": "I",
+      "domanda": "Quale matematico e in quale anno ha descritto per primo il sistema binario?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Alan Turing nel 1936",
+          "feedback": "Non è corretto. Alan Turing è celebre per altri contributi fondamentali all'informatica teorica (macchina di Turing, crittografia Enigma), ma la descrizione del sistema binario è precedente: fu Gottfried Wilhelm Leibniz nel 1703.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "b",
+          "testo": "Gottfried Wilhelm Leibniz nel 1703",
+          "corretto": true,
+          "feedback": "Esatto! Leibniz descrisse il sistema binario nel 1703 in un articolo chiamato 'Explication de l'Arithmétique Binaire'. All'epoca non esisteva nessun computer: Leibniz aveva capito che due soli simboli bastano per rappresentare qualsiasi numero."
+        },
+        {
+          "id": "c",
+          "testo": "Charles Babbage nel 1837",
+          "feedback": "Non è corretto. Charles Babbage ha progettato la macchina analitica (un primo prototipo di computer meccanico), ma il sistema binario era già stato descritto da Leibniz più di un secolo prima, nel 1703.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        },
+        {
+          "id": "d",
+          "testo": "George Boole nel 1854",
+          "feedback": "Non è corretto. George Boole ha sviluppato l'algebra booleana (operazioni logiche AND, OR, NOT), fondamentale per i circuiti digitali. Ma il sistema binario era già stato descritto da Leibniz nel 1703.",
+          "riferimento": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+        }
+      ],
+      "spiegazione": "Gottfried Wilhelm Leibniz descrisse il sistema binario nel 1703, tre secoli prima dell'invenzione del computer. Il suo articolo 'Explication de l'Arithmétique Binaire' mostrava come due soli simboli (0 e 1) potessero rappresentare qualsiasi numero. Leibniz era affascinato dall'idea filosofica che tutto potesse essere rappresentato con il duale 0/1.",
+      "riferimento_principale": "📖 ESPLORA — Il sistema binario: contare con due sole cifre"
+    },
+    {
+      "id": 13,
+      "livello": "A",
+      "domanda": "Un ingegnere deve trasmettere dati di temperatura da un sensore IoT (-20°C a +60°C, con precisione di 0,5°C) su una connessione a bassa banda. Quanti bit sono necessari per ogni campione?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "4 bit (16 valori possibili)",
+          "feedback": "Non è corretto. Il range -20,0 a +60,0 con precisione 0,5°C produce 161 valori distinti (-20,0 / -19,5 / ... / +59,5 / +60,0). Con 4 bit si rappresentano solo 2⁴ = 16 valori: insufficiente.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        },
+        {
+          "id": "b",
+          "testo": "8 bit (256 valori possibili)",
+          "corretto": true,
+          "feedback": "Esatto! Il range -20,0 a +60,0 con step 0,5°C produce (60-(-20))/0,5 + 1 = 161 valori distinti. Con 7 bit si hanno solo 128 valori (insufficiente). Con 8 bit si hanno 256 valori (sufficiente). 8 bit è il numero minimo che copre i 161 valori necessari."
+        },
+        {
+          "id": "c",
+          "testo": "16 bit (65.536 valori possibili)",
+          "feedback": "Non è corretto. 16 bit coprono 65.536 valori, ben più dei 161 necessari. Se l'obiettivo è minimizzare il traffico dati su una connessione a bassa banda, usare 16 bit quando ne bastano 8 spreca esattamente il doppio della banda.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        },
+        {
+          "id": "d",
+          "testo": "32 bit (float IEEE 754)",
+          "feedback": "Non è corretto. Un float a 32 bit è la scelta peggiore per minimizzare il traffico: usa 4 volte più bit degli 8 necessari. Inoltre il float IEEE 754 è pensato per calcoli in virgola mobile generali, non per una codifica compatta di valori discreti.",
+          "riferimento": "📖 SPERIMENTA — ●●● AVANZATO"
+        }
+      ],
+      "spiegazione": "Il numero di valori distinti nel range: (60 - (-20)) / 0,5 + 1 = 161. Serve il minimo N tale che 2^N ≥ 161. 2⁷ = 128 (insufficiente), 2⁸ = 256 (sufficiente). Quindi 8 bit. In applicazioni IoT reali questa ottimizzazione riduce il consumo energetico e il costo della banda.",
+      "riferimento_principale": "📖 SPERIMENTA — ●●● AVANZATO"
+    },
+    {
+      "id": 14,
+      "livello": "A",
+      "domanda": "Un archivio storico deve scegliere tra scansionare 200 foto a 1200 dpi RGB (formato JPEG compresso 10:1) o a 2400 dpi RGB (formato TIFF non compresso). Se 1 pollice = 2,54 cm e le foto sono 10×15 cm, quale affermazione è corretta?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Il formato JPEG 1200 dpi occupa più spazio del TIFF 2400 dpi perché la compressione JPEG è lossy",
+          "feedback": "Non è corretto. La compressione JPEG 10:1 riduce drasticamente le dimensioni. Il TIFF 2400 dpi (4 volte la risoluzione lineare → 16 volte più pixel) non compresso occupa enormemente più spazio del JPEG 1200 dpi compresso 10 volte.",
+          "riferimento": "📖 AGISCI — Lo scenario"
+        },
+        {
+          "id": "b",
+          "testo": "Il TIFF 2400 dpi non compresso occupa circa 64 volte più spazio del JPEG 1200 dpi compresso 10:1",
+          "corretto": true,
+          "feedback": "Esatto! 2400 dpi ha 4× più pixel per lato → 16× più pixel totali rispetto a 1200 dpi. Poi il TIFF non è compresso mentre il JPEG è compresso 10:1. Fattore totale: 16 × 10 = 160× (?). Più precisamente: 2400² / 1200² × 10 = 4 × 10 = 40×. Il TIFF 2400 dpi pesa circa 40 volte il JPEG 1200 dpi — un fattore molto alto."
+        },
+        {
+          "id": "c",
+          "testo": "I due formati occupano lo stesso spazio perché la compressione JPEG compensa la risoluzione maggiore",
+          "feedback": "Non è corretto. La compressione JPEG 10:1 riduce le dimensioni di 10 volte, ma il passaggio da 1200 a 2400 dpi quadruplica il numero di pixel (risoluzione doppia su entrambe le dimensioni). Il risultato netto è che il TIFF 2400 dpi occupa molto più spazio.",
+          "riferimento": "📖 AGISCI — Lo scenario"
+        },
+        {
+          "id": "d",
+          "testo": "La scelta tra i due formati non influisce sulla qualità dell'immagine recuperabile",
+          "feedback": "Non è corretto. JPEG lossy perde alcune informazioni in modo permanente, mentre TIFF non compresso conserva tutti i dati originali. Per un archivio storico la differenza di qualità è significativa, soprattutto se le immagini devono essere ingrandite o ritoccate in futuro.",
+          "riferimento": "📖 AGISCI — Lo scenario"
+        }
+      ],
+      "spiegazione": "Confronto calcolo: 1200 dpi su 10×15 cm = (10/2,54×1200) × (15/2,54×1200) ≈ 4724×7087 ≈ 33,5 MP. JPEG 10:1: ÷10. A 2400 dpi ≈ 134 MP, TIFF non compresso. Rapporto: (134/33,5) × 10 = 40×. Il TIFF 2400 dpi pesa circa 40 volte il JPEG 1200 dpi compresso. Per archiviazione storica il trade-off qualità vs spazio è una scelta progettuale reale.",
+      "riferimento_principale": "📖 AGISCI — Lo scenario"
+    },
+    {
+      "id": 15,
+      "livello": "A",
+      "domanda": "Qual è il vantaggio principale dell'utilizzo di UTF-8 rispetto ad ASCII puro in un sistema che deve gestire contenuti internazionali?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "UTF-8 usa sempre meno memoria di ASCII per qualsiasi testo",
+          "feedback": "Non è corretto. Per i caratteri ASCII standard (lettere latine, numeri, punteggiatura), UTF-8 usa esattamente 1 byte — uguale ad ASCII. UTF-8 usa più bytes (fino a 4) per i caratteri non ASCII. Non è sempre più efficiente in termini di memoria.",
+          "riferimento": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+        },
+        {
+          "id": "b",
+          "testo": "UTF-8 è compatibile con ASCII per i primi 128 caratteri e usa bytes aggiuntivi solo per i caratteri non ASCII",
+          "corretto": true,
+          "feedback": "Esatto! UTF-8 è un sistema intelligente: usa 1 byte per i caratteri ASCII (0–127), garantendo piena compatibilità con i vecchi sistemi ASCII. Usa 2–4 byte solo per i caratteri non ASCII. Questo permette di supportare tutte le lingue del mondo senza sprecare spazio nei testi principalmente in inglese."
+        },
+        {
+          "id": "c",
+          "testo": "UTF-8 elimina la necessità di compressione perché i caratteri non ASCII occupano meno spazio",
+          "feedback": "Non è corretto. I caratteri non ASCII in UTF-8 occupano più spazio (2-4 byte), non meno. UTF-8 risolve il problema della copertura linguistica, non il problema dello spazio. La compressione è un'ottimizzazione separata e indipendente dalla codifica dei caratteri.",
+          "riferimento": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+        },
+        {
+          "id": "d",
+          "testo": "UTF-8 è compatibile solo con i sistemi operativi moderni e non funziona su sistemi legacy",
+          "feedback": "Non è corretto. Uno dei punti di forza di UTF-8 è la compatibilità con i sistemi legacy: i primi 128 codici sono identici ad ASCII, quindi un testo ASCII letto come UTF-8 risulta identico. Questa retro-compatibilità è stata una scelta progettuale deliberata.",
+          "riferimento": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+        }
+      ],
+      "spiegazione": "UTF-8 usa la seguente strategia: 1 byte per i caratteri ASCII standard (retro-compatibile con ASCII), 2 byte per caratteri latini estesi e greco, 3 byte per CJK (cinese, giapponese, coreano), 4 byte per caratteri rari e emoji. Questo design permette di supportare oltre 140.000 caratteri mantenendo efficienza per i testi in lingue occidentali.",
+      "riferimento_principale": "📖 OSSERVA — Il limite di ASCII e la nascita di Unicode"
+    },
+    {
+      "id": 16,
+      "livello": "A",
+      "domanda": "Un video Full HD (1920×1080 pixel) non compresso a 24 bit/pixel e 30 fotogrammi/secondo: quanto occupa 1 minuto di video?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Circa 11 GB",
+          "corretto": true,
+          "feedback": "Esatto! Calcolo: 1920 × 1080 pixel/fotogramma × 3 byte/pixel (24 bit) × 30 fotogrammi/sec × 60 sec = 11.197.440.000 byte ≈ 11 GB. I video che guardi su YouTube usano codec efficienti (H.264, H.265) che comprimono questo dato a pochi centinaia di MB."
+        },
+        {
+          "id": "b",
+          "testo": "Circa 200 MB",
+          "feedback": "Non è corretto. 200 MB è la dimensione tipica di un video 1080p compresso con H.264, non non compresso. Il calcolo corretto per il non compresso: 1920×1080×3 byte×30fps×60s ≈ 11 GB.",
+          "riferimento": "📖 SPERIMENTA — ●● INTERMEDIO"
+        },
+        {
+          "id": "c",
+          "testo": "Circa 1 TB",
+          "feedback": "Non è corretto. 1 TB è circa 90 volte troppo grande. Il calcolo esatto dà ≈ 11 GB per un minuto di video Full HD non compresso a 30fps.",
+          "riferimento": "📖 SPERIMENTA — ●● INTERMEDIO"
+        },
+        {
+          "id": "d",
+          "testo": "Circa 500 MB",
+          "feedback": "Non è corretto. 500 MB è circa 22 volte troppo piccolo per un video non compresso. I 500 MB tipici di un video su disco si ottengono con compressione lossy (H.264, H.265), non con dati grezzi non compressi.",
+          "riferimento": "📖 SPERIMENTA — ●● INTERMEDIO"
+        }
+      ],
+      "spiegazione": "Calcolo passo per passo: pixel per fotogramma = 1920 × 1080 = 2.073.600. Byte per fotogramma = 2.073.600 × 3 = 6.220.800. Byte per secondo = 6.220.800 × 30 = 186.624.000. Byte per minuto = 186.624.000 × 60 = 11.197.440.000 ≈ 11 GB. I codec video moderni comprimono questo fino a 50-100 MB per lo streaming, con un fattore di compressione di 100:1 o più.",
+      "riferimento_principale": "📖 SPERIMENTA — ●● INTERMEDIO"
+    },
+    {
+      "id": 17,
+      "livello": "A",
+      "domanda": "Perché i formati JPEG e PNG producono file di dimensioni molto diverse per lo stesso tipo di immagine?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "JPEG supporta più colori di PNG, quindi i file sono sempre più grandi",
+          "feedback": "Non è corretto. Sia JPEG che PNG possono gestire immagini a 24 bit (16 milioni di colori). La differenza di dimensione dipende dal tipo di compressione usata, non dalla profondità di colore.",
+          "riferimento": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+        },
+        {
+          "id": "b",
+          "testo": "JPEG usa compressione lossy (perde dati) e ottiene file molto più piccoli; PNG usa compressione lossless (conserva tutti i dati) e produce file più grandi ma senza perdita di qualità",
+          "corretto": true,
+          "feedback": "Esatto! JPEG scarta informazioni visive considerate impercettibili all'occhio umano (ad es. variazioni fini di colore) ottenendo compressioni 10:1 o più. PNG conserva tutti i dati originali ma ottiene compressioni più modeste. Per fotografie si usa JPEG; per immagini con testo o aree di colore uniforme si usa PNG."
+        },
+        {
+          "id": "c",
+          "testo": "PNG è più lento da caricare e per questo occupa meno spazio su disco",
+          "feedback": "Non è corretto. Il tempo di caricamento non influisce sulle dimensioni del file su disco. PNG tende a produrre file più grandi di JPEG per le fotografie perché usa compressione lossless, non lossy.",
+          "riferimento": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+        },
+        {
+          "id": "d",
+          "testo": "La differenza dipende solo dalla risoluzione dell'immagine, non dall'algoritmo di compressione",
+          "feedback": "Non è corretto. A parità di risoluzione, JPEG e PNG possono differire enormemente in dimensioni a causa dei loro algoritmi di compressione diversi: lossy per JPEG, lossless per PNG. La risoluzione è solo uno dei fattori.",
+          "riferimento": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+        }
+      ],
+      "spiegazione": "JPEG (Joint Photographic Experts Group) usa compressione lossy basata sulla trasformata coseno discreta: scarta informazioni visive non percepibili dall'occhio, raggiungendo compressioni di 10:1 o più. PNG usa compressione lossless (algoritmo DEFLATE): tutte le informazioni originali sono preservate ma il risparmio è minore. Per fotografie si usa JPEG; per screenshot, loghi e immagini con testo si usa PNG.",
+      "riferimento_principale": "📖 OSSERVA — La compressione: meno bit per la stessa informazione"
+    },
+    {
+      "id": 18,
+      "livello": "A",
+      "domanda": "Un'azienda vuole scegliere la profondità di colore per un sistema di telecamere industriali di controllo qualità. Quali considerazioni guidano la scelta tra 8 bit/canale e 16 bit/canale per ogni componente RGB?",
+      "opzioni": [
+        {
+          "id": "a",
+          "testo": "Si deve sempre scegliere 16 bit/canale perché è più moderno e occupa meno spazio",
+          "feedback": "Non è corretto. 16 bit/canale occupa il doppio dello spazio di 8 bit/canale (6 byte vs 3 byte per pixel). Non è 'più moderno' nel senso di più efficiente: va scelto solo quando la maggiore gamma dinamica è effettivamente necessaria per l'applicazione.",
+          "riferimento": "📖 AGISCI — Lo scenario"
+        },
+        {
+          "id": "b",
+          "testo": "8 bit/canale va scelto se la gamma dinamica di 256 livelli è sufficiente e il volume di dati è un vincolo; 16 bit/canale quando servono gradazioni fini o post-elaborazione intensiva",
+          "corretto": true,
+          "feedback": "Esatto! 8 bit/canale = 256 livelli per componente colore, sufficiente per la maggior parte delle applicazioni visive. 16 bit/canale = 65.536 livelli: utile per rilevare difetti sottili, analisi scientifiche o quando si prevede post-elaborazione con molte trasformazioni (che con 8 bit degraderebbero l'immagine). Il costo: doppio spazio e doppia banda."
+        },
+        {
+          "id": "c",
+          "testo": "La profondità di colore non influisce sulla dimensione dei file, quindi si può scegliere liberamente",
+          "feedback": "Non è corretto. La profondità di colore influisce direttamente sulla dimensione dei file: 16 bit/canale = 6 byte/pixel, 8 bit/canale = 3 byte/pixel. Per un sistema industriale con telecamere ad alto frame rate, il doppio della dimensione dati significa il doppio della banda e dello storage.",
+          "riferimento": "📖 AGISCI — Lo scenario"
+        },
+        {
+          "id": "d",
+          "testo": "16 bit/canale è inutile perché l'occhio umano non distingue più di 256 livelli di colore",
+          "feedback": "Non è corretto. L'occhio umano effettivamente distingue circa 8-10 milioni di colori, ma i sistemi a 16 bit/canale sono usati per analisi automatizzate (algoritmi di computer vision) che riescono a sfruttare la maggiore precisione. Il criterio non è la percezione umana ma il requisito del sistema automatico.",
+          "riferimento": "📖 AGISCI — Lo scenario"
+        }
+      ],
+      "spiegazione": "8 bit/canale (24 bit totali per pixel RGB) → 3 byte/pixel → ~16 milioni di colori. Adeguato per visualizzazione e la maggior parte delle analisi. 16 bit/canale (48 bit totali per pixel RGB) → 6 byte/pixel → ~281 trilioni di colori. Usato in fotografia professionale, imaging scientifico, machine vision industriale dove i 256 livelli non bastano per rilevare variazioni sottili. Il trade-off è sempre: qualità vs costo storage/banda.",
+      "riferimento_principale": "📖 AGISCI — Lo scenario"
+    }
+  ]
+}
