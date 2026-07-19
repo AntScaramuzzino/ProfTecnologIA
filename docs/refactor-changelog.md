@@ -1,5 +1,15 @@
 # Refactor Changelog — MC Template v2
 
+## 2026-07-19 — Laboratorio GeoGebra MC-DIS-1-01
+
+- Aggiunta attività autonoma in `public/embeds/geogebra/perpendicolare/`, riutilizzabile via iframe.
+- Costruzione animata in quattro passaggi con controlli, spiegazioni accessibili e modalità movimento ridotto.
+- Aggiunta visualizzazione della dimostrazione LLL e download della costruzione come file `.ggb`.
+- Integrata l’attività nella sezione ESPLORA di MC-DIS-1-01, in corrispondenza di “Costruzione 1 — Perpendicolare a una retta in un punto P su di essa”, e nella pagina `/laboratori/perpendicolare/`.
+- Verificata la compatibilità con l’export statico Next.js.
+
+---
+
 **Branch:** `refactor/mc-template-v2`
 **Data:** 2026-05-11
 **Build:** ✅ 69 pagine statiche, 0 errori TypeScript

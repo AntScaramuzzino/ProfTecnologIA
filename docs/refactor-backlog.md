@@ -1,8 +1,16 @@
 # Refactor Backlog — MC Template v2
 
 **Branch:** `refactor/mc-template-v2`
-**Aggiornato:** 2026-05-11
+**Aggiornato:** 2026-07-19
 **P0 completato:** ✅ · **P1 completato:** ✅ · **P2+ da fare:** vedi sotto
+
+---
+
+## Completati nella sessione 2026-07-19
+
+| ID | Task | Esito |
+|----|------|-------|
+| UX-DIS-1 | Laboratorio GeoGebra: perpendicolare a una retta nel punto P | Attività autonoma embeddabile, animazione in 4 passi, prova LLL, download `.ggb`, integrazione in MC-DIS-1-01 dentro la sezione Costruzione 1 |
 
 ---
 

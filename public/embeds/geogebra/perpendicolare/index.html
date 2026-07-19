@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Costruzione della perpendicolare — GeoGebra</title>
+    <link rel="stylesheet" href="./activity.css" />
+    <script defer src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script defer src="./activity.js"></script>
+  </head>
+  <body>
+    <main class="activity" aria-labelledby="activity-title">
+      <header class="activity__header">
+        <div>
+          <p class="eyebrow">Costruzione 1 · Righello e compasso</p>
+          <h1 id="activity-title">Perpendicolare a una retta nel punto P</h1>
+          <p class="intro">
+            Segui la costruzione un passaggio alla volta. Puoi fermare l’animazione e
+            ripetere ogni fase tutte le volte che vuoi.
+          </p>
+        </div>
+        <span class="level-badge" aria-label="Livello Foundation">Livello F</span>
+      </header>
+
+      <nav class="step-nav" aria-label="Passaggi della costruzione">
+        <button class="step-chip is-active" type="button" data-step="0" aria-current="step">
+          <span>0</span> Situazione
+        </button>
+        <button class="step-chip" type="button" data-step="1">
+          <span>1</span> Punti A e B
+        </button>
+        <button class="step-chip" type="button" data-step="2">
+          <span>2</span> Arco da A
+        </button>
+        <button class="step-chip" type="button" data-step="3">
+          <span>3</span> Arco da B
+        </button>
+        <button class="step-chip" type="button" data-step="4">
+          <span>4</span> Retta PC
+        </button>
+      </nav>
+
+      <section class="workspace" aria-label="Animazione GeoGebra">
+        <div class="ggb-frame">
+          <div id="ggb-element" aria-label="Costruzione geometrica interattiva"></div>
+          <div id="loading-state" class="loading-state" role="status" aria-live="polite">
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Caricamento di GeoGebra…</span>
+          </div>
+        </div>
+
+        <aside class="step-card" aria-live="polite" aria-atomic="true">
+          <p id="step-kicker" class="step-card__kicker">Prima di iniziare</p>
+          <h2 id="step-title">Osserva la situazione</h2>
+          <p id="step-description">
+            La retta r passa per P. Il nostro obiettivo è costruire, senza usare il
+            rapportatore, una seconda retta che formi un angolo di 90° proprio in P.
+          </p>
+          <div id="step-equality" class="equality" hidden></div>
+          <p id="step-tip" class="tip">
+            <span aria-hidden="true">🎯</span>
+            Cerca il punto P al centro della retta.
+          </p>
+        </aside>
+      </section>
+
+      <section class="controls" aria-label="Controlli dell’animazione">
+        <button id="previous-button" class="button button--secondary" type="button" disabled>
+          <span aria-hidden="true">←</span> Indietro
+        </button>
+        <button id="play-button" class="button button--primary" type="button" disabled>
+          <span class="play-icon" aria-hidden="true">▶</span>
+          <span class="play-label">Avvia tutta la costruzione</span>
+        </button>
+        <button id="next-button" class="button button--secondary" type="button" disabled>
+          Avanti <span aria-hidden="true">→</span>
+        </button>
+      </section>
+
+      <section id="proof-panel" class="proof-panel" hidden>
+        <div class="proof-panel__copy">
+          <p class="proof-panel__kicker">Perché funziona?</p>
+          <h2>Due triangoli congruenti</h2>
+          <p>
+            <strong>PA = PB</strong>, <strong>AC = BC</strong> e il lato
+            <strong>PC</strong> è comune. I triangoli APC e BPC sono congruenti per il
+            criterio LLL. Gli angoli in P sono quindi uguali e, insieme, misurano 180°:
+            ciascuno misura <strong>90°</strong>.
+          </p>
+        </div>
+        <button id="proof-button" class="button button--proof" type="button" aria-pressed="false">
+          Mostra la dimostrazione LLL
+        </button>
+      </section>
+
+      <footer class="activity__footer">
+        <p>Trascina o ingrandisci la vista solo se vuoi osservare un dettaglio.</p>
+        <div class="footer-actions">
+          <button id="reset-button" class="text-button" type="button" disabled>Ricomincia</button>
+          <button id="download-button" class="text-button" type="button" disabled>
+            Scarica il file .ggb
+          </button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

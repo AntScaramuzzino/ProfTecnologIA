@@ -42,6 +42,7 @@ import MCImageCarousel from "@/components/mc/MCImageCarousel";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
+import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
@@ -619,11 +620,25 @@ function ZonePanel({
   // ── ESPLORA — AccordionSection ────────────────────────────────────────────
   if (tabId === "ESPLORA") {
     const accordionItems = splitEsploraIntoAccordion(body);
-    const items: AccordionItem[] = accordionItems.map((ai) => ({
-      id: ai.id,
-      title: ai.title,
-      children: <ReadableBodyInTab body={ai.body} />,
-    }));
+    const items: AccordionItem[] = accordionItems.map((ai) => {
+      const hasPerpendicularLab =
+        mc.id === "MC-DIS-1-01" &&
+        /Costruzione\s+1/i.test(ai.title) &&
+        /Perpendicolare\s+a\s+una\s+retta/i.test(ai.title);
+
+      return {
+        id: ai.id,
+        title: ai.title,
+        children: (
+          <>
+            {hasPerpendicularLab && (
+              <GeoGebraPerpendicularEmbed className="mb-6" />
+            )}
+            <ReadableBodyInTab body={ai.body} />
+          </>
+        ),
+      };
+    });
 
     // Galleria residua: esclude sketchnote (→ RIPASSA), infografiche processo (→ OSSERVA), compito_realta (→ AGISCI)
     const galleriaAssets = visuals.filter(

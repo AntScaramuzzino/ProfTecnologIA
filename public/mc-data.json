@@ -1,5 +1,5 @@
 {
-  "total": 52,
+  "total": 58,
   "mcs": [
     {
       "id": "MC-DIG-1-01",
@@ -636,6 +636,296 @@
         }
       ],
       "sdg_principale": 4
+    },
+    {
+      "id": "MC-INF-1-01",
+      "area": "INF",
+      "anno": 1,
+      "titolo": "Il linguaggio binario: bit, byte e rappresentazione dei dati",
+      "descrizione": "Lo studente comprende che il computer rappresenta qualsiasi informazione (testi, immagini, suoni) come sequenze di 0 e 1, conosce il sistema binario e le unità di misura dell'informazione (bit, byte, KB, MB, GB), e applica queste conoscenze per calcolare le dimensioni di file digitali.",
+      "fonte": "Hypertech 2020 + originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Comprende i principi di funzionamento dei sistemi digitali e dei linguaggi di programmazione",
+          "traguardo": "Lo studente comprende come le informazioni vengono rappresentate e codificate nei sistemi digitali"
+        },
+        "DC": {
+          "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+          "livello": "F",
+          "nota": "Lo studente comprende la natura digitale delle informazioni e le unità con cui vengono misurate"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Spotting opportunities",
+          "nota": "Lo studente riconosce come la codifica binaria è alla base di tutte le innovazioni digitali"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente analizza la struttura binaria dell'informazione con approccio logico e quantitativo"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "Comprendere la codifica digitale è competenza fondamentale per una cittadinanza digitale consapevole nel XXI secolo"
+        }
+      },
+      "outputApp": {
+        "quiz": "Domande su sistema binario, conversioni decimale-binario, calcolo dimensioni file (bit/byte/KB/MB). 18 domande 6F+6I+6A con feedback.",
+        "microlearning": "Process: 5 passi — dal transistor al bit, dal bit al byte, dal byte all'immagine. Checklist: verifica comprensione unità di misura.",
+        "visual": "Infografica anatomia di un pixel RGB: tre canali R/G/B con valori numerici e sequenza binaria corrispondente.",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [],
+      "tags": [
+        "binario",
+        "bit",
+        "byte",
+        "pixel",
+        "RGB",
+        "ASCII",
+        "Unicode",
+        "compressione",
+        "informatica",
+        "classe-1",
+        "INF"
+      ],
+      "compito_realta": "Calcola lo spazio necessario per archiviare l'archivio fotografico della tua scuola: scegli una risoluzione di scansione, calcola la dimensione di un singolo file e il totale per 200 fotografie storiche, poi scrivi una raccomandazione motivata al preside.",
+      "sdg": [
+        4,
+        9
+      ],
+      "sdg_principale": 4,
+      "note_didattiche": {
+        "base": "Usare la tabella ASCII già stampata. Lo studente converte solo le lettere del proprio nome (4 caratteri) e calcola i byte usati.",
+        "avanzato": "Progettare un sistema di codifica per un sensore di temperatura con vincoli di banda: analisi del range, scelta dei bit, calcolo del traffico dati e confronto tra alternative."
+      },
+      "hook_audio": {
+        "durata_min": 3.62,
+        "durata_secondi": 217,
+        "titolo_hook": "Dodici milioni di pixel"
+      },
+      "professione_futura": {
+        "titolo": "Sviluppatore di sistemi embedded e IoT",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta dispositivi connessi che comunicano in linguaggio binario su reti a banda limitata, ottimizzando la rappresentazione dei dati per efficienza energetica e affidabilità.",
+        "competenze_chiave": [
+          "sistemi di numerazione",
+          "codifica dell'informazione",
+          "efficienza nella rappresentazione dei dati",
+          "pensiero astratto"
+        ]
+      },
+      "professioni_future": [
+        {
+          "titolo": "Sviluppatore di sistemi embedded e IoT",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta dispositivi connessi che comunicano in linguaggio binario su reti a banda limitata.",
+          "competenze_chiave": [
+            "sistemi di numerazione",
+            "codifica dell'informazione",
+            "efficienza nella rappresentazione dei dati",
+            "pensiero astratto"
+          ]
+        },
+        {
+          "titolo": "Computer Vision Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Sviluppa algoritmi per l'analisi automatica di immagini e video digitali, applicati a robotica, medicina e sorveglianza.",
+          "competenze_chiave": [
+            "rappresentazione digitale delle immagini",
+            "formati e compressione",
+            "algebra lineare",
+            "machine learning"
+          ]
+        }
+      ],
+      "clil_termini": [
+        {
+          "it": "cifra binaria",
+          "en": "bit (binary digit)",
+          "def": "La più piccola unità di informazione digitale: può valere solo 0 oppure 1"
+        },
+        {
+          "it": "byte",
+          "en": "byte",
+          "def": "Gruppo di 8 bit; unità base di misura dell'informazione digitale"
+        },
+        {
+          "it": "sistema binario",
+          "en": "binary system",
+          "def": "Sistema di numerazione in base 2 che usa solo le cifre 0 e 1, naturale per i circuiti elettronici"
+        },
+        {
+          "it": "pixel",
+          "en": "pixel",
+          "def": "Elemento minimo di un'immagine digitale; ogni pixel ha un colore espresso da tre valori RGB"
+        },
+        {
+          "it": "codifica",
+          "en": "encoding",
+          "def": "Processo di conversione di un'informazione (lettera, colore, suono) in una sequenza di bit"
+        },
+        {
+          "it": "compressione",
+          "en": "compression",
+          "def": "Algoritmo che riduce la dimensione di un file eliminando o compattando le ridondanze"
+        },
+        {
+          "it": "risoluzione",
+          "en": "resolution",
+          "def": "Numero di pixel per unità di lunghezza (es. 300 dpi); determina la qualità e le dimensioni di un'immagine"
+        },
+        {
+          "it": "profondità di colore",
+          "en": "color depth / bit depth",
+          "def": "Numero di bit usati per rappresentare il colore di ogni pixel; 24 bit = ~16 milioni di colori"
+        }
+      ],
+      "uda_collegata": "Come il computer memorizza il mondo: dall'interruttore al cloud — UDA interdisciplinare (Tecnologia + Matematica + Scienze)"
+    },
+    {
+      "id": "MC-INF-1-02",
+      "area": "INF",
+      "anno": 1,
+      "titolo": "Algoritmi e pensiero computazionale: dare istruzioni precise",
+      "descrizione": "Lo studente comprende cos'è un algoritmo e le sue tre strutture fondamentali (sequenza, selezione, iterazione), sa scrivere semplici algoritmi in pseudocodice e diagrammi di flusso, e sviluppa la capacità di scomporre un problema in passi precisi e privi di ambiguità.",
+      "fonte": "Hypertech 2020 + originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Utilizza il pensiero computazionale per analizzare e risolvere problemi in modo sistematico",
+          "traguardo": "Lo studente sa progettare algoritmi per risolvere problemi semplici, usando le strutture di sequenza, selezione e iterazione"
+        },
+        "DC": {
+          "ref": "5.2 Identificare bisogni e risposte tecnologiche",
+          "livello": "F",
+          "nota": "Lo studente traduce bisogni concreti in sequenze di istruzioni precise eseguibili da un sistema automatico"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Creativity",
+          "nota": "Lo studente applica il pensiero algoritmico per progettare soluzioni sistematiche a problemi quotidiani"
+        },
+        "LC": {
+          "ref": "Thinking / Problem solving",
+          "nota": "Lo studente scompone problemi complessi in passi elementari e identifica le strutture logiche necessarie"
+        },
+        "EV": {
+          "ref": "SDG 4 — Istruzione di qualità",
+          "nota": "Il pensiero algoritmico è competenza trasversale fondamentale per affrontare problemi complessi in modo sistematico in qualsiasi disciplina"
+        }
+      },
+      "outputApp": {
+        "quiz": "Domande su strutture di controllo, pseudocodice, debug, efficienza algoritmi. 18 domande 6F+6I+6A con feedback.",
+        "microlearning": "Process: 5 passi — dal problema all'algoritmo (analisi, selezione strutture, pseudocodice, test, debug). Checklist: verifica completezza algoritmo.",
+        "visual": "Infografica 'Le 3 strutture di controllo': tre colonne — Sequenza (blocchi in fila), Selezione (rombo con due rami), Iterazione (ciclo con freccia).",
+        "livelloDigComp": "F"
+      },
+      "prerequisiti": [
+        "MC-INF-1-01"
+      ],
+      "tags": [
+        "algoritmo",
+        "pensiero computazionale",
+        "sequenza",
+        "selezione",
+        "iterazione",
+        "pseudocodice",
+        "diagramma di flusso",
+        "bug",
+        "debug",
+        "informatica",
+        "classe-1",
+        "INF"
+      ],
+      "compito_realta": "Progetta e scrivi in pseudocodice un algoritmo per ordinare alfabeticamente i 64 partecipanti a un torneo scolastico, conta il numero di confronti nel caso peggiore e scrivi una riflessione su come cambia l'efficienza con 64.000 partecipanti.",
+      "sdg": [
+        4
+      ],
+      "sdg_principale": 4,
+      "note_didattiche": {
+        "base": "Scrivere le istruzioni passo-passo per un'azione quotidiana semplice (aprire lo zaino, prendere il quaderno), poi scambiare l'algoritmo con un compagno e seguirlo alla lettera per trovare ambiguità.",
+        "avanzato": "Analizzare l'efficienza comparata della ricerca sequenziale vs ricerca binaria su liste di 100, 1.000, 10.000 elementi; calcolare log₂(N) e scrivere una riflessione sui contesti in cui l'efficienza conta davvero."
+      },
+      "hook_audio": {
+        "durata_min": 3.67,
+        "durata_secondi": 220,
+        "titolo_hook": "Il panino impossibile"
+      },
+      "professione_futura": {
+        "titolo": "Data Scientist e analista di dati",
+        "orizzonte": "2030",
+        "descrizione_breve": "Scrive algoritmi per pulire, trasformare, analizzare e visualizzare dati grezzi, trasformando sequenze di numeri in informazioni utili per decisioni aziendali o scientifiche.",
+        "competenze_chiave": [
+          "pensiero algoritmico",
+          "sequenza logica",
+          "gestione di condizioni e cicli",
+          "approccio sistematico al problema"
+        ]
+      },
+      "professioni_future": [
+        {
+          "titolo": "Data Scientist e analista di dati",
+          "orizzonte": "2030",
+          "descrizione_breve": "Scrive algoritmi per trasformare dati grezzi in informazioni utili per decisioni aziendali o scientifiche.",
+          "competenze_chiave": [
+            "pensiero algoritmico",
+            "sequenza logica",
+            "gestione condizioni e cicli",
+            "approccio sistematico"
+          ]
+        },
+        {
+          "titolo": "Software Engineer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta e implementa software traducendo problemi reali in algoritmi precisi e in codice eseguibile da computer.",
+          "competenze_chiave": [
+            "algoritmi e strutture dati",
+            "debugging sistematico",
+            "analisi della complessità",
+            "linguaggi di programmazione"
+          ]
+        }
+      ],
+      "clil_termini": [
+        {
+          "it": "algoritmo",
+          "en": "algorithm",
+          "def": "Sequenza finita di istruzioni precise e non ambigue che risolve un problema in un numero finito di passi"
+        },
+        {
+          "it": "variabile",
+          "en": "variable",
+          "def": "Spazio di memoria con un nome in cui si può salvare e modificare un valore durante l'esecuzione di un algoritmo"
+        },
+        {
+          "it": "condizione",
+          "en": "condition",
+          "def": "Espressione che può essere vera o falsa; determina quale ramo eseguire nella struttura di selezione"
+        },
+        {
+          "it": "ciclo / iterazione",
+          "en": "loop / iteration",
+          "def": "Struttura che ripete un blocco di istruzioni finché una condizione rimane vera"
+        },
+        {
+          "it": "selezione",
+          "en": "selection / if-then-else",
+          "def": "Struttura che esegue un blocco di istruzioni diverso in base al valore di una condizione"
+        },
+        {
+          "it": "errore / bug",
+          "en": "bug",
+          "def": "Errore nell'algoritmo: istruzione sbagliata, condizione formulata male o sequenza nell'ordine sbagliato"
+        },
+        {
+          "it": "ricerca binaria",
+          "en": "binary search",
+          "def": "Algoritmo che trova un elemento in una lista ordinata dimezzando lo spazio di ricerca a ogni confronto"
+        },
+        {
+          "it": "diagramma di flusso",
+          "en": "flowchart",
+          "def": "Rappresentazione grafica di un algoritmo che usa simboli standard: rettangolo (azione), rombo (condizione), ovale (inizio/fine)"
+        }
+      ],
+      "uda_collegata": "Dal problema alla soluzione: pensiero algoritmico nella vita quotidiana — UDA interdisciplinare (Tecnologia + Matematica)"
     },
     {
       "id": "MC-MAT-1-01",
@@ -3807,6 +4097,303 @@
       ]
     },
     {
+      "id": "MC-INF-2-01",
+      "area": "INF",
+      "anno": 2,
+      "titolo": "Il sistema operativo: chi gestisce le risorse del computer",
+      "descrizione": "Lo studente comprende le quattro funzioni fondamentali di un sistema operativo (gestione processi, memoria, file system, periferiche), sa navigare il file system con consapevolezza della struttura ad albero, e riconosce le differenze tra i principali OS presenti sul mercato.",
+      "fonte": "Hypertech 2020 + originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Comprende il funzionamento dei sistemi operativi e la gestione delle risorse hardware e software",
+          "traguardo": "Lo studente sa descrivere le funzioni del sistema operativo e gestire consapevolmente il file system del proprio dispositivo"
+        },
+        "DC": {
+          "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+          "livello": "I",
+          "nota": "Lo studente gestisce file e cartelle con consapevolezza della struttura gerarchica, dei permessi e delle implicazioni per la privacy"
+        },
+        "EC": {
+          "ref": "Resources / Managing resources",
+          "nota": "Lo studente progetta strutture di file system per ottimizzare la gestione delle risorse digitali condivise"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking",
+          "nota": "Lo studente comprende le interazioni tra i componenti di un sistema operativo e le conseguenze di ogni scelta gestionale"
+        },
+        "EV": {
+          "ref": "SDG 9 — Imprese, innovazione e infrastrutture",
+          "nota": "La comprensione dei sistemi operativi è fondamentale per la progettazione e gestione dell'infrastruttura digitale su cui si basa l'economia moderna"
+        }
+      },
+      "outputApp": {
+        "quiz": "Domande su funzioni OS, multitasking, file system, percorsi, driver, differenze tra OS. 18 domande 6F+6I+6A con feedback.",
+        "microlearning": "Process: 6 passi — dall'accensione al login (POST → boot loader → kernel → servizi → login → lavoro). Checklist: verifica comprensione gestione processi e file system.",
+        "visual": "Infografica 'La sequenza di avvio in 3 secondi': timeline da accensione a login con tempi e componenti coinvolti.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-INF-1-02",
+        "MC-DIG-1-01"
+      ],
+      "tags": [
+        "sistema operativo",
+        "processi",
+        "file system",
+        "multitasking",
+        "driver",
+        "RAM",
+        "memoria virtuale",
+        "GUI",
+        "CLI",
+        "informatica",
+        "classe-2",
+        "INF"
+      ],
+      "compito_realta": "Progetta la struttura di file system per una cartella condivisa della tua classe (25 studenti, 4 materie, materiali di tipo diverso): disegna l'albero delle cartelle, definisci le regole di denominazione dei file e scrivi un mini-manuale per i tuoi compagni.",
+      "sdg": [
+        9
+      ],
+      "sdg_principale": 9,
+      "note_didattiche": {
+        "base": "Navigare il file system del proprio dispositivo, disegnare la struttura ad albero (almeno 3 livelli) e trovare la cartella delle foto con il percorso completo.",
+        "avanzato": "Progettare il file system di un server per una redazione giornalistica (15 giornalisti, 3 fotografi, 2 editor): struttura cartelle, permessi per ruolo, policy di naming, strategia di backup."
+      },
+      "hook_audio": {
+        "durata_min": 3.58,
+        "durata_secondi": 215,
+        "titolo_hook": "Il bibliotecario invisibile"
+      },
+      "professione_futura": {
+        "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Gestisce l'infrastruttura informatica di un'azienda: server, reti, sistemi operativi, backup, sicurezza — usando la riga di comando e automatizzando le operazioni con script.",
+        "competenze_chiave": [
+          "gestione sistemi operativi",
+          "riga di comando",
+          "automazione con script",
+          "monitoraggio prestazioni",
+          "sicurezza infrastruttura"
+        ]
+      },
+      "professioni_future": [
+        {
+          "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Gestisce l'infrastruttura informatica aziendale: server, OS, backup e sicurezza.",
+          "competenze_chiave": [
+            "gestione sistemi operativi",
+            "riga di comando",
+            "automazione con script",
+            "sicurezza infrastruttura"
+          ]
+        },
+        {
+          "titolo": "Cloud Infrastructure Engineer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta e gestisce infrastrutture informatiche su cloud (AWS, Google Cloud, Azure), applicando i principi OS a sistemi distribuiti su scala globale.",
+          "competenze_chiave": [
+            "cloud computing",
+            "virtualizzazione",
+            "container e orchestrazione",
+            "DevOps"
+          ]
+        }
+      ],
+      "clil_termini": [
+        {
+          "it": "sistema operativo",
+          "en": "operating system (OS)",
+          "def": "Programma che gestisce le risorse hardware e software del computer e permette a tutte le applicazioni di funzionare"
+        },
+        {
+          "it": "processo",
+          "en": "process",
+          "def": "Un programma in esecuzione; il sistema operativo crea un processo all'avvio di ogni applicazione"
+        },
+        {
+          "it": "multitasking",
+          "en": "multitasking",
+          "def": "Capacità di eseguire più processi contemporaneamente, assegnando a ciascuno brevi frazioni di tempo del processore"
+        },
+        {
+          "it": "file system",
+          "en": "file system",
+          "def": "Sistema di organizzazione gerarchica dei file su storage, strutturato ad albero con cartelle e sottocartelle"
+        },
+        {
+          "it": "percorso",
+          "en": "path",
+          "def": "Sequenza di cartelle che identifica univocamente la posizione di un file nel file system (es. /Utenti/nome/Documenti/file.txt)"
+        },
+        {
+          "it": "driver",
+          "en": "driver",
+          "def": "Programma che traduce tra il linguaggio di una periferica e il linguaggio standard usato dal sistema operativo"
+        },
+        {
+          "it": "interfaccia grafica",
+          "en": "GUI (Graphical User Interface)",
+          "def": "Modo di interazione con il computer tramite finestre, icone e menu; intuitivo ma limitato nelle funzioni avanzate"
+        },
+        {
+          "it": "riga di comando",
+          "en": "CLI (Command Line Interface)",
+          "def": "Modo di interazione con il computer tramite comandi testuali; meno intuitivo ma molto più potente e automatizzabile"
+        }
+      ],
+      "uda_collegata": "L'infrastruttura digitale della scuola: dall'OS al cloud — UDA interdisciplinare (Tecnologia + Matematica + Scienze)"
+    },
+    {
+      "id": "MC-INF-2-02",
+      "area": "INF",
+      "anno": 2,
+      "titolo": "Crittografia e sicurezza digitale: proteggere le informazioni",
+      "descrizione": "Lo studente comprende i principi della crittografia simmetrica e asimmetrica, sa riconoscere i meccanismi di sicurezza nelle comunicazioni digitali (HTTPS, certificati, firma digitale), e sviluppa un approccio critico alla protezione dei propri dati e delle proprie comunicazioni online.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Adotta comportamenti sicuri e consapevoli nella gestione dei dati personali e delle comunicazioni digitali",
+          "traguardo": "Lo studente comprende i meccanismi di protezione delle comunicazioni digitali e sa valutare il livello di sicurezza di un servizio online"
+        },
+        "DC": {
+          "ref": "4.1 Proteggere i dispositivi; 4.2 Proteggere i dati personali e la privacy",
+          "livello": "I",
+          "nota": "Lo studente comprende i meccanismi tecnici che proteggono le comunicazioni e sa valutare criticamente l'affidabilità di un servizio digitale"
+        },
+        "EC": {
+          "ref": "Into action / Taking the initiative",
+          "nota": "Lo studente adotta comportamenti proattivi per proteggere le proprie informazioni digitali, non affidarsi passivamente ai sistemi"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente valuta criticamente l'affidabilità e la sicurezza dei sistemi digitali che usa ogni giorno"
+        },
+        "EV": {
+          "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+          "nota": "La crittografia protegge la libertà di comunicazione e la privacy individuale, pilastri delle istituzioni democratiche nell'era digitale"
+        }
+      },
+      "outputApp": {
+        "quiz": "Domande su crittografia simmetrica/asimmetrica, HTTPS, certificati digitali, firma digitale, sicurezza delle password. 18 domande 6F+6I+6A con feedback.",
+        "microlearning": "Process: 5 passi — dal messaggio in chiaro alla comunicazione sicura (plaintext → chiave → cifratura → trasmissione → decifrazione). Checklist: verifica comportamenti sicuri online.",
+        "visual": "Infografica 'Come funziona HTTPS': dal lucchetto verde nel browser al certificato SSL/TLS, con schema della handshake crittografica.",
+        "livelloDigComp": "I"
+      },
+      "prerequisiti": [
+        "MC-INF-2-01",
+        "MC-INF-1-01"
+      ],
+      "tags": [
+        "crittografia",
+        "sicurezza digitale",
+        "HTTPS",
+        "chiave simmetrica",
+        "chiave asimmetrica",
+        "certificato digitale",
+        "firma digitale",
+        "privacy",
+        "informatica",
+        "classe-2",
+        "INF"
+      ],
+      "compito_realta": "Analizza la sicurezza di tre siti web che usi regolarmente: verifica la presenza di HTTPS, leggi le informazioni del certificato digitale, e scrivi una valutazione critica di quale sia il più affidabile e perché — con almeno 3 criteri di giudizio.",
+      "sdg": [
+        16,
+        4
+      ],
+      "sdg_principale": 16,
+      "note_didattiche": {
+        "base": "Cifrare e decifrare un messaggio con un cifrario di Cesare (sostituzione semplice), poi discutere perché questo tipo di crittografia è oggi inutile contro un computer moderno.",
+        "avanzato": "Simulare uno scambio di messaggi cifrati con crittografia asimmetrica (chiave pubblica/privata): generare una coppia di chiavi concettuale, cifrare con la chiave pubblica del destinatario, decifrare con la chiave privata, discutere le implicazioni per la firma digitale."
+      },
+      "hook_audio": {
+        "durata_min": 3.92,
+        "durata_secondi": 235,
+        "titolo_hook": "Il matematico che salvò milioni di vite"
+      },
+      "professione_futura": {
+        "titolo": "Cybersecurity Analyst",
+        "orizzonte": "2030",
+        "descrizione_breve": "Protegge i sistemi informatici di un'organizzazione da attacchi e violazioni, analizza le vulnerabilità e progetta meccanismi di difesa basati sulla crittografia e su protocolli sicuri.",
+        "competenze_chiave": [
+          "crittografia applicata",
+          "protocolli di sicurezza",
+          "analisi delle vulnerabilità",
+          "sicurezza delle reti",
+          "incident response"
+        ]
+      },
+      "professioni_future": [
+        {
+          "titolo": "Cybersecurity Analyst",
+          "orizzonte": "2030",
+          "descrizione_breve": "Protegge sistemi informatici da attacchi, analizza vulnerabilità e progetta meccanismi di difesa.",
+          "competenze_chiave": [
+            "crittografia applicata",
+            "protocolli di sicurezza",
+            "analisi delle vulnerabilità",
+            "incident response"
+          ]
+        },
+        {
+          "titolo": "Privacy Engineer",
+          "orizzonte": "2029",
+          "descrizione_breve": "Progetta sistemi software che rispettano il GDPR e la privacy by design, integrando la protezione dei dati fin dalla fase di progettazione.",
+          "competenze_chiave": [
+            "privacy by design",
+            "GDPR",
+            "anonimizzazione dei dati",
+            "crittografia",
+            "risk assessment"
+          ]
+        }
+      ],
+      "clil_termini": [
+        {
+          "it": "crittografia",
+          "en": "cryptography",
+          "def": "Disciplina che studia come trasformare un messaggio in modo che solo il destinatario autorizzato possa leggerlo"
+        },
+        {
+          "it": "chiave simmetrica",
+          "en": "symmetric key",
+          "def": "Sistema crittografico in cui mittente e destinatario usano la stessa chiave per cifrare e decifrare"
+        },
+        {
+          "it": "chiave asimmetrica",
+          "en": "asymmetric key / public-private key",
+          "def": "Sistema in cui esistono due chiavi correlate: la chiave pubblica (per cifrare) e la chiave privata (per decifrare)"
+        },
+        {
+          "it": "certificato digitale",
+          "en": "digital certificate",
+          "def": "Documento elettronico che attesta l'identità di un sito web o di un'organizzazione, rilasciato da una autorità di certificazione"
+        },
+        {
+          "it": "firma digitale",
+          "en": "digital signature",
+          "def": "Meccanismo crittografico che permette di verificare l'autenticità e l'integrità di un documento digitale"
+        },
+        {
+          "it": "protocollo sicuro",
+          "en": "HTTPS (HyperText Transfer Protocol Secure)",
+          "def": "Versione cifrata del protocollo HTTP che protegge le comunicazioni tra browser e server web tramite TLS"
+        },
+        {
+          "it": "testo in chiaro",
+          "en": "plaintext",
+          "def": "Il messaggio originale, leggibile, prima della cifratura"
+        },
+        {
+          "it": "testo cifrato",
+          "en": "ciphertext",
+          "def": "Il messaggio dopo la cifratura, illeggibile senza la chiave di decifrazione"
+        }
+      ],
+      "uda_collegata": "Messaggi sicuri: da Giulio Cesare a WhatsApp — UDA interdisciplinare (Tecnologia + Storia + Matematica)"
+    },
+    {
       "id": "MC-COM-3-01",
       "area": "COM",
       "anno": 3,
@@ -6128,6 +6715,306 @@
           ]
         }
       ]
+    },
+    {
+      "id": "MC-INF-3-01",
+      "area": "INF",
+      "anno": 3,
+      "titolo": "Internet delle Cose: quando gli oggetti si connettono",
+      "descrizione": "Lo studente comprende il paradigma IoT (Internet of Things), sa descrivere il ciclo dati dai sensori al cloud, conosce le principali applicazioni in ambito industriale, sanitario e domestico, e valuta criticamente le implicazioni di sicurezza e privacy legate alla proliferazione dei dispositivi connessi.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Comprende le reti di comunicazione e il funzionamento dei sistemi digitali distribuiti; riflette sulle implicazioni sociali e etiche delle tecnologie emergenti",
+          "traguardo": "Lo studente sa descrivere il funzionamento di un sistema IoT e valutarne criticamente le implicazioni per la sicurezza e la privacy"
+        },
+        "DC": {
+          "ref": "2.1 Interagire con tecnologie digitali; 4.1 Proteggere i dispositivi; 5.1 Risolvere problemi tecnici",
+          "livello": "A",
+          "nota": "Lo studente analizza in modo avanzato i sistemi IoT, valuta i rischi di sicurezza e progetta soluzioni consapevoli per ambienti connessi"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Spotting opportunities; Into action / Working with others",
+          "nota": "Lo studente identifica opportunità di innovazione nell'IoT e progetta soluzioni che bilanciano funzionalità, sicurezza e sostenibilità"
+        },
+        "LC": {
+          "ref": "Thinking / Systems thinking; Social / Cooperation",
+          "nota": "Lo studente analizza i sistemi IoT come ecosistemi complessi con componenti fisici, digitali e sociali interconnessi"
+        },
+        "EV": {
+          "ref": "SDG 9 — Imprese, innovazione e infrastrutture",
+          "nota": "L'IoT è infrastruttura abilitante per industria 4.0, smart city e agricoltura di precisione — componenti centrali dello sviluppo sostenibile"
+        }
+      },
+      "outputApp": {
+        "quiz": "Domande su architettura IoT, protocolli (MQTT, Zigbee, LoRaWAN), edge computing, sicurezza dei dispositivi connessi, applicazioni in ambito industriale e sanitario. 18 domande 6F+6I+6A con feedback.",
+        "microlearning": "Process: 6 passi — dal sensore al cloud (sensore → microcontrollore → gateway → rete → cloud → applicazione). Checklist: verifica comprensione architettura IoT e rischi di sicurezza.",
+        "visual": "Infografica 'Ecosistema IoT': diagramma con i livelli dell'architettura — dal dispositivo fisico all'applicazione cloud — con esempi per ciascun livello.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-INF-2-02",
+        "MC-COM-3-01"
+      ],
+      "tags": [
+        "IoT",
+        "Internet delle Cose",
+        "sensori",
+        "edge computing",
+        "cloud",
+        "protocolli",
+        "smart city",
+        "industria 4.0",
+        "sicurezza IoT",
+        "informatica",
+        "classe-3",
+        "INF"
+      ],
+      "compito_realta": "Progetta un sistema IoT per monitorare i consumi energetici della tua scuola: identifica i sensori necessari (temperatura, luce, presenza), descrivi l'architettura dal dispositivo al cloud, calcola il traffico dati generato in un giorno e proponi come visualizzare i dati per supportare decisioni di risparmio energetico.",
+      "sdg": [
+        9,
+        11,
+        13
+      ],
+      "sdg_principale": 9,
+      "note_didattiche": {
+        "base": "Analizzare i dispositivi IoT già presenti a casa propria o a scuola: identificarli, descrivere che dati raccolgono e a chi li inviano, e valutare se si sa come aggiornarli o come disattivarli.",
+        "avanzato": "Progettare l'architettura completa di un sistema IoT per un'applicazione reale (es. monitoraggio qualità dell'aria in classe): sensori, protocollo di trasmissione, architettura cloud, interfaccia di visualizzazione, e analisi dei rischi di sicurezza con contromisure."
+      },
+      "hook_audio": {
+        "durata_min": 4.07,
+        "durata_secondi": 244,
+        "titolo_hook": "Il pacemaker testimone"
+      },
+      "professione_futura": {
+        "titolo": "IoT Solutions Architect",
+        "orizzonte": "2030",
+        "descrizione_breve": "Progetta sistemi di oggetti connessi per industria, città e salute: definisce l'architettura hardware/software, sceglie i protocolli di comunicazione e garantisce sicurezza e scalabilità dell'ecosistema IoT.",
+        "competenze_chiave": [
+          "architettura IoT",
+          "protocolli di comunicazione",
+          "edge e cloud computing",
+          "sicurezza embedded",
+          "analisi dei dati in tempo reale"
+        ]
+      },
+      "professioni_future": [
+        {
+          "titolo": "IoT Solutions Architect",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta sistemi di oggetti connessi per industria, città e salute.",
+          "competenze_chiave": [
+            "architettura IoT",
+            "protocolli di comunicazione",
+            "edge e cloud computing",
+            "sicurezza embedded"
+          ]
+        },
+        {
+          "titolo": "Smart City Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta e gestisce le infrastrutture digitali delle città intelligenti: traffico, illuminazione, rifiuti, qualità dell'aria — tutto connesso e ottimizzato in tempo reale.",
+          "competenze_chiave": [
+            "urban computing",
+            "reti di sensori",
+            "analisi dati geospaziali",
+            "sostenibilità energetica"
+          ]
+        }
+      ],
+      "clil_termini": [
+        {
+          "it": "Internet delle Cose",
+          "en": "IoT (Internet of Things)",
+          "def": "Rete di dispositivi fisici dotati di sensori, software e connettività che raccolgono e scambiano dati via internet"
+        },
+        {
+          "it": "sensore",
+          "en": "sensor",
+          "def": "Componente che misura una grandezza fisica (temperatura, luce, pressione, posizione) e la converte in un segnale digitale"
+        },
+        {
+          "it": "elaborazione locale",
+          "en": "edge computing",
+          "def": "Elaborazione dei dati direttamente sul dispositivo o in prossimità di esso, riducendo la latenza e il traffico verso il cloud"
+        },
+        {
+          "it": "protocollo leggero",
+          "en": "MQTT (Message Queuing Telemetry Transport)",
+          "def": "Protocollo di comunicazione progettato per dispositivi IoT con risorse limitate e connessioni instabili"
+        },
+        {
+          "it": "gateway",
+          "en": "gateway",
+          "def": "Dispositivo che collega la rete locale dei sensori IoT alla rete internet, gestendo protocolli e sicurezza"
+        },
+        {
+          "it": "firmware",
+          "en": "firmware",
+          "def": "Software permanente incorporato in un dispositivo hardware; controlla le funzioni di base del microcontrollore IoT"
+        },
+        {
+          "it": "gemello digitale",
+          "en": "digital twin",
+          "def": "Replica virtuale di un sistema fisico, aggiornata in tempo reale dai sensori IoT, usata per simulare e ottimizzare il comportamento"
+        },
+        {
+          "it": "superficie di attacco",
+          "en": "attack surface",
+          "def": "Insieme di tutti i punti di ingresso attraverso cui un attaccante può tentare di accedere a un sistema — nei sistemi IoT è molto ampia"
+        }
+      ],
+      "uda_collegata": "La scuola intelligente: progettare un sistema IoT per risparmiare energia — UDA interdisciplinare (Tecnologia + Scienze + Matematica + Educazione Civica)"
+    },
+    {
+      "id": "MC-INF-3-02",
+      "area": "INF",
+      "anno": 3,
+      "titolo": "Machine learning e intelligenza artificiale: come imparano le macchine",
+      "descrizione": "Lo studente comprende i principi fondamentali del machine learning (apprendimento da dati, training/test, classificazione), sa riconoscere i bias algoritmici e le loro conseguenze sociali, e sviluppa un approccio critico e informato nei confronti dei sistemi di intelligenza artificiale che incontra nella vita quotidiana.",
+      "fonte": "originale",
+      "frameworks": {
+        "IN": {
+          "ref": "IN 2025 (D.M. n. 221/2025) — Riflette criticamente sulle implicazioni etiche, sociali e culturali dell'intelligenza artificiale; comprende i principi di funzionamento dei modelli di apprendimento automatico",
+          "traguardo": "Lo studente sa descrivere come funziona il machine learning, riconosce i bias algoritmici e valuta criticamente le applicazioni dell'IA nella vita quotidiana"
+        },
+        "DC": {
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali; 5.4 Identificare lacune nelle competenze digitali",
+          "livello": "A",
+          "nota": "Lo studente valuta in modo avanzato i sistemi AI che usa quotidianamente, riconosce le loro limitazioni e i rischi di bias, e adotta un atteggiamento critico e informato"
+        },
+        "EC": {
+          "ref": "Ideas and opportunities / Creativity; Into action / Ethical and sustainable thinking",
+          "nota": "Lo studente valuta le opportunità e i rischi dell'IA con pensiero etico e prospettiva di lungo periodo"
+        },
+        "LC": {
+          "ref": "Thinking / Critical thinking; Thinking / Systems thinking",
+          "nota": "Lo studente analizza criticamente i sistemi AI, identifica i meccanismi di bias e le loro conseguenze sistemiche sulla società"
+        },
+        "EV": {
+          "ref": "SDG 10 — Ridurre le disuguaglianze",
+          "nota": "I bias algoritmici possono amplificare le disuguaglianze esistenti; comprenderne i meccanismi è fondamentale per una IA equa e inclusiva"
+        }
+      },
+      "outputApp": {
+        "quiz": "Domande su machine learning (supervised/unsupervised), training set, overfitting, bias algoritmici, applicazioni AI (raccomandazione, riconoscimento, generazione). 18 domande 6F+6I+6A con feedback.",
+        "microlearning": "Process: 6 passi — come un modello ML impara (raccolta dati → preparazione → training → valutazione → deployment → monitoring). Checklist: riconoscere i bias e valutare criticamente un sistema AI.",
+        "visual": "Infografica 'Come impara un classificatore': dal dato grezzo al modello addestrato — con esempio di riconoscimento immagini e visualizzazione del training set.",
+        "livelloDigComp": "A"
+      },
+      "prerequisiti": [
+        "MC-INF-3-01",
+        "MC-DIG-3-01"
+      ],
+      "tags": [
+        "machine learning",
+        "intelligenza artificiale",
+        "AI",
+        "bias algoritmico",
+        "training set",
+        "classificazione",
+        "raccomandazione",
+        "etica AI",
+        "informatica",
+        "classe-3",
+        "INF"
+      ],
+      "compito_realta": "Analizza tre algoritmi di raccomandazione che usi ogni giorno (Spotify, YouTube, TikTok o simili): descrivi come funzionano, identifica un possibile bias in ciascuno, e scrivi una proposta concreta per rendere uno di questi sistemi più equo e trasparente — motivando ogni scelta.",
+      "sdg": [
+        10,
+        4,
+        16
+      ],
+      "sdg_principale": 10,
+      "note_didattiche": {
+        "base": "Giocare con un classificatore semplice (es. classificare immagini di animali con uno strumento didattico online), osservare quando sbaglia e discutere perché — introducendo il concetto di errore del modello e di importanza dei dati di training.",
+        "avanzato": "Progettare un sistema di raccomandazione etico per la biblioteca scolastica: definire il dataset, identificare possibili bias (genere, provenienza degli autori, lingua), proporre metriche di equità e progettare un meccanismo di audit periodico."
+      },
+      "hook_audio": {
+        "durata_min": 3.88,
+        "durata_secondi": 233,
+        "titolo_hook": "Il milione di dollari che nessuno ha usato"
+      },
+      "professione_futura": {
+        "titolo": "AI Ethics Researcher e Responsible AI Engineer",
+        "orizzonte": "2030",
+        "descrizione_breve": "Studia e progetta sistemi di intelligenza artificiale equi, trasparenti e responsabili: analizza i bias nei dataset e negli algoritmi, sviluppa strumenti di audit e definisce framework etici per lo sviluppo AI.",
+        "competenze_chiave": [
+          "machine learning applicato",
+          "analisi dei bias algoritmici",
+          "framework etici per l'AI",
+          "interpretabilità dei modelli",
+          "valutazione dell'impatto sociale"
+        ]
+      },
+      "professioni_future": [
+        {
+          "titolo": "AI Ethics Researcher e Responsible AI Engineer",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta sistemi AI equi e trasparenti, analizza bias e sviluppa framework etici.",
+          "competenze_chiave": [
+            "machine learning applicato",
+            "analisi dei bias algoritmici",
+            "framework etici per l'AI",
+            "interpretabilità dei modelli"
+          ]
+        },
+        {
+          "titolo": "ML Engineer",
+          "orizzonte": "2028",
+          "descrizione_breve": "Progetta, addestra e mette in produzione modelli di machine learning per applicazioni reali: dalla raccolta dei dati al deployment scalabile.",
+          "competenze_chiave": [
+            "deep learning",
+            "MLOps",
+            "feature engineering",
+            "Python e framework ML",
+            "ottimizzazione modelli"
+          ]
+        }
+      ],
+      "clil_termini": [
+        {
+          "it": "apprendimento automatico",
+          "en": "machine learning",
+          "def": "Branca dell'IA che permette ai computer di apprendere da dati ed esempi senza essere esplicitamente programmati per ogni caso"
+        },
+        {
+          "it": "insieme di addestramento",
+          "en": "training set",
+          "def": "Raccolta di dati etichettati usata per addestrare un modello di machine learning"
+        },
+        {
+          "it": "classificatore",
+          "en": "classifier",
+          "def": "Modello di machine learning che assegna un'etichetta (categoria) a ogni nuovo dato in base a pattern appresi durante il training"
+        },
+        {
+          "it": "distorsione algoritmica",
+          "en": "algorithmic bias",
+          "def": "Errore sistematico di un algoritmo che produce risultati ingiustamente favorevoli o sfavorevoli per certi gruppi, spesso ereditato dai dati di training"
+        },
+        {
+          "it": "sovra-adattamento",
+          "en": "overfitting",
+          "def": "Problema per cui un modello impara troppo bene i dati di training e fatica a generalizzare su dati nuovi"
+        },
+        {
+          "it": "rete neurale",
+          "en": "neural network",
+          "def": "Modello computazionale ispirato al cervello umano, composto da strati di nodi interconnessi; alla base del deep learning"
+        },
+        {
+          "it": "interpretabilità",
+          "en": "explainability / XAI",
+          "def": "Capacità di un modello AI di fornire spiegazioni comprensibili delle proprie decisioni — cruciale in ambiti come medicina, giustizia e finanza"
+        },
+        {
+          "it": "sistema di raccomandazione",
+          "en": "recommendation system",
+          "def": "Algoritmo che suggerisce contenuti o prodotti personalizzati in base ai comportamenti passati dell'utente e di utenti simili"
+        }
+      ],
+      "uda_collegata": "L'IA in classe: capire, usare e valutare gli strumenti di intelligenza artificiale — UDA interdisciplinare (Tecnologia + Matematica + Educazione Civica + Italiano)"
     },
     {
       "id": "MC-SIS-3-01",
