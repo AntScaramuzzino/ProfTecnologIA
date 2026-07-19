@@ -34,7 +34,10 @@
     "visual": "Infografica 'Ecosistema IoT': diagramma con i livelli dell'architettura — dal dispositivo fisico all'applicazione cloud — con esempi per ciascun livello.",
     "livelloDigComp": "A"
   },
-  "prerequisiti": ["MC-INF-2-02", "MC-COM-3-01"],
+  "prerequisiti": [
+    "MC-INF-2-02",
+    "MC-COM-3-01"
+  ],
   "tags": [
     "IoT",
     "Internet delle Cose",
@@ -50,15 +53,19 @@
     "INF"
   ],
   "compito_realta": "Progetta un sistema IoT per monitorare i consumi energetici della tua scuola: identifica i sensori necessari (temperatura, luce, presenza), descrivi l'architettura dal dispositivo al cloud, calcola il traffico dati generato in un giorno e proponi come visualizzare i dati per supportare decisioni di risparmio energetico.",
-  "sdg": [9, 11, 13],
+  "sdg": [
+    9,
+    11,
+    13
+  ],
   "sdg_principale": 9,
   "note_didattiche": {
     "base": "Analizzare i dispositivi IoT già presenti a casa propria o a scuola: identificarli, descrivere che dati raccolgono e a chi li inviano, e valutare se si sa come aggiornarli o come disattivarli.",
     "avanzato": "Progettare l'architettura completa di un sistema IoT per un'applicazione reale (es. monitoraggio qualità dell'aria in classe): sensori, protocollo di trasmissione, architettura cloud, interfaccia di visualizzazione, e analisi dei rischi di sicurezza con contromisure."
   },
   "hook_audio": {
-    "durata_min": 2.67,
-    "durata_secondi": 160,
+    "durata_min": 4.07,
+    "durata_secondi": 244,
     "titolo_hook": "Il pacemaker testimone"
   },
   "professione_futura": {

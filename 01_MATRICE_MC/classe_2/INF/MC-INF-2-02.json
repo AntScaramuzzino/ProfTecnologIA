@@ -34,7 +34,10 @@
     "visual": "Infografica 'Come funziona HTTPS': dal lucchetto verde nel browser al certificato SSL/TLS, con schema della handshake crittografica.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": ["MC-INF-2-01", "MC-INF-1-01"],
+  "prerequisiti": [
+    "MC-INF-2-01",
+    "MC-INF-1-01"
+  ],
   "tags": [
     "crittografia",
     "sicurezza digitale",
@@ -49,15 +52,18 @@
     "INF"
   ],
   "compito_realta": "Analizza la sicurezza di tre siti web che usi regolarmente: verifica la presenza di HTTPS, leggi le informazioni del certificato digitale, e scrivi una valutazione critica di quale sia il più affidabile e perché — con almeno 3 criteri di giudizio.",
-  "sdg": [16, 4],
+  "sdg": [
+    16,
+    4
+  ],
   "sdg_principale": 16,
   "note_didattiche": {
     "base": "Cifrare e decifrare un messaggio con un cifrario di Cesare (sostituzione semplice), poi discutere perché questo tipo di crittografia è oggi inutile contro un computer moderno.",
     "avanzato": "Simulare uno scambio di messaggi cifrati con crittografia asimmetrica (chiave pubblica/privata): generare una coppia di chiavi concettuale, cifrare con la chiave pubblica del destinatario, decifrare con la chiave privata, discutere le implicazioni per la firma digitale."
   },
   "hook_audio": {
-    "durata_min": 2.58,
-    "durata_secondi": 155,
+    "durata_min": 3.92,
+    "durata_secondi": 235,
     "titolo_hook": "Il matematico che salvò milioni di vite"
   },
   "professione_futura": {

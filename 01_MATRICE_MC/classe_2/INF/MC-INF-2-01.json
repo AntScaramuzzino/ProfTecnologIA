@@ -34,7 +34,10 @@
     "visual": "Infografica 'La sequenza di avvio in 3 secondi': timeline da accensione a login con tempi e componenti coinvolti.",
     "livelloDigComp": "I"
   },
-  "prerequisiti": ["MC-INF-1-02", "MC-DIG-1-01"],
+  "prerequisiti": [
+    "MC-INF-1-02",
+    "MC-DIG-1-01"
+  ],
   "tags": [
     "sistema operativo",
     "processi",
@@ -50,15 +53,17 @@
     "INF"
   ],
   "compito_realta": "Progetta la struttura di file system per una cartella condivisa della tua classe (25 studenti, 4 materie, materiali di tipo diverso): disegna l'albero delle cartelle, definisci le regole di denominazione dei file e scrivi un mini-manuale per i tuoi compagni.",
-  "sdg": [9],
+  "sdg": [
+    9
+  ],
   "sdg_principale": 9,
   "note_didattiche": {
     "base": "Navigare il file system del proprio dispositivo, disegnare la struttura ad albero (almeno 3 livelli) e trovare la cartella delle foto con il percorso completo.",
     "avanzato": "Progettare il file system di un server per una redazione giornalistica (15 giornalisti, 3 fotografi, 2 editor): struttura cartelle, permessi per ruolo, policy di naming, strategia di backup."
   },
   "hook_audio": {
-    "durata_min": 2.5,
-    "durata_secondi": 150,
+    "durata_min": 3.58,
+    "durata_secondi": 215,
     "titolo_hook": "Il bibliotecario invisibile"
   },
   "professione_futura": {

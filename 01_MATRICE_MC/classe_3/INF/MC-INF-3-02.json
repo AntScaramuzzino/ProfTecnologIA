@@ -34,7 +34,10 @@
     "visual": "Infografica 'Come impara un classificatore': dal dato grezzo al modello addestrato — con esempio di riconoscimento immagini e visualizzazione del training set.",
     "livelloDigComp": "A"
   },
-  "prerequisiti": ["MC-INF-3-01", "MC-DIG-3-01"],
+  "prerequisiti": [
+    "MC-INF-3-01",
+    "MC-DIG-3-01"
+  ],
   "tags": [
     "machine learning",
     "intelligenza artificiale",
@@ -49,15 +52,19 @@
     "INF"
   ],
   "compito_realta": "Analizza tre algoritmi di raccomandazione che usi ogni giorno (Spotify, YouTube, TikTok o simili): descrivi come funzionano, identifica un possibile bias in ciascuno, e scrivi una proposta concreta per rendere uno di questi sistemi più equo e trasparente — motivando ogni scelta.",
-  "sdg": [10, 4, 16],
+  "sdg": [
+    10,
+    4,
+    16
+  ],
   "sdg_principale": 10,
   "note_didattiche": {
     "base": "Giocare con un classificatore semplice (es. classificare immagini di animali con uno strumento didattico online), osservare quando sbaglia e discutere perché — introducendo il concetto di errore del modello e di importanza dei dati di training.",
     "avanzato": "Progettare un sistema di raccomandazione etico per la biblioteca scolastica: definire il dataset, identificare possibili bias (genere, provenienza degli autori, lingua), proporre metriche di equità e progettare un meccanismo di audit periodico."
   },
   "hook_audio": {
-    "durata_min": 2.75,
-    "durata_secondi": 165,
+    "durata_min": 3.88,
+    "durata_secondi": 233,
     "titolo_hook": "Il milione di dollari che nessuno ha usato"
   },
   "professione_futura": {

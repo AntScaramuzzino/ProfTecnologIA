@@ -34,7 +34,9 @@
     "visual": "Infografica 'Le 3 strutture di controllo': tre colonne — Sequenza (blocchi in fila), Selezione (rombo con due rami), Iterazione (ciclo con freccia).",
     "livelloDigComp": "F"
   },
-  "prerequisiti": ["MC-INF-1-01"],
+  "prerequisiti": [
+    "MC-INF-1-01"
+  ],
   "tags": [
     "algoritmo",
     "pensiero computazionale",
@@ -50,15 +52,17 @@
     "INF"
   ],
   "compito_realta": "Progetta e scrivi in pseudocodice un algoritmo per ordinare alfabeticamente i 64 partecipanti a un torneo scolastico, conta il numero di confronti nel caso peggiore e scrivi una riflessione su come cambia l'efficienza con 64.000 partecipanti.",
-  "sdg": [4],
+  "sdg": [
+    4
+  ],
   "sdg_principale": 4,
   "note_didattiche": {
     "base": "Scrivere le istruzioni passo-passo per un'azione quotidiana semplice (aprire lo zaino, prendere il quaderno), poi scambiare l'algoritmo con un compagno e seguirlo alla lettera per trovare ambiguità.",
     "avanzato": "Analizzare l'efficienza comparata della ricerca sequenziale vs ricerca binaria su liste di 100, 1.000, 10.000 elementi; calcolare log₂(N) e scrivere una riflessione sui contesti in cui l'efficienza conta davvero."
   },
   "hook_audio": {
-    "durata_min": 2.42,
-    "durata_secondi": 145,
+    "durata_min": 3.67,
+    "durata_secondi": 220,
     "titolo_hook": "Il panino impossibile"
   },
   "professione_futura": {
