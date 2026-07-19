@@ -1,0 +1,148 @@
+{
+  "id": "MC-INF-2-01",
+  "area": "INF",
+  "anno": 2,
+  "titolo": "Il sistema operativo: chi gestisce le risorse del computer",
+  "descrizione": "Lo studente comprende le quattro funzioni fondamentali di un sistema operativo (gestione processi, memoria, file system, periferiche), sa navigare il file system con consapevolezza della struttura ad albero, e riconosce le differenze tra i principali OS presenti sul mercato.",
+  "fonte": "Hypertech 2020 + originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Comprende il funzionamento dei sistemi operativi e la gestione delle risorse hardware e software",
+      "traguardo": "Lo studente sa descrivere le funzioni del sistema operativo e gestire consapevolmente il file system del proprio dispositivo"
+    },
+    "DC": {
+      "ref": "1.3 Gestire dati, informazioni e contenuti digitali",
+      "livello": "I",
+      "nota": "Lo studente gestisce file e cartelle con consapevolezza della struttura gerarchica, dei permessi e delle implicazioni per la privacy"
+    },
+    "EC": {
+      "ref": "Resources / Managing resources",
+      "nota": "Lo studente progetta strutture di file system per ottimizzare la gestione delle risorse digitali condivise"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking",
+      "nota": "Lo studente comprende le interazioni tra i componenti di un sistema operativo e le conseguenze di ogni scelta gestionale"
+    },
+    "EV": {
+      "ref": "SDG 9 — Imprese, innovazione e infrastrutture",
+      "nota": "La comprensione dei sistemi operativi è fondamentale per la progettazione e gestione dell'infrastruttura digitale su cui si basa l'economia moderna"
+    }
+  },
+  "outputApp": {
+    "quiz": "Domande su funzioni OS, multitasking, file system, percorsi, driver, differenze tra OS. 18 domande 6F+6I+6A con feedback.",
+    "microlearning": "Process: 6 passi — dall'accensione al login (POST → boot loader → kernel → servizi → login → lavoro). Checklist: verifica comprensione gestione processi e file system.",
+    "visual": "Infografica 'La sequenza di avvio in 3 secondi': timeline da accensione a login con tempi e componenti coinvolti.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-INF-1-02",
+    "MC-DIG-1-01"
+  ],
+  "tags": [
+    "sistema operativo",
+    "processi",
+    "file system",
+    "multitasking",
+    "driver",
+    "RAM",
+    "memoria virtuale",
+    "GUI",
+    "CLI",
+    "informatica",
+    "classe-2",
+    "INF"
+  ],
+  "compito_realta": "Progetta la struttura di file system per una cartella condivisa della tua classe (25 studenti, 4 materie, materiali di tipo diverso): disegna l'albero delle cartelle, definisci le regole di denominazione dei file e scrivi un mini-manuale per i tuoi compagni.",
+  "sdg": [
+    9
+  ],
+  "sdg_principale": 9,
+  "note_didattiche": {
+    "base": "Navigare il file system del proprio dispositivo, disegnare la struttura ad albero (almeno 3 livelli) e trovare la cartella delle foto con il percorso completo.",
+    "avanzato": "Progettare il file system di un server per una redazione giornalistica (15 giornalisti, 3 fotografi, 2 editor): struttura cartelle, permessi per ruolo, policy di naming, strategia di backup."
+  },
+  "hook_audio": {
+    "durata_min": 3.58,
+    "durata_secondi": 215,
+    "titolo_hook": "Il bibliotecario invisibile"
+  },
+  "professione_futura": {
+    "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer",
+    "orizzonte": "2030",
+    "descrizione_breve": "Gestisce l'infrastruttura informatica di un'azienda: server, reti, sistemi operativi, backup, sicurezza — usando la riga di comando e automatizzando le operazioni con script.",
+    "competenze_chiave": [
+      "gestione sistemi operativi",
+      "riga di comando",
+      "automazione con script",
+      "monitoraggio prestazioni",
+      "sicurezza infrastruttura"
+    ]
+  },
+  "professioni_future": [
+    {
+      "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Gestisce l'infrastruttura informatica aziendale: server, OS, backup e sicurezza.",
+      "competenze_chiave": [
+        "gestione sistemi operativi",
+        "riga di comando",
+        "automazione con script",
+        "sicurezza infrastruttura"
+      ]
+    },
+    {
+      "titolo": "Cloud Infrastructure Engineer",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta e gestisce infrastrutture informatiche su cloud (AWS, Google Cloud, Azure), applicando i principi OS a sistemi distribuiti su scala globale.",
+      "competenze_chiave": [
+        "cloud computing",
+        "virtualizzazione",
+        "container e orchestrazione",
+        "DevOps"
+      ]
+    }
+  ],
+  "clil_termini": [
+    {
+      "it": "sistema operativo",
+      "en": "operating system (OS)",
+      "def": "Programma che gestisce le risorse hardware e software del computer e permette a tutte le applicazioni di funzionare"
+    },
+    {
+      "it": "processo",
+      "en": "process",
+      "def": "Un programma in esecuzione; il sistema operativo crea un processo all'avvio di ogni applicazione"
+    },
+    {
+      "it": "multitasking",
+      "en": "multitasking",
+      "def": "Capacità di eseguire più processi contemporaneamente, assegnando a ciascuno brevi frazioni di tempo del processore"
+    },
+    {
+      "it": "file system",
+      "en": "file system",
+      "def": "Sistema di organizzazione gerarchica dei file su storage, strutturato ad albero con cartelle e sottocartelle"
+    },
+    {
+      "it": "percorso",
+      "en": "path",
+      "def": "Sequenza di cartelle che identifica univocamente la posizione di un file nel file system (es. /Utenti/nome/Documenti/file.txt)"
+    },
+    {
+      "it": "driver",
+      "en": "driver",
+      "def": "Programma che traduce tra il linguaggio di una periferica e il linguaggio standard usato dal sistema operativo"
+    },
+    {
+      "it": "interfaccia grafica",
+      "en": "GUI (Graphical User Interface)",
+      "def": "Modo di interazione con il computer tramite finestre, icone e menu; intuitivo ma limitato nelle funzioni avanzate"
+    },
+    {
+      "it": "riga di comando",
+      "en": "CLI (Command Line Interface)",
+      "def": "Modo di interazione con il computer tramite comandi testuali; meno intuitivo ma molto più potente e automatizzabile"
+    }
+  ],
+  "uda_collegata": "L'infrastruttura digitale della scuola: dall'OS al cloud — UDA interdisciplinare (Tecnologia + Matematica + Scienze)"
+}

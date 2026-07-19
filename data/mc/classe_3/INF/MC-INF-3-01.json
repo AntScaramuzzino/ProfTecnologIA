@@ -1,0 +1,150 @@
+{
+  "id": "MC-INF-3-01",
+  "area": "INF",
+  "anno": 3,
+  "titolo": "Internet delle Cose: quando gli oggetti si connettono",
+  "descrizione": "Lo studente comprende il paradigma IoT (Internet of Things), sa descrivere il ciclo dati dai sensori al cloud, conosce le principali applicazioni in ambito industriale, sanitario e domestico, e valuta criticamente le implicazioni di sicurezza e privacy legate alla proliferazione dei dispositivi connessi.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Comprende le reti di comunicazione e il funzionamento dei sistemi digitali distribuiti; riflette sulle implicazioni sociali e etiche delle tecnologie emergenti",
+      "traguardo": "Lo studente sa descrivere il funzionamento di un sistema IoT e valutarne criticamente le implicazioni per la sicurezza e la privacy"
+    },
+    "DC": {
+      "ref": "2.1 Interagire con tecnologie digitali; 4.1 Proteggere i dispositivi; 5.1 Risolvere problemi tecnici",
+      "livello": "A",
+      "nota": "Lo studente analizza in modo avanzato i sistemi IoT, valuta i rischi di sicurezza e progetta soluzioni consapevoli per ambienti connessi"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Spotting opportunities; Into action / Working with others",
+      "nota": "Lo studente identifica opportunità di innovazione nell'IoT e progetta soluzioni che bilanciano funzionalità, sicurezza e sostenibilità"
+    },
+    "LC": {
+      "ref": "Thinking / Systems thinking; Social / Cooperation",
+      "nota": "Lo studente analizza i sistemi IoT come ecosistemi complessi con componenti fisici, digitali e sociali interconnessi"
+    },
+    "EV": {
+      "ref": "SDG 9 — Imprese, innovazione e infrastrutture",
+      "nota": "L'IoT è infrastruttura abilitante per industria 4.0, smart city e agricoltura di precisione — componenti centrali dello sviluppo sostenibile"
+    }
+  },
+  "outputApp": {
+    "quiz": "Domande su architettura IoT, protocolli (MQTT, Zigbee, LoRaWAN), edge computing, sicurezza dei dispositivi connessi, applicazioni in ambito industriale e sanitario. 18 domande 6F+6I+6A con feedback.",
+    "microlearning": "Process: 6 passi — dal sensore al cloud (sensore → microcontrollore → gateway → rete → cloud → applicazione). Checklist: verifica comprensione architettura IoT e rischi di sicurezza.",
+    "visual": "Infografica 'Ecosistema IoT': diagramma con i livelli dell'architettura — dal dispositivo fisico all'applicazione cloud — con esempi per ciascun livello.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-INF-2-02",
+    "MC-COM-3-01"
+  ],
+  "tags": [
+    "IoT",
+    "Internet delle Cose",
+    "sensori",
+    "edge computing",
+    "cloud",
+    "protocolli",
+    "smart city",
+    "industria 4.0",
+    "sicurezza IoT",
+    "informatica",
+    "classe-3",
+    "INF"
+  ],
+  "compito_realta": "Progetta un sistema IoT per monitorare i consumi energetici della tua scuola: identifica i sensori necessari (temperatura, luce, presenza), descrivi l'architettura dal dispositivo al cloud, calcola il traffico dati generato in un giorno e proponi come visualizzare i dati per supportare decisioni di risparmio energetico.",
+  "sdg": [
+    9,
+    11,
+    13
+  ],
+  "sdg_principale": 9,
+  "note_didattiche": {
+    "base": "Analizzare i dispositivi IoT già presenti a casa propria o a scuola: identificarli, descrivere che dati raccolgono e a chi li inviano, e valutare se si sa come aggiornarli o come disattivarli.",
+    "avanzato": "Progettare l'architettura completa di un sistema IoT per un'applicazione reale (es. monitoraggio qualità dell'aria in classe): sensori, protocollo di trasmissione, architettura cloud, interfaccia di visualizzazione, e analisi dei rischi di sicurezza con contromisure."
+  },
+  "hook_audio": {
+    "durata_min": 4.07,
+    "durata_secondi": 244,
+    "titolo_hook": "Il pacemaker testimone"
+  },
+  "professione_futura": {
+    "titolo": "IoT Solutions Architect",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta sistemi di oggetti connessi per industria, città e salute: definisce l'architettura hardware/software, sceglie i protocolli di comunicazione e garantisce sicurezza e scalabilità dell'ecosistema IoT.",
+    "competenze_chiave": [
+      "architettura IoT",
+      "protocolli di comunicazione",
+      "edge e cloud computing",
+      "sicurezza embedded",
+      "analisi dei dati in tempo reale"
+    ]
+  },
+  "professioni_future": [
+    {
+      "titolo": "IoT Solutions Architect",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta sistemi di oggetti connessi per industria, città e salute.",
+      "competenze_chiave": [
+        "architettura IoT",
+        "protocolli di comunicazione",
+        "edge e cloud computing",
+        "sicurezza embedded"
+      ]
+    },
+    {
+      "titolo": "Smart City Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta e gestisce le infrastrutture digitali delle città intelligenti: traffico, illuminazione, rifiuti, qualità dell'aria — tutto connesso e ottimizzato in tempo reale.",
+      "competenze_chiave": [
+        "urban computing",
+        "reti di sensori",
+        "analisi dati geospaziali",
+        "sostenibilità energetica"
+      ]
+    }
+  ],
+  "clil_termini": [
+    {
+      "it": "Internet delle Cose",
+      "en": "IoT (Internet of Things)",
+      "def": "Rete di dispositivi fisici dotati di sensori, software e connettività che raccolgono e scambiano dati via internet"
+    },
+    {
+      "it": "sensore",
+      "en": "sensor",
+      "def": "Componente che misura una grandezza fisica (temperatura, luce, pressione, posizione) e la converte in un segnale digitale"
+    },
+    {
+      "it": "elaborazione locale",
+      "en": "edge computing",
+      "def": "Elaborazione dei dati direttamente sul dispositivo o in prossimità di esso, riducendo la latenza e il traffico verso il cloud"
+    },
+    {
+      "it": "protocollo leggero",
+      "en": "MQTT (Message Queuing Telemetry Transport)",
+      "def": "Protocollo di comunicazione progettato per dispositivi IoT con risorse limitate e connessioni instabili"
+    },
+    {
+      "it": "gateway",
+      "en": "gateway",
+      "def": "Dispositivo che collega la rete locale dei sensori IoT alla rete internet, gestendo protocolli e sicurezza"
+    },
+    {
+      "it": "firmware",
+      "en": "firmware",
+      "def": "Software permanente incorporato in un dispositivo hardware; controlla le funzioni di base del microcontrollore IoT"
+    },
+    {
+      "it": "gemello digitale",
+      "en": "digital twin",
+      "def": "Replica virtuale di un sistema fisico, aggiornata in tempo reale dai sensori IoT, usata per simulare e ottimizzare il comportamento"
+    },
+    {
+      "it": "superficie di attacco",
+      "en": "attack surface",
+      "def": "Insieme di tutti i punti di ingresso attraverso cui un attaccante può tentare di accedere a un sistema — nei sistemi IoT è molto ampia"
+    }
+  ],
+  "uda_collegata": "La scuola intelligente: progettare un sistema IoT per risparmiare energia — UDA interdisciplinare (Tecnologia + Scienze + Matematica + Educazione Civica)"
+}

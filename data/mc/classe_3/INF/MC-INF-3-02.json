@@ -1,0 +1,150 @@
+{
+  "id": "MC-INF-3-02",
+  "area": "INF",
+  "anno": 3,
+  "titolo": "Machine learning e intelligenza artificiale: come imparano le macchine",
+  "descrizione": "Lo studente comprende i principi fondamentali del machine learning (apprendimento da dati, training/test, classificazione), sa riconoscere i bias algoritmici e le loro conseguenze sociali, e sviluppa un approccio critico e informato nei confronti dei sistemi di intelligenza artificiale che incontra nella vita quotidiana.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Riflette criticamente sulle implicazioni etiche, sociali e culturali dell'intelligenza artificiale; comprende i principi di funzionamento dei modelli di apprendimento automatico",
+      "traguardo": "Lo studente sa descrivere come funziona il machine learning, riconosce i bias algoritmici e valuta criticamente le applicazioni dell'IA nella vita quotidiana"
+    },
+    "DC": {
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali; 5.4 Identificare lacune nelle competenze digitali",
+      "livello": "A",
+      "nota": "Lo studente valuta in modo avanzato i sistemi AI che usa quotidianamente, riconosce le loro limitazioni e i rischi di bias, e adotta un atteggiamento critico e informato"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Creativity; Into action / Ethical and sustainable thinking",
+      "nota": "Lo studente valuta le opportunità e i rischi dell'IA con pensiero etico e prospettiva di lungo periodo"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking; Thinking / Systems thinking",
+      "nota": "Lo studente analizza criticamente i sistemi AI, identifica i meccanismi di bias e le loro conseguenze sistemiche sulla società"
+    },
+    "EV": {
+      "ref": "SDG 10 — Ridurre le disuguaglianze",
+      "nota": "I bias algoritmici possono amplificare le disuguaglianze esistenti; comprenderne i meccanismi è fondamentale per una IA equa e inclusiva"
+    }
+  },
+  "outputApp": {
+    "quiz": "Domande su machine learning (supervised/unsupervised), training set, overfitting, bias algoritmici, applicazioni AI (raccomandazione, riconoscimento, generazione). 18 domande 6F+6I+6A con feedback.",
+    "microlearning": "Process: 6 passi — come un modello ML impara (raccolta dati → preparazione → training → valutazione → deployment → monitoring). Checklist: riconoscere i bias e valutare criticamente un sistema AI.",
+    "visual": "Infografica 'Come impara un classificatore': dal dato grezzo al modello addestrato — con esempio di riconoscimento immagini e visualizzazione del training set.",
+    "livelloDigComp": "A"
+  },
+  "prerequisiti": [
+    "MC-INF-3-01",
+    "MC-DIG-3-01"
+  ],
+  "tags": [
+    "machine learning",
+    "intelligenza artificiale",
+    "AI",
+    "bias algoritmico",
+    "training set",
+    "classificazione",
+    "raccomandazione",
+    "etica AI",
+    "informatica",
+    "classe-3",
+    "INF"
+  ],
+  "compito_realta": "Analizza tre algoritmi di raccomandazione che usi ogni giorno (Spotify, YouTube, TikTok o simili): descrivi come funzionano, identifica un possibile bias in ciascuno, e scrivi una proposta concreta per rendere uno di questi sistemi più equo e trasparente — motivando ogni scelta.",
+  "sdg": [
+    10,
+    4,
+    16
+  ],
+  "sdg_principale": 10,
+  "note_didattiche": {
+    "base": "Giocare con un classificatore semplice (es. classificare immagini di animali con uno strumento didattico online), osservare quando sbaglia e discutere perché — introducendo il concetto di errore del modello e di importanza dei dati di training.",
+    "avanzato": "Progettare un sistema di raccomandazione etico per la biblioteca scolastica: definire il dataset, identificare possibili bias (genere, provenienza degli autori, lingua), proporre metriche di equità e progettare un meccanismo di audit periodico."
+  },
+  "hook_audio": {
+    "durata_min": 3.88,
+    "durata_secondi": 233,
+    "titolo_hook": "Il milione di dollari che nessuno ha usato"
+  },
+  "professione_futura": {
+    "titolo": "AI Ethics Researcher e Responsible AI Engineer",
+    "orizzonte": "2030",
+    "descrizione_breve": "Studia e progetta sistemi di intelligenza artificiale equi, trasparenti e responsabili: analizza i bias nei dataset e negli algoritmi, sviluppa strumenti di audit e definisce framework etici per lo sviluppo AI.",
+    "competenze_chiave": [
+      "machine learning applicato",
+      "analisi dei bias algoritmici",
+      "framework etici per l'AI",
+      "interpretabilità dei modelli",
+      "valutazione dell'impatto sociale"
+    ]
+  },
+  "professioni_future": [
+    {
+      "titolo": "AI Ethics Researcher e Responsible AI Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta sistemi AI equi e trasparenti, analizza bias e sviluppa framework etici.",
+      "competenze_chiave": [
+        "machine learning applicato",
+        "analisi dei bias algoritmici",
+        "framework etici per l'AI",
+        "interpretabilità dei modelli"
+      ]
+    },
+    {
+      "titolo": "ML Engineer",
+      "orizzonte": "2028",
+      "descrizione_breve": "Progetta, addestra e mette in produzione modelli di machine learning per applicazioni reali: dalla raccolta dei dati al deployment scalabile.",
+      "competenze_chiave": [
+        "deep learning",
+        "MLOps",
+        "feature engineering",
+        "Python e framework ML",
+        "ottimizzazione modelli"
+      ]
+    }
+  ],
+  "clil_termini": [
+    {
+      "it": "apprendimento automatico",
+      "en": "machine learning",
+      "def": "Branca dell'IA che permette ai computer di apprendere da dati ed esempi senza essere esplicitamente programmati per ogni caso"
+    },
+    {
+      "it": "insieme di addestramento",
+      "en": "training set",
+      "def": "Raccolta di dati etichettati usata per addestrare un modello di machine learning"
+    },
+    {
+      "it": "classificatore",
+      "en": "classifier",
+      "def": "Modello di machine learning che assegna un'etichetta (categoria) a ogni nuovo dato in base a pattern appresi durante il training"
+    },
+    {
+      "it": "distorsione algoritmica",
+      "en": "algorithmic bias",
+      "def": "Errore sistematico di un algoritmo che produce risultati ingiustamente favorevoli o sfavorevoli per certi gruppi, spesso ereditato dai dati di training"
+    },
+    {
+      "it": "sovra-adattamento",
+      "en": "overfitting",
+      "def": "Problema per cui un modello impara troppo bene i dati di training e fatica a generalizzare su dati nuovi"
+    },
+    {
+      "it": "rete neurale",
+      "en": "neural network",
+      "def": "Modello computazionale ispirato al cervello umano, composto da strati di nodi interconnessi; alla base del deep learning"
+    },
+    {
+      "it": "interpretabilità",
+      "en": "explainability / XAI",
+      "def": "Capacità di un modello AI di fornire spiegazioni comprensibili delle proprie decisioni — cruciale in ambiti come medicina, giustizia e finanza"
+    },
+    {
+      "it": "sistema di raccomandazione",
+      "en": "recommendation system",
+      "def": "Algoritmo che suggerisce contenuti o prodotti personalizzati in base ai comportamenti passati dell'utente e di utenti simili"
+    }
+  ],
+  "uda_collegata": "L'IA in classe: capire, usare e valutare gli strumenti di intelligenza artificiale — UDA interdisciplinare (Tecnologia + Matematica + Educazione Civica + Italiano)"
+}

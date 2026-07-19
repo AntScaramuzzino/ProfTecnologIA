@@ -1,0 +1,149 @@
+{
+  "id": "MC-INF-2-02",
+  "area": "INF",
+  "anno": 2,
+  "titolo": "Crittografia e sicurezza digitale: proteggere le informazioni",
+  "descrizione": "Lo studente comprende i principi della crittografia simmetrica e asimmetrica, sa riconoscere i meccanismi di sicurezza nelle comunicazioni digitali (HTTPS, certificati, firma digitale), e sviluppa un approccio critico alla protezione dei propri dati e delle proprie comunicazioni online.",
+  "fonte": "originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Adotta comportamenti sicuri e consapevoli nella gestione dei dati personali e delle comunicazioni digitali",
+      "traguardo": "Lo studente comprende i meccanismi di protezione delle comunicazioni digitali e sa valutare il livello di sicurezza di un servizio online"
+    },
+    "DC": {
+      "ref": "4.1 Proteggere i dispositivi; 4.2 Proteggere i dati personali e la privacy",
+      "livello": "I",
+      "nota": "Lo studente comprende i meccanismi tecnici che proteggono le comunicazioni e sa valutare criticamente l'affidabilità di un servizio digitale"
+    },
+    "EC": {
+      "ref": "Into action / Taking the initiative",
+      "nota": "Lo studente adotta comportamenti proattivi per proteggere le proprie informazioni digitali, non affidarsi passivamente ai sistemi"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente valuta criticamente l'affidabilità e la sicurezza dei sistemi digitali che usa ogni giorno"
+    },
+    "EV": {
+      "ref": "SDG 16 — Pace, giustizia e istituzioni solide",
+      "nota": "La crittografia protegge la libertà di comunicazione e la privacy individuale, pilastri delle istituzioni democratiche nell'era digitale"
+    }
+  },
+  "outputApp": {
+    "quiz": "Domande su crittografia simmetrica/asimmetrica, HTTPS, certificati digitali, firma digitale, sicurezza delle password. 18 domande 6F+6I+6A con feedback.",
+    "microlearning": "Process: 5 passi — dal messaggio in chiaro alla comunicazione sicura (plaintext → chiave → cifratura → trasmissione → decifrazione). Checklist: verifica comportamenti sicuri online.",
+    "visual": "Infografica 'Come funziona HTTPS': dal lucchetto verde nel browser al certificato SSL/TLS, con schema della handshake crittografica.",
+    "livelloDigComp": "I"
+  },
+  "prerequisiti": [
+    "MC-INF-2-01",
+    "MC-INF-1-01"
+  ],
+  "tags": [
+    "crittografia",
+    "sicurezza digitale",
+    "HTTPS",
+    "chiave simmetrica",
+    "chiave asimmetrica",
+    "certificato digitale",
+    "firma digitale",
+    "privacy",
+    "informatica",
+    "classe-2",
+    "INF"
+  ],
+  "compito_realta": "Analizza la sicurezza di tre siti web che usi regolarmente: verifica la presenza di HTTPS, leggi le informazioni del certificato digitale, e scrivi una valutazione critica di quale sia il più affidabile e perché — con almeno 3 criteri di giudizio.",
+  "sdg": [
+    16,
+    4
+  ],
+  "sdg_principale": 16,
+  "note_didattiche": {
+    "base": "Cifrare e decifrare un messaggio con un cifrario di Cesare (sostituzione semplice), poi discutere perché questo tipo di crittografia è oggi inutile contro un computer moderno.",
+    "avanzato": "Simulare uno scambio di messaggi cifrati con crittografia asimmetrica (chiave pubblica/privata): generare una coppia di chiavi concettuale, cifrare con la chiave pubblica del destinatario, decifrare con la chiave privata, discutere le implicazioni per la firma digitale."
+  },
+  "hook_audio": {
+    "durata_min": 3.92,
+    "durata_secondi": 235,
+    "titolo_hook": "Il matematico che salvò milioni di vite"
+  },
+  "professione_futura": {
+    "titolo": "Cybersecurity Analyst",
+    "orizzonte": "2030",
+    "descrizione_breve": "Protegge i sistemi informatici di un'organizzazione da attacchi e violazioni, analizza le vulnerabilità e progetta meccanismi di difesa basati sulla crittografia e su protocolli sicuri.",
+    "competenze_chiave": [
+      "crittografia applicata",
+      "protocolli di sicurezza",
+      "analisi delle vulnerabilità",
+      "sicurezza delle reti",
+      "incident response"
+    ]
+  },
+  "professioni_future": [
+    {
+      "titolo": "Cybersecurity Analyst",
+      "orizzonte": "2030",
+      "descrizione_breve": "Protegge sistemi informatici da attacchi, analizza vulnerabilità e progetta meccanismi di difesa.",
+      "competenze_chiave": [
+        "crittografia applicata",
+        "protocolli di sicurezza",
+        "analisi delle vulnerabilità",
+        "incident response"
+      ]
+    },
+    {
+      "titolo": "Privacy Engineer",
+      "orizzonte": "2029",
+      "descrizione_breve": "Progetta sistemi software che rispettano il GDPR e la privacy by design, integrando la protezione dei dati fin dalla fase di progettazione.",
+      "competenze_chiave": [
+        "privacy by design",
+        "GDPR",
+        "anonimizzazione dei dati",
+        "crittografia",
+        "risk assessment"
+      ]
+    }
+  ],
+  "clil_termini": [
+    {
+      "it": "crittografia",
+      "en": "cryptography",
+      "def": "Disciplina che studia come trasformare un messaggio in modo che solo il destinatario autorizzato possa leggerlo"
+    },
+    {
+      "it": "chiave simmetrica",
+      "en": "symmetric key",
+      "def": "Sistema crittografico in cui mittente e destinatario usano la stessa chiave per cifrare e decifrare"
+    },
+    {
+      "it": "chiave asimmetrica",
+      "en": "asymmetric key / public-private key",
+      "def": "Sistema in cui esistono due chiavi correlate: la chiave pubblica (per cifrare) e la chiave privata (per decifrare)"
+    },
+    {
+      "it": "certificato digitale",
+      "en": "digital certificate",
+      "def": "Documento elettronico che attesta l'identità di un sito web o di un'organizzazione, rilasciato da una autorità di certificazione"
+    },
+    {
+      "it": "firma digitale",
+      "en": "digital signature",
+      "def": "Meccanismo crittografico che permette di verificare l'autenticità e l'integrità di un documento digitale"
+    },
+    {
+      "it": "protocollo sicuro",
+      "en": "HTTPS (HyperText Transfer Protocol Secure)",
+      "def": "Versione cifrata del protocollo HTTP che protegge le comunicazioni tra browser e server web tramite TLS"
+    },
+    {
+      "it": "testo in chiaro",
+      "en": "plaintext",
+      "def": "Il messaggio originale, leggibile, prima della cifratura"
+    },
+    {
+      "it": "testo cifrato",
+      "en": "ciphertext",
+      "def": "Il messaggio dopo la cifratura, illeggibile senza la chiave di decifrazione"
+    }
+  ],
+  "uda_collegata": "Messaggi sicuri: da Giulio Cesare a WhatsApp — UDA interdisciplinare (Tecnologia + Storia + Matematica)"
+}

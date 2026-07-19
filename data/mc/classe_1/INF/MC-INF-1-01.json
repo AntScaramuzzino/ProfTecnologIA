@@ -1,0 +1,144 @@
+{
+  "id": "MC-INF-1-01",
+  "area": "INF",
+  "anno": 1,
+  "titolo": "Il linguaggio binario: bit, byte e rappresentazione dei dati",
+  "descrizione": "Lo studente comprende che il computer rappresenta qualsiasi informazione (testi, immagini, suoni) come sequenze di 0 e 1, conosce il sistema binario e le unità di misura dell'informazione (bit, byte, KB, MB, GB), e applica queste conoscenze per calcolare le dimensioni di file digitali.",
+  "fonte": "Hypertech 2020 + originale",
+  "frameworks": {
+    "IN": {
+      "ref": "IN 2025 (D.M. n. 221/2025) — Comprende i principi di funzionamento dei sistemi digitali e dei linguaggi di programmazione",
+      "traguardo": "Lo studente comprende come le informazioni vengono rappresentate e codificate nei sistemi digitali"
+    },
+    "DC": {
+      "ref": "1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali",
+      "livello": "F",
+      "nota": "Lo studente comprende la natura digitale delle informazioni e le unità con cui vengono misurate"
+    },
+    "EC": {
+      "ref": "Ideas and opportunities / Spotting opportunities",
+      "nota": "Lo studente riconosce come la codifica binaria è alla base di tutte le innovazioni digitali"
+    },
+    "LC": {
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente analizza la struttura binaria dell'informazione con approccio logico e quantitativo"
+    },
+    "EV": {
+      "ref": "SDG 4 — Istruzione di qualità",
+      "nota": "Comprendere la codifica digitale è competenza fondamentale per una cittadinanza digitale consapevole nel XXI secolo"
+    }
+  },
+  "outputApp": {
+    "quiz": "Domande su sistema binario, conversioni decimale-binario, calcolo dimensioni file (bit/byte/KB/MB). 18 domande 6F+6I+6A con feedback.",
+    "microlearning": "Process: 5 passi — dal transistor al bit, dal bit al byte, dal byte all'immagine. Checklist: verifica comprensione unità di misura.",
+    "visual": "Infografica anatomia di un pixel RGB: tre canali R/G/B con valori numerici e sequenza binaria corrispondente.",
+    "livelloDigComp": "F"
+  },
+  "prerequisiti": [],
+  "tags": [
+    "binario",
+    "bit",
+    "byte",
+    "pixel",
+    "RGB",
+    "ASCII",
+    "Unicode",
+    "compressione",
+    "informatica",
+    "classe-1",
+    "INF"
+  ],
+  "compito_realta": "Calcola lo spazio necessario per archiviare l'archivio fotografico della tua scuola: scegli una risoluzione di scansione, calcola la dimensione di un singolo file e il totale per 200 fotografie storiche, poi scrivi una raccomandazione motivata al preside.",
+  "sdg": [
+    4,
+    9
+  ],
+  "sdg_principale": 4,
+  "note_didattiche": {
+    "base": "Usare la tabella ASCII già stampata. Lo studente converte solo le lettere del proprio nome (4 caratteri) e calcola i byte usati.",
+    "avanzato": "Progettare un sistema di codifica per un sensore di temperatura con vincoli di banda: analisi del range, scelta dei bit, calcolo del traffico dati e confronto tra alternative."
+  },
+  "hook_audio": {
+    "durata_min": 3.62,
+    "durata_secondi": 217,
+    "titolo_hook": "Dodici milioni di pixel"
+  },
+  "professione_futura": {
+    "titolo": "Sviluppatore di sistemi embedded e IoT",
+    "orizzonte": "2030",
+    "descrizione_breve": "Progetta dispositivi connessi che comunicano in linguaggio binario su reti a banda limitata, ottimizzando la rappresentazione dei dati per efficienza energetica e affidabilità.",
+    "competenze_chiave": [
+      "sistemi di numerazione",
+      "codifica dell'informazione",
+      "efficienza nella rappresentazione dei dati",
+      "pensiero astratto"
+    ]
+  },
+  "professioni_future": [
+    {
+      "titolo": "Sviluppatore di sistemi embedded e IoT",
+      "orizzonte": "2030",
+      "descrizione_breve": "Progetta dispositivi connessi che comunicano in linguaggio binario su reti a banda limitata.",
+      "competenze_chiave": [
+        "sistemi di numerazione",
+        "codifica dell'informazione",
+        "efficienza nella rappresentazione dei dati",
+        "pensiero astratto"
+      ]
+    },
+    {
+      "titolo": "Computer Vision Engineer",
+      "orizzonte": "2030",
+      "descrizione_breve": "Sviluppa algoritmi per l'analisi automatica di immagini e video digitali, applicati a robotica, medicina e sorveglianza.",
+      "competenze_chiave": [
+        "rappresentazione digitale delle immagini",
+        "formati e compressione",
+        "algebra lineare",
+        "machine learning"
+      ]
+    }
+  ],
+  "clil_termini": [
+    {
+      "it": "cifra binaria",
+      "en": "bit (binary digit)",
+      "def": "La più piccola unità di informazione digitale: può valere solo 0 oppure 1"
+    },
+    {
+      "it": "byte",
+      "en": "byte",
+      "def": "Gruppo di 8 bit; unità base di misura dell'informazione digitale"
+    },
+    {
+      "it": "sistema binario",
+      "en": "binary system",
+      "def": "Sistema di numerazione in base 2 che usa solo le cifre 0 e 1, naturale per i circuiti elettronici"
+    },
+    {
+      "it": "pixel",
+      "en": "pixel",
+      "def": "Elemento minimo di un'immagine digitale; ogni pixel ha un colore espresso da tre valori RGB"
+    },
+    {
+      "it": "codifica",
+      "en": "encoding",
+      "def": "Processo di conversione di un'informazione (lettera, colore, suono) in una sequenza di bit"
+    },
+    {
+      "it": "compressione",
+      "en": "compression",
+      "def": "Algoritmo che riduce la dimensione di un file eliminando o compattando le ridondanze"
+    },
+    {
+      "it": "risoluzione",
+      "en": "resolution",
+      "def": "Numero di pixel per unità di lunghezza (es. 300 dpi); determina la qualità e le dimensioni di un'immagine"
+    },
+    {
+      "it": "profondità di colore",
+      "en": "color depth / bit depth",
+      "def": "Numero di bit usati per rappresentare il colore di ogni pixel; 24 bit = ~16 milioni di colori"
+    }
+  ],
+  "uda_collegata": "Come il computer memorizza il mondo: dall'interruttore al cloud — UDA interdisciplinare (Tecnologia + Matematica + Scienze)"
+}
