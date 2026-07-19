@@ -3,57 +3,63 @@
 (function () {
   "use strict";
 
+  const SLUG = "MC-DIS-1-01_bisettrice-angolo";
+  const ANGLE_DEGREES = 58;
+
   const STEPS = [
     {
       kicker: "Prima di iniziare",
-      title: "Osserva la situazione",
+      title: "Osserva l’angolo",
       description:
-        "La retta r passa per P. Il nostro obiettivo è costruire, senza usare il rapportatore, una seconda retta che formi un angolo di 90° proprio in P.",
+        "Hai due semirette con vertice in O. L’obiettivo è tracciare la retta che divide l’angolo in due parti uguali, senza usare il rapportatore.",
       equality: "",
-      tip: "Cerca il punto P al centro della retta.",
+      tip: "Cerca il vertice O: da lì partirà anche la bisettrice.",
     },
     {
-      kicker: "Passo 1 · Apertura d",
-      title: "Trova due punti equidistanti",
+      kicker: "Passo 1 · Arco da O",
+      title: "Segna A e B sui lati",
       description:
-        "Punta il compasso in P e traccia un arco. Le due intersezioni con la retta sono A e B: si trovano alla stessa distanza da P.",
-      equality: "PA = PB = d",
-      tip: "L’apertura d è libera: conta soltanto non cambiarla durante questo passaggio.",
+        "Punta il compasso in O e traccia un arco. L’arco incontra i lati dell’angolo in A e B: sono alla stessa distanza dal vertice.",
+      equality: "OA = OB",
+      tip: "L’apertura è libera, ma deve restare la stessa mentre segni A e B.",
     },
     {
-      kicker: "Passo 2 · Apertura maggiore",
-      title: "Traccia un arco con centro A",
+      kicker: "Passo 2 · Arco da A",
+      title: "Traccia un arco nell’interno",
       description:
-        "Aumenta l’apertura del compasso. Punta in A e traccia un arco sopra la retta. La nuova apertura deve essere maggiore di metà AB.",
+        "Aumenta un po’ l’apertura del compasso. Punta in A e traccia un arco dentro l’angolo.",
       equality: "apertura > AB ÷ 2",
-      tip: "Nel disegno d = 3 ed è stata scelta un’apertura pari a 5.",
+      tip: "Serve un’apertura abbastanza grande perché i due archi successivi si incontrino.",
     },
     {
       kicker: "Passo 3 · Stessa apertura",
-      title: "Ripeti l’arco con centro B",
+      title: "Ripeti l’arco da B",
       description:
-        "Senza modificare il compasso, punta in B. Il nuovo arco incontra il precedente nel punto C.",
+        "Senza cambiare apertura, punta in B. Il nuovo arco incontra il precedente nel punto C.",
       equality: "AC = BC",
-      tip: "La stessa apertura garantisce che C sia equidistante da A e da B.",
+      tip: "La stessa apertura rende C equidistante da A e da B.",
     },
     {
       kicker: "Passo 4 · Righello",
-      title: "Unisci P e C",
+      title: "Unisci O e C",
       description:
-        "Traccia la retta che passa per P e C. Hai costruito la perpendicolare a r: i due angoli in P misurano entrambi 90°.",
-      equality: "PC ⟂ r",
-      tip: "Ora puoi visualizzare la dimostrazione con i due triangoli congruenti.",
+        "Traccia la retta che passa per O e C. Hai costruito la bisettrice: i due angoli ottenuti sono uguali.",
+      equality: "∠AOC = ∠COB",
+      tip: "Ora puoi mostrare la dimostrazione con i due triangoli congruenti.",
     },
   ];
 
   const OBJECTS = {
-    helper: ["d", "e", "t1", "t2", "t3", "t4", "pArcEnd", "Astart", "Aend", "Bstart", "Bend", "Q"],
-    base: ["r", "P"],
-    step1: ["arcoP", "A", "B", "segPA", "segPB"],
+    helper: [
+      "d", "e", "theta", "halfTheta", "s", "t1", "t2", "t3", "t4",
+      "arcOEnd", "AarcStart", "AarcEnd", "BarcStart", "BarcEnd", "Q",
+    ],
+    base: ["O", "rayOA", "rayOB", "angAOB"],
+    step1: ["arcoO", "A", "B", "segOA", "segOB"],
     step2: ["arcoA"],
     step3: ["arcoB", "C"],
-    step4: ["segmentoPC", "rettaPC", "angAPC", "angCPB", "left90", "right90"],
-    proof: ["triAPC", "triBPC", "segAC", "segBC", "segPCproof"],
+    step4: ["segmentoOC", "rettaOC", "angAOC", "angCOB", "labelAngleLeft", "labelAngleRight"],
+    proof: ["triOAC", "triOBC", "segAC", "segBC", "segOCproof"],
   };
 
   let api = null;
@@ -64,7 +70,7 @@
   let animationToken = 0;
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const APPLET_ASPECT_RATIO = 850 / 520;
+  const APPLET_ASPECT_RATIO = 820 / 520;
 
   const elements = {
     loading: document.getElementById("loading-state"),
@@ -92,76 +98,84 @@
   };
 
   function setVisible(names, visible) {
-    names.forEach((name) => api.setVisible(name, visible));
+    names.forEach((name) => {
+      if (api.exists(name)) api.setVisible(name, visible);
+    });
   }
 
   function styleConstruction() {
     api.setAxesVisible(false, false);
     api.setGridVisible(false);
-    setEqualScaleCoordSystem([-7, 7, -3.1, 6.1]);
+    setEqualScaleCoordSystem([-1.1, 7.2, -0.9, 5.2]);
     api.setErrorDialogsActive(false);
 
-    const fixedObjects = Object.values(OBJECTS).flat();
-    fixedObjects.forEach((name) => api.setFixed(name, true, false));
+    Object.values(OBJECTS).flat().forEach((name) => {
+      if (api.exists(name)) api.setFixed(name, true, false);
+    });
 
-    api.setColor("r", 71, 85, 105);
-    api.setLineThickness("r", 4);
-    api.setCaption("r", "r");
-    api.setLabelStyle("r", 3);
-    api.setLabelVisible("r", true);
+    ["rayOA", "rayOB"].forEach((name) => {
+      api.setColor(name, 71, 85, 105);
+      api.setLineThickness(name, 4);
+      api.setLabelVisible(name, false);
+    });
 
-    ["arcoP", "arcoA", "arcoB"].forEach((name) => {
+    api.setColor("angAOB", 148, 163, 184);
+    api.setFilling("angAOB", 0.18);
+    api.setLineThickness("angAOB", 2);
+    api.setLabelVisible("angAOB", false);
+
+    ["arcoO", "arcoA", "arcoB"].forEach((name) => {
       api.setColor(name, 217, 119, 6);
       api.setLineThickness(name, 5);
     });
 
-    ["segPA", "segPB"].forEach((name) => {
+    ["segOA", "segOB"].forEach((name) => {
       api.setColor(name, 71, 85, 105);
       api.setLineThickness(name, 2);
       api.setLineStyle(name, 2);
     });
 
-    ["segmentoPC", "rettaPC"].forEach((name) => {
+    ["segmentoOC", "rettaOC"].forEach((name) => {
       api.setColor(name, 0, 0, 0);
       api.setLineStyle(name, 0);
-      api.setLineThickness(name, name === "rettaPC" ? 6 : 7);
+      api.setLineThickness(name, name === "rettaOC" ? 6 : 7);
     });
 
-    ["segAC", "segBC", "segPCproof"].forEach((name) => {
+    ["segAC", "segBC", "segOCproof"].forEach((name) => {
       api.setColor(name, 15, 118, 110);
       api.setLineThickness(name, 3);
       api.setLineStyle(name, 1);
     });
 
-    api.setColor("P", 220, 38, 38);
+    api.setColor("O", 220, 38, 38);
     api.setColor("A", 29, 78, 216);
     api.setColor("B", 29, 78, 216);
     api.setColor("C", 126, 34, 206);
-    ["P", "A", "B", "C"].forEach((name) => {
+    ["O", "A", "B", "C"].forEach((name) => {
       api.setPointSize(name, 6);
       api.setLabelVisible(name, true);
     });
 
-    api.setCaption("segPA", "PA = d");
-    api.setCaption("segPB", "PB = d");
+    api.setCaption("segOA", "OA");
+    api.setCaption("segOB", "OB");
     api.setCaption("segAC", "AC");
     api.setCaption("segBC", "BC");
-    api.setCaption("rettaPC", "PC ⟂ r");
-    ["segPA", "segPB", "segAC", "segBC", "rettaPC"].forEach((name) => api.setLabelStyle(name, 3));
+    api.setCaption("rettaOC", "bisettrice OC");
+    ["segOA", "segOB", "segAC", "segBC", "rettaOC"].forEach((name) => api.setLabelStyle(name, 3));
 
-    api.setColor("triAPC", 37, 99, 235);
-    api.setFilling("triAPC", 0.13);
-    api.setColor("triBPC", 139, 92, 246);
-    api.setFilling("triBPC", 0.13);
+    api.setColor("triOAC", 37, 99, 235);
+    api.setFilling("triOAC", 0.13);
+    api.setColor("triOBC", 139, 92, 246);
+    api.setFilling("triOBC", 0.13);
 
-    ["angAPC", "angCPB"].forEach((name) => {
+    ["angAOC", "angCOB"].forEach((name) => {
       api.setColor(name, 5, 150, 105);
       api.setFilling(name, 0.34);
       api.setLineThickness(name, 3);
       api.setLabelVisible(name, false);
     });
 
-    ["left90", "right90"].forEach((name) => {
+    ["labelAngleLeft", "labelAngleRight"].forEach((name) => {
       api.setColor(name, 4, 120, 87);
       api.setFixed(name, true, false);
     });
@@ -169,22 +183,22 @@
 
   function verifyConstruction() {
     const expected = [
-      "P", "A", "B", "C", "r", "arcoP", "arcoA", "arcoB",
-      "segmentoPC", "rettaPC", "segPA", "segPB", "segAC", "segBC",
-      "triAPC", "triBPC", "angAPC", "angCPB",
+      "O", "A", "B", "C", "rayOA", "rayOB", "arcoO", "arcoA", "arcoB",
+      "segmentoOC", "rettaOC", "segOA", "segOB", "segAC", "segBC",
+      "triOAC", "triOBC", "angAOC", "angCOB",
     ];
     const missing = expected.filter((name) => !api.exists(name));
     if (missing.length > 0) {
       throw new Error(`Oggetti GeoGebra mancanti: ${missing.join(", ")}`);
     }
 
-    const angleLeft = api.getValue("angAPC");
-    const angleRight = api.getValue("angCPB");
-    const angleDifference = Math.abs(angleLeft - angleRight);
-    const rightAngle = Math.PI / 2;
-    const isRightAngle = Math.abs(angleLeft - rightAngle) <= 1e-6 && Math.abs(angleRight - rightAngle) <= 1e-6;
-    if (!Number.isFinite(angleDifference) || angleDifference > 1e-6 || !isRightAngle) {
-      throw new Error(`Perpendicolarita non verificata: angoli ${angleLeft} e ${angleRight}`);
+    const left = api.getValue("angAOC");
+    const right = api.getValue("angCOB");
+    const expectedHalf = (ANGLE_DEGREES * Math.PI) / 360;
+    const difference = Math.abs(left - right);
+    const isHalf = Math.abs(left - expectedHalf) <= 1e-6 && Math.abs(right - expectedHalf) <= 1e-6;
+    if (!Number.isFinite(difference) || difference > 1e-6 || !isHalf) {
+      throw new Error(`Bisettrice non verificata: angoli ${left} e ${right}`);
     }
   }
 
@@ -216,39 +230,44 @@
     api.setRepaintingActive(false);
 
     const construction = [
-      "d=3",
-      "e=5",
+      "d=3.2",
+      "e=3.4",
+      `theta=${ANGLE_DEGREES}°`,
+      "halfTheta=theta/2",
+      "s=d*cos(halfTheta)+sqrt(e^2-d^2*sin(halfTheta)^2)",
       "t1=0",
       "t2=0",
       "t3=0",
       "t4=0",
-      "P=(0,0)",
-      "r=Line((-7,0),(7,0))",
-      "A=(-d,0)",
-      "B=(d,0)",
-      "C=(0,sqrt(e^2-d^2))",
-      "pArcEnd=Rotate(A,180°*t1,P)",
-      "arcoP=CircularArc(P,A,pArcEnd)",
-      "Astart=(x(A)+e*cos(18°),y(A)+e*sin(18°))",
-      "Aend=Rotate(Astart,62°*t2,A)",
-      "arcoA=CircularArc(A,Astart,Aend)",
-      "Bstart=(x(B)+e*cos(100°),y(B)+e*sin(100°))",
-      "Bend=Rotate(Bstart,62°*t3,B)",
-      "arcoB=CircularArc(B,Bstart,Bend)",
-      "Q=P+t4*(C-P)",
-      "segmentoPC=Segment(P,Q)",
-      "rettaPC=Line(P,C)",
-      "segPA=Segment(P,A)",
-      "segPB=Segment(P,B)",
+      "O=(0,0)",
+      "A=(d,0)",
+      "B=(d*cos(theta),d*sin(theta))",
+      "C=(s*cos(halfTheta),s*sin(halfTheta))",
+      "rayOA=Ray(O,A)",
+      "rayOB=Ray(O,B)",
+      "arcOEnd=Rotate(A,theta*t1,O)",
+      "arcoO=CircularArc(O,A,arcOEnd)",
+      "AarcStart=Rotate(C,-34°,A)",
+      "AarcEnd=Rotate(AarcStart,68°*t2,A)",
+      "arcoA=CircularArc(A,AarcStart,AarcEnd)",
+      "BarcStart=Rotate(C,-34°,B)",
+      "BarcEnd=Rotate(BarcStart,68°*t3,B)",
+      "arcoB=CircularArc(B,BarcStart,BarcEnd)",
+      "Q=O+t4*(C-O)",
+      "segmentoOC=Segment(O,Q)",
+      "rettaOC=Line(O,C)",
+      "segOA=Segment(O,A)",
+      "segOB=Segment(O,B)",
       "segAC=Segment(A,C)",
       "segBC=Segment(B,C)",
-      "segPCproof=Segment(P,C)",
-      "triAPC=Polygon(A,P,C)",
-      "triBPC=Polygon(B,P,C)",
-      "angAPC=Angle(A,P,C)",
-      "angCPB=Angle(C,P,B)",
-      "left90=Text(\"90°\",(-1.05,0.52))",
-      "right90=Text(\"90°\",(0.38,0.52))",
+      "segOCproof=Segment(O,C)",
+      "triOAC=Polygon(O,A,C)",
+      "triOBC=Polygon(O,B,C)",
+      "angAOB=Angle(A,O,B)",
+      "angAOC=Angle(A,O,C)",
+      "angCOB=Angle(C,O,B)",
+      "labelAngleLeft=Text(\"29°\",(1.15,0.27))",
+      "labelAngleRight=Text(\"29°\",(0.96,0.72))",
     ].join("\n");
 
     const ok = api.evalCommand(construction);
@@ -297,26 +316,18 @@
     api.setValue("t1", stage > 1 ? 1 : stage === 1 ? progress : 0);
     api.setValue("t2", stage > 2 ? 1 : stage === 2 ? progress : 0);
     api.setValue("t3", stage > 3 ? 1 : stage === 3 ? progress : 0);
-    api.setValue("t4", stage > 4 ? 1 : stage === 4 ? Math.max(progress, 0.001) : 0.001);
+    api.setValue("t4", stage > 4 ? 1 : stage === 4 ? progress : 0);
 
     setVisible(OBJECTS.base, true);
-    api.setVisible("arcoP", stage >= 1);
-    ["A", "B", "segPA", "segPB"].forEach((name) => {
-      api.setVisible(name, stage > 1 || (stage === 1 && progress >= 0.7));
-    });
-    api.setVisible("arcoA", stage >= 2);
-    api.setVisible("arcoB", stage >= 3);
-    api.setVisible("C", stage > 3 || (stage === 3 && progress >= 0.7));
-    api.setVisible("segmentoPC", stage === 4 && progress < 0.98);
-    ["rettaPC", "angAPC", "angCPB", "left90", "right90"].forEach((name) => {
-      api.setVisible(name, stage === 4 && progress >= 0.98);
-    });
+    setVisible(OBJECTS.step1, stage >= 1);
+    setVisible(OBJECTS.step2, stage >= 2);
+    setVisible(OBJECTS.step3, stage >= 3);
+    setVisible(OBJECTS.step4, stage >= 4);
+    setVisible(OBJECTS.proof, proofVisible && stage >= 4);
 
-    const showProof = proofVisible && stage === 4 && progress >= 0.98;
-    setVisible(OBJECTS.proof, showProof);
-    ["segAC", "segBC"].forEach((name) => api.setLabelVisible(name, showProof));
-    ["angAPC", "angCPB"].forEach((name) => api.setLabelVisible(name, false));
-    api.setLabelVisible("rettaPC", stage === 4 && progress >= 0.98);
+    api.setVisible("rettaOC", stage >= 4 && progress >= 1);
+    api.setVisible("labelAngleLeft", stage >= 4 && progress >= 1);
+    api.setVisible("labelAngleRight", stage >= 4 && progress >= 1);
 
     api.setRepaintingActive(true);
     api.refreshViews();
@@ -328,22 +339,19 @@
     elements.stepKicker.textContent = step.kicker;
     elements.stepTitle.textContent = step.title;
     elements.stepDescription.textContent = step.description;
-    elements.stepTip.innerHTML = `<span aria-hidden="true">🎯</span>${step.tip}`;
+    elements.stepTip.innerHTML = `<span aria-hidden="true">🎯</span> ${step.tip}`;
 
     if (step.equality) {
       elements.stepEquality.textContent = step.equality;
       elements.stepEquality.hidden = false;
     } else {
       elements.stepEquality.hidden = true;
-      elements.stepEquality.textContent = "";
     }
 
     elements.stepChips.forEach((button, index) => {
-      const isActive = index === currentStep;
-      const isComplete = index < currentStep || (index === 4 && currentStep === 4 && currentProgress >= 0.98);
-      button.classList.toggle("is-active", isActive);
-      button.classList.toggle("is-complete", isComplete && !isActive);
-      if (isActive) button.setAttribute("aria-current", "step");
+      button.classList.toggle("is-active", index === currentStep);
+      button.classList.toggle("is-complete", index < currentStep || (index === currentStep && currentProgress >= 1));
+      if (index === currentStep) button.setAttribute("aria-current", "step");
       else button.removeAttribute("aria-current");
     });
 
@@ -353,17 +361,17 @@
     elements.last.disabled = !api || isPlaying || currentStep === STEPS.length - 1;
     elements.stepCounter.textContent = `${currentStep + 1} / ${STEPS.length}`;
     updateProtocolList();
-    elements.proofPanel.hidden = !(currentStep === 4 && currentProgress >= 0.98);
+    elements.proofPanel.hidden = currentStep < 4;
+    elements.proof.setAttribute("aria-pressed", String(proofVisible));
+    elements.proof.textContent = proofVisible ? "Nascondi la dimostrazione LLL" : "Mostra la dimostrazione LLL";
     elements.playIcon.textContent = isPlaying ? "■" : "▶";
     elements.playLabel.textContent = isPlaying ? "Stop" : "Avvia";
-    elements.proof.setAttribute("aria-pressed", String(proofVisible));
-    elements.proof.textContent = proofVisible ? "Nascondi la dimostrazione" : "Mostra la dimostrazione LLL";
   }
 
   function getAnimationDuration(step) {
     const seconds = Number(elements.speed.value);
     const safeSeconds = Number.isFinite(seconds) ? Math.min(4, Math.max(0.5, seconds)) : 1.5;
-    return step === 4 ? safeSeconds * 780 : safeSeconds * 1000;
+    return step === 4 ? safeSeconds * 740 : safeSeconds * 1000;
   }
 
   function animateStep(step, token) {
@@ -373,15 +381,15 @@
     }
 
     return new Promise((resolve) => {
+      const start = performance.now();
       const duration = getAnimationDuration(step);
-      const startedAt = performance.now();
 
       function frame(now) {
         if (token !== animationToken) {
           resolve();
           return;
         }
-        const linear = Math.min(1, (now - startedAt) / duration);
+        const linear = Math.min(1, (now - start) / duration);
         const eased = 1 - Math.pow(1 - linear, 3);
         applyStage(step, eased);
         if (linear < 1) requestAnimationFrame(frame);
@@ -392,53 +400,45 @@
     });
   }
 
-  function delay(ms, token) {
-    return new Promise((resolve) => {
-      window.setTimeout(() => resolve(token === animationToken), ms);
-    });
+  function goToStep(step, animate) {
+    if (!api || step < 0 || step >= STEPS.length) return;
+    const token = ++animationToken;
+    setPlaying(false);
+    if (animate) animateStep(step, token);
+    else applyStage(step, 1);
   }
 
   async function playAll() {
     if (!api) return;
     if (isPlaying) {
       animationToken += 1;
-      isPlaying = false;
-      updateInterface();
+      setPlaying(false);
       return;
     }
 
-    proofVisible = false;
-    isPlaying = true;
     const token = ++animationToken;
+    setPlaying(true);
+    proofVisible = false;
     applyStage(0, 1);
-    updateInterface();
-    await delay(reduceMotion ? 80 : 350, token);
 
     for (let step = 1; step < STEPS.length; step += 1) {
-      if (token !== animationToken) break;
+      if (token !== animationToken) return;
       await animateStep(step, token);
-      if (token !== animationToken) break;
-      await delay(reduceMotion ? 120 : 520, token);
     }
 
-    if (token === animationToken) {
-      isPlaying = false;
-      updateInterface();
-    }
+    if (token === animationToken) setPlaying(false);
   }
 
-  function goToStep(step, animate) {
-    if (!api || isPlaying || step < 0 || step >= STEPS.length) return;
-    proofVisible = false;
-    animationToken += 1;
-    if (animate && step > 0) animateStep(step, animationToken);
-    else applyStage(step, 1);
+  function setPlaying(value) {
+    isPlaying = value;
+    elements.playIcon.textContent = value ? "■" : "▶";
+    elements.playLabel.textContent = value ? "Ferma animazione" : "Avvia tutta la costruzione";
+    elements.play.setAttribute("aria-pressed", String(value));
   }
 
   function toggleProof() {
-    if (!api || currentStep !== 4) return;
     proofVisible = !proofVisible;
-    applyStage(4, 1);
+    applyStage(currentStep, currentProgress);
   }
 
   function buildProtocolList() {
@@ -466,14 +466,13 @@
   function downloadGgb() {
     if (!api) return;
     api.getBase64((base64) => {
-      const binary = window.atob(base64);
-      const bytes = new Uint8Array(binary.length);
-      for (let i = 0; i < binary.length; i += 1) bytes[i] = binary.charCodeAt(i);
+      const bytes = Uint8Array.from(atob(base64), (char) => char.charCodeAt(0));
       const blob = new Blob([bytes], { type: "application/vnd.geogebra.file" });
       const url = URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "MC-DIS-1-01_perpendicolare-in-P.ggb";
+      const link = Object.assign(document.createElement("a"), {
+        href: url,
+        download: `${SLUG}.ggb`,
+      });
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -483,15 +482,19 @@
 
   function showError(message) {
     elements.loading.classList.add("is-error");
-    elements.loading.innerHTML = message;
-    setControlsEnabled(false);
+    elements.loading.textContent = message;
   }
 
-  function attachEvents() {
+  function init() {
     buildProtocolList();
     elements.stepChips.forEach((button) => {
-      button.addEventListener("click", () => goToStep(Number(button.dataset.step), true));
+      button.disabled = true;
+      button.addEventListener("click", () => {
+        const step = Number(button.dataset.step);
+        goToStep(step, true);
+      });
     });
+
     elements.first.addEventListener("click", () => goToStep(0, false));
     elements.previous.addEventListener("click", () => goToStep(currentStep - 1, false));
     elements.next.addEventListener("click", () => goToStep(currentStep + 1, true));
@@ -499,50 +502,43 @@
     elements.play.addEventListener("click", playAll);
     elements.protocolToggle.addEventListener("click", toggleProtocolList);
     elements.proof.addEventListener("click", toggleProof);
-    elements.reset.addEventListener("click", () => goToStep(0, false));
+    elements.reset.addEventListener("click", () => {
+      proofVisible = false;
+      goToStep(0, false);
+    });
     elements.download.addEventListener("click", downloadGgb);
-  }
 
-  function init() {
-    attachEvents();
+    window.addEventListener("message", (event) => {
+      if (event.data === "tecnologia:ggb:height") {
+        document.documentElement.style.minHeight = "0";
+      }
+    });
 
     if (typeof GGBApplet === "undefined") {
-      showError(
-        "GeoGebra non è disponibile. Controlla la connessione a Internet oppure consenti il caricamento da geogebra.org."
-      );
+      showError("GeoGebra non è disponibile. Controlla la connessione a Internet oppure consenti il caricamento da geogebra.org.");
       return;
     }
 
-    const params = {
-      id: "perpendicularConstruction",
+    const applet = new GGBApplet({
+      id: "bisettrice_angolo_applet",
       appName: "geometry",
-      width: 850,
+      width: 820,
       height: 520,
       appletOnLoad: buildConstruction,
       showToolBar: false,
       showMenuBar: false,
       showAlgebraInput: false,
       showAnimationButton: true,
-      showResetIcon: false,
       showZoomButtons: true,
       showFullscreenButton: true,
       enableRightClick: false,
       enableLabelDrags: false,
-      enableShiftDragZoom: true,
-      enableUndoRedo: false,
-      enableFileFeatures: false,
       errorDialogsActive: false,
       language: "it",
-      perspective: "G",
-      preventFocus: true,
       scaleContainerClass: "ggb-frame",
       autoHeight: true,
-      allowUpscale: false,
-      borderColor: "#dbe3ec",
-      borderRadius: 14,
-    };
+    }, true);
 
-    const applet = new GGBApplet(params, true);
     applet.inject("ggb-element");
   }
 

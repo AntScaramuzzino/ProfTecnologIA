@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Costruzioni geometriche di base — GeoGebra</title>
+    <link rel="stylesheet" href="./activity.css" />
+    <script src="https://www.geogebra.org/apps/deployggb.js" defer></script>
+    <script src="./activity.js" defer></script>
+  </head>
+  <body>
+    <main class="activity">
+      <header class="activity__header">
+        <div>
+          <p id="activity-eyebrow" class="eyebrow">Costruzione geometrica · Righello e compasso</p>
+          <h1 id="activity-title">Costruzione geometrica</h1>
+          <p id="activity-subtitle" class="subtitle">Segui la costruzione un passaggio alla volta.</p>
+        </div>
+        <div class="level-badge" aria-label="Livello Foundation">Livello F</div>
+      </header>
+
+      <nav id="step-nav" class="step-nav" aria-label="Passaggi della costruzione"></nav>
+
+      <section class="workspace" aria-label="Animazione GeoGebra">
+        <div class="ggb-frame">
+          <div id="ggb-element" aria-label="Costruzione geometrica interattiva"></div>
+          <div id="loading-state" class="loading-state" role="status">Caricamento di GeoGebra…</div>
+        </div>
+        <aside class="step-card">
+          <p id="step-kicker" class="step-kicker">Prima di iniziare</p>
+          <h2 id="step-title">Osserva la situazione</h2>
+          <p id="step-description">Guarda gli elementi dati e poi avanza un passaggio alla volta.</p>
+          <div id="step-equality" class="equality" hidden></div>
+          <p id="step-tip" class="tip"><span aria-hidden="true">🎯</span>Osserva i punti iniziali.</p>
+        </aside>
+      </section>
+
+      <section class="controls protocol-bar" aria-label="Barra in basso per controllare l’animazione">
+        <div class="protocol-bar__transport" role="group" aria-label="Navigazione dei passaggi">
+          <button id="first-button" class="protocol-control" type="button" title="Torna all’inizio" disabled>
+            <span aria-hidden="true">|◀</span><span class="sr-only">Primo passaggio</span>
+          </button>
+          <button id="previous-button" class="protocol-control" type="button" title="Passaggio precedente" disabled>
+            <span aria-hidden="true">◀</span><span class="sr-only">Indietro</span>
+          </button>
+          <button id="play-button" class="protocol-control protocol-control--play" type="button" title="Avvia o ferma l’animazione" disabled>
+            <span class="play-icon" aria-hidden="true">▶</span><span class="play-label">Avvia</span>
+          </button>
+          <button id="next-button" class="protocol-control" type="button" title="Passaggio successivo" disabled>
+            <span aria-hidden="true">▶</span><span class="sr-only">Avanti</span>
+          </button>
+          <button id="last-button" class="protocol-control" type="button" title="Vai alla costruzione completa" disabled>
+            <span aria-hidden="true">▶|</span><span class="sr-only">Ultimo passaggio</span>
+          </button>
+          <span id="step-counter" class="protocol-counter" aria-live="polite">1 / 5</span>
+        </div>
+        <label class="protocol-speed" for="animation-speed">
+          <span>Velocità</span>
+          <input id="animation-speed" type="number" min="0.5" max="4" step="0.25" value="1.5" inputmode="decimal" />
+          <span>s</span>
+        </label>
+        <button id="protocol-toggle-button" class="protocol-button" type="button" aria-controls="protocol-steps" aria-expanded="false">
+          Protocollo di costruzione
+        </button>
+        <ol id="protocol-steps" class="protocol-steps" hidden></ol>
+      </section>
+
+      <section id="proof-panel" class="proof-panel" hidden>
+        <div class="proof-panel__copy">
+          <p class="proof-panel__kicker">Perché funziona?</p>
+          <h2 id="proof-title">Verifica geometrica</h2>
+          <p id="proof-copy">La costruzione usa proprietà geometriche che puoi controllare nel disegno.</p>
+        </div>
+      </section>
+
+      <footer class="activity__footer">
+        <p>Trascina o ingrandisci la vista solo se vuoi osservare un dettaglio.</p>
+        <div>
+          <button id="reset-button" class="button button--ghost" type="button" disabled>Ricomincia</button>
+          <button id="download-button" class="button button--download" type="button" disabled>Scarica il file .ggb</button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

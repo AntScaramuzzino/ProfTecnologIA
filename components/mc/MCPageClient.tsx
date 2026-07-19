@@ -42,6 +42,8 @@ import MCImageCarousel from "@/components/mc/MCImageCarousel";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
+import GeoGebraAngleBisectorEmbed from "@/components/mc/GeoGebraAngleBisectorEmbed";
+import GeoGebraConstructionEmbed from "@/components/mc/GeoGebraConstructionEmbed";
 import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
@@ -86,6 +88,67 @@ function sectionToTabId(title: string): string | null {
   if (/SPERIMENTA/.test(t)) return "SPERIMENTA";
   if (/AGISCI/.test(t))     return "AGISCI";
   return null;
+}
+
+type GeoGebraConstructionConfig = {
+  activity: string;
+  title: string;
+  iframeTitle: string;
+};
+
+function getGeoGebraConstruction(title: string): GeoGebraConstructionConfig | null {
+  const constructions: Array<[RegExp, GeoGebraConstructionConfig]> = [
+    [
+      /Costruzione\s+3/i,
+      {
+        activity: "divisione-segmento",
+        title: "Dividi un segmento in 5 parti uguali",
+        iframeTitle: "Animazione GeoGebra: divisione di un segmento in cinque parti uguali",
+      },
+    ],
+    [
+      /Costruzione\s+4/i,
+      {
+        activity: "perpendicolare-punto-esterno",
+        title: "Costruisci la perpendicolare da un punto esterno",
+        iframeTitle: "Animazione GeoGebra: perpendicolare da un punto esterno a una retta",
+      },
+    ],
+    [
+      /Costruzione\s+5/i,
+      {
+        activity: "triangolo-equilatero",
+        title: "Costruisci il triangolo equilatero dato il lato",
+        iframeTitle: "Animazione GeoGebra: triangolo equilatero dato il lato",
+      },
+    ],
+    [
+      /Costruzione\s+6/i,
+      {
+        activity: "esagono-inscritto",
+        title: "Costruisci l’esagono regolare inscritto",
+        iframeTitle: "Animazione GeoGebra: esagono regolare inscritto in una circonferenza",
+      },
+    ],
+    [
+      /Costruzione\s+7/i,
+      {
+        activity: "quadrato-dato-lato",
+        title: "Costruisci il quadrato dato il lato",
+        iframeTitle: "Animazione GeoGebra: quadrato dato il lato",
+      },
+    ],
+    [
+      /Costruzione\s+8/i,
+      {
+        activity: "pentagono-inscritto",
+        title: "Costruisci il pentagono regolare inscritto",
+        iframeTitle: "Animazione GeoGebra: pentagono regolare inscritto in una circonferenza",
+      },
+    ],
+  ];
+
+  return constructions.find(([pattern]) => pattern.test(title))?.[1] ?? null;
 }
 
 // ── Splitta il body di SPERIMENTA in 3 livelli ───────────────────────────────
@@ -625,6 +688,11 @@ function ZonePanel({
         mc.id === "MC-DIS-1-01" &&
         /Costruzione\s+1/i.test(ai.title) &&
         /Perpendicolare\s+a\s+una\s+retta/i.test(ai.title);
+      const hasAngleBisectorLab =
+        mc.id === "MC-DIS-1-01" &&
+        /Costruzione\s+2/i.test(ai.title) &&
+        /Bisettrice\s+di\s+un\s+angolo/i.test(ai.title);
+      const geogebraConstruction = getGeoGebraConstruction(ai.title);
 
       return {
         id: ai.id,
@@ -633,6 +701,17 @@ function ZonePanel({
           <>
             {hasPerpendicularLab && (
               <GeoGebraPerpendicularEmbed className="mb-6" />
+            )}
+            {hasAngleBisectorLab && (
+              <GeoGebraAngleBisectorEmbed className="mb-6" />
+            )}
+            {mc.id === "MC-DIS-1-01" && geogebraConstruction && (
+              <GeoGebraConstructionEmbed
+                activity={geogebraConstruction.activity}
+                title={geogebraConstruction.title}
+                iframeTitle={geogebraConstruction.iframeTitle}
+                className="mb-6"
+              />
             )}
             <ReadableBodyInTab body={ai.body} />
           </>

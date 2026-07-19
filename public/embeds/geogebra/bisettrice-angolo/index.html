@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light" />
-    <title>Costruzione della perpendicolare — GeoGebra</title>
+    <title>Costruzione della bisettrice — GeoGebra</title>
     <link rel="stylesheet" href="./activity.css" />
     <script defer src="https://www.geogebra.org/apps/deployggb.js"></script>
     <script defer src="./activity.js"></script>
@@ -13,11 +13,11 @@
     <main class="activity" aria-labelledby="activity-title">
       <header class="activity__header">
         <div>
-          <p class="eyebrow">Costruzione 1 · Righello e compasso</p>
-          <h1 id="activity-title">Perpendicolare a una retta nel punto P</h1>
+          <p class="eyebrow">Costruzione 2 · Righello e compasso</p>
+          <h1 id="activity-title">Bisettrice di un angolo</h1>
           <p class="intro">
-            Segui la costruzione un passaggio alla volta. Puoi fermare l’animazione e
-            ripetere ogni fase tutte le volte che vuoi.
+            Segui la costruzione un passaggio alla volta. Osserva come due aperture
+            uguali del compasso permettono di dividere l’angolo esattamente a metà.
           </p>
         </div>
         <span class="level-badge" aria-label="Livello Foundation">Livello F</span>
@@ -37,7 +37,7 @@
           <span>3</span> Arco da B
         </button>
         <button class="step-chip" type="button" data-step="4">
-          <span>4</span> Retta PC
+          <span>4</span> Retta OC
         </button>
       </nav>
 
@@ -52,15 +52,15 @@
 
         <aside class="step-card" aria-live="polite" aria-atomic="true">
           <p id="step-kicker" class="step-card__kicker">Prima di iniziare</p>
-          <h2 id="step-title">Osserva la situazione</h2>
+          <h2 id="step-title">Osserva l’angolo</h2>
           <p id="step-description">
-            La retta r passa per P. Il nostro obiettivo è costruire, senza usare il
-            rapportatore, una seconda retta che formi un angolo di 90° proprio in P.
+            Hai due semirette con vertice in O. L’obiettivo è tracciare la retta che
+            divide l’angolo in due parti uguali, senza usare il rapportatore.
           </p>
           <div id="step-equality" class="equality" hidden></div>
           <p id="step-tip" class="tip">
             <span aria-hidden="true">🎯</span>
-            Cerca il punto P al centro della retta.
+            Cerca il vertice O: da lì partirà anche la bisettrice.
           </p>
         </aside>
       </section>
@@ -111,10 +111,11 @@
           <p class="proof-panel__kicker">Perché funziona?</p>
           <h2>Due triangoli congruenti</h2>
           <p>
-            <strong>PA = PB</strong>, <strong>AC = BC</strong> e il lato
-            <strong>PC</strong> è comune. I triangoli APC e BPC sono congruenti per il
-            criterio LLL. Gli angoli in P sono quindi uguali e, insieme, misurano 180°:
-            ciascuno misura <strong>90°</strong>.
+            <strong>OA = OB</strong>, perché A e B nascono dallo stesso arco con centro
+            in O. Inoltre <strong>AC = BC</strong>, perché gli archi da A e da B sono
+            tracciati con la stessa apertura. Il lato <strong>OC</strong> è comune:
+            quindi i triangoli OAC e OBC sono congruenti per il criterio LLL e
+            <strong>∠AOC = ∠COB</strong>.
           </p>
         </div>
         <button id="proof-button" class="button button--proof" type="button" aria-pressed="false">
