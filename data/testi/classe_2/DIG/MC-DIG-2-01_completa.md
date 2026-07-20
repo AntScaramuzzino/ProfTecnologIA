@@ -261,6 +261,17 @@ Competenze chiave che inizia a costruire da qui: governance dei dati · GDPR · 
 
 *"I dati non sono il nuovo petrolio. Sono persone. E le persone hanno diritti."*
 
+
+**Web Designer**
+
+Costruisce i siti web e le app che usi ogni giorno, decidendo dove va ogni pulsante, ogni immagine e ogni colore. Il Web Designer parte dagli stessi ragionamenti del coding a blocchi — scomporre un problema in passi ordinati, provare, correggere — ma li applica a pagine che devono essere belle e facili da usare per tutti, anche per chi ha una disabilità. Scrive codice, cura la grafica e verifica che ogni sito funzioni bene su computer e telefono.
+
+Dove lavora: agenzie web e di comunicazione, software house, redazioni online, reparti digitali di aziende, come libero professionista.
+
+Competenze chiave che inizia a costruire da qui: HTML/CSS · UX/UI design · accessibilità web · grafica web · CMS
+
+*"Un sito ben fatto è come una porta senza gradini: chiunque riesce a entrare senza chiedere aiuto."*
+
 ---
 
 ---

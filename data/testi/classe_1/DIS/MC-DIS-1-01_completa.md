@@ -425,6 +425,17 @@ Competenze chiave che inizia a costruire da qui: composizione visiva · tipograf
 
 *"Il buon design non si nota. Ci vivi dentro senza accorgertene."*
 
+
+**Product Designer**
+
+Parte da un bisogno concreto — una borraccia più comoda, una lampada regolabile — e lo trasforma in un prodotto reale. Osserva chi lo userà, schizza decine di idee, poi le mette alla prova con disegni precisi e prototipi rapidi. Le costruzioni geometriche fatte con riga, squadra e compasso sono il suo primo linguaggio: prima di qualsiasi software, una forma corretta nasce da linee costruite con metodo.
+
+Dove lavora: studi di design industriale, aziende di arredamento e illuminazione, reparti sviluppo prodotto, fablab e laboratori di prototipazione, agenzie di innovazione.
+
+Competenze chiave che inizia a costruire da qui: disegno tecnico · ideazione · prototipazione rapida · design thinking · ergonomia
+
+*"Ogni prodotto che ami è nato da uno schizzo brutto e da cento prove."*
+
 ---
 
 ---

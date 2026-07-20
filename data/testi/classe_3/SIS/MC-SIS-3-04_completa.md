@@ -130,28 +130,6 @@ Un percorso professionale non si pianifica una volta per sempre: si costruisce i
 
 ---
 
-
-### 🏭 Chi lavora con questa competenza nel 2030?
-
-**Digital Twin Engineer**
-
-Crea gemelli digitali di impianti automatizzati e robot industriali per simularne il comportamento, ottimizzare i processi e testare nuove configurazioni senza fermare la produzione.
-
-Dove lavora: aziende di automazione industriale, system integrator per Industry 4.0/5.0, centri di ricerca applicata, aziende aerospaziali e della difesa.
-
-Competenze chiave che inizia a costruire da qui: IoT industriale · modellazione 3D · simulazione Industry 5.0 · robotica · ingegneria dei sistemi
-
-*"Prima di costruire, simulo. Prima di fermarmi, prevedo. Il gemello digitale è il mio laboratorio permanente."*
-
----
-
----
-
-> **Collegamento STEM — Matematica:**
-> L'analisi del mercato del lavoro usa strumenti statistici: tassi di occupazione, tassi di disoccupazione, proiezioni di crescita per settore, distribuzione salariale. Saper leggere un grafico del tasso di disoccupazione giovanile per area geografica — o interpretare una proiezione WEF su quali professioni cresceranno — è competenza matematica applicata all'orientamento professionale.
-
----
-
 ## 🔍 OSSERVA
 
 ### Il caso: 5 offerte di lavoro reali in 5 settori — cosa chiedono in comune?
@@ -184,6 +162,33 @@ Responsabilità: monitoraggio colture con sensori e droni, analisi dati meteo e 
 ---
 
 ### 👩‍🔬 Chi lavora con questa competenza nel 2030?
+
+**Digital Twin Engineer**
+
+Crea gemelli digitali di impianti automatizzati e robot industriali per simularne il comportamento, ottimizzare i processi e testare nuove configurazioni senza fermare la produzione.
+
+Dove lavora: aziende di automazione industriale, system integrator per Industry 4.0/5.0, centri di ricerca applicata, aziende aerospaziali e della difesa.
+
+Competenze chiave che inizia a costruire da qui: IoT industriale · modellazione 3D · simulazione Industry 5.0 · robotica · ingegneria dei sistemi
+
+*"Prima di costruire, simulo. Prima di fermarmi, prevedo. Il gemello digitale è il mio laboratorio permanente."*
+
+**Predictive Maintenance Analyst**
+
+Nelle fabbriche automatizzate sorveglia i robot che saldano, assemblano e confezionano: i loro sensori inviano dati in continuazione e lui li analizza per accorgersi quando qualcosa inizia a peggiorare. Un braccio robotico leggermente fuori taratura non produce solo un guasto futuro: produce pezzi difettosi che il controllo qualità dovrà scartare. Prevedere il problema significa fermare la linea al momento programmato, mantenere gli standard promessi dalle certificazioni e non buttare via materiale e ore di lavoro.
+
+Dove lavora: stabilimenti automotive e meccatronici, aziende alimentari e farmaceutiche, system integrator di robotica, società di servizi per l'Industria 4.0, grandi impianti di confezionamento.
+
+Competenze chiave che inizia a costruire da qui: sensoristica IoT · big data · manutenzione predittiva robot · machine learning · Industry 4.0
+
+*"Ogni fermo macchina non programmato è una sconfitta. Il mio calendario di interventi è la difesa."*
+
+---
+
+---
+
+> **Collegamento STEM — Matematica:**
+> L'analisi del mercato del lavoro usa strumenti statistici: tassi di occupazione, tassi di disoccupazione, proiezioni di crescita per settore, distribuzione salariale. Saper leggere un grafico del tasso di disoccupazione giovanile per area geografica — o interpretare una proiezione WEF su quali professioni cresceranno — è competenza matematica applicata all'orientamento professionale.
 
 **Career Coach e Counselor di orientamento**
 

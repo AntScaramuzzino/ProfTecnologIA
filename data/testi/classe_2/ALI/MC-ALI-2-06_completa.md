@@ -278,6 +278,17 @@ Competenze chiave che inizia a costruire da qui: tecnologie additive alimentari 
 
 *"Personalizzare un pasto per 200 pazienti con esigenze diverse? Con la stampa 3D alimentare, è routine."*
 
+
+**Packaging Designer**
+
+Progetta la confezione di un prodotto alimentare pensando a tre cose insieme: proteggere il cibo, raccontare la sua storia e pesare poco sull'ambiente. Il Packaging Designer sceglie forme, colori e materiali che facciano capire, già dallo scaffale, se dentro c'è un legume antico, un formaggio di montagna o una varietà locale da salvaguardare. Deve conoscere i materiali sostenibili, le regole sull'etichettatura e le tecniche per catturare l'attenzione senza ingannare chi compra.
+
+Dove lavora: agenzie di design e comunicazione, reparti marketing di aziende alimentari, studi di packaging sostenibile, tipografie industriali, startup del food branding.
+
+Competenze chiave che inizia a costruire da qui: design del packaging · storytelling visivo · sostenibilità dei materiali · marketing · normativa alimentare
+
+*"Una buona confezione racconta in tre secondi tutta la storia di chi ha coltivato quel cibo."*
+
 ---
 
 ---

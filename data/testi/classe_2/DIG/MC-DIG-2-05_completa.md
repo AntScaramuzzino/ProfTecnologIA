@@ -170,6 +170,17 @@ Competenze chiave che inizia a costruire da qui: coaching digitale · educazione
 
 *"La tecnologia è lo strumento più potente della storia. Usarla bene richiede consapevolezza, non solo competenza."*
 
+
+**Tech-Free Time Facilitator**
+
+Aiuta le persone a staccarsi dallo schermo e a ritrovare il piacere delle cose reali: una passeggiata, una conversazione dal vivo, un gioco senza notifiche. Il Tech-Free Time Facilitator organizza esperienze e laboratori dove telefoni e social restano spenti, insegnando a riconoscere quando l'uso della tecnologia diventa eccessivo. Combina psicologia, mindfulness e attività di gruppo per allenare la calma e le relazioni vere, ricordando a tutti che il diritto a disconnettersi fa parte del benessere quanto quello di restare connessi.
+
+Dove lavora: centri di benessere e ritiri, scuole e associazioni educative, aziende attente alla salute dei dipendenti, cooperative sociali, come formatore indipendente.
+
+Competenze chiave che inizia a costruire da qui: psicologia · design esperienziale · pedagogia · mindfulness · benessere digitale
+
+*"Spegnere il telefono per qualche ora non ti fa perdere niente: ti restituisce il tempo e le persone."*
+
 ---
 
 ---

@@ -194,6 +194,17 @@ Competenze chiave che inizia a costruire da qui: digital transformation · gesti
 
 *"Innovare non è adottare tecnologia. È cambiare il modo in cui un'azienda crea valore per i suoi clienti."*
 
+
+**Fashion Sustainability Manager**
+
+In un'azienda di moda, è la persona che risponde alla domanda: questo capo quanto costa al pianeta? Segue la filiera dal campo di cotone al negozio, misura consumi d'acqua, emissioni e condizioni di lavoro dei fornitori, e propone soluzioni innovative: tessuti riciclati, processi che inquinano meno, imballaggi ripensati. Scrive i report ambientali richiesti dalle norme europee e aiuta l'impresa a trasformare la sostenibilità da obbligo a idea di business che conquista i clienti.
+
+Dove lavora: case di moda e gruppi del lusso, aziende tessili e calzaturiere, società di certificazione, startup di moda circolare, associazioni di settore.
+
+Competenze chiave che inizia a costruire da qui: gestione sostenibilità · supply chain ESG · CSR · reporting ambientale · normativa EU sostenibilità
+
+*"La collezione più innovativa è quella che posso raccontare filo per filo, senza nascondere nulla."*
+
 ---
 
 ---

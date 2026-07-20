@@ -197,6 +197,17 @@ Competenze chiave che inizia a costruire da qui: change management · AI generat
 
 *"L'AI non prende il posto delle persone. Prende il posto dei compiti che non dovevano fare le persone."*
 
+
+**Crowdsourced Policy Facilitator**
+
+Quando un comune deve decidere come spendere un bilancio, dove costruire una pista ciclabile o come rendere più sostenibile un quartiere, questa figura organizza il processo che coinvolge i cittadini: piattaforme online per raccogliere proposte, assemblee pubbliche, votazioni trasparenti. Fa da ponte tra istituzioni e comunità, traduce il linguaggio tecnico in parole comprensibili e trasforma centinaia di opinioni diverse in decisioni condivise. Perché le scelte su lavoro, ambiente ed economia funzionano meglio se chi le subisce ha contribuito a scriverle.
+
+Dove lavora: comuni e regioni, piattaforme di civic tech, fondazioni e organizzazioni non profit, società di consulenza per la pubblica amministrazione, progetti europei di partecipazione.
+
+Competenze chiave che inizia a costruire da qui: policy making partecipativo · civic tech · community engagement · facilitazione · democrazia digitale
+
+*"Cento cittadini in disaccordo sono un problema solo finché nessuno organizza la conversazione."*
+
 ---
 
 ---

@@ -277,6 +277,17 @@ Competenze chiave che inizia a costruire da qui: digital transformation · gesti
 
 *"Digitalizzare non significa comprare software. Significa ridisegnare come si lavora."*
 
+
+**Computer Animation and Visual Effects**
+
+Dà vita a personaggi, mostri e mondi che non esistono, per film, serie TV e videogiochi. L'artista di Computer Animation e Visual Effects usa programmi 3D potentissimi come Maya e Blender, che spingono al massimo il sistema operativo e l'hardware del computer per calcolare luci, movimenti e dettagli realistici. Unisce la parte tecnica — capire come la macchina gestisce memoria e processi — a quella creativa, perché ogni scena deve anche raccontare una storia ed emozionare chi la guarda.
+
+Dove lavora: studi di animazione, case di produzione cinematografica, aziende di videogiochi, agenzie pubblicitarie, studi di effetti speciali.
+
+Competenze chiave che inizia a costruire da qui: software 3D (Maya, Blender) · animazione digitale · VFX · storytelling · tecnica e creatività
+
+*"Il computer calcola milioni di dettagli, ma sono io a decidere quali faranno battere il cuore del pubblico."*
+
 ---
 
 ## 🔬 SPERIMENTA

@@ -353,6 +353,17 @@ Competenze chiave che inizia a costruire da qui: bioarchitettura · certificazio
 
 *"Il migliore edificio green è quello che consuma così poco da quasi non accorgersi che esiste."*
 
+
+**Designer and Ecospace Designer**
+
+Ripensa gli edifici che già esistono per renderli più sani, più comodi e meno affamati di energia. L'Ecospace Designer elimina gli ostacoli inutili, sceglie materiali a basso impatto e organizza gli spazi in modo che riscaldamento, luce e impianti sprechino il meno possibile. Lavora con modelli digitali dell'edificio — la progettazione BIM — per prevedere i consumi prima ancora di aprire il cantiere, così le case che ristruttura oggi restano vivibili e sostenibili anche per chi verrà dopo.
+
+Dove lavora: studi di progettazione sostenibile, imprese di ristrutturazione, uffici tecnici comunali, aziende di materiali ecocompatibili, società di riqualificazione energetica.
+
+Competenze chiave che inizia a costruire da qui: eco-design costruttivo · materiali sostenibili · ergonomia ambientale · progettazione BIM · normativa energetica
+
+*"Non demolisco per ricostruire: prendo una casa che c'è già e la insegno a sprecare meno."*
+
 ---
 
 ---

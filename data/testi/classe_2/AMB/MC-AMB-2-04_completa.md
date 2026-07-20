@@ -223,6 +223,17 @@ Competenze chiave che inizia a costruire da qui: urbanistica · IoT urbano · GI
 
 *"I dati non costruiscono la città. Ma senza dati costruiamo la città sbagliata."*
 
+
+**Urban Sensor Network Manager**
+
+Riempie strade, ponti ed edifici di piccoli sensori che raccolgono dati in continuazione: quanto traffico passa, com'è l'aria, quanta energia consuma un palazzo. L'Urban Sensor Network Manager installa queste reti, controlla che funzionino sempre e trasforma i numeri in mappe e grafici facili da leggere. Grazie al suo lavoro, chi amministra la città può capire in tempo reale quali materiali e strutture reggono bene e dove intervenire, rendendo l'ambiente urbano più sicuro e sostenibile.
+
+Dove lavora: aziende di smart city, gestori di reti di telecomunicazione, uffici di urban analytics, imprese di manutenzione infrastrutture, enti pubblici locali.
+
+Competenze chiave che inizia a costruire da qui: reti IoT · data visualization · urban analytics · telecomunicazioni · manutenzione infrastrutture
+
+*"Una città piena di sensori è come un corpo che finalmente riesce a dirti dove le fa male."*
+
 ---
 
 ---

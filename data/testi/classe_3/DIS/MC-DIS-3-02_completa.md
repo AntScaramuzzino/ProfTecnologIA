@@ -227,6 +227,17 @@ Competenze chiave che inizia a costruire da qui: modellazione 3D (Blender, Rhino
 
 *"Tutto quello che vedi in un film di fantascienza è stato prima disegnato da qualcuno come me."*
 
+
+**Digital Twin Engineer**
+
+Parte da un modello CAD e lo porta a un livello superiore: costruisce il gemello digitale di un motore, di una linea di produzione o di un ponte, collegandolo ai sensori dell'oggetto vero. Così il modello 3D non è più un disegno fermo: vive, riceve dati in tempo reale e permette di testare modifiche e prevedere guasti senza toccare l'originale. Ogni prototipo virtuale che funziona è un prototipo fisico in meno da costruire: un grande risparmio di tempo e materiali.
+
+Dove lavora: aziende manifatturiere e automotive, società di ingegneria, gestori di reti energetiche e ferroviarie, software house industriali, centri di ricerca sull'industria 5.0.
+
+Competenze chiave che inizia a costruire da qui: modellazione 3D avanzata · IoT · ingegneria dei sistemi · simulazione Industry 5.0 · CAD parametrico
+
+*"Costruisco macchine due volte: la prima nel computer, la seconda — solo se convince — nella realtà."*
+
 ---
 
 ---

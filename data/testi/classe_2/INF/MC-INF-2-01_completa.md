@@ -134,6 +134,17 @@ Dove lavora: aziende tecnologiche, banche, ospedali, enti pubblici, cloud provid
 
 *"Il sistema operativo è come il sistema circolatorio di un organismo digitale: non lo vedi, ma se si ferma, si ferma tutto."*
 
+
+**Cloud Infrastructure Engineer**
+
+Applica i principi del sistema operativo su scala planetaria. Invece di gestire un solo computer, progetta e controlla migliaia di server virtuali sulle piattaforme cloud (AWS, Google Cloud, Azure): decide come distribuire processi, memoria e archiviazione tra data center in continenti diversi, automatizza tutto con il codice e fa in modo che un'app resti online anche quando un intero data center va in blackout.
+
+Dove lavora: cloud provider, aziende tecnologiche, banche, pubblica amministrazione digitale, startup in crescita.
+
+Competenze chiave che inizi a costruire qui: cloud computing · virtualizzazione · container e orchestrazione · DevOps
+
+*"Gestisco migliaia di server che non ho mai toccato: il mio terminale è la sala macchine del mondo."*
+
 ---
 
 ## 🔬 SPERIMENTA

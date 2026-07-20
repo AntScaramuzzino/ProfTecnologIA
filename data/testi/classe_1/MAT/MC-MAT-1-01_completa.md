@@ -394,6 +394,17 @@ Competenze chiave che inizia a costruire da qui: design del prodotto · scienza 
 
 *"Il mio lavoro non finisce quando il prodotto è venduto. Finisce quando il materiale ritorna."*
 
+
+**Carbon Footprint Analyst**
+
+Calcola quanta CO₂ nasconde ogni oggetto: quanta ne emette l'estrazione delle materie prime, la lavorazione, il trasporto, lo smaltimento. Per farlo deve conoscere bene i materiali e le loro proprietà — un chilo di alluminio non pesa sul clima come un chilo di legno o di plastica — e classifica ogni componente di un prodotto per capire dove l'impatto si può ridurre. I suoi numeri guidano le scelte sostenibili delle aziende.
+
+Dove lavora: società di consulenza ambientale, grandi aziende manifatturiere, enti di certificazione, studi di ingegneria, pubbliche amministrazioni.
+
+Competenze chiave che inizia a costruire da qui: LCA · ISO 14064 · calcolo emissioni CO₂ · sostenibilità aziendale · database ecoinvent
+
+*"Dietro ogni materiale c'è una storia di emissioni. Io la leggo prima che diventi un problema."*
+
 ---
 
 ---

@@ -264,6 +264,17 @@ Competenze chiave che inizia a costruire da qui: digital transformation · proje
 
 *"La tecnologia è facile da acquistare. Difficile è cambiare il modo in cui le persone lavorano."*
 
+
+**AI-Assisted Educator**
+
+Affianca l'intelligenza artificiale alla didattica: usa piattaforme che analizzano come ogni studente impara e adattano esercizi, tempi e materiali ai suoi bisogni. Per farlo deve muoversi con sicurezza nell'ambiente digitale — organizzare file e cartelle condivise, configurare app e registri elettronici, capire cosa possono fare i dispositivi della classe — e verificare che i suggerimenti dell'AI abbiano davvero senso didattico. È un insegnante potenziato, non sostituito, dalla tecnologia.
+
+Dove lavora: scuole di ogni ordine e grado, centri di formazione professionale, case editrici scolastiche, edtech startup, enti di formazione per docenti.
+
+Competenze chiave che inizia a costruire da qui: didattica digitale · AI per l'education · instructional design · LMS · DigComp
+
+*"L'AI mi dice dove la classe è in difficoltà. Decidere come aiutarla resta un mestiere umano."*
+
 ---
 
 ---

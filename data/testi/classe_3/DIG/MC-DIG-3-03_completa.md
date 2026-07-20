@@ -160,6 +160,17 @@ Competenze chiave che inizia a costruire da qui: crittografia avanzata · ethica
 
 *"Attaccare è la mia professione. Per difendere davvero, devo pensare esattamente come chi vuole entrare."*
 
+
+**Cyber Intelligence Analyst**
+
+Lavora come un investigatore digitale: raccoglie indizi da fonti aperte — siti, social, forum, perfino il dark web — e li trasforma in dati ordinati da analizzare, proprio come si fa con le misure di un sensore. Il suo scopo è anticipare gli attacchi informatici: capire chi potrebbe colpire, come e quando. In un mondo dove miliardi di oggetti connessi trasmettono dati, il suo lavoro protegge ospedali, aziende e servizi pubblici prima che il danno accada.
+
+Dove lavora: centri operativi di sicurezza di grandi aziende, società di threat intelligence, agenzie governative, operatori di telecomunicazioni, società di consulenza informatica.
+
+Competenze chiave che inizia a costruire da qui: OSINT · threat detection · cyber intelligence · dark web analysis · sicurezza informatica
+
+*"Il segnale di un attacco c'è quasi sempre, settimane prima. Io lo cerco nel rumore."*
+
 ---
 
 ---

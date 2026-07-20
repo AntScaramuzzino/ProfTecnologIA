@@ -133,23 +133,6 @@ Il principio fondamentale dell'ergonomia si chiama **design centrato sull'utente
 
 ---
 
-
-### 💡 Chi lavora con questa competenza nel 2030?
-
-**Innovation Designer**
-
-Gestisce e guida i processi di transizione e innovazione in team multidisciplinari, usando strumenti di design e facilitazione per raggiungere la situazione aziendale desiderata.
-
-Dove lavora: studi di design strategico, centri di innovazione corporate, laboratori universitari di design, aziende in trasformazione organizzativa.
-
-Competenze chiave che inizia a costruire da qui: design management · facilitazione creativa · innovazione di processo · leadership · problem solving
-
-*"Il design non riguarda come appaiono le cose. Riguarda come funzionano e come fanno sentire le persone."*
-
----
-
----
-
 ### I grandi designer italiani: tre storie, tre lezioni
 
 **Enzo Ferrari (1898-1988):** fondatore della Ferrari, Ferrari ha costruito l'identità del brand non solo attraverso le prestazioni meccaniche ma attraverso la forma. La carrozzeria della Ferrari 250 GTO (1962) — considerata da molti la più bella automobile mai costruita — non è decorativa: ogni linea è progettata per gestire l'aerodinamica. Ferrari insegnò che forma e funzione, quando si incontrano, producono oggetti che durano nel tempo non come macchine, ma come opere culturali.
@@ -211,6 +194,26 @@ Il risultato è una forma che sembra "naturale" ma è il prodotto di decisioni t
 ---
 
 ### 👷 Chi lavora con questa competenza nel 2030?
+
+**Innovation Designer**
+
+Gestisce e guida i processi di transizione e innovazione in team multidisciplinari, usando strumenti di design e facilitazione per raggiungere la situazione aziendale desiderata.
+
+Dove lavora: studi di design strategico, centri di innovazione corporate, laboratori universitari di design, aziende in trasformazione organizzativa.
+
+Competenze chiave che inizia a costruire da qui: design management · facilitazione creativa · innovazione di processo · leadership · problem solving
+
+*"Il design non riguarda come appaiono le cose. Riguarda come funzionano e come fanno sentire le persone."*
+
+**Progettista Artistico per l'Impresa di Moda**
+
+Trasforma un'idea di moda in disegni che un'azienda può produrre davvero: schizzi a mano per catturare lo stile, figurini per mostrare come cade il tessuto, schede tecniche precise con misure, cuciture e materiali. Passa dal foglio ai programmi CAD, scegliendo ogni volta la rappresentazione più efficace per comunicare il progetto — proprio come si sceglie tra assonometria e prospettiva. Conosce anche le normative dei materiali, perché un capo deve essere bello, sicuro e realizzabile.
+
+Dove lavora: case di moda e maison, uffici stile di aziende tessili, studi di design, distretti manifatturieri del made in Italy, atelier indipendenti.
+
+Competenze chiave che inizia a costruire da qui: disegno tecnico avanzato · strumenti CAD · progettazione moda · design di prodotto · normative di settore
+
+*"Prima che una sfilata duri dieci minuti, il mio disegno tecnico deve reggere sei mesi di lavoro."*
 
 **Designer di prodotto e service designer**
 

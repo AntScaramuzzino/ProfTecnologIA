@@ -256,6 +256,17 @@ Competenze chiave che inizia a costruire da qui: urbanistica dei trasporti · UX
 
 *"Un'unica app per muoversi ovunque: bici, bus, treno, monopattino. Questo è il trasporto del futuro."*
 
+
+**Drone Logistic Operator**
+
+Coordina flotte di droni che consegnano farmaci, pacchi e materiale urgente dove i furgoni arrivano male: piccoli paesi di montagna, isole, quartieri congestionati. Dalla sala di controllo programma le rotte, tiene d'occhio sensori e GPS di ogni velivolo e interviene se il sistema automatico segnala vento forte o batteria scarica. È un lavoro fatto di automazione e responsabilità: il drone vola da solo, ma le regole di volo ENAC ed EASA le fa rispettare lui.
+
+Dove lavora: aziende di logistica e corrieri espresso, ospedali e reti sanitarie, operatori di droni certificati, protezione civile, piattaforme di e-commerce.
+
+Competenze chiave che inizia a costruire da qui: pilotaggio remoto · geolocalizzazione · regolamenti ENAC/EASA · logistica · automazione
+
+*"Il mio magazzino ha il cielo come corsia: ogni rotta che programmo deve essere sicura prima che veloce."*
+
 ---
 
 ---

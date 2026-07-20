@@ -245,6 +245,17 @@ Competenze chiave che inizia a costruire da qui: economia circolare · materiali
 
 *"Il capo più sostenibile è quello che non produci. Il secondo è quello che produci per durare vent'anni."*
 
+
+**Designer and Ecospace Designer**
+
+Ripensa spazi e oggetti — una piazza, una scuola, una linea di arredi — scegliendo materiali eco-compatibili e soluzioni che durano. Prima di ogni progetto studia il ciclo di vita completo dei materiali che userà: da dove vengono, quanta energia richiede lavorarli, cosa succederà quando l'oggetto o l'edificio arriverà a fine vita. Progetta pensando già al dopo, perché uno spazio è sostenibile solo se lo è in ogni fase.
+
+Dove lavora: studi di architettura e design, imprese di riqualificazione urbana, aziende di arredo sostenibile, enti locali e uffici tecnici comunali, cooperative di rigenerazione urbana.
+
+Competenze chiave che inizia a costruire da qui: eco-design · materiali sostenibili · progettazione ambientale · ergonomia · innovazione di prodotto
+
+*"Quando disegno una panchina penso anche a chi la smonterà tra trent'anni."*
+
 ---
 
 ---

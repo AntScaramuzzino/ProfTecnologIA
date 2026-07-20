@@ -154,6 +154,17 @@ Competenze chiave che inizia a costruire da qui: Python / R · SQL · machine le
 
 *"I dati raccontano sempre una storia. Il mio lavoro è capire se la storia è vera."*
 
+
+**Digital Twin Analyst**
+
+Costruisce la copia digitale di un sistema reale — una fabbrica, una rete elettrica, un quartiere — alimentata dai dati dei sensori, e la usa per fare esperimenti senza rischi: cosa succede se aumenta il traffico? Se si guasta una macchina? Se un percorso pedonale viene chiuso? Con le simulazioni può anche verificare che uno spazio o un servizio funzioni per tutti, comprese le persone con disabilità, prima di spendere un euro nella realtà.
+
+Dove lavora: aziende manifatturiere avanzate, società di ingegneria e simulazione, utility di energia e acqua, comuni impegnati in progetti smart city, centri di ricerca.
+
+Competenze chiave che inizia a costruire da qui: simulazione · modellazione dati · IoT · cloud computing · data analysis
+
+*"Nel mio gemello digitale un errore costa un clic. Nella realtà costerebbe milioni."*
+
 ---
 
 ---

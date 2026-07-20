@@ -45,6 +45,7 @@ import ProfessioneCard from "@/components/mc/ProfessioneCard";
 import GeoGebraAngleBisectorEmbed from "@/components/mc/GeoGebraAngleBisectorEmbed";
 import GeoGebraConstructionEmbed from "@/components/mc/GeoGebraConstructionEmbed";
 import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
+import GeoGebraOrthographicProjectionEmbed from "@/components/mc/GeoGebraOrthographicProjectionEmbed";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
@@ -198,18 +199,44 @@ function splitEsploraIntoAccordion(body: string): { id: string; title: string; b
 }
 
 // ── Estrae la sezione "Professione del Futuro" dal body di OSSERVA ───────────
-// Restituisce { professioneText, bodyWithout } per evitare duplicazione
+// Restituisce il testo completo (legacy), i blocchi per singola professione
+// (split sui titoli **in grassetto**) e il body senza la sezione.
 
-function extractProfessioneSection(body: string): { professioneText: string; bodyWithout: string } {
+interface ProfessioneBlock {
+  title: string;
+  text: string;
+}
+
+function extractProfessioneSection(body: string): {
+  professioneText: string;
+  professioneBlocks: ProfessioneBlock[];
+  bodyWithout: string;
+} {
   // Cerca @@SUBHEAD: che contiene "chi lavora", "professione", "2030", "futuro"
   const pattern = /\n@@SUBHEAD:([^\n]*(chi lavora|professione|2030|futuro)[^\n]*)\n([\s\S]*?)(?=\n@@SUBHEAD:|\n---|\s*$)/i;
   const match = body.match(pattern);
-  if (!match) return { professioneText: "", bodyWithout: body };
+  if (!match) return { professioneText: "", professioneBlocks: [], bodyWithout: body };
 
   const fullMatch = match[0];
-  const professioneText = match[1].trim() + "\n" + match[3].trim(); // titolo + corpo
+  const content = match[3];
+  const professioneText = match[1].trim() + "\n" + content.trim(); // titolo + corpo (legacy)
+
+  // Un blocco per ogni '**Titolo professione**' su riga propria
+  const titleRe = /^\*\*([^*\n]+)\*\*[ \t]*$/gm;
+  const marks: { title: string; start: number; end: number }[] = [];
+  let m: RegExpExecArray | null;
+  while ((m = titleRe.exec(content)) !== null) {
+    marks.push({ title: m[1].trim(), start: m.index, end: titleRe.lastIndex });
+  }
+  const professioneBlocks: ProfessioneBlock[] = marks.map((mark, i) => ({
+    title: mark.title,
+    text: content
+      .slice(mark.end, i + 1 < marks.length ? marks[i + 1].start : undefined)
+      .trim(),
+  }));
+
   const bodyWithout = body.replace(fullMatch, "\n").replace(/\n{3,}/g, "\n\n").trim();
-  return { professioneText, bodyWithout };
+  return { professioneText, professioneBlocks, bodyWithout };
 }
 
 // ── Estrae il body grezzo di AGISCI per il RubricaDrawer ────────────────────
@@ -390,6 +417,7 @@ function ZonePanel({
   microlearningData,
   deckSlides = [],
   professioneText,
+  professioneBlocks = [],
   appendiceSection,
   onQuizComplete,
 }: {
@@ -412,8 +440,10 @@ function ZonePanel({
   microlearningData?: MicrolearningInteractives | null;
   /** Slide della presentazione (deck NotebookLM → immagini) mostrate in apertura di ESPLORA */
   deckSlides?: VisualAsset[];
-  /** Testo narrativo "Professione del Futuro" estratto dal body OSSERVA */
+  /** Testo narrativo "Professione del Futuro" estratto dal body OSSERVA (legacy, sezione intera) */
   professioneText?: string;
+  /** Blocchi narrativi per singola professione (titolo → testo) estratti da OSSERVA */
+  professioneBlocks?: ProfessioneBlock[];
   /** Sezione APPENDICE — mostrata solo dentro il tab CLIL */
   appendiceSection?: { title: string; body: string } | null;
   /** Callback al termine del quiz — forwarded a useProgress.recordQuizResult */
@@ -537,16 +567,23 @@ function ZonePanel({
           </p>
         </div>
 
-        {profList.map((prof, idx) => (
-          <ProfessioneCard
-            key={idx}
-            professione={prof}
-            professioneText={idx === 0 ? (professioneText ?? "") : ""}
-            mcId={mc.id}
-            areaHex={areaHex}
-            imageIndex={idx}
-          />
-        ))}
+        {profList.map((prof, idx) => {
+          // Abbina il blocco narrativo alla professione per titolo (case/spazi-insensitive)
+          const norm = (s: string) => s.toLowerCase().replace(/\s+/g, " ").trim();
+          const block = professioneBlocks.find((b) => norm(b.title) === norm(prof.titolo));
+          // Fallback per la prima card: primo blocco disponibile o testo legacy
+          const fallback = idx === 0 ? (professioneBlocks[0]?.text ?? professioneText ?? "") : "";
+          return (
+            <ProfessioneCard
+              key={idx}
+              professione={prof}
+              professioneText={block?.text ?? fallback}
+              mcId={mc.id}
+              areaHex={areaHex}
+              imageIndex={idx}
+            />
+          );
+        })}
       </div>
     );
   }
@@ -804,6 +841,9 @@ function ZonePanel({
 
     return (
       <div className="px-4 py-6 sm:px-6">
+        {mc.id === "MC-DIS-2-01" && (
+          <GeoGebraOrthographicProjectionEmbed className="mb-8" />
+        )}
         {levelTabs.length > 1 ? (
           <LevelTabs tabs={levelTabs} defaultLevel={mcLevel} />
         ) : (
@@ -948,16 +988,25 @@ export function MCPageClient({
 
   // Estrae il blocco "Professione del Futuro" da OSSERVA e lo rimuove dal body:
   // il blocco viene spostato nella sezione standalone sotto il navigator.
-  const { professioneText, sectionMapClean } = useMemo(() => {
+  const { professioneText, professioneBlocks, sectionMapClean } = useMemo(() => {
     const osserva = sectionMap.get("OSSERVA");
-    if (!osserva?.body || !mc.professione_futura?.titolo) {
-      return { professioneText: "", sectionMapClean: sectionMap };
+    const hasProf = !!(mc.professioni_future?.length || mc.professione_futura?.titolo);
+    if (!osserva?.body || !hasProf) {
+      return {
+        professioneText: "",
+        professioneBlocks: [] as ProfessioneBlock[],
+        sectionMapClean: sectionMap,
+      };
     }
     const extracted = extractProfessioneSection(osserva.body);
     const map = new Map(sectionMap);
     map.set("OSSERVA", { ...osserva, body: extracted.bodyWithout });
-    return { professioneText: extracted.professioneText, sectionMapClean: map };
-  }, [sectionMap, mc.professione_futura]);
+    return {
+      professioneText: extracted.professioneText,
+      professioneBlocks: extracted.professioneBlocks,
+      sectionMapClean: map,
+    };
+  }, [sectionMap, mc.professioni_future, mc.professione_futura]);
 
   // Tab con contenuto MD + tab speciali (non dipendono dal Markdown)
   const availableTabs = ZONE_TABS.filter((tab) => {
@@ -1041,6 +1090,7 @@ export function MCPageClient({
             microlearningData={microlearningData}
             deckSlides={deckSlides}
             professioneText={professioneText}
+            professioneBlocks={professioneBlocks}
             appendiceSection={appendiceSection}
             onQuizComplete={handleQuizComplete}
           />

@@ -2077,5 +2077,1447 @@
     "definizione": "Prevenire infortuni e malattie professionali negli ambienti industriali: analisi dei rischi, DPI, procedure di sicurezza, formazione, gestione delle emergenze. Obbligatoria per legge (D.Lgs 81/2008).",
     "esempio": "Un RSPP analizza i rischi di una fonderia: identifica 12 situazioni critiche, introduce schermi di protezione, modifica le procedure di movimentazione e riduce gli infortuni del 60% in un anno.",
     "area_correlata": "ENE"
+  },
+  "accessibilità": {
+    "categoria": "Design & Creatività",
+    "emoji": "♿",
+    "definizione": "Capacità di progettare siti, app e oggetti digitali in modo che chiunque possa usarli, comprese le persone con disabilità visive, uditive o motorie. Rende la tecnologia davvero utilizzabile da tutti, senza barriere.",
+    "esempio": "Una web interaction designer aggiunge sottotitoli ai video e testi alternativi alle immagini: così anche una persona non vedente, con il lettore vocale, capisce cosa mostra la pagina.",
+    "area_correlata": "DIG"
+  },
+  "accessibilità web": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🌐",
+    "definizione": "Saper costruire pagine web che rispettano le regole internazionali (come le WCAG) per essere leggibili da tutti i dispositivi e da tutte le persone. Riguarda colori a giusto contrasto, testi ingrandibili e navigazione con la sola tastiera.",
+    "esempio": "Un web designer controlla che il testo grigio su sfondo bianco sia abbastanza scuro da leggersi bene: se il contrasto è troppo debole, lo corregge prima di pubblicare il sito.",
+    "area_correlata": "DIG"
+  },
+  "advertising": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📢",
+    "definizione": "La pubblicità è l'arte di creare messaggi che convincono le persone a scegliere un prodotto, un'idea o un evento. Chi lavora nell'advertising unisce parole, immagini e strategia per farsi notare e ricordare.",
+    "esempio": "Un communication designer inventa lo slogan e il manifesto di una mostra d'arte: colori accesi e una frase breve spingono migliaia di persone a comprare il biglietto.",
+    "area_correlata": "COM"
+  },
+  "agricoltura di precisione": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🛰️",
+    "definizione": "Modo di coltivare che usa sensori, droni e dati per dare a ogni pianta esattamente l'acqua e il nutrimento di cui ha bisogno. Riduce gli sprechi e aumenta il raccolto rispetto all'agricoltura tradizionale.",
+    "esempio": "Una vertical farmer legge i sensori di umidità e attiva l'irrigazione solo nelle file di lattuga che ne hanno davvero bisogno, risparmiando fino al 90% dell'acqua.",
+    "area_correlata": "ALI"
+  },
+  "agricoltura urbana": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🌱",
+    "definizione": "Coltivare frutta, verdura ed erbe dentro la città: su tetti, balconi, terreni abbandonati o orti condivisi. Avvicina il cibo a chi lo mangia, riduce i trasporti e rende i quartieri più verdi.",
+    "esempio": "Un urban farming coordinator trasforma il tetto di un supermercato in un orto: le verdure raccolte al mattino sono sugli scaffali del negozio sotto poche ore dopo.",
+    "area_correlata": "ALI"
+  },
+  "ai act europeo": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "⚖️",
+    "definizione": "L'AI Act è la legge europea che stabilisce regole su come si possono costruire e usare i sistemi di intelligenza artificiale. Divide le applicazioni in livelli di rischio e vieta quelle pericolose per i diritti delle persone.",
+    "esempio": "Un ethical AI officer verifica che un software di riconoscimento facciale rispetti l'AI Act: se rientra tra gli usi vietati nei luoghi pubblici, ne blocca l'adozione in azienda.",
+    "area_correlata": "DIG"
+  },
+  "ai per l'education": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🎓",
+    "definizione": "Uso dell'intelligenza artificiale per aiutare a insegnare e a studiare: esercizi che si adattano al livello di ognuno, correzioni automatiche e tutor virtuali. Serve a rendere l'apprendimento più personale ed efficace.",
+    "esempio": "Un'educatrice usa un'app con IA che propone a ogni alunno esercizi diversi di matematica: chi sbaglia le frazioni riceve altri problemi su quel tema finché non li padroneggia.",
+    "area_correlata": "DIG"
+  },
+  "algebra lineare": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔢",
+    "definizione": "Parte della matematica che lavora con vettori e matrici, cioè tabelle di numeri utili a descrivere spazi, immagini e movimenti. È la base con cui i computer elaborano foto, grafica 3D e intelligenza artificiale.",
+    "esempio": "Un computer vision engineer rappresenta ogni foto come una grande matrice di numeri: applicando calcoli di algebra lineare, il programma riconosce i bordi e distingue un gatto da un cane.",
+    "area_correlata": "INF"
+  },
+  "algoritmi e strutture dati": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🧮",
+    "definizione": "Gli algoritmi sono sequenze precise di passi per risolvere un problema; le strutture dati sono i modi ordinati in cui il computer conserva le informazioni. Insieme permettono ai programmi di funzionare velocemente e senza errori.",
+    "esempio": "Un software engineer sceglie l'algoritmo giusto per ordinare un milione di nomi in ordine alfabetico in un attimo, invece di farci impiegare al computer diversi minuti.",
+    "area_correlata": "INF"
+  },
+  "analisi dati": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📊",
+    "definizione": "Saper raccogliere numeri e informazioni, organizzarli e leggerli per scoprire tendenze nascoste e prendere decisioni migliori. Trasforma tabelle piene di dati grezzi in risposte chiare a domande concrete, come 'quale prodotto piace di più?'.",
+    "esempio": "Un digital strategist esamina i dati di un sito e scopre che i visitatori abbandonano il carrello al momento del pagamento: consiglia di semplificarlo e le vendite salgono del 20%.",
+    "area_correlata": "DIG"
+  },
+  "analisi dei bias algoritmici": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🔍",
+    "definizione": "Studiare i programmi di intelligenza artificiale per scoprire se trattano ingiustamente certi gruppi di persone. Questi errori nascosti, detti bias, nascono da dati sbilanciati e vanno individuati e corretti prima che facciano danni reali.",
+    "esempio": "Un responsible AI specialist scopre che un software di selezione del personale scarta più curriculum femminili: analizza i dati d'addestramento e riequilibra il sistema perché giudichi tutti allo stesso modo.",
+    "area_correlata": "INF"
+  },
+  "analisi della complessità": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "⏱️",
+    "definizione": "Saper valutare quanto tempo e quanta memoria un programma consuma al crescere dei dati da elaborare. Aiuta a capire in anticipo se un codice resterà veloce anche con milioni di informazioni.",
+    "esempio": "Un software engineer confronta due metodi per cercare un nome in una rubrica: capisce che uno resta rapido con un milione di contatti, mentre l'altro diventerebbe lentissimo, e sceglie il primo.",
+    "area_correlata": "INF"
+  },
+  "analisi delle vibrazioni": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📳",
+    "definizione": "Tecnica che ascolta le vibrazioni di motori e macchinari per capire se qualcosa sta per rompersi. Piccoli tremolii anomali rivelano un guasto in arrivo molto prima che la macchina si fermi.",
+    "esempio": "Un predictive maintenance analyst applica un sensore alla ventola di una turbina: quando registra una vibrazione insolita, avvisa i tecnici che sostituiscono il cuscinetto prima del guasto vero.",
+    "area_correlata": "ENE"
+  },
+  "analisi di mercato": {
+    "categoria": "Business & Management",
+    "emoji": "📈",
+    "definizione": "Studiare cosa vogliono le persone, cosa fanno i concorrenti e come cambiano i prezzi, per capire dove conviene investire o vendere. Serve a prendere decisioni economiche basate sui fatti, non sull'istinto.",
+    "esempio": "Un analista finanziario studia l'andamento delle criptovalute nell'ultimo anno e i comportamenti degli utenti: consiglia ai clienti quando conviene entrare o uscire da un investimento.",
+    "area_correlata": "SIS"
+  },
+  "analisi predittiva": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🔮",
+    "definizione": "Usare i dati raccolti nel passato per prevedere cosa succederà in futuro, con l'aiuto di modelli matematici e intelligenza artificiale. Permette di anticipare guasti, richieste dei clienti o comportamenti prima ancora che accadano.",
+    "esempio": "Un analista dell'industria dell'energia incrocia anni di dati sui macchinari: il modello prevede che una certa pompa si guasterà tra due settimane, così viene riparata durante una pausa programmata.",
+    "area_correlata": "ENE"
+  },
+  "animazione digitale": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎬",
+    "definizione": "Dare vita a personaggi e oggetti sullo schermo creando l'illusione del movimento con il computer, immagine dopo immagine. È il cuore dei cartoni animati, dei videogiochi e degli effetti speciali dei film.",
+    "esempio": "Un animatore digitale disegna e muove al computer un draghetto per un cartone animato: regolando decine di fotogrammi al secondo, lo fa camminare, saltare e sputare fuoco in modo credibile.",
+    "area_correlata": "DIG"
+  },
+  "animazione digitale 3d": {
+    "categoria": "Design & Creatività",
+    "emoji": "🧊",
+    "definizione": "Costruire personaggi e ambienti tridimensionali al computer, come sculture virtuali che si possono girare e illuminare da ogni lato, e poi farli muovere. Rende scene e creature realistiche in film e videogiochi.",
+    "esempio": "Un artista 3D modella un dinosauro digitale come una statua che ruota nello spazio, gli aggiunge pelle e muscoli, poi lo anima per farlo correre in un film di avventura.",
+    "area_correlata": "DIG"
+  },
+  "anonimizzazione dei dati": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🎭",
+    "definizione": "Tecnica per togliere da un insieme di dati tutte le informazioni che permettono di riconoscere le singole persone. Così i dati restano utili per le ricerche, ma nessuno può risalire a chi appartengono.",
+    "esempio": "Un privacy engineer prepara i dati di un ospedale per uno studio: cancella nomi, indirizzi e codici fiscali, lasciando solo età e sintomi, così i ricercatori lavorano senza violare la privacy.",
+    "area_correlata": "INF"
+  },
+  "approccio sistematico": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧩",
+    "definizione": "Affrontare un problema con metodo e ordine, dividendolo in passaggi chiari invece di procedere a caso. Questo modo di ragionare rende il lavoro ripetibile, verificabile e più difficile da sbagliare.",
+    "esempio": "Un data scientist non tira a indovinare: definisce la domanda, raccoglie i dati, li pulisce, fa i calcoli e controlla i risultati, seguendo sempre lo stesso schema affidabile.",
+    "area_correlata": "INF"
+  },
+  "architettura iot": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📡",
+    "definizione": "Progettare come tanti oggetti intelligenti (sensori, elettrodomestici, telecamere) si collegano tra loro e a internet per scambiarsi dati. È lo schema che fa funzionare insieme le 'cose connesse' dell'Internet of Things.",
+    "esempio": "Un ingegnere IoT progetta una casa smart: decide come termostato, luci e sensori di movimento dialogano tramite un hub centrale, così le luci si spengono da sole quando esci.",
+    "area_correlata": "INF"
+  },
+  "architettura paesaggistica": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏞️",
+    "definizione": "Progettare spazi all'aperto come parchi, giardini e piazze unendo natura e bisogni delle persone. Chi la pratica decide dove mettere alberi, sentieri e acqua per creare luoghi belli, utili e sostenibili.",
+    "esempio": "Un habitat designer trasforma un'area abbandonata in un parco cittadino: dispone alberi che fanno ombra d'estate, un laghetto per gli uccelli e panchine dove le famiglie si riposano.",
+    "area_correlata": "AMB"
+  },
+  "arredamento": {
+    "categoria": "Design & Creatività",
+    "emoji": "🛋️",
+    "definizione": "L'arte di organizzare mobili, colori e luci dentro una stanza per renderla comoda, bella e adatta a chi la vive. Un buon arredamento fa sembrare uno spazio più grande, accogliente e funzionale.",
+    "esempio": "Un interior designer sistema una cameretta piccola: sceglie un letto con cassetti sotto, mensole alte e colori chiari, così il bambino ha spazio per giocare e studiare.",
+    "area_correlata": "AMB"
+  },
+  "astrodinamica": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚀",
+    "definizione": "Scienza che calcola come si muovono satelliti, razzi e sonde nello spazio, sfruttando la gravità dei pianeti. Serve a tracciare orbite precise ed evitare che gli oggetti in orbita si scontrino.",
+    "esempio": "Uno space traffic controller calcola l'orbita di due satelliti in rotta di collisione e comanda una piccola accensione dei motori: lo spostamento di pochi chilometri evita l'impatto.",
+    "area_correlata": "COM"
+  },
+  "audit degli algoritmi": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🧾",
+    "definizione": "Controllare a fondo un algoritmo per verificare che funzioni in modo corretto, giusto e trasparente. Come una revisione contabile, ma sui programmi: si esamina cosa decidono e perché, per scoprire errori o ingiustizie.",
+    "esempio": "Un ethical AI officer ispeziona l'algoritmo che assegna i prestiti di una banca: verifica passo per passo i criteri usati e segnala che penalizza ingiustamente chi vive in certi quartieri.",
+    "area_correlata": "DIG"
+  },
+  "auditing ambientale": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌍",
+    "definizione": "Esaminare le attività di un'azienda per misurarne l'impatto sull'ambiente: quanta energia consuma, quanti rifiuti produce, quanto inquina. Il risultato è un rapporto che indica dove e come ridurre i danni alla natura.",
+    "esempio": "Un consulente per la decarbonizzazione visita una fabbrica, misura consumi e sprechi e scopre che i vecchi forni bruciano troppo gas: propone di sostituirli e di tagliare le emissioni di un terzo.",
+    "area_correlata": "MAT"
+  },
+  "automazione con script": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "⚙️",
+    "definizione": "Scrivere piccoli programmi, chiamati script, che fanno svolgere al computer compiti ripetitivi da solo. Invece di ripetere a mano cento volte la stessa operazione, la si automatizza una volta e il computer la esegue in un attimo.",
+    "esempio": "Un amministratore di sistemi scrive uno script che ogni notte salva automaticamente tutti i file dell'azienda: nessuno deve ricordarsi di farlo e i dati sono sempre al sicuro.",
+    "area_correlata": "INF"
+  },
+  "benessere digitale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🧘",
+    "definizione": "Saper usare smartphone, social e videogiochi in modo equilibrato, senza farsene dominare. Riguarda il capire quando spegnere lo schermo, proteggere il sonno e mantenere sane le relazioni fuori dalla rete.",
+    "esempio": "Un facilitatore del tempo senza tecnologia organizza in una scuola una 'giornata offline' con giochi all'aperto: i ragazzi scoprono di potersi divertire anche senza telefono in mano.",
+    "area_correlata": "DIG"
+  },
+  "bias detection": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🎯",
+    "definizione": "Individuare i pregiudizi nascosti dentro un sistema di intelligenza artificiale, cioè le situazioni in cui favorisce o penalizza certe persone. È il primo passo per rendere gli algoritmi più equi verso tutti.",
+    "esempio": "Un ethical AI officer prova un assistente vocale con voci maschili e femminili e nota che capisce peggio quelle femminili: ha individuato un bias da segnalare agli sviluppatori.",
+    "area_correlata": "DIG"
+  },
+  "big data": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🗄️",
+    "definizione": "Insiemi di dati talmente enormi e veloci da crescere che i programmi normali non riescono a gestirli. Servono strumenti speciali per raccoglierli e analizzarli, e da essi si estraggono informazioni preziose.",
+    "esempio": "Un analista raccoglie i big data di migliaia di macchinari — miliardi di misurazioni al giorno — e con strumenti dedicati scopre quali segnali precedono sempre un guasto.",
+    "area_correlata": "ENE"
+  },
+  "bioingegneria": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧬",
+    "definizione": "Disciplina che unisce biologia e ingegneria per risolvere problemi usando organismi viventi o imitando la natura. Va dalla creazione di protesi e organi artificiali alle costruzioni ispirate a piante e animali.",
+    "esempio": "Un habitat designer con competenze di bioingegneria progetta un muro ricoperto di muschio che filtra l'aria come farebbe un piccolo bosco, imitando il modo in cui le piante puliscono l'ambiente.",
+    "area_correlata": "AMB"
+  },
+  "bioreattori": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🧫",
+    "definizione": "Grandi contenitori dove si fanno crescere cellule o microrganismi in condizioni controllate di calore, cibo e ossigeno. Sono le 'fabbriche viventi' che producono medicine, carne coltivata e nuovi alimenti senza allevare animali.",
+    "esempio": "Uno sviluppatore di cibo sintetico coltiva cellule muscolari dentro un bioreattore d'acciaio: nel giro di poche settimane ottiene un hamburger di carne vera prodotta senza uccidere alcun animale.",
+    "area_correlata": "ALI"
+  },
+  "biotecnologie": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔬",
+    "definizione": "Insieme di tecniche che sfruttano esseri viventi — piante, batteri, cellule — per creare prodotti utili all'uomo. Grazie alle biotecnologie nascono farmaci, alimenti più resistenti e materiali che si biodegradano.",
+    "esempio": "Un vertical farmer usa le biotecnologie per scegliere sementi di basilico che crescono più in fretta e resistono alle malattie, ottenendo raccolti abbondanti anche in una serra al chiuso.",
+    "area_correlata": "ALI"
+  },
+  "building management system (bms)": {
+    "categoria": "Energia",
+    "emoji": "🏢",
+    "definizione": "Sistema informatico che controlla e coordina gli impianti di un edificio — riscaldamento, luci, ascensori, sicurezza — da un unico centro. Regola tutto automaticamente per consumare meno energia e tenere le persone al sicuro.",
+    "esempio": "Un gestore della rete di sensori urbani usa il BMS di un grattacielo per abbassare i riscaldamenti nei piani vuoti la sera, tagliando la bolletta senza che nessuno se ne accorga.",
+    "area_correlata": "ENE"
+  },
+  "cad 2d avanzato": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📐",
+    "definizione": "Saper usare a livello esperto i programmi di disegno tecnico al computer per creare piante e progetti piatti, precisi al millimetro. Sostituisce riga e squadra con strumenti digitali veloci e modificabili.",
+    "esempio": "Un designer di prodotto disegna al CAD il progetto in scala di una nuova sedia: quote precise e viste dall'alto e di lato guidano la fabbrica che la costruirà.",
+    "area_correlata": "DIS"
+  },
+  "cad parametrico": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📏",
+    "definizione": "Tipo di disegno 3D al computer in cui le misure sono legate da regole: se cambi un valore, l'intero modello si aggiorna da solo. Permette di modificare un progetto in pochi secondi.",
+    "esempio": "Un digital twin engineer modella una ruota dentata al CAD parametrico: quando il cliente chiede più denti, basta cambiare un numero e la ruota si ridisegna intera automaticamente.",
+    "area_correlata": "DIS"
+  },
+  "calcolo emissioni co₂": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "💨",
+    "definizione": "Misurare quanta anidride carbonica viene liberata nell'aria da un'attività, un prodotto o un viaggio. Questo conto trasforma azioni quotidiane in numeri, così si capisce quanto pesano sul riscaldamento del pianeta.",
+    "esempio": "Un carbon footprint analyst calcola le emissioni di una bottiglia di plastica, dalla fabbrica al negozio: scopre che pesa 80 grammi di CO₂ e suggerisce come dimezzarli.",
+    "area_correlata": "MAT"
+  },
+  "carbon footprint": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "👣",
+    "definizione": "L'impronta di carbonio è la quantità totale di gas serra che una persona, un'azienda o un oggetto genera durante la sua vita. È come un'impronta lasciata sul clima: più è grande, più inquina.",
+    "esempio": "Un consulente per la decarbonizzazione calcola l'impronta di carbonio di una scuola sommando riscaldamento, luce e trasporti degli studenti, poi propone pannelli solari per ridurla.",
+    "area_correlata": "MAT"
+  },
+  "civic tech": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🏛️",
+    "definizione": "Tecnologie digitali pensate per avvicinare i cittadini alle istituzioni: app per segnalare problemi, piattaforme di voto o siti che rendono trasparenti le spese pubbliche. Aiutano le persone a partecipare alla vita della comunità.",
+    "esempio": "Un facilitatore raccoglie idee dei cittadini con un'app di civic tech: gli abitanti fotografano le buche stradali e il Comune vede su una mappa dove intervenire per prime.",
+    "area_correlata": "SIS"
+  },
+  "climatologia": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🌦️",
+    "definizione": "Scienza che studia il clima, cioè l'andamento di temperature, piogge e venti su lunghi periodi e vaste zone. Serve a capire come sta cambiando il pianeta e a prevedere fenomeni estremi.",
+    "esempio": "Un climate risk analyst studia trent'anni di dati meteo di una città costiera e avverte che, senza interventi, entro pochi decenni le alte maree allagheranno i quartieri più bassi.",
+    "area_correlata": "AMB"
+  },
+  "cloud computing": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "☁️",
+    "definizione": "Usare computer potenti collegati a internet, invece del proprio, per conservare file ed eseguire programmi. È come affittare spazio e potenza di calcolo a distanza, pagando solo quello che serve, quando serve.",
+    "esempio": "Un cloud infrastructure engineer sposta i dati di un'app di giochi sul cloud: quando milioni di ragazzi si collegano insieme, aggiunge potenza in pochi minuti senza comprare nuovi computer.",
+    "area_correlata": "DIG"
+  },
+  "cms": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📝",
+    "definizione": "Il CMS (Content Management System) è un programma che permette di creare e aggiornare un sito web senza scrivere codice. Grazie a esso chiunque può pubblicare testi e immagini come compilando un modulo.",
+    "esempio": "Un web designer costruisce il sito di una pizzeria con un CMS come WordPress: il titolare può poi cambiare da solo il menù e i prezzi, senza chiamare un programmatore.",
+    "area_correlata": "DIG"
+  },
+  "codifica dell'informazione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🔡",
+    "definizione": "Trasformare informazioni come lettere, suoni e immagini in numeri, in genere sequenze di zero e uno, che il computer sa gestire. È il linguaggio segreto con cui ogni dato viene rappresentato dentro le macchine.",
+    "esempio": "Uno sviluppatore di sistemi embedded stabilisce come codificare la temperatura letta da un sensore in una sequenza di bit, così il microchip può memorizzarla e inviarla via radio.",
+    "area_correlata": "INF"
+  },
+  "coding creativo": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Usare la programmazione non per fare calcoli, ma per creare arte: immagini, animazioni, musica e giochi. Il codice diventa un pennello con cui l'artista dà forma alle proprie idee sullo schermo.",
+    "esempio": "Un artista di effetti visivi scrive poche righe di codice che fanno cadere migliaia di fiocchi di neve tutti diversi: a mano ci vorrebbero mesi, col coding creativo bastano minuti.",
+    "area_correlata": "DIG"
+  },
+  "community engagement": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🤝",
+    "definizione": "Coinvolgere attivamente un gruppo di persone in un progetto, ascoltando le loro idee e facendole sentire parte di una comunità. Non basta parlare al pubblico: bisogna creare dialogo e partecipazione reale.",
+    "esempio": "Un facilitatore organizza incontri di quartiere per progettare un parco: invece di decidere dall'alto, raccoglie i desideri degli abitanti, che così difendono e curano lo spazio come proprio.",
+    "area_correlata": "SIS"
+  },
+  "community management": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "💬",
+    "definizione": "Gestire e far crescere la comunità di persone che segue un progetto, un marchio o un'iniziativa, soprattutto online. Chi lo fa risponde ai messaggi, anima le discussioni e tiene vivo l'interesse del gruppo.",
+    "esempio": "Un urban farming coordinator cura la pagina social dell'orto condiviso: pubblica foto dei raccolti, risponde alle domande e organizza le giornate di volontariato, così i partecipanti restano affiatati.",
+    "area_correlata": "ALI"
+  },
+  "competenze culturali e psicologiche": {
+    "categoria": "Design & Creatività",
+    "emoji": "🧠",
+    "definizione": "Capire come pensano, sentono e vivono persone di culture diverse, per creare contenuti che le emozionino e le rispettino. Unisce conoscenza della psicologia e sensibilità verso tradizioni e valori diversi dai propri.",
+    "esempio": "Un'animatrice che progetta un film per il pubblico di tutto il mondo studia colori e gesti: scopre che un simbolo positivo da noi può offendere in un altro Paese, e lo cambia.",
+    "area_correlata": "DIG"
+  },
+  "comunicazione digitale": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📱",
+    "definizione": "Saper trasmettere messaggi in modo efficace attraverso i canali digitali: video, social, siti e newsletter. Richiede di adattare il tono e il formato del contenuto al mezzo e al pubblico che lo riceverà.",
+    "esempio": "Un videomaker realizza lo stesso annuncio in due versioni: un video verticale di 15 secondi per i social e uno più lungo e curato per il sito, adattandolo a ogni piattaforma.",
+    "area_correlata": "COM"
+  },
+  "container e orchestrazione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📦",
+    "definizione": "I container sono 'scatole' che racchiudono un programma con tutto ciò che gli serve per funzionare ovunque. L'orchestrazione è l'arte di coordinarne tanti insieme, avviandoli e fermandoli in automatico secondo le necessità.",
+    "esempio": "Un cloud engineer chiude un sito e-commerce in tanti container identici: durante i saldi, il sistema di orchestrazione ne avvia automaticamente di nuovi per reggere il boom di visitatori.",
+    "area_correlata": "INF"
+  },
+  "coordinamento operazioni": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🎛️",
+    "definizione": "Organizzare persone, mezzi e tempi perché un'attività complessa si svolga senza intoppi. Chi coordina le operazioni tiene d'occhio tutto dall'alto, dà istruzioni al momento giusto e risolve gli imprevisti in tempo reale.",
+    "esempio": "Un drone security coordinator guida dieci droni che sorvegliano un concerto: da una centrale segue gli schermi, assegna a ciascuno una zona ed evita che si incrocino tra loro.",
+    "area_correlata": "COM"
+  },
+  "copywriting": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "✍️",
+    "definizione": "L'arte di scrivere testi brevi e convincenti per pubblicità, siti e prodotti, scegliendo le parole giuste per farsi capire e ricordare. Un buon copywriter fa venire voglia di leggere, cliccare o comprare.",
+    "esempio": "Un copywriter deve promuovere una mostra e riassume tutto in cinque parole d'effetto sul manifesto: la frase incuriosisce i passanti e li spinge a cercare data e biglietti.",
+    "area_correlata": "COM"
+  },
+  "creatività applicata": {
+    "categoria": "Design & Creatività",
+    "emoji": "💡",
+    "definizione": "Saper usare l'immaginazione per risolvere problemi concreti e inventare prodotti nuovi e utili, non solo per fare arte. Unisce fantasia e senso pratico per trasformare un'idea originale in qualcosa che funziona davvero.",
+    "esempio": "Una textile designer immagina un tessuto che cambia colore con il caldo: unendo creatività e chimica, crea una maglietta che diventa più chiara quando la temperatura sale.",
+    "area_correlata": "MAT"
+  },
+  "cryptoasset": {
+    "categoria": "Business & Management",
+    "emoji": "🪙",
+    "definizione": "Beni che esistono solo in forma digitale, come le criptovalute, registrati e protetti da una tecnologia chiamata blockchain. Si possono comprare, vendere o scambiare online senza passare da una banca.",
+    "esempio": "Un analista DeFi studia un nuovo cryptoasset prima di consigliarlo: controlla chi l'ha creato, quanti ne esistono e quanto oscilla il prezzo, perché in un giorno può salire o crollare.",
+    "area_correlata": "SIS"
+  },
+  "csr": {
+    "categoria": "Business & Management",
+    "emoji": "🤲",
+    "definizione": "La CSR (Responsabilità Sociale d'Impresa) è l'impegno di un'azienda a comportarsi in modo corretto verso persone e ambiente, oltre a guadagnare. Riguarda condizioni di lavoro giuste, rispetto della natura e onestà.",
+    "esempio": "Una fashion sustainability manager applica la CSR nella sua azienda di vestiti: verifica che nelle fabbriche i lavoratori siano pagati bene e che i tessuti non inquinino i fiumi.",
+    "area_correlata": "SIS"
+  },
+  "cyber intelligence": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🛡️",
+    "definizione": "Raccogliere e analizzare informazioni sulle minacce informatiche per proteggere in anticipo aziende e persone dagli attacchi. È come un servizio segreto del mondo digitale, che studia gli hacker prima che colpiscano.",
+    "esempio": "Un cyber intelligence analyst scopre in un forum di hacker che si prepara un attacco a una banca: avvisa in tempo i tecnici, che rafforzano le difese ed evitano il furto.",
+    "area_correlata": "DIG"
+  },
+  "dark web analysis": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🌑",
+    "definizione": "Esplorare in sicurezza la parte nascosta di internet, il dark web, dove si muovono anche criminali informatici. Serve a scoprire dati rubati, truffe in preparazione e minacce, per fermarle prima che facciano danni.",
+    "esempio": "Un cyber intelligence analyst esplora il dark web e trova in vendita le password rubate a una scuola: avverte subito la dirigenza, che le fa cambiare tutte prima che vengano usate.",
+    "area_correlata": "DIG"
+  },
+  "data science": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔭",
+    "definizione": "Disciplina che estrae conoscenza da grandi quantità di dati unendo matematica, programmazione e curiosità. Chi la pratica cerca schemi nascosti nei numeri per rispondere a domande e prevedere cosa potrebbe accadere.",
+    "esempio": "Una climate risk analyst applica la data science a milioni di rilevazioni di temperatura e pioggia: il computer trova lo schema che collega certe estati torride alle successive alluvioni.",
+    "area_correlata": "AMB"
+  },
+  "database ecoinvent": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🗃️",
+    "definizione": "Ecoinvent è una grande banca dati che raccoglie l'impatto ambientale di migliaia di materiali e processi. Chi calcola l'inquinamento di un prodotto vi trova numeri già misurati, senza doverli stimare da zero.",
+    "esempio": "Un carbon footprint analyst deve sapere quanto inquina un chilo di alluminio: cerca il valore nel database Ecoinvent e lo usa per calcolare l'impronta di una lattina in pochi minuti.",
+    "area_correlata": "MAT"
+  },
+  "debugging sistematico": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🐛",
+    "definizione": "Cercare e correggere gli errori di un programma con metodo, procedendo per tentativi ordinati invece che a caso. Si isola il pezzo di codice che sbaglia, si capisce il perché e si sistema.",
+    "esempio": "Un software engineer, davanti a un'app che si blocca, non cambia il codice a caso: spegne una funzione alla volta finché trova la riga colpevole, poi la corregge.",
+    "area_correlata": "INF"
+  },
+  "democrazia digitale": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🗳️",
+    "definizione": "Uso di internet e delle tecnologie digitali per far partecipare i cittadini alle decisioni pubbliche: votare, proporre idee, discutere leggi online. Punta a rendere la politica più aperta e vicina a tutti.",
+    "esempio": "Un facilitatore lancia una piattaforma di democrazia digitale dove gli abitanti votano come spendere il budget del quartiere: in una settimana migliaia di persone scelgono tra nuove aule o un parco giochi.",
+    "area_correlata": "SIS"
+  },
+  "design ambientale": {
+    "categoria": "Architettura & Città",
+    "emoji": "🌿",
+    "definizione": "Progettare gli spazi in cui viviamo — interni, esterni, arredi, segnaletica — pensando a come le persone li vivono e all'impatto sulla natura. Cerca luoghi belli, funzionali e in armonia con l'ambiente.",
+    "esempio": "Un habitat designer progetta l'atrio di una scuola con luce naturale, piante e materiali riciclati: lo spazio è accogliente, costa poco da illuminare e insegna il rispetto per l'ambiente.",
+    "area_correlata": "AMB"
+  },
+  "design del packaging": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎁",
+    "definizione": "Progettare la confezione di un prodotto perché lo protegga, lo faccia notare sullo scaffale e comunichi cosa contiene. Un buon packaging unisce grafica accattivante, materiali adatti e attenzione allo spreco.",
+    "esempio": "Un packaging designer inventa una scatola di biscotti in cartone riciclato che si apre come un libro: attira lo sguardo al supermercato e, finita, si getta nella raccolta della carta.",
+    "area_correlata": "ALI"
+  },
+  "design di prodotto": {
+    "categoria": "Design & Creatività",
+    "emoji": "✏️",
+    "definizione": "Ideare oggetti di uso quotidiano — sedie, lampade, occhiali, elettrodomestici — curando insieme aspetto, comodità, costo e modo di produrli. Chi lo fa parte dai bisogni delle persone e arriva all'oggetto finito.",
+    "esempio": "Un designer di prodotto progetta uno spazzolino più facile da impugnare per i bambini: prova diverse forme in plastica, sceglie la più comoda e la consegna alla fabbrica.",
+    "area_correlata": "DIS"
+  },
+  "design esperienziale": {
+    "categoria": "Design & Creatività",
+    "emoji": "✨",
+    "definizione": "Progettare non un semplice oggetto, ma un'esperienza intera da vivere: emozioni, sensazioni e ricordi che una persona prova durante un evento, una visita o l'uso di un servizio. Cura ogni dettaglio del percorso.",
+    "esempio": "Un facilitatore progetta un pomeriggio senza schermi in biblioteca: dalla musica alla caccia al tesoro tra i libri, tutto è pensato perché i ragazzi si divertano e non sentano la mancanza del telefono.",
+    "area_correlata": "DIG"
+  },
+  "design sostenibile": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "♻️",
+    "definizione": "Progettare prodotti pensando fin dall'inizio a ridurre il loro impatto sull'ambiente: materiali riciclabili, meno sprechi, lunga durata e facilità di riparazione. L'obiettivo è creare cose belle che non danneggino il pianeta.",
+    "esempio": "Un green product designer disegna uno zaino con un solo materiale e cuciture semplici: dura anni, si ripara facilmente e, a fine vita, si ricicla tutto insieme.",
+    "area_correlata": "DIS"
+  },
+  "devops": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🔄",
+    "definizione": "Modo di lavorare che unisce chi scrive i programmi e chi li fa funzionare sui server, così che collaborino strettamente. Permette di aggiornare le app spesso, in fretta e con meno errori.",
+    "esempio": "Grazie al DevOps, un ingegnere pubblica un miglioramento di un'app di messaggi più volte al giorno: un sistema automatico controlla e mette online il nuovo codice in pochi minuti.",
+    "area_correlata": "INF"
+  },
+  "didattica digitale": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🧑‍🏫",
+    "definizione": "Insegnare e imparare usando strumenti digitali: lavagne interattive, video, quiz online e app didattiche. Non significa solo mettere lo schermo in classe, ma scegliere la tecnologia giusta per far capire meglio ogni argomento.",
+    "esempio": "Un docente esperto di didattica digitale spiega i vulcani con un video 3D e un quiz interattivo: gli studenti vedono l'eruzione da dentro e verificano subito cosa hanno capito.",
+    "area_correlata": "DIG"
+  },
+  "digcomp": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🧭",
+    "definizione": "DigComp è il quadro europeo che elenca le competenze digitali che ogni cittadino dovrebbe avere: cercare informazioni, comunicare online, creare contenuti, proteggersi e risolvere problemi. Serve da mappa per capire cosa saper fare col digitale.",
+    "esempio": "Un'educatrice usa DigComp come guida per programmare le lezioni: verifica che, durante l'anno, gli alunni imparino sia a riconoscere le fake news sia a proteggere le proprie password.",
+    "area_correlata": "DIG"
+  },
+  "digital marketing": {
+    "categoria": "Business & Management",
+    "emoji": "🛒",
+    "definizione": "Promuovere prodotti e servizi attraverso internet: motori di ricerca, social, email e pubblicità online. A differenza di quella tradizionale, permette di raggiungere pubblici precisi e di misurare subito quante persone rispondono.",
+    "esempio": "Un digital strategist lancia la campagna di un negozio di scarpe solo verso ragazzi appassionati di sport della sua città: spende poco e vede in tempo reale quanti cliccano e comprano.",
+    "area_correlata": "DIG"
+  },
+  "digital reputation": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "⭐",
+    "definizione": "La reputazione digitale è l'immagine che una persona o un'azienda ha online, costruita da post, foto, commenti e recensioni. Curarla significa far sì che ciò che si trova in rete rispecchi valori positivi.",
+    "esempio": "Un digital identity curator aiuta un ristorante con brutte recensioni online: risponde con educazione ai clienti scontenti, valorizza i commenti positivi e in pochi mesi migliora il voto medio.",
+    "area_correlata": "DIG"
+  },
+  "diritto contrattuale": {
+    "categoria": "Business & Management",
+    "emoji": "⚖️",
+    "definizione": "Conoscenza delle regole che rendono validi gli accordi tra persone e aziende: chi promette cosa, a quali condizioni, cosa succede se qualcuno non rispetta i patti. Serve ogni volta che si compra, si vende o si collabora.",
+    "esempio": "Un consulente legale controlla il contratto tra un'azienda agricola e un supermercato: se il raccolto arriva in ritardo di 3 giorni, la penale scatta o no?",
+    "area_correlata": "ALI"
+  },
+  "documentazione tecnica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📋",
+    "definizione": "Saper preparare i documenti che accompagnano un progetto: disegni quotati, distinte dei materiali, istruzioni di montaggio, schede di collaudo. Senza documentazione chiara, l'officina non può produrre ciò che il progettista ha in mente.",
+    "esempio": "Un designer consegna alla fabbrica 12 tavole tecniche di una sedia: ogni vite, spessore e finitura è specificato, così i primi 100 pezzi escono identici al prototipo.",
+    "area_correlata": "DIS"
+  },
+  "eco-design": {
+    "categoria": "Design & Creatività",
+    "emoji": "🌱",
+    "definizione": "Modo di progettare che considera l'impatto ambientale di un oggetto fin dal primo schizzo: materiali riciclabili, meno componenti, imballaggi ridotti, facilità di riparazione. L'obiettivo è un prodotto che funziona bene e pesa poco sul pianeta.",
+    "esempio": "Una designer riprogetta un frullatore con 8 pezzi smontabili invece di 23 incollati: si ripara in 10 minuti e a fine vita si ricicla quasi tutto.",
+    "area_correlata": "MAT"
+  },
+  "eco-design costruttivo": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏗️",
+    "definizione": "Applicazione dell'eco-design agli edifici: orientamento che sfrutta il sole, materiali locali e riciclabili, isolamento che riduce i consumi, spazi pensati per durare e trasformarsi. La casa diventa un sistema che spreca il meno possibile.",
+    "esempio": "Un progettista posiziona le finestre grandi a sud e sceglie legno certificato di una segheria a 40 km: il cantiere taglia trasporti e la casa dimezza il riscaldamento.",
+    "area_correlata": "AMB"
+  },
+  "economia locale": {
+    "categoria": "Business & Management",
+    "emoji": "🛒",
+    "definizione": "Insieme delle attività economiche che si svolgono vicino a dove vivi: negozi di quartiere, produttori agricoli, artigiani, mercati. Sostenerla significa far circolare il denaro nel territorio e ridurre i trasporti su lunga distanza.",
+    "esempio": "Il coordinatore di un orto urbano vende le verdure ai ristoranti del quartiere: i soldi restano nella comunità e il furgone percorre 5 km invece di 500.",
+    "area_correlata": "ALI"
+  },
+  "edge e cloud computing": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "☁️",
+    "definizione": "Due modi complementari di elaborare i dati: nel cloud (grandi data center remoti, potenti ma lontani) e sull'edge, cioè vicino ai sensori, dove i dati nascono. Saper decidere cosa elaborare dove è la chiave dei sistemi connessi.",
+    "esempio": "Un ingegnere IoT fa contare le auto direttamente alla telecamera del semaforo (edge) e manda al cloud solo i totali: 100 volte meno dati in rete.",
+    "area_correlata": "INF"
+  },
+  "efficienza nella rappresentazione dei dati": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🗜️",
+    "definizione": "Capacità di scegliere il modo più compatto per codificare un'informazione in bit: quanti servono davvero per un numero, un colore, una temperatura? Meno bit significano meno memoria, meno energia e trasmissioni più veloci.",
+    "esempio": "Uno sviluppatore embedded codifica la temperatura in 1 byte invece di 8: il sensore a batteria trasmette un ottavo dei dati e dura mesi in più.",
+    "area_correlata": "INF"
+  },
+  "elaborazione di stream di dati": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🌊",
+    "definizione": "Saper gestire dati che arrivano in flusso continuo — letture di sensori, click, transazioni — elaborandoli mentre scorrono, senza aspettare che si accumulino. È la differenza tra leggere un fiume in tempo reale e svuotare un lago una volta al giorno.",
+    "esempio": "Un data engineer elabora 50.000 letture al secondo dai tornelli della metropolitana: il sistema segnala l'affollamento di una stazione mentre sta accadendo, non il giorno dopo.",
+    "area_correlata": "INF"
+  },
+  "elettrochimica": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🔋",
+    "definizione": "Ramo della chimica che studia come le reazioni chimiche producono elettricità e viceversa. È la scienza dentro ogni batteria: spiega perché si carica, quanto dura e perché con il tempo perde capacità.",
+    "esempio": "Una tecnica di laboratorio testa nuove celle al litio variando i materiali degli elettrodi: la ricetta migliore aumenta del 15% i cicli di ricarica utili.",
+    "area_correlata": "ENE"
+  },
+  "elettronica di potenza": {
+    "categoria": "Energia",
+    "emoji": "🔌",
+    "definizione": "Tecnica che converte e controlla grandi quantità di energia elettrica: da corrente continua ad alternata, da un voltaggio a un altro. Inverter e convertitori sono i suoi strumenti, indispensabili per pannelli solari, batterie e auto elettriche.",
+    "esempio": "Un tecnico dimensiona l'inverter di un impianto fotovoltaico da 6 kW: senza quella scatola, l'energia dei pannelli non potrebbe alimentare gli elettrodomestici di casa.",
+    "area_correlata": "ENE"
+  },
+  "ergonomia ambientale": {
+    "categoria": "Architettura & Città",
+    "emoji": "🛋️",
+    "definizione": "Studio di come luce, suoni, temperature e disposizione degli spazi influenzano il benessere delle persone in un ambiente. Progettare con l'ergonomia ambientale significa creare stanze in cui ci si sente bene senza sapere perché.",
+    "esempio": "Una progettista sposta le scrivanie di un'aula lontano dal termosifone rumoroso e aggiunge tende filtranti: i ragazzi si concentrano di più nelle ore di sole.",
+    "area_correlata": "AMB"
+  },
+  "esg": {
+    "categoria": "Business & Management",
+    "emoji": "📊",
+    "definizione": "Sigla di Environmental, Social, Governance: i tre criteri con cui si valuta se un'azienda rispetta l'ambiente, tratta bene le persone e si governa in modo trasparente. Banche e investitori li usano per decidere chi finanziare.",
+    "esempio": "Un'analista assegna il punteggio ESG a un'impresa edile: emissioni dei cantieri, sicurezza degli operai e trasparenza dei bilanci decidono se otterrà il prestito verde.",
+    "area_correlata": "AMB"
+  },
+  "etica dell'ai": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🧭",
+    "definizione": "Riflessione su come progettare e usare l'intelligenza artificiale in modo giusto: evitare discriminazioni, spiegare le decisioni, proteggere le persone. Non basta che un algoritmo funzioni — deve anche trattare tutti in modo equo.",
+    "esempio": "Un esperto scopre che l'AI di selezione del personale penalizza i cognomi stranieri: fa correggere i dati di addestramento prima che il sistema vada online.",
+    "area_correlata": "DIG"
+  },
+  "etica vocale ai": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🎙️",
+    "definizione": "Regole e attenzioni per l'uso delle voci sintetiche: chiedere il consenso prima di clonare la voce di una persona, dichiarare quando parla una macchina, impedire truffe e imitazioni. La voce è un dato personale prezioso.",
+    "esempio": "Un'architetta vocale rifiuta di clonare la voce di un attore senza contratto: propone invece una voce sintetica originale con timbro simile ma dichiarata come artificiale.",
+    "area_correlata": "COM"
+  },
+  "feature engineering": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🧩",
+    "definizione": "Arte di trasformare i dati grezzi nelle 'caratteristiche' (feature) che un modello di machine learning può capire: da una data si ricava il giorno della settimana, da un indirizzo la distanza dal centro. Dati ben preparati valgono più di algoritmi complicati.",
+    "esempio": "Un ML engineer aggiunge la feature 'ore dall'ultima manutenzione' ai dati di un macchinario: la previsione dei guasti diventa improvvisamente il doppio più precisa.",
+    "area_correlata": "INF"
+  },
+  "fibre e compositi": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🧵",
+    "definizione": "Famiglia di materiali fatti combinando fibre resistenti (vetro, carbonio, fibre naturali) con resine che le tengono insieme. Il risultato è leggero e fortissimo: per questo si usa in bici da corsa, aerei e protesi.",
+    "esempio": "Una textile designer sperimenta fibre di lino in resina naturale per un casco da bici: pesa come uno in plastica ma nasce da campi coltivati, non dal petrolio.",
+    "area_correlata": "MAT"
+  },
+  "finanza decentralizzata": {
+    "categoria": "Business & Management",
+    "emoji": "🪙",
+    "definizione": "Sistema finanziario costruito su blockchain in cui prestiti, scambi e risparmi funzionano tramite programmi automatici (smart contract) invece che tramite banche. Promette accesso aperto a tutti, ma richiede grande attenzione ai rischi.",
+    "esempio": "Un analista DeFi verifica lo smart contract di una piattaforma di prestiti: un errore nel codice potrebbe bloccare i fondi di migliaia di utenti in un secondo.",
+    "area_correlata": "SIS"
+  },
+  "formati e compressione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📦",
+    "definizione": "Conoscenza dei modi in cui immagini, audio e video vengono salvati (JPEG, PNG, MP3, MP4) e delle tecniche per ridurne il peso senza rovinarli troppo. Ogni formato è un compromesso tra qualità, spazio e velocità.",
+    "esempio": "Un ingegnere converte le foto di un sito da PNG a WebP: stessa qualità visibile a occhio, ma le pagine si caricano in metà tempo sullo smartphone.",
+    "area_correlata": "INF"
+  },
+  "framework etici per l'ai": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🛡️",
+    "definizione": "Insiemi strutturati di principi e controlli — come le linee guida europee — che guidano chi sviluppa AI: equità, trasparenza, supervisione umana, sicurezza. Trasformano i buoni propositi in checklist verificabili punto per punto.",
+    "esempio": "Una specialista applica il framework aziendale a un chatbot scolastico: 24 controlli superati su 25, e quello mancante blocca il lancio finché non viene risolto.",
+    "area_correlata": "INF"
+  },
+  "frontend development": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🖥️",
+    "definizione": "Sviluppo della parte visibile di siti e app: bottoni, menu, animazioni, moduli da compilare. Il frontend developer traduce i disegni dei designer in codice (HTML, CSS, JavaScript) che funziona su ogni schermo.",
+    "esempio": "Una sviluppatrice ricostruisce il menu di un sito scolastico: ora si naviga anche col solo tasto Tab e sullo smartphone niente resta tagliato fuori dallo schermo.",
+    "area_correlata": "DIG"
+  },
+  "gestione ambientale": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌱",
+    "definizione": "Capacità di tenere sotto controllo l'impatto di un'attività sull'ambiente: consumi di acqua ed energia, rifiuti, emissioni. Si misurano i numeri, si fissano obiettivi di riduzione e si verifica ogni anno se sono stati raggiunti.",
+    "esempio": "Il responsabile di una vertical farm monitora ogni litro: scopre che il ricircolo dell'acqua di irrigazione può salire dal 70% al 92% cambiando due filtri.",
+    "area_correlata": "ALI"
+  },
+  "gestione condizioni e cicli": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🔁",
+    "definizione": "Cuore della programmazione: usare le condizioni (se succede X, fai Y) e i cicli (ripeti finché serve) per costruire algoritmi che decidono e ripetono al posto tuo. Con questi due mattoni si scrive quasi ogni programma.",
+    "esempio": "Una data scientist scrive un ciclo che controlla 80.000 righe di dati: se una temperatura è impossibile (sotto -90 °C), la riga viene scartata automaticamente.",
+    "area_correlata": "INF"
+  },
+  "gestione del rischio": {
+    "categoria": "Business & Management",
+    "emoji": "⚠️",
+    "definizione": "Metodo per individuare in anticipo cosa può andare storto, stimare quanto è probabile e quanto sarebbe grave, e preparare contromisure. Non elimina gli imprevisti: fa in modo che non trovino nessuno impreparato.",
+    "esempio": "Un controllore di traffico spaziale valuta una possibile collisione tra satelliti: probabilità 1 su 10.000, ma il danno sarebbe enorme, quindi ordina comunque la manovra.",
+    "area_correlata": "COM"
+  },
+  "gestione energetica": {
+    "categoria": "Energia",
+    "emoji": "💡",
+    "definizione": "Capacità di coordinare produzione, accumulo e consumo di energia in un edificio o un impianto: quando comprarla dalla rete, quando usare le batterie, quando spegnere ciò che non serve. L'obiettivo è massimo servizio col minimo spreco.",
+    "esempio": "Un energy manager programma le pompe di una piscina nelle ore di sole del fotovoltaico: la bolletta scende di un terzo senza toccare la temperatura dell'acqua.",
+    "area_correlata": "ENE"
+  },
+  "gestione impianti": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🏭",
+    "definizione": "Saper far funzionare giorno per giorno un impianto tecnico — energetico, idrico, industriale: programmare le manutenzioni, leggere i parametri, coordinare i tecnici, intervenire quando qualcosa si discosta dal normale.",
+    "esempio": "La responsabile di un impianto di accumulo controlla ogni mattina 200 parametri delle batterie: una cella che scalda 3 gradi più delle altre viene isolata prima di guastarsi.",
+    "area_correlata": "ENE"
+  },
+  "gestione sistemi operativi": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🐧",
+    "definizione": "Capacità di amministrare il software che governa un computer: installare e aggiornare il sistema, gestire utenti e permessi, controllare processi e memoria, automatizzare le operazioni con il terminale. È il mestiere di chi tiene accesi i server.",
+    "esempio": "Un sysadmin nota un processo che divora il 95% della memoria di un server scolastico: lo riavvia da terminale e il registro elettronico torna veloce in 2 minuti.",
+    "area_correlata": "INF"
+  },
+  "gestione sostenibilità": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌍",
+    "definizione": "Ruolo di chi guida un'azienda verso obiettivi ambientali e sociali misurabili: ridurre emissioni e sprechi, scegliere fornitori corretti, pubblicare report onesti sui progressi. Trasforma la parola 'green' in numeri verificabili.",
+    "esempio": "Una manager della moda impone ai fornitori la tracciabilità del cotone: entro un anno, il 78% dei capi ha un'etichetta che racconta da quale campo proviene.",
+    "area_correlata": "SIS"
+  },
+  "grafica web": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Progettazione dell'aspetto visivo di un sito: colori, caratteri, immagini, spaziature, icone. Una buona grafica web non è solo bella — guida l'occhio, rende leggibili i contenuti e funziona su schermi di ogni dimensione.",
+    "esempio": "Una web designer cambia il contrasto dei testi e ingrandisce i bottoni di un sito comunale: gli utenti over 70 completano le pratiche online senza chiamare l'ufficio.",
+    "area_correlata": "DIG"
+  },
+  "graphic design": {
+    "categoria": "Design & Creatività",
+    "emoji": "✏️",
+    "definizione": "Disciplina che comunica messaggi attraverso immagini, caratteri tipografici e composizione: loghi, manifesti, packaging, interfacce. Il graphic designer sceglie forme e colori perché il messaggio arrivi chiaro al primo sguardo.",
+    "esempio": "Un designer ridisegna la segnaletica di un ospedale con icone e colori per reparto: i visitatori trovano la strada senza chiedere, gli smarrimenti calano visibilmente.",
+    "area_correlata": "DIG"
+  },
+  "html/css": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🌐",
+    "definizione": "I due linguaggi fondamentali del web: HTML struttura i contenuti di una pagina (titoli, paragrafi, immagini, link), CSS ne definisce l'aspetto (colori, caratteri, disposizione). Ogni sito che visiti è costruito così.",
+    "esempio": "Una studentessa costruisce il sito del giornalino scolastico: 20 righe di HTML per gli articoli, un foglio CSS per farlo leggere bene anche sul telefono.",
+    "area_correlata": "DIG"
+  },
+  "ideazione": {
+    "categoria": "Design & Creatività",
+    "emoji": "🧠",
+    "definizione": "Prima fase di ogni progetto: generare tante idee possibili, senza censurarle, e poi selezionare quelle promettenti con criteri chiari. Schizzi rapidi, brainstorming e domande 'e se…?' sono i suoi strumenti di lavoro.",
+    "esempio": "Un product designer riempie 3 pagine di schizzi per un portapenne: dalla ventesima idea, quella strana a spirale, nasce il prodotto che andrà in produzione.",
+    "area_correlata": "DIS"
+  },
+  "idroponica e aeroponica": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "💧",
+    "definizione": "Tecniche di coltivazione senza terra: nell'idroponica le radici crescono in acqua arricchita di nutrienti, nell'aeroponica sono sospese nell'aria e nebulizzate. Permettono di coltivare in città, su più piani, risparmiando fino al 90% di acqua.",
+    "esempio": "Un vertical farmer coltiva lattuga su 6 piani in un capannone: con l'aeroponica usa 1 litro d'acqua dove un campo tradizionale ne userebbe 10.",
+    "area_correlata": "ALI"
+  },
+  "illuminotecnica": {
+    "categoria": "Architettura & Città",
+    "emoji": "💡",
+    "definizione": "Scienza dell'illuminare bene gli spazi: quanta luce serve per leggere, lavorare o rilassarsi, di che tonalità, da quale direzione. Una stanza ben illuminata affatica meno gli occhi e cambia l'umore di chi la vive.",
+    "esempio": "Un'interior designer sostituisce il lampadario centrale di uno studio con luce indiretta a 4000 kelvin sulla scrivania: fine dei riflessi sullo schermo e dei mal di testa.",
+    "area_correlata": "AMB"
+  },
+  "incident response": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🚨",
+    "definizione": "Procedura con cui si reagisce a un attacco informatico: riconoscere l'intrusione, isolare i sistemi colpiti, eliminare la minaccia, ripristinare i servizi e capire cosa è successo per non ripeterlo. Ogni minuto conta.",
+    "esempio": "Un analista riceve l'allarme alle 3 di notte: un ransomware sta cifrando i file. Scollega il server infetto in 8 minuti e salva i backup dell'intera azienda.",
+    "area_correlata": "INF"
+  },
+  "ingegneria energetica": {
+    "categoria": "Energia",
+    "emoji": "⚡",
+    "definizione": "Disciplina che progetta i sistemi per produrre, trasformare, accumulare e distribuire energia: centrali, impianti rinnovabili, batterie, reti. L'ingegnere energetico fa i conti con rendimenti, costi e impatto ambientale di ogni scelta.",
+    "esempio": "Un'ingegnera dimensiona l'accumulo di una comunità energetica: 200 kWh di batterie bastano perché l'energia solare del pomeriggio copra anche la sera.",
+    "area_correlata": "ENE"
+  },
+  "instructional design": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📚",
+    "definizione": "Progettazione di esperienze di apprendimento efficaci: in che ordine presentare i contenuti, quando inserire esercizi e verifiche, come mantenere viva l'attenzione. Un corso ben progettato fa imparare di più con meno fatica.",
+    "esempio": "Una instructional designer spezza un corso online di 2 ore in 12 lezioni da 10 minuti con quiz: chi lo completa passa dal 30% all'85%.",
+    "area_correlata": "DIG"
+  },
+  "interaction design": {
+    "categoria": "Design & Creatività",
+    "emoji": "👆",
+    "definizione": "Progettazione di come le persone dialogano con un prodotto digitale: cosa succede quando tocchi, trascini, clicchi. L'interaction designer decide ogni risposta dell'interfaccia perché l'uso risulti naturale, quasi ovvio.",
+    "esempio": "Un designer nota che gli utenti non trovano il tasto per confermare l'ordine: lo sposta dove finisce il pollice sullo schermo e gli acquisti completati aumentano.",
+    "area_correlata": "DIG"
+  },
+  "interpretabilità dei modelli": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🔍",
+    "definizione": "Capacità di spiegare perché un modello di intelligenza artificiale ha preso una decisione: quali dati hanno pesato di più, quali regole ha imparato. Un'AI che non si può spiegare non si può nemmeno correggere o contestare.",
+    "esempio": "Una specialista analizza perché l'AI ha negato un prestito: scopre che il codice postale pesava più dello stipendio — un bias da eliminare subito.",
+    "area_correlata": "INF"
+  },
+  "iot building": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏢",
+    "definizione": "Applicazione dell'Internet of Things agli edifici: sensori e attuatori collegati in rete che regolano luci, clima, sicurezza e consumi in base a chi c'è e a cosa serve. L'edificio smette di essere passivo e inizia a rispondere.",
+    "esempio": "Un tecnico installa 60 sensori in una scuola: le aule vuote spengono da sole luci e riscaldamento, e a fine anno i consumi calano del 25%.",
+    "area_correlata": "ENE"
+  },
+  "iot e sensoristica": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📡",
+    "definizione": "Uso di sensori connessi a internet per misurare il mondo fisico — temperatura, umidità, luce, movimento — e agire di conseguenza. È il ponte tra le cose materiali e i dati digitali che le descrivono.",
+    "esempio": "Una vertical farmer piazza sensori di umidità in ogni scaffale di insalata: l'irrigazione parte solo dove serve, e ogni pianta riceve esattamente la sua acqua.",
+    "area_correlata": "ALI"
+  },
+  "linguaggi di programmazione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "⌨️",
+    "definizione": "Le lingue con cui si danno istruzioni ai computer: Python, JavaScript, C++ e decine di altre. Ognuna ha regole e punti di forza; conoscerne bene una apre la porta a tutte le altre, perché la logica di fondo è la stessa.",
+    "esempio": "Un software engineer sceglie Python per analizzare i dati e JavaScript per il sito che li mostra: due lingue diverse, un solo progetto che funziona.",
+    "area_correlata": "INF"
+  },
+  "linguistica computazionale": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🗣️",
+    "definizione": "Disciplina che insegna alle macchine a trattare il linguaggio umano: riconoscere parole, capire frasi, generare testo e parlato. Unisce grammatica e statistica, ed è alla base di assistenti vocali e traduttori automatici.",
+    "esempio": "Un'esperta corregge la pronuncia di una voce sintetica italiana: 'ancora' àncora o ancóra? Il sistema impara a deciderlo dal contesto della frase.",
+    "area_correlata": "COM"
+  },
+  "lms": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🎓",
+    "definizione": "Sigla di Learning Management System: la piattaforma digitale dove si organizzano corsi, lezioni, compiti e verifiche online (come Moodle o Google Classroom). Chi la sa amministrare costruisce ambienti di studio ordinati ed efficaci.",
+    "esempio": "Un educatore configura l'LMS della scuola: ogni classe ha i suoi moduli, i quiz si correggono da soli e i docenti vedono chi è rimasto indietro.",
+    "area_correlata": "DIG"
+  },
+  "logistica": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🚚",
+    "definizione": "Organizzazione dei flussi di merci: dove tenerle, quando spostarle, con quali mezzi e percorsi, come evitare sprechi e ritardi. Una buona logistica è invisibile — ti accorgi di lei solo quando manca qualcosa sullo scaffale.",
+    "esempio": "La coordinatrice di un mercato contadino pianifica il giro di raccolta: un solo furgone, 7 aziende agricole, percorso ottimizzato — le verdure arrivano fresche entro le 8.",
+    "area_correlata": "ALI"
+  },
+  "machine learning applicato": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🤖",
+    "definizione": "Uso concreto degli algoritmi che imparano dai dati per risolvere problemi reali: prevedere guasti, riconoscere immagini, suggerire contenuti. La sfida non è solo la teoria: è far funzionare i modelli su dati veri e imperfetti.",
+    "esempio": "Uno specialista addestra un modello sui dati di 5.000 stampanti industriali: ora prevede l'80% dei guasti con 2 settimane di anticipo.",
+    "area_correlata": "INF"
+  },
+  "manutenzione industriale": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🔧",
+    "definizione": "Insieme delle attività che tengono efficienti macchine e impianti: ispezioni, lubrificazioni, sostituzioni programmate, riparazioni. Una fabbrica che trascura la manutenzione si ferma nei momenti peggiori e spende molto di più.",
+    "esempio": "Un manutentore segue il piano trimestrale di una linea di imbottigliamento: 4 ore di fermo programmato evitano il guasto che ne costerebbe 40.",
+    "area_correlata": "ENE"
+  },
+  "manutenzione predittiva": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📈",
+    "definizione": "Evoluzione della manutenzione: sensori e algoritmi analizzano vibrazioni, temperature e rumori delle macchine per prevedere un guasto prima che accada. Si interviene solo quando serve davvero, né troppo presto né troppo tardi.",
+    "esempio": "L'analista nota che la vibrazione di una turbina cresce del 2% a settimana: ordina il cuscinetto e programma la sostituzione, evitando 3 giorni di blackout.",
+    "area_correlata": "ENE"
+  },
+  "manutenzione predittiva robot": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🦾",
+    "definizione": "Manutenzione predittiva applicata ai robot industriali: i dati di motori, giunti e pinze rivelano l'usura in anticipo. Un robot fermo blocca l'intera linea, quindi prevederne i guasti vale doppio.",
+    "esempio": "Il sistema segnala che il giunto 3 di un braccio robotico rallenta di 40 millisecondi: la ricalibrazione notturna evita saldature imprecise su 2.000 pezzi.",
+    "area_correlata": "SIS"
+  },
+  "marketing": {
+    "categoria": "Business & Management",
+    "emoji": "📣",
+    "definizione": "Insieme delle attività per capire cosa desiderano le persone e proporre loro il prodotto giusto nel modo giusto: ricerche, prezzi, pubblicità, packaging. Il buon marketing parte dall'ascolto, non dalla vendita a tutti i costi.",
+    "esempio": "Una packaging designer testa 3 confezioni di succo con 50 famiglie: quella con la finestra trasparente vince, perché i genitori vogliono vedere il colore del prodotto.",
+    "area_correlata": "ALI"
+  },
+  "matematica": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "➗",
+    "definizione": "Linguaggio con cui si descrivono con precisione quantità, forme, relazioni e cambiamenti. Nei mestieri tecnici è lo strumento quotidiano per calcolare orbite, dimensionare strutture, stimare probabilità e verificare che i conti tornino.",
+    "esempio": "Un controllore di traffico spaziale calcola quando due orbite si incroceranno: una manovra di 0,2 gradi oggi evita un incontro ravvicinato tra 9 giorni.",
+    "area_correlata": "COM"
+  },
+  "materiali eco": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🍃",
+    "definizione": "Materiali a basso impatto ambientale: riciclati, riciclabili, biodegradabili o prodotti con poca energia e senza sostanze dannose. Sceglierli richiede di guardare tutta la loro vita, dall'estrazione allo smaltimento.",
+    "esempio": "Un designer sostituisce la plastica vergine di una sedia con plastica riciclata da reti da pesca: stessa resistenza, e ogni pezzo toglie 2 kg di rifiuti dal mare.",
+    "area_correlata": "DIS"
+  },
+  "materiali sostenibili": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌿",
+    "definizione": "Materiali che si possono usare a lungo termine senza esaurire le risorse del pianeta: legno certificato, fibre naturali, terra cruda, materiali riciclati. La sostenibilità si misura sull'intero ciclo di vita, non sull'etichetta.",
+    "esempio": "Una progettista sceglie pannelli in paglia compressa per le pareti interne di una scuola: isolano bene, costano poco e a fine vita tornano alla terra.",
+    "area_correlata": "AMB"
+  },
+  "mlops": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🔄",
+    "definizione": "Insieme di pratiche per portare i modelli di machine learning dal laboratorio al mondo reale e tenerli in forma: versionare i dati, automatizzare i test, monitorare le prestazioni, riaddestrare quando la realtà cambia.",
+    "esempio": "Un ML engineer nota che il modello dei prezzi sbaglia di più da 3 settimane: la pipeline MLOps lo riaddestra sui dati nuovi e l'errore torna sotto il 5%.",
+    "area_correlata": "INF"
+  },
+  "modellazione 3d avanzata": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🧊",
+    "definizione": "Creazione al computer di modelli tridimensionali precisi e complessi: superfici curve, assiemi di centinaia di parti, simulazioni di movimento. È il passaggio dal disegno alla copia digitale perfetta di un oggetto.",
+    "esempio": "Un ingegnere modella in 3D una pompa industriale con 214 componenti: il modello rivela un'interferenza di 0,3 mm che su carta nessuno aveva visto.",
+    "area_correlata": "DIS"
+  },
+  "modellazione climatica": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🌦️",
+    "definizione": "Uso di modelli matematici per simulare il clima e prevederne l'evoluzione: temperature, precipitazioni, eventi estremi. Serve a capire quali rischi corrono città, coltivazioni e infrastrutture nei prossimi decenni.",
+    "esempio": "Un'analista simula le piogge del 2050 su un quartiere: il modello indica che il sistema fognario attuale andrà in crisi 4 volte l'anno, meglio ridisegnarlo ora.",
+    "area_correlata": "AMB"
+  },
+  "modellazione dati": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🗂️",
+    "definizione": "Arte di organizzare le informazioni in strutture ordinate e collegate: quali dati servono, come si chiamano, come si relazionano tra loro. Un buon modello di dati rende semplici le domande che altrimenti sarebbero impossibili.",
+    "esempio": "Un analista collega i dati di sensori, turni e manutenzioni di una fabbrica nello stesso schema: ora una query risponde in 2 secondi a 'quale turno usura di più le macchine?'.",
+    "area_correlata": "DIG"
+  },
+  "modellistica industriale": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "📐",
+    "definizione": "Competenza di chi trasforma i disegni di progetto in modelli e prototipi fisici o digitali per l'industria: sagome, stampi, pezzi campione. Il modellista è il ponte tra l'idea del progettista e la produzione in serie.",
+    "esempio": "Una modellista realizza il prototipo di una maniglia in 3 versioni — stampa 3D, resina e alluminio: il tocco della mano decide quale andrà in produzione.",
+    "area_correlata": "DIS"
+  },
+  "montaggio": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🎬",
+    "definizione": "Fase in cui un video prende forma: scegliere le riprese migliori, tagliarle, metterle in sequenza, aggiungere audio, musica e titoli. Il montaggio decide il ritmo e l'emozione — lo stesso girato può diventare noia o meraviglia.",
+    "esempio": "Un videomaker riduce 3 ore di riprese di una gita scolastica a 4 minuti: taglia i tempi morti, alterna primi piani e campi larghi, e il video tiene tutti incollati.",
+    "area_correlata": "COM"
+  },
+  "normativa alimentare": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "📜",
+    "definizione": "Insieme delle leggi che garantiscono cibo sicuro: cosa può contenere un alimento, come va etichettato, conservato e trasportato, quali controlli deve superare. Chi produce o confeziona cibo deve conoscerla alla lettera.",
+    "esempio": "Una designer verifica l'etichetta di una confettura artigianale: mancano gli allergeni in grassetto e il lotto di produzione — senza correzione, niente scaffale.",
+    "area_correlata": "ALI"
+  },
+  "normativa cee": {
+    "categoria": "Architettura & Città",
+    "emoji": "🇪🇺",
+    "definizione": "Insieme delle direttive e dei regolamenti europei che fissano standard comuni: efficienza energetica degli edifici, sicurezza dei prodotti, etichette. Conoscerli è indispensabile per progettare e vendere legalmente in tutta Europa.",
+    "esempio": "Un consulente verifica che una ristrutturazione rispetti la direttiva europea sull'efficienza: senza i requisiti minimi di isolamento, l'edificio non ottiene la classe energetica richiesta.",
+    "area_correlata": "AMB"
+  },
+  "normativa energetica": {
+    "categoria": "Energia",
+    "emoji": "🏛️",
+    "definizione": "Regole che governano il mondo dell'energia: requisiti di efficienza per gli edifici, certificazioni energetiche, incentivi per le rinnovabili, obblighi per chi produce e distribuisce. Cambia spesso, e chi progetta deve restare aggiornato.",
+    "esempio": "Una progettista scopre un nuovo incentivo per le pompe di calore: rifà i conti al cliente e l'impianto si ripaga in 6 anni invece che in 9.",
+    "area_correlata": "AMB"
+  },
+  "normativa eu sostenibilità": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📗",
+    "definizione": "Le regole europee che obbligano le aziende a essere trasparenti sull'impatto ambientale e sociale: rendicontazione di sostenibilità, dovere di controllo sulle filiere, passaporto digitale dei prodotti. Il greenwashing diventa sempre più difficile.",
+    "esempio": "Una manager prepara il report di sostenibilità richiesto dalla normativa europea: ogni numero su emissioni e fornitori deve essere verificabile da un revisore esterno.",
+    "area_correlata": "SIS"
+  },
+  "normative di settore": {
+    "categoria": "Business & Management",
+    "emoji": "📖",
+    "definizione": "Le regole specifiche di ogni campo professionale: sicurezza dei giocattoli, composizione dei tessuti, resistenza dei mobili, etichette dei cosmetici. Ogni settore ha le sue, e ignorarle può bloccare un prodotto o costare sanzioni.",
+    "esempio": "Un progettista di moda controlla la normativa tessile prima della produzione: la percentuale di fibre in etichetta deve corrispondere al tessuto reale, pena il ritiro dei capi.",
+    "area_correlata": "DIS"
+  },
+  "osint": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🕵️",
+    "definizione": "Sigla di Open Source Intelligence: raccogliere e incrociare informazioni da fonti aperte — siti, social, registri pubblici, foto — per ricostruire fatti e verificare notizie. Gli investigatori digitali la usano per legittima difesa e giornalismo.",
+    "esempio": "Un analista verifica una foto virale incrociando ombre, insegne e meteo: lo scatto non è di ieri in Italia, ma di 3 anni fa in un altro Paese.",
+    "area_correlata": "DIG"
+  },
+  "ottimizzazione modelli": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "⚙️",
+    "definizione": "Insieme di tecniche per rendere un modello di AI più preciso, più veloce o più leggero: regolare i parametri, ridurre le dimensioni, accelerare i calcoli. Un modello ottimizzato può girare su uno smartphone invece che su un supercomputer.",
+    "esempio": "Un ML engineer comprime un modello di riconoscimento vocale da 2 GB a 200 MB: ora funziona sul telefono anche senza connessione, con la stessa accuratezza.",
+    "area_correlata": "INF"
+  },
+  "pedagogia": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧒",
+    "definizione": "Scienza dell'educazione: studia come le persone imparano e crescono, e quali metodi, tempi e ambienti aiutano davvero l'apprendimento. Chi progetta esperienze educative — anche digitali — parte da qui.",
+    "esempio": "Un facilitatore progetta pomeriggi senza schermi per una scuola media: alterna gioco libero e attività guidate, perché la pedagogia insegna che la noia creativa ha bisogno di spazio.",
+    "area_correlata": "DIG"
+  },
+  "pensiero algoritmico": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🧮",
+    "definizione": "Capacità di scomporre un problema in passi ordinati, precisi ed eseguibili: prima questo, poi quello, se succede X allora Y. È utile anche lontano dal computer — da una ricetta di cucina all'organizzazione di un torneo.",
+    "esempio": "Una data scientist scrive la procedura di pulizia dei dati in 6 passi chiari: chiunque nel team può ripeterla e ottenere lo stesso risultato.",
+    "area_correlata": "INF"
+  },
+  "pensiero astratto": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "💭",
+    "definizione": "Capacità di ragionare su concetti che non si toccano: numeri, simboli, modelli, regole generali. Permette di vedere che problemi diversi hanno la stessa struttura e di risolverli tutti con un'unica idea.",
+    "esempio": "Uno sviluppatore capisce che contare visitatori, punti e batterie è sempre lo stesso problema: scrive una sola funzione e la riusa in tre progetti.",
+    "area_correlata": "INF"
+  },
+  "personal branding": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🌟",
+    "definizione": "Cura consapevole dell'immagine che dai di te, soprattutto online: cosa pubblichi, come ti presenti, quali competenze metti in luce. Non è finzione — è raccontare in modo onesto e coerente chi sei e cosa sai fare.",
+    "esempio": "Una curatrice aiuta un giovane fotografo a sistemare i profili: portfolio ordinato, biografia chiara, vecchi post imbarazzanti rimossi — e arrivano le prime commissioni.",
+    "area_correlata": "DIG"
+  },
+  "pipeline di dati": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🚰",
+    "definizione": "Sistema che raccoglie i dati da una fonte, li pulisce e li trasporta dove servono, come un acquedotto fatto di informazioni. Serve a far arrivare i numeri giusti, al momento giusto, alle app e alle persone che devono usarli.",
+    "esempio": "Un data engineer costruisce la pipeline che porta ogni secondo i dati di 10.000 tornelli della metropolitana a un maxischermo: la centrale vede subito quali stazioni sono affollate.",
+    "area_correlata": "INF"
+  },
+  "policy e normative ai": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "⚖️",
+    "definizione": "Conoscere le regole che governano l'intelligenza artificiale, come l'AI Act europeo, e saperle applicare ai progetti reali. Serve a garantire che chatbot e algoritmi rispettino i diritti delle persone e non prendano decisioni ingiuste.",
+    "esempio": "Un Ethical AI Officer blocca il lancio di un'app di riconoscimento facciale nella sua azienda: la legge europea la classifica ad alto rischio e servono prima controlli e documentazione.",
+    "area_correlata": "DIG"
+  },
+  "policy making partecipativo": {
+    "categoria": "Business & Management",
+    "emoji": "🗳️",
+    "definizione": "Capacità di costruire regole e decisioni pubbliche coinvolgendo direttamente i cittadini, invece di deciderle solo dall'alto. Serve a raccogliere idee, farle votare e trasformarle in scelte condivise per la scuola, il quartiere o la città.",
+    "esempio": "Un facilitatore di policy partecipativa apre una piattaforma online dove 2.000 cittadini propongono come spendere il bilancio comunale: le 3 idee più votate diventano progetti veri.",
+    "area_correlata": "SIS"
+  },
+  "post-produzione": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🎬",
+    "definizione": "Tutto il lavoro che trasforma il materiale girato in un video finito: montaggio, correzione del colore, musica, effetti e titoli. Serve a dare ritmo e atmosfera alla storia, tagliando ciò che non funziona.",
+    "esempio": "Un videomaker riduce 4 ore di riprese a un video di 90 secondi per un ristorante: sceglie le inquadrature migliori, scalda i colori e aggiunge la musica giusta.",
+    "area_correlata": "COM"
+  },
+  "privacy by design": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔐",
+    "definizione": "Progettare app e servizi mettendo la protezione dei dati personali fin dall'inizio, non come cerotto aggiunto alla fine. Significa raccogliere solo le informazioni davvero necessarie e impostare le opzioni più sicure come scelta predefinita.",
+    "esempio": "Un curatore dell'identità digitale progetta un'app sportiva che chiede solo età e città, non nome e indirizzo: se qualcuno rubasse il database, troverebbe pochissimo da usare.",
+    "area_correlata": "DIG"
+  },
+  "progettazione ambientale": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌿",
+    "definizione": "Saper progettare oggetti e spazi tenendo conto del loro impatto sulla natura: materiali, energia, rifiuti e fine vita. Serve a creare prodotti che consumano meno risorse e ambienti più sani per chi li abita.",
+    "esempio": "Un ecospace designer ripensa il cortile della scuola: pavimentazione drenante, legno certificato e alberi al posto dell'asfalto abbassano la temperatura estiva di 4 gradi.",
+    "area_correlata": "MAT"
+  },
+  "progettazione bim": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏗️",
+    "definizione": "Saper costruire al computer il modello 3D intelligente di un edificio, dove ogni muro, tubo e finestra contiene dati su materiali e costi. Serve a far lavorare architetti, ingegneri e impiantisti sullo stesso progetto senza errori.",
+    "esempio": "Un progettista BIM scopre sul modello digitale che un tubo dell'acqua attraversa una trave: corregge il disegno prima del cantiere, risparmiando settimane di lavori rifatti.",
+    "area_correlata": "AMB"
+  },
+  "progettazione d'interni": {
+    "categoria": "Design & Creatività",
+    "emoji": "🛋️",
+    "definizione": "Capacità di organizzare gli spazi interni di case, scuole e negozi scegliendo luci, colori, materiali e mobili. Serve a rendere un ambiente comodo, bello e adatto a chi lo vive ogni giorno.",
+    "esempio": "Un interior designer riprogetta una cameretta di 9 metri quadrati: letto a soppalco, scrivania sotto la finestra e mensole verticali raddoppiano lo spazio utilizzabile.",
+    "area_correlata": "AMB"
+  },
+  "progettazione moda": {
+    "categoria": "Design & Creatività",
+    "emoji": "👗",
+    "definizione": "Saper trasformare un'idea di stile in un capo di abbigliamento reale: schizzi, scelta dei tessuti, modelli e prototipi. Serve a creare collezioni che siano belle da indossare ma anche producibili e vendibili.",
+    "esempio": "Una progettista di moda disegna 40 bozzetti per la collezione estiva: solo 12 diventano prototipi cuciti e 8 arrivano davvero nei negozi.",
+    "area_correlata": "DIS"
+  },
+  "progettazione tessile": {
+    "categoria": "Design & Creatività",
+    "emoji": "🧵",
+    "definizione": "Capacità di ideare tessuti nuovi decidendo fibre, intrecci, colori e finiture. Serve a creare stoffe con le proprietà giuste per ogni uso: morbide per una felpa, resistenti per uno zaino, tecniche per lo sport.",
+    "esempio": "Una textile designer sviluppa un tessuto con fibre riciclate da 12 bottiglie di plastica per ogni maglietta: stesso aspetto del poliestere nuovo, molto meno petrolio.",
+    "area_correlata": "MAT"
+  },
+  "protocolli di comunicazione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📶",
+    "definizione": "Le lingue comuni che i dispositivi usano per scambiarsi dati senza fraintendersi: Wi-Fi, Bluetooth, HTTP e molti altri. Conoscerli serve a far dialogare tra loro sensori, computer e app, anche se costruiti da aziende diverse.",
+    "esempio": "Un ingegnere IoT sceglie il protocollo MQTT per una serra smart: 50 sensori inviano temperatura e umidità con messaggi così leggeri che una batteria dura mesi.",
+    "area_correlata": "INF"
+  },
+  "protocolli di sicurezza": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🛡️",
+    "definizione": "Regole e tecnologie che proteggono i dati mentre viaggiano in rete, come la cifratura HTTPS che vedi nel browser. Servono a impedire che qualcuno legga o modifichi password, messaggi e pagamenti lungo il percorso.",
+    "esempio": "Un analista della sicurezza controlla che il sito della scuola usi HTTPS e certificati aggiornati: senza quel lucchetto, le password degli studenti viaggerebbero leggibili da chiunque.",
+    "area_correlata": "INF"
+  },
+  "prototipazione": {
+    "categoria": "Design & Creatività",
+    "emoji": "🛠️",
+    "definizione": "Saper costruire in fretta una prima versione semplice di un'idea — di carta, cartone o digitale — per provarla subito. Serve a scoprire gli errori quando correggerli costa poco, prima di realizzare il prodotto vero.",
+    "esempio": "Un interaction designer disegna le schermate di un'app su 10 fogli di carta e le fa provare a 5 compagni: in un pomeriggio scopre quali pulsanti nessuno trova.",
+    "area_correlata": "DIG"
+  },
+  "psicologia cognitiva": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🧠",
+    "definizione": "La scienza che studia come le persone percepiscono, ricordano, decidono e sbagliano. Conoscerla serve a progettare app, oggetti e lezioni che rispettano il funzionamento reale della mente, invece di affaticarla o confonderla.",
+    "esempio": "Un interaction designer sa che la memoria a breve termine tiene circa 7 elementi: per questo il menu della sua app ha 5 voci, non 15.",
+    "area_correlata": "DIG"
+  },
+  "python e framework ml": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🐍",
+    "definizione": "Saper usare Python, il linguaggio di programmazione più diffuso nell'intelligenza artificiale, insieme a librerie già pronte come TensorFlow e PyTorch. Serve a costruire e addestrare modelli di machine learning senza riscrivere tutto da zero.",
+    "esempio": "Un machine learning engineer scrive 60 righe di Python con PyTorch e addestra un modello che riconosce la frutta matura dalle foto: il supermercato riduce gli sprechi del 20%.",
+    "area_correlata": "INF"
+  },
+  "rappresentazione digitale delle immagini": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🖼️",
+    "definizione": "Capire come un computer memorizza una foto: una griglia di pixel, ognuno descritto da numeri che indicano il colore. Serve a programmare filtri, compressione e visione artificiale, perché per la macchina ogni immagine è matematica.",
+    "esempio": "Un computer vision engineer insegna al software a contare i pixel rossi di ogni fotogramma: così la telecamera del frutteto distingue le mele mature da quelle acerbe.",
+    "area_correlata": "INF"
+  },
+  "regolamentazione enac/easa": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🛫",
+    "definizione": "L'insieme delle norme di ENAC (ente italiano) ed EASA (agenzia europea) che stabiliscono chi può far volare droni e aerei, dove e come. Conoscerle serve a pianificare operazioni aeree legali e sicure per persone e cose.",
+    "esempio": "Un drone security coordinator verifica sulle mappe ENAC se può sorvolare lo stadio: la zona è vietata, quindi chiede un'autorizzazione speciale 30 giorni prima dell'evento.",
+    "area_correlata": "COM"
+  },
+  "regolamenti enac/easa": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "📋",
+    "definizione": "Le regole pratiche da rispettare quando si usa un drone per lavoro: registrazione dell'operatore, patentino, quota massima di 120 metri, distanze dalle persone. Servono a trasformare un volo in un'operazione professionale autorizzata.",
+    "esempio": "Un drone logistic operator prepara una consegna di medicinali tra due ospedali: registra il volo, resta sotto i 120 metri e segue il corridoio aereo approvato.",
+    "area_correlata": "COM"
+  },
+  "reporting ambientale": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📊",
+    "definizione": "Saper misurare e raccontare con i dati l'impatto di un'azienda sull'ambiente: emissioni, acqua, energia e rifiuti. Serve a mostrare a clienti e istituzioni i progressi reali, evitando promesse verdi senza prove.",
+    "esempio": "Una fashion sustainability manager pubblica il report annuale del marchio: i lettori scoprono che ogni jeans richiede 3.800 litri d'acqua e come l'azienda li sta riducendo.",
+    "area_correlata": "SIS"
+  },
+  "reporting esg": {
+    "categoria": "Business & Management",
+    "emoji": "📈",
+    "definizione": "Capacità di preparare i rapporti che le aziende pubblicano su ambiente (E), società (S) e buon governo (G). Serve a banche, investitori e clienti per capire se un'impresa è davvero responsabile o lo dice soltanto.",
+    "esempio": "Un decarbonization consultant compila la sezione ambientale del report ESG di una fabbrica di mattoni: documenta il taglio del 15% di CO2 ottenuto con i nuovi forni.",
+    "area_correlata": "MAT"
+  },
+  "reti di sensori": {
+    "categoria": "Architettura & Città",
+    "emoji": "🕸️",
+    "definizione": "Tanti piccoli sensori distribuiti su un territorio che misurano insieme la stessa cosa e inviano i dati a una centrale. Servono a tenere sotto controllo in tempo reale aria, traffico, consumi o rumore di un'intera città.",
+    "esempio": "Un urban sensor network manager gestisce 300 sensori sui lampioni: quando i consumi di un quartiere impennano alle 19, la rete elettrica si prepara in anticipo.",
+    "area_correlata": "ENE"
+  },
+  "riga di comando": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "⌨️",
+    "definizione": "Saper dare istruzioni al computer scrivendo comandi di testo nel terminale, invece di cliccare su icone e finestre. Serve ad automatizzare operazioni ripetitive e a gestire server che non hanno né schermo né mouse.",
+    "esempio": "Un sysadmin rinomina 5.000 foto con un solo comando di una riga: a mano, con mouse e doppio clic, ci avrebbe messo due giorni.",
+    "area_correlata": "INF"
+  },
+  "ripresa video": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🎥",
+    "definizione": "Capacità di catturare immagini in movimento scegliendo inquadratura, luce, movimenti di camera e audio. Serve a raccontare una scena nel modo più chiaro ed emozionante possibile, con la videocamera o anche solo con lo smartphone.",
+    "esempio": "Un videomaker gira l'intervista al pasticcere con 2 telecamere e un microfono a clip: il primo piano delle mani che impastano vale più di mille parole.",
+    "area_correlata": "COM"
+  },
+  "risk analysis": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "⚠️",
+    "definizione": "Capacità di studiare quanto è probabile che un evento dannoso accada e quanti danni farebbe, usando dati e scenari. Serve a decidere dove investire prima: alzare un argine, assicurare un raccolto, spostare un magazzino.",
+    "esempio": "Una climate risk analyst calcola che un'alluvione allagherebbe il piano terra della fabbrica: l'azienda sposta i macchinari al primo piano e risparmia milioni di danni futuri.",
+    "area_correlata": "AMB"
+  },
+  "risk assessment": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔍",
+    "definizione": "Saper individuare i punti deboli di un sistema informatico, stimare cosa succederebbe se venissero attaccati e ordinare i rischi per gravità. Serve a proteggere prima le cose più preziose, perché nessuna difesa copre tutto.",
+    "esempio": "Un privacy engineer valuta la nuova app scolastica: il rischio peggiore è il database dei voti senza cifratura, e viene sistemato prima del lancio di settembre.",
+    "area_correlata": "INF"
+  },
+  "risparmio idrico": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "💧",
+    "definizione": "Capacità di coltivare e produrre usando la minor quantità d'acqua possibile, grazie a sensori, irrigazione mirata e ricircolo. Serve perché l'agricoltura consuma circa il 70% dell'acqua dolce mondiale e sprecarla non è più possibile.",
+    "esempio": "Un vertical farmer coltiva insalata in torri idroponiche dove l'acqua circola in ciclo chiuso: per un cespo bastano 1-2 litri invece dei 25 del campo tradizionale.",
+    "area_correlata": "ALI"
+  },
+  "safety industriale": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🦺",
+    "definizione": "L'insieme di regole, controlli e dispositivi che impediscono incidenti in fabbriche e impianti: allarmi, valvole di sicurezza, procedure di emergenza. Serve a proteggere lavoratori e territorio quando si maneggiano energia e sostanze pericolose.",
+    "esempio": "Il responsabile di un impianto di batterie controlla ogni settimana i sensori antincendio dei container: se una cella supera i 60 gradi, il sistema la isola in automatico.",
+    "area_correlata": "ENE"
+  },
+  "sensoristica": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🌡️",
+    "definizione": "Il mondo dei sensori: piccoli dispositivi che trasformano grandezze fisiche come temperatura, vibrazione o pressione in segnali elettrici leggibili da un computer. Conoscerla serve a dare occhi e orecchie alle macchine.",
+    "esempio": "Un predictive maintenance analyst applica un sensore di vibrazioni su un cuscinetto d'acciaio: quando il tremolio cambia frequenza, sa che il pezzo va sostituito entro due settimane.",
+    "area_correlata": "ENE"
+  },
+  "sensoristica iot": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "📟",
+    "definizione": "Sensori collegati a internet che inviano da soli le loro misure a piattaforme online, giorno e notte. Servono a controllare a distanza macchine, impianti ed edifici e ad accorgersi dei problemi mentre nascono.",
+    "esempio": "Un tecnico riceve sullo smartphone l'allarme di un sensore IoT montato su una pala eolica a 80 chilometri: la temperatura del motore sale e interviene prima del guasto.",
+    "area_correlata": "ENE"
+  },
+  "seo/sem": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🔎",
+    "definizione": "Saper far comparire un sito tra i primi risultati di Google: con contenuti ottimizzati (SEO) o con annunci a pagamento (SEM). Serve perché quasi nessuno guarda la seconda pagina di ricerca.",
+    "esempio": "Una digital strategist riscrive titoli e descrizioni del sito di una gelateria: in 3 mesi passa dalla quarta alla prima pagina per «gelato artigianale» e i clienti aumentano.",
+    "area_correlata": "DIG"
+  },
+  "sequenza logica": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🪜",
+    "definizione": "Capacità di mettere le istruzioni nel giusto ordine, un passo dopo l'altro, come in una ricetta. È la base di ogni programma e di ogni analisi: se i passaggi sono in ordine sbagliato, il risultato non torna.",
+    "esempio": "Una data scientist prepara i dati in sequenza precisa: prima pulisce i valori mancanti, poi calcola le medie — invertendo i due passi, le statistiche uscirebbero sbagliate.",
+    "area_correlata": "INF"
+  },
+  "sicurezza aerea": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "✈️",
+    "definizione": "L'insieme di procedure, controlli e tecnologie che rendono il volo il modo di viaggiare più sicuro: manutenzioni programmate, checklist, spazi aerei sorvegliati. Con i droni, significa anche proteggere le persone a terra da cadute e collisioni.",
+    "esempio": "Un drone security coordinator ispeziona i 4 rotori e il paracadute d'emergenza prima di sorvolare il concerto: con 10.000 persone sotto, controlla ogni vite due volte.",
+    "area_correlata": "COM"
+  },
+  "sicurezza embedded": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🔒",
+    "definizione": "Saper proteggere i mini-computer nascosti negli oggetti — telecamere, termostati, giocattoli smart — da chi vuole prenderne il controllo. Serve perché un dispositivo violato può spiare casa tua o attaccare altri sistemi in rete.",
+    "esempio": "Un ingegnere IoT scopre che il campanello smart esce di fabbrica con password «admin»: obbliga ogni utente a cambiarla al primo avvio e cifra il video inviato al cloud.",
+    "area_correlata": "INF"
+  },
+  "sicurezza infrastruttura": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🧱",
+    "definizione": "Capacità di difendere server, reti e sistemi che fanno funzionare siti e servizi: firewall, aggiornamenti, copie di backup, controllo degli accessi. Serve a garantire che tutto resti in piedi anche sotto attacco.",
+    "esempio": "Una site reliability engineer nota 4.000 tentativi di accesso in un'ora sul server della biblioteca digitale: blocca gli indirizzi sospetti e i lettori non si accorgono di nulla.",
+    "area_correlata": "INF"
+  },
+  "simulazione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🎮",
+    "definizione": "Capacità di ricreare al computer un pezzo di realtà — una fabbrica, un ponte, il traffico — per fare esperimenti senza rischi. Serve a rispondere alla domanda «cosa succederebbe se…?» prima di spendere soldi veri.",
+    "esempio": "Un digital twin analyst simula il gemello digitale della metropolitana: prova ad aggiungere un treno ogni 4 minuti e vede l'effetto sulle banchine prima di cambiare gli orari veri.",
+    "area_correlata": "DIG"
+  },
+  "sistemi di accumulo": {
+    "categoria": "Energia",
+    "emoji": "🔋",
+    "definizione": "Tecnologie che immagazzinano energia quando ce n'è troppa e la restituiscono quando serve: grandi batterie, pompaggi idroelettrici, accumuli termici. Servono a usare l'energia di sole e vento anche di notte o quando l'aria è ferma.",
+    "esempio": "Un microgrid integrator installa una batteria da 200 kWh nella scuola con i pannelli solari: l'energia raccolta a mezzogiorno accende i laboratori del pomeriggio.",
+    "area_correlata": "ENE"
+  },
+  "sistemi di numerazione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🔢",
+    "definizione": "I diversi modi di scrivere i numeri: il decimale che usi tu, il binario fatto solo di 0 e 1 dei computer, l'esadecimale dei programmatori. Capirli serve a leggere il mondo digitale nella sua lingua madre.",
+    "esempio": "Uno sviluppatore embedded legge il valore esadecimale FF inviato da un sensore: sa al volo che significa 255, cioè batteria completamente carica.",
+    "area_correlata": "INF"
+  },
+  "sistemi distribuiti": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🌐",
+    "definizione": "Tanti computer collegati che lavorano insieme come se fossero uno solo, dividendosi dati e compiti. Servono quando una macchina sola non basta: motori di ricerca, streaming e giochi online funzionano così.",
+    "esempio": "Un data engineer distribuisce i dati del Black Friday su 40 server: se uno si guasta alle 21, gli altri 39 si dividono il lavoro e il sito non si ferma.",
+    "area_correlata": "INF"
+  },
+  "sistemi informatici": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "🖥️",
+    "definizione": "Capire come hardware, software e reti collaborano per far funzionare un servizio digitale, dal registro elettronico a un videogioco. Serve a progettare interfacce e app realistiche, che sfruttano bene ciò che la tecnologia può fare.",
+    "esempio": "Un interaction designer sa che la ricerca nel catalogo impiega 2 secondi a interrogare il server: aggiunge un'animazione di caricamento e l'attesa non sembra più un blocco.",
+    "area_correlata": "DIG"
+  },
+  "social media strategy": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📱",
+    "definizione": "Saper pianificare cosa pubblicare sui social, su quali piattaforme, quando e per quale pubblico, misurando i risultati. Serve a trasformare post sparsi in una comunicazione con un obiettivo: farsi conoscere, informare, vendere.",
+    "esempio": "Una digital strategist programma per la libreria 3 reel a settimana alle 18, l'orario in cui i follower sono online: in due mesi le visite in negozio crescono del 25%.",
+    "area_correlata": "DIG"
+  },
+  "software 3d (maya, blender)": {
+    "categoria": "Design & Creatività",
+    "emoji": "🧊",
+    "definizione": "Saper usare programmi come Maya e Blender per modellare oggetti e personaggi tridimensionali, dando loro materiali, luci e movimento. Serve a creare film d'animazione, videogiochi, effetti speciali e anteprime di prodotti.",
+    "esempio": "Un animatore 3D modella in Blender il drago di un cortometraggio: scolpisce 50.000 poligoni, aggiunge le squame e lo scheletro digitale che gli permette di volare.",
+    "area_correlata": "DIG"
+  },
+  "software di monitoraggio orbitale": {
+    "categoria": "Trasporti & Logistica",
+    "emoji": "🛰️",
+    "definizione": "Programmi che seguono in tempo reale la posizione di satelliti e detriti spaziali attorno alla Terra e calcolano le loro traiettorie future. Servono a prevedere le collisioni in orbita e a decidere le manovre per evitarle.",
+    "esempio": "Uno space traffic controller riceve l'allerta del software: tra 6 ore un detrito passerà a 400 metri dal satellite meteo, e comanda una piccola accensione dei motori per scansarlo.",
+    "area_correlata": "COM"
+  },
+  "software vfx": {
+    "categoria": "Design & Creatività",
+    "emoji": "✨",
+    "definizione": "Programmi professionali come After Effects, Nuke e Houdini con cui si creano effetti visivi digitali: esplosioni, creature, scenari impossibili. Saperli usare serve a comporre più livelli di immagini in un'unica scena credibile.",
+    "esempio": "Un artista VFX sostituisce il telo verde dietro l'attrice con una città futuristica: nel fotogramma finito, 7 livelli di immagini diversi sembrano una ripresa sola.",
+    "area_correlata": "DIG"
+  },
+  "sostenibilità alimentare": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🥬",
+    "definizione": "Capacità di produrre cibo per tutti senza esaurire suolo, acqua ed energia del pianeta, riducendo sprechi ed emissioni. Serve a garantire che anche fra 50 anni si possa mangiare bene, in città come in campagna.",
+    "esempio": "Un vertical farmer coltiva basilico su 8 piani in un capannone di città: niente pesticidi, 95% d'acqua in meno e zero camion, perché il ristorante è a 2 chilometri.",
+    "area_correlata": "ALI"
+  },
+  "sostenibilità aziendale": {
+    "categoria": "Business & Management",
+    "emoji": "🏢",
+    "definizione": "Saper guidare un'azienda facendo tornare i conti senza scaricare i costi su ambiente e persone. Significa misurare consumi ed emissioni, scegliere fornitori corretti e investire in miglioramenti che durano nel tempo.",
+    "esempio": "Una carbon footprint analyst mostra al direttore che il 40% delle emissioni viene dai trasporti: l'azienda passa a furgoni elettrici per le consegne sotto i 100 chilometri.",
+    "area_correlata": "MAT"
+  },
+  "sostenibilità dei materiali": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "📦",
+    "definizione": "Saper scegliere i materiali di un prodotto valutando da dove vengono, quanto durano e che fine faranno: riciclabili, compostabili, riusabili. Serve a ridurre i rifiuti fin dal momento in cui un oggetto viene progettato.",
+    "esempio": "Una packaging designer sostituisce la vaschetta di plastica delle fragole con cartoncino compostabile: finisce nell'umido insieme ai piccioli, non nel bidone della plastica.",
+    "area_correlata": "ALI"
+  },
+  "sound design": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🎧",
+    "definizione": "L'arte di costruire il paesaggio sonoro di video, giochi e app: effetti, ambienti, silenzi e suoni delle interfacce. Serve a dare emozione e realismo a ciò che vediamo, perché metà dell'esperienza passa dalle orecchie.",
+    "esempio": "Un sound designer cura la voce di un assistente vocale: registra 400 frasi, ne regola tono e pause, e aggiunge il «ding» gentile che avvisa senza spaventare.",
+    "area_correlata": "COM"
+  },
+  "spazi verdi": {
+    "categoria": "Architettura & Città",
+    "emoji": "🌳",
+    "definizione": "Saper progettare parchi, giardini, tetti e pareti verdi dentro le città. Serve a dare ombra, assorbire pioggia e CO2, abbassare le temperature estive e offrire a persone e animali un posto dove stare bene.",
+    "esempio": "Un habitat designer trasforma un parcheggio abbandonato in un parco di quartiere: 60 alberi e uno stagno riducono di 3 gradi la temperatura percepita in luglio.",
+    "area_correlata": "AMB"
+  },
+  "standard iso": {
+    "categoria": "Business & Management",
+    "emoji": "📏",
+    "definizione": "Regole tecniche condivise a livello mondiale che stabiliscono come misurare, produrre o gestire qualcosa nello stesso modo ovunque. Seguirle serve a garantire qualità e a farsi capire: un foglio A4 è A4 in tutto il mondo.",
+    "esempio": "Un consulente prepara un'azienda alla certificazione ISO 9001: documenta ogni fase di produzione, così qualunque cliente nel mondo sa cosa aspettarsi da quel fornitore.",
+    "area_correlata": "MAT"
+  },
+  "standard iso 14064": {
+    "categoria": "Sostenibilità & Ambiente",
+    "emoji": "🌍",
+    "definizione": "Lo standard internazionale che spiega come contare e verificare i gas serra emessi da un'organizzazione. Serve a rendere confrontabili e credibili i bilanci di CO2: senza regole comuni, ognuno conterebbe a modo suo.",
+    "esempio": "Una decarbonization consultant calcola le emissioni di un'acciaieria seguendo la ISO 14064: il report supera la verifica esterna e il taglio del 12% dichiarato non è greenwashing.",
+    "area_correlata": "MAT"
+  },
+  "storytelling audiovisivo": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🎞️",
+    "definizione": "Capacità di raccontare una storia unendo immagini in movimento, suoni, musica e parole al momento giusto. Serve a catturare l'attenzione e farsi ricordare: un buon racconto vale più di cento informazioni slegate.",
+    "esempio": "Un videomaker racconta in 3 minuti la giornata di un'apicoltrice: alba, sciame, vasetto di miele — e il pubblico del documentario capisce il valore di ogni cucchiaino.",
+    "area_correlata": "COM"
+  },
+  "storytelling visivo": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎨",
+    "definizione": "Saper raccontare idee ed emozioni solo con le immagini: inquadrature, colori, sequenze e simboli al posto delle parole. Serve quando il pubblico deve capire al volo, come in un'animazione, un fumetto o un'etichetta.",
+    "esempio": "Un'animatrice racconta senza parole la vita di una mela: dal fiore al frutteto al banco del mercato in 45 secondi, e anche i bambini di 5 anni capiscono tutto.",
+    "area_correlata": "ALI"
+  },
+  "strategic design": {
+    "categoria": "Design & Creatività",
+    "emoji": "♟️",
+    "definizione": "Usare i metodi del design non per disegnare un singolo oggetto, ma per ripensare interi servizi e strategie: capire i bisogni, immaginare scenari, testare soluzioni. Serve a decidere cosa creare, prima ancora di come farlo.",
+    "esempio": "Una communication designer ridisegna l'esperienza di visita di un museo: percorso, biglietti, segnaletica e app diventano un racconto unico, e i visitatori under 18 raddoppiano.",
+    "area_correlata": "COM"
+  },
+  "strumenti cad": {
+    "categoria": "Design & Creatività",
+    "emoji": "📐",
+    "definizione": "Programmi di disegno tecnico al computer che permettono di tracciare linee, quote e modelli precisi al millimetro, in 2D e 3D. Servono a progettare oggetti, abiti ed edifici modificabili con un clic, senza rifare tutto a mano.",
+    "esempio": "Una progettista di moda disegna il cartamodello di una giacca con il CAD: per passare dalla taglia S alla XL le basta un comando, non una nuova nottata al tavolo da disegno.",
+    "area_correlata": "DIS"
+  },
+  "supply chain esg": {
+    "categoria": "Business & Management",
+    "emoji": "🔗",
+    "definizione": "Capacità di controllare che tutta la filiera di un prodotto — dalle materie prime al negozio — rispetti ambiente e diritti dei lavoratori. Serve perché un marchio è responsabile anche di ciò che fanno i suoi fornitori.",
+    "esempio": "Una fashion sustainability manager mappa i 120 fornitori del marchio: scopre che una tintoria scarica acque non depurate e la aiuta a mettersi in regola entro 6 mesi.",
+    "area_correlata": "SIS"
+  },
+  "tecnica e creatività": {
+    "categoria": "Design & Creatività",
+    "emoji": "🎭",
+    "definizione": "Capacità di unire competenze tecniche e immaginazione artistica nello stesso progetto: sapere come si fa e cosa vale la pena fare. Serve nei mestieri digitali, dove un'idea bellissima senza tecnica resta un sogno, e viceversa.",
+    "esempio": "Un animatore inventa un personaggio di gelatina che rimbalza: per renderlo credibile scrive anche la simulazione fisica che ne calcola tremolii e rimbalzi a ogni passo.",
+    "area_correlata": "DIG"
+  },
+  "tecniche di tessitura": {
+    "categoria": "Ingegneria & Manifattura",
+    "emoji": "🧶",
+    "definizione": "Conoscere i modi di intrecciare i fili per creare tessuti: tela, saia, raso e maglia hanno resistenze e aspetti diversi. Serve a scegliere o progettare l'intreccio giusto per jeans robusti, sciarpe morbide o tessuti tecnici.",
+    "esempio": "Una textile designer sceglie l'armatura saia per un nuovo denim: è lo stesso intreccio diagonale che rende i jeans resistenti da 150 anni.",
+    "area_correlata": "MAT"
+  },
+  "telecomunicazioni": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "📡",
+    "definizione": "Il campo che studia come trasmettere informazioni a distanza: cavi, fibra ottica, onde radio, antenne e reti mobili. Conoscerle serve a collegare persone, sensori e città, scegliendo la tecnologia giusta per ogni distanza e quantità di dati.",
+    "esempio": "Un tecnico delle telecomunicazioni collega 200 sensori urbani con una rete a basso consumo: ogni sensore trasmette per chilometri usando meno energia di una lucina di Natale.",
+    "area_correlata": "AMB"
+  },
+  "telecomunicazioni spaziali": {
+    "categoria": "Comunicazione & Media",
+    "emoji": "🚀",
+    "definizione": "Saper far viaggiare segnali tra la Terra e lo spazio: antenne giganti, frequenze radio e satelliti che rimbalzano dati sul pianeta. Serve per GPS, previsioni meteo, TV satellitare e internet nelle zone senza cavi.",
+    "esempio": "Uno space traffic controller comunica con un satellite a 36.000 chilometri: il comando parte dall'antenna e arriva in un ottavo di secondo, giusto in tempo per la manovra.",
+    "area_correlata": "COM"
+  },
+  "telerilevamento": {
+    "categoria": "Scienze & Ricerca",
+    "emoji": "🗺️",
+    "definizione": "Capacità di osservare e misurare il territorio da lontano, con sensori e fotocamere montati su satelliti e droni. Serve a scoprire incendi, alluvioni, siccità o costruzioni abusive senza mettere piede sul posto.",
+    "esempio": "Un drone security coordinator sorvola l'argine del fiume con la termocamera dopo il temporale: una macchia più fredda rivela l'infiltrazione d'acqua prima che diventi una frana.",
+    "area_correlata": "COM"
+  },
+  "text-to-speech": {
+    "categoria": "Intelligenza Artificiale",
+    "emoji": "🗣️",
+    "definizione": "Tecnologia che trasforma un testo scritto in voce parlata, con intonazioni sempre più naturali grazie all'intelligenza artificiale. Serve per navigatori, assistenti vocali, audiolibri e per far leggere lo schermo a chi non può vederlo.",
+    "esempio": "Un synthetic voice architect regola la voce degli annunci della stazione: rallenta la velocità del 10% e ora anche i nomi delle città più difficili si capiscono al primo ascolto.",
+    "area_correlata": "COM"
+  },
+  "threat detection": {
+    "categoria": "Cybersecurity & Privacy",
+    "emoji": "🚨",
+    "definizione": "Capacità di riconoscere in tempo reale i segnali di un attacco informatico in mezzo a milioni di eventi normali: accessi strani, file sospetti, traffico anomalo. Serve a intervenire nei primi minuti, quando il danno è ancora piccolo.",
+    "esempio": "Un cyber intelligence analyst nota un accesso al gestionale alle 3 di notte da un altro continente: blocca l'account in 5 minuti, prima che i dati dei clienti escano.",
+    "area_correlata": "DIG"
+  },
+  "tracciabilità alimentare": {
+    "categoria": "Alimentazione & Agricoltura",
+    "emoji": "🏷️",
+    "definizione": "Capacità di ricostruire tutto il viaggio di un alimento, dal campo allo scaffale, registrando ogni passaggio. Serve a garantire qualità e sicurezza: se un lotto è contaminato, si ritira solo quello, sapendo esattamente dov'è.",
+    "esempio": "Un consulente registra su blockchain ogni fase di una filiera di passata di pomodoro: inquadrando il QR sulla bottiglia scopri campo, giorno di raccolta e stabilimento.",
+    "area_correlata": "ALI"
+  },
+  "urban analytics": {
+    "categoria": "Architettura & Città",
+    "emoji": "🏙️",
+    "definizione": "Saper analizzare i dati prodotti da una città — traffico, consumi, rifiuti, spostamenti — per capire come funziona davvero. Serve a decidere con i numeri dove servono piste ciclabili, autobus o nuovi servizi.",
+    "esempio": "Un urban sensor network manager incrocia i dati di 300 sensori di traffico: scopre che il 30% delle auto in centro sta solo cercando parcheggio e propone pannelli con i posti liberi.",
+    "area_correlata": "AMB"
+  },
+  "usability testing": {
+    "categoria": "Design & Creatività",
+    "emoji": "🧪",
+    "definizione": "Metodo per verificare se un sito o un'app sono facili da usare: si osservano persone vere mentre provano a completare compiti reali. Serve a scoprire dove gli utenti si bloccano, senza fidarsi delle opinioni di chi l'ha progettato.",
+    "esempio": "Una web interaction designer osserva 5 utenti alle prese con il modulo di iscrizione: 4 su 5 non trovano il pulsante di conferma, che viene ingrandito e spostato in alto.",
+    "area_correlata": "DIG"
+  },
+  "ux/ui design": {
+    "categoria": "Design & Creatività",
+    "emoji": "📲",
+    "definizione": "Progettare l'esperienza (UX) e l'aspetto (UI) di app e siti: come ci si muove, dove si clicca, che emozioni si provano. Serve a rendere il digitale semplice e piacevole, perché un'app confusa viene chiusa in pochi secondi.",
+    "esempio": "Un web designer riduce da 7 a 3 i passaggi per ordinare una pizza dall'app: gli ordini completati aumentano di un terzo nella prima settimana.",
+    "area_correlata": "DIG"
+  },
+  "vfx": {
+    "categoria": "Design & Creatività",
+    "emoji": "💥",
+    "definizione": "Gli effetti visivi digitali (visual effects) aggiunti dopo le riprese: creature, esplosioni, città intere che sul set non esistevano. Servono a mostrare l'impossibile in film, serie e spot, mescolando immagini vere e generate al computer.",
+    "esempio": "Un artista VFX aggiunge la lava digitale alla ripresa del vulcano in miniatura: 200 fotogrammi ritoccati uno a uno rendono l'eruzione del film indistinguibile da una vera.",
+    "area_correlata": "DIG"
+  },
+  "virtualizzazione": {
+    "categoria": "Digitale & Programmazione",
+    "emoji": "☁️",
+    "definizione": "Tecnica che fa funzionare più computer «virtuali» dentro un unico computer fisico, ognuno con il suo sistema e le sue app. Serve a sfruttare meglio i server e a creare o spegnere macchine in pochi secondi.",
+    "esempio": "Un cloud engineer fa girare 40 server virtuali su 4 macchine fisiche: quando il sito finisce in prima pagina, ne accende altri 10 in un minuto per reggere i visitatori.",
+    "area_correlata": "INF"
   }
 }

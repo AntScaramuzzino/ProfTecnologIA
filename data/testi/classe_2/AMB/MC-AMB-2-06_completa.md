@@ -186,6 +186,17 @@ Competenze chiave che inizia a costruire da qui: geologia · GIS e telerilevamen
 
 *"Il territorio racconta la sua storia. Il mio lavoro è capirla prima che diventi un'emergenza."*
 
+
+**Climate Risk Analyst**
+
+Studia come il cambiamento del clima può minacciare un territorio: frane, alluvioni, siccità. Il Climate Risk Analyst raccoglie enormi quantità di dati — piogge, temperature, mappe del suolo — e costruisce modelli al computer per prevedere quali zone rischiano di più e quando. I suoi calcoli aiutano comuni e aziende a decidere dove non costruire, quali argini rinforzare e come proteggere case e strade. È un mestiere che unisce lo studio del clima alla capacità di trasformare i numeri in scelte che salvano vite.
+
+Dove lavora: società di consulenza ambientale, compagnie di assicurazione, enti di protezione civile, banche e fondi con criteri ESG, centri di ricerca sul clima.
+
+Competenze chiave che inizia a costruire da qui: climatologia · risk analysis · ESG · data science · modellazione climatica
+
+*"Non prevedo il futuro: calcolo dove la prossima alluvione farà più danni, così possiamo fermarla in tempo."*
+
 ---
 
 ---

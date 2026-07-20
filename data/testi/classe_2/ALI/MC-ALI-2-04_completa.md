@@ -261,6 +261,17 @@ Competenze chiave che inizia a costruire da qui: biotecnologie alimentari · bio
 
 *"Non sto sostituendo il cibo. Sto reinventando come lo produciamo."*
 
+
+**Vertical Farmer**
+
+In una fattoria verticale le piante crescono sospese nell'aria o immerse in acqua ricca di nutrienti, dentro stanze dove clima e luce non dipendono mai dal tempo che fa fuori. Questo Vertical Farmer arriva a usare il 95% di acqua in meno rispetto ai campi tradizionali e rinuncia del tutto ai pesticidi. Il vantaggio per la filiera è enorme: conosce ogni singolo passaggio della produzione, così sull'etichetta può indicare con precisione dove, come e quando è nato ogni ortaggio.
+
+Dove lavora: impianti di aeroponica, aziende agricole ad alta tecnologia, startup della sostenibilità alimentare, centri di ricerca sul risparmio idrico, filiere della distribuzione organizzata.
+
+Competenze chiave che inizia a costruire da qui: idroponica e aeroponica · risparmio idrico · automazione · IoT · sostenibilità alimentare
+
+*"So esattamente cosa scrivere sull'etichetta, perché ho seguito con i miei sensori ogni goccia d'acqua."*
+
 ---
 
 ---

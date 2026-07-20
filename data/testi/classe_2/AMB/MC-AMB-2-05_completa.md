@@ -212,6 +212,17 @@ Competenze chiave che inizia a costruire da qui: urbanistica · UX design · ges
 
 *"Non vendo mezzi di trasporto. Vendo la libertà di spostarsi senza possedere un'auto."*
 
+
+**Habitat Designer**
+
+Immagina e disegna gli spazi dove le persone vivono, mescolando natura e tecnologia. L'Habitat Designer progetta parchi, giardini verticali, piazze e perfino piccoli oggetti urbani, passando dalla scala di un intero quartiere a quella di una panchina. In una smart city collabora con chi gestisce sensori e dati per capire dove servono più alberi, più ombra o più zone verdi. Il suo obiettivo è rendere gli ambienti urbani più belli, più vivibili e capaci di respirare insieme a chi li abita.
+
+Dove lavora: studi di architettura del paesaggio, uffici di pianificazione urbana, aziende di verde pubblico, centri di ricerca sulla sostenibilità, agenzie di design ambientale.
+
+Competenze chiave che inizia a costruire da qui: architettura paesaggistica · bioingegneria · design ambientale · sostenibilità · spazi verdi
+
+*"Una città intelligente non è fatta solo di dati e sensori: ha bisogno anche di alberi e di ombra."*
+
 ---
 
 ---

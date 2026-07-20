@@ -238,6 +238,17 @@ Competenze chiave che inizia a costruire da qui: narrazione d'impresa · scrittu
 
 *"I dati convincono la mente. Le storie conquistano il cuore. Ho bisogno di entrambi."*
 
+
+**Comunicatore d'Arte e Communication Designer**
+
+Progetta l'identità visiva di campagne pubblicitarie, marchi e progetti culturali: sceglie colori, caratteri, immagini e parole perché il messaggio arrivi chiaro alla persona giusta. Conosce i canali su cui il contenuto viaggerà — social, siti web, schermi, manifesti — e adatta ogni formato alla rete che lo trasmette, proprio come un segnale si adatta al suo mezzo. Lavora in squadra con fotografi, copywriter e sviluppatori, e trasforma un'idea astratta in una comunicazione che funziona.
+
+Dove lavora: agenzie di pubblicità e branding, studi di comunicazione visiva, uffici marketing di aziende, musei e istituzioni culturali, agenzie digitali.
+
+Competenze chiave che inizia a costruire da qui: comunicazione visiva · branding · strategic design · copywriting · advertising
+
+*"Un buon messaggio visivo si capisce in tre secondi. Per costruirlo, io ci lavoro tre settimane."*
+
 ---
 
 ---

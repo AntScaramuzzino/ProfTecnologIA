@@ -344,6 +344,17 @@ Competenze chiave che inizia a costruire da qui: IoT · modellazione 3D · ingeg
 
 *"Il gemello digitale non è una copia. È una macchina del tempo che ti mostra il futuro del sistema fisico."*
 
+
+**Predictive Maintenance Analyst**
+
+Ascolta le macchine prima che si rompano: migliaia di sensori misurano vibrazioni, temperature e usura degli impianti, e i suoi algoritmi trovano nei dati i segnali di un guasto in arrivo. Conoscere i materiali è essenziale — sapere come l'acciaio si affatica o una guarnizione si consuma aiuta a interpretare i numeri — e ogni intervento programmato al momento giusto evita fermi di produzione, sprechi di materiale e sostituzioni inutili.
+
+Dove lavora: stabilimenti manifatturieri, aziende energetiche, società di ingegneria della manutenzione, imprese ferroviarie e aeroportuali, fornitori di servizi industriali.
+
+Competenze chiave che inizia a costruire da qui: sensoristica · big data · machine learning · manutenzione industriale · analisi predittiva
+
+*"Un cuscinetto che sta per cedere vibra in modo diverso. I miei modelli lo sentono con settimane di anticipo."*
+
 ---
 
 ---
