@@ -286,6 +286,17 @@ Competenze chiave che inizia a costruire da qui: LCA · ISO 14064 · emissioni C
 
 *"Non mi interessa l'impronta di carbonio come numero. Mi interessa dove posso tagliarla davvero."*
 
+
+**Decarbonization Consultant**
+
+Guida imprese ed enti pubblici verso produzione e consumi a basse emissioni, e i rifiuti sono uno dei suoi terreni di lavoro più importanti: una discarica emette metano, un impianto di riciclo fa risparmiare materia ed energia. Con audit ambientali e standard ISO fotografa la situazione di partenza, poi costruisce la strategia: ridurre gli scarti, riprogettare i processi, trasformare i rifiuti di un reparto nelle risorse di un altro.
+
+Dove lavora: società di consulenza, aziende di gestione rifiuti, gruppi industriali, camere di commercio, enti di certificazione ambientale.
+
+Competenze chiave che inizia a costruire da qui: carbon footprint · auditing ambientale · standard ISO · sostenibilità · reporting ESG
+
+*"Quando un'azienda mi chiama, i rifiuti sono un costo. Quando ho finito, sono diventati materia prima."*
+
 ---
 
 ---

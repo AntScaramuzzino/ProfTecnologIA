@@ -369,6 +369,17 @@ Competenze chiave che inizia a costruire da qui: ingegneria elettrica · softwar
 
 *"La rete elettrica intelligente non trasporta solo energia. Trasporta informazioni."*
 
+
+**Energy Efficiency Advisor**
+
+Studia quanta energia consumano gli edifici — dalle scuole agli uffici pubblici di un quartiere — e trova il modo di ridurre gli sprechi. L'Energy Efficiency Advisor misura i consumi di riscaldamento, luce e acqua calda, individua i punti dove si perde più energia (finestre, tetti, vecchie caldaie) e propone interventi concreti. Rilascia anche le certificazioni che indicano quanto è efficiente un immobile, aiutando famiglie e amministrazioni a rendere la città meno costosa e più rispettosa dell'ambiente.
+
+Dove lavora: società di consulenza energetica, uffici tecnici comunali, imprese edili, aziende di domotica, agenzie per l'energia.
+
+Competenze chiave che inizia a costruire da qui: auditing energetico · termotecnica · normativa CEE · certificazioni APE · domotica
+
+*"Gli sprechi non si vedono a occhio nudo: io li misuro e li fermo, edificio per edificio."*
+
 ---
 
 ---

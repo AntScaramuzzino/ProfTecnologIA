@@ -231,6 +231,17 @@ Competenze chiave che inizia a costruire da qui: circuiti elettrici · software 
 
 *"Milioni di dati al secondo. La rete intelligente non dorme mai — e nemmeno io."*
 
+
+**Microgrid System Integrator**
+
+Mentre i motori termici sprecano in calore gran parte dell'energia del carburante, una microrete ben progettata spreca pochissimo: questa figura la costruisce pezzo per pezzo. Collega pannelli, mini-eolico e batterie con l'elettronica di potenza — i circuiti che convertono e regolano la corrente — programma i flussi di energia e garantisce che ospedali, aziende e borghi isolati non restino mai al buio, nemmeno durante un blackout. Il generatore diesel di emergenza resta lì — ma il suo obiettivo è accenderlo il meno possibile.
+
+Dove lavora: società di impiantistica elettrica, comunità energetiche, gestori di reti di distribuzione locali, aziende di elettronica di potenza, cantieri di elettrificazione rurale.
+
+Competenze chiave che inizia a costruire da qui: ingegneria elettrica · IoT · reti di distribuzione · energie rinnovabili · elettronica di potenza
+
+*"Il successo, per me, è un generatore diesel che resta spento tutto l'anno."*
+
 ---
 
 ---

@@ -312,6 +312,17 @@ Competenze chiave che inizia a costruire da qui: ingegneria chimica · sicurezza
 
 *"L'idrogeno non è la soluzione magica. È lo strumento giusto per i problemi giusti."*
 
+
+**Predictive Maintenance Analyst**
+
+Tiene sotto controllo motori, turbine e macchine termiche leggendo i segnali elettrici che producono: un motore che invecchia assorbe più corrente, vibra in modo diverso, scalda più del dovuto. Collegando sensori ai circuiti di alimentazione e analizzando migliaia di misure — tensione, corrente, temperatura — riconosce l'inefficienza prima che diventi guasto e programma l'intervento al momento giusto. È il medico delle macchine: fa la diagnosi con i numeri, non con lo stetoscopio.
+
+Dove lavora: centrali di produzione elettrica, aziende manifatturiere, società di manutenzione industriale, gestori di flotte e impianti, aziende di automazione.
+
+Competenze chiave che inizia a costruire da qui: sensoristica · big data · manutenzione predittiva · termodinamica applicata · analisi delle vibrazioni
+
+*"Il guasto peggiore è quello che ti sorprende. Il mio lavoro è togliergli la sorpresa."*
+
 ---
 
 ---

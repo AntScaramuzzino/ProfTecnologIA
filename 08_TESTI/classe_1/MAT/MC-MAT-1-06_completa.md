@@ -389,6 +389,17 @@ Competenze chiave che inizia a costruire da qui: disegno tessile · tecnologie d
 
 *"Il tessuto è il mio mezzo di comunicazione. Ogni fibra racconta qualcosa di chi lo indossa."*
 
+
+**Textile Designer**
+
+Disegna il tessuto prima ancora del vestito o del divano: sceglie le fibre, studia l'intreccio al CAD, decide colori, trame e prestazioni di ogni centimetro di stoffa. I biomateriali stanno cambiando il suo lavoro — oggi esistono filati ricavati da scarti di arance, alghe e funghi — e il suo compito è capire quando una fibra biodegradabile può sostituire una sintetica senza perdere qualità, per l'abbigliamento come per l'arredo.
+
+Dove lavora: aziende tessili, studi di textile design, distretti della moda come Prato e Como, showroom di tessuti d'arredo, laboratori di ricerca sulle fibre.
+
+Competenze chiave che inizia a costruire da qui: progettazione tessile · fibre e compositi · tecniche di tessitura · CAD · creatività applicata
+
+*"La mia collezione preferita nasce da bucce d'arancia. Chi la tocca non ci crede mai."*
+
 ---
 
 ---

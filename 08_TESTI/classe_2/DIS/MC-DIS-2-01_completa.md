@@ -228,6 +228,17 @@ Competenze chiave che inizia a costruire da qui: CAD 2D/3D · prototipazione ind
 
 *"Il prototipo racconta più di mille riunioni. Finché non lo tocchi con mano, non sai davvero come funziona."*
 
+
+**Designer di Prodotto**
+
+Trasforma un'idea in un oggetto che si può produrre davvero. Al computer, con il CAD, definisce la forma di una lampada, di una sedia o di una borraccia, sceglie i materiali e prepara i disegni tecnici — piante, prospetti, sezioni — che l'officina userà per costruirla. Le proiezioni ortogonali sono la sua lingua di lavoro: se una vista è sbagliata, il pezzo prodotto sarà sbagliato.
+
+Dove lavora: studi di design industriale, uffici tecnici di aziende manifatturiere, agenzie di product design, reparti ricerca e sviluppo, laboratori di prototipazione.
+
+Competenze chiave che inizia a costruire da qui: CAD 2D avanzato · creatività · design industriale · materiali e tecnologie · documentazione tecnica
+
+*"Un'idea resta un'idea finché non la disegno in tre viste: solo allora l'officina può costruirla davvero."*
+
 ---
 
 ---

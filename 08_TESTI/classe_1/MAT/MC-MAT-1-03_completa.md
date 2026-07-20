@@ -26,23 +26,6 @@ I materiali cambiano il mondo. Non solo quelli che già conosci — anche quelli
 
 ## 📖 ESPLORA
 
-
-### ⛓️ Chi lavora con questa competenza nel 2030?
-
-**Waste Blockchain Auditor**
-
-Usa la tecnologia blockchain per tracciare i flussi di rifiuti lungo tutta la catena di smaltimento, garantendo la conformità alle normative ambientali e prevenendo smaltimenti illeciti.
-
-Dove lavora: consorzi di recupero materiali, aziende di waste management, enti di verifica ambientale, startup greentech di tracciabilità.
-
-Competenze chiave che inizia a costruire da qui: blockchain · normativa ambientale · auditing · tracciabilità rifiuti · smart contract
-
-*"La tracciabilità non è burocrazia. È la prova documentata che il rifiuto è diventato risorsa."*
-
----
-
----
-
 ### Perché i materiali "tradizionali" non bastano più?
 
 Prima di esplorare i materiali innovativi, vale la pena capire perché esistono. La risposta non è "perché i vecchi materiali sono brutti" — molti dei materiali tradizionali sono ancora eccellenti per quello che fanno. La risposta è che abbiamo problemi nuovi che i vecchi materiali non risolvono.
@@ -244,6 +227,26 @@ Notpla, startup londinese, produce capsule e fogli impermeabili a base di alga m
 ---
 
 ### 🔬 Chi lavora con questa competenza nel 2030?
+
+**Waste Blockchain Auditor**
+
+Usa la tecnologia blockchain per tracciare i flussi di rifiuti lungo tutta la catena di smaltimento, garantendo la conformità alle normative ambientali e prevenendo smaltimenti illeciti.
+
+Dove lavora: consorzi di recupero materiali, aziende di waste management, enti di verifica ambientale, startup greentech di tracciabilità.
+
+Competenze chiave che inizia a costruire da qui: blockchain · normativa ambientale · auditing · tracciabilità rifiuti · smart contract
+
+*"La tracciabilità non è burocrazia. È la prova documentata che il rifiuto è diventato risorsa."*
+
+**Decarbonization Consultant**
+
+Aiuta aziende e istituzioni a tagliare le proprie emissioni di carbonio: misura l'impronta di ogni attività, individua i punti critici e propone alternative, a partire dai materiali. Suggerire una bioplastica al posto di una plastica fossile, o un composito riciclato al posto di uno vergine, significa confrontare prestazioni, costi e impatti ambientali con criteri rigorosi, caso per caso. Accompagna le organizzazioni verso emissioni zero con un piano di transizione concreto.
+
+Dove lavora: società di consulenza ambientale, grandi gruppi industriali, utility dell'energia, enti pubblici, banche e fondi d'investimento ESG.
+
+Competenze chiave che inizia a costruire da qui: carbon footprint · auditing ambientale · standard ISO 14064 · economia circolare · ESG
+
+*"Non vendo pannelli né promesse: costruisco il percorso di un'azienda verso emissioni che tendono a zero."*
 
 **Materials Innovation Engineer (Ingegnere dei Materiali per l'Innovazione Sostenibile)**
 

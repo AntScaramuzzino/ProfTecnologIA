@@ -277,6 +277,17 @@ Competenze chiave che inizia a costruire da qui: UX conversazionale · NLP · li
 
 *"Un assistente vocale deve sembrare presente, non robotico. La differenza sta in come risponde quando non capisce."*
 
+
+**Synthetic Voice Architect**
+
+Progetta le voci artificiali che senti nei navigatori, negli audiolibri, negli assistenti vocali e negli spot: sceglie timbro, ritmo e pronuncia, addestra i modelli di machine learning e corregge i risultati finché la voce suona naturale. La parte più delicata del mestiere è etica: una voce sintetica può informare ma anche ingannare, così lavora con consensi firmati, filigrane digitali e regole chiare, perché chi ascolta possa sempre sapere se sta parlando con una macchina.
+
+Dove lavora: aziende tech di assistenti vocali, studi di doppiaggio e produzione audio, case editrici di audiolibri, agenzie pubblicitarie, laboratori di ricerca sull'AI.
+
+Competenze chiave che inizia a costruire da qui: sound design · linguistica computazionale · machine learning · etica vocale AI · text-to-speech
+
+*"Do la voce alle macchine, ma la firma resta umana: chi ascolta ha il diritto di saperlo."*
+
 ---
 
 ---

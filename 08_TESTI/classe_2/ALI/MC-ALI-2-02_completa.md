@@ -204,6 +204,17 @@ Competenze chiave che inizia a costruire da qui: biochimica alimentare · proget
 
 *"La stampante 3D non cucina. Ma permette di cucinare ciò che non era mai stato possibile prima."*
 
+
+**Vertical Farmer**
+
+Coltiva insalate, fragole ed erbe aromatiche dentro un edificio, su ripiani sovrapposti come gli scaffali di una libreria, sotto luci LED e senza un solo granello di terra. Il Vertical Farmer regola acqua, luce e temperatura con sensori e sistemi automatici, ottenendo raccolti in ogni stagione con pochissima acqua e nessun pesticida. Producendo gli ortaggi dentro la città, accorcia la filiera: il cibo arriva freschissimo e ha bisogno di meno trattamenti di conservazione per durare.
+
+Dove lavora: fattorie verticali urbane, serre indoor ad alta tecnologia, startup di agricoltura di precisione, catene della grande distribuzione, aziende di automazione agricola.
+
+Competenze chiave che inizia a costruire da qui: agricoltura di precisione · automazione · biotecnologie · IoT e sensoristica · gestione ambientale
+
+*"Non aspetto più la stagione giusta: dentro la mia fattoria verticale è primavera dodici mesi l'anno."*
+
 ---
 
 ---

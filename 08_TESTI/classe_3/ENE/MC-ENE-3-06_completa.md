@@ -211,6 +211,17 @@ Competenze chiave che inizia a costruire da qui: domotica avanzata · normativa 
 
 *"Una casa efficiente non rinuncia al comfort. Consuma meno per dare di più."*
 
+
+**Urban Sensor Network Manager**
+
+Gestisce il sistema nervoso di un edificio intelligente: centinaia di sensori che misurano consumi elettrici, temperatura, presenza nelle stanze e qualità dell'aria, tutti collegati al building management system, il software che governa impianti e automazioni. Con questi dati regola luci, riscaldamento e ricarica delle batterie, spostando i consumi nelle ore in cui la rete offre energia più pulita ed economica — così l'edificio dialoga con la smart grid invece di subirla.
+
+Dove lavora: società di facility management, grandi complessi direzionali e ospedali, campus universitari, aziende di domotica e building automation, utility energetiche.
+
+Competenze chiave che inizia a costruire da qui: IoT building · domotica · data visualization · reti di sensori · building management system (BMS)
+
+*"Un edificio produce dati ogni secondo: sprecarli costa quanto lasciare le finestre aperte d'inverno."*
+
 ---
 
 ---

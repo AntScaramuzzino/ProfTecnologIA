@@ -173,6 +173,17 @@ Competenze chiave che inizi a costruire qui: sistemi di numerazione · codifica 
 
 *"Il codice binario non è un dettaglio tecnico: è la grammatica di tutto quello che le macchine fanno."*
 
+
+**Computer Vision Engineer**
+
+Insegna ai computer a "vedere": scrive algoritmi che riconoscono un tumore in una radiografia, un ostacolo davanti a un robot, un difetto su una linea di produzione. Per la macchina ogni immagine è solo una griglia di pixel, cioè numeri binari: chi fa questo mestiere deve sapere esattamente come i dati visivi sono rappresentati, compressi e misurati in byte, perché è lì che i suoi algoritmi lavorano.
+
+Dove lavora: aziende di robotica e automazione, centri di ricerca su guida autonoma, aziende di dispositivi medici, startup di visione artificiale, laboratori universitari.
+
+Competenze chiave che inizi a costruire qui: rappresentazione digitale delle immagini · formati e compressione · algebra lineare · machine learning
+
+*"Un'immagine per me è una tabella di numeri. La magia è farle dire cosa contiene."*
+
 ---
 
 ## 🔬 SPERIMENTA

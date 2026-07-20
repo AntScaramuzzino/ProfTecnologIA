@@ -150,6 +150,17 @@ Nel 2024, si stimano oltre 3,5 milioni di posizioni aperte non ricoperte nel set
 
 *"Nel 90% dei casi, il problema di sicurezza non è il codice — è la persona davanti allo schermo."*
 
+
+**Privacy Engineer**
+
+Fa in modo che le app e i servizi digitali proteggano i dati delle persone fin dal primo schizzo di progetto, non come cerotto aggiunto alla fine. Decide quali dati raccogliere (il meno possibile), come cifrarli, come anonimizzarli e quando cancellarli, applicando il GDPR — il regolamento europeo sulla protezione dei dati — a ogni riga di codice. Lavora a stretto contatto con sviluppatori, legali ed esperti di sicurezza.
+
+Dove lavora: aziende tecnologiche, ospedali e sanità digitale, banche e assicurazioni, enti pubblici, studi di consulenza sulla protezione dei dati.
+
+Competenze chiave che inizi a costruire qui: privacy by design · GDPR · anonimizzazione dei dati · crittografia · risk assessment
+
+*"Il dato più sicuro è quello che non raccolgo: la privacy si progetta, non si aggiunge alla fine."*
+
 ---
 
 ## 🔬 SPERIMENTA

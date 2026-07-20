@@ -272,6 +272,17 @@ Competenze chiave che inizia a costruire da qui: crittografia · analisi del ris
 
 *"Non proteggo i computer. Proteggo le persone che ci sono dietro."*
 
+
+**Digital Identity Curator**
+
+Si occupa di come una persona o un'azienda appare in rete: quali informazioni sono visibili, quali vanno protette e che immagine si dà agli altri. Il Digital Identity Curator controlla profili social, cancella dati sensibili finiti nel posto sbagliato e insegna a usare password sicure e autenticazione a due fattori. Conosce bene le regole sulla privacy e le tecniche di sicurezza informatica, perché il suo lavoro è costruire una presenza online forte e coerente senza esporre chi rappresenta a truffe o furti di identità.
+
+Dove lavora: agenzie di comunicazione, studi di personal branding, aziende di sicurezza informatica, uffici stampa, come consulente per personaggi pubblici.
+
+Competenze chiave che inizia a costruire da qui: digital reputation · GDPR · sicurezza informatica · personal branding · privacy by design
+
+*"La tua reputazione online è una casa: io controllo che porte e finestre siano sempre ben chiuse."*
+
 ---
 
 ## 🔬 SPERIMENTA

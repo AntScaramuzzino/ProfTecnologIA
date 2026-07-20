@@ -213,6 +213,17 @@ Competenze chiave che inizia a costruire da qui: ingegneria elettrica · softwar
 
 *"La rete elettrica del futuro non aspetta che produciamo energia. Anticipa quando ne avremo bisogno."*
 
+
+**Microgrid System Integrator**
+
+Aiuta quartieri, aziende agricole, scuole e piccole comunità a liberarsi in parte dalla dipendenza da gas e petrolio: progetta microreti locali dove pannelli solari, piccole turbine e batterie di accumulo lavorano insieme, coordinati da software intelligenti. Calcola quanta energia serve, dimensiona gli impianti, collega tutto alla rete nazionale come riserva. Se la fornitura principale si interrompe o i prezzi dei combustibili esplodono, la sua microrete continua ad alimentare le case.
+
+Dove lavora: società di ingegneria energetica, installatori di impianti rinnovabili, comunità energetiche rinnovabili, utility locali, aziende con grandi stabilimenti.
+
+Competenze chiave che inizia a costruire da qui: ingegneria elettrica · IoT · energie rinnovabili · sistemi di accumulo · gestione energetica
+
+*"Progetto reti piccole per un motivo grande: l'energia prodotta dove serve non dipende da nessun gasdotto."*
+
 ---
 
 ---

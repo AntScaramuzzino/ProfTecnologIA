@@ -285,6 +285,17 @@ Competenze chiave che inizia a costruire da qui: Python · TensorFlow / PyTorch 
 
 *"Non programmo solo algoritmi. Insegno alle macchine a riconoscere pattern che un umano non riuscirebbe a vedere."*
 
+
+**Computer Animation and Visual Effects**
+
+Crea animazioni, effetti speciali e mondi virtuali per film, serie, videogiochi e web, combinando disegno, codice e software 3D. Prima di modellare una creatura o ricostruire una città antica passa ore a documentarsi: cerca immagini, video e studi affidabili, confronta le fonti e scarta quelle imprecise, perché un dettaglio sbagliato rende falsa tutta la scena. La ricerca ben fatta è la base invisibile di ogni effetto spettacolare.
+
+Dove lavora: studi di animazione e VFX, case di produzione cinetelevisive, software house di videogiochi, agenzie pubblicitarie, studi di post-produzione.
+
+Competenze chiave che inizia a costruire da qui: animazione digitale 3D · software VFX · coding creativo · storytelling visivo · competenze culturali e psicologiche
+
+*"Per animare un lupo credibile ho guardato più documentari io che uno zoologo."*
+
 ---
 
 ---

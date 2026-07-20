@@ -188,33 +188,6 @@ Il packaging è coperto di simboli e loghi. Alcuni sono obbligatori per legge, a
 
 ---
 
-
-### 🔬 Chi lavora con questa competenza nel 2030?
-
-**Microbiome Specialist**
-
-Analizza i microorganismi presenti negli alimenti e nell'intestino per garantire la sicurezza alimentare, sviluppare probiotici mirati e prevenire contaminazioni nella filiera produttiva.
-
-Dove lavora: centri di ricerca sul microbioma, startup di nutrizione personalizzata, ospedali con reparti di gastroenterologia avanzata, aziende di testing del microbiota.
-
-Competenze chiave che inizia a costruire da qui: microbiologia alimentare · HACCP · analisi di laboratorio · biologia molecolare · sicurezza alimentare
-
-*"Ogni intestino è un ecosistema unico. Il mio lavoro è imparare a leggerlo."*
-
----
-
----
-
-> **🌍 Dato chiave:**
-> In Italia, circa il 40% dei rifiuti domestici è packaging. A livello europeo, nel 2021 sono stati prodotti circa 84 milioni di tonnellate di rifiuti di imballaggio. Il Regolamento UE sull'imballaggio (PPWR, 2024) fissa obiettivi vincolanti: entro il 2030, tutti gli imballaggi devono essere riciclabili; entro il 2040, la quota di plastica riciclata negli imballaggi deve essere di almeno il 50%.
-
----
-
-> **🔬 Collegamento STEM — Chimica/Scienze:**
-> Perché il sacchetto delle patatine non è trasparente? È fatto di alluminio (o di film metallizzato — una plastica con uno strato sottilissimo di alluminio depositato su di essa). L'alluminio riflette la luce e blocca i raggi UV che ossiderebbero i grassi delle patatine rendendole rancide. Blocca anche il passaggio di ossigeno — molto meglio di qualsiasi plastica trasparente. Il risultato è che le patatine durano 6-12 mesi invece di pochi giorni. Il costo: quasi impossibile da riciclare, perché separare la plastica dall'alluminio richiede processi industriali costosi.
-
----
-
 ## 🔍 OSSERVA
 
 ### Il caso: confronta lo stesso prodotto in tre packaging diversi
@@ -258,6 +231,38 @@ Questa è l'analisi dei **trade-off** — i compromessi — che ogni scelta di p
 ---
 
 ### Chi lavora con questa competenza nel 2030?
+
+**Microbiome Specialist**
+
+Analizza i microorganismi presenti negli alimenti e nell'intestino per garantire la sicurezza alimentare, sviluppare probiotici mirati e prevenire contaminazioni nella filiera produttiva.
+
+Dove lavora: centri di ricerca sul microbioma, startup di nutrizione personalizzata, ospedali con reparti di gastroenterologia avanzata, aziende di testing del microbiota.
+
+Competenze chiave che inizia a costruire da qui: microbiologia alimentare · HACCP · analisi di laboratorio · biologia molecolare · sicurezza alimentare
+
+*"Ogni intestino è un ecosistema unico. Il mio lavoro è imparare a leggerlo."*
+
+**Blockchain Legal Consultant**
+
+Combatte le frodi e gli sprechi seguendo il cibo con una specie di registro digitale a prova di trucchi: la blockchain. Il Blockchain Legal Consultant scrive contratti automatici — gli smart contract — che registrano ogni passaggio di un alimento, dal produttore al supermercato, in modo che nessuno possa cancellarlo o modificarlo di nascosto. Così un prodotto scaduto o una partita invenduta si individuano subito, e le aziende rispettano le regole europee sulla trasparenza e sui dati.
+
+Dove lavora: studi legali specializzati in nuove tecnologie, aziende della filiera agroalimentare, società di consulenza sulla tracciabilità, startup blockchain, enti di certificazione.
+
+Competenze chiave che inizia a costruire da qui: blockchain · diritto contrattuale · tracciabilità alimentare · smart contract · GDPR
+
+*"Con la blockchain la storia di un alimento diventa un libro che nessuno può riscrivere di nascosto."*
+
+---
+
+---
+
+> **🌍 Dato chiave:**
+> In Italia, circa il 40% dei rifiuti domestici è packaging. A livello europeo, nel 2021 sono stati prodotti circa 84 milioni di tonnellate di rifiuti di imballaggio. Il Regolamento UE sull'imballaggio (PPWR, 2024) fissa obiettivi vincolanti: entro il 2030, tutti gli imballaggi devono essere riciclabili; entro il 2040, la quota di plastica riciclata negli imballaggi deve essere di almeno il 50%.
+
+---
+
+> **🔬 Collegamento STEM — Chimica/Scienze:**
+> Perché il sacchetto delle patatine non è trasparente? È fatto di alluminio (o di film metallizzato — una plastica con uno strato sottilissimo di alluminio depositato su di essa). L'alluminio riflette la luce e blocca i raggi UV che ossiderebbero i grassi delle patatine rendendole rancide. Blocca anche il passaggio di ossigeno — molto meglio di qualsiasi plastica trasparente. Il risultato è che le patatine durano 6-12 mesi invece di pochi giorni. Il costo: quasi impossibile da riciclare, perché separare la plastica dall'alluminio richiede processi industriali costosi.
 
 **Packaging Designer sostenibile**
 

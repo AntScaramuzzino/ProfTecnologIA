@@ -170,6 +170,17 @@ Competenze chiave che inizi a costruire qui: pensiero algoritmico · sequenza lo
 
 *"Prima di scrivere una riga di codice, devi avere in testa l'algoritmo completo. Il codice è solo la traduzione."*
 
+
+**Software Engineer**
+
+Costruisce il software che usiamo ogni giorno: app, siti, sistemi di pagamento, videogiochi. Il suo lavoro comincia molto prima del codice — prende un problema reale, lo scompone in sottoproblemi e progetta l'algoritmo che lo risolve, passo dopo passo, senza ambiguità. Solo allora lo traduce in un linguaggio di programmazione, lo testa e dà la caccia agli errori finché ogni istruzione fa esattamente ciò che deve.
+
+Dove lavora: software house, aziende bancarie e assicurative, startup tecnologiche, grandi aziende di e-commerce, società di consulenza informatica.
+
+Competenze chiave che inizi a costruire qui: algoritmi e strutture dati · debugging sistematico · analisi della complessità · linguaggi di programmazione
+
+*"Il computer esegue alla lettera anche i miei errori. Per questo scrivo istruzioni che non lasciano dubbi."*
+
 ---
 
 ## 🔬 SPERIMENTA

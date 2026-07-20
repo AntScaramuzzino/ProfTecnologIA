@@ -218,6 +218,17 @@ Competenze chiave che inizia a costruire da qui: OpenCV · deep learning · Pyth
 
 *"Insegno alle macchine a vedere. Ma vedere non basta — devono anche capire cosa guardano."*
 
+
+**Web Interaction Designer**
+
+Progetta il modo in cui usi siti e app: dove sta il pulsante, cosa succede quando lo tocchi, quanti passaggi servono per arrivare al risultato. Studia gli utenti mentre navigano, semplifica i percorsi complicati e oggi lavora sempre più spesso con sistemi di intelligenza artificiale — chatbot, suggerimenti automatici, ricerca intelligente — decidendo come presentarli in modo chiaro e onesto, senza trucchi che spingono a cliccare. Il suo obiettivo: tecnologia potente che sembra semplice.
+
+Dove lavora: agenzie digitali e studi UX, software house, piattaforme di e-commerce, banche e servizi online, startup tecnologiche.
+
+Competenze chiave che inizia a costruire da qui: UX/UI design · interaction design · frontend development · accessibilità · usability testing
+
+*"Se l'utente deve leggere il manuale, ho sbagliato io il progetto, non lui."*
+
 ---
 
 ---

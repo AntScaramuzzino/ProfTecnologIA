@@ -368,6 +368,17 @@ Competenze chiave che inizia a costruire da qui: disegno tecnico · modellazione
 
 *"Un oggetto ben progettato non ha bisogno di un manuale. Si capisce da solo."*
 
+
+**Modellista e Prototipista Industriale 4.0**
+
+Trasforma i disegni tecnici in prototipi reali ad alta precisione: pezzi meccanici, modelli per la moda, componenti per l'industria. Legge scale e quote come una seconda lingua — sa che una misura sbagliata di un millimetro può rendere inutilizzabile un intero stampo — e passa dal cartamodello tradizionale al CAD e alla stampa 3D senza perdere la precisione artigianale. È il ponte tra il progetto sulla carta e l'oggetto finito.
+
+Dove lavora: aziende manifatturiere, atelier e case di moda, officine di prototipazione, distretti industriali della meccanica, laboratori di ricerca e sviluppo.
+
+Competenze chiave che inizia a costruire da qui: CAD · modellistica industriale · prototipazione · progettazione tecnica · Industria 4.0
+
+*"Sul mio banco la scala 1:10 diventa 1:1. Lì scopri se il disegno diceva la verità."*
+
 ---
 
 ---

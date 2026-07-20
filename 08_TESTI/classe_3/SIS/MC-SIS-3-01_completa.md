@@ -197,6 +197,17 @@ Competenze chiave che inizia a costruire da qui: economia decentralizzata · blo
 
 *"Gli incentivi giusti fanno sì che le persone facciano spontaneamente quello che serve al sistema. Questo è il design."*
 
+
+**Decentralized Finance (DeFi) Analyst**
+
+Studia un sistema economico nuovo: la finanza costruita sulla blockchain, dove prestiti e scambi di denaro digitale avvengono tramite smart contract — programmi che eseguono le regole da soli, senza banche di mezzo. Analizza questi protocolli come un analista tradizionale studia un'azienda: quanto rende, chi lo controlla, quali rischi nasconde. Il suo report serve a investitori e aziende per distinguere i progetti solidi dalle promesse di guadagni facili, che in questo settore non mancano mai.
+
+Dove lavora: società di analisi finanziaria, fondi di investimento in cryptoasset, startup fintech, società di consulenza, autorità di vigilanza sui mercati.
+
+Competenze chiave che inizia a costruire da qui: smart contract · finanza decentralizzata · cryptoasset · analisi di mercato · blockchain
+
+*"In un mercato senza banche, l'analisi è l'unica protezione: leggo il codice prima dei guadagni promessi."*
+
 ---
 
 ---

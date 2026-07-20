@@ -195,6 +195,17 @@ Competenze chiave che inizia a costruire da qui: Python · TensorFlow / PyTorch 
 
 *"Addestrare un modello è facile. Capire perché sbaglia è la parte difficile — e quella che conta davvero."*
 
+
+**Ethical AI Officer**
+
+In un'azienda che sviluppa intelligenza artificiale, è la persona che si chiede: questo sistema è giusto, oltre che funzionante? Esamina gli algoritmi passo per passo, come si fa con il codice di un robot, per scovare i bias — i pregiudizi che il sistema impara dai dati — verifica il rispetto dell'AI Act europeo e pretende che ogni decisione automatica sia spiegabile. Quando un progetto rischia di danneggiare qualcuno, ha l'autorità di fermarlo e farlo riprogettare.
+
+Dove lavora: grandi aziende tecnologiche, autorità di controllo e garanti, società di consulenza, banche e assicurazioni, centri di ricerca sull'AI.
+
+Competenze chiave che inizia a costruire da qui: etica dell'AI · policy e normative AI · audit degli algoritmi · AI Act europeo · bias detection
+
+*"Non chiedo se l'algoritmo funziona: chiedo chi potrebbe farsi male se funziona così."*
+
 ---
 
 ---

@@ -227,6 +227,17 @@ Competenze chiave che inizia a costruire da qui: agronomia · chimica organica d
 
 *"Un centimetro di suolo sano ha impiegato mille anni a formarsi. Il mio lavoro è fermarne la perdita."*
 
+
+**Urban Farming Coordinator**
+
+Trasforma tetti, cortili e aree abbandonate in orti capaci di sfamare un quartiere. L'Urban Farming Coordinator mette insieme gruppi di cittadini, decide cosa seminare e come distribuire il raccolto, e aiuta le famiglie a scegliere cibo fresco e di stagione. È un lavoro che tiene insieme le mani nella terra e la testa nell'organizzazione: meno chilometri dal campo alla tavola significano verdure più sane, meno sprechi e persone che riscoprono da dove viene ciò che mangiano.
+
+Dove lavora: assessorati comunali al verde urbano, cooperative sociali, orti condivisi di quartiere, associazioni cittadine, aziende di rooftop farming.
+
+Competenze chiave che inizia a costruire da qui: agricoltura urbana · logistica · sostenibilità · community management · economia locale
+
+*"Un orto sul tetto cambia un quartiere: la gente torna a sapere davvero da dove arriva la cena."*
+
 ---
 
 ---

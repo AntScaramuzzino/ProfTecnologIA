@@ -221,6 +221,17 @@ Competenze chiave che inizia a costruire da qui: microbiologia · nutrizione per
 
 *"Siamo fatti di batteri tanto quanto di cellule. Chi capisce il microbioma capisce la salute."*
 
+
+**Synthetic Food Developer**
+
+Immagina una bistecca prodotta senza allevare animali, o proteine ricavate da microalghe cresciute in grandi vasche. È il mestiere del Synthetic Food Developer, che parte dalle stesse domande dell'agronomia — come nutrire dieci miliardi di persone consumando meno suolo e meno acqua — ma cerca le risposte in laboratorio. Fa moltiplicare cellule dentro i bioreattori, misura sapore e valori nutritivi e verifica che ogni nuovo alimento sia davvero sicuro da portare in tavola.
+
+Dove lavora: startup di food tech, laboratori di biotecnologia alimentare, industrie della carne coltivata, centri di ricerca sulle proteine alternative, aziende del settore nutraceutico.
+
+Competenze chiave che inizia a costruire da qui: biotecnologie alimentari · biochimica · food tech · bioreattori · sicurezza alimentare
+
+*"Il campo del futuro può stare in una vasca d'acciaio: qui coltivo cibo cellula per cellula."*
+
 ---
 
 ---

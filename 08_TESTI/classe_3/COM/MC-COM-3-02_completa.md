@@ -275,6 +275,17 @@ Competenze chiave che inizia a costruire da qui: scrittura creativa · storytell
 
 *"L'AI genera 50 varianti in un secondo. Io scelgo quella che fa venire i brividi."*
 
+
+**Videomaker**
+
+Gira e monta video per raccontare storie: spot per aziende, reportage di eventi, contenuti per i social, documentari. Cura ogni fase — inquadrature, luci, suono, montaggio, correzione dei colori — e sa che pubblicare è una responsabilità: usa musiche con licenze corrette, chiede i permessi alle persone riprese e cita le fonti dei materiali che non ha prodotto lui. Ogni video che firma deve essere bello da vedere e pulito dal punto di vista legale.
+
+Dove lavora: case di produzione video, agenzie di comunicazione, canali social e web tv di aziende, festival ed eventi culturali, studi freelance.
+
+Competenze chiave che inizia a costruire da qui: ripresa video · montaggio · storytelling audiovisivo · post-produzione · comunicazione digitale
+
+*"La scena perfetta non basta: diventa un video solo quando il montaggio le dà un ritmo."*
+
 ---
 
 ---

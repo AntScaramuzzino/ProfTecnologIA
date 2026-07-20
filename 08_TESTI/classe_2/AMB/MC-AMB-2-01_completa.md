@@ -315,6 +315,17 @@ Competenze chiave che inizia a costruire da qui: progettazione architettonica ·
 
 *"Lo spazio non è neutro. Ogni scelta di proporzioni, luce e materiale cambia come ci sentiamo."*
 
+
+**Interior Designer**
+
+Dopo che i muri portanti, i pilastri e i solai hanno dato forma a un edificio, entra in gioco l'Interior Designer, che decide come vivere gli spazi al suo interno. Progetta la disposizione delle stanze, sceglie mobili, colori e luci e studia come far muovere le persone comodamente in un ambiente. Usa programmi di disegno 3D per mostrare in anteprima come apparirà una casa o un negozio, trasformando volumi di cemento e mattoni in luoghi accoglienti e su misura per chi li abiterà.
+
+Dove lavora: studi di architettura e design, showroom di arredamento, agenzie immobiliari di fascia alta, aziende di mobili, cantieri di ristrutturazione.
+
+Competenze chiave che inizia a costruire da qui: progettazione d'interni · arredamento · illuminotecnica · CAD 3D · ergonomia
+
+*"I muri li costruisce l'ingegnere: io decido come ci si sentirà a vivere dentro quelle pareti."*
+
 ---
 
 ---

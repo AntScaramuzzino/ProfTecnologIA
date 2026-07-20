@@ -266,6 +266,17 @@ Competenze chiave che inizia a costruire da qui: politiche energetiche · projec
 
 *"La transizione energetica non è un problema tecnico. È un problema di governance, economia e consenso sociale."*
 
+
+**Predictive Maintenance Analyst**
+
+Ogni macchina — dalla carrucola di un cantiere al braccio robotico di una fabbrica — ha parti che ruotano, sfregano e si consumano. Questa figura installa sensori che misurano vibrazioni, temperatura e rumore, poi analizza i dati con il machine learning per capire quando un ingranaggio o un cuscinetto sta per cedere. Così la riparazione si fa prima del guasto, non dopo: l'impianto non si ferma, si risparmia denaro e le macchine durano molti anni di più.
+
+Dove lavora: stabilimenti manifatturieri, aziende di impiantistica industriale, società di servizi di manutenzione, gestori di reti ferroviarie ed energetiche, software house industriali.
+
+Competenze chiave che inizia a costruire da qui: sensoristica IoT · big data · machine learning · manutenzione industriale · analisi predittiva
+
+*"Un cuscinetto che sta per rompersi cambia vibrazione giorni prima. Io lo sento dai dati."*
+
 ---
 
 ---

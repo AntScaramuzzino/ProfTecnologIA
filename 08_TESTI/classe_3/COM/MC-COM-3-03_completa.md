@@ -258,6 +258,17 @@ Competenze chiave che inizia a costruire da qui: reti IoT · telecomunicazioni u
 
 *"Cinquecento sensori per km². La città mi parla in dati — io la ascolto e rispondo in decisioni."*
 
+
+**Space Traffic Controller**
+
+Fa per lo spazio quello che i controllori di volo fanno per gli aerei: sorveglia migliaia di satelliti e detriti in orbita attorno alla Terra, ne calcola le traiettorie e, quando due oggetti rischiano di scontrarsi, ordina la manovra che li allontana. Con decine di migliaia di nuovi satelliti in arrivo, l'orbita è ormai un sistema di trasporto affollato come un'autostrada: servono regole, precedenze e qualcuno che diriga il traffico.
+
+Dove lavora: agenzie spaziali e centri di controllo missione, aziende di costellazioni satellitari, operatori di telecomunicazioni satellitari, centri di ricerca aerospaziale.
+
+Competenze chiave che inizia a costruire da qui: astrodinamica · telecomunicazioni spaziali · software di monitoraggio orbitale · gestione del rischio · matematica
+
+*"Due satelliti a 28.000 km/h non possono sfiorarsi: io li tengo a distanza di sicurezza, sempre."*
+
 ---
 
 ---

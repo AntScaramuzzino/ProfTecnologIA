@@ -216,6 +216,17 @@ Competenze chiave che inizia a costruire da qui: marketing digitale · AI genera
 
 *"L'AI genera contenuti infiniti. Il mio lavoro è decidere quale vale la pena pubblicare."*
 
+
+**Digital Strategist**
+
+Decide come un'azienda o un marchio deve comportarsi online: quali social usare, cosa pubblicare e come farsi trovare su internet. Il Digital Strategist studia i dati delle persone — cosa cercano, cosa cliccano, cosa condividono — per costruire messaggi efficaci. Proprio perché lavora ogni giorno con i dati, deve conoscere bene le regole sulla privacy e trattare le informazioni degli utenti con rispetto. Il suo compito è dare a un marchio un'identità digitale chiara, riconoscibile e onesta.
+
+Dove lavora: agenzie di marketing digitale, reparti comunicazione di aziende, testate online, startup, come consulente indipendente.
+
+Competenze chiave che inizia a costruire da qui: digital marketing · social media strategy · analisi dati · branding · SEO/SEM
+
+*"Dietro ogni clic c'è una persona: uso i suoi dati per parlarle meglio, non per spiarla."*
+
 ---
 
 ---

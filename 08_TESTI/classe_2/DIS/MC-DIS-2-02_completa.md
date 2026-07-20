@@ -202,6 +202,17 @@ Competenze chiave che inizia a costruire da qui: design thinking · prototipazio
 
 *"Ogni oggetto che progettiamo entra nella vita di qualcuno. Questa responsabilità guida ogni mia scelta."*
 
+
+**Green Product Designer**
+
+Progetta oggetti belli, comodi e leggeri per il pianeta. Parte da schizzi assonometrici per esplorare le forme, poi valuta ogni scelta lungo l'intero ciclo di vita del prodotto: da dove viene il materiale, quanta energia serve per produrlo, cosa succederà quando l'oggetto non servirà più. Il disegno tridimensionale gli permette di mostrare ai clienti come sarà il prodotto prima ancora di costruirne il prototipo.
+
+Dove lavora: studi di design sostenibile, aziende di arredamento e packaging, startup dell'economia circolare, reparti innovazione di aziende manifatturiere, centri di ricerca sui materiali.
+
+Competenze chiave che inizia a costruire da qui: design sostenibile · LCA · materiali eco · ergonomia · innovazione di prodotto
+
+*"Prima di scegliere un materiale mi chiedo sempre: che fine farà tra dieci anni?"*
+
 ---
 
 ---

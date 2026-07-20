@@ -204,6 +204,17 @@ Competenze chiave che inizia a costruire da qui: auditing energetico · termotec
 
 *"L'energia più economica è quella che non consumi. Ma qualcuno deve dimostrarlo con i dati."*
 
+
+**Energy Storage Systems Manager**
+
+Il sole non splende di notte e il vento non soffia a comando: qualcuno deve conservare l'energia rinnovabile prodotta in eccesso per usarla quando manca. Questa figura gestisce grandi impianti di accumulo — batterie agli ioni di litio, idrogeno, supercondensatori — decidendo quando caricarli e quando restituire energia alla rete. Controlla lo stato delle celle, previene surriscaldamenti e guasti, e fa in modo che ogni kilowattora prodotto da pannelli e turbine non vada sprecato.
+
+Dove lavora: impianti di accumulo di grande scala, utility elettriche, produttori di batterie, parchi eolici e fotovoltaici, società di ingegneria energetica.
+
+Competenze chiave che inizia a costruire da qui: ingegneria energetica · elettrochimica · sistemi di accumulo · gestione impianti · safety industriale
+
+*"La mia centrale non produce un solo watt: conserva quelli che altrimenti andrebbero persi."*
+
 ---
 
 ---

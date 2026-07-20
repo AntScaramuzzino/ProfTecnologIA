@@ -207,6 +207,17 @@ Competenze chiave che inizia a costruire da qui: pensiero computazionale · stat
 
 *"Se non puoi spiegare perché l'algoritmo ha deciso così, non puoi difenderti dalla sua decisione sbagliata."*
 
+
+**Interaction Designer**
+
+Progetta il dialogo tra persone e sistemi digitali: app, siti, biglietterie automatiche, cruscotti delle auto. Scompone ogni azione dell'utente in passi elementari e la disegna come un diagramma di flusso — se l'utente tocca questo pulsante, allora accade questo — proprio con la logica degli algoritmi. Unisce grafica, psicologia cognitiva e informatica per costruire interfacce che si capiscono al primo sguardo.
+
+Dove lavora: studi di design digitale, software house, aziende di elettronica di consumo, banche e servizi online, agenzie di comunicazione.
+
+Competenze chiave che inizia a costruire da qui: UX design · psicologia cognitiva · prototipazione · graphic design · sistemi informatici
+
+*"Se l'utente sbaglia, non è colpa sua: c'è un passaggio del mio flusso da riprogettare."*
+
 ---
 
 ---

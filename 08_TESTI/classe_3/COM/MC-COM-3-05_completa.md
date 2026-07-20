@@ -220,6 +220,17 @@ Competenze chiave che inizia a costruire da qui: pilotaggio remoto · logistica 
 
 *"Un pacco in 30 minuti senza un furgone in città. Il drone non è futuro — è già presente."*
 
+
+**Drone Security Coordinator**
+
+Quando i droni volano sopra stadi, porti, centrali elettriche o data center, qualcuno deve garantire che nulla vada storto: lui. Valuta i rischi di ogni missione, verifica che piloti e velivoli rispettino le regole ENAC ed EASA e coordina i voli con le autorità del territorio. Con il telerilevamento — l'osservazione a distanza tramite sensori e telecamere — sorveglia le infrastrutture critiche, comprese quelle che tengono in piedi internet, e blocca le operazioni pericolose prima che diventino incidenti.
+
+Dove lavora: operatori di infrastrutture critiche, società di gestione aeroportuale, aziende di servizi con droni, forze dell'ordine e protezione civile, grandi eventi e stadi.
+
+Competenze chiave che inizia a costruire da qui: regolamentazione ENAC/EASA · sicurezza aerea · gestione del rischio · coordinamento operazioni · telerilevamento
+
+*"Un volo autorizzato è un volo che ho già immaginato in ogni dettaglio, compreso quello che può fallire."*
+
 ---
 
 ---
