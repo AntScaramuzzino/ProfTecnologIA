@@ -1,0 +1,53 @@
+{
+  "id": "MC-INF-2-02",
+  "titolo": "Audit HTTPS di tre siti web",
+  "area": "INF",
+  "anno": 2,
+  "livelloDigComp": "I",
+  "sdg": [16, 4],
+  "compito_realta": "Analizza la sicurezza di tre siti web che usi regolarmente: verifica la presenza di HTTPS, leggi le informazioni del certificato digitale, e scrivi una valutazione critica di quale sia il piu affidabile e perche con almeno 3 criteri di giudizio.",
+  "scenario": "Ogni giorno inserisci dati in siti diversi: account scolastici, piattaforme video, negozi, servizi pubblici. Non basta vedere il lucchetto: devi capire che cosa garantisce davvero e quali segnali controllare prima di fidarti.",
+  "consegna": "Scegli tre siti web, controlla HTTPS e certificato digitale, compila una tabella di audit e scrivi una valutazione finale sul sito piu affidabile.",
+  "materiali": [
+    "Browser aggiornato",
+    "Tre siti web scelti con il docente",
+    "Scheda di audit con criteri di sicurezza",
+    "Connessione internet",
+    "Facoltativo: screenshot del lucchetto e del certificato"
+  ],
+  "passaggi": [
+    "Scegli tre siti che conosci, evitando pagine personali o account con dati sensibili durante la dimostrazione.",
+    "Verifica se l'indirizzo inizia con HTTPS e se il browser segnala problemi.",
+    "Apri le informazioni del certificato: controlla intestatario, ente emittente e validita temporale.",
+    "Annota eventuali segnali di rischio: dominio strano, certificato scaduto, contenuti misti, richieste sospette.",
+    "Valuta ogni sito con almeno tre criteri: cifratura, identita del sito, coerenza del dominio.",
+    "Scrivi una conclusione: quale sito e piu affidabile e quale richiede piu attenzione?"
+  ],
+  "criteri_valutazione": [
+    {
+      "criterio": "Osservazione tecnica",
+      "base": "Riconosce HTTPS e lucchetto.",
+      "intermedio": "Legge alcune informazioni del certificato.",
+      "avanzato": "Distingue cifratura, identita del dominio e fiducia nel servizio."
+    },
+    {
+      "criterio": "Valutazione critica",
+      "base": "Indica se un sito sembra sicuro.",
+      "intermedio": "Motiva con criteri verificabili.",
+      "avanzato": "Riconosce limiti: HTTPS non garantisce che un sito sia onesto."
+    },
+    {
+      "criterio": "Comunicazione",
+      "base": "Compila la tabella.",
+      "intermedio": "Scrive una conclusione chiara.",
+      "avanzato": "Formula consigli pratici per un compagno."
+    }
+  ],
+  "differenziazione": {
+    "base": "Analizza un solo sito guidato dal docente.",
+    "intermedio": "Analizza tre siti e confronta i risultati.",
+    "avanzato": "Aggiungi un caso di phishing simulato e spiega quali segnali lo rendono sospetto."
+  },
+  "estensione_avanzata": "Crea una mini checklist 'Prima di inserire dati' in 5 punti, da appendere vicino ai computer della classe.",
+  "prodotto_finale": "Tabella di audit + valutazione finale + checklist di sicurezza."
+}

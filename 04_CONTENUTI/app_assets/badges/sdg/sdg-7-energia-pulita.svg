@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Badge SDG 7 - Energia pulita e accessibile</title>
+  <desc id="desc">Badge app per i progressi: SDG 7, Energia pulita e accessibile.</desc>
+  <defs>
+    <linearGradient id="sdg7g" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.38" stop-color="#FCC30B"/>
+      <stop offset="1" stop-color="#9a6b00"/>
+    </linearGradient>
+    <filter id="sdg7s" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#9a6b00" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#f8fafc"/>
+  <rect x="34" y="34" width="444" height="444" rx="82" fill="url(#sdg7g)" filter="url(#sdg7s)"/>
+  <path d="M77 391h358" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.28"/>
+  <path d="M281 126 178 277h78l-25 109 103-151h-78l25-109Z" fill="#ffffff" opacity="0.96"/><circle cx="352" cy="318" r="38" fill="none" stroke="#ffffff" stroke-width="18" opacity="0.85"/><path d="M352 265v-32m0 170v-32m53-53h32m-170 0h32" stroke="#ffffff" stroke-width="15" stroke-linecap="round" opacity="0.82"/>
+  <rect x="67" y="63" width="118" height="118" rx="32" fill="#ffffff"/>
+  <text x="126" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="900" fill="#FCC30B">7</text>
+  <path d="M365 77h48m-24-24v48" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.86"/>
+  <text x="256" y="438" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="900" letter-spacing="1.5" fill="#ffffff">ENERGIA</text>
+</svg>

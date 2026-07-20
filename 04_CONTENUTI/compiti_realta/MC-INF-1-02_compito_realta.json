@@ -1,0 +1,53 @@
+{
+  "id": "MC-INF-1-02",
+  "titolo": "Torneo scolastico in ordine alfabetico",
+  "area": "INF",
+  "anno": 1,
+  "livelloDigComp": "F",
+  "sdg": [4],
+  "compito_realta": "Progetta e scrivi in pseudocodice un algoritmo per ordinare alfabeticamente i 64 partecipanti a un torneo scolastico, conta il numero di confronti nel caso peggiore e scrivi una riflessione su come cambia l'efficienza con 64.000 partecipanti.",
+  "scenario": "La scuola organizza un torneo e deve pubblicare l'elenco dei partecipanti in ordine alfabetico. La lista pero cambia spesso: arrivano nuovi nomi, alcuni vengono corretti, altri si ritirano. Serve un metodo chiaro che possa seguire anche chi non programma.",
+  "consegna": "Scrivi un algoritmo in pseudocodice per ordinare 64 nomi, rappresentalo con un diagramma di flusso essenziale e spiega cosa succede se i partecipanti diventano 64.000.",
+  "materiali": [
+    "Lista campione di 12 nomi fornita dal docente",
+    "Carta a quadretti o editor digitale",
+    "Post-it o cartoncini con nomi fittizi",
+    "Matita, righello e gomma",
+    "Facoltativo: foglio di calcolo per simulare l'ordinamento"
+  ],
+  "passaggi": [
+    "Prova a ordinare manualmente 12 nomi e annota le regole che usi senza pensarci.",
+    "Trasforma le regole in istruzioni precise: confronta due nomi, decidi quale viene prima, spostalo nella posizione corretta.",
+    "Scrivi lo pseudocodice con istruzioni brevi e ordinate.",
+    "Disegna un diagramma di flusso con inizio, confronto, decisione, ripetizione e fine.",
+    "Stima quanti confronti possono servire nel caso peggiore per 64 partecipanti usando una strategia semplice.",
+    "Scrivi una riflessione: perche un algoritmo accettabile per 64 nomi puo diventare lento con 64.000?"
+  ],
+  "criteri_valutazione": [
+    {
+      "criterio": "Precisione dell'algoritmo",
+      "base": "Scrive una sequenza di passi comprensibile.",
+      "intermedio": "Usa confronto, ripetizione e condizione in modo coerente.",
+      "avanzato": "Riconosce limiti di efficienza e propone un miglioramento."
+    },
+    {
+      "criterio": "Rappresentazione",
+      "base": "Disegna un diagramma leggibile.",
+      "intermedio": "Usa simboli corretti e flusso logico.",
+      "avanzato": "Collega diagramma, pseudocodice e test con la lista campione."
+    },
+    {
+      "criterio": "Riflessione sull'efficienza",
+      "base": "Capisce che piu nomi richiedono piu lavoro.",
+      "intermedio": "Spiega il rapporto tra dimensione della lista e confronti.",
+      "avanzato": "Distingue tra algoritmo semplice e algoritmo piu efficiente."
+    }
+  ],
+  "differenziazione": {
+    "base": "Lavora con 12 nomi e completa uno pseudocodice parzialmente guidato.",
+    "intermedio": "Generalizza il metodo a 64 nomi e produce diagramma completo.",
+    "avanzato": "Confronta due strategie di ordinamento e discute quale scala meglio."
+  },
+  "estensione_avanzata": "Cerca il significato di ordinamento per selezione e ordinamento per inserimento. Scegline uno, spiegalo con un esempio e indica perche puo essere utile o limitato.",
+  "prodotto_finale": "Pseudocodice + diagramma di flusso + riflessione sull'efficienza."
+}

@@ -1,0 +1,53 @@
+{
+  "id": "MC-INF-3-01",
+  "titolo": "Sistema IoT per i consumi della scuola",
+  "area": "INF",
+  "anno": 3,
+  "livelloDigComp": "A",
+  "sdg": [9, 11, 13],
+  "compito_realta": "Progetta un sistema IoT per monitorare i consumi energetici della tua scuola: identifica i sensori necessari, descrivi l'architettura dal dispositivo al cloud, calcola il traffico dati generato in un giorno e proponi come visualizzare i dati per supportare decisioni di risparmio energetico.",
+  "scenario": "La scuola vuole ridurre sprechi di energia, ma non sa dove intervenire: alcune aule restano illuminate, altre sono troppo calde, alcuni spazi sono usati poco. Ti viene chiesto di progettare un sistema IoT che raccolga dati utili senza invadere la privacy.",
+  "consegna": "Progetta l'architettura di un sistema IoT scolastico: sensori, raccolta dati, trasmissione, dashboard e stima del traffico giornaliero.",
+  "materiali": [
+    "Pianta semplificata della scuola o di un piano",
+    "Scheda sensori: temperatura, luminosita, presenza, consumo elettrico",
+    "Calcolatrice o foglio di calcolo",
+    "Carta o software per diagrammi",
+    "Facoltativo: micro:bit, Arduino o simulatore"
+  ],
+  "passaggi": [
+    "Scegli tre ambienti da monitorare, ad esempio aula, corridoio e laboratorio.",
+    "Associa a ogni ambiente i sensori necessari e spiega perche servono.",
+    "Disegna l'architettura: sensore, microcontrollore, rete, cloud o server locale, dashboard.",
+    "Definisci ogni quanto il sistema invia dati, ad esempio ogni 5 minuti.",
+    "Stima il traffico giornaliero: numero sensori x invii al giorno x byte per misurazione.",
+    "Progetta una dashboard con almeno tre indicatori utili per decidere azioni di risparmio."
+  ],
+  "criteri_valutazione": [
+    {
+      "criterio": "Architettura IoT",
+      "base": "Individua sensori e ambienti.",
+      "intermedio": "Collega sensori, rete e visualizzazione dei dati.",
+      "avanzato": "Considera affidabilita, privacy, manutenzione e consumo del sistema."
+    },
+    {
+      "criterio": "Calcolo del traffico dati",
+      "base": "Stima il numero di misurazioni.",
+      "intermedio": "Calcola traffico giornaliero con unita coerenti.",
+      "avanzato": "Confronta frequenze di invio diverse e sceglie un compromesso."
+    },
+    {
+      "criterio": "Decisioni per il risparmio",
+      "base": "Propone almeno una azione.",
+      "intermedio": "Collega i dati a tre decisioni concrete.",
+      "avanzato": "Definisce soglie, alert e priorita di intervento."
+    }
+  ],
+  "differenziazione": {
+    "base": "Progetta il sistema per una sola aula con due sensori.",
+    "intermedio": "Progetta tre ambienti e una dashboard essenziale.",
+    "avanzato": "Aggiungi calcolo del traffico, privacy by design e confronto cloud/server locale."
+  },
+  "estensione_avanzata": "Scrivi una proposta per il consiglio di istituto: costo stimato, benefici attesi, rischi e primo esperimento pilota di 30 giorni.",
+  "prodotto_finale": "Schema architetturale + calcolo traffico dati + bozza dashboard."
+}

@@ -1,0 +1,263 @@
+{
+  "mc_id": "MC-MAT-1-02",
+  "titolo_mc": "Ciclo di vita dei materiali e cicli tecnologici",
+  "lingua_voce": "it-IT",
+  "narratore": {
+    "ruolo": "Supply Chain Sustainability Manager",
+    "orizzonte": "2030",
+    "look_fisso": "uomo ~38 anni, capelli castano scuro corti curati, barba corta scura, occhi castani, giacca tecnica azzurra con zip su camicia bianca, sorriso calmo a bocca chiusa",
+    "reference_image": "public/assets/cartoon/MC-MAT-1-02/narratore_ref.png"
+  },
+  "stile_serie": "semi-photorealistic 3D animated, cinematic warm lighting, slightly stylized realistic characters and environments, educational documentary tone (target 12-14 anni)",
+  "oggetto_reale": "una felpa di cotone grigia",
+  "clil_word": {
+    "italiano": "ciclo di vita",
+    "inglese": "life cycle",
+    "pronuncia_ipa": "/laɪf ˈsaɪkəl/",
+    "scena": 6
+  },
+  "cta_finale": "Traccia il passaporto tecnologico di un oggetto di casa",
+  "durata_totale_sec": 56,
+  "innesca": {
+    "idea_iniziale": "Quando compri una felpa, dove pensi che sia 'nata'? In negozio?",
+    "sulle_tappe": "Quante mani e quanti Paesi tocca un oggetto prima di arrivare a te? E dove finisce quando lo butti?",
+    "ragionare_come_professione": "Se fossi un Supply Chain Manager e dovessi ridurre l'impatto di questa felpa, su quale fase interverresti per prima?",
+    "domanda_di_lancio": "Durante il video osserva quante fasi attraversa la felpa — e in quale di queste puoi intervenire tu."
+  },
+  "foundation_scene": [
+    1,
+    4,
+    6,
+    7
+  ],
+  "scene": [
+    {
+      "n": 1,
+      "titolo": "Apertura: il narratore e la felpa",
+      "concetto": "Un oggetto comune nasconde un viaggio globale",
+      "voce_narrata_it": "Questa felpa ha viaggiato più di te. Vuoi sapere quanto?",
+      "durata_sec": 8,
+      "regia": {
+        "inquadratura": "primo piano sul narratore che mostra la felpa",
+        "movimento_camera": "dolly in lento",
+        "vfx_sfx": "rotte luminose che si accendono una a una sulla mappa; chime soft, brusio di studio",
+        "transizione": "dissolvenza",
+        "prompt_veo_en": "Semi-photorealistic 3D animated style, cinematic warm lighting, richly detailed and slightly stylized characters and environments, friendly educational documentary tone suitable for students aged 12-14, 16:9. A friendly adult man aged about 38, short dark brown neatly styled hair, short trimmed dark beard, warm brown eyes, light blue technical zip jacket over a white shirt, calm closed-mouth smile. He holds a tablet showing a world map and a grey cotton hoodie, standing in a bright studio; behind him a large clean world map where glowing shipping routes light up one by one across continents. He gestures warmly toward the map. The narrator does NOT speak, only gestures, no dialogue, no lip movement. Camera slowly dollies in. Soft ambient studio music and a gentle chime as the routes illuminate. Absolutely NO on-screen text, no letters, no numbers, no words, no writing, no labels anywhere in the frame; all screens blank of text.",
+        "coerenza": "usa narratore_ref.png come reference/ingrediente"
+      },
+      "verifica": {
+        "coerenza_personaggio": "definisce la reference del narratore per tutta la serie",
+        "fluidita_transizione": "dissolvenza verso il campo di cotone",
+        "sync_voce_durata": "10 parole / 8s → ok",
+        "no_testo_in_scena": "divieto presente",
+        "carble_cdd": {
+          "D": "ok",
+          "C": "ok",
+          "A": "ok",
+          "R": "ok",
+          "B": "ok",
+          "L": "ok",
+          "E": "ok"
+        },
+        "verdetto": "APPROVED"
+      }
+    },
+    {
+      "n": 2,
+      "titolo": "Estrazione: il campo di cotone",
+      "concetto": "La materia prima nasce lontano, in natura",
+      "voce_narrata_it": "Tutto comincia in un campo di cotone, dall'altra parte del mondo.",
+      "durata_sec": 8,
+      "regia": {
+        "inquadratura": "campo lungo del campo, poi dettaglio sul batuffolo di cotone",
+        "movimento_camera": "pan orizzontale sul campo",
+        "vfx_sfx": "vento tra le piante, luce calda, ambiente naturale soft",
+        "transizione": "stacco netto",
+        "prompt_veo_en": "Semi-photorealistic 3D animated style, cinematic warm lighting, richly detailed and slightly stylized characters and environments, friendly educational documentary tone suitable for students aged 12-14, 16:9. A sunny cotton field with rows of plants bearing white cotton bolls; a wide establishing shot of the vast field under warm sunlight, then a close detail of hands gently picking a white cotton boll. Rich cinematic colors, soft realistic shading. Camera pans horizontally across the field. Gentle wind through the plants, warm natural outdoor ambience, no speech. Absolutely no on-screen text, no letters, no writing anywhere in the frame.",
+        "coerenza": "nessun narratore in scena; stile serie invariato"
+      },
+      "verifica": {
+        "coerenza_personaggio": "n/a (scena senza narratore)",
+        "fluidita_transizione": "stacco verso la fabbrica",
+        "sync_voce_durata": "11 parole / 8s → ok",
+        "no_testo_in_scena": "divieto presente",
+        "carble_cdd": {
+          "D": "ok",
+          "C": "ok",
+          "A": "ok",
+          "R": "attenzione: evitare stereotipi geografici nella resa del campo",
+          "B": "ok",
+          "L": "ok",
+          "E": "ok"
+        },
+        "verdetto": "APPROVED"
+      }
+    },
+    {
+      "n": 3,
+      "titolo": "Lavorazione e produzione: le fabbriche",
+      "concetto": "Il cotone viene filato, tessuto, tinto e cucito in più Paesi",
+      "voce_narrata_it": "Filata, tessuta, tinta e cucita: quattro Paesi diversi per un solo capo.",
+      "durata_sec": 8,
+      "regia": {
+        "inquadratura": "dettaglio sul filo, poi campo medio sulla catena di produzione",
+        "movimento_camera": "dolly out per rivelare la scala della fabbrica",
+        "vfx_sfx": "rumore ritmico di macchine, scintille di luce sui macchinari",
+        "transizione": "dissolvenza",
+        "prompt_veo_en": "Semi-photorealistic 3D animated style, cinematic warm lighting, richly detailed and slightly stylized characters and environments, friendly educational documentary tone suitable for students aged 12-14, 16:9. Inside a bright textile factory: a close detail of cotton thread being spun on a machine, then the camera dollies out to reveal rows of industrial spinning, dyeing and sewing machines producing grey hoodies. Rich cinematic colors, soft realistic shading. Rhythmic machine sounds and small sparkles of light on the machinery, no speech. Absolutely no on-screen text, no letters, no writing anywhere in the frame.",
+        "coerenza": "stile serie invariato; palette coerente con scena 2"
+      },
+      "verifica": {
+        "coerenza_personaggio": "n/a",
+        "fluidita_transizione": "dissolvenza verso la logistica",
+        "sync_voce_durata": "12 parole / 8s → ok",
+        "no_testo_in_scena": "divieto presente",
+        "carble_cdd": {
+          "D": "ok",
+          "C": "ok",
+          "A": "ok",
+          "R": "ok",
+          "B": "ok",
+          "L": "ok",
+          "E": "ok"
+        },
+        "verdetto": "APPROVED"
+      }
+    },
+    {
+      "n": 4,
+      "titolo": "Logistica: il viaggio",
+      "concetto": "Il trasporto globale copre distanze enormi",
+      "voce_narrata_it": "Poi il viaggio: quarantamila chilometri via nave prima di arrivare da te.",
+      "durata_sec": 8,
+      "regia": {
+        "inquadratura": "campo lungo aereo della nave portacontainer, poi camion in autostrada",
+        "movimento_camera": "tilt dall'oceano su verso la mappa",
+        "vfx_sfx": "onde, sirena di nave lontana, contatore di chilometri che sale",
+        "transizione": "stacco netto",
+        "prompt_veo_en": "Semi-photorealistic 3D animated style, cinematic warm lighting, richly detailed and slightly stylized characters and environments, friendly educational documentary tone suitable for students aged 12-14, 16:9. A huge container ship crossing the ocean seen from a high aerial wide shot, then a cargo truck on a highway; a glowing dashed line traces a long route across a stylized world map. Rich cinematic colors, soft realistic shading. Camera tilts up from the ocean to the world map. Ocean waves, a distant ship horn, no speech. Absolutely no on-screen text, no letters, no numbers, no writing anywhere in the frame.",
+        "coerenza": "riprende la mappa-mondo della scena 1 per continuità visiva"
+      },
+      "verifica": {
+        "coerenza_personaggio": "n/a",
+        "fluidita_transizione": "stacco verso la cameretta",
+        "sync_voce_durata": "12 parole / 8s → ok",
+        "no_testo_in_scena": "divieto rafforzato (anche numeri: Veo tende a stampare il contatore km)",
+        "carble_cdd": {
+          "D": "ok",
+          "C": "dato 40.000 km presente nella MC (hook_audio) → ok",
+          "A": "ok",
+          "R": "ok",
+          "B": "ok",
+          "L": "ok",
+          "E": "ok"
+        },
+        "verdetto": "APPROVED"
+      }
+    },
+    {
+      "n": 5,
+      "titolo": "Uso: a casa tua",
+      "concetto": "L'uso è l'unica fase che di solito vediamo",
+      "voce_narrata_it": "Questa è l'unica parte della storia che di solito vediamo.",
+      "durata_sec": 8,
+      "regia": {
+        "inquadratura": "primo piano sulla felpa indossata in cameretta",
+        "movimento_camera": "fisso con leggero zoom in",
+        "vfx_sfx": "luce domestica calda, musica leggera, ambiente tranquillo",
+        "transizione": "dissolvenza",
+        "prompt_veo_en": "Semi-photorealistic 3D animated style, cinematic warm lighting, richly detailed and slightly stylized characters and environments, friendly educational documentary tone suitable for students aged 12-14, 16:9. A teenager wearing the grey cotton hoodie in a cozy bedroom, everyday domestic atmosphere, close-up on the worn hoodie. Rich cinematic colors, soft realistic shading. Camera mostly still with a slow gentle zoom in. Soft warm light, calm background music, quiet room ambience, no speech. Absolutely no on-screen text, no letters, no writing anywhere in the frame.",
+        "coerenza": "la felpa grigia è la stessa delle scene 1 e 3"
+      },
+      "verifica": {
+        "coerenza_personaggio": "n/a",
+        "fluidita_transizione": "dissolvenza verso il bivio del fine vita",
+        "sync_voce_durata": "11 parole / 8s → ok",
+        "no_testo_in_scena": "divieto presente",
+        "carble_cdd": {
+          "D": "ok",
+          "C": "ok",
+          "A": "ok",
+          "R": "ok",
+          "B": "ok",
+          "L": "ok",
+          "E": "ok"
+        },
+        "verdetto": "APPROVED"
+      }
+    },
+    {
+      "n": 6,
+      "titolo": "Fine vita: il bivio",
+      "concetto": "Il fine vita è un bivio: discarica o riciclo che riavvia il ciclo",
+      "voce_narrata_it": "E quando la butti, il suo ciclo di vita — life cycle — ricomincia o finisce in discarica?",
+      "durata_sec": 8,
+      "regia": {
+        "inquadratura": "dettaglio sul bivio, poi campo medio sui due esiti",
+        "movimento_camera": "dolly in verso il cassonetto del riciclo",
+        "vfx_sfx": "due atmosfere contrapposte (grigia vs verde), tintinnio soft",
+        "transizione": "stacco netto",
+        "prompt_veo_en": "Semi-photorealistic 3D animated style, cinematic warm lighting, richly detailed and slightly stylized characters and environments, friendly educational documentary tone suitable for students aged 12-14, 16:9. The grey cotton hoodie at a crossroads: on the left a grey landfill of discarded clothes under a dull sky, on the right a green textile recycling bin from which a glowing loop arrow restarts a cycle. Rich cinematic colors, soft realistic shading, two contrasting moods grey versus green. Camera dollies in toward the green recycling bin. Soft chime, no speech. Absolutely no on-screen text, no letters, no writing anywhere in the frame.",
+        "coerenza": "stessa felpa grigia; freccia-ciclo coerente con l'idea di 'ciclo di vita'"
+      },
+      "verifica": {
+        "coerenza_personaggio": "n/a",
+        "fluidita_transizione": "stacco verso il ritorno del narratore",
+        "sync_voce_durata": "15 parole / 8s → limite: parlare a ritmo asciutto, o accorciare togliendo l'inciso EN se troppo lungo",
+        "no_testo_in_scena": "divieto presente (la freccia-ciclo NON deve contenere parole)",
+        "carble_cdd": {
+          "D": "ok",
+          "C": "ok",
+          "A": "ok",
+          "R": "ok",
+          "B": "ok",
+          "L": "CLIL life cycle inserita una sola volta → ok",
+          "E": "ok"
+        },
+        "verdetto": "FLAGGED",
+        "azioni": [
+          {
+            "scena": 6,
+            "criterio": "sync_voce_durata",
+            "azione": "Agente 1: se in fase di voice-over la battuta sfora gli 8s, rimuovere l'inciso 'life cycle' e spostare la CLIL come testo a schermo NON nel video ma nella scheda INNESCA",
+            "agente": "Agente 1"
+          }
+        ]
+      }
+    },
+    {
+      "n": 7,
+      "titolo": "Call to action: il narratore torna",
+      "concetto": "Consegna: traccia il passaporto tecnologico di un oggetto",
+      "voce_narrata_it": "Adesso tocca a te: traccia il passaporto tecnologico di un oggetto che hai in casa.",
+      "durata_sec": 8,
+      "regia": {
+        "inquadratura": "primo piano sul narratore con il tablet",
+        "movimento_camera": "dolly out lento",
+        "vfx_sfx": "sul tablet un'icona-passaporto luminosa (senza parole); la mappa alle spalle si spegne dolcemente; musica che si risolve",
+        "transizione": "fine",
+        "prompt_veo_en": "Semi-photorealistic 3D animated style, cinematic warm lighting, richly detailed and slightly stylized characters and environments, friendly educational documentary tone suitable for students aged 12-14, 16:9. The same man — A friendly adult man aged about 38, short dark brown neatly styled hair, short trimmed dark beard, warm brown eyes, light blue technical zip jacket over a white shirt, calm closed-mouth smile — returns in close-up, holding a tablet whose screen shows a simple glowing circular check-mark icon, a purely graphic wordless symbol. Behind him the world map slowly dims. He gestures warmly. The narrator does NOT speak, only gestures, no dialogue, no lip movement. Camera slowly dollies out. Warm resolving music. Absolutely NO on-screen text, no letters, no numbers, no words, no writing, no labels anywhere in the frame; all screens blank of text.",
+        "coerenza": "chiusura ad anello: RIUSA la clip video del narratore della Scena 1 (volto identico garantito) + voce IT propria della Scena 7. Soluzione adottata perche la coerenza del volto via testo/Ingredienti non e automatizzabile in Vids."
+      },
+      "verifica": {
+        "coerenza_personaggio": "PERFETTA: identica clip della Scena 1",
+        "fluidita_transizione": "chiusura ad anello con l'apertura",
+        "sync_voce_durata": "14 parole / 8s → ok",
+        "no_testo_in_scena": "rinforzato: vietati testo/etichette; icona solo grafica",
+        "carble_cdd": {
+          "D": "ok CTA = verbo d'azione dal compito_realta",
+          "C": "ok",
+          "A": "ok",
+          "R": "ok",
+          "B": "ok",
+          "L": "ok",
+          "E": "ok"
+        },
+        "verdetto": "APPROVED"
+      }
+    }
+  ],
+  "verdetto_complessivo": "FLAGGED",
+  "note_verifica": "6 scene APPROVED, 1 FLAGGED (scena 6: rischio sforamento durata voce IT per l'inciso CLIL). Correzione a carico dell'Agente 1 in fase di voice-over. Nessun BLOCKED. Coerenza personaggio da confermare empiricamente con reference image tra scene 1 e 7. | Scena 7 riusa la clip narratore della Scena 1 per coerenza volto (bookend). Testo-in-scena rimosso.",
+  "target_eta": "12-14"
+}

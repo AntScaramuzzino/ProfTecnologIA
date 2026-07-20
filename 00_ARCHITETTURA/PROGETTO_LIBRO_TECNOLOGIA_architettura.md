@@ -608,7 +608,7 @@ Stack effettivamente utilizzato al 2026-05-12:
 
 ## 9. PROSSIMI PASSI (backlog prioritizzato)
 
-> **Stato al 2026-05-12:** 50 MC JSON in matrice · 56 testi `_completa.md` · app Next.js buildata · quiz e flashcard per 50 MC · hook audio TTS per 50 MC · microlearning per 50 MC · syllabus completi · design system · template MC v2 (6 tab).
+> **Stato al 2026-07-19:** 58 MC JSON in matrice · app Next.js buildata · template MC v2 · primo laboratorio GeoGebra embeddabile per MC-DIS-1-01.
 
 ### Completati ✅
 
@@ -628,13 +628,19 @@ Stack effettivamente utilizzato al 2026-05-12:
 - ✅ Visual brief ESPLORA v2 — generatore Python + 56 brief + 423 prompt di scena
 - ✅ Configurazioni deploy (GitHub Pages, Netlify, Vercel)
 - ✅ Agente Sintetizzatore — script Python `sintetizzatore.py` + `notion_setup.py` (da testare in produzione)
+- ✅ Laboratorio GeoGebra MC-DIS-1-01 — perpendicolare in P, animazione in 4 passi + dimostrazione LLL + download `.ggb`
+- ✅ Skill Codex `create-geogebra-drawings` — generazione, animazione, embed web, validazione e download `.ggb` (2026-07-19)
 
 ### Priorità 1 — Matrice MC (gap residui)
 
-- [ ] Creare 6 JSON MC-INF in `01_MATRICE_MC/` (testi già pronti in `08_TESTI/`)
-- [ ] Completare `sdg_principale` nelle 39 MC mancanti (11/50 compilati)
-- [ ] Raggiungere target 52 MC JSON (identificare 2 MC aggiuntive in DIS o SIS)
-- [ ] Decidere se le 6 MC-INF rientrano nel target 52 o sono extratarget
+> **Aggiornamento 2026-07-12:** target MC definitivo **58 = 52 standard + 6 INF** (decisione editoriale — le MC-INF rientrano nel conteggio totale, non sono extratarget). I 6 JSON MC-INF risultano già presenti in `01_MATRICE_MC/classe_{1,2,3}/INF/` (MC-INF-1-01/02, MC-INF-2-01/02, MC-INF-3-01/02). Restano da produrre per le 6 MC-INF: quiz, flashcard, microlearning JSON, hook audio TTS e slide deck NotebookLM (già prodotti invece per le 52 MC standard). Vedi anche CLAUDE.md §10 per lo stato consolidato.
+
+- [x] Creare 6 JSON MC-INF in `01_MATRICE_MC/` — fatto, verificato 2026-07-12
+- [ ] Completare `sdg_principale` nelle MC mancanti (verificare stato aggiornato — CLAUDE.md riporta completamento per le 52 MC standard al 2026-07-07)
+- [x] Raggiungere target 58 MC JSON (52 standard + 6 INF) — target ridefinito e raggiunto
+- [x] Decidere se le 6 MC-INF rientrano nel target — deciso: sì, incluse (target 58)
+- [ ] Allineare i JSON MC-INF allo schema v2.0 (`clil_termini` usa chiavi `{it,en,def}` invece di `{italiano,inglese,pronuncia_ipa}`; campo extra `professioni_future` non previsto da `schema_MC.json`)
+- [ ] Produrre quiz, flashcard, microlearning JSON e hook audio per le 6 MC-INF (attualmente assenti in `05_APP/tecnologia-sito-web/data/`)
 
 ### Priorità 2 — Infrastruttura agenti e NotebookLM
 
@@ -682,8 +688,8 @@ Stack effettivamente utilizzato al 2026-05-12:
 |---|---|---|
 | Documento architettura | ✅ v2.2 | `00_ARCHITETTURA/` |
 | Schema MC canonico | ✅ v2.0 con tutti i campi | `01_MATRICE_MC/schema_MC.json` |
-| Matrice MC JSON | ✅ 50 MC con campi v2.0 completi | `01_MATRICE_MC/` |
-| Matrice MC JSON — area INF | ⬜ 0/6 JSON (testi pronti in `08_TESTI/`) | `01_MATRICE_MC/` |
+| Matrice MC JSON | ✅ 52 MC standard con campi v2.0 completi | `01_MATRICE_MC/` |
+| Matrice MC JSON — area INF | ✅ 6/6 JSON presenti (target 58 raggiunto, 2026-07-12) — schema v2.0 non perfettamente allineato (vedi §9) | `01_MATRICE_MC/classe_*/INF/` |
 | Testi narrativi (ESPLORA) | ✅ 56 file `_completa.md` (50 std + 6 INF) | `08_TESTI/` |
 | Progressione verticale DIG/DIS | ✅ Documentata | `01_MATRICE_MC/PROGRESSIONE_VERTICALE_DIG_DIS.md` |
 | SDG principale nelle MC | ⚠️ Parziale — 11/50 compilati | `01_MATRICE_MC/` |

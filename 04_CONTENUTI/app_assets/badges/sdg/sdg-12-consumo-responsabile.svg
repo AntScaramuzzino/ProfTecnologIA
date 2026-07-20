@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Badge SDG 12 - Consumo e produzione responsabili</title>
+  <desc id="desc">Badge app per i progressi: SDG 12, Consumo e produzione responsabili.</desc>
+  <defs>
+    <linearGradient id="sdg12g" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.38" stop-color="#BF8B2E"/>
+      <stop offset="1" stop-color="#70480c"/>
+    </linearGradient>
+    <filter id="sdg12s" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#70480c" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#f8fafc"/>
+  <rect x="34" y="34" width="444" height="444" rx="82" fill="url(#sdg12g)" filter="url(#sdg12s)"/>
+  <path d="M77 391h358" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.28"/>
+  <path d="M166 258c0-50 40-90 90-90 24 0 46 9 62 24" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M318 192h-54m54 0v-54" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M346 254c0 50-40 90-90 90-24 0-46-9-62-24" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M194 320h54m-54 0v54" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/><circle cx="256" cy="256" r="32" fill="#ffffff" opacity="0.78"/>
+  <rect x="67" y="63" width="118" height="118" rx="32" fill="#ffffff"/>
+  <text x="126" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#BF8B2E">12</text>
+  <path d="M365 77h48m-24-24v48" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.86"/>
+  <text x="256" y="438" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="900" letter-spacing="1.5" fill="#ffffff">CIRCOLARE</text>
+</svg>

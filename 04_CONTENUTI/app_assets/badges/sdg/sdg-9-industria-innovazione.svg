@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Badge SDG 9 - Industria, innovazione e infrastrutture</title>
+  <desc id="desc">Badge quadrato arancione con numero 9, fabbrica, rete e percorso di innovazione.</desc>
+  <defs>
+    <linearGradient id="edge" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff9b63"/>
+      <stop offset="0.45" stop-color="#f26a2e"/>
+      <stop offset="1" stop-color="#bd3c16"/>
+    </linearGradient>
+    <filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#7c2d12" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#fff7ed"/>
+  <rect x="34" y="34" width="444" height="444" rx="82" fill="url(#edge)" filter="url(#shadow)"/>
+  <path d="M77 391h358" fill="none" stroke="#fff7ed" stroke-width="18" stroke-linecap="round" opacity="0.52"/>
+  <path d="M116 368V240l72 46v-46l72 46v-82h64v164" fill="none" stroke="#ffffff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M324 203h62l28 165" fill="none" stroke="#ffffff" stroke-width="24" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M140 344h40m35 0h40m35 0h40" fill="none" stroke="#7c2d12" stroke-width="14" stroke-linecap="round" opacity="0.55"/>
+  <path d="M117 164c52-48 104-54 156-18s91 33 122-9" fill="none" stroke="#ffffff" stroke-width="15" stroke-linecap="round" opacity="0.92"/>
+  <circle cx="117" cy="164" r="18" fill="#ffffff"/>
+  <circle cx="273" cy="146" r="18" fill="#ffffff"/>
+  <circle cx="395" cy="137" r="18" fill="#ffffff"/>
+  <circle cx="117" cy="164" r="7" fill="#f26a2e"/>
+  <circle cx="273" cy="146" r="7" fill="#f26a2e"/>
+  <circle cx="395" cy="137" r="7" fill="#f26a2e"/>
+  <rect x="67" y="63" width="118" height="118" rx="32" fill="#ffffff"/>
+  <text x="126" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="900" fill="#f26a2e">9</text>
+  <path d="M365 77h48m-24-24v48" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.9"/>
+  <text x="256" y="438" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="900" letter-spacing="1.5" fill="#ffffff">INNOVAZIONE</text>
+</svg>

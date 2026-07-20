@@ -1,0 +1,53 @@
+{
+  "id": "MC-INF-1-01",
+  "titolo": "Archivio fotografico della scuola",
+  "area": "INF",
+  "anno": 1,
+  "livelloDigComp": "F",
+  "sdg": [4, 9],
+  "compito_realta": "Calcola lo spazio necessario per archiviare l'archivio fotografico della tua scuola: scegli una risoluzione di scansione, calcola la dimensione di un singolo file e il totale per 200 fotografie storiche, poi scrivi una raccomandazione motivata al preside.",
+  "scenario": "La scuola vuole digitalizzare 200 fotografie storiche prima che si rovinino. Il preside ti chiede una stima semplice ma motivata: quanto spazio servirà? Quale qualità di scansione conviene scegliere? Meglio risparmiare memoria o conservare più dettagli?",
+  "consegna": "Analizza tre possibili impostazioni di scansione, calcola lo spazio richiesto per una foto e per l'intero archivio, poi scrivi una raccomandazione finale di 8-10 righe indirizzata al preside.",
+  "materiali": [
+    "Calcolatrice o foglio di calcolo",
+    "Scheda con formule per pixel, byte, KB, MB e GB",
+    "Esempi di risoluzioni di scansione: bassa, media, alta",
+    "Quaderno o documento digitale per la relazione",
+    "Facoltativo: un'immagine campione con dimensioni note"
+  ],
+  "passaggi": [
+    "Scegli tre risoluzioni possibili per una fotografia, ad esempio 1000x700, 2000x1400 e 4000x2800 pixel.",
+    "Calcola il numero di pixel di ogni immagine moltiplicando larghezza per altezza.",
+    "Stima la dimensione non compressa considerando 3 byte per pixel in RGB.",
+    "Converti il risultato in MB e poi moltiplica per 200 fotografie.",
+    "Confronta i tre risultati in una tabella con colonne: risoluzione, pixel, MB per foto, GB totali, vantaggi, limiti.",
+    "Scegli la soluzione consigliata e motiva il compromesso tra qualità e spazio occupato."
+  ],
+  "criteri_valutazione": [
+    {
+      "criterio": "Calcolo dei dati",
+      "base": "Calcola almeno una dimensione in modo comprensibile.",
+      "intermedio": "Calcola correttamente tre scenari e usa le unita di misura in modo coerente.",
+      "avanzato": "Spiega anche l'effetto della compressione e distingue tra stima teorica e file reale."
+    },
+    {
+      "criterio": "Uso del linguaggio informatico",
+      "base": "Usa correttamente bit, byte e pixel in frasi semplici.",
+      "intermedio": "Collega pixel, colore RGB e memoria occupata.",
+      "avanzato": "Motiva le scelte tecniche con lessico preciso e accessibile."
+    },
+    {
+      "criterio": "Raccomandazione finale",
+      "base": "Indica una scelta.",
+      "intermedio": "Indica una scelta e la giustifica con dati.",
+      "avanzato": "Propone anche una strategia di backup o archiviazione."
+    }
+  ],
+  "differenziazione": {
+    "base": "Usa una sola risoluzione guidata e calcola lo spazio totale con passaggi gia impostati.",
+    "intermedio": "Confronta tre risoluzioni e compila una tabella completa.",
+    "avanzato": "Aggiungi una stima con compressione JPEG al 30% e proponi una regola per nominare i file."
+  },
+  "estensione_avanzata": "Progetta una struttura di cartelle per organizzare le foto per anno, evento e classe. Aggiungi una proposta di backup 3-2-1 spiegata in parole semplici.",
+  "prodotto_finale": "Tabella dei calcoli + raccomandazione tecnica per il preside."
+}

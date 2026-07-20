@@ -1,0 +1,53 @@
+{
+  "id": "MC-INF-2-01",
+  "titolo": "Cartella condivisa della classe",
+  "area": "INF",
+  "anno": 2,
+  "livelloDigComp": "I",
+  "sdg": [9],
+  "compito_realta": "Progetta la struttura di file system per una cartella condivisa della tua classe (25 studenti, 4 materie, materiali di tipo diverso): disegna l'albero delle cartelle, definisci le regole di denominazione dei file e scrivi un mini-manuale per i tuoi compagni.",
+  "scenario": "La tua classe usa una cartella condivisa, ma i file sono confusi: nomi diversi, versioni duplicate, materiali messi nel posto sbagliato. Il coordinatore ti chiede di progettare un file system semplice, ordinato e usabile da tutti.",
+  "consegna": "Disegna l'albero delle cartelle per una classe di 25 studenti e 4 materie, definisci regole di denominazione dei file e scrivi un mini-manuale di massimo una pagina.",
+  "materiali": [
+    "Carta o app per mappe ad albero",
+    "Esempi di file scolastici: verifiche, appunti, immagini, presentazioni, compiti",
+    "Tabella con ruoli: docente, studente, rappresentante, gruppo",
+    "Computer o tablet facoltativo",
+    "Modello di mini-manuale fornito dal docente"
+  ],
+  "passaggi": [
+    "Elenca i tipi di file che la classe produce in una settimana.",
+    "Decidi il primo livello dell'albero: materie, progetti, comunicazioni o studenti.",
+    "Crea almeno tre livelli di cartelle senza rendere il sistema troppo profondo.",
+    "Definisci una regola di nome file, ad esempio anno-materia-tipo-autore-versione.",
+    "Stabilisci chi puo creare, modificare o archiviare file nelle cartelle principali.",
+    "Scrivi un mini-manuale con esempi corretti e non corretti."
+  ],
+  "criteri_valutazione": [
+    {
+      "criterio": "Struttura del file system",
+      "base": "Propone cartelle principali comprensibili.",
+      "intermedio": "Organizza livelli, ruoli e tipi di file in modo coerente.",
+      "avanzato": "Riduce duplicati, versioni confuse e rischi di perdita dati."
+    },
+    {
+      "criterio": "Regole di denominazione",
+      "base": "Propone una regola semplice.",
+      "intermedio": "La regola funziona per file diversi e include esempi.",
+      "avanzato": "Prevede versioni, date e responsabilita."
+    },
+    {
+      "criterio": "Usabilita per i compagni",
+      "base": "Il manuale e leggibile.",
+      "intermedio": "Il manuale permette di usare il sistema senza spiegazioni aggiuntive.",
+      "avanzato": "Include prevenzione degli errori piu comuni."
+    }
+  ],
+  "differenziazione": {
+    "base": "Progetta la struttura per 2 materie e 10 studenti.",
+    "intermedio": "Progetta la struttura completa per 25 studenti e 4 materie.",
+    "avanzato": "Aggiungi regole di permesso, backup e archiviazione di fine quadrimestre."
+  },
+  "estensione_avanzata": "Simula tre casi problematici: file duplicato, nome sbagliato, materiale caricato nella cartella errata. Spiega come il tuo sistema li previene o li corregge.",
+  "prodotto_finale": "Albero delle cartelle + regole di naming + mini-manuale per la classe."
+}

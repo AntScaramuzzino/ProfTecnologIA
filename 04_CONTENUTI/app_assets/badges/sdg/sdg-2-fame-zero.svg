@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Badge SDG 2 - Sconfiggere la fame</title>
+  <desc id="desc">Badge app per i progressi: SDG 2, Sconfiggere la fame.</desc>
+  <defs>
+    <linearGradient id="sdg2g" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.38" stop-color="#DDA63A"/>
+      <stop offset="1" stop-color="#8a5f08"/>
+    </linearGradient>
+    <filter id="sdg2s" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#8a5f08" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#f8fafc"/>
+  <rect x="34" y="34" width="444" height="444" rx="82" fill="url(#sdg2g)" filter="url(#sdg2s)"/>
+  <path d="M77 391h358" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.28"/>
+  <path d="M256 354V228" stroke="#ffffff" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M256 274c-58-4-99-36-118-92 69-7 112 18 118 92Z" fill="#ffffff" opacity="0.95"/><path d="M256 246c48-52 99-66 154-42-22 61-73 82-154 42Z" fill="#ffffff" opacity="0.82"/><path d="M161 362h190" stroke="#8a5f08" stroke-width="16" stroke-linecap="round" opacity="0.5"/>
+  <rect x="67" y="63" width="118" height="118" rx="32" fill="#ffffff"/>
+  <text x="126" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="900" fill="#DDA63A">2</text>
+  <path d="M365 77h48m-24-24v48" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.86"/>
+  <text x="256" y="438" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="29" font-weight="900" letter-spacing="1.5" fill="#ffffff">FAME ZERO</text>
+</svg>

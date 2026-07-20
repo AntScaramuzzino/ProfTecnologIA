@@ -1,0 +1,53 @@
+{
+  "id": "MC-INF-3-02",
+  "titolo": "Audit degli algoritmi di raccomandazione",
+  "area": "INF",
+  "anno": 3,
+  "livelloDigComp": "A",
+  "sdg": [10, 4, 16],
+  "compito_realta": "Analizza tre algoritmi di raccomandazione che usi ogni giorno: descrivi come funzionano, identifica un possibile bias in ciascuno e scrivi una proposta concreta per rendere uno di questi sistemi piu equo e trasparente.",
+  "scenario": "Le piattaforme ti propongono video, musica, post e prodotti. Sembrano consigli neutrali, ma dipendono dai dati raccolti e dagli obiettivi della piattaforma. Il tuo compito e guardare questi sistemi come un auditor: che cosa mostrano, che cosa nascondono, chi puo essere svantaggiato?",
+  "consegna": "Scegli tre sistemi di raccomandazione, osserva i consigli ricevuti, ipotizza quali dati usano, individua un possibile bias e progetta una modifica per rendere un sistema piu equo o trasparente.",
+  "materiali": [
+    "Account o schermate simulate di piattaforme consigliate dal docente",
+    "Scheda di osservazione con colonne: dato usato, consiglio, possibile effetto",
+    "Documento digitale o quaderno",
+    "Facoltativo: cronologia consigli esportata o annotata manualmente",
+    "Regole di privacy: non condividere dati personali sensibili"
+  ],
+  "passaggi": [
+    "Scegli tre piattaforme, ad esempio YouTube, Spotify, TikTok, Netflix, Amazon o Google News.",
+    "Annota 10 consigli ricevuti da ciascuna piattaforma senza includere dati privati.",
+    "Ipotizza quali segnali potrebbero aver influenzato i consigli: click, tempo di visione, like, ricerche, posizione, eta dichiarata.",
+    "Individua un possibile bias: ripetizione di contenuti simili, stereotipi, esclusione di punti di vista, spinta verso contenuti estremi o commerciali.",
+    "Scegli una piattaforma e proponi una modifica concreta: spiegazione del consiglio, pulsante 'perche lo vedo', diversificazione, controllo dell'utente.",
+    "Scrivi una relazione argomentata con esempi osservati e proposta finale."
+  ],
+  "criteri_valutazione": [
+    {
+      "criterio": "Analisi dei dati",
+      "base": "Riconosce che i consigli dipendono dai dati.",
+      "intermedio": "Collega consigli osservati a possibili segnali usati dall'algoritmo.",
+      "avanzato": "Distingue dati espliciti, dati impliciti e obiettivi della piattaforma."
+    },
+    {
+      "criterio": "Riconoscimento del bias",
+      "base": "Individua un rischio generale.",
+      "intermedio": "Descrive un bias con esempi concreti.",
+      "avanzato": "Spiega chi potrebbe essere svantaggiato e perche."
+    },
+    {
+      "criterio": "Proposta etica",
+      "base": "Propone un miglioramento semplice.",
+      "intermedio": "Propone una modifica realistica e motivata.",
+      "avanzato": "Bilancia equita, trasparenza, privacy e funzionamento tecnico."
+    }
+  ],
+  "differenziazione": {
+    "base": "Analizza una sola piattaforma con 10 consigli osservati.",
+    "intermedio": "Confronta tre piattaforme e compila la scheda completa.",
+    "avanzato": "Progetta una funzione di trasparenza con mockup testuale e criteri di valutazione."
+  },
+  "estensione_avanzata": "Scrivi un breve manifesto 'Algoritmi piu giusti per studenti' in 6 principi, pensato per una piattaforma educativa.",
+  "prodotto_finale": "Scheda comparativa + relazione critica + proposta di miglioramento."
+}
