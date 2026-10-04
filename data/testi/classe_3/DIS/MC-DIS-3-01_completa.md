@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "100 milioni di ore per un film. Ogni fotogramma è matematica."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 39 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 39 sec.*
 > *(Script completo: MC-DIS-3-01_hook-script.md)*
 
 **Domanda di avvio:**

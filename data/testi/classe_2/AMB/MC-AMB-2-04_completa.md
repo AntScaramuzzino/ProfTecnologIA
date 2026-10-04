@@ -29,7 +29,9 @@ La tua aula è più calda d'estate che d'inverno? Le finestre danno a sud o a no
 
 ### Costruire con il clima, non contro di lui
 
-Ogni edificio interagisce con il clima che lo circonda. Il problema è che la maggior parte degli edifici costruiti negli ultimi sessant'anni in Italia sono stati progettati *ignorando* questa interazione — poi compensata con caldaie potenti d'inverno e condizionatori d'estate. Il risultato: il settore edilizio produce il **39% delle emissioni globali di CO₂**. Più di tutti i trasporti messi insieme.
+Ogni edificio interagisce con il clima che lo circonda. Una progettazione che ne tiene conto può ridurre il bisogno di riscaldamento e raffrescamento. Il rapporto UNEP Global Status Report for Buildings and Construction 2024/2025 attribuisce al settore degli edifici e delle costruzioni il **34% delle emissioni globali di CO₂**, includendo l’impatto dei materiali. Questa quota non misura soltanto gli effetti della progettazione climatica degli edifici italiani.
+
+<!-- Fonte della correzione: https://www.unep.org/resources/report/global-status-report-buildings-and-construction-20242025 · consultata il 4 ottobre 2026. -->
 
 L'**architettura bioclimatica** nasce dall'idea opposta: progettare l'edificio in modo che sfrutti le risorse naturali disponibili — sole, vento, vegetazione, massa termica — per mantenere condizioni confortevoli, riducendo al minimo l'energia aggiuntiva.
 

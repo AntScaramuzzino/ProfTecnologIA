@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "90 minuti. Un anno intero."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 30 sec.*
 > *(Script completo: MC-ENE-3-03_hook-script.md)*
 
 **Domanda di avvio:**

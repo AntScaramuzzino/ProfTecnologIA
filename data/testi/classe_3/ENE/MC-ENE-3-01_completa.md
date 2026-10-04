@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Datemi un punto d'appoggio e solleverò il mondo"**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 9 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 9 sec.*
 > *(Script completo: MC-ENE-3-01_hook-script.md)*
 
 **Domanda di avvio:**

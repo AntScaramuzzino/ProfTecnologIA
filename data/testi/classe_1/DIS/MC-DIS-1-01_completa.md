@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il segreto del foglio A4"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 38 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 38 sec.*
 > *(Script completo: MC-DIS-1-01_hook-script.md)*
 
 **Domanda di avvio:**

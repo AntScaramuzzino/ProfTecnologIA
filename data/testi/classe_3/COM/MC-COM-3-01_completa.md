@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "200 millisecondi. Roma-Tokyo."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 18 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 18 sec.*
 > *(Script completo: MC-COM-3-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -35,7 +35,7 @@ La svolta arriva nel 1837, quando Samuel Morse inventa il **telegrafo elettrico*
 
 Nel 1876, Alexander Graham Bell inventa il **telefono**: il segnale sonoro viene trasformato in segnale elettrico, trasmesso via filo e riconvertito in suono dall'altra parte. Nel 1895, Guglielmo Marconi realizza la prima trasmissione radio senza fili: l'informazione può viaggiare nell'aria, senza cavi. Nel 1920 nascono le prime stazioni radio commerciali. Nel 1936, la BBC inaugura il primo servizio televisivo regolare.
 
-Poi arriva Internet. Il progetto ARPANET, finanziato dal Dipartimento della Difesa americano, collega nel 1969 quattro università. Nel 1991, Tim Berners-Lee inventa il World Wide Web — il sistema di pagine ipertestuali che trasforma Internet da strumento accademico a infrastruttura globale. Negli anni 2000 arriva la banda larga. Negli anni 2010, lo smartphone porta Internet in tasca a miliardi di persone. Nel 2024, il 5G promette velocità fino a 100 volte superiori al 4G.
+Poi arriva Internet. Il progetto ARPANET, finanziato dal Dipartimento della Difesa americano, collega nel 1969 quattro università. Nel 1989, Tim Berners-Lee propone al CERN il World Wide Web, reso accessibile anche fuori dal CERN nel 1991 — il sistema di pagine ipertestuali che trasforma Internet da strumento accademico a infrastruttura globale. Negli anni 2000 arriva la banda larga. Negli anni 2010, lo smartphone porta Internet in tasca a miliardi di persone. Nel 2024, il 5G promette velocità fino a 100 volte superiori al 4G.
 
 In meno di 200 anni, la specie umana ha compresso la distanza fino a renderla irrilevante. Questo è uno dei salti tecnologici più radicali della storia.
 

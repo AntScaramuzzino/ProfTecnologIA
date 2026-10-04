@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il cemento che migliora con l'acqua di mare"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 56 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 56 sec.*
 > *(Script completo: MC-AMB-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -62,7 +62,9 @@ Una trave orizzontale che sorregge un solaio non è in compressione pura né in 
 
 Questa è la ragione per cui le travi in acciaio hanno una sezione a "H" o a "I" (profilo HEA, HEB, IPE): le due ali orizzontali (flanges) portano i carichi di flessione (compressione sopra, trazione sotto), mentre l'anima verticale collega le due ali e resiste alle forze di taglio.
 
-> 🔢 **Collegamento STEM — Matematica:** se una trave è lunga il doppio, la freccia di flessione (quanto si abbassa al centro) diventa quattro volte più grande, non due. La flessione cresce con il quadrato della lunghezza. Questo spiega perché le grandi sale — teatri, palestre, capannoni — hanno problemi strutturali diversi da una normale stanza di casa.
+> 🔢 **Collegamento STEM — Matematica:** la freccia di flessione è quanto una trave si abbassa sotto il carico. Dipende da lunghezza, materiale, sezione, carico e appoggi. Per una trave semplicemente appoggiata, con la stessa forza concentrata al centro e gli altri parametri invariati, cresce con il cubo della lunghezza: raddoppiando la lunghezza diventa otto volte maggiore. Non esiste una regola del quadrato valida per ogni trave.
+
+<!-- Fonte della correzione: https://engineering.purdue.edu/~ce474/Docs/DA6-BeamFormulas.pdf · figura 7 · consultata il 4 ottobre 2026. -->
 
 ---
 

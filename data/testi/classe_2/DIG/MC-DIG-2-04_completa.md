@@ -128,14 +128,15 @@ Il principio è semplice: per aprire la porta hai bisogno sia della chiave (qual
 2. Il sistema ti chiede una seconda verifica: un codice di 6 cifre che viene inviato al tuo telefono via SMS, o generato da un'app come Google Authenticator o Authy.
 3. Inserisci il codice. Accedi.
 
-Il codice cambia ogni 30 secondi, quindi è inutile rubarlo dopo che l'hai usato.
+Nelle app TOTP il codice cambia normalmente ogni 30 secondi. Un sito di phishing può però intercettarlo e usarlo subito: anche con il 2FA controlla sempre il sito su cui lo inserisci.
 
 **Dove attivare il 2FA:** quasi tutti i servizi importanti lo offrono. Vai nelle impostazioni dell'account → sicurezza → autenticazione a due fattori. I servizi che dovresti proteggere con certezza: email (è la chiave di recupero di tutti gli altri account), Instagram e altri social, account Google o Apple, eventuali conti bancari o PayPal.
 
-**Quale tipo di 2FA usare:** ci sono tre metodi principali, in ordine di sicurezza:
-- **App di autenticazione** (Authy, Google Authenticator) — il più sicuro, il codice è generato sul tuo dispositivo e non viaggia via rete
+**Quale metodo di autenticazione usare:** la protezione dipende anche dal servizio e dalla configurazione. Tra le possibilità trovi:
+- **Passkey e chiavi di sicurezza FIDO**, quando supportate — verificano anche il sito a cui accedi e resistono al phishing; l’eventuale secondo fattore dipende dalla configurazione.
+- **App di autenticazione** (Authy, Google Authenticator) — generano codici sul dispositivo e sono generalmente preferibili agli SMS, ma i codici possono essere sottratti con il phishing
 - **SMS** — pratico ma meno sicuro: i criminali possono in alcuni casi intercettare SMS o clonare le SIM
-- **Email** — il meno sicuro se la tua email è già compromessa
+- **Email** — la protezione dipende dalla sicurezza della casella: se è compromessa, l’attaccante può leggere anche il codice
 
 > **Cosa succede se perdi il telefono?** Ogni servizio con 2FA ti dà dei *codici di backup* quando lo attivi: sono codici monouso da usare se non puoi accedere al tuo secondo fattore. Salvali da qualche parte sicura (non solo sul telefono — se lo perdi, li perdi anche quelli). Stampali e mettili in un posto sicuro a casa.
 

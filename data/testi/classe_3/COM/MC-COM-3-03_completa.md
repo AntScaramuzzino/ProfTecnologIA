@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il tuo zaino ha percorso 20.000 chilometri"**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 16 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 16 sec.*
 > *(Script completo: MC-COM-3-03_hook-script.md)*
 
 **Domanda di avvio:**

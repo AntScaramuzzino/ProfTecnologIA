@@ -2,7 +2,7 @@
 **Titolo:** "Il tuo telefono ha viaggiato più di te"
 **MC:** MC-MAT-1-02 — Ciclo di vita dei materiali
 **Classe:** 1ª media · Livello Foundation
-**Durata stimata:** 2 min 20 sec
+**Durata stimata:** da ricalcolare dopo la revisione del copione e da verificare sulla registrazione
 **Oggetto reale:** uno smartphone usato
 **SDG principale:** 12 — Consumo e produzione responsabili
 
@@ -50,7 +50,7 @@ Finisce in un cassetto. O in un sacchetto dell'immondizia.
 
 Eccola, la cosa che nessuno ti dice. [PAUSA]
 
-Nell'80% dei casi, quei materiali potrebbero essere recuperati e riutilizzati. [PAUSA]
+Molti di quei materiali possono essere recuperati e riutilizzati, ma il recupero dipende dal prodotto e dal trattamento. [PAUSA]
 
 Il cobalto, il litio, il rame, l'oro — sì, c'è anche dell'oro nei circuiti. [ENFASI] [PAUSA]
 
@@ -89,18 +89,25 @@ Tieni quella domanda in testa — ti servirà.
   "mc_id": "MC-MAT-1-02",
   "titolo_hook": "Il tuo telefono ha viaggiato più di te",
   "oggetto_reale": "smartphone usato",
-  "durata_stimata_sec": 140,
+  "durata_stimata_sec": null,
   "livello_digcomp": "F",
   "dati_verificabili": [
     "Il cobalto per le batterie Li-ion proviene prevalentemente dalla Repubblica Democratica del Congo",
     "Il litio proviene principalmente dal deserto di Atacama, Cile",
     "Solo il 15-20% degli smartphone viene effettivamente riciclato a livello globale",
-    "L'80% dei materiali degli smartphone sarebbe tecnicamente recuperabile"
+    "Il recupero dei materiali di uno smartphone dipende dal prodotto e dal processo; non è indicata una percentuale universale"
   ],
-  "collegamento_geografico": ["Repubblica Democratica del Congo", "Cile", "Perù", "Giappone", "Taiwan", "Cina"],
+  "collegamento_geografico": [
+    "Repubblica Democratica del Congo",
+    "Cile",
+    "Perù",
+    "Giappone",
+    "Taiwan",
+    "Cina"
+  ],
   "sdg_principale": 12,
   "data_creazione": "2026-05-09",
-  "versione": "1.0"
+  "versione": "1.1"
 }
 ```
 

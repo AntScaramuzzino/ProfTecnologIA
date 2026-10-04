@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La finestra aperta che riscaldi tutto l'anno"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 44 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 44 sec.*
 > *(Script completo: MC-AMB-2-02_hook-script.md)*
 
 **Domanda di avvio:**

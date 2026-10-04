@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Un materiale spesso un atomo"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 23 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 23 sec.*
 > *(Script completo: MC-MAT-1-03_hook-script.md)*
 
 **Domanda di avvio:**
@@ -30,7 +30,7 @@ I materiali cambiano il mondo. Non solo quelli che già conosci — anche quelli
 
 Prima di esplorare i materiali innovativi, vale la pena capire perché esistono. La risposta non è "perché i vecchi materiali sono brutti" — molti dei materiali tradizionali sono ancora eccellenti per quello che fanno. La risposta è che abbiamo problemi nuovi che i vecchi materiali non risolvono.
 
-**Il problema dell'impatto ambientale.** La plastica convenzionale è un materiale straordinario — economico, leggero, impermeabile, formabile in qualsiasi forma. Ma non si biodegrada in tempi utili. Abbiamo prodotto circa 9,2 miliardi di tonnellate di plastica dal 1950 al 2025 — di cui solo il 9% è stato riciclato. Il resto è in discarica, nell'ambiente, o incenerito. Abbiamo bisogno di materiali che possano fare le stesse cose della plastica ma che finiscano senza lasciare tracce persistenti nell'ecosistema.
+**Il problema dell'impatto ambientale.** La plastica convenzionale è un materiale straordinario — economico, leggero, impermeabile, formabile in qualsiasi forma. Ma non si biodegrada in tempi utili. Una ricerca pubblicata nel 2017 stima che, dei rifiuti plastici generati fino al 2015, circa il 9% fosse stato riciclato. Il resto era stato incenerito o si era accumulato in discarica e nell’ambiente. Questa stima storica riguarda i rifiuti, non tutta la plastica prodotta fino al 2025. Abbiamo bisogno di materiali che possano fare le stesse cose della plastica ma che finiscano senza lasciare tracce persistenti nell'ecosistema.
 
 **Il problema delle prestazioni estreme.** L'elettronica moderna richiede materiali che conducano l'elettricità meglio del rame, ma siano molto più leggeri. I satelliti richiedono materiali che resistano a sbalzi termici di 300°C tra lato solare e lato in ombra. Le turbine degli aerei richiedono materiali che reggano 1.400°C senza perdere resistenza meccanica. I materiali tradizionali non ce la fanno. Servono materiali nuovi.
 

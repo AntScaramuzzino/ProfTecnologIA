@@ -24,13 +24,13 @@ Quello è il tuo prossimo problema.
 
 Prendi un momento e pensa a qualcosa che sai fare bene: allacciarti le scarpe, aprire un'app, preparare uno zaino. Tu lo fai senza pensarci. Il tuo cervello ha automatizzato quei movimenti — ma se provi a descriverli in parole, una per una, senza dare niente per scontato, scopri quanto sono complessi.
 
-Un computer non può automatizzare niente. Non capisce il contesto. Non interpreta. Non chiede. Esegue esattamente le istruzioni che riceve — nemmeno un passo di più, nemmeno un passo di meno. Questa proprietà si chiama **determinismo**: le stesse istruzioni, con gli stessi dati, producono sempre lo stesso risultato.
+Un computer può automatizzare molte operazioni, ma un programma tradizionale richiede istruzioni esplicite. Non puoi dare per scontato che ricavi da solo tutti i passaggi che tu esegui per abitudine. Un programma **deterministico**, a parità di dati e condizioni iniziali, produce lo stesso risultato.
 
 ---
 
 ### Cos'è un algoritmo
 
-Un **algoritmo** è una sequenza finita di istruzioni precise, prive di ambiguità, che porta sempre allo stesso risultato a partire dagli stessi dati.
+Un **algoritmo** è un procedimento descritto da istruzioni precise e prive di ambiguità per risolvere un problema. Gli algoritmi deterministici producono lo stesso risultato a parità di dati e condizioni iniziali; altri possono usare scelte casuali.
 
 La parola viene dal nome del matematico persiano **Al-Khwārizmī** (780–850 d.C.), che scrisse un trattato sul calcolo con numeri arabi. Quando i suoi testi furono tradotti in latino nel XII secolo, il suo nome fu latinizzato in *Algoritmi* — e da lì è nata la parola.
 

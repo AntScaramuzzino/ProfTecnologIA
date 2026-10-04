@@ -7,12 +7,12 @@
 
 ## ⚡ INNESCA
 
-> **QR CODE AUDIO → "Il semaforo che è esploso"**
-> *Ascolta prima di leggere. Durata: 4 min 2 sec.*
+> **QR CODE AUDIO → "Il semaforo che può sbagliare"**
+> *Ascolta prima di leggere. Durata: da verificare dopo la revisione del copione.*
 > *(Script completo: MC-DIG-2-01_hook-script.md)*
 
 **Domanda di avvio:**
-Il semaforo davanti alla tua scuola fa una cosa sola: rosso, verde, giallo, rosso, verde, giallo. Sembra il programma più semplice del mondo. Eppure nel 1926, a Londra, il primo semaforo automatico esplose perché chi lo aveva programmato non aveva previsto tutti i casi.
+Il semaforo davanti alla tua scuola segue una sequenza: rosso, verde, giallo, rosso. Sembra il programma più semplice del mondo. Ma immagina due semafori di un incrocio che danno il verde contemporaneamente a percorsi che si incrociano: un errore nelle regole può creare un pericolo. È un esempio immaginario per ragionare sul codice, non la causa documentata di un incidente storico.
 
 Scrivere istruzioni per una macchina sembra facile. Non lo è. Adesso impari come si fa davvero.
 
@@ -40,7 +40,7 @@ Il pensiero computazionale non è programmazione. È un modo di affrontare i pro
 
 Qualsiasi programma — qualsiasi, dal sistema operativo del tuo computer a un videogioco a un sistema di raccomandazione di Netflix — è costruito combinando solo tre strutture fondamentali. Solo tre.
 
-**Sequenza:** istruzioni eseguite una dopo l'altra, nell'ordine in cui sono scritte. Il semaforo che fa rosso, poi verde, poi giallo è una sequenza. Il problema del semaforo esploso era che la sequenza non prevedeva tutti i casi: mancava un controllo sulla condizione del meccanismo prima di aprire il gas.
+**Sequenza:** istruzioni eseguite una dopo l’altra, nell’ordine in cui sono scritte. Il semaforo che fa rosso, poi verde, poi giallo è una sequenza. Nell’esempio immaginario dei due semafori, però, non basta gestirli separatamente: devi coordinare le sequenze perché i percorsi che si incrociano non abbiano il verde insieme.
 
 **Selezione (if/else):** una biforcazione. Il programma controlla una condizione e sceglie quale ramo eseguire. Se la risposta è corretta → aggiungi un punto e vai alla prossima domanda. Se la risposta è sbagliata → mostra il feedback e riprova (o vai avanti, dipende dal gioco). La selezione è ciò che rende un programma "intelligente" rispetto a una semplice sequenza: può reagire a situazioni diverse in modo diverso.
 
@@ -189,8 +189,10 @@ Esistono due tipi di errori:
 
 5. Chiedi a un compagno di leggere il tuo codice: l'occhio fresco trova ciò che non hai visto.
 
-> **Box storia — Grace Hopper e la nascita del bug:**
-> Nel settembre 1947, l'ingegnera informatica Grace Hopper stava lavorando al computer Mark II all'Università di Harvard quando il sistema si bloccò senza motivo. La squadra investigò e trovò la causa: una falena era entrata nel relè 70 del computer e aveva causato un cortocircuito. Hopper incollò l'insetto sul registro di bordo e scrisse accanto: "First actual case of bug being found." — primo caso reale di insetto trovato. Da quel giorno, un errore in un programma si chiama bug. La falena originale è ancora conservata nel Museo Nazionale della Storia Americana a Washington, incollata sul registro di bordo originale.
+> **Box storia — Grace Hopper e la falena del Mark II:**
+> Nel 1947, la squadra del computer Mark II a Harvard trovò una falena in un relè e la fissò al registro di lavoro, annotando un gioco di parole sul primo "bug" materiale trovato. Grace Hopper lavorava con la squadra e contribuì a rendere famoso l’episodio. Ma il termine *bug* indicava difetti tecnici già nell’Ottocento: non nacque con la falena. Il registro originale è conservato al National Museum of American History di Washington.
+
+<!-- Fonte della correzione: https://americanhistory.si.edu/collections/object/nmah_334663 · consultata il 4 ottobre 2026. -->
 
 ---
 

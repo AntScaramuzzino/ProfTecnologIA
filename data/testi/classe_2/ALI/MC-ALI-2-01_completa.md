@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "La mela che hai comprato in dicembre è di agosto"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 52 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 52 sec.*
 > *(Script completo: MC-ALI-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -43,7 +43,7 @@ La composizione ideale del suolo per la coltivazione si chiama **terriccio agric
 
 Quando questi quattro componenti sono in proporzione giusta, il suolo ha buona **fertilità**: le piante crescono robuste, resistono meglio alle malattie e producono frutti di qualità. Quando il suolo è povero, compatto o contaminato, anche con l'irrigazione e i fertilizzanti il risultato è scarso.
 
-Un dato che fa riflettere: per formare 1 centimetro di suolo fertile in natura servono tra 100 e 1.000 anni. Ma con l'agricoltura intensiva sbagliata — arature eccessive, monocolture continue, uso massiccio di pesticidi chimici — quello stesso centimetro di suolo può essere eroso in pochi decenni. Le Nazioni Unite stimano che il 33% dei suoli agricoli del mondo sia già degradato. Stiamo usando una risorsa non rinnovabile come se fosse infinita.
+Un dato che fa riflettere: per formare 1 centimetro di suolo fertile in natura servono tra 100 e 1.000 anni. Ma con l'agricoltura intensiva sbagliata — arature eccessive, monocolture continue, uso massiccio di pesticidi chimici — quello stesso centimetro di suolo può essere eroso in pochi decenni. Nel 2015 la FAO segnalava che circa il 33% delle terre del mondo presentava un degrado da moderato ad alto: il dato non riguarda soltanto i suoli agricoli. Stiamo usando una risorsa non rinnovabile come se fosse infinita.
 
 ---
 

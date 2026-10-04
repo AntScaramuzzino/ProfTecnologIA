@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "500 ore al minuto. Quanto vale il tuo video?"**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 10 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 10 sec.*
 > *(Script completo: MC-COM-3-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -35,7 +35,7 @@ Ogni cosa che vedi online è un contenuto digitale: un testo, una foto, un video
 
 **Audio:** un file audio digitale è una sequenza di campioni — misure della pressione sonora prese a intervalli regolari. La qualità CD usa 44.100 campioni al secondo (44,1 kHz) con 16 bit per campione. Un minuto di audio non compresso occupa circa 10 MB.
 
-**Video:** è semplicemente una sequenza di immagini (frame) con audio sincronizzato. A 24 frame al secondo, un minuto di video in Full HD (1920×1080 pixel) non compresso occuperebbe circa 90 GB. Ecco perché la compressione è fondamentale.
+**Video:** è una sequenza di immagini (frame) con audio sincronizzato. Assumendo RGB a 24 bit, cioè 3 byte per pixel, un minuto Full HD (1920×1080 pixel) a 24 frame al secondo occupa circa 9 GB senza compressione, escluso l’audio: 1920 × 1080 × 3 × 24 × 60 = 8.957.952.000 byte. Ecco perché la compressione è fondamentale.
 
 **3D, AR/VR:** modelli tridimensionali (mesh di poligoni con texture) e ambienti immersivi richiedono potenza di calcolo per il rendering. Sono i formati in più rapida crescita ma ancora meno diffusi per la produzione amatoriale.
 

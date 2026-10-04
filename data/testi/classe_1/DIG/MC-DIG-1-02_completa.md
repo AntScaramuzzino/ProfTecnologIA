@@ -7,14 +7,16 @@
 
 ## ⚡ INNESCA
 
-> **QR CODE AUDIO → "Otto milioni di condivisioni. Zero letture."**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 32 sec.*
+> **QR CODE AUDIO → "Condividere non significa leggere."**
+> 🎧 *Ascolta prima di leggere. Durata: da verificare dopo la revisione del copione.*
 > *(Script completo: MC-DIG-1-02_hook-script.md)*
 
 **Domanda di avvio:**
 Pensa all'ultima cosa che hai letto o visto online. Sai chi l'ha scritta? Sai quando? Sai se è vera?
 
-Nel 2016, il 59% degli articoli condivisi sui social non era mai stato aperto. Le persone condividevano dal titolo. Scopri perché — e come difenderti.
+Uno studio pubblicato nel 2016, su link a cinque siti di notizie condivisi su Twitter nel 2015, rilevò che il 59% degli URL studiati non aveva ricevuto clic misurati. Questo non dimostra che nessuno avesse letto gli articoli attraverso altri percorsi. Prima di condividere, apri la fonte e controlla cosa dice davvero.
+
+<!-- Fonte della correzione: https://www.hoplofobia.info/wp-content/uploads/2017/06/2016-59-percent-of-links-shared-online-are-never-clicked.pdf · Gabielkov et al., Social Clicks, 2016 · consultata il 4 ottobre 2026. -->
 
 ---
 
@@ -38,7 +40,7 @@ Il processo ha tre fasi:
 
 **1. Il crawling — i "ragni" esplorano il web**
 
-Google ha programmi automatici chiamati **crawler** (o spider, cioè ragni) che girano continuamente per il web, seguendo i link da una pagina all'altra. Ogni pagina che trovano viene letta e analizzata. Attualmente, Google ha indicizzato circa 100 miliardi di pagine web — e ne trovano di nuove ogni secondo.
+Google ha programmi automatici chiamati **crawler** (o spider, cioè ragni) che girano continuamente per il web, seguendo i link da una pagina all'altra. Le pagine accessibili possono essere lette e analizzate, ma non tutte quelle trovate vengono necessariamente indicizzate. Google descrive il proprio indice come una raccolta di centinaia di miliardi di pagine: il numero cambia nel tempo.
 
 **2. L'indicizzazione — ogni pagina viene catalogata**
 

@@ -2,7 +2,7 @@
 **Titolo:** "Una macchia grande tre volte la Francia"
 **MC:** MC-MAT-1-04 — Rifiuti, riciclaggio e smaltimento
 **Classe:** 1ª media · Livello Foundation
-**Durata stimata:** 2 min 20 sec
+**Durata stimata:** da ricalcolare dopo la revisione del copione e da verificare sulla registrazione
 **Oggetto reale:** il cestino della raccolta differenziata
 **SDG principale:** 12 — Consumo e produzione responsabili
 
@@ -56,7 +56,7 @@ e consuma il 70% in meno di energia rispetto a produrre carta nuova da zero. [PA
 
 Il problema non è che il riciclaggio non funziona. [PAUSA]
 
-Il problema è che solo il 9% della plastica prodotta nella storia dell'umanità è stata riciclata. [PAUSA]
+Una stima pubblicata nel 2017 indica che soltanto il 9% dei rifiuti plastici generati fino al 2015 era stato riciclato. È un dato storico sui rifiuti, non su tutta la plastica prodotta. [PAUSA]
 
 Il 9.
 
@@ -93,19 +93,23 @@ Tieni la risposta in testa — ti servirà.
   "mc_id": "MC-MAT-1-04",
   "titolo_hook": "Una macchia grande tre volte la Francia",
   "oggetto_reale": "cestino della raccolta differenziata",
-  "durata_stimata_sec": 140,
+  "durata_stimata_sec": null,
   "livello_digcomp": "F",
   "dati_verificabili": [
     "La Great Pacific Garbage Patch si trova tra le Hawaii e la California",
     "La sua estensione è stimata tra 1,6 milioni km² (circa 3 volte la Francia)",
-    "Solo il 9% della plastica prodotta nella storia è stata riciclata (fonte: Science Advances 2017)",
+    "Geyer et al., Science Advances (2017): il 9% dei rifiuti plastici generati fino al 2015 era stato riciclato",
     "Riciclare 1 tonnellata di carta risparmia 17 alberi e il 70% di energia",
     "Studi del 2020 hanno trovato microplastiche nel sangue umano"
   ],
-  "collegamento_geografico": ["Oceano Pacifico", "Hawaii", "California"],
+  "collegamento_geografico": [
+    "Oceano Pacifico",
+    "Hawaii",
+    "California"
+  ],
   "sdg_principale": 12,
   "data_creazione": "2026-05-09",
-  "versione": "1.0"
+  "versione": "1.1"
 }
 ```
 

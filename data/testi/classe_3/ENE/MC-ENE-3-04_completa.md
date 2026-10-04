@@ -94,13 +94,15 @@ Dati: V = 9V, R = 100Ω
 Calcolo: I = 9 / 100 = **0,09 A = 90 mA**
 
 **Esempio passo per passo — Problema 2:**
-Vuoi che nel tuo LED scorra 20 mA (0,02 A) e lo alimenti con una batteria da 5V. Quale resistore devi mettere in serie?
+Vuoi che in un LED rosso scorrano circa 20 mA (0,02 A) e lo alimenti a 5V. Assumi una caduta di tensione del LED di 2V, da verificare sul suo datasheet. Quale resistore devi mettere in serie?
 
-Formula: R = V / I
-Dati: V = 5V, I = 0,02A
-Calcolo: R = 5 / 0,02 = **250 Ω**
+Formula: R = (V_alimentazione − V_LED) / I
+Dati: V_alimentazione = 5V, V_LED = 2V, I = 0,02A
+Calcolo: R = (5 − 2) / 0,02 = **150 Ω**
 
-Nella pratica userai il resistore da 270 Ω (il valore standard più vicino disponibile) — va bene comunque.
+150 Ω è un valore standard. Il calcolo è approssimato: la caduta di tensione e la corrente ammessa dipendono dal LED scelto. Verifica anche la potenza del resistore: P = 3 × 0,02 = 0,06W; in questo esempio un resistore da 0,25W è sufficiente.
+
+<!-- Fonte della correzione: https://forum.digikey.com/t/choosing-the-correct-resistor-for-your-led/183 · consultata il 4 ottobre 2026. -->
 
 ---
 
@@ -119,13 +121,15 @@ Dalla legge di Ohm, si può anche scrivere come:
 Una lampadina LED alimentata a 5V con una corrente di 0,4A:
 P = 5 × 0,4 = **2W**
 
-Confronto pratico: una lampadina a incandescenza da 60W consumava 30 volte di più per una luminosità simile.
+Confronto pratico: una lampadina a incandescenza da 60W produce circa 800 lumen. Una lampadina LED con luminosità equivalente richiede normalmente diversi watt, non necessariamente 2W. Per confrontare la luce emessa guarda i **lumen**, non soltanto i watt.
+
+<!-- Fonte della correzione: https://www.energy.gov/cmei/femp/purchasing-energy-efficient-light-bulbs · consultata il 4 ottobre 2026. -->
 
 La potenza si misura in un istante. Per sapere quanta **energia** consuma un dispositivo nel tempo, si usa il **kilowattora (kWh)**:
 
 **Energia (kWh) = Potenza (kW) × Tempo (ore)**
 
-Una lavatrice da 2.000 W (= 2 kW) che gira per 1,5 ore consuma 3 kWh. In bolletta, ogni kWh costa circa 0,25 € in Italia (2024). Quella lavatrice ti è costata 0,75 €.
+Se un apparecchio assorbe costantemente 2.000 W (= 2 kW) per 1,5 ore, consuma 3 kWh. Una lavatrice varia invece la potenza durante il ciclo: per il consumo reale consulta l’etichetta energetica o misura l’energia assorbita. Con una tariffa ipotetica di 0,25 €/kWh, 3 kWh costano 0,75 €; la tariffa effettiva dipende dal contratto e dal periodo.
 
 > 💡 **Lo stand-by ha un costo reale:** quasi tutti gli elettrodomestici consumano energia anche quando sembrano spenti — la lucina rossa del televisore, il caricatore collegato alla presa senza telefono, il decoder in attesa. È stato calcolato che se nell'Unione Europea tutti gli utenti spegnessero il comando di stand-by del proprio televisore, si risparmierebbe l'equivalente di diversi miliardi di kWh all'anno. A livello di singola famiglia, il costo annuo dello stand-by è stimato tra 50 e 100 €. Il rimedio è semplice: spegni dalla presa, non dal telecomando. *(Fonte: Mondadori Education, ISBN 9788829861521, p.346)*
 
@@ -133,7 +137,7 @@ Una lavatrice da 2.000 W (= 2 kW) che gira per 1,5 ore consuma 3 kWh. In bollett
 >
 > Le batterie forniscono corrente **continua (DC — Direct Current)**: gli elettroni scorrono sempre nella stessa direzione, dal polo negativo al polo positivo.
 >
-> La rete elettrica domestica (230V, 50 Hz) usa invece corrente **alternata (AC — Alternating Current)**: gli elettroni invertono la direzione 50 volte al secondo (50 hertz).
+> La rete elettrica domestica (230V, 50 Hz) usa invece corrente **alternata (AC — Alternating Current)**: la corrente compie 50 cicli completi al secondo. Nel modello sinusoidale cambia verso due volte per ciclo, quindi 100 volte al secondo.
 >
 > Perché la rete usa la corrente alternata? Perché si può trasportare facilmente a tensioni altissime (centinaia di migliaia di volt) con poche perdite, e poi abbassarla con i **trasformatori** prima di arrivare nelle case. Inventata e promossa da Nikola Tesla e George Westinghouse, vinse il cosiddetto "guerra delle correnti" contro la corrente continua di Thomas Edison alla fine dell'800.
 >
@@ -201,7 +205,7 @@ Costruire circuiti vuol dire scegliere i componenti giusti. Questi sono quelli c
 Il componente più semplice: oppone resistenza al flusso di corrente. Si usa per limitare la corrente, per creare divisori di tensione, per proteggere altri componenti (come i LED). Il valore si legge dal codice a colori stampato sul corpo del componente.
 
 **LED (Light Emitting Diode)**
-Un diodo che emette luce quando lo percorre corrente nel verso corretto. Ha una **polarità**: il terminale più lungo è l'anodo (+), quello più corto il catodo (−). Collegato al contrario non funziona e non si rompe, ma collegato senza resistore in serie si brucia in pochi secondi. Tensione di lavoro tipica: 1,8–3,3V. Corrente di lavoro: 10–30 mA.
+Un diodo che emette luce quando lo percorre corrente nel verso corretto. Ha una **polarità**: il terminale più lungo è l'anodo (+), quello più corto il catodo (−). Collegato al contrario non emette luce e può danneggiarsi se supera la tensione inversa ammessa. Senza un resistore o un altro sistema di limitazione della corrente può bruciarsi: controlla sempre il datasheet. Tensione di lavoro tipica: 1,8–3,3V. Corrente di lavoro: 10–30 mA.
 
 **Condensatore**
 Accumula cariche elettriche e le rilascia rapidamente. Funziona come una piccola "riserva" di energia. Usato per filtrare oscillazioni nella tensione, per creare timer, per stabilizzare l'alimentazione dei circuiti digitali.
@@ -213,10 +217,10 @@ Lascia passare la corrente in un solo verso. Funziona come una valvola a senso u
 Apre o chiude un percorso nel circuito. Quando è aperto, il circuito è interrotto e la corrente non scorre. Quando è chiuso, il circuito è completo. Esistono in molte varianti: a scorrimento, a pressione (pulsante), a basculante (toggle).
 
 **Fusibile**
-Un filo sottilissimo che si rompe deliberatamente quando la corrente supera un certo valore. Protegge il circuito da sovraccarichi. Una volta bruciato va sostituito — non si ripristina da solo. Nei moderni impianti domestici i fusibili sono stati sostituiti dai **salvamotore** (interruttori automatici magnetotermici) che si possono ripristinare premendo un tasto.
+Un filo sottilissimo che si rompe deliberatamente quando la corrente supera un certo valore. Protegge il circuito da sovraccarichi. Una volta bruciato va sostituito — non si ripristina da solo. Nei moderni impianti domestici i fusibili sono stati sostituiti da **interruttori magnetotermici** ripristinabili dopo aver eliminato il guasto. I salvamotore sono dispositivi destinati specificamente alla protezione dei motori.
 
 **Differenziale (salvavita)**
-Rileva differenze di corrente tra fase e neutro (il che indica che la corrente sta "scappando" verso terra, per esempio attraverso una persona). Si scatta in meno di 30 millisecondi. È obbligatorio per legge in tutti gli impianti domestici italiani dal 1990.
+Rileva differenze di corrente tra fase e neutro (il che indica che la corrente sta "scappando" verso terra, per esempio attraverso una persona). Il tempo di intervento dipende dal dispositivo e dalla corrente di dispersione: non è sempre inferiore a 30 millisecondi. Non confondere il tempo di intervento con la sensibilità, spesso pari a 30 milliampere. È obbligatorio per legge in tutti gli impianti domestici italiani dal 1990.
 
 > ⚠️ **Box sicurezza — cortocircuito:**
 > Un **cortocircuito** avviene quando fase e neutro entrano in contatto diretto, senza passare attraverso un carico (lampadina, motore, ecc.). La resistenza del percorso diventa quasi zero, quindi per la legge di Ohm la corrente diventa enorme (I = V/R → se R è minimo, I è massima). In pochi millisecondi il calore prodotto può fondere i fili e causare incendi. Fusibili e interruttori magnetotermici esistono per questo: interrompono il circuito prima che il danno sia irreparabile.
@@ -255,7 +259,7 @@ void loop() {
 }
 ```
 
-Questo sketch fa lampeggiare il LED incorporato in Arduino una volta al secondo — è il programma "Hello World" dell'elettronica.
+Questo sketch mantiene il LED incorporato acceso per un secondo e spento per un secondo: il ciclo completo dura 2 secondi (0,5 Hz). È il programma "Hello World" dell’elettronica.
 
 ---
 
@@ -384,12 +388,12 @@ Competenze chiave che inizia a costruire da qui: sensoristica · big data · man
    - La tensione ai capi della batteria
    - La tensione ai capi del resistore
    - La tensione ai capi del LED
-   - Verifica: le tre tensioni si sommano alla tensione della batteria?
+   - Verifica: la somma delle tensioni ai capi del resistore e del LED corrisponde alla tensione della batteria, considerando trascurabile la caduta sul pulsante chiuso?
 5. Con il multimetro in modalità corrente mA (metti i puntali in serie al circuito): misura la corrente totale.
-6. Calcola la resistenza effettiva del LED con la formula R = V / I (usando i valori misurati).
+6. Calcola il rapporto V_LED / I usando i valori misurati. Questo rapporto descrive quel punto di funzionamento, ma non rende il LED un resistore ohmico.
 
 **Domanda di riflessione:**
-Il valore di resistenza che hai calcolato per il LED corrisponde a 0Ω (come teoricamente modellizzato nella legge di Ohm semplificata) oppure no? Cosa significa?
+Il rapporto V_LED / I rimarrebbe costante cambiando la corrente? Un LED ha una relazione tensione-corrente non lineare: spiega perché non puoi trattarlo come un resistore da 0Ω.
 
 ---
 
@@ -408,7 +412,7 @@ Il valore di resistenza che hai calcolato per il LED corrisponde a 0Ω (come teo
 - Arduino IDE (gratuito, scaricabile da arduino.cc)
 
 **Schema circuito:**
-Il LDR e la resistenza da 10kΩ formano un **divisore di tensione**: la tensione al punto di mezzo varia in base alla luce. Al buio il LDR ha alta resistenza → la tensione al centro è alta. Con luce il LDR ha bassa resistenza → la tensione al centro è bassa. Arduino legge questo valore dal pin analogico A0.
+Collega 5V → resistore da 10kΩ → punto centrale A0 → LDR → GND. LDR e resistore formano un **divisore di tensione**: al buio il LDR ha alta resistenza e la tensione letta da A0 aumenta; con la luce la resistenza del LDR diminuisce e la tensione letta scende.
 
 **Sketch da scrivere:**
 ```
@@ -425,7 +429,7 @@ void loop() {
   int valLuce = analogRead(ldrPin);
   Serial.println(valLuce);  // Stampa il valore nel monitor seriale
 
-  if (valLuce < soglia) {
+  if (valLuce > soglia) {
     digitalWrite(ledPin, HIGH);  // Buio → LED acceso
   } else {
     digitalWrite(ledPin, LOW);   // Luce → LED spento
@@ -465,7 +469,7 @@ void loop() {
 
 La scuola vuole installare un sistema di segnalazione luminosa nel corridoio: un LED verde che si accende quando la porta dell'aula è aperta (segnala che si può entrare senza disturbare), e un LED rosso che si accende quando la porta è chiusa (lezione in corso — non bussare).
 
-Il sistema deve funzionare con una batteria a 9V (per autonomia senza cavi), durare almeno 30 giorni, e montarsi su una breadboard senza saldature.
+Il progetto iniziale prevede una batteria da 9V, un’autonomia di almeno 30 giorni con utilizzo per 8 ore al giorno e un montaggio su breadboard senza saldature. Verifica se questi requisiti sono compatibili con un LED acceso a 15 mA; se non lo sono, proponi una riprogettazione.
 
 ---
 
@@ -475,9 +479,9 @@ Il sistema deve funzionare con una batteria a 9V (per autonomia senza cavi), dur
 
 1. **Schema del circuito** (disegnato a mano o con Tinkercad): identifica ogni componente con il suo valore (quale resistenza, quanti ohm, quale LED).
 
-2. **Calcoli**: per ogni LED, calcola la resistenza necessaria per far scorrere esattamente 15 mA. Mostra i passaggi.
+2. **Calcoli**: per ogni LED, calcola la resistenza per una corrente nominale di circa 15 mA, usando la sua caduta di tensione e verificando il valore standard scelto. Mostra i passaggi.
 
-3. **Analisi dell'autonomia**: un LED verde acceso consuma 15 mA. Una batteria da 9V ha una capacità tipica di 500 mAh. Quante ore può stare acceso? Quanti giorni, se rimane acceso 8 ore al giorno?
+3. **Analisi dell’autonomia**: assumi un LED acceso a 15 mA e una capacità di batteria di 500 mAh. Quante ore può restare acceso? Quanti giorni a 8 ore al giorno? Confronta il risultato con i 30 giorni richiesti. Calcola la capacità minima necessaria oppure proponi un consumo medio inferiore, per esempio mediante lampeggio. Considera anche il consumo dell’eventuale elettronica di controllo.
 
 4. **Scelta della configurazione**: i due LED (verde e rosso) devono essere in serie o in parallelo? Spiega perché la configurazione sbagliata non funzionerebbe.
 
