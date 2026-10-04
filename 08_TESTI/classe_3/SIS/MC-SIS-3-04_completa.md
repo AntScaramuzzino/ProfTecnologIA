@@ -7,13 +7,13 @@
 
 ## ⚡ INNESCA
 
-> **QR CODE AUDIO → "Il 65% dei lavori che farai non esiste ancora. Ma le competenze sì."**
+> **QR CODE AUDIO → "I lavori cambiano. Le competenze ti aiutano a scegliere."**
 > 🎧 *Ascolta prima di leggere. Durata: 3 min.*
 
 **Domanda di avvio:**
 Qual è il lavoro che vuoi fare da grande?
 
-Se non lo sai, sei in ottima compagnia: secondo il World Economic Forum, il 65% dei bambini che oggi frequentano la scuola primaria lavorerà in mestieri che non esistono ancora. Per chi è in prima media oggi, la percentuale è un po' più bassa — ma il principio resta: molte delle professioni che eserciterai non hanno ancora un nome.
+Se non lo sai, sei in ottima compagnia. Non possiamo prevedere con certezza quali professioni svolgeranno gli alunni di oggi. Alcuni lavori cambieranno e altri nasceranno, ma le percentuali spesso citate sui "mestieri che non esistono ancora" non sono previsioni certe per la tua generazione. Puoi però prepararti costruendo competenze e imparando a riconoscere le tue inclinazioni.
 
 Questo non significa che non puoi prepararti. Significa che prepararsi al futuro del lavoro non vuol dire scegliere il mestiere giusto adesso. Vuol dire costruire le competenze giuste — quelle che serviranno in qualsiasi professione, anche in quelle che ancora non esistono.
 

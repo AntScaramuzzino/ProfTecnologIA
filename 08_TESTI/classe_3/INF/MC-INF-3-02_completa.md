@@ -66,7 +66,9 @@ Ogni connessione tra neuroni ha un **peso** — un numero che determina quanto q
 
 Il **deep learning** usa reti con molti strati nascosti. Una rete per il riconoscimento facciale potrebbe avere decine di strati: i primi rilevano bordi e contrasti, quelli centrali riconoscono forme geometriche, quelli finali identificano caratteristiche specifiche come occhi, nasi, proporzioni.
 
-GPT-4 (alla base di ChatGPT) ha circa 1,8 trilioni di parametri — cioè 1,8 trilioni di pesi che vengono aggiustati durante l'addestramento. È stato addestrato su miliardi di pagine di testo.
+GPT-4 è un esempio di grande modello linguistico: usa molti parametri, cioè valori numerici appresi durante l’addestramento. Il rapporto tecnico ufficiale non pubblica il numero dei suoi parametri né la composizione dettagliata dei dati di addestramento. Per questo non possiamo presentarli come cifre note.
+
+<!-- Fonte della correzione: https://cdn.openai.com/papers/gpt-4.pdf · §2, p.2 · consultata il 4 ottobre 2026. -->
 
 ---
 

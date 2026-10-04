@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "L'IA non pensa. Calcola."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 46 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 46 sec.*
 > *(Script completo: MC-DIG-3-02_hook-script.md)*
 
 **Domanda di avvio:**

@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "3.000 robot. Zero senso dell'orientamento."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 21 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 21 sec.*
 > *(Script completo: MC-COM-3-04_hook-script.md)*
 
 **Domanda di avvio:**

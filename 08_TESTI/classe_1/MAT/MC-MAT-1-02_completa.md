@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il tuo telefono ha viaggiato più di te"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 27 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: da verificare dopo la revisione del copione.*
 > *(Script completo: MC-MAT-1-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -18,7 +18,9 @@ Il cobalto della batteria viene dalla Repubblica Democratica del Congo. Il litio
 
 Poi lo butti.
 
-E nell'80% dei casi, quei materiali — preziosi, estratti dall'altra parte del mondo — vengono perduti per sempre.
+Il recupero resta insufficiente: secondo il Global E-waste Monitor 2024, nel 2022 solo il 22,3% della massa dei rifiuti elettronici mondiali risultava raccolto e riciclato formalmente. Il dato riguarda tutti i RAEE, non soltanto gli smartphone; la quota restante comprende flussi non documentati, non materiali sicuramente perduti per sempre.
+
+<!-- Fonte della correzione: https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-Waste-Monitor-2024.aspx · consultata il 4 ottobre 2026. -->
 
 Perché succede questo? E cosa puoi fare tu? La risposta comincia da qui: capire come ogni oggetto nasce, vive e muore.
 
@@ -128,7 +130,7 @@ In un sistema ideale, il materiale estratto in Fase 1 viene recuperato in Fase 6
 
 Questo sistema si chiama **economia circolare** — contrapposta all'economia lineare tradizionale, che segue il schema "estrai → produci → usa → butta". L'economia circolare segue invece il modello "estrai → produci → usa → recupera → riproduci".
 
-L'economia circolare non è un'utopia: esiste già in molti settori. L'acciaio in Europa viene riciclato al 70-80%. Il vetro in Italia viene riciclato all'80%. L'alluminio delle lattine viene riciclato al 70% in Europa. Il problema riguarda soprattutto le plastiche (9% riciclato a livello globale su tutto lo storico prodotto) e i materiali compositi (quasi impossibili da separare nei loro componenti).
+L'economia circolare non è un'utopia: esiste già in molti settori. L'acciaio in Europa viene riciclato al 70-80%. Il vetro in Italia viene riciclato all'80%. L'alluminio delle lattine viene riciclato al 70% in Europa. Il problema riguarda soprattutto le plastiche (secondo una stima pubblicata nel 2017, il 9% dei rifiuti plastici generati fino al 2015 era stato riciclato) e i materiali compositi (quasi impossibili da separare nei loro componenti).
 
 > 🔬 **Collegamento STEM — Scienze:** La termodinamica ha qualcosa di importante da dire sull'economia circolare. Il secondo principio della termodinamica afferma che in ogni trasformazione di energia una parte si disperde come calore e non è recuperabile. Lo stesso vale per i materiali: ogni ciclo di riciclo dissipa una certa quantità di materiale e qualità. Non si può riciclare all'infinito con rendimento 100%. Ma si può avvicinarsi molto — soprattutto per i metalli, che mantengono le loro proprietà chimiche quasi intatte dopo il riciclo.
 

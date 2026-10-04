@@ -33,7 +33,7 @@ Quante volte questa settimana hai visto una pubblicità su qualcosa a cui stavi 
 
 ### L'economia dell'attenzione: il tuo tempo è il prodotto
 
-Nel 2006 il giurista Tim Wu, nel libro *The Attention Merchants*, ha descritto qualcosa che tutti sentiamo ma raramente articoliamo: il modello economico dei media dell'ultimo secolo non è vendere contenuti agli utenti. È vendere l'attenzione degli utenti agli inserzionisti.
+Nel 2016 il giurista Tim Wu, nel libro *The Attention Merchants*, ha descritto qualcosa che tutti sentiamo ma raramente articoliamo: il modello economico dei media dell'ultimo secolo non è vendere contenuti agli utenti. È vendere l'attenzione degli utenti agli inserzionisti.
 
 Il meccanismo è antico. I giornali del XIX secolo capirono che potevano abbassare il prezzo di vendita (e vendere più copie) se i ricavi venissero principalmente dalla pubblicità — non dai lettori. La radio e la televisione ne fecero il modello standard: contenuto gratuito, finanziato da chi vuole accedere all'attenzione di chi ascolta.
 

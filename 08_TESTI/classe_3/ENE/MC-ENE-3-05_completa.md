@@ -17,7 +17,7 @@ Ogni volta che premono il pedale del gas, nella camera di combustione di quel mo
 
 Sembra semplice. Non lo è.
 
-Di quella energia chimica contenuta nella benzina, solo il 25–30% arriva alla ruota come movimento utile. Il resto — il 70–75% — si trasforma in calore che il radiatore disperde nell'aria.
+Di quella energia chimica contenuta nella benzina, solo il 25–30% arriva alla ruota come movimento utile. Gran parte dell’energia restante viene dispersa come calore, sia con i gas di scarico sia attraverso il sistema di raffreddamento; altre perdite dipendono dal motore e dalla trasmissione.
 
 Stai sprecando quasi tre quarti del carburante che paghi.
 
@@ -286,7 +286,7 @@ Domanda: qual è il rendimento del motore elettrico in questo schema?
 
 ### ●● INTERMEDIO — Calcolo rendimenti e confronto filiere energetiche
 
-**Obiettivo:** calcolare il rendimento "well-to-wheel" (dal pozzo alla ruota) per un'auto a benzina e per un'auto elettrica, includendo tutte le fasi della filiera.
+**Obiettivo:** confrontare il rendimento energetico di tre filiere con i valori ipotetici forniti. Per benzina e gas il percorso è "well-to-wheel" (dal pozzo alla ruota); per il solare parte dall’energia del sole incidente sul pannello. Il confronto non determina, da solo, le emissioni o l’impatto ambientale.
 
 **Filiera dell'auto a benzina:**
 1. Estrazione e raffinazione del petrolio: rendimento 96%
@@ -312,8 +312,8 @@ Domanda: qual è il rendimento del motore elettrico in questo schema?
 
 **Analisi:**
 - Quale configurazione ha il rendimento complessivo più alto?
-- In quale caso l'auto elettrica è "meno verde" dell'auto a benzina considerando la filiera completa?
-- Perché il confronto "well-to-wheel" è più onesto del confronto solo tra i motori?
+- Puoi stabilire quale configurazione emette meno gas serra usando soltanto questi rendimenti? Quali dati mancano, per esempio consumi per chilometro e fattori di emissione delle fonti energetiche?
+- Perché considerare l’intera filiera descrive meglio le conversioni energetiche rispetto al solo motore? Spiega anche perché il rendimento del pannello solare non è una misura delle emissioni.
 
 Scrivi un paragrafo di 8–10 righe con le tue conclusioni motivate.
 

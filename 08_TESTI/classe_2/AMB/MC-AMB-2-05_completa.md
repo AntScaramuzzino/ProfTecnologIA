@@ -76,7 +76,9 @@ La clorazione è il metodo di disinfezione più usato al mondo. Il cloro (solita
 
 Le concentrazioni usate sono minime: tra 0,2 e 0,5 mg per litro (parti per milione). Per fare un confronto, la candeggina commerciale ne contiene 50.000 mg per litro — centomila volte di più.
 
-**Perché a volte l'acqua del rubinetto sa di cloro?** La sensazione di "sapore di piscina" non viene dal cloro libero, ma dai **cloramine** — composti che si formano quando il cloro reagisce con sostanze organiche presenti nell'acqua (azoto proveniente da residui di fertilizzanti o materia organica naturale). Lasciare l'acqua in un bicchiere aperto per 30 minuti fa evaporare queste sostanze.
+**Perché a volte l’acqua del rubinetto sa di cloro?** Odore e sapore possono dipendere dal cloro residuo e da composti come le **clorammine**, formati dalla reazione del cloro con sostanze contenenti azoto. Il cloro libero e le clorammine si comportano diversamente: lasciare l’acqua in un bicchiere aperto per 30 minuti non garantisce la rimozione delle clorammine, in particolare della monoclorammina.
+
+<!-- Fonte della correzione: https://www.epa.gov/sites/default/files/2015-09/documents/how_can_i_remove_monochloramine_from_my_drinking_water.pdf · consultata il 4 ottobre 2026. -->
 
 Alternativa al cloro sempre più usata: la **disinfezione con raggi UV**. La luce ultravioletta (lunghezza d'onda 254 nm) distrugge il DNA dei microrganismi rendendoli incapaci di riprodursi. Non lascia residui chimici nell'acqua, ma non garantisce protezione lungo tutta la rete (il cloro rimane attivo anche dopo aver lasciato l'impianto — gli UV no).
 

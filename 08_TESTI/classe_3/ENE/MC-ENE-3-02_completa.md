@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Un litro di benzina. 23 tonnellate di storia."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 20 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 20 sec.*
 > *(Script completo: MC-ENE-3-02_hook-script.md)*
 
 **Domanda di avvio:**

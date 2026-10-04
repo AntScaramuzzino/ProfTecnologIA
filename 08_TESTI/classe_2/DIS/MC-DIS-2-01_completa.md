@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "IKEA parla senza parole"**
-> *Ascolta prima di leggere. Durata: 3 min 44 sec.*
+> *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 44 sec.*
 > *(Script completo: MC-DIS-2-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -32,11 +32,11 @@ La risposta si chiama **proiezione ortogonale**, ed è il sistema su cui si basa
 
 ### Cos'è una proiezione — e perché "ortogonale"
 
-Immagina una torcia puntata perpendicolarmente su un oggetto contro un muro. L'ombra che si forma sul muro è una **proiezione**. Quella proiezione ha una proprietà importante: ogni punto dell'ombra corrisponde esattamente a un punto dell'oggetto, e le distanze vengono mantenute in scala.
+Immagina un fascio di raggi paralleli che colpisce un oggetto perpendicolarmente a un piano. La sua immagine sul piano è una **proiezione ortogonale**. Una torcia vicina ha invece raggi divergenti: la sua ombra non riproduce esattamente questo modello.
 
-"Ortogonale" significa che i raggi di proiezione sono perpendicolari al piano su cui si proietta. In parole semplici: la torcia è sempre perfettamente di fronte all'oggetto, mai inclinata.
+"Ortogonale" significa che tutti i raggi di proiezione sono perpendicolari al piano su cui si proietta.
 
-Questo è diverso da quello che succede quando guardi un oggetto reale: la prospettiva li fa sembrare più piccoli man mano che si allontanano, le linee parallele sembrano convergere verso un punto all'orizzonte. La proiezione ortogonale elimina questa distorsione. Ogni dimensione viene mantenuta esatta, indipendentemente da dove si trova nell'oggetto. Per questo è lo strumento della precisione tecnica: quando un ingegnere quota 120 mm su un disegno ortogonale, il costruttore sa con certezza che quella dimensione è 120 mm nell'oggetto reale.
+Questo è diverso da quello che succede quando guardi un oggetto reale: la prospettiva li fa sembrare più piccoli man mano che si allontanano, le linee parallele sembrano convergere verso un punto all'orizzonte. La proiezione ortogonale elimina questa distorsione. I segmenti paralleli al piano mantengono la loro lunghezza in scala; quelli inclinati appaiono accorciati. Punti posti sulla stessa linea di proiezione possono sovrapporsi: per ricostruire la forma servono più viste. Per questo è lo strumento della precisione tecnica: quando un ingegnere quota 120 mm su un disegno ortogonale, il costruttore sa con certezza che quella dimensione è 120 mm nell'oggetto reale.
 
 ---
 
@@ -44,9 +44,9 @@ Questo è diverso da quello che succede quando guardi un oggetto reale: la prosp
 
 Prima di entrare nel dettaglio della proiezione ortogonale, è utile capire perché esistono più sistemi di rappresentazione e quando si sceglie ciascuno.
 
-**Proiezione ortogonale (viste multiple):** la più precisa. Mostra l'oggetto in più viste separate, ognuna ripresa da una direzione perpendicolare. Non si vede la forma tridimensionale in modo intuitivo, ma ogni dimensione è misurabile. Si usa nei disegni di costruzione, nelle tavole tecniche per la produzione industriale, nelle specifiche per i fornitori. Chi deve costruire l'oggetto ha bisogno di questo.
+**Proiezione ortogonale (viste multiple):** la più precisa. Mostra l'oggetto in più viste separate, ognuna ripresa da una direzione perpendicolare. Non si vede la forma tridimensionale in modo intuitivo, le dimensioni si leggono nelle viste che le mostrano senza accorciamento e nelle quote. Si usa nei disegni di costruzione, nelle tavole tecniche per la produzione industriale, nelle specifiche per i fornitori. Chi deve costruire l'oggetto ha bisogno di questo.
 
-**Assonometria (studiata nella MC-DIS-2-02):** proietta l'oggetto in modo da mostrare tre facce contemporaneamente su un solo piano. Mantiene le misure ma dà un'impressione tridimensionale. Si usa per disegni esplicativi, manuali d'uso, presentazioni. Chi deve capire la forma generale ha bisogno di questo.
+**Assonometria (studiata nella MC-DIS-2-02):** proietta l'oggetto in modo da mostrare tre facce contemporaneamente su un solo piano. Rappresenta insieme più direzioni dell’oggetto, usando scale e coefficienti propri del tipo di assonometria, e dà un’impressione tridimensionale. Si usa per disegni esplicativi, manuali d'uso, presentazioni. Chi deve capire la forma generale ha bisogno di questo.
 
 **Prospettiva:** simula come l'occhio umano vede davvero. Le linee parallele convergono, le dimensioni si riducono in lontananza. Usata in architettura e design per comunicare l'impatto visivo di un progetto a chi non è tecnico. Non è misurabile, ma è la più intuitiva.
 

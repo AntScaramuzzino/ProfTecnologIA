@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Una maglietta da €5,99. Un centesimo al cucitore."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 18 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 18 sec.*
 > *(Script completo: MC-SIS-3-01_hook-script.md)*
 
 **Domanda di avvio:**
@@ -68,26 +68,28 @@ La teoria economica classica divide tutte le attività umane che generano reddit
 
 ### La catena del valore: chi guadagna cosa
 
-La **catena del valore** descrive la sequenza di attività che trasformano le materie prime in prodotto finito venduto al consumatore — e mostra dove si accumula il profitto in ogni passaggio.
+La **catena del valore** descrive la sequenza di attività che trasformano le materie prime in prodotto finito venduto al consumatore — e aiuta a distinguere attività, costi e margini lungo la filiera. Il ricavo di una fase non coincide con il suo profitto: bisogna sottrarre i costi.
 
 Il concetto fu introdotto dall'economista Michael Porter nel 1985. Ma non è un'astrazione accademica: si vede molto concretamente nella maglietta da 5,99 euro.
 
-Ricostruiamo la catena per una maglietta basic:
+Usiamo una **scomposizione didattica ipotetica** del prezzo di una maglietta da 5,99 €. I valori non descrivono una filiera reale e non sono salari o profitti netti.
 
-| Fase | Chi fa cosa | Dove | Guadagno stimato |
-|------|------------|------|-----------------|
-| Coltivazione del cotone | Agricoltori | India, Kazakistan, USA | 0,10-0,20 € per maglietta |
-| Filatura e tessitura | Industria tessile | India, Bangladesh, Cina | 0,05-0,10 € |
-| Taglio e cucito | Operai (spesso donne) | Bangladesh, Cambogia, Etiopia | 0,01-0,05 € |
-| Tintoria e finissaggi | Industria chimica | Turchia, Cina | 0,10-0,20 € |
-| Logistica e distribuzione | Spedizionieri globali | Olanda, Germania | 0,50-0,80 € |
-| Importazione e vendita all'ingrosso | Trading companies | Europa | 0,50-1,00 € |
-| Marketing e brand | Azienda fashion | Sede legale Europa/USA | 1,00-2,00 € |
-| Rivenditore finale | Negozio | Città italiana | 1,50-2,50 € |
+| Fase | Chi fa cosa | Dove, a titolo di esempio | Quota ipotetica del prezzo |
+|------|------------|--------------------------|--------------------------|
+| Coltivazione del cotone | Agricoltori | India, Kazakistan, USA | 0,25 € |
+| Filatura e tessitura | Industria tessile | India, Bangladesh, Cina | 0,40 € |
+| Taglio e cucito | Imprese e operai | Bangladesh, Cambogia, Etiopia | 0,60 € |
+| Tintoria e finissaggi | Industria tessile | Turchia, Cina | 0,30 € |
+| Logistica e distribuzione | Spedizionieri | Olanda, Germania | 0,45 € |
+| Importazione e vendita all’ingrosso | Imprese commerciali | Europa | 0,40 € |
+| Marketing e brand | Azienda di moda | Europa/USA | 1,00 € |
+| Rivenditore finale | Negozio | Città italiana | 1,51 € |
+| IVA, ipotizzata al 22% sul prezzo netto | Imposta sul consumo | Italia | 1,08 € |
+| **Totale** | | | **5,99 €** |
 
-La somma si avvicina ai 5,99 € di prezzo finale. Ma guarda la distribuzione: la fase del cucito — l'unica che richiede lavoro umano diretto e intenso — riceve la quota più piccola. Il valore si accumula nelle fasi di marketing, brand e distribuzione — dove il lavoro è meno, ma il potere di mercato (il marchio riconoscibile, la rete di distribuzione esclusiva) è maggiore.
+Ogni quota, esclusa l’imposta, comprende costi e possibili margini: non è il guadagno personale di chi lavora. Il lavoro umano interviene anche nella coltivazione, nella tintoria e nella logistica, non soltanto nel cucito. Per capire la distribuzione effettiva del valore servono dati della filiera specifica.
 
-Questo non è un caso né una distorsione: è come funziona il meccanismo della catena del valore quando alcune fasi sono facilmente delocalizzabili (il cucito) e altre no (il brand).
+Il potere di mercato, il marchio e la possibilità di spostare la produzione possono influenzare questa distribuzione. La tabella serve a capire le voci del prezzo, non a dimostrare quanto guadagna ciascun attore in una maglietta reale.
 
 ---
 
@@ -406,7 +408,7 @@ Questa MC ti ha dato gli strumenti per leggere un sistema economico locale. MC-S
 ## NOTE DI EDITING
 
 **Per l'impaginatore:**
-- Zona 2: la tabella della catena del valore della maglietta va come infografica visuale con frecce orizzontali e barre proporzionali al guadagno per fase.
+- Zona 2: la tabella della catena del valore della maglietta va come infografica visuale con frecce orizzontali e barre proporzionali alle quote ipotetiche del prezzo; distinguere l’IVA e indicare che non sono salari né profitti netti.
 - Il confronto tra PIL e BES va come tabella a due colonne con icone per le 12 dimensioni BES.
 - Il ciclo economico va come grafico a onda con le 4 fasi etichettate.
 - Il box STEM Matematica (indice dei prezzi) va come sidebar con formula in evidenza.

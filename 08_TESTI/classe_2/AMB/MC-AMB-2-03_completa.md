@@ -9,7 +9,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il 65% della città è parcheggio"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 55 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 55 sec.*
 > *(Script completo: MC-AMB-2-03_hook-script.md)*
 
 **Domanda di avvio:**

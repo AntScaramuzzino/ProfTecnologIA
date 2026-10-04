@@ -205,7 +205,7 @@ I fogli per il disegno tecnico seguono la norma **ISO 216** — lo stesso sistem
 
 La proprietà speciale della serie A è quella che hai calcolato nell'hook: il rapporto tra lato lungo e lato corto è sempre √2 ≈ 1,414. Questo significa che piegando un foglio A0 a metà ottieni due fogli A1 con le stesse proporzioni. Piegando un A1 ottieni due A2. E così via.
 
-**Conseguenza pratica importantissima:** se hai un disegno su A3 a scala 1:50 e devi ridurlo su A4 con la fotocopiatrice al 70,7% (cioè a √2/2), la scala diventa 1:100 — automaticamente, senza dover ricalcolare niente. I formati ISO sono stati progettati esattamente per questo.
+**Conseguenza pratica:** se riduci un disegno su A3 in scala 1:50 al 70,7% per portarlo su A4, la nuova scala è circa 1:70,7: 50 / 0,707 ≈ 70,7. Il formato dimezza l’area, non le lunghezze. Per passare da 1:50 a 1:100 devi ridurre le lunghezze al 50%.
 
 ---
 

@@ -7,13 +7,13 @@
 
 ## ⚡ INNESCA
 
-> **QR CODE AUDIO → "Nel 2050 saremo 10 miliardi. E il sistema alimentare attuale non basta."**
+> **QR CODE AUDIO → "Come nutriremo una popolazione in crescita?"**
 > 🎧 *Ascolta prima di leggere. Durata: 39 sec.*
 
 **Domanda di avvio:**
-Se domani mattina tutta l'umanità si svegliasse e la metà di quello che c'è nei frigoriferi e nei magazzini del mondo fosse sparita, cosa succederebbe?
+Come possiamo nutrire una popolazione mondiale in crescita senza aumentare inutilmente sprechi e pressione su suolo e acqua?
 
-Sarebbe una catastrofe. Eppure è più o meno quello che succederà entro il 2050 se il sistema alimentare globale non cambia radicalmente. La popolazione mondiale raggiungerà circa 10 miliardi di persone intorno alla metà del secolo. Per nutrirle tutte in modo adeguato, la produzione alimentare dovrà aumentare del 50-70% rispetto a oggi. Ma quasi tutta la terra coltivabile è già sfruttata. L'acqua dolce disponibile per l'agricoltura è sempre meno. Il cambiamento climatico sta spostando le zone agricole produttive verso nord. E il sistema alimentare attuale produce già il 26% delle emissioni globali di gas serra.
+La popolazione mondiale potrebbe avvicinarsi ai 10 miliardi di persone intorno alla metà del secolo. Un rapporto FAO del 2017 stimava, nel suo scenario per il 2050, una crescita della produzione agricola di circa il 50% rispetto al 2012, includendo alimenti, mangimi e biocarburanti. È una proiezione legata a ipotesi demografiche ed economiche, non un aumento rispetto a oggi né la previsione che sparirà metà del cibo. Produrre di più non è l’unica risposta: contano anche distribuzione, accesso al cibo, riduzione degli sprechi e uso sostenibile di suolo e acqua.
 
 La soluzione non è un'unica tecnologia miracolosa. È un insieme di innovazioni che già esistono — alcune da secoli, alcune da pochi anni — che stanno cambiando radicalmente come produciamo, distribuiamo e consumiamo il cibo.
 
@@ -160,13 +160,15 @@ In Italia, la startup Genuino ha sviluppato un sistema blockchain per la traccia
 
 > **📊 Dato chiave — il sistema alimentare globale nel 2050:**
 > - Popolazione mondiale prevista: ~9,7 miliardi (ONU, 2023)
-> - Aumento di produzione alimentare necessario: +50-70% rispetto al 2010
+> - Scenario FAO pubblicato nel 2017: produzione agricola nel 2050 circa +50% rispetto al 2012, comprendendo alimenti, mangimi e biocarburanti; non una previsione riferita alla produzione di oggi.
 > - Superficie agricola disponibile: quasi tutta già sfruttata
 > - Emissioni attuali del sistema alimentare: 26% delle emissioni globali di gas serra
 > - Allevamento animale: 14,5% delle emissioni globali
 > - Spreco alimentare: 30-40% del cibo prodotto non viene consumato
 >
-> *Fonte: FAO, IPCC, WRI — dati pubblici*
+> *Per la proiezione di produzione: FAO, The future of food and agriculture — Trends and challenges (2017), p.45. Le altre voci richiedono fonti e perimetri propri.*
+
+<!-- Fonte della correzione: https://www.cbd.int/financial/2017docs/fao-future.pdf · p.45. -->
 
 ---
 
@@ -532,7 +534,7 @@ Nella fase conclusiva dell'UDA-2, ogni studente presenterà alla classe un'anali
 - Visual richiesto 1: infografica "Dal laboratorio al supermercato" con timeline di sviluppo delle 6 tecnologie e stato attuale (in ricerca / approvato / in commercio in EU / in commercio in Italia).
 - Visual richiesto 2: grafico comparativo FCR degli animali vs. insetti (barre orizzontali).
 - Visual richiesto 3: schema del bioreattore industriale con indicazione delle fasi di fermentazione.
-- Hook audio: già da produrre — script: "Nel 2050 saremo 10 miliardi. Il sistema alimentare attuale non basta."
+- Hook audio: da produrre — script: "Come nutriremo una popolazione in crescita?"
 
 ---
 

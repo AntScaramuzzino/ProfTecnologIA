@@ -74,7 +74,7 @@ Queste informazioni ti danno il diritto di sapere cosa stai mangiando. Leggerle 
 
 #### Funzione 4: Marketing e comunicazione
 
-Accanto alle informazioni obbligatorie, il packaging porta anche messaggi di marketing — immagini, colori, claim come "fresco", "naturale", "senza conservanti", "fonte di proteine". Questi messaggi non sono sempre precisi come le informazioni obbligatorie.
+Accanto alle informazioni obbligatorie, il packaging porta anche immagini, colori e messaggi di marketing. Alcune indicazioni nutrizionali hanno però requisiti precisi: per scrivere **"fonte di proteine"**, almeno il 12% del valore energetico deve provenire dalle proteine, secondo il regolamento CE 1924/2006. Distingui queste indicazioni dai messaggi generici e controlla i dati dell’etichetta.
 
 La regolamentazione europea vieta le affermazioni false o ingannevoli, ma lascia spazio a molti termini che suonano positivi senza avere una definizione tecnica precisa. "Naturale" per esempio non ha una definizione legale nel contesto alimentare europeo — può essere scritto su quasi tutto.
 

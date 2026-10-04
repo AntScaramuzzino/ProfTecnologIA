@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "40.000 bambini. La batteria del tuo telefono."**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 24 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 24 sec.*
 > *(Script completo: MC-SIS-3-02_hook-script.md)*
 
 **Domanda di avvio:**

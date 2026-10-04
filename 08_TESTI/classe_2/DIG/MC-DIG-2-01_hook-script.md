@@ -1,8 +1,8 @@
 # Hook audio — MC-DIG-2-01
-**Titolo:** "Il semaforo che è esploso"
+**Titolo:** "Il semaforo che può sbagliare"
 **MC:** MC-DIG-2-01 — Coding con linguaggi a blocchi
 **Classe:** 2ª media · Livello Intermediate
-**Durata stimata:** 2 min 25 sec
+**Durata stimata:** da ricalcolare dopo la revisione del copione e da verificare sulla registrazione
 **Oggetto reale:** un semaforo stradale
 **SDG principale:** 9 — Industria, innovazione e infrastrutture
 
@@ -12,63 +12,51 @@
 
 ---
 
-**[BLOCCO 1 — APERTURA CON OGGETTO · 16 sec]**
+**[BLOCCO 1 — APERTURA CON OGGETTO · durata da ricalcolare]**
 
-Il semaforo davanti alla tua scuola fa una cosa sola: [PAUSA]
+Il semaforo davanti alla tua scuola segue una sequenza: [PAUSA]
 
-rosso, verde, giallo, rosso, verde, giallo. [PAUSA]
+rosso, verde, giallo, rosso. [PAUSA]
 
 Sembra il programma più semplice del mondo. [PAUSA]
 
-Eppure nel 1926, a Londra, il primo semaforo automatico esplose. [ENFASI]
+Ma immagina due semafori dello stesso incrocio: cosa succede se danno entrambi il verde a percorsi che si incrociano? [ENFASI]
 
 ---
 
-**[BLOCCO 2 — LA STORIA · 78 sec]**
+**[BLOCCO 2 — LA STORIA · durata da ricalcolare]**
 
-Era un semaforo a gas, installato all'incrocio di Parliament Square. [PAUSA]
+A Londra, i primi semafori elettrici del 1926 erano azionati manualmente. Quelli automatici arrivarono nel 1933. [PAUSA]
 
-Funzionava con una sequenza automatica controllata da un meccanismo a orologeria. [PAUSA]
+Non è la storia di un programma esploso: il problema dei due verdi è un esempio immaginario per capire un errore logico. [PAUSA]
 
-Ma i progettisti non avevano previsto tutti i casi. [PAUSA]
+Una sequenza può essere scritta correttamente e produrre un comportamento sbagliato se non consideri le altre condizioni. [PAUSA]
 
-Non avevano previsto cosa succedeva se il meccanismo si inceppava mentre il gas era aperto. [PAUSA]
+In informatica chiamiamo spesso questi errori bug. [PAUSA]
 
-Il gas si accumulò. [PAUSA]
+Bug significa insetto, ma il termine indicava difetti tecnici già nell’Ottocento. [PAUSA]
 
-E il semaforo esplose. [PAUSA]
+Nel 1947, la squadra del computer Mark II a Harvard trovò davvero una falena in un relè e la fissò al registro di lavoro. [PAUSA]
 
-Fortunatamente non ci furono vittime gravi — ma fu il simbolo di un problema che ancora oggi tormenta ogni programmatore del mondo: [PAUSA]
-
-il bug. [PAUSA]
-
-La parola "bug" — letteralmente "insetto" in inglese — è entrata nel vocabolario dell'informatica nel 1947. [PAUSA]
-
-Una falena si era incastrata in un relè del computer Mark II all'Università di Harvard, causando un malfunzionamento. [PAUSA]
-
-Grace Hopper, l'ingegnera che trovò l'insetto, lo incollò sul registro di bordo e scrisse: "First actual case of bug being found." [PAUSA]
-
-Da quel giorno, un errore in un programma si chiama bug.
+Grace Hopper lavorava con quella squadra e contribuì a rendere famoso l’episodio. La falena non inventò la parola: rese memorabile il gioco di parole.
 
 ---
 
-**[BLOCCO 3 — COLPO DI SCENA · 26 sec]**
+**[BLOCCO 3 — COLPO DI SCENA · durata da ricalcolare]**
 
 Eccola, la cosa che nessuno ti dice. [PAUSA]
 
-Il bug non è un'eccezione rara nel software. [ENFASI] [PAUSA]
+Scrivere istruzioni non basta: devi anche provarle. [ENFASI] [PAUSA]
 
-È la norma. [PAUSA]
+Un semaforo può funzionare da solo e fallire quando lo colleghi agli altri. [PAUSA]
 
-Secondo i dati dell'industria del software, ogni 1.000 righe di codice contengono in media 15-50 bug. [PAUSA]
+Per questo i test devono includere condizioni diverse e casi inattesi. [PAUSA]
 
-Il sistema operativo Windows ha circa 50 milioni di righe di codice. [PAUSA]
-
-Calcolate voi.
+Trovare e correggere gli errori fa parte del lavoro di chi programma.
 
 ---
 
-**[BLOCCO 4 — AGGANCIO AL CONCETTO · 23 sec]**
+**[BLOCCO 4 — AGGANCIO AL CONCETTO · durata da ricalcolare]**
 
 Scrivere un programma non significa dare istruzioni perfette a una macchina. [PAUSA]
 
@@ -82,7 +70,7 @@ Questo è esattamente quello che studierai adesso.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 13 sec]**
+**[BLOCCO 5 — CALL TO ACTION · durata da ricalcolare]**
 
 Pensa al semaforo che conosci meglio. [PAUSA]
 
@@ -97,19 +85,22 @@ Tieni quella sequenza in testa — ti servirà.
 ```json
 {
   "mc_id": "MC-DIG-2-01",
-  "titolo_hook": "Il semaforo che è esploso",
+  "titolo_hook": "Il semaforo che può sbagliare",
   "oggetto_reale": "semaforo stradale",
-  "durata_stimata_sec": 145,
+  "durata_stimata_sec": null,
   "livello_digcomp": "I",
   "dati_verificabili": [
-    "Il primo semaforo automatico a Londra fu installato a Parliament Square nel 1868 (gas) e il successivo a benzina esploso nel 1926",
-    "Il termine 'bug' informatico deriva da una falena trovata nel computer Mark II all'Università di Harvard nel 1947 da Grace Hopper",
-    "Stime dell'industria: 15-50 bug per ogni 1.000 righe di codice (NIST, McConnell 'Code Complete')"
+    "London Museum: semafori elettrici manuali a Londra nel 1926, automatici nel 1933",
+    "Smithsonian: nel 1947 la squadra del Mark II trovò una falena in un relè; bug indicava difetti tecnici già nell’Ottocento",
+    "Il caso dei due semafori con verdi incompatibili è un esempio didattico immaginario, non un incidente storico documentato"
   ],
-  "collegamento_geografico": ["Londra, UK", "Università di Harvard, USA"],
+  "collegamento_geografico": [
+    "Londra, UK",
+    "Università di Harvard, USA"
+  ],
   "sdg_principale": 9,
   "data_creazione": "2026-05-09",
-  "versione": "1.0"
+  "versione": "1.1"
 }
 ```
 
@@ -120,7 +111,7 @@ Tieni quella sequenza in testa — ti servirà.
 - **Tono generale:** narrativo con ironia leggera. Mai tecnico senza spiegare. Livello I.
 - **[PAUSA]:** pausa di 0,5 sec.
 - **[ENFASI]:** più lento, volume +10%.
-- **Blocco 1:** tono di setup comico — la sequenza ripetuta è quasi buffa, poi arriva la bomba.
+- **Blocco 1:** tono di domanda concreta — rendere evidente il rischio dell’esempio immaginario dei due verdi.
 - **Blocco 2:** tono di racconto storico, con la falena come personaggio involontario.
-- **Blocco 3:** tono di calcolo aperto — "calcolate voi" invita lo studente.
+- **Blocco 3:** tono di invito alla prova — immaginare casi diversi prima di fidarsi del programma.
 - **Blocco 4:** tono orientato alla competenza — il pensiero computazionale come skill reale.

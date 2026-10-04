@@ -1,6 +1,6 @@
 # Zona 2 — Testo espositivo
 **MC:** MC-ENE-3-04 — Elettricità e circuiti
-**Classe:** 3ª media · Livello Advanced (A)
+**Classe:** 3ª media · Livello Advanced (A) · Estratto breve per editing, distinto dalla MC completa di livello Intermediate (I)
 **Parole:** ~370
 **Visual di riferimento:** schema circuito semplice con 4 componenti etichettati
 
@@ -8,7 +8,7 @@
 
 ## TESTO
 
-Nell'hook abbiamo lasciato la rete elettrica senza deposito. Quella "cosa" che scorre in tempo reale, senza poter essere immagazzinata in grandi quantità, si chiama **corrente elettrica**: è un flusso ordinato di elettroni — le particelle con carica negativa presenti in ogni atomo — che si spostano attraverso un materiale conduttore.
+Nell’hook siamo partiti da una piccola scossa alla maniglia: una scarica di elettricità statica. In un filo di rame percorso da **corrente elettrica**, invece, le cariche si muovono in modo ordinato lungo il circuito. Nei metalli queste cariche sono elettroni, particelle con carica negativa presenti negli atomi.
 
 In un filo di rame ci sono miliardi di elettroni liberi. Finché non c'è una forza che li spinge tutti nella stessa direzione, si muovono a caso, senza produrre lavoro utile. La forza che li mette in moto si chiama **tensione elettrica**, misurata in volt (V). La quantità di carica che scorre in un secondo si chiama **intensità di corrente**, misurata in ampere (A).
 
@@ -59,5 +59,5 @@ Produrre uno **schema esploso del circuito semplice** con:
 | Prerequisito | MC-ENE-3-01 (macchine semplici e principi fisici) |
 | Prepara | MC-ENE-3-04 Zona 4 — costruzione circuito con Arduino/micro:bit |
 | Collegamento STEM | Matematica: relazione V = I × R (legge di Ohm) |
-| Hook → Zona 2 | Il blackout 2003 → rete senza deposito → corrente che scorre in tempo reale |
+| Hook → Zona 2 | La scossa alla maniglia → cariche elettriche → corrente nel circuito |
 | Zona 2 → Zona 4 | Domanda finale ("quanto scorre?") → attività misura con multimetro o simulatore |

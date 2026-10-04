@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Una macchia grande tre volte la Francia"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 39 sec.*
+> 🎧 *Ascolta prima di leggere. Durata: da verificare dopo la revisione del copione.*
 > *(Script completo: MC-MAT-1-04_hook-script.md)*
 
 **Domanda di avvio:**
@@ -16,7 +16,7 @@ C'è un posto nell'oceano Pacifico dove non si vede acqua. Si vede plastica.
 
 Si chiama Great Pacific Garbage Patch. È grande tre volte la Francia. Non è un'isola solida — è più come una zuppa densa di frammenti microscopici. I pesci li mangiano. Poi li mangiamo noi. Nel 2023, ricercatori hanno trovato microplastiche nel sangue di persone che vivevano nell'entroterra, lontane dall'oceano.
 
-Il problema non è che il riciclaggio non funziona. È che solo il 9% della plastica prodotta nella storia dell'umanità è stata riciclata.
+Il problema non è che il riciclaggio non funziona. È che, secondo una stima pubblicata nel 2017, soltanto il 9% dei rifiuti plastici generati nel mondo fino al 2015 era stato riciclato. È un dato storico sui rifiuti, non sulla totalità della plastica prodotta né sul tasso attuale di riciclo.
 
 Il 9.
 
@@ -32,7 +32,7 @@ Quella bottiglia che hai messo nel bidone giallo ieri sera è ancora da qualche 
 
 I rifiuti non si annullano. Si spostano. Cambiano forma. A volte diventano nuovi materiali. A volte diventano energia. A volte diventano inquinanti. Ma esistono ancora — in un bidone della spazzatura, in un camion, in un impianto di trattamento, in un campo di discarica, in un oceano.
 
-Gestire i rifiuti significa decidere cosa fare di questa materia che ha smesso di essere utile nella forma in cui si trovava. È una delle attività industriali più complesse, più costose e più politicamente difficili della società moderna. Ogni anno in Italia vengono prodotte circa 29 milioni di tonnellate di rifiuti urbani — circa 490 kg per abitante. Decidere cosa farne richiede infrastrutture enormi, tecnologie sofisticate, organizzazione logistica capillare, e — alla base di tutto — comportamenti corretti da parte di ogni singola persona che butta qualcosa in un bidone.
+Gestire i rifiuti significa decidere cosa fare di questa materia che ha smesso di essere utile nella forma in cui si trovava. È una delle attività industriali più complesse, più costose e più politicamente difficili della società moderna. Nel 2023 in Italia sono stati prodotti circa 29,3 milioni di tonnellate di rifiuti urbani, secondo ISPRA: un ordine di grandezza di circa 490 kg per abitante. Anno e fonte sono importanti, perché il dato cambia nel tempo. Decidere cosa farne richiede infrastrutture enormi, tecnologie sofisticate, organizzazione logistica capillare, e — alla base di tutto — comportamenti corretti da parte di ogni singola persona che butta qualcosa in un bidone.
 
 Quello che fai tu — in questo momento, in questa classe, quando usi i bidoni della differenziata — non è insignificante. È letteralmente una parte del sistema.
 
@@ -178,7 +178,9 @@ Il ciclo funziona, ma con molti limiti:
 
 **Plastica nera:** i contenitori in plastica nera (vassoi del supermercato, coperchi, posate usa-e-getta nere) contengono coloranti carboniosi che assorbono la luce infrarossa usata dai sensori di selezione automatica — le telecamere non le "vedono" e le scartano nell'indifferenziato. La stragrande maggioranza della plastica nera non viene riciclata.
 
-**Il dato di sistema:** a livello mondiale, solo il 9% della plastica prodotta in assoluto dall'inizio della produzione industriale (1950) al 2025 è stata riciclata. Il 12% è stata incenerita. Il restante 79% è in discariche, in ambienti naturali, o ancora in uso come oggetti.
+**Il dato di sistema:** la ricerca di Geyer, Jambeck e Law, pubblicata nel 2017, stima che dei rifiuti plastici generati fino al 2015 circa il 9% fosse stato riciclato, il 12% incenerito e il 79% accumulato in discarica o nell’ambiente. Le percentuali riguardano i rifiuti, quindi non includono la plastica ancora in uso e non descrivono automaticamente il 2025 o il 2026.
+
+<!-- Fonte della correzione: https://pmc.ncbi.nlm.nih.gov/articles/PMC5517107/ · consultata il 4 ottobre 2026. -->
 
 > 🌍 **Da dove viene? Quanto dura? Si può riparare?** La plastica viene (quasi sempre) dal petrolio. Dura tra 100 e 1000 anni in ambiente naturale. Non si ripara — si butta quando si rompe. Questo profilo di risposta alle tre domande spiega meglio di qualsiasi dato il problema sistemico della plastica.
 

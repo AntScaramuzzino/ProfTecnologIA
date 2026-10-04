@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "I tuoi dati valgono 0,47 centesimi. Per adesso."**
-> *Ascolta prima di leggere. Durata: 3 min 57 sec.*
+> *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 57 sec.*
 > *(Script completo: MC-DIG-2-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -72,7 +72,7 @@ Il GDPR è entrato in applicazione il 25 maggio 2018 ed è attualmente la normat
 
 **I tuoi sei diritti fondamentali:**
 
-**Diritto di accesso (Art. 15):** hai il diritto di sapere quali dati una piattaforma ha raccolto su di te. Puoi richiedere una copia completa dei tuoi dati — Google Takeout, ad esempio, ti permette di scaricare tutto quello che Google ha su di te in pochi clic.
+**Diritto di accesso (Art. 15):** hai il diritto di sapere quali dati una piattaforma ha raccolto su di te. Puoi richiedere una copia completa dei tuoi dati — Google Takeout, ad esempio, permette di esportare molte categorie di dati associate all’account. Altri dati possono richiedere una richiesta di accesso specifica: l’esportazione non comprende necessariamente tutto ciò che Google tratta su di te.
 
 **Diritto di rettifica (Art. 16):** se un dato è sbagliato, hai il diritto di farlo correggere.
 
@@ -288,7 +288,7 @@ Per ognuna, compila la tabella:
 
 ### AVANZATO — Richiesta formale dei propri dati (Google Takeout)
 
-**Prerequisito:** devi avere un account Google (se non ce l'hai, puoi usare l'account della famiglia con il permesso di un genitore, o svolgere l'esercizio in modo ipotetico descrivendo cosa faresti).
+**Prerequisito:** puoi usare un archivio dimostrativo predisposto dal docente, senza dati personali reali. Se lavori sul tuo account Google, svolgi l’attività con la supervisione prevista dalla scuola e dalla famiglia. Evita di usare cronologie di account familiari condivisi.
 
 **Obiettivo:** esercitare concretamente il diritto di accesso previsto dall'Art. 15 del GDPR e analizzare i dati raccolti.
 
@@ -304,7 +304,7 @@ Apri il file HTML della cronologia delle ricerche. Scorri le prime 50 ricerche. 
 **Passo 3 — Riflessione scritta:**
 Scrivi una pagina (circa 200-250 parole) che risponde a: cosa hai scoperto sui tuoi dati che non sapevi? Cambieresti qualcosa nel tuo uso dei servizi Google dopo questa analisi? Perché sì o perché no?
 
-**Nota:** questo esercizio richiede il permesso di un adulto se hai meno di 16 anni. Parla con i tuoi genitori prima di procedere.
+**Nota:** per questa attività richiediamo il permesso di un adulto se hai meno di 16 anni: è una precauzione didattica, non l’indicazione di una soglia legale generale. In Italia il consenso ai servizi della società dell’informazione, quando il trattamento si basa sul consenso, può essere espresso autonomamente dai 14 anni. Nell’elaborato consegna soltanto riflessioni e dati aggregati, senza cronologie personali, luoghi visitati o dati di altre persone.
 
 ---
 

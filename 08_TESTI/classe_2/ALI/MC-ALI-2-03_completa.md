@@ -8,14 +8,16 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il paese che ha inventato la dieta sana. E la ignora."**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 30 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 30 sec.*
 > *(Script completo: MC-ALI-2-03_hook-script.md)*
 
 **Domanda di avvio:**
 Quello che stai per mangiare a pranzo oggi potrebbe allungarti la vita di anni. Oppure no.
 Dipende da cosa hai nel piatto — e da cosa sai su quello che mangi.
 
-L'Italia ha inventato la dieta considerata più sana al mondo. L'UNESCO l'ha dichiarata Patrimonio dell'Umanità. Eppure quasi un bambino su tre tra i 6 e i 10 anni in Italia è in sovrappeso o obeso.
+La dieta mediterranea è una tradizione condivisa da più comunità del Mediterraneo, riconosciuta dall’UNESCO come patrimonio culturale immateriale. Il riconoscimento riguarda pratiche e cultura, non una classifica delle diete più sane. In Italia, nell’indagine OKkio alla SALUTE 2023, il 28,8% dei bambini della terza primaria era in sovrappeso o con obesità.
+
+<!-- Fonte della correzione: https://ich.unesco.org/en/RL/mediterranean-diet-00884 · https://www.epicentro.iss.it/okkioallasalute/indagine-2023-dati · consultata il 4 ottobre 2026. -->
 Il problema non è la mancanza di conoscenza. Il problema è che spesso la conoscenza non arriva prima delle scelte.
 Inizia adesso.
 

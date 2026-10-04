@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "L'invenzione che Napoleone ha pagato"**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 52 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 52 sec.*
 > *(Script completo: MC-ALI-2-02_hook-script.md)*
 
 **Domanda di avvio:**
@@ -68,7 +68,7 @@ La **surgelazione** porta la temperatura dell'alimento a −18°C o meno, molto 
 La velocità del congelamento è fondamentale: il **surgelamento rapido** (a −40°C o meno, in tunnel criogenici industriali) forma cristalli di ghiaccio microscopici che non danneggiano le cellule dell'alimento. Il congelamento lento in un freezer domestico forma cristalli di ghiaccio grandi che rompono le pareti cellulari, alterando la consistenza del prodotto dopo lo scongelamento. Ecco perché le verdure surgelate industrialmente mantengono meglio la struttura rispetto a quelle congelate in casa.
 
 > **Box Scienze — Perché il freddo rallenta i batteri**
-> I batteri crescono moltiplicandosi: una cellula si divide in due, due in quattro, quattro in otto. A temperatura corporea (37°C), un batterio come *Escherichia coli* si divide ogni 20 minuti. A 20°C (temperatura ambiente) si divide ogni 30-40 minuti. A 4°C (frigo) si divide ogni 12-24 ore. A −18°C (freezer) la divisione si blocca quasi completamente. Il metabolismo cellulare — tutte le reazioni chimiche che permettono alla cellula di vivere e riprodursi — dipende da enzimi, e gli enzimi lavorano molto più lentamente a temperature basse. Il freddo non uccide i batteri: li mette in uno stato di rallentamento metabolico. Appena la temperatura risale, si risvegliano e ricomincia la moltiplicazione. Per questo è pericoloso ricongelare un alimento scongelato.
+> I batteri crescono moltiplicandosi: una cellula si divide in due, due in quattro, quattro in otto. A temperatura corporea (37°C), un batterio come *Escherichia coli* si divide ogni 20 minuti. A 20°C (temperatura ambiente) si divide ogni 30-40 minuti. A 4°C (frigo) si divide ogni 12-24 ore. A −18°C (freezer) la divisione si blocca quasi completamente. Il metabolismo cellulare — tutte le reazioni chimiche che permettono alla cellula di vivere e riprodursi — dipende da enzimi, e gli enzimi lavorano molto più lentamente a temperature basse. Il freddo non uccide i batteri: li mette in uno stato di rallentamento metabolico. Appena la temperatura risale, si risvegliano e ricomincia la moltiplicazione. Il rischio dopo lo scongelamento dipende soprattutto da quanto tempo l’alimento resta a temperature favorevoli alla crescita dei microrganismi. Segui l’etichetta e le indicazioni di conservazione del prodotto; non ricongelare alimenti di cui non conosci la storia termica.
 
 ---
 
@@ -152,7 +152,7 @@ Un alimento conservato porta sempre un'etichetta. Saper leggere un'etichetta è 
 
 Un prodotto surgelato deve mantenere la temperatura di −18°C o meno dall'inizio alla fine: dal momento della produzione fino al momento in cui lo metti nel freezer di casa. Questa continuità si chiama **catena del freddo**, ed è un sistema logistico complesso che coinvolge mezzi di trasporto refrigerati, celle frigorifere nei magazzini, banchi frigoriferi nei supermercati.
 
-Se la catena del freddo si interrompe anche solo per poche ore, i microrganismi si risvegliano, iniziano a moltiplicarsi, e quando il prodotto viene ricongelato restano nel prodotto — congelati ma vivi, pronti a riprendere l'attività alla successiva scongelazione. Questo è il motivo per cui i surgelati hanno l'avviso "non ricongelare dopo lo scongelamento": non perché il prodotto "esploda" o diventi immediatamente pericoloso, ma perché ogni ciclo congela-scongela aumenta il numero di microrganismi e peggiora la qualità microbiologica del prodotto.
+Se la catena del freddo si interrompe anche solo per poche ore, i microrganismi si risvegliano, iniziano a moltiplicarsi, e quando il prodotto viene ricongelato restano nel prodotto — congelati ma vivi, pronti a riprendere l'attività alla successiva scongelazione. Questo è il motivo per cui i surgelati hanno l'avviso "non ricongelare dopo lo scongelamento": non perché il prodotto "esploda" o diventi immediatamente pericoloso, ma perché uno scongelamento con tempi o temperature inadeguati può favorire la crescita dei microrganismi. Un secondo congelamento non li elimina e può peggiorare la qualità del prodotto; il ciclo da solo non implica necessariamente un aumento dei microrganismi.
 
 Come riconoscere una catena del freddo interrotta: brina in eccesso (cristalli grandi di ghiaccio sulla superficie), prodotto ammassato (si è scongelato e ricongelato), confezione gonfia (produzione di gas da parte di microrganismi durante la fase di scongelamento).
 
@@ -162,7 +162,9 @@ Come riconoscere una catena del freddo interrotta: brina in eccesso (cristalli g
 > La reazione di Maillard è una delle più importanti in cucina: è quella che fa diventare dorata la crosta del pane, marrone la carne alla griglia, aromatico il caffè tostato. È una reazione chimica tra aminoacidi (proteine) e zuccheri riducenti che avviene ad alte temperature (sopra 140-150°C). Il risultato sono centinaia di nuovi composti chimici responsabili degli aromi e dei colori caratteristici. Senza la reazione di Maillard, il pane sarebbe bianco e insapore. La cottura non è solo un metodo di conservazione: è chimica applicata al sapore.
 
 > **Collegamento STEM — Biologia:**
-> Il botulismo è causato dalla tossina prodotta dal batterio *Clostridium botulinum*. Questa tossina blocca il rilascio di acetilcolina nelle giunzioni neuromuscolari, impedendo ai muscoli di contrarsi. Causa paralisi progressiva, che può essere letale se raggiunge i muscoli respiratori. La dose letale per un adulto è di circa 1-2 nanogrammi per kg di peso corporeo — è la sostanza naturale più tossica conosciuta. La conservazione in autoclave (121°C per 15 minuti) è l'unico metodo che distrugge le spore del *Clostridium botulinum*. Per questo non si deve mai consumare una lattina gonfia o ammaccata.
+> Il botulismo è causato dalla tossina prodotta dal batterio *Clostridium botulinum*. Questa tossina blocca il rilascio di acetilcolina nelle giunzioni neuromuscolari, impedendo ai muscoli di contrarsi. Causa paralisi progressiva, che può essere letale se raggiunge i muscoli respiratori. La dose letale per un adulto è di circa 1-2 nanogrammi per kg di peso corporeo — è la sostanza naturale più tossica conosciuta. Per le conserve poco acide, la distruzione delle spore richiede trattamenti di sterilizzazione sotto pressione validati per il prodotto. Non esiste un tempo universale di 15 minuti: contano alimento, contenitore, pressione e temperatura raggiunta anche all’interno. Il rischio può essere controllato anche impedendo la crescita del batterio, per esempio mediante acidificazione secondo procedure validate. Per preparare conserve segui le linee guida dell’ISS con un adulto; questo box non è una ricetta di conservazione. Per questo non si deve mai consumare una lattina gonfia o ammaccata.
+
+<!-- Fonte della correzione: https://www.epicentro.iss.it/botulismo/ · https://nchfp.uga.edu/how/can/general-information/selecting-the-correct-processing-time/ · consultata il 4 ottobre 2026. -->
 
 ---
 

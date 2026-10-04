@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Il robot che non sa dove si trova"**
-> 🎧 *Ascolta prima di leggere. Durata: 4 min 19 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 4 min 19 sec.*
 > *(Script completo: MC-DIG-3-01_hook-script.md)*
 
 **Domanda di avvio:**

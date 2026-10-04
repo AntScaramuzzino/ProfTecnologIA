@@ -8,7 +8,7 @@
 ## ⚡ INNESCA
 
 > **QR CODE AUDIO → "Più potente della NASA. In tasca."**
-> 🎧 *Ascolta prima di leggere. Durata: 3 min 34 sec.*
+> 🎧 *Ascolta prima di leggere. Durata indicativa non verificata: 3 min 34 sec.*
 > *(Script completo: MC-DIG-1-01_hook-script.md)*
 
 **Domanda di avvio:**
