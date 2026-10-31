@@ -91,7 +91,7 @@ export default function HomePage() {
                   Inizia dalla Classe 1ª →
                 </Link>
                 <a
-                  href="https://eduwiki-tecnologia.vercel.app"
+                  href="https://wikitecno.proftecnologia.it"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-blue-300 bg-blue-50 px-5 py-3 text-sm font-bold text-blue-700 hover:bg-blue-100 hover:border-blue-400"
@@ -224,7 +224,7 @@ export default function HomePage() {
                   🌐 www.proftecnologia.it
                 </a>
                 <a
-                  href="https://eduwiki-tecnologia.vercel.app"
+                  href="https://wikitecno.proftecnologia.it"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full border border-blue-700 px-4 py-2 text-xs font-bold text-blue-400 hover:bg-blue-900"
@@ -304,7 +304,7 @@ export default function HomePage() {
               <Link href="/credits" className="transition-colors hover:text-slate-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-400">Credits</Link>
               <span className="text-slate-700" aria-hidden="true">·</span>
               <a
-                href="https://eduwiki-tecnologia.vercel.app"
+                href="https://wikitecno.proftecnologia.it"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-400 text-blue-500"
