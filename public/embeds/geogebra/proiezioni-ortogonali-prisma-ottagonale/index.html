@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Proiezioni ortogonali di un prisma ottagonale — GeoGebra</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./activity.css" />
+    <script defer src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script defer src="./activity.js"></script>
+  </head>
+  <body>
+    <main class="activity" aria-labelledby="activity-title">
+      <header class="activity__header">
+        <div>
+          <p class="eyebrow">TAV.02 · PROIEZIONI ORTOGONALI — METODO EUROPEO</p>
+          <h1 id="activity-title">Il proiettore ortogonale</h1>
+          <p class="intro">
+            Lavora su un unico foglio da 48 × 33 cm con squadratura: osserva il prisma,
+            poi costruisci una vista alla volta. La tavola completa appare solo in Verifica.
+          </p>
+        </div>
+        <span class="level-badge" aria-label="Livello Intermediate">Livello I</span>
+      </header>
+
+      <section class="projector-toolbar" aria-label="Comandi del solido tridimensionale">
+        <button class="tool-button tool-button--active" type="button" aria-pressed="true" disabled>
+          Prisma ottagonale
+        </button>
+        <button id="rotate-left-button" class="tool-button" type="button" disabled>↺ −15°</button>
+        <button id="rotate-right-button" class="tool-button" type="button" disabled>+15° ↻</button>
+        <button id="tilt-down-button" class="tool-button" type="button" disabled>β −15°</button>
+        <button id="tilt-up-button" class="tool-button" type="button" disabled>β +15°</button>
+        <button id="snap-button" class="tool-button" type="button" aria-pressed="true" disabled>Aggancio 15°</button>
+        <button id="front-view-button" class="tool-button" type="button" aria-pressed="false" disabled>Prospetto</button>
+        <button id="side-view-button" class="tool-button" type="button" aria-pressed="false" disabled>Fianco</button>
+        <button id="top-view-button" class="tool-button" type="button" aria-pressed="false" disabled>Pianta</button>
+        <button id="zero-rotation-button" class="tool-button" type="button" disabled>Assonometria</button>
+        <div class="toolbar-status">
+          <span id="rotation-readout" class="rotation-readout">ROTAZIONE α 0° · β 30°</span>
+          <span id="score-badge" class="score-badge">0 / 5 sfide</span>
+        </div>
+      </section>
+
+      <section class="support-toolbar" aria-label="Controlli del supporto grafico">
+        <div>
+          <strong>Supporto grafico</strong>
+          <p id="paper-grid-description">Foglio 48 × 33 cm, squadratura a 1 cm e reticolo in scala con suddivisioni da 1, 5 e 10 mm.</p>
+        </div>
+        <div class="support-toolbar__actions">
+          <button
+            id="paper-grid-button"
+            class="tool-button support-toolbar__button"
+            type="button"
+            aria-pressed="true"
+            aria-describedby="paper-grid-description"
+            disabled
+          >Nascondi carta millimetrata</button>
+          <button
+            id="vertex-labels-button"
+            class="tool-button support-toolbar__button"
+            type="button"
+            aria-pressed="false"
+            aria-label="Mostra le lettere dei vertici sui piani PO, PV e PL"
+            disabled
+          >Mostra lettere A–P</button>
+        </div>
+      </section>
+
+      <section id="projection-toolbar" class="projection-toolbar" aria-label="Controlli delle proiezioni ortogonali" hidden>
+        <div>
+          <strong>Proiettanti tra le viste</strong>
+          <p id="projection-guides-description">Collegano PO, PV e PL. Non dipendono dalla rotazione del solido 3D.</p>
+        </div>
+        <button
+          id="projectors-button"
+          class="tool-button projection-toolbar__button"
+          type="button"
+          aria-pressed="false"
+          aria-describedby="projection-guides-description"
+          disabled
+        >Mostra tutte le proiettanti PO–PV–PL</button>
+      </section>
+
+      <nav id="step-nav" class="step-nav" aria-label="Passaggi della proiezione"></nav>
+
+      <section class="workspace" aria-label="Attività GeoGebra">
+        <div class="ggb-frame">
+          <div id="ggb-element" aria-label="Foglio tecnico 48 per 33 centimetri con le tre proiezioni ortogonali raccordate"></div>
+          <div
+            id="rotation-surface"
+            class="rotation-surface"
+            role="application"
+            tabindex="0"
+            aria-label="Solido tridimensionale interattivo: trascina o usa le frecce per ruotare"
+          >
+              <span>TRASCINA A 360° · FRECCE ← ↑ → ↓</span>
+          </div>
+          <div id="loading-state" class="loading-state" role="status" aria-live="polite">
+            <span class="spinner" aria-hidden="true"></span>
+            <span>Preparazione del tecnigrafo digitale…</span>
+          </div>
+        </div>
+
+        <aside class="step-card" aria-live="polite" aria-atomic="true">
+          <p id="step-kicker" class="step-card__kicker">Prima di iniziare</p>
+          <h2 id="step-title">Osserva il prisma</h2>
+          <p id="step-description"></p>
+          <div id="step-rule" class="rule-card"></div>
+
+          <section class="challenge" aria-labelledby="challenge-title">
+            <p class="challenge__eyebrow">Mini sfida</p>
+            <h3 id="challenge-title"></h3>
+            <div id="challenge-options" class="challenge__options"></div>
+            <p id="challenge-feedback" class="challenge__feedback" role="status" aria-live="polite"></p>
+          </section>
+        </aside>
+      </section>
+
+      <dl class="technical-titleblock" aria-label="Cartiglio della tavola">
+        <div><dt>OGGETTO</dt><dd>Prisma ottagonale</dd></div>
+        <div><dt>METODO</dt><dd>Europeo (1° diedro)</dd></div>
+        <div><dt>FORMATO</dt><dd>48 × 33 cm</dd></div>
+        <div><dt>SQUADRATURA</dt><dd>Margine 1 cm</dd></div>
+        <div><dt>SUPPORTO</dt><dd>Carta millimetrata</dd></div>
+        <div><dt>RETICOLO</dt><dd>1 · 5 · 10 mm</dd></div>
+      </dl>
+
+      <section class="protocol-bar" aria-label="Barra in basso per controllare l’animazione">
+        <div class="protocol-bar__transport" role="group" aria-label="Navigazione dei passaggi">
+          <button id="first-button" class="protocol-control" type="button" title="Torna all’inizio" disabled>
+            <span aria-hidden="true">|◀</span><span class="sr-only">Primo passaggio</span>
+          </button>
+          <button id="previous-button" class="protocol-control" type="button" title="Passaggio precedente" disabled>
+            <span aria-hidden="true">◀</span><span class="sr-only">Indietro</span>
+          </button>
+          <button id="play-button" class="protocol-control protocol-control--play" type="button" title="Avvia o ferma l’animazione" aria-pressed="false" disabled>
+            <span class="play-icon" aria-hidden="true">▶</span><span class="play-label">Avvia</span>
+          </button>
+          <button id="next-button" class="protocol-control" type="button" title="Passaggio successivo" disabled>
+            <span aria-hidden="true">▶</span><span class="sr-only">Avanti</span>
+          </button>
+          <button id="last-button" class="protocol-control" type="button" title="Vai alla tavola completa" disabled>
+            <span aria-hidden="true">▶|</span><span class="sr-only">Ultimo passaggio</span>
+          </button>
+          <span id="step-counter" class="protocol-counter" aria-live="polite">1 / 5</span>
+        </div>
+
+        <label class="protocol-speed" for="animation-speed">
+          <span>Velocità</span>
+          <input id="animation-speed" type="number" min="0.5" max="4" step="0.25" value="2.5" inputmode="decimal" />
+          <span>s</span>
+        </label>
+
+        <button id="protocol-toggle-button" class="protocol-button" type="button" aria-controls="protocol-steps" aria-expanded="false" disabled>
+          Protocollo della tavola
+        </button>
+        <ol id="protocol-steps" class="protocol-steps" hidden></ol>
+      </section>
+
+      <section id="check-panel" class="check-panel" hidden>
+        <div>
+          <p class="check-panel__eyebrow">Controllo di coerenza</p>
+          <h2>Tre viste, un solo oggetto</h2>
+          <p>
+            La pianta conserva <strong>larghezza e profondità</strong>. Prospetto e fianco
+            conservano la stessa <strong>altezza di 7 cm</strong>. Gli archi di ribaltamento
+            da 90° trasferiscono la profondità dalla pianta al fianco senza modificarla.
+          </p>
+        </div>
+        <span id="geometry-check" class="geometry-check">Verifica geometrica in corso…</span>
+      </section>
+
+      <footer class="activity__footer">
+        <p>Premi <kbd>F</kbd> per la modalità a tutto schermo. Puoi ingrandire la tavola con i controlli GeoGebra.</p>
+        <div class="footer-actions">
+          <button id="reset-button" class="text-button" type="button" disabled>Ricomincia</button>
+          <button id="download-button" class="text-button" type="button" disabled>Scarica il file .ggb</button>
+        </div>
+      </footer>
+
+      <p class="source-note">
+        Crediti: Antonio Scaramuzzino · ProfTecnologIA
+      </p>
+    </main>
+  </body>
+</html>
