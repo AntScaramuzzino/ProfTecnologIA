@@ -9,7 +9,7 @@ export default function SiteFooter() {
     <footer className="border-t border-slate-200 bg-white px-4 py-4 sm:px-6">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
         <div className="flex items-center gap-2">
-          <span className="font-black text-slate-600">ProfTecnologIA</span>
+          <span className="font-black text-slate-600">Book ProfTecnologIA</span>
           <span className="rounded-full border border-slate-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500">
             v0.1
           </span>

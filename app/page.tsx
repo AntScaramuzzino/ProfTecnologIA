@@ -55,6 +55,7 @@ export default function HomePage() {
               </div>
 
               <h1 className="max-w-3xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+                <span className="block text-2xl font-black uppercase tracking-[0.25em] text-emerald-700 sm:text-3xl">Book</span>
                 Prof<span className="text-emerald-600">TecnologIA</span>
               </h1>
 
@@ -207,7 +208,7 @@ export default function HomePage() {
             <div>
               <p className="mb-2 text-xs font-bold uppercase tracking-widest text-emerald-400">Il progetto</p>
               <h2 className="text-3xl font-black sm:text-4xl">
-                Prof<span className="text-emerald-400">TecnologIA</span>
+                Book Prof<span className="text-emerald-400">TecnologIA</span>
               </h2>
               <p className="mt-4 text-sm leading-7 text-slate-400">
                 Un ecosistema didattico integrato per la Tecnologia nella scuola secondaria di I grado:
@@ -288,7 +289,7 @@ export default function HomePage() {
 
             {/* Riga brand + copyright */}
             <div className="flex items-center gap-2 text-xs text-slate-500">
-              <span className="font-black text-emerald-400">ProfTecnologIA</span>
+              <span className="font-black text-emerald-400">Book ProfTecnologIA</span>
               <span className="text-slate-700">·</span>
               <span>© 2026 Prof. Ing. Antonio Scaramuzzino</span>
               <span className="text-slate-700">·</span>

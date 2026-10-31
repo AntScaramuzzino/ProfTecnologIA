@@ -37,7 +37,7 @@ export default async function AnnoPage({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       <Breadcrumb items={[
-        { label: "ProfTecnologIA", href: "/" },
+        { label: "Book ProfTecnologIA", href: "/" },
         { label: `Classe ${annoNum}ª` },
       ]} />
 

@@ -182,7 +182,7 @@ export default function GlossarioClient() {
         <div className="mx-auto max-w-5xl px-6 py-10">
           {/* Breadcrumb */}
           <nav className="mb-6 flex items-center gap-2 text-xs text-slate-400">
-            <Link href="/" className="hover:text-slate-700">ProfTecnologIA</Link>
+            <Link href="/" className="hover:text-slate-700">Book ProfTecnologIA</Link>
             <span>/</span>
             <span className="font-semibold text-slate-700">Glossario competenze</span>
           </nav>

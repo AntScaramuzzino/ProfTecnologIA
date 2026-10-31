@@ -18,7 +18,9 @@ const atkinson = Atkinson_Hyperlegible({
 });
 
 export const metadata: Metadata = {
-  title: "ProfTecnologIA — Libro di Tecnologia",
+  metadataBase: new URL("https://book.proftecnologia.it"),
+  title: "Book ProfTecnologIA — Libro di Tecnologia",
+  applicationName: "Book ProfTecnologIA",
   description: "Percorso didattico interattivo per la scuola secondaria di primo grado",
 };
 

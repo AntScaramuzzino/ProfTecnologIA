@@ -13,7 +13,7 @@ export default function AngleBisectorLaboratoryPage() {
     <div className="min-h-screen bg-[#f7f8f5] text-slate-900">
       <Breadcrumb
         items={[
-          { label: "ProfTecnologIA", href: "/" },
+          { label: "Book ProfTecnologIA", href: "/" },
           { label: "MC-DIS-1-01", href: "/mc/MC-DIS-1-01", emoji: "📐", color: "#1A3A7A" },
           { label: "Laboratorio GeoGebra", color: "#1A3A7A" },
         ]}

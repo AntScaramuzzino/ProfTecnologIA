@@ -20,7 +20,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
       "@type": "ListItem",
       position: i + 1,
       name: item.label,
-      ...(item.href ? { item: `https://antscaramuzzino.github.io/ProfTecnologIA${item.href}` } : {}),
+      ...(item.href ? { item: `https://book.proftecnologia.it${item.href}` } : {}),
     })),
   };
 

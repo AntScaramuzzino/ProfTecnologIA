@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { getAllMCs } from "@/lib/mc-loader";
 
 export const metadata: Metadata = {
-  title: "Architettura semantica — ProfTecnologIA",
+  title: "Architettura semantica — Book ProfTecnologIA",
   description: "La struttura del sistema ProfTecnologIA: agenti AI, pipeline di produzione, micro-competenze e framework didattici.",
 };
 
@@ -74,7 +74,7 @@ export default function ArchitetturaPage() {
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       {/* Breadcrumb */}
       <Breadcrumb items={[
-        { label: "ProfTecnologIA", href: "/" },
+        { label: "Book ProfTecnologIA", href: "/" },
         { label: "Architettura semantica" },
       ]} />
 

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Credits — ProfTecnologIA",
+  title: "Credits — Book ProfTecnologIA",
   description: "Fonti, crediti e dichiarazione sull'uso dell'intelligenza artificiale nel progetto ProfTecnologIA.",
 };
 
@@ -102,7 +102,7 @@ export default function CreditsPage() {
 
       {/* Breadcrumb */}
       <Breadcrumb items={[
-        { label: "ProfTecnologIA", href: "/" },
+        { label: "Book ProfTecnologIA", href: "/" },
         { label: "Credits e fonti" },
       ]} />
 

@@ -31,14 +31,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const mc = getMCById(id);
-  if (!mc) return { title: "ProfTecnologIA" };
+  if (!mc) return { title: "Book ProfTecnologIA" };
   const area = AREA_META[mc.area];
   const areaLabel = area?.label ?? mc.area;
   return {
-    title: `ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
+    title: `Book ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
     description: mc.descrizione,
     openGraph: {
-      title: `ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
+      title: `Book ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
       description: mc.descrizione,
     },
   };
@@ -77,7 +77,7 @@ export default async function MCPage({ params }: Props) {
     <main className="min-h-screen bg-[#f7f8f5] text-slate-900">
       <Breadcrumb
         items={[
-          { label: "ProfTecnologIA", href: "/" },
+          { label: "Book ProfTecnologIA", href: "/" },
           { label: areaBreadcrumbLabel, href: `/area/${mc.area}`, emoji: area?.emoji, color: areaHex },
           { label: mc.id, color: areaHex },
         ]}

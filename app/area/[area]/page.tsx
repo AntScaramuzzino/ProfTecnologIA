@@ -33,7 +33,7 @@ export default async function AreaPage({ params }: PageProps) {
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       <Breadcrumb items={[
-        { label: "ProfTecnologIA", href: "/" },
+        { label: "Book ProfTecnologIA", href: "/" },
         { label: meta.label.toUpperCase(), emoji: meta.emoji, color: meta.hex },
       ]} />
 

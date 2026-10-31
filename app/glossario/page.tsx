@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import GlossarioClient from "./GlossarioClient";
 
 export const metadata: Metadata = {
-  title: "Glossario competenze — ProfTecnologIA",
+  title: "Glossario competenze — Book ProfTecnologIA",
   description:
     "Tutte le competenze delle professioni del futuro presenti nel libro ProfTecnologIA: definizioni, esempi concreti e area tematica.",
 };
