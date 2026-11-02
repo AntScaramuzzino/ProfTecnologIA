@@ -1,0 +1,426 @@
+[
+  {
+    "mcId": "MC-ALI-2-01",
+    "titolo": "Dal seme alla mensa",
+    "archetipo": "Simulatore",
+    "area": "ALI",
+    "classe": 2,
+    "descrizione": "Il cibo inizia dal suolo, e il suolo non è scontato."
+  },
+  {
+    "mcId": "MC-ALI-2-02",
+    "titolo": "Laboratorio della conservazione",
+    "archetipo": "Smistatore",
+    "area": "ALI",
+    "classe": 2,
+    "descrizione": "Il cibo si deteriora per colpa di nemici invisibili: batteri, muffe, enzimi, ossigeno."
+  },
+  {
+    "mcId": "MC-ALI-2-03",
+    "titolo": "Il piatto equilibrato",
+    "archetipo": "Calcolatore",
+    "area": "ALI",
+    "classe": 2,
+    "descrizione": "Mangiare è chimica, e la tecnologia la controlla."
+  },
+  {
+    "mcId": "MC-ALI-2-04",
+    "titolo": "Il viaggio del cibo",
+    "archetipo": "Flussi",
+    "area": "ALI",
+    "classe": 2,
+    "descrizione": "Il cibo non appare per magia: ha una storia."
+  },
+  {
+    "mcId": "MC-ALI-2-05",
+    "titolo": "Packaging sotto la lente",
+    "archetipo": "Comparatore",
+    "area": "ALI",
+    "classe": 2,
+    "descrizione": "L'imballaggio non è solo una scatola: protegge, conserva, informa, trasporta, vende."
+  },
+  {
+    "mcId": "MC-ALI-2-06",
+    "titolo": "Il comitato del cibo futuro",
+    "archetipo": "Scenario",
+    "area": "ALI",
+    "classe": 2,
+    "descrizione": "La tecnologia al servizio del cibo non è una novità: il pane lievitato e il formaggio lo sono da millenni."
+  },
+  {
+    "mcId": "MC-AMB-2-01",
+    "titolo": "Forze in gioco",
+    "archetipo": "Costruttore",
+    "area": "AMB",
+    "classe": 2,
+    "descrizione": "Ogni edificio è una macchina per sopportare forze."
+  },
+  {
+    "mcId": "MC-AMB-2-02",
+    "titolo": "La bolletta di casa",
+    "archetipo": "Calcolatore",
+    "area": "AMB",
+    "classe": 2,
+    "descrizione": "Una casa non è solo muri e tetto: è un sistema di impianti."
+  },
+  {
+    "mcId": "MC-AMB-2-03",
+    "titolo": "Il quartiere sotto la lente",
+    "archetipo": "Costruttore",
+    "area": "AMB",
+    "classe": 2,
+    "descrizione": "Una città non si forma per caso: è il risultato di scelte."
+  },
+  {
+    "mcId": "MC-AMB-2-04",
+    "titolo": "Sole e casa",
+    "archetipo": "Simulatore",
+    "area": "AMB",
+    "classe": 2,
+    "descrizione": "Gennaio, −5 °C fuori, riscaldamento spento: dentro ci sono 18 °C."
+  },
+  {
+    "mcId": "MC-AMB-2-05",
+    "titolo": "Il viaggio dell'acqua",
+    "archetipo": "Flussi",
+    "area": "AMB",
+    "classe": 2,
+    "descrizione": "L'acqua ha due cicli: uno naturale e uno costruito da noi."
+  },
+  {
+    "mcId": "MC-AMB-2-06",
+    "titolo": "Cruscotto della città",
+    "archetipo": "Laboratorio dati",
+    "area": "AMB",
+    "classe": 2,
+    "descrizione": "Una smart city non è un videogioco: è una città che misura e decide con i dati."
+  },
+  {
+    "mcId": "MC-COM-3-01",
+    "titolo": "Mappa del Wi-Fi",
+    "archetipo": "Flussi",
+    "area": "COM",
+    "classe": 3,
+    "descrizione": "L'infrastruttura invisibile: il tuo messaggio viaggia nell'aria come onda radio, poi in un cavo, poi magari sotto l'oceano."
+  },
+  {
+    "mcId": "MC-COM-3-02",
+    "titolo": "Studio di registrazione",
+    "archetipo": "Simulatore",
+    "area": "COM",
+    "classe": 3,
+    "descrizione": "Un podcast, un video, una foto: i contenuti digitali sono numeri, e i numeri pesano."
+  },
+  {
+    "mcId": "MC-COM-3-03",
+    "titolo": "Il tragitto casa-scuola",
+    "archetipo": "Calcolatore",
+    "area": "COM",
+    "classe": 3,
+    "descrizione": "Tutto si muove: persone, merci, informazioni."
+  },
+  {
+    "mcId": "MC-COM-3-04",
+    "titolo": "Casa domotica per Carmelo",
+    "archetipo": "Costruttore",
+    "area": "COM",
+    "classe": 3,
+    "descrizione": "Dalle macchine a vapore ai sistemi intelligenti, ogni automazione ha la stessa struttura: un sensore misura, una logica decide, un attuatore agisce."
+  },
+  {
+    "mcId": "MC-COM-3-05",
+    "titolo": "Internet non è una nuvola",
+    "archetipo": "Flussi",
+    "area": "COM",
+    "classe": 3,
+    "descrizione": "La chiamiamo «cloud», ma internet è fatta di antenne, centrali, data center e cavi posati sul fondo degli oceani."
+  },
+  {
+    "mcId": "MC-COM-3-06",
+    "titolo": "Virale o vero?",
+    "archetipo": "Ispettore",
+    "area": "COM",
+    "classe": 3,
+    "descrizione": "Nell'economia dell'attenzione il prodotto è il tuo tempo."
+  },
+  {
+    "mcId": "MC-DIG-1-01",
+    "titolo": "Dentro il dispositivo",
+    "archetipo": "Costruttore",
+    "area": "DIG",
+    "classe": 1,
+    "descrizione": "Un ambiente che non si vede, ma che usi ogni giorno."
+  },
+  {
+    "mcId": "MC-DIG-1-02",
+    "titolo": "Detective delle fonti",
+    "archetipo": "Ispettore",
+    "area": "DIG",
+    "classe": 1,
+    "descrizione": "Internet ha un sacco di informazioni, ma non tutte sono vere."
+  },
+  {
+    "mcId": "MC-DIG-2-01",
+    "titolo": "Caccia al bug in Scratch",
+    "archetipo": "Programmatore",
+    "area": "DIG",
+    "classe": 2,
+    "descrizione": "Prima del codice viene il pensiero computazionale."
+  },
+  {
+    "mcId": "MC-DIG-2-02",
+    "titolo": "Le tracce che lasci",
+    "archetipo": "Ispettore",
+    "area": "DIG",
+    "classe": 2,
+    "descrizione": "Un dato personale sembra una cosa ovvia, ma non lo è."
+  },
+  {
+    "mcId": "MC-DIG-2-03",
+    "titolo": "Desktop in ordine",
+    "archetipo": "Smistatore",
+    "area": "DIG",
+    "classe": 2,
+    "descrizione": "Usare bene il computer è una competenza che si impara."
+  },
+  {
+    "mcId": "MC-DIG-2-05",
+    "titolo": "Benessere digitale",
+    "archetipo": "Scenario",
+    "area": "DIG",
+    "classe": 2,
+    "descrizione": "La tecnologia non è neutrale: le app sono progettate per tenerti dentro il più a lungo possibile."
+  },
+  {
+    "mcId": "MC-DIG-3-01",
+    "titolo": "Robot segui-linea",
+    "archetipo": "Programmatore",
+    "area": "DIG",
+    "classe": 3,
+    "descrizione": "Un robot ha organi di senso (i sensori) e muscoli (gli attuatori)."
+  },
+  {
+    "mcId": "MC-DIG-3-02",
+    "titolo": "IA: che cosa fa, chi decide",
+    "archetipo": "Smistatore",
+    "area": "DIG",
+    "classe": 3,
+    "descrizione": "L'intelligenza artificiale è già nel tuo telefono: sceglie le canzoni, filtra lo spam, completa le parole."
+  },
+  {
+    "mcId": "MC-DIG-3-03",
+    "titolo": "Grafici che parlano (e che mentono)",
+    "archetipo": "Laboratorio dati",
+    "area": "DIG",
+    "classe": 3,
+    "descrizione": "Un sensore trasforma il mondo fisico in numeri."
+  },
+  {
+    "mcId": "MC-DIG-3-04",
+    "titolo": "Il sito senza barriere",
+    "archetipo": "Ispettore",
+    "area": "DIG",
+    "classe": 3,
+    "descrizione": "Un sito è accessibile quando lo può usare chiunque: chi non vede, chi non usa il mouse, chi distingue male i colori."
+  },
+  {
+    "mcId": "MC-DIS-1-01",
+    "titolo": "Riga e compasso",
+    "archetipo": "Tavolo grafico",
+    "area": "DIS",
+    "classe": 1,
+    "descrizione": "Euclide costruiva figure perfette con un righello senza tacche e un compasso, 2.300 anni fa."
+  },
+  {
+    "mcId": "MC-DIS-1-02",
+    "titolo": "Lo scalatore",
+    "archetipo": "Simulatore",
+    "area": "DIS",
+    "classe": 1,
+    "descrizione": "Come si disegna un appartamento su un foglio A4?"
+  },
+  {
+    "mcId": "MC-DIS-2-02",
+    "titolo": "Cavaliera o isometrica?",
+    "archetipo": "Tavolo grafico",
+    "area": "DIS",
+    "classe": 2,
+    "descrizione": "Le proiezioni ortogonali sono precise, ma chi non le sa leggere non capisce la forma."
+  },
+  {
+    "mcId": "MC-DIS-3-01",
+    "titolo": "Punto di fuga",
+    "archetipo": "Tavolo grafico",
+    "area": "DIS",
+    "classe": 3,
+    "descrizione": "Dal segno al volume: la prospettiva rappresenta le cose come le vede l'occhio, con le linee che si incontrano all'orizzonte."
+  },
+  {
+    "mcId": "MC-DIS-3-02",
+    "titolo": "Dal CAD alla stampa 3D",
+    "archetipo": "Tavolo grafico",
+    "area": "DIS",
+    "classe": 3,
+    "descrizione": "Dal tavolo da disegno al cloud: con il CAD un oggetto nasce da forme semplici che si sommano e si sottraggono."
+  },
+  {
+    "mcId": "MC-ENE-3-02",
+    "titolo": "L'impronta di carbonio di casa",
+    "archetipo": "Calcolatore",
+    "area": "ENE",
+    "classe": 3,
+    "descrizione": "Nei combustibili fossili c'è energia accumulata in milioni di anni, che noi liberiamo in un attimo."
+  },
+  {
+    "mcId": "MC-ENE-3-03",
+    "titolo": "Fotovoltaico per la scuola",
+    "archetipo": "Simulatore",
+    "area": "ENE",
+    "classe": 3,
+    "descrizione": "Una fonte è rinnovabile quando si ricarica alla stessa velocità con cui la usiamo."
+  },
+  {
+    "mcId": "MC-ENE-3-04",
+    "titolo": "Breadboard virtuale",
+    "archetipo": "Simulatore",
+    "area": "ENE",
+    "classe": 3,
+    "descrizione": "Tensione, corrente, resistenza: tre grandezze legate da una legge sola, V = R × I."
+  },
+  {
+    "mcId": "MC-ENE-3-05",
+    "titolo": "Dove va l'energia",
+    "archetipo": "Flussi",
+    "area": "ENE",
+    "classe": 3,
+    "descrizione": "Il calore è energia, ma trasformarlo in movimento costa caro: un motore a benzina scalda molto più di quanto spinge."
+  },
+  {
+    "mcId": "MC-ENE-3-06",
+    "titolo": "La rete in 24 ore",
+    "archetipo": "Simulatore",
+    "area": "ENE",
+    "classe": 3,
+    "descrizione": "Il problema dell'intermittenza: il sole c'è quando c'è, non quando servirebbe."
+  },
+  {
+    "mcId": "MC-INF-1-01",
+    "titolo": "Bit-lab",
+    "archetipo": "Simulatore",
+    "area": "INF",
+    "classe": 1,
+    "descrizione": "Tutto quello che il computer «vede» è un numero, e ogni numero è fatto di 0 e 1."
+  },
+  {
+    "mcId": "MC-INF-1-02",
+    "titolo": "Gara di ricerca",
+    "archetipo": "Programmatore",
+    "area": "INF",
+    "classe": 1,
+    "descrizione": "Un computer fa esattamente quello che gli dici, anche quando sbagli."
+  },
+  {
+    "mcId": "MC-INF-2-01",
+    "titolo": "Sei il sistema operativo",
+    "archetipo": "Simulatore",
+    "area": "INF",
+    "classe": 2,
+    "descrizione": "Senza sistema operativo il computer è un blocco di silicio."
+  },
+  {
+    "mcId": "MC-INF-2-02",
+    "titolo": "Cripto-lab",
+    "archetipo": "Simulatore",
+    "area": "INF",
+    "classe": 2,
+    "descrizione": "Ogni segreto digitale è matematica."
+  },
+  {
+    "mcId": "MC-INF-3-01",
+    "titolo": "Internet delle Cose",
+    "archetipo": "Costruttore",
+    "area": "INF",
+    "classe": 3,
+    "descrizione": "Il mondo fisico parla digitale, se sai ascoltarlo."
+  },
+  {
+    "mcId": "MC-INF-3-02",
+    "titolo": "Addestra il classificatore",
+    "archetipo": "Laboratorio dati",
+    "area": "INF",
+    "classe": 3,
+    "descrizione": "Le macchine non pensano: ottimizzano."
+  },
+  {
+    "mcId": "MC-MAT-1-01",
+    "titolo": "Banco dei materiali",
+    "archetipo": "Banco prova",
+    "area": "MAT",
+    "classe": 1,
+    "descrizione": "Tutto ha un materiale, e ogni materiale ha una storia."
+  },
+  {
+    "mcId": "MC-MAT-1-02",
+    "titolo": "Passaporto tecnologico",
+    "archetipo": "Flussi",
+    "area": "MAT",
+    "classe": 1,
+    "descrizione": "Un oggetto non nasce sullo scaffale del negozio."
+  },
+  {
+    "mcId": "MC-MAT-1-03",
+    "titolo": "Materiali del futuro",
+    "archetipo": "Comparatore",
+    "area": "MAT",
+    "classe": 1,
+    "descrizione": "I materiali tradizionali non bastano più: sono troppi, durano troppo o costano troppo al pianeta."
+  },
+  {
+    "mcId": "MC-MAT-1-05",
+    "titolo": "Banco dei metalli",
+    "archetipo": "Banco prova",
+    "area": "MAT",
+    "classe": 1,
+    "descrizione": "Ferro, alluminio, rame: dominano l'industria da migliaia di anni."
+  },
+  {
+    "mcId": "MC-MAT-1-06",
+    "titolo": "Fibre, plastiche e compositi",
+    "archetipo": "Banco prova",
+    "area": "MAT",
+    "classe": 1,
+    "descrizione": "La tua felpa, il tuo zaino e la suola delle scarpe vengono da tre famiglie diverse: fibre, plastiche e compositi."
+  },
+  {
+    "mcId": "MC-SIS-3-01",
+    "titolo": "Dove vanno i tuoi soldi",
+    "archetipo": "Flussi",
+    "area": "SIS",
+    "classe": 3,
+    "descrizione": "Un sistema economico decide che cosa produrre, come e per chi."
+  },
+  {
+    "mcId": "MC-SIS-3-02",
+    "titolo": "Gruppo d'acquisto solidale",
+    "archetipo": "Comparatore",
+    "area": "SIS",
+    "classe": 3,
+    "descrizione": "La globalizzazione ha portato prodotti a basso prezzo da tutto il mondo, ma anche fabbriche che si spostano e filiere in cui chi produce guadagna poco."
+  },
+  {
+    "mcId": "MC-SIS-3-03",
+    "titolo": "Business Model Canvas",
+    "archetipo": "Canvas",
+    "area": "SIS",
+    "classe": 3,
+    "descrizione": "Un'impresa nasce da un problema reale e da qualcuno disposto a pagare per risolverlo."
+  },
+  {
+    "mcId": "MC-SIS-3-04",
+    "titolo": "Bussola delle professioni",
+    "archetipo": "Canvas",
+    "area": "SIS",
+    "classe": 3,
+    "descrizione": "Megatrend come digitale, transizione energetica e invecchiamento della popolazione stanno cambiando il lavoro."
+  }
+]

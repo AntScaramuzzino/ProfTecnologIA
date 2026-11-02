@@ -106,7 +106,7 @@
       const dn = $c("button", null, "↓"); dn.setAttribute("aria-label", `Sposta giù: ${it[0]}`); dn.disabled = i === n - 1; dn.onclick = () => { [idx[i + 1], idx[i]] = [idx[i], idx[i + 1]]; checked = false; f.hidden = true; draw(); };
       r.append(up, dn); list.appendChild(r); }); }
     go.onclick = () => { checked = true; const ok = idx.filter((k, i) => k === i).length; sc.textContent = `${ok}/${n}`; draw();
-      fb(f, ok === n ? "ok" : "ko", ok === n ? `<strong>Ordine corretto.</strong> ${b.done || ""}` : `<strong>${ok} posizioni giuste su ${n}.</strong> Le righe rosse sono fuori posto: spostale e verifica di nuovo.`); };
+      fb(f, ok === n ? "ok" : "ko", ok === n ? `<strong>Ordine corretto.</strong> ${b.done || ""}` : `<strong>${ok === 1 ? "1 posizione giusta" : ok + " posizioni giuste"} su ${n}.</strong> Le righe rosse sono fuori posto: spostale e verifica di nuovo.`); };
     draw(); return box;
   }
 

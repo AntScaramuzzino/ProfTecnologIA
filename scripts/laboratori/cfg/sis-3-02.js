@@ -1,0 +1,28 @@
+LABENGINE.run({
+  id: "MC-SIS-3-02", area: "SIS", classe: 3, titolo: "Gruppo d'acquisto solidale", archetipo: "Comparatore",
+  hook: "La globalizzazione ha portato prodotti a basso prezzo da tutto il mondo, ma anche fabbriche che si spostano e filiere in cui chi produce guadagna poco. Il commercio equo e i Gruppi di Acquisto Solidale provano un'altra strada.",
+  levels: [
+    { brief: "Che cosa garantisce un marchio di commercio equo e che cosa no? Classifica le affermazioni.",
+      blocks: [
+        { type: "sort", categories: [["si", "È una garanzia del commercio equo"], ["no", "Non è garantito di per sé"]],
+          items: [["Un prezzo minimo pagato ai produttori, anche se il mercato scende", "si", ""], ["Un premio in più per progetti della comunità (scuole, pozzi)", "si", ""], ["Che il prodotto sia biologico", "no", "Sono certificazioni diverse: un prodotto può essere equo senza essere bio."], ["Che il prodotto sia a chilometro zero", "no", "Caffè e cacao arrivano comunque da lontano."], ["Il divieto del lavoro minorile sfruttato", "si", ""], ["Che costi meno", "no", "Spesso costa di più: è il prezzo di una filiera più giusta."]] },
+        { type: "canvas", title: "Il tuo confronto", fields: [["prod", "Prodotto scelto (cioccolato, caffè, tè, banane, zucchero di canna)", ""], ["conv", "Convenzionale: prezzo per 100 g, paese d'origine", ""], ["eq", "Equosolidale: prezzo per 100 g, paese, certificazione", ""]],
+          checks: [["Prezzi per 100 g di entrambi", (v) => /\d/.test(v.conv) && /\d/.test(v.eq)]], out: (v) => `${v.prod}\nConvenzionale: ${v.conv}\nEquosolidale: ${v.eq}` } ],
+      reflect: "La differenza di prezzo che hai trovato ti sembra giustificata? Da che cosa dipende?" },
+    { brief: "Un GAS per la classe: cinque prodotti, ciascuno con un'alternativa locale entro 50 km. Inserisci i prezzi che hai trovato (qui valori d'esempio) e confronta la spesa.",
+      blocks: [
+        { type: "sim", params: [{ id: "f1", label: "Farina 1 kg · supermercato", min: 0.5, max: 5, step: 0.05, value: 1.1, unit: "€", d: 2 }, { id: "f2", label: "Farina 1 kg · mulino locale", min: 0.5, max: 5, step: 0.05, value: 1.8, unit: "€", d: 2 }, { id: "o1", label: "Olio extravergine 1 L · supermercato", min: 4, max: 20, step: 0.1, value: 9.5, unit: "€", d: 2 }, { id: "o2", label: "Olio extravergine 1 L · frantoio locale", min: 4, max: 20, step: 0.1, value: 11, unit: "€", d: 2 }, { id: "l1", label: "Legumi 1 kg · supermercato", min: 1, max: 10, step: 0.1, value: 3.2, unit: "€", d: 2 }, { id: "l2", label: "Legumi 1 kg · produttore locale", min: 1, max: 10, step: 0.1, value: 4.5, unit: "€", d: 2 }, { id: "fam", label: "Famiglie che aderiscono al GAS", min: 1, max: 30, step: 1, value: 10 }],
+          outputs: [{ key: "sup", label: "Spesa al supermercato (per famiglia)", f: (p) => p.f1 + p.o1 + p.l1, unit: "€", d: 2 }, { key: "loc", label: "Spesa locale (per famiglia)", f: (p) => p.f2 + p.o2 + p.l2, unit: "€", d: 2 }, { key: "diff", label: "Differenza", f: (p, o) => ((o.loc - o.sup) / o.sup) * 100, unit: "%", d: 1 }, { key: "prod", label: "Soldi che vanno ai produttori locali al mese", f: (p, o) => o.loc * p.fam * 4, unit: "€" }],
+          bars: (p, o) => [["Supermercato", o.sup], ["GAS locale", o.loc]], barsUnit: "€", barsD: 2,
+          note: (p, o) => ["ok", `Il paniere locale costa il ${LABENGINE.fmt(o.diff, 1)}% in più. Un GAS può ridurre la differenza acquistando insieme quantità più grandi: chiedilo ai produttori.`] } ],
+      reflect: "Oltre al prezzo, quali vantaggi e quali scomodità ha un GAS rispetto al supermercato?" },
+    { label: "Scenario · lo stabilimento che chiude", brief: "Un'azienda chiude uno stabilimento in Italia con 200 dipendenti e sposta la produzione all'estero. Prendi il punto di vista di ogni attore: le scelte cambiano tre indicatori.",
+      blocks: [
+        { type: "scenario", meters: [["lav", "Tutela dei lavoratori", 3], ["imp", "Sostenibilità dell'impresa", 6], ["ter", "Economia del territorio", 4]],
+          nodes: {
+            start: { t: "L'azienda annuncia la chiusura: produrre all'estero costa meno. Sei il Comune: che cosa fai?", c: [["Apro un tavolo con azienda, sindacati e Regione", "s2", { lav: 2, ter: 1 }, ["ok", "Il confronto è il primo passo previsto in queste crisi."]], ["Non intervengo: è una scelta privata", "s2", { ter: -2, lav: -1 }, ["warn", "L'impresa è privata, ma le conseguenze ricadono su tutto il territorio."]]] },
+            s2: { t: "Al tavolo l'azienda dice che resterebbe solo con costi più bassi. Si discute di soluzioni.", c: [["Proporre incentivi in cambio dell'impegno a mantenere i posti per 5 anni", "s3", { imp: 1, lav: 2, ter: 1 }, ["ok", "Gli incentivi funzionano se legati a impegni verificabili."]], ["Cercare un nuovo investitore per lo stabilimento", "s3", { ter: 2, lav: 1 }, ["ok", "A volte un'altra impresa rileva impianti e lavoratori."]], ["Accettare la chiusura con un piano di riqualificazione dei lavoratori", "s3", { lav: 1, imp: 2, ter: -1 }, ["warn", "Formazione e ricollocazione attenuano il danno, ma non lo cancellano."]]] },
+            s3: { t: "Passano due anni. Che cosa è successo dipende dalle scelte fatte.", end: "<strong>Fine.</strong> Ricomincia con altre scelte e confronta gli indicatori. Poi cerca un caso reale di delocalizzazione e verifica come è andata davvero." } } } ],
+      reflect: "Chi ha più potere in questa trattativa? Il consumatore che compra quei prodotti ha un ruolo?" }],
+  bridge: "Organizza un Gruppo di Acquisto Solidale virtuale: scegli 5 prodotti, trova per ciascuno un'alternativa equosolidale o a km0 e confronta prezzi, provenienza e impatto.",
+});

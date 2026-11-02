@@ -1,0 +1,29 @@
+LABENGINE.run({
+  id: "MC-DIS-3-02", area: "DIS", classe: 3, titolo: "Dal CAD alla stampa 3D", archetipo: "Tavolo grafico",
+  hook: "Dal tavolo da disegno al cloud: con il CAD un oggetto nasce da forme semplici che si sommano e si sottraggono. Poi un file STL lo porta alla stampante 3D. Ma un pezzo che non si incastra è solo plastica sprecata: servono misure e tolleranze.",
+  levels: [
+    { brief: "In Tinkercad ogni oggetto nasce da forme «solide» e forme «foro». Classifica le operazioni, poi riordina i passi per costruire il dado da gioco del libro.",
+      blocks: [
+        { type: "sort", categories: [["add", "Aggiunge materiale"], ["sub", "Toglie materiale"], ["org", "Organizza o posiziona"]],
+          items: [["Trascinare un cubo «solido»", "add", ""], ["Trasformare un cilindro in «foro» e raggrupparlo", "sub", "Il foro toglie volume alle forme con cui è raggruppato."], ["Allineare due forme al centro", "org", ""], ["Raggruppare due solidi", "add", "Diventano un pezzo unico."], ["Usare il righello per una quota precisa", "org", ""], ["Una sfera «foro» che smussa gli spigoli", "sub", ""]] },
+        { type: "order", title: "Il dado da gioco", items: [["Crea un cubo di 25 × 25 × 25 mm", ""], ["Aggiungi al centro una sfera «foro» di diametro 30 mm e raggruppa: le facce si arrotondano", "Approccio semplificato suggerito dal libro."], ["Crea i piccoli cilindri «foro» per i punti", ""], ["Posizionali sulle facce, da 1 a 6 punti", "Le facce opposte sommano sempre 7."], ["Seleziona tutto e raggruppa", ""], ["Esporta il file STL", ""]] } ],
+      reflect: "Perché sul dado le facce opposte sommano 7? Controlla il tuo modello." },
+    { brief: "Il porta-cuffie si aggancia al bordo del tavolo senza viti. L'apertura dell'aggancio deve adattarsi a piani spessi da 20 a 35 mm. Progetta la fessura.",
+      blocks: [
+        { type: "sim", params: [{ id: "ap", label: "Apertura della fessura", min: 15, max: 45, step: 1, value: 28, unit: "mm" }, { id: "spor", label: "Sporgenza dal tavolo", min: 5, max: 25, step: 1, value: 12, unit: "cm" }, { id: "sp", label: "Spessore del piano del tuo tavolo", min: 18, max: 40, step: 1, value: 25, unit: "mm" }],
+          outputs: [{ key: "gioco", label: "Gioco tra fessura e piano", f: (p) => p.ap - p.sp, unit: "mm" }, { key: "es", label: "Esito", f: (p, o) => o.gioco < 0 ? "non entra" : o.gioco > 6 ? "balla: troppo largo" : "si aggancia" }],
+          note: (p, o) => p.spor > 15 ? ["ko", "Sporgenza oltre i 15 cm del vincolo: più leva, più rischio di ribaltamento con 400 g di cuffie."] : p.ap < 35 || p.ap - 20 > 6 ? ["warn", "Con una fessura fissa non copri tutti gli spessori da 20 a 35 mm: serve un sistema regolabile (un cuneo, una vite di plastica, un inserto)."] : ["ok", "La fessura entra sui piani più spessi. Per quelli sottili serve uno spessore aggiuntivo."] },
+        { type: "check", key: "cuf", items: ["Ho fatto 3 schizzi con il principio fisico di ogni aggancio", "Regge 400 g senza viti", "Si adatta a piani da 20 a 35 mm", "Sporge al massimo 15 cm", "Ho costruito il modello con almeno 4 operazioni", "Ho controllato le quote con il righello di Tinkercad"],
+          result: (n, t) => n === t ? ["ok", "<strong>Pronto per la stampa.</strong>"] : ["warn", `${n} requisiti su ${t}.`] } ],
+      reflect: "Quale principio fisico tiene fermo il tuo porta-cuffie: gravità, attrito, pressione?" },
+    { label: "Scenario · lo smartphone sul microscopio", brief: "Il laboratorio di scienze vuole fotografare i vetrini tenendo lo smartphone sopra l'oculare (diametro 23 mm). Il supporto deve infilarsi sull'oculare e permettere di togliere il telefono facilmente. Calcola le misure del manicotto stampato in 3D.",
+      note: "Nella stampa 3D a filamento un foro esce di solito un po' più stretto del disegno: per un accoppiamento scorrevole si aggiunge un gioco, spesso fra 0,2 e 0,5 mm. Il valore giusto dipende dalla stampante: stampa un campione di prova.",
+      blocks: [
+        { type: "sim", params: [{ id: "oc", label: "Diametro dell'oculare", min: 20, max: 35, step: 0.1, value: 23, unit: "mm" }, { id: "g", label: "Gioco di accoppiamento", min: 0, max: 1, step: 0.05, value: 0.3, unit: "mm" }, { id: "par", label: "Spessore della parete", min: 1, max: 4, step: 0.2, value: 2, unit: "mm" }],
+          outputs: [{ key: "di", label: "Diametro interno da disegnare", f: (p) => p.oc + p.g, unit: "mm", d: 2 }, { key: "de", label: "Diametro esterno", f: (p, o) => o.di + 2 * p.par, unit: "mm", d: 2 }],
+          note: (p) => p.g < 0.15 ? ["warn", "Gioco quasi nullo: il manicotto rischia di non entrare, o di entrare a forza e graffiare l'oculare."] : p.g > 0.6 ? ["warn", "Gioco ampio: il supporto ballerà e la foto verrà mossa. Serve un anello morbido o una vite di serraggio."] : p.par < 1.6 ? ["warn", "Parete sottile: potrebbe rompersi quando si toglie il supporto."] : ["ok", "Misure ragionevoli. Stampa prima solo l'anello per provare l'accoppiamento."] },
+        { type: "check", key: "stl", items: ["Ho misurato l'oculare (o verificato la misura standard)", "Ho individuato altri 2 problemi: stabilità, centratura della fotocamera", "Ho disegnato il modello in millimetri", "Il modello è un unico pezzo chiuso, senza buchi nella superficie", "Ho stampato un campione di prova dell'anello", "Ho documentato ogni fase con foto e misure", "Ho esportato il file STL con un nome chiaro e la data"],
+          result: (n, t) => n === t ? ["ok", "<strong>Progetto documentato.</strong>"] : ["warn", `${n} passi su ${t}.`] } ],
+      reflect: "Il primo campione si è incastrato bene? Che cosa hai cambiato nel modello dopo la prova?" }],
+  bridge: "Progetta in Tinkercad un oggetto utile per la scuola (porta-penne, segnalibro, supporto per tablet) con almeno 3 operazioni booleane ed esporta il file STL documentato.",
+});

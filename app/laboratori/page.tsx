@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
-import { LABORATORI, labSrc } from "@/lib/laboratori";
+import { LABORATORI, AREA_COLOR, labSrc } from "@/lib/laboratori";
 
 export const metadata: Metadata = {
   title: "Laboratori interattivi — Book ProfTecnologIA",
@@ -43,34 +43,39 @@ export default function LaboratoriPage() {
           </p>
         </div>
 
-        <ul className="grid gap-4 sm:grid-cols-2">
-          {LABORATORI.map((l) => (
-            <li
-              key={l.mcId}
-              className="flex flex-col gap-3 rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
-              style={{ borderTopColor: l.areaColor, borderTopWidth: 4 }}
-            >
-              <p className="font-mono text-xs font-black uppercase tracking-widest" style={{ color: l.areaColor }}>
-                {l.mcId} · Classe {l.classe}ª · {l.archetipo}
-              </p>
-              <h2 className="text-xl font-black tracking-tight text-slate-950">{l.titolo}</h2>
-              <p className="text-sm leading-6 text-slate-700">{l.descrizione}</p>
-              <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold">
-                <Link href={`/mc/${l.mcId}`} className="text-teal-800 underline underline-offset-4">
-                  Apri nella MC →
-                </Link>
-                <a
-                  href={labSrc(l.mcId)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-600 underline underline-offset-4"
-                >
-                  A tutto schermo ↗
-                </a>
-              </div>
-            </li>
-          ))}
-        </ul>
+        {[1, 2, 3].map((cl) => (
+          <section key={cl} className="mb-10" aria-labelledby={`classe-${cl}`}>
+            <h2 id={`classe-${cl}`} className="mb-4 text-2xl font-black tracking-tight text-slate-950">
+              Classe {cl}ª <span className="text-base font-bold text-slate-500">· {LABORATORI.filter((l) => l.classe === cl).length} laboratori</span>
+            </h2>
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {LABORATORI.filter((l) => l.classe === cl).map((l) => {
+                const color = AREA_COLOR[l.area] ?? "#00695C";
+                return (
+                  <li
+                    key={l.mcId}
+                    className="flex flex-col gap-3 rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
+                    style={{ borderTopColor: color, borderTopWidth: 4 }}
+                  >
+                    <p className="font-mono text-xs font-black uppercase tracking-widest" style={{ color }}>
+                      {l.mcId} · {l.archetipo}
+                    </p>
+                    <h3 className="text-xl font-black tracking-tight text-slate-950">{l.titolo}</h3>
+                    <p className="text-sm leading-6 text-slate-700">{l.descrizione}</p>
+                    <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold">
+                      <Link href={`/mc/${l.mcId}`} className="text-teal-800 underline underline-offset-4">
+                        Apri nella MC →
+                      </Link>
+                      <a href={labSrc(l.mcId)} target="_blank" rel="noopener noreferrer" className="text-slate-600 underline underline-offset-4">
+                        A tutto schermo ↗
+                      </a>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </section>
+        ))}
 
         <h2 className="mt-12 text-xl font-black tracking-tight text-slate-950">Costruzioni GeoGebra</h2>
         <ul className="mt-4 grid gap-4 sm:grid-cols-2">

@@ -58,5 +58,17 @@ if (existsSync(cfgDir)) {
     ids.push(id);
   }
 }
+// Elenco per l'app (lib/laboratori-cfg.json): solo i laboratori su motore comune; i pilota sono in lib/laboratori.ts
+const manifest = [];
+if (existsSync(cfgDir)) {
+  for (const f of readdirSync(cfgDir).filter((n) => n.endsWith(".js")).sort()) {
+    const cfg = readFileSync(join(cfgDir, f), "utf8");
+    const get = (k) => (cfg.match(new RegExp(k + ':\\s*"([^"]+)"')) || [, ""])[1];
+    const hook = get("hook");
+    const first = (hook.match(/^.*?[.!?](\s|$)/) || [hook])[0].trim();
+    manifest.push({ mcId: get("id"), titolo: get("titolo"), archetipo: get("archetipo"), area: get("area"), classe: +((cfg.match(/classe:\s*(\d)/) || [, 0])[1]), descrizione: first });
+  }
+}
+writeFileSync(join(here, "..", "..", "lib", "laboratori-cfg.json"), JSON.stringify(manifest, null, 2) + "\n");
 ids.sort().forEach((id) => console.log("✓", id));
 console.log(ids.length, "laboratori");
