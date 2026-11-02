@@ -1,0 +1,36 @@
+const DEG = Math.PI / 180;
+LABENGINE.run({
+  id: "MC-AMB-2-04", area: "AMB", classe: 2, titolo: "Sole e casa", archetipo: "Simulatore",
+  hook: "Gennaio, −5 °C fuori, riscaldamento spento: dentro ci sono 18 °C. Nessun trucco, solo finestre, muri e un progettista che ha letto il sole. L'architettura bioclimatica costruisce con il clima, non contro di lui.",
+  levels: [
+    { brief: "L'altezza del sole a mezzogiorno è: 90° − latitudine + declinazione (+23,5° in estate, −23,5° in inverno). Imposta la latitudine e la profondità della tettoia sopra una finestra esposta a sud: guarda quanta finestra resta in ombra.",
+      blocks: [
+        { type: "sim", params: [{ id: "lat", label: "Latitudine", min: 36, max: 47, step: 0.5, value: 39, unit: "°N" }, { id: "agg", label: "Profondità della tettoia (aggetto)", min: 0, max: 150, step: 5, value: 60, unit: "cm" }, { id: "h", label: "Altezza della finestra sotto la tettoia", min: 80, max: 250, step: 10, value: 150, unit: "cm" }],
+          presets: [["Lamezia Terme (39°)", { lat: 39 }], ["Roma (42°)", { lat: 42 }], ["Milano (45,5°)", { lat: 45.5 }]],
+          outputs: [{ key: "e", label: "Sole a mezzogiorno · 21 giugno", f: (p) => 90 - p.lat + 23.5, unit: "°", d: 1 }, { key: "i", label: "Sole a mezzogiorno · 21 dicembre", f: (p) => 90 - p.lat - 23.5, unit: "°", d: 1 }, { key: "oe", label: "Finestra in ombra d'estate", f: (p, o) => Math.min(100, (p.agg * Math.tan(o.e * DEG)) / p.h * 100), unit: "%" }, { key: "oi", label: "Finestra in ombra d'inverno", f: (p, o) => Math.min(100, (p.agg * Math.tan(o.i * DEG)) / p.h * 100), unit: "%" }],
+          bars: (p, o) => [["Ombra d'estate", o.oe], ["Ombra d'inverno", o.oi]], barsMax: 100, barsUnit: "%",
+          challenges: [["Progetta una tettoia che ombreggi almeno l'80% della finestra d'estate e meno del 30% d'inverno", (p, o) => o.oe >= 80 && o.oi < 30, "Prova a cambiare la profondità della tettoia o l'altezza della finestra.", "Il sole alto d'estate resta fuori, quello basso d'inverno entra e scalda gratis."]],
+          note: (p, o) => ["ok", `A ${p.lat}° di latitudine il sole d'inverno sale solo a ${LABENGINE.fmt(o.i, 1)}°: entra in profondità nelle stanze esposte a sud.`] },
+        { type: "quiz", questions: [["Perché le finestre grandi a sud aiutano d'inverno, ma vanno protette d'estate?", ["Perché d'estate il sole è alto e una tettoia lo blocca, d'inverno è basso e passa sotto", "Perché a sud fa sempre caldo", "Perché a nord non c'è luce"], 0, "È il principio dell'aggetto calibrato: lo stesso elemento fa ombra in estate e lascia entrare il sole in inverno."]] } ],
+      reflect: "Com'è orientata la facciata principale della tua scuola? In quale aula fa più caldo d'inverno, e perché?" },
+    { brief: "Due appartamenti di 80 m² a Milano: A degli anni '70, B del 2022 (dati del libro). La trasmittanza U dice quanti watt passano per ogni m² di parete e ogni grado di differenza fra dentro e fuori.",
+      blocks: [
+        { type: "sim", params: [{ id: "dt", label: "Differenza di temperatura dentro-fuori", min: 5, max: 30, step: 1, value: 20, unit: "°C" }, { id: "sp", label: "Superficie di pareti esterne", min: 20, max: 150, step: 5, value: 60, unit: "m²" }, { id: "sf", label: "Superficie delle finestre", min: 2, max: 30, step: 1, value: 10, unit: "m²" }],
+          outputs: [{ key: "a", label: "Appartamento A · watt dispersi", f: (p) => (1.8 * p.sp + 5.5 * p.sf) * p.dt, unit: "W" }, { key: "b", label: "Appartamento B · watt dispersi", f: (p) => (0.22 * p.sp + 0.8 * p.sf) * p.dt, unit: "W" }, { key: "r", label: "B disperde meno di A del", f: (p, o) => (1 - o.b / o.a) * 100, unit: "%" }],
+          bars: (p, o) => [["A · anni '70", o.a], ["B · 2022", o.b]], barsUnit: "W" },
+        { type: "quiz", questions: [
+          ["Fabbisogno di riscaldamento: A 165, B 28 kWh/m² all'anno. Per 80 m², la differenza è…", ["10.960 kWh all'anno", "137 kWh", "1.096 kWh"], 0, "(165 − 28) × 80 = 10.960 kWh all'anno."],
+          ["Bollette stimate dal libro: A 1.980 €, B 336 € all'anno. In 10 anni B risparmia…", ["16.440 €", "1.644 €", "3.360 €"], 0, "(1.980 − 336) × 10 = 16.440 €."]] } ],
+      reflect: "Nella tabella, quale elemento disperde di più per metro quadro: le pareti o le finestre?" },
+    { label: "Scenario · la scuola degli anni '60", brief: "1.200 m² riscaldati, 145 kWh/m² all'anno (classe F). Per i fondi PNRR deve scendere sotto 40. Perdite: pareti 35%, copertura 15%, finestre 25%, ponti termici 25%. Scegli il pacchetto di interventi.",
+      note: "Il risparmio di ogni intervento è calcolato dal rapporto fra la U nuova e quella vecchia, nella quota di dispersione di quell'elemento. Superfici del libro: 400 m² di pareti, 180 m² di copertura, 60 finestre; gas a 0,12 €/kWh.",
+      blocks: [
+        { type: "sim", params: [{ id: "par", label: "Pareti", options: [["0", "Nessun intervento (U 1,60)"], ["eps", "Cappotto 14 cm EPS · 60 €/m² (U 0,25)"], ["fib", "Cappotto 14 cm fibra di legno · 90 €/m² (U 0,22)"]], value: "0" }, { id: "cop", label: "Copertura", options: [["0", "Nessun intervento (U 1,80)"], ["iso", "Isolamento 20 cm · 45 €/m² (U 0,18)"]], value: "0" }, { id: "fin", label: "Finestre", options: [["0", "Nessun intervento (U 2,80)"], ["tri", "Triplo vetro · 350 € l'una (U 0,85)"]], value: "0" }, { id: "pt", label: "Ponti termici", options: [["0", "Nessun intervento"], ["si", "Eliminazione · 15 €/metro lineare (−15% sul totale)"]], value: "0" }, { id: "ml", label: "Metri lineari di ponti termici (tua stima)", min: 100, max: 800, step: 10, value: 300, unit: "m" }],
+          outputs: [{ key: "rid", label: "Riduzione del consumo", f: (p) => (p.par === "eps" ? 0.35 * (1 - 0.25 / 1.6) : p.par === "fib" ? 0.35 * (1 - 0.22 / 1.6) : 0) + (p.cop === "iso" ? 0.15 * (1 - 0.18 / 1.8) : 0) + (p.fin === "tri" ? 0.25 * (1 - 0.85 / 2.8) : 0) + (p.pt === "si" ? 0.15 : 0), hidden: true },
+            { key: "kwhm2", label: "Nuovo consumo", f: (p, o) => 145 * (1 - o.rid), unit: "kWh/m²·anno", d: 1 }, { key: "cost", label: "Costo del pacchetto", f: (p) => ({ 0: 0, eps: 400 * 60, fib: 400 * 90 }[p.par]) + (p.cop === "iso" ? 180 * 45 : 0) + (p.fin === "tri" ? 60 * 350 : 0) + (p.pt === "si" ? p.ml * 15 : 0), unit: "€" },
+            { key: "sav", label: "Risparmio all'anno", f: (p, o) => 145 * 1200 * o.rid * 0.12, unit: "€" }, { key: "pb", label: "Si ripaga in", f: (p, o) => o.sav ? LABENGINE.fmt(o.cost / o.sav, 1) + " anni" : "—" }],
+          bars: (p, o) => [["Oggi", 145], ["Dopo gli interventi", o.kwhm2], ["Obiettivo PNRR", 40]], barsUnit: "kWh/m²", barsMax: 150,
+          note: (p, o) => o.kwhm2 < 40 ? ["ok", `Obiettivo raggiunto: ${LABENGINE.fmt(o.kwhm2, 1)} kWh/m² all'anno. Ora cerca il pacchetto meno costoso che ci riesce.`] : ["warn", `Siamo a ${LABENGINE.fmt(o.kwhm2, 1)} kWh/m²: ne mancano ${LABENGINE.fmt(o.kwhm2 - 40, 1)} per l'obiettivo.`] } ],
+      reflect: "Quale intervento ha il miglior rapporto fra costo e risparmio? Come lo spiegheresti al dirigente?" }],
+  bridge: "Osserva i materiali di pareti, pavimenti, finestre e tetto della tua casa o della scuola: crea una tabella con 4 materiali e valuta la loro sostenibilità.",
+});

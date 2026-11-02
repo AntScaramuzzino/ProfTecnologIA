@@ -70,23 +70,26 @@
     const grid = $c("div", "grid2"); box.appendChild(grid);
     b.params.forEach((p) => { const id = nid("p"); const c = $c("div", "ctrl"); const top = $c("div", "top"); const lab = $c("label", null, esc(p.label)); lab.htmlFor = id; const val = $c("span", "mono"); top.append(lab, val); c.appendChild(top);
       let inp; if (p.options) { inp = $c("select"); p.options.forEach(([v, l]) => { const o = $c("option", null, esc(l)); o.value = v; inp.appendChild(o); }); inp.value = p.value; val.textContent = ""; }
+      else if (p.kind === "text") { inp = $c("input"); inp.type = "text"; inp.value = p.value; inp.spellcheck = false; inp.autocomplete = "off"; inp.style.fontFamily = "var(--mono)"; }
       else { inp = $c("input"); inp.type = p.kind || "range"; inp.min = p.min; inp.max = p.max; inp.step = p.step || 1; inp.value = p.value; }
       inp.id = id; inp.addEventListener("input", upd); c.appendChild(inp); if (p.help) c.appendChild($c("span", "src", p.help)); grid.appendChild(c); inputs[p.id] = inp; inputs[p.id]._val = val; inputs[p.id]._p = p; });
     const ro = $c("div", "readout"); ro.setAttribute("aria-live", "polite"); box.appendChild(ro);
     const barsBox = b.bars ? $c("div", "bars") : null; if (barsBox) box.appendChild(barsBox);
     const lineBox = b.line ? $c("div", "scroll-x") : null; if (lineBox) box.appendChild(lineBox);
+    const drawBox = b.draw ? $c("div", "scroll-x") : null; if (drawBox) box.insertBefore(drawBox, ro);
     const note = $c("div"); note.hidden = true; box.appendChild(note);
     let chBox; if (b.challenges) { chBox = $c("div", "panel"); chBox.appendChild($c("h3", "blk-h", "Sfide")); const row = $c("div", "row"); const sel = $c("select"); sel.id = nid("ch"); sel.setAttribute("aria-label", "Sfida");
       b.challenges.forEach(([t], i) => { const o = $c("option", null, esc(t)); o.value = i; sel.appendChild(o); }); const go = $c("button", "btn", "Controlla"); row.append(sel, go); const f = $c("div"); f.hidden = true; chBox.append(row, f); box.appendChild(chBox);
       go.onclick = () => { const { p, o } = calc(); const c = b.challenges[+sel.value]; const ok = c[1](p, o); fb(f, ok ? "ok" : "ko", ok ? `<strong>Sfida superata.</strong> ${c[3] || ""}` : `<strong>Non ancora.</strong> ${c[2] || ""}`); }; }
-    function calc() { const p = {}; Object.entries(inputs).forEach(([k, i]) => { p[k] = i._p.options ? (isNaN(+i.value) ? i.value : +i.value) : +i.value; }); const o = {}; b.outputs.forEach((x) => { o[x.key || x.label] = x.f(p, o); }); return { p, o }; }
+    function calc() { const p = {}; Object.entries(inputs).forEach(([k, i]) => { p[k] = i._p.kind === "text" ? i.value : i._p.options ? (isNaN(+i.value) ? i.value : +i.value) : +i.value; }); const o = {}; b.outputs.forEach((x) => { o[x.key || x.label] = x.f(p, o); }); return { p, o }; }
     function upd() { const { p, o } = calc();
-      Object.values(inputs).forEach((i) => { if (!i._p.options) i._val.textContent = fmt(+i.value, i._p.d ?? (String(i._p.step || 1).includes(".") ? String(i._p.step).split(".")[1].length : 0)) + (i._p.unit ? " " + i._p.unit : ""); });
+      Object.values(inputs).forEach((i) => { if (!i._p.options && i._p.kind !== "text") i._val.textContent = fmt(+i.value, i._p.d ?? (String(i._p.step || 1).includes(".") ? String(i._p.step).split(".")[1].length : 0)) + (i._p.unit ? " " + i._p.unit : ""); });
       ro.innerHTML = b.outputs.filter((x) => !x.hidden).map((x) => { const v = o[x.key || x.label]; return `<div><div class="k">${esc(x.label)}</div><div class="v">${typeof v === "number" ? fmt(v, x.d ?? 0) : esc(v)}${x.unit && typeof v === "number" ? " " + x.unit : ""}</div></div>`; }).join("");
       if (barsBox) { const bars = b.bars(p, o); const mx = b.barsMax || Math.max(...bars.map((x) => Math.abs(x[1])), 1e-9);
         barsBox.innerHTML = (b.barsTitle ? `<strong>${esc(b.barsTitle)}</strong>` : "") + bars.map(([l, v, col]) => `<div class="bar"><span>${esc(l)}</span><div class="track"><div class="fill" style="width:${Math.max(0, Math.min(100, (v / mx) * 100))}%;${col ? `background:${col}` : ""}"></div></div><span class="val">${fmt(v, b.barsD ?? 0)}${b.barsUnit ? " " + b.barsUnit : ""}</span></div>`).join(""); }
       if (lineBox) { const L = b.line; const xs = []; for (let i = 0; i <= L.steps; i++) xs.push(L.from + ((L.to - L.from) * i) / L.steps);
         const series = L.series.map((s) => ({ name: s.name, color: s.color, data: xs.map((x) => [x, s.f(p, x, o)]) })); lineBox.innerHTML = ""; lineBox.appendChild(svgChart(series, { kind: "line", xlabel: L.xlabel, ylabel: L.ylabel, zero: L.zero !== false, marker: L.marker ? L.marker(p, o) : null })); }
+      if (drawBox) drawBox.innerHTML = b.draw(p, o);
       if (b.note) { const n = b.note(p, o); if (n) fb(note, n[0], n[1]); else note.hidden = true; } }
     upd(); return box;
   }
