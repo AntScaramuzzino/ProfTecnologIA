@@ -1,0 +1,270 @@
+<title>Il robot della colazione</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/*BASE_CSS*/
+:root{--area:#006064;--area-bg:#E0F7FA;--seq:#B42318;--seq-bg:#FEE4E2;--cnd:#1F5FA8;--cnd-bg:#E3F2FD;--cyc:#2E7D32;--cyc-bg:#E8F5E9;--cur:#FFE08A;--cur-fg:#3A2C00}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--area:#6FD6DC;--area-bg:#0F3436;--seq:#FF9C92;--seq-bg:#3D1715;--cnd:#8DB8F0;--cnd-bg:#16294A;--cyc:#86D18A;--cyc-bg:#14301A;--cur:#6B5410;--cur-fg:#FFF4D6}}
+:root[data-theme="dark"]{--area:#6FD6DC;--area-bg:#0F3436;--seq:#FF9C92;--seq-bg:#3D1715;--cnd:#8DB8F0;--cnd-bg:#16294A;--cyc:#86D18A;--cyc-bg:#14301A;--cur:#6B5410;--cur-fg:#FFF4D6}
+.code{font-family:var(--mono);font-size:15px;display:flex;flex-direction:column;gap:6px}
+.ln{display:grid;grid-template-columns:28px 1fr;gap:8px;align-items:start;border:1px solid var(--line);border-left-width:6px;border-radius:6px;padding:8px 10px;background:var(--surface)}
+.ln .no{color:var(--muted)}
+.ln.seq{border-left-color:var(--seq);background:var(--seq-bg)}
+.ln.cnd{border-left-color:var(--cnd);background:var(--cnd-bg)}
+.ln.cyc{border-left-color:var(--cyc);background:var(--cyc-bg)}
+.ln.cur{outline:3px solid var(--cur);outline-offset:1px}
+.ln .tags{grid-column:2;display:flex;gap:6px;flex-wrap:wrap;font-family:var(--sans)}
+.tg{font:inherit;font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:3px 10px;cursor:pointer;background:var(--surface);color:var(--fg)}
+.tg.s[aria-pressed="true"]{background:var(--seq);border-color:var(--seq);color:var(--surface)}
+.tg.c[aria-pressed="true"]{background:var(--cnd);border-color:var(--cnd);color:var(--surface)}
+.tg.y[aria-pressed="true"]{background:var(--cyc);border-color:var(--cyc);color:var(--surface)}
+.ln .res{grid-column:2;font-family:var(--sans);font-size:14px}
+.world{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.world label{font-weight:600;display:flex;gap:8px;align-items:center}
+.world input[type=checkbox]{accent-color:var(--lab);width:18px;height:18px}
+.trace{font-family:var(--mono);font-size:14px;background:var(--surface-2);border-radius:8px;padding:12px;max-height:280px;overflow:auto;display:flex;flex-direction:column;gap:3px}
+.trace .e{color:var(--ko);font-weight:700}
+.trace .o{color:var(--ok);font-weight:700}
+.thermo{display:flex;align-items:center;gap:10px}
+.thermo .bar{flex:1;height:14px;background:var(--surface-2);border-radius:7px;overflow:hidden;position:relative}
+.thermo .bar div{height:100%;background:var(--energy);transition:width .2s}
+.thermo .bar span{position:absolute;top:-2px;bottom:-2px;left:62.5%;border-left:2px dashed var(--fg)}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:720px){.cols{grid-template-columns:1fr}}
+.blk{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-left-width:6px;border-radius:6px;padding:6px 8px;background:var(--surface);font-size:15px}
+.blk.seq{border-left-color:var(--seq)}.blk.cnd{border-left-color:var(--cnd)}.blk.cyc{border-left-color:var(--cyc)}
+.blk .t{flex:1;min-width:0}
+.blk button{font:inherit;font-size:14px;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:6px;min-width:34px;height:32px;cursor:pointer}
+.blk button:disabled{opacity:.35;cursor:default}
+.list{display:flex;flex-direction:column;gap:6px;min-height:60px}
+.empty{border:2px dashed var(--line);border-radius:8px;padding:14px;color:var(--muted);text-align:center;font-size:14px}
+.kw{font-family:var(--mono);font-weight:700;font-size:13px}
+svg.flow{width:100%;max-width:560px;height:auto;display:block;margin:0 auto}
+.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.day{border:1px solid var(--line);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:6px;font-size:14px}
+.day h4{margin:0;font-size:15px}
+.day.okd{border-color:var(--ok)}.day.kod{border-color:var(--ko)}
+.rule{display:flex;flex-wrap:wrap;gap:6px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);font-size:15px}
+.rule select,.rule input{padding:4px 6px;font-size:15px}
+.rule input{width:64px}
+.rule .x{margin-left:auto}
+td.fired{font-family:var(--mono);font-size:13px;color:var(--muted)}
+td.warn{color:var(--warn);font-weight:700}
+</style>
+
+<div class="wrap">
+<header class="lab-head">
+  <div class="chips"><span class="chip">MC-DIG-1-03 · Digitale · 1ª</span><span class="chip lab">Laboratorio · Programmatore</span></div>
+  <h1>Il robot della colazione</h1>
+  <p class="hook">Un robot fa esattamente quello che c'è scritto: niente di più, niente di meno. Se l'algoritmo ha un buco, il robot ci cade dentro. Qui scrivi istruzioni per lui e scopri dove si inceppano.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Livello">
+  <button class="tab" role="tab" id="t1" aria-controls="p1"><span class="dots">●</span>Base</button>
+  <button class="tab" role="tab" id="t2" aria-controls="p2"><span class="dots">●●</span>Intermedio</button>
+  <button class="tab" role="tab" id="t3" aria-controls="p3"><span class="dots">●●●</span>Avanzato</button>
+</div>
+
+<!-- BASE -->
+<section class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>1. Per ogni istruzione scegli la struttura: <strong style="color:var(--seq)">sequenza</strong>, <strong style="color:var(--cnd)">condizione</strong> o <strong style="color:var(--cyc)">ciclo</strong>, poi premi Verifica.<br>2. Fai eseguire l'algoritmo al robot in mattine diverse e osserva che cosa succede.</p></div>
+  <div class="bench">
+    <div class="code" id="code"></div>
+    <div class="row"><button class="btn" id="chk1">Verifica</button><span class="score" id="sc1" aria-live="polite"></span></div>
+    <div id="fb1" hidden></div>
+  </div>
+  <div class="bench">
+    <h3>Il robot esegue</h3>
+    <div class="world">
+      <label><input type="checkbox" id="w1"> Il latte è finito</label>
+      <label><input type="checkbox" id="w2"> Il microonde è rotto</label>
+    </div>
+    <div class="thermo" aria-hidden="true"><span class="mono">🥛</span><div class="bar"><div id="th"></div><span title="caldo: 50 °C"></span></div><span class="mono" id="tv">5 °C</span></div>
+    <div class="row"><button class="btn" id="run">Esegui passo per passo</button><button class="btn ghost" id="stop">Ferma</button></div>
+    <div class="trace" id="tr" aria-live="polite"></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Hai provato «Il latte è finito»? Il robot è andato al negozio… e poi? Che cosa manca all'algoritmo? E con il microonde rotto, perché un ciclo ha sempre bisogno di una via d'uscita?</p></div>
+</section>
+
+<!-- INTERMEDIO -->
+<section class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Scrivi l'algoritmo <strong>Uscire di casa per andare a scuola</strong>. Aggiungi i blocchi e mettili in ordine: almeno 4 di sequenza, 1 condizione e 1 ciclo. Non tutti i blocchi servono. Poi fallo eseguire a un compagno-robot in quattro mattine diverse: dovrà arrivare a scuola entro le 8:00, con zaino pronto, chiavi in tasca, porta chiusa e ombrello se piove.</p></div>
+  <div class="cols">
+    <div class="bench"><h3>Blocchi disponibili</h3><div class="list" id="pal"></div></div>
+    <div class="bench"><h3>Il tuo algoritmo</h3><div class="list" id="prog"></div>
+      <div class="row" id="req" aria-live="polite"></div>
+      <div class="row"><button class="btn" id="run2">Fai eseguire al compagno</button></div></div>
+  </div>
+  <div class="bench" id="res2" hidden><h3>Quattro mattine di prova</h3><div class="days" id="days"></div><div id="fb2" hidden></div></div>
+  <div class="bench"><h3>Il diagramma di flusso del tuo algoritmo</h3><div class="scroll-x"><svg class="flow" id="flow" role="img" aria-label="Diagramma di flusso"></svg></div>
+    <p class="muted">Ovale: inizio e fine. Rettangolo: azione. Rombo: domanda con due uscite, sì e no.</p></div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Il compagno-robot ha trovato un errore che tu non vedevi? Chi scrive un algoritmo ha in testa la procedura completa; chi lo esegue conosce solo le istruzioni scritte.</p></div>
+</section>
+
+<!-- AVANZATO -->
+<section class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+  <div class="brief"><span class="lbl">Scenario · l'algoritmo del docente perfetto</span>
+    <p>Progetta un sistema che decide quanti esercizi assegnare in base a: voto dell'ultima verifica (0-10), ore di studio dichiarate a settimana, materia. Scrivi almeno 3 regole SE… ALLORA. Il sistema controlla le regole <strong>dall'alto in basso</strong> e usa la prima che corrisponde. Poi provalo sulla classe di prova, casi limite compresi.</p></div>
+  <div class="bench">
+    <div class="list" id="rules"></div>
+    <div class="row"><button class="btn ghost" id="addR">Aggiungi regola</button>
+      <span class="rule" style="border:0;padding:0">ALTRIMENTI assegna <input type="number" id="def" value="2" min="0" max="10" aria-label="Esercizi se nessuna regola corrisponde"> esercizi</span></div>
+  </div>
+  <div class="bench"><h3>La classe di prova</h3>
+    <div class="scroll-x"><table><thead><tr><th>Studente</th><th>Voto</th><th>Ore</th><th>Materia</th><th>Esercizi</th><th>Perché</th></tr></thead><tbody id="cls"></tbody></table></div>
+    <div id="fb3" hidden></div>
+    <div class="row"><button class="btn ghost" id="ctx">Mostra quello che il sistema non sa</button></div>
+    <div id="ctxBox" hidden></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Questo sistema è giusto? In quali casi dà un risultato sbagliato o ingiusto? Che cosa considera un docente umano che il sistema non vede?</p>
+    <label for="n3">I tuoi appunti per la discussione (restano su questo dispositivo)</label><textarea id="n3"></textarea></div>
+</section>
+
+<div class="bridge"><span class="lbl">Verso il compito di realtà</span>
+  <p>Scegli una procedura quotidiana (preparare la colazione, uscire di casa, fare una ricerca online) e trasformala in un algoritmo scritto con parole chiave e diagramma di flusso. Poi fallo eseguire a un compagno e correggi i bug.</p></div>
+<footer class="lab-foot">ProfTecnologIA · Laboratorio pilota v0.1 · Esecuzione simulata: il robot segue alla lettera le istruzioni.</footer>
+</div>
+
+<script>/*BASE_JS*/</script>
+<script>
+(()=>{
+const $=id=>document.getElementById(id);
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* ---------- BASE ---------- */
+const ALG=[['Apri il frigorifero.','seq'],['Prendi il latte.','seq'],['SE il latte è finito ALLORA vai al negozio a comprarne uno ALTRIMENTI vai al passo 4.','cnd'],
+ ['Versa il latte nella tazza.','seq'],['RIPETI: scalda il latte per 30 secondi nel microonde → controlla la temperatura FINO A QUANDO il latte è caldo.','cyc'],['Aggiungi i cereali.','seq'],['Mangia.','seq']];
+const NAME={seq:'sequenza',cnd:'condizione',cyc:'ciclo'},ans={};
+const code=$('code');
+ALG.forEach(([t,k],i)=>{const d=document.createElement('div');d.className='ln';d.id='ln'+i;
+ d.innerHTML=`<span class="no">${i+1}</span><span>${t.replace(/(SE|ALLORA|ALTRIMENTI|RIPETI|FINO A QUANDO)/g,'<strong>$1</strong>')}</span><span class="tags" role="group" aria-label="Struttura dell'istruzione ${i+1}"></span><span class="res" hidden></span>`;
+ const tg=d.querySelector('.tags');[['seq','s'],['cnd','c'],['cyc','y']].forEach(([v,c])=>{const b=document.createElement('button');b.className='tg '+c;b.textContent=NAME[v];b.setAttribute('aria-pressed','false');
+  b.onclick=()=>{ans[i]=v;[...tg.children].forEach(x=>x.setAttribute('aria-pressed',x===b));d.className='ln '+v;d.querySelector('.res').hidden=true};tg.appendChild(b)});code.appendChild(d)});
+const WHYB={seq:'È un\'azione semplice: si fa una volta, poi si passa alla successiva.',cnd:'C\'è una domanda (SE) con due strade possibili: ALLORA o ALTRIMENTI.',cyc:'Le azioni si ripetono finché una condizione diventa vera (RIPETI… FINO A QUANDO).'};
+$('chk1').onclick=()=>{let ok=0,miss=0;ALG.forEach(([t,k],i)=>{const r=$('ln'+i).querySelector('.res');if(!ans[i]){miss++;return}
+ r.hidden=false;if(ans[i]===k){ok++;r.innerHTML='✓ '+WHYB[k]}else r.innerHTML=`✗ Non è ${NAME[ans[i]]}: è <strong>${NAME[k]}</strong>. ${WHYB[k]}`});
+ $('sc1').textContent=`${ok}/${ALG.length}`;
+ if(miss)LAB.fb($('fb1'),'warn',`Mancano ${miss} istruzioni da classificare.`);
+ else LAB.fb($('fb1'),ok===ALG.length?'ok':'ko',ok===ALG.length?'<strong>Tutto giusto:</strong> 5 istruzioni di sequenza, 1 condizione, 1 ciclo. Ora fai eseguire l\'algoritmo al robot.':'<strong>Rileggi le spiegazioni.</strong> Cerca le parole chiave: SE apre una condizione, RIPETI apre un ciclo.')};
+let timer=null;
+function stop(){clearTimeout(timer);timer=null;document.querySelectorAll('.ln').forEach(l=>l.classList.remove('cur'));$('run').disabled=false}
+$('stop').onclick=stop;
+$('run').onclick=()=>{stop();const fin=$('w1').checked,broke=$('w2').checked;const tr=$('tr');tr.innerHTML='';$('run').disabled=true;
+ let T=5;const th=v=>{$('th').style.width=Math.min(100,v/80*100)+'%';$('tv').textContent=v+' °C'};th(T);
+ const steps=[];const add=(l,msg,cls,fn)=>steps.push({l,msg,cls,fn});
+ add(0,'Apro il frigorifero.');add(1,'Prendo il latte.');
+ if(fin){add(2,'SE il latte è finito → sì: vado al negozio a comprarne uno.');add(2,'Sono al negozio. L\'algoritmo non dice di tornare al passo 4: mi fermo qui. BUG: manca «poi vai al passo 4».','e')}
+ else{add(2,'SE il latte è finito → no: vado al passo 4.');add(3,'Verso il latte nella tazza.');
+  let n=0;while(true){n++;if(n>12){add(4,`Ho ripetuto il ciclo ${n-1} volte e il latte è ancora freddo. Il ciclo non finirebbe mai: CICLO INFINITO. Interrompo.`,'e');break}
+   const before=T;if(!broke)T=Math.min(90,T+15);const tNow=T;add(4,`Giro ${n}: scaldo 30 secondi… controllo: ${tNow} °C. ${tNow>=50?'È caldo → esco dal ciclo.':'Non è ancora caldo → ripeto.'}`,null,()=>th(tNow));if(tNow>=50)break}
+  if(T>=50){add(5,'Aggiungo i cereali.');add(6,'Mangio. FINE.','o')}}
+ let i=0;const go=()=>{if(i>=steps.length){stop();return}const s=steps[i++];document.querySelectorAll('.ln').forEach(l=>l.classList.remove('cur'));$('ln'+s.l).classList.add('cur');
+  if(s.fn)s.fn();const d=document.createElement('div');if(s.cls)d.className=s.cls;d.textContent=`[${s.l+1}] ${s.msg}`;tr.appendChild(d);tr.scrollTop=tr.scrollHeight;
+  timer=setTimeout(go,reduce?0:650)};go();};
+
+/* ---------- INTERMEDIO ---------- */
+const B={
+ svegl:['seq','Svegliati e alzati',5],vest:['seq','Vestiti',10],col:['seq','Fai colazione',15],prep:['seq','Metti i libri del giorno nello zaino',5],
+ zaino:['seq','Prendi lo zaino',1],omb:['cnd','SE piove ALLORA prendi l\'ombrello',1],chiavi:['seq','Prendi le chiavi',1],esci:['seq','Esci di casa',1],
+ porta:['seq','Chiudi la porta a chiave',1],bus:['cyc','RIPETI aspetta 1 minuto FINO A QUANDO arriva l\'autobus',0],sali:['seq','Sali sull\'autobus',10],
+ gioco:['seq','Gioca ai videogiochi',30],telefono:['cnd','SE ci sono notifiche ALLORA rispondi a tutte',20]};
+const DAYS=[['Lunedì',{piove:false,bus:3,notif:false}],['Martedì',{piove:true,bus:6,notif:true}],['Mercoledì',{piove:true,bus:0,notif:false}],['Giovedì',{piove:false,bus:9,notif:true}]];
+let prog=['svegl','vest','esci','zaino','sali'];
+function blk(id,inProg,idx){const [k,t]=B[id],d=document.createElement('div');d.className='blk '+k;
+ d.innerHTML=`<span class="t">${t.replace(/(SE|ALLORA|RIPETI|FINO A QUANDO)/g,'<span class="kw">$1</span>')}</span>`;
+ const mk=(lbl,aria,fn,dis)=>{const b=document.createElement('button');b.textContent=lbl;b.setAttribute('aria-label',aria);b.onclick=fn;b.disabled=!!dis;d.appendChild(b)};
+ if(inProg){mk('↑',`Sposta su: ${t}`,()=>{[prog[idx-1],prog[idx]]=[prog[idx],prog[idx-1]];draw2()},idx===0);
+  mk('↓',`Sposta giù: ${t}`,()=>{[prog[idx+1],prog[idx]]=[prog[idx],prog[idx+1]];draw2()},idx===prog.length-1);
+  mk('✕',`Togli: ${t}`,()=>{prog.splice(idx,1);draw2()})}
+ else mk('+',`Aggiungi: ${t}`,()=>{prog.push(id);draw2()},prog.includes(id));
+ return d;}
+function draw2(){const pal=$('pal');pal.innerHTML='';Object.keys(B).forEach(id=>pal.appendChild(blk(id,false)));
+ const pg=$('prog');pg.innerHTML='';if(!prog.length)pg.innerHTML='<div class="empty">Aggiungi i blocchi con +</div>';prog.forEach((id,i)=>pg.appendChild(blk(id,true,i)));
+ const c={seq:0,cnd:0,cyc:0};prog.forEach(id=>c[B[id][0]]++);
+ $('req').innerHTML=[[c.seq>=4,`${c.seq} sequenza (min 4)`],[c.cnd>=1,`${c.cnd} condizione`],[c.cyc>=1,`${c.cyc} ciclo`]].map(([o,t])=>`<span class="chip" style="background:var(${o?'--ok-bg':'--warn-bg'});color:var(${o?'--ok':'--warn'})">${o?'✓':'○'} ${t}</span>`).join('');
+ flow();$('res2').hidden=true;}
+function exec(w){let t=7*60,s={sveglio:false,vestito:false,libri:false,zaino:false,ombrello:false,chiavi:false,fuori:false,porta:false,bus:false,arrivato:false,mangiato:false};const log=[],bugs=[];
+ const hm=m=>`${Math.floor(m/60)}:${String(m%60).padStart(2,'0')}`;
+ for(const id of prog){const [k,txt,min]=B[id];
+  if(s.bus&&id!=='sali'){bugs.push(`«${txt}» arriva quando sei già sull'autobus.`);continue}
+  if(!s.sveglio&&id!=='svegl'){bugs.push(`«${txt}» mentre dormi: manca «Svegliati» all'inizio.`);s.sveglio=true}
+  switch(id){
+   case'svegl':s.sveglio=true;break;
+   case'vest':s.vestito=true;break;
+   case'col':if(s.fuori)bugs.push('Fai colazione in strada? Va prima di uscire.');s.mangiato=true;break;
+   case'prep':if(s.fuori)bugs.push('I libri sono in casa: vanno messi nello zaino prima di uscire.');else if(s.zaino)bugs.push('Hai preso lo zaino prima di riempirlo: i libri restano sul tavolo.');else s.libri=true;break;
+   case'zaino':if(s.fuori)bugs.push('Lo zaino è rimasto in casa: «Prendi lo zaino» viene dopo «Esci di casa».');else s.zaino=true;break;
+   case'omb':if(w.piove){if(s.fuori)bugs.push('Ti accorgi che piove quando sei già fuori: l\'ombrello è in casa.');else s.ombrello=true;log.push('Piove? Sì → prendo l\'ombrello.')}else log.push('Piove? No → vado avanti.');break;
+   case'chiavi':if(s.fuori)bugs.push('Le chiavi sono rimaste dentro.');else s.chiavi=true;break;
+   case'esci':if(!s.vestito)bugs.push('Esci in pigiama: manca «Vestiti» prima di uscire.');s.fuori=true;break;
+   case'porta':if(!s.fuori)bugs.push('Chiudi la porta a chiave mentre sei ancora in casa.');else if(!s.chiavi)bugs.push('Vuoi chiudere a chiave, ma non hai preso le chiavi.');else s.porta=true;break;
+   case'bus':if(!s.fuori)bugs.push('Aspetti l\'autobus in cucina: il ciclo va dopo «Esci di casa».');else{const wt=w.bus;t+=wt;log.push(`Aspetto l'autobus: ripeto il ciclo ${wt} volte.`)}break;
+   case'sali':if(!s.fuori)bugs.push('Sali sull\'autobus senza essere uscito di casa.');else{s.bus=true;s.arrivato=true}break;
+   case'gioco':break;
+   case'telefono':if(!w.notif){log.push('Notifiche? No → vado avanti.');t-=min}else log.push('Notifiche? Sì → rispondo a tutte (20 minuti).');break;}
+  t+=min;log.push(`${hm(t)} ${txt}`);}
+ if(!prog.includes('bus')&&prog.includes('sali')&&w.bus>0)bugs.push(`Sali sull'autobus senza aspettarlo: oggi passa tra ${w.bus} minuti. Serve il ciclo di attesa.`);
+ const goals=[[s.arrivato,'Arrivato a scuola'],[t<=8*60,`In orario (${hm(t)})`],[s.zaino&&s.libri,'Zaino con i libri'],[s.chiavi,'Chiavi in tasca'],[s.porta,'Porta chiusa a chiave'],[!w.piove||s.ombrello,w.piove?'Ombrello (piove)':'Niente pioggia'],[s.mangiato,'Colazione fatta']];
+ return{log,bugs,goals,ok:goals.every(g=>g[0])&&!bugs.length};}
+$('run2').onclick=()=>{$('res2').hidden=false;const box=$('days');box.innerHTML='';let good=0;
+ DAYS.forEach(([n,w])=>{const r=exec(w);if(r.ok)good++;const d=document.createElement('div');d.className='day '+(r.ok?'okd':'kod');
+  d.innerHTML=`<h4>${n} · ${w.piove?'pioggia':'sole'} · autobus tra ${w.bus} min</h4>`+r.goals.map(([o,t])=>`<div style="color:var(${o?'--ok':'--ko'})">${o?'✓':'✗'} ${t}</div>`).join('')+(r.bugs.length?`<div style="color:var(--ko)"><strong>Bug:</strong> ${r.bugs[0]}</div>`:'');
+  box.appendChild(d)});
+ LAB.fb($('fb2'),good===4?'ok':'ko',good===4?'<strong>Quattro mattine su quattro.</strong> Il tuo algoritmo funziona anche quando piove e quando l\'autobus tarda.':`<strong>${good} mattine su 4.</strong> Leggi il primo bug di ogni mattina sbagliata, correggi l'ordine e riprova.`);};
+function flow(){const svg=$('flow'),ink=getComputedStyle(document.documentElement).getPropertyValue('--fg').trim(),mut=getComputedStyle(document.documentElement).getPropertyValue('--muted').trim();
+ const W=560,cx=200;let y=20,out='';const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;');
+ const box=(t)=>{out+=`<rect x="${cx-150}" y="${y}" width="300" height="34" rx="3" fill="none" stroke="${ink}"/><text x="${cx}" y="${y+22}" text-anchor="middle" font-size="13" fill="${ink}" font-family="Inter,sans-serif">${esc(t)}</text>`;y+=34};
+ const arrow=()=>{out+=`<line x1="${cx}" y1="${y}" x2="${cx}" y2="${y+18}" stroke="${ink}"/><polygon points="${cx-4},${y+12} ${cx+4},${y+12} ${cx},${y+18}" fill="${ink}"/>`;y+=18};
+ const oval=t=>{out+=`<rect x="${cx-50}" y="${y}" width="100" height="30" rx="15" fill="none" stroke="${ink}"/><text x="${cx}" y="${y+20}" text-anchor="middle" font-size="13" font-weight="700" fill="${ink}" font-family="Inter,sans-serif">${t}</text>`;y+=30};
+ const diamond=(q,yes,no)=>{const h=56;out+=`<polygon points="${cx},${y} ${cx+150},${y+h/2} ${cx},${y+h} ${cx-150},${y+h/2}" fill="none" stroke="${ink}"/><text x="${cx}" y="${y+h/2+5}" text-anchor="middle" font-size="12" fill="${ink}" font-family="Inter,sans-serif">${esc(q)}</text>`;return h};
+ oval('INIZIO');
+ prog.forEach(id=>{arrow();const [k,t]=B[id];
+  if(k==='seq')box(t);
+  else if(k==='cnd'){const m=t.match(/SE (.*) ALLORA (.*)/);const top=y,h=diamond(m[1]+'?');
+   out+=`<line x1="${cx+150}" y1="${top+h/2}" x2="${cx+250}" y2="${top+h/2}" stroke="${ink}"/><text x="${cx+160}" y="${top+h/2-6}" font-size="12" fill="${mut}" font-family="Inter,sans-serif">sì</text>`;
+   out+=`<rect x="${cx+165}" y="${top+h+8}" width="170" height="34" rx="3" fill="none" stroke="${ink}"/><text x="${cx+250}" y="${top+h+29}" text-anchor="middle" font-size="12" fill="${ink}" font-family="Inter,sans-serif">${esc(m[2].length>26?m[2].slice(0,25)+'…':m[2])}</text>`;
+   out+=`<line x1="${cx+250}" y1="${top+h/2}" x2="${cx+250}" y2="${top+h+8}" stroke="${ink}"/><line x1="${cx+250}" y1="${top+h+42}" x2="${cx+250}" y2="${top+h+58}" stroke="${ink}"/><line x1="${cx+250}" y1="${top+h+58}" x2="${cx}" y2="${top+h+58}" stroke="${ink}"/>`;
+   out+=`<text x="${cx+6}" y="${top+h+14}" font-size="12" fill="${mut}" font-family="Inter,sans-serif">no</text><line x1="${cx}" y1="${top+h}" x2="${cx}" y2="${top+h+58}" stroke="${ink}"/>`;y=top+h+58;}
+  else{const top=y,m=t.match(/RIPETI (.*) FINO A QUANDO (.*)/);box(m[1]);arrow();const dt=y,h=diamond(m[2]+'?');
+   out+=`<line x1="${cx-150}" y1="${dt+h/2}" x2="${cx-180}" y2="${dt+h/2}" stroke="${ink}"/><line x1="${cx-180}" y1="${dt+h/2}" x2="${cx-180}" y2="${top+17}" stroke="${ink}"/><line x1="${cx-180}" y1="${top+17}" x2="${cx-150}" y2="${top+17}" stroke="${ink}"/><polygon points="${cx-156},${top+13} ${cx-156},${top+21} ${cx-150},${top+17}" fill="${ink}"/>`;
+   out+=`<text x="${cx-176}" y="${dt+h/2-6}" font-size="12" fill="${mut}" font-family="Inter,sans-serif">no</text><text x="${cx+8}" y="${dt+h+14}" font-size="12" fill="${mut}" font-family="Inter,sans-serif">sì</text>`;y=dt+h;}});
+ arrow();oval('FINE');svg.setAttribute('viewBox',`0 0 ${W} ${y+10}`);svg.style.minWidth='420px';svg.innerHTML=out;}
+draw2();
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',flow);
+
+/* ---------- AVANZATO ---------- */
+const CLASS=[['Anna',4,1,'Matematica','Ha preso 4 perché quel giorno era assente alla lezione di ripasso.'],['Bruno',5,3,'Italiano','Esattamente 5: il caso limite. Il tuo sistema lo tratta come insufficiente o sufficiente?'],
+ ['Carla',9,5,'Scienze','Va bene e studia: più esercizi le servono a qualcosa?'],['Dario',6,null,'Tecnologia','Non ha dichiarato le ore di studio: dato mancante.'],
+ ['Elena',3,6,'Matematica','Studia molto ma con un metodo poco efficace: più esercizi uguali non la aiutano, le serve un altro tipo di aiuto.'],['Filippo',10,0,'Tecnologia','Zero ore e 10: forse il compito era troppo facile per lui.'],
+ ['Giada',5,1,'Matematica','Aiuta ogni pomeriggio in famiglia e ha poco tempo per studiare.'],['Hamid',6,2,'Italiano','Studia l\'italiano come seconda lingua: il voto misura anche la lingua, non solo lo studio.']];
+let rules=[{v:'<',x:5,t:'<',h:2,m:'*',n:5},{v:'<',x:6,t:'*',h:0,m:'*',n:3},{v:'>=',x:8,t:'*',h:0,m:'*',n:1}];
+const OPS={'<':(a,b)=>a<b,'<=':(a,b)=>a<=b,'>=':(a,b)=>a>=b,'>':(a,b)=>a>b,'=':(a,b)=>a===b};
+function drawRules(){const box=$('rules');box.innerHTML='';
+ rules.forEach((r,i)=>{const d=document.createElement('div');d.className='rule';
+  d.innerHTML=`<strong>${i+1}.</strong> SE voto <select data-k="v" aria-label="Operatore voto">${Object.keys(OPS).map(o=>`<option ${o===r.v?'selected':''}>${o}</option>`).join('')}</select>
+  <input type="number" data-k="x" min="0" max="10" value="${r.x}" aria-label="Voto"> E ore <select data-k="t" aria-label="Condizione ore"><option value="*" ${r.t==='*'?'selected':''}>qualsiasi</option><option value="<" ${r.t==='<'?'selected':''}>&lt;</option><option value=">=" ${r.t==='>='?'selected':''}>≥</option></select>
+  <input type="number" data-k="h" min="0" max="20" value="${r.h}" aria-label="Ore" ${r.t==='*'?'hidden':''}> E materia <select data-k="m" aria-label="Materia">${['*','Matematica','Italiano','Scienze','Tecnologia'].map(m=>`<option value="${m}" ${m===r.m?'selected':''}>${m==='*'?'qualsiasi':m}</option>`).join('')}</select>
+  ALLORA <input type="number" data-k="n" min="0" max="10" value="${r.n}" aria-label="Esercizi"> esercizi <button class="tg x" aria-label="Elimina regola ${i+1}">✕</button>`;
+  d.querySelectorAll('[data-k]').forEach(el=>el.addEventListener('input',()=>{const k=el.dataset.k;r[k]=['x','h','n'].includes(k)?+el.value:el.value;if(k==='t')drawRules();else run3()}));
+  d.querySelector('.x').onclick=()=>{rules.splice(i,1);drawRules()};box.appendChild(d)});run3();}
+$('addR').onclick=()=>{rules.push({v:'<',x:6,t:'*',h:0,m:'*',n:2});drawRules()};
+$('def').addEventListener('input',run3);
+function run3(){const tb=$('cls');let missing=0,defs=0,multi=0;
+ tb.innerHTML=CLASS.map(([nm,v,h,m])=>{const hits=[];rules.forEach((r,i)=>{let ok=OPS[r.v](v,r.x)&&(r.m==='*'||r.m===m);
+   if(r.t!=='*'){if(h===null){ok=false}else ok=ok&&OPS[r.t](h,r.h)}if(ok)hits.push(i)});
+  const usesH=rules.some(r=>r.t!=='*');let why,cls='fired',n;
+  if(hits.length){n=rules[hits[0]].n;why=`regola ${hits[0]+1}`+(hits.length>1?` (valevano anche ${hits.slice(1).map(x=>x+1).join(', ')}: vince la prima)`:'');if(hits.length>1)multi++}
+  else{n=+$('def').value;why='nessuna regola: ALTRIMENTI';defs++;cls='fired'}
+  if(h===null&&usesH){why+=' · ore non dichiarate: le regole sulle ore non possono valere';cls='warn';missing++}
+  return`<tr><td>${nm}</td><td class="mono">${v}</td><td class="mono">${h===null?'—':h}</td><td>${m}</td><td class="mono"><strong>${n}</strong></td><td class="${cls}">${why}</td></tr>`}).join('');
+ const notes=[];if(rules.length<3)notes.push('Servono almeno 3 regole.');if(missing)notes.push('Il caso di Dario mostra un dato mancante: come vuoi gestirlo? Aggiungi una regola che non dipende dalle ore, oppure decidi che il sistema chiede il dato.');
+ if(multi)notes.push(`${multi===1?'Per uno studente valgono':'Per '+multi+' studenti valgono'} più regole: conta l'ordine. Prova a scambiarle e guarda che cosa cambia.`);
+ if(defs)notes.push(`${defs===1?'Uno studente finisce':defs+' studenti finiscono'} nell'ALTRIMENTI: è voluto?`);
+ LAB.fb($('fb3'),notes.length?'warn':'ok',notes.length?notes.join(' '):'Ogni studente ha una regola chiara. Ora guarda quello che il sistema non sa.');}
+$('ctx').onclick=()=>{const b=$('ctxBox');b.hidden=!b.hidden;b.innerHTML=b.hidden?'':'<div class="scroll-x"><table><thead><tr><th>Studente</th><th>Quello che un docente sa e il sistema no</th></tr></thead><tbody>'+CLASS.map(c=>`<tr><td>${c[0]}</td><td>${c[4]}</td></tr>`).join('')+'</tbody></table></div>';$('ctx').textContent=b.hidden?'Mostra quello che il sistema non sa':'Nascondi';};
+drawRules();
+try{$('n3').value=localStorage.getItem('dig103-note')||''}catch(e){}
+$('n3').addEventListener('input',e=>{try{localStorage.setItem('dig103-note',e.target.value)}catch(_){}});
+})();
+</script>

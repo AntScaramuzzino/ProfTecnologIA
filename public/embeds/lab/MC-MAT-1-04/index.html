@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="it" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>Differenzia!</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: colonna unica da libro digitale (max 920px), testata d'area, schede livello, banco di lavoro, feedback.
+   Token dal design system TecnologIA (design-tokens.json): brand navy, zona 4 Laboratorio, colori d'area. */
+:root{
+  --bg:#F6F7FA; --surface:#FFFFFF; --surface-2:#EEF3FC; --fg:#1A1C24; --muted:#5A5F76; --line:#D8DAE8;
+  --brand:#1A2B4A; --lab:#00695C; --lab-bg:#E0F2F1; --energy:#C24010;
+  --ok:#166534; --ok-bg:#DCFCE7; --ko:#B42318; --ko-bg:#FEE4E2; --warn:#8A5A00; --warn-bg:#FFF4D6;
+  --area:#1A3A7A; --area-bg:#E8EFF9;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','Fira Code',ui-monospace,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{text-wrap:balance;line-height:1.2;margin:0;color:var(--brand)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:21px;font-weight:700}
+h3{font-size:17px;font-weight:700}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header.lab-head{display:flex;flex-direction:column;gap:10px;padding-bottom:16px;border-bottom:2px solid var(--area)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--area-bg);color:var(--area)}
+.chip.lab{background:var(--lab-bg);color:var(--lab)}
+.hook{font-size:17px;color:var(--fg)}
+/* level tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tab{font:inherit;font-weight:700;font-size:15px;color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--lab);border-bottom-color:var(--lab)}
+.tab:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.dots{letter-spacing:-.1em;margin-right:6px}
+.panel{display:flex;flex-direction:column;gap:16px}
+.brief{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.brief .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lab)}
+.bench{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.btn{font:inherit;font-weight:700;font-size:15px;border-radius:8px;padding:10px 16px;cursor:pointer;border:2px solid var(--lab);background:var(--lab);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--lab)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.fb{border-radius:8px;padding:12px 14px;font-size:15px}
+.fb.ok{background:var(--ok-bg);color:var(--ok)}
+.fb.ko{background:var(--ko-bg);color:var(--ko)}
+.fb.warn{background:var(--warn-bg);color:var(--warn)}
+.fb strong{font-weight:800}
+.meta{background:var(--surface-2);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.meta .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.bridge{border:2px dashed var(--area);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.bridge .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--area)}
+textarea{font:inherit;width:100%;min-height:90px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface);color:var(--fg)}
+select,input[type=number],input[type=text]{font:inherit;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);color:var(--fg);max-width:100%}
+input[type=range]{width:100%;accent-color:var(--lab)}
+label{font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid2>*{min-width:0}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.score{font-family:var(--mono);font-weight:700;font-size:20px;color:var(--lab)}
+footer.lab-foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:480px){.tab{padding:10px 8px;font-size:14px}h1{font-size:26px}}
+
+:root{--area:#6D4C41;--area-bg:#EFEBE9;
+ --b-org:#6B4F2A;--b-carta:#1F5FA8;--b-plas:#9A7400;--b-vetro:#2E7D32;--b-secco:#5A5F76;--b-eco:#B42318}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--area:#D7B8A8;--area-bg:#33261F;
+ --b-org:#D9B27A;--b-carta:#8DB8F0;--b-plas:#F2CF5B;--b-vetro:#86D18A;--b-secco:#B8BCCE;--b-eco:#FF9C92}}
+:root[data-theme="dark"]{--area:#D7B8A8;--area-bg:#33261F;
+ --b-org:#D9B27A;--b-carta:#8DB8F0;--b-plas:#F2CF5B;--b-vetro:#86D18A;--b-secco:#B8BCCE;--b-eco:#FF9C92}
+.tray{display:flex;flex-wrap:wrap;gap:8px}
+.item{font:inherit;font-size:15px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:8px 14px;cursor:pointer}
+.item[aria-pressed="true"]{background:var(--area);color:var(--surface);border-color:var(--area)}
+.bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.bin{font:inherit;text-align:left;border:2px solid var(--c);border-top-width:8px;border-radius:8px;background:var(--surface);color:var(--fg);padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:6px;min-height:110px}
+.bin:disabled{cursor:default}
+.bin .name{font-weight:800;color:var(--c)}
+.bin .hint{font-size:13px;color:var(--muted)}
+.bin ul{margin:0;padding-left:18px;font-size:14px}
+.bin li.ko{color:var(--ko);font-weight:700}
+.log{display:flex;flex-direction:column;gap:6px;font-size:15px}
+.log div{padding:8px 10px;border-radius:8px}
+.days{display:flex;gap:6px;flex-wrap:wrap}
+.days button{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:8px 14px;cursor:pointer}
+.days button[aria-pressed="true"]{border-color:var(--lab);color:var(--lab);background:var(--lab-bg)}
+.cont{border:1px solid var(--line);border-top:6px solid var(--c);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:6px}
+.cont h4{margin:0;color:var(--c);font-size:15px}
+.chk{font:inherit;font-size:14px;text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:6px;padding:6px 10px;cursor:pointer}
+.chk[aria-pressed="true"]{border-color:var(--ko);background:var(--ko-bg);color:var(--ko);font-weight:700}
+.chk.missed{outline:2px dashed var(--ko)}
+.chk.okmark{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
+.chk .c{display:block;font-size:12px;font-weight:600;opacity:.9}
+.acts{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.act{border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;gap:10px;align-items:flex-start;background:var(--surface)}
+.act input{margin-top:4px;accent-color:var(--lab);width:18px;height:18px;flex:none}
+.act .tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.tag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--surface-2);color:var(--muted)}
+.tag.r{background:var(--lab-bg);color:var(--lab)}
+.ladder{display:flex;flex-wrap:wrap;gap:4px;font-size:13px;font-weight:700}
+.ladder span{padding:4px 10px;border-radius:6px;background:var(--surface-2);color:var(--muted)}
+.ladder span.on{background:var(--lab);color:var(--surface)}
+pre.report{white-space:pre-wrap;font-family:var(--sans);font-size:15px;background:var(--surface-2);border-radius:8px;padding:14px;margin:0}
+.checks{display:flex;flex-direction:column;gap:4px;font-size:15px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="lab-head">
+  <div class="chips"><span class="chip">MC-MAT-1-04 · Materiali e Rifiuti · 1ª</span><span class="chip lab">Laboratorio · Smistatore</span></div>
+  <h1>Differenzia!</h1>
+  <p class="hook">Ogni oggetto che butti non scompare: diventa qualcos'altro. Ma solo se finisce nel contenitore giusto. Un errore piccolo, come una scatola della pizza unta nella carta, può rovinare un intero lotto di riciclo.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Livello">
+  <button class="tab" role="tab" id="t1" aria-controls="p1"><span class="dots">●</span>Base</button>
+  <button class="tab" role="tab" id="t2" aria-controls="p2"><span class="dots">●●</span>Intermedio</button>
+  <button class="tab" role="tab" id="t3" aria-controls="p3"><span class="dots">●●●</span>Avanzato</button>
+</div>
+
+<!-- BASE -->
+<section class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Tocca un oggetto, poi tocca il contenitore dove lo butteresti. Il laboratorio usa il sistema a 5 frazioni più l'ecocentro, il più diffuso nei Comuni con il porta a porta.</p>
+    <p class="muted">Le regole cambiano da Comune a Comune. Prima del compito di realtà controlla il calendario o l'app del tuo gestore.</p></div>
+  <div class="bench">
+    <div class="row"><span class="muted" id="left" aria-live="polite"></span><span class="score" id="sc1"></span></div>
+    <div class="tray" id="tray" aria-label="Oggetti da smistare"></div>
+    <div class="bins" id="bins"></div>
+    <div id="fb1" hidden></div>
+    <div class="log" id="log" aria-live="polite"></div>
+    <div class="row"><button class="btn ghost" id="rst1">Ricomincia</button></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Quale errore ti ha sorpreso di più? Prova a trasformarlo in una regola breve, come «La pizza unta va nel secco».</p></div>
+</section>
+
+<!-- INTERMEDIO -->
+<section class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Questi sono i contenitori di una classe prima che passi il personale ATA, in tre giorni della settimana. Guarda senza toccare: segna gli oggetti <strong>fuori posto</strong>, poi premi <strong>Controlla</strong>. Il laboratorio calcola la qualità della raccolta e quali errori sono più frequenti.</p></div>
+  <div class="bench">
+    <div class="days" id="days" role="group" aria-label="Giorno"></div>
+    <div class="bins" id="conts"></div>
+    <div class="row"><button class="btn" id="chk2">Controlla</button><span class="muted" id="dayState" aria-live="polite"></span></div>
+    <div id="fb2" hidden></div>
+  </div>
+  <div class="bench" id="sum" hidden>
+    <h3>Il registro della settimana</h3>
+    <div class="scroll-x"><table><thead><tr><th>Giorno</th><th>Conferimenti</th><th>Fuori posto</th><th>Qualità</th></tr></thead><tbody id="tb"></tbody></table></div>
+    <h3>Perché si sbaglia</h3>
+    <div class="scroll-x"><table><thead><tr><th>Causa dell'errore</th><th>Volte</th></tr></thead><tbody id="tc"></tbody></table></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>La qualità è la percentuale di oggetti nel contenitore giusto. Perché a un impianto di riciclo interessa la qualità più della quantità?</p></div>
+</section>
+
+<!-- AVANZATO -->
+<section class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+  <div class="brief"><span class="lbl">Scenario · il bando del Comune</span>
+    <p>Il Comune premia la scuola con il miglior piano per migliorare la differenziata. Scegli <strong>almeno 3 azioni</strong>. Un buon piano attacca le cause d'errore più frequenti che hai trovato al livello Intermedio e usa almeno una delle R più alte della gerarchia: Rifiuta o Riduci.</p>
+    <div class="ladder" aria-label="Gerarchia dei rifiuti, dalla migliore"><span data-r="Rifiuta">Rifiuta</span><span data-r="Riduci">Riduci</span><span data-r="Riusa">Riusa</span><span data-r="Ricicla">Ricicla</span><span data-r="Recupera">Recupera</span></div></div>
+  <div class="bench">
+    <p class="muted" id="causeNote"></p>
+    <div class="acts" id="acts"></div>
+    <div class="checks" id="checks" aria-live="polite"></div>
+  </div>
+  <div class="bench">
+    <h3>Bozza del report per il Comune</h3>
+    <pre class="report" id="rep"></pre>
+    <div class="row"><button class="btn" id="cp">Copia la bozza</button><span class="muted">Completala con i tuoi dati reali e le tue parole.</span></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Quale azione del tuo piano sarebbe più difficile da far rispettare? Chi devi convincere, e come?</p></div>
+</section>
+
+<div class="bridge"><span class="lbl">Verso il compito di realtà</span>
+  <p>Ora fallo davvero: conta i contenitori della tua scuola, osserva per un giorno cosa viene buttato, trova 3 errori frequenti e proponi come correggerli.</p></div>
+<footer class="lab-foot">ProfTecnologIA · Laboratorio pilota v0.1 · Classificazioni secondo il sistema a 5 frazioni descritto nel testo della MC. Le regole locali possono differire.</footer>
+</div>
+
+<script>// Motore comune: schede livello accessibili (WAI-ARIA Tabs) + utilità
+(function(){
+  const tabs=[...document.querySelectorAll('.tab')];
+  function select(t,focus){
+    tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+    if(focus)t.focus();
+    try{localStorage.setItem('lab-level-'+document.title,t.id)}catch(e){}
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>select(t));
+    t.addEventListener('keydown',e=>{
+      let j=null;if(e.key==='ArrowRight')j=(i+1)%tabs.length;if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;
+      if(e.key==='Home')j=0;if(e.key==='End')j=tabs.length-1;
+      if(j!==null){e.preventDefault();select(tabs[j],true);}
+    });
+  });
+  let saved=null;try{saved=localStorage.getItem('lab-level-'+document.title)}catch(e){}
+  select(document.getElementById(saved)||tabs[0]);
+  window.LAB={
+    fb(el,kind,html){el.className='fb '+kind;el.innerHTML=html;el.hidden=false;},
+    fmt(n,d=0){return n.toLocaleString('it-IT',{minimumFractionDigits:d,maximumFractionDigits:d,useGrouping:'always'});},
+    copy(btn,text){
+      const done=()=>{const o=btn.textContent;btn.textContent='Copiato';setTimeout(()=>btn.textContent=o,1500)};
+      try{navigator.clipboard.writeText(text).then(done,()=>{})}catch(e){}
+    }
+  };
+})();
+</script>
+<script>
+(()=>{
+const $=id=>document.getElementById(id);
+const BINS={org:['Organico','avanzi, bucce, fondi di caffè','--b-org'],carta:['Carta e cartone','pulita e asciutta','--b-carta'],
+ plas:['Plastica e metalli','imballaggi svuotati','--b-plas'],vetro:['Vetro','bottiglie e barattoli','--b-vetro'],
+ secco:['Secco residuo','ciò che non si ricicla','--b-secco'],eco:['Ecocentro e raccolte speciali','pile, RAEE, farmaci','--b-eco']};
+/* ---------- BASE ---------- */
+const ITEMS=[
+ ['Bottiglia d\'acqua in PET','plas','Il PET (codice ♳) è la plastica più riciclata: svuota la bottiglia e schiacciala.'],
+ ['Scatola della pizza sporca di grasso','secco','Il grasso contamina la carta intorno. Se una metà è pulita, strappala e mettila nella carta.'],
+ ['Lattina di pomodori pelati','plas','È un imballaggio in metallo: svuotala e sciacquala.'],
+ ['Barattolo di marmellata in vetro con coperchio','vetro','Il barattolo va nel vetro, ma il coperchio in metallo va staccato e messo con plastica e metalli.'],
+ ['Pila AA scarica','eco','Le pile contengono metalli pericolosi: vanno negli appositi contenitori dei negozi o all\'ecocentro.'],
+ ['Giornale','carta','Carta pulita e asciutta: è il materiale ideale per il riciclo.'],
+ ['Bicchiere di ceramica rotto','secco','La ceramica non è vetro da imballaggio: fonde a temperature diverse e crea difetti nel vetro riciclato.'],
+ ['Cuffiette con filo rotte','eco','Sono un rifiuto elettronico (RAEE): contengono rame e plastiche diverse. Vanno all\'ecocentro.'],
+ ['Sacchetto di plastica del supermercato','plas','È un imballaggio in plastica. Se è compostabile, invece, va nell\'organico.'],
+ ['Quaderno con spirale metallica','carta','La carta va nella carta, ma la spirale va tolta e messa con plastica e metalli.'],
+ ['Buccia di banana','org','Scarto alimentare: diventerà compost o biogas.'],
+ ['Fondi di caffè','org','Sono organico. Nel compost sono anche un buon fertilizzante.'],
+ ['Scontrino del supermercato','secco','È carta termica, trattata con sostanze chimiche: non si ricicla con la carta.'],
+ ['Specchio rotto','secco','Lo specchio ha uno strato metallico e un vetro diverso da quello delle bottiglie: va nel secco.'],
+ ['Medicinale scaduto','eco','I farmaci scaduti vanno negli appositi contenitori, spesso davanti alle farmacie.'],
+ ['Sacchetto compostabile della frutta','org','È compostabile: può raccogliere l\'organico e andare con lui.']];
+let sel=null,done={},score=0;
+function drawBase(){
+ const tr=$('tray');tr.innerHTML='';
+ ITEMS.forEach((it,i)=>{if(done[i]!==undefined)return;const b=document.createElement('button');b.className='item';b.textContent=it[0];
+  b.setAttribute('aria-pressed',sel===i);b.onclick=()=>{sel=sel===i?null:i;drawBase();};tr.appendChild(b)});
+ const bn=$('bins');bn.innerHTML='';
+ Object.entries(BINS).forEach(([k,v])=>{const b=document.createElement('button');b.className='bin';b.style.setProperty('--c',`var(${v[2]})`);
+  b.innerHTML=`<span class="name">${v[0]}</span><span class="hint">${v[1]}</span>`;b.disabled=sel===null;
+  b.setAttribute('aria-label',`${v[0]}: ${v[1]}`);b.onclick=()=>drop(k);bn.appendChild(b)});
+ const n=ITEMS.length-Object.keys(done).length;
+ $('left').textContent=n?(sel===null?`${n} oggetti da smistare. Scegli un oggetto.`:`Dove va «${ITEMS[sel][0]}»?`):'Hai smistato tutto.';
+ $('sc1').textContent=Object.keys(done).length?`${score}/${Object.keys(done).length}`:'';
+ if(!n){const k=score===ITEMS.length?'ok':'warn';LAB.fb($('fb1'),k,score===ITEMS.length?'<strong>Tutto nel contenitore giusto.</strong> Sei pronto per il livello Intermedio.':`<strong>${score} su ${ITEMS.length} giusti.</strong> Rileggi le spiegazioni in rosso: sono gli errori che faresti anche a casa.`)}
+}
+function drop(k){if(sel===null)return;const it=ITEMS[sel],ok=it[1]===k;done[sel]=k;if(ok)score++;
+ const d=document.createElement('div');d.className='fb '+(ok?'ok':'ko');
+ d.innerHTML=ok?`<strong>${it[0]}</strong> → ${BINS[k][0]}. ${it[2]}`:`<strong>${it[0]}</strong> non va in ${BINS[k][0]}, ma in ${BINS[it[1]][0]}. ${it[2]}`;
+ $('log').prepend(d);sel=null;drawBase();}
+$('rst1').onclick=()=>{sel=null;done={};score=0;$('log').innerHTML='';$('fb1').hidden=true;drawBase()};
+drawBase();
+
+/* ---------- INTERMEDIO ---------- */
+const CAUSE={sporco:'Imballaggio sporco o pieno',comp:'Oggetto fatto di più materiali',falso:'Sembra riciclabile ma non lo è',spec:'Rifiuto speciale nel bidone normale',lont:'Contenitore giusto lontano o assente',dubbio:'Dubbio: non sapeva dove buttarlo'};
+// [oggetto, giusto?, causa]
+const DAYS={
+ 'Lunedì':{carta:[['Fogli di quaderno',1],['Tovagliolo sporco di merenda',0,'sporco'],['Cartoncino della merendina',1]],
+  plas:[['Bottiglietta d\'acqua',1],['Lattina di aranciata',1],['Incarto della merendina',1],['Penna biro scarica',0,'falso']],
+  org:[['Torsolo di mela',1],['Busta di plastica con briciole',0,'dubbio']],
+  secco:[['Pila del telecomando',0,'spec'],['Gomma da cancellare consumata',1],['Scontrino',1]]},
+ 'Mercoledì':{carta:[['Quaderno con spirale',0,'comp'],['Giornalino della scuola',1],['Scontrino',0,'falso']],
+  plas:[['Bicchiere di plastica',1],['Vasetto di yogurt ancora pieno',0,'sporco'],['Brick del succo con cannuccia',1]],
+  org:[['Buccia d\'arancia',1],['Fazzoletto di carta usato',1]],
+  secco:[['Bottiglietta d\'acqua',0,'lont'],['Bottiglietta d\'acqua',0,'lont'],['Penna biro',1]]},
+ 'Venerdì':{carta:[['Scatola della pizza unta',0,'sporco'],['Scatola di cartone piegata',1]],
+  plas:[['Barattolo di vetro',0,'dubbio'],['Bottiglia di plastica',1],['Busta di patatine',1]],
+  org:[['Bustina di tè',1],['Avanzi del pranzo',1]],
+  secco:[['Cuffiette rotte',0,'spec'],['Bicchiere di ceramica rotto',1],['Busta di patatine',0,'lont']]}};
+const BRICK_NOTE='Il brick (cartone per bevande) in molti Comuni va con plastica e metalli, in altri con la carta: qui segue il primo caso.';
+let day='Lunedì',marks={},checked={};
+const dayBtns=$('days');
+Object.keys(DAYS).forEach(d=>{const b=document.createElement('button');b.textContent=d;b.onclick=()=>{day=d;drawDay()};dayBtns.appendChild(b)});
+function drawDay(){
+ [...dayBtns.children].forEach(b=>b.setAttribute('aria-pressed',b.textContent===day));
+ const c=$('conts');c.innerHTML='';const D=DAYS[day];
+ Object.entries(D).forEach(([k,list])=>{const box=document.createElement('div');box.className='cont';box.style.setProperty('--c',`var(${BINS[k][2]})`);
+  box.innerHTML=`<h4>${BINS[k][0]}</h4>`;
+  list.forEach((it,i)=>{const id=`${day}|${k}|${i}`,b=document.createElement('button');b.className='chk';
+   const m=!!marks[id];b.setAttribute('aria-pressed',m);b.innerHTML=it[0];
+   if(checked[day]){b.disabled=true;
+     if(!it[1]&&m){b.innerHTML+=`<span class="c">✓ trovato · ${CAUSE[it[2]]}</span>`}
+     else if(!it[1]&&!m){b.classList.add('missed');b.innerHTML+=`<span class="c">Ti è sfuggito · ${CAUSE[it[2]]}</span>`}
+     else if(it[1]&&m){b.innerHTML+='<span class="c">Questo era giusto</span>'}}
+   b.onclick=()=>{marks[id]=!marks[id];drawDay()};box.appendChild(b)});
+  c.appendChild(box)});
+ $('chk2').disabled=!!checked[day];
+ $('dayState').textContent=checked[day]?'Giorno controllato.':`${Object.keys(checked).length} giorni su 3 controllati.`;
+ if(checked[day])showDayFb();else $('fb2').hidden=true;
+}
+function dayStats(d){let tot=0,wrong=0,found=0,falsePos=0,causes={};
+ Object.entries(DAYS[d]).forEach(([k,l])=>l.forEach((it,i)=>{tot++;const m=marks[`${d}|${k}|${i}`];
+  if(!it[1]){wrong++;causes[it[2]]=(causes[it[2]]||0)+1;if(m)found++}else if(m)falsePos++}));
+ return{tot,wrong,found,falsePos,causes};}
+function showDayFb(){const s=dayStats(day);
+ let msg=`Hai trovato <strong>${s.found} errori su ${s.wrong}</strong>.`;
+ if(s.falsePos)msg+=` ${s.falsePos} oggetti che hai segnato erano invece nel posto giusto.`;
+ if(day==='Mercoledì')msg+=' '+BRICK_NOTE;
+ LAB.fb($('fb2'),s.found===s.wrong&&!s.falsePos?'ok':'warn',msg);}
+$('chk2').onclick=()=>{checked[day]=true;drawDay();drawSum();};
+function drawSum(){const ds=Object.keys(checked);if(!ds.length)return;$('sum').hidden=false;
+ let rows='',all={};
+ ds.forEach(d=>{const s=dayStats(d);const q=(s.tot-s.wrong)/s.tot*100;
+  rows+=`<tr><td>${d}</td><td class="mono">${s.tot}</td><td class="mono">${s.wrong}</td><td class="mono">${LAB.fmt(q)}%</td></tr>`;
+  Object.entries(s.causes).forEach(([c,n])=>all[c]=(all[c]||0)+n)});
+ $('tb').innerHTML=rows;
+ const sorted=Object.entries(all).sort((a,b)=>b[1]-a[1]);
+ $('tc').innerHTML=sorted.map(([c,n])=>`<tr><td>${CAUSE[c]}</td><td class="mono">${n}</td></tr>`).join('');
+ TOP=sorted.slice(0,2).map(x=>x[0]);drawPlan();}
+let TOP=[];
+drawDay();
+
+/* ---------- AVANZATO ---------- */
+const ACTS=[
+ ['Etichette con le foto degli oggetti su ogni contenitore','studenti','costo zero','Ricicla',['dubbio','falso']],
+ ['Campagna «svuota e sciacqua»: niente imballaggi sporchi','studenti','costo zero','Ricicla',['sporco']],
+ ['Postazione «separa le parti» per spirali, coperchi e tappi','studenti e docenti','costo zero','Ricicla',['comp']],
+ ['Un contenitore per plastica e metalli in ogni aula','dirigenza e Comune','basso costo','Ricicla',['lont']],
+ ['Raccoglitore per pile e piccoli RAEE all\'ingresso','dirigenza e Comune','basso costo','Recupera',['spec']],
+ ['Borracce per tutti invece delle bottigliette','famiglie e scuola','basso costo','Riduci',[]],
+ ['Venerdì «merenda senza incarto»','studenti e famiglie','costo zero','Rifiuta',[]],
+ ['Eco-tutor a turno che controllano i contenitori','studenti','costo zero','Ricicla',['dubbio','sporco','falso']],
+ ['Mercatino di scambio di libri e materiale scolastico','studenti e famiglie','costo zero','Riusa',[]]];
+const actsBox=$('acts');
+ACTS.forEach((a,i)=>{const l=document.createElement('label');l.className='act';l.htmlFor='a'+i;
+ l.innerHTML=`<input type="checkbox" id="a${i}"><span><span>${a[0]}</span><span class="tags"><span class="tag r">${a[3]}</span><span class="tag">${a[1]}</span><span class="tag">${a[2]}</span>${a[4].map(c=>`<span class="tag">contro: ${CAUSE[c].toLowerCase()}</span>`).join('')}</span></span>`;
+ actsBox.appendChild(l);l.querySelector('input').addEventListener('change',drawPlan)});
+function drawPlan(){
+ const on=ACTS.filter((a,i)=>$('a'+i).checked);
+ const Rs=new Set(on.map(a=>a[3]));document.querySelectorAll('.ladder span').forEach(s=>s.classList.toggle('on',Rs.has(s.dataset.r)));
+ $('causeNote').textContent=TOP.length?`Le tue cause principali (dal livello Intermedio): ${TOP.map(c=>CAUSE[c].toLowerCase()).join(' e ')}.`:'Suggerimento: completa prima il livello Intermedio, così il piano parte dai tuoi dati.';
+ const covered=TOP.filter(c=>on.some(a=>a[4].includes(c)));
+ const high=on.some(a=>a[3]==='Rifiuta'||a[3]==='Riduci');
+ const c=[[on.length>=3,`Almeno 3 azioni (${on.length})`],[high,'Almeno una azione da Rifiuta o Riduci'],
+  [TOP.length?covered.length===TOP.length:false,TOP.length?`Attacca le tue cause principali (${covered.length}/${TOP.length})`:'Attacca le cause principali (servono i dati dell\'Intermedio)']];
+ $('checks').innerHTML=c.map(([ok,t])=>`<div class="fb ${ok?'ok':'warn'}">${ok?'✓':'○'} ${t}</div>`).join('');
+ const ds=Object.keys(checked);let q='[qualità misurata]';
+ if(ds.length){let t=0,w=0;ds.forEach(d=>{const s=dayStats(d);t+=s.tot;w+=s.wrong});q=`${LAB.fmt((t-w)/t*100)}% degli oggetti nel contenitore giusto (${ds.length} giorni osservati)`}
+ $('rep').textContent=
+`SITUAZIONE ATTUALE
+Nella nostra classe abbiamo osservato i contenitori della differenziata. Risultato: ${q}.
+${TOP.length?'Gli errori più frequenti sono dovuti a: '+TOP.map(c=>CAUSE[c].toLowerCase()).join('; ')+'.':'[cause principali degli errori]'}
+
+OBIETTIVI
+[Scrivi un obiettivo misurabile, per esempio la percentuale da raggiungere entro fine anno.]
+
+AZIONI
+${on.length?on.map((a,i)=>`${i+1}. ${a[0]} — chi: ${a[1]}; ${a[2]}; livello della gerarchia: ${a[3]}.`).join('\n'):'[scegli almeno 3 azioni]'}
+
+RISULTATO ATTESO
+[Spiega quale errore si riduce con ogni azione e perché.]
+
+COME LO MISUREREMO
+Ripeteremo l'osservazione dei contenitori per una settimana, con la stessa tabella, e confronteremo la qualità prima e dopo.`;}
+$('cp').onclick=()=>LAB.copy($('cp'),$('rep').textContent);
+drawPlan();
+})();
+</script>
+</body>
+</html>

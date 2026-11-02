@@ -249,6 +249,13 @@ export default function SiteHeader({ mcIndex = [] }: SiteHeaderProps) {
             <span className="mx-1.5 h-4 w-px bg-slate-200" aria-hidden="true" />
 
             <Link
+              href="/laboratori"
+              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              Laboratori
+            </Link>
+
+            <Link
               href="/glossario"
               className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
             >
@@ -355,6 +362,13 @@ export default function SiteHeader({ mcIndex = [] }: SiteHeaderProps) {
 
               <div className="my-1 h-px bg-slate-100" role="separator" />
 
+              <Link
+                href="/laboratori"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              >
+                Laboratori
+              </Link>
               <Link
                 href="/glossario"
                 onClick={() => setMenuOpen(false)}

@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="it" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>Tre sguardi</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: colonna unica da libro digitale (max 920px), testata d'area, schede livello, banco di lavoro, feedback.
+   Token dal design system TecnologIA (design-tokens.json): brand navy, zona 4 Laboratorio, colori d'area. */
+:root{
+  --bg:#F6F7FA; --surface:#FFFFFF; --surface-2:#EEF3FC; --fg:#1A1C24; --muted:#5A5F76; --line:#D8DAE8;
+  --brand:#1A2B4A; --lab:#00695C; --lab-bg:#E0F2F1; --energy:#C24010;
+  --ok:#166534; --ok-bg:#DCFCE7; --ko:#B42318; --ko-bg:#FEE4E2; --warn:#8A5A00; --warn-bg:#FFF4D6;
+  --area:#1A3A7A; --area-bg:#E8EFF9;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','Fira Code',ui-monospace,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{text-wrap:balance;line-height:1.2;margin:0;color:var(--brand)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:21px;font-weight:700}
+h3{font-size:17px;font-weight:700}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header.lab-head{display:flex;flex-direction:column;gap:10px;padding-bottom:16px;border-bottom:2px solid var(--area)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--area-bg);color:var(--area)}
+.chip.lab{background:var(--lab-bg);color:var(--lab)}
+.hook{font-size:17px;color:var(--fg)}
+/* level tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tab{font:inherit;font-weight:700;font-size:15px;color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--lab);border-bottom-color:var(--lab)}
+.tab:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.dots{letter-spacing:-.1em;margin-right:6px}
+.panel{display:flex;flex-direction:column;gap:16px}
+.brief{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.brief .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lab)}
+.bench{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.btn{font:inherit;font-weight:700;font-size:15px;border-radius:8px;padding:10px 16px;cursor:pointer;border:2px solid var(--lab);background:var(--lab);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--lab)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.fb{border-radius:8px;padding:12px 14px;font-size:15px}
+.fb.ok{background:var(--ok-bg);color:var(--ok)}
+.fb.ko{background:var(--ko-bg);color:var(--ko)}
+.fb.warn{background:var(--warn-bg);color:var(--warn)}
+.fb strong{font-weight:800}
+.meta{background:var(--surface-2);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.meta .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.bridge{border:2px dashed var(--area);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.bridge .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--area)}
+textarea{font:inherit;width:100%;min-height:90px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface);color:var(--fg)}
+select,input[type=number],input[type=text]{font:inherit;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);color:var(--fg);max-width:100%}
+input[type=range]{width:100%;accent-color:var(--lab)}
+label{font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid2>*{min-width:0}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.score{font-family:var(--mono);font-weight:700;font-size:20px;color:var(--lab)}
+footer.lab-foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:480px){.tab{padding:10px 8px;font-size:14px}h1{font-size:26px}}
+
+:root{--area:#1A3A7A;--area-bg:#E8EFF9;--paper:#FFFFFF;--ink:#1A1C24;--solid:#B0C3EE}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--area:#9DB8F2;--area-bg:#1C2B48;--paper:#101A2C;--ink:#ECEEF6;--solid:#3A64AE}}
+:root[data-theme="dark"]{--area:#9DB8F2;--area-bg:#1C2B48;--paper:#101A2C;--ink:#ECEEF6;--solid:#3A64AE}
+.stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:760px){.stage{grid-template-columns:1fr}}
+.viewer{display:flex;flex-direction:column;gap:8px}
+.viewer canvas{width:100%;aspect-ratio:1/1;max-width:100%;border:1px solid var(--line);border-radius:8px;background:var(--paper);touch-action:none;cursor:grab;display:block}
+.vbtns{display:flex;flex-wrap:wrap;gap:6px}
+.vbtns button,.pick button{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.vbtns button[aria-pressed="true"],.pick button[aria-pressed="true"]{border-color:var(--area);background:var(--area-bg);color:var(--area)}
+.sheet{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:8px;background:var(--paper);position:relative;overflow:hidden}
+.sheet figure{margin:0;position:relative;border:0}
+.sheet img{width:100%;display:block;aspect-ratio:1/1}
+.sheet figcaption{position:absolute;left:8px;top:6px;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--area)}
+.sheet .hl{position:absolute;left:0;right:0;border-top:1px dashed var(--line)}
+.sheet .vl{position:absolute;top:0;bottom:0;border-left:1px dashed var(--line)}
+.sheet .cell-empty{display:flex;align-items:center;justify-content:center;padding:12px;font-size:13px;color:var(--muted);text-align:center}
+.q{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.opts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+@media (max-width:520px){.opts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.opt{border:2px solid var(--line);border-radius:8px;padding:0;background:var(--paper);cursor:pointer;position:relative}
+.opt img{width:100%;display:block;aspect-ratio:1/1;border-radius:6px}
+.opt[aria-checked="true"]{border-color:var(--area)}
+.opt.right{border-color:var(--ok);box-shadow:0 0 0 2px var(--ok)}
+.opt.wrong{border-color:var(--ko)}
+.opt .n{position:absolute;left:6px;top:4px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--muted)}
+.layers{display:flex;flex-wrap:wrap;gap:14px}
+.layer{display:flex;flex-direction:column;gap:6px}
+.layer .t{font-size:13px;font-weight:700;color:var(--muted)}
+.vox{display:grid;grid-template-columns:repeat(3,40px);gap:4px}
+.vox button{width:40px;height:40px;border:1px solid var(--line);border-radius:6px;background:var(--surface);cursor:pointer;font:inherit;font-size:12px;color:var(--muted)}
+.vox button[aria-pressed="true"]{background:var(--area);border-color:var(--area);color:var(--surface)}
+.orient{font-size:12px;color:var(--muted)}
+.match{display:flex;flex-wrap:wrap;gap:8px}
+.match span{font-size:14px;font-weight:700;padding:4px 10px;border-radius:999px}
+.match .y{background:var(--ok-bg);color:var(--ok)}.match .n{background:var(--ko-bg);color:var(--ko)}
+.legend-lines{display:flex;flex-wrap:wrap;gap:16px;font-size:14px;color:var(--muted);align-items:center}
+.legend-lines i{display:inline-block;width:28px;border-top:2px solid var(--ink);vertical-align:middle;margin-right:6px}
+.legend-lines i.d{border-top-style:dashed}
+.err3d{padding:12px}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="lab-head">
+  <div class="chips"><span class="chip">MC-DIS-2-01 · Disegno Tecnico · 2ª</span><span class="chip lab">Laboratorio · Tavolo grafico</span></div>
+  <h1>Tre sguardi</h1>
+  <p class="hook">Una sola forma, tre sguardi diversi. Ruota il solido, poi guardalo esattamente di fronte, da sinistra e dall'alto: quello che vedi in quel momento è la proiezione ortogonale.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Livello">
+  <button class="tab" role="tab" id="t1" aria-controls="p1"><span class="dots">●</span>Base</button>
+  <button class="tab" role="tab" id="t2" aria-controls="p2"><span class="dots">●●</span>Intermedio</button>
+  <button class="tab" role="tab" id="t3" aria-controls="p3"><span class="dots">●●●</span>Avanzato</button>
+</div>
+
+<!-- BASE -->
+<section class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Scegli un solido e ruotalo trascinando. Poi, per ogni domanda, scegli il disegno giusto tra i quattro. Attenzione: i disegni sbagliati sono viste vere dello stesso solido, prese dalla direzione sbagliata.</p>
+    <p class="muted">Metodo europeo (di Monge): il prospetto in alto a sinistra, la vista da sinistra alla sua destra, la pianta sotto il prospetto.</p></div>
+  <div class="bench">
+    <div class="pick vbtns" id="solidPick" role="group" aria-label="Solido"></div>
+    <div class="stage">
+      <div class="viewer"><canvas id="cv1" aria-label="Solido tridimensionale: trascina per ruotarlo"></canvas>
+        <div class="vbtns" id="vb1"></div></div>
+      <div id="qs" class="panel"></div>
+    </div>
+    <div class="row"><button class="btn" id="chk1">Verifica</button><span class="score" id="sc1" aria-live="polite"></span></div>
+    <div id="fb1" hidden></div>
+    <div id="sheet1Wrap" hidden><h3>Ecco il foglio completo, con le linee di richiamo</h3><div class="sheet" id="sheet1"></div></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Il prospetto mostra larghezza e altezza. Quali due dimensioni mostra la pianta? E la vista laterale? Perché prospetto e vista laterale devono stare alla stessa altezza sul foglio?</p></div>
+</section>
+
+<!-- INTERMEDIO -->
+<section class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Parallelepipedo 80 × 50 × 30 mm con un <strong>foro passante</strong>. Cambia la direzione e il diametro del foro e guarda come cambiano le tre viste. Poi rispondi alle domande.</p>
+    <div class="legend-lines"><span><i></i>linea continua: spigolo visibile</span><span><i class="d"></i>linea tratteggiata: spigolo nascosto</span></div></div>
+  <div class="bench">
+    <div class="row"><span class="muted">Il foro attraversa:</span><div class="pick vbtns" id="axPick" role="group" aria-label="Direzione del foro"></div></div>
+    <div class="ctrl"><div class="row" style="justify-content:space-between"><label for="dia">Diametro del foro</label><span class="mono" id="vdia"></span></div><input type="range" id="dia" min="6" max="40" step="2" value="20"></div>
+    <div class="stage">
+      <div class="viewer"><canvas id="cv2" aria-label="Parallelepipedo con foro: trascina per ruotarlo"></canvas><div class="vbtns" id="vb2"></div></div>
+      <div class="sheet" id="sheet2"></div>
+    </div>
+  </div>
+  <div class="bench" id="q2"></div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Perché il foro appare come cerchio in una vista e come due linee tratteggiate nelle altre due? Scrivilo in 2-3 righe, poi controlla ruotando il solido.</p></div>
+</section>
+
+<!-- AVANZATO -->
+<section class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+  <div class="brief"><span class="lbl">Consegna · dal disegno al pezzo</span>
+    <p>Un tecnico ti consegna solo le tre viste. Ricostruisci il pezzo con cubetti da 20 mm su tre piani. Il laboratorio confronta le tue viste con quelle del disegno: quando tutte e tre coincidono, hai letto il disegno.</p></div>
+  <div class="bench">
+    <div class="pick vbtns" id="pzPick" role="group" aria-label="Disegno"></div>
+    <div class="stage">
+      <div><h3>Il disegno da leggere</h3><div class="sheet" id="sheetT"></div></div>
+      <div><h3>Le viste del tuo pezzo</h3><div class="sheet" id="sheetS"></div></div>
+    </div>
+    <div class="match" id="match" aria-live="polite"></div>
+    <div class="stage">
+      <div class="panel">
+        <p class="orient">Ogni griglia è un piano visto dall'alto, come nella pianta: <strong>fronte in basso</strong>, sinistra a sinistra.</p>
+        <div class="layers" id="layers"></div>
+        <div class="row"><button class="btn ghost" id="clr">Svuota</button></div>
+      </div>
+      <div class="viewer"><canvas id="cv3" aria-label="Il tuo pezzo in 3D: trascina per ruotarlo"></canvas></div>
+    </div>
+    <div id="fb3" hidden></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Hai trovato il pezzo usando un cubetto in più o in meno di un compagno, con le stesse viste? Che cosa ti dice questo sul perché, nei disegni difficili, si aggiunge una sezione?</p></div>
+</section>
+
+<div class="bridge"><span class="lbl">Verso il compito di realtà</span>
+  <p>Scegli un oggetto di forma semplice, misuralo e disegna le tre viste ortogonali quotate su un foglio A4, con la disposizione che hai usato qui.</p></div>
+<footer class="lab-foot">ProfTecnologIA · Laboratorio pilota v0.1 · Proiezioni ortogonali con il metodo europeo (primo diedro). Le viste sono calcolate dal modello 3D.</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>// Motore comune: schede livello accessibili (WAI-ARIA Tabs) + utilità
+(function(){
+  const tabs=[...document.querySelectorAll('.tab')];
+  function select(t,focus){
+    tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+    if(focus)t.focus();
+    try{localStorage.setItem('lab-level-'+document.title,t.id)}catch(e){}
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>select(t));
+    t.addEventListener('keydown',e=>{
+      let j=null;if(e.key==='ArrowRight')j=(i+1)%tabs.length;if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;
+      if(e.key==='Home')j=0;if(e.key==='End')j=tabs.length-1;
+      if(j!==null){e.preventDefault();select(tabs[j],true);}
+    });
+  });
+  let saved=null;try{saved=localStorage.getItem('lab-level-'+document.title)}catch(e){}
+  select(document.getElementById(saved)||tabs[0]);
+  window.LAB={
+    fb(el,kind,html){el.className='fb '+kind;el.innerHTML=html;el.hidden=false;},
+    fmt(n,d=0){return n.toLocaleString('it-IT',{minimumFractionDigits:d,maximumFractionDigits:d,useGrouping:'always'});},
+    copy(btn,text){
+      const done=()=>{const o=btn.textContent;btn.textContent='Copiato';setTimeout(()=>btn.textContent=o,1500)};
+      try{navigator.clipboard.writeText(text).then(done,()=>{})}catch(e){}
+    }
+  };
+})();
+</script>
+<script>
+(()=>{
+const $=id=>document.getElementById(id);
+if(typeof THREE==='undefined'){document.querySelectorAll('canvas').forEach(c=>{const d=document.createElement('p');d.className='fb warn err3d';d.textContent='Il motore 3D non si è caricato. Controlla la connessione e ricarica la pagina.';c.replaceWith(d)});return;}
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const U=20,S=52; // mm per cubetto, semilato inquadratura
+/* ---------- geometrie ---------- */
+function voxGeom(cells){const set=new Set(cells.map(c=>c.join(','))),pos=[];
+ const has=(x,y,z)=>set.has([x,y,z].join(','));const o=-1.5*U;
+ const F=[[[1,0,0],[[1,0,0],[1,1,0],[1,1,1],[1,0,1]]],[[-1,0,0],[[0,0,1],[0,1,1],[0,1,0],[0,0,0]]],[[0,1,0],[[0,1,1],[1,1,1],[1,1,0],[0,1,0]]],
+  [[0,-1,0],[[0,0,0],[1,0,0],[1,0,1],[0,0,1]]],[[0,0,1],[[0,0,1],[1,0,1],[1,1,1],[0,1,1]]],[[0,0,-1],[[1,0,0],[0,0,0],[0,1,0],[1,1,0]]]];
+ cells.forEach(([x,y,z])=>F.forEach(([n,q])=>{if(has(x+n[0],y+n[1],z+n[2]))return;
+  const v=q.map(p=>[o+(x+p[0])*U,o+(y+p[1])*U,o+(z+p[2])*U]);[0,1,2,0,2,3].forEach(i=>pos.push(...v[i]))}));
+ const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.computeVertexNormals();return{geom:g,gens:()=>[]};}
+function holed(ax,d){const W=80,H=50,D=30,r=d/2;let g,sw,sh,L;
+ if(ax==='z'){sw=W;sh=H;L=D}else if(ax==='x'){sw=D;sh=H;L=W}else{sw=W;sh=D;L=H}
+ const s=new THREE.Shape();s.moveTo(-sw/2,-sh/2);s.lineTo(sw/2,-sh/2);s.lineTo(sw/2,sh/2);s.lineTo(-sw/2,sh/2);s.lineTo(-sw/2,-sh/2);
+ const h=new THREE.Path();h.absarc(0,0,r,0,Math.PI*2,true);s.holes.push(h);
+ g=new THREE.ExtrudeGeometry(s,{depth:L,bevelEnabled:false,curveSegments:40});g.translate(0,0,-L/2);
+ if(ax==='x')g.rotateY(Math.PI/2);if(ax==='y')g.rotateX(Math.PI/2);
+ const axV=new THREE.Vector3(ax==='x'?1:0,ax==='y'?1:0,ax==='z'?1:0);
+ return{geom:g,gens:(dir)=>{const c=new THREE.Vector3().crossVectors(axV,dir);if(c.lengthSq()<1e-6)return[];c.normalize().multiplyScalar(r);
+  return[1,-1].map(sg=>{const p=c.clone().multiplyScalar(sg);return[p.clone().addScaledVector(axV,-L/2),p.clone().addScaledVector(axV,L/2)]})}};}
+/* ---------- viste ---------- */
+const DIRS={front:{p:[0,0,1],u:[0,1,0],n:'Di fronte'},back:{p:[0,0,-1],u:[0,1,0],n:'Da dietro'},left:{p:[-1,0,0],u:[0,1,0],n:'Da sinistra'},
+ right:{p:[1,0,0],u:[0,1,0],n:'Da destra'},top:{p:[0,1,0],u:[0,0,-1],n:'Dall\'alto'},bottom:{p:[0,-1,0],u:[0,0,1],n:'Dal basso'}};
+const off=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});off.setPixelRatio(1);off.setSize(220,220);
+function cam(dk){const d=DIRS[dk],c=new THREE.OrthographicCamera(-S,S,S,-S,1,1000);c.position.set(d.p[0]*300,d.p[1]*300,d.p[2]*300);c.up.set(...d.u);c.lookAt(0,0,0);return c;}
+function viewScene(solid,dk,hidden=true){const ink=new THREE.Color(css('--ink')),sc=new THREE.Scene();
+ const m=new THREE.Mesh(solid.geom,new THREE.MeshBasicMaterial({colorWrite:false,polygonOffset:true,polygonOffsetFactor:1,polygonOffsetUnits:1,side:THREE.DoubleSide}));sc.add(m);
+ const eg=new THREE.EdgesGeometry(solid.geom,20);const pts=[];const pa=eg.attributes.position.array;for(let i=0;i<pa.length;i++)pts.push(pa[i]);
+ const dv=new THREE.Vector3(...DIRS[dk].p);solid.gens(dv).forEach(([a,b])=>pts.push(a.x,a.y,a.z,b.x,b.y,b.z));
+ const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.Float32BufferAttribute(pts,3));
+ const vis=new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:ink}));vis.renderOrder=1;sc.add(vis);
+ if(hidden){const hl=new THREE.LineSegments(lg.clone(),new THREE.LineDashedMaterial({color:ink,dashSize:3,gapSize:2.5,depthFunc:THREE.GreaterDepth,depthWrite:false,transparent:true,opacity:1}));
+  hl.computeLineDistances();hl.renderOrder=2;sc.add(hl);}
+ return sc;}
+function snap(solid,dk,hidden=true){off.setClearColor(0x000000,0);off.render(viewScene(solid,dk,hidden),cam(dk));return off.domElement.toDataURL();}
+function mask(solid,dk){off.setClearColor(0x000000,0);off.render(viewScene(solid,dk),cam(dk));const c=document.createElement('canvas');c.width=c.height=160;const x=c.getContext('2d');
+ x.drawImage(off.domElement,0,0,160,160);const d=x.getImageData(0,0,160,160).data,m=new Uint8Array(160*160);for(let i=0;i<m.length;i++)m[i]=d[i*4+3]>60?1:0;return m;}
+function sheet(el,solid,opts={}){const h=opts.hidden!==false;el.innerHTML='';
+ const views=[['PV · prospetto','front'],['PL · vista da sinistra','left'],['PO · pianta','top']];
+ views.forEach(([cap,dk])=>{const f=document.createElement('figure');f.innerHTML=`<img alt="${cap}" src="${solid?snap(solid,dk,h):''}"><figcaption>${cap}</figcaption>`;el.appendChild(f)});
+ const e=document.createElement('div');e.className='cell-empty';e.textContent=opts.note||'Prospetto e vista laterale sono alla stessa altezza; la pianta è sotto il prospetto, allineata in verticale.';el.appendChild(e);
+ ['25%','75%'].forEach(t=>{const l=document.createElement('div');l.className='hl';l.style.top=(t==='25%'?'25%':'75%');el.appendChild(l)});
+ const v=document.createElement('div');v.className='vl';v.style.left='25%';el.appendChild(v);}
+/* ---------- visore 3D ---------- */
+function viewer(canvas,btnBox){const r=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});const sc=new THREE.Scene();
+ const c=new THREE.OrthographicCamera(-S*1.15,S*1.15,S*1.15,-S*1.15,1,1000);sc.add(new THREE.AmbientLight(0xffffff,.65));const dl=new THREE.DirectionalLight(0xffffff,.55);dl.position.set(.6,1,.8);sc.add(dl);
+ let grp=null,th=-.6,ph=.5,tt=th,tp=ph,raf=null,solidRef=null;
+ function size(){const w=canvas.clientWidth||300;r.setPixelRatio(Math.min(2,devicePixelRatio||1));r.setSize(w,w,false);}
+ function set(solid){solidRef=solid;if(grp)sc.remove(grp);grp=new THREE.Group();
+  grp.add(new THREE.Mesh(solid.geom,new THREE.MeshLambertMaterial({color:new THREE.Color(css('--solid')),side:THREE.DoubleSide,polygonOffset:true,polygonOffsetFactor:1,polygonOffsetUnits:1})));
+  grp.add(new THREE.LineSegments(new THREE.EdgesGeometry(solid.geom,20),new THREE.LineBasicMaterial({color:new THREE.Color(css('--ink'))})));sc.add(grp);draw();}
+ function draw(){const R=300;c.position.set(R*Math.cos(ph)*Math.sin(th),R*Math.sin(ph),R*Math.cos(ph)*Math.cos(th));
+  c.up.set(0,1,0);if(Math.abs(ph)>1.56){c.up.set(0,0,ph>0?-1:1)}c.lookAt(0,0,0);r.render(sc,c);}
+ function anim(){th+=(tt-th)*.18;ph+=(tp-ph)*.18;draw();if(Math.abs(tt-th)>.002||Math.abs(tp-ph)>.002)raf=requestAnimationFrame(anim);else{th=tt;ph=tp;draw();raf=null}}
+ function go(a,b){tt=a;tp=b;if(matchMedia('(prefers-reduced-motion: reduce)').matches){th=tt;ph=tp;draw();}else if(!raf)raf=requestAnimationFrame(anim);mark(null)}
+ let drag=null;canvas.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY,th,ph];canvas.setPointerCapture(e.pointerId);mark(null)});
+ canvas.addEventListener('pointermove',e=>{if(!drag)return;th=tt=drag[2]-(e.clientX-drag[0])*.01;ph=tp=Math.max(-1.5707,Math.min(1.5707,drag[3]+(e.clientY-drag[1])*.01));draw()});
+ canvas.addEventListener('pointerup',()=>drag=null);
+ const B=[['3D','Vista libera',-.6,.5],['front','Di fronte (PV)',0,0],['left','Da sinistra (PL)',-Math.PI/2,0],['top','Dall\'alto (PO)',0,Math.PI/2]];
+ function mark(k){if(!btnBox)return;[...btnBox.children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===k))}
+ if(btnBox)B.forEach(([k,t,a,b])=>{const x=document.createElement('button');x.textContent=t;x.dataset.k=k;x.onclick=()=>{go(a,b);setTimeout(()=>mark(k),0)};btnBox.appendChild(x)});
+ size();new ResizeObserver(()=>{size();draw()}).observe(canvas);
+ return{set,refresh:()=>solidRef&&set(solidRef)};}
+
+/* ---------- BASE ---------- */
+const P=s=>{const cells=[];s.forEach((layer,y)=>layer.forEach((row,z)=>[...row].forEach((ch,x)=>{if(ch==='#')cells.push([x,y,z])})));return cells;};
+const SOLIDS={
+ 'Gradino':P([['###','###','###'],['##.','##.','##.'],['#..','#..','#..']]),
+ 'Canale chiuso':P([['###','###','###'],['###','#.#','#.#'],['#..','#..','#..']]),
+ 'Angolare':P([['###','#..','###'],['#..','#..','##.'],['#..','...','...']])};
+const QS=[['front','Quale disegno è il prospetto (PV)?',['front','back','left','top']],['left','Quale disegno è la vista da sinistra (PL)?',['left','right','front','top']],['top','Quale disegno è la pianta (PO)?',['top','bottom','front','left']]];
+let solidName='Gradino',ans={},shuffled={};const v1=viewer($('cv1'),$('vb1'));
+function shuffle(a,seed){const r=[...a];let s=seed;for(let i=r.length-1;i>0;i--){s=(s*9301+49297)%233280;const j=Math.floor(s/233280*(i+1));[r[i],r[j]]=[r[j],r[i]]}return r;}
+function drawBase(){const so=voxGeom(SOLIDS[solidName]);v1.set(so);
+ [...$('solidPick').children].forEach(b=>b.setAttribute('aria-pressed',b.textContent===solidName));
+ const qs=$('qs');qs.innerHTML='';ans={};$('fb1').hidden=true;$('sheet1Wrap').hidden=true;$('sc1').textContent='';
+ QS.forEach(([key,txt,opts],qi)=>{const sh=shuffle(opts,solidName.length*7+qi*13);shuffled[key]=sh;const q=document.createElement('div');q.className='q';
+  q.innerHTML=`<strong>${txt}</strong>`;const o=document.createElement('div');o.className='opts';o.setAttribute('role','radiogroup');o.setAttribute('aria-label',txt);
+  sh.forEach((dk,i)=>{const b=document.createElement('button');b.className='opt';b.setAttribute('role','radio');b.setAttribute('aria-checked','false');
+   b.setAttribute('aria-label',`Disegno ${i+1}`);b.innerHTML=`<img alt="" src="${snap(so,dk)}"><span class="n">${i+1}</span>`;
+   b.onclick=()=>{ans[key]=dk;[...o.children].forEach(x=>x.setAttribute('aria-checked',x===b))};o.appendChild(b)});q.appendChild(o);qs.appendChild(q)});}
+Object.keys(SOLIDS).forEach(n=>{const b=document.createElement('button');b.textContent=n;b.onclick=()=>{solidName=n;drawBase()};$('solidPick').appendChild(b)});
+const WHY={back:'è la vista da dietro: il pezzo è specchiato.',right:'è la vista da destra: nel metodo europeo sul foglio va la vista da sinistra.',bottom:'è la vista dal basso.',front:'è il prospetto.',left:'è la vista da sinistra.',top:'è la pianta.'};
+$('chk1').onclick=()=>{const so=voxGeom(SOLIDS[solidName]);let ok=0,miss=[];
+ QS.forEach(([key,txt])=>{const q=[...$('qs').querySelectorAll('.opts')][QS.findIndex(x=>x[0]===key)];
+  [...q.children].forEach((b,i)=>{b.classList.remove('right','wrong');const dk=shuffled[key][i];if(dk===key)b.classList.add('right');else if(ans[key]===dk)b.classList.add('wrong')});
+  if(ans[key]===key)ok++;else miss.push(ans[key]?`${txt.replace('Quale disegno è ','').replace('?','')}: quello che hai scelto ${WHY[ans[key]]}`:`${txt} Non hai risposto.`)});
+ $('sc1').textContent=`${ok}/3`;
+ LAB.fb($('fb1'),ok===3?'ok':'ko',ok===3?'<strong>Tre su tre.</strong> Prova un altro solido, poi passa al foro.':'<strong>Da rivedere.</strong> '+miss.join(' ')+' Usa i pulsanti sotto il solido per controllare.');
+ sheet($('sheet1'),so);$('sheet1Wrap').hidden=false;};
+drawBase();
+
+/* ---------- INTERMEDIO ---------- */
+let ax='z';const v2=viewer($('cv2'),$('vb2'));
+const AX=[['z','la profondità'],['x','la larghezza'],['y','l\'altezza']];
+AX.forEach(([k,t])=>{const b=document.createElement('button');b.textContent=t;b.onclick=()=>{ax=k;drawHole()};$('axPick').appendChild(b)});
+function maxDia(){return ax==='z'?40:24}
+function drawHole(){const d=Math.min(+$('dia').value,maxDia());$('dia').max=maxDia();$('dia').value=d;$('vdia').textContent='⌀ '+d+' mm';
+ [...$('axPick').children].forEach((b,i)=>b.setAttribute('aria-pressed',AX[i][0]===ax));
+ const so=holed(ax,d);v2.set(so);sheet($('sheet2'),so,{note:`Foro ⌀ ${d} mm. Nelle viste dove il foro non è un cerchio, la distanza tra le due tratteggiate è il diametro.`});}
+$('dia').addEventListener('input',drawHole);drawHole();
+const Q2=[['Con il foro che attraversa la profondità, in quale vista appare come un cerchio?',['Prospetto (PV)','Pianta (PO)','Vista da sinistra (PL)','In tutte e tre'],0,'Il foro corre verso di te: guardando di fronte vedi la sua sezione, un cerchio. Dall\'alto e di lato ne vedi solo i contorni nascosti.'],
+ ['Nella pianta, perché le linee del foro sono tratteggiate?',['Perché il foro è piccolo','Perché il foro è dentro il pezzo e dall\'alto non si vede','Perché è un asse di simmetria','Perché la pianta si disegna sempre tratteggiata'],1,'Dall\'alto vedi la faccia superiore piena: il foro c\'è ma è nascosto, quindi si disegna con linea tratteggiata.'],
+ ['Se il foro ha diametro 20 mm, a che distanza sono le due tratteggiate nella pianta?',['10 mm','20 mm','30 mm','Dipende dalla scala del foglio'],1,'Le tratteggiate sono i bordi del foro: distano quanto il diametro. In un disegno in scala 1:1, 20 mm. (Con un\'altra scala cambia la misura sul foglio, non la quota.)']];
+const q2=$('q2');q2.innerHTML='<h3>Controlla quello che hai visto</h3>';
+Q2.forEach(([t,o,c,w],i)=>{const d=document.createElement('div');d.className='q';d.innerHTML=`<strong>${t}</strong>`;const g=document.createElement('div');g.className='vbtns';g.setAttribute('role','group');
+ const f=document.createElement('div');f.hidden=true;
+ o.forEach((x,j)=>{const b=document.createElement('button');b.textContent=x;b.onclick=()=>{[...g.children].forEach(y=>y.setAttribute('aria-pressed',y===b));LAB.fb(f,j===c?'ok':'ko',(j===c?'<strong>Giusto.</strong> ':'<strong>Non proprio.</strong> ')+w)};g.appendChild(b)});
+ d.appendChild(g);d.appendChild(f);q2.appendChild(d)});
+
+/* ---------- AVANZATO ---------- */
+const PZ={
+ 'Disegno A':P([['###','###','###'],['##.','##.','##.'],['#..','#..','#..']]),
+ 'Disegno B':P([['###','###','###'],['#.#','#.#','#.#'],['#.#','...','...']]),
+ 'Disegno C':P([['###','###','###'],['#.#','###','###'],['#.#','###','###']]),
+ 'Disegno D':P([['###','##.','#..'],['##.','#..','...'],['#..','...','...']])};
+let pz='Disegno A',mine=new Set();const v3=viewer($('cv3'),null);
+Object.keys(PZ).forEach(n=>{const b=document.createElement('button');b.textContent=n;b.onclick=()=>{pz=n;drawPz()};$('pzPick').appendChild(b)});
+const LN=['Piano 1 · in basso','Piano 2 · in mezzo','Piano 3 · in alto'];
+LN.forEach((t,y)=>{const L=document.createElement('div');L.className='layer';L.innerHTML=`<span class="t">${t}</span>`;const g=document.createElement('div');g.className='vox';
+ for(let z=0;z<3;z++)for(let x=0;x<3;x++){const b=document.createElement('button');const k=[x,y,z].join(',');b.setAttribute('aria-pressed','false');
+  b.setAttribute('aria-label',`${t}, ${['dietro','centro','fronte'][z]}, ${['sinistra','centro','destra'][x]}`);
+  b.onclick=()=>{mine.has(k)?mine.delete(k):mine.add(k);b.setAttribute('aria-pressed',mine.has(k));upd()};g.appendChild(b)}
+ L.appendChild(g);$('layers').appendChild(L)});
+$('clr').onclick=()=>{mine.clear();document.querySelectorAll('.vox button').forEach(b=>b.setAttribute('aria-pressed','false'));upd()};
+const tgtMasks={};
+function drawPz(){[...$('pzPick').children].forEach(b=>b.setAttribute('aria-pressed',b.textContent===pz));const so=voxGeom(PZ[pz]);
+ sheet($('sheetT'),so,{note:'Cubetti da 20 mm. Le linee tratteggiate sono spigoli nascosti.'});tgtMasks[pz]=['front','left','top'].map(d=>mask(so,d));upd();}
+function same(a,b){const N=160;let diff=0,tot=0;
+ const near=(m,i)=>{const x=i%N,y=(i/N)|0;for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const X=x+dx,Y=y+dy;if(X>=0&&Y>=0&&X<N&&Y<N&&m[Y*N+X])return true}return false};
+ for(let i=0;i<a.length;i++){if(a[i]||b[i])tot++;if(a[i]&&!near(b,i))diff++;else if(b[i]&&!near(a,i))diff++}
+ return tot?diff/tot<.02:true}
+function upd(){const cells=[...mine].map(k=>k.split(',').map(Number));const el=$('match');
+ if(!cells.length){$('sheetS').innerHTML='<div class="cell-empty" style="grid-column:1/-1;min-height:140px">Accendi i cubetti nelle griglie qui sotto: le viste del tuo pezzo compariranno qui.</div>';el.innerHTML='';$('fb3').hidden=true;v3.set(voxGeom([]));return}
+ const so=voxGeom(cells);sheet($('sheetS'),so,{note:`${cells.length} cubetti`});v3.set(so);
+ const m=['front','left','top'].map(d=>mask(so,d)),t=tgtMasks[pz],nm=['PV','PL','PO'];const ok=m.map((x,i)=>same(x,t[i]));
+ el.innerHTML=ok.map((o,i)=>`<span class="${o?'y':'n'}">${nm[i]} ${o?'coincide':'diversa'}</span>`).join('');
+ if(ok.every(Boolean)){const n=PZ[pz].length;LAB.fb($('fb3'),'ok',`<strong>Disegno letto.</strong> Le tre viste coincidono.${cells.length!==n?` Hai usato ${cells.length} cubetti, il pezzo originale ne ha ${n}: due pezzi diversi possono avere le stesse tre viste.`:''}`)}
+ else $('fb3').hidden=true;}
+drawPz();
+const mq=matchMedia('(prefers-color-scheme: dark)');mq.addEventListener('change',()=>{drawBase();drawHole();drawPz();v3.refresh()});
+})();
+</script>
+</body>
+</html>

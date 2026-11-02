@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="it" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>Banco delle leve</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: colonna unica da libro digitale (max 920px), testata d'area, schede livello, banco di lavoro, feedback.
+   Token dal design system TecnologIA (design-tokens.json): brand navy, zona 4 Laboratorio, colori d'area. */
+:root{
+  --bg:#F6F7FA; --surface:#FFFFFF; --surface-2:#EEF3FC; --fg:#1A1C24; --muted:#5A5F76; --line:#D8DAE8;
+  --brand:#1A2B4A; --lab:#00695C; --lab-bg:#E0F2F1; --energy:#C24010;
+  --ok:#166534; --ok-bg:#DCFCE7; --ko:#B42318; --ko-bg:#FEE4E2; --warn:#8A5A00; --warn-bg:#FFF4D6;
+  --area:#1A3A7A; --area-bg:#E8EFF9;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','Fira Code',ui-monospace,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{text-wrap:balance;line-height:1.2;margin:0;color:var(--brand)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:21px;font-weight:700}
+h3{font-size:17px;font-weight:700}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header.lab-head{display:flex;flex-direction:column;gap:10px;padding-bottom:16px;border-bottom:2px solid var(--area)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--area-bg);color:var(--area)}
+.chip.lab{background:var(--lab-bg);color:var(--lab)}
+.hook{font-size:17px;color:var(--fg)}
+/* level tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tab{font:inherit;font-weight:700;font-size:15px;color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--lab);border-bottom-color:var(--lab)}
+.tab:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.dots{letter-spacing:-.1em;margin-right:6px}
+.panel{display:flex;flex-direction:column;gap:16px}
+.brief{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.brief .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lab)}
+.bench{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.btn{font:inherit;font-weight:700;font-size:15px;border-radius:8px;padding:10px 16px;cursor:pointer;border:2px solid var(--lab);background:var(--lab);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--lab)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.fb{border-radius:8px;padding:12px 14px;font-size:15px}
+.fb.ok{background:var(--ok-bg);color:var(--ok)}
+.fb.ko{background:var(--ko-bg);color:var(--ko)}
+.fb.warn{background:var(--warn-bg);color:var(--warn)}
+.fb strong{font-weight:800}
+.meta{background:var(--surface-2);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.meta .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.bridge{border:2px dashed var(--area);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.bridge .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--area)}
+textarea{font:inherit;width:100%;min-height:90px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface);color:var(--fg)}
+select,input[type=number],input[type=text]{font:inherit;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);color:var(--fg);max-width:100%}
+input[type=range]{width:100%;accent-color:var(--lab)}
+label{font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid2>*{min-width:0}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.score{font-family:var(--mono);font-weight:700;font-size:20px;color:var(--lab)}
+footer.lab-foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:480px){.tab{padding:10px 8px;font-size:14px}h1{font-size:26px}}
+
+:root{--area:#C24010;--area-bg:#FFF3E0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--area:#FFA07A;--area-bg:#3A2414}}
+:root[data-theme="dark"]{--area:#FFA07A;--area-bg:#3A2414}
+.objs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.obj{border:1px solid var(--line);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:6px;background:var(--surface)}
+.obj.right{border-color:var(--ok);background:var(--ok-bg)}
+.obj.wrong{border-color:var(--ko);background:var(--ko-bg)}
+.obj .why{font-size:14px}
+.obj select{width:100%}
+svg.lever{width:100%;height:auto;display:block}
+.readout{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.readout div{background:var(--surface-2);border-radius:8px;padding:10px}
+.readout .k{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.readout .v{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--fg)}
+.ctrl{display:flex;flex-direction:column;gap:4px}
+.ctrl .top{display:flex;justify-content:space-between;gap:8px}
+.presets{display:flex;flex-wrap:wrap;gap:6px}
+.presets button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.sys{display:flex;flex-wrap:wrap;gap:8px}
+.sys label{display:flex;gap:6px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:8px 12px;cursor:pointer;font-weight:600}
+.sys input{accent-color:var(--lab)}
+.bars{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:120px 1fr 90px;gap:8px;align-items:center;font-size:14px}
+.bar .track{height:14px;background:var(--surface-2);border-radius:7px;overflow:hidden}
+.bar .fill{height:100%;background:var(--area);border-radius:7px}
+.bar .fill.lim{background:var(--lab)}
+@media (max-width:480px){.bar{grid-template-columns:90px 1fr 76px}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="lab-head">
+  <div class="chips"><span class="chip">MC-ENE-3-01 · Energia e Macchine · 3ª</span><span class="chip lab">Laboratorio · Simulatore</span></div>
+  <h1>Banco delle leve</h1>
+  <p class="hook">Gli Egizi spostarono blocchi da tonnellate senza motori. Il trucco non è la forza: è la geometria. Qui la provi tu, prima di misurare gli oggetti di casa.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Livello">
+  <button class="tab" role="tab" id="t1" aria-controls="p1"><span class="dots">●</span>Base</button>
+  <button class="tab" role="tab" id="t2" aria-controls="p2"><span class="dots">●●</span>Intermedio</button>
+  <button class="tab" role="tab" id="t3" aria-controls="p3"><span class="dots">●●●</span>Avanzato</button>
+</div>
+
+<!-- BASE -->
+<section class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Ogni oggetto nasconde una macchina semplice. Scegli quale, poi premi <strong>Verifica</strong>. Per ogni errore leggi il perché.</p></div>
+  <div class="bench">
+    <div class="objs" id="objs"></div>
+    <div class="row"><button class="btn" id="chk1">Verifica</button><button class="btn ghost" id="rst1">Ricomincia</button><span class="score" id="sc1" aria-live="polite"></span></div>
+    <div id="fb1" hidden></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Quale oggetto ti ha ingannato? Che cosa guardavi, la forma o il modo in cui la forza si trasmette?</p></div>
+</section>
+
+<!-- INTERMEDIO -->
+<section class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Sposta fulcro, carico e forza sull'asta lunga 100 cm. Il simulatore calcola la forza che serve per tenere l'asta in equilibrio: <span class="mono">P = R × b<sub>R</sub> / b<sub>P</sub></span> e il vantaggio meccanico <span class="mono">VM = b<sub>P</sub> / b<sub>R</sub></span>.</p></div>
+  <div class="bench">
+    <div class="presets" aria-label="Esempi"><span class="muted">Prova:</span>
+      <button data-p="altalena">Altalena (1° genere)</button><button data-p="carriola">Carriola (2° genere)</button><button data-p="pinzette">Pinzette (3° genere)</button><button data-p="forbici">Forbici</button></div>
+    <svg class="lever" id="lev" viewBox="0 0 640 230" role="img" aria-labelledby="levdesc"><desc id="levdesc"></desc></svg>
+    <div class="grid2">
+      <div class="ctrl"><div class="top"><label for="xF">Fulcro ▲</label><span class="mono" id="vxF"></span></div><input type="range" id="xF" min="0" max="100" value="50"></div>
+      <div class="ctrl"><div class="top"><label for="xR">Carico R ■</label><span class="mono" id="vxR"></span></div><input type="range" id="xR" min="0" max="100" value="20"></div>
+      <div class="ctrl"><div class="top"><label for="xP">Forza P ↓</label><span class="mono" id="vxP"></span></div><input type="range" id="xP" min="0" max="100" value="95"></div>
+      <div class="ctrl"><div class="top"><label for="mR">Massa del carico</label><span class="mono" id="vmR"></span></div><input type="range" id="mR" min="1" max="60" value="20"></div>
+    </div>
+    <div class="readout" aria-live="polite">
+      <div><div class="k">Genere</div><div class="v" id="oG"></div></div>
+      <div><div class="k">Peso del carico R</div><div class="v" id="oR"></div></div>
+      <div><div class="k">Forza necessaria P</div><div class="v" id="oP"></div></div>
+      <div><div class="k">Vantaggio VM</div><div class="v" id="oVM"></div></div>
+    </div>
+    <p id="oTxt"></p>
+  </div>
+  <div class="bench">
+    <h3>Sfide</h3>
+    <div class="row"><label for="ch">Scegli una sfida</label>
+      <select id="ch">
+        <option value="0">Solleva 40 kg spingendo con meno di 100 N</option>
+        <option value="1">Costruisci una leva di 3° genere con VM almeno 0,5</option>
+        <option value="2">Leva di 2° genere che dimezza la forza (VM tra 1,9 e 2,1)</option>
+        <option value="3">Leva indifferente: VM esattamente 1 con un carico di 30 kg</option>
+      </select><button class="btn" id="chkC">Controlla la mia leva</button></div>
+    <div id="fbC" hidden></div>
+  </div>
+  <div class="bench">
+    <h3>Le altre macchine: calcola il VM come nel libro</h3>
+    <div class="grid2">
+      <div class="ctrl"><label for="pl">Piano inclinato: lunghezza rampa (m)</label><input type="number" id="pl" value="6" min="0.1" step="0.1">
+        <label for="ph">altezza (m)</label><input type="number" id="ph" value="0.5" min="0.01" step="0.01"><p class="mono" id="oPI"></p></div>
+      <div class="ctrl"><label for="rw">Ruota con asse: raggio ruota (cm)</label><input type="number" id="rw" value="3" min="0.1" step="0.1">
+        <label for="ra">raggio asse (cm)</label><input type="number" id="ra" value="0.6" min="0.05" step="0.05"><p class="mono" id="oRA"></p></div>
+    </div>
+    <p class="muted">Numeri d'esempio: una rampa per carrozzine e la manopola di un rubinetto. Sostituiscili con le misure dei tuoi oggetti.</p>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Le pinzette hanno VM minore di 1: ti fanno faticare di più. Allora perché sono progettate così? Che cosa guadagni in cambio?</p></div>
+</section>
+
+<!-- AVANZATO -->
+<section class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+  <div class="brief"><span class="lbl">Scenario · cantiere medievale, 1200 d.C.</span>
+    <p>Devi portare una pietra da <strong>500 kg</strong> a <strong>4 m</strong> di altezza. Hai <strong>10 operai</strong>, ognuno spinge o tira al massimo con <strong>500 N</strong>: in tutto 5.000 N. Usa g = 10 m/s². L'attrito di legno e corde fa perdere energia: il rendimento parte dal 70%.</p></div>
+  <div class="bench">
+    <div class="readout">
+      <div><div class="k">Peso della pietra</div><div class="v">5.000 N</div></div>
+      <div><div class="k">Lavoro utile m·g·h</div><div class="v">20.000 J</div></div>
+      <div><div class="k">Forza disponibile</div><div class="v">5.000 N</div></div>
+    </div>
+    <fieldset class="sys" style="border:0;padding:0;margin:0"><legend class="sr">Sistema</legend>
+      <label><input type="radio" name="sys" value="rampa" checked> Rampa</label>
+      <label><input type="radio" name="sys" value="paranco"> Paranco di carrucole</label>
+      <label><input type="radio" name="sys" value="ruota"> Ruota di calpestio</label>
+    </fieldset>
+    <div id="cRampa" class="ctrl"><div class="top"><label for="L">Lunghezza della rampa</label><span class="mono" id="vL"></span></div><input type="range" id="L" min="4" max="40" step="0.5" value="6"></div>
+    <div id="cPar" class="ctrl" hidden><div class="top"><label for="n">Tratti di fune che sostengono la pietra</label><span class="mono" id="vn"></span></div><input type="range" id="n" min="1" max="6" value="1"></div>
+    <div id="cRuo" class="grid2" hidden>
+      <div class="ctrl"><div class="top"><label for="Rw">Raggio della ruota</label><span class="mono" id="vRw"></span></div><input type="range" id="Rw" min="0.5" max="3" step="0.1" value="2"></div>
+      <div class="ctrl"><div class="top"><label for="ra2">Raggio dell'asse</label><span class="mono" id="vra2"></span></div><input type="range" id="ra2" min="0.1" max="0.6" step="0.05" value="0.3"></div>
+    </div>
+    <div class="ctrl"><div class="top"><label for="eta">Rendimento η</label><span class="mono" id="veta"></span></div><input type="range" id="eta" min="40" max="95" value="70"></div>
+    <div class="readout" aria-live="polite">
+      <div><div class="k">VM ideale</div><div class="v" id="aVM"></div></div>
+      <div><div class="k">Forza reale</div><div class="v" id="aF"></div></div>
+      <div><div class="k">Operai necessari</div><div class="v" id="aOp"></div></div>
+      <div><div class="k">Corsa della forza</div><div class="v" id="aS"></div></div>
+    </div>
+    <div class="bars" aria-hidden="true">
+      <div class="bar"><span>Forza</span><div class="track"><div class="fill" id="bF"></div></div><span class="mono" id="tF"></span></div>
+      <div class="bar"><span>Limite 10 operai</span><div class="track"><div class="fill lim" style="width:50%"></div></div><span class="mono">5.000 N</span></div>
+      <div class="bar"><span>Lavoro degli operai</span><div class="track"><div class="fill" id="bW"></div></div><span class="mono" id="tW"></span></div>
+    </div>
+    <div id="fbA" hidden></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Cambia sistema e parametri: la forza scende, ma il <em>lavoro</em> degli operai no. Perché nessuna macchina semplice può ridurlo? Che cosa succede al lavoro se il rendimento peggiora?</p>
+    <label for="nA">Scrivi la tua spiegazione (resta su questo dispositivo)</label><textarea id="nA"></textarea></div>
+</section>
+
+<div class="bridge"><span class="lbl">Verso il compito di realtà</span>
+  <p>Ora tocca agli oggetti veri: identifica 5 macchine semplici in casa, misura le dimensioni rilevanti e calcola il vantaggio meccanico di ciascuna. Usa le formule che hai provato qui.</p></div>
+<footer class="lab-foot">ProfTecnologIA · Laboratorio pilota v0.1 · Modello didattico semplificato (g = 10 m/s², aste e funi senza peso).</footer>
+</div>
+
+<script>// Motore comune: schede livello accessibili (WAI-ARIA Tabs) + utilità
+(function(){
+  const tabs=[...document.querySelectorAll('.tab')];
+  function select(t,focus){
+    tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+    if(focus)t.focus();
+    try{localStorage.setItem('lab-level-'+document.title,t.id)}catch(e){}
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>select(t));
+    t.addEventListener('keydown',e=>{
+      let j=null;if(e.key==='ArrowRight')j=(i+1)%tabs.length;if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;
+      if(e.key==='Home')j=0;if(e.key==='End')j=tabs.length-1;
+      if(j!==null){e.preventDefault();select(tabs[j],true);}
+    });
+  });
+  let saved=null;try{saved=localStorage.getItem('lab-level-'+document.title)}catch(e){}
+  select(document.getElementById(saved)||tabs[0]);
+  window.LAB={
+    fb(el,kind,html){el.className='fb '+kind;el.innerHTML=html;el.hidden=false;},
+    fmt(n,d=0){return n.toLocaleString('it-IT',{minimumFractionDigits:d,maximumFractionDigits:d,useGrouping:'always'});},
+    copy(btn,text){
+      const done=()=>{const o=btn.textContent;btn.textContent='Copiato';setTimeout(()=>btn.textContent=o,1500)};
+      try{navigator.clipboard.writeText(text).then(done,()=>{})}catch(e){}
+    }
+  };
+})();
+</script>
+<script>
+(()=>{
+const $=id=>document.getElementById(id), F=LAB.fmt;
+/* ---------- BASE ---------- */
+const TYPES=['leva','piano inclinato','cuneo','vite','carrucola','ruota con asse'];
+const OBJS=[
+ ['Forbici','leva','Due leve unite da un perno: il perno è il fulcro.'],
+ ['Rampa per carrozzine','piano inclinato','Allunga il percorso per ridurre la forza necessaria a salire.'],
+ ['Coltello','cuneo','La lama è un cuneo: concentra la forza su una linea sottile e separa il materiale.'],
+ ['Vite del falegname','vite','È un piano inclinato avvolto attorno a un cilindro.'],
+ ['Carrucola del tendone','carrucola','Una ruota scanalata in cui scorre una fune: cambia la direzione della forza.'],
+ ['Volante','ruota con asse','La ruota grande moltiplica la forza trasmessa all\'asse piccolo.'],
+ ['Schiaccianoci','leva','Il fulcro è alla cerniera, la noce sta in mezzo: leva di 2° genere.'],
+ ['Ascia','cuneo','La testa dell\'ascia è un cuneo che spacca il legno.'],
+ ['Tappo a vite della bottiglia','vite','Il filetto è una vite: ogni giro avvicina il tappo di un passo.'],
+ ['Manopola del rubinetto','ruota con asse','Ruotare la manopola larga è più facile che girare il perno sottile.'],
+ ['Scivolo del parco','piano inclinato','Una superficie inclinata: lo usi in discesa, ma la macchina è la stessa.'],
+ ['Apribottiglie','leva','Fulcro sul bordo del tappo, forza all\'estremità del manico.']];
+const box=$('objs');
+OBJS.forEach((o,i)=>{const d=document.createElement('div');d.className='obj';d.id='o'+i;
+ d.innerHTML=`<label for="s${i}">${o[0]}</label><select id="s${i}"><option value="">Scegli…</option>${TYPES.map(t=>`<option>${t}</option>`).join('')}</select><span class="why" hidden></span>`;box.appendChild(d);});
+$('chk1').onclick=()=>{let ok=0,empty=0;OBJS.forEach((o,i)=>{const v=$('s'+i).value,d=$('o'+i),w=d.querySelector('.why');
+  if(!v){empty++;d.className='obj';w.hidden=true;return}
+  const r=v===o[1];if(r)ok++;d.className='obj '+(r?'right':'wrong');w.hidden=false;
+  w.textContent=r?o[2]:`Hai scelto «${v}», ma è: ${o[1]}. ${o[2]}`;});
+  $('sc1').textContent=`${ok}/12`;
+  if(empty)LAB.fb($('fb1'),'warn',`Mancano ${empty} oggetti da classificare.`);
+  else if(ok===12)LAB.fb($('fb1'),'ok','<strong>Tutto giusto.</strong> Hai notato che vite e cuneo sono parenti del piano inclinato?');
+  else LAB.fb($('fb1'),'ko',`<strong>${12-ok} da rivedere.</strong> Leggi la spiegazione sotto ogni oggetto in rosso e riprova.`);};
+$('rst1').onclick=()=>{OBJS.forEach((o,i)=>{$('s'+i).value='';$('o'+i).className='obj';$('o'+i).querySelector('.why').hidden=true});$('fb1').hidden=true;$('sc1').textContent=''};
+
+/* ---------- INTERMEDIO ---------- */
+const xF=$('xF'),xR=$('xR'),xP=$('xP'),mR=$('mR'),svg=$('lev');
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+function lever(){
+  const f=+xF.value,r=+xR.value,p=+xP.value,m=+mR.value,R=m*10,bR=Math.abs(r-f),bP=Math.abs(p-f);
+  $('vxF').textContent=f+' cm';$('vxR').textContent=r+' cm';$('vxP').textContent=p+' cm';$('vmR').textContent=m+' kg';
+  let g,txt;
+  const between=(a,b,c)=>(a>Math.min(b,c)&&a<Math.max(b,c));
+  if(bR===0){g='—';txt='Il carico è sul fulcro: la leva non deve fare nessuno sforzo per sostenerlo. Spostalo.'}
+  else if(bP===0){g='—';txt='La forza è applicata sul fulcro: non può far ruotare l\'asta. Spostala.'}
+  else if(between(f,r,p))g='1°';else if(between(r,f,p))g='2°';else if(between(p,f,r))g='3°';else g='—';
+  const P=bP?R*bR/bP:Infinity,VM=bR&&bP?bP/bR:0;
+  $('oG').textContent=g==='—'?'—':g+' genere';$('oR').textContent=F(R)+' N';
+  $('oP').textContent=isFinite(P)&&bR?F(P,1)+' N':'—';$('oVM').textContent=VM?F(VM,2):'—';
+  if(g!=='—'){txt=VM>1.001?`Leva vantaggiosa: spingi con ${F(P,1)} N per sostenere ${F(R)} N. Il braccio della forza è ${F(VM,1)} volte quello del carico.`:
+   VM<0.999?`Leva svantaggiosa: serve più forza del peso (${F(P,1)} N). In cambio il carico si muove di più e più velocemente della mano.`:'Leva indifferente: la forza è uguale al carico. Serve solo a cambiare direzione.';
+   if(g==='2°')txt+=' Nel 2° genere il carico sta tra fulcro e forza: è sempre vantaggiosa.';
+   if(g==='3°')txt+=' Nel 3° genere la forza sta in mezzo: è sempre svantaggiosa.'}
+  if(r===p&&bR)txt='Carico e forza nello stesso punto: spostali.';
+  $('oTxt').textContent=txt;
+  // draw
+  const X=v=>40+v*5.6, beamY=120, ink=css('--fg'),area=css('--area'),lab=css('--lab'),mut=css('--muted'),line=css('--line');
+  const arrowLen=Math.min(90,20+Math.sqrt(R)*2.5), pLen=isFinite(P)&&bR?Math.min(100,20+Math.sqrt(P)*2.5):0;
+  svg.innerHTML=`<desc id="levdesc">Asta lunga 100 centimetri. Fulcro a ${f} cm, carico a ${r} cm, forza a ${p} cm. ${$('oTxt').textContent}</desc>
+   <line x1="40" y1="${beamY+40}" x2="600" y2="${beamY+40}" stroke="${line}" stroke-width="2"/>
+   ${[0,25,50,75,100].map(t=>`<text x="${X(t)}" y="${beamY+60}" fill="${mut}" font-size="12" text-anchor="middle" font-family="JetBrains Mono,monospace">${t}</text>`).join('')}
+   <rect x="40" y="${beamY-6}" width="560" height="12" rx="4" fill="${ink}" opacity=".85"/>
+   <polygon points="${X(f)},${beamY+6} ${X(f)-18},${beamY+40} ${X(f)+18},${beamY+40}" fill="${lab}"/>
+   <rect x="${X(r)-20}" y="${beamY-6-Math.min(46,16+m*.6)}" width="40" height="${Math.min(46,16+m*.6)}" fill="${area}" rx="3"/>
+   <text x="${X(r)}" y="${beamY-14-Math.min(46,16+m*.6)}" fill="${ink}" font-size="13" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700">R ${F(R)} N</text>
+   ${pLen?`<line x1="${X(p)}" y1="${beamY-8-pLen}" x2="${X(p)}" y2="${beamY-12}" stroke="${lab}" stroke-width="4"/>
+   <polygon points="${X(p)-8},${beamY-18} ${X(p)+8},${beamY-18} ${X(p)},${beamY-7}" fill="${lab}"/>
+   <text x="${X(p)}" y="${beamY-14-pLen}" fill="${ink}" font-size="13" text-anchor="middle" font-family="Inter,sans-serif" font-weight="700">P ${F(P,0)} N</text>`:''}
+   ${bR&&bP?`<line x1="${X(f)}" y1="${beamY+20}" x2="${X(r)}" y2="${beamY+20}" stroke="${area}" stroke-width="2" stroke-dasharray="4 3"/>
+   <line x1="${X(f)}" y1="${beamY+28}" x2="${X(p)}" y2="${beamY+28}" stroke="${lab}" stroke-width="2" stroke-dasharray="4 3"/>`:''}`;
+  return {g,VM,P,m};
+}
+[xF,xR,xP,mR].forEach(i=>i.addEventListener('input',lever));
+const PRE={altalena:[50,10,90,30],carriola:[5,30,95,50],pinzette:[0,95,35,1],forbici:[40,30,95,5]};
+document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{const v=PRE[b.dataset.p];xF.value=v[0];xR.value=v[1];xP.value=v[2];mR.value=v[3];lever()});
+$('chkC').onclick=()=>{const s=lever(),c=$('ch').value;let ok=false,msg='';
+ if(c==='0'){ok=s.m>=40&&s.P<100;msg=ok?'Ci sei: serve un VM maggiore di 4.':(s.m<40?'Imposta prima una massa di almeno 40 kg.':`Ora servono ${F(s.P,0)} N. Allunga il braccio della forza o accorcia quello del carico: ti serve VM > 4.`)}
+ if(c==='1'){ok=s.g==='3°'&&s.VM>=0.5;msg=ok?'Leva di 3° genere riuscita: la forza sta tra fulcro e carico.':(s.g!=='3°'?'Nel 3° genere la forza deve stare tra fulcro e carico.':'Avvicina la forza al carico per alzare il VM.')}
+ if(c==='2'){ok=s.g==='2°'&&s.VM>=1.9&&s.VM<=2.1;msg=ok?'Perfetto: il braccio della forza è il doppio di quello del carico.':(s.g!=='2°'?'Nel 2° genere il carico sta tra fulcro e forza.':'Il braccio della forza deve essere il doppio di quello del carico.')}
+ if(c==='3'){ok=s.m===30&&Math.abs(s.VM-1)<0.001&&s.g==='1°';msg=ok?'Leva indifferente: bracci uguali, come in una bilancia a due piatti.':'Massa 30 kg, fulcro esattamente a metà tra carico e forza (1° genere).'}
+ LAB.fb($('fbC'),ok?'ok':'ko',(ok?'<strong>Sfida superata.</strong> ':'<strong>Non ancora.</strong> ')+msg)};
+function other(){const L=+$('pl').value,h=+$('ph').value,rw=+$('rw').value,ra=+$('ra').value;
+ $('oPI').textContent=L>0&&h>0?(h>=L?'L\'altezza non può superare la lunghezza della rampa.':`VM = ${F(L,2)} / ${F(h,2)} = ${F(L/h,1)}`):'—';
+ $('oRA').textContent=rw>0&&ra>0?`VM = ${F(rw,2)} / ${F(ra,2)} = ${F(rw/ra,1)}`:'—';}
+['pl','ph','rw','ra'].forEach(i=>$(i).addEventListener('input',other));
+lever();other();
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',lever);
+
+/* ---------- AVANZATO ---------- */
+const W=20000,Wt=5000;
+function adv(){const sys=document.querySelector('[name=sys]:checked').value,eta=+$('eta').value/100;
+ $('cRampa').hidden=sys!=='rampa';$('cPar').hidden=sys!=='paranco';$('cRuo').hidden=sys!=='ruota';
+ $('veta').textContent=$('eta').value+'%';$('vL').textContent=F(+$('L').value,1)+' m';$('vn').textContent=$('n').value;
+ $('vRw').textContent=F(+$('Rw').value,1)+' m';$('vra2').textContent=F(+$('ra2').value,2)+' m';
+ let VM,s;if(sys==='rampa'){const L=+$('L').value;VM=L/4;s=L}
+ else if(sys==='paranco'){const n=+$('n').value;VM=n;s=n*4}
+ else{const R=+$('Rw').value,r=+$('ra2').value;VM=R/r;s=4*R/r}
+ const Fr=Wt/VM/eta,op=Math.ceil(Fr/500),Wop=W/eta;
+ $('aVM').textContent=F(VM,2);$('aF').textContent=F(Fr)+' N';$('aOp').textContent=op;$('aS').textContent=F(s,1)+' m';
+ $('bF').style.width=Math.min(100,Fr/10000*100)+'%';$('tF').textContent=F(Fr)+' N';
+ $('bW').style.width=Math.min(100,Wop/50000*100)+'%';$('tW').textContent=F(Wop/1000,1)+' kJ';
+ let k,m;
+ if(op>10){k='ko';m=`<strong>Non basta.</strong> Servirebbero ${op} operai. Aumenta il vantaggio meccanico.`}
+ else{k='ok';m=`<strong>Funziona:</strong> bastano ${op} operai su 10.`;
+  if(sys==='rampa'&&s>20){k='warn';m+=` Però una rampa di ${F(s,1)} m occupa mezzo cantiere: è realistica?`}
+  if(sys==='paranco'&&op<=10)m+=` Gli operai però devono tirare ${F(s,0)} m di fune per alzare la pietra di 4 m.`;
+  if(sys==='ruota')m+=' Nella ruota di calpestio gli operai camminano dentro la ruota: la forza è il loro peso, applicato lontano dall\'asse.';}
+ m+=` Il lavoro speso resta ${F(Wop/1000,1)} kJ: con η = ${Math.round(eta*100)}% una parte (${F((Wop-W)/1000,1)} kJ) diventa calore per attrito.`;
+ LAB.fb($('fbA'),k,m);}
+document.querySelectorAll('[name=sys]').forEach(r=>r.addEventListener('change',adv));
+['L','n','Rw','ra2','eta'].forEach(i=>$(i).addEventListener('input',adv));adv();
+try{$('nA').value=localStorage.getItem('ene301-note')||''}catch(e){}
+$('nA').addEventListener('input',e=>{try{localStorage.setItem('ene301-note',e.target.value)}catch(_){}});
+})();
+</script>
+</body>
+</html>

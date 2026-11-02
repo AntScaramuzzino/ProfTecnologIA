@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="it" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>Casella sotto attacco</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: colonna unica da libro digitale (max 920px), testata d'area, schede livello, banco di lavoro, feedback.
+   Token dal design system TecnologIA (design-tokens.json): brand navy, zona 4 Laboratorio, colori d'area. */
+:root{
+  --bg:#F6F7FA; --surface:#FFFFFF; --surface-2:#EEF3FC; --fg:#1A1C24; --muted:#5A5F76; --line:#D8DAE8;
+  --brand:#1A2B4A; --lab:#00695C; --lab-bg:#E0F2F1; --energy:#C24010;
+  --ok:#166534; --ok-bg:#DCFCE7; --ko:#B42318; --ko-bg:#FEE4E2; --warn:#8A5A00; --warn-bg:#FFF4D6;
+  --area:#1A3A7A; --area-bg:#E8EFF9;
+  --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','Fira Code',ui-monospace,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{text-wrap:balance;line-height:1.2;margin:0;color:var(--brand)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:21px;font-weight:700}
+h3{font-size:17px;font-weight:700}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header.lab-head{display:flex;flex-direction:column;gap:10px;padding-bottom:16px;border-bottom:2px solid var(--area)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--area-bg);color:var(--area)}
+.chip.lab{background:var(--lab-bg);color:var(--lab)}
+.hook{font-size:17px;color:var(--fg)}
+/* level tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tab{font:inherit;font-weight:700;font-size:15px;color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--lab);border-bottom-color:var(--lab)}
+.tab:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.dots{letter-spacing:-.1em;margin-right:6px}
+.panel{display:flex;flex-direction:column;gap:16px}
+.brief{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.brief .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lab)}
+.bench{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.btn{font:inherit;font-weight:700;font-size:15px;border-radius:8px;padding:10px 16px;cursor:pointer;border:2px solid var(--lab);background:var(--lab);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--lab)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.fb{border-radius:8px;padding:12px 14px;font-size:15px}
+.fb.ok{background:var(--ok-bg);color:var(--ok)}
+.fb.ko{background:var(--ko-bg);color:var(--ko)}
+.fb.warn{background:var(--warn-bg);color:var(--warn)}
+.fb strong{font-weight:800}
+.meta{background:var(--surface-2);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.meta .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.bridge{border:2px dashed var(--area);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.bridge .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--area)}
+textarea{font:inherit;width:100%;min-height:90px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface);color:var(--fg)}
+select,input[type=number],input[type=text]{font:inherit;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);color:var(--fg);max-width:100%}
+input[type=range]{width:100%;accent-color:var(--lab)}
+label{font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid2>*{min-width:0}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.score{font-family:var(--mono);font-weight:700;font-size:20px;color:var(--lab)}
+footer.lab-foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:480px){.tab{padding:10px 8px;font-size:14px}h1{font-size:26px}}
+
+:root{--area:#006064;--area-bg:#E0F7FA;--mark:#FFE08A;--mark-fg:#3A2C00}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--area:#6FD6DC;--area-bg:#0F3436;--mark:#6B5410;--mark-fg:#FFF4D6}}
+:root[data-theme="dark"]{--area:#6FD6DC;--area-bg:#0F3436;--mark:#6B5410;--mark-fg:#FFF4D6}
+.mail{display:grid;grid-template-columns:260px 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.mail>*{min-width:0}
+@media (max-width:720px){.mail{grid-template-columns:1fr}}
+.inbox{border-right:1px solid var(--line);display:flex;flex-direction:column;max-height:560px;overflow-y:auto}
+@media (max-width:720px){.inbox{border-right:0;border-bottom:1px solid var(--line);max-height:none;flex-direction:row;overflow-x:auto}}
+.mi{font:inherit;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 12px;cursor:pointer;color:var(--fg);display:flex;flex-direction:column;gap:2px;flex:none}
+@media (max-width:720px){.mi{border-bottom:0;border-right:1px solid var(--line);width:180px}}
+.mi[aria-current="true"]{background:var(--area-bg)}
+.mi .f{font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mi .s{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mi .st{font-size:12px;font-weight:700}
+.mi .st.ok{color:var(--ok)}.mi .st.ko{color:var(--ko)}
+.view{padding:16px;display:flex;flex-direction:column;gap:12px}
+.hdr{display:flex;flex-direction:column;gap:4px;border-bottom:1px solid var(--line);padding-bottom:10px;font-size:15px}
+.hdr .subj{font-size:18px;font-weight:800}
+.body{font-size:16px;line-height:1.7}
+.seg{padding:1px 0;cursor:pointer;border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.seg[aria-disabled="true"]{cursor:default}
+.seg:hover{background:var(--surface-2)}
+.seg.lnk{color:var(--area);text-decoration:underline}
+.seg[aria-pressed="true"]{background:var(--mark);color:var(--mark-fg)}
+.seg.hit{outline:2px solid var(--ok)}
+.seg.miss{outline:2px dashed var(--ko)}
+.seg.fp{outline:2px dotted var(--warn)}
+.att{display:inline-flex;gap:6px;align-items:center;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-family:var(--mono);font-size:14px}
+.status{font-family:var(--mono);font-size:13px;background:var(--surface-2);border-radius:6px;padding:6px 10px;color:var(--muted);overflow-wrap:anywhere}
+.verd{display:flex;gap:8px;flex-wrap:wrap}
+.verd button{font:inherit;font-weight:700;border:2px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:8px 14px;cursor:pointer}
+.verd button[aria-pressed="true"]{border-color:var(--area);background:var(--area-bg);color:var(--area)}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.legend span{font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--surface-2)}
+.meter{height:12px;border-radius:6px;background:var(--surface-2);overflow:hidden}
+.meter div{height:100%;border-radius:6px;transition:width .2s}
+.crit{display:flex;flex-direction:column;gap:4px;font-size:15px}
+.pal{display:flex;flex-direction:column;gap:12px}
+.pal fieldset{border:1px solid var(--line);border-radius:8px;padding:10px;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.pal legend{font-weight:700;font-size:14px;padding:0 4px}
+.pal label{display:flex;gap:6px;align-items:center;font-weight:500;font-size:15px}
+.pal input{accent-color:var(--lab)}
+.composed{border:1px solid var(--line);border-radius:8px;padding:14px;background:var(--surface);font-size:16px;line-height:1.7}
+.composed .sig{background:var(--mark);color:var(--mark-fg);border-radius:3px;padding:0 2px}
+.composed .meta-l{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.switch{display:flex;gap:8px;align-items:center;font-weight:700}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="lab-head">
+  <div class="chips"><span class="chip">MC-DIG-2-04 · Digitale · 2ª</span><span class="chip lab">Laboratorio · Ispettore</span></div>
+  <h1>Casella sotto attacco</h1>
+  <p class="hook">Sicurezza digitale non è paranoia: è igiene. In questa casella ci sono messaggi veri e truffe. Il tuo lavoro è trovare i segnali prima di cliccare.</p>
+</header>
+
+<div class="tabs" role="tablist" aria-label="Livello">
+  <button class="tab" role="tab" id="t1" aria-controls="p1"><span class="dots">●</span>Base</button>
+  <button class="tab" role="tab" id="t2" aria-controls="p2"><span class="dots">●●</span>Intermedio</button>
+  <button class="tab" role="tab" id="t3" aria-controls="p3"><span class="dots">●●●</span>Avanzato</button>
+</div>
+
+<!-- BASE -->
+<section class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Apri ogni messaggio. Tocca le parti sospette (mittente, saluto, frasi, link, allegati): si evidenziano in giallo. Toccare un link qui non apre nulla, mostra solo dove porterebbe. Poi decidi: <strong>phishing</strong> o <strong>legittimo</strong>? Premi <strong>Verifica</strong>.</p>
+    <p class="muted">Tutti i nomi di aziende e indirizzi sono inventati.</p></div>
+  <div class="legend" aria-label="I sette segnali"><span>1 URL sospetto</span><span>2 Urgenza</span><span>3 Richiesta di dati</span><span>4 Mittente sospetto</span><span>5 Errori</span><span>6 Allegato inatteso</span><span>7 Saluto generico</span></div>
+  <div class="mail">
+    <nav class="inbox" id="inbox" aria-label="Posta in arrivo"></nav>
+    <article class="view" id="view" aria-live="polite"></article>
+  </div>
+  <div class="row"><span class="muted">Punteggio:</span><span class="score" id="sc1">0/8</span></div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Quale messaggio è stato più difficile da giudicare? Il messaggio legittimo con un link ti ha fatto dubitare? Che cosa ti ha convinto alla fine?</p></div>
+</section>
+
+<!-- INTERMEDIO -->
+<section class="panel" id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+  <div class="brief"><span class="lbl">Consegna</span>
+    <p>Prova delle password <strong>inventate</strong> e guarda quanto resisterebbero. Inizia da <span class="mono">Tecnologia2026!</span>: è forte? Poi costruisci una passphrase e confrontale.</p>
+    <p class="fb warn"><strong>Mai la tua password vera.</strong> Il calcolo avviene solo su questa pagina e non viene salvato, ma a scuola si usano solo esempi.</p></div>
+  <div class="bench">
+    <label for="pw">Password di prova</label>
+    <input type="text" id="pw" value="Tecnologia2026!" autocomplete="off" spellcheck="false" style="font-family:var(--mono);font-size:18px">
+    <div class="row presets"><span class="muted">Prova:</span>
+      <button class="btn ghost" data-pw="password">password</button><button class="btn ghost" data-pw="P@$$w0rd!2026">P@$$w0rd!2026</button><button class="btn ghost" data-pw="il mio gatto si chiama Biscotto">il mio gatto si chiama Biscotto</button></div>
+    <div class="meter" aria-hidden="true"><div id="mt"></div></div>
+    <div class="readout grid2" aria-live="polite">
+      <div><span class="muted">Tempo stimato per indovinarla</span><div class="score" id="tt"></div></div>
+      <div><span class="muted">Come la attaccherebbe un truffatore</span><div id="how"></div></div>
+    </div>
+    <div class="crit" id="crit"></div>
+    <p class="muted">Ipotesi del calcolo: un attaccante che ha rubato l'archivio cifrato di un sito e prova 10 miliardi di combinazioni al secondo. Prima prova le parole note con varianti (maiuscola iniziale, @ al posto di a, anno in fondo), poi tutte le combinazioni. È un modello didattico: dà l'ordine di grandezza, non il tempo esatto. Per questo alcuni tempi sono più bassi di quelli della tabella del libro, che considera solo la prova di tutte le combinazioni.</p>
+  </div>
+  <div class="bench">
+    <h3>Il tuo audit, senza scrivere nomi di account</h3>
+    <div class="grid2">
+      <div class="ctrl"><label for="na">Quanti account usi regolarmente?</label><input type="number" id="na" min="0" value="8"></div>
+      <div class="ctrl"><label for="ns">Per quanti usi la stessa password o una variante?</label><input type="number" id="ns" min="0" value="5"></div>
+      <div class="ctrl"><label for="n2">Su quanti hai attivato la verifica in due passaggi (2FA)?</label><input type="number" id="n2" min="0" value="1"></div>
+      <div class="ctrl"><label for="ne">La tua email principale ha la 2FA?</label><select id="ne"><option value="no">No</option><option value="si">Sì</option><option value="nonso">Non lo so</option></select></div>
+    </div>
+    <div id="plan" aria-live="polite"></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Perché usare la stessa password su più siti è più pericoloso che avere una password un po' corta?</p></div>
+</section>
+
+<!-- AVANZATO -->
+<section class="panel" id="p3" role="tabpanel" aria-labelledby="t3" hidden>
+  <div class="brief"><span class="lbl">Scenario · formazione per la classe</span>
+    <p>Devi preparare 15 minuti di formazione anti-phishing per i compagni. Per difenderti devi capire come ragiona chi attacca: componi un messaggio di phishing <strong>simulato</strong> con almeno 4 dei 7 segnali. Poi scopri che cosa cambia se a scriverlo è un'intelligenza artificiale.</p></div>
+  <div class="bench">
+    <div class="pal" id="pal"></div>
+    <div class="switch"><input type="checkbox" id="ai"><label for="ai">Riscrivilo come farebbe un'IA generativa</label></div>
+    <div class="composed" id="comp" aria-live="polite"></div>
+    <div id="fb3" hidden></div>
+    <div class="row"><button class="btn" id="cp3">Copia il messaggio annotato</button></div>
+  </div>
+  <div class="meta"><span class="lbl">Rifletti</span><p>Se l'IA cancella errori e saluti generici, i segnali studiati diventano inutili? Quali restano, e quale abitudine ti protegge comunque?</p>
+    <label for="n3">Appunti per il tuo testo di 15-20 righe (restano su questo dispositivo)</label><textarea id="n3"></textarea></div>
+</section>
+
+<div class="bridge"><span class="lbl">Verso il compito di realtà</span>
+  <p>Fai l'audit della tua sicurezza digitale: password diverse e robuste, 2FA attiva, password manager. Lavora sempre per numeri e categorie, senza scrivere password vere.</p></div>
+<footer class="lab-foot">ProfTecnologIA · Laboratorio pilota v0.1 · Messaggi, aziende e indirizzi inventati a scopo didattico.</footer>
+</div>
+
+<script>// Motore comune: schede livello accessibili (WAI-ARIA Tabs) + utilità
+(function(){
+  const tabs=[...document.querySelectorAll('.tab')];
+  function select(t,focus){
+    tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;
+      document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+    if(focus)t.focus();
+    try{localStorage.setItem('lab-level-'+document.title,t.id)}catch(e){}
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>select(t));
+    t.addEventListener('keydown',e=>{
+      let j=null;if(e.key==='ArrowRight')j=(i+1)%tabs.length;if(e.key==='ArrowLeft')j=(i-1+tabs.length)%tabs.length;
+      if(e.key==='Home')j=0;if(e.key==='End')j=tabs.length-1;
+      if(j!==null){e.preventDefault();select(tabs[j],true);}
+    });
+  });
+  let saved=null;try{saved=localStorage.getItem('lab-level-'+document.title)}catch(e){}
+  select(document.getElementById(saved)||tabs[0]);
+  window.LAB={
+    fb(el,kind,html){el.className='fb '+kind;el.innerHTML=html;el.hidden=false;},
+    fmt(n,d=0){return n.toLocaleString('it-IT',{minimumFractionDigits:d,maximumFractionDigits:d,useGrouping:'always'});},
+    copy(btn,text){
+      const done=()=>{const o=btn.textContent;btn.textContent='Copiato';setTimeout(()=>btn.textContent=o,1500)};
+      try{navigator.clipboard.writeText(text).then(done,()=>{})}catch(e){}
+    }
+  };
+})();
+</script>
+<script>
+(()=>{
+const $=id=>document.getElementById(id);
+const SIG={url:'URL sospetto',urg:'Urgenza artificiale',dati:'Richiesta di password o dati',mitt:'Mittente sospetto',err:'Errori di grammatica',att:'Allegato inatteso',sal:'Saluto generico'};
+/* segmento: [testo, segnale|null, opzioni] ; link: {l:'testo', real:'dest', s:sig} */
+const MAILS=[
+ {fn:'Fotogram Security',fa:'security@fotogram-accounts-verify.net',fs:'mitt',subj:'Accesso sospetto rilevato',ph:true,
+  body:[['Caro utente di Fotogram,','sal'],[' abbiamo rilevato un accesso sospetto dal paese Romania. Per proteggere il suo account '],['clicchi subito il link:','urg'],' ',{l:'www.fotogram.com/verify',real:'https://www.fotogram-accounts-security.net/verify',s:'url'},[' Ha 12 ore','urg'],['. Se non agisce, il tuo account verrà eliminato definitivamente.','err']],
+  why:'Passa dal «lei» al «tu» nella stessa frase: un segno di testo tradotto o scritto in fretta. Il link mostra fotogram.com ma porta a un altro dominio.'},
+ {fn:'Assistenza PayCarta',fa:'assistenza@paycarta-sicurezza.it',fs:'mitt',subj:'Account bloccato',ph:true,
+  body:[['Caro cliente,','sal'],[' il tuo account è stato bloccato per attivita sospetta.','err'],[' Per sbloccarlo inserisci il numero della carta e il PIN','dati'],' qui: ',{l:'paycarta-sicurezza-account.it',real:'https://paycarta-sicurezza-account.it/sblocco',s:'url'},['. Il codice di sblocco scade tra 2 ore.','urg']],
+  why:'Nessuna banca o servizio di pagamento ti chiede il PIN. Mai.'},
+ {fn:'Prof.ssa Morelli',fa:'prof.morelli.scuola@gmail.com',fs:'mitt',subj:'Urgente registro',ph:true,
+  body:['Ciao! Sono la prof.ssa Morelli. Ho dimenticato la password della piattaforma scolastica. ',['Puoi mandarmi la tua per un momento','dati'],' così accedo e sistemo il registro? ',['Mi serve entro stasera.','urg'],' Grazie'],
+  why:'È ingegneria sociale: sfrutta l\'autorità di un docente. La scuola usa indirizzi istituzionali, non una casella gratuita. E nessuno ha un motivo legittimo per chiederti la password.'},
+ {fn:'StreamBox',fa:'no-reply@streambox.it',subj:'Il tuo abbonamento si rinnova tra 3 giorni',ph:false,
+  body:['Ciao Giulia, il tuo abbonamento Premium si rinnoverà il 12 novembre. Se vuoi cambiare piano o disdire, apri l\'app oppure vai su ',{l:'streambox.it/account',real:'https://streambox.it/account'},'. Non devi fare altro se va bene così.'],
+  why:'Usa il tuo nome, non mette fretta, non chiede dati, il link porta al dominio ufficiale e ti suggerisce di usare anche l\'app. Avere un link non rende un messaggio phishing. Nel dubbio, apri sempre l\'app invece del link.'},
+ {fn:'Spedix Corriere',fa:'tracking@spedix-consegne.com',fs:'mitt',subj:'Pacco in giacenza',ph:true,
+  body:[['Gentile cliente,','sal'],' il suo pacco è in giacenza presso il nostro deposito. ',['Paghi 1,99 € di spese entro 24 ore','urg'],' oppure il pacco tornerà al mittente. Dettagli nella fattura allegata o su ',{l:'spedix.it/traccia',real:'https://spedix-tracking-pagamento.com/pay',s:'url'},'.'],
+  att:['Fattura_pacco.zip','att'],why:'Un piccolo importo abbassa la guardia: in realtà vogliono i dati della carta. Un file .zip inatteso può contenere un programma dannoso.'},
+ {fn:'Registro Lumen',fa:'notifiche@registrolumen.it',subj:'Nuovo voto pubblicato',ph:false,
+  body:['Ciao Marco, è stato pubblicato un nuovo voto di Tecnologia. Per vederlo accedi al registro come fai di solito, dall\'app o dal sito della scuola.'],
+  why:'Nessun link, nessuna fretta, nessuna richiesta. Ti dice di entrare dalla strada che usi sempre: è proprio ciò che consiglia la MC.'},
+ {fn:'Luca R.',fa:'luca.r2010@mailfree.it',subj:'guarda!!!',ph:true,
+  body:['ahahah guarda che foto della gita!!! apri subito'],att:['foto_gita.scr','att'],
+  why:'Il mittente può essere davvero il tuo amico, ma con l\'account rubato. Una «foto» con estensione .scr è un programma. Chiediglielo a voce o con un altro canale prima di aprire.'},
+ {fn:'BancaVerde',fa:'servizio.clienti@bancaverde-it.com',fs:'mitt',subj:'Verifica obbligatoria dei dati',ph:true,
+  body:[['Gentile Cliente,','sal'],' per una nuova normativa europea ',['deve verificare i dati della carta','dati'],' ',['entro oggi','urg'],': ',{l:'www.bancaverde.it/verifica',real:'https://bancaverde.it.verifica-dati.com/login',s:'url'}],
+  why:'Guarda l\'indirizzo reale: conta la parte prima del primo «/». Qui è verifica-dati.com, non bancaverde.it. Citare una «normativa europea» serve a sembrare ufficiale.'}];
+let cur=0;const state=MAILS.map(()=>({marks:{},verdict:null,done:false,ok:false}));
+function segs(m){const out=[];out.push({id:'from',t:`${m.fn} <${m.fa}>`,s:m.fs||null,hdr:true});
+ m.body.forEach((b,i)=>{if(typeof b==='string')out.push({id:'b'+i,t:b,s:null,plain:true});
+  else if(Array.isArray(b))out.push({id:'b'+i,t:b[0],s:b[1]||null});else out.push({id:'b'+i,t:b.l,s:b.s||null,link:true,real:b.real})});
+ if(m.att)out.push({id:'att',t:m.att[0],s:m.att[1],att:true});return out;}
+function drawInbox(){const ib=$('inbox');ib.innerHTML='';
+ MAILS.forEach((m,i)=>{const st=state[i],b=document.createElement('button');b.className='mi';b.setAttribute('aria-current',i===cur);
+  b.innerHTML=`<span class="f">${m.fn}</span><span class="s">${m.subj}</span>${st.done?`<span class="st ${st.ok?'ok':'ko'}">${st.ok?'✓ giudicato bene':'✗ da rivedere'}</span>`:''}`;
+  b.onclick=()=>{cur=i;drawInbox();drawView()};ib.appendChild(b)});
+ $('sc1').textContent=`${state.filter(s=>s.ok).length}/${MAILS.length}`;}
+function segBtn(sg,st,m){const b=document.createElement('span');b.className='seg'+(sg.link?' lnk':'');b.textContent=sg.t;
+ b.setAttribute('role','button');b.tabIndex=st.done?-1:0;
+ b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();b.click()}});
+ const on=!!st.marks[sg.id];b.setAttribute('aria-pressed',on);
+ if(st.done){b.setAttribute('aria-disabled','true');if(sg.s&&on)b.classList.add('hit');else if(sg.s&&!on)b.classList.add('miss');else if(!sg.s&&on)b.classList.add('fp');}
+ b.onclick=()=>{if(st.done)return;st.marks[sg.id]=!st.marks[sg.id];if(sg.link)$('status').textContent='Il link porta a: '+sg.real;drawView(sg.link?sg.real:null)};
+ return b;}
+function drawView(statusText){const m=MAILS[cur],st=state[cur],v=$('view'),S=segs(m);v.innerHTML='';
+ const h=document.createElement('div');h.className='hdr';
+ const fr=document.createElement('div');fr.innerHTML='<span class="muted">Da: </span>';fr.appendChild(segBtn(S[0],st,m));h.appendChild(fr);
+ const sj=document.createElement('div');sj.className='subj';sj.textContent=m.subj;h.appendChild(sj);v.appendChild(h);
+ const body=document.createElement('div');body.className='body';
+ S.filter(s=>!s.hdr&&!s.att).forEach(sg=>{if(sg.plain){body.appendChild(document.createTextNode(sg.t))}else body.appendChild(segBtn(sg,st,m))});v.appendChild(body);
+ const a=S.find(s=>s.att);if(a){const w=document.createElement('div');w.innerHTML='<span class="muted">Allegato: </span>';const bb=segBtn(a,st,m);bb.classList.add('att');bb.textContent='📎 '+a.t;w.appendChild(bb);v.appendChild(w)}
+ const status=document.createElement('div');status.className='status';status.id='status';status.textContent=statusText?'Il link porta a: '+statusText:'Tocca un link per vedere dove porta davvero.';v.appendChild(status);
+ const vd=document.createElement('div');vd.className='verd';vd.setAttribute('role','group');vd.setAttribute('aria-label','Il tuo giudizio');
+ [['ph','È phishing'],['ok','È legittimo']].forEach(([k,t])=>{const b=document.createElement('button');b.textContent=t;b.setAttribute('aria-pressed',st.verdict===k);b.disabled=st.done;b.onclick=()=>{st.verdict=k;drawView()};vd.appendChild(b)});
+ v.appendChild(vd);
+ const row=document.createElement('div');row.className='row';const go=document.createElement('button');go.className='btn';go.type='button';go.textContent=st.done?'Riprova questo messaggio':'Verifica';
+ go.onclick=()=>{if(st.done){state[cur]={marks:{},verdict:null,done:false,ok:false};drawInbox();drawView();return}
+  if(!st.verdict){fb.hidden=false;LAB.fb(fb,'warn','Scegli prima il tuo giudizio: phishing o legittimo.');return}
+  st.done=true;const sig=S.filter(s=>s.s),hit=sig.filter(s=>st.marks[s.id]),fp=S.filter(s=>!s.s&&st.marks[s.id]);
+  const vOK=(st.verdict==='ph')===m.ph;st.ok=vOK&&(m.ph?hit.length>=Math.min(3,sig.length):true);
+  drawInbox();drawView();};
+ row.appendChild(go);v.appendChild(row);
+ const fb=document.createElement('div');fb.hidden=true;v.appendChild(fb);
+ if(st.done){const sig=S.filter(s=>s.s),hit=sig.filter(s=>st.marks[s.id]),miss=sig.filter(s=>!st.marks[s.id]),fp=S.filter(s=>!s.s&&st.marks[s.id]);
+  const vOK=(st.verdict==='ph')===m.ph;
+  let html=`<strong>${vOK?'Giudizio corretto':'Giudizio sbagliato'}: ${m.ph?'è phishing':'è legittimo'}.</strong> `;
+  if(sig.length)html+=`Segnali trovati: ${hit.length} su ${sig.length}. `;
+  if(miss.length)html+=`Ti sono sfuggiti (bordo rosso tratteggiato): ${[...new Set(miss.map(s=>SIG[s.s]))].join(', ')}. `;
+  if(fp.length)html+=`Hai segnato ${fp.length} parti innocue (bordo puntinato). `;
+  html+=m.why;if(m.ph&&vOK&&hit.length<Math.min(3,sig.length))html+=' Giudizio giusto, ma trova almeno 3 segnali per avere il punto.';
+  LAB.fb(fb,st.ok?'ok':'ko',html);}
+}
+drawInbox();drawView();
+
+/* ---------- INTERMEDIO ---------- */
+const DICT='password,qwerty,ciao,amore,juventus,inter,milan,napoli,roma,calcio,tecnologia,scuola,ciaociao,admin,letmein,iloveyou,dragon,monkey,football,sole,mare,gatto,cane,pizza,francesco,giulia,marco,sofia,alessandro,lorenzo,matteo,andrea,giuseppe,maria,anna,chiara,luca,pippo,topolino,minecraft,fortnite,roblox,pokemon,welcome,ferrari,italia,lamezia,calabria,estate,inverno,natale,mamma,papa,famiglia,fragola,banana,tesoro,stella,cuore,principessa,batman,superman,abc,abcdef,asdfgh,zxcvbn'.split(',');
+const LEET={'@':'a','4':'a','3':'e','1':'i','!':'i','0':'o','$':'s','5':'s','7':'t'};
+const RATE=1e10;
+function analyze(p){
+ if(!p)return null;
+ const L=[...p].length;let cs=0;if(/[a-z]/.test(p))cs+=26;if(/[A-Z]/.test(p))cs+=26;if(/[0-9]/.test(p))cs+=10;if(/[^a-zA-Z0-9\s]/.test(p))cs+=33;if(/\s/.test(p))cs+=1;
+ const brute=Math.pow(cs||1,L);let best=brute,how='Prova di tutte le combinazioni: con '+L+' caratteri e '+cs+' simboli possibili sono '+fmtBig(brute)+'.';
+ const words=p.trim().split(/\s+/);let pattern=false,dictWord=null,year=false,leet=false;
+ if(words.length>=3){const g=Math.pow(20000,words.length);if(g<best){best=g;how=`Attacco a parole: ${words.length} parole scelte tra circa 20.000 comuni.`}}
+ else{const m=p.match(/^(.*?)([^a-zA-Z]{0,8})$/);let core=m[1]||p,suf=m[2]||'';
+  let norm=core.toLowerCase().replace(/[@4310!$57]/g,c=>{leet=true;return LEET[c]});
+  const dig=(suf.match(/\d/g)||[]).length,sym=(suf.match(/[^\d\s]/g)||[]).length;
+  year=/(19|20)\d\d/.test(suf);
+  const w=DICT.find(d=>norm===d);
+  if(w){dictWord=w;let g=1e5*2*(leet?16:1)*(year?200:Math.pow(10,dig))*Math.pow(33,sym)*(dig&&sym?2:1);
+   if(g<best){best=g;how=`Attacco a dizionario: «${w}» è tra le parole che si provano per prime${leet?', con le sostituzioni tipo @ al posto di a':''}${year?', più un anno':dig?', più qualche cifra':''}${sym?(dig?' e un simbolo':', più un simbolo'):''}${dig||sym?' in fondo':''}.`}}}
+ if(/^(.)\1+$/.test(p)||/^(0123|1234|abcd|qwer)/i.test(p)){best=Math.min(best,1e3);how='Sequenza o ripetizione: viene provata nei primi secondi.'}
+ return{L,best,how,dictWord,year,leet,words:words.length};}
+function fmtBig(n){if(n<1e6)return LAB.fmt(n);const e=Math.floor(Math.log10(n));return `circa 10^${e}`;}
+function human(s){if(s<1)return'meno di 1 secondo';if(s<60)return Math.round(s)+' secondi';if(s<3600)return Math.round(s/60)+' minuti';if(s<86400)return Math.round(s/3600)+' ore';
+ if(s<31557600)return Math.round(s/86400)+' giorni';const y=s/31557600;if(y<1000)return Math.round(y)+' anni';if(y<1e6)return 'migliaia di anni';if(y<1e9)return 'milioni di anni';return 'più di un miliardo di anni';}
+function pw(){const p=$('pw').value,a=analyze(p);if(!a){$('tt').textContent='—';$('how').textContent='';$('crit').innerHTML='';$('mt').style.width='0';return}
+ const s=a.best/RATE/2;$('tt').textContent=human(s);$('how').textContent=a.how;
+ const lvl=Math.max(0,Math.min(1,Math.log10(s+1)/12));const mt=$('mt');mt.style.width=(5+lvl*95)+'%';
+ mt.style.background=lvl<.35?'var(--ko)':lvl<.7?'var(--warn)':'var(--ok)';
+ const c=[[a.L>=12,`Lunga: almeno 12 caratteri (ne ha ${a.L})`],[!a.dictWord,'Non è una parola nota con qualche ritocco'],[!a.year,'Non finisce con un anno o una data'],[a.L>=16||a.words>=4,'Ottima: 16 caratteri o 4 parole e oltre']];
+ $('crit').innerHTML=c.map(([ok,t])=>`<div class="fb ${ok?'ok':'ko'}">${ok?'✓':'✗'} ${t}</div>`).join('')+'<div class="fb warn">? Unica: questo il calcolo non può saperlo. Se la usi anche altrove, una sola violazione le espone tutte.</div>';}
+$('pw').addEventListener('input',pw);document.querySelectorAll('[data-pw]').forEach(b=>b.onclick=()=>{$('pw').value=b.dataset.pw;pw()});pw();
+function plan(){const na=+$('na').value||0,ns=Math.min(+$('ns').value||0,na),n2=Math.min(+$('n2').value||0,na),ne=$('ne').value;const acts=[];
+ if(ne!=='si')acts.push(['Attiva la 2FA sull\'email principale','È la chiave che recupera tutti gli altri account: se cade lei, cadono tutti.','10 minuti']);
+ if(ns>1)acts.push([`Cambia le ${ns} password ripetute`,'Comincia dagli account più importanti e usa un password manager per ricordarle.','30 minuti, a tappe']);
+ if(n2<na)acts.push([`Attiva la 2FA su altri ${na-n2} account`,'Dove disponibile, preferisci un\'app di autenticazione all\'SMS.','5 minuti per account']);
+ acts.push(['Controlla le sessioni attive','Impostazioni → sicurezza → dispositivi connessi: disconnetti quelli che non riconosci.','5 minuti']);
+ $('plan').innerHTML='<h3>Le tue 3 azioni più urgenti</h3><div class="scroll-x"><table><thead><tr><th>Azione</th><th>Perché</th><th>Tempo</th></tr></thead><tbody>'+acts.slice(0,3).map(a=>`<tr><td><strong>${a[0]}</strong></td><td>${a[1]}</td><td>${a[2]}</td></tr>`).join('')+'</tbody></table></div>';}
+['na','ns','n2','ne'].forEach(i=>$(i).addEventListener('input',plan));plan();
+
+/* ---------- AVANZATO ---------- */
+const PAL=[
+ ['mitt','Mittente',[['assistenza@scuolalumen-supporto.net','mitt'],['notifiche@registrolumen.it',null]]],
+ ['sal','Saluto',[['Caro studente,','sal'],['Ciao Marco,',null]]],
+ ['hook','Aggancio',[['il tuo account del registro è stato sospeso per un accesso anomalo.',null],['hai vinto un buono da 50 € per la mensa!',null],['il prof ha pubblicato le soluzioni della verifica.',null]]],
+ ['urg','Pressione',[['Hai solo 1 ora per agire, poi i voti verranno cancellati.','urg'],['',null]]],
+ ['req','Richiesta',[['Conferma la tua password qui sotto.','dati'],['Apri l\'allegato per i dettagli.','att'],['Accedi dal link per continuare.',null]]],
+ ['url','Link',[['www.registrolumen-verifica.com/login','url'],['nessun link',null]]],
+ ['err','Forma',[['con errori di battitura','err'],['scritto senza errori',null]]]];
+const pal=$('pal');
+PAL.forEach(([k,lab,opts])=>{const fs=document.createElement('fieldset');fs.innerHTML=`<legend>${lab}</legend>`;
+ opts.forEach((o,i)=>{const id=`pa-${k}-${i}`;const l=document.createElement('label');l.htmlFor=id;
+  l.innerHTML=`<input type="radio" name="pa-${k}" id="${id}" value="${i}" ${i===0?'checked':''}> ${o[0]||'nessuna fretta'}`;fs.appendChild(l);
+  l.querySelector('input').addEventListener('change',comp)});pal.appendChild(fs)});
+function pick(k){const v=document.querySelector(`[name=pa-${k}]:checked`).value;return PAL.find(p=>p[0]===k)[2][v];}
+function typo(s){return s.replace('account','acount').replace('agire','aggire').replace('password','pasword').replace('dettagli','detagli').replace('continuare','continure')}
+let composedText='';
+function comp(){const ai=$('ai').checked;const p={};PAL.forEach(([k])=>p[k]=pick(k));
+ let used=new Set();Object.values(p).forEach(o=>o[1]&&used.add(o[1]));
+ if(ai){used.delete('err');if(p.sal[1]==='sal')used.delete('sal');}
+ const sal=ai&&p.sal[1]==='sal'?['Ciao Marco,',null]:p.sal;
+ const err=!ai&&p.err[1]==='err';const T=s=>err?typo(s):s;
+ const span=(t,s)=>s&&used.has(s)?`<span class="sig" title="${SIG[s]}">${t}</span>`:t;
+ const lines=[`<div class="meta-l">Da: ${span(p.mitt[0],p.mitt[1])}</div>`,`${span(sal[0],sal[1])} ${T(p.hook[0])} ${p.urg[0]?span(T(p.urg[0]),'urg'):''} ${span(T(p.req[0]),p.req[1])}`];
+ if(p.url[1])lines.push(span(p.url[0],'url'));if(p.req[1]==='att')lines.push(`<div class="meta-l">Allegato: ${span('voti_aggiornati.zip','att')}</div>`);
+ $('comp').innerHTML=lines.join('<br>');
+ composedText=$('comp').innerText+'\n\nSegnali usati: '+[...used].map(s=>SIG[s]).join(', ');
+ const n=used.size;let k=n>=4?'ok':'warn',m=`<strong>${n} segnali su 7</strong>: ${[...used].map(s=>SIG[s]).join(', ')||'nessuno'}. `;
+ if(n<4&&!ai)m+='Ne servono almeno 4 per la consegna. ';
+ if(ai)m+='L\'IA ha tolto errori e saluto generico: sono i segnali di <em>forma</em>. Restano i segnali di <em>struttura</em> (link, mittente, fretta, richiesta di dati o allegato), perché senza di loro la truffa non funziona. La regola che resiste a qualsiasi IA: <strong>verifica sempre da un canale ufficiale</strong>, aprendo l\'app o il sito da solo, mai dal link ricevuto.';
+ else m+='Ora attiva «Riscrivilo come farebbe un\'IA generativa» e guarda quali segnali spariscono.';
+ LAB.fb($('fb3'),k,m);}
+$('ai').addEventListener('change',comp);comp();
+$('cp3').onclick=()=>LAB.copy($('cp3'),'[MESSAGGIO SIMULATO A SCOPO DIDATTICO]\n'+composedText);
+try{$('n3').value=localStorage.getItem('dig204-note')||''}catch(e){}
+$('n3').addEventListener('input',e=>{try{localStorage.setItem('dig204-note',e.target.value)}catch(_){}});
+})();
+</script>
+</body>
+</html>
