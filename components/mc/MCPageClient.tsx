@@ -816,6 +816,17 @@ function ZonePanel({
         !v.src.includes("infografica_lavorazione")
     );
 
+    // Immagini per paragrafo (Canva AI) anche in galleria, con il prompt come didascalia
+    const galleriaConEsplora: VisualAsset[] = [
+      ...galleriaAssets,
+      ...esploraImages.map((img) => ({
+        kind: "generated" as const,
+        label: img.paragrafo,
+        src: img.src,
+        prompt: img.prompt,
+      })),
+    ];
+
     return (
       <div className="px-4 py-4 sm:px-6">
         {/* Presentazione — deck NotebookLM come carosello di slide, in apertura di ESPLORA */}
@@ -829,10 +840,10 @@ function ZonePanel({
         )}
         <AccordionSection items={items} defaultFirstOpen areaHex={areaHex} />
         {/* Galleria visual — esclude sketchnote (RIPASSA) e infografiche processo (nel testo) */}
-        {galleriaAssets.length > 0 && (
+        {galleriaConEsplora.length > 0 && (
           <div className="mt-8">
             <p className="mb-4 text-xs font-black uppercase tracking-wide text-slate-500">Galleria visuale</p>
-            <MCImageCarousel visuals={galleriaAssets} mcTitolo={mc.titolo} />
+            <MCImageCarousel visuals={galleriaConEsplora} mcTitolo={mc.titolo} />
           </div>
         )}
       </div>

@@ -19,6 +19,8 @@ export interface VisualAsset {
   kind: "hero" | "diagram" | "generated" | "other";
   label: string;
   src: string;
+  /** Prompt usato per generare l'immagine con IA (mostrato come didascalia) */
+  prompt?: string;
 }
 
 function stripMarkdown(value: string): string {
@@ -183,6 +185,8 @@ export interface EsploraImage {
   paragrafo: string;
   src: string;
   alt: string;
+  /** Prompt usato per generare l'immagine (Canva AI) */
+  prompt?: string;
 }
 
 /**
@@ -195,13 +199,14 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
   if (!fs.existsSync(file)) return [];
   try {
     const data = JSON.parse(fs.readFileSync(file, "utf-8")) as {
-      immagini?: { paragrafo: string; file: string; alt: string }[];
+      immagini?: { paragrafo: string; file: string; alt: string; prompt?: string }[];
     };
     return (data.immagini ?? [])
       .filter((img) => fs.existsSync(path.join(PUBLIC_ESPLORA_ROOT, mcId, img.file)))
       .map((img) => ({
         paragrafo: img.paragrafo,
         alt: img.alt,
+        prompt: img.prompt,
         src: `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.file}`,
       }));
   } catch {

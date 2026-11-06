@@ -8,6 +8,22 @@ interface MCImageCarouselProps {
   mcTitolo: string;
 }
 
+function PromptCaption({ prompt, dark = false }: { prompt?: string; dark?: boolean }) {
+  if (!prompt) return null;
+  return (
+    <span
+      className={`mt-1 block rounded-md px-2 py-1.5 text-[11px] leading-snug ${
+        dark ? "bg-white/10 text-white/70" : "bg-slate-100 text-slate-600"
+      }`}
+    >
+      <span className={`font-semibold ${dark ? "text-white/85" : "text-slate-700"}`}>
+        Prompt usato (Canva AI):
+      </span>{" "}
+      <span className="italic">{prompt}</span>
+    </span>
+  );
+}
+
 export default function MCImageCarousel({ visuals, mcTitolo }: MCImageCarouselProps) {
   const [selectedIdx, setSelectedIdx] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -93,6 +109,7 @@ export default function MCImageCarousel({ visuals, mcTitolo }: MCImageCarouselPr
           {(selected.kind === "generated" || selected.kind === "hero") && (
             <span className="ml-1 text-slate-400">· Immagine AI</span>
           )}
+          <PromptCaption prompt={selected.prompt} />
         </figcaption>
         {lightboxOpen && (
           <Lightbox
@@ -180,6 +197,7 @@ export default function MCImageCarousel({ visuals, mcTitolo }: MCImageCarouselPr
         )}
         <span className="ml-2 text-slate-400">{selectedIdx + 1} / {total}</span>
       </p>
+      <PromptCaption prompt={selected.prompt} />
 
       {/* ── Thumbnail strip ─────────────────────────────────────────────────── */}
       <div
@@ -277,6 +295,7 @@ function Lightbox({
           {(asset.kind === "generated" || asset.kind === "hero") && (
             <span className="ml-1 text-white/50">· Immagine AI</span>
           )}
+          <PromptCaption prompt={asset.prompt} dark />
         </p>
         <div className="flex items-center gap-4">
           <span className="text-xs text-white/50">{selectedIdx + 1} / {total}</span>
