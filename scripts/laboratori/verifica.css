@@ -1,0 +1,16 @@
+.verif{margin-top:18px;border:2px solid var(--lab);border-radius:var(--r);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:14px}
+.verif-head .lbl{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--lab)}
+.verif-head p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.verif-best{margin:0;font-weight:700;color:var(--ok);font-size:14px}
+.vq{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.vq:first-child{border-top:0;padding-top:0}
+.vq-q{margin:0;font-weight:700;display:flex;gap:10px;align-items:flex-start}
+.vq-n{flex:none;width:24px;height:24px;border-radius:50%;background:var(--lab-bg);color:var(--lab);font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+.vq-opts{display:flex;flex-direction:column;gap:6px}
+.vq-opts button{font:inherit;font-size:15px;text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:9px 12px;cursor:pointer}
+.vq-opts button:hover:not(:disabled){border-color:var(--lab)}
+.vq-opts button:disabled{cursor:default}
+.vq-opts button.ok{border-color:var(--ok);background:var(--ok-bg);color:var(--ok);font-weight:700}
+.vq-opts button.ko{border-color:var(--ko);background:var(--ko-bg);color:var(--ko)}
+.vq-opts button:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.verif-msg{font-weight:700;color:var(--muted);font-size:15px}

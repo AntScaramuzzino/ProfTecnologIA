@@ -1,0 +1,74 @@
+{
+  "cdd": "Laboratorio interattivo MC-INF-1-01 — Bit-lab",
+  "mc_id": "MC-INF-1-01",
+  "titolo": "Bit-lab",
+  "archetipo": "Simulatore",
+  "pilota": false,
+  "url": "https://book.proftecnologia.it/embeds/lab/MC-INF-1-01/index.html",
+  "livello_validazione": "Formale (CDD pubblico e replicabile)",
+  "data": "2026-11-06",
+  "validatore": "Agente CARBLE-CDD (parere istruttorio)",
+  "criteri": {
+    "D": {
+      "esito": "Conforme",
+      "evidenze": [
+        "3 livelli (Base, Intermedio, Avanzato) con consegna, attività con feedback immediato e domanda di riflessione",
+        "Verifica di fine livello: 4 domande estratte da un banco di 6/6/6 (F/I/A) dal quiz della MC; soglia 3/4",
+        "Ponte verso il compito di realtà: presente",
+        "Risultati delle verifiche registrati nei progressi dello studente (pagina Progressi, badge SDG)",
+        "Tipi di attività: quiz, sim"
+      ]
+    },
+    "C": {
+      "esito": "Conforme",
+      "evidenze": [
+        "Contenuti e dati tratti dal testo della MC; calcoli verificati con test automatici sui valori minimi, medi e massimi dei parametri (nessun valore non numerico)",
+        "Nessun errore JavaScript durante il caricamento e l'uso delle schede"
+      ]
+    },
+    "A": {
+      "esito": "Conforme",
+      "evidenze": [
+        "Classe 1ª; livelli graduati da guidato (Base) a esplorativo e sfida (Avanzato), coerenti con DigComp F/I/A",
+        "Indice Gulpease delle consegne: 73 (≥60: comprensibile in autonomia a fine scuola media); dell'intero laboratorio: 59 (422 parole); i testi informativi più densi vanno letti con la mediazione del docente",
+        "Nessuna perdita di contenuto a 360 px di larghezza (smartphone)"
+      ]
+    },
+    "R": {
+      "esito": "Conforme",
+      "evidenze": [
+        "Nomi di persona: nessuno",
+        "Nessuna attribuzione di ruoli o capacità per genere, provenienza o disabilità rilevata in revisione"
+      ]
+    },
+    "B": {
+      "esito": "Conforme",
+      "evidenze": [
+        "Fonte dichiarata a piè di pagina: testo della micro-competenza del libro ProfTecnologIA",
+        "Codice originale; font Atkinson Hyperlegible e JetBrains Mono ospitati sul sito (licenza SIL OFL 1.1)",
+        "Nessuna immagine o testo di terzi riprodotto"
+      ]
+    },
+    "L": {
+      "esito": "Conforme",
+      "evidenze": [
+        "axe-core 4.10 (WCAG 2.1 A/AA) sulle tre schede: nessuna violazione",
+        "Schede di livello navigabili da tastiera (frecce, Home, Fine) secondo il modello WAI-ARIA Tabs; feedback annunciato agli screen reader",
+        "Font ad alta leggibilità (Atkinson Hyperlegible, progettato per ipovedenti), corpo minimo 15 px, nessuna attività basata solo sul colore o sul trascinamento"
+      ]
+    },
+    "E": {
+      "esito": "Da rivedere",
+      "evidenze": [
+        "Nessun dato personale raccolto né inviato: appunti e risultati restano nel browser dello studente",
+        "Nessuna richiesta a server esterni (font e librerie ospitati sul sito)",
+        "Manca la formula di trasparenza sull'uso dell'IA prevista dal Protocollo: va inserita dall'autore dopo la sua validazione"
+      ]
+    }
+  },
+  "esito": "⚠️ Validabile con modifiche",
+  "azioni": [
+    "Inserire la formula di trasparenza sull'IA dopo la validazione dell'autore"
+  ],
+  "decisione_finale": "Spetta all'autore umano (Protocollo CARBLE-CDD v1.0, §16.3)"
+}

@@ -10,7 +10,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import { SDG_BADGES, getBadgeState, type SDGBadgeDefinition } from "@/lib/sdg-badges";
-import type { ProgressStore } from "@/lib/useProgress";
+import { isMcPassed, type ProgressStore } from "@/lib/useProgress";
 
 export interface SdgEntry {
   id: string;
@@ -21,10 +21,7 @@ function computeUnlockedIds(store: ProgressStore, sdgIndex: SdgEntry[]): Set<str
   const unlocked = new Set<string>();
   for (const badge of SDG_BADGES) {
     const linkedMCs = sdgIndex.filter((mc) => mc.sdg.includes(badge.sdg));
-    const passed = linkedMCs.filter((mc) => {
-      const rec = store.completedMCs[mc.id];
-      return rec ? rec.quizTotal > 0 && rec.quizScore / rec.quizTotal >= 0.7 : false;
-    }).length;
+    const passed = linkedMCs.filter((mc) => isMcPassed(store, mc.id)).length;
     if (getBadgeState(passed, badge.requiredPassed) === "unlocked") {
       unlocked.add(badge.id);
     }
@@ -61,7 +58,7 @@ export function useBadgeUnlock(
 
     prevUnlockedRef.current = current;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [store.completedMCs, hydrated]);
+  }, [store.completedMCs, store.labs, hydrated]);
 
   return {
     newlyUnlocked,

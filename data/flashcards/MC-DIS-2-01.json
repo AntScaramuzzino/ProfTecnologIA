@@ -6,7 +6,7 @@
   },
   {
     "front": "Nel metodo di Monge (metodo europeo), come si dispongono le tre viste fondamentali sul foglio?",
-    "back": "Vista frontale al centro-sinistra, vista laterale destra sulla stessa linea orizzontale, vista dall'alto sotto la vista frontale — allineate tra loro\n\nNel metodo di Monge (metodo europeo, metodo del primo diedro): la vista frontale è la vista principale (centro-sinistra). La vista laterale destra è sulla stessa linea orizzontale della frontale. La vista dall'alto è sulla stessa linea verticale della frontale, sotto di essa. L'allineamento non è estetico: permette di leggere le corrispondenze tra le viste.",
+    "back": "Vista frontale in alto a sinistra, vista laterale (da sinistra) sulla stessa linea orizzontale, vista dall'alto sotto la vista frontale — allineate tra loro\n\nNel metodo di Monge (metodo europeo, metodo del primo diedro): la vista frontale è la vista principale (in alto a sinistra). La vista laterale (da sinistra) è sulla stessa linea orizzontale della frontale. La vista dall'alto è sulla stessa linea verticale della frontale, sotto di essa. L'allineamento non è estetico: permette di leggere le corrispondenze tra le viste.",
     "tag": "Base"
   },
   {
@@ -60,8 +60,8 @@
     "tag": "Intermedio"
   },
   {
-    "front": "Stai leggendo un disegno con tre viste. Nella vista frontale c'è un rettangolo con un cerchio al centro. Nella vista laterale c'è un rettangolo senza il cerchio. Nella vista dall'alto c'è un rettangolo con due linee tratteggiate verticali. Cosa descrive questo oggetto?",
-    "back": "Un parallelepipedo con un foro cilindrico passante (da fronte a retro) — il cerchio nella vista frontale è il foro visto frontalmente; le linee tratteggiate nella vista dall'alto sono i bordi del foro visti dall'alto\n\nLa lettura delle tre viste: (1) cerchio nella vista frontale = cilindro o foro cilindrico; (2) linee tratteggiate nella vista dall'alto = bordi del foro che si vedono dall'alto ma sono nascosti sotto la superficie; (3) assenza del cerchio nella vista laterale = il foro non è visibile da quel lato (è perpendicolare alla vista laterale). Conclusione: parallelepipedo con foro cilindrico passante front-to-back.",
+    "front": "Stai leggendo un disegno con tre viste. Nella vista frontale c'è un rettangolo con un cerchio al centro. Nella vista laterale c'è un rettangolo con due linee tratteggiate orizzontali. Nella vista dall'alto c'è un rettangolo con due linee tratteggiate verticali. Cosa descrive questo oggetto?",
+    "back": "Un parallelepipedo con un foro cilindrico passante (da fronte a retro) — il cerchio nella vista frontale è il foro visto frontalmente; le linee tratteggiate nella vista dall'alto sono i bordi del foro visti dall'alto\n\nLa lettura delle tre viste: (1) cerchio nella vista frontale = cilindro o foro cilindrico; (2) linee tratteggiate nella vista dall'alto = bordi del foro che si vedono dall'alto ma sono nascosti sotto la superficie; (3) due tratteggiate orizzontali nella vista laterale = il foro attraversa la profondità e da sinistra se ne vedono solo i bordi nascosti. Conclusione: parallelepipedo con foro cilindrico passante front-to-back.",
     "tag": "Avanzato"
   },
   {

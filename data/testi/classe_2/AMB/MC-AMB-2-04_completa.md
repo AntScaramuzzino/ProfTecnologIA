@@ -310,38 +310,43 @@ Competenze chiave che inizia a costruire da qui: reti IoT · data visualization 
 
 ### ●●● AVANZATO — Progetto una ristrutturazione bioclimatica
 
-**Scenario:** Sei stato incaricato di redigere un rapporto tecnico per la ristrutturazione energetica di un edificio scolastico degli anni '60. La scuola ha 1.200 m² di superficie riscaldata, consuma 145 kWh/m²·anno (classe F), e deve ridurre il consumo a meno di 40 kWh/m²·anno entro 5 anni per accedere ai fondi PNRR.
+**Scenario:** Sei stato incaricato di redigere un rapporto tecnico per la ristrutturazione energetica di un edificio scolastico degli anni '60. La scuola ha 1.200 m² di superficie riscaldata e un fabbisogno per il riscaldamento di 145 kWh/m²·anno (classe F). Il bando regionale (ipotetico) che finanzia i lavori chiede di scendere sotto i 50 kWh/m²·anno.
 
-**I dati dell'edificio:**
-- Pareti esterne: mattone forato 25 cm, U = 1,60 W/m²·K (il 35% della superficie disperdente)
-- Copertura: soletta in calcestruzzo non isolata, U = 1,80 W/m²·K (il 15% della superficie disperdente)
-- Finestre: doppio vetro anni '90, U = 2,80 W/m²·K (il 25% della superficie disperdente)
-- Ponti termici stimati: 25% delle perdite totali
-
-**Interventi possibili:**
-| Intervento | Costo/m² | Nuovo U | Riduzione consumo stimata |
+**Da dove esce il calore oggi (modello semplificato):**
+| Elemento | Situazione attuale | Quota delle perdite | kWh/m²·anno |
 |---|---|---|---|
-| Cappotto esterno 14 cm EPS | 60 €/m² | 0,25 | -35% sul consumo pareti |
-| Cappotto esterno 14 cm fibra di legno | 90 €/m² | 0,22 | -36% sul consumo pareti |
-| Isolamento copertura 20 cm | 45 €/m² | 0,18 | -40% sul consumo copertura |
-| Sostituzione finestre con triplo vetro | 350 €/finestra | 0,85 | -65% sul consumo finestre |
-| Eliminazione ponti termici | 15 €/ml | — | -15% sul consumo totale |
-| Tetto verde (in aggiunta all'isolamento) | 120 €/m² | — | -8% consumo copertura, gestione acque |
-| VMC con recupero calore | 8.000 € totale | — | -20% sul consumo ventilazione |
+| Pareti esterne | mattone forato 25 cm, U = 1,60 W/m²·K | 35% | 50,75 |
+| Copertura | soletta non isolata, U = 1,80 W/m²·K | 15% | 21,75 |
+| Finestre | doppio vetro anni '90, U = 2,80 W/m²·K | 25% | 36,25 |
+| Ponti termici | pilastri, travi, cassonetti | 10% | 14,50 |
+| Ventilazione | apertura delle finestre | 15% | 21,75 |
+
+**Interventi possibili.** La riduzione delle perdite di un elemento è proporzionale al calo della trasmittanza U: per le pareti con il cappotto in EPS, 1 − 0,25/1,60 ≈ 84%.
+| Intervento | Costo | Nuovo U | Riduzione delle perdite di quell'elemento |
+|---|---|---|---|
+| Cappotto esterno 14 cm EPS | 60 €/m² | 0,25 | −84% pareti |
+| Cappotto esterno 14 cm fibra di legno | 90 €/m² | 0,22 | −86% pareti (materiale naturale, protegge meglio dal caldo estivo) |
+| Isolamento copertura 20 cm | 45 €/m² | 0,18 | −90% copertura |
+| Sostituzione finestre con triplo vetro | 350 €/finestra | 0,85 | −70% finestre |
+| Correzione dei ponti termici | 15 €/metro lineare | — | −60% ponti termici |
+| VMC con recupero di calore | 8.000 € totale | — | −70% ventilazione |
+| Tetto verde (in aggiunta all'isolamento) | 120 €/m² | — | quasi nulla d'inverno se il tetto è già isolato; aiuta d'estate e trattiene l'acqua piovana |
 
 **Il tuo compito:**
 
-1. Calcola il consumo annuale attuale in kWh totali (superficie × kWh/m²·anno).
+1. Calcola il fabbisogno annuale attuale in kWh totali (superficie × kWh/m²·anno).
 
-2. Progetta un pacchetto di interventi che porti il consumo sotto i 40 kWh/m²·anno. Non devi usare tutti gli interventi — scegli quelli con il miglior rapporto costo/beneficio.
+2. Progetta un pacchetto di interventi che porti il fabbisogno sotto i 50 kWh/m²·anno. Per ogni intervento calcola i kWh/m²·anno risparmiati (quota dell'elemento × riduzione) e sommali. Non servono per forza tutti: scegli quelli con il miglior rapporto costo/beneficio.
 
-3. Calcola il costo totale del tuo pacchetto di interventi (usa le superfici: 400 m² di pareti, 180 m² di copertura, 60 finestre da 1,5 m²).
+3. Calcola il costo totale del pacchetto (superfici: 400 m² di pareti, 180 m² di copertura, 60 finestre, 300 metri lineari di ponti termici).
 
-4. Calcola il risparmio energetico annuo in kWh e il risparmio in euro (usa il prezzo del gas: 0,12 €/kWh).
+4. Calcola il risparmio energetico annuo in kWh e in euro (prezzo del gas: 0,12 €/kWh).
 
-5. Scrivi una relazione tecnica di 12-15 righe per il dirigente scolastico: cosa proponi, perché, quanto costa, quanto si risparmia, e in quanti anni si ripaga.
+5. Scrivi una relazione tecnica di 12-15 righe per il dirigente scolastico: che cosa proponi, perché, quanto costa, quanto si risparmia e in quanti anni si ripaga.
 
-6. **Domanda aperta:** la normativa europea "Case Green" (2024) impone che tutti gli edifici residenziali raggiungano almeno la classe E entro il 2030 e la classe D entro il 2033. Cosa succederebbe, secondo te, al valore degli edifici di classe F o G nelle prossime città italiane?
+6. **Domanda aperta:** la direttiva europea "Case Green" (direttiva UE 2024/1275) chiede agli Stati di ridurre i consumi medi degli edifici residenziali e di ristrutturare per primi gli edifici pubblici e non residenziali con le prestazioni peggiori. Che cosa potrebbe succedere, secondo te, al valore degli edifici di classe F o G nelle città italiane?
+
+*Per controllare: con tutti gli interventi (cappotto EPS) il fabbisogno scende a circa 33 kWh/m²·anno; senza VMC a circa 49; senza la correzione dei ponti termici a circa 42; senza le finestre nuove resta sopra i 58.*
 
 ---
 

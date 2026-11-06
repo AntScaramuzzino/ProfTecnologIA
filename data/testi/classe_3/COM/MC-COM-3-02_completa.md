@@ -258,7 +258,7 @@ Il Liceo Scientifico "Archimede" di una città italiana ha prodotto nel 2025 un 
 ---
 
 > **Errore comune:**
-> "Posso usare qualsiasi musica in un video scolastico perché non è per scopi commerciali." Non è vero. Il diritto d'autore non ha un'eccezione automatica per uso educativo o non commerciale in Italia — a differenza degli USA (dove esiste il concetto di "fair use"). Per pubblicare un video online con musica protetta da copyright, anche senza guadagnarci un centesimo, sei potenzialmente soggetto a un reclamo. YouTube rimuove automaticamente video con musica coperta da Content ID. La soluzione: usa solo musica con licenza CC esplicita che permette l'uso in video (es. CC BY o CC0).
+> "Posso usare qualsiasi musica in un video scolastico perché non è per scopi commerciali." Non è vero. In Italia l'eccezione per uso didattico (art. 70 della legge 633/1941) è limitata: permette di citare o riprodurre brevi parti di un'opera per insegnare o fare critica, indicando la fonte e senza fini commerciali, ma non autorizza a usare un brano intero come colonna sonora né a pubblicarlo online. Non esiste un "fair use" ampio come negli USA. Per pubblicare un video online con musica protetta da copyright, anche senza guadagnarci un centesimo, sei potenzialmente soggetto a un reclamo. YouTube rimuove automaticamente video con musica coperta da Content ID. La soluzione: usa solo musica con licenza CC esplicita che permette l'uso in video (es. CC BY o CC0).
 
 ---
 

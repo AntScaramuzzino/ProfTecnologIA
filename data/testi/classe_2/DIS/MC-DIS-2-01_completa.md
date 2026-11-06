@@ -71,9 +71,9 @@ Immagina di mettere l'oggetto all'interno di una scatola trasparente. Le sei par
 
 In pratica si usano sempre tre viste fondamentali:
 
-**Vista frontale (prospetto):** l'oggetto visto di fronte. È la vista principale, quella che mostra meglio la forma caratteristica dell'oggetto. Sul foglio si trova al centro-sinistra.
+**Vista frontale (prospetto):** l'oggetto visto di fronte. È la vista principale, quella che mostra meglio la forma caratteristica dell'oggetto. Sul foglio si trova in alto a sinistra.
 
-**Vista laterale destra (fianco):** l'oggetto visto dal lato destro. Sul foglio si trova a destra della vista frontale, sulla stessa linea orizzontale.
+**Vista laterale (fianco):** l'oggetto visto dal lato **sinistro**. Nel metodo europeo questa vista si disegna **a destra** della vista frontale, sulla stessa linea orizzontale: immagina di guardare l'oggetto da sinistra e di «ribaltare» quello che vedi sul piano che sta dietro, alla sua destra.
 
 **Vista dall'alto (pianta):** l'oggetto visto dall'alto, come se guardassi giù su un piano di lavoro. Sul foglio si trova sotto la vista frontale, allineata verticalmente.
 
@@ -86,29 +86,26 @@ In pratica si usano sempre tre viste fondamentali:
 La disposizione non è casuale — è una convenzione internazionale che chiunque, in qualsiasi paese europeo, riconosce immediatamente.
 
 ```
-              ┌─────────────────┐
-              │                 │
-              │   VISTA ALTO    │
-              │    (pianta)     │
-              └────────┬────────┘
-                       │ allineata verticalmente
-┌────────────┐  ┌──────┴───────┐  ┌────────────┐
-│            │  │              │  │            │
-│ VISTA LAT. │  │ VISTA FRONT. │  │ VISTA LAT. │
-│  SINISTRA  │  │  (prospetto) │  │   DESTRA   │
-│            │  │              │  │            │
-└────────────┘  └──────────────┘  └────────────┘
-                       │ allineata verticalmente
-              ┌────────┴────────┐
-              │                 │
-              │  VISTA BASSO    │
-              │                 │
-              └─────────────────┘
+┌──────────────────┐   ┌──────────────────┐
+│                  │   │                  │
+│  VISTA FRONTALE  │───│ VISTA DA SINISTRA│
+│   (prospetto)    │   │     (fianco)     │
+│                  │   │                  │
+└────────┬─────────┘   └──────────────────┘
+         │ allineata verticalmente
+┌────────┴─────────┐
+│                  │
+│ VISTA DALL'ALTO  │
+│     (pianta)     │
+│                  │
+└──────────────────┘
 ```
+
+Nel metodo europeo (primo diedro) la pianta sta **sotto** il prospetto e la vista da sinistra sta **a destra** del prospetto. Nel metodo americano (terzo diedro), usato negli Stati Uniti, le posizioni sono invertite: la pianta sta sopra e a destra va la vista da destra. Per non confondersi, sui disegni si indica il metodo con un simbolo normalizzato.
 
 La regola fondamentale: **le viste devono essere allineate tra loro**. La vista laterale è sulla stessa linea orizzontale della vista frontale. La vista dall'alto è sulla stessa linea verticale. Questo allineamento non è decorativo: serve a leggere le corrispondenze tra le viste, che è il cuore della competenza.
 
-In pratica, su quasi tutti i disegni tecnici si usano le tre viste fondamentali (frontale, laterale destra, dall'alto). Le altre tre si aggiungono solo quando l'oggetto ha caratteristiche particolari che non si vedono nelle prime tre.
+In pratica, su quasi tutti i disegni tecnici si usano le tre viste fondamentali (frontale, laterale, dall'alto). Le altre tre si aggiungono solo quando l'oggetto ha caratteristiche particolari che non si vedono nelle prime tre.
 
 ---
 
@@ -261,19 +258,19 @@ Competenze chiave che inizia a costruire da qui: CAD 2D avanzato · creatività 
 Osserva il parallelepipedo rettangolo qui sotto (disegnato in tre viste). Le dimensioni sono: larghezza 60 mm, altezza 40 mm, profondità 30 mm.
 
 ```
-        [VISTA DALL'ALTO]
-        ┌──────────────────────┐
-        │                      │  ← 60 mm
-        └──────────────────────┘
-                30 mm
+[VISTA FRONTALE]           [VISTA DA SINISTRA]
+┌──────────────────────┐   ┌──────────────┐
+│                      │   │              │
+│                      │   │              │  ← 40 mm
+│                      │   │              │
+└──────────────────────┘   └──────────────┘
+        60 mm                   30 mm
 
-[VISTA FRONTALE]         [VISTA LATERALE DX]
-┌──────────────────────┐  ┌──────────────┐
-│                      │  │              │
-│                      │  │              │  ← 40 mm
-│                      │  │              │
-└──────────────────────┘  └──────────────┘
-        60 mm                  30 mm
+[VISTA DALL'ALTO]
+┌──────────────────────┐
+│                      │  ← 30 mm
+└──────────────────────┘
+        60 mm
 ```
 
 **Domande guida:**
@@ -310,9 +307,9 @@ Un parallelepipedo di 80×50×30 mm con un foro cilindrico passante (che attrave
 
 2. Inizia dalla vista frontale: disegna il rettangolo esterno (80×50 mm). Aggiungi il cerchio del foro (⌀20 mm, centrato sul rettangolo). Aggiungi l'asse di simmetria del cerchio (linea mista sottile).
 
-3. Passa alla vista dall'alto: il parallelepipedo appare come un rettangolo (80×30 mm). Il foro non è visibile da sopra — ma la sua presenza si vede come due linee tratteggiate orizzontali (i bordi del cilindro visti dall'alto). Le tratteggiate sono allineate verticalmente con il cerchio della vista frontale.
+3. Passa alla vista dall'alto: il parallelepipedo appare come un rettangolo (80×30 mm). Il foro non è visibile da sopra, ma la sua presenza si vede come due linee tratteggiate **verticali** (i bordi del cilindro visti dall'alto, che corrono nel senso della profondità). Le tratteggiate sono allineate verticalmente con i lati sinistro e destro del cerchio della vista frontale, a 20 mm di distanza fra loro.
 
-4. Passa alla vista laterale: il parallelepipedo appare come un rettangolo (30×50 mm). Vedi il foro passante: l'entrata e l'uscita del cilindro sono indicate da due linee tratteggiate verticali allineate con il cerchio della vista frontale.
+4. Passa alla vista laterale: il parallelepipedo appare come un rettangolo (30×50 mm). Il foro attraversa tutta la profondità, quindi da sinistra si vede come due linee tratteggiate **orizzontali** che vanno da un lato all'altro del rettangolo, allineate orizzontalmente con il bordo superiore e inferiore del cerchio della vista frontale.
 
 5. Verifica l'allineamento: traccia linee leggere di corrispondenza tra le viste per controllare che ogni elemento sia nella posizione corretta.
 
@@ -330,7 +327,7 @@ Un prisma a base quadrata (40×40 mm di base, 60 mm di altezza) con un foro cili
 
 **Il tuo compito:**
 
-1. Disegna le tre viste ortogonali standard (frontale, laterale destra, pianta) rispettando le convenzioni sulle linee (continue per visibili, tratteggiate per nascosti, assi misti per i cerchi).
+1. Disegna le tre viste ortogonali standard (frontale, laterale da sinistra, pianta) rispettando le convenzioni sulle linee (continue per visibili, tratteggiate per nascosti, assi misti per i cerchi).
 
 2. Esegui la sezione A-A passante per l'asse verticale del foro. Indica il piano di sezione sulla vista frontale con le frecce e l'etichetta corrette. Disegna la vista in sezione con il tratteggio UNI a 45°.
 

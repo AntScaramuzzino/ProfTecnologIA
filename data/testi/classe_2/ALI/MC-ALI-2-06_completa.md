@@ -366,7 +366,7 @@ Confronta **hamburger di manzo tradizionale** vs. **hamburger a base di micoProt
 **Scenario:** sei un membro del comitato etico di una scuola media. L'istituto ha ricevuto una proposta da un'azienda food-tech che vuole fornire la mensa scolastica con tre prodotti innovativi:
 1. Pasta con 5% di farina di grillo
 2. Insalata da vertical farm indoor certificata
-3. Hamburger di pollo — prodotto con carne coltivata in laboratorio (approvato in Italia in via sperimentale nell'ipotetico 2026)
+3. Hamburger di pollo — prodotto con carne coltivata in laboratorio (attenzione: in Italia la legge 172/2023 vieta di produrre e vendere carne coltivata; nell'UE, per essere venduta, dovrebbe prima essere autorizzata come nuovo alimento (novel food) dopo la valutazione dell'EFSA. Valuta quindi anche se la proposta è legale)
 
 Il comitato deve esprimere una valutazione motivata su ciascun prodotto.
 

@@ -13,7 +13,25 @@ const css = readFileSync(join(here, "base.css"), "utf8");
 const js = readFileSync(join(here, "base.js"), "utf8");
 const ecss = readFileSync(join(here, "engine.css"), "utf8");
 const ejs = readFileSync(join(here, "engine.js"), "utf8");
-const FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap">';
+const vcss = readFileSync(join(here, "verifica.css"), "utf8");
+const vjs = readFileSync(join(here, "verifica.js"), "utf8");
+const quizDir = join(here, "..", "..", "data", "quiz");
+// Domande di verifica per livello (F/I/A) dal quiz della MC: [testo, opzioni, indice corretta, spiegazione, feedback per opzione]
+function verifica(id) {
+  const f = join(quizDir, `${id}_quiz.json`);
+  if (!existsSync(f)) return "";
+  const d = JSON.parse(readFileSync(f, "utf8"));
+  const v = { id, F: [], I: [], A: [] };
+  for (const q of d.domande || []) {
+    const ops = q.opzioni || []; const a = ops.findIndex((o) => o.corretto || o.corretta);
+    if (a < 0 || !v[q.livello]) continue;
+    v[q.livello].push([q.domanda, ops.map((o) => o.testo), a, q.spiegazione || ops[a].feedback || "", ops.map((o) => o.feedback || "")]);
+  }
+  const json = JSON.stringify(v).replace(/</g, "\\u003c");
+  return `<style>\n${vcss}</style>\n<script>\nwindow.LABVERIFICA=${json};\n${vjs}</script>\n`;
+}
+// Font self-hosted (public/embeds/lab/_fonts, licenza SIL OFL): nessuna richiesta a server esterni
+const FONTS = "";
 
 function page(head, body) {
   return `<!doctype html>
@@ -42,7 +60,7 @@ for (const f of readdirSync(here).filter((n) => n.endsWith(".src.html"))) {
     .replace("/*BASE_JS*/", js)
     .replace(/<meta name="claude:viewport-fit-sides"[^>]*>\n?/, "");
   const cut = src.indexOf('<div class="wrap">');
-  write(id, page(src.slice(0, cut), src.slice(cut)));
+  write(id, page(src.slice(0, cut), src.slice(cut) + verifica(id)));
   ids.push(id);
 }
 
@@ -52,9 +70,9 @@ if (existsSync(cfgDir)) {
     const id = "MC-" + f.replace(".js", "").toUpperCase();
     const cfg = readFileSync(join(cfgDir, f), "utf8");
     const title = (cfg.match(/titolo:\s*"([^"]+)"/) || [, id])[1];
-    const head = `<title>${title}</title>\n${FONTS}\n<style>\n${css}\n${ecss}\n</style>\n`;
+    const head = `<title>${title}</title>\n<style>\n${css}\n${ecss}\n</style>\n`;
     const body = `<script>\n${ejs}\n</script>\n<script>\n${cfg}\n</script>\n<script>\n${js}\n</script>\n`;
-    write(id, page(head, body));
+    write(id, page(head, body + verifica(id)));
     ids.push(id);
   }
 }

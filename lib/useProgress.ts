@@ -22,11 +22,45 @@ export interface MCProgress {
   attempts: number;
 }
 
+/** Verifica di fine livello del laboratorio interattivo (miglior risultato per livello) */
+export interface LabLevelResult {
+  score: number;
+  total: number;
+  at: string; // ISO 8601
+}
+
+export interface LabProgress {
+  mcId: string;
+  levels: Partial<Record<"F" | "I" | "A", LabLevelResult>>;
+}
+
 export interface ProgressStore {
   studentId: string;
   digcompLevel: "F" | "I" | "A"; // current overall level
   completedMCs: Record<string, MCProgress>;
+  /** Risultati dei laboratori interattivi (assente nei dati salvati prima dei laboratori) */
+  labs?: Record<string, LabProgress>;
   lastActive: string;
+}
+
+const PASS = 0.7;
+
+/** Livello del laboratorio superato: verifica di fine livello con almeno il 70% */
+export function isLabLevelPassed(r?: LabLevelResult): boolean {
+  return !!r && r.total > 0 && r.score / r.total >= PASS;
+}
+
+/** Laboratorio completato: superate le verifiche di tutti e tre i livelli */
+export function isLabCompleted(store: ProgressStore, mcId: string): boolean {
+  const lab = store.labs?.[mcId];
+  return !!lab && (["F", "I", "A"] as const).every((l) => isLabLevelPassed(lab.levels[l]));
+}
+
+/** MC superata: quiz della MC con almeno il 70%, oppure laboratorio completato in tutti e tre i livelli */
+export function isMcPassed(store: ProgressStore, mcId: string): boolean {
+  const r = store.completedMCs[mcId];
+  const quizOk = !!r && r.quizTotal > 0 && r.quizScore / r.quizTotal >= PASS;
+  return quizOk || isLabCompleted(store, mcId);
 }
 
 const STORAGE_KEY = "tecnologia_app_progress";
@@ -126,6 +160,32 @@ export function useProgress(studentIdOverride?: string) {
     []
   );
 
+  /** Record the end-of-level check of an interactive lab (keeps the best result per level) */
+  const recordLabResult = useCallback(
+    (mcId: string, level: "F" | "I" | "A", score: number, total: number) => {
+      if (!(total > 0) || score < 0 || score > total) return;
+      setStore((prev) => {
+        const lab = prev.labs?.[mcId] ?? { mcId, levels: {} };
+        const old = lab.levels[level];
+        const better = !old || score / total >= old.score / old.total;
+        const levels = better ? { ...lab.levels, [level]: { score, total, at: new Date().toISOString() } } : lab.levels;
+        const completedMCs = prev.completedMCs[mcId]
+          ? prev.completedMCs
+          : {
+              ...prev.completedMCs,
+              [mcId]: { mcId, completedAt: new Date().toISOString(), quizScore: 0, quizTotal: 0, level, attempts: 0 },
+            };
+        return {
+          ...prev,
+          completedMCs,
+          labs: { ...(prev.labs ?? {}), [mcId]: { mcId, levels } },
+          lastActive: new Date().toISOString(),
+        };
+      });
+    },
+    []
+  );
+
   /** Mark an MC as visited (without quiz) */
   const markVisited = useCallback((mcId: string, level: "F" | "I" | "A") => {
     setStore((prev) => {
@@ -155,9 +215,7 @@ export function useProgress(studentIdOverride?: string) {
   }, [studentId]);
 
   const completedCount = Object.keys(store.completedMCs).length;
-  const passedCount = Object.values(store.completedMCs).filter(
-    (r) => r.quizTotal > 0 && r.quizScore / r.quizTotal >= 0.7
-  ).length;
+  const passedCount = Object.keys(store.completedMCs).filter((id) => isMcPassed(store, id)).length;
 
   return {
     store,
@@ -169,13 +227,12 @@ export function useProgress(studentIdOverride?: string) {
     completedCount,
     passedCount,
     recordQuizResult,
+    recordLabResult,
     markVisited,
     reset,
     isCompleted: (mcId: string) => !!store.completedMCs[mcId],
-    isPassed: (mcId: string) => {
-      const r = store.completedMCs[mcId];
-      return r ? r.quizTotal > 0 && r.quizScore / r.quizTotal >= 0.7 : false;
-    },
+    isPassed: (mcId: string) => isMcPassed(store, mcId),
+    getLabProgress: (mcId: string) => store.labs?.[mcId] ?? null,
     getProgress: (mcId: string) => store.completedMCs[mcId] ?? null,
   };
 }

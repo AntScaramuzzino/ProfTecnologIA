@@ -285,7 +285,7 @@ Usa la formula E (Wh) = V (volt) × Ah (amperaora) per calcolare i Wh, poi conve
 
 **Dati di partenza (da ricercare/stimare):**
 - Superficie del tetto della tua scuola: da misurare su Google Maps (strumento righello)
-- Consumo medio di una scuola secondaria in Italia: circa 50 kWh/giorno per ogni 100 m² di edificio
+- Consumo elettrico della scuola: chiedi alla segreteria i kWh delle bollette dell'ultimo anno e dividi per i giorni di apertura. Se non è possibile, stima il dato e dichiara nella relazione da dove viene e quanto è incerto
 
 **Il tuo compito — consegna in forma di relazione tecnica (4–6 pagine o presentazione equivalente):**
 

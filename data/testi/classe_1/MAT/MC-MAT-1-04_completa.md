@@ -96,7 +96,7 @@ Il rifiuto è la strategia più efficace perché interviene prima che il rifiuto
 
 Quando non puoi evitare di produrre un rifiuto, riduci la sua quantità. Compra confezioni più grandi invece di molte piccole. Scegli prodotti concentrati. Preferisci il ricaricabile al usa-e-getta.
 
-I **sistemi di deposito cauzionale** (esistenti in Germania, Svezia, Finlandia, e ora introdotti anche in Italia) sono un meccanismo che incentiva la riduzione dei rifiuti: paghi un deposito quando compri una bottiglia, e lo recuperi quando la riporti. In Germania, il tasso di ritorno delle bottiglie è superiore al 98%.
+I **sistemi di deposito cauzionale** (attivi da anni in Germania, Svezia e Finlandia; in Italia una legge nazionale è in discussione in Parlamento) sono un meccanismo che incentiva la riduzione dei rifiuti: paghi un deposito quando compri una bottiglia, e lo recuperi quando la riporti. In Germania, il tasso di ritorno delle bottiglie è superiore al 98%.
 
 ---
 

@@ -63,7 +63,7 @@ Il nome "phishing" è un gioco di parole con "fishing" (pescare): l'attaccante l
 
 ### 2. Come riconoscere un'email di phishing: sette segnali
 
-Il 90% dei messaggi di phishing ha almeno tre di questi sette segnali. Impara a riconoscerli e diventano quasi sempre visibili.
+Un messaggio di phishing raramente li ha tutti, ma quasi sempre ne contiene più di uno. Impara a riconoscerli e diventano molto più visibili.
 
 **Segnale 1 — URL sospetto.** Prima di cliccare qualsiasi link, passa il cursore sopra senza cliccare (su computer). Guarda l'indirizzo che appare in basso. Un link di Instagram dovrebbe portare a `instagram.com`. Se vedi `instagram-support.net`, `instagram.accounts-verify.com`, o qualcosa del genere, è una truffa. I truffatori registrano domini che *assomigliano* a quelli reali ma non lo sono. Regola: l'unica parte che conta è prima del primo `/` dopo il doppio punto — `instagram.com/qualcosa` è Instagram; `qualcosa.instagram-login.com` non lo è.
 
@@ -99,6 +99,8 @@ Perché? Perché la lunghezza conta più della complessità. Un computer che ten
 | `P@$$word` | circa 5 minuti |
 | `P@$$w0rd!2026` | circa 3 anni |
 | `il mio gatto si chiama Biscotto` | più di un miliardo di anni |
+
+*Le stime valgono per un attacco che prova tutte le combinazioni a caso e cambiano molto a seconda del computer usato. Gli attaccanti veri, però, provano prima i **dizionari**: elenchi di password già rubate e parole comuni con le sostituzioni più note (a→@, o→0, s→$). Per questo `P@$$w0rd!2026`, che parte da "password", nella realtà cade molto prima di 3 anni. E una frase famosa o una citazione è debole quanto una parola: la passphrase deve essere tua e imprevedibile.*
 
 La frase è più lunga, ma è anche più facile da ricordare. Questo è il principio delle **passphrase**: usare una frase invece di una parola con simboli.
 
@@ -311,7 +313,7 @@ Competenze chiave che inizia a costruire da qui: digital reputation · GDPR · s
 
 **Messaggio simulato A:**
 
-*"Caro cliente, il tuo account Postepay è stato bloccato per attività sospetta. Per sbloccare il tuo account clicca subito: www.postepay-sicurezza-account.it. Il tuo codice di sblocco scade tra 2 ore. Assistenza Postepay"*
+*"Caro cliente, il tuo account CartaFacile è stato bloccato per attività sospetta. Per sbloccare il tuo account clicca subito: www.cartafacile-sicurezza-account.it. Il tuo codice di sblocco scade tra 2 ore. Assistenza CartaFacile"*
 
 ---
 

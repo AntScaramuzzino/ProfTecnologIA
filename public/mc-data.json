@@ -156,7 +156,7 @@
       },
       "outputApp": {
         "quiz": "Scenario: mostra 3 articoli sullo stesso argomento, chiedi quale è più affidabile e perché. Risposta multipla con feedback argomentato.",
-        "microlearning": "Card deck 5 slide: i 5 criteri CRAAP (Currency, Relevance, Authority, Accuracy, Purpose) con esempio applicato. 4 min.",
+        "microlearning": "Card deck 5 slide: i 4 passaggi del metodo SIFT (Stop, Investigate the source, Find better coverage, Trace claims) con esempio applicato. 4 min.",
         "visual": "Checklist visiva: 'Come valuto una fonte online?' — 5 domande con icone.",
         "livelloDigComp": "F"
       },
@@ -171,7 +171,7 @@
         "classe-1",
         "DIG"
       ],
-      "compito_realta": "Confronta 3 fonti sullo stesso argomento (es. i vantaggi del riciclaggio): valutale con la checklist CRAAP, identifica differenze e scegli quella più attendibile motivando la scelta.",
+      "compito_realta": "Confronta 3 fonti sullo stesso argomento (es. i vantaggi del riciclaggio): valutale con il metodo SIFT, identifica differenze e scegli quella più attendibile motivando la scelta.",
       "sdg": [
         4,
         16
@@ -849,7 +849,7 @@
         "titolo_hook": "Il panino impossibile"
       },
       "professione_futura": {
-        "titolo": "Data Scientist e analista di dati",
+        "titolo": "Data scientist e analista di dati",
         "orizzonte": "2030",
         "descrizione_breve": "Scrive algoritmi per pulire, trasformare, analizzare e visualizzare dati grezzi, trasformando sequenze di numeri in informazioni utili per decisioni aziendali o scientifiche.",
         "competenze_chiave": [
@@ -861,7 +861,7 @@
       },
       "professioni_future": [
         {
-          "titolo": "Data Scientist e analista di dati",
+          "titolo": "Data scientist e analista di dati",
           "orizzonte": "2030",
           "descrizione_breve": "Scrive algoritmi per trasformare dati grezzi in informazioni utili per decisioni aziendali o scientifiche.",
           "competenze_chiave": [
@@ -4165,7 +4165,7 @@
         "titolo_hook": "Il bibliotecario invisibile"
       },
       "professione_futura": {
-        "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer",
+        "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer (SRE)",
         "orizzonte": "2030",
         "descrizione_breve": "Gestisce l'infrastruttura informatica di un'azienda: server, reti, sistemi operativi, backup, sicurezza — usando la riga di comando e automatizzando le operazioni con script.",
         "competenze_chiave": [
@@ -4178,7 +4178,7 @@
       },
       "professioni_future": [
         {
-          "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer",
+          "titolo": "Amministratore di sistemi (SysAdmin) e Site Reliability Engineer (SRE)",
           "orizzonte": "2030",
           "descrizione_breve": "Gestisce l'infrastruttura informatica aziendale: server, OS, backup e sicurezza.",
           "competenze_chiave": [
@@ -4313,7 +4313,7 @@
         "titolo_hook": "Il matematico che salvò milioni di vite"
       },
       "professione_futura": {
-        "titolo": "Cybersecurity Analyst",
+        "titolo": "Esperto di cybersecurity e analista della sicurezza",
         "orizzonte": "2030",
         "descrizione_breve": "Protegge i sistemi informatici di un'organizzazione da attacchi e violazioni, analizza le vulnerabilità e progetta meccanismi di difesa basati sulla crittografia e su protocolli sicuri.",
         "competenze_chiave": [
@@ -4326,7 +4326,7 @@
       },
       "professioni_future": [
         {
-          "titolo": "Cybersecurity Analyst",
+          "titolo": "Esperto di cybersecurity e analista della sicurezza",
           "orizzonte": "2030",
           "descrizione_breve": "Protegge sistemi informatici da attacchi, analizza vulnerabilità e progetta meccanismi di difesa.",
           "competenze_chiave": [
@@ -6787,7 +6787,7 @@
         "titolo_hook": "Il pacemaker testimone"
       },
       "professione_futura": {
-        "titolo": "IoT Solutions Architect",
+        "titolo": "Ingegnere IoT e Architect di sistemi embedded",
         "orizzonte": "2030",
         "descrizione_breve": "Progetta sistemi di oggetti connessi per industria, città e salute: definisce l'architettura hardware/software, sceglie i protocolli di comunicazione e garantisce sicurezza e scalabilità dell'ecosistema IoT.",
         "competenze_chiave": [
@@ -6800,7 +6800,7 @@
       },
       "professioni_future": [
         {
-          "titolo": "IoT Solutions Architect",
+          "titolo": "Ingegnere IoT e Architect di sistemi embedded",
           "orizzonte": "2030",
           "descrizione_breve": "Progetta sistemi di oggetti connessi per industria, città e salute.",
           "competenze_chiave": [
@@ -6811,14 +6811,14 @@
           ]
         },
         {
-          "titolo": "Smart City Engineer",
+          "titolo": "Data Engineer per sistemi in tempo reale",
           "orizzonte": "2030",
-          "descrizione_breve": "Progetta e gestisce le infrastrutture digitali delle città intelligenti: traffico, illuminazione, rifiuti, qualità dell'aria — tutto connesso e ottimizzato in tempo reale.",
+          "descrizione_breve": "Costruisce le pipeline che raccolgono, puliscono e distribuiscono in tempo reale i flussi di dati provenienti dai sensori IoT.",
           "competenze_chiave": [
-            "urban computing",
-            "reti di sensori",
-            "analisi dati geospaziali",
-            "sostenibilità energetica"
+            "elaborazione di stream di dati",
+            "pipeline di dati",
+            "sistemi distribuiti",
+            "cloud computing"
           ]
         }
       ],
@@ -6936,7 +6936,7 @@
         "titolo_hook": "Il milione di dollari che nessuno ha usato"
       },
       "professione_futura": {
-        "titolo": "AI Ethics Researcher e Responsible AI Engineer",
+        "titolo": "Machine Learning Engineer",
         "orizzonte": "2030",
         "descrizione_breve": "Studia e progetta sistemi di intelligenza artificiale equi, trasparenti e responsabili: analizza i bias nei dataset e negli algoritmi, sviluppa strumenti di audit e definisce framework etici per lo sviluppo AI.",
         "competenze_chiave": [
@@ -6949,18 +6949,7 @@
       },
       "professioni_future": [
         {
-          "titolo": "AI Ethics Researcher e Responsible AI Engineer",
-          "orizzonte": "2030",
-          "descrizione_breve": "Progetta sistemi AI equi e trasparenti, analizza bias e sviluppa framework etici.",
-          "competenze_chiave": [
-            "machine learning applicato",
-            "analisi dei bias algoritmici",
-            "framework etici per l'AI",
-            "interpretabilità dei modelli"
-          ]
-        },
-        {
-          "titolo": "ML Engineer",
+          "titolo": "Machine Learning Engineer",
           "orizzonte": "2028",
           "descrizione_breve": "Progetta, addestra e mette in produzione modelli di machine learning per applicazioni reali: dalla raccolta dei dati al deployment scalabile.",
           "competenze_chiave": [
@@ -6969,6 +6958,17 @@
             "feature engineering",
             "Python e framework ML",
             "ottimizzazione modelli"
+          ]
+        },
+        {
+          "titolo": "AI Ethics e Responsible AI Specialist",
+          "orizzonte": "2030",
+          "descrizione_breve": "Progetta sistemi AI equi e trasparenti, analizza bias e sviluppa framework etici.",
+          "competenze_chiave": [
+            "machine learning applicato",
+            "analisi dei bias algoritmici",
+            "framework etici per l'AI",
+            "interpretabilità dei modelli"
           ]
         }
       ],

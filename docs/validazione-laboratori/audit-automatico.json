@@ -1,0 +1,2172 @@
+{
+ "MC-ALI-2-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 600,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 143,
+   "gulpease": 70
+  },
+  "controls": 40,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "quiz",
+   "chart",
+   "order",
+   "sim",
+   "compare"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "L'agricoltura usa il 70% dell'acqua dolce prelevata nel mondo (d"
+  ]
+ },
+ "MC-ALI-2-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 426,
+   "gulpease": 54
+  },
+  "consegne": {
+   "parole": 113,
+   "gulpease": 71
+  },
+  "controls": 52,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "inspect",
+   "quiz",
+   "order",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Ingredienti: acqua, purea di pesca (50%), zucchero, acidificante: acido citrico"
+  ]
+ },
+ "MC-ALI-2-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 495,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 106,
+   "gulpease": 67
+  },
+  "controls": 48,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "chart",
+   "quiz",
+   "sim"
+  ],
+  "nomi_m": [
+   "Luca"
+  ],
+  "nomi_f": [
+   "Sara"
+  ],
+  "percentuali": [
+   "con le indicazioni LARN riportate dal testo: carboidrati 45-60%, grassi 20-35%, proteine 10-15%",
+   "53 %",
+   "30 %",
+   "21 %",
+   "53 %",
+   "30 %",
+   "21 %",
+   "Lontano dalle indicazioni: proteine sopra il 15%"
+  ]
+ },
+ "MC-ALI-2-04": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 494,
+   "gulpease": 62
+  },
+  "consegne": {
+   "parole": 105,
+   "gulpease": 75
+  },
+  "controls": 40,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sim",
+   "quiz",
+   "sim",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "vuole più prodotti locali in mensa, spendendo al massimo il 10% in più dei prezzi della grande distribu",
+   "50 %",
+   "48 %"
+  ]
+ },
+ "MC-ALI-2-05": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 464,
+   "gulpease": 62
+  },
+  "consegne": {
+   "parole": 120,
+   "gulpease": 77
+  },
+  "controls": 32,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "compare",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   " Il cliente vuole ridurre l'impatto del 50%, con la stessa durata di 12 mesi",
+   "0 %",
+   "Riduzione del 0%: non basta ancora per l'obiettivo del 50%"
+  ]
+ },
+ "MC-ALI-2-06": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 480,
+   "gulpease": 60
+  },
+  "consegne": {
+   "parole": 115,
+   "gulpease": 71
+  },
+  "controls": 38,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "sort",
+   "canvas",
+   "quiz",
+   "scenario"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Prodotto 1 · Pasta con il 5% di farina di grillo"
+  ]
+ },
+ "MC-AMB-2-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 644,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 96,
+   "gulpease": 67
+  },
+  "controls": 46,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "check",
+   "canvas",
+   "compare",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-AMB-2-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 485,
+   "gulpease": 55
+  },
+  "consegne": {
+   "parole": 94,
+   "gulpease": 80
+  },
+  "controls": 51,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "chart",
+   "quiz",
+   "sort",
+   "order",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-AMB-2-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 487,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 102,
+   "gulpease": 78
+  },
+  "controls": 50,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sim",
+   "quiz",
+   "sort",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Rispetto allo standard (100% = minimo di legge)",
+   "56 % del minimo",
+   "120 % del minimo",
+   "93 % del minimo",
+   "75 % del minimo"
+  ]
+ },
+ "MC-AMB-2-04": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 582,
+   "gulpease": 62
+  },
+  "consegne": {
+   "parole": 189,
+   "gulpease": 78
+  },
+  "controls": 31,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "quiz",
+   "sim",
+   "quiz",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "100 %",
+   "21 %",
+   "100 %",
+   "21 %",
+   "Progetta una tettoia che ombreggi almeno l'80% della finestra d'estate e meno del 30% ",
+   "87 %",
+   " Da dove esce il calore: pareti 35%, copertura 15%, finestre 25%, ponti termici 10%, venti",
+   "lazione 15%",
+   " Ponti termici corretti: −60% delle loro perdite; VMC con recupero di",
+   " calore: −70% delle perdite per ventilazione"
+  ]
+ },
+ "MC-AMB-2-05": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 491,
+   "gulpease": 65
+  },
+  "consegne": {
+   "parole": 103,
+   "gulpease": 82
+  },
+  "controls": 41,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "canvas",
+   "sim",
+   "sim",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "000 m³ d'acqua al giorno, il 90% da un solo bacino di montagna",
+   " Perdite di rete al 45%",
+   "Ristrutturazione rete: perdite dal 45% al 20% (20 M€, +10",
+   "ACQUA DISPONIBILE IN SICCITÀ (BACINO AL 50%)",
+   "47 %",
+   "Copri il 47% del fabbisogno: non basta in caso di si",
+   "Oggi, con perdite del 45%, quanta acqua si perde ogni giorno nell"
+  ]
+ },
+ "MC-AMB-2-06": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 499,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 113,
+   "gulpease": 72
+  },
+  "controls": 41,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "chart",
+   "quiz",
+   "canvas",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-COM-3-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 521,
+   "gulpease": 67
+  },
+  "consegne": {
+   "parole": 113,
+   "gulpease": 82
+  },
+  "controls": 48,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sim",
+   "quiz",
+   "order",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-COM-3-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 513,
+   "gulpease": 66
+  },
+  "consegne": {
+   "parole": 94,
+   "gulpease": 68
+  },
+  "controls": 41,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "quiz",
+   "sim",
+   "sort",
+   "sim",
+   "sort"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-COM-3-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 428,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 104,
+   "gulpease": 72
+  },
+  "controls": 22,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "sim",
+   "sim",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "81 %",
+   "32 %"
+  ]
+ },
+ "MC-COM-3-04": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 521,
+   "gulpease": 56
+  },
+  "consegne": {
+   "parole": 110,
+   "gulpease": 78
+  },
+  "controls": 34,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sim",
+   "sim",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "30 %",
+   "Notte fonda, buio, Carmelo si alza\t2:00\t3\tsì\taccesa al 30%\taccesa",
+   " presto, ancora luce, passa il gatto\t19:00\t120\tsì\taccesa al 30%\tspenta",
+   "era, buio, qualcuno entra in corridoio\t22:00\t5\tsì\taccesa al 30%\taccesa"
+  ]
+ },
+ "MC-COM-3-05": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 596,
+   "gulpease": 55
+  },
+  "consegne": {
+   "parole": 112,
+   "gulpease": 65
+  },
+  "controls": 49,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "sort",
+   "quiz",
+   "canvas",
+   "sim",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-COM-3-06": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 574,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 94,
+   "gulpease": 77
+  },
+  "controls": 44,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "sort",
+   "inspect",
+   "canvas",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Banner «Sconto 50% solo oggi!»",
+   "Studio rivela che gli smartphone causano un calo del QI del 15% nei ragazzi»",
+   "SMARTPHONE, ALLARME QI: -15% IN 5 ANNI",
+   "SMARTPHONE, ALLARME QI: -15% IN 5 ANNI",
+   "SMARTPHONE, ALLARME QI: -15% IN 5 ANNI Pubblicato da Redazione, senz",
+   " Il calo arriverebbe al 15%, anche se l'articolo non dice su quanti"
+  ]
+ },
+ "MC-DIG-1-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 601,
+   "gulpease": 62
+  },
+  "consegne": {
+   "parole": 101,
+   "gulpease": 70
+  },
+  "controls": 53,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "sort",
+   "info",
+   "quiz",
+   "canvas",
+   "sim",
+   "compare"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIG-1-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 485,
+   "gulpease": 67
+  },
+  "consegne": {
+   "parole": 102,
+   "gulpease": 71
+  },
+  "controls": 40,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "inspect",
+   "quiz",
+   "order",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIG-1-03": {
+  "pilota": true,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 694,
+   "gulpease": 64
+  },
+  "consegne": {
+   "parole": 165,
+   "gulpease": 76
+  },
+  "controls": 83,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [],
+  "nomi_m": [
+   "Filippo",
+   "Bruno"
+  ],
+  "nomi_f": [
+   "Anna",
+   "Elena",
+   "Carla"
+  ],
+  "percentuali": []
+ },
+ "MC-DIG-2-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 511,
+   "gulpease": 58
+  },
+  "consegne": {
+   "parole": 93,
+   "gulpease": 76
+  },
+  "controls": 42,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "sort",
+   "quiz",
+   "sim",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIG-2-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 519,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 113,
+   "gulpease": 76
+  },
+  "controls": 40,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "inspect",
+   "sort",
+   "scenario"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "«Il 60% degli studenti della scuola usa TikTok»"
+  ]
+ },
+ "MC-DIG-2-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 460,
+   "gulpease": 58
+  },
+  "consegne": {
+   "parole": 95,
+   "gulpease": 76
+  },
+  "controls": 49,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sort",
+   "sort",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIG-2-04": {
+  "pilota": true,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 839,
+   "gulpease": 65
+  },
+  "consegne": {
+   "parole": 150,
+   "gulpease": 82
+  },
+  "controls": 48,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [],
+  "nomi_m": [
+   "Luca",
+   "Marco"
+  ],
+  "nomi_f": [
+   "Morelli"
+  ],
+  "percentuali": []
+ },
+ "MC-DIG-2-05": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 538,
+   "gulpease": 61
+  },
+  "consegne": {
+   "parole": 159,
+   "gulpease": 76
+  },
+  "controls": 32,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "scenario",
+   "check"
+  ],
+  "nomi_m": [
+   "Marco",
+   "Lorenzo",
+   "Ahmed"
+  ],
+  "nomi_f": [
+   "Giulia",
+   "Chiara",
+   "Sofia",
+   "Laura"
+  ],
+  "percentuali": []
+ },
+ "MC-DIG-3-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 536,
+   "gulpease": 56
+  },
+  "consegne": {
+   "parole": 110,
+   "gulpease": 70
+  },
+  "controls": 47,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "order",
+   "sim",
+   "canvas",
+   "sim",
+   "check"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIG-3-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 557,
+   "gulpease": 55
+  },
+  "consegne": {
+   "parole": 109,
+   "gulpease": 67
+  },
+  "controls": 46,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "chart",
+   "quiz",
+   "sort",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIG-3-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 496,
+   "gulpease": 62
+  },
+  "consegne": {
+   "parole": 91,
+   "gulpease": 74
+  },
+  "controls": 41,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "chart",
+   "quiz",
+   "chart",
+   "quiz",
+   "chart",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIG-3-04": {
+  "pilota": false,
+  "axe": {
+   "color-contrast": {
+    "impact": "serious",
+    "nodes": 2,
+    "help": "Elements must meet minimum color contrast ratio thresholds"
+   }
+  },
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 561,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 96,
+   "gulpease": 77
+  },
+  "controls": 50,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "sort",
+   "inspect",
+   "sim",
+   "canvas",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIS-1-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 518,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 92,
+   "gulpease": 72
+  },
+  "controls": 53,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "order",
+   "info",
+   "sort",
+   "quiz",
+   "check"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIS-1-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 437,
+   "gulpease": 65
+  },
+  "consegne": {
+   "parole": 107,
+   "gulpease": 80
+  },
+  "controls": 40,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "quiz",
+   "sim",
+   "info",
+   "sim",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIS-2-01": {
+  "pilota": true,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 562,
+   "gulpease": 65
+  },
+  "consegne": {
+   "parole": 145,
+   "gulpease": 74
+  },
+  "controls": 75,
+  "livelli": 5,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIS-2-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 494,
+   "gulpease": 54
+  },
+  "consegne": {
+   "parole": 103,
+   "gulpease": 67
+  },
+  "controls": 39,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "order",
+   "quiz",
+   "sim",
+   "check"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-DIS-3-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 502,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 117,
+   "gulpease": 71
+  },
+  "controls": 48,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "order",
+   "quiz",
+   "order",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "67 %",
+   "60 %",
+   "35 %"
+  ]
+ },
+ "MC-DIS-3-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 571,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 169,
+   "gulpease": 71
+  },
+  "controls": 48,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "order",
+   "sim",
+   "check",
+   "sim",
+   "check"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-ENE-3-01": {
+  "pilota": true,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 616,
+   "gulpease": 63
+  },
+  "consegne": {
+   "parole": 116,
+   "gulpease": 88
+  },
+  "controls": 40,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "i legno e corde fa perdere energia: il rendimento parte dal 70%",
+   "70%",
+   " Il lavoro speso resta 28,6 kJ: con η = 70% una parte (8,6 kJ) diventa calore per a"
+  ]
+ },
+ "MC-ENE-3-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 466,
+   "gulpease": 60
+  },
+  "consegne": {
+   "parole": 120,
+   "gulpease": 71
+  },
+  "controls": 24,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "chart",
+   "quiz",
+   "sim",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   " fotovoltaico da 3 kWp (circa 300 kWh/mese), C isolamento (−30% di gas)"
+  ]
+ },
+ "MC-ENE-3-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 420,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 114,
+   "gulpease": 72
+  },
+  "controls": 24,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sim",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Solare fotovoltaico · fattore di carico 13-15%",
+   "Eolico a terra · 20-25%",
+   "Idroelettrico · 40-50%",
+   "Geotermico · 80-90%",
+   "Eolico in mare · 35-45%",
+   "Biogas · 60-70%",
+   "100 %",
+   "Copri il 100% del fabbisogno annuo",
+   "Se copri il 100% del fabbisogno in un anno, la scuola è ",
+   "ale 0,20 €/kWh; il libro prevede una detrazione fiscale del 50% in 10 anni",
+   "55 %",
+   "Sì, 50% in 10 anni"
+  ]
+ },
+ "MC-ENE-3-04": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 481,
+   "gulpease": 63
+  },
+  "consegne": {
+   "parole": 125,
+   "gulpease": 76
+  },
+  "controls": 26,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "sim",
+   "quiz",
+   "sim",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-ENE-3-05": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 490,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 112,
+   "gulpease": 74
+  },
+  "controls": 24,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "order",
+   "sim",
+   "quiz",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "25 %",
+   "28,2 %",
+   "5 %",
+   "25 %",
+   "CAPACITÀ MINIMA (USO FRA 20% E 80%)",
+   "Lavorando solo fra il 20% e l'80% si usa il 60% della batteria: la vita della batteria "
+  ]
+ },
+ "MC-ENE-3-06": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 441,
+   "gulpease": 61
+  },
+  "consegne": {
+   "parole": 121,
+   "gulpease": 80
+  },
+  "controls": 27,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "sort",
+   "sim",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   " Efficienza della batteria 90%",
+   "66 %",
+   "Senza batteria il sole copre il 66% dei consumi: la sera e la notte si comp",
+   "ttico semplificato (curve tipiche, efficienza di carica del 90%), non un dato misurato"
+  ]
+ },
+ "MC-INF-1-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 422,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 109,
+   "gulpease": 73
+  },
+  "controls": 39,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "quiz",
+   "quiz",
+   "sim",
+   "sim"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-INF-1-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 404,
+   "gulpease": 60
+  },
+  "consegne": {
+   "parole": 97,
+   "gulpease": 72
+  },
+  "controls": 43,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "quiz",
+   "sort",
+   "quiz",
+   "sim",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-INF-2-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 492,
+   "gulpease": 52
+  },
+  "consegne": {
+   "parole": 104,
+   "gulpease": 68
+  },
+  "controls": 42,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sim",
+   "sort",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "61 %"
+  ]
+ },
+ "MC-INF-2-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 550,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 113,
+   "gulpease": 76
+  },
+  "controls": 38,
+  "livelli": 5,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "sim",
+   "quiz",
+   "sim",
+   "sort",
+   "quiz",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-INF-3-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 519,
+   "gulpease": 61
+  },
+  "consegne": {
+   "parole": 108,
+   "gulpease": 70
+  },
+  "controls": 49,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "sort",
+   "chart",
+   "quiz",
+   "sim",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-INF-3-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 508,
+   "gulpease": 55
+  },
+  "consegne": {
+   "parole": 116,
+   "gulpease": 70
+  },
+  "controls": 38,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sim",
+   "chart",
+   "info",
+   "quiz",
+   "order",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "48%",
+   "41%",
+   "55%"
+  ]
+ },
+ "MC-MAT-1-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 715,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 144,
+   "gulpease": 67
+  },
+  "controls": 59,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "quiz",
+   "quiz",
+   "quiz",
+   "compare",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Durata oltre 30 anni; riciclabile al 100%"
+  ]
+ },
+ "MC-MAT-1-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 513,
+   "gulpease": 70
+  },
+  "consegne": {
+   "parole": 99,
+   "gulpease": 77
+  },
+  "controls": 53,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "order",
+   "sort",
+   "canvas",
+   "sim",
+   "quiz"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Maglione A: fast fashion, 12,90 €, 80% poliestere e 20% cotone, fatto in Bangladesh, dura 1-2 s",
+   "A: 80% poliestere + 20% cotone",
+   "B: 100% lana"
+  ]
+ },
+ "MC-MAT-1-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 680,
+   "gulpease": 58
+  },
+  "consegne": {
+   "parole": 124,
+   "gulpease": 69
+  },
+  "controls": 50,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "sort",
+   "canvas",
+   "info",
+   "compare"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Risparmia il 45% di energia rispetto al poliestere vergi",
+   " Il nuovo imballaggio può costare al massimo il 30% in più"
+  ]
+ },
+ "MC-MAT-1-04": {
+  "pilota": true,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 742,
+   "gulpease": 54
+  },
+  "consegne": {
+   "parole": 168,
+   "gulpease": 68
+  },
+  "controls": 52,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-MAT-1-05": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 572,
+   "gulpease": 56
+  },
+  "consegne": {
+   "parole": 119,
+   "gulpease": 67
+  },
+  "controls": 38,
+  "livelli": 4,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "info",
+   "sim",
+   "quiz",
+   "compare"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-MAT-1-06": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 540,
+   "gulpease": 59
+  },
+  "consegne": {
+   "parole": 181,
+   "gulpease": 68
+  },
+  "controls": 31,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "sim",
+   "compare"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "Etichetta: 100% poliammide",
+   "Etichetta: 100% lino",
+   "T-shirt 100% cotone",
+   "60 %"
+  ]
+ },
+ "MC-SIS-3-01": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 545,
+   "gulpease": 55
+  },
+  "consegne": {
+   "parole": 93,
+   "gulpease": 66
+  },
+  "controls": 41,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "sort",
+   "sim",
+   "quiz",
+   "compare",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "10,0 %",
+   "41,9 %",
+   "IVA (22%)"
+  ]
+ },
+ "MC-SIS-3-02": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 436,
+   "gulpease": 57
+  },
+  "consegne": {
+   "parole": 105,
+   "gulpease": 67
+  },
+  "controls": 29,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "canvas",
+   "sim",
+   "scenario"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": [
+   "25,4 %",
+   "Il paniere locale costa il 25,4% in più"
+  ]
+ },
+ "MC-SIS-3-03": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 498,
+   "gulpease": 61
+  },
+  "consegne": {
+   "parole": 118,
+   "gulpease": 69
+  },
+  "controls": 47,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "canvas",
+   "sort",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ },
+ "MC-SIS-3-04": {
+  "pilota": false,
+  "axe": {},
+  "external": [],
+  "errors": [],
+  "overflow360": 0,
+  "testo": {
+   "parole": 486,
+   "gulpease": 52
+  },
+  "consegne": {
+   "parole": 112,
+   "gulpease": 60
+  },
+  "controls": 38,
+  "livelli": 3,
+  "rifletti": true,
+  "ponte": true,
+  "verifiche": 3,
+  "domande_pool": {
+   "F": 6,
+   "I": 6,
+   "A": 6
+  },
+  "blocchi": [
+   "sort",
+   "quiz",
+   "check",
+   "canvas"
+  ],
+  "nomi_m": [],
+  "nomi_f": [],
+  "percentuali": []
+ }
+}

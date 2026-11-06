@@ -422,6 +422,7 @@ function ZonePanel({
   professioneBlocks = [],
   appendiceSection,
   onQuizComplete,
+  onLabResult,
 }: {
   tabId: string;
   section: { title: string; body: string } | undefined;
@@ -450,6 +451,8 @@ function ZonePanel({
   appendiceSection?: { title: string; body: string } | null;
   /** Callback al termine del quiz — forwarded a useProgress.recordQuizResult */
   onQuizComplete?: (score: number, total: number, level: "F" | "I" | "A") => void;
+  /** Verifica di fine livello del laboratorio interattivo — forwarded a useProgress.recordLabResult */
+  onLabResult?: (level: "F" | "I" | "A", score: number, total: number) => void;
 }) {
   // ── RIPASSA — non dipende da sezione MD, render sempre ───────────────────
   if (tabId === "RIPASSA") {
@@ -847,7 +850,7 @@ function ZonePanel({
           <GeoGebraOrthographicProjectionEmbed className="mb-8" />
         )}
         {getLaboratorio(mc.id) && (
-          <LabInterattivoEmbed mcId={mc.id} className="mb-8" />
+          <LabInterattivoEmbed mcId={mc.id} className="mb-8" onResult={onLabResult} />
         )}
         {levelTabs.length > 1 ? (
           <LevelTabs tabs={levelTabs} defaultLevel={mcLevel} />
@@ -1026,7 +1029,7 @@ export function MCPageClient({
   const mcLevel = mc.outputApp.livelloDigComp === "H" ? "A" : (mc.outputApp.livelloDigComp as DigCompLevel);
 
   // ── Tracking progressi studente ──────────────────────────────────────────
-  const { store, hydrated, markVisited, recordQuizResult } = useProgress();
+  const { store, hydrated, markVisited, recordQuizResult, recordLabResult } = useProgress();
 
   // ── Badge unlock detection ────────────────────────────────────────────────
   const { newlyUnlocked, clearUnlocked } = useBadgeUnlock(store, sdgIndex, hydrated);
@@ -1042,6 +1045,13 @@ export function MCPageClient({
       recordQuizResult(mc.id, score, total, level);
     },
     [mc.id, recordQuizResult],
+  );
+
+  const handleLabResult = useCallback(
+    (level: "F" | "I" | "A", score: number, total: number) => {
+      recordLabResult(mc.id, level, score, total);
+    },
+    [mc.id, recordLabResult],
   );
 
   // Scroll al top ad ogni apertura di pagina MC
@@ -1098,6 +1108,7 @@ export function MCPageClient({
             professioneBlocks={professioneBlocks}
             appendiceSection={appendiceSection}
             onQuizComplete={handleQuizComplete}
+            onLabResult={handleLabResult}
           />
         )}
       </MCNavigator>

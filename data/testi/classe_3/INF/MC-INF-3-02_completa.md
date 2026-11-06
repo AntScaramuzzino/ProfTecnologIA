@@ -170,7 +170,7 @@ Valuta i bias e i rischi dei sistemi di IA, progetta processi di audit e traspar
 
 ---
 
-### ● INTERMEDIO — Addestro e testo un classificatore semplice
+### ● BASE — Addestro e testo un classificatore semplice
 
 **Obiettivo:** vivere il processo di addestramento e valutazione di un modello.
 
@@ -206,7 +206,7 @@ Valuta i bias e i rischi dei sistemi di IA, progetta processi di audit e traspar
 
 ---
 
-### ●● AVANZATO — Analizzo il bias in un dataset reale
+### ●● INTERMEDIO — Analizzo il bias in un dataset reale
 
 **Obiettivo:** identificare e misurare bias in dati reali, e valutare le conseguenze.
 
@@ -228,7 +228,7 @@ Il tuo docente ti fornisce (o puoi scaricare dal QR code) un dataset anonimizzat
 
 ---
 
-### ●●● ECCELLENTE — Progetto un sistema di IA responsabile
+### ●●● AVANZATO — Progetto un sistema di IA responsabile
 
 **Scenario:** una catena di supermercati vuole usare un algoritmo di machine learning per ottimizzare il personale di cassa — prevedere i picchi di afflusso ora per ora e decidere quanti cassieri attivare. Il sistema aggiornato ogni settimana con i dati dell'ultima settimana.
 

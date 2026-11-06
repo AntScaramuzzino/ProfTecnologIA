@@ -181,7 +181,7 @@ Cifra questo messaggio con il cifrario di Cesare usando la chiave K=3 (ogni lett
 
 **Parte 2 — Decifratura:**
 Decifra questo messaggio sapendo che è stato cifrato con K=7:
-`NLUASVNPH`
+`ALJUVSVNPH`
 
 **Parte 3 — Attacco a forza bruta:**
 Se non conosci la chiave, quanti tentativi devi fare al massimo per decifrare un messaggio cifrato con il cifrario di Cesare sull'alfabeto inglese di 26 lettere? Perché questo numero è il punto debole fondamentale del cifrario?

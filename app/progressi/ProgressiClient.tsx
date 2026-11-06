@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useProgress, type MCProgress } from "@/lib/useProgress";
+import { useProgress, isMcPassed, isLabLevelPassed, type MCProgress, type LabProgress } from "@/lib/useProgress";
 import { SDG_BADGES, getBadgeState } from "@/lib/sdg-badges";
 
 // ── Metadati area (statici — niente import da mc-loader che usa fs) ───────────
@@ -43,6 +43,29 @@ interface ProgressiClientProps {
 
 function isPassed(r: MCProgress) {
   return r.quizTotal > 0 && r.quizScore / r.quizTotal >= 0.7;
+}
+
+/** Tre pallini: verifiche di fine livello del laboratorio superate (Base, Intermedio, Avanzato) */
+function LabDots({ lab }: { lab?: LabProgress }) {
+  if (!lab) return null;
+  const lv = [["F", "Base"], ["I", "Intermedio"], ["A", "Avanzato"]] as const;
+  const passed = lv.filter(([l]) => isLabLevelPassed(lab.levels[l]));
+  return (
+    <span
+      className="inline-flex items-center gap-1 rounded-full bg-teal-50 px-2 py-0.5 text-[10px] font-bold text-teal-800"
+      title={`Laboratorio: livelli superati ${passed.map(([, n]) => n).join(", ") || "nessuno"}`}
+    >
+      Lab
+      {lv.map(([l]) => (
+        <span
+          key={l}
+          aria-hidden
+          className={`h-1.5 w-1.5 rounded-full ${isLabLevelPassed(lab.levels[l]) ? "bg-teal-700" : "bg-teal-200"}`}
+        />
+      ))}
+      <span className="sr-only">{passed.length} livelli su 3 superati</span>
+    </span>
+  );
 }
 
 function formatDate(iso: string): string {
@@ -102,7 +125,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
     const mc = mcMap.get(mcId);
     if (!mc) continue;
     areaVisited[mc.area] = (areaVisited[mc.area] ?? 0) + 1;
-    if (isPassed(rec)) areaPassed[mc.area] = (areaPassed[mc.area] ?? 0) + 1;
+    if (isMcPassed(store, rec.mcId)) areaPassed[mc.area] = (areaPassed[mc.area] ?? 0) + 1;
   }
 
   // Lista completate ordinata per data (più recente prima)
@@ -113,10 +136,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
   const badgeProgress = SDG_BADGES.map((badge) => {
     const linkedMCs = mcIndex.filter((mc) => mc.sdg.includes(badge.sdg));
     const visited = linkedMCs.filter((mc) => store.completedMCs[mc.id]).length;
-    const passed = linkedMCs.filter((mc) => {
-      const rec = store.completedMCs[mc.id];
-      return rec ? isPassed(rec) : false;
-    }).length;
+    const passed = linkedMCs.filter((mc) => isMcPassed(store, mc.id)).length;
     const pct = Math.min(100, Math.round((passed / badge.requiredPassed) * 100));
     return {
       badge,
@@ -332,7 +352,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
       <div className="mb-8 grid grid-cols-3 gap-3">
         {[
           { value: completedCount, label: "Visitate",  sub: `su ${total}`,    color: "#1D4ED8" },
-          { value: passedCount,    label: "Superate",  sub: "quiz ≥70%",       color: "#15803D" },
+          { value: passedCount,    label: "Superate",  sub: "quiz o laboratorio ≥70%", color: "#15803D" },
           { value: `${passedPct}%`,label: "Completamento", sub: "quiz passati", color: "#7C3AED" },
         ].map(({ value, label, sub, color }) => (
           <div key={label} className="rounded-xl border border-slate-200 bg-white px-4 py-4 text-center shadow-sm">
@@ -540,6 +560,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                       {rec.attempts > 1 ? ` · ${rec.attempts} tentativi` : ""}
                     </p>
                   </div>
+                  <LabDots lab={store.labs?.[rec.mcId]} />
                   <ScoreBadge r={rec} />
                 </div>
               );
