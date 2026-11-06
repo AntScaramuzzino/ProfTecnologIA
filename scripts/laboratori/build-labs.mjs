@@ -33,7 +33,10 @@ function verifica(id) {
 // Font self-hosted (public/embeds/lab/_fonts, licenza SIL OFL): nessuna richiesta a server esterni
 const FONTS = "";
 
+const limcss = readFileSync(join(here, "lim.css"), "utf8");
+const limjs = readFileSync(join(here, "lim.js"), "utf8");
 function page(head, body) {
+  body += `<style>\n${limcss}</style>\n<script>\n${limjs}</script>\n`;
   return `<!doctype html>
 <html lang="it" data-theme="light">
 <head>
@@ -76,6 +79,27 @@ if (existsSync(cfgDir)) {
     ids.push(id);
   }
 }
+// Escape room (scripts/laboratori/escape/<mc>.js → public/embeds/escape/<MC-ID>/index.html)
+const escDir = join(here, "escape");
+const escOut = join(here, "..", "..", "public", "embeds", "escape");
+const escManifest = [];
+if (existsSync(escDir)) {
+  const escss = readFileSync(join(here, "escape.css"), "utf8");
+  const esjs = readFileSync(join(here, "escape.js"), "utf8");
+  for (const f of readdirSync(escDir).filter((n) => n.endsWith(".js")).sort()) {
+    const id = "MC-" + f.replace(".js", "").toUpperCase();
+    const cfg = readFileSync(join(escDir, f), "utf8");
+    const title = (cfg.match(/titolo:\s*"([^"]+)"/) || [, id])[1];
+    const head = `<title>${title}</title>\n<style>\n${css}\n${ecss}\n${vcss}\n${escss}\n</style>\n`;
+    const body = `<script>\n${esjs}\n</script>\n<script>\n${cfg}\n</script>\n`;
+    mkdirSync(join(escOut, id), { recursive: true });
+    writeFileSync(join(escOut, id, "index.html"), page(head, body).replace(/\.\.\/_fonts\//g, "../../lab/_fonts/"));
+    const amb = (cfg.match(/ambientazione:\s*"([^"]+)"/) || [, ""])[1];
+    escManifest.push({ mcId: id, titolo: title, descrizione: (amb.match(/^.*?[.!?](\s|$)/) || [amb])[0].trim() });
+  }
+}
+writeFileSync(join(here, "..", "..", "lib", "escape-cfg.json"), JSON.stringify(escManifest, null, 2) + "\n");
+console.log(escManifest.length, "escape room");
 // Elenco per l'app (lib/laboratori-cfg.json): solo i laboratori su motore comune; i pilota sono in lib/laboratori.ts
 const manifest = [];
 if (existsSync(cfgDir)) {

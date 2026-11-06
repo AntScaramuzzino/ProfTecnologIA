@@ -1,0 +1,25 @@
+/* Modalità LIM */
+.lim-btn{margin-left:auto;font:inherit;font-size:13px;font-weight:700;color:var(--lab);background:var(--surface);border:2px solid var(--lab);border-radius:999px;padding:4px 12px;cursor:pointer}
+.lim-btn:hover{background:var(--lab-bg)}
+.lim-btn:focus-visible,.lim-bar button:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.chips{align-items:center}
+.lim-bar{position:fixed;top:10px;right:12px;z-index:50;display:flex;align-items:center;gap:6px;background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:6px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.lim-bar[hidden]{display:none}
+.lim-bar button{font:inherit;font-weight:800;font-size:20px;min-width:52px;height:52px;border-radius:999px;border:2px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;padding:0 14px}
+.lim-bar .lim-out{background:var(--brand);border-color:var(--brand);color:var(--surface)}
+.lim-lvl{font-family:var(--mono);font-weight:700;font-size:15px;min-width:52px;text-align:center;color:var(--muted)}
+html.lim,html.lim body{background:var(--bg)}
+html.lim body{padding:12px 24px 40px;overflow-y:auto}
+html.lim .wrap{zoom:var(--limz,1.5);max-width:1250px;gap:14px}
+html.lim header.lab-head{padding-right:230px;gap:6px;padding-bottom:10px}
+html.lim .wrap:not(.es) header.lab-head .hook{display:none}
+html.lim .wrap p{max-width:none}
+/* bersagli più grandi per il tocco (prima dell'ingrandimento) */
+html.lim .btn,html.lim .tab,html.lim .item,html.lim .cat,html.lim .opts button,html.lim .vq-opts button,html.lim .es-opts button{min-height:44px}
+html.lim input[type=range]{height:32px}
+html.lim input[type=range]::-webkit-slider-thumb{width:28px;height:28px}
+html.lim input[type=range]::-moz-range-thumb{width:28px;height:28px}
+html.lim select,html.lim input:not([type=range]):not([type=checkbox]):not([type=radio]),html.lim textarea{min-height:44px;font-size:17px}
+html.lim input[type=checkbox],html.lim input[type=radio]{width:24px;height:24px}
+html.lim .lab-foot,html.lim .lim-btn{display:none}
+html.lim .muted{color:var(--fg);opacity:.85}

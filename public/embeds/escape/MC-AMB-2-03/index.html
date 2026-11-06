@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="it" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex">
+<title>L'archivio del piano</title>
+<style>
+/* Layout: colonna unica da libro digitale (max 920px), testata d'area, schede livello, banco di lavoro, feedback.
+   Token dal design system TecnologIA (design-tokens.json): brand navy, zona 4 Laboratorio, colori d'area. */
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(../../lab/_fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:700;font-display:swap;src:url(../../lab/_fonts/jetbrains-mono-latin-700-normal.woff2) format('woff2')}
+:root{
+  --bg:#F6F7FA; --surface:#FFFFFF; --surface-2:#EEF3FC; --fg:#1A1C24; --muted:#5A5F76; --line:#D8DAE8;
+  --brand:#1A2B4A; --lab:#00695C; --lab-bg:#E0F2F1; --energy:#C24010;
+  --ok:#166534; --ok-bg:#DCFCE7; --ko:#B42318; --ko-bg:#FEE4E2; --warn:#8A5A00; --warn-bg:#FFF4D6;
+  --area:#1A3A7A; --area-bg:#E8EFF9;
+  --sans:'Atkinson Hyperlegible','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','Fira Code',ui-monospace,monospace;
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1828; --surface:#16223A; --surface-2:#1C2B48; --fg:#ECEEF6; --muted:#B8BCCE; --line:#2C3C5C;
+  --brand:#D8E3F7; --lab:#5ED1C2; --lab-bg:#123A3A; --energy:#FFA07A;
+  --ok:#7EE2A0; --ok-bg:#12351F; --ko:#FF9C92; --ko-bg:#3D1715; --warn:#F5C969; --warn-bg:#3A2C0C;
+  --area-bg:#1C2B48; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.55;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1,h2,h3{text-wrap:balance;line-height:1.2;margin:0;color:var(--brand)}
+h1{font-size:30px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:21px;font-weight:700}
+h3{font-size:17px;font-weight:700}
+p{margin:0;max-width:68ch}
+.muted{color:var(--muted)}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+header.lab-head{display:flex;flex-direction:column;gap:10px;padding-bottom:16px;border-bottom:2px solid var(--area)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--area-bg);color:var(--area)}
+.chip.lab{background:var(--lab-bg);color:var(--lab)}
+.hook{font-size:17px;color:var(--fg)}
+/* level tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.tab{font:inherit;font-weight:700;font-size:15px;color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;cursor:pointer;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--lab);border-bottom-color:var(--lab)}
+.tab:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.dots{letter-spacing:-.1em;margin-right:6px}
+.panel{display:flex;flex-direction:column;gap:16px}
+.brief{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.brief .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--lab)}
+.bench{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.btn{font:inherit;font-weight:700;font-size:15px;border-radius:8px;padding:10px 16px;cursor:pointer;border:2px solid var(--lab);background:var(--lab);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--lab)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.fb{border-radius:8px;padding:12px 14px;font-size:15px}
+.fb.ok{background:var(--ok-bg);color:var(--ok)}
+.fb.ko{background:var(--ko-bg);color:var(--ko)}
+.fb.warn{background:var(--warn-bg);color:var(--warn)}
+.fb strong{font-weight:800}
+.meta{background:var(--surface-2);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px}
+.meta .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.bridge{border:2px dashed var(--area);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:6px}
+.bridge .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--area)}
+textarea{font:inherit;width:100%;min-height:90px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface);color:var(--fg)}
+select,input[type=number],input[type=text]{font:inherit;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface);color:var(--fg);max-width:100%}
+input[type=range]{width:100%;accent-color:var(--lab)}
+label{font-weight:600}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.grid2>*{min-width:0}
+.scroll-x{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.score{font-family:var(--mono);font-weight:700;font-size:20px;color:var(--lab)}
+footer.lab-foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media (max-width:480px){.tab{padding:10px 8px;font-size:14px}h1{font-size:26px}}
+
+/* Motore laboratori: stili dei blocchi riutilizzabili */
+.blk-h{font-size:17px;font-weight:700;color:var(--brand);margin:0}
+.blk-p{margin:0;color:var(--muted);font-size:15px}
+.tray{display:flex;flex-wrap:wrap;gap:8px}
+.item{font:inherit;font-size:15px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:8px 14px;cursor:pointer;text-align:left}
+.item[aria-pressed="true"]{background:var(--area);color:var(--surface);border-color:var(--area)}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.cat{font:inherit;text-align:left;border:2px solid var(--area);border-top-width:6px;border-radius:8px;background:var(--surface);color:var(--fg);padding:10px;cursor:pointer;display:flex;flex-direction:column;gap:4px;min-height:84px}
+.cat:disabled{cursor:default;opacity:.75}
+.cat .n{font-weight:800;color:var(--area)}
+.cat .h{font-size:13px;color:var(--muted)}
+.log{display:flex;flex-direction:column;gap:6px}
+.qq{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.qq:first-of-type{border-top:0;padding-top:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts button,.chipbtn{font:inherit;font-size:15px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:8px 12px;cursor:pointer;text-align:left}
+.opts button[aria-pressed="true"],.chipbtn[aria-pressed="true"]{border-color:var(--area);background:var(--area-bg);color:var(--area)}
+.opts button.ok{border-color:var(--ok);background:var(--ok-bg);color:var(--ok)}
+.opts button.ko{border-color:var(--ko);background:var(--ko-bg);color:var(--ko)}
+.ctrl{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ctrl .top{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.readout{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.readout>div{background:var(--surface-2);border-radius:8px;padding:10px;min-width:0}
+.readout .k{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.readout .v{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--fg);overflow-wrap:anywhere}
+.presets{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.presets button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer}
+.bars{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(90px,170px) 1fr minmax(70px,auto);gap:8px;align-items:center;font-size:14px}
+.bar .track{height:14px;background:var(--surface-2);border-radius:7px;overflow:hidden}
+.bar .fill{height:100%;border-radius:7px;background:var(--area);transition:width .2s}
+.bar .val{font-family:var(--mono);text-align:right}
+@media (max-width:480px){.bar{grid-template-columns:90px 1fr 70px}}
+.olist{display:flex;flex-direction:column;gap:6px}
+.orow{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface)}
+.orow .t{flex:1;min-width:0}
+.orow .num{font-family:var(--mono);font-weight:700;color:var(--muted);min-width:22px}
+.orow button{font:inherit;font-weight:700;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:6px;min-width:34px;height:32px;cursor:pointer}
+.orow button:disabled{opacity:.35;cursor:default}
+.orow.ok{border-color:var(--ok);background:var(--ok-bg)}
+.orow.ko{border-color:var(--ko);background:var(--ko-bg)}
+.orow .why{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.alts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.alt{border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface);font-size:14px;display:flex;flex-direction:column;gap:4px}
+.alt strong{font-size:15px}
+.meters{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.meter-b{background:var(--surface-2);border-radius:8px;padding:8px 10px;font-size:13px;font-weight:700}
+.meter-b .track{height:10px;background:var(--surface);border-radius:5px;overflow:hidden;margin-top:6px}
+.meter-b .fill{height:100%;background:var(--area);transition:width .3s}
+.story{font-size:16px;line-height:1.6;background:var(--surface-2);border-radius:8px;padding:14px}
+.choices{display:flex;flex-direction:column;gap:8px}
+.choices button{font:inherit;text-align:left;border:2px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:10px 12px;cursor:pointer;font-weight:600}
+.choices button:hover{border-color:var(--area)}
+.hist{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.docsel{display:flex;flex-wrap:wrap;gap:6px}
+.doc{border:1px solid var(--line);border-radius:8px;padding:14px;background:var(--surface);font-size:16px;line-height:1.7}
+.doc .dt{font-weight:800;font-size:17px;margin-bottom:4px}
+.doc .ds{font-size:13px;color:var(--muted);margin-bottom:8px;font-family:var(--mono)}
+.seg{cursor:pointer;border-radius:3px;padding:1px 0;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.seg:hover{background:var(--surface-2)}
+.seg[aria-pressed="true"]{background:#FFE08A;color:#3A2C00}
+.seg.hit{outline:2px solid var(--ok)}
+.seg.miss{outline:2px dashed var(--ko)}
+.seg.fp{outline:2px dotted var(--warn)}
+.legend{display:flex;flex-wrap:wrap;gap:6px}
+.legend span{font-size:13px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--surface-2)}
+.fields{display:flex;flex-direction:column;gap:12px}
+.fields .hint{font-size:13px;color:var(--muted);font-weight:400}
+.checks{display:flex;flex-direction:column;gap:6px}
+pre.out{white-space:pre-wrap;font-family:var(--sans);font-size:15px;background:var(--surface-2);border-radius:8px;padding:14px;margin:0;max-width:100%;overflow-wrap:anywhere}
+svg.chart{width:100%;height:auto;display:block;max-width:760px}
+.toggles{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.toggles label{display:flex;gap:6px;align-items:center;font-weight:600}
+.toggles input{accent-color:var(--lab);width:18px;height:18px}
+.cl{display:flex;flex-direction:column;gap:6px}
+.cl label{display:flex;gap:10px;align-items:flex-start;font-weight:500;border:1px solid var(--line);border-radius:8px;padding:8px 10px;background:var(--surface)}
+.cl input{accent-color:var(--lab);width:18px;height:18px;margin-top:3px;flex:none}
+.info{font-size:15px;display:flex;flex-direction:column;gap:8px}
+.info table{font-size:14px}
+.src{font-size:13px;color:var(--muted)}
+
+.verif{margin-top:18px;border:2px solid var(--lab);border-radius:var(--r);background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:14px}
+.verif-head .lbl{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--lab)}
+.verif-head p{margin:6px 0 0;color:var(--muted);font-size:15px}
+.verif-best{margin:0;font-weight:700;color:var(--ok);font-size:14px}
+.vq{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.vq:first-child{border-top:0;padding-top:0}
+.vq-q{margin:0;font-weight:700;display:flex;gap:10px;align-items:flex-start}
+.vq-n{flex:none;width:24px;height:24px;border-radius:50%;background:var(--lab-bg);color:var(--lab);font-size:13px;display:inline-flex;align-items:center;justify-content:center}
+.vq-opts{display:flex;flex-direction:column;gap:6px}
+.vq-opts button{font:inherit;font-size:15px;text-align:left;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:9px 12px;cursor:pointer}
+.vq-opts button:hover:not(:disabled){border-color:var(--lab)}
+.vq-opts button:disabled{cursor:default}
+.vq-opts button.ok{border-color:var(--ok);background:var(--ok-bg);color:var(--ok);font-weight:700}
+.vq-opts button.ko{border-color:var(--ko);background:var(--ko-bg);color:var(--ko)}
+.vq-opts button:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.verif-msg{font-weight:700;color:var(--muted);font-size:15px}
+
+.es-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:18px 0 14px}
+.es-locks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.es-locks li{min-width:46px;height:52px;border-radius:10px;border:2px solid var(--line);background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:18px;line-height:1.1;color:var(--muted)}
+.es-locks li b{font-family:var(--mono);font-size:15px;color:var(--fg)}
+.es-locks li.cur{border-color:var(--area);box-shadow:0 0 0 3px var(--area-bg)}
+.es-locks li.open{border-color:var(--ok);background:var(--ok-bg)}
+.es-locks li.open b{color:var(--ok)}
+.es-locks li.door{font-size:24px}
+.es-hud{display:flex;gap:14px;align-items:baseline}
+.es-card h2{scroll-margin-top:12px}
+.es-card h2:focus{outline:none}
+.es-n{display:block;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--area);margin-bottom:4px}
+.es-q{font-size:16px;line-height:1.55}
+.es-q p{margin:0 0 8px}
+.es-q table{border-collapse:collapse;font-size:15px;margin:6px 0}
+.es-q td,.es-q th{border:1px solid var(--line);padding:5px 9px;text-align:left}
+.es-q code,.es-q .mono{font-family:var(--mono)}
+.es-in{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.es-in label{font-weight:700}
+.es-in input{font:inherit;font-size:17px;font-family:var(--mono);padding:9px 12px;border:2px solid var(--line);border-radius:8px;min-width:0;width:220px;max-width:100%;background:var(--surface);color:var(--fg)}
+.es-in input:focus{outline:3px solid var(--lab);outline-offset:1px}
+.es-u{font-weight:700;color:var(--muted)}
+.es-opts{display:flex;flex-direction:column;gap:6px}
+.es-opts button{font:inherit;font-size:15px;text-align:left;border:2px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:9px 12px;cursor:pointer}
+.es-opts button[aria-checked=true]{border-color:var(--lab);background:var(--lab-bg);font-weight:700}
+.es-opts button:focus-visible,.es-mv:focus-visible,.es-pair select:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.es-ord ol{margin:0;padding-left:26px;display:flex;flex-direction:column;gap:6px}
+.es-ord li{border:1px solid var(--line);border-radius:8px;padding:6px 8px;display:flex;align-items:center;gap:6px;background:var(--surface)}
+.es-t{flex:1;min-width:0}
+.es-mv{font:inherit;font-weight:700;width:34px;height:34px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+.es-mv:disabled{opacity:.35;cursor:default}
+.es-pairs{display:flex;flex-direction:column;gap:8px}
+.es-pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:10px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:8px}
+.es-pair label{font-weight:700}
+.es-pair select{font:inherit;font-size:15px;padding:7px 8px;border:1px solid var(--line);border-radius:8px;width:100%;min-width:0;background:var(--surface);color:var(--fg)}
+@media (max-width:560px){.es-pair{grid-template-columns:1fr}}
+.es-hints{display:flex;flex-direction:column;gap:6px}
+.es-hints p{margin:0}
+.es-win{text-align:center;align-items:center;border:2px solid var(--ok)}
+.es-stars{font-size:40px;margin:0;color:#B7791F;letter-spacing:4px}
+.es-stars span{color:var(--line)}
+
+</style>
+</head>
+<body>
+<script>
+// Motore delle escape room ProfTecnologIA — una stanza per micro-competenza.
+// Cinque lucchetti in sequenza: ognuno è un problema da risolvere con i contenuti della MC.
+// Ogni lucchetto aperto rivela un simbolo; i simboli in ordine formano il codice della porta finale.
+// Tipi di lucchetto: numero · parola · scelta · ordine · coppie
+(function () {
+  const AREA = {
+    MAT: ["#6D4C41", "#EFEBE9", "Materiali e Rifiuti"], DIS: ["#1A3A7A", "#E8EFF9", "Disegno Tecnico"],
+    DIG: ["#006064", "#E0F7FA", "Digitale"], ALI: ["#4E7A26", "#F1F8E9", "Alimentazione"],
+    AMB: ["#BF360C", "#FBE9E7", "Abitazione, Città, Territorio"], ENE: ["#C24010", "#FFF3E0", "Energia e Macchine"],
+    COM: ["#6A1B9A", "#F3E5F5", "Comunicazioni e Trasporti"], SIS: ["#1B5E7A", "#E1F0F8", "Sistemi, Economia e Lavoro"],
+    INF: ["#37474F", "#ECEFF1", "Informatica"],
+  };
+  const $c = (t, c, h) => { const e = document.createElement(t); if (c) e.className = c; if (h != null) e.innerHTML = h; return e; };
+  const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const norm = (s) => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]/g, "");
+  const num = (s) => parseFloat(String(s).replace(/\s/g, "").replace(/\.(?=\d{3}(\D|$))/g, "").replace(",", "."));
+  const shuf = (a, seed) => { const r = [...a]; let s = seed || 11; for (let i = r.length - 1; i > 0; i--) { s = (s * 9301 + 49297) % 233280; const j = Math.floor((s / 233280) * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
+  let ID = "escape";
+  const store = { get(k) { try { return JSON.parse(localStorage.getItem(ID + ":" + k) || "null"); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(ID + ":" + k, JSON.stringify(v)); } catch (e) {} } };
+  const PEN_HINT = 10, PEN_ERR = 5;
+
+  /* Ogni builder ritorna { el, check() → true/false/null (null = risposta incompleta) } */
+  const TYPES = {
+    numero(l, id) {
+      const w = $c("div", "es-in"); const lab = $c("label", null, l.etichetta || "Risposta"); lab.htmlFor = id;
+      const i = $c("input"); i.id = id; i.inputMode = "decimal"; i.autocomplete = "off"; w.append(lab, i); if (l.unita) w.appendChild($c("span", "es-u", esc(l.unita)));
+      return { el: w, input: i, check: () => { const v = num(i.value); if (!isFinite(v)) return null; return Math.abs(v - l.risposta) <= (l.tolleranza || 0) + 1e-9; } };
+    },
+    parola(l, id) {
+      const w = $c("div", "es-in"); const lab = $c("label", null, l.etichetta || "Risposta"); lab.htmlFor = id;
+      const i = $c("input"); i.id = id; i.autocomplete = "off"; i.spellcheck = false; w.append(lab, i);
+      return { el: w, input: i, check: () => { const v = norm(i.value); if (!v) return null; return l.risposte.some((r) => norm(r) === v); } };
+    },
+    scelta(l, id) {
+      const g = $c("div", "es-opts"); g.setAttribute("role", "radiogroup"); g.setAttribute("aria-labelledby", id + "-q"); let sel = null;
+      shuf(l.opzioni.map((o, j) => [o, j]), l.opzioni.length * 7).forEach(([o, j]) => {
+        const b = $c("button", null, esc(o)); b.type = "button"; b.setAttribute("role", "radio"); b.setAttribute("aria-checked", "false");
+        b.onclick = () => { sel = j; [...g.children].forEach((x) => x.setAttribute("aria-checked", String(x === b))); }; g.appendChild(b);
+      });
+      return { el: g, check: () => (sel === null ? null : sel === l.corretta) };
+    },
+    ordine(l) {
+      const w = $c("div", "es-ord"); let cur = shuf(l.elementi.map((_, j) => j), l.elementi.length * 13);
+      if (cur.every((v, k) => v === k)) cur.reverse();
+      const ol = $c("ol"); w.appendChild(ol);
+      function draw(focus) {
+        ol.innerHTML = "";
+        cur.forEach((j, k) => {
+          const li = $c("li"); li.appendChild($c("span", "es-t", esc(l.elementi[j])));
+          const up = $c("button", "es-mv", "↑"); up.type = "button"; up.setAttribute("aria-label", `Sposta su: ${l.elementi[j]}`); up.disabled = k === 0;
+          const dn = $c("button", "es-mv", "↓"); dn.type = "button"; dn.setAttribute("aria-label", `Sposta giù: ${l.elementi[j]}`); dn.disabled = k === cur.length - 1;
+          up.onclick = () => { [cur[k - 1], cur[k]] = [cur[k], cur[k - 1]]; draw([j, "up"]); };
+          dn.onclick = () => { [cur[k + 1], cur[k]] = [cur[k], cur[k + 1]]; draw([j, "dn"]); };
+          li.append(up, dn); ol.appendChild(li);
+          if (focus && focus[0] === j) setTimeout(() => (focus[1] === "up" && !up.disabled ? up : dn.disabled ? up : dn).focus(), 0);
+        });
+      }
+      draw(); return { el: w, check: () => cur.every((v, k) => v === k) };
+    },
+    coppie(l, id) {
+      const w = $c("div", "es-pairs"); const right = shuf(l.coppie.map((p) => p[1]), l.coppie.length * 5); const sels = [];
+      l.coppie.forEach(([a], k) => {
+        const r = $c("div", "es-pair"); const lab = $c("label", null, esc(a)); const s = $c("select"); s.id = `${id}-${k}`; lab.htmlFor = s.id;
+        s.appendChild($c("option", null, "— scegli —")).value = ""; right.forEach((b) => { const o = $c("option", null, esc(b)); o.value = b; s.appendChild(o); });
+        r.append(lab, s); w.appendChild(r); sels.push(s);
+      });
+      return { el: w, check: () => (sels.some((s) => !s.value) ? null : sels.every((s, k) => s.value === l.coppie[k][1])) };
+    },
+  };
+
+  function run(cfg) {
+    window.ESCAPE.cfg = cfg; ID = cfg.id + ":escape"; const [ac, abg, al] = AREA[cfg.area] || AREA.DIG;
+    document.documentElement.style.setProperty("--area", ac); document.documentElement.style.setProperty("--area-bg", abg);
+    document.title = cfg.titolo;
+    const L = cfg.lucchetti; const codice = L.map((l) => String(l.simbolo)).join("");
+    const wrap = $c("div", "wrap es");
+    wrap.appendChild($c("header", "lab-head", `<div class="chips"><span class="chip">${cfg.id} · ${esc(al)} · ${cfg.classe}ª</span><span class="chip lab">Escape room</span></div><h1>${esc(cfg.titolo)}</h1><p class="hook">${cfg.ambientazione}</p>`));
+    const mission = $c("div", "brief", `<span class="lbl">Missione</span><p>${cfg.missione}</p><p class="muted">Apri i ${L.length} lucchetti in ordine: ognuno rivela un simbolo del codice della porta. Gli indizi aiutano ma costano ${PEN_HINT} punti; ogni risposta sbagliata ne costa ${PEN_ERR}.</p>`);
+    wrap.appendChild(mission);
+    const bar = $c("div", "es-bar"); const locks = $c("ol", "es-locks"); locks.setAttribute("aria-label", "Lucchetti");
+    const hud = $c("div", "es-hud"); const pts = $c("span", "score"); const tm = $c("span", "muted"); hud.append(pts, tm); bar.append(locks, hud); wrap.appendChild(bar);
+    const stage = $c("section", "es-stage"); stage.setAttribute("aria-live", "polite"); wrap.appendChild(stage);
+    const best = $c("p", "verif-best"); wrap.appendChild(best);
+    wrap.appendChild($c("footer", "lab-foot", `ProfTecnologIA · Escape room v1.0 · ${cfg.fonte || "Contenuti tratti dal testo della micro-competenza."}<br>Questo materiale è stato realizzato con il supporto di strumenti IA e successivamente controllato, adattato e validato secondo il Protocollo CARBLE-CDD.`));
+    document.body.prepend(wrap);
+
+    let st, t0, timer;
+    function showBest() { const b = store.get("best"); best.textContent = b ? `Il tuo record: ${b.punti} punti · ${"★".repeat(b.stelle)}${"☆".repeat(3 - b.stelle)} · ${b.tempo}` : ""; best.hidden = !b; }
+    const clock = () => { const s = Math.floor((Date.now() - t0) / 1000); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
+    function hudDraw() {
+      pts.textContent = `${st.punti} punti`;
+      locks.innerHTML = "";
+      L.forEach((l, k) => { const li = $c("li", k < st.i ? "open" : k === st.i ? "cur" : "", k < st.i ? `<span aria-hidden="true">🔓</span><b>${esc(l.simbolo)}</b>` : `<span aria-hidden="true">🔒</span><b>?</b>`); li.setAttribute("aria-label", `Lucchetto ${k + 1}: ${k < st.i ? "aperto, simbolo " + l.simbolo : "chiuso"}`); locks.appendChild(li); });
+      const fin = $c("li", st.i >= L.length ? "cur door" : "door", `<span aria-hidden="true">🚪</span>`); fin.setAttribute("aria-label", "Porta finale"); locks.appendChild(fin);
+    }
+    function start() {
+      st = { i: 0, punti: 100, hint: 0, err: 0 }; t0 = Date.now(); clearInterval(timer); timer = setInterval(() => (tm.textContent = "⏱ " + clock()), 1000); tm.textContent = "⏱ 0:00";
+      hudDraw(); showLock();
+    }
+    function showLock() {
+      hudDraw(); stage.innerHTML = "";
+      if (st.i >= L.length) return showDoor();
+      const l = L[st.i]; const id = `es-${st.i}`;
+      const card = $c("div", "bench es-card");
+      card.appendChild($c("h2", "blk-h", `<span class="es-n">Lucchetto ${st.i + 1} di ${L.length}</span> ${esc(l.titolo)}`));
+      const q = $c("div", "es-q", l.testo); q.id = id + "-q"; card.appendChild(q);
+      const t = TYPES[l.tipo](l, id); card.appendChild(t.el);
+      const row = $c("div", "row"); const go = $c("button", "btn", "Prova ad aprire"); go.type = "button";
+      const hb = $c("button", "btn ghost", "Indizio"); hb.type = "button"; row.append(go, hb); card.appendChild(row);
+      const hints = $c("div", "es-hints"); const f = $c("div"); f.hidden = true; card.append(hints, f);
+      let used = 0; const H = l.indizi || [];
+      hb.disabled = !H.length;
+      hb.onclick = () => { if (used >= H.length) return; hints.appendChild($c("p", "fb warn", `<strong>Indizio ${used + 1}.</strong> ${H[used]}`)); used++; st.punti = Math.max(0, st.punti - PEN_HINT); st.hint++; pts.textContent = `${st.punti} punti`; if (used >= H.length) hb.disabled = true; };
+      const tryOpen = () => {
+        const r = t.check();
+        if (r === null) { f.className = "fb warn"; f.innerHTML = "Completa la risposta prima di provare."; f.hidden = false; return; }
+        if (!r) { st.punti = Math.max(0, st.punti - PEN_ERR); st.err++; pts.textContent = `${st.punti} punti`; f.className = "fb ko"; f.innerHTML = `<strong>Il lucchetto non si apre.</strong> ${l.errore || "Ricontrolla e riprova, oppure chiedi un indizio."}`; f.hidden = false; return; }
+        go.disabled = true; hb.disabled = true; card.querySelectorAll("input,select,.es-opts button,.es-mv").forEach((x) => (x.disabled = true));
+        f.className = "fb ok"; f.innerHTML = `<strong>Clic! Lucchetto aperto: il simbolo è «${esc(l.simbolo)}».</strong> ${l.spiegazione || ""}`; f.hidden = false;
+        const nx = $c("button", "btn", st.i + 1 < L.length ? "Avanti, al prossimo lucchetto" : "Vai alla porta"); nx.type = "button"; nx.onclick = () => { st.i++; showLock(); stage.querySelector("h2")?.focus(); };
+        const r2 = $c("div", "row"); r2.appendChild(nx); card.appendChild(r2); nx.focus();
+      };
+      go.onclick = tryOpen; if (t.input) t.input.addEventListener("keydown", (e) => { if (e.key === "Enter") tryOpen(); });
+      stage.appendChild(card); const h = card.querySelector("h2"); h.tabIndex = -1;
+    }
+    function showDoor() {
+      const card = $c("div", "bench es-card es-door");
+      card.appendChild($c("h2", "blk-h", "La porta"));
+      card.appendChild($c("p", "es-q", cfg.porta || "Inserisci i simboli dei lucchetti, nell'ordine in cui li hai aperti."));
+      const w = $c("div", "es-in"); const lab = $c("label", null, "Codice"); lab.htmlFor = "es-code"; const i = $c("input"); i.id = "es-code"; i.autocomplete = "off"; i.maxLength = codice.length + 4; w.append(lab, i); card.appendChild(w);
+      const go = $c("button", "btn", "Apri la porta"); go.type = "button"; const row = $c("div", "row"); row.appendChild(go); card.appendChild(row); const f = $c("div"); f.hidden = true; card.appendChild(f);
+      const tryDoor = () => {
+        if (norm(i.value) !== norm(codice)) { f.className = "fb ko"; f.innerHTML = "Il codice non è giusto. Guarda i simboli in alto, da sinistra a destra."; f.hidden = false; return; }
+        clearInterval(timer); const tempo = clock(); const stelle = st.punti >= 85 ? 3 : st.punti >= 60 ? 2 : 1;
+        const prev = store.get("best"); if (!prev || st.punti > prev.punti) store.set("best", { punti: st.punti, stelle, tempo, at: new Date().toISOString() });
+        try { if (window.parent !== window) window.parent.postMessage({ type: "proftec-escape-result", mcId: cfg.id, punti: st.punti, stelle }, location.origin); } catch (e) {}
+        stage.innerHTML = "";
+        const win = $c("div", "bench es-card es-win", `<p class="es-stars" aria-label="${stelle} stelle su 3">${"★".repeat(stelle)}<span>${"☆".repeat(3 - stelle)}</span></p><h2 class="blk-h">Sei fuori!</h2><p>${cfg.vittoria || ""}</p><p class="muted">${st.punti} punti · tempo ${tempo} · indizi usati ${st.hint} · tentativi sbagliati ${st.err}</p>`);
+        const again = $c("button", "btn ghost", "Rigioca"); again.type = "button"; again.onclick = start; const r = $c("div", "row"); r.appendChild(again); win.appendChild(r);
+        stage.appendChild(win); hudDraw(); locks.lastChild.className = "door open"; showBest();
+      };
+      go.onclick = tryDoor; i.addEventListener("keydown", (e) => { if (e.key === "Enter") tryDoor(); });
+      stage.appendChild(card);
+    }
+    showBest(); start();
+  }
+  window.ESCAPE = { run };
+})();
+
+</script>
+<script>
+ESCAPE.run({
+  id: "MC-AMB-2-03", area: "AMB", classe: 2, titolo: "L'archivio del piano",
+  ambientazione: "Sei rimasto chiuso nell'archivio dell'ufficio urbanistica del Comune, fra mappe arrotolate e plastici di quartieri. Stavi cercando la vecchia pianta della tua scuola e il custode ha chiuso la porta blindata senza vederti. La porta si apre con un codice che l'architetta responsabile ha nascosto nei documenti del piano.",
+  missione: "Risolvi i cinque enigmi dei documenti urbanistici: ognuno ti dà un simbolo del codice. Con i cinque simboli esci dall'archivio.",
+  lucchetti: [
+    { titolo: "Le quattro mappe antiche", tipo: "coppie",
+      testo: "<p>Su un tavolo ci sono quattro mappe di epoche diverse, senza didascalia. Abbina ogni tipo di città alla caratteristica che si vede sulla mappa.</p>",
+      coppie: [
+        ["Città romana", "Cardo e decumano che si incrociano nel foro, isolati rettangolari"],
+        ["Città medievale", "Strade curve e irregolari intorno al castello, alla cattedrale o al mercato"],
+        ["Parigi trasformata da Haussmann", "Grandi viali rettilinei e alberati, con fognature sotto"],
+        ["Periferia a sprawl", "Villette, capannoni e centri commerciali sparsi, raggiungibili solo in auto"]],
+      indizi: ["La griglia ortogonale è un'idea dei Romani.", "I boulevards furono aperti demolendo i vicoli medievali."],
+      spiegazione: "Ogni epoca ha lasciato la sua forma: la griglia romana, la crescita spontanea medievale, i viali dell'Ottocento, la città sparsa e dipendente dall'auto.", simbolo: "C" },
+    { titolo: "Il fascicolo del piano", tipo: "ordine",
+      testo: "<p>Il fascicolo del Piano Regolatore si è sparpagliato a terra. Rimetti in ordine le tappe con cui il piano diventa definitivo.</p>",
+      elementi: ["Un gruppo di urbanisti e architetti incaricati dal Comune scrive il piano", "Il Consiglio Comunale adotta il piano", "Il piano viene esposto al pubblico e chiunque può presentare osservazioni scritte", "La Regione approva il piano"],
+      indizi: ["Il piano è prima un lavoro tecnico, poi un atto politico.", "L'approvazione finale non spetta al Comune."],
+      spiegazione: "Il piano viene redatto dai tecnici, adottato dagli eletti in Consiglio Comunale, aperto alle osservazioni dei cittadini e infine approvato dalla Regione.", simbolo: "R" },
+    { titolo: "Il lotto vuoto", tipo: "numero",
+      testo: "<p>Una cartellina riguarda un lotto libero di <strong>2.400 m²</strong> vicino alla tua scuola. Il piano gli assegna un indice di fabbricabilità fondiaria di <strong>1,5 m³/m²</strong>. Qual è il volume massimo che si può costruire?</p>",
+      etichetta: "Volume =", unita: "m³", risposta: 3600, tolleranza: 1,
+      indizi: ["L'indice dice quanti m³ si possono costruire per ogni m² di terreno.", "2.400 × 1,5 = ?"],
+      spiegazione: "Volume massimo = 2.400 m² × 1,5 m³/m² = 3.600 m³. Altezze e distanze dai confini poi decidono la forma dell'edificio.", simbolo: "3" },
+    { titolo: "La gita della classe", tipo: "numero",
+      testo: "<p>Un appunto confronta due modi di portare 60 studenti alla stessa gara sportiva. Secondo la tabella dell'ufficio mobilità, ogni passeggero occupa in movimento circa <strong>23 m²</strong> se viaggia in automobile e <strong>0,4 m²</strong> se viaggia in autobus. Quanti m² di strada in più occupano i 60 studenti se vanno tutti in auto invece che in autobus?</p>",
+      etichetta: "Differenza =", unita: "m²", risposta: 1356, tolleranza: 1,
+      indizi: ["Calcola lo spazio occupato nei due casi: 60 × spazio per passeggero.", "60 × 23 = 1.380 m²; 60 × 0,4 = 24 m². Ora sottrai."],
+      spiegazione: "In auto: 60 × 23 = 1.380 m²; in autobus: 60 × 0,4 = 24 m². La differenza è 1.356 m², più o meno la superficie di cinque campi da tennis.", simbolo: "M" },
+    { titolo: "La proposta del consigliere", tipo: "scelta",
+      testo: "<p>Nell'ultimo documento un consigliere propone: «Costruiamo una nuova tangenziale a quattro corsie e un grande centro commerciale in aperta campagna. Così il traffico in città sparirà.» Che cosa prevede chi conosce i casi di Bologna e Los Angeles?</p>",
+      opzioni: [
+        "Il traffico sparirà, perché le auto avranno più spazio per circolare",
+        "Più strade attirano più auto: crescono lo sprawl, il consumo di suolo e la dipendenza dall'automobile",
+        "Non cambierà niente, perché le strade non influenzano il modo in cui le persone si spostano",
+        "Diminuirà il consumo di suolo, perché il centro commerciale libera spazio in città"],
+      corretta: 1,
+      indizi: ["A Los Angeles le autostrade che dovevano «liberare» il traffico hanno prodotto ancora più traffico.", "La forma della città determina il comportamento delle persone."],
+      spiegazione: "È la domanda indotta: nuove strade e servizi raggiungibili solo in auto spingono a usare di più l'auto e a costruire ancora più lontano. Si consuma suolo agricolo e il traffico torna.", simbolo: "S" },
+  ],
+  porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
+  vittoria: "La porta blindata si apre. Hai letto la forma delle città nella storia, ricostruito chi decide il piano regolatore, applicato un indice di fabbricabilità, misurato lo spazio della mobilità e valutato una scelta urbanistica.",
+  fonte: "Lotto, gita e proposta inventati a scopo didattico; indice, spazio per passeggero e iter del piano dal testo della MC.",
+});
+
+</script>
+<style>
+/* Modalità LIM */
+.lim-btn{margin-left:auto;font:inherit;font-size:13px;font-weight:700;color:var(--lab);background:var(--surface);border:2px solid var(--lab);border-radius:999px;padding:4px 12px;cursor:pointer}
+.lim-btn:hover{background:var(--lab-bg)}
+.lim-btn:focus-visible,.lim-bar button:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.chips{align-items:center}
+.lim-bar{position:fixed;top:10px;right:12px;z-index:50;display:flex;align-items:center;gap:6px;background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:6px;box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.lim-bar[hidden]{display:none}
+.lim-bar button{font:inherit;font-weight:800;font-size:20px;min-width:52px;height:52px;border-radius:999px;border:2px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;padding:0 14px}
+.lim-bar .lim-out{background:var(--brand);border-color:var(--brand);color:var(--surface)}
+.lim-lvl{font-family:var(--mono);font-weight:700;font-size:15px;min-width:52px;text-align:center;color:var(--muted)}
+html.lim,html.lim body{background:var(--bg)}
+html.lim body{padding:12px 24px 40px;overflow-y:auto}
+html.lim .wrap{zoom:var(--limz,1.5);max-width:1250px;gap:14px}
+html.lim header.lab-head{padding-right:230px;gap:6px;padding-bottom:10px}
+html.lim .wrap:not(.es) header.lab-head .hook{display:none}
+html.lim .wrap p{max-width:none}
+/* bersagli più grandi per il tocco (prima dell'ingrandimento) */
+html.lim .btn,html.lim .tab,html.lim .item,html.lim .cat,html.lim .opts button,html.lim .vq-opts button,html.lim .es-opts button{min-height:44px}
+html.lim input[type=range]{height:32px}
+html.lim input[type=range]::-webkit-slider-thumb{width:28px;height:28px}
+html.lim input[type=range]::-moz-range-thumb{width:28px;height:28px}
+html.lim select,html.lim input:not([type=range]):not([type=checkbox]):not([type=radio]),html.lim textarea{min-height:44px;font-size:17px}
+html.lim input[type=checkbox],html.lim input[type=radio]{width:24px;height:24px}
+html.lim .lab-foot,html.lim .lim-btn{display:none}
+html.lim .muted{color:var(--fg);opacity:.85}
+</style>
+<script>
+// Modalità LIM: schermo intero, contenuto ingrandito per essere letto da lontano e usato col tocco.
+// Si attiva con il pulsante «Schermo intero» (Fullscreen API, anche dentro l'iframe della pagina MC)
+// o aprendo la pagina con ?lim=1. Nella barra: A− / A+ per regolare l'ingrandimento, Esci.
+(function () {
+  const root = document.documentElement;
+  const DESIGN = 1250; // larghezza di progetto del contenuto, in px CSS
+  const KEY = "proftec:lim-zoom";
+  const param = new URLSearchParams(location.search).get("lim") === "1";
+  let delta = 0; try { delta = +localStorage.getItem(KEY) || 0; } catch (e) {}
+  const canFs = !!(root.requestFullscreen || root.webkitRequestFullscreen);
+  const fsEl = () => document.fullscreenElement || document.webkitFullscreenElement;
+  // vero anche quando è la pagina della MC a mettere a schermo intero l'iframe che ci contiene
+  const fsAny = () => { if (fsEl()) return true; try { return !!window.frameElement && window.parent.document.fullscreenElement === window.frameElement; } catch (e) { return false; } };
+  const mk = (t, c, h) => { const e = document.createElement(t); if (c) e.className = c; if (h != null) e.innerHTML = h; return e; };
+
+  function zoom() {
+    const z = Math.max(1, Math.min(2.4, (window.innerWidth - 48) / DESIGN + delta));
+    root.style.setProperty("--limz", z.toFixed(3));
+    if (lvl) lvl.textContent = Math.round(z * 100) + "%";
+  }
+  function set(on) {
+    root.classList.toggle("lim", on);
+    bar.hidden = !on; btn.hidden = on;
+    btn.setAttribute("aria-pressed", String(on));
+    if (on) zoom();
+    window.dispatchEvent(new Event("resize")); // i grafici e il 3D si ridisegnano
+  }
+  async function enter() {
+    if (canFs) { try { await (root.requestFullscreen ? root.requestFullscreen({ navigationUI: "hide" }) : root.webkitRequestFullscreen()); return; } catch (e) {} }
+    set(true); // senza Fullscreen API (es. iPhone): solo ingrandimento
+  }
+  function exit() {
+    if (fsEl()) return (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+    // dentro la pagina della MC lo schermo intero può essere dell'iframe (aperto dalla pagina)
+    try { const pd = window.parent !== window && window.parent.document; if (pd && pd.fullscreenElement) return pd.exitFullscreen(); } catch (e) {}
+    if (!param) set(false);
+  }
+
+  const btn = mk("button", "lim-btn", '<span aria-hidden="true">⛶</span> Schermo intero (LIM)'); btn.type = "button";
+  btn.title = "Apri a schermo intero, con testo e pulsanti grandi per la lavagna interattiva";
+  btn.onclick = enter;
+  const bar = mk("div", "lim-bar"); bar.setAttribute("role", "toolbar"); bar.setAttribute("aria-label", "Modalità LIM"); bar.hidden = true;
+  const minus = mk("button", null, "A−"); minus.type = "button"; minus.setAttribute("aria-label", "Riduci");
+  const lvl = mk("span", "lim-lvl"); lvl.setAttribute("aria-live", "polite");
+  const plus = mk("button", null, "A+"); plus.type = "button"; plus.setAttribute("aria-label", "Ingrandisci");
+  const out = mk("button", "lim-out", "Esci ✕"); out.type = "button";
+  const step = (d) => { delta = Math.round((delta + d) * 10) / 10; try { localStorage.setItem(KEY, String(delta)); } catch (e) {} zoom(); };
+  minus.onclick = () => step(-0.1); plus.onclick = () => step(0.1); out.onclick = exit;
+  bar.append(minus, lvl, plus, out);
+
+  function mount() {
+    const head = document.querySelector(".lab-head .chips") || document.querySelector(".lab-head");
+    if (head) head.appendChild(btn); else document.body.prepend(btn);
+    document.body.appendChild(bar);
+    ["fullscreenchange", "webkitfullscreenchange"].forEach((ev) => document.addEventListener(ev, () => set(fsAny() || param)));
+    window.addEventListener("resize", () => { if (root.classList.contains("lim")) zoom(); });
+    if (param) set(true);
+    window.PROFTEC_LIM = { set, enter, exit };
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount); else mount();
+})();
+</script>
+</body>
+</html>

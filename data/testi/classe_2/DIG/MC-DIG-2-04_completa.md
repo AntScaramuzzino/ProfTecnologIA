@@ -188,7 +188,7 @@ Il **GDPR** (General Data Protection Regulation, regolamento europeo sulla priva
 
 Il **cyberbullismo** è disciplinato in Italia dalla Legge 71/2017 ("Disposizioni a tutela dei minori per la prevenzione ed il contrasto del fenomeno del cyberbullismo"). Non è solo un problema etico: è una questione legale. Pubblicare foto o video di altri senza consenso, diffondere notizie false su qualcuno, escludere sistematicamente una persona da gruppi online, o inviare messaggi offensivi ripetuti sono comportamenti che possono avere conseguenze legali anche per i minorenni.
 
-Se sei vittima di cyberbullismo o testimone, puoi segnalare alla Polizia Postale, al dirigente scolastico (che ha obblighi specifici dalla legge 71/2017), o usare il numero di aiuto 19696 (linea antiviolenza e stalking) o il servizio Telefono Azzurro (19696).
+Se sei vittima di cyberbullismo o testimone, puoi segnalare alla Polizia Postale, al dirigente scolastico (che ha obblighi specifici dalla legge 71/2017), o chiamare Telefono Azzurro al 19696, la linea di ascolto per bambini e ragazzi. Il 1522 è invece il numero antiviolenza e stalking.
 
 ---
 
