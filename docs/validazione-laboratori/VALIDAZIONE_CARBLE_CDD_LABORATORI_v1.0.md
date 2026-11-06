@@ -127,6 +127,20 @@ Parere istruttorio dell'Agente CARBLE-CDD, confermato dall'autore. Le schede JSO
 - **MC-DIG-2-04** — tolto il dato non documentato sul 90%, marchio inventato nel messaggio simulato, nota sugli attacchi a dizionario.
 - **MC-DIG-1-02** — compito di realtà e microlearning allineati al metodo SIFT.
 
+## Escape room (58, una per MC)
+
+Seconda attività interattiva per ogni MC (`scripts/laboratori/escape/`): cinque lucchetti in sequenza (numero, parola, scelta, ordine, coppie) da aprire con i contenuti della MC; i simboli formano il codice della porta.
+
+- **Costruzione:** 7 agenti in parallelo, uno per gruppo di aree, sulla specifica `scripts/laboratori/ESCAPE_SPEC.md` (fonte unica: il testo della MC; dati inventati dichiarati; marchi inventati; nomi bilanciati).
+- **Revisione indipendente:** 3 agenti revisori diversi dagli autori hanno ricalcolato ogni risposta (python) e controllato univocità, coerenza con il testo, linguaggio, stereotipi ed etica: 25 correzioni puntuali (risposte non univoche, varianti mancanti, tolleranze, marchi reali, un'opzione che suggeriva un'azione pericolosa, un indizio fuorviante).
+- **Controllo automatico** (`scripts/laboratori/check-escape.cjs`): regole di struttura, partita completa giocata nel browser con risposte sbagliate e indizi, axe-core WCAG 2.1 A/AA, larghezza 360 px: 58/58 superati.
+- **Esito:** 58/58 conformi su D, C, A, R, B, L, E. Formula di trasparenza IA nel piè di pagina.
+- Le segnalazioni sui testi delle MC emerse durante il lavoro sono in `SEGNALAZIONI_TESTI_MC_v1.0.md`.
+
+## Modalità LIM
+
+Laboratori ed escape room hanno il pulsante «Schermo intero (LIM)» (anche nella pagina della MC, che porta l'iframe a schermo intero) e si aprono già in modalità LIM con `?lim=1`. La modalità ingrandisce il contenuto in proporzione alla larghezza dello schermo (circa 150% a 1920 px, regolabile con A−/A+), porta i bersagli di tocco ad almeno 44 px prima dell'ingrandimento e toglie gli elementi non essenziali. Verificata a 1920×1080, anche con il solido 3D di MC-DIS-2-01.
+
 ## Manutenzione
 
 - Ogni modifica a un laboratorio richiede di rifare l'audit automatico e di rigenerare questo report (`python3 scripts/laboratori/carble-report.py docs/validazione-laboratori/audit-automatico.json`).

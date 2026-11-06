@@ -47,7 +47,7 @@ import GeoGebraConstructionEmbed from "@/components/mc/GeoGebraConstructionEmbed
 import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
 import GeoGebraOrthographicProjectionEmbed from "@/components/mc/GeoGebraOrthographicProjectionEmbed";
 import LabInterattivoEmbed from "@/components/mc/LabInterattivoEmbed";
-import { getLaboratorio } from "@/lib/laboratori";
+import { getEscapeRoom, getLaboratorio } from "@/lib/laboratori";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
@@ -852,6 +852,7 @@ function ZonePanel({
         {getLaboratorio(mc.id) && (
           <LabInterattivoEmbed mcId={mc.id} className="mb-8" onResult={onLabResult} />
         )}
+        {getEscapeRoom(mc.id) && <LabInterattivoEmbed mcId={mc.id} kind="escape" className="mb-8" />}
         {levelTabs.length > 1 ? (
           <LevelTabs tabs={levelTabs} defaultLevel={mcLevel} />
         ) : (

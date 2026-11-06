@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
-import { LABORATORI, AREA_COLOR, labSrc } from "@/lib/laboratori";
+import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom } from "@/lib/laboratori";
 
 export const metadata: Metadata = {
   title: "Laboratori interattivi — Book ProfTecnologIA",
@@ -39,7 +39,9 @@ export default function LaboratoriPage() {
           <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Laboratori interattivi</h1>
           <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             Ogni laboratorio porta una micro-competenza dal libro allo schermo, su tre livelli: base, intermedio e
-            avanzato. Lo trovi anche nella scheda SPERIMENTA della sua MC, prima del compito di realtà.
+            avanzato. Accanto c'è un'escape room: cinque lucchetti da aprire con i contenuti della MC. Li trovi
+            anche nella scheda SPERIMENTA della MC. Con «LIM» si aprono a schermo intero, con testo e pulsanti grandi
+            per la lavagna interattiva.
           </p>
         </div>
 
@@ -66,10 +68,18 @@ export default function LaboratoriPage() {
                       <Link href={`/mc/${l.mcId}`} className="text-teal-800 underline underline-offset-4">
                         Apri nella MC →
                       </Link>
-                      <a href={labSrc(l.mcId)} target="_blank" rel="noopener noreferrer" className="text-slate-600 underline underline-offset-4">
-                        A tutto schermo ↗
+                      <a href={`${labSrc(l.mcId)}?lim=1`} target="_blank" rel="noopener noreferrer" className="text-slate-600 underline underline-offset-4">
+                        Laboratorio alla LIM ↗
                       </a>
                     </div>
+                    {getEscapeRoom(l.mcId) && (
+                      <p className="border-t border-slate-100 pt-3 text-sm text-slate-700">
+                        <span className="font-bold text-orange-800">Escape room:</span> {getEscapeRoom(l.mcId)!.titolo} ·{" "}
+                        <a href={`${escapeSrc(l.mcId)}?lim=1`} target="_blank" rel="noopener noreferrer" className="font-bold text-slate-600 underline underline-offset-4">
+                          alla LIM ↗
+                        </a>
+                      </p>
+                    )}
                   </li>
                 );
               })}

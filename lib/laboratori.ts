@@ -3,6 +3,7 @@
 // - 5 laboratori pilota scritti a mano (elencati qui sotto)
 // - gli altri su motore comune, elencati in laboratori-cfg.json (generato da npm run labs)
 import cfgLabs from "./laboratori-cfg.json";
+import escapeRooms from "./escape-cfg.json";
 
 export interface LaboratorioInterattivo {
   mcId: string;
@@ -42,4 +43,22 @@ export function getLaboratorio(mcId: string): LaboratorioInterattivo | undefined
 export function labSrc(mcId: string): string {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return `${basePath}/embeds/lab/${mcId}/index.html`;
+}
+
+// Escape room: una per MC (scripts/laboratori/escape/<mc>.js → public/embeds/escape/<MC-ID>/index.html)
+export interface EscapeRoom {
+  mcId: string;
+  titolo: string;
+  descrizione: string;
+}
+
+export const ESCAPE_ROOMS: EscapeRoom[] = escapeRooms as EscapeRoom[];
+
+export function getEscapeRoom(mcId: string): EscapeRoom | undefined {
+  return ESCAPE_ROOMS.find((e) => e.mcId === mcId);
+}
+
+export function escapeSrc(mcId: string): string {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  return `${basePath}/embeds/escape/${mcId}/index.html`;
 }
