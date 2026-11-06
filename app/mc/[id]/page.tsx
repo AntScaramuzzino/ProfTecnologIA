@@ -16,6 +16,7 @@ import {
   getVideoPlaylist,
   getMCMicrolearningInteractives,
   getMCDeckSlides,
+  getMCEsploraImages,
 } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 import { getSdgBadge, normalizeSdgList } from "@/lib/sdg-badges";
@@ -60,6 +61,7 @@ export default async function MCPage({ params }: Props) {
   const videoPlaylist        = getVideoPlaylist(mc.id);
   const microlearningData    = getMCMicrolearningInteractives(mc.id);
   const deckSlides           = getMCDeckSlides(mc.id);
+  const esploraImages        = getMCEsploraImages(mc.id);
   const prereqs              = getPrerequisiteChain(mc.id);
   // SDG index per badge unlock detection (client)
   const sdgIndex = getAllMCs().map((m) => ({ id: m.id, sdg: normalizeSdgList(m.sdg) }));
@@ -147,6 +149,7 @@ export default async function MCPage({ params }: Props) {
             visuals={visuals}
             microlearningData={microlearningData}
             deckSlides={deckSlides}
+            esploraImages={esploraImages}
             sdgIndex={sdgIndex}
           />
         </div>

@@ -174,6 +174,41 @@ export function getMCDeckSlides(mcId: string): VisualAsset[] {
     }));
 }
 
+// ── IMMAGINI PER PARAGRAFO DI ESPLORA (Canva AI, stile presentazioni) ─────────
+
+const PUBLIC_ESPLORA_ROOT = path.join(process.cwd(), "public", "assets", "esplora");
+
+export interface EsploraImage {
+  /** Titolo del paragrafo ### a cui l'immagine appartiene */
+  paragrafo: string;
+  src: string;
+  alt: string;
+}
+
+/**
+ * Immagini illustrative per i paragrafi della sezione ESPLORA.
+ * Convenzione: public/assets/esplora/{mcId}/manifest.json
+ *   { immagini: [{ paragrafo, file, alt }] }
+ */
+export function getMCEsploraImages(mcId: string): EsploraImage[] {
+  const file = path.join(PUBLIC_ESPLORA_ROOT, mcId, "manifest.json");
+  if (!fs.existsSync(file)) return [];
+  try {
+    const data = JSON.parse(fs.readFileSync(file, "utf-8")) as {
+      immagini?: { paragrafo: string; file: string; alt: string }[];
+    };
+    return (data.immagini ?? [])
+      .filter((img) => fs.existsSync(path.join(PUBLIC_ESPLORA_ROOT, mcId, img.file)))
+      .map((img) => ({
+        paragrafo: img.paragrafo,
+        alt: img.alt,
+        src: `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.file}`,
+      }));
+  } catch {
+    return [];
+  }
+}
+
 const PUBLIC_AUDIO_ROOT = path.join(process.cwd(), "public", "assets", "audio");
 
 export function getMCHookAudio(mcId: string): string | null {

@@ -48,7 +48,7 @@ import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmb
 import GeoGebraOrthographicProjectionEmbed from "@/components/mc/GeoGebraOrthographicProjectionEmbed";
 import LabInterattivoEmbed from "@/components/mc/LabInterattivoEmbed";
 import { getLaboratorio } from "@/lib/laboratori";
-import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives } from "@/lib/content-loader";
+import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives, EsploraImage } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
 
 // ── Tipi ────────────────────────────────────────────────────────────────────
@@ -66,6 +66,8 @@ interface MCPageClientProps {
   microlearningData?: MicrolearningInteractives | null;
   /** Slide della presentazione (deck NotebookLM → immagini) per il carosello in apertura di ESPLORA */
   deckSlides?: VisualAsset[];
+  /** Immagini illustrative per singolo paragrafo di ESPLORA (Canva AI) */
+  esploraImages?: EsploraImage[];
   /** Indice SDG di tutte le MC — usato per rilevare badge appena sbloccati */
   sdgIndex?: SdgEntry[];
 }
@@ -176,6 +178,23 @@ function splitSperimentaByLevel(body: string): { level: DigCompLevel; title: str
       matches[i + 1]?.index ?? body.length,
     ).trim(),
   }));
+}
+
+// ── Immagine illustrativa per paragrafo di ESPLORA (match sul titolo ###) ─────
+
+function normalizeParagraphTitle(t: string): string {
+  return t
+    .toLowerCase()
+    .replace(/[*_`]/g, "")
+    .replace(/[’‘]/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function findEsploraImage(images: EsploraImage[], title: string): EsploraImage | undefined {
+  if (images.length === 0) return undefined;
+  const key = normalizeParagraphTitle(title);
+  return images.find((img) => normalizeParagraphTitle(img.paragrafo) === key);
 }
 
 // ── Splitta il body di ESPLORA in sottosezioni ###  ──────────────────────────
@@ -418,6 +437,7 @@ function ZonePanel({
   flashcards,
   microlearningData,
   deckSlides = [],
+  esploraImages = [],
   professioneText,
   professioneBlocks = [],
   appendiceSection,
@@ -443,6 +463,8 @@ function ZonePanel({
   microlearningData?: MicrolearningInteractives | null;
   /** Slide della presentazione (deck NotebookLM → immagini) mostrate in apertura di ESPLORA */
   deckSlides?: VisualAsset[];
+  /** Immagini illustrative per singolo paragrafo di ESPLORA (Canva AI) */
+  esploraImages?: EsploraImage[];
   /** Testo narrativo "Professione del Futuro" estratto dal body OSSERVA (legacy, sezione intera) */
   professioneText?: string;
   /** Blocchi narrativi per singola professione (titolo → testo) estratti da OSSERVA */
@@ -725,6 +747,13 @@ function ZonePanel({
   // ── ESPLORA — AccordionSection ────────────────────────────────────────────
   if (tabId === "ESPLORA") {
     const accordionItems = splitEsploraIntoAccordion(body);
+    // Il primo paragrafo ### confluisce in "Introduzione": gli assegniamo la prima
+    // immagine del manifest se nessun'altra sezione l'ha già agganciata per titolo.
+    const introFallbackImage =
+      esploraImages[0] &&
+      !accordionItems.some((a) => findEsploraImage(esploraImages, a.title) === esploraImages[0])
+        ? esploraImages[0]
+        : undefined;
     const items: AccordionItem[] = accordionItems.map((ai) => {
       const hasPerpendicularLab =
         mc.id === "MC-DIS-1-01" &&
@@ -735,6 +764,9 @@ function ZonePanel({
         /Costruzione\s+2/i.test(ai.title) &&
         /Bisettrice\s+di\s+un\s+angolo/i.test(ai.title);
       const geogebraConstruction = getGeoGebraConstruction(ai.title);
+      const paragraphImage =
+        findEsploraImage(esploraImages, ai.title) ??
+        (ai.id === "esplora-intro" ? introFallbackImage : undefined);
 
       return {
         id: ai.id,
@@ -754,6 +786,19 @@ function ZonePanel({
                 iframeTitle={geogebraConstruction.iframeTitle}
                 className="mb-6"
               />
+            )}
+            {paragraphImage && (
+              <figure className="mb-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
+                <img
+                  src={paragraphImage.src}
+                  alt={paragraphImage.alt}
+                  className="aspect-video w-full object-cover"
+                  loading="lazy"
+                />
+                <figcaption className="px-3 py-1.5 text-[11px] leading-snug text-slate-500">
+                  Immagine illustrativa generata con IA (Canva)
+                </figcaption>
+              </figure>
             )}
             <ReadableBodyInTab body={ai.body} />
           </>
@@ -975,6 +1020,7 @@ export function MCPageClient({
   visuals,
   microlearningData,
   deckSlides = [],
+  esploraImages = [],
   sdgIndex = [],
 }: MCPageClientProps) {
   // Pre-computa la sezione APPENDICE (fuori dai 5 tab)
@@ -1104,6 +1150,7 @@ export function MCPageClient({
             flashcards={flashcards}
             microlearningData={microlearningData}
             deckSlides={deckSlides}
+            esploraImages={esploraImages}
             professioneText={professioneText}
             professioneBlocks={professioneBlocks}
             appendiceSection={appendiceSection}
