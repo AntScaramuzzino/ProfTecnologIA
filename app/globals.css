@@ -69,6 +69,16 @@ body {
   .font-sans {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Lato, Helvetica, Arial, sans-serif;
   }
+
+  /* Scala tipografica mobile un po' più grande e ariosa (le utility text-* leggono queste variabili) */
+  :root {
+    --text-xs: 0.8125rem;            /* 12 → 13px */
+    --text-xs--line-height: 1.55;
+    --text-sm: 0.9375rem;            /* 14 → 15px */
+    --text-sm--line-height: 1.6;
+    --text-base: 1.0625rem;          /* 16 → 17px */
+    --text-base--line-height: 1.65;
+  }
 }
 
 a, button {
@@ -478,4 +488,12 @@ a, button {
 }
 .mc-nav-scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+/* Mobile: testo di lettura 17px, interlinea 1.7 (in fondo per prevalere su .reading-flow) */
+@media (max-width: 47.99rem) {
+  .reading-flow {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
 }
