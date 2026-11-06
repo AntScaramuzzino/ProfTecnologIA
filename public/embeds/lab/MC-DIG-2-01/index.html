@@ -414,7 +414,7 @@ svg.chart{width:100%;height:auto;display:block;max-width:760px}
       if (lv.reflect) { const m = $c("div", "meta", `<span class="lbl">Rifletti</span><p>${lv.reflect}</p>`); const id = nid("n"); const l = $c("label", null, "I tuoi appunti (restano su questo dispositivo)"); l.htmlFor = id; const ta = $c("textarea"); ta.id = id; ta.value = store.get("note" + i) || ""; ta.oninput = () => store.set("note" + i, ta.value); m.append(l, ta); p.appendChild(m); }
       wrap.appendChild(p); });
     wrap.appendChild($c("div", "bridge", `<span class="lbl">Verso il compito di realtà</span><p>${cfg.bridge}</p>`));
-    wrap.appendChild($c("footer", "lab-foot", `ProfTecnologIA · Laboratorio v1.0 · ${cfg.footer || "Contenuti tratti dal testo della micro-competenza."}`));
+    wrap.appendChild($c("footer", "lab-foot", `ProfTecnologIA · Laboratorio v1.0 · ${cfg.footer || "Contenuti tratti dal testo della micro-competenza."}<br>Questo materiale è stato realizzato con il supporto di strumenti IA e successivamente controllato, adattato e validato secondo il Protocollo CARBLE-CDD.`));
     document.body.prepend(wrap);
   }
   window.LABENGINE = { run, fmt };

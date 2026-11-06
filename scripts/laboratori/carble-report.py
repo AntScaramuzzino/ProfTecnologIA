@@ -8,6 +8,10 @@ audit = json.load(open(sys.argv[1]))
 cfg = {x["mcId"]: x for x in json.load(open(f"{ROOT}/lib/laboratori-cfg.json"))}
 PIL = {"MC-MAT-1-04": ("Differenzia!", "Smistatore"), "MC-DIG-1-03": ("Il robot della colazione", "Programmatore"), "MC-DIG-2-04": ("Casella sotto attacco", "Ispettore"), "MC-DIS-2-01": ("Tre sguardi", "Tavolo grafico"), "MC-ENE-3-01": ("Banco delle leve", "Simulatore")}
 OGGI = datetime.date.today().isoformat()
+# Decisione dell'autore (Protocollo §16.3): parere confermato il 2026-11-06
+VALIDAZIONE_AUTORE = {"data": "2026-11-06", "autore": "Ing. Antonio Scaramuzzino"}
+def ha_formula(mc):
+    return "validato secondo il Protocollo CARBLE-CDD" in open(f"{ROOT}/public/embeds/lab/{mc}/index.html").read()
 
 # Note di revisione per laboratorio (criterio → testo). Raccolte durante la costruzione e la revisione.
 NOTE = {
@@ -72,10 +76,11 @@ for mc, a in sorted(audit.items()):
                            "Schede di livello navigabili da tastiera (frecce, Home, Fine) secondo il modello WAI-ARIA Tabs; feedback annunciato agli screen reader",
                            "Font ad alta leggibilità (Atkinson Hyperlegible, progettato per ipovedenti), corpo minimo 15 px, nessuna attività basata solo sul colore o sul trascinamento"] + ([n["L"]] if "L" in n else [])}
     # E — etica e sicurezza
-    c["E"] = {"esito": "Da rivedere",
+    formula = ha_formula(mc)
+    c["E"] = {"esito": "Conforme" if formula and not a["external"] else "Da rivedere",
               "evidenze": ["Nessun dato personale raccolto né inviato: appunti e risultati restano nel browser dello studente" if not a["external"] else f"Richieste a server esterni: {a['external']}",
                            "Nessuna richiesta a server esterni (font e librerie ospitati sul sito)" if not a["external"] else "",
-                           "Manca la formula di trasparenza sull'uso dell'IA prevista dal Protocollo: va inserita dall'autore dopo la sua validazione"] + ([n["E"]] if "E" in n else [])}
+                           "Formula di trasparenza sull'uso dell'IA presente nel piè di pagina" if formula else "Manca la formula di trasparenza sull'uso dell'IA prevista dal Protocollo"] + ([n["E"]] if "E" in n else [])}
     c["E"]["evidenze"] = [e for e in c["E"]["evidenze"] if e]
     stati = [v["esito"] for v in c.values()]
     s = {"cdd": f"Laboratorio interattivo {mc} — {t}", "mc_id": mc, "titolo": t, "archetipo": arch, "pilota": a["pilota"],
@@ -84,7 +89,7 @@ for mc, a in sorted(audit.items()):
          "azioni": [x for x in ["Inserire la formula di trasparenza sull'IA dopo la validazione dell'autore" if c["E"]["esito"] != "Conforme" else "",
                                  "Rivedere le consegne per la leggibilità" if c["A"]["esito"] != "Conforme" else "",
                                  "Correggere le violazioni di accessibilità" if c["L"]["esito"] != "Conforme" else ""] if x],
-         "decisione_finale": "Spetta all'autore umano (Protocollo CARBLE-CDD v1.0, §16.3)"}
+         "decisione_finale": (f"Validato da {VALIDAZIONE_AUTORE['autore']} il {VALIDAZIONE_AUTORE['data']}" if esito_crit(stati).startswith("✅") else "Spetta all'autore umano (Protocollo CARBLE-CDD v1.0, §16.3)")}
     schede.append(s)
     json.dump(s, open(f"{ROOT}/docs/validazione-laboratori/schede/{mc}.json", "w"), ensure_ascii=False, indent=2)
 
@@ -94,13 +99,14 @@ ic = {"Conforme": "✅", "Da rivedere": "⚠️", "Non conforme": "🚫"}
 cnt = {k: sum(1 for s in schede if s["criteri"][k]["esito"] == "Conforme") for k in L}
 gs = sorted(audit[s["mc_id"]]["testo"]["gulpease"] for s in schede); gc = sorted(audit[s["mc_id"]]["consegne"]["gulpease"] for s in schede)
 md = [f"# Validazione CARBLE-CDD dei laboratori interattivi", "",
-      f"**Parere istruttorio** · {len(schede)} laboratori · {OGGI} · Protocollo CARBLE-CDD v1.0 (I.C. Nicotera Costabile)", "",
-      "Questo documento è il parere dell'Agente CARBLE-CDD: non modifica i materiali e non sostituisce la decisione dell'autore. Le schede JSON per ogni laboratorio sono in `schede/`.", "",
+      f"**Parere istruttorio e decisione dell'autore** · {len(schede)} laboratori · {OGGI} · Protocollo CARBLE-CDD v1.0 (I.C. Nicotera Costabile)", "",
+      "Parere istruttorio dell'Agente CARBLE-CDD, confermato dall'autore. Le schede JSON per ogni laboratorio sono in `schede/`.", "",
       "## Esito in sintesi", "",
-      f"- **Nessun laboratorio è da rigenerare.** Tutti i {len(schede)} risultano *⚠️ Validabili con modifiche* per un solo motivo comune: manca la formula di trasparenza sull'uso dell'IA (criterio E), che il Protocollo chiede di inserire dopo la validazione dell'autore.",
+      f"- **Esito: {sum(1 for s in schede if s['esito'].startswith('✅'))} laboratori su {len(schede)} validati.** Il parere istruttorio (stessa data) li dava *validabili con modifiche* solo per la formula di trasparenza sull'IA; l'autore ha confermato il parere e la formula è stata inserita nel piè di pagina di tutti i laboratori.",
+      f"- Decisione finale: {VALIDAZIONE_AUTORE['autore']}, {VALIDAZIONE_AUTORE['data']}.",
       f"- Criteri conformi su {len(schede)} laboratori: " + " · ".join(f"**{k}** {cnt[k]}" for k in L) + ".",
       "- Accessibilità: nessuna violazione WCAG 2.1 A/AA rilevata da axe-core, a parte il contrasto voluto nell'esempio di cattivo design di MC-DIG-3-04. Corretto il contrasto di una categoria in MC-MAT-1-04.",
-      "- Privacy: i laboratori non fanno più richieste a server esterni. I font (prima caricati da Google Fonts) e three.js (prima da CDN) sono ora ospitati sul sito; i dati restano nel browser.",
+      "- Privacy: i laboratori non fanno richieste a server esterni. Font e three.js sono ospitati sul sito; i dati restano nel browser.",
       f"- Leggibilità (indice Gulpease): consegne fra {gc[0]} e {gc[-1]}, tutte ≥60; laboratorio intero fra {gs[0]} e {gs[-1]}. Sotto 60 i testi informativi vanno letti con il docente.", "",
       "## Metodo", "",
       "| Criterio | Che cosa è stato controllato | Come |",
@@ -134,9 +140,8 @@ md += ["", "## Correzioni ai testi delle MC (repository `data/`)", "",
        "- **MC-ALI-2-06** — stato normativo della carne coltivata (L. 172/2023, novel food UE).",
        "- **MC-DIG-2-04** — tolto il dato non documentato sul 90%, marchio inventato nel messaggio simulato, nota sugli attacchi a dizionario.",
        "- **MC-DIG-1-02** — compito di realtà e microlearning allineati al metodo SIFT.", "",
-       "## Azioni per l'autore", "",
-       "1. Rileggere le schede e confermare o modificare gli esiti (decisione finale).",
-       "2. Dopo la validazione, inserire nel piè di pagina dei laboratori la formula: *«Questo materiale è stato realizzato con il supporto di strumenti IA e successivamente controllato, adattato e validato secondo il Protocollo CARBLE-CDD.»* (una riga in `scripts/laboratori/engine.js` e nei 5 pilota).",
-       "3. Allineare i testi in `08_TESTI` sul computer con le correzioni fatte in `data/testi`.", ""]
+       "## Manutenzione", "",
+       "- Ogni modifica a un laboratorio richiede di rifare l'audit automatico e di rigenerare questo report (`python3 scripts/laboratori/carble-report.py docs/validazione-laboratori/audit-automatico.json`).",
+       "- La formula di trasparenza è nel motore comune (`scripts/laboratori/engine.js`) e nel piè di pagina dei 5 laboratori pilota.", ""]
 open(f"{ROOT}/docs/validazione-laboratori/VALIDAZIONE_CARBLE_CDD_LABORATORI_v1.0.md", "w").write("\n".join(md))
 print(len(schede), "schede", {k: cnt[k] for k in L})

@@ -1,15 +1,16 @@
 # Validazione CARBLE-CDD dei laboratori interattivi
 
-**Parere istruttorio** · 58 laboratori · 2026-11-06 · Protocollo CARBLE-CDD v1.0 (I.C. Nicotera Costabile)
+**Parere istruttorio e decisione dell'autore** · 58 laboratori · 2026-11-06 · Protocollo CARBLE-CDD v1.0 (I.C. Nicotera Costabile)
 
-Questo documento è il parere dell'Agente CARBLE-CDD: non modifica i materiali e non sostituisce la decisione dell'autore. Le schede JSON per ogni laboratorio sono in `schede/`.
+Parere istruttorio dell'Agente CARBLE-CDD, confermato dall'autore. Le schede JSON per ogni laboratorio sono in `schede/`.
 
 ## Esito in sintesi
 
-- **Nessun laboratorio è da rigenerare.** Tutti i 58 risultano *⚠️ Validabili con modifiche* per un solo motivo comune: manca la formula di trasparenza sull'uso dell'IA (criterio E), che il Protocollo chiede di inserire dopo la validazione dell'autore.
-- Criteri conformi su 58 laboratori: **D** 58 · **C** 58 · **A** 58 · **R** 58 · **B** 58 · **L** 58 · **E** 0.
+- **Esito: 58 laboratori su 58 validati.** Il parere istruttorio (stessa data) li dava *validabili con modifiche* solo per la formula di trasparenza sull'IA; l'autore ha confermato il parere e la formula è stata inserita nel piè di pagina di tutti i laboratori.
+- Decisione finale: Ing. Antonio Scaramuzzino, 2026-11-06.
+- Criteri conformi su 58 laboratori: **D** 58 · **C** 58 · **A** 58 · **R** 58 · **B** 58 · **L** 58 · **E** 58.
 - Accessibilità: nessuna violazione WCAG 2.1 A/AA rilevata da axe-core, a parte il contrasto voluto nell'esempio di cattivo design di MC-DIG-3-04. Corretto il contrasto di una categoria in MC-MAT-1-04.
-- Privacy: i laboratori non fanno più richieste a server esterni. I font (prima caricati da Google Fonts) e three.js (prima da CDN) sono ora ospitati sul sito; i dati restano nel browser.
+- Privacy: i laboratori non fanno richieste a server esterni. Font e three.js sono ospitati sul sito; i dati restano nel browser.
 - Leggibilità (indice Gulpease): consegne fra 60 e 88, tutte ≥60; laboratorio intero fra 52 e 70. Sotto 60 i testi informativi vanno letti con il docente.
 
 ## Metodo
@@ -30,64 +31,64 @@ Questo documento è il parere dell'Agente CARBLE-CDD: non modifica i materiali e
 
 | MC | Laboratorio | Archetipo | D | C | A | R | B | L | E | Gulpease consegne | Esito |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| MC-ALI-2-01 | Dal seme alla mensa | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 70 | ⚠️ Validabile con modifiche |
-| MC-ALI-2-02 | Laboratorio della conservazione | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 71 | ⚠️ Validabile con modifiche |
-| MC-ALI-2-03 | Il piatto equilibrato | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 67 | ⚠️ Validabile con modifiche |
-| MC-ALI-2-04 | Il viaggio del cibo | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 75 | ⚠️ Validabile con modifiche |
-| MC-ALI-2-05 | Packaging sotto la lente | Comparatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 77 | ⚠️ Validabile con modifiche |
-| MC-ALI-2-06 | Il comitato del cibo futuro | Scenario | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 71 | ⚠️ Validabile con modifiche |
-| MC-AMB-2-01 | Forze in gioco | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 67 | ⚠️ Validabile con modifiche |
-| MC-AMB-2-02 | La bolletta di casa | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 80 | ⚠️ Validabile con modifiche |
-| MC-AMB-2-03 | Il quartiere sotto la lente | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 78 | ⚠️ Validabile con modifiche |
-| MC-AMB-2-04 | Sole e casa | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 78 | ⚠️ Validabile con modifiche |
-| MC-AMB-2-05 | Il viaggio dell'acqua | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 82 | ⚠️ Validabile con modifiche |
-| MC-AMB-2-06 | Cruscotto della città | Laboratorio dati | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 72 | ⚠️ Validabile con modifiche |
-| MC-COM-3-01 | Mappa del Wi-Fi | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 82 | ⚠️ Validabile con modifiche |
-| MC-COM-3-02 | Studio di registrazione | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 68 | ⚠️ Validabile con modifiche |
-| MC-COM-3-03 | Il tragitto casa-scuola | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 72 | ⚠️ Validabile con modifiche |
-| MC-COM-3-04 | Casa domotica per Carmelo | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 78 | ⚠️ Validabile con modifiche |
-| MC-COM-3-05 | Internet non è una nuvola | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 65 | ⚠️ Validabile con modifiche |
-| MC-COM-3-06 | Virale o vero? | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 77 | ⚠️ Validabile con modifiche |
-| MC-DIG-1-01 | Dentro il dispositivo | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 70 | ⚠️ Validabile con modifiche |
-| MC-DIG-1-02 | Detective delle fonti | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 71 | ⚠️ Validabile con modifiche |
-| MC-DIG-1-03 | Il robot della colazione (pilota) | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 76 | ⚠️ Validabile con modifiche |
-| MC-DIG-2-01 | Caccia al bug in Scratch | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 76 | ⚠️ Validabile con modifiche |
-| MC-DIG-2-02 | Le tracce che lasci | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 76 | ⚠️ Validabile con modifiche |
-| MC-DIG-2-03 | Desktop in ordine | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 76 | ⚠️ Validabile con modifiche |
-| MC-DIG-2-04 | Casella sotto attacco (pilota) | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 82 | ⚠️ Validabile con modifiche |
-| MC-DIG-2-05 | Benessere digitale | Scenario | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 76 | ⚠️ Validabile con modifiche |
-| MC-DIG-3-01 | Robot segui-linea | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 70 | ⚠️ Validabile con modifiche |
-| MC-DIG-3-02 | IA: che cosa fa, chi decide | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 67 | ⚠️ Validabile con modifiche |
-| MC-DIG-3-03 | Grafici che parlano (e che mentono) | Laboratorio dati | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 74 | ⚠️ Validabile con modifiche |
-| MC-DIG-3-04 | Il sito senza barriere | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 77 | ⚠️ Validabile con modifiche |
-| MC-DIS-1-01 | Riga e compasso | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 72 | ⚠️ Validabile con modifiche |
-| MC-DIS-1-02 | Lo scalatore | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 80 | ⚠️ Validabile con modifiche |
-| MC-DIS-2-01 | Tre sguardi (pilota) | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 74 | ⚠️ Validabile con modifiche |
-| MC-DIS-2-02 | Cavaliera o isometrica? | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 67 | ⚠️ Validabile con modifiche |
-| MC-DIS-3-01 | Punto di fuga | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 71 | ⚠️ Validabile con modifiche |
-| MC-DIS-3-02 | Dal CAD alla stampa 3D | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 71 | ⚠️ Validabile con modifiche |
-| MC-ENE-3-01 | Banco delle leve (pilota) | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 88 | ⚠️ Validabile con modifiche |
-| MC-ENE-3-02 | L'impronta di carbonio di casa | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 71 | ⚠️ Validabile con modifiche |
-| MC-ENE-3-03 | Fotovoltaico per la scuola | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 72 | ⚠️ Validabile con modifiche |
-| MC-ENE-3-04 | Breadboard virtuale | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 76 | ⚠️ Validabile con modifiche |
-| MC-ENE-3-05 | Dove va l'energia | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 74 | ⚠️ Validabile con modifiche |
-| MC-ENE-3-06 | La rete in 24 ore | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 80 | ⚠️ Validabile con modifiche |
-| MC-INF-1-01 | Bit-lab | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 73 | ⚠️ Validabile con modifiche |
-| MC-INF-1-02 | Gara di ricerca | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 72 | ⚠️ Validabile con modifiche |
-| MC-INF-2-01 | Sei il sistema operativo | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 68 | ⚠️ Validabile con modifiche |
-| MC-INF-2-02 | Cripto-lab | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 76 | ⚠️ Validabile con modifiche |
-| MC-INF-3-01 | Internet delle Cose | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 70 | ⚠️ Validabile con modifiche |
-| MC-INF-3-02 | Addestra il classificatore | Laboratorio dati | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 70 | ⚠️ Validabile con modifiche |
-| MC-MAT-1-01 | Banco dei materiali | Banco prova | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 67 | ⚠️ Validabile con modifiche |
-| MC-MAT-1-02 | Passaporto tecnologico | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 77 | ⚠️ Validabile con modifiche |
-| MC-MAT-1-03 | Materiali del futuro | Comparatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 69 | ⚠️ Validabile con modifiche |
-| MC-MAT-1-04 | Differenzia! (pilota) | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 68 | ⚠️ Validabile con modifiche |
-| MC-MAT-1-05 | Banco dei metalli | Banco prova | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 67 | ⚠️ Validabile con modifiche |
-| MC-MAT-1-06 | Fibre, plastiche e compositi | Banco prova | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 68 | ⚠️ Validabile con modifiche |
-| MC-SIS-3-01 | Dove vanno i tuoi soldi | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 66 | ⚠️ Validabile con modifiche |
-| MC-SIS-3-02 | Gruppo d'acquisto solidale | Comparatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 67 | ⚠️ Validabile con modifiche |
-| MC-SIS-3-03 | Business Model Canvas | Canvas | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 69 | ⚠️ Validabile con modifiche |
-| MC-SIS-3-04 | Bussola delle professioni | Canvas | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⚠️ | 60 | ⚠️ Validabile con modifiche |
+| MC-ALI-2-01 | Dal seme alla mensa | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 70 | ✅ Validabile senza modifiche |
+| MC-ALI-2-02 | Laboratorio della conservazione | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 71 | ✅ Validabile senza modifiche |
+| MC-ALI-2-03 | Il piatto equilibrato | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 67 | ✅ Validabile senza modifiche |
+| MC-ALI-2-04 | Il viaggio del cibo | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 75 | ✅ Validabile senza modifiche |
+| MC-ALI-2-05 | Packaging sotto la lente | Comparatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 77 | ✅ Validabile senza modifiche |
+| MC-ALI-2-06 | Il comitato del cibo futuro | Scenario | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 71 | ✅ Validabile senza modifiche |
+| MC-AMB-2-01 | Forze in gioco | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 67 | ✅ Validabile senza modifiche |
+| MC-AMB-2-02 | La bolletta di casa | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 80 | ✅ Validabile senza modifiche |
+| MC-AMB-2-03 | Il quartiere sotto la lente | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 78 | ✅ Validabile senza modifiche |
+| MC-AMB-2-04 | Sole e casa | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 78 | ✅ Validabile senza modifiche |
+| MC-AMB-2-05 | Il viaggio dell'acqua | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 82 | ✅ Validabile senza modifiche |
+| MC-AMB-2-06 | Cruscotto della città | Laboratorio dati | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 72 | ✅ Validabile senza modifiche |
+| MC-COM-3-01 | Mappa del Wi-Fi | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 82 | ✅ Validabile senza modifiche |
+| MC-COM-3-02 | Studio di registrazione | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 68 | ✅ Validabile senza modifiche |
+| MC-COM-3-03 | Il tragitto casa-scuola | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 72 | ✅ Validabile senza modifiche |
+| MC-COM-3-04 | Casa domotica per Carmelo | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 78 | ✅ Validabile senza modifiche |
+| MC-COM-3-05 | Internet non è una nuvola | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 65 | ✅ Validabile senza modifiche |
+| MC-COM-3-06 | Virale o vero? | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 77 | ✅ Validabile senza modifiche |
+| MC-DIG-1-01 | Dentro il dispositivo | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 70 | ✅ Validabile senza modifiche |
+| MC-DIG-1-02 | Detective delle fonti | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 71 | ✅ Validabile senza modifiche |
+| MC-DIG-1-03 | Il robot della colazione (pilota) | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 76 | ✅ Validabile senza modifiche |
+| MC-DIG-2-01 | Caccia al bug in Scratch | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 76 | ✅ Validabile senza modifiche |
+| MC-DIG-2-02 | Le tracce che lasci | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 76 | ✅ Validabile senza modifiche |
+| MC-DIG-2-03 | Desktop in ordine | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 76 | ✅ Validabile senza modifiche |
+| MC-DIG-2-04 | Casella sotto attacco (pilota) | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 82 | ✅ Validabile senza modifiche |
+| MC-DIG-2-05 | Benessere digitale | Scenario | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 76 | ✅ Validabile senza modifiche |
+| MC-DIG-3-01 | Robot segui-linea | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 70 | ✅ Validabile senza modifiche |
+| MC-DIG-3-02 | IA: che cosa fa, chi decide | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 67 | ✅ Validabile senza modifiche |
+| MC-DIG-3-03 | Grafici che parlano (e che mentono) | Laboratorio dati | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 74 | ✅ Validabile senza modifiche |
+| MC-DIG-3-04 | Il sito senza barriere | Ispettore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 77 | ✅ Validabile senza modifiche |
+| MC-DIS-1-01 | Riga e compasso | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 72 | ✅ Validabile senza modifiche |
+| MC-DIS-1-02 | Lo scalatore | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 80 | ✅ Validabile senza modifiche |
+| MC-DIS-2-01 | Tre sguardi (pilota) | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 74 | ✅ Validabile senza modifiche |
+| MC-DIS-2-02 | Cavaliera o isometrica? | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 67 | ✅ Validabile senza modifiche |
+| MC-DIS-3-01 | Punto di fuga | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 71 | ✅ Validabile senza modifiche |
+| MC-DIS-3-02 | Dal CAD alla stampa 3D | Tavolo grafico | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 71 | ✅ Validabile senza modifiche |
+| MC-ENE-3-01 | Banco delle leve (pilota) | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 88 | ✅ Validabile senza modifiche |
+| MC-ENE-3-02 | L'impronta di carbonio di casa | Calcolatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 71 | ✅ Validabile senza modifiche |
+| MC-ENE-3-03 | Fotovoltaico per la scuola | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 72 | ✅ Validabile senza modifiche |
+| MC-ENE-3-04 | Breadboard virtuale | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 76 | ✅ Validabile senza modifiche |
+| MC-ENE-3-05 | Dove va l'energia | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 74 | ✅ Validabile senza modifiche |
+| MC-ENE-3-06 | La rete in 24 ore | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 80 | ✅ Validabile senza modifiche |
+| MC-INF-1-01 | Bit-lab | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 73 | ✅ Validabile senza modifiche |
+| MC-INF-1-02 | Gara di ricerca | Programmatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 72 | ✅ Validabile senza modifiche |
+| MC-INF-2-01 | Sei il sistema operativo | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 68 | ✅ Validabile senza modifiche |
+| MC-INF-2-02 | Cripto-lab | Simulatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 76 | ✅ Validabile senza modifiche |
+| MC-INF-3-01 | Internet delle Cose | Costruttore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 70 | ✅ Validabile senza modifiche |
+| MC-INF-3-02 | Addestra il classificatore | Laboratorio dati | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 70 | ✅ Validabile senza modifiche |
+| MC-MAT-1-01 | Banco dei materiali | Banco prova | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 67 | ✅ Validabile senza modifiche |
+| MC-MAT-1-02 | Passaporto tecnologico | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 77 | ✅ Validabile senza modifiche |
+| MC-MAT-1-03 | Materiali del futuro | Comparatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 69 | ✅ Validabile senza modifiche |
+| MC-MAT-1-04 | Differenzia! (pilota) | Smistatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 68 | ✅ Validabile senza modifiche |
+| MC-MAT-1-05 | Banco dei metalli | Banco prova | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 67 | ✅ Validabile senza modifiche |
+| MC-MAT-1-06 | Fibre, plastiche e compositi | Banco prova | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 68 | ✅ Validabile senza modifiche |
+| MC-SIS-3-01 | Dove vanno i tuoi soldi | Flussi | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 66 | ✅ Validabile senza modifiche |
+| MC-SIS-3-02 | Gruppo d'acquisto solidale | Comparatore | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 67 | ✅ Validabile senza modifiche |
+| MC-SIS-3-03 | Business Model Canvas | Canvas | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 69 | ✅ Validabile senza modifiche |
+| MC-SIS-3-04 | Bussola delle professioni | Canvas | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 60 | ✅ Validabile senza modifiche |
 
 ## Correzioni ai laboratori (costruzione e validazione)
 
@@ -126,8 +127,7 @@ Questo documento è il parere dell'Agente CARBLE-CDD: non modifica i materiali e
 - **MC-DIG-2-04** — tolto il dato non documentato sul 90%, marchio inventato nel messaggio simulato, nota sugli attacchi a dizionario.
 - **MC-DIG-1-02** — compito di realtà e microlearning allineati al metodo SIFT.
 
-## Azioni per l'autore
+## Manutenzione
 
-1. Rileggere le schede e confermare o modificare gli esiti (decisione finale).
-2. Dopo la validazione, inserire nel piè di pagina dei laboratori la formula: *«Questo materiale è stato realizzato con il supporto di strumenti IA e successivamente controllato, adattato e validato secondo il Protocollo CARBLE-CDD.»* (una riga in `scripts/laboratori/engine.js` e nei 5 pilota).
-3. Allineare i testi in `08_TESTI` sul computer con le correzioni fatte in `data/testi`.
+- Ogni modifica a un laboratorio richiede di rifare l'audit automatico e di rigenerare questo report (`python3 scripts/laboratori/carble-report.py docs/validazione-laboratori/audit-automatico.json`).
+- La formula di trasparenza è nel motore comune (`scripts/laboratori/engine.js`) e nel piè di pagina dei 5 laboratori pilota.

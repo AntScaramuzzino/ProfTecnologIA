@@ -58,18 +58,16 @@
       ]
     },
     "E": {
-      "esito": "Da rivedere",
+      "esito": "Conforme",
       "evidenze": [
         "Nessun dato personale raccolto né inviato: appunti e risultati restano nel browser dello studente",
         "Nessuna richiesta a server esterni (font e librerie ospitati sul sito)",
-        "Manca la formula di trasparenza sull'uso dell'IA prevista dal Protocollo: va inserita dall'autore dopo la sua validazione",
+        "Formula di trasparenza sull'uso dell'IA presente nel piè di pagina",
         "Messaggi di phishing con marchi e domini inventati: nessun marchio reale imitato."
       ]
     }
   },
-  "esito": "⚠️ Validabile con modifiche",
-  "azioni": [
-    "Inserire la formula di trasparenza sull'IA dopo la validazione dell'autore"
-  ],
-  "decisione_finale": "Spetta all'autore umano (Protocollo CARBLE-CDD v1.0, §16.3)"
+  "esito": "✅ Validabile senza modifiche",
+  "azioni": [],
+  "decisione_finale": "Validato da Ing. Antonio Scaramuzzino il 2026-11-06"
 }
