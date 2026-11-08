@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:03.030
+Una macchina non pensa e non capisce.
+
+2
+00:00:03.180 --> 00:00:04.720
+Eppure impara.
+
+3
+00:00:04.870 --> 00:00:07.324
+Ma che cosa vuol dire, per una macchina?
+
+4
+00:00:07.874 --> 00:00:12.605
+Trova schemi in enormi quantità di dati,
+e li usa per fare previsioni su dati nuovi.
+
+5
+00:00:13.424 --> 00:00:16.730
+Il machine learning tradizionale
+ha tre famiglie principali.
+
+6
+00:00:18.780 --> 00:00:22.780
+Nell'apprendimento supervisionato,
+il modello riceve esempi etichettati:
+
+7
+00:00:22.930 --> 00:00:25.076
+un input e la sua risposta corretta.
+
+8
+00:00:25.830 --> 00:00:29.740
+Per ogni esempio fa una previsione,
+la confronta con la risposta corretta,
+
+9
+00:00:29.890 --> 00:00:32.233
+misura l'errore
+e aggiusta i suoi parametri.
+
+10
+00:00:33.583 --> 00:00:37.150
+Questo ciclo si ripete milioni di volte,
+per ridurre l'errore.
+
+11
+00:00:38.100 --> 00:00:40.380
+Così un filtro antispam
+impara quali parole,
+
+12
+00:00:40.530 --> 00:00:44.799
+strutture e mittenti sono associati allo spam,
+e lo applica alle email nuove.
+
+13
+00:00:45.980 --> 00:00:48.650
+Funziona quando hai molti
+dati etichettati di qualità,
+
+14
+00:00:48.800 --> 00:00:51.521
+e i problemi nuovi somigliano
+a quelli del passato.
+
+15
+00:00:52.071 --> 00:00:55.661
+Nell'apprendimento non supervisionato,
+i dati non hanno etichette:
+
+16
+00:00:55.811 --> 00:01:00.542
+il modello cerca da solo gruppi nascosti,
+come utenti con gusti musicali simili.
+
+17
+00:01:01.192 --> 00:01:04.302
+Nell'apprendimento per rinforzo,
+il modello prova azioni,
+
+18
+00:01:04.452 --> 00:01:07.917
+riceve ricompense o penalità,
+e aggiusta la strategia.
+
+19
+00:01:09.067 --> 00:01:13.507
+Così, nel 2016, un programma ha
+battuto un campione mondiale di Go,
+
+20
+00:01:13.657 --> 00:01:16.445
+anche giocando milioni di
+partite contro sé stesso.
+
+21
+00:01:16.995 --> 00:01:20.795
+In tutti e tre i casi,
+la macchina trova schemi e ottimizza.
+
+22
+00:01:20.945 --> 00:01:23.449
+Saperlo ti aiuta a capire quanto fidarti.
