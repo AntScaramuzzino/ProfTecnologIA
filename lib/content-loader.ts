@@ -193,6 +193,17 @@ export interface EsploraImage {
   fonte?: "ia" | "schema";
   /** Didascalia per gli schemi didattici */
   didascalia?: string;
+  /** Video animato facoltativo per il paragrafo (MP4 + poster + sottotitoli WebVTT) */
+  video?: EsploraVideo;
+}
+
+export interface EsploraVideo {
+  src: string;
+  poster?: string;
+  sottotitoli?: string;
+  titolo: string;
+  durata?: string;
+  nota?: string;
 }
 
 /**
@@ -205,7 +216,10 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
   if (!fs.existsSync(file)) return [];
   try {
     const data = JSON.parse(fs.readFileSync(file, "utf-8")) as {
-      immagini?: { paragrafo: string; file: string; alt: string; prompt?: string; fonte?: "ia" | "schema"; didascalia?: string }[];
+      immagini?: {
+        paragrafo: string; file: string; alt: string; prompt?: string; fonte?: "ia" | "schema"; didascalia?: string;
+        video?: { file: string; poster?: string; sottotitoli?: string; titolo: string; durata?: string; nota?: string };
+      }[];
     };
     return (data.immagini ?? [])
       .filter((img) => fs.existsSync(path.join(PUBLIC_ESPLORA_ROOT, mcId, img.file)))
@@ -216,6 +230,17 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
         fonte: img.fonte ?? "ia",
         didascalia: img.didascalia,
         src: `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.file}`,
+        video:
+          img.video && fs.existsSync(path.join(PUBLIC_ESPLORA_ROOT, mcId, img.video.file))
+            ? {
+                src: `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.video.file}`,
+                poster: img.video.poster ? `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.video.poster}` : undefined,
+                sottotitoli: img.video.sottotitoli ? `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.video.sottotitoli}` : undefined,
+                titolo: img.video.titolo,
+                durata: img.video.durata,
+                nota: img.video.nota,
+              }
+            : undefined,
       }));
   } catch {
     return [];

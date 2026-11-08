@@ -787,6 +787,29 @@ function ZonePanel({
                 className="mb-6"
               />
             )}
+            {paragraphImage?.video && (
+              <figure className="mb-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-950">
+                <video
+                  controls
+                  playsInline
+                  preload="none"
+                  poster={paragraphImage.video.poster}
+                  className="aspect-video w-full"
+                  aria-label={paragraphImage.video.titolo}
+                >
+                  <source src={paragraphImage.video.src} type="video/mp4" />
+                  {paragraphImage.video.sottotitoli && (
+                    <track kind="captions" src={paragraphImage.video.sottotitoli} srcLang="it" label="Italiano" />
+                  )}
+                </video>
+                <figcaption className="bg-slate-50 px-3 py-1.5 text-[11px] leading-snug text-slate-500">
+                  <span className="font-semibold text-slate-700">Video: {paragraphImage.video.titolo}</span>
+                  {paragraphImage.video.durata && <> · {paragraphImage.video.durata}</>}
+                  {paragraphImage.video.nota && <> · {paragraphImage.video.nota}</>}
+                  {paragraphImage.video.sottotitoli && <> Sottotitoli attivabili dal lettore (CC).</>}
+                </figcaption>
+              </figure>
+            )}
             {paragraphImage && (
               <figure className="mb-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
                 <img
