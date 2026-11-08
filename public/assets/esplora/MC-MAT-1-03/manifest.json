@@ -6,25 +6,45 @@
       "paragrafo": "Perché i materiali \"tradizionali\" non bastano più?",
       "file": "par-01.webp",
       "alt": "Materiali tradizionali e i problemi nuovi che pongono, come i rifiuti plastici",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché i materiali \"tradizionali\" non bastano più?\": su un tavolo una bottiglia di plastica tradizionale opaca accanto a un mattone e a un pezzo d'acciaio, sullo sfondo sfocato una spiaggia con rifiuti; ologramma ambra con simbolo di allerta sopra la plastica"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché i materiali \"tradizionali\" non bastano più?\": su un tavolo una bottiglia di plastica tradizionale opaca accanto a un mattone e a un pezzo d'acciaio, sullo sfondo sfocato una spiaggia con rifiuti; ologramma ambra con simbolo di allerta sopra la plastica",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "I grandi filoni dell'innovazione nei materiali",
       "file": "par-02.webp",
       "alt": "Campioni di materiali innovativi: bioplastica, micelio, tessuto da scarti, grafene",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I grandi filoni dell'innovazione nei materiali\": tavolo da laboratorio con campioni innovativi: bicchiere in bioplastica PLA, pannello di micelio di funghi, tessuto ricavato da bucce d'arancia, piastrina di grafene; etichette olografiche senza testo"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I grandi filoni dell'innovazione nei materiali\": tavolo da laboratorio con campioni innovativi: bicchiere in bioplastica PLA, pannello di micelio di funghi, tessuto ricavato da bucce d'arancia, piastrina di grafene; etichette olografiche senza testo",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Come si valuta la sostenibilità di un materiale innovativo?",
       "file": "par-03.webp",
       "alt": "Valutazione della sostenibilità di un materiale lungo il ciclo di vita",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si valuta la sostenibilità di un materiale innovativo?\": una tazza in bioplastica su un piatto di bilancia olografica, dall'altro lato tre icone luminose (fabbrica, foglia, bidone) che rappresentano produzione, risorse e fine vita"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si valuta la sostenibilità di un materiale innovativo?\": una tazza in bioplastica su un piatto di bilancia olografica, dall'altro lato tre icone luminose (fabbrica, foglia, bidone) che rappresentano produzione, risorse e fine vita",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il quadro comparativo",
       "file": "par-04.webp",
       "alt": "Quadro comparativo dei materiali innovativi con barre di confronto",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il quadro comparativo\": quattro campioni di materiali innovativi in fila su un tavolo, sopra ciascuno barre olografiche ciano e ambra di diversa altezza come un grafico di confronto"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il quadro comparativo\": quattro campioni di materiali innovativi in fila su un tavolo, sopra ciascuno barre olografiche ciano e ambra di diversa altezza come un grafico di confronto",
+      "audit": {
+        "esito": "sostituisci-con-schema",
+        "nota": "Barre senza scala né legenda: il quadro comparativo non si legge",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

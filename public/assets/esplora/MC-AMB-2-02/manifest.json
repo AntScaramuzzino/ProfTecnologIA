@@ -6,49 +6,89 @@
       "paragrafo": "Una casa non è solo muri e tetto. È un sistema di impianti.",
       "file": "par-01.webp",
       "alt": "Gli impianti di una casa in sezione",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Una casa non è solo muri e tetto. È un sistema di impianti.\": modello in sezione di una casa con impianti elettrico, idraulico, gas e riscaldamento evidenziati in colori olografici diversi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Una casa non è solo muri e tetto. È un sistema di impianti.\": modello in sezione di una casa con impianti elettrico, idraulico, gas e riscaldamento evidenziati in colori olografici diversi",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "L'impianto elettrico — dal palo dell'ENEL alla presa della tua stanza",
       "file": "par-02.webp",
       "alt": "Percorso dell'energia elettrica fino alla presa",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto elettrico — dal palo dell'ENEL alla presa della tua stanza\": linea elettrica che parte da una cabina di trasformazione, entra in un contatore e arriva a una presa in una cameretta, con flusso olografico ciano"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto elettrico — dal palo dell'ENEL alla presa della tua stanza\": linea elettrica che parte da una cabina di trasformazione, entra in un contatore e arriva a una presa in una cameretta, con flusso olografico ciano",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Sequenza cabina–contatore–presa coerente",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "L'impianto idraulico — dall'acquedotto allo scarico",
       "file": "par-03.webp",
       "alt": "Impianto idraulico dall'acquedotto allo scarico",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto idraulico — dall'acquedotto allo scarico\": rubinetto di cucina con acqua che scorre, con dietro uno spaccato olografico di tubi dall'acquedotto e lo scarico verso la fogna"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto idraulico — dall'acquedotto allo scarico\": rubinetto di cucina con acqua che scorre, con dietro uno spaccato olografico di tubi dall'acquedotto e lo scarico verso la fogna",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Percorso acquedotto–rubinetto–scarico evocato correttamente",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "L'impianto del gas — dal metanodotto al fornello",
       "file": "par-04.webp",
       "alt": "Impianto del gas fino al fornello",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto del gas — dal metanodotto al fornello\": fornello a gas acceso con fiamma blu in cucina, tubo che sale da un contatore e ologramma di una rete di tubazioni sotterranee"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto del gas — dal metanodotto al fornello\": fornello a gas acceso con fiamma blu in cucina, tubo che sale da un contatore e ologramma di una rete di tubazioni sotterranee",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Tubazione, contatore e fornello in sequenza corretta",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "L'impianto di riscaldamento — dal termostato al radiatore",
       "file": "par-05.webp",
       "alt": "Riscaldamento domestico con termostato e radiatore",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto di riscaldamento — dal termostato al radiatore\": termostato a parete e radiatore caldo in un soggiorno invernale, con frecce olografiche ambra del calore che si diffonde"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impianto di riscaldamento — dal termostato al radiatore\": termostato a parete e radiatore caldo in un soggiorno invernale, con frecce olografiche ambra del calore che si diffonde",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Termostato collegato al radiatore",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il fotovoltaico domestico — produrre energia dal tetto",
       "file": "par-06.webp",
       "alt": "Fotovoltaico domestico con inverter e batteria",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il fotovoltaico domestico — produrre energia dal tetto\": tetto di una casa con pannelli fotovoltaici al sole, un inverter e una batteria in garage, flusso olografico di energia verso la casa"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il fotovoltaico domestico — produrre energia dal tetto\": tetto di una casa con pannelli fotovoltaici al sole, un inverter e una batteria in garage, flusso olografico di energia verso la casa",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Le classi energetiche degli edifici — dalla G alla A4",
       "file": "par-07.webp",
       "alt": "Classi energetiche degli edifici dal rosso al verde",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le classi energetiche degli edifici — dalla G alla A4\": fila di case dalla più vecchia alla più nuova, sopra ciascuna una barra olografica colorata dal rosso al verde della classe energetica"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le classi energetiche degli edifici — dalla G alla A4\": fila di case dalla più vecchia alla più nuova, sopra ciascuna una barra olografica colorata dal rosso al verde della classe energetica",
+      "audit": {
+        "esito": "sostituisci-con-schema",
+        "nota": "Frecce colorate senza lettere G–A4: la scala delle classi non si legge",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Come si legge una bolletta elettrica",
       "file": "par-08.webp",
       "alt": "Lettura della bolletta elettrica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si legge una bolletta elettrica\": bolletta elettrica su un tavolo di cucina accanto a una calcolatrice, con una lente olografica che evidenzia grafici di consumo senza testo leggibile"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si legge una bolletta elettrica\": bolletta elettrica su un tavolo di cucina accanto a una calcolatrice, con una lente olografica che evidenzia grafici di consumo senza testo leggibile",
+      "audit": {
+        "esito": "sostituisci-con-schema",
+        "nota": "Bolletta illeggibile: serve fac-simile reale annotato",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

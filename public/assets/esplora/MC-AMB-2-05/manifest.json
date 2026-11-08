@@ -6,49 +6,89 @@
       "paragrafo": "L'acqua ha due cicli: uno naturale, uno artificiale",
       "file": "par-01.webp",
       "alt": "Ciclo naturale e ciclo artificiale dell'acqua",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'acqua ha due cicli: uno naturale, uno artificiale\": paesaggio con lago, nuvole e montagne e, sovrapposto, un ciclo olografico naturale accanto a un ciclo artificiale di tubi e impianti"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'acqua ha due cicli: uno naturale, uno artificiale\": paesaggio con lago, nuvole e montagne e, sovrapposto, un ciclo olografico naturale accanto a un ciclo artificiale di tubi e impianti",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il ciclo artificiale dell'acqua in sei fasi",
       "file": "par-02.webp",
       "alt": "Le sei fasi del ciclo artificiale dell'acqua",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il ciclo artificiale dell'acqua in sei fasi\": plastico con sei stazioni in sequenza: captazione dal fiume, potabilizzatore, serbatoio, rete, casa, depuratore; frecce olografiche blu"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il ciclo artificiale dell'acqua in sei fasi\": plastico con sei stazioni in sequenza: captazione dal fiume, potabilizzatore, serbatoio, rete, casa, depuratore; frecce olografiche blu",
+      "audit": {
+        "esito": "sostituisci-con-schema",
+        "nota": "Sequenza di impianti senza fasi riconoscibili: serve schema delle sei fasi",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "L'acquedotto: pressione, perdite e il problema italiano",
       "file": "par-03.webp",
       "alt": "Acquedotto con perdite e pressione",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'acquedotto: pressione, perdite e il problema italiano\": serbatoio pensile e tubazione interrata con una perdita evidenziata da un ologramma rosso, manometri di pressione"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'acquedotto: pressione, perdite e il problema italiano\": serbatoio pensile e tubazione interrata con una perdita evidenziata da un ologramma rosso, manometri di pressione",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "La potabilizzazione: cosa succede quando si clora l'acqua",
       "file": "par-04.webp",
       "alt": "Potabilizzazione dell'acqua con clorazione",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La potabilizzazione: cosa succede quando si clora l'acqua\": vasche di un impianto di potabilizzazione con acqua limpida, ologramma di molecole di cloro che disinfettano"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La potabilizzazione: cosa succede quando si clora l'acqua\": vasche di un impianto di potabilizzazione con acqua limpida, ologramma di molecole di cloro che disinfettano",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Cloro che agisce sui microrganismi in vasca: coerente",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "La gestione delle acque piovane: invarianza idraulica e pavimenti che assorbono",
       "file": "par-05.webp",
       "alt": "Gestione delle acque piovane con superfici drenanti",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La gestione delle acque piovane: invarianza idraulica e pavimenti che assorbono\": strada urbana sotto la pioggia con pavimentazione drenante e aiuole che assorbono, frecce olografiche dell'acqua che filtra nel terreno"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La gestione delle acque piovane: invarianza idraulica e pavimenti che assorbono\": strada urbana sotto la pioggia con pavimentazione drenante e aiuole che assorbono, frecce olografiche dell'acqua che filtra nel terreno",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "La scarsità idrica nel mondo e in Italia: dati reali",
       "file": "par-06.webp",
       "alt": "Scarsità idrica nel mondo e in Italia",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La scarsità idrica nel mondo e in Italia: dati reali\": mappamondo con aree colorate in ologramma secondo la scarsità d'acqua, accanto un bacino idrico italiano quasi vuoto"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La scarsità idrica nel mondo e in Italia: dati reali\": mappamondo con aree colorate in ologramma secondo la scarsità d'acqua, accanto un bacino idrico italiano quasi vuoto",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "L'impronta idrica: quanto \"pesa\" in acqua quello che compri e mangi",
       "file": "par-07.webp",
       "alt": "Impronta idrica di prodotti quotidiani",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impronta idrica: quanto \"pesa\" in acqua quello che compri e mangi\": tavolo con una tazzina di caffè, una maglietta di cotone, un hamburger e una mela, sopra ciascuno una goccia olografica di grandezza diversa"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'impronta idrica: quanto \"pesa\" in acqua quello che compri e mangi\": tavolo con una tazzina di caffè, una maglietta di cotone, un hamburger e una mela, sopra ciascuno una goccia olografica di grandezza diversa",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il depuratore: cosa succede all'acqua dopo il WC",
       "file": "par-08.webp",
       "alt": "Impianto di depurazione con le sue vasche",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il depuratore: cosa succede all'acqua dopo il WC\": vista aerea di un depuratore con vasche circolari di sedimentazione e ossigenazione, frecce olografiche delle tre fasi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il depuratore: cosa succede all'acqua dopo il WC\": vista aerea di un depuratore con vasche circolari di sedimentazione e ossigenazione, frecce olografiche delle tre fasi",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Sedimentazione e ossidazione in vasche circolari: plausibile",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

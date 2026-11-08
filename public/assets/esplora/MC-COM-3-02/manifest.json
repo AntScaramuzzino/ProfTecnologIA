@@ -6,55 +6,100 @@
       "paragrafo": "I contenuti digitali: da cosa sono fatti e come funzionano",
       "file": "par-01.webp",
       "alt": "Contenuti digitali fatti di bit",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I contenuti digitali: da cosa sono fatti e come funzionano\": tablet con testo, foto, video e audio che escono come ologrammi composti da piccoli blocchi di bit"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I contenuti digitali: da cosa sono fatti e come funzionano\": tablet con testo, foto, video e audio che escono come ologrammi composti da piccoli blocchi di bit",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Tipi di contenuti digitali",
       "file": "par-02.webp",
       "alt": "Tipi di contenuti digitali",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Tipi di contenuti digitali\": quattro icone olografiche su un tavolo: pagina di testo, fotografia, pellicola video, onda sonora, ciascuna con la sua dimensione"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Tipi di contenuti digitali\": quattro icone olografiche su un tavolo: pagina di testo, fotografia, pellicola video, onda sonora, ciascuna con la sua dimensione",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Compressione: come si riduce un file senza perdere (troppo)",
       "file": "par-03.webp",
       "alt": "Compressione dei file",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Compressione: come si riduce un file senza perdere (troppo)\": un file olografico grande che passa attraverso una morsa e ne esce più piccolo, con pochi frammenti persi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Compressione: come si riduce un file senza perdere (troppo)\": un file olografico grande che passa attraverso una morsa e ne esce più piccolo, con pochi frammenti persi",
+      "audit": {
+        "esito": "sostituisci-con-schema",
+        "nota": "Metafora della morsa fuorviante: la compressione elimina ridondanza, non \"schiaccia\" i dati",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Diritto d'autore: come funziona in Italia e quanto dura",
       "file": "par-04.webp",
       "alt": "Il diritto d'autore protegge le opere",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Diritto d'autore: come funziona in Italia e quanto dura\": quaderno con un disegno originale, una macchina fotografica e una chitarra, sopra un sigillo olografico di protezione"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Diritto d'autore: come funziona in Italia e quanto dura\": quaderno con un disegno originale, una macchina fotografica e una chitarra, sopra un sigillo olografico di protezione",
+      "audit": {
+        "esito": "decorativa",
+        "nota": "Diritto d'autore: concetto giuridico, immagine decorativa",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Plagio vs. citazione: la differenza pratica",
       "file": "par-05.webp",
       "alt": "Plagio e citazione corretta",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Plagio vs. citazione: la differenza pratica\": quaderno con una citazione evidenziata tra virgolette e una nota della fonte, accanto un ologramma rosso su un testo copiato"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Plagio vs. citazione: la differenza pratica\": quaderno con una citazione evidenziata tra virgolette e una nota della fonte, accanto un ologramma rosso su un testo copiato",
+      "audit": {
+        "esito": "decorativa",
+        "nota": "Plagio vs citazione: meglio un esempio testuale affiancato",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Le licenze Creative Commons: cosa puoi fare con ogni licenza",
       "file": "par-06.webp",
       "alt": "Licenze Creative Commons",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le licenze Creative Commons: cosa puoi fare con ogni licenza\": sei piccoli ologrammi di licenze Creative Commons stilizzati senza testo sopra una pila di foto e brani musicali"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le licenze Creative Commons: cosa puoi fare con ogni licenza\": sei piccoli ologrammi di licenze Creative Commons stilizzati senza testo sopra una pila di foto e brani musicali",
+      "audit": {
+        "esito": "trova-l-errore",
+        "nota": "Icone CC inventate: una icona (persona barrata) non esiste nelle licenze Creative Commons",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Produzione podcast: dalla struttura alla distribuzione",
       "file": "par-07.webp",
       "alt": "Produzione di un podcast",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Produzione podcast: dalla struttura alla distribuzione\": due ragazzi registrano un podcast con microfoni e cuffie in una stanza con pannelli fonoassorbenti, onde audio olografiche"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Produzione podcast: dalla struttura alla distribuzione\": due ragazzi registrano un podcast con microfoni e cuffie in una stanza con pannelli fonoassorbenti, onde audio olografiche",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Produzione video: inquadrature, audio, montaggio",
       "file": "par-08.webp",
       "alt": "Produzione video: inquadratura e montaggio",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Produzione video: inquadrature, audio, montaggio\": ragazza che riprende con uno smartphone su treppiede, luce morbida, ologramma di timeline di montaggio"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Produzione video: inquadrature, audio, montaggio\": ragazza che riprende con uno smartphone su treppiede, luce morbida, ologramma di timeline di montaggio",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Fake video e deepfake: come si riconoscono",
       "file": "par-09.webp",
       "alt": "Riconoscere un video deepfake",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Fake video e deepfake: come si riconoscono\": schermo con un volto generico generato al computer diviso a metà, una lente olografica rivela pixel anomali"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Fake video e deepfake: come si riconoscono\": schermo con un volto generico generato al computer diviso a metà, una lente olografica rivela pixel anomali",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

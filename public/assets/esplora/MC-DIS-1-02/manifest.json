@@ -6,49 +6,89 @@
       "paragrafo": "Il problema: rappresentare il grande nel piccolo (e il piccolo nel grande)",
       "file": "par-01.webp",
       "alt": "La pianta di un appartamento rimpicciolita sul foglio",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il problema: rappresentare il grande nel piccolo (e il piccolo nel grande)\": tavolo di un architetto con un piccolo foglio con la pianta di un appartamento e, sopra, l'ologramma a grandezza ridotta dello stesso appartamento in 3D"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il problema: rappresentare il grande nel piccolo (e il piccolo nel grande)\": tavolo di un architetto con un piccolo foglio con la pianta di un appartamento e, sopra, l'ologramma a grandezza ridotta dello stesso appartamento in 3D",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Cos'è esattamente una scala",
       "file": "par-02.webp",
       "alt": "Il rapporto di scala tra disegno e realtà",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Cos'è esattamente una scala\": righello posato su una pianta disegnata con una freccia olografica che collega 1 cm sul foglio a 1 metro in un piccolo ambiente reale accanto"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Cos'è esattamente una scala\": righello posato su una pianta disegnata con una freccia olografica che collega 1 cm sul foglio a 1 metro in un piccolo ambiente reale accanto",
+      "audit": {
+        "esito": "tieni",
+        "nota": "1 cm sul disegno = 1 m reale (scala 1:100): corretto",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Come si calcola la scala: formula e procedura",
       "file": "par-03.webp",
       "alt": "Calcolo delle misure in scala",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si calcola la scala: formula e procedura\": calcolatrice, righello e foglio con una proporzione scritta a matita, con un ologramma che trasforma una misura reale nella misura sul disegno"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si calcola la scala: formula e procedura\": calcolatrice, righello e foglio con una proporzione scritta a matita, con un ologramma che trasforma una misura reale nella misura sul disegno",
+      "audit": {
+        "esito": "trova-l-errore",
+        "nota": "Il calcolo scritto sul foglio dà \"x = 5·100 = 500 cm\" per una misura reale di 5 m in scala 1:100: il risultato giusto sul disegno è 5 cm (l'ologramma mostra correttamente 5 cm)",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "I formati dei fogli: la famiglia ISO 216",
       "file": "par-04.webp",
       "alt": "Formati della serie A ISO 216 sovrapposti",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I formati dei fogli: la famiglia ISO 216\": fogli A0, A1, A2, A3 e A4 sovrapposti uno sull'altro a ventaglio su un tavolo, ciascuno metà del precedente, con contorni olografici"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I formati dei fogli: la famiglia ISO 216\": fogli A0, A1, A2, A3 e A4 sovrapposti uno sull'altro a ventaglio su un tavolo, ciascuno metà del precedente, con contorni olografici",
+      "audit": {
+        "esito": "sostituisci-con-schema",
+        "nota": "Fogli A0–A4 sovrapposti a ventaglio con dimensioni simili: non si vede che ogni formato è la metà del precedente",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "La piegatura del foglio A4",
       "file": "par-05.webp",
       "alt": "Piegatura del foglio di disegno in formato A4",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La piegatura del foglio A4\": mani che piegano a fisarmonica un grande foglio di disegno fino al formato A4 lasciando visibile il riquadro in basso a destra"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La piegatura del foglio A4\": mani che piegano a fisarmonica un grande foglio di disegno fino al formato A4 lasciando visibile il riquadro in basso a destra",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Piegatura a fisarmonica verso il formato A4: coerente",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il cartiglio",
       "file": "par-06.webp",
       "alt": "Il cartiglio di una tavola tecnica ingrandito",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il cartiglio\": angolo in basso a destra di una tavola tecnica con il riquadro del cartiglio ingrandito da una lente olografica, campi vuoti senza scritte"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il cartiglio\": angolo in basso a destra di una tavola tecnica con il riquadro del cartiglio ingrandito da una lente olografica, campi vuoti senza scritte",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Cartiglio in basso a destra ingrandito: corretto",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Le norme grafiche UNI per linee e testi",
       "file": "par-07.webp",
       "alt": "Scrittura tecnica secondo le norme UNI",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le norme grafiche UNI per linee e testi\": mano che scrive in stampatello tecnico con una matita su un foglio con righe guida, accanto linee di diverso spessore e un normografo"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le norme grafiche UNI per linee e testi\": mano che scrive in stampatello tecnico con una matita su un foglio con righe guida, accanto linee di diverso spessore e un normografo",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Normografo, scrittura e linee: coerente",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il caso studio: come un architetto disegna un appartamento di 80 m² su un foglio A4",
       "file": "par-08.webp",
       "alt": "Un'architetta disegna in scala un appartamento su A4",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il caso studio: come un architetto disegna un appartamento di 80 m² su un foglio A4\": studio di architettura luminoso a Milano, una progettista al tavolo con la pianta di un appartamento su A4 e un modello olografico dell'appartamento sopra"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il caso studio: come un architetto disegna un appartamento di 80 m² su un foglio A4\": studio di architettura luminoso a Milano, una progettista al tavolo con la pianta di un appartamento su A4 e un modello olografico dell'appartamento sopra",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Architetta al tavolo con pianta e modello: evocativa",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

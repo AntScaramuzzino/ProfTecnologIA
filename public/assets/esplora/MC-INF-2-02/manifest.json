@@ -6,31 +6,56 @@
       "paragrafo": "Ogni segreto digitale è matematica.",
       "file": "par-01.webp",
       "alt": "Ogni segreto digitale è matematica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Ogni segreto digitale è matematica.\": smartphone che invia un messaggio trasformato in un flusso di simboli e numeri olografici cifrati"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Ogni segreto digitale è matematica.\": smartphone che invia un messaggio trasformato in un flusso di simboli e numeri olografici cifrati",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Due tipi di crittografia: simmetrica e asimmetrica",
       "file": "par-02.webp",
       "alt": "Crittografia simmetrica e asimmetrica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Due tipi di crittografia: simmetrica e asimmetrica\": due scrigni olografici: uno con una sola chiave condivisa, l'altro con una chiave pubblica e una privata"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Due tipi di crittografia: simmetrica e asimmetrica\": due scrigni olografici: uno con una sola chiave condivisa, l'altro con una chiave pubblica e una privata",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Scrigno con una chiave e scrigno con due chiavi diverse: metafora corretta",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Perché è difficile da rompere: i numeri primi enormi",
       "file": "par-03.webp",
       "alt": "I numeri primi alla base della sicurezza",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché è difficile da rompere: i numeri primi enormi\": lavagna con numeri primi enormi e un ologramma di due numeri che si moltiplicano in un numero gigantesco"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché è difficile da rompere: i numeri primi enormi\": lavagna con numeri primi enormi e un ologramma di due numeri che si moltiplicano in un numero gigantesco",
+      "audit": {
+        "esito": "trova-l-errore",
+        "nota": "Calcolo sbagliato: 9999991 × 9999967 fa 99999580000297, non 99999580000057; inoltre 9999967 non è primo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "HTTPS: il lucchetto verde nel browser",
       "file": "par-04.webp",
       "alt": "HTTPS e il lucchetto nel browser",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"HTTPS: il lucchetto verde nel browser\": barra degli indirizzi di un browser con un lucchetto olografico e un certificato digitale stilizzato"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"HTTPS: il lucchetto verde nel browser\": barra degli indirizzi di un browser con un lucchetto olografico e un certificato digitale stilizzato",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Lucchetto e certificato accanto a https: corretto (nota: oggi i browser non mostrano più il lucchetto verde)",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Identità digitale e autenticazione",
       "file": "par-05.webp",
       "alt": "Autenticazione e identità digitale",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Identità digitale e autenticazione\": ragazza che accede a un servizio con impronta digitale sullo smartphone, ologrammi di password, codice e volto"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Identità digitale e autenticazione\": ragazza che accede a un servizio con impronta digitale sullo smartphone, ologrammi di password, codice e volto",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

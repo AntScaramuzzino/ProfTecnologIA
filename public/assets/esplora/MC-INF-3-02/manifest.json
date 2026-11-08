@@ -6,31 +6,56 @@
       "paragrafo": "Le macchine non pensano. Ottimizzano.",
       "file": "par-01.webp",
       "alt": "Le macchine ottimizzano",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le macchine non pensano. Ottimizzano.\": modello olografico che scende lungo una superficie a valle cercando il punto più basso, sopra un tavolo"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le macchine non pensano. Ottimizzano.\": modello olografico che scende lungo una superficie a valle cercando il punto più basso, sopra un tavolo",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Pallina che scende verso il minimo di una superficie: metafora corretta dell'ottimizzazione",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Come funziona il machine learning",
       "file": "par-02.webp",
       "alt": "Le tre famiglie del machine learning",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come funziona il machine learning\": tre aree olografiche: esempi etichettati, gruppi senza etichette, agente che riceve premi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come funziona il machine learning\": tre aree olografiche: esempi etichettati, gruppi senza etichette, agente che riceve premi",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Supervisionato (foto etichettate), non supervisionato (gruppi), per rinforzo (premio): corretto",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Le reti neurali e il deep learning",
       "file": "par-03.webp",
       "alt": "Reti neurali e deep learning",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le reti neurali e il deep learning\": rete neurale profonda olografica con molti strati sopra un portatile"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le reti neurali e il deep learning\": rete neurale profonda olografica con molti strati sopra un portatile",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Rete profonda a molti strati",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Allucinazioni, bias e limiti",
       "file": "par-04.webp",
       "alt": "Allucinazioni, bias e limiti",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Allucinazioni, bias e limiti\": specchio olografico che riflette dati sbilanciati e un punto interrogativo rosso su una risposta"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Allucinazioni, bias e limiti\": specchio olografico che riflette dati sbilanciati e un punto interrogativo rosso su una risposta",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il pipeline del machine learning",
       "file": "par-05.webp",
       "alt": "Il pipeline del machine learning",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il pipeline del machine learning\": pipeline olografica su un tavolo: raccolta dati, pulizia, addestramento, verifica, uso"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il pipeline del machine learning\": pipeline olografica su un tavolo: raccolta dati, pulizia, addestramento, verifica, uso",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Dati, pulizia, addestramento, valutazione, uso: pipeline corretta",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

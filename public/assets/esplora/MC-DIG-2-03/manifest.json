@@ -6,49 +6,89 @@
       "paragrafo": "Usare bene il computer: una competenza che si impara",
       "file": "par-01.webp",
       "alt": "Usare bene il computer",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Usare bene il computer: una competenza che si impara\": scrivania ordinata con portatile aperto su una struttura di cartelle olografica pulita, accanto un desktop disordinato sfocato"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Usare bene il computer: una competenza che si impara\": scrivania ordinata con portatile aperto su una struttura di cartelle olografica pulita, accanto un desktop disordinato sfocato",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "1. Organizzare i file: la struttura che ti fa trovare tutto",
       "file": "par-02.webp",
       "alt": "Organizzare i file come una biblioteca",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"1. Organizzare i file: la struttura che ti fa trovare tutto\": biblioteca luminosa con scaffali che si trasformano in un albero olografico di cartelle e sottocartelle"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"1. Organizzare i file: la struttura che ti fa trovare tutto\": biblioteca luminosa con scaffali che si trasformano in un albero olografico di cartelle e sottocartelle",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Albero di cartelle: struttura gerarchica chiara",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "2. Nominare i file: la convenzione che ti salva la vita",
       "file": "par-03.webp",
       "alt": "Nominare i file in modo coerente",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"2. Nominare i file: la convenzione che ti salva la vita\": schermo con file dai nomi illeggibili che si riordinano in fila con etichette colorate olografiche"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"2. Nominare i file: la convenzione che ti salva la vita\": schermo con file dai nomi illeggibili che si riordinano in fila con etichette colorate olografiche",
+      "audit": {
+        "esito": "trova-l-errore",
+        "nota": "I nomi dei file mostrati sono stringhe casuali tipo \"f3a9b2c7…\": l'opposto di una buona convenzione di denominazione",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "3. Backup: la regola 3-2-1",
       "file": "par-04.webp",
       "alt": "Backup con la regola 3-2-1",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"3. Backup: la regola 3-2-1\": tre copie di un documento: sul portatile, su un disco esterno e in una nuvola olografica lontana"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"3. Backup: la regola 3-2-1\": tre copie di un documento: sul portatile, su un disco esterno e in una nuvola olografica lontana",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Portatile, disco esterno e cloud: tre copie, due supporti, una fuori sede",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "4. Gestire i programmi: installazione, aggiornamenti e pulizia",
       "file": "par-05.webp",
       "alt": "Installare, aggiornare e pulire i programmi",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"4. Gestire i programmi: installazione, aggiornamenti e pulizia\": portatile con barre di avanzamento di aggiornamento e un cestino olografico che elimina programmi inutili"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"4. Gestire i programmi: installazione, aggiornamenti e pulizia\": portatile con barre di avanzamento di aggiornamento e un cestino olografico che elimina programmi inutili",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "5. Cloud storage: comodità e rischi",
       "file": "par-06.webp",
       "alt": "Cloud storage: comodità e rischi",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"5. Cloud storage: comodità e rischi\": cartelle che salgono da un tablet verso una nuvola olografica, con un lucchetto e un punto interrogativo di rischio"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"5. Cloud storage: comodità e rischi\": cartelle che salgono da un tablet verso una nuvola olografica, con un lucchetto e un punto interrogativo di rischio",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "6. Privacy del browser: cosa traccia e cosa no",
       "file": "par-07.webp",
       "alt": "Privacy del browser",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"6. Privacy del browser: cosa traccia e cosa no\": finestra di browser con cookie stilizzati e una lente olografica sulla cronologia, icona di navigazione privata"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"6. Privacy del browser: cosa traccia e cosa no\": finestra di browser con cookie stilizzati e una lente olografica sulla cronologia, icona di navigazione privata",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Caso studio: Giulia e il professionista",
       "file": "par-08.webp",
       "alt": "Caso studio: riordinare il desktop",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Caso studio: Giulia e il professionista\": ragazza di seconda media che sistema il desktop del portatile mentre un professionista la guida, prima e dopo olografico"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Caso studio: Giulia e il professionista\": ragazza di seconda media che sistema il desktop del portatile mentre un professionista la guida, prima e dopo olografico",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

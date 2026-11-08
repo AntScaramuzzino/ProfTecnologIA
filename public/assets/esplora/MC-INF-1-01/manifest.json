@@ -6,31 +6,56 @@
       "paragrafo": "Tutto quello che il computer \"vede\" è un numero.",
       "file": "par-01.webp",
       "alt": "Una foto che si scompone in numeri",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Tutto quello che il computer \"vede\" è un numero.\": smartphone che mostra una foto di un paesaggio, con una parte dell'immagine che si scompone in una griglia olografica di numeri luminosi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Tutto quello che il computer \"vede\" è un numero.\": smartphone che mostra una foto di un paesaggio, con una parte dell'immagine che si scompone in una griglia olografica di numeri luminosi",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Perché proprio 0 e 1?",
       "file": "par-02.webp",
       "alt": "Interruttore acceso e spento come 1 e 0",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché proprio 0 e 1?\": primo piano di un interruttore della luce acceso e uno spento su un muro, con i simboli olografici 1 e 0 sopra ciascuno"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché proprio 0 e 1?\": primo piano di un interruttore della luce acceso e uno spento su un muro, con i simboli olografici 1 e 0 sopra ciascuno",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Interruttore acceso = 1, spento = 0: metafora corretta",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Il sistema binario: contare con due sole cifre",
       "file": "par-03.webp",
       "alt": "Contare in binario con file di lampadine accese e spente",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il sistema binario: contare con due sole cifre\": mani di ragazzo che contano con le dita su un banco, mentre sopra fluttuano lampadine accese e spente in fila che rappresentano numeri binari"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il sistema binario: contare con due sole cifre\": mani di ragazzo che contano con le dita su un banco, mentre sopra fluttuano lampadine accese e spente in fila che rappresentano numeri binari",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Lampadine 00010101 (= 21). Nota: le dita delle mani non corrispondono al numero, possono distrarre",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Da bit a immagine: come funziona davvero una foto",
       "file": "par-04.webp",
       "alt": "Pixel di uno schermo formati da luci rosse, verdi e blu",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Da bit a immagine: come funziona davvero una foto\": ingrandimento di uno schermo di smartphone in cui i pixel diventano visibili, ciascuno composto da tre luci rossa, verde e blu"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Da bit a immagine: come funziona davvero una foto\": ingrandimento di uno schermo di smartphone in cui i pixel diventano visibili, ciascuno composto da tre luci rossa, verde e blu",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Pixel ingranditi in sottopixel rosso, verde, blu: corretto",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Le unità di misura dell'informazione",
       "file": "par-05.webp",
       "alt": "Unità di misura dell'informazione dalla più piccola alla più grande",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le unità di misura dell'informazione\": tavolo con una scala di contenitori sempre più grandi, da un piccolo chip a una chiavetta, un disco e un rack di server, con ologrammi di dimensione crescente"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le unità di misura dell'informazione\": tavolo con una scala di contenitori sempre più grandi, da un piccolo chip a una chiavetta, un disco e un rack di server, con ologrammi di dimensione crescente",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Chip, chiavetta, disco, server: capacità crescenti",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

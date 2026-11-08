@@ -6,37 +6,67 @@
       "paragrafo": "Un computer fa esattamente quello che gli dici — anche se è assurdo.",
       "file": "par-01.webp",
       "alt": "Un robot che esegue istruzioni alla lettera anche se assurde",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Un computer fa esattamente quello che gli dici — anche se è assurdo.\": piccolo robot su un tavolo che esegue alla lettera istruzioni olografiche e mette le scarpe sopra lo zaino invece di dentro, con espressione buffa"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Un computer fa esattamente quello che gli dici — anche se è assurdo.\": piccolo robot su un tavolo che esegue alla lettera istruzioni olografiche e mette le scarpe sopra lo zaino invece di dentro, con espressione buffa",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Contesto concreto o apertura: l'immagine dà un riferimento visivo",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Cos'è un algoritmo",
       "file": "par-02.webp",
       "alt": "Un algoritmo come procedimento passo per passo",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Cos'è un algoritmo\": mano che sistema carte con frecce in fila su un tavolo formando un procedimento, con l'ologramma del risultato che appare alla fine"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Cos'è un algoritmo\": mano che sistema carte con frecce in fila su un tavolo formando un procedimento, con l'ologramma del risultato che appare alla fine",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Sequenza ordinata di passi verso un risultato",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Le tre strutture fondamentali",
       "file": "par-03.webp",
       "alt": "Sequenza, selezione e ciclo come percorsi di un robot",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le tre strutture fondamentali\": tre piste olografiche per un piccolo robot su un tavolo: una dritta, una con bivio, una ad anello"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le tre strutture fondamentali\": tre piste olografiche per un piccolo robot su un tavolo: una dritta, una con bivio, una ad anello",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Percorso dritto, bivio, anello: tre strutture chiare",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Variabili: dove metti i dati mentre lavori",
       "file": "par-04.webp",
       "alt": "Le variabili come scatole che contengono dati",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Variabili: dove metti i dati mentre lavori\": scatole trasparenti con etichette vuote su uno scaffale, dentro cui entrano ed escono numeri olografici luminosi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Variabili: dove metti i dati mentre lavori\": scatole trasparenti con etichette vuote su uno scaffale, dentro cui entrano ed escono numeri olografici luminosi",
+      "audit": {
+        "esito": "trova-l-errore",
+        "nota": "Nella stessa scatola-variabile finiscono molti numeri: una variabile contiene un solo valore alla volta",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Bug e debug: quando l'algoritmo sbaglia",
       "file": "par-05.webp",
       "alt": "Trovare e correggere un bug",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Bug e debug: quando l'algoritmo sbaglia\": ragazza al computer con una lente olografica che evidenzia in rosso una riga sbagliata in un diagramma, accanto un piccolo insetto stilizzato luminoso"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Bug e debug: quando l'algoritmo sbaglia\": ragazza al computer con una lente olografica che evidenzia in rosso una riga sbagliata in un diagramma, accanto un piccolo insetto stilizzato luminoso",
+      "audit": {
+        "esito": "decorativa",
+        "nota": "Bug e debug: meglio un frammento di codice con l'errore",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Pseudocodice e diagrammi di flusso",
       "file": "par-06.webp",
       "alt": "Pseudocodice e diagramma di flusso a confronto",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Pseudocodice e diagrammi di flusso\": quaderno aperto con a sinistra righe di pseudocodice illeggibili e a destra un diagramma di flusso, collegati da linee olografiche"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Pseudocodice e diagrammi di flusso\": quaderno aperto con a sinistra righe di pseudocodice illeggibili e a destra un diagramma di flusso, collegati da linee olografiche",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Pseudocodice a sinistra e diagramma di flusso a destra",
+        "data": "2026-11-08"
+      }
     }
   ]
 }

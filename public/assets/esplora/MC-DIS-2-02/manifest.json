@@ -6,43 +6,78 @@
       "paragrafo": "Il problema delle proiezioni ortogonali",
       "file": "par-01.webp",
       "alt": "Il limite delle proiezioni ortogonali",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il problema delle proiezioni ortogonali\": tre viste ortogonali su un foglio e accanto un punto interrogativo olografico sulla forma reale dell'oggetto"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il problema delle proiezioni ortogonali\": tre viste ortogonali su un foglio e accanto un punto interrogativo olografico sulla forma reale dell'oggetto",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Tre viste e il solido con il punto interrogativo: introduce bene il problema",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Cos'è l'assonometria — la logica di base",
       "file": "par-02.webp",
       "alt": "La logica dell'assonometria",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Cos'è l'assonometria — la logica di base\": terna di assi olografici su un tavolo con un cubo disegnato in assonometria lungo gli assi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Cos'è l'assonometria — la logica di base\": terna di assi olografici su un tavolo con un cubo disegnato in assonometria lungo gli assi",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Tre assi e un cubo: logica di base chiara",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Assonometria cavaliera obliqua",
       "file": "par-03.webp",
       "alt": "Assonometria cavaliera",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Assonometria cavaliera obliqua\": foglio con un mobile disegnato in assonometria cavaliera, faccia frontale vera e profondità a 45 gradi evidenziata in ologramma"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Assonometria cavaliera obliqua\": foglio con un mobile disegnato in assonometria cavaliera, faccia frontale vera e profondità a 45 gradi evidenziata in ologramma",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Asse di fuga a 45°: coerente con la cavaliera",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Assonometria isometrica",
       "file": "par-04.webp",
       "alt": "Assonometria isometrica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Assonometria isometrica\": foglio con un cubo in assonometria isometrica e tre angoli uguali di 120 gradi evidenziati da ologrammi"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Assonometria isometrica\": foglio con un cubo in assonometria isometrica e tre angoli uguali di 120 gradi evidenziati da ologrammi",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Tre angoli da 120° attorno al cubo: corretto",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Confronto tra i due tipi: quando scegliere quale",
       "file": "par-05.webp",
       "alt": "Confronto cavaliera e isometrica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Confronto tra i due tipi: quando scegliere quale\": due disegni affiancati dello stesso oggetto in cavaliera e in isometrica, con un separatore olografico"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Confronto tra i due tipi: quando scegliere quale\": due disegni affiancati dello stesso oggetto in cavaliera e in isometrica, con un separatore olografico",
+      "audit": {
+        "esito": "sostituisci-con-schema",
+        "nota": "I due pezzi a confronto sembrano quasi uguali: la differenza tra cavaliera e isometrica non si vede",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Assonometria di figure composte: la strategia per box",
       "file": "par-06.webp",
       "alt": "Strategia della scatola per figure composte",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Assonometria di figure composte: la strategia per box\": disegno di un solido composto costruito partendo da una scatola olografica trasparente che lo racchiude"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Assonometria di figure composte: la strategia per box\": disegno di un solido composto costruito partendo da una scatola olografica trasparente che lo racchiude",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Solido composto inscritto nel parallelepipedo di ingombro: strategia \"per box\" ben rappresentata",
+        "data": "2026-11-08"
+      }
     },
     {
       "paragrafo": "Le ellissi: come si disegnano i cerchi in assonometria",
       "file": "par-07.webp",
       "alt": "Cerchi che diventano ellissi in assonometria",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le ellissi: come si disegnano i cerchi in assonometria\": cilindro disegnato in assonometria con le ellissi delle basi evidenziate da contorni olografici"
+      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le ellissi: come si disegnano i cerchi in assonometria\": cilindro disegnato in assonometria con le ellissi delle basi evidenziate da contorni olografici",
+      "audit": {
+        "esito": "tieni",
+        "nota": "Cerchi che diventano ellissi sul cilindro: coerente",
+        "data": "2026-11-08"
+      }
     }
   ]
 }
