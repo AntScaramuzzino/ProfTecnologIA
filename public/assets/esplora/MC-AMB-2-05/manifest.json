@@ -16,13 +16,16 @@
     {
       "paragrafo": "Il ciclo artificiale dell'acqua in sei fasi",
       "file": "par-02.webp",
-      "alt": "Le sei fasi del ciclo artificiale dell'acqua",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il ciclo artificiale dell'acqua in sei fasi\": plastico con sei stazioni in sequenza: captazione dal fiume, potabilizzatore, serbatoio, rete, casa, depuratore; frecce olografiche blu",
+      "alt": "Schema didattico: Il ciclo artificiale dell'acqua in sei fasi",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Sequenza di impianti senza fasi riconoscibili: serve schema delle sei fasi",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il ciclo artificiale dell'acqua in sei fasi\": plastico con sei stazioni in sequenza: captazione dal fiume, potabilizzatore, serbatoio, rete, casa, depuratore; frecce olografiche blu"
     },
     {
       "paragrafo": "L'acquedotto: pressione, perdite e il problema italiano",

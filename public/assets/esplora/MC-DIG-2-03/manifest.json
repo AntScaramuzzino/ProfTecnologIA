@@ -27,13 +27,16 @@
     {
       "paragrafo": "2. Nominare i file: la convenzione che ti salva la vita",
       "file": "par-03.webp",
-      "alt": "Nominare i file in modo coerente",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"2. Nominare i file: la convenzione che ti salva la vita\": schermo con file dai nomi illeggibili che si riordinano in fila con etichette colorate olografiche",
+      "alt": "Schema didattico: 2. Nominare i file: la convenzione che ti salva la vita",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "I nomi dei file mostrati sono stringhe casuali tipo \"f3a9b2c7…\": l'opposto di una buona convenzione di denominazione",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"2. Nominare i file: la convenzione che ti salva la vita\": schermo con file dai nomi illeggibili che si riordinano in fila con etichette colorate olografiche"
     },
     {
       "paragrafo": "3. Backup: la regola 3-2-1",

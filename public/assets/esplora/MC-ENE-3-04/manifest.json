@@ -5,13 +5,16 @@
     {
       "paragrafo": "L'elettricità: cos'è davvero?",
       "file": "par-01.webp",
-      "alt": "Cos'è l'elettricità",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'elettricità: cos'è davvero?\": ologramma di atomi con elettroni che si spostano lungo un filo di rame su un tavolo da laboratorio",
+      "alt": "Schema didattico: L'elettricità: cos'è davvero?",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Lungo il filo si spostano interi atomi con il nucleo: nella corrente si muovono gli elettroni, i nuclei restano fermi",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'elettricità: cos'è davvero?\": ologramma di atomi con elettroni che si spostano lungo un filo di rame su un tavolo da laboratorio"
     },
     {
       "paragrafo": "Le tre grandezze fondamentali",
@@ -38,13 +41,16 @@
     {
       "paragrafo": "La potenza elettrica",
       "file": "par-04.webp",
-      "alt": "La potenza elettrica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La potenza elettrica\": lampadina, phon e caricatore su un tavolo con barre olografiche di potenza diversa",
+      "alt": "Schema didattico: La potenza elettrica",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Le barre mostrano la lampadina con potenza simile al phon: in realtà il phon assorbe da 30 a 200 volte di più",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La potenza elettrica\": lampadina, phon e caricatore su un tavolo con barre olografiche di potenza diversa"
     },
     {
       "paragrafo": "Circuiti in serie e in parallelo",

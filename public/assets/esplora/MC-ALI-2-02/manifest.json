@@ -38,13 +38,16 @@
     {
       "paragrafo": "Come leggere un'etichetta alimentare: decodificare ciò che c'è scritto",
       "file": "par-04.webp",
-      "alt": "Lettura dell'etichetta alimentare con una lente",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come leggere un'etichetta alimentare: decodificare ciò che c'è scritto\": mano che tiene una confezione alimentare girata sul retro, con l'etichetta ingrandita da una lente olografica che evidenzia zone colorate senza testo",
+      "alt": "Schema didattico: Come leggere un'etichetta alimentare: decodificare ciò che c'è scritto",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Etichetta illeggibile e inventata: serve un'etichetta reale annotata",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come leggere un'etichetta alimentare: decodificare ciò che c'è scritto\": mano che tiene una confezione alimentare girata sul retro, con l'etichetta ingrandita da una lente olografica che evidenzia zone colorate senza testo"
     },
     {
       "paragrafo": "La catena del freddo: il viaggio del surgelato dal produttore a casa tua",

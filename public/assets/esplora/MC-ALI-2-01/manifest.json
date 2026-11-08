@@ -27,13 +27,16 @@
     {
       "paragrafo": "Come le piante si nutrono: la fotosintesi e i nutrienti del suolo",
       "file": "par-03.webp",
-      "alt": "Fotosintesi e assorbimento dei nutrienti di una pianta",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come le piante si nutrono: la fotosintesi e i nutrienti del suolo\": piantina di fagiolo in vaso al sole su un davanzale, frecce olografiche di luce che entrano nella foglia e di nutrienti che salgono dalle radici",
+      "alt": "Schema didattico: Come le piante si nutrono: la fotosintesi e i nutrienti del suolo",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Sole, radici e molecole generiche: non mostra CO2, acqua, O2 e glucosio, cioè gli elementi della fotosintesi",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come le piante si nutrono: la fotosintesi e i nutrienti del suolo\": piantina di fagiolo in vaso al sole su un davanzale, frecce olografiche di luce che entrano nella foglia e di nutrienti che salgono dalle radici"
     },
     {
       "paragrafo": "Come si coltiva: le tecniche agronomiche principali",
@@ -93,13 +96,16 @@
     {
       "paragrafo": "Il ciclo biologico della pianta: dal seme al frutto",
       "file": "par-09.webp",
-      "alt": "Ciclo biologico della pianta dal seme al frutto",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il ciclo biologico della pianta: dal seme al frutto\": sequenza su un tavolo da laboratorio: seme, germoglio, piantina, pianta fiorita e frutto, collegati da una freccia olografica circolare",
+      "alt": "Schema didattico: Il ciclo biologico della pianta: dal seme al frutto",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Ciclo corretto nelle fasi, ma il seme iniziale è un fagiolo e il frutto finale è un pomodoro: specie diverse nello stesso ciclo",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il ciclo biologico della pianta: dal seme al frutto\": sequenza su un tavolo da laboratorio: seme, germoglio, piantina, pianta fiorita e frutto, collegati da una freccia olografica circolare"
     },
     {
       "paragrafo": "Il cambiamento climatico e le colture: le sfide del prossimo decennio",

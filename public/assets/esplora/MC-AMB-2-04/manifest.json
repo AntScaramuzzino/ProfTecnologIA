@@ -16,13 +16,16 @@
     {
       "paragrafo": "L'orientamento solare: perché le finestre a sud non sono casuali",
       "file": "par-02.webp",
-      "alt": "Orientamento solare con finestre a sud",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'orientamento solare: perché le finestre a sud non sono casuali\": plastico di casa su un tavolo con una bussola olografica e il percorso del sole a sud, ampie finestre rivolte verso il sole",
+      "alt": "Schema didattico: L'orientamento solare: perché le finestre a sud non sono casuali",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Rosa dei venti ambigua: non si capisce l'orientamento a sud delle vetrate",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'orientamento solare: perché le finestre a sud non sono casuali\": plastico di casa su un tavolo con una bussola olografica e il percorso del sole a sud, ampie finestre rivolte verso il sole"
     },
     {
       "paragrafo": "L'angolo del sole: estate contro inverno — perché le falde del tetto hanno quell'inclinazione",
@@ -38,13 +41,16 @@
     {
       "paragrafo": "La massa termica: il muro che accumula calore",
       "file": "par-04.webp",
-      "alt": "Massa termica di un muro in pietra",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La massa termica: il muro che accumula calore\": spesso muro di pietra illuminato dal sole del pomeriggio con un'onda olografica ambra di calore che viene accumulato e poi rilasciato",
+      "alt": "Schema didattico: La massa termica: il muro che accumula calore",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Mostra il calore che attraversa il muro, non l'accumulo e il rilascio ritardato (sfasamento) tipici della massa termica",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"La massa termica: il muro che accumula calore\": spesso muro di pietra illuminato dal sole del pomeriggio con un'onda olografica ambra di calore che viene accumulato e poi rilasciato"
     },
     {
       "paragrafo": "L'isolamento termico: la trasmittanza U e i ponti termici",

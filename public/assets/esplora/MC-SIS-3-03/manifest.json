@@ -27,13 +27,16 @@
     {
       "paragrafo": "Il Business Model Canvas",
       "file": "par-03.webp",
-      "alt": "Il Business Model Canvas",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il Business Model Canvas\": lavagna con nove riquadri colorati di post-it vuoti, studenti che compilano il modello di business",
+      "alt": "Schema didattico: Il Business Model Canvas",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "La lavagna ha 8 riquadri disposti a griglia: il Business Model Canvas ne ha 9, con una disposizione diversa (5 in alto, 2 in basso)",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il Business Model Canvas\": lavagna con nove riquadri colorati di post-it vuoti, studenti che compilano il modello di business"
     },
     {
       "paragrafo": "Il metodo Lean Startup",

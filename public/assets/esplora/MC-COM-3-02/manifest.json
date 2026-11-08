@@ -27,13 +27,16 @@
     {
       "paragrafo": "Compressione: come si riduce un file senza perdere (troppo)",
       "file": "par-03.webp",
-      "alt": "Compressione dei file",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Compressione: come si riduce un file senza perdere (troppo)\": un file olografico grande che passa attraverso una morsa e ne esce più piccolo, con pochi frammenti persi",
+      "alt": "Schema didattico: Compressione: come si riduce un file senza perdere (troppo)",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Metafora della morsa fuorviante: la compressione elimina ridondanza, non \"schiaccia\" i dati",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Compressione: come si riduce un file senza perdere (troppo)\": un file olografico grande che passa attraverso una morsa e ne esce più piccolo, con pochi frammenti persi"
     },
     {
       "paragrafo": "Diritto d'autore: come funziona in Italia e quanto dura",
@@ -60,13 +63,16 @@
     {
       "paragrafo": "Le licenze Creative Commons: cosa puoi fare con ogni licenza",
       "file": "par-06.webp",
-      "alt": "Licenze Creative Commons",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le licenze Creative Commons: cosa puoi fare con ogni licenza\": sei piccoli ologrammi di licenze Creative Commons stilizzati senza testo sopra una pila di foto e brani musicali",
+      "alt": "Schema didattico: Le licenze Creative Commons: cosa puoi fare con ogni licenza",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Icone CC inventate: una icona (persona barrata) non esiste nelle licenze Creative Commons",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le licenze Creative Commons: cosa puoi fare con ogni licenza\": sei piccoli ologrammi di licenze Creative Commons stilizzati senza testo sopra una pila di foto e brani musicali"
     },
     {
       "paragrafo": "Produzione podcast: dalla struttura alla distribuzione",

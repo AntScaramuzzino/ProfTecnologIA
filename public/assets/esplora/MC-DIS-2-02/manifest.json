@@ -49,13 +49,16 @@
     {
       "paragrafo": "Confronto tra i due tipi: quando scegliere quale",
       "file": "par-05.webp",
-      "alt": "Confronto cavaliera e isometrica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Confronto tra i due tipi: quando scegliere quale\": due disegni affiancati dello stesso oggetto in cavaliera e in isometrica, con un separatore olografico",
+      "alt": "Schema didattico: Confronto tra i due tipi: quando scegliere quale",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "I due pezzi a confronto sembrano quasi uguali: la differenza tra cavaliera e isometrica non si vede",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Confronto tra i due tipi: quando scegliere quale\": due disegni affiancati dello stesso oggetto in cavaliera e in isometrica, con un separatore olografico"
     },
     {
       "paragrafo": "Assonometria di figure composte: la strategia per box",

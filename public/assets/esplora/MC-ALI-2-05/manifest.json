@@ -49,13 +49,16 @@
     {
       "paragrafo": "I simboli sul packaging: cosa significano davvero",
       "file": "par-05.webp",
-      "alt": "I simboli sulle confezioni ingranditi",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I simboli sul packaging: cosa significano davvero\": retro di confezioni alimentari con simboli di riciclo e compostabilità ingranditi in ologramma, senza scritte leggibili",
+      "alt": "Schema didattico: I simboli sul packaging: cosa significano davvero",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Simboli generici, non quelli normati (Mobius loop, codici materiale, CONAI): serve tavola dei simboli reali",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I simboli sul packaging: cosa significano davvero\": retro di confezioni alimentari con simboli di riciclo e compostabilità ingranditi in ologramma, senza scritte leggibili"
     }
   ]
 }

@@ -796,7 +796,9 @@ function ZonePanel({
                   loading="lazy"
                 />
                 <figcaption className="px-3 py-1.5 text-[11px] leading-snug text-slate-500">
-                  Immagine illustrativa generata con IA (Canva)
+                  {paragraphImage.fonte === "schema"
+                    ? "Schema didattico (disegno vettoriale, non generato con IA)"
+                    : "Immagine illustrativa generata con IA (Canva)"}
                 </figcaption>
               </figure>
             )}
@@ -820,10 +822,11 @@ function ZonePanel({
     const galleriaConEsplora: VisualAsset[] = [
       ...galleriaAssets,
       ...esploraImages.map((img) => ({
-        kind: "generated" as const,
+        kind: img.fonte === "schema" ? ("diagram" as const) : ("generated" as const),
         label: img.paragrafo,
         src: img.src,
-        prompt: img.prompt,
+        prompt: img.fonte === "schema" ? undefined : img.prompt,
+        didascalia: img.didascalia,
       })),
     ];
 

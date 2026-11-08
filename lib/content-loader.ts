@@ -21,6 +21,8 @@ export interface VisualAsset {
   src: string;
   /** Prompt usato per generare l'immagine con IA (mostrato come didascalia) */
   prompt?: string;
+  /** Didascalia per immagini non generate con IA (es. schemi didattici) */
+  didascalia?: string;
 }
 
 function stripMarkdown(value: string): string {
@@ -187,6 +189,10 @@ export interface EsploraImage {
   alt: string;
   /** Prompt usato per generare l'immagine (Canva AI) */
   prompt?: string;
+  /** "ia" = generata con Canva AI; "schema" = schema didattico disegnato */
+  fonte?: "ia" | "schema";
+  /** Didascalia per gli schemi didattici */
+  didascalia?: string;
 }
 
 /**
@@ -199,7 +205,7 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
   if (!fs.existsSync(file)) return [];
   try {
     const data = JSON.parse(fs.readFileSync(file, "utf-8")) as {
-      immagini?: { paragrafo: string; file: string; alt: string; prompt?: string }[];
+      immagini?: { paragrafo: string; file: string; alt: string; prompt?: string; fonte?: "ia" | "schema"; didascalia?: string }[];
     };
     return (data.immagini ?? [])
       .filter((img) => fs.existsSync(path.join(PUBLIC_ESPLORA_ROOT, mcId, img.file)))
@@ -207,6 +213,8 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
         paragrafo: img.paragrafo,
         alt: img.alt,
         prompt: img.prompt,
+        fonte: img.fonte ?? "ia",
+        didascalia: img.didascalia,
         src: `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.file}`,
       }));
   } catch {

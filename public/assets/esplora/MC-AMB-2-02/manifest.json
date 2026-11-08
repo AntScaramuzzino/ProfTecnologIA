@@ -71,24 +71,30 @@
     {
       "paragrafo": "Le classi energetiche degli edifici — dalla G alla A4",
       "file": "par-07.webp",
-      "alt": "Classi energetiche degli edifici dal rosso al verde",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le classi energetiche degli edifici — dalla G alla A4\": fila di case dalla più vecchia alla più nuova, sopra ciascuna una barra olografica colorata dal rosso al verde della classe energetica",
+      "alt": "Schema didattico: Le classi energetiche degli edifici — dalla G alla A4",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Frecce colorate senza lettere G–A4: la scala delle classi non si legge",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Le classi energetiche degli edifici — dalla G alla A4\": fila di case dalla più vecchia alla più nuova, sopra ciascuna una barra olografica colorata dal rosso al verde della classe energetica"
     },
     {
       "paragrafo": "Come si legge una bolletta elettrica",
       "file": "par-08.webp",
-      "alt": "Lettura della bolletta elettrica",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si legge una bolletta elettrica\": bolletta elettrica su un tavolo di cucina accanto a una calcolatrice, con una lente olografica che evidenzia grafici di consumo senza testo leggibile",
+      "alt": "Schema didattico: Come si legge una bolletta elettrica",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Bolletta illeggibile: serve fac-simile reale annotato",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si legge una bolletta elettrica\": bolletta elettrica su un tavolo di cucina accanto a una calcolatrice, con una lente olografica che evidenzia grafici di consumo senza testo leggibile"
     }
   ]
 }

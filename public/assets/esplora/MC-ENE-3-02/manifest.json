@@ -60,13 +60,16 @@
     {
       "paragrafo": "L'effetto serra e il cambiamento climatico",
       "file": "par-06.webp",
-      "alt": "L'effetto serra",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'effetto serra e il cambiamento climatico\": globo terrestre avvolto da uno strato olografico che trattiene i raggi infrarossi, termometro in salita",
+      "alt": "Schema didattico: L'effetto serra e il cambiamento climatico",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Frecce che escono dalla Terra senza rinvio verso il suolo: il meccanismo dell'effetto serra non si vede",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"L'effetto serra e il cambiamento climatico\": globo terrestre avvolto da uno strato olografico che trattiene i raggi infrarossi, termometro in salita"
     },
     {
       "paragrafo": "Caso studio: calcola l'impronta carbonica di un volo — e confrontala",

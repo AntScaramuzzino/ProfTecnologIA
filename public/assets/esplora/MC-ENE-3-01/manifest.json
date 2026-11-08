@@ -38,13 +38,16 @@
     {
       "paragrafo": "Il vantaggio meccanico: fare più con meno forza",
       "file": "par-04.webp",
-      "alt": "Il vantaggio meccanico",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il vantaggio meccanico: fare più con meno forza\": piccolo peso che solleva un grande peso tramite un sistema meccanico, bilancia olografica del vantaggio",
+      "alt": "Schema didattico: Il vantaggio meccanico: fare più con meno forza",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Il peso grande è lontano dal fulcro quanto (o più) della forza applicata: così non c'è vantaggio meccanico, l'opposto del concetto",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Il vantaggio meccanico: fare più con meno forza\": piccolo peso che solleva un grande peso tramite un sistema meccanico, bilancia olografica del vantaggio"
     },
     {
       "paragrafo": "La leva",

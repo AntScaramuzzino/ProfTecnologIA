@@ -38,13 +38,16 @@
     {
       "paragrafo": "Scratch: l'ambiente di programmazione a blocchi",
       "file": "par-04.webp",
-      "alt": "Ambiente di programmazione a blocchi in classe",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Scratch: l'ambiente di programmazione a blocchi\": portatile in aula con un ambiente di programmazione a blocchi colorati sullo schermo e un gattino sprite stilizzato, studenti sullo sfondo",
+      "alt": "Schema didattico: Scratch: l'ambiente di programmazione a blocchi",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Interfaccia simil-Scratch con blocchi inventati: meglio uno screenshot reale dell'editor",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Scratch: l'ambiente di programmazione a blocchi\": portatile in aula con un ambiente di programmazione a blocchi colorati sullo schermo e un gattino sprite stilizzato, studenti sullo sfondo"
     },
     {
       "paragrafo": "Il sistema degli eventi e del broadcast",

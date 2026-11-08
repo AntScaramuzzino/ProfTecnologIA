@@ -38,13 +38,16 @@
     {
       "paragrafo": "Variabili: dove metti i dati mentre lavori",
       "file": "par-04.webp",
-      "alt": "Le variabili come scatole che contengono dati",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Variabili: dove metti i dati mentre lavori\": scatole trasparenti con etichette vuote su uno scaffale, dentro cui entrano ed escono numeri olografici luminosi",
+      "alt": "Schema didattico: Variabili: dove metti i dati mentre lavori",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Nella stessa scatola-variabile finiscono molti numeri: una variabile contiene un solo valore alla volta",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Variabili: dove metti i dati mentre lavori\": scatole trasparenti con etichette vuote su uno scaffale, dentro cui entrano ed escono numeri olografici luminosi"
     },
     {
       "paragrafo": "Bug e debug: quando l'algoritmo sbaglia",

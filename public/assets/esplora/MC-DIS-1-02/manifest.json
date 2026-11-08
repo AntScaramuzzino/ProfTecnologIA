@@ -27,24 +27,30 @@
     {
       "paragrafo": "Come si calcola la scala: formula e procedura",
       "file": "par-03.webp",
-      "alt": "Calcolo delle misure in scala",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si calcola la scala: formula e procedura\": calcolatrice, righello e foglio con una proporzione scritta a matita, con un ologramma che trasforma una misura reale nella misura sul disegno",
+      "alt": "Schema didattico: Come si calcola la scala: formula e procedura",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Il calcolo scritto sul foglio dà \"x = 5·100 = 500 cm\" per una misura reale di 5 m in scala 1:100: il risultato giusto sul disegno è 5 cm (l'ologramma mostra correttamente 5 cm)",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si calcola la scala: formula e procedura\": calcolatrice, righello e foglio con una proporzione scritta a matita, con un ologramma che trasforma una misura reale nella misura sul disegno"
     },
     {
       "paragrafo": "I formati dei fogli: la famiglia ISO 216",
       "file": "par-04.webp",
-      "alt": "Formati della serie A ISO 216 sovrapposti",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I formati dei fogli: la famiglia ISO 216\": fogli A0, A1, A2, A3 e A4 sovrapposti uno sull'altro a ventaglio su un tavolo, ciascuno metà del precedente, con contorni olografici",
+      "alt": "Schema didattico: I formati dei fogli: la famiglia ISO 216",
       "audit": {
-        "esito": "sostituisci-con-schema",
+        "esito": "sostituita-con-schema",
         "nota": "Fogli A0–A4 sovrapposti a ventaglio con dimensioni simili: non si vede che ogni formato è la metà del precedente",
+        "esito_precedente": "sostituisci-con-schema",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA non mostrava il concetto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"I formati dei fogli: la famiglia ISO 216\": fogli A0, A1, A2, A3 e A4 sovrapposti uno sull'altro a ventaglio su un tavolo, ciascuno metà del precedente, con contorni olografici"
     },
     {
       "paragrafo": "La piegatura del foglio A4",

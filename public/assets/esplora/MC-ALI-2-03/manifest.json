@@ -82,13 +82,16 @@
     {
       "paragrafo": "Come si leggono i valori nutrizionali per fare scelte informate",
       "file": "par-08.webp",
-      "alt": "Confronto delle tabelle nutrizionali di due prodotti",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si leggono i valori nutrizionali per fare scelte informate\": due confezioni di biscotti affiancate con le tabelle nutrizionali ingrandite in ologramma e barre colorate di confronto senza testo",
+      "alt": "Schema didattico: Come si leggono i valori nutrizionali per fare scelte informate",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Valori nutrizionali inventati e incoerenti (kcal e grammi casuali): sostituire con tabella reale",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Come si leggono i valori nutrizionali per fare scelte informate\": due confezioni di biscotti affiancate con le tabelle nutrizionali ingrandite in ologramma e barre colorate di confronto senza testo"
     }
   ]
 }

@@ -27,13 +27,16 @@
     {
       "paragrafo": "Perché è difficile da rompere: i numeri primi enormi",
       "file": "par-03.webp",
-      "alt": "I numeri primi alla base della sicurezza",
-      "prompt": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché è difficile da rompere: i numeri primi enormi\": lavagna con numeri primi enormi e un ologramma di due numeri che si moltiplicano in un numero gigantesco",
+      "alt": "Schema didattico: Perché è difficile da rompere: i numeri primi enormi",
       "audit": {
-        "esito": "trova-l-errore",
+        "esito": "sostituita-con-schema",
         "nota": "Calcolo sbagliato: 9999991 × 9999967 fa 99999580000297, non 99999580000057; inoltre 9999967 non è primo",
+        "esito_precedente": "trova-l-errore",
         "data": "2026-11-08"
-      }
+      },
+      "fonte": "schema",
+      "didascalia": "disegnato a mano in formato vettoriale sulla base del testo del paragrafo; sostituisce l'immagine precedente perché l'immagine generata con IA conteneva un errore di contenuto.",
+      "prompt_precedente": "Immagine per il libro, sullo stile visivo delle presentazioni (foto realistica, luce calda naturale, sovrapposizioni olografiche ciano e ambra stile HUD, nessun testo né scritte), in base al testo del paragrafo \"Perché è difficile da rompere: i numeri primi enormi\": lavagna con numeri primi enormi e un ologramma di due numeri che si moltiplicano in un numero gigantesco"
     },
     {
       "paragrafo": "HTTPS: il lucchetto verde nel browser",
