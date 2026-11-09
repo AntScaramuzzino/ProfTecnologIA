@@ -1,10 +1,10 @@
 # Hook audio — MC-SIS-3-03
-**Titolo:** "La storia di imprenditorialità e innovazione tecnologica"
+**Titolo:** "L'app che vale un milione. Oppure no."
 **MC:** MC-SIS-3-03 — Imprenditorialità e innovazione tecnologica
-**Classe:** 3ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** imprenditorialità e innovazione tecnologica
-**SDG principale:** 8
+**Classe:** 3ª media · Livello Intermediate
+**Durata:** 1 min 47 sec
+**Oggetto reale:** un'idea scritta su un post-it
+**SDG principale:** 9
 
 ---
 
@@ -14,44 +14,91 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a imprenditorialità e innovazione tecnologica? [PAUSA]
+Hai mai avuto un'idea e pensato: perché non esiste ancora? [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Un'app, un oggetto, un servizio per la tua scuola. [PAUSA]
+
+Scrivila su un foglietto. [ENFASI] [PAUSA]
+
+Adesso vediamo se vale qualcosa.
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente comprende il processo di creazione di un'impresa innovativa (idea, validazione, prototipo, business model, lancio), conosce il ruolo delle start-up nell'ecosistema dell'innovazione, e sa applicare il metodo Lean Startup a un problema real. [PAUSA]
+Se un'idea non esiste, quasi sempre c'è uno di tre motivi. [PAUSA]
 
-Non è un caso che imprenditorialità e innovazione tecnologica funzioni esattamente così. [PAUSA]
+Primo: esiste già, e non lo sai. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+Secondo: non c'è abbastanza gente che la vuole davvero. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Terzo: è difficile da realizzare, e nessuno ci ha provato con abbastanza metodo. [PAUSA]
+
+Il terzo motivo è il più interessante. Perché nessuno ci ha provato con metodo non vuol dire che sia impossibile. Vuol dire che c'è un'occasione. [PAUSA]
+
+E per coglierla esiste un metodo che si può imparare. Si chiama imprenditorialità, e non serve solo a chi vuole aprire un'azienda: serve ogni volta che devi risolvere un problema con poche risorse.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Ecco la cosa che sorprende. [PAUSA]
 
-La risposta è nascosta in imprenditorialità e innovazione tecnologica — e una volta che la conosci, la vedi ovunque. [PAUSA]
+Le imprese nuove di solito non partono con il prodotto perfetto. [ENFASI] [PAUSA]
+
+Partono con la prova più semplice possibile, per capire se l'idea interessa a qualcuno. [PAUSA]
+
+Il primo sito di Airbnb era una semplice pagina web con le foto di un appartamento.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire imprenditorialità e innovazione tecnologica che oggi esploriamo questa MC. [PAUSA]
+Costruisci una prova minima, misura che cosa succede, impara, cambia strada se serve. [PAUSA]
 
-Imparerai Lo studente comprende il processo di creazione di un'impresa innovativa (idea, validazione, prototipo, business model, l. [PAUSA]
+E disegna su un foglio solo come la tua idea crea valore: per chi, con quali risorse, con quali costi. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Business Analyst / Consulente Aziendale nel 2030. [PAUSA]
+Sono gli strumenti che userai in questa MC.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso identifica un problema reale della tua scuola o quartiere che la tecnologia potrebbe risolvere: compila un business model canvas semplificato (5 blocchi), definisci il tuo mvp e presenta l'idea alla classe in 3 minuti.
+Riprendi il foglietto con la tua idea. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Scrivi sotto: chi ha questo problema, davvero? [PAUSA]
+
+E come potresti scoprirlo questa settimana, senza spendere niente?
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-SIS-3-03",
+  "titolo_hook": "L'app che vale un milione. Oppure no.",
+  "oggetto_reale": "un'idea scritta su un post-it",
+  "durata_sec": 107,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "Il metodo Lean Startup: costruisci un MVP, misura, impara",
+    "Il primo sito di Airbnb era una semplice pagina web con le foto di un appartamento",
+    "Pivot: cambio di direzione basato sui dati",
+    "Business Model Canvas in 9 blocchi"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-SIS-3-03_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 9,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Tono energico e concreto. Il colpo di scena ribalta l'idea che serva il prodotto perfetto prima di partire.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

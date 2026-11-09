@@ -58,12 +58,12 @@
     "avanzato": "Cifrare un messaggio con il cifrario di Cesare (a mano o con Python), poi decifrarlo con la forza bruta (prova tutte le 26 chiavi). Riflettere su perché i cifrari antichi non bastano e cosa cambia nella crittografia moderna."
   },
   "hook_audio": {
-    "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
-    "oggetto_reale": "un messaggio cifrato",
-    "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-    "durata_min": 0.9,
-    "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
-    "durata_secondi": 56
+    "titolo": "Quarantasette notifiche",
+    "oggetto_reale": "lo smartphone con le notifiche",
+    "domanda_avvio": "Se ricevessi adesso un messaggio urgente che ti dice che il tuo account è in pericolo, cosa faresti? Come faresti a capire se è vero?",
+    "durata_min": 1.9,
+    "durata_secondi": 115,
+    "durata_sec": 115
   },
   "professione_futura": {
     "titolo": "Esperto in Cybersecurity",

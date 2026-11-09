@@ -1,10 +1,10 @@
 # Hook audio — MC-ENE-3-05
-**Titolo:** "Perché il cofano è caldo?"
+**Titolo:** "Il motore della moto di tuo nonno"
 **MC:** MC-ENE-3-05 — Macchine termiche e motori
-**Classe:** 3ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** motore di un'automobile
-**SDG principale:** 7
+**Classe:** 3ª media · Livello Intermediate
+**Durata:** 1 min 52 sec
+**Oggetto reale:** una moto
+**SDG principale:** 13
 
 ---
 
@@ -14,44 +14,91 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Se un motore a benzina spreca il 70% dell'energia come calore, perché lo usiamo ancora? [PAUSA]
+Immagina una moto degli anni Settanta. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Quattro cilindri, un rombo sordo, odore di benzina. [PAUSA]
+
+Forse ne hai vista una in una vecchia foto di famiglia. [PAUSA]
+
+Che cosa succede dentro quel motore? [ENFASI]
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente conosce il principio di funzionamento delle macchine termiche (ciclo di Carnot semplificato, motore a scoppio a 4 tempi, turbina a vapore), comprende il concetto di rendimento e le sue limitazioni fisiche imposte dalla termodinamica, e sa. [PAUSA]
+Ogni volta che il pilota apre il gas, dentro il motore esplode una miscela di benzina e aria. [PAUSA]
 
-Non è un caso che motore di un'automobile funzioni esattamente così. [PAUSA]
+Non una volta: centinaia di volte al secondo. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+L'esplosione spinge un pistone verso il basso. Il pistone fa girare un albero. L'albero fa girare la ruota. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Aspirazione, compressione, scoppio, scarico: quattro tempi, che si ripetono senza sosta. [PAUSA]
+
+Sembra semplice. Non lo è. [PAUSA]
+
+Perché trasformare il calore in movimento ha un prezzo, e la fisica non fa sconti.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Di tutta l'energia che c'è nella benzina, solo il venticinque, trenta per cento arriva alla ruota. [ENFASI] [PAUSA]
 
-Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo princi [PAUSA]
+Il resto se ne va in calore, dal tubo di scarico e dal radiatore. [PAUSA]
+
+Quasi tre quarti del carburante che paghi servono a scaldare l'aria. [PAUSA]
+
+Una moto elettrica, invece, trasforma in movimento il novanta, novantacinque per cento dell'energia. E non emette niente dallo scarico.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire macchine termiche e motori che oggi esploriamo questa MC. [PAUSA]
+Non è solo un cambio di moda. È una differenza di fisica. [PAUSA]
 
-Imparerai Lo studente conosce il principio di funzionamento delle macchine termiche (ciclo di Carnot semplificato, motore a scoppi. [PAUSA]
+In questa MC scoprirai come funzionano le macchine termiche, dalla macchina a vapore al motore a quattro tempi, e perché nessuna può arrivare al cento per cento. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Ingegnere della propulsione elettrica nel 2030. [PAUSA]
+E capirai che cosa cambia con il motore elettrico.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso confronta il motore a scoppio di un'auto tradizionale con un motore elettrico: cerca i rendimenti tipici di entrambi, costruisci un diagramma di sankey semplificato per ciascuno (100 unità di energia in input) e discuti quale è più efficiente — considerando anche la fonte energetica a monte.
+La prossima volta che passi vicino a un'auto appena parcheggiata, avvicina la mano al cofano. Senza toccarlo. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Senti il calore? [PAUSA]
+
+Quella è energia che non è servita a muovere niente.
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-ENE-3-05",
+  "titolo_hook": "Il motore della moto di tuo nonno",
+  "oggetto_reale": "una moto",
+  "durata_sec": 112,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "Motore a benzina: solo il 25-30% dell'energia del carburante diventa movimento, il resto è calore",
+    "Motore elettrico: rendimento del 90-95% e nessuna emissione diretta",
+    "Ciclo a 4 tempi: aspirazione, compressione, scoppio, scarico",
+    "Il ciclo di Carnot fissa un limite al rendimento di ogni macchina termica"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-ENE-3-05_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 13,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script d'autore dal testo della MC (INNESCA), esteso in blocchi. Tono evocativo nel blocco 1, poi numeri scanditi con calma.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

@@ -1,9 +1,9 @@
 # Hook audio — MC-COM-3-05
-**Titolo:** "Il cavo che tiene in piedi internet"
+**Titolo:** "Il cavo che passa sotto l'Atlantico"
 **MC:** MC-COM-3-05 — Reti globali, internet e infrastrutture
-**Classe:** 3ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** cavo sottomarino transatlantico
+**Classe:** 3ª media · Livello Intermediate
+**Durata:** 1 min 57 sec
+**Oggetto reale:** lo smartphone
 **SDG principale:** 9
 
 ---
@@ -14,44 +14,94 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Se un peschereccio strappasse accidentalmente il cavo che collega Europa e America, cosa smetterebbe di funzionare? [PAUSA]
+Scrivi un messaggio a un amico che vive in America. Premi invio. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Dove va, quel messaggio? [PAUSA]
+
+Probabilmente pensi a una nuvola. Il cloud. Invisibile, ovunque. [PAUSA]
+
+Non è così. [ENFASI]
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente comprende internet come infrastruttura fisica e geopolitica globale: conosce i cavi sottomarini, i data center, il sistema DNS e i meccanismi di governance, e sa analizzare criticamente le implicazioni di potere, sicurezza e sovranità dig. [PAUSA]
+Il messaggio lascia il telefono come onda radio e raggiunge l'antenna più vicina. [PAUSA]
 
-Non è un caso che cavo sottomarino transatlantico funzioni esattamente così. [PAUSA]
+Lì diventa luce. Entra in un cavo di fibra ottica sotto la strada, attraversa nodi di rete, arriva sulla costa. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+E poi scende in mare. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Dentro un cavo posato sul fondo dell'oceano, fino a tremila metri di profondità, spesso più o meno come il tubo di un idrante. [PAUSA]
+
+Attraversa l'Atlantico in circa sessanta millisecondi. [PAUSA]
+
+Risale a New York, trova la strada giusta tra milioni di computer e arriva sul telefono del tuo amico. [PAUSA]
+
+Oggi i cavi sottomarini attivi sono circa seicento, e trasportano più del novantacinque per cento del traffico internet del mondo.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+E quando un cavo si rompe? [PAUSA]
 
-Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi [PAUSA]
+Basta un'ancora trascinata sul fondo, un terremoto sottomarino. O qualcuno che lo fa apposta. [PAUSA]
+
+Nel novembre del 2024, nel Mar Baltico, due cavi sono stati danneggiati nel giro di pochi giorni. [ENFASI] [PAUSA]
+
+Il cloud ha i piedi nel fango.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire reti globali, internet e infrastrutture che oggi esploriamo questa MC. [PAUSA]
+Internet non è una nuvola: è un'infrastruttura fisica, fatta di cavi, antenne e data center. [PAUSA]
 
-Imparerai Lo studente comprende internet come infrastruttura fisica e geopolitica globale: conosce i cavi sottomarini, i data cent. [PAUSA]
+Qualcuno la possiede, qualcuno decide dove passa, e due miliardi e mezzo di persone non ci sono ancora collegate. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Internet Infrastructure Analyst nel 2030. [PAUSA]
+In questa MC scoprirai come funziona, e perché è così importante e così fragile.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso usando uno strumento di traceroute online (traceroute.
+La prossima volta che mandi un messaggio, prova a disegnare il suo viaggio. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Telefono, antenna, cavo, mare. [PAUSA]
+
+E chiediti: chi possiede quel cavo?
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-COM-3-05",
+  "titolo_hook": "Il cavo che passa sotto l'Atlantico",
+  "oggetto_reale": "lo smartphone",
+  "durata_sec": 117,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "Circa 600 cavi sottomarini attivi trasportano oltre il 95% del traffico internet mondiale",
+    "Attraversare l'Atlantico in fibra richiede circa 60 millisecondi",
+    "Cavi posati fino a 3.000 metri di profondità, spessi come un tubo dell'idrante",
+    "Novembre 2024: due cavi danneggiati nel Mar Baltico (Germania-Finlandia, Svezia-Lituania)",
+    "2024: 5,5 miliardi di persone usano internet, 2,5 miliardi no"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-COM-3-05_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 9,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script d'autore dal testo della MC (INNESCA), diviso in blocchi. Tono da documentario: dal gesto quotidiano al fondo dell'oceano.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

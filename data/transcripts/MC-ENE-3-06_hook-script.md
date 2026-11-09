@@ -1,9 +1,9 @@
 # Hook audio — MC-ENE-3-06
-**Titolo:** "L'isola che produce più energia di quanta ne consuma"
+**Titolo:** "Alle tre di notte, il vento soffia, ma la città dorme"
 **MC:** MC-ENE-3-06 — Accumulo energetico e smart grid
-**Classe:** 3ª media · Livello A
-**Durata stimata:** 3 min
-**Oggetto reale:** turbina eolica su Samsø, Danimarca
+**Classe:** 3ª media · Livello Advanced
+**Durata:** 1 min 44 sec
+**Oggetto reale:** la presa elettrica di casa
 **SDG principale:** 7
 
 ---
@@ -14,44 +14,91 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Se potessimo immagazzinare l'energia del sole e del vento, avremmo già risolto il problema climatico? [PAUSA]
+Sono le tre di notte, in Danimarca, a dicembre. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+La città dorme. [PAUSA]
+
+Fuori, il vento soffia fortissimo. [PAUSA]
+
+Ed è proprio questo il problema. [ENFASI]
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente comprende il problema dell'intermittenza delle fonti rinnovabili e le principali tecnologie di accumulo energetico (batterie agli ioni di litio, idrogeno verde, accumulo pompato), conosce il concetto di smart grid e sa valutare i trade-of. [PAUSA]
+In un campo eolico le turbine girano al massimo. Producono più elettricità di quanta il Paese riesca a usare in quel momento. [PAUSA]
 
-Non è un caso che turbina eolica su Samsø, Danimarca funzioni esattamente così. [PAUSA]
+Che fine fa quell'energia? [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+Si butta via. Letteralmente. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Le turbine vengono rallentate apposta, il vento viene sprecato. E i produttori vengono pagati, sì, pagati, per non produrre. [PAUSA]
+
+Si chiama curtailment, taglio della produzione. [PAUSA]
+
+Poi, alle otto di sera, quando tutti accendono luci, forni e televisori, magari il vento non c'è più. E l'energia manca.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Allora il problema delle rinnovabili non è che sono poche. [PAUSA]
 
-Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il [PAUSA]
+È che arrivano nel momento sbagliato. [ENFASI] [PAUSA]
+
+Servirebbe un modo per conservare l'energia di notte e usarla la sera. [PAUSA]
+
+E il sistema più usato al mondo per farlo non è una batteria. È l'acqua.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire accumulo energetico e smart grid che oggi esploriamo questa MC. [PAUSA]
+Si pompa l'acqua in alto quando la corrente avanza, e la si lascia ridiscendere quando serve. [PAUSA]
 
-Imparerai Lo studente comprende il problema dell'intermittenza delle fonti rinnovabili e le principali tecnologie di accumulo ener. [PAUSA]
+Poi ci sono le batterie, l'idrogeno, le reti intelligenti che bilanciano chi produce e chi consuma. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Energy Storage Engineer nel 2030. [PAUSA]
+Conservare l'energia è una delle grandi sfide di questo secolo: in questa MC capirai perché è così difficile.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso progetta il sistema di accumulo per la scuola fotovoltaica del tuo comune: usando dati reali di produzione fv e consumo scolastico, dimensiona la batteria, calcola il payback period e stima la riduzione annua di co₂.
+Pensa a casa tua. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+In quali ore della giornata si consuma più elettricità? [PAUSA]
+
+E a che ora splende il sole? Scrivi le due risposte una accanto all'altra.
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-ENE-3-06",
+  "titolo_hook": "Alle tre di notte, il vento soffia, ma la città dorme",
+  "oggetto_reale": "la presa elettrica di casa",
+  "durata_sec": 104,
+  "livello_digcomp": "A",
+  "dati_verificabili": [
+    "Curtailment: le turbine vengono rallentate e i produttori pagati per non produrre quando l'energia è troppa",
+    "Il pompaggio è il sistema di accumulo più usato al mondo e recupera circa tre quarti dell'energia spesa",
+    "Batterie, pompaggio e idrogeno conservano energia per tempi diversi e con perdite diverse",
+    "Smart grid: rete che bilancia produzione e consumo"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-ENE-3-06_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 7,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script d'autore dal testo della MC (INNESCA), esteso in blocchi. Tono notturno e sospeso nel blocco 1, poi problema-soluzione.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

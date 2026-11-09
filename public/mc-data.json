@@ -570,9 +570,11 @@
         "avanzato": "Disegnare l'oggetto in due scale diverse e confrontare l'effetto visivo. Discutere quando si usa ciascuna."
       },
       "hook_audio": {
-        "durata_min": 0.9,
-        "durata_secondi": 37,
-        "durata_sec": 55
+        "titolo": "Come entra un'aula in un foglio?",
+        "oggetto_reale": "il tuo astuccio e un foglio A4",
+        "durata_min": 1.8,
+        "durata_secondi": 106,
+        "durata_sec": 106
       },
       "professione_futura": {
         "titolo": "Designer di Prodotto",
@@ -2131,9 +2133,11 @@
         "avanzato": "Confrontare la filiera di un prodotto locale vs. uno importato: calcolare la stima delle emissioni di CO₂ per il trasporto."
       },
       "hook_audio": {
-        "durata_min": 0.9,
-        "durata_secondi": 42,
-        "durata_sec": 54
+        "titolo": "Una banana ha percorso 9.000 chilometri per finire nel tuo zaino",
+        "oggetto_reale": "una banana",
+        "durata_min": 1.8,
+        "durata_secondi": 108,
+        "durata_sec": 108
       },
       "professione_futura": {
         "titolo": "Synthetic Food Developer",
@@ -3658,12 +3662,12 @@
         "avanzato": "Cifrare un messaggio con il cifrario di Cesare (a mano o con Python), poi decifrarlo con la forza bruta (prova tutte le 26 chiavi). Riflettere su perché i cifrari antichi non bastano e cosa cambia nella crittografia moderna."
       },
       "hook_audio": {
-        "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
-        "oggetto_reale": "un messaggio cifrato",
-        "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-        "durata_min": 0.9,
-        "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
-        "durata_secondi": 56
+        "titolo": "Quarantasette notifiche",
+        "oggetto_reale": "lo smartphone con le notifiche",
+        "domanda_avvio": "Se ricevessi adesso un messaggio urgente che ti dice che il tuo account è in pericolo, cosa faresti? Come faresti a capire se è vero?",
+        "durata_min": 1.9,
+        "durata_secondi": 115,
+        "durata_sec": 115
       },
       "professione_futura": {
         "titolo": "Esperto in Cybersecurity",
@@ -4047,13 +4051,11 @@
         "avanzato": "Costruire l'assonometria di un solido composto (parallelepipedo con foro cilindrico) usando il metodo delle scatole concentriche."
       },
       "hook_audio": {
-        "titolo": "IKEA e il segreto del disegno cavaliero",
-        "oggetto_reale": "manuale di montaggio IKEA",
-        "domanda_avvio": "Hai mai notato che tutti i disegni IKEA hanno sempre lo stesso strano angolo di 45°?",
-        "durata_min": 0.9,
-        "note_script": "Aprire con la domanda sull'angolo dei disegni IKEA. Spiegare che è assonometria cavaliera — scelta deliberata per essere comprensibile in qualsiasi cultura senza parole.",
-        "durata_secondi": 48,
-        "durata_sec": 57
+        "titolo": "Il manuale che non parla",
+        "oggetto_reale": "un manuale di montaggio",
+        "durata_min": 1.8,
+        "durata_secondi": 109,
+        "durata_sec": 109
       },
       "professione_futura": {
         "titolo": "Product Designer",
@@ -4987,13 +4989,12 @@
         "avanzato": "Scrivere una lettera aperta al Parlamento italiano su una proposta immaginaria che introduce il Deep Packet Inspection obbligatorio — argomentare pro o contro da tre prospettive diverse."
       },
       "hook_audio": {
-        "titolo": "Il cavo che tiene in piedi internet",
-        "oggetto_reale": "cavo sottomarino transatlantico",
-        "domanda_avvio": "Se un peschereccio strappasse accidentalmente il cavo che collega Europa e America, cosa smetterebbe di funzionare?",
-        "durata_min": 1,
-        "note_script": "Aprire con il caso reale: nel 2022 in Norvegia un cavo sottomarino fu tranciato misteriosamente. Nel 2024 nel Baltico altri due cavi danneggiati. Chi lo ha fatto? Perché? Poi: quanti cavi ci sono? Chi li possiede? Il viaggio verso la comprensione di internet come infrastruttura fisica e geopolitica.",
-        "durata_secondi": 47,
-        "durata_sec": 59
+        "titolo": "Il cavo che passa sotto l'Atlantico",
+        "oggetto_reale": "lo smartphone",
+        "domanda_avvio": "Chi possiede questi cavi? Chi decide dove passano? E cosa succede quando qualcuno vuole tagliarli?",
+        "durata_min": 2,
+        "durata_secondi": 117,
+        "durata_sec": 117
       },
       "professione_futura": {
         "titolo": "Drone Logistic Operator",
@@ -5125,12 +5126,12 @@
         "avanzato": "Progettare e condurre una campagna di media literacy per gli studenti di prima media: creare 3 contenuti educativi (video breve, scheda, quiz) e presentarli in classe."
       },
       "hook_audio": {
-        "titolo": "Come TikTok sa già cosa vuoi vedere",
-        "oggetto_reale": "feed di TikTok",
-        "domanda_avvio": "Hai mai aperto TikTok per 5 minuti e ti sei ritrovato dopo un'ora — senza capire come?",
-        "durata_min": 0.8,
-        "note_script": "Aprire con l'esperienza TikTok. Spiegare: non è magia — è un sistema di punteggio che aggiorna ogni secondo il modello di chi sei. Il colpo di scena: questo sistema non è progettato per mostrarti ciò che è vero o importante — è progettato per tenerti incollato. E 'tenerti incollato' è un obiettivo di business, non di informazione.",
-        "durata_secondi": 45
+        "titolo": "I 200 millisecondi più costosi del mondo",
+        "oggetto_reale": "una pagina web con pubblicità",
+        "domanda_avvio": "Quante volte questa settimana hai visto una pubblicità su qualcosa a cui stavi pensando, senza averlo cercato? Coincidenza, o qualcosa di più preciso?",
+        "durata_min": 1.9,
+        "durata_secondi": 112,
+        "durata_sec": 112
       },
       "professione_futura": {
         "titolo": "Conversational AI Designer",
@@ -5525,13 +5526,12 @@
         "avanzato": "Aggiungere un sensore di CO2 e progettare un sistema di allerta automatica (LED rosso/verde) quando la concentrazione supera la soglia consigliata per ambienti scolastici (1000 ppm). Documentare con una scheda tecnica del progetto."
       },
       "hook_audio": {
-        "titolo": "Il tuo quartiere respira — ma lo sai quanto bene?",
-        "oggetto_reale": "una centralina meteo fai-da-te con micro:bit",
+        "titolo": "Il tuo quartiere respira, ma lo sai quanto bene?",
+        "oggetto_reale": "l'aria della tua aula",
         "domanda_avvio": "Sai quanta CO2 c'è adesso nell'aria della tua aula — e se è abbastanza per stare svegli e concentrati?",
-        "durata_min": 1.1,
-        "note_script": "Aprire con il dato che la concentrazione di CO2 nelle aule scolastiche italiane supera spesso i 2000 ppm nelle ore centrali (contro una soglia di comfort di 800 ppm). Spiegare cosa significa: stanchezza, difficoltà di concentrazione. Poi mostrare che un sensore da 20 euro e una scheda micro:bit permettono di misurarlo in tempo reale. Collegare all'IoT: 'è così che funziona un termostato smart, una centralina di Arpa, un satellite meteo — solo più grande'. Tono: sorprendente e pratico.",
-        "durata_secondi": 58,
-        "durata_sec": 65
+        "durata_min": 1.8,
+        "durata_secondi": 106,
+        "durata_sec": 106
       },
       "professione_futura": {
         "titolo": "Esperto in Cybersecurity",
@@ -5658,12 +5658,11 @@
       },
       "hook_audio": {
         "titolo": "Navigare al buio: come usa internet chi non vede",
-        "oggetto_reale": "uno screen reader (lettore di schermo)",
+        "oggetto_reale": "la tastiera e il tasto Tab",
         "domanda_avvio": "Hai mai provato a usare il computer con gli occhi chiusi — e a capire cosa c'è sullo schermo solo dall'audio?",
-        "durata_min": 1,
-        "note_script": "Aprire con una simulazione audio: descrizione di come suona una pagina web normale quando la legge uno screen reader (rapidissimo, confuso, ordine casuale dei link). Poi confrontare con una pagina accessibile (logica, comprensibile). Dato: in Italia ci sono circa 350.000 persone con disabilità visiva grave. In Europa il 15% della popolazione ha una disabilità. Il European Accessibility Act del 2025 obbliga tutte le aziende con più di 10 dipendenti ad avere prodotti digitali accessibili. Tono: empatico e pratico — 'puoi fare la differenza con 3 regole semplici'.",
-        "durata_secondi": 57,
-        "durata_sec": 59
+        "durata_min": 1.8,
+        "durata_secondi": 107,
+        "durata_sec": 107
       },
       "professione_futura": {
         "titolo": "Data Scientist",
@@ -5909,9 +5908,11 @@
         "avanzato": "Progettare autonomamente l'oggetto partendo da un brief di design (vincoli dimensionali + funzionali), iterare 2 versioni e argomentare le modifiche apportate."
       },
       "hook_audio": {
-        "durata_min": 0.9,
-        "durata_secondi": 36,
-        "durata_sec": 52
+        "titolo": "Tre ore per un prototipo",
+        "oggetto_reale": "un portaborraccia da bicicletta",
+        "durata_min": 1.8,
+        "durata_secondi": 111,
+        "durata_sec": 111
       },
       "professione_futura": {
         "titolo": "3D Designer",
@@ -6530,13 +6531,12 @@
         "avanzato": "Analizzare l'efficienza dell'intera filiera well-to-wheel per auto elettrica vs. termica: dalla centrale elettrica (o dal pozzo) fino alla ruota."
       },
       "hook_audio": {
-        "titolo": "Perché il cofano è caldo?",
-        "oggetto_reale": "motore di un'automobile",
+        "titolo": "Il motore della moto di tuo nonno",
+        "oggetto_reale": "una moto",
         "domanda_avvio": "Se un motore a benzina spreca il 70% dell'energia come calore, perché lo usiamo ancora?",
-        "durata_min": 1.1,
-        "note_script": "Aprire con il dato sorprendente: solo il 25-35% del carburante diventa movimento. Il resto va in calore — sentito dal cofano caldo e dallo scarico. Poi: esiste un limite fisico? Sì — il secondo principio della termodinamica.",
-        "durata_secondi": 58,
-        "durata_sec": 64
+        "durata_min": 1.9,
+        "durata_secondi": 112,
+        "durata_sec": 112
       },
       "professione_futura": {
         "titolo": "Smart Grid Analyst",
@@ -6663,13 +6663,12 @@
         "avanzato": "Analizzare il ciclo di vita completo di una batteria agli ioni di litio: dall'estrazione del litio in Cile alla dismissione — impatto ambientale complessivo e confronto con l'accumulo pompato."
       },
       "hook_audio": {
-        "titolo": "L'isola che produce più energia di quanta ne consuma",
-        "oggetto_reale": "turbina eolica su Samsø, Danimarca",
+        "titolo": "Alle tre di notte, il vento soffia, ma la città dorme",
+        "oggetto_reale": "la presa elettrica di casa",
         "domanda_avvio": "Se potessimo immagazzinare l'energia del sole e del vento, avremmo già risolto il problema climatico?",
-        "durata_min": 1,
-        "note_script": "Aprire con Samsø: isola danese di 4.000 abitanti che dal 2007 produce il 140% della propria energia da rinnovabili. Poi il colpo di scena: ma la notte? E d'inverno? Ecco il problema dell'accumulo — il vero collo di bottiglia della transizione energetica.",
-        "durata_secondi": 56,
-        "durata_sec": 61
+        "durata_min": 1.7,
+        "durata_secondi": 104,
+        "durata_sec": 104
       },
       "professione_futura": {
         "titolo": "Energy Efficiency Advisor",
@@ -7343,9 +7342,11 @@
         "avanzato": "Condurre 3 interviste reali con potenziali 'clienti' (compagni, insegnanti) per validare le ipotesi del BMC prima di presentarlo."
       },
       "hook_audio": {
-        "durata_min": 1,
-        "durata_secondi": 44,
-        "durata_sec": 58
+        "titolo": "L'app che vale un milione. Oppure no.",
+        "oggetto_reale": "un'idea scritta su un post-it",
+        "durata_min": 1.8,
+        "durata_secondi": 107,
+        "durata_sec": 107
       },
       "professione_futura": {
         "titolo": "Digital and Innovation Manager",

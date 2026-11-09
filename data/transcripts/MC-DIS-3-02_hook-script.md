@@ -1,9 +1,9 @@
 # Hook audio — MC-DIS-3-02
-**Titolo:** "La storia di disegno cad e progettazione digitale"
+**Titolo:** "Tre ore per un prototipo"
 **MC:** MC-DIS-3-02 — Disegno CAD e progettazione digitale
-**Classe:** 3ª media · Livello A
-**Durata stimata:** 3 min
-**Oggetto reale:** disegno cad e progettazione digitale
+**Classe:** 3ª media · Livello Advanced
+**Durata:** 1 min 51 sec
+**Oggetto reale:** un portaborraccia da bicicletta
 **SDG principale:** 4
 
 ---
@@ -14,44 +14,89 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a disegno cad e progettazione digitale? [PAUSA]
+Sara ha ventotto anni e progetta pezzi per biciclette da corsa. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Stamattina le è arrivato un messaggio da un gruppo di ciclisti. [PAUSA]
+
+Il portaborraccia che ha progettato vibra sulle strade sterrate. E perde la borraccia. [ENFASI]
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente sa usare un software CAD 2D/3D (LibreCAD, Tinkercad, FreeCAD) per produrre disegni tecnici precisi e modelli tridimensionali, comprende la differenza tra disegno manuale e digitale in termini di precisione, modificabilità e collaborazione. [PAUSA]
+Sara apre il programma sul computer e carica il modello in tre dimensioni del pezzo. [PAUSA]
 
-Non è un caso che disegno cad e progettazione digitale funzioni esattamente così. [PAUSA]
+Cambia un solo numero: il diametro dei perni che bloccano la borraccia, da tre millimetri a tre virgola sei. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+Il programma aggiorna da solo tutto quello che dipende da quella misura: i fori, le tolleranze, le viti. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Quindici minuti dopo esporta il file e lo manda alla stampante 3D del laboratorio. [PAUSA]
+
+Tre ore dopo ha il prototipo in mano. Lo monta, lo prova, funziona. [PAUSA]
+
+Un tempo, per la stessa modifica, sarebbe servita una settimana: ridisegnare tutto a mano, costruire un modello, aspettare un nuovo stampo dal fornitore.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+E sai qual è la parte più interessante? [PAUSA]
 
-La risposta è nascosta in disegno cad e progettazione digitale — e una volta che la conosci, la vedi ovunque. [PAUSA]
+Il programma che usa Sara non disegna linee. [ENFASI] [PAUSA]
+
+Ricorda relazioni: questo foro dipende da quel perno, questa parete è spessa quanto quella. [PAUSA]
+
+Per questo un disegno digitale si può cambiare in un attimo, senza ricominciare da zero.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire disegno cad e progettazione digitale che oggi esploriamo questa MC. [PAUSA]
+Si chiama CAD, progettazione assistita dal computer. [PAUSA]
 
-Imparerai Lo studente sa usare un software CAD 2D/3D (LibreCAD, Tinkercad, FreeCAD) per produrre disegni tecnici precisi e modelli. [PAUSA]
+In questa MC imparerai la differenza tra CAD in due e in tre dimensioni, costruirai un oggetto passo per passo e seguirai il viaggio del file fino alla stampante. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Progettista CAD/CAM Industriale nel 2030. [PAUSA]
+Dall'idea all'oggetto vero.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso progetta in tinkercad un oggetto utile per la scuola (es.
+Pensa a un piccolo oggetto che ti servirebbe sul banco. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Un supporto per il telefono, un fermacarte, un portapenne. [PAUSA]
+
+Disegnalo a mano, con le misure: sarà il tuo primo progetto.
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-DIS-3-02",
+  "titolo_hook": "Tre ore per un prototipo",
+  "oggetto_reale": "un portaborraccia da bicicletta",
+  "durata_sec": 111,
+  "livello_digcomp": "A",
+  "dati_verificabili": [
+    "CAD parametrico: cambiando un parametro si aggiornano tutte le parti collegate",
+    "Dal modello 3D al file STL e alla stampa 3D",
+    "Prima del 1960 ogni disegno tecnico era fatto a mano su carta da lucido",
+    "Prototipazione rapida: stampare, provare, correggere, ristampare in giornata"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-DIS-3-02_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 4,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script costruito sullo scenario d'autore di INNESCA (Sara e il portaborraccia). Tono professionale e rapido, come il lavoro che racconta.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

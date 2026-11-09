@@ -1,9 +1,9 @@
 # Hook audio — MC-ALI-2-04
-**Titolo:** "La storia di la filiera alimentare e l'etichetta"
+**Titolo:** "Una banana ha percorso 9.000 chilometri per finire nel tuo zaino"
 **MC:** MC-ALI-2-04 — La filiera alimentare e l'etichetta
-**Classe:** 2ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** la filiera alimentare e l'etichetta
+**Classe:** 2ª media · Livello Intermediate
+**Durata:** 1 min 48 sec
+**Oggetto reale:** una banana
 **SDG principale:** 2
 
 ---
@@ -14,44 +14,91 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a la filiera alimentare e l'etichetta? [PAUSA]
+Prendi una banana. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Sembra uscita dal supermercato sotto casa. [PAUSA]
+
+In realtà ha fatto un viaggio più lungo di qualsiasi gita che hai mai fatto. [ENFASI]
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente sa ricostruire la filiera produttiva di un alimento comune (dal campo alla tavola), identifica gli attori della filiera e sa leggere un'etichetta alimentare completa (ingredienti, additivi, provenienza, certificazioni), collegando traspar. [PAUSA]
+Viene dall'Ecuador, dall'Honduras o dalla Costa Rica, a migliaia di chilometri da qui. [PAUSA]
 
-Non è un caso che la filiera alimentare e l'etichetta funzioni esattamente così. [PAUSA]
+È stata raccolta ancora verde da un lavoratore agricolo. Messa in una scatola di cartone. Caricata su un camion, poi su una nave container che ha attraversato l'oceano Atlantico. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+Poi un altro camion, un centro di distribuzione, un furgone, lo scaffale. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Due o tre settimane di viaggio. Almeno sei mani diverse. [PAUSA]
+
+E non è l'unico cibo che viaggia così. D'inverno i fagiolini possono arrivare dal Kenya, a seimila chilometri. [PAUSA]
+
+La distanza che un alimento percorre dal campo al piatto ha un nome: food miles, le miglia del cibo. [PAUSA]
+
+E tutto il percorso, dal campo fino a te, si chiama filiera alimentare.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Ora la domanda che nessuno fa. [PAUSA]
 
-La risposta è nascosta in la filiera alimentare e l'etichetta — e una volta che la conosci, la vedi ovunque. [PAUSA]
+Ognuna di quelle sei mani ha guadagnato qualcosa. [PAUSA]
+
+Ma all'agricoltore che ha coltivato la banana arriva spesso meno del dieci per cento di quello che hai pagato. [ENFASI] [PAUSA]
+
+Meno di dieci centesimi su ogni euro.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire la filiera alimentare e l'etichetta che oggi esploriamo questa MC. [PAUSA]
+Capire la filiera vuol dire sapere chi c'è dietro il tuo cibo, quanta strada ha fatto e chi ci ha guadagnato. [PAUSA]
 
-Imparerai Lo studente sa ricostruire la filiera produttiva di un alimento comune (dal campo alla tavola), identifica gli attori de. [PAUSA]
+Vuol dire anche conoscere le alternative: la filiera corta, i prodotti del territorio, il commercio equo. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Agri-food Supply Chain Manager nel 2030. [PAUSA]
+E imparare a leggere tutto questo su un'etichetta.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso analizza l'etichetta di 3 prodotti alimentari diversi: identifica paese d'origine, additivi presenti, certificazioni (bio, igp, dop) e valuta quale offre più trasparenza al consumatore.
+Apri la dispensa e prendi tre prodotti. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Cerca sull'etichetta da dove vengono. [PAUSA]
+
+Quale ha fatto il viaggio più lungo per arrivare fino a te?
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-ALI-2-04",
+  "titolo_hook": "Una banana ha percorso 9.000 chilometri per finire nel tuo zaino",
+  "oggetto_reale": "una banana",
+  "durata_sec": 108,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "Banane da Ecuador, Honduras, Costa Rica; viaggio di due-tre settimane e almeno sei passaggi di mano",
+    "All'agricoltore va spesso meno del 10% del prezzo pagato al supermercato",
+    "Food miles: fagiolini d'inverno dal Kenya, a seimila chilometri",
+    "Filiera corta e commercio equo come alternative"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-ALI-2-04_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 2,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Tono da racconto di viaggio, poi una svolta sui soldi. Il blocco 3 va detto lentamente.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.
