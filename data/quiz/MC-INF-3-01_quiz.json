@@ -48,7 +48,7 @@
         },
         {
           "id": "b",
-          "testo": "Converte una grandezza fisica (temperatura, luce, pressione) in un segnale elettrico misurabile",
+          "testo": "Converte una grandezza fisica in un segnale elettrico",
           "corretto": true,
           "feedback": "Esatto! Il sensore è il componente che percepisce il mondo fisico: converte una grandezza fisica (temperatura, umidità, luminosità, pressione, accelerazione, suono) in un segnale elettrico che il dispositivo può misurare. Questo processo si chiama trasduzione."
         },
@@ -81,7 +81,7 @@
         },
         {
           "id": "b",
-          "testo": "Un monitor per la qualità dell'aria che misura PM2.5, temperatura e umidità e invia i dati a un'app",
+          "testo": "Un monitor dell'aria che invia i dati a un'app",
           "corretto": true,
           "feedback": "Esatto! Un monitor per la qualità dell'aria è un dispositivo IoT: ha sensori propri (particolato PM2.5, temperatura, umidità), connettività (WiFi o Bluetooth), elaborazione locale dei dati e trasmissione a un server cloud o un'app. Non richiede un computer host per funzionare."
         },
@@ -246,7 +246,7 @@
         },
         {
           "id": "b",
-          "testo": "Converte un segnale analogico continuo (es. la tensione di un sensore) in valori numerici digitali discreti",
+          "testo": "Converte un segnale analogico continuo in valori numerici digitali",
           "corretto": true,
           "feedback": "Esatto! I sensori producono segnali analogici continui (tensioni variabili). Il processore digitale può elaborare solo numeri. L'ADC campiona il segnale analogico a intervalli regolari (frequenza di campionamento) e converte ogni campione in un numero digitale (con una certa risoluzione in bit)."
         },
@@ -279,7 +279,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché non hanno le patch per le vulnerabilità note e possono diventare un punto d'accesso per attacchi alla rete",
+          "testo": "Perché hanno falle note non corrette e possono fare da porta d'ingresso alla rete",
           "corretto": true,
           "feedback": "Esatto! Il firmware è il software che controlla il dispositivo. Se non viene aggiornato, rimane vulnerabile a falle di sicurezza scoperte dopo la produzione. Un attaccante può sfruttare queste vulnerabilità per compromettere il dispositivo e usarlo come punto d'accesso alla rete interna (pivot point)."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Zigbee consuma molto meno energia ed è ottimizzato per reti mesh di sensori a corto raggio; Wi-Fi offre alta banda ma consuma più energia",
+          "testo": "Zigbee consuma pochissimo ed è per sensori; Wi-Fi trasporta più dati ma consuma di più",
           "corretto": true,
           "feedback": "Esatto! Zigbee: basso consumo (batterie durano anni), bassa banda, raggio ~100m, crea reti mesh dove ogni nodo fa da router, usato per smart home (lampadine Philips Hue, sensori porte/finestre). Wi-Fi: alta banda, alto consumo, raggio ~100m, richiede access point centrale — usato per dispositivi IoT alimentati a rete (telecamere, smart speaker)."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "Misurare il valore di un segnale analogico a intervalli regolari; la qualità dipende da frequenza di campionamento e risoluzione in bit",
+          "testo": "Misurare un segnale a intervalli regolari; la qualità dipende da frequenza e risoluzione",
           "corretto": true,
           "feedback": "Esatto! Il campionamento misura il segnale analogico a intervalli regolari (frequenza di campionamento). La qualità dipende da: 1) frequenza di campionamento (più alta = più fedele, ma più dati); 2) risoluzione in bit dell'ADC (più bit = più livelli di quantizzazione, misure più precise). Un ADC a 12 bit distingue 4096 livelli, uno a 8 bit solo 256."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "Può essere compromesso da un attaccante che sfrutta vulnerabilità note, diventando un punto d'accesso alla rete interna aziendale",
+          "testo": "Un attaccante può sfruttarne le falle note per entrare nella rete interna",
           "corretto": true,
           "feedback": "Esatto! Un dispositivo IoT con firmware obsoleto ha vulnerabilità note (pubblicate nei CVE — Common Vulnerabilities and Exposures). Un attaccante può sfruttarle per compromettere il dispositivo e usarlo come 'pivot': da lì attaccare altri sistemi nella rete interna aziendale, bypassando i firewall perimetrali che proteggono dall'esterno."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché elabora i dati vicino alla fonte, eliminando il round-trip verso il cloud (che introduce decine o centinaia di ms di latenza)",
+          "testo": "Perché elabora i dati vicino alla fonte, senza il ritardo del viaggio verso il cloud",
           "corretto": true,
           "feedback": "Esatto! Un round-trip verso un server cloud introduce tipicamente 20-200 ms di latenza (dipende dalla distanza geografica e dalla rete). Per applicazioni che richiedono reazione in tempo reale (es. rilevamento di un difetto su una linea di produzione a 1000 pezzi/minuto, o arresto di emergenza di un robot industriale), 200 ms possono essere insufficienti o persino pericolosi."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "Alta banda = maggiore consumo energetico e breve raggio; bassa potenza = minore consumo energetico e lungo raggio; la scelta dipende da quantità di dati e autonomia richiesta",
+          "testo": "Più banda vuol dire più consumo e raggio breve; bassa potenza vuol dire lunga autonomia e lungo raggio",
           "corretto": true,
           "feedback": "Esatto! Il trade-off fondamentale: Wi-Fi/5G offrono alta banda (Mbps/Gbps) per dati ricchi (video, audio, dati frequenti), ma consumano molto e hanno raggio limitato. Zigbee/LoRaWAN offrono bassissimo consumo (batterie anni) e lungo raggio (LoRa fino a 15 km), ma bassa banda (kbps). Per una smart city: telecamere di sorveglianza → 5G/Wi-Fi; sensori di qualità dell'aria → LoRaWAN."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "Permette di intervenire solo quando il guasto è effettivamente previsto (manutenzione predittiva), evitando sia interventi preventivi inutili sia fermi macchina non pianificati",
+          "testo": "Permette di intervenire solo quando un guasto è previsto, evitando lavori inutili e fermi improvvisi",
           "corretto": true,
           "feedback": "Esatto! La manutenzione tradizionale è a calendario (es. cambio olio ogni 3 mesi, indipendentemente dallo stato). Il Digital Twin permette la manutenzione predittiva: si interviene quando il modello prevede che il guasto avverrà a breve, evitando interventi prematuri (spreco) e guasti improvvisi (downtime costoso)."
         },

@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "testo": "Consulta un indice già costruito in anticipo, poi ordina i risultati con un algoritmo di ranking",
+          "testo": "Consulta un indice costruito in anticipo e ordina i risultati con un algoritmo",
           "corretto": true,
           "feedback": "Esatto. Il processo ha tre fasi: crawling (ragni esplorano il web), indicizzazione (ogni pagina viene catalogata), ranking (l'algoritmo ordina i risultati per autorevolezza, pertinenza e freschezza)."
         },
@@ -312,7 +312,7 @@
         },
         {
           "id": "b",
-          "testo": "La bolla di contenuti personalizzati che gli algoritmi creano mostrando sempre di più ciò con cui hai già interagito; il termine è di Eli Pariser (2011)",
+          "testo": "La bolla di contenuti simili a quelli che già guardi, creata dagli algoritmi; termine di Eli Pariser",
           "corretto": true,
           "feedback": "Esatto. Eli Pariser, nel libro 'The Filter Bubble' (2011), descrisse come gli algoritmi di personalizzazione creino una versione di internet sempre più ristretta, basata sulla cronologia dell'utente."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Risalire alla fonte originale dei dati, delle citazioni e delle immagini — non fermarsi al riassunto dell'articolo",
+          "testo": "Risalire alla fonte originale di dati, citazioni e immagini",
           "corretto": true,
           "feedback": "Esatto. Se un articolo cita uno studio, non fermarti all'interpretazione del giornalista: cerca lo studio originale su Google Scholar e leggi cosa dice davvero. Spesso la distanza tra il dato originale e il titolo è enorme."
         },
@@ -411,7 +411,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché la disinformazione erode la fiducia nelle istituzioni e può influenzare elezioni — e il SDG 16.10 garantisce il diritto all'accesso all'informazione",
+          "testo": "Perché la disinformazione mina la fiducia nelle istituzioni e può influenzare le elezioni",
           "corretto": true,
           "feedback": "Esatto. Saper distinguere fonti affidabili da disinformazione è un atto di cittadinanza attiva: la disinformazione può condizionare il voto, indebolire la fiducia nelle istituzioni democratiche, e limitare di fatto il diritto all'informazione sancito dall'SDG 16.10."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "Che persone diverse vedono versioni diverse della stessa realtà: non esiste 'la stessa Google' per tutti, rendendo più difficile trovare un terreno comune nel dibattito pubblico",
+          "testo": "Che persone diverse vedono versioni diverse della realtà, e trovare un terreno comune è più difficile",
           "corretto": true,
           "feedback": "Esatto. Se la mia Google sul cambiamento climatico mi mostra fonti negazioniste e la tua mostra dati IPCC, partiamo da premesse diverse sulla stessa realtà. Questo rende il dibattito pubblico strutturalmente più difficile."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "No — Google valuta autorevolezza percepita e popolarità, non la veridicità. Una pagina molto popolare può contenere informazioni false",
+          "testo": "No: Google misura popolarità e autorevolezza percepita, non la verità dei contenuti",
           "corretto": true,
           "feedback": "Esatto. Questa è una delle trappole più insidiose: identificare 'primo risultato di Google' con 'informazione vera'. Google non ha un rilevatore di bugie. Un sito popolare con molti link può diffondere disinformazione."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Decontestualizzazione — fatto vero (le banane contengono potassio-40) presentato senza il contesto che ne riduce il significato allarmante",
+          "testo": "Decontestualizzazione: un fatto vero presentato senza il contesto che lo ridimensiona",
           "corretto": true,
           "feedback": "Esatto. La decontestualizzazione è una delle forme più insidiose di disinformazione: usa fatti reali ma rimuove il contesto cruciale. Nel caso delle banane, il contesto è che il livello di radioattività è miliardi di volte sotto qualsiasi soglia di rischio."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "Creando contenuti che confermano paure e ostilità preesistenti del pubblico target — chi si irrita emotivamente condivide senza verificare",
+          "testo": "Creando contenuti che confermano paure già presenti: chi si arrabbia condivide senza verificare",
           "corretto": true,
           "feedback": "Esatto. La disinformazione efficace non contraddice le credenze del pubblico: le amplifica. Chi vede una notizia che conferma quello che già teme o odia è molto più propenso a condividerla — e meno propenso a verificarla."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "Misinformazione = informazione falsa diffusa in buona fede (errore sincero); disinformazione = informazione falsa diffusa con intenzione deliberata di ingannare",
+          "testo": "La misinformazione è diffusa in buona fede; la disinformazione con l'intenzione di ingannare",
           "corretto": true,
           "feedback": "Esatto. La distinzione è nell'intenzione: chi diffonde misinformazione crede (erroneamente) che sia vera; chi diffonde disinformazione sa che è falsa e vuole ingannare. Questa distinzione cambia la risposta etica e legale."
         },

@@ -42,7 +42,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il solido marcato come 'Hole' viene sottratto da un altro solido, creando una cavità",
+          "testo": "Viene sottratto da un altro solido, creando una cavità",
           "corretto": true,
           "feedback": "Esatto! Nella geometria solida costruttiva (CSG) di Tinkercad, un solido marcato come Hole viene sottratto da un altro solido al momento del raggruppamento, lasciando una cavità."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Divide il modello 3D in strati orizzontali e genera le istruzioni di movimento della testina (G-code)",
+          "testo": "Divide il modello in strati e genera le istruzioni per la testina (G-code)",
           "corretto": true,
           "feedback": "Esatto! Lo slicer 'affetta' orizzontalmente il modello 3D in centinaia o migliaia di strati e genera per ogni strato le istruzioni di movimento della testina (file G-code)."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la stampa 3D costruisce dall'interno verso l'esterno, potendo creare canali interni che le macchine utensili non possono raggiungere",
+          "testo": "Perché costruisce a strati e può creare canali interni irraggiungibili per una fresa",
           "corretto": true,
           "feedback": "Esatto! La fresatura rimuove materiale dall'esterno. La stampa 3D deposita materiale strato per strato, potendo creare strutture interne (canali di raffreddamento, cavità) inaccessibili a qualsiasi utensile che lavora dall'esterno."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La definizione matematica precisa di superfici curve complesse e la loro traduzione in istruzioni per le macchine CNC",
+          "testo": "Definire con precisione superfici curve complesse e tradurle in istruzioni per le macchine",
           "corretto": true,
           "feedback": "Esatto! Prima del CAD parametrico, le superfici che si torcono e si inclinano continuamente non potevano essere definite con precisione. Il CAD parametrico permette di gestire queste forme come superfici matematiche e tradurle in istruzioni per le macchine che tagliano l'acciaio."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il progettista deve tenere distinto l'uso del prototipo stampato (test di forma e fit) dall'uso del prodotto finale (uso strutturale), che richiederà materiali diversi",
+          "testo": "Il progettista deve distinguere il prototipo stampato dal prodotto finale, che avrà altri materiali",
           "corretto": true,
           "feedback": "Esatto! Il prototipo FDM in PLA permette di testare forma, ingombro, accessibilità, interfacce. Ma per applicazioni strutturali (un telaio di bici, una staffa portante) serviranno materiali diversi: metallo, compositi, o stampa 3D industriale."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Se i cilindri non sono centrati sull'asse X e Y, il foro risultante sarà asimmetrico e non al centro dell'oggetto",
+          "testo": "Se i cilindri non sono centrati, il foro risulta fuori centro e asimmetrico",
           "corretto": true,
           "feedback": "Esatto! Se il cilindro interno (Hole) non è centrato rispetto a quello esterno, la cavità risultante non sarà al centro del porta-matite. Il passo di allineamento garantisce la correttezza geometrica prima di raggruppare."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Con più iterazioni si possono scoprire e correggere più problemi prima di produrre in metallo, riducendo errori costosi nelle fasi finali e permettendo team più piccoli",
+          "testo": "Con più iterazioni si scoprono e correggono più problemi prima della produzione vera",
           "corretto": true,
           "feedback": "Esatto! Prima della prototipazione rapida, la limitazione delle iterazioni (2-3 per costo e tempo) significava che molti problemi venivano scoperti tardi, in fasi costose. Più iterazioni in meno tempo = prodotti migliori, meno errori costosi, team più efficienti."
         },
@@ -438,7 +438,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il design parametrico permette di separare il lavoro creativo (definire le relazioni tra parametri) dalla personalizzazione (cambiare i valori), rendendo possibile la personalizzazione di massa",
+          "testo": "Separa il lavoro creativo (definire le relazioni) dalla variante (cambiare i valori): personalizzazione di massa",
           "corretto": true,
           "feedback": "Esatto! Il design parametrico rivoluziona il rapporto tra design e produzione: il designer definisce le relazioni una volta sola, e le varianti (20 misure diverse) si generano automaticamente cambiando i valori dei parametri. È personalizzazione di massa senza costo di ridisegno."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La possibilità di applicare software di simulazione strutturale al modello CAD per testare virtualmente le forze in condizioni marziane",
+          "testo": "La possibilità di simulare al computer, sul modello CAD, le forze in condizioni marziane",
           "corretto": true,
           "feedback": "Esatto! Il modello CAD 3D permette di applicare simulazioni strutturali (analisi agli elementi finiti) per testare la resistenza delle pale nelle condizioni esatte di Marte prima di costruire fisicamente. Senza questa capacità, testare a 2.537 rpm nell'atmosfera marziana sarebbe stato impossibile sulla Terra."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Che la biodegradabilità del PLA dipende da infrastrutture di smaltimento specifiche che nella maggior parte dei comuni italiani non esistono, rendendo il PLA di fatto non degradabile in condizioni normali",
+          "testo": "Che il PLA si degrada solo in impianti specifici, che in molti comuni non esistono",
           "corretto": true,
           "feedback": "Esatto! Il PLA è biodegradabile solo in impianti di compostaggio industriale a 70°C. Se smaltito in discarica normale, nella natura o nel bidone della plastica, non si degrada in tempi utili — proprio come le plastiche convenzionali. La sostenibilità dipende dall'infrastruttura di smaltimento, non solo dal materiale."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché le operazioni booleane sugli insiemi sono i principi fondamentali della modellazione solida, presenti in tutti i CAD professionali come Fusion 360, SolidWorks e CATIA",
+          "testo": "Perché unione, sottrazione e intersezione sono alla base di tutti i CAD professionali",
           "corretto": true,
           "feedback": "Esatto! La CSG non è solo un semplice approccio di Tinkercad: è il fondamento matematico della modellazione solida usata in tutti i CAD professionali. Chi impara in Tinkercad sta imparando i principi che si ritrovano in Fusion 360, SolidWorks, CATIA."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le equazioni che definiscono le relazioni tra parametri formano un sistema di vincoli che garantisce la coerenza geometrica del modello dopo ogni modifica",
+          "testo": "Equazioni che legano i parametri in un sistema di vincoli, mantenendo coerente il modello",
           "corretto": true,
           "feedback": "Esatto! Nel design parametrico, le relazioni tra dimensioni sono equazioni esplicite (es. raggio_foro_parete = lunghezza_piano / 30). Queste equazioni formano un sistema di vincoli: quando un parametro cambia, il risolutore aggiorna tutti i parametri dipendenti mantenendo la coerenza geometrica del modello."
         },

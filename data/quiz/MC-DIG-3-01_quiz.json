@@ -16,7 +16,7 @@
         },
         {
           "id": "b",
-          "testo": "Ignorare i dettagli irrilevanti e concentrarsi sulle proprietà essenziali del problema per lavorare a un livello di complessità gestibile",
+          "testo": "Ignorare i dettagli irrilevanti per concentrarsi sull'essenziale",
           "corretto": true,
           "feedback": "Esatto! Quando programmi il comportamento di un robot, non ti interessa la tensione esatta dei motori: ti interessa la velocità risultante. L'astrazione elimina i dettagli non necessari."
         },
@@ -52,7 +52,7 @@
         },
         {
           "id": "b",
-          "testo": "micro:bit punta sulla semplicità e l'apertura hardware; EV3 integra costruzione fisica e programmazione; Arduino offre massima flessibilità con linguaggio testuale (C/C++)",
+          "testo": "micro:bit è il più semplice; EV3 unisce costruzione e codice; Arduino è il più flessibile",
           "corretto": true,
           "feedback": "Esatto! Tre filosofie diverse: micro:bit = semplicità di accesso; EV3 = costruzione + programmazione integrate; Arduino = massima flessibilità e potenza con linguaggio reale."
         },
@@ -88,7 +88,7 @@
         },
         {
           "id": "b",
-          "testo": "Emette un impulso sonoro a 40 kHz e misura il tempo di ritorno dell'eco per calcolare la distanza",
+          "testo": "Emette un impulso sonoro e misura il tempo di ritorno dell'eco",
           "corretto": true,
           "feedback": "Esatto! La formula è: distanza = (tempo × velocità del suono) / 2. Il fattore 2 perché il suono fa andata e ritorno. Range tipico: 2-400 cm, precisione ±3 mm."
         },
@@ -124,7 +124,7 @@
         },
         {
           "id": "b",
-          "testo": "Un paradigma in cui le istruzioni si eseguono quando accade qualcosa (un evento), come un sensore che rileva un ostacolo",
+          "testo": "Un modo di programmare in cui le istruzioni partono quando accade un evento",
           "corretto": true,
           "feedback": "Esatto! Gli eventi possono essere: il sensore rileva distanza < 15 cm, il pulsante viene premuto, passano 5 secondi. Il codice dell'evento si esegue automaticamente quando l'evento si verifica."
         },
@@ -196,7 +196,7 @@
         },
         {
           "id": "b",
-          "testo": "Nel comportamento programmato ogni risposta è definita esplicitamente dall'ingegnere; nell'apprendimento automatico il sistema impara le regole dai dati",
+          "testo": "Nel primo ogni risposta è scritta dall'ingegnere; nel secondo il sistema ricava le regole dai dati",
           "corretto": true,
           "feedback": "Esatto! Il Roomba classico ha regole esplicite scritte da ingegneri (se ostacolo → ruota). AlphaGo ha imparato strategie dai dati (milioni di partite) che nessun ingegnere aveva specificato."
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "Costruisce ogni secondo una stima probabilistica di dove potrebbe trovarsi, basandosi su sensori e algoritmi — non ha una vera 'conoscenza' della casa",
+          "testo": "Aggiorna di continuo una stima probabilistica della posizione: non 'conosce' la casa",
           "corretto": true,
           "feedback": "Esatto! L'INNESCA spiega: 'Non sa dove si trova. Costruisce ogni secondo una stima probabilistica di dove potrebbe essere.' È un algoritmo che simula un comportamento intelligente."
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché quando un robot sbaglia bisogna trovare l'errore nel codice o nei dati, non nella sua 'intenzione'; e attribuire 'intelligenza' porta a fidarsi in modo acritico",
+          "testo": "Perché l'errore va cercato nel codice o nei dati, e crederlo 'intelligente' porta a fidarsi troppo",
           "corretto": true,
           "feedback": "Esatto! Il Box T8 spiega: (1) gli errori hanno cause tecniche verificabili, non intenzioni; (2) attribuire intelligenza porta a fidarsi acriticamente — con conseguenze potenzialmente gravi."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "Circa 1 metro (0,995 m)",
+          "testo": "Circa 1 metro",
           "corretto": true,
           "feedback": "Esatto! Distanza = (tempo × velocità del suono) / 2 = (0,0058 s × 343 m/s) / 2 = 1,989 / 2 = 0,995 m ≈ 1 m. Il fattore 2 perché il suono fa andata e ritorno."
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Muove scaffalature intere verso gli addetti umani, aumentando la velocità di 3-4 volte; ma riduce significativamente la manodopera umana necessaria",
+          "testo": "Porta gli scaffali agli addetti e accelera il lavoro, ma riduce il personale necessario",
           "corretto": true,
           "feedback": "Esatto! Il testo descrive il sistema: invece che far camminare gli addetti tra gli scaffali, i robot Kiva portano gli scaffali agli addetti. Velocità 3-4 volte maggiore. Costo sociale: riduzione della manodopera."
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché un robot che funziona in modo semplice e affidabile è più utile di uno con cento funzionalità che fallisce imprevedibilmente",
+          "testo": "Perché un robot semplice e affidabile è più utile di uno ricco di funzioni che si blocca",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'la soluzione più semplice che funziona è quasi sempre la migliore.' La tendenza dei principianti è aggiungere funzionalità finché il codice diventa ingestibile."
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché capire chi usa il robot, in quale contesto e con quali bisogni è più critico che scrivere il codice: un robot troppo veloce o con suoni confusi è inutile o pericoloso",
+          "testo": "Perché capire chi lo usa e con quali bisogni conta più del codice: un robot inadatto è pericoloso",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Un robot che si muove troppo velocemente per un adolescente non vedente è inutile o pericoloso. Il 90% del lavoro è design centrato sull'utente, non programmazione.'"
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Deep Blue valutava posizioni con regole scritte da esperti umani; AlphaGo aveva imparato strategie dai dati (milioni di partite) che nessuno aveva specificato esplicitamente",
+          "testo": "Deep Blue seguiva regole scritte da esperti; AlphaGo ha imparato dalle partite",
           "corretto": true,
           "feedback": "Esatto! Il testo lo spiega: Deep Blue = intelligenza della somma degli esperti che lo hanno programmato. AlphaGo = ha imparato schemi che nessun umano aveva specificato. Due approcci radicalmente diversi."
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Il principio di 'data minimization': raccogliere solo i dati strettamente necessari alla funzione del sistema, senza raccogliere informazioni aggiuntive",
+          "testo": "La 'data minimization': raccogliere solo i dati strettamente necessari alla funzione del sistema",
           "corretto": true,
           "feedback": "Esatto! La domanda 4 della metacognizione chiede: 'il sistema raccoglie dati sul movimento delle persone — come potresti modificarlo per raccogliere solo i dati strettamente necessari?' È il principio GDPR di data minimization."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "In un sistema telemanipolato il chirurgo umano prende tutte le decisioni e il robot le esegue con precisione amplificata; non decide autonomamente nulla",
+          "testo": "Nel telemanipolato decide tutto il chirurgo; il robot esegue con più precisione e non sceglie nulla",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Il robot non decide nulla: è un'estensione amplificata delle mani del chirurgo.' La responsabilità della diagnosi e della decisione chirurgica è sempre del medico umano."
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Se un messaggio radio va perso, il terzo micro:bit potrebbe ricevere conteggi non aggiornati e calcolare un numero errato di persone nel corridoio",
+          "testo": "Se un messaggio radio si perde, il conteggio delle persone nel corridoio risulta sbagliato",
           "corretto": true,
           "feedback": "Esatto! Il testo del progetto distribuito chiede: 'Cosa succede se un messaggio viene perso?' Se il micro:bit all'uscita non riceve l'aggiornamento dal micro:bit all'entrata, il conteggio totale è errato."
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché identificare strutture ricorrenti permette di riusare soluzioni: un robot che evita ostacoli e un termostato hanno lo stesso pattern (sensore → condizione → azione → verifica)",
+          "testo": "Perché riconoscere strutture ricorrenti permette di riusare la stessa soluzione in problemi diversi",
           "corretto": true,
           "feedback": "Esatto! Il testo usa questo esempio: il pattern 'sensore → condizione → azione → verifica' si applica a un robot che evita ostacoli E a un termostato che controlla la temperatura. Riconoscere il pattern trasferisce la soluzione da un dominio all'altro."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Raccoglie dati sul movimento delle persone (quando entrano, escono, pattern di affollamento) che potrebbero essere usati per monitorare comportamenti o identificare individui indirettamente",
+          "testo": "Raccoglie dati sui movimenti delle persone, che potrebbero servire a sorvegliarle",
           "corretto": true,
           "feedback": "Esatto! Il testo chiede: 'questo sistema raccoglie dati sul movimento delle persone — chi ha accesso a questi dati? Come potrebbero essere usati impropriamente?' Anche dati apparentemente anonimi possono identificare indirettamente."
         },

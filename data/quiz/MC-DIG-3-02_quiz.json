@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "testo": "Risposte false prodotte con lo stesso tono sicuro delle risposte vere — il modello non ha un sistema di verifica interno tra vero e falso e genera testo plausibile, non necessariamente corretto",
+          "testo": "Risposte false date con lo stesso tono sicuro di quelle vere: il modello genera testo plausibile",
           "corretto": true,
           "feedback": "Esatto! Il modello non sa di stare sbagliando. Non ha un meccanismo che distingua il vero dal falso: genera il token statisticamente più probabile, che può essere plausibile ma errato."
         },
@@ -48,7 +48,7 @@
         },
         {
           "id": "b",
-          "testo": "Definisce un criterio operativo: se un umano non riesce a distinguere in una conversazione scritta se sta parlando con una macchina o un umano, la macchina può essere considerata 'intelligente' — senza implicare che la macchina 'capisce' davvero",
+          "testo": "Propone un criterio pratico: se non distingui la macchina da un umano, la consideri 'intelligente'",
           "corretto": true,
           "feedback": "Esatto! Turing propone un criterio operativo per evitare la domanda filosofica 'le macchine possono pensare?' Il test non afferma che la macchina comprende — afferma solo che se supera il test, il comportamento è indistinguibile da quello intelligente."
         },
@@ -114,7 +114,7 @@
         },
         {
           "id": "b",
-          "testo": "Dato il testo di input, calcola la probabilità di ogni possibile token successivo e seleziona uno con alta probabilità — un token alla volta, ripetendo il processo",
+          "testo": "Calcola quale parola è più probabile dopo le precedenti, e ripete un pezzo alla volta",
           "corretto": true,
           "feedback": "Esatto! La risposta viene costruita un token alla volta. Ogni token è condizionato da tutti quelli precedenti. Il parametro 'temperature' controlla quanto è casuale la selezione."
         },
@@ -147,7 +147,7 @@
         },
         {
           "id": "b",
-          "testo": "Una distorsione sistematica nei risultati di un sistema AI, causata da bias nei dati di addestramento, nella definizione del problema o nel meccanismo di feedback — non è casuale, è appresa",
+          "testo": "Una distorsione sistematica nei risultati, appresa dai dati o dal modo di porre il problema",
           "corretto": true,
           "feedback": "Esatto! Un sistema ML impara dai dati: se i dati riflettono bias del mondo reale (es. dataset prevalentemente maschile), il sistema li apprende e può amplificarli. Il bias non è un bug casuale — è un pattern."
         },
@@ -180,7 +180,7 @@
         },
         {
           "id": "b",
-          "testo": "Il social scoring: sistemi che assegnano punteggi ai cittadini in base al loro comportamento per determinare l'accesso a servizi o opportunità",
+          "testo": "Il social scoring: punteggi ai cittadini in base al comportamento, per concedere o negare servizi",
           "corretto": true,
           "feedback": "Esatto! Il social scoring (come quello usato in Cina) è vietato come rischio inaccettabile, insieme a: manipolazione subliminale, identificazione biometrica in tempo reale in spazi pubblici, riconoscimento delle emozioni a scuola e al lavoro."
         },
@@ -213,7 +213,7 @@
         },
         {
           "id": "b",
-          "testo": "Errore < 1% per uomini con pelle chiara; fino al 34,7% per donne con pelle scura — causato da dataset di addestramento sbilanciati, prevalentemente maschili e con pelle chiara",
+          "testo": "Errori minimi per uomini di pelle chiara, altissimi per donne di pelle scura: dati di addestramento sbilanciati",
           "corretto": true,
           "feedback": "Esatto! I sistemi avevano imparato principalmente da dataset sbilanciati. Con meno esempi di donne con pelle scura nel training, il sistema era molto meno preciso su quel gruppo."
         },
@@ -246,7 +246,7 @@
         },
         {
           "id": "b",
-          "testo": "'Calibrato' significa accurato sulla media statistica del gruppo totale — ma il tasso di falsi positivi era quasi doppio per i cittadini neri (28%) rispetto ai bianchi (16%): le medie nascondono le disuguaglianze tra sottogruppi",
+          "testo": "Era accurato in media, ma i falsi positivi erano quasi il doppio per i cittadini neri: la media nasconde",
           "corretto": true,
           "feedback": "Esatto! Il sistema era calibrato nel senso che la sua accuratezza globale era simile tra i gruppi. Ma la distribuzione degli errori era sistematicamente ineguale: i cittadini neri venivano erroneamente classificati come 'ad alto rischio' quasi il doppio delle volte."
         },
@@ -279,7 +279,7 @@
         },
         {
           "id": "b",
-          "testo": "Nel rinforzo non ci sono esempi etichettati: un agente interagisce con un ambiente, riceve reward per azioni corrette e penalità per quelle errate. AlphaGo ha giocato milioni di partite contro se stesso per imparare strategie che nessun umano aveva mai concepito",
+          "testo": "Nel rinforzo non ci sono esempi con la risposta: si impara da premi e penalità. AlphaGo ha giocato milioni di partite contro sé stesso",
           "corretto": true,
           "feedback": "Esatto! AlphaGo ha usato prima apprendimento supervisionato (partite umane) poi per rinforzo (auto-play). Dalla fase di rinforzo sono emerse strategie talmente inusuali che i maestri di Go le hanno studiate come nuove aperture."
         },
@@ -312,7 +312,7 @@
         },
         {
           "id": "b",
-          "testo": "Temperature alta → più casualità nella selezione del token → risposte più creative ma meno accurate; bassa → sceglie quasi sempre il token più probabile → risposte prevedibili e conservative",
+          "testo": "Alta: scelte più casuali, risposte creative ma meno affidabili; bassa: risposte prevedibili e prudenti",
           "corretto": true,
           "feedback": "Esatto! Con temperature bassa il modello sceglie quasi sempre il token con probabilità più alta — risposte coerenti e accurate. Con temperature alta introduce più casualità — risposte più creative e variabili, ma con maggiore rischio di errori."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Sono i pesi numerici della rete neurale, modificati durante l'addestramento — non rappresentano 'conoscenza' memorizzata ma associazioni statistiche tra token che guidano la generazione",
+          "testo": "Sono i pesi numerici della rete: associazioni statistiche apprese, non fatti memorizzati uno per uno",
           "corretto": true,
           "feedback": "Esatto! I parametri sono numeri reali che pesano le connessioni nella rete neurale. Non c'è 'conoscenza' esplicita memorizzata: ci sono pattern statistici appresi dall'enorme corpus di testo su cui il modello è stato addestrato."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "AlexNet ha usato reti neurali profonde addestrate su GPU, ottenendo il 15,3% di errore su ImageNet contro il 26,2% del secondo classificato — quasi la metà — aprendo l'era del deep learning",
+          "testo": "Perché ha vinto con reti neurali profonde su GPU, quasi dimezzando l'errore dei rivali: inizia il deep learning",
           "corretto": true,
           "feedback": "Esatto! Il salto di prestazione era così netto (da 26% a 15% di errore) da convincere l'intera comunità scientifica ad abbandonare i metodi tradizionali in favore del deep learning con GPU."
         },
@@ -411,7 +411,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché il cittadino ha il diritto di sapere se sta interagendo con una macchina o un essere umano: senza questa trasparenza non può esercitare giudizio critico sull'affidabilità delle informazioni — prerequisito per la libertà di scelta informata",
+          "testo": "Perché hai il diritto di sapere se parli con una macchina: solo così puoi valutare quanto fidarti delle risposte",
           "corretto": true,
           "feedback": "Esatto! Sapere che si sta interagendo con un AI cambia come si valuta l'informazione ricevuta: si sa che può allucinare, che non ha esperienza vissuta, che le sue risposte dipendono da pattern statistici."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "Valutazione di conformità prima del deployment, supervisione umana obbligatoria, documentazione trasparente, accuratezza e robustezza certificate — perché le decisioni impattano direttamente vita e opportunità delle persone",
+          "testo": "Verifica di conformità prima dell'uso, supervisione umana, documentazione trasparente e accuratezza controllata",
           "corretto": true,
           "feedback": "Esatto! Un sistema che decide chi viene ammesso a un corso universitario o chi ottiene un lavoro ha conseguenze enormi sulla vita reale. Per questo servono garanzie stringenti prima che il sistema possa essere usato."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "La bolla informativa si restringe progressivamente — il sistema mostra più di ciò che già consumi, eliminando prospettive diverse; le piattaforme non hanno incentivo economico a diversificare perché l'engagement è massimizzato dalla specializzazione",
+          "testo": "La bolla si restringe: vedi sempre più ciò che già consumi, e alle piattaforme conviene così",
           "corretto": true,
           "feedback": "Esatto! È un conflitto strutturale: la piattaforma ottimizza l'engagement (che massimizza i ricavi pubblicitari) — la diversificazione riduce l'engagement, quindi va contro gli interessi economici della piattaforma."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché ogni scelta di design — quali dati usare, quale funzione ottimizzare, quale architettura scegliere — riflette preferenze e valori umani; un LLM su dati prevalentemente anglofoni performa meglio su argomenti anglofoni",
+          "testo": "Perché ogni scelta di progetto, a partire dai dati usati, riflette preferenze e valori di chi la compie",
           "corretto": true,
           "feedback": "Esatto! La 'neutralità' è impossibile: scegliere quali dati includere, cosa ottimizzare, chi ha accesso al sistema — sono tutte scelte valoriali. Il sistema riflette le priorità di chi lo ha costruito."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "La calibrazione misura l'accuratezza globale media, ma il false positive rate può essere distribuito in modo sistematicamente disuguale tra sottogruppi — ottimizzare una metrica può andare a discapito dell'altra",
+          "testo": "La calibrazione misura l'accuratezza media, ma i falsi positivi possono distribuirsi in modo diseguale tra i gruppi",
           "corretto": true,
           "feedback": "Esatto! Questo è il cuore del dibattito sulla 'giustizia algoritmica': le diverse definizioni matematiche di equità sono in conflitto. Non si possono soddisfare tutte contemporaneamente — bisogna scegliere quale privilegiare, e questa è una scelta di valori."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "Verificare su fonti primarie indipendenti: sito ufficiale del Parlamento, archivi giornalistici affidabili, fonti istituzionali — 'il modello ha detto X' non è sufficiente; serve 'ho verificato su Y e confermato perché Z'",
+          "testo": "Controllare su fonti primarie indipendenti, come il sito del Parlamento e archivi giornalistici affidabili",
           "corretto": true,
           "feedback": "Esatto! Il modello non sa di stare sbagliando — può affermare con sicurezza fatti falsi o distorti. Ogni affermazione fattuale deve essere verificata su fonti indipendenti prima di essere citata."
         },

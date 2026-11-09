@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "testo": "Da 'fishing' (pescare): l'attaccante lancia un'esca — il messaggio falso — e aspetta che qualcuno abbocchi inserendo le proprie credenziali su una pagina falsa",
+          "testo": "Da 'fishing', pescare: si lancia un'esca, il messaggio falso, e si aspetta che qualcuno abbocchi",
           "corretto": true,
           "feedback": "Esatto! Come un pescatore che lancia la lenza, l'attaccante invia messaggi a molte persone sperando che qualcuno cada nella trappola. La 'f' è stata sostituita da 'ph' nella cultura hacker degli anni '70."
         },
@@ -48,7 +48,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché nessuna azienda legittima ha mai bisogno di chiederti la password: la conosce già (in forma cifrata) o usa sistemi di recupero che non richiedono di rivelarla",
+          "testo": "Perché nessuna azienda seria ha bisogno di chiederti la password: ha altri sistemi di recupero",
           "corretto": true,
           "feedback": "Esatto! Se hai un account su un sito, quell'azienda ha già la tua password nel suo database (cifrata). Se l'avesse persa, ti inviterebbe a reimpostarla tramite un link ufficiale — non a rivelartela."
         },
@@ -81,7 +81,7 @@
         },
         {
           "id": "b",
-          "testo": "L'app di autenticazione (es. Google Authenticator): il codice viene generato localmente sul tuo telefono fisico e non viaggia mai in rete",
+          "testo": "L'app di autenticazione: il codice nasce sul tuo telefono e non viaggia in rete",
           "corretto": true,
           "feedback": "Esatto! Il codice generato dall'app non viene trasmesso via SMS né via email. Cambia ogni 30 secondi ed esiste solo sul dispositivo fisico: non può essere intercettato durante la trasmissione."
         },
@@ -114,7 +114,7 @@
         },
         {
           "id": "b",
-          "testo": "Unica: una password diversa per ogni account, perché se un sito viene violato e la password rubata, gli altri account restano al sicuro",
+          "testo": "Unica: se un sito viene violato, gli altri tuoi account restano al sicuro",
           "corretto": true,
           "feedback": "Esatto! Il credential stuffing funziona perché molte persone usano la stessa password ovunque. Se ogni account ha una password unica, la violazione di un sito non compromette tutti gli altri."
         },
@@ -147,7 +147,7 @@
         },
         {
           "id": "b",
-          "testo": "Può chiedere direttamente alla piattaforma di rimuovere il contenuto; lui o i genitori possono chiedere al questore di ammonire l'autore senza procedimento penale formale",
+          "testo": "Può chiedere alla piattaforma la rimozione; con i genitori può chiedere al questore di ammonire l'autore",
           "corretto": true,
           "feedback": "Esatto! La L. 71/2017 prevede due strumenti rapidi: (1) richiesta di rimozione diretta alla piattaforma, che deve rispondere entro 48 ore; (2) istanza al questore per ammonire l'autore, senza aprire un processo penale."
         },
@@ -213,7 +213,7 @@
         },
         {
           "id": "b",
-          "testo": "Software automatici prendono coppie email/password da violazioni note e le provano su centinaia di siti in parallelo, sfruttando il fatto che molte persone usano la stessa password ovunque",
+          "testo": "Programmi automatici provano su molti siti le coppie email/password rubate altrove",
           "corretto": true,
           "feedback": "Esatto! Il software non deve indovinare: usa credenziali reali già rubate. Se usi la stessa password su 5 siti diversi e uno viene violato, le tue credenziali vengono provate automaticamente sugli altri 4."
         },
@@ -246,7 +246,7 @@
         },
         {
           "id": "b",
-          "testo": "No: la parte che conta è il dominio principale prima del primo '/', che è 'instagram-security-check.net' — un sito completamente diverso da instagram.com",
+          "testo": "No: il dominio vero è 'instagram-security-check.net', non instagram.com",
           "corretto": true,
           "feedback": "Esatto! La regola: l'unica parte che conta è il dominio principale tra il punto e il primo '/'. 'instagram-security-check.net' è un dominio diverso da 'instagram.com'. Il 'qualcosa.' prima è solo un sottodominio del sito falso."
         },
@@ -279,7 +279,7 @@
         },
         {
           "id": "b",
-          "testo": "Cambiare la password dell'account email — perché chiunque la controlli può resettare la password di Instagram e di qualsiasi altro account tramite 'ho dimenticato la password'",
+          "testo": "Cambiare la password dell'email: chi la controlla può reimpostare tutte le altre",
           "corretto": true,
           "feedback": "Esatto! L'email è la chiave di recupero universale: tramite il link 'password dimenticata' si può reimpostare qualsiasi account. Se l'attaccante controlla la tua email, può rientrare su Instagram (e ovunque) anche dopo che hai cambiato la password."
         },
@@ -312,7 +312,7 @@
         },
         {
           "id": "b",
-          "testo": "Il social engineering costruisce una relazione di fiducia nel tempo prima di chiedere qualcosa, sfruttando empatia, urgenza emotiva o autorità — il phishing è un singolo messaggio di truffa immediata",
+          "testo": "Il social engineering costruisce fiducia nel tempo; il phishing è un singolo messaggio esca",
           "corretto": true,
           "feedback": "Esatto! Un attaccante che pratica il social engineering può passare settimane a costruire una relazione con la vittima, fingendosi un collega, un tecnico o un fornitore, prima di chiedere accesso a dati sensibili."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Permette di verificare se la tua email è presente in database di credenziali rubate da violazioni note — se compare, quella password è probabilmente in circolazione e va cambiata subito",
+          "testo": "Controlla se la tua email compare in archivi di credenziali rubate: se sì, cambia password",
           "corretto": true,
           "feedback": "Esatto! Haveibeenpwned raccoglie database da centinaia di violazioni (incluso RockYou2024 con 10 miliardi di credenziali). Inserendo la tua email, scopri quali siti sono stati violati e puoi agire immediatamente."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "Per reati informatici con conseguenze concrete: account takeover con danni patrimoniali o personali, estorsione online, distribuzione di materiale illecito, truffe con perdite economiche",
+          "testo": "Per reati con danni concreti: furto di account, estorsione, truffe con perdite di denaro",
           "corretto": true,
           "feedback": "Esatto! La Polizia Postale gestisce reati informatici gravi. Una segnalazione è appropriata quando c'è un danno concreto: hai perso denaro in una truffa, sei vittima di estorsione, qualcuno ha diffuso materiale privato tuo senza consenso."
         },
@@ -411,7 +411,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché un account compromesso diventa uno strumento contro la tua rete: invia truffe ai tuoi contatti, diffonde link malevoli usando la tua identità — la tua sicurezza è parte dell'infrastruttura di sicurezza collettiva",
+          "testo": "Perché un account violato viene usato contro i tuoi contatti: la tua sicurezza protegge anche loro",
           "corretto": true,
           "feedback": "Esatto! Il Traguardo D2 include la protezione dei dati altrui. Quando il tuo account Instagram viene compromesso, l'attaccante invia truffe a tutti i tuoi follower usando la tua identità di cui si fidano."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "Le regole strutturali: controlla sempre l'URL (indipendente dalla qualità del testo), non fornire mai la password via messaggio (regola assoluta), usa il 2FA (protegge anche se la password è rubata)",
+          "testo": "Le regole di struttura: controllare l'URL, non dare mai la password via messaggio, usare il 2FA",
           "corretto": true,
           "feedback": "Esatto! L'AI può eliminare gli errori grammaticali e personalizzare lo stile, ma non può fare in modo che instagram.com e instagram-security-check.net siano lo stesso URL. Le difese strutturali non dipendono dalla qualità del testo."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché molte persone non cambiano le password per anni e le usano su più siti: anche un 2% di successo su 10 miliardi equivale a 200 milioni di account compromessi",
+          "testo": "Perché molti non cambiano password per anni e la riusano: anche una piccola percentuale sono milioni di account",
           "corretto": true,
           "feedback": "Esatto! La matematica rende il credential stuffing redditizio anche con dati vecchi: se il 2% delle credenziali è ancora valido su altri siti, 10 miliardi × 2% = 200 milioni di account. La scala rende efficace anche un basso tasso di successo."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché copie già scaricate, screenshot, cache dei motori di ricerca e archivi web sopravvivono indipendentemente dall'originale; la richiesta a Google è accettata solo in determinate condizioni",
+          "testo": "Perché screenshot, copie e archivi web sopravvivono alla cancellazione dell'originale",
           "corretto": true,
           "feedback": "Esatto! Rimuovere un contenuto dall'originale non cancella le copie già fatte da altri, le cache dei motori di ricerca, gli archivi digitali come la Wayback Machine. La diffusione virale è praticamente irreversibile."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "Un accesso speciale intenzionale inserito nella crittografia su richiesta governativa — controverso perché qualsiasi backdoor indebolisce la sicurezza per tutti, anche contro attori malevoli non governativi",
+          "testo": "Un accesso voluto nella crittografia, chiesto dai governi: indebolisce la sicurezza di tutti",
           "corretto": true,
           "feedback": "Esatto! Questo è il 'going dark debate': i governi vogliono accesso ai messaggi cifrati (WhatsApp, Signal); i critici sostengono che una backdoor per le autorità è anche una potenziale backdoor per hacker e governi autoritari."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché quasi tutti i servizi online permettono di reimpostare la password via email — chi controlla la tua email può resettare le password di tutti gli altri account",
+          "testo": "Perché quasi tutti i servizi reimpostano la password via email: chi ha l'email ha tutto",
           "corretto": true,
           "feedback": "Esatto! Il meccanismo 'password dimenticata' invia un link di reset all'email. Se qualcuno controlla la tua email, può resettare la password di Instagram, della banca, di Netflix — di qualsiasi servizio che usa quell'indirizzo."
         },

@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Economie di scala, miglioramenti tecnologici nella produzione di celle fotovoltaiche e aumento della produzione mondiale",
+          "testo": "Economie di scala, progressi nella produzione delle celle e crescita della produzione mondiale",
           "corretto": true,
           "feedback": "Esatto! La drastica riduzione del costo solare è il risultato combinato di economie di scala (produzione di massa), miglioramenti tecnologici nell'efficienza delle celle, e la 'curva di apprendimento' industriale."
         },
@@ -42,7 +42,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Fotoni di luce cedono energia agli elettroni in materiali semiconduttori, mettendoli in movimento e generando corrente elettrica",
+          "testo": "I fotoni cedono energia agli elettroni di un semiconduttore, che si muovono e generano corrente",
           "corretto": true,
           "feedback": "Esatto! L'effetto fotoelettrico: fotoni di luce colpiscono il silicio semiconduttore, cedono energia agli elettroni degli strati superficiali, che si mettono in movimento. Questo flusso ordinato di elettroni è la corrente elettrica."
         },
@@ -75,7 +75,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "È dispacciabile: si può regolare a piacimento aprendo o chiudendo le paratoie, a differenza di solare ed eolico che dipendono dalle condizioni meteorologiche",
+          "testo": "Si può regolare a piacere aprendo o chiudendo le paratoie, senza dipendere dal meteo",
           "corretto": true,
           "feedback": "Esatto! L'idroelettrico è 'dispacciabile': quando serve più elettricità si aumenta il flusso d'acqua, quando ce n'è troppa si riduce. Solare ed eolico sono intermittenti: producono solo quando c'è sole o vento."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La potenza prodotta nelle condizioni standard di test: 1.000 W/m² di irraggiamento e temperatura di 25°C",
+          "testo": "La potenza prodotta in condizioni standard di prova, con irraggiamento di 1.000 W/m²",
           "corretto": true,
           "feedback": "Esatto! La potenza di picco (kWp) è la potenza nominale dell'impianto nelle condizioni standard di test (1.000 W/m² di irraggiamento, 25°C). Nella realtà si produce molto meno: il fattore di carico in Italia è 13-15%."
         },
@@ -174,7 +174,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'elettricità usata per l'elettrolisi proviene da fonti rinnovabili, quindi non ci sono emissioni di CO₂ nella produzione",
+          "testo": "L'elettricità usata per l'elettrolisi viene da fonti rinnovabili, senza emissioni di CO₂",
           "corretto": true,
           "feedback": "Esatto! L'idrogeno è 'verde' se l'elettricità usata per l'elettrolisi (separazione di H₂O in H₂ e O₂) viene da fonti rinnovabili. Se invece si usa elettricità da gas o carbone, si chiama idrogeno 'grigio' o 'blu'."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ha eliminato la resistenza locale alle turbine: chi possiede le turbine e ne riceve i profitti non si lamenta del rumore o dell'impatto visivo",
+          "testo": "Ha eliminato le resistenze locali: chi possiede le turbine e ne guadagna non protesta",
           "corretto": true,
           "feedback": "Esatto! La proprietà cooperativa ha trasformato i residenti da 'soggetti passivi' dell'impatto a 'beneficiari attivi' dei profitti. Chi ha investito nella cooperativa non si lamenta del rumore o dell'impatto visivo delle sue turbine."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il biometano può sostituire il gas fossile nelle reti esistenti senza modificare le infrastrutture, sostituendo gas fossile in modo quasi neutro per il clima",
+          "testo": "Può sostituire il gas fossile nelle reti esistenti, senza modificare gli impianti",
           "corretto": true,
           "feedback": "Esatto! Il biometano si immette nella rete del gas naturale esistente e può essere usato da qualsiasi utente collegato alla rete senza modifiche. La combustione diretta del biogas in loco richiede invece impianti cogenerativi locali."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "I costi di accumulo energetico, smart grid, rinforzo delle reti di distribuzione e gestione dell'intermittenza quando la quota di rinnovabili è alta",
+          "testo": "I costi di accumulo, reti rinforzate e gestione dell'intermittenza delle rinnovabili",
           "corretto": true,
           "feedback": "Esatto! Il costo di produzione del solare è basso, ma quando la quota di rinnovabili supera il 30-40%, emergono costi aggiuntivi: accumulo (batterie), rinforzo delle reti, gestione in tempo reale dell'intermittenza tramite smart grid. Un sistema al 100% rinnovabili è più costoso da gestire di uno al 30%."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché il 'fattore di carico' del solare in Italia è 13-15%: l'impianto non produce sempre a piena potenza ma varia con ore del giorno, stagione e condizioni meteorologiche",
+          "testo": "Perché l'impianto non lavora sempre a piena potenza: dipende da ora, stagione e meteo",
           "corretto": true,
           "feedback": "Esatto! Un impianto da 3 kWp a piena potenza per 8.760 ore/anno produrrebbe 26.280 kWh. Ma il fattore di carico è 13-15%: la produzione reale è 3.600-4.000 kWh/anno perché il sole non splende sempre e le nuvole riducono l'irraggiamento."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Produzione (rinnovabili), distribuzione (smart grid), accumulo (batterie, pompato, idrogeno) e consumo (demand response, veicoli V2G)",
+          "testo": "Produzione, distribuzione, accumulo e consumo: vanno ripensati tutti e quattro insieme",
           "corretto": true,
           "feedback": "Esatto! La transizione richiede: produzione (fonti rinnovabili), distribuzione (smart grid con gestione intelligente), accumulo (per compensare l'intermittenza), e consumo (flessibilità della domanda, V2G). Non basta sostituire le centrali."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché richiede un sito geografico con due bacini a quote diverse collegabili: non tutti i territori hanno questa conformazione",
+          "testo": "Perché servono due bacini a quote diverse collegabili: non tutti i territori li hanno",
           "corretto": true,
           "feedback": "Esatto! L'idroelettrico di pompaggio richiede due bacini a quote diverse (uno in alto, uno in basso) abbastanza vicini da poter essere collegati con condotte. Non tutti i territori hanno questa configurazione geografica, limitando l'applicabilità globale."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La complessità della governance, del bilanciamento della rete, delle interconnessioni regionali e della gestione dell'intermittenza aumenta in modo non-lineare con la scala",
+          "testo": "Governo della rete, bilanciamento e interconnessioni diventano molto più complessi su grande scala",
           "corretto": true,
           "feedback": "Esatto! In un'isola da 4.000 persone, la comunità può coordinarsi direttamente e l'energia fluisce su breve distanza. Con 60 milioni di persone distribuite su un continente, occorrono: reti di trasmissione nazionali, mercati elettrici in tempo reale, interconnessioni con altri paesi, sistemi di accumulo distribuiti, smart grid con milioni di nodi."
         },
@@ -438,7 +438,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché l'idrogeno può essere stoccato in grandi quantità e per lunghi periodi (stagionale), mentre le batterie sono economiche solo per accumulo di breve durata (giornaliero o settimanale)",
+          "testo": "Perché l'idrogeno si conserva in grandi quantità per mesi, mentre le batterie convengono per ore o giorni",
           "corretto": true,
           "feedback": "Esatto! Le batterie sono ottime per accumulo giornaliero o settimanale (casa, auto) ma costano molto per grandi capacità (GWh). L'idrogeno può essere stoccato in quantità enormi (gasdotti, caverne saline) per mesi, coprendo il fabbisogno stagionale che le batterie non possono economicamente coprire."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La capacità di ottenere autorizzazioni, gestire l'opposizione locale (NIMBYsmo) e integrare gli impianti nelle reti di distribuzione — non solo la competenza tecnica di progettare impianti",
+          "testo": "Saper ottenere autorizzazioni, gestire l'opposizione locale e integrare gli impianti nella rete",
           "corretto": true,
           "feedback": "Esatto! Triplicare il fotovoltaico in 7 anni non è un problema solo tecnico: la tecnologia esiste. Il collo di bottiglia è burocratico e sociale: ottenere autorizzazioni (iter lunghi), gestire l'opposizione locale, e integrare migliaia di impianti nella rete di distribuzione esistente."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Offshore: produce più e in modo più costante (meno intermittente) ma è molto più costoso e complesso; onshore: più economico e rapido da installare ma produzione più variabile e impatto paesaggistico",
+          "testo": "Offshore produce di più e in modo più costante ma costa molto; onshore è più economico ma più variabile",
           "corretto": true,
           "feedback": "Esatto! Offshore ha fattore di carico 35-45% (molto più costante, quindi più facile da integrare nella rete) ma costi elevatissimi di installazione e manutenzione in mare. Onshore è 5-10 volte più economico ma più intermittente e causa più opposizione locale per impatto visivo."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il ciclo di rigenerazione deve avvenire nella stessa regione e sullo stesso arco temporale dell'emissione, altrimenti si emette CO₂ ora e si riassorbe in decenni o altrove",
+          "testo": "La ricrescita deve avvenire negli stessi tempi dell'emissione, altrimenti la CO₂ resta in aria per decenni",
           "corretto": true,
           "feedback": "Esatto! La neutralità climatica delle biomasse è condizionale: se si taglia una foresta a crescita lenta in Amazzonia e si brucia in Europa, l'emissione è immediata (oggi) ma il riassorbimento richiede decenni o secoli. La neutralità vale solo se la rigenerazione è locale e tempestivamente comparabile all'emissione."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Gli investimenti in impianti fossili rischiano di diventare 'stranded assets' (attivi bloccati) prima del termine della loro vita utile, perché le rinnovabili continuano a diventare più competitive",
+          "testo": "Gli impianti fossili rischiano di diventare investimenti inutilizzabili prima della fine della loro vita utile",
           "corretto": true,
           "feedback": "Esatto! Una centrale a carbone costruita oggi ha vita utile di 30-40 anni. Se il solare continua a calare di prezzo, quella centrale potrebbe diventare economicamente non competitiva dopo 10-15 anni (prima del rimborso dell'investimento): uno 'stranded asset'. Questo rende rischiosi gli investimenti in fossili."
         },

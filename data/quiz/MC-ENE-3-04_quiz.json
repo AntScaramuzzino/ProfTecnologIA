@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché ogni utenza riceve la tensione piena (230V) e funziona indipendentemente dalle altre: spegnere una luce non spegne le altre",
+          "testo": "Perché ogni utenza riceve la tensione piena e funziona indipendentemente dalle altre",
           "corretto": true,
           "feedback": "Esatto! In parallelo ogni ramo è connesso direttamente ai due poli dell'alimentazione: riceve sempre 230V indipendentemente dagli altri. Se un fusibile salta in un circuito, gli altri continuano a funzionare. In serie sarebbe impossibile."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "setup() si esegue una sola volta all'avvio, loop() si ripete continuamente all'infinito",
+          "testo": "setup() si esegue una volta all'avvio, loop() si ripete all'infinito",
           "corretto": true,
           "feedback": "Esatto! setup() viene eseguita una sola volta quando l'Arduino si avvia (o resetta): si usa per configurare i pin, inizializzare la comunicazione seriale. loop() si esegue in ciclo continuo per sempre: contiene il comportamento principale del programma."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la fibrillazione ventricolare (aritmia mortale) causata dalla corrente elettrica può iniziare entro 50-100 ms dall'esposizione, quindi il salvavita deve interrompere il circuito prima di quel limite",
+          "testo": "Perché la corrente può mandare il cuore in fibrillazione in poche decine di millisecondi",
           "corretto": true,
           "feedback": "Esatto! Il cuore è molto sensibile alle correnti elettriche: la fibrillazione ventricolare può iniziare in decine di millisecondi. Il differenziale a 30 ms garantisce l'interruzione prima che si manifesti l'aritmia mortale."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ha permesso di integrare miliardi di funzioni logiche in dispositivi tascabili, abilitando l'informatica personale, i telefoni cellulari e ogni dispositivo digitale moderno",
+          "testo": "Ha permesso di mettere miliardi di funzioni logiche in dispositivi tascabili",
           "corretto": true,
           "feedback": "Esatto! Prima del CI, un computer occupava una stanza. Con i CI, tutta la logica computazionale di una stanza può stare in un chip di pochi mm². Questo ha reso possibile: personal computer, telefoni cellulari, sensori, controller industriali — ogni dispositivo digitale moderno."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Al buio il LDR ha alta resistenza → la tensione nel punto di mezzo è alta. Con luce il LDR ha bassa resistenza → tensione nel punto di mezzo bassa. Arduino legge questa variazione di tensione come informazione sulla luce",
+          "testo": "La resistenza del LDR cambia con la luce e fa variare la tensione nel punto di mezzo, che Arduino legge",
           "corretto": true,
           "feedback": "Esatto! Il divisore di tensione con LDR: nel punto di mezzo V_medio = V_alim × R_fissa / (R_LDR + R_fissa). Al buio R_LDR è grande → V_medio alto. Con luce R_LDR è piccolo → V_medio basso. Arduino legge V_medio tramite il pin analogico A0 e lo converte in un valore 0-1023."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le lampadine tradizionali incandescenti richiedevano alta tensione (serie di 20 lampadine × 12V = 240V) perché a bassa tensione il filamento non raggiungeva la temperatura di incandescenza; i LED funzionano efficientemente a 2-3V permettendo il parallelo",
+          "testo": "Le lampadine a filamento richiedevano tensione alta, ottenuta in serie; i LED lavorano a pochi volt",
           "corretto": true,
           "feedback": "Esatto! Le vecchie lucine erano in serie perché ogni lampadina richiedeva una certa tensione (es. 12V × 20 = 240V dalla rete). I LED funzionano a 2-3V: se messi in parallelo ciascuno riceve 2-3V dall'alimentatore, senza il problema di dividere la tensione totale in serie."
         },

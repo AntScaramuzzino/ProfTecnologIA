@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "testo": "Nel ML il sistema apprende da esempi e ottimizza le proprie prestazioni su dati, invece di seguire regole esplicite programmate",
+          "testo": "Nel ML il sistema impara dagli esempi, senza seguire regole scritte dal programmatore",
           "corretto": true,
           "feedback": "Esatto! Nella programmazione tradizionale lo sviluppatore scrive regole esplicite ('SE spam ALLORA...'). Nel ML il sistema riceve esempi (email spam e non spam) e 'impara' da soli le regole che le distinguono, senza che nessuno le abbia codificate esplicitamente."
         },
@@ -81,7 +81,7 @@
         },
         {
           "id": "b",
-          "testo": "Un insieme strutturato di dati usato per addestrare, validare e testare un modello ML",
+          "testo": "Un insieme di dati usato per addestrare e provare un modello",
           "corretto": true,
           "feedback": "Esatto! Un dataset è una raccolta strutturata di esempi usata nelle diverse fasi del ML: training set (per addestrare il modello), validation set (per ottimizzare i parametri) e test set (per valutare le prestazioni finali su dati mai visti). La qualità del dataset determina la qualità del modello."
         },
@@ -114,7 +114,7 @@
         },
         {
           "id": "b",
-          "testo": "Una distorsione sistematica nelle predizioni del modello causata da squilibri o discriminazioni nei dati di training",
+          "testo": "Una distorsione sistematica nelle previsioni, causata da squilibri nei dati",
           "corretto": true,
           "feedback": "Esatto! Se i dati di training riflettono discriminazioni storiche (es. un dataset di curriculum con candidati assunti prevalentemente maschi), il modello le amplifica: imparerà a preferire i curriculum maschili anche per posizioni dove il genere non è rilevante. Il modello amplifica le distorsioni dei dati."
         },
@@ -180,7 +180,7 @@
         },
         {
           "id": "b",
-          "testo": "Quando il modello genera informazioni false o inesistenti presentandole con sicurezza come se fossero vere",
+          "testo": "Quando il modello genera informazioni false presentandole come vere",
           "corretto": true,
           "feedback": "Esatto! Un'allucinazione dell'AI si verifica quando il modello genera testo che afferma fatti falsi, cita articoli scientifici inesistenti, inventa biografie o dati, ma lo fa con la stessa sicurezza con cui fornirebbe informazioni corrette. Il modello non 'mente' consapevolmente: genera ciò che statisticamente appare plausibile."
         },
@@ -213,7 +213,7 @@
         },
         {
           "id": "b",
-          "testo": "Il supervisionato usa dati etichettati per predire output; il non supervisionato trova pattern nei dati senza etichette",
+          "testo": "Il supervisionato usa dati etichettati; il non supervisionato cerca schemi senza etichette",
           "corretto": true,
           "feedback": "Esatto! ML supervisionato: dati etichettati (input+output corretto), obiettivo predire l'output su nuovi dati. ML non supervisionato: solo input senza etichette, l'algoritmo trova autonomamente strutture, gruppi (clustering) o rappresentazioni nei dati senza sapere cosa cercare."
         },
@@ -279,7 +279,7 @@
         },
         {
           "id": "b",
-          "testo": "Un agente impara tramite interazione con un ambiente: riceve ricompense per azioni corrette e penalità per quelle sbagliate",
+          "testo": "Un agente impara provando: riceve premi per le azioni giuste e penalità per le sbagliate",
           "corretto": true,
           "feedback": "Esatto! Nel reinforcement learning (RL) un agente esegue azioni in un ambiente, osserva lo stato risultante e riceve una ricompensa (positiva o negativa). L'obiettivo è massimizzare la ricompensa cumulativa nel tempo. Non ci sono etichette — solo feedback dall'ambiente. Adatto per problemi sequenziali dove non esiste una risposta predefinita."
         },
@@ -312,7 +312,7 @@
         },
         {
           "id": "b",
-          "testo": "Il modello impara troppo specificamente i dati di training (incluso il rumore) e non generalizza su dati nuovi",
+          "testo": "Il modello impara a memoria i dati di training e non generalizza su dati nuovi",
           "corretto": true,
           "feedback": "Esatto! In overfitting il modello 'memorizza' i dati di training (inclusi gli errori e il rumore) invece di imparare i pattern generali. Risultato: accuratezza altissima sul training set, accuratezza molto bassa su dati mai visti. È come uno studente che memorizza le domande passate invece di capire il concetto."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Il deep learning impara automaticamente le feature rilevanti dai dati; il ML tradizionale richiede feature engineering manuale da parte di esperti del dominio",
+          "testo": "Il deep learning ricava da solo le feature; nel ML tradizionale le sceglie un esperto",
           "corretto": true,
           "feedback": "Esatto! Nel ML tradizionale (regressione, SVM, random forest) un esperto del dominio deve estrarre manualmente le feature rilevanti dai dati grezzi (es. da un'immagine: estrarre bordi, texture, colori). Il deep learning impara automaticamente le feature utili attraverso i suoi strati nascosti."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "Il clustering raggruppa automaticamente dati simili tra loro; es. Spotify raggruppa brani con caratteristiche simili per creare playlist personalizzate",
+          "testo": "Raggruppa da solo dati simili; es. brani musicali con caratteristiche vicine",
           "corretto": true,
           "feedback": "Esatto! Il clustering trova autonomamente strutture nei dati raggruppando esempi simili. Spotify usa clustering per raggruppare brani con caratteristiche simili (BPM, tono, energia, valenza) e identificare 'micro-generi'. Nessuno ha etichettato a mano i generi — il modello li ha trovati da solo."
         },
@@ -411,7 +411,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché ottimizzano la probabilità statistica del testo successivo, senza un meccanismo interno di verifica dei fatti: generano ciò che sembra plausibile, non ciò che è vero",
+          "testo": "Perché generano il testo più probabile, senza un meccanismo interno che verifichi i fatti",
           "corretto": true,
           "feedback": "Esatto! I Large Language Models (LLM) come GPT sono addestrati a predire il token successivo più probabile dato il contesto. Non hanno accesso a un 'ground truth' dei fatti del mondo — generano sequenze statisticamente plausibili. Quando mancano di informazioni, generano testo che sembra corretto stilisticamente ma può essere fattualmente falso."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "Usare dataset bilanciati demograficamente, applicare metriche di fairness durante il training e auditare regolarmente i risultati per gruppi protetti",
+          "testo": "Usare dati bilanciati, misurare l'equità durante il training e controllare i risultati per gruppo",
           "corretto": true,
           "feedback": "Esatto! Ridurre il bias richiede un approccio multi-strato: 1) Dataset bilanciato: assicurare rappresentazione equa di tutti i gruppi demografici; 2) Fairness constraints nel training: ottimizzare anche per equità, non solo per accuratezza; 3) Audit periodici: analizzare le predizioni separatamente per gruppi demografici; 4) Trasparenza: rendere spiegabili le decisioni del modello."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché non è possibile spiegare il ragionamento della decisione, rendendo impossibile contestarla, correggerla o verificarne la correttezza",
+          "testo": "Perché la decisione non si può spiegare, né contestare o verificare",
           "corretto": true,
           "feedback": "Esatto! Se un modello opaco nega un mutuo o suggerisce una diagnosi sbagliata, né il paziente/cliente né il medico/banca sanno perché. Questo viola il diritto alla spiegazione (Art. 22 GDPR), rende impossibile correggere errori sistematici, e impedisce di verificare se la decisione è basata su feature legittime o su correlazioni spurie (bias)."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Quando un agente deve imparare a prendere decisioni sequenziali in un ambiente dinamico, dove non esiste una risposta 'corretta' predefinita ma solo una funzione di ricompensa",
+          "testo": "Quando un agente deve prendere decisioni in sequenza in un ambiente che cambia",
           "corretto": true,
           "feedback": "Esatto! Il RL eccelle in problemi sequenziali con feedback ritardato: il gioco del Go (ogni mossa influenza posizioni future), il trading algoritmico (le decisioni di acquisto influenzano i prezzi futuri), la robotica (sequenze di movimenti per completare un compito), i veicoli autonomi (decisioni di guida continue). Non esiste una risposta 'giusta' predefinita — solo una ricompensa cumulativa da massimizzare."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "Confrontando le prestazioni su training set e test set: overfitting = alta accuratezza su training, bassa su test; underfitting = bassa accuratezza su entrambi",
+          "testo": "Confrontando training e test: overfitting se va bene solo sul primo; underfitting se male su entrambi",
           "corretto": true,
           "feedback": "Esatto! La diagnosi si fa confrontando training e test performance. Overfitting: training accuracy = 99%, test accuracy = 65% → il modello ha memorizzato il training. Underfitting: training accuracy = 65%, test accuracy = 63% → il modello è troppo semplice. Good fit: training ≈ test con entrambi alti."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "L'accuratezza globale non distingue falsi negativi (tumori non rilevati) da falsi positivi (allarmi inutili): in oncologia un falso negativo è molto più pericoloso e richiede analisi di sensibilità e specificità",
+          "testo": "L'accuratezza non distingue i tumori non rilevati dai falsi allarmi, e i primi sono molto più gravi",
           "corretto": true,
           "feedback": "Esatto! Per la diagnosi oncologica, l'accuratezza globale è insufficiente come unica metrica. Serve analizzare: Sensibilità (recall): quanti tumori veri vengono rilevati? Specificità: quanti sani vengono correttamente classificati sani? Un sistema con 95% di accuratezza ma bassa sensibilità può perdere molti tumori reali — un errore clinicamente inaccettabile."
         },

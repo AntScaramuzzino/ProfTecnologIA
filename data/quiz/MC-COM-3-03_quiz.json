@@ -45,7 +45,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il 16% delle emissioni globali, più di tutta l'agricoltura mondiale",
+          "testo": "Il 16% delle emissioni globali, più dell'agricoltura",
           "corretto": true,
           "feedback": "Esatto! Il testo indica che il settore dei trasporti produce il 16% delle emissioni globali di gas serra, una quota superiore all'intera agricoltura mondiale."
         },
@@ -117,7 +117,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Aggiungere corsie stradali aumenta il traffico perché più persone scelgono l'auto",
+          "testo": "Più corsie attirano più auto, e il traffico torna come prima",
           "corretto": true,
           "feedback": "Esatto! La 'domanda indotta' è il fenomeno per cui più strade non riducono il traffico: incentivano più persone a usare l'auto, generando altro traffico."
         },
@@ -153,7 +153,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il trasporto marittimo (navi portacontainer)",
+          "testo": "Il trasporto marittimo",
           "corretto": true,
           "feedback": "Esatto! Il 90% delle merci mondiali viaggia via mare. Il trasporto marittimo è il più efficiente per le grandi distanze grazie alla capacità enormedelle navi portacontainer."
         },
@@ -225,7 +225,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ha standardizzato le dimensioni dei carichi, riducendo i costi di movimentazione del 90% rispetto al 1960",
+          "testo": "Ha reso i carichi tutti uguali, abbattendo i costi di carico e scarico",
           "corretto": true,
           "feedback": "Esatto! Il container ha eliminato il carico/scarico manuale (settimane di lavoro) e standardizzato le misure, rendendo economico produrre in Asia e vendere in Europa."
         },
@@ -261,7 +261,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché il volo include 1,5h di spostamenti aeroportuali e 1h di imbarco, superando le 2h55m del treno",
+          "testo": "Perché all'aereo vanno aggiunti i tragitti da e per l'aeroporto e l'imbarco",
           "corretto": true,
           "feedback": "Esatto! Il treno impiega 2h55m direttamente centro-centro. Il volo pesa ~1h volo + 1,5h aeroporto + 1h imbarco/sbarco = 3,5-4h totali."
         },
@@ -297,7 +297,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il cherosene aeronautico non è tassato a livello internazionale, a differenza del carburante per auto",
+          "testo": "Il cherosene degli aerei non è tassato a livello internazionale",
           "corretto": true,
           "feedback": "Esatto! Il cherosene per l'aviazione non è tassato internazionalmente: è uno dei più grandi sussidi impliciti ai combustibili fossili, che rende i voli artificialmente economici."
         },
@@ -333,7 +333,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "300 kg di CO₂ all'anno (5km × 2 × 130g/km × 200 = 260 kg ≈ 300 kg)",
+          "testo": "260 kg di CO₂ all'anno",
           "corretto": true,
           "feedback": "Esatto! 5 km × 2 (A/R) × 130 g/km = 1.300 g/giorno = 1,3 kg/giorno × 200 giorni = 260 kg/anno. Circa 300 kg considerando che 130 g è la media."
         },
@@ -369,7 +369,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché le emissioni per passeggero di un pullman pieno sono simili o inferiori al treno, con più flessibilità",
+          "testo": "Perché da pieno emette poco per passeggero ed è flessibile",
           "corretto": true,
           "feedback": "Esatto! Un pullman con 27 persone emette 20-30 g CO₂/km per passeggero — simile al treno. In più offre flessibilità di orario e partenza porta a porta."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Più persone abbandonano il bus, meno il servizio migliora: è un circolo vizioso reversibile con investimenti",
+          "testo": "Un circolo vizioso: meno passeggeri, servizio peggiore, ancora meno passeggeri",
           "corretto": true,
           "feedback": "Esatto! Il testo descrive il ciclo: meno utenti → meno risorse → servizio peggiore → altri abbandonano. Ma il contrario funziona: investire attira utenti, che portano risorse, che migliorano il servizio."
         },
@@ -441,7 +441,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "I costi ambientali (emissioni, acqua, smaltimento) sono esternalizzati: non sono nel prezzo del prodotto",
+          "testo": "I costi ambientali non sono compresi nel prezzo del prodotto",
           "corretto": true,
           "feedback": "Esatto! Il testo spiega che i 'costi esternalizzati' — le emissioni dei trasporti, l'inquinamento dell'acqua, lo smaltimento — non sono inclusi nel prezzo. Se lo fossero, il capo costerebbe molto di più."
         },
@@ -477,7 +477,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la produzione della batteria e il mix energetico italiano (non al 100% rinnovabile) contribuiscono alle emissioni del ciclo di vita",
+          "testo": "Perché contano la produzione della batteria e l'origine della corrente",
           "corretto": true,
           "feedback": "Esatto! Il testo usa il concetto di 'emissioni dell'intero ciclo di vita': include la produzione della batteria e le emissioni legate all'elettricità usata per ricaricare."
         },
@@ -549,7 +549,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "I dati di passeggero-km per mezzo e la distribuzione dei nodi di spostamento non serviti",
+          "testo": "Passeggeri per ogni mezzo e zone non servite",
           "corretto": true,
           "feedback": "Esatto! Il testo indica che il Mobility Planner identifica 'i nodi critici dove la gente si sposta ma il trasporto è carente' usando dati di flusso per proporre soluzioni integrate."
         },
@@ -585,7 +585,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "I dati raccolti, se condivisi con il Comune, possono influenzare decisioni reali (nuove linee bus, rastrelliere bici)",
+          "testo": "I dati raccolti, dati al Comune, possono orientare decisioni reali",
           "corretto": true,
           "feedback": "Esatto! Il testo indica che l'impatto non è solo diretto: i dati raccolti da un piano scolastico possono diventare input per decisioni pubbliche con scala ben maggiore."
         },
@@ -621,7 +621,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La produzione della batteria ha un impatto iniziale elevato che si ammortizza solo con l'uso continuato",
+          "testo": "Produrre la batteria inquina molto: l'impatto si recupera solo con l'uso",
           "corretto": true,
           "feedback": "Esatto! Il break-even indica che la produzione della batteria crea un 'debito di carbonio' che l'auto elettrica ripaga guidando con energia più pulita. Chi percorre pochi km non raggiunge mai il vantaggio."
         },

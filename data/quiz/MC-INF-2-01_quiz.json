@@ -54,7 +54,7 @@
         },
         {
           "id": "c",
-          "testo": "Gary Kildall di Digital Research nel 1974",
+          "testo": "Gary Kildall nel 1974",
           "corretto": true,
           "feedback": "Esatto! Gary Kildall ha creato CP/M (Control Program for Microcomputers) nel 1974 per Digital Research. È stato il primo sistema operativo ampiamente diffuso per microcomputer, ed è diventato lo standard de facto fino all'arrivo di MS-DOS nel 1981."
         },
@@ -114,7 +114,7 @@
         },
         {
           "id": "b",
-          "testo": "La capacità del sistema operativo di eseguire più programmi contemporaneamente condividendo le risorse",
+          "testo": "La capacità di eseguire più programmi insieme, condividendo le risorse",
           "corretto": true,
           "feedback": "Esatto! Il multitasking permette di eseguire più programmi 'contemporaneamente'. In realtà su un solo core la CPU li esegue uno alla volta, ma li alterna così rapidamente (a fettine di tempo chiamate 'time slice') che sembrano simultanei all'utente."
         },
@@ -213,7 +213,7 @@
         },
         {
           "id": "b",
-          "testo": "Usa parte dello storage (SSD/HDD) come memoria virtuale (swap) per estendere la RAM disponibile",
+          "testo": "Usa parte del disco come memoria virtuale per estendere la RAM",
           "corretto": true,
           "feedback": "Esatto! Quando la RAM è esaurita, il sistema operativo usa lo swap (o file di paging): sposta i dati dei processi inattivi dalla RAM allo storage (SSD/HDD) per liberare spazio. Questo rallenta il sistema (lo storage è molto più lento della RAM) ma permette di eseguire più programmi di quanta RAM fisica sia disponibile."
         },
@@ -279,7 +279,7 @@
         },
         {
           "id": "b",
-          "testo": "Traduce i comandi generici del sistema operativo in istruzioni specifiche per un dispositivo hardware",
+          "testo": "Traduce i comandi del sistema in istruzioni per un dispositivo",
           "corretto": true,
           "feedback": "Esatto! Un driver è un software che fa da traduttore tra il sistema operativo e un dispositivo hardware specifico. Il sistema operativo invia comandi generici ('stampa questo documento'); il driver li traduce nelle istruzioni specifiche che la stampante capisce."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Windows è un software proprietario a pagamento di Microsoft; Linux è open source e liberamente distribuibile",
+          "testo": "Windows è proprietario e a pagamento; Linux è open source e libero",
           "corretto": true,
           "feedback": "Esatto! Windows è sviluppato da Microsoft, è software proprietario (il codice sorgente non è pubblico) e richiede l'acquisto di una licenza. Linux è open source: il codice sorgente è pubblico, liberamente modificabile e distribuibile. È sviluppato collaborativamente da una comunità globale."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché senza il driver corretto il sistema operativo non sa come comunicare con quel dispositivo specifico",
+          "testo": "Perché senza il driver giusto il sistema non sa comunicare con quel dispositivo",
           "corretto": true,
           "feedback": "Esatto! Il driver è l'unico traduttore tra le richieste generiche del SO e i comandi specifici del dispositivo. Se il driver è incompatibile, il SO invia comandi in un 'dialetto' sbagliato che il dispositivo non capisce, oppure riceve risposte che non sa interpretare. Risultato: il dispositivo non funziona o viene ignorato."
         },
@@ -411,7 +411,7 @@
         },
         {
           "id": "b",
-          "testo": "Senza OS ogni programma dovrebbe gestire l'hardware direttamente, rendendo impossibile la compatibilità e la condivisione delle risorse",
+          "testo": "Senza OS ogni programma dovrebbe gestire da sé l'hardware, e le risorse non si potrebbero condividere",
           "corretto": true,
           "feedback": "Esatto! Senza OS: ogni programma dovrebbe contenere driver per ogni possibile hardware; due programmi non potrebbero condividere la RAM senza sovrapporsi; non ci sarebbe protezione tra i processi; ogni applicazione dovrebbe reimplementare accesso al disco, rete, schermo ecc. L'OS risolve tutti questi problemi offrendo un'interfaccia comune e controllando l'accesso alle risorse."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché è gratuito, open source, altamente stabile, personalizzabile e ha un ecosistema di strumenti server maturi",
+          "testo": "Perché è gratuito, open source, stabile e personalizzabile",
           "corretto": true,
           "feedback": "Esatto! Linux sui server offre: costo zero (nessuna licenza), open source (codice ispezionabile e personalizzabile), stabilità elevata (uptime di anni senza riavvii), leggerezza (può girare senza GUI), vasto ecosistema di strumenti server gratuiti (Apache, Nginx, MySQL, PostgreSQL) e una comunità di supporto globale."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Assegna livelli di priorità ai processi e garantisce più tempo CPU a quelli più importanti, evitando la 'starvation' dei processi a bassa priorità",
+          "testo": "Dà più tempo di CPU ai processi importanti, senza lasciare a secco quelli a bassa priorità",
           "corretto": true,
           "feedback": "Esatto! Lo scheduler assegna priorità (es. processi kernel > processi interattivi > processi in background). Il problema da evitare è la 'starvation': un processo a bassa priorità che non riceve mai la CPU perché i processi ad alta priorità la monopolizzano. Gli scheduler moderni usano tecniche come l'invecchiamento (aging) per aumentare gradualmente la priorità dei processi in attesa da troppo tempo."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "La gestione concorrente dei processi/thread e delle connessioni di rete, per servire migliaia di richieste simultanee senza blocchi",
+          "testo": "La gestione concorrente di processi e connessioni, per servire migliaia di richieste insieme",
           "corretto": true,
           "feedback": "Esatto! Con 10.000 richieste/secondo il SO deve: creare e gestire thread/processi per ogni richiesta (o usare I/O asincrono), allocare e deallocare memoria rapidamente, gestire migliaia di connessioni TCP simultanee tramite il network stack del kernel, schedulare i processi in modo efficiente per minimizzare la latenza di risposta."
         },

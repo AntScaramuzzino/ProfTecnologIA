@@ -16,7 +16,7 @@
         },
         {
           "id": "b",
-          "testo": "L'assonometria proietta l'oggetto su un unico piano mostrando tre facce contemporaneamente, dando una percezione tridimensionale; la proiezione ortogonale mostra una faccia per volta ma con misure esatte",
+          "testo": "L'assonometria mostra tre facce insieme, con effetto 3D; l'ortogonale una faccia per volta, con misure esatte",
           "corretto": true,
           "feedback": "Esatto! L'assonometria mostra profondità, altezza e larghezza in un solo disegno — più intuitiva. La proiezione ortogonale mostra una faccia per volta ma ogni dimensione è esatta e misurabile."
         },
@@ -52,7 +52,7 @@
         },
         {
           "id": "b",
-          "testo": "0,5 — la profondità viene ridotta alla metà: se un oggetto è profondo 60 mm, lungo l'asse obliquo si disegna come se fosse profondo 30 mm",
+          "testo": "0,5 — la profondità viene dimezzata: 60 mm reali si disegnano lunghi 30 mm",
           "corretto": true,
           "feedback": "Esatto! Nella cavaliera, l'asse y (profondità) a 45° subisce una riduzione del 50%: misura sul disegno = misura reale × 0,5. Gli assi x e z mantengono le misure reali (fattore 1)."
         },
@@ -124,7 +124,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché la faccia frontale dell'oggetto non subisce deformazioni nella cavaliera — un pannello rettangolare appare rettangolare, un foro tondo appare tondo — essenziale per capire come incastrare i pezzi",
+          "testo": "Perché la faccia frontale non si deforma: un pannello resta rettangolare, un foro resta tondo",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'la cavaliera ha un vantaggio pratico decisivo: la faccia frontale dell'oggetto non subisce nessuna deformazione. Per chi deve capire come incastrare due pezzi, vedere la forma reale è più importante che avere bella tridimensionalità.'"
         },
@@ -196,7 +196,7 @@
         },
         {
           "id": "b",
-          "testo": "Si immagina il volume totale dell'oggetto come un parallelepipedo contenitore, lo si disegna in assonometria, poi si 'scolpisce' l'oggetto rimuovendo e aggiungendo volumi",
+          "testo": "Si disegna il parallelepipedo che contiene l'oggetto, poi si tolgono e si aggiungono volumi",
           "corretto": true,
           "feedback": "Esatto! I passi: (1) parallelepipedo che contiene l'oggetto; (2) disegno del box in assonometria; (3) scolpire tagliando angoli, aggiungendo volumi sporgenti, rimuovendo volumi mancanti; (4) cancellare le linee non appartenenti all'oggetto."
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "40 mm — nell'isometrica semplificata il fattore è 1 su tutti gli assi",
+          "testo": "40 mm — nell'isometrica semplificata il fattore è 1",
           "corretto": true,
           "feedback": "Esatto! Isometrica semplificata: fattore 1 su tutti gli assi → la profondità di 40 mm si riporta come 40 mm lungo l'asse isometrico corrispondente. Cavaliera: 40 × 0,5 = 20 mm."
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché il piano frontale (xz) mantiene le proporzioni reali nella cavaliera (fattori 1 e 1), mentre il piano orizzontale (xy) include l'asse y con fattore 0,5 — la riduzione distorce il cerchio in ellisse",
+          "testo": "Perché sul piano frontale i fattori sono 1 e 1, mentre il piano orizzontale ha l'asse y dimezzato",
           "corretto": true,
           "feedback": "Esatto! Il piano xz usa assi x (fattore 1) e z (fattore 1): nessuna distorsione, il cerchio rimane cerchio. Il piano xy usa assi x (fattore 1) e y (fattore 0,5): la riduzione del 50% sull'asse y trasforma il cerchio in ellisse."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché distingue l'assonometria dalla prospettiva (proiezione conica): nell'assonometria le misure sono leggibili direttamente sugli assi, nella prospettiva le linee convergono e le misure non si leggono direttamente",
+          "testo": "Perché la distingue dalla prospettiva: qui le misure si leggono sugli assi, là le linee convergono",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'l'assonometria conserva il parallelismo: è una proiezione parallela (o cilindrica), non una proiezione centrale (conica). Questa proprietà matematica è ciò che rende le misure leggibili.' Le misure lungo gli assi si leggono direttamente."
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Tinkercad mostra di default la vista isometrica: chi sa costruire l'assonometria a mano capisce cosa sta guardando nel software e viceversa — la stessa competenza con strumenti diversi",
+          "testo": "Tinkercad mostra la vista isometrica: chi sa costruirla a mano capisce che cosa vede nel software",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Guardare la vista isometrica di Tinkercad e sapere disegnare a mano l'assonometria sono la stessa competenza, espressa con strumenti diversi. Chi sa costruire a mano capisce immediatamente cosa sta guardando nel software 3D.'"
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché voleva capire le regole matematiche della percezione della profondità — la stessa domanda che sta alla base delle assonometrie moderne, esplorando la geometria della rappresentazione spaziale",
+          "testo": "Perché cercava le regole matematiche della profondità, la stessa domanda alla base delle assonometrie",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'La differenza tra un artista del Rinascimento e un progettista CAD di oggi è minore di quanto sembri: entrambi stanno risolvendo lo stesso problema — la rappresentazione della profondità su un piano — con strumenti diversi ma con la stessa logica geometrica.'"
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "La cavaliera enfatizza visivamente la faccia frontale (le altre due sembrando secondarie per effetto dell'asse a 45°); l'isometrica mostra le tre facce con pari enfasi grazie agli assi simmetrici a 30°",
+          "testo": "La cavaliera mette in risalto la faccia frontale; l'isometrica dà lo stesso peso alle tre facce",
           "corretto": true,
           "feedback": "Esatto! Nella cavaliera, la faccia frontale è inalterata e domina visivamente; le altre due sembrano 'aggiunte'. Nell'isometrica, i tre assi a 120° tra loro danno pari importanza alle tre facce."
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Prospettiva (o assonometria di alta qualità), perché comunica l'aspetto visivo dell'oggetto in modo intuitivo — il cliente deve capire come sarà il prodotto, non costruirlo",
+          "testo": "Prospettiva, perché mostra l'aspetto in modo intuitivo: il cliente deve capire, non costruire",
           "corretto": true,
           "feedback": "Esatto! La regola del testo: 'prospettiva per convincere.' Il cliente non ha bisogno di misure precise — ha bisogno di capire come apparirà il telefono. La prospettiva simula la visione reale."
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Asse x (0°): 80 mm; asse y (obliquo 45°): 60 × 0,5 = 30 mm; asse z (90°): 50 mm",
+          "testo": "Asse x: 80 mm; asse y (obliquo 45°): 30 mm; asse z: 50 mm",
           "corretto": true,
           "feedback": "Esatto! Nella cavaliera: asse x (larghezza, 0°) = misura reale = 80 mm; asse y (profondità, 45°) = misura reale × 0,5 = 60 × 0,5 = 30 mm; asse z (altezza, 90°) = misura reale = 50 mm."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché nell'isometrica semplificata (quella usata in pratica) tutti e tre gli assi hanno fattore 1 — nessuno si riduce rispetto agli altri. Nella rigorosa tutti si riducono ugualmente (0,816)",
+          "testo": "Perché nell'isometrica semplificata tutti e tre gli assi hanno fattore 1: nessuno si riduce",
           "corretto": true,
           "feedback": "Esatto! Il testo spiega: 'nell'isometrica semplificata le misure vengono riportate in scala reale su tutti e tre gli assi (fattore 1). Confondere l'isometrica rigorosa con la semplificata è uno degli errori più comuni.'"
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Il designer usa l'assonometria per comunicare le idee ai clienti (non tecnici) e nelle fasi di ideazione; poi le proiezioni ortogonali comunicano con i tecnici che producono i pezzi",
+          "testo": "Il designer usa l'assonometria per mostrare le idee ai clienti; le ortogonali servono a chi produce",
           "corretto": true,
           "feedback": "Esatto! Il testo descrive la catena: 'schizzi assonometrici veloci durante l'ideazione → modelli CAD 3D → tavole tecniche (proiezioni ortogonali) per la produzione.' La catena parte dall'assonometria come strumento di pensiero visivo."
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché partire dal volume contenitore garantisce che le proporzioni globali siano corrette prima di definire i dettagli, evitando errori di posizionamento e scala tra le parti",
+          "testo": "Perché il contenitore fissa subito le proporzioni globali, evitando errori di posizione tra le parti",
           "corretto": true,
           "feedback": "Esatto! Costruire le parti separatamente rischia di ritrovarsi con pezzi che non si incastrano correttamente. Il box stabilisce il volume globale corretto; poi si scolpisce mantenendo la coerenza geometrica."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché deriva dalla geometria: quando i tre assi formano angoli di 120° tra loro e sono ugualmente inclinati rispetto al piano di proiezione, la lunghezza apparente di ogni asse rispetto alla sua lunghezza reale è 1/√(3/2) ≈ 0,816",
+          "testo": "Perché deriva dalla geometria: con tre assi ugualmente inclinati, ogni lunghezza appare ridotta a 0,816",
           "corretto": true,
           "feedback": "Esatto! Il fattore 0,816 è una conseguenza matematica della geometria isometrica: quando si proiettano su un piano le tre assi cartesiane ugualmente inclinate a 120° tra loro, ogni asse si 'accorcia' di quel fattore preciso."
         },

@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "testo": "Una sequenza finita di istruzioni precise e prive di ambiguità che porta a un risultato",
+          "testo": "Una sequenza finita di istruzioni precise che porta a un risultato",
           "corretto": true,
           "feedback": "Esatto! Un algoritmo è una sequenza finita di istruzioni precise e non ambigue che porta sempre allo stesso risultato partendo dagli stessi dati. Non è esclusivo dei computer: una ricetta di cucina e le istruzioni per montare un mobile sono algoritmi."
         },
@@ -48,7 +48,7 @@
         },
         {
           "id": "b",
-          "testo": "Da Al-Khwārizmī, matematico persiano del IX secolo il cui nome fu latinizzato in 'Algoritmi'",
+          "testo": "Da Al-Khwārizmī, matematico persiano vissuto nel IX secolo",
           "corretto": true,
           "feedback": "Esatto! Al-Khwārizmī (780–850 d.C.) era un matematico persiano che scrisse un trattato sul calcolo con numeri arabi. Quando i suoi testi furono tradotti in latino nel XII secolo, il suo nome fu latinizzato in 'Algoritmi' — e da lì è nata la parola 'algoritmo'."
         },
@@ -120,7 +120,7 @@
         },
         {
           "id": "c",
-          "testo": "Esegue un blocco di istruzioni SE una condizione è vera, altrimenti ne esegue un altro",
+          "testo": "Esegue un blocco SE una condizione è vera, altrimenti ne esegue un altro",
           "corretto": true,
           "feedback": "Esatto! La struttura di selezione (SE...ALLORA...ALTRIMENTI) valuta una condizione: se è vera esegue il blocco A, se è falsa esegue il blocco B (o non fa nulla). La condizione deve essere sempre verificabile in modo oggettivo: vero o falso."
         },
@@ -153,7 +153,7 @@
         },
         {
           "id": "c",
-          "testo": "Significa che a partire dagli stessi dati, l'algoritmo produce sempre lo stesso risultato",
+          "testo": "Significa che con gli stessi dati dà sempre lo stesso risultato",
           "corretto": true,
           "feedback": "Esatto! Il determinismo è una proprietà fondamentale degli algoritmi: le stesse istruzioni con gli stessi dati producono sempre lo stesso risultato, senza eccezioni e senza variazioni casuali. Il computer non improvvisa, non interpreta, non si adatta al contesto."
         },
@@ -246,7 +246,7 @@
         },
         {
           "id": "b",
-          "testo": "Uno spazio di memoria con un nome, dove si può salvare e modificare un valore durante l'esecuzione",
+          "testo": "Uno spazio di memoria con un nome, dove salvare e modificare un valore",
           "corretto": true,
           "feedback": "Esatto! Una variabile è come una scatola con un'etichetta (il nome). Dentro si conserva un valore (un numero, una parola, vero/falso) che può cambiare durante l'esecuzione dell'algoritmo. Ad esempio: temperatura può valere 28 al mattino e 35 nel pomeriggio."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Qualsiasi algoritmo può essere espresso usando solo tre strutture: sequenza, selezione e iterazione",
+          "testo": "Ogni algoritmo si può scrivere con sequenza, selezione e iterazione",
           "corretto": true,
           "feedback": "Esatto! Il Teorema di Böhm-Jacopini (1966) dimostra che qualsiasi programma informatico può essere scritto usando solo tre strutture di controllo: sequenza, selezione e iterazione. Non ne esistono altre necessarie. Questo risultato è alla base della programmazione strutturata."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "Eseguire l'algoritmo passo per passo con dati concreti, verificando a ogni passaggio se il risultato è quello atteso",
+          "testo": "Eseguirlo passo per passo con dati concreti, controllando ogni risultato",
           "corretto": true,
           "feedback": "Esatto! La tecnica più efficace è la simulazione manuale passo per passo: si scelgono dati concreti di input, si eseguono mentalmente (o su carta) le istruzioni una per una, e si controlla se a ogni passo il valore delle variabili è quello atteso. Il passo dove il risultato diverge è dove si trova il bug."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Quando la lista non è ordinata e ordinarla costerebbe più del guadagno di efficienza nella ricerca",
+          "testo": "Quando la lista non è ordinata e ordinarla costerebbe più del vantaggio",
           "corretto": true,
           "feedback": "Esatto! La ricerca binaria richiede che la lista sia ordinata. Se la lista non è ordinata, bisogna prima ordinarla (costo O(n log n) con quicksort). Se si deve fare una sola ricerca, potrebbe costare meno usare la ricerca sequenziale O(n) che ordinare la lista e poi applicare la binaria."
         },
@@ -549,7 +549,7 @@
         },
         {
           "id": "c",
-          "testo": "La ricerca binaria è molto più efficiente ma richiede la lista ordinata; se la lista è già ordinata, la binaria è la scelta migliore su grandi volumi",
+          "testo": "La ricerca binaria è molto più efficiente, ma richiede che la lista sia ordinata",
           "corretto": true,
           "feedback": "Esatto! Su 10.000 voci: ricerca sequenziale = fino a 10.000 confronti; ricerca binaria = fino a log₂(10.000) ≈ 14 confronti. Se la rubrica è già ordinata (come tipicamente avviene), la ricerca binaria è circa 700 volte più efficiente nel caso peggiore. Il costo di mantenere la lista ordinata si ammortizza rapidamente su molte ricerche."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "Con 1.000.000 di record la differenza di complessità O(n²) vs O(n log n) produce tempi di esecuzione radicalmente diversi: quicksort è la scelta corretta",
+          "testo": "Con un milione di record la differenza di tempi è enorme: quicksort è la scelta corretta",
           "corretto": true,
           "feedback": "Esatto! Per n=1.000.000: bubble sort O(n²) esegue circa n²/2 = 5×10¹¹ confronti; quicksort O(n log n) esegue circa n×log₂(n) ≈ 1.000.000×20 = 20.000.000 confronti. Rapporto: circa 25.000×. Su un computer moderno, bubble sort impiegherebbe ore, quicksort secondi."
         },

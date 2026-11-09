@@ -16,7 +16,7 @@
         },
         {
           "id": "b",
-          "testo": "Una proiezione in cui i raggi sono perpendicolari al piano di proiezione, come una torcia perfettamente frontale — ogni dimensione dell'oggetto è mantenuta esatta e misurabile",
+          "testo": "Una proiezione con raggi perpendicolari al piano: le dimensioni restano esatte e misurabili",
           "corretto": true,
           "feedback": "Esatto! 'Ortogonale' = raggi di proiezione perpendicolari al piano. L'analogia della torcia: se è perfettamente di fronte, l'ombra mantiene le dimensioni esatte. Non c'è distorsione prospettica."
         },
@@ -52,7 +52,7 @@
         },
         {
           "id": "b",
-          "testo": "Vista frontale in alto a sinistra, vista laterale (da sinistra) sulla stessa linea orizzontale, vista dall'alto sotto la vista frontale — allineate tra loro",
+          "testo": "Frontale in alto a sinistra, laterale accanto sulla stessa linea, dall'alto sotto la frontale",
           "corretto": true,
           "feedback": "Esatto! La regola fondamentale: le viste devono essere allineate tra loro. Vista laterale = stessa linea orizzontale della frontale. Vista dall'alto = stessa linea verticale della frontale."
         },
@@ -88,7 +88,7 @@
         },
         {
           "id": "b",
-          "testo": "I bordi (spigoli e superfici) dell'oggetto che esistono ma non sono visibili dalla direzione di osservazione di quella vista",
+          "testo": "Gli spigoli che esistono ma non si vedono da quella direzione",
           "corretto": true,
           "feedback": "Esatto! La linea tratteggiata indica i contorni nascosti: bordi che ci sono nell'oggetto ma non si vedono da quella direzione perché coperti da altre parti."
         },
@@ -124,7 +124,7 @@
         },
         {
           "id": "b",
-          "testo": "Un piano di taglio immaginario che 'taglia' l'oggetto per mostrare l'interno senza smontarlo — usato quando le linee tratteggiate renderebbero il disegno illeggibile",
+          "testo": "Un taglio immaginario che mostra l'interno dell'oggetto, quando il tratteggio sarebbe illeggibile",
           "corretto": true,
           "feedback": "Esatto! La sezione è una convenzione grafica: si immagina di tagliare l'oggetto e si disegna quello che si vede nel taglio. Non è un vero taglio — è un modo per mostrare cavità, fori, passaggi interni."
         },
@@ -160,7 +160,7 @@
         },
         {
           "id": "b",
-          "testo": "Le viste devono essere allineate tra loro: ogni dimensione deve comparire in almeno due viste e le corrispondenze orizzontali e verticali devono essere rispettate",
+          "testo": "Le viste devono essere allineate e corrispondersi nelle misure",
           "corretto": true,
           "feedback": "Esatto! Il testo spiega: 'se le tre viste sono corrette, ogni dimensione deve comparire in almeno due viste. Se trovi una linea in una sola vista senza corrispondenze nelle altre, c'è un errore nel disegno.'"
         },
@@ -196,7 +196,7 @@
         },
         {
           "id": "b",
-          "testo": "Le norme di disegno tecnico ISO permettono a un fornitore in Cina di produrre un pezzo che si assembla perfettamente con uno prodotto in Irlanda — senza che i due siti si parlino",
+          "testo": "Le norme ISO fanno sì che pezzi prodotti in Paesi diversi combacino perfettamente",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'senza la proiezione ortogonale, Apple non potrebbe far costruire pezzi in fabbrica in Cina che poi si montano perfettamente in un'altra fabbrica in Irlanda.'"
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "A 30 mm dal bordo sinistro nella vista dall'alto — perché la vista dall'alto è allineata verticalmente con la vista frontale e condivide le misure orizzontali (larghezza)",
+          "testo": "A 30 mm dal bordo sinistro nella vista dall'alto, che è allineata in verticale con la frontale",
           "corretto": true,
           "feedback": "Esatto! La strategia delle corrispondenze: la vista dall'alto è sotto la vista frontale, allineata verticalmente. Condividono la coordinata orizzontale (larghezza). Uno spigolo a 30 mm dalla sinistra nella frontale → a 30 mm dalla sinistra nella vista dall'alto."
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché la proiezione ortogonale mantiene le misure esatte e misurabile; la prospettiva distorce le misure per simulare la percezione visiva — chi deve costruire ha bisogno di misure, chi deve decidere ha bisogno di aspetto",
+          "testo": "Perché l'ortogonale conserva le misure esatte; la prospettiva le deforma per mostrare l'aspetto",
           "corretto": true,
           "feedback": "Esatto! La regola pratica del testo: 'proiezione ortogonale per costruire, assonometria per spiegare, prospettiva per convincere.' Chi costruisce ha bisogno di misure precise; chi approva ha bisogno di capire come sarà l'oggetto."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "Da una sola vista non puoi risalire alla forma 3D dell'oggetto (la funzione non è invertibile): servono almeno due viste per recuperare tutte le informazioni spaziali",
+          "testo": "Da una sola vista non si risale alla forma 3D: servono almeno due viste per avere tutte le informazioni",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'come ogni funzione, non è invertibile: da una sola vista non puoi risalire all'oggetto 3D. Hai bisogno di almeno due viste per recuperare tutte e tre le coordinate.'"
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché ha formalizzato un sistema completo e matematicamente rigoroso per rappresentare oggetti 3D su piani 2D — rendendo possibile la comunicazione tecnica standardizzata nell'industria moderna",
+          "testo": "Perché ha creato un sistema rigoroso per rappresentare oggetti 3D su piani 2D",
           "corretto": true,
           "feedback": "Esatto! Monge ha trasformato una pratica artistica/artigianale in un sistema matematico rigoroso. La geometria descrittiva di Monge è la base del disegno industriale moderno e ancora oggi del CAD."
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché la sua forma semplice all'esterno nasconde una struttura interna complessa (spine, isolamenti, polarità) che richiede sezioni e viste multiple per essere comunicata univocamente a qualsiasi produttore del mondo",
+          "testo": "Perché l'esterno semplice nasconde un interno complesso, che richiede sezioni e più viste",
           "corretto": true,
           "feedback": "Esatto! Il testo usa l'USB-C come esempio: sembra un semplice rettangolo arrotondato ma la tavola tecnica è 'un documento di diversi fogli con decine di viste, sezioni e quote' — perché l'interno è complesso."
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Un parallelepipedo con un foro cilindrico passante (da fronte a retro) — il cerchio nella vista frontale è il foro visto frontalmente; le linee tratteggiate nella vista dall'alto sono i bordi del foro visti dall'alto",
+          "testo": "Un parallelepipedo con un foro cilindrico passante: il cerchio è il foro, il tratteggio i suoi bordi nascosti",
           "corretto": true,
           "feedback": "Esatto! La lettura delle tre viste: cerchio nella vista frontale = foro cilindrico; linee tratteggiate nella vista dall'alto = i bordi del foro (nascosti perché il foro è sotto la superficie superiore); linee tratteggiate orizzontali nella vista laterale = gli stessi bordi del foro visti da sinistra."
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Il piano orizzontale si ribalta verso il basso (ruotando attorno alla linea di terra orizzontale) e il piano laterale si apre verso destra (ruotando attorno alla linea di terra verticale) — ottenendo il foglio piano con le viste allineate",
+          "testo": "Il piano orizzontale si ribalta verso il basso e quello laterale verso destra, fino a un unico foglio piano",
           "corretto": true,
           "feedback": "Esatto! Il testo descrive l'analogia della 'scatola aperta come una croce': si aprono i sei lati della scatola e si distendono su un foglio. Il movimento di apertura spiega perché le viste si trovano nelle posizioni specifiche sul foglio."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "È una convenzione del disegno tecnico: sezionare bulloni e alberi non aggiunge informazioni (sono solidi uniformi) mentre rende più difficile riconoscerli nel disegno",
+          "testo": "È una convenzione: sezionarli non aggiunge informazioni e li rende meno riconoscibili",
           "corretto": true,
           "feedback": "Esatto! Un bullone sezionato mostrerebbe solo un rettangolo con tratteggio — meno informativo della vista esterna che mostra il profilo, la testa e il filetto. La convenzione preserva la leggibilità."
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Mostra contemporaneamente la forma esterna (metà in vista normale) e la forma interna (metà in sezione) — usando un solo disegno invece di due",
+          "testo": "Mostra in un solo disegno metà forma esterna e metà forma interna",
           "corretto": true,
           "feedback": "Esatto! Il testo spiega: 'usata su oggetti simmetrici. Si mostra metà dell'oggetto in vista esterna e metà in sezione, con l'asse di simmetria come linea di confine. Permette di comunicare contemporaneamente la forma esterna e quella interna.'"
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "La conservazione delle misure reali: nelle proiezioni ortogonali ogni dimensione è esatta e misurabile — nessuna distorsione prospettica significa che la tolleranza di ±0,01 mm è comunicabile e verificabile univocamente",
+          "testo": "Le misure si conservano: ogni dimensione è esatta e verificabile, senza deformazioni prospettiche",
           "corretto": true,
           "feedback": "Esatto! È questa la proprietà fondamentale: le proiezioni ortogonali non distorcono le misure. Una quota di 120,00 mm ±0,01 mm è la stessa per il progettista a Cupertino e per l'operaio in Taiwan."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché una linea irregolare (non-geometrica) segnala visivamente che si tratta di un confine convenzionale del disegno — non di uno spigolo reale dell'oggetto — evitando ambiguità nella lettura",
+          "testo": "Perché una linea irregolare fa capire che è un confine convenzionale, non uno spigolo reale",
           "corretto": true,
           "feedback": "Esatto! Una linea retta potrebbe essere confusa con uno spigolo reale dell'oggetto. La linea a mano libera irregolare è un segnale visivo inequivocabile: 'questo è un confine del disegno, non un bordo dell'oggetto reale.'"
         },

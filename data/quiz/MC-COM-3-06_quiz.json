@@ -7,10 +7,30 @@
       "livello": "F",
       "domanda": "Nelle piattaforme digitali gratuite come TikTok, chi è il vero 'prodotto' venduto agli inserzionisti?",
       "opzioni": [
-        {"id": "a", "testo": "L'attenzione degli utenti, venduta agli inserzionisti sotto forma di spazio pubblicitario", "corretto": true, "feedback": "Esatto. Tim Wu (2006) ha descritto questo meccanismo: le piattaforme sono gratuite perché il loro prodotto non sono i contenuti — è il tempo di attenzione degli utenti, rivenduto agli inserzionisti. Ogni secondo su TikTok ha valore economico per TikTok, non per te."},
-        {"id": "b", "testo": "I contenuti prodotti dagli utenti (video, foto, testi)", "corretto": false, "feedback": "Non è corretto. I contenuti sono il mezzo per attirare l'attenzione, non il prodotto venduto. Il prodotto vero è l'attenzione degli utenti: le piattaforme la raccolgono e la rivendono agli inserzionisti sotto forma di visualizzazioni pubblicitarie."},
-        {"id": "c", "testo": "I dati personali degli utenti, venduti direttamente ad aziende terze", "corretto": false, "feedback": "Non è corretto. Il GDPR vieta la vendita diretta di dati personali a terzi. Le piattaforme vendono l'accesso all'attenzione degli utenti (spazio pubblicitario targetizzato), non i dati grezzi degli utenti ad aziende esterne."},
-        {"id": "d", "testo": "La tecnologia della piattaforma, offerta in licenza ad altri sviluppatori", "corretto": false, "feedback": "Non è corretto. TikTok, Instagram e simili non sono piattaforme 'software as a service': il loro modello di business principale è la pubblicità, non la licenza tecnologica. Il nucleo del business è catturare e rivendere l'attenzione umana."}
+        {
+          "id": "a",
+          "testo": "L'attenzione degli utenti, venduta come spazio pubblicitario",
+          "corretto": true,
+          "feedback": "Esatto. Tim Wu (2006) ha descritto questo meccanismo: le piattaforme sono gratuite perché il loro prodotto non sono i contenuti — è il tempo di attenzione degli utenti, rivenduto agli inserzionisti. Ogni secondo su TikTok ha valore economico per TikTok, non per te."
+        },
+        {
+          "id": "b",
+          "testo": "I contenuti prodotti dagli utenti (video, foto, testi)",
+          "corretto": false,
+          "feedback": "Non è corretto. I contenuti sono il mezzo per attirare l'attenzione, non il prodotto venduto. Il prodotto vero è l'attenzione degli utenti: le piattaforme la raccolgono e la rivendono agli inserzionisti sotto forma di visualizzazioni pubblicitarie."
+        },
+        {
+          "id": "c",
+          "testo": "I dati personali degli utenti, venduti direttamente ad aziende terze",
+          "corretto": false,
+          "feedback": "Non è corretto. Il GDPR vieta la vendita diretta di dati personali a terzi. Le piattaforme vendono l'accesso all'attenzione degli utenti (spazio pubblicitario targetizzato), non i dati grezzi degli utenti ad aziende esterne."
+        },
+        {
+          "id": "d",
+          "testo": "La tecnologia della piattaforma, offerta in licenza ad altri sviluppatori",
+          "corretto": false,
+          "feedback": "Non è corretto. TikTok, Instagram e simili non sono piattaforme 'software as a service': il loro modello di business principale è la pubblicità, non la licenza tecnologica. Il nucleo del business è catturare e rivendere l'attenzione umana."
+        }
       ],
       "spiegazione": "L'economia dell'attenzione (Tim Wu, 2006) descrive un sistema in cui la risorsa scarsa venduta è la capacità di concentrazione umana. Le piattaforme digitali gratuite guadagnano vendendo agli inserzionisti l'accesso all'attenzione degli utenti. Per questo gli algoritmi sono progettati per massimizzare il tempo di permanenza, non la qualità dell'informazione: un utente che resta più a lungo genera più valore pubblicitario.",
       "riferimento_principale": "📖 ESPLORA — L'economia dell'attenzione: il tuo tempo è il prodotto"
@@ -20,10 +40,30 @@
       "livello": "F",
       "domanda": "Cosa distingue un feed curato dall'algoritmo da un feed cronologico?",
       "opzioni": [
-        {"id": "a", "testo": "Nel feed curato l'algoritmo pre-seleziona i contenuti per massimizzare l'engagement, non per informarti meglio", "corretto": true, "feedback": "Esatto. Nel feed curato il sistema ha già fatto una selezione prima che tu arrivi: l'algoritmo sceglie cosa mostrarti ottimizzando per l'engagement (il suo obiettivo economico), non per la completezza o la qualità informativa (il tuo interesse)."},
-        {"id": "b", "testo": "Il feed curato mostra solo i contenuti pubblicati nelle ultime 24 ore", "corretto": false, "feedback": "Non è corretto. Il feed curato non ha un limite temporale fisso: l'algoritmo può far riemergere contenuti più vecchi se prevede che genereranno engagement. Il limite temporale rigido è caratteristica del feed cronologico, non di quello curato."},
-        {"id": "c", "testo": "Il feed curato è selezionato manualmente dai redattori della piattaforma", "corretto": false, "feedback": "Non è corretto. Il feed curato è automatico, non manuale: algoritmi di machine learning analizzano i tuoi comportamenti passati (time di visione, like, commenti, skip) per prevedere quali contenuti ti tengono più a lungo sulla piattaforma."},
-        {"id": "d", "testo": "Il feed cronologico mostra solo i post degli account che seguiamo, il feed curato include anche account sconosciuti", "corretto": false, "feedback": "Non è corretto. Entrambi i feed possono includere account non seguiti. La differenza fondamentale è il criterio di selezione e ordinamento: tempo di pubblicazione (cronologico) vs. previsione di engagement (curato)."}
+        {
+          "id": "a",
+          "testo": "Nel feed curato l'algoritmo pre-seleziona i contenuti per massimizzare l'engagement, non per informarti meglio",
+          "corretto": true,
+          "feedback": "Esatto. Nel feed curato il sistema ha già fatto una selezione prima che tu arrivi: l'algoritmo sceglie cosa mostrarti ottimizzando per l'engagement (il suo obiettivo economico), non per la completezza o la qualità informativa (il tuo interesse)."
+        },
+        {
+          "id": "b",
+          "testo": "Il feed curato mostra solo i contenuti pubblicati nelle ultime 24 ore",
+          "corretto": false,
+          "feedback": "Non è corretto. Il feed curato non ha un limite temporale fisso: l'algoritmo può far riemergere contenuti più vecchi se prevede che genereranno engagement. Il limite temporale rigido è caratteristica del feed cronologico, non di quello curato."
+        },
+        {
+          "id": "c",
+          "testo": "Il feed curato è selezionato manualmente dai redattori della piattaforma",
+          "corretto": false,
+          "feedback": "Non è corretto. Il feed curato è automatico, non manuale: algoritmi di machine learning analizzano i tuoi comportamenti passati (time di visione, like, commenti, skip) per prevedere quali contenuti ti tengono più a lungo sulla piattaforma."
+        },
+        {
+          "id": "d",
+          "testo": "Il feed cronologico mostra solo i post degli account che seguiamo, il feed curato include anche account sconosciuti",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambi i feed possono includere account non seguiti. La differenza fondamentale è il criterio di selezione e ordinamento: tempo di pubblicazione (cronologico) vs. previsione di engagement (curato)."
+        }
       ],
       "spiegazione": "La distinzione è cruciale: nel feed cronologico l'utente vede tutti i contenuti nell'ordine di pubblicazione — il controllo è dell'utente. Nel feed curato l'algoritmo ha già pre-selezionato i contenuti ottimizzando per l'engagement della piattaforma. Non stai scegliendo cosa vedere: stai rispondendo a stimoli selezionati per massimizzare la tua reazione emotiva e il tuo tempo di permanenza.",
       "riferimento_principale": "📖 ESPLORA — Come funziona un algoritmo di raccomandazione"
@@ -33,10 +73,30 @@
       "livello": "F",
       "domanda": "Qual è la differenza fondamentale tra misinformazione e disinformazione?",
       "opzioni": [
-        {"id": "a", "testo": "L'intenzione: chi diffonde misinformazione ci crede (buona fede); chi diffonde disinformazione sa deliberatamente di ingannare", "corretto": true, "feedback": "Esatto. È la distinzione chiave: la misinformazione è informazione falsa diffusa senza intenzione di ingannare. La disinformazione è informazione falsa diffusa con deliberata intenzione di ingannare. Questa differenza determina la risposta appropriata: educazione per la prima, misure più robuste per la seconda."},
-        {"id": "b", "testo": "La velocità di diffusione: la disinformazione si diffonde più rapidamente della misinformazione", "corretto": false, "feedback": "Non è corretto. La velocità di diffusione non è il criterio di distinzione — entrambe possono diffondersi rapidamente. La differenza è l'intenzione di chi produce e diffonde il contenuto, non la velocità con cui si propaga."},
-        {"id": "c", "testo": "Il canale: la misinformazione circola sui social media, la disinformazione sui media tradizionali", "corretto": false, "feedback": "Non è corretto. Entrambi i fenomeni esistono su tutti i canali — social media, televisione, giornali, chat private. La distinzione riguarda esclusivamente l'intenzione di chi produce e diffonde il contenuto."},
-        {"id": "d", "testo": "Il contenuto: la misinformazione riguarda opinioni politiche, la disinformazione riguarda fatti scientifici", "corretto": false, "feedback": "Non è corretto. Sia la misinformazione sia la disinformazione possono riguardare qualsiasi argomento (politica, scienza, cronaca, salute). Il criterio di distinzione è l'intenzione: sapere o meno di stare diffondendo qualcosa di falso."}
+        {
+          "id": "a",
+          "testo": "L'intenzione: chi fa misinformazione ci crede; chi fa disinformazione sa di ingannare",
+          "corretto": true,
+          "feedback": "Esatto. È la distinzione chiave: la misinformazione è informazione falsa diffusa senza intenzione di ingannare. La disinformazione è informazione falsa diffusa con deliberata intenzione di ingannare. Questa differenza determina la risposta appropriata: educazione per la prima, misure più robuste per la seconda."
+        },
+        {
+          "id": "b",
+          "testo": "La velocità di diffusione: la disinformazione si diffonde più rapidamente della misinformazione",
+          "corretto": false,
+          "feedback": "Non è corretto. La velocità di diffusione non è il criterio di distinzione — entrambe possono diffondersi rapidamente. La differenza è l'intenzione di chi produce e diffonde il contenuto, non la velocità con cui si propaga."
+        },
+        {
+          "id": "c",
+          "testo": "Il canale: la misinformazione circola sui social media, la disinformazione sui media tradizionali",
+          "corretto": false,
+          "feedback": "Non è corretto. Entrambi i fenomeni esistono su tutti i canali — social media, televisione, giornali, chat private. La distinzione riguarda esclusivamente l'intenzione di chi produce e diffonde il contenuto."
+        },
+        {
+          "id": "d",
+          "testo": "Il contenuto: la misinformazione riguarda opinioni politiche, la disinformazione riguarda fatti scientifici",
+          "corretto": false,
+          "feedback": "Non è corretto. Sia la misinformazione sia la disinformazione possono riguardare qualsiasi argomento (politica, scienza, cronaca, salute). Il criterio di distinzione è l'intenzione: sapere o meno di stare diffondendo qualcosa di falso."
+        }
       ],
       "spiegazione": "La distinzione tra misinformazione e disinformazione è fondamentale perché determina la risposta appropriata. La misinformazione (falsa, senza intento) richiede educazione e correzione gentile. La disinformazione (falsa, con intento deliberato) richiede risposta più robusta: rimozione, attribuzione di responsabilità, misure sistemiche. Esiste anche una terza categoria: la malinformazione, ovvero informazioni VERE usate per causare danno (es. diffusione di foto private senza consenso).",
       "riferimento_principale": "📖 ESPLORA — Disinformazione, misinformazione, malinformazione: le distinzioni che contano"
@@ -46,10 +106,30 @@
       "livello": "F",
       "domanda": "Chi ha coniato il termine 'filter bubble' e quando?",
       "opzioni": [
-        {"id": "a", "testo": "Eli Pariser, nel 2011, nel libro 'The Filter Bubble'", "corretto": true, "feedback": "Esatto. Eli Pariser ha coniato il termine nel 2011. Aveva notato che il suo feed di Facebook mostrava sempre meno i post degli amici con posizioni diverse dalle sue. Aveva anche documentato nel 2010 un esperimento con Google: due amici che cercavano la stessa parola ottenevano risultati diversi — già personalizzati dall'algoritmo."},
-        {"id": "b", "testo": "Tim Wu, nel 2006, nel libro 'The Attention Merchants'", "corretto": false, "feedback": "Non è corretto. Tim Wu ha sviluppato il concetto di 'economia dell'attenzione' nel 2006, non il 'filter bubble'. Sono concetti correlati ma distinti: l'economia dell'attenzione descrive il modello di business delle piattaforme; il filter bubble descrive l'effetto degli algoritmi sulla dieta informativa."},
-        {"id": "c", "testo": "Vosoughi, Roy e Aral, nel 2018, nella rivista Science", "corretto": false, "feedback": "Non è corretto. Vosoughi, Roy e Aral hanno pubblicato nel 2018 lo studio sulla velocità di diffusione della disinformazione su Twitter — un tema correlato ma diverso. Il filter bubble riguarda la personalizzazione algoritmica, non la velocità di diffusione."},
-        {"id": "d", "testo": "Shoshana Zuboff, nel 2019, nel libro 'Il capitalismo della sorveglianza'", "corretto": false, "feedback": "Non è corretto. Shoshana Zuboff ha elaborato il concetto di 'capitalismo della sorveglianza' nel 2019, che descrive la raccolta massiva di dati comportamentali. È un tema correlato al filter bubble ma concettualmente distinto."}
+        {
+          "id": "a",
+          "testo": "Eli Pariser, nel 2011, nel libro 'The Filter Bubble'",
+          "corretto": true,
+          "feedback": "Esatto. Eli Pariser ha coniato il termine nel 2011. Aveva notato che il suo feed di Facebook mostrava sempre meno i post degli amici con posizioni diverse dalle sue. Aveva anche documentato nel 2010 un esperimento con Google: due amici che cercavano la stessa parola ottenevano risultati diversi — già personalizzati dall'algoritmo."
+        },
+        {
+          "id": "b",
+          "testo": "Tim Wu, nel 2006, nel libro 'The Attention Merchants'",
+          "corretto": false,
+          "feedback": "Non è corretto. Tim Wu ha sviluppato il concetto di 'economia dell'attenzione' nel 2006, non il 'filter bubble'. Sono concetti correlati ma distinti: l'economia dell'attenzione descrive il modello di business delle piattaforme; il filter bubble descrive l'effetto degli algoritmi sulla dieta informativa."
+        },
+        {
+          "id": "c",
+          "testo": "Vosoughi, Roy e Aral, nel 2018, nella rivista Science",
+          "corretto": false,
+          "feedback": "Non è corretto. Vosoughi, Roy e Aral hanno pubblicato nel 2018 lo studio sulla velocità di diffusione della disinformazione su Twitter — un tema correlato ma diverso. Il filter bubble riguarda la personalizzazione algoritmica, non la velocità di diffusione."
+        },
+        {
+          "id": "d",
+          "testo": "Shoshana Zuboff, nel 2019, nel libro 'Il capitalismo della sorveglianza'",
+          "corretto": false,
+          "feedback": "Non è corretto. Shoshana Zuboff ha elaborato il concetto di 'capitalismo della sorveglianza' nel 2019, che descrive la raccolta massiva di dati comportamentali. È un tema correlato al filter bubble ma concettualmente distinto."
+        }
       ],
       "spiegazione": "Il termine 'filter bubble' fu coniato da Eli Pariser nel 2011 nel libro 'The Filter Bubble: What the Internet Is Hiding from You'. Pariser aveva osservato che gli algoritmi di Facebook e Google stavano creando ambienti informativi sempre più personalizzati e ristretti, mostrando contenuti coerenti con le preferenze dell'utente e nascondendo progressivamente le voci diverse. L'esperimento del 2010 con due amici che cercavano la stessa parola su Google e ottenevano risultati diversi è diventato iconico.",
       "riferimento_principale": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono"
@@ -59,10 +139,30 @@
       "livello": "F",
       "domanda": "Cosa è tecnicamente un deepfake?",
       "opzioni": [
-        {"id": "a", "testo": "Un contenuto (video, audio o immagine) generato o modificato da AI per far sembrare che una persona abbia detto o fatto qualcosa che non ha mai detto o fatto", "corretto": true, "feedback": "Esatto. I deepfake usano reti neurali generative (GAN — Generative Adversarial Networks) per produrre contenuti falsi ma convincentemente realistici. La tecnologia è diventata accessibile a chiunque grazie a strumenti online gratuiti nel 2023-2024."},
-        {"id": "b", "testo": "Una notizia falsa pubblicata con la firma di un giornalista reale senza il suo consenso", "corretto": false, "feedback": "Non è corretto. Attribuire una notizia falsa a un giornalista reale è un tipo di disinformazione, ma non è un deepfake. I deepfake riguardano la manipolazione di contenuti multimediali (video, audio, immagini), non testi scritti."},
-        {"id": "c", "testo": "Un montaggio video realizzato con software di editing tradizionale come Adobe Premiere", "corretto": false, "feedback": "Non è corretto. I deepfake usano reti neurali generative, non software di editing tradizionale. La differenza è sostanziale: le GAN imparano da migliaia di immagini reali del soggetto e generano nuovi contenuti completamente sintetici — non modificano semplicemente materiale esistente."},
-        {"id": "d", "testo": "Un video accelerato o rallentato per cambiare il significato di una dichiarazione", "corretto": false, "feedback": "Non è corretto. I video manipolati con velocità alterata si chiamano 'cheapfake' o 'shallow fake' e non richiedono AI. I deepfake sono tecnologicamente più sofisticati: usano intelligenza artificiale per generare volti, voci e movimenti mai realmente avvenuti."}
+        {
+          "id": "a",
+          "testo": "Un video, audio o immagine creato con l'IA per attribuire a qualcuno parole o gesti mai avvenuti",
+          "corretto": true,
+          "feedback": "Esatto. I deepfake usano reti neurali generative (GAN — Generative Adversarial Networks) per produrre contenuti falsi ma convincentemente realistici. La tecnologia è diventata accessibile a chiunque grazie a strumenti online gratuiti nel 2023-2024."
+        },
+        {
+          "id": "b",
+          "testo": "Una notizia falsa pubblicata con la firma di un giornalista reale senza il suo consenso",
+          "corretto": false,
+          "feedback": "Non è corretto. Attribuire una notizia falsa a un giornalista reale è un tipo di disinformazione, ma non è un deepfake. I deepfake riguardano la manipolazione di contenuti multimediali (video, audio, immagini), non testi scritti."
+        },
+        {
+          "id": "c",
+          "testo": "Un montaggio video realizzato con software di editing tradizionale come Adobe Premiere",
+          "corretto": false,
+          "feedback": "Non è corretto. I deepfake usano reti neurali generative, non software di editing tradizionale. La differenza è sostanziale: le GAN imparano da migliaia di immagini reali del soggetto e generano nuovi contenuti completamente sintetici — non modificano semplicemente materiale esistente."
+        },
+        {
+          "id": "d",
+          "testo": "Un video accelerato o rallentato per cambiare il significato di una dichiarazione",
+          "corretto": false,
+          "feedback": "Non è corretto. I video manipolati con velocità alterata si chiamano 'cheapfake' o 'shallow fake' e non richiedono AI. I deepfake sono tecnologicamente più sofisticati: usano intelligenza artificiale per generare volti, voci e movimenti mai realmente avvenuti."
+        }
       ],
       "spiegazione": "I deepfake sono contenuti (video, audio, immagini) generati o modificati da sistemi di intelligenza artificiale — in particolare le GAN (Generative Adversarial Networks) — per far sembrare che una persona abbia detto o fatto qualcosa che non ha mai fatto. I segnali visivi per riconoscerli includono: bordi del viso incoerenti (capelli e orecchie in luce laterale), occhi che non battono le palpebre naturalmente, denti sfumati, riflessi negli occhi incoerenti con l'illuminazione della scena.",
       "riferimento_principale": "📖 ESPLORA — Deepfake: come si riconoscono e perché sono pericolosi"
@@ -72,10 +172,30 @@
       "livello": "F",
       "domanda": "Nel metodo Think-before-you-share, cosa verifica specificamente la terza domanda prima di condividere un contenuto?",
       "opzioni": [
-        {"id": "a", "testo": "'Ho letto l'articolo completo, non solo il titolo?'", "corretto": true, "feedback": "Esatto. Gli studi mostrano che la maggior parte delle persone condivide contenuti senza averli letti per intero — spesso basandosi solo sul titolo. La terza domanda del metodo affronta direttamente questa abitudine che trasforma chi condivide in amplificatore involontario di disinformazione."},
-        {"id": "b", "testo": "'La fonte ha più di 1.000 follower sui social media?'", "corretto": false, "feedback": "Non è corretto. Il numero di follower non è un indicatore di affidabilità: account con milioni di follower hanno diffuso disinformazione. Il metodo Think-before-you-share si concentra sulla verifica del contenuto e della fonte originale, non sulla popolarità di chi pubblica."},
-        {"id": "c", "testo": "'Questa notizia è stata ripresa da almeno tre testate diverse?'", "corretto": false, "feedback": "Non è corretto. Il numero di testate che riprendono una notizia non ne garantisce la veridicità: la stessa disinformazione può essere ripresa da molte fonti contemporaneamente, amplificandosi. La terza domanda riguarda se hai letto personalmente l'articolo completo."},
-        {"id": "d", "testo": "'Sono passate meno di 48 ore dalla pubblicazione originale?'", "corretto": false, "feedback": "Non è corretto. Il limite temporale delle 48 ore non è tra le 5 domande del metodo. La freschezza di una notizia non ne garantisce la veridicità: la disinformazione spesso sfrutta proprio la velocità di diffusione come vantaggio strategico."}
+        {
+          "id": "a",
+          "testo": "'Ho letto l'articolo completo, non solo il titolo?'",
+          "corretto": true,
+          "feedback": "Esatto. Gli studi mostrano che la maggior parte delle persone condivide contenuti senza averli letti per intero — spesso basandosi solo sul titolo. La terza domanda del metodo affronta direttamente questa abitudine che trasforma chi condivide in amplificatore involontario di disinformazione."
+        },
+        {
+          "id": "b",
+          "testo": "'La fonte ha più di 1.000 follower sui social media?'",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero di follower non è un indicatore di affidabilità: account con milioni di follower hanno diffuso disinformazione. Il metodo Think-before-you-share si concentra sulla verifica del contenuto e della fonte originale, non sulla popolarità di chi pubblica."
+        },
+        {
+          "id": "c",
+          "testo": "'Questa notizia è stata ripresa da almeno tre testate diverse?'",
+          "corretto": false,
+          "feedback": "Non è corretto. Il numero di testate che riprendono una notizia non ne garantisce la veridicità: la stessa disinformazione può essere ripresa da molte fonti contemporaneamente, amplificandosi. La terza domanda riguarda se hai letto personalmente l'articolo completo."
+        },
+        {
+          "id": "d",
+          "testo": "'Sono passate meno di 48 ore dalla pubblicazione originale?'",
+          "corretto": false,
+          "feedback": "Non è corretto. Il limite temporale delle 48 ore non è tra le 5 domande del metodo. La freschezza di una notizia non ne garantisce la veridicità: la disinformazione spesso sfrutta proprio la velocità di diffusione come vantaggio strategico."
+        }
       ],
       "spiegazione": "Il metodo Think-before-you-share prevede 5 domande: 1) Conosco la fonte originale? 2) Ho controllato la data? 3) Ho letto l'articolo completo (non solo il titolo)? 4) Sto condividendo perché è vero o perché conferma ciò in cui credo? 5) Se mi sbaglio, mi correggerei? La terza domanda affronta il comportamento più diffuso: molte persone condividono basandosi solo sul titolo, contribuendo inconsapevolmente alla diffusione di disinformazione.",
       "riferimento_principale": "📖 ESPLORA — Think-before-you-share: la catena di responsabilità"
@@ -85,10 +205,30 @@
       "livello": "I",
       "domanda": "In quanti millisecondi avviene un'asta di pubblicità programmatica (Real-Time Bidding) mentre una pagina web si carica?",
       "opzioni": [
-        {"id": "a", "testo": "100-200 millisecondi — molto prima che la pagina abbia finito di caricarsi", "corretto": true, "feedback": "Esatto. In 100-200 millisecondi (meno del tempo di un battito di ciglia) avviene l'intera catena: il browser invia i dati dell'utente all'ad server, vengono confrontati con i profili dei data broker, viene lanciata l'asta, il vincitore viene selezionato e l'annuncio viene servito — tutto invisibile all'utente."},
-        {"id": "b", "testo": "1-2 secondi — il tempo necessario per consultare il database degli inserzionisti", "corretto": false, "feedback": "Non è corretto. 1-2 secondi sarebbero percepibili come rallentamento della pagina. L'asta RTB è progettata per essere completamente invisibile all'utente: avviene in 100-200 millisecondi, un tempo così breve che l'utente non se ne accorge mai."},
-        {"id": "c", "testo": "10-20 secondi — il tempo per autenticare le piattaforme tra loro", "corretto": false, "feedback": "Non è corretto. Un'attesa di 10-20 secondi per ogni pagina renderebbe la navigazione impossibile. L'asta RTB usa connessioni pre-stabilite tra piattaforme e i profili utente sono già elaborati in anticipo dai data broker."},
-        {"id": "d", "testo": "3-5 minuti — il tempo per elaborare i dati di profilo dell'utente in tempo reale", "corretto": false, "feedback": "Non è corretto. I profili utente non vengono calcolati in tempo reale durante ogni caricamento di pagina: i data broker (Oracle, Acxiom, Experian) li elaborano in anticipo. L'asta usa questi profili già pronti e si conclude in 100-200 millisecondi."}
+        {
+          "id": "a",
+          "testo": "100-200 millisecondi — molto prima che la pagina abbia finito di caricarsi",
+          "corretto": true,
+          "feedback": "Esatto. In 100-200 millisecondi (meno del tempo di un battito di ciglia) avviene l'intera catena: il browser invia i dati dell'utente all'ad server, vengono confrontati con i profili dei data broker, viene lanciata l'asta, il vincitore viene selezionato e l'annuncio viene servito — tutto invisibile all'utente."
+        },
+        {
+          "id": "b",
+          "testo": "1-2 secondi — il tempo necessario per consultare il database degli inserzionisti",
+          "corretto": false,
+          "feedback": "Non è corretto. 1-2 secondi sarebbero percepibili come rallentamento della pagina. L'asta RTB è progettata per essere completamente invisibile all'utente: avviene in 100-200 millisecondi, un tempo così breve che l'utente non se ne accorge mai."
+        },
+        {
+          "id": "c",
+          "testo": "10-20 secondi — il tempo per autenticare le piattaforme tra loro",
+          "corretto": false,
+          "feedback": "Non è corretto. Un'attesa di 10-20 secondi per ogni pagina renderebbe la navigazione impossibile. L'asta RTB usa connessioni pre-stabilite tra piattaforme e i profili utente sono già elaborati in anticipo dai data broker."
+        },
+        {
+          "id": "d",
+          "testo": "3-5 minuti — il tempo per elaborare i dati di profilo dell'utente in tempo reale",
+          "corretto": false,
+          "feedback": "Non è corretto. I profili utente non vengono calcolati in tempo reale durante ogni caricamento di pagina: i data broker (Oracle, Acxiom, Experian) li elaborano in anticipo. L'asta usa questi profili già pronti e si conclude in 100-200 millisecondi."
+        }
       ],
       "spiegazione": "La pubblicità programmatica (Real-Time Bidding) è un meccanismo d'asta automatica che avviene in 100-200 millisecondi. Mentre la pagina si carica: 1) il browser invia una richiesta all'ad server con informazioni sull'utente e sul contesto; 2) l'ad server consulta i profili pre-elaborati dai data broker; 3) lancia un'asta a cui partecipano centinaia di inserzionisti; 4) l'inserzionista che offre di più vince; 5) l'annuncio viene servito. Acxiom dichiara di avere profili su circa 2,5 miliardi di persone nel mondo.",
       "riferimento_principale": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi"
@@ -98,10 +238,30 @@
       "livello": "I",
       "domanda": "Nel caso #MacronLeaks (2017), perché la campagna di disinformazione fu lanciata da account americani durante la notte del silenzio elettorale francese?",
       "opzioni": [
-        {"id": "a", "testo": "Il silenzio elettorale si applicava solo ai media francesi: gli account americani potevano continuare a diffondere contenuti senza restrizioni legali francesi", "corretto": true, "feedback": "Esatto. Il silenzio elettorale francese (che scattava il venerdì sera prima del voto) impediva ai media francesi di coprire la storia. Ma non si applicava agli account americani: i social media non hanno confini geografici per le norme elettorali. La disinformazione circolò nei social mentre il giornalismo francese taceva."},
-        {"id": "b", "testo": "Gli hacker americani operavano nel loro fuso orario e non sapevano del silenzio elettorale francese", "corretto": false, "feedback": "Non è corretto. Il timing era deliberatamente strategico: il lancio durante il silenzio elettorale non fu un caso ma una scelta calcolata. I documenti mostrano pianificazione sofisticata: il tempismo sfruttava intenzionalmente il vuoto normativo tra il sistema giuridico francese e la portata globale dei social media."},
-        {"id": "c", "testo": "Di notte ci sono meno moderatori attivi sulle piattaforme e i contenuti restano online più a lungo", "corretto": false, "feedback": "Non è corretto. Sebbene la moderazione notturna sia ridotta, la ragione principale era il silenzio elettorale: i media francesi non potevano rispondere o contestualizzare, mentre i contenuti circolavano liberamente sui social in un vuoto informativo."},
-        {"id": "d", "testo": "La notte era l'orario di picco di attività dei bot utilizzati nella campagna", "corretto": false, "feedback": "Non è corretto. I bot non hanno orari di picco predefiniti. Il timing era strategico rispetto al silenzio elettorale francese: creare una finestra di circolazione della disinformazione durante la quale i meccanismi di risposta istituzionali erano bloccati."}
+        {
+          "id": "a",
+          "testo": "Il silenzio elettorale valeva solo per i media francesi, non per gli account stranieri",
+          "corretto": true,
+          "feedback": "Esatto. Il silenzio elettorale francese (che scattava il venerdì sera prima del voto) impediva ai media francesi di coprire la storia. Ma non si applicava agli account americani: i social media non hanno confini geografici per le norme elettorali. La disinformazione circolò nei social mentre il giornalismo francese taceva."
+        },
+        {
+          "id": "b",
+          "testo": "Gli hacker americani operavano nel loro fuso orario e non sapevano del silenzio elettorale francese",
+          "corretto": false,
+          "feedback": "Non è corretto. Il timing era deliberatamente strategico: il lancio durante il silenzio elettorale non fu un caso ma una scelta calcolata. I documenti mostrano pianificazione sofisticata: il tempismo sfruttava intenzionalmente il vuoto normativo tra il sistema giuridico francese e la portata globale dei social media."
+        },
+        {
+          "id": "c",
+          "testo": "Di notte ci sono meno moderatori attivi sulle piattaforme e i contenuti restano online più a lungo",
+          "corretto": false,
+          "feedback": "Non è corretto. Sebbene la moderazione notturna sia ridotta, la ragione principale era il silenzio elettorale: i media francesi non potevano rispondere o contestualizzare, mentre i contenuti circolavano liberamente sui social in un vuoto informativo."
+        },
+        {
+          "id": "d",
+          "testo": "La notte era l'orario di picco di attività dei bot utilizzati nella campagna",
+          "corretto": false,
+          "feedback": "Non è corretto. I bot non hanno orari di picco predefiniti. Il timing era strategico rispetto al silenzio elettorale francese: creare una finestra di circolazione della disinformazione durante la quale i meccanismi di risposta istituzionali erano bloccati."
+        }
       ],
       "spiegazione": "Il caso #MacronLeaks (2017) illustra una tattica sofisticata: 9 GB di documenti trafugati con phishing furono lanciati come hashtag da account dell'estrema destra americana nella notte tra venerdì e sabato, quando scattava il silenzio elettorale francese. I media francesi non potevano coprire la storia — ma gli account americani erano fuori dalla giurisdizione. I documenti circolarono senza il filtro del giornalismo verificato. I metadati di alcuni file mostravano come ultimo autore un nome russo associato all'intelligence militare (GRU).",
       "riferimento_principale": "📖 ESPLORA — Caso studio: #MacronLeaks (2017)"
@@ -111,10 +271,30 @@
       "livello": "I",
       "domanda": "Quali sono i 5 principi che l'IFCN (International Fact-Checking Network) richiede per certificare un'organizzazione di fact-checking?",
       "opzioni": [
-        {"id": "a", "testo": "Non-partigianeria, trasparenza delle fonti, trasparenza del finanziamento, trasparenza della metodologia, politica di correzione", "corretto": true, "feedback": "Esatto. L'IFCN certifica i fact-checker professionali su questi 5 principi. In Italia sono certificati: Pagella Politica/FactaNews, Open (Mentana), AFP Fact Check Italia. Il codice di principi garantisce che il fact-checker sia indipendente, verificabile e disposto a correggersi pubblicamente."},
-        {"id": "b", "testo": "Velocità di pubblicazione, numero di articoli annui, partnership con università, budget annuo superiore a 100.000 euro, team internazionale", "corretto": false, "feedback": "Non è corretto. L'IFCN non valuta dimensioni economiche o quantità di output: si concentra sui principi editoriali e di trasparenza. Un piccolo team con poche risorse può essere certificato se rispetta i 5 principi; una grande organizzazione ben finanziata può non esserlo."},
-        {"id": "c", "testo": "Iscrizione all'ordine dei giornalisti, sede in Europa, revisione peer degli articoli, nessun conflitto di interessi dichiarato, almeno 10 anni di attività", "corretto": false, "feedback": "Non è corretto. L'IFCN non richiede iscrizione a ordini professionali né anzianità minima. I 5 principi riguardano non-partigianeria, trasparenza (fonti, finanziamento, metodologia) e politica di correzione — requisiti editoriali, non burocratici."},
-        {"id": "d", "testo": "Approvazione governativa, accreditamento ONU, focalizzazione esclusiva sul fact-checking politico, nessun account social media, revisione annuale del governo", "corretto": false, "feedback": "Non è corretto. L'IFCN è un'organizzazione privata indipendente: l'approvazione governativa sarebbe in contrasto con il primo principio (non-partigianeria). I fact-checker certificati possono avere social media e coprire tutti i temi, non solo la politica."}
+        {
+          "id": "a",
+          "testo": "Non-partigianeria, trasparenza delle fonti, trasparenza del finanziamento, trasparenza della metodologia, politica di correzione",
+          "corretto": true,
+          "feedback": "Esatto. L'IFCN certifica i fact-checker professionali su questi 5 principi. In Italia sono certificati: Pagella Politica/FactaNews, Open (Mentana), AFP Fact Check Italia. Il codice di principi garantisce che il fact-checker sia indipendente, verificabile e disposto a correggersi pubblicamente."
+        },
+        {
+          "id": "b",
+          "testo": "Velocità di pubblicazione, numero di articoli annui, partnership con università, budget annuo superiore a 100.000 euro, team internazionale",
+          "corretto": false,
+          "feedback": "Non è corretto. L'IFCN non valuta dimensioni economiche o quantità di output: si concentra sui principi editoriali e di trasparenza. Un piccolo team con poche risorse può essere certificato se rispetta i 5 principi; una grande organizzazione ben finanziata può non esserlo."
+        },
+        {
+          "id": "c",
+          "testo": "Iscrizione all'ordine dei giornalisti, sede in Europa, revisione peer degli articoli, nessun conflitto di interessi dichiarato, almeno 10 anni di attività",
+          "corretto": false,
+          "feedback": "Non è corretto. L'IFCN non richiede iscrizione a ordini professionali né anzianità minima. I 5 principi riguardano non-partigianeria, trasparenza (fonti, finanziamento, metodologia) e politica di correzione — requisiti editoriali, non burocratici."
+        },
+        {
+          "id": "d",
+          "testo": "Approvazione governativa, accreditamento ONU, focalizzazione esclusiva sul fact-checking politico, nessun account social media, revisione annuale del governo",
+          "corretto": false,
+          "feedback": "Non è corretto. L'IFCN è un'organizzazione privata indipendente: l'approvazione governativa sarebbe in contrasto con il primo principio (non-partigianeria). I fact-checker certificati possono avere social media e coprire tutti i temi, non solo la politica."
+        }
       ],
       "spiegazione": "L'IFCN (International Fact-Checking Network) certifica le organizzazioni di fact-checking su 5 principi: 1) Non-partigianeria e imparzialità; 2) Trasparenza delle fonti; 3) Trasparenza del finanziamento e dell'organizzazione; 4) Trasparenza della metodologia; 5) Politica di correzione aperta e onesta. Il metodo di fact-checking prevede: identificare l'affermazione verificabile, cercare fonti primarie (ISTAT, Eurostat, studi peer-reviewed), verificare il contesto, cercare il contraddittorio, valutare la fonte originale.",
       "riferimento_principale": "📖 ESPLORA — Fact-checking sistematico: metodo e strumenti"
@@ -124,10 +304,30 @@
       "livello": "I",
       "domanda": "Cosa distingue la 'malinformazione' dalla 'disinformazione'?",
       "opzioni": [
-        {"id": "a", "testo": "La malinformazione usa informazioni VERE per causare danno; la disinformazione usa informazioni FALSE con intento di ingannare", "corretto": true, "feedback": "Esatto. La malinformazione è la categoria più sottile: usa fatti reali ma li diffonde in modo da causare danno. Esempi: diffusione di foto private senza consenso; pubblicazione selettiva di dati statistici veri per creare un'impressione falsa del quadro complessivo. Alla malinformazione non si risponde con una smentita fattuale."},
-        {"id": "b", "testo": "La malinformazione è prodotta da governi; la disinformazione è prodotta da attori privati", "corretto": false, "feedback": "Non è corretto. Sia la malinformazione sia la disinformazione possono essere prodotte da chiunque — governi, aziende, individui, gruppi organizzati. La distinzione riguarda la natura dell'informazione (vera vs. falsa con intento di danno), non l'identità di chi la produce."},
-        {"id": "c", "testo": "La malinformazione è più grave perché è impossibile da smentire con i fatti", "corretto": false, "feedback": "Non è corretto. Non si misura la gravità su una scala semplice: le risposte appropriate sono diverse. Alla disinformazione si risponde correggendo i fatti; alla malinformazione si risponde bilanciando libertà di informazione con tutela della privacy — il problema non è la falsità dell'informazione ma il suo uso dannoso."},
-        {"id": "d", "testo": "Non c'è differenza pratica: entrambe causano danno intenzionale con informazioni non verificabili", "corretto": false, "feedback": "Non è corretto. La distinzione è importante e pratica: la malinformazione usa fatti VERI e verificabili. Proprio per questo non si può rispondere con una smentita: l'informazione è accurata. La risposta deve riguardare il contesto, i diritti violati (privacy), la proporzionalità della diffusione."}
+        {
+          "id": "a",
+          "testo": "La malinformazione usa fatti veri per fare danno; la disinformazione usa falsità per ingannare",
+          "corretto": true,
+          "feedback": "Esatto. La malinformazione è la categoria più sottile: usa fatti reali ma li diffonde in modo da causare danno. Esempi: diffusione di foto private senza consenso; pubblicazione selettiva di dati statistici veri per creare un'impressione falsa del quadro complessivo. Alla malinformazione non si risponde con una smentita fattuale."
+        },
+        {
+          "id": "b",
+          "testo": "La malinformazione è prodotta da governi; la disinformazione è prodotta da attori privati",
+          "corretto": false,
+          "feedback": "Non è corretto. Sia la malinformazione sia la disinformazione possono essere prodotte da chiunque — governi, aziende, individui, gruppi organizzati. La distinzione riguarda la natura dell'informazione (vera vs. falsa con intento di danno), non l'identità di chi la produce."
+        },
+        {
+          "id": "c",
+          "testo": "La malinformazione è più grave perché è impossibile da smentire con i fatti",
+          "corretto": false,
+          "feedback": "Non è corretto. Non si misura la gravità su una scala semplice: le risposte appropriate sono diverse. Alla disinformazione si risponde correggendo i fatti; alla malinformazione si risponde bilanciando libertà di informazione con tutela della privacy — il problema non è la falsità dell'informazione ma il suo uso dannoso."
+        },
+        {
+          "id": "d",
+          "testo": "Non c'è differenza pratica: entrambe causano danno intenzionale con informazioni non verificabili",
+          "corretto": false,
+          "feedback": "Non è corretto. La distinzione è importante e pratica: la malinformazione usa fatti VERI e verificabili. Proprio per questo non si può rispondere con una smentita: l'informazione è accurata. La risposta deve riguardare il contesto, i diritti violati (privacy), la proporzionalità della diffusione."
+        }
       ],
       "spiegazione": "La malinformazione è informazione VERA diffusa con l'intenzione di causare danno. Esempi tipici: diffusione di fotografie private senza consenso (i fatti — le foto — sono reali; il danno è nella diffusione non autorizzata); pubblicazione selettiva di dati statistici veri per creare l'impressione di un quadro diverso dalla realtà. Si distingue dalla disinformazione (FALSA con intento) e dalla misinformazione (FALSA senza intento). La risposta appropriata è diversa per ciascuna categoria.",
       "riferimento_principale": "📖 ESPLORA — Disinformazione, misinformazione, malinformazione: le distinzioni che contano"
@@ -137,10 +337,30 @@
       "livello": "I",
       "domanda": "Quali azioni concrete permettono di rompere consapevolmente una filter bubble?",
       "opzioni": [
-        {"id": "a", "testo": "Seguire fonti con cui non si è d'accordo, usare il feed cronologico, fare ricerche attive invece di aspettare l'algoritmo, chiedersi 'chi non vedo nel mio feed?'", "corretto": true, "feedback": "Esatto. Queste strategie richiedono uno sforzo consapevole contro la logica dell'algoritmo: la bolla si forma passivamente, a mano a mano che l'algoritmo impara cosa ti piace. Romperla richiede azione deliberata nella direzione opposta — introdurre attivamente la diversità che l'algoritmo tende a escludere."},
-        {"id": "b", "testo": "Disattivare i cookie del browser per impedire il tracciamento dei propri dati", "corretto": false, "feedback": "Non è corretto. Disattivare i cookie di terze parti limita il tracciamento pubblicitario ma non elimina la filter bubble: le piattaforme usano i dati di comportamento interni all'app (login, interazioni, tempo di visione), che non dipendono dai cookie del browser. La bolla si forma dentro la piattaforma stessa."},
-        {"id": "c", "testo": "Usare una VPN per cambiare la propria localizzazione geografica e ingannare l'algoritmo", "corretto": false, "feedback": "Non è corretto. La VPN cambia l'indirizzo IP ma non elimina la filter bubble: gli algoritmi usano la storia di interazioni (like, tempo di visione, commenti, skip) legata all'account, indipendentemente dalla localizzazione geografica."},
-        {"id": "d", "testo": "Abbandonare i social media e tornare esclusivamente ai telegiornali tradizionali", "corretto": false, "feedback": "Non è corretto. I telegiornali e i giornali tradizionali hanno bias editoriali propri. Il testo suggerisce la diversificazione attiva e consapevole delle fonti — non il ritorno ai media tradizionali come soluzione universale. Anche i media tradizionali possono creare echo chamber."}
+        {
+          "id": "a",
+          "testo": "Seguire fonti diverse dalle proprie idee, usare il feed cronologico, cercare attivamente",
+          "corretto": true,
+          "feedback": "Esatto. Queste strategie richiedono uno sforzo consapevole contro la logica dell'algoritmo: la bolla si forma passivamente, a mano a mano che l'algoritmo impara cosa ti piace. Romperla richiede azione deliberata nella direzione opposta — introdurre attivamente la diversità che l'algoritmo tende a escludere."
+        },
+        {
+          "id": "b",
+          "testo": "Disattivare i cookie del browser per impedire il tracciamento dei propri dati",
+          "corretto": false,
+          "feedback": "Non è corretto. Disattivare i cookie di terze parti limita il tracciamento pubblicitario ma non elimina la filter bubble: le piattaforme usano i dati di comportamento interni all'app (login, interazioni, tempo di visione), che non dipendono dai cookie del browser. La bolla si forma dentro la piattaforma stessa."
+        },
+        {
+          "id": "c",
+          "testo": "Usare una VPN per cambiare la propria localizzazione geografica e ingannare l'algoritmo",
+          "corretto": false,
+          "feedback": "Non è corretto. La VPN cambia l'indirizzo IP ma non elimina la filter bubble: gli algoritmi usano la storia di interazioni (like, tempo di visione, commenti, skip) legata all'account, indipendentemente dalla localizzazione geografica."
+        },
+        {
+          "id": "d",
+          "testo": "Abbandonare i social media e tornare esclusivamente ai telegiornali tradizionali",
+          "corretto": false,
+          "feedback": "Non è corretto. I telegiornali e i giornali tradizionali hanno bias editoriali propri. Il testo suggerisce la diversificazione attiva e consapevole delle fonti — non il ritorno ai media tradizionali come soluzione universale. Anche i media tradizionali possono creare echo chamber."
+        }
       ],
       "spiegazione": "Rompere consapevolmente la filter bubble richiede azioni deliberate che contrastano la logica dell'algoritmo. Le strategie efficaci sono: 1) Diversificazione attiva delle fonti (seguire chi non si è d'accordo); 2) Uso del feed cronologico quando disponibile; 3) Ricerca deliberata invece di aspettare i suggerimenti algoritmici; 4) Metaconsapevolezza dei propri pattern ('chi non vedo nel mio feed?'). Nota: la filter bubble (algoritmica) si distingue dall'echo chamber (creata dalla scelta umana di stare con persone simili), ma i due fenomeni si amplificano a vicenda.",
       "riferimento_principale": "📖 ESPLORA — Filter bubble e echo chamber: come funzionano e come si rompono"
@@ -150,10 +370,30 @@
       "livello": "I",
       "domanda": "Cosa significa 'dividendo del bugiardo' (liar's dividend) nel contesto dei deepfake?",
       "opzioni": [
-        {"id": "a", "testo": "Quando i deepfake diventano comuni, qualsiasi video REALE può essere dichiarato falso come strategia difensiva — 'quella registrazione è un deepfake' diventa un modo per negare prove autentiche", "corretto": true, "feedback": "Esatto. Il 'liar's dividend' è il rischio più insidioso dei deepfake: non solo che le persone credano a contenuti falsi, ma che chiunque possa usare l'esistenza dei deepfake per negare prove reali. L'abitudine alla falsificazione erode la fiducia in qualsiasi contenuto — anche quello autentico."},
-        {"id": "b", "testo": "Il guadagno economico ottenuto da chi vende servizi di creazione di deepfake su commissione", "corretto": false, "feedback": "Non è corretto. Il 'dividendo del bugiardo' è un concetto epistemologico — riguarda la conoscenza e la fiducia collettiva — non un concetto economico. Non descrive il mercato dei deepfake ma l'effetto sistemico sulla credibilità delle prove reali nel dibattito pubblico."},
-        {"id": "c", "testo": "Il vantaggio reputazionale di chi denuncia per primo la presenza di un deepfake su una piattaforma", "corretto": false, "feedback": "Non è corretto. Il 'dividendo del bugiardo' riguarda l'effetto dei deepfake sulla fiducia nelle prove reali, non il vantaggio di chi segnala disinformazione. Il 'dividendo' va a vantaggio di chi mente, non di chi denuncia."},
-        {"id": "d", "testo": "Il fatto che chi produce deepfake non ha conseguenze legali perché la legislazione non li regola ancora", "corretto": false, "feedback": "Non è corretto. Il 'dividendo del bugiardo' non riguarda la regolamentazione legale. Descrive un effetto epistemologico: la diffusione dei deepfake rende possibile delegittimare qualsiasi prova reale con la semplice accusa 'è un deepfake' — e chi mente ne beneficia."}
+        {
+          "id": "a",
+          "testo": "Se i deepfake sono comuni, chiunque può negare un video vero dicendo che è falso",
+          "corretto": true,
+          "feedback": "Esatto. Il 'liar's dividend' è il rischio più insidioso dei deepfake: non solo che le persone credano a contenuti falsi, ma che chiunque possa usare l'esistenza dei deepfake per negare prove reali. L'abitudine alla falsificazione erode la fiducia in qualsiasi contenuto — anche quello autentico."
+        },
+        {
+          "id": "b",
+          "testo": "Il guadagno economico ottenuto da chi vende servizi di creazione di deepfake su commissione",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 'dividendo del bugiardo' è un concetto epistemologico — riguarda la conoscenza e la fiducia collettiva — non un concetto economico. Non descrive il mercato dei deepfake ma l'effetto sistemico sulla credibilità delle prove reali nel dibattito pubblico."
+        },
+        {
+          "id": "c",
+          "testo": "Il vantaggio reputazionale di chi denuncia per primo la presenza di un deepfake su una piattaforma",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 'dividendo del bugiardo' riguarda l'effetto dei deepfake sulla fiducia nelle prove reali, non il vantaggio di chi segnala disinformazione. Il 'dividendo' va a vantaggio di chi mente, non di chi denuncia."
+        },
+        {
+          "id": "d",
+          "testo": "Il fatto che chi produce deepfake non ha conseguenze legali perché la legislazione non li regola ancora",
+          "corretto": false,
+          "feedback": "Non è corretto. Il 'dividendo del bugiardo' non riguarda la regolamentazione legale. Descrive un effetto epistemologico: la diffusione dei deepfake rende possibile delegittimare qualsiasi prova reale con la semplice accusa 'è un deepfake' — e chi mente ne beneficia."
+        }
       ],
       "spiegazione": "Il 'dividendo del bugiardo' (liar's dividend) è il paradosso più preoccupante dei deepfake: man mano che questa tecnologia diventa comune, chiunque può dichiarare 'quella registrazione è un deepfake' come strategia difensiva contro prove autentiche. Il rischio non è solo che le persone credano a contenuti falsi: è che smettano di credere a contenuti reali. Questo erode le fondamenta epistemologiche del dibattito democratico: senza la possibilità di concordare su prove condivise, diventa impossibile distinguere la verità dalla finzione.",
       "riferimento_principale": "📖 ESPLORA — Deepfake: come si riconoscono e perché sono pericolosi"
@@ -163,10 +403,30 @@
       "livello": "A",
       "domanda": "Il DM 183/2024 (Linee guida Educazione Civica) identifica la disinformazione come minaccia alle istituzioni democratiche (Traguardo D1). Perché lo SDG 16.10 — 'garantire l'accesso pubblico all'informazione' — è direttamente minacciato dalla disinformazione?",
       "opzioni": [
-        {"id": "a", "testo": "La disinformazione non censura l'informazione ma la inquina: erode la fiducia nelle istituzioni, polarizza il dibattito, rende impossibile accordarsi su fatti condivisi — e senza fatti condivisi la partecipazione democratica non è genuinamente informata", "corretto": true, "feedback": "Esatto. Il DM 183/2024 Traguardo D1 collega esplicitamente la capacità di riconoscere strategie di disinformazione alla tutela della democrazia e all'SDG 16 (Pace, Giustizia e Istituzioni Solide). La disinformazione sabota l'accesso all'informazione non rimuovendola ma rendendola indistinguibile dalla falsità."},
-        {"id": "b", "testo": "Perché i governi usano la disinformazione per censurare Internet e bloccare fisicamente l'accesso alle informazioni", "corretto": false, "feedback": "Non è corretto. La censura governativa (blocco fisico dei siti) è un fenomeno reale ma distinto. La disinformazione opera diversamente: non rimuove l'accesso all'informazione (come fa la censura) ma la inquina — produce sovrabbondanza di contenuti falsi che rendono impossibile orientarsi nel flusso informativo."},
-        {"id": "c", "testo": "Perché le fake news costano denaro alle istituzioni che devono smentirle con costose campagne di comunicazione ufficiale", "corretto": false, "feedback": "Non è corretto. Il costo economico delle smentite istituzionali è reale ma secondario. Il danno principale della disinformazione è democratico: erode la fiducia, polarizza, e rende impossibile il dibattito basato su fatti condivisi — senza i quali il processo democratico perde la sua base."},
-        {"id": "d", "testo": "Perché la disinformazione riduce il numero di lettori dei giornali tradizionali, indebolendo economicamente il giornalismo di qualità", "corretto": false, "feedback": "Non è corretto. La crisi economica del giornalismo tradizionale è un problema reale, ma il collegamento con lo SDG 16.10 è più profondo: l'accesso all'informazione affidabile è un diritto fondamentale della cittadinanza democratica, non solo una questione di mercato editoriale."}
+        {
+          "id": "a",
+          "testo": "Perché inquina l'informazione: senza fatti condivisi e fiducia, i cittadini non possono partecipare in modo informato",
+          "corretto": true,
+          "feedback": "Esatto. Il DM 183/2024 Traguardo D1 collega esplicitamente la capacità di riconoscere strategie di disinformazione alla tutela della democrazia e all'SDG 16 (Pace, Giustizia e Istituzioni Solide). La disinformazione sabota l'accesso all'informazione non rimuovendola ma rendendola indistinguibile dalla falsità."
+        },
+        {
+          "id": "b",
+          "testo": "Perché i governi usano la disinformazione per censurare Internet e bloccare fisicamente l'accesso alle informazioni",
+          "corretto": false,
+          "feedback": "Non è corretto. La censura governativa (blocco fisico dei siti) è un fenomeno reale ma distinto. La disinformazione opera diversamente: non rimuove l'accesso all'informazione (come fa la censura) ma la inquina — produce sovrabbondanza di contenuti falsi che rendono impossibile orientarsi nel flusso informativo."
+        },
+        {
+          "id": "c",
+          "testo": "Perché le fake news costano denaro alle istituzioni che devono smentirle con costose campagne di comunicazione ufficiale",
+          "corretto": false,
+          "feedback": "Non è corretto. Il costo economico delle smentite istituzionali è reale ma secondario. Il danno principale della disinformazione è democratico: erode la fiducia, polarizza, e rende impossibile il dibattito basato su fatti condivisi — senza i quali il processo democratico perde la sua base."
+        },
+        {
+          "id": "d",
+          "testo": "Perché la disinformazione riduce il numero di lettori dei giornali tradizionali, indebolendo economicamente il giornalismo di qualità",
+          "corretto": false,
+          "feedback": "Non è corretto. La crisi economica del giornalismo tradizionale è un problema reale, ma il collegamento con lo SDG 16.10 è più profondo: l'accesso all'informazione affidabile è un diritto fondamentale della cittadinanza democratica, non solo una questione di mercato editoriale."
+        }
       ],
       "spiegazione": "Il DM 183/2024 (Linee guida Educazione Civica, Traguardo D1) collega la capacità di riconoscere strategie di disinformazione alla tutela delle istituzioni democratiche e all'SDG 16 (Pace, Giustizia, Istituzioni Solide). Lo SDG 16.10 garantisce l'accesso pubblico all'informazione come fondamento della partecipazione civica. La disinformazione lo minaccia non rimuovendo l'informazione (come fa la censura) ma inquinando l'ecosistema informativo: quando non si riesce a distinguere il vero dal falso, il dibattito democratico perde la sua base fattuale. Questo trasforma il pensiero critico sui media da abilità individuale a competenza di cittadinanza.",
       "riferimento_principale": "📖 ESPLORA — Disinformazione come minaccia democratica (DM 183/2024, Traguardo D1)"
@@ -176,10 +436,30 @@
       "livello": "A",
       "domanda": "Lo studio MIT 2018 (Vosoughi et al., Science) dimostra che le notizie false si diffondono 6 volte più velocemente di quelle vere e che sono le PERSONE (non i bot) a diffonderle principalmente. Cosa implica questo per la responsabilità individuale di chi condivide?",
       "opzioni": [
-        {"id": "a", "testo": "Chi condivide senza verificare è parte attiva della catena di amplificazione: il think-before-you-share è un atto civico, non solo una buona abitudine individuale", "corretto": true, "feedback": "Esatto. Lo studio Vosoughi et al. (2018, Science, su 126.000 storie Twitter 2006-2017) ha dimostrato che gli umani — non i bot — sono i principali responsabili della diffusione della disinformazione. Questo trasforma la responsabilità individuale del condividere in una questione di cittadinanza digitale, non solo di buon senso personale."},
-        {"id": "b", "testo": "Dimostra che le piattaforme devono filtrare automaticamente tutti i contenuti prima che possano essere condivisi", "corretto": false, "feedback": "Non è corretto. La soluzione della moderazione automatica totale pone problemi gravi di libertà di espressione e creerebbe nuovi rischi di censura algoritmica. Lo studio suggerisce la responsabilità distribuita — delle piattaforme nel design degli incentivi e degli individui nelle scelte di condivisione — non la delega totale alla macchina."},
-        {"id": "c", "testo": "Significa che la responsabilità è solo delle piattaforme che hanno progettato algoritmi che premiano i contenuti virali emotivamente intensi", "corretto": false, "feedback": "Non è corretto. La responsabilità è distribuita: le piattaforme hanno creato incentivi strutturali che favoriscono la viralità emotiva, MA lo studio dimostra che sono le PERSONE a fare le scelte di condivisione. La responsabilità individuale e quella delle piattaforme coesistono e non si elidono a vicenda."},
-        {"id": "d", "testo": "Suggerisce che l'educazione mediale non è efficace perché le persone condividono per impulso emotivo, non per ragionamento", "corretto": false, "feedback": "Non è corretto. Il fatto che le persone condividano per impulso emotivo è esattamente la ragione per cui l'educazione mediale è necessaria: il metodo Think-before-you-share è progettato per introdurre un momento di riflessione deliberata nell'impulso. L'educazione non elimina l'emozione ma la integra con la verifica."}
+        {
+          "id": "a",
+          "testo": "Chi condivide senza verificare contribuisce alla diffusione: pensare prima di condividere è un atto civico",
+          "corretto": true,
+          "feedback": "Esatto. Lo studio Vosoughi et al. (2018, Science, su 126.000 storie Twitter 2006-2017) ha dimostrato che gli umani — non i bot — sono i principali responsabili della diffusione della disinformazione. Questo trasforma la responsabilità individuale del condividere in una questione di cittadinanza digitale, non solo di buon senso personale."
+        },
+        {
+          "id": "b",
+          "testo": "Dimostra che le piattaforme devono filtrare automaticamente tutti i contenuti prima che possano essere condivisi",
+          "corretto": false,
+          "feedback": "Non è corretto. La soluzione della moderazione automatica totale pone problemi gravi di libertà di espressione e creerebbe nuovi rischi di censura algoritmica. Lo studio suggerisce la responsabilità distribuita — delle piattaforme nel design degli incentivi e degli individui nelle scelte di condivisione — non la delega totale alla macchina."
+        },
+        {
+          "id": "c",
+          "testo": "Significa che la responsabilità è solo delle piattaforme che hanno progettato algoritmi che premiano i contenuti virali emotivamente intensi",
+          "corretto": false,
+          "feedback": "Non è corretto. La responsabilità è distribuita: le piattaforme hanno creato incentivi strutturali che favoriscono la viralità emotiva, MA lo studio dimostra che sono le PERSONE a fare le scelte di condivisione. La responsabilità individuale e quella delle piattaforme coesistono e non si elidono a vicenda."
+        },
+        {
+          "id": "d",
+          "testo": "Suggerisce che l'educazione mediale non è efficace perché le persone condividono per impulso emotivo, non per ragionamento",
+          "corretto": false,
+          "feedback": "Non è corretto. Il fatto che le persone condividano per impulso emotivo è esattamente la ragione per cui l'educazione mediale è necessaria: il metodo Think-before-you-share è progettato per introdurre un momento di riflessione deliberata nell'impulso. L'educazione non elimina l'emozione ma la integra con la verifica."
+        }
       ],
       "spiegazione": "Lo studio Vosoughi, Roy e Aral (MIT, 2018, Science) ha analizzato 126.000 storie condivise su Twitter tra il 2006 e il 2017: le notizie false si diffondono in media 6 volte più velocemente di quelle vere, raggiungono più persone e penetrano più in profondità nelle reti sociali. Crucialmente, il fenomeno è guidato dagli umani, non dai bot. Le notizie false sono più 'nuove', emotivamente intense e sorprendenti — esattamente i fattori che gli algoritmi premiano. Ogni persona che condivide senza verificare è parte della catena di amplificazione: milioni di scelte individuali quotidiane determinano la diffusione della disinformazione.",
       "riferimento_principale": "📖 ESPLORA — Collegamento STEM — Matematica (Vosoughi et al., 2018)"
@@ -189,10 +469,30 @@
       "livello": "A",
       "domanda": "Il DSA (Digital Services Act, 2022) vieta la pubblicità micro-targetizzata per i minori, integrando il GDPR. Perché questa norma specifica è importante per la tutela dei minori online?",
       "opzioni": [
-        {"id": "a", "testo": "La pubblicità micro-targetizzata usa dati comportamentali per costruire messaggi altamente personalizzati: per un minore in sviluppo questa forma di manipolazione è particolarmente problematica, e il DSA gli riconosce una protezione specifica che il GDPR non prevedeva", "corretto": true, "feedback": "Esatto. Il GDPR garantisce il diritto alla privacy e al consenso; il DSA aggiunge il divieto di sfruttare profili comportamentali per targetizzare i minori con pubblicità personalizzata. I minori sono particolarmente vulnerabili: le loro capacità critiche e di autoregolazione sono ancora in sviluppo."},
-        {"id": "b", "testo": "Perché i minori non possono effettuare acquisti online autonomamente, quindi la pubblicità targetizzata per loro sarebbe economicamente inutile", "corretto": false, "feedback": "Non è corretto. I minori influenzano gli acquisti familiari e sviluppano preferenze di marca sin dall'infanzia: per gli inserzionisti sono un target economicamente rilevante. Il DSA vieta il micro-targeting non perché sia inutile ma perché è una forma di manipolazione particolarmente problematica per chi non ha ancora completato lo sviluppo cognitivo ed emotivo."},
-        {"id": "c", "testo": "Perché il GDPR già vietava completamente qualsiasi raccolta di dati sui minori sotto i 18 anni", "corretto": false, "feedback": "Non è corretto. Il GDPR richiede il consenso dei genitori per i minori sotto i 16 anni (14 anni in Italia), ma non vieta completamente la raccolta dei dati. Il DSA aggiunge specificamente il divieto di pubblicità micro-targetizzata basata su profili comportamentali per i minori — una protezione supplementare che il GDPR non prevedeva."},
-        {"id": "d", "testo": "Perché i minori generano meno dati comportamentali degli adulti, rendendo il targeting meno accurato e quindi meno utile agli inserzionisti", "corretto": false, "feedback": "Non è corretto. I minori sono utenti intensi dei social media e generano enormi quantità di dati comportamentali. Il DSA vieta il micro-targeting non per ragioni di efficacia economica ma per ragioni di protezione dei diritti: la vulnerabilità evolutiva dei minori richiede protezione specifica oltre a quella generale."}
+        {
+          "id": "a",
+          "testo": "Perché usa i dati di comportamento per messaggi su misura, e un minore è più esposto a questa manipolazione",
+          "corretto": true,
+          "feedback": "Esatto. Il GDPR garantisce il diritto alla privacy e al consenso; il DSA aggiunge il divieto di sfruttare profili comportamentali per targetizzare i minori con pubblicità personalizzata. I minori sono particolarmente vulnerabili: le loro capacità critiche e di autoregolazione sono ancora in sviluppo."
+        },
+        {
+          "id": "b",
+          "testo": "Perché i minori non possono effettuare acquisti online autonomamente, quindi la pubblicità targetizzata per loro sarebbe economicamente inutile",
+          "corretto": false,
+          "feedback": "Non è corretto. I minori influenzano gli acquisti familiari e sviluppano preferenze di marca sin dall'infanzia: per gli inserzionisti sono un target economicamente rilevante. Il DSA vieta il micro-targeting non perché sia inutile ma perché è una forma di manipolazione particolarmente problematica per chi non ha ancora completato lo sviluppo cognitivo ed emotivo."
+        },
+        {
+          "id": "c",
+          "testo": "Perché il GDPR già vietava completamente qualsiasi raccolta di dati sui minori sotto i 18 anni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il GDPR richiede il consenso dei genitori per i minori sotto i 16 anni (14 anni in Italia), ma non vieta completamente la raccolta dei dati. Il DSA aggiunge specificamente il divieto di pubblicità micro-targetizzata basata su profili comportamentali per i minori — una protezione supplementare che il GDPR non prevedeva."
+        },
+        {
+          "id": "d",
+          "testo": "Perché i minori generano meno dati comportamentali degli adulti, rendendo il targeting meno accurato e quindi meno utile agli inserzionisti",
+          "corretto": false,
+          "feedback": "Non è corretto. I minori sono utenti intensi dei social media e generano enormi quantità di dati comportamentali. Il DSA vieta il micro-targeting non per ragioni di efficacia economica ma per ragioni di protezione dei diritti: la vulnerabilità evolutiva dei minori richiede protezione specifica oltre a quella generale."
+        }
       ],
       "spiegazione": "Il GDPR (2018) protegge i dati personali e richiede consenso esplicito (dei genitori per i minori sotto i 14 anni in Italia). Il DSA (Digital Services Act, 2022) aggiunge una protezione specifica: vieta la pubblicità micro-targetizzata basata su profili comportamentali per i minori. La pubblicità micro-targetizzata usa dati raccolti su comportamenti online (cosa guardi, quanto a lungo, cosa clicchi) per costruire messaggi personalizzati ad alto impatto persuasivo. Per un adolescente le cui capacità critiche e di autoregolazione sono ancora in sviluppo, questa manipolazione è particolarmente problematica — il DSA lo riconosce esplicitamente.",
       "riferimento_principale": "📖 ESPLORA — Pubblicità programmatica: l'asta in 200 millisecondi"
@@ -202,10 +502,30 @@
       "livello": "A",
       "domanda": "Nel 2022, su TikTok in Russia prevalevano video che presentavano l'invasione dell'Ucraina come operazione difensiva; in Europa prevalevano le immagini di distruzione urbana. TikTok aveva politiche editoriali diverse per i due contesti?",
       "opzioni": [
-        {"id": "a", "testo": "No: l'algoritmo di engagement amplificava semplicemente i contenuti che generavano più interazione nel contesto locale, producendo frammentazione informativa senza alcuna scelta editoriale deliberata di TikTok", "corretto": true, "feedback": "Esatto. TikTok non aveva 'politiche esplicite diverse per i due paesi': l'algoritmo ottimizzava per l'engagement in ciascun contesto culturale e produceva naturalmente narrazioni radicalmente diverse. Nessuna scelta editoriale intenzionale: solo l'algoritmo che massimizza le interazioni nel contesto locale."},
-        {"id": "b", "testo": "Sì: TikTok ha due divisioni operative separate (globale e per mercati a censura governativa) con politiche editoriali diverse", "corretto": false, "feedback": "Non è corretto. Douyin è la versione cinese di TikTok con restrizioni diverse per il mercato interno cinese, ma TikTok globale è un'unica piattaforma. La frammentazione descritta nel caso ucraino non era causata da divisioni aziendali separate ma dall'effetto dell'algoritmo di engagement su diversi contesti culturali."},
-        {"id": "c", "testo": "Sì: la censura governativa russa ha imposto a TikTok di mostrare contenuti specifici ai propri cittadini, creando di fatto una versione russa della piattaforma", "corretto": false, "feedback": "Non è corretto. Sebbene la Russia abbia bloccato molte piattaforme occidentali durante la guerra, il fenomeno descritto nel caso è un effetto algoritmico, non di censura governativa imposta a TikTok. L'algoritmo di engagement produce naturalmente bolle informative localizzate senza bisogno di imposizioni esterne."},
-        {"id": "d", "testo": "Sì: ByteDance (proprietaria di TikTok) ha deliberatamente applicato politiche diverse in mercati con sistemi politici diversi per motivi commerciali e di accesso ai mercati", "corretto": false, "feedback": "Non è corretto. Il testo descrive un fenomeno algoritmico strutturale, non una scelta deliberata di ByteDance. L'algoritmo ottimizza per l'engagement in ciascun contesto — il risultato è la frammentazione informativa, ma non c'è stata una decisione intenzionale di mostrare narrazioni diverse."}
+        {
+          "id": "a",
+          "testo": "No: l'algoritmo amplificava ciò che otteneva più interazioni in ciascun Paese, senza una scelta editoriale deliberata",
+          "corretto": true,
+          "feedback": "Esatto. TikTok non aveva 'politiche esplicite diverse per i due paesi': l'algoritmo ottimizzava per l'engagement in ciascun contesto culturale e produceva naturalmente narrazioni radicalmente diverse. Nessuna scelta editoriale intenzionale: solo l'algoritmo che massimizza le interazioni nel contesto locale."
+        },
+        {
+          "id": "b",
+          "testo": "Sì: TikTok ha due divisioni operative separate (globale e per mercati a censura governativa) con politiche editoriali diverse",
+          "corretto": false,
+          "feedback": "Non è corretto. Douyin è la versione cinese di TikTok con restrizioni diverse per il mercato interno cinese, ma TikTok globale è un'unica piattaforma. La frammentazione descritta nel caso ucraino non era causata da divisioni aziendali separate ma dall'effetto dell'algoritmo di engagement su diversi contesti culturali."
+        },
+        {
+          "id": "c",
+          "testo": "Sì: la censura governativa russa ha imposto a TikTok di mostrare contenuti specifici ai propri cittadini, creando di fatto una versione russa della piattaforma",
+          "corretto": false,
+          "feedback": "Non è corretto. Sebbene la Russia abbia bloccato molte piattaforme occidentali durante la guerra, il fenomeno descritto nel caso è un effetto algoritmico, non di censura governativa imposta a TikTok. L'algoritmo di engagement produce naturalmente bolle informative localizzate senza bisogno di imposizioni esterne."
+        },
+        {
+          "id": "d",
+          "testo": "Sì: ByteDance (proprietaria di TikTok) ha deliberatamente applicato politiche diverse in mercati con sistemi politici diversi per motivi commerciali e di accesso ai mercati",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive un fenomeno algoritmico strutturale, non una scelta deliberata di ByteDance. L'algoritmo ottimizza per l'engagement in ciascun contesto — il risultato è la frammentazione informativa, ma non c'è stata una decisione intenzionale di mostrare narrazioni diverse."
+        }
       ],
       "spiegazione": "Il caso ucraino del 2022 illustra un fenomeno preoccupante della frammentazione algoritmica: TikTok non aveva politiche editoriali diverse per Russia ed Europa. L'algoritmo di engagement amplificava semplicemente i contenuti che generavano più interazione nel contesto locale — e le emozioni dominanti erano diverse nei due contesti culturali. Il risultato è una realtà informativa radicalmente diversa a seconda della localizzazione geografica, prodotta senza alcuna scelta intenzionale. Questo rende il fenomeno strutturalmente difficile da regolare: non c'è nessuno che ha 'deciso' di mostrare narrazioni diverse.",
       "riferimento_principale": "🔍 OSSERVA — Il caso: quando l'algoritmo decide cosa pensiamo della guerra"
@@ -215,10 +535,30 @@
       "livello": "A",
       "domanda": "Nel caso #MacronLeaks, il team di Macron dichiarò i documenti come 'combinazione di materiale autentico e falsificato' senza specificare quali fossero i falsi. Perché questa fu una tattica deliberata e non un'ammissione di ignoranza?",
       "opzioni": [
-        {"id": "a", "testo": "Specificare i falsi avrebbe implicitamente autenticato il materiale restante: il dubbio totale sull'intera raccolta rendeva impossibile la verifica selettiva e obbligava a trattare ogni documento come potenzialmente inaffidabile", "corretto": true, "feedback": "Esatto. Era una risposta strategica a una situazione comunicativa impossibile: elencare i documenti falsi avrebbe logicamente autenticato quelli non elencati. Con la dichiarazione di 'mix di autentico e falsificato', ogni documento diventava sospetto — e questo rendeva inutilizzabile l'intera raccolta come fonte di prove."},
-        {"id": "b", "testo": "Il team legale aveva vietato qualsiasi dichiarazione specifica per evitare violazioni del silenzio elettorale francese", "corretto": false, "feedback": "Non è corretto. Il testo descrive la risposta come una 'tattica deliberata' di comunicazione strategica, non come un vincolo legale imposto dagli avvocati. Il silenzio elettorale limitava i media giornalistici, non le dichiarazioni del team della campagna."},
-        {"id": "c", "testo": "Il team non aveva ancora analizzato tutti i 9 GB di file e non sapeva con certezza cosa fosse autentico e cosa falsificato", "corretto": false, "feedback": "Non è corretto. Il testo descrive esplicitamente la risposta come 'tattica deliberata'. L'eventuale incertezza sull'analisi dei file non esclude la natura strategica della comunicazione: la dichiarazione ambigua serviva a creare dubbio totale, indipendentemente da quanto era stato analizzato."},
-        {"id": "d", "testo": "Era obbligato dal silenzio elettorale a non fare dichiarazioni specifiche sulle elezioni o sui propri documenti interni", "corretto": false, "feedback": "Non è corretto. Il silenzio elettorale limitava i media giornalistici dal commentare notizie elettorali, non il team della campagna dal rispondere alla diffusione di documenti trafugati. La dichiarazione fu fatta proprio come risposta comunicativa strategica alla disinformazione."}
+        {
+          "id": "a",
+          "testo": "Indicare i falsi avrebbe confermato come autentico tutto il resto: meglio lasciare il dubbio sull'intera raccolta",
+          "corretto": true,
+          "feedback": "Esatto. Era una risposta strategica a una situazione comunicativa impossibile: elencare i documenti falsi avrebbe logicamente autenticato quelli non elencati. Con la dichiarazione di 'mix di autentico e falsificato', ogni documento diventava sospetto — e questo rendeva inutilizzabile l'intera raccolta come fonte di prove."
+        },
+        {
+          "id": "b",
+          "testo": "Il team legale aveva vietato qualsiasi dichiarazione specifica per evitare violazioni del silenzio elettorale francese",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive la risposta come una 'tattica deliberata' di comunicazione strategica, non come un vincolo legale imposto dagli avvocati. Il silenzio elettorale limitava i media giornalistici, non le dichiarazioni del team della campagna."
+        },
+        {
+          "id": "c",
+          "testo": "Il team non aveva ancora analizzato tutti i 9 GB di file e non sapeva con certezza cosa fosse autentico e cosa falsificato",
+          "corretto": false,
+          "feedback": "Non è corretto. Il testo descrive esplicitamente la risposta come 'tattica deliberata'. L'eventuale incertezza sull'analisi dei file non esclude la natura strategica della comunicazione: la dichiarazione ambigua serviva a creare dubbio totale, indipendentemente da quanto era stato analizzato."
+        },
+        {
+          "id": "d",
+          "testo": "Era obbligato dal silenzio elettorale a non fare dichiarazioni specifiche sulle elezioni o sui propri documenti interni",
+          "corretto": false,
+          "feedback": "Non è corretto. Il silenzio elettorale limitava i media giornalistici dal commentare notizie elettorali, non il team della campagna dal rispondere alla diffusione di documenti trafugati. La dichiarazione fu fatta proprio come risposta comunicativa strategica alla disinformazione."
+        }
       ],
       "spiegazione": "La risposta del team Macron fu una tattica di comunicazione sofisticata: dichiarare 'combinazione di autentico e falsificato' senza specificare cosa era cosa creava un dubbio totale sull'intera raccolta. Se avessero specificato 'questi 3 documenti sono falsi', avrebbero logicamente autenticato i restanti. Con la dichiarazione ambigua, ogni documento diventava sospetto — nessuno poteva essere usato come prova senza rischio. Il caso illustra anche il principio generale: la velocità di diffusione della disinformazione supera sempre la velocità di verifica; il silenzio elettorale è uno strumento progettato per un'era pre-digitale.",
       "riferimento_principale": "📖 ESPLORA — Caso studio: #MacronLeaks (2017)"
@@ -228,10 +568,30 @@
       "livello": "A",
       "domanda": "Perché la propaganda digitale di oggi è più potente di quella novecentesca — non per meccanismi psicologici diversi, ma per un fattore specifico?",
       "opzioni": [
-        {"id": "a", "testo": "La scala: i meccanismi psicologici (appello emotivo, ripetizione, in-group vs out-group) sono gli stessi del XX secolo, ma la tecnologia digitale ha moltiplicato la portata di miliardi di volte in tempi enormemente più brevi", "corretto": true, "feedback": "Esatto. I meccanismi psicologici della propaganda sono antichi e stabili. Goebbels usava gli stessi strumenti che vediamo nelle campagne di disinformazione digitale: appello alle emozioni forti, ripetizione, costruzione del nemico esterno. La differenza è la scala: la radio nazista raggiungeva milioni in settimane; un singolo post virale raggiunge miliardi in ore."},
-        {"id": "b", "testo": "Perché oggi esistono le immagini, i video e l'audio, mentre la propaganda novecentesca usava esclusivamente le parole", "corretto": false, "feedback": "Non è corretto. La propaganda novecentesca usava cinema, fotografia, radio, poster e immagini in modo massiccio. Il cinema di propaganda nazista e sovietico, i poster di guerra e le fotografie di Goebbels erano strumenti visivi potentissimi. La differenza non è nei tipi di media disponibili ma nella scala di diffusione."},
-        {"id": "c", "testo": "Perché l'intelligenza artificiale ha scoperto nuovi meccanismi psicologici di persuasione sconosciuti ai propagandisti del XX secolo", "corretto": false, "feedback": "Non è corretto. L'AI può personalizzare i messaggi e ottimizzarne la distribuzione, ma non ha scoperto meccanismi psicologici nuovi: usa gli stessi appelli emotivi, la stessa ripetizione, le stesse dinamiche tribali in-group/out-group già documentate da Goebbels e Bernays. La differenza è la scala, non la sofisticazione psicologica."},
-        {"id": "d", "testo": "Perché le democrazie moderne sono strutturalmente più vulnerabili alla propaganda rispetto alle democrazie degli anni '30", "corretto": false, "feedback": "Non è corretto. La propaganda fu devastante nelle democrazie degli anni '30, portando al crollo di molte di esse in Europa. Non c'è evidenza che le democrazie contemporanee siano strutturalmente più fragili: il problema è la scala tecnologica di diffusione, non una fragilità istituzionale nuova."}
+        {
+          "id": "a",
+          "testo": "Per la scala: i meccanismi psicologici sono gli stessi, ma il digitale raggiunge miliardi di persone in poco tempo",
+          "corretto": true,
+          "feedback": "Esatto. I meccanismi psicologici della propaganda sono antichi e stabili. Goebbels usava gli stessi strumenti che vediamo nelle campagne di disinformazione digitale: appello alle emozioni forti, ripetizione, costruzione del nemico esterno. La differenza è la scala: la radio nazista raggiungeva milioni in settimane; un singolo post virale raggiunge miliardi in ore."
+        },
+        {
+          "id": "b",
+          "testo": "Perché oggi esistono le immagini, i video e l'audio, mentre la propaganda novecentesca usava esclusivamente le parole",
+          "corretto": false,
+          "feedback": "Non è corretto. La propaganda novecentesca usava cinema, fotografia, radio, poster e immagini in modo massiccio. Il cinema di propaganda nazista e sovietico, i poster di guerra e le fotografie di Goebbels erano strumenti visivi potentissimi. La differenza non è nei tipi di media disponibili ma nella scala di diffusione."
+        },
+        {
+          "id": "c",
+          "testo": "Perché l'intelligenza artificiale ha scoperto nuovi meccanismi psicologici di persuasione sconosciuti ai propagandisti del XX secolo",
+          "corretto": false,
+          "feedback": "Non è corretto. L'AI può personalizzare i messaggi e ottimizzarne la distribuzione, ma non ha scoperto meccanismi psicologici nuovi: usa gli stessi appelli emotivi, la stessa ripetizione, le stesse dinamiche tribali in-group/out-group già documentate da Goebbels e Bernays. La differenza è la scala, non la sofisticazione psicologica."
+        },
+        {
+          "id": "d",
+          "testo": "Perché le democrazie moderne sono strutturalmente più vulnerabili alla propaganda rispetto alle democrazie degli anni '30",
+          "corretto": false,
+          "feedback": "Non è corretto. La propaganda fu devastante nelle democrazie degli anni '30, portando al crollo di molte di esse in Europa. Non c'è evidenza che le democrazie contemporanee siano strutturalmente più fragili: il problema è la scala tecnologica di diffusione, non una fragilità istituzionale nuova."
+        }
       ],
       "spiegazione": "I meccanismi psicologici della propaganda sono antichi e stabili: appello alle emozioni forti (paura, rabbia, orgoglio), ripetizione martellante del messaggio, costruzione del nemico esterno (in-group vs out-group). Goebbels usava gli stessi strumenti delle campagne di disinformazione digitale odierne. La differenza è la scala: la radio nazista con enorme sforzo produttivo raggiungeva milioni di persone in settimane; un singolo post virale può raggiungere miliardi in ore, a costo quasi zero. La tecnologia ha moltiplicato per miliardi di volte la portata degli stessi meccanismi — senza inventarne di nuovi.",
       "riferimento_principale": "📖 ESPLORA — Disinformazione come minaccia democratica (DM 183/2024, Traguardo D1)"

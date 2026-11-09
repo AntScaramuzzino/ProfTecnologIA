@@ -15,7 +15,7 @@
         },
         {
           "id": "b",
-          "testo": "Lo trasforma in un testo illeggibile (cifrato) che può essere decifrato solo con la chiave corretta",
+          "testo": "Lo rende illeggibile: si decifra solo con la chiave corretta",
           "corretto": true,
           "feedback": "Esatto! La crittografia trasforma il messaggio originale (testo in chiaro) in un testo cifrato (ciphertext) illeggibile per chi non possiede la chiave di decifratura. Solo chi ha la chiave corretta può ripristinare il messaggio originale."
         },
@@ -54,7 +54,7 @@
         },
         {
           "id": "c",
-          "testo": "Sostituisce ogni lettera con quella che si trova N posizioni più avanti nell'alfabeto",
+          "testo": "Sostituisce ogni lettera con quella N posizioni più avanti",
           "corretto": true,
           "feedback": "Esatto! Il cifrario di Cesare (usato da Giulio Cesare per le comunicazioni militari) sostituisce ogni lettera con quella che si trova N posizioni più avanti nell'alfabeto. Con N=3: A→D, B→E, C→F, Z→C (si ricomincia dall'inizio). Decifrare significa spostare indietro di N posizioni."
         },
@@ -147,7 +147,7 @@
         },
         {
           "id": "b",
-          "testo": "Alan Turing, costruendo la macchina 'Bombe' per trovare le impostazioni giornaliere di Enigma",
+          "testo": "Alan Turing, con la macchina 'Bombe' che cercava le impostazioni",
           "corretto": true,
           "feedback": "Esatto! Alan Turing (1912–1954) ha guidato il team di Bletchley Park che ha progettato la macchina 'Bombe', in grado di trovare le impostazioni giornaliere di Enigma. La sua contribuzione alla cripto-analisi di Enigma ha avuto un impatto decisivo sulla durata e sull'esito della Seconda Guerra Mondiale."
         },
@@ -180,7 +180,7 @@
         },
         {
           "id": "b",
-          "testo": "Una funzione che trasforma dati di qualsiasi dimensione in un output di lunghezza fissa, non invertibile",
+          "testo": "Trasforma qualsiasi dato in un codice di lunghezza fissa",
           "corretto": true,
           "feedback": "Esatto! Una funzione hash (es. SHA-256) prende dati di qualsiasi dimensione in input e produce sempre un output di lunghezza fissa (es. 256 bit per SHA-256). La funzione è non invertibile: dall'hash non si può ricavare l'input originale. Cambiare anche un solo bit dell'input cambia completamente l'hash."
         },
@@ -213,7 +213,7 @@
         },
         {
           "id": "b",
-          "testo": "Come trasmettere la chiave segreta al destinatario in modo sicuro senza che qualcuno la intercetti",
+          "testo": "Come far arrivare la chiave segreta senza che venga intercettata",
           "corretto": true,
           "feedback": "Esatto! Il problema della distribuzione delle chiavi: se mittente e destinatario devono condividere la stessa chiave segreta, come possono farlo su un canale non sicuro (come internet) senza che qualcuno la intercetti? Se qualcuno intercetta la chiave durante la trasmissione, può decifrare tutti i messaggi successivi."
         },
@@ -246,7 +246,7 @@
         },
         {
           "id": "b",
-          "testo": "A cifrare i messaggi che solo il proprietario della chiave privata corrispondente può decifrare",
+          "testo": "A cifrare messaggi che solo chi ha la chiave privata può decifrare",
           "corretto": true,
           "feedback": "Esatto! Nella crittografia asimmetrica: la chiave pubblica (condivisibile con tutti) serve per cifrare il messaggio; la chiave privata (segreta, solo del destinatario) serve per decifrarlo. Chiunque può inviare messaggi cifrati con la chiave pubblica, ma solo il proprietario della chiave privata può leggerli."
         },
@@ -312,7 +312,7 @@
         },
         {
           "id": "b",
-          "testo": "Si calcola l'hash del file ricevuto e lo si confronta con l'hash dichiarato dalla fonte originale",
+          "testo": "Si calcola l'hash del file e lo si confronta con quello dichiarato dalla fonte",
           "corretto": true,
           "feedback": "Esatto! Il produttore pubblica l'hash SHA-256 del file originale. Dopo il download, si calcola l'hash del file ricevuto: se i due hash coincidono, il file è identico all'originale (non corrotto né modificato). Anche un solo bit cambiato produce un hash completamente diverso."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Ha dimostrato come due parti possono concordare una chiave segreta su un canale pubblico, senza doversi incontrare fisicamente",
+          "testo": "Ha mostrato come concordare una chiave segreta su un canale pubblico",
           "corretto": true,
           "feedback": "Esatto! Prima di Diffie-Hellman (1976), due parti che volevano comunicare in modo sicuro dovevano incontrarsi fisicamente per scambiarsi la chiave segreta. Diffie-Hellman ha dimostrato che è matematicamente possibile concordare una chiave condivisa su un canale completamente pubblico, senza che un osservatore esterno possa calcolarla."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "Un meccanismo crittografico che prova che il documento è stato firmato dal proprietario della chiave privata e non è stato modificato",
+          "testo": "Un meccanismo che prova chi ha firmato il documento e che non è stato modificato",
           "corretto": true,
           "feedback": "Esatto! La firma digitale usa la chiave privata del firmatario per creare un 'sigillo' matematico sul documento. Chiunque con la chiave pubblica può verificare che: il documento è stato firmato dal proprietario della chiave privata (autenticità) e non è stato modificato dopo la firma (integrità)."
         },
@@ -411,7 +411,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché in un sistema con N utenti servirebbero N×(N-1)/2 chiavi segrete distinte, con un problema di distribuzione sicura impossibile da scalare",
+          "testo": "Perché ogni coppia di utenti avrebbe bisogno di una chiave diversa: sarebbero troppe da distribuire",
           "corretto": true,
           "feedback": "Esatto! Con N=1.000 utenti: 1000×999/2 = 499.500 chiavi. Con N=1 miliardo: circa 5×10¹⁷ chiavi. Ogni coppia di utenti avrebbe bisogno della propria chiave segreta, e tutte andrebbero distribuite in modo sicuro prima di comunicare. È un problema di scala insolvibile solo con crittografia simmetrica."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "Significa che il firmatario non può negare di aver creato la firma, perché solo lui possiede la chiave privata che l'ha generata",
+          "testo": "Che il firmatario non può negare la firma: solo lui possiede la chiave privata",
           "corretto": true,
           "feedback": "Esatto! Il non ripudio è una proprietà fondamentale della firma digitale: dato che solo il proprietario ha accesso alla chiave privata usata per firmare, non può in seguito sostenere che la firma è stata creata da qualcun altro. Questo la rende equiparabile alla firma autografa in termini legali."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "Quando si vuole che solo mittente e destinatario possano leggere i messaggi, escludendo anche il provider del servizio (es. WhatsApp, Telegram)",
+          "testo": "Quando nemmeno il fornitore del servizio deve poter leggere i messaggi",
           "corretto": true,
           "feedback": "Esatto! HTTPS cifra la comunicazione tra utente e server del provider — ma il provider stesso può leggere i messaggi in chiaro sul suo server. La crittografia end-to-end (E2E) cifra i messaggi sul dispositivo del mittente e li decifra solo sul dispositivo del destinatario: nemmeno il provider può leggerli."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché è vulnerabile ad attacchi rainbow table: un attaccante può precalcolare gli hash delle password comuni e confrontarli con quelli nel database",
+          "testo": "Perché gli hash delle password comuni si possono calcolare in anticipo",
           "corretto": true,
           "feedback": "Esatto! Una rainbow table è un dizionario precompilato che mappa password comuni nei loro hash. Senza salting, se due utenti hanno la stessa password, hanno lo stesso hash — e l'attaccante può trovare la password in secondi cercando l'hash nella rainbow table. Il salting aggiunge un valore casuale unico per ogni utente prima di calcolare l'hash."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché l'algoritmo di Shor, eseguibile su computer quantistici, fattorizza efficientemente numeri grandi in tempo polinomiale",
+          "testo": "Perché un algoritmo quantistico (di Shor) scompone in fattori i numeri grandi in tempi brevi",
           "corretto": true,
           "feedback": "Esatto! L'algoritmo di Shor (1994) dimostra che un computer quantistico sufficientemente potente può fattorizzare numeri grandi in tempo polinomiale — molto più velocemente di qualsiasi algoritmo classico conosciuto. Questo minerebbe la sicurezza di RSA, che si basa proprio sulla difficoltà della fattorizzazione per i computer classici."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "HTTPS protegge il dato durante la trasmissione (da browser a server), ma non protegge dai rischi sul server dell'azienda",
+          "testo": "HTTPS protegge il dato durante il viaggio, ma non dai rischi sul server dell'azienda",
           "corretto": true,
           "feedback": "Esatto! HTTPS cifra la comunicazione tra il browser dell'utente e il server dell'azienda — nessuno che intercetti il traffico di rete può leggere il numero di carta. Ma una volta arrivato al server, il dato deve essere protetto da altre misure: cifratura del database, controllo degli accessi, conformità PCI-DSS, gestione sicura delle credenziali dei dipendenti."
         },

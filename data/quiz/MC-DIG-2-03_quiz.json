@@ -52,7 +52,7 @@
         },
         {
           "id": "b",
-          "testo": "[ANNO-MESE-GIORNO]_[materia]_[argomento]_[versione opzionale] — es. 2026-03-15_tecnologia_relazione-energia_v01.docx",
+          "testo": "[ANNO-MESE-GIORNO]_[materia]_[argomento] — es. 2026-03-15_tecnologia_energia.docx",
           "corretto": true,
           "feedback": "Esatto! Questo formato garantisce ordinamento cronologico automatico, identifica materia e argomento, e permette la gestione delle versioni senza la 'final syndrome'."
         },
@@ -124,7 +124,7 @@
         },
         {
           "id": "b",
-          "testo": "I cookie tecnici permettono al sito di funzionare (login, carrello); quelli di terze parti seguono la navigazione su più siti per costruire un profilo pubblicitario",
+          "testo": "I tecnici fanno funzionare il sito; quelli di terze parti ti seguono su più siti per profilarti",
           "corretto": true,
           "feedback": "Esatto! I cookie tecnici (necessari) ricordano che sei loggato o cosa hai messo nel carrello. I cookie di terze parti provengono da aziende pubblicitarie e tracciano il comportamento su molti siti."
         },
@@ -160,7 +160,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché se devi ricordarti manualmente di farlo, lo dimenticherai esattamente la sera prima che il computer si rompa",
+          "testo": "Perché quello manuale prima o poi ti dimentichi di farlo",
           "corretto": true,
           "feedback": "Esatto! Il testo lo dice chiaramente: 'Il backup deve essere automatico o non viene fatto.' Gli strumenti come Time Machine (Mac) o Cronologia file (Windows) lavorano in background senza richiedere azioni."
         },
@@ -196,7 +196,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché tra sei mesi non ricorderai 'finale' rispetto a cosa, e accumulerai versioni come 'relazione DEFINITIVA vera2 usare questa'",
+          "testo": "Perché dopo qualche mese non saprai più quale 'finale' è davvero l'ultimo",
           "corretto": true,
           "feedback": "Esatto! Il testo descrive la 'final syndrome': proliferazione di file con nomi come 'definitivo', 'finale', 'usare questo'. La soluzione è usare numeri di versione (_v01, _v02) e aggiungere _CONSEGNATO alla versione finale."
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "In un anno scolastico con 200 giorni di studio, si perdono circa 50-66 ore solo cercando file — quasi 2 settimane di lavoro",
+          "testo": "In un anno si perdono decine di ore solo a cercare file",
           "corretto": true,
           "feedback": "Esatto! Il testo quantifica: 'Giulia perde in media 15-20 minuti a sessione cercando file. In un anno scolastico sono ore.' Un sistema organizzato è un investimento di tempo che si ripaga subito."
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché è una struttura gerarchica in cui ogni cartella ha un solo nodo padre e può avere zero o più figli (sottocartelle o file)",
+          "testo": "Perché è una gerarchia: ogni cartella ha un solo padre e può avere più figli",
           "corretto": true,
           "feedback": "Esatto! Un albero matematico ha esattamente questa struttura: ogni nodo ha un solo padre (eccetto la radice) e può avere più figli. 'Documenti → Scuola → Tecnologia' ha profondità 2."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché se devi cliccare più di tre volte per arrivare a un file, la struttura è troppo profonda e difficile da navigare",
+          "testo": "Perché oltre i tre clic la struttura diventa troppo profonda da percorrere",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Se devi cliccare più di tre volte per arrivare a un file, la struttura è troppo profonda.' Documenti → Scuola → Tecnologia è già tre livelli."
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Non salva cronologia, cookie e password sul dispositivo; ma i file scaricati esistono sul disco e la navigazione è visibile al provider internet",
+          "testo": "Non salva cronologia e cookie, ma i file scaricati restano e il provider vede tutto",
           "corretto": true,
           "feedback": "Esatto! La modalità privata (Ctrl+Shift+N in Chrome) non salva cronologia, cookie e password. Ma i file scaricati esistono sul disco e la navigazione è visibile al provider di rete."
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché nel 90% dei casi il software contiene malware che si installa silenziosamente insieme al programma voluto",
+          "testo": "Perché molto spesso contiene malware che si installa insieme al programma",
           "corretto": true,
           "feedback": "Esatto! Il testo avverte: 'Non scaricare mai programmi da siti di download gratuiti che offrono versioni craccate: il 90% dei casi il programma contiene malware che si installa silenziosamente.'"
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché la maggior parte degli aggiornamenti corregge vulnerabilità di sicurezza che i criminali informatici possono sfruttare",
+          "testo": "Perché molti aggiornamenti correggono falle che i criminali possono sfruttare",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Rimandare gli aggiornamenti per settimane è come lasciare una finestra rotta nel tuo appartamento: prima o poi qualcuno ci entra.'"
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Git registra ogni modifica a ogni file con chi l'ha fatta e quando, permettendo di tornare a qualsiasi versione precedente senza moltiplicare file con nomi diversi",
+          "testo": "Git registra ogni modifica, con autore e data, e permette di tornare a qualsiasi versione",
           "corretto": true,
           "feedback": "Esatto! Con Git non servono 'relazione_v01', 'relazione_v02'... Git mantiene un registro completo delle modifiche. Si torna indietro nel tempo invece di avere file duplicati."
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Il problema è la mancanza di un sistema condiviso: lavorare su copie locali divergenti crea versioni incompatibili. La soluzione è un documento condiviso su cloud (Google Docs) con accesso simultaneo",
+          "testo": "Il problema sono le copie separate che divergono. La soluzione è un unico documento condiviso online",
           "corretto": true,
           "feedback": "Esatto! Il testo descrive questo scenario: versioni divergenti su dispositivi separati senza un punto centralizzato. La soluzione è lavorare sullo stesso documento cloud condiviso in tempo reale."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "Gli SSD non hanno parti meccaniche e sono più veloci, ma ogni cella può essere scritta e cancellata un numero limitato di volte (1.000-10.000 cicli)",
+          "testo": "Gli SSD sono più veloci e senza parti meccaniche, ma le celle reggono un numero limitato di scritture",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Gli SSD memorizzano i dati come cariche elettriche in celle di silicio. Ogni cella può essere scritta e cancellata un numero limitato di volte (tipicamente 1.000-10.000 cicli).'"
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Il file diventa accessibile a chiunque ottenga quel link, anche tramite forward accidentale o condivisione non autorizzata da parte di chi lo ha ricevuto",
+          "testo": "Chiunque ottenga quel link può aprire il file, anche se inoltrato per sbaglio",
           "corretto": true,
           "feedback": "Esatto! Il testo avverte: 'quando condividi con chiunque abbia il link, quel file diventa accessibile a chiunque ottenga quel link — anche chi non conosci.' Il link può essere inoltrato."
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché separa il flusso di download (caotico per natura) dall'archivio organizzato, e una pulizia settimanale previene l'accumulo di centinaia di file non catalogati",
+          "testo": "Perché separa i download, caotici, dall'archivio ordinato, e una pulizia settimanale evita gli accumuli",
           "corretto": true,
           "feedback": "Esatto! Il testo raccomanda 'Download-da-ordinare' come punto di transito che si svuota ogni settimana. Il temporaneo che diventa permanente nella cartella Download è uno dei problemi più comuni."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Il tempo perso cercando file (ore in un anno), il costo dello stress, il rischio di perdita di dati importanti, e il costo potenziale di recupero o ricostruzione del lavoro perso",
+          "testo": "Il tempo perso a cercare, lo stress, il rischio di perdere dati e di rifare il lavoro",
           "corretto": true,
           "feedback": "Esatto! Il testo quantifica le differenze tra Giulia e Marco: tempo perso (15-20 min per sessione = ore in un anno), stress da consegna, rischio totale di perdita dati senza backup."
         },

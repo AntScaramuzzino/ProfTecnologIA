@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Primario (agricoltura, estrazione), secondario (industria manifatturiera), terziario (servizi)",
+          "testo": "Primario, secondario e terziario",
           "corretto": true,
           "feedback": "Esatto! La teoria economica classica divide le attività in: settore primario (estrae/raccoglie risorse naturali), secondario (trasforma in prodotti), terziario (produce servizi immateriali)."
         },
@@ -42,7 +42,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La somma del valore di tutti i beni e servizi prodotti in un paese in un anno",
+          "testo": "Il valore di tutti i beni e servizi prodotti in un anno",
           "corretto": true,
           "feedback": "Esatto! Il PIL misura l'attività economica totale di un paese in un anno, sommando il valore di tutto ciò che viene prodotto: beni manufatti, servizi, costruzioni, ecc."
         },
@@ -108,7 +108,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'aumento generale del livello dei prezzi nel tempo, che riduce il potere d'acquisto se i salari non aumentano proporzionalmente",
+          "testo": "L'aumento generale dei prezzi, che riduce il potere d'acquisto",
           "corretto": true,
           "feedback": "Esatto! L'inflazione è l'aumento generale dei prezzi nel tempo. Se i prezzi aumentano del 5% e il salario rimane invariato, si compra il 5% in meno: il potere d'acquisto diminuisce."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Marketing, brand e rivenditore finale (che insieme prendono circa 2,50-4,50 euro sui 5,99 totali)",
+          "testo": "Marchio e rivenditore finale, che incassano la quota più alta del prezzo",
           "corretto": true,
           "feedback": "Esatto! Marketing/brand cattura 1,00-2,00 euro e il rivenditore 1,50-2,50 euro. Insieme rappresentano la quota maggiore del prezzo finale. Il cucitore a Dhaka guadagna meno di 0,05 euro."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un cucitore italiano lavorerebbe 4-5 ore a parità di paga mensile di un lavoratore bangladeshi: la differenza è di circa 50-100 volte il costo orario",
+          "testo": "Un'ora di lavoro in Italia costa decine di volte più che in Bangladesh: un divario enorme",
           "corretto": true,
           "feedback": "Esatto! 95 euro/mese in Bangladesh. In Italia con 18-22 euro/ora: 95/18 ≈ 5 ore di lavoro italiano per raggiungere uno stipendio mensile bangladeshi. La differenza di costo orario è di fattore 50-100 (18-22 euro/h in Italia vs ~0,47 euro/h in Bangladesh con 25 giorni × 8 ore)."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché il PIL misura l'attività economica (necessaria ma non sufficiente per valutare il benessere) mentre il BES misura dimensioni che il PIL non cattura: salute, sicurezza, ambiente, relazioni sociali",
+          "testo": "Perché il BES misura ciò che il PIL non coglie: salute, sicurezza, ambiente, relazioni",
           "corretto": true,
           "feedback": "Esatto! Il PIL e il BES misurano cose diverse: il PIL misura la produzione economica, il BES misura 12 dimensioni di benessere. Non si escludono: entrambi sono utili per capire lo stato di un paese."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Tramite la propagazione attraverso la catena produttiva: energia più cara → trasporti più cari → prezzi di produzione e distribuzione più alti → prezzi al consumatore più alti in tutti i settori",
+          "testo": "A catena: energia più cara, trasporti e produzione più cari, prezzi finali più alti ovunque",
           "corretto": true,
           "feedback": "Esatto! L'energia entra in ogni fase della produzione e distribuzione: le fabbriche usano energia per produrre, i camion usano carburante per trasportare, i negozi usano energia per funzionare. Un aumento dell'energia si propaga attraverso tutta la catena del valore, aumentando i prezzi finali in quasi tutti i settori."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le fasi che richiedono solo lavoro non qualificato si delocalizzano facilmente nei paesi a basso costo; le fasi che richiedono reputazione, accesso ai mercati e know-how specifico (il brand) non possono essere spostate",
+          "testo": "Il lavoro poco qualificato si sposta facilmente dove costa meno; reputazione e marchio non si spostano",
           "corretto": true,
           "feedback": "Esatto! Il cucito richiede lavoro non qualificato + macchine: si può delocalizzare ovunque ci sia manodopera a basso costo. Il brand richiede: reputazione costruita nel tempo, accesso ai mercati, design, comunicazione, relazioni con i rivenditori — tutte competenze non delocalizzabili geograficamente."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Quando l'obiettivo è creare valore condiviso per i lavoratori e la comunità locale, non massimizzare il profitto per azionisti esterni",
+          "testo": "Quando lo scopo è creare valore per lavoratori e comunità, non per azionisti esterni",
           "corretto": true,
           "feedback": "Esatto! Le cooperative sono vantaggiose quando: i lavoratori hanno interessi di lungo termine nel territorio (non escono se il costo del lavoro aumenta), quando l'obiettivo è la stabilità occupazionale e la distribuzione equa del valore aggiunto, quando i servizi da produrre hanno forte vocazione locale (cooperative sociali, cooperative agricole)."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il limite della distribuzione: due paesi con PIL identico possono avere livelli di benessere molto diversi se in uno la ricchezza è distribuita equamente e nell'altro è concentrata nel 5% della popolazione",
+          "testo": "La distribuzione: con lo stesso PIL, il benessere cambia molto se la ricchezza è concentrata in pochi",
           "corretto": true,
           "feedback": "Esatto! Per confrontare il benessere tra paesi con PIL simile, il limite più rilevante è la distribuzione. L'indice di Gini misura questa distribuzione: due paesi con stesso PIL ma Gini diverso (0,25 vs 0,50) hanno livelli di benessere diffuso molto diversi."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il prezzo di mercato non riflette il costo sociale e ambientale totale della produzione: un prodotto economico può avere costi nascosti che ricadono su terzi (lavoratori sfruttati, ecosistemi inquinati) non inclusi nel prezzo",
+          "testo": "Il prezzo non comprende i costi sociali e ambientali, che ricadono su altri",
           "corretto": true,
           "feedback": "Esatto! Il 'costo esternalizzato' è la definizione economica di esternalità negativa: costi che ricadono su chi non ha partecipato alla transazione (lavoratori, comunità locali, ambiente). Un prodotto che 'costa poco' può avere costi totali molto più alti che non compaiono nel prezzo."
         },
@@ -438,7 +438,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le banche americane avevano distribuito il rischio dei mutui ad alto rischio globalmente attraverso prodotti finanziari complessi (CDO, MBS): quando i mutui sono andati in default, il collasso si è diffuso alle banche di tutto il mondo",
+          "testo": "Le banche avevano diffuso nel mondo il rischio di quei mutui con prodotti finanziari complessi",
           "corretto": true,
           "feedback": "Esatto! Le banche americane avevano 'impacchettato' i mutui ad alto rischio in prodotti finanziari (CDO, MBS) venduti globalmente. Quando i default sui mutui sono iniziati, il valore di questi prodotti è crollato ovunque: le banche europee, asiatiche, americane hanno subito perdite simultaneamente."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'automazione non riguarda più solo i lavori manuali ripetitivi ma anche i lavori cognitivi routinari (analisi di documenti, inserimento dati, compiti contabili standard): la qualificazione non protegge se il lavoro è routinario",
+          "testo": "L'automazione tocca anche i lavori cognitivi ripetitivi: la qualifica non protegge se il compito è di routine",
           "corretto": true,
           "feedback": "Esatto! La prima ondata di automazione (robot industriali) ha sostituito lavori fisici ripetitivi. L'IA ora automatizza anche lavori cognitivi routinari: analisi legale di contratti, diagnosi medica standardizzata, contabilità di routine. Non è più vero che 'lavoro qualificato = sicuro dall'automazione'."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un paese può essere grande in valore assoluto (PIL alto) ma stagnante in dinamica (crescita bassa): il stock di ricchezza accumulato non garantisce la capacità di generarne di nuova, se le strutture produttive non si rinnovano",
+          "testo": "Un Paese può avere molta ricchezza accumulata ma faticare a crearne di nuova",
           "corretto": true,
           "feedback": "Esatto! L'Italia ha un grande stock di ricchezza (PIL alto in valore assoluto) ma problemi strutturali che impediscono la crescita: bassa produttività, sistema educativo non allineato con il mercato del lavoro, burocrazia, peso del debito pubblico. PIL alto e crescita lenta coesistono quando le strutture produttive non si rinnovano."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il pensiero sistemico: la capacità di vedere come le scelte di un'azienda si collegano alle condizioni di lavoro in un paese lontano e agli impatti ambientali lungo tutta la catena",
+          "testo": "Il pensiero sistemico: vedere come le scelte di un'azienda incidono lungo tutta la catena",
           "corretto": true,
           "feedback": "Esatto! Il Supply Chain Sustainability Analyst deve vedere le connessioni tra decisioni aziendali (scelta del fornitore), condizioni di lavoro (Bangladesh, Congo), impatti ambientali (fiumi, deforestazione), reputazione aziendale, e normative (CSDD). È un ruolo che richiede pensiero sistemico per connettere fenomeni apparentemente distanti."
         },

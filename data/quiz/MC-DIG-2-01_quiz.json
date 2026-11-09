@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Dividere un problema grande in sottoproblemi più piccoli, ciascuno risolvibile separatamente",
+          "testo": "Dividere un problema grande in sottoproblemi più piccoli",
           "corretto": true,
           "feedback": "Esatto! La decomposizione è la prima strategia del pensiero computazionale: si scompone 'costruire un quiz interattivo' in 'mostrare la domanda', 'controllare la risposta', 'aggiornare il punteggio'."
         },
@@ -88,7 +88,7 @@
         },
         {
           "id": "b",
-          "testo": "Un contenitore con un nome che conserva un valore che può cambiare durante l'esecuzione",
+          "testo": "Un contenitore con un nome, il cui valore può cambiare",
           "corretto": true,
           "feedback": "Esatto! La variabile 'punteggio' parte da 0 e aumenta di 1 a ogni risposta corretta. Il valore cambia, ma il nome rimane lo stesso."
         },
@@ -124,7 +124,7 @@
         },
         {
           "id": "b",
-          "testo": "L'area dove si vede l'esecuzione del programma, con i personaggi che si muovono",
+          "testo": "L'area dove si vede il programma in esecuzione",
           "corretto": true,
           "feedback": "Esatto! Lo stage è il 'palcoscenico' di Scratch: l'area a destra dove si vede il programma in funzione, con gli sprite che si muovono e le immagini che appaiono."
         },
@@ -160,7 +160,7 @@
         },
         {
           "id": "b",
-          "testo": "Sequenza, selezione (if/else) e iterazione (ciclo)",
+          "testo": "Sequenza, selezione e iterazione",
           "corretto": true,
           "feedback": "Esatto! Qualsiasi programma — dal sistema operativo a un videogioco — è costruito combinando solo queste tre strutture: sequenza (istruzioni in ordine), selezione (if/else), iterazione (ciclo)."
         },
@@ -196,7 +196,7 @@
         },
         {
           "id": "b",
-          "testo": "Permette a uno sprite di inviare un messaggio a tutti gli altri sprite per coordinarsi",
+          "testo": "Fa inviare a uno sprite un messaggio a tutti gli altri",
           "corretto": true,
           "feedback": "Esatto! Il broadcast permette a sprite diversi di comunicare: quando una domanda viene risposta, lo sprite della domanda manda un broadcast 'prossima_domanda' e lo sprite del punteggio risponde."
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "Lo stesso codice (struttura if + domanda_corrente) funziona per tutte le domande: cambiando le liste si aggiunge o modifica il quiz senza riscrivere il codice",
+          "testo": "Lo stesso codice vale per tutte le domande: basta cambiare le liste",
           "corretto": true,
           "feedback": "Esatto! Con le liste, lo script è sempre lo stesso: 'mostra elemento n di domande', 'confronta risposta con elemento n di risposte_corrette'. Aggiungere una domanda significa solo aggiungere un elemento alle liste."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "L'errore di sintassi non segue le regole del linguaggio e blocca l'esecuzione; l'errore logico permette l'esecuzione ma produce risultati sbagliati",
+          "testo": "L'errore di sintassi blocca il programma; l'errore logico lo lascia girare ma dà risultati sbagliati",
           "corretto": true,
           "feedback": "Esatto! In Scratch gli errori di sintassi sono quasi impossibili (i blocchi si incastrano solo se compatibili). Gli errori logici sono quelli difficili: il programma gira ma fa la cosa sbagliata."
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Iterazione (ciclo/loop)",
+          "testo": "Iterazione (ciclo)",
           "corretto": true,
           "feedback": "Esatto! 'Per ogni video guardato dall'utente' è un ciclo che itera su una lista. Il testo mostra come l'algoritmo di YouTube sia costruito con cicli, selezioni e operazioni su variabili."
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "La variabile funge da indice: 'elemento domanda_corrente della lista domande' mostra la domanda nella posizione corrente",
+          "testo": "La variabile fa da indice: indica quale posizione della lista leggere",
           "corretto": true,
           "feedback": "Esatto! 'domanda_corrente' parte da 1 e aumenta di 1 dopo ogni domanda. 'Mostra elemento 3 della lista domande' mostra la terza domanda. È un accesso per indice."
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "Una selezione (if/else) che controlla se 'risposte_corrette_blocco1 >= 2' e sceglie la lista avanzata o quella di base",
+          "testo": "Una selezione (if/else) che controlla il punteggio e sceglie la lista",
           "corretto": true,
           "feedback": "Esatto! Il quiz adattivo usa una selezione: 'se risposte_corrette_blocco1 >= 2 allora usa domande_avanzate, altrimenti usa domande_base'. È logica if/else applicata all'adattività."
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Tende a mostrare contenuti che tengono l'utente sul sito più a lungo, che possono includere contenuti sensazionalistici o di nicchia, influenzando ciò che vede e pensa",
+          "testo": "Mostra ciò che trattiene di più l'utente, anche se sensazionalistico, e ne orienta le idee",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'chi decide cosa finisce nella lista dei candidati... sono decisioni che determinano cosa ti viene mostrato, cosa non ti viene mostrato, e indirettamente cosa impari e cosa pensi.'"
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Attivare la visualizzazione della variabile 'risposta_utente' sullo stage durante l'esecuzione e verificare se contiene il valore atteso al momento della selezione if/else",
+          "testo": "Mostrare la variabile 'risposta_utente' sullo stage e controllare che valore contiene",
           "corretto": true,
           "feedback": "Esatto! Il testo suggerisce: 'verifica i valori delle variabili: attiva la visualizzazione delle variabili sullo stage.' Vedere il valore di 'risposta_utente' rivela se il confronto with risposta_corretta funziona."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "Il pensiero algoritmico ha radici profonde nella matematica islamica medievale, e le sue opere hanno introdotto in Europa anche il sistema di numerazione decimale che usiamo oggi",
+          "testo": "Il pensiero algoritmico ha radici antiche, nella matematica del mondo islamico",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'La parola algoritmo viene dal matematico persiano al-Khwarizmi. Le sue opere hanno introdotto in Europa il concetto di algoritmo e il sistema di numerazione decimale.'"
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché spiegare perché una risposta è sbagliata aiuta lo studente a correggere l'errore di comprensione, trasformando il quiz da test di memoria a strumento di apprendimento",
+          "testo": "Perché capire dove si è sbagliato trasforma il quiz in uno strumento per imparare",
           "corretto": true,
           "feedback": "Esatto! Il testo dello scenario dice: 'il professore vuole qualcosa che aiuti chi sbaglia a capire perché la risposta era sbagliata.' Un quiz senza feedback è solo valutazione, non apprendimento."
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché da quella falena trovata nel relè del computer Mark II nasce il termine 'bug' per indicare un errore nel codice o nell'hardware",
+          "testo": "Perché da quella falena, trovata dentro un computer, nasce l'uso del termine 'bug'",
           "corretto": true,
           "feedback": "Esatto! Grace Hopper incollò la falena al registro di bordo scrivendo 'First actual case of bug being found.' Da quel giorno un errore in un programma si chiama bug."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché mancano i test per i casi limite (punteggio 0, punteggio massimo) e i casi di risposta sbagliata o vuota, che potrebbero rivelare bug non visibili con solo risposte corrette",
+          "testo": "Perché non prova le risposte sbagliate o vuote e i casi limite, dove si nascondono i bug",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'testa sempre il tuo programma con casi diversi: il caso normale, il caso limite, e i casi sbagliati (es. cosa succede se l'utente non scrive nulla e preme invio).'"
         },

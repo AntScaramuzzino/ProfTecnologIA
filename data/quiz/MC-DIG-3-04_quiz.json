@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Web Content Accessibility Guidelines: le linee guida internazionali per rendere i contenuti web accessibili a persone con diverse abilità",
+          "testo": "Web Content Accessibility Guidelines: linee guida per rendere il web accessibile a tutti",
           "corretto": true,
           "feedback": "Esatto! WCAG è prodotto dal W3C (World Wide Web Consortium). La versione attuale è la 2.1; la 2.2 è entrata in vigore nel 2023. Stabilisce requisiti organizzati attorno ai 4 principi POUR."
         },
@@ -52,7 +52,7 @@
         },
         {
           "id": "b",
-          "testo": "L'interfaccia deve poter essere usata con qualsiasi periferica di input: tastiera, switch esterno, controllo vocale — non solo con il mouse",
+          "testo": "L'interfaccia deve funzionare con qualsiasi ingresso: tastiera, voce, non solo mouse",
           "corretto": true,
           "feedback": "Esatto! Chi ha tremori alle mani non può usare il mouse con precisione. Chi ha lesioni agli arti usa uno switch o il controllo vocale. La navigazione da tastiera (Tab, Invio, frecce) è il test minimo."
         },
@@ -88,7 +88,7 @@
         },
         {
           "id": "b",
-          "testo": "Un approccio progettuale che considera la diversità umana come punto di partenza, producendo soluzioni che beneficiano tutti (non solo le persone con disabilità)",
+          "testo": "Progettare partendo dalla diversità delle persone, con soluzioni utili a tutti",
           "corretto": true,
           "feedback": "Esatto! L'esempio classico: le rampe per carrozzine vengono usate anche da persone con passeggini, valigie a rotelle, biciclette. I sottotitoli servono ai sordi ma anche a chi guarda video in luoghi rumorosi."
         },
@@ -124,7 +124,7 @@
         },
         {
           "id": "b",
-          "testo": "Uno strumento gratuito che analizza qualsiasi pagina web e mostra visivamente ogni problema di accessibilità con errori, avvisi e elementi corretti",
+          "testo": "Uno strumento gratuito che analizza una pagina web e ne mostra i problemi di accessibilità",
           "corretto": true,
           "feedback": "Esatto! WAVE è un'estensione del browser o sito web. Analizza una pagina e mostra: errori gravi (rosso), avvisi (giallo), elementi corretti (verde). Comprensibile anche senza formazione tecnica."
         },
@@ -160,7 +160,7 @@
         },
         {
           "id": "b",
-          "testo": "La Direttiva EU 2019/882, in vigore in Italia dal giugno 2025, che estende l'obbligo di accessibilità anche alle aziende private con più di 10 dipendenti o fatturato > 2 milioni di euro",
+          "testo": "La direttiva europea che dal giugno 2025 estende l'obbligo di accessibilità alle aziende private",
           "corretto": true,
           "feedback": "Esatto! Prima era solo per la pubblica amministrazione. Dal giugno 2025, app, siti di e-commerce, sportelli bancari online, biglietterie digitali e e-book devono essere accessibili anche se gestiti da aziende private."
         },
@@ -196,7 +196,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché chi naviga con uno screen reader sente solo 'clicca qui, clicca qui, clicca qui' senza capire dove portano i link — non c'è informazione sulla destinazione",
+          "testo": "Perché chi usa uno screen reader sente solo 'clicca qui' e non sa dove porta il link",
           "corretto": true,
           "feedback": "Esatto! Il testo descrive questa situazione: 'uno screen reader che legge tutti i link della pagina sente solo clicca qui, clicca qui, clicca qui — senza capire dove conducono.'"
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "Si chiama 'keyboard trap' (trappola da tastiera) e esclude chi usa solo la tastiera: persone con disabilità motorie, utenti di screen reader, chi non può usare il mouse",
+          "testo": "Si chiama 'keyboard trap' ed esclude chi naviga solo con la tastiera",
           "corretto": true,
           "feedback": "Esatto! Il testo della SPERIMENTA Intermedio chiede di identificare 'elementi trappola: punti dove il Tab rimane bloccato e non riesci a uscire.' È un criterio di successo WCAG 2.1.2."
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché lo screen reader legge la struttura semantica (HTML), non l'aspetto visivo: un <button> viene annunciato come 'pulsante', un <div> viene ignorato — la tecnologia assistiva non sa cosa è cliccabile",
+          "testo": "Perché lo screen reader legge la struttura HTML: annuncia un <button>, ignora un <div>",
           "corretto": true,
           "feedback": "Esatto! Il principio R (Robusto) richiede che il contenuto funzioni con tecnologie assistive attuali e future. Lo screen reader legge i tag HTML — un <div> con stile cliccabile sembra un bottone visivamente, ma non viene annunciato come tale."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "Circa il 15% della popolazione mondiale ha qualche forma di disabilità (OMS), ma a questi si aggiungono anziani, utenti in condizioni difficili (luce solare, mano singola) — potenzialmente la maggioranza degli utenti",
+          "testo": "Circa il 15% delle persone ha una disabilità, ma ne beneficiano anche anziani e chi usa il telefono in condizioni difficili",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'La vera domanda non è quante persone hanno una disabilità riconosciuta. È quante persone stanno usando questo sito in condizioni diverse da quelle in cui è stato progettato.'"
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché la Legge Stanca (L. 4/2004) obbliga le pubbliche amministrazioni a rendere accessibili i propri siti, obbligo esteso dalla Direttiva Europea 2016/2102",
+          "testo": "Perché la Legge Stanca (L. 4/2004) impone alle pubbliche amministrazioni siti accessibili",
           "corretto": true,
           "feedback": "Esatto! La Legge Stanca obbliga le PA italiane. La Direttiva Europea 2016/2102 lo estende a livello europeo. I siti scolastici devono avere una 'dichiarazione di accessibilità' pubblicata."
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché una rampa laterale aggiunta dopo è più costosa, meno efficace, e comunica che le persone con disabilità usano l'ingresso secondario — lo stesso vale in digitale",
+          "testo": "Perché una rampa aggiunta dopo costa di più, funziona peggio e relega a un ingresso secondario: vale anche nel digitale",
           "corretto": true,
           "feedback": "Esatto! Il testo usa l'analogia fisica: 'aggiungere una rampa laterale dopo è più costoso, meno efficace, e spesso esprime ancora l'idea che la persona con disabilità debba usare l'ingresso secondario.'"
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "Vengono escluse le persone che usano screen reader (ciechi, ipovedenti gravi); la correzione è aggiungere una descrizione testuale all'immagine che spieghi cosa mostra",
+          "testo": "Esclude chi usa uno screen reader; si corregge aggiungendo una descrizione testuale dell'immagine",
           "corretto": true,
           "feedback": "Esatto! La tabella del livello BASE associa 'immagine senza alt text' a 'persone che usano screen reader'. La correzione: aggiungere alt text descrittivo. Nel CMS richiede 30 secondi."
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Viola il principio P (Percepibile), criterio 1.4.1: l'uso del solo colore non basta per trasmettere informazioni, escludendo circa il 4,5-8% della popolazione maschile con daltonismo",
+          "testo": "Viola il principio P (Percepibile): il solo colore non basta, ed esclude chi è daltonico",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'un sito che usa solo colori per distinguere elementi importanti è inaccessibile per circa il 4,5% della popolazione maschile che ha daltonismo.' Non basta il colore: serve anche testo, icone o pattern."
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Significa che per ogni problema identificato si fornisce: la descrizione, chi viene escluso e come, la correzione tecnica con stima di complessità, e il riferimento WCAG specifico",
+          "testo": "Per ogni problema indicare chi viene escluso, la correzione tecnica e il riferimento WCAG",
           "corretto": true,
           "feedback": "Esatto! Il livello Avanzato chiede esattamente questa struttura: problema → chi esclude → correzione tecnica (facile/complessa) → riferimento WCAG. Un report propositivo offre soluzioni, non solo diagnosi."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché un modello AI che genera codice HTML non include automaticamente alt text, struttura semantica o navigazione da tastiera — a meno che non sia stato addestrato con questi obiettivi e non venga esplicitamente richiesto",
+          "testo": "Perché l'IA non aggiunge alt text e struttura accessibile se nessuno glielo chiede",
           "corretto": true,
           "feedback": "Esatto! Il collegamento finale dice: 'Un modello IA che genera un sito web non sa che le immagini hanno bisogno di alt text — a meno che non gli sia stato chiesto. La responsabilità dell'accessibilità non si delega all'IA: resta una scelta progettuale umana.'"
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Viola il suo diritto di accesso alle comunicazioni scolastiche ufficiali e alla partecipazione alla vita della scuola — un sito inaccessibile non è solo scomodo: viola un diritto sancito dalla Convenzione ONU e dalla legislazione europea",
+          "testo": "Viola il suo diritto di accedere alle comunicazioni della scuola, tutelato da norme ONU ed europee",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Un sito inaccessibile non è solo scomodo: viola un diritto. La Convenzione ONU (Art. 9) e la Carta dei Diritti UE (Art. 8) garantiscono l'accesso alle tecnologie dell'informazione come diritto fondamentale.'"
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "È problematico per persone con bassa visione, daltonici, anziani, e chiunque legga in condizioni di luce difficile (luce solare diretta sullo schermo) — il contrasto insufficiente rende il testo illeggibile",
+          "testo": "È un problema per ipovedenti, anziani e chiunque legga in piena luce: il testo diventa illeggibile",
           "corretto": true,
           "feedback": "Esatto! Il principio P (Percepibile) delle WCAG richiede contrasto minimo 4,5:1 per il testo normale. Il grigio chiaro su bianco spesso non raggiunge questa soglia ed è molto difficile da leggere con bassa visione o in piena luce."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché l'inaccessibilità digitale crea una disuguaglianza sistematica: chi non può accedere ai servizi pubblici online è svantaggiato rispetto a chi può — rendere i siti accessibili è un prerequisito per la partecipazione democratica",
+          "testo": "Perché chi non riesce a usare i servizi pubblici online resta escluso: l'accessibilità riduce questa disuguaglianza",
           "corretto": true,
           "feedback": "Esatto! Il testo del Badge SDG 10 dice: 'L'inaccessibilità digitale è una delle disuguaglianze più invisibili. Chi non può accedere ai servizi digitali è sistematicamente svantaggioso rispetto a chi può. Rendere accessibili i siti pubblici è un prerequisito per la partecipazione democratica.'"
         },
