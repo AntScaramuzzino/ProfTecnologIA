@@ -1,0 +1,114 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:03.160
+Come arriva un messaggio
+dall'altra parte del mondo?
+
+2
+00:00:03.690 --> 00:00:06.820
+Internet non è una sola rete:
+è una rete di reti.
+
+3
+00:00:08.250 --> 00:00:12.460
+Per far comunicare reti diverse serve
+una lingua comune: il protocollo.
+
+4
+00:00:12.990 --> 00:00:16.630
+Per Internet è TCP/IP:
+due protocolli che lavorano insieme.
+
+5
+00:00:17.043 --> 00:00:19.953
+IP assegna a ogni dispositivo
+un indirizzo unico:
+
+6
+00:00:19.983 --> 00:00:23.933
+quattro numeri da 0 a 255,
+separati da punti.
+
+7
+00:00:24.326 --> 00:00:27.806
+Gli indirizzi IPv4 sono
+circa 4,3 miliardi,
+
+8
+00:00:27.826 --> 00:00:32.836
+esauriti nel 2011:
+per questo si passa a IPv6, a 128 bit.
+
+9
+00:00:33.275 --> 00:00:38.225
+I dati vengono divisi in pacchetti:
+blocchi da pochi byte fino a 1.500 byte.
+
+10
+00:00:38.654 --> 00:00:41.684
+Ogni pacchetto porta gli indirizzi IP
+di mittente e destinatario
+
+11
+00:00:41.704 --> 00:00:43.024
+e i dati veri e propri,
+
+12
+00:00:43.044 --> 00:00:45.114
+e TCP aggiunge un numero d'ordine.
+
+13
+00:00:45.525 --> 00:00:48.925
+I pacchetti di uno stesso file
+possono seguire percorsi diversi,
+
+14
+00:00:48.945 --> 00:00:52.255
+anche attraverso paesi diversi,
+e arrivare in disordine.
+
+15
+00:00:53.060 --> 00:00:56.320
+All'arrivo,
+TCP li ricompone nell'ordine corretto,
+
+16
+00:00:56.340 --> 00:00:57.920
+grazie al numero d'ordine.
+
+17
+00:00:58.767 --> 00:01:00.217
+Se un pacchetto si perde,
+
+18
+00:01:00.237 --> 00:01:02.937
+TCP se ne accorge e chiede
+di ritrasmetterlo.
+
+19
+00:01:03.447 --> 00:01:04.947
+Il mittente lo rimanda.
+
+20
+00:01:06.215 --> 00:01:10.035
+Un'email di 2 megabyte
+diventa circa 1.400 pacchetti.
+
+21
+00:01:10.565 --> 00:01:12.555
+E tutto avviene in millisecondi.
+
+22
+00:01:13.615 --> 00:01:16.955
+TCP è affidabile,
+ma aggiunge un po' di ritardo.
+
+23
+00:01:17.485 --> 00:01:22.535
+Nel gaming in tempo reale si usa UDP:
+più veloce, ma non garantisce la consegna.
+
+24
+00:01:23.165 --> 00:01:25.845
+TCP/IP: la lingua comune di Internet.
