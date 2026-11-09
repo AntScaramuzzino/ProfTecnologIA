@@ -1,10 +1,10 @@
 # Hook audio — MC-AMB-2-05
-**Titolo:** "La storia di smart city e tecnologie per la città intelligente"
-**MC:** MC-AMB-2-05 — Smart city e tecnologie per la città intelligente
-**Classe:** 2ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** smart city e tecnologie per la città intelligente
-**SDG principale:** 9
+**Titolo:** "Il giorno in cui Cape Town quasi rimase senza acqua"
+**MC:** MC-AMB-2-05 — Il ciclo artificiale dell'acqua: acquedotto, depurazione e risorsa idrica
+**Classe:** 2ª media · Livello Intermediate
+**Durata:** 1 min 59 sec
+**Oggetto reale:** il rubinetto di casa
+**SDG principale:** 11
 
 ---
 
@@ -14,44 +14,91 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a smart city e tecnologie per la città intelligente? [PAUSA]
+Apri il rubinetto. L'acqua esce. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Lo dai per scontato. [PAUSA]
+
+Nel 2018, quattro milioni di persone si sono preparate al giorno in cui dal rubinetto non sarebbe uscito più niente. [ENFASI] [PAUSA]
+
+Lo chiamavano Day Zero.
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente comprende il concetto di smart city (uso di tecnologie digitali per ottimizzare i servizi urbani), conosce applicazioni concrete (semafori intelligenti, raccolta rifiuti ottimizzata, illuminazione adattiva, parcheggi smart) e sa discutere. [PAUSA]
+Siamo a Cape Town, in Sudafrica. [PAUSA]
 
-Non è un caso che smart city e tecnologie per la città intelligente funzioni esattamente così. [PAUSA]
+Tre anni di siccità hanno svuotato i sei bacini artificiali che danno da bere alla città. Il livello è sceso al tredici virgola cinque per cento. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+Ogni cittadino può usare cinquanta litri d'acqua al giorno. Tu, di solito, ne usi il doppio solo tra doccia e water. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Davanti ai punti di distribuzione le code si allungano per chilometri. Nelle scuole si smette di insegnare a lavarsi le mani, perché non c'è acqua per farlo. [PAUSA]
+
+Il Day Zero, alla fine, non arriva: piogge di emergenza, razionamenti durissimi, turisti che smettono di venire. [PAUSA]
+
+Ma ci sono andati vicino. Vicinissimo.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Pensi che sia un problema lontano? [PAUSA]
 
-La risposta è nascosta in smart city e tecnologie per la città intelligente — e una volta che la conosci, la vedi ovunque. [PAUSA]
+Nel 2022 la pianura padana ha vissuto la siccità più grave degli ultimi settant'anni. Il Po era così basso che ci si camminava sopra. [ENFASI] [PAUSA]
+
+In Italia ognuno di noi usa in media circa duecentoventi litri d'acqua al giorno. [PAUSA]
+
+E per arrivare al tuo rubinetto, quell'acqua ha fatto un viaggio lunghissimo.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire smart city e tecnologie per la città intelligente che oggi esploriamo questa MC. [PAUSA]
+Captazione, potabilizzazione, distribuzione, uso, fognatura, depurazione. [PAUSA]
 
-Imparerai Lo studente comprende il concetto di smart city (uso di tecnologie digitali per ottimizzare i servizi urbani), conosce a. [PAUSA]
+Sei fasi, chilometri di tubi, impianti che lavorano giorno e notte. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Urban Planner Sostenibile nel 2030. [PAUSA]
+L'acqua non è infinita: per proteggerla devi prima capire il sistema che te la porta.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso progetta una soluzione smart per un problema reale del quartiere della tua scuola (es.
+Stasera, quando apri il rubinetto, chiediti: da dove arriva quest'acqua? [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+E dove andrà, dopo che è scesa nello scarico? [PAUSA]
+
+Se non lo sai, sei nel posto giusto.
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-AMB-2-05",
+  "titolo_hook": "Il giorno in cui Cape Town quasi rimase senza acqua",
+  "oggetto_reale": "il rubinetto di casa",
+  "durata_sec": 119,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "Cape Town 2018: \"Day Zero\" previsto per 4 milioni di persone",
+    "Bacini scesi al 13,5% della capacità, razionamento a 50 litri al giorno",
+    "Pianura padana 2022: siccità più grave degli ultimi 70 anni",
+    "In Italia il consumo medio è di circa 220 litri per persona al giorno"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-AMB-2-05_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 11,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script d'autore dal testo della MC (INNESCA), diviso in blocchi. Tono da cronaca, tensione nel blocco 1 e nel blocco 3.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

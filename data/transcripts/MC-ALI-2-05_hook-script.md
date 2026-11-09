@@ -1,10 +1,10 @@
 # Hook audio — MC-ALI-2-05
-**Titolo:** "La storia di sprechi alimentari e sostenibilità"
-**MC:** MC-ALI-2-05 — Sprechi alimentari e sostenibilità
-**Classe:** 2ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** sprechi alimentari e sostenibilità
-**SDG principale:** 2
+**Titolo:** "Tre strati per una caramella"
+**MC:** MC-ALI-2-05 — Packaging alimentare e sostenibilità
+**Classe:** 2ª media · Livello Intermediate
+**Durata:** 2 min 17 sec
+**Oggetto reale:** una busta di patatine
+**SDG principale:** 12
 
 ---
 
@@ -14,44 +14,95 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a sprechi alimentari e sostenibilità? [PAUSA]
+Prendi una busta di patatine. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Schiacciala piano. È gonfia come un cuscino. [PAUSA]
 
----
+Aprila. Le patatine occupano sì e no un terzo dello spazio. [ENFASI] [PAUSA]
 
-**[BLOCCO 2 — LA STORIA · 75 sec]**
-
-Lo studente comprende le dimensioni del fenomeno dello spreco alimentare (dati globali e domestici), sa identificare le fasi della filiera dove si genera più spreco e conosce strategie pratiche per ridurlo, collegando scelte quotidiane a impatti glob. [PAUSA]
-
-Non è un caso che sprechi alimentari e sostenibilità funzioni esattamente così. [PAUSA]
-
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
-
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Un imbroglio per farti sembrare il pacchetto più grande?
 
 ---
 
-**[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
+**[BLOCCO 2 — LA STORIA · 70 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Prova a contare quanti strati attraversi per mangiare un uovo di Pasqua. [PAUSA]
 
-La risposta è nascosta in sprechi alimentari e sostenibilità — e una volta che la conosci, la vedi ovunque. [PAUSA]
+Il sacchetto di cellophane. La scatola di cartone. La carta stagnola. Il guscio di cioccolato. E dentro, una capsula di plastica con la sorpresa. [PAUSA]
+
+Sei strati per una cosa che mangi in due minuti. [PAUSA]
+
+Poi ci sono i biscotti incartati uno a uno dentro un'altra confezione. La frutta già sbucciata, chiusa in una vaschetta di plastica. [PAUSA]
+
+In Italia circa il quaranta per cento dei rifiuti che buttiamo in casa è fatto di imballaggi. [ENFASI] [PAUSA]
+
+Due sacchetti della spazzatura su cinque sono il vestito del cibo, non il cibo. [PAUSA]
+
+Eppure una confezione non è solo una scatola. Fa cinque lavori nello stesso momento: protegge, conserva, informa, convince e rende possibile il trasporto.
+
+---
+
+**[BLOCCO 3 — COLPO DI SCENA · 28 sec]**
+
+E la busta di patatine? [PAUSA]
+
+Non è aria, quella che senti. È azoto. [ENFASI] [PAUSA]
+
+Un gas che tiene lontano l'ossigeno, che farebbe irrancidire le patatine, e che fa da cuscino contro gli urti del viaggio. [PAUSA]
+
+Lo stesso trucco fa durare un petto di pollo otto-dodici giorni invece di tre o quattro. [PAUSA]
+
+A volte l'imballaggio esagera. A volte, invece, salva il cibo dalla pattumiera.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire sprechi alimentari e sostenibilità che oggi esploriamo questa MC. [PAUSA]
+Il punto è saper distinguere. [PAUSA]
 
-Imparerai Lo studente comprende le dimensioni del fenomeno dello spreco alimentare (dati globali e domestici), sa identificare le . [PAUSA]
+Quale strato serve davvero e quale è solo pubblicità? Quale materiale si ricicla all'infinito e quale finisce in discarica? Che cosa vogliono dire quei simboli stampati sul fondo? [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Food Technologist / Nutrizionista Industriale nel 2030. [PAUSA]
+È quello che imparerai adesso: a leggere una confezione come la legge un tecnico.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso monitora gli sprechi alimentari in casa per una settimana: pesa o stima il cibo buttato ogni giorno, classifica per tipo (pane, verdura, avanzi.
+Prendi la prossima confezione che apri a casa. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Conta gli strati. Per ognuno chiediti: a che cosa serve? [PAUSA]
+
+Se non trovi una risposta, forse hai trovato un caso di over-packaging.
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-ALI-2-05",
+  "titolo_hook": "Tre strati per una caramella",
+  "oggetto_reale": "una busta di patatine",
+  "durata_sec": 137,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "L'azoto nelle buste di patatine protegge dall'ossigeno e fa da cuscino contro gli urti",
+    "Petto di pollo: 3-4 giorni in confezione standard, 8-12 in atmosfera modificata",
+    "In Italia circa il 40% dei rifiuti domestici è packaging",
+    "Riciclare una lattina di alluminio consuma il 95% di energia in meno che produrla dalla bauxite"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-ALI-2-05_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 12,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Tono curioso e un po' ironico nel blocco 1, poi preciso. Il colpo di scena ribalta il sospetto dell'ascoltatore.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

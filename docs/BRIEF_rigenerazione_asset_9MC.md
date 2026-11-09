@@ -4,7 +4,7 @@
 
 ## 1. Perché serve
 
-In 9 MC il testo pubblicato tratta un tema diverso dalla scheda JSON originale. Il 9 novembre è stato deciso che vale il testo: i JSON sono stati riallineati, ma immagini con contenuto e hook audio erano stati generati sul vecchio tema e sono stati nascosti dal sito.
+In 9 MC il testo pubblicato tratta un tema diverso dalla scheda JSON originale. Il 9 novembre è stato deciso che vale il testo: i JSON sono stati riallineati, ma immagini con contenuto e hook audio erano stati generati sul vecchio tema. Gli hook sono già stati rifatti; le immagini sono nascoste dal sito in attesa di rigenerazione.
 
 | MC | Vecchio tema (asset attuali) | Tema del testo (da illustrare) |
 |----|------------------------------|--------------------------------|
@@ -31,7 +31,6 @@ Per ognuna delle 9 MC il sito non mostra:
 | Infografica di processo | `MC-XXX_infografica_processo_playground_v1.webp` | OSSERVA (solo ALI-2-05, AMB-2-06, DIG-2-03, MAT-1-06, SIS-3-04) |
 | Mappa concettuale | `MC-XXX_mindmap.webp` | Galleria ESPLORA |
 | Tavola da testo | `MC-XXX_immagine_da_md.svg/.webp` | Galleria ESPLORA |
-| Hook audio + trascrizione | `public/assets/audio/MC-XXX_hook-audio.mp3`, `data/transcripts/MC-XXX_hook-script.md` | INNESCA |
 
 Restano visibili copertina (`ai-fotorealistica`), foto di contesto e ritratti delle professioni.
 
@@ -39,7 +38,7 @@ Restano visibili copertina (`ai-fotorealistica`), foto di contesto e ritratti de
 
 **Mappa concettuale e tavola da testo** non vanno riscritte a mano: sono prodotte da un generatore che legge il JSON della MC, ora corretto. Basta rilanciarlo (il generatore non è nel repository del sito).
 
-**Già fatto:** la copertina di AMB-2-05 (plastico di smart city, senza testo) è stata copiata come copertina di AMB-2-06. AMB-2-05 resta con quella copertina finché non se ne genera una sull'acqua.
+**Già fatto:** gli hook audio delle 9 MC sono stati riscritti sul tema del testo e rigenerati con edge-tts (v2.0, 9 novembre): MP3, trascrizioni e durate nel JSON sono aggiornati e l'audio è di nuovo online. La copertina di AMB-2-05 (plastico di smart city, senza testo) è stata copiata come copertina di AMB-2-06. AMB-2-05 resta con quella copertina finché non se ne genera una sull'acqua.
 
 ## 3. Specifiche di stile comuni
 
@@ -53,7 +52,6 @@ Formato **16:9, 1672 × 941 px**, WebP. Tutti i testi in italiano, da controllar
 
 **Copertina.** Foto o plastico fotorealistico, luce morbida, **nessun testo e nessun marchio**.
 
-**Hook audio.** Voce edge-tts `it-IT-IsabellaNeural`, MP3 in `public/assets/audio/MC-XXX_hook-audio.mp3`. Lo script va salvato in `data/transcripts/MC-XXX_hook-script.md` con la sezione `## SCRIPT`, che il sito usa come trascrizione accessibile. Dopo la registrazione aggiornare `hook_audio.durata_*` nel JSON.
 
 ## 4. Brief per MC
 
@@ -79,7 +77,6 @@ Fascia finale: leggo i simboli · scelgo meno strati · separo i materiali · "b
 
 **Compito — "Audit del packaging".** Scenario: audit degli imballaggi della mensa, con prima una prova individuale su un pasto. Materiali: imballaggi del pasto, scheda audit, guida alla differenziata del comune, penna. Passaggi: Raccogli → Classifica il materiale → Verifica riciclabilità e smaltimento → Proponi alternative. Criteri: completezza, materiali e simboli corretti, over-packaging riconosciuto, proposte realistiche.
 
-**Hook.** Spunto dal testo: "Hai aperto una confezione con tre strati di plastica per trovare una caramella". Domanda: "Quante volte l'imballaggio era più grande del cibo che conteneva?". Esempi già nel testo: uovo di Pasqua a sei strati, busta di patatine gonfia, biscotti confezionati uno a uno.
 
 ### MC-ALI-2-06 — Innovazione alimentare e nuove tecnologie
 
@@ -99,7 +96,6 @@ Fascia finale: leggo i simboli · scelgo meno strati · separo i materiali · "b
 
 **Compito — "Scheda blog: la tecnologia che nutre il futuro".** Passaggi: Scegli una tecnologia → Informati su fonti affidabili → Scrivi (titolo-domanda, cos'è, com'è oggi, perché è utile, limiti) → Rivedi (max 300 parole). Criteri: chiarezza, dati verificati, equilibrio tra benefici e limiti, linguaggio accessibile.
 
-**Hook.** Titolo dal testo: "Come nutriremo una popolazione in crescita?". Apertura già nel testo: "Quando avrai l'età dei tuoi genitori, sulla Terra saremo quasi 10 miliardi".
 
 ### MC-AMB-2-04 — Architettura bioclimatica ed efficienza energetica degli edifici
 
@@ -119,7 +115,6 @@ Fascia finale: leggo i simboli · scelgo meno strati · separo i materiali · "b
 
 **Compito — "Analisi bioclimatica della mia scuola".** Materiali: bussola o app, pianta della scuola, scheda di analisi, smartphone per le foto. Passaggi: Orienta → Osserva l'involucro (finestre, muri, tetto) → Valuta ventilazione e verde → Proponi tre interventi. Criteri: orientamento corretto, osservazioni documentate, interventi motivati e realistici.
 
-**Hook.** Lo script completo è già nel testo (INNESCA, "La casa che respira con le stagioni": la casa vicino a Bolzano, 18 °C a gennaio senza riscaldamento). Basta registrarlo.
 
 ### MC-AMB-2-05 — Il ciclo artificiale dell'acqua
 
@@ -141,7 +136,6 @@ Fascia finale: leggo i simboli · scelgo meno strati · separo i materiali · "b
 
 **Compito — "Dossier acqua della mia scuola".** Quattro parti: 1 L'acqua che usiamo (stima del consumo annuo) · 2 Dove sprechiamo · 3 L'acqua che consumiamo a casa · 4 La proposta. Materiali: scheda dossier, calcolatrice, eventuale bolletta della scuola, smartphone per documentare gli sprechi.
 
-**Hook.** Lo script completo è già nel testo ("Il giorno in cui Cape Town quasi rimase senza acqua"). Basta registrarlo.
 
 ### MC-AMB-2-06 — Smart city: sensori, dati aperti e partecipazione
 
@@ -166,7 +160,6 @@ Esempi: Copenhagen, Milano con la ZTL.
 **Compito — "Soluzione smart per il quartiere".** Scenario: bando comunale "Smart School for Smart City", 3.000 € al progetto vincitore. Passaggi: Problema → Dati → Tecnologia → Benefici e costi. Criteri: problema reale e documentato, soluzione fattibile, costi stimati, attenzione a chi ne beneficia.
 *Nota:* l'attuale immagine del compito di AMB-2-05 ("Soluzione smart per il quartiere") ha già questo contenuto, ma riporta stampato il codice MC-AMB-2-05: va rigenerata con il codice giusto.
 
-**Hook.** Lo script completo è già nel testo ("Il semaforo che ti conosce"). Basta registrarlo.
 
 ### MC-DIG-2-03 — Organizzare il computer: file, backup e privacy
 
@@ -197,7 +190,6 @@ Banner: "Il computer in ordine non è talento, è metodo".
 
 **Compito — "Guida pratica: il mio computer in ordine".** Passaggi: Fotografa la situazione di partenza → Costruisci cartelle e nomi → Configura il backup → Scrivi un consiglio per chi inizia. Criteri: situazione descritta con numeri, sistema coerente, piano di backup realistico.
 
-**Hook.** Lo scenario è già nel testo (Marco e i 47 file "relazione DEFINITIVA vera2"). Va scritto lo script in 5 blocchi. Domanda: "Se il tuo computer si rompesse stasera, cosa perderesti per sempre?".
 
 ### MC-MAT-1-05 — I metalli: proprietà, lavorazione e riciclo
 
@@ -217,7 +209,6 @@ Banner: "Il computer in ordine non è talento, è metodo".
 
 **Compito — "Scheda tecnica dei metalli attorno a me".** Passaggi: Scegli tre oggetti (uno all'esterno, uno a contatto con cibo o acqua, uno sotto sforzo) → Identifica il metallo (colore, calamita, peso) → Analizza proprietà e corrosione → Valuta il riciclo. Materiali: calamita, schede, lente, smartphone.
 
-**Hook.** Lo script è già nel testo ("La bici che gira il mondo": 6,8 kg contro 12-16 kg). Basta registrarlo.
 
 ### MC-MAT-1-06 — Fibre, plastiche e compositi
 
@@ -246,7 +237,6 @@ Riquadro: confronto con la giacca di lana (340 g contro 1,4 kg). Banner: "Ogni m
 
 **Compito — "Analisi delle etichette".** Scenario: rapporto per un'associazione di consumatori. Passaggi: Leggi l'etichetta → Classifica i materiali → Verifica biodegradabilità e microplastiche → Giudica le diciture. Criteri: composizione copiata esatta, classificazione corretta, giudizio motivato sulle diciture.
 
-**Hook.** Lo script è già nel testo ("La giacca che ti salva la vita"). Basta registrarlo.
 
 ### MC-SIS-3-04 — Orientamento al futuro professionale
 
@@ -277,7 +267,6 @@ Banner: "Non serve sapere oggi che lavoro farai: serve sapere che cosa ti piace 
 
 **Compito — "La mia mappa competenze → professioni".** Passaggi: Raccogli le MC del triennio → Fai il test RIASEC → Analizza tre offerte di lavoro → Disegna la mappa e presentala. Criteri: competenze con esempi concreti, percorsi coerenti, area di crescita individuata.
 
-**Hook.** Titolo dal testo: "I lavori cambiano. Le competenze ti aiutano a scegliere". Domanda: "Qual è il lavoro che vuoi fare da grande?". Va scritto lo script in 5 blocchi.
 
 ## 5. MC-DIG-2-04 — Infografica corretta "Dal phishing alla protezione"
 

@@ -1,6 +1,5 @@
 /**
- * Asset (immagini con contenuto, hook audio) che non corrispondono più al testo
- * pubblicato della MC.
+ * Immagini con contenuto che non corrispondono più al testo pubblicato della MC.
  *
  * Contesto (2026-11-09): in 9 MC il testo è stato riscritto su un tema diverso da quello
  * della scheda JSON originale; il JSON è stato riallineato al testo (decisione autore:
@@ -12,8 +11,8 @@
  * Restano visibili le foto decorative (copertina, contesto) e i ritratti delle professioni,
  * che corrispondono già al testo.
  *
- * L'hook audio (MP3 + trascrizione) di queste MC è uno script generico costruito sulla
- * descrizione del vecchio JSON: si nasconde anch'esso.
+ * L'hook audio di queste 9 MC è stato riscritto e rigenerato il 2026-11-09 (v2.0)
+ * e non è più nascosto.
  *
  * Quando un asset viene rigenerato con lo stesso nome file, togliere la MC (o il tipo)
  * da questo elenco. Brief: BRIEF_rigenerazione_asset_9MC (2026-11-09).
@@ -42,9 +41,4 @@ export const MC_ASSET_FUORI_TEMA: Record<string, string> = {
 
 export function isVisualFuoriTema(mcId: string, fileName: string): boolean {
   return mcId in MC_ASSET_FUORI_TEMA && TIPI_CONTENUTO.some((t) => fileName.includes(t));
-}
-
-/** Hook audio e trascrizione sul vecchio tema: non mostrati. */
-export function isHookFuoriTema(mcId: string): boolean {
-  return mcId in MC_ASSET_FUORI_TEMA;
 }

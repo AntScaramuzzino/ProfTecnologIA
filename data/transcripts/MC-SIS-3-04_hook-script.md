@@ -1,10 +1,10 @@
 # Hook audio — MC-SIS-3-04
-**Titolo:** "La storia di processi produttivi, qualità e certificazioni"
-**MC:** MC-SIS-3-04 — Processi produttivi, qualità e certificazioni
-**Classe:** 3ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** processi produttivi, qualità e certificazioni
-**SDG principale:** 3
+**Titolo:** "I lavori cambiano. Le competenze ti aiutano a scegliere."
+**MC:** MC-SIS-3-04 — Orientamento al futuro professionale
+**Classe:** 3ª media · Livello Intermediate
+**Durata:** 2 min 0 sec
+**Oggetto reale:** un annuncio di lavoro
+**SDG principale:** 4
 
 ---
 
@@ -14,44 +14,90 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a processi produttivi, qualità e certificazioni? [PAUSA]
+Che lavoro vuoi fare da grande? [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Se non lo sai, sei in ottima compagnia. [PAUSA]
+
+Perché molti dei lavori che farete tu e i tuoi compagni, oggi, non hanno ancora un nome. [ENFASI]
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente conosce i concetti di controllo qualità e certificazione (ISO, CE, biologico), comprende come i processi produttivi vengono standardizzati per garantire sicurezza e qualità, e sa leggere le principali certificazioni su un prodotto, svilup. [PAUSA]
+Il lavoro sta cambiando sotto la spinta di quattro grandi forze. [PAUSA]
 
-Non è un caso che processi produttivi, qualità e certificazioni funzioni esattamente così. [PAUSA]
+L'automazione: macchine e intelligenza artificiale fanno sempre più compiti ripetitivi, quelli delle mani e anche quelli della testa. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+La transizione ecologica: per inquinare meno bisogna cambiare il modo di produrre energia, costruire, spostarsi. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+L'invecchiamento: in Italia gli anziani aumentano, e servirà sempre più chi cura e assiste. [PAUSA]
+
+La digitalizzazione: anche un agricoltore, oggi, può controllare i campi con un drone. [PAUSA]
+
+Un grande studio su ottocento aziende di quarantacinque Paesi prevede, per pochi anni, due milioni e trecentomila posti in più per chi sa lavorare con i dati. [PAUSA]
+
+E tre milioni di posti in meno per chi inserisce dati a mano.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Ma attenzione. [PAUSA]
 
-La risposta è nascosta in processi produttivi, qualità e certificazioni — e una volta che la conosci, la vedi ovunque. [PAUSA]
+Una macchina, di solito, non porta via un mestiere intero. Porta via un compito. [ENFASI] [PAUSA]
+
+I compiti ripetitivi sono a rischio. Quelli che chiedono di capire una persona, risolvere un problema mai visto, inventare, resistono. [PAUSA]
+
+Un idraulico che ripara un guasto in una casa vecchia è difficile da sostituire quanto un medico.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire processi produttivi, qualità e certificazioni che oggi esploriamo questa MC. [PAUSA]
+Prepararti, allora, non vuol dire scegliere oggi il mestiere giusto. [PAUSA]
 
-Imparerai Lo studente conosce i concetti di controllo qualità e certificazione (ISO, CE, biologico), comprende come i processi pro. [PAUSA]
+Vuol dire conoscere le competenze che hai costruito in questi tre anni, capire che cosa ti piace fare, e leggere che cosa chiede il mondo del lavoro. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Entrepreneur / Innovation Manager nel 2030. [PAUSA]
+È quello che metterai insieme in questa MC: una mappa tutta tua.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso analizza il packaging di 5 prodotti diversi presenti in casa: identifica tutte le certificazioni presenti, cerca cosa significano sul sito dell'ente certificatore e valuta se la certificazione ti influenza nella scelta d'acquisto.
+Pensa a un mestiere che conosci bene. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Scrivi cinque cose che fa, ogni giorno, chi lo svolge. [PAUSA]
+
+Quali potrebbe fare una macchina? E quali no?
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-SIS-3-04",
+  "titolo_hook": "I lavori cambiano. Le competenze ti aiutano a scegliere.",
+  "oggetto_reale": "un annuncio di lavoro",
+  "durata_sec": 120,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "WEF Future of Jobs 2023 (803 aziende, 45 economie), previsioni 2023-2027: specialisti big data e machine learning +2,3 milioni, tecnologie verdi +2,0 milioni; addetti data entry -3,0 milioni, segreterie amministrative e cassieri di banca -2,6 milioni",
+    "Quattro forze: automazione, transizione ecologica, invecchiamento, digitalizzazione",
+    "Le macchine sostituiscono compiti, non mestieri interi"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-SIS-3-04_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 4,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Tono diretto e rassicurante: la domanda d'apertura può mettere ansia, il blocco 4 deve scioglierla.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

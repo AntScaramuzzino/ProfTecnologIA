@@ -1,9 +1,9 @@
 # Hook audio — MC-MAT-1-05
-**Titolo:** "La storia di scegliere il materiale giusto per un progetto"
-**MC:** MC-MAT-1-05 — Scegliere il materiale giusto per un progetto
-**Classe:** 1ª media · Livello F
-**Durata stimata:** 3 min
-**Oggetto reale:** scegliere il materiale giusto per un progetto
+**Titolo:** "La bici che gira il mondo"
+**MC:** MC-MAT-1-05 — I metalli: proprietà, lavorazione e riciclo
+**Classe:** 1ª media · Livello Foundation
+**Durata:** 1 min 54 sec
+**Oggetto reale:** una bicicletta
 **SDG principale:** 9
 
 ---
@@ -14,44 +14,91 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a scegliere il materiale giusto per un progetto? [PAUSA]
+Guarda la bici di un ciclista professionista. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Pesa sei chili e otto etti. [PAUSA]
+
+È il minimo consentito dalle regole del ciclismo su strada: più leggera di così, non può correre. [ENFASI] [PAUSA]
+
+La tua bici, invece, quanto pesa?
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente sa selezionare il materiale più adatto per un oggetto o un progetto specifico, applicando criteri tecnici (resistenza, leggerezza, lavorabilità), economici (costo) e ambientali (impatto, riciclabilità) in modo integrato.. [PAUSA]
+Una bicicletta da passeggio pesa tra dodici e sedici chili. [PAUSA]
 
-Non è un caso che scegliere il materiale giusto per un progetto funzioni esattamente così. [PAUSA]
+Stessa funzione. Stesso numero di pezzi. Quasi il doppio del peso. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+La differenza sta nei materiali. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+La bici da corsa ha il telaio in fibra di carbonio e le pedivelle in lega di alluminio. Quella da passeggio ha il telaio in acciaio. [PAUSA]
+
+Tutti e due reggono il peso di una persona senza problemi. Ma resistenza, densità e prezzo sono completamente diversi. [PAUSA]
+
+E la stessa logica vale per ogni oggetto che usi: lo zaino con la struttura in alluminio, il telefono con il telaio metallico, la pentola in acciaio inossidabile, la lattina nel frigo.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Ecco la cosa che sorprende. [PAUSA]
 
-La risposta è nascosta in scegliere il materiale giusto per un progetto — e una volta che la conosci, la vedi ovunque. [PAUSA]
+L'acciaio della bici da passeggio, quello pesante ed economico, ha un superpotere. [ENFASI] [PAUSA]
+
+Si può fondere e rifondere quasi all'infinito, senza perdere le sue qualità. [PAUSA]
+
+Il chiodo che butti oggi può tornare domani dentro una trave, un'auto, un'altra bicicletta.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire scegliere il materiale giusto per un progetto che oggi esploriamo questa MC. [PAUSA]
+Ferro, acciaio, alluminio, rame, leghe. [PAUSA]
 
-Imparerai Lo studente sa selezionare il materiale più adatto per un oggetto o un progetto specifico, applicando criteri tecnici (r. [PAUSA]
+Da dove vengono, come si trasformano dalla roccia all'oggetto, perché alcuni arrugginiscono e altri no. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Ingegnere dei Materiali Sostenibili nel 2030. [PAUSA]
+Scoprirai perché i metalli sono il cuore dell'industria moderna.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso scegli il materiale per costruire una piccola libreria da muro: confronta 3 materiali possibili in una tabella con almeno 4 criteri e giustifica la scelta finale in 5 righe.
+Se dovessi costruire la bici più leggera possibile, e poi la più economica possibile, useresti lo stesso materiale? [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Scrivi la tua risposta. [PAUSA]
+
+Alla fine della MC la confronteremo con quella tecnica.
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-MAT-1-05",
+  "titolo_hook": "La bici che gira il mondo",
+  "oggetto_reale": "una bicicletta",
+  "durata_sec": 114,
+  "livello_digcomp": "F",
+  "dati_verificabili": [
+    "Peso minimo di una bici da corsa per il regolamento su strada: 6,8 kg",
+    "Bici da passeggio: 12-16 kg",
+    "L'acciaio si ricicla quasi all'infinito",
+    "L'alluminio si ricava dalla bauxite, il ferro da minerali come l'ematite"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-MAT-1-05_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 9,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script d'autore dal testo della MC (INNESCA), esteso in blocchi. Tono sportivo nel blocco 1, poi tecnico e concreto.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

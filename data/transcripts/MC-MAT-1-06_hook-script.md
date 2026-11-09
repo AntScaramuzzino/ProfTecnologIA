@@ -1,10 +1,10 @@
 # Hook audio — MC-MAT-1-06
-**Titolo:** "La storia di biomateriali e bioplastiche: il futuro dei materiali"
-**MC:** MC-MAT-1-06 — Biomateriali e bioplastiche: il futuro dei materiali
-**Classe:** 1ª media · Livello F
-**Durata stimata:** 3 min
-**Oggetto reale:** biomateriali e bioplastiche: il futuro dei materiali
-**SDG principale:** 9
+**Titolo:** "La giacca che ti salva la vita"
+**MC:** MC-MAT-1-06 — Fibre, plastiche e compositi
+**Classe:** 1ª media · Livello Foundation
+**Durata:** 1 min 54 sec
+**Oggetto reale:** una giacca tecnica
+**SDG principale:** 15
 
 ---
 
@@ -14,44 +14,89 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a biomateriali e bioplastiche: il futuro dei materiali? [PAUSA]
+Sei su una via ferrata nelle Dolomiti. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Fa freddo, tira vento, e comincia a piovere. [PAUSA]
+
+Addosso hai una giacca che pesa trecentoquaranta grammi. Meno di una bottiglietta d'acqua. [ENFASI] [PAUSA]
+
+Eppure sei asciutto.
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente comprende cosa sono i biomateriali (materiali di origine biologica o prodotti da organismi viventi), conosce esempi concreti di bioplastiche e materiali biodegradabili, e sa discutere criticamente i limiti e le potenzialità di queste alte. [PAUSA]
+La pioggia scivola via come se la giacca fosse di vetro. [PAUSA]
 
-Non è un caso che biomateriali e bioplastiche: il futuro dei materiali funzioni esattamente così. [PAUSA]
+Accanto a te, il tuo compagno indossa la giacca che usava sua nonna negli anni Ottanta. Pesa un chilo e quattrocento grammi. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+È impermeabile, sì. Ma non lascia uscire il sudore: dopo mezz'ora di salita, dentro è umido come fuori. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+Il segreto della tua giacca sono gli strati. [PAUSA]
+
+Fuori, nylon trattato perché l'acqua non si attacchi. In mezzo, una membrana sottilissima piena di pori: troppo piccoli per le gocce di pioggia, abbastanza grandi per il vapore. Dentro, una fodera in poliestere. [PAUSA]
+
+Nessuno di questi materiali esisteva prima del 1970.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+E tutti, senza eccezione, vengono dal petrolio. [ENFASI] [PAUSA]
 
-La risposta è nascosta in biomateriali e bioplastiche: il futuro dei materiali — e una volta che la conosci, la vedi ovunque. [PAUSA]
+La stessa giacca che ti protegge in montagna, ogni volta che la lavi, perde in lavatrice migliaia di frammenti invisibili: microplastiche, che finiscono nei fiumi e nel mare. [PAUSA]
+
+Allora è meglio o peggio della giacca di lana?
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire biomateriali e bioplastiche: il futuro dei materiali che oggi esploriamo questa MC. [PAUSA]
+La risposta dipende da che cosa intendi per peggio. [PAUSA]
 
-Imparerai Lo studente comprende cosa sono i biomateriali (materiali di origine biologica o prodotti da organismi viventi), conosce. [PAUSA]
+Fibre naturali, fibre sintetiche, plastiche, compositi: ogni famiglia di materiali ha punti forti e costi nascosti. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Supply Chain Sustainability Manager nel 2030. [PAUSA]
+In questa MC imparerai a pesarli, uno per uno.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso ricerca un prodotto commerciale che dichiara di usare bioplastica: verifica la composizione reale sull'etichetta, cerca come va smaltito e valuta se l'etichetta 'bio' è giustificata o fuorviante.
+Apri l'armadio e cerca l'etichetta cucita dentro una felpa o una giacca. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Che cosa c'è scritto? Quanto è naturale e quanto è sintetico? [PAUSA]
+
+Segna le percentuali: ti serviranno.
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-MAT-1-06",
+  "titolo_hook": "La giacca che ti salva la vita",
+  "oggetto_reale": "una giacca tecnica",
+  "durata_sec": 114,
+  "livello_digcomp": "F",
+  "dati_verificabili": [
+    "Giacca tecnica moderna: 340 g; giacca degli anni Ottanta: 1,4 kg",
+    "Strati: nylon con trattamento DWR, membrana in PTFE espanso, fodera in poliestere microfibra",
+    "Materiali nati dopo il 1970, tutti derivati dal petrolio",
+    "Le fibre sintetiche rilasciano microplastiche a ogni lavaggio"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-MAT-1-06_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 15,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script d'autore dal testo della MC (INNESCA), esteso in blocchi. Tono avventuroso nel blocco 1, poi riflessivo nel colpo di scena.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

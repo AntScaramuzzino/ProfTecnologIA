@@ -1,9 +1,9 @@
 # Hook audio — MC-AMB-2-04
-**Titolo:** "La storia di materiali da costruzione e sostenibilità"
-**MC:** MC-AMB-2-04 — Materiali da costruzione e sostenibilità
-**Classe:** 2ª media · Livello I
-**Durata stimata:** 3 min
-**Oggetto reale:** materiali da costruzione e sostenibilità
+**Titolo:** "La casa che respira con le stagioni"
+**MC:** MC-AMB-2-04 — Architettura bioclimatica ed efficienza energetica degli edifici
+**Classe:** 2ª media · Livello Intermediate
+**Durata:** 2 min 1 sec
+**Oggetto reale:** la finestra della tua aula
 **SDG principale:** 11
 
 ---
@@ -14,44 +14,91 @@
 
 **[BLOCCO 1 — APERTURA CON OGGETTO · 18 sec]**
 
-Hai mai pensato a materiali da costruzione e sostenibilità? [PAUSA]
+Immagina di entrare in una casa in pieno gennaio. Fuori ci sono cinque gradi sotto zero. [PAUSA]
 
-Quello che stai per scoprire cambierà il modo in cui lo guardi. [ENFASI] [PAUSA]
+Il riscaldamento è spento. [PAUSA]
+
+Eppure dentro ci sono diciotto gradi. [ENFASI] [PAUSA]
+
+Nessun trucco. Nessuna caldaia nascosta.
 
 ---
 
 **[BLOCCO 2 — LA STORIA · 75 sec]**
 
-Lo studente conosce i principali materiali da costruzione (mattone, cemento, acciaio, legno, vetro, materiali isolanti) con le loro proprietà termiche, meccaniche e ambientali, e sa valutare la scelta del materiale in relazione all'efficienza energet. [PAUSA]
+La casa si trova vicino a Bolzano. È orientata a sud: le finestre più grandi guardano il sole di mezzogiorno, non il nord. [PAUSA]
 
-Non è un caso che materiali da costruzione e sostenibilità funzioni esattamente così. [PAUSA]
+I muri sono spessi novantacinque centimetri. Non di cemento: di paglia compressa, rivestita di intonaco di calce. [PAUSA]
 
-Dietro ogni oggetto che usiamo ogni giorno c'è una storia fatta di scelte, di materiali, di tecnologie, di persone. [PAUSA]
+Il tetto è verde. Ci crescono sedici specie di piante del posto. [PAUSA]
 
-E quando capisci quella storia, non puoi più guardare quell'oggetto come prima. [PAUSA]
+E d'estate? Le stesse finestre restano in ombra, perché il tetto sporge di cinquantadue centimetri. [PAUSA]
+
+Non un centimetro di più, non uno di meno: quanto basta per fermare il sole alto dell'estate e lasciare entrare quello basso dell'inverno. [PAUSA]
+
+Rispetto a una casa identica, costruita senza pensarci, consuma l'ottanta per cento di energia in meno.
 
 ---
 
 **[BLOCCO 3 — COLPO DI SCENA · 25 sec]**
 
-Ecco quello che nessuno ti dice. [PAUSA]
+Sembra fantascienza. È il contrario. [ENFASI] [PAUSA]
 
-La risposta è nascosta in materiali da costruzione e sostenibilità — e una volta che la conosci, la vedi ovunque. [PAUSA]
+Si chiama architettura bioclimatica ed esiste da prima del riscaldamento centrale, prima dell'elettricità, prima del cemento. [PAUSA]
+
+La conoscevano i costruttori romani, i berberi del deserto, i norvegesi con le loro case di torba. [PAUSA]
+
+Poi l'abbiamo dimenticata.
 
 ---
 
 **[BLOCCO 4 — AGGANCIO AL CONCETTO · 25 sec]**
 
-Ed è proprio per capire materiali da costruzione e sostenibilità che oggi esploriamo questa MC. [PAUSA]
+Ora la stiamo riscoprendo, con la fisica e i dati dalla nostra parte. [PAUSA]
 
-Imparerai Lo studente conosce i principali materiali da costruzione (mattone, cemento, acciaio, legno, vetro, materiali isolanti) . [PAUSA]
+Orientamento, massa termica, isolamento, ventilazione naturale: sono gli strumenti con cui un edificio si scalda e si raffresca quasi da solo. [PAUSA]
 
-E alla fine di questo percorso potrai capire cosa fa un Green Building Designer / Certificatore LEED nel 2030. [PAUSA]
+Imparerai a riconoscerli e a misurarli.
 
 ---
 
-**[BLOCCO 5 — CALL TO ACTION · 12 sec]**
+**[BLOCCO 5 — CALL TO ACTION · 14 sec]**
 
-Adesso analizza la tua casa o scuola: osserva i materiali usati per pareti, pavimenti, finestre e tetto, crea una tabella con 4 materiali identificati e valuta per ciascuno il potenziale di miglioramento per l'efficienza energetica.
+Guarda la finestra della tua aula. [PAUSA]
 
-Rispondi a questa domanda: cosa ci vedi che prima non notavi?
+Da che parte entra il sole a mezzogiorno? D'estate in classe si soffoca? [PAUSA]
+
+Qualcuno ci ha pensato, quando l'hanno costruita?
+
+---
+
+## METADATI
+
+```json
+{
+  "mc_id": "MC-AMB-2-04",
+  "titolo_hook": "La casa che respira con le stagioni",
+  "oggetto_reale": "la finestra della tua aula",
+  "durata_sec": 121,
+  "livello_digcomp": "I",
+  "dati_verificabili": [
+    "Casa bioclimatica vicino a Bolzano: -5 °C fuori, 18 °C dentro senza riscaldamento",
+    "Muri in paglia compressa spessi 95 cm, tetto verde con 16 specie autoctone",
+    "Sporto del tetto di 52 cm calcolato sull'altezza del sole",
+    "Consumo energetico -80% rispetto a una casa identica non bioclimatica"
+  ],
+  "fonte_dati": "testo della MC (data/testi/…/MC-AMB-2-04_completa.md)",
+  "voce": "edge-tts it-IT-IsabellaNeural, rate -4%",
+  "sdg_principale": 11,
+  "data_creazione": "2026-11-09",
+  "versione": "2.0"
+}
+```
+
+---
+
+## NOTE DI REGIA
+
+- **Tono generale:** Script d'autore dal testo della MC (INNESCA), diviso in blocchi. Tono narrativo, con stupore controllato sui numeri.
+- **[PAUSA]** e **[ENFASI]** sono indicazioni per una registrazione umana: la sintesi vocale le ignora.
+- Versione 2.0 (2026-11-09): sostituisce lo script generico costruito sulla vecchia scheda della MC.

@@ -1,7 +1,7 @@
 import crypto from "crypto";
 import fs from "fs";
 import path from "path";
-import { isHookFuoriTema, isVisualFuoriTema } from "@/lib/asset-fuori-tema";
+import { isVisualFuoriTema } from "@/lib/asset-fuori-tema";
 
 // Il sito usa la copia locale dei contenuti generata in data/.
 // Tenere i path dentro la root Next evita tracing Turbopack fuori progetto.
@@ -301,7 +301,6 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
 const PUBLIC_AUDIO_ROOT = path.join(process.cwd(), "public", "assets", "audio");
 
 export function getMCHookAudio(mcId: string): string | null {
-  if (isHookFuoriTema(mcId)) return null; // script sul vecchio tema (lib/asset-fuori-tema.ts)
   const file = path.join(PUBLIC_AUDIO_ROOT, `${mcId}_hook-audio.mp3`);
   if (!fs.existsSync(file)) return null;
   return `${PUBLIC_BASE_PATH}/assets/audio/${mcId}_hook-audio.mp3`;
@@ -313,7 +312,9 @@ const TRANSCRIPTS_ROOT = path.join(process.cwd(), "data", "transcripts");
 
 function _cleanScriptText(raw: string): string {
   // Estrai SOLO il contenuto tra ## SCRIPT e il successivo ## (METADATI, NOTE DI REGIA, ecc.)
-  const scriptMatch = raw.match(/^##\s*SCRIPT\s*\n([\s\S]*?)(?=\n##\s|\s*$)/im);
+  // (il lookahead finale deve indicare la fine del file: con il flag m "\s*$" si fermava
+  // alla prima riga vuota e la trascrizione risultava sempre vuota)
+  const scriptMatch = raw.match(/^##\s*SCRIPT\s*\n([\s\S]*?)(?=^##\s|(?![\s\S]))/im);
   const text = scriptMatch ? scriptMatch[1] : raw;
 
   return text
@@ -439,7 +440,6 @@ export function getMCFlashcards(mcId: string): FlashcardItem[] {
 }
 
 export function getMCHookTranscript(mcId: string): string | null {
-  if (isHookFuoriTema(mcId)) return null; // script sul vecchio tema (lib/asset-fuori-tema.ts)
   const file = path.join(TRANSCRIPTS_ROOT, `${mcId}_hook-script.md`);
   if (!fs.existsSync(file)) return null;
   try {
