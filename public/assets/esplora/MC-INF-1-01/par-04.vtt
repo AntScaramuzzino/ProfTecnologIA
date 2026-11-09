@@ -1,0 +1,100 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:02.360
+Pensa a una foto sul tuo telefono.
+
+2
+00:00:02.840 --> 00:00:06.720
+Sembra un'immagine, ma dentro
+è una sequenza lunghissima di numeri.
+
+3
+00:00:08.390 --> 00:00:12.010
+Una foto da dodici megapixel
+contiene dodici milioni di pixel:
+
+4
+00:00:12.030 --> 00:00:13.810
+dodici milioni di puntini.
+
+5
+00:00:16.420 --> 00:00:20.200
+Ogni pixel è un singolo puntino
+dell'immagine, e ha un colore.
+
+6
+00:00:22.920 --> 00:00:26.280
+I colori digitali si costruiscono
+mescolando tre componenti:
+
+7
+00:00:26.300 --> 00:00:27.840
+rosso, verde e blu.
+
+8
+00:00:28.320 --> 00:00:29.980
+È il sistema RGB.
+
+9
+00:00:30.760 --> 00:00:34.130
+Ogni componente ha un valore
+da 0 a 255.
+
+10
+00:00:35.650 --> 00:00:40.120
+Cambia di molto anche uno solo dei tre
+valori, e il colore cambia completamente.
+
+11
+00:00:41.380 --> 00:00:45.740
+Un numero da 0 a 255
+occupa un byte, cioè otto bit.
+
+12
+00:00:46.220 --> 00:00:49.760
+Con otto bit si scrivono
+256 valori diversi.
+
+13
+00:00:50.550 --> 00:00:52.820
+Per ogni pixel servono quindi tre byte:
+
+14
+00:00:52.840 --> 00:00:56.050
+uno per il rosso,
+uno per il verde, uno per il blu.
+
+15
+00:00:56.530 --> 00:00:58.580
+In tutto, ventiquattro bit.
+
+16
+00:00:59.421 --> 00:01:01.671
+Dodici milioni di pixel per tre byte:
+
+17
+00:01:01.691 --> 00:01:04.411
+trentasei milioni di byte,
+per una sola foto.
+
+18
+00:01:05.223 --> 00:01:08.593
+Trentasei milioni di numeri
+da 0 a 255,
+
+19
+00:01:08.613 --> 00:01:10.203
+ognuno scritto con otto bit:
+
+20
+00:01:10.223 --> 00:01:13.103
+in tutto, 288 milioni di bit.
+
+21
+00:01:13.573 --> 00:01:14.963
+Solo zero e uno.
+
+22
+00:01:17.153 --> 00:01:19.303
+Ogni foto è una sequenza di numeri.

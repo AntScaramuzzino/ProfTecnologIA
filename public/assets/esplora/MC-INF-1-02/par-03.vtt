@@ -1,0 +1,127 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:04.190
+Qualsiasi algoritmo, anche
+il programma più complesso mai scritto,
+
+2
+00:00:04.210 --> 00:00:07.120
+può essere scritto
+con tre sole strutture di controllo.
+
+3
+00:00:07.590 --> 00:00:09.040
+La prima è la sequenza:
+
+4
+00:00:09.060 --> 00:00:11.680
+le istruzioni vengono
+eseguite una dopo l'altra,
+
+5
+00:00:11.700 --> 00:00:13.510
+nell'ordine in cui sono scritte.
+
+6
+00:00:13.972 --> 00:00:15.332
+Per sommare due numeri:
+
+7
+00:00:15.352 --> 00:00:19.472
+leggi il primo, leggi il secondo,
+somma, mostra il risultato.
+
+8
+00:00:19.952 --> 00:00:21.182
+In quell'ordine.
+
+9
+00:00:21.672 --> 00:00:22.572
+Sempre.
+
+10
+00:00:22.995 --> 00:00:24.685
+La seconda è la selezione:
+
+11
+00:00:24.705 --> 00:00:28.595
+se una condizione è vera, il programma
+esegue un blocco di istruzioni;
+
+12
+00:00:28.615 --> 00:00:31.535
+se è falsa, ne esegue un altro, o niente.
+
+13
+00:00:32.832 --> 00:00:37.582
+Per esempio: se la temperatura è sopra
+i trenta gradi, accendi il condizionatore.
+
+14
+00:00:38.062 --> 00:00:40.212
+Altrimenti, lascialo spento.
+
+15
+00:00:40.656 --> 00:00:43.946
+La condizione deve essere
+verificabile in modo oggettivo.
+
+16
+00:00:44.416 --> 00:00:46.246
+«Se fa caldo» è ambiguo.
+
+17
+00:00:46.726 --> 00:00:49.576
+«Se supera trenta gradi»
+è una misura precisa.
+
+18
+00:00:50.576 --> 00:00:52.996
+La terza è l'iterazione, o ciclo:
+
+19
+00:00:53.016 --> 00:00:56.796
+un blocco di istruzioni viene ripetuto
+finché una condizione rimane vera,
+
+20
+00:00:56.816 --> 00:00:58.576
+o per un numero fisso di volte.
+
+21
+00:00:59.034 --> 00:00:59.824
+Per esempio:
+
+22
+00:00:59.844 --> 00:01:03.944
+finché ci sono messaggi non letti,
+leggi il prossimo e segnalo come letto.
+
+23
+00:01:05.546 --> 00:01:06.836
+Qualsiasi programma,
+
+24
+00:01:06.856 --> 00:01:10.376
+da un semplice calcolatore
+all'intelligenza artificiale generativa,
+
+25
+00:01:10.396 --> 00:01:13.376
+si può sempre costruire
+combinando queste tre strutture.
+
+26
+00:01:13.982 --> 00:01:18.582
+Lo hanno dimostrato nel 1966
+Corrado Böhm e Giuseppe Jacopini:
+
+27
+00:01:18.602 --> 00:01:20.362
+è il teorema di Böhm-Jacopini.
+
+28
+00:01:21.212 --> 00:01:25.242
+Sequenza, selezione,
+iterazione: le tre strutture.

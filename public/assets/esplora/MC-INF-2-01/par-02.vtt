@@ -1,0 +1,122 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:03.320
+Il sistema operativo ha quattro
+funzioni fondamentali:
+
+2
+00:00:03.340 --> 00:00:06.440
+processi, memoria,
+file system e periferiche.
+
+3
+00:00:07.370 --> 00:00:09.730
+Un processo è un programma in esecuzione:
+
+4
+00:00:09.750 --> 00:00:13.960
+il sistema operativo lo crea quando apri
+un'app, e lo termina quando la chiudi.
+
+5
+00:00:15.460 --> 00:00:18.690
+Ogni nucleo del processore esegue
+un solo processo alla volta:
+
+6
+00:00:18.710 --> 00:00:21.210
+i processi ricevono
+brevi frazioni di tempo,
+
+7
+00:00:21.230 --> 00:00:23.760
+e ogni pochi millisecondi
+cambia quello attivo.
+
+8
+00:00:24.288 --> 00:00:27.798
+È il multitasking,
+così veloce da sembrare simultaneo.
+
+9
+00:00:28.278 --> 00:00:31.218
+Contano le priorità:
+con la CPU sotto pressione,
+
+10
+00:00:31.238 --> 00:00:33.488
+un'app in background riceve meno tempo.
+
+11
+00:00:34.418 --> 00:00:36.428
+La RAM è condivisa tra i processi:
+
+12
+00:00:36.448 --> 00:00:38.898
+il sistema operativo
+assegna i blocchi di memoria
+
+13
+00:00:38.918 --> 00:00:41.008
+e li libera quando un processo termina.
+
+14
+00:00:42.078 --> 00:00:46.298
+Se la RAM è piena, parte dello storage
+fa da memoria aggiuntiva: lo swap.
+
+15
+00:00:46.768 --> 00:00:49.918
+È molto più lento:
+per questo il computer rallenta.
+
+16
+00:00:50.958 --> 00:00:53.348
+Il file system organizza i file ad albero:
+
+17
+00:00:53.368 --> 00:00:56.898
+cartelle che contengono altre cartelle,
+che contengono file.
+
+18
+00:00:58.138 --> 00:01:01.688
+Dalla radice, il percorso
+indica dove si trova ogni file.
+
+19
+00:01:02.158 --> 00:01:07.028
+E ogni file ha i suoi metadati:
+nome, dimensione, date, permessi.
+
+20
+00:01:07.998 --> 00:01:10.008
+Ogni periferica ha il suo linguaggio:
+
+21
+00:01:10.028 --> 00:01:13.108
+i driver traducono
+tra la periferica e le applicazioni.
+
+22
+00:01:13.928 --> 00:01:15.748
+Colleghi una periferica nuova?
+
+23
+00:01:16.218 --> 00:01:18.858
+Il sistema operativo
+cerca il driver giusto,
+
+24
+00:01:18.878 --> 00:01:20.948
+o te lo chiede, e lo installa.
+
+25
+00:01:22.098 --> 00:01:24.638
+Ogni app chiede risorse
+al sistema operativo:
+
+26
+00:01:24.658 --> 00:01:26.748
+è lui a decidere quando concederle.
