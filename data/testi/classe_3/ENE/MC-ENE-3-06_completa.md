@@ -476,6 +476,8 @@ Importante: per i dati quantitativi (prezzi, rendimenti, capacità), verifica se
 
 ### 🪞 Metacognizione ampliata — Rifletti su più livelli
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 **1. Il salto di scala**
 In questa MC hai lavorato con valori che vanno da 15 Wh (batteria telefono) a 1.000.000 kWh (grande impianto di accumulo). Questo salto di scala di 8 ordini di grandezza è difficile da visualizzare intuitivamente. Come hai gestito questo salto? Hai trovato analogie o metafore che ti hanno aiutato a capire? Descrivile.
 

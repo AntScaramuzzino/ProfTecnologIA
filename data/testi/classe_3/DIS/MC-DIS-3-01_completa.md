@@ -457,6 +457,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore, segnalalo: verificare le
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 **1. Sorpresa tecnica**
 C'è stato un momento in cui la costruzione geometrica non ti tornava — un punto di fuga fuori dal foglio, un angolo che non quadrava? Descrivi cosa è successo e come hai risolto.
 

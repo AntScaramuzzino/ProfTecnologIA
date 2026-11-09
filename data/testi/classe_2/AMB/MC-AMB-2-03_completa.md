@@ -678,6 +678,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore, segnalalo.
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 Rispondi a queste domande **dopo** aver consegnato la scheda.
 
 **1. Sorpresa**

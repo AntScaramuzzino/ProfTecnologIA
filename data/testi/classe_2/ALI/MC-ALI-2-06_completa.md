@@ -524,6 +524,8 @@ Scansiona e chiedi:
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a coppie.** Intervistatevi a turno, due minuti a testa, partendo da due delle domande qui sotto. Poi ciascuno scrive in una riga la cosa più interessante detta dal compagno.
+
 **1. Sorpresa**
 C'è una tecnologia che hai studiato che non conoscevi e che ti ha sorpreso — positivamente o negativamente? Cosa ti ha cambiato nella prospettiva?
 

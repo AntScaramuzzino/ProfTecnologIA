@@ -557,6 +557,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore, segnalalo.
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: prima e adesso.** Dividi il foglio in due colonne: «Prima pensavo…» e «Adesso penso…». Riempi almeno tre righe. Le domande qui sotto ti aiutano a trovare che cosa è cambiato.
+
 **1. Sorpresa**
 Hai scoperto un errore nella raccolta differenziata della tua classe o della tua scuola che non ti aspettavi? Oppure hai scoperto che si fa meglio di quanto pensavi? Cosa ti ha sorpreso di più?
 

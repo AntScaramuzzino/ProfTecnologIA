@@ -385,6 +385,8 @@ Se l'AI Coach fa un errore o ti dà una risposta che sembra inventata, segnalalo
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a coppie.** Intervistatevi a turno, due minuti a testa, partendo da due delle domande qui sotto. Poi ciascuno scrive in una riga la cosa più interessante detta dal compagno.
+
 **1. Sorpresa**
 C'è un dato nei tuoi grafici che ti ha sorpreso — un valore più alto o più basso di quello che ti aspettavi, o un pattern che non avresti previsto? Descrivi cosa hai visto e come hai provato a spiegarlo.
 

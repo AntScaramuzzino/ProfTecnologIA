@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-MAT-1-01", area: "MAT", classe: 1, titolo: "La stanza dei campioni",
-  ambientazione: "Sei rimasto chiuso nella stanza dei campioni di uno studio di design, dove i progettisti conservano pezzi di legno, metallo, plastica e vetro. La porta ha una serratura a combinazione e la progettista ha lasciato sul tavolo solo il suo quaderno di appunti.",
-  missione: "Risolvi i cinque enigmi del quaderno: ognuno si apre solo se conosci le proprietà dei materiali. Con i cinque simboli apri la porta.",
+  ambientazione: "Una progettista è partita per un viaggio e ha lasciato chiuso l'armadio dei campioni più rari del suo studio di design: pezzi di legno, metallo, plastica e vetro. Lo sportello ha una serratura a combinazione, e sul tavolo c'è solo il suo quaderno di appunti. Chi apre l'armadio potrà usare i campioni per il prossimo progetto.",
+  missione: "Risolvi i cinque enigmi del quaderno: ognuno si apre solo se conosci le proprietà dei materiali. Con i cinque simboli apri lo sportello dell'armadio.",
   lucchetti: [
     { titolo: "Il cassetto delle prove", tipo: "coppie",
       testo: "<p>Nel primo cassetto ci sono cinque cartellini con un fatto di tutti i giorni. Abbina ogni proprietà del materiale al fatto che la mostra.</p>",
@@ -41,6 +41,6 @@ ESCAPE.run({
       spiegazione: "Durezza e resistenza meccanica non sono la stessa cosa. Il diamante e la ghisa sono duri ma fragili; l'acciaio regge gli urti e, se cede, si piega prima di rompersi.", simbolo: "A" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La porta si apre. Hai ragionato come una progettista: hai riconosciuto le proprietà dei materiali, usato la scala di Mohs, calcolato densità e masse e distinto durezza da resistenza.",
+  vittoria: "Lo sportello si apre. Hai ragionato come una progettista: hai riconosciuto le proprietà dei materiali, usato la scala di Mohs, calcolato densità e masse e distinto durezza da resistenza.",
   fonte: "Valori di densità e di durezza tratti dal testo della MC; i problemi sono inventati a scopo didattico.",
 });

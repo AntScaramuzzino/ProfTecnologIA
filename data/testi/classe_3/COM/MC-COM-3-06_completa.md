@@ -508,6 +508,8 @@ Il SDG 16.10 chiede di garantire l'accesso pubblico all'informazione e protegger
 
 ### 🪞 Metacognizione — Rifletti sul tuo apprendimento
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 **1. Il bias personale**
 Hai trovato, durante questa MC, una notizia o un contenuto che hai condiviso in passato e che — dopo averla analizzata con i criteri del fact-checking — non avresti condiviso? Non devi rispondere sì o no: rispondi onestamente.
 

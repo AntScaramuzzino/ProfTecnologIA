@@ -671,6 +671,8 @@ Se l'AI Coach dà una risposta che ti sembra sbagliata o non verificabile, segna
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a coppie.** Intervistatevi a turno, due minuti a testa, partendo da due delle domande qui sotto. Poi ciascuno scrive in una riga la cosa più interessante detta dal compagno.
+
 Rispondi **dopo** aver consegnato la scheda.
 
 **1. Sorpresa**

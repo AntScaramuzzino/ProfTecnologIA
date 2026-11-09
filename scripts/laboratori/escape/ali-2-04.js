@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-ALI-2-04", area: "ALI", classe: 2, titolo: "Il centro di smistamento",
-  ambientazione: "Sei rimasto chiuso nella sala di controllo di un grande centro di distribuzione alimentare, durante una visita della classe. Un falso allarme ha bloccato tutte le porte e il responsabile della logistica può sbloccarle solo con un codice. Il codice è diviso in cinque parti, nascoste nei documenti di viaggio delle merci.",
-  missione: "Segui le merci lungo la filiera, fai i conti e valuta i trasporti: ogni lucchetto aperto ti dà un simbolo per la porta.",
+  ambientazione: "Un camion carico di prodotti freschi è fermo davanti alla baia di carico di un grande centro di distribuzione alimentare. Un falso allarme ha bloccato tutte le porte mentre la tua classe è in visita nella sala di controllo, e il responsabile della logistica può sbloccarle solo con un codice. Il codice è diviso in cinque parti, nascoste nei documenti di viaggio delle merci.",
+  missione: "Segui le merci lungo la filiera, fai i conti e valuta i trasporti: ogni lucchetto aperto ti dà un simbolo per riaprire la baia prima che il fresco si rovini.",
   lucchetti: [
     { titolo: "La bacheca dei produttori", tipo: "coppie",
       testo: "<p>Sulla bacheca ci sono i volantini di produttori e gruppi di acquisto che vorrebbero lavorare con il centro. Abbina ogni sigla o nome al modello di filiera che descrive.</p>",
@@ -33,6 +33,6 @@ ESCAPE.run({
       spiegazione: "Le t·km misurano peso e distanza, non le emissioni. Per confrontare l'impatto serve anche il mezzo: l'aereo cargo ha emissioni altissime per t·km, la nave bassissime, il camion sta in mezzo.", simbolo: "M" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "Le porte del centro si sbloccano. Hai riconosciuto i modelli di filiera, ricostruito un viaggio globale, calcolato chi guadagna e quanto pesa un trasporto, e capito che i numeri vanno letti insieme al mezzo usato.",
+  vittoria: "Le porte del centro si sbloccano e il camion scarica in tempo. Hai riconosciuto i modelli di filiera, ricostruito un viaggio globale, calcolato chi guadagna e quanto pesa un trasporto, e capito che i numeri vanno letti insieme al mezzo usato.",
   fonte: "Carichi e personaggi inventati a scopo didattico; prezzi, quote, tappe e definizioni tratti dal testo della micro-competenza.",
 });

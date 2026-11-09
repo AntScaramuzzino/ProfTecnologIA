@@ -469,6 +469,8 @@ Se l'AI Coach risponde qualcosa che non ti convince, cerca una seconda fonte. Ve
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 **1. Sorpresa**
 Quale alimento della tua casa ti ha più sorpreso — per come è conservato, per quanto dura, o per cosa hai trovato sull'etichetta?
 

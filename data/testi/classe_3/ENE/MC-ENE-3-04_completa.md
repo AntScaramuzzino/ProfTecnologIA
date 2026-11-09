@@ -604,6 +604,8 @@ Verifica sempre le risposte dell'AI confrontandole con il testo e con i tuoi cal
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: semaforo.** Accanto a ogni domanda segna un colore: verde se sai rispondere subito, giallo se devi pensarci, rosso se non lo sai. Rispondi per iscritto solo a una gialla. La rossa portala in classe come domanda.
+
 **1. Cosa non capivi prima e capisci adesso?**
 Prima di leggere questa MC, probabilmente non sapevi spiegare perché una lampadina si accende. Adesso sai che c'è una corrente, una tensione, e una resistenza che regolano tutto. Quale dei tre concetti ti era più oscuro all'inizio? Come lo spiegheresti adesso a un compagno che non ha letto questa MC?
 

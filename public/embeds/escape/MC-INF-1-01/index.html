@@ -387,8 +387,8 @@ svg.chart{width:100%;height:auto;display:block;max-width:760px}
 <script>
 ESCAPE.run({
   id: "MC-INF-1-01", area: "INF", classe: 1, titolo: "L'archivio dei pixel",
-  ambientazione: "Sei rimasto chiuso nel laboratorio dove la scuola sta digitalizzando le foto storiche del quartiere. La porta ha una serratura elettronica collegata allo scanner, e lo scanner capisce solo numeri scritti con 0 e 1. Sui tavoli ci sono un vecchio display a lampadine, una tabella ASCII e gli appunti del tecnico.",
-  missione: "Ragiona come un computer: ogni lucchetto aperto ti dà un simbolo. Con i cinque simboli sblocchi la porta del laboratorio.",
+  ambientazione: "Le fotografie storiche del quartiere sono custodite in un armadio blindato, nel laboratorio dove la scuola le sta digitalizzando. La serratura dell'armadio è collegata allo scanner, e lo scanner capisce solo numeri scritti con 0 e 1. Sui tavoli ci sono un vecchio display a lampadine, una tabella ASCII e gli appunti del tecnico.",
+  missione: "Ragiona come un computer: ogni lucchetto aperto ti dà un simbolo. Con i cinque simboli sblocchi lo sportello dell'armadio.",
   lucchetti: [
     { titolo: "Le etichette dei cassetti", tipo: "coppie",
       testo: "<p>Il primo armadio ha quattro cassetti con un'etichetta ciascuno, ma i cartellini con le spiegazioni sono caduti a terra. Rimetti ogni cartellino sotto l'etichetta giusta.</p>",
@@ -419,7 +419,7 @@ ESCAPE.run({
       spiegazione: "La compressione riduce lo spazio: con un fattore 10:1 le foto passano da 3.600 MB a circa 360 MB. La velocità del processore non c'entra con lo spazio, e togliere un colore risparmia solo un terzo e rovina le foto.", simbolo: "C" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La serratura scatta. Hai letto i numeri come li legge una macchina: bit e byte, conversione dal binario, codice ASCII, peso di una foto e compressione.",
+  vittoria: "La serratura scatta e le foto tornano alla luce. Hai letto i numeri come li legge una macchina: bit e byte, conversione dal binario, codice ASCII, peso di una foto e compressione.",
   fonte: "Lo scenario è inventato a scopo didattico; i calcoli usano 1 MB = 1.000.000 byte, come nel testo della MC.",
 });
 

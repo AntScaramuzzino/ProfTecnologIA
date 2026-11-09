@@ -352,6 +352,12 @@ a, button {
   color: #082f49;
 }
 
+.reading-flow blockquote[data-type="format"] {
+  border-color: #fb7185;
+  background: #fff1f2;
+  color: #4c0519;
+}
+
 /* Tabelle */
 .reading-flow .overflow-x-auto {
   -webkit-overflow-scrolling: touch;

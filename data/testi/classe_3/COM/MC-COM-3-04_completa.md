@@ -503,6 +503,8 @@ Progettare sistemi domotici per anziani non è solo tecnologia: è risposta all'
 
 ### 🪞 Metacognizione — Rifletti sul tuo progetto
 
+> 🎲 **Come farla questa volta: semaforo.** Accanto a ogni domanda segna un colore: verde se sai rispondere subito, giallo se devi pensarci, rosso se non lo sai. Rispondi per iscritto solo a una gialla. La rossa portala in classe come domanda.
+
 Rispondi a queste domande **dopo** aver consegnato il progetto.
 
 **1. Complessità del sistema**

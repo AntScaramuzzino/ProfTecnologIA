@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-DIS-3-01", area: "DIS", classe: 3, titolo: "Lo studio di design",
-  ambientazione: "Sei rimasto chiuso nello studio di design di una giovane agenzia, la sera prima della presentazione di una nuova sedia per le scuole. Il sistema di sicurezza ha bloccato la porta e il codice è nascosto nei materiali del progetto. Sulle pareti ci sono schizzi, render, prospettive e un prototipo di cartone.",
-  missione: "Risolvi i cinque problemi lasciati dal team: ogni soluzione ti dà un simbolo. Con i cinque simboli sblocchi la porta.",
+  ambientazione: "Domani una giovane agenzia di design presenta una nuova sedia per le scuole, ma stasera il prototipo è chiuso nella sala modelli: il sistema di sicurezza ha bloccato la porta. Il team è già partito e il codice è nascosto nei materiali del progetto. Sulle pareti dello studio ci sono schizzi, render, prospettive e un prototipo di cartone.",
+  missione: "Risolvi i cinque problemi lasciati dal team: ogni soluzione ti dà un simbolo. Con i cinque simboli sblocchi la porta della sala modelli.",
   lucchetti: [
     { titolo: "La bacheca dei disegni", tipo: "coppie",
       testo: "<p>Sulla bacheca ci sono quattro richieste e quattro tipi di disegno. Abbina a ogni richiesta il sistema di rappresentazione più adatto.</p>",
@@ -32,6 +32,6 @@ ESCAPE.run({
       spiegazione: "Nel test si mette il prototipo nelle mani degli utenti senza spiegare: quello che fanno e dicono mostra se il design funziona davvero. Il risultato di Davide non dimostra niente.", simbolo: "T" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La porta si apre. Hai scelto il sistema di rappresentazione giusto per ogni scopo, ricostruito il processo progettuale, applicato l'ergonomia e valutato un test con il metodo del design thinking.",
+  vittoria: "La porta si apre e la sedia è pronta per la presentazione. Hai scelto il sistema di rappresentazione giusto per ogni scopo, ricostruito il processo progettuale, applicato l'ergonomia e valutato un test con il metodo del design thinking.",
   fonte: "Agenzia, progetto e misure sono inventati a scopo didattico.",
 });

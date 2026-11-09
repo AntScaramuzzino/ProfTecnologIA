@@ -506,6 +506,8 @@ Se l'AI Coach ti dà una risposta che non ti convince, cercala su un sito di un 
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a voce.** A casa registra un messaggio vocale di un minuto, rispondendo a una sola delle domande qui sotto. Riascoltalo: se non è chiaro a te, rifallo. In classe racconti che cosa hai detto.
+
 **1. Sorpresa**
 C'è un imballaggio che pensavi fosse riciclabile e invece non lo è (o viceversa)? Quale, e cosa hai scoperto?
 

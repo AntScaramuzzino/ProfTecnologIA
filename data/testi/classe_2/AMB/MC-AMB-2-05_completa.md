@@ -495,6 +495,8 @@ Ricorda: verifica sempre le risposte dell'AI su almeno una fonte esterna. Le ris
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a voce.** A casa registra un messaggio vocale di un minuto, rispondendo a una sola delle domande qui sotto. Riascoltalo: se non è chiaro a te, rifallo. In classe racconti che cosa hai detto.
+
 **1. Sorpresa**
 C'è un dato che ti ha sorpreso di più in questa MC? Qual era la tua stima iniziale, e com'era il dato reale?
 

@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-DIS-2-02", area: "DIS", classe: 2, titolo: "Il manuale di montaggio",
-  ambientazione: "Sei rimasto chiuso nel retrobottega di una falegnameria che produce scaffali da montare a casa. La titolare è uscita e la porta del magazzino si apre solo con un codice. Per trovarlo devi completare le pagine del nuovo manuale di montaggio, tutto disegnato in assonometria.",
-  missione: "Correggi e completa i disegni del manuale: ogni pagina sistemata ti dà un simbolo. Con i cinque simboli apri la porta.",
+  ambientazione: "Un cliente aspetta al banco di una falegnameria il suo scaffale da montare a casa, ma lo scaffale è nel magazzino e la porta si apre solo con un codice. La titolare è uscita e ha lasciato un biglietto: il codice si trova completando le pagine del nuovo manuale di montaggio, tutto disegnato in assonometria.",
+  missione: "Correggi e completa i disegni del manuale: ogni pagina sistemata ti dà un simbolo. Con i cinque simboli apri la porta del magazzino.",
   lucchetti: [
     { titolo: "La legenda degli assi", tipo: "coppie",
       testo: "<p>Nella prima pagina la legenda è stata strappata. Abbina ogni regola al suo valore.</p>",
@@ -33,6 +33,6 @@ ESCAPE.run({
       spiegazione: "Nella cavaliera la profondità va moltiplicata per 0,5: 60 × 0,5 = 30 mm. Con la profondità intera l'oggetto sembra innaturalmente lungo.", simbolo: "5" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La porta si apre. Hai usato le regole dell'assonometria cavaliera e isometrica, il fattore di riduzione e il metodo del box per disegnare oggetti che sembrano solidi.",
+  vittoria: "La porta si apre e il cliente riparte con il suo scaffale. Hai usato le regole dell'assonometria cavaliera e isometrica, il fattore di riduzione e il metodo del box per disegnare oggetti che sembrano solidi.",
   fonte: "La falegnameria e gli oggetti sono inventati a scopo didattico.",
 });

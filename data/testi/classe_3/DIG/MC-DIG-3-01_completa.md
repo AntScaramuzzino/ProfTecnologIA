@@ -459,6 +459,8 @@ Ricorda: verifica sempre le risposte che ricevi.
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: prima e adesso.** Dividi il foglio in due colonne: «Prima pensavo…» e «Adesso penso…». Riempi almeno tre righe. Le domande qui sotto ti aiutano a trovare che cosa è cambiato.
+
 **1. Il momento del "finalmente funziona"**
 C'è stato un momento in cui il robot ha fatto esattamente quello che volevi per la prima volta? Descrivi cosa avevi cambiato nell'ultima iterazione e cosa ti aveva portato a fare quella modifica.
 

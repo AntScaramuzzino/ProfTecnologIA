@@ -335,6 +335,8 @@ Progettare un'infrastruttura digitale ben organizzata è la base di qualsiasi si
 
 ### 🪞 Metacognizione
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 1. Prima di questa MC, sapevi che il tuo dispositivo aveva decine di processi in esecuzione contemporaneamente? Come cambia il modo in cui lo vedi adesso?
 
 2. Hai mai perso un file perché non sapevi dove era salvato? Adesso che sai come funziona il file system, come organizzeresti diversamente i tuoi file?

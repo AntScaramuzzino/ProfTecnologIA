@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-AMB-2-06", area: "AMB", classe: 2, titolo: "La centrale dei dati",
-  ambientazione: "Sei rimasto chiuso nella centrale operativa della città di Vallenova, la stanza piena di schermi dove arrivano i dati di sensori, lampioni e cassonetti. Eri lì per un progetto di classe e un aggiornamento del software ha bloccato tutte le porte. L'ingegnera di turno è fuori e ti guida con la radio: il codice di riavvio è nascosto in cinque schermi.",
-  missione: "Risolvi i cinque problemi degli schermi della centrale: ognuno ti dà un simbolo del codice. Con i cinque simboli sblocchi le porte.",
+  ambientazione: "Nella città di Vallenova lampioni, semafori e cassonetti intelligenti si sono fermati tutti insieme. Un aggiornamento del software ha bloccato le porte della centrale operativa, la stanza piena di schermi dove tu sei entrato per un progetto di classe. L'ingegnera di turno è fuori e ti guida con la radio: il codice di riavvio è nascosto in cinque schermi.",
+  missione: "Risolvi i cinque problemi degli schermi della centrale: ognuno ti dà un simbolo del codice. Con i cinque simboli sblocchi le porte e la città riparte.",
   lucchetti: [
     { titolo: "Contare senza guardare", tipo: "scelta",
       testo: "<p>Sul primo schermo c'è una richiesta del Comune: «Vogliamo sapere quante persone a piedi attraversano piazza del Mercato ogni ora, e quanto tempo si fermano, senza riprendere i volti di nessuno.» Quale sensore scegli?</p>",
@@ -39,6 +39,6 @@ ESCAPE.run({
       spiegazione: "Una città è davvero smart se usa i dati per tutti: servizi distribuiti in modo equo, privacy protetta, partecipazione accessibile anche senza tecnologia, spazio per la vita reale delle persone.", simbolo: "E" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "Le porte della centrale si sbloccano. Hai scelto il sensore giusto, riconosciuto gli open data, calcolato costi e risparmi delle tecnologie urbane e fatto la domanda più importante: smart per chi?",
+  vittoria: "Le porte della centrale si sbloccano e i lampioni si riaccendono. Hai scelto il sensore giusto, riconosciuto gli open data, calcolato costi e risparmi delle tecnologie urbane e fatto la domanda più importante: smart per chi?",
   fonte: "La città di Vallenova, i costi e i risparmi dei problemi sono inventati a scopo didattico; percentuali e tipi di sensori dal testo della MC.",
 });

@@ -519,6 +519,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore o un calcolo sbagliato, s
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a coppie.** Intervistatevi a turno, due minuti a testa, partendo da due delle domande qui sotto. Poi ciascuno scrive in una riga la cosa più interessante detta dal compagno.
+
 *(Sezione ampliata — livello A)*
 
 **1. Sorpresa**

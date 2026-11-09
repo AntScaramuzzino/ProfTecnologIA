@@ -432,6 +432,8 @@ Se il Coach cita dati o percentuali, verifica sempre la fonte: i dati economici 
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a coppie.** Intervistatevi a turno, due minuti a testa, partendo da due delle domande qui sotto. Poi ciascuno scrive in una riga la cosa più interessante detta dal compagno.
+
 **1. Sorpresa**
 C'è un'impresa che hai analizzato che ti ha sorpreso — più grande di quanto pensassi, o in un settore inaspettato, o con connessioni che non avevi immaginato? Descrivi cosa hai scoperto.
 

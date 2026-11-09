@@ -446,6 +446,8 @@ L'AI Coach risponde solo su questa MC. Verifica sempre le sue risposte con il ri
 
 ### Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: semaforo.** Accanto a ogni domanda segna un colore: verde se sai rispondere subito, giallo se devi pensarci, rosso se non lo sai. Rispondi per iscritto solo a una gialla. La rossa portala in classe come domanda.
+
 **1. Sorpresa**
 Scegliendo l'oggetto, hai trovato qualcosa di inaspettato nelle sue dimensioni — una faccia che pensavi fosse quadrata ed è invece rettangolare, una profondità diversa da quello che immaginavi? Come ha influenzato il tuo disegno?
 

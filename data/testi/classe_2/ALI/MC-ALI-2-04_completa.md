@@ -505,6 +505,8 @@ Se l'AI Coach ti dà una risposta che sembra sbagliata, segna la domanda e discu
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: prima e adesso.** Dividi il foglio in due colonne: «Prima pensavo…» e «Adesso penso…». Riempi almeno tre righe. Le domande qui sotto ti aiutano a trovare che cosa è cambiato.
+
 Rispondi dopo aver consegnato la scheda. Non c'è risposta giusta: l'obiettivo è capire come hai imparato.
 
 **1. Sorpresa**

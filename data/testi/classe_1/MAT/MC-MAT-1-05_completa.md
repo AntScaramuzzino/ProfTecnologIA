@@ -654,6 +654,8 @@ Se l'AI Coach ti dà una risposta che ti sembra sbagliata, segnalalo. Valutare c
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a voce.** A casa registra un messaggio vocale di un minuto, rispondendo a una sola delle domande qui sotto. Riascoltalo: se non è chiaro a te, rifallo. In classe racconti che cosa hai detto.
+
 Rispondi a queste domande **dopo** aver consegnato la scheda. Non c'è risposta giusta: l'obiettivo è capire come hai ragionato.
 
 **1. Sorpresa**

@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-DIG-1-02", area: "DIG", classe: 1, titolo: "La notizia da fermare",
-  ambientazione: "Sei rimasto chiuso nella redazione del giornalino scolastico «Il Megafono», a un'ora dalla stampa. La caporedattrice ha bloccato la porta con un lucchetto a codice: in prima pagina c'è una notizia diventata virale nella chat della scuola e nessuno l'ha ancora verificata. Sulle scrivanie ci sono l'archivio, il computer della redazione e la bozza del titolo.",
-  missione: "Verifica la notizia con il metodo SIFT: ogni controllo superato ti dà un simbolo. Con i cinque simboli apri la porta prima che il giornale vada in stampa.",
+  ambientazione: "Manca un'ora alla stampa del giornalino scolastico «Il Megafono» e in prima pagina c'è una notizia diventata virale nella chat della scuola, che nessuno ha verificato. La caporedattrice ha chiuso con un lucchetto a codice la porta della sala stampa: il giornale non parte finché la notizia non è controllata. Sulle scrivanie ci sono l'archivio, il computer della redazione e la bozza del titolo.",
+  missione: "Verifica la notizia con il metodo SIFT: ogni controllo superato ti dà un simbolo. Con i cinque simboli apri la sala stampa prima che scada l'ora.",
   lucchetti: [
     { titolo: "Il cassetto dei domini", tipo: "coppie",
       testo: "<p>Il cassetto dell'archivio ha cinque etichette, una per ogni finale di indirizzo web. Abbina ogni dominio a che cosa ti dice del sito.</p>",

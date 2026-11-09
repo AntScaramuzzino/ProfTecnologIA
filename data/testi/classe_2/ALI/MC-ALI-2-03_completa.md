@@ -484,6 +484,8 @@ Se l'AI Coach ti dà un valore nutrizionale che ti sembra strano, confrontalo co
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 **1. Sorpresa**
 C'è qualcosa che hai scoperto sul tuo modo di mangiare che non sapevi — o che non ti aspettavi di trovare quando hai guardato i dati del diario?
 

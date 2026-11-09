@@ -592,6 +592,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore — e può farlo — segn
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: semaforo.** Accanto a ogni domanda segna un colore: verde se sai rispondere subito, giallo se devi pensarci, rosso se non lo sai. Rispondi per iscritto solo a una gialla. La rossa portala in classe come domanda.
+
 Rispondi a queste domande **dopo** aver consegnato le schede. Non c'è una risposta giusta: l'obiettivo è capire come hai imparato, non solo cosa hai imparato.
 
 ---

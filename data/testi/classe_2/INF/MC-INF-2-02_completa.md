@@ -339,6 +339,8 @@ La crittografia e la sicurezza digitale sono fondamentali per la democrazia nell
 
 ### 🪞 Metacognizione
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 1. Dopo questa MC, guardi diversamente i siti web che usi? C'è qualcosa che verificheresti che prima ignoravi?
 
 2. Hai mai ricevuto un'email di phishing? Adesso che sai come funziona, riesci a identificare i segnali di allarme?

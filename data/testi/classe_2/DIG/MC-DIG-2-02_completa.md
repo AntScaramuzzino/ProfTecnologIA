@@ -439,6 +439,8 @@ L'AI Coach risponde solo su questa MC. Nota: le informazioni legali dell'AI Coac
 
 ### Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 **1. Sorpresa**
 Hai scoperto qualcosa su come vengono raccolti i tuoi dati che non sapevi prima? Qual è la cosa che ti ha più sorpreso — un meccanismo tecnico, un diritto che non conoscevi, o una conseguenza che non avevi considerato?
 

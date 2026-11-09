@@ -535,6 +535,8 @@ L'AI Coach risponde solo su questa MC. Per i messaggi sospetti che ricevi nella 
 
 ### Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: prima e adesso.** Dividi il foglio in due colonne: «Prima pensavo…» e «Adesso penso…». Riempi almeno tre righe. Le domande qui sotto ti aiutano a trovare che cosa è cambiato.
+
 Rispondi dopo aver consegnato il compito.
 
 **1. La presa di coscienza**

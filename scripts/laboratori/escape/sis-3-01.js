@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-SIS-3-01", area: "SIS", classe: 3, titolo: "L'ufficio studi",
-  ambientazione: "Sei rimasto chiuso nell'ufficio studi di una catena di negozi di abbigliamento, dove gli analisti preparano i rapporti sui prezzi e sulle filiere. È venerdì sera e la porta blindata si apre solo con un codice.",
-  missione: "Ricostruisci il rapporto lasciato a metà dagli analisti: ogni sezione completata ti dà un simbolo. Con i cinque simboli esci dall'ufficio.",
+  ambientazione: "Lunedì una catena di negozi di abbigliamento deve pubblicare il suo rapporto su prezzi e filiere, ma gli analisti lo hanno lasciato a metà. I dati definitivi sono nella stanza blindata dell'ufficio studi, e la porta si apre solo con un codice. È venerdì sera e in ufficio ci sei solo tu.",
+  missione: "Ricostruisci il rapporto lasciato a metà dagli analisti: ogni sezione completata ti dà un simbolo. Con i cinque simboli apri la stanza blindata.",
   lucchetti: [
     { titolo: "Gli ingredienti della ricchezza", tipo: "coppie",
       testo: "<p>La prima pagina del rapporto parla di una fabbrica di jeans. Abbina ogni fattore di produzione all'esempio giusto.</p>",
@@ -40,6 +40,6 @@ ESCAPE.run({
       spiegazione: "Il PIL cresce anche per spese causate da eventi negativi. Non misura distribuzione, sostenibilità e qualità della vita: per questo esiste il Benessere Equo e Sostenibile.", simbolo: "B" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La porta si apre. Hai usato i concetti dell'economia per leggere la realtà: fattori di produzione, ciclo economico, inflazione, distribuzione del valore e limiti del PIL.",
+  vittoria: "La porta si apre e il rapporto può essere chiuso. Hai usato i concetti dell'economia per leggere la realtà: fattori di produzione, ciclo economico, inflazione, distribuzione del valore e limiti del PIL.",
   fonte: "Salario e jeans dal caso del testo della MC; l'indice dei prezzi e la città sono dati inventati a scopo didattico.",
 });

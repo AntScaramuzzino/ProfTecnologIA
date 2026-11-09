@@ -387,6 +387,8 @@ Capire il pensiero algoritmico non è solo informatica: è una competenza trasve
 
 ### 🪞 Metacognizione
 
+> 🎲 **Come farla questa volta: a coppie.** Intervistatevi a turno, due minuti a testa, partendo da due delle domande qui sotto. Poi ciascuno scrive in una riga la cosa più interessante detta dal compagno.
+
 **1.** Qual è la differenza tra come tu segui le istruzioni e come le segue un computer? Scrivi 2-3 righe.
 
 **2.** Hai trovato un passo "ovvio" che dovevi rendere esplicito? Quale? Perché lo davi per scontato?

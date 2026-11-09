@@ -387,8 +387,8 @@ svg.chart{width:100%;height:auto;display:block;max-width:760px}
 <script>
 ESCAPE.run({
   id: "MC-INF-3-02", area: "INF", classe: 3, titolo: "Il modello difettoso",
-  ambientazione: "Sei rimasto chiuso nel laboratorio di «Ascoltami», una piccola azienda inventata che sta addestrando un modello per consigliare canzoni. Il sistema che controlla la porta è collegato al modello, e il modello ha appena cominciato a sbagliare. Sulla scrivania ci sono i quaderni dei dati e i risultati dei test.",
-  missione: "Capisci come impara il modello e perché sbaglia: ogni lucchetto aperto ti dà un simbolo. Con i cinque simboli riaddestri il sistema e apri la porta.",
+  ambientazione: "«Ascoltami», una piccola azienda inventata, sta addestrando un modello per consigliare canzoni, e da stamattina il modello sbaglia tutto. La sala dei server è chiusa da un sistema collegato al modello stesso: finché non viene corretto, nessuno entra. Sulla scrivania ci sono i quaderni dei dati e i risultati dei test.",
+  missione: "Capisci come impara il modello e perché sbaglia: ogni lucchetto aperto ti dà un simbolo. Con i cinque simboli riaddestri il sistema e apri la porta della sala server.",
   lucchetti: [
     { titolo: "I tre quaderni", tipo: "coppie",
       testo: "<p>Sulla scrivania ci sono tre quaderni di progetto. Abbina ognuno al tipo di apprendimento che descrive.</p>",
@@ -418,7 +418,7 @@ ESCAPE.run({
       spiegazione: "Il bias viene dai dati, quindi si corregge bilanciando il dataset, ripetendo addestramento e validazione su dati nuovi e monitorando il modello dopo l'uso. Eliminare il gruppo nasconde il problema, non lo risolve.", simbolo: "V" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La porta si apre. Hai riconosciuto i tipi di apprendimento, smascherato l'overfitting, calcolato una probabilità e un'accuratezza, e corretto un bias partendo dai dati invece di nasconderlo.",
+  vittoria: "La porta si apre e il modello torna a consigliare bene. Hai riconosciuto i tipi di apprendimento, smascherato l'overfitting, calcolato una probabilità e un'accuratezza, e corretto un bias partendo dai dati invece di nasconderlo.",
   fonte: "L'azienda, i commenti e i risultati dei test sono inventati a scopo didattico.",
 });
 

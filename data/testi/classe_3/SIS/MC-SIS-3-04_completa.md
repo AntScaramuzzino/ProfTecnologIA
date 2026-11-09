@@ -437,6 +437,8 @@ Una nota importante: l'AI Coach può darti informazioni generali sulle professio
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 **1. Sorpresa**
 C'è una competenza che hai scoperto di avere, attraverso questa analisi del triennio, che non avevi riconosciuto prima? O una professione che non sapevi esistesse e che adesso ti sembra interessante? Descrivi la scoperta.
 

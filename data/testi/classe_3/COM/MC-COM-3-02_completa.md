@@ -508,6 +508,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore, segnalalo: è esattament
 
 ### Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a voce.** A casa registra un messaggio vocale di un minuto, rispondendo a una sola delle domande qui sotto. Riascoltalo: se non è chiaro a te, rifallo. In classe racconti che cosa hai detto.
+
 Rispondi a queste domande **dopo** aver consegnato il podcast. Non c'è una risposta giusta: l'obiettivo è capire come hai ragionato, non solo cosa hai prodotto.
 
 **1. Sorpresa**

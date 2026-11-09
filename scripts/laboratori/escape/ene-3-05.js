@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-ENE-3-05", area: "ENE", classe: 3, titolo: "Il museo dei motori",
-  ambientazione: "Sei rimasto chiuso nel deposito di un museo dei trasporti, fra una locomotiva a vapore, un'auto d'epoca e un'auto elettrica smontata. Il museo ha chiuso e la porta del deposito si apre con un codice. La guida ha nascosto gli indizi sui cartellini dei motori.",
-  missione: "Risolvi i cinque enigmi dei cartellini: ogni risposta giusta ti dà un simbolo. Con i cinque simboli esci dal deposito.",
+  ambientazione: "Il pezzo più raro di un museo dei trasporti non è in esposizione: è nel deposito, fra una locomotiva a vapore, un'auto d'epoca e un'auto elettrica smontata. La guida del museo ha preparato una caccia per le scuole: la porta del deposito si apre con un codice, e gli indizi sono nascosti sui cartellini dei motori.",
+  missione: "Risolvi i cinque enigmi dei cartellini: ogni risposta giusta ti dà un simbolo. Con i cinque simboli entri nel deposito.",
   lucchetti: [
     { titolo: "La galleria degli inventori", tipo: "coppie",
       testo: "<p>Sotto i ritratti della galleria le targhette sono cadute. Abbina ogni persona al suo contributo.</p>",

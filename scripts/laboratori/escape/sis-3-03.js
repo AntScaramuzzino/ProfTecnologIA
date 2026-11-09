@@ -1,7 +1,7 @@
 ESCAPE.run({
-  id: "MC-SIS-3-03", area: "SIS", classe: 3, titolo: "Una notte in incubatore",
-  ambientazione: "Sei rimasto chiuso in un incubatore di startup, uno spazio dove giovani imprese lavorano fianco a fianco fra lavagne, post-it e prototipi. Dopo la presentazione per le scuole tutti sono usciti e la porta si è bloccata.",
-  missione: "Risolvi le cinque sfide scritte sulle lavagne delle startup: servono le idee giuste per trasformare un'idea in impresa. Con i cinque simboli apri la porta.",
+  id: "MC-SIS-3-03", area: "SIS", classe: 3, titolo: "La sfida dell'incubatore",
+  ambientazione: "In un incubatore di startup, uno spazio dove giovani imprese lavorano fianco a fianco fra lavagne, post-it e prototipi, oggi è giornata di sfida per le scuole. Le startup hanno scritto cinque problemi sulle lavagne: chi li risolve tutti entra nella sala dei prototipi, di solito chiusa ai visitatori.",
+  missione: "Risolvi le cinque sfide scritte sulle lavagne delle startup: servono le idee giuste per trasformare un'idea in impresa. Con i cinque simboli apri la porta della sala dei prototipi.",
   lucchetti: [
     { titolo: "La bacheca dello statuto", tipo: "coppie",
       testo: "<p>Sulla bacheca ci sono quattro forme di impresa. Abbina ognuna alla sua caratteristica.</p>",

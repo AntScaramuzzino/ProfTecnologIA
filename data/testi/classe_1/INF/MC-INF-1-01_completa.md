@@ -437,6 +437,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore, segnalalo — verificare
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a voce.** A casa registra un messaggio vocale di un minuto, rispondendo a una sola delle domande qui sotto. Riascoltalo: se non è chiaro a te, rifallo. In classe racconti che cosa hai detto.
+
 **1. Il concetto più difficile**
 Qual è stata la cosa più difficile da capire in questa MC? Il sistema binario in sé? Le conversioni? Il calcolo delle dimensioni dei file? Descrivi il momento in cui "hai capito".
 

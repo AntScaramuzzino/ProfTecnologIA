@@ -351,6 +351,8 @@ Il machine learning può ridurre le disuguaglianze — o amplificarle. Dipende d
 
 ### 🪞 Metacognizione
 
+> 🎲 **Come farla questa volta: a voce.** A casa registra un messaggio vocale di un minuto, rispondendo a una sola delle domande qui sotto. Riascoltalo: se non è chiaro a te, rifallo. In classe racconti che cosa hai detto.
+
 1. Prima di questa MC, come descriveresti la tua idea di "intelligenza artificiale"? Come è cambiata adesso?
 
 2. Hai usato un sistema di raccomandazione oggi (YouTube, Spotify, TikTok, Netflix)? Adesso che sai come funziona, lo usi diversamente?

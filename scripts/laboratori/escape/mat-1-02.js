@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-MAT-1-02", area: "MAT", classe: 1, titolo: "L'archivio della felpa",
-  ambientazione: "Sei rimasto chiuso nell'archivio di un'azienda di abbigliamento, dove si ricostruisce la storia di ogni capo prima di metterlo in vendita. Sulla scrivania c'è il fascicolo di una felpa di cotone, ma alcune pagine sono chiuse con lucchetti.",
-  missione: "Ricostruisci il ciclo di vita della felpa, dal campo di cotone al fine vita. Ogni pagina aperta ti dà un simbolo: con i cinque simboli esci dall'archivio.",
+  ambientazione: "Per un giorno sei investigatore di filiera in un'azienda di abbigliamento, dove si ricostruisce la storia di ogni capo prima di metterlo in vendita. Il caso di oggi è una felpa di cotone: il suo fascicolo è sulla scrivania, ma alcune pagine sono chiuse con lucchetti e l'ultima parte è nell'archivio riservato.",
+  missione: "Ricostruisci il ciclo di vita della felpa, dal campo di cotone al fine vita. Ogni pagina aperta ti dà un simbolo: con i cinque simboli apri l'archivio riservato.",
   lucchetti: [
     { titolo: "Chi decide che cosa", tipo: "coppie",
       testo: "<p>La prima pagina elenca gli attori della catena del valore. Abbina ogni attore alla decisione che spetta a lui.</p>",
@@ -40,6 +40,6 @@ ESCAPE.run({
       spiegazione: "La variabile più importante è il volume prodotto: raccogliere capi mentre se ne produce il doppio fa crescere l'impatto. Presentarlo come sostenibile è greenwashing.", simbolo: "G" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "L'archivio si apre. Hai ricostruito il ciclo di vita di un oggetto, riconosciuto le responsabilità lungo la catena del valore e valutato l'effetto della durata e del fine vita.",
+  vittoria: "L'archivio si apre e il caso è chiuso. Hai ricostruito il ciclo di vita di un oggetto, riconosciuto le responsabilità lungo la catena del valore e valutato l'effetto della durata e del fine vita.",
   fonte: "Percorso della felpa e percentuali del fine vita tratti dal testo della MC; il fascicolo e il volantino sono inventati a scopo didattico.",
 });

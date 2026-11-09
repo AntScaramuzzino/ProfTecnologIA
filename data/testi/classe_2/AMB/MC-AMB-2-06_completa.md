@@ -471,6 +471,8 @@ Ricorda che le domande che riguardano i diritti e la governance dei dati non han
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a coppie.** Intervistatevi a turno, due minuti a testa, partendo da due delle domande qui sotto. Poi ciascuno scrive in una riga la cosa più interessante detta dal compagno.
+
 **1. Sorpresa**
 C'è qualcosa che hai scoperto sulla tua città in questa MC — o durante la ricerca degli open data — che non sapevi e che ti ha sorpreso?
 

@@ -428,6 +428,8 @@ Verifica sempre i dati che cita — i dati economici sono soggetti a revisione a
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: semaforo.** Accanto a ogni domanda segna un colore: verde se sai rispondere subito, giallo se devi pensarci, rosso se non lo sai. Rispondi per iscritto solo a una gialla. La rossa portala in classe come domanda.
+
 **1. Sorpresa**
 C'è un prodotto che hai analizzato la cui filiera ti ha sorpreso — o un dato sulla distribuzione del valore che non ti aspettavi? Descrivi cosa hai scoperto e cosa ha cambiato nel tuo modo di vedere quel prodotto.
 

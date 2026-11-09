@@ -474,6 +474,8 @@ Attenzione: l'AI può sbagliare sui numeri. Verifica sempre i dati quantitativi 
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 **1. Il concetto più sorprendente**
 Prima di questa MC, probabilmente sapevi che il motore elettrico è "più efficiente" del termico. Ma probabilmente non sapevi di quanto (90-95% vs 25-35%). Questa differenza di rendimento ti ha sorpreso? Perché pensi che il motore a combustione abbia dominato il mercato per oltre 100 anni nonostante questa inefficienza?
 

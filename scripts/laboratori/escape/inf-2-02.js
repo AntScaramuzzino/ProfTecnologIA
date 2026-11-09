@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-INF-2-02", area: "INF", classe: 2, titolo: "La sala delle cifre",
-  ambientazione: "Sei rimasto chiuso nella sala dei codici segreti di un piccolo museo della crittografia, durante una visita di classe. Il sistema di sicurezza ha bloccato la porta e chiede di dimostrare che sai proteggere un segreto. Intorno a te ci sono una macchina cifrante di legno, vecchi messaggi intercettati e il computer della biglietteria.",
-  missione: "Usa quello che sai su cifrari, chiavi e autenticazione: ogni lucchetto aperto ti dà un simbolo. Con i cinque simboli esci prima che il museo chiuda.",
+  ambientazione: "In un piccolo museo della crittografia l'ultima sala, quella dei codici segreti, non si visita con il biglietto. Il sistema di sicurezza apre la porta solo a chi dimostra di saper proteggere un segreto. Intorno a te ci sono una macchina cifrante di legno, vecchi messaggi intercettati e il computer della biglietteria.",
+  missione: "Usa quello che sai su cifrari, chiavi e autenticazione: ogni lucchetto aperto ti dà un simbolo. Con i cinque simboli entri nella sala prima che il museo chiuda.",
   lucchetti: [
     { titolo: "La bacheca delle chiavi", tipo: "coppie",
       testo: "<p>In una bacheca ci sono quattro oggetti con i cartellini mescolati. Rimetti ogni cartellino sotto l'oggetto giusto.</p>",

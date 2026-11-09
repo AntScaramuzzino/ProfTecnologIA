@@ -330,6 +330,8 @@ L'IoT è infrastruttura del futuro: rende le città più efficienti, l'agricoltu
 
 ### 🪞 Metacognizione
 
+> 🎲 **Come farla questa volta: prima e adesso.** Dividi il foglio in due colonne: «Prima pensavo…» e «Adesso penso…». Riempi almeno tre righe. Le domande qui sotto ti aiutano a trovare che cosa è cambiato.
+
 1. Prima di questa MC, sapevi quanti dispositivi intorno a te raccolgono dati? Come cambia la tua relazione con gli oggetti dopo questa MC?
 
 2. Qual è il confine tra un sistema IoT utile e un sistema di sorveglianza? Esiste una risposta oggettiva, o dipende dal contesto e dai valori?

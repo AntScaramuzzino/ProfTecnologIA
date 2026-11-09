@@ -1,6 +1,6 @@
 ESCAPE.run({
   id: "MC-ENE-3-02", area: "ENE", classe: 3, titolo: "La centrale spenta",
-  ambientazione: "Sei rimasto chiuso nella sala di controllo di una vecchia centrale termoelettrica, trasformata in museo dell'energia. Durante la visita una porta tagliafuoco si è chiusa alle tue spalle e si riapre solo con un codice. I pannelli del museo raccontano da dove vengono i combustibili e dove finisce la loro energia.",
+  ambientazione: "Una vecchia centrale termoelettrica è diventata un museo dell'energia, e il museo propone una sfida ai visitatori. In fondo al percorso c'è la sala delle turbine, dietro una porta tagliafuoco che si apre solo con un codice. I pannelli del museo raccontano da dove vengono i combustibili e dove finisce la loro energia: il codice è lì.",
   missione: "Risolvi i cinque quiz dei pannelli: ogni risposta giusta ti dà un simbolo. Con i cinque simboli sblocchi la porta tagliafuoco.",
   lucchetti: [
     { titolo: "La colonna di distillazione", tipo: "coppie",
@@ -32,6 +32,6 @@ ESCAPE.run({
       spiegazione: "Trasportare a tensione altissima riduce la corrente nei cavi e quindi il calore disperso per effetto Joule. Poi le cabine abbassano la tensione per le case.", simbolo: "V" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La porta tagliafuoco si apre. Hai riconosciuto i prodotti del petrolio e i tipi di carbone, calcolato la CO₂ della combustione e seguito l'energia dalla centrale alla presa, con le sue perdite.",
+  vittoria: "La porta tagliafuoco si apre e sei davanti alle turbine. Hai riconosciuto i prodotti del petrolio e i tipi di carbone, calcolato la CO₂ della combustione e seguito l'energia dalla centrale alla presa, con le sue perdite.",
   fonte: "La centrale e i suoi registri sono inventati; i rendimenti sono semplificati a scopo didattico.",
 });

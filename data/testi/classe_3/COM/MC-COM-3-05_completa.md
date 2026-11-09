@@ -439,6 +439,8 @@ La governance di internet è una questione di democrazia. Chi controlla l'access
 
 ### 🪞 Metacognizione — Rifletti sul tuo apprendimento
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 **1. Prima e dopo**
 Prima di studiare questa MC, pensavi a internet come a qualcosa di "fisico" o di "virtuale"? Cosa è cambiato in questo modo di pensarla?
 

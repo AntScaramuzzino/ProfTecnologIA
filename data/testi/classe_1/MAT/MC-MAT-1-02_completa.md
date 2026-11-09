@@ -561,6 +561,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore, segnalalo.
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 Rispondi a queste domande **dopo** aver consegnato la scheda. Non c'è una risposta giusta.
 
 **1. Sorpresa**

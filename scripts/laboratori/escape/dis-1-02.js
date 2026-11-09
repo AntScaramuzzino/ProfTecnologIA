@@ -1,6 +1,6 @@
 ESCAPE.run({
   id: "MC-DIS-1-02", area: "DIS", classe: 1, titolo: "L'archivio delle tavole",
-  ambientazione: "Sei rimasto chiuso nell'archivio di uno studio tecnico, fra cassettiere piene di tavole arrotolate. La porta ha un tastierino e la tecnica che lo ha programmato ha lasciato solo cinque cartellette numerate. In ognuna c'è un problema di scale e quote.",
+  ambientazione: "Domani lo studio tecnico deve consegnare una tavola che si trova nell'archivio, fra cassettiere piene di disegni arrotolati. La porta dell'archivio ha un tastierino, e la tecnica che lo ha programmato è in ferie: ha lasciato solo cinque cartellette numerate. In ognuna c'è un problema di scale e quote.",
   missione: "Risolvi i problemi delle cartellette: ogni risposta giusta ti dà un simbolo. Con i cinque simboli sblocchi il tastierino della porta.",
   lucchetti: [
     { titolo: "La cassettiera delle scale", tipo: "coppie",
@@ -34,6 +34,6 @@ ESCAPE.run({
       spiegazione: "Le lunghezze si sono ridotte al 70,7%, quindi la nuova scala è 1 : (50 ÷ 0,707) ≈ 1:71. Per arrivare a 1:100 bisognerebbe ridurre le lunghezze al 50%. Le quote invece restano giuste, perché indicano le misure reali.", simbolo: "7" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "Il tastierino diventa verde e la porta si apre. Hai scelto le scale adatte, convertito misure reali e misure sul disegno e capito che le quote indicano sempre la misura vera.",
+  vittoria: "Il tastierino diventa verde e la porta dell'archivio si apre: la tavola parte in tempo. Hai scelto le scale adatte, convertito misure reali e misure sul disegno e capito che le quote indicano sempre la misura vera.",
   fonte: "Lo studio tecnico e le misure sono inventati a scopo didattico.",
 });

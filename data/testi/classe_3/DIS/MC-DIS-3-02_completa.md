@@ -463,6 +463,8 @@ Se la risposta è sbagliata, segnalalo: identificare gli errori dei sistemi IA �
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 **1. Difficoltà tecnica**
 Quale operazione in Tinkercad ti ha creato più difficoltà — allineamento, rotazione, subtrazione, raggruppamento? Descrivi esattamente dove ti sei bloccato e come hai risolto.
 

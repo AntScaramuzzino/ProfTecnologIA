@@ -481,6 +481,8 @@ L'AI Coach risponde solo su questa MC. Se ti suggerisce un approccio diverso dal
 
 ### Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: semaforo.** Accanto a ogni domanda segna un colore: verde se sai rispondere subito, giallo se devi pensarci, rosso se non lo sai. Rispondi per iscritto solo a una gialla. La rossa portala in classe come domanda.
+
 **1. Sorpresa**
 C'è stata una funzionalità che pensavi fosse semplice da programmare e invece si è rivelata più complessa? O al contrario, qualcosa che ti sembrava difficile e si è rivelato più semplice del previsto? Descrivi.
 

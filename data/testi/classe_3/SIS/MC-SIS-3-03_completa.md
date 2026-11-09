@@ -426,6 +426,8 @@ Ricorda: l'AI Coach conosce i concetti generali, ma non conosce il tuo problema 
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 **1. Sorpresa**
 C'è stata una cosa del processo — nelle interviste, nella compilazione del BMC, nella presentazione — che ti ha sorpreso o che non ti aspettavi? Descrivi cosa è successo.
 

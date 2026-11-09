@@ -385,6 +385,8 @@ Se il Coach risponde in modo tecnico incomprensibile, chiedigli di spiegarlo con
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: semaforo.** Accanto a ogni domanda segna un colore: verde se sai rispondere subito, giallo se devi pensarci, rosso se non lo sai. Rispondi per iscritto solo a una gialla. La rossa portala in classe come domanda.
+
 **1. Sorpresa**
 C'è stata una barriera digitale che hai trovato nel sito analizzato che non ti aspettavi — o un tipo di utente escluso a cui non avevi mai pensato prima? Descrivi cosa hai scoperto.
 

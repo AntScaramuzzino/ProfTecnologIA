@@ -451,6 +451,8 @@ Nota: l'AI Coach è lui stesso un algoritmo — risponde seguendo una sequenza d
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: biglietto d'uscita.** Scegli una sola domanda qui sotto e rispondi. Poi scrivi su un foglietto tre cose: una che hai capito, una che non ti è chiara, una che vuoi provare. Consegnalo uscendo dall'aula.
+
 ---
 
 **1. Sorpresa**

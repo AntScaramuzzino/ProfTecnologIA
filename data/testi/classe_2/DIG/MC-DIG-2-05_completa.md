@@ -413,6 +413,8 @@ Nota: l'AI Coach è uno strumento digitale. Mentre lo usi, presta attenzione a c
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: a voce.** A casa registra un messaggio vocale di un minuto, rispondendo a una sola delle domande qui sotto. Riascoltalo: se non è chiaro a te, rifallo. In classe racconti che cosa hai detto.
+
 ---
 
 **1. Sorpresa**

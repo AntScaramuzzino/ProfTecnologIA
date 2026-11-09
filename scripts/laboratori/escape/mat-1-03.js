@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-MAT-1-03", area: "MAT", classe: 1, titolo: "Il laboratorio del futuro",
-  ambientazione: "Sei rimasto chiuso di sera in un laboratorio universitario di scienza dei materiali, durante una visita con la classe. Nelle teche ci sono campioni di materiali che fino a pochi anni fa non esistevano, e ogni teca ha un lucchetto.",
-  missione: "Apri le cinque teche usando quello che sai sui materiali innovativi: ognuna ti dà un simbolo. Con i cinque simboli sblocchi l'uscita.",
+  ambientazione: "La tua classe è in visita a un laboratorio universitario di scienza dei materiali, e la ricercatrice lancia una sfida. Nelle teche ci sono campioni di materiali che fino a pochi anni fa non esistevano, e ogni teca ha un lucchetto. Chi le apre tutte entra nella sala del microscopio elettronico.",
+  missione: "Apri le cinque teche usando quello che sai sui materiali innovativi: ognuna ti dà un simbolo. Con i cinque simboli sblocchi la porta della sala del microscopio.",
   lucchetti: [
     { titolo: "Le etichette cadute", tipo: "coppie",
       testo: "<p>Le etichette delle teche sono cadute a terra. Rimetti ogni materiale accanto alla sua descrizione.</p>",
@@ -41,6 +41,6 @@ ESCAPE.run({
       spiegazione: "Una bioplastica compostabile, senza raccolta dedicata, non è migliore della plastica comune. Qui la scelta più solida è evitare il rifiuto con posate che durano.", simbolo: "R" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "L'uscita si sblocca. Hai riconosciuto i materiali innovativi, distinto bio-based da biodegradabile, fatto i conti con dati reali e valutato la sostenibilità nel sistema in cui un materiale viene usato.",
+  vittoria: "La porta della sala si sblocca. Hai riconosciuto i materiali innovativi, distinto bio-based da biodegradabile, fatto i conti con dati reali e valutato la sostenibilità nel sistema in cui un materiale viene usato.",
   fonte: "Dati sul PET riciclato e sul grafene tratti dal testo della MC; azienda, paese e sagra sono inventati a scopo didattico.",
 });

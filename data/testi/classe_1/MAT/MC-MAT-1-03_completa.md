@@ -534,6 +534,8 @@ L'AI Coach risponde solo su questa MC. Se fa un errore, segnalalo: verificare le
 
 ### 🪞 Metacognizione — Rifletti sul tuo lavoro
 
+> 🎲 **Come farla questa volta: lettera a chi comincia.** Scrivi cinque righe a un alunno che farà questa unità l'anno prossimo: che cosa è difficile, che cosa aiuta, quale sbaglio evitare. Usa le domande qui sotto come spunto.
+
 **1. Sorpresa**
 Di tutti i materiali innovativi che hai incontrato in questa MC, quale ti ha sorpreso di più — per le sue proprietà, per come viene prodotto, o per i suoi limiti?
 

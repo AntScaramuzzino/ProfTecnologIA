@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-AMB-2-01", area: "AMB", classe: 2, titolo: "La baracca del cantiere",
-  ambientazione: "Sei rimasto chiuso nella baracca di un cantiere dove si restaura un vecchio palazzo degli anni Cinquanta. La direttrice dei lavori ha chiuso il portone ed è andata a pranzo con il telefono spento. Sul tavolo ci sono le tavole del progetto, un metro e un lucchetto a combinazione.",
-  missione: "Risolvi i cinque problemi lasciati sulle tavole del progetto: ogni risposta giusta ti dà un simbolo. Con i cinque simboli apri il portone.",
+  ambientazione: "Gli operai aspettano davanti al portone di un vecchio palazzo degli anni Cinquanta da restaurare, ma il portone è chiuso con un lucchetto a combinazione. La direttrice dei lavori è a pranzo con il telefono spento e tu sei l'unico rimasto nella baracca del cantiere. Sul tavolo ci sono le tavole del progetto e un metro: la combinazione è nascosta lì.",
+  missione: "Risolvi i cinque problemi lasciati sulle tavole del progetto: ogni risposta giusta ti dà un simbolo. Con i cinque simboli apri il portone e il cantiere riparte.",
   lucchetti: [
     { titolo: "Il viaggio del peso", tipo: "ordine",
       testo: "<p>Sulla prima tavola c'è lo schema di un palazzo con telaio in cemento armato. Le frecce sono state cancellate. Rimetti in ordine il percorso che fanno i carichi, dall'alto verso il basso.</p>",
@@ -41,6 +41,6 @@ ESCAPE.run({
       spiegazione: "In un palazzo in muratura i muri centrali sono spesso portanti; in un telaio in cemento armato invece le pareti interne si possono togliere. L'unico modo sicuro è leggere il progetto con un tecnico strutturale.", simbolo: "T" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "Il portone si apre. Hai seguito il percorso dei carichi, scelto le fondazioni in base al terreno, calcolato come si piega una trave e quanto pesa un materiale, e ragionato come chi lavora davvero sulle strutture.",
+  vittoria: "Il portone si apre e gli operai entrano. Hai seguito il percorso dei carichi, scelto le fondazioni in base al terreno, calcolato come si piega una trave e quanto pesa un materiale, e ragionato come chi lavora davvero sulle strutture.",
   fonte: "Problemi e numeri inventati a scopo didattico; pesi dei materiali e regola della freccia dal testo della MC.",
 });

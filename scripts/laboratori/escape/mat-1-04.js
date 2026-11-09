@@ -1,7 +1,7 @@
 ESCAPE.run({
   id: "MC-MAT-1-04", area: "MAT", classe: 1, titolo: "Notte al centro di selezione",
-  ambientazione: "Sei rimasto chiuso nella sala di controllo di un centro di selezione dei rifiuti, dove i nastri trasportatori separano plastica, metalli, carta e vetro. Il turno è finito e la porta si apre solo con il codice del capoturno.",
-  missione: "Risolvi i cinque controlli lasciati sul pannello: ogni risposta giusta accende un simbolo. Con i cinque simboli apri la porta.",
+  ambientazione: "In un centro di selezione dei rifiuti i nastri che separano plastica, metalli, carta e vetro si sono fermati, e all'alba arrivano i camion. Per farli ripartire bisogna entrare nella sala quadri, ma la porta si apre solo con il codice del capoturno, che ha finito il turno. Sul pannello accanto alla porta ha lasciato cinque controlli.",
+  missione: "Risolvi i cinque controlli lasciati sul pannello: ogni risposta giusta accende un simbolo. Con i cinque simboli apri la porta della sala quadri.",
   lucchetti: [
     { titolo: "Il cartello della gerarchia", tipo: "ordine",
       testo: "<p>Sul muro c'è il cartello delle 5 R, ma le frecce sono state staccate. Rimetti le strategie in ordine, <strong>dalla migliore per l'ambiente alla peggiore</strong>.</p>",
@@ -46,6 +46,6 @@ ESCAPE.run({
       spiegazione: "La materia organica in discarica produce biogas ricco di metano per anni. Raccolta a parte diventa compost o biogas recuperato: è riciclo, non smaltimento.", simbolo: "M" },
   ],
   porta: "Inserisci i cinque simboli nell'ordine in cui li hai trovati.",
-  vittoria: "La porta si apre. Hai usato la gerarchia delle 5 R, conosciuto le filiere di riciclo, calcolato con i dati della raccolta e capito perché certi rifiuti si perdono e altri inquinano.",
+  vittoria: "La porta si apre e i nastri ripartono. Hai usato la gerarchia delle 5 R, conosciuto le filiere di riciclo, calcolato con i dati della raccolta e capito perché certi rifiuti si perdono e altri inquinano.",
   fonte: "Percentuale di differenziata e filiere di riciclo tratte dal testo della MC; il Comune del racconto è inventato a scopo didattico.",
 });
