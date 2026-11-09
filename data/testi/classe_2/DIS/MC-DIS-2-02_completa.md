@@ -20,6 +20,79 @@ Quella rappresentazione non è prospettiva — è assonometria. Ed è uno dei si
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Le tre viste delle proiezioni ortogonali sono precise, ma chi non ha studiato disegno fatica a "vedere" l'oggetto. Le figure dei manuali di montaggio fanno un'altra cosa: mostrano l'oggetto intero, con tre facce insieme. Quel disegno è un'**assonometria**.
+
+**L'idea**
+
+In un'assonometria l'oggetto è disegnato lungo tre **assi**, tre direzioni che partono dallo stesso punto: uno per la larghezza, uno per l'altezza, uno per la profondità. Le misure si riportano su questi assi.
+
+Il risultato sembra solido, ma resta misurabile. E ha una caratteristica che lo distingue dalla prospettiva: le linee che nell'oggetto sono parallele restano parallele anche nel disegno.
+
+> ✋ **Tocca a te.** Disegna un dado da gioco a mano libera, in modo che si vedano tre facce. Fatto? Guarda i tuoi spigoli: quelli che nel dado vero sono paralleli lo sono anche nel disegno? Tienilo: tra poco lo confronti.
+
+**L'assonometria cavaliera**
+
+È la più facile da disegnare a mano.
+
+- La larghezza va in orizzontale.
+- L'altezza va in verticale.
+- La profondità va in obliquo, a 45°.
+
+Larghezza e altezza si disegnano con la misura vera. La profondità si disegna **dimezzata**. Se un oggetto è profondo 60 mm, sull'asse obliquo ne segni 30. Senza questa riduzione sembrerebbe troppo lungo.
+
+Il suo punto forte: la faccia davanti resta identica a com'è davvero. Un rettangolo resta un rettangolo, un cerchio resta un cerchio.
+
+Come si costruisce una scatola:
+
+1. segna un punto di partenza;
+2. traccia i tre assi: orizzontale, verticale, obliquo a 45°;
+3. riporta larghezza e altezza vere, e metà della profondità;
+4. completa le facce con linee parallele agli assi.
+
+**L'assonometria isometrica**
+
+Qui nessuna faccia è privilegiata: le tre si vedono allo stesso modo.
+
+- L'altezza va in verticale.
+- Larghezza e profondità vanno in obliquo, a 30° dall'orizzontale, una verso destra e una verso sinistra.
+
+Le misure si riportano tutte vere, senza dimezzare niente: è da qui che viene il nome, "stessa misura". In cambio tutte le facce risultano deformate: i rettangoli diventano parallelogrammi.
+
+**Quale scegliere**
+
+| Caratteristica | Cavaliera | Isometrica |
+|---|---|---|
+| Asse della profondità | a 45°, misura dimezzata | a 30°, misura vera |
+| Faccia davanti | non deformata | deformata |
+| Va bene per | oggetti con una faccia importante | oggetti da mostrare in modo equilibrato |
+
+**Oggetti complicati: il metodo della scatola**
+
+Per disegnare un oggetto dalla forma complessa:
+
+1. immagina la scatola più piccola che lo contiene tutto;
+2. disegna quella scatola in assonometria;
+3. "scolpiscila": togli i pezzi che mancano, aggiungi quelli che sporgono;
+4. cancella le linee che non servono.
+
+**E i cerchi?**
+
+Un cerchio visto di sbieco diventa un ovale, che in geometria si chiama **ellisse**. Guarda l'orlo di un bicchiere tenuto un po' inclinato: è quello. Nella cavaliera resta cerchio solo quello sulla faccia davanti.
+
+> ✋ **Tocca a te.** Riprendi il dado di prima. Assomiglia di più a una cavaliera o a un'isometrica? Ora ridisegnalo in cavaliera con il righello: 4 cm di larghezza, 4 di altezza. Quanti centimetri segni sulla profondità?
+
+> 📍 **Qui da noi.** Cerca a casa un manuale di montaggio o le istruzioni di un gioco di costruzioni. Guarda una figura: gli spigoli paralleli restano paralleli? È un'assonometria. Prova a capire se somiglia più alla cavaliera o all'isometrica e portala in classe.
+
+**In tre righe**
+
+- L'assonometria mostra tre facce insieme e mantiene parallele le linee parallele.
+- Cavaliera: profondità a 45° e dimezzata, faccia davanti intatta.
+- Isometrica: due assi a 30°, tutte le misure vere.
+
+---
+
 ### Il problema delle proiezioni ortogonali
 
 Nella MC-DIS-2-01 hai imparato le proiezioni ortogonali: un oggetto viene rappresentato in tre viste separate (frontale, laterale, pianta), ognuna delle quali mostra due dimensioni. Il sistema è preciso e misurabile, ed è quello che si usa per costruire oggetti.

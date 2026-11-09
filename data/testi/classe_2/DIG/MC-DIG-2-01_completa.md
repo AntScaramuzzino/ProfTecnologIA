@@ -12,13 +12,79 @@
 > *(Script completo: MC-DIG-2-01_hook-script.md)*
 
 **Domanda di avvio:**
-Il semaforo davanti alla tua scuola segue una sequenza: rosso, verde, giallo, rosso. Sembra il programma più semplice del mondo. Ma immagina due semafori di un incrocio che danno il verde contemporaneamente a percorsi che si incrociano: un errore nelle regole può creare un pericolo. È un esempio immaginario per ragionare sul codice, non la causa documentata di un incidente storico.
+Il semaforo davanti alla tua scuola segue una sequenza: rosso, verde, giallo, rosso. Sembra il programma più semplice del mondo. Ma immagina che, per un errore nel programma, i due semafori di un incrocio diano il verde nello stesso momento. Basta una riga sbagliata.
 
 Scrivere istruzioni per una macchina sembra facile. Non lo è. Adesso impari come si fa davvero.
 
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Programmare non vuol dire scrivere righe incomprensibili. Vuol dire spiegare a una macchina, senza lasciare dubbi, che cosa deve fare. Prima del codice viene un modo di ragionare.
+
+**Pensare prima di programmare**
+
+Questo modo di ragionare si chiama **pensiero computazionale** e ha quattro mosse.
+
+1. **Scomporre**: dividere un problema grande in pezzi piccoli. "Fare un quiz" è troppo. "Mostrare una domanda" si può fare.
+2. **Riconoscere gli schemi**: accorgersi di ciò che si ripete. Tutte le domande di un quiz funzionano allo stesso modo.
+3. **Astrarre**: tenere quello che conta e lasciar perdere i dettagli. All'inizio il colore dello sfondo non importa.
+4. **Scrivere l'algoritmo**: mettere in fila i passi esatti.
+
+**Tre strutture bastano**
+
+Ogni programma, dal videogioco al sistema di un aereo, è fatto con tre sole strutture.
+
+- **Sequenza**: un'istruzione dopo l'altra, in ordine.
+- **Selezione**: una scelta. SE la risposta è giusta ALLORA aggiungi un punto, ALTRIMENTI mostra la correzione.
+- **Iterazione**: una ripetizione, detta anche ciclo. "Ripeti per tutte le domande."
+
+> ✋ **Tocca a te.** Pensa a un videogioco che conosci. Trova un esempio di selezione ("se tocchi un nemico…") e uno di iterazione ("finché hai vite…"). Scrivili come farebbe un programmatore, con SE e FINCHÉ.
+
+**La memoria del programma**
+
+Una **variabile** è una scatola con un nome che contiene un valore. Il valore può cambiare mentre il programma gira. Nel quiz, la variabile `punteggio` parte da 0 e cresce di 1 a ogni risposta giusta.
+
+Una **lista** è una variabile che contiene tanti valori in fila: tutte le domande del quiz, per esempio.
+
+**Scratch: il codice a incastro**
+
+**Scratch** è un ambiente di programmazione creato dal MIT, una grande università americana. Il codice non si scrive: si costruisce incastrando blocchi colorati, come un puzzle. Un blocco entra solo dove ha senso metterlo.
+
+Le parole da conoscere:
+
+- lo **stage** è il palcoscenico dove vedi il programma funzionare;
+- lo **sprite** è un personaggio o un oggetto sullo stage; ognuno ha il suo codice;
+- lo script è una pila di blocchi che dice a uno sprite che cosa fare.
+
+Uno script non parte da solo. Parte quando succede qualcosa: un **evento**. "Quando si clicca la bandiera verde", "quando si preme un tasto". Gli sprite possono anche mandarsi messaggi tra loro per coordinarsi.
+
+**Quando non funziona**
+
+Un errore nel programma si chiama **bug**; cercarlo e correggerlo si chiama **debug**. Non è un incidente: è la parte più lunga del lavoro di chi programma.
+
+Gli errori più insidiosi sono quelli di logica. Il programma gira senza protestare, ma fa una cosa diversa da quella che volevi.
+
+Come si cercano:
+
+1. fai ripetere l'errore, sempre nello stesso modo;
+2. controlla un pezzo di codice alla volta;
+3. guarda quanto valgono le variabili mentre il programma gira;
+4. leggi il codice ad alta voce a un compagno. Spesso l'errore salta fuori mentre lo spieghi.
+
+> ✋ **Tocca a te.** Caccia al bug. Un quiz dà un punto anche quando la risposta è sbagliata. Secondo te, in quale delle tre strutture si nasconde l'errore: nella sequenza, nella selezione o nell'iterazione? Perché?
+
+> 📍 **Qui da noi.** Quale problema della tua scuola si potrebbe risolvere con un piccolo programma? Un quiz per ripassare, un sorteggio per le interrogazioni, un timer per i turni? Scrivi l'idea e scomponila in tre pezzi piccoli.
+
+**In tre righe**
+
+- Prima di programmare si scompone il problema e si scrive l'algoritmo.
+- Bastano tre strutture: sequenza, selezione, iterazione.
+- In Scratch il codice si costruisce a blocchi, e trovare i bug fa parte del lavoro.
+
+---
 
 ### Prima del codice: il pensiero computazionale
 

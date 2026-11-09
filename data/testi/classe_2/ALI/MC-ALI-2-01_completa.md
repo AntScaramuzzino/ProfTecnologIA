@@ -23,6 +23,52 @@ Inizia da una pianta, da un campo, da un agricoltore che conosce la terra.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Una mela, un piatto di pasta, una foglia di insalata: tutto comincia mesi prima, in un campo. Il risultato dipende da quattro cose: il suolo, il clima, l'acqua e le scelte di chi coltiva. La scienza che le studia si chiama **agronomia**.
+
+**Il suolo è vivo**
+
+Il suolo non è terra morta. In un cucchiaio di terreno sano vivono circa un miliardo di batteri. È fatto di minerali, aria, acqua e **humus**, la parte scura che nasce da foglie e resti decomposti e che nutre le piante.
+
+Un suolo ricco si dice **fertile**. Per formarne un solo centimetro la natura impiega da cento a mille anni. Coltivato male, si perde in pochi decenni.
+
+> ✋ **Tocca a te.** Di che cosa ha bisogno una pianta per crescere? Scrivi la tua lista prima di continuare. Poi controlla quante cose avevi previsto.
+
+**Che cosa mangia una pianta**
+
+Una pianta si costruisce da sola con la **fotosintesi**: usa la luce del sole, l'acqua e l'anidride carbonica dell'aria per produrre zucchero. Dal suolo prende i minerali, soprattutto tre: azoto per le foglie, fosforo per radici e fiori, potassio per i frutti.
+
+Se il suolo ne ha pochi, l'agricoltore li aggiunge con la **concimazione**: letame e compost, oppure concimi prodotti in fabbrica.
+
+**Un trucco vecchio duemila anni**
+
+Se semini grano nello stesso campo per dieci anni, il suolo si impoverisce e i parassiti del grano si moltiplicano. La soluzione è la **rotazione delle colture**: ogni anno si cambia pianta. Un anno grano, l'anno dopo fagioli o piselli. I legumi fanno un regalo al campo: nelle loro radici vivono batteri che rimettono azoto nel terreno.
+
+**Tre modi di coltivare**
+
+- L'**agricoltura convenzionale** usa concimi e pesticidi chimici e grandi macchine. Produce molto, ma a lungo andare stanca il suolo e inquina l'acqua.
+- L'**agricoltura biologica** rinuncia ai prodotti chimici di sintesi. Produce un po' meno e costa di più, ma rispetta di più il terreno.
+- L'**idroponica** coltiva senza terra: le radici stanno in acqua con i nutrienti sciolti dentro. Consuma molta meno acqua e si può fare anche in città, dentro un capannone.
+
+**L'acqua: il numero da ricordare**
+
+L'agricoltura usa il 70% dell'acqua dolce che l'umanità consuma. Come la si dà alle piante fa una grande differenza. Allagare il campo ne spreca tantissima. L'**irrigazione a goccia** porta l'acqua con tubicini direttamente alle radici, e ne risparmia moltissima.
+
+Una **serra** risolve un altro problema: protegge le piante e permette di coltivare anche fuori stagione. Per questo trovi i pomodori a gennaio.
+
+> ✋ **Tocca a te.** Pensa all'ultima verdura o all'ultimo frutto che hai mangiato. È di stagione in questo mese? Se non lo è, da dove può essere arrivato: da una serra o da un altro paese?
+
+> 📍 **Qui da noi.** Che cosa si coltiva intorno al tuo paese? Chiedi a un nonno, a un agricoltore o a chi vende al mercato: quali prodotti della zona si raccolgono in questo mese? Come vengono irrigati? Porta in classe la tua intervista.
+
+**In tre righe**
+
+- Il cibo nasce da suolo, clima, acqua e scelte di chi coltiva.
+- Un suolo fertile è vivo, e si protegge anche cambiando coltura ogni anno.
+- L'agricoltura usa il 70% dell'acqua dolce: come si irriga conta moltissimo.
+
+---
+
 ### Il cibo inizia dal suolo. E il suolo non è scontato.
 
 Quando mangi una mela, un piatto di pasta o una foglia di insalata, stai mangiando il risultato di un processo lungo mesi. Un processo che dipende da quattro elementi fondamentali: il **suolo**, il **clima**, l'**acqua** e le **scelte tecniche** di chi coltiva. Se uno di questi elementi manca o è sbilanciato, il raccolto fallisce. Se tutti sono in equilibrio, nascono gli alimenti che arrivano sulla tua tavola.

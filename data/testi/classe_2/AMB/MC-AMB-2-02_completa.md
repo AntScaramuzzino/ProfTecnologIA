@@ -23,6 +23,60 @@ Come funziona questa "perdita invisibile"? E come si può fermare?
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Una casa non è fatta solo di muri. Dentro le pareti e sotto il pavimento corrono gli **impianti**: le reti che portano corrente, acqua, gas e calore. Non si vedono, ma decidono quanto consumi e quanto sei al sicuro.
+
+**L'impianto elettrico**
+
+La corrente arriva dalla strada e passa per il **contatore**, che misura quanta ne usi. Poi entra nel **quadro elettrico**, la scatola con gli interruttori vicino all'ingresso.
+
+Lì dentro c'è il dispositivo più importante della casa: il **salvavita**. Se la corrente prende una strada sbagliata, per esempio attraverso una persona, scatta e toglie tutto in una frazione di secondo.
+
+Due regole di sicurezza: mai attaccare tante spine a una sola presa con più adattatori, e mai toccare apparecchi elettrici con le mani bagnate.
+
+> ✋ **Tocca a te.** Quanti apparecchi collegati alla corrente ci sono in questa aula? Contali. Quali restano accesi, o in attesa, anche quando non c'è nessuno?
+
+**Quanto consuma**
+
+L'energia elettrica si misura in **kilowattora** (kWh): è quella che consuma un apparecchio da 1.000 watt acceso per un'ora. Il conto è semplice: potenza per tempo.
+
+Un televisore da 100 watt acceso 4 ore consuma 100 × 4 = 400 wattora, cioè 0,4 kWh. La bolletta fa questo conto per tutta la casa.
+
+**Acqua e gas**
+
+L'acqua arriva dall'acquedotto, passa da un suo contatore e raggiunge i rubinetti. Quella usata se ne va negli scarichi. Sotto ogni lavandino c'è un tubo a forma di U, il sifone: resta sempre pieno d'acqua e fa da tappo contro i cattivi odori della fogna.
+
+Il gas arriva con tubi interrati e alimenta fornelli e caldaia. Di suo non ha odore: quello che senti è una sostanza aggiunta apposta per accorgersi delle perdite.
+
+Se senti odore di gas: non accendere luci né apparecchi, apri le finestre, esci e avvisa un adulto.
+
+**Scaldare la casa**
+
+Il riscaldamento è la voce più pesante: in una famiglia italiana consuma più della metà di tutta l'energia. Di solito una **caldaia** scalda l'acqua, che gira nei termosifoni. Il **termostato** misura la temperatura e accende o spegne la caldaia.
+
+Ogni grado in meno sul termostato fa risparmiare circa il 5-7% di riscaldamento.
+
+La **pompa di calore** funziona in un altro modo: non brucia niente, sposta il calore da fuori a dentro, come un frigorifero al contrario. Con 1 kWh di elettricità porta in casa circa 3 kWh di calore.
+
+**Produrre e sprecare meno**
+
+Il **fotovoltaico** trasforma la luce del sole in elettricità con pannelli sul tetto.
+
+Ogni edificio ha poi una pagella, la **classe energetica**: va dalla G, la peggiore, alla A4, la migliore. Una casa in classe G consuma circa sette volte più di una in A4 per restare alla stessa temperatura. La differenza la fanno muri isolati, finestre che tengono e impianti efficienti.
+
+> ✋ **Tocca a te.** Un phon da 2.000 watt acceso per mezz'ora: quanti kWh consuma? E una lampadina LED da 10 watt accesa per 10 ore? Fai i due conti: quale consuma di più?
+
+> 📍 **Qui da noi.** Con un adulto, a casa: trova il quadro elettrico e il salvavita, e guarda sull'ultima bolletta quanti kWh avete consumato. Sui tetti intorno a casa tua ci sono pannelli solari? Quanti ne conti?
+
+**In tre righe**
+
+- Gli impianti portano in casa corrente, acqua, gas e calore; il salvavita protegge le persone.
+- L'energia si misura in kWh: potenza per tempo.
+- Il riscaldamento è il consumo più grande: isolamento e termostato contano più di tutto.
+
+---
+
 ### Una casa non è solo muri e tetto. È un sistema di impianti.
 
 Quando entri in una casa e accendi la luce, apri il rubinetto, alzi il termostato o accendi la caldaia, stai usando uno dei sistemi di impianti che ogni abitazione moderna possiede. Questi impianti sono invisibili — nascosti nelle pareti, nel pavimento, nel controsoffitto — ma determinano quasi tutto ciò che rende confortevole e sicura la vita in casa.

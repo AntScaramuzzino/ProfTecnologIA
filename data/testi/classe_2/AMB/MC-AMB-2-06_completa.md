@@ -27,6 +27,57 @@ Pensa al quartiere della tua scuola. Qual è il problema più fastidioso che ved
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+"Smart city" vuol dire città intelligente. È una parola usata spesso per vendere qualcosa. L'idea seria che c'è dietro è questa: una città che raccoglie dati per offrire servizi migliori ai suoi abitanti. La domanda importante viene subito dopo: migliori per chi?
+
+**La città che si misura**
+
+Una **smart city** è piena di **sensori**, piccoli strumenti che misurano qualcosa e trasmettono il dato.
+
+- Sensori nell'asfalto e telecamere contano le auto: i semafori possono regolarsi sul traffico vero.
+- Centraline misurano la qualità dell'aria.
+- Lampioni con sensore di presenza abbassano la luce quando la strada è vuota.
+- Cassonetti che segnalano quando sono pieni: il camion passa solo dove serve.
+
+> ✋ **Tocca a te.** Scegli uno dei quattro esempi. Che cosa si risparmia: tempo, energia, soldi o inquinamento? E chi ci guadagna di più: chi abita in centro o chi abita in periferia?
+
+**I dati sono di tutti**
+
+Una città intelligente non si limita a raccogliere dati: li pubblica. Gli **open data**, dati aperti, sono informazioni che un ente pubblico mette online e che chiunque può scaricare e usare gratis: orari dei mezzi, qualità dell'aria, incidenti stradali. In Italia sono raccolti sul portale dati.gov.it.
+
+**I cittadini parlano**
+
+Esistono app con cui segnali al Comune una buca, un lampione rotto, un cassonetto strapieno. E alcune città lasciano decidere agli abitanti come spendere una parte dei soldi pubblici: si chiama **bilancio partecipativo**.
+
+C'è però un limite. Chi non ha uno smartphone, chi non ha internet a casa, chi è anziano rischia di restare fuori. Una città intelligente deve prevedere anche altri modi per partecipare.
+
+**Condividere i mezzi**
+
+Auto, bici e monopattini in condivisione si prenotano con il telefono. Un'auto condivisa può sostituire diverse auto private. Ma i risultati non sono sempre buoni: alcune persone usano l'auto condivisa per tragitti che prima facevano a piedi, e questi servizi si trovano quasi solo nei quartieri centrali.
+
+**Intelligente non vuol dire tecnologica**
+
+Copenhagen è considerata una delle città in cui si vive meglio in Europa. Non per i sensori: per le biciclette. Circa un terzo degli spostamenti quotidiani avviene in bici, perché da quarant'anni la città toglie spazio alle auto e lo dà alle piste ciclabili.
+
+All'opposto c'è Songdo, in Corea del Sud: costruita da zero con sensori dappertutto, è rimasta a lungo mezza vuota. La tecnologia aiuta, ma non sostituisce le scelte.
+
+**E la privacy?**
+
+Le telecamere che leggono le targhe sanno dove passa ogni auto e a che ora. Chi può vedere quei dati? Per quanto tempo restano conservati? Il diritto di ogni persona a controllare le informazioni che la riguardano si chiama **privacy**. Più dati si raccolgono, più servono regole chiare.
+
+> ✋ **Tocca a te.** Dibattito veloce in coppia. Telecamere che riconoscono le targhe all'ingresso del centro: più sicurezza e meno traffico, o troppo controllo? Uno difende il sì, l'altro il no. Poi cambiate parte.
+
+> 📍 **Qui da noi.** Il tuo Comune ha un'app o un numero per segnalare i problemi? Ci sono lampioni, cassonetti o parcheggi "intelligenti"? Qual è il problema del tuo quartiere che vorresti misurare con un sensore, e che cosa misureresti?
+
+**In tre righe**
+
+- Una smart city usa sensori e dati per gestire meglio traffico, luce, rifiuti e aria.
+- I dati dovrebbero essere aperti, e le decisioni condivise con i cittadini.
+- La tecnologia non basta: contano le scelte, e il rispetto della privacy.
+
+---
+
 ### Una smart city non è un videogioco
 
 Il termine "smart city" (città intelligente) è diventato così di moda da perdere quasi significato. Lo usano i marketing manager delle aziende tecnologiche per vendere prodotti. Lo usano i politici per promettere futuro. Lo usano i consulenti per giustificare consulenze.
@@ -113,7 +164,7 @@ La città più "smart" d'Europa, per molti indicatori (qualità della vita, sost
 
 Il **33% degli spostamenti quotidiani** a Copenhagen avviene in bicicletta. Non perché ci siano app speciali, ma perché negli ultimi quarant'anni la città ha progressivamente spostato spazio stradale dalle auto alle bici: 390 km di piste ciclabili separate dalla carreggiata, semafori calibrati sulla velocità media della bici (20 km/h — "onde verdi per ciclisti"), strade residenziali senza parcheggi laterali che liberano spazio ai pedoni.
 
-Il risultato: meno emissioni, meno rumore, meno incidenti, meno stress, meno spesa sanitaria per malattie legate alla sedentarietà, meno costo per infrastrutture (una pista ciclabile costa cent'odiante volte meno di una corsia autostradale).
+Il risultato: meno emissioni, meno rumore, meno incidenti, meno stress, meno spesa sanitaria per malattie legate alla sedentarietà, meno costo per infrastrutture (una pista ciclabile costa moltissime volte meno di una corsia autostradale).
 
 La "smartness" di Copenhagen non è tecnologica. È politica: scelte sistematiche e continuate per decenni su come usare lo spazio pubblico. La tecnologia aiuta — ma da sola non basta.
 

@@ -21,6 +21,63 @@ Chi ha deciso questa proporzione? Chi ha il potere di cambiarla? E come funziona
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Una città non cresce a caso. Dove passano le strade, dove si può costruire, dove resta il verde: sono decisioni prese da persone. La disciplina che se ne occupa è l'**urbanistica**.
+
+**Tre città in una**
+
+Le città italiane portano i segni di epoche diverse.
+
+- La città romana era disegnata a griglia: due strade principali che si incrociano ad angolo retto e, intorno, isolati regolari.
+- La città medievale è cresciuta senza disegno intorno a un castello o a una chiesa: vie strette e curve, piazze irregolari.
+- La città industriale è esplosa nell'Ottocento con le fabbriche. Troppa gente, poche fogne, molte epidemie. È lì che si è capito che una città va progettata, a partire da acqua pulita e fognature.
+
+> ✋ **Tocca a te.** Pensa al centro del tuo paese. Le strade sono dritte e si incrociano ad angolo retto, oppure sono strette e curve? Che cosa ti dice questo sulla sua storia?
+
+**Il piano regolatore**
+
+Ogni Comune ha un documento che stabilisce che cosa si può fare su ogni pezzo del suo territorio: è il **piano regolatore**. Lo preparano dei tecnici, ma lo approva il consiglio comunale, cioè persone elette dai cittadini. E i cittadini possono presentare osservazioni prima che diventi definitivo.
+
+Il piano divide il territorio in zone, ognuna con una funzione. Questa divisione si chiama **zonizzazione**:
+
+- zone residenziali, per le case;
+- zone produttive, per fabbriche e capannoni;
+- zone agricole, dove non si costruisce;
+- zone per verde e servizi: parchi, scuole, ospedali, impianti sportivi.
+
+Stabilisce anche quanto si può costruire e fino a che altezza. Costruire dove il piano non lo permette è un reato.
+
+La legge fissa un minimo di spazi pubblici per ogni abitante: tra questi, 9 metri quadrati di verde a testa.
+
+**Le reti che non si vedono**
+
+Sotto le strade corrono le **infrastrutture**: le reti che fanno funzionare la città. Acquedotto, fognature che portano le acque sporche al depuratore, cavi elettrici, fibra ottica per internet.
+
+**Chi occupa lo spazio**
+
+Lo spazio di una strada è limitato. Un'auto con una persona a bordo ne occupa molto di più di quella stessa persona a piedi, in bici o su un autobus. Per questo le città affollate puntano su mezzi pubblici e piste ciclabili.
+
+L'alternativa è la città sparsa: case basse, centri commerciali e parcheggi che si allargano sulla campagna. Si chiama **sprawl**. Obbliga tutti a usare l'auto e mangia terreno agricolo: è il **consumo di suolo**, e in Italia riguarda decine di chilometri quadrati ogni anno.
+
+**Rinnovare senza espellere**
+
+Un quartiere abbandonato può rinascere con la **riqualificazione**: edifici sistemati, nuovi spazi pubblici, nuovi servizi. Ma c'è un rischio. Se i prezzi salgono troppo, chi ci abitava non può più permetterselo e deve andarsene.
+
+La forma di una città decide come vivono le persone. Se la costruisci per le auto, tutti useranno l'auto. Se la costruisci per chi cammina, la gente camminerà.
+
+> ✋ **Tocca a te.** Da casa tua, che cosa riesci a raggiungere a piedi in dieci minuti? Fai l'elenco: scuola, parco, negozio, fermata, campo sportivo. Che cosa manca?
+
+> 📍 **Qui da noi.** Scegli un punto del tuo paese che secondo te funziona male: un incrocio pericoloso, un parco trascurato, un marciapiede che manca. Fotografalo o disegnalo e scrivi in tre righe che cosa cambieresti. Raccoglieremo le proposte di tutta la classe.
+
+**In tre righe**
+
+- La città è il risultato di scelte, scritte nel piano regolatore.
+- Il piano divide il territorio in zone e stabilisce dove e quanto si può costruire.
+- La forma della città decide come ci si muove e quanto suolo si consuma.
+
+---
+
 ### Una città non si forma per caso. È il risultato di scelte.
 
 Ogni città — grande o piccola, moderna o antica — è il risultato di decisioni prese da persone: amministratori, ingegneri, architetti, imprenditori, cittadini. Alcune di queste decisioni risalgono a secoli fa; altre vengono prese ogni anno dai Comuni italiani.
