@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Badge SDG 6 - Acqua pulita e servizi igienico-sanitari</title>
+  <desc id="desc">Badge app per i progressi: SDG 6, Acqua pulita e servizi igienico-sanitari.</desc>
+  <defs>
+    <linearGradient id="sdg6g" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
+      <stop offset="0.38" stop-color="#26BDE2"/>
+      <stop offset="1" stop-color="#147F9C"/>
+    </linearGradient>
+    <filter id="sdg6s" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#147F9C" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#f8fafc"/>
+  <rect x="34" y="34" width="444" height="444" rx="82" fill="url(#sdg6g)" filter="url(#sdg6s)"/>
+  <path d="M77 391h358" fill="none" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.28"/>
+  <path d="M256 118c-46 58-82 104-82 150 0 46 36 82 82 82s82-36 82-82c0-46-36-92-82-150Z" fill="#ffffff" opacity="0.92"/>
+  <path d="M214 278c4 26 22 42 46 46" stroke="#147F9C" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.45"/>
+  <path d="M188 228c22 12 46 12 68 0s46-12 68 0" stroke="#147F9C" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.35"/>
+  <rect x="67" y="63" width="118" height="118" rx="32" fill="#ffffff"/>
+  <text x="126" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="900" fill="#26BDE2">6</text>
+  <path d="M365 77h48m-24-24v48" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.86"/>
+  <text x="256" y="438" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" letter-spacing="1.5" fill="#ffffff">ACQUA PULITA</text>
+</svg>

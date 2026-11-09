@@ -295,7 +295,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
             </p>
           </div>
           <div className="ml-auto shrink-0 rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">
-            {total} MC · 12 badge
+            {total} MC · {SDG_BADGES.length} badge
           </div>
         </div>
 

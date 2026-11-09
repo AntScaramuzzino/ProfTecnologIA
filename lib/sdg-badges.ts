@@ -44,6 +44,16 @@ export const SDG_BADGES: SDGBadgeDefinition[] = [
     requiredPassed: 5,
   },
   {
+    id: "sdg-6",
+    sdg: 6,
+    title: "Acqua pulita e servizi igienico-sanitari",
+    shortTitle: "SDG 6",
+    description: "Sblocchi il badge quando superi quiz collegati all'acquedotto, alla depurazione, all'impronta idrica e all'uso sostenibile dell'acqua.",
+    assetSrc: "/assets/badges/sdg/sdg-6-acqua-pulita.svg",
+    accent: "#26BDE2",
+    requiredPassed: 1,
+  },
+  {
     id: "sdg-7",
     sdg: 7,
     title: "Energia pulita e accessibile",
@@ -111,6 +121,16 @@ export const SDG_BADGES: SDGBadgeDefinition[] = [
     description: "Sblocchi il badge quando superi quiz collegati al clima, all'impatto ambientale delle tecnologie e alla transizione ecologica.",
     assetSrc: "/assets/badges/sdg/sdg-13-clima.svg",
     accent: "#3F7E44",
+    requiredPassed: 1,
+  },
+  {
+    id: "sdg-14",
+    sdg: 14,
+    title: "La vita sott'acqua",
+    shortTitle: "SDG 14",
+    description: "Sblocchi il badge quando superi quiz collegati a mari e oceani, microplastiche e inquinamento da plastica.",
+    assetSrc: "/assets/badges/sdg/sdg-14-vita-sottacqua.svg",
+    accent: "#0A97D9",
     requiredPassed: 1,
   },
   {

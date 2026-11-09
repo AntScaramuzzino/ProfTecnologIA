@@ -290,5 +290,5 @@ Rimuovere il riquadro "Come funziona la cifratura". Salvare come `MC-DIG-2-04_in
 
 - **Riferimenti IN.** Nei JSON riallineati il campo IN riusa formule già presenti in altre MC della matrice. Vanno confrontati con il testo del D.M. 221/2025, soprattutto per SIS-3-04 (orientamento) e DIG-2-03.
 - **Matrice sul Mac.** `01_MATRICE_MC/` nel workspace TecnologIA ha ancora i JSON vecchi: va allineata a `05_APP/tecnologia-sito-web/data/mc/`, che è la fonte canonica.
-- **Badge SDG.** AMB-2-05 ha come SDG del testo il 6 e MAT-1-06 il 14, ma per questi obiettivi non esiste un badge nel sito. Come principale resta un SDG che ha un badge (11 e 15). Per usare il 6 e il 14 servono due nuovi badge in `lib/sdg-badges.ts`.
+- **Badge SDG.** Aggiunti i badge SDG 6 (acqua pulita) e SDG 14 (vita sott'acqua): ora sono gli SDG principali di AMB-2-05 e MAT-1-06, come indicano i testi.
 - **Nomi UDA.** I testi citano UDA con nomi diversi da quelli nel JSON (per esempio "Dal campo alla tavola" e "La Città che Vorrei" per UDA-2). Non è stato toccato.
