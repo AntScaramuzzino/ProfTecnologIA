@@ -432,6 +432,7 @@ function ZonePanel({
   areaHex,
   resourcesSummary,
   onNavigate,
+  availableZones,
   text,
   quizData,
   flashcards,
@@ -457,6 +458,8 @@ function ZonePanel({
   resourcesSummary?: ResourcesSummary;
   /** P1.3 — naviga programmaticamente ad altra zona */
   onNavigate?: (zoneId: string) => void;
+  /** Zone presenti nel navigator di questa MC */
+  availableZones?: string[];
   text?: MCTextContent | null;
   quizData?: QuizQuestion[] | null;
   flashcards?: FlashcardItem[];
@@ -736,6 +739,7 @@ function ZonePanel({
           <ResourcesPanel
             summary={resourcesSummary}
             onNavigate={onNavigate}
+            availableZones={availableZones}
             areaHex={areaHex}
             className="mt-2"
           />
@@ -1162,17 +1166,41 @@ export function MCPageClient({
   const navigateToTab = useCallback((tabId: string) => setForcedTab(tabId), []);
 
   // Contatori risorse per ResourcesPanel
-  const resourcesSummary = useMemo(() => ({
-    hasAudio: !!hookAudioSrc,
-    videoCount: videoPlaylist.length,
-    flashcardCount: flashcards.length,
-    quizCount: quizData ? quizData.length : 0,
-    visualCount: visuals.length,
-    deckSlideCount: deckSlides.length,
-    animatedVideoCount: esploraImages.filter((i) => i.video).length,
-    esploraImageCount: esploraImages.filter((i) => i.fonte !== "schema").length,
-    schemaCount: esploraImages.filter((i) => i.fonte === "schema").length,
-  }), [hookAudioSrc, videoPlaylist, flashcards, quizData, visuals, deckSlides, esploraImages]);
+  const resourcesSummary = useMemo<ResourcesSummary>(() => {
+    const esploraBody = sectionMapClean.get("ESPLORA")?.body;
+    const esploraParagraphs = esploraBody ? splitEsploraIntoAccordion(esploraBody) : [];
+    const geogebraCount =
+      (mc.id === "MC-DIS-1-01"
+        ? esploraParagraphs.filter(
+            (p) =>
+              (/Costruzione\s+1/i.test(p.title) && /Perpendicolare\s+a\s+una\s+retta/i.test(p.title)) ||
+              (/Costruzione\s+2/i.test(p.title) && /Bisettrice\s+di\s+un\s+angolo/i.test(p.title)) ||
+              !!getGeoGebraConstruction(p.title),
+          ).length
+        : 0) + (mc.id === "MC-DIS-2-01" ? 1 : 0);
+    const lab = getLaboratorio(mc.id);
+    const esc = getEscapeRoom(mc.id);
+    return {
+      hasAudio: !!hookAudioSrc,
+      videoCount: videoPlaylist.length,
+      esploraParagraphCount: esploraParagraphs.length,
+      esploraImageCount: esploraImages.filter((i) => i.fonte !== "schema").length,
+      schemaCount: esploraImages.filter((i) => i.fonte === "schema").length,
+      esploraVideoCount: esploraImages.filter((i) => !!i.video).length,
+      deckSlideCount: deckSlides.length,
+      geogebraCount,
+      visualCount: visuals.length,
+      laboratorio: lab ? { titolo: lab.titolo, archetipo: lab.archetipo } : null,
+      escapeRoom: esc ? { titolo: esc.titolo } : null,
+      hasCompito: sectionMapClean.has("AGISCI"),
+      microlearningCount: (microlearningData?.process ? 1 : 0) + (microlearningData?.checklist ? 1 : 0),
+      quizCount: quizData ? quizData.length : 0,
+      flashcardCount: flashcards.length,
+      professioniCount: mc.professioni_future?.length || (mc.professione_futura?.titolo ? 1 : 0),
+      clilCount: mc.clil_termini?.length ?? 0,
+      hasAppendice: !!appendiceSection,
+    };
+  }, [hookAudioSrc, videoPlaylist, flashcards, quizData, visuals, deckSlides, esploraImages, microlearningData, sectionMapClean, appendiceSection, mc]);
 
   return (
     <div className="flex flex-col">
@@ -1200,6 +1228,7 @@ export function MCPageClient({
             areaHex={areaHex}
             resourcesSummary={resourcesSummary}
             onNavigate={navigateToTab}
+            availableZones={tabs.map((t) => t.id)}
             text={text}
             quizData={quizData}
             flashcards={flashcards}
