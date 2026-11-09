@@ -1228,6 +1228,18 @@ export function MCPageClient({
   const [forcedTab, setForcedTab] = useState<string | null>(null);
   const navigateToTab = useCallback((tabId: string) => setForcedTab(tabId), []);
 
+  // Collegamenti diretti a una scheda (es. /mc/MC-XXX/#ripassa): usati dai codici QR del libro in PDF
+  useEffect(() => {
+    const apply = () => {
+      const h = window.location.hash.replace("#", "").toUpperCase();
+      const id = h === "PROFESSIONI" ? "PROFESSIONE" : h === "QUIZ" ? "RIPASSA" : h;
+      if (ZONE_TABS.some((z) => z.id === id)) setForcedTab(id);
+    };
+    apply();
+    window.addEventListener("hashchange", apply);
+    return () => window.removeEventListener("hashchange", apply);
+  }, [mc.id]);
+
   // Contatori risorse per ResourcesPanel
   const resourcesSummary = useMemo<ResourcesSummary>(() => {
     const esploraBody = sectionMapClean.get("ESPLORA")?.body;
