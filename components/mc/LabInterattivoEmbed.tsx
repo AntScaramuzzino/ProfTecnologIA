@@ -8,7 +8,7 @@ type LimApi = { set: (on: boolean) => void };
 
 /**
  * Laboratorio interattivo (kind="lab") o escape room (kind="escape") della MC, in un iframe che si adatta all'altezza.
- * «Schermo intero (LIM)» porta l'iframe a schermo intero e attiva la modalità LIM della pagina interna
+ * Il pulsante «Schermo intero (LIM)» della pagina interna porta l'iframe a schermo intero e ne attiva la modalità LIM
  * (contenuto ingrandito, bersagli grandi per il tocco: scripts/laboratori/lim.js).
  */
 export default function LabInterattivoEmbed({
@@ -29,7 +29,6 @@ export default function LabInterattivoEmbed({
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const observerRef = useRef<ResizeObserver | null>(null);
   const [height, setHeight] = useState(kind === "lab" ? 1200 : 900);
-  const [canFullscreen, setCanFullscreen] = useState(false);
 
   const syncHeight = useCallback(() => {
     const doc = iframeRef.current?.contentDocument?.documentElement;
@@ -47,7 +46,6 @@ export default function LabInterattivoEmbed({
   useEffect(() => () => observerRef.current?.disconnect(), []);
 
   useEffect(() => {
-    setCanFullscreen(typeof document !== "undefined" && !!document.fullscreenEnabled);
     const onChange = () => {
       const on = document.fullscreenElement === iframeRef.current;
       const w = iframeRef.current?.contentWindow as (Window & { PROFTEC_LIM?: LimApi }) | null | undefined;
@@ -61,11 +59,6 @@ export default function LabInterattivoEmbed({
     return () => document.removeEventListener("fullscreenchange", onChange);
   }, []);
 
-  const goFullscreen = useCallback(() => {
-    iframeRef.current?.requestFullscreen?.().catch(() => {
-      /* il browser ha rifiutato: resta il link alla pagina */
-    });
-  }, []);
 
   // Il laboratorio (stessa origine) invia { type: "proftec-lab-result", mcId, level, score, total }
   useEffect(() => {
@@ -89,35 +82,22 @@ export default function LabInterattivoEmbed({
 
   return (
     <section className={className} aria-labelledby={titleId}>
-      <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
-        <div>
-          <p className="text-xs font-black uppercase tracking-widest" style={{ color }}>
-            {kicker}
-          </p>
-          <h2 id={titleId} className="mt-1 text-xl font-black tracking-tight text-slate-950 sm:text-2xl">
-            {meta.titolo}
-          </h2>
-        </div>
-        <div className="flex flex-wrap items-center gap-3">
-          {canFullscreen && (
-            <button
-              type="button"
-              onClick={goFullscreen}
-              className="rounded-full border-2 border-teal-700 bg-teal-700 px-3 py-1.5 text-xs font-bold text-white hover:bg-teal-800"
-              title="Schermo intero con testo e pulsanti grandi, per la lavagna interattiva"
-            >
-              ⛶ Schermo intero (LIM)
-            </button>
-          )}
-          <a
-            href={`${src}?lim=1`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs font-bold text-teal-800 underline decoration-teal-300 underline-offset-4 hover:text-teal-950"
-          >
-            Apri in una nuova scheda ↗
-          </a>
-        </div>
+      {/* Tipo e titolo sono già nell'intestazione della pagina interna (con il suo pulsante «Schermo intero (LIM)»):
+          qui restano solo per i lettori di schermo, per non ripeterli a video. */}
+      <p className="sr-only">{kicker}</p>
+      <h2 id={titleId} className="sr-only">
+        {meta.titolo}
+      </h2>
+      <div className="mb-2 flex justify-end">
+        <a
+          href={`${src}?lim=1`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs font-bold underline underline-offset-4"
+          style={{ color, textDecorationColor: `${color}55` }}
+        >
+          Apri in una nuova scheda ↗
+        </a>
       </div>
       <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
         <iframe
