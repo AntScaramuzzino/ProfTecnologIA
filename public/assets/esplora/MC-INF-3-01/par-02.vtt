@@ -1,0 +1,113 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:02.460
+Un sensore rileva una grandezza fisica
+
+2
+00:00:02.480 --> 00:00:05.130
+e la converte
+in un segnale elettrico misurabile.
+
+3
+00:00:05.487 --> 00:00:09.507
+Temperatura, pressione,
+luminosità, accelerazione,
+
+4
+00:00:09.527 --> 00:00:12.927
+umidità, frequenza cardiaca,
+qualità dell'aria.
+
+5
+00:00:13.547 --> 00:00:17.977
+Il processo ha due fasi: la trasduzione
+e la conversione analogico-digitale.
+
+6
+00:00:18.487 --> 00:00:19.757
+Nella trasduzione,
+
+7
+00:00:19.777 --> 00:00:22.307
+un sensore di temperatura
+come il termistore varia
+
+8
+00:00:22.327 --> 00:00:25.627
+la propria resistenza elettrica
+in funzione della temperatura.
+
+9
+00:00:25.972 --> 00:00:28.582
+Più è caldo, più cambia la resistenza.
+
+10
+00:00:29.062 --> 00:00:33.562
+E la variazione di resistenza si traduce
+in una variazione di tensione misurabile.
+
+11
+00:00:34.032 --> 00:00:37.902
+Il segnale analogico è continuo:
+può assumere infiniti valori.
+
+12
+00:00:38.382 --> 00:00:41.312
+La conversione lo trasforma
+in un numero digitale,
+
+13
+00:00:41.332 --> 00:00:43.232
+con un numero finito di valori.
+
+14
+00:00:43.782 --> 00:00:45.602
+La conversione ha due parametri:
+
+15
+00:00:45.622 --> 00:00:50.772
+quanto spesso si misura, il campionamento,
+e con quanti livelli, la quantizzazione.
+
+16
+00:00:51.462 --> 00:00:53.212
+La frequenza di campionamento:
+
+17
+00:00:53.232 --> 00:00:56.032
+quante volte al secondo
+il sensore misura il valore.
+
+18
+00:00:56.512 --> 00:01:00.572
+Se campiona 100 volte al secondo,
+produce 100 misure per secondo.
+
+19
+00:01:01.142 --> 00:01:05.002
+La risoluzione: quanti bit usa
+per rappresentare ogni misura.
+
+20
+00:01:05.472 --> 00:01:08.412
+Con 8 bit si hanno 256 livelli.
+
+21
+00:01:09.492 --> 00:01:16.032
+Con 12 bit si hanno 4096 livelli;
+con 16 bit, 65536.
+
+22
+00:01:16.386 --> 00:01:18.356
+La scelta di questi parametri determina
+
+23
+00:01:18.376 --> 00:01:21.136
+la qualità del dato
+e la quantità di dati prodotta.
+
+24
+00:01:22.546 --> 00:01:25.526
+Così una grandezza fisica
+diventa un dato digitale.

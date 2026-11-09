@@ -1,0 +1,122 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:05.160
+La crittografia moderna si divide in due
+grandi famiglie: simmetrica e asimmetrica.
+
+2
+00:00:06.330 --> 00:00:08.040
+Nella crittografia simmetrica,
+
+3
+00:00:08.060 --> 00:00:10.900
+la stessa chiave serve
+per cifrare e per decifrare.
+
+4
+00:00:11.380 --> 00:00:13.310
+Ed è velocissima da calcolare.
+
+5
+00:00:13.812 --> 00:00:15.542
+Chi manda il messaggio e chi lo riceve
+
+6
+00:00:15.562 --> 00:00:17.892
+devono conoscere entrambi
+la chiave segreta.
+
+7
+00:00:18.982 --> 00:00:21.762
+Ma come fai a far sapere
+la chiave al destinatario,
+
+8
+00:00:21.782 --> 00:00:24.312
+senza che qualcuno
+la intercetti nel tragitto?
+
+9
+00:00:25.532 --> 00:00:27.152
+Se mandi la chiave per email,
+
+10
+00:00:27.172 --> 00:00:30.792
+e quella email viene intercettata,
+tutta la sicurezza crolla.
+
+11
+00:00:31.952 --> 00:00:34.432
+È il problema della
+distribuzione delle chiavi,
+
+12
+00:00:34.452 --> 00:00:36.622
+ed è rimasto irrisolto per millenni.
+
+13
+00:00:37.642 --> 00:00:42.432
+Nel 1976, due crittografi
+pubblicarono un'idea rivoluzionaria:
+
+14
+00:00:42.452 --> 00:00:45.692
+usare due chiavi diverse,
+collegate matematicamente.
+
+15
+00:00:46.332 --> 00:00:49.102
+Una chiave pubblica,
+che chiunque può conoscere.
+
+16
+00:00:49.572 --> 00:00:52.822
+E una chiave privata,
+che solo il proprietario conosce.
+
+17
+00:00:53.328 --> 00:00:55.028
+Ciò che è cifrato con la chiave pubblica
+
+18
+00:00:55.048 --> 00:00:57.858
+si decifra solo
+con la chiave privata corrispondente.
+
+19
+00:00:58.318 --> 00:01:00.218
+Non con la stessa chiave pubblica.
+
+20
+00:01:01.088 --> 00:01:03.698
+È come una cassetta delle lettere
+con una fessura:
+
+21
+00:01:03.718 --> 00:01:05.658
+chiunque può infilare un messaggio,
+
+22
+00:01:05.678 --> 00:01:08.158
+ma solo il proprietario
+ha la chiave per aprirla.
+
+23
+00:01:10.408 --> 00:01:13.068
+Così il problema della
+distribuzione è risolto:
+
+24
+00:01:13.088 --> 00:01:15.488
+puoi pubblicare la tua
+chiave pubblica ovunque.
+
+25
+00:01:15.958 --> 00:01:17.708
+Non importa chi la conosce.
+
+26
+00:01:18.878 --> 00:01:21.758
+Solo chi ha la tua chiave privata
+può leggere i messaggi.
