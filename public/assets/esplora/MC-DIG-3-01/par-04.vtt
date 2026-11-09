@@ -1,0 +1,124 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:01.940
+In un programma sequenziale,
+
+2
+00:00:01.960 --> 00:00:05.530
+le istruzioni si eseguono
+una dopo l'altra, in ordine fisso.
+
+3
+00:00:06.780 --> 00:00:09.200
+Nella programmazione event-driven, invece,
+
+4
+00:00:09.220 --> 00:00:11.920
+le istruzioni si eseguono
+quando accade qualcosa:
+
+5
+00:00:11.940 --> 00:00:12.830
+un evento.
+
+6
+00:00:14.020 --> 00:00:15.310
+Un evento può essere:
+
+7
+00:00:15.330 --> 00:00:18.010
+il sensore che rileva
+meno di 15 centimetri,
+
+8
+00:00:18.030 --> 00:00:21.650
+il pulsante A premuto,
+la temperatura che supera 30 gradi.
+
+9
+00:00:22.590 --> 00:00:25.780
+Ogni blocco “quando accade X”
+è un gestore di eventi:
+
+10
+00:00:25.800 --> 00:00:28.850
+il suo codice si esegue
+ogni volta che X si verifica,
+
+11
+00:00:28.870 --> 00:00:31.230
+indipendentemente dal resto del programma.
+
+12
+00:00:31.760 --> 00:00:33.640
+Prendiamo un robot event-driven.
+
+13
+00:00:34.120 --> 00:00:38.530
+Il programma principale è un ciclo
+continuo: vai avanti a velocità 50.
+
+14
+00:00:39.110 --> 00:00:43.510
+Evento 1: il sensore a ultrasuoni
+rileva meno di 15 centimetri.
+
+15
+00:00:43.980 --> 00:00:47.740
+Il robot si ferma,
+ruota a destra di 90 gradi e riprende.
+
+16
+00:00:48.780 --> 00:00:51.810
+Evento 2:
+il sensore di tocco viene premuto.
+
+17
+00:00:52.290 --> 00:00:55.060
+Il robot si ferma,
+emette un avviso sonoro,
+
+18
+00:00:55.080 --> 00:00:57.080
+aspetta 2 secondi e riprende.
+
+19
+00:00:59.430 --> 00:01:01.460
+Evento 3: il pulsante A.
+
+20
+00:01:01.940 --> 00:01:06.190
+Il robot entra in modalità esplorazione:
+ruota a caso ogni 3 secondi.
+
+21
+00:01:06.684 --> 00:01:07.654
+Il vantaggio:
+
+22
+00:01:07.674 --> 00:01:11.534
+il robot può rispondere a più eventi,
+senza che uno blocchi l'altro.
+
+23
+00:01:12.884 --> 00:01:13.674
+Il rischio:
+
+24
+00:01:13.694 --> 00:01:16.034
+se due eventi arrivano
+nello stesso momento,
+
+25
+00:01:16.054 --> 00:01:18.174
+il sistema deve gestire la priorità.
+
+26
+00:01:18.644 --> 00:01:20.194
+Quale risposta prevale?
+
+27
+00:01:20.849 --> 00:01:23.689
+Le istruzioni si eseguono
+quando accade qualcosa.

@@ -1,0 +1,139 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:02.220
+Fai una domanda a un chatbot:
+
+2
+00:00:02.240 --> 00:00:04.460
+la risposta compare un pezzo alla volta.
+
+3
+00:00:04.930 --> 00:00:06.380
+Come viene costruita?
+
+4
+00:00:07.280 --> 00:00:09.020
+Dietro c'è un LLM:
+
+5
+00:00:09.040 --> 00:00:11.740
+una rete neurale addestrata
+su enormi quantità di testo
+
+6
+00:00:11.760 --> 00:00:13.610
+per predire il token successivo.
+
+7
+00:00:14.560 --> 00:00:17.100
+Il testo non viene elaborato
+parola per parola,
+
+8
+00:00:17.120 --> 00:00:18.510
+ma scomposto in token:
+
+9
+00:00:18.530 --> 00:00:21.290
+unità che possono essere
+più piccole di una parola.
+
+10
+00:00:21.871 --> 00:00:24.291
+Tecnologia potrebbe essere
+un solo token.
+
+11
+00:00:24.771 --> 00:00:28.211
+Biotecnologia potrebbe essere due:
+bio più tecnologia.
+
+12
+00:00:29.151 --> 00:00:31.331
+Dato un prompt, il modello calcola,
+
+13
+00:00:31.351 --> 00:00:33.511
+per ogni possibile token successivo,
+
+14
+00:00:33.531 --> 00:00:36.221
+la probabilità che compaia
+in quella posizione.
+
+15
+00:00:36.733 --> 00:00:38.993
+Poi sceglie un token
+con alta probabilità,
+
+16
+00:00:39.013 --> 00:00:41.433
+lo aggiunge al testo
+e ripete il processo.
+
+17
+00:00:42.429 --> 00:00:44.869
+Così la risposta nasce
+un token alla volta,
+
+18
+00:00:44.889 --> 00:00:47.609
+ognuno condizionato
+da tutti i token precedenti.
+
+19
+00:00:48.190 --> 00:00:51.510
+Il parametro temperature regola
+quanto è casuale la scelta.
+
+20
+00:00:51.980 --> 00:00:55.000
+Vicina a zero: quasi sempre
+il token più probabile,
+
+21
+00:00:55.020 --> 00:00:56.390
+risposte prevedibili.
+
+22
+00:00:57.081 --> 00:00:59.141
+Vicina a uno: più casualità.
+
+23
+00:00:59.621 --> 00:01:02.331
+Risposte più creative,
+ma meno accurate.
+
+24
+00:01:03.098 --> 00:01:04.768
+Ma il modello non capisce.
+
+25
+00:01:05.248 --> 00:01:07.648
+Impara correlazioni statistiche
+tra token,
+
+26
+00:01:07.668 --> 00:01:09.718
+e non ha un modello interno del mondo.
+
+27
+00:01:10.977 --> 00:01:13.307
+Non sa che Roma è in Italia
+come lo sai tu:
+
+28
+00:01:13.327 --> 00:01:16.487
+sa che Roma e Italia compaiono
+spesso insieme nei testi.
+
+29
+00:01:16.957 --> 00:01:19.777
+Per questo può inventare
+fatti che suonano credibili.
+
+30
+00:01:20.937 --> 00:01:24.397
+Un LLM non capisce:
+predice il token successivo.
