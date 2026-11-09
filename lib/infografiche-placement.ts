@@ -12,13 +12,11 @@
  *
  * I file sono indicati con una sottostringa univoca del nome.
  *
- * Nascoste (2026-11-09):
- *  - MC-DIG-2-04: la fila "Protezione" presenta HTTPS/lucchetto come garanzia
- *    contro il phishing (falso) → da rigenerare;
- *  - MC-ALI-2-05, MC-AMB-2-06, MC-DIG-2-03, MC-SIS-3-04, MC-MAT-1-06: infografica sul
- *    vecchio tema della MC → nascosta a monte da lib/visual-fuori-tema.ts.
+ * Rigenerate il 2026-11-09 sul tema del testo: ALI-2-05, AMB-2-05 (nuova), AMB-2-06,
+ * DIG-2-03, SIS-3-04 → in ESPLORA; DIG-2-04 (v2, corretta sul lucchetto HTTPS) →
+ * in ESPLORA; MAT-1-06 → OSSERVA (illustra proprio il caso della giacca tecnica).
  * Restano in OSSERVA (l'infografica illustra il caso): ALI-2-01, ALI-2-04,
- * ENE-3-02, MAT-1-04.
+ * ENE-3-02, MAT-1-04, MAT-1-06.
  *
  * Audit: 2026-11-09.
  */
@@ -64,8 +62,13 @@ const CONFIG: Record<string, InfograficaConfig> = {
   "MC-ENE-3-03": { esplora: [{ section: /smart grid e transizione/i, files: [v1] }], osserva: [] },
   // Fasi dell'immagine ≠ "Le sette fasi" del testo → solo nell'apertura
   "MC-MAT-1-02": { esplora: [{ section: /non nasce sullo scaffale/i, files: [v1] }], osserva: [] },
-  // Nascosta in attesa di rigenerazione (vedi intestazione)
-  "MC-DIG-2-04": { esplora: [], osserva: [] },
+  //   // Rigenerate il 2026-11-09 (MC riallineate al testo)
+  "MC-ALI-2-05": { esplora: [{ section: /cinque funzioni precise/i, files: [v1] }], osserva: [] },
+  "MC-AMB-2-05": { esplora: [{ section: /ciclo artificiale dell.acqua in sei fasi/i, files: [v1] }], osserva: [] },
+  "MC-AMB-2-06": { esplora: [{ section: /smart city non è un videogioco/i, files: [v1] }], osserva: [] },
+  "MC-DIG-2-03": { esplora: [{ section: /usare bene il computer/i, files: [v1] }], osserva: [] },
+  "MC-SIS-3-04": { esplora: [{ section: /costruisce un percorso professionale/i, files: [v1] }], osserva: [] },
+  "MC-DIG-2-04": { esplora: [{ section: /riconoscere un.email di phishing/i, files: ["infografica_processo_playground_v2"] }], osserva: [] },
 };
 
 function pick(visuals: VisualAsset[], keys: string[]): VisualAsset[] {

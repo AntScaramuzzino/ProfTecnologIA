@@ -20,6 +20,8 @@ In 9 MC il testo pubblicato tratta un tema diverso dalla scheda JSON originale. 
 
 In più, l'infografica di **MC-DIG-2-04** è nascosta perché presenta il lucchetto HTTPS come difesa dal phishing (vedi §5).
 
+> **Aggiornamento 9 novembre, sera.** Sketchnote, schede del compito e infografiche sono state rigenerate (grafica vettoriale con testi verificati, stessi nomi file) e sono online, insieme a una nuova infografica per AMB-2-05 e all'infografica corretta di DIG-2-04 (v2). Restano da rifare solo le **copertine** (facoltative: sono decorative) e, rilanciando il generatore sui JSON corretti, **mappa concettuale e tavola da testo** delle 9 MC e di DIG-2-04, ancora nascoste. Le sezioni 3-5 restano come riferimento per una futura versione fotorealistica.
+
 ## 2. Cosa è nascosto e come rimetterlo online
 
 Per ognuna delle 9 MC il sito non mostra:
