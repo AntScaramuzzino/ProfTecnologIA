@@ -29,8 +29,12 @@ export interface ResourcesSummary {
   deckSlideCount?: number;
   /** Costruzioni e animazioni GeoGebra (ESPLORA / SPERIMENTA) */
   geogebraCount?: number;
-  /** Immagini e schemi nelle gallerie di ESPLORA, OSSERVA, RIPASSA, AGISCI */
+  /** Immagini della Galleria visuale di ESPLORA (senza ripetizioni) */
   visualCount: number;
+  /** Infografica del processo in OSSERVA */
+  hasInfografica?: boolean;
+  /** Infografiche di processo collocate nei paragrafi di ESPLORA */
+  esploraInfograficaCount?: number;
   /** Laboratorio interattivo (SPERIMENTA) */
   laboratorio?: { titolo: string; archetipo: string } | null;
   /** Escape room (SPERIMENTA) */
@@ -93,14 +97,18 @@ function buildGroups(s: ResourcesSummary): ZoneGroup[] {
         { icon: "🖼️", label: "Illustrazioni dei paragrafi", count: s.esploraImageCount ?? 0, available: (s.esploraImageCount ?? 0) > 0 },
         { icon: "📊", label: "Schemi didattici", count: s.schemaCount ?? 0, available: (s.schemaCount ?? 0) > 0 },
         { icon: "🎞️", label: "Video animati", count: s.esploraVideoCount ?? 0, available: (s.esploraVideoCount ?? 0) > 0 },
-        { icon: "🗂️", label: "Galleria visuale", detail: "infografiche, sketchnote e tavole (anche in Osserva, Agisci, Ripassa)", count: s.visualCount, available: s.visualCount > 0 },
+        { icon: "🏭", label: "Infografiche del processo", count: s.esploraInfograficaCount ?? 0, available: (s.esploraInfograficaCount ?? 0) > 0 },
+        { icon: "🗂️", label: "Galleria visuale", count: s.visualCount, available: s.visualCount > 0 },
         { icon: "📐", label: "Costruzioni GeoGebra", count: s.geogebraCount ?? 0, available: (s.geogebraCount ?? 0) > 0 },
       ],
     },
     {
       zoneId: "OSSERVA",
       label: "Osserva",
-      items: [{ icon: "🎬", label: "Video", count: osserva, available: osserva > 0 }],
+      items: [
+        { icon: "🏭", label: "Infografica del processo", count: null, available: !!s.hasInfografica },
+        { icon: "🎬", label: "Video", count: osserva, available: osserva > 0 },
+      ],
     },
     {
       zoneId: "SPERIMENTA",

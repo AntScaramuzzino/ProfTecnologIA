@@ -38,6 +38,7 @@ import QuizWidget from "@/components/mc/QuizWidget";
 import FlashcardDeck from "@/components/mc/FlashcardDeck";
 import VideoGallery from "@/components/mc/VideoGallery";
 import MCVisual from "@/components/MCVisual";
+import { countEsploraInfographics, getEsploraInfographics, getOsservaInfographics } from "@/lib/infografiche-placement";
 import MCImageCarousel from "@/components/mc/MCImageCarousel";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
@@ -195,6 +196,18 @@ function findEsploraImage(images: EsploraImage[], title: string): EsploraImage |
   if (images.length === 0) return undefined;
   const key = normalizeParagraphTitle(title);
   return images.find((img) => normalizeParagraphTitle(img.paragrafo) === key);
+}
+
+// ── Infografiche: in OSSERVA se ne mostra una sola, la versione più recente ────
+function isInfografica(v: VisualAsset): boolean {
+  return v.label === "Infografica";
+}
+function bestInfografica(visuals: VisualAsset[]): VisualAsset | undefined {
+  const ver = (src: string) => Number(src.match(/_v(\d+)\.\w+$/)?.[1] ?? 0);
+  const fmt = (src: string) => (/\.svg$/i.test(src) ? 1 : 0);
+  return visuals
+    .filter(isInfografica)
+    .sort((a, b) => ver(b.src) - ver(a.src) || fmt(a.src) - fmt(b.src) || a.src.localeCompare(b.src))[0];
 }
 
 // ── Splitta il body di ESPLORA in sottosezioni ###  ──────────────────────────
@@ -787,6 +800,13 @@ function ZonePanel({
       const paragraphImage =
         findEsploraImage(esploraImages, ai.title) ??
         (ai.id === "esplora-intro" || (nucleo && ai === approfondimenti[0]) ? introFallbackImage : undefined);
+      // Infografiche di processo assegnate a questo paragrafo (lib/infografiche-placement.ts).
+      // La prima sottosezione arriva come "Introduzione" con il titolo reale in testa al body.
+      const placementTitle =
+        ai.id === "esplora-intro"
+          ? ai.body.match(/^@@SUBHEAD:([^\n]+)/)?.[1] ?? ai.title
+          : ai.title;
+      const sectionInfographics = getEsploraInfographics(mc.id, placementTitle, visuals);
 
       return {
         id: ai.id,
@@ -860,25 +880,36 @@ function ZonePanel({
               </figure>
             )}
             <ReadableBodyInTab body={ai.body} />
+            {sectionInfographics.map((asset) => (
+              <MCVisual
+                key={asset.src}
+                asset={asset}
+                alt={`Infografica — ${ai.title}`}
+                className="mt-6"
+                zoomable
+              />
+            ))}
           </>
         ),
       };
     });
 
-    // Galleria residua: esclude sketchnote (→ RIPASSA), infografiche processo (→ OSSERVA), compito_realta (→ AGISCI)
+    // Galleria: solo immagini che non compaiono altrove nella pagina. Esclude la copertina
+    // (in cima alla pagina), sketchnote (→ RIPASSA), infografiche (→ OSSERVA o paragrafo ESPLORA), compito (→ AGISCI);
+    // le immagini della professione non arrivano qui (→ PROFESSIONI).
     const galleriaAssets = visuals.filter(
-      (v) =>
-        v.label !== "Ripassa" &&
-        v.label !== "Compito di Realtà" &&
-        !v.src.includes("infografica_processo") &&
-        !v.src.includes("infografica_latte") &&
-        !v.src.includes("infografica_lavorazione")
+      (v, i) => i > 0 && v.label !== "Ripassa" && v.label !== "Compito di Realtà" && !isInfografica(v),
     );
 
-    // Immagini per paragrafo (Canva AI) anche in galleria, con il prompt come didascalia
+    // Immagini dei paragrafi già mostrate nel testo: non si ripetono in galleria
+    const shownInText = new Set(
+      accordionItems
+        .map((ai) => findEsploraImage(esploraImages, ai.title) ?? (ai.id === "esplora-intro" ? introFallbackImage : undefined))
+        .filter(Boolean),
+    );
     const galleriaConEsplora: VisualAsset[] = [
       ...galleriaAssets,
-      ...esploraImages.map((img) => ({
+      ...esploraImages.filter((img) => !shownInText.has(img)).map((img) => ({
         kind: img.fonte === "schema" ? ("diagram" as const) : ("generated" as const),
         label: img.paragrafo,
         src: img.src,
@@ -910,7 +941,7 @@ function ZonePanel({
           </p>
         )}
         <AccordionSection items={items} defaultFirstOpen={!nucleo} areaHex={areaHex} />
-        {/* Galleria visual — esclude sketchnote (RIPASSA) e infografiche processo (nel testo) */}
+        {/* Galleria visuale — solo immagini non mostrate altrove nella pagina */}
         {galleriaConEsplora.length > 0 && (
           <div className="mt-8">
             <p className="mb-4 text-xs font-black uppercase tracking-wide text-slate-500">Galleria visuale</p>
@@ -924,12 +955,10 @@ function ZonePanel({
   // ── OSSERVA ───────────────────────────────────────────────────────────────
   if (tabId === "OSSERVA") {
     // Infografiche del processo produttivo — osservare come funziona nella realtà
-    const processoAssets = visuals.filter(
-      (v) =>
-        v.src.includes("infografica_processo") ||
-        v.src.includes("infografica_latte") ||
-        v.src.includes("infografica_lavorazione")
-    );
+    // MC configurate in lib/infografiche-placement.ts: solo quelle assegnate a OSSERVA;
+    // le altre: una sola infografica, la versione più recente
+    const best = bestInfografica(visuals);
+    const processoAssets = getOsservaInfographics(mc.id, visuals) ?? (best ? [best] : []);
 
     return (
       <div className="px-4 py-6 sm:px-6 space-y-8">
@@ -1223,7 +1252,11 @@ export function MCPageClient({
       esploraVideoCount: esploraImages.filter((i) => !!i.video).length,
       deckSlideCount: deckSlides.length,
       geogebraCount,
-      visualCount: visuals.length,
+      visualCount: visuals.filter(
+        (v, i) => i > 0 && v.label !== "Ripassa" && v.label !== "Compito di Realtà" && !isInfografica(v),
+      ).length,
+      hasInfografica: (getOsservaInfographics(mc.id, visuals)?.length ?? (bestInfografica(visuals) ? 1 : 0)) > 0,
+      esploraInfograficaCount: countEsploraInfographics(mc.id, visuals),
       laboratorio: lab ? { titolo: lab.titolo, archetipo: lab.archetipo } : null,
       escapeRoom: esc ? { titolo: esc.titolo } : null,
       hasCompito: sectionMapClean.has("AGISCI"),
