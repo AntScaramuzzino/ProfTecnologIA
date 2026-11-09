@@ -288,7 +288,7 @@ Rimuovere il riquadro "Come funziona la cifratura". Salvare come `MC-DIG-2-04_in
 
 ## 6. Da verificare a parte
 
-- **Riferimenti IN.** Nei JSON riallineati il campo IN riusa formule già presenti in altre MC della matrice. Vanno confrontati con il testo del D.M. 221/2025, soprattutto per SIS-3-04 (orientamento) e DIG-2-03.
+- **Riferimenti IN.** Verificati il 9 novembre sugli estratti del testo definitivo pubblicati dalle scuole (il PDF del MIM non era raggiungibile): sei MC usano formule che corrispondono a traguardi di Tecnologia; per AMB-2-06, SIS-3-04 e DIG-2-03 il riferimento è stato sostituito con il traguardo più vicino. Conviene un ultimo confronto con la copia del decreto in `09_INDICAZIONI_NAZIONALI/`.
 - **Matrice sul Mac.** `01_MATRICE_MC/` nel workspace TecnologIA ha ancora i JSON vecchi: va allineata a `05_APP/tecnologia-sito-web/data/mc/`, che è la fonte canonica.
 - **Badge SDG.** Aggiunti i badge SDG 6 (acqua pulita) e SDG 14 (vita sott'acqua): ora sono gli SDG principali di AMB-2-05 e MAT-1-06, come indicano i testi.
 - **Nomi UDA.** I testi citano UDA con nomi diversi da quelli nel JSON (per esempio "Dal campo alla tavola" e "La Città che Vorrei" per UDA-2). Non è stato toccato.
