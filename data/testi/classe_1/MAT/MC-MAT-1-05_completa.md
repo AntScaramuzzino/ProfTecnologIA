@@ -29,6 +29,69 @@ Tienila a mente mentre leggi. Alla fine avrai la risposta tecnica precisa.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Le posate in cucina, i fili nei muri, il telaio della bicicletta: i metalli sono dappertutto. Non per abitudine, ma perché hanno qualità che è difficile trovare altrove.
+
+**Dalla roccia al metallo**
+
+I metalli non si trovano già pronti. Sono nascosti dentro rocce chiamate **minerali**, che vanno scavate nelle miniere e poi lavorate con moltissimo calore. Una miniera cambia il paesaggio per sempre. È uno dei motivi per cui conviene riciclare.
+
+**Il ferro non si usa mai da solo**
+
+Il ferro puro è morbido e arrugginisce in fretta. Quello che usiamo è una **lega**, cioè un metallo mescolato con piccole quantità di altri elementi per renderlo migliore.
+
+L'**acciaio** è ferro con pochissimo carbonio. Basta quel poco per farlo diventare forte, e allo stesso tempo capace di piegarsi prima di rompersi. Regge palazzi, ponti e automobili.
+
+L'**acciaio inossidabile**, o inox, contiene anche cromo. Il cromo forma sulla superficie una pellicola invisibile che la protegge: per questo le tue posate non arrugginiscono.
+
+> ✋ **Tocca a te.** Cerca nell'aula tre oggetti di metallo. Per ognuno scrivi: è lucido o opaco? è pesante o leggero per la sua grandezza? ha macchie di ruggine? Prova a indovinare di che metallo è.
+
+**Alluminio: il leggero**
+
+L'**alluminio** pesa un terzo dell'acciaio e non arrugginisce. Lo trovi nelle lattine, nelle biciclette, negli aerei, nei telai delle finestre.
+
+Il suo problema è la nascita: per ricavarlo dalla roccia serve un'enorme quantità di elettricità. Ma una volta prodotto si ricicla all'infinito, e rifonderlo richiede solo un ventesimo di quell'energia. Una lattina buttata nel bidone giusto può tornare sullo scaffale in circa due mesi.
+
+**Rame: il conduttore**
+
+Il **rame** è il metallo che fa passare meglio la corrente tra quelli che possiamo permetterci. Si lascia anche tirare in fili sottilissimi senza spezzarsi. Per questo quasi tutti i fili elettrici del mondo sono di rame.
+
+Mescolato con lo stagno diventa **bronzo**, quello delle statue e delle campane. Mescolato con lo zinco diventa **ottone**, quello dei rubinetti e delle trombe.
+
+**La ruggine**
+
+Quando il ferro incontra acqua e ossigeno si trasforma lentamente in ruggine. Questo attacco si chiama **corrosione**. La ruggine è piena di buchi: lascia passare altra acqua, e il metallo continua a consumarsi fino in fondo.
+
+Ci si difende mettendo qualcosa tra il metallo e l'aria:
+
+- la vernice, finché non si graffia;
+- la **zincatura**, uno strato di zinco, come su guard-rail e lampioni;
+- l'uso di metalli che si proteggono da soli, come inox e alluminio.
+
+> ✋ **Tocca a te.** Torniamo alla bici dell'inizio. Devi costruirne una leggerissima e una che costi poco. Quale metallo scegli per ciascuna? Scrivi la scelta e il motivo in due righe.
+
+**Leggero, forte o economico?**
+
+| Metallo | Punto forte | Punto debole |
+|---------|-------------|--------------|
+| Acciaio | forte ed economico | pesante, arrugginisce |
+| Acciaio inox | non arrugginisce | costa di più |
+| Alluminio | leggero | meno forte, costoso da produrre |
+| Rame | conduce benissimo | pesante e caro |
+
+Nessun metallo vince in tutto. Chi progetta deve scegliere che cosa conta di più.
+
+> 📍 **Qui da noi.** Vicino al mare il ferro arrugginisce prima. Cerca nel tuo paese una ringhiera, un cancello o un lampione arrugginito e uno in buono stato. Fotografali o disegnali: che cosa li rende diversi?
+
+**In tre righe**
+
+- I metalli si ricavano dai minerali e si usano quasi sempre come leghe.
+- Acciaio per la forza, alluminio per la leggerezza, rame per la corrente.
+- La corrosione consuma il ferro: lo si protegge con vernice, zinco o leghe che non arrugginiscono.
+
+---
+
 ### I metalli: da dove vengono e perché dominano l'industria moderna
 
 Apri qualsiasi cassetto della tua cucina. Dentro ci sono probabilmente forchette, coltelli, cucchiai in acciaio inossidabile. Guarda il soffitto: i fili dell'impianto elettrico sono in rame, anche se non si vedono perché sono dentro i muri. Guarda fuori dalla finestra: se c'è un palazzo in costruzione, il suo scheletro è fatto di travi e pilastri in acciaio o calcestruzzo armato con barre d'acciaio all'interno.

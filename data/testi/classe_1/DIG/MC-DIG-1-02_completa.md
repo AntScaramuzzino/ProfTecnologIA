@@ -14,13 +14,74 @@
 **Domanda di avvio:**
 Pensa all'ultima cosa che hai letto o visto online. Sai chi l'ha scritta? Sai quando? Sai se è vera?
 
-Uno studio pubblicato nel 2016, su link a cinque siti di notizie condivisi su Twitter nel 2015, rilevò che il 59% degli URL studiati non aveva ricevuto clic misurati. Questo non dimostra che nessuno avesse letto gli articoli attraverso altri percorsi. Prima di condividere, apri la fonte e controlla cosa dice davvero.
+In uno studio su link di notizie condivisi su Twitter, più della metà non aveva ricevuto nemmeno un clic. Condivisi, ma non aperti.
+
+Tu, prima di inoltrare qualcosa, lo apri?
 
 <!-- Fonte della correzione: https://www.hoplofobia.info/wp-content/uploads/2017/06/2016-59-percent-of-links-shared-online-are-never-clicked.pdf · Gabielkov et al., Social Clicks, 2016 · consultata il 4 ottobre 2026. -->
 
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Cerchi una cosa online e in un secondo hai milioni di risultati. Trovare non è più il problema. Il problema è capire di chi fidarsi: su internet chiunque può pubblicare qualsiasi cosa.
+
+**Che cosa fa davvero un motore di ricerca**
+
+Quando cerchi, Google non legge tutto internet in quel momento. Consulta un **indice**, un elenco enorme preparato prima. Poi mette i risultati in ordine: questa classifica si chiama **ranking**.
+
+Attenzione però. Il motore di ricerca guarda quanto una pagina è popolare e citata. Non sa se dice la verità. Il primo risultato non è per forza quello giusto.
+
+> ✋ **Tocca a te.** Secondo te, chi decide quale risultato compare per primo? Scrivi la tua idea in una riga, poi confrontala con quello che hai appena letto.
+
+**Il metodo SIFT: quattro mosse**
+
+Per valutare quello che trovi ti bastano quattro mosse. Insieme si chiamano **SIFT**.
+
+1. **Fermati.** Il titolo ti ha colpito? È fatto apposta. Aspetta cinque secondi prima di credere o condividere.
+2. **Indaga la fonte.** Chi l'ha scritto? Su che sito? Quando?
+3. **Cerca altrove.** Se una notizia è vera e importante, la trovi su più giornali diversi. Se la trovi solo su un sito sconosciuto, è un campanello d'allarme.
+4. **Risali all'origine.** L'articolo cita un numero o una frase? Vai a vedere da dove viene. Spesso, passando di mano in mano, è cambiato.
+
+**Un caso vero: la banana radioattiva**
+
+Gira da anni questa frase: "Le banane sono radioattive e fanno male". Proviamo le quattro mosse.
+
+È vero che le banane contengono una minuscola quantità di una sostanza radioattiva naturale, il potassio-40. Ma è così poca che non ha nessun effetto sulla salute. Quella sostanza c'è già anche nel tuo corpo.
+
+Quindi la frase parte da un fatto vero e arriva a una conclusione falsa. Le bufale migliori funzionano proprio così.
+
+**Come è fatta una fake news**
+
+Una **fake news** è una notizia falsa che sembra vera. Di solito ha un pezzetto di verità, un titolo che fa arrabbiare o spaventare, e un aspetto da giornale serio.
+
+Si diffonde perché siamo fatti così: una notizia che allarma ci fa venire voglia di avvisare gli altri.
+
+**Il trucco che il cervello fa a tutti**
+
+Tendiamo a credere subito alle cose che confermano quello che pensiamo già, e a scartare le altre. Si chiama **bias di conferma**, e capita a tutti, anche agli adulti.
+
+Usalo come sveglia. Se una notizia ti piace moltissimo o ti fa arrabbiare moltissimo, è il momento di controllare.
+
+> ✋ **Tocca a te.** Pensa all'ultima cosa che hai sentito dire e a cui hai creduto subito. Chi l'ha detta? Come potresti controllarla con le quattro mosse?
+
+**L'indirizzo dice qualcosa**
+
+L'ultima parte dell'indirizzo di un sito si chiama **dominio**. I siti .gov sono di governi, .edu di università americane. Il .com non dice niente: lo usano giornali seri e siti inventati. Guarda sempre l'indirizzo per intero: alcuni siti falsi copiano il nome di quelli veri cambiando una lettera.
+
+> 📍 **Qui da noi.** Trova una notizia sul tuo Comune che gira in una chat di famiglia o su un social. Applica le quattro mosse e porta in classe il risultato: vera, falsa o "non si riesce a capire"?
+
+> 🔎 **Come lo sappiamo?** Il dato dell'aggancio viene da uno studio del 2016 (Gabielkov e altri) su link a cinque siti di notizie condivisi su Twitter nel 2015: per il 59% di quei link non risultava nessun clic. Non prova che nessuno abbia letto quegli articoli arrivandoci per altre strade.
+
+**In tre righe**
+
+- Un motore di ricerca ordina i risultati, ma non sa quali sono veri.
+- Quattro mosse: fermati, indaga la fonte, cerca altrove, risali all'origine.
+- Più una notizia ti fa reagire, più va controllata.
+
+---
 
 ### Internet ha un sacco di informazioni. Non tutte sono vere.
 
@@ -96,7 +157,7 @@ Trovare una pagina è solo il primo passo. Il secondo è capire se ci puoi fidar
 
 Prima di leggere, condividere o credere a qualcosa che trovi online: **fermati**. Non reagire immediatamente. Il titolo ti ha colpito? È pensato per farlo. Le fake news usano titoli forti, emotivi, spesso esagerati, progettati per far scattare una reazione istintiva prima che tu possa pensare.
 
-La pausa è il passo più difficile ma il più importante. Durato anche solo 5 secondi.
+La pausa è il passo più difficile ma il più importante. Dura anche solo 5 secondi.
 
 ---
 

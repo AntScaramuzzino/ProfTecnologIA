@@ -20,6 +20,67 @@ Segue un algoritmo. Una sequenza precisa di passi che esegue uguale ogni volta. 
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Il cameriere che non sbaglia mai un ordine non ha una memoria magica. Segue sempre gli stessi passi, nello stesso ordine. Segue un algoritmo.
+
+**Che cos'è un algoritmo**
+
+Un **algoritmo** è una serie di istruzioni precise che, eseguite in ordine, portano a un risultato. Una ricetta è un algoritmo. Anche il percorso che ti calcola il navigatore.
+
+Perché funzioni deve avere tre qualità:
+
+- è **preciso**: "aggiusta di sale" non va bene, "aggiungi 5 grammi di sale" sì;
+- **finisce**: prima o poi deve fermarsi;
+- si può **eseguire**: ogni passo deve essere possibile.
+
+> ✋ **Tocca a te.** Gioco del robot umano. Scrivi le istruzioni per andare dal tuo banco alla porta. Un compagno le esegue alla lettera, senza aggiungere niente. Arriva alla porta o contro un banco?
+
+**I tre mattoncini**
+
+Tutti gli algoritmi, anche i più complicati, sono fatti con tre soli mattoncini.
+
+La **sequenza**: una istruzione dopo l'altra, in ordine. L'ordine conta: non puoi scrivere la password prima di accendere il computer.
+
+La **condizione**: una scelta. SE il semaforo è verde ALLORA attraversa, ALTRIMENTI aspetta. La domanda deve avere solo due risposte, sì o no. Un algoritmo non capisce "forse".
+
+Il **ciclo**: ripetere. "Fai un passo e allunga il braccio, finché tocchi il muro." Con un ciclo fai la stessa cosa cento volte scrivendola una volta sola. Se il ciclo non si ferma mai è un errore, e ha un nome: loop infinito.
+
+**Disegnare un algoritmo**
+
+Un algoritmo si può anche disegnare. Il disegno si chiama **diagramma di flusso** e usa quattro segni:
+
+| Forma | Che cosa vuol dire |
+|-------|--------------------|
+| Ovale | inizio o fine |
+| Rettangolo | un'azione |
+| Rombo | una domanda sì/no |
+| Freccia | la strada da seguire |
+
+Dal rombo escono sempre due frecce: una per il sì e una per il no.
+
+> ✋ **Tocca a te.** Disegna il diagramma di flusso di questa frase: "Se piove prendi l'ombrello, poi esci di casa". Quanti rombi ti servono?
+
+**Un problema grande è fatto di problemi piccoli**
+
+"Organizzare una festa" è troppo grande per scrivere le istruzioni. Ma puoi spezzarlo: scegliere il giorno, fare la lista degli invitati, decidere che cosa si mangia. Ogni pezzo è abbastanza piccolo da risolvere. Questa mossa si chiama **decomposizione**, e i programmatori la usano ogni giorno.
+
+**Quando qualcosa non va**
+
+Un errore in un algoritmo si chiama **bug**. Trovarlo e correggerlo si chiama **debug**. Si fa sempre allo stesso modo: guardi il risultato sbagliato, torni indietro fino all'istruzione che l'ha causato, la correggi e riprovi.
+
+Sbagliare è normale. È quello che è successo al tuo compagno-robot: non era lui a sbagliare, erano le istruzioni.
+
+> 📍 **Qui da noi.** Scrivi l'algoritmo per arrivare dal cancello della scuola all'aula di Tecnologia. Consegnalo a un compagno che finge di non conoscere la scuola: lo porta nel posto giusto?
+
+**In tre righe**
+
+- Un algoritmo è una serie di istruzioni precise che arriva a una fine.
+- Si costruisce con sequenza, condizione e ciclo.
+- I problemi grandi si spezzano, e gli errori si cercano passo per passo.
+
+---
+
 ### Che cos'è un algoritmo
 
 Un **algoritmo** è una sequenza finita di istruzioni precise e non ambigue che, eseguite nell'ordine giusto, risolvono un problema o portano a un risultato.
@@ -116,7 +177,7 @@ Le frecce uscenti dal rombo (condizione) sono sempre due: una per "Sì" e una pe
 
 I problemi complessi sono fatti di problemi più piccoli. La **decomposizione** è l'abilità di scomporli.
 
-Esempio: "organizzare la festa di compleanno" è troppo vago per essere un algoritmo. Ma se lo decompon:
+Esempio: "organizzare la festa di compleanno" è troppo vago per essere un algoritmo. Ma se lo scomponi:
 - Decidere data e luogo
 - Fare la lista degli invitati
 - Preparare gli inviti

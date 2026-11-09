@@ -24,6 +24,67 @@ Tienilo in testa. A fine pagina capirai perché quel numero non è casuale — e
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un architetto non spiega a voce dove va ogni muro. Lo disegna, con regole che valgono uguali in Italia, in Giappone e in Brasile. Il **disegno tecnico** è una lingua fatta di linee. Qui impari le prime parole.
+
+**Gli attrezzi**
+
+Ogni attrezzo ha un solo compito, e lo fa bene.
+
+- La **matita**. La lettera dice quanto è dura: H è dura e lascia un segno chiaro, B è morbida e lascia un segno scuro, HB sta in mezzo. Con la H tracci le linee di prova, con la HB quelle definitive.
+- Il **righello** misura e guida le linee dritte. Tienilo fermo con la mano che non disegna.
+- Le due **squadre**, una con angoli di 45° e una con angoli di 30° e 60°. Facendone scorrere una lungo l'altra tracci linee parallele.
+- Il **compasso** disegna cerchi e archi, e "trasporta" una distanza da un punto a un altro.
+- Il **rapportatore** misura gli angoli. Ha due file di numeri: parti sempre da quella che comincia con 0.
+
+Regola d'oro: nel disegno tecnico "più o meno" non esiste. Il compasso non si apre a occhio, si apre sul righello.
+
+> ✋ **Tocca a te.** Prendi la matita. Traccia una linea lunga 10 cm premendo poco, e accanto una linea uguale premendo di più. Quale delle due riusciresti a cancellare senza lasciare traccia?
+
+**Quattro linee, quattro significati**
+
+Ogni tipo di linea dice una cosa precisa. Se sbagli linea, chi legge capisce un'altra cosa.
+
+| Linea | Che cosa indica |
+|-------|-----------------|
+| Continua grossa | i bordi che si vedono |
+| Continua fine | le misure e le linee di aiuto |
+| Tratteggiata | i bordi nascosti, che ci sono ma non si vedono |
+| Mista (tratto e punto) | gli assi di simmetria |
+
+**Costruire con riga e compasso**
+
+Una **costruzione geometrica** è una serie di passi che dà una figura esatta usando solo riga e compasso. Sono le stesse mosse che usavano i Greci più di duemila anni fa.
+
+Prova subito la più semplice, il triangolo equilatero:
+
+1. disegna un segmento AB;
+2. apri il compasso esattamente da A a B;
+3. punta in A e traccia un arco sopra il segmento;
+4. senza cambiare apertura, punta in B e traccia un secondo arco;
+5. chiama C il punto dove gli archi si incrociano e unisci A con C e B con C.
+
+I tre lati sono uguali perché li hai tracciati tutti con la stessa apertura.
+
+> ✋ **Tocca a te.** Disegna un cerchio. Senza cambiare l'apertura del compasso, punta su un punto del cerchio e segna un trattino sul bordo. Sposta la punta sul trattino e ripeti fino a tornare al punto di partenza. Quanti trattini hai fatto? Uniscili: che figura ottieni?
+
+Con mosse simili si costruiscono la **perpendicolare**, cioè la retta che ne incontra un'altra formando un angolo retto, e la **bisettrice**, la retta che divide un angolo in due parti uguali. I passi sono negli approfondimenti qui sotto, con il laboratorio per provarle.
+
+**A che cosa serve**
+
+Un arco romano è mezzo cerchio tracciato con una corda usata come compasso. Le pietre sono tagliate seguendo quel cerchio, e si reggono una contro l'altra senza colla. Molti ponti romani sono ancora in piedi dopo duemila anni.
+
+> 📍 **Qui da noi.** Cerca nel tuo paese un arco, un portale o una finestra ad arco. Fotografalo o disegnalo: riesci a capire dove si trovava il centro del compasso di chi l'ha costruito?
+
+**In tre righe**
+
+- Il disegno tecnico è una lingua precisa: ogni attrezzo e ogni linea hanno un compito.
+- Le linee sono quattro: continua grossa, continua fine, tratteggiata, mista.
+- Con riga e compasso si costruiscono figure esatte, senza misurare gli angoli.
+
+---
+
 ### Il disegno tecnico: parlare con le forme
 
 Quando un architetto progetta una casa, non la costruisce a memoria. Quando un ingegnere progetta un ponte, non spiega a voce agli operai dove mettere ogni trave. Quando un designer crea uno smartphone, non mostra il prototipo a ogni singolo tecnico della fabbrica.
@@ -367,7 +428,7 @@ Perché questa forma? Perché in un arco semicircolare, i **cunei** (i blocchi d
 
 Il risultato è una struttura che regge il peso di tonnellate di muratura senza colla, senza cemento, senza bulloni. Solo geometria.
 
-Gli Romani costruirono il Ponte di Augusto ad Ariminum (l'attuale Rimini) nel 14 d.C. — 2.000 anni fa — usando questa geometria. Il ponte è ancora in piedi. I suoi archi a tutto sesto reggono il traffico moderno.
+I Romani costruirono il Ponte di Augusto ad Ariminum (l'attuale Rimini) nel 14 d.C. — 2.000 anni fa — usando questa geometria. Il ponte è ancora in piedi. I suoi archi a tutto sesto reggono il traffico moderno.
 
 **Collegamento alla costruzione geometrica:** per progettare un arco a tutto sesto, il geometra romano doveva:
 1. Determinare la luce dell'arco (la distanza tra i due piloni).

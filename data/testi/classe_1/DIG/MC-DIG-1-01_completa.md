@@ -20,6 +20,58 @@ Una volta ogni dieci minuti, in media. La stessa macchina che nel 1969 avrebbe m
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Ogni volta che apri un'app o mandi un messaggio entri in un **ambiente digitale**. Per orientarti ti serve una mappa. Eccola.
+
+**Hardware e software**
+
+L'**hardware** è tutto quello che puoi toccare: schermo, tastiera, batteria, i pezzi dentro la scatola. Il **software** è quello che non puoi toccare: le app, i programmi, i dati.
+
+Uno senza l'altro non serve a niente. Pensa a una chitarra e a uno spartito: la chitarra da sola non sa quale canzone suonare, lo spartito da solo è carta. La musica nasce quando ci sono tutti e due.
+
+> ✋ **Tocca a te.** Guarda il computer dell'aula o la LIM. Scrivi tre cose che sono hardware e tre che sono software. Il puntatore del mouse sullo schermo che cos'è?
+
+**Che cosa c'è dentro**
+
+Dentro ogni computer, e dentro ogni telefono, ci sono quattro pezzi che lavorano insieme.
+
+La **CPU**, o processore, è il cervello: esegue i calcoli, miliardi al secondo.
+
+La **RAM** è la memoria di lavoro. Immaginala come una scrivania: più è grande, più cose puoi tenere aperte insieme. Quando spegni, la scrivania si svuota.
+
+Lo **storage** è la memoria che resta: l'armadio dove finiscono foto, documenti e app. Rimane pieno anche a computer spento.
+
+Poi ci sono le **periferiche**. Quelle di input portano le informazioni dentro: tastiera, mouse, microfono. Quelle di output le portano fuori: schermo, casse, stampante. Lo schermo di un telefono fa tutte e due le cose.
+
+Sai perché un computer diventa lento con gli anni? Quasi mai è il processore. Di solito è l'armadio troppo pieno: senza spazio libero, il computer fatica a lavorare.
+
+**Chi comanda: il sistema operativo**
+
+Il **sistema operativo** è il programma che fa funzionare tutti gli altri. Decide quale app usa il processore, quanta memoria riceve, dove si salvano i file. Sui computer i più diffusi sono Windows, macOS e Linux. Sui telefoni Android e iOS.
+
+> ✋ **Tocca a te.** Quale sistema operativo ha il computer dell'aula? E il telefono che usi a casa? Come hai fatto a capirlo?
+
+**Internet non è il web**
+
+Si usano come sinonimi, ma sono cose diverse. **Internet** è la rete: cavi, antenne e computer collegati in tutto il mondo. Il **web** è uno dei servizi che viaggiano su quella rete: le pagine che apri con il browser. Internet è la strada, il web è uno dei mezzi che la percorrono. Sulla stessa strada passano anche le email e i messaggi.
+
+**"È nel cloud"**
+
+Quando salvi una cosa nel **cloud**, non è una nuvola: è il computer di qualcun altro. I tuoi file stanno su grandi computer di un'azienda, e tu li raggiungi via internet.
+
+Il vantaggio: se perdi il telefono, le foto restano. Lo svantaggio: senza connessione non le vedi, e i tuoi dati sono in casa d'altri.
+
+> 📍 **Qui da noi.** Chiedi a casa: dove sono salvate le foto di famiglia? Sul telefono, su un computer, nel cloud? Se domani quel dispositivo si rompesse, che cosa si salverebbe?
+
+**In tre righe**
+
+- Un dispositivo è hardware più software: uno senza l'altro non funziona.
+- Processore, RAM, storage e periferiche sono i pezzi; il sistema operativo li dirige.
+- Internet è la rete, il web è un servizio, il cloud è il computer di qualcun altro.
+
+---
+
 ### Un ambiente che non si vede. Ma che usi ogni giorno.
 
 Pensa all'ultima volta che hai fatto qualcosa sul computer o sullo smartphone: aprire una pagina web, ascoltare musica, scrivere un messaggio, fare una foto. Ognuna di quelle azioni ti ha portato dentro un **ambiente digitale** — uno spazio costruito da hardware, software, dati e connessioni, dove tu prendi decisioni decine di volte al minuto senza accorgertene.
