@@ -2,64 +2,69 @@
   "id": "MC-AMB-2-05",
   "area": "AMB",
   "anno": 2,
-  "titolo": "Smart city e tecnologie per la città intelligente",
-  "descrizione": "Lo studente comprende il concetto di smart city (uso di tecnologie digitali per ottimizzare i servizi urbani), conosce applicazioni concrete (semafori intelligenti, raccolta rifiuti ottimizzata, illuminazione adattiva, parcheggi smart) e sa discutere i benefici e i rischi legati alla raccolta massiva di dati urbani.",
+  "titolo": "Il ciclo artificiale dell'acqua: acquedotto, depurazione e risorsa idrica",
+  "descrizione": "Lo studente segue il percorso dell'acqua dalla fonte al rubinetto e dal rubinetto al depuratore (captazione, potabilizzazione, distribuzione, depurazione), conosce il problema delle perdite di rete, la gestione delle acque piovane, la scarsità idrica e l'impronta idrica dei prodotti.",
   "fonte": "originale",
   "frameworks": {
     "IN": {
-      "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con il contesto",
-      "traguardo": "Lo studente descrive le tecnologie smart city e ne valuta impatti e rischi"
+      "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con la natura",
+      "traguardo": "Lo studente descrive il ciclo artificiale dell'acqua e valuta consumi, sprechi e soluzioni per un uso sostenibile della risorsa idrica"
     },
     "DC": {
-      "ref": "4.2 Proteggere i dati personali e la privacy",
+      "ref": "1.1 Navigare, ricercare e filtrare dati",
       "livello": "I",
-      "nota": "Lo studente riflette sui dati raccolti dai sensori urbani e sulle implicazioni per la privacy dei cittadini"
+      "nota": "Lo studente cerca i dati del proprio gestore idrico e del proprio comune (consumi, perdite di rete) su fonti ufficiali"
     },
     "EC": {
-      "ref": "Ideas and opportunities / Creativity",
-      "nota": "Lo studente immagina soluzioni smart per problemi reali del proprio quartiere"
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente individua sprechi d'acqua nella scuola e propone azioni per ridurli"
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini. Analizzare dilemmi con valori in conflitto allena il pensiero dilemmatico: lo studente impara a stare nell'incertezza, a costruire argomentazioni fondate e a riconoscere che non sempre esiste una risposta unica — competenza adulta dell'imparare a imparare."
+      "nota": "Lo studente comprende che l'acqua del rubinetto è il risultato di un servizio pubblico complesso e di una risorsa limitata."
     },
     "EV": {
-      "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Innovazione",
-      "nota": "Le smart city sono strumento per rendere le città più efficienti, inclusive e sostenibili"
+      "ref": "SDG 6 — Acqua pulita e servizi igienico-sanitari; SDG 11 — Città e comunità sostenibili",
+      "nota": "Garantire acqua potabile e depurazione a tutti richiede reti efficienti e consumi consapevoli"
     }
   },
   "outputApp": {
-    "quiz": "Scenario dilemma: 'Il Comune vuole installare telecamere con riconoscimento facciale ai semafori per ridurre il traffico — sei d'accordo?' Risposta aperta guidata da pro/contro.",
-    "microlearning": "Card deck 5 slide: 5 applicazioni smart city reali (Amsterdam, Barcellona, Songdo, Torino, Singapore) con dati. 5 min.",
-    "visual": "Mappa concettuale: smart city — tecnologie, dati, servizi, rischi, governance.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: ciclo artificiale dell'acqua, potabilizzazione, perdite di rete, acque piovane, impronta idrica, depurazione.",
+    "microlearning": "Process «Il ciclo artificiale dell'acqua: dalla sorgente al depuratore» + Checklist «Dossier acqua della mia scuola».",
+    "visual": "Infografica: il ciclo artificiale dell'acqua in sei fasi, dalla captazione al depuratore, con le perdite di rete.",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
     "MC-AMB-2-03"
   ],
   "tags": [
-    "smart city",
-    "IoT",
-    "tecnologia urbana",
-    "privacy",
+    "acqua",
+    "acquedotto",
+    "potabilizzazione",
+    "depuratore",
+    "impronta idrica",
+    "scarsità idrica",
     "classe-2",
     "AMB"
   ],
-  "compito_realta": "Progetta una soluzione smart per un problema reale del quartiere della tua scuola (es. traffico all'uscita, rifiuti abbandonati, illuminazione carente): descrivi la tecnologia usata, i dati raccolti e chi ne beneficia.",
+  "compito_realta": "Produci un dossier sull'acqua della tua scuola: stima il consumo annuo, documenta almeno tre sprechi osservati e proponi soluzioni realizzabili per ridurli.",
   "sdg": [
-    9,
+    6,
     11
   ],
   "note_didattiche": {
-    "base": "Fornire 3 problemi pre-selezionati e 3 soluzioni possibili. Lo studente sceglie e motiva.",
-    "avanzato": "Analizzare i dati aperti (open data) del proprio comune: cosa pubblica? Cosa manca? Cosa si potrebbe fare con quei dati?"
+    "base": "Fornire lo schema del ciclo artificiale con le fasi da ordinare: lo studente ricostruisce il percorso dell'acqua dalla fonte al rubinetto.",
+    "avanzato": "Progettare la resilienza idrica di una città: riuso delle acque piovane, riduzione delle perdite, piano per la siccità."
   },
   "hook_audio": {
-    "durata_min": 0.6,
-    "durata_secondi": 37
+    "titolo": "Il giorno in cui Cape Town quasi rimase senza acqua",
+    "oggetto_reale": "il rubinetto di casa",
+    "durata_min": 2.0,
+    "durata_secondi": 119,
+    "durata_sec": 119
   },
   "professione_futura": {
-    "titolo": "Urban Planner Sostenibile",
+    "titolo": "Mobility as a Service (MaaS) Designer",
     "orizzonte": "2030",
     "descrizione_breve": "Progetta città resilienti, inclusive e a basso impatto ambientale.",
     "competenze_chiave": [
@@ -67,7 +72,8 @@
       "pianificazione urbana",
       "mobilità sostenibile",
       "Nature-Based Solutions"
-    ]
+    ],
+    "testo": "**Mobility as a Service (MaaS) Designer**\n\nProgetta sistemi integrati di mobilità urbana sostenibile che combinano trasporto pubblico, bike sharing, car sharing e micro-mobilità in un'unica piattaforma digitale accessibile a tutti.\n\nDove lavora: aziende di trasporto pubblico locale, startup di mobilità urbana, comuni e regioni, operatori di sharing mobility.\n\nCompetenze chiave che inizia a costruire da qui: urbanistica · UX design · gestione mobilità · app design · sostenibilità dei trasporti\n\n*\"Non vendo mezzi di trasporto. Vendo la libertà di spostarsi senza possedere un'auto.\"*"
   },
   "clil_termini": [
     {
@@ -107,7 +113,7 @@
     }
   ],
   "uda_collegata": "L'acqua che usiamo: dall'acquedotto allo scarico, misurare e ridurre il consumo idrico scolastico (Tecnologia + Scienze + Matematica + Educazione Civica)",
-  "sdg_principale": 11,
+  "sdg_principale": 6,
   "professioni_future": [
     {
       "titolo": "Mobility as a Service (MaaS) Designer",

@@ -2,64 +2,68 @@
   "id": "MC-AMB-2-04",
   "area": "AMB",
   "anno": 2,
-  "titolo": "Materiali da costruzione e sostenibilità",
-  "descrizione": "Lo studente conosce i principali materiali da costruzione (mattone, cemento, acciaio, legno, vetro, materiali isolanti) con le loro proprietà termiche, meccaniche e ambientali, e sa valutare la scelta del materiale in relazione all'efficienza energetica dell'edificio e all'impatto ambientale del ciclo costruttivo.",
+  "titolo": "Architettura bioclimatica ed efficienza energetica degli edifici",
+  "descrizione": "Lo studente comprende come un edificio può sfruttare il clima per scaldarsi e raffrescarsi (orientamento solare, massa termica, isolamento, ventilazione naturale, tetti verdi), conosce le tre modalità di scambio termico e sa leggere le principali certificazioni energetiche degli edifici.",
   "fonte": "Paci 2014",
   "frameworks": {
     "IN": {
-      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
-      "traguardo": "Lo studente valuta i materiali da costruzione in base a proprietà tecniche e impatto ambientale"
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le relazioni con l'ambiente",
+      "traguardo": "Lo studente analizza un edificio dal punto di vista bioclimatico e propone interventi per migliorarne l'efficienza energetica"
     },
     "DC": {
       "ref": "1.1 Navigare, ricercare e filtrare dati",
       "livello": "I",
-      "nota": "Lo studente ricerca schede tecniche online dei materiali e confronta i dati di sostenibilità"
+      "nota": "Lo studente usa mappe e strumenti online (bussola, percorso del sole) per analizzare l'orientamento di un edificio"
     },
     "EC": {
-      "ref": "Ideas and opportunities / Sustainability",
-      "nota": "Lo studente collega le scelte costruttive al ciclo di vita dell'edificio e ai costi a lungo termine"
+      "ref": "Into action / Taking initiative",
+      "nota": "Lo studente propone interventi bioclimatici realizzabili per la propria scuola"
     },
     "LC": {
       "ref": "Thinking / Systems thinking",
-      "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita. Valutare materiali con criteri multipli (prestazioni, costo, impatto ambientale) è un esercizio di pensiero multi-criterio trasferibile a qualsiasi scelta complessa: imparare a pesare variabili in conflitto."
+      "nota": "Lo studente vede l'edificio come un sistema in scambio continuo di calore con l'ambiente esterno."
     },
     "EV": {
-      "ref": "SDG 11 — Città sostenibili; SDG 13 — Lotta al cambiamento climatico",
-      "nota": "Il settore edilizio produce il 39% delle emissioni globali — materiali sostenibili sono risposta concreta"
+      "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "Edifici che consumano meno energia riducono le emissioni delle città"
     }
   },
   "outputApp": {
-    "quiz": "Scenario: 'Devi scegliere il materiale per le pareti esterne di una casa in zona fredda — quale ha il miglior isolamento termico?' Multipla con dati tecnici.",
-    "microlearning": "Card deck 5 slide: mattone, calcestruzzo, legno X-lam, acciaio, isolanti — proprietà chiave + impatto. 5 min.",
-    "visual": "Tabella comparativa: 5 materiali × 4 parametri (resistenza, isolamento, costo, impatto CO₂).",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: orientamento solare, massa termica, isolamento e trasmittanza, ventilazione naturale, certificazioni energetiche.",
+    "microlearning": "Process «Costruire con il sole: come la geometria solare determina il comfort di un edificio» + Checklist «Analisi bioclimatica della mia scuola».",
+    "visual": "Infografica: sezione di un edificio bioclimatico con sole estivo e invernale, massa termica, isolamento e ventilazione naturale.",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
     "MC-AMB-2-01"
   ],
   "tags": [
-    "materiali edilizi",
-    "sostenibilità",
-    "isolamento",
-    "edilizia green",
+    "architettura bioclimatica",
+    "orientamento solare",
+    "isolamento termico",
+    "massa termica",
+    "efficienza energetica",
     "classe-2",
     "AMB"
   ],
-  "compito_realta": "Analizza la tua casa o scuola: osserva i materiali usati per pareti, pavimenti, finestre e tetto, crea una tabella con 4 materiali identificati e valuta per ciascuno il potenziale di miglioramento per l'efficienza energetica.",
+  "compito_realta": "Analizza dal punto di vista bioclimatico l'edificio della tua scuola: orientamento, involucro termico, ventilazione e verde, poi proponi tre interventi di miglioramento motivati.",
   "sdg": [
     11,
     13
   ],
   "note_didattiche": {
-    "base": "Fornire la tabella con i parametri e i valori già inseriti per 3 materiali. Lo studente aggiunge solo il 4°.",
-    "avanzato": "Calcolare approssimativamente la dispersione termica di una parete non isolata vs. isolata usando i valori di conduttività termica forniti."
+    "base": "Fornire la pianta della scuola con il nord indicato: lo studente individua il lato più soleggiato e valuta la posizione delle finestre.",
+    "avanzato": "Progettare una ristrutturazione bioclimatica di un edificio reale, stimando l'effetto di isolamento e schermature sui consumi."
   },
   "hook_audio": {
-    "durata_min": 0.8,
-    "durata_secondi": 45
+    "titolo": "La casa che respira con le stagioni",
+    "oggetto_reale": "la finestra della tua aula",
+    "durata_min": 2.0,
+    "durata_secondi": 121,
+    "durata_sec": 121
   },
   "professione_futura": {
-    "titolo": "Green Building Designer / Certificatore LEED",
+    "titolo": "Smart City Planner",
     "orizzonte": "2030",
     "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
     "competenze_chiave": [
@@ -67,7 +71,8 @@
       "efficienza energetica",
       "materiali bio-based",
       "BIM"
-    ]
+    ],
+    "testo": "**Smart City Planner**\n\nPianifica città intelligenti integrando IoT urbano, mobilità sostenibile, gestione energetica e servizi digitali ai cittadini, usando GIS e big data per decisioni basate sull'evidenza.\n\nDove lavora: comuni e città metropolitane, società di consulenza urbana, agenzie di sviluppo territoriale, startup smart city.\n\nCompetenze chiave che inizia a costruire da qui: urbanistica · IoT urbano · GIS · pianificazione energetica · data-driven governance\n\n*\"I dati non costruiscono la città. Ma senza dati costruiamo la città sbagliata.\"*"
   },
   "clil_termini": [
     {

@@ -2,36 +2,36 @@
   "id": "MC-AMB-2-06",
   "area": "AMB",
   "anno": 2,
-  "titolo": "Rischio idrogeologico e prevenzione",
-  "descrizione": "Lo studente comprende cosa si intende per rischio idrogeologico (frane, alluvioni, siccità), sa leggere una mappa del rischio semplificata, e conosce le principali misure di prevenzione tecnologica e comportamentale, sviluppando consapevolezza del rapporto tra territorio, clima e sicurezza.",
+  "titolo": "Smart city: sensori, dati aperti e partecipazione",
+  "descrizione": "Lo studente comprende che cos'è una smart city (sensori urbani, open data, partecipazione civica digitale, mobilità condivisa), sa leggere esempi reali di città che usano i dati e si chiede in modo critico per chi una città diventa davvero più intelligente.",
   "fonte": "originale",
   "frameworks": {
     "IN": {
-      "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con la natura",
-      "traguardo": "Lo studente descrive i rischi idrogeologici e le tecnologie di monitoraggio e prevenzione"
+      "ref": "IN 2025 (D.M. n. 221/2025) — Prevede le possibili conseguenze di una decisione o di una scelta di tipo tecnologico, riconoscendo in ogni innovazione opportunità e rischi",
+      "traguardo": "Lo studente descrive come sensori e dati aperti migliorano i servizi urbani e valuta in modo critico benefici, costi ed esclusioni"
     },
     "DC": {
       "ref": "1.1 Navigare, ricercare e filtrare dati",
       "livello": "I",
-      "nota": "Lo studente usa piattaforme GIS (es. ISPRA, Geoportale) per consultare mappe del rischio del proprio territorio"
+      "nota": "Lo studente cerca e consulta dataset aperti della propria città (es. su dati.gov.it) per documentare un problema urbano"
     },
     "EC": {
       "ref": "Into action / Taking initiative",
-      "nota": "Lo studente identifica azioni preventive realizzabili nella propria comunità"
+      "nota": "Lo studente progetta una soluzione smart realistica per il quartiere della scuola"
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio. Studiare i rischi del proprio territorio è apprendimento situato: lo studente collega concetti astratti (sismicità, idrogeologia, rischio alluvionale) a luoghi concreti, rinforzando la memoria con l'ancoraggio geografico e personale."
+      "nota": "Lo studente si chiede chi guadagna e chi resta escluso da una tecnologia urbana, esercitando cittadinanza attiva."
     },
     "EV": {
-      "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
-      "nota": "Il rischio idrogeologico è amplificato dai cambiamenti climatici: prevenire è adattarsi"
+      "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Imprese, innovazione e infrastrutture",
+      "nota": "Una città intelligente usa i dati per servizi migliori e più equi per tutti gli abitanti"
     }
   },
   "outputApp": {
-    "quiz": "Scenario di emergenza: 'Sei in una zona con allerta arancione per piogge intense — quali azioni eviti? Quali fai?' Multipla con feedback di protezione civile.",
-    "microlearning": "Card deck 5 slide: frana, alluvione, siccità, erosione costiera, valanga — cause + segnali premonitori + cosa fare. 5 min.",
-    "visual": "Mappa del rischio Italia: aree rosse, arancioni, gialle con legenda e casistiche storiche.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: definizione di smart city, sensori urbani, open data, partecipazione civica, mobilità condivisa.",
+    "microlearning": "Process «Come funziona una smart city: dai dati ai servizi, con le domande che nessuno fa» + Checklist «Progettista di una soluzione smart per il mio quartiere».",
+    "visual": "Infografica: dal sensore al servizio — come una città raccoglie dati, li pubblica come open data e li usa per decisioni, con la domanda «per chi?».",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
@@ -39,28 +39,32 @@
     "MC-AMB-2-03"
   ],
   "tags": [
-    "rischio idrogeologico",
-    "prevenzione",
-    "territorio",
-    "alluvioni",
+    "smart city",
+    "sensori urbani",
+    "open data",
+    "partecipazione civica",
+    "mobilità condivisa",
     "classe-2",
     "AMB"
   ],
-  "compito_realta": "Ricerca se il territorio del tuo comune è classificato a rischio idrogeologico sul Geoportale ISPRA: identifica il livello di rischio, l'ultimo evento registrato e una misura di prevenzione esistente o possibile.",
+  "compito_realta": "Progetta in gruppo una soluzione smart per il quartiere della scuola: individua un problema reale, scegli sensori e dati, stima i costi e spiega chi ne beneficia.",
   "sdg": [
     11,
-    13
+    9
   ],
   "note_didattiche": {
-    "base": "Fornire la scheda del comune già compilata parzialmente. Lo studente aggiunge solo la misura di prevenzione.",
-    "avanzato": "Confrontare due comuni italiani con lo stesso livello di rischio ma diversa capacità di risposta: cosa fa la differenza?"
+    "base": "Partire da un dataset aperto già scaricato (es. qualità dell'aria): lo studente legge i dati e indica dove il problema è più evidente.",
+    "avanzato": "Progettare una campagna di open data per il proprio quartiere, definendo quali dati raccogliere, come pubblicarli e chi potrebbe usarli."
   },
   "hook_audio": {
-    "durata_min": 0.7,
-    "durata_secondi": 41
+    "titolo": "Il semaforo che ti conosce",
+    "oggetto_reale": "il semaforo davanti alla scuola",
+    "durata_min": 1.9,
+    "durata_secondi": 112,
+    "durata_sec": 112
   },
   "professione_futura": {
-    "titolo": "Green Building Designer / Certificatore LEED",
+    "titolo": "Geo-engineer Ambientale",
     "orizzonte": "2030",
     "descrizione_breve": "Progetta e certifica edifici ad alta efficienza energetica e impatto zero.",
     "competenze_chiave": [
@@ -68,7 +72,8 @@
       "efficienza energetica",
       "materiali bio-based",
       "BIM"
-    ]
+    ],
+    "testo": "**Geo-engineer Ambientale**\n\nAnalizza dati geospaziali e caratteristiche del territorio per pianificare interventi di tutela ambientale, prevenzione del rischio geologico e ripristino degli ecosistemi.\n\nDove lavora: agenzie ambientali regionali (ARPA), studi di geologia e ingegneria ambientale, parchi naturali, protezione civile.\n\nCompetenze chiave che inizia a costruire da qui: geologia · GIS e telerilevamento · ingegneria ambientale · analisi geospaziale · modellazione territoriale\n\n*\"Il territorio racconta la sua storia. Il mio lavoro è capirla prima che diventi un'emergenza.\"*"
   },
   "clil_termini": [
     {

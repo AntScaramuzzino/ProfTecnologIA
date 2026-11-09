@@ -2,36 +2,36 @@
   "id": "MC-ALI-2-06",
   "area": "ALI",
   "anno": 2,
-  "titolo": "Cibo, cultura e biodiversità",
-  "descrizione": "Lo studente esplora la relazione tra cibo, identità culturale e biodiversità agricola, comprende il concetto di erosione della biodiversità alimentare e sa valutare l'importanza della preservazione di varietà tradizionali e locali come patrimonio culturale e risorsa per il futuro.",
+  "titolo": "Innovazione alimentare e nuove tecnologie",
+  "descrizione": "Lo studente conosce le principali tecnologie che stanno cambiando la produzione di cibo (agricoltura di precisione, vertical farming, fermentazione moderna, carne coltivata, insetti, stampa 3D alimentare, tracciabilità digitale) e ne valuta in modo critico benefici, limiti e impatti per nutrire 10 miliardi di persone.",
   "fonte": "originale",
   "frameworks": {
     "IN": {
-      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
-      "traguardo": "Lo studente collega le tradizioni alimentari alla biodiversità e al patrimonio culturale locale"
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+      "traguardo": "Lo studente descrive le tecnologie alimentari innovative e ne valuta benefici, limiti e impatti ambientali e sociali"
     },
     "DC": {
-      "ref": "2.2 Condividere contenuti digitali",
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
       "livello": "I",
-      "nota": "Lo studente crea e condivide un contenuto digitale (video, presentazione) su una tradizione alimentare locale"
+      "nota": "Lo studente confronta fonti online su una tecnologia food-tech distinguendo dati verificabili da affermazioni promozionali"
     },
     "EC": {
-      "ref": "Ideas and opportunities / Creativity",
-      "nota": "Lo studente valorizza le tradizioni locali come risorsa per l'innovazione alimentare"
+      "ref": "Ideas and opportunities / Valuing ideas",
+      "nota": "Lo studente valuta se una tecnologia alimentare risponde davvero a un problema e a chi porta vantaggio"
     },
     "LC": {
-      "ref": "Social / Cultural awareness",
-      "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità. Il confronto tra sistemi alimentari di culture diverse allena la decentrazione cognitiva — lo studente impara a uscire dal proprio frame interpretativo e a riconoscere la logica interna di sistemi diversi dal proprio."
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente esamina una novità tecnologica senza entusiasmo né rifiuto a priori, pesando prove, limiti e conseguenze."
     },
     "EV": {
-      "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
-      "nota": "La biodiversità alimentare è fondamento della sicurezza alimentare futura"
+      "ref": "SDG 2 — Fame zero",
+      "nota": "Le nuove tecnologie alimentari sono una delle risposte possibili alla sfida di nutrire 10 miliardi di persone"
     }
   },
   "outputApp": {
-    "quiz": "Collegamento: abbina prodotto DOP/IGP alla sua regione di origine. 6 prodotti italiani con mappa interattiva.",
-    "microlearning": "Card deck 5 slide: 5 varietà agricole a rischio estinzione con nome, storia, dove si coltiva ancora. 4 min.",
-    "visual": "Mappa interattiva: biodiversità alimentare italiana — prodotti tradizionali per regione.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback sulle sette tecnologie food-tech: funzionamento, diffusione, benefici e limiti.",
+    "microlearning": "Process «Dal problema all'innovazione: come nasce una nuova tecnologia alimentare» + Checklist «Scheda blog: la tecnologia che nutre il futuro».",
+    "visual": "Infografica: sette tecnologie per il cibo del futuro, ciascuna con il problema che risolve e il limite principale.",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
@@ -39,28 +39,32 @@
     "MC-ALI-2-03"
   ],
   "tags": [
-    "biodiversità",
-    "cultura alimentare",
-    "tradizioni",
-    "DOP",
+    "food-tech",
+    "innovazione alimentare",
+    "agricoltura di precisione",
+    "vertical farming",
+    "carne coltivata",
+    "insetti",
     "classe-2",
     "ALI"
   ],
-  "compito_realta": "Intervista un familiare o anziano del tuo paese su un piatto tradizionale della tua famiglia o regione: documenta la ricetta, gli ingredienti locali usati e il significato culturale in una scheda di max 1 pagina.",
+  "compito_realta": "Scrivi una scheda per il blog della scuola (max 300 parole) su una tecnologia alimentare innovativa: cos'è, quanto è diffusa, quale problema risolve, quali limiti ha.",
   "sdg": [
-    2,
-    15
+    2
   ],
   "note_didattiche": {
-    "base": "Fornire una scheda-intervista con le domande già formulate. Lo studente deve solo compilare le risposte.",
-    "avanzato": "Creare una mappa digitale della biodiversità alimentare del proprio comune usando Google Maps con pin e schede informative."
+    "base": "Partire da un prodotto food-tech già in vendita (es. farina di grillo, insalata da vertical farm): lo studente riconosce la tecnologia e il problema che risolve.",
+    "avanzato": "Valutare criticamente una tecnologia con criteri espliciti (impatto ambientale, costo, sicurezza, accettazione sociale) e confrontarla con la soluzione tradizionale."
   },
   "hook_audio": {
-    "durata_min": 0.7,
-    "durata_secondi": 39
+    "titolo": "Come nutriremo una popolazione in crescita?",
+    "oggetto_reale": "un biscotto alla farina di grillo",
+    "durata_min": 2.2,
+    "durata_secondi": 132,
+    "durata_sec": 132
   },
   "professione_futura": {
-    "titolo": "Agri-food Supply Chain Manager",
+    "titolo": "3D Food Printing Technician",
     "orizzonte": "2030",
     "descrizione_breve": "Gestisce la filiera alimentare per garantire qualità, tracciabilità e sostenibilità.",
     "competenze_chiave": [
@@ -68,7 +72,8 @@
       "logistica alimentare",
       "certificazioni DOP/IGP",
       "sostenibilità"
-    ]
+    ],
+    "testo": "**3D Food Printing Technician**\n\nApplica le tecnologie additive alla trasformazione e presentazione degli alimenti, creando forme personalizzate e prodotti funzionali per ristorazione, industria e dietetica specializzata.\n\nDove lavora: ospedali con programmi di dietoterapia avanzata, alta ristorazione sperimentale, centri di formazione culinaria, aziende di ingredienti funzionali.\n\nCompetenze chiave che inizia a costruire da qui: tecnologie additive alimentari · progettazione CAD · biochimica alimentare · nutrizione · innovazione di prodotto\n\n*\"Personalizzare un pasto per 200 pazienti con esigenze diverse? Con la stampa 3D alimentare, è routine.\"*"
   },
   "clil_termini": [
     {

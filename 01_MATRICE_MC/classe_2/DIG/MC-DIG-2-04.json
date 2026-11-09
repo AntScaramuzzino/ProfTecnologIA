@@ -2,8 +2,8 @@
   "id": "MC-DIG-2-04",
   "area": "DIG",
   "anno": 2,
-  "titolo": "Cifratura, sicurezza informatica e identità in rete",
-  "descrizione": "Lo studente comprende il principio dei cifrari (come si trasforma un messaggio in qualcosa di illeggibile per chi non ha la chiave), conosce i principali tipi di attacchi informatici (phishing, malware, furto di identità) e sa adottare comportamenti sicuri online — password robuste, autenticazione a due fattori, riconoscimento di contenuti manipolati.",
+  "titolo": "Sicurezza digitale pratica e identità online",
+  "descrizione": "Lo studente riconosce i principali attacchi informatici che lo riguardano (phishing, malware, furto di credenziali), sa individuare i segnali di un messaggio truffa, crea password robuste, attiva l'autenticazione a due fattori, sa cosa fare se viene attaccato e cura la propria reputazione online.",
   "fonte": "originale",
   "frameworks": {
     "IN": {
@@ -58,15 +58,15 @@
     "avanzato": "Cifrare un messaggio con il cifrario di Cesare (a mano o con Python), poi decifrarlo con la forza bruta (prova tutte le 26 chiavi). Riflettere su perché i cifrari antichi non bastano e cosa cambia nella crittografia moderna."
   },
   "hook_audio": {
-    "titolo": "Come Giulio Cesare mandava messaggi segreti — e perché oggi non basterebbe",
-    "oggetto_reale": "un messaggio cifrato",
-    "domanda_avvio": "Se dovessi mandare un messaggio segreto a un amico senza che nessuno potesse leggerlo, come faresti?",
-    "durata_min": 0.9,
-    "note_script": "Partire dal cifrario di Cesare con un esempio concreto ('CIAO' → 'FLDR' con chiave 3). Spiegare perché è facile da rompere (solo 25 chiavi possibili). Saltare ai tempi moderni: HTTPS cifra ogni messaggio che mandi con miliardi di chiavi possibili. Poi mostrare il contrasto: la cifratura è forte, ma tu a volte lasci la porta aperta con password come '123456'. Dato sorprendente: le 10 password più usate al mondo sono tutte indovinabili in meno di 1 secondo. Tono: narrativo e leggermente allarmante ma rassicurante sul finale.",
-    "durata_secondi": 56
+    "titolo": "Quarantasette notifiche",
+    "oggetto_reale": "lo smartphone con le notifiche",
+    "domanda_avvio": "Se ricevessi adesso un messaggio urgente che ti dice che il tuo account è in pericolo, cosa faresti? Come faresti a capire se è vero?",
+    "durata_min": 1.9,
+    "durata_secondi": 115,
+    "durata_sec": 115
   },
   "professione_futura": {
-    "titolo": "Cybersecurity Analyst",
+    "titolo": "Esperto in Cybersecurity",
     "orizzonte": "2030",
     "descrizione_breve": "Protegge sistemi informatici e dati aziendali da attacchi, analizza le vulnerabilità e progetta difese — una delle professioni con maggiore carenza di profili in Europa.",
     "competenze_chiave": [
@@ -74,7 +74,8 @@
       "analisi delle vulnerabilità",
       "risposta agli incidenti",
       "ethical hacking"
-    ]
+    ],
+    "testo": "**Esperto in Cybersecurity**\n\nProtegge sistemi informatici, reti e dati personali da attacchi informatici, usando crittografia, analisi del rischio e normative GDPR per garantire sicurezza e conformità.\n\nDove lavora: SOC (Security Operations Center) aziendali, società di consulenza in sicurezza informatica, banche e assicurazioni, pubblica amministrazione.\n\nCompetenze chiave che inizia a costruire da qui: crittografia · analisi del rischio · normative GDPR · ethical hacking · sicurezza delle reti\n\n*\"Non proteggo i computer. Proteggo le persone che ci sono dietro.\"*"
   },
   "sdg_principale": 16,
   "clil_termini": [

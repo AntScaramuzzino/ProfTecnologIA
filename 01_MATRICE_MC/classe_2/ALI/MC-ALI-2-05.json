@@ -2,36 +2,36 @@
   "id": "MC-ALI-2-05",
   "area": "ALI",
   "anno": 2,
-  "titolo": "Sprechi alimentari e sostenibilità",
-  "descrizione": "Lo studente comprende le dimensioni del fenomeno dello spreco alimentare (dati globali e domestici), sa identificare le fasi della filiera dove si genera più spreco e conosce strategie pratiche per ridurlo, collegando scelte quotidiane a impatti globali ambientali ed economici.",
+  "titolo": "Packaging alimentare e sostenibilità",
+  "descrizione": "Lo studente conosce le cinque funzioni del packaging alimentare (proteggere, conservare, informare, convincere, facilitare il trasporto), confronta pregi e limiti ambientali dei materiali di imballaggio, riconosce l'over-packaging e legge i simboli di riciclo e smaltimento, valutando alternative più sostenibili.",
   "fonte": "originale",
   "frameworks": {
     "IN": {
       "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e utilizza oggetti, strumenti e macchine di uso comune ed è in grado di classificarli e descriverne la funzione",
-      "traguardo": "Lo studente analizza il sistema alimentare individuando inefficienze e proposte di miglioramento"
+      "traguardo": "Lo studente descrive funzioni e materiali di un imballaggio alimentare, ne legge i simboli e valuta l'impatto ambientale di confezioni diverse"
     },
     "DC": {
       "ref": "2.1 Interagire con tecnologie digitali",
       "livello": "I",
-      "nota": "Lo studente usa app di monitoraggio degli sprechi o fogli di calcolo per raccogliere dati domestici"
+      "nota": "Lo studente registra in un foglio di calcolo i dati dell'audit degli imballaggi e li confronta"
     },
     "EC": {
       "ref": "Into action / Taking initiative",
-      "nota": "Lo studente propone e attua azioni concrete di riduzione degli sprechi nel proprio contesto"
+      "nota": "Lo studente propone alternative concrete per ridurre gli imballaggi del proprio pasto e della mensa"
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali. Progettare azioni anti-spreco richiede pianificazione e autovalutazione: lo studente impara a tradurre intenzioni in comportamenti misurabili, competenza centrale dell'imparare a imparare."
+      "nota": "Lo studente si riconosce consumatore responsabile: ogni scelta d'acquisto decide quanti imballaggi entrano in casa e come vengono smaltiti."
     },
     "EV": {
-      "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile; SDG 13 — Lotta al cambiamento climatico",
-      "nota": "Lo spreco alimentare produce il 10% delle emissioni globali di gas serra"
+      "ref": "SDG 12 — Consumo e produzione responsabili; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "Ridurre e scegliere meglio gli imballaggi riduce rifiuti, consumo di materie prime ed emissioni"
     }
   },
   "outputApp": {
-    "quiz": "Dati e impatto: 'Un terzo del cibo mondiale viene sprecato — quanto CO₂ produce annualmente?' Multipla con infografica di supporto.",
-    "microlearning": "Card deck 5 slide: dove si spreca di più (campo, trasporto, distribuzione, casa, ristorazione) con dato percentuale. 4 min.",
-    "visual": "Piramide invertita dello spreco: quota % per ogni fase della filiera.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: funzioni del packaging, materiali e codici di riciclo, over-packaging, simboli in etichetta.",
+    "microlearning": "Process «Le cinque funzioni di un imballaggio: dal progetto allo smaltimento» + Checklist «Audit imballaggi del mio pasto».",
+    "visual": "Infografica: il ciclo di vita di una confezione alimentare — funzioni, materiali, simboli, smaltimento corretto.",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
@@ -39,29 +39,33 @@
     "MC-ALI-2-03"
   ],
   "tags": [
-    "spreco alimentare",
+    "packaging",
+    "imballaggio",
+    "materiali",
+    "over-packaging",
+    "riciclo",
     "sostenibilità",
-    "food waste",
-    "impatto ambientale",
     "classe-2",
     "ALI"
   ],
-  "compito_realta": "Monitora gli sprechi alimentari in casa per una settimana: pesa o stima il cibo buttato ogni giorno, classifica per tipo (pane, verdura, avanzi...) e proponi 3 strategie per ridurlo.",
+  "compito_realta": "Analizza tutti gli imballaggi di un pasto completo: per ognuno indica materiale, riciclabilità, corretto smaltimento ed eventuale over-packaging, poi proponi alternative per ridurli.",
   "sdg": [
-    2,
     12,
     13
   ],
   "note_didattiche": {
-    "base": "Concentrarsi solo sullo spreco domestico. Fornire tabella di monitoraggio semplificata (3 categorie).",
-    "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
+    "base": "Partire da 3 prodotti già scelti, con materiale e simbolo di riciclo evidenziati: lo studente compila solo le colonne Materiale e Riciclabile.",
+    "avanzato": "Ridisegnare il packaging di un prodotto riducendo materiali e strati, motivando le scelte con i dati sui materiali e sul fine vita."
   },
   "hook_audio": {
-    "durata_min": 0.6,
-    "durata_secondi": 37
+    "titolo": "Tre strati per una caramella",
+    "oggetto_reale": "una busta di patatine",
+    "durata_min": 2.3,
+    "durata_secondi": 137,
+    "durata_sec": 137
   },
   "professione_futura": {
-    "titolo": "Food Technologist / Nutrizionista Industriale",
+    "titolo": "Packaging Designer sostenibile",
     "orizzonte": "2030",
     "descrizione_breve": "Sviluppa nuovi alimenti sani, sostenibili e sicuri per il mercato globale.",
     "competenze_chiave": [
@@ -69,7 +73,8 @@
       "HACCP",
       "etichettatura",
       "analisi nutrizionale"
-    ]
+    ],
+    "testo": "**Packaging Designer sostenibile**\n\nIl Packaging Designer tradizionale progettava imballaggi belli e funzionali. Il Packaging Designer sostenibile — figura in crescita rapida nel settore alimentare — deve fare tutto questo e in più:\n- Minimizzare la quantità di materiale usato senza perdere la funzione di protezione.\n- Scegliere materiali con il minore impatto ambientale complessivo (inclusa la fine vita).\n- Garantire la riciclabilità nell'infrastruttura di raccolta del Paese di destinazione.\n- Rispettare le normative sempre più stringenti dell'UE.\n- Comunicare al consumatore in modo chiaro e non ingannevole.\n\nLavora in: agenzie di design, reparti R&D di aziende alimentari, startup del packaging sostenibile.\n\nCompetenze chiave che inizia a costruire da qui: chimica dei materiali · normativa ambientale UE · analisi del ciclo di vita (LCA) · design thinking · conoscenza dei sistemi di raccolta e riciclo\n\n*\"Il mio packaging migliore è quello che non si nota — perché non c'è niente di superfluo.\"*"
   },
   "clil_termini": [
     {
@@ -109,7 +114,7 @@
     }
   ],
   "uda_collegata": "La vita degli imballaggi: analisi del packaging di 10 prodotti alimentari e proposta di alternative sostenibili (Tecnologia + Scienze + Educazione Civica)",
-  "sdg_principale": 2,
+  "sdg_principale": 12,
   "professioni_future": [
     {
       "titolo": "Microbiome Specialist",
