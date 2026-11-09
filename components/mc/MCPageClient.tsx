@@ -38,6 +38,7 @@ import QuizWidget from "@/components/mc/QuizWidget";
 import FlashcardDeck from "@/components/mc/FlashcardDeck";
 import VideoGallery from "@/components/mc/VideoGallery";
 import MCVisual from "@/components/MCVisual";
+import { countEsploraInfographics, getEsploraInfographics, getOsservaInfographics } from "@/lib/infografiche-placement";
 import MCImageCarousel from "@/components/mc/MCImageCarousel";
 import { cx } from "@/lib/ui";
 import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/ResourcesPanel";
@@ -783,6 +784,13 @@ function ZonePanel({
       const paragraphImage =
         findEsploraImage(esploraImages, ai.title) ??
         (ai.id === "esplora-intro" ? introFallbackImage : undefined);
+      // Infografiche di processo assegnate a questo paragrafo (lib/infografiche-placement.ts).
+      // La prima sottosezione arriva come "Introduzione" con il titolo reale in testa al body.
+      const placementTitle =
+        ai.id === "esplora-intro"
+          ? ai.body.match(/^@@SUBHEAD:([^\n]+)/)?.[1] ?? ai.title
+          : ai.title;
+      const sectionInfographics = getEsploraInfographics(mc.id, placementTitle, visuals);
 
       return {
         id: ai.id,
@@ -856,13 +864,22 @@ function ZonePanel({
               </figure>
             )}
             <ReadableBodyInTab body={ai.body} />
+            {sectionInfographics.map((asset) => (
+              <MCVisual
+                key={asset.src}
+                asset={asset}
+                alt={`Infografica — ${ai.title}`}
+                className="mt-6"
+                zoomable
+              />
+            ))}
           </>
         ),
       };
     });
 
     // Galleria: solo immagini che non compaiono altrove nella pagina. Esclude la copertina
-    // (in cima alla pagina), sketchnote (→ RIPASSA), infografiche (→ OSSERVA), compito (→ AGISCI);
+    // (in cima alla pagina), sketchnote (→ RIPASSA), infografiche (→ OSSERVA o paragrafo ESPLORA), compito (→ AGISCI);
     // le immagini della professione non arrivano qui (→ PROFESSIONI).
     const galleriaAssets = visuals.filter(
       (v, i) => i > 0 && v.label !== "Ripassa" && v.label !== "Compito di Realtà" && !isInfografica(v),
@@ -911,8 +928,10 @@ function ZonePanel({
   // ── OSSERVA ───────────────────────────────────────────────────────────────
   if (tabId === "OSSERVA") {
     // Infografiche del processo produttivo — osservare come funziona nella realtà
+    // MC configurate in lib/infografiche-placement.ts: solo quelle assegnate a OSSERVA;
+    // le altre: una sola infografica, la versione più recente
     const best = bestInfografica(visuals);
-    const processoAssets = best ? [best] : [];
+    const processoAssets = getOsservaInfographics(mc.id, visuals) ?? (best ? [best] : []);
 
     return (
       <div className="px-4 py-6 sm:px-6 space-y-8">
@@ -1202,7 +1221,8 @@ export function MCPageClient({
       visualCount: visuals.filter(
         (v, i) => i > 0 && v.label !== "Ripassa" && v.label !== "Compito di Realtà" && !isInfografica(v),
       ).length,
-      hasInfografica: !!bestInfografica(visuals),
+      hasInfografica: (getOsservaInfographics(mc.id, visuals)?.length ?? (bestInfografica(visuals) ? 1 : 0)) > 0,
+      esploraInfograficaCount: countEsploraInfographics(mc.id, visuals),
       laboratorio: lab ? { titolo: lab.titolo, archetipo: lab.archetipo } : null,
       escapeRoom: esc ? { titolo: esc.titolo } : null,
       hasCompito: sectionMapClean.has("AGISCI"),

@@ -33,6 +33,8 @@ export interface ResourcesSummary {
   visualCount: number;
   /** Infografica del processo in OSSERVA */
   hasInfografica?: boolean;
+  /** Infografiche di processo collocate nei paragrafi di ESPLORA */
+  esploraInfograficaCount?: number;
   /** Laboratorio interattivo (SPERIMENTA) */
   laboratorio?: { titolo: string; archetipo: string } | null;
   /** Escape room (SPERIMENTA) */
@@ -95,6 +97,7 @@ function buildGroups(s: ResourcesSummary): ZoneGroup[] {
         { icon: "🖼️", label: "Illustrazioni dei paragrafi", count: s.esploraImageCount ?? 0, available: (s.esploraImageCount ?? 0) > 0 },
         { icon: "📊", label: "Schemi didattici", count: s.schemaCount ?? 0, available: (s.schemaCount ?? 0) > 0 },
         { icon: "🎞️", label: "Video animati", count: s.esploraVideoCount ?? 0, available: (s.esploraVideoCount ?? 0) > 0 },
+        { icon: "🏭", label: "Infografiche del processo", count: s.esploraInfograficaCount ?? 0, available: (s.esploraInfograficaCount ?? 0) > 0 },
         { icon: "🗂️", label: "Galleria visuale", count: s.visualCount, available: s.visualCount > 0 },
         { icon: "📐", label: "Costruzioni GeoGebra", count: s.geogebraCount ?? 0, available: (s.geogebraCount ?? 0) > 0 },
       ],
