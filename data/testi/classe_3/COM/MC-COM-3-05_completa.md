@@ -24,7 +24,7 @@ Arriva a New York. Risale il cavo, trova il giusto percorso tra milioni di serve
 
 Tutto questo accade ogni volta che mandi un messaggio. Miliardi di volte al giorno.
 
-Ci sono oggi circa 550 cavi sottomarini attivi che trasportano il 97% del traffico internet mondiale. Sono posati sul fondo degli oceani. Sono spessi come un tubo dell'idrante. E quando uno si rompe — per un'ancora trascinata, per un terremoto sottomarino, per un atto deliberato — una parte del mondo perde internet.
+Ci sono oggi circa 600 cavi sottomarini attivi che trasportano oltre il 95% del traffico internet mondiale. Sono posati sul fondo degli oceani. Sono spessi come un tubo dell'idrante. E quando uno si rompe — per un'ancora trascinata, per un terremoto sottomarino, per un atto deliberato — una parte del mondo perde internet.
 
 Questo non è il cloud. È infrastruttura fisica, fragile, geopoliticamente critica.
 
@@ -121,7 +121,7 @@ Questa architettura distribuita è ancora la ragione per cui internet funziona �
 
 ### I cavi sottomarini: la spina dorsale fisica di internet
 
-Probabilmente non li hai mai visti, ma sono lì: circa 550 cavi sottomarini percorrono il fondo degli oceani, attraversano i canali, risalgono sulle coste, connettendo continenti. Insieme trasportano il **97% del traffico internet e delle comunicazioni telefoniche internazionali** del pianeta.
+Probabilmente non li hai mai visti, ma sono lì: circa 600 cavi sottomarini percorrono il fondo degli oceani, attraversano i canali, risalgono sulle coste, connettendo continenti. Insieme trasportano **oltre il 95% del traffico internet e delle comunicazioni telefoniche internazionali** del pianeta.
 
 Un cavo sottomarino moderno è una struttura ingegneristica complessa. All'interno ci sono da 8 a 24 paia di fibre ottiche — fili di vetro più sottili di un capello, attraverso cui viaggiano impulsi di luce a una velocità di circa 200.000 km/s (due terzi della velocità della luce nel vuoto, perché la luce rallenta nel vetro). Ogni fibra può trasportare decine di terabit di dati al secondo.
 

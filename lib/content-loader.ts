@@ -1,6 +1,7 @@
 import crypto from "crypto";
 import fs from "fs";
 import path from "path";
+import { isHookFuoriTema, isVisualFuoriTema } from "@/lib/asset-fuori-tema";
 
 // Il sito usa la copia locale dei contenuti generata in data/.
 // Tenere i path dentro la root Next evita tracing Turbopack fuori progetto.
@@ -160,7 +161,9 @@ export function getVisualAssets(mcId: string): VisualAsset[] {
     .readdirSync(dir)
     .filter((name) => /\.(svg|png|jpe?g|webp)$/i.test(name))
     // copie con lo spazio nel nome (es. "img4-professione 2.webp") e immagini della professione
-    .filter((name) => !/\s/.test(name) && !isProfessioneAsset(name));
+    .filter((name) => !/\s/.test(name) && !isProfessioneAsset(name))
+    // immagini con contenuto rimasto sul vecchio tema della MC (lib/asset-fuori-tema.ts)
+    .filter((name) => !isVisualFuoriTema(mcId, name));
 
   // Un solo formato per immagine: WebP, poi PNG/JPG, poi SVG
   const pref = (n: string) => (/\.webp$/i.test(n) ? 0 : /\.(png|jpe?g)$/i.test(n) ? 1 : 2);
@@ -298,6 +301,7 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
 const PUBLIC_AUDIO_ROOT = path.join(process.cwd(), "public", "assets", "audio");
 
 export function getMCHookAudio(mcId: string): string | null {
+  if (isHookFuoriTema(mcId)) return null; // script sul vecchio tema (lib/asset-fuori-tema.ts)
   const file = path.join(PUBLIC_AUDIO_ROOT, `${mcId}_hook-audio.mp3`);
   if (!fs.existsSync(file)) return null;
   return `${PUBLIC_BASE_PATH}/assets/audio/${mcId}_hook-audio.mp3`;
@@ -435,6 +439,7 @@ export function getMCFlashcards(mcId: string): FlashcardItem[] {
 }
 
 export function getMCHookTranscript(mcId: string): string | null {
+  if (isHookFuoriTema(mcId)) return null; // script sul vecchio tema (lib/asset-fuori-tema.ts)
   const file = path.join(TRANSCRIPTS_ROOT, `${mcId}_hook-script.md`);
   if (!fs.existsSync(file)) return null;
   try {

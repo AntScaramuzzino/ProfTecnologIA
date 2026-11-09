@@ -137,34 +137,34 @@
     {
       "id": 5,
       "livello": "F",
-      "domanda": "Nella catena del valore della maglietta da 5,99 euro, quale fase cattura il profitto maggiore?",
+      "domanda": "Nella scomposizione ipotetica del prezzo della maglietta da 5,99 euro, a quali fasi va la quota più alta?",
       "opzioni": [
         {
           "id": "a",
           "testo": "Marchio e rivenditore finale, che incassano la quota più alta del prezzo",
           "corretto": true,
-          "feedback": "Esatto! Marketing/brand cattura 1,00-2,00 euro e il rivenditore 1,50-2,50 euro. Insieme rappresentano la quota maggiore del prezzo finale. Il cucitore a Dhaka guadagna meno di 0,05 euro."
+          "feedback": "Esatto! Nell'esempio del testo al marchio va circa 1,00 euro e al rivenditore finale circa 1,51 euro: insieme sono la quota più alta del prezzo. Sono quote ipotetiche, e comprendono costi e margini: non sono guadagni netti."
         },
         {
           "id": "b",
           "testo": "Il coltivatore di cotone (perché la materia prima è il componente più importante)",
-          "feedback": "Non corretto. Il coltivatore guadagna 0,10-0,20 euro per maglietta — una delle quote minori. Il valore si accumula nelle fasi di marketing, brand e distribuzione.",
+          "feedback": "Non corretto. Nell'esempio del testo alla coltivazione del cotone vanno circa 0,25 euro: una delle quote più piccole. Le quote maggiori sono quelle del marchio e del rivenditore finale.",
           "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         },
         {
           "id": "c",
           "testo": "Il trasporto marittimo (perché le distanze sono enormi)",
-          "feedback": "Non corretto. La logistica e il trasporto guadagnano 0,50-0,80 euro — una quota intermedia. Il massimo profitto va al marketing/brand e al rivenditore finale.",
+          "feedback": "Non corretto. Nell'esempio del testo a logistica e distribuzione vanno circa 0,45 euro: una quota intermedia. Le quote maggiori sono quelle del marchio e del rivenditore finale.",
           "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         },
         {
           "id": "d",
           "testo": "La tintoria (perché i processi chimici sono costosi)",
-          "feedback": "Non corretto. La tintoria e i finissaggi guadagnano 0,10-0,20 euro. La quota maggiore va a marketing/brand (1,00-2,00 euro) e rivenditore (1,50-2,50 euro).",
+          "feedback": "Non corretto. Nell'esempio del testo a tintoria e finissaggi vanno circa 0,30 euro. Le quote maggiori sono quelle del marchio (1,00 euro) e del rivenditore finale (1,51 euro).",
           "riferimento": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
         }
       ],
-      "spiegazione": "Distribuzione del valore nella maglietta da 5,99 euro: cucito (<0,05€), cotone (0,10-0,20€), filatura (0,05-0,10€), tintoria (0,10-0,20€), logistica (0,50-0,80€), grossista (0,50-1,00€), marketing/brand (1,00-2,00€), rivenditore (1,50-2,50€). Il valore si accumula nelle fasi dove c'è potere di mercato: brand e distribuzione.",
+      "spiegazione": "Scomposizione ipotetica del prezzo di 5,99 euro usata nel testo: cotone 0,25 €, filatura e tessitura 0,40 €, taglio e cucito 0,60 €, tintoria 0,30 €, logistica 0,45 €, ingrosso 0,40 €, marchio 1,00 €, rivenditore 1,51 €, IVA 1,08 €. Le quote più alte vanno a marchio e rivenditore. Ogni quota comprende costi e possibili margini: non è il guadagno di chi lavora in quella fase, e non descrive una filiera reale.",
       "riferimento_principale": "📖 ESPLORA — La catena del valore: chi guadagna cosa"
     },
     {

@@ -1448,36 +1448,36 @@
       "id": "MC-MAT-1-05",
       "area": "MAT",
       "anno": 1,
-      "titolo": "Scegliere il materiale giusto per un progetto",
-      "descrizione": "Lo studente sa selezionare il materiale più adatto per un oggetto o un progetto specifico, applicando criteri tecnici (resistenza, leggerezza, lavorabilità), economici (costo) e ambientali (impatto, riciclabilità) in modo integrato.",
+      "titolo": "I metalli: proprietà, lavorazione e riciclo",
+      "descrizione": "Lo studente conosce il percorso di un metallo dalla roccia all'oggetto, le caratteristiche di ferro, acciaio, alluminio e rame, il ruolo delle leghe, la corrosione e i trattamenti termici, e comprende perché i metalli si possono riciclare quasi all'infinito.",
       "fonte": "Paci 2014",
       "frameworks": {
         "IN": {
-          "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche utilizzando elementi del disegno tecnico",
-          "traguardo": "Lo studente applica criteri di selezione dei materiali alla progettazione di oggetti semplici"
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+          "traguardo": "Lo studente riconosce i principali metalli e leghe, ne descrive proprietà e lavorazioni e ne spiega il ciclo produttivo e di riciclo"
         },
         "DC": {
-          "ref": "5.3 Identificare lacune nelle proprie competenze digitali",
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
           "livello": "F",
-          "nota": "Lo studente usa strumenti digitali per confrontare materiali e documentare la propria scelta progettuale"
+          "nota": "Lo studente confronta dati tecnici sui metalli (densità, resistenza, costo) trovati in fonti digitali diverse"
         },
         "EC": {
-          "ref": "Ideas and opportunities / Design thinking",
-          "nota": "Lo studente applica criteri multipli per prendere decisioni progettuali"
+          "ref": "Ideas and opportunities / Sustainability",
+          "nota": "Lo studente collega la scelta del metallo al consumo di energia e al riciclo"
         },
         "LC": {
-          "ref": "Thinking / Problem solving",
-          "nota": "Lo studente affronta un problema progettuale con un approccio strutturato e multi-criterio. La progettazione con vincoli (resistenza, peso, costo, lavorabilità) allena il pensiero strategico e l'imparare a imparare: lo studente pianifica, stima, revisa le proprie scelte in base ai risultati ottenuti."
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente motiva la scelta di un metallo con dati e criteri espliciti, non con l'abitudine."
         },
         "EV": {
-          "ref": "SDG 12 — Consumo e produzione responsabili",
-          "nota": "Scegliere materiali con criteri ambientali è un atto di design responsabile"
+          "ref": "SDG 9 — Imprese, innovazione e infrastrutture; SDG 12 — Consumo e produzione responsabili",
+          "nota": "Il riciclo dei metalli risparmia materie prime ed energia"
         }
       },
       "outputApp": {
-        "quiz": "Scenario progettuale: 'Devi costruire una borraccia scolastica — quale materiale scegli?' — multipla con 4 opzioni e feedback tecnico.",
-        "microlearning": "Card interattiva: matrice di selezione materiale (3 criteri × 4 materiali). Studente compila i pesi. 5 min.",
-        "visual": "Matrice decisionale: asse X = criteri, asse Y = materiali, con scala cromatica.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: estrazione e produzione, ferro e acciaio, alluminio, rame, leghe, corrosione, trattamenti termici, riciclo.",
+        "microlearning": "Process «Dalla miniera all'oggetto: il viaggio di un metallo» + Checklist «Scheda tecnica dei metalli attorno a me».",
+        "visual": "Infografica: il viaggio di un metallo dalla miniera all'oggetto e ritorno con il riciclo.",
         "livelloDigComp": "F"
       },
       "prerequisiti": [
@@ -1485,21 +1485,24 @@
         "MC-MAT-1-03"
       ],
       "tags": [
-        "selezione materiali",
-        "progettazione",
-        "criteri tecnici",
-        "design",
+        "metalli",
+        "acciaio",
+        "alluminio",
+        "rame",
+        "leghe",
+        "corrosione",
+        "riciclo",
         "classe-1",
         "MAT"
       ],
-      "compito_realta": "Scegli il materiale per costruire una piccola libreria da muro: confronta 3 materiali possibili in una tabella con almeno 4 criteri e giustifica la scelta finale in 5 righe.",
+      "compito_realta": "Scegli tre oggetti metallici con funzioni diverse e compila per ciascuno una scheda tecnica: metallo o lega, come l'hai riconosciuto, proprietà sfruttate, rischio di corrosione e possibilità di riciclo.",
       "sdg": [
         9,
         12
       ],
       "note_didattiche": {
-        "base": "Fornire la tabella dei criteri già impostata. Lo studente deve solo assegnare punteggi da 1 a 3.",
-        "avanzato": "Lo studente aggiunge autonomamente un 5° criterio di valutazione e riflette su eventuali compromessi tra criteri in conflitto."
+        "base": "Riconoscere i metalli con test semplici (calamita, colore, peso) su campioni forniti dal docente.",
+        "avanzato": "Scegliere il metallo giusto per una struttura reale confrontando almeno tre candidati su resistenza, peso, costo e corrosione."
       },
       "hook_audio": {
         "durata_min": 0.9,
@@ -1520,24 +1523,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "materiale",
-          "inglese": "material",
-          "ipa": "məˈtɪərɪəl"
+          "italiano": "lega metallica",
+          "inglese": "alloy",
+          "ipa": "ˈælɔɪ"
         },
         {
-          "italiano": "proprietà",
-          "inglese": "property",
-          "ipa": "ˈprɒpəti"
+          "italiano": "acciaio inossidabile",
+          "inglese": "stainless steel",
+          "ipa": "ˈsteɪnləs stiːl"
         },
         {
-          "italiano": "riciclo",
-          "inglese": "recycling",
-          "ipa": "riːˈsaɪklɪŋ"
+          "italiano": "trattamento termico",
+          "inglese": "heat treatment",
+          "ipa": "hiːt ˈtriːtmənt"
         },
         {
-          "italiano": "ciclo di vita",
-          "inglese": "life cycle",
-          "ipa": "laɪf ˈsaɪkəl"
+          "italiano": "corrosione",
+          "inglese": "corrosion",
+          "ipa": "kəˈrəʊʒən"
         }
       ],
       "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
@@ -1573,36 +1576,36 @@
       "id": "MC-MAT-1-06",
       "area": "MAT",
       "anno": 1,
-      "titolo": "Biomateriali e bioplastiche: il futuro dei materiali",
-      "descrizione": "Lo studente comprende cosa sono i biomateriali (materiali di origine biologica o prodotti da organismi viventi), conosce esempi concreti di bioplastiche e materiali biodegradabili, e sa discutere criticamente i limiti e le potenzialità di queste alternative.",
+      "titolo": "Fibre, plastiche e compositi",
+      "descrizione": "Lo studente conosce le fibre tessili naturali e sintetiche, la famiglia delle plastiche e i materiali compositi, ne confronta proprietà e impatto ambientale (consumo d'acqua, microplastiche, riciclo) e sa leggere in modo critico le etichette di composizione, comprese le diciture «bio» e «compostabile».",
       "fonte": "originale",
       "frameworks": {
         "IN": {
           "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
-          "traguardo": "Lo studente riconosce i biomateriali come risposta tecnologica alla crisi ambientale"
+          "traguardo": "Lo studente classifica fibre, plastiche e compositi, ne descrive proprietà e impatto ambientale e interpreta le etichette di composizione"
         },
         "DC": {
           "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
           "livello": "F",
-          "nota": "Lo studente valuta criticamente articoli e fonti web sui biomateriali"
+          "nota": "Lo studente verifica online il significato delle diciture in etichetta («bio», «eco», «compostabile»)"
         },
         "EC": {
           "ref": "Ideas and opportunities / Sustainability",
-          "nota": "Lo studente collega innovazione dei materiali a modelli di economia circolare"
+          "nota": "Lo studente collega la scelta dei materiali tessili e plastici al loro ciclo di vita"
         },
         "LC": {
           "ref": "Thinking / Critical thinking",
-          "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'. Questa competenza epistemica è trasversale: lo studente costruisce criteri propri per valutare l'attendibilità delle fonti e li trasferisce oltre il contesto dei materiali, in qualsiasi campo informativo."
+          "nota": "Lo studente distingue le informazioni obbligatorie in etichetta dalle affermazioni pubblicitarie. Questa competenza epistemica si trasferisce a qualsiasi campo informativo."
         },
         "EV": {
-          "ref": "SDG 9 — Innovazione; SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
-          "nota": "I biomateriali riducono l'inquinamento da plastica convenzionale"
+          "ref": "SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
+          "nota": "Microplastiche e rifiuti plastici sono tra i principali inquinanti di mari e suoli"
         }
       },
       "outputApp": {
-        "quiz": "Vero/Falso con spiegazione: 5 affermazioni sulle bioplastiche (es. 'La bioplastica si smaltisce nel compostaggio domestico').",
-        "microlearning": "Card deck 5 slide: fungo-materiale (mycelium), PLA, amido di mais, seta batterica, fibra di canapa. 4 min.",
-        "visual": "Infografica: bioplastica convenzionale — confronto su 4 parametri con icone.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: fibre naturali e sintetiche, microplastiche, famiglie di plastiche e codici, compositi.",
+        "microlearning": "Process «Dalle fibre all'impronta: il ciclo di vita dei tessuti» + Checklist «Audit delle etichette nel mio armadio».",
+        "visual": "Infografica: tre famiglie di materiali — fibre, plastiche, compositi — con origine, proprietà e fine vita.",
         "livelloDigComp": "F"
       },
       "prerequisiti": [
@@ -1610,22 +1613,23 @@
         "MC-MAT-1-04"
       ],
       "tags": [
-        "biomateriali",
-        "bioplastica",
-        "biodegradabile",
-        "economia circolare",
+        "fibre tessili",
+        "plastiche",
+        "polimeri",
+        "compositi",
+        "microplastiche",
+        "etichette",
         "classe-1",
         "MAT"
       ],
-      "compito_realta": "Ricerca un prodotto commerciale che dichiara di usare bioplastica: verifica la composizione reale sull'etichetta, cerca come va smaltito e valuta se l'etichetta 'bio' è giustificata o fuorviante.",
+      "compito_realta": "Analizza l'etichetta di composizione di tre prodotti (almeno uno con diciture «bio», «eco» o «compostabile»): classifica i materiali, valuta biodegradabilità e microplastiche e giudica se le diciture sono giustificate.",
       "sdg": [
-        9,
         14,
         15
       ],
       "note_didattiche": {
-        "base": "Fornire 3 prodotti già selezionati con le etichette analizzate. Lo studente confronta i dati già estratti.",
-        "avanzato": "Progettare un esperimento semplice per testare la biodegradabilità in classe (interrare campioni, osservare per 2 settimane)."
+        "base": "Riconoscere e classificare fibre con test semplici (al tatto, assorbimento d'acqua) su campioni forniti dal docente.",
+        "avanzato": "Progettare un packaging sostenibile scegliendo e motivando i materiali in base al ciclo di vita."
       },
       "hook_audio": {
         "durata_min": 0.9,
@@ -1646,24 +1650,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "materiale",
-          "inglese": "material",
-          "ipa": "məˈtɪərɪəl"
+          "italiano": "fibra sintetica",
+          "inglese": "synthetic fibre",
+          "ipa": "sɪnˈθetɪk ˈfaɪbə"
         },
         {
-          "italiano": "proprietà",
-          "inglese": "property",
-          "ipa": "ˈprɒpəti"
+          "italiano": "microplastiche",
+          "inglese": "microplastics",
+          "ipa": "ˈmaɪkrəʊˌplæstɪks"
         },
         {
-          "italiano": "riciclo",
-          "inglese": "recycling",
-          "ipa": "riːˈsaɪklɪŋ"
+          "italiano": "materiale composito",
+          "inglese": "composite material",
+          "ipa": "ˈkɒmpəzɪt məˈtɪəriəl"
         },
         {
-          "italiano": "ciclo di vita",
-          "inglese": "life cycle",
-          "ipa": "laɪf ˈsaɪkəl"
+          "italiano": "biodegradabile",
+          "inglese": "biodegradable",
+          "ipa": "ˌbaɪəʊdɪˈɡreɪdəbl"
         }
       ],
       "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",
@@ -2194,36 +2198,36 @@
       "id": "MC-ALI-2-05",
       "area": "ALI",
       "anno": 2,
-      "titolo": "Sprechi alimentari e sostenibilità",
-      "descrizione": "Lo studente comprende le dimensioni del fenomeno dello spreco alimentare (dati globali e domestici), sa identificare le fasi della filiera dove si genera più spreco e conosce strategie pratiche per ridurlo, collegando scelte quotidiane a impatti globali ambientali ed economici.",
+      "titolo": "Packaging alimentare e sostenibilità",
+      "descrizione": "Lo studente conosce le cinque funzioni del packaging alimentare (proteggere, conservare, informare, convincere, facilitare il trasporto), confronta pregi e limiti ambientali dei materiali di imballaggio, riconosce l'over-packaging e legge i simboli di riciclo e smaltimento, valutando alternative più sostenibili.",
       "fonte": "originale",
       "frameworks": {
         "IN": {
           "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e utilizza oggetti, strumenti e macchine di uso comune ed è in grado di classificarli e descriverne la funzione",
-          "traguardo": "Lo studente analizza il sistema alimentare individuando inefficienze e proposte di miglioramento"
+          "traguardo": "Lo studente descrive funzioni e materiali di un imballaggio alimentare, ne legge i simboli e valuta l'impatto ambientale di confezioni diverse"
         },
         "DC": {
           "ref": "2.1 Interagire con tecnologie digitali",
           "livello": "I",
-          "nota": "Lo studente usa app di monitoraggio degli sprechi o fogli di calcolo per raccogliere dati domestici"
+          "nota": "Lo studente registra in un foglio di calcolo i dati dell'audit degli imballaggi e li confronta"
         },
         "EC": {
           "ref": "Into action / Taking initiative",
-          "nota": "Lo studente propone e attua azioni concrete di riduzione degli sprechi nel proprio contesto"
+          "nota": "Lo studente propone alternative concrete per ridurre gli imballaggi del proprio pasto e della mensa"
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali. Progettare azioni anti-spreco richiede pianificazione e autovalutazione: lo studente impara a tradurre intenzioni in comportamenti misurabili, competenza centrale dell'imparare a imparare."
+          "nota": "Lo studente si riconosce consumatore responsabile: ogni scelta d'acquisto decide quanti imballaggi entrano in casa e come vengono smaltiti."
         },
         "EV": {
-          "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile; SDG 13 — Lotta al cambiamento climatico",
-          "nota": "Lo spreco alimentare produce il 10% delle emissioni globali di gas serra"
+          "ref": "SDG 12 — Consumo e produzione responsabili; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "Ridurre e scegliere meglio gli imballaggi riduce rifiuti, consumo di materie prime ed emissioni"
         }
       },
       "outputApp": {
-        "quiz": "Dati e impatto: 'Un terzo del cibo mondiale viene sprecato — quanto CO₂ produce annualmente?' Multipla con infografica di supporto.",
-        "microlearning": "Card deck 5 slide: dove si spreca di più (campo, trasporto, distribuzione, casa, ristorazione) con dato percentuale. 4 min.",
-        "visual": "Piramide invertita dello spreco: quota % per ogni fase della filiera.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: funzioni del packaging, materiali e codici di riciclo, over-packaging, simboli in etichetta.",
+        "microlearning": "Process «Le cinque funzioni di un imballaggio: dal progetto allo smaltimento» + Checklist «Audit imballaggi del mio pasto».",
+        "visual": "Infografica: il ciclo di vita di una confezione alimentare — funzioni, materiali, simboli, smaltimento corretto.",
         "livelloDigComp": "I"
       },
       "prerequisiti": [
@@ -2231,22 +2235,23 @@
         "MC-ALI-2-03"
       ],
       "tags": [
-        "spreco alimentare",
+        "packaging",
+        "imballaggio",
+        "materiali",
+        "over-packaging",
+        "riciclo",
         "sostenibilità",
-        "food waste",
-        "impatto ambientale",
         "classe-2",
         "ALI"
       ],
-      "compito_realta": "Monitora gli sprechi alimentari in casa per una settimana: pesa o stima il cibo buttato ogni giorno, classifica per tipo (pane, verdura, avanzi...) e proponi 3 strategie per ridurlo.",
+      "compito_realta": "Analizza tutti gli imballaggi di un pasto completo: per ognuno indica materiale, riciclabilità, corretto smaltimento ed eventuale over-packaging, poi proponi alternative per ridurli.",
       "sdg": [
-        2,
         12,
         13
       ],
       "note_didattiche": {
-        "base": "Concentrarsi solo sullo spreco domestico. Fornire tabella di monitoraggio semplificata (3 categorie).",
-        "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
+        "base": "Partire da 3 prodotti già scelti, con materiale e simbolo di riciclo evidenziati: lo studente compila solo le colonne Materiale e Riciclabile.",
+        "avanzato": "Ridisegnare il packaging di un prodotto riducendo materiali e strati, motivando le scelte con i dati sui materiali e sul fine vita."
       },
       "hook_audio": {
         "durata_min": 0.9,
@@ -2267,24 +2272,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "nutriente",
-          "inglese": "nutrient",
-          "ipa": "ˈnjuːtrɪənt"
+          "italiano": "imballaggio alimentare",
+          "inglese": "food packaging",
+          "ipa": "fuːd ˈpækɪdʒɪŋ"
         },
         {
-          "italiano": "filiera",
-          "inglese": "supply chain",
-          "ipa": "səˈplaɪ tʃeɪn"
+          "italiano": "imballaggio eccessivo",
+          "inglese": "over-packaging",
+          "ipa": "ˈəʊvə ˈpækɪdʒɪŋ"
         },
         {
-          "italiano": "conservazione",
-          "inglese": "preservation",
-          "ipa": "ˌprezəˈveɪʃən"
+          "italiano": "bioplastica",
+          "inglese": "bioplastic",
+          "ipa": "ˈbaɪəʊˌplæstɪk"
         },
         {
-          "italiano": "spreco alimentare",
-          "inglese": "food waste",
-          "ipa": "fuːd weɪst"
+          "italiano": "commercio al dettaglio",
+          "inglese": "retail",
+          "ipa": "ˈriːteɪl"
         }
       ],
       "uda_collegata": "UDA-2 — La Città che Vorrei",
@@ -2314,42 +2319,42 @@
           ]
         }
       ],
-      "sdg_principale": 2
+      "sdg_principale": 12
     },
     {
       "id": "MC-ALI-2-06",
       "area": "ALI",
       "anno": 2,
-      "titolo": "Cibo, cultura e biodiversità",
-      "descrizione": "Lo studente esplora la relazione tra cibo, identità culturale e biodiversità agricola, comprende il concetto di erosione della biodiversità alimentare e sa valutare l'importanza della preservazione di varietà tradizionali e locali come patrimonio culturale e risorsa per il futuro.",
+      "titolo": "Innovazione alimentare e nuove tecnologie",
+      "descrizione": "Lo studente conosce le principali tecnologie che stanno cambiando la produzione di cibo (agricoltura di precisione, vertical farming, fermentazione moderna, carne coltivata, insetti, stampa 3D alimentare, tracciabilità digitale) e ne valuta in modo critico benefici, limiti e impatti per nutrire 10 miliardi di persone.",
       "fonte": "originale",
       "frameworks": {
         "IN": {
-          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
-          "traguardo": "Lo studente collega le tradizioni alimentari alla biodiversità e al patrimonio culturale locale"
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+          "traguardo": "Lo studente descrive le tecnologie alimentari innovative e ne valuta benefici, limiti e impatti ambientali e sociali"
         },
         "DC": {
-          "ref": "2.2 Condividere contenuti digitali",
+          "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
           "livello": "I",
-          "nota": "Lo studente crea e condivide un contenuto digitale (video, presentazione) su una tradizione alimentare locale"
+          "nota": "Lo studente confronta fonti online su una tecnologia food-tech distinguendo dati verificabili da affermazioni promozionali"
         },
         "EC": {
-          "ref": "Ideas and opportunities / Creativity",
-          "nota": "Lo studente valorizza le tradizioni locali come risorsa per l'innovazione alimentare"
+          "ref": "Ideas and opportunities / Valuing ideas",
+          "nota": "Lo studente valuta se una tecnologia alimentare risponde davvero a un problema e a chi porta vantaggio"
         },
         "LC": {
-          "ref": "Social / Cultural awareness",
-          "nota": "Lo studente riconosce il cibo come espressione di identità culturale e diversità. Il confronto tra sistemi alimentari di culture diverse allena la decentrazione cognitiva — lo studente impara a uscire dal proprio frame interpretativo e a riconoscere la logica interna di sistemi diversi dal proprio."
+          "ref": "Thinking / Critical thinking",
+          "nota": "Lo studente esamina una novità tecnologica senza entusiasmo né rifiuto a priori, pesando prove, limiti e conseguenze."
         },
         "EV": {
-          "ref": "SDG 2 — Fame zero; SDG 15 — Vita sulla terra",
-          "nota": "La biodiversità alimentare è fondamento della sicurezza alimentare futura"
+          "ref": "SDG 2 — Fame zero",
+          "nota": "Le nuove tecnologie alimentari sono una delle risposte possibili alla sfida di nutrire 10 miliardi di persone"
         }
       },
       "outputApp": {
-        "quiz": "Collegamento: abbina prodotto DOP/IGP alla sua regione di origine. 6 prodotti italiani con mappa interattiva.",
-        "microlearning": "Card deck 5 slide: 5 varietà agricole a rischio estinzione con nome, storia, dove si coltiva ancora. 4 min.",
-        "visual": "Mappa interattiva: biodiversità alimentare italiana — prodotti tradizionali per regione.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback sulle sette tecnologie food-tech: funzionamento, diffusione, benefici e limiti.",
+        "microlearning": "Process «Dal problema all'innovazione: come nasce una nuova tecnologia alimentare» + Checklist «Scheda blog: la tecnologia che nutre il futuro».",
+        "visual": "Infografica: sette tecnologie per il cibo del futuro, ciascuna con il problema che risolve e il limite principale.",
         "livelloDigComp": "I"
       },
       "prerequisiti": [
@@ -2357,21 +2362,22 @@
         "MC-ALI-2-03"
       ],
       "tags": [
-        "biodiversità",
-        "cultura alimentare",
-        "tradizioni",
-        "DOP",
+        "food-tech",
+        "innovazione alimentare",
+        "agricoltura di precisione",
+        "vertical farming",
+        "carne coltivata",
+        "insetti",
         "classe-2",
         "ALI"
       ],
-      "compito_realta": "Intervista un familiare o anziano del tuo paese su un piatto tradizionale della tua famiglia o regione: documenta la ricetta, gli ingredienti locali usati e il significato culturale in una scheda di max 1 pagina.",
+      "compito_realta": "Scrivi una scheda per il blog della scuola (max 300 parole) su una tecnologia alimentare innovativa: cos'è, quanto è diffusa, quale problema risolve, quali limiti ha.",
       "sdg": [
-        2,
-        15
+        2
       ],
       "note_didattiche": {
-        "base": "Fornire una scheda-intervista con le domande già formulate. Lo studente deve solo compilare le risposte.",
-        "avanzato": "Creare una mappa digitale della biodiversità alimentare del proprio comune usando Google Maps con pin e schede informative."
+        "base": "Partire da un prodotto food-tech già in vendita (es. farina di grillo, insalata da vertical farm): lo studente riconosce la tecnologia e il problema che risolve.",
+        "avanzato": "Valutare criticamente una tecnologia con criteri espliciti (impatto ambientale, costo, sicurezza, accettazione sociale) e confrontarla con la soluzione tradizionale."
       },
       "hook_audio": {
         "durata_min": 0.9,
@@ -2392,24 +2398,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "nutriente",
-          "inglese": "nutrient",
-          "ipa": "ˈnjuːtrɪənt"
+          "italiano": "agricoltura di precisione",
+          "inglese": "precision agriculture",
+          "ipa": "prɪˈsɪʒən ˈæɡrɪkʌltʃər"
         },
         {
-          "italiano": "filiera",
-          "inglese": "supply chain",
-          "ipa": "səˈplaɪ tʃeɪn"
+          "italiano": "fermentazione",
+          "inglese": "fermentation",
+          "ipa": "ˌfɜːmenˈteɪʃən"
         },
         {
-          "italiano": "conservazione",
-          "inglese": "preservation",
-          "ipa": "ˌprezəˈveɪʃən"
+          "italiano": "carne coltivata",
+          "inglese": "cultivated meat / cell-based meat",
+          "ipa": "ˈkʌltɪveɪtɪd miːt"
         },
         {
-          "italiano": "spreco alimentare",
-          "inglese": "food waste",
-          "ipa": "fuːd weɪst"
+          "italiano": "coltivazione verticale",
+          "inglese": "vertical farming",
+          "ipa": "ˈvɜːtɪkl ˈfɑːmɪŋ"
         }
       ],
       "uda_collegata": "UDA-2 — La Città che Vorrei",
@@ -2813,57 +2819,58 @@
       "id": "MC-AMB-2-04",
       "area": "AMB",
       "anno": 2,
-      "titolo": "Materiali da costruzione e sostenibilità",
-      "descrizione": "Lo studente conosce i principali materiali da costruzione (mattone, cemento, acciaio, legno, vetro, materiali isolanti) con le loro proprietà termiche, meccaniche e ambientali, e sa valutare la scelta del materiale in relazione all'efficienza energetica dell'edificio e all'impatto ambientale del ciclo costruttivo.",
+      "titolo": "Architettura bioclimatica ed efficienza energetica degli edifici",
+      "descrizione": "Lo studente comprende come un edificio può sfruttare il clima per scaldarsi e raffrescarsi (orientamento solare, massa termica, isolamento, ventilazione naturale, tetti verdi), conosce le tre modalità di scambio termico e sa leggere le principali certificazioni energetiche degli edifici.",
       "fonte": "Paci 2014",
       "frameworks": {
         "IN": {
-          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse",
-          "traguardo": "Lo studente valuta i materiali da costruzione in base a proprietà tecniche e impatto ambientale"
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi tecnologici e le relazioni con l'ambiente",
+          "traguardo": "Lo studente analizza un edificio dal punto di vista bioclimatico e propone interventi per migliorarne l'efficienza energetica"
         },
         "DC": {
           "ref": "1.1 Navigare, ricercare e filtrare dati",
           "livello": "I",
-          "nota": "Lo studente ricerca schede tecniche online dei materiali e confronta i dati di sostenibilità"
+          "nota": "Lo studente usa mappe e strumenti online (bussola, percorso del sole) per analizzare l'orientamento di un edificio"
         },
         "EC": {
-          "ref": "Ideas and opportunities / Sustainability",
-          "nota": "Lo studente collega le scelte costruttive al ciclo di vita dell'edificio e ai costi a lungo termine"
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente propone interventi bioclimatici realizzabili per la propria scuola"
         },
         "LC": {
           "ref": "Thinking / Systems thinking",
-          "nota": "Lo studente analizza l'edificio come sistema in cui le scelte dei materiali si ripercuotono sull'intero ciclo di vita. Valutare materiali con criteri multipli (prestazioni, costo, impatto ambientale) è un esercizio di pensiero multi-criterio trasferibile a qualsiasi scelta complessa: imparare a pesare variabili in conflitto."
+          "nota": "Lo studente vede l'edificio come un sistema in scambio continuo di calore con l'ambiente esterno."
         },
         "EV": {
-          "ref": "SDG 11 — Città sostenibili; SDG 13 — Lotta al cambiamento climatico",
-          "nota": "Il settore edilizio produce il 39% delle emissioni globali — materiali sostenibili sono risposta concreta"
+          "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
+          "nota": "Edifici che consumano meno energia riducono le emissioni delle città"
         }
       },
       "outputApp": {
-        "quiz": "Scenario: 'Devi scegliere il materiale per le pareti esterne di una casa in zona fredda — quale ha il miglior isolamento termico?' Multipla con dati tecnici.",
-        "microlearning": "Card deck 5 slide: mattone, calcestruzzo, legno X-lam, acciaio, isolanti — proprietà chiave + impatto. 5 min.",
-        "visual": "Tabella comparativa: 5 materiali × 4 parametri (resistenza, isolamento, costo, impatto CO₂).",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: orientamento solare, massa termica, isolamento e trasmittanza, ventilazione naturale, certificazioni energetiche.",
+        "microlearning": "Process «Costruire con il sole: come la geometria solare determina il comfort di un edificio» + Checklist «Analisi bioclimatica della mia scuola».",
+        "visual": "Infografica: sezione di un edificio bioclimatico con sole estivo e invernale, massa termica, isolamento e ventilazione naturale.",
         "livelloDigComp": "I"
       },
       "prerequisiti": [
         "MC-AMB-2-01"
       ],
       "tags": [
-        "materiali edilizi",
-        "sostenibilità",
-        "isolamento",
-        "edilizia green",
+        "architettura bioclimatica",
+        "orientamento solare",
+        "isolamento termico",
+        "massa termica",
+        "efficienza energetica",
         "classe-2",
         "AMB"
       ],
-      "compito_realta": "Analizza la tua casa o scuola: osserva i materiali usati per pareti, pavimenti, finestre e tetto, crea una tabella con 4 materiali identificati e valuta per ciascuno il potenziale di miglioramento per l'efficienza energetica.",
+      "compito_realta": "Analizza dal punto di vista bioclimatico l'edificio della tua scuola: orientamento, involucro termico, ventilazione e verde, poi proponi tre interventi di miglioramento motivati.",
       "sdg": [
         11,
         13
       ],
       "note_didattiche": {
-        "base": "Fornire la tabella con i parametri e i valori già inseriti per 3 materiali. Lo studente aggiunge solo il 4°.",
-        "avanzato": "Calcolare approssimativamente la dispersione termica di una parete non isolata vs. isolata usando i valori di conduttività termica forniti."
+        "base": "Fornire la pianta della scuola con il nord indicato: lo studente individua il lato più soleggiato e valuta la posizione delle finestre.",
+        "avanzato": "Progettare una ristrutturazione bioclimatica di un edificio reale, stimando l'effetto di isolamento e schermature sui consumi."
       },
       "hook_audio": {
         "durata_min": 1,
@@ -2884,24 +2891,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "struttura",
-          "inglese": "structure",
-          "ipa": "ˈstrʌktʃə"
+          "italiano": "architettura bioclimatica",
+          "inglese": "bioclimatic architecture",
+          "ipa": "ˌbaɪəʊˈklaɪmətɪk ˈɑːkɪtektʃə"
         },
         {
-          "italiano": "impianto",
-          "inglese": "system / plant",
-          "ipa": "ˈsɪstəm"
+          "italiano": "trasmittanza termica",
+          "inglese": "thermal transmittance",
+          "ipa": "ˈθɜːməl trænsˈmɪtəns"
         },
         {
-          "italiano": "rischio",
-          "inglese": "risk",
-          "ipa": "rɪsk"
+          "italiano": "massa termica",
+          "inglese": "thermal mass",
+          "ipa": "ˈθɜːməl mæs"
         },
         {
-          "italiano": "urbanistica",
-          "inglese": "urban planning",
-          "ipa": "ˈɜːbən ˈplænɪŋ"
+          "italiano": "ponte termico",
+          "inglese": "thermal bridge",
+          "ipa": "ˈθɜːməl brɪdʒ"
         }
       ],
       "uda_collegata": "UDA-2 — La Città che Vorrei",
@@ -2937,57 +2944,59 @@
       "id": "MC-AMB-2-05",
       "area": "AMB",
       "anno": 2,
-      "titolo": "Smart city e tecnologie per la città intelligente",
-      "descrizione": "Lo studente comprende il concetto di smart city (uso di tecnologie digitali per ottimizzare i servizi urbani), conosce applicazioni concrete (semafori intelligenti, raccolta rifiuti ottimizzata, illuminazione adattiva, parcheggi smart) e sa discutere i benefici e i rischi legati alla raccolta massiva di dati urbani.",
+      "titolo": "Il ciclo artificiale dell'acqua: acquedotto, depurazione e risorsa idrica",
+      "descrizione": "Lo studente segue il percorso dell'acqua dalla fonte al rubinetto e dal rubinetto al depuratore (captazione, potabilizzazione, distribuzione, depurazione), conosce il problema delle perdite di rete, la gestione delle acque piovane, la scarsità idrica e l'impronta idrica dei prodotti.",
       "fonte": "originale",
       "frameworks": {
         "IN": {
-          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con il contesto",
-          "traguardo": "Lo studente descrive le tecnologie smart city e ne valuta impatti e rischi"
+          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con la natura",
+          "traguardo": "Lo studente descrive il ciclo artificiale dell'acqua e valuta consumi, sprechi e soluzioni per un uso sostenibile della risorsa idrica"
         },
         "DC": {
-          "ref": "4.2 Proteggere i dati personali e la privacy",
+          "ref": "1.1 Navigare, ricercare e filtrare dati",
           "livello": "I",
-          "nota": "Lo studente riflette sui dati raccolti dai sensori urbani e sulle implicazioni per la privacy dei cittadini"
+          "nota": "Lo studente cerca i dati del proprio gestore idrico e del proprio comune (consumi, perdite di rete) su fonti ufficiali"
         },
         "EC": {
-          "ref": "Ideas and opportunities / Creativity",
-          "nota": "Lo studente immagina soluzioni smart per problemi reali del proprio quartiere"
+          "ref": "Into action / Taking initiative",
+          "nota": "Lo studente individua sprechi d'acqua nella scuola e propone azioni per ridurli"
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente valuta i trade-off tra efficienza urbana e diritti dei cittadini. Analizzare dilemmi con valori in conflitto allena il pensiero dilemmatico: lo studente impara a stare nell'incertezza, a costruire argomentazioni fondate e a riconoscere che non sempre esiste una risposta unica — competenza adulta dell'imparare a imparare."
+          "nota": "Lo studente comprende che l'acqua del rubinetto è il risultato di un servizio pubblico complesso e di una risorsa limitata."
         },
         "EV": {
-          "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Innovazione",
-          "nota": "Le smart city sono strumento per rendere le città più efficienti, inclusive e sostenibili"
+          "ref": "SDG 6 — Acqua pulita e servizi igienico-sanitari; SDG 11 — Città e comunità sostenibili",
+          "nota": "Garantire acqua potabile e depurazione a tutti richiede reti efficienti e consumi consapevoli"
         }
       },
       "outputApp": {
-        "quiz": "Scenario dilemma: 'Il Comune vuole installare telecamere con riconoscimento facciale ai semafori per ridurre il traffico — sei d'accordo?' Risposta aperta guidata da pro/contro.",
-        "microlearning": "Card deck 5 slide: 5 applicazioni smart city reali (Amsterdam, Barcellona, Songdo, Torino, Singapore) con dati. 5 min.",
-        "visual": "Mappa concettuale: smart city — tecnologie, dati, servizi, rischi, governance.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: ciclo artificiale dell'acqua, potabilizzazione, perdite di rete, acque piovane, impronta idrica, depurazione.",
+        "microlearning": "Process «Il ciclo artificiale dell'acqua: dalla sorgente al depuratore» + Checklist «Dossier acqua della mia scuola».",
+        "visual": "Infografica: il ciclo artificiale dell'acqua in sei fasi, dalla captazione al depuratore, con le perdite di rete.",
         "livelloDigComp": "I"
       },
       "prerequisiti": [
         "MC-AMB-2-03"
       ],
       "tags": [
-        "smart city",
-        "IoT",
-        "tecnologia urbana",
-        "privacy",
+        "acqua",
+        "acquedotto",
+        "potabilizzazione",
+        "depuratore",
+        "impronta idrica",
+        "scarsità idrica",
         "classe-2",
         "AMB"
       ],
-      "compito_realta": "Progetta una soluzione smart per un problema reale del quartiere della tua scuola (es. traffico all'uscita, rifiuti abbandonati, illuminazione carente): descrivi la tecnologia usata, i dati raccolti e chi ne beneficia.",
+      "compito_realta": "Produci un dossier sull'acqua della tua scuola: stima il consumo annuo, documenta almeno tre sprechi osservati e proponi soluzioni realizzabili per ridurli.",
       "sdg": [
-        9,
+        6,
         11
       ],
       "note_didattiche": {
-        "base": "Fornire 3 problemi pre-selezionati e 3 soluzioni possibili. Lo studente sceglie e motiva.",
-        "avanzato": "Analizzare i dati aperti (open data) del proprio comune: cosa pubblica? Cosa manca? Cosa si potrebbe fare con quei dati?"
+        "base": "Fornire lo schema del ciclo artificiale con le fasi da ordinare: lo studente ricostruisce il percorso dell'acqua dalla fonte al rubinetto.",
+        "avanzato": "Progettare la resilienza idrica di una città: riuso delle acque piovane, riduzione delle perdite, piano per la siccità."
       },
       "hook_audio": {
         "durata_min": 0.9,
@@ -3008,24 +3017,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "struttura",
-          "inglese": "structure",
-          "ipa": "ˈstrʌktʃə"
+          "italiano": "rete idrica",
+          "inglese": "water supply network",
+          "ipa": "ˈwɔːtə səˈplaɪ ˈnetwɜːk"
         },
         {
-          "italiano": "impianto",
-          "inglese": "system / plant",
-          "ipa": "ˈsɪstəm"
+          "italiano": "depuratore",
+          "inglese": "wastewater treatment plant",
+          "ipa": "ˈweɪstwɔːtə ˈtriːtmənt plɑːnt"
         },
         {
-          "italiano": "rischio",
-          "inglese": "risk",
-          "ipa": "rɪsk"
+          "italiano": "impronta idrica",
+          "inglese": "water footprint",
+          "ipa": "ˈwɔːtə ˈfʊtprɪnt"
         },
         {
-          "italiano": "urbanistica",
-          "inglese": "urban planning",
-          "ipa": "ˈɜːbən ˈplænɪŋ"
+          "italiano": "perdite di rete",
+          "inglese": "water losses / leakage",
+          "ipa": "ˈwɔːtə ˈlɒsɪz"
         }
       ],
       "uda_collegata": "UDA-2 — La Città che Vorrei",
@@ -3061,36 +3070,36 @@
       "id": "MC-AMB-2-06",
       "area": "AMB",
       "anno": 2,
-      "titolo": "Rischio idrogeologico e prevenzione",
-      "descrizione": "Lo studente comprende cosa si intende per rischio idrogeologico (frane, alluvioni, siccità), sa leggere una mappa del rischio semplificata, e conosce le principali misure di prevenzione tecnologica e comportamentale, sviluppando consapevolezza del rapporto tra territorio, clima e sicurezza.",
+      "titolo": "Smart city: sensori, dati aperti e partecipazione",
+      "descrizione": "Lo studente comprende che cos'è una smart city (sensori urbani, open data, partecipazione civica digitale, mobilità condivisa), sa leggere esempi reali di città che usano i dati e si chiede in modo critico per chi una città diventa davvero più intelligente.",
       "fonte": "originale",
       "frameworks": {
         "IN": {
-          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con la natura",
-          "traguardo": "Lo studente descrive i rischi idrogeologici e le tecnologie di monitoraggio e prevenzione"
+          "ref": "IN 2025 (D.M. n. 221/2025) — Riconosce nell'ambiente i principali sistemi tecnologici e le relazioni con il contesto",
+          "traguardo": "Lo studente descrive come sensori e dati aperti migliorano i servizi urbani e valuta in modo critico benefici, costi ed esclusioni"
         },
         "DC": {
           "ref": "1.1 Navigare, ricercare e filtrare dati",
           "livello": "I",
-          "nota": "Lo studente usa piattaforme GIS (es. ISPRA, Geoportale) per consultare mappe del rischio del proprio territorio"
+          "nota": "Lo studente cerca e consulta dataset aperti della propria città (es. su dati.gov.it) per documentare un problema urbano"
         },
         "EC": {
           "ref": "Into action / Taking initiative",
-          "nota": "Lo studente identifica azioni preventive realizzabili nella propria comunità"
+          "nota": "Lo studente progetta una soluzione smart realistica per il quartiere della scuola"
         },
         "LC": {
           "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente comprende il proprio ruolo nella prevenzione dei rischi ambientali del territorio. Studiare i rischi del proprio territorio è apprendimento situato: lo studente collega concetti astratti (sismicità, idrogeologia, rischio alluvionale) a luoghi concreti, rinforzando la memoria con l'ancoraggio geografico e personale."
+          "nota": "Lo studente si chiede chi guadagna e chi resta escluso da una tecnologia urbana, esercitando cittadinanza attiva."
         },
         "EV": {
-          "ref": "SDG 11 — Città e comunità sostenibili; SDG 13 — Lotta al cambiamento climatico",
-          "nota": "Il rischio idrogeologico è amplificato dai cambiamenti climatici: prevenire è adattarsi"
+          "ref": "SDG 11 — Città e comunità sostenibili; SDG 9 — Imprese, innovazione e infrastrutture",
+          "nota": "Una città intelligente usa i dati per servizi migliori e più equi per tutti gli abitanti"
         }
       },
       "outputApp": {
-        "quiz": "Scenario di emergenza: 'Sei in una zona con allerta arancione per piogge intense — quali azioni eviti? Quali fai?' Multipla con feedback di protezione civile.",
-        "microlearning": "Card deck 5 slide: frana, alluvione, siccità, erosione costiera, valanga — cause + segnali premonitori + cosa fare. 5 min.",
-        "visual": "Mappa del rischio Italia: aree rosse, arancioni, gialle con legenda e casistiche storiche.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: definizione di smart city, sensori urbani, open data, partecipazione civica, mobilità condivisa.",
+        "microlearning": "Process «Come funziona una smart city: dai dati ai servizi, con le domande che nessuno fa» + Checklist «Progettista di una soluzione smart per il mio quartiere».",
+        "visual": "Infografica: dal sensore al servizio — come una città raccoglie dati, li pubblica come open data e li usa per decisioni, con la domanda «per chi?».",
         "livelloDigComp": "I"
       },
       "prerequisiti": [
@@ -3098,21 +3107,22 @@
         "MC-AMB-2-03"
       ],
       "tags": [
-        "rischio idrogeologico",
-        "prevenzione",
-        "territorio",
-        "alluvioni",
+        "smart city",
+        "sensori urbani",
+        "open data",
+        "partecipazione civica",
+        "mobilità condivisa",
         "classe-2",
         "AMB"
       ],
-      "compito_realta": "Ricerca se il territorio del tuo comune è classificato a rischio idrogeologico sul Geoportale ISPRA: identifica il livello di rischio, l'ultimo evento registrato e una misura di prevenzione esistente o possibile.",
+      "compito_realta": "Progetta in gruppo una soluzione smart per il quartiere della scuola: individua un problema reale, scegli sensori e dati, stima i costi e spiega chi ne beneficia.",
       "sdg": [
         11,
-        13
+        9
       ],
       "note_didattiche": {
-        "base": "Fornire la scheda del comune già compilata parzialmente. Lo studente aggiunge solo la misura di prevenzione.",
-        "avanzato": "Confrontare due comuni italiani con lo stesso livello di rischio ma diversa capacità di risposta: cosa fa la differenza?"
+        "base": "Partire da un dataset aperto già scaricato (es. qualità dell'aria): lo studente legge i dati e indica dove il problema è più evidente.",
+        "avanzato": "Progettare una campagna di open data per il proprio quartiere, definendo quali dati raccogliere, come pubblicarli e chi potrebbe usarli."
       },
       "hook_audio": {
         "durata_min": 0.9,
@@ -3133,24 +3143,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "struttura",
-          "inglese": "structure",
-          "ipa": "ˈstrʌktʃə"
+          "italiano": "città intelligente",
+          "inglese": "smart city",
+          "ipa": "smɑːt ˈsɪti"
         },
         {
-          "italiano": "impianto",
-          "inglese": "system / plant",
-          "ipa": "ˈsɪstəm"
+          "italiano": "dati aperti",
+          "inglese": "open data",
+          "ipa": "ˈəʊpən ˈdeɪtə"
         },
         {
-          "italiano": "rischio",
-          "inglese": "risk",
-          "ipa": "rɪsk"
+          "italiano": "sensore urbano",
+          "inglese": "urban sensor",
+          "ipa": "ˈɜːbən ˈsensə"
         },
         {
-          "italiano": "urbanistica",
-          "inglese": "urban planning",
-          "ipa": "ˈɜːbən ˈplænɪŋ"
+          "italiano": "partecipazione civica",
+          "inglese": "civic participation",
+          "ipa": "ˈsɪvɪk pɑːˌtɪsɪˈpeɪʃən"
         }
       ],
       "uda_collegata": "UDA-2 — La Città che Vorrei",
@@ -3449,36 +3459,36 @@
       "id": "MC-DIG-2-03",
       "area": "DIG",
       "anno": 2,
-      "titolo": "Il sistema operativo: come il computer gestisce le risorse",
-      "descrizione": "Lo studente comprende cosa fa un sistema operativo (gestione dei processi, della memoria, del file system e delle periferiche), sa usare consapevolmente le funzioni di base del SO che usa ogni giorno, e capisce perché il SO è lo strato che rende possibile ogni altra applicazione.",
+      "titolo": "Organizzare il computer: file, backup e privacy",
+      "descrizione": "Lo studente organizza file e cartelle con una struttura logica e una convenzione di nomi, applica la regola di backup 3-2-1, gestisce installazioni e aggiornamenti dei programmi, usa il cloud in modo consapevole e conosce cosa traccia il browser e come limitarlo.",
       "fonte": "originale",
       "frameworks": {
         "IN": {
-          "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: Sistema operativo: principali funzioni e servizi di base, concetto di processo in esecuzione, gestione dei processi e della memoria, file system.",
-          "traguardo": "Lo studente descrive le funzioni principali di un sistema operativo e le usa consapevolmente nell'uso quotidiano del dispositivo"
+          "ref": "IN 2025 (D.M. n. 221/2025) — Sa risolvere problemi tecnici e utilizzare applicativi informatici",
+          "traguardo": "Lo studente organizza in modo efficace i propri file, protegge il proprio lavoro con backup regolari e gestisce in modo consapevole programmi, cloud e privacy del browser"
         },
         "DC": {
           "ref": "2.1 Interagire con le tecnologie digitali",
           "livello": "I",
-          "nota": "Lo studente interagisce con il SO in modo consapevole, comprendendo cosa succede 'sotto' all'interfaccia grafica"
+          "nota": "Lo studente gestisce file, cartelle, backup e impostazioni del browser in modo consapevole e organizzato"
         },
         "EC": {
           "ref": "Into action / Mobilising resources",
-          "nota": "Lo studente ottimizza l'uso delle risorse del dispositivo (memoria, processi) per lavorare in modo più efficiente"
+          "nota": "Lo studente organizza le proprie risorse digitali per lavorare in modo più efficiente e senza perdite"
         },
         "LC": {
           "ref": "Thinking / Systems thinking",
-          "nota": "Lo studente comprende il SO come sistema di gestione delle risorse con interdipendenze tra componenti"
+          "nota": "Lo studente costruisce un sistema personale (cartelle, nomi, backup) e ne verifica il funzionamento nel tempo."
         },
         "EV": {
-          "ref": "SDG 9 — Industria, innovazione e infrastrutture",
-          "nota": "La comprensione del SO è fondamento della cittadinanza digitale in una società che dipende dall'infrastruttura informatica"
+          "ref": "SDG 9 — Imprese, innovazione e infrastrutture",
+          "nota": "Saper gestire i propri dati digitali è parte della cittadinanza digitale"
         }
       },
       "outputApp": {
-        "quiz": "Scenario diagnostico: 'Il tuo computer è lento — quali processi consuma più memoria? Come li identifichi e cosa fai?' — risposta guidata con screen simulato del task manager. Feedback che spiega RAM vs CPU.",
-        "microlearning": "Card deck 6 slide: cos'è il SO / processo / memoria RAM / file system / periferiche / confronto Windows-macOS-Linux-Android. 5 min.",
-        "visual": "Diagramma a strati: hardware → SO (kernel, driver, interfaccia) → applicazioni → utente. Con frecce che mostrano il flusso delle istruzioni.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: struttura delle cartelle, convenzione di nomi, regola 3-2-1, aggiornamenti, cloud, cookie e privacy del browser.",
+        "microlearning": "Process «Dalla cartella caotica al sistema ordinato: il ciclo della gestione digitale» + Checklist «Diagnostico del mio computer: analisi e piano di miglioramento».",
+        "visual": "Infografica: dalla cartella caotica al sistema ordinato — albero delle cartelle, nome del file, backup 3-2-1, aggiornamenti, privacy del browser.",
         "livelloDigComp": "I"
       },
       "prerequisiti": [
@@ -3486,22 +3496,22 @@
         "MC-DIG-2-01"
       ],
       "tags": [
-        "sistema operativo",
-        "processo",
-        "memoria RAM",
-        "file system",
-        "kernel",
-        "informatica",
+        "gestione file",
+        "cartelle",
+        "backup",
+        "cloud",
+        "privacy del browser",
+        "cookie",
         "classe-2",
         "DIG"
       ],
-      "compito_realta": "Apri il task manager (o Activity Monitor su Mac) durante una sessione di lavoro normale: identifica i 5 processi che consumano più RAM e CPU, scopri a cosa servono e decidi se puoi chiuderne qualcuno senza perdere lavoro. Documenta la tua analisi in una tabella con una colonna 'posso chiuderlo?' motivata.",
+      "compito_realta": "Documenta come hai organizzato il tuo computer: situazione di partenza, struttura di cartelle e convenzione di nomi adottate, piano di backup e un consiglio pratico per chi inizia.",
       "sdg": [
         9
       ],
       "note_didattiche": {
-        "base": "Fornire la schermata del task manager già catturata, con i processi etichettati. Lo studente deve solo classificarli in 'sistema', 'applicazione', 'background' e descrivere cosa fanno i 3 più pesanti.",
-        "avanzato": "Confrontare l'uso delle risorse prima e dopo l'installazione di un'estensione del browser: misurare la differenza in MB di RAM e interpretare i dati. Scrivere una 'regola igienica digitale' basata sull'osservazione."
+        "base": "Fornire una cartella di file in disordine con nomi generici: lo studente li riorganizza in una struttura data e li rinomina con la convenzione.",
+        "avanzato": "Confrontare due strategie di backup (locale e cloud) per costi, rischi e affidabilità, e progettare il proprio sistema motivando le scelte."
       },
       "hook_audio": {
         "titolo": "Chi comanda davvero nel tuo computer?",
@@ -3527,24 +3537,24 @@
       "sdg_principale": 9,
       "clil_termini": [
         {
+          "italiano": "cartella",
+          "inglese": "folder",
+          "pronuncia_ipa": "/ˈfəʊldər/"
+        },
+        {
+          "italiano": "backup",
+          "inglese": "backup",
+          "pronuncia_ipa": "/ˈbækʌp/"
+        },
+        {
           "italiano": "sistema operativo",
           "inglese": "operating system",
           "pronuncia_ipa": "/ˈɒpəreɪtɪŋ ˈsɪstəm/"
         },
         {
-          "italiano": "processo",
-          "inglese": "process",
-          "pronuncia_ipa": "/ˈprəʊses/"
-        },
-        {
-          "italiano": "file system",
-          "inglese": "file system",
-          "pronuncia_ipa": "/faɪl ˈsɪstəm/"
-        },
-        {
-          "italiano": "memoria di lavoro",
-          "inglese": "RAM (Random Access Memory)",
-          "pronuncia_ipa": "/ræm/"
+          "italiano": "modalità privata",
+          "inglese": "private browsing / incognito mode",
+          "pronuncia_ipa": "/ˈprɪvɪt ˈbraʊzɪŋ/"
         }
       ],
       "uda_collegata": null,
@@ -3579,8 +3589,8 @@
       "id": "MC-DIG-2-04",
       "area": "DIG",
       "anno": 2,
-      "titolo": "Cifratura, sicurezza informatica e identità in rete",
-      "descrizione": "Lo studente comprende il principio dei cifrari (come si trasforma un messaggio in qualcosa di illeggibile per chi non ha la chiave), conosce i principali tipi di attacchi informatici (phishing, malware, furto di identità) e sa adottare comportamenti sicuri online — password robuste, autenticazione a due fattori, riconoscimento di contenuti manipolati.",
+      "titolo": "Sicurezza digitale pratica e identità online",
+      "descrizione": "Lo studente riconosce i principali attacchi informatici che lo riguardano (phishing, malware, furto di credenziali), sa individuare i segnali di un messaggio truffa, crea password robuste, attiva l'autenticazione a due fattori, sa cosa fare se viene attaccato e cura la propria reputazione online.",
       "fonte": "originale",
       "frameworks": {
         "IN": {
@@ -7391,57 +7401,59 @@
       "id": "MC-SIS-3-04",
       "area": "SIS",
       "anno": 3,
-      "titolo": "Processi produttivi, qualità e certificazioni",
-      "descrizione": "Lo studente conosce i concetti di controllo qualità e certificazione (ISO, CE, biologico), comprende come i processi produttivi vengono standardizzati per garantire sicurezza e qualità, e sa leggere le principali certificazioni su un prodotto, sviluppando la capacità di scegliere prodotti certificati con consapevolezza critica.",
+      "titolo": "Orientamento al futuro professionale",
+      "descrizione": "Lo studente conosce le forze che stanno trasformando il lavoro (automazione, transizione ecologica, invecchiamento, digitalizzazione), le professioni in crescita e in declino, il valore delle competenze trasversali e il modello RIASEC, e costruisce una mappa personale tra competenze acquisite e professioni possibili.",
       "fonte": "Paci 2014",
       "frameworks": {
         "IN": {
-          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e i criteri di qualità",
-          "traguardo": "Lo studente legge e interpreta certificazioni di prodotto e capisce i processi di controllo qualità"
+          "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e le relazioni tra scienza, tecnologia e società",
+          "traguardo": "Lo studente collega le competenze acquisite nel triennio ai cambiamenti del mondo del lavoro e le usa per una scelta consapevole del proprio percorso"
         },
         "DC": {
           "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
           "livello": "I",
-          "nota": "Lo studente verifica l'autenticità di certificazioni online usando i database ufficiali degli enti certificatori"
+          "nota": "Lo studente analizza offerte di lavoro reali online e ricava le competenze richieste"
         },
         "EC": {
-          "ref": "Into action / Mobilising resources",
-          "nota": "Lo studente usa le certificazioni come strumento di selezione consapevole dei prodotti"
+          "ref": "Into action / Planning and management",
+          "nota": "Lo studente traduce interessi e competenze in un piano per la scelta della scuola superiore"
         },
         "LC": {
-          "ref": "Social / Responsible citizenship",
-          "nota": "Lo studente esercita il proprio ruolo di consumatore critico usando le informazioni sulle certificazioni"
+          "ref": "Learning / Managing learning",
+          "nota": "Lo studente riflette sui propri interessi e punti di forza e individua un'area di crescita."
         },
         "EV": {
-          "ref": "SDG 12 — Consumo responsabile; SDG 3 — Salute e benessere",
-          "nota": "Le certificazioni proteggono consumatori e ambiente — conoscerle è competenza di cittadinanza economica"
+          "ref": "SDG 4 — Istruzione di qualità; SDG 8 — Lavoro dignitoso e crescita economica",
+          "nota": "Scegliere con consapevolezza il proprio percorso è la base di un lavoro dignitoso"
         }
       },
       "outputApp": {
-        "quiz": "Riconoscimento simboli: mostra 8 loghi di certificazione (CE, ISO 9001, FSC, biologico EU, Fairtrade, Energy Star, RoHS, WEEE) — cosa significa ciascuno? Abbinamento con feedback.",
-        "microlearning": "Card deck 5 slide: CE, ISO, FSC, biologico, Fairtrade — a cosa servono, chi le rilascia, quanto costano alle aziende. 4 min.",
-        "visual": "Guida visiva: i 10 loghi di certificazione più comuni su packaging alimentari e prodotti elettronici.",
+        "quiz": "18 domande (6F + 6I + 6A) con feedback: megatrend del lavoro, professioni in crescita e in declino, STEM gap, competenze trasversali, modello RIASEC.",
+        "microlearning": "Process «Il ciclo dell'orientamento professionale: dall'autoconoscenza alla scelta consapevole» + Checklist «Costruisco la mia mappa personale competenze acquisite → professioni possibili».",
+        "visual": "Infografica: dalla conoscenza di sé alla scelta — interessi (RIASEC), competenze tecniche e trasversali, professioni possibili.",
         "livelloDigComp": "I"
       },
       "prerequisiti": [
         "MC-SIS-3-01"
       ],
       "tags": [
-        "certificazioni",
-        "qualità",
-        "ISO",
-        "controllo qualità",
+        "orientamento",
+        "lavoro",
+        "professioni",
+        "competenze trasversali",
+        "RIASEC",
+        "STEM",
         "classe-3",
         "SIS"
       ],
-      "compito_realta": "Analizza il packaging di 5 prodotti diversi presenti in casa: identifica tutte le certificazioni presenti, cerca cosa significano sul sito dell'ente certificatore e valuta se la certificazione ti influenza nella scelta d'acquisto.",
+      "compito_realta": "Costruisci la tua mappa personale «competenze acquisite → professioni possibili» usando le MC del triennio, un test di interessi e l'analisi di tre offerte di lavoro reali, e presentala alla classe.",
       "sdg": [
-        3,
-        12
+        4,
+        8
       ],
       "note_didattiche": {
-        "base": "Fornire i 5 prodotti già selezionati con i loghi già evidenziati. Lo studente deve solo cercare il significato di 3 certificazioni.",
-        "avanzato": "Simulare un audit di qualità scolastico: definire 3 standard di qualità per la mensa scolastica e verificare se vengono rispettati attraverso osservazione diretta."
+        "base": "Esplorare le professioni collegate a tre MC del triennio usando la tabella MC → professioni.",
+        "avanzato": "Costruire un portfolio delle competenze del triennio con prove concrete per ogni competenza dichiarata."
       },
       "hook_audio": {
         "durata_min": 1,
@@ -7462,24 +7474,24 @@
       },
       "clil_termini": [
         {
-          "italiano": "economia",
-          "inglese": "economy",
-          "ipa": "ɪˈkɒnəmi"
+          "italiano": "competenze trasversali",
+          "inglese": "soft skills / transferable skills",
+          "ipa": "sɒft skɪlz"
         },
         {
-          "italiano": "sistema produttivo",
-          "inglese": "production system",
-          "ipa": "prəˈdʌkʃən ˈsɪstəm"
+          "italiano": "curriculum vitae",
+          "inglese": "résumé / CV",
+          "ipa": "ˈrezʊmeɪ"
         },
         {
-          "italiano": "qualità",
-          "inglese": "quality",
-          "ipa": "ˈkwɒlɪti"
+          "italiano": "colloquio di lavoro",
+          "inglese": "job interview",
+          "ipa": "dʒɒb ˈɪntəvjuː"
         },
         {
-          "italiano": "imprenditorialità",
-          "inglese": "entrepreneurship",
-          "ipa": "ˌɒntrəprəˈnɜːʃɪp"
+          "italiano": "apprendimento permanente",
+          "inglese": "lifelong learning",
+          "ipa": "ˈlaɪflɒŋ ˈlɜːnɪŋ"
         }
       ],
       "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
@@ -7509,7 +7521,7 @@
           ]
         }
       ],
-      "sdg_principale": 12
+      "sdg_principale": 4
     }
   ]
 }

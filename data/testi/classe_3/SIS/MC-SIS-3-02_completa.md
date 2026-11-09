@@ -123,7 +123,7 @@ Le regole del commercio internazionale sono gestite da istituzioni globali:
 
 **Accordi bilaterali:** trattati tra due paesi (o blocchi) che stabiliscono condizioni preferenziali di scambio. L'Unione Europea ha accordi bilaterali con il Canada (CETA), il Giappone (EPA), e molti altri. Questi accordi non riguardano solo i dazi: includono spesso norme su sicurezza alimentare, protezione della proprietà intellettuale e, sempre più spesso, standard di lavoro e ambiente.
 
-**Dazi doganali:** tasse sull'importazione di certi beni. Uno strumento di protezione dell'industria locale. La "guerra dei dazi" tra USA e Cina iniziata nel 2018 (e ancora in corso nel 2026) ha mostrato come i dazi possano essere usati come arma geopolitica oltre che economica.
+**Dazi doganali:** tasse sull'importazione di certi beni. Uno strumento di protezione dell'industria locale. La "guerra dei dazi" tra USA e Cina iniziata nel 2018 e proseguita negli anni successivi ha mostrato come i dazi possano essere usati come arma geopolitica oltre che economica.
 
 ---
 

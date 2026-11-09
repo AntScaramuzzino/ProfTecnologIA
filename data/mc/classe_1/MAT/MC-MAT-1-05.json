@@ -2,36 +2,36 @@
   "id": "MC-MAT-1-05",
   "area": "MAT",
   "anno": 1,
-  "titolo": "Scegliere il materiale giusto per un progetto",
-  "descrizione": "Lo studente sa selezionare il materiale più adatto per un oggetto o un progetto specifico, applicando criteri tecnici (resistenza, leggerezza, lavorabilità), economici (costo) e ambientali (impatto, riciclabilità) in modo integrato.",
+  "titolo": "I metalli: proprietà, lavorazione e riciclo",
+  "descrizione": "Lo studente conosce il percorso di un metallo dalla roccia all'oggetto, le caratteristiche di ferro, acciaio, alluminio e rame, il ruolo delle leghe, la corrosione e i trattamenti termici, e comprende perché i metalli si possono riciclare quasi all'infinito.",
   "fonte": "Paci 2014",
   "frameworks": {
     "IN": {
-      "ref": "IN 2025 (D.M. n. 221/2025) — Progetta e realizza rappresentazioni grafiche utilizzando elementi del disegno tecnico",
-      "traguardo": "Lo studente applica criteri di selezione dei materiali alla progettazione di oggetti semplici"
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
+      "traguardo": "Lo studente riconosce i principali metalli e leghe, ne descrive proprietà e lavorazioni e ne spiega il ciclo produttivo e di riciclo"
     },
     "DC": {
-      "ref": "5.3 Identificare lacune nelle proprie competenze digitali",
+      "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
       "livello": "F",
-      "nota": "Lo studente usa strumenti digitali per confrontare materiali e documentare la propria scelta progettuale"
+      "nota": "Lo studente confronta dati tecnici sui metalli (densità, resistenza, costo) trovati in fonti digitali diverse"
     },
     "EC": {
-      "ref": "Ideas and opportunities / Design thinking",
-      "nota": "Lo studente applica criteri multipli per prendere decisioni progettuali"
+      "ref": "Ideas and opportunities / Sustainability",
+      "nota": "Lo studente collega la scelta del metallo al consumo di energia e al riciclo"
     },
     "LC": {
-      "ref": "Thinking / Problem solving",
-      "nota": "Lo studente affronta un problema progettuale con un approccio strutturato e multi-criterio. La progettazione con vincoli (resistenza, peso, costo, lavorabilità) allena il pensiero strategico e l'imparare a imparare: lo studente pianifica, stima, revisa le proprie scelte in base ai risultati ottenuti."
+      "ref": "Thinking / Critical thinking",
+      "nota": "Lo studente motiva la scelta di un metallo con dati e criteri espliciti, non con l'abitudine."
     },
     "EV": {
-      "ref": "SDG 12 — Consumo e produzione responsabili",
-      "nota": "Scegliere materiali con criteri ambientali è un atto di design responsabile"
+      "ref": "SDG 9 — Imprese, innovazione e infrastrutture; SDG 12 — Consumo e produzione responsabili",
+      "nota": "Il riciclo dei metalli risparmia materie prime ed energia"
     }
   },
   "outputApp": {
-    "quiz": "Scenario progettuale: 'Devi costruire una borraccia scolastica — quale materiale scegli?' — multipla con 4 opzioni e feedback tecnico.",
-    "microlearning": "Card interattiva: matrice di selezione materiale (3 criteri × 4 materiali). Studente compila i pesi. 5 min.",
-    "visual": "Matrice decisionale: asse X = criteri, asse Y = materiali, con scala cromatica.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: estrazione e produzione, ferro e acciaio, alluminio, rame, leghe, corrosione, trattamenti termici, riciclo.",
+    "microlearning": "Process «Dalla miniera all'oggetto: il viaggio di un metallo» + Checklist «Scheda tecnica dei metalli attorno a me».",
+    "visual": "Infografica: il viaggio di un metallo dalla miniera all'oggetto e ritorno con il riciclo.",
     "livelloDigComp": "F"
   },
   "prerequisiti": [
@@ -39,21 +39,24 @@
     "MC-MAT-1-03"
   ],
   "tags": [
-    "selezione materiali",
-    "progettazione",
-    "criteri tecnici",
-    "design",
+    "metalli",
+    "acciaio",
+    "alluminio",
+    "rame",
+    "leghe",
+    "corrosione",
+    "riciclo",
     "classe-1",
     "MAT"
   ],
-  "compito_realta": "Scegli il materiale per costruire una piccola libreria da muro: confronta 3 materiali possibili in una tabella con almeno 4 criteri e giustifica la scelta finale in 5 righe.",
+  "compito_realta": "Scegli tre oggetti metallici con funzioni diverse e compila per ciascuno una scheda tecnica: metallo o lega, come l'hai riconosciuto, proprietà sfruttate, rischio di corrosione e possibilità di riciclo.",
   "sdg": [
     9,
     12
   ],
   "note_didattiche": {
-    "base": "Fornire la tabella dei criteri già impostata. Lo studente deve solo assegnare punteggi da 1 a 3.",
-    "avanzato": "Lo studente aggiunge autonomamente un 5° criterio di valutazione e riflette su eventuali compromessi tra criteri in conflitto."
+    "base": "Riconoscere i metalli con test semplici (calamita, colore, peso) su campioni forniti dal docente.",
+    "avanzato": "Scegliere il metallo giusto per una struttura reale confrontando almeno tre candidati su resistenza, peso, costo e corrosione."
   },
   "hook_audio": {
     "durata_min": 0.9,
@@ -74,24 +77,24 @@
   },
   "clil_termini": [
     {
-      "italiano": "materiale",
-      "inglese": "material",
-      "ipa": "məˈtɪərɪəl"
+      "italiano": "lega metallica",
+      "inglese": "alloy",
+      "ipa": "ˈælɔɪ"
     },
     {
-      "italiano": "proprietà",
-      "inglese": "property",
-      "ipa": "ˈprɒpəti"
+      "italiano": "acciaio inossidabile",
+      "inglese": "stainless steel",
+      "ipa": "ˈsteɪnləs stiːl"
     },
     {
-      "italiano": "riciclo",
-      "inglese": "recycling",
-      "ipa": "riːˈsaɪklɪŋ"
+      "italiano": "trattamento termico",
+      "inglese": "heat treatment",
+      "ipa": "hiːt ˈtriːtmənt"
     },
     {
-      "italiano": "ciclo di vita",
-      "inglese": "life cycle",
-      "ipa": "laɪf ˈsaɪkəl"
+      "italiano": "corrosione",
+      "inglese": "corrosion",
+      "ipa": "kəˈrəʊʒən"
     }
   ],
   "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",

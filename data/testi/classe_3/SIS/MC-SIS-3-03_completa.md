@@ -211,7 +211,7 @@ Forme concrete:
 - **B Corp:** certificazione internazionale per imprese che bilanciano profitto e impatto.
 - **Startup sociale:** startup che usa tecnologia per risolvere problemi sociali o ambientali con modello di business sostenibile.
 
-Esempio italiano: Treedom (certificata B Corp) piantava alberi nel mondo per conto di aziende e privati che vogliono compensare le proprie emissioni, e connetteva il piantatore con l'acquirente tramite una piattaforma digitale. Ha piantato oltre 4 milioni di alberi in 17 paesi, generando reddito per comunità agricole locali.
+Esempio italiano: Treedom (certificata B Corp) pianta alberi nel mondo per conto di aziende e privati, e collega chi pianta con chi acquista tramite una piattaforma digitale. Ha piantato oltre 4 milioni di alberi ed è attiva in 16 Paesi, generando reddito per comunità agricole locali.
 
 ---
 
