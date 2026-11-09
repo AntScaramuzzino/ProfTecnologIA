@@ -197,6 +197,18 @@ function findEsploraImage(images: EsploraImage[], title: string): EsploraImage |
   return images.find((img) => normalizeParagraphTitle(img.paragrafo) === key);
 }
 
+// ── Infografiche: in OSSERVA se ne mostra una sola, la versione più recente ────
+function isInfografica(v: VisualAsset): boolean {
+  return v.label === "Infografica";
+}
+function bestInfografica(visuals: VisualAsset[]): VisualAsset | undefined {
+  const ver = (src: string) => Number(src.match(/_v(\d+)\.\w+$/)?.[1] ?? 0);
+  const fmt = (src: string) => (/\.svg$/i.test(src) ? 1 : 0);
+  return visuals
+    .filter(isInfografica)
+    .sort((a, b) => ver(b.src) - ver(a.src) || fmt(a.src) - fmt(b.src) || a.src.localeCompare(b.src))[0];
+}
+
 // ── Splitta il body di ESPLORA in sottosezioni ###  ──────────────────────────
 
 function splitEsploraIntoAccordion(body: string): { id: string; title: string; body: string }[] {
@@ -849,20 +861,22 @@ function ZonePanel({
       };
     });
 
-    // Galleria residua: esclude sketchnote (→ RIPASSA), infografiche processo (→ OSSERVA), compito_realta (→ AGISCI)
+    // Galleria: solo immagini che non compaiono altrove nella pagina. Esclude la copertina
+    // (in cima alla pagina), sketchnote (→ RIPASSA), infografiche (→ OSSERVA), compito (→ AGISCI);
+    // le immagini della professione non arrivano qui (→ PROFESSIONI).
     const galleriaAssets = visuals.filter(
-      (v) =>
-        v.label !== "Ripassa" &&
-        v.label !== "Compito di Realtà" &&
-        !v.src.includes("infografica_processo") &&
-        !v.src.includes("infografica_latte") &&
-        !v.src.includes("infografica_lavorazione")
+      (v, i) => i > 0 && v.label !== "Ripassa" && v.label !== "Compito di Realtà" && !isInfografica(v),
     );
 
-    // Immagini per paragrafo (Canva AI) anche in galleria, con il prompt come didascalia
+    // Immagini dei paragrafi già mostrate nel testo: non si ripetono in galleria
+    const shownInText = new Set(
+      accordionItems
+        .map((ai) => findEsploraImage(esploraImages, ai.title) ?? (ai.id === "esplora-intro" ? introFallbackImage : undefined))
+        .filter(Boolean),
+    );
     const galleriaConEsplora: VisualAsset[] = [
       ...galleriaAssets,
-      ...esploraImages.map((img) => ({
+      ...esploraImages.filter((img) => !shownInText.has(img)).map((img) => ({
         kind: img.fonte === "schema" ? ("diagram" as const) : ("generated" as const),
         label: img.paragrafo,
         src: img.src,
@@ -883,7 +897,7 @@ function ZonePanel({
           </div>
         )}
         <AccordionSection items={items} defaultFirstOpen areaHex={areaHex} />
-        {/* Galleria visual — esclude sketchnote (RIPASSA) e infografiche processo (nel testo) */}
+        {/* Galleria visuale — solo immagini non mostrate altrove nella pagina */}
         {galleriaConEsplora.length > 0 && (
           <div className="mt-8">
             <p className="mb-4 text-xs font-black uppercase tracking-wide text-slate-500">Galleria visuale</p>
@@ -897,12 +911,8 @@ function ZonePanel({
   // ── OSSERVA ───────────────────────────────────────────────────────────────
   if (tabId === "OSSERVA") {
     // Infografiche del processo produttivo — osservare come funziona nella realtà
-    const processoAssets = visuals.filter(
-      (v) =>
-        v.src.includes("infografica_processo") ||
-        v.src.includes("infografica_latte") ||
-        v.src.includes("infografica_lavorazione")
-    );
+    const best = bestInfografica(visuals);
+    const processoAssets = best ? [best] : [];
 
     return (
       <div className="px-4 py-6 sm:px-6 space-y-8">
@@ -1189,7 +1199,10 @@ export function MCPageClient({
       esploraVideoCount: esploraImages.filter((i) => !!i.video).length,
       deckSlideCount: deckSlides.length,
       geogebraCount,
-      visualCount: visuals.length,
+      visualCount: visuals.filter(
+        (v, i) => i > 0 && v.label !== "Ripassa" && v.label !== "Compito di Realtà" && !isInfografica(v),
+      ).length,
+      hasInfografica: !!bestInfografica(visuals),
       laboratorio: lab ? { titolo: lab.titolo, archetipo: lab.archetipo } : null,
       escapeRoom: esc ? { titolo: esc.titolo } : null,
       hasCompito: sectionMapClean.has("AGISCI"),

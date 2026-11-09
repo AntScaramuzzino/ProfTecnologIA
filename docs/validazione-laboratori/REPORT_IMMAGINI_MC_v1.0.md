@@ -1,6 +1,6 @@
-# Immagini e infografiche del libro — report di controllo
+# Immagini e infografiche del libro — report di controllo (v1.1)
 
-9 novembre 2026 · 58 micro-competenze · Controllo fatto sul sito costruito dal repository aggiornato: tutte le zone di ogni pagina MC aperte una per una, immagini raccolte dal DOM, confronto dei file byte per byte e per somiglianza visiva (hash percettivo). Nessuna modifica fatta: è una fotografia della situazione.
+9 novembre 2026 · 58 micro-competenze · Controllo fatto sul sito costruito dal repository aggiornato: tutte le zone di ogni pagina MC aperte una per una, immagini raccolte dal DOM, confronto dei file byte per byte e per somiglianza visiva (hash percettivo). Le sezioni 1-6 descrivono la situazione prima delle correzioni; la sezione «Correzioni applicate» dice che cosa è stato sistemato.
 
 ## In sintesi
 
@@ -10,6 +10,31 @@
 - **La stessa foto usata per MC diverse:** 44 file in 13 gruppi. Il caso più grave: **una sola foto generica (ragazzo al portatile) fa da immagine di contesto in 17 MC** di Digitale, Disegno ed Energia.
 - **Infografica del processo mancante in OSSERVA: 33 MC su 58.** In 32 di queste non c'è nessuna infografica fra i file.
 - **Immagine del compito di realtà mancante in AGISCI:** 6 MC (MC-INF-1-01, MC-INF-1-02, MC-INF-2-01, MC-INF-2-02, MC-INF-3-01, MC-INF-3-02).
+
+## Correzioni applicate il 9 novembre 2026 (v1.1)
+
+Verificate rifacendo lo stesso controllo su tutte le 58 MC dopo le modifiche.
+
+| Problema | Correzione | Esito del nuovo controllo |
+|---|---|---|
+| Copertina ripetuta nella Galleria visuale | La galleria esclude la copertina | 0 casi (prima 58) |
+| Immagini dei paragrafi ripetute in galleria | In galleria vanno solo le immagini non già mostrate nel testo | 0 casi |
+| Immagini della professione in galleria | Restano solo nella scheda PROFESSIONI | 0 casi (prima 58 MC) |
+| Stesso schema in .svg e .webp | Un solo formato per immagine (WebP, poi PNG/JPG, poi SVG) | 0 casi (prima 58 MC) |
+| Più versioni dell'infografica in OSSERVA | Si mostra solo la versione più recente (v2 su v1, raster su SVG) | 0 casi (prima 3) |
+| Foto segnaposto identiche in più MC (17 + 3 + 2 + 2) e copertina = contesto in MC-DIG-1-03 | Al momento della build il sito confronta i file: una foto identica a quella di un'altra MC, o a un'altra della stessa MC, non viene mostrata (la copertina resta) | 0 foto identiche fra MC diverse sulle pagine |
+| MC-MAT-1-01: infografica nella galleria | Ogni infografica va in OSSERVA | ora in OSSERVA |
+| File doppi con lo spazio nel nome (DIS-1-01, MAT-1-04, MAT-1-06) | Rimossi (restano nella storia del repository) | — |
+
+Il pannello «Materiali» di INNESCA ora conta l'infografica di OSSERVA e la galleria senza ripetizioni.
+
+**Precisazione sulle immagini della professione.** Le immagini `img4-professione` identiche fra due MC sono quasi sempre la **stessa professione** presente in entrambe (es. *Vertical Farmer* in ALI-2-02 e ALI-2-04, *Predictive Maintenance Analyst* in ENE-3-01, ENE-3-04, MAT-1-05, SIS-3-04): il riuso è corretto e resta. Sono invece **da verificare** tre casi in cui la stessa immagine illustra professioni diverse: MAT-1-03 (*Waste Blockchain Auditor*) = MAT-1-04 (*Decarbonization Consultant*); MAT-1-04 (*Carbon Footprint Analyst*) = MAT-1-06 (*Textile Designer*); DIS-1-01 (*Product Designer*) = MAT-1-06 (*Fashion and Textile Designer*).
+
+### Che cosa resta da produrre (contenuti, non codice)
+- **Infografica del processo in OSSERVA: 32 MC** (elenco nella sezione 4, esclusa MC-MAT-1-01).
+- **Immagini di contesto:** le 20 MC che usavano una foto segnaposto ora non la mostrano; se si vuole una seconda foto in galleria va generata sul tema della MC.
+- **Area INF:** immagine del compito di realtà (6 MC) e seconda immagine della professione (6 MC).
+- Le tre immagini della professione da verificare qui sopra.
 
 ## 1. Duplicati dovuti al codice — valgono per tutte le MC
 
