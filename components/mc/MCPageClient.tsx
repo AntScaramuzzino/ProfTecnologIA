@@ -789,7 +789,20 @@ function ZonePanel({
             )}
             {paragraphImage?.video && (
               <figure className="mb-5 overflow-hidden rounded-xl border border-slate-200 bg-slate-950">
-                <video
+{paragraphImage.video.youtube ? (
+                  <div className="relative aspect-video w-full">
+                    <iframe
+                      className="absolute inset-0 h-full w-full"
+                      src={`https://www.youtube-nocookie.com/embed/${paragraphImage.video.youtube}?rel=0&cc_lang_pref=it&hl=it`}
+                      title={paragraphImage.video.titolo}
+                      loading="lazy"
+                      allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                      allowFullScreen
+                      referrerPolicy="strict-origin-when-cross-origin"
+                    />
+                  </div>
+                ) : (
+                                <video
                   controls
                   playsInline
                   preload="none"
@@ -802,11 +815,12 @@ function ZonePanel({
                     <track kind="captions" src={paragraphImage.video.sottotitoli} srcLang="it" label="Italiano" />
                   )}
                 </video>
+                )}
                 <figcaption className="bg-slate-50 px-3 py-1.5 text-[11px] leading-snug text-slate-500">
                   <span className="font-semibold text-slate-700">Video: {paragraphImage.video.titolo}</span>
                   {paragraphImage.video.durata && <> · {paragraphImage.video.durata}</>}
                   {paragraphImage.video.nota && <> · {paragraphImage.video.nota}</>}
-                  {paragraphImage.video.sottotitoli && <> Sottotitoli attivabili dal lettore (CC).</>}
+                  {(paragraphImage.video.sottotitoli || paragraphImage.video.youtube) && <> Sottotitoli attivabili dal lettore (CC).</>}
                 </figcaption>
               </figure>
             )}

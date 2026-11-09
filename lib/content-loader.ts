@@ -198,7 +198,9 @@ export interface EsploraImage {
 }
 
 export interface EsploraVideo {
-  src: string;
+  /** ID del video su YouTube (canale ProfTecnologIA): se presente, si incorpora da YouTube */
+  youtube?: string;
+  src?: string;
   poster?: string;
   sottotitoli?: string;
   titolo: string;
@@ -218,7 +220,7 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
     const data = JSON.parse(fs.readFileSync(file, "utf-8")) as {
       immagini?: {
         paragrafo: string; file: string; alt: string; prompt?: string; fonte?: "ia" | "schema"; didascalia?: string;
-        video?: { file: string; poster?: string; sottotitoli?: string; titolo: string; durata?: string; nota?: string };
+        video?: { file?: string; youtube?: string; poster?: string; sottotitoli?: string; titolo: string; durata?: string; nota?: string };
       }[];
     };
     return (data.immagini ?? [])
@@ -231,9 +233,10 @@ export function getMCEsploraImages(mcId: string): EsploraImage[] {
         didascalia: img.didascalia,
         src: `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.file}`,
         video:
-          img.video && fs.existsSync(path.join(PUBLIC_ESPLORA_ROOT, mcId, img.video.file))
+          img.video && (img.video.youtube || (img.video.file && fs.existsSync(path.join(PUBLIC_ESPLORA_ROOT, mcId, img.video.file))))
             ? {
-                src: `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.video.file}`,
+                youtube: img.video.youtube,
+                src: img.video.file && !img.video.youtube ? `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.video.file}` : undefined,
                 poster: img.video.poster ? `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.video.poster}` : undefined,
                 sottotitoli: img.video.sottotitoli ? `${PUBLIC_BASE_PATH}/assets/esplora/${mcId}/${img.video.sottotitoli}` : undefined,
                 titolo: img.video.titolo,
