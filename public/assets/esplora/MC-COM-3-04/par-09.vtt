@@ -1,0 +1,123 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:02.120
+Da un termostato a un robot,
+
+2
+00:00:02.140 --> 00:00:05.580
+ogni sistema automatico funziona
+su un principio fondamentale.
+
+3
+00:00:06.500 --> 00:00:08.360
+È il loop di controllo a feedback:
+
+4
+00:00:08.380 --> 00:00:11.380
+il sistema misura continuamente
+lo stato attuale e lo confronta
+
+5
+00:00:11.400 --> 00:00:12.810
+con lo stato desiderato.
+
+6
+00:00:13.610 --> 00:00:15.700
+La differenza tra i due è l'errore.
+
+7
+00:00:16.230 --> 00:00:18.460
+E il sistema corregge di conseguenza.
+
+8
+00:00:18.853 --> 00:00:22.263
+Il metodo più usato per realizzare
+questo loop è il controllo PID:
+
+9
+00:00:22.283 --> 00:00:24.953
+Proporzionale, Integrale, Derivativo.
+
+10
+00:00:25.703 --> 00:00:30.013
+P, proporzionale: la correzione è
+proporzionale all'errore attuale.
+
+11
+00:00:30.543 --> 00:00:33.483
+Cinque gradi sotto il target:
+correzione grande.
+
+12
+00:00:34.013 --> 00:00:36.743
+Zero virgola cinque: correzione piccola.
+
+13
+00:00:37.583 --> 00:00:41.513
+I, integrale: tiene conto degli
+errori accumulati nel tempo.
+
+14
+00:00:42.043 --> 00:00:46.273
+Così compensa una deriva costante,
+che la sola P non correggeva del tutto.
+
+15
+00:00:46.691 --> 00:00:48.101
+D, derivativo:
+
+16
+00:00:48.121 --> 00:00:50.251
+anticipa il comportamento futuro.
+
+17
+00:00:50.781 --> 00:00:53.491
+Se la temperatura sale rapidamente
+verso il target,
+
+18
+00:00:53.511 --> 00:00:55.741
+riduce la correzione prima di arrivarci.
+
+19
+00:00:56.121 --> 00:00:59.241
+Così evita di superare il valore
+desiderato per inerzia.
+
+20
+00:01:00.451 --> 00:01:04.841
+Il termostato di casa usa una versione
+semplificata del loop: accende o spegne.
+
+21
+00:01:05.361 --> 00:01:07.981
+Il cruise control dell'auto
+usa un PID pieno.
+
+22
+00:01:09.061 --> 00:01:12.521
+I bracci robotici industriali usano PID
+con un ritardo di risposta
+
+23
+00:01:12.541 --> 00:01:14.121
+inferiore al millisecondo.
+
+24
+00:01:14.891 --> 00:01:18.031
+La stabilizzazione di un drone
+usa sei PID simultanei:
+
+25
+00:01:18.051 --> 00:01:20.631
+tre assi di rotazione
+e tre di traslazione.
+
+26
+00:01:21.811 --> 00:01:24.471
+Misurare, confrontare, correggere:
+
+27
+00:01:24.491 --> 00:01:26.901
+il principio di ogni sistema automatico.

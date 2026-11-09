@@ -1,0 +1,112 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:04.810
+Ogni computer connesso a internet ha
+un indirizzo IP: un numero come questo.
+
+2
+00:00:05.340 --> 00:00:06.800
+Ma tu digiti un nome.
+
+3
+00:00:07.340 --> 00:00:08.380
+Chi lo traduce?
+
+4
+00:00:09.390 --> 00:00:12.420
+Ci pensa il DNS, il Domain Name System.
+
+5
+00:00:12.940 --> 00:00:15.840
+Converte i nomi di dominio,
+leggibili dagli umani,
+
+6
+00:00:15.880 --> 00:00:18.640
+negli indirizzi IP numerici
+usati dai computer.
+
+7
+00:00:19.063 --> 00:00:21.873
+Funziona come
+un elenco telefonico distribuito.
+
+8
+00:00:23.863 --> 00:00:28.813
+Il browser chiede il nome a un server DNS,
+il resolver, di solito del provider.
+
+9
+00:00:29.343 --> 00:00:32.213
+Se ha la risposta nella sua cache,
+risponde subito.
+
+10
+00:00:32.903 --> 00:00:35.153
+Altrimenti la cerca in una gerarchia.
+
+11
+00:00:35.663 --> 00:00:40.663
+In cima ci sono i root server: 13 sistemi,
+gestiti da varie organizzazioni.
+
+12
+00:00:41.308 --> 00:00:46.048
+Poi i server dei domini di primo livello,
+come .it, .com e .org.
+
+13
+00:00:47.823 --> 00:00:49.693
+Infine i server autoritativi,
+
+14
+00:00:49.723 --> 00:00:52.153
+gestiti da chi possiede
+il dominio specifico.
+
+15
+00:00:53.073 --> 00:00:55.643
+Il resolver chiede al root,
+che lo rimanda a .it.
+
+16
+00:00:55.663 --> 00:00:59.603
+.it lo rimanda al server
+di esempio.it, che conosce l'indirizzo.
+
+17
+00:01:00.123 --> 00:01:01.933
+La risposta torna al browser.
+
+18
+00:01:03.509 --> 00:01:05.429
+Un attacco è il DNS spoofing:
+
+19
+00:01:05.489 --> 00:01:09.159
+la risposta legittima viene
+sostituita con un indirizzo IP falso.
+
+20
+00:01:10.905 --> 00:01:14.085
+Così l'utente viene reindirizzato
+su un sito fraudolento,
+
+21
+00:01:14.105 --> 00:01:16.845
+senza che il browser mostri
+nessun errore visibile.
+
+22
+00:01:17.775 --> 00:01:19.585
+La difesa è DNSSEC:
+
+23
+00:01:19.605 --> 00:01:23.565
+una firma digitale che verifica
+l'autenticità delle risposte DNS.
+
+24
+00:01:24.363 --> 00:01:26.803
+Il DNS: dal nome al numero.

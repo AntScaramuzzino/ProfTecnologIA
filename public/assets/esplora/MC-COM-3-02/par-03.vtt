@@ -1,0 +1,122 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:04.090
+Come si può rappresentare la stessa
+informazione usando meno bit?
+
+2
+00:00:04.610 --> 00:00:06.160
+Le strategie sono due.
+
+3
+00:00:06.567 --> 00:00:08.857
+La prima è lossless, senza perdita:
+
+4
+00:00:08.877 --> 00:00:12.097
+dal file compresso si ricostruisce
+esattamente l'originale.
+
+5
+00:00:12.554 --> 00:00:15.724
+Cerca le ridondanze,
+cioè le sequenze che si ripetono,
+
+6
+00:00:15.754 --> 00:00:18.494
+e le sostituisce
+con rappresentazioni più corte.
+
+7
+00:00:19.654 --> 00:00:23.304
+Esempi: PNG per loghi e screenshot,
+FLAC per l'audio,
+
+8
+00:00:23.324 --> 00:00:26.594
+con file grandi circa la metà,
+ZIP per qualsiasi file.
+
+9
+00:00:27.013 --> 00:00:29.273
+La seconda è lossy, con perdita:
+
+10
+00:00:29.293 --> 00:00:31.993
+scarta ciò che occhio
+e orecchio percepiscono meno.
+
+11
+00:00:32.523 --> 00:00:36.363
+A compressione moderata,
+la differenza è difficile da percepire.
+
+12
+00:00:36.769 --> 00:00:41.929
+Nel JPEG, a qualità da 80 a 90 su 100,
+la differenza è quasi impercettibile;
+
+13
+00:00:41.949 --> 00:00:44.289
+da 30 a 40 compaiono gli artefatti:
+
+14
+00:00:44.309 --> 00:00:47.299
+blocchi quadrati,
+soprattutto lungo i bordi nitidi.
+
+15
+00:00:47.683 --> 00:00:50.603
+L'MP3 elimina le frequenze meno udibili:
+
+16
+00:00:50.653 --> 00:00:53.683
+quelle molto alte e i suoni
+mascherati da suoni più forti.
+
+17
+00:00:54.075 --> 00:00:57.785
+Nel video, da un frame al successivo
+cambiano solo piccole aree:
+
+18
+00:00:57.805 --> 00:01:01.515
+invece di ogni frame completo,
+si memorizzano solo le differenze.
+
+19
+00:01:02.735 --> 00:01:04.355
+Perché non sempre lossless?
+
+20
+00:01:04.875 --> 00:01:06.135
+Per le dimensioni.
+
+21
+00:01:06.665 --> 00:01:09.945
+5.000 foto in JPEG
+occupano circa 15 gigabyte;
+
+22
+00:01:09.965 --> 00:01:14.645
+in RAW, cioè i dati grezzi
+della fotocamera, da 75 a 150.
+
+23
+00:01:15.039 --> 00:01:18.639
+Online, la compressione lossy moderata
+è il giusto compromesso.
+
+24
+00:01:19.159 --> 00:01:21.599
+Per l'archivio professionale
+o il fotoritocco,
+
+25
+00:01:21.619 --> 00:01:23.159
+si preferisce il lossless.
+
+26
+00:01:24.226 --> 00:01:26.566
+Lossless o lossy: dipende dall'uso.
