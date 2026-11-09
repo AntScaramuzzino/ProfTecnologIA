@@ -22,6 +22,74 @@ Gli stessi principi che stai per imparare — formalizzati da Leon Battista Albe
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un binario che si allontana sembra stringersi fino a chiudersi in un punto. Non è vero, ma è così che lo vedi. Il disegno che riproduce il modo in cui l'occhio vede si chiama **prospettiva**. È lo strumento con cui chi progetta fa immaginare agli altri quello che ancora non esiste.
+
+**Che cosa cambia rispetto all'assonometria**
+
+Nell'assonometria le linee parallele restano parallele e le misure si possono leggere. Nella prospettiva no: gli oggetti lontani diventano più piccoli e le linee parallele si avvicinano. Le misure si deformano apposta, in cambio di un'immagine che sembra vera.
+
+Due elementi comandano tutto:
+
+- la **linea d'orizzonte**, una linea orizzontale all'altezza degli occhi di chi guarda;
+- il **punto di fuga**, il punto sull'orizzonte verso cui corrono le linee che si allontanano.
+
+> ✋ **Tocca a te.** Guarda il corridoio della scuola dalla porta dell'aula, oppure una foto di una strada dritta. Dove sembrano incontrarsi le linee del pavimento e del soffitto? Segna quel punto con il dito: hai trovato il punto di fuga. A che altezza si trova rispetto ai tuoi occhi?
+
+**Un punto di fuga: prospettiva centrale**
+
+Si usa quando guardi l'oggetto di fronte, come una stanza vista dalla porta.
+
+1. Traccia la linea d'orizzonte.
+2. Segna il punto di fuga.
+3. Disegna la faccia davanti, che resta un rettangolo vero.
+4. Da ogni angolo tira una linea verso il punto di fuga.
+5. Chiudi il fondo con un rettangolo più piccolo.
+
+**Due punti di fuga: prospettiva accidentale**
+
+Si usa quando guardi l'oggetto da uno spigolo, come un palazzo visto dall'angolo della strada. I punti di fuga sono due, uno a destra e uno a sinistra, tutti e due sull'orizzonte. L'unica misura vera è lo spigolo verticale più vicino a te. Da lì partono le linee verso i due punti.
+
+**Quale disegno per quale scopo**
+
+Per costruire servono misure esatte: proiezioni ortogonali. Per spiegare come è fatto un oggetto: assonometria. Per far vedere come apparirà, e convincere qualcuno: prospettiva.
+
+**Dal problema all'oggetto**
+
+Il **design** è il lavoro di decidere forma, materiali e uso di un oggetto prima che venga prodotto. Non parte da un'ispirazione: parte da un problema, e procede per tappe.
+
+1. Capire: chi userà l'oggetto, dove, per fare che cosa.
+2. Tante idee, in schizzi veloci. Conta la quantità.
+3. Scegliere le migliori e disegnarle meglio.
+4. Costruire un **prototipo**: un modello di prova, anche di cartone.
+5. Farlo provare a chi lo userà davvero, e guardare che cosa succede.
+6. Correggere e riprovare.
+
+Si torna indietro spesso: è normale. Questo modo di lavorare, che parte dalle persone e procede per tentativi, si chiama design thinking.
+
+**La forma che segue il corpo**
+
+L'**ergonomia** studia come adattare gli oggetti al corpo e alla mente di chi li usa. Il manico di un coltello che sta bene in mano, un gradino dell'altezza giusta, un pulsante che si trova senza guardare. La regola è una: l'oggetto si adatta alla persona, e non il contrario.
+
+**Forma e funzione**
+
+Un secolo fa una scuola tedesca, il Bauhaus, insegnò che un oggetto di uso quotidiano può essere bello, funzionale e producibile in serie tutto insieme. Da lì nasce il design moderno. L'Italia ne è stata protagonista: Giorgetto Giugiaro ha disegnato automobili guidate da milioni di persone, Massimo Vignelli la mappa e i cartelli della metropolitana di New York.
+
+In un buon progetto ogni scelta di forma ha una ragione. Il primo smartphone con tutto schermo aveva pochissimi tasti perché ogni tasto in meno era spazio in più per lo schermo, e una cosa in meno che poteva rompersi.
+
+> ✋ **Tocca a te.** Disegna una scatola in prospettiva centrale: orizzonte, punto di fuga, faccia davanti, linee di fuga, fondo. Poi ridisegnala con il punto di fuga più in alto. Che cosa cambia? Da dove sembra che tu la stia guardando?
+
+> 📍 **Qui da noi.** Scegli un oggetto o un luogo pubblico del tuo paese che è scomodo da usare: una panchina, una fermata, una fontanella, un cestino. Che cosa non funziona, e per chi? Disegna in prospettiva come lo rifaresti.
+
+**In tre righe**
+
+- La prospettiva disegna le cose come le vede l'occhio: linea d'orizzonte e punti di fuga.
+- Un punto di fuga per gli oggetti visti di fronte, due per quelli visti di spigolo.
+- Progettare vuol dire partire da un problema, fare prototipi e provarli con chi li userà.
+
+---
+
 ### Dal segno al volume: la sfida della rappresentazione tridimensionale
 
 Il problema è antico quanto il disegno stesso: come rappresentare su una superficie piatta — un foglio, uno schermo — qualcosa che esiste in tre dimensioni? Non esiste una soluzione unica. Esistono sistemi diversi, ognuno con una logica precisa e con vantaggi specifici per scopi diversi. In questa MC li studierai tutti — e imparerai a scegliere il sistema giusto per ogni situazione.
@@ -54,7 +122,7 @@ Come si costruisce passo per passo:
 5. Scegli la profondità che ritieni corretta e traccia un rettangolo parallelo al primo per chiudere l'oggetto.
 6. Elimina le linee di fuga eccedenti (parti invisibili).
 
-**Prospettiva accidentale (a due punti di fuga):** usata per oggetti visti da un angolo. Le rette orizzontali parallelee che vanno verso destra convergono verso il **primo punto di fuga** (PF1), quelle che vanno verso sinistra convergono verso il **secondo punto di fuga** (PF2). Solo le rette verticali rimangono verticali. Questo sistema dà una rappresentazione più dinamica e realistica di oggetti visti da un angolo.
+**Prospettiva accidentale (a due punti di fuga):** usata per oggetti visti da un angolo. Le rette orizzontali parallele che vanno verso destra convergono verso il **primo punto di fuga** (PF1), quelle che vanno verso sinistra convergono verso il **secondo punto di fuga** (PF2). Solo le rette verticali rimangono verticali. Questo sistema dà una rappresentazione più dinamica e realistica di oggetti visti da un angolo.
 
 Come si costruisce:
 1. Traccia la linea d'orizzonte.
@@ -77,7 +145,7 @@ Come si costruisce:
 | Difficoltà di costruzione | Media | Media-alta |
 | Modifiche delle misure | Immediato | Richiede ridisegno |
 
-**Regola pratica:** se devi comunicare misure esatte a chi deve costruire qualcosa, usa l'assonometria (o meglio ancora le proiezioni ortogonali). Se devi comunicare l'aspetto di un oggetto a chi deve decidere se compravelo o approvarl0, usa la prospettiva.
+**Regola pratica:** se devi comunicare misure esatte a chi deve costruire qualcosa, usa l'assonometria (o meglio ancora le proiezioni ortogonali). Se devi comunicare l'aspetto di un oggetto a chi deve decidere se comprarlo o approvarlo, usa la prospettiva.
 
 ---
 

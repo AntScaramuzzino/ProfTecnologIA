@@ -21,6 +21,63 @@ Come è possibile? E cosa succederebbe se qualcuno tagliasse il cavo sbagliato?
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un messaggio parte dal tuo telefono e in una frazione di secondo è dall'altra parte del mondo. Non viaggia in una nuvola: corre dentro cavi, antenne e macchine sparse su tutto il pianeta.
+
+**Analogico e digitale**
+
+Un **segnale** è una grandezza che cambia nel tempo per trasportare un'informazione. Può essere di due tipi.
+
+- Il **segnale analogico** cambia in modo continuo, come la voce in un vecchio telefono. Ogni disturbo lungo la strada lo rovina un po'.
+- Il **segnale digitale** usa solo due valori, 0 e 1. Voce, foto e video vengono trasformati in lunghissime file di 0 e 1.
+
+Il digitale ha un vantaggio enorme: si può copiare, comprimere e correggere senza che peggiori.
+
+**Le due strade: cavo e radio**
+
+Dentro un cavo di rame il segnale è corrente elettrica, e si indebolisce in fretta. Nella **fibra ottica** è luce: lampi velocissimi che corrono dentro un filo di vetro più sottile di un capello. La fibra porta molti più dati, più lontano.
+
+Quasi tutto il traffico tra i continenti passa in cavi di fibra posati sul fondo degli oceani. Internet, fisicamente, è soprattutto questo.
+
+Senza cavo si usano le **onde radio**, che viaggiano nell'aria. Il Wi-Fi di casa e la rete del telefono funzionano così. Ogni nuova generazione di rete mobile, dal 2G al 5G, è più veloce e risponde con meno ritardo.
+
+> ✋ **Tocca a te.** Quando guardi un video sul telefono con il Wi-Fi di casa, il segnale fa un pezzo di strada via radio e un pezzo via cavo. Dove finisce la radio e dove comincia il cavo? Disegna il percorso, dal telefono alla strada.
+
+**La lingua comune: i pacchetti**
+
+Internet non è una rete sola: è una rete di reti. Per capirsi usano tutte le stesse regole, cioè lo stesso **protocollo**. Il più importante si chiama TCP/IP.
+
+Funziona così. Il tuo messaggio non viaggia intero: viene spezzato in tanti **pacchetti**. Ogni pacchetto porta l'indirizzo di chi spedisce, quello di chi riceve e un numero d'ordine. I pacchetti possono prendere strade diverse e arrivare in disordine: a destinazione vengono rimessi in fila. Se uno si perde, viene richiesto di nuovo.
+
+L'indirizzo di ogni dispositivo in rete è l'**indirizzo IP**, una serie di numeri.
+
+**Chi dirige il traffico**
+
+Il **router** è l'apparecchio che collega una rete a un'altra e decide da che parte mandare ogni pacchetto. Quello di casa collega i tuoi dispositivi alla rete dell'operatore.
+
+Gli indirizzi IP sono numeri, e nessuno li ricorda. Per questo esiste il **DNS**, la rubrica di internet: tu scrivi un nome, come quello di un sito, e il DNS lo traduce nell'indirizzo IP giusto.
+
+**Proteggere la rete**
+
+Il **firewall** è un filtro: controlla il traffico che entra e che esce da una rete e blocca quello non permesso. Anche la rete della scuola ne ha uno.
+
+**Un'infrastruttura fragile**
+
+Nel 2022 l'eruzione di un vulcano ha spezzato il cavo che collegava le isole Tonga al resto del mondo: per settimane sono rimaste quasi senza internet. I cavi sottomarini sono pochi, sono poco protetti, e sempre più spesso appartengono a pochissime grandi aziende. Chi controlla i cavi controlla le comunicazioni.
+
+> ✋ **Tocca a te.** Gioco dei pacchetti. Scrivi una frase di sei parole, una parola per bigliettino, e numera i bigliettini. Falli arrivare a un compagno dall'altra parte dell'aula passandoli a caso per mani diverse. Riesce a ricostruire la frase? A che cosa servono i numeri?
+
+> 📍 **Qui da noi.** Nel tuo paese è arrivata la fibra ottica? Il segnale del telefono prende bene dappertutto o ci sono zone scoperte? Chiedi in famiglia e segna su una mappa i punti dove "non prende": insieme disegneremo la carta della connessione.
+
+**In tre righe**
+
+- I dati viaggiano come segnali digitali, in fibra ottica o via onde radio.
+- Internet spezza ogni messaggio in pacchetti, che i router instradano verso un indirizzo IP.
+- È un'infrastruttura fisica: cavi sul fondo del mare, pochi e delicati.
+
+---
+
 ### L'infrastruttura invisibile: come funziona la comunicazione a distanza
 
 Ogni volta che mandi un messaggio, fai una videochiamata, guardi un video in streaming o cerchi qualcosa su Google, stai usando un'infrastruttura fisica che copre il pianeta intero. Non è magia — è ingegneria. E per capirla, devi partire dall'inizio: da come nasce un segnale.

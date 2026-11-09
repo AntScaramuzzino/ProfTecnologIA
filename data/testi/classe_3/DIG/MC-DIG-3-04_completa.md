@@ -25,6 +25,65 @@ Il web non è rotto per queste persone. È stato progettato senza di loro.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un edificio con soli gradini esclude chi usa una sedia a rotelle. Un sito costruito male fa la stessa cosa, anche se non si vede. Rendere il digitale usabile da tutti si chiama **accessibilità**.
+
+**L'idea**
+
+Un sito che usa solo il rosso e il verde per dire "sbagliato" e "giusto" è illeggibile per chi non distingue quei colori. Un video senza sottotitoli taglia fuori chi non sente. Un menu che funziona solo con il mouse blocca chi usa solo la tastiera.
+
+Il problema non è la persona. È il progetto.
+
+> ✋ **Tocca a te.** Sul computer dell'aula o sulla LIM, apriamo un sito e proviamo a usarlo senza toccare il mouse: solo il tasto Tab per spostarsi e Invio per scegliere. Si capisce dove ci si trova? Si arriva al menu? Segna quanti tentativi servono.
+
+**Quattro regole**
+
+Le regole internazionali dell'accessibilità si riassumono in quattro parole. Un contenuto deve essere:
+
+1. **Percepibile**: tutti devono poterlo cogliere, con la vista, l'udito o il tatto. Ogni immagine importante ha un **testo alternativo**, una breve descrizione che viene letta ad alta voce a chi non vede. I video hanno i sottotitoli. Il testo si stacca bene dallo sfondo.
+2. **Utilizzabile**: tutto quello che si fa con il mouse si deve poter fare anche con la tastiera.
+3. **Comprensibile**: parole semplici, frasi brevi, messaggi di errore che spiegano che cosa correggere.
+4. **Robusto**: deve funzionare anche con gli strumenti che aiutano le persone, e con dispositivi vecchi.
+
+**Gli strumenti che aiutano**
+
+Si chiamano **tecnologie assistive**. La più importante è lo **screen reader**, un programma che legge ad alta voce quello che c'è sullo schermo. È già dentro ogni telefono e ogni computer. Ci sono poi gli ingranditori, i comandi vocali, i display che trasformano il testo in Braille.
+
+Uno screen reader legge il sito seguendone la struttura: titoli, menu, pulsanti. Se la struttura è fatta male, per chi ascolta la pagina è un labirinto.
+
+**Serve a tutti**
+
+Lo scivolo del marciapiede è nato per le sedie a rotelle. Lo usano anche i passeggini, le valigie e le biciclette. Progettare pensando fin dall'inizio a chi ha più difficoltà migliora le cose per tutti: è la **progettazione universale**.
+
+Nel digitale succede lo stesso. I sottotitoli, pensati per le persone sorde, li usa chiunque guardi un video in autobus senza audio. Il buon contrasto serve a chi legge lo schermo sotto il sole. Il linguaggio semplice aiuta chi ha la dislessia, chi sta imparando l'italiano e chi è solo stanco.
+
+E chiunque può trovarsi in difficoltà: un braccio ingessato, gli occhiali dimenticati, l'età che avanza.
+
+**È un diritto**
+
+Non è una gentilezza. In Italia una legge del 2004 obbliga gli enti pubblici, comprese le scuole, ad avere siti accessibili. Dal 2025 una norma europea estende l'obbligo a molti servizi privati: banche, negozi online, trasporti. Alla base c'è una convenzione dell'ONU: l'accesso all'informazione è un diritto di tutte le persone.
+
+**Controllare un sito**
+
+Esistono strumenti gratuiti che analizzano una pagina e segnalano i problemi: immagini senza descrizione, contrasto insufficiente, titoli in disordine. Ma la prova migliore resta quella dell'inizio: usarlo senza mouse, o ascoltarlo con uno screen reader.
+
+**Dall'inizio, non dopo**
+
+Aggiungere una rampa a un edificio finito costa di più e riesce peggio che prevederla nel progetto. Per un sito o un'app vale la stessa cosa.
+
+> ✋ **Tocca a te.** Scegli una foto appesa in aula, o un'immagine del libro. Scrivi il suo testo alternativo: una o due frasi che la descrivano a chi non può vederla. Leggila a un compagno a occhi chiusi: riesce a immaginarla? Che cosa mancava?
+
+> 📍 **Qui da noi.** Fai la prova della tastiera sul sito della tua scuola o del tuo Comune, a casa. Si riesce ad arrivare agli avvisi o agli orari senza mouse? Le immagini hanno una descrizione? Scrivi due cose che funzionano e due da migliorare: le raccoglieremo per mandarle a chi gestisce il sito.
+
+**In tre righe**
+
+- L'accessibilità rende siti e app usabili da tutti, anche da chi non vede, non sente o non usa il mouse.
+- Quattro regole: percepibile, utilizzabile, comprensibile, robusto.
+- Quello che si progetta per chi ha più difficoltà funziona meglio per tutti, ed è un diritto.
+
+---
+
 ### Accessibilità digitale: cos'è e perché esiste
 
 Quando si parla di accessibilità fisica si pensa ai gradini di un palazzo senza ascensore, alle strade senza rampe per le carrozzine, alle stazioni senza annunci sonori. La logica è semplice: uno spazio inaccessibile esclude chi ha certe caratteristiche fisiche. Non è una scelta dell'escluso — è un difetto del progetto.

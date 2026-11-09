@@ -22,6 +22,67 @@ Come è possibile? E cosa ci dice questo sui sistemi automatici che ti circondan
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Una macchina che lavora da sola non è per forza "intelligente". Dietro una lavatrice, un cancello automatico o una fabbrica di automobili c'è la stessa idea: misurare, decidere, agire. Si chiama **automazione**.
+
+**Tre pezzi, sempre gli stessi**
+
+Ogni sistema automatico è fatto di tre parti.
+
+- I **sensori** misurano qualcosa: temperatura, luce, movimento, distanza.
+- La logica di controllo, cioè un programma, decide che cosa fare.
+- Gli **attuatori** agiscono: un motore, una valvola, una lampada, una serratura.
+
+Il termostato di casa li ha tutti e tre. Misura la temperatura, la confronta con quella che hai scelto, accende o spegne la caldaia. Poi misura di nuovo. Questo giro continuo, in cui il risultato dell'azione torna indietro come nuova misura, si chiama **feedback**.
+
+> ✋ **Tocca a te.** Scegli un oggetto automatico che conosci: la porta scorrevole del supermercato, la lavatrice, il lampione che si accende al buio. Qual è il sensore? Qual è l'attuatore? Qual è la regola che li collega? Scrivila con SE… ALLORA.
+
+**Rigida o flessibile**
+
+Una macchina che riempie bottiglie fa una cosa sola, velocissima, per anni: è automazione rigida. Un braccio **robot** si può riprogrammare: oggi avvita, domani salda. È automazione flessibile, più lenta ma adattabile.
+
+I robot industriali sono forti e precisissimi, ma pericolosi: lavorano dentro gabbie. I **cobot**, robot collaborativi, sono fatti per lavorare accanto alle persone: hanno sensori che li fermano appena toccano qualcosa. La macchina mette forza e precisione, la persona giudizio e manualità.
+
+**Fabbricare aggiungendo**
+
+La **stampa 3D** costruisce un oggetto strato dopo strato, partendo da un file. Non serve uno stampo, quindi conviene anche per un pezzo solo. E permette forme impossibili con altri metodi, come una cavità chiusa dentro un pezzo pieno. Si usa per prototipi, ricambi, protesi su misura.
+
+**La fabbrica connessa**
+
+**Industria 4.0** è il nome dato alla fabbrica in cui le macchine sono collegate in rete e si scambiano dati. Quattro ingredienti:
+
+- macchine e oggetti connessi, che trasmettono in continuazione come stanno;
+- l'analisi di questa enorme quantità di dati, per accorgersi di un guasto prima che avvenga;
+- l'intelligenza artificiale, per esempio telecamere che controllano i pezzi difettosi;
+- il cloud, per seguire più stabilimenti insieme.
+
+Un'idea potente è il **gemello digitale**: una copia virtuale di una macchina, aggiornata con i dati di quella vera. Ci si provano le modifiche prima di farle davvero.
+
+**La casa automatica**
+
+La **domotica** porta la stessa logica in casa: luci che si accendono quando entri, tapparelle che si abbassano con il sole, riscaldamento che si spegne se apri la finestra, allarmi per fumo e gas. Sensori, regole, attuatori.
+
+Può fare molto per chi ha bisogno di aiuto: una persona anziana che vive sola, o chi ha difficoltà a muoversi.
+
+**Automazione non è intelligenza artificiale**
+
+L'automazione segue regole scritte da qualcuno: "se la temperatura supera 80 gradi, apri la valvola". Non impara niente, ed è prevedibile. L'intelligenza artificiale invece ricava le regole da moltissimi esempi. Quasi tutto quello che vedi nelle fabbriche, compresi i robot che spostano gli scaffali nei grandi magazzini, è automazione.
+
+E non tutto conviene automatizzarlo. Nelle fabbriche di auto di lusso italiane i robot assemblano la struttura, ma gli interni in pelle sono cuciti a mano.
+
+> ✋ **Tocca a te.** Progetta su carta un sistema che spegne da solo le luci dell'aula quando non c'è nessuno. Di quale sensore hai bisogno? Quale regola scrivi? Che cosa succede se tutti restano immobili durante una verifica?
+
+> 📍 **Qui da noi.** Un nonno o un vicino anziano vive da solo. Quali tre cose automatiche renderebbero la sua casa più sicura o più comoda? Chiediglielo davvero, se puoi: quello che immagini tu e quello che vuole lui coincidono?
+
+**In tre righe**
+
+- Automazione vuol dire sensori che misurano, un programma che decide, attuatori che agiscono.
+- Robot, stampa 3D e macchine connesse sono la base dell'Industria 4.0; la domotica è la stessa cosa in casa.
+- Una macchina automatica segue regole: non è intelligenza artificiale.
+
+---
+
 ### Dalle macchine a vapore ai sistemi intelligenti: storia dell'automazione
 
 L'automazione non è nata con i computer. Nasce nel 1764 in un mulino tessile del Lancashire, in Inghilterra, quando James Hargreaves inventa la "Spinning Jenny": una macchina che sostituisce il lavoro manuale di otto filatrici con il lavoro di una sola persona. In quel momento inizia qualcosa che non si fermerà più.

@@ -27,6 +27,74 @@ Nelle prossime pagine impari perché è così difficile, e cosa l'umanità sta f
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Di notte il vento soffia e la città dorme. A mezzogiorno il sole picchia e gli uffici non sanno che farsene di tutta quella corrente. Alle sette di sera tutti accendono tutto, e il sole è già tramontato. Il nodo dell'energia pulita è il tempo.
+
+**La rete non ha magazzino**
+
+Sole e vento sono **intermittenti**: producono quando ci sono, non quando servono. E una rete elettrica ha una regola ferrea: in ogni istante la corrente prodotta deve essere uguale a quella consumata. Se sbilanci troppo, la rete salta.
+
+Una volta bastava alzare o abbassare la fiamma delle centrali. Con sole e vento non si può. Serve un magazzino: l'**accumulo**, cioè conservare energia quando abbonda per usarla quando manca.
+
+> ✋ **Tocca a te.** Disegna due curve sullo stesso grafico, dalle 0 alle 24: quanta corrente produce un tetto fotovoltaico e quanta ne consuma una famiglia. Dove la produzione supera il consumo? Dove succede il contrario? Colora le due zone.
+
+**Le batterie al litio**
+
+La **batteria** del telefono e quella di un'auto elettrica funzionano allo stesso modo. Dentro ci sono due parti separate da un liquido. Quando la batteria si scarica, minuscole particelle di litio passano da una parte all'altra e gli elettroni corrono nel circuito esterno: è la corrente che usi. Quando la carichi, tutto torna indietro.
+
+Si usa il litio perché è il metallo più leggero: tanta energia in poco peso.
+
+L'energia contenuta si misura in wattora o in chilowattora. Una batteria di telefono contiene circa 15 wattora. Quella di un'auto elettrica alcune migliaia di volte di più.
+
+Il prezzo delle batterie è crollato: in trent'anni è sceso di oltre trenta volte. È questo che ha reso possibili le auto elettriche.
+
+I nodi: il litio si estrae soprattutto in poche zone del mondo, usando molta acqua. E le batterie esauste vanno riciclate, perché contengono metalli preziosi.
+
+**Il lago in salita**
+
+Il sistema di accumulo più usato al mondo non è una batteria: è l'acqua. Nel **pompaggio** ci sono due bacini a quote diverse. Quando la corrente avanza, le pompe spingono l'acqua in alto. Quando serve, l'acqua riscende e fa girare le turbine. Si recuperano circa tre quarti dell'energia spesa.
+
+Il limite: servono montagne e due laghi vicini.
+
+**L'idrogeno**
+
+Con la corrente si può separare l'acqua in ossigeno e **idrogeno**. Se la corrente viene da fonti rinnovabili si parla di idrogeno verde. L'idrogeno si conserva in serbatoi, anche per mesi, e poi si ritrasforma in corrente.
+
+È l'unica strada per conservare l'energia dell'estate fino all'inverno. Ma è uno scambio costoso: di 100 unità di energia iniziali ne tornano indietro circa 30.
+
+**Ognuno ha il suo compito**
+
+| Sistema | Per quanto tempo conserva | Quanto restituisce |
+|---------|---------------------------|--------------------|
+| Batterie | ore, giorni | quasi tutto |
+| Pompaggio | ore, giorni | circa tre quarti |
+| Idrogeno | settimane, mesi | circa un terzo |
+
+Non c'è un vincitore: servono tutti.
+
+**La rete intelligente**
+
+Una **smart grid** è una rete elettrica che misura e decide in tempo reale. La corrente non va più in una sola direzione: anche le case producono e immettono in rete.
+
+- I contatori elettronici dicono alla rete, ora per ora, chi consuma e chi produce.
+- I consumi si spostano: la lavatrice parte quando c'è abbondanza di corrente.
+- Le auto elettriche, ferme per la maggior parte del tempo, possono fare da batteria per la rete e restituire corrente la sera.
+
+Quando la corrente è davvero troppa, sul mercato il suo prezzo può scendere sotto zero: chi produce paga perché qualcuno la consumi. È il segnale che manca l'accumulo.
+
+> ✋ **Tocca a te.** Una batteria di casa contiene 10 chilowattora. La sera una famiglia accende forno (2 chilowatt), luci e televisore (0,5 chilowatt in tutto). Per quante ore la batteria può alimentare tutto insieme?
+
+> 📍 **Qui da noi.** D'estate, nelle ore più calde, capita che salti la corrente nel tuo paese? Quando succede, e che cosa era acceso? Chiedi a casa. Poi pensa: quali consumi della tua famiglia si potrebbero spostare in un'altra ora della giornata?
+
+**In tre righe**
+
+- La rete deve avere in ogni istante tanta corrente quanta se ne consuma, ma sole e vento non si comandano.
+- Batterie, pompaggio e idrogeno conservano l'energia per tempi diversi e con perdite diverse.
+- Una rete intelligente sposta i consumi e usa anche case e auto come accumulo.
+
+---
+
 ### Il problema dell'intermittenza: la risorsa che non si controlla
 
 Le fonti rinnovabili principali — solare e eolico — hanno una caratteristica che le distingue fondamentalmente dal carbone, dal gas o dal nucleare: **non si accendono e spengono su richiesta**. Producono energia quando il sole splende e il vento soffia — non necessariamente quando la gente ne ha bisogno.
