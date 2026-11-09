@@ -1,0 +1,115 @@
+WEBVTT
+
+1
+00:00:00.500 --> 00:00:02.870
+Il file STL è solo il primo passo:
+
+2
+00:00:02.890 --> 00:00:06.160
+prima di stampare,
+passa da un software chiamato slicer.
+
+3
+00:00:07.280 --> 00:00:09.100
+Slicer vuol dire affettatore:
+
+4
+00:00:09.120 --> 00:00:12.400
+taglia il modello in centinaia
+o migliaia di strati sottili.
+
+5
+00:00:12.640 --> 00:00:15.920
+Per ogni strato genera le istruzioni
+di movimento della testina:
+
+6
+00:00:15.940 --> 00:00:17.320
+il file G-code.
+
+7
+00:00:17.476 --> 00:00:20.236
+L'altezza del layer
+è lo spessore di ogni strato.
+
+8
+00:00:20.706 --> 00:00:24.436
+Con 0,1 mm è molto liscio,
+ma serve molto più tempo.
+
+9
+00:00:24.642 --> 00:00:28.192
+Con 0,3 mm è più veloce,
+ma si vedono le rigature.
+
+10
+00:00:28.662 --> 00:00:32.412
+Per oggetti funzionali,
+0,2 mm è spesso il compromesso.
+
+11
+00:00:32.682 --> 00:00:35.742
+L'infill è la percentuale
+di volume interno riempita.
+
+12
+00:00:36.202 --> 00:00:40.832
+Al 100% l'oggetto è solido,
+ma pesante, e usa molto materiale.
+
+13
+00:00:41.050 --> 00:00:44.800
+Al 20% è molto più leggero,
+con una buona resistenza:
+
+14
+00:00:44.820 --> 00:00:46.950
+dentro c'è una griglia o un nido d'ape.
+
+15
+00:00:48.030 --> 00:00:52.670
+Per un porta-matite,
+senza carichi pesanti, basta il 15-20%.
+
+16
+00:00:52.874 --> 00:00:56.054
+Le parti che sporgono
+senza niente sotto si chiamano overhang:
+
+17
+00:00:56.074 --> 00:00:58.464
+il filamento
+non si può depositare in aria.
+
+18
+00:00:58.654 --> 00:01:02.634
+Lo slicer genera supporti temporanei,
+da togliere dopo la stampa.
+
+19
+00:01:03.104 --> 00:01:05.444
+Ma un buon progettista
+riduce gli overhang.
+
+20
+00:01:06.594 --> 00:01:08.804
+A scuola si usa soprattutto il PLA:
+
+21
+00:01:08.824 --> 00:01:14.244
+è economico, si stampa tra 190 e 220 °C
+e non serve il piano riscaldato.
+
+22
+00:01:14.451 --> 00:01:17.171
+È biodegradabile
+nel compostaggio industriale.
+
+23
+00:01:17.651 --> 00:01:22.231
+Sopra i 60 °C si deforma, ma è più facile
+da gestire di altri filamenti.
+
+24
+00:01:22.584 --> 00:01:25.734
+Strati, riempimento, supporti e materiale.
