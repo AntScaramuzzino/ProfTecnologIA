@@ -48,7 +48,7 @@
         },
         {
           "id": "b",
-          "testo": "La refrigerazione (0-4°C) rallenta i microrganismi; la surgelazione (-18°C o meno) li blocca quasi completamente",
+          "testo": "La refrigerazione rallenta i microrganismi, la surgelazione li blocca quasi del tutto",
           "corretto": true,
           "feedback": "Esatto! La refrigerazione rallenta ma non blocca i microrganismi (il cibo continua a deteriorarsi, solo più lentamente). La surgelazione a -18°C congela l'acqua e blocca quasi completamente l'attività microbica."
         },
@@ -114,7 +114,7 @@
         },
         {
           "id": "b",
-          "testo": "La data di scadenza riguarda la sicurezza microbiologica; il termine minimo riguarda le qualità organolettiche",
+          "testo": "La scadenza riguarda la sicurezza; il termine minimo riguarda la qualità del prodotto",
           "corretto": true,
           "feedback": "Esatto! La 'data di scadenza' (da consumarsi entro) indica il limite di sicurezza. Il 'termine minimo' (da consumarsi preferibilmente entro) indica solo che dopo quella data le qualità potrebbero essere ridotte, non che sia pericoloso."
         },
@@ -180,7 +180,7 @@
         },
         {
           "id": "b",
-          "testo": "Sublimazione del ghiaccio in vapore acqueo sotto vuoto, senza passare allo stato liquido",
+          "testo": "Sublimazione: sotto vuoto il ghiaccio diventa vapore senza passare da liquido",
           "corretto": true,
           "feedback": "Esatto! L'alimento viene prima congelato, poi messo sotto vuoto: il ghiaccio sublima direttamente in vapore. Risultato: massima conservazione di struttura, aroma e valori nutritivi."
         },
@@ -213,7 +213,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché forma cristalli di ghiaccio microscopici che non danneggiano le pareti cellulari dell'alimento",
+          "testo": "Perché forma cristalli minuscoli che non rompono le cellule dell'alimento",
           "corretto": true,
           "feedback": "Esatto! Il surgelamento rapido industriale (a -40°C) forma cristalli di ghiaccio microscopici. Il congelamento lento forma cristalli grandi che rompono le pareti cellulari, peggiorando la texture dopo lo scongelamento."
         },
@@ -246,7 +246,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché ogni ciclo congela-scongela aumenta il numero di microrganismi e peggiora la qualità microbiologica",
+          "testo": "Perché a ogni scongelamento i microrganismi si moltiplicano e la qualità peggiora",
           "corretto": true,
           "feedback": "Esatto! Quando un alimento si scongela, i microrganismi si risvegliano e si moltiplicano. Se viene ricongelato, i microrganismi restano nell'alimento. Ogni ciclo accumula più rischio microbiologico."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Non è stato pastorizzato dopo la fermentazione, quindi i batteri rimangono vivi e attivi",
+          "testo": "Non è pastorizzato dopo la fermentazione: i batteri restano vivi",
           "corretto": true,
           "feedback": "Esatto! Lo yogurt con fermenti vivi non subisce pastorizzazione dopo la fermentazione. I batteri lattici rimangono vivi (100-200 milioni per ml) e possono avere effetti benefici sull'intestino."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché il Clostridium botulinum è anaerobico e cresce meglio in assenza di ossigeno, come nel sottovuoto",
+          "testo": "Perché il batterio del botulino cresce proprio dove manca l'ossigeno",
           "corretto": true,
           "feedback": "Esatto! Il sottovuoto rimuove l'ossigeno che protegge dagli aerobi, ma il Clostridium botulinum è anaerobico: cresce proprio in assenza di ossigeno. Il sottovuoto da solo non protegge dal botulismo."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "Confezionarlo in atmosfera modificata con azoto e CO₂, passando da 3-4 giorni a 8-12 giorni di conservazione",
+          "testo": "Confezionarlo in atmosfera modificata, con azoto e CO₂ al posto dell'aria",
           "corretto": true,
           "feedback": "Esatto! Il MAP (atmosfera modificata) senza conservanti è la soluzione che il testo indica esplicitamente per la carne: da 3-4 giorni di shelf life in imballaggio normale a 8-12 giorni in MAP."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Saper distinguere scadenza da termine minimo, conservare ogni prodotto nel modo corretto e pianificare gli acquisti",
+          "testo": "Distinguere scadenza e termine minimo, conservare bene e pianificare la spesa",
           "corretto": true,
           "feedback": "Esatto! La combinazione di: capire scadenza vs. termine minimo, conservare i prodotti nelle condizioni giuste (frigo, dispensa, freezer) e pianificare gli acquisti è la strategia più efficace contro lo spreco."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "Il momento di scarico e stazionamento al magazzino di distribuzione, dove il controllo della temperatura può essere discontinuo",
+          "testo": "Lo scarico e la sosta in magazzino, dove il freddo può interrompersi",
           "corretto": true,
           "feedback": "Esatto! I passaggi di carico/scarico sono i punti critici più frequenti nella catena del freddo: la merce resta temporaneamente fuori dalle celle, la temperatura può salire, specialmente in estate."
         },

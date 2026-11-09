@@ -26,6 +26,59 @@ I materiali cambiano il mondo. Non solo quelli che già conosci — anche quelli
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+I materiali di sempre, come legno, acciaio e plastica, funzionano ancora benissimo. Ma abbiamo problemi nuovi: troppa plastica che non sparisce, macchine che chiedono prestazioni estreme, risorse che scarseggiano. Per questo nei laboratori nascono materiali nuovi.
+
+**La plastica che può finire**
+
+La parola **bioplastica** nasconde due idee diverse, che spesso si confondono.
+
+- **Bio-based** vuol dire che viene da piante, come mais o canna da zucchero, invece che dal petrolio.
+- **Biodegradabile** vuol dire che i microrganismi riescono a decomporla.
+
+Una plastica può avere una qualità senza l'altra. Solo quando le ha tutte e due è una bioplastica completa.
+
+E c'è un trucco da conoscere. Quasi tutte le bioplastiche si decompongono solo negli impianti di **compostaggio** industriale, dove fa caldo e l'umidità è controllata. Se butti per terra una forchetta "compostabile", resta lì per anni come una di plastica normale.
+
+> ✋ **Tocca a te.** I sacchetti della frutta del supermercato hanno una scritta. La prossima volta che ne vedi uno, cerca le parole "compostabile" o "biodegradabile". In quale bidone va? Scrivi adesso la tua previsione.
+
+**Un foglio spesso un atomo**
+
+Il **grafene** è un foglio di carbonio spesso un solo atomo. Il carbonio è lo stesso della mina della tua matita.
+
+È il materiale delle esagerazioni: a parità di peso è circa 200 volte più resistente dell'acciaio, conduce la corrente meglio del rame ed è quasi trasparente. Il problema è produrlo: farne tanto e di buona qualità costa ancora moltissimo. Per questo oggi lo trovi soprattutto nei laboratori.
+
+**I rifiuti come materia prima**
+
+Un'altra strada è costruire materiali nuovi partendo dagli scarti.
+
+- Le bottiglie di plastica diventano fili, e i fili diventano il **pile** delle felpe: servono circa 25 bottiglie per una giacca.
+- Le macerie degli edifici demoliti, tritate, entrano nel calcestruzzo nuovo.
+- Il **micelio**, la parte dei funghi che cresce sotto terra, fa da colla tra gli scarti dei campi. Si ottengono blocchi leggeri che sostituiscono il polistirolo degli imballaggi e poi si possono compostare.
+
+**Quasi aria, e metalli con la memoria**
+
+L'**aerogel** è il solido più leggero che esista: è fatto quasi tutto di aria. È un isolante eccezionale e protegge dal freddo i veicoli mandati su Marte. È però fragile e costoso.
+
+Le **leghe a memoria di forma** sono metalli che, scaldati, tornano da soli alla forma di partenza. I fili degli apparecchi per i denti funzionano così: con il calore della bocca tirano piano piano i denti al loro posto.
+
+> ✋ **Tocca a te.** Scegli uno dei materiali di questa pagina e inventa un oggetto che oggi non esiste e che si potrebbe fare con quello. Scrivi in due righe quale problema risolve.
+
+**Nuovo non vuol dire migliore**
+
+Un materiale non è buono solo perché è nuovo o perché ha "bio" nel nome. Valgono sempre le tre domande: da dove viene? come viene prodotto? che cosa succede quando si butta? Una bioplastica compostabile serve a poco in un posto dove nessuno raccoglie l'umido.
+
+> 📍 **Qui da noi.** Nel tuo Comune si raccoglie l'organico? I sacchetti compostabili si possono mettere lì? Controlla le regole della raccolta e porta la risposta in classe.
+
+**In tre righe**
+
+- Bio-based e biodegradabile sono due cose diverse.
+- Grafene, aerogel, micelio e leghe a memoria di forma risolvono problemi che i materiali di sempre non risolvono.
+- Un materiale nuovo va giudicato su tutto il suo ciclo di vita.
+
+---
+
 ### Perché i materiali "tradizionali" non bastano più?
 
 Prima di esplorare i materiali innovativi, vale la pena capire perché esistono. La risposta non è "perché i vecchi materiali sono brutti" — molti dei materiali tradizionali sono ancora eccellenti per quello che fanno. La risposta è che abbiamo problemi nuovi che i vecchi materiali non risolvono.
@@ -423,6 +476,8 @@ Scegli una delle tre alternative e scrivi una relazione tecnica di 10-14 righe i
 La mensa scolastica usa ogni giorno centinaia di bicchieri di polistirolo per le macchinette del caffè, tazze usa-e-getta per le tisane calde, e imballaggi di vario tipo. Il preside vuole proporre un'alternativa più sostenibile almeno per uno di questi prodotti.
 
 Ti chiede di fare una proposta concreta: analizzare un imballaggio attualmente in uso nella scuola e proporre un'alternativa basata su un materiale innovativo o più sostenibile.
+
+> 📬 **A chi lo consegni davvero.** Chi gestisce la mensa o i distributori della scuola, attraverso il dirigente. Consegna la proposta in una sola pagina. Chiedi una risposta scritta: sì o no, e perché.
 
 ---
 

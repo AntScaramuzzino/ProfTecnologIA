@@ -24,6 +24,75 @@ Quanti file hai sul desktop in questo momento? Se il tuo computer si rompesse st
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Saper aprire un programma è usare il computer. Usarlo bene è un'altra cosa: trovare un file in dieci secondi, non perdere mai un lavoro, avere una macchina che resta veloce. Non è talento, è metodo.
+
+**Un posto per ogni cosa**
+
+I file stanno dentro **cartelle**, e le cartelle dentro altre cartelle, come i rami di un albero. Una struttura che funziona per la scuola:
+
+- Scuola
+  - anno scolastico in corso
+    - una cartella per ogni materia
+- Archivio, per gli anni passati
+
+Tre regole:
+
+1. ogni file ha un posto solo, e sempre quello;
+2. non più di tre clic per arrivarci;
+3. desktop e cartella Download non sono un deposito: si svuotano ogni settimana.
+
+> ✋ **Tocca a te.** Disegna sul quaderno l'albero delle cartelle che useresti tu per la scuola. Dove metti il compito di Tecnologia di oggi? Scrivi il percorso, cartella per cartella.
+
+**Il nome giusto**
+
+"documento1" non dice niente. Un buon **nome di file** dice quando, di che materia, di che cosa parla:
+
+`2026-03-15_tecnologia_relazione-energia_v02`
+
+La data va per prima e si scrive anno-mese-giorno: così i file si mettono in ordine di tempo da soli. In fondo c'è il numero di **versione**: v01, v02, v03.
+
+Da evitare: gli spazi, i simboli strani e parole come "definitivo" o "finale". Tra un mese non saprai più quale "definitivo" è quello vero.
+
+**Tre copie, o è come non averne**
+
+Prima o poi un computer si rompe, cade o viene rubato. La copia di sicurezza dei file si chiama **backup**. La regola dei professionisti è la 3-2-1:
+
+- 3 copie di ogni file importante;
+- su 2 supporti diversi, per esempio il computer e una chiavetta;
+- di cui 1 in un altro luogo, per esempio nel cloud.
+
+Il backup funziona solo se è automatico. Se devi ricordartelo, te ne dimenticherai proprio la sera prima del guasto.
+
+**Programmi: pochi, ufficiali, aggiornati**
+
+- Scarica i programmi solo dal sito ufficiale o dallo store.
+- Fai gli **aggiornamenti**: quasi sempre chiudono falle di sicurezza.
+- Togli quelli che non usi: occupano spazio e rallentano.
+
+**Il cloud**
+
+Il **cloud** è uno spazio su computer lontani dove salvi i file per raggiungerli da qualsiasi dispositivo. È comodo e fa da backup, ma non deve essere l'unica copia.
+
+Attenzione quando condividi: "chiunque abbia il link" vuol dire proprio chiunque. Per i compiti, condividi solo con le persone che devono vederli.
+
+**Il browser e la navigazione privata**
+
+La navigazione in incognito non salva la cronologia sul tuo dispositivo. Non ti rende invisibile: il sito che visiti, chi ti fornisce la connessione e la rete della scuola vedono comunque dove vai.
+
+> ✋ **Tocca a te.** Correggi questi tre nomi di file con la regola che hai imparato: "relazione DEFINITIVA vera2", "compito scienze", "foto". Inventa tu data e materia.
+
+> 📍 **Qui da noi.** A casa: quanti file ci sono sul desktop del computer di famiglia? E nella cartella Download? Conta, poi proponi a un adulto di riordinare insieme una sola cartella. Racconta in classe com'è andata.
+
+**In tre righe**
+
+- Cartelle ordinate e nomi chiari fanno trovare ogni file in pochi secondi.
+- Tre copie, due supporti, un altro luogo: così non si perde niente.
+- Programmi aggiornati e condivisioni controllate tengono il computer al sicuro.
+
+---
+
 ### Usare bene il computer: una competenza che si impara
 
 Aprire un'applicazione e cliccare su "salva" è usare il computer. Ma usarlo *bene* è un'altra cosa. Significa che i tuoi file sono trovabili in 10 secondi, che non perdi mai un lavoro importante, che il computer funziona velocemente anche dopo anni d'uso, che sai cosa stai condividendo e con chi. Queste non sono abilità che si acquisiscono automaticamente: si imparano, si praticano, si migliorano.
@@ -399,6 +468,8 @@ Competenze chiave che inizia a costruire da qui: software 3D (Maya, Blender) · 
 ### Lo scenario
 
 La scuola ha deciso di creare una "guida pratica alla gestione del computer" per gli studenti del prossimo anno. Ti chiedono di contribuire con una sezione basata sulla tua esperienza reale — non su teoria astratta, ma su quello che hai imparato facendo.
+
+> 📬 **A chi lo consegni davvero.** Un alunno di prima. Consegnagli la tua sezione della guida e chiedigli di seguire un solo consiglio per una settimana. Poi fatti dire se ha funzionato.
 
 ---
 

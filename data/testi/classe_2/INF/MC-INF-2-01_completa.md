@@ -20,13 +20,69 @@ Non è una domanda retorica. Conta: il sistema operativo, il browser o l'app, la
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Mentre leggi, il tuo dispositivo fa decine di cose insieme: tiene aperta l'app, controlla la batteria, riceve notifiche, parla con il Wi-Fi. Eppure il processore è uno solo. Qualcuno deve decidere chi va per primo.
+
+**Il direttore**
+
+Quel qualcuno è il **sistema operativo**: il primo programma che parte all'accensione e quello che fa funzionare tutti gli altri. Ogni app, per fare qualsiasi cosa, deve chiedere a lui. Windows, macOS, Linux, Android e iOS sono sistemi operativi.
+
+Fa quattro lavori.
+
+**1. Decide chi lavora**
+
+Un programma in esecuzione si chiama **processo**. Il processore può occuparsi di un solo processo alla volta. Il sistema operativo allora fa un gioco di prestigio: dà a ognuno un attimo brevissimo, pochi millesimi di secondo, e passa al successivo. Il giro è così veloce che a te sembra che tutto funzioni insieme.
+
+Decide anche le precedenze: le cose importanti passano davanti alla musica in sottofondo.
+
+> ✋ **Tocca a te.** Gioco dei turni. Tre compagni sono tre "app" e chiedono attenzione tutti insieme. Un quarto è il sistema operativo: può ascoltarne uno solo alla volta, per due secondi. Come organizza i turni perché nessuno resti fermo troppo a lungo?
+
+**2. Divide la memoria**
+
+La RAM è la memoria di lavoro, e tutti i processi la vogliono. Il sistema operativo assegna a ognuno il suo spazio e lo riprende quando l'app si chiude.
+
+Se la RAM si riempie, usa come riserva un pezzo del disco, che però è molto più lento. È per questo che con troppe app aperte tutto rallenta.
+
+**3. Tiene in ordine i file**
+
+Il **file system** è il modo in cui i file sono organizzati: cartelle dentro cartelle, come i rami di un albero. Ogni file ha un **percorso**, l'elenco delle cartelle da attraversare per raggiungerlo, un po' come un indirizzo di casa.
+
+Di ogni file il sistema ricorda anche nome, grandezza, data dell'ultima modifica e chi ha il permesso di aprirlo.
+
+**4. Traduce**
+
+Stampante, mouse, tastiera, cuffie: ogni apparecchio "parla" a modo suo. I **driver** sono piccoli programmi che fanno da interpreti tra l'apparecchio e il sistema operativo. Quando colleghi una stampante nuova e non funziona, spesso manca il driver.
+
+**Due modi di dare ordini**
+
+Di solito usi finestre, icone e mouse: è l'**interfaccia grafica**. Ne esiste un'altra, più antica: la **riga di comando**, dove gli ordini si scrivono con la tastiera.
+
+È meno comoda ma molto più potente. Rinominare 500 file con il mouse richiede 500 operazioni. Con la riga di comando basta un'istruzione sola.
+
+**Uno gratis per tutti**
+
+Linux è un sistema operativo libero: chiunque può usarlo, leggerne il codice e modificarlo senza pagare. Fa funzionare la maggior parte dei computer che reggono internet, e anche Android è costruito sulla sua base.
+
+> ✋ **Tocca a te.** Sul computer dell'aula c'è un file nella cartella Tecnologia, che sta dentro Scuola, che sta dentro Documenti. Scrivi il suo percorso, cartella per cartella, come se fosse un indirizzo.
+
+> 📍 **Qui da noi.** Fai l'elenco dei dispositivi di casa che hanno un sistema operativo: telefoni, computer, televisore, console, forse anche l'auto. Quale sistema usa ciascuno? Qual è il più diffuso nella tua famiglia?
+
+**In tre righe**
+
+- Il sistema operativo è il programma che dirige tutti gli altri.
+- Gestisce processi, memoria, file e apparecchi collegati.
+- Si comanda con l'interfaccia grafica o, con più potenza, dalla riga di comando.
+
+---
+
 ### Senza sistema operativo, il computer è un blocco di silicio inutile.
 
 Quando accendi un computer — qualsiasi computer — la prima cosa che succede non è che si apre il browser o la tua app preferita. La prima cosa che succede è che parte un programma enorme e invisibile chiamato **sistema operativo** (in inglese *Operating System*, abbreviato **OS**).
 
 Il sistema operativo è il programma che gestisce tutto il resto. Senza di lui, nessun'altra applicazione potrebbe funzionare. Ogni app che usi chiede al sistema operativo di accedere alla memoria, di leggere un file, di inviare dati in rete, di disegnare qualcosa sullo schermo. Il sistema operativo decide quando e come concedere queste risorse — a volte accettando, a volte rimandando, a volte rifiutando.
 
-Lo studente Gary Kildall, ingegnere informatico di Pacific Grove, California, ha creato il primo sistema operativo commerciale per microcomputer nel 1974: si chiamava CP/M. Senza quel lavoro, ogni programma avrebbe dovuto reimplementare da zero tutte le funzioni di base. Kildall ha capito che ci voleva uno strato intermedio tra l'hardware e i programmi applicativi — uno strato che gestisse la complessità e nascondesse i dettagli hardware ai programmatori.
+Gary Kildall, ingegnere informatico di Pacific Grove, California, ha creato il primo sistema operativo commerciale per microcomputer nel 1974: si chiamava CP/M. Senza quel lavoro, ogni programma avrebbe dovuto reimplementare da zero tutte le funzioni di base. Kildall ha capito che ci voleva uno strato intermedio tra l'hardware e i programmi applicativi — uno strato che gestisse la complessità e nascondesse i dettagli hardware ai programmatori.
 
 ---
 
@@ -244,6 +300,8 @@ Su **Android:** Impostazioni → Gestione applicazioni → App in esecuzione.
 ### Lo scenario
 
 La tua classe deve gestire una cartella condivisa su Google Drive (o un server scolastico) per il progetto interdisciplinare di fine anno. Ci sono 25 studenti, 4 materie coinvolte, materiali di tipo diverso (testi, foto, video, presentazioni) e la necessità che ogni gruppo possa lavorare sui propri file senza interferire con gli altri.
+
+> 📬 **A chi lo consegni davvero.** Il coordinatore di classe e i docenti del progetto. La tua struttura di cartelle viene adottata davvero per due settimane. Poi conta i file finiti nel posto sbagliato.
 
 ---
 

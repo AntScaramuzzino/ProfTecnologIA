@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il taglio deliberato della produzione di un impianto eolico o solare perché la rete non può assorbire tutta l'energia prodotta",
+          "testo": "Il taglio voluto della produzione eolica o solare quando la rete non riesce ad assorbirla",
           "corretto": true,
           "feedback": "Esatto! Il curtailment avviene quando le rinnovabili producono più energia di quanta la rete possa assorbire: le turbine vengono rallentate artificialmente e l'energia prodotta si spreca. È uno dei problemi principali dell'integrazione delle rinnovabili."
         },
@@ -42,7 +42,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "E (Wh) = V (volt) × Ah (amperaora): tensione moltiplicata per la capacità in Ah",
+          "testo": "E (Wh) = V (volt) × Ah (amperaora): tensione per capacità",
           "corretto": true,
           "feedback": "Esatto! La formula E = V × Ah permette di calcolare l'energia in wattora. Esempio: batteria da 12V e 100Ah → E = 12 × 100 = 1.200 Wh = 1,2 kWh."
         },
@@ -108,7 +108,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Accumulo pompato (pumped-storage hydropower): acqua pompata in quota che poi genera elettricità scendendo",
+          "testo": "Il pompaggio idroelettrico: acqua pompata in quota, che poi scende e genera elettricità",
           "corretto": true,
           "feedback": "Esatto! L'accumulo pompato con idroelettrico è il sistema più diffuso al mondo: circa 170 GW installati, pari al 90% di tutta la capacità di accumulo energetico mondiale. È la 'batteria' più grande e collaudata dell'umanità."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La possibilità per un'auto elettrica parcheggiata e collegata alla rete di cedere energia dalla sua batteria alla rete elettrica quando serve",
+          "testo": "La possibilità per un'auto elettrica collegata alla rete di cederle energia quando serve",
           "corretto": true,
           "feedback": "Esatto! Il V2G (Vehicle-to-Grid) permette alle auto elettriche di essere sia consumatori sia produttori di elettricità: si ricaricano quando l'energia è abbondante (e a basso costo) e cedono energia alla rete durante i picchi di domanda."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché l'idrogeno può essere stoccato in grandi quantità e per mesi (accumulo stagionale), coprendo i periodi prolungati di poco sole e vento che le batterie non possono coprire economicamente",
+          "testo": "Perché l'idrogeno si conserva in grandi quantità per mesi, cosa che alle batterie non conviene",
           "corretto": true,
           "feedback": "Esatto! Le batterie sono ottime per accumulo giornaliero (ore-giorni). Ma per l'accumulo stagionale (estate → inverno, periodi di siccità per l'idroelettrico), servono quantità enormi di energia stoccata per mesi. L'idrogeno si può stoccare in gasdotti, caverne saline, serbatoi — a costi molto inferiori a grandi banchi di batterie."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La rete invia segnali ai consumatori (grandi industrie, lavatrice intelligente, auto elettrica) per spostare i consumi nei momenti di abbondanza di rinnovabili, in cambio di riduzione in bolletta",
+          "testo": "La rete segnala ai consumatori quando spostare i consumi nelle ore di abbondanza, in cambio di sconti",
           "corretto": true,
           "feedback": "Esatto! Il demand response permette flessibilità lato consumo: quando la rete è sotto stress (troppo poco vento/sole), alcuni consumi vengono temporaneamente ridotti o spostati. Un grande stabilimento industriale spegne macchinari non critici per 30 minuti; una lavatrice posticipa il lavaggio di un'ora."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'offerta di rinnovabili supera la domanda: la rete è a rischio di sovrafrequenza, i produttori pagano i consumatori per assorbire l'eccesso, le turbine vengono rallentate",
+          "testo": "Le rinnovabili producono più della domanda: chi produce paga perché qualcuno assorba l'eccesso",
           "corretto": true,
           "feedback": "Esatto! Con prezzi negativi: l'energia rinnovabile supera la domanda, la rete tende verso la sovrafrequenza (pericolosa per i trasformatori), i produttori pagano letteralmente per far assorbire l'elettricità, e alla fine le turbine vengono rallentate (curtailment). È spreco di energia prodotta."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sfruttare le economie di scala per abbassare il costo delle batterie: più unità si producono, più il costo per unità scende (curva di apprendimento)",
+          "testo": "Sfruttare le economie di scala: più batterie si producono, meno costa ciascuna",
           "corretto": true,
           "feedback": "Esatto! Tesla aveva identificato che il costo delle batterie era il principale ostacolo all'adozione di massa delle auto elettriche. Costruire la fabbrica più grande del mondo avrebbe sfruttato le economie di scala per ridurre il costo/kWh. L'effetto fu una riduzione del 35% tra il 2015 e il 2020."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una batteria con il 75% di capacità residua è ancora utilizzabile per applicazioni stazionarie (casa, rete) dove peso e densità energetica sono meno critici che in un veicolo in movimento",
+          "testo": "Una batteria al 75% serve ancora per usi fissi, dove peso e ingombro contano meno che in auto",
           "corretto": true,
           "feedback": "Esatto! Per un'auto, una batteria al 75% di capacità significa autonomia ridotta: non accettabile. Per un accumulo domestico fisso (Powerwall), la stessa batteria funziona perfettamente: non deve muoversi. Il 'second life' delle batterie auto allunga la vita utile dei materiali prima del riciclo."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un impianto utility-scale cicla le batterie 1-2 volte al giorno: con 20.000 cicli dura 27-55 anni contro i 4-8 anni del litio, riducendo drasticamente i costi di sostituzione",
+          "testo": "Con uno o due cicli al giorno durano decenni, contro pochi anni del litio: meno sostituzioni",
           "corretto": true,
           "feedback": "Esatto! A 365-730 cicli/anno (1-2 al giorno), 20.000 cicli = 27-55 anni di vita utile. Il litio a 2.000 cicli dura 3-5 anni. Per un grande impianto da 100 MWh, la sostituzione frequente delle batterie al litio è un costo enorme. La lunga vita del vanadio ammortizza il costo iniziale più alto."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un motore a benzina percorre in media 200-250.000 km prima di richiedere una revisione maggiore, quindi la batteria Tesla dura più del motore termico equivalente, contraddicendo il 'mito'",
+          "testo": "La batteria dura più chilometri di quanti ne percorre un motore a benzina prima della revisione",
           "corretto": true,
           "feedback": "Esatto! Il confronto è favorevole alla batteria: un motore a benzina raggiunge il limite tecnico a 200-250.000 km in media. La batteria Tesla a 300.000 km ha ancora >90% di capacità. Il 'mito della batteria che dura poco' è confutato dai dati reali."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Verificare se esiste una certificazione di terze parti (es. Responsible Minerals Initiative) che audita la catena di fornitura fino alle miniere, non solo le dichiarazioni del produttore",
+          "testo": "Verificare se c'è una certificazione indipendente che controlla la filiera fino alle miniere",
           "corretto": true,
           "feedback": "Esatto! Le dichiarazioni del produttore sono 'greenwashing' potenziale senza verifiche. Le certificazioni come RMI (Responsible Minerals Initiative), CoC (Chain of Custody) verificano la filiera con audit indipendenti. Un'azienda che usa LFP (litio ferro fosfato, senza cobalto) può anche affermare genuinamente l'assenza del problema."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "15 auto × 50 kWh × 0,30 = 225 kWh disponibili; conviene usarli durante il picco di consumo mattutino (8-10) quando la domanda è alta e la produzione solare non ha ancora raggiunto il massimo",
+          "testo": "15 auto × 50 kWh × 0,30 = 225 kWh, da usare nel picco di consumo del mattino (ore 8-10)",
           "corretto": true,
           "feedback": "Esatto! 15 auto × 50 kWh × 0,30 = 225 kWh. Quando usarli: durante il picco mattutino (arrivo in ufficio, 8-10) quando la domanda è alta ma il solare fotovoltaico non ha ancora raggiunto il suo picco di mezzogiorno. Il V2G bilancia la rete proprio dove serve."
         },
@@ -534,7 +534,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Complessità burocratica (iter autorizzativi, forme giuridiche, contratti con il GSE), mancanza di modelli di business chiari, scarsa informazione dei cittadini, e resistenze degli operatori energetici tradizionali",
+          "testo": "Burocrazia complessa, modelli economici poco chiari, scarsa informazione e resistenze degli operatori",
           "corretto": true,
           "feedback": "Esatto! Le CER sono tecnicamente fattibili (impianti fotovoltaici comuni, contatori intelligenti). Gli ostacoli sono non tecnologici: iter burocratici lunghi, incertezza sui modelli di business, mancanza di soggetti competenti per guidare la formazione delle comunità, e posizioni difensive di alcuni operatori di rete."
         },
@@ -567,7 +567,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "I progetti realizzati abbassano i costi (curva di apprendimento), creano competenze locali, riducono il rischio percepito per altri investitori, e forniscono dati reali sui quali basare le politiche energetiche",
+          "testo": "Ogni progetto abbassa i costi, crea competenze, riduce il rischio percepito e fornisce dati reali",
           "corretto": true,
           "feedback": "Esatto! L'effetto dimostrativo funziona attraverso: 1) curva di apprendimento industriale (produzione di massa abbassa i costi), 2) creazione di competenze locali (installatori, gestori, ingegneri), 3) riduzione del 'rischio percepito' per banche e investitori (il sistema funziona davvero), 4) dati empirici per calibrare le politiche."
         },

@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Si può convertire lavoro meccanico in calore al 100%, ma non si può convertire calore in lavoro meccanico al 100%: c'è sempre una perdita irrecuperabile",
+          "testo": "Il lavoro si trasforma tutto in calore, ma il calore non si trasforma mai tutto in lavoro",
           "corretto": true,
           "feedback": "Esatto! Strofina le mani: hai convertito tutto il lavoro in calore. Ma non si può fare il contrario: nessuna macchina termica converte tutto il calore in lavoro. Una parte si disperde irrecuperabilmente verso la sorgente fredda."
         },
@@ -174,7 +174,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il PHEV ha una batteria più grande ricaricabile dalla rete elettrica, permettendo 50-80 km solo in elettrico; l'HEV si ricarica solo durante la frenata rigenerativa",
+          "testo": "La PHEV ha una batteria più grande, ricaricabile alla presa; la HEV si ricarica solo in frenata",
           "corretto": true,
           "feedback": "Esatto! HEV: batteria piccola ricaricata solo dalla frenata rigenerativa e dal motore termico, non si collega alla rete. PHEV: batteria più grande ricaricabile dalla rete, percorre 50-80 km solo in elettrico poi usa il motore termico."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché attrito, perdite di calore attraverso le pareti del cilindro e combustione imperfetta dissipano energia oltre il minimo termodinamico previsto da Carnot",
+          "testo": "Perché attriti, calore perso dalle pareti e combustione imperfetta disperdono altra energia",
           "corretto": true,
           "feedback": "Esatto! Il ciclo di Carnot è ideale: nessuna perdita oltre il limite termodinamico. Nei motori reali ci sono perdite aggiuntive: calore disperso attraverso le pareti del cilindro, attrito nei cuscinetti e nelle valvole, combustione imperfetta (non tutto il carburante brucia completamente)."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché un'auto elettrica ricaricata con elettricità da carbone può emettere più CO₂ che un'auto a benzina efficiente, mentre ricaricata con rinnovabili è quasi a zero emissioni",
+          "testo": "Perché ricaricata con corrente da carbone emette molto, con rinnovabili quasi nulla",
           "corretto": true,
           "feedback": "Esatto! L'auto elettrica è 'zero emissioni dirette' ma le emissioni indirette dipendono da come viene prodotta l'elettricità. In Polonia (rete con 70% carbone) le emissioni per 100 km sono maggiori che in Francia (nucleare + rinnovabili)."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Circa 25 unità: dispersione dal motore (35), sistema di raffreddamento (30), scarico (5), attrito meccanico (5)",
+          "testo": "Circa 25 unità: il resto si disperde in calore e attriti",
           "corretto": true,
           "feedback": "Esatto! Su 100 unità di benzina: calore dal motore 35, calore dal sistema di raffreddamento (radiatore) 30, calore dallo scarico 5, attrito meccanico 5. Totale disperso: 75. Alle ruote arrivano: 100 - 75 = 25 unità (rendimento ≈ 25%)."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il motore elettrico richiede manutenzione molto meno frequente (ogni 100.000+ km contro ogni 15-20.000 km del benzina) perché ha quasi nessun componente soggetto a usura meccanica",
+          "testo": "Il motore elettrico richiede molta meno manutenzione, perché ha pochissime parti soggette a usura",
           "corretto": true,
           "feedback": "Esatto! Ogni componente meccanico si usura nel tempo: pistoni, valvole, candele, cinghia di distribuzione, frizione, cambio. Con soli 3 componenti in movimento, il motore elettrico ha molti meno punti di usura, riducendo drasticamente la frequenza di manutenzione."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'auto elettrica accelera da 0 km/h con la massima forza disponibile subito, senza dover aspettare che il motore termico raggiunga i giri di regime",
+          "testo": "L'auto elettrica accelera da ferma con tutta la forza disponibile, senza attendere i giri giusti",
           "corretto": true,
           "feedback": "Esatto! Il motore termico produce coppia massima solo a un certo numero di giri (curva di coppia). Il motore elettrico produce la coppia massima istantaneamente da 0 giri. Questo spiega perché le auto elettriche accelerano più velocemente delle termiche equivalenti da fermo."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "È uno strumento di verifica: qualsiasi tecnologia che promette di produrre più energia di quanta ne consuma viola il secondo principio della termodinamica ed è fisicamente impossibile",
+          "testo": "Serve da verifica: una macchina che promette più energia di quanta ne riceve è fisicamente impossibile",
           "corretto": true,
           "feedback": "Esatto! Il secondo principio della termodinamica è una legge fisica verificata sperimentalmente migliaia di volte. Qualsiasi dispositivo che promette 'energia gratuita', 'motore over-unity' o 'rendimento maggiore del 100%' viola questa legge. È un criterio di falsificabilità immediato."
         },
@@ -438,7 +438,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché anche se il rendimento complessivo è basso (~16%), le emissioni di CO₂ sono quasi zero: il sole non emette CO₂, il fotovoltaico non brucia carburante",
+          "testo": "Perché, anche con un rendimento complessivo basso, le emissioni di CO₂ sono quasi nulle",
           "corretto": true,
           "feedback": "Esatto! Il rendimento complessivo FV → auto ≈ 20% × 0,97 × 0,94 × 0,90 × 0,92 ≈ 16%. Ma l'energia di partenza è solare (gratuita e a zero emissioni). Anche se 'si spreca' l'84%, il CO₂ emesso è quasi zero. Il carburante fossile ha un rendimento maggiore ma costa emissioni di CO₂."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'altissima densità energetica dei carburanti liquidi (benzina, gasolio) che in pochi litri contengono decine di kWh, rendendo possibile un'autonomia di 600-800 km con rifornimento in 3-5 minuti",
+          "testo": "L'altissima densità di energia dei carburanti liquidi: grande autonomia e pieno in pochi minuti",
           "corretto": true,
           "feedback": "Esatto! La benzina contiene circa 8,9 kWh/litro. 50 litri = 445 kWh in un serbatoio leggero, rifornito in 5 minuti. Una batteria con 445 kWh peserebbe oltre 2 tonnellate ai costi di oggi. Questa densità energetica dei liquidi è il motivo per cui il motore termico ha dominato per 140 anni."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "I materiali disponibili (acciai speciali, ceramiche) hanno temperatura di fusione o di cedimento meccanico inferiori a 2.727°C, quindi il cilindro si scioglierebbe o si deformerebbe",
+          "testo": "I materiali del cilindro non reggono temperature così alte: fonderebbero o si deformerebbero",
           "corretto": true,
           "feedback": "Esatto! Anche gli acciai speciali per alta temperatura (superleghe di nichel) cedono attorno a 1.000-1.200°C in condizioni di carico. Le ceramiche resistono di più ma sono fragili. Non esistono materiali strutturali commerciali che resistano a 2.727°C con carichi meccanici significativi."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Creerà domanda massiccia di ingegneri di propulsione elettrica, ridurrà i meccanici di motori a combustione, aumenterà la domanda di litio/cobalto, trasformerà i distributori di carburante, cambierà le competenze richieste nella formazione tecnica",
+          "testo": "Serviranno più tecnici dell'elettrico e meno meccanici tradizionali; cambieranno distributori e formazione",
           "corretto": true,
           "feedback": "Esatto! Una normativa sull'auto elettrica produce effetti sistemici a catena: nuove professioni (ingegneri propulsione elettrica), declino di altre (meccanici ICE), nuove catene di fornitura (batterie), trasformazione delle infrastrutture (colonnine vs distributori), cambiamento nella formazione tecnica. È un esempio di come le politiche energetiche producono trasformazioni occupazionali profonde."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il motore elettrico viene usato come generatore: la forza frenante meccanica fa girare il rotore, che genera corrente elettrica che ricarica la batteria, convertendo energia cinetica in energia elettrica",
+          "testo": "Il motore elettrico fa da generatore: le ruote lo fanno girare e la corrente prodotta ricarica la batteria",
           "corretto": true,
           "feedback": "Esatto! Nella frenata rigenerativa, il motore elettrico funziona al contrario: invece di consumare elettricità per girare il rotore (motore), usa la forza del rotore che gira (per inerzia del veicolo) per generare corrente (generatore). È la legge di Faraday-Lenz applicata: un conduttore in moto in un campo magnetico genera corrente."
         },

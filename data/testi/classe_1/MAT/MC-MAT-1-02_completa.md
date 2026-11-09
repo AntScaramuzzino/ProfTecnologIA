@@ -16,9 +16,9 @@ Lo smartphone che tieni in mano ha visitato più paesi di te — prima ancora di
 
 Il cobalto della batteria viene dalla Repubblica Democratica del Congo. Il litio dal deserto di Atacama, in Cile. Il rame per i circuiti dal Perù. Il silicio da Taiwan o Giappone. Poi tutto si assembla in Cina, attraversa un oceano, arriva in un magazzino europeo, e finisce in tasca tua.
 
-Poi lo butti.
+Poi, dopo due o tre anni, finisce in un cassetto. O nel cestino.
 
-Il recupero resta insufficiente: secondo il Global E-waste Monitor 2024, nel 2022 solo il 22,3% della massa dei rifiuti elettronici mondiali risultava raccolto e riciclato formalmente. Il dato riguarda tutti i RAEE, non soltanto gli smartphone; la quota restante comprende flussi non documentati, non materiali sicuramente perduti per sempre.
+Nel mondo, meno di un quarto dei rifiuti elettronici viene raccolto e riciclato nel modo corretto.
 
 <!-- Fonte della correzione: https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-Waste-Monitor-2024.aspx · consultata il 4 ottobre 2026. -->
 
@@ -27,6 +27,60 @@ Perché succede questo? E cosa puoi fare tu? La risposta comincia da qui: capire
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Quando compri un oggetto vedi solo l'ultimo capitolo della sua storia. Prima ci sono state miniere, fabbriche, navi e camion. E dopo che l'avrai buttato, la storia continua. Tutto questo percorso si chiama **ciclo di vita**.
+
+**Le tappe del viaggio**
+
+Ogni oggetto passa per le stesse tappe.
+
+1. **Estrazione.** La **materia prima** viene presa dalla natura: minerali dalle miniere, legno dalle foreste, petrolio dal sottosuolo. Costa energia, acqua e suolo.
+2. **Lavorazione.** La materia prima viene trasformata in materiale: il minerale diventa acciaio, la sabbia diventa vetro, il petrolio diventa plastica. Serve moltissimo calore.
+3. **Produzione.** I materiali diventano l'oggetto. Quasi mai in un posto solo: i pezzi arrivano da paesi diversi. Questa rete si chiama **catena di fornitura**.
+4. **Trasporto.** L'oggetto viaggia fino al negozio. Una felpa di cotone può percorrere 40.000 km, quanto il giro del mondo.
+5. **Uso.** È il momento in cui l'oggetto è tuo. Più a lungo lo usi, meno pesa sull'ambiente.
+6. **Fine vita.** L'oggetto viene buttato. Ma non sparisce: prende una strada.
+
+> ✋ **Tocca a te.** Guarda l'etichetta della tua felpa o del tuo zaino. Dove è stato fatto? Di che materiale è? Prova a indovinare quante tappe del viaggio sono avvenute in quel paese e quante altrove.
+
+**Le strade della fine vita**
+
+Dalla peggiore alla migliore:
+
+- la **discarica**: l'oggetto resta lì, per secoli se è di plastica;
+- l'**incenerimento**: viene bruciato, e dal calore si ricava energia;
+- il **riciclo**: il materiale torna a essere materia prima per un oggetto nuovo;
+- il **riuso** e la **riparazione**: l'oggetto continua a fare il suo lavoro, per te o per qualcun altro. È la strada migliore, perché non si spreca niente.
+
+**Linea o cerchio?**
+
+Per molto tempo abbiamo seguito una linea: prendi, produci, usa, butta. Si chiama economia lineare. Alla fine della linea c'è sempre un rifiuto.
+
+L'**economia circolare** chiude la linea in un cerchio: il materiale di un oggetto buttato torna all'inizio e diventa la materia prima di un oggetto nuovo. Non è un sogno: in Europa gran parte dell'acciaio e del vetro gira già così. Con la plastica siamo ancora lontani.
+
+Riciclare conviene anche per l'energia. Rifondere una lattina di alluminio usata richiede circa un ventesimo dell'energia che serve per produrla dal minerale.
+
+**Chi decide**
+
+Lungo il viaggio decidono in tanti. Chi produce sceglie i materiali e se l'oggetto si potrà riparare. Chi fa le leggi stabilisce le regole. E poi ci sei tu: decidi se comprare, quanto a lungo usare, dove buttare.
+
+Davanti a un oggetto puoi farti tre domande: da dove viene? quanto dura? si può riparare?
+
+> ✋ **Tocca a te.** Pensa all'ultimo oggetto che hai buttato perché rotto. Si poteva riparare? Chi avrebbe potuto farlo, e quanto sarebbe costato rispetto a comprarlo nuovo?
+
+> 📍 **Qui da noi.** Nel tuo paese c'è qualcuno che ripara le cose: scarpe, telefoni, biciclette, vestiti? Fai un elenco con la tua famiglia e portalo in classe: costruiremo la mappa dei riparatori della zona.
+
+**In tre righe**
+
+- Ogni oggetto ha un ciclo di vita: estrazione, lavorazione, produzione, trasporto, uso, fine vita.
+- Nell'economia circolare il materiale buttato torna a essere materia prima.
+- Usare a lungo e riparare è meglio che riciclare, e riciclare è meglio che buttare.
+
+> 🔎 **Come lo sappiamo?** Il dato dell'aggancio viene dal Global E-waste Monitor 2024: nel 2022 il 22,3% dei rifiuti elettronici del mondo risultava raccolto e riciclato in modo documentato. Riguarda tutti i rifiuti elettronici, non solo i telefoni. Del resto non sappiamo con certezza che fine abbia fatto: una parte viene comunque recuperata, ma senza controlli.
+
+---
 
 ### Un oggetto non nasce sullo scaffale del negozio.
 
@@ -430,6 +484,8 @@ Esiste una terza opzione che riduce sia il costo che l'impatto? Descrivi almeno 
 Il tuo zaino, la tua felpa, il tuo astuccio — tutto quello che porti a scuola ogni giorno ha attraversato mezzo mondo prima di arrivare da te. E dopo che lo userai, attraverserà qualcos'altro ancora.
 
 Il Passaporto Tecnologico è uno strumento reale usato dai ricercatori di sostenibilità per tracciare il ciclo di vita di un prodotto. Oggi lo costruisci tu, per un oggetto che conosci bene.
+
+> 📬 **A chi lo consegni davvero.** La persona che ha comprato l'oggetto. Mostrale il Passaporto Tecnologico e chiedi: sapendo questo, lo ricompreresti uguale? Scrivi la risposta in fondo al passaporto.
 
 ---
 

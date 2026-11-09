@@ -14,7 +14,7 @@
 
 Immagina di essere su una via ferrata nelle Dolomiti. Fa freddo, soffia il vento, e inizia a piovere. Guardi la tua giacca tecnica: pesa 340 grammi. Trecentoquaranta grammi — meno di una bottiglia d'acqua da mezzo litro — eppure ti tiene asciutto, ti mantiene caldo, e la pioggia scivola via come se la giacca fosse di vetro.
 
-Poi guardi la giacca del tuo compagno, quella che sua nonna usava in montagna negli anni ottanta: pesa 1,4 chilogrammi, è impermeabile ma non traspiante — e dopo mezz'ora di cammino, dentro c'è lo stesso umido che fuori.
+Poi guardi la giacca del tuo compagno, quella che sua nonna usava in montagna negli anni ottanta: pesa 1,4 chilogrammi, è impermeabile ma non traspirante — e dopo mezz'ora di cammino, dentro c'è lo stesso umido che fuori.
 
 Stessa funzione. Stesso colore. Ma quattro volte il peso, e il doppio dell'umidità.
 
@@ -28,6 +28,65 @@ Tienila a mente. Alla fine di questa MC avrai gli strumenti per rispondere con p
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+La maglietta che indossi, lo zaino, la bottiglia d'acqua, il casco della bici. Sono fatti con tre famiglie di materiali: le fibre, le plastiche e i compositi.
+
+**Le fibre naturali**
+
+Una **fibra** è un filo sottilissimo. Tante fibre intrecciate fanno un tessuto. Quelle naturali vengono da piante o da animali.
+
+- Il **cotone** è morbido e assorbe il sudore. Ma la pianta beve moltissimo: per una sola maglietta servono circa 2.700 litri d'acqua.
+- La **lana** tiene caldo perché tra le sue fibre ondulate resta intrappolata l'aria.
+- Il **lino** è fresco ed è la fibra che pesa meno sull'ambiente: gli basta la pioggia.
+- La **seta** è il filo del bozzolo di un bruco: leggera, lucente e costosa.
+
+**Le fibre sintetiche**
+
+Le **fibre sintetiche** si ricavano dal petrolio. La più diffusa è il **poliestere**: costa poco, è resistente e asciuga in fretta, perché non assorbe l'acqua. Il **nylon** è ancora più resistente e si usa per zaini e corde.
+
+Hanno un difetto nascosto. A ogni lavaggio in lavatrice perdono migliaia di pezzetti invisibili, le **microplastiche**, che finiscono nei fiumi e nel mare.
+
+> ✋ **Tocca a te.** Leggi l'etichetta cucita dentro la tua felpa o la tua giacca. Che cosa c'è scritto? Segna le percentuali: è più naturale o più sintetica? Confronta con il compagno.
+
+**Le plastiche**
+
+"Plastica" non è un materiale solo: è una famiglia enorme. Tutte le plastiche sono **polimeri**, cioè catene lunghissime fatte ripetendo la stessa piccola molecola, come una collana di perline.
+
+Sono leggere, impermeabili, non fanno passare la corrente e si possono stampare in qualsiasi forma. Per questo sono ovunque.
+
+Il loro limite è enorme: non si decompongono. Una bottiglia impiega centinaia di anni solo per spezzarsi in frammenti sempre più piccoli.
+
+Sotto molti oggetti di plastica trovi un triangolino con un numero da 1 a 7. Attenzione: indica il tipo di plastica, non che verrà riciclata.
+
+**Naturale è sempre meglio?**
+
+No. Torna alla domanda sulla giacca. Il cotone è naturale ma consuma tanta acqua. La giacca sintetica viene dal petrolio, ma protegge meglio e dura anni. Quello che conta è tutto il ciclo di vita, e soprattutto quanto a lungo usi una cosa.
+
+Diffida delle parole "eco" e "bio" scritte grandi sulle etichette senza spiegazioni. Far sembrare verde un prodotto che non lo è ha un nome: greenwashing.
+
+**I compositi: uno più uno fa tre**
+
+Un **composito** unisce due materiali diversi per ottenere qualità che nessuno dei due ha da solo.
+
+Il più usato è il **cemento armato**. Il cemento regge benissimo se lo schiacci, ma si spezza se lo tiri. L'acciaio è l'opposto: se lo tiri regge. Mettendo barre di acciaio dentro il cemento si ottiene un materiale che resiste in tutti e due i casi.
+
+La **fibra di carbonio** è fatta di fili di carbonio più sottili di un capello, incollati con una resina. È più forte dell'acciaio e molto più leggera. La trovi nelle auto di Formula 1, negli aerei, nelle bici da corsa.
+
+I compositi hanno un punto debole: i due materiali sono così ben uniti che è difficilissimo separarli per riciclarli.
+
+> ✋ **Tocca a te.** Guarda il tuo zaino. Quanti materiali diversi riconosci tra tessuto, cerniere, fibbie e imbottitura? Se si rompe una cerniera, si può riparare o va buttato tutto?
+
+> 📍 **Qui da noi.** Nel tuo paese c'è un mercatino dell'usato, un negozio di seconda mano o una sartoria che ripara i vestiti? Chiedi a casa e porta in classe nomi e indirizzi.
+
+**In tre righe**
+
+- Le fibre sono naturali o sintetiche: ognuna ha vantaggi e costi per l'ambiente.
+- Le plastiche sono polimeri: comode, ma non si decompongono.
+- I compositi uniscono due materiali, e per questo sono forti ma difficili da riciclare.
+
+---
 
 ### Fibre, plastiche e compositi: tre famiglie di materiali, una storia comune
 
@@ -217,7 +276,7 @@ Il sistema di classificazione internazionale usa un codice numerico da 1 a 7, co
 **Basso costo:** derivano dal petrolio — il materiale di partenza più abbondante e economico del XX secolo.
 
 **Il grande limite — biodegradabilità quasi zero:**
-Una bottiglia PET impriga tra 400 e 1.000 anni per frammentarsi. Un sacchetto LDPE tra 100 e 500 anni. Ma "frammentarsi" non significa "scomparire": significa diventare frammenti sempre più piccoli di plastica, fino alle microplastiche, che non si degradano ulteriormente in tempi utili. La plastica si accumula — nelle discariche, nei mari, nei sedimenti, nei tessuti degli animali.
+Una bottiglia PET impiega tra 400 e 1.000 anni per frammentarsi. Un sacchetto LDPE tra 100 e 500 anni. Ma "frammentarsi" non significa "scomparire": significa diventare frammenti sempre più piccoli di plastica, fino alle microplastiche, che non si degradano ulteriormente in tempi utili. La plastica si accumula — nelle discariche, nei mari, nei sedimenti, nei tessuti degli animali.
 
 Dati 2024: si stima che nei soli oceani siano presenti tra 75 e 199 milioni di tonnellate di plastica. Il **Great Pacific Garbage Patch** — la zona di accumulo di plastica nel Pacifico settentrionale — ha una superficie stimata di 1,6 milioni di km², circa 3 volte la Francia. Non è un'isola di plastica solida: è una concentrazione di frammenti e microplastiche dispersi in profondità.
 
@@ -308,7 +367,7 @@ Nei cantieri moderni si usano spesso calcestruzzi a cui vengono aggiunte fibre c
 
 ### Dal petrolio al pannello solare: il ciclo dei materiali sintetici
 
-C'è un collegamento importante che spesso si dimentina. Le celle fotovoltaiche dei pannelli solari sono fatte in silicio (un semiconduttore, non un metallo). Ma il modulo che vedi sul tetto — l'involucro che protegge le celle — è fatto di:
+C'è un collegamento importante che spesso si dimentica. Le celle fotovoltaiche dei pannelli solari sono fatte in silicio (un semiconduttore, non un metallo). Ma il modulo che vedi sul tetto — l'involucro che protegge le celle — è fatto di:
 - Vetro temperato (lastra anteriore)
 - EVA (etilene-vinil-acetato, una plastica) come strato di incapsulamento
 - Backsheet in poliestere o PPF (ulteriore strato plastico posteriore)
@@ -532,6 +591,8 @@ L'azienda ha un budget per il nuovo packaging equivalente al costo attuale (stim
 ### Lo scenario
 
 Sei stato incaricato da un'associazione di consumatori della tua città di analizzare l'etichettatura di prodotti tessili e di packaging in vendita nei negozi locali. Il tuo rapporto sarà pubblicato sul sito dell'associazione e potrà aiutare altri consumatori a fare scelte più informate.
+
+> 📬 **A chi lo consegni davvero.** Il negoziante da cui hai preso le etichette, e i lettori del sito o del giornalino della scuola. Consegna il rapporto in una pagina. Chiedi al negoziante: i clienti ti fanno mai domande su queste etichette?
 
 ---
 

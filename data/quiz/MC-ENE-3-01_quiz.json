@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Sei (leva, piano inclinato, cuneo, vite, carrucola, ruota con asse)",
+          "testo": "Sei (leva, cuneo, vite, carrucola e altre due)",
           "corretto": true,
           "feedback": "Esatto! Le sei macchine semplici fondamentali sono: leva, piano inclinato, cuneo, vite, carrucola e ruota con asse. Ogni macchina più complessa è una combinazione di queste sei."
         },
@@ -42,7 +42,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il carico è in mezzo, tra il fulcro e il punto di applicazione della forza",
+          "testo": "Il carico è in mezzo, tra il fulcro e la forza",
           "corretto": true,
           "feedback": "Esatto! In una leva di secondo genere la sequenza è: Fm — Fr — F (fulcro, carico, forza). Il carico è in posizione intermedia. Esempio: la carriola."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Secondo genere, perché il carico è tra il fulcro (ruota) e la forza (mani)",
+          "testo": "Secondo genere, perché il carico è tra fulcro e forza",
           "corretto": true,
           "feedback": "Esatto! Nella carriola: fulcro = ruota, carico = vasca con il peso, forza = mani alle stanghe. La sequenza è Fulcro — Carico — Forza: leva di secondo genere, con VM sempre > 1."
         },
@@ -174,7 +174,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "VM = 2: la forza necessaria si dimezza perché il carico è sorretto da due tratti di corda",
+          "testo": "VM = 2: il carico è sorretto da due tratti di corda",
           "corretto": true,
           "feedback": "Esatto! Nella carrucola mobile il carico è sorretto da due tratti di corda. La forza necessaria è la metà del carico: VM = 2. Ogni tratto di corda supporta metà del peso."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché con la punta il braccio del carico (distanza perno-materiale) è maggiore, riducendo il vantaggio meccanico",
+          "testo": "Perché in punta il materiale è più lontano dal perno, e il vantaggio meccanico cala",
           "corretto": true,
           "feedback": "Esatto! VM = distanza_forza-fulcro / distanza_carico-fulcro. Tagliando con la punta, la distanza tra il materiale e il perno aumenta molto rispetto alla distanza tra le dita e il perno, riducendo il VM."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Per ogni unità di forza applicata al cacciavite, la vite esercita una forza di penetrazione 62,8 volte maggiore sul materiale",
+          "testo": "La vite spinge nel materiale con una forza 62,8 volte quella applicata",
           "corretto": true,
           "feedback": "Esatto! VM = 62,8 significa che se applichi 1 N al cacciavite, la vite esercita circa 62,8 N di forza assiale sul legno. Ecco perché le viti tengono le cose insieme così efficacemente con piccole forze di avvitamento."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la leva di terzo genere amplifica la distanza e la velocità del movimento: con un piccolo movimento del bicipite la mano si sposta molto di più",
+          "testo": "Perché amplifica distanza e velocità: un piccolo movimento del muscolo sposta molto la mano",
           "corretto": true,
           "feedback": "Esatto! La natura ha privilegiato la velocità e la precisione del movimento rispetto alla forza bruta. Con VM < 1 il braccio non amplifica la forza, ma un piccolo accorciamento del bicipite produce un grande spostamento della mano."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Combinando più macchine semplici: ruota con asse, sistema pedali-catena-ingranaggi (ruote con asse), e freni a leva, con pochissimo attrito nelle trasmissioni",
+          "testo": "Perché combina più macchine semplici, con pochissimo attrito nelle trasmissioni",
           "corretto": true,
           "feedback": "Esatto! La bicicletta combina ruote con asse (ruota anteriore e posteriore), il sistema pedali-catena-ingranaggi (ruote con asse di diversi diametri), e freni a leva. L'efficienza del 85-95% deriva dalla combinazione ottimale di queste macchine semplici con attrito ridotto al minimo."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "VM = 1/pendenza = 1/0,07 ≈ 14: la rampa lunga 14 volte l'altezza da superare richiede 14 volte meno forza",
+          "testo": "VM = 1/pendenza = 1/0,07 ≈ 14: la rampa è lunga 14 volte l'altezza",
           "corretto": true,
           "feedback": "Esatto! Il VM di un piano inclinato = lunghezza/altezza. Se la pendenza è 7% significa che per ogni metro di altezza la rampa è lunga 1/0,07 ≈ 14 metri. VM = 14 significa che serve 14 volte meno forza per spingere il blocco sulla rampa rispetto al sollevarlo verticalmente."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le pinzette chirurgiche: VM < 1 perché la chirurgia richiede movimenti precisi e piccoli, non grande forza",
+          "testo": "Le pinzette chirurgiche: VM < 1 perché servono movimenti piccoli e precisi",
           "corretto": true,
           "feedback": "Esatto! Le pinzette sono leve di terzo genere con VM < 1: non amplificano la forza ma amplificano la precisione del movimento. In chirurgia serve controllare spostamenti millimetrici, non forza bruta."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "È una ruota con asse: il peso degli operai che camminano converte l'energia potenziale gravitazionale in moto rotatorio, con VM = raggio_ruota / raggio_asse",
+          "testo": "È una ruota con asse: il peso degli operai la fa girare, con VM = raggio ruota / raggio asse",
           "corretto": true,
           "feedback": "Esatto! La ruota di calpestio è una ruota con asse: gli operai all'interno creano un momento torcente camminando (peso × raggio della ruota). Questo momento si trasmette all'asse centrale con VM = raggio_ruota/raggio_asse, amplificando ulteriormente la forza disponibile."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Che i principi fondamentali della meccanica sono invarianti: capire le macchine semplici permette di analizzare e progettare qualsiasi sistema meccanico, anche i più sofisticati",
+          "testo": "Che i principi della meccanica non cambiano: capire le macchine semplici aiuta a capire anche le più complesse",
           "corretto": true,
           "feedback": "Esatto! L'affermazione rivela che la comprensione dei principi fondamentali (macchine semplici) offre gli strumenti concettuali per analizzare qualsiasi sistema meccanico complesso. La complessità apparente dei robot si riduce a combinazioni di principi elementari comprensibili."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La forza si riduce a 12,5 N ma la distanza percorsa dalla forza aumenta a 3 m: il lavoro totale rimane 37,5 J (senza attrito)",
+          "testo": "La forza scende a 12,5 N ma il percorso sale a 3 m: il lavoro resta 37,5 J",
           "corretto": true,
           "feedback": "Esatto! Con VM = 4: F_motrice = 50/4 = 12,5 N. Per conservare il lavoro (W = F × d): 12,5 N × d = 37,5 J → d = 3 m. La leva non crea energia: riduce la forza di 4 volte aumentando la distanza di 4 volte. Il lavoro rimane 37,5 J."
         },

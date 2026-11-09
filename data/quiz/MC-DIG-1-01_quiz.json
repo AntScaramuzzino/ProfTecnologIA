@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La parte fisica che puoi toccare, come lo schermo, la tastiera e il processore",
+          "testo": "La parte fisica, che puoi toccare",
           "corretto": true,
           "feedback": "Esatto! L'hardware comprende tutto ciò che è fisico e tangibile nel computer."
         },
@@ -88,7 +88,7 @@
         },
         {
           "id": "b",
-          "testo": "La RAM contiene i dati temporanei mentre il computer è acceso; lo storage li salva in modo permanente",
+          "testo": "La RAM tiene i dati mentre il computer è acceso; lo storage li conserva",
           "corretto": true,
           "feedback": "Esatto! La RAM è la memoria di lavoro temporanea (come una scrivania), lo storage salva i dati permanentemente anche quando il computer è spento."
         },
@@ -117,7 +117,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Un programma che coordina l'hardware e permette alle altre applicazioni di funzionare",
+          "testo": "Il programma che coordina hardware e app",
           "corretto": true,
           "feedback": "Esatto! Il sistema operativo gestisce CPU, RAM, storage e periferiche, e fornisce l'ambiente in cui le app possono girare."
         },
@@ -160,7 +160,7 @@
         },
         {
           "id": "b",
-          "testo": "Internet è la rete fisica globale; il web è l'insieme delle pagine web accessibili tramite browser",
+          "testo": "Internet è la rete; il web è l'insieme delle pagine che vi viaggiano",
           "corretto": true,
           "feedback": "Esatto! Internet è l'infrastruttura (cavi, router, connessioni), il web è solo uno dei servizi che usa quell'infrastruttura."
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché il sistema operativo non riesce a creare i file temporanei necessari per funzionare",
+          "testo": "Perché il sistema non ha spazio per i file temporanei che gli servono",
           "corretto": true,
           "feedback": "Esatto! Il sistema operativo ha bisogno di spazio libero per creare file temporanei. Se lo storage è quasi pieno, manca spazio e il sistema rallenta."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "Le applicazioni desktop si installano sul dispositivo e funzionano offline; le web app girano nel browser e richiedono internet",
+          "testo": "Le desktop si installano e funzionano offline; le web app girano nel browser",
           "corretto": true,
           "feedback": "Esatto! Le app desktop sono installate localmente. Le web app girano su server remoti e si accede tramite browser con connessione internet."
         },
@@ -333,7 +333,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Dati e programmi su server remoti accessibili da qualsiasi dispositivo; svantaggio: dipendenza da internet e dati gestiti da terze parti",
+          "testo": "Dati e programmi su server remoti; svantaggio: dipendi da internet e da chi li gestisce",
           "corretto": true,
           "feedback": "Esatto! Il cloud offre accessibilità ovunque e backup automatico, ma richiede internet e affida i dati a server di aziende terze."
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché permette di eseguire più attività contemporaneamente in parallelo senza rallentamenti",
+          "testo": "Perché esegue più attività contemporaneamente senza rallentare",
           "corretto": true,
           "feedback": "Esatto! Ogni core è un'unità di calcolo indipendente. Con 4 core, uno gestisce la musica, uno il browser, uno le notifiche, uno gli aggiornamenti — tutto in parallelo."
         },
@@ -477,7 +477,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Android è open source e permette installazione da fonti esterne; iOS è chiuso e permette solo app dall'App Store ufficiale",
+          "testo": "Android è aperto e ammette app esterne; iOS accetta solo quelle dell'App Store",
           "corretto": true,
           "feedback": "Esatto! Android è basato su Linux, più aperto. iOS è un sistema chiuso di Apple: solo app approvate dall'App Store."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché la GPU è ottimizzata per milioni di calcoli semplici in parallelo, come ricalcolare il colore di ogni pixel molte volte al secondo",
+          "testo": "Perché la GPU è fatta per milioni di calcoli semplici in parallelo, come quelli dei pixel",
           "corretto": true,
           "feedback": "Esatto! Un monitor Full HD ha oltre 2 milioni di pixel. A 60 fps la GPU deve ricalcolare 120 milioni di pixel al secondo — compito per cui è progettata."
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Il costo totale su 5 anni dei desktop (480€ × 25 = 12.000€) è simile o inferiore a quello dei tablet se questi richiedono riacquisto",
+          "testo": "Su più anni i desktop costano quanto i tablet, o meno, perché i tablet vanno ricomprati",
           "corretto": true,
           "feedback": "Esatto! I desktop costano 12.000€ totali con durata 8-10 anni (costo annuo ~1.300-1.500€). I tablet con riacquisto potrebbero costare di più nel tempo."
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché il provider internet e i siti visitati vedono comunque il tuo indirizzo IP e la tua attività",
+          "testo": "Perché il provider e i siti visitati vedono comunque il tuo indirizzo IP",
           "corretto": true,
           "feedback": "Esatto! La modalità privata impedisce solo al browser di salvare la cronologia sul dispositivo. Non nasconde la navigazione al provider internet né ai siti visitati."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Significa che miliardi di transistor stanno in un chip piccolo come un'unghia, consentendo enormi capacità di calcolo a basso consumo",
+          "testo": "Significa che in un chip minuscolo stanno miliardi di transistor: molta potenza",
           "corretto": true,
           "feedback": "Esatto! A 3-5 nm i transistor sono 20.000 volte più sottili di un capello umano. Il chip Apple A17 ha 19 miliardi di transistor in uno spazio minimo."
         },

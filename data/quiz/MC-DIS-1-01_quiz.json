@@ -88,7 +88,7 @@
         },
         {
           "id": "b",
-          "testo": "Dal vertice si traccia un arco che interseca entrambi i lati dell'angolo; poi con la stessa apertura dai due punti di intersezione si trovano due archi il cui incrocio indica la direzione della bisettrice",
+          "testo": "Si traccia un arco dal vertice, poi due archi uguali dai punti trovati: il loro incrocio dà la bisettrice",
           "corretto": true,
           "feedback": "Esatto! La costruzione euclidea della bisettrice: (1) arco dal vertice → punti A e B sui lati; (2) archi da A e B con stessa apertura → punto C; (3) la retta dal vertice a C è la bisettrice."
         },
@@ -160,7 +160,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché il lato di un esagono regolare inscritto è uguale al raggio della circonferenza — si può dimostrare geometricamente che il triangolo formato da due raggi e un lato è equilatero",
+          "testo": "Perché nell'esagono regolare inscritto il lato è uguale al raggio della circonferenza",
           "corretto": true,
           "feedback": "Esatto! Questo è il teorema fondamentale: il lato dell'esagono regolare inscritto = raggio della circonferenza. I 6 triangoli isosceli formati dai raggi e dai lati sono equilateri (tre lati uguali)."
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "La congruenza dei triangoli (LLL): i triangoli PAQ e PBQ hanno tutti e tre i lati uguali, quindi gli angoli APQ e BPQ sono uguali e siccome insieme formano 180°, ciascuno è 90°",
+          "testo": "La congruenza dei triangoli: due triangoli con i tre lati uguali hanno angoli uguali",
           "corretto": true,
           "feedback": "Esatto! Quando PA = PB (stesso arco dal punto P) e QA = QB (stessa apertura del compasso da A e da B), per il caso LLL i triangoli PAQ e PBQ sono congruenti, quindi l'angolo è 90°."
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché si basa sul teorema di Talete: se due trasversali tagliano un fascio di rette parallele, lo fanno in segmenti proporzionali — quindi se i punti sulla semiretta ausiliaria sono equidistanti, i segmenti su AB lo sono anch'essi",
+          "testo": "Perché si basa sul teorema di Talete: rette parallele tagliano segmenti proporzionali",
           "corretto": true,
           "feedback": "Esatto! Il testo lo spiega: 'È il teorema di Talete: se due rette trasversali tagliano un fascio di rette parallele, lo fanno in segmenti proporzionali.' I punti equidistanti sulla semiretta generano automaticamente punti equidistanti su AB."
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "La standardizzazione delle convenzioni grafiche attraverso norme internazionali (UNI/ISO): stessi tipi di linee, stessa disposizione delle viste, stesse scale — in tutto il mondo",
+          "testo": "Norme internazionali (UNI/ISO) che fissano ovunque gli stessi tipi di linee, viste e scale",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'un linguaggio grafico preciso, con regole uguali per tutti, capito allo stesso modo in Italia, in Giappone, in Brasile.' Le norme UNI (Ente Nazionale Italiano di Unificazione) adottano le norme europee EN e internazionali ISO."
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Ha introdotto le viste multiple: disegnare lo stesso oggetto di fronte, di lato, dall'alto e in sezione, invece di una sola vista prospettica",
+          "testo": "Le viste multiple: lo stesso oggetto di fronte, di lato, dall'alto e in sezione",
           "corretto": true,
           "feedback": "Esatto! Prima di Leonardo, un disegno tecnico mostrava l'oggetto in prospettiva come una fotografia. Leonardo introdusse le viste multiple: ogni vista da una direzione diversa rivela informazioni diverse. Questa intuizione è ancora la base del disegno meccanico moderno."
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "Si appoggia una squadra al righello (o all'altra squadra) come guida; la seconda squadra scorre lungo il bordo della prima — ogni linea tracciata è parallela alla precedente",
+          "testo": "Una squadra fa da guida ferma; l'altra scorre lungo il suo bordo e traccia linee parallele",
           "corretto": true,
           "feedback": "Esatto! Il testo spiega: 'Appoggia una squadra al righello. Fai scorrere la seconda squadra lungo il bordo della prima. La linea che tracci è sempre parallela alla precedente.'"
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "Il triangolo equilatero si costruisce con la stessa apertura del compasso del raggio della circonferenza; poiché i triangoli equilateri hanno angoli di 60°, sei di essi coprono esattamente i 360° della circonferenza",
+          "testo": "Sei triangoli equilateri, con angoli di 60°, riempiono i 360° attorno al centro: il lato vale il raggio",
           "corretto": true,
           "feedback": "Esatto! Il lato del triangolo equilatero = raggio usato. Applicando la stessa costruzione 6 volte partendo da un punto della circonferenza, si ottengono 6 vertici equidistanti — l'esagono regolare."
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Chi impara le costruzioni geometriche capisce cosa fa il computer quando esegue operazioni geometriche in CAD: non è solo un utilizzatore passivo di software, ma comprende i principi sottostanti",
+          "testo": "Chi conosce le costruzioni geometriche capisce che cosa fa il CAD, e non lo usa in modo passivo",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Chi impara le costruzioni geometriche con gli strumenti fisici capisce cosa fa il computer — non è solo un utilizzatore passivo di software.' I programmi CAD eseguono esattamente le stesse operazioni geometriche che fai con riga e compasso."
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Per riparare un dispositivo serve la documentazione tecnica (disegni, istruzioni) che i produttori spesso non forniscono. Il disegno tecnico è lo strumento con cui quella documentazione viene comunicata",
+          "testo": "Per riparare serve la documentazione tecnica, e il disegno tecnico è il modo in cui la si comunica",
           "corretto": true,
           "feedback": "Esatto! Il testo della sezione OSSERVA nota che 'le aziende sono sempre più obbligate per legge a fornire pezzi di ricambio e istruzioni di riparazione.' Quelle istruzioni sono disegni tecnici che comunicano come smontare e rimontare i componenti."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "La competenza di 'identificazione e raccolta sistematica delle specifiche' è analoga al 'leggere un disegno tecnico': entrambe richiedono saper trovare, leggere e interpretare dati tecnici precisi",
+          "testo": "Raccogliere con metodo le specifiche è come leggere un disegno tecnico: trovare e interpretare dati precisi",
           "corretto": true,
           "feedback": "Esatto! La rubrica dice: 'Trova e registra: processore, RAM, storage, sistema operativo.' Questa raccolta sistematica di specifiche tecniche usa le stesse competenze del disegno tecnico: precisione, metodo, comprensione dei significati tecnici."
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Che i principi geometrici fondamentali (angoli retti, proporzioni, scale) non cambiano nel tempo — cambiano solo gli strumenti (stilo, righello, CAD) ma la matematica sottostante rimane la stessa",
+          "testo": "Che i principi geometrici restano gli stessi: cambiano solo gli strumenti",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'il principio del disegno tecnico — rappresentare la realtà in modo preciso, misurabile e non ambiguo — non è cambiato in 4.000 anni. È cambiato lo strumento.' La matematica è la continuità."
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "I principi di scala di rappresentazione (il territorio reale ridotto a una mappa misurabile), proiezione (dalla 3D reale alla 2D della mappa) e quotatura (ogni punto ha coordinate precise)",
+          "testo": "La scala, la proiezione dal 3D al 2D e le coordinate precise di ogni punto",
           "corretto": true,
           "feedback": "Esatto! Un GIS è un disegno tecnico digitale e interattivo del territorio: usa scale di rappresentazione, proiezioni cartografiche (la stessa logica delle proiezioni ortogonali), e ogni punto ha coordinate precise (equivalente alle quote)."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Dimostra che i triangoli APC e BPC sono congruenti (caso LLL), quindi gli angoli APC e BPC sono uguali, e siccome insieme formano 180°, ciascuno è 90° — ovvero la retta PC è perpendicolare",
+          "testo": "Dimostra con triangoli congruenti che i due angoli sono uguali, quindi di 90° ciascuno",
           "corretto": true,
           "feedback": "Esatto! Il testo spiega: 'I triangoli APC e BPC hanno tutti e tre i lati uguali (PA = PB = d; AC = BC per costruzione; PC in comune). Sono triangoli congruenti (caso LLL). Quindi gli angoli APC e BPC sono uguali. Siccome insieme formano 180°, ciascuno è 90°.'"
         },

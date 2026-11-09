@@ -48,7 +48,7 @@
         },
         {
           "id": "b",
-          "testo": "I cookie tecnici sono necessari per far funzionare il sito (es. sessione di login); i cookie di profilazione tracciano il comportamento per costruire un profilo pubblicitario",
+          "testo": "I tecnici fanno funzionare il sito; quelli di profilazione tracciano ciò che fai per la pubblicità",
           "corretto": true,
           "feedback": "Esatto. I cookie tecnici sono indispensabili (senza di essi il sito non funziona). I cookie di profilazione — spesso di terze parti — seguono la tua navigazione su molti siti diversi per costruire un profilo delle tue preferenze."
         },
@@ -81,7 +81,7 @@
         },
         {
           "id": "b",
-          "testo": "Richiedere la cancellazione dei propri dati personali da una piattaforma, con alcune limitazioni",
+          "testo": "Chiedere la cancellazione dei propri dati personali, con alcuni limiti",
           "corretto": true,
           "feedback": "Esatto. Il diritto all'oblio (Art. 17 GDPR) permette di chiedere la cancellazione dei propri dati. Non è assoluto: le piattaforme possono rifiutare se hanno motivi legali per conservarli (es. obblighi fiscali). Hanno 30 giorni per rispondere."
         },
@@ -114,7 +114,7 @@
         },
         {
           "id": "b",
-          "testo": "Il Regolamento Generale sulla Protezione dei Dati dell'Unione Europea (2016/679), applicato dal 25 maggio 2018",
+          "testo": "Il regolamento dell'Unione Europea sulla protezione dei dati, applicato dal maggio 2018",
           "corretto": true,
           "feedback": "Esatto. GDPR = General Data Protection Regulation, Regolamento UE 2016/679. Adottato nel 2016 e applicato dal 25 maggio 2018 in tutti i paesi dell'Unione Europea. È uno dei sistemi di protezione dei dati più stringenti al mondo."
         },
@@ -147,7 +147,7 @@
         },
         {
           "id": "b",
-          "testo": "Il cyberbullismo è ripetuto, intenzionale e implica uno squilibrio di potere tra chi agisce e chi subisce",
+          "testo": "Il cyberbullismo è ripetuto, intenzionale e con uno squilibrio di potere",
           "corretto": true,
           "feedback": "Esatto. La Legge n. 71/2017 definisce il cyberbullismo attraverso tre criteri: è ripetuto (non un episodio isolato), è intenzionale (non accidentale), e c'è uno squilibrio di potere (es. molti contro uno, o anonimato)."
         },
@@ -180,7 +180,7 @@
         },
         {
           "id": "b",
-          "testo": "Non salva cronologia, cookie e password sul tuo dispositivo — ma il tuo IP rimane visibile ai siti e al provider internet",
+          "testo": "Non salva cronologia e cookie sul dispositivo, ma il tuo IP resta visibile ai siti",
           "corretto": true,
           "feedback": "Esatto. La modalità privata protegge solo la privacy locale (sul tuo dispositivo): nessun altro che usa quel computer vedrà la cronologia. Ma non cifra il traffico: il provider e i siti visitati vedono comunque la tua attività."
         },
@@ -213,7 +213,7 @@
         },
         {
           "id": "b",
-          "testo": "Identifica il browser attraverso la combinazione di caratteristiche tecniche (OS, risoluzione, font, plugin) senza salvare alcun file — diversamente dai cookie che richiedono un file",
+          "testo": "Riconosce il browser dalla combinazione delle sue caratteristiche tecniche, senza salvare alcun file",
           "corretto": true,
           "feedback": "Esatto. Il fingerprinting analizza dozzine di caratteristiche del tuo browser e dispositivo. La combinazione è statisticamente unica o quasi. Eliminando i cookie non lo blocchi: non c'è nessun file da eliminare."
         },
@@ -279,7 +279,7 @@
         },
         {
           "id": "b",
-          "testo": "Le policy di Facebook dell'epoca permettevano alle app di raccogliere i dati degli amici degli utenti senza il loro consenso: 270.000 utenti × ~300 amici = ~87 milioni di profili",
+          "testo": "Allora Facebook lasciava alle app raccogliere anche i dati degli amici di chi le usava",
           "corretto": true,
           "feedback": "Esatto. All'epoca Facebook permetteva alle app di raccogliere non solo i dati dell'utente che le installava, ma anche quelli di tutti i suoi amici. 270.000 utenti diretti × media ~300 amici = ~87 milioni di profili, senza che quegli amici avessero mai acconsentito."
         },
@@ -312,7 +312,7 @@
         },
         {
           "id": "b",
-          "testo": "Si svolge un'asta automatica (Real-Time Bidding) tra centinaia di inserzionisti che offrono per mostrarti il loro annuncio basandosi sul tuo profilo",
+          "testo": "Un'asta automatica: centinaia di inserzionisti fanno offerte per mostrarti il loro annuncio",
           "corretto": true,
           "feedback": "Esatto. Il Real-Time Bidding è un'asta lampo: in ~50ms centinaia di reti pubblicitarie accedono al tuo profilo (costruito dai cookie) e fanno offerte automatiche. Chi offre di più vince e mostra il suo annuncio."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Può chiedere direttamente alle piattaforme la rimozione dei contenuti; il questore può ammonire l'autore senza denuncia penale formale",
+          "testo": "Può chiedere alle piattaforme la rimozione; il questore può ammonire l'autore senza processo",
           "corretto": true,
           "feedback": "Esatto. La legge prevede due strumenti rapidi: (1) la vittima minorenne (o un genitore) può chiedere direttamente alla piattaforma la rimozione dei contenuti entro 24 ore; (2) il questore può emettere un'ammonizione verso l'autore senza procedimento penale."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "La lista degli amici, le foto con geolocalizzazione e i commenti in gruppi 'chiusi' — sembrano privati ma sono accessibili a molti",
+          "testo": "Lista amici, foto geolocalizzate e commenti in gruppi 'chiusi': sembrano privati ma non lo sono",
           "corretto": true,
           "feedback": "Esatto. I gruppi 'chiusi' su Facebook possono avere migliaia di membri. Le foto con geolocalizzazione rivelano abitudini, luoghi frequentati, domicilio. La lista degli amici può rivelare affiliazioni politiche o religiose."
         },
@@ -411,7 +411,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché è sancita dalla Carta dei Diritti UE (Art. 8), tutela la libertà di pensiero e associazione, e — come mostra Cambridge Analytica — la sua violazione può influenzare elezioni",
+          "testo": "Perché è sancita dalla Carta dei diritti UE e protegge la libertà di pensiero e di voto",
           "corretto": true,
           "feedback": "Esatto. La privacy non è solo comfort personale: è un pilastro della democrazia. Senza privacy, non c'è libertà di pensiero, associazione o voto. Cambridge Analytica ha dimostrato che la raccolta massiva di dati può influenzare il comportamento elettorale di milioni di persone."
         },
@@ -444,7 +444,7 @@
         },
         {
           "id": "b",
-          "testo": "I dati psicologici di 87 milioni di persone furono usati per targetizzare messaggi politici personalizzati — dimostrando che la privacy individuale ha conseguenze collettive e può influenzare elezioni",
+          "testo": "Che i dati di milioni di persone, usati per messaggi politici su misura, possono pesare sulle elezioni",
           "corretto": true,
           "feedback": "Esatto. Cambridge Analytica costruì profili psicologici degli elettori usando i dati Facebook e li usò per inviare messaggi politici su misura per le paure e i valori di ciascuno. La privacy non era solo una questione individuale: la sua violazione influenzò (o tentò di influenzare) il risultato di elezioni."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché rivelano preferenze reali e non dichiarate — non ciò che dici di preferire, ma ciò che fai davvero — e non sono falsificabili come i dati del profilo",
+          "testo": "Perché rivelano ciò che fai davvero, non ciò che dichiari, e sono difficili da falsificare",
           "corretto": true,
           "feedback": "Esatto. Nel profilo puoi scrivere qualsiasi cosa. I dati comportamentali no: il tempo passato su un video, il punto esatto dove hai smesso di guardare, i post su cui ti sei fermato nel feed rivelano preferenze autentiche che non falsifichi consapevolmente."
         },
@@ -510,7 +510,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché chiunque ha visto la foto può averne fatto uno screenshot, copie possono esistere su server terzi, la Wayback Machine può averne una versione archiviata — il contenuto esiste indipendentemente dall'originale",
+          "testo": "Perché possono esistere screenshot e copie su altri server, fuori dal controllo della piattaforma",
           "corretto": true,
           "feedback": "Esatto. Il diritto all'oblio rimuove la fonte originale, ma non le copie già distribuite: screenshot salvati da altri, versioni in cache dei motori di ricerca, archivi web come archive.org, copie su altri server. Ogni contenuto pubblicato può avere una vita indipendente dall'originale."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "Cyberbullismo (L. 71/2017) = comportamento ripetuto verso un individuo specifico; hate speech (Art. 604-bis c.p.) = incitamento all'odio verso gruppi per caratteristiche identitarie — possono sovrapporsi",
+          "testo": "Il cyberbullismo colpisce più volte una persona; l'hate speech incita all'odio verso un gruppo: possono sovrapporsi",
           "corretto": true,
           "feedback": "Esatto. Un attacco ripetuto online verso una persona per la sua etnia, religione o orientamento sessuale può configurare entrambi: cyberbullismo (ripetuto verso individuo, L. 71/2017) e hate speech (incitamento odio per caratteristiche identitarie, Art. 604-bis c.p.)."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "Il GDPR richiede una base legale per qualsiasi trattamento di dati personali, incluso l'addestramento AI; i modelli possono memorizzare e riprodurre informazioni personali presenti nel corpus",
+          "testo": "Il GDPR chiede una base legale anche per addestrare l'IA, e i modelli possono riprodurre dati personali",
           "corretto": true,
           "feedback": "Esatto. Due questioni distinte: (1) legale — il trattamento dei dati per addestramento AI richiede una base legale GDPR (consenso, legittimo interesse, contratto); (2) tecnica — i modelli possono memorizzare e riprodurre informazioni personali presenti nel corpus di addestramento."
         },

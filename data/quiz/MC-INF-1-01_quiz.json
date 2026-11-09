@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La più piccola unità di informazione digitale, che può valere solo 0 oppure 1",
+          "testo": "La più piccola unità di informazione: vale 0 oppure 1",
           "corretto": true,
           "feedback": "Esatto! Il bit (binary digit) è la cifra binaria: la più piccola informazione possibile, e può valere solo 0 o 1."
         },
@@ -81,7 +81,7 @@
         },
         {
           "id": "b",
-          "testo": "È un minuscolo interruttore elettronico che può essere acceso (1) o spento (0)",
+          "testo": "È un minuscolo interruttore: acceso (1) o spento (0)",
           "corretto": true,
           "feedback": "Esatto! Il transistor funziona come un interruttore: può essere in due stati — corrente che passa (1) o corrente che non passa (0). Miliardi di transistor, accesi e spenti miliardi di volte al secondo, realizzano tutta l'informatica moderna."
         },
@@ -345,7 +345,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché ASCII copriva solo 128 caratteri, insufficienti per le lingue non latine e gli emoji",
+          "testo": "Perché ASCII aveva solo 128 caratteri: troppo pochi",
           "corretto": true,
           "feedback": "Esatto! ASCII con 7 bit copre solo 128 caratteri: lettere latine, numeri e punteggiatura di base. Non aveva à, è, ü, caratteri cinesi, arabi, hindi o emoji. Unicode risolve questo assegnando un codice univoco a oltre 140.000 caratteri in più di 150 sistemi di scrittura."
         },
@@ -378,7 +378,7 @@
         },
         {
           "id": "b",
-          "testo": "Gottfried Wilhelm Leibniz nel 1703",
+          "testo": "Gottfried Leibniz nel 1703",
           "corretto": true,
           "feedback": "Esatto! Leibniz descrisse il sistema binario nel 1703 in un articolo chiamato 'Explication de l'Arithmétique Binaire'. All'epoca non esisteva nessun computer: Leibniz aveva capito che due soli simboli bastano per rappresentare qualsiasi numero."
         },
@@ -477,7 +477,7 @@
         },
         {
           "id": "b",
-          "testo": "UTF-8 è compatibile con ASCII per i primi 128 caratteri e usa bytes aggiuntivi solo per i caratteri non ASCII",
+          "testo": "UTF-8 coincide con ASCII per i primi 128 caratteri e usa byte in più solo per gli altri",
           "corretto": true,
           "feedback": "Esatto! UTF-8 è un sistema intelligente: usa 1 byte per i caratteri ASCII (0–127), garantendo piena compatibilità con i vecchi sistemi ASCII. Usa 2–4 byte solo per i caratteri non ASCII. Questo permette di supportare tutte le lingue del mondo senza sprecare spazio nei testi principalmente in inglese."
         },
@@ -543,7 +543,7 @@
         },
         {
           "id": "b",
-          "testo": "JPEG usa compressione lossy (perde dati) e ottiene file molto più piccoli; PNG usa compressione lossless (conserva tutti i dati) e produce file più grandi ma senza perdita di qualità",
+          "testo": "JPEG comprime perdendo dati e dà file piccoli; PNG conserva tutto e dà file più grandi",
           "corretto": true,
           "feedback": "Esatto! JPEG scarta informazioni visive considerate impercettibili all'occhio umano (ad es. variazioni fini di colore) ottenendo compressioni 10:1 o più. PNG conserva tutti i dati originali ma ottiene compressioni più modeste. Per fotografie si usa JPEG; per immagini con testo o aree di colore uniforme si usa PNG."
         },
@@ -576,7 +576,7 @@
         },
         {
           "id": "b",
-          "testo": "8 bit/canale va scelto se la gamma dinamica di 256 livelli è sufficiente e il volume di dati è un vincolo; 16 bit/canale quando servono gradazioni fini o post-elaborazione intensiva",
+          "testo": "8 bit se 256 livelli bastano e i dati vanno contenuti; 16 bit se servono gradazioni fini",
           "corretto": true,
           "feedback": "Esatto! 8 bit/canale = 256 livelli per componente colore, sufficiente per la maggior parte delle applicazioni visive. 16 bit/canale = 65.536 livelli: utile per rilevare difetti sottili, analisi scientifiche o quando si prevede post-elaborazione con molte trasformazioni (che con 8 bit degraderebbero l'immagine). Il costo: doppio spazio e doppia banda."
         },

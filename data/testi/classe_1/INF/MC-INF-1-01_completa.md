@@ -12,7 +12,7 @@
 > *(Script completo: MC-INF-1-01_hook-script.md)*
 
 **Domanda di avvio:**
-Quanti materiali diversi pensi che ci siano in una fotografia digitale?
+Quanti colori diversi pensi che ci siano in una fotografia digitale?
 
 Non colori — numeri. Ogni foto sul tuo telefono è una sequenza di numeri. Solo numeri.
 Scopri come funziona — e perché due cifre bastano per tutto.
@@ -20,6 +20,71 @@ Scopri come funziona — e perché due cifre bastano per tutto.
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Una foto, una canzone, un messaggio: dentro un computer sono tutti la stessa cosa. Numeri. E quei numeri sono scritti con due sole cifre, 0 e 1.
+
+**Perché proprio due cifre**
+
+Pensa a un interruttore della luce: è acceso o spento, non esiste "a metà". Dentro un computer ci sono miliardi di interruttori piccolissimi, i **transistor**. In ognuno la corrente passa oppure non passa. Passa vale 1, non passa vale 0.
+
+Scrivere i numeri usando solo 0 e 1 si chiama **sistema binario**.
+
+**Contare in binario**
+
+Tu conti con dieci cifre, da 0 a 9. Quando le hai finite scrivi 10. In binario le cifre sono due, quindi finiscono subito: dopo 0 e 1 devi già scrivere 10. Ma quel "10" vale due, non dieci.
+
+| Come lo scrivi tu | In binario |
+|-------------------|------------|
+| 0 | 0 |
+| 1 | 1 |
+| 2 | 10 |
+| 3 | 11 |
+| 4 | 100 |
+| 5 | 101 |
+
+> ✋ **Tocca a te.** Guarda la tabella e continua tu: come si scrivono 6, 7 e 8 in binario? Poi alza le dita di una mano: dito su vale 1, dito giù vale 0. Qual è il numero più grande che riesci a mostrare con cinque dita?
+
+**Bit e byte**
+
+Ogni cifra binaria si chiama **bit**. È l'informazione più piccola che esista: 0 oppure 1.
+
+Con 1 bit puoi dire 2 cose. Con 2 bit ne puoi dire 4. A ogni bit che aggiungi le possibilità raddoppiano. Con 8 bit arrivi a 256.
+
+Otto bit insieme formano un **byte**. Una lettera di un testo occupa più o meno un byte.
+
+**Come una foto diventa numeri**
+
+Una foto è fatta di puntini colorati, i **pixel**. Ingrandisci al massimo una foto e li vedi: tanti quadratini.
+
+Ogni pixel ha un colore, e ogni colore si ottiene mescolando tre luci: rosso, verde e blu. Questo sistema si chiama **RGB**. Per ognuna delle tre luci c'è un numero da 0 a 255, che dice quanta ce n'è. Quindi ogni pixel è fatto di tre numeri, cioè tre byte.
+
+Una foto da 12 milioni di pixel, prima di essere compressa, è fatta di 36 milioni di numeri.
+
+> ✋ **Tocca a te.** Un pixel ha rosso 255, verde 0, blu 0. Di che colore è? E se tutti e tre valgono 0? E se tutti e tre valgono 255? Scrivi le tue previsioni, poi le verifichiamo nel laboratorio.
+
+**Quanto spazio occupa**
+
+I byte si contano a gruppi, come i grammi e i chili.
+
+| Unità | Quanti byte, circa |
+|-------|--------------------|
+| kilobyte (KB) | mille |
+| megabyte (MB) | un milione |
+| gigabyte (GB) | un miliardo |
+
+Una foto pesa qualche megabyte. Un telefono da 128 GB può contenere circa 128 miliardi di byte.
+
+> 📍 **Qui da noi.** A casa, guarda nelle impostazioni di un telefono o di un computer quanta memoria è occupata e da che cosa. Che cosa occupa più spazio: foto, video o app? Porta in classe la risposta.
+
+**In tre righe**
+
+- Un computer rappresenta tutto con numeri scritti in binario, cioè con 0 e 1.
+- Un bit è una cifra binaria, un byte sono 8 bit.
+- Una foto è una griglia di pixel, e ogni pixel è fatto di tre numeri: rosso, verde, blu.
+
+---
 
 ### Tutto quello che il computer "vede" è un numero.
 
@@ -317,6 +382,8 @@ Scrivi una proposta tecnica di 8-10 righe che spiega: quanti bit hai scelto, per
 La tua scuola vuole creare un archivio digitale delle fotografie storiche del quartiere. Avete ricevuto 200 foto in formato fisico che devono essere scansionate e salvate. Prima di iniziare, il preside vuole sapere quanto spazio servirà sul server.
 
 Sei tu a fare i calcoli.
+
+> 📬 **A chi lo consegni davvero.** Chi in famiglia custodisce le vecchie fotografie. Conta le foto di un album vero e calcola quanto spazio serve per scansionarle. Consegna il calcolo e chiedi: quello spazio in casa c'è?
 
 ---
 

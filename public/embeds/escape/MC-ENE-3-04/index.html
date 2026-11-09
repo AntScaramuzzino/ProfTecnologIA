@@ -461,7 +461,7 @@ html.lim .muted{color:var(--fg);opacity:.85}
   const root = document.documentElement;
   const DESIGN = 1250; // larghezza di progetto del contenuto, in px CSS
   const KEY = "proftec:lim-zoom";
-  const param = new URLSearchParams(location.search).get("lim") === "1";
+  let param = new URLSearchParams(location.search).get("lim") === "1";
   let delta = 0; try { delta = +localStorage.getItem(KEY) || 0; } catch (e) {}
   const canFs = !!(root.requestFullscreen || root.webkitRequestFullscreen);
   const fsEl = () => document.fullscreenElement || document.webkitFullscreenElement;
@@ -489,7 +489,11 @@ html.lim .muted{color:var(--fg);opacity:.85}
     if (fsEl()) return (document.exitFullscreen || document.webkitExitFullscreen).call(document);
     // dentro la pagina della MC lo schermo intero può essere dell'iframe (aperto dalla pagina)
     try { const pd = window.parent !== window && window.parent.document; if (pd && pd.fullscreenElement) return pd.exitFullscreen(); } catch (e) {}
-    if (!param) set(false);
+    // aperta con ?lim=1 (scheda a sé): Esci prova a chiudere la scheda; se il browser non lo consente, torna alla vista normale
+    const viaParam = param; param = false;
+    if (viaParam) { try { history.replaceState(null, "", location.pathname); } catch (e) {} }
+    set(false);
+    if (viaParam && window.parent === window) { try { window.close(); } catch (e) {} }
   }
 
   const btn = mk("button", "lim-btn", '<span aria-hidden="true">⛶</span> Schermo intero (LIM)'); btn.type = "button";

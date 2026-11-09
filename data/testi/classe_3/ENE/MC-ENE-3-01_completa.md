@@ -22,6 +22,74 @@ Scopri qual è il problema, e perché le macchine semplici hanno cambiato la sto
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Aprire una bottiglia con le dita è quasi impossibile. Con un apribottiglie basta un gesto. Non hai più forza di prima: la stai usando meglio. È quello che fanno le macchine semplici.
+
+**Le sei macchine**
+
+Una **macchina semplice** è un oggetto che cambia la forza che applichi: la rende più grande, oppure le cambia direzione. Sono sei: la leva, il piano inclinato, il cuneo, la vite, la carrucola, la ruota con l'asse. Ogni macchina complicata, dalla bicicletta alla gru, è fatta combinando queste.
+
+**Il patto: meno forza, più strada**
+
+In fisica il **lavoro** è la forza moltiplicata per lo spostamento. Si misura in joule.
+
+Lavoro = forza × spostamento
+
+Per alzare uno zaino che pesa 50 newton fino a 0,75 metri, il lavoro è 50 × 0,75 = 37,5 joule. Quel lavoro va fatto comunque. Ma puoi scegliere come: tanta forza per poca strada, oppure poca forza per tanta strada.
+
+Una macchina semplice fa questo scambio. Non regala niente.
+
+Il **vantaggio meccanico** dice quante volte la macchina moltiplica la tua forza. Se vale 5, sposti un carico con una forza cinque volte più piccola, ma devi muovere la mano cinque volte più lontano.
+
+> ✋ **Tocca a te.** Appoggia il righello sul bordo di una gomma, come un'altalena, e metti l'astuccio a un'estremità. Premi con un dito dall'altra parte. Ora sposta la gomma più vicino all'astuccio e riprova. Quando fai meno fatica? E di quanto si alza l'astuccio nei due casi?
+
+**La leva**
+
+La **leva** è un'asta rigida che ruota intorno a un punto fisso, il **fulcro**. Più la tua mano è lontana dal fulcro rispetto al carico, meno forza ti serve.
+
+Ne esistono tre tipi, a seconda di che cosa sta in mezzo.
+
+| Tipo | In mezzo c'è | Esempi | Che cosa fa |
+|------|--------------|--------|-------------|
+| Primo genere | il fulcro | forbici, altalena | dipende da dove sta il fulcro |
+| Secondo genere | il carico | carriola, schiaccianoci | moltiplica sempre la forza |
+| Terzo genere | la forza | pinzette, il tuo braccio | perde forza, guadagna movimento |
+
+Il tuo avambraccio è una leva di terzo genere: il muscolo tira vicino al gomito, e la mano, lontana, si muove molto e in fretta.
+
+**Il piano inclinato e i suoi parenti**
+
+Spingere uno scatolone su una rampa è più facile che alzarlo in verticale: fai più strada, ma con meno forza. È il **piano inclinato**. Più la rampa è lunga rispetto all'altezza, meno fatica fai.
+
+Il cuneo è un piano inclinato che si muove: la lama di un coltello, l'ascia. La vite è un piano inclinato arrotolato a spirale: giri tanto, e lei avanza poco ma con una forza enorme.
+
+**La carrucola**
+
+Una **carrucola** fissa non riduce la forza, ma le cambia direzione: tiri verso il basso e il carico sale. Una carrucola mobile, che sale insieme al carico, dimezza la forza. Combinandone diverse si ottiene il paranco, con cui una persona solleva pesi enormi.
+
+**La ruota con l'asse**
+
+Una ruota grande fissata a un perno piccolo: giri la ruota con poca forza, e il perno gira con molta. Il volante, la maniglia di un rubinetto, il cacciavite.
+
+**Niente è gratis: il rendimento**
+
+Nella realtà una parte del lavoro si perde sempre, soprattutto in calore, per colpa dell'**attrito**. Il **rendimento** dice quale percentuale del lavoro speso diventa utile. Non arriva mai al 100%. Per questo una macchina che funziona per sempre senza ricevere energia non può esistere.
+
+E Archimede? Con una leva abbastanza lunga la forza basterebbe davvero a sollevare la Terra. Il problema è il patto: avrebbe dovuto muovere la sua estremità per una distanza impossibile da immaginare.
+
+> ✋ **Tocca a te.** Una rampa lunga 6 metri supera un dislivello di 1 metro. Quanto vale il vantaggio meccanico? Per spingere su quella rampa un carico che pesa 600 newton, quanta forza serve, senza contare l'attrito?
+
+> 📍 **Qui da noi.** Caccia alle macchine semplici. Tra casa, scuola e strada trovane almeno una per tipo: una leva, una rampa, una vite, una carrucola, una ruota con l'asse, un cuneo. Fotografale o disegnale, e per ognuna scrivi dove applichi la forza e dove sta il carico.
+
+**In tre righe**
+
+- Una macchina semplice scambia forza con strada: meno forza, più spostamento.
+- Le macchine sono sei: leva, piano inclinato, cuneo, vite, carrucola, ruota con l'asse.
+- Una parte del lavoro si perde sempre in attrito: il rendimento è sempre minore del 100%.
+
+---
+
 ### Il segreto delle macchine semplici: fare di più con meno fatica
 
 Hai mai aperto un tappo di bottiglia con le mani nude? È possibile, ma richiede molta forza. Poi hai preso un apribottiglie e il tappo è saltato via con un gesto leggero. Quella differenza — tra la forza che applichi e il risultato che ottieni — è esattamente quello che studierai in questa MC.
@@ -395,6 +463,8 @@ Per ogni oggetto, misura le grandezze necessarie e calcola il vantaggio meccanic
 Tua cugina ha 8 anni e sta guardando i lavori di costruzione di un edificio vicino a casa vostra. Vede una gru che solleva travi di acciaio pesanti come tre automobili. Ti fa la domanda più naturale del mondo: "Ma come fa quella macchina gigante a sollevare cose così pesanti?"
 
 Tu sai rispondere. E mentre le spieghi, ti rendi conto di una cosa: ogni macchina semplice che conosci esiste già intorno a te, ogni giorno.
+
+> 📬 **A chi lo consegni davvero.** Un bambino vero: un fratello, una cugina, un alunno della primaria. Dopo la tua spiegazione chiedigli di rispiegarla con parole sue. Se ci riesce, la spiegazione funziona.
 
 ---
 

@@ -22,6 +22,66 @@ Scopri cosa si nasconde dietro il prezzo al distributore, e perché la velocità
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Quando un'auto accende il motore libera energia rimasta chiusa sottoterra per milioni di anni. È un'energia comodissima, che ha costruito il mondo moderno. Ha due difetti: finisce, e bruciandola cambiamo il clima.
+
+**Che cosa vuol dire "non rinnovabile"**
+
+Una **fonte non rinnovabile** è una fonte di energia che si forma in tempi lunghissimi e che consumiamo molto più in fretta di quanto si rigeneri. Sono i **combustibili fossili**, cioè petrolio, gas naturale e carbone, e l'uranio delle centrali nucleari.
+
+Oggi circa quattro quinti dell'energia usata nel mondo vengono ancora dai fossili.
+
+**Petrolio**
+
+Nasce dai resti di minuscoli organismi marini, sepolti sotto strati di roccia e trasformati da pressione e calore in decine di milioni di anni. Si estrae con le trivelle e si porta in **raffineria**, dove viene scaldato e separato nei suoi componenti: benzina, gasolio, carburante per aerei, bitume per le strade.
+
+E non è solo carburante: dal petrolio vengono anche quasi tutte le plastiche, molte fibre dei vestiti, i detersivi.
+
+**Gas naturale**
+
+È fatto soprattutto di metano. È il fossile che inquina meno quando brucia: circa metà dell'anidride carbonica del carbone, a parità di energia. Ma il metano che sfugge dai tubi e dai pozzi senza bruciare scalda l'atmosfera molto più dell'anidride carbonica.
+
+**Carbone**
+
+È una roccia nata da antiche foreste. È il più abbondante e il più inquinante: bruciando produce più anidride carbonica di tutti, oltre a fumi e polveri dannosi.
+
+> ✋ **Tocca a te.** Guarda intorno a te, in aula. Trova cinque cose che esistono grazie al petrolio, non solo come carburante. Pensa a materiali, vestiti, oggetti. Poi confronta la lista con il compagno: quale vi ha sorpreso di più?
+
+**Nucleare**
+
+Una centrale nucleare non brucia niente. Usa la **fissione**: il nucleo di un atomo di uranio viene spezzato e libera calore. Il calore produce vapore, il vapore fa girare una turbina, la turbina produce elettricità. Un grammo di uranio dà l'energia di tonnellate di carbone.
+
+I vantaggi: quasi nessuna emissione di anidride carbonica e produzione continua, giorno e notte.
+
+Gli svantaggi: le scorie restano radioattive e pericolose per migliaia di anni, costruire una centrale costa moltissimo e richiede molti anni, e un incidente, anche se raro, può essere gravissimo. Su questa fonte le opinioni sono divise, anche tra gli esperti.
+
+**Perché bruciare scalda il pianeta**
+
+Bruciare un combustibile fossile vuol dire unire il suo carbonio all'ossigeno dell'aria. Il risultato è calore e **anidride carbonica**, la CO₂. Un litro di benzina ne produce più di due chili.
+
+La Terra ha una coperta naturale di gas che trattiene una parte del calore del Sole: è l'**effetto serra**, e senza di esso il pianeta sarebbe ghiacciato. Il problema è che stiamo ispessendo la coperta. Dall'inizio dell'epoca industriale la CO₂ nell'aria è aumentata di circa la metà, e la temperatura media è già salita di oltre un grado. È il **cambiamento climatico**.
+
+E ci sono effetti che si rinforzano da soli. Il ghiaccio che si scioglie lascia scoperto il mare scuro, che assorbe più calore, e fa sciogliere altro ghiaccio.
+
+Nel 2015, con l'Accordo di Parigi, quasi tutti i paesi si sono impegnati a contenere il riscaldamento. Con le politiche attuali quel traguardo non viene raggiunto.
+
+**Il conto di un volo**
+
+Un volo di andata tra l'Italia e New York emette, per ogni passeggero, alcune centinaia di chili di CO₂. Un viaggio in treno veloce tra Roma e Milano ne emette pochi chili.
+
+> ✋ **Tocca a te.** Un'auto consuma 6 litri di benzina ogni 100 chilometri. Ogni litro bruciato produce circa 2,3 chili di CO₂. Quanti chili di CO₂ per un viaggio di 100 chilometri? E in un anno di 10.000 chilometri?
+
+> 📍 **Qui da noi.** Con che cosa si scaldano le case nel tuo paese: metano, gasolio, legna, pellet, pompe di calore? E l'acqua calda? Chiedi a casa e a due vicini. Costruiremo il grafico delle fonti di energia della classe.
+
+**In tre righe**
+
+- Petrolio, gas, carbone e uranio sono fonti non rinnovabili: si consumano molto più in fretta di quanto si formino.
+- Bruciare i fossili produce CO₂, che rinforza l'effetto serra e cambia il clima.
+- Il nucleare non emette CO₂, ma lascia scorie e divide le opinioni.
+
+---
+
 ### L'energia nascosta nei combustibili: milioni di anni in un serbatoio
 
 Quando accendi il motore di un'automobile, stai liberando energia che è stata immagazzinata nel sottosuolo per decine o centinaia di milioni di anni. Quella energia non è stata "prodotta" dall'umanità — è stata estratta da un deposito che la Terra ha formato attraverso processi geologici lentissimi. Il problema è che stiamo prelevando da quel deposito milioni di volte più in fretta di quanto si ricarichi.
@@ -166,7 +226,7 @@ Il target dell'Accordo di Parigi (2015) è limitare il riscaldamento a +1,5°C r
 
 **Per confronto:** il treno Roma-Milano (circa 600 km) emette circa **6-8 kg di CO₂ per passeggero** (con il treno ad alta velocità italiano alimentato principalmente da energia elettrica, in un paese con il 40% di rinnovabili nel mix).
 
-Il volo trasatlastico produce quindi circa **70-100 volte più emissioni** rispetto allo stesso numero di chilometri in treno.
+Il volo transatlantico produce quindi circa **70-100 volte più emissioni** rispetto allo stesso numero di chilometri in treno.
 
 > 💡 **La media italiana:** l'impronta di carbonio media pro capite in Italia è di circa 7-8 tonnellate di CO₂ equivalente all'anno (IEA 2022). Un singolo volo transoceanico equivale all'8% dell'intera impronta annua. Questo dato è utile per contestualizzare le proprie scelte — non per produrre senso di colpa individuale, ma per capire dove le riduzioni sono più efficaci.
 
@@ -365,6 +425,8 @@ Un intervento di isolamento termico (cappotto esterno, finestre a triplo vetro) 
 ### Lo scenario
 
 I tuoi genitori stanno pensando di comprare una nuova automobile. Stanno discutendo se prendere un'auto a benzina (costo più basso di acquisto) o un'auto elettrica (costo più alto di acquisto, ma carburante più economico). Ti chiedono di aiutarli a ragionare sul problema — non solo in base al costo, ma anche sull'impatto ambientale.
+
+> 📬 **A chi lo consegni davvero.** I tuoi genitori, o un adulto che usa l'auto ogni giorno. Rifai il confronto con i suoi chilometri veri. Chiedi quale numero lo ha sorpreso di più.
 
 ---
 

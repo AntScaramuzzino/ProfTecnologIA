@@ -16,7 +16,7 @@
         },
         {
           "id": "b",
-          "testo": "Il dato grezzo è un numero isolato (es. 21,3°C); il dato contestualizzato aggiunge informazioni (ore 11:00 di novembre, dopo 2 ore di lezione) che lo rendono utile e confrontabile",
+          "testo": "Il dato grezzo è un numero isolato; quello contestualizzato dice anche quando, dove e in che condizioni",
           "corretto": true,
           "feedback": "Esatto! Il testo usa questo esempio: 21,3°C è un dato grezzo. 21,3°C alle ore 11:00 di novembre, con finestra chiusa, dopo 2 ore di lezione è un dato contestualizzato — confrontabile e interpretabile."
         },
@@ -52,7 +52,7 @@
         },
         {
           "id": "b",
-          "testo": "Misura la concentrazione di anidride carbonica in ppm; la soglia raccomandata per il benessere cognitivo è 800 ppm",
+          "testo": "Misura l'anidride carbonica in ppm; la soglia raccomandata è 800 ppm",
           "corretto": true,
           "feedback": "Esatto! L'aria esterna è circa 420 ppm. Nelle aule non ventilate può superare 2.000 ppm. La soglia raccomandata è 800 ppm — oltre 1.200 ppm iniziano stanchezza e difficoltà di concentrazione."
         },
@@ -88,7 +88,7 @@
         },
         {
           "id": "b",
-          "testo": "Il grafico a linee si usa per dati che cambiano nel tempo su scala continua; il grafico a barre per confrontare valori tra categorie distinte",
+          "testo": "Il grafico a linee per dati che cambiano nel tempo; il grafico a barre per confrontare categorie distinte",
           "corretto": true,
           "feedback": "Esatto! L'andamento della temperatura di un'aula nell'arco della giornata → grafico a linee. Il consumo elettrico di cinque classi diverse → grafico a barre."
         },
@@ -124,7 +124,7 @@
         },
         {
           "id": "b",
-          "testo": "Una rete civica di 15.000+ sensori di qualità dell'aria costruiti da cittadini, che ha dimostrato differenze enormi tra quartieri della stessa città invisibili alle reti ufficiali",
+          "testo": "Una rete di migliaia di sensori costruiti da cittadini, che ha rivelato differenze forti tra quartieri",
           "corretto": true,
           "feedback": "Esatto! Il testo: 15.000 sensori in 79 paesi. La mappa mostra differenze di PM2.5 fino al 300% tra una zona trafficata e un parco a 500 metri. Alcuni dati sono stati usati per ottenere modifiche ai piani del traffico."
         },
@@ -160,7 +160,7 @@
         },
         {
           "id": "b",
-          "testo": "Dati pubblicati da enti pubblici liberamente accessibili a chiunque: ARPA pubblica dati di qualità dell'aria, ISPRA pubblica dati ambientali",
+          "testo": "Dati pubblicati da enti pubblici e liberamente accessibili a chiunque",
           "corretto": true,
           "feedback": "Esatto! Gli open data sono pubblicati senza restrizioni. ARPA (qualità dell'aria), ISPRA (dati ambientali), dati meteo: chiunque può scaricarli, usarli, pubblicarli. La faccia opposta dei dati privati delle piattaforme commerciali."
         },
@@ -196,7 +196,7 @@
         },
         {
           "id": "b",
-          "testo": "Registra il consumo elettrico ogni 15 minuti, permettendo di dedurre quando sei a casa, quando vai a dormire, se usi la lavatrice di notte — rivelando abitudini dettagliate",
+          "testo": "Registra i consumi ogni 15 minuti: da lì si deduce quando sei in casa e quali abitudini hai",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'un algoritmo può dedurre da quei dati quando sei in casa, quando sei a letto, se usi la lavatrice la notte, se hai ospiti.' Il consumo elettrico racconta le abitudini con sorprendente precisione."
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "Non funziona per confrontare due torte (mostrare un cambiamento nel tempo) perché gli occhi confrontano angoli e aree con difficoltà; in quel caso meglio due barre affiancate",
+          "testo": "Non va usato per confrontare due torte: l'occhio valuta male angoli e aree, meglio le barre",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'dove sbagliare: confrontare due torte per mostrare un cambiamento nel tempo. Gli occhi umani confrontano angoli e aree con molta difficoltà. In quel caso usa due barre affiancate.'"
         },
@@ -268,7 +268,7 @@
         },
         {
           "id": "b",
-          "testo": "Fa sembrare le differenze tra le barre molto più grandi di quanto siano realmente, ingannando il lettore sulla vera proporzione tra i valori",
+          "testo": "Fa sembrare le differenze tra le barre molto più grandi di quanto sono davvero",
           "corretto": true,
           "feedback": "Esatto! L'asse troncato è uno dei trucchi più diffusi: 'un'azienda che mostra profitti con asse che parte da 950M invece di 0 fa sembrare un aumento da 955 a 970M (1,5%) come se i profitti fossero raddoppiati.'"
         },
@@ -304,7 +304,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché entrambe (CO₂ e temperatura) aumentano quando entrano più studenti nell'aula — la causa comune è la presenza di persone, non una relazione diretta tra le due variabili",
+          "testo": "Perché entrambe salgono quando entrano più persone: la causa comune è la presenza degli studenti",
           "corretto": true,
           "feedback": "Esatto! Il testo usa questo esempio: 'la causa comune è la presenza di persone, che respirano (CO₂) e emanano calore. Non è la temperatura a produrre CO₂.' Sempre chiedersi: esiste una terza variabile C che causa sia A che B?"
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Misura quanto i valori si discostano dalla media: alta deviazione standard = alta variabilità. Un'aula che oscilla tra 15°C e 25°C ha la stessa media di una stabile a 20°C, ma comfort completamente diverso",
+          "testo": "Misura quanto i valori si allontanano dalla media: due aule con la stessa media possono avere sbalzi molto diversi",
           "corretto": true,
           "feedback": "Esatto! Il testo usa questo esempio: 15°C e 25°C alternati hanno la stessa media di 20°C costante, ma vivibilità completamente diversa. La deviazione standard rivela la variabilità che la media nasconde."
         },
@@ -376,7 +376,7 @@
         },
         {
           "id": "b",
-          "testo": "I sistemi AI assumono che il futuro assomigli al passato. Se i dati di addestramento erano raccolti in condizioni normali, il modello non saprà gestire eventi anomali come ondate di calore fuori dalla norma",
+          "testo": "Il modello presume che il futuro somigli al passato: non sa gestire eventi anomali mai visti nei dati",
           "corretto": true,
           "feedback": "Esatto! Il Box T8 usa questo esempio: se i dati di addestramento vengono da una stazione che funzionava male d'estate, il modello non saprà gestire le ondate di calore — esattamente quando sarebbe più importante prevederle."
         },
@@ -412,7 +412,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché i dati biometrici e di salute (battito cardiaco, sonno) sono 'categorie speciali' GDPR che richiedono consenso esplicito, e in ogni passaggio del percorso possono essere aggregati con altri dati o condivisi con terze parti",
+          "testo": "Perché battito e sonno sono dati sanitari, protetti in modo speciale, e a ogni passaggio possono essere condivisi",
           "corretto": true,
           "feedback": "Esatto! Il percorso: sensore → smartwatch → app → server produttore (spesso USA) → possibile condivisione con partner commerciali. Ogni passaggio è un punto dove i dati possono essere aggregati, analizzati o venduti."
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Formulare ipotesi verificabili: orario di punta del traffico (7:30), eventuale nebbia (alta umidità correlata?), o malfunzionamento del sensore (picco isolato o pattern ripetuto?). Poi cercare dati contestuali per verificare",
+          "testo": "Formulare ipotesi verificabili (traffico, nebbia, guasto del sensore) e cercare altri dati per controllarle",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'la tua spiegazione non deve essere certa — deve essere plausibile e motivata. Scrivi potrebbe essere... non è sicuramente.' Verificare: il picco si ripete tutti i martedì mattina o è isolato? L'umidità era alta quel giorno?"
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Dipende: i dati ambientali aggregati (senza identificatori personali) sono meno problematici, ma il GDPR permette la richiesta di cancellazione. Dipende anche da quali informazioni sulla vita del proprietario si potrebbero dedurre dall'analisi storica",
+          "testo": "Dipende: i dati ambientali anonimi pongono meno problemi, ma possono rivelare abitudini del proprietario",
           "corretto": true,
           "feedback": "Esatto! La domanda del livello Avanzato chiede proprio questo: 'quali informazioni sulla vita del proprietario si potrebbero dedurre dall'analisi di lunga durata di questi dati?' Il diritto all'oblio GDPR esiste ma è complesso applicarlo a dati già pubblicamente diffusi."
         },
@@ -520,7 +520,7 @@
         },
         {
           "id": "b",
-          "testo": "I dati civici sono pubblici, raccolti da cittadini per scopi pubblici e verificabili; quelli commerciali sono opachi, raccolti da piattaforme private per scopi commerciali e difficilmente accessibili all'utente",
+          "testo": "I dati civici sono pubblici e verificabili; quelli commerciali sono opachi e servono scopi privati",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'Questo è l'IoT civico: dati raccolti da cittadini, per cittadini, con scopi pubblici e verificabili. L'opposto dei dati raccolti da piattaforme commerciali — opachi, privati, usati per profitto.'"
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "I pattern sistematici: quale fascia oraria è sempre la più calda, quale giorno della settimana ha un profilo diverso dagli altri (es. weekend vs giorni scolastici)",
+          "testo": "Gli schemi ricorrenti: quali ore e quali giorni sono sempre i più caldi",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'la heatmap permette di vedere subito i pattern: le mattine sono sempre le più fredde, il pomeriggio le più calde, il weekend ha un profilo diverso dai giorni scolastici.' Questo pattern sistematico si vede male in una linea continua."
         },
@@ -592,7 +592,7 @@
         },
         {
           "id": "b",
-          "testo": "Perché ogni dataset ha limiti (frequenza di campionamento, posizione del sensore, periodo temporale) che determinano quali domande si possono e non si possono rispondere con quei dati",
+          "testo": "Perché ogni dataset ha limiti che decidono a quali domande può rispondere e a quali no",
           "corretto": true,
           "feedback": "Esatto! Il testo della consegna AGISCI chiede: 'cosa NON ti dicono i dati? (limiti del dataset, domande a cui non puoi rispondere solo con questi numeri)'. Confondere ciò che i dati mostrano con ciò che i dati provano è un errore comune."
         },
@@ -628,7 +628,7 @@
         },
         {
           "id": "b",
-          "testo": "Sono verificabili, geograficamente precisi, raccolti su periodi lunghi — non aneddoti ma evidenze sistematiche che mostrano pattern reali e confrontabili",
+          "testo": "Sono verificabili, localizzati con precisione e raccolti a lungo: prove sistematiche, non aneddoti",
           "corretto": true,
           "feedback": "Esatto! Il testo dice: 'I dati erano verificabili, geograficamente precisi, raccolti su periodi lunghi — non erano aneddoti ma evidenze.' In alcune città i dati hanno portato a modifiche ai piani del traffico."
         },

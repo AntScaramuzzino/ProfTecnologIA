@@ -11,9 +11,9 @@
 > 🎧 *Ascolta prima di leggere. Durata: 39 sec.*
 
 **Domanda di avvio:**
-Come possiamo nutrire una popolazione mondiale in crescita senza aumentare inutilmente sprechi e pressione su suolo e acqua?
+Quando avrai l'età dei tuoi genitori, sulla Terra saremo quasi 10 miliardi. La terra da coltivare, invece, è quasi tutta già occupata.
 
-La popolazione mondiale potrebbe avvicinarsi ai 10 miliardi di persone intorno alla metà del secolo. Un rapporto FAO del 2017 stimava, nel suo scenario per il 2050, una crescita della produzione agricola di circa il 50% rispetto al 2012, includendo alimenti, mangimi e biocarburanti. È una proiezione legata a ipotesi demografiche ed economiche, non un aumento rispetto a oggi né la previsione che sparirà metà del cibo. Produrre di più non è l’unica risposta: contano anche distribuzione, accesso al cibo, riduzione degli sprechi e uso sostenibile di suolo e acqua.
+Come si fa a sfamare tutti?
 
 La soluzione non è un'unica tecnologia miracolosa. È un insieme di innovazioni che già esistono — alcune da secoli, alcune da pochi anni — che stanno cambiando radicalmente come produciamo, distribuiamo e consumiamo il cibo.
 
@@ -22,6 +22,58 @@ Alcune di queste tecnologie sono già nel tuo supermercato. Alcune sono nei labo
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Usare la tecnologia per il cibo non è una novità. Il pane lievitato, lo yogurt e il formaggio sono biotecnologie vecchie di migliaia di anni. Ogni invenzione è nata da un problema pratico. Oggi il problema è grande: più persone da sfamare, con la stessa terra e meno acqua.
+
+**Il campo che si misura da solo**
+
+Un campo non è tutto uguale: una zona ha sete, un'altra no. L'**agricoltura di precisione** usa sensori nel terreno e **droni** in volo per capire di che cosa ha bisogno ogni zona, e dà acqua e concime solo dove servono. Risultato: meno sprechi e meno pesticidi.
+
+**La fattoria a più piani**
+
+Nel **vertical farming** le piante crescono dentro un edificio, su scaffali uno sopra l'altro, con luci LED al posto del sole e senza terra. Non servono pesticidi e l'acqua consumata è pochissima.
+
+Il limite è la corrente: quelle luci ne consumano tanta. Per ora conviene solo per insalate, erbe aromatiche e fragole.
+
+> ✋ **Tocca a te.** Una fattoria verticale usa pochissima acqua ma moltissima elettricità. Secondo te, dove avrebbe più senso costruirla: in una città del deserto o in una zona di campagna piovosa? Scrivi la scelta e il motivo.
+
+**Microbi al lavoro**
+
+La **fermentazione** fa lavorare microrganismi per trasformare il cibo. Oggi gli stessi microrganismi vengono fatti crescere in grandi vasche d'acciaio, i **bioreattori**, per produrre proteine. Esistono già al supermercato prodotti fatti così a partire da funghi.
+
+**Carne senza allevamento**
+
+La **carne coltivata** parte da poche cellule prese da un animale, senza ucciderlo. Le cellule vengono nutrite in un bioreattore e si moltiplicano fino a formare carne vera.
+
+Il motivo dell'interesse: gli allevamenti producono una parte importante dei gas che scaldano il pianeta. I limiti: costa ancora moltissimo e si ottiene qualcosa di simile alla carne macinata, non una bistecca. È in vendita solo in pochissimi paesi. In Italia una legge del 2023 ne vieta la vendita.
+
+**Insetti nel piatto**
+
+Per produrre un chilo di proteine, i grilli mangiano circa un quarto di quello che mangia un bovino, e consumano pochissima acqua. L'Unione Europea ha autorizzato quattro specie di **insetti** come alimento, e la farina di grillo si può già comprare. L'ostacolo non è tecnico: è l'abitudine. In molte parti del mondo gli insetti si mangiano da sempre.
+
+**Sapere da dove viene**
+
+Un QR code sulla confezione può raccontare tutto il viaggio di un alimento: chi l'ha coltivato, quando è stato raccolto, come è stato trasportato. Si chiama **tracciabilità**.
+
+**Nessuna bacchetta magica**
+
+Nessuna di queste tecnologie risolve tutto da sola. E produrre di più non basta: nel mondo circa un terzo del cibo viene sprecato. Ridurre lo spreco è la "tecnologia" più economica che abbiamo.
+
+> ✋ **Tocca a te.** Dibattito in due minuti con il compagno: assaggeresti un biscotto fatto con farina di grillo? Uno sostiene il sì, l'altro il no. Poi scambiatevi le parti.
+
+> 📍 **Qui da noi.** In una zona calda e con poca pioggia d'estate, quale di queste tecnologie sarebbe più utile agli agricoltori del tuo territorio? Chiedi a un adulto che lavora in campagna che cosa ne pensa.
+
+**In tre righe**
+
+- Sensori, droni e fattorie verticali producono cibo usando meno acqua e meno terra.
+- Carne coltivata, insetti e proteine da fermentazione sono alternative all'allevamento.
+- Ogni tecnologia ha un limite, e sprecare meno resta la prima soluzione.
+
+> 🔎 **Come lo sappiamo?** L'ONU stima circa 9,7 miliardi di persone nel 2050. Un rapporto FAO del 2017 calcolava che per quella data la produzione agricola dovrebbe crescere di circa il 50% rispetto al 2012, contando anche mangimi e biocarburanti. È una proiezione, cioè un calcolo basato su ipotesi, non una certezza.
+
+---
 
 ### La tecnologia al servizio del cibo: non è una novità.
 
@@ -106,7 +158,7 @@ Questa è probabilmente la tecnologia alimentare più controversa e discussa deg
 
 **Come funziona:** Si preleva una piccola quantità di cellule muscolari da un animale (tramite una biopsia non dolorosa). Le cellule vengono messe in un bioreattore con una soluzione nutriente ricca di aminoacidi, vitamine e fattori di crescita. In poche settimane, le cellule si moltiplicano e si differenziano in tessuto muscolare — carne. Non c'è macellazione. Non c'è allevamento intensivo. Il processo usa una frazione dell'acqua e del terreno necessari all'allevamento tradizionale.
 
-**Stato attuale:** Nel 2023, Singapore è il primo Paese al mondo ad autorizzare la vendita al pubblico di pollo coltivato in laboratorio (prodotto dalla californiana Upside Foods). Nel 2024, gli USA hanno approvato la vendita di due prodotti di carne coltivata. In Europa il percorso di approvazione normativa è in corso. Non è ancora disponibile nei supermercati europei, ma potrebbe arrivarci entro il 2027-2030.
+**Stato attuale:** Nel dicembre 2020 Singapore è stato il primo Paese al mondo ad autorizzare la vendita al pubblico di pollo coltivato (prodotto dalla californiana Eat Just). Nel 2023 gli USA hanno approvato la vendita di due prodotti di pollo coltivato, di Upside Foods e Good Meat. Nell'Unione Europea nessun prodotto è ancora autorizzato, e in Italia una legge del 2023 (n. 172) ne vieta produzione e vendita.
 
 **I limiti attuali:** il costo di produzione è ancora molto alto (decine di euro per 100 grammi). La texture e la struttura di un filetto di carne tradizionale sono difficili da replicare (la carne coltivata attuale è più simile a carne macinata). Il consumatore non sempre accetta psicologicamente il prodotto.
 
@@ -410,6 +462,8 @@ Il comitato deve esprimere una valutazione motivata su ciascun prodotto.
 La tua classe pubblica ogni anno un **blog scolastico di tecnologia**. Per questa MC, il tuo contributo è una scheda di analisi di una tecnologia food-tech — scritta per i tuoi coetanei, non per gli adulti.
 
 La scheda deve essere utile, onesta, e non semplificare troppo. I lettori del blog sono studenti delle medie: intelligenti, curiosi, ma non esperti.
+
+> 📬 **A chi lo consegni davvero.** Una classe prima. Legge la tua scheda e segna a margine i punti non chiari. Tu la correggi e la riconsegni. Conta quanti punti oscuri sono rimasti alla seconda lettura.
 
 ---
 

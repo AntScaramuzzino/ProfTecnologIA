@@ -23,6 +23,87 @@ Nelle prossime pagine impari a dominarla — almeno un po'.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+La scossa che prendi toccando una maniglia e la corrente che accende una città sono la stessa cosa: cariche elettriche che si spostano. Per controllarle bastano tre grandezze e una formula.
+
+**Che cos'è la corrente**
+
+In alcuni materiali, come il rame, una parte degli elettroni è libera di muoversi. Sono i **conduttori**. In altri, come plastica e gomma, gli elettroni restano fermi: sono gli isolanti. La **corrente elettrica** è un flusso ordinato di elettroni dentro un conduttore.
+
+**Tre grandezze, pensando all'acqua**
+
+Immagina l'acqua che scorre in un tubo.
+
+- La **tensione** è la spinta, come la pressione dell'acqua. Si misura in volt (V). Una pila stilo ne ha 1,5; la presa di casa 230.
+- L'intensità di **corrente** è quanta carica passa ogni secondo, come la quantità d'acqua che scorre. Si misura in ampere (A).
+- La **resistenza** è l'ostacolo al passaggio, come un tubo stretto. Si misura in ohm (Ω).
+
+**La legge di Ohm**
+
+Le tre grandezze sono legate da una formula sola:
+
+tensione = resistenza × corrente, cioè V = R × I
+
+Se conosci due valori, trovi il terzo. Una pila da 9 volt collegata a una resistenza da 100 ohm fa scorrere 9 : 100 = 0,09 ampere.
+
+A parità di spinta, più resistenza vuol dire meno corrente.
+
+> ✋ **Tocca a te.** Un LED si brucia se lo attraversa troppa corrente. Ha bisogno di 0,02 ampere, e ai capi della resistenza che lo protegge ci sono 3 volt. Di quanti ohm deve essere la resistenza? Usa R = V : I.
+
+**La potenza**
+
+La **potenza** dice quanta energia un apparecchio usa ogni secondo. Si misura in watt (W) e si calcola moltiplicando tensione e corrente: P = V × I.
+
+Per sapere quanta energia consuma nel tempo si moltiplica la potenza per le ore: è il chilowattora della bolletta. Un apparecchio da 2.000 watt acceso un'ora e mezza consuma 3 chilowattora.
+
+**Il circuito**
+
+Un **circuito** è un percorso chiuso in cui la corrente può girare. Se si interrompe in un punto, la corrente si ferma dappertutto: è così che funziona un interruttore.
+
+I componenti si possono collegare in due modi.
+
+| Aspetto | In serie | In parallelo |
+|---|---|---|
+| Come sono collegati | uno dopo l'altro, in fila | ognuno su un ramo suo |
+| Se uno si rompe | si spengono tutti | gli altri restano accesi |
+| Esempio | vecchie luci di Natale | l'impianto di casa |
+
+A casa tua tutto è in parallelo: per questo puoi spegnere una lampada senza spegnere le altre.
+
+**I componenti da conoscere**
+
+- Il resistore limita la corrente e protegge gli altri componenti.
+- Il **LED** emette luce, ma solo se è collegato nel verso giusto: ha un piedino lungo, il positivo, e uno corto.
+- L'interruttore apre e chiude il circuito.
+- Il fusibile è un filo sottile che si rompe apposta se passa troppa corrente.
+
+**Continua e alternata**
+
+Pile e batterie danno corrente continua: scorre sempre nello stesso verso. La presa di casa dà corrente alternata: cambia verso cento volte al secondo. Si usa l'alternata perché si trasporta meglio su lunghe distanze. Il caricatore del telefono la trasforma in continua.
+
+**La sicurezza**
+
+Con le pile si può sperimentare. Con la presa di casa mai: la corrente che fa accendere una lampadina è più che sufficiente a uccidere.
+
+Un **cortocircuito** avviene quando la corrente trova una strada senza resistenza: diventa enorme, i fili si scaldano e può scoppiare un incendio. Per questo esistono i fusibili e, nel quadro di casa, il salvavita.
+
+**Il passo dopo**
+
+Miliardi di interruttori microscopici stanno dentro un chip grande come un'unghia. Con una scheda come Arduino puoi comandare tu un circuito: scrivi un programma che accende e spegne un LED, legge un sensore, fa partire un motore.
+
+> ✋ **Tocca a te.** Disegna due circuiti con una pila e due lampadine: uno in serie e uno in parallelo. In quale dei due, svitando una lampadina, l'altra resta accesa? Segna con le frecce il percorso della corrente.
+
+> 📍 **Qui da noi.** A casa, con un adulto: guarda la targhetta di tre apparecchi, per esempio phon, televisore e caricatore del telefono. Quanti watt c'è scritto? Qual è il più "affamato"? Portiamo i numeri in classe e li mettiamo in classifica.
+
+**In tre righe**
+
+- Tensione, corrente e resistenza sono legate dalla legge di Ohm: V = R × I.
+- In serie i componenti dipendono l'uno dall'altro, in parallelo sono indipendenti.
+- Con le pile si sperimenta; con la presa di casa mai.
+
+---
+
 ### L'elettricità: cos'è davvero?
 
 Ogni materiale è fatto di atomi. Ogni atomo ha un nucleo con protoni (carica positiva) e intorno al nucleo orbitano elettroni (carica negativa). Nella maggior parte dei materiali, protoni ed elettroni si bilanciano: l'atomo è neutro.
@@ -470,6 +551,8 @@ void loop() {
 La scuola vuole installare un sistema di segnalazione luminosa nel corridoio: un LED verde che si accende quando la porta dell'aula è aperta (segnala che si può entrare senza disturbare), e un LED rosso che si accende quando la porta è chiusa (lezione in corso — non bussare).
 
 Il progetto iniziale prevede una batteria da 9V, un’autonomia di almeno 30 giorni con utilizzo per 8 ore al giorno e un montaggio su breadboard senza saldature. Verifica se questi requisiti sono compatibili con un LED acceso a 15 mA; se non lo sono, proponi una riprogettazione.
+
+> 📬 **A chi lo consegni davvero.** Un docente che fa lezione su quel corridoio. Prova il prototipo sulla sua porta per un giorno. Chiedi: lo terresti? Che cosa cambieresti?
 
 ---
 

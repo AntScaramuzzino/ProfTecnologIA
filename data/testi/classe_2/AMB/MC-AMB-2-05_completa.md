@@ -29,6 +29,61 @@ Quanto tempo passerebbe tra il momento in cui si svuotano i bacini e il momento 
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Apri il rubinetto e l'acqua esce. Dietro quel gesto c'è un percorso lungo chilometri. E dopo che l'hai usata, l'acqua ne fa un altro, altrettanto lungo.
+
+**Sei tappe**
+
+In natura l'acqua gira da sempre: evapora, diventa pioggia, torna al mare. Solo una piccola parte dell'acqua del pianeta è dolce. In città a questo giro se ne aggiunge un altro, costruito da noi.
+
+1. **Captazione**: l'acqua viene presa da una sorgente, da un fiume, da un lago o da sottoterra.
+2. **Potabilizzazione**: viene filtrata e disinfettata finché si può bere.
+3. **Distribuzione**: l'**acquedotto** la porta nelle case con una rete di tubi sotto pressione.
+4. **Uso**: bere, cucinare, lavarsi, scaricare il WC. In Italia circa 220 litri a testa al giorno.
+5. **Fognatura**: l'acqua sporca viene raccolta in un'altra rete di tubi.
+6. **Depurazione**: il **depuratore** la ripulisce prima di restituirla a un fiume o al mare.
+
+> ✋ **Tocca a te.** 220 litri al giorno sono più di cento bottiglie grandi. Secondo te, che cosa ne consuma di più: bere e cucinare, la doccia, lo scarico del WC o la lavatrice? Fai una classifica.
+
+**L'acqua del rubinetto**
+
+Per renderla sicura si aggiunge una quantità minuscola di cloro, che uccide i microbi. Per questo a volte ha un leggero odore. In Italia l'acqua del rubinetto è controllata molto spesso, e si può bere tranquillamente quasi ovunque.
+
+**Il tubo che perde**
+
+Il problema più grave della rete italiana sono le perdite. In media il 42% dell'acqua immessa nei tubi si perde per strada, da tubature vecchie e rotte, prima di arrivare ai rubinetti. In Germania si perde meno del 6%. In molte zone del Sud si perde più della metà.
+
+È acqua già captata, pulita e pompata. Poi buttata.
+
+**Dentro il depuratore**
+
+L'acqua sporca passa per tre stadi. Prima le griglie fermano gli oggetti e la sabbia si deposita. Poi lavorano i batteri: in grandi vasche piene d'aria "mangiano" lo sporco sciolto nell'acqua. Infine, negli impianti migliori, l'acqua viene disinfettata.
+
+**Quando piove troppo**
+
+Su un prato metà della pioggia entra nel terreno. Sull'asfalto scorre via tutta, riempie le fogne e allaga le strade. Le soluzioni: pavimenti che lasciano passare l'acqua, vasche che la trattengono, tetti verdi.
+
+**L'acqua che non vedi**
+
+Oltre a quella del rubinetto c'è quella servita per produrre ciò che usi e mangi. Si chiama **impronta idrica**. Per un chilo di carne di manzo servono circa 15.000 litri, per una maglietta di cotone circa 2.700. La maggior parte dell'acqua che consumi non la vedi mai.
+
+**Un bene che può mancare**
+
+Nel mondo più di due miliardi di persone non hanno acqua sicura da bere. E la **siccità** riguarda anche noi: nell'estate del 2022 il Po è sceso ai livelli più bassi mai misurati.
+
+> ✋ **Tocca a te.** Un rubinetto che gocciola perde una goccia al secondo. Quante gocce in un giorno? Se servono circa 20 gocce per fare un millilitro, quanti litri sono?
+
+> 📍 **Qui da noi.** Da dove arriva l'acqua del tuo rubinetto? Chi gestisce l'acquedotto del tuo Comune? D'estate capita che l'acqua manchi o arrivi solo a certe ore? Chiedi a casa e cerca il nome del gestore sulla bolletta.
+
+**In tre righe**
+
+- L'acqua di città fa sei tappe: captazione, potabilizzazione, distribuzione, uso, fognatura, depurazione.
+- In Italia quasi metà dell'acqua si perde nei tubi prima di arrivare al rubinetto.
+- La maggior parte dell'acqua che consumiamo è nascosta in ciò che mangiamo e compriamo.
+
+---
+
 ### L'acqua ha due cicli: uno naturale, uno artificiale
 
 L'acqua sulla Terra si muove in un ciclo continuo: evapora dagli oceani e dalle superfici d'acqua dolce, forma nuvole, precipita come pioggia o neve, si infiltra nel suolo o scorre in superficie verso fiumi e laghi, si accumula in falde sotterranee, e infine ritorna al mare o evapora di nuovo.
@@ -361,6 +416,8 @@ Fai l'inventario di quello che hai mangiato e bevuto negli ultimi 2 giorni. Usa 
 ### Lo scenario
 
 Il tuo istituto scolastico ha aderito al programma nazionale "Scuola per il clima" e ti ha chiesto di produrre un'analisi dell'uso dell'acqua nella scuola, con proposte concrete di risparmio. I risultati verranno presentati al Consiglio di Istituto e pubblicati sul sito della scuola.
+
+> 📬 **A chi lo consegni davvero.** Il Consiglio di istituto, attraverso i rappresentanti dei genitori, e i collaboratori scolastici, che vedono rubinetti e scarichi ogni giorno. Consegna l'analisi e chiedi quale proposta si può provare per un mese.
 
 ---
 

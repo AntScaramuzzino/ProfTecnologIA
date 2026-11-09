@@ -312,22 +312,44 @@ a, button {
 }
 
 /* Varianti callout per emoji nel testo */
-.reading-flow blockquote[data-type="sicurezza"] {
+.reading-flow blockquote[data-type="sicurezza"],
+.reading-flow blockquote[data-type="safety"] {
   border-color: #ef4444;
   background: #fef2f2;
   color: #3f0000;
 }
 
-.reading-flow blockquote[data-type="fisica"] {
+.reading-flow blockquote[data-type="fisica"],
+.reading-flow blockquote[data-type="physics"] {
   border-color: #3b82f6;
   background: #eff6ff;
   color: #1e3a8a;
 }
 
-.reading-flow blockquote[data-type="errore"] {
+.reading-flow blockquote[data-type="errore"],
+.reading-flow blockquote[data-type="error"] {
   border-color: #eab308;
   background: #fefce8;
   color: #3f3000;
+}
+
+/* Riquadri didattici: micro-azione, aggancio al territorio, destinatario del compito */
+.reading-flow blockquote[data-type="action"] {
+  border-color: #10b981;
+  background: #ecfdf5;
+  color: #022c22;
+}
+
+.reading-flow blockquote[data-type="local"] {
+  border-color: #8b5cf6;
+  background: #f5f3ff;
+  color: #2e1065;
+}
+
+.reading-flow blockquote[data-type="recipient"] {
+  border-color: #0ea5e9;
+  background: #f0f9ff;
+  color: #082f49;
 }
 
 /* Tabelle */

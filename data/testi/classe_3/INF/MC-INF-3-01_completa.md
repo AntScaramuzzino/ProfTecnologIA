@@ -20,6 +20,64 @@ Non solo il tuo telefono. Il termostato, il router, il rilevatore di fumo, la TV
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Il termostato, il contatore, il braccialetto contapassi, il televisore. Oggi i dispositivi collegati a internet sono molti più delle persone. Misurano, trasmettono, a volte decidono. Questa rete di oggetti ha un nome: **Internet delle cose**, o IoT.
+
+**Dal mondo fisico al numero**
+
+Un **sensore** rileva una grandezza fisica, come temperatura, luce o movimento, e la trasforma in un segnale elettrico. Quel segnale è continuo, mentre un computer capisce solo numeri. Serve una conversione, e la si fa in due mosse.
+
+- Il **campionamento**: il segnale viene misurato a intervalli regolari. Dieci volte al secondo, cento, mille.
+- La precisione di ogni misura: quanti valori diversi può distinguere.
+
+Più misure al secondo e più precisione vogliono dire dati migliori. E anche più dati da trasmettere e conservare.
+
+> ✋ **Tocca a te.** Vuoi registrare la temperatura dell'aula per un giorno. Basta una misura all'ora, o ne serve una al secondo? E per registrare un battito cardiaco? Che cosa perdi se misuri troppo di rado, e che cosa sprechi se misuri troppo spesso?
+
+**Quattro piani**
+
+Un sistema IoT è fatto come un palazzo di quattro piani.
+
+1. **Gli oggetti**. I sensori misurano. Gli **attuatori** agiscono: accendono una luce, aprono una valvola, fanno suonare un allarme.
+2. **La connessione**. Come gli oggetti comunicano: Wi-Fi, Bluetooth, rete del telefono. Alcune reti sono fatte apposta per mandare pochi dati molto lontano consumando pochissima batteria.
+3. **L'elaborazione**. I dati finiscono su computer lontani, nel cloud. Oppure vengono elaborati vicino all'oggetto stesso, quando la risposta deve essere immediata: un sensore che rileva un pericolo in fabbrica non può aspettare.
+4. **Le applicazioni**. Quello che vedi tu: un grafico sul telefono, un avviso, una decisione automatica.
+
+**Troppi dati**
+
+Miliardi di oggetti producono montagne di dati. Questo pone domande pratiche. Dove li mettiamo? Che cosa teniamo e che cosa buttiamo? E soprattutto: sono giusti? Un sensore guasto produce numeri sbagliati, e un sistema che si fida ciecamente prende decisioni sbagliate.
+
+**L'anello debole**
+
+Gli oggetti connessi sono spesso il punto più fragile di una rete. Molti hanno una password di fabbrica che nessuno cambia mai, e programmi che non vengono mai aggiornati.
+
+Nel 2016 qualcuno ha preso il controllo di centinaia di migliaia di telecamere e router rimasti con la password di fabbrica, e li ha usati tutti insieme per mandare in tilt alcuni dei siti più grandi del mondo. I proprietari non si erano accorti di niente.
+
+La prima difesa è semplice: cambiare la password e fare gli aggiornamenti.
+
+**I dati parlano di te**
+
+Ogni oggetto che ti aiuta produce dati su di te. Il contatore sa quando sei in casa. Il braccialetto sa quando dormi e quanto batte il tuo cuore. In un processo negli Stati Uniti i dati di un pacemaker sono stati usati come prova contro il suo stesso proprietario.
+
+La domanda giusta non è "mi spia?". È questa: chi può vedere i miei dati, per quanto tempo, e per farci che cosa? La legge europea impone che tu sia informato e che dia il tuo consenso. Ma capire davvero che cosa si accetta resta difficile.
+
+**Utile, se progettato bene**
+
+Sensori nei campi fanno risparmiare acqua. Sensori sui ponti avvisano prima che una crepa diventi un pericolo. Sensori in casa permettono a una persona anziana di vivere da sola più a lungo. La tecnologia è la stessa: la differenza la fa come viene progettata e chi controlla i dati.
+
+> ✋ **Tocca a te.** Progetta su carta un sistema IoT per un problema vero della scuola, per esempio aule troppo calde o luci lasciate accese. Disegna i quattro piani: quale sensore, quale connessione, dove si elaborano i dati, che cosa vede chi lo usa. Quali dati raccoglie sulle persone?
+
+> 📍 **Qui da noi.** Fai l'inventario degli oggetti connessi di casa tua: quanti sono? Per ciascuno chiedi a un adulto: la password è ancora quella di fabbrica? Viene aggiornato? Porta in classe solo i numeri, senza dettagli personali.
+
+**In tre righe**
+
+- L'Internet delle cose è fatta di oggetti con sensori che misurano e trasmettono dati.
+- Un sistema IoT ha quattro piani: oggetti, connessione, elaborazione, applicazioni.
+- Ogni oggetto connesso è una porta da proteggere, e una fonte di dati su chi lo usa.
+
+---
+
 ### Il mondo fisico parla digitale — se sai ascoltarlo.
 
 Nel 2008 è accaduta una cosa silenziosa ma storica: per la prima volta, il numero di dispositivi connessi a internet ha superato il numero di esseri umani sul pianeta. Non è stata una notizia di prima pagina. Ma da quel momento, internet non è più solo una rete di computer e telefoni — è diventata una rete che include oggetti fisici: lampadine, automobili, sensori industriali, pacemaker, reti elettriche, campi coltivati.
@@ -237,6 +295,8 @@ Calcola il costo totale di installazione (sensori + connettività + server). Con
 ### Lo scenario
 
 Il Comune della tua città ha lanciato un bando per installare sensori di qualità dell'aria in 5 punti strategici (vicino a scuole, ospedali, parchi). I dati saranno pubblici. La tua classe ha deciso di partecipare con una proposta.
+
+> 📬 **A chi lo consegni davvero.** L'ufficio ambiente del Comune. Consegna la mappa con i cinque punti e il motivo di ciascuno. Chiedi dove si trovano oggi le centraline che misurano l'aria.
 
 ---
 

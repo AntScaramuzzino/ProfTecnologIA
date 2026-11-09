@@ -25,6 +25,70 @@ Questa MC ti insegna come funziona quello che Sara usa ogni giorno.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Per secoli un disegno tecnico si faceva a mano, e cambiare una misura voleva dire rifarlo. Oggi si disegna al computer, in tre dimensioni, e dal disegno si arriva all'oggetto vero in poche ore.
+
+**Che cos'è il CAD**
+
+**CAD** è una sigla inglese che significa "progettazione assistita dal computer". Con un programma CAD non disegni linee su un foglio: costruisci un oggetto virtuale con misure esatte.
+
+- Il CAD in due dimensioni serve per piante di edifici e schemi di impianti.
+- Il CAD in tre dimensioni costruisce un **modello 3D**, un solido che puoi ruotare, misurare, sezionare. Serve quando la forma è complessa, quando vuoi vederla prima di costruirla, o quando la vuoi stampare.
+
+**Costruire sommando e togliendo**
+
+Nei programmi per iniziare, come Tinkercad, che funziona nel browser, tutto nasce da pochi solidi di base: cubi, cilindri, sfere, coni. Le mosse sono due.
+
+- **Unire** due solidi per farne uno.
+- **Sottrarre** un solido da un altro, per scavare. Un foro è un cilindro tolto da un blocco.
+
+Un portapenne, per esempio: un cilindro grande, meno un cilindro un po' più piccolo, più un disco sotto che fa da fondo.
+
+> ✋ **Tocca a te.** Guarda un oggetto semplice sul banco: una gomma, un tappo, un temperino. Con quali solidi di base lo costruiresti? Quali uniresti e quali toglieresti? Scrivi la "ricetta" in tre o quattro mosse.
+
+**Cambiare un numero, cambiare tutto**
+
+Nei programmi professionali le misure non sono fisse: sono **parametri**, cioè numeri con un nome, legati tra loro. Se cambi la lunghezza di una mensola, i fori e i sostegni si spostano da soli. È il design parametrico, ed è quello che ha fatto Sara con il suo portaborraccia: ha cambiato un numero, e il resto si è aggiornato.
+
+**Dal file all'oggetto**
+
+La **stampa 3D** costruisce l'oggetto depositando materiale fuso, uno strato sopra l'altro. Il percorso è questo.
+
+1. Esporti il modello in un file adatto alla stampa. Il formato più comune si chiama STL.
+2. Lo apri in un programma chiamato **slicer**, "affettatore". Taglia il modello in centinaia di strati sottili e scrive le istruzioni per la stampante.
+3. La stampante esegue, strato dopo strato.
+
+Nello slicer si decidono tre cose.
+
+- Lo spessore degli strati. Più sono sottili, più la superficie è liscia e più tempo ci vuole.
+- Il riempimento. L'interno non deve essere pieno: di solito basta un reticolo che occupa una piccola parte del volume. Meno materiale, meno peso.
+- I supporti. La stampante non può depositare materiale nel vuoto. Le parti che sporgono hanno bisogno di sostegni, che poi si staccano.
+
+Il materiale più usato a scuola è il PLA, una plastica che deriva da piante come il mais.
+
+**Sbagliare presto, sbagliare a poco prezzo**
+
+Una volta, per avere un modello di prova, servivano settimane e molti soldi. Oggi lo stampi in mattinata, lo tieni in mano, vedi che cosa non va, correggi il file e lo ristampi nel pomeriggio. Si chiama prototipazione rapida. Più prove fai, migliore sarà il risultato finale.
+
+In alcuni campi la stampa 3D produce già pezzi definitivi: protesi su misura, apparecchi per i denti, componenti di aerei.
+
+**Forme prima impossibili**
+
+Il computer ha cambiato anche ciò che si può costruire. Edifici con superfici curve e continue, come il museo MAXXI di Roma progettato da Zaha Hadid, sarebbero stati quasi impossibili da calcolare e disegnare a mano.
+
+> ✋ **Tocca a te.** Devi stampare in 3D un supporto che tenga il telefono inclinato sul banco. Disegna a mano tre idee diverse, con le misure principali. Per ognuna segna: ci sono parti che sporgono nel vuoto? Come la appoggeresti sul piano della stampante?
+
+> 📍 **Qui da noi.** Nella tua scuola, o nel tuo paese, c'è una stampante 3D: in un laboratorio, in biblioteca, in un'associazione, da un artigiano? Quale piccolo oggetto utile alla classe o alla scuola varrebbe la pena di progettare e stampare? Porta una proposta.
+
+**In tre righe**
+
+- Con il CAD si costruisce un modello 3D con misure esatte, unendo e sottraendo solidi.
+- Lo slicer taglia il modello a strati e la stampante 3D lo costruisce.
+- Stampare un prototipo in poche ore permette di provare, sbagliare e migliorare in fretta.
+
+---
+
 ### Storia del CAD: dal tavolo da disegno al cloud
 
 Prima del 1960, ogni disegno tecnico veniva prodotto a mano su carta traslucida o carta da lucido. Un progettista trascorreva ore ad allineare righelli, a correggere con la gomma e a ricopiare intere tavole quando cambiava un'unica misura. Gli studi di progettazione tenevano archivi fisici enormi — scaffalate di tubi di cartone con rotoli di disegni tecnici che andavano recuperati fisicamente ogni volta che servivano.
@@ -349,6 +413,8 @@ Scrivi una scheda di 1 pagina che risponde a queste quattro domande. Indica le f
 Il **FabLab della tua città** ha avviato un progetto: raccogliere file STL di oggetti utili per le scuole della provincia, prodotti da studenti delle medie e superiori. Gli oggetti selezionati verranno stampati e donati a scuole che non hanno risorse per comprarli. Il tema: **"Accessibilità e inclusione — oggetti che rendono la scuola più facile per tutti."**
 
 Esempi di oggetti che rispondono al tema: supporto per alzare lo schermo di un computer (riduce affaticamento del collo), guida tattile per la tastiera per studenti con disabilità visiva, porta-foglio inclinato per chi ha difficoltà motorie alle mani, amplificatore acustico senza elettronica per l'ingresso del microfono del PC, supporto per tablet per posizioni di lettura non standard.
+
+> 📬 **A chi lo consegni davvero.** La persona che userebbe l'oggetto, insieme al docente di sostegno. Se la scuola o un laboratorio vicino ha una stampante 3D, fallo stampare e provare. Chiedi che cosa non funziona nell'uso vero.
 
 ---
 

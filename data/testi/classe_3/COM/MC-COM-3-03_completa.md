@@ -21,6 +21,65 @@ Come sei venuto a scuola stamattina? Stima quante emissioni di CO₂ ha prodotto
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Lo zaino che porti a scuola ha attraversato mezzo mondo. E tu, ogni mattina, fai una scelta di trasporto. Muovere persone e merci è una delle attività che pesano di più sul clima.
+
+**Quattro modi di muoversi**
+
+Ogni mezzo si giudica su quattro cose: velocità, quanta gente o merce porta, costo, **emissioni**, cioè i gas che scaldano il pianeta. Nessuno vince in tutte.
+
+- **Strada**: auto, camion, autobus. È il più flessibile, arriva ovunque. Ma un'auto con una persona sola è tra i mezzi che inquinano di più per chilometro.
+- **Ferrovia**: il più efficiente per portare molte persone su distanze medie. Un treno pieno emette, a persona, una piccola frazione di un'auto.
+- **Aereo**: imbattibile sulle distanze lunghe, ma è quello con le emissioni più alte.
+- **Nave**: lenta, ma è il modo più efficiente per trasportare merci lontano.
+
+> ✋ **Tocca a te.** Come sei venuto a scuola stamattina? Scrivi il mezzo e quante persone c'erano a bordo. Poi fai la classifica della classe: quale mezzo vince? Quante auto avevano un solo passeggero oltre a chi guidava?
+
+**La scatola che ha cambiato il mondo**
+
+Il **container** è una grande scatola di metallo con misure uguali in tutto il mondo. Passa dalla nave al treno al camion senza che nessuno tocchi quello che c'è dentro. Da quando esiste, spedire merci da un continente all'altro costa pochissimo.
+
+È per questo che una maglietta può essere fatta con cotone coltivato in un paese, tessuto in un altro, cucito in un terzo e venduto qui. L'organizzazione di tutti questi spostamenti si chiama **logistica**.
+
+**Il problema delle città**
+
+Più di metà dell'umanità vive in città. E lì l'auto mostra i suoi limiti: resta ferma per la maggior parte del tempo e occupa moltissimo spazio.
+
+Costruire più strade non risolve: più strade ci sono, più persone scelgono l'auto, e il traffico torna. La soluzione che funziona è rendere comode le alternative: mezzi pubblici frequenti, piste ciclabili sicure, percorsi a piedi.
+
+L'insieme di queste scelte si chiama **mobilità sostenibile**: spostarsi consumando meno energia e meno spazio.
+
+**L'auto elettrica**
+
+Un'auto elettrica non ha tubo di scarico: mentre viaggia non emette gas. Ma le emissioni non spariscono: dipendono da come è prodotta l'elettricità e da come è costruita la batteria. Nel complesso, su tutta la sua vita, emette comunque molto meno di un'auto a benzina.
+
+I suoi nodi: i tempi di ricarica, e le materie prime delle batterie, come litio e cobalto, che vanno estratte.
+
+**Condividere**
+
+Auto, bici e monopattini in **sharing** si usano a turno invece di possederli. Funzionano bene dove ci sono anche piste e mezzi pubblici. Da soli non bastano.
+
+**Treno o aereo?**
+
+Su una tratta come Roma-Milano il treno veloce batte l'aereo: contando gli spostamenti da e per l'aeroporto e i controlli, i tempi sono simili, e le emissioni sono molte volte più basse. Il problema è che spesso il biglietto aereo costa meno, perché il prezzo non tiene conto del danno al clima.
+
+**Il mezzo pubblico**
+
+Autobus e treni locali funzionano solo se li usano in tanti. Dove passano di rado, la gente prende l'auto. E se la gente prende l'auto, ci sono meno soldi per farli passare più spesso. È un circolo vizioso, che si rompe solo investendo.
+
+> ✋ **Tocca a te.** Misura su una mappa la distanza tra casa tua e la scuola. Un'auto a benzina emette circa 130 grammi di CO₂ per chilometro. Quanti grammi per andata e ritorno? E in un anno di 200 giorni di scuola, quanti chili?
+
+> 📍 **Qui da noi.** Quali mezzi pubblici passano nel tuo paese, e ogni quanto? Quanto ci metti ad arrivare al capoluogo senza auto? C'è una stazione, e quanti treni fermano? Raccogli gli orari veri: li useremo per un piano di mobilità della classe.
+
+**In tre righe**
+
+- Strada, ferrovia, aereo e nave: ogni mezzo ha un punto forte e un costo ambientale.
+- Il container ha reso economico spostare merci in tutto il mondo.
+- In città la soluzione non sono più strade, ma alternative comode all'auto.
+
+---
+
 ### Tutto si muove: una storia breve dei sistemi di trasporto
 
 Prima di capire come funzionano i sistemi di trasporto di oggi, vale la pena capire come siamo arrivati qui — perché ogni sistema attuale è il risultato di secoli di scelte tecnologiche, economiche e politiche accumulate.
@@ -389,6 +448,8 @@ Competenze chiave che inizia a costruire da qui: astrodinamica · telecomunicazi
 La tua scuola vuole ridurre il proprio impatto ambientale. Gli impianti sono già stati migliorati, la carta è già riciclata, le luci sono già a LED. Il passo successivo è la mobilità: come vengono a scuola ogni giorno gli studenti e il personale? Quante emissioni produce complessivamente questo movimento? E cosa si può fare per ridurle?
 
 Il tuo compito è raccogliere i dati, analizzarli, e proporre un piano realistico.
+
+> 📬 **A chi lo consegni davvero.** Il dirigente e l'ufficio del Comune che si occupa di traffico o di polizia locale. Consegna i dati della classe e una sola richiesta, per esempio una rastrelliera o un pedibus. Chiedi una risposta scritta.
 
 ---
 

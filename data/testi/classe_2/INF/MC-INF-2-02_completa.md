@@ -20,6 +20,63 @@ Come funziona? E puoi davvero fidarti di quell'icona del lucchetto verde nel bro
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Ogni messaggio che mandi, ogni password che scrivi, viaggia su reti dove altri potrebbero leggerlo. Per questo viene trasformato in qualcosa di incomprensibile, che solo il destinatario sa rimettere in chiaro. Questa trasformazione si chiama **crittografia**.
+
+**Il trucco di Giulio Cesare**
+
+Non è un'invenzione dei computer. Giulio Cesare spostava ogni lettera di tre posti nell'alfabeto: A diventava D, B diventava E. Chi intercettava il messaggio leggeva lettere senza senso.
+
+È il **cifrario di Cesare**, e contiene già tutto: un messaggio in chiaro, una regola per trasformarlo e una **chiave**, cioè l'informazione segreta che serve per tornare indietro. Qui la chiave è "3".
+
+Il difetto: le chiavi possibili sono pochissime. Basta provarle tutte.
+
+> ✋ **Tocca a te.** Decifra questo messaggio scritto con il cifrario di Cesare, chiave 3, usando l'alfabeto di 26 lettere (con J, K, W, X, Y): FLDR. Poi scrivi il tuo nome in codice e passalo a un compagno. Riesce a leggerlo senza che tu gli dica la chiave?
+
+**Una chiave sola**
+
+Nella **crittografia simmetrica** la stessa chiave serve per chiudere e per aprire. È veloce, ma ha un problema: come faccio a darti la chiave senza che qualcuno la copi lungo la strada? Per millenni nessuno ha saputo risolverlo.
+
+**Due chiavi**
+
+Negli anni Settanta arriva l'idea geniale: usare due chiavi diverse, legate tra loro. È la **crittografia asimmetrica**.
+
+- La **chiave pubblica** la può conoscere chiunque. Serve solo per chiudere.
+- La **chiave privata** la tiene solo il proprietario. Serve per aprire.
+
+Pensa al lucchetto dell'aggancio: chiunque può chiuderlo con uno scatto, ma solo chi ha la chiave lo riapre. Oppure a una cassetta delle lettere: tutti possono imbucare, solo il padrone la apre.
+
+Così il problema sparisce. La chiave pubblica puoi darla a tutti, perché con quella non si apre niente.
+
+**Perché regge**
+
+Si basa su un fatto di matematica. Moltiplicare due numeri primi è facile: 17 × 19 fa 323. Il contrario, partire da 323 e ritrovare 17 e 19, richiede già qualche tentativo. Con numeri primi di centinaia di cifre, ai computer più potenti servirebbero tempi più lunghi dell'età dell'universo.
+
+**Il lucchetto nel browser**
+
+Quando l'indirizzo di un sito comincia con **https** e compare un lucchetto, la comunicazione tra te e quel sito è cifrata: chi sta in mezzo non può leggerla.
+
+Attenzione però. Il lucchetto dice che il collegamento è protetto. Non dice che il sito è onesto. Anche un sito truffa può avere il lucchetto.
+
+**Dimostrare chi sei**
+
+L'**autenticazione** è il modo in cui dimostri di essere tu. Si può fare con qualcosa che sai, come la password; con qualcosa che hai, come il telefono su cui arriva un codice; con qualcosa che sei, come l'impronta o il volto.
+
+L'impronta è comoda, ma ha un limite: una password rubata si cambia, un'impronta no.
+
+> ✋ **Tocca a te.** Il cifrario di Cesare ha solo 25 chiavi possibili. Inventa con il compagno una regola più difficile da scoprire, e provatela con una parola. Poi rispondi: se un estraneo conoscesse la regola ma non la chiave, il vostro segreto sarebbe ancora al sicuro?
+
+> 📍 **Qui da noi.** A casa, con un adulto, aprite tre siti che usate spesso, per esempio il registro elettronico, il sito del Comune, un negozio online. Hanno tutti https e il lucchetto? Annota quelli che non ce l'hanno.
+
+**In tre righe**
+
+- La crittografia rende un messaggio leggibile solo a chi ha la chiave.
+- Con due chiavi, una pubblica e una privata, non serve più scambiarsi un segreto.
+- Il lucchetto di https protegge il collegamento, non garantisce che il sito sia onesto.
+
+---
+
 ### Ogni segreto digitale è matematica.
 
 Ogni volta che invii un messaggio su WhatsApp, fai un pagamento online, accedi a un sito con password, accade qualcosa che non vedi: i tuoi dati vengono trasformati in una sequenza incomprensibile che solo chi ha la chiave giusta riesce a leggere. Questo processo si chiama **crittografia** — letteralmente, "scrittura nascosta".
@@ -249,6 +306,8 @@ Se non conosci la chiave, quanti tentativi devi fare al massimo per decifrare un
 ### Lo scenario
 
 La tua scuola usa un registro elettronico accessibile da casa. Un giorno noti che il sito usa HTTP invece di HTTPS. Il preside non è sicuro di cosa significhi e ti chiede di spiegargli il problema e di proporre una soluzione.
+
+> 📬 **A chi lo consegni davvero.** L'animatore digitale o il dirigente. Controlla tre siti che la scuola usa davvero e consegna l'esito in una pagina: quali usano HTTPS, quali no, che cosa conviene fare.
 
 ---
 

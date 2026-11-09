@@ -108,7 +108,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il processo si chiama 'pulper'; il limite è che ogni ciclo accorcia le fibre di cellulosa, rendendo la carta meno resistente dopo 5-7 cicli",
+          "testo": "Il processo si chiama 'pulper'; il limite è che a ogni ciclo le fibre si accorciano e la carta si indebolisce",
           "corretto": true,
           "feedback": "Esatto! Il pulper è la vasca con pale rotanti dove la carta raccolta viene ridotta in sospensione di fibre di cellulosa. Il limite: le fibre si accorciano a ogni ciclo, riducendo la resistenza della carta. Dopo 5-7 cicli le fibre sono troppo corte."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché si ricicla all'infinito senza perdita di qualità: una bottiglia riciclata ha le stesse proprietà di una prodotta da materie prime vergini",
+          "testo": "Perché si ricicla all'infinito senza perdere qualità: la bottiglia riciclata vale come una nuova",
           "corretto": true,
           "feedback": "Esatto! Il vetro può essere rifuso e riformato infinite volte senza alcuna degradazione delle proprietà. A differenza della carta (fibre si accorciano) o della plastica (proprietà meccaniche peggiorano), il vetro riciclato è identico al vetro vergine."
         },
@@ -174,7 +174,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i coloranti carboniosi assorbono la luce infrarossa usata dai sensori di selezione automatica: le telecamere non la 'vedono' e la scartano nell'indifferenziato",
+          "testo": "Perché il colorante nero assorbe gli infrarossi dei sensori di selezione, che non la riconoscono",
           "corretto": true,
           "feedback": "Esatto! Gli impianti di selezione usano telecamere a infrarossi per identificare il tipo di polimero (PET, PP, ecc.) analizzando come riflette la luce. Il nero assorbe tutti gli infrarossi, rendendo la plastica nera invisibile ai sensori."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché i coloranti metallici nel vetro colorato si distribuiscono uniformemente nella fusione, tingendo tutto il lotto e producendo vetro colorato invece del trasparente desiderato",
+          "testo": "Perché i coloranti si distribuiscono nella fusione e tingono tutto il lotto di vetro trasparente",
           "corretto": true,
           "feedback": "Esatto! Quando si fonde insieme vetro verde (ossido di cromo) e vetro trasparente, il colorante si distribuisce uniformemente nel bagno vetroso. Il risultato è vetro leggermente colorato, non utilizzabile per applicazioni che richiedono trasparenza totale (ad esempio bottiglie di acqua trasparenti)."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Contaminazione alimentare dei contenitori, degradazione della qualità polimerica a ogni ciclo di fusione, e impossibilità di riciclare la plastica nera con i sistemi a infrarossi",
+          "testo": "Contenitori sporchi di cibo, qualità che cala a ogni fusione e plastica nera invisibile ai sensori",
           "corretto": true,
           "feedback": "Esatto! Il testo evidenzia tre fattori: 1) contaminazione (un contenitore con residui di cibo compromette tutto il lotto), 2) degradazione a ogni fusione (le proprietà meccaniche peggiorano dopo 2-3 cicli, portando al 'downcycling'), 3) selezione impossibile per la plastica nera."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la produzione dalla bauxite richiede l'elettrolisi (processo Bayer-Hall-Héroult) che consuma enormi quantità di energia elettrica per separare l'alluminio dall'ossigeno; il riciclo fonde direttamente l'alluminio già metallico",
+          "testo": "Perché dalla bauxite serve l'elettrolisi, che consuma moltissima elettricità; il riciclo si limita a fondere",
           "corretto": true,
           "feedback": "Esatto! La produzione primaria richiede due passaggi energivori: processo Bayer (separa allumina dalla bauxite) + elettrolisi Hall-Héroult (riduce allumina in alluminio metallico con enormi correnti elettriche). Il riciclo salta entrambi: fonde direttamente l'alluminio già metallico."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché accelerano la decomposizione microbica e uccidono patogeni e semi di piante infestanti presenti nel materiale organico",
+          "testo": "Perché accelerano la decomposizione e uccidono germi patogeni e semi di erbe infestanti",
           "corretto": true,
           "feedback": "Esatto! Le alte temperature (55-70°C) del compostaggio industriale hanno due funzioni: accelerare l'attività batterica (metabolismo più veloce) e igienizzare il materiale (uccidendo batteri patogeni, virus, parassiti e semi di piante infestanti che altrimenti sopravviverebbero)."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Etichette in PVC su bottiglie PET, bottiglie non risciacquate, sacchetti nel bidone giallo, e plastica nera che bypassa i sensori IR",
+          "testo": "Etichette in PVC, bottiglie sporche, sacchetti nel bidone e plastica nera",
           "corretto": true,
           "feedback": "Esatto! Il testo elenca esplicitamente: etichette PVC interferiscono con la qualità, bottiglie sporche contaminano il lotto, sacchetti di plastica nel bidone giallo (se non parte della raccolta locale), e plastica nera invisibile ai sensori IR."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La materia organica continua a produrre metano (gas serra 80 volte più potente della CO₂) per decenni; i materiali plastici rimangono praticamente invariati per secoli",
+          "testo": "L'organico continua a produrre metano per decenni; la plastica resta quasi intatta per secoli",
           "corretto": true,
           "feedback": "Esatto! Anche dopo la chiusura: la materia organica sepolta produce metano per anni o decenni (decomposizione anaerobica lenta). Il metano è un gas serra molto potente (80× CO₂ a 20 anni). Le plastiche rimangono per secoli. Il percolato (liquido tossico) può filtrare nelle falde."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Più si investe in termovalorizzatori efficienti, meno si è incentivati a ridurre i rifiuti e a sviluppare infrastrutture di riciclo: l'impianto ha bisogno di rifiuti per funzionare economicamente",
+          "testo": "Più si investe nei termovalorizzatori, meno conviene ridurre i rifiuti: l'impianto ne ha bisogno",
           "corretto": true,
           "feedback": "Esatto! Un termovalorizzatore richiede ingenti investimenti fissi (costi di costruzione 500-1000M€). Per ammortizzarli serve una quantità minima garantita di rifiuti. Questo può disincentivare la riduzione dei rifiuti alla fonte e lo sviluppo di filiere di riciclo che 'sottraggono' materia prima all'impianto."
         },
@@ -438,7 +438,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La presenza o assenza di infrastrutture di raccolta (porta-a-porta vs stradale), impianti di trattamento locali, investimenti comunali, e storia industriale del territorio",
+          "testo": "La presenza di raccolta porta a porta, impianti di trattamento locali e investimenti dei Comuni",
           "corretto": true,
           "feedback": "Esatto! Il testo evidenzia che i Comuni con alta differenziata usano quasi tutti il porta-a-porta con 5 frazioni. La differenza Nord/Sud non è principalmente culturale o comportamentale: riflette decenni di diversi investimenti pubblici nelle infrastrutture di raccolta, trattamento e smaltimento."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Dipende dalla specie di albero (dimensioni diverse), dal tipo di carta prodotta, e dal fatto che le foreste per carta spesso vengono riforestate: il risparmio effettivo dipende dal contesto della filiera forestale",
+          "testo": "Dipende dalla specie e dalle dimensioni degli alberi, dal tipo di carta e da come è gestita la foresta",
           "corretto": true,
           "feedback": "Esatto! Il dato di '17 alberi per tonnellata' è una media con limitazioni: 1) le dimensioni degli alberi variano enormemente per specie, 2) il tipo di carta (giornale, cartone, carta patinata) ha rese diverse dalla cellulosa, 3) molte foreste da cellulosa sono piantagioni a ciclo rapido che vengono riforestate."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché bruciando il metano si produce CO₂ (CH₄ + 2O₂ → CO₂ + 2H₂O), che ha un potere climalterante 80 volte inferiore al metano stesso, riducendo l'impatto climatico complessivo",
+          "testo": "Perché bruciando il metano si ottiene CO₂, che scalda il clima molto meno del metano stesso",
           "corretto": true,
           "feedback": "Esatto! CH₄ in atmosfera è 80 volte più potente della CO₂ a 20 anni. Bruciandolo si produce CO₂ (molto meno potente), riducendo drasticamente l'impatto climatico. 1 kg di CH₄ non bruciato = 80 kg CO₂eq. Lo stesso kg di CH₄ bruciato produce ~2,75 kg di CO₂ (reazione stechiometrica). Differenza: 80 vs 2,75 kg CO₂eq."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ci sarà sempre una quota di materiali contaminati, compositi, o rotti in modi che li rendono non raccoglibili separatamente o non riciclabili con le tecnologie disponibili",
+          "testo": "Resterà sempre una quota di materiali sporchi, compositi o non riciclabili con le tecnologie di oggi",
           "corretto": true,
           "feedback": "Esatto! Anche con la migliore raccolta differenziata e i cittadini più virtuosi, ci saranno sempre: materiali compositi non separabili (es. blister farmaceutici: plastica + alluminio incollati), oggetti contaminati oltre il recupero, materiali per cui non esiste filiera di riciclo, e frazioni minuscole non identificabili."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il comportamento del cittadino è necessario ma non sufficiente: senza infrastrutture (impianti di selezione, mercato del riciclato, sistemi di raccolta capillari) anche il cittadino più virtuoso non può garantire il riciclo",
+          "testo": "Il comportamento del cittadino è necessario ma non basta: senza impianti e raccolta organizzata il riciclo non avviene",
           "corretto": true,
           "feedback": "Esatto! L'affermazione ridistribuisce la responsabilità: il cittadino può separare perfettamente i rifiuti, ma se mancano gli impianti di selezione, il mercato del riciclato, o la raccolta differenziata corretta, lo sforzo è inutile. Il sistema deve essere progettato bene: la responsabilità è condivisa tra progettisti del sistema e cittadini."
         },

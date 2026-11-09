@@ -15,7 +15,7 @@
 Quello che stai per mangiare a pranzo oggi potrebbe allungarti la vita di anni. Oppure no.
 Dipende da cosa hai nel piatto — e da cosa sai su quello che mangi.
 
-La dieta mediterranea è una tradizione condivisa da più comunità del Mediterraneo, riconosciuta dall’UNESCO come patrimonio culturale immateriale. Il riconoscimento riguarda pratiche e cultura, non una classifica delle diete più sane. In Italia, nell’indagine OKkio alla SALUTE 2023, il 28,8% dei bambini della terza primaria era in sovrappeso o con obesità.
+La dieta mediterranea è nata anche qui, e l'UNESCO l'ha dichiarata patrimonio dell'umanità. Eppure in Italia, in terza elementare, quasi tre bambini su dieci sono in sovrappeso.
 
 <!-- Fonte della correzione: https://ich.unesco.org/en/RL/mediterranean-diet-00884 · https://www.epicentro.iss.it/okkioallasalute/indagine-2023-dati · consultata il 4 ottobre 2026. -->
 Il problema non è la mancanza di conoscenza. Il problema è che spesso la conoscenza non arriva prima delle scelte.
@@ -24,6 +24,62 @@ Inizia adesso.
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Il cibo è il materiale con cui il tuo corpo si costruisce e il carburante con cui funziona. Le sostanze utili che contiene si chiamano **nutrienti**. Conoscerli serve a scegliere, non a contare.
+
+**I tre che danno energia**
+
+- I **carboidrati** sono il carburante principale, soprattutto per il cervello. Quelli di pane, pasta, riso e legumi rilasciano energia piano piano e durano ore. Gli zuccheri di dolci e bibite arrivano tutti insieme e finiscono presto.
+- Le **proteine** sono i mattoni: muscoli, pelle, capelli sono fatti di proteine. Le trovi in carne, pesce, uova, latte e legumi.
+- I **grassi** sono una riserva di energia e servono a ogni cellula. Non sono nemici: conta il tipo. Quelli di olio d'oliva, pesce e frutta secca fanno bene. Quelli di molti prodotti industriali fritti o confezionati, se sono troppi, fanno male.
+
+**I piccoli indispensabili**
+
+**Vitamine** e **sali minerali** non danno energia, ma senza di loro il corpo non funziona. Ne servono quantità minuscole. Il calcio costruisce le ossa, il ferro porta l'ossigeno nel sangue. Si trovano soprattutto in frutta, verdura, latte e legumi.
+
+Poi ci sono le **fibre**, che aiutano l'intestino, e l'acqua, che è la bevanda da preferire a tutte le altre.
+
+> ✋ **Tocca a te.** Pensa alla tua merenda preferita. Secondo te contiene soprattutto carboidrati, proteine o grassi? Scrivi la previsione. Quando avrai la confezione in mano, controlla sull'etichetta.
+
+**La piramide: quanto spesso, non quanto**
+
+La **piramide alimentare** è un disegno che dice quanto spesso mangiare ogni tipo di cibo.
+
+- Alla base, a ogni pasto: frutta, verdura, cereali, legumi, olio d'oliva.
+- A metà, più volte a settimana: pesce, uova, formaggi, carne bianca.
+- In cima, ogni tanto: carne rossa, salumi, dolci.
+
+Nessun cibo è vietato. Cambia solo la frequenza.
+
+**La dieta mediterranea**
+
+Questo modo di mangiare ha un nome: **dieta mediterranea**. È quello tradizionale dei paesi intorno al nostro mare, e gli studi lo collegano a un cuore più sano. Nel 2010 l'UNESCO l'ha riconosciuta come patrimonio dell'umanità. Non solo per i cibi: anche per l'abitudine di cucinare e mangiare insieme.
+
+**Leggere l'etichetta**
+
+Ogni confezione ha una tabella con i valori per 100 grammi. Sono scritti per 100 grammi apposta: così puoi confrontare due prodotti anche se le confezioni sono diverse. Guarda soprattutto tre righe: zuccheri, grassi saturi e sale.
+
+> ✋ **Tocca a te.** A casa prendi due prodotti simili, per esempio due tipi di biscotti o due yogurt. Confronta la riga "zuccheri" per 100 grammi. La differenza è grande o piccola? Te l'aspettavi?
+
+**Ognuno ha i suoi bisogni**
+
+Non tutti possono mangiare le stesse cose. Chi ha la celiachia non può mangiare glutine, che sta in grano, orzo e segale. C'è chi sceglie di non mangiare cibi di origine animale. Sono situazioni diverse, che vanno rispettate.
+
+E una cosa importante: il rapporto con il cibo a volte può diventare difficile. Se succede a te o a qualcuno che conosci, non è un capriccio. Se ne parla con un adulto di cui ti fidi.
+
+> 📍 **Qui da noi.** Scegli un piatto tradizionale della tua famiglia o del tuo paese. Quali ingredienti contiene? A quale piano della piramide appartiene ciascuno? Portalo in classe: costruiremo la piramide dei piatti di casa nostra.
+
+**In tre righe**
+
+- Carboidrati, proteine e grassi danno energia e materiale; vitamine e minerali fanno funzionare tutto.
+- La piramide dice quanto spesso mangiare un cibo, non che è vietato.
+- La tabella sull'etichetta permette di confrontare due prodotti a parità di peso.
+
+> 🔎 **Come lo sappiamo?** Il dato dell'aggancio viene dall'indagine OKkio alla SALUTE 2023 dell'Istituto Superiore di Sanità: il 28,8% dei bambini di terza primaria era in sovrappeso o con obesità. Il riconoscimento UNESCO della dieta mediterranea riguarda le tradizioni e la cultura, non una classifica delle diete più sane.
+
+---
 
 ### Mangiare è chimica — e la tecnologia la controlla
 
@@ -370,6 +426,8 @@ Alla fine dei 3 giorni, rispondi a queste domande:
 ### Lo scenario
 
 Il medico di base della tua scuola ha avviato un programma di educazione alimentare per gli studenti di seconda media. Ti chiede di partecipare come "reporter alimentare": tieni un diario delle tue abitudini per tre giorni e poi produci una breve analisi — non per essere giudicato, ma per capire e comunicare.
+
+> 📬 **A chi lo consegni davvero.** La classe, senza nomi. Consegni solo quello che vuoi condividere: i dati di tutti finiscono insieme in un cartellone anonimo per l'atrio. Chiedi a chi lo legge quale abitudine lo ha sorpreso.
 
 ---
 

@@ -25,6 +25,58 @@ Il **packaging alimentare** — l'imballaggio del cibo — è uno dei sistemi te
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+La confezione di un alimento non è solo una scatola. L'insieme di ciò che avvolge il cibo si chiama **packaging**, o imballaggio, e fa cinque lavori contemporaneamente.
+
+**I cinque lavori di una confezione**
+
+1. **Protegge** dagli urti. Le uova hanno un posto ciascuna per non rompersi.
+2. **Conserva**. Fa da **barriera** contro aria, umidità e microbi. Un petto di pollo in una confezione normale dura 3-4 giorni; in una con l'aria sostituita da altri gas dura più di una settimana.
+3. **Informa**. Per legge deve riportare ingredienti, allergeni, scadenza, peso e produttore.
+4. **Convince**. Colori, foto e scritte servono a farti scegliere quel prodotto.
+5. **Facilita il trasporto**. Le scatole sono fatte per impilarsi senza sprecare spazio.
+
+Attenzione al quarto lavoro. Le informazioni obbligatorie sono controllate. Molte scritte pubblicitarie no: la parola "naturale", per esempio, non ha una definizione di legge.
+
+> ✋ **Tocca a te.** Pensa al sacchetto delle patatine: è gonfio e mezzo vuoto. Secondo te è un trucco per farlo sembrare più grande o ha una ragione tecnica? Scrivi la tua ipotesi e spiegala a un compagno.
+
+**Di che cosa è fatta**
+
+| Materiale | Punto forte | Punto debole |
+|-----------|-------------|--------------|
+| Plastica | leggera, economica, impermeabile | viene dal petrolio, difficile da riciclare |
+| Vetro | non altera il cibo, si ricicla all'infinito | pesante e fragile |
+| Metallo | ottima barriera, si ricicla all'infinito | più costoso |
+| Carta e cartone | rinnovabile, riciclabile | da sola non tiene l'umidità |
+
+Il problema nasce quando i materiali si mescolano. Il cartone del latte è fatto di strati di carta, plastica e alluminio incollati. Funziona benissimo, ma è difficile da separare e quindi da riciclare. Lo stesso vale per il sacchetto delle patatine.
+
+A proposito: quel sacchetto è gonfio perché dentro c'è un gas, l'azoto, che protegge le patatine dall'ossigeno e fa da cuscino contro gli urti. Una ragione tecnica c'è.
+
+**Quando è troppo**
+
+L'**over-packaging** è l'imballaggio esagerato: biscotti incartati uno a uno dentro un'altra confezione, frutta già sbucciata in vaschette di plastica. Spreca materiale e produce rifiuti che si potevano evitare. In Italia gli imballaggi sono una parte molto grande dei rifiuti di casa.
+
+**Le alternative**
+
+- Le **bioplastiche**, fatte da piante. Attenzione: quelle compostabili si decompongono solo negli impianti, non in natura.
+- Il packaging **riutilizzabile**: in Germania paghi una piccola cauzione sulla bottiglia e la riprendi quando la riporti.
+- Il packaging **edibile**, che si mangia insieme al prodotto, come il cono del gelato.
+- Lo sfuso: nessuna confezione.
+
+> ✋ **Tocca a te.** Scegli una merenda confezionata che conosci. Conta gli strati di imballaggio, dal più esterno a quello che tocca il cibo. Quali servono davvero e quali si potrebbero togliere?
+
+> 📍 **Qui da noi.** Nel tuo paese c'è un negozio che vende prodotti sfusi, una casetta dell'acqua o un distributore di latte fresco? Chiedi a casa, segna dove si trovano e portalo in classe.
+
+**In tre righe**
+
+- Il packaging protegge, conserva, informa, convince e facilita il trasporto.
+- Ogni materiale ha un pregio e un difetto; i materiali mescolati sono i più difficili da riciclare.
+- L'imballaggio migliore è quello che serve davvero, e niente di più.
+
+---
+
 ### L'imballaggio non è solo una scatola: ha cinque funzioni precise.
 
 Guarda un pacchetto di pasta sullo scaffale del supermercato. Sembra una cosa semplice: cartone con la foto di un piatto di tagliatelle. Ma quell'imballaggio sta facendo almeno cinque cose contemporaneamente. Toglilo e la pasta non può esistere su quello scaffale.
@@ -386,6 +438,8 @@ Il cliente vuole ridurre l'impatto ambientale del packaging del 50% entro due an
 La tua classe ha deciso di realizzare un **audit del packaging** della mensa scolastica. Per un giorno intero, raccoglierete tutti gli imballaggi dei prodotti usati in mensa — dalla cucina al vassoio — e li analizzerete per capire: quanti sono evitabili? quanti vengono smaltiti correttamente? quali alternative esistono?
 
 Ma prima di fare l'audit di classe, fai una prova individuale a casa.
+
+> 📬 **A chi lo consegni davvero.** Chi gestisce la mensa o il bar della scuola. Se non c'è, la tua famiglia. Consegna i risultati dell'audit con una sola richiesta precisa. Chiedi una risposta: si può fare, e da quando?
 
 ---
 

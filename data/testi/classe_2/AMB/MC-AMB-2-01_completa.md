@@ -20,6 +20,57 @@ Come fa un edificio a reggere? E perché alcune strutture durano millenni mentre
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un edificio non sta in piedi "perché è solido". Sta in piedi perché le forze che lo spingono, a cominciare dal suo stesso peso, vengono guidate fino al terreno senza rompere niente lungo la strada.
+
+**Quattro modi di sollecitare un materiale**
+
+- **Compressione**: schiacciare. Un pilastro è schiacciato tra il peso che ha sopra e il terreno che ha sotto. Pietra, mattoni e calcestruzzo la reggono benissimo.
+- **Trazione**: tirare. Il cavo di un ponte sospeso è tirato dalle due parti. L'acciaio la regge benissimo; pietra e calcestruzzo quasi per niente.
+- **Flessione**: piegare. Una trave con un peso al centro si incurva: sopra si schiaccia, sotto si tira.
+- **Taglio**: far scorrere una parte rispetto all'altra, come le lame di una forbice sulla carta. È la sollecitazione tipica dei terremoti, che spingono gli edifici di lato.
+
+> ✋ **Tocca a te.** Prendi un righello di plastica e appoggialo tra due libri come un ponte. Premi piano al centro con un dito: quale delle quattro sollecitazioni stai vedendo? Dove si schiaccia e dove si tira?
+
+**Perché esiste il cemento armato**
+
+Il calcestruzzo regge la compressione ma non la trazione. L'acciaio regge la trazione. Mettendo barre d'acciaio dentro il calcestruzzo si ottiene il **cemento armato**, che regge tutte e due. È il materiale con cui è costruita la maggior parte degli edifici moderni.
+
+**Due modi di tenere su una casa**
+
+Nelle case più vecchie il peso lo portano i muri: sono **muri portanti**. Sono spessi, e non si possono abbattere senza mettere in pericolo l'edificio.
+
+Negli edifici moderni il peso lo porta un **telaio**: uno scheletro di **pilastri** verticali e **travi** orizzontali in cemento armato. Le pareti interne servono solo a dividere le stanze, e si possono spostare.
+
+Poi ci sono le strutture in acciaio, leggere e fortissime, usate per capannoni e grattacieli, e quelle in **legno lamellare**, fatto di strati incollati: pesa poco e si comporta molto bene durante un terremoto.
+
+**Sotto terra**
+
+Tutto il peso arriva alle **fondazioni**, la parte dell'edificio che sta nel terreno e gli trasmette i carichi. Se il terreno è debole, la struttura non può nulla: la Torre di Pisa pende perché da un lato il suolo ha ceduto più che dall'altro.
+
+Quando il terreno buono è in profondità si usano i pali. Venezia sta in piedi da mille anni su milioni di pali di legno piantati nel fango.
+
+**Resistere al terremoto**
+
+L'Italia è un paese a forte rischio sismico. Un terremoto non schiaccia gli edifici: li scuote di lato, avanti e indietro. Un edificio **antisismico** è progettato per sopportarlo. Tre strategie:
+
+- elementi diagonali, i controventi, che irrigidiscono il telaio;
+- dissipatori, che assorbono l'energia come gli ammortizzatori di un'auto;
+- isolatori alla base, cuscinetti di gomma e acciaio tra fondazioni e edificio: il terreno si muove molto, l'edificio poco.
+
+> ✋ **Tocca a te.** Guarda il soffitto e le pareti dell'aula. Riesci a vedere travi o pilastri? Secondo te la scuola ha muri portanti o un telaio? Che indizi hai usato?
+
+> 📍 **Qui da noi.** In Italia ogni Comune ha una zona sismica, da 1 (la più pericolosa) a 4. Cerca sul sito della Protezione Civile quella del tuo Comune. Poi chiedi a casa: in che anno è stato costruito l'edificio in cui abiti? Più o meno recente delle regole antisismiche?
+
+**In tre righe**
+
+- Una struttura guida le forze fino al terreno: compressione, trazione, flessione, taglio.
+- Il cemento armato unisce calcestruzzo e acciaio per reggere sia schiacciamento sia trazione.
+- Un edificio antisismico è fatto per essere scosso di lato senza crollare.
+
+---
+
 ### Ogni edificio è una macchina per sopportare forze.
 
 Guarda il soffitto sopra di te. Adesso immagina di togliere le pareti. Cosa succederebbe? Il soffitto cadrebbe. Ecco il problema fondamentale di ogni costruzione: come impedire alla struttura di cedere sotto il proprio peso e sotto i carichi che sopporta.
@@ -457,6 +508,8 @@ ____________________________________________________________________
 Sei un tecnico del patrimonio edilizio del tuo Comune. Il Comune ti chiede di analizzare un edificio significativo del tuo quartiere o della tua città — potrebbe essere la tua scuola, una chiesa, un edificio storico, o il palazzo in cui abiti.
 
 Il tuo obiettivo: documentare la struttura dell'edificio, capire come funziona, e valutare se ci sono aspetti migliorabili dal punto di vista sismico o energetico.
+
+> 📬 **A chi lo consegni davvero.** Chi conosce davvero l'edificio: l'ufficio tecnico del Comune, l'amministratore del condominio, il parroco. Consegna la scheda e chiedi di correggere almeno un dato, per esempio l'anno o il tipo di struttura.
 
 ---
 

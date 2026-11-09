@@ -30,6 +30,76 @@ Se ricevessi adesso un messaggio urgente che ti dice che il tuo account è in pe
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+La sicurezza digitale non è roba da esperti. È come lavarsi le mani: semplice, ma funziona solo se lo fai sempre. La maggior parte degli attacchi non sfrutta un difetto dei computer: sfrutta una distrazione delle persone.
+
+**L'esca**
+
+Il **phishing** è un messaggio che finge di arrivare da qualcuno di cui ti fidi, come un social, una banca o la scuola, e ti chiede di fare una cosa: cliccare un link, inserire la password. Il nome viene da "fishing", pescare: qualcuno lancia l'esca e aspetta.
+
+Arriva per email, per SMS, nei messaggi privati. A Luca è successo proprio così.
+
+Altri pericoli comuni:
+
+- il **malware**: un programma dannoso nascosto dentro un gioco "gratis" o un file scaricato da un sito non ufficiale;
+- il finto amico: qualcuno conosciuto online che, dopo settimane di chiacchiere, chiede un favore strano o urgente.
+
+**Cinque segnali per riconoscerlo**
+
+1. **Fretta.** "Entro 24 ore", "subito", "ultimo avviso". La fretta serve a non farti pensare.
+2. **Chiede la password.** Nessun servizio vero la chiede per messaggio. Mai.
+3. **Indirizzo strano.** Il link dice `instagram-support.net` invece di `instagram.com`.
+4. **Saluto generico.** "Gentile utente": chi ti conosce davvero usa il tuo nome.
+5. **Allegato che non aspettavi.**
+
+> ✋ **Tocca a te.** Quanti segnali trovi in questo messaggio? *"Caro utente, abbiamo rilevato un accesso sospetto. Per proteggere il suo account clicchi subito: www.instagram-accounts-security.net/verify. Ha 12 ore."* Sottolineali e confrontati con un compagno.
+
+La regola che vale sempre: non cliccare il link. Apri tu il sito o l'app, scrivendo l'indirizzo a mano, e controlla lì se c'è davvero un problema.
+
+**La password: lunga batte complicata**
+
+`P@ssw0rd!` è corta e si indovina. Una frase lunga è molto più forte, ed è più facile da ricordare. Si chiama **passphrase**.
+
+Tre regole:
+
+- lunga: almeno 12 caratteri, meglio di più;
+- unica: una diversa per ogni servizio. Se ne rubano una, non aprono tutto;
+- non ovvia: niente nome, data di nascita o "123456".
+
+Ricordarle tutte è impossibile. Per questo esistono i password manager, programmi che le custodiscono al posto tuo.
+
+**La seconda serratura**
+
+L'**autenticazione a due fattori** aggiunge un secondo controllo. Oltre alla password, che è una cosa che sai, serve un codice che arriva sul telefono, che è una cosa che hai. Chi ruba la password resta comunque fuori. Va attivata almeno sull'email, perché dall'email si recuperano tutti gli altri account.
+
+**Se succede**
+
+1. Cambia subito la password, entrando dal sito ufficiale.
+2. Cambia anche quella dell'email.
+3. Scollega tutti i dispositivi che non riconosci.
+4. Attiva i due fattori.
+5. Avvisa i tuoi contatti: i messaggi strani non erano tuoi.
+6. Dillo a un adulto. Non c'è niente di cui vergognarsi: capita anche ai grandi.
+
+**La tua reputazione**
+
+Quello che pubblichi resta, anche se lo cancelli. Prima di postare chiediti se ti andrebbe bene che lo vedesse un tuo insegnante o un familiare.
+
+In Italia per aprire da soli un account social bisogna avere almeno 14 anni. Pubblicare foto di altri senza permesso può avere conseguenze, anche legali. Se subisci o vedi episodi di cyberbullismo puoi parlarne con un insegnante, con la Polizia Postale o chiamare il Telefono Azzurro al 19696.
+
+> ✋ **Tocca a te.** Inventa una passphrase di almeno quattro parole che non c'entrano niente tra loro, facile da ricordare per te e impossibile da indovinare. Non scrivere quella vera: è un allenamento.
+
+> 📍 **Qui da noi.** Chiedi in famiglia: qualcuno ha mai ricevuto un messaggio truffa, per esempio il finto pacco in consegna o il finto "ciao mamma, ho cambiato numero"? Che cosa c'era scritto? Raccogliamo gli esempi in classe e cerchiamo i cinque segnali.
+
+**In tre righe**
+
+- Il phishing punta sulla fretta: fermati e non cliccare il link.
+- Password lunghe e diverse, più l'autenticazione a due fattori.
+- Se un account viene rubato si agisce subito, e se ne parla con un adulto.
+
+---
+
 ### Sicurezza digitale: non è paranoia, è igiene
 
 La sicurezza digitale non è una questione riservata agli esperti di informatica o alle grandi aziende. È una competenza quotidiana, come lavarsi le mani: semplice da praticare, ma efficace solo se la pratichi sempre e non solo quando ci pensi.
@@ -420,6 +490,8 @@ Competenze chiave che inizia a costruire da qui: digital reputation · GDPR · s
 La tua scuola ha subito un tentativo di phishing: qualcuno ha mandato email a studenti e famiglie fingendo di essere la segreteria, chiedendo di accedere a un link per aggiornare i dati di iscrizione. Tre famiglie hanno cliccato il link prima che la scuola riuscisse ad avvisare tutti.
 
 Il dirigente scolastico ti chiede di preparare un "kit di prima risposta" per aiutare le famiglie colpite e prevenire attacchi futuri.
+
+> 📬 **A chi lo consegni davvero.** La segreteria della scuola e un adulto di casa tua. Il kit deve stare in una pagina. Fallo leggere all'adulto: dopo un minuto sa dirti che cosa farebbe? Se no, riscrivilo.
 
 ---
 

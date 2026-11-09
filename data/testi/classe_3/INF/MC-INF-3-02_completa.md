@@ -21,6 +21,56 @@ Come funziona — e cosa può andare storto?
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+"Intelligenza artificiale" è un nome che inganna. Un programma di questo tipo non pensa e non capisce. Fa un'altra cosa, molto bene: trova regolarità in enormi quantità di dati e le usa per fare previsioni. Se sai come funziona, sai anche quando fidarti e quando no.
+
+**Imparare dagli esempi**
+
+In un programma normale è una persona a scrivere le regole. Nel **machine learning**, cioè apprendimento automatico, le regole le ricava il programma, dagli esempi. Il risultato si chiama **modello**. Esistono tre modi principali per ottenerlo.
+
+- **Con le risposte già pronte.** Mostri al modello migliaia di email già segnate come "spam" o "non spam". Lui prova a indovinare, confronta con la risposta giusta, si corregge. Dopo moltissimi tentativi riconosce lo spam anche in email mai viste.
+- **Senza risposte.** Il modello riceve dati non etichettati e cerca da solo i gruppi. Un servizio di musica scopre così che chi ascolta un certo artista ascolta spesso anche un altro.
+- **Per tentativi e premi.** Il modello prova un'azione, riceve un premio o una penalità, e aggiusta la strategia. È così che nel 2016 un programma ha battuto uno dei più forti giocatori al mondo di Go, un gioco da tavolo più complesso degli scacchi.
+
+> ✋ **Tocca a te.** Scrivi tre regole per riconoscere un messaggio truffa, del tipo "se contiene… allora…". Poi inventa un messaggio truffa che le aggira tutte e tre. Che cosa ti dice questo sul perché si preferisce far imparare la macchina dagli esempi?
+
+**Le reti neurali**
+
+I modelli più potenti usano le **reti neurali**: strutture matematiche che si ispirano, alla lontana, al cervello. Sono fatte a strati. Il primo riceve i dati, per esempio i puntini di un'immagine. Gli strati intermedi li trasformano un passo alla volta. L'ultimo dà la risposta.
+
+Ogni collegamento ha un numero, detto peso, che dice quanto conta quell'informazione. L'**addestramento** consiste in questo: mostrare esempi e ritoccare i pesi, miliardi di volte, finché gli errori diminuiscono.
+
+In una rete che riconosce i volti, i primi strati vedono solo bordi e contrasti. Quelli di mezzo riconoscono forme. Gli ultimi, un volto. Nessuno ha scritto queste regole: sono emerse dai dati.
+
+I programmi che scrivono testi, come i chatbot, sono reti enormi addestrate su quantità gigantesche di testo. Fanno una cosa sola: prevedere la parola che viene dopo.
+
+**Tre limiti da conoscere**
+
+**Le allucinazioni.** Un chatbot produce frasi plausibili, non frasi vere. Può inventare una data, un libro, una citazione, e scriverle con lo stesso tono sicuro di sempre. Dipende da come è costruito, e per questo non sparirà con un aggiornamento. La regola pratica: le cose importanti si verificano su una fonte affidabile.
+
+**I pregiudizi.** Un modello impara tutto quello che c'è nei dati, compresi i pregiudizi delle persone: in inglese si chiamano **bias**. Un'azienda aveva costruito un sistema per scegliere i curriculum. Lo aveva addestrato sulle assunzioni degli anni precedenti, quasi tutte di uomini. Il sistema ha imparato a scartare le donne, e l'azienda ha dovuto abbandonarlo. La macchina aveva fatto esattamente quello che i dati le avevano insegnato.
+
+**Imparare a memoria.** Un modello può adattarsi così tanto agli esempi da impararli a memoria, senza capire la regola generale. Va benissimo sugli esempi già visti e malissimo su quelli nuovi. Come chi impara a memoria le risposte di una verifica: se cambia la domanda, è perduto. Per questo un modello si mette sempre alla prova su dati che non ha mai visto.
+
+C'è poi il tempo. Il mondo cambia, e un modello addestrato sui dati di ieri sbaglia sempre di più con quelli di domani. Va tenuto d'occhio e aggiornato.
+
+**Il lavoro vero**
+
+Costruire un modello è in gran parte un lavoro sui dati: raccoglierli, ripulirli, scegliere che cosa conta. Solo dopo vengono l'addestramento, la prova su dati nuovi e il controllo nel tempo. Dati sbagliati in ingresso danno risposte sbagliate in uscita, per quanto la rete sia potente.
+
+> ✋ **Tocca a te.** Devi addestrare un modello a riconoscere i cani nelle foto. Tutte le foto che hai sono state scattate di giorno, al parco. Con quali foto il modello sbaglierà? Che cosa dovresti aggiungere agli esempi?
+
+> 📍 **Qui da noi.** A casa, con un adulto, fai a un chatbot tre domande sul tuo paese di cui conosci bene la risposta: una festa, un monumento, una persona nota. Quante risposte sono giuste? Ha inventato qualcosa? Porta in classe il risultato.
+
+**In tre righe**
+
+- Un modello di machine learning ricava le regole dagli esempi: nessuno gliele scrive.
+- Una rete neurale impara ritoccando i suoi pesi finché sbaglia di meno.
+- Un modello può inventare, ripetere pregiudizi e imparare a memoria: ciò che conta va verificato.
+
+---
+
 ### Le macchine non pensano. Ottimizzano.
 
 Il termine "intelligenza artificiale" crea aspettative sbagliate. Un modello di machine learning non pensa, non capisce, non ragiona. Esegue un'operazione matematica molto complessa: trovare pattern in enormi quantità di dati e usarli per fare previsioni su dati nuovi.
@@ -264,6 +314,8 @@ Il tuo docente ti fornisce (o puoi scaricare dal QR code) un dataset anonimizzat
 ### Lo scenario
 
 Il tuo comune sta valutando di usare un algoritmo di machine learning per identificare le famiglie più a rischio di morosità nelle bollette e contattarle in anticipo con supporto sociale. Un'intenzione nobile — ma il sistema usa dati storici che riflettono disuguaglianze esistenti.
+
+> 📬 **A chi lo consegni davvero.** Il docente di educazione civica e un adulto di casa. Consegna il tuo parere in una pagina. Chiedi all'adulto: ti fideresti di questo sistema, se riguardasse la tua famiglia?
 
 ---
 

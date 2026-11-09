@@ -22,6 +22,66 @@ Ogni volta che la usi, cedi qualcosa. Adesso impari esattamente cosa, come funzi
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Le app che usi ogni giorno sono gratis perché le paghi in un altro modo: con le informazioni su di te. Capire quali, e che cosa puoi farci, è il primo passo per decidere tu.
+
+**Che cos'è un dato personale**
+
+Un **dato personale** è qualsiasi informazione che, da sola o unita ad altre, permette di riconoscere una persona. Il nome, certo. Ma anche:
+
+- dove ti trovi;
+- che cosa cerchi e che cosa guardi, e per quanto tempo;
+- il tuo volto e la tua impronta digitale;
+- il codice che identifica il tuo telefono.
+
+Presi uno alla volta sembrano innocui. Messi insieme raccontano moltissimo: che cosa ti piace, a che ora dormi, chi frequenti.
+
+> ✋ **Tocca a te.** Scrivi tre cose che un'app di video potrebbe capire di te solo guardando che cosa guardi e a che ora, senza che tu gliele abbia mai dette.
+
+**Come vengono raccolti**
+
+Nessuno te lo chiede ogni volta. La raccolta è dentro il funzionamento dei servizi.
+
+I **cookie** sono piccoli file che un sito salva nel tuo browser. Alcuni servono: ricordano che hai già fatto l'accesso. Altri ti seguono da un sito all'altro per costruire un **profilo** dei tuoi gusti e mostrarti pubblicità su misura. È per questo che, dopo aver guardato un paio di scarpe, le ritrovi dappertutto.
+
+**I tuoi diritti**
+
+In Europa c'è una legge che ti protegge: il **GDPR**. Ti dà, tra gli altri, questi diritti:
+
+- sapere quali dati un servizio ha raccolto su di te e averne una copia;
+- far correggere quelli sbagliati;
+- chiedere che vengano cancellati;
+- dire di no all'uso dei tuoi dati per la pubblicità.
+
+I banner che compaiono quando apri un sito esistono per questa legge: devono chiederti il permesso. Puoi rispondere "rifiuta".
+
+**Quello che pubblichi resta**
+
+Una foto pubblicata oggi può esistere ancora tra vent'anni. Anche se la cancelli, qualcuno può averla salvata o fotografata dallo schermo. L'insieme delle tracce che lasci online è la tua **impronta digitale**: racconta di te anche a chi non ti conosce.
+
+Prima di pubblicare, una domanda: mi andrebbe bene se lo vedessero tutti, anche tra dieci anni?
+
+**Parole che fanno male**
+
+Il **cyberbullismo** è un'aggressione ripetuta e voluta fatta con strumenti digitali: insulti, esclusioni, foto diffuse senza permesso. In Italia una legge del 2017 permette a chi lo subisce di chiedere la rimozione dei contenuti. Non è uno scherzo, e non si affronta da soli: se ne parla con un adulto.
+
+**Chiudere la porta**
+
+Una buona **password** è lunga, diversa per ogni servizio e non si dice a nessuno. Ancora meglio è l'accesso in due passaggi: oltre alla password serve un codice che arriva sul telefono. Così, anche se qualcuno ruba la password, resta fuori.
+
+> ✋ **Tocca a te.** Senza dirla a nessuno, pensa alla tua password principale. È lunga almeno 12 caratteri? La usi anche per altri servizi? Contiene il tuo nome o la tua data di nascita? Conta quanti "problemi" ha.
+
+> 📍 **Qui da noi.** A casa, con un adulto: aprite le impostazioni di un'app che usate tutti e cercate la voce "privacy". A che cosa ha accesso: posizione, microfono, contatti, foto? Serve davvero? Portate in classe l'elenco, senza dati personali.
+
+**In tre righe**
+
+- I dati personali sono tutto ciò che permette di riconoscerti, anche le tue abitudini.
+- Il GDPR ti dà il diritto di sapere, correggere, cancellare e rifiutare.
+- Quello che pubblichi resta: pensa prima, e proteggi l'accesso con password lunghe e doppio passaggio.
+
+---
+
 ### Cos'è un dato personale — e perché sembra ovvio ma non lo è
 
 Inizia da una domanda semplice: il tuo nome è un dato personale?
@@ -147,7 +207,7 @@ La zona grigia è quella più pericolosa, perché le persone la trattano come pr
 
 **Cyberbullismo:** comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali. Caratteristiche: ripetitività (non è un singolo episodio), intenzionalità (non è accidentale), squilibrio di potere tra chi agisce e chi subisce. Forme: molestie dirette, esclusione online, diffusione di immagini o informazioni imbarazzanti, furto di identità, stalking digitale.
 
-In Italia, la **Legge n. 71/2017** ("Legge Mancino sul cyberbullismo") prevede per i minorenni: misure di protezione della vittima, obbligo scolastico di adottare misure preventive, possibilità per la vittima di chiedere la rimozione dei contenuti. Per i maggiorenni che commettono cyberbullismo, si applicano le norme penali esistenti (diffamazione, stalking, minacce).
+In Italia, la **Legge n. 71/2017** (la legge italiana sul cyberbullismo) prevede per i minorenni: misure di protezione della vittima, obbligo scolastico di adottare misure preventive, possibilità per la vittima di chiedere la rimozione dei contenuti. Per i maggiorenni che commettono cyberbullismo, si applicano le norme penali esistenti (diffamazione, stalking, minacce).
 
 **Hate speech:** discorso d'odio — espressioni che incitano all'odio, alla violenza o alla discriminazione verso persone o gruppi per caratteristiche come etnia, religione, genere, orientamento sessuale, disabilità. In Italia l'istigazione all'odio razziale è un reato (Art. 604-bis del Codice Penale). La Corte di Cassazione ha stabilito che l'hate speech online è soggetto alle stesse norme dell'hate speech offline.
 
@@ -328,6 +388,8 @@ Scrivi una pagina (circa 200-250 parole) che risponde a: cosa hai scoperto sui t
 La tua classe partecipa a un progetto di "sensibilizzazione alla privacy digitale" promosso da un'associazione locale. Vi viene chiesto di preparare una "mappa dell'impronta digitale" di un utente tipo — non di una persona reale, ma di un profilo anonimo — che mostri quali dati vengono raccolti nel corso di una settimana normale di utilizzo di Internet.
 
 Il risultato sarà esposto alla mostra di fine anno della scuola, con l'obiettivo di aiutare famiglie e studenti a capire cosa succede davvero quando si naviga online.
+
+> 📬 **A chi lo consegni davvero.** I genitori e i visitatori della scuola. La mappa va esposta nell'atrio con una domanda accanto: che cosa non sapevi? Raccogli le risposte su foglietti e contale.
 
 ---
 

@@ -189,7 +189,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Circa 400 cavi sottomarini attivi",
+          "testo": "Circa 400 cavi sottomarini",
           "corretto": true,
           "feedback": "Esatto! Nel 2024 esistono circa 400 cavi sottomarini attivi, per oltre 1,3 milioni di km di lunghezza totale, che trasportano più del 95% del traffico Internet globale."
         },
@@ -225,7 +225,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "I restanti 150 ms sono dovuti all'elaborazione nei router, conversioni digitali e routing",
+          "testo": "Il resto del tempo serve ai router per elaborare e instradare i dati",
           "corretto": true,
           "feedback": "Esatto! Il testo lo spiega nel box Fisica: il percorso fisico richiede meno di 50 ms, ma l'elaborazione nei nodi di rete aggiunge circa 150 ms."
         },
@@ -261,7 +261,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "2,4 GHz ha più portata ma meno velocità; 5 GHz ha meno portata ma più velocità",
+          "testo": "2,4 GHz arriva più lontano; 5 GHz è più veloce ma a corto raggio",
           "corretto": true,
           "feedback": "Esatto! Il 2,4 GHz arriva fino a ~30 m al chiuso e penetra meglio i muri; il 5 GHz è più veloce ma raggiunge solo ~15 m e viene assorbito dai muri."
         },
@@ -297,7 +297,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Che tutti i pacchetti arrivino a destinazione e nel giusto ordine",
+          "testo": "Che tutti i pacchetti arrivino, e nel giusto ordine",
           "corretto": true,
           "feedback": "Esatto! TCP si occupa di garantire che tutti i pacchetti arrivino e nel giusto ordine. Se un pacchetto si perde, TCP lo ritrasmette."
         },
@@ -333,7 +333,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "UDP è più veloce perché non garantisce la consegna di ogni pacchetto",
+          "testo": "UDP è più veloce: non verifica ogni pacchetto",
           "corretto": true,
           "feedback": "Esatto! UDP non aspetta la conferma di ricezione di ogni pacchetto, quindi è più veloce. In un gioco in tempo reale, perdere un pacchetto è meglio che attendere la ritrasmissione."
         },
@@ -369,7 +369,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Filtra il traffico in base a regole predefinite su indirizzi IP, porte e protocolli",
+          "testo": "Filtra il traffico in base a regole predefinite",
           "corretto": true,
           "feedback": "Esatto! Il firewall controlla ogni pacchetto in entrata e uscita secondo regole: da quale IP arriva, a quale porta è diretto, che protocollo usa."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'anonimato completo, perché il server VPN conosce la tua identità",
+          "testo": "L'anonimato: chi gestisce la VPN sa chi sei",
           "corretto": true,
           "feedback": "Esatto! Una VPN non ti rende anonimo: il server VPN sa chi sei. Inoltre, una VPN gratuita spesso vende i tuoi dati per finanziarsi."
         },
@@ -441,7 +441,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Concentra il controllo dell'infrastruttura di comunicazione globale in poche mani private",
+          "testo": "Concentra il controllo delle comunicazioni globali in poche mani private",
           "corretto": true,
           "feedback": "Esatto! Il testo sottolinea che chi possiede i cavi possiede l'infrastruttura della comunicazione globale — con implicazioni politiche che vanno oltre la tecnologia."
         },
@@ -477,7 +477,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il 95% del traffico Internet globale dipende da infrastrutture fisiche facilmente danneggiabili",
+          "testo": "Quasi tutto il traffico Internet dipende da cavi fisici che si possono rompere",
           "corretto": true,
           "feedback": "Esatto! L'evento di Tonga mostra che Internet, nonostante la sua architettura distribuita, dipende da cavi fisici vulnerabili. 100.000 persone rimasero isolate per 5 settimane."
         },
@@ -549,7 +549,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Testare la velocità con speedtest.net e poi isolare il problema tra Wi-Fi, banda verso Internet, o server remoto",
+          "testo": "Misurare la velocità e isolare il guasto: Wi-Fi, linea o server remoto",
           "corretto": true,
           "feedback": "Esatto! Il testo insegna a separare i possibili problemi: numero di dispositivi sull'access point, saturazione della banda, interferenze Wi-Fi, o problemi sul server remoto."
         },
@@ -585,7 +585,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "No: la maggior parte dei punti di atterraggio è in Europa occidentale, Nord America e Asia orientale",
+          "testo": "No: i cavi approdano soprattutto in Europa, Nord America e Asia orientale",
           "corretto": true,
           "feedback": "Esatto! Il testo indica che la copertura è molto disomogenea: Africa subsahariana, Oceania rurale e centro-sud dell'Asia hanno copertura molto inferiore."
         },
@@ -621,7 +621,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché milioni di dispositivi connessi richiedono reti molto più complesse da progettare e proteggere",
+          "testo": "Perché milioni di dispositivi connessi rendono le reti più complesse",
           "corretto": true,
           "feedback": "Esatto! Il testo indica che con IoT una fabbrica ha migliaia di dispositivi connessi e una città intelligente ne ha milioni: la complessità cresce enormemente."
         },

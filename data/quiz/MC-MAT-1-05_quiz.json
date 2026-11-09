@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ematite (Fe₂O₃)",
+          "testo": "Ematite",
           "corretto": true,
           "feedback": "Esatto! L'ematite è il minerale di ferro più importante. Da una tonnellata di ematite si ricavano circa 700 kg di ferro."
         },
@@ -75,7 +75,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il cromo forma uno strato sottilissimo di ossido di cromo (circa 2 nanometri) che sigilla la superficie impedendo all'ossigeno di raggiungere il ferro sottostante",
+          "testo": "Il cromo forma un sottilissimo strato di ossido che sigilla la superficie e isola il ferro",
           "corretto": true,
           "feedback": "Esatto! Il cromo a contatto con l'ossigeno forma Cr₂O₃, uno strato protettivo trasparente (~2 nm) e aderente. Questo strato si auto-ripara se graffiato: basta esporre la superficie all'aria e lo strato si ricostituisce."
         },
@@ -108,7 +108,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'acciaio pesa circa 3 volte l'alluminio (densità: acciaio 7,8 g/cm³, alluminio 2,7 g/cm³)",
+          "testo": "L'acciaio pesa circa 3 volte l'alluminio",
           "corretto": true,
           "feedback": "Esatto! La densità dell'acciaio è 7,8 g/cm³, dell'alluminio 2,7 g/cm³: rapporto 7,8/2,7 ≈ 2,9 ≈ 3. A parità di volume, l'acciaio pesa quasi 3 volte di più. È per questo che l'alluminio è usato dove il peso è critico."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché l'argento costa circa 100 volte più del rame e la differenza di conduttività non giustifica il costo aggiuntivo",
+          "testo": "Perché l'argento costa moltissimo di più, e conduce solo poco meglio del rame",
           "corretto": true,
           "feedback": "Esatto! L'argento conduce leggermente meglio del rame (62 vs 58 MS/m) ma costa circa 100 volte di più. Per le applicazioni elettriche comuni, la differenza di conduttività non giustifica il costo enorme dell'argento."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la ghisa si rompe all'improvviso senza dare segnali visibili di cedimento, mentre l'acciaio si deforma prima di rompersi avvisando del pericolo",
+          "testo": "Perché la ghisa si rompe di colpo, mentre l'acciaio prima si deforma e avvisa del pericolo",
           "corretto": true,
           "feedback": "Esatto! La duttilità dell'acciaio è una caratteristica di sicurezza strutturale: prima di rompersi l'acciaio si piega visibilmente (deformazione plastica), segnalando il pericolo. La ghisa si rompe di colpo senza preavviso visivo: questo ha causato i cedimenti improvvisi dei ponti in ghisa nel XIX secolo."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il carbonio del coke produce monossido di carbonio (CO) che 'ruba' l'ossigeno dall'ossido di ferro (Fe₂O₃), liberando ferro metallico",
+          "testo": "Il carbonio del coke forma un gas che sottrae l'ossigeno all'ossido di ferro, liberando il ferro",
           "corretto": true,
           "feedback": "Esatto! Il coke brucia producendo CO₂, che a sua volta reagisce con altro coke formando CO (monossido). Il CO è l'agente riducente vero: reagisce con Fe₂O₃ cedendogli carbonio e 'rubandogli' l'ossigeno → Fe₂O₃ + 3CO → 2Fe + 3CO₂."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La 'resistenza specifica' (resistenza meccanica divisa per la densità) delle leghe 7000 è paragonabile o superiore all'acciaio: stessa forza per meno peso, non stessa forza per stesso peso",
+          "testo": "Si parla di resistenza a parità di peso: stessa forza con meno massa, non stessa forza a pari massa",
           "corretto": true,
           "feedback": "Esatto! Il confronto è sulla 'resistenza specifica' = resistenza a trazione / densità. Lega Al 7075-T6: 572 MPa / 2,81 g/cm³ = 203 MPa·dm³/g. Acciaio dolce: 400 MPa / 7,8 g/cm³ = 51 MPa·dm³/g. La lega 7075 ha resistenza specifica 4 volte l'acciaio dolce."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il meccanismo dell'anodo sacrificale: lo zinco si corrode al posto del ferro perché ha potenziale elettrochimico più basso, proteggendo il ferro esposto anche senza barriera fisica",
+          "testo": "L'anodo sacrificale: lo zinco si corrode al posto del ferro, proteggendolo anche dove è scoperto",
           "corretto": true,
           "feedback": "Esatto! Lo zinco ha potenziale elettrochimico più basso del ferro: in presenza di umidità, lo zinco si ossida preferenzialmente al posto del ferro ('si sacrifica'). Anche dove la superficie è graffiata e il ferro è esposto, il zinco circostante continua a proteggere il ferro dal corrode."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La patina del rame (idrossicarbonato di rame) è densa e aderente, sigillando la superficie; la ruggine del ferro è porosa e lascia filtrare aria e acqua verso il metallo sottostante",
+          "testo": "La patina del rame è compatta e aderente; la ruggine è porosa e lascia passare aria e acqua",
           "corretto": true,
           "feedback": "Esatto! La differenza critica è la struttura dello strato di ossidazione: la patina del rame (Cu₂(OH)₂CO₃) è compatta e aderisce al metallo sottostante, bloccando l'accesso di ulteriore ossigeno. La ruggine (Fe₂O₃·nH₂O) è porosa: lascia filtrare ossigeno e acqua verso il ferro, continuando la corrosione verso l'interno."
         },
@@ -372,7 +372,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Perché la fibra di carbonio è il termine di confronto obbligato per valutare la resistenza specifica dei metalli: capire perché i professionisti la usano aiuta a capire i limiti di ciascun metallo",
+          "testo": "Perché è il termine di confronto per valutare la resistenza a parità di peso dei metalli",
           "corretto": true,
           "feedback": "Esatto! Includere il carbonio permette di contestualizzare le prestazioni dei metalli: l'acciaio da 2,2 kg di telaio vs il carbonio da 0,7 kg. Questo confronto rende comprensibili i trade-off di peso, costo, riparabilità e sostenibilità di ciascun materiale."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il costo della corrosione deve essere incluso nel costo totale di vita del prodotto (LCA): un materiale più costoso ma anticorrosivo può avere un costo di ciclo di vita inferiore a uno economico ma soggetto a corrosione",
+          "testo": "Va contato il costo di tutta la vita del prodotto: un materiale più caro ma resistente può costare meno",
           "corretto": true,
           "feedback": "Esatto! Il costo iniziale di un materiale è solo una parte del costo totale. Acciaio inossidabile per una grondaia costa 3 volte l'acciaio zincato, ma dura 50+ anni contro 20-30 anni. Sul ciclo di vita, il costo può essere equivalente o inferiore se si incluono manutenzione, sostituzione, interruzione del servizio."
         },
@@ -438,7 +438,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il costo di estrazione (processo Kroll) e lavorazione del titanio è 10-20 volte superiore a quello dell'acciaio: il vantaggio prestazionale non giustifica il costo aggiuntivo per la maggior parte delle applicazioni",
+          "testo": "Estrarlo e lavorarlo costa molte volte più dell'acciaio: il vantaggio non ripaga quasi mai la spesa",
           "corretto": true,
           "feedback": "Esatto! Il titanio eccelle sulla resistenza specifica ma il processo Kroll (riduzione di TiCl₄ con magnesio o sodio) è lungo, energivoro e costoso. Una bici in titanio costa 5-10 volte una in acciaio equivalente. Per la maggior parte delle applicazioni (dove il peso non è critico), l'acciaio o l'alluminio offrono il miglior rapporto prestazioni/costo."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La comprensione dei fondamentali (macchine semplici, metalli puri) fornisce gli strumenti per analizzare qualsiasi sistema complesso come combinazione di principi elementari comprensibili",
+          "testo": "Capire i fondamentali dà gli strumenti per analizzare un sistema complesso come somma di principi semplici",
           "corretto": true,
           "feedback": "Esatto! Le leghe non sono 'materiali misteriosi': sono combinazioni di metalli puri con impurità controllate le cui proprietà emergono dai principi fisici elementari (reticolo cristallino, legami metallici, difetti di reticolo). Capire i fondamentali (metalli puri, cristallografia) permette di progettare leghe con proprietà specifiche."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Calcolare il costo per anno di servizio (costo totale incluse manutenzione e sostituzione diviso anni di vita utile) e confrontarlo tra le opzioni: il materiale più economico all'acquisto può costare di più nel lungo periodo",
+          "testo": "Calcolare il costo per anno di servizio, con manutenzione e sostituzioni, e confrontare le opzioni",
           "corretto": true,
           "feedback": "Esatto! Costo di vita per anno: acciaio verniciato (80€ + 20€ manutenzione verniciatura ogni 3 anni) × 20 anni ≈ (80 + 133) = 213€ / 20 = 10,65€/anno. Acciaio inox (280€ senza manutenzione) / 20+ anni ≈ 14€/anno. Il confronto dipende dalla vita utile e dalla frequenza di manutenzione."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La ghisa ha alto contenuto di carbonio (2-4,5%) che durante la saldatura si ossida producendo CO₂ che crea porosità nella saldatura e rende il raffreddamento non uniforme, causando cricche",
+          "testo": "L'alto contenuto di carbonio crea pori nella saldatura e la fa incrinare durante il raffreddamento",
           "corretto": true,
           "feedback": "Esatto! La ghisa è difficile da saldare per l'alto contenuto di carbonio: durante il raffreddamento rapido localizzato della saldatura, il carbonio forma martenssite fragile; la grafite già presente nella ghisa interferisce con la fusione dei bordi; il raffreddamento non uniforme crea tensioni che causano cricche."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La normativa UE ha forzato i produttori a integrare il riciclo nel processo di design (design for disassembly): la fine vita del prodotto è ora parte del vincolo di progettazione dall'inizio, non un problema gestito dopo",
+          "testo": "Le norme UE hanno portato il riciclo dentro il progetto: la fine vita si decide fin dall'inizio",
           "corretto": true,
           "feedback": "Esatto! La normativa EU sulla fine vita dei veicoli ha trasformato il design delle auto: i progettisti devono ora considerare la separabilità dei materiali (acciaio, alluminio, rame, plastica) fin dalla fase di design. Non è gestione post-hoc dei rifiuti: è integrazione della circolarità nel processo produttivo."
         },

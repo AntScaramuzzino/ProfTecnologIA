@@ -23,6 +23,82 @@ Non devi voler aprire un'azienda per trovare utile questo metodo. Serve ogni vol
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un'impresa non comincia da un'idea geniale. Comincia da un problema: qualcosa che a qualcuno dà fastidio, costa troppo o fa perdere tempo. Chi trova un modo di risolverlo, e qualcuno disposto a pagare per quella soluzione, ha in mano un'impresa.
+
+**Creare valore**
+
+Un'**impresa** è un'organizzazione che mette insieme lavoro, soldi, strumenti e idee per creare qualcosa che ha valore per qualcun altro. La parola che conta è valore: nessuna impresa sopravvive vendendo ciò che nessuno vuole.
+
+Saper vedere un problema, immaginare una soluzione, trovare le risorse e sopportare l'incertezza si chiama imprenditorialità. È una competenza che si impara, e serve anche a chi non aprirà mai un'azienda.
+
+**Chi risponde dei debiti**
+
+Chi apre un'impresa deve sceglierne la forma. La differenza principale riguarda i debiti.
+
+- Nella ditta individuale c'è una persona sola. È semplice da aprire, ma se le cose vanno male quella persona risponde con tutto ciò che possiede, casa compresa.
+- Nella società a responsabilità limitata, la SRL, l'impresa è separata dalle persone. I soci rischiano solo i soldi che ci hanno messo.
+- Nella **cooperativa** i proprietari sono i soci, e ogni socio ha un voto, qualunque cifra abbia versato.
+
+Una **startup** è un'impresa giovane, costruita attorno a un'idea nuova e pensata per crescere in fretta. Molte non ce la fanno.
+
+**Un'impresa in una pagina**
+
+Il **Business Model Canvas** è uno schema che descrive un'impresa su un solo foglio. Ha nove caselle. Ognuna è una domanda.
+
+| Casella | La domanda |
+|---------|------------|
+| Clienti | Per chi lo faccio? "Tutti" non è una risposta. |
+| Proposta di valore | Quale problema risolvo? |
+| Canali | Come arrivo ai clienti? |
+| Relazioni | Come resto in contatto con loro? |
+| Ricavi | Da dove entrano i soldi? |
+| Risorse | Che cosa mi serve? |
+| Attività | Che cosa faccio ogni giorno? |
+| Partner | Chi mi aiuta? |
+| Costi | Quanto spendo? |
+
+Si parte sempre dai clienti e dal problema. Il prodotto viene dopo. La proposta di valore non coincide con l'oggetto che vendi: è il vantaggio che il cliente ne ricava. Suona diverso dire "vendo un'app per studiare" e dire "ti aiuto a prepararti alla verifica in metà tempo".
+
+> ✋ **Tocca a te.** Scrivi tre cose che ti danno fastidio nella tua giornata a scuola. Scegline una. Chi altro ha lo stesso problema? Scrivi in una frase la tua proposta di valore: "Aiuto … a … ".
+
+**Prova prima, costruisci dopo**
+
+Finché non la provi con persone vere, non sai se un'idea funziona. Il metodo **Lean Startup** dice di non costruire subito il prodotto completo: costa troppo, e forse non lo vuole nessuno. Si procede a giri.
+
+1. **Costruisci** la versione più semplice possibile, quella che basta per fare una prova. Si chiama MVP, prodotto minimo funzionante. Può essere anche un disegno o un volantino.
+2. **Misura** che cosa succede. Quanti lo usano? Tornano? Pagherebbero?
+3. **Impara**. Se l'ipotesi era giusta, vai avanti. Se era sbagliata, cambi direzione: è il pivot. Oppure ti fermi.
+
+Cambiare direzione è normale. Un famoso sito per condividere foto era nato come videogioco. Un noto programma di messaggi per il lavoro era lo strumento interno di un'azienda di videogiochi.
+
+**Dove si trovano i soldi**
+
+Si può partire con i propri risparmi, o con l'aiuto di famiglia e amici. Con il **crowdfunding** si raccolgono piccole somme da molte persone su internet: funziona anche da prova, perché se nessuno contribuisce l'idea non convince. Poi ci sono investitori che mettono denaro in cambio di una parte dell'impresa, e i bandi pubblici.
+
+Chi mette i soldi vuole qualcosa in cambio: una parte dei guadagni, o voce nelle decisioni.
+
+**Non solo profitto**
+
+Alcune imprese nascono per risolvere un problema della comunità, e usano i guadagni per continuare a farlo. È l'imprenditoria sociale. Le cooperative sociali, per esempio, danno lavoro a persone in difficoltà o offrono assistenza ad anziani e persone con disabilità.
+
+**Sbagliare serve**
+
+Molte imprese chiudono. In alcuni Paesi chi ha fallito è visto come una persona che ha imparato qualcosa. In Italia pesa ancora come una vergogna. Eppure chi ha sbagliato una volta sa che cosa non rifare. La cosa utile è sbagliare presto e in piccolo: è proprio a questo che serve il prodotto minimo.
+
+> ✋ **Tocca a te.** Riprendi il problema di prima. Qual è la versione più piccola della tua soluzione che potresti provare domani, senza spendere niente? A chi la faresti provare? Che cosa conteresti per capire se funziona?
+
+> 📍 **Qui da noi.** Intervista una persona del tuo paese che ha un'attività: un negozio, un'officina, un'azienda agricola. Tre domande: quale problema risolve per i suoi clienti? Come ha cominciato? Che cosa rifarebbe in modo diverso?
+
+**In tre righe**
+
+- Un'impresa nasce da un problema vero e da qualcuno disposto a pagare per la soluzione.
+- Il Business Model Canvas la descrive in nove caselle, partendo dai clienti.
+- Con il metodo Lean Startup si prova in piccolo, si misura e si corregge prima di spendere.
+
+---
+
 ### Cos'è un'impresa
 
 Un'impresa è un'organizzazione che crea valore per qualcuno — un cliente, una comunità, un ecosistema — combinando risorse (lavoro, capitale, tecnologia, idee) in modo originale.
@@ -305,6 +381,8 @@ Competenze chiave che inizia a costruire da qui: gestione sostenibilità · supp
 ### Lo scenario
 
 C'è un problema nella tua scuola o nel tuo quartiere che la tecnologia o un'organizzazione intelligente potrebbe risolvere. Non deve essere un problema enorme: basta che sia reale, specifico e che tu possa parlare con persone che lo hanno.
+
+> 📬 **A chi lo consegni davvero.** Le persone che hanno il problema. Mostra la tua soluzione minima a tre di loro e conta quante la userebbero davvero. Quel numero vale più del tuo parere.
 
 ---
 

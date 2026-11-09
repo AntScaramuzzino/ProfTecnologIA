@@ -20,6 +20,68 @@ Quelle istruzioni usano lo stesso linguaggio tecnico degli ingegneri che progett
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Prendi una tazza. Guardata di fronte è un rettangolo con il manico. Guardata dall'alto è un cerchio. Stesso oggetto, due disegni diversi. Come si fa a mostrare su un foglio piatto un oggetto che ha tre dimensioni, senza perdere nessuna misura?
+
+**Guardare dritto**
+
+La risposta è la **proiezione ortogonale**. Immagina di guardare l'oggetto perfettamente di fronte, da molto lontano, e di ricalcarne il contorno su un vetro. "Ortogonale" vuol dire perpendicolare: lo sguardo arriva dritto, ad angolo retto.
+
+In questo modo non c'è nessuna deformazione. Quello che è lungo 5 cm sull'oggetto è lungo 5 cm sul disegno, in scala. Per questo è il sistema usato in tutto il mondo per costruire le cose.
+
+**Tre viste**
+
+Una sola vista non basta. Se ne usano tre.
+
+- Il **prospetto**: l'oggetto visto di fronte. Mostra larghezza e altezza.
+- La **pianta**: l'oggetto visto dall'alto. Mostra larghezza e profondità.
+- Il **fianco**: l'oggetto visto di lato. Mostra profondità e altezza.
+
+> ✋ **Tocca a te.** Appoggia il tuo astuccio, o il temperino, sul banco. Disegna a mano libera come lo vedi di fronte, dall'alto e di lato. Tre schizzi veloci, senza righello. Quale dei tre è più diverso da come te lo immaginavi?
+
+**Dove si mettono sul foglio**
+
+Le tre viste hanno un posto fisso, uguale in tutta Europa:
+
+- il prospetto in alto a sinistra;
+- la pianta sotto il prospetto;
+- il fianco a destra del prospetto.
+
+E devono essere allineate. La pianta ha la stessa larghezza del prospetto e sta esattamente sotto. Il fianco ha la stessa altezza del prospetto e sta esattamente accanto. Seguendo una linea da una vista all'altra ritrovi lo stesso punto dell'oggetto.
+
+**Le linee parlano**
+
+- La linea continua grossa disegna gli **spigoli** che si vedono.
+- La linea tratteggiata disegna quelli nascosti: ci sono, ma da quella parte non si vedono. Un foro sul retro, per esempio.
+- La linea tratto-punto indica un **asse di simmetria** o il centro di un foro.
+
+**Leggere al contrario**
+
+Leggere un disegno tecnico vuol dire fare il percorso inverso: dalle tre viste piatte ricostruire nella testa l'oggetto solido. Il trucco è cercare le corrispondenze: ogni spigolo che vedi in una vista deve ritrovarsi anche nelle altre.
+
+**Guardare dentro**
+
+Se l'oggetto è cavo, le linee tratteggiate diventano troppe. Allora si fa una **sezione**: si immagina di tagliarlo con una lama e di guardare l'interno. La parte "tagliata" si riempie con un tratteggio di linee sottili inclinate.
+
+Pensa a una mela tagliata a metà: vedi il torsolo e i semi, che da fuori non si vedevano.
+
+**Quando si usa**
+
+Per costruire si usa la proiezione ortogonale, perché è misurabile. Per far capire la forma a colpo d'occhio si usano altri disegni, che vedrai più avanti: l'assonometria e la prospettiva.
+
+> ✋ **Tocca a te.** Un compagno disegna alla lavagna le tre viste di un oggetto semplice dell'aula, senza dire qual è. Riesci a indovinarlo? Quale vista ti ha aiutato di più?
+
+> 📍 **Qui da noi.** Cerca a casa un foglio di istruzioni di montaggio, di un mobile o di un giocattolo. Le figure sono viste di fronte, dall'alto, di lato, o mostrano l'oggetto "in tre dimensioni"? Portalo in classe.
+
+**In tre righe**
+
+- La proiezione ortogonale mostra un oggetto senza deformarlo, guardandolo dritto.
+- Le viste sono tre: prospetto, pianta e fianco, sempre allineate tra loro.
+- Linee tratteggiate e sezioni mostrano ciò che da fuori non si vede.
+
+---
+
 ### Una sola forma, tre sguardi diversi
 
 Prendi in mano una tazza. Guardala di fronte: vedi una forma rettangolare. Guardala dall'alto: vedi un cerchio. Guardala di lato: vedi ancora una forma rettangolare, ma stavolta con l'ansa. Tre viste diverse, una sola tazza.
@@ -359,6 +421,8 @@ Un prisma a base quadrata (40×40 mm di base, 60 mm di altezza) con un foro cili
 Il laboratorio di tecnologia della tua scuola ha ricevuto una commissione insolita: la bidella ha trovato in un cassetto un oggetto di cui nessuno conosce la funzione o le misure — probabilmente era il componente di qualcosa, forse una guida o un supporto. Il preside vuole che venga documentato tecnicamente: se un giorno si rompe, bisogna poterlo rifare.
 
 Il tuo compito è produrre la tavola tecnica di quell'oggetto — o di un oggetto semplice di tua scelta — come se dovesse essere inviata a un'officina per essere riprodotta.
+
+> 📬 **A chi lo consegni davvero.** Un compagno di un'altra classe, che deve ricostruire l'oggetto in cartoncino guardando soltanto la tua tavola. Confronta la copia con l'originale: ogni differenza è un'informazione che mancava.
 
 ---
 

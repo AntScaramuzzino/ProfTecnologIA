@@ -20,6 +20,62 @@ Quello è il tuo prossimo problema.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un computer fa esattamente quello che gli dici. Niente di più, niente di meno. Se gli dici una cosa assurda, la fa lo stesso. Per questo le istruzioni devono essere perfette.
+
+> ✋ **Tocca a te.** Scrivi su un foglio, in 2 minuti, le istruzioni per fare un panino con la marmellata. Poi dalle a un compagno: lui fa il robot e può fare solo quello che c'è scritto, alla lettera. Che cosa va storto?
+
+**Che cos'è un algoritmo**
+
+Un **algoritmo** è una serie di istruzioni precise per risolvere un problema. Precise vuol dire che non lasciano dubbi. "Prendi il pane" non basta: quale pane? da dove? con quale mano?
+
+Gli algoritmi non sono nati con i computer. Una ricetta è un algoritmo. Le istruzioni di un mobile da montare sono un algoritmo. La differenza è che tu, se manca un passo ovvio, lo aggiungi da solo. Un computer no.
+
+La parola viene dal nome di un matematico persiano vissuto circa 1.200 anni fa, Al-Khwārizmī.
+
+**I tre mattoncini**
+
+Tutti i programmi del mondo, dal più semplice al più complicato, sono costruiti con tre soli mattoncini.
+
+La **sequenza**: le istruzioni si eseguono una dopo l'altra, nell'ordine in cui sono scritte.
+
+La **selezione**: il programma sceglie. SE succede una cosa ALLORA fa questo, ALTRIMENTI fa quello. Esempio: SE la temperatura supera 30 gradi ALLORA accendi il ventilatore.
+
+La condizione deve essere chiara: vera o falsa. "Se fa caldo" non funziona, perché caldo per chi? "Se la temperatura supera 30 gradi" funziona.
+
+L'**iterazione**, o ciclo: il programma ripete le stesse istruzioni finché serve. Esempio: FINCHÉ ci sono messaggi da leggere, leggi il prossimo.
+
+> ✋ **Tocca a te.** Pensa a come ti lavi i denti. Dove c'è una sequenza? Dove c'è un ciclo ("spazzola finché…")? Dove c'è una selezione ("se il dentifricio è finito…")?
+
+**La memoria: le variabili**
+
+Mentre lavora, un algoritmo deve ricordare delle cose. Usa le **variabili**: scatole con un'etichetta. L'etichetta è il nome, dentro c'è un valore che può cambiare. La scatola `punteggio` può contenere 0 all'inizio della partita e 150 alla fine.
+
+**Gli errori si cercano, non si evitano**
+
+Un errore in un algoritmo si chiama **bug**. Capita a tutti, anche ai programmatori più esperti. Cercare e correggere gli errori si chiama **debug**.
+
+Il metodo migliore è anche il più semplice: esegui l'algoritmo un passo alla volta, con dati veri, e controlla ogni risultato. Dove il risultato è sbagliato, lì c'è il bug. È quello che ha fatto il tuo compagno-robot con il panino.
+
+**Due modi per scrivere un algoritmo**
+
+Prima di usare un linguaggio di programmazione vero, un algoritmo si può scrivere in due modi.
+
+Lo **pseudocodice** usa parole quasi normali, ma in ordine rigoroso: INIZIO, SE, ALLORA, RIPETI, FINE.
+
+Il **diagramma di flusso** usa un disegno: un ovale per l'inizio e la fine, un rettangolo per ogni azione, un rombo per ogni domanda, e frecce che mostrano la strada.
+
+> 📍 **Qui da noi.** Scrivi l'algoritmo per andare dall'ingresso della scuola alla tua aula. Dallo a un compagno di un'altra classe: arriva nel posto giusto seguendo solo le tue istruzioni?
+
+**In tre righe**
+
+- Un algoritmo è una serie di istruzioni precise, senza dubbi possibili.
+- Bastano tre mattoncini: sequenza, selezione, iterazione.
+- Gli errori si chiamano bug e si trovano eseguendo l'algoritmo passo per passo.
+
+---
+
 ### Un computer fa esattamente quello che gli dici — anche se è assurdo.
 
 Prendi un momento e pensa a qualcosa che sai fare bene: allacciarti le scarpe, aprire un'app, preparare uno zaino. Tu lo fai senza pensarci. Il tuo cervello ha automatizzato quei movimenti — ma se provi a descriverli in parole, una per una, senza dare niente per scontato, scopri quanto sono complessi.
@@ -84,7 +140,7 @@ Le variabili cambiano mentre l'algoritmo gira. La stessa variabile `temperatura`
 
 ### Bug e debug: quando l'algoritmo sbaglia
 
-Un **bug** è un errore nell'algoritmo: un'istruzione sbagliata, una condizione formulata male, una sequenza nell'ordine sbagliato. Il nome viene dalla parola inglese per insetto. Si dice che la prima "bug" nella storia del software sia stato un vero insetto — una falena — trovata inceppata nel relè di un computer Harvard Mark II nel 1947. La programmratrice Grace Hopper la incollò nel registro di bordo: "primo caso reale di bug trovato".
+Un **bug** è un errore nell'algoritmo: un'istruzione sbagliata, una condizione formulata male, una sequenza nell'ordine sbagliato. Il nome viene dalla parola inglese per insetto. Si dice che il primo "bug" nella storia del software sia stato un vero insetto — una falena — trovata inceppata nel relè di un computer Harvard Mark II nel 1947. La programmatrice Grace Hopper la incollò nel registro di bordo: "primo caso reale di bug trovato".
 
 Il **debug** è il processo di trovare e correggere gli errori. È una competenza fondamentale: tutti gli algoritmi, anche quelli scritti da esperti, contengono bug. La differenza tra un programmatore mediocre e uno bravo non è che il bravo non fa errori — è che il bravo trova e corregge gli errori sistematicamente.
 
@@ -256,7 +312,7 @@ La lista è divisa in 26 sezioni, una per ogni lettera. Vai direttamente alla se
 
 2. Scrivi il pseudocodice per l'Approccio A (ricerca sequenziale). Identifica le tre strutture: dove c'è la sequenza? Dove c'è la selezione? Dove c'è il ciclo?
 
-3. Per la ricerca binaria, calcola quanti confronti servono per 10.000 nomi. Usa la formula: numero massimo di confronti = log₂(N), dove N è il numero di elementi. Calcola log₂(10.000). (Suggerimento: quante volte puoi dividere 10.000 per 2 prima di arrivare a 1?)
+3. Per la ricerca binaria, calcola quanti confronti servono per 10.000 nomi. Non serve nessuna formula: dividi 10.000 per 2, poi ancora per 2, e continua finché arrivi a 1. Conta quante divisioni hai fatto: è il numero massimo di confronti.
 
 4. L'Approccio C è più veloce della ricerca binaria per "Zucchero"? Dipende da quanti nomi ci sono nella sezione "Z". Come potresti migliorare ulteriormente l'Approccio C?
 
@@ -284,6 +340,8 @@ La lista è divisa in 26 sezioni, una per ogni lettera. Vai direttamente alla se
 La tua scuola organizza un torneo di scacchi. Ci sono 64 studenti iscritti. I nomi sono in ordine casuale su un foglio. Prima di iniziare, devono essere messi in ordine alfabetico per formare le coppie del primo turno.
 
 Sei tu a organizzare il procedimento.
+
+> 📬 **A chi lo consegni davvero.** Un docente o un compagno che deve davvero mettere in ordine un elenco: gli iscritti a un torneo, i libri della biblioteca di classe. Consegnagli il procedimento scritto e fatti dire se, seguendolo, ci ha messo meno.
 
 ---
 
@@ -323,7 +381,7 @@ Capire il pensiero algoritmico non è solo informatica: è una competenza trasve
 
 - *"Cos'è la differenza tra un ciclo WHILE e un ciclo FOR?"*
 - *"Come si rappresenta una condizione nel diagramma di flusso?"*
-- *"Cosa significa che un algoritmo ha complessità O(log n)?"*
+- *"Perché la ricerca binaria fa così pochi confronti?"*
 
 ---
 

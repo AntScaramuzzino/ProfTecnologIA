@@ -24,6 +24,66 @@ Sapere la differenza tra "sembra intelligente" e "è addestrato su certi dati" �
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un'intelligenza artificiale scrive temi, traduce, disegna. Sembra che capisca. Non capisce: calcola. Sapere come funziona è l'unico modo per usarla bene e per non farsi ingannare.
+
+**Non è nata ieri**
+
+L'idea ha più di settant'anni. Nel 1950 il matematico Alan Turing si chiese se una macchina potesse sembrare umana in una conversazione. Da allora si sono alternati periodi di grande entusiasmo e periodi di delusione, in cui le promesse non si realizzavano. La svolta è arrivata negli ultimi quindici anni, con computer molto più potenti e montagne di dati. Nel 2022 i programmi che conversano sono arrivati nelle mani di tutti.
+
+Morale: ogni nuova tecnologia viene prima esagerata e poi capita meglio.
+
+**Imparare dagli esempi**
+
+L'**intelligenza artificiale** di oggi si basa quasi tutta sul **machine learning**, l'apprendimento automatico. Nessuno scrive le regole: il sistema le ricava da moltissimi esempi.
+
+Per fargli riconoscere le email indesiderate, gliene mostri centomila già segnate come "spam" o "non spam". Trova da solo che cosa hanno in comune, e poi lo applica a email mai viste. Questa fase si chiama **addestramento**.
+
+Lo strumento più usato è la **rete neurale**: milioni di piccole unità di calcolo collegate tra loro, disposte a strati. Durante l'addestramento i collegamenti vengono regolati, poco alla volta, finché le risposte diventano giuste. Il nome ricorda il cervello, ma la somiglianza è molto vaga.
+
+> ✋ **Tocca a te.** Gioco dell'addestramento. Un compagno pensa a una regola segreta per dividere dieci oggetti dell'aula in "sì" e "no", e ti dice solo il risultato per ognuno. Riesci a scoprire la regola dagli esempi? Quanti esempi ti sono serviti? E se te ne avesse dati solo tre?
+
+**Come scrive un chatbot**
+
+I programmi che conversano si basano su modelli linguistici addestrati su quantità enormi di testi. Fanno una cosa sola, ripetuta moltissime volte: calcolano quale pezzetto di parola ha più probabilità di venire dopo. È come il suggerimento della tastiera del telefono, ma immensamente più potente.
+
+Per questo il risultato è scorrevole e convincente. E per questo non è detto che sia vero: il modello produce il testo più probabile, non quello controllato.
+
+**Quando inventa**
+
+Un'**allucinazione** è una risposta falsa data con lo stesso tono sicuro di una vera: un libro che non esiste, una data sbagliata, una citazione inventata. Il modello non sa di sbagliare, perché non ha un modo per distinguere il vero dal plausibile.
+
+Regola pratica: ogni fatto che ti serve davvero va controllato su un'altra fonte.
+
+**Quando discrimina**
+
+Un sistema impara dai dati. Se i dati sono sbilanciati, lo diventa anche lui. Questo errore sistematico si chiama **bias**.
+
+Nel 2018 la ricercatrice Joy Buolamwini ha misurato alcuni sistemi di riconoscimento dei volti: sbagliavano pochissimo con gli uomini dalla pelle chiara e moltissimo con le donne dalla pelle scura. Erano stati addestrati soprattutto con foto del primo tipo. Lo stesso può succedere con sistemi che selezionano curriculum o valutano richieste di prestito.
+
+**Il lavoro**
+
+L'intelligenza artificiale non "ruba tutti i lavori": cambia i compiti dentro i lavori. Automatizza bene le parti ripetitive. Restano alle persone il giudizio, la responsabilità, la cura degli altri, il lavoro manuale esperto. La competenza nuova è saperla usare e saperne controllare i risultati.
+
+**Le regole**
+
+L'Unione Europea ha approvato nel 2024 la prima grande legge sull'intelligenza artificiale, l'AI Act. Classifica i sistemi in base al rischio: alcuni usi sono vietati, altri sono permessi con controlli severi, e chi ti fa parlare con una macchina deve dirtelo.
+
+Quattro cose da ricordare sempre: ogni sistema sbaglia, ogni sistema ha dei limiti, i risultati vanno verificati, e le decisioni importanti sulle persone spettano a una persona.
+
+> ✋ **Tocca a te.** In coppia, scrivete tre affermazioni su un argomento che conoscete bene: due vere e una falsa ma credibile. Scambiatele con un'altra coppia: riescono a trovare la falsa? Come hanno fatto a controllare? È lo stesso lavoro che serve con le risposte di un chatbot.
+
+> 📍 **Qui da noi.** Chiedi a tre adulti che conosci se usano l'intelligenza artificiale nel loro lavoro, per che cosa, e se controllano quello che produce. Porta le risposte in classe: quali mestieri della tua zona la usano già?
+
+**In tre righe**
+
+- L'intelligenza artificiale di oggi impara dagli esempi: non segue regole scritte e non capisce.
+- Può inventare con sicurezza e può ripetere le ingiustizie contenute nei dati.
+- Si usa controllando i risultati, e lasciando alle persone le decisioni importanti.
+
+---
+
 ### Storia dell'intelligenza artificiale: un percorso non lineare
 
 L'intelligenza artificiale non è nata con ChatGPT. Ha una storia lunga settant'anni, con momenti di grande ottimismo e periodi di profonda delusione chiamati "inverni dell'IA".
@@ -356,6 +416,8 @@ ProPublica ha analizzato 7.000 casi in Florida (2016) e trovato che il sistema c
 ### Lo scenario
 
 Sei un consulente di una piccola associazione che promuove l'uso critico della tecnologia nelle scuole. Ti è stato chiesto di preparare una **scheda di analisi critica** per tre applicazioni IA comuni tra studenti — da distribuire come materiale didattico.
+
+> 📬 **A chi lo consegni davvero.** Una classe seconda. Riceve le tue tre schede come materiale di lavoro. Chiedi ai compagni quale applicazione useranno in modo diverso dopo averle lette.
 
 ---
 

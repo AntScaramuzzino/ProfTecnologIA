@@ -31,13 +31,72 @@ Quante volte questa settimana hai visto una pubblicità su qualcosa a cui stavi 
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Instagram, TikTok e YouTube sono gratis. Eppure sono tra le aziende più ricche del mondo. Come guadagnano? Vendono una cosa tua: la tua attenzione.
+
+**Il tuo tempo è il prodotto**
+
+Questo sistema si chiama **economia dell'attenzione**. Tu non paghi con i soldi, paghi con i minuti che passi a guardare. Quei minuti vengono venduti a chi vuole mostrarti una pubblicità.
+
+Ne segue una conseguenza importante. Alla piattaforma conviene che tu resti il più a lungo possibile. Non le serve che tu sia informato bene o che tu stia bene: le serve che tu non chiuda l'app. E che cosa tiene incollate le persone? Le emozioni forti: rabbia, paura, stupore.
+
+> ✋ **Tocca a te.** Scrivi adesso sul quaderno quanti minuti pensi di aver passato ieri sull'app che usi di più. Stasera, a casa, apri le impostazioni del telefono, cerca "tempo di utilizzo" o "benessere digitale" e confronta. Di quanto ti sei sbagliato?
+
+**Chi sceglie che cosa vedi**
+
+Quando apri un social non vedi i post in ordine di tempo. Vedi una selezione fatta da un **algoritmo di raccomandazione**. Funziona così:
+
+1. registra tutto quello che fai: quanto guardi un video, se metti like, se commenti, se condividi;
+2. costruisce un **profilo** dei tuoi gusti, basato su quello che fai e non su quello che dici;
+3. ti mostra i contenuti che hanno più probabilità di farti restare;
+4. osserva come reagisci e ricomincia.
+
+La misura che conta per la piattaforma si chiama **engagement**: quanto interagisci con un contenuto.
+
+**La bolla**
+
+A forza di mostrarti cose simili a quelle che ti sono piaciute, l'algoritmo ti chiude in una **filter bubble**, una bolla di filtraggio. Vedi sempre più contenuti dello stesso tipo e sempre meno contenuti diversi. Il problema è che la bolla non si vede: da dentro sembra il mondo intero.
+
+Poi c'è la **echo chamber**, la camera d'eco. Questa la costruiamo noi, quando seguiamo solo persone che la pensano come noi.
+
+> ✋ **Tocca a te.** Confrontati a voce con un compagno: quali sono gli ultimi tre argomenti che l'app vi ha proposto? Che cosa compare nel suo feed e nel tuo mai?
+
+**L'asta in un quinto di secondo**
+
+Mentre una pagina web si carica, lo spazio della pubblicità viene messo all'asta. In meno di 200 millisecondi centinaia di aziende ricevono il tuo profilo e fanno un'offerta. Vince la più alta, e il suo annuncio appare. Si chiama **pubblicità programmatica**.
+
+In Europa due leggi ti proteggono. Il GDPR obbliga i siti a chiederti il consenso per usare i tuoi dati: sono i banner dei cookie. Il Digital Services Act vieta la pubblicità costruita sul profilo dei minorenni.
+
+**Falso per errore o falso apposta?**
+
+Non tutte le notizie false sono uguali.
+
+- **Misinformazione**: è falsa, ma chi la condivide ci crede.
+- **Disinformazione**: è falsa, e chi la diffonde lo sa e lo fa apposta.
+- **Malinformazione**: è vera, ma viene diffusa per fare del male, come una foto privata pubblicata senza permesso.
+
+**Prima di condividere**
+
+Il **fact-checking** è il controllo dei fatti. Bastano tre domande: chi lo dice? da dove viene il dato? chi ci guadagna se io ci credo?
+
+> 📍 **Qui da noi.** Cerca una notizia sulla tua città che gira in una chat o su un social. Riesci a trovare la fonte originale? Portala in classe con la tua verifica.
+
+**In tre righe**
+
+- I social sono gratis perché vendono la tua attenzione.
+- Un algoritmo sceglie che cosa vedi, e può chiuderti in una bolla.
+- Prima di condividere, controlla la fonte: condividere una cosa falsa la rende più forte.
+
+---
+
 ### L'economia dell'attenzione: il tuo tempo è il prodotto
 
 Nel 2016 il giurista Tim Wu, nel libro *The Attention Merchants*, ha descritto qualcosa che tutti sentiamo ma raramente articoliamo: il modello economico dei media dell'ultimo secolo non è vendere contenuti agli utenti. È vendere l'attenzione degli utenti agli inserzionisti.
 
 Il meccanismo è antico. I giornali del XIX secolo capirono che potevano abbassare il prezzo di vendita (e vendere più copie) se i ricavi venissero principalmente dalla pubblicità — non dai lettori. La radio e la televisione ne fecero il modello standard: contenuto gratuito, finanziato da chi vuole accedere all'attenzione di chi ascolta.
 
-Internet ha amplificato questo modello all'estremo. Le piattaforme digitali — Google, Facebook, Instagram, TikTok, YouTube — sono gratuite per l'utente. Il loro "prodotto" non è il contenuto che distribuitono: è l'attenzione degli utenti, misurata in secondi, click, scroll, like, condivisioni.
+Internet ha amplificato questo modello all'estremo. Le piattaforme digitali — Google, Facebook, Instagram, TikTok, YouTube — sono gratuite per l'utente. Il loro "prodotto" non è il contenuto che distribuiscono: è l'attenzione degli utenti, misurata in secondi, click, scroll, like, condivisioni.
 
 Ogni secondo che passi su TikTok ha un valore economico. Non per te — per TikTok. Il tuo tempo di attenzione viene venduto agli inserzionisti.
 
@@ -53,7 +112,7 @@ Le conseguenze di questo modello sono profonde:
 
 ### Come funziona un algoritmo di raccomandazione
 
-Apri Instagram, TikTok, YouTube. Cosa vedi? Non i post in ordine cronologico di chi segui. Vedi una selezione — fatta da un algoritmo — dei contenuti che il sistema prevede che tu troverà più "coinvolgenti".
+Apri Instagram, TikTok, YouTube. Cosa vedi? Non i post in ordine cronologico di chi segui. Vedi una selezione — fatta da un algoritmo — dei contenuti che il sistema prevede che tu troverai più "coinvolgenti".
 
 **Feed cronologico vs feed curato** — una distinzione che sembra tecnica ma ha conseguenze enormi.
 
@@ -69,7 +128,7 @@ Un feed curato da algoritmo mostra i contenuti selezionati in base alla previsio
 
 3. Per ogni sessione, il sistema genera un ranking dei video disponibili in base alla probabilità che tu li guardi per intero e interagisca con essi, considerando anche la diversità (per tenerti sulla piattaforma più a lungo, non ti vuole annoiare mostrando solo un tipo di contenuto).
 
-4. Ti mostra i video con il ranking più alto. Aggiorna il profilo in base al tuo comportamento. Ricompute il ranking.
+4. Ti mostra i video con il ranking più alto. Aggiorna il profilo in base al tuo comportamento. Ricalcola il ranking.
 
 Il ciclo si chiude in secondi. Ogni tua azione affina il profilo e cambia cosa vedrai dopo.
 
@@ -161,7 +220,7 @@ I principali fact-checker certificati in italiano e in Europa:
 
 Usare questi tre termini in modo preciso fa la differenza tra ragionare chiaramente e generare confusione.
 
-**Misinformazione** (misinformation): informazione falsa o inaccurata condivisa **senza l'intenzione di ingannare**. Chi la diffonde ci crede. Esempio: qualcuno condivide uno studio screditato sulla vacinazione perché ci crede sinceramente e vuole informare gli amici. L'intenzione è buona; il contenuto è falso.
+**Misinformazione** (misinformation): informazione falsa o inaccurata condivisa **senza l'intenzione di ingannare**. Chi la diffonde ci crede. Esempio: qualcuno condivide uno studio screditato sulla vaccinazione perché ci crede sinceramente e vuole informare gli amici. L'intenzione è buona; il contenuto è falso.
 
 **Disinformazione** (disinformation): informazione falsa o inaccurata condivisa **con l'intenzione deliberata di ingannare**. Chi la produce sa che è falsa — o non si preoccupa di verificarla. Esempio: una campagna organizzata di account falsi che diffonde voci false su un candidato politico durante una campagna elettorale.
 
@@ -397,6 +456,8 @@ Sei parte del team di redazione del giornalino della scuola — *Il Bullone*, il
 Una settimana fa, nei gruppi WhatsApp delle famiglie della scuola ha iniziato a circolare un post che sostiene che la scuola ha installato un sistema di riconoscimento facciale per monitorare la frequenza degli studenti, senza informare i genitori. Il post è diventato virale tra i genitori — alcune famiglie hanno chiesto spiegazioni urgenti alla segreteria. La preside è preoccupata. Il post è falso — la scuola non ha nessun sistema del genere — ma il danno reputazionale è già iniziato.
 
 La redazione de *Il Bullone* decide di pubblicare un'analisi del post per aiutare la comunità scolastica a capire cosa è successo.
+
+> 📬 **A chi lo consegni davvero.** Il giornalino o il sito della scuola, se esistono; altrimenti la bacheca dell'atrio. Prima fai leggere la smentita a due genitori: capiscono in trenta secondi che cosa è vero?
 
 ---
 

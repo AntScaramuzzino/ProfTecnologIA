@@ -21,6 +21,75 @@ Di tutto questo, quanta parte è accurata? Quanta parte rispetta i diritti di ch
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Oggi chiunque può pubblicare un video, un audio, una foto. Farlo bene vuol dire due cose: saperlo fare tecnicamente e rispettare il lavoro degli altri.
+
+**Quanto pesa un contenuto**
+
+Testo, immagini, audio e video sono tutti numeri, ma pesano in modo molto diverso. Un articolo intero pesa pochi kilobyte. Un minuto di video non compresso pesa diversi gigabyte.
+
+Per questo esiste la **compressione**: rappresentare la stessa informazione con meno dati. Ce ne sono due tipi.
+
+- **Senza perdita**: il file si rimpicciolisce ma si può ricostruire identico. Esempi: PNG per le immagini, ZIP per qualsiasi file.
+- **Con perdita**: si buttano via i dettagli che occhio e orecchio notano meno. Il file diventa molto più piccolo, ma non torna più come prima. Esempi: JPEG per le foto, MP3 per l'audio.
+
+> ✋ **Tocca a te.** Devi mandare a un amico il logo della squadra, con scritte nitide, e la foto della gita. Per quale dei due sceglieresti un formato senza perdita? Perché?
+
+**Di chi è un'opera**
+
+Quando crei qualcosa di originale, una foto, un testo, una canzone, è tuo automaticamente. Non devi registrare niente. Questa protezione si chiama **diritto d'autore**, e in Italia dura per tutta la vita dell'autore più 70 anni. Dopo, l'opera diventa di **dominio pubblico** e chiunque può usarla.
+
+Protegge il modo in cui un'idea è espressa, non l'idea. Non puoi copiare una fotografia; puoi fotografare tu lo stesso soggetto.
+
+**Copiare o citare**
+
+Usare il lavoro di un altro facendolo passare per proprio è **plagio**. Citare invece è corretto, a patto di dire sempre chi è l'autore e dove hai preso il materiale.
+
+Una cosa da ricordare: "immagine presa da Google" non è una citazione. Google non ha fatto quella foto: te l'ha solo mostrata.
+
+Regola pratica: se non sai chi ha fatto una cosa e con quali permessi, non usarla.
+
+**Le licenze che dicono sì**
+
+Di solito vale "tutti i diritti riservati". Le licenze **Creative Commons** sono un modo con cui un autore dichiara in anticipo che cosa permette. Si leggono dalle sigle:
+
+- BY: devi citare l'autore;
+- NC: non puoi usarla per guadagnare;
+- ND: non puoi modificarla;
+- SA: se la modifichi, devi condividere il risultato con la stessa licenza.
+
+Esistono archivi interi di musica, suoni e foto con queste licenze. Controlla sempre la licenza del singolo file.
+
+**Fare un podcast**
+
+1. Un'apertura di pochi secondi.
+2. Un aggancio: un fatto sorprendente o una domanda. Mai "oggi parleremo di…".
+3. Il corpo, in blocchi di pochi minuti.
+4. Una chiusura con i punti principali e i crediti: fonti e musica usata.
+
+Per registrare bene: microfono vicino alla bocca e una stanza senza eco. Un armadio pieno di vestiti funziona meglio di una stanza vuota.
+
+**Fare un video**
+
+Contano tre cose più della videocamera: la luce davanti al soggetto e non dietro, l'audio pulito, il telefono appoggiato e non in mano.
+
+**Vero o costruito?**
+
+Un **deepfake** è un video o un audio falso creato con l'intelligenza artificiale: fa dire o fare a una persona cose mai successe. Indizi a cui guardare: contorni del viso strani, labbra fuori tempo, occhi innaturali. Ma gli indizi non bastano più. La verifica vera è un'altra: chi l'ha pubblicato per primo? Altre fonti affidabili lo riportano?
+
+> ✋ **Tocca a te.** In coppia, scrivete l'aggancio di un podcast di classe su un argomento di Tecnologia: massimo tre frasi, da leggere in quindici secondi. Poi leggetelo a un'altra coppia. Avrebbero voglia di continuare ad ascoltare?
+
+> 📍 **Qui da noi.** Scatta tu una foto di un luogo del tuo paese, oppure registra un suono che lo rappresenta: il mercato, le campane, il mare. È un'opera tua. Con quale licenza la condivideresti con la classe, e perché?
+
+**In tre righe**
+
+- La compressione riduce il peso dei file, con o senza perdita di qualità.
+- Ogni opera ha un autore: si cita sempre, e si usano materiali con licenza chiara.
+- Prima di credere a un video, si controlla da dove viene.
+
+---
+
 ### I contenuti digitali: da cosa sono fatti e come funzionano
 
 Ogni cosa che vedi online è un contenuto digitale: un testo, una foto, un video, un audio, un'animazione, un modello 3D, un'esperienza in realtà aumentata. Tutti questi tipi di contenuto hanno due caratteristiche in comune: sono codificati in bit (0 e 1) e possono essere copiati, modificati e distribuiti a costo quasi nullo. Questa seconda caratteristica — la riproducibilità a costo zero — è ciò che rende la produzione e distribuzione di contenuti digitali così diversa da qualsiasi altra forma di comunicazione nella storia.
@@ -387,6 +456,8 @@ Poi compila questa tabella:
 La tua classe vuole produrre una serie podcast sulla tecnologia — breve, verificata, con musica originale o in licenza libera. Ogni studente (o gruppo di 2) produce un episodio da 3 minuti su un tema tecnologico scelto.
 
 Il risultato non è un compito "per il cassetto": è un contenuto che potrebbe essere pubblicato online e usato da altri. Questo significa che ogni scelta — di fonti, di licenze, di parole — ha conseguenze reali.
+
+> 📬 **A chi lo consegni davvero.** Ascoltatori veri: una classe prima, oppure il sito della scuola dopo il controllo del docente sulle licenze. Chiedi a tre ascoltatori che cosa ricordano il giorno dopo.
 
 ---
 

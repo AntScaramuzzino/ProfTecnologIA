@@ -23,6 +23,70 @@ La domanda non è "come faccio a resistere?". La domanda è: chi ha deciso che q
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Quando non riesci a ignorare una notifica, non è perché sei debole. Quella notifica è stata progettata da persone il cui lavoro è farti tornare sull'app. Sapere come funziona è il modo per tornare a decidere tu.
+
+**Perché le app vogliono il tuo tempo**
+
+Molte app sono gratis perché guadagnano con la pubblicità. Più tempo ci passi, più pubblicità vedi, più guadagnano. Il loro obiettivo è uno solo: farti restare.
+
+**Il trucco dell'attesa**
+
+Nel cervello c'è una sostanza, la **dopamina**, legata al piacere e alla ricompensa. La cosa sorprendente è che entra in gioco soprattutto quando aspetti una ricompensa, più che quando la ricevi. Una notifica non letta è una promessa: "potrebbe essere qualcosa di bello". È quell'attesa a spingerti ad aprire.
+
+Le app la sfruttano in tre modi:
+
+- le **notifiche**, mandate nei momenti in cui è più probabile che tu risponda;
+- lo **scroll infinito**: la pagina non finisce mai, e per smettere devi decidere tu;
+- i like che arrivano un po' alla volta, a sorpresa. È lo stesso meccanismo delle slot machine: non sai quando arriva il premio, e continui a controllare.
+
+> ✋ **Tocca a te.** Quante notifiche pensi di ricevere in un giorno? Scrivi il numero. Stasera a casa controlla nelle impostazioni del telefono, alla voce "tempo di utilizzo" o "benessere digitale". Di quanto ti sei sbagliato?
+
+**Uso che ti serve, uso che ti usa**
+
+Usare la tecnologia non è un problema. Conta come. Videochiamare un amico, imparare un accordo di chitarra da un video, fare una ricerca: sei tu che la usi. Scorrere per un'ora senza ricordare che cosa hai visto è un'altra cosa.
+
+Segnali a cui fare attenzione:
+
+- prendi il telefono appena apri gli occhi;
+- ti innervosisci se non puoi usarlo;
+- continui anche dopo aver deciso di smettere;
+- dormi male perché scorri a letto;
+- hai perso interesse per cose che prima ti piacevano.
+
+Non vogliono dire "dipendenza". Vogliono dire che è il momento di farci caso.
+
+**Il sonno, prima di tutto**
+
+La luce degli schermi la sera ritarda il sonno, e alla tua età dormire abbastanza serve per crescere, per ricordare e per stare bene. La regola più utile è anche la più semplice: niente schermo nell'ultima ora prima di dormire, e telefono fuori dalla camera.
+
+**Cyberbullismo: tre ruoli**
+
+Il **cyberbullismo** è un'aggressione voluta e ripetuta fatta con strumenti digitali. Ci sono sempre tre ruoli.
+
+- Chi lo subisce. Non è mai colpa sua. Non rispondere, salva le prove, blocca, parla con un adulto.
+- Chi lo fa. In Italia la legge permette di far rimuovere i contenuti e prevede conseguenze anche per i minorenni.
+- Chi guarda. È il gruppo più numeroso, e quello che può cambiare le cose. Un like o una condivisione sono un aiuto al bullo. Non mettere like, scrivi in privato a chi è stato colpito, segnala, parlane con un adulto.
+
+**Riprendersi il comando**
+
+- Spegni le notifiche delle app che non sono messaggi di persone.
+- Decidi zone e orari senza schermo: a tavola, prima di dormire.
+- Se un messaggio ti fa arrabbiare, aspetta dieci minuti prima di rispondere.
+
+> ✋ **Tocca a te.** Scegli una sola di queste tre mosse e provala per tre giorni. Scrivi adesso quale, e che cosa ti aspetti che cambi. Tra tre giorni ne parliamo.
+
+> 📍 **Qui da noi.** Che cosa si può fare nel tuo paese nel pomeriggio senza uno schermo? Campo sportivo, piazza, oratorio, biblioteca, associazioni: fai l'elenco dei posti dove vanno i ragazzi della tua età. Che cosa manca?
+
+**In tre righe**
+
+- Le app sono progettate per trattenerti: notifiche, scroll infinito e like a sorpresa.
+- Il primo segnale da proteggere è il sonno.
+- Nel cyberbullismo chi guarda non è neutrale: può fermarlo.
+
+---
+
 ### La tecnologia non è neutrale
 
 Ogni app che usi è progettata da un team di ingegneri, designer e psicologi con un obiettivo preciso: fare in modo che tu la usi il più a lungo possibile.
@@ -105,7 +169,7 @@ Nel cyberbullismo ci sono sempre tre figure:
 - Segnalare il contenuto alla piattaforma
 - Parlare con un adulto
 
-> **⚠️ Nota importante:** se sei testimone, non devi scontenarti frontalmente con l'autore — questo può peggiorare la situazione per te e per la vittima. L'azione più efficace è spesso quella meno visibile: supporto privato alla vittima + segnalazione alla piattaforma + coinvolgimento di un adulto.
+> **⚠️ Nota importante:** se sei testimone, non devi scontrarti frontalmente con l'autore — questo può peggiorare la situazione per te e per la vittima. L'azione più efficace è spesso quella meno visibile: supporto privato alla vittima + segnalazione alla piattaforma + coinvolgimento di un adulto.
 
 ---
 
@@ -273,6 +337,8 @@ Nel gruppo WhatsApp della classe (35 persone) qualcuno pubblica uno screenshot d
 La tua scuola ha deciso di partecipare a una "Settimana della Consapevolezza Digitale". Il tuo compito è raccogliere dati reali sul tuo uso della tecnologia, analizzarli e presentarli alla classe come contributo a una discussione collettiva.
 
 Non si tratta di dimostrare che sei "bravo" o che usi poco il telefono — si tratta di capire davvero come lo usi, e di decidere se vuoi cambiare qualcosa.
+
+> 📬 **A chi lo consegni davvero.** La classe, e un adulto di casa. Con lui firmi il tuo piano personale: una sola regola, per due settimane. Alla fine vi dite se è stata rispettata, da tutti e due.
 
 ---
 

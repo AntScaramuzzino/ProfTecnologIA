@@ -34,6 +34,72 @@ Alla fine della Zona 2, verifica se avevi ragione.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+La tua aula è lunga otto metri. Il tuo foglio è lungo meno di trenta centimetri. Per disegnarla devi rimpicciolirla, ma in modo che tutte le parti restino proporzionate. Lo strumento per farlo è la scala.
+
+**Che cos'è una scala**
+
+La **scala** dice quante volte il disegno è più piccolo, o più grande, dell'oggetto vero. Si scrive con due numeri separati da due punti. Il primo riguarda il disegno, il secondo la realtà.
+
+- **Scala 1:50** è una **scala di riduzione**: 1 cm sul foglio vale 50 cm veri. L'oggetto vero è 50 volte più grande.
+- **Scala 5:1** è una **scala di ingrandimento**: 5 cm sul foglio valgono 1 cm vero. Serve per le cose piccole, come una vite.
+- **Scala 1:1** è la **scala naturale**: il disegno è grande come l'oggetto.
+
+La forma non cambia mai. Un angolo retto resta retto, un cerchio resta un cerchio. Cambia solo la grandezza.
+
+> ✋ **Tocca a te.** Misura il tuo banco con il righello. In scala 1:10, quanti centimetri diventa sul foglio? Fai il conto e poi disegna quel segmento.
+
+**Due conti, sempre gli stessi**
+
+Con una scala di riduzione 1:n:
+
+- per passare dalla realtà al disegno, **dividi** per n;
+- per passare dal disegno alla realtà, **moltiplica** per n.
+
+Esempio. Una parete è lunga 6 m, cioè 600 cm. In scala 1:50 diventa 600 : 50 = 12 cm.
+
+Al contrario. Su una pianta in scala 1:50 una finestra misura 2,4 cm. Quella vera misura 2,4 × 50 = 120 cm.
+
+Attenzione alle unità: prima di dividere, trasforma tutto in centimetri.
+
+**Come scegliere la scala**
+
+1. Misura il lato più lungo dell'oggetto.
+2. Guarda quanto spazio hai sul foglio, tolti i margini.
+3. Dividi il primo numero per il secondo.
+4. Scegli la scala standard subito più grande del risultato.
+
+Le scale standard sono poche: 1:2, 1:5, 1:10, 1:20, 1:50, 1:100.
+
+> ✋ **Tocca a te.** La tua aula deve stare su un foglio A4, dove hai circa 25 cm di spazio. Se l'aula è lunga 8 m, quale scala scegli? Controlla: quanti centimetri occupa il disegno?
+
+**Le quote: i numeri sono sempre veri**
+
+Le **quote** sono i numeri che indicano le misure sul disegno. La regola più importante: la quota riporta sempre la misura **reale**, mai quella rimpicciolita. Su una pianta in scala 1:50, accanto alla parete lunga 12 cm si scrive 600.
+
+Ogni quota ha tre parti: la linea di misura, parallela al lato; due lineette che partono dagli estremi del lato; il numero, scritto sopra la linea.
+
+Due regole: ogni misura si scrive una volta sola, e non deve mancarne nessuna che serva a costruire l'oggetto.
+
+**Il cartiglio: la carta d'identità del disegno**
+
+In basso a destra ogni disegno tecnico ha un riquadro, il **cartiglio**. Dice quattro cose: titolo, scala, data e nome di chi ha disegnato. Senza cartiglio nessuno sa che scala hai usato, e il disegno è inutile.
+
+**I fogli**
+
+I fogli hanno misure fisse, chiamate **formati**: A4 è quello del tuo quaderno ad anelli, A3 è il doppio, A5 è la metà. Piegando a metà un foglio ottieni sempre il formato successivo, con la stessa forma.
+
+> 📍 **Qui da noi.** Cerca una mappa del tuo Comune o la piantina di evacuazione appesa in corridoio. Trova la scala. Misura con il righello la distanza tra due punti che conosci e calcola quella vera: torna con quello che sai?
+
+**In tre righe**
+
+- La scala è il rapporto tra la misura sul disegno e la misura vera.
+- Dalla realtà al disegno si divide, dal disegno alla realtà si moltiplica.
+- Le quote sono sempre misure reali, e il cartiglio dice quale scala hai usato.
+
+---
+
 ### Il problema: rappresentare il grande nel piccolo (e il piccolo nel grande)
 
 Immagina di essere un architetto. Hai progettato un appartamento di 80 m²: 12 metri di lunghezza, 8 metri di larghezza, corridoi, bagni, camere. Devi mostrare il progetto al cliente. Non puoi portare l'appartamento in ufficio. Non puoi chiedere al cliente di andare sul cantiere ogni volta che vuole capire una modifica.
@@ -562,6 +628,8 @@ Confronta la tua pianta con quella di un compagno. Avete scelto la stessa scala?
 Il tuo istituto partecipa a un concorso nazionale "Scuole che progettano". La categoria del concorso per la classe prima si chiama "Il mio spazio ideale": ogni studente deve produrre la pianta tecnica di uno spazio scolastico reale e poi proporre una modifica migliorativa motivata.
 
 L'arch. Ferrara — che segue il progetto per conto della scuola — ti ha dato le indicazioni: un disegno tecnico, a scala corretta, quotato, con cartiglio completo. Non uno schizzo — un disegno che lei possa usare come documento tecnico.
+
+> 📬 **A chi lo consegni davvero.** Il dirigente scolastico, o chi a scuola si occupa della sicurezza. Consegna pianta e proposta di modifica. Chiedi una risposta in due righe: si può fare? Se no, che cosa lo impedisce?
 
 ---
 

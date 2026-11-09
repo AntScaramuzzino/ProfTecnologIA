@@ -25,6 +25,63 @@ Cos'è diverso tra i due? Non è la qualità del prodotto. È la tecnologia.
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Il latte fresco dura pochi giorni, il tonno in scatola anni. Non dipende dalla qualità: dipende da come sono stati trattati. Per capirlo bisogna prima sapere perché il cibo va a male.
+
+**I tre nemici del cibo**
+
+1. I **microrganismi**: batteri e muffe. Sono dappertutto, e sul cibo trovano acqua e nutrimento per moltiplicarsi.
+2. Gli **enzimi**: sostanze già presenti nel cibo, che continuano a lavorare anche dopo la raccolta. Sono loro a far diventare scura una mela tagliata.
+3. L'**ossigeno** dell'aria, che rovina i grassi e li fa diventare rancidi.
+
+Tutti e tre hanno due punti deboli: lavorano male al freddo e senza acqua. Quasi tutti i metodi di conservazione sfruttano uno di questi due punti, oppure il calore, che i microrganismi li uccide.
+
+> ✋ **Tocca a te.** Mela tagliata e lasciata sul banco: dopo dieci minuti cambia colore. Quale dei tre nemici è stato? E se la bagni con il succo di limone, che cosa pensi che succeda? Scrivi la previsione: si può provare a casa.
+
+**Il freddo**
+
+La **refrigerazione**, cioè il frigorifero tra 0 e 4 gradi, rallenta i microrganismi ma non li ferma. Per questo il cibo in frigo dura giorni, non mesi.
+
+La **surgelazione** porta il cibo a 18 gradi sotto zero. L'acqua diventa ghiaccio e i microrganismi restano bloccati. Bloccati, non morti: quando scongeli ripartono. Per questo un cibo scongelato non va ricongelato.
+
+Dal produttore al tuo freezer la temperatura non deve mai salire. Questo viaggio senza interruzioni si chiama **catena del freddo**.
+
+**Il calore**
+
+La **pastorizzazione** scalda il latte a circa 72 gradi per pochi secondi. Elimina i microrganismi pericolosi e lascia quasi intatto il sapore. Il latte però va tenuto in frigo e dura pochi giorni.
+
+La **sterilizzazione** usa temperature molto più alte ed elimina tutti i microrganismi. È il metodo del latte a lunga conservazione e delle scatolette: durano mesi o anni fuori dal frigo, finché restano chiuse.
+
+**Togliere l'acqua, o usare i microbi buoni**
+
+- L'**essiccazione** toglie l'acqua: fichi secchi, pomodori secchi, pasta.
+- La salatura fa la stessa cosa con il sale, che tira fuori l'acqua: prosciutto crudo, acciughe, capperi.
+- La **fermentazione** fa il contrario di tutto il resto: usa microrganismi "amici" che occupano il posto di quelli dannosi. Yogurt, formaggio e pane nascono così.
+
+Anche la confezione conserva. Nel **sottovuoto** si toglie l'aria, e con lei l'ossigeno.
+
+**Due date che non sono uguali**
+
+Sull'etichetta puoi trovare due scritte, e non vogliono dire la stessa cosa.
+
+- "**Da consumarsi entro**" è la data di scadenza vera. Dopo, il cibo può fare male.
+- "**Da consumarsi preferibilmente entro**" indica fino a quando il cibo è al meglio. Dopo può aver perso un po' di sapore, ma di solito si può ancora mangiare.
+
+Confonderle fa buttare molto cibo ancora buono.
+
+> ✋ **Tocca a te.** Sull'etichetta gli ingredienti sono scritti in ordine: il primo è quello presente in quantità maggiore. Se in un "succo alla fragola" il primo ingrediente è l'acqua e il secondo lo zucchero, che cosa stai bevendo soprattutto?
+
+> 📍 **Qui da noi.** Quali cibi tipici della tua zona sono nati per conservare? Pensa a ciò che è sott'olio, sotto sale, essiccato o affumicato. Chiedi a casa come si preparano e quale dei tre nemici fermano.
+
+**In tre righe**
+
+- Il cibo va a male per colpa di microrganismi, enzimi e ossigeno.
+- Si conserva con il freddo, con il calore, togliendo acqua o aria, oppure con la fermentazione.
+- "Entro" è una scadenza; "preferibilmente entro" è un consiglio.
+
+---
+
 ### Perché il cibo si deteriora: nemici invisibili e reazioni chimiche
 
 Prima di capire come conservare il cibo, devi capire perché si deteriora. La risposta non è "perché è vecchio" — è molto più precisa. Gli alimenti si deteriorano per tre cause principali, che a volte agiscono insieme.
@@ -339,6 +396,8 @@ Per ciascuno dei 10 alimenti indicati nella tabella, scrivi:
 La tua famiglia ha il problema che tutti hanno: ogni settimana butta del cibo. Qualcosa scade prima di essere usato. Qualcosa viene messo nel posto sbagliato e si deteriora troppo presto. Qualcosa viene comprato senza capire quanto dura.
 
 Il costo economico dello spreco alimentare in una famiglia italiana media è di circa 500 euro l'anno (dati ISPRA 2023). Il costo ambientale è ancora maggiore: produrre cibo che poi va sprecato significa sprecare anche tutta l'acqua, l'energia e il suolo usati per produrlo.
+
+> 📬 **A chi lo consegni davvero.** La tua famiglia. Attacca allo sportello del frigo le tre regole che hai ricavato. Dopo due settimane conta che cosa è stato buttato e confronta con prima. Porta in classe i due numeri.
 
 ---
 

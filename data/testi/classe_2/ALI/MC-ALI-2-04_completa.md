@@ -23,6 +23,54 @@ Questo percorso — dal campo al consumatore — si chiama **filiera alimentare*
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Il cibo non compare sullo scaffale per magia. Prima di arrivare nel tuo piatto passa di mano in mano, a volte per migliaia di chilometri. Questo percorso si chiama **filiera alimentare**: immaginala come un filo che va dal campo alla forchetta.
+
+**Chi c'è lungo il filo**
+
+1. Il **produttore**: l'agricoltore, l'allevatore, il pescatore. È il primo anello, e spesso il più debole: dipende dal meteo e dal prezzo che altri decidono.
+2. Il **trasformatore**: l'industria che trasforma la materia prima. Il grano diventa pasta, il latte diventa formaggio, il pomodoro diventa passata.
+3. Il **distributore**: chi trasporta e conserva nei magazzini. Per i cibi freschi deve mantenere sempre la stessa temperatura: è la **catena del freddo**. Se si spezza, il cibo va buttato.
+4. Il **dettagliante**: chi vende a te. Supermercato, negozio sotto casa, mercato.
+5. Il **consumatore**: tu. Sei l'ultimo anello, ma non sei senza potere. Ogni cosa che compri manda un messaggio a tutta la filiera.
+
+> ✋ **Tocca a te.** Una banana costa 1,20 euro al chilo. Secondo te, quanti di quei centesimi arrivano a chi l'ha coltivata? Scrivi un numero. La risposta è più giù.
+
+**Quanta strada fa il cibo**
+
+La distanza che un alimento percorre dal campo al piatto si misura in **food miles**, "miglia del cibo". I fagiolini che trovi d'inverno possono arrivare dal Kenya, a seimila chilometri.
+
+Ma non conta solo la distanza: conta il mezzo. Una nave porta moltissima merce inquinando poco per ogni chilo. Un aereo ne porta poca e inquina moltissimo.
+
+**Filiera lunga e filiera corta**
+
+Nella **filiera corta** tra chi produce e chi mangia ci sono pochi passaggi, o nessuno. Succede quando compri direttamente in azienda agricola o al mercato dei contadini. I prodotti a **km 0** sono quelli coltivati vicino a dove vengono venduti.
+
+I vantaggi: il produttore guadagna di più, il cibo è più fresco, viaggia meno. I limiti: trovi solo quello che cresce in quella stagione, e non sempre costa meno.
+
+**Quando la filiera è lunga ma giusta**
+
+Caffè, cacao e banane da noi non crescono: la loro filiera sarà sempre lunga. Il **commercio equo e solidale** è un sistema che garantisce a chi coltiva un prezzo minimo e condizioni di lavoro dignitose, senza lavoro dei bambini. Lo riconosci da un marchio sulla confezione.
+
+**La banana, dall'Ecuador al tuo zaino**
+
+Raccolta verde in Ecuador, messa in scatola, caricata su una nave frigorifera. Due settimane di mare. Sbarco in un porto italiano, qualche giorno in una stanza speciale per maturare, poi camion, magazzino, supermercato.
+
+Di quel 1,20 euro al chilo, a chi l'ha coltivata arrivano circa 6-8 centesimi. Il resto si divide tra tutti gli altri anelli.
+
+> ✋ **Tocca a te.** Confronta la tua previsione con la risposta. Ti sembra giusto? Quale anello della filiera, secondo te, potrebbe rinunciare a qualcosa?
+
+> 📍 **Qui da noi.** A casa, guarda le etichette di cinque prodotti in frigo o in dispensa e segna da dove vengono. Quale ha fatto più strada? Quale viene dalla tua regione? Sulla cartina in classe segneremo tutti i viaggi.
+
+**In tre righe**
+
+- La filiera è il percorso del cibo: produttore, trasformatore, distributore, dettagliante, consumatore.
+- Più la filiera è corta, più guadagna chi produce e meno viaggia il cibo.
+- Ogni acquisto è un messaggio a tutta la filiera.
+
+---
+
 ### Il cibo non appare per magia: ha una storia.
 
 Prima di arrivare nel tuo piatto, ogni alimento ha percorso un cammino lungo — a volte lunghissimo. Ha cambiato forma, cambiato contenitore, cambiato temperatura, cambiato proprietario. Ha attraversato fabbriche, magazzini, porti e supermercati. Ha coinvolto decine di persone.
@@ -383,6 +431,8 @@ Quale dei due prodotti ha più food miles? Significa necessariamente che ha più
 La tua scuola ha deciso di pubblicare ogni anno una "Guida al consumo consapevole" per le famiglie degli studenti. Quest'anno il tema è: *"Da dove viene il cibo che compriamo?"*
 
 Il tuo insegnante ti ha chiesto di contribuire con una scheda su un prodotto alimentare che usi regolarmente — che analizzi la sua filiera, le sue food miles stimate, e suggerisca un'alternativa più sostenibile o più equa.
+
+> 📬 **A chi lo consegni davvero.** Le famiglie della classe. Le schede di tutti diventano una guida vera, stampata o pubblicata sul sito della scuola. Chiedi a tre famiglie: quale scheda vi ha fatto cambiare un acquisto?
 
 ---
 

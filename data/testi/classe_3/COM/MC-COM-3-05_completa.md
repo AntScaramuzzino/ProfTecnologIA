@@ -35,6 +35,62 @@ Chi possiede questi cavi? Chi decide dove passano? E cosa succede quando qualcun
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+"È nel cloud" fa pensare a qualcosa di leggero e senza luogo. In realtà internet è una delle costruzioni più grandi mai fatte dall'umanità: cavi, edifici, antenne. E chi controlla le cose fisiche ha potere.
+
+**Chi comanda su internet**
+
+Nessuno, e molti. Internet non ha un proprietario: è fatta di migliaia di reti diverse che hanno accettato di usare le stesse regole. Alcune organizzazioni internazionali si occupano dei pezzi comuni, come l'assegnazione dei nomi dei siti e degli indirizzi.
+
+È nata così apposta. La rete da cui deriva, costruita negli Stati Uniti nel 1969, era pensata per continuare a funzionare anche se una sua parte veniva distrutta: i dati avrebbero trovato un'altra strada. Per questo oggi è così difficile spegnerla, e così difficile regolarla.
+
+**I cavi sotto il mare**
+
+Quasi tutto il traffico tra i continenti passa dentro **cavi sottomarini**: fasci di fibre ottiche protetti da acciaio, spessi più o meno come un tubo da giardino, posati sul fondo degli oceani.
+
+Una volta li possedevano le compagnie telefoniche. Oggi sempre più cavi appartengono direttamente alle grandi aziende digitali. E sono fragili: basta un'ancora trascinata, un terremoto o un sabotaggio per isolare un territorio.
+
+> ✋ **Tocca a te.** Sulla cartina del mondo dell'aula, traccia con il dito la strada che secondo te fa un messaggio dall'Italia al Giappone. Passerà sotto quali mari? Poi confronta con la mappa dei cavi sottomarini che proietteremo.
+
+**Dove stanno davvero i dati**
+
+Un file salvato "nel cloud" sta in un **data center**: un capannone enorme pieno di computer accesi giorno e notte, in un posto preciso del mondo.
+
+I data center consumano una quantità enorme di elettricità, in gran parte per raffreddare le macchine. Per questo molti sorgono in paesi freddi o dove l'energia costa poco.
+
+E c'è una domanda politica: se i dati dei cittadini europei stanno su computer di aziende di un altro continente, quali leggi valgono? Il diritto di un paese di decidere sui dati dei propri cittadini si chiama **sovranità digitale**.
+
+**La rubrica di internet**
+
+I computer si riconoscono con numeri, gli indirizzi IP. Noi usiamo i nomi. Il **DNS** è il sistema che traduce il nome di un sito nel suo numero. Chi riesce a falsificare questa traduzione può mandarti su un sito truffa senza che tu te ne accorga.
+
+**Non tutti vedono la stessa internet**
+
+In alcuni paesi lo Stato filtra la rete: è la **censura**. Il sistema più esteso è quello della Cina, che blocca molti siti e servizi stranieri e controlla quello che viene pubblicato. Altri paesi, in momenti di protesta, hanno spento internet del tutto.
+
+**Tutti i dati sono uguali?**
+
+La **neutralità della rete** è il principio per cui chi ti fornisce la connessione deve trattare tutti i dati allo stesso modo: non può rallentare un servizio per favorirne un altro, né far pagare una "corsia veloce". In Europa è garantita per legge. In altri paesi è ancora terreno di scontro.
+
+Senza questa regola, chi ha più soldi comprerebbe la precedenza, e un sito nuovo o piccolo partirebbe sempre svantaggiato.
+
+**Mezzo mondo in un quarto di secondo**
+
+Un pacchetto di dati da Roma a Seoul passa per una decina di nodi, attraversa diversi paesi e le reti di molte aziende, e arriva in meno di un quarto di secondo.
+
+> ✋ **Tocca a te.** Dibattito in coppia. Una compagnia telefonica propone: "chi paga di più avrà i video più veloci". Uno difende la proposta, l'altro la neutralità della rete. Tre minuti, poi scambiatevi le parti. Quale argomento ti ha convinto di più?
+
+> 📍 **Qui da noi.** Chi fornisce internet a casa tua? Quante compagnie diverse offrono la connessione nel tuo paese: una sola o più di una? Che cosa cambia per una famiglia, se la scelta è una sola?
+
+**In tre righe**
+
+- Internet è fisica: cavi sottomarini e data center, in luoghi precisi e con proprietari precisi.
+- Chi controlla cavi, dati e nomi dei siti ha un potere reale.
+- Censura e neutralità della rete decidono che cosa ciascuno può vedere, e a quali condizioni.
+
+---
+
 ### Internet non è una nuvola: è una rete fisica distribuita nel mondo
 
 Uno degli equivoci più diffusi sull'internet è l'idea del "cloud" — una tecnologia immateriale, ovunque e da nessuna parte. In realtà, internet è una delle infrastrutture fisiche più estese che l'umanità abbia mai costruito: cavi, server, antenne, data center, stazioni di scambio. Ogni byte che si muove in rete passa attraverso hardware fisico, in un posto specifico del mondo, di proprietà di qualcuno.
@@ -338,6 +394,8 @@ Il governo italiano sta valutando di approvare una legge che obblighi i provider
 I sostenitori della legge dicono: protegge i cittadini dalla disinformazione, difende le istituzioni democratiche, e è conforme ai valori europei.
 
 I critici dicono: è censura, crea un meccanismo facilmente abusabile per bloccare dissenso legittimo, e viola la net neutrality garantita dal regolamento UE.
+
+> 📬 **A chi lo consegni davvero.** Una giuria che non conosce l'argomento: una classe parallela, oppure un adulto di casa. Legge la tua posizione in una pagina e ti dice se lo hai convinto, e con quale argomento.
 
 ---
 

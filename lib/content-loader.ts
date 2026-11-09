@@ -1,3 +1,4 @@
+import crypto from "crypto";
 import fs from "fs";
 import path from "path";
 
@@ -125,28 +126,72 @@ export function getMCTextContent(mcId: string): MCTextContent | null {
   };
 }
 
+// Impronte dei file visuali di tutte le MC (MD5), calcolate una volta per build:
+// servono a nascondere le foto segnaposto riusate identiche in più MC o in più posti della stessa MC.
+let visualHashIndex: Map<string, string[]> | null = null;
+function getVisualHashIndex(): Map<string, string[]> {
+  if (visualHashIndex) return visualHashIndex;
+  visualHashIndex = new Map();
+  if (!fs.existsSync(PUBLIC_VISUAL_ROOT)) return visualHashIndex;
+  for (const mc of fs.readdirSync(PUBLIC_VISUAL_ROOT)) {
+    const dir = path.join(PUBLIC_VISUAL_ROOT, mc);
+    if (!fs.statSync(dir).isDirectory()) continue;
+    for (const name of fs.readdirSync(dir).filter((n) => /\.(png|jpe?g|webp)$/i.test(n))) {
+      const h = crypto.createHash("md5").update(fs.readFileSync(path.join(dir, name))).digest("hex");
+      visualHashIndex.set(h, [...(visualHashIndex.get(h) ?? []), `${mc}/${name}`]);
+    }
+  }
+  return visualHashIndex;
+}
+function fileHash(file: string): string {
+  return crypto.createHash("md5").update(fs.readFileSync(file)).digest("hex");
+}
+
+/** Immagini della professione: si vedono solo nella scheda PROFESSIONI (ProfessioneCard), non qui. */
+export function isProfessioneAsset(name: string): boolean {
+  return /img4-professione/i.test(name);
+}
+
 export function getVisualAssets(mcId: string): VisualAsset[] {
   const dir = path.join(PUBLIC_VISUAL_ROOT, mcId);
   if (!fs.existsSync(dir)) return [];
 
-  const all = fs.readdirSync(dir).filter((name) => /\.(svg|png|jpe?g|webp)$/i.test(name));
+  const all = fs
+    .readdirSync(dir)
+    .filter((name) => /\.(svg|png|jpe?g|webp)$/i.test(name))
+    // copie con lo spazio nel nome (es. "img4-professione 2.webp") e immagini della professione
+    .filter((name) => !/\s/.test(name) && !isProfessioneAsset(name));
 
-  // Prefer WebP: se esiste .webp per una data base, salta il .png corrispondente
-  const webpBases = new Set(
-    all.filter((n) => /\.webp$/i.test(n)).map((n) => n.replace(/\.webp$/i, ""))
-  );
+  // Un solo formato per immagine: WebP, poi PNG/JPG, poi SVG
+  const pref = (n: string) => (/\.webp$/i.test(n) ? 0 : /\.(png|jpe?g)$/i.test(n) ? 1 : 2);
+  const byBase = new Map<string, string>();
+  for (const name of all) {
+    const b = name.replace(/\.(svg|png|jpe?g|webp)$/i, "");
+    const cur = byBase.get(b);
+    if (!cur || pref(name) < pref(cur)) byBase.set(b, name);
+  }
 
-  return all
-    .filter((name) => {
-      if (/\.png$/i.test(name) && webpBases.has(name.replace(/\.png$/i, ""))) return false;
-      return true;
-    })
-    .sort((a, b) => assetRank(a) - assetRank(b) || a.localeCompare(b))
-    .map((name) => ({
-      kind: getAssetKind(name),
-      label: getAssetLabel(name),
-      src: `${PUBLIC_BASE_PATH}/assets/visual/${mcId}/${name}`,
-    }));
+  const sorted = [...byBase.values()].sort((a, b) => assetRank(a) - assetRank(b) || a.localeCompare(b));
+
+  // Foto identiche: la copertina (prima in ordine) resta; le altre copie si nascondono se il file
+  // è identico a un altro della stessa MC o a quello di un'altra MC (segnaposto riusati).
+  const index = getVisualHashIndex();
+  const seen = new Set<string>();
+  const unique = sorted.filter((name, i) => {
+    if (/\.svg$/i.test(name)) return true;
+    const h = fileHash(path.join(dir, name));
+    if (seen.has(h)) return false;
+    seen.add(h);
+    if (i === 0) return true;
+    const owners = new Set((index.get(h) ?? []).map((x) => x.split("/")[0]));
+    return owners.size <= 1;
+  });
+
+  return unique.map((name) => ({
+    kind: getAssetKind(name),
+    label: getAssetLabel(name),
+    src: `${PUBLIC_BASE_PATH}/assets/visual/${mcId}/${name}`,
+  }));
 }
 
 export function getPrimaryVisual(mcId: string): VisualAsset | null {

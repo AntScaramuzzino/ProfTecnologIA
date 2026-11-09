@@ -19,6 +19,67 @@ Forse pensi che l'aria sia invisibile e incontrollabile. Invece, in questo momen
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Intorno a te decine di strumenti misurano di continuo: temperatura, aria, posizione, consumi. I numeri ci sono. Il difficile è capire che cosa dicono, e accorgersi quando qualcuno li usa per ingannare.
+
+**Dal mondo al numero**
+
+Un sensore trasforma una grandezza fisica in un numero. Quel numero è un **dato**. Da solo dice poco. "21,3 gradi" non significa niente finché non sai dove, quando e in quali condizioni. Con il contesto, il dato diventa un'**informazione**.
+
+**Chi misura che cosa**
+
+- Temperatura e umidità: termostati, stazioni meteo.
+- Qualità dell'aria: i sensori di anidride carbonica. All'aperto ce ne sono circa 420 parti per milione. In un'aula chiusa con venticinque persone, dopo un'ora, si sale molto oltre: l'aria "pesante" che ti fa venire sonno è misurabile.
+- Posizione: il GPS del telefono, preciso a pochi metri.
+- Battito e sonno: orologi e braccialetti.
+- Consumo elettrico: il contatore di casa registra quanta corrente usi a ogni ora. Da quei numeri si capisce quando sei in casa.
+
+> ✋ **Tocca a te.** Senza strumenti, vota: in questo momento l'aria dell'aula è "fresca", "normale" o "pesante"? Contate i voti. Poi aprite le finestre per cinque minuti e votate di nuovo. Avete appena raccolto dei dati: che cosa manca per poterli chiamare una misura?
+
+**Il grafico giusto**
+
+Un grafico serve a far vedere qualcosa che in una tabella non si vede. Ognuno ha il suo compito.
+
+| Grafico | Serve per |
+|---------|-----------|
+| A linee | qualcosa che cambia nel tempo |
+| A barre | confrontare categorie diverse |
+| A dispersione | vedere se due grandezze sono legate |
+| A torta | le parti di un totale, se sono poche |
+
+**Come un grafico può ingannare**
+
+- **L'asse tagliato.** Se l'asse verticale di un grafico a barre non parte da zero, una differenza piccola sembra enorme. È il trucco più usato.
+- **La scala strana.** Intervalli non regolari cambiano la forma della curva.
+- **Correlazione scambiata per causa.** Due cose che crescono insieme non è detto che una provochi l'altra. D'estate aumentano i gelati venduti e aumentano i bagni al mare: non è il gelato a far nuotare. C'è una terza causa, il caldo. Questo legame senza causa si chiama **correlazione**.
+
+**Anche la media inganna**
+
+La **media** riassume tanti numeri in uno solo, ma può nascondere molto. Una stanza che passa da 15 a 25 gradi e una ferma a 20 hanno la stessa media, e sono due stanze molto diverse. Guarda sempre anche il minimo e il massimo.
+
+**Di chi sono i dati**
+
+I dati sul tuo corpo e sui tuoi spostamenti sono tra i più delicati. La legge europea chiede il tuo consenso esplicito per usarli, e ti dà il diritto di vederli e farli cancellare.
+
+Altri dati invece sono di tutti: gli enti pubblici pubblicano gli **open data** su aria, traffico, meteo, e chiunque può scaricarli. Esistono anche reti di cittadini che montano piccoli sensori e condividono le misure: è la scienza fatta insieme.
+
+**Davanti a un numero**
+
+Tre domande, sempre: chi l'ha misurato? con che strumento? che cosa ha scelto di non mostrarmi?
+
+> ✋ **Tocca a te.** Due negozi mostrano le vendite con un grafico a barre. Il primo ha l'asse che parte da 0, il secondo da 900. I numeri sono gli stessi: 950 e 1.000. Disegna i due grafici a mano libera. In quale la differenza sembra enorme? Di quanto è, in realtà?
+
+> 📍 **Qui da noi.** Cerca i dati sulla qualità dell'aria della tua zona sul sito dell'agenzia regionale per l'ambiente. Dov'è la centralina più vicina a casa tua? Che cosa misura? Se non ce n'è una vicina, dove la metteresti e perché?
+
+**In tre righe**
+
+- Un dato diventa informazione solo con il contesto: dove, quando, come.
+- Ogni grafico ha un compito, e un asse tagliato può far sembrare grande una differenza piccola.
+- Due cose che crescono insieme non sono per forza causa ed effetto.
+
+---
+
 ### Dal mondo fisico al numero: cos'è un dato
 
 Un sensore fa una cosa sola, ma la fa in modo straordinario: trasforma una grandezza fisica — calore, luce, pressione, posizione, suono — in un numero. Quel numero è un **dato grezzo**. Non dice ancora nulla da solo: è il punto di partenza.
@@ -276,6 +337,8 @@ Competenze chiave che inizia a costruire da qui: OSINT · threat detection · cy
 L'amministrazione della tua scuola vuole capire se le condizioni ambientali nelle aule influenzano il benessere e la concentrazione degli studenti. Ti chiede di contribuire alla raccolta e all'analisi dei dati.
 
 Non hai bisogno di hardware: puoi usare dati già disponibili. La rete ARPA della tua regione pubblica dati di temperatura, umidità e qualità dell'aria in formato aperto. Sensor.Community ha probabilmente una stazione nel tuo comune. Anche i dati meteo storici da openmeteo.com sono gratuiti e liberamente scaricabili.
+
+> 📬 **A chi lo consegni davvero.** Il dirigente, o chi a scuola si occupa della sicurezza. Consegna un solo grafico e una sola raccomandazione, per esempio aprire le finestre a ogni cambio d'ora. Proponi di provarla per una settimana.
 
 ---
 

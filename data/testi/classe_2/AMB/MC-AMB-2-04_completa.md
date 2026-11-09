@@ -27,6 +27,55 @@ La tua aula è più calda d'estate che d'inverno? Le finestre danno a sud o a no
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Una casa può combattere il clima con caldaia e condizionatore accesi tutto l'anno. Oppure può usarlo a proprio vantaggio. Progettare edifici che sfruttano sole, vento e piante per stare bene consumando poco si chiama **architettura bioclimatica**. È fisica applicata.
+
+**Da che parte guarda la casa**
+
+In Italia il sole sta sempre nella metà sud del cielo. D'inverno è basso, d'estate è alto. Da qui nasce la scelta più importante, l'**orientamento**:
+
+- le finestre a sud ricevono sole tutto il giorno, soprattutto d'inverno, quando serve;
+- le finestre a nord non lo ricevono mai: perdono calore e basta.
+
+Per questo una casa ben progettata ha finestre grandi a sud e piccole a nord.
+
+E d'estate? Basta una sporgenza sopra la finestra, come un balcone o il bordo del tetto. Il sole alto dell'estate resta fuori; il sole basso dell'inverno passa sotto ed entra.
+
+> ✋ **Tocca a te.** Le finestre di questa aula guardano a sud, a nord, a est o a ovest? Come puoi capirlo senza bussola? Pensa a dove batte il sole al mattino e a che ora entra in classe.
+
+**Il muro che fa da serbatoio**
+
+Mattoni e pietra hanno molta **massa termica**: si scaldano lentamente e lentamente restituiscono il calore. Un muro spesso assorbe il sole di giorno e lo rilascia di notte. D'estate fa il contrario: ci mette così tanto a scaldarsi che dentro resta fresco. È il segreto delle vecchie case con i muri spessi.
+
+**Il cappotto**
+
+L'**isolamento** rallenta il passaggio del calore attraverso muri, tetto e finestre. Non lo ferma: lo rallenta. D'inverno tiene il caldo dentro, d'estate lo tiene fuori.
+
+I punti deboli si chiamano **ponti termici**: angoli, davanzali, giunzioni dove l'isolante si interrompe e il calore scappa. Lì spesso compare la muffa.
+
+Il calore si sposta in tre modi: per contatto attraverso i materiali, trasportato dall'aria che si muove, e sotto forma di raggi, come quelli del sole. Un buon progetto li controlla tutti e tre.
+
+**Rinfrescare senza condizionatore**
+
+L'aria calda sale. Se apri una finestra in basso e una in alto, l'aria calda esce da sopra e richiama aria fresca da sotto. E se apri due finestre su lati opposti della casa, anche poco vento crea corrente. Si chiama **ventilazione naturale**, e non consuma niente.
+
+**Il tetto che è un prato**
+
+Un **tetto verde** è coperto di terra e piante. D'estate resta molto più fresco di un tetto scuro, trattiene l'acqua dei temporali e ospita insetti e uccelli. In città aiuta contro l'isola di calore: asfalto e cemento trattengono il caldo, e le città sono più calde della campagna intorno.
+
+> ✋ **Tocca a te.** In una giornata calda, a casa: apri una sola finestra e senti se l'aria si muove. Poi aprine una seconda sul lato opposto. Che cosa cambia? Scrivi adesso che cosa ti aspetti.
+
+> 📍 **Qui da noi.** Le case vecchie del tuo paese hanno muri spessi, finestre piccole, persiane, colori chiari? Fotografane o disegnane una e spiega quale di queste scelte la protegge dal caldo dell'estate.
+
+**In tre righe**
+
+- Un edificio bioclimatico usa sole, vento e piante invece di consumare energia.
+- Finestre a sud con una sporgenza sopra: sole d'inverno, ombra d'estate.
+- Massa termica, isolamento e ventilazione naturale tengono la casa a una temperatura stabile.
+
+---
+
 ### Costruire con il clima, non contro di lui
 
 Ogni edificio interagisce con il clima che lo circonda. Una progettazione che ne tiene conto può ridurre il bisogno di riscaldamento e raffrescamento. Il rapporto UNEP Global Status Report for Buildings and Construction 2024/2025 attribuisce al settore degli edifici e delle costruzioni il **34% delle emissioni globali di CO₂**, includendo l’impatto dei materiali. Questa quota non misura soltanto gli effetti della progettazione climatica degli edifici italiani.
@@ -370,6 +419,8 @@ Competenze chiave che inizia a costruire da qui: reti IoT · data visualization 
 Il tuo comune sta pianificando la ristrutturazione di tre edifici scolastici costruiti negli anni '60-'70. Prima di decidere dove investire i fondi PNRR disponibili, il responsabile tecnico ha bisogno di un'analisi preliminare: qual è lo stato energetico attuale di ciascun edificio?
 
 Ti viene assegnato l'edificio della tua scuola (o un edificio del tuo quartiere, se la scuola non è accessibile dall'esterno).
+
+> 📬 **A chi lo consegni davvero.** Il dirigente scolastico e l'ufficio tecnico dell'ente proprietario dell'edificio, di solito il Comune. Consegna la scheda energetica con le foto. Chiedi: quale intervento è già in programma?
 
 ---
 

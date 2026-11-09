@@ -20,6 +20,80 @@ Questa non è magia. È un algoritmo. E capire la differenza tra "sembra intelli
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Un robot aspirapolvere gira per casa, evita i muri e torna alla base. Sembra che sappia quello che fa. In realtà legge dei sensori ed esegue un programma. Capire questa differenza è il cuore della robotica.
+
+**Che cos'è un robot**
+
+Un **robot** è una macchina che fa tre cose in fila, senza fermarsi mai.
+
+1. Legge il mondo con i **sensori**.
+2. Decide con un programma, che gira su un piccolo computer.
+3. Agisce con gli **attuatori**.
+
+Senza sensori è cieco. Senza attuatori è immobile. Senza programma è vuoto.
+
+**Gli organi di senso**
+
+- Il sensore a ultrasuoni misura la distanza. Emette un suono che non senti e misura dopo quanto tempo torna l'eco, come fanno i pipistrelli.
+- Il sensore di colore distingue chiaro e scuro: serve ai robot che seguono una linea nera.
+- L'accelerometro sente inclinazione e movimento. È quello che fa ruotare lo schermo del telefono.
+- I sensori di temperatura e di luce misurano l'ambiente.
+
+**I muscoli**
+
+- I motori fanno girare le ruote.
+- I servomotori ruotano fino a un angolo preciso: servono per sterzare o per muovere un braccio.
+- LED, display e cicalini comunicano con luci e suoni.
+
+> ✋ **Tocca a te.** Il sensore manda un suono e l'eco torna dopo 6 millesimi di secondo. Il suono viaggia a circa 340 metri al secondo. Quanto è lontano l'ostacolo? Attenzione: il suono fa andata e ritorno.
+
+**Tre strumenti per cominciare**
+
+- La **micro:bit** è una scheda grande come una carta di credito tagliata a metà, con sensori e 25 LED già a bordo. Si programma a blocchi. Ideale per iniziare.
+- I kit con mattoncini e motori permettono di costruire robot veri e propri.
+- **Arduino** è una scheda a cui collegare qualsiasi sensore o motore. Si programma scrivendo codice: è il passo successivo.
+
+**Programmare per eventi**
+
+Finora hai scritto programmi che vanno dall'alto in basso, un'istruzione dopo l'altra. Un robot funziona in un altro modo: aspetta che succeda qualcosa e reagisce. È la **programmazione a eventi**.
+
+- Di base: vai avanti.
+- Evento: l'ostacolo è a meno di 15 cm. Reazione: fermati e gira a destra.
+- Evento: è stato premuto il pulsante. Reazione: fermati e suona.
+
+Il difficile arriva quando due eventi capitano insieme: bisogna decidere quale ha la precedenza.
+
+**Trovare l'errore con metodo**
+
+Con i robot gli errori sono la regola. Il **debug** si fa così:
+
+1. fai ripetere l'errore, e descrivilo con precisione;
+2. prova un pezzo alla volta: il sensore da solo, il motore da solo;
+3. fai mostrare al robot i valori che legge, sul display o con un LED;
+4. spiega il programma ad alta voce a qualcuno. Spesso l'errore si mostra mentre parli.
+
+**Programmato o addestrato**
+
+Un robot può ricevere le sue regole in due modi. Nel primo le scrive una persona, una per una: "se la distanza è meno di 15 cm, gira". Il robot fa esattamente quello, ed è prevedibile.
+
+Nel secondo, il **machine learning**, il robot ricava le regole da moltissimi esempi. Si adatta meglio a situazioni nuove, ma è più difficile capire perché ha fatto una certa cosa.
+
+In nessuno dei due casi il robot pensa o vuole qualcosa. Quando sbaglia, l'errore si cerca nel programma o nei dati, non nelle sue "intenzioni". Anche il robot più preciso usato in sala operatoria non decide niente: lo guida un chirurgo.
+
+> ✋ **Tocca a te.** Scrivi in tre righe, con la forma "evento → reazione", il programma di un robot che segue una linea nera su un pavimento bianco usando un solo sensore di colore. Che cosa fa quando perde la linea?
+
+> 📍 **Qui da noi.** Quale compito ripetitivo o faticoso della tua scuola o della tua casa affideresti a un piccolo robot? Descrivi quali sensori e quali attuatori gli servirebbero. Poi chiediti: chi fa quel lavoro oggi sarebbe contento?
+
+**In tre righe**
+
+- Un robot legge con i sensori, decide con un programma, agisce con gli attuatori.
+- Si programma per eventi: aspetta che succeda qualcosa e reagisce.
+- Che le regole siano scritte o imparate, un robot esegue: non pensa.
+
+---
+
 ### Pensiero computazionale avanzato: oltre le istruzioni semplici
 
 Nei due anni precedenti hai imparato le basi del pensiero computazionale: sequenze, cicli, condizioni, funzioni. Adesso aggiungi la complessità reale. I problemi del mondo fisico non sono come gli esercizi sul libro: hanno input incerti, condizioni che cambiano, errori imprevisti, e richiedono sistemi che rispondono in tempo reale all'ambiente.
@@ -340,6 +414,8 @@ Documenta il processo con il formato della Zona 4 Avanzato.
 ### Lo scenario
 
 La tua scuola ha partecipato a un bando regionale: **"Robotica per l'inclusione."** Il finanziamento copre l'acquisto di 10 kit micro:bit. Spetta a te e al tuo gruppo progettare quale problema reale della scuola può essere risolto con questo hardware.
+
+> 📬 **A chi lo consegni davvero.** La persona che ha il problema che vuoi risolvere, insieme al docente referente per l'inclusione. Presentale il progetto prima di costruirlo. Chiedi: lo useresti? Che cosa ti darebbe fastidio?
 
 ---
 

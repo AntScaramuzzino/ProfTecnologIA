@@ -16,11 +16,84 @@ Hai presente quelle magliette che costano meno di sei euro? Sai quanti paesi ha 
 
 La risposta è: almeno quattro continenti. E meno di un centesimo di euro per chi l'ha prodotta fisicamente.
 
-Prima di studare come funzionano i sistemi economici in teoria, conviene capire come funzionano nella realtà — partendo da qualcosa che probabilmente indossi adesso.
+Prima di studiare come funzionano i sistemi economici in teoria, conviene capire come funzionano nella realtà — partendo da qualcosa che probabilmente indossi adesso.
 
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Una maglietta da pochi euro ha attraversato mezzo mondo prima di arrivare nel negozio. Ci hanno lavorato contadini, operai, marinai, commessi. Come si decide chi fa che cosa, e quanto resta a ciascuno? È il lavoro di un sistema economico.
+
+**Chi decide**
+
+Un **sistema economico** è il modo in cui una società organizza tre cose: produrre, distribuire e consumare. Ci sono due modelli estremi.
+
+- Nell'economia di **mercato** decidono milioni di persone che comprano e vendono. Se una cosa è molto richiesta il prezzo sale, e qualcuno ne produce di più.
+- Nell'economia pianificata decide tutto lo Stato: che cosa produrre, quanto, a che prezzo.
+
+Quasi tutti i Paesi, Italia compresa, stanno nel mezzo: è l'economia mista. Il mercato decide la maggior parte delle cose. Lo Stato fa le regole e si occupa di ciò che non vuole lasciare al solo mercato, come scuola, sanità e strade.
+
+**Che cosa serve per produrre**
+
+Per produrre qualsiasi cosa servono i **fattori di produzione**.
+
+- Il lavoro: l'attività delle persone, con le mani e con la testa.
+- Il capitale: qui la parola indica macchine, fabbriche e attrezzi, e non i soldi.
+- Le risorse naturali: terra, acqua, minerali, clima.
+
+Molti aggiungono un quarto fattore: l'idea di chi combina gli altri tre in un modo nuovo.
+
+**Tre settori**
+
+Tutti i lavori si dividono in tre grandi famiglie.
+
+- Il **settore primario** prende le risorse dalla natura: agricoltura, allevamento, pesca, miniere.
+- Il **settore secondario** le trasforma in prodotti: industria, edilizia, artigianato.
+- Il **settore terziario** produce servizi, cioè cose che non si toccano: commercio, trasporti, scuola, sanità, turismo, banche.
+
+Nei Paesi ricchi oggi la maggior parte delle persone lavora nel terziario. La parte più avanzata, fatta di ricerca, informatica e progettazione, viene chiamata a volte quaternario.
+
+> ✋ **Tocca a te.** Scrivi il lavoro di cinque adulti che conosci. Accanto a ciascuno scrivi il settore: primario, secondario o terziario. Quale settore vince? Confronta con il compagno di banco.
+
+**La catena del valore**
+
+La **catena del valore** è la fila di passaggi che trasforma una materia prima in un prodotto venduto. Per la maglietta: coltivare il cotone, filarlo, tesserlo, tingerlo, cucirlo, trasportarlo, venderlo.
+
+A ogni passaggio il prodotto vale un po' di più, e qualcuno incassa una parte del prezzo finale. Le parti non sono uguali. Di solito incassa di più chi possiede il marchio e i negozi, e meno chi coltiva o cuce. Conta molto chi ha il potere di scegliere: un grande marchio può cambiare fabbrica, una fabbrica non può cambiare facilmente cliente.
+
+**Imprese grandi e piccole**
+
+Le imprese sono molto diverse fra loro. C'è l'artigiano, che lavora con le proprie mani. Ci sono le piccole e medie imprese, che in Italia sono la quasi totalità. C'è la grande impresa, che produce moltissimo e per questo spende meno per ogni pezzo. C'è la **multinazionale**, che lavora in molti Paesi e mette ogni fase dove le conviene. E c'è la cooperativa, dove i proprietari sono i lavoratori stessi.
+
+**Come si misura un'economia**
+
+Il **PIL**, prodotto interno lordo, è il valore di tutti i beni e i servizi prodotti in un Paese in un anno. Serve a confrontare le economie, ma dice poco su come si vive.
+
+- Cresce anche con le disgrazie: dopo un'alluvione si spende per ricostruire, e il PIL sale.
+- Non dice come è divisa la ricchezza.
+- Non conta i danni all'ambiente.
+
+Per questo in Italia l'ISTAT affianca al PIL un'altra misura, il BES, che guarda anche salute, istruzione, lavoro, ambiente e relazioni.
+
+**I prezzi che salgono**
+
+L'economia non cresce in modo regolare: alterna periodi di espansione e periodi di crisi, le recessioni.
+
+L'**inflazione** è l'aumento generale dei prezzi. Se i prezzi salgono e la paga resta uguale, con gli stessi soldi compri meno cose: è sceso il tuo potere d'acquisto.
+
+> ✋ **Tocca a te.** Ricevi 10 euro a settimana. Una merenda che costava 2 euro ora ne costa 2,50. Quante merende compravi prima? Quante adesso? La tua paghetta è cambiata? E il tuo potere d'acquisto?
+
+> 📍 **Qui da noi.** Fai un elenco di dieci attività che vedi nel tuo paese: negozi, aziende, uffici, campi coltivati. Per ognuna scrivi il settore. Quale manca o è più raro? Secondo te perché?
+
+**In tre righe**
+
+- Un sistema economico decide chi produce, che cosa, e come si divide il risultato.
+- Il lavoro si divide in tre settori: primario, secondario, terziario.
+- Lungo la catena del valore il prezzo finale si divide in parti disuguali, e il PIL non basta a misurare il benessere.
+
+---
 
 ### Che cos'è un sistema economico
 
@@ -311,6 +384,8 @@ Competenze chiave che inizia a costruire da qui: smart contract · finanza decen
 Vivi in una città o in un paese che ha un'economia: produttori, commercianti, artigiani, servizi, imprese di varie dimensioni. Queste imprese sono collegate tra loro — alcune producono per le altre, alcune competono, alcune sono fornitore-cliente.
 
 Capire la struttura economica del tuo territorio non è solo cultura generale: ti serve per scegliere dove lavorare, cosa comprare, come votare su politiche economiche locali. È competenza di cittadinanza economica concreta.
+
+> 📬 **A chi lo consegni davvero.** Un commerciante o un imprenditore del tuo paese. Mostragli la tua mappa dell'economia locale. Chiedi: che cosa manca? Da dove arrivano i tuoi fornitori?
 
 ---
 

@@ -9,7 +9,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una sequenza precisa e ordinata di istruzioni per risolvere un problema o completare un compito",
+          "testo": "Una sequenza precisa e ordinata di istruzioni per risolvere un problema",
           "corretto": true,
           "feedback": "Esatto! Un algoritmo è una ricetta di istruzioni: devono essere precise, ordinate e devono portare a un risultato definito."
         },
@@ -52,7 +52,7 @@
         },
         {
           "id": "b",
-          "testo": "SE il latte è caldo ALLORA versalo nel bicchiere ALTRIMENTI riscaldalo ancora",
+          "testo": "SE il latte è caldo ALLORA versalo ALTRIMENTI riscaldalo",
           "corretto": true,
           "feedback": "Esatto! Questa è la struttura SE/ALLORA/ALTRIMENTI (condizione): l'algoritmo verifica qualcosa e prende strade diverse a seconda del risultato."
         },
@@ -167,7 +167,7 @@
         },
         {
           "id": "c",
-          "testo": "Un errore nell'algoritmo o nel programma che causa un comportamento sbagliato o inatteso",
+          "testo": "Un errore nel programma che causa un comportamento sbagliato",
           "corretto": true,
           "feedback": "Esatto! Un bug è un errore — può essere nella logica (il programma gira ma dà risultati sbagliati) o nella sintassi (il programma non gira affatto). Il debugging è il processo per trovarlo e correggerlo."
         },
@@ -232,7 +232,7 @@
         },
         {
           "id": "b",
-          "testo": "Mostrare quanto deve essere preciso un algoritmo: se l'istruzione è ambigua, il robot non sa cosa fare",
+          "testo": "Mostrare quanto deve essere preciso un algoritmo: nulla può restare ambiguo",
           "corretto": true,
           "feedback": "Esatto! Quando una persona esegue istruzioni alla lettera — senza interpretare — emerge subito ogni ambiguità. Questo replica esattamente come un computer legge il codice: nessuna inferenza, solo esecuzione letterale."
         },
@@ -311,7 +311,7 @@
         },
         {
           "id": "c",
-          "testo": "Analizza il flusso di traffico in tempo reale e regola i tempi di verde/rosso per ridurre le code",
+          "testo": "Misura il traffico in tempo reale e regola i tempi di verde e di rosso",
           "corretto": true,
           "feedback": "Esatto! Il semaforo intelligente usa sensori per misurare quante auto ci sono su ogni corsia e modifica dinamicamente i tempi — riducendo l'attesa del 20-25%."
         },
@@ -340,7 +340,7 @@
         },
         {
           "id": "b",
-          "testo": "Decomposizione → Riconoscimento di schemi → Astrazione → Algoritmo",
+          "testo": "Decomposizione → Schemi → Astrazione → Algoritmo",
           "corretto": true,
           "feedback": "Esatto! Queste sono le quattro fasi del pensiero computazionale: prima scomponi, poi cerchi pattern, poi astrai i dettagli irrilevanti, infine progetta la soluzione (algoritmo)."
         },
@@ -448,7 +448,7 @@
         },
         {
           "id": "b",
-          "testo": "Si chiama 'spaghetti code' e si risolve scomponendo con la decomposizione (funzioni separate per ogni caso)",
+          "testo": "Si chiama 'spaghetti code' e si risolve scomponendo in funzioni separate",
           "corretto": true,
           "feedback": "Esatto! Condizioni nidificate profonde rendono il codice illeggibile. La soluzione è decomporlo: estrarre ogni ramo in una funzione separata con un nome chiaro. Il codice diventa più corto, più leggibile e più facile da testare."
         },
@@ -484,7 +484,7 @@
         },
         {
           "id": "b",
-          "testo": "Dividere l'algoritmo in parti più piccole e testare ogni parte separatamente per isolare dove si trova l'errore",
+          "testo": "Dividere l'algoritmo in parti e provarle una alla volta per isolare l'errore",
           "corretto": true,
           "feedback": "Esatto! Dividere per testare è il metodo scientifico applicato al debugging: isola ogni componente, verifica che funzioni correttamente da sola. Quando trovi la parte che non funziona, hai trovato il bug."
         },
@@ -556,7 +556,7 @@
         },
         {
           "id": "b",
-          "testo": "Il CICLO — perché devo confrontare e spostare elementi più volte finché la lista è ordinata",
+          "testo": "Il CICLO — perché devo confrontare e spostare gli elementi più volte",
           "corretto": true,
           "feedback": "Esatto! Qualsiasi algoritmo di ordinamento (bubble sort, insertion sort, selection sort...) deve ripetere confronti e scambi più volte — finché la lista è in ordine. Senza cicli, potresti ordinare solo liste di lunghezza fissa e nota in anticipo."
         },

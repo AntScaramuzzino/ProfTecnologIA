@@ -13,13 +13,89 @@
 **Domanda di avvio:**
 Qual è il lavoro che vuoi fare da grande?
 
-Se non lo sai, sei in ottima compagnia. Non possiamo prevedere con certezza quali professioni svolgeranno gli alunni di oggi. Alcuni lavori cambieranno e altri nasceranno, ma le percentuali spesso citate sui "mestieri che non esistono ancora" non sono previsioni certe per la tua generazione. Puoi però prepararti costruendo competenze e imparando a riconoscere le tue inclinazioni.
+Se non lo sai, sei in ottima compagnia. Nessuno può dirti quali mestieri ci saranno tra dieci anni: alcuni cambieranno, altri nasceranno, e qualcuno oggi non ha ancora un nome.
 
-Questo non significa che non puoi prepararti. Significa che prepararsi al futuro del lavoro non vuol dire scegliere il mestiere giusto adesso. Vuol dire costruire le competenze giuste — quelle che serviranno in qualsiasi professione, anche in quelle che ancora non esistono.
+Prepararsi, allora, non vuol dire scegliere adesso il mestiere giusto. Vuol dire costruire le competenze che servono in qualsiasi professione, e imparare a riconoscere che cosa ti piace fare.
 
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Tra dieci anni farai un lavoro. Forse oggi quel lavoro non ha ancora un nome. Non puoi sapere quale sarà, ma puoi sapere che cosa lo sta cambiando, e prepararti.
+
+**Quattro forze**
+
+Il lavoro cambia sotto la spinta di quattro grandi forze.
+
+- **L'automazione**. Macchine e programmi di intelligenza artificiale fanno sempre più compiti ripetitivi: quelli delle mani e anche quelli della testa.
+- La transizione ecologica. Per inquinare meno bisogna cambiare il modo di produrre energia, costruire case, spostarsi.
+- L'invecchiamento. In Italia gli anziani aumentano e i giovani diminuiscono: servirà sempre più chi cura e assiste.
+- La digitalizzazione. Anche i mestieri antichi usano dati e sensori: oggi un agricoltore può controllare i campi con un drone.
+
+**Che cosa sostituisce una macchina**
+
+Una macchina di solito sostituisce un compito, cioè un pezzo di mestiere, e non il mestiere intero. I compiti più a rischio sono quelli ripetitivi, che seguono sempre le stesse regole: inserire dati, fare la stessa operazione cento volte.
+
+Resistono meglio i compiti che chiedono di capire una persona, risolvere un problema mai visto, inventare, muoversi in un ambiente disordinato. Un idraulico che ripara un guasto in una casa vecchia è difficile da automatizzare quanto un medico.
+
+Le grandi indagini sulle aziende di tutto il mondo indicano la stessa direzione. Crescono i mestieri legati ai dati, all'energia pulita, alla sicurezza informatica, alla formazione, alla cura. Calano gli impieghi d'ufficio più ripetitivi e i lavori di cassa.
+
+> ✋ **Tocca a te.** Scegli un mestiere che conosci bene. Scrivi cinque compiti che fa ogni giorno chi lo svolge. Segna con R quelli ripetitivi e con U quelli che richiedono una persona. Quel mestiere sparirà o cambierà?
+
+**Chi manca**
+
+Le professioni scientifiche e tecniche, dette **STEM**, sono tra le più richieste. Eppure le donne che le scelgono sono poche.
+
+La capacità non c'entra: a scuola, nelle materie scientifiche, le ragazze vanno bene quanto i ragazzi, e spesso meglio. La differenza nasce al momento di scegliere. Pesano gli **stereotipi**, come l'idea che la tecnologia sia "roba da maschi", che si assorbe già da piccoli. Pesano le aspettative degli adulti, anche quando non se ne accorgono. E pesa la mancanza di esempi: è difficile immaginarsi in un mestiere dove non vedi nessuno che ti somiglia.
+
+È una perdita per tutti: restano fuori persone capaci, proprio dove mancano lavoratori.
+
+**Quello che ti porti dietro**
+
+Le conoscenze tecniche invecchiano in fretta. Le **competenze trasversali**, o soft skills, valgono in qualunque mestiere e non scadono.
+
+- Comunicare: spiegare con chiarezza, a voce e per iscritto.
+- Collaborare: lavorare bene con persone diverse da te.
+- Pensiero critico: valutare le informazioni e cambiare idea davanti alle prove.
+- Adattabilità: imparare cose nuove quando serve.
+- Capire le emozioni, le proprie e quelle degli altri.
+
+Si allenano facendo: nei laboratori, nei lavori di gruppo, nelle discussioni.
+
+**Che cosa ti piace fare**
+
+Per orientarsi esiste un modello molto usato, il **RIASEC**. Descrive sei tipi di interessi.
+
+| Tipo | Che cosa ama fare |
+|------|-------------------|
+| Realistico | Lavorare con le mani, con oggetti e macchine |
+| Investigativo | Analizzare, cercare, risolvere problemi |
+| Artistico | Creare, esprimersi |
+| Sociale | Aiutare, insegnare, curare |
+| Intraprendente | Organizzare, guidare, convincere |
+| Convenzionale | Mettere ordine, seguire procedure precise |
+
+Nessuno è un tipo solo: ognuno è una combinazione, di solito di tre. Il modello non ti dice quale mestiere fare. Ti aiuta a capire in quali ambienti stai bene. E gli interessi cambiano: quello che esce oggi è una fotografia, e tra un anno può essere diversa.
+
+**Un percorso si costruisce**
+
+Il titolo di studio apre una porta. Poi conta quello che sai fare, e che puoi mostrare. Un **portfolio** è una raccolta di prove: un progetto finito, un problema risolto, un oggetto costruito. Puoi cominciarlo adesso, con i lavori di quest'anno.
+
+E si continua a imparare per tutta la vita: chi oggi ha un lavoro dovrà aggiornarsi più volte.
+
+> ✋ **Tocca a te.** Rileggi i sei tipi. Scegli i tre che ti somigliano di più e mettili in ordine. Per ciascuno scrivi una cosa che hai fatto davvero e che lo dimostra. Poi chiedi a un compagno: ti riconosce?
+
+> 📍 **Qui da noi.** Chiedi a due adulti di età diverse: che lavoro fai? Esisteva quando avevi la mia età? Che cosa è cambiato nel modo di farlo? Poi cerca quali scuole superiori ci sono nel raggio di mezz'ora da casa tua: quanti indirizzi diversi trovi?
+
+**In tre righe**
+
+- Automazione, ecologia, invecchiamento e digitale stanno cambiando i mestieri.
+- Le macchine sostituiscono i compiti ripetitivi; restano quelli che chiedono persone.
+- Le competenze trasversali non scadono, e un portfolio mostra ciò che sai fare.
+
+---
 
 ### I megatrend che stanno trasformando il lavoro
 
@@ -306,6 +382,8 @@ Stai per concludere la scuola secondaria di primo grado. Davanti a te ci sono sc
 Non devi sapere adesso cosa farai a 30 anni. Ma puoi costruire una mappa di quello che sai fare, quello che ti piace fare, e quello che il mondo del lavoro cerca — e usare questa mappa per fare scelte più consapevoli.
 
 Questa è l'unica MC del libro che ha te come oggetto di studio.
+
+> 📬 **A chi lo consegni davvero.** Un adulto che fa un lavoro che ti incuriosisce, e il docente che a scuola si occupa di orientamento. Mostra la tua mappa e chiedi: che cosa mi manca per arrivare lì?
 
 ---
 

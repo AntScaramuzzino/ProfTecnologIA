@@ -44,6 +44,16 @@ interface QuizWidgetProps {
   onComplete?: (score: number, total: number, level: "F" | "I" | "A") => void;
 }
 
+/** Fisher–Yates: restituisce una copia mescolata */
+function mescola<T>(arr: T[]): T[] {
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
 const LEVEL_LABELS: Record<string, string> = {
   F: "Base",
   I: "Intermedio",
@@ -87,11 +97,14 @@ export default function QuizWidget({ mcId, livello, quizData, onComplete }: Quiz
         livello: q.livello,
         spiegazione: q.spiegazione,
         risposta_corretta: q.opzioni.find((o) => o.corretto)?.id ?? "a",
-        opzioni: q.opzioni.map((o) => ({
-          id: o.id,
-          testo: o.testo,
-          feedback_errato: o.corretto ? undefined : o.feedback,
-        })),
+        // Opzioni mescolate a ogni avvio: la posizione non deve suggerire la risposta
+        opzioni: mescola(
+          q.opzioni.map((o) => ({
+            id: o.id,
+            testo: o.testo,
+            feedback_errato: o.corretto ? undefined : o.feedback,
+          })),
+        ),
       }));
     setQuiz({ mc_id: mcId, domande });
     setCurrentQ(0);
@@ -239,7 +252,7 @@ export default function QuizWidget({ mcId, livello, quizData, onComplete }: Quiz
 
             {/* Options */}
             <div className="space-y-2">
-              {domanda.opzioni.map((opt) => {
+              {domanda.opzioni.map((opt, optIdx) => {
                 let cls =
                   "w-full rounded-lg border px-4 py-3 text-left text-sm transition-colors ";
                 if (!confirmed) {
@@ -264,7 +277,7 @@ export default function QuizWidget({ mcId, livello, quizData, onComplete }: Quiz
                     className={cls}
                     disabled={confirmed}
                   >
-                    <span className="font-medium mr-2 uppercase">{opt.id}.</span>
+                    <span className="font-medium mr-2 uppercase">{"abcdefgh"[optIdx]}.</span>
                     {opt.testo}
                   </button>
                 );

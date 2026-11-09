@@ -16,15 +16,78 @@ C'è un posto nell'oceano Pacifico dove non si vede acqua. Si vede plastica.
 
 Si chiama Great Pacific Garbage Patch. È grande tre volte la Francia. Non è un'isola solida — è più come una zuppa densa di frammenti microscopici. I pesci li mangiano. Poi li mangiamo noi. Nel 2023, ricercatori hanno trovato microplastiche nel sangue di persone che vivevano nell'entroterra, lontane dall'oceano.
 
-Il problema non è che il riciclaggio non funziona. È che, secondo una stima pubblicata nel 2017, soltanto il 9% dei rifiuti plastici generati nel mondo fino al 2015 era stato riciclato. È un dato storico sui rifiuti, non sulla totalità della plastica prodotta né sul tasso attuale di riciclo.
+Di tutta la plastica che l'umanità ha buttato via fino al 2015, ne è stata riciclata meno di un decimo.
 
-Il 9.
+Meno di un decimo.
 
 Capire come funziona la gestione dei rifiuti — davvero, non solo "la differenziata" — è il primo passo per cambiare questo dato.
 
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+La bottiglia che hai buttato ieri esiste ancora. I rifiuti non spariscono: si spostano e cambiano forma. Possono diventare un oggetto nuovo, energia, oppure inquinamento. Dipende da come vengono gestiti, e anche da te.
+
+**Che cos'è un rifiuto**
+
+Per la legge un **rifiuto** è qualsiasi cosa di cui chi la possiede decide di disfarsi. Quelli di casa, scuola e negozi si chiamano **rifiuti urbani**, e li raccoglie il Comune.
+
+Con la **raccolta differenziata** i materiali vengono separati per poterli riciclare. Quello che avanza è l'indifferenziato.
+
+Attenzione a due casi speciali, che non vanno mai nei bidoni normali:
+
+- i **RAEE**, cioè gli apparecchi elettrici ed elettronici: telefoni, computer, lampadine;
+- i **rifiuti pericolosi**: pile, farmaci scaduti, vernici, oli.
+
+> ✋ **Tocca a te.** Una pila scarica: in quale bidone va? Scrivi la risposta prima di continuare a leggere. Poi controlla qui sopra.
+
+**La classifica delle scelte**
+
+L'Unione Europea ha messo in ordine le cose da fare con i rifiuti, dalla migliore alla peggiore. Sono cinque, e cominciano tutte per R.
+
+1. **Rifiuta**: non prendere quello che non ti serve. Il rifiuto migliore è quello che non nasce.
+2. **Riduci**: se ti serve, prendine meno. Una confezione grande invece di dieci piccole.
+3. **Riusa**: prima di buttare, chiediti se può servire ancora, a te o a un altro.
+4. **Ricicla**: recupera il materiale per farne un oggetto nuovo.
+5. **Recupera**: se non si può riciclare, brucialo per ricavarne energia.
+
+Sotto tutte e cinque c'è la **discarica**: un deposito dove i rifiuti restano per decenni. È l'ultima scelta.
+
+Il riciclo, che sembra la soluzione, è solo al quarto posto.
+
+**Non tutti i materiali si riciclano allo stesso modo**
+
+| Materiale | Come va il riciclo |
+|-----------|--------------------|
+| Vetro | all'infinito, senza perdere qualità |
+| Acciaio e alluminio | all'infinito; si separano con le calamite e con campi magnetici |
+| Carta | 5-7 volte, poi le fibre diventano troppo corte |
+| Organico | diventa compost, cioè terriccio fertile, oppure gas da bruciare |
+| Plastica | è la più difficile |
+
+La plastica è difficile per tre motivi. Ne esistono tanti tipi che non si possono mescolare. A ogni giro perde qualità. E basta un vasetto sporco per rovinare un intero carico.
+
+> ✋ **Tocca a te.** Un vasetto di yogurt vuoto ma sporco: lo sciacqui prima di buttarlo o no? Perché? Discutine con il compagno di banco e trovate una risposta comune.
+
+**Ogni Comune ha le sue regole**
+
+In Italia la raccolta è organizzata dai Comuni, e non è uguale dappertutto. In alcuni ci sono i cassonetti in strada. In altri c'è il **porta a porta**: il camion passa sotto casa in giorni diversi per ogni materiale. Dove c'è il porta a porta, di solito si differenzia di più e meglio.
+
+Per gli oggetti grandi o speciali c'è il centro di raccolta, chiamato anche isola ecologica.
+
+> 📍 **Qui da noi.** Procurati il calendario della raccolta del tuo Comune. In quali giorni passa ogni materiale? Dov'è il centro di raccolta più vicino a casa tua? E dove si portano le pile? Costruiremo in classe la mappa.
+
+**In tre righe**
+
+- I rifiuti non spariscono: cambiano posto e forma.
+- L'ordine giusto è rifiuta, riduci, riusa, ricicla, recupera.
+- Vetro e metalli si riciclano benissimo; la plastica è la più difficile.
+
+> 🔎 **Come lo sappiamo?** Il dato dell'aggancio viene da uno studio del 2017 (Geyer, Jambeck e Law): di tutti i rifiuti di plastica prodotti nel mondo fino al 2015, circa il 9% era stato riciclato, il 12% bruciato e il resto accumulato in discarica o nell'ambiente. È un dato su tutta la storia della plastica, non su quanto si ricicla oggi.
+
+---
 
 ### Ogni oggetto che butti non scompare. Diventa qualcos'altro.
 
@@ -432,6 +495,8 @@ Ogni giorno nella tua scuola vengono prodotti decine di chili di rifiuti. Carte,
 Il Comune paga per raccogliere e smaltire quei rifiuti. Il costo dipende (anche) da quanto bene viene fatta la differenziata: più alta è la qualità, minori sono i costi di smaltimento.
 
 Tu puoi misurare la situazione attuale — e proporre come migliorarla.
+
+> 📬 **A chi lo consegni davvero.** I collaboratori scolastici, che vedono i bidoni ogni giorno, e l'ufficio del Comune che si occupa di rifiuti. Consegna i dati di una settimana e una sola proposta. Chiedi che cosa è fattibile da subito.
 
 ---
 

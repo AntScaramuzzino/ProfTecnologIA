@@ -75,7 +75,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Cemento: forte in compressione ma fragile in trazione; acciaio: forte in trazione. Insieme resistono a entrambi i tipi di forza",
+          "testo": "Cemento: resiste alla compressione, non alla trazione; acciaio: resiste alla trazione",
           "corretto": true,
           "feedback": "Esatto! Il cemento regge enormi carichi verticali (compressione) ma si spezza se piegato o tirato (trazione). L'acciaio è eccellente in trazione. Le barre di acciaio vengono inserite nelle zone dove si prevede la trazione: il composito resiste a entrambi."
         },
@@ -141,7 +141,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Fibre di carbonio (filamenti sottilissimi) e resina epossidica (matrice che le incolla insieme)",
+          "testo": "Fibre di carbonio e resina epossidica che le tiene unite",
           "corretto": true,
           "feedback": "Esatto! La fibra di carbonio (CFRP) è un composito a due componenti: 1) fibre di carbonio quasi puro (95-99% C), filamenti sottilissimi da 5-10 micrometri; 2) resina termoindurente (tipicamente epossidica) che tiene insieme le fibre e distribuisce il carico tra esse."
         },
@@ -174,7 +174,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La pratica di descrivere un prodotto come 'verde' o 'sostenibile' per scopi di marketing senza che le caratteristiche ambientali siano realmente sostanziali",
+          "testo": "La pratica di presentare un prodotto come 'verde' senza che lo sia davvero",
           "corretto": true,
           "feedback": "Esatto! Il greenwashing è l'uso di claim ambientali ('bio', 'eco', 'sostenibile', 'compostabile') a fini di marketing quando le caratteristiche ambientali non sono verificabili, sostanziali o significativamente diverse dai prodotti convenzionali."
         },
@@ -207,7 +207,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La durata di vita del capo è la variabile più importante: usare a lungo qualsiasi prodotto (anche ad alta impronta ambientale per la produzione) ne distribuisce il costo ambientale nel tempo",
+          "testo": "Conta soprattutto quanto dura il capo: usarlo a lungo ripartisce nel tempo il costo ambientale",
           "corretto": true,
           "feedback": "Esatto! L'impronta ambientale non dipende solo dalla produzione ma dall'uso: 10 anni vs 2 anni divide per 5 il costo ambientale annuo. Comprare meno ma più durevole, usare a lungo, riparare invece di buttare — queste azioni riducono l'impatto più del tipo di fibra scelta."
         },
@@ -240,7 +240,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Il PLA si biodegrada solo in impianti di compostaggio industriale a 58°C con umidità controllata: in una compostiera domestica a 25°C o in discarica normale, impiega decenni o secoli come qualsiasi altra plastica",
+          "testo": "Il PLA si biodegrada solo in impianti industriali: in casa o in discarica dura quanto altre plastiche",
           "corretto": true,
           "feedback": "Esatto! Il PLA è biodegradabile SOLO in condizioni di compostaggio industriale specifiche (≥58°C, umidità controllata, microorganismi specifici). In compostiera domestica a 25°C: decine di anni. In mare: decenni o secoli. La maggior parte dei consumatori non ha accesso a impianti industriali, quindi il PLA si comporta come plastica convenzionale."
         },
@@ -273,7 +273,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "È impermeabile all'acqua liquida ma traspirante al vapore acqueo: i micropori sono troppo piccoli per le gocce d'acqua (liquida) ma abbastanza grandi per le molecole di vapore acqueo (gas)",
+          "testo": "Ferma l'acqua liquida ma lascia uscire il vapore: i pori sono troppo piccoli per le gocce, non per il vapore",
           "corretto": true,
           "feedback": "Esatto! Il PTFE espanso ha miliardi di micropori per cm². Le gocce d'acqua liquida (diametro ~100 micrometri) sono troppo grandi per passare. Le molecole di vapore acqueo (diametro ~0,0004 micrometri) passano facilmente. Risultato: l'acqua non entra, il sudore esce."
         },
@@ -306,7 +306,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La giacca tecnica sintetica è superiore perché è impermeabile con la membrana, pesa meno (280-450g vs 600-900g) e asciuga più velocemente",
+          "testo": "La giacca tecnica: è impermeabile, pesa meno e si asciuga più in fretta",
           "corretto": true,
           "feedback": "Esatto! Per trekking intenso in pioggia: la giacca tecnica ha membrana impermeabile (la lana è solo idrorepellente), pesa meno della metà, e asciuga rapidamente (sintetico). La lana è superiore per confort quotidiano in clima temperato e per la biodegradabilità, ma non per trekking in pioggia intensa."
         },
@@ -339,7 +339,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Una resina termoindurente forma legami chimici irreversibili durante l'indurimento: non si può sciogliere di nuovo con il calore, impedendo la separazione delle fibre dalla matrice per rifusione",
+          "testo": "Indurendo forma legami irreversibili: il calore non la scioglie più, e le fibre non si separano",
           "corretto": true,
           "feedback": "Esatto! Le plastiche si dividono in termoplastiche (si fondono di nuovo se riscaldate) e termoindurenti (reazione chimica irreversibile durante la polimerizzazione). La resina epossidica termoindurente non si può rifondere: le fibre di carbonio possono essere recuperate solo per pirolisi (bruciare la resina), con perdita di proprietà meccaniche."
         },
@@ -405,7 +405,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Confondere l'origine (bio-based = da piante) con il destino (biodegradabile = si decompone): un bio-PET da mais non si biodegrada ma si ricicla come PET normale; un PLA si biodegrada solo in condizioni industriali, non in natura",
+          "testo": "Confondere l'origine (da piante) con il destino (si decompone): sono due cose indipendenti",
           "corretto": true,
           "feedback": "Esatto! L'errore è confondere due attributi distinti: ORIGINE (da dove viene la materia prima: petrolio vs piante) e DESTINO (cosa succede a fine vita: si biodegrada, si ricicla, va in discarica). Bio-based non implica biodegradabile; biodegradabile non implica bio-based."
         },
@@ -438,7 +438,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Occorre includere tutte le fasi nel calcolo: produzione (petrolio, energia), uso (funzionalità elevata per anni), e fine vita (non riciclabile) — la scelta dipende da quanti anni dura e da quale alternativa si confronta",
+          "testo": "Bisogna contare tutte le fasi: produzione, anni di uso e fine vita, e con quale alternativa si confronta",
           "corretto": true,
           "feedback": "Esatto! L'analisi del ciclo di vita (LCA) include tutte le fasi: produzione (impatto delle materie prime e dei processi), fase d'uso (durata, prestazioni, manutenzione), fine vita (riciclabilità, smaltimento). Una giacca tecnica che dura 15 anni e protegge efficacemente dal freddo e dalla pioggia ha un impatto diverso da una che dura 3 anni e viene sostituita frequentemente."
         },
@@ -471,7 +471,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "L'etichetta 'fibra naturale' descrive l'origine della fibra grezza ma non le caratteristiche del prodotto finito, che spesso contiene additivi chimici o fibre sintetiche che ne cambiano radicalmente le proprietà di fine vita",
+          "testo": "'Fibra naturale' descrive la fibra grezza, non il capo finito, che può contenere additivi e fibre sintetiche",
           "corretto": true,
           "feedback": "Esatto! 'Fibra naturale' = origine della fibra grezza. Ma il prodotto finito è quasi mai 'solo fibra naturale': contiene coloranti sintetici, finishing chimici (ammorbidenti, anti-restringimento), miscele con fibre sintetiche. Questi additivi cambiano le proprietà di biodegradabilità del prodotto finito."
         },
@@ -504,7 +504,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Le politiche devono distinguere tra plastiche ad alto impatto e difficile riciclo (PVC, PS, multistrato) e plastiche con filiere di riciclo funzionanti (PET, HDPE), puntando a eliminare le prime e migliorare le seconde",
+          "testo": "Distinguere le plastiche difficili da riciclare, da ridurre, da quelle con filiere di riciclo funzionanti",
           "corretto": true,
           "feedback": "Esatto! Se 'la plastica' fossero un materiale omogeneo, si potrebbe regolamentare uniformemente. Ma PET riciclato al 50%, HDPE all'80%, PVC quasi mai, PS quasi mai: politiche uniformi su 'tutta la plastica' sono inefficienti. Occorre differenziare per tipo: incentivare PET e HDPE, eliminare PVC e PS negli usi monouso."
         },
@@ -537,7 +537,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "La lana ha struttura igroscopica: assorbe il vapore acqueo nello strato corticale della fibra (esotermicamente) senza far sembrare bagnato l'esterno; il cotone si satura d'acqua liquida diventando un conduttore termico freddo",
+          "testo": "La lana assorbe il vapore dentro la fibra senza bagnarsi fuori; il cotone si inzuppa e disperde calore",
           "corretto": true,
           "feedback": "Esatto! La lana assorbe fino al 35% del suo peso come vapore (non acqua liquida) nello strato corticale: l'interno della fibra è 'umido' ma l'esterno rimane asciutto al tatto. Assorbendo umidità rilascia calore (reazione esotermica). Il cotone si satura di acqua liquida: l'acqua è un buon conduttore termico e porta via il calore corporeo."
         },
@@ -570,7 +570,7 @@
       "opzioni": [
         {
           "id": "a",
-          "testo": "Ha creato un'industria tessile basata su materie prime fossili non rinnovabili che oggi produce 55 milioni di tonnellate di poliestere l'anno, con microplastiche come effetto collaterale non previsto al momento della scoperta",
+          "testo": "Ha creato un'industria tessile basata sul petrolio, con le microplastiche come effetto non previsto",
           "corretto": true,
           "feedback": "Esatto! Nel 1935 nessuno prevedeva: 1) che la produzione sarebbe arrivata a 55 Mt/anno di poliestere; 2) che ogni lavaggio avrebbe rilasciato centinaia di migliaia di microfibre nei mari; 3) che quelle fibre avrebbero perseverato per secoli nell'ambiente. Le conseguenze sistemiche di lungo periodo non erano prevedibili nel 1935."
         },

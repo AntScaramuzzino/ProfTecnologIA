@@ -22,6 +22,76 @@ La risposta è nella struttura dell'economia globale. Capirla non è solo cultur
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Il telefono che usi è stato progettato in un Paese, montato in un altro, con materiali estratti in altri dieci. La chiamiamo globalizzazione. Ha reso il mondo più ricco e più fragile insieme.
+
+**Un mondo collegato**
+
+La **globalizzazione** è il processo che ha legato fra loro le economie, le culture e le persone di tutto il pianeta. Dura da secoli, ma ha accelerato moltissimo negli ultimi quarant'anni, con le navi portacontainer e con internet.
+
+Ha avuto effetti buoni e cattivi, ed entrambi sono veri.
+
+- Dal 1990 la parte dell'umanità che vive in povertà estrema si è ridotta moltissimo, soprattutto in Asia.
+- Molti oggetti costano molto meno di una volta.
+- Ma in molti Paesi ricchi le distanze fra ricchi e poveri sono aumentate, e milioni di posti in fabbrica sono spariti.
+- E più merci in viaggio vogliono dire più inquinamento.
+
+I vantaggi e i costi non sono toccati alle stesse persone.
+
+**Perché si commercia**
+
+Nessun Paese produce tutto al meglio. Ognuno vende ciò che sa fare bene e compra il resto: è il commercio internazionale. L'Italia vende soprattutto macchinari, farmaci, moda e cibo di qualità. Compra soprattutto energia, materie prime ed elettronica.
+
+Le regole si decidono con accordi fra Stati. Uno strumento molto usato è il **dazio**: una tassa sulle merci che arrivano dall'estero. Protegge chi produce in casa, ma fa salire i prezzi per chi compra.
+
+**Fabbriche che si spostano**
+
+La **delocalizzazione** è la scelta di spostare la produzione in un Paese dove costa meno. Il motivo principale è il costo del lavoro: in alcuni Paesi un'ora di lavoro in fabbrica costa decine di volte meno che in Italia.
+
+Chi ci guadagna? L'azienda, e chi compra a prezzi più bassi. In parte anche i lavoratori del nuovo Paese, che trovano un impiego. Chi ci perde? I lavoratori del Paese di partenza, e spesso l'ambiente, quando le regole sono meno severe.
+
+Negli ultimi anni alcune aziende hanno fatto il percorso inverso e hanno riportato la produzione vicino a casa. Catene troppo lunghe si spezzano facilmente: basta una pandemia, una guerra, una nave incagliata.
+
+> ✋ **Tocca a te.** Guarda le etichette di tre oggetti che hai con te: zaino, astuccio, felpa. Dove sono stati fatti? Raccogliete i dati di tutta la classe alla lavagna. Qual è il Paese che compare di più?
+
+**Dalla linea al cerchio**
+
+L'economia che conosciamo è una linea: estrai, produci, usa, butta. Funziona finché le risorse sembrano infinite e c'è posto per i rifiuti. Oggi né l'una né l'altra cosa è più vera.
+
+L'**economia circolare** trasforma la linea in un cerchio: gli oggetti si progettano fin dall'inizio per durare, essere riparati e infine tornare materia prima.
+
+Le azioni hanno un ordine preciso, dalla più utile alla meno utile.
+
+1. Ridurre: usare meno materia fin dall'inizio.
+2. Riusare: usare di nuovo lo stesso oggetto.
+3. Riciclare: trasformare il rifiuto in materiale nuovo.
+4. Recuperare: ricavare almeno energia da ciò che resta.
+
+L'errore più comune è partire dal fondo e pensare che riciclare basti. Il rifiuto migliore è quello che non si produce.
+
+C'è anche un'idea nuova: vendere l'uso al posto dell'oggetto. Se un'azienda resta proprietaria di ciò che ti dà, ha tutto l'interesse a farlo durare.
+
+**Il lavoro che cambia**
+
+Si può lavorare in molti modi. Il lavoratore dipendente è assunto con un contratto, che fissa paga, orario e tutele. Il lavoratore autonomo lavora in proprio per più clienti. Poi ci sono i lavori "a chiamata" delle piattaforme digitali, come le consegne a domicilio: chi li fa risulta autonomo ma dipende da un'app, e le tutele sono ancora discusse.
+
+Orario limitato, ferie pagate, sicurezza: i **diritti dei lavoratori** non sono caduti dal cielo. Sono stati conquistati in decenni, anche grazie ai **sindacati**, le organizzazioni che rappresentano i lavoratori.
+
+Intanto il passaggio a un'economia più pulita cambia i mestieri. Crescono i tecnici del fotovoltaico, dell'eolico, del riciclo, del risparmio di energia negli edifici. Calano i mestieri legati a carbone e petrolio. I nuovi posti però non nascono per forza dove spariscono i vecchi, né per le stesse persone.
+
+> ✋ **Tocca a te.** Prendi un oggetto rotto o consumato che hai a casa. Scrivi per ciascuna delle quattro azioni che cosa potresti farne: ridurre, riusare, riciclare, recuperare. Quale scegli, e perché?
+
+> 📍 **Qui da noi.** Nel tuo paese c'è chi ripara? Un calzolaio, una sarta, un tecnico di telefoni, un mercatino dell'usato. Cercane tre e segnali su una mappa. Chiedi a un adulto: quando lui aveva la tua età, ce n'erano di più o di meno?
+
+**In tre righe**
+
+- La globalizzazione ha collegato le economie del mondo, con vantaggi e costi divisi in modo disuguale.
+- Le aziende spostano la produzione dove costa meno, ma le catene lunghe sono fragili.
+- L'economia circolare mette in ordine le azioni: ridurre, riusare, riciclare, recuperare.
+
+---
+
 ### Globalizzazione: cos'è, cosa ha cambiato, cosa ha promesso e cosa non ha mantenuto
 
 La **globalizzazione** è il processo attraverso cui le economie, le culture e le popolazioni del mondo sono diventate sempre più interdipendenti. Non è un evento con una data di inizio: è un processo secolare che ha accelerato drasticamente dalla seconda metà del Novecento grazie a due fattori tecnologici — il container (che ha ridotto il costo del trasporto marittimo del 90% rispetto al 1960) e internet (che ha reso possibile coordinarsi istantaneamente con fornitori e clienti dall'altra parte del mondo).
@@ -310,6 +380,8 @@ Scrivi una posizione argomentata (10-12 righe) che risponda alla domanda: la del
 ### Lo scenario
 
 La tua famiglia spende in media 500 euro al mese in spesa alimentare e prodotti di consumo. Quanto di questa spesa finisce nelle mani di chi ha prodotto materialmente quei beni? Quanto ai brand e ai distributori? Puoi fare scelte diverse — e sapere cosa cambierebbe?
+
+> 📬 **A chi lo consegni davvero.** La tua famiglia. Proponi tre sostituzioni nella spesa e provatele per un mese. Confronta uno scontrino di prima e uno di dopo, e decidete insieme che cosa tenere.
 
 ---
 

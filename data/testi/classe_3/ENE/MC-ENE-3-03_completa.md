@@ -23,9 +23,73 @@ Scopri come stiamo imparando a raccoglierla — e perché la transizione energet
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+In un'ora e mezza il Sole manda sulla Terra più energia di quanta l'umanità ne consumi in un anno. L'energia non manca. Il difficile è raccoglierla, e averla quando serve.
+
+**Che cosa vuol dire "rinnovabile"**
+
+Una **fonte rinnovabile** si rigenera almeno alla stessa velocità con cui la usiamo: il sole, il vento, l'acqua che scorre, il calore della Terra. In Italia producono già circa il 40% dell'elettricità.
+
+E il loro costo è crollato: in poco più di dieci anni l'elettricità dal sole è diventata circa dieci volte meno cara.
+
+**Sole**
+
+Il **fotovoltaico** trasforma la luce direttamente in corrente. Le celle sono fatte di silicio: quando la luce le colpisce, mette in movimento gli elettroni. Tante celle formano un pannello; un apparecchio chiamato inverter rende la corrente adatta alla casa.
+
+Attenzione a un numero: la potenza scritta sul pannello è quella massima, in pieno sole. Di notte, d'inverno o con le nuvole il pannello produce molto meno.
+
+Diverso è il solare termico: non produce corrente, scalda l'acqua.
+
+**Vento**
+
+Una turbina **eolica** ha pale simili ad ali: il vento le fa girare, e la rotazione muove un generatore. Conta moltissimo dove la metti. Se la velocità del vento raddoppia, l'energia disponibile diventa otto volte più grande. Per questo si costruiscono parchi anche in mare, dove il vento è più forte e costante.
+
+**Acqua**
+
+L'**idroelettrico** sfrutta l'acqua che scende da un bacino in quota: passa in grandi tubi, fa girare una turbina, produce corrente. È la rinnovabile più antica, e ha un pregio raro: si può accendere e spegnere quando si vuole, aprendo o chiudendo il passaggio dell'acqua.
+
+> ✋ **Tocca a te.** Sole, vento, acqua. Per ciascuna fonte scrivi: quando produce di più? quando non produce affatto? possiamo deciderlo noi? Quale delle tre è più "affidabile", e perché?
+
+**Calore della Terra e scarti**
+
+La **geotermia** usa il calore del sottosuolo. La prima centrale al mondo è nata in Italia, in Toscana, più di un secolo fa.
+
+Le **biomasse** sono materiali di origine vegetale o animale: legna, scarti agricoli, rifiuti organici. Bruciando liberano CO₂, ma è quella che le piante avevano assorbito crescendo. Dagli scarti umidi si ricava anche il biogas, che può sostituire il metano. Funziona bene se si usano scarti locali, meno bene se si coltivano campi apposta.
+
+Dal mare si potrebbe ricavare energia da maree e onde, ma siamo ancora agli esperimenti.
+
+**Il vero problema: non a comando**
+
+Sole e vento sono **intermittenti**: producono quando ci sono, non quando servono. A mezzogiorno d'estate c'è troppa corrente. Alle sette di una sera d'inverno senza vento, troppo poca.
+
+Servono modi per conservarla, cioè per l'**accumulo**.
+
+- Le batterie: come quelle del telefono, ma grandi come container.
+- Il pompaggio: quando la corrente avanza, la si usa per pompare acqua in un bacino in alto. Quando serve, la si fa riscendere.
+- L'idrogeno: con la corrente in eccesso si separa l'acqua nei suoi componenti. L'idrogeno ottenuto si conserva e si usa più tardi.
+
+**La rete che ragiona**
+
+Una volta la corrente andava in una sola direzione, dalle grandi centrali alle case. Oggi anche le case producono. Serve una **rete intelligente**: sensori e contatori misurano in ogni momento quanta corrente si produce e quanta se ne consuma, e la rete sposta i consumi nelle ore in cui c'è abbondanza. La lavatrice parte quando c'è il sole.
+
+Passare dai fossili alle rinnovabili è la **transizione energetica**. Mettere pannelli è solo una parte: bisogna ripensare produzione, rete, accumulo e consumi tutti insieme.
+
+> ✋ **Tocca a te.** Un impianto da 3 chilowatt sul tetto produce in un anno circa 4.000 chilowattora. Una famiglia ne consuma circa 2.700. Sembra che basti, e avanzi. Allora perché quella casa compra ancora corrente dalla rete? Pensa a quando produce e a quando consuma.
+
+> 📍 **Qui da noi.** Intorno al tuo paese ci sono pale eoliche, campi di pannelli, una diga, tetti fotovoltaici? Segnali su una mappa. Poi chiedi a tre adulti che cosa ne pensano: sono favorevoli o contrari, e perché? Portiamo in classe le ragioni di tutti.
+
+**In tre righe**
+
+- Sole, vento, acqua, calore della Terra e biomasse sono fonti rinnovabili, e costano sempre meno.
+- Sole e vento sono intermittenti: producono quando ci sono, non quando servono.
+- La transizione energetica richiede accumulo e una rete intelligente, non solo più pannelli.
+
+---
+
 ### Cosa rende rinnovabile una fonte di energia
 
-Un'energia si definisce **rinnovabile** quando si rigenerava a una velocità paragonabile o superiore a quella con cui viene consumata — praticamente, alla scala temporale umana. Il Sole scalda la Terra ogni giorno da 4,6 miliardi di anni. Il vento soffia finché esiste l'atmosfera. I fiumi scorrono finché piove. Queste fonti non si esauriscono nell'uso.
+Un'energia si definisce **rinnovabile** quando si rigenera a una velocità paragonabile o superiore a quella con cui viene consumata — praticamente, alla scala temporale umana. Il Sole scalda la Terra ogni giorno da 4,6 miliardi di anni. Il vento soffia finché esiste l'atmosfera. I fiumi scorrono finché piove. Queste fonti non si esauriscono nell'uso.
 
 Le principali fonti rinnovabili sono: **solare fotovoltaico**, **solare termico**, **energia eolica**, **energia idroelettrica**, **energia geotermica**, **biomasse e biogas**, ed alcune fonti marine ancora in fase di sviluppo (maree, onde, gradiente termico). Esistono differenze importanti di maturità tecnologica, costi, disponibilità geografica e caratteristiche di produzione tra queste fonti.
 
@@ -380,6 +444,8 @@ Scrivi una relazione tecnica di 12-15 righe rivolta al preside e al consiglio di
 ### Lo scenario
 
 Il tuo istituto scolastico ha ricevuto un finanziamento del Piano Nazionale di Ripresa e Resilienza (PNRR) per la riqualificazione energetica degli edifici scolastici. La dirigente scolastica ti chiede di presentare al consiglio di istituto un'analisi del potenziale fotovoltaico della scuola, con e senza sistema di accumulo.
+
+> 📬 **A chi lo consegni davvero.** Il Consiglio di istituto, attraverso il dirigente. Consegna l'analisi in una pagina. Chiedi se la scuola ha già un progetto per il tetto, e a chi spetta la decisione.
 
 ---
 

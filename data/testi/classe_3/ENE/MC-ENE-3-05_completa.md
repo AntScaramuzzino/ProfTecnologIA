@@ -11,13 +11,13 @@
 > 🎧 *Ascolta prima di leggere. Durata: 58 sec.*
 
 **Domanda di avvio:**
-Immagina una moto degli anni Settanta. Un motore a 4 cilindri, 750 cc di cilindrata, rumore sordo e odore di benzina bruciata. Tuoi nonni probabilmente ne avevano una.
+Immagina una moto degli anni Settanta. Un motore a 4 cilindri, 750 cc di cilindrata, rumore sordo e odore di benzina bruciata. Forse ne hai vista una in una vecchia foto di famiglia.
 
-Ogni volta che premono il pedale del gas, nella camera di combustione di quel motore esplode una miscela di benzina e aria — centinaia di volte al secondo. Quell'esplosione spinge un pistone, il pistone fa girare un albero, l'albero fa girare la ruota.
+Ogni volta che il pilota gira la manopola del gas, nella camera di combustione di quel motore esplode una miscela di benzina e aria — centinaia di volte al secondo. Quell'esplosione spinge un pistone, il pistone fa girare un albero, l'albero fa girare la ruota.
 
 Sembra semplice. Non lo è.
 
-Di quella energia chimica contenuta nella benzina, solo il 25–30% arriva alla ruota come movimento utile. Gran parte dell’energia restante viene dispersa come calore, sia con i gas di scarico sia attraverso il sistema di raffreddamento; altre perdite dipendono dal motore e dalla trasmissione.
+Di tutta l'energia contenuta nella benzina, solo il 25–30% arriva alla ruota come movimento. Il resto se ne va in calore: dal tubo di scarico e dal radiatore.
 
 Stai sprecando quasi tre quarti del carburante che paghi.
 
@@ -28,6 +28,71 @@ Questo non è solo un cambiamento tecnologico. È una rivoluzione fisica.
 ---
 
 ## 📖 ESPLORA
+
+### 🎯 In breve
+
+Un motore trasforma energia in movimento. Quello a benzina ne spreca più della metà in calore. Quello elettrico quasi niente. La ragione non sta nella bravura di chi li costruisce: sta in una legge della fisica.
+
+**Il calore è energia difficile**
+
+Trasformare movimento in calore è facilissimo: strofina le mani e si scaldano. Il contrario no. Non si può trasformare tutto il calore in movimento: una parte se ne va sempre nell'ambiente. È una legge della natura, il secondo principio della termodinamica.
+
+Da qui una conseguenza che vale per tutti i motori che bruciano qualcosa: il **rendimento**, cioè la parte di energia che diventa davvero movimento, non può mai arrivare al 100%. E nemmeno andarci vicino.
+
+Più di duecento anni fa un ingegnere francese, Sadi Carnot, calcolò il limite massimo. Dipende solo da due temperature: quanto è calda la parte calda del motore e quanto è fredda quella dove si scarica il calore. Per un motore a benzina il limite teorico è poco sopra la metà. I motori veri restano molto più sotto.
+
+> ✋ **Tocca a te.** Strofina forte le mani per dieci secondi. Hai trasformato movimento in calore. Ora prova a immaginare il contrario: come faresti a usare il calore delle tue mani per far muovere qualcosa? Perché è così più difficile?
+
+**Il vapore**
+
+La prima grande macchina a sfruttare il calore fu la **macchina a vapore**, resa efficiente da James Watt alla fine del Settecento. L'acqua bolle in una caldaia, il vapore spinge un pistone, il pistone fa girare una ruota. Con lei le fabbriche non ebbero più bisogno di stare accanto a un fiume, e nacquero i treni. Fu l'inizio della Rivoluzione industriale, con il suo progresso e il suo inquinamento.
+
+**Il motore a scoppio**
+
+La macchina a vapore era enorme. Per un'automobile serviva qualcosa di compatto: un motore in cui il combustibile brucia direttamente dentro il cilindro. È il **motore a scoppio**, e lavora in quattro tempi.
+
+1. **Aspirazione**: il pistone scende e nel cilindro entra una miscela di aria e benzina.
+2. **Compressione**: il pistone risale e schiaccia la miscela.
+3. **Scoppio**: una scintilla accende la miscela, che esplode e spinge giù il pistone. È l'unico tempo che produce movimento.
+4. **Scarico**: il pistone risale e spinge fuori i gas bruciati.
+
+Poi si ricomincia, decine di volte al secondo. Più cilindri che scoppiano a turno rendono il movimento continuo.
+
+Il motore diesel funziona in modo simile, ma senza scintilla: comprime l'aria così tanto che il gasolio si accende da solo. Rende un po' di più.
+
+In entrambi, di tutta l'energia del carburante, alle ruote arriva più o meno un terzo. Il resto esce come calore dal radiatore e dal tubo di scarico.
+
+**Il motore elettrico**
+
+Il **motore elettrico** non brucia niente. Sfrutta un fatto diverso: un filo percorso da corrente, vicino a una calamita, riceve una spinta.
+
+Dentro ci sono due parti. Una ferma, fatta di bobine di filo di rame. Una che gira, con delle calamite. Un circuito elettronico accende le bobine una dopo l'altra, creando un campo magnetico che ruota. Le calamite lo inseguono, e l'albero gira.
+
+Non essendoci combustione, il limite di Carnot non vale. Più di nove decimi dell'energia diventano movimento. In più il motore elettrico è silenzioso, ha pochissimi pezzi in movimento e, quando freni, può funzionare al contrario e ricaricare la batteria.
+
+**Allora perché non sono tutte elettriche?**
+
+Per la batteria. Un pieno di benzina si fa in due minuti e contiene moltissima energia in poco peso. Una batteria pesa molto, si ricarica più lentamente e costa.
+
+Per questo esistono vie di mezzo.
+
+- L'**ibrida** ha tutti e due i motori: quello elettrico aiuta quello a benzina e recupera energia in frenata.
+- L'ibrida plug-in ha una batteria più grande, che si ricarica alla presa, e fa qualche decina di chilometri solo in elettrico.
+- L'elettrica pura ha solo il motore elettrico.
+
+E un'auto elettrica è pulita quanto la corrente con cui la ricarichi.
+
+> ✋ **Tocca a te.** Un'auto a benzina trasforma in movimento circa 30 parti su 100 dell'energia del carburante. Un'auto elettrica circa 90 su 100 dell'energia della batteria. Se tutte e due ricevono 100 unità di energia, quante ne spreca ciascuna? Quante volte di più spreca quella a benzina?
+
+> 📍 **Qui da noi.** Conta le auto parcheggiate in una via vicino a casa: quante sono elettriche o ibride? Di solito si riconoscono da una scritta sul retro o dalla targhetta. C'è una colonnina di ricarica nel tuo paese? Dove si trova la più vicina?
+
+**In tre righe**
+
+- Un motore che brucia carburante spreca per forza gran parte dell'energia in calore.
+- Il motore a scoppio lavora in quattro tempi: aspirazione, compressione, scoppio, scarico.
+- Il motore elettrico non brucia nulla e rende quasi tutto: il suo limite è la batteria.
+
+---
 
 ### Il calore è energia — ma attenzione a come la usi
 
@@ -359,6 +424,8 @@ Scrivi un paragrafo di 8–10 righe con le tue conclusioni motivate.
 La tua famiglia sta valutando l'acquisto di una nuova auto. Devono scegliere tra tre opzioni: auto a benzina, ibrida plug-in o full electric. Hanno un budget simile per tutte e tre. Percorrono mediamente 15.000 km l'anno, di cui il 70% in città e il 30% in autostrada. Abitano in un appartamento senza posto auto privato (ricarica solo ai punti pubblici).
 
 Ti chiedono di fare un'analisi tecnica per aiutarli a scegliere.
+
+> 📬 **A chi lo consegni davvero.** Un adulto che prima o poi dovrà cambiare auto. Sostituisci i dati dello scenario con i suoi: chilometri, città o autostrada, possibilità di ricarica. Chiedi se l'analisi gli fa cambiare idea.
 
 ---
 
