@@ -12,7 +12,7 @@
 > *(Script completo: MC-INF-1-01_hook-script.md)*
 
 **Domanda di avvio:**
-Quanti materiali diversi pensi che ci siano in una fotografia digitale?
+Quanti colori diversi pensi che ci siano in una fotografia digitale?
 
 Non colori — numeri. Ogni foto sul tuo telefono è una sequenza di numeri. Solo numeri.
 Scopri come funziona — e perché due cifre bastano per tutto.

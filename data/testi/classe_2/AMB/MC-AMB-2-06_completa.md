@@ -14,7 +14,7 @@
 
 Immagina di stare andando in bicicletta verso scuola. Quando arrivi all'incrocio principale, il semaforo diventa verde prima del solito — non per caso, ma perché un sensore sotto l'asfalto ha rilevato che sei in bici, e l'algoritmo della città ha deciso di darti priorità rispetto alle auto.
 
-Due isolati più avanti, un cassonetto dei rifiuti ha un sensore di riempimento. Questa mattina ha mandato un messaggio al centro di controllo: è pieno all'85%, conviene passarlo a svuotare nel giro di mille pomeriggio. Nessuno lo ha controllato fisicamente — lo sa il sistema.
+Due isolati più avanti, un cassonetto dei rifiuti ha un sensore di riempimento. Questa mattina ha mandato un messaggio al centro di controllo: è pieno all'85%, conviene passarlo a svuotare entro il pomeriggio. Nessuno lo ha controllato fisicamente — lo sa il sistema.
 
 A scuola, le finestre dell'aula si aprono automaticamente perché un sensore di CO₂ ha rilevato che la concentrazione nell'aria ha superato i 1.000 ppm — il livello oltre il quale la capacità di concentrazione degli studenti comincia a calare.
 

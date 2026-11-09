@@ -12,7 +12,7 @@
 > *(Script completo: MC-DIS-3-01_hook-script.md)*
 
 **Domanda di avvio:**
-Il film Pixar che hai visto di recente — ogni fotogramma ha richiesto fino a 100 ore di calcolo su una server farm.
+Pensa a un film di animazione che hai visto al cinema: ogni fotogramma può richiedere fino a 100 ore di calcolo su una server farm.
 "Monsters University" (2013) ha richiesto in totale 100 milioni di ore CPU.
 
 Ma prima che un singolo calcolo partisse, ogni oggetto era definito da coordinate nello spazio.

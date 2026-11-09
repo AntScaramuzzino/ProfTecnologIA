@@ -21,6 +21,61 @@ Ne contengono tra trenta e quaranta. Scopri perché — e cosa succede quando le
 
 ## 📖 ESPLORA
 
+### 🎯 In breve
+
+Guarda la sedia su cui sei seduto. È di legno, di plastica o di metallo? Qualcuno ha scelto quella materia per una ragione precisa. Quella materia si chiama **materiale**.
+
+Ogni materiale nasce da una **materia prima**: qualcosa che si estrae o si coltiva. Il legno viene dagli alberi. I metalli vengono da rocce scavate nelle miniere. Quasi tutte le plastiche vengono dal petrolio. Prima di arrivare nel tuo zaino, un oggetto ha spesso viaggiato per migliaia di chilometri.
+
+> ✋ **Tocca a te.** Appoggia una mano sul banco e l'altra su una parte di metallo, per esempio la gamba della sedia. Quale sembra più fredda? Scrivi la tua risposta: tra poco scoprirai che c'è un trucco.
+
+**Le sei famiglie**
+
+Quasi tutti gli oggetti che usi sono fatti con materiali di sei **famiglie**:
+
+- il **legno**: leggero, facile da lavorare, ma teme l'acqua e brucia;
+- i **metalli**: resistenti e lucidi, ma possono arrugginire;
+- le **plastiche**: leggere ed economiche, ma restano nell'ambiente per secoli;
+- le **ceramiche e il vetro**: durissimi, ma si rompono di colpo;
+- i **tessuti**: flessibili, fatti di fibre naturali (cotone, lana) o sintetiche (poliestere);
+- i **compositi**: due materiali uniti per avere il meglio di entrambi, come il cemento armato.
+
+**Le proprietà: la carta d'identità di un materiale**
+
+Perché le finestre sono di vetro e non di legno? Perché ogni materiale ha le sue **proprietà**, cioè caratteristiche che lo rendono adatto a un lavoro e sbagliato per un altro. Ecco quelle che ti servono subito.
+
+La **durezza** dice quanto è difficile graffiarlo. Se strofini due oggetti, quello che resta segnato è il meno duro.
+
+La **densità** dice quanto pesa un pezzo di una certa grandezza. Un cubetto di acciaio pesa circa dieci volte un cubetto di legno di quercia grande uguale.
+
+Un **conduttore** lascia passare bene il calore e la corrente elettrica: i metalli lo sono. Un **isolante** li ferma: plastica, legno e gomma lo sono. Per questo i fili elettrici hanno il rame dentro e la plastica fuori.
+
+Ecco il trucco di prima. Il banco e la gamba della sedia hanno la stessa temperatura. Il metallo però porta via il calore dalla tua mano più in fretta, e tu lo senti freddo.
+
+Un materiale **fragile** si rompe senza piegarsi, come il vetro. Attenzione: duro non vuol dire resistente. Il diamante è il materiale più duro che esista, ma un colpo di martello lo spezza.
+
+> ✋ **Tocca a te.** Prendi la tua penna. Di quanti materiali diversi è fatta? Per ognuno scrivi una proprietà che spiega perché è stato scelto. Esempio: la punta è di metallo perché è dura e non si consuma.
+
+**E quando l'oggetto si butta?**
+
+Un materiale non sparisce quando finisce nel cestino. Contano due proprietà.
+
+È **riciclabile** se può tornare a essere materia prima. Acciaio, alluminio e vetro si riciclano moltissime volte senza rovinarsi. La carta solo 6 o 7 volte. La plastica è la più difficile, perché ne esistono tipi diversi che non si possono mescolare.
+
+È **biodegradabile** se i microrganismi riescono a decomporlo. Una buccia di banana sparisce in pochi giorni. Una bottiglia di plastica resta lì per centinaia di anni.
+
+Naturale non vuol dire sempre "buono", e artificiale non vuol dire sempre "cattivo". Il cotone è naturale, ma per coltivarlo serve tantissima acqua. Il vetro è artificiale, ma si ricicla all'infinito. La domanda giusta è: che cosa succede a questo materiale dall'inizio alla fine della sua vita?
+
+> 📍 **Qui da noi.** Controlla le regole della raccolta differenziata del tuo Comune. C'è un oggetto che hai in casa e che non sai dove buttare? Portalo in classe, o porta una sua foto: lo classificheremo insieme.
+
+**In tre righe**
+
+- Ogni oggetto è fatto di materiali, scelti per le loro proprietà.
+- Le famiglie sono sei: legno, metalli, plastiche, ceramiche e vetro, tessuti, compositi.
+- Un buon materiale funziona bene durante l'uso e crea pochi problemi quando l'oggetto si butta.
+
+---
+
 ### Tutto ha un materiale. Ogni materiale ha una storia.
 
 Guarda la sedia su cui sei seduto adesso. È di legno, di plastica, di metallo? Poi guarda il pavimento, la finestra, il tuo zaino. Ogni oggetto attorno a te è fatto di qualcosa — di una materia specifica, scelta da qualcuno per una ragione precisa.
@@ -55,7 +110,7 @@ Il legno è uno dei materiali più antichi usati dall'essere umano. Viene dal tr
 
 Esistono due grandi categorie: il **legno duro** (quercia, faggio, noce, ciliegio — da alberi a foglie caduche, crescita lenta) e il **legno dolce** (pino, abete, larice — da conifere, crescita più rapida). I legni duri sono più resistenti e costosi, quelli dolci più facili da lavorare e più economici.
 
-Le proprietà che rendono il legno utile sono molte. È **leggero** rispetto alla sua resistenza: il legno di quercia è più resistente dell'alluminio a parità di peso. È un ottimo **isolante termico** — una parete di legno isola il calore meglio del cemento della stessa spessore. È **lavorabile** facilmente con strumenti semplici: si sega, si pialla, si incolla, si vernicia. È **rinnovabile**: se le foreste vengono gestite bene, il legno non finisce mai.
+Le proprietà che rendono il legno utile sono molte. È **leggero** rispetto alla sua resistenza: il legno di quercia è più resistente dell'alluminio a parità di peso. È un ottimo **isolante termico** — una parete di legno isola il calore meglio del cemento dello stesso spessore. È **lavorabile** facilmente con strumenti semplici: si sega, si pialla, si incolla, si vernicia. È **rinnovabile**: se le foreste vengono gestite bene, il legno non finisce mai.
 
 I suoi limiti: **assorbe l'umidità** e si gonfia, si deforma, può marcire. **Brucia**. Viene attaccato da insetti (tarli, termiti). Per questo il legno usato all'esterno o in zone umide viene trattato con vernici, oli o impregnanti.
 

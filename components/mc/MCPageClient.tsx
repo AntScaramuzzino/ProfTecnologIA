@@ -201,7 +201,9 @@ function findEsploraImage(images: EsploraImage[], title: string): EsploraImage |
 
 function splitEsploraIntoAccordion(body: string): { id: string; title: string; body: string }[] {
   // Divide su @@SUBHEAD: (già normalizzato da cleanMarkdownForReading)
-  const parts = body.split(/\n@@SUBHEAD:([^\n]+)\n/);
+  // Se il testo si apre con il nucleo "In breve", il suo titolo va riconosciuto come sottosezione
+  const source = /^@@SUBHEAD:\W*in breve/i.test(body) ? `\n${body}` : body;
+  const parts = source.split(/\n@@SUBHEAD:([^\n]+)\n/);
   if (parts.length <= 1) return [{ id: "esplora-0", title: "Leggi", body }];
 
   const result: { id: string; title: string; body: string }[] = [];
@@ -733,6 +735,16 @@ function ZonePanel({
           </p>
         )}
         <ReadableBodyInTab body={body} />
+        {/* Prima la sfida, poi il testo: il laboratorio segue subito l'aggancio */}
+        {getLaboratorio(mc.id) && (
+          <section aria-label="Prima prova, poi leggi" className="rounded-xl border-2 border-emerald-300 bg-emerald-50/60 p-4">
+            <p className="text-xs font-black uppercase tracking-widest text-emerald-800">🎮 Prima prova, poi leggi</p>
+            <p className="mt-1 mb-4 text-sm leading-6 text-emerald-950">
+              Entra nel laboratorio prima di studiare. Se ti blocchi, la risposta è nella scheda ESPLORA: vai a cercarla e torna qui.
+            </p>
+            <LabInterattivoEmbed mcId={mc.id} onResult={onLabResult} />
+          </section>
+        )}
         {flippedVideos.length > 0 && <FlippedVideos videos={flippedVideos} />}
         {/* P1.3 — Resources Panel */}
         {resourcesSummary && (
@@ -758,7 +770,11 @@ function ZonePanel({
       !accordionItems.some((a) => findEsploraImage(esploraImages, a.title) === esploraImages[0])
         ? esploraImages[0]
         : undefined;
-    const items: AccordionItem[] = accordionItems.map((ai) => {
+    // Formato a due strati: la sottosezione "In breve" è il nucleo, sempre aperto;
+    // tutte le altre diventano approfondimenti chiusi ("Per chi vuole di più").
+    const nucleo = accordionItems.find((a) => /^\W*in breve/i.test(a.title));
+    const approfondimenti = nucleo ? accordionItems.filter((a) => a !== nucleo) : accordionItems;
+    const items: AccordionItem[] = approfondimenti.map((ai) => {
       const hasPerpendicularLab =
         mc.id === "MC-DIS-1-01" &&
         /Costruzione\s+1/i.test(ai.title) &&
@@ -770,7 +786,7 @@ function ZonePanel({
       const geogebraConstruction = getGeoGebraConstruction(ai.title);
       const paragraphImage =
         findEsploraImage(esploraImages, ai.title) ??
-        (ai.id === "esplora-intro" ? introFallbackImage : undefined);
+        (ai.id === "esplora-intro" || (nucleo && ai === approfondimenti[0]) ? introFallbackImage : undefined);
 
       return {
         id: ai.id,
@@ -882,7 +898,18 @@ function ZonePanel({
             <MCImageCarousel visuals={deckSlides} mcTitolo={mc.titolo} />
           </div>
         )}
-        <AccordionSection items={items} defaultFirstOpen areaHex={areaHex} />
+        {nucleo && (
+          <section aria-label="In breve" className="mb-8 rounded-xl border-l-4 bg-white px-1 py-1 sm:px-4" style={{ borderColor: areaHex }}>
+            <h3 className="text-xl font-black tracking-tight text-slate-950">🎯 In breve: quello che devi sapere</h3>
+            <ReadableBodyInTab body={nucleo.body} />
+          </section>
+        )}
+        {nucleo && items.length > 0 && (
+          <p className="mb-2 text-xs font-black uppercase tracking-widest text-slate-500">
+            🔎 Per chi vuole di più — approfondimenti
+          </p>
+        )}
+        <AccordionSection items={items} defaultFirstOpen={!nucleo} areaHex={areaHex} />
         {/* Galleria visual — esclude sketchnote (RIPASSA) e infografiche processo (nel testo) */}
         {galleriaConEsplora.length > 0 && (
           <div className="mt-8">
@@ -950,7 +977,14 @@ function ZonePanel({
           <GeoGebraOrthographicProjectionEmbed className="mb-8" />
         )}
         {getLaboratorio(mc.id) && (
-          <LabInterattivoEmbed mcId={mc.id} className="mb-8" onResult={onLabResult} />
+          <p className="mb-6 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-950">
+            🎮 Il laboratorio interattivo è nella scheda INNESCA.{" "}
+            {onNavigate && (
+              <button type="button" onClick={() => onNavigate("INNESCA")} className="font-bold underline underline-offset-2">
+                Vai al laboratorio
+              </button>
+            )}
+          </p>
         )}
         {getEscapeRoom(mc.id) && <LabInterattivoEmbed mcId={mc.id} kind="escape" className="mb-8" />}
         {levelTabs.length > 1 ? (

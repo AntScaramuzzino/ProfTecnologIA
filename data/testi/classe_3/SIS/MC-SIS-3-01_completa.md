@@ -16,7 +16,7 @@ Hai presente quelle magliette che costano meno di sei euro? Sai quanti paesi ha 
 
 La risposta è: almeno quattro continenti. E meno di un centesimo di euro per chi l'ha prodotta fisicamente.
 
-Prima di studare come funzionano i sistemi economici in teoria, conviene capire come funzionano nella realtà — partendo da qualcosa che probabilmente indossi adesso.
+Prima di studiare come funzionano i sistemi economici in teoria, conviene capire come funzionano nella realtà — partendo da qualcosa che probabilmente indossi adesso.
 
 ---
 

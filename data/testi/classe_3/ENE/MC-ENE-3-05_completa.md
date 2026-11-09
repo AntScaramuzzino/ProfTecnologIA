@@ -11,9 +11,9 @@
 > 🎧 *Ascolta prima di leggere. Durata: 58 sec.*
 
 **Domanda di avvio:**
-Immagina una moto degli anni Settanta. Un motore a 4 cilindri, 750 cc di cilindrata, rumore sordo e odore di benzina bruciata. Tuoi nonni probabilmente ne avevano una.
+Immagina una moto degli anni Settanta. Un motore a 4 cilindri, 750 cc di cilindrata, rumore sordo e odore di benzina bruciata. Forse ne hai vista una in una vecchia foto di famiglia.
 
-Ogni volta che premono il pedale del gas, nella camera di combustione di quel motore esplode una miscela di benzina e aria — centinaia di volte al secondo. Quell'esplosione spinge un pistone, il pistone fa girare un albero, l'albero fa girare la ruota.
+Ogni volta che il pilota gira la manopola del gas, nella camera di combustione di quel motore esplode una miscela di benzina e aria — centinaia di volte al secondo. Quell'esplosione spinge un pistone, il pistone fa girare un albero, l'albero fa girare la ruota.
 
 Sembra semplice. Non lo è.
 

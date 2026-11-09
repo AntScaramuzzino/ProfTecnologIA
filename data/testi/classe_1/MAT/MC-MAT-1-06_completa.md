@@ -14,7 +14,7 @@
 
 Immagina di essere su una via ferrata nelle Dolomiti. Fa freddo, soffia il vento, e inizia a piovere. Guardi la tua giacca tecnica: pesa 340 grammi. Trecentoquaranta grammi — meno di una bottiglia d'acqua da mezzo litro — eppure ti tiene asciutto, ti mantiene caldo, e la pioggia scivola via come se la giacca fosse di vetro.
 
-Poi guardi la giacca del tuo compagno, quella che sua nonna usava in montagna negli anni ottanta: pesa 1,4 chilogrammi, è impermeabile ma non traspiante — e dopo mezz'ora di cammino, dentro c'è lo stesso umido che fuori.
+Poi guardi la giacca del tuo compagno, quella che sua nonna usava in montagna negli anni ottanta: pesa 1,4 chilogrammi, è impermeabile ma non traspirante — e dopo mezz'ora di cammino, dentro c'è lo stesso umido che fuori.
 
 Stessa funzione. Stesso colore. Ma quattro volte il peso, e il doppio dell'umidità.
 

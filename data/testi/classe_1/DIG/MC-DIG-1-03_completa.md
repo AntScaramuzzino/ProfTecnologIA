@@ -326,7 +326,7 @@ Fa' eseguire l'algoritmo a un compagno che non conosce la procedura. Il compagno
 
 ### Lo scenario
 
-La tua classe organizza una "Caccia al Tesoro" nel cortile della scuola. La maestra vuole che ogni gruppo riceva le stesse istruzioni identiche — non una mappa, ma un algoritmo: una sequenza di passi precisi che porta al tesoro. Chi sbaglia si perde; chi segue l'algoritmo correttamente trova il tesoro.
+La tua classe organizza una "Caccia al Tesoro" nel cortile della scuola. La prof vuole che ogni gruppo riceva le stesse istruzioni identiche — non una mappa, ma un algoritmo: una sequenza di passi precisi che porta al tesoro. Chi sbaglia si perde; chi segue l'algoritmo correttamente trova il tesoro.
 
 Il problema: le istruzioni vanno scritte in modo così preciso che chiunque, anche qualcuno che non conosce il cortile, possa seguirle. E devono prevedere situazioni impreviste: "SE la porta è chiusa, vai all'alternativa B".
 
