@@ -121,7 +121,7 @@ Vantaggio meccanico: sempre maggiore di 1, perché il carico è sempre più vici
 
 **Leva di terzo genere — la forza è in mezzo**
 
-Sequenza: Fm — F — Fr (la forza è tra il fulcro e il carico)
+Sequenza: F — Fm — Fr (la forza è tra il fulcro e il carico)
 
 Esempi quotidiani: pinzette, braccio umano (il bicipite si inserisce vicino al gomito — il fulcro — mentre la mano regge il peso lontano), pala.
 
