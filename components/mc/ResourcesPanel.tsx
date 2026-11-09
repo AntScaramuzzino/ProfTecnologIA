@@ -93,6 +93,7 @@ function buildGroups(s: ResourcesSummary): ZoneGroup[] {
         { icon: "🖼️", label: "Illustrazioni dei paragrafi", count: s.esploraImageCount ?? 0, available: (s.esploraImageCount ?? 0) > 0 },
         { icon: "📊", label: "Schemi didattici", count: s.schemaCount ?? 0, available: (s.schemaCount ?? 0) > 0 },
         { icon: "🎞️", label: "Video animati", count: s.esploraVideoCount ?? 0, available: (s.esploraVideoCount ?? 0) > 0 },
+        { icon: "🗂️", label: "Galleria visuale", detail: "infografiche, sketchnote e tavole (anche in Osserva, Agisci, Ripassa)", count: s.visualCount, available: s.visualCount > 0 },
         { icon: "📐", label: "Costruzioni GeoGebra", count: s.geogebraCount ?? 0, available: (s.geogebraCount ?? 0) > 0 },
       ],
     },
