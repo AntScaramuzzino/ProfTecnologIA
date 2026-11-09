@@ -28,6 +28,12 @@ export interface ResourcesSummary {
   visualCount: number;
   /** numero di slide della presentazione (deck NotebookLM in ESPLORA) */
   deckSlideCount?: number;
+  /** video animati con voce narrante nei paragrafi di ESPLORA */
+  animatedVideoCount?: number;
+  /** illustrazioni dei paragrafi di ESPLORA (generate con IA) */
+  esploraImageCount?: number;
+  /** schemi didattici vettoriali nei paragrafi di ESPLORA */
+  schemaCount?: number;
 }
 
 interface ResourcesPanelProps {
@@ -65,6 +71,33 @@ function buildItems(summary: ResourcesSummary): ResourceItem[] {
       available: true,
       zoneId: "ESPLORA",
       ariaLabel: "Vai alla zona ESPLORA",
+    },
+    {
+      icon: "🎞️",
+      label: "Video animato",
+      count: summary.animatedVideoCount ?? null,
+      available: (summary.animatedVideoCount ?? 0) > 0,
+      zoneId: "ESPLORA",
+      ariaLabel:
+        (summary.animatedVideoCount ?? 0) > 0
+          ? "Video animato con voce narrante e sottotitoli in ESPLORA"
+          : "Video animato non disponibile",
+    },
+    {
+      icon: "📐",
+      label: "Schemi didattici",
+      count: summary.schemaCount ?? null,
+      available: (summary.schemaCount ?? 0) > 0,
+      zoneId: "ESPLORA",
+      ariaLabel: `${summary.schemaCount ?? 0} schemi didattici in ESPLORA`,
+    },
+    {
+      icon: "🖼️",
+      label: "Galleria visuale",
+      count: summary.visualCount + (summary.esploraImageCount ?? 0) + (summary.schemaCount ?? 0),
+      available: summary.visualCount + (summary.esploraImageCount ?? 0) + (summary.schemaCount ?? 0) > 0,
+      zoneId: "ESPLORA",
+      ariaLabel: "Illustrazioni, schemi e infografiche della galleria visuale",
     },
     {
       icon: "🎬",

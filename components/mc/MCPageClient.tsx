@@ -1169,7 +1169,10 @@ export function MCPageClient({
     quizCount: quizData ? quizData.length : 0,
     visualCount: visuals.length,
     deckSlideCount: deckSlides.length,
-  }), [hookAudioSrc, videoPlaylist, flashcards, quizData, visuals, deckSlides]);
+    animatedVideoCount: esploraImages.filter((i) => i.video).length,
+    esploraImageCount: esploraImages.filter((i) => i.fonte !== "schema").length,
+    schemaCount: esploraImages.filter((i) => i.fonte === "schema").length,
+  }), [hookAudioSrc, videoPlaylist, flashcards, quizData, visuals, deckSlides, esploraImages]);
 
   return (
     <div className="flex flex-col">
