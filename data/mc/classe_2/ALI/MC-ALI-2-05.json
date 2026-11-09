@@ -2,36 +2,36 @@
   "id": "MC-ALI-2-05",
   "area": "ALI",
   "anno": 2,
-  "titolo": "Sprechi alimentari e sostenibilità",
-  "descrizione": "Lo studente comprende le dimensioni del fenomeno dello spreco alimentare (dati globali e domestici), sa identificare le fasi della filiera dove si genera più spreco e conosce strategie pratiche per ridurlo, collegando scelte quotidiane a impatti globali ambientali ed economici.",
+  "titolo": "Packaging alimentare e sostenibilità",
+  "descrizione": "Lo studente conosce le cinque funzioni del packaging alimentare (proteggere, conservare, informare, convincere, facilitare il trasporto), confronta pregi e limiti ambientali dei materiali di imballaggio, riconosce l'over-packaging e legge i simboli di riciclo e smaltimento, valutando alternative più sostenibili.",
   "fonte": "originale",
   "frameworks": {
     "IN": {
       "ref": "IN 2025 (D.M. n. 221/2025) — Conosce e utilizza oggetti, strumenti e macchine di uso comune ed è in grado di classificarli e descriverne la funzione",
-      "traguardo": "Lo studente analizza il sistema alimentare individuando inefficienze e proposte di miglioramento"
+      "traguardo": "Lo studente descrive funzioni e materiali di un imballaggio alimentare, ne legge i simboli e valuta l'impatto ambientale di confezioni diverse"
     },
     "DC": {
       "ref": "2.1 Interagire con tecnologie digitali",
       "livello": "I",
-      "nota": "Lo studente usa app di monitoraggio degli sprechi o fogli di calcolo per raccogliere dati domestici"
+      "nota": "Lo studente registra in un foglio di calcolo i dati dell'audit degli imballaggi e li confronta"
     },
     "EC": {
       "ref": "Into action / Taking initiative",
-      "nota": "Lo studente propone e attua azioni concrete di riduzione degli sprechi nel proprio contesto"
+      "nota": "Lo studente propone alternative concrete per ridurre gli imballaggi del proprio pasto e della mensa"
     },
     "LC": {
       "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente si riconosce come agente attivo nel contrasto agli sprechi alimentari globali. Progettare azioni anti-spreco richiede pianificazione e autovalutazione: lo studente impara a tradurre intenzioni in comportamenti misurabili, competenza centrale dell'imparare a imparare."
+      "nota": "Lo studente si riconosce consumatore responsabile: ogni scelta d'acquisto decide quanti imballaggi entrano in casa e come vengono smaltiti."
     },
     "EV": {
-      "ref": "SDG 2 — Fame zero; SDG 12 — Consumo responsabile; SDG 13 — Lotta al cambiamento climatico",
-      "nota": "Lo spreco alimentare produce il 10% delle emissioni globali di gas serra"
+      "ref": "SDG 12 — Consumo e produzione responsabili; SDG 13 — Lotta al cambiamento climatico",
+      "nota": "Ridurre e scegliere meglio gli imballaggi riduce rifiuti, consumo di materie prime ed emissioni"
     }
   },
   "outputApp": {
-    "quiz": "Dati e impatto: 'Un terzo del cibo mondiale viene sprecato — quanto CO₂ produce annualmente?' Multipla con infografica di supporto.",
-    "microlearning": "Card deck 5 slide: dove si spreca di più (campo, trasporto, distribuzione, casa, ristorazione) con dato percentuale. 4 min.",
-    "visual": "Piramide invertita dello spreco: quota % per ogni fase della filiera.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: funzioni del packaging, materiali e codici di riciclo, over-packaging, simboli in etichetta.",
+    "microlearning": "Process «Le cinque funzioni di un imballaggio: dal progetto allo smaltimento» + Checklist «Audit imballaggi del mio pasto».",
+    "visual": "Infografica: il ciclo di vita di una confezione alimentare — funzioni, materiali, simboli, smaltimento corretto.",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
@@ -39,22 +39,23 @@
     "MC-ALI-2-03"
   ],
   "tags": [
-    "spreco alimentare",
+    "packaging",
+    "imballaggio",
+    "materiali",
+    "over-packaging",
+    "riciclo",
     "sostenibilità",
-    "food waste",
-    "impatto ambientale",
     "classe-2",
     "ALI"
   ],
-  "compito_realta": "Monitora gli sprechi alimentari in casa per una settimana: pesa o stima il cibo buttato ogni giorno, classifica per tipo (pane, verdura, avanzi...) e proponi 3 strategie per ridurlo.",
+  "compito_realta": "Analizza tutti gli imballaggi di un pasto completo: per ognuno indica materiale, riciclabilità, corretto smaltimento ed eventuale over-packaging, poi proponi alternative per ridurli.",
   "sdg": [
-    2,
     12,
     13
   ],
   "note_didattiche": {
-    "base": "Concentrarsi solo sullo spreco domestico. Fornire tabella di monitoraggio semplificata (3 categorie).",
-    "avanzato": "Calcolare il costo economico annuale dello spreco familiare e il relativo impatto in CO₂, confrontando con la media italiana."
+    "base": "Partire da 3 prodotti già scelti, con materiale e simbolo di riciclo evidenziati: lo studente compila solo le colonne Materiale e Riciclabile.",
+    "avanzato": "Ridisegnare il packaging di un prodotto riducendo materiali e strati, motivando le scelte con i dati sui materiali e sul fine vita."
   },
   "hook_audio": {
     "durata_min": 0.9,
@@ -75,24 +76,24 @@
   },
   "clil_termini": [
     {
-      "italiano": "nutriente",
-      "inglese": "nutrient",
-      "ipa": "ˈnjuːtrɪənt"
+      "italiano": "imballaggio alimentare",
+      "inglese": "food packaging",
+      "ipa": "fuːd ˈpækɪdʒɪŋ"
     },
     {
-      "italiano": "filiera",
-      "inglese": "supply chain",
-      "ipa": "səˈplaɪ tʃeɪn"
+      "italiano": "imballaggio eccessivo",
+      "inglese": "over-packaging",
+      "ipa": "ˈəʊvə ˈpækɪdʒɪŋ"
     },
     {
-      "italiano": "conservazione",
-      "inglese": "preservation",
-      "ipa": "ˌprezəˈveɪʃən"
+      "italiano": "bioplastica",
+      "inglese": "bioplastic",
+      "ipa": "ˈbaɪəʊˌplæstɪk"
     },
     {
-      "italiano": "spreco alimentare",
-      "inglese": "food waste",
-      "ipa": "fuːd weɪst"
+      "italiano": "commercio al dettaglio",
+      "inglese": "retail",
+      "ipa": "ˈriːteɪl"
     }
   ],
   "uda_collegata": "UDA-2 — La Città che Vorrei",
@@ -122,5 +123,5 @@
       ]
     }
   ],
-  "sdg_principale": 2
+  "sdg_principale": 12
 }

@@ -2,57 +2,59 @@
   "id": "MC-SIS-3-04",
   "area": "SIS",
   "anno": 3,
-  "titolo": "Processi produttivi, qualità e certificazioni",
-  "descrizione": "Lo studente conosce i concetti di controllo qualità e certificazione (ISO, CE, biologico), comprende come i processi produttivi vengono standardizzati per garantire sicurezza e qualità, e sa leggere le principali certificazioni su un prodotto, sviluppando la capacità di scegliere prodotti certificati con consapevolezza critica.",
+  "titolo": "Orientamento al futuro professionale",
+  "descrizione": "Lo studente conosce le forze che stanno trasformando il lavoro (automazione, transizione ecologica, invecchiamento, digitalizzazione), le professioni in crescita e in declino, il valore delle competenze trasversali e il modello RIASEC, e costruisce una mappa personale tra competenze acquisite e professioni possibili.",
   "fonte": "Paci 2014",
   "frameworks": {
     "IN": {
-      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e i criteri di qualità",
-      "traguardo": "Lo studente legge e interpreta certificazioni di prodotto e capisce i processi di controllo qualità"
+      "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali sistemi produttivi e le relazioni tra scienza, tecnologia e società",
+      "traguardo": "Lo studente collega le competenze acquisite nel triennio ai cambiamenti del mondo del lavoro e le usa per una scelta consapevole del proprio percorso"
     },
     "DC": {
       "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
       "livello": "I",
-      "nota": "Lo studente verifica l'autenticità di certificazioni online usando i database ufficiali degli enti certificatori"
+      "nota": "Lo studente analizza offerte di lavoro reali online e ricava le competenze richieste"
     },
     "EC": {
-      "ref": "Into action / Mobilising resources",
-      "nota": "Lo studente usa le certificazioni come strumento di selezione consapevole dei prodotti"
+      "ref": "Into action / Planning and management",
+      "nota": "Lo studente traduce interessi e competenze in un piano per la scelta della scuola superiore"
     },
     "LC": {
-      "ref": "Social / Responsible citizenship",
-      "nota": "Lo studente esercita il proprio ruolo di consumatore critico usando le informazioni sulle certificazioni"
+      "ref": "Learning / Managing learning",
+      "nota": "Lo studente riflette sui propri interessi e punti di forza e individua un'area di crescita."
     },
     "EV": {
-      "ref": "SDG 12 — Consumo responsabile; SDG 3 — Salute e benessere",
-      "nota": "Le certificazioni proteggono consumatori e ambiente — conoscerle è competenza di cittadinanza economica"
+      "ref": "SDG 4 — Istruzione di qualità; SDG 8 — Lavoro dignitoso e crescita economica",
+      "nota": "Scegliere con consapevolezza il proprio percorso è la base di un lavoro dignitoso"
     }
   },
   "outputApp": {
-    "quiz": "Riconoscimento simboli: mostra 8 loghi di certificazione (CE, ISO 9001, FSC, biologico EU, Fairtrade, Energy Star, RoHS, WEEE) — cosa significa ciascuno? Abbinamento con feedback.",
-    "microlearning": "Card deck 5 slide: CE, ISO, FSC, biologico, Fairtrade — a cosa servono, chi le rilascia, quanto costano alle aziende. 4 min.",
-    "visual": "Guida visiva: i 10 loghi di certificazione più comuni su packaging alimentari e prodotti elettronici.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: megatrend del lavoro, professioni in crescita e in declino, STEM gap, competenze trasversali, modello RIASEC.",
+    "microlearning": "Process «Il ciclo dell'orientamento professionale: dall'autoconoscenza alla scelta consapevole» + Checklist «Costruisco la mia mappa personale competenze acquisite → professioni possibili».",
+    "visual": "Infografica: dalla conoscenza di sé alla scelta — interessi (RIASEC), competenze tecniche e trasversali, professioni possibili.",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
     "MC-SIS-3-01"
   ],
   "tags": [
-    "certificazioni",
-    "qualità",
-    "ISO",
-    "controllo qualità",
+    "orientamento",
+    "lavoro",
+    "professioni",
+    "competenze trasversali",
+    "RIASEC",
+    "STEM",
     "classe-3",
     "SIS"
   ],
-  "compito_realta": "Analizza il packaging di 5 prodotti diversi presenti in casa: identifica tutte le certificazioni presenti, cerca cosa significano sul sito dell'ente certificatore e valuta se la certificazione ti influenza nella scelta d'acquisto.",
+  "compito_realta": "Costruisci la tua mappa personale «competenze acquisite → professioni possibili» usando le MC del triennio, un test di interessi e l'analisi di tre offerte di lavoro reali, e presentala alla classe.",
   "sdg": [
-    3,
-    12
+    4,
+    8
   ],
   "note_didattiche": {
-    "base": "Fornire i 5 prodotti già selezionati con i loghi già evidenziati. Lo studente deve solo cercare il significato di 3 certificazioni.",
-    "avanzato": "Simulare un audit di qualità scolastico: definire 3 standard di qualità per la mensa scolastica e verificare se vengono rispettati attraverso osservazione diretta."
+    "base": "Esplorare le professioni collegate a tre MC del triennio usando la tabella MC → professioni.",
+    "avanzato": "Costruire un portfolio delle competenze del triennio con prove concrete per ogni competenza dichiarata."
   },
   "hook_audio": {
     "durata_min": 1.0,
@@ -73,24 +75,24 @@
   },
   "clil_termini": [
     {
-      "italiano": "economia",
-      "inglese": "economy",
-      "ipa": "ɪˈkɒnəmi"
+      "italiano": "competenze trasversali",
+      "inglese": "soft skills / transferable skills",
+      "ipa": "sɒft skɪlz"
     },
     {
-      "italiano": "sistema produttivo",
-      "inglese": "production system",
-      "ipa": "prəˈdʌkʃən ˈsɪstəm"
+      "italiano": "curriculum vitae",
+      "inglese": "résumé / CV",
+      "ipa": "ˈrezʊmeɪ"
     },
     {
-      "italiano": "qualità",
-      "inglese": "quality",
-      "ipa": "ˈkwɒlɪti"
+      "italiano": "colloquio di lavoro",
+      "inglese": "job interview",
+      "ipa": "dʒɒb ˈɪntəvjuː"
     },
     {
-      "italiano": "imprenditorialità",
-      "inglese": "entrepreneurship",
-      "ipa": "ˌɒntrəprəˈnɜːʃɪp"
+      "italiano": "apprendimento permanente",
+      "inglese": "lifelong learning",
+      "ipa": "ˈlaɪflɒŋ ˈlɜːnɪŋ"
     }
   ],
   "uda_collegata": "UDA-3 — Zero Emissioni a Scuola",
@@ -120,5 +122,5 @@
       ]
     }
   ],
-  "sdg_principale": 12
+  "sdg_principale": 4
 }

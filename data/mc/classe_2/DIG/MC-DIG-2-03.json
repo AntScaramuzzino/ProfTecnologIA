@@ -2,36 +2,36 @@
   "id": "MC-DIG-2-03",
   "area": "DIG",
   "anno": 2,
-  "titolo": "Il sistema operativo: come il computer gestisce le risorse",
-  "descrizione": "Lo studente comprende cosa fa un sistema operativo (gestione dei processi, della memoria, del file system e delle periferiche), sa usare consapevolmente le funzioni di base del SO che usa ogni giorno, e capisce perché il SO è lo strato che rende possibile ogni altra applicazione.",
+  "titolo": "Organizzare il computer: file, backup e privacy",
+  "descrizione": "Lo studente organizza file e cartelle con una struttura logica e una convenzione di nomi, applica la regola di backup 3-2-1, gestisce installazioni e aggiornamenti dei programmi, usa il cloud in modo consapevole e conosce cosa traccia il browser e come limitarlo.",
   "fonte": "originale",
   "frameworks": {
     "IN": {
-      "ref": "IN 2025 (D.M. n. 221/2025) — Conoscenze Informatica: Sistema operativo: principali funzioni e servizi di base, concetto di processo in esecuzione, gestione dei processi e della memoria, file system.",
-      "traguardo": "Lo studente descrive le funzioni principali di un sistema operativo e le usa consapevolmente nell'uso quotidiano del dispositivo"
+      "ref": "IN 2025 (D.M. n. 221/2025) — Sa risolvere problemi tecnici e utilizzare applicativi informatici",
+      "traguardo": "Lo studente organizza in modo efficace i propri file, protegge il proprio lavoro con backup regolari e gestisce in modo consapevole programmi, cloud e privacy del browser"
     },
     "DC": {
       "ref": "2.1 Interagire con le tecnologie digitali",
       "livello": "I",
-      "nota": "Lo studente interagisce con il SO in modo consapevole, comprendendo cosa succede 'sotto' all'interfaccia grafica"
+      "nota": "Lo studente gestisce file, cartelle, backup e impostazioni del browser in modo consapevole e organizzato"
     },
     "EC": {
       "ref": "Into action / Mobilising resources",
-      "nota": "Lo studente ottimizza l'uso delle risorse del dispositivo (memoria, processi) per lavorare in modo più efficiente"
+      "nota": "Lo studente organizza le proprie risorse digitali per lavorare in modo più efficiente e senza perdite"
     },
     "LC": {
       "ref": "Thinking / Systems thinking",
-      "nota": "Lo studente comprende il SO come sistema di gestione delle risorse con interdipendenze tra componenti"
+      "nota": "Lo studente costruisce un sistema personale (cartelle, nomi, backup) e ne verifica il funzionamento nel tempo."
     },
     "EV": {
-      "ref": "SDG 9 — Industria, innovazione e infrastrutture",
-      "nota": "La comprensione del SO è fondamento della cittadinanza digitale in una società che dipende dall'infrastruttura informatica"
+      "ref": "SDG 9 — Imprese, innovazione e infrastrutture",
+      "nota": "Saper gestire i propri dati digitali è parte della cittadinanza digitale"
     }
   },
   "outputApp": {
-    "quiz": "Scenario diagnostico: 'Il tuo computer è lento — quali processi consuma più memoria? Come li identifichi e cosa fai?' — risposta guidata con screen simulato del task manager. Feedback che spiega RAM vs CPU.",
-    "microlearning": "Card deck 6 slide: cos'è il SO / processo / memoria RAM / file system / periferiche / confronto Windows-macOS-Linux-Android. 5 min.",
-    "visual": "Diagramma a strati: hardware → SO (kernel, driver, interfaccia) → applicazioni → utente. Con frecce che mostrano il flusso delle istruzioni.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: struttura delle cartelle, convenzione di nomi, regola 3-2-1, aggiornamenti, cloud, cookie e privacy del browser.",
+    "microlearning": "Process «Dalla cartella caotica al sistema ordinato: il ciclo della gestione digitale» + Checklist «Diagnostico del mio computer: analisi e piano di miglioramento».",
+    "visual": "Infografica: dalla cartella caotica al sistema ordinato — albero delle cartelle, nome del file, backup 3-2-1, aggiornamenti, privacy del browser.",
     "livelloDigComp": "I"
   },
   "prerequisiti": [
@@ -39,22 +39,22 @@
     "MC-DIG-2-01"
   ],
   "tags": [
-    "sistema operativo",
-    "processo",
-    "memoria RAM",
-    "file system",
-    "kernel",
-    "informatica",
+    "gestione file",
+    "cartelle",
+    "backup",
+    "cloud",
+    "privacy del browser",
+    "cookie",
     "classe-2",
     "DIG"
   ],
-  "compito_realta": "Apri il task manager (o Activity Monitor su Mac) durante una sessione di lavoro normale: identifica i 5 processi che consumano più RAM e CPU, scopri a cosa servono e decidi se puoi chiuderne qualcuno senza perdere lavoro. Documenta la tua analisi in una tabella con una colonna 'posso chiuderlo?' motivata.",
+  "compito_realta": "Documenta come hai organizzato il tuo computer: situazione di partenza, struttura di cartelle e convenzione di nomi adottate, piano di backup e un consiglio pratico per chi inizia.",
   "sdg": [
     9
   ],
   "note_didattiche": {
-    "base": "Fornire la schermata del task manager già catturata, con i processi etichettati. Lo studente deve solo classificarli in 'sistema', 'applicazione', 'background' e descrivere cosa fanno i 3 più pesanti.",
-    "avanzato": "Confrontare l'uso delle risorse prima e dopo l'installazione di un'estensione del browser: misurare la differenza in MB di RAM e interpretare i dati. Scrivere una 'regola igienica digitale' basata sull'osservazione."
+    "base": "Fornire una cartella di file in disordine con nomi generici: lo studente li riorganizza in una struttura data e li rinomina con la convenzione.",
+    "avanzato": "Confrontare due strategie di backup (locale e cloud) per costi, rischi e affidabilità, e progettare il proprio sistema motivando le scelte."
   },
   "hook_audio": {
     "titolo": "Chi comanda davvero nel tuo computer?",
@@ -80,24 +80,24 @@
   "sdg_principale": 9,
   "clil_termini": [
     {
+      "italiano": "cartella",
+      "inglese": "folder",
+      "pronuncia_ipa": "/ˈfəʊldər/"
+    },
+    {
+      "italiano": "backup",
+      "inglese": "backup",
+      "pronuncia_ipa": "/ˈbækʌp/"
+    },
+    {
       "italiano": "sistema operativo",
       "inglese": "operating system",
       "pronuncia_ipa": "/ˈɒpəreɪtɪŋ ˈsɪstəm/"
     },
     {
-      "italiano": "processo",
-      "inglese": "process",
-      "pronuncia_ipa": "/ˈprəʊses/"
-    },
-    {
-      "italiano": "file system",
-      "inglese": "file system",
-      "pronuncia_ipa": "/faɪl ˈsɪstəm/"
-    },
-    {
-      "italiano": "memoria di lavoro",
-      "inglese": "RAM (Random Access Memory)",
-      "pronuncia_ipa": "/ræm/"
+      "italiano": "modalità privata",
+      "inglese": "private browsing / incognito mode",
+      "pronuncia_ipa": "/ˈprɪvɪt ˈbraʊzɪŋ/"
     }
   ],
   "uda_collegata": null,
