@@ -28,7 +28,7 @@ function pop(t, t0, cx, cy, inner, d = 0.45) {
   const s = x < 1 ? 1 + 2.2 * Math.pow(x - 1, 3) + 1.2 * Math.pow(x - 1, 2) : 1;
   return `<g opacity="${clamp(x * 2).toFixed(3)}" transform="translate(${cx},${cy}) scale(${s.toFixed(4)}) translate(${-cx},${-cy})">${inner}</g>`;
 }
-const F = { pop: "Pop, sans-serif", popm: "PopM, sans-serif", serif: "Serif, serif", mono: "Mono, monospace" };
+const F = { pop: "Pop, sans-serif", popm: "PopM, sans-serif", serif: "ISerif, serif", mono: "Mono, monospace" };
 function T(x, y, s, o = {}) {
   const f = F[o.f || 'popm'];
   return `<text x="${x}" y="${y}" font-family="${f}" font-size="${o.size || 32}" fill="${o.fill || C.line}"` +
@@ -38,7 +38,7 @@ function T(x, y, s, o = {}) {
 // parole una alla volta (~110 ms), una parola chiave in corallo; larghezze misurate col font reale
 const _ctx = document.createElement('canvas').getContext('2d');
 const FW = { pop: 800, popm: 500, serif: 400, mono: 500 };
-const FN = { pop: 'Pop', popm: 'PopM', serif: 'Serif', mono: 'Mono' };
+const FN = { pop: 'Pop', popm: 'PopM', serif: 'ISerif', mono: 'Mono' };
 function tw(s, f, size, it) { _ctx.font = `${it ? 'italic ' : ''}${FW[f]} ${size}px ${FN[f]}`; return _ctx.measureText(s).width; }
 function words(t, t0, x, y, s, o = {}) {
   const ws = s.split(' '), key = (o.key || '').split(' ').map(k => k.replace(/[?,.]/g, ''));
