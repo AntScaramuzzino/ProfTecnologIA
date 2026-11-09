@@ -2,36 +2,36 @@
   "id": "MC-MAT-1-06",
   "area": "MAT",
   "anno": 1,
-  "titolo": "Biomateriali e bioplastiche: il futuro dei materiali",
-  "descrizione": "Lo studente comprende cosa sono i biomateriali (materiali di origine biologica o prodotti da organismi viventi), conosce esempi concreti di bioplastiche e materiali biodegradabili, e sa discutere criticamente i limiti e le potenzialità di queste alternative.",
+  "titolo": "Fibre, plastiche e compositi",
+  "descrizione": "Lo studente conosce le fibre tessili naturali e sintetiche, la famiglia delle plastiche e i materiali compositi, ne confronta proprietà e impatto ambientale (consumo d'acqua, microplastiche, riciclo) e sa leggere in modo critico le etichette di composizione, comprese le diciture «bio» e «compostabile».",
   "fonte": "originale",
   "frameworks": {
     "IN": {
       "ref": "IN 2025 (D.M. n. 221/2025) — Conosce i principali processi di trasformazione di risorse o di produzione di beni",
-      "traguardo": "Lo studente riconosce i biomateriali come risposta tecnologica alla crisi ambientale"
+      "traguardo": "Lo studente classifica fibre, plastiche e compositi, ne descrive proprietà e impatto ambientale e interpreta le etichette di composizione"
     },
     "DC": {
       "ref": "1.2 Valutare dati, informazioni e contenuti digitali",
       "livello": "F",
-      "nota": "Lo studente valuta criticamente articoli e fonti web sui biomateriali"
+      "nota": "Lo studente verifica online il significato delle diciture in etichetta («bio», «eco», «compostabile»)"
     },
     "EC": {
       "ref": "Ideas and opportunities / Sustainability",
-      "nota": "Lo studente collega innovazione dei materiali a modelli di economia circolare"
+      "nota": "Lo studente collega la scelta dei materiali tessili e plastici al loro ciclo di vita"
     },
     "LC": {
       "ref": "Thinking / Critical thinking",
-      "nota": "Lo studente distingue tra claim pubblicitari e dati scientifici verificabili sui materiali 'bio'. Questa competenza epistemica è trasversale: lo studente costruisce criteri propri per valutare l'attendibilità delle fonti e li trasferisce oltre il contesto dei materiali, in qualsiasi campo informativo."
+      "nota": "Lo studente distingue le informazioni obbligatorie in etichetta dalle affermazioni pubblicitarie. Questa competenza epistemica si trasferisce a qualsiasi campo informativo."
     },
     "EV": {
-      "ref": "SDG 9 — Innovazione; SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
-      "nota": "I biomateriali riducono l'inquinamento da plastica convenzionale"
+      "ref": "SDG 14 — Vita sott'acqua; SDG 15 — Vita sulla terra",
+      "nota": "Microplastiche e rifiuti plastici sono tra i principali inquinanti di mari e suoli"
     }
   },
   "outputApp": {
-    "quiz": "Vero/Falso con spiegazione: 5 affermazioni sulle bioplastiche (es. 'La bioplastica si smaltisce nel compostaggio domestico').",
-    "microlearning": "Card deck 5 slide: fungo-materiale (mycelium), PLA, amido di mais, seta batterica, fibra di canapa. 4 min.",
-    "visual": "Infografica: bioplastica convenzionale — confronto su 4 parametri con icone.",
+    "quiz": "18 domande (6F + 6I + 6A) con feedback: fibre naturali e sintetiche, microplastiche, famiglie di plastiche e codici, compositi.",
+    "microlearning": "Process «Dalle fibre all'impronta: il ciclo di vita dei tessuti» + Checklist «Audit delle etichette nel mio armadio».",
+    "visual": "Infografica: tre famiglie di materiali — fibre, plastiche, compositi — con origine, proprietà e fine vita.",
     "livelloDigComp": "F"
   },
   "prerequisiti": [
@@ -39,22 +39,23 @@
     "MC-MAT-1-04"
   ],
   "tags": [
-    "biomateriali",
-    "bioplastica",
-    "biodegradabile",
-    "economia circolare",
+    "fibre tessili",
+    "plastiche",
+    "polimeri",
+    "compositi",
+    "microplastiche",
+    "etichette",
     "classe-1",
     "MAT"
   ],
-  "compito_realta": "Ricerca un prodotto commerciale che dichiara di usare bioplastica: verifica la composizione reale sull'etichetta, cerca come va smaltito e valuta se l'etichetta 'bio' è giustificata o fuorviante.",
+  "compito_realta": "Analizza l'etichetta di composizione di tre prodotti (almeno uno con diciture «bio», «eco» o «compostabile»): classifica i materiali, valuta biodegradabilità e microplastiche e giudica se le diciture sono giustificate.",
   "sdg": [
-    9,
     14,
     15
   ],
   "note_didattiche": {
-    "base": "Fornire 3 prodotti già selezionati con le etichette analizzate. Lo studente confronta i dati già estratti.",
-    "avanzato": "Progettare un esperimento semplice per testare la biodegradabilità in classe (interrare campioni, osservare per 2 settimane)."
+    "base": "Riconoscere e classificare fibre con test semplici (al tatto, assorbimento d'acqua) su campioni forniti dal docente.",
+    "avanzato": "Progettare un packaging sostenibile scegliendo e motivando i materiali in base al ciclo di vita."
   },
   "hook_audio": {
     "durata_min": 0.9,
@@ -75,24 +76,24 @@
   },
   "clil_termini": [
     {
-      "italiano": "materiale",
-      "inglese": "material",
-      "ipa": "məˈtɪərɪəl"
+      "italiano": "fibra sintetica",
+      "inglese": "synthetic fibre",
+      "ipa": "sɪnˈθetɪk ˈfaɪbə"
     },
     {
-      "italiano": "proprietà",
-      "inglese": "property",
-      "ipa": "ˈprɒpəti"
+      "italiano": "microplastiche",
+      "inglese": "microplastics",
+      "ipa": "ˈmaɪkrəʊˌplæstɪks"
     },
     {
-      "italiano": "riciclo",
-      "inglese": "recycling",
-      "ipa": "riːˈsaɪklɪŋ"
+      "italiano": "materiale composito",
+      "inglese": "composite material",
+      "ipa": "ˈkɒmpəzɪt məˈtɪəriəl"
     },
     {
-      "italiano": "ciclo di vita",
-      "inglese": "life cycle",
-      "ipa": "laɪf ˈsaɪkəl"
+      "italiano": "biodegradabile",
+      "inglese": "biodegradable",
+      "ipa": "ˌbaɪəʊdɪˈɡreɪdəbl"
     }
   ],
   "uda_collegata": "UDA-1 — Passaporto dell'Oggetto",

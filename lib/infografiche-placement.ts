@@ -12,11 +12,11 @@
  *
  * I file sono indicati con una sottostringa univoca del nome.
  *
- * Escluse di proposito (infografica coerente con il JSON MC ma non con il testo
- * pubblicato — da decidere quale dei due è canonico): MC-ALI-2-05, MC-AMB-2-06,
- * MC-DIG-2-03, MC-SIS-3-04, MC-MAT-1-06.
- * Esclusa MC-DIG-2-04: la fila "Protezione" suggerisce HTTPS/lucchetto = sito
- * sicuro (falso per il phishing) — da correggere prima di spostarla.
+ * Nascoste (2026-11-09):
+ *  - MC-DIG-2-04: la fila "Protezione" presenta HTTPS/lucchetto come garanzia
+ *    contro il phishing (falso) → da rigenerare;
+ *  - MC-ALI-2-05, MC-AMB-2-06, MC-DIG-2-03, MC-SIS-3-04, MC-MAT-1-06: infografica sul
+ *    vecchio tema della MC → nascosta a monte da lib/visual-fuori-tema.ts.
  * Restano in OSSERVA (l'infografica illustra il caso): ALI-2-01, ALI-2-04,
  * ENE-3-02, MAT-1-04.
  *
@@ -64,6 +64,8 @@ const CONFIG: Record<string, InfograficaConfig> = {
   "MC-ENE-3-03": { esplora: [{ section: /smart grid e transizione/i, files: [v1] }], osserva: [] },
   // Fasi dell'immagine ≠ "Le sette fasi" del testo → solo nell'apertura
   "MC-MAT-1-02": { esplora: [{ section: /non nasce sullo scaffale/i, files: [v1] }], osserva: [] },
+  // Nascosta in attesa di rigenerazione (vedi intestazione)
+  "MC-DIG-2-04": { esplora: [], osserva: [] },
 };
 
 function pick(visuals: VisualAsset[], keys: string[]): VisualAsset[] {
