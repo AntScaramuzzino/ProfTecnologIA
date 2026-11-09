@@ -540,6 +540,8 @@ Formula per calcolare kWh/mese: Potenza (W) ÷ 1.000 × Ore/giorno × 30 giorni
 
 Sei un consulente energetico junior assunto da un'associazione di consumatori del tuo quartiere. Ti chiedono di fare una cosa concreta: analizzare gli impianti della tua casa, stimare i consumi mensili, e proporre tre azioni di risparmio che la tua famiglia potrebbe mettere in pratica subito — a costo zero o quasi.
 
+> 📬 **A chi lo consegni davvero.** La tua famiglia. Le tre azioni di risparmio diventano un patto firmato da tutti e appeso in casa. Alla bolletta successiva controlla con un adulto se i consumi sono cambiati.
+
 ---
 
 ### La consegna

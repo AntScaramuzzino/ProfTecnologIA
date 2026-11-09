@@ -592,6 +592,8 @@ L'azienda ha un budget per il nuovo packaging equivalente al costo attuale (stim
 
 Sei stato incaricato da un'associazione di consumatori della tua città di analizzare l'etichettatura di prodotti tessili e di packaging in vendita nei negozi locali. Il tuo rapporto sarà pubblicato sul sito dell'associazione e potrà aiutare altri consumatori a fare scelte più informate.
 
+> 📬 **A chi lo consegni davvero.** Il negoziante da cui hai preso le etichette, e i lettori del sito o del giornalino della scuola. Consegna il rapporto in una pagina. Chiedi al negoziante: i clienti ti fanno mai domande su queste etichette?
+
 ---
 
 ### La consegna

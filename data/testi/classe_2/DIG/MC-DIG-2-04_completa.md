@@ -491,6 +491,8 @@ La tua scuola ha subito un tentativo di phishing: qualcuno ha mandato email a st
 
 Il dirigente scolastico ti chiede di preparare un "kit di prima risposta" per aiutare le famiglie colpite e prevenire attacchi futuri.
 
+> 📬 **A chi lo consegni davvero.** La segreteria della scuola e un adulto di casa tua. Il kit deve stare in una pagina. Fallo leggere all'adulto: dopo un minuto sa dirti che cosa farebbe? Se no, riscrivilo.
+
 ---
 
 ### La consegna

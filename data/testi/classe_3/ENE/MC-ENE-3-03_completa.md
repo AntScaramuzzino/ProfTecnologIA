@@ -445,6 +445,8 @@ Scrivi una relazione tecnica di 12-15 righe rivolta al preside e al consiglio di
 
 Il tuo istituto scolastico ha ricevuto un finanziamento del Piano Nazionale di Ripresa e Resilienza (PNRR) per la riqualificazione energetica degli edifici scolastici. La dirigente scolastica ti chiede di presentare al consiglio di istituto un'analisi del potenziale fotovoltaico della scuola, con e senza sistema di accumulo.
 
+> 📬 **A chi lo consegni davvero.** Il Consiglio di istituto, attraverso il dirigente. Consegna l'analisi in una pagina. Chiedi se la scuola ha già un progetto per il tetto, e a chi spetta la decisione.
+
 ---
 
 ### La consegna

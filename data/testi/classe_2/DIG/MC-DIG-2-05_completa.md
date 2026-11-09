@@ -338,6 +338,8 @@ La tua scuola ha deciso di partecipare a una "Settimana della Consapevolezza Dig
 
 Non si tratta di dimostrare che sei "bravo" o che usi poco il telefono — si tratta di capire davvero come lo usi, e di decidere se vuoi cambiare qualcosa.
 
+> 📬 **A chi lo consegni davvero.** La classe, e un adulto di casa. Con lui firmi il tuo piano personale: una sola regola, per due settimane. Alla fine vi dite se è stata rispettata, da tutti e due.
+
 ---
 
 ### La consegna

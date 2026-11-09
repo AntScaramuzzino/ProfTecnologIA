@@ -485,6 +485,8 @@ Il tuo zaino, la tua felpa, il tuo astuccio — tutto quello che porti a scuola 
 
 Il Passaporto Tecnologico è uno strumento reale usato dai ricercatori di sostenibilità per tracciare il ciclo di vita di un prodotto. Oggi lo costruisci tu, per un oggetto che conosci bene.
 
+> 📬 **A chi lo consegni davvero.** La persona che ha comprato l'oggetto. Mostrale il Passaporto Tecnologico e chiedi: sapendo questo, lo ricompreresti uguale? Scrivi la risposta in fondo al passaporto.
+
 ---
 
 ### La consegna

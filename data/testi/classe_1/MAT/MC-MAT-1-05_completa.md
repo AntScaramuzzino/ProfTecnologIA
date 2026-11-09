@@ -575,6 +575,8 @@ I requisiti del capitolato tecnico comunale:
 
 Sei consulente tecnico per una piccola azienda italiana che produce oggetti per l'arredamento urbano (panchine, portabici, cestini). Il direttore tecnico ti chiede di analizzare i materiali di tre prodotti esistenti e preparare una scheda tecnica per ciascuno, che sarà usata per decidere se passare a materiali alternativi nella prossima versione del prodotto.
 
+> 📬 **A chi lo consegni davvero.** L'ufficio tecnico del Comune, oppure un fabbro o un falegname del tuo paese. Fai la scheda su una panchina, un cestino o un portabici veri. Chiedi: il materiale è stato scelto per le ragioni che hai scritto?
+
 ---
 
 ### La consegna

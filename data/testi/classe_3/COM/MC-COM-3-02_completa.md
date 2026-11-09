@@ -457,6 +457,8 @@ La tua classe vuole produrre una serie podcast sulla tecnologia — breve, verif
 
 Il risultato non è un compito "per il cassetto": è un contenuto che potrebbe essere pubblicato online e usato da altri. Questo significa che ogni scelta — di fonti, di licenze, di parole — ha conseguenze reali.
 
+> 📬 **A chi lo consegni davvero.** Ascoltatori veri: una classe prima, oppure il sito della scuola dopo il controllo del docente sulle licenze. Chiedi a tre ascoltatori che cosa ricordano il giorno dopo.
+
 ---
 
 ### La consegna

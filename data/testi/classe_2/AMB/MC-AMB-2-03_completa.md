@@ -564,6 +564,8 @@ Sei un'analista del progetto **"Scuola nel Quartiere"** — un'iniziativa del tu
 
 Il tuo obiettivo: analizzare il quartiere della tua scuola con gli occhi di un urbanista, identificare il problema principale e proporre una soluzione concreta.
 
+> 📬 **A chi lo consegni davvero.** Un consigliere comunale, un assessore, o il Consiglio comunale dei ragazzi se nel tuo paese esiste. Consegna la proposta in una pagina, con una foto del problema. Chiedi una risposta scritta.
+
 ---
 
 ### La consegna

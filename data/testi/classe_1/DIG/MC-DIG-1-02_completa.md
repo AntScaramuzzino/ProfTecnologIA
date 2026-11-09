@@ -502,6 +502,8 @@ La tua classe sta preparando una presentazione sul tema "Acqua e futuro" per la 
 
 Il problema: cercando online trovate decine di risultati — articoli di giornale, blog, siti di organizzazioni, video YouTube, post sui social. Alcune informazioni si contraddicono. Alcune sembrano ufficiali ma non lo sono. Come scegliere?
 
+> 📬 **A chi lo consegni davvero.** Un gruppo di un'altra classe che deve fare una ricerca sullo stesso argomento. Consegna le tue tre schede fonte. Chiedi: quale fonte usereste, e quale scartereste?
+
 ---
 
 ### La consegna

@@ -469,6 +469,8 @@ Competenze chiave che inizia a costruire da qui: software 3D (Maya, Blender) · 
 
 La scuola ha deciso di creare una "guida pratica alla gestione del computer" per gli studenti del prossimo anno. Ti chiedono di contribuire con una sezione basata sulla tua esperienza reale — non su teoria astratta, ma su quello che hai imparato facendo.
 
+> 📬 **A chi lo consegni davvero.** Un alunno di prima. Consegnagli la tua sezione della guida e chiedigli di seguire un solo consiglio per una settimana. Poi fatti dire se ha funzionato.
+
 ---
 
 ### La consegna

@@ -383,6 +383,8 @@ La tua scuola vuole creare un archivio digitale delle fotografie storiche del qu
 
 Sei tu a fare i calcoli.
 
+> 📬 **A chi lo consegni davvero.** Chi in famiglia custodisce le vecchie fotografie. Conta le foto di un album vero e calcola quanto spazio serve per scansionarle. Consegna il calcolo e chiedi: quello spazio in casa c'è?
+
 ---
 
 ### La consegna

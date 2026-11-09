@@ -437,6 +437,8 @@ Il professore di Scienze ti ha chiesto di costruire uno strumento per aiutare la
 
 Il tuo compito è creare un quiz interattivo in Scratch che sia davvero utile per chi lo usa — non solo funzionante, ma ben progettato per l'apprendimento.
 
+> 📬 **A chi lo consegni davvero.** I compagni di un'altra seconda, prima della loro verifica. Giocano al tuo quiz senza di te. Raccogli tre commenti e chiedi: c'è un errore che avete capito grazie al feedback?
+
 ---
 
 ### La consegna

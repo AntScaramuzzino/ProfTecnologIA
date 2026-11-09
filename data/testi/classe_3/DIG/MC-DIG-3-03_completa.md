@@ -338,6 +338,8 @@ L'amministrazione della tua scuola vuole capire se le condizioni ambientali nell
 
 Non hai bisogno di hardware: puoi usare dati già disponibili. La rete ARPA della tua regione pubblica dati di temperatura, umidità e qualità dell'aria in formato aperto. Sensor.Community ha probabilmente una stazione nel tuo comune. Anche i dati meteo storici da openmeteo.com sono gratuiti e liberamente scaricabili.
 
+> 📬 **A chi lo consegni davvero.** Il dirigente, o chi a scuola si occupa della sicurezza. Consegna un solo grafico e una sola raccomandazione, per esempio aprire le finestre a ogni cambio d'ora. Proponi di provarla per una settimana.
+
 ---
 
 ### La consegna

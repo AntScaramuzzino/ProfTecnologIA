@@ -409,6 +409,8 @@ Presentazione: può essere una scheda scritta con disegni a corredo, un poster A
 
 Il Comune della tua città ha lanciato un bando per arredare la nuova area studio della biblioteca pubblica con **oggetti progettati da studenti**. Gli oggetti selezionati verranno effettivamente costruiti in un laboratorio di fabbricazione digitale (FabLab). Il tema del bando: **"Un oggetto utile per chi studia — bello, funzionale, sostenibile."**
 
+> 📬 **A chi lo consegni davvero.** Il bibliotecario della biblioteca comunale o scolastica, e tre persone che ci studiano. Mostra il progetto e chiedi che cosa cambierebbero. Il bando è inventato, i loro bisogni no.
+
 ---
 
 ### La consegna

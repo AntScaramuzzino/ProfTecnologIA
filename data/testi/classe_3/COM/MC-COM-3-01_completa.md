@@ -421,6 +421,8 @@ La scuola ha ricevuto fondi per migliorare la connettività interna. Prima di sp
 
 Il tuo compito è fare il rilievo della copertura Wi-Fi, analizzare i dati e produrre una proposta tecnica concreta.
 
+> 📬 **A chi lo consegni davvero.** Il dirigente e l'animatore digitale. Consegna la mappa della copertura con i tre punti peggiori. Chiedi: corrispondono ai posti dove i docenti si lamentano della connessione?
+
 ---
 
 ### La consegna

@@ -381,6 +381,8 @@ Scrivi una posizione argomentata (10-12 righe) che risponda alla domanda: la del
 
 La tua famiglia spende in media 500 euro al mese in spesa alimentare e prodotti di consumo. Quanto di questa spesa finisce nelle mani di chi ha prodotto materialmente quei beni? Quanto ai brand e ai distributori? Puoi fare scelte diverse — e sapere cosa cambierebbe?
 
+> 📬 **A chi lo consegni davvero.** La tua famiglia. Proponi tre sostituzioni nella spesa e provatele per un mese. Confronta uno scontrino di prima e uno di dopo, e decidete insieme che cosa tenere.
+
 ---
 
 ### La consegna

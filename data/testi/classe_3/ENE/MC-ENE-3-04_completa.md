@@ -552,6 +552,8 @@ La scuola vuole installare un sistema di segnalazione luminosa nel corridoio: un
 
 Il progetto iniziale prevede una batteria da 9V, un’autonomia di almeno 30 giorni con utilizzo per 8 ore al giorno e un montaggio su breadboard senza saldature. Verifica se questi requisiti sono compatibili con un LED acceso a 15 mA; se non lo sono, proponi una riprogettazione.
 
+> 📬 **A chi lo consegni davvero.** Un docente che fa lezione su quel corridoio. Prova il prototipo sulla sua porta per un giorno. Chiedi: lo terresti? Che cosa cambieresti?
+
 ---
 
 ### La consegna

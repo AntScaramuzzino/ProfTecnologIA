@@ -509,6 +509,8 @@ Sei un tecnico del patrimonio edilizio del tuo Comune. Il Comune ti chiede di an
 
 Il tuo obiettivo: documentare la struttura dell'edificio, capire come funziona, e valutare se ci sono aspetti migliorabili dal punto di vista sismico o energetico.
 
+> 📬 **A chi lo consegni davvero.** Chi conosce davvero l'edificio: l'ufficio tecnico del Comune, l'amministratore del condominio, il parroco. Consegna la scheda e chiedi di correggere almeno un dato, per esempio l'anno o il tipo di struttura.
+
 ---
 
 ### La consegna

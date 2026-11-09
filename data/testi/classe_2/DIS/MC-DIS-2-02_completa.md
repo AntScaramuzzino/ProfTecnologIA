@@ -397,6 +397,8 @@ Il tuo compagno di banco ha perso le istruzioni di montaggio di un oggetto e ti 
 
 In pratica: devi comunicare la forma tridimensionale di un oggetto reale usando l'assonometria.
 
+> 📬 **A chi lo consegni davvero.** Un compagno che non ha visto l'oggetto. Gli dai il disegno e tre oggetti simili: deve riconoscere quello giusto e dirti come si monta. Se sbaglia, chiedigli che cosa lo ha confuso.
+
 ---
 
 ### La consegna

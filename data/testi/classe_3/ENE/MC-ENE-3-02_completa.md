@@ -426,6 +426,8 @@ Un intervento di isolamento termico (cappotto esterno, finestre a triplo vetro) 
 
 I tuoi genitori stanno pensando di comprare una nuova automobile. Stanno discutendo se prendere un'auto a benzina (costo più basso di acquisto) o un'auto elettrica (costo più alto di acquisto, ma carburante più economico). Ti chiedono di aiutarli a ragionare sul problema — non solo in base al costo, ma anche sull'impatto ambientale.
 
+> 📬 **A chi lo consegni davvero.** I tuoi genitori, o un adulto che usa l'auto ogni giorno. Rifai il confronto con i suoi chilometri veri. Chiedi quale numero lo ha sorpreso di più.
+
 ---
 
 ### La consegna

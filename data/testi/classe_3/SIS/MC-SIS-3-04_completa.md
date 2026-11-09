@@ -383,6 +383,8 @@ Non devi sapere adesso cosa farai a 30 anni. Ma puoi costruire una mappa di quel
 
 Questa è l'unica MC del libro che ha te come oggetto di studio.
 
+> 📬 **A chi lo consegni davvero.** Un adulto che fa un lavoro che ti incuriosisce, e il docente che a scuola si occupa di orientamento. Mostra la tua mappa e chiedi: che cosa mi manca per arrivare lì?
+
 ---
 
 ### La consegna

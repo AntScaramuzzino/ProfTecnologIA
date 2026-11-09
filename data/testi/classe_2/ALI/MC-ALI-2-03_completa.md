@@ -427,6 +427,8 @@ Alla fine dei 3 giorni, rispondi a queste domande:
 
 Il medico di base della tua scuola ha avviato un programma di educazione alimentare per gli studenti di seconda media. Ti chiede di partecipare come "reporter alimentare": tieni un diario delle tue abitudini per tre giorni e poi produci una breve analisi — non per essere giudicato, ma per capire e comunicare.
 
+> 📬 **A chi lo consegni davvero.** La classe, senza nomi. Consegni solo quello che vuoi condividere: i dati di tutti finiscono insieme in un cartellone anonimo per l'atrio. Chiedi a chi lo legge quale abitudine lo ha sorpreso.
+
 ---
 
 ### La consegna

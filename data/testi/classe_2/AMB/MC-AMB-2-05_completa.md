@@ -417,6 +417,8 @@ Fai l'inventario di quello che hai mangiato e bevuto negli ultimi 2 giorni. Usa 
 
 Il tuo istituto scolastico ha aderito al programma nazionale "Scuola per il clima" e ti ha chiesto di produrre un'analisi dell'uso dell'acqua nella scuola, con proposte concrete di risparmio. I risultati verranno presentati al Consiglio di Istituto e pubblicati sul sito della scuola.
 
+> 📬 **A chi lo consegni davvero.** Il Consiglio di istituto, attraverso i rappresentanti dei genitori, e i collaboratori scolastici, che vedono rubinetti e scarichi ogni giorno. Consegna l'analisi e chiedi quale proposta si può provare per un mese.
+
 ---
 
 ### La consegna

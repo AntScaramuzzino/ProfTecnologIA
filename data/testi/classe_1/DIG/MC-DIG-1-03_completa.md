@@ -391,6 +391,8 @@ La tua classe organizza una "Caccia al Tesoro" nel cortile della scuola. La prof
 
 Il problema: le istruzioni vanno scritte in modo così preciso che chiunque, anche qualcuno che non conosce il cortile, possa seguirle. E devono prevedere situazioni impreviste: "SE la porta è chiusa, vai all'alternativa B".
 
+> 📬 **A chi lo consegni davvero.** Un gruppo che non ha mai visto il tuo percorso: un'altra classe, oppure una quinta della primaria. Esegue l'algoritmo senza di te e senza fare domande. Fatti dire il punto esatto in cui si è bloccato.
+
 ---
 
 ### La consegna

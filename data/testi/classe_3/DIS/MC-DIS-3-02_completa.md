@@ -414,6 +414,8 @@ Il **FabLab della tua città** ha avviato un progetto: raccogliere file STL di o
 
 Esempi di oggetti che rispondono al tema: supporto per alzare lo schermo di un computer (riduce affaticamento del collo), guida tattile per la tastiera per studenti con disabilità visiva, porta-foglio inclinato per chi ha difficoltà motorie alle mani, amplificatore acustico senza elettronica per l'ingresso del microfono del PC, supporto per tablet per posizioni di lettura non standard.
 
+> 📬 **A chi lo consegni davvero.** La persona che userebbe l'oggetto, insieme al docente di sostegno. Se la scuola o un laboratorio vicino ha una stampante 3D, fallo stampare e provare. Chiedi che cosa non funziona nell'uso vero.
+
 ---
 
 ### La consegna

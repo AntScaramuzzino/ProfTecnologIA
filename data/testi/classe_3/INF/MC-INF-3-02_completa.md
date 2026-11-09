@@ -315,6 +315,8 @@ Il tuo docente ti fornisce (o puoi scaricare dal QR code) un dataset anonimizzat
 
 Il tuo comune sta valutando di usare un algoritmo di machine learning per identificare le famiglie più a rischio di morosità nelle bollette e contattarle in anticipo con supporto sociale. Un'intenzione nobile — ma il sistema usa dati storici che riflettono disuguaglianze esistenti.
 
+> 📬 **A chi lo consegni davvero.** Il docente di educazione civica e un adulto di casa. Consegna il tuo parere in una pagina. Chiedi all'adulto: ti fideresti di questo sistema, se riguardasse la tua famiglia?
+
 ---
 
 ### La consegna

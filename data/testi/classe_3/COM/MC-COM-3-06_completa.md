@@ -457,6 +457,8 @@ Una settimana fa, nei gruppi WhatsApp delle famiglie della scuola ha iniziato a 
 
 La redazione de *Il Bullone* decide di pubblicare un'analisi del post per aiutare la comunità scolastica a capire cosa è successo.
 
+> 📬 **A chi lo consegni davvero.** Il giornalino o il sito della scuola, se esistono; altrimenti la bacheca dell'atrio. Prima fai leggere la smentita a due genitori: capiscono in trenta secondi che cosa è vero?
+
 ---
 
 ### La consegna

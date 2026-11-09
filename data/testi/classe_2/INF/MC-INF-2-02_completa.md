@@ -307,6 +307,8 @@ Se non conosci la chiave, quanti tentativi devi fare al massimo per decifrare un
 
 La tua scuola usa un registro elettronico accessibile da casa. Un giorno noti che il sito usa HTTP invece di HTTPS. Il preside non è sicuro di cosa significhi e ti chiede di spiegargli il problema e di proporre una soluzione.
 
+> 📬 **A chi lo consegni davvero.** L'animatore digitale o il dirigente. Controlla tre siti che la scuola usa davvero e consegna l'esito in una pagina: quali usano HTTPS, quali no, che cosa conviene fare.
+
 ---
 
 ### La consegna

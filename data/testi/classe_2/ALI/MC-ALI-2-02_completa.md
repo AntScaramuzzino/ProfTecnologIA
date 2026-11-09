@@ -397,6 +397,8 @@ La tua famiglia ha il problema che tutti hanno: ogni settimana butta del cibo. Q
 
 Il costo economico dello spreco alimentare in una famiglia italiana media è di circa 500 euro l'anno (dati ISPRA 2023). Il costo ambientale è ancora maggiore: produrre cibo che poi va sprecato significa sprecare anche tutta l'acqua, l'energia e il suolo usati per produrlo.
 
+> 📬 **A chi lo consegni davvero.** La tua famiglia. Attacca allo sportello del frigo le tre regole che hai ricavato. Dopo due settimane conta che cosa è stato buttato e confronta con prima. Porta in classe i due numeri.
+
 ---
 
 ### La consegna

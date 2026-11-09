@@ -301,6 +301,8 @@ Su **Android:** Impostazioni → Gestione applicazioni → App in esecuzione.
 
 La tua classe deve gestire una cartella condivisa su Google Drive (o un server scolastico) per il progetto interdisciplinare di fine anno. Ci sono 25 studenti, 4 materie coinvolte, materiali di tipo diverso (testi, foto, video, presentazioni) e la necessità che ogni gruppo possa lavorare sui propri file senza interferire con gli altri.
 
+> 📬 **A chi lo consegni davvero.** Il coordinatore di classe e i docenti del progetto. La tua struttura di cartelle viene adottata davvero per due settimane. Poi conta i file finiti nel posto sbagliato.
+
 ---
 
 ### La consegna

@@ -439,6 +439,8 @@ La tua classe ha deciso di realizzare un **audit del packaging** della mensa sco
 
 Ma prima di fare l'audit di classe, fai una prova individuale a casa.
 
+> 📬 **A chi lo consegni davvero.** Chi gestisce la mensa o il bar della scuola. Se non c'è, la tua famiglia. Consegna i risultati dell'audit con una sola richiesta precisa. Chiedi una risposta: si può fare, e da quando?
+
 ---
 
 ### La consegna

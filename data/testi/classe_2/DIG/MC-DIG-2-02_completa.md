@@ -389,6 +389,8 @@ La tua classe partecipa a un progetto di "sensibilizzazione alla privacy digital
 
 Il risultato sarà esposto alla mostra di fine anno della scuola, con l'obiettivo di aiutare famiglie e studenti a capire cosa succede davvero quando si naviga online.
 
+> 📬 **A chi lo consegni davvero.** I genitori e i visitatori della scuola. La mappa va esposta nell'atrio con una domanda accanto: che cosa non sapevi? Raccogli le risposte su foglietti e contale.
+
 ---
 
 ### La consegna

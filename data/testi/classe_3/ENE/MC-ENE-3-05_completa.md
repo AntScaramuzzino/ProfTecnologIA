@@ -425,6 +425,8 @@ La tua famiglia sta valutando l'acquisto di una nuova auto. Devono scegliere tra
 
 Ti chiedono di fare un'analisi tecnica per aiutarli a scegliere.
 
+> 📬 **A chi lo consegni davvero.** Un adulto che prima o poi dovrà cambiare auto. Sostituisci i dati dello scenario con i suoi: chilometri, città o autostrada, possibilità di ricarica. Chiedi se l'analisi gli fa cambiare idea.
+
 ---
 
 ### La consegna

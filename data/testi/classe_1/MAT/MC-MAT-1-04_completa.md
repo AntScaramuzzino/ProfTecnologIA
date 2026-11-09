@@ -496,6 +496,8 @@ Il Comune paga per raccogliere e smaltire quei rifiuti. Il costo dipende (anche)
 
 Tu puoi misurare la situazione attuale — e proporre come migliorarla.
 
+> 📬 **A chi lo consegni davvero.** I collaboratori scolastici, che vedono i bidoni ogni giorno, e l'ufficio del Comune che si occupa di rifiuti. Consegna i dati di una settimana e una sola proposta. Chiedi che cosa è fattibile da subito.
+
 ---
 
 ### La consegna

@@ -393,6 +393,8 @@ Competenze chiave che inizia a costruire da qui: biotecnologie alimentari · bio
 
 La tua classe ha deciso di partecipare a un concorso scolastico regionale intitolato "Semino quello che mangio". Il tema: dimostrare che è possibile coltivare almeno un alimento in classe o a casa, documentando il processo con metodo scientifico.
 
+> 📬 **A chi lo consegni davvero.** Un adulto che coltiva davvero: un nonno, un vicino con l'orto, un agricoltore. Fagli leggere il tuo diario di coltivazione. Chiedi: che cosa avresti fatto in modo diverso? Riporta la risposta nel diario.
+
 ---
 
 ### La consegna

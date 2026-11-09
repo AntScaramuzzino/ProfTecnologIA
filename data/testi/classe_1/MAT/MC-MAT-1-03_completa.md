@@ -477,6 +477,8 @@ La mensa scolastica usa ogni giorno centinaia di bicchieri di polistirolo per le
 
 Ti chiede di fare una proposta concreta: analizzare un imballaggio attualmente in uso nella scuola e proporre un'alternativa basata su un materiale innovativo o più sostenibile.
 
+> 📬 **A chi lo consegni davvero.** Chi gestisce la mensa o i distributori della scuola, attraverso il dirigente. Consegna la proposta in una sola pagina. Chiedi una risposta scritta: sì o no, e perché.
+
 ---
 
 ### La consegna

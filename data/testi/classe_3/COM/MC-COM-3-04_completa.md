@@ -454,6 +454,8 @@ Il progetto ha un budget di 1.500 euro per appartamento. Hai tre mesi di tempo. 
 
 Ti viene assegnato il caso di **Giuseppina, 81 anni**: vive al terzo piano di un condominio senza ascensore, ha la vista ridotta (ma non è cieca), prende farmaci la sera, ha una grande paura delle cadute dopo che una sua amica si è rotta il femore, parla spesso al telefono con i nipoti, e tiene molto alla sua privacy.
 
+> 📬 **A chi lo consegni davvero.** Una persona anziana che conosci: una nonna, un vicino. Mostrale il progetto pensato per Giuseppina e chiedi che cosa userebbe davvero e che cosa no. Poi modificalo.
+
 ---
 
 ### La consegna

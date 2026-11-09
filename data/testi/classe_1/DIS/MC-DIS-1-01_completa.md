@@ -638,6 +638,8 @@ Il tuo comune sta pianificando di ristrutturare un corridoio della scuola. L'arc
 
 Non è un disegno decorativo. È uno strumento di lavoro: qualcuno prenderà decisioni guardando quello che disegni.
 
+> 📬 **A chi lo consegni davvero.** Il docente o il collaboratore scolastico che usa quell'aula ogni giorno. Consegnagli la pianta e chiedigli di controllare due misure con il metro. Se tornano, la pianta resta appesa in aula.
+
 ---
 
 ### La consegna

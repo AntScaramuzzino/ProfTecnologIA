@@ -417,6 +417,8 @@ ProPublica ha analizzato 7.000 casi in Florida (2016) e trovato che il sistema c
 
 Sei un consulente di una piccola associazione che promuove l'uso critico della tecnologia nelle scuole. Ti è stato chiesto di preparare una **scheda di analisi critica** per tre applicazioni IA comuni tra studenti — da distribuire come materiale didattico.
 
+> 📬 **A chi lo consegni davvero.** Una classe seconda. Riceve le tue tre schede come materiale di lavoro. Chiedi ai compagni quale applicazione useranno in modo diverso dopo averle lette.
+
 ---
 
 ### La consegna

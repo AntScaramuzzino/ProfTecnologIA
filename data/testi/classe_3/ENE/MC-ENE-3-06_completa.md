@@ -407,6 +407,8 @@ Il Comune ha:
 
 Il Comune ti incarica di una relazione tecnica di fattibilità. Non devi risolvere ogni dettaglio ingegneristico: devi capire le opzioni, valutarle qualitativamente e quantitativamente dove possibile, e dare una raccomandazione motivata.
 
+> 📬 **A chi lo consegni davvero.** Una classe terza che fa da consiglio comunale e vota il tuo piano. Se vivi in un piccolo Comune, consegnalo anche all'ufficio tecnico e chiedi quale parte è realistica.
+
 ---
 
 ### La consegna

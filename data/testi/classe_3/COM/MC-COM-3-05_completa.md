@@ -395,6 +395,8 @@ I sostenitori della legge dicono: protegge i cittadini dalla disinformazione, di
 
 I critici dicono: è censura, crea un meccanismo facilmente abusabile per bloccare dissenso legittimo, e viola la net neutrality garantita dal regolamento UE.
 
+> 📬 **A chi lo consegni davvero.** Una giuria che non conosce l'argomento: una classe parallela, oppure un adulto di casa. Legge la tua posizione in una pagina e ti dice se lo hai convinto, e con quale argomento.
+
 ---
 
 ### La consegna

@@ -382,6 +382,8 @@ Competenze chiave che inizia a costruire da qui: gestione sostenibilità · supp
 
 C'è un problema nella tua scuola o nel tuo quartiere che la tecnologia o un'organizzazione intelligente potrebbe risolvere. Non deve essere un problema enorme: basta che sia reale, specifico e che tu possa parlare con persone che lo hanno.
 
+> 📬 **A chi lo consegni davvero.** Le persone che hanno il problema. Mostra la tua soluzione minima a tre di loro e conta quante la userebbero davvero. Quel numero vale più del tuo parere.
+
 ---
 
 ### La consegna

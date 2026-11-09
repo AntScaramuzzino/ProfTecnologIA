@@ -341,6 +341,8 @@ La tua scuola organizza un torneo di scacchi. Ci sono 64 studenti iscritti. I no
 
 Sei tu a organizzare il procedimento.
 
+> 📬 **A chi lo consegni davvero.** Un docente o un compagno che deve davvero mettere in ordine un elenco: gli iscritti a un torneo, i libri della biblioteca di classe. Consegnagli il procedimento scritto e fatti dire se, seguendolo, ci ha messo meno.
+
 ---
 
 ### La consegna

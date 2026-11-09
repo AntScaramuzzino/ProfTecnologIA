@@ -415,6 +415,8 @@ Documenta il processo con il formato della Zona 4 Avanzato.
 
 La tua scuola ha partecipato a un bando regionale: **"Robotica per l'inclusione."** Il finanziamento copre l'acquisto di 10 kit micro:bit. Spetta a te e al tuo gruppo progettare quale problema reale della scuola può essere risolto con questo hardware.
 
+> 📬 **A chi lo consegni davvero.** La persona che ha il problema che vuoi risolvere, insieme al docente referente per l'inclusione. Presentale il progetto prima di costruirlo. Chiedi: lo useresti? Che cosa ti darebbe fastidio?
+
 ---
 
 ### La consegna

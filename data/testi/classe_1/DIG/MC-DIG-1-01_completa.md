@@ -466,6 +466,8 @@ La tua scuola ha ricevuto in donazione 10 computer usati da un'azienda. Nessuno 
 
 Quel qualcuno sei tu.
 
+> 📬 **A chi lo consegni davvero.** La persona che a scuola si occupa dei computer (animatore digitale o tecnico). Fai la relazione su un computer vero dell'aula e consegnagliela. Chiedi: la tua raccomandazione coincide con la sua?
+
 ---
 
 ### La consegna

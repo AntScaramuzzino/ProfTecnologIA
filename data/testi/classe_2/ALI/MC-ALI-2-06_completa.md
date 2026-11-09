@@ -463,6 +463,8 @@ La tua classe pubblica ogni anno un **blog scolastico di tecnologia**. Per quest
 
 La scheda deve essere utile, onesta, e non semplificare troppo. I lettori del blog sono studenti delle medie: intelligenti, curiosi, ma non esperti.
 
+> 📬 **A chi lo consegni davvero.** Una classe prima. Legge la tua scheda e segna a margine i punti non chiari. Tu la correggi e la riconsegni. Conta quanti punti oscuri sono rimasti alla seconda lettura.
+
 ---
 
 ### La consegna

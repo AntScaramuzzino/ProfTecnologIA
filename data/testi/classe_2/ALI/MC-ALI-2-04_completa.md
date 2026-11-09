@@ -432,6 +432,8 @@ La tua scuola ha deciso di pubblicare ogni anno una "Guida al consumo consapevol
 
 Il tuo insegnante ti ha chiesto di contribuire con una scheda su un prodotto alimentare che usi regolarmente — che analizzi la sua filiera, le sue food miles stimate, e suggerisca un'alternativa più sostenibile o più equa.
 
+> 📬 **A chi lo consegni davvero.** Le famiglie della classe. Le schede di tutti diventano una guida vera, stampata o pubblicata sul sito della scuola. Chiedi a tre famiglie: quale scheda vi ha fatto cambiare un acquisto?
+
 ---
 
 ### La consegna

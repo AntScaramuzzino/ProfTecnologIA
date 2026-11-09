@@ -380,6 +380,8 @@ Scrivi un documento di 18-22 righe per il Comune, strutturato con: obiettivi, de
 
 Il tuo Comune ha pubblicato un bando rivolto alle scuole secondarie: "Smart School for Smart City". Ogni istituto può presentare un progetto per rendere il proprio quartiere scolastico più intelligente, sostenibile e partecipato usando dati e tecnologia. Il progetto vincitore riceverà un contributo di 3.000 € per realizzarlo.
 
+> 📬 **A chi lo consegni davvero.** L'assessore o l'ufficio del Comune che si occupa di scuola. Il bando dello scenario è inventato, la proposta no: consegnala in una pagina e chiedi con chi andrebbe discussa.
+
 ---
 
 ### La consegna

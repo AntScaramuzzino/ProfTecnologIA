@@ -338,6 +338,8 @@ La risposta, probabilmente, è no — o non completamente. E questo ha conseguen
 
 Puoi fare qualcosa di concreto.
 
+> 📬 **A chi lo consegni davvero.** Chi gestisce il sito della scuola. Consegna i tre problemi più gravi, ciascuno con la correzione. Chiedi quale sistemerà per primo, e ricontrolla dopo un mese.
+
 ---
 
 ### La consegna

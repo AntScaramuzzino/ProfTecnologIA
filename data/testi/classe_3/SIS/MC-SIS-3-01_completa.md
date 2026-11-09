@@ -385,6 +385,8 @@ Vivi in una città o in un paese che ha un'economia: produttori, commercianti, a
 
 Capire la struttura economica del tuo territorio non è solo cultura generale: ti serve per scegliere dove lavorare, cosa comprare, come votare su politiche economiche locali. È competenza di cittadinanza economica concreta.
 
+> 📬 **A chi lo consegni davvero.** Un commerciante o un imprenditore del tuo paese. Mostragli la tua mappa dell'economia locale. Chiedi: che cosa manca? Da dove arrivano i tuoi fornitori?
+
 ---
 
 ### La consegna

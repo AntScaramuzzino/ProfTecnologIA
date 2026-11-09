@@ -296,6 +296,8 @@ Calcola il costo totale di installazione (sensori + connettività + server). Con
 
 Il Comune della tua città ha lanciato un bando per installare sensori di qualità dell'aria in 5 punti strategici (vicino a scuole, ospedali, parchi). I dati saranno pubblici. La tua classe ha deciso di partecipare con una proposta.
 
+> 📬 **A chi lo consegni davvero.** L'ufficio ambiente del Comune. Consegna la mappa con i cinque punti e il motivo di ciascuno. Chiedi dove si trovano oggi le centraline che misurano l'aria.
+
 ---
 
 ### La consegna

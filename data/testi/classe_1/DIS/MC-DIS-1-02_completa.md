@@ -629,6 +629,8 @@ Il tuo istituto partecipa a un concorso nazionale "Scuole che progettano". La ca
 
 L'arch. Ferrara — che segue il progetto per conto della scuola — ti ha dato le indicazioni: un disegno tecnico, a scala corretta, quotato, con cartiglio completo. Non uno schizzo — un disegno che lei possa usare come documento tecnico.
 
+> 📬 **A chi lo consegni davvero.** Il dirigente scolastico, o chi a scuola si occupa della sicurezza. Consegna pianta e proposta di modifica. Chiedi una risposta in due righe: si può fare? Se no, che cosa lo impedisce?
+
 ---
 
 ### La consegna

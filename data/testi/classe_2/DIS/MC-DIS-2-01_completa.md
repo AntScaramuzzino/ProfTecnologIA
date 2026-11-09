@@ -422,6 +422,8 @@ Il laboratorio di tecnologia della tua scuola ha ricevuto una commissione insoli
 
 Il tuo compito è produrre la tavola tecnica di quell'oggetto — o di un oggetto semplice di tua scelta — come se dovesse essere inviata a un'officina per essere riprodotta.
 
+> 📬 **A chi lo consegni davvero.** Un compagno di un'altra classe, che deve ricostruire l'oggetto in cartoncino guardando soltanto la tua tavola. Confronta la copia con l'originale: ogni differenza è un'informazione che mancava.
+
 ---
 
 ### La consegna

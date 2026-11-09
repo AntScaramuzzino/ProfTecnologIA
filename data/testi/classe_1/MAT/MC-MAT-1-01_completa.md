@@ -610,6 +610,8 @@ Ti chiedono di fare una cosa concreta: analizzare 5 oggetti della vostra casa e 
 - Perché è stato scelto quel materiale — quale proprietà lo rende utile in quel ruolo?
 - Dove va quando non serve più?
 
+> 📬 **A chi lo consegni davvero.** La tua famiglia, davvero. Una sera presenta a tavola i cinque oggetti e le tre risposte. Chiedi di scegliere insieme un solo acquisto da cambiare. Porta in classe la decisione presa.
+
 ---
 
 ### La consegna

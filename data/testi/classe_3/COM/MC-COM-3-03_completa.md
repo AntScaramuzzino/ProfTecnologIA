@@ -449,6 +449,8 @@ La tua scuola vuole ridurre il proprio impatto ambientale. Gli impianti sono gi�
 
 Il tuo compito è raccogliere i dati, analizzarli, e proporre un piano realistico.
 
+> 📬 **A chi lo consegni davvero.** Il dirigente e l'ufficio del Comune che si occupa di traffico o di polizia locale. Consegna i dati della classe e una sola richiesta, per esempio una rastrelliera o un pedibus. Chiedi una risposta scritta.
+
 ---
 
 ### La consegna

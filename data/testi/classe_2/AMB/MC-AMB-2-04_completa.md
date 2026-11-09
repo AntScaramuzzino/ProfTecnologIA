@@ -420,6 +420,8 @@ Il tuo comune sta pianificando la ristrutturazione di tre edifici scolastici cos
 
 Ti viene assegnato l'edificio della tua scuola (o un edificio del tuo quartiere, se la scuola non è accessibile dall'esterno).
 
+> 📬 **A chi lo consegni davvero.** Il dirigente scolastico e l'ufficio tecnico dell'ente proprietario dell'edificio, di solito il Comune. Consegna la scheda energetica con le foto. Chiedi: quale intervento è già in programma?
+
 ---
 
 ### La consegna

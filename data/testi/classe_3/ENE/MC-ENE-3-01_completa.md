@@ -464,6 +464,8 @@ Tua cugina ha 8 anni e sta guardando i lavori di costruzione di un edificio vici
 
 Tu sai rispondere. E mentre le spieghi, ti rendi conto di una cosa: ogni macchina semplice che conosci esiste già intorno a te, ogni giorno.
 
+> 📬 **A chi lo consegni davvero.** Un bambino vero: un fratello, una cugina, un alunno della primaria. Dopo la tua spiegazione chiedigli di rispiegarla con parole sue. Se ci riesce, la spiegazione funziona.
+
 ---
 
 ### La consegna
