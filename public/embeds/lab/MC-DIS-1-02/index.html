@@ -663,5 +663,134 @@ html.lim .muted{color:var(--fg);opacity:.85}
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount); else mount();
 })();
 </script>
+<style>
+/* Modalità LIM · percorso a passi: una cosa per schermata, niente scorrimento lungo */
+.lim-steps{display:none}
+html.lim .lim-steps{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:50;display:flex;align-items:center;gap:10px;background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:8px;box-shadow:0 6px 20px rgba(0,0,0,.18);max-width:calc(100vw - 24px)}
+.lim-steps button{font:inherit;font-weight:800;font-size:20px;height:56px;border-radius:999px;border:2px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer;padding:0 22px;white-space:nowrap}
+.lim-steps button:disabled{opacity:.35;cursor:default}
+.lim-steps .lim-next{background:var(--lab);border-color:var(--lab);color:var(--surface)}
+.lim-steps button:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.lim-dots{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+.lim-dots button{font-size:17px;font-weight:700;height:48px;padding:0 16px;border-width:2px;color:var(--muted)}
+.lim-dots button .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--lab-bg);color:var(--lab);font-size:14px;margin-right:8px}
+.lim-dots button[aria-current="step"]{border-color:var(--lab);color:var(--fg)}
+.lim-dots button[aria-current="step"] .n{background:var(--lab);color:var(--surface)}
+html.lim .lim-steps[hidden]{display:none}
+html.lim body{padding-bottom:110px}
+html.lim .lim-off{display:none!important}
+/* meno testo a video: niente chip, regole della verifica e didascalie ridondanti */
+html.lim header.lab-head .chips{display:none}
+html.lim header.lab-head{padding-right:300px}
+html.lim .verif-head p{display:none}
+html.lim .verif{margin-top:0}
+/* verifica: una domanda per volta */
+html.lim .verif .vq{display:none}
+html.lim .verif .vq.lim-cur{display:flex;border-top:0;padding-top:0}
+html.lim .verif .vq-q{font-size:22px}
+html.lim .verif .vq-opts button{font-size:17px;padding:12px 14px}
+.lim-qnav{display:none}
+html.lim .lim-qnav{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--muted)}
+html.lim .lim-qnav button{font:inherit;font-weight:800;min-height:44px;padding:0 16px;border-radius:999px;border:2px solid var(--lab);background:var(--surface);color:var(--lab);cursor:pointer}
+html.lim .lim-qnav button:disabled{opacity:.35;cursor:default}
+@media (max-width:1100px){.lim-dots .t{display:none}.lim-dots button .n{margin-right:0}}
+</style>
+<script>
+// Modalità LIM · percorso a passi. In LIM ogni scheda livello diventa una sequenza di schermate:
+// consegna + prima attività → attività successive → Rifletti → Verifica (una domanda per volta) → Compito.
+// Si naviga con la barra in basso, con PagSu/PagGiù o con le frecce del telecomando/presenter.
+// Fuori dalla modalità LIM la pagina resta identica (tutte le regole valgono solo sotto html.lim).
+(function () {
+  const root = document.documentElement;
+  const mk = (t, c, h) => { const e = document.createElement(t); if (c) e.className = c; if (h != null) e.innerHTML = h; return e; };
+  const bar = mk("nav", "lim-steps"); bar.setAttribute("aria-label", "Passi del laboratorio");
+  const prev = mk("button", null, "◀ Indietro"); prev.type = "button";
+  const dots = mk("div", "lim-dots");
+  const next = mk("button", "lim-next", "Avanti ▶"); next.type = "button";
+  bar.append(prev, dots, next);
+  let steps = [], cur = 0, panel = null;
+  const all = () => steps.flatMap((s) => s.els);
+
+  function label(el) {
+    if (el.classList.contains("meta")) return "Rifletti";
+    if (el.classList.contains("verif")) return "Verifica";
+    if (el.classList.contains("bridge")) return "Compito";
+    const h = el.querySelector(".blk-h, h3, h2"); if (h) return h.textContent.trim();
+    return el.classList.contains("brief") ? "Consegna" : "Attività";
+  }
+  function build() {
+    all().forEach((e) => e.classList.remove("lim-off"));
+    panel = document.querySelector(".wrap > .panel:not([hidden])"); steps = [];
+    if (!panel) { bar.hidden = true; return; }
+    const kids = [...panel.children];
+    for (let i = 0; i < kids.length; i++) {
+      const e = kids[i];
+      // la consegna sta sopra la prima attività, nella stessa schermata
+      if (e.classList.contains("brief") && kids[i + 1]) { steps.push({ els: [e, kids[i + 1]], t: label(kids[i + 1]) }); i++; continue; }
+      steps.push({ els: [e], t: label(e) });
+    }
+    const br = document.querySelector(".wrap > .bridge"); if (br) steps.push({ els: [br], t: "Compito" });
+    dots.innerHTML = "";
+    steps.forEach((s, i) => {
+      const t = s.t.length > 22 ? s.t.slice(0, 20).trim() + "…" : s.t;
+      const b = mk("button", null, `<span class="n">${i + 1}</span><span class="t">${t.replace(/[&<>]/g, "")}</span>`);
+      b.type = "button"; b.title = s.t; b.onclick = () => go(i); dots.appendChild(b);
+    });
+    bar.hidden = steps.length < 2;
+    if (steps.length < 2) { clear(); return; }
+    cur = Math.min(cur, steps.length - 1); go(cur, true);
+  }
+  function go(i, quiet) {
+    if (!steps.length) return;
+    cur = Math.max(0, Math.min(steps.length - 1, i));
+    all().forEach((e) => e.classList.add("lim-off"));
+    steps[cur].els.forEach((e) => e.classList.remove("lim-off"));
+    [...dots.children].forEach((b, j) => { if (j === cur) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current"); });
+    dots.children[cur]?.scrollIntoView({ inline: "center", block: "nearest" });
+    prev.disabled = cur === 0; next.disabled = cur === steps.length - 1;
+    if (!quiet) window.scrollTo({ top: 0 });
+    window.dispatchEvent(new Event("resize")); // grafici e 3D si ridisegnano quando diventano visibili
+  }
+  function clear() { all().forEach((e) => e.classList.remove("lim-off")); }
+  prev.onclick = () => go(cur - 1); next.onclick = () => go(cur + 1);
+
+  // Verifica: una domanda per volta, con «Domanda n di N»
+  function pager(v) {
+    if (v.dataset.limq) return; v.dataset.limq = "1";
+    const body = v.querySelector(".verif-body"); if (!body) return;
+    const nav = mk("div", "lim-qnav"); const pb = mk("button", null, "◀"); const txt = mk("span"); const nb = mk("button", null, "Domanda successiva ▶");
+    pb.type = nb.type = "button"; nav.append(pb, txt, nb); body.after(nav);
+    let q = 0;
+    const show = () => { const qs = [...body.querySelectorAll(".vq")]; if (!qs.length) return; q = Math.max(0, Math.min(qs.length - 1, q));
+      qs.forEach((x, j) => x.classList.toggle("lim-cur", j === q)); txt.textContent = `Domanda ${q + 1} di ${qs.length}`; pb.disabled = q === 0; nb.disabled = q === qs.length - 1; };
+    pb.onclick = () => { q--; show(); }; nb.onclick = () => { q++; show(); };
+    new MutationObserver(() => { if (!body.querySelector(".vq.lim-cur")) { q = 0; show(); } }).observe(body, { childList: true });
+    show();
+  }
+
+  function sync() {
+    const on = root.classList.contains("lim");
+    if (on) { build(); } else clear();
+  }
+  function mount() {
+    document.body.appendChild(bar);
+    document.querySelectorAll(".verif").forEach(pager);
+    // cambio di livello: ricostruisci i passi quando cambia la scheda visibile (in qualunque modo avvenga)
+    let tmr = 0;
+    const onPanel = () => { clearTimeout(tmr); tmr = setTimeout(() => { const p = document.querySelector(".wrap > .panel:not([hidden])"); if (p !== panel) cur = 0; if (root.classList.contains("lim")) build(); }, 0); };
+    document.querySelectorAll(".wrap > .panel").forEach((p) => new MutationObserver(onPanel).observe(p, { attributes: true, attributeFilter: ["hidden"] }));
+    document.addEventListener("keydown", (e) => {
+      if (!root.classList.contains("lim")) return;
+      const tag = (e.target.tagName || "").toLowerCase(); if (tag === "textarea" || tag === "input" || tag === "select") return;
+      if (e.key === "PageDown") { e.preventDefault(); go(cur + 1); }
+      if (e.key === "PageUp") { e.preventDefault(); go(cur - 1); }
+    });
+    new MutationObserver(sync).observe(root, { attributes: true, attributeFilter: ["class"] });
+    sync();
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount); else mount();
+})();
+</script>
+
 </body>
 </html>

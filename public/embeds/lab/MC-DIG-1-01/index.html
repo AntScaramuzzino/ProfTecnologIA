@@ -666,6 +666,7 @@ html.lim .muted{color:var(--fg);opacity:.85}
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", mount); else mount();
 })();
 </script>
+
 <style>
 /* Modalità LIM · percorso a passi: una cosa per schermata, niente scorrimento lungo */
 .lim-steps{display:none}
@@ -679,6 +680,7 @@ html.lim .lim-steps{position:fixed;left:50%;bottom:14px;transform:translateX(-50
 .lim-dots button .n{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--lab-bg);color:var(--lab);font-size:14px;margin-right:8px}
 .lim-dots button[aria-current="step"]{border-color:var(--lab);color:var(--fg)}
 .lim-dots button[aria-current="step"] .n{background:var(--lab);color:var(--surface)}
+html.lim .lim-steps[hidden]{display:none}
 html.lim body{padding-bottom:110px}
 html.lim .lim-off{display:none!important}
 /* meno testo a video: niente chip, regole della verifica e didascalie ridondanti */
@@ -722,8 +724,8 @@ html.lim .lim-qnav button:disabled{opacity:.35;cursor:default}
   }
   function build() {
     all().forEach((e) => e.classList.remove("lim-off"));
-    panel = document.querySelector(".panel:not([hidden])"); steps = [];
-    if (!panel) return;
+    panel = document.querySelector(".wrap > .panel:not([hidden])"); steps = [];
+    if (!panel) { bar.hidden = true; return; }
     const kids = [...panel.children];
     for (let i = 0; i < kids.length; i++) {
       const e = kids[i];
@@ -738,6 +740,8 @@ html.lim .lim-qnav button:disabled{opacity:.35;cursor:default}
       const b = mk("button", null, `<span class="n">${i + 1}</span><span class="t">${t.replace(/[&<>]/g, "")}</span>`);
       b.type = "button"; b.title = s.t; b.onclick = () => go(i); dots.appendChild(b);
     });
+    bar.hidden = steps.length < 2;
+    if (steps.length < 2) { clear(); return; }
     cur = Math.min(cur, steps.length - 1); go(cur, true);
   }
   function go(i, quiet) {
@@ -775,7 +779,10 @@ html.lim .lim-qnav button:disabled{opacity:.35;cursor:default}
   function mount() {
     document.body.appendChild(bar);
     document.querySelectorAll(".verif").forEach(pager);
-    document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => { cur = 0; if (root.classList.contains("lim")) build(); }));
+    // cambio di livello: ricostruisci i passi quando cambia la scheda visibile (in qualunque modo avvenga)
+    let tmr = 0;
+    const onPanel = () => { clearTimeout(tmr); tmr = setTimeout(() => { const p = document.querySelector(".wrap > .panel:not([hidden])"); if (p !== panel) cur = 0; if (root.classList.contains("lim")) build(); }, 0); };
+    document.querySelectorAll(".wrap > .panel").forEach((p) => new MutationObserver(onPanel).observe(p, { attributes: true, attributeFilter: ["hidden"] }));
     document.addEventListener("keydown", (e) => {
       if (!root.classList.contains("lim")) return;
       const tag = (e.target.tagName || "").toLowerCase(); if (tag === "textarea" || tag === "input" || tag === "select") return;
