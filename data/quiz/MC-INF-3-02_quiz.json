@@ -450,8 +450,8 @@
         },
         {
           "id": "c",
-          "testo": "Usare il modello ML solo come supporto decisionale, con revisione umana finale di tutte le decisioni di assunzione",
-          "feedback": "Non è del tutto sbagliato (la revisione umana è utile), ma non risponde alla domanda su come ridurre il bias nel modello ML stesso. Il bias algoritmico va affrontato alla fonte: nei dati e nell'architettura del modello, non solo aggiungendo una revisione umana che può perpetuare gli stessi bias.",
+          "testo": "Tenere segreti i criteri del modello, così nessun candidato può influenzarlo",
+          "feedback": "Non è corretto. La segretezza impedisce di controllare se il sistema discrimina. Per ridurre il bias servono il contrario: trasparenza, misure di equità e verifiche sui risultati.",
           "riferimento": "📖 ESPLORA — Bias algoritmico"
         },
         {

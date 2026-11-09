@@ -277,7 +277,7 @@ Nei telai in acciaio e nei edifici in cemento armato, la resistenza sismica si o
 
 I **dissipatori** sono dispositivi che assorbono l'energia del sisma trasformandola in calore. Esistono diversi tipi: dissipatori viscosi (funzionano come gli ammortizzatori di un'auto), dissipatori isteretici (sfruttano la deformazione plastica di elementi metallici).
 
-La Torre di Pavia (sede Intesa Sanpaolo a Torino, 2015) ha 16 dissipatori sismici integrati nella struttura, ciascuno capace di assorbire l'energia di un'auto lanciata a 100 km/h.
+Il grattacielo Intesa Sanpaolo a Torino (2015) ha 16 dissipatori sismici integrati nella struttura, ciascuno capace di assorbire l'energia di un'auto lanciata a 100 km/h.
 
 ---
 
