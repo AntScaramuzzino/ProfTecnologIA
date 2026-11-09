@@ -1,46 +1,59 @@
 "use client";
 
 /**
- * ResourcesPanel — P1.3
- * Pannello aggregato che elenca tutte le risorse disponibili per una MC
- * (audio hook, video playlist, flashcard, quiz) con contatori e link rapidi.
+ * ResourcesPanel — mappa dei materiali della MC, nella zona INNESCA.
+ * Elenca, zona per zona, tutto ciò che la MC offre (audio, testo, immagini e video animati,
+ * presentazione, costruzioni GeoGebra, laboratorio interattivo, escape room, compito di realtà,
+ * microlearning, quiz, flashcard, professioni, CLIL) con i conteggi e un pulsante che porta alla zona.
  *
- * Posizionamento: dentro la zona INNESCA, dopo il player audio,
- * oppure come sezione separata nella aside desktop.
- *
- * Non carica i dati — riceve i contatori come props per restare
- * compatibile con il pattern Server Component → Client Component.
+ * Non carica i dati: riceve i conteggi da MCPageClient (Server Component → Client Component).
  */
 
 import { useState } from "react";
 import { cx } from "@/lib/ui";
 
 export interface ResourcesSummary {
-  /** true se c'è un audio hook disponibile */
+  /** Audio hook della zona INNESCA */
   hasAudio: boolean;
-  /** numero di video nella playlist */
+  /** Video della playlist: i primi 3 in INNESCA (flipped classroom), gli altri in OSSERVA */
   videoCount: number;
-  /** numero di flashcard disponibili */
-  flashcardCount: number;
-  /** numero di domande quiz disponibili */
-  quizCount: number;
-  /** numero di immagini nella galleria visuale */
-  visualCount: number;
-  /** numero di slide della presentazione (deck NotebookLM in ESPLORA) */
-  deckSlideCount?: number;
-  /** video animati con voce narrante nei paragrafi di ESPLORA */
-  animatedVideoCount?: number;
-  /** illustrazioni dei paragrafi di ESPLORA (generate con IA) */
+  /** Paragrafi del testo ESPLORA */
+  esploraParagraphCount?: number;
+  /** Immagini illustrative dei paragrafi ESPLORA */
   esploraImageCount?: number;
-  /** schemi didattici vettoriali nei paragrafi di ESPLORA */
+  /** Schemi didattici disegnati per i paragrafi ESPLORA */
   schemaCount?: number;
+  /** Video animati dei paragrafi ESPLORA */
+  esploraVideoCount?: number;
+  /** Slide della presentazione (deck in ESPLORA) */
+  deckSlideCount?: number;
+  /** Costruzioni e animazioni GeoGebra (ESPLORA / SPERIMENTA) */
+  geogebraCount?: number;
+  /** Immagini e schemi nelle gallerie di ESPLORA, OSSERVA, RIPASSA, AGISCI */
+  visualCount: number;
+  /** Laboratorio interattivo (SPERIMENTA) */
+  laboratorio?: { titolo: string; archetipo: string } | null;
+  /** Escape room (SPERIMENTA) */
+  escapeRoom?: { titolo: string } | null;
+  /** Compito di realtà (AGISCI) */
+  hasCompito?: boolean;
+  /** Attività di microlearning (processo, checklist) in RIPASSA */
+  microlearningCount?: number;
+  quizCount: number;
+  flashcardCount: number;
+  /** Professioni del futuro */
+  professioniCount?: number;
+  /** Termini CLIL + appendice in inglese */
+  clilCount?: number;
+  hasAppendice?: boolean;
 }
 
 interface ResourcesPanelProps {
   summary: ResourcesSummary;
-  /** Callback per navigare a una zona specifica via MCNavigator */
+  /** Naviga a una zona del MCNavigator */
   onNavigate?: (zoneId: string) => void;
-  /** Colore hex area */
+  /** Zone presenti in questa MC (le altre non sono cliccabili) */
+  availableZones?: string[];
   areaHex?: string;
   className?: string;
 }
@@ -48,149 +61,135 @@ interface ResourcesPanelProps {
 interface ResourceItem {
   icon: string;
   label: string;
+  detail?: string;
   count: number | null;
   available: boolean;
-  zoneId?: string;
-  ariaLabel: string;
 }
 
-function buildItems(summary: ResourcesSummary): ResourceItem[] {
-  return [
+interface ZoneGroup {
+  zoneId: string;
+  label: string;
+  items: ResourceItem[];
+}
+
+function buildGroups(s: ResourcesSummary): ZoneGroup[] {
+  const flipped = Math.min(3, s.videoCount);
+  const osserva = Math.max(0, s.videoCount - 3);
+  const groups: ZoneGroup[] = [
     {
-      icon: "🎧",
-      label: "Audio hook",
-      count: null,
-      available: summary.hasAudio,
       zoneId: "INNESCA",
-      ariaLabel: summary.hasAudio ? "Audio hook disponibile" : "Audio hook non disponibile",
+      label: "Innesca",
+      items: [
+        { icon: "🎧", label: "Audio di apertura", count: null, available: s.hasAudio },
+        { icon: "▶️", label: "Video per la classe capovolta", count: flipped, available: flipped > 0 },
+      ],
     },
     {
-      icon: "📖",
-      label: "Testo ESPLORA",
-      count: null,
-      available: true,
       zoneId: "ESPLORA",
-      ariaLabel: "Vai alla zona ESPLORA",
+      label: "Esplora",
+      items: [
+        { icon: "📖", label: "Paragrafi del testo", count: s.esploraParagraphCount ?? null, available: (s.esploraParagraphCount ?? 1) > 0 },
+        { icon: "📽️", label: "Slide della presentazione", count: s.deckSlideCount ?? 0, available: (s.deckSlideCount ?? 0) > 0 },
+        { icon: "🖼️", label: "Illustrazioni dei paragrafi", count: s.esploraImageCount ?? 0, available: (s.esploraImageCount ?? 0) > 0 },
+        { icon: "📊", label: "Schemi didattici", count: s.schemaCount ?? 0, available: (s.schemaCount ?? 0) > 0 },
+        { icon: "🎞️", label: "Video animati", count: s.esploraVideoCount ?? 0, available: (s.esploraVideoCount ?? 0) > 0 },
+        { icon: "📐", label: "Costruzioni GeoGebra", count: s.geogebraCount ?? 0, available: (s.geogebraCount ?? 0) > 0 },
+      ],
     },
     {
-      icon: "🎞️",
-      label: "Video animato",
-      count: summary.animatedVideoCount ?? null,
-      available: (summary.animatedVideoCount ?? 0) > 0,
-      zoneId: "ESPLORA",
-      ariaLabel:
-        (summary.animatedVideoCount ?? 0) > 0
-          ? "Video animato con voce narrante e sottotitoli in ESPLORA"
-          : "Video animato non disponibile",
-    },
-    {
-      icon: "📐",
-      label: "Schemi didattici",
-      count: summary.schemaCount ?? null,
-      available: (summary.schemaCount ?? 0) > 0,
-      zoneId: "ESPLORA",
-      ariaLabel: `${summary.schemaCount ?? 0} schemi didattici in ESPLORA`,
-    },
-    {
-      icon: "🖼️",
-      label: "Galleria visuale",
-      count: summary.visualCount + (summary.esploraImageCount ?? 0) + (summary.schemaCount ?? 0),
-      available: summary.visualCount + (summary.esploraImageCount ?? 0) + (summary.schemaCount ?? 0) > 0,
-      zoneId: "ESPLORA",
-      ariaLabel: "Illustrazioni, schemi e infografiche della galleria visuale",
-    },
-    {
-      icon: "🎬",
-      label: "Video",
-      count: summary.videoCount,
-      available: summary.videoCount > 0,
       zoneId: "OSSERVA",
-      ariaLabel: `${summary.videoCount} video disponibili`,
+      label: "Osserva",
+      items: [{ icon: "🎬", label: "Video", count: osserva, available: osserva > 0 }],
     },
     {
-      icon: "🔬",
-      label: "Attività",
-      count: null,
-      available: true,
       zoneId: "SPERIMENTA",
-      ariaLabel: "Attività in 3 livelli",
+      label: "Sperimenta",
+      items: [
+        {
+          icon: "🧪",
+          label: "Laboratorio interattivo",
+          detail: s.laboratorio ? `${s.laboratorio.titolo} · ${s.laboratorio.archetipo} · 3 livelli` : undefined,
+          count: null,
+          available: !!s.laboratorio,
+        },
+        {
+          icon: "🔐",
+          label: "Escape room",
+          detail: s.escapeRoom ? `${s.escapeRoom.titolo} · 5 lucchetti` : undefined,
+          count: null,
+          available: !!s.escapeRoom,
+        },
+      ],
     },
     {
-      icon: "📽️",
-      label: "Presentazione",
-      count: summary.deckSlideCount ?? null,
-      available: (summary.deckSlideCount ?? 0) > 0,
-      zoneId: "ESPLORA",
-      ariaLabel:
-        (summary.deckSlideCount ?? 0) > 0
-          ? `Presentazione con ${summary.deckSlideCount} slide in ESPLORA`
-          : "Presentazione non disponibile",
+      zoneId: "AGISCI",
+      label: "Agisci",
+      items: [{ icon: "🌍", label: "Compito di realtà", count: null, available: !!s.hasCompito }],
     },
     {
-      icon: "🃏",
-      label: "Flashcard",
-      count: summary.flashcardCount,
-      available: summary.flashcardCount > 0,
-      zoneId: undefined,
-      ariaLabel: `${summary.flashcardCount} flashcard per il ripasso`,
+      zoneId: "RIPASSA",
+      label: "Ripassa",
+      items: [
+        { icon: "⚡", label: "Microlearning", count: s.microlearningCount ?? 0, available: (s.microlearningCount ?? 0) > 0 },
+        { icon: "✏️", label: "Domande di quiz", count: s.quizCount, available: s.quizCount > 0 },
+        { icon: "🃏", label: "Flashcard", count: s.flashcardCount, available: s.flashcardCount > 0 },
+      ],
     },
     {
-      icon: "✏️",
-      label: "Quiz",
-      count: summary.quizCount,
-      available: summary.quizCount > 0,
-      zoneId: undefined,
-      ariaLabel: `${summary.quizCount} domande quiz`,
+      zoneId: "PROFESSIONE",
+      label: "Professioni",
+      items: [{ icon: "💼", label: "Professioni del futuro", count: s.professioniCount ?? 0, available: (s.professioniCount ?? 0) > 0 }],
+    },
+    {
+      zoneId: "CLIL",
+      label: "CLIL",
+      items: [
+        { icon: "🇬🇧", label: "Termini in inglese", count: s.clilCount ?? 0, available: (s.clilCount ?? 0) > 0 },
+        { icon: "📎", label: "Tech in English", count: null, available: !!s.hasAppendice },
+      ],
     },
   ];
+  return groups
+    .map((g) => ({ ...g, items: g.items.filter((i) => i.available) }))
+    .filter((g) => g.items.length > 0);
 }
 
 export function ResourcesPanel({
   summary,
   onNavigate,
+  availableZones,
   areaHex,
   className = "",
 }: ResourcesPanelProps) {
-  const [expanded, setExpanded] = useState(false);
-  const items = buildItems(summary);
-  const availableCount = items.filter((i) => i.available).length;
+  const [expanded, setExpanded] = useState(true);
+  const groups = buildGroups(summary);
+  const total = groups.reduce((n, g) => n + g.items.length, 0);
+  const color = areaHex ?? "#64748b";
 
   return (
-    <div
-      className={cx(
-        "rounded-xl border border-slate-200 bg-slate-50 overflow-hidden",
-        className,
-      )}
-    >
-      {/* Header — sempre visibile */}
+    <div className={cx("overflow-hidden rounded-xl border border-slate-200 bg-slate-50", className)}>
       <button
         type="button"
         onClick={() => setExpanded((e) => !e)}
         className={cx(
           "flex w-full items-center justify-between px-4 py-3 text-left",
-          "text-sm font-black text-slate-700 hover:bg-slate-100 transition-colors",
+          "text-sm font-black text-slate-700 transition-colors hover:bg-slate-100",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset",
         )}
         aria-expanded={expanded}
       >
         <span className="flex items-center gap-2">
           <span aria-hidden>📦</span>
-          Risorse disponibili
-          <span
-            className="ml-1 rounded-full px-2 py-0.5 text-xs font-black text-white"
-            style={{ backgroundColor: areaHex ?? "#64748b" }}
-          >
-            {availableCount}
+          Materiali di questa micro-competenza
+          <span className="ml-1 rounded-full px-2 py-0.5 text-xs font-black text-white" style={{ backgroundColor: color }}>
+            {total}
           </span>
         </span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className={cx(
-            "size-4 shrink-0 text-slate-400 transition-transform duration-200",
-            expanded ? "rotate-180" : "rotate-0",
-          )}
+          className={cx("size-4 shrink-0 text-slate-400 transition-transform duration-200", expanded ? "rotate-180" : "rotate-0")}
           aria-hidden
         >
           <path
@@ -201,7 +200,6 @@ export function ResourcesPanel({
         </svg>
       </button>
 
-      {/* Griglia risorse — collassabile */}
       <div
         className={cx(
           "grid transition-[grid-template-rows] duration-300 ease-in-out",
@@ -209,73 +207,53 @@ export function ResourcesPanel({
         )}
       >
         <div className="min-h-0">
-          <div className="grid grid-cols-2 gap-2 px-4 pb-4 pt-2 sm:grid-cols-3">
-            {items.map((item) => (
-              <ResourceChip
-                key={item.label}
-                item={item}
-                areaHex={areaHex}
-                onNavigate={item.zoneId && onNavigate ? () => onNavigate(item.zoneId!) : undefined}
-              />
-            ))}
-          </div>
+          <ul className="grid gap-3 px-4 pb-4 pt-1 sm:grid-cols-2">
+            {groups.map((g) => {
+              const canGo = !!onNavigate && (!availableZones || availableZones.includes(g.zoneId));
+              return (
+                <li key={g.zoneId} className="rounded-lg border border-slate-200 bg-white p-3">
+                  <div className="mb-2 flex items-center justify-between gap-2">
+                    <span className="text-[11px] font-black uppercase tracking-widest" style={{ color }}>
+                      {g.label}
+                    </span>
+                    {canGo && (
+                      <button
+                        type="button"
+                        onClick={() => onNavigate!(g.zoneId)}
+                        className="rounded-full border border-slate-200 px-2 py-0.5 text-[11px] font-bold text-slate-600 hover:border-slate-400 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2"
+                        aria-label={`Vai alla zona ${g.label}`}
+                      >
+                        Vai →
+                      </button>
+                    )}
+                  </div>
+                  <ul className="space-y-1.5">
+                    {g.items.map((i) => (
+                      <li key={i.label} className="flex items-start gap-2 text-xs text-slate-700">
+                        <span className="text-base leading-none" aria-hidden>
+                          {i.icon}
+                        </span>
+                        <span className="flex-1 leading-snug">
+                          <span className="font-semibold">{i.label}</span>
+                          {i.detail && <span className="block text-[11px] text-slate-500">{i.detail}</span>}
+                        </span>
+                        {i.count !== null && (
+                          <span
+                            className="shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-black text-white"
+                            style={{ backgroundColor: color }}
+                          >
+                            {i.count}
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
-    </div>
-  );
-}
-
-function ResourceChip({
-  item,
-  areaHex,
-  onNavigate,
-}: {
-  item: ResourceItem;
-  areaHex?: string;
-  onNavigate?: () => void;
-}) {
-  const base = cx(
-    "flex items-center gap-2 rounded-lg px-3 py-2 text-xs font-semibold transition-colors",
-    "border focus-visible:outline-none focus-visible:ring-2",
-    item.available
-      ? "border-slate-200 bg-white text-slate-700 hover:border-slate-300"
-      : "border-slate-100 bg-slate-50 text-slate-300 cursor-default",
-  );
-
-  const inner = (
-    <>
-      <span className="text-base leading-none" aria-hidden>{item.icon}</span>
-      <span className="flex-1 leading-snug">{item.label}</span>
-      {item.count !== null && item.available && (
-        <span
-          className="ml-auto shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-black text-white"
-          style={{ backgroundColor: areaHex ?? "#64748b" }}
-        >
-          {item.count}
-        </span>
-      )}
-      {!item.available && (
-        <span className="ml-auto text-[10px] text-slate-300" aria-hidden>—</span>
-      )}
-    </>
-  );
-
-  if (onNavigate && item.available) {
-    return (
-      <button
-        type="button"
-        onClick={onNavigate}
-        className={base}
-        aria-label={item.ariaLabel}
-      >
-        {inner}
-      </button>
-    );
-  }
-
-  return (
-    <div className={base} aria-label={item.ariaLabel} role="img">
-      {inner}
     </div>
   );
 }
