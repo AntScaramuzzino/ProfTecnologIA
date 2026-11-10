@@ -238,17 +238,17 @@ Il volo transatlantico produce quindi circa **70-100 volte più emissioni** risp
 
 Ogni volta che accendi la luce, stai usufruendo di una catena di trasformazioni energetiche lunga e complessa. Seguiamo il percorso per una centrale a gas naturale — la fonte più comune nella produzione elettrica italiana.
 
-**Step 1 — Giacimento:** il gas naturale si trova in giacimenti sotterranei (sotto il mare o sotto terra) in Russia, Algeria, Qatar, Norvegia (i principali fornitori dell'Italia). Viene estratto da pozzi di perforazione.
+**Step 1 — Giacimento:** il gas naturale si trova in giacimenti sotterranei (sotto il mare o sotto terra) in Paesi come Algeria, Azerbaigian, Norvegia, Stati Uniti e Qatar, da cui l'Italia importa gran parte del suo gas. Viene estratto da pozzi di perforazione.
 
-**Step 2 — Trasporto:** il gas viene compresso e spinto nei **gasdotti**, reti di tubi di acciaio ad alta pressione che attraversano continenti e fondali marini. L'Italia riceve gas principalmente via gasdotto dalla Russia (via Austria/Ucraina), dall'Algeria (Trans-Med, via Tunisia e fondale del Mediterraneo) e dalla Norvegia. Le compressori lungo il percorso consumano energia per mantenere la pressione.
+**Step 2 — Trasporto:** il gas viene compresso e spinto nei **gasdotti**, reti di tubi di acciaio ad alta pressione che attraversano continenti e fondali marini. L'Italia riceve gas via gasdotto soprattutto dall'Algeria (Transmed, via Tunisia e fondale del Mediterraneo), dall'Azerbaigian (TAP, che approda in Puglia), dalla Libia e dal Nord Europa. Una parte crescente arriva invece via nave, come gas naturale liquefatto (GNL), e torna gassosa nei rigassificatori. Fino al 2021 il primo fornitore era la Russia; oggi il primo è l'Algeria e il gas russo non arriva più dal gasdotto di Tarvisio. I compressori lungo il percorso consumano energia per mantenere la pressione.
 
 **Step 3 — Centrale termoelettrica a gas:** il gas viene bruciato in una turbina a gas (simile a un motore aeronautico, ma stazionario). I gas di combustione caldi fanno girare la turbina, che aziona un generatore. Poi i gas caldi vengono usati per produrre vapore, che fa girare una seconda turbina. Questo sistema si chiama **ciclo combinato** e ha un rendimento del 50-60%: cioè il 50-60% dell'energia contenuta nel gas si trasforma in elettricità. Il resto si disperde come calore.
 
 **Step 4 — Trasformatore e rete ad alta tensione:** l'elettricità generata dalla centrale (tipicamente a 11.000-25.000 V) viene trasformata a **380.000 V** (altissima tensione) per il trasporto nelle linee elettriche nazionali. Trasportare a tensione altissima riduce le perdite per effetto Joule nelle linee.
 
-**Step 5 — Cabine di trasformazione:** l'elettricità scende progressivamente di tensione: da 380 kV alle linee regionali, poi a 132 kV, poi a 20 kV per le linee urbane, poi a 380 V per le abitazioni.
+**Step 5 — Cabine di trasformazione:** l'elettricità scende progressivamente di tensione: da 380 kV alle linee regionali, poi a 132 kV, poi a 20 kV per le linee urbane, poi a 400 V per la distribuzione nei quartieri.
 
-**Step 6 — La presa elettrica di casa:** il trasformatore del quartiere riduce la tensione a 220 V (in Italia) — la tensione domestica standard. Da lì, tramite il contatore e il quadro elettrico di casa, arriva alla presa.
+**Step 6 — La presa elettrica di casa:** il trasformatore del quartiere porta alle case la bassa tensione: 230 V tra fase e neutro, la tensione domestica standard in Italia e in Europa. Da lì, tramite il contatore e il quadro elettrico di casa, arriva alla presa.
 
 **Il rendimento complessivo:** partendo dall'energia chimica del gas, solo circa il 35-45% arriva effettivamente nella presa di casa come energia elettrica utilizzabile. Il resto si è disperso come calore lungo ogni step della catena.
 

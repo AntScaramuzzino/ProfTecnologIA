@@ -231,7 +231,7 @@ I metalli hanno alcune delle filiere di riciclo più efficienti. L'acciaio e l'a
 
 La plastica è il materiale con la filiera di riciclo più problematica. Per capire perché, bisogna ricordare che non esiste "la plastica" — esistono decine di tipi di plastica con composizioni chimiche diverse, incompatibili tra loro.
 
-Il processo standard: la plastica raccolta viene trasportata agli impianti di selezione (gli ecocentri) dove macchinari ottici (telecamere infrarosse) riconoscono il tipo di polimero analizzando come riflette la luce. Le balle di plastica selezionata vengono vendute a impianti di riciclo che le sminuzzano in scaglie (**flakes**), le lavano, le fondono in granuli, e quei granuli vengono venduti a produttori che li usano per fare nuovi oggetti.
+Il processo standard: la plastica raccolta viene trasportata agli impianti di selezione dove macchinari ottici (telecamere infrarosse) riconoscono il tipo di polimero analizzando come riflette la luce. Le balle di plastica selezionata vengono vendute a impianti di riciclo che le sminuzzano in scaglie (**flakes**), le lavano, le fondono in granuli, e quei granuli vengono venduti a produttori che li usano per fare nuovi oggetti.
 
 Il ciclo funziona, ma con molti limiti:
 
@@ -313,7 +313,7 @@ Ti sei mai chiesto cosa succede davvero dopo che metti la bottiglia nel bidone g
 Se è una bottiglia PET (codice ♳) o HDPE (codice ♴) pulita, sei sulla strada giusta.
 
 **Entro 1-2 settimane — Il camion della raccolta**
-Un camion della raccolta differenziata svuota il bidone. La plastica viene portata a un **centro di selezione** (Stazione di Trasferimento). Qui operai e macchinari separano la plastica per tipo. Le telecamere a infrarossi distinguono PET, HDPE, PVC, PP. Le botti che non passano la selezione (plastica nera, sacchetti sporchi, materiali non identificabili) vengono deviati all'indifferenziato.
+Un camion della raccolta differenziata svuota il bidone. La plastica viene portata a un **centro di selezione**. Qui operai e macchinari separano la plastica per tipo. Le telecamere a infrarossi distinguono PET, HDPE, PVC, PP. Gli oggetti che non passano la selezione (plastica nera, sacchetti sporchi, materiali non identificabili) vengono deviati all'indifferenziato.
 
 **Entro 1-2 mesi — L'impianto di riciclo**
 Le balle di plastica PET selezionata vengono comprate da impianti di riciclo (spesso in Italia, ma anche in altri paesi europei). Lì vengono:

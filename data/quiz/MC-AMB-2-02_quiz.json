@@ -347,7 +347,7 @@
           "id": "b",
           "testo": "Non accendere nulla di elettrico, aprire le finestre, chiudere il gas e uscire",
           "corretto": true,
-          "feedback": "Esatto! In caso di odore di gas: 1) non accendere luci o dispositivi (scintille); 2) aprire porte e finestre; 3) chiudere il rubinetto del gas; 4) uscire; 5) chiamare il numero di emergenza (800-900-700)."
+          "feedback": "Esatto! In caso di odore di gas: 1) non accendere luci o dispositivi (scintille); 2) aprire porte e finestre; 3) chiudere il rubinetto del gas; 4) uscire; 5) chiamare il numero di pronto intervento gas scritto sulla bolletta."
         },
         {
           "id": "c",
@@ -362,7 +362,7 @@
           "riferimento": "📖 ESPLORA — L'impianto del gas — sicurezza"
         }
       ],
-      "spiegazione": "In caso di odore di gas: 1) NON accendere luci o qualsiasi dispositivo elettrico (possibile scintilla → esplosione); 2) Aprire immediatamente porte e finestre; 3) Chiudere il rubinetto del gas; 4) Uscire dall'edificio; 5) Chiamare l'emergenza gas: 800-900-700, attivo 24h. Il gas metano è inodore: il mercaptano aggiunto lo rende riconoscibile.",
+      "spiegazione": "In caso di odore di gas: 1) NON accendere luci o qualsiasi dispositivo elettrico (possibile scintilla → esplosione); 2) Aprire immediatamente porte e finestre; 3) Chiudere il rubinetto del gas; 4) Uscire dall'edificio; 5) Chiamare il pronto intervento gas del distributore: il numero è sulla bolletta, attivo 24h. Il gas metano è inodore: il mercaptano aggiunto lo rende riconoscibile.",
       "riferimento_principale": "📖 ESPLORA — L'impianto del gas — sicurezza"
     },
     {
@@ -472,14 +472,14 @@
         {
           "id": "a",
           "testo": "1 m³ di gas equivale sempre a 1 kWh: la conversione è 1:1 per semplificare la bolletta",
-          "feedback": "Non è corretto. Il potere calorifico del metano è circa 8,5 kWh/m³, non 1:1. La conversione dipende dalla composizione chimica del gas.",
+          "feedback": "Non è corretto. Il potere calorifico del metano è circa 10,7 kWh/m³, non 1:1. La conversione dipende dalla composizione chimica del gas.",
           "riferimento": "📖 ESPLORA — Il contatore del gas"
         },
         {
           "id": "b",
-          "testo": "Ogni m³ di metano contiene circa 8,5 kWh di energia; la bolletta moltiplica i m³ per il potere calorifico",
+          "testo": "Ogni m³ di metano contiene circa 10,7 kWh di energia; la bolletta moltiplica i m³ per il potere calorifico",
           "corretto": true,
-          "feedback": "Esatto! Il potere calorifico del metano è circa 8,5 kWh/m³. La bolletta misura i m³ con il contatore e poi li converte in kWh (m³ × 8,5) per uniformare il confronto con l'energia elettrica."
+          "feedback": "Esatto! Il potere calorifico del metano è circa 10,7 kWh/m³. La bolletta misura i m³ con il contatore e poi li converte in kWh (m³ × 10,7) per uniformare il confronto con l'energia elettrica."
         },
         {
           "id": "c",
@@ -490,11 +490,11 @@
         {
           "id": "d",
           "testo": "1 kWh = 1 m³ di gas ma la bolletta aggiunge tasse che rendono il costo finale diverso",
-          "feedback": "Non è corretto. 1 kWh ≠ 1 m³. Il potere calorifico del metano è circa 8,5 kWh/m³: 1 m³ contiene 8,5 volte l'energia di 1 kWh elettrico.",
+          "feedback": "Non è corretto. 1 kWh ≠ 1 m³. Il potere calorifico del metano è circa 10,7 kWh/m³: 1 m³ contiene circa 10,7 volte l'energia di 1 kWh elettrico.",
           "riferimento": "📖 ESPLORA — Il contatore del gas"
         }
       ],
-      "spiegazione": "Il contatore del gas misura i volumi consumati in m³. Poi la bolletta converte in kWh usando il potere calorifico del metano (circa 8,5 kWh/m³). Questa conversione permette di confrontare il costo dell'energia da gas con quella elettrica sulle stesse basi (€/kWh). Le tasse, gli oneri e l'IVA si aggiungono separatamente.",
+      "spiegazione": "Il contatore del gas misura i volumi consumati in m³. Poi la bolletta converte in kWh usando il potere calorifico del metano (circa 10,7 kWh/m³). Questa conversione permette di confrontare il costo dell'energia da gas con quella elettrica sulle stesse basi (€/kWh). Le tasse, gli oneri e l'IVA si aggiungono separatamente.",
       "riferimento_principale": "📖 ESPLORA — Il contatore del gas"
     },
     {

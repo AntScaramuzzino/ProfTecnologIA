@@ -95,7 +95,7 @@ L'energia elettrica percorre un lungo cammino prima di arrivare alla presa dove 
 
 L'energia elettrica viene prodotta nelle centrali (termoelettriche, idroelettriche, fotovoltaiche, eoliche) e distribuita attraverso le **reti di trasmissione** ad altissima tensione (132.000-400.000 Volt, chiamata "altissima tensione" o AAT). Queste tensioni elevatissime servono a ridurre le perdite di energia durante il trasporto su lunghe distanze.
 
-Prima di arrivare nelle città, l'energia viene abbassata nelle **cabine primarie** (da 132 kV a 15-20 kV) e poi nelle **cabine secondarie** (da 20 kV a 220 o 400 Volt), che sono i piccoli edifici grigi che vedi nei quartieri con la scritta "ENEL" o "Rete di distribuzione — pericolo di morte".
+Prima di arrivare nelle città, l'energia viene abbassata nelle **cabine primarie** (da 132 kV a 15-20 kV) e poi nelle **cabine secondarie** (da 20 kV a 230 o 400 Volt), che sono i piccoli edifici grigi che vedi nei quartieri con la scritta "ENEL" o "Rete di distribuzione — pericolo di morte".
 
 > 💡 **Perché si usa una tensione così alta per il trasporto?** Perché la perdita di energia per effetto Joule (dissipazione termica nei fili) è proporzionale al quadrato della corrente: P_dispersa = R × I². Raddoppiare la tensione dimezza la corrente necessaria per trasportare la stessa potenza, e questo riduce le perdite di quattro volte. Su distanze di centinaia di km, la differenza è enorme.
 
@@ -107,7 +107,7 @@ Dall'ultima cabina di trasformazione, la corrente arriva al **contatore** della 
 
 Dal contatore, la corrente entra nel **quadro elettrico generale** (o quadro di distribuzione), che di solito è una scatola metallica fissata al muro vicino all'ingresso. Il quadro contiene:
 
-**Interruttore generale (differenziale o salvavita):** scatta e interrompe tutta l'alimentazione se rileva una dispersione di corrente verso terra — il caso tipico è quando una persona tocca un filo scoperto. Può salvare la vita. Non disattivarlo mai manualmente senza motivo.
+**Interruttore differenziale (salvavita):** scatta e interrompe tutta l'alimentazione se rileva una dispersione di corrente verso terra — il caso tipico è quando una persona tocca un filo scoperto. Può salvare la vita. Non va mai escluso o manomesso; il tasto di prova (T) va invece premuto ogni tanto, con un adulto, per controllare che scatti. Spesso sta nello stesso apparecchio dell'interruttore generale, che serve a staccare tutto a mano.
 
 **Interruttori magnetotermici:** uno per ogni circuito (luci, prese cucina, prese stanza 1, lavastoviglie, lavatrice...). Scattano se la corrente supera il limite di sicurezza — proteggono i fili da surriscaldamenti che potrebbero causare incendi.
 
@@ -162,7 +162,7 @@ La rete di acquedotto arriva al confine del tuo edificio e incontra il **contato
 **Tubazioni di distribuzione:** in Italia si usano principalmente tre materiali:
 - **Rame:** resistente alla corrosione, battericida, usato per 50-60 anni. Costoso, ma durevole.
 - **Polipropilene (PPR):** plastica che resiste alle temperature dell'acqua calda, economica, facile da installare. Diffusa nelle ristrutturazioni recenti.
-- **Multistrato (alluminio + plastica):** flessibile, non corrode, non si cristallizza in fissile come il rame. Sempre più usato.
+- **Multistrato (alluminio + plastica):** flessibile, non si corrode e non si incrosta. Sempre più usato.
 
 **Acqua calda sanitaria:** l'acqua fredda viene scaldata dal **boiler elettrico** (serbatoio con resistenza, 80-200 litri, lento a scaldarsi ma semplice) o dallo **scaldabagno a gas** (istantaneo, scalda l'acqua al momento senza serbatoio). Il boiler consuma il 10-15% dell'energia elettrica totale di una famiglia media.
 
@@ -187,13 +187,13 @@ Il gas naturale (metano, CH₄) arriva alle abitazioni attraverso una rete di tu
 > 2. Apri porte e finestre
 > 3. Chiudi il rubinetto del gas (valvola a farfalla vicino al contatore)
 > 4. Esci dall'edificio
-> 5. Chiama il numero di emergenza del gas (800-900-700, attivo 24h)
+> 5. Chiama il numero di pronto intervento gas del distributore della tua zona: è scritto sulla bolletta ed è attivo 24 ore su 24
 
 ---
 
 **Il contatore del gas**
 
-Il contatore misura il volume di gas consumato in **metri cubi (m³)**. Il potere calorifico del metano è di circa 8,5 kWh/m³: ogni metro cubo di gas contiene l'equivalente energetico di 8,5 kWh. In bolletta il consumo viene convertito in kWh per facilitare il confronto con l'energia elettrica.
+Il contatore misura il volume di gas consumato in **metri cubi (m³)**. Il potere calorifico del gas di rete è di circa 10,7 kWh per metro cubo standard: ogni metro cubo di gas contiene l'equivalente energetico di quasi 11 kWh. In bolletta il consumo viene convertito in kWh per facilitare il confronto con l'energia elettrica.
 
 ---
 
