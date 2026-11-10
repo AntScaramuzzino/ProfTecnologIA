@@ -19,24 +19,45 @@ if (!/(\/|\.html?)$/.test(location.pathname)) location.replace(location.pathname
 @font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(../../lab/_fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
 /* Layout: una scena fotografica a tutto schermo. I punti stanno sopra l'immagine,
-   il testo in una fascia in basso (sotto l'immagine quando lo schermo è verticale). */
+   il testo in basso a sinistra su una velatura che sfuma (sotto l'immagine quando lo schermo è verticale). */
 :root {
   --bg: #0a1113;
   --ink: #f3f7f5;
-  --ink-soft: rgba(243, 247, 245, .86);
-  --ink-dim: rgba(243, 247, 245, .55);
-  --glass: rgba(238, 244, 241, .9);
+  --ink-soft: rgba(243, 247, 245, .9);
+  --ink-dim: rgba(243, 247, 245, .6);
   --glass-ink: #11201f;
-  --smoke: rgba(9, 16, 18, .66);
-  --line: rgba(255, 255, 255, .3);
+  --line: rgba(255, 255, 255, .24);
   --water: #63d6cc;
   --volt: #f4b83a;
   --volt-ink: #1c1503;
+
+  /* Vetro chiaro (etichette cliccabili, comandi): lascia passare l'immagine, sfocata e schiarita */
+  --glass-fill: rgba(236, 241, 238, .68);
+  --glass-fill-seen: rgba(236, 241, 238, .58);
+  --glass-fill-hot: rgba(248, 251, 249, .95);
+  --glass-fx: blur(16px) saturate(1.5) brightness(1.1);
+  --glass-rim: inset 0 1px 0 rgba(255, 255, 255, .62), inset 0 0 0 1px rgba(255, 255, 255, .26);
+  --glass-drop: 0 6px 22px rgba(0, 0, 0, .26);
+  --menu-fill: rgba(240, 245, 242, .84);
+  /* Vetro scuro (nomi delle parti): scurisce quello che ha dietro, così il testo bianco regge anche sul cielo */
+  --smoke-fill: rgba(8, 14, 16, .5);
+  --smoke-fx: blur(12px) saturate(1.2) brightness(.72);
+  /* Velatura del testo: il motore la tinge con il colore della scena (vedi tint() in app.js) */
+  --tint: 6, 12, 14;
+
   --display: "Barlow Semi Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --body: "Barlow", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   color-scheme: dark;
 }
+/* Senza sfocatura dello sfondo, o se chi guarda chiede meno trasparenza o più contrasto: superfici quasi piene */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root { --glass-fill: rgba(238, 244, 241, .93); --glass-fill-seen: rgba(238, 244, 241, .86); --menu-fill: rgba(240, 245, 242, .97); --smoke-fill: rgba(8, 14, 16, .82); }
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  :root { --glass-fill: rgba(238, 244, 241, .95); --glass-fill-seen: rgba(238, 244, 241, .88); --menu-fill: rgba(240, 245, 242, .98); --smoke-fill: rgba(8, 14, 16, .86); --glass-fx: none; --smoke-fx: none; }
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
@@ -60,11 +81,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .layer.on { opacity: 1; }
 .pic { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; background: #12191b; }
 .pic img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; pointer-events: none; color: transparent; }
-.shade { position: absolute; inset: 0 0 auto; height: 130px; z-index: 3; pointer-events: none; background: linear-gradient(to bottom, rgba(6, 12, 14, .55), rgba(6, 12, 14, 0)); }
+.shade { position: absolute; inset: 0 0 auto; height: 110px; z-index: 3; pointer-events: none; background: linear-gradient(to bottom, rgba(6, 12, 14, .34), rgba(6, 12, 14, 0)); }
 
 /* ---------- punti ---------- */
-.marks { position: absolute; inset: 0; z-index: 6; pointer-events: none; transition: opacity .28s; }
-.marks.hide { opacity: 0; }
+.marks { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
+/* La dissolvenza è sui singoli pezzi e non sul contenitore: un contenitore semitrasparente spegnerebbe la sfocatura delle etichette */
+.mark .dot, .mark .lead, .mark .tag { transition: opacity .28s, background-color .18s, box-shadow .18s; }
+.marks.hide .mark > * { opacity: 0; }
 .marks.hide * { pointer-events: none !important; }
 .mark { position: absolute; left: 0; top: 0; width: 0; height: 0; --a: -38deg; }
 .mark[data-s="l"][data-v="u"] { --a: -142deg; }
@@ -76,13 +99,15 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
 .mark.go { --o: 18px; }
 .mark.go .dot, .mark.go .tag { pointer-events: auto; }
-.mark.go .dot { left: -14px; top: -14px; width: 28px; height: 28px; border: 5px solid #fff; background: rgba(8, 16, 18, .62); box-shadow: 0 0 0 5px rgba(255, 255, 255, .24), 0 2px 10px rgba(0, 0, 0, .5); }
+.mark.go .dot { left: -14px; top: -14px; width: 28px; height: 28px; border: 5px solid #fff; background: rgba(8, 16, 18, .5); box-shadow: 0 0 0 6px rgba(255, 255, 255, .22), 0 2px 10px rgba(0, 0, 0, .45); }
 .mark.go .dot::after { content: ""; position: absolute; inset: -13px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .75); animation: ping 2.8s ease-out infinite; }
 .mark.go.seen .dot { background: var(--water); }
 .mark.go.seen .dot::after { animation: none; opacity: 0; }
 .mark.go .lead { width: 36px; border-top: 2.5px dotted rgba(255, 255, 255, .95); }
-.mark.go .tag { font: italic 500 14px/1 var(--mono); padding: 10px 16px; background: var(--glass); color: var(--glass-ink); box-shadow: 0 2px 14px rgba(0, 0, 0, .38); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); transition: background .15s, transform .15s; }
-.mark.go .tag:hover, .mark.go .dot:hover + .lead + .tag { background: #fff; }
+.mark.go.seen .lead { border-top-color: rgba(255, 255, 255, .7); }
+.mark.go .tag { font: italic 500 14px/1 var(--mono); padding: 10px 16px; color: var(--glass-ink); background-color: var(--glass-fill); box-shadow: var(--glass-rim), var(--glass-drop); -webkit-backdrop-filter: var(--glass-fx); backdrop-filter: var(--glass-fx); }
+.mark.go.seen .tag { background-color: var(--glass-fill-seen); }
+.mark.go .tag:hover, .mark.go .tag:focus-visible, .mark.go .dot:hover + .lead + .tag { background-color: var(--glass-fill-hot); box-shadow: var(--glass-rim), 0 8px 26px rgba(0, 0, 0, .34); }
 .mark.go[data-s="r"] .tag { left: 39px; }
 .mark.go[data-s="l"] .tag { right: 39px; }
 .mark.go[data-v="u"] .tag { bottom: 25px; }
@@ -90,9 +115,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 @keyframes ping { 0% { transform: scale(.55); opacity: .9; } 70%, 100% { transform: scale(1.25); opacity: 0; } }
 
 .mark.note { --o: 9px; }
-.mark.note .dot { left: -5px; top: -5px; width: 10px; height: 10px; background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, .28), 0 1px 6px rgba(0, 0, 0, .55); }
+.mark.note .dot { left: -5px; top: -5px; width: 10px; height: 10px; background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, .26), 0 1px 6px rgba(0, 0, 0, .5); }
 .mark.note .lead { width: 22px; border-top: 1.5px dotted rgba(255, 255, 255, .9); }
-.mark.note .tag { font: 500 12px/1 var(--mono); padding: 6px 10px; background: var(--smoke); color: var(--ink); border: 1px solid var(--line); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+.mark.note .tag { font: 500 12px/1 var(--mono); padding: 6px 10px; color: var(--ink); background-color: var(--smoke-fill); box-shadow: inset 0 0 0 1px var(--line), inset 0 1px 0 rgba(255, 255, 255, .14); -webkit-backdrop-filter: var(--smoke-fx); backdrop-filter: var(--smoke-fx); }
 .mark.note[data-s="r"] .tag { left: 22px; }
 .mark.note[data-s="l"] .tag { right: 22px; }
 .mark.note[data-v="u"] .tag { bottom: 13px; }
@@ -106,40 +131,49 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 /* ---------- comandi ---------- */
 .bar { position: absolute; inset: 0 0 auto; z-index: 7; display: flex; align-items: center; gap: 10px; padding-top: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); pointer-events: none; }
 .bar .grow { flex: 1; }
-.pill { display: flex; align-items: center; gap: 2px; height: 46px; padding: 0 5px; border-radius: 999px; background: var(--glass); color: var(--glass-ink); box-shadow: 0 2px 14px rgba(0, 0, 0, .32); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); pointer-events: auto; }
-.pill button { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; }
-.pill button:hover { background: rgba(17, 32, 31, .1); }
+.pill { display: flex; align-items: center; gap: 2px; height: 46px; padding: 0 5px; border-radius: 999px; color: var(--glass-ink); background-color: var(--glass-fill); box-shadow: var(--glass-rim), var(--glass-drop); -webkit-backdrop-filter: var(--glass-fx); backdrop-filter: var(--glass-fx); pointer-events: auto; }
+.pill button { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; transition: background-color .15s; }
+.pill button:hover { background-color: rgba(255, 255, 255, .5); }
 .pill svg, #btnFold svg { width: 22px; height: 22px; display: block; }
 .count { font: 500 12.5px/1 var(--mono); padding: 0 8px 0 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
-.count.all { color: #0b5a53; }
-.menu { position: absolute; z-index: 8; top: 68px; left: max(16px, env(safe-area-inset-left, 0px)); min-width: 250px; max-width: min(340px, calc(100% - 32px)); padding: 8px; border-radius: 18px; background: var(--glass); color: var(--glass-ink); box-shadow: 0 10px 30px rgba(0, 0, 0, .45); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
-.menu button { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 16px; padding: 11px 12px; border-radius: 12px; text-align: left; font: 500 15px/1.2 var(--body); }
-.menu button:hover { background: rgba(17, 32, 31, .09); }
+.count.all { color: #0a4f49; }
+.menu { position: absolute; z-index: 8; top: 68px; left: max(16px, env(safe-area-inset-left, 0px)); min-width: 250px; max-width: min(340px, calc(100% - 32px)); padding: 8px; border-radius: 20px; color: var(--glass-ink); background-color: var(--menu-fill); box-shadow: var(--glass-rim), 0 14px 38px rgba(0, 0, 0, .4); -webkit-backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); }
+.menu button { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 16px; padding: 11px 12px; border-radius: 12px; text-align: left; font: 500 15px/1.2 var(--body); transition: background-color .15s; }
+.menu button:hover { background-color: rgba(255, 255, 255, .55); }
+.menu button[aria-current="true"] { background-color: rgba(255, 255, 255, .42); }
 .menu button[aria-current="true"]::after { content: "✓"; font-weight: 600; }
 
-/* ---------- pannello ---------- */
-.panel { position: absolute; inset: auto 0 0; z-index: 5; padding-top: 96px; pointer-events: none; background: linear-gradient(to top, rgba(6, 12, 14, .92) 0%, rgba(6, 12, 14, .72) 46%, rgba(6, 12, 14, 0) 100%); }
-.panel-in { max-width: 46rem; padding-block: 0 22px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); pointer-events: auto; transition: opacity .22s, transform .22s; }
+/* ---------- blocco di testo ---------- */
+/* Il blocco occupa solo l'angolo in basso a sinistra. La velatura è piena dietro il testo
+   e si scioglie verso l'alto e verso destra, così il resto dell'immagine resta pulito. */
+.panel { position: absolute; inset: auto auto 0 0; z-index: 5; width: min(47.75rem, 100%); pointer-events: none; }
+.panel::before {
+  content: ""; position: absolute; z-index: -1; inset: -130px -42% 0 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(var(--tint), .92) 0%, rgba(var(--tint), .86) 34%, rgba(var(--tint), .66) 62%, rgba(var(--tint), .3) 84%, rgba(var(--tint), 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 56%, rgba(0, 0, 0, .55) 76%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 0%, #000 56%, rgba(0, 0, 0, .55) 76%, transparent 100%);
+}
+.panel-in { position: relative; padding-block: 0 22px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); pointer-events: auto; text-shadow: 0 1px 2px rgba(0, 0, 0, .35); transition: opacity .22s, transform .22s; }
 .panel.swap .panel-in { opacity: 0; transform: translateY(6px); }
 @media (min-width: 900px) { .panel-in { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-bottom: 28px; } .bar { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px)); padding-top: 20px; } .menu { left: max(28px, env(safe-area-inset-left, 0px)); top: 76px; } }
 
-.chain { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font: 500 11px/1 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--ink-dim); }
+.chain { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font: 500 11px/1 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--ink-dim); text-shadow: none; }
 .chain li { display: flex; align-items: center; gap: 6px; }
 .chain li + li::before { content: "→"; opacity: .7; }
 .chain li.lab { color: var(--ink-soft); letter-spacing: .12em; margin-right: 2px; }
 .chain li.lab + li::before { content: none; }
-.chain li span { padding: 5px 8px; border-radius: 6px; border: 1px solid rgba(255, 255, 255, .2); }
-.chain li.on span { color: var(--volt-ink); background: var(--volt); border-color: var(--volt); }
+.chain li span { padding: 5px 8px; border-radius: 6px; background-color: rgba(255, 255, 255, .07); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2); }
+.chain li.on span { color: var(--volt-ink); background-color: var(--volt); box-shadow: none; }
 
 .head { display: flex; align-items: flex-start; gap: 12px; }
 .head h1 { flex: 0 1 auto; min-width: 0; margin: 0; font: 600 clamp(26px, 3.3vw, 38px)/1.08 var(--display); letter-spacing: .004em; text-wrap: balance; }
-#btnFold { flex: none; width: 40px; height: 40px; margin-top: -3px; border-radius: 50%; display: grid; place-items: center; }
-#btnFold:hover { background: rgba(255, 255, 255, .12); }
+#btnFold { flex: none; width: 40px; height: 40px; margin-top: -3px; border-radius: 50%; display: grid; place-items: center; transition: background-color .15s; }
+#btnFold:hover { background-color: rgba(255, 255, 255, .14); }
 #btnFold svg { transition: transform .2s; }
 .panel.folded #btnFold svg { transform: rotate(180deg); }
 #text { margin: 8px 0 0; max-width: 64ch; font-size: clamp(15.5px, 1.2vw, 18px); line-height: 1.5; color: var(--ink-soft); text-wrap: pretty; }
 .panel.folded #text, .panel.folded .chain { display: none; }
-.panel.folded { padding-top: 60px; }
+.panel.folded::before { inset: -80px -30% 0 0; }
 
 @media (min-width: 1500px) {
   .mark.go .tag { font-size: 16px; padding: 11px 18px; }
@@ -147,22 +181,21 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .chain { font-size: 12px; }
 }
 
-/* schermo verticale: il testo va sotto l'immagine, non sopra */
+/* schermo verticale: il testo va sotto l'immagine, che ci sfuma dentro */
 @media (max-aspect-ratio: 5/6) {
-  .panel { position: relative; inset: auto; padding-top: 0; max-height: 50%; overflow: auto; pointer-events: auto; background: var(--bg); border-top: 1px solid rgba(255, 255, 255, .12); }
-  .panel.folded { padding-top: 0; }
-  .panel-in { padding-block: 14px 16px; }
+  .stage::after { content: ""; position: absolute; inset: auto 0 0; height: 64px; z-index: 3; pointer-events: none; background: linear-gradient(to top, rgb(var(--tint)) 0%, rgba(var(--tint), .6) 45%, rgba(var(--tint), 0) 100%); }
+  .panel { position: relative; inset: auto; width: auto; max-height: 50%; overflow: auto; pointer-events: auto; background: rgb(var(--tint)); }
+  .panel::before { display: none; }
+  .panel-in { padding-block: 10px 16px; text-shadow: none; }
   .chain { font-size: 10px; gap: 4px; letter-spacing: .03em; }
   .chain li.lab { display: none; }
-  .chain li.lab + li + li::before, .chain li + li::before { content: "→"; }
-  .chain li:nth-child(2)::before { content: none; }
   .chain li { gap: 4px; }
   .chain li span { padding: 4px 6px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .mark.go .dot::after { animation: none; opacity: 0; }
-  .panel-in, .marks { transition: none; }
+  .panel-in, .mark .dot, .mark .lead, .mark .tag { transition: none; }
 }
 
 /* Nel libro: gli stessi caratteri delle altre attività (Atkinson Hyperlegible, JetBrains Mono) */
@@ -433,6 +466,25 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   }
   const warm = (id) => (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai]) { const i = new Image(); i.src = N[p.vai].img; } });
 
+  /* ---------- velatura del testo: prende il colore dall'angolo dell'immagine su cui poggia ---------- */
+  const tints = {};
+  function readTint(i, id) {
+    const im = img(i);
+    if (tints[id] || !im.complete || !im.naturalWidth) return;
+    try {
+      const c = document.createElement('canvas');
+      c.width = 16; c.height = 9;
+      const x = c.getContext('2d', { willReadFrequently: true });
+      x.drawImage(im, 0, 0, 16, 9);
+      const d = x.getImageData(0, 5, 8, 4).data;            // quarto in basso a sinistra
+      let r = 0, g = 0, b = 0;
+      for (let k = 0; k < d.length; k += 4) { r += d[k]; g += d[k + 1]; b += d[k + 2]; }
+      const n = d.length / 4;
+      tints[id] = [r, g, b].map((v, j) => Math.round((v / n) * .2 + [5, 9, 10][j])).join(', ');   // sempre scuro: al massimo 61 per canale
+    } catch (e) { tints[id] = '6, 12, 14'; }                 // immagine non leggibile (file aperto in locale): colore neutro
+  }
+  const applyTint = (id) => { if (tints[id]) $('app').style.setProperty('--tint', tints[id]); };
+
   /* ---------- pannello ---------- */
   function setText(id) {
     const n = N[id];
@@ -465,6 +517,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   function arrive() {
     const id = cur();
     seen.add(id);
+    applyTint(id);
     remember();
     setChrome();
     buildMarks(id);
@@ -492,9 +545,10 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
     const next = chainTo(id);
     const up = path.indexOf(id);                                  // risalita verso una scena già attraversata
     const down = parent[id] && parent[id].id === from ? parent[id].p : null;  // ingresso da un punto di questa scena
-    const textAt = wait(calm ? 120 : 430).then(() => { setText(id); panel.classList.remove('swap'); });
+    const textAt = wait(calm ? 120 : 430).then(() => { setText(id); applyTint(id); panel.classList.remove('swap'); });
 
     await load(b, id);
+    readTint(b, id);
     const mA = metrics(from), mB = metrics(id), hB = home(id, mB);
     const move = `transform ${T}ms ${EASE}`, clip = `clip-path ${T}ms ${EASE}`;
     const reach = (px, py) => Math.hypot(Math.max(px, mA.W - px), Math.max(py, mA.H - py)) + 6;
@@ -613,6 +667,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
     setText(id);
     setChrome();
     await load(front, id);
+    readTint(front, id);
     const m = metrics(id);
     cam = home(id, m);
     place(front, cam, m);
