@@ -392,7 +392,8 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
     const rel = (r) => [r.left - sr.left, r.top - sr.top, r.width, r.height];
     // dove il pannello copre la scena, le etichette gli girano attorno; lo stesso per i comandi in alto
     const pr = panel.firstElementChild.getBoundingClientRect();
-    if (pr.top < sr.bottom - 1 && pr.height) boxes.push(rel(pr));
+    const pb = pr.top < sr.bottom - 1 && pr.height ? rel(pr) : null;
+    if (pb) boxes.push(pb);
     const pills = [...stage.querySelectorAll('.bar .pill')].map((b) => rel(b.getBoundingClientRect())).filter((b) => b[2]);
     boxes.push(...pills);
     for (const el of marks.children) {
@@ -401,7 +402,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
       const rad = go ? 16 : 2;
       const under = pills.some((b) => x > b[0] - rad && x < b[0] + b[2] + rad && y > b[1] - rad && y < b[1] + b[3] + rad);
       const inside = x > 20 && x < m.W - 20 && y > 24 && y < m.H - 20 && !under;
-      if (!inside && !go) { el.hidden = true; continue; }
+      // una nota il cui puntino finirebbe sotto il testo non si mostra (ricompare se il testo viene chiuso o sta sotto l'immagine)
+      const covered = !go && pb && x > pb[0] - 14 && x < pb[0] + pb[2] + 14 && y > pb[1] - 14 && y < pb[1] + pb[3];
+      if ((!inside && !go) || covered) { el.hidden = true; continue; }
       el.hidden = false;
       el.classList.toggle('off', !inside);
       const tw = tag.offsetWidth, th = tag.offsetHeight;

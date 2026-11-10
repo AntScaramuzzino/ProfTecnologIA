@@ -18,6 +18,16 @@ export interface EsplorazioneImmersiva {
 
 export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
   {
+    slug: "impianto-di-selezione",
+    mcId: "MC-MAT-1-04",
+    titolo: "L'impianto di selezione dei rifiuti",
+    classe: 1,
+    area: "MAT",
+    scene: 12,
+    descrizione:
+      "Che cosa succede agli imballaggi dopo la raccolta differenziata: vaglio rotante, calamite, correnti parassite, telecamere a infrarossi e pressa.",
+  },
+  {
     slug: "acquedotto-e-depuratore",
     mcId: "MC-AMB-2-05",
     titolo: "Dalla sorgente al depuratore",
@@ -26,6 +36,16 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
     scene: 13,
     descrizione:
       "Il ciclo artificiale dell'acqua visto dai suoi impianti: opera di presa, filtri a sabbia, serbatoio, fognatura e vasche del depuratore.",
+  },
+  {
+    slug: "centrale-termoelettrica",
+    mcId: "MC-ENE-3-02",
+    titolo: "La centrale termoelettrica",
+    classe: 3,
+    area: "ENE",
+    scene: 12,
+    descrizione:
+      "Una centrale a gas a ciclo combinato: turbina a gas, caldaia a recupero, turbina a vapore, condensatore, torri di raffreddamento e stazione elettrica.",
   },
   {
     slug: "centrale-idroelettrica",

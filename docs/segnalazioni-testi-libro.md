@@ -210,6 +210,15 @@ Il RESOCONTO ha già segnalato r. 301 (raggio = lato del triangolo equilatero in
 - **r. 89 (Workflow, passo 3):** il foro è alto 78 mm in un cilindro di 80 mm ed è "allineato in basso". Così il tubo resta chiuso in alto da un tappo di 2 mm e aperto in basso. Dopo il passo 6, con la base sotto, il porta-matite diventa un cilindro cavo chiuso da entrambi i lati. Il foro dovrebbe essere più alto del cilindro (es. 85 mm) oppure sollevato e aperto in alto.
 - **r. 117:** "non richiede un piano riscaldato" è corretto. Molte guide però lo consigliano a 50–60 °C per l'adesione: si potrebbe precisare "non richiede, anche se aiuta". "Biodegradabile in condizioni di compostaggio industriale" va mantenuto con la condizione esplicita.
 
+## MC-ENE-3-02
+
+(dall'esplorazione immersiva «La centrale termoelettrica», 10 novembre 2026)
+
+- r. 249: "poi a 380 V per le abitazioni". La bassa tensione trifase nominale è 400 V (230 V tra fase e neutro) dalla norma CEI 8-6; 380 V è il vecchio valore. Suggerito: "poi a 400 V per la distribuzione nei quartieri".
+- r. 251: "riduce la tensione a 220 V (in Italia) — la tensione domestica standard". Il valore nominale è 230 V, come già segnalato per MC-ENE-3-03 r. 49. Le due MC vanno allineate.
+- r. 243: "Le compressori lungo il percorso" è un refuso: "I compressori".
+- r. 243: l'elenco dei fornitori di gas e delle rotte (Russia via Austria/Ucraina, Algeria, Norvegia, Qatar) cambia di anno in anno. Il transito del gas russo attraverso l'Ucraina è cessato il 1° gennaio 2025, quindi la frase non è più attuale. [DUBBIO sulla classifica aggiornata dei fornitori] Va verificato sui dati più recenti del ministero o di Snam e datato, oppure reso generico ("da gasdotti e da navi metaniere").
+
 ## MC-ENE-3-03
 
 - r. 83: "la forma di energia rinnovabile più antica e più affidabile". "Più antica" è discutibile (biomassa); anche "più affidabile" è un giudizio assoluto non dimostrato: è affidabile perché si può programmare, ma dipende dalla piovosità e nelle annate siccitose cala. Meglio: "una delle più antiche, e programmabile".
@@ -305,6 +314,8 @@ Ne aggiungo tre:
 - r. 219 "biogas (principalmente metano)": il gas di discarica è circa 45–60 % metano e 40–55 % CO₂. Più corretto: "in gran parte metano".
 - r. 221 "cappellotto — lo strato di terra": il capping finale (D.Lgs. 36/2003) è multistrato (strato di regolarizzazione, impermeabilizzazione, drenaggio, terreno vegetale). Non è soltanto terra.
 - r. 223 "all'attuale 20% circa" [DUBBIO]: gli ultimi dati ISPRA (Rapporto Rifiuti Urbani, dati 2022–2023) indicano un valore fra il 16 e il 18 %. Verificare il dato più recente e indicare l'anno. Verificare anche il 67 % del 2000 sulla serie storica ISPRA.
+- (dall'esplorazione immersiva «L'impianto di selezione dei rifiuti», 10 novembre 2026) r. 234: "impianti di selezione (gli ecocentri)". Non sono la stessa cosa: l'ecocentro, o isola ecologica, è il centro di raccolta dove i cittadini portano i rifiuti ingombranti e speciali; la selezione si fa negli impianti (centri) di selezione. Va tolta la parentesi.
+- r. 316: "centro di selezione (Stazione di Trasferimento)". La stazione di trasferimento è il luogo in cui i rifiuti passano dai mezzi piccoli a quelli grandi, senza selezione. Va tolta la parentesi. Nella stessa riga "Le botti che non passano la selezione" è un refuso per "Le bottiglie" (o "Gli oggetti"), e "vengono deviati" va accordato.
 
 ## MC-MAT-1-05
 
