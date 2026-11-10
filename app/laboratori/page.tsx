@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom } from "@/lib/laboratori";
+import { ESPLORAZIONI, esplorazioneSrc, esplorazioneAnteprima } from "@/lib/esplorazioni";
 
 export const metadata: Metadata = {
   title: "Laboratori interattivi — Book ProfTecnologIA",
@@ -42,6 +43,13 @@ export default function LaboratoriPage() {
             avanzato. Accanto c'è un'escape room: cinque lucchetti da aprire con i contenuti della MC. Li trovi
             anche nella scheda SPERIMENTA della MC. Con «LIM» si aprono a schermo intero, con testo e pulsanti grandi
             per la lavagna interattiva.
+          </p>
+          <p className="mt-3 text-base leading-7 text-slate-700">
+            In fondo alla pagina ci sono anche le{" "}
+            <a href="#esplorazioni" className="font-bold text-teal-800 underline underline-offset-4">
+              esplorazioni immersive
+            </a>
+            : impianti da guardare dentro, un dettaglio dopo l'altro.
           </p>
         </div>
 
@@ -86,6 +94,59 @@ export default function LaboratoriPage() {
             </ul>
           </section>
         ))}
+
+        <section className="mt-12 scroll-mt-28" id="esplorazioni" aria-labelledby="esplorazioni-titolo">
+          <h2 id="esplorazioni-titolo" className="text-2xl font-black tracking-tight text-slate-950">
+            Esplorazioni immersive{" "}
+            <span className="text-base font-bold text-slate-500">· {ESPLORAZIONI.length} esplorazioni</span>
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">
+            Si parte da una veduta d'insieme, si tocca un punto e si entra nel dettaglio, fino a tre livelli. Ogni
+            scena ha un testo breve e i nomi delle parti. Si aprono a schermo intero, quindi vanno bene anche alla LIM.
+          </p>
+          <ul className="mt-4 grid gap-4 sm:grid-cols-2">
+            {ESPLORAZIONI.map((e) => {
+              const color = AREA_COLOR[e.area] ?? "#00695C";
+              return (
+                <li
+                  key={e.slug}
+                  className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
+                  style={{ borderTopColor: color, borderTopWidth: 4 }}
+                >
+                  {/* L'immagine è un secondo accesso alla stessa pagina: il link con il nome è sotto */}
+                  <a href={esplorazioneSrc(e.slug)} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true">
+                    <img
+                      src={esplorazioneAnteprima(e.slug)}
+                      alt=""
+                      width={640}
+                      height={360}
+                      loading="lazy"
+                      decoding="async"
+                      className="aspect-video w-full object-cover"
+                    />
+                  </a>
+                  <div className="flex flex-1 flex-col gap-3 p-5">
+                    <p className="font-mono text-xs font-black uppercase tracking-widest" style={{ color }}>
+                      {e.mcId} · Esplorazione · Classe {e.classe}ª
+                    </p>
+                    <h3 className="text-xl font-black tracking-tight text-slate-950">{e.titolo}</h3>
+                    <p className="text-sm leading-6 text-slate-700">
+                      {e.descrizione} {e.scene} scene.
+                    </p>
+                    <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1 text-sm font-bold">
+                      <a href={esplorazioneSrc(e.slug)} target="_blank" rel="noopener noreferrer" className="text-teal-800 underline underline-offset-4">
+                        Apri l'esplorazione ↗
+                      </a>
+                      <Link href={`/mc/${e.mcId}`} className="text-slate-600 underline underline-offset-4">
+                        MC collegata →
+                      </Link>
+                    </div>
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
 
         <h2 className="mt-12 text-xl font-black tracking-tight text-slate-950">Costruzioni GeoGebra</h2>
         <ul className="mt-4 grid gap-4 sm:grid-cols-2">
