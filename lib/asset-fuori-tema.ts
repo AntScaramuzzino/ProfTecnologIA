@@ -8,8 +8,9 @@
  * Rigenerati sul tema del testo (stessi nomi file): sketchnote di RIPASSA, immagine del
  * compito di realtà, infografica di processo (2026-11-10, con NotebookLM, fonte = solo il
  * testo della MC), hook audio (2026-11-09).
- * Restano nascoste, finché non si rilancia il loro generatore sul JSON corretto, la mappa
- * concettuale e la tavola da testo, ancora sul vecchio tema.
+ * Il 2026-11-10 sono state rifatte anche la mappa concettuale (NotebookLM) e la tavola da
+ * testo (genera_immagini_da_md.mjs sul JSON corretto): non resta nascosto nulla, tranne la
+ * vecchia sketchnote base di DIG-2-04 (sulla cifratura), superata dalla versione playground.
  * Le foto decorative (copertina, contesto) e i ritratti delle professioni restano visibili.
  *
  * Quando un asset viene rigenerato con lo stesso nome file, togliere la MC (o il tipo)
@@ -17,8 +18,8 @@
  */
 
 const TIPI_CONTENUTO = [
-  "mindmap",
-  "immagine_da_md",
+  "ripassa-sketchnote.", // solo la sketchnote base, non la "-playground-densa"
+  "ripassa-sketchnote_",
 ];
 
 /** MC con testo su un tema diverso dalle immagini generate in origine. */

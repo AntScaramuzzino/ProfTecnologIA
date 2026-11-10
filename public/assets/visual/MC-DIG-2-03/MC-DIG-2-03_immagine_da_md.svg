@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
-  <title id="title">MC-DIG-2-03 - Il sistema operativo: come il computer gestisce le risorse</title>
+  <title id="title">MC-DIG-2-03 - Organizzare il computer: file, backup e privacy</title>
   <desc id="desc">Immagine didattica generata dal Markdown della micro-competenza MC-DIG-2-03.</desc>
   <defs>
     <filter id="soft" x="-12%" y="-12%" width="124%" height="124%">
@@ -25,11 +25,10 @@
   <circle cx="1450" cy="145" r="94" fill="#E0F7FA" opacity="0.75"/>
   <circle cx="1395" cy="870" r="150" fill="#2f82b7" opacity="0.13"/>
 
-  <text x="70" y="82" style="font: 800 32px Arial, sans-serif; fill: #102f43;">Il sistema operativo: come il computer gestisce</text>
-<text x="70" y="125" style="font: 800 32px Arial, sans-serif; fill: #102f43;">le risorse</text>
-  <text class="subtitle" x="72" y="188">MC-DIG-2-03 · Digitale · immagine generata da Markdown</text>
+  <text x="70" y="82" style="font: 800 43px Arial, sans-serif; fill: #102f43;">Organizzare il computer: file, backup e privacy</text>
+  <text class="subtitle" x="72" y="122">MC-DIG-2-03 · Digitale · immagine generata da Markdown</text>
 
-  <g transform="translate(70 222)">
+  <g transform="translate(70 155)">
     <rect x="0" y="0" width="132" height="34" rx="17" fill="#006064"/><text class="chip" text-anchor="middle" x="66" y="23">DIG</text>
 <rect x="145" y="0" width="132" height="34" rx="17" fill="#102f43"/><text class="chip" text-anchor="middle" x="211" y="23">Classe 2</text>
 <rect x="290" y="0" width="132" height="34" rx="17" fill="#102f43"/><text class="chip" text-anchor="middle" x="356" y="23">DigComp I</text>
@@ -45,7 +44,7 @@
       <path d="M720 610 H900 M780 540 V610" stroke="#006064" stroke-width="12" stroke-linecap="round"/>
       <circle cx="1000" cy="285" r="44" fill="#2f82b7" opacity="0.9"/>
     <rect x="560" y="720" width="480" height="48" rx="24" fill="#006064" opacity="0.95"/>
-    <text class="chip" text-anchor="middle" x="800" y="751">sistema operativo · processo · memoria RAM · file system · kernel · info</text>
+    <text class="chip" text-anchor="middle" x="800" y="751">gestione file · cartelle · backup · cloud · privacy del browser · cookie</text>
   </g>
 
   
@@ -54,9 +53,9 @@
       <circle cx="34" cy="34" r="22" fill="#006064"/>
       <text class="num" text-anchor="middle" x="34" y="42">1</text>
       <text class="callTitle" x="68" y="39">Concetto chiave</text>
-      <text class="body" x="24" y="78" text-anchor="start">Lo studente comprende cosa fa un sistema</text>
-<text class="body" x="24" y="103" text-anchor="start">operativo (gestione dei processi, della</text>
-<text class="body" x="24" y="128" text-anchor="start">memoria, del file system e delle...</text>
+      <text class="body" x="24" y="78" text-anchor="start">Lo studente organizza file e cartelle con</text>
+<text class="body" x="24" y="103" text-anchor="start">una struttura logica e una convenzione di</text>
+<text class="body" x="24" y="128" text-anchor="start">nomi, applica la regola di backup 3 2 1...</text>
     </g>
   <path class="line" d="M452 320 C520 330 555 375 625 420"/>
 
@@ -66,9 +65,9 @@
       <circle cx="34" cy="34" r="22" fill="#2f82b7"/>
       <text class="num" text-anchor="middle" x="34" y="42">2</text>
       <text class="callTitle" x="68" y="39">Visual da creare</text>
-      <text class="body" x="24" y="78" text-anchor="start">Diagramma a strati: hardware → SO (kernel,</text>
-<text class="body" x="24" y="103" text-anchor="start">driver, interfaccia) → applicazioni →</text>
-<text class="body" x="24" y="128" text-anchor="start">utente. Con frecce che mostrano il flusso...</text>
+      <text class="body" x="24" y="78" text-anchor="start">Infografica: dalla cartella caotica al</text>
+<text class="body" x="24" y="103" text-anchor="start">sistema ordinato — albero delle cartelle,</text>
+<text class="body" x="24" y="128" text-anchor="start">nome del file, backup 3 2 1...</text>
     </g>
   <path class="line" d="M452 540 C520 540 575 535 645 520"/>
 
@@ -78,9 +77,9 @@
       <circle cx="34" cy="34" r="22" fill="#d9762d"/>
       <text class="num" text-anchor="middle" x="34" y="42">3</text>
       <text class="callTitle" x="68" y="39">Compito di realta</text>
-      <text class="body" x="24" y="78" text-anchor="start">Apri il task manager (o Activity Monitor</text>
-<text class="body" x="24" y="103" text-anchor="start">su Mac) durante una sessione di lavoro</text>
-<text class="body" x="24" y="128" text-anchor="start">normale: identifica i 5 processi che...</text>
+      <text class="body" x="24" y="78" text-anchor="start">Documenta come hai organizzato il tuo</text>
+<text class="body" x="24" y="103" text-anchor="start">computer: situazione di partenza,</text>
+<text class="body" x="24" y="128" text-anchor="start">struttura di cartelle e convenzione di...</text>
     </g>
   <path class="line" d="M452 750 C540 712 600 665 690 618"/>
 
@@ -90,9 +89,9 @@
       <circle cx="34" cy="34" r="22" fill="#2f82b7"/>
       <text class="num" text-anchor="middle" x="34" y="42">4</text>
       <text class="callTitle" x="68" y="39">Punti guida</text>
-      <text class="body" x="24" y="78" text-anchor="start">⚡ INNESCA · 📖 ESPLORA · Usare bene il</text>
-<text class="body" x="24" y="103" text-anchor="start">computer: una competenza che si impara ·</text>
-<text class="body" x="24" y="128" text-anchor="start">1. Organizzare i file: la struttura che ti...</text>
+      <text class="body" x="24" y="78" text-anchor="start">⚡ INNESCA · 📖 ESPLORA · 🎯 In breve ·</text>
+<text class="body" x="24" y="103" text-anchor="start">Usare bene il computer: una competenza che</text>
+<text class="body" x="24" y="128" text-anchor="start">si impara · 1. Organizzare i file: la...</text>
     </g>
   <path class="line" d="M1148 330 C1070 350 1040 382 982 430"/>
 
@@ -102,9 +101,9 @@
       <circle cx="34" cy="34" r="22" fill="#2f8f66"/>
       <text class="num" text-anchor="middle" x="34" y="42">5</text>
       <text class="callTitle" x="68" y="39">Aggancio reale</text>
-      <text class="body" x="24" y="78" text-anchor="start">Apri il task manager (o Activity Monitor</text>
-<text class="body" x="24" y="103" text-anchor="start">su Mac) durante una sessione di lavoro</text>
-<text class="body" x="24" y="128" text-anchor="start">normale: identifica i 5 processi che...</text>
+      <text class="body" x="24" y="78" text-anchor="start">Documenta come hai organizzato il tuo</text>
+<text class="body" x="24" y="103" text-anchor="start">computer: situazione di partenza,</text>
+<text class="body" x="24" y="128" text-anchor="start">struttura di cartelle e convenzione di...</text>
     </g>
   <path class="line" d="M1148 540 C1080 540 1030 535 955 520"/>
 
