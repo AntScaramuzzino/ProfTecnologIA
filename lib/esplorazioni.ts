@@ -2,6 +2,9 @@
 // - index.html: motore comune (uguale per tutte), dati.js: scene, testi e punti, img/: una immagine per scena
 // - anteprima.webp: scena di partenza a 640×360, usata nella scheda della pagina Laboratori
 // Per aggiungerne una: copiare la cartella, riscrivere dati.js, sostituire le immagini e aggiungere una riga qui.
+// - slug è il nome della cartella e deve coincidere con il campo id di dati.js: i progressi si agganciano a quello
+// - scene è il numero di scene (nodi) di dati.js: è il totale mostrato nei progressi
+// La riga fa comparire l'esplorazione nella pagina Laboratori e in cima alla scheda OSSERVA della MC collegata.
 
 export interface EsplorazioneImmersiva {
   slug: string;
@@ -47,4 +50,14 @@ export function esplorazioneSrc(slug: string): string {
 
 export function esplorazioneAnteprima(slug: string): string {
   return `${cartella(slug)}/anteprima.webp`;
+}
+
+/** Indirizzo per l'inserimento in una pagina del libro: rotella e scorrimento verticale restano alla pagina */
+export function esplorazioneEmbedSrc(slug: string): string {
+  return `${cartella(slug)}/index.html?incorporata=1`;
+}
+
+/** Esplorazioni collegate a una MC (di norma una sola) */
+export function getEsplorazioni(mcId: string): EsplorazioneImmersiva[] {
+  return ESPLORAZIONI.filter((e) => e.mcId === mcId);
 }

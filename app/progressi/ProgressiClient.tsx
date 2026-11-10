@@ -2,7 +2,15 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useProgress, isMcPassed, isLabLevelPassed, type MCProgress, type LabProgress } from "@/lib/useProgress";
+import {
+  useProgress,
+  isMcPassed,
+  isLabLevelPassed,
+  type MCProgress,
+  type LabProgress,
+  type EsplorazioneProgress,
+} from "@/lib/useProgress";
+import { getEsplorazioni } from "@/lib/esplorazioni";
 import { SDG_BADGES, getBadgeState } from "@/lib/sdg-badges";
 
 // ── Metadati area (statici — niente import da mc-loader che usa fs) ───────────
@@ -64,6 +72,29 @@ function LabDots({ lab }: { lab?: LabProgress }) {
         />
       ))}
       <span className="sr-only">{passed.length} livelli su 3 superati</span>
+    </span>
+  );
+}
+
+/** Scene visitate in un'esplorazione immersiva, sul totale del registro (lib/esplorazioni.ts) */
+function EsplBadge({ p, total }: { p?: EsplorazioneProgress; total: number }) {
+  if (!p || total <= 0) return null;
+  const n = Math.min(p.scene.length, total);
+  if (n === 0) return null;
+  const all = n === total;
+  return (
+    <span
+      className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold ${
+        all ? "bg-sky-800 text-white" : "bg-sky-50 text-sky-900"
+      }`}
+      title={`Esplorazione immersiva: ${n} scene visitate su ${total}`}
+    >
+      <span aria-hidden>
+        Espl. {n}/{total}
+      </span>
+      <span className="sr-only">
+        Esplorazione immersiva: {n} scene visitate su {total}
+      </span>
     </span>
   );
 }
@@ -561,6 +592,9 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                     </p>
                   </div>
                   <LabDots lab={store.labs?.[rec.mcId]} />
+                  {getEsplorazioni(rec.mcId).map((e) => (
+                    <EsplBadge key={e.slug} p={store.esplorazioni?.[e.slug]} total={e.scene} />
+                  ))}
                   <ScoreBadge r={rec} />
                 </div>
               );

@@ -23,6 +23,8 @@
 
 import { useMemo, useCallback, useState, useEffect } from "react";
 import { useProgress } from "@/lib/useProgress";
+import { getEsplorazioni, type EsplorazioneImmersiva } from "@/lib/esplorazioni";
+import EsplorazioneEmbed from "@/components/mc/EsplorazioneEmbed";
 import { useBadgeUnlock, type SdgEntry } from "@/lib/useBadgeUnlock";
 import BadgeUnlockToast from "@/components/mc/BadgeUnlockToast";
 import { MCNavigator, type NavigatorTab } from "@/components/mc/MCNavigator";
@@ -459,6 +461,8 @@ function ZonePanel({
   appendiceSection,
   onQuizComplete,
   onLabResult,
+  onExplorationScene,
+  explorationSeen = null,
 }: {
   tabId: string;
   section: { title: string; body: string } | undefined;
@@ -493,6 +497,10 @@ function ZonePanel({
   onQuizComplete?: (score: number, total: number, level: "F" | "I" | "A") => void;
   /** Verifica di fine livello del laboratorio interattivo — forwarded a useProgress.recordLabResult */
   onLabResult?: (level: "F" | "I" | "A", score: number, total: number) => void;
+  /** Scena raggiunta in un'esplorazione immersiva — forwarded a useProgress.recordExplorationScene */
+  onExplorationScene?: (esplorazione: EsplorazioneImmersiva, scena: string) => void;
+  /** Scene già visitate dallo studente, per slug dell'esplorazione; null finché i progressi non sono stati letti */
+  explorationSeen?: Record<string, string[]> | null;
 }) {
   // ── RIPASSA — non dipende da sezione MD, render sempre ───────────────────
   if (tabId === "RIPASSA") {
@@ -959,9 +967,20 @@ function ZonePanel({
     // le altre: una sola infografica, la versione più recente
     const best = bestInfografica(visuals);
     const processoAssets = getOsservaInfographics(mc.id, visuals) ?? (best ? [best] : []);
+    // Esplorazioni immersive collegate alla MC (lib/esplorazioni.ts): in cima, si osserva l'impianto prima di leggerne
+    const esplorazioni = getEsplorazioni(mc.id);
 
     return (
       <div className="px-4 py-6 sm:px-6 space-y-8">
+        {esplorazioni.map((e) => (
+          <EsplorazioneEmbed
+            key={e.slug}
+            esplorazione={e}
+            viste={explorationSeen ? (explorationSeen[e.slug] ?? []) : null}
+            onScene={onExplorationScene}
+          />
+        ))}
+
         {/* Infografica del processo — in cima, prima del testo */}
         {processoAssets.length > 0 && (
           <div>
@@ -1194,7 +1213,7 @@ export function MCPageClient({
   const mcLevel = mc.outputApp.livelloDigComp === "H" ? "A" : (mc.outputApp.livelloDigComp as DigCompLevel);
 
   // ── Tracking progressi studente ──────────────────────────────────────────
-  const { store, hydrated, markVisited, recordQuizResult, recordLabResult } = useProgress();
+  const { store, hydrated, markVisited, recordQuizResult, recordLabResult, recordExplorationScene } = useProgress();
 
   // ── Badge unlock detection ────────────────────────────────────────────────
   const { newlyUnlocked, clearUnlocked } = useBadgeUnlock(store, sdgIndex, hydrated);
@@ -1217,6 +1236,22 @@ export function MCPageClient({
       recordLabResult(mc.id, level, score, total);
     },
     [mc.id, recordLabResult],
+  );
+
+  const handleExplorationScene = useCallback(
+    (esplorazione: EsplorazioneImmersiva, scena: string) => {
+      recordExplorationScene(esplorazione.mcId, esplorazione.slug, scena, mcLevel);
+    },
+    [recordExplorationScene, mcLevel],
+  );
+
+  // Scene già visitate dallo studente nelle esplorazioni: l'iframe le chiede all'avvio
+  const explorationSeen = useMemo(
+    () =>
+      hydrated
+        ? Object.fromEntries(Object.entries(store.esplorazioni ?? {}).map(([slug, p]) => [slug, p.scene]))
+        : null,
+    [hydrated, store.esplorazioni],
   );
 
   // Scroll al top ad ogni apertura di pagina MC
@@ -1319,6 +1354,8 @@ export function MCPageClient({
             appendiceSection={appendiceSection}
             onQuizComplete={handleQuizComplete}
             onLabResult={handleLabResult}
+            onExplorationScene={handleExplorationScene}
+            explorationSeen={explorationSeen}
           />
         )}
       </MCNavigator>

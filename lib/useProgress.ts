@@ -34,16 +34,29 @@ export interface LabProgress {
   levels: Partial<Record<"F" | "I" | "A", LabLevelResult>>;
 }
 
+/** Esplorazione immersiva: scene visitate dallo studente nella scheda OSSERVA della MC */
+export interface EsplorazioneProgress {
+  slug: string;
+  mcId: string;
+  /** Identificativi delle scene (nodi di dati.js) visitate, in ordine di prima visita */
+  scene: string[];
+  at: string; // ISO 8601
+}
+
 export interface ProgressStore {
   studentId: string;
   digcompLevel: "F" | "I" | "A"; // current overall level
   completedMCs: Record<string, MCProgress>;
   /** Risultati dei laboratori interattivi (assente nei dati salvati prima dei laboratori) */
   labs?: Record<string, LabProgress>;
+  /** Scene visitate nelle esplorazioni immersive, per slug (assente nei dati salvati prima delle esplorazioni) */
+  esplorazioni?: Record<string, EsplorazioneProgress>;
   lastActive: string;
 }
 
 const PASS = 0.7;
+/** Tetto alle scene memorizzate per esplorazione (le esplorazioni ne hanno una dozzina) */
+const MAX_SCENE = 60;
 
 /** Livello del laboratorio superato: verifica di fine livello con almeno il 70% */
 export function isLabLevelPassed(r?: LabLevelResult): boolean {
@@ -186,6 +199,34 @@ export function useProgress(studentIdOverride?: string) {
     []
   );
 
+  /** Record a scene reached in an immersive exploration (each scene counts once; not a pass criterion) */
+  const recordExplorationScene = useCallback(
+    (mcId: string, slug: string, scena: string, level: "F" | "I" | "A") => {
+      if (!mcId || !slug || !scena) return;
+      setStore((prev) => {
+        const old = prev.esplorazioni?.[slug];
+        if (old && (old.scene.includes(scena) || old.scene.length >= MAX_SCENE)) return prev;
+        const now = new Date().toISOString();
+        const completedMCs = prev.completedMCs[mcId]
+          ? prev.completedMCs
+          : {
+              ...prev.completedMCs,
+              [mcId]: { mcId, completedAt: now, quizScore: 0, quizTotal: 0, level, attempts: 0 },
+            };
+        return {
+          ...prev,
+          completedMCs,
+          esplorazioni: {
+            ...(prev.esplorazioni ?? {}),
+            [slug]: { slug, mcId, scene: [...(old?.scene ?? []), scena], at: now },
+          },
+          lastActive: now,
+        };
+      });
+    },
+    []
+  );
+
   /** Mark an MC as visited (without quiz) */
   const markVisited = useCallback((mcId: string, level: "F" | "I" | "A") => {
     setStore((prev) => {
@@ -228,6 +269,7 @@ export function useProgress(studentIdOverride?: string) {
     passedCount,
     recordQuizResult,
     recordLabResult,
+    recordExplorationScene,
     markVisited,
     reset,
     isCompleted: (mcId: string) => !!store.completedMCs[mcId],

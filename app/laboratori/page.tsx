@@ -123,7 +123,7 @@ export default function LaboratoriPage() {
                       <a href={esplorazioneSrc(e.slug)} target="_blank" rel="noopener noreferrer" className="text-teal-800 underline underline-offset-4">
                         Apri l'esplorazione ↗
                       </a>
-                      <Link href={`/mc/${e.mcId}`} className="text-slate-600 underline underline-offset-4">
+                      <Link href={`/mc/${e.mcId}#osserva`} className="text-slate-600 underline underline-offset-4">
                         MC collegata →
                       </Link>
                     </div>
