@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { GLOSSARIO, CATEGORIE, type CompetenzaEntry } from "@/lib/competenze-glossario";
 
@@ -68,8 +68,8 @@ function coloreCategoria(cat: string): string {
 }
 
 // ── Componente Card singola competenza ────────────────────────────────────────
-function CompetenzaCard({ nome, entry }: { nome: string; entry: CompetenzaEntry }) {
-  const [aperto, setAperto] = useState(false);
+function CompetenzaCard({ nome, entry, apertoIniziale = false }: { nome: string; entry: CompetenzaEntry; apertoIniziale?: boolean }) {
+  const [aperto, setAperto] = useState(apertoIniziale);
   const colore = coloreCategoria(entry.categoria);
 
   return (
@@ -142,6 +142,14 @@ function CompetenzaCard({ nome, entry }: { nome: string; entry: CompetenzaEntry 
 export default function GlossarioClient() {
   const [query, setQuery] = useState("");
   const [catFiltro, setCatFiltro] = useState<string | null>(null);
+
+  // Arrivo dalla ricerca globale: /glossario/?q=termine filtra e apre la scheda del termine
+  // (letto dopo il montaggio: la pagina resta statica e completa anche senza JavaScript)
+  const [qParam, setQParam] = useState("");
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search).get("q") ?? "";
+    if (q) { setQParam(q); setQuery(q); }
+  }, []);
 
   const voci = useMemo(() => {
     const q = query.toLowerCase().trim();
@@ -300,7 +308,7 @@ export default function GlossarioClient() {
             )}
             <div className="grid gap-3 sm:grid-cols-2">
               {voci.map(([nome, entry]) => (
-                <CompetenzaCard key={nome} nome={nome} entry={entry} />
+                <CompetenzaCard key={nome} nome={nome} entry={entry} apertoIniziale={!!qParam && nome === qParam.toLowerCase()} />
               ))}
             </div>
           </>

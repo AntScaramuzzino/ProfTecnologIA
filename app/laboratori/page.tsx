@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
-import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom } from "@/lib/laboratori";
+import { LABORATORI, GEOGEBRA, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom } from "@/lib/laboratori";
 import { ESPLORAZIONI, esplorazioneSrc, esplorazioneAnteprima } from "@/lib/esplorazioni";
 
 export const metadata: Metadata = {
@@ -10,20 +10,6 @@ export const metadata: Metadata = {
     "Laboratori interattivi collegati alle micro-competenze: simulatori, smistatori, ispettori di artefatti, tavoli grafici 3D e programmatori, su tre livelli.",
 };
 
-const GEOGEBRA = [
-  {
-    href: "/laboratori/perpendicolare",
-    titolo: "Perpendicolare a una retta in un punto",
-    mcId: "MC-DIS-1-01",
-    descrizione: "Costruzione animata con righello e compasso, passo per passo.",
-  },
-  {
-    href: "/laboratori/bisettrice-angolo",
-    titolo: "Bisettrice di un angolo",
-    mcId: "MC-DIS-1-01",
-    descrizione: "Costruzione animata con righello e compasso, passo per passo.",
-  },
-];
 
 export default function LaboratoriPage() {
   return (

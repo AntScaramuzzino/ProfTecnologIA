@@ -62,3 +62,19 @@ export function escapeSrc(mcId: string): string {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return `${basePath}/embeds/escape/${mcId}/index.html`;
 }
+
+// Costruzioni GeoGebra: pagine dedicate in app/laboratori/<slug>
+export const GEOGEBRA = [
+  {
+    href: "/laboratori/perpendicolare",
+    titolo: "Perpendicolare a una retta in un punto",
+    mcId: "MC-DIS-1-01",
+    descrizione: "Costruzione animata con righello e compasso, passo per passo.",
+  },
+  {
+    href: "/laboratori/bisettrice-angolo",
+    titolo: "Bisettrice di un angolo",
+    mcId: "MC-DIS-1-01",
+    descrizione: "Costruzione animata con righello e compasso, passo per passo.",
+  },
+];
