@@ -5,8 +5,9 @@
  * della scheda JSON originale; il JSON è stato riallineato al testo (decisione autore:
  * vale il testo).
  *
- * Rigenerati il 2026-11-09 sul tema del testo (stessi nomi file): sketchnote di RIPASSA,
- * immagine del compito di realtà, infografica di processo, hook audio.
+ * Rigenerati sul tema del testo (stessi nomi file): sketchnote di RIPASSA, immagine del
+ * compito di realtà, infografica di processo (2026-11-10, con NotebookLM, fonte = solo il
+ * testo della MC), hook audio (2026-11-09).
  * Restano nascoste, finché non si rilancia il loro generatore sul JSON corretto, la mappa
  * concettuale e la tavola da testo, ancora sul vecchio tema.
  * Le foto decorative (copertina, contesto) e i ritratti delle professioni restano visibili.

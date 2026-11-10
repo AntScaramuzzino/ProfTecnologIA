@@ -21,6 +21,8 @@ In 9 MC il testo pubblicato tratta un tema diverso dalla scheda JSON originale. 
 In più, l'infografica di **MC-DIG-2-04** è nascosta perché presenta il lucchetto HTTPS come difesa dal phishing (vedi §5).
 
 > **Aggiornamento 9 novembre, sera.** Sketchnote, schede del compito e infografiche sono state rigenerate (grafica vettoriale con testi verificati, stessi nomi file) e sono online, insieme a una nuova infografica per AMB-2-05 e all'infografica corretta di DIG-2-04 (v2). Restano da rifare solo le **copertine** (facoltative: sono decorative) e, rilanciando il generatore sui JSON corretti, **mappa concettuale e tavola da testo** delle 9 MC e di DIG-2-04, ancora nascoste. Le sezioni 3-5 restano come riferimento per una futura versione fotorealistica.
+>
+> **Aggiornamento 10 novembre.** Le 25 immagini (9 sketchnote, 9 schede del compito, 7 infografiche) sono state rigenerate con NotebookLM nel notebook "Tecnologia: Disegno, Materiali e Coding", usando come unica fonte il testo della MC (aggiunto come "Testo copiato"), e sostituiscono la versione vettoriale con gli stessi nomi file (WebP 2048 × 1143). Ogni immagine è stata controllata parola per parola: circa due su tre della prima tornata contenevano refusi e sono state rifatte; cinque refusi di una sola lettera sono stati corretti a mano sui pixel ("Meteriale", "OR code", due "valutuzione", "dicture") e in SIS-3-04 è stata tolta un'etichetta "Realistico" duplicata. Restano piccole scritte decorative illeggibili su alcuni oggetti disegnati (opuscoli, telefoni). Nel notebook sono rimaste le fonti delle 10 MC e le infografiche di scarto: si possono eliminare a mano.
 
 ## 2. Cosa è nascosto e come rimetterlo online
 
