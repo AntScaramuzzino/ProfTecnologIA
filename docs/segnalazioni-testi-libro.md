@@ -28,6 +28,16 @@ Ogni voce è stata individuata dai produttori o dai revisori indipendenti dei vi
 | AMB-2-06 | 55 | «decine di milioni di €/anno» per 300.000 punti luce: stima più plausibile ≈ 8–15 M€ di risparmio | verificare |
 | COM-3-01 | 131 | «IP li rimette insieme usando il numero d'ordine»: è TCP (come dice la riga 137) | correggere |
 
+## MC-AMB-2-02
+
+(dall'esplorazione immersiva «La casa e i suoi impianti», 10 novembre 2026)
+
+- r. 98: "da 20 kV a 220 o 400 Volt". I valori nominali della bassa tensione sono 230 V e 400 V; più sotto (box sulla legge di Ohm) il testo dice correttamente 230 V. Va allineato.
+- r. 110: "Interruttore generale (differenziale o salvavita)". Interruttore generale e differenziale sono due funzioni diverse, anche se spesso stanno nello stesso apparecchio: il generale stacca tutto a mano, il differenziale scatta da solo quando c'è una dispersione. Suggerito: "Interruttore differenziale (salvavita)". Anche "Non disattivarlo mai manualmente senza motivo" è ambiguo: il tasto di prova va invece premuto periodicamente.
+- r. 165: "non si cristallizza in fissile come il rame" non ha senso compiuto. Probabile residuo di editing: va riscritto (per esempio "non si incrosta e non si corrode") o tolto.
+- r. 190: il numero "800-900-700" è il pronto intervento di un solo distributore. [DUBBIO] Il numero da chiamare dipende dal distributore locale ed è scritto sulla bolletta e sul contatore: conviene dirlo così, senza un numero fisso.
+- r. 196: "Il potere calorifico del metano è di circa 8,5 kWh/m³". [DUBBIO] Il gas naturale distribuito in Italia ha un potere calorifico superiore intorno a 10,5–11 kWh per metro cubo standard (circa 9,5–10 l'inferiore). Va verificato sul valore riportato in bolletta (coefficiente P) e corretto.
+
 ## MC-COM-3-02
 
 - **r.74, "Le stesse foto in RAW (lossless)"**: il RAW non è un formato di compressione lossless. È il dato grezzo del sensore, a volte non compresso e a volte compresso con o senza perdita. Per l'argomento "perché non sempre lossless" il confronto andrebbe fatto con un formato lossless vero (per esempio PNG/TIFF) oppure riformulato ("i file RAW, dati grezzi del sensore, …").

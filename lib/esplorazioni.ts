@@ -28,6 +28,16 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
       "Che cosa succede agli imballaggi dopo la raccolta differenziata: vaglio rotante, calamite, correnti parassite, telecamere a infrarossi e pressa.",
   },
   {
+    slug: "casa-e-impianti",
+    mcId: "MC-AMB-2-02",
+    titolo: "La casa e i suoi impianti",
+    classe: 2,
+    area: "AMB",
+    scene: 12,
+    descrizione:
+      "Corrente, acqua, gas e calore dentro le pareti di casa: contatori, quadro elettrico e salvavita, sifone, fornello, caldaia, termostato e pompa di calore.",
+  },
+  {
     slug: "acquedotto-e-depuratore",
     mcId: "MC-AMB-2-05",
     titolo: "Dalla sorgente al depuratore",
