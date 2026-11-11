@@ -379,3 +379,11 @@ Ne aggiungo tre:
 - Righe 101 e 105: "architetto costruttivo" e "architetto creativo" non sono professioni reali. Nella letteratura RIASEC l'architetto è in genere associato al tipo A (o al codice AIR).
 - Righe 103 e 107: "medico" compare sia in I sia in S senza spiegazione. Si può tenere in uno solo dei due, o spiegare che ha un codice misto (per esempio ISR).
 - Manca del tutto il significato dell'esagono (i tipi vicini sono più compatibili), che è il cuore del modello di Holland.
+
+## MC-COM-3-05 — Reti globali, internet e infrastrutture
+
+(dall'esplorazione immersiva «Dove vive Internet», 11 novembre 2026)
+
+- r. 27 e r. 50: lo spessore del cavo sottomarino è descritto in due modi diversi: «spessi come un tubo dell'idrante» (INNESCA) e «spessi più o meno come un tubo da giardino» (ESPLORA). In mare aperto il paragone corretto è il tubo da giardino; vicino alla costa il cavo è più grosso perché ha un'armatura in più. Proposta: uniformare r. 27 a «un tubo da giardino».
+- r. 27 e r. 124: «circa 600 cavi» e «oltre il 95% del traffico» sono dati che cambiano negli anni [DUBBIO: da ricontrollare su una fonte aggiornata prima di ogni edizione].
+

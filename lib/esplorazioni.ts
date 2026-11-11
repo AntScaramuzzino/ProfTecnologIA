@@ -58,6 +58,16 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
       "Le macchine semplici dentro una bicicletta: pedivella, catena e pignoni, leva del freno, ruota e viti. Si scende fino alle sfere dei cuscinetti e all'attrito visto al microscopio.",
   },
   {
+    slug: "dove-vive-internet",
+    mcId: "MC-COM-3-05",
+    titolo: "Dove vive Internet",
+    classe: 3,
+    area: "COM",
+    scene: 15,
+    descrizione:
+      "I luoghi fisici di Internet: cavo sottomarino, stazione di approdo, data center e antenna. Si scende fino alla luce dentro una fibra ottica e al processore di un server.",
+  },
+  {
     slug: "centrale-termoelettrica",
     mcId: "MC-ENE-3-02",
     titolo: "La centrale termoelettrica",
