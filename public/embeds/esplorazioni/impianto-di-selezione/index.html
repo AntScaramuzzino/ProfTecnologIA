@@ -150,6 +150,23 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .mark.go.off .tag { left: auto; right: auto; top: auto; bottom: auto; transform: translate(-50%, -50%); font-style: normal; font-size: 12.5px; padding: 8px 12px; }
 .mark.go.off .tag::before { content: attr(data-arrow); margin-right: 6px; }
 
+/* ---------- spiegazione di una parte, al centro della scena ---------- */
+.tipcard { position: absolute; z-index: 6; top: 50%; transform: translateY(-50%); max-height: calc(100% - 150px); color: var(--ink); text-shadow: 0 1px 3px rgba(0, 0, 0, .55); cursor: default; animation: tipin .26s ease-out; }
+.tipcard::before { content: ""; position: absolute; z-index: -1; inset: -90px -110px; pointer-events: none; background: radial-gradient(closest-side, rgba(var(--tint), .86) 0%, rgba(var(--tint), .74) 45%, rgba(var(--tint), .36) 75%, rgba(var(--tint), 0) 100%); }
+.tipcard h2 { margin: 0; font: 600 clamp(24px, 2.6vw, 34px)/1.1 var(--display); text-wrap: balance; }
+.tipcard p { margin: 10px 0 0; font-size: clamp(16px, 1.3vw, 19px); line-height: 1.5; color: var(--ink-soft); text-wrap: pretty; }
+#btnTipBack { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; margin: 16px 0 0 -4px; padding: 7px 13px 7px 7px; border-radius: 999px; font: 500 13px/1.2 var(--body); color: var(--ink); text-shadow: none; background-color: rgba(255, 255, 255, .14); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .3); transition: background-color .15s; }
+#btnTipBack:hover { background-color: rgba(255, 255, 255, .26); }
+#btnTipBack svg { flex: none; width: 16px; height: 16px; }
+#btnTipBack span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+@keyframes tipin { from { opacity: 0; transform: translateY(calc(-50% + 8px)); } }
+/* con la spiegazione aperta restano in vista solo la parte scelta e la spiegazione */
+.panel { transition: opacity .22s; }
+.app.tipping .panel { opacity: 0; pointer-events: none; }
+.app.tipping .panel-in { pointer-events: none; }
+.app.tipping .mark:not(.sel) > * { opacity: 0; pointer-events: none !important; }
+@media (prefers-reduced-motion: reduce) { .tipcard { animation: none; } .panel { transition: none; } }
+
 /* ---------- comandi ---------- */
 .bar { position: absolute; inset: 0 0 auto; z-index: 7; display: flex; align-items: center; gap: 10px; padding-top: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); pointer-events: none; }
 .bar .grow { flex: 1; }
@@ -268,6 +285,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 /* Nel libro: gli stessi caratteri delle altre attività (Atkinson Hyperlegible, JetBrains Mono) */
 :root { --display: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --body: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
 .head h1 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(25px, 3vw, 35px); }
+.tipcard h2 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(23px, 2.4vw, 31px); }
 .mark.go .tag { font-style: normal; }
 @media (min-width: 641px) { :root { --tag-size: 13.5px; } }
 .menu button[aria-current="true"], .crumb.here { font-weight: 700; }
@@ -281,6 +299,14 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     <div class="shade" aria-hidden="true"></div>
     <div class="glow" id="glow" aria-hidden="true"></div>
     <div class="marks" id="marks" role="group" aria-label="Punti da esplorare"></div>
+    <div class="tipcard" id="tipcard" aria-live="polite" hidden>
+      <h2 id="tipTitle"></h2>
+      <p id="tipText"></p>
+      <button type="button" id="btnTipBack">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+        <span></span>
+      </button>
+    </div>
     <div class="bar">
       <nav class="trail" id="nav" aria-label="Dove sei">
         <button type="button" class="pill round" id="btnPath" aria-haspopup="menu" aria-expanded="false" aria-controls="menu" aria-label="Tutte le scene">
@@ -412,6 +438,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     const m = metrics(cur());
     cam = clamp(cam, m);
     place(front, cam, m);
+    placeCard();
     layout();
     placeGlow();
   }
@@ -461,10 +488,11 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     const rel = (r) => [r.left - sr.left, r.top - sr.top, r.width, r.height];
     // dove il pannello copre la scena, le etichette gli girano attorno; lo stesso per i comandi in alto
     const pr = panel.firstElementChild.getBoundingClientRect();
-    const pb = pr.top < sr.bottom - 1 && pr.height ? rel(pr) : null;
+    const pb = pr.top < sr.bottom - 1 && pr.height && card.hidden ? rel(pr) : null;
     if (pb) boxes.push(pb);
     const pills = [...stage.querySelectorAll('.bar .pill')].map((b) => rel(b.getBoundingClientRect())).filter((b) => b[2]);
     boxes.push(...pills);
+    if (!card.hidden) boxes.push(rel(card.getBoundingClientRect()));
     for (const el of marks.children) {
       const p = el._p, go = el.classList.contains('go'), tag = el.lastElementChild;
       const [x, y] = toScreen(p.x / 100, p.y / 100, cam, m);
@@ -618,7 +646,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     else grip = null;
   }
   stage.addEventListener('pointerdown', (e) => {
-    if (busy || e.target.closest('button, .menu')) return;
+    if (busy || e.target.closest('button, .menu, .tipcard')) return;
     closeMenu();
     try { stage.setPointerCapture(e.pointerId); } catch (err) { /* puntatore già rilasciato */ }
     fingers.set(e.pointerId, [e.clientX, e.clientY]);
@@ -627,7 +655,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   });
   // puntatore fermo sopra la scena (mouse o penna): si illumina l'area del punto su cui si trova
   const hover = (e) => {
-    if (busy || e.pointerType === 'touch') return;
+    if (busy || e.pointerType === 'touch' || !card.hidden) return;
     const mk = e.target.closest('.mark.go');
     const r = stage.getBoundingClientRect();
     setGlow(mk ? (mk.classList.contains('off') ? null : mk._p) : e.target.closest('button, .menu, .bar, .mark') ? null : zoneAt(e.clientX - r.left, e.clientY - r.top));
@@ -657,6 +685,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     stage.classList.remove('drag');
     regrip();
     if (!was || busy) return;
+    if (!card.hidden) { hideTip(); return; }       // spiegazione aperta: un tocco sull'immagine la chiude
     // tocco o clic senza trascinare dentro un'area sensibile: si entra nella scena di quel punto
     const r = stage.getBoundingClientRect(), p = zoneAt(e.clientX - r.left, e.clientY - r.top);
     if (!p) return;
@@ -773,27 +802,64 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       layout();
     }, calm ? 0 : 200);
   }
+  // Su una scena larga la spiegazione sta al centro dell'immagine, dal lato opposto al punto, e il testo della scena
+  // si fa da parte. Dove il testo sta sotto l'immagine (telefono, riquadro nel libro) prende il suo posto lì sotto.
+  const card = $('tipcard'), app = $('app');
+  const stacked = () => hosted() || matchMedia('(max-aspect-ratio: 5/6)').matches;
+  function placeCard() {
+    if (!tip || card.hidden) return;
+    const m = metrics(cur()), [x] = toScreen(tip.x / 100, tip.y / 100, cam, m);
+    const w = Math.min(500, m.W * .42), pad = 28;
+    const left = x < m.W / 2 ? Math.max(x + 70, m.W * .68 - w / 2) : Math.min(x - 70 - w, m.W * .32 - w / 2);
+    card.style.width = w + 'px';
+    card.style.left = Math.min(Math.max(left, pad), m.W - w - pad) + 'px';
+  }
+  function closeCard() {
+    card.hidden = true;
+    app.classList.remove('tipping');
+  }
   function showTip(p) {
     if (busy) return;
     if (tip === p) { hideTip(); return; }
+    const inPanel = !!tip && card.hidden;          // c'era già una spiegazione nel testo sotto l'immagine
     tip = p;
     markTip();
-    if (panel.classList.contains('folded')) btnFold.click();
-    swapPanel(paintTip);
+    setGlow(null);
+    if (stacked()) {
+      closeCard();
+      if (panel.classList.contains('folded')) btnFold.click();
+      swapPanel(paintTip);
+      return;
+    }
+    if (inPanel) { $('btnScene').hidden = true; setTextOnly(cur()); }
+    $('tipTitle').textContent = p.titolo || p.etichetta;
+    $('tipText').textContent = p.testo;
+    const b = $('btnTipBack');
+    b.lastElementChild.textContent = N[cur()].titolo;
+    b.setAttribute('aria-label', 'Chiudi la spiegazione e torna a: ' + N[cur()].titolo);
+    card.hidden = false;
+    app.classList.add('tipping');
+    placeCard();
+    layout();
   }
   function hideTip() {
     if (!tip || busy) return;
     tip = null;
     markTip();
-    swapPanel(() => setText(cur()));
+    if (!card.hidden) { closeCard(); layout(); }
+    else swapPanel(() => setText(cur()));
   }
 
   /* ---------- pannello ---------- */
   function setText(id) {
-    const n = N[id];
     tip = null;
-    $('btnScene').hidden = true;
+    closeCard();
     setTrail(id);
+    setTextOnly(id);
+  }
+  function setTextOnly(id) {
+    const n = N[id];
+    $('btnScene').hidden = true;
     $('title').textContent = n.titolo;
     $('text').textContent = n.testo;
     const ch = $('chain');
@@ -852,6 +918,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     wanted = null;
     closeMenu();
     tip = null;
+    closeCard();
     fingers.clear(); grip = null;
     marks.classList.add('hide');
     panel.classList.add('swap');
@@ -971,6 +1038,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     else if (path.length > 1 && !document.fullscreenElement) goTo(path[path.length - 2]);
   });
   $('btnScene').addEventListener('click', hideTip);
+  $('btnTipBack').addEventListener('click', hideTip);
   btnFold.addEventListener('click', () => {
     const folded = panel.classList.toggle('folded');
     btnFold.setAttribute('aria-expanded', String(!folded));
@@ -989,7 +1057,11 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     const id = N[h] ? h : D.radice;
     if (id !== cur()) goTo(id);
   });
-  const resized = () => { fitTrail(); if (!busy) apply(); };
+  const resized = () => {
+    fitTrail();
+    if (tip && !busy && card.hidden === !stacked()) { const p = tip; tip = null; closeCard(); setTextOnly(cur()); showTip(p); }   // la spiegazione cambia posto
+    if (!busy) apply();
+  };
   if ('ResizeObserver' in window) new ResizeObserver(resized).observe(stage);
   else window.addEventListener('resize', resized);
 
