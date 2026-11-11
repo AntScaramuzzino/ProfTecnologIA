@@ -7,7 +7,8 @@
  *   fuoco: [x, y]   → punto tenuto al centro quando l'immagine viene ritagliata (schermi verticali)
  *   fasi: [..]      → quali forme di energia sono in gioco (indici di catena.fasi)
  *   punti: [..]     → punti cliccabili: { x, y, etichetta, vai: "id-del-nodo" }
- *   note:  [..]     → etichette fisse, non cliccabili: { x, y, etichetta }
+ *   note:  [..]     → parti della scena senza una scena propria: { x, y, etichetta, testo }
+ *                         toccando l'etichetta, il testo (una o due frasi) prende il posto di quello della scena
  * Le coordinate x, y sono percentuali dell'immagine, da sinistra e dall'alto.
  */
 window.ESPLORAZIONE = {
@@ -31,8 +32,8 @@ window.ESPLORAZIONE = {
         { x: 80, y: 27, etichetta: "Stazione elettrica", vai: "stazione" }
       ],
       note: [
-        { x: 43, y: 10, etichetta: "Camino", verso: "giu" },
-        { x: 13, y: 79, etichetta: "Arrivo del gas" }
+        { x: 43, y: 10, etichetta: "Camino", verso: "giu", testo: "Da qui escono i fumi, dopo che la caldaia a recupero ne ha preso il calore." },
+        { x: 13, y: 79, etichetta: "Arrivo del gas", testo: "Il gas naturale arriva con un gasdotto interrato. Prima di entrare in centrale viene misurato e portato alla pressione giusta." }
       ]
     },
 
@@ -47,8 +48,8 @@ window.ESPLORAZIONE = {
         { x: 58, y: 42, etichetta: "Camera di combustione", vai: "combustione" }
       ],
       note: [
-        { x: 27, y: 40, etichetta: "Compressore" },
-        { x: 80, y: 36, etichetta: "Pale della turbina" }
+        { x: 27, y: 40, etichetta: "Compressore", testo: "File di palette che girano e schiacciano l'aria aspirata dall'esterno. Per farlo usa una buona parte dell'energia prodotta dalla turbina." },
+        { x: 80, y: 36, etichetta: "Pale della turbina", testo: "I gas caldissimi le investono e le fanno girare. Sono fatte di leghe speciali, capaci di resistere a temperature a cui l'acciaio comune cederebbe." }
       ]
     },
 
@@ -60,9 +61,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 45],
       fasi: [0, 1],
       note: [
-        { x: 17, y: 30, etichetta: "Bruciatori" },
-        { x: 45, y: 42, etichetta: "Fiamma" },
-        { x: 88, y: 40, etichetta: "Pale della turbina", lato: "sx" }
+        { x: 17, y: 30, etichetta: "Bruciatori", testo: "Mescolano il gas con l'aria compressa e lo iniettano nella camera, dove brucia in modo continuo." },
+        { x: 45, y: 42, etichetta: "Fiamma", testo: "Resta sempre accesa finché la centrale lavora. È qui che si libera l'energia contenuta nel gas." },
+        { x: 88, y: 40, etichetta: "Pale della turbina", lato: "sx", testo: "I gas caldi escono dalla camera di combustione e le colpiscono: il calore comincia a diventare movimento." }
       ]
     },
 
@@ -77,9 +78,9 @@ window.ESPLORAZIONE = {
         { x: 87, y: 22, etichetta: "Camino", vai: "camino", lato: "sx" }
       ],
       note: [
-        { x: 25, y: 42, etichetta: "Arrivo dei gas caldi" },
-        { x: 60, y: 12, etichetta: "Serbatoi del vapore", verso: "giu" },
-        { x: 64, y: 55, etichetta: "Tubi del vapore" }
+        { x: 25, y: 42, etichetta: "Arrivo dei gas caldi", testo: "Un grande condotto porta qui i gas appena usciti dalla turbina a gas, ancora a centinaia di gradi." },
+        { x: 60, y: 12, etichetta: "Serbatoi del vapore", verso: "giu", testo: "Cilindri d'acciaio in cima alla caldaia, dove l'acqua bollente si separa dal vapore. Il vapore prosegue, l'acqua torna nei tubi." },
+        { x: 64, y: 55, etichetta: "Tubi del vapore", testo: "Portano il vapore ad alta pressione alla turbina a vapore. Sono rivestiti di isolante per non perdere calore lungo il percorso." }
       ]
     },
 
@@ -91,8 +92,8 @@ window.ESPLORAZIONE = {
       fuoco: [55, 35],
       fasi: [1],
       note: [
-        { x: 56, y: 7, etichetta: "Fumi", verso: "giu" },
-        { x: 61, y: 24, etichetta: "Strumenti di misura" }
+        { x: 56, y: 7, etichetta: "Fumi", verso: "giu", testo: "Contengono soprattutto azoto, vapore acqueo e anidride carbonica. Sono quasi trasparenti perché il gas, bruciando, non produce fuliggine." },
+        { x: 61, y: 24, etichetta: "Strumenti di misura", testo: "Sonde che analizzano i fumi senza interruzione. I dati servono a verificare che le emissioni restino entro i limiti di legge." }
       ]
     },
 
@@ -108,8 +109,8 @@ window.ESPLORAZIONE = {
         { x: 75, y: 72, etichetta: "Condensatore", vai: "condensatore" }
       ],
       note: [
-        { x: 19, y: 14, etichetta: "Arrivo del vapore", verso: "giu" },
-        { x: 38, y: 30, etichetta: "Turbina" }
+        { x: 19, y: 14, etichetta: "Arrivo del vapore", verso: "giu", testo: "Il vapore arriva dalla caldaia a recupero dentro tubi dalle pareti spesse: è caldissimo e ad alta pressione." },
+        { x: 38, y: 30, etichetta: "Turbina", testo: "Dentro l'involucro ci sono file di pale montate sull'albero. Il vapore, espandendosi, le spinge una dopo l'altra." }
       ]
     },
 
@@ -121,9 +122,9 @@ window.ESPLORAZIONE = {
       fuoco: [52, 45],
       fasi: [2, 3],
       note: [
-        { x: 55, y: 20, etichetta: "Statore" },
-        { x: 58, y: 45, etichetta: "Rotore" },
-        { x: 12, y: 42, etichetta: "Albero" }
+        { x: 55, y: 20, etichetta: "Statore", testo: "La parte fissa. Nei suoi avvolgimenti di rame nasce la corrente elettrica che esce dalla centrale." },
+        { x: 58, y: 45, etichetta: "Rotore", testo: "La parte che gira, trascinata dalla turbina. Funziona da elettromagnete e crea il campo magnetico." },
+        { x: 12, y: 42, etichetta: "Albero", testo: "Collega la turbina all'alternatore: è lui a portare il movimento al rotore." }
       ]
     },
 
@@ -135,9 +136,9 @@ window.ESPLORAZIONE = {
       fuoco: [52, 45],
       fasi: [1],
       note: [
-        { x: 57, y: 12, etichetta: "Vapore in arrivo", verso: "giu" },
-        { x: 55, y: 38, etichetta: "Tubi freddi" },
-        { x: 72, y: 74, etichetta: "Acqua condensata" }
+        { x: 57, y: 12, etichetta: "Vapore in arrivo", verso: "giu", testo: "È il vapore uscito dalla turbina: ha già ceduto quasi tutta la sua energia ed è a bassa pressione." },
+        { x: 55, y: 38, etichetta: "Tubi freddi", testo: "Dentro scorre l'acqua di raffreddamento. Il vapore tocca la loro superficie fredda e diventa goccioline, come sul coperchio di una pentola." },
+        { x: 72, y: 74, etichetta: "Acqua condensata", testo: "Si raccoglie sul fondo e le pompe la rimandano alla caldaia. È sempre la stessa acqua, che ricomincia il giro." }
       ]
     },
 
@@ -149,9 +150,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 40],
       fasi: [1],
       note: [
-        { x: 50, y: 12, etichetta: "Vapore acqueo", verso: "giu" },
-        { x: 30, y: 45, etichetta: "Acqua che cade" },
-        { x: 70, y: 78, etichetta: "Vasca di raccolta" }
+        { x: 50, y: 12, etichetta: "Vapore acqueo", verso: "giu", testo: "È acqua evaporata che, a contatto con l'aria più fresca, forma una nuvola di goccioline. Non contiene fumi." },
+        { x: 30, y: 45, etichetta: "Acqua che cade", testo: "L'acqua tiepida scende a pioggia e incontra l'aria che sale: così si raffredda." },
+        { x: 70, y: 78, etichetta: "Vasca di raccolta", testo: "Raccoglie l'acqua raffreddata, che le pompe rimandano al condensatore. Quella evaporata va rimpiazzata con acqua nuova." }
       ]
     },
 
@@ -167,7 +168,7 @@ window.ESPLORAZIONE = {
         { x: 84, y: 30, etichetta: "Linee ad alta tensione", vai: "linee", lato: "sx" }
       ],
       note: [
-        { x: 52, y: 58, etichetta: "Interruttori" }
+        { x: 52, y: 58, etichetta: "Interruttori", testo: "Apparecchi che collegano la centrale alla rete o la staccano. In caso di guasto aprono il circuito in una frazione di secondo." }
       ]
     },
 
@@ -179,9 +180,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 45],
       fasi: [3],
       note: [
-        { x: 25, y: 15, etichetta: "Conservatore dell'olio", verso: "giu" },
-        { x: 54, y: 21, etichetta: "Isolatori passanti" },
-        { x: 62, y: 64, etichetta: "Radiatori", verso: "giu" }
+        { x: 25, y: 15, etichetta: "Conservatore dell'olio", verso: "giu", testo: "Un serbatoio posto sopra il trasformatore. L'olio che riempie la macchina si dilata quando si scalda: qui trova lo spazio per farlo." },
+        { x: 54, y: 21, etichetta: "Isolatori passanti", testo: "Colonne di ceramica a dischi da cui i conduttori escono dal trasformatore. Tengono la corrente ad alta tensione lontana dal cassone di metallo." },
+        { x: 62, y: 64, etichetta: "Radiatori", verso: "giu", testo: "Pannelli alettati sui fianchi. L'olio caldo vi scorre dentro e cede il calore all'aria: un trasformatore al lavoro si scalda." }
       ]
     },
 
@@ -193,9 +194,9 @@ window.ESPLORAZIONE = {
       fuoco: [40, 45],
       fasi: [3],
       note: [
-        { x: 35, y: 36, etichetta: "Isolatori" },
-        { x: 56, y: 42, etichetta: "Traliccio" },
-        { x: 88, y: 52, etichetta: "Verso la città", lato: "sx" }
+        { x: 35, y: 36, etichetta: "Isolatori", testo: "Catene di dischi di vetro o ceramica a cui sono appesi i cavi. Più alta è la tensione, più lunga deve essere la catena." },
+        { x: 56, y: 42, etichetta: "Traliccio", testo: "Una torre d'acciaio fatta di aste incrociate: leggera, robusta e alta abbastanza da tenere i cavi lontani dal suolo e dagli alberi." },
+        { x: 88, y: 52, etichetta: "Verso la città", lato: "sx", testo: "La linea prosegue per decine o centinaia di chilometri, fino alle stazioni vicine ai centri abitati, dove la tensione viene abbassata." }
       ]
     }
   }

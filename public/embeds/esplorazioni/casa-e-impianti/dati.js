@@ -7,7 +7,8 @@
  *   fuoco: [x, y]   → punto tenuto al centro quando l'immagine viene ritagliata (schermi verticali)
  *   fasi: [..]      → di quale impianto parla la scena (indici di catena.fasi)
  *   punti: [..]     → punti cliccabili: { x, y, etichetta, vai: "id-del-nodo" }
- *   note:  [..]     → etichette fisse, non cliccabili: { x, y, etichetta }
+ *   note:  [..]     → parti della scena senza una scena propria: { x, y, etichetta, testo }
+ *                         toccando l'etichetta, il testo (una o due frasi) prende il posto di quello della scena
  * Le coordinate x, y sono percentuali dell'immagine, da sinistra e dall'alto.
  */
 window.ESPLORAZIONE = {
@@ -40,9 +41,9 @@ window.ESPLORAZIONE = {
       fuoco: [55, 45],
       fasi: [0, 1, 2],
       note: [
-        { x: 37, y: 30, etichetta: "Contatore elettrico" },
-        { x: 55, y: 52, etichetta: "Contatore del gas", verso: "giu" },
-        { x: 72, y: 44, etichetta: "Contatore dell'acqua", lato: "dx" }
+        { x: 37, y: 30, etichetta: "Contatore elettrico", testo: "Misura l'energia elettrica in kilowattora (kWh). I contatori di oggi sono elettronici e inviano la lettura al distributore da soli." },
+        { x: 55, y: 52, etichetta: "Contatore del gas", verso: "giu", testo: "Misura in metri cubi il gas che entra in casa. Accanto ha il rubinetto generale, da chiudere in caso di emergenza o di una lunga assenza." },
+        { x: 72, y: 44, etichetta: "Contatore dell'acqua", lato: "dx", testo: "Misura in metri cubi l'acqua che entra: un metro cubo sono 1.000 litri. Se gira con tutti i rubinetti chiusi, da qualche parte c'è una perdita." }
       ]
     },
 
@@ -57,8 +58,8 @@ window.ESPLORAZIONE = {
         { x: 50, y: 50, etichetta: "Salvavita", vai: "salvavita", lato: "sx" }
       ],
       note: [
-        { x: 74, y: 46, etichetta: "Interruttori magnetotermici" },
-        { x: 70, y: 70, etichetta: "Fili verso le stanze", verso: "giu" }
+        { x: 74, y: 46, etichetta: "Interruttori magnetotermici", testo: "Ce n'è uno per ogni circuito. Scattano se passa troppa corrente, per un sovraccarico o un cortocircuito, e si riarmano alzando la levetta." },
+        { x: 70, y: 70, etichetta: "Fili verso le stanze", verso: "giu", testo: "Da ogni interruttore parte un circuito. I fili corrono dentro tubi protettivi nascosti nei muri, fino alle prese e ai punti luce." }
       ]
     },
 
@@ -70,8 +71,8 @@ window.ESPLORAZIONE = {
       fuoco: [50, 50],
       fasi: [0],
       note: [
-        { x: 50, y: 30, etichetta: "Leva" },
-        { x: 44, y: 60, etichetta: "Tasto di prova" }
+        { x: 50, y: 30, etichetta: "Leva", testo: "In alto è acceso, in basso è scattato. Se scatta, prima di rialzarla bisogna capire perché: è un compito da adulti." },
+        { x: 44, y: 60, etichetta: "Tasto di prova", testo: "È segnato con una T. Premendolo si simula una dispersione: se il salvavita funziona, scatta subito." }
       ]
     },
 
@@ -86,9 +87,9 @@ window.ESPLORAZIONE = {
         { x: 20, y: 33, etichetta: "Sifone", vai: "sifone" }
       ],
       note: [
-        { x: 40, y: 37, etichetta: "Acqua calda" },
-        { x: 52, y: 42, etichetta: "Acqua fredda", verso: "giu" },
-        { x: 78, y: 77, etichetta: "Scarico" }
+        { x: 40, y: 37, etichetta: "Acqua calda", testo: "Arriva dalla caldaia o dallo scaldabagno in un tubo separato, spesso isolato per non disperdere calore." },
+        { x: 52, y: 42, etichetta: "Acqua fredda", verso: "giu", testo: "È l'acqua dell'acquedotto così com'è, appena passata dal contatore." },
+        { x: 78, y: 77, etichetta: "Scarico", testo: "Un tubo più largo di quelli di arrivo, sempre in discesa: l'acqua usata se ne va per gravità, senza pompe." }
       ]
     },
 
@@ -100,9 +101,9 @@ window.ESPLORAZIONE = {
       fuoco: [55, 60],
       fasi: [1],
       note: [
-        { x: 50, y: 80, etichetta: "Acqua che fa da tappo" },
-        { x: 72, y: 57, etichetta: "Verso la fognatura" },
-        { x: 20, y: 53, etichetta: "Rubinetto di arresto" }
+        { x: 50, y: 80, etichetta: "Acqua che fa da tappo", testo: "Riempie il fondo della curva e chiude il passaggio all'aria della fogna. Ogni volta che usi il lavandino si rinnova." },
+        { x: 72, y: 57, etichetta: "Verso la fognatura", testo: "Dopo il sifone lo scarico entra nel muro e scende fino alla rete fognaria." },
+        { x: 20, y: 53, etichetta: "Rubinetto di arresto", testo: "Chiude l'acqua a un solo apparecchio, senza toglierla a tutta la casa. È utile per una riparazione." }
       ]
     },
 
@@ -117,8 +118,8 @@ window.ESPLORAZIONE = {
         { x: 38, y: 40, etichetta: "Fornello", vai: "fornello" }
       ],
       note: [
-        { x: 47, y: 62, etichetta: "Tubo flessibile" },
-        { x: 42, y: 80, etichetta: "Rubinetto del gas" }
+        { x: 47, y: 62, etichetta: "Tubo flessibile", testo: "Collega il piano cottura all'impianto fisso. Se è di gomma ha una data di scadenza stampata sopra e va sostituito in tempo." },
+        { x: 42, y: 80, etichetta: "Rubinetto del gas", testo: "Chiude il gas all'apparecchio. La leva di traverso rispetto al tubo vuol dire chiuso, in linea con il tubo vuol dire aperto." }
       ]
     },
 
@@ -130,9 +131,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 50],
       fasi: [2],
       note: [
-        { x: 40, y: 50, etichetta: "Fiamma azzurra" },
-        { x: 70, y: 62, etichetta: "Termocoppia", verso: "giu" },
-        { x: 78, y: 42, etichetta: "Accensione" }
+        { x: 40, y: 50, etichetta: "Fiamma azzurra", testo: "Azzurra vuol dire che il gas brucia bene, con tutta l'aria che serve. Una fiamma gialla, che annerisce le pentole, segnala un bruciatore da far controllare." },
+        { x: 70, y: 62, etichetta: "Termocoppia", verso: "giu", testo: "Una piccola asta di metallo accanto alla fiamma. Finché è calda tiene aperto il gas; se si raffredda lo chiude." },
+        { x: 78, y: 42, etichetta: "Accensione", testo: "Una candeletta che fa scoccare una scintilla elettrica vicino al bruciatore: così non servono fiammiferi." }
       ]
     },
 
@@ -149,7 +150,7 @@ window.ESPLORAZIONE = {
         { x: 78, y: 33, etichetta: "Pompa di calore", vai: "pompa" }
       ],
       note: [
-        { x: 22, y: 25, etichetta: "Caldaia" }
+        { x: 22, y: 25, etichetta: "Caldaia", testo: "Brucia gas per scaldare l'acqua dei termosifoni e quella dei rubinetti. Le caldaie a condensazione recuperano anche il calore dei fumi." }
       ]
     },
 
@@ -161,8 +162,8 @@ window.ESPLORAZIONE = {
       fuoco: [40, 50],
       fasi: [3],
       note: [
-        { x: 23, y: 61, etichetta: "Valvola termostatica" },
-        { x: 45, y: 40, etichetta: "Acqua calda all'interno" }
+        { x: 23, y: 61, etichetta: "Valvola termostatica", testo: "Una manopola numerata che sente la temperatura della stanza. Raggiunta quella scelta, riduce l'acqua calda che entra." },
+        { x: 45, y: 40, etichetta: "Acqua calda all'interno", testo: "Entra calda da un lato, cede calore al metallo ed esce più fredda dall'altro, per tornare alla caldaia." }
       ]
     },
 
@@ -174,7 +175,7 @@ window.ESPLORAZIONE = {
       fuoco: [70, 50],
       fasi: [3],
       note: [
-        { x: 84, y: 45, etichetta: "Ghiera per scegliere i gradi", lato: "sx" }
+        { x: 84, y: 45, etichetta: "Ghiera per scegliere i gradi", lato: "sx", testo: "Ruotandola si imposta la temperatura desiderata. Di giorno, in casa, bastano 19-20 gradi." }
       ]
     },
 
@@ -186,8 +187,8 @@ window.ESPLORAZIONE = {
       fuoco: [60, 50],
       fasi: [3],
       note: [
-        { x: 48, y: 40, etichetta: "Ventilatore" },
-        { x: 88, y: 50, etichetta: "Tubi verso la casa", lato: "sx" }
+        { x: 48, y: 40, etichetta: "Ventilatore", testo: "Aspira l'aria esterna e la fa passare su una serpentina, dove un fluido ne assorbe il calore anche quando fuori fa freddo." },
+        { x: 88, y: 50, etichetta: "Tubi verso la casa", lato: "sx", testo: "Portano all'impianto di casa il calore raccolto fuori." }
       ]
     }
   }

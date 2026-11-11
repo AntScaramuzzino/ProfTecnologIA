@@ -7,7 +7,8 @@
  *   fuoco: [x, y]   → punto tenuto al centro quando l'immagine viene ritagliata (schermi verticali)
  *   fasi: [..]      → quali forme di energia sono in gioco (indici di catena.fasi)
  *   punti: [..]     → punti cliccabili: { x, y, etichetta, vai: "id-del-nodo" }
- *   note:  [..]     → etichette fisse, non cliccabili: { x, y, etichetta }
+ *   note:  [..]     → parti della scena senza una scena propria: { x, y, etichetta, testo }
+ *                         toccando l'etichetta, il testo (una o due frasi) prende il posto di quello della scena
  * Le coordinate x e y sono percentuali dell'immagine (0–100) da sinistra e dall'alto.
  */
 window.ESPLORAZIONE = {
@@ -47,8 +48,8 @@ window.ESPLORAZIONE = {
         { x: 71, y: 52, etichetta: "Scarico di superficie", vai: "sfioratore" }
       ],
       note: [
-        { x: 13, y: 46, etichetta: "Bacino" },
-        { x: 38, y: 68, etichetta: "Coronamento" }
+        { x: 13, y: 46, etichetta: "Bacino", testo: "È il lago artificiale che si forma dietro la diga. Raccoglie l'acqua di piogge, nevi e torrenti e la tiene in quota: quando serve elettricità, la si lascia scendere." },
+        { x: 38, y: 68, etichetta: "Coronamento", testo: "È il bordo superiore della diga. Di solito ci si può camminare o passare con un mezzo di servizio, per i controlli." }
       ]
     },
 
@@ -60,8 +61,8 @@ window.ESPLORAZIONE = {
       fuoco: [40, 50],
       fasi: [0],
       note: [
-        { x: 40, y: 23, etichetta: "Paratoia" },
-        { x: 41, y: 58, etichetta: "Griglia" }
+        { x: 40, y: 23, etichetta: "Paratoia", testo: "Una grande porta d'acciaio che scorre in verticale. Alzata lascia passare l'acqua verso le condotte; abbassata la ferma, per esempio durante la manutenzione." },
+        { x: 41, y: 58, etichetta: "Griglia", testo: "Sbarre d'acciaio ravvicinate davanti all'imbocco. L'acqua passa; tronchi e rami restano fuori e vengono tolti periodicamente." }
       ]
     },
 
@@ -82,8 +83,8 @@ window.ESPLORAZIONE = {
       fuoco: [50, 55],
       fasi: [0, 1],
       note: [
-        { x: 50, y: 30, etichetta: "Centrale" },
-        { x: 57.5, y: 61, etichetta: "Blocco di ancoraggio" }
+        { x: 50, y: 30, etichetta: "Centrale", testo: "L'edificio in fondo alla discesa, dove arrivano le condotte. Dentro ci sono le turbine e gli alternatori." },
+        { x: 57.5, y: 61, etichetta: "Blocco di ancoraggio", testo: "Un blocco massiccio di calcestruzzo che tiene ferma la condotta sul pendio. L'acqua in pressione spinge con forza, soprattutto dove il tubo cambia direzione." }
       ]
     },
 
@@ -99,8 +100,8 @@ window.ESPLORAZIONE = {
         { x: 58, y: 56, etichetta: "Alternatore", vai: "alternatore" }
       ],
       note: [
-        { x: 15, y: 60.5, etichetta: "Ugello", verso: "giu" },
-        { x: 42.5, y: 60, etichetta: "Albero", verso: "giu" }
+        { x: 15, y: 60.5, etichetta: "Ugello", verso: "giu", testo: "Il tratto finale della condotta, dove il tubo si restringe. Da qui l'acqua esce come un getto velocissimo, diretto contro la turbina." },
+        { x: 42.5, y: 60, etichetta: "Albero", verso: "giu", testo: "Una grossa barra d'acciaio che ruota. Collega la turbina all'alternatore: gira l'una, gira anche l'altro." }
       ]
     },
 
@@ -115,8 +116,8 @@ window.ESPLORAZIONE = {
         { x: 41.5, y: 47, etichetta: "Getto e pale", vai: "getto", lato: "sx", verso: "giu" }
       ],
       note: [
-        { x: 26, y: 43, etichetta: "Ugello" },
-        { x: 71, y: 66, etichetta: "Albero", verso: "giu" }
+        { x: 26, y: 43, etichetta: "Ugello", testo: "Restringe il passaggio dell'acqua e la trasforma in un getto. Al suo interno uno spillo regola quanta acqua esce, e quindi quanta potenza dà la turbina." },
+        { x: 71, y: 66, etichetta: "Albero", verso: "giu", testo: "È l'asse su cui è montata la ruota. Porta il movimento della turbina fino all'alternatore." }
       ]
     },
 
@@ -128,8 +129,8 @@ window.ESPLORAZIONE = {
       fuoco: [52, 45],
       fasi: [1, 2],
       note: [
-        { x: 12, y: 41, etichetta: "Ugello" },
-        { x: 73, y: 37, etichetta: "Pala a doppio cucchiaio", lato: "sx" }
+        { x: 12, y: 41, etichetta: "Ugello", testo: "Qui la pressione dell'acqua diventa velocità. Più alto è il salto, più veloce è il getto: negli impianti di alta montagna può superare i 100 metri al secondo." },
+        { x: 73, y: 37, etichetta: "Pala a doppio cucchiaio", lato: "sx", testo: "Uno spigolo al centro taglia il getto in due metà, che scivolano nelle due conche e tornano quasi indietro. Deviando l'acqua così, la pala ne riceve la spinta più forte." }
       ]
     },
 
@@ -141,9 +142,9 @@ window.ESPLORAZIONE = {
       fuoco: [52, 50],
       fasi: [2, 3],
       note: [
-        { x: 30, y: 22, etichetta: "Statore" },
-        { x: 52, y: 56, etichetta: "Rotore", verso: "giu" },
-        { x: 56, y: 13, etichetta: "Albero", verso: "giu" }
+        { x: 30, y: 22, etichetta: "Statore", testo: "La parte fissa, ad anello. Nei suoi avvolgimenti di rame nasce la corrente elettrica che esce dalla centrale." },
+        { x: 52, y: 56, etichetta: "Rotore", verso: "giu", testo: "La parte che gira, trascinata dalla turbina. Porta gli elettromagneti che creano il campo magnetico." },
+        { x: 56, y: 13, etichetta: "Albero", verso: "giu", testo: "Arriva dalla turbina e fa girare il rotore. È il collegamento tra la macchina che produce movimento e quella che produce elettricità." }
       ]
     },
 
@@ -168,9 +169,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 45],
       fasi: [3],
       note: [
-        { x: 25, y: 15, etichetta: "Conservatore dell'olio", verso: "giu" },
-        { x: 54, y: 21, etichetta: "Isolatori passanti" },
-        { x: 62, y: 64, etichetta: "Radiatori", verso: "giu" }
+        { x: 25, y: 15, etichetta: "Conservatore dell'olio", verso: "giu", testo: "Un serbatoio posto sopra il trasformatore. L'olio che riempie la macchina si dilata quando si scalda: qui trova lo spazio per farlo." },
+        { x: 54, y: 21, etichetta: "Isolatori passanti", testo: "Colonne di ceramica a dischi da cui i conduttori escono dal trasformatore. Tengono la corrente ad alta tensione lontana dal cassone di metallo." },
+        { x: 62, y: 64, etichetta: "Radiatori", verso: "giu", testo: "Pannelli alettati sui fianchi. L'olio caldo vi scorre dentro e cede il calore all'aria: un trasformatore al lavoro si scalda." }
       ]
     },
 
@@ -182,8 +183,8 @@ window.ESPLORAZIONE = {
       fuoco: [40, 45],
       fasi: [3],
       note: [
-        { x: 36, y: 28, etichetta: "Isolatori" },
-        { x: 64, y: 40, etichetta: "Traliccio" }
+        { x: 36, y: 28, etichetta: "Isolatori", testo: "Catene di dischi di vetro o ceramica a cui sono appesi i cavi. Più alta è la tensione, più lunga deve essere la catena." },
+        { x: 64, y: 40, etichetta: "Traliccio", testo: "Una torre d'acciaio fatta di aste incrociate: leggera, robusta e alta abbastanza da tenere i cavi lontani dal suolo e dagli alberi." }
       ]
     },
 
@@ -195,8 +196,8 @@ window.ESPLORAZIONE = {
       fuoco: [38, 50],
       fasi: [],
       note: [
-        { x: 21, y: 45, etichetta: "Bocche di scarico" },
-        { x: 80, y: 44, etichetta: "Fiume" }
+        { x: 21, y: 45, etichetta: "Bocche di scarico", testo: "Le aperture da cui l'acqua esce dalla centrale dopo aver attraversato le turbine. Ha ceduto quasi tutta la sua energia e scorre lenta." },
+        { x: 80, y: 44, etichetta: "Fiume", testo: "L'acqua torna nel suo corso naturale e prosegue verso valle, dove può servire ad altre centrali, ai campi o agli acquedotti." }
       ]
     }
   }

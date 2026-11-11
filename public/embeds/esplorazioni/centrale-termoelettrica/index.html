@@ -83,6 +83,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .pic img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; pointer-events: none; color: transparent; }
 .shade { position: absolute; inset: 0 0 auto; height: 110px; z-index: 3; pointer-events: none; background: linear-gradient(to bottom, rgba(6, 12, 14, .34), rgba(6, 12, 14, 0)); }
 
+/* ---------- area sensibile attorno a un punto: una luce leggera quando ci si passa sopra ---------- */
+.glow { position: absolute; left: 0; top: 0; z-index: 4; border-radius: 50%; pointer-events: none; opacity: 0; transition: opacity .22s; background: radial-gradient(closest-side, rgba(255, 255, 255, .44) 0%, rgba(255, 255, 255, .30) 52%, rgba(255, 255, 255, .11) 80%, rgba(255, 255, 255, 0) 100%); }
+.glow.on { opacity: 1; }
+.stage.hot { cursor: pointer; }
+.mark.go.lit .tag { background-color: var(--glass-fill-hot); box-shadow: var(--glass-rim), 0 8px 26px rgba(0, 0, 0, .34); }
+@media (prefers-reduced-motion: reduce) { .glow { transition: none; } }
+
 /* ---------- punti ---------- */
 .marks { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
 /* La dissolvenza è sui singoli pezzi e non sul contenitore: un contenitore semitrasparente spegnerebbe la sfocatura delle etichette */
@@ -122,6 +129,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .mark.note[data-s="l"] .tag { right: 22px; }
 .mark.note[data-v="u"] .tag { bottom: 13px; }
 .mark.note[data-v="d"] .tag { top: 13px; }
+/* nota con una spiegazione: si può toccare, e il testo della scena lascia il posto alla spiegazione */
+.mark.note.tip .dot, .mark.note.tip .tag { pointer-events: auto; cursor: pointer; }
+.mark.note.tip .dot { left: -7px; top: -7px; width: 14px; height: 14px; border: 3px solid #fff; background: rgba(8, 16, 18, .55); box-shadow: 0 0 0 4px rgba(255, 255, 255, .22), 0 1px 6px rgba(0, 0, 0, .5); }
+.mark.note.tip .dot::before { content: ""; position: absolute; inset: -14px; border-radius: 50%; }
+.mark.note.tip .tag:hover, .mark.note.tip .tag:focus-visible, .mark.note.tip .dot:hover + .lead + .tag { background-color: rgba(8, 14, 16, .78); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5), inset 0 1px 0 rgba(255, 255, 255, .14); }
+.mark.note.sel .dot { background: var(--volt); }
+.mark.note.sel .tag, .mark.note.sel .tag:hover, .mark.note.sel .tag:focus-visible { color: var(--glass-ink); background-color: var(--glass-fill-hot); box-shadow: var(--glass-rim), var(--glass-drop); -webkit-backdrop-filter: none; backdrop-filter: none; }
 /* etichetta dritta sopra o sotto il punto: il motore la usa quando ai lati coprirebbe qualcosa */
 .mark[data-s="c"][data-v="u"] { --a: -90deg; }
 .mark[data-s="c"][data-v="d"] { --a: 90deg; }
@@ -155,7 +169,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .crumb svg { flex: none; width: 16px; height: 16px; margin-right: -4px; opacity: .75; }
 button.crumb:hover { background-color: var(--glass-fill-hot); }
 .crumb.here { background-color: var(--glass-fill-hot); cursor: default; }
-@media (max-width: 900px) { .crumbs li.far { display: none; } }
+.trail.measure .crumbs li { flex-shrink: 0; }
 @media (max-width: 640px) {
   .bar { gap: 8px; }
   .trail, .crumbs { gap: 6px; }
@@ -200,6 +214,10 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 .chain li span { padding: 5px 8px; border-radius: 6px; background-color: rgba(255, 255, 255, .07); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2); }
 .chain li.on span { color: var(--volt-ink); background-color: var(--volt); box-shadow: none; }
 
+#btnScene { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; margin: 0 0 12px -4px; padding: 6px 12px 6px 6px; border-radius: 999px; font: 500 13px/1.2 var(--body); color: var(--ink); text-shadow: none; background-color: rgba(255, 255, 255, .12); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .26); pointer-events: auto; transition: background-color .15s; }
+#btnScene:hover { background-color: rgba(255, 255, 255, .22); }
+#btnScene svg { flex: none; width: 16px; height: 16px; }
+#btnScene span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .head { display: flex; align-items: flex-start; gap: 12px; }
 .head h1 { flex: 0 1 auto; min-width: 0; margin: 0; font: 600 clamp(26px, 3.3vw, 38px)/1.08 var(--display); letter-spacing: .004em; text-wrap: balance; }
 #btnFold { flex: none; width: 40px; height: 40px; margin-top: -3px; border-radius: 50%; display: grid; place-items: center; transition: background-color .15s; }
@@ -207,7 +225,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 #btnFold svg { transition: transform .2s; }
 .panel.folded #btnFold svg { transform: rotate(180deg); }
 #text { margin: 8px 0 0; max-width: 64ch; font-size: clamp(15.5px, 1.2vw, 18px); line-height: 1.5; color: var(--ink-soft); text-wrap: pretty; }
-.panel.folded #text, .panel.folded .chain { display: none; }
+.panel.folded #text, .panel.folded .chain, .panel.folded #btnScene { display: none; }
 .panel.folded::before { inset: -80px -30% 0 0; }
 
 /* scena stretta (telefono, riquadro dentro una pagina): etichette più piccole, così ce ne stanno di più */
@@ -261,6 +279,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     <div class="layer" id="layerA"><div class="pic"><img alt="" draggable="false"></div></div>
     <div class="layer" id="layerB"><div class="pic"><img alt="" draggable="false"></div></div>
     <div class="shade" aria-hidden="true"></div>
+    <div class="glow" id="glow" aria-hidden="true"></div>
     <div class="marks" id="marks" role="group" aria-label="Punti da esplorare"></div>
     <div class="bar">
       <nav class="trail" id="nav" aria-label="Dove sei">
@@ -281,6 +300,10 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   </div>
   <section class="panel" id="panel" aria-live="polite">
     <div class="panel-in">
+      <button type="button" id="btnScene" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+        <span></span>
+      </button>
       <ol class="chain" id="chain" hidden></ol>
       <div class="head">
         <h1 id="title"></h1>
@@ -345,6 +368,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   ids.forEach((id) => { if (!placed.has(id)) tree.push({ id, d: 0 }); });
 
   let front = 0, path = [D.radice], cam = { cx: .5, cy: .5, z: 1 }, busy = false, wanted = null;
+  let tip = null;   // la parte di cui si sta leggendo la spiegazione (una nota con un testo), se c'è
 
   // Scene già viste. Nella pagina a sé le ricorda il dispositivo. Dentro il libro valgono quelle dello studente:
   // le manda la pagina che ospita (vedi in fondo), e al dispositivo si aggiungono soltanto.
@@ -389,16 +413,17 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     cam = clamp(cam, m);
     place(front, cam, m);
     layout();
+    placeGlow();
   }
 
   /* ---------- punti ed etichette ---------- */
   function mark(p, go) {
-    const el = document.createElement('div');
-    el.className = 'mark ' + (go ? 'go' : 'note') + (go && seen.has(p.vai) ? ' seen' : '');
+    const el = document.createElement('div'), more = !go && !!p.testo;   // nota con una spiegazione: si può toccare
+    el.className = 'mark ' + (go ? 'go' : 'note') + (go && seen.has(p.vai) ? ' seen' : '') + (more ? ' tip' : '');
     el._p = p;
-    const dot = document.createElement(go ? 'button' : 'span');
+    const dot = document.createElement(go || more ? 'button' : 'span');
     const lead = document.createElement('span');
-    const tag = document.createElement(go ? 'button' : 'span');
+    const tag = document.createElement(go || more ? 'button' : 'span');
     dot.className = 'dot'; lead.className = 'lead'; tag.className = 'tag';
     tag.textContent = p.etichetta;
     if (go) {
@@ -409,6 +434,15 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       const act = () => (el.classList.contains('off') ? panTo(p) : goTo(p.vai));
       dot.addEventListener('click', act);
       tag.addEventListener('click', act);
+    } else if (more) {
+      dot.type = tag.type = 'button';
+      dot.tabIndex = -1;
+      dot.setAttribute('aria-hidden', 'true');
+      tag.setAttribute('aria-label', 'Spiegazione: ' + p.etichetta);
+      tag.setAttribute('aria-pressed', 'false');
+      const act = () => showTip(p);
+      dot.addEventListener('click', act);
+      tag.addEventListener('click', act);
     }
     el.append(dot, lead, tag);
     return el;
@@ -417,6 +451,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     marks.textContent = '';
     (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai]) marks.appendChild(mark(p, true)); });
     (N[id].note || []).forEach((p) => marks.appendChild(mark(p, false)));
+    markTip();
     layout();
   }
   function layout() {
@@ -437,7 +472,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       const under = pills.some((b) => x > b[0] - rad && x < b[0] + b[2] + rad && y > b[1] - rad && y < b[1] + b[3] + rad);
       const inside = x > 20 && x < m.W - 20 && y > 24 && y < m.H - 20 && !under;
       // una nota il cui puntino finirebbe sotto il testo non si mostra (ricompare se il testo viene chiuso o sta sotto l'immagine)
-      const covered = !go && pb && x > pb[0] - 14 && x < pb[0] + pb[2] + 14 && y > pb[1] - 14 && y < pb[1] + pb[3];
+      const covered = !go && p !== tip && pb && x > pb[0] - 14 && x < pb[0] + pb[2] + 14 && y > pb[1] - 14 && y < pb[1] + pb[3];
       if ((!inside && !go) || covered) { el.hidden = true; continue; }
       el.hidden = false;
       el.classList.toggle('off', !inside);
@@ -517,6 +552,47 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     }
   }
 
+  /* ---------- aree sensibili: la zona attorno a un punto da esplorare si illumina e si può toccare ---------- */
+  // Raggio dell'area in pixel. In dati.js un punto può dare la sua: area: [larghezza, altezza] in % dell'immagine.
+  // Senza, l'area è un cerchio che non arriva a toccare quella del punto più vicino.
+  const glow = $('glow');
+  let lit = null;
+  function zone(p, m) {
+    if (Array.isArray(p.area)) return [p.area[0] / 200 * m.bw * cam.z, (p.area[1] || p.area[0]) / 200 * m.bh * cam.z];
+    let r = .085 * m.bw;
+    (N[cur()].punti || []).forEach((q) => {
+      if (q !== p && q.vai && N[q.vai]) r = Math.min(r, Math.hypot((q.x - p.x) / 100 * m.bw, (q.y - p.y) / 100 * m.bh) * .48);
+    });
+    r = Math.max(r, 34) * cam.z;
+    return [r, r];
+  }
+  function zoneAt(px, py) {
+    const m = metrics(cur());
+    let best = null, bd = 1;
+    for (const el of marks.children) {
+      if (!el.classList.contains('go') || el.hidden || el.classList.contains('off')) continue;
+      const p = el._p, [x, y] = toScreen(p.x / 100, p.y / 100, cam, m), [rx, ry] = zone(p, m);
+      const d = Math.hypot((px - x) / rx, (py - y) / ry);
+      if (d < bd) { bd = d; best = p; }
+    }
+    return best;
+  }
+  function setGlow(p) {
+    if (p === lit) return;
+    lit = p;
+    stage.classList.toggle('hot', !!p);
+    for (const el of marks.children) el.classList.toggle('lit', !!p && el._p === p);
+    if (p) placeGlow();
+    glow.classList.toggle('on', !!p);
+  }
+  function placeGlow() {
+    if (!lit) return;
+    const m = metrics(cur()), [x, y] = toScreen(lit.x / 100, lit.y / 100, cam, m), [rx, ry] = zone(lit, m);
+    glow.style.width = rx * 2.5 + 'px';
+    glow.style.height = ry * 2.5 + 'px';
+    glow.style.transform = `translate(${x - rx * 1.25}px,${y - ry * 1.25}px)`;
+  }
+
   /* ---------- movimento libero: trascina, pizzica, rotella ---------- */
   function tween(to, ms) {
     const from = { ...cam }, t0 = performance.now();
@@ -534,7 +610,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     if (calm) { cam = to; apply(); } else tween(to, 460);
   }
   const fingers = new Map();
-  let grip = null;
+  let grip = null, tap = false;
   function regrip() {
     const m = metrics(cur()), r = stage.getBoundingClientRect(), a = [...fingers.values()];
     if (a.length === 1) grip = { n: 1, x: a[0][0], y: a[0][1], cam: { ...cam }, m };
@@ -546,15 +622,25 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     closeMenu();
     try { stage.setPointerCapture(e.pointerId); } catch (err) { /* puntatore già rilasciato */ }
     fingers.set(e.pointerId, [e.clientX, e.clientY]);
+    tap = fingers.size === 1 && !e.target.closest('.panel, .bar');
     regrip();
   });
+  // puntatore fermo sopra la scena (mouse o penna): si illumina l'area del punto su cui si trova
+  const hover = (e) => {
+    if (busy || e.pointerType === 'touch') return;
+    const mk = e.target.closest('.mark.go');
+    const r = stage.getBoundingClientRect();
+    setGlow(mk ? (mk.classList.contains('off') ? null : mk._p) : e.target.closest('button, .menu, .bar, .mark') ? null : zoneAt(e.clientX - r.left, e.clientY - r.top));
+  };
+  stage.addEventListener('pointerleave', () => setGlow(null));
   stage.addEventListener('pointermove', (e) => {
+    if (!grip) hover(e);
     if (!grip || !fingers.has(e.pointerId) || busy) return;
     fingers.set(e.pointerId, [e.clientX, e.clientY]);
     const a = [...fingers.values()], g = grip;
     if (g.n === 1 && a.length === 1) {
       const dx = a[0][0] - g.x, dy = a[0][1] - g.y;
-      if (Math.abs(dx) + Math.abs(dy) > 3) stage.classList.add('drag');
+      if (Math.abs(dx) + Math.abs(dy) > 6) { stage.classList.add('drag'); tap = false; setGlow(null); }
       cam = { z: g.cam.z, cx: g.cam.cx - dx / (g.m.bw * g.cam.z), cy: g.cam.cy - dy / (g.m.bh * g.cam.z) };
       apply();
     } else if (g.n === 2 && a.length > 1) {
@@ -565,9 +651,17 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     }
   });
   const release = (e) => {
+    const was = tap && fingers.has(e.pointerId) && e.type === 'pointerup';
+    tap = false;
     fingers.delete(e.pointerId);
     stage.classList.remove('drag');
     regrip();
+    if (!was || busy) return;
+    // tocco o clic senza trascinare dentro un'area sensibile: si entra nella scena di quel punto
+    const r = stage.getBoundingClientRect(), p = zoneAt(e.clientX - r.left, e.clientY - r.top);
+    if (!p) return;
+    setGlow(p);
+    goTo(p.vai);
   };
   stage.addEventListener('pointerup', release);
   stage.addEventListener('pointercancel', release);
@@ -622,6 +716,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   const CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>';
   function setTrail(id) {
     const ch = chainTo(id), ol = $('crumbs');
+    if (!ch.length) return;
     ol.textContent = '';
     ch.forEach((n, i) => {
       const last = i === ch.length - 1;
@@ -636,16 +731,68 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
         el.setAttribute('aria-label', 'Torna a: ' + N[n].titolo);
         el.insertAdjacentHTML('beforeend', CHEV);
         el.addEventListener('click', () => goTo(n));
-        if (i < ch.length - 2) li.className = 'far';      // su uno schermo stretto resta solo la scena subito sopra
       }
       li.appendChild(el);
       ol.appendChild(li);
     });
+    fitTrail();
+  }
+  // Con tanti livelli il percorso non ci sta tutto: si tolgono le scene più lontane, una per volta, finché ci sta.
+  // Restano sempre la scena subito sopra e quella aperta; le altre si raggiungono dal menu «…».
+  function fitTrail() {
+    const nav = $('nav'), lis = [...$('crumbs').children];
+    lis.forEach((li) => { li.hidden = false; });
+    nav.classList.add('measure');
+    for (let i = 0; i < lis.length - 2 && nav.scrollWidth > nav.clientWidth + 1; i++) lis[i].hidden = true;
+    nav.classList.remove('measure');
+  }
+
+  /* ---------- spiegazione di una parte: prende il posto del testo della scena ---------- */
+  function markTip() {
+    for (const el of marks.children) {
+      const on = !!tip && el._p === tip;
+      el.classList.toggle('sel', on);
+      if (el.classList.contains('tip')) el.lastElementChild.setAttribute('aria-pressed', String(on));
+    }
+  }
+  function paintTip() {
+    $('title').textContent = tip.titolo || tip.etichetta;
+    $('text').textContent = tip.testo;
+    const b = $('btnScene');
+    b.lastElementChild.textContent = N[cur()].titolo;
+    b.setAttribute('aria-label', 'Torna al testo della scena: ' + N[cur()].titolo);
+    b.hidden = false;
+  }
+  function swapPanel(paint) {
+    const keep = tip;
+    panel.classList.add('swap');
+    setTimeout(() => {
+      if (busy || tip !== keep) return;      // nel frattempo si è cambiata scena o parte
+      paint();
+      panel.classList.remove('swap');
+      layout();
+    }, calm ? 0 : 200);
+  }
+  function showTip(p) {
+    if (busy) return;
+    if (tip === p) { hideTip(); return; }
+    tip = p;
+    markTip();
+    if (panel.classList.contains('folded')) btnFold.click();
+    swapPanel(paintTip);
+  }
+  function hideTip() {
+    if (!tip || busy) return;
+    tip = null;
+    markTip();
+    swapPanel(() => setText(cur()));
   }
 
   /* ---------- pannello ---------- */
   function setText(id) {
     const n = N[id];
+    tip = null;
+    $('btnScene').hidden = true;
     setTrail(id);
     $('title').textContent = n.titolo;
     $('text').textContent = n.testo;
@@ -704,11 +851,13 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     busy = true;
     wanted = null;
     closeMenu();
+    tip = null;
     fingers.clear(); grip = null;
     marks.classList.add('hide');
     panel.classList.add('swap');
 
     const from = cur(), a = front, b = 1 - front, A = layers[a], B = layers[b];
+    setTimeout(() => setGlow(null), 160);                          // l'area toccata resta accesa un attimo, poi si entra
     const next = chainTo(id);
     const up = path.indexOf(id);                                  // risalita verso una scena già attraversata
     const down = parent[id] && parent[id].id === from ? parent[id].p : null;  // ingresso da un punto di questa scena
@@ -818,8 +967,10 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
     if (!menu.hidden) { closeMenu(); btnPath.focus(); }
+    else if (tip) hideTip();
     else if (path.length > 1 && !document.fullscreenElement) goTo(path[path.length - 2]);
   });
+  $('btnScene').addEventListener('click', hideTip);
   btnFold.addEventListener('click', () => {
     const folded = panel.classList.toggle('folded');
     btnFold.setAttribute('aria-expanded', String(!folded));
@@ -838,8 +989,9 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     const id = N[h] ? h : D.radice;
     if (id !== cur()) goTo(id);
   });
-  if ('ResizeObserver' in window) new ResizeObserver(() => { if (!busy) apply(); }).observe(stage);
-  else window.addEventListener('resize', () => { if (!busy) apply(); });
+  const resized = () => { fitTrail(); if (!busy) apply(); };
+  if ('ResizeObserver' in window) new ResizeObserver(resized).observe(stage);
+  else window.addEventListener('resize', resized);
 
   /* ---------- dentro il libro: le scene già viste dallo studente ---------- */
   if (embedded) {

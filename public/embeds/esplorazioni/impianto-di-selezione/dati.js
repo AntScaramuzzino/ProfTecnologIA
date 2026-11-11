@@ -7,7 +7,8 @@
  *   fuoco: [x, y]   → punto tenuto al centro quando l'immagine viene ritagliata (schermi verticali)
  *   fasi: [..]      → a che punto del percorso si trova la scena (indici di catena.fasi)
  *   punti: [..]     → punti cliccabili: { x, y, etichetta, vai: "id-del-nodo" }
- *   note:  [..]     → etichette fisse, non cliccabili: { x, y, etichetta }
+ *   note:  [..]     → parti della scena senza una scena propria: { x, y, etichetta, testo }
+ *                         toccando l'etichetta, il testo (una o due frasi) prende il posto di quello della scena
  * Le coordinate x, y sono percentuali dell'immagine, da sinistra e dall'alto.
  */
 window.ESPLORAZIONE = {
@@ -31,7 +32,7 @@ window.ESPLORAZIONE = {
         { x: 90, y: 30, etichetta: "Pressa", vai: "pressa" }
       ],
       note: [
-        { x: 93, y: 58, etichetta: "Balle", lato: "sx" }
+        { x: 93, y: 58, etichetta: "Balle", lato: "sx", testo: "Blocchi pressati di un solo materiale, pronti a partire. Sono il prodotto finale dell'impianto." }
       ]
     },
 
@@ -46,8 +47,8 @@ window.ESPLORAZIONE = {
         { x: 11, y: 30, etichetta: "Aprisacchi", vai: "aprisacchi" }
       ],
       note: [
-        { x: 61, y: 27, etichetta: "Pala gommata" },
-        { x: 40, y: 18, etichetta: "Nastro di carico" }
+        { x: 61, y: 27, etichetta: "Pala gommata", testo: "Un mezzo su ruote di gomma con una grande benna davanti. Sposta i cumuli e alimenta la linea." },
+        { x: 40, y: 18, etichetta: "Nastro di carico", testo: "Il nastro trasportatore che porta i rifiuti dalla tramoggia alla prima macchina. Da qui in poi tutto viaggia su nastri." }
       ]
     },
 
@@ -59,9 +60,9 @@ window.ESPLORAZIONE = {
       fuoco: [45, 45],
       fasi: [0, 1],
       note: [
-        { x: 45, y: 30, etichetta: "Tamburo con i denti" },
-        { x: 33, y: 45, etichetta: "Sacco strappato", lato: "sx" },
-        { x: 85, y: 30, etichetta: "Verso il vaglio" }
+        { x: 45, y: 30, etichetta: "Tamburo con i denti", testo: "Un cilindro che gira lentamente. I denti agganciano la plastica dei sacchi e la lacerano." },
+        { x: 33, y: 45, etichetta: "Sacco strappato", lato: "sx", testo: "Una volta aperto, il sacco è un imballaggio di plastica come gli altri e prosegue sulla linea." },
+        { x: 85, y: 30, etichetta: "Verso il vaglio", testo: "Il nastro in salita porta i rifiuti, ormai sciolti, alla macchina successiva." }
       ]
     },
 
@@ -73,9 +74,9 @@ window.ESPLORAZIONE = {
       fuoco: [55, 45],
       fasi: [1],
       note: [
-        { x: 45, y: 22, etichetta: "Tamburo forato" },
-        { x: 88, y: 45, etichetta: "Pezzi grandi" },
-        { x: 66, y: 86, etichetta: "Pezzi piccoli" }
+        { x: 45, y: 22, etichetta: "Tamburo forato", testo: "Un cilindro inclinato con le pareti piene di fori tutti uguali. Girando rimescola i rifiuti, così ogni pezzo ha l'occasione di passare da un foro." },
+        { x: 88, y: 45, etichetta: "Pezzi grandi", testo: "Bottiglie, flaconi e lattine non passano dai fori: percorrono tutto il tamburo ed escono in fondo." },
+        { x: 66, y: 86, etichetta: "Pezzi piccoli", testo: "Tappi, frammenti e sporcizia cadono attraverso i fori e seguono un'altra strada." }
       ]
     },
 
@@ -91,7 +92,7 @@ window.ESPLORAZIONE = {
         { x: 81, y: 42, etichetta: "Correnti parassite", vai: "parassite" }
       ],
       note: [
-        { x: 85, y: 66, etichetta: "Scivoli" }
+        { x: 85, y: 66, etichetta: "Scivoli", testo: "Canali inclinati in cui cadono i metalli separati. Ognuno porta a un cassone diverso: uno per l'acciaio, uno per l'alluminio." }
       ]
     },
 
@@ -103,9 +104,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 40],
       fasi: [1],
       note: [
-        { x: 45, y: 15, etichetta: "Calamita", verso: "giu" },
-        { x: 62, y: 42, etichetta: "Barattoli d'acciaio", verso: "giu" },
-        { x: 30, y: 52, etichetta: "Plastica" }
+        { x: 45, y: 15, etichetta: "Calamita", verso: "giu", testo: "Un magnete potente. Attira il ferro e l'acciaio; non ha effetto su alluminio, plastica, vetro e carta." },
+        { x: 62, y: 42, etichetta: "Barattoli d'acciaio", verso: "giu", testo: "Barattoli di pelati, scatolette e tappi a corona sono d'acciaio: per questo la calamita li solleva. L'acciaio si ricicla fondendolo di nuovo." },
+        { x: 30, y: 52, etichetta: "Plastica", testo: "La plastica non è attirata dai magneti: resta sul nastro e continua verso le macchine successive." }
       ]
     },
 
@@ -117,9 +118,9 @@ window.ESPLORAZIONE = {
       fuoco: [55, 40],
       fasi: [1],
       note: [
-        { x: 72, y: 28, etichetta: "Lattine di alluminio" },
-        { x: 37, y: 30, etichetta: "Rullo di magneti", lato: "sx" },
-        { x: 44, y: 52, etichetta: "Plastica", lato: "sx" }
+        { x: 72, y: 28, etichetta: "Lattine di alluminio", testo: "L'alluminio conduce bene la corrente: per questo il rullo di magneti lo respinge e le lattine volano più lontano di tutto il resto." },
+        { x: 37, y: 30, etichetta: "Rullo di magneti", lato: "sx", testo: "Un cilindro coperto di magneti che ruota molto più veloce del nastro. Crea un campo magnetico che cambia di continuo." },
+        { x: 44, y: 52, etichetta: "Plastica", lato: "sx", testo: "La plastica non conduce la corrente, quindi il rullo non le fa nulla: arrivata in fondo al nastro, cade semplicemente giù." }
       ]
     },
 
@@ -135,8 +136,8 @@ window.ESPLORAZIONE = {
         { x: 88, y: 24, etichetta: "Controllo a mano", vai: "cabina", lato: "sx" }
       ],
       note: [
-        { x: 27, y: 17, etichetta: "Lampade", verso: "giu" },
-        { x: 43, y: 18, etichetta: "Telecamera a infrarossi", verso: "giu" }
+        { x: 27, y: 17, etichetta: "Lampade", verso: "giu", testo: "Illuminano il nastro con una luce forte e uniforme, che contiene anche infrarossi. Senza questa luce la telecamera non potrebbe distinguere i materiali." },
+        { x: 43, y: 18, etichetta: "Telecamera a infrarossi", verso: "giu", testo: "Un sensore che legge la luce infrarossa riflessa dagli oggetti, che i nostri occhi non vedono. Da quel riflesso riconosce il tipo di plastica." }
       ]
     },
 
@@ -148,9 +149,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 45],
       fasi: [1],
       note: [
-        { x: 53, y: 14, etichetta: "Bottiglia riconosciuta", verso: "giu" },
-        { x: 30, y: 42, etichetta: "Ugelli", lato: "sx", verso: "giu" },
-        { x: 68, y: 62, etichetta: "Vaschetta nera" }
+        { x: 53, y: 14, etichetta: "Bottiglia riconosciuta", verso: "giu", testo: "La telecamera l'ha riconosciuta pochi istanti prima. Il computer ha calcolato quando sarebbe arrivata sopra gli ugelli e l'ha fatta saltare." },
+        { x: 30, y: 42, etichetta: "Ugelli", lato: "sx", verso: "giu", testo: "Piccole bocchette allineate su tutta la larghezza del nastro. Si aprono solo quelle sotto l'oggetto giusto, per pochi millesimi di secondo." },
+        { x: 68, y: 62, etichetta: "Vaschetta nera", testo: "Il colorante nero assorbe la luce infrarossa: alla telecamera non torna nessun segnale e la vaschetta non viene riconosciuta." }
       ]
     },
 
@@ -162,9 +163,9 @@ window.ESPLORAZIONE = {
       fuoco: [50, 50],
       fasi: [1],
       note: [
-        { x: 50, y: 45, etichetta: "Nastro lento" },
-        { x: 82, y: 42, etichetta: "Cassoni per gli scarti" },
-        { x: 71, y: 77, etichetta: "Guanti" }
+        { x: 50, y: 45, etichetta: "Nastro lento", testo: "Qui il nastro va piano apposta, per dare agli addetti il tempo di guardare e afferrare." },
+        { x: 82, y: 42, etichetta: "Cassoni per gli scarti", testo: "Raccolgono quello che viene tolto a mano: oggetti finiti nel bidone sbagliato o materiali diversi da quello che deve passare." },
+        { x: 71, y: 77, etichetta: "Guanti", testo: "Proteggono le mani da tagli e sporcizia. Chi lavora qui usa sempre guanti resistenti e altri dispositivi di protezione." }
       ]
     },
 
@@ -179,9 +180,9 @@ window.ESPLORAZIONE = {
         { x: 94, y: 25, etichetta: "Balle pronte", vai: "balle", lato: "sx" }
       ],
       note: [
-        { x: 27, y: 12, etichetta: "Tramoggia", verso: "giu" },
-        { x: 37, y: 34, etichetta: "Pistone", verso: "giu" },
-        { x: 78, y: 55, etichetta: "Balla appena pressata" }
+        { x: 27, y: 12, etichetta: "Tramoggia", verso: "giu", testo: "L'imbuto da cui il materiale selezionato cade dentro la pressa." },
+        { x: 37, y: 34, etichetta: "Pistone", verso: "giu", testo: "Una piastra d'acciaio spinta in avanti con una forza enorme. Schiaccia il materiale contro quello già pressato." },
+        { x: 78, y: 55, etichetta: "Balla appena pressata", testo: "Esce dalla pressa già legata. Una balla di bottiglie può pesare alcuni quintali." }
       ]
     },
 
@@ -193,9 +194,9 @@ window.ESPLORAZIONE = {
       fuoco: [45, 45],
       fasi: [2, 3],
       note: [
-        { x: 12, y: 30, etichetta: "Bottiglie trasparenti" },
-        { x: 41, y: 30, etichetta: "Flaconi colorati" },
-        { x: 61, y: 30, etichetta: "Lattine" }
+        { x: 12, y: 30, etichetta: "Bottiglie trasparenti", testo: "Sono di PET, la plastica delle bottiglie d'acqua e di bibite. Quello trasparente è il più richiesto, perché può tornare a essere una bottiglia." },
+        { x: 41, y: 30, etichetta: "Flaconi colorati", testo: "I flaconi di detersivo e di shampoo sono in gran parte di polietilene ad alta densità (HDPE). Riciclato diventa nuovi flaconi, tubi e cassette." },
+        { x: 61, y: 30, etichetta: "Lattine", testo: "Le lattine di alluminio pressate vanno in fonderia. Rifondere l'alluminio richiede molta meno energia che produrlo dal minerale." }
       ]
     }
   }
