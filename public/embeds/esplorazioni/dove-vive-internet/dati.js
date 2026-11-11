@@ -16,11 +16,11 @@ window.ESPLORAZIONE = {
   indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/dove-vive-internet/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "costa",
-  catena: { etichetta: "Percorso", fasi: ["dispositivo", "rete locale", "dorsale", "data center"] },
+  catena: { etichetta: "Percorso", fasi: ["dispositivo", "rete di accesso", "dorsale", "data center"] },
   nodi: {
     costa: {
       titolo: "Dove vive Internet",
-      testo: "Internet non è una nuvola: è fatta di cavi, edifici e antenne, in luoghi precisi. Su questa costa arriva un cavo sottomarino, che entra in una stazione di approdo. Poco più in là c'è un data center, il capannone dove stanno i computer che conservano i dati. Sulla collina, un'antenna collega i telefoni alla rete.",
+      testo: "Internet non è una nuvola: è fatta di cavi, edifici e antenne, in luoghi precisi. Su questa costa arriva un cavo sottomarino, che entra in una stazione di approdo. Poco più in là c'è un data center, il capannone dove stanno i computer che conservano i dati. Sulla collina, un'antenna collega i telefoni alla rete. Nella realtà il cavo sotto la spiaggia è interrato: qui lo vedi scoperto per seguirne il percorso.",
       img: "img/costa.webp",
       alt: "Veduta aerea di una costa rocciosa all'alba: a sinistra una spiaggia dove un cavo nero esce dal mare ed entra in un piccolo edificio di cemento; a destra un grande capannone senza finestre con impianti sul tetto; in alto a destra un traliccio con antenne; in lontananza un paese.",
       fuoco: [50, 45],
@@ -32,12 +32,12 @@ window.ESPLORAZIONE = {
         { x: 89, y: 15, etichetta: "Antenna", vai: "antenna", lato: "sx" }
       ],
       note: [
-        { x: 42, y: 18, etichetta: "Il paese", testo: "Case, scuole e negozi sono collegati alla rete da cavi interrati, sempre più spesso in fibra ottica. È la rete locale, l'ultimo tratto del percorso." }
+        { x: 42, y: 18, etichetta: "Il paese", testo: "Case, scuole e negozi sono collegati alla rete da cavi interrati o stesi sui pali, sempre più spesso in fibra ottica. È la rete di accesso, l'ultimo tratto del percorso." }
       ]
     },
     cavo: {
       titolo: "Il cavo sottomarino",
-      testo: "Quasi tutto il traffico tra i continenti passa dentro cavi come questo, posati sul fondo del mare. In mare aperto un cavo è spesso più o meno come un tubo da giardino; vicino alla costa è più grosso, perché ha un'armatura in più contro ancore e reti da pesca. Lungo il percorso, a intervalli regolari, ci sono i ripetitori.",
+      testo: "Quasi tutto il traffico tra i continenti passa dentro cavi come questo, posati sul fondo del mare. In mare aperto un cavo ha più o meno lo spessore di un tubo da giardino; vicino alla costa è più grosso, perché ha un'armatura in più contro ancore e reti da pesca. Lungo il percorso, a intervalli regolari, ci sono i ripetitori.",
       img: "img/cavo.webp",
       alt: "Sott'acqua: un cavo nero appoggiato sul fondale sabbioso si allontana verso il blu; a metà distanza, sul cavo, un cilindro metallico; qualche pesce, raggi di sole dall'alto.",
       fuoco: [50, 50],
@@ -68,7 +68,7 @@ window.ESPLORAZIONE = {
     },
     fibra: {
       titolo: "Le fibre ottiche",
-      testo: "Una fibra ottica è un filo di vetro purissimo, sottile come un capello. Non porta corrente: porta luce. Un laser a un'estremità si accende e si spegne miliardi di volte al secondo, e ogni lampo è un pezzetto di informazione. In un cavo sottomarino ci sono poche fibre, ma ognuna trasporta una quantità enorme di dati.",
+      testo: "Una fibra ottica è un filo di vetro purissimo, sottile come un capello. Non porta corrente: porta luce. Un laser a un'estremità manda una luce che cambia miliardi di volte al secondo, e ogni cambiamento è un pezzetto di informazione. In un cavo sottomarino ci sono poche fibre, ma ognuna trasporta una quantità enorme di dati.",
       img: "img/fibra.webp",
       alt: "Macro di un fascio di fibre ottiche che esce da un cavo a sinistra e si apre a ventaglio verso destra: fili di vetro trasparenti con le punte accese di luce bianco-azzurra, su fondo nero.",
       fuoco: [55, 48],
@@ -77,34 +77,34 @@ window.ESPLORAZIONE = {
         { x: 75, y: 38, etichetta: "La luce dentro la fibra", vai: "luce", lato: "sx" }
       ],
       note: [
-        { x: 40, y: 47, etichetta: "Fibra", verso: "giu", testo: "Vetro, non metallo: per questo non è disturbata dai campi elettrici e può portare il segnale molto lontano." },
-        { x: 10, y: 40, etichetta: "Rivestimento", testo: "Tiene insieme le fibre e le protegge: il vetro così sottile si spezza se viene piegato troppo." }
+        { x: 40, y: 47, etichetta: "Fibra", verso: "giu", testo: "Vetro, non metallo: per questo non è disturbata dai campi elettrici e magnetici. Ed è così trasparente che la luce può fare decine di chilometri prima di indebolirsi." },
+        { x: 10, y: 40, etichetta: "Guaina", testo: "Tiene insieme le fibre e le protegge: il vetro così sottile si spezza se viene piegato troppo." }
       ]
     },
     luce: {
       titolo: "La luce dentro la fibra",
-      testo: "È un'illustrazione: a questa scala nessuna fotografia è possibile. La fibra ha due strati di vetro: il nucleo al centro e il mantello intorno. La luce che viaggia nel nucleo, quando arriva al confine con il mantello, non esce: rimbalza indietro, come su uno specchio. È la riflessione totale. Così gli impulsi seguono la fibra anche nelle curve, a circa 200.000 chilometri al secondo.",
+      testo: "È un'illustrazione: la luce che corre dentro la fibra non si può fotografare. La fibra ha due strati di vetro: il nucleo al centro e il mantello intorno. La luce che viaggia nel nucleo, quando arriva al confine con il mantello, non esce: rimbalza verso l'interno, come su uno specchio. È la riflessione totale. Così gli impulsi seguono la fibra anche nelle curve, a circa 200.000 chilometri al secondo.",
       img: "img/luce.webp",
       alt: "Illustrazione: un tratto di fibra ottica trasparente in sezione; lungo il nucleo, impulsi di luce avanzano da sinistra a destra con un percorso a zigzag che rimbalza sul confine con il mantello.",
       fuoco: [50, 48],
       fasi: [2],
       note: [
-        { x: 17, y: 50, etichetta: "Impulso di luce", verso: "giu", testo: "Un lampo brevissimo. Acceso o spento: è così che la luce porta gli 1 e gli 0 dei dati." },
+        { x: 17, y: 50, etichetta: "Impulso di luce", verso: "giu", testo: "Un lampo brevissimo. Nei sistemi più semplici, acceso o spento: è così che la luce porta gli 1 e gli 0 dei dati." },
         { x: 34, y: 38, etichetta: "Riflessione", testo: "Qui la luce tocca il confine tra i due vetri e torna verso il centro, senza perdere quasi nulla." },
         { x: 62, y: 27, etichetta: "Mantello", testo: "Un vetro leggermente diverso da quello del nucleo. È questa differenza a tenere la luce prigioniera." }
       ]
     },
     ripetitore: {
       titolo: "Il ripetitore",
-      testo: "Anche nel vetro più puro, dopo decine di chilometri la luce si indebolisce. Per questo lungo il cavo, ogni 50-100 chilometri circa, c'è un ripetitore: un cilindro a tenuta stagna che amplifica gli impulsi di luce e li rimanda avanti. Qui ne vedi uno sul ponte della nave posacavi, prima di scendere in mare.",
+      testo: "Anche nel vetro più puro, dopo decine di chilometri la luce si indebolisce. Per questo lungo il cavo, ogni 60-100 chilometri circa, c'è un ripetitore: un cilindro a tenuta stagna che amplifica gli impulsi di luce e li rimanda avanti. Qui ne vedi uno sul ponte della nave posacavi, prima di scendere in mare.",
       img: "img/ripetitore.webp",
       alt: "Sul ponte di una nave: un lungo cilindro metallico a forma di siluro appoggiato su rulli, con il cavo nero che entra dalle due estremità; a sinistra bobine di cavo, sullo sfondo il mare.",
       fuoco: [50, 50],
       fasi: [2],
       note: [
-        { x: 55, y: 52, etichetta: "Involucro", verso: "giu", testo: "Deve resistere per decenni alla pressione del fondo dell'oceano, senza manutenzione: laggiù nessuno può andare a ripararlo." },
+        { x: 55, y: 52, etichetta: "Involucro", verso: "giu", testo: "Deve resistere per decenni alla pressione del fondo dell'oceano, senza manutenzione: per ripararlo bisogna ripescarlo con una nave." },
         { x: 89, y: 49, etichetta: "Cavo", testo: "Entra ed esce dal ripetitore. Porta sia la luce da amplificare sia la corrente che fa funzionare l'amplificatore." },
-        { x: 12, y: 27, etichetta: "Bobine di cavo", testo: "La nave trasporta migliaia di chilometri di cavo e lo cala in mare lentamente, lungo una rotta studiata in anticipo." }
+        { x: 12, y: 27, etichetta: "Cavo arrotolato", testo: "La nave porta con sé anche migliaia di chilometri di cavo, arrotolato in grandi vasche, e lo cala in mare lentamente, lungo una rotta studiata in anticipo." }
       ]
     },
     approdo: {
@@ -133,7 +133,7 @@ window.ESPLORAZIONE = {
         { x: 19, y: 45, etichetta: "Energia di riserva", vai: "energia", lato: "sx" }
       ],
       note: [
-        { x: 80, y: 65, etichetta: "Sottostazione elettrica", testo: "Un data center consuma quanto una piccola città. Per questo ha un collegamento tutto suo alla rete ad alta tensione." }
+        { x: 80, y: 65, etichetta: "Sottostazione elettrica", testo: "Un grande data center consuma quanto una piccola città. Per questo ha un collegamento tutto suo alla rete ad alta tensione." }
       ]
     },
     sala: {
@@ -163,7 +163,7 @@ window.ESPLORAZIONE = {
       ],
       note: [
         { x: 52, y: 8, etichetta: "Switch di rete", verso: "giu", testo: "Smista i dati: riceve ogni pacchetto e lo manda al server giusto, o verso l'uscita." },
-        { x: 73, y: 58, etichetta: "Alimentazione", testo: "Ogni server è collegato a due linee elettriche diverse: se una cade, resta l'altra." }
+        { x: 73, y: 58, etichetta: "Alimentazione", testo: "Quasi tutti i server hanno due alimentatori, collegati a due linee elettriche diverse: se una cade, resta l'altra." }
       ]
     },
     server: {
@@ -177,27 +177,27 @@ window.ESPLORAZIONE = {
         { x: 55, y: 28, etichetta: "Processore", vai: "chip" }
       ],
       note: [
-        { x: 82, y: 45, etichetta: "Ventole", testo: "Tirano l'aria fredda attraverso il server. Senza di loro i processori si surriscalderebbero in pochi secondi." },
+        { x: 82, y: 45, etichetta: "Ventole", testo: "Tirano l'aria fredda attraverso il server. Senza di loro i processori si surriscalderebbero in poco tempo e il server si spegnerebbe da solo per proteggersi." },
         { x: 15, y: 47, etichetta: "Dischi", testo: "Qui stanno i dati salvati: foto, video, pagine. Ogni dato è copiato su più dischi, spesso in data center diversi." },
         { x: 42, y: 60, etichetta: "Memoria", verso: "giu", testo: "La memoria di lavoro: veloce, ma si svuota quando il server si spegne." }
       ]
     },
     chip: {
       titolo: "Il processore",
-      testo: "Tolto il coperchio di metallo, ecco il cuore del server: una piastrina di silicio grande come un francobollo. Sulla sua superficie sono incisi miliardi di transistor, interruttori microscopici che si aprono e si chiudono miliardi di volte al secondo. Ogni calcolo, ogni pagina che ricevi, passa da qui. Tutta l'elettricità che il chip consuma diventa calore.",
+      testo: "Tolto il coperchio di metallo, ecco il cuore del server: una piastrina di silicio grande come un francobollo. Su una sua faccia sono incisi miliardi di transistor, interruttori microscopici che si aprono e si chiudono miliardi di volte al secondo. Ogni calcolo, ogni pagina che ricevi, passa da qui. Tutta l'elettricità che il chip consuma diventa calore.",
       img: "img/chip.webp",
       alt: "Macro di un processore senza coperchio: al centro una piastrina di silicio quadrata con riflessi iridescenti, su una base verde con file di contatti dorati; a destra, sfocato, il coperchio di metallo.",
       fuoco: [45, 48],
       fasi: [3],
       note: [
-        { x: 42, y: 42, etichetta: "Silicio", testo: "I riflessi colorati vengono dai circuiti: sono così fitti e piccoli che scompongono la luce, come la superficie di un CD." },
-        { x: 19, y: 48, etichetta: "Contatti", lato: "sx", testo: "Centinaia di piccoli punti dorati collegano il chip alla scheda: da lì entrano corrente e dati." },
+        { x: 42, y: 42, etichetta: "Silicio", testo: "In un processore vero la faccia con i circuiti è rivolta verso il basso e non si vede. Qui l'immagine la mostra: i circuiti sono così fitti e piccoli che scompongono la luce, come la superficie di un CD." },
+        { x: 19, y: 48, etichetta: "Contatti", lato: "sx", testo: "Migliaia di piccoli punti dorati collegano il chip alla scheda: da lì entrano corrente e dati." },
         { x: 86, y: 22, etichetta: "Coperchio", lato: "sx", testo: "Protegge il silicio e porta il calore verso il dissipatore." }
       ]
     },
     raffreddamento: {
       titolo: "Il raffreddamento",
-      testo: "Tutta l'elettricità che i server consumano diventa calore, e va portata via: sopra una certa temperatura i computer si guastano. Sul tetto, grandi macchine frigorifere raffreddano l'acqua o l'aria che circola nelle sale. È per questo che molti data center vengono costruiti in luoghi freddi.",
+      testo: "Tutta l'elettricità che i server consumano diventa calore, e va portata via: sopra una certa temperatura i computer si guastano. Sul tetto, grandi macchine frigorifere raffreddano l'acqua o l'aria che circola nelle sale. È anche per questo che alcuni data center vengono costruiti in luoghi freddi, dove basta l'aria esterna a raffreddarli per gran parte dell'anno.",
       img: "img/raffreddamento.webp",
       alt: "Il tetto di un data center: due file di grandi macchine frigorifere con ventole circolari in cima, grossi tubi isolati che le collegano e, in mezzo, una passerella.",
       fuoco: [50, 48],
@@ -210,7 +210,7 @@ window.ESPLORAZIONE = {
     },
     energia: {
       titolo: "L'energia di riserva",
-      testo: "Un data center non può spegnersi, nemmeno per un secondo. Se la corrente della rete manca, le batterie prendono subito il suo posto e tengono accesi i server per i pochi minuti che servono ad avviare i generatori diesel. Con il serbatoio pieno, i generatori possono andare avanti per giorni.",
+      testo: "Un data center non può spegnersi, nemmeno per un secondo. Se la corrente della rete manca, le batterie prendono subito il suo posto e tengono accesi i server finché non partono i generatori diesel: basta meno di un minuto, ma le batterie ne durano alcuni, per sicurezza. Con il serbatoio pieno, i generatori possono andare avanti per giorni.",
       img: "img/energia.webp",
       alt: "Un locale tecnico: a sinistra una lunga fila di armadi grigi di batterie; a destra un grande generatore diesel verde con il radiatore e il tubo di scarico che sale al soffitto.",
       fuoco: [50, 48],
@@ -223,7 +223,7 @@ window.ESPLORAZIONE = {
     },
     antenna: {
       titolo: "L'antenna",
-      testo: "Il telefono non è collegato a Internet da un filo: parla via radio con l'antenna più vicina, la stazione radio base. Da lì in poi il segnale viaggia quasi sempre in un cavo di fibra ottica, fino ai nodi della rete. Ogni antenna copre una zona, la cella: per questo si dice «cellulare».",
+      testo: "Il telefono non è collegato a Internet da un filo: parla via radio con le antenne di un impianto vicino, la stazione radio base. Da lì in poi il segnale viaggia in un cavo di fibra ottica oppure, dove la fibra non arriva, in un ponte radio, fino ai nodi della rete. Ogni antenna copre una zona, la cella: per questo si dice «cellulare».",
       img: "img/antenna.webp",
       alt: "Su una collina, un traliccio d'acciaio con gruppi di antenne rettangolari in cima e una parabola più in basso; alla base un armadio grigio; nella valle, a destra, un paese.",
       fuoco: [45, 45],

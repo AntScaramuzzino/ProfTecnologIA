@@ -33,7 +33,7 @@ window.ESPLORAZIONE = {
         { x: 33, y: 16, etichetta: "Sella e viti", vai: "morsetto", lato: "sx" }
       ],
       note: [
-        { x: 52, y: 38, etichetta: "Telaio", testo: "Lo scheletro della bicicletta. I suoi tubi formano triangoli: è la forma che si deforma meno sotto carico." }
+        { x: 52, y: 38, etichetta: "Telaio", testo: "Lo scheletro della bicicletta. I suoi tubi formano triangoli: il triangolo è l'unica figura che non può cambiare forma senza che un lato si allunghi o si accorci." }
       ]
     },
     pedivella: {
@@ -64,18 +64,18 @@ window.ESPLORAZIONE = {
       ],
       note: [
         { x: 45, y: 47, etichetta: "Asse", verso: "giu", testo: "Collega la pedivella destra a quella sinistra, così le due gambe spingono sulla stessa corona." },
-        { x: 45, y: 22, etichetta: "Scatola del telaio", testo: "Il tubo corto e robusto in cui convergono i tubi del telaio. Regge tutta la spinta della pedalata." }
+        { x: 45, y: 22, etichetta: "Scatola del movimento", testo: "Il tubo corto e robusto in cui convergono i tubi del telaio. Regge tutta la spinta della pedalata." }
       ]
     },
     sfere: {
       titolo: "Le sfere del cuscinetto",
-      testo: "Un cuscinetto a sfere sostituisce lo strisciamento con il rotolamento. Tra l'anello interno, che gira con l'asse, e quello esterno, fermo nel telaio, rotolano sfere d'acciaio durissimo. Far rotolare costa molta meno fatica che far strisciare: è l'attrito volvente. Il grasso lo riduce ancora e tiene lontane acqua e polvere.",
+      testo: "Un cuscinetto a sfere sostituisce lo strisciamento con il rotolamento. Tra l'anello interno, che gira con l'asse, e quello esterno, fermo nel telaio, rotolano sfere d'acciaio durissimo. Far rotolare costa molta meno fatica che far strisciare: è l'attrito volvente. Il grasso evita che il metallo strisci sul metallo, riduce l'usura e tiene lontane acqua e polvere.",
       img: "img/sfere.webp",
       alt: "Macro di un cuscinetto aperto: sfere d'acciaio lucide, tenute da una gabbia di ottone, tra l'anello interno e l'anello esterno; un velo di grasso sulle sfere.",
       fuoco: [50, 50],
       fasi: [1],
       note: [
-        { x: 36, y: 25, etichetta: "Sfera", testo: "Acciaio temprato, lucidato a specchio. Tocca gli anelli in un punto piccolissimo: per questo oppone così poca resistenza." },
+        { x: 36, y: 25, etichetta: "Sfera", testo: "Acciaio temprato, lucidato a specchio. Tocca gli anelli in un punto piccolissimo, dove la pressione è enorme: per questo deve essere durissima." },
         { x: 72, y: 49, etichetta: "Gabbia", testo: "Tiene le sfere alla stessa distanza l'una dall'altra, così non si toccano tra loro." },
         { x: 45, y: 54, etichetta: "Anello interno", verso: "giu", testo: "Gira insieme all'asse. La sua pista è scavata su misura per le sfere." }
       ]
@@ -97,7 +97,7 @@ window.ESPLORAZIONE = {
     },
     catena: {
       titolo: "La catena",
-      testo: "La catena è fatta di maglie articolate, tutte uguali. I rulli si infilano tra un dente e l'altro della corona: così la catena non può slittare, e quasi tutta la forza arriva alla ruota. Pulita e oliata, una catena trasmette oltre il 95% dell'energia.",
+      testo: "La catena è fatta di maglie articolate, strette e larghe, che si alternano. I rulli si infilano tra un dente e l'altro della corona: così la catena non può slittare, e quasi tutta la forza arriva alla ruota. Una catena pulita e ben tenuta può trasmettere oltre il 95% dell'energia: è una delle trasmissioni più efficienti che esistano.",
       img: "img/catena.webp",
       alt: "Macro di una catena di bicicletta appoggiata sui denti di una corona: piastrine, perni e rulli d'acciaio leggermente oliati.",
       fuoco: [50, 45],
@@ -112,7 +112,7 @@ window.ESPLORAZIONE = {
     },
     maglia: {
       titolo: "Una maglia smontata",
-      testo: "Ogni maglia è fatta di pochi pezzi d'acciaio: piastrine esterne, piastrine interne, due rulli e due perni. I perni tengono insieme le piastrine e fanno da cerniera; i rulli girano liberi e rotolano sui denti invece di strisciare. In una catena ci sono più di cento maglie.",
+      testo: "La catena alterna maglie interne, strette, e maglie esterne, larghe. Una coppia è fatta di pochi pezzi d'acciaio: due piastrine esterne, due interne, due rulli e due perni. I perni tengono insieme le piastrine e fanno da cerniera; i rulli girano liberi e rotolano sui denti invece di strisciare. In una catena ci sono più di cento maglie, cioè più di cinquanta coppie come questa.",
       img: "img/maglia.webp",
       alt: "I pezzi di una maglia di catena allineati su un banco scuro: piastrine esterne ai lati, piastrine interne, due rulli e due perni al centro; dietro, sfocata, una catena montata.",
       fuoco: [50, 50],
@@ -133,12 +133,12 @@ window.ESPLORAZIONE = {
       note: [
         { x: 76, y: 17, etichetta: "Cavo", testo: "Arriva dal comando sul manubrio. Tirandolo, il cambio si sposta verso i pignoni più grandi." },
         { x: 46, y: 58, etichetta: "Gabbia con le rotelline", testo: "Guida la catena e, grazie a una molla, recupera la parte che avanza quando passi a un pignone piccolo." },
-        { x: 22, y: 16, etichetta: "Pignoni", testo: "Più il pignone è grande, più la pedalata è leggera e meno strada fai a ogni giro." }
+        { x: 22, y: 16, etichetta: "Pignoni", testo: "Più il pignone è grande, più la pedalata è leggera e meno strada fai a ogni giro di pedale." }
       ]
     },
     freno: {
       titolo: "La leva del freno",
-      testo: "Il freno comincia qui, con una leva. Le dita tirano l'estremità lunga; vicino al fulcro, il braccio corto tira il cavo con una forza molto maggiore. È il vantaggio meccanico: spostamento lungo e forza piccola da una parte, spostamento corto e forza grande dall'altra.",
+      testo: "Il freno comincia qui, con una leva. Le dita tirano l'estremità lunga; vicino al fulcro, il braccio corto tira il cavo con una forza alcune volte maggiore. È il vantaggio meccanico: spostamento lungo e forza piccola da una parte, spostamento corto e forza grande dall'altra.",
       img: "img/freno.webp",
       alt: "L'estremità destra di un manubrio: la manopola di gomma, la leva del freno con il suo perno e, a sinistra, il cavo che esce dalla leva dentro la guaina.",
       fuoco: [50, 50],
@@ -148,7 +148,7 @@ window.ESPLORAZIONE = {
       ],
       note: [
         { x: 44, y: 55, etichetta: "Fulcro", testo: "Il perno attorno a cui la leva ruota. Più il cavo è attaccato vicino al fulcro, più la forza delle dita viene moltiplicata." },
-        { x: 68, y: 64, etichetta: "Leva", verso: "giu", testo: "Fulcro a un'estremità, dita all'altra, cavo in mezzo: è una leva di secondo genere, sempre vantaggiosa." }
+        { x: 68, y: 64, etichetta: "Leva", verso: "giu", testo: "Fulcro a un'estremità, dita all'altra, cavo tra i due, vicino al fulcro: è una leva di secondo genere, sempre vantaggiosa." }
       ]
     },
     pinza: {
@@ -163,12 +163,12 @@ window.ESPLORAZIONE = {
       ],
       note: [
         { x: 36, y: 10, etichetta: "Cavo", testo: "Porta alla ruota la forza della leva sul manubrio, anche a un metro di distanza." },
-        { x: 72, y: 38, etichetta: "Braccio", testo: "Ruota attorno a un perno fissato alla forcella. Tirato in alto dal cavo, spinge il pattino verso il cerchio." }
+        { x: 72, y: 38, etichetta: "Braccio", testo: "Ruota attorno a un perno fissato alla forcella. Quando il cavo tira la sua estremità alta, il pattino si sposta verso il cerchio." }
       ]
     },
     pattino: {
       titolo: "Il pattino",
-      testo: "Il pattino è un blocchetto di gomma dura. Premuto contro il cerchio che gira, lo frena per attrito radente: più forte premi, più grande è l'attrito. A ogni frenata la gomma si consuma un poco: la polvere scura è gomma. Le scanalature fanno scorrere via l'acqua e mostrano quando il pattino è da cambiare.",
+      testo: "Il pattino è un blocchetto di gomma dura. Premuto contro il cerchio che gira, lo frena per attrito radente: più forte premi, più grande è l'attrito. A ogni frenata la gomma si consuma un poco: la polvere scura è gomma, insieme a un po' di alluminio del cerchio. Le scanalature mostrano quando il pattino è da cambiare: se non si vedono più, è consumato.",
       img: "img/pattino.webp",
       alt: "Macro: a sinistra un pattino di gomma nera con tre scanalature, premuto contro la superficie lucida e rigata di un cerchio di alluminio; sul metallo, granelli di polvere di gomma.",
       fuoco: [50, 48],
@@ -183,7 +183,7 @@ window.ESPLORAZIONE = {
     },
     attrito: {
       titolo: "L'attrito al microscopio",
-      testo: "È un'illustrazione: a questa scala nessuna fotografia è possibile. Nessuna superficie è davvero liscia: ingrandite, anche le più lucide sono fatte di cime e valli. Le due superfici si toccano solo sulle cime, e la gomma si deforma attorno a quelle del metallo. Per farle scorrere bisogna vincere questi incastri: l'energia spesa diventa calore.",
+      testo: "È un'illustrazione: queste asperità si vedono solo al microscopio, e nessuno può fotografarle mentre gomma e metallo strisciano l'una sull'altro. Nessuna superficie è davvero liscia: ingrandite, anche le più lucide sono fatte di cime e valli. Le due superfici si toccano solo sulle cime, e la gomma si deforma attorno a quelle del metallo. Per farle scorrere bisogna staccare questi punti di contatto e deformare la gomma di continuo: l'energia spesa diventa calore.",
       img: "img/attrito.webp",
       alt: "Illustrazione in sezione: in alto la gomma scura, in basso il metallo chiaro, entrambi con un profilo di cime e valli; dove si toccano, un bagliore arancione.",
       fuoco: [50, 48],
@@ -196,7 +196,7 @@ window.ESPLORAZIONE = {
     },
     ruota: {
       titolo: "La ruota",
-      testo: "La ruota è una macchina semplice: la ruota con l'asse. Rotolare sul terreno costa molta meno fatica che strisciare. I raggi sono sottili fili d'acciaio in tensione: il peso della bici resta appeso al cerchio tramite i raggi, che lavorano tirando, non spingendo.",
+      testo: "La ruota fa due lavori. Rotolando sul terreno, costa molta meno fatica che strisciare. E quella posteriore è una ruota con l'asse usata al contrario: la catena tira il pignone, piccolo, e il bordo della ruota, grande, percorre molta più strada. I raggi sono sottili fili d'acciaio sempre in tensione: tirano il cerchio verso il mozzo da ogni lato. Un raggio lavora sempre tirando, mai spingendo.",
       img: "img/ruota.webp",
       alt: "Il centro di una ruota anteriore: il mozzo con le sue due flange, i raggi d'acciaio incrociati che vanno verso il cerchio, i due foderi blu della forcella e il dado dell'asse.",
       fuoco: [50, 48],
@@ -205,7 +205,7 @@ window.ESPLORAZIONE = {
         { x: 45, y: 45, etichetta: "Mozzo", vai: "mozzo", lato: "sx" }
       ],
       note: [
-        { x: 22, y: 46, etichetta: "Raggi", testo: "Ognuno è teso come la corda di una chitarra. Incrociati tra loro, trasmettono anche la forza della frenata." },
+        { x: 22, y: 46, etichetta: "Raggi", testo: "Ognuno è teso come una corda di chitarra, ma molto di più. Sono incrociati perché, nella ruota posteriore, devono anche trasmettere al cerchio la spinta della pedalata." },
         { x: 65, y: 18, etichetta: "Forcella", testo: "Tiene l'asse della ruota anteriore e la collega al manubrio." },
         { x: 87, y: 58, etichetta: "Cerchio", lato: "sx", testo: "L'anello di alluminio che regge il copertone. I raggi lo tirano verso il centro da tutte le direzioni." }
       ]
@@ -240,15 +240,15 @@ window.ESPLORAZIONE = {
     },
     vite: {
       titolo: "Il filetto della vite",
-      testo: "Una vite è un piano inclinato avvolto a spirale attorno a un cilindro. A ogni giro avanza di poco: fai tanta strada con la chiave per ottenere un piccolo spostamento, e in cambio la vite stringe con una forza molto più grande di quella della tua mano. L'attrito tra i filetti le impedisce di svitarsi da sola.",
+      testo: "Una vite è un piano inclinato avvolto a elica, come una scala a chiocciola, attorno a un cilindro. A ogni giro avanza di poco: fai tanta strada con la chiave per ottenere un piccolo spostamento, e in cambio la vite stringe con una forza molto più grande di quella della tua mano. L'attrito tra i filetti le impedisce di svitarsi da sola.",
       img: "img/vite.webp",
       alt: "Una vite a testa cilindrica con incavo esagonale avvitata a metà in un blocco di alluminio tagliato: si vedono i filetti della vite incastrati in quelli del foro.",
       fuoco: [50, 48],
       fasi: [1],
       note: [
         { x: 17, y: 42, etichetta: "Testa", testo: "Ha un incavo esagonale in cui entra la chiave a brugola. Più lunga è la chiave, meno forza serve." },
-        { x: 48, y: 40, etichetta: "Filetto", testo: "La spirale in rilievo. La distanza tra una cresta e l'altra si chiama passo: è di quanto la vite avanza a ogni giro." },
-        { x: 62, y: 62, etichetta: "Madrevite", verso: "giu", testo: "Il filetto scavato dentro il foro, con la stessa spirale della vite. I due si incastrano cresta contro cresta." }
+        { x: 48, y: 40, etichetta: "Filetto", testo: "L'elica in rilievo. La distanza tra una cresta e l'altra si chiama passo: è di quanto la vite avanza a ogni giro." },
+        { x: 62, y: 62, etichetta: "Madrevite", verso: "giu", testo: "Il filetto scavato dentro il foro, con la stessa elica della vite. Le creste dell'una entrano nei solchi dell'altra, e i fianchi dei filetti si appoggiano l'uno sull'altro." }
       ]
     }
   }
