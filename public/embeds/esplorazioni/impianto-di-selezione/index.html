@@ -199,7 +199,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 .count { font: 500 12.5px/1 var(--mono); padding: 0 8px 0 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .count.all { color: #0a4f49; }
 .menu { position: absolute; z-index: 8; top: 68px; left: max(16px, env(safe-area-inset-left, 0px)); min-width: 270px; max-width: min(360px, calc(100% - 32px)); max-height: calc(100% - 84px); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; cursor: default; padding: 8px; border-radius: 20px; color: var(--glass-ink); background-color: var(--menu-fill); box-shadow: var(--glass-rim), 0 14px 38px rgba(0, 0, 0, .4); -webkit-backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); }
-.menu button { display: flex; width: 100%; align-items: center; gap: 10px; padding: 10px 12px 10px calc(12px + var(--d, 0) * 20px); border-radius: 12px; text-align: left; font: 400 15px/1.2 var(--body); transition: background-color .15s; }
+.menu button { display: flex; width: 100%; align-items: center; gap: 10px; padding: 10px 12px 10px calc(12px + var(--d, 0) * 16px); border-radius: 12px; text-align: left; font: 400 15px/1.2 var(--body); transition: background-color .15s; }
 .menu button span { flex: 1; min-width: 0; }
 .menu button.way { font-weight: 500; }
 /* pallino: vuoto se la scena non è ancora stata vista, pieno se è già vista */
@@ -1007,7 +1007,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       b.type = 'button';
       b.setAttribute('role', 'menuitem');
       b.className = (seen.has(id) ? 'seen' : '') + (open.has(id) ? ' way' : '');
-      b.style.setProperty('--d', Math.min(d, 4));
+      b.style.setProperty('--d', Math.min(d, 6));
       pip.className = 'pip';
       pip.setAttribute('aria-hidden', 'true');
       t.textContent = N[id].titolo;
