@@ -13,6 +13,7 @@
  */
 window.ESPLORAZIONE = {
   id: "centrale-termoelettrica",
+  indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/centrale-termoelettrica/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "centrale",
   catena: { etichetta: "Energia", fasi: ["chimica", "termica", "meccanica", "elettrica"] },

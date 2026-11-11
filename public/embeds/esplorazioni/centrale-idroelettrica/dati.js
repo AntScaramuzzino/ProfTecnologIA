@@ -13,6 +13,7 @@
  */
 window.ESPLORAZIONE = {
   id: "centrale-idroelettrica",
+  indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/centrale-idroelettrica/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "centrale",
   catena: {

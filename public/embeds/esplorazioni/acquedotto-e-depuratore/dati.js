@@ -14,6 +14,7 @@
  */
 window.ESPLORAZIONE = {
   id: "acquedotto-e-depuratore",
+  indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/acquedotto-e-depuratore/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "territorio",
   catena: {

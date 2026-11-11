@@ -13,6 +13,7 @@
  */
 window.ESPLORAZIONE = {
   id: "casa-e-impianti",
+  indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/casa-e-impianti/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "casa",
   catena: { etichetta: "Impianto", fasi: ["elettrico", "idrico", "gas", "termico"] },

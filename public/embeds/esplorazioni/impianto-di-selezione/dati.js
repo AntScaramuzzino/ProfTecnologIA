@@ -13,6 +13,7 @@
  */
 window.ESPLORAZIONE = {
   id: "impianto-di-selezione",
+  indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/impianto-di-selezione/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "impianto",
   catena: { etichetta: "Percorso", fasi: ["raccolta", "selezione", "balle", "riciclo"] },

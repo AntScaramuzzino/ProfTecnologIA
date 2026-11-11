@@ -167,6 +167,21 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .app.tipping .mark:not(.sel) > * { opacity: 0; pointer-events: none !important; }
 @media (prefers-reduced-motion: reduce) { .tipcard { animation: none; } .panel { transition: none; } }
 
+/* ---------- condividi ---------- */
+.share { position: absolute; z-index: 8; top: 68px; right: max(16px, env(safe-area-inset-right, 0px)); width: min(380px, calc(100% - 32px)); max-height: calc(100% - 84px); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; cursor: default; padding: 16px; border-radius: 18px; color: var(--glass-ink); background-color: var(--glass-fill-hot); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-rim), var(--glass-drop); }
+.share[hidden] { display: none; }
+.share label { display: block; margin: 0 0 6px; font: 600 13px/1.2 var(--body); }
+.share .row { display: flex; gap: 8px; align-items: stretch; margin: 0 0 14px; }
+.share input, .share textarea { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid rgba(17, 32, 31, .28); border-radius: 10px; background: rgba(255, 255, 255, .78); color: #11201f; font: 400 12px/1.4 var(--mono); resize: none; }
+.share .row button { flex: none; align-self: flex-start; padding: 9px 14px; border-radius: 10px; font: 600 13px/1 var(--body); color: #fff; background-color: #0d6b63; transition: background-color .15s; }
+.share .row button:hover { background-color: #0a544e; }
+.share .qr { display: flex; gap: 14px; align-items: center; }
+.share .qr[hidden] { display: none; }
+.share .qr img { flex: none; width: 96px; height: 96px; padding: 6px; border-radius: 8px; background: #fff; }
+.share .qr p { margin: 0; font: 400 13px/1.45 var(--body); }
+.share a { color: #0a544e; font-weight: 600; text-underline-offset: 3px; }
+.share .said { min-height: 1.2em; margin: 10px 0 0; font: 500 12.5px/1.2 var(--body); color: #0a544e; }
+
 /* ---------- comandi ---------- */
 .bar { position: absolute; inset: 0 0 auto; z-index: 7; display: flex; align-items: center; gap: 10px; padding-top: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); pointer-events: none; }
 .bar .grow { flex: 1; }
@@ -317,10 +332,24 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       <span class="grow"></span>
       <div class="pill">
         <span class="count" id="count"></span>
+        <button type="button" id="btnShare" aria-haspopup="dialog" aria-expanded="false" aria-controls="share" aria-label="Condividi">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3.5M7.5 7.5 12 3l4.5 4.5M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>
+        </button>
         <button type="button" id="btnFull" aria-label="Schermo intero">
           <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
         </button>
       </div>
+    </div>
+    <div class="share" id="share" role="dialog" aria-label="Condividi" hidden>
+      <label for="shLink">Link a questa scena</label>
+      <div class="row"><input id="shLink" type="text" readonly><button type="button" data-copy="shLink">Copia</button></div>
+      <label for="shEmbed">Codice per inserirla in una pagina</label>
+      <div class="row"><textarea id="shEmbed" rows="3" readonly></textarea><button type="button" data-copy="shEmbed">Copia</button></div>
+      <div class="qr" id="shQr">
+        <img src="qr.svg" alt="QR code che apre l'esplorazione dall'inizio" width="96" height="96">
+        <p>QR code dell'esplorazione: porta alla scena iniziale.<br><a href="qr.png" download id="shQrPng">Scarica PNG</a> · <a href="qr.svg" download id="shQrSvg">Scarica SVG</a></p>
+      </div>
+      <p class="said" id="shSaid" role="status"></p>
     </div>
     <div class="menu" id="menu" role="menu" aria-label="Tutte le scene" hidden></div>
   </div>
@@ -341,6 +370,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     </div>
   </section>
 </div>
+<script>window.ESPLORAZIONE_URL = 'https://book.proftecnologia.it/embeds/esplorazioni/impianto-di-selezione/index.html';</script>
 <script src="dati.js"></script>
 <script>
 /* Motore dell'esplorazione: legge window.ESPLORAZIONE (vedi dati.js) e non contiene contenuti. */
@@ -351,6 +381,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   const $ = (id) => document.getElementById(id);
   const stage = $('stage'), marks = $('marks'), panel = $('panel'), menu = $('menu');
   const btnPath = $('btnPath'), btnFull = $('btnFull'), btnFold = $('btnFold');
+  const share = $('share'), btnShare = $('btnShare');
   const layers = [$('layerA'), $('layerB')];
   const pic = (i) => layers[i].firstElementChild;
   const img = (i) => pic(i).firstElementChild;
@@ -646,7 +677,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     else grip = null;
   }
   stage.addEventListener('pointerdown', (e) => {
-    if (busy || e.target.closest('button, .menu, .tipcard')) return;
+    if (busy || e.target.closest('button, .menu, .tipcard, .share')) return;
     closeMenu();
     try { stage.setPointerCapture(e.pointerId); } catch (err) { /* puntatore già rilasciato */ }
     fingers.set(e.pointerId, [e.clientX, e.clientY]);
@@ -695,7 +726,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   stage.addEventListener('pointerup', release);
   stage.addEventListener('pointercancel', release);
   stage.addEventListener('wheel', (e) => {
-    if (e.target.closest('.menu')) return;             // dentro il menu la rotella scorre l'elenco
+    if (e.target.closest('.menu, .share')) return;     // dentro il menu la rotella scorre l'elenco
     if (hosted() && !e.ctrlKey && !e.metaKey) return; // la rotella fa scorrere la pagina del libro
     e.preventDefault();
     if (busy) return;
@@ -917,6 +948,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     busy = true;
     wanted = null;
     closeMenu();
+    closeShare();
     tip = null;
     closeCard();
     fingers.clear(); grip = null;
@@ -999,6 +1031,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     btnPath.setAttribute('aria-expanded', 'false');
   }
   function openMenu() {
+    closeShare();
     menu.textContent = '';
     const open = new Set(path);
     let here = null;
@@ -1033,7 +1066,8 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   document.addEventListener('click', (e) => { if (!menu.hidden && !e.target.closest('.menu')) closeMenu(); });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
-    if (!menu.hidden) { closeMenu(); btnPath.focus(); }
+    if (!share.hidden) { closeShare(); btnShare.focus(); }
+    else if (!menu.hidden) { closeMenu(); btnPath.focus(); }
     else if (tip) hideTip();
     else if (path.length > 1 && !document.fullscreenElement) goTo(path[path.length - 2]);
   });
@@ -1044,6 +1078,37 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     btnFold.setAttribute('aria-expanded', String(!folded));
     btnFold.setAttribute('aria-label', folded ? 'Mostra il testo' : 'Riduci il testo');
   });
+  /* ---------- condividi: link della scena, codice per incorporare, QR code ---------- */
+  // L'indirizzo pubblico lo scrive la costruzione della pagina (versione del libro) o dati.js (indirizzo: "https://…/");
+  // se manca, vale quello da cui la pagina è aperta.
+  const pubUrl = ((window.ESPLORAZIONE_URL || '').replace(/index\.html$/, '') || D.indirizzo || location.href.split(/[?#]/)[0].replace(/index\.html$/, '')).replace(/\/?$/, '/');
+  function openShare() {
+    closeMenu();
+    $('shLink').value = pubUrl + 'index.html' + (cur() === D.radice ? '' : '#' + cur());
+    $('shEmbed').value = `<iframe src="${pubUrl}index.html?incorporata=1" title="${(N[D.radice].titolo || '').replace(/"/g, '&quot;')}" style="width:100%;aspect-ratio:5/4;min-height:420px;border:0" allow="fullscreen" allowfullscreen loading="lazy"></iframe>`;
+    $('shSaid').textContent = '';
+    share.hidden = false;
+    btnShare.setAttribute('aria-expanded', 'true');
+  }
+  function closeShare() {
+    if (share.hidden) return;
+    share.hidden = true;
+    btnShare.setAttribute('aria-expanded', 'false');
+  }
+  btnShare.addEventListener('click', (e) => { e.stopPropagation(); if (share.hidden) openShare(); else closeShare(); });
+  $('shQr').querySelector('img').addEventListener('error', () => { $('shQr').hidden = true; });   // copia senza il file del QR
+  share.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-copy]');
+    if (!b) return;
+    const f = $(b.dataset.copy), said = (t) => { $('shSaid').textContent = t; };
+    f.focus();
+    f.select();
+    const manual = () => { try { if (document.execCommand('copy')) return said('Copiato.'); } catch (err) { /* non permesso */ } said('Testo selezionato: copialo con Ctrl+C.'); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(f.value).then(() => said('Copiato.'), manual);
+    else manual();
+  });
+  document.addEventListener('click', (e) => { if (!share.hidden && !e.target.closest('.share')) closeShare(); });
+
   if (!document.fullscreenEnabled) btnFull.hidden = true;
   btnFull.addEventListener('click', () => {
     try {
