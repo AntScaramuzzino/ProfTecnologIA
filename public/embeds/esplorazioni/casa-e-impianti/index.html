@@ -143,12 +143,39 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .pill button { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; transition: background-color .15s; }
 .pill button:hover { background-color: rgba(255, 255, 255, .5); }
 .pill svg, #btnFold svg { width: 22px; height: 22px; display: block; }
+/* percorso: il pulsante con tutte le scene, poi le scene che contengono quella aperta, poi quella aperta (in chiaro) */
+.trail { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 0 1 auto; }
+.pill.round { flex: none; width: 46px; padding: 0; justify-content: center; transition: background-color .15s; }
+.pill.round:hover, .pill.round[aria-expanded="true"] { background-color: var(--glass-fill-hot); }
+.crumbs { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 8px; min-width: 0; flex: 0 1 auto; }
+.crumbs li { display: flex; min-width: 0; flex: 0 3 auto; }
+.crumbs li:last-child { flex-shrink: 1; }
+.crumb { min-width: 0; max-width: 17rem; padding: 0 16px; gap: 6px; font: 500 15px/1 var(--body); transition: background-color .15s; }
+.crumb .t { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 1.3; }
+.crumb svg { flex: none; width: 16px; height: 16px; margin-right: -4px; opacity: .75; }
+button.crumb:hover { background-color: var(--glass-fill-hot); }
+.crumb.here { background-color: var(--glass-fill-hot); cursor: default; }
+@media (max-width: 900px) { .crumbs li.far { display: none; } }
+@media (max-width: 640px) {
+  .bar { gap: 8px; }
+  .trail, .crumbs { gap: 6px; }
+  .crumb { padding: 0 14px 0 10px; font-size: 14px; }
+  /* scena stretta: il titolo della scena aperta è già nel testo, qui resta la scena a cui tornare */
+  .crumbs li:last-child { display: none; }
+  .crumb svg { order: -1; transform: scaleX(-1); margin: 0 0 0 -2px; }
+  .count .w { display: none; }
+}
 .count { font: 500 12.5px/1 var(--mono); padding: 0 8px 0 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .count.all { color: #0a4f49; }
-.menu { position: absolute; z-index: 8; top: 68px; left: max(16px, env(safe-area-inset-left, 0px)); min-width: 250px; max-width: min(340px, calc(100% - 32px)); padding: 8px; border-radius: 20px; color: var(--glass-ink); background-color: var(--menu-fill); box-shadow: var(--glass-rim), 0 14px 38px rgba(0, 0, 0, .4); -webkit-backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); }
-.menu button { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 16px; padding: 11px 12px; border-radius: 12px; text-align: left; font: 500 15px/1.2 var(--body); transition: background-color .15s; }
+.menu { position: absolute; z-index: 8; top: 68px; left: max(16px, env(safe-area-inset-left, 0px)); min-width: 270px; max-width: min(360px, calc(100% - 32px)); max-height: calc(100% - 84px); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; cursor: default; padding: 8px; border-radius: 20px; color: var(--glass-ink); background-color: var(--menu-fill); box-shadow: var(--glass-rim), 0 14px 38px rgba(0, 0, 0, .4); -webkit-backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); }
+.menu button { display: flex; width: 100%; align-items: center; gap: 10px; padding: 10px 12px 10px calc(12px + var(--d, 0) * 20px); border-radius: 12px; text-align: left; font: 400 15px/1.2 var(--body); transition: background-color .15s; }
+.menu button span { flex: 1; min-width: 0; }
+.menu button.way { font-weight: 500; }
+/* pallino: vuoto se la scena non è ancora stata vista, pieno se è già vista */
+.menu .pip { flex: none; width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 2px rgba(17, 32, 31, .45); }
+.menu button.seen .pip { background-color: #0d7a70; box-shadow: none; }
 .menu button:hover { background-color: rgba(255, 255, 255, .55); }
-.menu button[aria-current="true"] { background-color: rgba(255, 255, 255, .42); }
+.menu button[aria-current="true"] { background-color: rgba(255, 255, 255, .6); font-weight: 600; }
 .menu button[aria-current="true"]::after { content: "✓"; font-weight: 600; }
 
 /* ---------- blocco di testo ---------- */
@@ -225,7 +252,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .head h1 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(25px, 3vw, 35px); }
 .mark.go .tag { font-style: normal; }
 @media (min-width: 641px) { :root { --tag-size: 13.5px; } }
-.menu button { font-weight: 700; }
+.menu button[aria-current="true"], .crumb.here { font-weight: 700; }
 </style>
 </head>
 <body>
@@ -236,14 +263,12 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
     <div class="shade" aria-hidden="true"></div>
     <div class="marks" id="marks" role="group" aria-label="Punti da esplorare"></div>
     <div class="bar">
-      <div class="pill" id="nav" hidden>
-        <button type="button" id="btnPath" aria-haspopup="menu" aria-expanded="false" aria-controls="menu" aria-label="Percorso seguito">
+      <nav class="trail" id="nav" aria-label="Dove sei">
+        <button type="button" class="pill round" id="btnPath" aria-haspopup="menu" aria-expanded="false" aria-controls="menu" aria-label="Tutte le scene">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.9" fill="currentColor"/><circle cx="12" cy="12" r="1.9" fill="currentColor"/><circle cx="19" cy="12" r="1.9" fill="currentColor"/></svg>
         </button>
-        <button type="button" id="btnBack" aria-label="Torna alla scena precedente">
-          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M7.5 10.5h6"/></svg>
-        </button>
-      </div>
+        <ol class="crumbs" id="crumbs"></ol>
+      </nav>
       <span class="grow"></span>
       <div class="pill">
         <span class="count" id="count"></span>
@@ -252,7 +277,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
         </button>
       </div>
     </div>
-    <div class="menu" id="menu" role="menu" aria-label="Percorso seguito" hidden></div>
+    <div class="menu" id="menu" role="menu" aria-label="Tutte le scene" hidden></div>
   </div>
   <section class="panel" id="panel" aria-live="polite">
     <div class="panel-in">
@@ -276,7 +301,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
   const $ = (id) => document.getElementById(id);
   const stage = $('stage'), marks = $('marks'), panel = $('panel'), menu = $('menu');
-  const btnPath = $('btnPath'), btnBack = $('btnBack'), btnFull = $('btnFull'), btnFold = $('btnFold');
+  const btnPath = $('btnPath'), btnFull = $('btnFull'), btnFold = $('btnFold');
   const layers = [$('layerA'), $('layerB')];
   const pic = (i) => layers[i].firstElementChild;
   const img = (i) => pic(i).firstElementChild;
@@ -309,6 +334,15 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   const parent = {};
   ids.forEach((id) => (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai] && !parent[p.vai]) parent[p.vai] = { id, p }; }));
   const chainTo = (id) => { const out = [id]; while (parent[out[0]] && out.length < 50) out.unshift(parent[out[0]].id); return out; };
+  // l'albero delle scene, nell'ordine dei punti: serve al menu «Tutte le scene»
+  const tree = [], placed = new Set();
+  (function walk(id, d) {
+    if (placed.has(id)) return;
+    placed.add(id);
+    tree.push({ id, d });
+    (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai] && parent[p.vai] && parent[p.vai].id === id) walk(p.vai, d + 1); });
+  })(D.radice, 0);
+  ids.forEach((id) => { if (!placed.has(id)) tree.push({ id, d: 0 }); });
 
   let front = 0, path = [D.radice], cam = { cx: .5, cy: .5, z: 1 }, busy = false, wanted = null;
 
@@ -538,6 +572,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   stage.addEventListener('pointerup', release);
   stage.addEventListener('pointercancel', release);
   stage.addEventListener('wheel', (e) => {
+    if (e.target.closest('.menu')) return;             // dentro il menu la rotella scorre l'elenco
     if (hosted() && !e.ctrlKey && !e.metaKey) return; // la rotella fa scorrere la pagina del libro
     e.preventDefault();
     if (busy) return;
@@ -583,9 +618,35 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   }
   const applyTint = (id) => { if (tints[id]) $('app').style.setProperty('--tint', tints[id]); };
 
+  /* ---------- percorso in alto a sinistra: le scene che contengono questa, poi questa ---------- */
+  const CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>';
+  function setTrail(id) {
+    const ch = chainTo(id), ol = $('crumbs');
+    ol.textContent = '';
+    ch.forEach((n, i) => {
+      const last = i === ch.length - 1;
+      const li = document.createElement('li'), el = document.createElement(last ? 'span' : 'button'), t = document.createElement('span');
+      el.className = 'pill crumb' + (last ? ' here' : '');
+      t.className = 't';
+      t.textContent = N[n].titolo;
+      el.appendChild(t);
+      if (last) el.setAttribute('aria-current', 'page');
+      else {
+        el.type = 'button';
+        el.setAttribute('aria-label', 'Torna a: ' + N[n].titolo);
+        el.insertAdjacentHTML('beforeend', CHEV);
+        el.addEventListener('click', () => goTo(n));
+        if (i < ch.length - 2) li.className = 'far';      // su uno schermo stretto resta solo la scena subito sopra
+      }
+      li.appendChild(el);
+      ol.appendChild(li);
+    });
+  }
+
   /* ---------- pannello ---------- */
   function setText(id) {
     const n = N[id];
+    setTrail(id);
     $('title').textContent = n.titolo;
     $('text').textContent = n.testo;
     const ch = $('chain');
@@ -607,9 +668,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
     }
   }
   function setChrome() {
-    $('nav').hidden = path.length < 2;
     const c = $('count');
-    c.textContent = `Scoperte ${seen.size}/${ids.length}`;
+    c.textContent = '';
+    const w = document.createElement('span');
+    w.className = 'w';
+    w.textContent = 'Scoperte ';
+    c.append(w, `${seen.size}/${ids.length}`);
+    c.setAttribute('aria-label', `Scene scoperte: ${seen.size} su ${ids.length}`);
     c.classList.toggle('all', seen.size === ids.length);
   }
   function arrive() {
@@ -719,20 +784,36 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   }
   function openMenu() {
     menu.textContent = '';
-    path.forEach((id) => {
-      const b = document.createElement('button');
+    const open = new Set(path);
+    let here = null;
+    tree.forEach(({ id, d }) => {
+      const b = document.createElement('button'), pip = document.createElement('i'), t = document.createElement('span');
       b.type = 'button';
       b.setAttribute('role', 'menuitem');
-      b.textContent = N[id].titolo;
-      if (id === cur()) b.setAttribute('aria-current', 'true');
+      b.className = (seen.has(id) ? 'seen' : '') + (open.has(id) ? ' way' : '');
+      b.style.setProperty('--d', Math.min(d, 4));
+      pip.className = 'pip';
+      pip.setAttribute('aria-hidden', 'true');
+      t.textContent = N[id].titolo;
+      b.append(pip, t);
+      b.setAttribute('aria-label', N[id].titolo + (id === cur() ? ' (sei qui)' : seen.has(id) ? ' (già vista)' : ''));
+      if (id === cur()) { b.setAttribute('aria-current', 'true'); here = b; }
       b.addEventListener('click', () => { closeMenu(); goTo(id); });
       menu.appendChild(b);
     });
     menu.hidden = false;
     btnPath.setAttribute('aria-expanded', 'true');
+    if (here) { here.scrollIntoView({ block: 'nearest' }); here.focus({ preventScroll: true }); }
   }
+  // dentro il menu: frecce, Inizio e Fine per spostarsi tra le scene
+  menu.addEventListener('keydown', (e) => {
+    const items = [...menu.querySelectorAll('button')], i = items.indexOf(document.activeElement);
+    const to = e.key === 'ArrowDown' ? i + 1 : e.key === 'ArrowUp' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? items.length - 1 : null;
+    if (to === null) return;
+    e.preventDefault();
+    items[(to + items.length) % items.length].focus();
+  });
   btnPath.addEventListener('click', (e) => { e.stopPropagation(); if (menu.hidden) openMenu(); else closeMenu(); });
-  btnBack.addEventListener('click', () => { if (path.length > 1) goTo(path[path.length - 2]); });
   document.addEventListener('click', (e) => { if (!menu.hidden && !e.target.closest('.menu')) closeMenu(); });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
