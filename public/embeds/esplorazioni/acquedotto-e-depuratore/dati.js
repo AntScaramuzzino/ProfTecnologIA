@@ -80,8 +80,10 @@ window.ESPLORAZIONE = {
       alt: "Sala dei filtri: una fila di vasche rettangolari piene d'acqua limpida, sul cui fondo si vede il letto di sabbia; lungo la parete grossi tubi blu con valvole.",
       fuoco: [60, 50],
       fasi: [1],
+      punti: [
+        { x: 70, y: 62, etichetta: "Letto di sabbia", vai: "sabbia" }
+      ],
       note: [
-        { x: 70, y: 62, etichetta: "Letto di sabbia", testo: "Lo strato di sabbia che fa da filtro. L'acqua lo attraversa dall'alto verso il basso e lascia tra i granelli le particelle più fini." },
         { x: 84, y: 27, etichetta: "Tubi e valvole", testo: "Portano l'acqua ai filtri e la raccolgono dopo il passaggio. Aprendo e chiudendo le valvole si inverte il flusso per lavare il filtro." }
       ]
     },
@@ -93,9 +95,11 @@ window.ESPLORAZIONE = {
       alt: "Un grosso cilindro d'acciaio con un oblò di vetro, dietro cui si vedono lampade accese di luce blu-viola immerse nell'acqua; ai lati tubi blu con valvole.",
       fuoco: [50, 45],
       fasi: [1],
+      punti: [
+        { x: 50, y: 46, etichetta: "Lampade a raggi ultravioletti", verso: "giu", vai: "lampada" }
+      ],
       note: [
-        { x: 11, y: 27, etichetta: "Valvola", testo: "Apre, chiude o regola il passaggio dell'acqua nel tubo. Serve anche a isolare un tratto durante la manutenzione." },
-        { x: 50, y: 46, etichetta: "Lampade a raggi ultravioletti", verso: "giu", testo: "Tubi che emettono luce ultravioletta, invisibile ai nostri occhi. L'acqua scorre accanto alle lampade e viene disinfettata in pochi secondi." }
+        { x: 11, y: 27, etichetta: "Valvola", testo: "Apre, chiude o regola il passaggio dell'acqua nel tubo. Serve anche a isolare un tratto durante la manutenzione." }
       ]
     },
 
@@ -194,6 +198,9 @@ window.ESPLORAZIONE = {
       alt: "Lunga vasca di calcestruzzo piena d'acqua marrone che ribolle di bollicine; lungo il bordo sinistro un grosso tubo dell'aria con diramazioni che scendono nella vasca.",
       fuoco: [50, 50],
       fasi: [5],
+      punti: [
+        { x: 58, y: 38, etichetta: "Fango attivo", vai: "fiocco" }
+      ],
       note: [
         { x: 13, y: 21, etichetta: "Tubo dell'aria", testo: "Porta sul fondo della vasca l'aria spinta da grandi compressori. Di solito è la parte del depuratore che consuma più elettricità." },
         { x: 62, y: 52, etichetta: "Bolle d'aria", testo: "Salendo, le bolle cedono ossigeno all'acqua e la tengono in movimento, così i batteri incontrano di continuo lo sporco di cui si nutrono." }
@@ -210,6 +217,102 @@ window.ESPLORAZIONE = {
       note: [
         { x: 72, y: 33, etichetta: "Ponte girevole", testo: "Gira piano attorno al centro della vasca. Sul fondo, le sue lame spingono il fango verso lo scarico centrale." },
         { x: 76, y: 69, etichetta: "Uscita dell'acqua pulita", testo: "L'acqua limpida trabocca dal bordo in un canale che corre tutto intorno alla vasca, e prosegue verso l'uscita dell'impianto." }
+      ]
+    },
+    sabbia: {
+      titolo: "Il letto di sabbia",
+      testo: "Visto di lato, il filtro è fatto a strati: sopra la sabbia fine, sotto la ghiaia che la sostiene. L'acqua scende piano e lo sporco resta nei primi centimetri di sabbia, che diventano scuri. Quando il filtro è intasato lo si lava facendo risalire acqua pulita dal basso.",
+      img: "img/sabbia.webp",
+      alt: "Sezione di un filtro vista attraverso un vetro: l'acqua entra dall'alto, attraversa uno spesso strato di sabbia chiara, macchiata di scuro in alto, e poi uno strato di ghiaia.",
+      fuoco: [50, 45],
+      fasi: [1],
+      punti: [
+        { x: 56, y: 38, etichetta: "Tra un granello e l'altro", vai: "pori" }
+      ],
+      note: [
+        { x: 30, y: 17, etichetta: "Sporco trattenuto", testo: "Le particelle fermate dalla sabbia si accumulano in alto, dove l'acqua entra. È lo strato che il lavaggio porta via." },
+        { x: 72, y: 84, etichetta: "Ghiaia", testo: "Sassolini più grossi che fanno da sostegno: lasciano passare l'acqua filtrata e impediscono alla sabbia di finire nei tubi." }
+      ]
+    },
+    pori: {
+      titolo: "Tra un granello e l'altro",
+      testo: "Ingranditi, i granelli di sabbia sono sassi trasparenti di quarzo. Tra l'uno e l'altro restano passaggi stretti e tortuosi: l'acqua ci passa, le particelle di terra si incastrano o restano attaccate ai granelli. Un filtro non è un setaccio: ferma anche particelle più piccole dei suoi passaggi.",
+      img: "img/pori.webp",
+      alt: "Forte ingrandimento di granelli di sabbia bagnati: grossi grani trasparenti e arrotondati, con particelle brune incastrate negli spazi tra l'uno e l'altro.",
+      fuoco: [50, 50],
+      fasi: [1],
+      note: [
+        { x: 48, y: 44, etichetta: "Granello di quarzo", testo: "Un frammento di roccia durissima, arrotondato dall'acqua. È grande meno di un millimetro." },
+        { x: 34, y: 28, etichetta: "Particelle trattenute", lato: "sx", testo: "Argilla, limo e resti organici rimasti dopo la sedimentazione. Sono ciò che rendeva l'acqua torbida." }
+      ]
+    },
+    lampada: {
+      titolo: "La lampada a raggi ultravioletti",
+      testo: "La lampada è un tubo di quarzo, un vetro speciale che lascia passare i raggi ultravioletti. Dentro, una scarica elettrica in un vapore di mercurio produce luce UV-C, invisibile ai nostri occhi: il bagliore viola è solo una piccola parte della luce emessa. L'acqua le scorre intorno e in pochi secondi è disinfettata, senza aggiungere sostanze.",
+      img: "img/lampada.webp",
+      alt: "Un tubo d'acciaio aperto di lato: al centro, immersa nell'acqua, una lunga lampada tubolare accesa di luce viola; a sinistra il suo attacco metallico.",
+      fuoco: [55, 48],
+      fasi: [1],
+      punti: [
+        { x: 62, y: 64, etichetta: "Nell'acqua: un batterio", vai: "batterio" }
+      ],
+      note: [
+        { x: 70, y: 45, etichetta: "Tubo di quarzo", verso: "giu", testo: "Il vetro comune fermerebbe i raggi ultravioletti; il quarzo li lascia uscire. Va tenuto pulito: le incrostazioni fanno ombra." },
+        { x: 21, y: 46, etichetta: "Attacco elettrico", verso: "giu", testo: "Tiene ferma la lampada e le porta la corrente, restando a tenuta d'acqua." }
+      ]
+    },
+    batterio: {
+      titolo: "Un batterio sotto i raggi UV",
+      testo: "È un'illustrazione: un batterio è lungo pochi millesimi di millimetro. È una cellula sola, con una parete che la protegge e, all'interno, il DNA con le istruzioni per vivere e moltiplicarsi. I raggi ultravioletti attraversano la parete e colpiscono proprio il DNA.",
+      img: "img/batterio.webp",
+      alt: "Illustrazione: un batterio a forma di bastoncino, semitrasparente, con un groviglio di filamenti di DNA all'interno; dall'alto a sinistra arrivano raggi di luce viola.",
+      fuoco: [50, 48],
+      fasi: [1],
+      punti: [
+        { x: 50, y: 47, etichetta: "Il DNA", vai: "dna" }
+      ],
+      note: [
+        { x: 30, y: 30, etichetta: "Parete della cellula", lato: "sx", testo: "L'involucro che tiene insieme la cellula. I raggi UV la attraversano senza romperla: il danno avviene dentro." },
+        { x: 14, y: 10, etichetta: "Raggi ultravioletti", testo: "Luce invisibile, con più energia di quella che vediamo. È della stessa famiglia dei raggi del Sole che scottano la pelle." }
+      ]
+    },
+    dna: {
+      titolo: "Il DNA danneggiato",
+      testo: "È un'illustrazione. Il DNA è una lunghissima scala a chiocciola: i suoi pioli, in sequenza, sono le istruzioni della cellula. I raggi ultravioletti saldano tra loro due pioli vicini e la scala si deforma. Il batterio non riesce più a copiare il proprio DNA, quindi non può moltiplicarsi: è reso innocuo.",
+      img: "img/dna.webp",
+      alt: "Illustrazione: una doppia elica di DNA attraversa l'immagine in diagonale; al centro, dove arrivano raggi viola, due pioli sono fusi e l'elica è deformata.",
+      fuoco: [50, 45],
+      fasi: [1],
+      note: [
+        { x: 50, y: 44, etichetta: "Punto danneggiato", verso: "giu", testo: "Qui due pioli vicini si sono legati tra loro invece che con quelli di fronte. In quel punto la copia del DNA si blocca." },
+        { x: 82, y: 22, etichetta: "Doppia elica", testo: "Due filamenti avvolti l'uno sull'altro e uniti dai pioli. È fatta così in tutti gli esseri viventi." }
+      ]
+    },
+    fiocco: {
+      titolo: "Il fango attivo",
+      testo: "Un bicchiere d'acqua preso dalla vasca: i grumi marroni sono fiocchi di fango attivo. Non è sporco qualsiasi: ogni fiocco è una colonia di milioni di batteri, tenuti insieme da una sostanza gelatinosa che producono loro stessi. Lasciati fermi, i fiocchi scendono sul fondo e l'acqua sopra resta più limpida.",
+      img: "img/fiocco.webp",
+      alt: "Un bicchiere da laboratorio appoggiato su una ringhiera, pieno d'acqua con fiocchi marroni in sospensione; sullo sfondo, sfocate, le vasche del depuratore.",
+      fuoco: [48, 48],
+      fasi: [5],
+      punti: [
+        { x: 46, y: 42, etichetta: "Un fiocco al microscopio", vai: "microrganismi" }
+      ],
+      note: [
+        { x: 82, y: 45, etichetta: "Vasca di ossidazione", testo: "Il campione viene da qui: l'aria soffiata dal fondo tiene i fiocchi in sospensione e dà ossigeno ai batteri." }
+      ]
+    },
+    microrganismi: {
+      titolo: "I microrganismi del fango",
+      testo: "Al microscopio il fiocco è un ammasso di batteri: sono loro a nutrirsi delle sostanze organiche sciolte nell'acqua. Attorno vivono organismi più grandi, i protozoi, che mangiano i batteri rimasti liberi e rendono l'acqua più limpida. I tecnici del depuratore li osservano spesso: quali protozoi ci sono dice se l'impianto sta lavorando bene.",
+      img: "img/microrganismi.webp",
+      alt: "Immagine al microscopio: al centro un ammasso bruno e irregolare di batteri; a destra, attaccati al bordo, alcuni protozoi a forma di campana con il gambo; a sinistra tre protozoi ovali liberi.",
+      fuoco: [50, 50],
+      fasi: [5],
+      note: [
+        { x: 48, y: 54, etichetta: "Fiocco di batteri", verso: "giu", testo: "Migliaia di batteri incollati tra loro. Uniti in fiocchi pesano abbastanza da depositarsi nella vasca successiva." },
+        { x: 79, y: 38, etichetta: "Vorticelle", testo: "Protozoi a forma di campana, attaccati al fiocco con un gambo. Con le ciglia creano un vortice che porta loro i batteri." },
+        { x: 17, y: 25, etichetta: "Protozoi che nuotano", testo: "Si spostano battendo le ciglia che li ricoprono e cacciano i batteri liberi nell'acqua." }
       ]
     }
   }

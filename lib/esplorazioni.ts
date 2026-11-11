@@ -1,4 +1,4 @@
-// Registro delle esplorazioni immersive: pagine a zoom progressivo in public/embeds/esplorazioni/<slug>/
+// Registro delle esplorazioni immersive: pagine a zoom progressivo (dal macro al micro, fino a 5-6 livelli) in public/embeds/esplorazioni/<slug>/
 // - index.html: motore comune (uguale per tutte), dati.js: scene, testi e punti, img/: una immagine per scena
 // - anteprima.webp: scena di partenza a 640×360, usata nella scheda della pagina Laboratori
 // Per aggiungerne una: copiare la cartella, riscrivere dati.js, sostituire le immagini e aggiungere una riga qui.
@@ -43,9 +43,9 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
     titolo: "Dalla sorgente al depuratore",
     classe: 2,
     area: "AMB",
-    scene: 13,
+    scene: 20,
     descrizione:
-      "Il ciclo artificiale dell'acqua visto dai suoi impianti: opera di presa, filtri a sabbia, serbatoio, fognatura e vasche del depuratore.",
+      "Il ciclo artificiale dell'acqua visto dai suoi impianti: opera di presa, filtri a sabbia, serbatoio, fognatura e vasche del depuratore. Si scende fino ai granelli di sabbia, ai batteri e al DNA.",
   },
   {
     slug: "centrale-termoelettrica",
@@ -63,9 +63,9 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
     titolo: "La centrale idroelettrica",
     classe: 3,
     area: "ENE",
-    scene: 13,
+    scene: 18,
     descrizione:
-      "Dalla diga alla presa di casa: condotte forzate, turbina Pelton, alternatore, trasformatore e linee ad alta tensione.",
+      "Dalla diga alla presa di casa: condotte forzate, turbina Pelton, alternatore, trasformatore e linee ad alta tensione. Si scende fino ai cristalli dell'acciaio e agli elettroni nel rame.",
   },
 ];
 

@@ -129,9 +129,11 @@ window.ESPLORAZIONE = {
       alt: "Primo piano: un getto d'acqua esce da un ugello d'acciaio e colpisce le pale a doppio cucchiaio della ruota, dividendosi in due ventagli di spruzzi.",
       fuoco: [52, 45],
       fasi: [1, 2],
+      punti: [
+        { x: 73, y: 37, etichetta: "Una pala da vicino", lato: "sx", vai: "pala" }
+      ],
       note: [
-        { x: 12, y: 41, etichetta: "Ugello", testo: "Qui la pressione dell'acqua diventa velocità. Più alto è il salto, più veloce è il getto: negli impianti di alta montagna può superare i 100 metri al secondo." },
-        { x: 73, y: 37, etichetta: "Pala a doppio cucchiaio", lato: "sx", testo: "Uno spigolo al centro taglia il getto in due metà, che scivolano nelle due conche e tornano quasi indietro. Deviando l'acqua così, la pala ne riceve la spinta più forte." }
+        { x: 12, y: 41, etichetta: "Ugello", testo: "Qui la pressione dell'acqua diventa velocità. Più alto è il salto, più veloce è il getto: negli impianti di alta montagna può superare i 100 metri al secondo." }
       ]
     },
 
@@ -142,8 +144,10 @@ window.ESPLORAZIONE = {
       alt: "Spaccato di un alternatore: al centro il rotore con bobine di rame attorno ai poli, montato sull'albero; tutt'intorno l'anello dello statore rivestito di avvolgimenti di rame.",
       fuoco: [52, 50],
       fasi: [2, 3],
+      punti: [
+        { x: 30, y: 22, etichetta: "Avvolgimenti dello statore", vai: "avvolgimento" }
+      ],
       note: [
-        { x: 30, y: 22, etichetta: "Statore", testo: "La parte fissa, ad anello. Nei suoi avvolgimenti di rame nasce la corrente elettrica che esce dalla centrale." },
         { x: 52, y: 56, etichetta: "Rotore", verso: "giu", testo: "La parte che gira, trascinata dalla turbina. Porta gli elettromagneti che creano il campo magnetico." },
         { x: 56, y: 13, etichetta: "Albero", verso: "giu", testo: "Arriva dalla turbina e fa girare il rotore. È il collegamento tra la macchina che produce movimento e quella che produce elettricità." }
       ]
@@ -199,6 +203,75 @@ window.ESPLORAZIONE = {
       note: [
         { x: 21, y: 45, etichetta: "Bocche di scarico", testo: "Le aperture da cui l'acqua esce dalla centrale dopo aver attraversato le turbine. Ha ceduto quasi tutta la sua energia e scorre lenta." },
         { x: 80, y: 44, etichetta: "Fiume", testo: "L'acqua torna nel suo corso naturale e prosegue verso valle, dove può servire ad altre centrali, ai campi o agli acquedotti." }
+      ]
+    },
+    pala: {
+      titolo: "Una pala da vicino",
+      testo: "Ogni pala è un blocco d'acciaio inossidabile lucidato a specchio. Lo spigolo al centro taglia il getto in due; le due conche lo accompagnano in curva e lo rimandano indietro. L'acqua lascia la pala quasi ferma: la sua energia è passata alla ruota.",
+      img: "img/pala.webp",
+      alt: "Primo piano di una pala d'acciaio a doppio cucchiaio: il getto d'acqua colpisce lo spigolo centrale e si divide in due veli che girano dentro le due conche.",
+      fuoco: [50, 50],
+      fasi: [1, 2],
+      punti: [
+        { x: 73, y: 80, etichetta: "L'acciaio al microscopio", vai: "acciaio" }
+      ],
+      note: [
+        { x: 50, y: 38, etichetta: "Spigolo centrale", testo: "È affilato come una lama, per tagliare il getto senza frenarlo. È anche il punto che si consuma di più: l'acqua porta con sé sabbia finissima." },
+        { x: 27, y: 42, etichetta: "Conca", lato: "sx", testo: "La sua curva fa fare al getto quasi un'inversione a U. Più l'acqua viene deviata, più spinta cede alla pala." }
+      ]
+    },
+    acciaio: {
+      titolo: "L'acciaio al microscopio",
+      testo: "Lucidato e ingrandito centinaia di volte, l'acciaio non è uniforme: è un mosaico di grani, piccoli cristalli incastrati l'uno nell'altro. In ogni grano gli atomi sono allineati in una direzione diversa. Dalla dimensione dei grani dipende quanto il metallo è duro e quanto resiste all'usura.",
+      img: "img/acciaio.webp",
+      alt: "Immagine al microscopio di una superficie d'acciaio: un mosaico di grani poligonali irregolari, grigi e azzurri, separati da sottili linee scure.",
+      fuoco: [50, 50],
+      fasi: [2],
+      note: [
+        { x: 52, y: 45, etichetta: "Grano", testo: "Un singolo cristallo di metallo. È grande pochi centesimi di millimetro: per vederlo serve il microscopio." },
+        { x: 76, y: 22, etichetta: "Bordo di grano", testo: "La linea scura dove due cristalli si incontrano. Grani piccoli vogliono dire tanti bordi, e tanti bordi rendono il metallo più duro." }
+      ]
+    },
+    avvolgimento: {
+      titolo: "Gli avvolgimenti dello statore",
+      testo: "Lo statore è un anello di lamierini d'acciaio con tante scanalature, le cave. In ogni cava è infilata una barra di rame avvolta nel nastro isolante. Quando i poli del rotore le passano davanti, nelle barre nasce la corrente.",
+      img: "img/avvolgimento.webp",
+      alt: "Interno di uno statore: a sinistra il pacco di lamierini d'acciaio con le cave; ne escono file di grosse barre di rame fasciate di nastro scuro, con le estremità di rame lucido.",
+      fuoco: [55, 45],
+      fasi: [3],
+      punti: [
+        { x: 71, y: 20, etichetta: "Dentro il rame", vai: "rame" }
+      ],
+      note: [
+        { x: 12, y: 45, etichetta: "Lamierini d'acciaio", testo: "Fogli sottili impilati a migliaia e isolati l'uno dall'altro. Guidano il campo magnetico e, sottili come sono, si scaldano meno di un blocco pieno." },
+        { x: 47, y: 41, etichetta: "Nastro isolante", testo: "Impedisce alla corrente di passare da una barra all'altra o al ferro dello statore. Deve reggere migliaia di volt." }
+      ]
+    },
+    rame: {
+      titolo: "Dentro il conduttore",
+      testo: "Tagliato di netto, un conduttore mostra che cosa c'è sotto l'isolante: tanti fili di rame stretti l'uno contro l'altro. Il rame è uno dei migliori conduttori che esistano: la corrente lo attraversa incontrando pochissima resistenza. Per questo quasi tutti i cavi elettrici sono di rame o di alluminio.",
+      img: "img/rame.webp",
+      alt: "Sezione di un grosso conduttore elettrico: decine di fili di rame lucido stretti insieme dentro una guaina isolante nera.",
+      fuoco: [50, 52],
+      fasi: [3],
+      punti: [
+        { x: 52, y: 48, etichetta: "Dentro il metallo: gli elettroni", vai: "elettroni" }
+      ],
+      note: [
+        { x: 26, y: 40, etichetta: "Isolante", lato: "sx", testo: "Uno strato che non lascia passare la corrente. Tiene l'elettricità dentro il rame e protegge chi tocca il cavo." },
+        { x: 63, y: 72, etichetta: "Fili di rame", testo: "Tanti fili sottili al posto di uno solo grosso: così il conduttore si può piegare senza spezzarsi." }
+      ]
+    },
+    elettroni: {
+      titolo: "Gli elettroni nel rame",
+      testo: "È un'illustrazione: a questa scala nessuna fotografia è possibile. Gli atomi di rame sono disposti in file ordinate e ognuno lascia libero un elettrone. Sono questi elettroni liberi, spinti tutti insieme, a formare la corrente elettrica. La corrente della centrale è alternata: in Europa gli elettroni vanno avanti e indietro 50 volte al secondo.",
+      img: "img/elettroni.webp",
+      alt: "Illustrazione dell'interno del rame: grandi sfere color rame in file ordinate, gli atomi, e tra loro tanti puntini azzurri luminosi, gli elettroni liberi.",
+      fuoco: [50, 50],
+      fasi: [3],
+      note: [
+        { x: 37, y: 22, etichetta: "Atomo di rame", testo: "Resta al suo posto nel reticolo: al massimo vibra, e vibra di più quando il metallo si scalda." },
+        { x: 16, y: 34, etichetta: "Elettrone libero", testo: "Molto più piccolo dell'atomo e libero di spostarsi tra un atomo e l'altro. Nel disegno è ingrandito per poterlo vedere." }
       ]
     }
   }
