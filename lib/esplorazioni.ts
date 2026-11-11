@@ -48,6 +48,16 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
       "Il ciclo artificiale dell'acqua visto dai suoi impianti: opera di presa, filtri a sabbia, serbatoio, fognatura e vasche del depuratore. Si scende fino ai granelli di sabbia, ai batteri e al DNA.",
   },
   {
+    slug: "bicicletta",
+    mcId: "MC-ENE-3-01",
+    titolo: "La bicicletta",
+    classe: 3,
+    area: "ENE",
+    scene: 16,
+    descrizione:
+      "Le macchine semplici dentro una bicicletta: pedivella, catena e pignoni, leva del freno, ruota e viti. Si scende fino alle sfere dei cuscinetti e all'attrito visto al microscopio.",
+  },
+  {
     slug: "centrale-termoelettrica",
     mcId: "MC-ENE-3-02",
     titolo: "La centrale termoelettrica",

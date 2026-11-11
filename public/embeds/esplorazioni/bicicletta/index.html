@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>La bicicletta</title>
+<meta name="description" content="Esplorazione immersiva: leve, catena, freni e viti. Le macchine semplici dentro una bicicletta.">
+<meta name="theme-color" content="#0a1113">
+<script>
+// i percorsi di immagini e dati sono relativi: l'indirizzo deve finire con / o con index.html
+if (!/(\/|\.html?)$/.test(location.pathname)) location.replace(location.pathname + '/' + location.search + location.hash);
+</script>
+<link rel="preload" as="image" href="img/bici.webp">
+<style>
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(../../lab/_fonts/atkinson-hyperlegible-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(../../lab/_fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
+/* Layout: una scena fotografica a tutto schermo. I punti stanno sopra l'immagine,
+   il testo in basso a sinistra su una velatura che sfuma (sotto l'immagine quando lo schermo è verticale). */
+:root {
+  --bg: #0a1113;
+  --ink: #f3f7f5;
+  --ink-soft: rgba(243, 247, 245, .9);
+  --ink-dim: rgba(243, 247, 245, .6);
+  --glass-ink: #11201f;
+  --line: rgba(255, 255, 255, .24);
+  --water: #63d6cc;
+  --volt: #f4b83a;
+  --volt-ink: #1c1503;
+
+  /* Vetro chiaro (etichette cliccabili, comandi): lascia passare l'immagine, sfocata e schiarita */
+  --glass-fill: rgba(236, 241, 238, .68);
+  --glass-fill-seen: rgba(236, 241, 238, .58);
+  --glass-fill-hot: rgba(248, 251, 249, .95);
+  --glass-fx: blur(16px) saturate(1.5) brightness(1.1);
+  --glass-rim: inset 0 1px 0 rgba(255, 255, 255, .62), inset 0 0 0 1px rgba(255, 255, 255, .26);
+  --glass-drop: 0 6px 22px rgba(0, 0, 0, .26);
+  --menu-fill: rgba(240, 245, 242, .84);
+  /* Vetro scuro (nomi delle parti): scurisce quello che ha dietro, così il testo bianco regge anche sul cielo */
+  --smoke-fill: rgba(8, 14, 16, .5);
+  --smoke-fx: blur(12px) saturate(1.2) brightness(.72);
+  /* Velatura del testo: il motore la tinge con il colore della scena (vedi tint() in app.js) */
+  --tint: 6, 12, 14;
+
+  --display: "Barlow Semi Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+/* Senza sfocatura dello sfondo, o se chi guarda chiede meno trasparenza o più contrasto: superfici quasi piene */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root { --glass-fill: rgba(238, 244, 241, .93); --glass-fill-seen: rgba(238, 244, 241, .86); --menu-fill: rgba(240, 245, 242, .97); --smoke-fill: rgba(8, 14, 16, .82); }
+}
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  :root { --glass-fill: rgba(238, 244, 241, .95); --glass-fill-seen: rgba(238, 244, 241, .88); --menu-fill: rgba(240, 245, 242, .98); --smoke-fill: rgba(8, 14, 16, .86); --glass-fx: none; --smoke-fx: none; }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 16px/1.5 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+[hidden] { display: none !important; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--water); outline-offset: 2px; }
+
+.app { position: relative; height: 100%; display: flex; flex-direction: column; overflow: hidden; background: var(--bg); }
+
+/* ---------- scena ---------- */
+.stage { position: relative; flex: 1 1 auto; min-height: 0; overflow: hidden; touch-action: none; cursor: grab; user-select: none; -webkit-user-select: none; }
+.stage.drag { cursor: grabbing; }
+.layer { position: absolute; inset: 0; overflow: hidden; opacity: 0; pointer-events: none; }
+.layer.on { opacity: 1; }
+.pic { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; background: #12191b; }
+.pic img { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; pointer-events: none; color: transparent; }
+.shade { position: absolute; inset: 0 0 auto; height: 110px; z-index: 3; pointer-events: none; background: linear-gradient(to bottom, rgba(6, 12, 14, .34), rgba(6, 12, 14, 0)); }
+
+/* ---------- area sensibile attorno a un punto: una luce leggera quando ci si passa sopra ---------- */
+.glow { position: absolute; left: 0; top: 0; z-index: 4; border-radius: 50%; pointer-events: none; opacity: 0; transition: opacity .22s; background: radial-gradient(closest-side, rgba(255, 255, 255, .44) 0%, rgba(255, 255, 255, .30) 52%, rgba(255, 255, 255, .11) 80%, rgba(255, 255, 255, 0) 100%); }
+.glow.on { opacity: 1; }
+.stage.hot { cursor: pointer; }
+.mark.go.lit .tag { background-color: var(--glass-fill-hot); box-shadow: var(--glass-rim), 0 8px 26px rgba(0, 0, 0, .34); }
+@media (prefers-reduced-motion: reduce) { .glow { transition: none; } }
+
+/* ---------- punti ---------- */
+.marks { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
+/* La dissolvenza è sui singoli pezzi e non sul contenitore: un contenitore semitrasparente spegnerebbe la sfocatura delle etichette */
+.mark .dot, .mark .lead, .mark .tag { transition: opacity .28s, background-color .18s, box-shadow .18s; }
+.marks.hide .mark > * { opacity: 0; }
+.marks.hide * { pointer-events: none !important; }
+.mark { position: absolute; left: 0; top: 0; width: 0; height: 0; --a: -38deg; }
+.mark[data-s="l"][data-v="u"] { --a: -142deg; }
+.mark[data-s="r"][data-v="d"] { --a: 38deg; }
+.mark[data-s="l"][data-v="d"] { --a: 142deg; }
+.mark .dot { position: absolute; border-radius: 50%; }
+.mark .lead { position: absolute; left: 0; top: 0; height: 0; transform-origin: 0 0; transform: rotate(var(--a)) translateX(var(--o)); }
+.mark .tag { position: absolute; white-space: nowrap; border-radius: 999px; }
+
+.mark.go { --o: 18px; }
+.mark.go .dot, .mark.go .tag { pointer-events: auto; }
+.mark.go .dot { left: -14px; top: -14px; width: 28px; height: 28px; border: 5px solid #fff; background: rgba(8, 16, 18, .5); box-shadow: 0 0 0 6px rgba(255, 255, 255, .22), 0 2px 10px rgba(0, 0, 0, .45); }
+.mark.go .dot::after { content: ""; position: absolute; inset: -13px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .75); animation: ping 2.8s ease-out infinite; }
+.mark.go.seen .dot { background: var(--water); }
+.mark.go.seen .dot::after { animation: none; opacity: 0; }
+.mark.go .lead { width: 36px; border-top: 2.5px dotted rgba(255, 255, 255, .95); }
+.mark.go.seen .lead { border-top-color: rgba(255, 255, 255, .7); }
+.mark.go .tag { font: italic 500 var(--tag-size, 14px)/1 var(--mono); padding: 10px 16px; color: var(--glass-ink); background-color: var(--glass-fill); box-shadow: var(--glass-rim), var(--glass-drop); -webkit-backdrop-filter: var(--glass-fx); backdrop-filter: var(--glass-fx); }
+.mark.go.seen .tag { background-color: var(--glass-fill-seen); }
+.mark.go .tag:hover, .mark.go .tag:focus-visible, .mark.go .dot:hover + .lead + .tag { background-color: var(--glass-fill-hot); box-shadow: var(--glass-rim), 0 8px 26px rgba(0, 0, 0, .34); }
+.mark.go[data-s="r"] .tag { left: 39px; }
+.mark.go[data-s="l"] .tag { right: 39px; }
+.mark.go[data-v="u"] .tag { bottom: 25px; }
+.mark.go[data-v="d"] .tag { top: 25px; }
+@keyframes ping { 0% { transform: scale(.55); opacity: .9; } 70%, 100% { transform: scale(1.25); opacity: 0; } }
+
+.mark.note { --o: 9px; }
+.mark.note .dot { left: -5px; top: -5px; width: 10px; height: 10px; background: #fff; box-shadow: 0 0 0 4px rgba(255, 255, 255, .26), 0 1px 6px rgba(0, 0, 0, .5); }
+.mark.note .lead { width: 22px; border-top: 1.5px dotted rgba(255, 255, 255, .9); }
+.mark.note .tag { font: 500 12px/1 var(--mono); padding: 6px 10px; color: var(--ink); background-color: var(--smoke-fill); box-shadow: inset 0 0 0 1px var(--line), inset 0 1px 0 rgba(255, 255, 255, .14); -webkit-backdrop-filter: var(--smoke-fx); backdrop-filter: var(--smoke-fx); }
+.mark.note[data-s="r"] .tag { left: 22px; }
+.mark.note[data-s="l"] .tag { right: 22px; }
+.mark.note[data-v="u"] .tag { bottom: 13px; }
+.mark.note[data-v="d"] .tag { top: 13px; }
+/* nota con una spiegazione: si può toccare, e il testo della scena lascia il posto alla spiegazione */
+.mark.note.tip .dot, .mark.note.tip .tag { pointer-events: auto; cursor: pointer; }
+.mark.note.tip .dot { left: -7px; top: -7px; width: 14px; height: 14px; border: 3px solid #fff; background: rgba(8, 16, 18, .55); box-shadow: 0 0 0 4px rgba(255, 255, 255, .22), 0 1px 6px rgba(0, 0, 0, .5); }
+.mark.note.tip .dot::before { content: ""; position: absolute; inset: -14px; border-radius: 50%; }
+.mark.note.tip .tag:hover, .mark.note.tip .tag:focus-visible, .mark.note.tip .dot:hover + .lead + .tag { background-color: rgba(8, 14, 16, .78); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .5), inset 0 1px 0 rgba(255, 255, 255, .14); }
+.mark.note.sel .dot { background: var(--volt); }
+.mark.note.sel .tag, .mark.note.sel .tag:hover, .mark.note.sel .tag:focus-visible { color: var(--glass-ink); background-color: var(--glass-fill-hot); box-shadow: var(--glass-rim), var(--glass-drop); -webkit-backdrop-filter: none; backdrop-filter: none; }
+/* etichetta dritta sopra o sotto il punto: il motore la usa quando ai lati coprirebbe qualcosa */
+.mark[data-s="c"][data-v="u"] { --a: -90deg; }
+.mark[data-s="c"][data-v="d"] { --a: 90deg; }
+.mark[data-s="c"] .tag { left: 0; transform: translateX(-50%); }
+.mark.go[data-s="c"][data-v="u"] .tag { bottom: 46px; }
+.mark.go[data-s="c"][data-v="d"] .tag { top: 46px; }
+.mark.note[data-s="c"][data-v="u"] .tag { bottom: 26px; }
+.mark.note[data-s="c"][data-v="d"] .tag { top: 26px; }
+
+/* punto fuori dallo schermo: resta un'etichetta sul bordo che porta lì */
+.mark.off .dot, .mark.off .lead { display: none; }
+.mark.go.off .tag { left: auto; right: auto; top: auto; bottom: auto; transform: translate(-50%, -50%); font-style: normal; font-size: 12.5px; padding: 8px 12px; }
+.mark.go.off .tag::before { content: attr(data-arrow); margin-right: 6px; }
+
+/* ---------- spiegazione di una parte, al centro della scena ---------- */
+.tipcard { position: absolute; z-index: 6; top: 50%; transform: translateY(-50%); max-height: calc(100% - 150px); color: var(--ink); text-shadow: 0 1px 3px rgba(0, 0, 0, .55); cursor: default; animation: tipin .26s ease-out; }
+.tipcard::before { content: ""; position: absolute; z-index: -1; inset: -90px -110px; pointer-events: none; background: radial-gradient(closest-side, rgba(var(--tint), .86) 0%, rgba(var(--tint), .74) 45%, rgba(var(--tint), .36) 75%, rgba(var(--tint), 0) 100%); }
+.tipcard h2 { margin: 0; font: 600 clamp(24px, 2.6vw, 34px)/1.1 var(--display); text-wrap: balance; }
+.tipcard p { margin: 10px 0 0; font-size: clamp(16px, 1.3vw, 19px); line-height: 1.5; color: var(--ink-soft); text-wrap: pretty; }
+#btnTipBack { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; margin: 16px 0 0 -4px; padding: 7px 13px 7px 7px; border-radius: 999px; font: 500 13px/1.2 var(--body); color: var(--ink); text-shadow: none; background-color: rgba(255, 255, 255, .14); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .3); transition: background-color .15s; }
+#btnTipBack:hover { background-color: rgba(255, 255, 255, .26); }
+#btnTipBack svg { flex: none; width: 16px; height: 16px; }
+#btnTipBack span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+@keyframes tipin { from { opacity: 0; transform: translateY(calc(-50% + 8px)); } }
+/* con la spiegazione aperta restano in vista solo la parte scelta e la spiegazione */
+.panel { transition: opacity .22s; }
+.app.tipping .panel { opacity: 0; pointer-events: none; }
+.app.tipping .panel-in { pointer-events: none; }
+.app.tipping .mark:not(.sel) > * { opacity: 0; pointer-events: none !important; }
+@media (prefers-reduced-motion: reduce) { .tipcard { animation: none; } .panel { transition: none; } }
+
+/* ---------- condividi ---------- */
+.share { position: absolute; z-index: 8; top: 68px; right: max(16px, env(safe-area-inset-right, 0px)); width: min(380px, calc(100% - 32px)); max-height: calc(100% - 84px); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; cursor: default; padding: 16px; border-radius: 18px; color: var(--glass-ink); background-color: var(--glass-fill-hot); -webkit-backdrop-filter: var(--glass-blur); backdrop-filter: var(--glass-blur); box-shadow: var(--glass-rim), var(--glass-drop); }
+.share[hidden] { display: none; }
+.share label { display: block; margin: 0 0 6px; font: 600 13px/1.2 var(--body); }
+.share .row { display: flex; gap: 8px; align-items: stretch; margin: 0 0 14px; }
+.share input, .share textarea { flex: 1; min-width: 0; padding: 8px 10px; border: 1px solid rgba(17, 32, 31, .28); border-radius: 10px; background: rgba(255, 255, 255, .78); color: #11201f; font: 400 12px/1.4 var(--mono); resize: none; }
+.share .row button { flex: none; align-self: flex-start; padding: 9px 14px; border-radius: 10px; font: 600 13px/1 var(--body); color: #fff; background-color: #0d6b63; transition: background-color .15s; }
+.share .row button:hover { background-color: #0a544e; }
+.share .qr { display: flex; gap: 14px; align-items: center; }
+.share .qr[hidden] { display: none; }
+.share .qr img { flex: none; width: 96px; height: 96px; padding: 6px; border-radius: 8px; background: #fff; }
+.share .qr p { margin: 0; font: 400 13px/1.45 var(--body); }
+.share a { color: #0a544e; font-weight: 600; text-underline-offset: 3px; }
+.share .said { min-height: 1.2em; margin: 10px 0 0; font: 500 12.5px/1.2 var(--body); color: #0a544e; }
+
+/* ---------- comandi ---------- */
+.bar { position: absolute; inset: 0 0 auto; z-index: 7; display: flex; align-items: center; gap: 10px; padding-top: 14px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); pointer-events: none; }
+.bar .grow { flex: 1; }
+.pill { display: flex; align-items: center; gap: 2px; height: 46px; padding: 0 5px; border-radius: 999px; color: var(--glass-ink); background-color: var(--glass-fill); box-shadow: var(--glass-rim), var(--glass-drop); -webkit-backdrop-filter: var(--glass-fx); backdrop-filter: var(--glass-fx); pointer-events: auto; }
+.pill button { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; transition: background-color .15s; }
+.pill button:hover { background-color: rgba(255, 255, 255, .5); }
+.pill svg, #btnFold svg { width: 22px; height: 22px; display: block; }
+/* percorso: il pulsante con tutte le scene, poi le scene che contengono quella aperta, poi quella aperta (in chiaro) */
+.trail { display: flex; align-items: center; gap: 8px; min-width: 0; flex: 0 1 auto; }
+.pill.round { flex: none; width: 46px; padding: 0; justify-content: center; transition: background-color .15s; }
+.pill.round:hover, .pill.round[aria-expanded="true"] { background-color: var(--glass-fill-hot); }
+.crumbs { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 8px; min-width: 0; flex: 0 1 auto; }
+.crumbs li { display: flex; min-width: 0; flex: 0 3 auto; }
+.crumbs li:last-child { flex-shrink: 1; }
+.crumb { min-width: 0; max-width: 17rem; padding: 0 16px; gap: 6px; font: 500 15px/1 var(--body); transition: background-color .15s; }
+.crumb .t { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 1.3; }
+.crumb svg { flex: none; width: 16px; height: 16px; margin-right: -4px; opacity: .75; }
+button.crumb:hover { background-color: var(--glass-fill-hot); }
+.crumb.here { background-color: var(--glass-fill-hot); cursor: default; }
+.trail.measure .crumbs li { flex-shrink: 0; }
+@media (max-width: 640px) {
+  .bar { gap: 8px; }
+  .trail, .crumbs { gap: 6px; }
+  .crumb { padding: 0 14px 0 10px; font-size: 14px; }
+  /* scena stretta: il titolo della scena aperta è già nel testo, qui resta la scena a cui tornare */
+  .crumbs li:last-child { display: none; }
+  .crumb svg { order: -1; transform: scaleX(-1); margin: 0 0 0 -2px; }
+  .count .w { display: none; }
+}
+.count { font: 500 12.5px/1 var(--mono); padding: 0 8px 0 12px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.count.all { color: #0a4f49; }
+.menu { position: absolute; z-index: 8; top: 68px; left: max(16px, env(safe-area-inset-left, 0px)); min-width: 270px; max-width: min(360px, calc(100% - 32px)); max-height: calc(100% - 84px); overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; cursor: default; padding: 8px; border-radius: 20px; color: var(--glass-ink); background-color: var(--menu-fill); box-shadow: var(--glass-rim), 0 14px 38px rgba(0, 0, 0, .4); -webkit-backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); backdrop-filter: blur(22px) saturate(1.5) brightness(1.1); }
+.menu button { display: flex; width: 100%; align-items: center; gap: 10px; padding: 10px 12px 10px calc(12px + var(--d, 0) * 16px); border-radius: 12px; text-align: left; font: 400 15px/1.2 var(--body); transition: background-color .15s; }
+.menu button span { flex: 1; min-width: 0; }
+.menu button.way { font-weight: 500; }
+/* pallino: vuoto se la scena non è ancora stata vista, pieno se è già vista */
+.menu .pip { flex: none; width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 2px rgba(17, 32, 31, .45); }
+.menu button.seen .pip { background-color: #0d7a70; box-shadow: none; }
+.menu button:hover { background-color: rgba(255, 255, 255, .55); }
+.menu button[aria-current="true"] { background-color: rgba(255, 255, 255, .6); font-weight: 600; }
+.menu button[aria-current="true"]::after { content: "✓"; font-weight: 600; }
+
+/* ---------- blocco di testo ---------- */
+/* Il blocco occupa solo l'angolo in basso a sinistra. La velatura è piena dietro il testo
+   e si scioglie verso l'alto e verso destra, così il resto dell'immagine resta pulito. */
+.panel { position: absolute; inset: auto auto 0 0; z-index: 5; width: min(47.75rem, 100%); pointer-events: none; }
+.panel::before {
+  content: ""; position: absolute; z-index: -1; inset: -130px -42% 0 0; pointer-events: none;
+  background: linear-gradient(to top, rgba(var(--tint), .92) 0%, rgba(var(--tint), .86) 34%, rgba(var(--tint), .66) 62%, rgba(var(--tint), .3) 84%, rgba(var(--tint), 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, #000 0%, #000 56%, rgba(0, 0, 0, .55) 76%, transparent 100%);
+  mask-image: linear-gradient(to right, #000 0%, #000 56%, rgba(0, 0, 0, .55) 76%, transparent 100%);
+}
+.panel-in { position: relative; padding-block: 0 22px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); pointer-events: auto; text-shadow: 0 1px 2px rgba(0, 0, 0, .35); transition: opacity .22s, transform .22s; }
+.panel.swap .panel-in { opacity: 0; transform: translateY(6px); }
+@media (min-width: 900px) { .panel-in { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-bottom: 28px; } .bar { padding-left: max(28px, env(safe-area-inset-left, 0px)); padding-right: max(28px, env(safe-area-inset-right, 0px)); padding-top: 20px; } .menu { left: max(28px, env(safe-area-inset-left, 0px)); top: 76px; } }
+
+.chain { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font: 500 11px/1 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--ink-dim); text-shadow: none; }
+.chain li { display: flex; align-items: center; gap: 6px; }
+.chain li + li::before { content: "→"; opacity: .7; }
+.chain li.lab { color: var(--ink-soft); letter-spacing: .12em; margin-right: 2px; }
+.chain li.lab + li::before { content: none; }
+.chain li span { padding: 5px 8px; border-radius: 6px; background-color: rgba(255, 255, 255, .07); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .2); }
+.chain li.on span { color: var(--volt-ink); background-color: var(--volt); box-shadow: none; }
+
+#btnScene { display: inline-flex; align-items: center; gap: 4px; max-width: 100%; margin: 0 0 12px -4px; padding: 6px 12px 6px 6px; border-radius: 999px; font: 500 13px/1.2 var(--body); color: var(--ink); text-shadow: none; background-color: rgba(255, 255, 255, .12); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .26); pointer-events: auto; transition: background-color .15s; }
+#btnScene:hover { background-color: rgba(255, 255, 255, .22); }
+#btnScene svg { flex: none; width: 16px; height: 16px; }
+#btnScene span { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.head { display: flex; align-items: flex-start; gap: 12px; }
+.head h1 { flex: 0 1 auto; min-width: 0; margin: 0; font: 600 clamp(26px, 3.3vw, 38px)/1.08 var(--display); letter-spacing: .004em; text-wrap: balance; }
+#btnFold { flex: none; width: 40px; height: 40px; margin-top: -3px; border-radius: 50%; display: grid; place-items: center; transition: background-color .15s; }
+#btnFold:hover { background-color: rgba(255, 255, 255, .14); }
+#btnFold svg { transition: transform .2s; }
+.panel.folded #btnFold svg { transform: rotate(180deg); }
+#text { margin: 8px 0 0; max-width: 64ch; font-size: clamp(15.5px, 1.2vw, 18px); line-height: 1.5; color: var(--ink-soft); text-wrap: pretty; }
+.panel.folded #text, .panel.folded .chain, .panel.folded #btnScene { display: none; }
+.panel.folded::before { inset: -80px -30% 0 0; }
+
+/* scena stretta (telefono, riquadro dentro una pagina): etichette più piccole, così ce ne stanno di più */
+@media (max-width: 640px) {
+  :root { --tag-size: 12.5px; }
+  .mark.go .tag { padding: 9px 12px; }
+}
+@media (min-width: 1500px) {
+  :root { --tag-size: 16px; }
+  .mark.go .tag { padding: 11px 18px; }
+  .mark.note .tag { font-size: 13.5px; padding: 7px 11px; }
+  .chain { font-size: 12px; }
+}
+
+/* dentro una pagina del libro (classe messa dal motore, tolta a schermo intero): il testo va sotto l'immagine,
+   così non copre i punti, e lo scorrimento verticale resta alla pagina */
+.app.hosted .stage { touch-action: pan-y; }
+.app.hosted .stage::after { content: ""; position: absolute; inset: auto 0 0; height: 64px; z-index: 3; pointer-events: none; background: linear-gradient(to top, rgb(var(--tint)) 0%, rgba(var(--tint), .6) 45%, rgba(var(--tint), 0) 100%); }
+.app.hosted .panel { position: relative; inset: auto; width: auto; max-height: 46%; overflow: auto; pointer-events: auto; background: rgb(var(--tint)); }
+.app.hosted .panel::before { display: none; }
+.app.hosted .panel-in { padding-block: 10px 18px; text-shadow: none; }
+
+/* schermo verticale: il testo va sotto l'immagine, che ci sfuma dentro */
+@media (max-aspect-ratio: 5/6) {
+  .stage::after { content: ""; position: absolute; inset: auto 0 0; height: 64px; z-index: 3; pointer-events: none; background: linear-gradient(to top, rgb(var(--tint)) 0%, rgba(var(--tint), .6) 45%, rgba(var(--tint), 0) 100%); }
+  .panel { position: relative; inset: auto; width: auto; max-height: 50%; overflow: auto; pointer-events: auto; background: rgb(var(--tint)); }
+  .panel::before { display: none; }
+  .panel-in { padding-block: 10px 16px; text-shadow: none; }
+  .chain { font-size: 10px; gap: 4px; letter-spacing: .03em; }
+  .chain li.lab { display: none; }
+  .chain li { gap: 4px; }
+  .chain li span { padding: 4px 6px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mark.go .dot::after { animation: none; opacity: 0; }
+  .panel-in, .mark .dot, .mark .lead, .mark .tag { transition: none; }
+}
+
+/* Nel libro: gli stessi caratteri delle altre attività (Atkinson Hyperlegible, JetBrains Mono) */
+:root { --display: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --body: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
+.head h1 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(25px, 3vw, 35px); }
+.tipcard h2 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(23px, 2.4vw, 31px); }
+.mark.go .tag { font-style: normal; }
+@media (min-width: 641px) { :root { --tag-size: 13.5px; } }
+.menu button[aria-current="true"], .crumb.here { font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="stage" id="stage">
+    <div class="layer" id="layerA"><div class="pic"><img alt="" draggable="false"></div></div>
+    <div class="layer" id="layerB"><div class="pic"><img alt="" draggable="false"></div></div>
+    <div class="shade" aria-hidden="true"></div>
+    <div class="glow" id="glow" aria-hidden="true"></div>
+    <div class="marks" id="marks" role="group" aria-label="Punti da esplorare"></div>
+    <div class="tipcard" id="tipcard" aria-live="polite" hidden>
+      <h2 id="tipTitle"></h2>
+      <p id="tipText"></p>
+      <button type="button" id="btnTipBack">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+        <span></span>
+      </button>
+    </div>
+    <div class="bar">
+      <nav class="trail" id="nav" aria-label="Dove sei">
+        <button type="button" class="pill round" id="btnPath" aria-haspopup="menu" aria-expanded="false" aria-controls="menu" aria-label="Tutte le scene">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1.9" fill="currentColor"/><circle cx="12" cy="12" r="1.9" fill="currentColor"/><circle cx="19" cy="12" r="1.9" fill="currentColor"/></svg>
+        </button>
+        <ol class="crumbs" id="crumbs"></ol>
+      </nav>
+      <span class="grow"></span>
+      <div class="pill">
+        <span class="count" id="count"></span>
+        <button type="button" id="btnShare" aria-haspopup="dialog" aria-expanded="false" aria-controls="share" aria-label="Condividi">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3.5M7.5 7.5 12 3l4.5 4.5M6 11H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1"/></svg>
+        </button>
+        <button type="button" id="btnFull" aria-label="Schermo intero">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="share" id="share" role="dialog" aria-label="Condividi" hidden>
+      <label for="shLink">Link a questa scena</label>
+      <div class="row"><input id="shLink" type="text" readonly><button type="button" data-copy="shLink">Copia</button></div>
+      <label for="shEmbed">Codice per inserirla in una pagina</label>
+      <div class="row"><textarea id="shEmbed" rows="3" readonly></textarea><button type="button" data-copy="shEmbed">Copia</button></div>
+      <div class="qr" id="shQr">
+        <img src="qr.svg" alt="QR code che apre l'esplorazione dall'inizio" width="96" height="96">
+        <p>QR code dell'esplorazione: porta alla scena iniziale.<br><a href="qr.png" download id="shQrPng">Scarica PNG</a> · <a href="qr.svg" download id="shQrSvg">Scarica SVG</a></p>
+      </div>
+      <p class="said" id="shSaid" role="status"></p>
+    </div>
+    <div class="menu" id="menu" role="menu" aria-label="Tutte le scene" hidden></div>
+  </div>
+  <section class="panel" id="panel" aria-live="polite">
+    <div class="panel-in">
+      <button type="button" id="btnScene" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+        <span></span>
+      </button>
+      <ol class="chain" id="chain" hidden></ol>
+      <div class="head">
+        <h1 id="title"></h1>
+        <button type="button" id="btnFold" aria-expanded="true" aria-controls="text" aria-label="Riduci il testo">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+      </div>
+      <p id="text"></p>
+    </div>
+  </section>
+</div>
+<script>window.ESPLORAZIONE_URL = 'https://book.proftecnologia.it/embeds/esplorazioni/bicicletta/index.html';</script>
+<script src="dati.js"></script>
+<script>
+/* Motore dell'esplorazione: legge window.ESPLORAZIONE (vedi dati.js) e non contiene contenuti. */
+(() => {
+  const D = window.ESPLORAZIONE;
+  if (!D || !D.nodi || !D.nodi[D.radice]) return;
+
+  const $ = (id) => document.getElementById(id);
+  const stage = $('stage'), marks = $('marks'), panel = $('panel'), menu = $('menu');
+  const btnPath = $('btnPath'), btnFull = $('btnFull'), btnFold = $('btnFold');
+  const share = $('share'), btnShare = $('btnShare');
+  const layers = [$('layerA'), $('layerB')];
+  const pic = (i) => layers[i].firstElementChild;
+  const img = (i) => pic(i).firstElementChild;
+
+  const N = D.nodi, ids = Object.keys(N);
+  const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const T = 1050, ZMAX = 1.8, EASE = 'cubic-bezier(.62,.02,.2,1)';
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  // Dentro una pagina del libro (indirizzo con ?incorporata): il testo sta sotto l'immagine, la rotella e lo
+  // scorrimento verticale restano alla pagina che ospita e le scene non si aggiungono alla cronologia.
+  // A schermo intero torna tutto come nella pagina a sé.
+  const framed = window.parent !== window;
+  const embedded = framed && /[?&]incorporata\b/.test(location.search);
+  const hosted = () => embedded && !document.fullscreenElement;
+  if (embedded) {
+    const host = () => $('app').classList.toggle('hosted', hosted());
+    host();
+    document.addEventListener('fullscreenchange', host);
+  }
+  // La pagina che ospita (stessa origine) riceve ogni scena raggiunta: serve ai progressi del libro.
+  const NAME = D.id || D.radice;
+  const post = (more) => {
+    if (!framed) return;
+    try { window.parent.postMessage({ type: 'proftec-esplorazione', id: NAME, totale: ids.length, ...more }, location.origin); } catch (e) { /* pagina aperta da file o in un'altra origine: nessun destinatario */ }
+  };
+  const tell = (id) => post({ scena: id });
+
+  // chi porta a chi: per ogni nodo, il nodo che lo contiene e il punto da cui ci si entra
+  const parent = {};
+  ids.forEach((id) => (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai] && !parent[p.vai]) parent[p.vai] = { id, p }; }));
+  const chainTo = (id) => { const out = [id]; while (parent[out[0]] && out.length < 50) out.unshift(parent[out[0]].id); return out; };
+  // l'albero delle scene, nell'ordine dei punti: serve al menu «Tutte le scene»
+  const tree = [], placed = new Set();
+  (function walk(id, d) {
+    if (placed.has(id)) return;
+    placed.add(id);
+    tree.push({ id, d });
+    (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai] && parent[p.vai] && parent[p.vai].id === id) walk(p.vai, d + 1); });
+  })(D.radice, 0);
+  ids.forEach((id) => { if (!placed.has(id)) tree.push({ id, d: 0 }); });
+
+  let front = 0, path = [D.radice], cam = { cx: .5, cy: .5, z: 1 }, busy = false, wanted = null;
+  let tip = null;   // la parte di cui si sta leggendo la spiegazione (una nota con un testo), se c'è
+
+  // Scene già viste. Nella pagina a sé le ricorda il dispositivo. Dentro il libro valgono quelle dello studente:
+  // le manda la pagina che ospita (vedi in fondo), e al dispositivo si aggiungono soltanto.
+  const KEY = 'esplorazione:' + NAME;
+  const seen = new Set();
+  const stored = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]').filter((i) => N[i]); } catch (e) { return []; } };
+  if (!embedded) stored().forEach((i) => seen.add(i));
+  const remember = () => { try { localStorage.setItem(KEY, JSON.stringify([...new Set([...(embedded ? stored() : []), ...seen])])); } catch (e) { /* senza memoria va bene lo stesso */ } };
+
+  const cur = () => path[path.length - 1];
+
+  /* ---------- geometria: l'immagine copre sempre la scena ---------- */
+  function metrics(id) {
+    const r = N[id].rapporto || 16 / 9, W = stage.clientWidth || 1, H = stage.clientHeight || 1;
+    const bw = Math.max(W, H * r);
+    return { W, H, bw, bh: bw / r };
+  }
+  function clamp(c, m) {
+    const z = Math.min(Math.max(c.z, 1), ZMAX);
+    const hw = m.W / (2 * m.bw * z), hh = m.H / (2 * m.bh * z);
+    return { z, cx: Math.min(Math.max(c.cx, hw), 1 - hw), cy: Math.min(Math.max(c.cy, hh), 1 - hh) };
+  }
+  function home(id, m) {
+    const f = N[id].fuoco || [50, 50];
+    return clamp({ cx: f[0] / 100, cy: f[1] / 100, z: 1 }, m);
+  }
+  function place(i, c, m) {
+    const p = pic(i);
+    p.style.width = m.bw + 'px';
+    p.style.height = m.bh + 'px';
+    p.style.transform = `translate3d(${m.W / 2 - c.cx * m.bw * c.z}px,${m.H / 2 - c.cy * m.bh * c.z}px,0) scale(${c.z})`;
+  }
+  const toScreen = (u, v, c, m) => [m.W / 2 + (u - c.cx) * m.bw * c.z, m.H / 2 + (v - c.cy) * m.bh * c.z];
+  // ingrandisce di k tenendo fermo il punto dello schermo (px, py)
+  function zoomAt(c, m, px, py, k) {
+    const z = c.z * k;
+    const u = c.cx + (px - m.W / 2) / (m.bw * c.z), v = c.cy + (py - m.H / 2) / (m.bh * c.z);
+    return { z, cx: u - (px - m.W / 2) / (m.bw * z), cy: v - (py - m.H / 2) / (m.bh * z) };
+  }
+  function apply() {
+    const m = metrics(cur());
+    cam = clamp(cam, m);
+    place(front, cam, m);
+    placeCard();
+    layout();
+    placeGlow();
+  }
+
+  /* ---------- punti ed etichette ---------- */
+  function mark(p, go) {
+    const el = document.createElement('div'), more = !go && !!p.testo;   // nota con una spiegazione: si può toccare
+    el.className = 'mark ' + (go ? 'go' : 'note') + (go && seen.has(p.vai) ? ' seen' : '') + (more ? ' tip' : '');
+    el._p = p;
+    const dot = document.createElement(go || more ? 'button' : 'span');
+    const lead = document.createElement('span');
+    const tag = document.createElement(go || more ? 'button' : 'span');
+    dot.className = 'dot'; lead.className = 'lead'; tag.className = 'tag';
+    tag.textContent = p.etichetta;
+    if (go) {
+      dot.type = tag.type = 'button';
+      dot.tabIndex = -1;
+      dot.setAttribute('aria-hidden', 'true');
+      tag.setAttribute('aria-label', 'Esplora: ' + p.etichetta + (seen.has(p.vai) ? ' (già vista)' : ''));
+      const act = () => (el.classList.contains('off') ? panTo(p) : goTo(p.vai));
+      dot.addEventListener('click', act);
+      tag.addEventListener('click', act);
+    } else if (more) {
+      dot.type = tag.type = 'button';
+      dot.tabIndex = -1;
+      dot.setAttribute('aria-hidden', 'true');
+      tag.setAttribute('aria-label', 'Spiegazione: ' + p.etichetta);
+      tag.setAttribute('aria-pressed', 'false');
+      const act = () => showTip(p);
+      dot.addEventListener('click', act);
+      tag.addEventListener('click', act);
+    }
+    el.append(dot, lead, tag);
+    return el;
+  }
+  function buildMarks(id) {
+    marks.textContent = '';
+    (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai]) marks.appendChild(mark(p, true)); });
+    (N[id].note || []).forEach((p) => marks.appendChild(mark(p, false)));
+    markTip();
+    layout();
+  }
+  function layout() {
+    const m = metrics(cur());
+    const boxes = [], chips = [], shown = [];
+    const sr = stage.getBoundingClientRect();
+    const rel = (r) => [r.left - sr.left, r.top - sr.top, r.width, r.height];
+    // dove il pannello copre la scena, le etichette gli girano attorno; lo stesso per i comandi in alto
+    const pr = panel.firstElementChild.getBoundingClientRect();
+    const pb = pr.top < sr.bottom - 1 && pr.height && card.hidden ? rel(pr) : null;
+    if (pb) boxes.push(pb);
+    const pills = [...stage.querySelectorAll('.bar .pill')].map((b) => rel(b.getBoundingClientRect())).filter((b) => b[2]);
+    boxes.push(...pills);
+    if (!card.hidden) boxes.push(rel(card.getBoundingClientRect()));
+    for (const el of marks.children) {
+      const p = el._p, go = el.classList.contains('go'), tag = el.lastElementChild;
+      const [x, y] = toScreen(p.x / 100, p.y / 100, cam, m);
+      const rad = go ? 16 : 2;
+      const under = pills.some((b) => x > b[0] - rad && x < b[0] + b[2] + rad && y > b[1] - rad && y < b[1] + b[3] + rad);
+      const inside = x > 20 && x < m.W - 20 && y > 24 && y < m.H - 20 && !under;
+      // una nota il cui puntino finirebbe sotto il testo non si mostra (ricompare se il testo viene chiuso o sta sotto l'immagine)
+      const covered = !go && p !== tip && pb && x > pb[0] - 14 && x < pb[0] + pb[2] + 14 && y > pb[1] - 14 && y < pb[1] + pb[3];
+      if ((!inside && !go) || covered) { el.hidden = true; continue; }
+      el.hidden = false;
+      el.classList.toggle('off', !inside);
+      const tw = tag.offsetWidth, th = tag.offsetHeight;
+      if (inside) {
+        shown.push({ el, p, go, x, y, tw, th });
+        boxes.push(go ? [x - 16, y - 16, 32, 32] : [x - 7, y - 7, 14, 14]);
+      } else {
+        const half = tw / 2 + 10;
+        delete el.dataset.s;
+        delete el.dataset.v;
+        chips.push({ el, tag, x, y, tw, th, ex: Math.min(Math.max(x, half), m.W - half), ey: Math.min(Math.max(y, 86), m.H - 28) });
+      }
+    }
+    // Etichette in vista. Ognuna può stare ai quattro lati del suo punto, oppure dritta sopra o sotto: il primo
+    // posto è quello indicato in dati.js, gli altri servono quando lì coprirebbe un punto, un'altra etichetta,
+    // il pannello o i comandi.
+    const area = (a, b) => Math.max(0, Math.min(a[0] + a[2], b[0] + b[2]) + 4 - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[1] + a[3], b[1] + b[3]) + 4 - Math.max(a[1], b[1]));
+    const spill = (b) => Math.max(0, 6 - b[0]) + Math.max(0, b[0] + b[2] - (m.W - 6)) + Math.max(0, 6 - b[1]) + Math.max(0, b[1] + b[3] - (m.H - 6));
+    const options = ({ p, go, x, y, tw, th }) => {
+      const ox = go ? 39 : 22, oy = go ? 25 : 13, oc = go ? 46 : 26;
+      const s0 = p.lato === 'sx' ? 'l' : p.lato === 'dx' ? 'r' : (x < m.W * .56 ? 'r' : 'l');
+      const v0 = p.verso === 'giu' || y < (go ? 150 : 110) ? 'd' : 'u';
+      const s1 = s0 === 'r' ? 'l' : 'r', v1 = v0 === 'u' ? 'd' : 'u';
+      return [[s0, v0], [s1, v0], [s0, v1], [s1, v1], ['c', v0], ['c', v1]].map(([s, v], i) => {
+        const o = s === 'c' ? oc : oy;
+        const box = [s === 'r' ? x + ox : s === 'l' ? x - ox - tw : x - tw / 2, v === 'u' ? y - o - th : y + o, tw, th];
+        return { s, v, box, base: boxes.reduce((a, o) => a + area(box, o), 0) + spill(box) * 400 + i * .5 };
+      });
+    };
+    const put = (k, c) => {
+      k.el.dataset.s = c.s;
+      k.el.dataset.v = c.v;
+      k.el.style.transform = `translate(${k.x}px,${k.y}px)`;
+      boxes.push(c.box);
+    };
+    // Punti da esplorare: prima ognuno al suo posto migliore, nell'ordine di dati.js; se qualcosa resta coperto
+    // si provano tutte le combinazioni (sono pochi per scena) e si tiene quella che copre di meno.
+    const gos = shown.filter((k) => k.go), opts = gos.map(options);
+    const clash = (c, set) => set.reduce((a, q) => a + area(c.box, q.box), 0);
+    let pick = [], sum = 0;
+    for (const o of opts) {
+      let b = null, bc = 0;
+      for (const c of o) { const cost = c.base + clash(c, pick); if (!b || cost < bc) { b = c; bc = cost; } }
+      pick.push(b);
+      sum += bc;
+    }
+    if (sum > 0 && gos.length <= 6) {
+      const tryAll = (i, acc, set) => {
+        if (i === opts.length) { sum = acc; pick = set.slice(); return; }
+        for (const c of opts[i]) {
+          const cost = acc + c.base + clash(c, set);
+          if (cost < sum) { set.push(c); tryAll(i + 1, cost, set); set.pop(); }
+        }
+      };
+      tryAll(0, 0, []);
+    }
+    gos.forEach((k, i) => put(k, pick[i]));
+    // Note: una per volta, tra quello che è già a posto; una nota che coprirebbe qualcosa non si mostra.
+    for (const k of shown) {
+      if (k.go) continue;
+      const c = options(k).reduce((a, o) => (o.base < a.base ? o : a));
+      if (c.base > k.tw * k.th * .12) k.el.hidden = true;
+      else put(k, c);
+    }
+    // le etichette di bordo non devono coprirsi tra loro né coprire quelle in vista
+    chips.sort((a, b) => a.ey - b.ey);
+    for (const c of chips) {
+      const hits = (ey) => boxes.some((b) => c.ex - c.tw / 2 < b[0] + b[2] + 6 && c.ex + c.tw / 2 > b[0] - 6 && ey - c.th / 2 < b[1] + b[3] + 6 && ey + c.th / 2 > b[1] - 6);
+      let ey = c.ey;
+      for (let i = 0; i < 60 && hits(ey); i++) ey += 6;
+      if (ey > m.H - 28) { ey = c.ey; for (let i = 0; i < 60 && hits(ey) && ey > 86; i++) ey -= 6; }
+      boxes.push([c.ex - c.tw / 2, ey - c.th / 2, c.tw, c.th]);
+      const dx = c.x - c.ex, dy = c.y - ey;
+      c.tag.dataset.arrow = Math.abs(dx) >= Math.abs(dy) ? (dx > 0 ? '→' : '←') : (dy > 0 ? '↓' : '↑');
+      c.el.style.transform = `translate(${c.ex}px,${ey}px)`;
+    }
+  }
+
+  /* ---------- aree sensibili: la zona attorno a un punto da esplorare si illumina e si può toccare ---------- */
+  // Raggio dell'area in pixel. In dati.js un punto può dare la sua: area: [larghezza, altezza] in % dell'immagine.
+  // Senza, l'area è un cerchio che non arriva a toccare quella del punto più vicino.
+  const glow = $('glow');
+  let lit = null;
+  function zone(p, m) {
+    if (Array.isArray(p.area)) return [p.area[0] / 200 * m.bw * cam.z, (p.area[1] || p.area[0]) / 200 * m.bh * cam.z];
+    let r = .085 * m.bw;
+    (N[cur()].punti || []).forEach((q) => {
+      if (q !== p && q.vai && N[q.vai]) r = Math.min(r, Math.hypot((q.x - p.x) / 100 * m.bw, (q.y - p.y) / 100 * m.bh) * .48);
+    });
+    r = Math.max(r, 34) * cam.z;
+    return [r, r];
+  }
+  function zoneAt(px, py) {
+    const m = metrics(cur());
+    let best = null, bd = 1;
+    for (const el of marks.children) {
+      if (!el.classList.contains('go') || el.hidden || el.classList.contains('off')) continue;
+      const p = el._p, [x, y] = toScreen(p.x / 100, p.y / 100, cam, m), [rx, ry] = zone(p, m);
+      const d = Math.hypot((px - x) / rx, (py - y) / ry);
+      if (d < bd) { bd = d; best = p; }
+    }
+    return best;
+  }
+  function setGlow(p) {
+    if (p === lit) return;
+    lit = p;
+    stage.classList.toggle('hot', !!p);
+    for (const el of marks.children) el.classList.toggle('lit', !!p && el._p === p);
+    if (p) placeGlow();
+    glow.classList.toggle('on', !!p);
+  }
+  function placeGlow() {
+    if (!lit) return;
+    const m = metrics(cur()), [x, y] = toScreen(lit.x / 100, lit.y / 100, cam, m), [rx, ry] = zone(lit, m);
+    glow.style.width = rx * 2.5 + 'px';
+    glow.style.height = ry * 2.5 + 'px';
+    glow.style.transform = `translate(${x - rx * 1.25}px,${y - ry * 1.25}px)`;
+  }
+
+  /* ---------- movimento libero: trascina, pizzica, rotella ---------- */
+  function tween(to, ms) {
+    const from = { ...cam }, t0 = performance.now();
+    const step = (t) => {
+      const k = Math.min(1, (t - t0) / ms), e = 1 - Math.pow(1 - k, 3);
+      cam = { cx: from.cx + (to.cx - from.cx) * e, cy: from.cy + (to.cy - from.cy) * e, z: from.z + (to.z - from.z) * e };
+      apply();
+      if (k < 1 && !busy) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+  function panTo(p) {
+    const m = metrics(cur());
+    const to = clamp({ cx: p.x / 100, cy: p.y / 100, z: cam.z }, m);
+    if (calm) { cam = to; apply(); } else tween(to, 460);
+  }
+  const fingers = new Map();
+  let grip = null, tap = false;
+  function regrip() {
+    const m = metrics(cur()), r = stage.getBoundingClientRect(), a = [...fingers.values()];
+    if (a.length === 1) grip = { n: 1, x: a[0][0], y: a[0][1], cam: { ...cam }, m };
+    else if (a.length > 1) grip = { n: 2, d: Math.hypot(a[0][0] - a[1][0], a[0][1] - a[1][1]) || 1, mx: (a[0][0] + a[1][0]) / 2 - r.left, my: (a[0][1] + a[1][1]) / 2 - r.top, cam: { ...cam }, m };
+    else grip = null;
+  }
+  stage.addEventListener('pointerdown', (e) => {
+    if (busy || e.target.closest('button, .menu, .tipcard, .share')) return;
+    closeMenu();
+    try { stage.setPointerCapture(e.pointerId); } catch (err) { /* puntatore già rilasciato */ }
+    fingers.set(e.pointerId, [e.clientX, e.clientY]);
+    tap = fingers.size === 1 && !e.target.closest('.panel, .bar');
+    regrip();
+  });
+  // puntatore fermo sopra la scena (mouse o penna): si illumina l'area del punto su cui si trova
+  const hover = (e) => {
+    if (busy || e.pointerType === 'touch' || !card.hidden) return;
+    const mk = e.target.closest('.mark.go');
+    const r = stage.getBoundingClientRect();
+    setGlow(mk ? (mk.classList.contains('off') ? null : mk._p) : e.target.closest('button, .menu, .bar, .mark') ? null : zoneAt(e.clientX - r.left, e.clientY - r.top));
+  };
+  stage.addEventListener('pointerleave', () => setGlow(null));
+  stage.addEventListener('pointermove', (e) => {
+    if (!grip) hover(e);
+    if (!grip || !fingers.has(e.pointerId) || busy) return;
+    fingers.set(e.pointerId, [e.clientX, e.clientY]);
+    const a = [...fingers.values()], g = grip;
+    if (g.n === 1 && a.length === 1) {
+      const dx = a[0][0] - g.x, dy = a[0][1] - g.y;
+      if (Math.abs(dx) + Math.abs(dy) > 6) { stage.classList.add('drag'); tap = false; setGlow(null); }
+      cam = { z: g.cam.z, cx: g.cam.cx - dx / (g.m.bw * g.cam.z), cy: g.cam.cy - dy / (g.m.bh * g.cam.z) };
+      apply();
+    } else if (g.n === 2 && a.length > 1) {
+      const d = Math.hypot(a[0][0] - a[1][0], a[0][1] - a[1][1]) || 1;
+      const z = Math.min(Math.max(g.cam.z * d / g.d, 1), ZMAX);
+      cam = zoomAt(g.cam, g.m, g.mx, g.my, z / g.cam.z);
+      apply();
+    }
+  });
+  const release = (e) => {
+    const was = tap && fingers.has(e.pointerId) && e.type === 'pointerup';
+    tap = false;
+    fingers.delete(e.pointerId);
+    stage.classList.remove('drag');
+    regrip();
+    if (!was || busy) return;
+    if (!card.hidden) { hideTip(); return; }       // spiegazione aperta: un tocco sull'immagine la chiude
+    // tocco o clic senza trascinare dentro un'area sensibile: si entra nella scena di quel punto
+    const r = stage.getBoundingClientRect(), p = zoneAt(e.clientX - r.left, e.clientY - r.top);
+    if (!p) return;
+    setGlow(p);
+    goTo(p.vai);
+  };
+  stage.addEventListener('pointerup', release);
+  stage.addEventListener('pointercancel', release);
+  stage.addEventListener('wheel', (e) => {
+    if (e.target.closest('.menu, .share')) return;     // dentro il menu la rotella scorre l'elenco
+    if (hosted() && !e.ctrlKey && !e.metaKey) return; // la rotella fa scorrere la pagina del libro
+    e.preventDefault();
+    if (busy) return;
+    const m = metrics(cur()), r = stage.getBoundingClientRect();
+    const z = Math.min(Math.max(cam.z * Math.exp(-e.deltaY * 0.0016), 1), ZMAX);
+    cam = zoomAt(cam, m, e.clientX - r.left, e.clientY - r.top, z / cam.z);
+    apply();
+  }, { passive: false });
+
+  /* ---------- immagini ---------- */
+  function load(i, id) {
+    const im = img(i), n = N[id];
+    im.alt = n.alt || n.titolo;
+    if (im.dataset.id === id && im.complete) return Promise.resolve();
+    im.dataset.id = id;
+    return new Promise((res) => {
+      let done = false;
+      const fin = () => { if (!done) { done = true; res(); } };
+      im.onload = im.onerror = fin;
+      im.src = n.img;
+      if (im.complete && im.naturalWidth) fin();
+      setTimeout(fin, 5000);
+    }).then(() => (im.decode ? im.decode().catch(() => {}) : undefined));
+  }
+  const warm = (id) => (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai]) { const i = new Image(); i.src = N[p.vai].img; } });
+
+  /* ---------- velatura del testo: prende il colore dall'angolo dell'immagine su cui poggia ---------- */
+  const tints = {};
+  function readTint(i, id) {
+    const im = img(i);
+    if (tints[id] || !im.complete || !im.naturalWidth) return;
+    try {
+      const c = document.createElement('canvas');
+      c.width = 16; c.height = 9;
+      const x = c.getContext('2d', { willReadFrequently: true });
+      x.drawImage(im, 0, 0, 16, 9);
+      const d = x.getImageData(0, 5, 8, 4).data;            // quarto in basso a sinistra
+      let r = 0, g = 0, b = 0;
+      for (let k = 0; k < d.length; k += 4) { r += d[k]; g += d[k + 1]; b += d[k + 2]; }
+      const n = d.length / 4;
+      tints[id] = [r, g, b].map((v, j) => Math.round((v / n) * .2 + [5, 9, 10][j])).join(', ');   // sempre scuro: al massimo 61 per canale
+    } catch (e) { tints[id] = '6, 12, 14'; }                 // immagine non leggibile (file aperto in locale): colore neutro
+  }
+  const applyTint = (id) => { if (tints[id]) $('app').style.setProperty('--tint', tints[id]); };
+
+  /* ---------- percorso in alto a sinistra: le scene che contengono questa, poi questa ---------- */
+  const CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>';
+  function setTrail(id) {
+    const ch = chainTo(id), ol = $('crumbs');
+    if (!ch.length) return;
+    ol.textContent = '';
+    ch.forEach((n, i) => {
+      const last = i === ch.length - 1;
+      const li = document.createElement('li'), el = document.createElement(last ? 'span' : 'button'), t = document.createElement('span');
+      el.className = 'pill crumb' + (last ? ' here' : '');
+      t.className = 't';
+      t.textContent = N[n].titolo;
+      el.appendChild(t);
+      if (last) el.setAttribute('aria-current', 'page');
+      else {
+        el.type = 'button';
+        el.setAttribute('aria-label', 'Torna a: ' + N[n].titolo);
+        el.insertAdjacentHTML('beforeend', CHEV);
+        el.addEventListener('click', () => goTo(n));
+      }
+      li.appendChild(el);
+      ol.appendChild(li);
+    });
+    fitTrail();
+  }
+  // Con tanti livelli il percorso non ci sta tutto: si tolgono le scene più lontane, una per volta, finché ci sta.
+  // Restano sempre la scena subito sopra e quella aperta; le altre si raggiungono dal menu «…».
+  function fitTrail() {
+    const nav = $('nav'), lis = [...$('crumbs').children];
+    lis.forEach((li) => { li.hidden = false; });
+    nav.classList.add('measure');
+    for (let i = 0; i < lis.length - 2 && nav.scrollWidth > nav.clientWidth + 1; i++) lis[i].hidden = true;
+    nav.classList.remove('measure');
+  }
+
+  /* ---------- spiegazione di una parte: prende il posto del testo della scena ---------- */
+  function markTip() {
+    for (const el of marks.children) {
+      const on = !!tip && el._p === tip;
+      el.classList.toggle('sel', on);
+      if (el.classList.contains('tip')) el.lastElementChild.setAttribute('aria-pressed', String(on));
+    }
+  }
+  function paintTip() {
+    $('title').textContent = tip.titolo || tip.etichetta;
+    $('text').textContent = tip.testo;
+    const b = $('btnScene');
+    b.lastElementChild.textContent = N[cur()].titolo;
+    b.setAttribute('aria-label', 'Torna al testo della scena: ' + N[cur()].titolo);
+    b.hidden = false;
+  }
+  function swapPanel(paint) {
+    const keep = tip;
+    panel.classList.add('swap');
+    setTimeout(() => {
+      if (busy || tip !== keep) return;      // nel frattempo si è cambiata scena o parte
+      paint();
+      panel.classList.remove('swap');
+      layout();
+    }, calm ? 0 : 200);
+  }
+  // Su una scena larga la spiegazione sta al centro dell'immagine, dal lato opposto al punto, e il testo della scena
+  // si fa da parte. Dove il testo sta sotto l'immagine (telefono, riquadro nel libro) prende il suo posto lì sotto.
+  const card = $('tipcard'), app = $('app');
+  const stacked = () => hosted() || matchMedia('(max-aspect-ratio: 5/6)').matches;
+  function placeCard() {
+    if (!tip || card.hidden) return;
+    const m = metrics(cur()), [x] = toScreen(tip.x / 100, tip.y / 100, cam, m);
+    const w = Math.min(500, m.W * .42), pad = 28;
+    const left = x < m.W / 2 ? Math.max(x + 70, m.W * .68 - w / 2) : Math.min(x - 70 - w, m.W * .32 - w / 2);
+    card.style.width = w + 'px';
+    card.style.left = Math.min(Math.max(left, pad), m.W - w - pad) + 'px';
+  }
+  function closeCard() {
+    card.hidden = true;
+    app.classList.remove('tipping');
+  }
+  function showTip(p) {
+    if (busy) return;
+    if (tip === p) { hideTip(); return; }
+    const inPanel = !!tip && card.hidden;          // c'era già una spiegazione nel testo sotto l'immagine
+    tip = p;
+    markTip();
+    setGlow(null);
+    if (stacked()) {
+      closeCard();
+      if (panel.classList.contains('folded')) btnFold.click();
+      swapPanel(paintTip);
+      return;
+    }
+    if (inPanel) { $('btnScene').hidden = true; setTextOnly(cur()); }
+    $('tipTitle').textContent = p.titolo || p.etichetta;
+    $('tipText').textContent = p.testo;
+    const b = $('btnTipBack');
+    b.lastElementChild.textContent = N[cur()].titolo;
+    b.setAttribute('aria-label', 'Chiudi la spiegazione e torna a: ' + N[cur()].titolo);
+    card.hidden = false;
+    app.classList.add('tipping');
+    placeCard();
+    layout();
+  }
+  function hideTip() {
+    if (!tip || busy) return;
+    tip = null;
+    markTip();
+    if (!card.hidden) { closeCard(); layout(); }
+    else swapPanel(() => setText(cur()));
+  }
+
+  /* ---------- pannello ---------- */
+  function setText(id) {
+    tip = null;
+    closeCard();
+    setTrail(id);
+    setTextOnly(id);
+  }
+  function setTextOnly(id) {
+    const n = N[id];
+    $('btnScene').hidden = true;
+    $('title').textContent = n.titolo;
+    $('text').textContent = n.testo;
+    const ch = $('chain');
+    if (D.catena && D.catena.fasi) {
+      ch.hidden = false;
+      ch.textContent = '';
+      ch.setAttribute('aria-label', 'Forme di energia in questa scena');
+      const lab = document.createElement('li');
+      lab.className = 'lab';
+      lab.textContent = D.catena.etichetta || '';
+      if (lab.textContent) ch.appendChild(lab);
+      D.catena.fasi.forEach((f, i) => {
+        const li = document.createElement('li'), s = document.createElement('span');
+        s.textContent = f;
+        if ((n.fasi || []).includes(i)) { li.className = 'on'; li.setAttribute('aria-current', 'true'); }
+        li.appendChild(s);
+        ch.appendChild(li);
+      });
+    }
+  }
+  function setChrome() {
+    const c = $('count');
+    c.textContent = '';
+    const w = document.createElement('span');
+    w.className = 'w';
+    w.textContent = 'Scoperte ';
+    c.append(w, `${seen.size}/${ids.length}`);
+    c.setAttribute('aria-label', `Scene scoperte: ${seen.size} su ${ids.length}`);
+    c.classList.toggle('all', seen.size === ids.length);
+  }
+  function arrive() {
+    const id = cur();
+    seen.add(id);
+    applyTint(id);
+    remember();
+    tell(id);
+    setChrome();
+    buildMarks(id);
+    marks.classList.remove('hide');
+    panel.classList.remove('swap');
+    warm(id);
+    try {
+      const h = decodeURIComponent(location.hash.slice(1));
+      if (h !== id && !(id === D.radice && !h)) {
+        if (embedded) history.replaceState(null, '', '#' + encodeURIComponent(id));
+        else location.hash = id;
+      }
+    } catch (e) { /* indirizzo non modificabile: si naviga comunque */ }
+  }
+
+  /* ---------- passaggio tra scene ---------- */
+  async function goTo(id) {
+    if (!N[id] || id === cur()) return;
+    if (busy) { wanted = id; return; }
+    busy = true;
+    wanted = null;
+    closeMenu();
+    closeShare();
+    tip = null;
+    closeCard();
+    fingers.clear(); grip = null;
+    marks.classList.add('hide');
+    panel.classList.add('swap');
+
+    const from = cur(), a = front, b = 1 - front, A = layers[a], B = layers[b];
+    setTimeout(() => setGlow(null), 160);                          // l'area toccata resta accesa un attimo, poi si entra
+    const next = chainTo(id);
+    const up = path.indexOf(id);                                  // risalita verso una scena già attraversata
+    const down = parent[id] && parent[id].id === from ? parent[id].p : null;  // ingresso da un punto di questa scena
+    const textAt = wait(calm ? 120 : 430).then(() => { setText(id); applyTint(id); panel.classList.remove('swap'); });
+
+    await load(b, id);
+    readTint(b, id);
+    const mA = metrics(from), mB = metrics(id), hB = home(id, mB);
+    const move = `transform ${T}ms ${EASE}`, clip = `clip-path ${T}ms ${EASE}`;
+    const reach = (px, py) => Math.hypot(Math.max(px, mA.W - px), Math.max(py, mA.H - py)) + 6;
+    pic(a).style.transition = pic(b).style.transition = 'none';
+    A.style.transition = B.style.transition = 'none';
+
+    if (!calm && down) {
+      // dentro: la nuova scena si apre come una lente dal punto toccato, mentre la vecchia si avvicina
+      const [px, py] = toScreen(down.x / 100, down.y / 100, cam, mA);
+      A.style.zIndex = 1; B.style.zIndex = 2;
+      place(b, zoomAt(hB, mB, px, py, 1.22), mB);
+      B.style.clipPath = `circle(0px at ${px}px ${py}px)`;
+      B.classList.add('on');
+      void B.offsetWidth;
+      pic(a).style.transition = pic(b).style.transition = move;
+      B.style.transition = clip;
+      place(a, zoomAt(cam, mA, px, py, 2.4), mA);
+      place(b, hB, mB);
+      B.style.clipPath = `circle(${reach(px, py)}px at ${px}px ${py}px)`;
+      await wait(T + 60);
+    } else if (!calm && up >= 0) {
+      // fuori: la scena attuale si richiude nel punto da cui si era entrati
+      const via = parent[path[up + 1]].p;
+      const [px, py] = toScreen(via.x / 100, via.y / 100, hB, mB);
+      A.style.zIndex = 2; B.style.zIndex = 1;
+      place(b, zoomAt(hB, mB, px, py, 2.4), mB);
+      B.style.clipPath = '';
+      B.classList.add('on');
+      A.style.clipPath = `circle(${reach(px, py)}px at ${px}px ${py}px)`;
+      void A.offsetWidth;
+      pic(b).style.transition = move;
+      A.style.transition = clip;
+      place(b, hB, mB);
+      A.style.clipPath = `circle(0px at ${px}px ${py}px)`;
+      await wait(T + 60);
+    } else {
+      // salto senza rapporto diretto (o movimento ridotto): dissolvenza
+      A.style.zIndex = 1; B.style.zIndex = 2;
+      place(b, hB, mB);
+      B.style.clipPath = '';
+      void B.offsetWidth;
+      B.style.transition = 'opacity 380ms ease';
+      B.classList.add('on');
+      await wait(420);
+    }
+
+    pic(a).style.transition = pic(b).style.transition = 'none';
+    A.style.transition = B.style.transition = 'none';
+    A.classList.remove('on');
+    A.style.clipPath = B.style.clipPath = '';
+    A.style.zIndex = B.style.zIndex = '';
+    front = b;
+    path = next;
+    cam = hB;
+    await textAt;
+    arrive();
+    busy = false;
+    if (wanted && wanted !== cur()) { const w = wanted; wanted = null; goTo(w); }
+  }
+
+  /* ---------- comandi ---------- */
+  function closeMenu() {
+    if (menu.hidden) return;
+    menu.hidden = true;
+    btnPath.setAttribute('aria-expanded', 'false');
+  }
+  function openMenu() {
+    closeShare();
+    menu.textContent = '';
+    const open = new Set(path);
+    let here = null;
+    tree.forEach(({ id, d }) => {
+      const b = document.createElement('button'), pip = document.createElement('i'), t = document.createElement('span');
+      b.type = 'button';
+      b.setAttribute('role', 'menuitem');
+      b.className = (seen.has(id) ? 'seen' : '') + (open.has(id) ? ' way' : '');
+      b.style.setProperty('--d', Math.min(d, 6));
+      pip.className = 'pip';
+      pip.setAttribute('aria-hidden', 'true');
+      t.textContent = N[id].titolo;
+      b.append(pip, t);
+      b.setAttribute('aria-label', N[id].titolo + (id === cur() ? ' (sei qui)' : seen.has(id) ? ' (già vista)' : ''));
+      if (id === cur()) { b.setAttribute('aria-current', 'true'); here = b; }
+      b.addEventListener('click', () => { closeMenu(); goTo(id); });
+      menu.appendChild(b);
+    });
+    menu.hidden = false;
+    btnPath.setAttribute('aria-expanded', 'true');
+    if (here) { here.scrollIntoView({ block: 'nearest' }); here.focus({ preventScroll: true }); }
+  }
+  // dentro il menu: frecce, Inizio e Fine per spostarsi tra le scene
+  menu.addEventListener('keydown', (e) => {
+    const items = [...menu.querySelectorAll('button')], i = items.indexOf(document.activeElement);
+    const to = e.key === 'ArrowDown' ? i + 1 : e.key === 'ArrowUp' ? i - 1 : e.key === 'Home' ? 0 : e.key === 'End' ? items.length - 1 : null;
+    if (to === null) return;
+    e.preventDefault();
+    items[(to + items.length) % items.length].focus();
+  });
+  btnPath.addEventListener('click', (e) => { e.stopPropagation(); if (menu.hidden) openMenu(); else closeMenu(); });
+  document.addEventListener('click', (e) => { if (!menu.hidden && !e.target.closest('.menu')) closeMenu(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (!share.hidden) { closeShare(); btnShare.focus(); }
+    else if (!menu.hidden) { closeMenu(); btnPath.focus(); }
+    else if (tip) hideTip();
+    else if (path.length > 1 && !document.fullscreenElement) goTo(path[path.length - 2]);
+  });
+  $('btnScene').addEventListener('click', hideTip);
+  $('btnTipBack').addEventListener('click', hideTip);
+  btnFold.addEventListener('click', () => {
+    const folded = panel.classList.toggle('folded');
+    btnFold.setAttribute('aria-expanded', String(!folded));
+    btnFold.setAttribute('aria-label', folded ? 'Mostra il testo' : 'Riduci il testo');
+  });
+  /* ---------- condividi: link della scena, codice per incorporare, QR code ---------- */
+  // L'indirizzo pubblico lo scrive la costruzione della pagina (versione del libro) o dati.js (indirizzo: "https://…/");
+  // se manca, vale quello da cui la pagina è aperta.
+  const pubUrl = ((window.ESPLORAZIONE_URL || '').replace(/index\.html$/, '') || D.indirizzo || location.href.split(/[?#]/)[0].replace(/index\.html$/, '')).replace(/\/?$/, '/');
+  function openShare() {
+    closeMenu();
+    $('shLink').value = pubUrl + 'index.html' + (cur() === D.radice ? '' : '#' + cur());
+    $('shEmbed').value = `<iframe src="${pubUrl}index.html?incorporata=1" title="${(N[D.radice].titolo || '').replace(/"/g, '&quot;')}" style="width:100%;aspect-ratio:5/4;min-height:420px;border:0" allow="fullscreen" allowfullscreen loading="lazy"></iframe>`;
+    $('shSaid').textContent = '';
+    share.hidden = false;
+    btnShare.setAttribute('aria-expanded', 'true');
+  }
+  function closeShare() {
+    if (share.hidden) return;
+    share.hidden = true;
+    btnShare.setAttribute('aria-expanded', 'false');
+  }
+  btnShare.addEventListener('click', (e) => { e.stopPropagation(); if (share.hidden) openShare(); else closeShare(); });
+  $('shQr').querySelector('img').addEventListener('error', () => { $('shQr').hidden = true; });   // copia senza il file del QR
+  share.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-copy]');
+    if (!b) return;
+    const f = $(b.dataset.copy), said = (t) => { $('shSaid').textContent = t; };
+    f.focus();
+    f.select();
+    const manual = () => { try { if (document.execCommand('copy')) return said('Copiato.'); } catch (err) { /* non permesso */ } said('Testo selezionato: copialo con Ctrl+C.'); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(f.value).then(() => said('Copiato.'), manual);
+    else manual();
+  });
+  document.addEventListener('click', (e) => { if (!share.hidden && !e.target.closest('.share')) closeShare(); });
+
+  if (!document.fullscreenEnabled) btnFull.hidden = true;
+  btnFull.addEventListener('click', () => {
+    try {
+      const done = document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+      if (done && done.catch) done.catch(() => {});
+    } catch (e) { /* schermo intero non disponibile qui */ }
+  });
+  window.addEventListener('hashchange', () => {
+    let h = '';
+    try { h = decodeURIComponent(location.hash.slice(1)); } catch (e) { return; }
+    const id = N[h] ? h : D.radice;
+    if (id !== cur()) goTo(id);
+  });
+  const resized = () => {
+    fitTrail();
+    if (tip && !busy && card.hidden === !stacked()) { const p = tip; tip = null; closeCard(); setTextOnly(cur()); showTip(p); }   // la spiegazione cambia posto
+    if (!busy) apply();
+  };
+  if ('ResizeObserver' in window) new ResizeObserver(resized).observe(stage);
+  else window.addEventListener('resize', resized);
+
+  /* ---------- dentro il libro: le scene già viste dallo studente ---------- */
+  if (embedded) {
+    window.addEventListener('message', (e) => {
+      if (e.origin !== location.origin || e.source !== window.parent) return;
+      const d = e.data;
+      if (!d || d.type !== 'proftec-esplorazione-viste' || d.id !== NAME || !Array.isArray(d.scene)) return;
+      d.scene.forEach((i) => { if (N[i]) seen.add(i); });
+      setChrome();
+      if (!busy && marks.childElementCount) buildMarks(cur());
+    });
+    post({ pronta: true });
+  }
+
+  /* ---------- avvio ---------- */
+  (async () => {
+    document.documentElement.lang = D.lingua || 'it';
+    let id = D.radice;
+    try { const h = decodeURIComponent(location.hash.slice(1)); if (N[h]) id = h; } catch (e) { /* si parte dall'inizio */ }
+    path = chainTo(id);
+    setText(id);
+    setChrome();
+    await load(front, id);
+    readTint(front, id);
+    const m = metrics(id);
+    cam = home(id, m);
+    place(front, cam, m);
+    layers[front].classList.add('on');
+    arrive();
+  })();
+})();
+</script>
+</body>
+</html>
