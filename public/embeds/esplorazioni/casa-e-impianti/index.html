@@ -1300,13 +1300,17 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
         if (!live()) return;
         const el = [...marks.children].find((m) => m._p === p);
         if (!p.testo || !el || el.hidden) continue;
-        await wait(400);
+        // zoom sul particolare descritto, poi di nuovo sulla scena intera
+        const zm = metrics(id);
+        tween(clamp({ cx: p.x / 100, cy: p.y / 100, z: ZMAX * .95 }, zm), calm ? 1 : 900);
+        await wait(calm ? 100 : 950);
         if (!live()) return;
         showTip(p);
         await sayNote(id, p, true);
         if (!live()) return;
         hideTip();
-        await wait(500);
+        tween(home(id, metrics(id)), calm ? 1 : 800);
+        await wait(calm ? 200 : 900);
       }
       if (live()) await wait(700);
     }
