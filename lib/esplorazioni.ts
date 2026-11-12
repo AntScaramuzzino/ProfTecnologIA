@@ -68,6 +68,26 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
       "I luoghi fisici di Internet: cavo sottomarino, stazione di approdo, data center e antenna. Si scende fino alla luce dentro una fibra ottica e al processore di un server.",
   },
   {
+    slug: "scheletro-edificio",
+    mcId: "MC-AMB-2-01",
+    titolo: "Lo scheletro dell'edificio",
+    classe: 2,
+    area: "AMB",
+    scene: 15,
+    descrizione:
+      "Il percorso del peso dentro un edificio in costruzione: solaio, trave, pilastro, fondazioni e terreno. Si scende fino alla barra d'acciaio, ai cristalli del cemento e ai granelli del suolo.",
+  },
+  {
+    slug: "acciaieria",
+    mcId: "MC-MAT-1-05",
+    titolo: "L'acciaieria",
+    classe: 1,
+    area: "MAT",
+    scene: 15,
+    descrizione:
+      "Dal minerale di ferro alla bobina di lamiera: parco minerali, altoforno, convertitore, colata continua e laminatoio. Si scende fino ai grani e agli atomi dell'acciaio, e si torna indietro con il rottame e il forno elettrico.",
+  },
+  {
     slug: "centrale-termoelettrica",
     mcId: "MC-ENE-3-02",
     titolo: "La centrale termoelettrica",

@@ -387,3 +387,37 @@ Ne aggiungo tre:
 - r. 27 e r. 50: lo spessore del cavo sottomarino è descritto in due modi diversi: «spessi come un tubo dell'idrante» (INNESCA) e «spessi più o meno come un tubo da giardino» (ESPLORA). In mare aperto il paragone corretto è il tubo da giardino; vicino alla costa il cavo è più grosso perché ha un'armatura in più. Proposta: uniformare r. 27 a «un tubo da giardino».
 - r. 27 e r. 124: «circa 600 cavi» e «oltre il 95% del traffico» sono dati che cambiano negli anni [DUBBIO: da ricontrollare su una fonte aggiornata prima di ogni edizione].
 
+
+## MC-AMB-2-01 — Strutture edilizie e tecniche costruttive
+
+(dalla verifica dei testi dell'esplorazione immersiva «Lo scheletro dell'edificio», 12 novembre 2026: rilievi di un secondo Claude, non ancora ricontrollati dall'autore)
+
+- r. 15: «solo roccia vulcanica e acqua di mare» per il Pantheon. Il calcestruzzo del Pantheon è calce, pozzolana e inerti leggeri (tufo, pomice); l'acqua di mare riguarda le opere marittime romane (porti).
+- r. 106: «il cemento gestisce la compressione» → «il calcestruzzo».
+- r. 153: «puoi abbattere qualsiasi parete interna senza problemi strutturali» è eccessivo e contraddice l'«Errore comune» di r. 305. Proposta: «di solito si possono spostare, dopo il controllo di un tecnico».
+- r. 155: «calcestruzzo liquido» → «fresco»; «in 28 giorni raggiunge il 95% della resistenza finale» [DUBBIO: 28 giorni è la scadenza convenzionale di prova, la resistenza cresce ancora]; «rimuovi le casseforme e la struttura è pronta»: le casseforme dei pilastri si tolgono dopo pochi giorni, i puntelli dei solai dopo qualche settimana.
+- r. 174: il legno lamellare «alternando le direzioni della fibra»: nel lamellare (glulam) le lamelle hanno fibre parallele; gli strati incrociati sono dell'X-lam (CLT).
+- r. 206: «Il Duomo di Pisa si inclina» → «La Torre (il campanile) di Pisa».
+- r. 218: «da materiale friabile e impermeabile» poco chiaro → «da materiale plastico, che l'acqua scioglie, a materiale duro».
+- r. 221–226: mattone pieno «15–30 MPa, meglio del calcestruzzo ordinario» contraddice i 25–40 MPa del calcestruzzo dati poco sotto. «Più di mezzo chilo» di cemento a persona al giorno è vero ma fuorviante: 4 miliardi di t/anno sono circa 1,4 kg.
+- r. 60 e r. 260: con l'isolamento alla base non è vero che il suolo si muove di 20–30 cm e l'edificio di 2–3 cm: sono gli isolatori a deformarsi; diminuiscono accelerazioni e spostamenti tra i piani.
+- r. 202: pali «conficcati» vale solo per i pali infissi; quelli trivellati si scavano e si gettano.
+- r. 321: «opus caementicium, la pozzolana del Pantheon» confonde una tecnica con un ingrediente.
+- r. 354: «grattacieli bassi e intermedi (10–30 piani) più a rischio» [DUBBIO]; sono più vulnerabili ai periodi tipici dei sismi gli edifici in c.a. di 3–10 piani.
+
+## MC-MAT-1-05 — I metalli: proprietà, lavorazione e riciclo
+
+(dalla verifica dei testi dell'esplorazione immersiva «L'acciaieria», 12 novembre 2026: rilievi di un secondo Claude, non ancora ricontrollati dall'autore)
+
+- r. 107: «Da una tonnellata di ematite si ricavano circa 700 kg di ferro» vale per l'ematite pura (69,9% Fe); il minerale reale ne contiene circa il 55-65%.
+- r. 125: «temperature fino a 1.500°C» nell'altoforno: davanti alle tubiere si superano i 2.000 °C; 1.500 °C è la temperatura della ghisa.
+- r. 129: la superiore resistenza dell'acciaio dolce è spiegata con la deformazione prima della rottura: confonde resistenza e duttilità/tenacità.
+- r. 141: acciaio ad alto carbonio «si rompe se cade a terra»: vale per l'acciaio temprato, non in generale.
+- r. 143: l'inox contiene «nichel»: non sempre (gli inox ferritici no).
+- r. 221: «il materiale del primo dirigibile Zeppelin»: l'LZ 1 (1900) è precedente al duralluminio (1906); gli aerei della Prima guerra mondiale erano in gran parte di legno e tela. «precipitazione hardering» → «indurimento per precipitazione».
+- r. 259: «Il zinco» → «Lo zinco» (due volte). r. 276: «immergedolo» → «immergendolo». r. 294: «dello scocco» → «della scocca». r. 308: «coils» → «bobine».
+- r. 292: «punte del 70% in paesi come l'Italia»: dato superato, in Italia l'acciaio da forno elettrico è circa l'89% (worldsteel, World Steel in Figures 2025). Il «30% dell'energia» [DUBBIO: plausibile, non verificato su fonte primaria].
+- r. 302: «L'acciaio al carbonio medio è il più saldabile in assoluto»: il più saldabile è l'acciaio dolce; «le molecole si fondono»: nei metalli non ci sono molecole.
+- r. 304: «Il bronzo… è stato il primo metallo fuso dall'uomo» contraddice r. 180 (il rame).
+- r. 468: rame, zinco e ottone non sono paramagnetici ma diamagnetici: meglio «non magnetici (non attratti dalla calamita)».
+- r. 174: il paragone con «20 centrali elettriche» [DUBBIO: non verificato].

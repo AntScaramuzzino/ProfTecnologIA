@@ -298,6 +298,16 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   .panel-in, .mark .dot, .mark .lead, .mark .tag { transition: none; }
 }
 
+/* visita guidata, lettura ad alta voce, lingua */
+.pill.media { gap: 0; }
+.pill button.on { background-color: rgba(255, 255, 255, .62); }
+#btnPlay .i-stop, #btnPlay.on .i-play, #btnSound .i-on, #btnSound.on .i-off { display: none; }
+#btnPlay.on .i-stop, #btnSound.on .i-on { display: block; }
+#btnLang { font: 600 13px/1 var(--mono, ui-monospace, monospace); letter-spacing: .04em; }
+.app.touring .marks .mark.go { pointer-events: none; }
+@media (max-width: 640px) { .pill.media button { width: 34px; } }
+@media (max-width: 480px) { .pill.media button { width: 30px; } .pill.media { padding: 0 3px; } #btnFull { display: none; } .bar { gap: 6px; } }
+
 /* Nel libro: gli stessi caratteri delle altre attività (Atkinson Hyperlegible, JetBrains Mono) */
 :root { --display: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --body: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
 .head h1 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(25px, 3vw, 35px); }
@@ -331,6 +341,17 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
         <ol class="crumbs" id="crumbs"></ol>
       </nav>
       <span class="grow"></span>
+      <div class="pill media" id="media">
+        <button type="button" id="btnPlay" aria-pressed="false" aria-label="Visita guidata">
+          <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.2-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z" fill="currentColor"/></svg>
+          <svg class="i-stop" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="6.5" width="11" height="11" rx="2" fill="currentColor"/></svg>
+        </button>
+        <button type="button" id="btnSound" aria-pressed="false" aria-label="Lettura ad alta voce: spenta">
+          <svg class="i-on" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5H4Z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+          <svg class="i-off" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9.5v5h3.5L12 19V5L7.5 9.5H4Z" fill="currentColor"/><path d="m16 9.5 5 5M21 9.5l-5 5"/></svg>
+        </button>
+        <button type="button" id="btnLang" class="lang" aria-label="Lingua">IT</button>
+      </div>
       <div class="pill">
         <span class="count" id="count"></span>
         <button type="button" id="btnShare" aria-haspopup="dialog" aria-expanded="false" aria-controls="share" aria-label="Condividi">
@@ -373,6 +394,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 </div>
 <script>window.ESPLORAZIONE_URL = 'https://book.proftecnologia.it/embeds/esplorazioni/centrale-termoelettrica/index.html';</script>
 <script src="dati.js"></script>
+<script src="testi.js"></script>
 <script>
 /* Motore dell'esplorazione: legge window.ESPLORAZIONE (vedi dati.js) e non contiene contenuti. */
 (() => {
@@ -386,6 +408,31 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   const layers = [$('layerA'), $('layerB')];
   const pic = (i) => layers[i].firstElementChild;
   const img = (i) => pic(i).firstElementChild;
+
+  /* ---------- lingua: italiano in dati.js, inglese e francese in testi.js (window.ESPLORAZIONE_TESTI) ---------- */
+  const TR = window.ESPLORAZIONE_TESTI || {};
+  const LANGS = ['it', ...['en', 'fr'].filter((l) => TR[l])];
+  const LKEY = 'esplorazione:lingua';
+  let LANG = (location.search.match(/[?&]lang=(it|en|fr)\b/) || [])[1];
+  if (!LANG) { try { LANG = localStorage.getItem(LKEY) || ''; } catch (e) { LANG = ''; } }
+  if (!LANGS.includes(LANG)) LANG = 'it';
+  if (LANG !== 'it') {
+    const t = TR[LANG];
+    if (t.catena && D.catena) Object.assign(D.catena, t.catena);
+    Object.entries(t.nodi || {}).forEach(([id, n]) => {
+      const o = D.nodi[id];
+      if (!o) return;
+      ['titolo', 'testo', 'alt'].forEach((k) => { if (n[k]) o[k] = n[k]; });
+      (n.punti || []).forEach((e, i) => { if (o.punti && o.punti[i] && e) o.punti[i].etichetta = e; });
+      (n.note || []).forEach((x, i) => { if (o.note && o.note[i] && x) Object.assign(o.note[i], x); });
+    });
+  }
+  const UI = {
+    it: { explore: 'Esplora: ', seen: ' (già vista)', explain: 'Spiegazione: ', back: 'Torna a: ', backScene: 'Torna al testo della scena: ', closeTip: 'Chiudi la spiegazione e torna a: ', chain: 'Fasi in questa scena', found: 'Scoperte ', foundOf: (a, b) => `Scene scoperte: ${a} su ${b}`, here: ' (sei qui)', fold: 'Riduci il testo', unfold: 'Mostra il testo', copied: 'Copiato.', manual: 'Testo selezionato: copialo con Ctrl+C.', where: 'Dove sei', all: 'Tutte le scene', share: 'Condividi', full: 'Schermo intero', points: 'Punti da esplorare', link: 'Link a questa scena', embed: 'Codice per inserirla in una pagina', copy: 'Copia', qrAlt: "QR code che apre l'esplorazione dall'inizio", qr: "QR code dell'esplorazione: porta alla scena iniziale.", png: 'Scarica PNG', svg: 'Scarica SVG', play: 'Visita guidata', stop: 'Ferma la visita guidata', soundOn: 'Lettura ad alta voce: attiva', soundOff: 'Lettura ad alta voce: spenta', lang: 'Lingua', langName: 'Italiano' },
+    en: { explore: 'Explore: ', seen: ' (already seen)', explain: 'Explanation: ', back: 'Back to: ', backScene: 'Back to the scene text: ', closeTip: 'Close the explanation and go back to: ', chain: 'Stages in this scene', found: 'Found ', foundOf: (a, b) => `Scenes found: ${a} of ${b}`, here: ' (you are here)', fold: 'Hide the text', unfold: 'Show the text', copied: 'Copied.', manual: 'Text selected: copy it with Ctrl+C.', where: 'Where you are', all: 'All scenes', share: 'Share', full: 'Full screen', points: 'Points to explore', link: 'Link to this scene', embed: 'Code to embed it in a page', copy: 'Copy', qrAlt: 'QR code that opens the exploration from the start', qr: 'QR code of the exploration: it opens the first scene.', png: 'Download PNG', svg: 'Download SVG', play: 'Guided tour', stop: 'Stop the guided tour', soundOn: 'Read aloud: on', soundOff: 'Read aloud: off', lang: 'Language', langName: 'English' },
+    fr: { explore: 'Explorer : ', seen: ' (déjà vue)', explain: 'Explication : ', back: 'Retour à : ', backScene: 'Retour au texte de la scène : ', closeTip: "Fermer l'explication et revenir à : ", chain: 'Étapes dans cette scène', found: 'Découvertes ', foundOf: (a, b) => `Scènes découvertes : ${a} sur ${b}`, here: ' (tu es ici)', fold: 'Réduire le texte', unfold: 'Afficher le texte', copied: 'Copié.', manual: 'Texte sélectionné : copie-le avec Ctrl+C.', where: 'Où tu es', all: 'Toutes les scènes', share: 'Partager', full: 'Plein écran', points: 'Points à explorer', link: 'Lien vers cette scène', embed: "Code pour l'insérer dans une page", copy: 'Copier', qrAlt: "QR code qui ouvre l'exploration depuis le début", qr: "QR code de l'exploration : il ouvre la première scène.", png: 'Télécharger PNG', svg: 'Télécharger SVG', play: 'Visite guidée', stop: 'Arrêter la visite guidée', soundOn: 'Lecture à voix haute : activée', soundOff: 'Lecture à voix haute : désactivée', lang: 'Langue', langName: 'Français' },
+  };
+  const U = UI[LANG];
 
   const N = D.nodi, ids = Object.keys(N);
   const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -489,7 +536,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       dot.type = tag.type = 'button';
       dot.tabIndex = -1;
       dot.setAttribute('aria-hidden', 'true');
-      tag.setAttribute('aria-label', 'Esplora: ' + p.etichetta + (seen.has(p.vai) ? ' (già vista)' : ''));
+      tag.setAttribute('aria-label', U.explore + p.etichetta + (seen.has(p.vai) ? U.seen : ''));
       const act = () => (el.classList.contains('off') ? panTo(p) : goTo(p.vai));
       dot.addEventListener('click', act);
       tag.addEventListener('click', act);
@@ -497,7 +544,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       dot.type = tag.type = 'button';
       dot.tabIndex = -1;
       dot.setAttribute('aria-hidden', 'true');
-      tag.setAttribute('aria-label', 'Spiegazione: ' + p.etichetta);
+      tag.setAttribute('aria-label', U.explain + p.etichetta);
       tag.setAttribute('aria-pressed', 'false');
       const act = () => showTip(p);
       dot.addEventListener('click', act);
@@ -789,7 +836,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       if (last) el.setAttribute('aria-current', 'page');
       else {
         el.type = 'button';
-        el.setAttribute('aria-label', 'Torna a: ' + N[n].titolo);
+        el.setAttribute('aria-label', U.back + N[n].titolo);
         el.insertAdjacentHTML('beforeend', CHEV);
         el.addEventListener('click', () => goTo(n));
       }
@@ -821,7 +868,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     $('text').textContent = tip.testo;
     const b = $('btnScene');
     b.lastElementChild.textContent = N[cur()].titolo;
-    b.setAttribute('aria-label', 'Torna al testo della scena: ' + N[cur()].titolo);
+    b.setAttribute('aria-label', U.backScene + N[cur()].titolo);
     b.hidden = false;
   }
   function swapPanel(paint) {
@@ -873,17 +920,19 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     markTip();
     setGlow(null);
     if (stacked()) {
+      if (sound && !touring) sayNote(cur(), p);
       closeCard();
       if (panel.classList.contains('folded')) btnFold.click();
       swapPanel(paintTip);
       return;
     }
     if (inPanel) { $('btnScene').hidden = true; setTextOnly(cur()); }
+    if (sound && !touring) sayNote(cur(), p);
     $('tipTitle').textContent = p.titolo || p.etichetta;
     $('tipText').textContent = p.testo;
     const b = $('btnTipBack');
     b.lastElementChild.textContent = N[cur()].titolo;
-    b.setAttribute('aria-label', 'Chiudi la spiegazione e torna a: ' + N[cur()].titolo);
+    b.setAttribute('aria-label', U.closeTip + N[cur()].titolo);
     card.hidden = false;
     app.classList.add('tipping');
     placeCard();
@@ -892,6 +941,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   function hideTip() {
     if (!tip || busy) return;
     tip = null;
+    if (!touring) stopVoice();
     markTip();
     if (!card.hidden) { closeCard(); layout(); }
     else swapPanel(() => setText(cur()));
@@ -913,7 +963,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     if (D.catena && D.catena.fasi) {
       ch.hidden = false;
       ch.textContent = '';
-      ch.setAttribute('aria-label', 'Forme di energia in questa scena');
+      ch.setAttribute('aria-label', U.chain);
       const lab = document.createElement('li');
       lab.className = 'lab';
       lab.textContent = D.catena.etichetta || '';
@@ -932,9 +982,9 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     c.textContent = '';
     const w = document.createElement('span');
     w.className = 'w';
-    w.textContent = 'Scoperte ';
+    w.textContent = U.found;
     c.append(w, `${seen.size}/${ids.length}`);
-    c.setAttribute('aria-label', `Scene scoperte: ${seen.size} su ${ids.length}`);
+    c.setAttribute('aria-label', U.foundOf(seen.size, ids.length));
     c.classList.toggle('all', seen.size === ids.length);
   }
   function arrive() {
@@ -948,6 +998,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     marks.classList.remove('hide');
     panel.classList.remove('swap');
     warm(id);
+    if (sound && !touring) sayScene(id);
     try {
       const h = decodeURIComponent(location.hash.slice(1));
       if (h !== id && !(id === D.radice && !h)) {
@@ -967,6 +1018,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     closeShare();
     tip = null;
     closeCard();
+    if (!touring) stopVoice();
     fingers.clear(); grip = null;
     marks.classList.add('hide');
     panel.classList.add('swap');
@@ -1061,7 +1113,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       pip.setAttribute('aria-hidden', 'true');
       t.textContent = N[id].titolo;
       b.append(pip, t);
-      b.setAttribute('aria-label', N[id].titolo + (id === cur() ? ' (sei qui)' : seen.has(id) ? ' (già vista)' : ''));
+      b.setAttribute('aria-label', N[id].titolo + (id === cur() ? U.here : seen.has(id) ? U.seen : ''));
       if (id === cur()) { b.setAttribute('aria-current', 'true'); here = b; }
       b.addEventListener('click', () => { closeMenu(); goTo(id); });
       menu.appendChild(b);
@@ -1092,7 +1144,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   btnFold.addEventListener('click', () => {
     const folded = panel.classList.toggle('folded');
     btnFold.setAttribute('aria-expanded', String(!folded));
-    btnFold.setAttribute('aria-label', folded ? 'Mostra il testo' : 'Riduci il testo');
+    btnFold.setAttribute('aria-label', folded ? U.unfold : U.fold);
   });
   /* ---------- condividi: link della scena, codice per incorporare, QR code ---------- */
   // L'indirizzo pubblico lo scrive la costruzione della pagina (versione del libro) o dati.js (indirizzo: "https://…/");
@@ -1100,8 +1152,8 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   const pubUrl = ((window.ESPLORAZIONE_URL || '').replace(/index\.html$/, '') || D.indirizzo || location.href.split(/[?#]/)[0].replace(/index\.html$/, '')).replace(/\/?$/, '/');
   function openShare() {
     closeMenu();
-    $('shLink').value = pubUrl + 'index.html' + (cur() === D.radice ? '' : '#' + cur());
-    $('shEmbed').value = `<iframe src="${pubUrl}index.html?incorporata=1" title="${(N[D.radice].titolo || '').replace(/"/g, '&quot;')}" style="width:100%;aspect-ratio:5/4;min-height:420px;border:0" allow="fullscreen" allowfullscreen loading="lazy"></iframe>`;
+    $('shLink').value = pubUrl + 'index.html' + (LANG === 'it' ? '' : '?lang=' + LANG) + (cur() === D.radice ? '' : '#' + cur());
+    $('shEmbed').value = `<iframe src="${pubUrl}index.html?incorporata=1${LANG === 'it' ? '' : '&lang=' + LANG}" title="${(N[D.radice].titolo || '').replace(/"/g, '&quot;')}" style="width:100%;aspect-ratio:5/4;min-height:420px;border:0" allow="fullscreen" allowfullscreen loading="lazy"></iframe>`;
     $('shSaid').textContent = '';
     share.hidden = false;
     btnShare.setAttribute('aria-expanded', 'true');
@@ -1119,8 +1171,8 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     const f = $(b.dataset.copy), said = (t) => { $('shSaid').textContent = t; };
     f.focus();
     f.select();
-    const manual = () => { try { if (document.execCommand('copy')) return said('Copiato.'); } catch (err) { /* non permesso */ } said('Testo selezionato: copialo con Ctrl+C.'); };
-    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(f.value).then(() => said('Copiato.'), manual);
+    const manual = () => { try { if (document.execCommand('copy')) return said(U.copied); } catch (err) { /* non permesso */ } said(U.manual); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(f.value).then(() => said(U.copied), manual);
     else manual();
   });
   document.addEventListener('click', (e) => { if (!share.hidden && !e.target.closest('.share')) closeShare(); });
@@ -1146,6 +1198,115 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   if ('ResizeObserver' in window) new ResizeObserver(resized).observe(stage);
   else window.addEventListener('resize', resized);
 
+  /* ---------- lettura ad alta voce e visita guidata ---------- */
+  // File audio già registrati: audio/<lingua>/<scena>.mp3 (titolo e testo) e audio/<lingua>/<scena>.<n>.mp3
+  // (spiegazione della nota n). Se un file manca, la visita guidata aspetta il tempo di lettura del testo.
+  const SKEY = 'esplorazione:audio';
+  const btnPlay = $('btnPlay'), btnSound = $('btnSound'), btnLang = $('btnLang');
+  const voice = new Audio();
+  voice.preload = 'auto';
+  let sound = false, touring = false, tourRun = 0, hush = null;
+  try { sound = localStorage.getItem(SKEY) === '1'; } catch (e) { /* niente memoria: audio spento */ }
+  const audioOf = (id, i) => `audio/${LANG}/${id}${i === undefined ? '' : '.' + i}.mp3`;
+  const readTime = (txt) => Math.max(3500, (txt || '').split(/\s+/).length * 400);
+  function stopVoice() {
+    voice.pause();
+    if (hush) { const h = hush; hush = null; h(); }
+  }
+  // legge un file; si risolve alla fine, quando viene fermato o, se il file non c'è, dopo il tempo di lettura
+  function say(src, txt, always) {
+    stopVoice();
+    return new Promise((res) => {
+      let done = false;
+      const end = () => { if (!done) { done = true; voice.onended = voice.onerror = null; res(); } };
+      hush = end;
+      if (!sound) { if (always) setTimeout(end, readTime(txt)); else end(); return; }
+      voice.onended = end;
+      voice.onerror = () => setTimeout(end, always ? readTime(txt) : 0);
+      voice.src = src;
+      const pr = voice.play();
+      if (pr && pr.catch) pr.catch(() => setTimeout(end, always ? readTime(txt) : 0));
+    });
+  }
+  const sayScene = (id, always) => say(audioOf(id), N[id].titolo + '. ' + N[id].testo, always);
+  const sayNote = (id, p, always) => { const i = (N[id].note || []).indexOf(p); return i < 0 ? Promise.resolve() : say(audioOf(id, i), p.testo, always); };
+  function paintSound() {
+    btnSound.classList.toggle('on', sound);
+    btnSound.setAttribute('aria-pressed', String(sound));
+    btnSound.setAttribute('aria-label', sound ? U.soundOn : U.soundOff);
+    btnSound.title = sound ? U.soundOn : U.soundOff;
+  }
+  function paintPlay() {
+    btnPlay.classList.toggle('on', touring);
+    btnPlay.setAttribute('aria-pressed', String(touring));
+    btnPlay.setAttribute('aria-label', touring ? U.stop : U.play);
+    btnPlay.title = touring ? U.stop : U.play;
+    app.classList.toggle('touring', touring);
+  }
+  function stopTour() {
+    if (!touring) return;
+    touring = false;
+    tourRun++;
+    stopVoice();
+    paintPlay();
+  }
+  async function tour() {
+    const run = ++tourRun;
+    touring = true;
+    paintPlay();
+    const live = () => touring && run === tourRun;
+    const order = tree.map((t) => t.id);
+    let k = Math.max(0, order.indexOf(cur()));
+    for (; k < order.length && live(); k++) {
+      const id = order[k];
+      if (id !== cur()) { await goTo(id); while (busy && live()) await wait(120); }
+      if (!live()) return;
+      await wait(500);
+      await sayScene(id, true);
+      for (const p of (N[id].note || [])) {
+        if (!live()) return;
+        const el = [...marks.children].find((m) => m._p === p);
+        if (!p.testo || !el || el.hidden) continue;
+        await wait(400);
+        if (!live()) return;
+        showTip(p);
+        await sayNote(id, p, true);
+        if (!live()) return;
+        hideTip();
+        await wait(500);
+      }
+      if (live()) await wait(700);
+    }
+    if (live()) stopTour();
+  }
+  btnPlay.addEventListener('click', (e) => { e.stopPropagation(); if (touring) stopTour(); else tour(); });
+  btnSound.addEventListener('click', (e) => {
+    e.stopPropagation();
+    sound = !sound;
+    try { localStorage.setItem(SKEY, sound ? '1' : '0'); } catch (err) { /* resta per questa visita */ }
+    paintSound();
+    if (!sound) { voice.pause(); if (!touring) stopVoice(); }
+    else if (!touring) { if (tip) sayNote(cur(), tip); else sayScene(cur()); }
+  });
+  // un gesto di chi guarda ferma la visita guidata
+  ['pointerdown', 'wheel'].forEach((ev) => stage.addEventListener(ev, (e) => { if (touring && !e.target.closest('#btnPlay, #btnSound')) stopTour(); }, { capture: true, passive: true }));
+  panel.addEventListener('pointerdown', () => stopTour());
+  document.addEventListener('keydown', (e) => { if (touring && e.key !== 'Tab') stopTour(); }, { capture: true });
+  // lingua: si ricarica la pagina nella lingua scelta, sulla stessa scena
+  btnLang.textContent = LANG.toUpperCase();
+  btnLang.setAttribute('aria-label', U.lang + ': ' + U.langName);
+  btnLang.title = U.lang;
+  if (LANGS.length < 2) btnLang.hidden = true;
+  btnLang.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const next = LANGS[(LANGS.indexOf(LANG) + 1) % LANGS.length];
+    try { localStorage.setItem(LKEY, next); } catch (err) { /* vale solo l'indirizzo */ }
+    const q = location.search.replace(/([?&])lang=[a-z]+&?/, '$1').replace(/[?&]$/, '');
+    location.replace(location.pathname + (q ? q + '&' : '?') + 'lang=' + next + location.hash);
+  });
+  paintSound();
+  paintPlay();
+
   /* ---------- dentro il libro: le scene già viste dallo studente ---------- */
   if (embedded) {
     window.addEventListener('message', (e) => {
@@ -1161,7 +1322,17 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 
   /* ---------- avvio ---------- */
   (async () => {
-    document.documentElement.lang = D.lingua || 'it';
+    document.documentElement.lang = LANG;
+    if (LANG !== 'it') {
+      const set = (sel, attr, v) => { const el = document.querySelector(sel); if (el) { if (attr) el.setAttribute(attr, v); else el.textContent = v; } };
+      set('#nav', 'aria-label', U.where); set('#btnPath', 'aria-label', U.all); set('#menu', 'aria-label', U.all);
+      set('#btnShare', 'aria-label', U.share); set('#share', 'aria-label', U.share); set('#btnFull', 'aria-label', U.full);
+      set('#marks', 'aria-label', U.points); set('label[for="shLink"]', null, U.link); set('label[for="shEmbed"]', null, U.embed);
+      document.querySelectorAll('[data-copy]').forEach((b) => { b.textContent = U.copy; });
+      set('#shQr img', 'alt', U.qrAlt); set('#shQrPng', null, U.png); set('#shQrSvg', null, U.svg);
+      const qp = $('shQr').querySelector('p'); if (qp && qp.firstChild) qp.firstChild.textContent = U.qr;
+      btnFold.setAttribute('aria-label', U.fold);
+    }
     let id = D.radice;
     try { const h = decodeURIComponent(location.hash.slice(1)); if (N[h]) id = h; } catch (e) { /* si parte dall'inizio */ }
     path = chainTo(id);

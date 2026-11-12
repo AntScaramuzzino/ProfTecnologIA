@@ -108,7 +108,7 @@ window.ESPLORAZIONE = {
 
     turbina: {
       titolo: "Turbina",
-      testo: "La turbina è una ruota d'acciaio con pale sagomate. L'acqua in pressione colpisce le pale e fa ruotare l'albero: l'energia cinetica dell'acqua diventa energia meccanica. Questa è una turbina Pelton, adatta ai grandi salti di montagna; per salti medi si usa la Francis, per salti bassi con molta acqua la Kaplan.",
+      testo: "La turbina è una ruota d'acciaio con pale sagomate. Il getto d'acqua colpisce le pale e fa ruotare l'albero: l'energia cinetica dell'acqua diventa energia meccanica. Questa è una turbina Pelton, adatta ai grandi salti di montagna; per salti medi si usa la Francis, per salti bassi con molta acqua la Kaplan.",
       img: "img/turbina.webp",
       alt: "Turbina Pelton con la cassa aperta: una ruota con una corona di pale d'acciaio lucido a forma di cucchiaio, e a sinistra l'ugello puntato verso le pale.",
       fuoco: [52, 50],

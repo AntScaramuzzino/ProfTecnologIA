@@ -310,7 +310,7 @@ window.ESPLORAZIONE = {
       fuoco: [50, 50],
       fasi: [5],
       note: [
-        { x: 48, y: 54, etichetta: "Fiocco di batteri", verso: "giu", testo: "Migliaia di batteri incollati tra loro. Uniti in fiocchi pesano abbastanza da depositarsi nella vasca successiva." },
+        { x: 48, y: 54, etichetta: "Fiocco di batteri", verso: "giu", testo: "Milioni di batteri incollati tra loro. Uniti in fiocchi pesano abbastanza da depositarsi nella vasca successiva." },
         { x: 79, y: 38, etichetta: "Vorticelle", testo: "Protozoi a forma di campana, attaccati al fiocco con un gambo. Con le ciglia creano un vortice che porta loro i batteri." },
         { x: 17, y: 25, etichetta: "Protozoi che nuotano", testo: "Si spostano battendo le ciglia che li ricoprono e cacciano i batteri liberi nell'acqua." }
       ]

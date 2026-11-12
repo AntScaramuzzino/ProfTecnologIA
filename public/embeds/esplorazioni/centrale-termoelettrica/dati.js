@@ -93,7 +93,7 @@ window.ESPLORAZIONE = {
       fuoco: [55, 35],
       fasi: [1],
       note: [
-        { x: 56, y: 7, etichetta: "Fumi", verso: "giu", testo: "Contengono soprattutto azoto, vapore acqueo e anidride carbonica. Sono quasi trasparenti perché il gas, bruciando, non produce fuliggine." },
+        { x: 56, y: 7, etichetta: "Fumi", verso: "giu", testo: "Contengono soprattutto azoto, ossigeno, vapore acqueo e anidride carbonica. Sono quasi trasparenti perché il gas, bruciando, non produce fuliggine." },
         { x: 61, y: 24, etichetta: "Strumenti di misura", testo: "Sonde che analizzano i fumi senza interruzione. I dati servono a verificare che le emissioni restino entro i limiti di legge." }
       ]
     },
