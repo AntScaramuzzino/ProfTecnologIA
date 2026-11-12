@@ -29,6 +29,8 @@ if (!/(\/|\.html?)$/.test(location.pathname)) location.replace(location.pathname
   --line: rgba(255, 255, 255, .24);
   --water: #63d6cc;
   --volt: #f4b83a;
+  --part: #a8e6b4;   /* vista, con rami ancora da visitare: verde tenue */
+  --full: #16a34a;   /* completata: verde intenso */
   --volt-ink: #1c1503;
 
   /* Vetro chiaro (etichette cliccabili, comandi): lascia passare l'immagine, sfocata e schiarita */
@@ -108,12 +110,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .mark.go .dot, .mark.go .tag { pointer-events: auto; }
 .mark.go .dot { left: -14px; top: -14px; width: 28px; height: 28px; border: 5px solid #fff; background: rgba(8, 16, 18, .5); box-shadow: 0 0 0 6px rgba(255, 255, 255, .22), 0 2px 10px rgba(0, 0, 0, .45); }
 .mark.go .dot::after { content: ""; position: absolute; inset: -13px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .75); animation: ping 2.8s ease-out infinite; }
-.mark.go.seen .dot { background: var(--water); }
-.mark.go.seen .dot::after { animation: none; opacity: 0; }
+.mark.go.seen .dot { background: var(--part); }
+.mark.go.done .dot { background: var(--full); }
+.mark.go.done .dot::after { animation: none; opacity: 0; }
 .mark.go .lead { width: 36px; border-top: 2.5px dotted rgba(255, 255, 255, .95); }
-.mark.go.seen .lead { border-top-color: rgba(255, 255, 255, .7); }
+.mark.go.seen .lead, .mark.go.done .lead { border-top-color: rgba(255, 255, 255, .7); }
 .mark.go .tag { font: italic 500 var(--tag-size, 14px)/1 var(--mono); padding: 10px 16px; color: var(--glass-ink); background-color: var(--glass-fill); box-shadow: var(--glass-rim), var(--glass-drop); -webkit-backdrop-filter: var(--glass-fx); backdrop-filter: var(--glass-fx); }
-.mark.go.seen .tag { background-color: var(--glass-fill-seen); }
+.mark.go.seen .tag, .mark.go.done .tag { background-color: var(--glass-fill-seen); }
 .mark.go .tag:hover, .mark.go .tag:focus-visible, .mark.go .dot:hover + .lead + .tag { background-color: var(--glass-fill-hot); box-shadow: var(--glass-rim), 0 8px 26px rgba(0, 0, 0, .34); }
 .mark.go[data-s="r"] .tag { left: 39px; }
 .mark.go[data-s="l"] .tag { right: 39px; }
@@ -218,9 +221,10 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 .menu button { display: flex; width: 100%; align-items: center; gap: 10px; padding: 10px 12px 10px calc(12px + var(--d, 0) * 16px); border-radius: 12px; text-align: left; font: 400 15px/1.2 var(--body); transition: background-color .15s; }
 .menu button span { flex: 1; min-width: 0; }
 .menu button.way { font-weight: 500; }
-/* pallino: vuoto se la scena non è ancora stata vista, pieno se è già vista */
+/* pallino: vuoto se la scena non è stata vista, verde tenue se restano rami da visitare, verde intenso se completata */
 .menu .pip { flex: none; width: 10px; height: 10px; border-radius: 50%; box-shadow: inset 0 0 0 2px rgba(17, 32, 31, .45); }
-.menu button.seen .pip { background-color: #0d7a70; box-shadow: none; }
+.menu button.seen .pip { background-color: #9fdcab; box-shadow: inset 0 0 0 2px #3f9a55; }
+.menu button.done .pip { background-color: #15803d; box-shadow: none; }
 .menu button:hover { background-color: rgba(255, 255, 255, .55); }
 .menu button[aria-current="true"] { background-color: rgba(255, 255, 255, .6); font-weight: 600; }
 .menu button[aria-current="true"]::after { content: "✓"; font-weight: 600; }
@@ -428,9 +432,9 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     });
   }
   const UI = {
-    it: { explore: 'Esplora: ', seen: ' (già vista)', explain: 'Spiegazione: ', back: 'Torna a: ', backScene: 'Torna al testo della scena: ', closeTip: 'Chiudi la spiegazione e torna a: ', chain: 'Fasi in questa scena', found: 'Scoperte ', foundOf: (a, b) => `Scene scoperte: ${a} su ${b}`, here: ' (sei qui)', fold: 'Riduci il testo', unfold: 'Mostra il testo', copied: 'Copiato.', manual: 'Testo selezionato: copialo con Ctrl+C.', where: 'Dove sei', all: 'Tutte le scene', share: 'Condividi', full: 'Schermo intero', points: 'Punti da esplorare', link: 'Link a questa scena', embed: 'Codice per inserirla in una pagina', copy: 'Copia', qrAlt: "QR code che apre l'esplorazione dall'inizio", qr: "QR code dell'esplorazione: porta alla scena iniziale.", png: 'Scarica PNG', svg: 'Scarica SVG', play: 'Visita guidata', stop: 'Ferma la visita guidata', soundOn: 'Lettura ad alta voce: attiva', soundOff: 'Lettura ad alta voce: spenta', lang: 'Lingua', langName: 'Italiano' },
-    en: { explore: 'Explore: ', seen: ' (already seen)', explain: 'Explanation: ', back: 'Back to: ', backScene: 'Back to the scene text: ', closeTip: 'Close the explanation and go back to: ', chain: 'Stages in this scene', found: 'Found ', foundOf: (a, b) => `Scenes found: ${a} of ${b}`, here: ' (you are here)', fold: 'Hide the text', unfold: 'Show the text', copied: 'Copied.', manual: 'Text selected: copy it with Ctrl+C.', where: 'Where you are', all: 'All scenes', share: 'Share', full: 'Full screen', points: 'Points to explore', link: 'Link to this scene', embed: 'Code to embed it in a page', copy: 'Copy', qrAlt: 'QR code that opens the exploration from the start', qr: 'QR code of the exploration: it opens the first scene.', png: 'Download PNG', svg: 'Download SVG', play: 'Guided tour', stop: 'Stop the guided tour', soundOn: 'Read aloud: on', soundOff: 'Read aloud: off', lang: 'Language', langName: 'English' },
-    fr: { explore: 'Explorer : ', seen: ' (déjà vue)', explain: 'Explication : ', back: 'Retour à : ', backScene: 'Retour au texte de la scène : ', closeTip: "Fermer l'explication et revenir à : ", chain: 'Étapes dans cette scène', found: 'Découvertes ', foundOf: (a, b) => `Scènes découvertes : ${a} sur ${b}`, here: ' (tu es ici)', fold: 'Réduire le texte', unfold: 'Afficher le texte', copied: 'Copié.', manual: 'Texte sélectionné : copie-le avec Ctrl+C.', where: 'Où tu es', all: 'Toutes les scènes', share: 'Partager', full: 'Plein écran', points: 'Points à explorer', link: 'Lien vers cette scène', embed: "Code pour l'insérer dans une page", copy: 'Copier', qrAlt: "QR code qui ouvre l'exploration depuis le début", qr: "QR code de l'exploration : il ouvre la première scène.", png: 'Télécharger PNG', svg: 'Télécharger SVG', play: 'Visite guidée', stop: 'Arrêter la visite guidée', soundOn: 'Lecture à voix haute : activée', soundOff: 'Lecture à voix haute : désactivée', lang: 'Langue', langName: 'Français' },
+    it: { explore: 'Esplora: ', seen: ' (già vista, restano rami da visitare)', done: ' (completata)', explain: 'Spiegazione: ', back: 'Torna a: ', backScene: 'Torna al testo della scena: ', closeTip: 'Chiudi la spiegazione e torna a: ', chain: 'Fasi in questa scena', found: 'Scoperte ', foundOf: (a, b) => `Scene scoperte: ${a} su ${b}`, here: ' (sei qui)', fold: 'Riduci il testo', unfold: 'Mostra il testo', copied: 'Copiato.', manual: 'Testo selezionato: copialo con Ctrl+C.', where: 'Dove sei', all: 'Tutte le scene', share: 'Condividi', full: 'Schermo intero', points: 'Punti da esplorare', link: 'Link a questa scena', embed: 'Codice per inserirla in una pagina', copy: 'Copia', qrAlt: "QR code che apre l'esplorazione dall'inizio", qr: "QR code dell'esplorazione: porta alla scena iniziale.", png: 'Scarica PNG', svg: 'Scarica SVG', play: 'Visita guidata', stop: 'Ferma la visita guidata', soundOn: 'Lettura ad alta voce: attiva', soundOff: 'Lettura ad alta voce: spenta', lang: 'Lingua', langName: 'Italiano' },
+    en: { explore: 'Explore: ', seen: ' (seen, some branches still to visit)', done: ' (completed)', explain: 'Explanation: ', back: 'Back to: ', backScene: 'Back to the scene text: ', closeTip: 'Close the explanation and go back to: ', chain: 'Stages in this scene', found: 'Found ', foundOf: (a, b) => `Scenes found: ${a} of ${b}`, here: ' (you are here)', fold: 'Hide the text', unfold: 'Show the text', copied: 'Copied.', manual: 'Text selected: copy it with Ctrl+C.', where: 'Where you are', all: 'All scenes', share: 'Share', full: 'Full screen', points: 'Points to explore', link: 'Link to this scene', embed: 'Code to embed it in a page', copy: 'Copy', qrAlt: 'QR code that opens the exploration from the start', qr: 'QR code of the exploration: it opens the first scene.', png: 'Download PNG', svg: 'Download SVG', play: 'Guided tour', stop: 'Stop the guided tour', soundOn: 'Read aloud: on', soundOff: 'Read aloud: off', lang: 'Language', langName: 'English' },
+    fr: { explore: 'Explorer : ', seen: ' (déjà vue, il reste des branches à visiter)', done: ' (terminée)', explain: 'Explication : ', back: 'Retour à : ', backScene: 'Retour au texte de la scène : ', closeTip: "Fermer l'explication et revenir à : ", chain: 'Étapes dans cette scène', found: 'Découvertes ', foundOf: (a, b) => `Scènes découvertes : ${a} sur ${b}`, here: ' (tu es ici)', fold: 'Réduire le texte', unfold: 'Afficher le texte', copied: 'Copié.', manual: 'Texte sélectionné : copie-le avec Ctrl+C.', where: 'Où tu es', all: 'Toutes les scènes', share: 'Partager', full: 'Plein écran', points: 'Points à explorer', link: 'Lien vers cette scène', embed: "Code pour l'insérer dans une page", copy: 'Copier', qrAlt: "QR code qui ouvre l'exploration depuis le début", qr: "QR code de l'exploration : il ouvre la première scène.", png: 'Télécharger PNG', svg: 'Télécharger SVG', play: 'Visite guidée', stop: 'Arrêter la visite guidée', soundOn: 'Lecture à voix haute : activée', soundOff: 'Lecture à voix haute : désactivée', lang: 'Langue', langName: 'Français' },
   };
   const U = UI[LANG];
 
@@ -471,6 +475,8 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     (N[id].punti || []).forEach((p) => { if (p.vai && N[p.vai] && parent[p.vai] && parent[p.vai].id === id) walk(p.vai, d + 1); });
   })(D.radice, 0);
   ids.forEach((id) => { if (!placed.has(id)) tree.push({ id, d: 0 }); });
+  // rami di una scena: le scene figlie nell'albero
+  const kids = (id) => (N[id].punti || []).map((p) => p.vai).filter((v) => v && N[v] && parent[v] && parent[v].id === id);
 
   let front = 0, path = [D.radice], cam = { cx: .5, cy: .5, z: 1 }, busy = false, wanted = null;
   let tip = null;   // la parte di cui si sta leggendo la spiegazione (una nota con un testo), se c'è
@@ -481,6 +487,10 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   const seen = new Set();
   const stored = () => { try { return JSON.parse(localStorage.getItem(KEY) || '[]').filter((i) => N[i]); } catch (e) { return []; } };
   if (!embedded) stored().forEach((i) => seen.add(i));
+  // tre stati: non vista, vista con rami ancora da visitare, completata (vista con tutto ciò che sta sotto)
+  const complete = (id, k = new Set()) => { if (!seen.has(id) || k.has(id)) return seen.has(id); k.add(id); return kids(id).every((c) => complete(c, k)); };
+  const state = (id) => (!seen.has(id) ? '' : complete(id) ? 'done' : 'seen');
+  const said = (id) => (complete(id) ? U.done : seen.has(id) ? U.seen : '');
   const remember = () => { try { localStorage.setItem(KEY, JSON.stringify([...new Set([...(embedded ? stored() : []), ...seen])])); } catch (e) { /* senza memoria va bene lo stesso */ } };
 
   const cur = () => path[path.length - 1];
@@ -525,7 +535,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   /* ---------- punti ed etichette ---------- */
   function mark(p, go) {
     const el = document.createElement('div'), more = !go && !!p.testo;   // nota con una spiegazione: si può toccare
-    el.className = 'mark ' + (go ? 'go' : 'note') + (go && seen.has(p.vai) ? ' seen' : '') + (more ? ' tip' : '');
+    el.className = 'mark ' + (go ? 'go' : 'note') + (go && state(p.vai) ? ' ' + state(p.vai) : '') + (more ? ' tip' : '');
     el._p = p;
     const dot = document.createElement(go || more ? 'button' : 'span');
     const lead = document.createElement('span');
@@ -536,7 +546,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       dot.type = tag.type = 'button';
       dot.tabIndex = -1;
       dot.setAttribute('aria-hidden', 'true');
-      tag.setAttribute('aria-label', U.explore + p.etichetta + (seen.has(p.vai) ? U.seen : ''));
+      tag.setAttribute('aria-label', U.explore + p.etichetta + said(p.vai));
       const act = () => (el.classList.contains('off') ? panTo(p) : goTo(p.vai));
       dot.addEventListener('click', act);
       tag.addEventListener('click', act);
@@ -1107,13 +1117,13 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       const b = document.createElement('button'), pip = document.createElement('i'), t = document.createElement('span');
       b.type = 'button';
       b.setAttribute('role', 'menuitem');
-      b.className = (seen.has(id) ? 'seen' : '') + (open.has(id) ? ' way' : '');
+      b.className = state(id) + (open.has(id) ? ' way' : '');
       b.style.setProperty('--d', Math.min(d, 6));
       pip.className = 'pip';
       pip.setAttribute('aria-hidden', 'true');
       t.textContent = N[id].titolo;
       b.append(pip, t);
-      b.setAttribute('aria-label', N[id].titolo + (id === cur() ? U.here : seen.has(id) ? U.seen : ''));
+      b.setAttribute('aria-label', N[id].titolo + (id === cur() ? U.here : said(id)));
       if (id === cur()) { b.setAttribute('aria-current', 'true'); here = b; }
       b.addEventListener('click', () => { closeMenu(); goTo(id); });
       menu.appendChild(b);
