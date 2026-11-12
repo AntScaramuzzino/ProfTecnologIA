@@ -95,7 +95,7 @@ export default function EsplorazioneEmbed({
           title={`Esplorazione immersiva: ${esplorazione.titolo}`}
           className="block aspect-[9/16] h-[min(177cqw,calc(100dvh-8.5rem))] min-h-[26rem] w-full border-0 sm:aspect-[5/4] @lg:h-[min(calc(56.25cqw+13.75rem),calc(100dvh-8.5rem))]"
           loading="lazy"
-          allow="fullscreen"
+          allow="fullscreen; autoplay"
           allowFullScreen
         />
       </div>

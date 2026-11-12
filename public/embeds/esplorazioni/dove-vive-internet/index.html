@@ -1209,25 +1209,58 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   try { sound = localStorage.getItem(SKEY) === '1'; } catch (e) { /* niente memoria: audio spento */ }
   const audioOf = (id, i) => `audio/${LANG}/${id}${i === undefined ? '' : '.' + i}.mp3`;
   const readTime = (txt) => Math.max(3500, (txt || '').split(/\s+/).length * 400);
+  // voce di riserva: se un file manca o non parte, legge la sintesi vocale del browser (la voce migliore disponibile)
+  const synth = window.speechSynthesis || null;
+  const BCP = { it: 'it-IT', en: 'en-GB', fr: 'fr-FR' }[LANG];
+  const pickVoice = () => {
+    if (!synth) return null;
+    const vs = synth.getVoices().filter((v) => (v.lang || '').toLowerCase().replace('_', '-').startsWith(LANG));
+    const rank = (v) => (/natural|neural|online|premium|enhanced/i.test(v.name) ? 0 : /google/i.test(v.name) ? 1 : 2) + ((v.lang || '').replace('_', '-') === BCP ? 0 : .5);
+    return vs.sort((x, y) => rank(x) - rank(y))[0] || null;
+  };
+  function speak(txt, end, always) {
+    if (!synth || !window.SpeechSynthesisUtterance) { setTimeout(end, always ? readTime(txt) : 0); return; }
+    const u = new SpeechSynthesisUtterance(txt);
+    u.lang = BCP;
+    const v = pickVoice();
+    if (v) u.voice = v;
+    u.onend = end;
+    u.onerror = () => setTimeout(end, always ? readTime(txt) : 0);
+    synth.cancel();
+    synth.speak(u);
+  }
   function stopVoice() {
     voice.pause();
+    if (synth) synth.cancel();
     if (hush) { const h = hush; hush = null; h(); }
   }
-  // legge un file; si risolve alla fine, quando viene fermato o, se il file non c'è, dopo il tempo di lettura
+  // legge un file; si risolve alla fine, quando viene fermato o, se non c'è modo di leggerlo, dopo il tempo di lettura
   function say(src, txt, always) {
     stopVoice();
     return new Promise((res) => {
       let done = false;
-      const end = () => { if (!done) { done = true; voice.onended = voice.onerror = null; res(); } };
+      const end = () => { if (!done) { done = true; voice.onended = voice.onerror = null; if (hush === end) hush = null; res(); } };
       hush = end;
       if (!sound) { if (always) setTimeout(end, readTime(txt)); else end(); return; }
+      let fell = false;
+      const fallback = () => { if (done || fell || hush !== end) return; fell = true; speak(txt, end, always); };
       voice.onended = end;
-      voice.onerror = () => setTimeout(end, always ? readTime(txt) : 0);
+      voice.onerror = fallback;
       voice.src = src;
       const pr = voice.play();
-      if (pr && pr.catch) pr.catch(() => setTimeout(end, always ? readTime(txt) : 0));
+      if (pr && pr.catch) pr.catch(fallback);
     });
   }
+  // Safari e i telefoni lasciano suonare solo dopo un gesto: al primo tocco l'elemento audio e la sintesi vocale si sbloccano
+  const SILENT = 'data:audio/wav;base64,UklGRmQGAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YUAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA';
+  let unlocked = false;
+  const unlock = () => {
+    if (unlocked) return;
+    unlocked = true;
+    try { if (!voice.src || voice.paused) { voice.src = SILENT; const p = voice.play(); if (p && p.catch) p.catch(() => {}); } } catch (e) { /* niente audio */ }
+    try { if (synth && window.SpeechSynthesisUtterance) { const u = new SpeechSynthesisUtterance(' '); u.volume = 0; synth.speak(u); } } catch (e) { /* niente sintesi */ }
+  };
+  ['pointerdown', 'keydown', 'touchend'].forEach((ev) => document.addEventListener(ev, unlock, { capture: true, passive: true }));
   const sayScene = (id, always) => say(audioOf(id), N[id].titolo + '. ' + N[id].testo, always);
   const sayNote = (id, p, always) => { const i = (N[id].note || []).indexOf(p); return i < 0 ? Promise.resolve() : say(audioOf(id, i), p.testo, always); };
   function paintSound() {
@@ -1279,7 +1312,12 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     }
     if (live()) stopTour();
   }
-  btnPlay.addEventListener('click', (e) => { e.stopPropagation(); if (touring) stopTour(); else tour(); });
+  btnPlay.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (touring) { stopTour(); return; }
+    if (!sound) { sound = true; try { localStorage.setItem(SKEY, '1'); } catch (err) { /* resta per questa visita */ } paintSound(); }   // la visita guidata parte con la voce
+    tour();
+  });
   btnSound.addEventListener('click', (e) => {
     e.stopPropagation();
     sound = !sound;
