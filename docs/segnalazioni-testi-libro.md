@@ -421,3 +421,24 @@ Ne aggiungo tre:
 - r. 304: «Il bronzo… è stato il primo metallo fuso dall'uomo» contraddice r. 180 (il rame).
 - r. 468: rame, zinco e ottone non sono paramagnetici ma diamagnetici: meglio «non magnetici (non attratti dalla calamita)».
 - r. 174: il paragone con «20 centrali elettriche» [DUBBIO: non verificato].
+
+## MC-ENE-3-05 — Come funziona un motore? (dalla verifica dell'esplorazione «Il motore a quattro tempi», 13 novembre 2026)
+
+Trovate da un secondo Claude durante la verifica su fonti. Non applicate al testo del libro: da valutare.
+
+1. **Tabella diesel/benzina, riga «Emissioni di CO₂ per km» — errore.** Il diesel consuma meno carburante per km e, a parità di auto, emette meno CO₂ per km (di più solo per litro). Proposta: «benzina: maggiori · diesel: minori (consuma meno, anche se ogni litro produce più CO₂)». Fonte: Agenzia europea dell'ambiente, emissioni delle auto nuove.
+2. **Tabella termico/elettrico, «Componenti in movimento: 3 (rotore, statore, asse)» — errore.** Lo statore è fermo, come dice il testo poco sopra. Proposta: «pochi (rotore e asse, più i cuscinetti)».
+3. **Esempio sul limite di Carnot — errore concettuale.** Usa la temperatura dei gas di scarico (700 °C) come sorgente fredda; nella formula la sorgente fredda è l'ambiente (circa 300 K), e il limite verrebbe intorno all'85%. Ne discende anche «poco sopra la metà» in «In breve». Proposta: usare l'ambiente come sorgente fredda, oppure parlare del rendimento ideale del ciclo Otto (circa 60% con rapporto di compressione 10:1).
+4. **«alle ruote arriva più o meno un terzo» — imprecisione e incoerenza interna** con il 25–30% indicato in INNESCA. Il dato reale alle ruote è circa 12–30%. Proposta: «alle ruote arriva meno di un terzo, spesso un quarto». Fonte: U.S. Department of Energy, Fact of the Week #1044.
+5. **«le prime mine di carbone» — errore lessicale e storico.** Va «miniere», che esistevano già prima della macchina di Watt. Proposta: «e le miniere di carbone si allargarono, con condizioni di lavoro disumane».
+6. **Watt «fabbro» — imprecisione.** Era un costruttore di strumenti scientifici.
+7. **«il primo veicolo a motore della storia» (Benz) — imprecisione.** Esistevano già veicoli a vapore (Cugnot, 1769). Proposta: «la prima automobile con motore a benzina (brevetto del 1886)». Otto costruì il motore nel 1876 e lo brevettò nel 1877.
+8. **«Legge di Faraday-Laplace» — imprecisione.** La forza su un filo percorso da corrente in un campo magnetico è la forza di Laplace (o di Lorentz); Faraday riguarda l'induzione.
+9. **«Torque» nella tabella — stile.** In italiano «coppia».
+
+## MC-ALI-2-04 — Come arriva il cibo nel tuo piatto? (dalla verifica dell'esplorazione «Il frantoio», 13 novembre 2026)
+
+1. **Box «food miles» — fuorviante.** Le food miles sono una distanza, non tonnellate per chilometro; il confronto mette 200 g di fagiolini contro 1 kg di mele; la conclusione «il peso maggiore compensa la distanza minore» non torna (0,6 contro 1,2 t·km); manca il mezzo di trasporto, che il testo stesso indica come decisivo. Proposta: confrontare 1 kg con 1 kg (fagiolini 6 t·km, mele 0,6 t·km, dieci volte meno), poi ricordare che l'aereo emette molto più del camion per ogni t·km.
+2. **«the» — refuso:** va «tè».
+3. **«Vengono smistati» (le banane) — concordanza:** «Vengono smistate».
+4. **9.000 km nell'audio, «diecimila chilometri» nel testo — incoerenza:** scegliere un solo valore.

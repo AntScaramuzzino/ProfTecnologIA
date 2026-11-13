@@ -88,6 +88,26 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
       "Dal minerale di ferro alla bobina di lamiera: parco minerali, altoforno, convertitore, colata continua e laminatoio. Si scende fino ai grani e agli atomi dell'acciaio, e si torna indietro con il rottame e il forno elettrico.",
   },
   {
+    slug: "frantoio",
+    mcId: "MC-ALI-2-04",
+    titolo: "Il frantoio",
+    classe: 2,
+    area: "ALI",
+    scene: 15,
+    descrizione:
+      "Dall'oliveto alla tavola: raccolta, lavaggio, frangitura, gramolatura e decanter, fino alla bottiglia. Si scende dentro l'oliva, fino alle cellule della polpa e alle molecole dell'olio, e si scopre che cosa diventa la sansa.",
+  },
+  {
+    slug: "motore",
+    mcId: "MC-ENE-3-05",
+    titolo: "Il motore a quattro tempi",
+    classe: 3,
+    area: "ENE",
+    scene: 15,
+    descrizione:
+      "Sotto il cofano di un'auto a benzina: blocco, pistone e biella, albero motore, testata con valvole e candela, radiatore e scarico. Si scende fino alla scintilla tra gli elettrodi, alle molecole della benzina e al nido d'ape del catalizzatore.",
+  },
+  {
     slug: "centrale-termoelettrica",
     mcId: "MC-ENE-3-02",
     titolo: "La centrale termoelettrica",
