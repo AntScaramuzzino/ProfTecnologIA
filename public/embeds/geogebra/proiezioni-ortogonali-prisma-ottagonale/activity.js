@@ -187,6 +187,9 @@
   };
   const AUTO_VIEW = ["centro", "sinistra", "sinistra", "destra", "tutto"];
   let sheetView = NARROW ? "centro" : null;
+  // Sul telefono la carta millimetrata parte nascosta: a quella grandezza copre il disegno.
+  const PAPER_GRID_DEFAULT = !NARROW;
+  paperGridVisible = PAPER_GRID_DEFAULT;
   let viewStep = -1;
 
   const elements = {
@@ -1048,13 +1051,13 @@
       solvedSteps.clear();
       selectedOptions.clear();
       projectionGuidesVisible = false;
-      paperGridVisible = true;
+      paperGridVisible = PAPER_GRID_DEFAULT;
       vertexLabelsVisible = false;
       snapRotation = true;
       elements.projectors.setAttribute("aria-pressed", "false");
       elements.projectors.textContent = "Mostra tutte le proiettanti PO–PV–PL";
-      elements.paperGrid.setAttribute("aria-pressed", "true");
-      elements.paperGrid.textContent = "Nascondi carta millimetrata";
+      elements.paperGrid.setAttribute("aria-pressed", String(PAPER_GRID_DEFAULT));
+      elements.paperGrid.textContent = PAPER_GRID_DEFAULT ? "Nascondi carta millimetrata" : "Mostra carta millimetrata";
       elements.vertexLabels.setAttribute("aria-pressed", "false");
       elements.vertexLabels.textContent = "Mostra lettere A–P";
       elements.vertexLabels.setAttribute("aria-label", "Mostra le lettere dei vertici sui piani PO, PV e PL");
@@ -1138,6 +1141,10 @@
     }
 
     buildViewSwitch();
+    if (!PAPER_GRID_DEFAULT) {
+      elements.paperGrid.setAttribute("aria-pressed", "false");
+      elements.paperGrid.textContent = "Mostra carta millimetrata";
+    }
     if (TOUCH) {
       const hint = elements.rotationSurface.querySelector("span");
       if (hint) hint.textContent = "Trascina con il dito per ruotare";

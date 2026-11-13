@@ -273,6 +273,16 @@ kbd { padding: 1px 5px; border: 1px solid #cbd5e1; border-bottom-width: 2px; bor
 
 /* ── Telefono: metà foglio alla volta, comandi che vanno a capo invece di scorrere di lato ── */
 .view-switch { display: none; }
+.mobile-alert { display: none; }
+@media (max-width: 700px) {
+  .mobile-alert { display: block; margin: 18px 0 14px; padding: 14px 16px; border: 2px solid #b45309; background: #fffbeb; color: #78350f; line-height: 1.5; }
+  .mobile-alert p { margin: 0 0 8px; font-size: .92rem; }
+  .mobile-alert__title { font-weight: 900; font-size: 1rem !important; }
+  .mobile-alert__links { display: grid; gap: 8px; margin: 4px 0 10px; }
+  .mobile-alert__links a { display: block; padding: 11px 12px; border: 1px solid #b45309; background: white; color: #92400e; font-weight: 800; text-decoration: none; }
+  .mobile-alert__links a::after { content: " →"; }
+  .mobile-alert__note { margin: 0 !important; font-size: .85rem !important; color: #92400e; }
+}
 @media (max-width: 700px) {
   .ggb-frame { aspect-ratio: 24 / 33; }
   .view-switch { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
