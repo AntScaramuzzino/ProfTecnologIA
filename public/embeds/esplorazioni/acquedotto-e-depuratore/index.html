@@ -321,6 +321,38 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 .share .cred p { margin: 10px 0 0; font: 600 12px/1.4 var(--body); }
 .share .cred a { color: #0d6b63; }
 
+/* laboratori: pulsanti nel pannello e finestra sopra l'esplorazione */
+.labs { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 0; }
+.labbtn { font: 600 14px/1.2 var(--body); color: #10201f; background: #ffd66b; border: 0; border-radius: 999px; padding: 9px 14px; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,.35); }
+.labbtn::before { content: ''; display: inline-block; width: 14px; height: 14px; margin: 0 7px -2px 0; background: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 2h6v2h-1v5.2l5.6 9.7A2 2 0 0 1 17.9 22H6.1a2 2 0 0 1-1.7-3.1L10 9.2V4H9V2Z'/%3E%3C/svg%3E") center/contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 2h6v2h-1v5.2l5.6 9.7A2 2 0 0 1 17.9 22H6.1a2 2 0 0 1-1.7-3.1L10 9.2V4H9V2Z'/%3E%3C/svg%3E") center/contain no-repeat; }
+.labbtn.book { background: #e8f4f2; }
+.labbtn:hover { filter: brightness(1.06); }
+.labbtn:focus-visible, .labhead button:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.labbox { position: fixed; inset: 0; z-index: 60; display: grid; place-items: center; padding: 16px; background: rgba(6, 14, 14, .72); }
+.labbox[hidden] { display: none; }
+.labwin { width: min(980px, 100%); max-height: calc(100dvh - 32px); display: flex; flex-direction: column; background: #f7f5ef; color: #10201f; border-radius: 16px; overflow: hidden; box-shadow: 0 18px 60px rgba(0,0,0,.5); }
+.labhead { display: flex; align-items: center; gap: 12px; padding: 12px 14px 12px 20px; background: #10201f; color: #fff; }
+.labhead h2 { flex: 1; margin: 0; font: 700 18px/1.2 var(--body); }
+.labhead button { width: 38px; height: 38px; border-radius: 50%; border: 0; background: rgba(255,255,255,.14); color: #fff; cursor: pointer; display: grid; place-items: center; }
+.labhead svg { width: 20px; height: 20px; }
+.labbody { overflow: auto; padding: 16px 20px 20px; font: 400 15px/1.5 var(--body); }
+.labbody iframe.mclab { display: block; width: 100%; height: min(78dvh, 760px); border: 0; border-radius: 10px; background: #fff; }
+/* elementi comuni dei mini-laboratori */
+.lab-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (max-width: 720px) { .lab-grid { grid-template-columns: 1fr; } }
+.lab-fig { background: #fff; border-radius: 12px; padding: 8px; }
+.lab-fig svg { display: block; width: 100%; height: auto; max-height: min(560px, 60dvh); }
+.lab-ctl label { display: block; margin: 12px 0 2px; font-weight: 600; }
+.lab-ctl input[type=range] { width: 100%; accent-color: #0d7a70; }
+.lab-ctl .val { font: 600 15px/1.2 var(--mono, monospace); color: #0d6b63; }
+.lab-out { margin: 14px 0 0; padding: 12px 14px; border-radius: 12px; background: #10201f; color: #fff; }
+.lab-out b { display: block; font: 700 26px/1.15 var(--body); color: #ffd66b; }
+.lab-note { margin: 10px 0 0; font-size: 13px; color: #44514f; }
+.lab-btns { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
+.lab-btns button { font: 600 14px/1 var(--body); padding: 9px 12px; border-radius: 999px; border: 1px solid #0d7a70; background: #fff; color: #0d6b63; cursor: pointer; }
+.lab-btns button[aria-pressed=true] { background: #0d7a70; color: #fff; }
+.lab-phase { margin: 6px 0 0; font: 700 20px/1.2 var(--body); }
+
 /* Nel libro: gli stessi caratteri delle altre attività (Atkinson Hyperlegible, JetBrains Mono) */
 :root { --display: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --body: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
 .head h1 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(25px, 3vw, 35px); }
@@ -403,8 +435,20 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
         </button>
       </div>
       <p id="text"></p>
+      <div class="labs" id="labs" hidden></div>
     </div>
   </section>
+  <div class="labbox" id="labbox" role="dialog" aria-modal="true" aria-labelledby="labTitle" hidden>
+    <div class="labwin">
+      <div class="labhead">
+        <h2 id="labTitle"></h2>
+        <button type="button" id="btnLabClose" aria-label="Chiudi">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="labbody" id="labBody"></div>
+    </div>
+  </div>
 </div>
 <script>window.ESPLORAZIONE_URL = 'https://book.proftecnologia.it/embeds/esplorazioni/acquedotto-e-depuratore/index.html';</script>
 <script src="dati.js"></script>
@@ -442,19 +486,19 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     });
   }
   const UI = {
-    it: { explore: 'Esplora: ', seen: ' (già vista, restano rami da visitare)', done: ' (completata)', explain: 'Spiegazione: ', back: 'Torna a: ', backScene: 'Torna al testo della scena: ', closeTip: 'Chiudi la spiegazione e torna a: ', chain: 'Fasi in questa scena', found: 'Scoperte ', foundOf: (a, b) => `Scene scoperte: ${a} su ${b}`, here: ' (sei qui)', fold: 'Riduci il testo', unfold: 'Mostra il testo', copied: 'Copiato.', manual: 'Testo selezionato: copialo con Ctrl+C.', where: 'Dove sei', all: 'Tutte le scene', share: 'Condividi', full: 'Schermo intero', points: 'Punti da esplorare', link: 'Link a questa scena', embed: 'Codice per inserirla in una pagina', copy: 'Copia', qrAlt: "QR code che apre l'esplorazione dall'inizio", qr: "QR code dell'esplorazione: porta alla scena iniziale.", png: 'Scarica PNG', svg: 'Scarica SVG', play: 'Visita guidata', stop: 'Ferma la visita guidata', soundOn: 'Lettura ad alta voce: attiva', soundOff: 'Lettura ad alta voce: spenta', lang: 'Lingua', langName: 'Italiano', cred: 'Crediti e licenza', credList: [
+    it: { explore: 'Esplora: ', seen: ' (già vista, restano rami da visitare)', done: ' (completata)', explain: 'Spiegazione: ', back: 'Torna a: ', backScene: 'Torna al testo della scena: ', closeTip: 'Chiudi la spiegazione e torna a: ', chain: 'Fasi in questa scena', found: 'Scoperte ', foundOf: (a, b) => `Scene scoperte: ${a} su ${b}`, here: ' (sei qui)', fold: 'Riduci il testo', unfold: 'Mostra il testo', copied: 'Copiato.', manual: 'Testo selezionato: copialo con Ctrl+C.', where: 'Dove sei', all: 'Tutte le scene', share: 'Condividi', full: 'Schermo intero', points: 'Punti da esplorare', link: 'Link a questa scena', embed: 'Codice per inserirla in una pagina', copy: 'Copia', qrAlt: "QR code che apre l'esplorazione dall'inizio", qr: "QR code dell'esplorazione: porta alla scena iniziale.", png: 'Scarica PNG', svg: 'Scarica SVG', play: 'Visita guidata', stop: 'Ferma la visita guidata', soundOn: 'Lettura ad alta voce: attiva', soundOff: 'Lettura ad alta voce: spenta', lang: 'Lingua', tryIt: 'Prova tu: ', bookLab: 'Laboratorio del libro: ', closeLab: 'Chiudi il laboratorio', langName: 'Italiano', cred: 'Crediti e licenza', credList: [
       ['Testi', 'scritti con l\'intelligenza artificiale (Claude, Anthropic), poi rivisti e validati dal curatore, Prof. Ing. Antonio Scaramuzzino, secondo il Protocollo CARBLE-CDD.'],
       ['Immagini', 'generate con l\'intelligenza artificiale di Canva e controllate una per una; le illustrazioni sono indicate come tali nel testo.'],
       ['Voce', 'in italiano è la voce di Antonio Scaramuzzino, riprodotta con l\'IA (VoiceStudio); in inglese e francese sono voci sintetiche (Kokoro).'],
       ['Licenza', 'Creative Commons Attribuzione – Non commerciale – Condividi allo stesso modo 4.0 (CC BY-NC-SA 4.0).']],
     credMore: 'Tutti i crediti del libro', credLic: 'Leggi la licenza' },
-    en: { explore: 'Explore: ', seen: ' (seen, some branches still to visit)', done: ' (completed)', explain: 'Explanation: ', back: 'Back to: ', backScene: 'Back to the scene text: ', closeTip: 'Close the explanation and go back to: ', chain: 'Stages in this scene', found: 'Found ', foundOf: (a, b) => `Scenes found: ${a} of ${b}`, here: ' (you are here)', fold: 'Hide the text', unfold: 'Show the text', copied: 'Copied.', manual: 'Text selected: copy it with Ctrl+C.', where: 'Where you are', all: 'All scenes', share: 'Share', full: 'Full screen', points: 'Points to explore', link: 'Link to this scene', embed: 'Code to embed it in a page', copy: 'Copy', qrAlt: 'QR code that opens the exploration from the start', qr: 'QR code of the exploration: it opens the first scene.', png: 'Download PNG', svg: 'Download SVG', play: 'Guided tour', stop: 'Stop the guided tour', soundOn: 'Read aloud: on', soundOff: 'Read aloud: off', lang: 'Language', langName: 'English', cred: 'Credits and licence', credList: [
+    en: { explore: 'Explore: ', seen: ' (seen, some branches still to visit)', done: ' (completed)', explain: 'Explanation: ', back: 'Back to: ', backScene: 'Back to the scene text: ', closeTip: 'Close the explanation and go back to: ', chain: 'Stages in this scene', found: 'Found ', foundOf: (a, b) => `Scenes found: ${a} of ${b}`, here: ' (you are here)', fold: 'Hide the text', unfold: 'Show the text', copied: 'Copied.', manual: 'Text selected: copy it with Ctrl+C.', where: 'Where you are', all: 'All scenes', share: 'Share', full: 'Full screen', points: 'Points to explore', link: 'Link to this scene', embed: 'Code to embed it in a page', copy: 'Copy', qrAlt: 'QR code that opens the exploration from the start', qr: 'QR code of the exploration: it opens the first scene.', png: 'Download PNG', svg: 'Download SVG', play: 'Guided tour', stop: 'Stop the guided tour', soundOn: 'Read aloud: on', soundOff: 'Read aloud: off', lang: 'Language', tryIt: 'Try it: ', bookLab: 'Book lab (in Italian): ', closeLab: 'Close the lab', langName: 'English', cred: 'Credits and licence', credList: [
       ['Texts', 'written with artificial intelligence (Claude, Anthropic), then reviewed and approved by the curator, Prof. Ing. Antonio Scaramuzzino, following the CARBLE-CDD Protocol.'],
       ['Images', 'generated with Canva\'s artificial intelligence and checked one by one; illustrations are marked as such in the text.'],
       ['Voice', 'Italian: Antonio Scaramuzzino\'s own voice, reproduced with AI (VoiceStudio); English and French: synthetic voices (Kokoro).'],
       ['Licence', 'Creative Commons Attribution – NonCommercial – ShareAlike 4.0 (CC BY-NC-SA 4.0).']],
     credMore: 'All the book\'s credits', credLic: 'Read the licence' },
-    fr: { explore: 'Explorer : ', seen: ' (déjà vue, il reste des branches à visiter)', done: ' (terminée)', explain: 'Explication : ', back: 'Retour à : ', backScene: 'Retour au texte de la scène : ', closeTip: "Fermer l'explication et revenir à : ", chain: 'Étapes dans cette scène', found: 'Découvertes ', foundOf: (a, b) => `Scènes découvertes : ${a} sur ${b}`, here: ' (tu es ici)', fold: 'Réduire le texte', unfold: 'Afficher le texte', copied: 'Copié.', manual: 'Texte sélectionné : copie-le avec Ctrl+C.', where: 'Où tu es', all: 'Toutes les scènes', share: 'Partager', full: 'Plein écran', points: 'Points à explorer', link: 'Lien vers cette scène', embed: "Code pour l'insérer dans une page", copy: 'Copier', qrAlt: "QR code qui ouvre l'exploration depuis le début", qr: "QR code de l'exploration : il ouvre la première scène.", png: 'Télécharger PNG', svg: 'Télécharger SVG', play: 'Visite guidée', stop: 'Arrêter la visite guidée', soundOn: 'Lecture à voix haute : activée', soundOff: 'Lecture à voix haute : désactivée', lang: 'Langue', langName: 'Français', cred: 'Crédits et licence', credList: [
+    fr: { explore: 'Explorer : ', seen: ' (déjà vue, il reste des branches à visiter)', done: ' (terminée)', explain: 'Explication : ', back: 'Retour à : ', backScene: 'Retour au texte de la scène : ', closeTip: "Fermer l'explication et revenir à : ", chain: 'Étapes dans cette scène', found: 'Découvertes ', foundOf: (a, b) => `Scènes découvertes : ${a} sur ${b}`, here: ' (tu es ici)', fold: 'Réduire le texte', unfold: 'Afficher le texte', copied: 'Copié.', manual: 'Texte sélectionné : copie-le avec Ctrl+C.', where: 'Où tu es', all: 'Toutes les scènes', share: 'Partager', full: 'Plein écran', points: 'Points à explorer', link: 'Lien vers cette scène', embed: "Code pour l'insérer dans une page", copy: 'Copier', qrAlt: "QR code qui ouvre l'exploration depuis le début", qr: "QR code de l'exploration : il ouvre la première scène.", png: 'Télécharger PNG', svg: 'Télécharger SVG', play: 'Visite guidée', stop: 'Arrêter la visite guidée', soundOn: 'Lecture à voix haute : activée', soundOff: 'Lecture à voix haute : désactivée', lang: 'Langue', tryIt: 'Essaie : ', bookLab: 'Laboratoire du livre (en italien) : ', closeLab: 'Fermer le laboratoire', langName: 'Français', cred: 'Crédits et licence', credList: [
       ['Textes', 'écrits avec l\'intelligence artificielle (Claude, Anthropic), puis revus et validés par le curateur, Prof. Ing. Antonio Scaramuzzino, selon le Protocole CARBLE-CDD.'],
       ['Images', 'générées avec l\'intelligence artificielle de Canva et contrôlées une par une ; les illustrations sont signalées comme telles dans le texte.'],
       ['Voix', 'en italien, c\'est la voix d\'Antonio Scaramuzzino, reproduite par l\'IA (VoiceStudio) ; en anglais et en français, ce sont des voix de synthèse (Kokoro).'],
@@ -994,6 +1038,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     $('btnScene').hidden = true;
     $('title').textContent = n.titolo;
     $('text').textContent = n.testo;
+    setLabs(id);
     const ch = $('chain');
     if (D.catena && D.catena.fasi) {
       ch.hidden = false;
@@ -1012,6 +1057,63 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       });
     }
   }
+  /* ---------- laboratori: mini-laboratori della scena e laboratorio della MC ---------- */
+  const LAB = window.ESPLORAZIONE_LAB || {};
+  const labbox = $('labbox');
+  let labStop = null, labFrom = null;
+  const labName = (l) => (l.titolo && (l.titolo[LANG] || l.titolo.it)) || '';
+  const mcLabUrl = (mc) => (/(^|\.)proftecnologia\.it$|^localhost$|^127\.0\.0\.1$/.test(location.hostname) ? '../../lab/' : 'https://book.proftecnologia.it/embeds/lab/') + mc + '/index.html';
+  function setLabs(id) {
+    const box = $('labs'), n = N[id], list = [];
+    if (n.lab && LAB[n.lab]) list.push({ t: U.tryIt + labName(LAB[n.lab]), go: () => openLab(n.lab) });
+    if (id === D.radice && D.laboratorio) list.push({ t: U.bookLab + D.laboratorio.titolo, go: () => openMcLab(), book: true });
+    box.textContent = '';
+    box.hidden = !list.length;
+    list.forEach((x) => {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'labbtn' + (x.book ? ' book' : '');
+      b.textContent = x.t;
+      b.addEventListener('click', (e) => { e.stopPropagation(); labFrom = b; x.go(); });
+      box.appendChild(b);
+    });
+  }
+  function showLabBox(title) {
+    if (touring) stopTour();
+    stopVoice();
+    closeMenu(); closeShare();
+    $('labTitle').textContent = title;
+    $('labBody').textContent = '';
+    labbox.hidden = false;
+    $('btnLabClose').focus();
+  }
+  function openLab(key) {
+    const l = LAB[key];
+    showLabBox(labName(l));
+    try { labStop = l.mount($('labBody'), { lang: LANG, calm }) || null; } catch (err) { console.error(err); }
+  }
+  function openMcLab() {
+    showLabBox(D.laboratorio.titolo);
+    const f = document.createElement('iframe');
+    f.src = mcLabUrl(D.laboratorio.mc);
+    f.title = D.laboratorio.titolo;
+    f.className = 'mclab';
+    f.setAttribute('allow', 'fullscreen');
+    $('labBody').appendChild(f);
+  }
+  function closeLab() {
+    if (labbox.hidden) return false;
+    if (typeof labStop === 'function') try { labStop(); } catch (err) { /* niente */ }
+    labStop = null;
+    labbox.hidden = true;
+    $('labBody').textContent = '';
+    if (labFrom) labFrom.focus();
+    return true;
+  }
+  $('btnLabClose').setAttribute('aria-label', U.closeLab);
+  $('btnLabClose').addEventListener('click', closeLab);
+  labbox.addEventListener('click', (e) => { if (e.target === labbox) closeLab(); });
+  ['pointerdown', 'wheel', 'touchstart'].forEach((ev) => labbox.addEventListener(ev, (e) => e.stopPropagation(), { passive: true }));
   function setChrome() {
     const c = $('count');
     c.textContent = '';
@@ -1169,6 +1271,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
   document.addEventListener('click', (e) => { if (!menu.hidden && !e.target.closest('.menu')) closeMenu(); });
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
+    if (closeLab()) return;
     if (!share.hidden) { closeShare(); btnShare.focus(); }
     else if (!menu.hidden) { closeMenu(); btnPath.focus(); }
     else if (tip) hideTip();

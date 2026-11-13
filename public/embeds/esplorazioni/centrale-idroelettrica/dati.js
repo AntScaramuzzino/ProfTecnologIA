@@ -16,6 +16,7 @@ window.ESPLORAZIONE = {
   indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/centrale-idroelettrica/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "centrale",
+  laboratorio: { mc: "MC-ENE-3-03", titolo: "Fotovoltaico per la scuola" },
   catena: {
     etichetta: "Energia",
     fasi: ["potenziale", "cinetica", "meccanica", "elettrica"]
@@ -77,6 +78,7 @@ window.ESPLORAZIONE = {
     },
 
     condotte: {
+      lab: "potenza",
       titolo: "Condotte forzate",
       testo: "Sono grandi tubi d'acciaio che portano l'acqua dal bacino alle turbine. Scendendo lungo il pendio l'acqua perde quota e accumula pressione; quando esce dalla condotta, quella pressione diventa velocità. Così l'energia potenziale si trasforma in energia cinetica, cioè di movimento. Più grande è il dislivello, chiamato salto, più energia arriva alla turbina.",
       img: "img/condotte.webp",
@@ -123,6 +125,7 @@ window.ESPLORAZIONE = {
     },
 
     getto: {
+      lab: "getto",
       titolo: "Getto e pale",
       testo: "Un ugello restringe il passaggio e trasforma l'acqua in un getto sottile e velocissimo. Ogni pala ha la forma di un doppio cucchiaio: divide il getto in due e lo rimanda quasi all'indietro, così l'acqua cede alla ruota gran parte della sua energia. Una turbina Pelton ben progettata ne sfrutta circa il 90%.",
       img: "img/getto.webp",

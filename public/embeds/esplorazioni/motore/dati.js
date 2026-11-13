@@ -16,6 +16,7 @@ window.ESPLORAZIONE = {
   indirizzo: "https://book.proftecnologia.it/embeds/esplorazioni/motore/",   // indirizzo pubblico: serve al pulsante «Condividi» e al QR code
   lingua: "it",
   radice: "vano",
+  laboratorio: { mc: "MC-ENE-3-05", titolo: "Dove va l'energia" },
   catena: { etichetta: "Energia", fasi: ["chimica", "termica", "meccanica"] },
   nodi: {
     vano: {
@@ -36,6 +37,7 @@ window.ESPLORAZIONE = {
       ]
     },
     blocco: {
+      lab: "cilindrata",
       titolo: "Il blocco motore",
       testo: "Ecco il motore tolto dall'auto, senza la parte superiore. Il blocco è un pezzo unico di metallo fuso, ghisa o lega di alluminio, in cui sono scavati quattro cilindri in fila. In ogni cilindro scorre un pistone, che sale e scende decine di volte al secondo. Sopra il blocco si avvita la testata, che chiude i cilindri e porta valvole e candele; sotto gira l'albero motore.",
       img: "img/blocco.webp",
@@ -52,6 +54,7 @@ window.ESPLORAZIONE = {
       ]
     },
     pistone: {
+      lab: "quattrotempi",
       titolo: "Il pistone e la biella",
       testo: "Il pistone è un cilindro di lega di alluminio, leggero, che chiude il cilindro dal basso come lo stantuffo di una siringa. Nel tempo dello scoppio i gas che bruciano lo spingono giù con forza: è l'unico dei quattro tempi che produce movimento. La biella collega il pistone all'albero motore: insieme, trasformano il suo andare su e giù in un movimento che gira.",
       img: "img/pistone.webp",
