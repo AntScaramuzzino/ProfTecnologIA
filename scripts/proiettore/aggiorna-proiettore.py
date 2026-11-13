@@ -66,6 +66,7 @@ js = sostituisci(js, """import * as THREE from 'three';""", """import * as THREE
    6. sul triedro uno spigolo nascosto che coincide con uno in vista non lo copre più
    7. nomi dei piani sul triedro in chiaro (prima erano scuri su fondo scuro)
    8. sulle lastre i piani si chiamano PV, PL, PO, come sul triedro e nelle tavole (prima P.V., P.L., P.O.)
+   9. blocco a L: lo spessore dei due bracci si può dare dall'indirizzo (?sp=<cm>), uguale per tutti e due
    Rigenerata da scripts/proiettore/aggiorna-proiettore.py: le modifiche vanno fatte lì, non in questo file.
    ─────────────────────────────────────────────────────────────────────── */""", dove="intestazione")
 
@@ -78,6 +79,8 @@ js = sostituisci(js, """    zoom: 1,           /* ingrandimento della vista asso
      ?solido=<id>                 apre su quel solido (id dei pulsanti: prismatri, piramide…)
      ?<misura>=<cm>               misure reali in centimetri, con le chiavi di MISURE (r, alt, lato, L, H, P…);
                                   vanno date tutte quelle del solido, altrimenti restano le misure standard
+     ?sp=<cm>                     solo per il blocco a L (solido=elle), insieme a larg, alt e prof:
+                                  spessore dei due bracci; senza, lo spessore segue le proporzioni standard
      ?alfa=<gradi>&beta=<gradi>   rotazione di partenza
      ?esercizio=1                 tavola guidata: solido e misure bloccati
      ?titolo=…&misure=…           testi del riquadro dell'esercizio
@@ -97,9 +100,10 @@ js = sostituisci(js, """    zoom: 1,           /* ingrandimento della vista asso
       /* misure in cm → unità di scena: stesse proporzioni, ingombro costante */
       const cm = {};
       chiavi.forEach(k => { cm[k] = parNum(k); });
+      if (stato.solidoId === 'elle' && parNum('sp') > 0) cm.sp = parNum('sp');
       const f = RAGGIO_SCENA / SOLIDI[stato.solidoId](cm).raggio;
       const interne = {};
-      chiavi.forEach(k => { interne[k] = cm[k] * f; });
+      Object.keys(cm).forEach(k => { interne[k] = cm[k] * f; });
       stato.misure[stato.solidoId] = interne;
       esercizio.solidoId = stato.solidoId;
       esercizio.cm = cm;
@@ -117,6 +121,15 @@ js = sostituisci(js, """    zoom: 1,           /* ingrandimento della vista asso
   if (PAR.get('iso') === '0') stato.ribaltato = false;
   const cmTesto = v => (Math.round(v * 100) / 100).toString().replace('.', ',') + ' cm';
 """, dove="parametri")
+
+# blocco a L: con ?sp= i due bracci hanno lo spessore dato (uguale), invece delle proporzioni standard
+js = sostituisci(js, """  elle: conMisure('elle', m => { const s = prismaDaProfilo(stira(PROFILO_ELLE, m.larg / 3.0, m.alt / 3.0), m.prof); s.nome = 'Blocco a L'; return preparaSolido(s); }),""",
+                 """  elle: conMisure('elle', m => {
+    /* LIBRO · m.sp arriva solo dall'indirizzo (?sp=): spessore uguale per i due bracci */
+    const sp = m.sp > 0 ? Math.min(m.sp, m.larg * 0.9, m.alt * 0.9) : 0;
+    const profilo = sp ? [[0, 0], [m.larg, 0], [m.larg, sp], [sp, sp], [sp, m.alt], [0, m.alt]] : stira(PROFILO_ELLE, m.larg / 3.0, m.alt / 3.0);
+    const s = prismaDaProfilo(profilo, m.prof); s.nome = 'Blocco a L'; return preparaSolido(s);
+  }),""", dove="blocco a L")
 
 # pannello misure: se le misure arrivano dall'indirizzo si leggono in cm, senza cursori
 js = sostituisci(js, """    const m = misureCorrenti(stato.solidoId);

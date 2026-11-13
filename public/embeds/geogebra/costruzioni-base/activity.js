@@ -1,5 +1,15 @@
 /* global GGBApplet */
 
+/*
+ * ATTENZIONE — questo motore serve due famiglie di tavole:
+ *   • le costruzioni geometriche (tavole 3–8 qui sotto, le altre in tavole.js);
+ *   • le proiezioni ortogonali (tavole-po.js), che usano in più cinque campi della tavola:
+ *     areas, styles, level, appletHeight, fontSize (cerca «tavole-po» in questo file e in activity.css).
+ * Chi modifica il motore non deve togliere quei punti: senza, le tavole di proiezioni perdono i piani
+ * colorati, gli spigoli tratteggiati e il foglio alto. Dopo ogni modifica prova anche
+ * index.html?activity=po-prisma-triangolare (al computer, sul telefono e con &lim=1).
+ */
+
 (() => {
   "use strict";
 
@@ -269,8 +279,13 @@
   const embedded = window.self !== window.top;
   if (embedded) document.documentElement.classList.add("embedded");
   let appletWidth = 850;
-  let appletHeight = 520;
+  // Le tavole di proiezioni ortogonali chiedono un foglio più alto (appletHeight in tavole-po.js).
+  let appletHeight = activity.appletHeight || 520;
   let APPLET_ASPECT_RATIO = appletWidth / appletHeight;
+  if (activity.appletHeight) {
+    document.documentElement.classList.add("foglio-alto");
+    document.documentElement.style.setProperty("--applet-ratio", String(APPLET_ASPECT_RATIO));
+  }
   const th = (n) => (narrow ? Math.max(1, Math.round(n * 0.65)) : n);
 
   const elements = {
@@ -411,6 +426,19 @@
       api.setLineStyle(name, 2);
       api.setLineThickness(name, th(3));
     });
+
+    // Stile dichiarato dalla tavola, oggetto per oggetto: vince su tutte le regole qui sopra (tavole-po.js).
+    Object.entries(activity.styles || {}).forEach(([name, style]) => {
+      if (!exists(name)) return;
+      if (style.color) api.setColor(name, style.color[0], style.color[1], style.color[2]);
+      if (style.thickness !== undefined) api.setLineThickness(name, th(style.thickness));
+      if (style.lineStyle !== undefined) api.setLineStyle(name, style.lineStyle);
+      if (style.filling !== undefined) api.setFilling(name, style.filling);
+      if (style.pointSize !== undefined) api.setPointSize(name, narrow ? Math.max(2, style.pointSize - 1) : style.pointSize);
+      if (style.pointStyle !== undefined) api.setPointStyle(name, style.pointStyle);
+      if (style.layer !== undefined) api.setLayer(name, style.layer);
+      if (style.label !== undefined) api.setLabelVisible(name, style.label);
+    });
   }
 
   function setEqualScaleCoordSystem(bounds) {
@@ -438,7 +466,25 @@
   function buildConstruction(ggbApi) {
     api = ggbApi;
     api.setPerspective("G");
+    // Caratteri più grandi per nomi e scritte (tavole-po.js): va fatto prima di creare gli oggetti.
+    // Sul telefono la tavola è a grandezza naturale: lì i caratteri restano più piccoli.
+    if (activity.fontSize) {
+      const corpo = narrow ? Math.min(activity.fontSize, 11) : activity.fontSize;
+      api.setXML(api.getXML().replace(/<font size="[0-9]+"[/]>/, `<font size="${corpo}"/>`));
+    }
     activity.commands.forEach((command) => api.evalCommand(command));
+
+    // Aree colorate (i piani delle proiezioni ortogonali, tavole-po.js): poligoni sempre visibili, senza lati.
+    // Non entrano nei passi: GeoGebra, quando mostra un poligono, mostra di nuovo anche i suoi lati.
+    (activity.areas || []).forEach(({ name, points }) => {
+      const before = new Set(api.getAllObjectNames());
+      api.evalCommand(`${name}=Polygon(${points.join(",")})`);
+      if (!api.exists(name)) return;
+      api.setFixed(name, true, false);
+      api.getAllObjectNames()
+        .filter((label) => label !== name && !before.has(label))
+        .forEach((label) => api.setVisible(label, false));
+    });
 
     const missing = allObjects().filter((name) => !exists(name));
     if (missing.length > 0) {
@@ -474,6 +520,12 @@
     activity.groups.forEach((group, index) => {
       const visible = index < stage || (index === stage && progress >= 0.12);
       setVisible(group, visible);
+    });
+    // Aree che compaiono da un certo passo in poi (tavole-po.js): si accende il riempimento, i lati restano nascosti.
+    (activity.areas || []).forEach((area) => {
+      if (area.step === undefined || !exists(area.name)) return;
+      const style = (activity.styles || {})[area.name] || {};
+      api.setFilling(area.name, stage >= area.step ? (style.filling === undefined ? 0.3 : style.filling) : 0);
     });
     applyCompassTraceEffect(stage, progress);
     applyStepBuildSequence(stage, progress);
@@ -727,6 +779,13 @@
     elements.subtitle.textContent = activity.subtitle;
     elements.proofTitle.textContent = activity.proofTitle;
     elements.proofCopy.textContent = activity.proofCopy;
+    // Livello dichiarato dalla tavola (tavole-po.js): senza, resta quello scritto nella pagina.
+    const levelBadge = document.querySelector(".level-badge");
+    if (levelBadge && activity.level) {
+      const levelNames = { F: "Foundation", I: "Intermediate", A: "Advanced" };
+      levelBadge.textContent = `Livello ${activity.level}`;
+      levelBadge.setAttribute("aria-label", `Livello ${levelNames[activity.level] || activity.level}`);
+    }
     buildNav();
     attachEvents();
     updateInterface();

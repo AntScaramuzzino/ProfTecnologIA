@@ -127,7 +127,10 @@ export default function ProiezioniOrtogonaliPage() {
           <h2 id="titolo-fondamentali" className="text-2xl font-black tracking-tight text-slate-950">
             Tavole fondamentali{" "}
             <span className="text-base font-bold text-slate-500">
-              · {TAVOLE_PO_PRONTE.length} pronte su {TAVOLE_PO.length}
+              ·{" "}
+              {TAVOLE_PO_PRONTE.length === TAVOLE_PO.length
+                ? `${TAVOLE_PO.length} tavole`
+                : `${TAVOLE_PO_PRONTE.length} pronte su ${TAVOLE_PO.length}`}
             </span>
           </h2>
           <p className="mt-1 max-w-3xl text-sm leading-6 text-slate-700">
