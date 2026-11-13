@@ -616,3 +616,32 @@ h1 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── Telefono: titolo compatto, passi in una riga che scorre, disegno, comandi e testo in una schermata ── */
+@media (max-width: 640px) {
+  .activity { display: flex; flex-direction: column; gap: 8px; padding: 8px; }
+  .activity > * { margin-top: 0; margin-bottom: 0; }
+  .activity__header { order: 1; display: block; padding: 10px 14px; box-shadow: none; }
+  .intro,
+  .level-badge { display: none; }
+  .eyebrow { font-size: 0.66rem; }
+  h1 { margin-top: 3px; font-size: 1.2rem; line-height: 1.15; }
+  .step-nav { order: 2; display: flex; gap: 6px; overflow-x: auto; padding: 2px 1px 4px; scrollbar-width: none; }
+  .step-nav::-webkit-scrollbar { display: none; }
+  .step-chip { flex: 0 0 auto; min-height: 44px; white-space: nowrap; }
+  .workspace { display: contents; }
+  .ggb-frame { order: 3; min-height: 0; }
+  #ggb-element { min-height: 0; }
+  .controls,
+  .protocol-bar { order: 4; grid-template-columns: 1fr; gap: 0; padding: 6px; box-shadow: none; }
+  .protocol-bar__transport { justify-content: space-between; gap: 6px; }
+  .protocol-control { width: 48px; min-height: 48px; border-radius: 10px; font-size: 1rem; }
+  .protocol-control--play { flex: 1 1 auto; min-width: 96px; }
+  .protocol-speed,
+  .protocol-button,
+  .protocol-steps { display: none; }
+  .step-card { order: 5; min-height: 0; padding: 14px 16px; }
+  .proof-panel { order: 6; }
+  .activity__footer { order: 7; }
+  .activity__footer p { display: none; }
+}

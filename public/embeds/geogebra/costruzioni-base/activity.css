@@ -418,6 +418,80 @@ h1 {
   }
 }
 
+.step-nav button b { font-weight: inherit; }
+.chip-short { display: none; }
+
+/* ── Telefono: titolo compatto, passi in una riga che scorre, disegno, comandi e testo in una schermata ── */
+@media (max-width: 640px) {
+  html:not(.lim) body { background: #f3f6fb; }
+  html:not(.lim) .activity { display: flex; flex-direction: column; gap: 8px; width: calc(100% - 16px); padding: 8px 0 16px; }
+  html:not(.lim).embedded .activity { width: 100%; padding: 6px; }
+  html:not(.lim) .activity__header { order: 1; display: block; padding: 10px 14px; border-radius: 14px; box-shadow: none; }
+  html:not(.lim).embedded .activity__header { display: none; }
+  html:not(.lim) .eyebrow { font-size: 0.66rem; }
+  html:not(.lim) h1 { margin-top: 3px; font-size: 1.2rem; line-height: 1.15; }
+  html:not(.lim) .subtitle,
+  html:not(.lim) .level-badge { display: none; }
+
+  html:not(.lim) .step-nav { order: 2; display: flex; gap: 6px; margin: 0; padding: 2px 1px 4px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  html:not(.lim) .step-nav::-webkit-scrollbar { display: none; }
+  html:not(.lim) .step-nav button { flex: 0 0 auto; min-height: 44px; padding: 5px 12px 5px 6px; font-size: 0.82rem; white-space: nowrap; }
+  html:not(.lim) .chip-full { display: none; }
+  html:not(.lim) .chip-short { display: inline; }
+
+  html:not(.lim) .workspace { display: contents; }
+  html:not(.lim) .ggb-frame { order: 3; min-height: 0; border-radius: 14px; }
+  html:not(.lim) #ggb-element { min-height: 0; }
+  html:not(.lim) .loading-state { position: relative; inset: auto; min-height: 280px; }
+
+  html:not(.lim) .controls,
+  html:not(.lim) .protocol-bar { order: 4; grid-template-columns: 1fr; gap: 0; margin: 0; padding: 6px; border-radius: 12px; box-shadow: none; }
+  html:not(.lim) .protocol-bar__transport { justify-content: space-between; gap: 6px; }
+  html:not(.lim) .protocol-control { width: 48px; min-height: 48px; border-radius: 10px; font-size: 1rem; }
+  html:not(.lim) .protocol-control--play { flex: 1 1 auto; min-width: 96px; }
+  html:not(.lim) .protocol-counter { min-width: 46px; margin-left: 2px; text-align: right; }
+  html:not(.lim) .protocol-speed,
+  html:not(.lim) .protocol-button,
+  html:not(.lim) .protocol-steps { display: none; }
+
+  html:not(.lim) .step-card { order: 5; min-height: 0; padding: 14px 16px; border: 1px solid #dbe3ec; border-radius: 14px; background: #fff; }
+  html:not(.lim) .step-card h2 { margin: 4px 0 6px; font-size: 1.12rem; line-height: 1.25; }
+  html:not(.lim) #step-description { margin: 0; font-size: 1rem; line-height: 1.5; }
+  html:not(.lim) .tip { margin-top: 10px; font-size: 0.9rem; }
+  html:not(.lim) .equality { margin-top: 10px; }
+
+  html:not(.lim) .proof-panel { order: 6; margin: 0; padding: 14px 16px; border-radius: 14px; box-shadow: none; }
+  html:not(.lim) .activity__footer { order: 7; flex-direction: column; align-items: stretch; gap: 10px; margin: 0; padding: 12px 14px; border-radius: 14px; box-shadow: none; }
+  html:not(.lim) .activity__footer p { display: none; }
+  html:not(.lim) .activity__footer > div { display: flex; gap: 8px; }
+  html:not(.lim) .activity__footer .button { flex: 1 1 0; min-height: 46px; }
+}
+
+/* ── Telefono in orizzontale: niente altezze minime, titolo su una riga, passi in una riga che scorre ── */
+@media (orientation: landscape) and (max-height: 520px) and (min-width: 641px) {
+  html:not(.lim) .activity { width: calc(100% - 16px); padding: 6px 0 12px; }
+  html:not(.lim) .activity__header { padding: 8px 14px; box-shadow: none; }
+  html:not(.lim).embedded .activity__header,
+  html:not(.lim) .eyebrow,
+  html:not(.lim) .subtitle,
+  html:not(.lim) .level-badge { display: none; }
+  html:not(.lim) h1 { margin: 0; font-size: 1.05rem; }
+  html:not(.lim) .step-nav { display: flex; gap: 6px; margin: 6px 0; overflow-x: auto; scrollbar-width: none; }
+  html:not(.lim) .step-nav::-webkit-scrollbar { display: none; }
+  html:not(.lim) .step-nav button { flex: 0 0 auto; min-height: 40px; white-space: nowrap; }
+  html:not(.lim) .chip-full { display: none; }
+  html:not(.lim) .chip-short { display: inline; }
+  html:not(.lim) .workspace { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 10px; padding: 8px; box-shadow: none; }
+  html:not(.lim) .ggb-frame,
+  html:not(.lim) #ggb-element,
+  html:not(.lim) .step-card { min-height: 0; }
+  html:not(.lim) .step-card { padding: 10px 12px; }
+  html:not(.lim) .controls,
+  html:not(.lim) .protocol-bar { grid-template-columns: 1fr auto; margin-top: 6px; }
+  html:not(.lim) .protocol-control { width: 44px; min-height: 44px; }
+  html:not(.lim) .protocol-speed { display: none; }
+}
+
 /* ── Modalità LIM (?lim=1): schermo intero, testo e pulsanti grandi ───────── */
 html.lim { font-size: 20px; }
 html.lim .activity { width: calc(100% - 32px); max-width: none; padding: 12px 0 16px; }
@@ -436,14 +510,3 @@ html.lim .protocol-control { width: 60px; }
 html.lim .protocol-control--play { min-width: 130px; }
 html.lim .protocol-speed input { width: 76px; min-height: 46px; font-size: 0.95rem; }
 html.lim .proof-panel p:last-child { font-size: 1.05rem; }
-
-/* ── Tavole con foglio alto (proiezioni ortogonali): alla LIM il foglio deve stare tutto nello schermo ── */
-html.lim.foglio-alto .workspace { grid-template-columns: auto minmax(320px, 1fr); }
-html.lim.foglio-alto .ggb-frame {
-  width: min(64vw, calc((100vh - 16.6rem) * var(--applet-ratio, 1.3)));
-  min-height: 0;
-}
-html.lim.foglio-alto #ggb-element { min-height: 0; }
-html.lim.foglio-alto .step-card { min-height: 0; }
-html.lim.foglio-alto .step-nav { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-html.lim.foglio-alto .step-nav button { min-height: 48px; }

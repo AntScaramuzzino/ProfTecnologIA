@@ -48,24 +48,25 @@ export default async function CostruzionePage({ params }: Props) {
           { label: "Laboratorio GeoGebra", color: "#1A3A7A" },
         ]}
       />
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
-        <div className="mb-7 max-w-3xl">
+      <div className="mx-auto max-w-7xl px-3 py-6 sm:px-6 sm:py-10">
+        <div className="mb-5 max-w-3xl sm:mb-7">
           <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-800">
             {MC_COSTRUZIONI} · Classe 1ª · Costruzione {c.numero}
           </p>
-          <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">{c.titolo}</h1>
-          <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">{c.intro}</p>
+          <h1 className="mt-2 text-2xl font-black tracking-tight text-slate-950 sm:text-5xl">{c.titolo}</h1>
+          <p className="mt-3 text-base leading-7 text-slate-700 sm:mt-4 sm:text-lg sm:leading-8">{c.intro}</p>
           <a
             href={limSrc}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 inline-block text-sm font-bold text-slate-600 underline underline-offset-4"
+            className="mt-3 hidden text-sm font-bold text-slate-600 underline underline-offset-4 sm:inline-block"
           >
             Apri alla LIM ↗
           </a>
         </div>
 
         <GeoGebraConstructionEmbed
+          compact
           activity={c.slug}
           title={c.titolo}
           iframeTitle={`Animazione GeoGebra: ${c.titolo.toLowerCase()}`}

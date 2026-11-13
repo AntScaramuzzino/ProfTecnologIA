@@ -18,7 +18,7 @@ export default function GeoGebraAngleBisectorEmbed({
     if (!documentElement) return;
 
     const updateHeight = () => {
-      setIframeHeight(Math.max(680, documentElement.scrollHeight + 2));
+      setIframeHeight(Math.max(360, documentElement.scrollHeight + 2));
     };
 
     resizeObserverRef.current?.disconnect();

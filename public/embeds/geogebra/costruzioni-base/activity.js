@@ -255,6 +255,7 @@
   let currentProgress = 1;
   let isPlaying = false;
   let animationToken = 0;
+  let lastScrolledStep = -1;
 
   const searchParams = new URLSearchParams(window.location.search);
   const limMode = searchParams.get("lim") === "1";
@@ -263,14 +264,14 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const activityKey = searchParams.get("activity") || "divisione-segmento";
   const activity = ACTIVITIES[activityKey] || ACTIVITIES["divisione-segmento"];
-  // Le tavole di proiezioni ortogonali chiedono un foglio più alto (appletHeight in tavole-po.js).
-  const APPLET_WIDTH = 850;
-  const APPLET_HEIGHT = activity.appletHeight || 520;
-  const APPLET_ASPECT_RATIO = APPLET_WIDTH / APPLET_HEIGHT;
-  if (activity.appletHeight) {
-    document.documentElement.classList.add("foglio-alto");
-    document.documentElement.style.setProperty("--applet-ratio", String(APPLET_ASPECT_RATIO));
-  }
+  // Telefono: tavola più alta e a grandezza naturale (niente riduzione di scala), tratti più sottili.
+  const narrow = window.matchMedia("(max-width: 640px)").matches && !limMode;
+  const embedded = window.self !== window.top;
+  if (embedded) document.documentElement.classList.add("embedded");
+  let appletWidth = 850;
+  let appletHeight = 520;
+  let APPLET_ASPECT_RATIO = appletWidth / appletHeight;
+  const th = (n) => (narrow ? Math.max(1, Math.round(n * 0.65)) : n);
 
   const elements = {
     title: document.getElementById("activity-title"),
@@ -323,7 +324,8 @@
       button.type = "button";
       button.dataset.step = String(index);
       button.disabled = true;
-      button.innerHTML = `<span>${index}</span>${step[0].replace(/^Prima di iniziare$/, "Situazione")}`;
+      const etichetta = step[0].replace(/^Prima di iniziare$/, "Situazione");
+      button.innerHTML = `<span>${index}</span><b class="chip-full">${etichetta}</b><b class="chip-short">${etichetta.replace(/^Passo \d+ · /, "")}</b>`;
       button.addEventListener("click", () => goToStep(index, true));
       elements.stepNav.appendChild(button);
 
@@ -343,20 +345,20 @@
       if (!exists(name)) return;
       api.setFixed(name, true, false);
       if (/^line|^perp|^par|guideLine|ray|diam/.test(name)) {
-        api.setLineThickness(name, 3);
+        api.setLineThickness(name, th(3));
         api.setColor(name, 14, 116, 144);
       }
       if (isCompassObject(name)) {
         api.setLineStyle(name, 0);
-        api.setLineThickness(name, 5);
+        api.setLineThickness(name, th(5));
         api.setColor(name, 217, 119, 6);
       }
       if (/seg|side|part|s\d|mark|rad|diag/.test(name)) {
-        api.setLineThickness(name, 4);
+        api.setLineThickness(name, th(4));
         api.setColor(name, 30, 64, 175);
       }
       if (/^draw/.test(name)) {
-        api.setLineThickness(name, 6);
+        api.setLineThickness(name, th(6));
         api.setColor(name, 0, 0, 0);
       }
       if (/poly|tri|hex|square/.test(name)) {
@@ -372,7 +374,7 @@
       if (exists(name)) {
         api.setColor(name, 0, 0, 0);
         api.setLineStyle(name, 0);
-        api.setLineThickness(name, 6);
+        api.setLineThickness(name, th(6));
         if (/poly|tri|hex|square/.test(name)) api.setFilling(name, 0.05);
       }
     });
@@ -383,7 +385,7 @@
       if (caption) api.setCaption(name, caption);
       api.setLabelVisible(name, true);
       api.setLabelStyle(name, 3);
-      api.setPointSize(name, 5);
+      api.setPointSize(name, narrow ? 4 : 5);
       api.setColor(name, 239, 68, 68);
     });
 
@@ -398,7 +400,7 @@
       if (!exists(name)) return;
       api.setColor(name, 22, 163, 74);
       api.setFilling(name, 0.28);
-      api.setLineThickness(name, 2);
+      api.setLineThickness(name, th(2));
       api.setLabelVisible(name, false);
     });
     (activity.texts || []).forEach((name) => {
@@ -407,20 +409,7 @@
     (activity.dashed || []).forEach((name) => {
       if (!exists(name)) return;
       api.setLineStyle(name, 2);
-      api.setLineThickness(name, 3);
-    });
-
-    // Stile dichiarato dalla tavola, oggetto per oggetto: vince su tutte le regole qui sopra (tavole-po.js).
-    Object.entries(activity.styles || {}).forEach(([name, style]) => {
-      if (!exists(name)) return;
-      if (style.color) api.setColor(name, style.color[0], style.color[1], style.color[2]);
-      if (style.thickness !== undefined) api.setLineThickness(name, style.thickness);
-      if (style.lineStyle !== undefined) api.setLineStyle(name, style.lineStyle);
-      if (style.filling !== undefined) api.setFilling(name, style.filling);
-      if (style.pointSize !== undefined) api.setPointSize(name, style.pointSize);
-      if (style.pointStyle !== undefined) api.setPointStyle(name, style.pointStyle);
-      if (style.layer !== undefined) api.setLayer(name, style.layer);
-      if (style.label !== undefined) api.setLabelVisible(name, style.label);
+      api.setLineThickness(name, th(3));
     });
   }
 
@@ -449,23 +438,7 @@
   function buildConstruction(ggbApi) {
     api = ggbApi;
     api.setPerspective("G");
-    // Caratteri più grandi per nomi e scritte (tavole-po.js): va fatto prima di creare gli oggetti.
-    if (activity.fontSize) {
-      api.setXML(api.getXML().replace(/<font size="[0-9]+"[/]>/, `<font size="${activity.fontSize}"/>`));
-    }
     activity.commands.forEach((command) => api.evalCommand(command));
-
-    // Aree colorate (i piani delle proiezioni ortogonali): poligoni sempre visibili, senza lati.
-    // Non entrano nei passi: GeoGebra, quando mostra un poligono, mostra di nuovo anche i suoi lati.
-    (activity.areas || []).forEach(({ name, points }) => {
-      const before = new Set(api.getAllObjectNames());
-      api.evalCommand(`${name}=Polygon(${points.join(",")})`);
-      if (!api.exists(name)) return;
-      api.setFixed(name, true, false);
-      api.getAllObjectNames()
-        .filter((label) => label !== name && !before.has(label))
-        .forEach((label) => api.setVisible(label, false));
-    });
 
     const missing = allObjects().filter((name) => !exists(name));
     if (missing.length > 0) {
@@ -577,7 +550,7 @@
         if (index < stage) {
           setTraceParam(name, 1);
           api.setVisible(name, true);
-          api.setLineThickness(name, 5);
+          api.setLineThickness(name, th(5));
           return;
         }
 
@@ -585,7 +558,7 @@
           const traceProgress = Math.max(0, Math.min(1, (progress - 0.12) / 0.88));
           setTraceParam(name, traceProgress);
           api.setVisible(name, traceProgress > 0);
-          api.setLineThickness(name, Math.max(2, Math.round(2 + traceProgress * 3)));
+          api.setLineThickness(name, th(Math.max(2, Math.round(2 + traceProgress * 3))));
         } else {
           setTraceParam(name, 0);
         }
@@ -614,6 +587,13 @@
 
     Array.from(elements.stepNav.querySelectorAll("button")).forEach((button, index) => {
       const isActive = index === currentStep;
+      if (isActive && narrow && lastScrolledStep !== currentStep) {
+        lastScrolledStep = currentStep;
+        elements.stepNav.scrollTo({
+          left: button.offsetLeft - (elements.stepNav.clientWidth - button.clientWidth) / 2,
+          behavior: reduceMotion ? "auto" : "smooth",
+        });
+      }
       button.classList.toggle("is-active", isActive);
       button.classList.toggle("is-complete", index < currentStep);
       if (isActive) button.setAttribute("aria-current", "step");
@@ -747,12 +727,6 @@
     elements.subtitle.textContent = activity.subtitle;
     elements.proofTitle.textContent = activity.proofTitle;
     elements.proofCopy.textContent = activity.proofCopy;
-    const levelBadge = document.querySelector(".level-badge");
-    if (levelBadge && activity.level) {
-      const levelNames = { F: "Foundation", I: "Intermediate", A: "Advanced" };
-      levelBadge.textContent = `Livello ${activity.level}`;
-      levelBadge.setAttribute("aria-label", `Livello ${levelNames[activity.level] || activity.level}`);
-    }
     buildNav();
     attachEvents();
     updateInterface();
@@ -762,17 +736,24 @@
       return;
     }
 
+    if (narrow) {
+      const frame = document.querySelector(".ggb-frame");
+      appletWidth = Math.max(280, Math.floor(frame.clientWidth));
+      appletHeight = Math.round(appletWidth * 0.86);
+      APPLET_ASPECT_RATIO = appletWidth / appletHeight;
+    }
+
     const applet = new GGBApplet({
       id: `baseConstruction_${activityKey.replace(/[^a-z0-9]/gi, "_")}`,
       appName: "geometry",
-      width: APPLET_WIDTH,
-      height: APPLET_HEIGHT,
+      width: appletWidth,
+      height: appletHeight,
       appletOnLoad: buildConstruction,
       showToolBar: false,
       showMenuBar: false,
       showAlgebraInput: false,
       showAnimationButton: true,
-      showZoomButtons: true,
+      showZoomButtons: !narrow,
       showFullscreenButton: true,
       enableRightClick: false,
       enableLabelDrags: false,

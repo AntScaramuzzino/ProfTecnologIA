@@ -32,8 +32,8 @@ export default function CostruzioniGeometrichePage() {
           { label: "Costruzioni geometriche", color: "#1A3A7A" },
         ]}
       />
-      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
-        <div className="max-w-3xl">
+      <div className="mx-auto flex max-w-6xl flex-col px-4 py-6 sm:px-6 sm:py-10">
+        <div className="order-1 max-w-3xl">
           <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-800">
             Disegno tecnico · Classe 1ª · {MC_COSTRUZIONI}
           </p>
@@ -44,7 +44,7 @@ export default function CostruzioniGeometrichePage() {
           </p>
         </div>
 
-        <div className="mt-6 grid gap-4 lg:grid-cols-2">
+        <div className="order-4 mt-10 grid gap-4 sm:order-2 sm:mt-6 lg:grid-cols-2">
           <div className="rounded-xl border border-blue-200 bg-blue-50 p-5 text-sm leading-6 text-blue-950">
             <p className="font-black">Come si usa una tavola</p>
             <ol className="mt-2 list-decimal space-y-1 pl-5">
@@ -72,12 +72,15 @@ export default function CostruzioniGeometrichePage() {
           </div>
         </div>
 
-        <nav aria-label="Gruppi di costruzioni" className="mt-6 flex flex-wrap gap-2">
+        <nav
+          aria-label="Gruppi di costruzioni"
+          className="order-2 -mx-4 mt-5 flex gap-2 overflow-x-auto px-4 pb-1 [scrollbar-width:none] sm:order-3 sm:mx-0 sm:mt-6 sm:flex-wrap sm:overflow-visible sm:px-0 [&::-webkit-scrollbar]:hidden"
+        >
           {CATEGORIE_COSTRUZIONI.map((cat) => (
             <a
               key={cat.id}
               href={`#${cat.id}`}
-              className="rounded-full border border-slate-300 bg-white px-3.5 py-2 text-sm font-bold text-slate-800 hover:border-blue-700 hover:text-blue-800"
+              className="shrink-0 whitespace-nowrap rounded-full border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-bold text-slate-800 hover:border-blue-700 hover:text-blue-800"
             >
               {cat.titolo}{" "}
               <span className="text-slate-500">· {COSTRUZIONI_GEOGEBRA.filter((c) => c.categoria === cat.id).length}</span>
@@ -85,15 +88,16 @@ export default function CostruzioniGeometrichePage() {
           ))}
         </nav>
 
+        <div className="order-3 sm:order-4">
         {CATEGORIE_COSTRUZIONI.map((cat) => {
           const tavole = COSTRUZIONI_GEOGEBRA.filter((c) => c.categoria === cat.id);
           return (
-            <section key={cat.id} id={cat.id} aria-labelledby={`titolo-${cat.id}`} className="mt-10 scroll-mt-28">
-              <h2 id={`titolo-${cat.id}`} className="text-2xl font-black tracking-tight text-slate-950">
+            <section key={cat.id} id={cat.id} aria-labelledby={`titolo-${cat.id}`} className="mt-8 scroll-mt-28 sm:mt-10">
+              <h2 id={`titolo-${cat.id}`} className="text-xl font-black tracking-tight text-slate-950 sm:text-2xl">
                 {cat.titolo}
               </h2>
               <p className="mt-1 text-sm leading-6 text-slate-700">{cat.descrizione}</p>
-              <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <ul className="mt-3 grid gap-3 sm:mt-4 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
                 {tavole.map((c) => {
                   const lim = c.href
                     ? null
@@ -101,10 +105,15 @@ export default function CostruzioniGeometrichePage() {
                   return (
                     <li
                       key={c.slug}
-                      className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
+                      className="flex overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm sm:flex-col"
                     >
                       {/* L'immagine è un secondo accesso alla stessa pagina: il link con il nome è sotto */}
-                      <Link href={hrefCostruzione(c)} tabIndex={-1} aria-hidden="true" className="block border-b border-slate-100 bg-white">
+                      <Link
+                        href={hrefCostruzione(c)}
+                        tabIndex={-1}
+                        aria-hidden="true"
+                        className="flex w-[34%] shrink-0 items-center border-r border-slate-100 bg-white sm:block sm:w-auto sm:border-b sm:border-r-0"
+                      >
                         <img
                           src={`${basePath}/assets/costruzioni/${c.slug}.webp`}
                           alt=""
@@ -115,18 +124,18 @@ export default function CostruzioniGeometrichePage() {
                           className="aspect-[640/394] w-full object-contain"
                         />
                       </Link>
-                      <div className="flex flex-1 flex-col gap-2 p-5">
-                        <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-900">
+                      <div className="flex min-w-0 flex-1 flex-col gap-1 p-3 sm:gap-2 sm:p-5">
+                        <p className="font-mono text-[0.68rem] font-black uppercase tracking-widest text-blue-900 sm:text-xs">
                           Costruzione {c.numero}
                         </p>
-                        <h3 className="text-lg font-black leading-snug tracking-tight text-slate-950">{c.titolo}</h3>
-                        <p className="text-sm leading-6 text-slate-700">{c.descrizione}</p>
-                        <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1 pt-2 text-sm font-bold">
-                          <Link href={hrefCostruzione(c)} className="text-blue-800 underline underline-offset-4">
+                        <h3 className="text-base font-black leading-snug tracking-tight text-slate-950 sm:text-lg">{c.titolo}</h3>
+                        <p className="hidden text-sm leading-6 text-slate-700 sm:block">{c.descrizione}</p>
+                        <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1 pt-1 text-sm font-bold sm:pt-2">
+                          <Link href={hrefCostruzione(c)} className="py-1.5 text-blue-800 underline underline-offset-4">
                             Apri la tavola →
                           </Link>
                           {lim && (
-                            <a href={lim} target="_blank" rel="noopener noreferrer" className="text-slate-600 underline underline-offset-4">
+                            <a href={lim} target="_blank" rel="noopener noreferrer" className="hidden py-1.5 text-slate-600 underline underline-offset-4 sm:inline">
                               LIM ↗
                             </a>
                           )}
@@ -139,8 +148,9 @@ export default function CostruzioniGeometrichePage() {
             </section>
           );
         })}
+        </div>
 
-        <div className="mt-10 rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950">
+        <div className="order-5 mt-10 rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm leading-6 text-amber-950">
           <p className="font-black">⚠️ Sicurezza</p>
           <p className="mt-1">
             Il compasso ha una punta metallica. Non rivolgerla verso i compagni, non camminare con il compasso in mano e,
@@ -148,7 +158,7 @@ export default function CostruzioniGeometrichePage() {
           </p>
         </div>
 
-        <p className="mt-6 text-sm font-bold">
+        <p className="order-6 mt-6 text-sm font-bold">
           <Link href={`/mc/${MC_COSTRUZIONI}`} className="text-blue-800 underline underline-offset-4">
             Torna alla micro-competenza {MC_COSTRUZIONI} →
           </Link>

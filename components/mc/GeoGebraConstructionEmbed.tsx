@@ -7,6 +7,8 @@ type GeoGebraConstructionEmbedProps = {
   title: string;
   iframeTitle: string;
   className?: string;
+  /** Senza intestazione: per le pagine che hanno già il titolo della tavola */
+  compact?: boolean;
 };
 
 export default function GeoGebraConstructionEmbed({
@@ -14,6 +16,7 @@ export default function GeoGebraConstructionEmbed({
   title,
   iframeTitle,
   className = "",
+  compact = false,
 }: GeoGebraConstructionEmbedProps) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const src = `${basePath}/embeds/geogebra/costruzioni-base/index.html?activity=${encodeURIComponent(activity)}`;
@@ -27,7 +30,7 @@ export default function GeoGebraConstructionEmbed({
     if (!documentElement) return;
 
     const updateHeight = () => {
-      setIframeHeight(Math.max(700, documentElement.scrollHeight + 2));
+      setIframeHeight(Math.max(360, documentElement.scrollHeight + 2));
     };
 
     resizeObserverRef.current?.disconnect();
@@ -41,7 +44,7 @@ export default function GeoGebraConstructionEmbed({
   return (
     <section className={className} aria-labelledby={titleId}>
       <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
-        <div>
+        <div className={compact ? "sr-only" : undefined}>
           <p className="text-xs font-black uppercase tracking-widest text-blue-700">
             Laboratorio interattivo · GeoGebra
           </p>
@@ -70,7 +73,7 @@ export default function GeoGebraConstructionEmbed({
           onLoad={syncIframeHeight}
         />
       </div>
-      <p className="mt-2 text-xs leading-5 text-slate-500">
+      <p className="mt-2 px-1 text-xs leading-5 text-slate-500">
         L’attività carica GeoGebra da geogebra.org e richiede una connessione Internet.
       </p>
     </section>
