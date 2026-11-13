@@ -312,6 +312,15 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
 @media (max-width: 640px) { .pill.media button { width: 34px; } }
 @media (max-width: 480px) { .pill.media button { width: 30px; } .pill.media { padding: 0 3px; } #btnFull { display: none; } .bar { gap: 6px; } }
 
+/* crediti e licenza nel pannello Condividi */
+.share .cred { margin: 14px 0 0; padding: 12px 0 0; border-top: 1px solid rgba(17, 32, 31, .16); }
+.share .cred h2 { margin: 0 0 8px; font: 700 14px/1.2 var(--body); }
+.share .cred dl { margin: 0; font: 400 12px/1.45 var(--body); }
+.share .cred dt { margin: 6px 0 0; font-weight: 700; }
+.share .cred dd { margin: 0; }
+.share .cred p { margin: 10px 0 0; font: 600 12px/1.4 var(--body); }
+.share .cred a { color: #0d6b63; }
+
 /* Nel libro: gli stessi caratteri delle altre attività (Atkinson Hyperlegible, JetBrains Mono) */
 :root { --display: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --body: "Atkinson Hyperlegible", Verdana, Arial, sans-serif; --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace; }
 .head h1 { font-weight: 700; letter-spacing: -.005em; font-size: clamp(25px, 3vw, 35px); }
@@ -376,6 +385,7 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
         <p>QR code dell'esplorazione: porta alla scena iniziale.<br><a href="qr.png" download id="shQrPng">Scarica PNG</a> · <a href="qr.svg" download id="shQrSvg">Scarica SVG</a></p>
       </div>
       <p class="said" id="shSaid" role="status"></p>
+      <div class="cred" id="shCred"></div>
     </div>
     <div class="menu" id="menu" role="menu" aria-label="Tutte le scene" hidden></div>
   </div>
@@ -432,9 +442,24 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
     });
   }
   const UI = {
-    it: { explore: 'Esplora: ', seen: ' (già vista, restano rami da visitare)', done: ' (completata)', explain: 'Spiegazione: ', back: 'Torna a: ', backScene: 'Torna al testo della scena: ', closeTip: 'Chiudi la spiegazione e torna a: ', chain: 'Fasi in questa scena', found: 'Scoperte ', foundOf: (a, b) => `Scene scoperte: ${a} su ${b}`, here: ' (sei qui)', fold: 'Riduci il testo', unfold: 'Mostra il testo', copied: 'Copiato.', manual: 'Testo selezionato: copialo con Ctrl+C.', where: 'Dove sei', all: 'Tutte le scene', share: 'Condividi', full: 'Schermo intero', points: 'Punti da esplorare', link: 'Link a questa scena', embed: 'Codice per inserirla in una pagina', copy: 'Copia', qrAlt: "QR code che apre l'esplorazione dall'inizio", qr: "QR code dell'esplorazione: porta alla scena iniziale.", png: 'Scarica PNG', svg: 'Scarica SVG', play: 'Visita guidata', stop: 'Ferma la visita guidata', soundOn: 'Lettura ad alta voce: attiva', soundOff: 'Lettura ad alta voce: spenta', lang: 'Lingua', langName: 'Italiano' },
-    en: { explore: 'Explore: ', seen: ' (seen, some branches still to visit)', done: ' (completed)', explain: 'Explanation: ', back: 'Back to: ', backScene: 'Back to the scene text: ', closeTip: 'Close the explanation and go back to: ', chain: 'Stages in this scene', found: 'Found ', foundOf: (a, b) => `Scenes found: ${a} of ${b}`, here: ' (you are here)', fold: 'Hide the text', unfold: 'Show the text', copied: 'Copied.', manual: 'Text selected: copy it with Ctrl+C.', where: 'Where you are', all: 'All scenes', share: 'Share', full: 'Full screen', points: 'Points to explore', link: 'Link to this scene', embed: 'Code to embed it in a page', copy: 'Copy', qrAlt: 'QR code that opens the exploration from the start', qr: 'QR code of the exploration: it opens the first scene.', png: 'Download PNG', svg: 'Download SVG', play: 'Guided tour', stop: 'Stop the guided tour', soundOn: 'Read aloud: on', soundOff: 'Read aloud: off', lang: 'Language', langName: 'English' },
-    fr: { explore: 'Explorer : ', seen: ' (déjà vue, il reste des branches à visiter)', done: ' (terminée)', explain: 'Explication : ', back: 'Retour à : ', backScene: 'Retour au texte de la scène : ', closeTip: "Fermer l'explication et revenir à : ", chain: 'Étapes dans cette scène', found: 'Découvertes ', foundOf: (a, b) => `Scènes découvertes : ${a} sur ${b}`, here: ' (tu es ici)', fold: 'Réduire le texte', unfold: 'Afficher le texte', copied: 'Copié.', manual: 'Texte sélectionné : copie-le avec Ctrl+C.', where: 'Où tu es', all: 'Toutes les scènes', share: 'Partager', full: 'Plein écran', points: 'Points à explorer', link: 'Lien vers cette scène', embed: "Code pour l'insérer dans une page", copy: 'Copier', qrAlt: "QR code qui ouvre l'exploration depuis le début", qr: "QR code de l'exploration : il ouvre la première scène.", png: 'Télécharger PNG', svg: 'Télécharger SVG', play: 'Visite guidée', stop: 'Arrêter la visite guidée', soundOn: 'Lecture à voix haute : activée', soundOff: 'Lecture à voix haute : désactivée', lang: 'Langue', langName: 'Français' },
+    it: { explore: 'Esplora: ', seen: ' (già vista, restano rami da visitare)', done: ' (completata)', explain: 'Spiegazione: ', back: 'Torna a: ', backScene: 'Torna al testo della scena: ', closeTip: 'Chiudi la spiegazione e torna a: ', chain: 'Fasi in questa scena', found: 'Scoperte ', foundOf: (a, b) => `Scene scoperte: ${a} su ${b}`, here: ' (sei qui)', fold: 'Riduci il testo', unfold: 'Mostra il testo', copied: 'Copiato.', manual: 'Testo selezionato: copialo con Ctrl+C.', where: 'Dove sei', all: 'Tutte le scene', share: 'Condividi', full: 'Schermo intero', points: 'Punti da esplorare', link: 'Link a questa scena', embed: 'Codice per inserirla in una pagina', copy: 'Copia', qrAlt: "QR code che apre l'esplorazione dall'inizio", qr: "QR code dell'esplorazione: porta alla scena iniziale.", png: 'Scarica PNG', svg: 'Scarica SVG', play: 'Visita guidata', stop: 'Ferma la visita guidata', soundOn: 'Lettura ad alta voce: attiva', soundOff: 'Lettura ad alta voce: spenta', lang: 'Lingua', langName: 'Italiano', cred: 'Crediti e licenza', credList: [
+      ['Testi', 'scritti con l\'intelligenza artificiale (Claude, Anthropic), poi rivisti e validati dal curatore, Prof. Ing. Antonio Scaramuzzino, secondo il Protocollo CARBLE-CDD.'],
+      ['Immagini', 'generate con l\'intelligenza artificiale di Canva e controllate una per una; le illustrazioni sono indicate come tali nel testo.'],
+      ['Voce', 'in italiano è la voce di Antonio Scaramuzzino, riprodotta con l\'IA (VoiceStudio); in inglese e francese sono voci sintetiche (Kokoro).'],
+      ['Licenza', 'Creative Commons Attribuzione – Non commerciale – Condividi allo stesso modo 4.0 (CC BY-NC-SA 4.0).']],
+    credMore: 'Tutti i crediti del libro', credLic: 'Leggi la licenza' },
+    en: { explore: 'Explore: ', seen: ' (seen, some branches still to visit)', done: ' (completed)', explain: 'Explanation: ', back: 'Back to: ', backScene: 'Back to the scene text: ', closeTip: 'Close the explanation and go back to: ', chain: 'Stages in this scene', found: 'Found ', foundOf: (a, b) => `Scenes found: ${a} of ${b}`, here: ' (you are here)', fold: 'Hide the text', unfold: 'Show the text', copied: 'Copied.', manual: 'Text selected: copy it with Ctrl+C.', where: 'Where you are', all: 'All scenes', share: 'Share', full: 'Full screen', points: 'Points to explore', link: 'Link to this scene', embed: 'Code to embed it in a page', copy: 'Copy', qrAlt: 'QR code that opens the exploration from the start', qr: 'QR code of the exploration: it opens the first scene.', png: 'Download PNG', svg: 'Download SVG', play: 'Guided tour', stop: 'Stop the guided tour', soundOn: 'Read aloud: on', soundOff: 'Read aloud: off', lang: 'Language', langName: 'English', cred: 'Credits and licence', credList: [
+      ['Texts', 'written with artificial intelligence (Claude, Anthropic), then reviewed and approved by the curator, Prof. Ing. Antonio Scaramuzzino, following the CARBLE-CDD Protocol.'],
+      ['Images', 'generated with Canva\'s artificial intelligence and checked one by one; illustrations are marked as such in the text.'],
+      ['Voice', 'Italian: Antonio Scaramuzzino\'s own voice, reproduced with AI (VoiceStudio); English and French: synthetic voices (Kokoro).'],
+      ['Licence', 'Creative Commons Attribution – NonCommercial – ShareAlike 4.0 (CC BY-NC-SA 4.0).']],
+    credMore: 'All the book\'s credits', credLic: 'Read the licence' },
+    fr: { explore: 'Explorer : ', seen: ' (déjà vue, il reste des branches à visiter)', done: ' (terminée)', explain: 'Explication : ', back: 'Retour à : ', backScene: 'Retour au texte de la scène : ', closeTip: "Fermer l'explication et revenir à : ", chain: 'Étapes dans cette scène', found: 'Découvertes ', foundOf: (a, b) => `Scènes découvertes : ${a} sur ${b}`, here: ' (tu es ici)', fold: 'Réduire le texte', unfold: 'Afficher le texte', copied: 'Copié.', manual: 'Texte sélectionné : copie-le avec Ctrl+C.', where: 'Où tu es', all: 'Toutes les scènes', share: 'Partager', full: 'Plein écran', points: 'Points à explorer', link: 'Lien vers cette scène', embed: "Code pour l'insérer dans une page", copy: 'Copier', qrAlt: "QR code qui ouvre l'exploration depuis le début", qr: "QR code de l'exploration : il ouvre la première scène.", png: 'Télécharger PNG', svg: 'Télécharger SVG', play: 'Visite guidée', stop: 'Arrêter la visite guidée', soundOn: 'Lecture à voix haute : activée', soundOff: 'Lecture à voix haute : désactivée', lang: 'Langue', langName: 'Français', cred: 'Crédits et licence', credList: [
+      ['Textes', 'écrits avec l\'intelligence artificielle (Claude, Anthropic), puis revus et validés par le curateur, Prof. Ing. Antonio Scaramuzzino, selon le Protocole CARBLE-CDD.'],
+      ['Images', 'générées avec l\'intelligence artificielle de Canva et contrôlées une par une ; les illustrations sont signalées comme telles dans le texte.'],
+      ['Voix', 'en italien, c\'est la voix d\'Antonio Scaramuzzino, reproduite par l\'IA (VoiceStudio) ; en anglais et en français, ce sont des voix de synthèse (Kokoro).'],
+      ['Licence', 'Creative Commons Attribution – Pas d\'utilisation commerciale – Partage dans les mêmes conditions 4.0 (CC BY-NC-SA 4.0).']],
+    credMore: 'Tous les crédits du livre', credLic: 'Lire la licence' },
   };
   const U = UI[LANG];
 
@@ -1384,6 +1409,18 @@ button.crumb:hover { background-color: var(--glass-fill-hot); }
       set('#shQr img', 'alt', U.qrAlt); set('#shQrPng', null, U.png); set('#shQrSvg', null, U.svg);
       const qp = $('shQr').querySelector('p'); if (qp && qp.firstChild) qp.firstChild.textContent = U.qr;
       btnFold.setAttribute('aria-label', U.fold);
+    }
+    // crediti e licenza, in fondo al pannello Condividi
+    {
+      const c = $('shCred'), lic = { it: 'deed.it', en: 'deed.en', fr: 'deed.fr' }[LANG] || 'deed.it';
+      const h = document.createElement('h2'); h.textContent = U.cred; c.appendChild(h);
+      const dl = document.createElement('dl');
+      U.credList.forEach(([k, v]) => { const dt = document.createElement('dt'); dt.textContent = k; const dd = document.createElement('dd'); dd.textContent = v; dl.append(dt, dd); });
+      c.appendChild(dl);
+      const p = document.createElement('p');
+      const a1 = document.createElement('a'); a1.href = 'https://creativecommons.org/licenses/by-nc-sa/4.0/' + lic; a1.target = '_blank'; a1.rel = 'license noopener'; a1.textContent = U.credLic;
+      const a2 = document.createElement('a'); a2.href = 'https://book.proftecnologia.it/credits/'; a2.target = '_blank'; a2.rel = 'noopener'; a2.textContent = U.credMore;
+      p.append(a1, document.createTextNode(' · '), a2); c.appendChild(p);
     }
     let id = D.radice;
     try { const h = decodeURIComponent(location.hash.slice(1)); if (N[h]) id = h; } catch (e) { /* si parte dall'inizio */ }

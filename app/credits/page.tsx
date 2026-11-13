@@ -94,6 +94,24 @@ const AI_TOOLS = [
     uso: "Interrogazione semantica delle fonti bibliografiche in modalità batch per la costruzione della matrice MC.",
     url: "https://anthropic.com",
   },
+  {
+    nome: "Canva — generazione di immagini con IA",
+    versione: "—",
+    uso: "Generazione delle immagini delle esplorazioni immersive, controllate una per una prima della pubblicazione.",
+    url: "https://www.canva.com",
+  },
+  {
+    nome: "VoiceStudio (OmniVoice)",
+    versione: "voce clonata · Antonio Scaramuzzino",
+    uso: "Lettura ad alta voce in italiano delle esplorazioni immersive con la voce dell'autore, riprodotta con l'IA a partire da una sua registrazione.",
+    url: "",
+  },
+  {
+    nome: "Kokoro (sintesi vocale open source)",
+    versione: "Kokoro-82M · voci bm_george, ff_siwis",
+    uso: "Lettura ad alta voce in inglese e in francese delle esplorazioni immersive.",
+    url: "https://huggingface.co/hexgrad/Kokoro-82M",
+  },
 ];
 
 export default function CreditsPage() {
@@ -154,18 +172,49 @@ export default function CreditsPage() {
                     </div>
                     <p className="mt-2 text-sm leading-6 text-slate-600">{tool.uso}</p>
                   </div>
-                  <a
-                    href={tool.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 hover:border-slate-400"
-                  >
-                    Sito →
-                  </a>
+                  {tool.url && (
+                    <a
+                      href={tool.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="shrink-0 rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 hover:border-slate-400"
+                    >
+                      Sito →
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
           </div>
+        </section>
+
+        {/* ── ESPLORAZIONI IMMERSIVE ───────────────────────────────────────── */}
+        <section id="esplorazioni" className="mb-12 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+          <h2 className="mb-4 text-2xl font-black">Esplorazioni immersive</h2>
+          <dl className="space-y-3 text-sm leading-7 text-slate-700">
+            <div>
+              <dt className="font-black text-slate-900">Testi</dt>
+              <dd>Scritti con l&apos;intelligenza artificiale (Claude, Anthropic), poi rivisti e validati dal curatore, Prof. Ing. Antonio Scaramuzzino, secondo il Protocollo CARBLE-CDD. Le traduzioni in inglese e in francese sono fatte con l&apos;IA e ricontrollate da un secondo modello di IA.</dd>
+            </div>
+            <div>
+              <dt className="font-black text-slate-900">Immagini</dt>
+              <dd>Generate con l&apos;intelligenza artificiale di Canva e controllate una per una; le illustrazioni (per esempio i modelli degli atomi) sono indicate come tali nel testo.</dd>
+            </div>
+            <div>
+              <dt className="font-black text-slate-900">Voce</dt>
+              <dd>In italiano è la voce di Antonio Scaramuzzino, riprodotta con l&apos;IA (VoiceStudio); in inglese e francese sono voci sintetiche (Kokoro).</dd>
+            </div>
+            <div>
+              <dt className="font-black text-slate-900">Licenza</dt>
+              <dd>
+                Le esplorazioni immersive sono distribuite con licenza{" "}
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" target="_blank" rel="license noopener noreferrer" className="font-semibold text-emerald-700 underline hover:text-emerald-900">
+                  Creative Commons Attribuzione – Non commerciale – Condividi allo stesso modo 4.0 (CC BY-NC-SA 4.0)
+                </a>
+                : puoi riusarle e modificarle per scopi non commerciali, citando l&apos;autore e condividendo le opere derivate con la stessa licenza.
+              </dd>
+            </div>
+          </dl>
         </section>
 
         {/* ── FONTI VIDEO ──────────────────────────────────────────────────── */}
@@ -274,7 +323,7 @@ export default function CreditsPage() {
             </div>
           </div>
           <p className="mt-6 text-xs leading-6 text-slate-400">
-            © 2026 Antonio Scaramuzzino · Proposta editoriale riservata.
+            © 2026 Antonio Scaramuzzino · Proposta editoriale riservata, tranne le esplorazioni immersive, distribuite con licenza CC BY-NC-SA 4.0.
             I contenuti del sito sono materiale dimostrativo del progetto ProfTecnologIA.
             I video linkati appartengono ai rispettivi autori e canali YouTube.
             Le immagini generate con AI sono prodotte per uso editoriale e didattico.
