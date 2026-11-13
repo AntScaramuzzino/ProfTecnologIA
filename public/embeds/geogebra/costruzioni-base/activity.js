@@ -263,7 +263,14 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const activityKey = searchParams.get("activity") || "divisione-segmento";
   const activity = ACTIVITIES[activityKey] || ACTIVITIES["divisione-segmento"];
-  const APPLET_ASPECT_RATIO = 850 / 520;
+  // Le tavole di proiezioni ortogonali chiedono un foglio più alto (appletHeight in tavole-po.js).
+  const APPLET_WIDTH = 850;
+  const APPLET_HEIGHT = activity.appletHeight || 520;
+  const APPLET_ASPECT_RATIO = APPLET_WIDTH / APPLET_HEIGHT;
+  if (activity.appletHeight) {
+    document.documentElement.classList.add("foglio-alto");
+    document.documentElement.style.setProperty("--applet-ratio", String(APPLET_ASPECT_RATIO));
+  }
 
   const elements = {
     title: document.getElementById("activity-title"),
@@ -402,6 +409,19 @@
       api.setLineStyle(name, 2);
       api.setLineThickness(name, 3);
     });
+
+    // Stile dichiarato dalla tavola, oggetto per oggetto: vince su tutte le regole qui sopra (tavole-po.js).
+    Object.entries(activity.styles || {}).forEach(([name, style]) => {
+      if (!exists(name)) return;
+      if (style.color) api.setColor(name, style.color[0], style.color[1], style.color[2]);
+      if (style.thickness !== undefined) api.setLineThickness(name, style.thickness);
+      if (style.lineStyle !== undefined) api.setLineStyle(name, style.lineStyle);
+      if (style.filling !== undefined) api.setFilling(name, style.filling);
+      if (style.pointSize !== undefined) api.setPointSize(name, style.pointSize);
+      if (style.pointStyle !== undefined) api.setPointStyle(name, style.pointStyle);
+      if (style.layer !== undefined) api.setLayer(name, style.layer);
+      if (style.label !== undefined) api.setLabelVisible(name, style.label);
+    });
   }
 
   function setEqualScaleCoordSystem(bounds) {
@@ -429,7 +449,23 @@
   function buildConstruction(ggbApi) {
     api = ggbApi;
     api.setPerspective("G");
+    // Caratteri più grandi per nomi e scritte (tavole-po.js): va fatto prima di creare gli oggetti.
+    if (activity.fontSize) {
+      api.setXML(api.getXML().replace(/<font size="[0-9]+"[/]>/, `<font size="${activity.fontSize}"/>`));
+    }
     activity.commands.forEach((command) => api.evalCommand(command));
+
+    // Aree colorate (i piani delle proiezioni ortogonali): poligoni sempre visibili, senza lati.
+    // Non entrano nei passi: GeoGebra, quando mostra un poligono, mostra di nuovo anche i suoi lati.
+    (activity.areas || []).forEach(({ name, points }) => {
+      const before = new Set(api.getAllObjectNames());
+      api.evalCommand(`${name}=Polygon(${points.join(",")})`);
+      if (!api.exists(name)) return;
+      api.setFixed(name, true, false);
+      api.getAllObjectNames()
+        .filter((label) => label !== name && !before.has(label))
+        .forEach((label) => api.setVisible(label, false));
+    });
 
     const missing = allObjects().filter((name) => !exists(name));
     if (missing.length > 0) {
@@ -711,6 +747,12 @@
     elements.subtitle.textContent = activity.subtitle;
     elements.proofTitle.textContent = activity.proofTitle;
     elements.proofCopy.textContent = activity.proofCopy;
+    const levelBadge = document.querySelector(".level-badge");
+    if (levelBadge && activity.level) {
+      const levelNames = { F: "Foundation", I: "Intermediate", A: "Advanced" };
+      levelBadge.textContent = `Livello ${activity.level}`;
+      levelBadge.setAttribute("aria-label", `Livello ${levelNames[activity.level] || activity.level}`);
+    }
     buildNav();
     attachEvents();
     updateInterface();
@@ -723,8 +765,8 @@
     const applet = new GGBApplet({
       id: `baseConstruction_${activityKey.replace(/[^a-z0-9]/gi, "_")}`,
       appName: "geometry",
-      width: 850,
-      height: 520,
+      width: APPLET_WIDTH,
+      height: APPLET_HEIGHT,
       appletOnLoad: buildConstruction,
       showToolBar: false,
       showMenuBar: false,

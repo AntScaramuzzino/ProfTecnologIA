@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom } from "@/lib/laboratori";
 import { ESPLORAZIONI, esplorazioneSrc, esplorazioneAnteprima } from "@/lib/esplorazioni";
 import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI } from "@/lib/geogebra-costruzioni";
+import { MC_PROIEZIONI, TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
 
 export const metadata: Metadata = {
   title: "Laboratori interattivi — Book ProfTecnologIA",
@@ -144,6 +145,20 @@ export default function LaboratoriPage() {
           </p>
           <Link href="/costruzioni-geometriche" className="mt-3 inline-block text-sm font-black text-blue-800 underline underline-offset-4">
             Apri le costruzioni geometriche →
+          </Link>
+        </section>
+
+        <section id="proiezioni-ortogonali" className="mt-6 scroll-mt-24 rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <h2 className="text-xl font-black tracking-tight text-slate-950">
+            Proiezioni ortogonali <span className="text-base font-bold text-slate-600">· {TAVOLE_PO_PRONTE.length} tavole guidate</span>
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+            Il proiettore ortogonale mostra un solido in tre dimensioni e le sue tre viste dal vivo; le tavole GeoGebra
+            costruiscono le viste sul foglio, un passaggio alla volta. Collegate a {MC_PROIEZIONI}. Hanno una pagina
+            tutta loro.
+          </p>
+          <Link href="/proiezioni-ortogonali" className="mt-3 inline-block text-sm font-black text-blue-800 underline underline-offset-4">
+            Apri le proiezioni ortogonali →
           </Link>
         </section>
       </div>

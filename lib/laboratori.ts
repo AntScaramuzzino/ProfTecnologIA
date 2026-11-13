@@ -3,6 +3,7 @@
 // - 5 laboratori pilota scritti a mano (elencati qui sotto)
 // - gli altri su motore comune, elencati in laboratori-cfg.json (generato da npm run labs)
 import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI, hrefCostruzione } from "./geogebra-costruzioni";
+import { MC_PROIEZIONI, TAVOLE_PO_PRONTE, hrefTavolaPO } from "./geogebra-proiezioni";
 import cfgLabs from "./laboratori-cfg.json";
 import escapeRooms from "./escape-cfg.json";
 
@@ -65,9 +66,18 @@ export function escapeSrc(mcId: string): string {
 }
 
 // Costruzioni GeoGebra: l'elenco completo sta in lib/geogebra-costruzioni.ts (qui serve all'indice di ricerca)
-export const GEOGEBRA = COSTRUZIONI_GEOGEBRA.map((c) => ({
-  href: hrefCostruzione(c),
-  titolo: c.titolo,
-  mcId: MC_COSTRUZIONI,
-  descrizione: c.descrizione,
-}));
+export const GEOGEBRA = [
+  ...COSTRUZIONI_GEOGEBRA.map((c) => ({
+    href: hrefCostruzione(c),
+    titolo: c.titolo,
+    mcId: MC_COSTRUZIONI,
+    descrizione: c.descrizione,
+  })),
+  // Tavole di proiezioni ortogonali (lib/geogebra-proiezioni.ts)
+  ...TAVOLE_PO_PRONTE.map((t) => ({
+    href: hrefTavolaPO(t),
+    titolo: t.titolo,
+    mcId: MC_PROIEZIONI,
+    descrizione: `${t.descrizione} Proiezioni ortogonali, proiettore.`,
+  })),
+];

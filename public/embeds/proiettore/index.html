@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proiettore ortogonale — Book ProfTecnologIA</title>
+<meta name="description" content="Proiettore ortogonale: un solido in tre dimensioni da ruotare e le sue tre viste — prospetto, pianta e vista laterale — disegnate in tempo reale con il metodo europeo.">
+<!-- LIBRO · le classi vanno messe prima del primo disegno della pagina -->
+<script>(function(){var p=new URLSearchParams(location.search),c=document.documentElement.classList;if(p.get('embed')==='1')c.add('is-embed');if(p.get('lim')==='1')c.add('lim');if(p.get('esercizio')==='1')c.add('is-esercizio');})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230E2A52'/><path d='M6 8h20v4H19v12h-6V12H6z' fill='%23FF4D00'/></svg>">
+</head>
+<body>
+<div class="cad-cursor" id="cadCursor" aria-hidden="true">
+  <div class="cad-cursor__h"></div>
+  <div class="cad-cursor__v"></div>
+  <div class="cad-cursor__xy" id="cadXY">X 0 · Y 0</div>
+</div>
+<header class="commessa" role="banner">
+  <span class="commessa__logo">TECNO<b>RAMA</b></span>
+  <nav class="commessa__nav" aria-label="Navigazione">
+    <a href="../../proiezioni-ortogonali/">← Tavole di proiezioni ortogonali</a>
+    <a href="#tav02" aria-current="page">TAV.02 Proiettore ortogonale</a>
+  </nav>
+  <span class="commessa__rev mono">REV. C - A.S. 2026/27</span>
+</header>
+<main id="main">
+<section class="tavola tavola--carta" id="tav02" aria-labelledby="t2Title">
+  <div class="tavola__testata">
+    <p class="eyebrow mono">TAV.02 · PROIEZIONI ORTOGONALI — METODO EUROPEO</p>
+    <h2 class="titolo-tavola" id="t2Title">Il proiettore<br>ortogonale</h2>
+    <p class="tavola__lead">
+      Al centro c'è un solido vero, in tre dimensioni: <b>trascinalo per ruotarlo</b>.
+      Intorno, tre lastre di vetro disegnano <em>in tempo reale</em> le sue proiezioni
+      ortogonali — prospetto, pianta e vista laterale — con gli spigoli nascosti
+      tratteggiati, come su una tavola da disegno.
+    </p>
+  </div>
+
+  <div class="proiettore">
+    <div class="proiettore__corpo">
+    <div class="proiettore__comandi" role="group" aria-label="Comandi del proiettore">
+      <div class="esercizio" id="esercizioBox" hidden>
+        <p class="esercizio__titolo" id="esercizioTitolo"></p>
+        <p class="esercizio__misure mono" id="esercizioMisure"></p>
+        <p class="esercizio__nota">Ruota il solido e guarda come cambiano le tre viste. Con «Posizione di partenza» torni alla posizione della tavola.</p>
+      </div>
+      <div class="proiettore__solidi" id="sceltaSolido">
+        <button class="chip is-active" data-solido="elle" aria-pressed="true">Blocco a L</button>
+        <button class="chip" data-solido="scasso" aria-pressed="false">Prisma con scasso</button>
+        <button class="chip" data-solido="cilindro" aria-pressed="false">Cilindro forato</button>
+        <button class="chip" data-solido="casetta" aria-pressed="false">Casetta</button>
+        <button class="chip" data-solido="piramide" aria-pressed="false">Piramide quadrata</button>
+        <button class="chip" data-solido="esagonale" aria-pressed="false">Prisma esagonale</button>
+        <button class="chip" data-solido="compenetrazione" aria-pressed="false">Compenetrazione</button>
+        <button class="chip" data-solido="prismatri" aria-pressed="false">Prisma triangolare</button>
+        <button class="chip" data-solido="parallelepipedo" aria-pressed="false">Parallelepipedo</button>
+        <button class="chip" data-solido="cubo" aria-pressed="false">Cubo</button>
+        <button class="chip" data-solido="piramidetri" aria-pressed="false">Piramide triangolare</button>
+        <button class="chip" data-solido="cilindropieno" aria-pressed="false">Cilindro</button>
+        <button class="chip" data-solido="cono" aria-pressed="false">Cono</button>
+        <button class="chip" data-solido="sfera" aria-pressed="false">Sfera</button>
+      </div>
+      <div class="proiettore__misure" id="misureSolido"></div>
+      <div class="proiettore__opzioni">
+        <button class="tasto" id="tastoSnap" aria-pressed="false">Aggancio 15°</button>
+        <button class="tasto" id="tastoRibalta" aria-pressed="true">Assonometria isometrica</button>
+        <button class="tasto" id="tastoVincolo" aria-pressed="false">Sgancia proiezioni</button>
+        <button class="tasto" id="tastoFacce" aria-pressed="false">Facce colorate</button>
+        <button class="tasto" id="tastoAzzeraRot">Azzera rotazione</button>
+      </div>
+    </div>
+
+    <div class="proiettore__scena" id="scenaWrap">
+      <div class="vetro vetro--pv" id="vetroPV">
+        <span class="vetro__nome mono">PV · PROSPETTO</span>
+        <svg viewBox="-110 -110 220 220" id="svgPV" role="img" aria-label="Proiezione sul piano verticale: prospetto"></svg>
+      </div>
+      <div class="vetro vetro--pl" id="vetroPL">
+        <span class="vetro__nome mono">PL · VISTA LATERALE SIN.</span>
+        <svg viewBox="-110 -110 220 220" id="svgPL" role="img" aria-label="Proiezione sul piano laterale: vista laterale sinistra"></svg>
+      </div>
+      <div class="vetro vetro--po" id="vetroPO">
+        <span class="vetro__nome mono">PO · PIANTA</span>
+        <svg viewBox="-110 -110 220 220" id="svgPO" role="img" aria-label="Proiezione sul piano orizzontale: pianta"></svg>
+      </div>
+      <div class="palco3d">
+        <canvas id="solidoCanvas" aria-label="Solido tridimensionale interattivo: trascina per ruotare" tabindex="0"></canvas>
+        <button class="palco3d__espandi mono" id="tastoEspandi" aria-pressed="false" title="Espandi la vista a tutta la finestra">ESPANDI</button>
+        <p class="palco3d__hint mono" id="hint3d"><span class="hint-fine">TRASCINA PER RUOTARE · FRECCE DA TASTIERA</span><span class="hint-coarse">TRASCINA COL DITO PER RUOTARE</span></p>
+      </div>
+    </div>
+
+    </div>
+    <p class="proiettore__lettura" id="letturaAngoli" aria-live="off">
+      <span class="mono">ROTAZIONE&nbsp;</span><b class="mono" id="valAngoli">α 0° · β 0°</b>
+    </p>
+  </div>
+
+  <div class="cartiglio" aria-hidden="true">
+    <div class="cartiglio__r"><span>OGGETTO</span><b id="cartiglioSolido">Blocco a L</b></div>
+    <div class="cartiglio__r"><span>METODO</span><b>Europeo (1° diedro)</b></div>
+    <div class="cartiglio__r"><span>FOGLIO</span><b>02 / 05</b></div>
+    <div class="cartiglio__r"><span>TRATTEGGIO</span><b>Spigoli nascosti</b></div>
+  </div>
+</section>
+</main>
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js" } }</script>
+<script type="module" src="proiettore.js"></script>
+</body>
+</html>

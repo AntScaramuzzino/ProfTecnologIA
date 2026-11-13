@@ -50,6 +50,7 @@ import GeoGebraConstructionEmbed from "@/components/mc/GeoGebraConstructionEmbed
 import { COSTRUZIONI_GEOGEBRA } from "@/lib/geogebra-costruzioni";
 import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
 import GeoGebraOrthographicProjectionEmbed from "@/components/mc/GeoGebraOrthographicProjectionEmbed";
+import ProiezioniCallout from "@/components/mc/ProiezioniCallout";
 import LabInterattivoEmbed from "@/components/mc/LabInterattivoEmbed";
 import MCRailToggle from "@/components/mc/MCRailToggle";
 import { getEscapeRoom, getLaboratorio } from "@/lib/laboratori";
@@ -1031,6 +1032,7 @@ function ZonePanel({
 
     return (
       <div className="px-4 py-6 sm:px-6">
+        {mc.id === "MC-DIS-2-01" && <ProiezioniCallout className="mb-6" />}
         {mc.id === "MC-DIS-2-01" && (
           <GeoGebraOrthographicProjectionEmbed className="mb-8" />
         )}

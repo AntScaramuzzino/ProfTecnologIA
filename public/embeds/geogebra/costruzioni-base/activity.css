@@ -436,3 +436,14 @@ html.lim .protocol-control { width: 60px; }
 html.lim .protocol-control--play { min-width: 130px; }
 html.lim .protocol-speed input { width: 76px; min-height: 46px; font-size: 0.95rem; }
 html.lim .proof-panel p:last-child { font-size: 1.05rem; }
+
+/* ── Tavole con foglio alto (proiezioni ortogonali): alla LIM il foglio deve stare tutto nello schermo ── */
+html.lim.foglio-alto .workspace { grid-template-columns: auto minmax(320px, 1fr); }
+html.lim.foglio-alto .ggb-frame {
+  width: min(64vw, calc((100vh - 16.6rem) * var(--applet-ratio, 1.3)));
+  min-height: 0;
+}
+html.lim.foglio-alto #ggb-element { min-height: 0; }
+html.lim.foglio-alto .step-card { min-height: 0; }
+html.lim.foglio-alto .step-nav { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+html.lim.foglio-alto .step-nav button { min-height: 48px; }

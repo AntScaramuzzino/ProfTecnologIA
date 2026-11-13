@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
 import Breadcrumb from "@/components/Breadcrumb";
 import SiteFooter from "@/components/SiteFooter";
+import TavoleDisegno, { NUMERO_TAVOLE_DISEGNO } from "@/components/TavoleDisegno";
 import { AREA_META, getAllMCs, getMCsByArea } from "@/lib/mc-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
@@ -46,6 +47,8 @@ export default async function AreaPage({ params }: PageProps) {
               <h1 className="mt-1 text-2xl font-black tracking-tight sm:text-4xl">{meta.label}</h1>
               <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-600 sm:mt-3 sm:text-base sm:leading-8">
                 {mcs.length} micro-competenze con progressione verticale, visuali generate e attività autentiche.
+                {areaUpper === "DIS" &&
+                  ` In più, ${NUMERO_TAVOLE_DISEGNO} tavole guidate: costruzioni geometriche e proiezioni ortogonali.`}
               </p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -74,6 +77,7 @@ export default async function AreaPage({ params }: PageProps) {
             <div className="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
               {yearMcs.map((mc) => <MCCard key={mc.id} mc={mc} />)}
             </div>
+            {areaUpper === "DIS" && <TavoleDisegno anno={anno} />}
           </section>
         ))}
 

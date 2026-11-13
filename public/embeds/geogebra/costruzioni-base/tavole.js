@@ -1343,4 +1343,6 @@
   });
 
   window.GGB_TAVOLE = TAVOLE;
+  // Vocabolario condiviso con le altre serie di tavole (tavole-po.js: proiezioni ortogonali, MC-DIS-2-01).
+  window.GGB_CREA = { creaTavola, finestre, polare, distanza, direzione, oltre, xy, num };
 })();
