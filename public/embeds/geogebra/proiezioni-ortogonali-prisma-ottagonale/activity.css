@@ -271,6 +271,23 @@ kbd { padding: 1px 5px; border: 1px solid #cbd5e1; border-bottom-width: 2px; bor
   .activity__footer { align-items: flex-start; flex-direction: column; }
 }
 
+/* ── Telefono: metà foglio alla volta, comandi che vanno a capo invece di scorrere di lato ── */
+.view-switch { display: none; }
+@media (max-width: 700px) {
+  .ggb-frame { aspect-ratio: 24 / 33; }
+  .view-switch { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .view-switch .tool-button { min-height: 44px; padding: 6px 4px; font-size: .66rem; line-height: 1.15; white-space: normal; }
+  .view-switch .tool-button[aria-pressed="true"] { background: #1e3a8a; border-color: #1e3a8a; color: white; }
+  .projector-toolbar { flex-wrap: wrap; overflow-x: visible; }
+  .projector-toolbar .tool-button { flex: 1 1 calc(33% - 8px); min-height: 44px; padding: 8px 6px; }
+  .toolbar-status { flex: 1 1 100%; justify-content: space-between; margin-left: 0; }
+  .step-nav { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; overflow: visible; padding-bottom: 0; }
+  .step-chip { min-width: 0; flex-direction: column; gap: 3px; padding: 6px 2px; font-size: .68rem; text-align: center; }
+  .rotation-surface { align-items: flex-start; padding: 6px; }
+  .rotation-surface span { font-size: .62rem; letter-spacing: 0; }
+  .rotation-surface.is-small span { display: none; }
+}
+
 @media (max-width: 430px) {
   .support-toolbar,
   .projection-toolbar { align-items: stretch; flex-direction: column; }
@@ -286,3 +303,6 @@ kbd { padding: 1px 5px; border: 1px solid #cbd5e1; border-bottom-width: 2px; bor
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* β in maiuscolo diventa «Β», che si legge come una B: i pulsanti dell'inclinazione restano in minuscolo */
+#tilt-down-button, #tilt-up-button { text-transform: none; }

@@ -172,6 +172,23 @@
   const selectedOptions = new Map();
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // ── Telefono (schermo stretto): il foglio 48 × 33 cm intero sarebbe largo 7 px per centimetro.
+  //    Si mostra una metà del foglio alla volta, in un riquadro verticale (24 × 33 cm): due volte più grande.
+  //    L'inquadratura segue il passo; l'alunno può cambiarla con i pulsanti sopra il foglio.
+  const NARROW_QUERY = window.matchMedia("(max-width: 700px)");
+  const NARROW = NARROW_QUERY.matches;
+  NARROW_QUERY.addEventListener?.("change", () => window.location.reload());
+  const TOUCH = window.matchMedia("(pointer: coarse)").matches;
+  const SHEET_VIEWS = {
+    centro: { label: "Solido", x: [-12, 12], y: [-16.5, 16.5] },
+    sinistra: { label: "PV e PO", x: [-24, 0], y: [-16.5, 16.5] },
+    destra: { label: "PL e solido", x: [0, 24], y: [-16.5, 16.5] },
+    tutto: { label: "Foglio intero", x: [-24, 24], y: [-33, 33] },
+  };
+  const AUTO_VIEW = ["centro", "sinistra", "sinistra", "destra", "tutto"];
+  let sheetView = NARROW ? "centro" : null;
+  let viewStep = -1;
+
   const elements = {
     nav: document.getElementById("step-nav"),
     loading: document.getElementById("loading-state"),
@@ -235,7 +252,8 @@
     api.setPerspective("G");
     api.setAxesVisible(false, false);
     api.setGridVisible(false);
-    api.setCoordSystem(-24, 24, -16.5, 16.5);
+    if (NARROW) applySheetView(sheetView);
+    else api.setCoordSystem(-24, 24, -16.5, 16.5);
     api.setErrorDialogsActive(false);
 
     const commands = [
@@ -569,6 +587,69 @@
     });
   }
 
+  // Zona del solido sul foglio (cm): al centro e grande nel passo 0, nel quadrante in basso a destra dal passo 1.
+  function solidZone(p) {
+    return { x0: -12 + 24 * p, x1: 12 + 12 * p, y0: -16.5, y1: 16.5 - 16.5 * p };
+  }
+
+  function currentFrame() {
+    if (!NARROW) return { x: [-24, 24], y: [-16.5, 16.5] };
+    return SHEET_VIEWS[sheetView];
+  }
+
+  function placeRotationSurface(visible, p) {
+    const frame = currentFrame();
+    const zone = solidZone(p);
+    const w = frame.x[1] - frame.x[0];
+    const h = frame.y[1] - frame.y[0];
+    const left = Math.max(zone.x0, frame.x[0]);
+    const right = Math.min(zone.x1, frame.x[1]);
+    const bottom = Math.max(zone.y0, frame.y[0]);
+    const top = Math.min(zone.y1, frame.y[1]);
+    const inView = right - left > 1 && top - bottom > 1;
+    const surface = elements.rotationSurface;
+    surface.hidden = !visible || !inView;
+    surface.classList.toggle("is-small", p > 0.5);
+    if (!inView) return;
+    surface.style.left = `${((left - frame.x[0]) / w) * 100}%`;
+    surface.style.width = `${((right - left) / w) * 100}%`;
+    surface.style.bottom = `${((bottom - frame.y[0]) / h) * 100}%`;
+    surface.style.height = `${((top - bottom) / h) * 100}%`;
+  }
+
+  function applySheetView(name) {
+    if (!NARROW) return;
+    sheetView = name;
+    const view = SHEET_VIEWS[name];
+    if (api) api.setCoordSystem(view.x[0], view.x[1], view.y[0], view.y[1]);
+    document.querySelectorAll(".view-switch button").forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.view === name));
+    });
+  }
+
+  function buildViewSwitch() {
+    if (!NARROW) return;
+    const frame = document.querySelector(".ggb-frame");
+    const bar = document.createElement("div");
+    bar.className = "view-switch";
+    bar.setAttribute("role", "group");
+    bar.setAttribute("aria-label", "Parte del foglio da guardare");
+    Object.entries(SHEET_VIEWS).forEach(([name, view]) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "tool-button";
+      button.dataset.view = name;
+      button.textContent = view.label;
+      button.setAttribute("aria-pressed", String(name === sheetView));
+      button.addEventListener("click", () => {
+        applySheetView(name);
+        applyStage(currentStep, currentProgress);
+      });
+      bar.appendChild(button);
+    });
+    frame.parentNode.insertBefore(bar, frame);
+  }
+
   function setVisible(name, value) {
     if (api && api.exists(name)) api.setVisible(name, value);
   }
@@ -613,10 +694,11 @@
     setGroupVisibility(SIDE_FINAL, sideFinalVisible);
     setGroupVisibility(VERTEX_LABELS_PL, vertexLabelsVisible && step >= 3);
     styleFinalEdges(step === 4);
-    elements.rotationSurface.hidden = !solidVisible;
-    elements.rotationSurface.style.left = `${25 + 50 * isoLayoutProgress}%`;
-    elements.rotationSurface.style.width = `${50 - 25 * isoLayoutProgress}%`;
-    elements.rotationSurface.style.height = `${100 - 50 * isoLayoutProgress}%`;
+    if (NARROW && step !== viewStep) {
+      viewStep = step;
+      applySheetView(AUTO_VIEW[step] || "tutto");
+    }
+    placeRotationSurface(solidVisible, isoLayoutProgress);
 
     TECHNICAL_HELPERS.forEach((name) => setVisible(name, false));
     api.setRepaintingActive(true);
@@ -1055,11 +1137,19 @@
       return;
     }
 
+    buildViewSwitch();
+    if (TOUCH) {
+      const hint = elements.rotationSurface.querySelector("span");
+      if (hint) hint.textContent = "Trascina con il dito per ruotare";
+      elements.rotationSurface.setAttribute("aria-label", "Solido tridimensionale interattivo: trascina con il dito per ruotare");
+    }
+
     const applet = new GGBApplet({
       id: `${SLUG.replace(/-/g, "_")}_applet`,
       appName: "geometry",
-      width: 1152,
-      height: 792,
+      // Sul telefono il riquadro è verticale (24 × 33 cm): metà foglio alla volta, vedi SHEET_VIEWS.
+      width: NARROW ? 720 : 1152,
+      height: NARROW ? 990 : 792,
       appletOnLoad: buildConstruction,
       showToolBar: false,
       showMenuBar: false,
