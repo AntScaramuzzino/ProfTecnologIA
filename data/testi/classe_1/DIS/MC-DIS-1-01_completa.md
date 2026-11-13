@@ -413,7 +413,7 @@ Il pentagono non si costruisce con la sola apertura del compasso come l'esagono 
 
 ---
 
-Le costruzioni dalla 9 alla 20 ampliano il repertorio: assi e parallele, poligoni inscritti, triangoli dati i lati, curve raccordate. Ognuna ha la sua tavola animata.
+Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligoni dato il lato e inscritti, triangoli, ovali, ovoli e spirali. Ognuna ha la sua tavola animata; le trovi tutte, divise per tipo, nella pagina «Costruzioni geometriche» del Book.
 
 ---
 
@@ -686,6 +686,318 @@ Le costruzioni dalla 9 alla 20 ampliano il repertorio: assi e parallele, poligon
 **Perché funziona?** Ogni semicirconferenza finisce sulla retta r, proprio dove comincia la successiva. I due centri e il punto di contatto stanno sulla stessa retta, quindi la curva prosegue senza spigoli. A ogni mezzo giro il raggio aumenta di una lunghezza AB: dopo un giro completo la spirale si è allargata di 2 × AB, cioè di un passo.
 
 **Prova tu:** Costruisci una spirale con passo di 1,6 cm: A e B distano 0,8 cm. Traccia almeno sei semicirconferenze e misura la distanza tra due giri vicini.
+
+---
+
+#### Costruzione 21 — Esagono regolare dato il lato
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai il lato AB dell’esagono. Vuoi costruire l’esagono regolare che ha proprio quel lato.
+
+**Passi:**
+
+1. Apri il compasso quanto AB. Punta in A e poi in B e traccia due archi sopra il segmento: si incontrano nel punto 1. *Non cambiare più apertura fino alla fine.*
+
+2. Con la stessa apertura punta in 1 e traccia la circonferenza: passa per A e per B. *Il punto 1 è il centro dell’esagono.*
+
+3. Punta in B e taglia la circonferenza nel punto C. Punta in A e taglia la circonferenza nel punto F. *C sta dalla parte di B, F dalla parte di A.*
+
+4. Punta in C e trova D. Punta in F e trova E. *D ed E sono i due vertici più in alto.*
+
+5. Unisci in ordine A, B, C, D, E e F. L’esagono regolare è completo. *Controlla: il lato DE deve essere lungo quanto AB.*
+
+**Perché funziona?** Il punto 1 dista da A e da B quanto è lungo AB: il triangolo A-B-1 è equilatero. Nell’esagono regolare il centro forma con ogni lato un triangolo equilatero, quindi 1 è proprio il centro e la circonferenza di raggio AB passa per tutti i vertici. Ogni archetto riporta la stessa misura: sei lati uguali.
+
+**Prova tu:** Costruisci un esagono regolare di lato 4 cm partendo dal segmento AB. Misura la distanza tra due vertici opposti: deve venire 8 cm.
+
+---
+
+#### Costruzione 22 — Pentagono regolare dato il lato
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai il lato AB, tracciato su una retta r. Vuoi costruire il pentagono regolare che ha proprio quel lato.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O e la retta verticale su cui starà il vertice più alto. *L’asse di AB è anche l’asse di simmetria del pentagono.*
+
+2. Costruisci la perpendicolare ad AB nell’estremo B (Costruzione 10). *Su questa retta riporterai la lunghezza del lato.*
+
+3. Punta in B con apertura BA e traccia un arco ampio: incontra la perpendicolare nel punto 1. Prolunga l’arco oltre il punto 1, dalla parte opposta ad A. *L’arco lungo ti servirà ancora per trovare C.*
+
+4. Punta in O con apertura O1 e traccia un arco fino alla retta r, oltre B: trovi il punto 2. *La distanza da A a 2 è la diagonale del pentagono.*
+
+5. Punta in A con apertura A2 e traccia un arco: incontra l’arco del passo 3 nel vertice C e l’asse nel vertice D. *D è il vertice più alto.*
+
+6. Apri il compasso quanto AB. Punta in A e poi in D: i due archetti si incrociano nel vertice E, dalla parte opposta a C. *E è il simmetrico di C rispetto all’asse.*
+
+7. Unisci in ordine A, B, C, D ed E. Il pentagono regolare è completo. *Misura i cinque lati: devono essere uguali.*
+
+**Perché funziona?** Nel pentagono regolare la diagonale è lunga circa 1,618 volte il lato: è il numero aureo. La costruzione con i punti O, 1 e 2 produce proprio questa lunghezza: A2 è la diagonale. I vertici C e D distano da A quanto una diagonale; C dista da B quanto un lato, e D sta sull’asse. Il vertice E dista un lato sia da A sia da D.
+
+**Prova tu:** Costruisci un pentagono regolare di lato 4,5 cm. Misura una diagonale: deve venire circa 7,3 cm.
+
+---
+
+#### Costruzione 23 — Ottagono regolare dato il lato
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai il lato AB dell’ottagono. Vuoi costruire l’ottagono regolare che ha proprio quel lato.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9). Chiama 1 il punto medio di AB. *Il centro dell’ottagono sta su questa retta.*
+
+2. Punta in 1 con apertura 1A e traccia una semicirconferenza sopra AB: incontra l’asse nel punto 2. *La distanza da 1 a 2 è metà del lato.*
+
+3. Punta in 2 con apertura 2A e traccia un arco verso l’alto: incontra l’asse nel punto O. *O è il centro dell’ottagono.*
+
+4. Punta in O con apertura OA e traccia la circonferenza: passa per A e per B. *Tutti i vertici staranno su questa circonferenza.*
+
+5. Apri il compasso quanto AB. Partendo da B trova C, poi D e poi E. Partendo da A trova H, poi G e poi F. *Lavora dai due lati: l’ultimo tratto, EF, deve venire lungo quanto gli altri.*
+
+6. Unisci in ordine A, B, C, D, E, F, G e H. L’ottagono regolare è completo. *Controlla che i lati opposti siano paralleli.*
+
+**Perché funziona?** Il triangolo A-1-2 è la metà di un quadrato, quindi nel triangolo A-2-O l’angolo in 2 è di 135°. Questo triangolo è isoscele, perché 2A e 2O sono la stessa apertura: gli altri due angoli valgono 22,5° ciascuno. L’angolo in O tra l’asse e OA è di 22,5°; dall’altra parte c’è lo stesso angolo verso B. In tutto AOB misura 45°, un ottavo di giro: AB è il lato dell’ottagono.
+
+**Prova tu:** Costruisci un ottagono regolare di lato 3 cm. Controlla che l’ultimo lato sia lungo quanto gli altri.
+
+---
+
+#### Costruzione 24 — Decagono regolare inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con il pentagono regolare inscritto ABCDE (Costruzione 8). Vuoi raddoppiare i lati e ottenere un decagono.
+
+**Passi:**
+
+1. Traccia la retta che parte da A, passa per il centro O e arriva dall’altra parte della circonferenza: trovi il punto 1. *Il punto 1 sta a metà dell’arco CD.*
+
+2. Fai lo stesso da B, da C, da D e da E: trovi i punti 2, 3, 4 e 5. *Ogni retta è un diametro.*
+
+3. Unisci i dieci punti uno dopo l’altro, girando lungo la circonferenza. Il decagono regolare è completo. *Vertici del pentagono e punti nuovi si alternano.*
+
+**Perché funziona?** Il pentagono regolare è simmetrico rispetto alla retta che unisce un vertice al centro. Quella retta arriva quindi esattamente a metà dell’arco opposto. Ogni arco di 72° viene diviso in due archi di 36°: sulla circonferenza ci sono dieci archi uguali, e ad archi uguali corrispondono lati uguali.
+
+**Prova tu:** Parti dal pentagono inscritto in una circonferenza di raggio 4 cm e costruisci il decagono. Misura i dieci lati: devono essere uguali.
+
+---
+
+#### Costruzione 25 — Metodo generale di divisione della circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O. Vuoi dividerla in 7 parti uguali con un metodo che vale per qualsiasi numero di lati.
+
+**Passi:**
+
+1. Traccia il diametro verticale: in alto incontra la circonferenza nel punto A, in basso nel punto S. *A sarà il primo vertice del poligono.*
+
+2. Dividi il diametro AS in 7 parti uguali con il metodo delle parallele (Costruzione 3). Numera i punti da 1 a 6 partendo da A. *Tante parti quanti sono i lati del poligono.*
+
+3. Traccia il diametro orizzontale e prolungalo da tutte e due le parti. Punta in S con apertura SA e traccia un arco: incontra i prolungamenti in T e in U. *L’arco passa per A.*
+
+4. Da T traccia la retta che passa per il punto 2 e prolungala fino alla parte opposta della circonferenza: trovi B. Fai lo stesso da U: trovi G. *Si usano solo i punti pari: 2, 4 e 6.*
+
+5. Ripeti con il punto 4: da T trovi C, da U trovi F. Poi con il punto 6: da T trovi D, da U trovi E. *Prolunga sempre fino alla parte più lontana della circonferenza.*
+
+6. Unisci in ordine A, B, C, D, E, F e G. L’ettagono è completo. *Per un altro numero di lati cambia il numero di parti del passo 2; poi usi sempre i punti pari.*
+
+**Perché funziona?** Questo metodo è una regola pratica. Per il triangolo, il quadrato e l’esagono dà il risultato esatto; per gli altri poligoni lascia un piccolo errore. Nell’ettagono i lati vengono giusti entro l’1 per cento circa, tranne quello in basso, DE, che viene circa il 2 per cento più lungo: su un lato di 3 cm è poco più di mezzo millimetro. Il vantaggio è che la procedura resta la stessa per qualsiasi numero di lati.
+
+**Prova tu:** Su una circonferenza di raggio 3,5 cm costruisci l’ettagono con questo metodo. Poi misura i sette lati: quale viene più lungo?
+
+---
+
+#### Costruzione 26 — Triangolo isoscele dati la base e il lato
+
+**Servono:** righello graduato, compasso.
+
+**Situazione:** Conosci la base, lunga 6 cm, e i due lati uguali, lunghi 7 cm ciascuno. Vuoi costruire il triangolo isoscele.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 6 cm. *Lascia spazio sopra: il triangolo è alto più di 6 cm.*
+
+2. Prendi sul righello l’apertura di 7 cm. Punta in A e traccia un archetto sopra la base. *Tieni ferma l’apertura per il passo successivo.*
+
+3. Con la stessa apertura punta in B e traccia un archetto che incrocia il primo: il punto d’incontro è C. *C dista 7 cm sia da A sia da B.*
+
+4. Traccia i lati AC e BC. Il triangolo isoscele è completo. *Misura gli angoli alla base: devono essere uguali.*
+
+**Perché funziona?** Il punto C dista 7 cm da A e 7 cm da B: i due lati AC e BC sono uguali, quindi il triangolo è isoscele. Un punto alla stessa distanza da A e da B sta sull’asse del segmento AB: per questo C si trova esattamente sopra il punto medio della base.
+
+**Prova tu:** Costruisci il triangolo isoscele con base di 6 cm e lati di 7 cm. Misura i due angoli alla base con il goniometro: devono essere uguali.
+
+---
+
+#### Costruzione 27 — Triangolo isoscele dati l’altezza e i lati
+
+**Servono:** righello graduato, compasso.
+
+**Situazione:** Conosci l’altezza, lunga 4 cm, e i due lati uguali, lunghi 5 cm ciascuno. La base non la conosci: la troverai alla fine. Sulla retta r è segnato il punto H.
+
+**Passi:**
+
+1. Costruisci la perpendicolare alla retta r nel punto H (Costruzione 1): un arco da H, due archetti che si incrociano e la retta verticale. *Su questa retta starà l’altezza.*
+
+2. Apri il compasso a 4 cm. Punta in H e taglia la perpendicolare: trovi il vertice A. *HA è lungo quanto l’altezza.*
+
+3. Prendi l’apertura di 5 cm. Punta in A e traccia un arco che taglia la retta r in due punti: B e C. *B e C sono alla stessa distanza da H.*
+
+4. Traccia i lati AB e AC e ripassa la base BC. Il triangolo isoscele è completo. *Misura la base: deve venire 6 cm.*
+
+**Perché funziona?** Il punto A sta sulla perpendicolare a r nel punto H, quindi AH è l’altezza del triangolo. B e C distano entrambi 5 cm da A: i due lati sono uguali. I triangoli AHB e AHC sono rettangoli e hanno due lati uguali, quindi anche HB e HC sono uguali: H è il punto medio della base, che qui misura 6 cm.
+
+**Prova tu:** Costruisci il triangolo isoscele con altezza di 4 cm e lati di 5 cm. Misura la base: deve venire 6 cm.
+
+---
+
+#### Costruzione 28 — Triangolo rettangolo dati i due cateti
+
+**Servono:** righello graduato, compasso.
+
+**Situazione:** Conosci i due cateti: uno lungo 6 cm, l’altro lungo 4 cm. Vuoi costruire il triangolo rettangolo.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 6 cm. *L’angolo retto sarà in A.*
+
+2. Costruisci la perpendicolare ad AB nell’estremo A, come nella Costruzione 10: un arco da A, quattro archetti con la stessa apertura e la semiretta che sale da A. *Il secondo cateto starà su questa semiretta.*
+
+3. Prendi sul righello l’apertura di 4 cm. Punta in A e taglia la perpendicolare: trovi il vertice C. *AC è lungo quanto il secondo cateto.*
+
+4. Ripassa il cateto AC e traccia l’ipotenusa BC. Il triangolo rettangolo è completo. *Misura l’ipotenusa: deve venire circa 7,2 cm.*
+
+**Perché funziona?** Il cateto AC sta sulla perpendicolare ad AB, quindi l’angolo in A è retto. Le due misure date sono proprio i due lati che formano quell’angolo. Il terzo lato, l’ipotenusa BC, viene da solo: qui misura circa 7,2 cm.
+
+**Prova tu:** Costruisci il triangolo rettangolo con cateti di 6 cm e 4 cm. Misura l’ipotenusa: deve venire circa 7,2 cm.
+
+---
+
+#### Costruzione 29 — Triangolo rettangolo nella semicirconferenza
+
+**Servono:** righello graduato, compasso.
+
+**Situazione:** Conosci l’ipotenusa, lunga 7,5 cm, e un cateto, lungo 4,5 cm. Vuoi costruire il triangolo rettangolo partendo dall’ipotenusa.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 7,5 cm. *L’angolo retto sarà nel terzo vertice, C.*
+
+2. Costruisci l’asse di AB (Costruzione 9): due archi da A e da B con la stessa apertura e la retta per i punti d’incontro. Trovi il punto medio O. *O sarà il centro della semicirconferenza.*
+
+3. Punta in O con apertura OA e traccia la semicirconferenza sopra AB. *AB è il diametro.*
+
+4. Prendi sul righello l’apertura di 4,5 cm. Punta in A e taglia la semicirconferenza: trovi il vertice C. *AC è lungo quanto il cateto dato.*
+
+5. Traccia i lati AC e BC. Il triangolo rettangolo è completo. *Controlla con la squadra l’angolo in C e misura BC: deve venire 6 cm.*
+
+**Perché funziona?** Unisci O con C: OA, OB e OC sono tre raggi, quindi i triangoli AOC e BOC sono isosceli e hanno gli angoli alla base uguali. L’angolo in C è la somma di un angolo uguale a quello in A e di uno uguale a quello in B. Poiché i tre angoli del triangolo ABC fanno 180°, l’angolo in C è la metà: 90°. Vale per qualsiasi punto C della semicirconferenza.
+
+**Prova tu:** Costruisci il triangolo rettangolo con ipotenusa di 7,5 cm e un cateto di 4,5 cm. Controlla con la squadra l’angolo in C e misura l’altro cateto: deve venire 6 cm.
+
+---
+
+#### Costruzione 30 — Ovale inscritto nel rombo
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è lungo quanto il lato del rombo. Vuoi costruire il rombo e poi l’ovale che lo tocca dall’interno.
+
+**Passi:**
+
+1. Apri il compasso quanto AB. Punta in A e poi in B: i due archi si incontrano da una parte nel punto C e dall’altra nel punto D. *A-B-C e A-B-D sono due triangoli equilateri.*
+
+2. Unisci A e B con C e con D: ottieni il rombo. Con il righello segna il punto medio di ogni lato: E su AC, F su CB, G su BD, H su DA. *Tutti e quattro i lati sono lunghi quanto AB.*
+
+3. Unisci A con i punti medi dei due lati opposti, F e G. Unisci B con gli altri due, E e H. AF e BE si incontrano nel punto 1, dalla parte di C; AG e BH nel punto 2, dalla parte di D. *1 e 2 stanno sulla diagonale lunga del rombo.*
+
+4. Punta in A con apertura AF e traccia l’arco da F a G. Con la stessa apertura punta in B e traccia l’arco da H a E. *Ogni arco tocca due lati del rombo.*
+
+5. Punta in 1 con apertura 1E e traccia l’arco da E a F. Con la stessa apertura punta in 2 e traccia l’arco da G a H. L’ovale è completo. *Ripassa il contorno: non ci sono spigoli.*
+
+**Perché funziona?** Il triangolo A-B-C è equilatero: il segmento che unisce A con il punto medio di BC è perpendicolare a BC. L’arco con centro A tocca quindi il lato senza attraversarlo. Lo stesso vale per gli altri archi. Nei punti medi si incontrano un arco grande e uno piccolo: i loro centri sono allineati con il punto di contatto, perciò la curva prosegue senza spigoli.
+
+**Prova tu:** Costruisci il rombo partendo da un segmento AB di 6 cm e disegna l’ovale inscritto. Controlla che la curva tocchi ogni lato nel suo punto medio.
+
+---
+
+#### Costruzione 31 — Ovale dato l’asse minore
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è l’asse minore, cioè la larghezza massima dell’ovale: la più corta delle sue due misure. Vuoi costruire l’ovale.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O e la retta perpendicolare. *O è il centro dell’ovale.*
+
+2. Punta in O con apertura OA e traccia la circonferenza: incontra la perpendicolare nei punti 1 e 2. *A, B, 1 e 2 saranno i quattro centri degli archi.*
+
+3. Da A traccia due semirette che passano per 1 e per 2, e prolungale oltre la circonferenza. Fai lo stesso da B. *Su queste semirette cadranno i punti di raccordo.*
+
+4. Punta in A con apertura AB e traccia l’arco tra le due semirette: va da C a D e passa per B. Con la stessa apertura punta in B: l’arco va da E a F e passa per A. *C ed E stanno dalla parte del punto 1; D e F dalla parte del punto 2.*
+
+5. Punta in 1 con apertura 1C e traccia l’arco da C a E. Con la stessa apertura punta in 2 e traccia l’arco da D a F. L’ovale è completo. *Ripassa il contorno: quattro archi, nessuno spigolo.*
+
+**Perché funziona?** Il punto C sta sulla retta che passa per A e per 1. In C si incontrano l’arco con centro A e l’arco con centro 1: i due centri e il punto di contatto sono allineati, quindi i due archi hanno lì la stessa direzione e si raccordano senza spigolo. Lo stesso accade in D, in E e in F.
+
+**Prova tu:** Costruisci un ovale con asse minore di 6 cm. Misura l’asse maggiore: deve venire circa 9,5 cm.
+
+---
+
+#### Costruzione 32 — Ovolo dato l’asse minore
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è l’asse minore, cioè la larghezza massima dell’ovolo. Vuoi costruire una curva a forma di uovo.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O e la retta perpendicolare. *È l’asse di simmetria dell’ovolo.*
+
+2. Punta in O con apertura OA e traccia la circonferenza: incontra la perpendicolare nel punto 1, in alto, e nel punto 2, in basso. *La metà inferiore di questa circonferenza farà parte dell’ovolo.*
+
+3. Da A traccia la semiretta che passa per 1 e prolungala. Da B traccia un’altra semiretta che passa per 1. *Le due semirette si incrociano nel punto 1.*
+
+4. Punta in A con apertura AB e traccia l’arco che parte da B e arriva alla semiretta: trovi C. Con la stessa apertura punta in B e traccia l’arco che parte da A: trovi D. *C è sulla semiretta che parte da A, D su quella che parte da B.*
+
+5. Punta in 1 con apertura 1C e traccia l’arco da C a D. Poi ripassa la semicirconferenza inferiore, da A a B passando per 2. L’ovolo è completo. *Ripassa il contorno partendo dalla punta.*
+
+**Perché funziona?** L’ovolo è fatto di quattro archi: la semicirconferenza con centro O, due archi grandi con centro A e con centro B, e un arco piccolo con centro 1. In ogni punto di raccordo i due centri e il punto di contatto sono allineati: per esempio A, 1 e C stanno sulla stessa semiretta. Per questo la curva non fa spigoli. A differenza dell’ovale, l’ovolo ha un solo asse di simmetria.
+
+**Prova tu:** Costruisci un ovolo con asse minore di 8 cm. Misura l’altezza totale, dalla punta al fondo: deve venire circa 10,3 cm.
+
+---
+
+#### Costruzione 33 — Spirale a quattro centri
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un piccolo quadrato ABCD: i suoi vertici saranno i quattro centri della spirale. Il passo, cioè la distanza tra un giro e il successivo, è quattro volte il lato.
+
+**Passi:**
+
+1. Prolunga ogni lato del quadrato da una sola parte, girando sempre nello stesso verso: il lato BA oltre A, il lato CB oltre B, il lato DC oltre C, il lato AD oltre D. *Su queste semirette finiranno gli archi.*
+
+2. Punta in A, apri fino a D e traccia un quarto di circonferenza fino al prolungamento del lato BA: arrivi nel punto 1. *Il raggio è lungo un lato.*
+
+3. Punta in B, apri fino a 1 e traccia un quarto di circonferenza fino al prolungamento del lato CB: arrivi nel punto 2. *Il raggio è lungo due lati.*
+
+4. Punta in C, apri fino a 2 e traccia un quarto di circonferenza fino al prolungamento del lato DC: arrivi nel punto 3. *Il raggio è lungo tre lati.*
+
+5. Punta in D, apri fino a 3 e traccia un quarto di circonferenza fino al prolungamento del lato AD: arrivi nel punto 4. Hai chiuso il primo giro. *Il raggio è lungo quattro lati.*
+
+6. Continua nello stesso ordine: centro A fino a 5, centro B fino a 6, centro C fino a 7, centro D fino a 8. *I centri si ripetono sempre nello stesso ordine: A, B, C, D.*
+
+**Perché funziona?** Ogni arco è un quarto di circonferenza: parte dal prolungamento di un lato del quadrato e finisce sul prolungamento del lato successivo. Lì cambia il centro, ma il vecchio centro, il nuovo centro e il punto di contatto sono allineati: la curva non fa spigoli. A ogni cambio di centro il raggio aumenta di un lato del quadrato; dopo quattro archi, cioè un giro completo, la spirale si è allargata di quattro lati: è il passo.
+
+**Prova tu:** Costruisci una spirale con passo di 2 cm: il quadrato ha il lato di 0,5 cm. Traccia almeno otto archi e misura la distanza tra due giri vicini.
 
 ---
 

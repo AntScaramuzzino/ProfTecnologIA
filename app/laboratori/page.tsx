@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom } from "@/lib/laboratori";
 import { ESPLORAZIONI, esplorazioneSrc, esplorazioneAnteprima } from "@/lib/esplorazioni";
-import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI, hrefCostruzione } from "@/lib/geogebra-costruzioni";
+import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI } from "@/lib/geogebra-costruzioni";
 
 export const metadata: Metadata = {
   title: "Laboratori interattivi — Book ProfTecnologIA",
@@ -134,25 +134,18 @@ export default function LaboratoriPage() {
           </ul>
         </section>
 
-        <h2 id="costruzioni-geogebra" className="mt-12 scroll-mt-24 text-xl font-black tracking-tight text-slate-950">
-          Costruzioni GeoGebra <span className="text-base font-bold text-slate-500">· {COSTRUZIONI_GEOGEBRA.length} tavole</span>
-        </h2>
-        <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-700">
-          Tavole animate con righello e compasso, un passaggio alla volta, collegate a {MC_COSTRUZIONI}. Ogni tavola
-          spiega perché la costruzione funziona e si può scaricare come file .ggb.
-        </p>
-        <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {COSTRUZIONI_GEOGEBRA.map((g) => (
-            <li key={g.slug} className="flex flex-col rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-900">Costruzione {g.numero}</p>
-              <h3 className="mt-1 text-lg font-black text-slate-950">{g.titolo}</h3>
-              <p className="mt-1 text-sm leading-6 text-slate-700">{g.descrizione}</p>
-              <Link href={hrefCostruzione(g)} className="mt-auto inline-block pt-3 text-sm font-bold text-blue-800 underline underline-offset-4">
-                Apri →
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <section id="costruzioni-geogebra" className="mt-12 scroll-mt-24 rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <h2 className="text-xl font-black tracking-tight text-slate-950">
+            Costruzioni geometriche <span className="text-base font-bold text-slate-600">· {COSTRUZIONI_GEOGEBRA.length} tavole GeoGebra</span>
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+            Tavole animate con righello e compasso, un passaggio alla volta, collegate a {MC_COSTRUZIONI}: perpendicolari
+            e parallele, poligoni, triangoli, ovali e spirali. Hanno una pagina tutta loro.
+          </p>
+          <Link href="/costruzioni-geometriche" className="mt-3 inline-block text-sm font-black text-blue-800 underline underline-offset-4">
+            Apri le costruzioni geometriche →
+          </Link>
+        </section>
       </div>
     </div>
   );

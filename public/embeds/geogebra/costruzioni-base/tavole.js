@@ -690,5 +690,657 @@
     k.risultato(...fine);
   });
 
+  // ══════════════════════════════════════════════════════════════════════════
+  // Serie 21–33
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ── 21 · Esagono dato il lato ──────────────────────────────────────────────
+  TAVOLE["esagono-dato-lato"] = creaTavola({
+    title: "Esagono regolare dato il lato",
+    eyebrow: "Costruzione 21 · Il lato è uguale al raggio",
+    subtitle: "Due archi trovano il centro; la circonferenza con lo stesso raggio porta tutti i vertici.",
+    filename: "MC-DIS-1-01_esagono-dato-lato.ggb",
+    coord: [-5.6, 5.6, -3.6, 4.6],
+    proofTitle: "Nell’esagono il lato è uguale al raggio",
+    proofCopy: "Il punto 1 dista da A e da B quanto è lungo AB: il triangolo A-B-1 è equilatero. Nell’esagono regolare il centro forma con ogni lato un triangolo equilatero, quindi 1 è proprio il centro e la circonferenza di raggio AB passa per tutti i vertici. Ogni archetto riporta la stessa misura: sei lati uguali.",
+    equality: "AB = BC = CD = DE = EF = FA",
+    steps: [
+      ["Prima di iniziare", "Osserva il lato AB", "Hai il lato AB dell’esagono. Vuoi costruire l’esagono regolare che ha proprio quel lato.", "Questa volta non parti dalla circonferenza: la devi trovare."],
+      ["Passo 1 · Archi da A e da B", "Trova il punto 1", "Apri il compasso quanto AB. Punta in A e poi in B e traccia due archi sopra il segmento: si incontrano nel punto 1.", "Non cambiare più apertura fino alla fine."],
+      ["Passo 2 · Circonferenza", "Punta in 1", "Con la stessa apertura punta in 1 e traccia la circonferenza: passa per A e per B.", "Il punto 1 è il centro dell’esagono."],
+      ["Passo 3 · Vertici C e F", "Riporta il lato dai due estremi", "Punta in B e taglia la circonferenza nel punto C. Punta in A e taglia la circonferenza nel punto F.", "C sta dalla parte di B, F dalla parte di A."],
+      ["Passo 4 · Vertici D ed E", "Riporta ancora il lato", "Punta in C e trova D. Punta in F e trova E.", "D ed E sono i due vertici più in alto."],
+      ["Passo 5 · Righello", "Unisci i sei vertici", "Unisci in ordine A, B, C, D, E e F. L’esagono regolare è completo.", "Controlla: il lato DE deve essere lungo quanto AB."],
+    ],
+  }, (k) => {
+    const s = 3;
+    const A = k.punto("A", [-s / 2, -2.6]);
+    const B = k.punto("B", [s / 2, -2.6]);
+    const O = k.punto("N1", [0, -2.6 + (s * Math.sqrt(3)) / 2], "1");
+    const C = k.punto("C", polare(O, s, 0));
+    const D = k.punto("D", polare(O, s, 60));
+    const E = k.punto("E", polare(O, s, 120));
+    const F = k.punto("F", polare(O, s, 180));
+    k.seg("segAB", A, B);
+    k.archetto("arcA1", A, O, 16, [0.12, 0.5]);
+    k.archetto("arcB1", B, O, 16, [0.52, 0.9]);
+    k.arco("circleK", O, s, 240, 360);
+    k.archetto("arcBC", B, C, 12, [0.12, 0.5]);
+    k.archetto("arcAF", A, F, 12, [0.52, 0.9]);
+    k.archetto("arcCD", C, D, 12, [0.12, 0.5]);
+    k.archetto("arcFE", F, E, 12, [0.52, 0.9]);
+    const giro = [["A", A], ["B", B], ["C", C], ["D", D], ["E", E], ["F", F]];
+    const w = finestre(6);
+    const lati = giro.map(([n, p], i) => { const [n2, q] = giro[(i + 1) % 6]; k.traccia(`draw${n}${n2}`, p, q, w[i]); return `draw${n}${n2}`; });
+    k.compare("N1", 0.85); k.compare("C", 0.4); k.compare("F", 0.8); k.compare("D", 0.4); k.compare("E", 0.8);
+    k.passo("A", "B", "segAB");
+    k.passo("arcA1", "arcB1", "N1");
+    k.passo("circleK");
+    k.passo("arcBC", "arcAF", "C", "F");
+    k.passo("arcCD", "arcFE", "D", "E");
+    k.passo(...lati);
+    k.risultato(...lati);
+  });
+
+  // ── 22 · Pentagono dato il lato ────────────────────────────────────────────
+  TAVOLE["pentagono-dato-lato"] = creaTavola({
+    title: "Pentagono regolare dato il lato",
+    eyebrow: "Costruzione 22 · La diagonale dal lato",
+    subtitle: "Dal lato ricavi la diagonale del pentagono: con queste due misure trovi tutti i vertici.",
+    filename: "MC-DIS-1-01_pentagono-dato-lato.ggb",
+    coord: [-4.8, 5.6, -3.3, 4.2],
+    proofTitle: "La diagonale e il numero aureo",
+    proofCopy: "Nel pentagono regolare la diagonale è lunga circa 1,618 volte il lato: è il numero aureo. La costruzione con i punti O, 1 e 2 produce proprio questa lunghezza: A2 è la diagonale. I vertici C e D distano da A quanto una diagonale; C dista da B quanto un lato, e D sta sull’asse. Il vertice E dista un lato sia da A sia da D.",
+    equality: "A2 = diagonale ≈ 1,618 × AB",
+    steps: [
+      ["Prima di iniziare", "Osserva il lato AB", "Hai il lato AB, tracciato su una retta r. Vuoi costruire il pentagono regolare che ha proprio quel lato.", "Ti serviranno due misure: il lato e la diagonale."],
+      ["Passo 1 · Asse di AB", "Trova il punto medio O", "Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O e la retta verticale su cui starà il vertice più alto.", "L’asse di AB è anche l’asse di simmetria del pentagono."],
+      ["Passo 2 · Perpendicolare in B", "Alza la perpendicolare in B", "Costruisci la perpendicolare ad AB nell’estremo B (Costruzione 10).", "Su questa retta riporterai la lunghezza del lato."],
+      ["Passo 3 · Arco da B", "Trova il punto 1", "Punta in B con apertura BA e traccia un arco ampio: incontra la perpendicolare nel punto 1. Prolunga l’arco oltre il punto 1, dalla parte opposta ad A.", "L’arco lungo ti servirà ancora per trovare C."],
+      ["Passo 4 · Arco da O", "Trova il punto 2", "Punta in O con apertura O1 e traccia un arco fino alla retta r, oltre B: trovi il punto 2.", "La distanza da A a 2 è la diagonale del pentagono."],
+      ["Passo 5 · Apertura A2", "Trova C e D", "Punta in A con apertura A2 e traccia un arco: incontra l’arco del passo 3 nel vertice C e l’asse nel vertice D.", "D è il vertice più alto."],
+      ["Passo 6 · Archetti da A e da D", "Trova E", "Apri il compasso quanto AB. Punta in A e poi in D: i due archetti si incrociano nel vertice E, dalla parte opposta a C.", "E è il simmetrico di C rispetto all’asse."],
+      ["Passo 7 · Righello", "Unisci i cinque vertici", "Unisci in ordine A, B, C, D ed E. Il pentagono regolare è completo.", "Misura i cinque lati: devono essere uguali."],
+    ],
+  }, (k) => {
+    const s = 3.4;
+    const y0 = -2.5;
+    const A = k.punto("A", [-s / 2, y0]);
+    const B = k.punto("B", [s / 2, y0]);
+    const O = k.punto("O", [0, y0]);
+    const N1 = k.punto("N1", [s / 2, y0 + s], "1");
+    const rO = distanza(O, N1);
+    const N2 = k.punto("N2", [rO, y0], "2");
+    const diag = distanza(A, N2);
+    const D = k.punto("D", [0, y0 + Math.sqrt(diag * diag - (s / 2) ** 2)]);
+    const C = k.punto("C", polare(B, s, 72));
+    const E = k.punto("E", polare(A, s, 108));
+    k.seg("lineR", [-4.9, y0], [5.8, y0], "r");
+    k.seg("segAB", A, B);
+    k.traccia("lineAsse", [0, y0 - 0.6], [0, D[1] + 0.7]);
+    k.traccia("linePerpB", B, [B[0], y0 + s + 1.1]);
+    k.arco("arcB", B, s, 52, 50);
+    k.arco("arcO", O, rO, -6, direzione(O, N1) + 12);
+    k.arco("arcA", A, diag, -4, 84);
+    k.archetto("arcAE", A, E, 13, [0.12, 0.5]);
+    k.archetto("arcDE", D, E, 13, [0.52, 0.9]);
+    const giro = [["A", A], ["B", B], ["C", C], ["D", D], ["E", E]];
+    const w = finestre(5);
+    const lati = giro.map(([n, p], i) => { const [n2, q] = giro[(i + 1) % 5]; k.traccia(`draw${n}${n2}`, p, q, w[i]); return `draw${n}${n2}`; });
+    k.compare("O", 0.5); k.compare("N1", 0.75); k.compare("N2", 0.2); k.compare("C", 0.55); k.compare("D", 0.92); k.compare("E", 0.85);
+    k.passo("A", "B", "segAB", "lineR");
+    k.passo("lineAsse", "O");
+    k.passo("linePerpB");
+    k.passo("arcB", "N1");
+    k.passo("arcO", "N2");
+    k.passo("arcA", "C", "D");
+    k.passo("arcAE", "arcDE", "E");
+    k.passo(...lati);
+    k.risultato(...lati);
+  });
+
+  // ── 23 · Ottagono dato il lato ─────────────────────────────────────────────
+  TAVOLE["ottagono-dato-lato"] = creaTavola({
+    title: "Ottagono regolare dato il lato",
+    eyebrow: "Costruzione 23 · Il centro sull’asse",
+    subtitle: "Due archi sull’asse del lato trovano il centro della circonferenza; poi riporti il lato lungo la circonferenza fino a trovare tutti i vertici.",
+    filename: "MC-DIS-1-01_ottagono-dato-lato.ggb",
+    coord: [-5.6, 5.6, -3.7, 3.7],
+    proofTitle: "Un angolo di 45° al centro",
+    proofCopy: "Il triangolo A-1-2 è la metà di un quadrato, quindi nel triangolo A-2-O l’angolo in 2 è di 135°. Questo triangolo è isoscele, perché 2A e 2O sono la stessa apertura: gli altri due angoli valgono 22,5° ciascuno. L’angolo in O tra l’asse e OA è di 22,5°; dall’altra parte c’è lo stesso angolo verso B. In tutto AOB misura 45°, un ottavo di giro: AB è il lato dell’ottagono.",
+    equality: "360° : 8 = 45°",
+    steps: [
+      ["Prima di iniziare", "Osserva il lato AB", "Hai il lato AB dell’ottagono. Vuoi costruire l’ottagono regolare che ha proprio quel lato.", "Devi trovare il centro della circonferenza che passa per tutti i vertici."],
+      ["Passo 1 · Asse di AB", "Trova il punto 1", "Costruisci l’asse del segmento AB (Costruzione 9). Chiama 1 il punto medio di AB.", "Il centro dell’ottagono sta su questa retta."],
+      ["Passo 2 · Semicirconferenza da 1", "Trova il punto 2", "Punta in 1 con apertura 1A e traccia una semicirconferenza sopra AB: incontra l’asse nel punto 2.", "La distanza da 1 a 2 è metà del lato."],
+      ["Passo 3 · Arco da 2", "Trova il centro O", "Punta in 2 con apertura 2A e traccia un arco verso l’alto: incontra l’asse nel punto O.", "O è il centro dell’ottagono."],
+      ["Passo 4 · Circonferenza", "Punta in O", "Punta in O con apertura OA e traccia la circonferenza: passa per A e per B.", "Tutti i vertici staranno su questa circonferenza."],
+      ["Passo 5 · Riporta il lato", "Trova gli altri sei vertici", "Apri il compasso quanto AB. Partendo da B trova C, poi D e poi E. Partendo da A trova H, poi G e poi F.", "Lavora dai due lati: l’ultimo tratto, EF, deve venire lungo quanto gli altri."],
+      ["Passo 6 · Righello", "Unisci gli otto vertici", "Unisci in ordine A, B, C, D, E, F, G e H. L’ottagono regolare è completo.", "Controlla che i lati opposti siano paralleli."],
+    ],
+  }, (k) => {
+    const s = 2.4;
+    const y0 = -2.9;
+    const A = k.punto("A", [-s / 2, y0]);
+    const B = k.punto("B", [s / 2, y0]);
+    const N1 = k.punto("N1", [0, y0], "1");
+    const N2 = k.punto("N2", [0, y0 + s / 2], "2");
+    const O = k.punto("O", [0, y0 + s / 2 + distanza(N2, A)]);
+    const R = distanza(O, A);
+    const a0 = direzione(O, A);
+    const nomi = ["A", "B", "C", "D", "E", "F", "G", "H"];
+    const V = nomi.map((n, i) => (i < 2 ? (i === 0 ? A : B) : k.punto(n, polare(O, R, a0 + 45 * i))));
+    k.seg("segAB", A, B);
+    k.traccia("lineAsse", [0, y0 - 0.5], [0, O[1] + R + 0.3]);
+    k.arco("arcN1", N1, s / 2, 0, 180);
+    k.archetto("arcN2", N2, O, 24);
+    k.arco("circleO", O, R, a0, 360);
+    const wa = finestre(6);
+    k.archetto("arcBC", B, V[2], 10, wa[0]); k.archetto("arcCD", V[2], V[3], 10, wa[1]); k.archetto("arcDE", V[3], V[4], 10, wa[2]);
+    k.archetto("arcAH", A, V[7], 10, wa[3]); k.archetto("arcHG", V[7], V[6], 10, wa[4]); k.archetto("arcGF", V[6], V[5], 10, wa[5]);
+    const w = finestre(8);
+    const lati = V.map((p, i) => { const n = `draw${nomi[i]}${nomi[(i + 1) % 8]}`; k.traccia(n, p, V[(i + 1) % 8], w[i]); return n; });
+    k.compare("N1", 0.5); k.compare("N2", 0.55); k.compare("O", 0.6);
+    k.compare("C", wa[0][1]); k.compare("D", wa[1][1]); k.compare("E", wa[2][1]); k.compare("H", wa[3][1]); k.compare("G", wa[4][1]); k.compare("F", wa[5][1]);
+    k.passo("A", "B", "segAB");
+    k.passo("lineAsse", "N1");
+    k.passo("arcN1", "N2");
+    k.passo("arcN2", "O");
+    k.passo("circleO");
+    k.passo("arcBC", "arcCD", "arcDE", "arcAH", "arcHG", "arcGF", "C", "D", "E", "F", "G", "H");
+    k.passo(...lati);
+    k.risultato(...lati);
+  });
+
+  // ── 24 · Decagono inscritto ────────────────────────────────────────────────
+  TAVOLE["decagono-inscritto"] = creaTavola({
+    title: "Decagono regolare inscritto in una circonferenza",
+    eyebrow: "Costruzione 24 · Raddoppio dei lati del pentagono",
+    subtitle: "Da ogni vertice del pentagono una retta passa per il centro e trova un nuovo vertice dalla parte opposta.",
+    filename: "MC-DIS-1-01_decagono-inscritto.ggb",
+    coord: [-4.8, 4.8, -3.8, 3.8],
+    proofTitle: "Ogni arco di 72° diviso a metà",
+    proofCopy: "Il pentagono regolare è simmetrico rispetto alla retta che unisce un vertice al centro. Quella retta arriva quindi esattamente a metà dell’arco opposto. Ogni arco di 72° viene diviso in due archi di 36°: sulla circonferenza ci sono dieci archi uguali, e ad archi uguali corrispondono lati uguali.",
+    equality: "10 archi da 36° = 360°",
+    steps: [
+      ["Prima di iniziare", "Parti dal pentagono inscritto", "Hai una circonferenza con il pentagono regolare inscritto ABCDE (Costruzione 8). Vuoi raddoppiare i lati e ottenere un decagono.", "Il pentagono ha un numero dispari di lati: di fronte a ogni vertice c’è un lato, non un altro vertice."],
+      ["Passo 1 · Retta da A", "Trova il punto 1", "Traccia la retta che parte da A, passa per il centro O e arriva dall’altra parte della circonferenza: trovi il punto 1.", "Il punto 1 sta a metà dell’arco CD."],
+      ["Passo 2 · Le altre rette", "Trova 2, 3, 4 e 5", "Fai lo stesso da B, da C, da D e da E: trovi i punti 2, 3, 4 e 5.", "Ogni retta è un diametro."],
+      ["Passo 3 · Righello", "Unisci i dieci punti", "Unisci i dieci punti uno dopo l’altro, girando lungo la circonferenza. Il decagono regolare è completo.", "Vertici del pentagono e punti nuovi si alternano."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [0, 0]);
+    const R = 3.2;
+    const nomi = ["A", "B", "C", "D", "E"];
+    const V = nomi.map((n, i) => k.punto(n, polare(O, R, 90 + 72 * i)));
+    const W = nomi.map((n, i) => k.punto(`N${i + 1}`, polare(O, R, 270 + 72 * i), String(i + 1)));
+    k.cerchio("circleO", O, R);
+    const pent = V.map((p, i) => { k.seg(`segP${i + 1}`, p, V[(i + 1) % 5]); return `segP${i + 1}`; });
+    k.traccia("lineK1", V[0], oltre(V[0], W[0], 0.35));
+    const wl = finestre(4);
+    [1, 2, 3, 4].forEach((i) => k.traccia(`lineK${i + 1}`, V[i], oltre(V[i], W[i], 0.35), wl[i - 1]));
+    const giro = [];
+    for (let i = 0; i < 5; i += 1) { giro.push(V[i]); giro.push(W[(i + 3) % 5]); }
+    const w = finestre(10);
+    const lati = giro.map((p, i) => { k.traccia(`drawL${i}`, p, giro[(i + 1) % 10], w[i]); return `drawL${i}`; });
+    k.compare("N1", 0.9);
+    [2, 3, 4, 5].forEach((n, i) => k.compare(`N${n}`, wl[i][1]));
+    k.passo("O", "circleO", ...nomi, ...pent);
+    k.passo("lineK1", "N1");
+    k.passo("lineK2", "lineK3", "lineK4", "lineK5", "N2", "N3", "N4", "N5");
+    k.passo(...lati);
+    k.risultato(...lati);
+  });
+
+  // ── 25 · Metodo generale di divisione ──────────────────────────────────────
+  TAVOLE["metodo-generale"] = creaTavola({
+    title: "Metodo generale di divisione della circonferenza",
+    eyebrow: "Costruzione 25 · Un metodo per qualsiasi poligono",
+    subtitle: "Dividi il diametro in tante parti quanti sono i lati: due punti esterni fanno il resto. Qui i lati sono 7.",
+    filename: "MC-DIS-1-01_metodo-generale.ggb",
+    coord: [-5.6, 5.6, -3.5, 3.5],
+    proofTitle: "Un metodo pratico, non esatto",
+    proofCopy: "Questo metodo è una regola pratica. Per il triangolo, il quadrato e l’esagono dà il risultato esatto; per gli altri poligoni lascia un piccolo errore. Nell’ettagono i lati vengono giusti entro l’1 per cento circa, tranne quello in basso, DE, che viene circa il 2 per cento più lungo: su un lato di 3 cm è poco più di mezzo millimetro. Il vantaggio è che la procedura resta la stessa per qualsiasi numero di lati.",
+    equality: "7 parti sul diametro → 7 lati",
+    steps: [
+      ["Prima di iniziare", "Osserva la circonferenza", "Hai una circonferenza con centro O. Vuoi dividerla in 7 parti uguali con un metodo che vale per qualsiasi numero di lati.", "Con 9 parti otterresti un ennagono, con 11 un endecagono."],
+      ["Passo 1 · Diametro verticale", "Segna A e S", "Traccia il diametro verticale: in alto incontra la circonferenza nel punto A, in basso nel punto S.", "A sarà il primo vertice del poligono."],
+      ["Passo 2 · Sette parti", "Dividi il diametro AS", "Dividi il diametro AS in 7 parti uguali con il metodo delle parallele (Costruzione 3). Numera i punti da 1 a 6 partendo da A.", "Tante parti quanti sono i lati del poligono."],
+      ["Passo 3 · Punti T e U", "Prolunga il diametro orizzontale", "Traccia il diametro orizzontale e prolungalo da tutte e due le parti. Punta in S con apertura SA e traccia un arco: incontra i prolungamenti in T e in U.", "L’arco passa per A."],
+      ["Passo 4 · Rette per il punto 2", "Trova B e G", "Da T traccia la retta che passa per il punto 2 e prolungala fino alla parte opposta della circonferenza: trovi B. Fai lo stesso da U: trovi G.", "Si usano solo i punti pari: 2, 4 e 6."],
+      ["Passo 5 · Rette per 4 e per 6", "Trova C, F, D ed E", "Ripeti con il punto 4: da T trovi C, da U trovi F. Poi con il punto 6: da T trovi D, da U trovi E.", "Prolunga sempre fino alla parte più lontana della circonferenza."],
+      ["Passo 6 · Righello", "Unisci i sette vertici", "Unisci in ordine A, B, C, D, E, F e G. L’ettagono è completo.", "Per un altro numero di lati cambia il numero di parti del passo 2; poi usi sempre i punti pari."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [0, 0]);
+    const R = 2.7;
+    const n = 7;
+    const A = k.punto("A", [0, R]);
+    const S = k.punto("S", [0, -R]);
+    const T = k.punto("T", [-R * Math.sqrt(3), 0]);
+    const U = k.punto("U", [R * Math.sqrt(3), 0]);
+    const P = [];
+    for (let i = 1; i < n; i += 1) P[i] = k.punto(`N${i}`, [0, R - (2 * R * i) / n], String(i));
+    const lontano = (da, per) => {
+      const d = distanza(da, per); const u = [(per[0] - da[0]) / d, (per[1] - da[1]) / d];
+      const b = da[0] * u[0] + da[1] * u[1]; const c = da[0] ** 2 + da[1] ** 2 - R * R;
+      const s = -b + Math.sqrt(b * b - c);
+      return [da[0] + s * u[0], da[1] + s * u[1]];
+    };
+    const B = k.punto("B", lontano(T, P[2])); const G = k.punto("G", lontano(U, P[2]));
+    const C = k.punto("C", lontano(T, P[4])); const F = k.punto("F", lontano(U, P[4]));
+    const D = k.punto("D", lontano(T, P[6])); const E = k.punto("E", lontano(U, P[6]));
+    k.cerchio("circleO", O, R);
+    k.traccia("diamV", [0, R + 0.4], [0, -R - 0.4]);
+    k.traccia("diamH", [-5.4, 0], [5.4, 0], [0.12, 0.45]);
+    k.arco("arcS", S, 2 * R, 24, 132, [0.45, 0.95]);
+    k.traccia("lineTB", T, oltre(T, B, 0.35), [0.12, 0.5]); k.traccia("lineUG", U, oltre(U, G, 0.35), [0.52, 0.9]);
+    const wl = finestre(4);
+    k.traccia("lineTC", T, oltre(T, C, 0.35), wl[0]); k.traccia("lineUF", U, oltre(U, F, 0.35), wl[1]);
+    k.traccia("lineTD", T, oltre(T, D, 0.35), wl[2]); k.traccia("lineUE", U, oltre(U, E, 0.35), wl[3]);
+    const giro = [["A", A], ["B", B], ["C", C], ["D", D], ["E", E], ["F", F], ["G", G]];
+    const w = finestre(7);
+    const lati = giro.map(([nome, p], i) => { const [n2, q] = giro[(i + 1) % 7]; k.traccia(`draw${nome}${n2}`, p, q, w[i]); return `draw${nome}${n2}`; });
+    k.compare("A", 0.2); k.compare("S", 0.95); k.compare("U", 0.55); k.compare("T", 0.93);
+    k.compare("B", 0.5); k.compare("G", 0.9); k.compare("C", wl[0][1]); k.compare("F", wl[1][1]); k.compare("D", wl[2][1]); k.compare("E", wl[3][1]);
+    k.passo("O", "circleO");
+    k.passo("diamV", "A", "S");
+    k.passo("N1", "N2", "N3", "N4", "N5", "N6");
+    k.passo("diamH", "arcS", "T", "U");
+    k.passo("lineTB", "lineUG", "B", "G");
+    k.passo("lineTC", "lineUF", "lineTD", "lineUE", "C", "F", "D", "E");
+    k.passo(...lati);
+    k.risultato(...lati);
+  });
+
+  // ── 26 · Triangolo isoscele (base e lato) ──────────────────────────────────
+  TAVOLE["isoscele-base-lato"] = creaTavola({
+    title: "Triangolo isoscele dati la base e il lato",
+    eyebrow: "Costruzione 26 · Due archetti uguali",
+    subtitle: "Tracci la base e incroci due archetti con la stessa apertura, lunga quanto il lato.",
+    filename: "MC-DIS-1-01_isoscele-base-lato.ggb",
+    coord: [-10, 4.7, -3.8, 4.5],
+    proofTitle: "Il vertice sta sull’asse della base",
+    proofCopy: "Il punto C dista 7 cm da A e 7 cm da B: i due lati AC e BC sono uguali, quindi il triangolo è isoscele. Un punto alla stessa distanza da A e da B sta sull’asse del segmento AB: per questo C si trova esattamente sopra il punto medio della base.",
+    equality: "AC = BC = 7 cm · AB = 6 cm",
+    steps: [
+      ["Prima di iniziare", "Osserva i dati", "Conosci la base, lunga 6 cm, e i due lati uguali, lunghi 7 cm ciascuno. Vuoi costruire il triangolo isoscele.", "Isoscele significa: due lati uguali."],
+      ["Passo 1 · Base", "Traccia la base AB", "Con il righello traccia il segmento AB lungo 6 cm.", "Lascia spazio sopra: il triangolo è alto più di 6 cm."],
+      ["Passo 2 · Arco da A", "Apri il compasso a 7 cm", "Prendi sul righello l’apertura di 7 cm. Punta in A e traccia un archetto sopra la base.", "Tieni ferma l’apertura per il passo successivo."],
+      ["Passo 3 · Arco da B", "Ripeti da B", "Con la stessa apertura punta in B e traccia un archetto che incrocia il primo: il punto d’incontro è C.", "C dista 7 cm sia da A sia da B."],
+      ["Passo 4 · Righello", "Unisci C con A e con B", "Traccia i lati AC e BC. Il triangolo isoscele è completo.", "Misura gli angoli alla base: devono essere uguali."],
+    ],
+  }, (k) => {
+    const A = k.punto("A", [-3, -3.1]);
+    const B = k.punto("B", [3, -3.1]);
+    const C = k.punto("C", [0, -3.1 + Math.sqrt(49 - 9)]);
+    k.seg("segDatA", [-9.6, 2.1], [-3.6, 2.1], "base 6 cm");
+    k.seg("segDatB", [-9.6, 1.4], [-2.6, 1.4], "lato 7 cm");
+    k.traccia("drawAB", A, B);
+    k.archetto("arcA", A, C, 12);
+    k.archetto("arcB", B, C, 12);
+    k.traccia("drawAC", A, C, [0.12, 0.5]);
+    k.traccia("drawBC", B, C, [0.52, 0.9]);
+    k.compare("A", 0.12); k.compare("B", 0.95); k.compare("C", 0.6);
+    k.passo("segDatA", "segDatB");
+    k.passo("drawAB", "A", "B");
+    k.passo("arcA");
+    k.passo("arcB", "C");
+    k.passo("drawAC", "drawBC");
+    k.risultato("drawAB", "drawAC", "drawBC");
+  });
+
+  // ── 27 · Triangolo isoscele (altezza e lati) ───────────────────────────────
+  TAVOLE["isoscele-altezza-lati"] = creaTavola({
+    title: "Triangolo isoscele dati l’altezza e i lati",
+    eyebrow: "Costruzione 27 · Prima l’altezza, poi la base",
+    subtitle: "Alzi l’altezza su una retta, poi un solo arco dal vertice trova i due estremi della base.",
+    filename: "MC-DIS-1-01_isoscele-altezza-lati.ggb",
+    coord: [-8, 5, -3.4, 3.9],
+    proofTitle: "L’altezza divide la base a metà",
+    proofCopy: "Il punto A sta sulla perpendicolare a r nel punto H, quindi AH è l’altezza del triangolo. B e C distano entrambi 5 cm da A: i due lati sono uguali. I triangoli AHB e AHC sono rettangoli e hanno due lati uguali, quindi anche HB e HC sono uguali: H è il punto medio della base, che qui misura 6 cm.",
+    equality: "AH = 4 cm · AB = AC = 5 cm",
+    steps: [
+      ["Prima di iniziare", "Osserva i dati", "Conosci l’altezza, lunga 4 cm, e i due lati uguali, lunghi 5 cm ciascuno. La base non la conosci: la troverai alla fine. Sulla retta r è segnato il punto H.", "L’altezza è il segmento che scende dal vertice e incontra la base ad angolo retto."],
+      ["Passo 1 · Perpendicolare in H", "Alza la perpendicolare", "Costruisci la perpendicolare alla retta r nel punto H (Costruzione 1): un arco da H, due archetti che si incrociano e la retta verticale.", "Su questa retta starà l’altezza."],
+      ["Passo 2 · Altezza", "Segna il vertice A", "Apri il compasso a 4 cm. Punta in H e taglia la perpendicolare: trovi il vertice A.", "HA è lungo quanto l’altezza."],
+      ["Passo 3 · Arco da A", "Apri il compasso a 5 cm", "Prendi l’apertura di 5 cm. Punta in A e traccia un arco che taglia la retta r in due punti: B e C.", "B e C sono alla stessa distanza da H."],
+      ["Passo 4 · Righello", "Unisci A con B e con C", "Traccia i lati AB e AC e ripassa la base BC. Il triangolo isoscele è completo.", "Misura la base: deve venire 6 cm."],
+    ],
+  }, (k) => {
+    const y0 = -2.5;
+    const H = k.punto("H", [0, y0]);
+    const A = k.punto("A", [0, y0 + 4]);
+    const B = k.punto("B", [-3, y0]);
+    const C = k.punto("C", [3, y0]);
+    const K1 = [-1.5, y0]; const K2 = [1.5, y0];
+    const X = [0, y0 + Math.sqrt(2.4 * 2.4 - 1.5 * 1.5)];
+    k.seg("lineR", [-8.2, y0], [5.2, y0], "r");
+    k.seg("segDatA", [-7.6, 3.2], [-3.6, 3.2], "altezza 4 cm");
+    k.seg("segDatB", [-7.6, 2.5], [-2.6, 2.5], "lato 5 cm");
+    k.arco("arcH", H, 1.5, 0, 180, [0.05, 0.35]);
+    k.archetto("arcK1", K1, X, 14, [0.35, 0.5]);
+    k.archetto("arcK2", K2, X, 14, [0.5, 0.65]);
+    k.traccia("linePerp", [0, y0], [0, y0 + 5.6], [0.7, 1]);
+    k.archetto("arcHA", H, A, 9);
+    k.arco("arcA", A, 5, direzione(A, B) - 8, direzione(A, C) - direzione(A, B) + 16);
+    k.traccia("drawAB", A, B, [0.12, 0.4]);
+    k.traccia("drawBC", B, C, [0.4, 0.68]);
+    k.traccia("drawCA", C, A, [0.68, 0.94]);
+    k.compare("A", 0.6); k.compare("B", 0.25); k.compare("C", 0.92);
+    k.passo("lineR", "H", "segDatA", "segDatB");
+    k.passo("arcH", "arcK1", "arcK2", "linePerp");
+    k.passo("arcHA", "A");
+    k.passo("arcA", "B", "C");
+    k.passo("drawAB", "drawBC", "drawCA");
+    k.risultato("drawAB", "drawBC", "drawCA");
+  });
+
+  // ── 28 · Triangolo rettangolo dati i cateti ────────────────────────────────
+  TAVOLE["rettangolo-due-cateti"] = creaTavola({
+    title: "Triangolo rettangolo dati i due cateti",
+    eyebrow: "Costruzione 28 · Perpendicolare e misura",
+    subtitle: "Tracci un cateto, alzi la perpendicolare in un estremo e ci riporti la misura dell’altro cateto.",
+    filename: "MC-DIS-1-01_rettangolo-due-cateti.ggb",
+    coord: [-4.6, 7.2, -3.3, 5],
+    proofTitle: "I due cateti formano l’angolo retto",
+    proofCopy: "Il cateto AC sta sulla perpendicolare ad AB, quindi l’angolo in A è retto. Le due misure date sono proprio i due lati che formano quell’angolo. Il terzo lato, l’ipotenusa BC, viene da solo: qui misura circa 7,2 cm.",
+    equality: "AB = 6 cm · AC = 4 cm · angolo in A = 90°",
+    steps: [
+      ["Prima di iniziare", "Osserva i dati", "Conosci i due cateti: uno lungo 6 cm, l’altro lungo 4 cm. Vuoi costruire il triangolo rettangolo.", "I cateti sono i due lati che formano l’angolo retto."],
+      ["Passo 1 · Primo cateto", "Traccia il cateto AB", "Con il righello traccia il segmento AB lungo 6 cm.", "L’angolo retto sarà in A."],
+      ["Passo 2 · Perpendicolare", "Alza la perpendicolare in A", "Costruisci la perpendicolare ad AB nell’estremo A, come nella Costruzione 10: un arco da A, quattro archetti con la stessa apertura e la semiretta che sale da A.", "Il secondo cateto starà su questa semiretta."],
+      ["Passo 3 · Secondo cateto", "Apri il compasso a 4 cm", "Prendi sul righello l’apertura di 4 cm. Punta in A e taglia la perpendicolare: trovi il vertice C.", "AC è lungo quanto il secondo cateto."],
+      ["Passo 4 · Righello", "Unisci C con B", "Ripassa il cateto AC e traccia l’ipotenusa BC. Il triangolo rettangolo è completo.", "Misura l’ipotenusa: deve venire circa 7,2 cm."],
+    ],
+  }, (k) => {
+    const A = k.punto("A", [-3, -2.4]);
+    const B = k.punto("B", [3, -2.4]);
+    const C = k.punto("C", [-3, -2.4 + 4]);
+    const r = 1.7;
+    const N1 = polare(A, r, 0); const N2 = polare(A, r, 60); const N3 = polare(A, r, 120);
+    const N4 = [A[0], A[1] + r * Math.sqrt(3)];
+    k.seg("segDatA", [0, 4.5], [6, 4.5], "cateto 6 cm");
+    k.seg("segDatB", [0, 3.9], [4, 3.9], "cateto 4 cm");
+    k.traccia("drawAB", A, B);
+    k.arco("arcA", A, r, -8, 148, [0.05, 0.3]);
+    k.archetto("arcN1", N1, N2, 14, [0.3, 0.42]);
+    k.archetto("arcN2", N2, N3, 14, [0.42, 0.54]);
+    k.archetto("arcK2", N2, N4, 14, [0.54, 0.66]);
+    k.archetto("arcK3", N3, N4, 14, [0.66, 0.78]);
+    k.traccia("linePerp", A, [A[0], A[1] + 6.2], [0.8, 1]);
+    k.archetto("arcAC", A, C, 10);
+    k.traccia("drawAC", A, C, [0.12, 0.45]);
+    k.traccia("drawBC", C, B, [0.5, 0.9]);
+    k.angolo("rightAngle", B, A, C);
+    k.compare("A", 0.12); k.compare("B", 0.95); k.compare("C", 0.6); k.compare("rightAngle", 0.94);
+    k.passo("segDatA", "segDatB");
+    k.passo("drawAB", "A", "B");
+    k.passo("arcA", "arcN1", "arcN2", "arcK2", "arcK3", "linePerp");
+    k.passo("arcAC", "C");
+    k.passo("drawAC", "drawBC", "rightAngle");
+    k.risultato("drawAB", "drawAC", "drawBC");
+  });
+
+  // ── 29 · Triangolo rettangolo (ipotenusa e cateto) ─────────────────────────
+  TAVOLE["rettangolo-semicirconferenza"] = creaTavola({
+    title: "Triangolo rettangolo nella semicirconferenza",
+    eyebrow: "Costruzione 29 · Dati l’ipotenusa e un cateto",
+    subtitle: "L’ipotenusa diventa il diametro di una semicirconferenza: se unisci un punto della curva con i due estremi del diametro, ottieni un angolo retto.",
+    filename: "MC-DIS-1-01_rettangolo-semicirconferenza.ggb",
+    coord: [-8.2, 4.8, -4.3, 4.3],
+    proofTitle: "Tre raggi uguali fanno un angolo retto",
+    proofCopy: "Unisci O con C: OA, OB e OC sono tre raggi, quindi i triangoli AOC e BOC sono isosceli e hanno gli angoli alla base uguali. L’angolo in C è la somma di un angolo uguale a quello in A e di uno uguale a quello in B. Poiché i tre angoli del triangolo ABC fanno 180°, l’angolo in C è la metà: 90°. Vale per qualsiasi punto C della semicirconferenza.",
+    equality: "angolo in C = 90° · BC = 6 cm",
+    steps: [
+      ["Prima di iniziare", "Osserva i dati", "Conosci l’ipotenusa, lunga 7,5 cm, e un cateto, lungo 4,5 cm. Vuoi costruire il triangolo rettangolo partendo dall’ipotenusa.", "Questa volta l’angolo retto non si costruisce: nasce da solo."],
+      ["Passo 1 · Ipotenusa", "Traccia l’ipotenusa AB", "Con il righello traccia il segmento AB lungo 7,5 cm.", "L’angolo retto sarà nel terzo vertice, C."],
+      ["Passo 2 · Punto medio", "Trova il punto O", "Costruisci l’asse di AB (Costruzione 9): due archi da A e da B con la stessa apertura e la retta per i punti d’incontro. Trovi il punto medio O.", "O sarà il centro della semicirconferenza."],
+      ["Passo 3 · Semicirconferenza", "Punta in O", "Punta in O con apertura OA e traccia la semicirconferenza sopra AB.", "AB è il diametro."],
+      ["Passo 4 · Cateto", "Apri il compasso a 4,5 cm", "Prendi sul righello l’apertura di 4,5 cm. Punta in A e taglia la semicirconferenza: trovi il vertice C.", "AC è lungo quanto il cateto dato."],
+      ["Passo 5 · Righello", "Unisci C con A e con B", "Traccia i lati AC e BC. Il triangolo rettangolo è completo.", "Controlla con la squadra l’angolo in C e misura BC: deve venire 6 cm."],
+    ],
+  }, (k) => {
+    const y0 = -1.8;
+    const A = k.punto("A", [-3.75, y0]);
+    const B = k.punto("B", [3.75, y0]);
+    const O = k.punto("O", [0, y0]);
+    const C = k.punto("C", [A[0] + 4.5 * 0.6, y0 + 4.5 * 0.8]);
+    const r = 4;
+    const h = Math.sqrt(r * r - 3.75 * 3.75);
+    k.seg("segDatA", [-7.9, 3.7], [-0.4, 3.7], "ipotenusa 7,5 cm");
+    k.seg("segDatB", [-7.9, 3.05], [-3.4, 3.05], "cateto 4,5 cm");
+    k.traccia("drawAB", A, B);
+    k.archetto("arcA1", A, [0, y0 + h], 9, [0.08, 0.26]); k.archetto("arcA2", A, [0, y0 - h], 9, [0.26, 0.44]);
+    k.archetto("arcB1", B, [0, y0 + h], 9, [0.44, 0.6]); k.archetto("arcB2", B, [0, y0 - h], 9, [0.6, 0.76]);
+    k.traccia("lineAsse", [0, y0 + h + 0.3], [0, y0 - h - 0.3], [0.78, 1]);
+    k.arco("arcO", O, 3.75, 0, 180);
+    k.archetto("arcAC", A, C, 10);
+    k.traccia("drawAC", A, C, [0.12, 0.5]);
+    k.traccia("drawBC", C, B, [0.52, 0.9]);
+    k.angolo("rightAngle", A, C, B);
+    k.compare("A", 0.12); k.compare("B", 0.95); k.compare("O", 0.92); k.compare("C", 0.6); k.compare("rightAngle", 0.94);
+    k.passo("segDatA", "segDatB");
+    k.passo("drawAB", "A", "B");
+    k.passo("arcA1", "arcA2", "arcB1", "arcB2", "lineAsse", "O");
+    k.passo("arcO");
+    k.passo("arcAC", "C");
+    k.passo("drawAC", "drawBC", "rightAngle");
+    k.risultato("drawAB", "drawAC", "drawBC");
+  });
+
+  // ── 30 · Ovale inscritto nel rombo ─────────────────────────────────────────
+  TAVOLE["ovale-nel-rombo"] = creaTavola({
+    title: "Ovale inscritto nel rombo",
+    eyebrow: "Costruzione 30 · Il rombo di due triangoli equilateri",
+    subtitle: "Un rombo fatto di due triangoli equilateri guida quattro archi che toccano i lati nei loro punti medi.",
+    filename: "MC-DIS-1-01_ovale-nel-rombo.ggb",
+    coord: [-5.2, 5.2, -3.1, 3.1],
+    proofTitle: "Gli archi toccano il rombo e si raccordano",
+    proofCopy: "Il triangolo A-B-C è equilatero: il segmento che unisce A con il punto medio di BC è perpendicolare a BC. L’arco con centro A tocca quindi il lato senza attraversarlo. Lo stesso vale per gli altri archi. Nei punti medi si incontrano un arco grande e uno piccolo: i loro centri sono allineati con il punto di contatto, perciò la curva prosegue senza spigoli.",
+    equality: "4 archi · 4 punti medi",
+    steps: [
+      ["Prima di iniziare", "Osserva il segmento AB", "Il segmento AB è lungo quanto il lato del rombo. Vuoi costruire il rombo e poi l’ovale che lo tocca dall’interno.", "Questo ovale serve per disegnare i cerchi nell’assonometria isometrica."],
+      ["Passo 1 · Archi da A e da B", "Trova C e D", "Apri il compasso quanto AB. Punta in A e poi in B: i due archi si incontrano da una parte nel punto C e dall’altra nel punto D.", "A-B-C e A-B-D sono due triangoli equilateri."],
+      ["Passo 2 · Rombo", "Unisci e segna i punti medi", "Unisci A e B con C e con D: ottieni il rombo. Con il righello segna il punto medio di ogni lato: E su AC, F su CB, G su BD, H su DA.", "Tutti e quattro i lati sono lunghi quanto AB."],
+      ["Passo 3 · Quattro segmenti", "Trova 1 e 2", "Unisci A con i punti medi dei due lati opposti, F e G. Unisci B con gli altri due, E e H. AF e BE si incontrano nel punto 1, dalla parte di C; AG e BH nel punto 2, dalla parte di D.", "1 e 2 stanno sulla diagonale lunga del rombo."],
+      ["Passo 4 · Archi grandi", "Punta in A e poi in B", "Punta in A con apertura AF e traccia l’arco da F a G. Con la stessa apertura punta in B e traccia l’arco da H a E.", "Ogni arco tocca due lati del rombo."],
+      ["Passo 5 · Archi piccoli", "Punta in 1 e poi in 2", "Punta in 1 con apertura 1E e traccia l’arco da E a F. Con la stessa apertura punta in 2 e traccia l’arco da G a H. L’ovale è completo.", "Ripassa il contorno: non ci sono spigoli."],
+    ],
+  }, (k) => {
+    const s = 4.8;
+    const A = k.punto("A", [0, s / 2]);
+    const B = k.punto("B", [0, -s / 2]);
+    const hx = (s * Math.sqrt(3)) / 2;
+    const C = k.punto("C", [-hx, 0]);
+    const D = k.punto("D", [hx, 0]);
+    const medio = (p, q) => [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
+    const E = k.punto("E", medio(A, C));
+    const F = k.punto("F", medio(B, C));
+    const G = k.punto("G", medio(B, D));
+    const H = k.punto("H", medio(A, D));
+    const x1 = hx / 3;
+    const N1 = k.punto("N1", [-x1, 0], "1");
+    const N2 = k.punto("N2", [x1, 0], "2");
+    const Rg = distanza(A, F);
+    const Rp = distanza(N1, E);
+    k.seg("segAB", A, B);
+    k.archetto("arcAC", A, C, 12, [0.12, 0.32]); k.archetto("arcBC", B, C, 12, [0.32, 0.52]);
+    k.archetto("arcAD", A, D, 12, [0.52, 0.72]); k.archetto("arcBD", B, D, 12, [0.72, 0.92]);
+    const wr = finestre(4, 0.12, 0.7);
+    k.traccia("lineQ1", A, C, wr[0]); k.traccia("lineQ2", C, B, wr[1]); k.traccia("lineQ3", B, D, wr[2]); k.traccia("lineQ4", D, A, wr[3]);
+    const wl = finestre(4);
+    k.traccia("lineK1", A, F, wl[0]); k.traccia("lineK2", A, G, wl[1]); k.traccia("lineK3", B, E, wl[2]); k.traccia("lineK4", B, H, wl[3]);
+    k.arco("arcBig1", A, Rg, 240, 60, [0.12, 0.5]);
+    k.arco("arcBig2", B, Rg, 60, 60, [0.52, 0.9]);
+    k.arco("arcSm1", N1, Rp, 120, 120, [0.12, 0.5]);
+    k.arco("arcSm2", N2, Rp, 300, 120, [0.52, 0.9]);
+    k.arcoFisso("ovale1", A, Rg, 240, 300); k.arcoFisso("ovale2", N2, Rp, 300, 420);
+    k.arcoFisso("ovale3", B, Rg, 60, 120); k.arcoFisso("ovale4", N1, Rp, 120, 240);
+    k.compare("C", 0.5); k.compare("D", 0.9);
+    ["E", "F", "G", "H"].forEach((n) => k.compare(n, 0.8));
+    k.compare("N1", 0.75); k.compare("N2", 0.92);
+    ["ovale1", "ovale2", "ovale3", "ovale4"].forEach((n) => k.compare(n, 0.95));
+    k.passo("A", "B", "segAB");
+    k.passo("arcAC", "arcBC", "arcAD", "arcBD", "C", "D");
+    k.passo("lineQ1", "lineQ2", "lineQ3", "lineQ4", "E", "F", "G", "H");
+    k.passo("lineK1", "lineK2", "lineK3", "lineK4", "N1", "N2");
+    k.passo("arcBig1", "arcBig2");
+    k.passo("arcSm1", "arcSm2", "ovale1", "ovale2", "ovale3", "ovale4");
+    k.risultato("ovale1", "ovale2", "ovale3", "ovale4");
+  });
+
+  // ── 31 · Ovale dato l'asse minore ──────────────────────────────────────────
+  TAVOLE["ovale-asse-minore"] = creaTavola({
+    title: "Ovale dato l’asse minore",
+    eyebrow: "Costruzione 31 · Quattro centri su due assi",
+    subtitle: "Parti dalla larghezza dell’ovale: una circonferenza trova i due centri mancanti, quattro archi chiudono la curva.",
+    filename: "MC-DIS-1-01_ovale-asse-minore.ggb",
+    coord: [-5.6, 5.6, -3.6, 3.6],
+    proofTitle: "Centri allineati, curva senza spigoli",
+    proofCopy: "Il punto C sta sulla retta che passa per A e per 1. In C si incontrano l’arco con centro A e l’arco con centro 1: i due centri e il punto di contatto sono allineati, quindi i due archi hanno lì la stessa direzione e si raccordano senza spigolo. Lo stesso accade in D, in E e in F.",
+    equality: "4 archi · 4 punti di raccordo",
+    steps: [
+      ["Prima di iniziare", "Osserva l’asse minore", "Il segmento AB è l’asse minore, cioè la larghezza massima dell’ovale: la più corta delle sue due misure. Vuoi costruire l’ovale.", "L’asse maggiore verrà da solo: è perpendicolare ad AB."],
+      ["Passo 1 · Asse di AB", "Trova il punto O", "Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O e la retta perpendicolare.", "O è il centro dell’ovale."],
+      ["Passo 2 · Circonferenza", "Trova 1 e 2", "Punta in O con apertura OA e traccia la circonferenza: incontra la perpendicolare nei punti 1 e 2.", "A, B, 1 e 2 saranno i quattro centri degli archi."],
+      ["Passo 3 · Quattro semirette", "Traccia le guide", "Da A traccia due semirette che passano per 1 e per 2, e prolungale oltre la circonferenza. Fai lo stesso da B.", "Su queste semirette cadranno i punti di raccordo."],
+      ["Passo 4 · Archi grandi", "Punta in A e poi in B", "Punta in A con apertura AB e traccia l’arco tra le due semirette: va da C a D e passa per B. Con la stessa apertura punta in B: l’arco va da E a F e passa per A.", "C ed E stanno dalla parte del punto 1; D e F dalla parte del punto 2."],
+      ["Passo 5 · Archi piccoli", "Punta in 1 e poi in 2", "Punta in 1 con apertura 1C e traccia l’arco da C a E. Con la stessa apertura punta in 2 e traccia l’arco da D a F. L’ovale è completo.", "Ripassa il contorno: quattro archi, nessuno spigolo."],
+    ],
+  }, (k) => {
+    const r = 2.3;
+    const A = k.punto("A", [0, r]);
+    const B = k.punto("B", [0, -r]);
+    const O = k.punto("O", [0, 0]);
+    const N1 = k.punto("N1", [-r, 0], "1");
+    const N2 = k.punto("N2", [r, 0], "2");
+    const C = k.punto("C", polare(A, 2 * r, 225));
+    const D = k.punto("D", polare(A, 2 * r, 315));
+    const E = k.punto("E", polare(B, 2 * r, 135));
+    const F = k.punto("F", polare(B, 2 * r, 45));
+    const rp = distanza(N1, C);
+    k.seg("segAB", A, B);
+    k.traccia("lineAsse", [-5.2, 0], [5.2, 0]);
+    k.arco("circleO", O, r, 90, 360);
+    const wl = finestre(4);
+    k.traccia("lineK1", A, oltre(A, C, 0.5), wl[0]); k.traccia("lineK2", A, oltre(A, D, 0.5), wl[1]);
+    k.traccia("lineK3", B, oltre(B, E, 0.5), wl[2]); k.traccia("lineK4", B, oltre(B, F, 0.5), wl[3]);
+    k.arco("arcBig1", A, 2 * r, 225, 90, [0.12, 0.5]);
+    k.arco("arcBig2", B, 2 * r, 45, 90, [0.52, 0.9]);
+    k.arco("arcSm1", N1, rp, 135, 90, [0.12, 0.5]);
+    k.arco("arcSm2", N2, rp, 315, 90, [0.52, 0.9]);
+    k.arcoFisso("ovale1", A, 2 * r, 225, 315); k.arcoFisso("ovale2", N2, rp, 315, 405);
+    k.arcoFisso("ovale3", B, 2 * r, 45, 135); k.arcoFisso("ovale4", N1, rp, 135, 225);
+    k.compare("O", 0.5); k.compare("N1", 0.35); k.compare("N2", 0.8);
+    k.compare("C", 0.2); k.compare("D", 0.5); k.compare("F", 0.6); k.compare("E", 0.9);
+    ["ovale1", "ovale2", "ovale3", "ovale4"].forEach((n) => k.compare(n, 0.95));
+    k.passo("A", "B", "segAB");
+    k.passo("lineAsse", "O");
+    k.passo("circleO", "N1", "N2");
+    k.passo("lineK1", "lineK2", "lineK3", "lineK4");
+    k.passo("arcBig1", "arcBig2", "C", "D", "E", "F");
+    k.passo("arcSm1", "arcSm2", "ovale1", "ovale2", "ovale3", "ovale4");
+    k.risultato("ovale1", "ovale2", "ovale3", "ovale4");
+  });
+
+  // ── 32 · Ovolo ─────────────────────────────────────────────────────────────
+  TAVOLE["ovolo-asse-minore"] = creaTavola({
+    title: "Ovolo dato l’asse minore",
+    eyebrow: "Costruzione 32 · La forma dell’uovo",
+    subtitle: "Mezza circonferenza da una parte, tre archi raccordati dall’altra: nasce il profilo di un uovo.",
+    filename: "MC-DIS-1-01_ovolo-asse-minore.ggb",
+    coord: [-6.2, 6.2, -3, 4.3],
+    proofTitle: "Un solo asse di simmetria",
+    proofCopy: "L’ovolo è fatto di quattro archi: la semicirconferenza con centro O, due archi grandi con centro A e con centro B, e un arco piccolo con centro 1. In ogni punto di raccordo i due centri e il punto di contatto sono allineati: per esempio A, 1 e C stanno sulla stessa semiretta. Per questo la curva non fa spigoli. A differenza dell’ovale, l’ovolo ha un solo asse di simmetria.",
+    equality: "1 semicirconferenza + 3 archi",
+    steps: [
+      ["Prima di iniziare", "Osserva l’asse minore", "Il segmento AB è l’asse minore, cioè la larghezza massima dell’ovolo. Vuoi costruire una curva a forma di uovo.", "Da una parte sarà rotonda, dall’altra più appuntita."],
+      ["Passo 1 · Asse di AB", "Trova il punto O", "Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O e la retta perpendicolare.", "È l’asse di simmetria dell’ovolo."],
+      ["Passo 2 · Circonferenza", "Trova 1 e 2", "Punta in O con apertura OA e traccia la circonferenza: incontra la perpendicolare nel punto 1, in alto, e nel punto 2, in basso.", "La metà inferiore di questa circonferenza farà parte dell’ovolo."],
+      ["Passo 3 · Due semirette", "Traccia le guide", "Da A traccia la semiretta che passa per 1 e prolungala. Da B traccia un’altra semiretta che passa per 1.", "Le due semirette si incrociano nel punto 1."],
+      ["Passo 4 · Archi grandi", "Punta in A e poi in B", "Punta in A con apertura AB e traccia l’arco che parte da B e arriva alla semiretta: trovi C. Con la stessa apertura punta in B e traccia l’arco che parte da A: trovi D.", "C è sulla semiretta che parte da A, D su quella che parte da B."],
+      ["Passo 5 · Punta dell’uovo", "Punta in 1", "Punta in 1 con apertura 1C e traccia l’arco da C a D. Poi ripassa la semicirconferenza inferiore, da A a B passando per 2. L’ovolo è completo.", "Ripassa il contorno partendo dalla punta."],
+    ],
+  }, (k) => {
+    const r = 2.2;
+    const A = k.punto("A", [-r, 0]);
+    const B = k.punto("B", [r, 0]);
+    const O = k.punto("O", [0, 0]);
+    const N1 = k.punto("N1", [0, r], "1");
+    const N2 = k.punto("N2", [0, -r], "2");
+    const C = k.punto("C", polare(A, 2 * r, 45));
+    const D = k.punto("D", polare(B, 2 * r, 135));
+    const rp = distanza(N1, C);
+    k.seg("segAB", A, B);
+    k.traccia("lineAsse", [0, -r - 0.5], [0, r + rp + 0.5]);
+    k.arco("circleO", O, r, 0, 360);
+    k.traccia("lineK1", A, oltre(A, C, 0.6), [0.12, 0.5]);
+    k.traccia("lineK2", B, oltre(B, D, 0.6), [0.52, 0.9]);
+    k.arco("arcBig1", A, 2 * r, 0, 45, [0.12, 0.5]);
+    k.arco("arcBig2", B, 2 * r, 135, 45, [0.52, 0.9]);
+    k.arco("arcSm", N1, rp, 45, 90, [0.12, 0.6]);
+    k.arcoFisso("ovolo1", O, r, 180, 360); k.arcoFisso("ovolo2", A, 2 * r, 0, 45);
+    k.arcoFisso("ovolo3", N1, rp, 45, 135); k.arcoFisso("ovolo4", B, 2 * r, 135, 180);
+    k.compare("O", 0.5); k.compare("N1", 0.35); k.compare("N2", 0.8); k.compare("C", 0.5); k.compare("D", 0.55);
+    ["ovolo1", "ovolo2", "ovolo3", "ovolo4"].forEach((n) => k.compare(n, 0.8));
+    k.passo("A", "B", "segAB");
+    k.passo("lineAsse", "O");
+    k.passo("circleO", "N1", "N2");
+    k.passo("lineK1", "lineK2");
+    k.passo("arcBig1", "arcBig2", "C", "D");
+    k.passo("arcSm", "ovolo1", "ovolo2", "ovolo3", "ovolo4");
+    k.risultato("ovolo1", "ovolo2", "ovolo3", "ovolo4");
+  });
+
+  // ── 33 · Spirale a quattro centri ──────────────────────────────────────────
+  TAVOLE["spirale-quattro-centri"] = creaTavola({
+    title: "Spirale a quattro centri",
+    eyebrow: "Costruzione 33 · Quarti di circonferenza",
+    subtitle: "I vertici di un piccolo quadrato fanno da centri, uno dopo l’altro: a ogni quarto di giro il raggio cresce di un lato.",
+    filename: "MC-DIS-1-01_spirale-quattro-centri.ggb",
+    coord: [-5, 6.6, -4, 5.7],
+    proofTitle: "Ogni giro si allarga di quattro lati",
+    proofCopy: "Ogni arco è un quarto di circonferenza: parte dal prolungamento di un lato del quadrato e finisce sul prolungamento del lato successivo. Lì cambia il centro, ma il vecchio centro, il nuovo centro e il punto di contatto sono allineati: la curva non fa spigoli. A ogni cambio di centro il raggio aumenta di un lato del quadrato; dopo quattro archi, cioè un giro completo, la spirale si è allargata di quattro lati: è il passo.",
+    equality: "passo = 4 × lato del quadrato",
+    steps: [
+      ["Prima di iniziare", "Osserva il quadrato", "Hai un piccolo quadrato ABCD: i suoi vertici saranno i quattro centri della spirale. Il passo, cioè la distanza tra un giro e il successivo, è quattro volte il lato.", "Per un passo di 2 cm disegna un quadrato di lato 0,5 cm."],
+      ["Passo 1 · Prolungamenti", "Prolunga i quattro lati", "Prolunga ogni lato del quadrato da una sola parte, girando sempre nello stesso verso: il lato BA oltre A, il lato CB oltre B, il lato DC oltre C, il lato AD oltre D.", "Su queste semirette finiranno gli archi."],
+      ["Passo 2 · Centro A", "Primo arco", "Punta in A, apri fino a D e traccia un quarto di circonferenza fino al prolungamento del lato BA: arrivi nel punto 1.", "Il raggio è lungo un lato."],
+      ["Passo 3 · Centro B", "Secondo arco", "Punta in B, apri fino a 1 e traccia un quarto di circonferenza fino al prolungamento del lato CB: arrivi nel punto 2.", "Il raggio è lungo due lati."],
+      ["Passo 4 · Centro C", "Terzo arco", "Punta in C, apri fino a 2 e traccia un quarto di circonferenza fino al prolungamento del lato DC: arrivi nel punto 3.", "Il raggio è lungo tre lati."],
+      ["Passo 5 · Centro D", "Quarto arco", "Punta in D, apri fino a 3 e traccia un quarto di circonferenza fino al prolungamento del lato AD: arrivi nel punto 4. Hai chiuso il primo giro.", "Il raggio è lungo quattro lati."],
+      ["Passo 6 · Continua", "Ricomincia da A", "Continua nello stesso ordine: centro A fino a 5, centro B fino a 6, centro C fino a 7, centro D fino a 8.", "I centri si ripetono sempre nello stesso ordine: A, B, C, D."],
+    ],
+  }, (k) => {
+    const u = 0.55;
+    const Q = { A: [0, 0], B: [u, 0], C: [u, u], D: [0, u] };
+    Object.entries(Q).forEach(([n, p]) => k.punto(n, p));
+    const ordine = ["A", "B", "C", "D"];
+    ordine.forEach((n, i) => k.seg(`segQ${i + 1}`, Q[n], Q[ordine[(i + 1) % 4]]));
+    k.seg("rayA", Q.A, [-4.4, 0]); k.seg("rayB", Q.B, [u, -3.7]); k.seg("rayC", Q.C, [6.2, u]); k.seg("rayD", Q.D, [0, 5.2]);
+    const fine = [];
+    const wf = finestre(4);
+    for (let i = 1; i <= 8; i += 1) {
+      const centro = Q[ordine[(i - 1) % 4]];
+      const inizio = 90 * i;
+      const finestra = i > 4 ? wf[i - 5] : undefined;
+      k.arco(`arcS${i}`, centro, u * i, inizio, 90, finestra);
+      k.arcoFisso(`spira${i}`, centro, u * i, inizio, inizio + 90);
+      k.punto(`N${i}`, polare(centro, u * i, inizio + 90), String(i));
+      k.compare(`N${i}`, finestra ? finestra[1] : 0.97);
+      k.compare(`spira${i}`, 0.97);
+      fine.push(`spira${i}`);
+    }
+    k.passo("A", "B", "C", "D", "segQ1", "segQ2", "segQ3", "segQ4");
+    k.passo("rayA", "rayB", "rayC", "rayD");
+    k.passo("arcS1", "N1");
+    k.passo("arcS2", "N2");
+    k.passo("arcS3", "N3");
+    k.passo("arcS4", "N4");
+    k.passo("arcS5", "arcS6", "arcS7", "arcS8", "N5", "N6", "N7", "N8", ...fine);
+    k.risultato(...fine);
+  });
+
   window.GGB_TAVOLE = TAVOLE;
 })();

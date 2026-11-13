@@ -85,7 +85,7 @@ export default async function CostruzionePage({ params }: Props) {
                 {successiva.numero}. {successiva.titolo} →
               </Link>
             )}
-            <Link href="/laboratori#costruzioni-geogebra" className="underline underline-offset-4">
+            <Link href="/costruzioni-geometriche" className="underline underline-offset-4">
               Tutte le tavole
             </Link>
           </div>
