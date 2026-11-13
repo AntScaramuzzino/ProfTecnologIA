@@ -352,6 +352,282 @@ Il pentagono non si costruisce con la sola apertura del compasso come l'esagono 
 
 ---
 
+Le costruzioni dalla 9 alla 20 ampliano il repertorio: assi e parallele, poligoni inscritti, triangoli dati i lati, curve raccordate. Ognuna ha la sua tavola animata.
+
+---
+
+#### Costruzione 9 — Asse di un segmento
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un segmento AB. Vuoi trovare il suo punto medio e la retta che lo taglia a metà formando angoli retti: si chiama asse del segmento.
+
+**Passi:**
+
+1. Apri il compasso più della metà di AB. Punta in A e traccia un arco ampio, che passi sopra e sotto il segmento. *Se l’apertura è troppo piccola, i due archi non si incontreranno.*
+
+2. Senza toccare l’apertura, punta in B e traccia un secondo arco. I due archi si incontrano in due punti: 1 e 2. *1 e 2 sono alla stessa distanza da A e da B.*
+
+3. Traccia la retta che passa per 1 e 2. Incontra AB nel punto medio M e forma quattro angoli retti. *Controlla con il righello: AM e MB devono essere uguali.*
+
+**Perché funziona?** Il punto 1 dista da A quanto da B, perché i due archi hanno la stessa apertura. Lo stesso vale per il punto 2. Tutti i punti equidistanti da A e da B stanno sull’asse del segmento: la retta che passa per 1 e 2 è quindi perpendicolare ad AB e lo taglia nel punto medio.
+
+**Prova tu:** Traccia un segmento AB di 7 cm e costruisci il suo asse. Misura AM e MB: devono essere uguali, 3,5 cm ciascuno.
+
+---
+
+#### Costruzione 10 — Perpendicolare in un estremo del segmento
+
+**Servono:** righello, compasso.
+
+**Situazione:** Vuoi tracciare la perpendicolare ad AB proprio nell’estremo A, senza prolungare il segmento oltre A.
+
+**Passi:**
+
+1. Punta il compasso in A con un’apertura a piacere e traccia un arco ampio. L’arco incontra il segmento nel punto 1. *Da qui in poi l’apertura non cambia più.*
+
+2. Punta in 1 e, con la stessa apertura, taglia l’arco nel punto 2. *A, 1 e 2 formano un triangolo equilatero: l’angolo in A è di 60°.*
+
+3. Punta in 2 e taglia ancora l’arco: trovi il punto 3. *Altri 60°: sei arrivato a 120° dal segmento.*
+
+4. Punta in 2 e poi in 3, sempre con la stessa apertura, e traccia due archetti che si incrociano sopra l’arco, nel punto 4. *Il punto 4 è alla stessa distanza da 2 e da 3.*
+
+5. Traccia la retta che passa per A e per 4: è la perpendicolare ad AB nell’estremo A. *Controlla con la squadra: l’angolo in A deve essere di 90°.*
+
+**Perché funziona?** I triangoli A-1-2 e A-2-3 hanno tutti i lati uguali all’apertura del compasso: sono equilateri. La direzione A2 forma quindi 60° con il segmento, e la direzione A3 ne forma 120°. Il punto 4 è equidistante da 2 e da 3, e lo è anche A: perciò la retta A4 divide a metà l’angolo di 60° compreso tra A2 e A3. In totale: 60° + 30° = 90°.
+
+**Prova tu:** Traccia un segmento AB di 7 cm e costruisci la perpendicolare in A. Controlla con la squadra che l’angolo sia di 90°.
+
+---
+
+#### Costruzione 11 — Parallela a una retta per un punto
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il punto P è fuori dalla retta r. Vuoi tracciare la retta che passa per P e non incontra mai r: la parallela.
+
+**Passi:**
+
+1. Punta il compasso in P con un’apertura abbastanza grande da raggiungere la retta. Traccia un arco ampio: incontra r nel punto 1. *Fai l’arco lungo: ti servirà ancora nel passo 3.*
+
+2. Con la stessa apertura punta in 1 e traccia un arco che taglia la retta r nel punto 2, dalla parte di P. *Osserva: questo arco passa anche per P.*
+
+3. Apri il compasso quanto la distanza tra 2 e P. Punta in 1 e taglia il primo arco dalla stessa parte di P rispetto alla retta r, lontano dal punto 2: trovi il punto 3. *Stai ricopiando la distanza 2–P da un’altra parte.*
+
+4. Traccia la retta che passa per P e per 3: è la parallela a r. *Verifica: misura la distanza tra le due rette in due punti diversi.*
+
+**Perché funziona?** Guarda il quadrilatero con vertici 2, 1, 3 e P. I lati 2–1 e P–3 sono uguali: sono entrambi lunghi quanto la prima apertura del compasso. Anche i lati 2–P e 1–3 sono uguali: è la seconda apertura. Un quadrilatero con i lati opposti uguali è un parallelogramma, e i suoi lati opposti sono paralleli: la retta che passa per P e 3 è parallela a r.
+
+**Prova tu:** Traccia una retta r, segna un punto P a 4 cm di distanza e costruisci la parallela. Misura la distanza tra le due rette in due punti lontani: deve essere la stessa.
+
+---
+
+#### Costruzione 12 — Angolo retto diviso in tre parti uguali
+
+**Servono:** righello, compasso.
+
+**Situazione:** Le semirette r e s partono da O e formano un angolo di 90°. Vuoi dividerlo in tre angoli uguali, da 30° ciascuno.
+
+**Passi:**
+
+1. Punta in O con un’apertura a piacere e traccia un arco che incontra la semiretta r nel punto 1 e la semiretta s nel punto 2. *Tieni ferma questa apertura fino alla fine.*
+
+2. Punta in 1 e, con la stessa apertura, taglia l’arco nel punto 3. *Il triangolo O-1-3 è equilatero: l’angolo in O vale 60°.*
+
+3. Punta in 2 e, sempre con la stessa apertura, taglia l’arco nel punto 4. *Anche il triangolo O-2-4 è equilatero.*
+
+4. Unisci O con 3 e O con 4, prolungando oltre l’arco. L’angolo retto è diviso in tre angoli di 30°. *Controlla con il goniometro: 30°, 30°, 30°.*
+
+**Perché funziona?** Il triangolo O-1-3 ha i tre lati uguali all’apertura del compasso: è equilatero, quindi l’angolo tra r e la semiretta O3 è di 60°. Fino a s ne restano 90° − 60° = 30°. Allo stesso modo l’angolo tra s e la semiretta O4 è di 60°, e fino a r ne restano 30°. In mezzo rimane 90° − 30° − 30° = 30°.
+
+**Prova tu:** Disegna un angolo retto con la squadra e dividilo in tre parti. Poi controlla con il goniometro: tre angoli da 30°.
+
+---
+
+#### Costruzione 13 — Triangolo equilatero inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O. Vuoi disegnarci dentro un triangolo equilatero con i tre vertici sulla circonferenza.
+
+**Passi:**
+
+1. Traccia il diametro verticale. In alto incontra la circonferenza nel vertice A, in basso nel punto 1. *Un diametro passa sempre per il centro O.*
+
+2. Apri il compasso quanto il raggio. Punta in 1 e traccia un arco che taglia la circonferenza in due punti: B e C. *L’arco passa per il centro O: è il segno che l’apertura è giusta.*
+
+3. Unisci i tre punti. Il triangolo equilatero inscritto è completo. *Misura i tre lati: devono essere uguali.*
+
+**Perché funziona?** Il triangolo O-1-B ha tutti i lati uguali al raggio: è equilatero, quindi l’angolo in O è di 60°. Lo stesso vale per O-1-C. Tra B e C ci sono 60° + 60° = 120°. Tra A e B ne restano 180° − 60° = 120°, e così tra A e C. Tre archi uguali danno tre lati uguali.
+
+**Prova tu:** Disegna una circonferenza di raggio 4 cm e costruisci il triangolo inscritto. Misura i tre lati: devono essere uguali.
+
+---
+
+#### Costruzione 14 — Quadrato inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O. Vuoi disegnarci dentro un quadrato con i quattro vertici sulla circonferenza.
+
+**Passi:**
+
+1. Traccia il diametro orizzontale: incontra la circonferenza nei punti A e C. *A e C sono due vertici opposti del quadrato.*
+
+2. Apri il compasso ben più del raggio, quasi quanto il diametro. Punta in A e traccia due archetti, uno sopra e uno sotto la circonferenza. *Con un’apertura più piccola del raggio gli archetti non si incontrerebbero.*
+
+3. Con la stessa apertura punta in C e incrocia i due archetti. Trovi i punti 1 e 2. *È la costruzione dell’asse del segmento AC (Costruzione 9).*
+
+4. Traccia la retta che passa per 1 e 2. Passa per O e taglia la circonferenza in B e in D. *I due diametri sono perpendicolari.*
+
+5. Unisci i quattro punti in ordine. Il quadrato inscritto è completo. *Controlla: quattro lati uguali e quattro angoli retti.*
+
+**Perché funziona?** I due diametri dividono l’angolo giro in quattro angoli di 90°. I quattro archi AB, BC, CD e DA sono quindi uguali, e ad archi uguali corrispondono lati uguali. Le diagonali AC e BD sono due diametri: sono uguali, perpendicolari e si tagliano a metà, proprio come le diagonali di un quadrato.
+
+**Prova tu:** Disegna una circonferenza di raggio 4 cm e costruisci il quadrato inscritto. Controlla con la squadra uno degli angoli.
+
+---
+
+#### Costruzione 15 — Ottagono regolare inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con il quadrato inscritto della Costruzione 14: qui i suoi vertici si chiamano A, C, E e G. Vuoi raddoppiare i lati e ottenere un ottagono regolare.
+
+**Passi:**
+
+1. Punta in A e poi in C con la stessa apertura, più grande della metà del lato AC, e incrocia due archetti fuori dalla circonferenza: trovi il punto 1. *Il punto 1 è alla stessa distanza da A e da C.*
+
+2. Con la stessa apertura punta in C e poi in E: trovi il punto 2. *Bastano due punti: al resto pensa il centro O.*
+
+3. Traccia la retta che passa per 1 e per O e prolungala fino all’altra parte della circonferenza. Taglia la circonferenza in B e in F. *B sta a metà dell’arco AC, F a metà dell’arco opposto.*
+
+4. Traccia la retta che passa per 2 e per O. Taglia la circonferenza in D e in H. *Ora sulla circonferenza ci sono otto punti.*
+
+5. Unisci in ordine A, B, C, D, E, F, G e H. L’ottagono regolare è completo. *Con lo stesso metodo dall’esagono ottieni il dodecagono.*
+
+**Perché funziona?** Il punto 1 è equidistante da A e da C, e lo è anche il centro O. La retta che passa per 1 e per O è quindi la bisettrice dell’angolo AOC: divide a metà l’angolo di 90° e l’arco AC. Lo stesso vale per la retta che passa per 2 e per O. Gli otto archi sono tutti di 45°, e ad archi uguali corrispondono lati uguali.
+
+**Prova tu:** Parti dal quadrato inscritto in una circonferenza di raggio 4 cm e costruisci l’ottagono. Misura gli otto lati: devono essere uguali.
+
+---
+
+#### Costruzione 16 — Ettagono inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O. Vuoi disegnarci dentro un ettagono, il poligono con sette lati.
+
+**Passi:**
+
+1. Traccia il diametro orizzontale: incontra la circonferenza nei punti 1 e 2. *Il punto 1 sarà il prossimo centro del compasso.*
+
+2. Apri il compasso quanto il raggio. Punta in 1 e traccia un arco che taglia la circonferenza in A e in 3. *L’arco passa per il centro O.*
+
+3. Traccia il segmento da A a 3: incontra il diametro nel punto 4. La distanza da A a 4 è il lato dell’ettagono. *A4 è la metà del segmento A3.*
+
+4. Apri il compasso quanto A4. Punta in A e taglia la circonferenza da una parte e dall’altra: trovi B e G. *Da qui in poi non cambiare più apertura.*
+
+5. Punta in B e trova C, poi in C e trova D. Dall’altra parte: punta in G e trova F, poi in F e trova E. *Lavora sui due lati a partire da A: così il piccolo errore non si accumula tutto da una parte.*
+
+6. Unisci in ordine A, B, C, D, E, F e G. L’ettagono è completo. *Su una circonferenza di raggio 4 cm l’ultimo lato, DE, viene circa mezzo millimetro più lungo degli altri: è normale.*
+
+**Perché funziona?** Il lato esatto dell’ettagono regolare è lungo circa 0,868 volte il raggio. La distanza A4 è la metà del lato del triangolo equilatero inscritto e vale circa 0,866 volte il raggio. La differenza è di circa due millesimi del raggio: con la matita non si vede. Per questo l’ultimo lato chiude con uno scarto piccolissimo.
+
+**Prova tu:** Disegna una circonferenza di raggio 4 cm e costruisci l’ettagono. Misura l’ultimo lato: di quanto è diverso dagli altri?
+
+---
+
+#### Costruzione 17 — Triangolo scaleno dati i tre lati
+
+**Servono:** righello graduato, compasso.
+
+**Situazione:** Conosci le misure dei tre lati: 8 cm, 6 cm e 7 cm. Vuoi costruire il triangolo che li ha tutti e tre.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 8 cm: è il primo lato. *Lascia spazio sopra: il triangolo crescerà verso l’alto.*
+
+2. Prendi sul righello l’apertura di 6 cm. Punta in A e traccia un archetto sopra la base. *Tutti i punti dell’archetto distano 6 cm da A.*
+
+3. Ora prendi l’apertura di 7 cm. Punta in B e traccia un archetto che incrocia il primo: il punto d’incontro è C. *C dista 6 cm da A e 7 cm da B.*
+
+4. Traccia i lati AC e BC. Il triangolo scaleno è completo. *Misura i tre lati per controllare.*
+
+**Perché funziona?** Il punto C è l’unico punto sopra la base che dista 6 cm da A e 7 cm da B. I due archetti si incontrano solo se ogni lato è più corto della somma degli altri due. Con 8, 3 e 4 cm, per esempio, il triangolo non si chiude: 3 + 4 fa 7, meno di 8.
+
+**Prova tu:** Costruisci il triangolo con lati di 8, 6 e 7 cm. Poi prova con 8, 3 e 4 cm: che cosa succede, e perché?
+
+---
+
+#### Costruzione 18 — Triangolo rettangolo dati un cateto e l’ipotenusa
+
+**Servono:** righello graduato, compasso.
+
+**Situazione:** Conosci un cateto, lungo 6 cm, e l’ipotenusa, lunga 7,5 cm. Vuoi costruire il triangolo rettangolo.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 6 cm. *L’angolo retto sarà in A.*
+
+2. Costruisci la perpendicolare ad AB nell’estremo A, come nella Costruzione 10: un arco da A, quattro archetti con la stessa apertura e la semiretta che sale da A. *Del secondo cateto non conosci ancora la lunghezza: per ora è una semiretta.*
+
+3. Prendi sul righello l’apertura di 7,5 cm. Punta in B e traccia un archetto che taglia la perpendicolare: il punto d’incontro è C. *C dista da B quanto l’ipotenusa.*
+
+4. Ripassa il cateto AC e traccia l’ipotenusa BC. Il triangolo rettangolo è completo. *Misura AC: deve venire 4,5 cm.*
+
+**Perché funziona?** L’angolo in A è retto perché AC sta sulla perpendicolare. L’ipotenusa misura 7,5 cm perché C è sull’arco con centro B. Per il teorema di Pitagora (lo studierai in seconda: la somma dei quadrati dei cateti è uguale al quadrato dell’ipotenusa) il secondo cateto vale 4,5 cm: infatti 6² + 4,5² = 36 + 20,25 = 56,25, che è proprio 7,5².
+
+**Prova tu:** Costruisci il triangolo con cateto di 6 cm e ipotenusa di 7,5 cm. Misura il secondo cateto: deve venire 4,5 cm.
+
+---
+
+#### Costruzione 19 — Ovale dato l’asse maggiore
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è l’asse maggiore, cioè la lunghezza dell’ovale. Vuoi costruire una curva chiusa fatta di quattro archi di circonferenza.
+
+**Passi:**
+
+1. Dividi il segmento AB in tre parti uguali con il metodo delle parallele (Costruzione 3). Trovi i punti 1 e 2. *I tre tratti A–1, 1–2 e 2–B sono lunghi uguali.*
+
+2. Apri il compasso quanto la distanza tra 1 e 2. Traccia una circonferenza con centro 1 e una con centro 2: si incontrano nei punti 3 e 4. *La prima passa per A, la seconda per B.*
+
+3. Dal punto 3 traccia due rette che passano per i centri 1 e 2 e prolungale fino alle circonferenze: trovi 5 e 6. Fai lo stesso dal punto 4: trovi 7 e 8. *In questi quattro punti gli archi si raccorderanno.*
+
+4. Apri il compasso da 3 fino a 5. Punta in 3 e traccia l’arco da 5 a 6. Con la stessa apertura punta in 4 e traccia l’arco da 7 a 8. *Questa apertura è il doppio della precedente.*
+
+5. Ripassa i due archi grandi e i due archi piccoli che li uniscono, passando per A e per B. L’ovale è completo. *Lascia sottili le linee di costruzione: raccontano come hai lavorato.*
+
+**Perché funziona?** Nel punto 5 si incontrano un arco con centro 1 e un arco con centro 3. I punti 3, 1 e 5 sono allineati: quando i due centri e il punto di contatto stanno sulla stessa retta, i due archi hanno lì la stessa direzione e si raccordano senza spigolo. Lo stesso accade nei punti 6, 7 e 8.
+
+**Prova tu:** Costruisci un ovale con asse maggiore di 10,5 cm (tre parti da 3,5 cm). Ripassa il contorno e controlla che nei quattro punti di raccordo non ci siano spigoli.
+
+---
+
+#### Costruzione 20 — Spirale a due centri
+
+**Servono:** righello, compasso.
+
+**Situazione:** Sulla retta r ci sono due punti, A e B: saranno i due centri della spirale. Il passo, cioè la distanza tra un giro e il successivo, è il doppio di AB.
+
+**Passi:**
+
+1. Punta in A, apri fino a B e traccia mezza circonferenza sopra la retta. Arrivi nel punto 1. *Ogni tratto è una semicirconferenza: parte dalla retta e torna sulla retta.*
+
+2. Punta in B, apri fino a 1 e traccia mezza circonferenza sotto la retta. Arrivi nel punto 2. *Il raggio è raddoppiato.*
+
+3. Torna in A, apri fino a 2 e traccia mezza circonferenza sopra la retta. Arrivi nel punto 3. *Ogni volta il raggio cresce di una lunghezza AB.*
+
+4. Continua così: centro B fino al punto 4, poi centro A fino al punto 5. Puoi proseguire finché c’è spazio sul foglio. *Sopra la retta il centro è sempre A, sotto è sempre B.*
+
+**Perché funziona?** Ogni semicirconferenza finisce sulla retta r, proprio dove comincia la successiva. I due centri e il punto di contatto stanno sulla stessa retta, quindi la curva prosegue senza spigoli. A ogni mezzo giro il raggio aumenta di una lunghezza AB: dopo un giro completo la spirale si è allargata di 2 × AB, cioè di un passo.
+
+**Prova tu:** Costruisci una spirale con passo di 1,6 cm: A e B distano 0,8 cm. Traccia almeno sei semicirconferenze e misura la distanza tra due giri vicini.
+
+---
+
 > **⚠️ Box sicurezza:**
 > Il compasso ha una punta metallica tagliente. Non rivolgere la punta verso i compagni. Non tenere il compasso in mano mentre cammini. Quando non lo usi, chiudilo o appoggialo sul banco con la punta rivolta verso il basso sul foglio.
 

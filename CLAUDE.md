@@ -408,6 +408,7 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 | ✅ | Glossario competenze completo (definizioni cliccabili nelle card professioni) | ✅ Fatto — 2026-07-20 · `lib/competenze-glossario.json` 297 → 503 voci · copertura 100% delle competenze_chiave citate · titoli professioni_future INF allineati ai testi narrati |
 | ✅ | Documenti architettura serviti in public/docs/ (INDICE + architettura v2.2) | ✅ Fatto — 2026-05-13 |
 | ✅ | Pagina architettura: link funzionanti a INDICE e architettura v2.2 | ✅ Fatto — 2026-05-13 |
+| ✅ | Tavole GeoGebra: 12 nuove costruzioni (9–20) per MC-DIS-1-01 | ✅ Fatto — 2026-11-13 · `public/embeds/geogebra/costruzioni-base/tavole.js` (vocabolario `creaTavola`) · registro `lib/geogebra-costruzioni.ts` · pagine `/laboratori/costruzioni/[slug]` · modalità LIM `?lim=1` · testo ESPLORA di MC-DIS-1-01 esteso con le Costruzioni 9–20 (anche in `08_TESTI`) · skill `tavole-geogebra` |
 | 2 | Deploy Netlify definitivo | ⬜ Da fare — guida pronta in `DEPLOY_NETLIFY.md` |
 | 2 | Stepper progress indicator mobile — P2.1 (`refactor-backlog.md`) | ⬜ Da fare |
 | ✅ | Keyboard navigation MCNavigator (ArrowLeft/ArrowRight/Home/End) — WCAG WAI-ARIA Tabs — P2.2 | ✅ Fatto — già implementato (2026-05-11) · confermato 2026-07-08 |
