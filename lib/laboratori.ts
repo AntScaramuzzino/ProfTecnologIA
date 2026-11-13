@@ -2,6 +2,7 @@
 // Le pagine sono generate da scripts/laboratori/ in public/embeds/lab/<MC-ID>/index.html (npm run labs).
 // - 5 laboratori pilota scritti a mano (elencati qui sotto)
 // - gli altri su motore comune, elencati in laboratori-cfg.json (generato da npm run labs)
+import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI, hrefCostruzione } from "./geogebra-costruzioni";
 import cfgLabs from "./laboratori-cfg.json";
 import escapeRooms from "./escape-cfg.json";
 
@@ -63,18 +64,10 @@ export function escapeSrc(mcId: string): string {
   return `${basePath}/embeds/escape/${mcId}/index.html`;
 }
 
-// Costruzioni GeoGebra: pagine dedicate in app/laboratori/<slug>
-export const GEOGEBRA = [
-  {
-    href: "/laboratori/perpendicolare",
-    titolo: "Perpendicolare a una retta in un punto",
-    mcId: "MC-DIS-1-01",
-    descrizione: "Costruzione animata con righello e compasso, passo per passo.",
-  },
-  {
-    href: "/laboratori/bisettrice-angolo",
-    titolo: "Bisettrice di un angolo",
-    mcId: "MC-DIS-1-01",
-    descrizione: "Costruzione animata con righello e compasso, passo per passo.",
-  },
-];
+// Costruzioni GeoGebra: l'elenco completo sta in lib/geogebra-costruzioni.ts (qui serve all'indice di ricerca)
+export const GEOGEBRA = COSTRUZIONI_GEOGEBRA.map((c) => ({
+  href: hrefCostruzione(c),
+  titolo: c.titolo,
+  mcId: MC_COSTRUZIONI,
+  descrizione: c.descrizione,
+}));

@@ -247,14 +247,21 @@
     }
   };
 
+  // Tavole 9+ : definite in tavole.js con il vocabolario creaTavola (vedi skill «tavole-geogebra»).
+  Object.assign(ACTIVITIES, window.GGB_TAVOLE || {});
+
   let api = null;
   let currentStep = 0;
   let currentProgress = 1;
   let isPlaying = false;
   let animationToken = 0;
 
+  const searchParams = new URLSearchParams(window.location.search);
+  const limMode = searchParams.get("lim") === "1";
+  if (limMode) document.documentElement.classList.add("lim");
+
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const activityKey = new URLSearchParams(window.location.search).get("activity") || "divisione-segmento";
+  const activityKey = searchParams.get("activity") || "divisione-segmento";
   const activity = ACTIVITIES[activityKey] || ACTIVITIES["divisione-segmento"];
   const APPLET_ASPECT_RATIO = 850 / 520;
 
@@ -365,10 +372,35 @@
 
     activity.labels.forEach((name) => {
       if (!exists(name)) return;
+      const caption = activity.captions && activity.captions[name];
+      if (caption) api.setCaption(name, caption);
       api.setLabelVisible(name, true);
       api.setLabelStyle(name, 3);
       api.setPointSize(name, 5);
       api.setColor(name, 239, 68, 68);
+    });
+
+    // Estensioni usate dalle tavole 9+ (tavole.js)
+    Object.entries(activity.lineLabels || {}).forEach(([name, caption]) => {
+      if (!exists(name)) return;
+      api.setCaption(name, caption);
+      api.setLabelStyle(name, 3);
+      api.setLabelVisible(name, true);
+    });
+    (activity.angles || []).forEach((name) => {
+      if (!exists(name)) return;
+      api.setColor(name, 22, 163, 74);
+      api.setFilling(name, 0.28);
+      api.setLineThickness(name, 2);
+      api.setLabelVisible(name, false);
+    });
+    (activity.texts || []).forEach((name) => {
+      if (exists(name)) api.setColor(name, 4, 120, 87);
+    });
+    (activity.dashed || []).forEach((name) => {
+      if (!exists(name)) return;
+      api.setLineStyle(name, 2);
+      api.setLineThickness(name, 3);
     });
   }
 
@@ -437,6 +469,8 @@
     applyCompassTraceEffect(stage, progress);
     applyStepBuildSequence(stage, progress);
     applySideDrawSequence(stage, progress);
+    applyAnim(stage, progress);
+    applyAppearAt(stage, progress);
     const resultRevealAt = activity.sideDrawSequence && stage === activity.sideDrawSequence.stage
       ? activity.sideDrawSequence.finalAt
       : 0.95;
@@ -444,6 +478,34 @@
     api.setRepaintingActive(true);
     api.refreshViews();
     updateInterface();
+  }
+
+  function groupIndexOf(name) {
+    return activity.groups.findIndex((group) => group.includes(name));
+  }
+
+  // Tracciamento progressivo (archi di compasso e tratti a righello) dentro la finestra [from, to] del passo.
+  function applyAnim(stage, progress) {
+    Object.entries(activity.anim || {}).forEach(([name, cfg]) => {
+      if (!exists(name)) return;
+      const index = groupIndexOf(name);
+      let value = 0;
+      if (index < stage) value = 1;
+      else if (index === stage) {
+        const span = Math.max(0.001, cfg.to - cfg.from);
+        value = Math.max(0, Math.min(1, (progress - cfg.from) / span));
+      }
+      if (exists(cfg.param)) api.setValue(cfg.param, value);
+      api.setVisible(name, value > 0);
+    });
+  }
+
+  // Punti ed etichette che compaiono in un momento preciso del passo.
+  function applyAppearAt(stage, progress) {
+    Object.entries(activity.appearAt || {}).forEach(([name, at]) => {
+      if (!exists(name) || groupIndexOf(name) !== stage) return;
+      api.setVisible(name, progress >= at);
+    });
   }
 
   function applyStepBuildSequence(stage, progress) {
@@ -681,7 +743,7 @@
       preventFocus: true,
       scaleContainerClass: "ggb-frame",
       autoHeight: true,
-      allowUpscale: false,
+      allowUpscale: limMode,
       borderColor: "#dbe3ec",
       borderRadius: 14,
     }, true);

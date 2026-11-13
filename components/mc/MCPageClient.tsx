@@ -47,6 +47,7 @@ import { ResourcesPanel, type ResourcesSummary } from "@/components/mc/Resources
 import ProfessioneCard from "@/components/mc/ProfessioneCard";
 import GeoGebraAngleBisectorEmbed from "@/components/mc/GeoGebraAngleBisectorEmbed";
 import GeoGebraConstructionEmbed from "@/components/mc/GeoGebraConstructionEmbed";
+import { COSTRUZIONI_GEOGEBRA } from "@/lib/geogebra-costruzioni";
 import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
 import GeoGebraOrthographicProjectionEmbed from "@/components/mc/GeoGebraOrthographicProjectionEmbed";
 import LabInterattivoEmbed from "@/components/mc/LabInterattivoEmbed";
@@ -105,9 +106,17 @@ type GeoGebraConstructionConfig = {
 };
 
 function getGeoGebraConstruction(title: string): GeoGebraConstructionConfig | null {
+  // Costruzioni 9+ : definite nel registro lib/geogebra-costruzioni.ts (tavole.js)
+  const numero = Number(title.match(/Costruzione\s+(\d+)\b/i)?.[1] ?? 0);
+  if (numero >= 9) {
+    const c = COSTRUZIONI_GEOGEBRA.find((x) => x.numero === numero && !x.href);
+    return c
+      ? { activity: c.slug, title: c.titolo, iframeTitle: `Animazione GeoGebra: ${c.titolo.toLowerCase()}` }
+      : null;
+  }
   const constructions: Array<[RegExp, GeoGebraConstructionConfig]> = [
     [
-      /Costruzione\s+3/i,
+      /Costruzione\s+3\b/i,
       {
         activity: "divisione-segmento",
         title: "Dividi un segmento in 5 parti uguali",
@@ -115,7 +124,7 @@ function getGeoGebraConstruction(title: string): GeoGebraConstructionConfig | nu
       },
     ],
     [
-      /Costruzione\s+4/i,
+      /Costruzione\s+4\b/i,
       {
         activity: "perpendicolare-punto-esterno",
         title: "Costruisci la perpendicolare da un punto esterno",
@@ -123,7 +132,7 @@ function getGeoGebraConstruction(title: string): GeoGebraConstructionConfig | nu
       },
     ],
     [
-      /Costruzione\s+5/i,
+      /Costruzione\s+5\b/i,
       {
         activity: "triangolo-equilatero",
         title: "Costruisci il triangolo equilatero dato il lato",
@@ -131,7 +140,7 @@ function getGeoGebraConstruction(title: string): GeoGebraConstructionConfig | nu
       },
     ],
     [
-      /Costruzione\s+6/i,
+      /Costruzione\s+6\b/i,
       {
         activity: "esagono-inscritto",
         title: "Costruisci l’esagono regolare inscritto",
@@ -139,7 +148,7 @@ function getGeoGebraConstruction(title: string): GeoGebraConstructionConfig | nu
       },
     ],
     [
-      /Costruzione\s+7/i,
+      /Costruzione\s+7\b/i,
       {
         activity: "quadrato-dato-lato",
         title: "Costruisci il quadrato dato il lato",
@@ -147,7 +156,7 @@ function getGeoGebraConstruction(title: string): GeoGebraConstructionConfig | nu
       },
     ],
     [
-      /Costruzione\s+8/i,
+      /Costruzione\s+8\b/i,
       {
         activity: "pentagono-inscritto",
         title: "Costruisci il pentagono regolare inscritto",
@@ -798,11 +807,11 @@ function ZonePanel({
     const items: AccordionItem[] = approfondimenti.map((ai) => {
       const hasPerpendicularLab =
         mc.id === "MC-DIS-1-01" &&
-        /Costruzione\s+1/i.test(ai.title) &&
+        /Costruzione\s+1\b/i.test(ai.title) &&
         /Perpendicolare\s+a\s+una\s+retta/i.test(ai.title);
       const hasAngleBisectorLab =
         mc.id === "MC-DIS-1-01" &&
-        /Costruzione\s+2/i.test(ai.title) &&
+        /Costruzione\s+2\b/i.test(ai.title) &&
         /Bisettrice\s+di\s+un\s+angolo/i.test(ai.title);
       const geogebraConstruction = getGeoGebraConstruction(ai.title);
       const paragraphImage =
@@ -1283,8 +1292,8 @@ export function MCPageClient({
       (mc.id === "MC-DIS-1-01"
         ? esploraParagraphs.filter(
             (p) =>
-              (/Costruzione\s+1/i.test(p.title) && /Perpendicolare\s+a\s+una\s+retta/i.test(p.title)) ||
-              (/Costruzione\s+2/i.test(p.title) && /Bisettrice\s+di\s+un\s+angolo/i.test(p.title)) ||
+              (/Costruzione\s+1\b/i.test(p.title) && /Perpendicolare\s+a\s+una\s+retta/i.test(p.title)) ||
+              (/Costruzione\s+2\b/i.test(p.title) && /Bisettrice\s+di\s+un\s+angolo/i.test(p.title)) ||
               !!getGeoGebraConstruction(p.title),
           ).length
         : 0) + (mc.id === "MC-DIS-2-01" ? 1 : 0);

@@ -417,3 +417,22 @@ h1 {
     justify-self: center;
   }
 }
+
+/* ── Modalità LIM (?lim=1): schermo intero, testo e pulsanti grandi ───────── */
+html.lim { font-size: 20px; }
+html.lim .activity { width: calc(100% - 32px); max-width: none; padding: 12px 0 16px; }
+html.lim .activity__header { padding: 14px 20px; }
+html.lim .subtitle,
+html.lim .level-badge,
+html.lim .activity__footer p { display: none; }
+html.lim .workspace { grid-template-columns: minmax(0, 1fr) minmax(320px, 0.36fr); }
+html.lim #step-description { font-size: 1.12rem; line-height: 1.55; }
+html.lim .tip { font-size: 0.95rem; }
+html.lim .equality { font-size: 1.05rem; }
+html.lim .step-nav button { min-height: 56px; font-size: 0.9rem; }
+html.lim .protocol-control,
+html.lim .protocol-button { min-height: 52px; font-size: 1rem; }
+html.lim .protocol-control { width: 60px; }
+html.lim .protocol-control--play { min-width: 130px; }
+html.lim .protocol-speed input { width: 76px; min-height: 46px; font-size: 0.95rem; }
+html.lim .proof-panel p:last-child { font-size: 1.05rem; }
