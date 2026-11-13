@@ -38,6 +38,26 @@
     servizio: { color: [194, 65, 12], pointSize: 4 },
     asse: { color: [71, 85, 105], thickness: 3, lineStyle: 4 },       // tratto-punto
   };
+  // ── Due modalità: «a colori» (semplificata) e «foglio tecnico» (avanzata, ?modo=tecnico) ──
+  // Stessa costruzione e stessi testi; cambiano il foglio (squadratura, carta quadrettata da 1 cm, cartiglio,
+  // niente piani colorati) e i tratti (nero e grigio, spessori da disegno tecnico).
+  const PARAMETRI = new URLSearchParams(window.location.search);
+  const TECNICO = PARAMETRI.get("modo") === "tecnico";
+  const NERO = [17, 24, 39];
+  const MATITA = [71, 85, 105];
+  if (TECNICO) {
+    Object.assign(STILI, {
+      proiezione: { color: MATITA, thickness: 1, lineStyle: 0 },
+      figura: { color: NERO, thickness: 3, lineStyle: 0 },
+      misura: { color: MATITA, thickness: 2, lineStyle: 0 },
+      tacca: { color: MATITA, thickness: 2, lineStyle: 0 },
+      servizio: { color: NERO, pointSize: 3 },
+      asse: { color: NERO, thickness: 2, lineStyle: 4 },
+      compasso: { color: MATITA, thickness: 2, lineStyle: 0 },
+    });
+  }
+  const ROSSO_NOMI = TECNICO ? NERO : [239, 68, 68];
+
   const PIANI = {
     PV: { colore: [147, 197, 253], testo: [29, 78, 216] },
     PL: { colore: [249, 168, 212], testo: [190, 24, 93] },
@@ -52,11 +72,12 @@
   function creaFoglio(meta, limiti, costruisci) {
     const { sinistra, destra, alto, basso } = limiti;
     return creaTavola({
-      level: "I",
-      appletHeight: 660,
-      fontSize: 20,
-      coord: [-sinistra - 1.1, destra + 0.6, -basso - 0.6, alto + 0.6],
+      level: TECNICO ? "A" : "I",
+      appletHeight: TECNICO ? 700 : 660,
+      fontSize: TECNICO ? 18 : 20,
+      coord: [-sinistra - 1.1, destra + 0.6, -basso - (TECNICO ? 2.3 : 0.6), alto + 0.6],
       ...meta,
+      ...(TECNICO ? { filename: meta.filename.replace(/\.ggb$/, "_foglio-tecnico.ggb") } : {}),
     }, (k, t) => {
       t.areas = [];
       t.styles = {};
@@ -87,6 +108,7 @@
         },
         /** I tre piani colorati. Con `daPasso` compaiono solo da quel passo in poi (tavola 1); altrimenti ci sono sempre. */
         piani(daPasso) {
+          if (TECNICO) return;                                   // sul foglio tecnico i piani non si colorano
           const area = (nome, vertici, piano) => {
             t.areas.push({ name: nome, points: vertici.map(xy), ...(daPasso === undefined ? {} : { step: daPasso }) });
             stile(nome, { color: PIANI[piano].colore, filling: 0.3 });   // non entra nei passi: lo gestisce il motore
@@ -110,6 +132,12 @@
           return registra("lineAsse");
         },
         nomiPiani(quando) {
+          if (TECNICO) {
+            f.scritta("PV", "PV · piano verticale", [-sinistra + 0.3, alto - 0.8], MATITA, quando);
+            f.scritta("PL", "PL · piano laterale", [0.3, alto - 0.8], MATITA, quando);
+            f.scritta("PO", "PO · piano orizzontale", [-sinistra + 0.3, -basso + 0.3], MATITA, quando);
+            return;
+          }
           f.scritta("PV", "PV", [-sinistra + 0.3, alto - 0.8], PIANI.PV.testo, quando);
           f.scritta("PL", "PL", [destra - 1.1, alto - 0.8], PIANI.PL.testo, quando);
           f.scritta("PO", "PO", [-sinistra + 0.3, -basso + 0.3], PIANI.PO.testo, quando);
@@ -139,11 +167,13 @@
         /** Circonferenza tracciata con il compasso: un giro intero, partendo dal punto più a destra. */
         cerchio(nome, centro, raggio, finestra) {
           k.arco(`arcC${nome}`, centro, raggio, 0, 360, finestra);
+          if (TECNICO) stile(`arcC${nome}`, STILI.compasso);
           return registra(`arcC${nome}`);
         },
         /** Archetto di compasso con centro in `centro` che passa per `per`. */
         archetto(nome, centro, per, mezza, finestra) {
           k.archetto(`arcA${nome}`, centro, per, mezza, finestra);
+          if (TECNICO) stile(`arcA${nome}`, STILI.compasso);
           return registra(`arcA${nome}`);
         },
         /** Ripasso finale di una circonferenza. Compare a `quando` (0–1). */
@@ -159,7 +189,8 @@
           t.commands.push(haApici(testo)
             ? `Testo${nome}=Text("${inLatex(testo)}",${xy(p)},true,true)`
             : `Testo${nome}=Text("${testo}",${xy(p)})`);
-          stile(`Testo${nome}`, { color: colore || INCHIOSTRO });
+          // sul foglio tecnico le scritte sono tutte a matita: nere quelle del cartiglio e dei nomi, grigie le altre
+          stile(`Testo${nome}`, { color: TECNICO ? (colore === NERO || !colore ? NERO : MATITA) : (colore || INCHIOSTRO) });
           if (quando !== undefined) k.compare(`Testo${nome}`, quando);
           return registra(`Testo${nome}`);
         },
@@ -207,6 +238,7 @@
         /** Arco di riporto: centro O, dal punto (0, −raggio) sull'asse al punto (raggio, 0) sulla LT. */
         riporto(nome, raggio, finestra) {
           k.arco(`arcR${nome}`, O, raggio, 270, 90, finestra);
+          if (TECNICO) stile(`arcR${nome}`, STILI.compasso);
           return registra(`arcR${nome}`);
         },
         /**
@@ -221,9 +253,10 @@
           k.punto(nome, p, dove ? undefined : etichetta);
           if (quando !== undefined) k.compare(nome, quando);
           registra(nome);
+          if (TECNICO) stile(nome, { color: NERO, pointSize: 3 });
           if (dove) {
             stile(nome, { label: false });
-            f.scritta(`Nome${nome}`, etichetta || nome, [p[0] + dove[0], p[1] + dove[1]], [239, 68, 68], quando);
+            f.scritta(`Nome${nome}`, etichetta || nome, [p[0] + dove[0], p[1] + dove[1]], ROSSO_NOMI, quando);
           }
           return nome;
         },
@@ -256,7 +289,44 @@
         },
       };
 
+      // Foglio tecnico: carta quadrettata da 1 cm, squadratura e cartiglio. Entrano nel primo passo e restano sempre.
+      if (TECNICO) {
+        const riga = (nome, a, b, s) => { k.seg(nome, a, b); stile(nome, s); registra(nome); };
+        const fine = { color: [219, 228, 238], thickness: 1, lineStyle: 0 };
+        const marcata = { color: [176, 190, 208], thickness: 1, lineStyle: 0 };
+        for (let x = -Math.floor(sinistra); x <= Math.floor(destra); x += 1) {
+          if (x !== 0) riga(`lineGv${x < 0 ? "m" : "p"}${Math.abs(x)}`, [x, -basso], [x, alto], x % 5 === 0 ? marcata : fine);
+        }
+        for (let y = -Math.floor(basso); y <= Math.floor(alto); y += 1) {
+          if (y !== 0) riga(`lineGo${y < 0 ? "m" : "p"}${Math.abs(y)}`, [-sinistra, y], [destra, y], y % 5 === 0 ? marcata : fine);
+        }
+        const telaio = { color: NERO, thickness: 5, lineStyle: 0 };
+        const giu = -basso - 1.7;
+        const v = [[-sinistra, giu], [destra, giu], [destra, alto], [-sinistra, alto]];
+        v.forEach((p, i) => riga(`lineSq${"ABCD"[i]}`, p, v[(i + 1) % 4], telaio));
+        riga("lineSqCartiglio", [-sinistra, -basso], [destra, -basso], { color: NERO, thickness: 3, lineStyle: 0 });
+        const largo = sinistra + destra;
+        const x1 = -sinistra + largo * 0.45, x2 = -sinistra + largo * 0.71;
+        riga("lineSqUno", [x1, giu], [x1, -basso], { color: NERO, thickness: 2, lineStyle: 0 });
+        riga("lineSqDue", [x2, giu], [x2, -basso], { color: NERO, thickness: 2, lineStyle: 0 });
+        const numero = (meta.eyebrow.match(/Tavola \d+/) || ["Tavola"])[0];
+        f.scritta("CartA", "ProfTecnologIA · MC-DIS-2-01", [-sinistra + 0.3, -basso - 0.75], NERO);
+        f.scritta("CartB", "Proiezioni ortogonali", [-sinistra + 0.3, -basso - 1.45], MATITA);
+        f.scritta("CartC", numero, [x1 + 0.3, -basso - 0.75], NERO);
+        f.scritta("CartD", "Scala 1:1 · cm", [x1 + 0.3, -basso - 1.45], MATITA);
+        f.scritta("CartE", "Alunno ............", [x2 + 0.3, -basso - 0.75], MATITA);
+        f.scritta("CartF", "Classe ..... Data .....", [x2 + 0.3, -basso - 1.45], MATITA);
+      }
+
       costruisci(f, k);
+
+      // Foglio tecnico: anche i segni di compasso creati direttamente con `k` (tavola 6) diventano a matita.
+      if (TECNICO) {
+        t.commands.forEach((c) => {
+          const nome = c.split("=")[0];
+          if (/^arc/.test(nome) && !t.styles[nome]) stile(nome, STILI.compasso);
+        });
+      }
     });
   }
 
@@ -1361,4 +1431,30 @@
     f.nascosto("PLn", [p1, sp], [p2, sp], r[15]);
     f.passo();
   });
+
+  // ── Pulsante «Foglio tecnico» / «Foglio a colori»: ricarica la stessa tavola nell'altra modalità ──
+  if ((PARAMETRI.get("activity") || "").startsWith("po-")) {
+    if (TECNICO) document.documentElement.classList.add("foglio-tecnico");
+    const pulsante = (classe) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = classe;
+      b.textContent = TECNICO ? "Foglio a colori" : "Foglio tecnico";
+      b.title = TECNICO ? "Torna alla tavola con i piani colorati" : "Apri la stessa tavola come foglio da disegno tecnico";
+      b.addEventListener("click", () => {
+        const q = new URLSearchParams(window.location.search);
+        if (TECNICO) q.delete("modo"); else q.set("modo", "tecnico");
+        window.location.search = q.toString();
+      });
+      return b;
+    };
+    const ricomincia = document.getElementById("reset-button");
+    if (ricomincia) ricomincia.parentNode.insertBefore(pulsante("button button--ghost"), ricomincia);
+    const livello = document.querySelector(".level-badge");
+    if (livello) {
+      const b = pulsante("button button--ghost");
+      b.style.marginLeft = "10px";
+      livello.insertAdjacentElement("afterend", b);
+    }
+  }
 })();
