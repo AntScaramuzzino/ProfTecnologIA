@@ -518,6 +518,35 @@ a, button {
   display: none;
 }
 
+/* ── Pagina MC: colonna laterale (assistente AI, badge, scheda) ──
+   Da desktop la colonna segue lo scorrimento e si può nascondere: lo stato è in
+   <html data-mc-rail="off"> (components/mc/MCRailToggle.tsx). A colonna nascosta il contenuto
+   usa tutta la larghezza e la scheda passa in fondo alla pagina, come su telefono.
+   Fuori da @layer per vincere sulle utility di Tailwind. */
+.mc-rail-show {
+  display: none;
+}
+@media (min-width: 64rem) {
+  html[data-mc-rail="off"] .mc-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  html[data-mc-rail="off"] .mc-rail {
+    display: none;
+  }
+  html[data-mc-rail="off"] .mc-rail-show {
+    display: inline-flex;
+  }
+  html[data-mc-rail="off"] .mc-info-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    align-items: start;
+    gap: 0.75rem;
+  }
+  html[data-mc-rail="off"] .mc-info-bottom > * {
+    margin-block: 0;
+  }
+}
+
 /* Mobile: testo di lettura 17px, interlinea 1.7 (in fondo per prevalere su .reading-flow) */
 @media (max-width: 47.99rem) {
   .reading-flow {

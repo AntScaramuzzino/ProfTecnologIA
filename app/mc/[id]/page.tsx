@@ -5,6 +5,7 @@ import MCCard from "@/components/MCCard";
 import MCVisual from "@/components/MCVisual";
 import Breadcrumb from "@/components/Breadcrumb";
 import { MCPageClient } from "@/components/mc/MCPageClient";
+import MCRailToggle from "@/components/mc/MCRailToggle";
 import { AREA_META, getAllMCs, getMCById, getPrerequisiteChain } from "@/lib/mc-loader";
 import {
   getMCTextContent,
@@ -24,6 +25,8 @@ import { getSdgBadge, normalizeSdgList } from "@/lib/sdg-badges";
 interface Props {
   params: Promise<{ id: string }>;
 }
+
+const ASSISTENTE_URL = "https://chatgpt.com/g/g-r8SUrcWtt-proftecnologia";
 
 export async function generateStaticParams() {
   return getAllMCs().map((mc) => ({ id: mc.id }));
@@ -51,6 +54,9 @@ export default async function MCPage({ params }: Props) {
   if (!mc) notFound();
 
   const area = AREA_META[mc.area];
+  const frameworkKeys = Object.entries(mc.frameworks)
+    .filter(([, fw]) => fw)
+    .map(([key]) => key);
   const visuals = getVisualAssets(mc.id);
   const primaryVisual = visuals[0] ?? null;
   const text = getMCTextContent(mc.id);
@@ -128,7 +134,15 @@ export default async function MCPage({ params }: Props) {
       </section>
 
       {/* ── Layout principale: MCPageClient (navigator + contenuto) + aside ── */}
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-0 px-0 sm:gap-6 sm:px-6 sm:pb-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-8">
+      {/* Colonna laterale nascosta dall'utente: lo stato salvato va applicato prima del primo disegno
+          (components/mc/MCRailToggle.tsx; regole in globals.css, «Pagina MC: colonna laterale») */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html:
+            'try{if(localStorage.getItem("proftec-mc-rail")==="off")document.documentElement.setAttribute("data-mc-rail","off")}catch(e){}',
+        }}
+      />
+      <div className="mc-layout mx-auto grid max-w-7xl grid-cols-1 gap-0 px-0 sm:gap-6 sm:px-6 sm:pb-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-start lg:gap-8">
 
         {/* Colonna sinistra: MCPageClient con navigator a 5 tab */}
         {/* [overflow:clip] instead of overflow-hidden: clips visually (preserves rounded corners)
@@ -154,8 +168,17 @@ export default async function MCPage({ params }: Props) {
           />
         </div>
 
-        {/* Aside destra */}
-        <aside className="hidden min-w-0 space-y-5 lg:block">
+        {/* Aside destra — compatta e sticky: segue lo scorrimento, così sulle pagine lunghe la colonna
+            non resta vuota. Si può nascondere (MCRailToggle): il contenuto usa allora tutta la larghezza.
+            top-[4.5rem] = SiteHeader sticky (≈56 px) + respiro; oltre l'altezza della finestra scorre al suo interno. */}
+        <aside
+          aria-label="Assistente AI e scheda della micro-competenza"
+          className="mc-rail hidden min-w-0 space-y-4 lg:sticky lg:top-[4.5rem] lg:-mx-1 lg:block lg:max-h-[calc(100dvh-5.5rem)] lg:overflow-y-auto lg:overscroll-contain lg:px-1 lg:pb-1 lg:[scrollbar-width:thin]"
+        >
+          {/* mb-1.5 al posto dei 16 px di space-y-4: il pulsante resta vicino alla prima card */}
+          <div className="mb-1.5 flex">
+            <MCRailToggle action="hide" />
+          </div>
 
           {/* QR Assistente AI */}
           <section className="overflow-hidden rounded-lg border border-emerald-200 bg-white shadow-sm">
@@ -166,9 +189,9 @@ export default async function MCPage({ params }: Props) {
               <span className="text-base">🤖</span>
               <p className="text-sm font-black text-slate-700">Chiedi all&apos;Assistente AI</p>
             </div>
-            <div className="flex flex-col items-center gap-3 px-4 py-4">
+            <div className="flex flex-col items-center gap-2 px-4 py-3">
               <a
-                href="https://chatgpt.com/g/g-r8SUrcWtt-proftecnologia"
+                href={ASSISTENTE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block transition-opacity hover:opacity-80"
@@ -178,8 +201,8 @@ export default async function MCPage({ params }: Props) {
                 <img
                   src="/assets/qr-proftecnologia.webp"
                   alt="QR Code ProfTecnologIA Assistant"
-                  width={180}
-                  height={180}
+                  width={124}
+                  height={124}
                   className="rounded-lg"
                 />
               </a>
@@ -192,7 +215,7 @@ export default async function MCPage({ params }: Props) {
                 </p>
               </div>
               <a
-                href="https://chatgpt.com/g/g-r8SUrcWtt-proftecnologia"
+                href={ASSISTENTE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full rounded-lg border border-emerald-300 bg-emerald-50 px-3 py-2 text-center text-xs font-black text-emerald-800 transition-colors hover:bg-emerald-100"
@@ -233,9 +256,9 @@ export default async function MCPage({ params }: Props) {
             </section>
           )}
 
-          {/* Prerequisiti — in cima all'aside per rendere visibile il percorso */}
+          {/* Prerequisiti — aperti, per rendere visibile il percorso */}
           {prereqs.length > 0 && (
-            <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
+            <section className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
               <p className="text-sm font-black text-slate-500">Prerequisiti</p>
               <div className="mt-3 space-y-2">
                 {prereqs.map((item) => (
@@ -253,60 +276,85 @@ export default async function MCPage({ params }: Props) {
             </section>
           )}
 
-          {/* Framework */}
-          <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-sm font-black text-slate-500">Framework</p>
-            <div className="mt-4 space-y-3">
-              {Object.entries(mc.frameworks).map(([key, fw]) =>
-                fw ? (
-                  <div key={key} className="rounded-lg bg-slate-50 p-3">
-                    <div className="mb-1 font-mono text-xs font-black text-slate-500">{key}</div>
-                    <p className="text-sm font-semibold leading-6 text-slate-800">{fw.traguardo ?? fw.ref}</p>
-                    {fw.nota && <p className="mt-1 text-xs leading-5 text-slate-500">{fw.nota}</p>}
-                  </div>
-                ) : null,
-              )}
-            </div>
-          </section>
-
-          {/* Tag */}
-          {mc.tags?.length > 0 && (
-            <section className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm">
-              <p className="text-sm font-black text-slate-500">Tag</p>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {mc.tags.map((tag) => (
-                  <span key={tag} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </section>
-          )}
-
-          {/* Asset app previsti — collassato (info tecniche per l'autore) */}
-          <section className="rounded-lg border border-slate-200 bg-white shadow-sm">
+          {/* Scheda della micro-competenza: Framework, Tag e asset previsti, chiusi finché non servono
+              (aperti porterebbero la colonna oltre l'altezza della finestra) */}
+          <section
+            aria-label="Scheda della micro-competenza"
+            className="divide-y divide-slate-100 rounded-lg border border-slate-200 bg-white shadow-sm"
+          >
             <details className="group">
-              <summary className="flex cursor-pointer select-none items-center justify-between px-5 py-3 text-sm font-black text-slate-400 transition-colors hover:text-slate-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
-                <span>Asset app previsti</span>
-                <svg className="h-3.5 w-3.5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
+              <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-4 py-3 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
+                <span className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
+                  <span className="text-sm font-black text-slate-600">Framework</span>
+                  {frameworkKeys.map((key) => (
+                    <span key={key} className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500">
+                      {key}
+                    </span>
+                  ))}
+                </span>
+                <RailChevron />
               </summary>
-              <div className="border-t border-slate-100 px-5 pb-5 pt-4">
-                <div className="space-y-3">
-                  <AssetBox title="Quiz" body={mc.outputApp.quiz} />
-                  <AssetBox title="Microlearning" body={mc.outputApp.microlearning} />
-                  <AssetBox title="Visual" body={mc.outputApp.visual} />
+              <div className="space-y-3 border-t border-slate-100 px-4 pb-4 pt-3">
+                {Object.entries(mc.frameworks).map(([key, fw]) =>
+                  fw ? (
+                    <div key={key} className="rounded-lg bg-slate-50 p-3">
+                      <div className="mb-1 font-mono text-xs font-black text-slate-500">{key}</div>
+                      <p className="text-sm font-semibold leading-6 text-slate-800">{fw.traguardo ?? fw.ref}</p>
+                      {fw.nota && <p className="mt-1 text-xs leading-5 text-slate-500">{fw.nota}</p>}
+                    </div>
+                  ) : null,
+                )}
+              </div>
+            </details>
+
+            {mc.tags?.length > 0 && (
+              <details className="group">
+                <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-4 py-3 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
+                  <span className="text-sm font-black text-slate-600">
+                    Tag <span className="font-semibold text-slate-400">({mc.tags.length})</span>
+                  </span>
+                  <RailChevron />
+                </summary>
+                <div className="flex flex-wrap gap-2 border-t border-slate-100 px-4 pb-4 pt-3">
+                  {mc.tags.map((tag) => (
+                    <span key={tag} className="rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600">
+                      {tag}
+                    </span>
+                  ))}
                 </div>
+              </details>
+            )}
+
+            {/* Asset app previsti — info tecniche per l'autore */}
+            <details className="group">
+              <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-4 py-3 text-sm font-black text-slate-400 transition-colors hover:bg-slate-50 hover:text-slate-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
+                <span>Asset app previsti</span>
+                <RailChevron />
+              </summary>
+              <div className="space-y-3 border-t border-slate-100 px-4 pb-4 pt-3">
+                <AssetBox title="Quiz" body={mc.outputApp.quiz} />
+                <AssetBox title="Microlearning" body={mc.outputApp.microlearning} />
+                <AssetBox title="Visual" body={mc.outputApp.visual} />
               </div>
             </details>
           </section>
         </aside>
       </div>
 
-      {/* ── Panel mobile: Prerequisiti / Framework / Tag (P3.5) ── */}
-      {/* Visibile solo su schermi < lg dove l'aside destra è hidden */}
-      <div className="block lg:hidden mx-auto max-w-7xl px-4 sm:px-6 pb-6 space-y-2">
+      {/* ── Panel in fondo: Assistente AI / Prerequisiti / Framework / Tag (P3.5) ── */}
+      {/* Visibile dove l'aside destra non c'è: schermi < lg, e da desktop quando la colonna è stata nascosta
+          (.mc-info-bottom in globals.css) */}
+      <div className="mc-info-bottom block lg:hidden mx-auto max-w-7xl px-4 sm:px-6 pb-6 space-y-2">
+
+        <a
+          href={ASSISTENTE_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between gap-3 rounded-lg border border-emerald-200 bg-white px-4 py-3 text-sm font-black text-slate-700 shadow-sm transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+        >
+          <span>🤖 Chiedi all&apos;Assistente AI</span>
+          <span className="shrink-0 text-xs font-bold text-emerald-700">Apri →</span>
+        </a>
 
         {prereqs.length > 0 && (
           <details className="group rounded-lg border border-slate-200 bg-white shadow-sm">
@@ -411,6 +459,14 @@ export default async function MCPage({ params }: Props) {
         </p>
       </div>
     </main>
+  );
+}
+
+function RailChevron() {
+  return (
+    <svg className="h-3.5 w-3.5 shrink-0 text-slate-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+    </svg>
   );
 }
 

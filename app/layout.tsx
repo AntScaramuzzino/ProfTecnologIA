@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="it" className={`h-full antialiased ${atkinson.variable}`}>
+    // suppressHydrationWarning: prima dell'idratazione uno script può aggiungere a <html> l'attributo
+    // data-mc-rail (colonna laterale delle pagine MC nascosta dall'utente, components/mc/MCRailToggle.tsx)
+    <html lang="it" className={`h-full antialiased ${atkinson.variable}`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans">
         {/* Skip link — WCAG 2.4.1: consente agli utenti di tastiera di saltare la navigazione */}
         <a href="#main-content" className="skip-link">

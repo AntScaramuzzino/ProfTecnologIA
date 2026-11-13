@@ -51,6 +51,7 @@ import { COSTRUZIONI_GEOGEBRA } from "@/lib/geogebra-costruzioni";
 import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
 import GeoGebraOrthographicProjectionEmbed from "@/components/mc/GeoGebraOrthographicProjectionEmbed";
 import LabInterattivoEmbed from "@/components/mc/LabInterattivoEmbed";
+import MCRailToggle from "@/components/mc/MCRailToggle";
 import { getEscapeRoom, getLaboratorio } from "@/lib/laboratori";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives, EsploraImage } from "@/lib/content-loader";
 import type { MC } from "@/lib/mc-loader";
@@ -1337,7 +1338,13 @@ export function MCPageClient({
       )}
 
       {/* ── 5-zone navigator ── */}
-      <MCNavigator tabs={tabs} areaHex={areaHex} forcedActiveId={forcedTab} onForcedTabConsumed={() => setForcedTab(null)}>
+      <MCNavigator
+        tabs={tabs}
+        areaHex={areaHex}
+        forcedActiveId={forcedTab}
+        onForcedTabConsumed={() => setForcedTab(null)}
+        trailing={<MCRailToggle action="show" />}
+      >
         {(activeId) => (
           <ZonePanel
             tabId={activeId}
