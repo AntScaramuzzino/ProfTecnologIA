@@ -409,6 +409,7 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 | ✅ | Documenti architettura serviti in public/docs/ (INDICE + architettura v2.2) | ✅ Fatto — 2026-05-13 |
 | ✅ | Pagina architettura: link funzionanti a INDICE e architettura v2.2 | ✅ Fatto — 2026-05-13 |
 | ✅ | Tavole GeoGebra: 12 nuove costruzioni (9–20) per MC-DIS-1-01 | ✅ Fatto — 2026-11-13 · `public/embeds/geogebra/costruzioni-base/tavole.js` (vocabolario `creaTavola`) · registro `lib/geogebra-costruzioni.ts` · pagine `/laboratori/costruzioni/[slug]` · modalità LIM `?lim=1` · testo ESPLORA di MC-DIS-1-01 esteso con le Costruzioni 9–20 (anche in `08_TESTI`) · skill `tavole-geogebra` |
+| ✅ | Tavole GeoGebra: altre 13 costruzioni (21–33) e pagina dedicata `/costruzioni-geometriche` | ✅ Fatto — 2026-11-13 · 33 tavole in 6 gruppi con anteprime WebP in `public/assets/costruzioni/` · testo ESPLORA di MC-DIS-1-01 esteso fino alla Costruzione 33 · `/laboratori` rimanda alla pagina dedicata |
 | 2 | Deploy Netlify definitivo | ⬜ Da fare — guida pronta in `DEPLOY_NETLIFY.md` |
 | 2 | Stepper progress indicator mobile — P2.1 (`refactor-backlog.md`) | ⬜ Da fare |
 | ✅ | Keyboard navigation MCNavigator (ArrowLeft/ArrowRight/Home/End) — WCAG WAI-ARIA Tabs — P2.2 | ✅ Fatto — già implementato (2026-05-11) · confermato 2026-07-08 |
