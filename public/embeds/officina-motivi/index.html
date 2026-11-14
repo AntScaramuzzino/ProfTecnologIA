@@ -123,6 +123,8 @@ details summary{cursor:pointer;font-weight:700;font-size:.9rem;min-height:30px;c
   </div>
   <div class="sec"><h2 id="prmTitle">2 · Regola</h2><div id="prms"></div></div>
   <div class="sec"><h2>Colori</h2><div class="pals" id="pals"></div>
+    <div class="row" style="margin-top:8px"><button class="btn sm" id="bRndCol" title="Crea una tavolozza nuova">Colori casuali</button></div>
+    <div class="src" id="rndNote" style="margin-top:4px"></div>
     <div class="prm" style="margin-top:10px"><label>Reticolo (la carta su cui disegni)</label><select id="oGrid">
       <option value="auto">Adatto al motivo (consigliato)</option>
       <option value="q5">Quadretti da 5 mm</option>
@@ -810,7 +812,7 @@ FAM.tartan={
  src:`${SRC.my}, scheda «Tartan» (rielaborazione su foglio squadrato)`,
  gen(p,R,pal,single){
   const W=single?120:p.W*10,H=single?120:p.H*10,cs=pal.c,nm=pal.cn,items=[],guides=[];
-  const sett=[];for(let i=0;i<p.fasce;i++){const ci=Math.floor(R()*cs.length);sett.push({w:2*Math.max(1,Math.round((R()*R()*p.max+2)/2)),ci})}
+  const sett=[];for(let i=0;i<p.fasce;i++){let ci=Math.floor(R()*cs.length);if(i&&ci===sett[i-1].ci)ci=(ci+1)%cs.length;sett.push({w:2*Math.max(1,Math.round((R()*R()*p.max+2)/2)),ci})}
   sett[0].w=p.max;
   const full=sett.concat(sett.slice(1,-1).reverse()),rep=full.reduce((a,b)=>a+b.w,0);
   items.push({d:RECT(0,0,W,H),f:cs[full[0].ci],noline:true,bg:true});
@@ -1145,7 +1147,7 @@ function buildParams(){
 }
 function buildPals(){
  $('#pals').innerHTML=Object.entries(PALS).map(([k,v])=>`<button class="pal${k===S.pal?' on':''}" data-p="${k}" title="${v.n}">${v.c.slice(0,5).map(c=>`<i style="background:${c}"></i>`).join('')}</button>`).join('');
- document.querySelectorAll('.pal').forEach(b=>b.onclick=()=>{S.pal=b.dataset.p;buildPals();if(FAM[S.fam].editor)buildEditor();render()});
+ document.querySelectorAll('.pal').forEach(b=>b.onclick=()=>{S.pal=b.dataset.p;if(S.pal!=='casuale')$('#rndNote').textContent='';buildPals();if(FAM[S.fam].editor)buildEditor();render()});
 }
 const TOOLS=[[1,'Pieno'],[2,'Triangolo'],[3,'Triangolo'],[4,'Triangolo'],[5,'Triangolo'],[0,'Gomma']];
 function cellSvg(t,col){if(!t)return'';return`<svg viewBox="0 0 1 1" preserveAspectRatio="none"><path d="${P(TRI[t])}" fill="${col}"/></svg>`}
@@ -1176,11 +1178,11 @@ document.addEventListener('keydown',e=>{if(e.code==='Space'&&!/INPUT|TEXTAREA|SE
 $('#bFull').onclick=()=>{try{if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>toast('Schermo intero non disponibile qui'));else document.exitFullscreen()}catch(e){toast('Schermo intero non disponibile qui')}};
 
 /* ============ codice motivo ============ */
-function encode(){const o={f:S.fam,s:S.seed,c:S.pal,p:S.p[S.fam]};if(S.fam==='piastrelle')o.t=S.tile.map(c=>c.t+''+c.c).join('');return btoa(unescape(encodeURIComponent(JSON.stringify(o))))}
+function encode(){const o={f:S.fam,s:S.seed,c:S.pal,p:S.p[S.fam]};if(S.pal==='casuale')o.k=PALS.casuale.c;if(S.fam==='piastrelle')o.t=S.tile.map(c=>c.t+''+c.c).join('');return btoa(unescape(encodeURIComponent(JSON.stringify(o))))}
 $('#cCopy').onclick=async()=>{try{await navigator.clipboard.writeText($('#code').value);toast('Codice copiato')}catch(e){$('#code').select();toast('Seleziona e copia il codice')}};
 $('#cLoad').onclick=()=>{try{const o=JSON.parse(decodeURIComponent(escape(atob($('#code').value.trim()))));if(!FAM[o.f])throw 0;
- S.fam=o.f;S.seed=o.s;if(PALS[o.c])S.pal=o.c;S.p[o.f]=Object.assign(defaults(o.f),o.p);
- if(o.t)S.tile=o.t.match(/../g).map(x=>({t:+x[0],c:+x[1]}));buildFams();buildPals();buildParams();render();toast('Motivo riaperto')}catch(e){toast('Codice non valido')}};
+ S.fam=o.f;S.seed=o.s;if(Array.isArray(o.k)&&o.k.length>=3&&o.k.every(x=>/^#[0-9a-f]{6}$/i.test(x)))PALS.casuale=mkPal(o.k);if(PALS[o.c])S.pal=o.c;S.p[o.f]=Object.assign(defaults(o.f),o.p);
+ if(o.t)S.tile=o.t.match(/../g).map(x=>({t:+x[0],c:+x[1]}));$('#rndNote').textContent='';buildFams();buildPals();buildParams();render();toast('Motivo riaperto')}catch(e){toast('Codice non valido')}};
 
 /* ============ esportazione ============ */
 function svgFile(r){return`<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${f2(r.w2||r.wmm)}mm" height="${f2(r.h2||r.hmm)}mm" viewBox="${r.vb}">${r.inner}</svg>`}
@@ -1205,6 +1207,37 @@ $('#dPng').onclick=()=>{const svg=compFile(),img=new Image(),url=URL.createObjec
   cv.toBlob(b=>save(fname()+'.png',b),'image/png')};img.onerror=()=>toast('PNG non riuscito');img.src=url};
 $('#cSvg').onclick=async()=>{try{await navigator.clipboard.writeText(sheetFile());toast('SVG della tavola copiato')}catch(e){toast('Copia non consentita')}};
 function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>el.classList.remove('on'),2200)}
+
+
+/* ============ colori casuali (schemi del cerchio cromatico) ============ */
+function hsl2hex(h,s,l){h=((h%360)+360)%360;s/=100;l/=100;const k=n=>(n+h/30)%12,a=s*Math.min(l,1-l),f=n=>l-a*Math.max(-1,Math.min(k(n)-3,9-k(n),1));return'#'+[f(0),f(8),f(4)].map(v=>Math.round(v*255).toString(16).padStart(2,'0')).join('')}
+function hex2hsl(hex){const[r,g,b]=hex2rgb(hex).map(v=>v/255),mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2,d=mx-mn;let h=0,s=0;if(d){s=d/(1-Math.abs(2*l-1));h=mx===r?((g-b)/d)%6:mx===g?(b-r)/d+2:(r-g)/d+4;h*=60;if(h<0)h+=360}return[h,s*100,l*100]}
+function nomeBase(hex){const[h,s,l]=hex2hsl(hex);if(s<12)return'grigio';
+ return h<15||h>=345?'rosso':h<42?(l<40?'marrone':'arancione'):h<68?(l<38?'verde oliva':'giallo'):h<160?'verde':h<195?'turchese':h<255?'blu':h<290?'viola':(l>62?'rosa':'fucsia')}
+// Nomi per le istruzioni: colori con lo stesso nome si distinguono dal più scuro al più chiaro.
+function mkPal(cols){
+ const basi=cols.map(nomeBase),luce=cols.map(c=>hex2hsl(c)[2]),cn=cols.map((c,i)=>{
+  const gruppo=cols.map((_,j)=>j).filter(j=>basi[j]===basi[i]).sort((x,y)=>luce[x]-luce[y]),pos=gruppo.indexOf(i);
+  const scala={1:[luce[i]<36?' scuro':luce[i]>60?' chiaro':''],2:[' scuro',' chiaro'],3:[' scuro',' medio',' chiaro'],4:[' molto scuro',' scuro',' chiaro',' molto chiaro'],5:[' molto scuro',' scuro',' medio',' chiaro',' molto chiaro']}[gruppo.length];
+  return basi[i]+scala[pos]});
+ return{n:'Colori casuali',bg:'#ffffff',ink:'#1A1C24',c:cols,cn}}
+const SCHEMI=[
+ ['analoghi','colori vicini sul cerchio cromatico',[0,28,56,-28,84]],
+ ['complementari','due colori opposti sul cerchio cromatico e le loro sfumature',[0,180,18,198,-18]],
+ ['triade','tre colori alla stessa distanza sul cerchio cromatico',[0,120,240,30,150]],
+ ['complementari divisi','un colore e i due vicini del suo opposto',[0,150,210,20,170]],
+ ['tetrade','quattro colori a croce sul cerchio cromatico',[0,90,180,270,45]],
+ ['tono su tono','lo stesso colore dal più scuro al più chiaro',[0,0,0,0,0]]
+];
+function coloriCasuali(){
+ const [nome,desc,off]=SCHEMI[Math.floor(Math.random()*SCHEMI.length)],h0=Math.random()*360;
+ const luci=nome==='tono su tono'?[26,40,52,64,76]:[34,50,60,42,68].sort(()=>Math.random()-.5);
+ const cols=off.map((o,i)=>hsl2hex(h0+o+(nome==='tono su tono'?0:(Math.random()*12-6)),nome==='tono su tono'?70:62+Math.random()*24,luci[i]));
+ PALS.casuale=mkPal(cols);S.pal='casuale';
+ $('#rndNote').innerHTML=`Schema: <b>${nome}</b> (${desc}).`;
+ buildPals();if(FAM[S.fam].editor)buildEditor();render();
+}
+$('#bRndCol').onclick=coloriCasuali;
 
 buildFams();buildPals();buildParams();render();
 </script>
