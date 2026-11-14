@@ -5,6 +5,7 @@
  *   • le costruzioni geometriche (tavole 3–8 qui sotto, le altre in tavole.js);
  *   • le proiezioni ortogonali (tavole-po.js), che usano in più cinque campi della tavola:
  *     areas, styles, level, appletHeight, fontSize (cerca «tavole-po» in questo file e in activity.css).
+ *   • i motivi modulari (tavole-moduli.js) usano le aree «lista»: Polygon({…}) senza lati, visibili dal loro passo.
  * Chi modifica il motore non deve togliere quei punti: senza, le tavole di proiezioni perdono i piani
  * colorati, gli spigoli tratteggiati e il foglio alto. Dopo ogni modifica prova anche
  * index.html?activity=po-prisma-triangolare (al computer, sul telefono e con &lim=1).
@@ -439,6 +440,10 @@
       if (style.layer !== undefined) api.setLayer(name, style.layer);
       if (style.label !== undefined) api.setLabelVisible(name, style.label);
     });
+    // Aree «lista» (tavole-moduli.js): solo il colore, nessun bordo (anche sul telefono).
+    (activity.areas || []).forEach((area) => {
+      if (area.lista && exists(area.name)) api.setLineThickness(area.name, 0);
+    });
   }
 
   function setEqualScaleCoordSystem(bounds) {
@@ -525,7 +530,12 @@
     (activity.areas || []).forEach((area) => {
       if (area.step === undefined || !exists(area.name)) return;
       const style = (activity.styles || {})[area.name] || {};
-      api.setFilling(area.name, stage >= area.step ? (style.filling === undefined ? 0.3 : style.filling) : 0);
+      // Aree «lista» (tavole-moduli.js): poligoni senza lati, che compaiono a un momento del passo (area.at, 0–1).
+      const on = area.lista
+        ? stage > area.step || (stage === area.step && progress >= (area.at === undefined ? 0.12 : area.at))
+        : stage >= area.step;
+      api.setFilling(area.name, on ? (style.filling === undefined ? 0.3 : style.filling) : 0);
+      if (area.lista) api.setVisible(area.name, on);
     });
     applyCompassTraceEffect(stage, progress);
     applyStepBuildSequence(stage, progress);

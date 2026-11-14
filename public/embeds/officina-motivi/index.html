@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Officina dei motivi modulari</title>
+<meta name="robots" content="noindex">
+<style>
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(../lab/_fonts/atkinson-hyperlegible-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(../lab/_fonts/atkinson-hyperlegible-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url(../lab/_fonts/jetbrains-mono-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:700;font-display:swap;src:url(../lab/_fonts/jetbrains-mono-latin-700-normal.woff2) format('woff2')}
+</style>
+<style>
+/* Token dal design system ProfTecnologIA (laboratori del libro): brand navy, zona Laboratorio, area Disegno. */
+:root{
+  --bg:#F6F7FA; --surface:#FFFFFF; --surface-2:#EEF3FC; --fg:#1A1C24; --muted:#5A5F76; --line:#D8DAE8;
+  --brand:#1A2B4A; --lab:#00695C; --lab-bg:#E0F2F1; --area:#1A3A7A; --area-bg:#E8EFF9; --ko:#B42318;
+  --sans:'Atkinson Hyperlegible','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'JetBrains Mono','Fira Code',ui-monospace,monospace;
+  --r:10px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.45}
+button,select,input{font:inherit;color:inherit}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
+.app{display:grid;grid-template-columns:330px 1fr 340px;grid-template-rows:auto 1fr;height:100vh}
+header{grid-column:1/-1;display:flex;align-items:center;gap:14px;padding:12px 18px;border-bottom:2px solid var(--area);background:var(--surface)}
+header h1{font-size:1.5rem;font-weight:800;letter-spacing:-.01em;margin:4px 0 0;color:var(--brand);line-height:1.2}
+header .sub{color:var(--muted);font-size:.95rem}
+header .sp{flex:1}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--area-bg);color:var(--area)}
+.chip.lab{background:var(--lab-bg);color:var(--lab)}
+.btn{font-weight:700;font-size:15px;border:2px solid var(--lab);background:transparent;color:var(--lab);border-radius:8px;padding:8px 14px;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.btn:hover{background:var(--lab-bg)}
+.btn.pri{background:var(--lab);color:var(--surface)}
+.btn.pri:hover{filter:brightness(1.1);background:var(--lab)}
+.btn.sm{min-height:38px;padding:5px 12px;font-size:14px}
+.btn.lim{border-radius:999px;font-size:13px;min-height:36px;padding:4px 14px}
+aside{overflow:auto;padding:14px;border-right:1px solid var(--line)}
+aside.right{border-right:0;border-left:1px solid var(--line)}
+.sec{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px;margin-bottom:12px}
+.sec h2{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--lab);margin:0 0 10px}
+.fams{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fam{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 8px;text-align:left;cursor:pointer;font-size:.86rem;line-height:1.2;min-height:46px;display:flex;align-items:center;gap:7px;color:var(--fg)}
+.fam svg{flex:0 0 26px;color:var(--area)}
+.fam:hover{border-color:var(--area)}
+.fam.on{border-color:var(--area);background:var(--area-bg);color:var(--area);font-weight:700;box-shadow:inset 3px 0 0 var(--area)}
+.prm{margin-bottom:10px}
+.prm label{display:flex;justify-content:space-between;font-size:.9rem;font-weight:600;margin-bottom:4px}
+.prm label b{font-family:var(--mono);font-weight:700;font-size:.85rem;color:var(--lab);font-variant-numeric:tabular-nums}
+.prm input[type=range]{width:100%;accent-color:var(--lab);height:28px}
+.prm select{width:100%;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);min-height:40px}
+.chk{display:flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600;margin:6px 0;cursor:pointer}
+.chk input{width:20px;height:20px;accent-color:var(--lab)}
+.pals{display:flex;flex-wrap:wrap;gap:6px}
+.pal{border:2px solid transparent;border-radius:8px;padding:3px;cursor:pointer;background:var(--surface);display:flex;gap:2px}
+.pal.on{border-color:var(--lab)}
+.pal i{display:block;width:14px;height:22px;border-radius:3px}
+main{position:relative;display:flex;flex-direction:column;min-width:0}
+.tabs{display:flex;gap:6px;padding:8px 14px 0;border-bottom:1px solid var(--line);margin:0 14px}
+.tab{font-weight:700;font-size:15px;color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:10px 12px;cursor:pointer;margin-bottom:-1px;min-height:44px}
+.tab.on{color:var(--lab);border-bottom-color:var(--lab)}
+.stagewrap{position:relative;overflow:hidden;flex:1;margin:12px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);display:flex;min-height:0}
+#stage{position:absolute;inset:0;width:100%;height:100%;display:block}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:0 14px 12px}
+.dims{color:var(--muted);font-size:.88rem;margin-left:auto;font-family:var(--mono)}
+.steps{margin:0;padding-left:22px}
+.steps li{margin:0 0 8px;line-height:1.4}
+.steps li::marker{font-family:var(--mono);font-weight:700;color:var(--lab)}
+.src{font-size:.84rem;color:var(--muted);line-height:1.4}
+.ed{display:grid;grid-template-columns:repeat(8,1fr);gap:0;border:1px solid var(--muted);aspect-ratio:1;touch-action:none;user-select:none;background:#fff}
+.ed div{border:1px solid var(--line);position:relative}
+.ed svg{position:absolute;inset:0;width:100%;height:100%}
+.tools{display:flex;gap:4px;flex-wrap:wrap;margin:8px 0}
+.tool{width:42px;height:42px;border:1px solid var(--line);background:var(--surface);border-radius:8px;cursor:pointer;padding:5px}
+.tool.on{border-color:var(--lab);box-shadow:0 0 0 2px var(--lab-bg)}
+.sw{width:30px;height:30px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer}
+.sw.on{box-shadow:0 0 0 3px var(--lab)}
+.row{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.field{display:grid;grid-template-columns:70px 1fr;gap:6px;align-items:center;margin-bottom:6px;font-size:.88rem;font-weight:600}
+.field input{padding:6px 10px;border:1px solid var(--line);border-radius:8px;min-height:38px;background:var(--surface);font-weight:400}
+textarea{width:100%;font:12px/1.3 var(--mono);border:1px solid var(--line);border-radius:8px;padding:8px;min-height:60px;background:var(--surface);color:var(--fg)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--brand);color:#fff;font-weight:700;padding:10px 16px;border-radius:8px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:9}
+.toast.on{opacity:1}
+details summary{cursor:pointer;font-weight:700;font-size:.9rem;min-height:30px;color:var(--brand)}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+@media (max-width:1100px){
+  .app{grid-template-columns:1fr;grid-template-rows:auto auto 70vh auto;height:auto}
+  aside{border:0}
+  header{flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="8" fill="#1A3A7A"/><path d="M6 6h12v12H6zM22 22h12v12H22z" fill="#fff"/><path d="M22 6l12 12H22zM6 22l12 12H6z" fill="#5ED1C2"/></svg>
+  <div>
+    <div class="chips"><span class="chip">MC-DIS-1-01 · Disegno</span><span class="chip lab">Laboratorio</span></div>
+    <h1>Officina dei motivi modulari</h1>
+    <div class="sub">Progetta il modulo, ripetilo sul reticolo, ridisegnalo su carta</div>
+  </div>
+  <div class="sp"></div>
+  <button class="btn pri" id="bGen" title="Nuova variante (tasto spazio)">Genera una variante</button>
+  <button class="btn lim" id="bFull">Schermo intero (LIM)</button>
+</header>
+
+<aside>
+  <div class="sec"><h2>1 · Scegli il motivo</h2><div class="fams" id="fams"></div></div>
+  <div class="sec" id="edSec" hidden>
+    <h2>2 · Disegna il modulo 8 × 8</h2>
+    <div class="tools" id="tools"></div>
+    <div class="row" id="sws" style="margin-bottom:8px"></div>
+    <div class="ed" id="ed"></div>
+    <div class="row" style="margin-top:8px">
+      <button class="btn sm" id="edRnd">Modulo casuale</button>
+      <button class="btn sm" id="edClr">Pulisci</button>
+    </div>
+    <p class="src" style="margin:8px 0 0">Tocca un quadretto per dipingerlo. Ogni quadretto può essere pieno o tagliato dalla diagonale.</p>
+  </div>
+  <div class="sec"><h2 id="prmTitle">2 · Regola</h2><div id="prms"></div></div>
+  <div class="sec"><h2>Colori</h2><div class="pals" id="pals"></div>
+    <div class="prm" style="margin-top:10px"><label>Reticolo (la carta su cui disegni)</label><select id="oGrid">
+      <option value="auto">Adatto al motivo (consigliato)</option>
+      <option value="q5">Quadretti da 5 mm</option>
+      <option value="q10">Quadretti da 1 cm</option>
+      <option value="iso5">Isometrico (triangoli) da 5 mm</option>
+      <option value="iso10">Isometrico (triangoli) da 1 cm</option>
+      <option value="isoV5">Isometrico ruotato di 90° da 5 mm</option>
+      <option value="isoV10">Isometrico ruotato di 90° da 1 cm</option>
+      <option value="none">Nessun reticolo (foglio bianco)</option>
+    </select><div class="src" id="gridNote" style="margin-top:4px"></div></div>
+    <label class="chk"><input type="checkbox" id="oGuide" checked> Mostra le linee di costruzione</label>
+    <label class="chk"><input type="checkbox" id="oOutline"> Solo contorni (da ripassare e colorare)</label>
+  </div>
+</aside>
+
+<main>
+  <div class="tabs">
+    <button class="tab on" data-v="comp">Composizione</button>
+    <button class="tab" data-v="mod">Modulo quotato</button>
+    <button class="tab" data-v="sheet">Tavola A4</button>
+  </div>
+  <div class="stagewrap"><svg id="stage" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <div class="bar">
+    <button class="btn sm" id="dSvg">Scarica SVG</button>
+    <button class="btn sm" id="dPng">Scarica PNG</button>
+    <button class="btn sm pri" id="dSheet">Scarica la tavola A4</button>
+    <button class="btn sm" id="cSvg" hidden>Copia SVG</button>
+    <span class="dims" id="dims"></span>
+  </div>
+</main>
+
+<aside class="right">
+  <div class="sec"><h2>3 · Ridisegnalo su carta</h2>
+    <div id="mat" class="src" style="margin-bottom:8px"></div>
+    <ol class="steps" id="steps"></ol>
+  </div>
+  <div class="sec"><h2>Dal libro</h2><div id="src" class="src"></div></div>
+  <div class="sec">
+    <details><summary>Intestazione della tavola</summary>
+      <div style="margin-top:8px">
+      <div class="field"><span>Alunno</span><input id="hAl"></div>
+      <div class="field"><span>Classe</span><input id="hCl" placeholder="2ª B"></div>
+      <div class="field"><span>Data</span><input id="hDa"></div>
+      <div class="field"><span>Tavola n.</span><input id="hTv" placeholder="1"></div>
+      </div>
+    </details>
+  </div>
+  <div class="sec">
+    <details><summary>Codice del motivo (per ritrovarlo)</summary>
+      <p class="src">Copia il codice per conservare il motivo; incollalo qui per riaprirlo.</p>
+      <textarea id="code"></textarea>
+      <div class="row" style="margin-top:6px"><button class="btn sm" id="cCopy">Copia codice</button><button class="btn sm" id="cLoad">Apri codice</button></div>
+    </details>
+  </div>
+</aside>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+/* ============ utilità ============ */
+const $=s=>document.querySelector(s);
+const f2=n=>(Math.round(n*100)/100).toString();
+const P=pts=>'M'+pts.map(p=>f2(p[0])+' '+f2(p[1])).join('L')+'Z';
+const PL=pts=>'M'+pts.map(p=>f2(p[0])+' '+f2(p[1])).join('L');
+const CIRC=(x,y,r)=>`M${f2(x-r)} ${f2(y)}a${f2(r)} ${f2(r)} 0 1 0 ${f2(2*r)} 0a${f2(r)} ${f2(r)} 0 1 0 ${f2(-2*r)} 0Z`;
+const RECT=(x,y,w,h)=>P([[x,y],[x+w,y],[x+w,y+h],[x,y+h]]);
+const mid=(a,b)=>[(a[0]+b[0])/2,(a[1]+b[1])/2];
+const lerp=(a,b,t)=>[a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t];
+const cm=mm=>(Math.round(mm)/10).toLocaleString('it-IT');
+const mmr=v=>Math.round(v*2)/2;
+function rngFrom(seed){let a=seed>>>0;return()=>{a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const pick=(R,arr)=>arr[Math.floor(R()*arr.length)];
+function hex2rgb(h){h=h.replace('#','');if(h.length===3)h=h.split('').map(c=>c+c).join('');return[0,2,4].map(i=>parseInt(h.substr(i,2),16))}
+function mix(a,b,t){const A=hex2rgb(a),B=hex2rgb(b);return'#'+A.map((v,i)=>Math.round(v+(B[i]-v)*t).toString(16).padStart(2,'0')).join('')}
+function shuffle(R,a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(R()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+/* ============ tavolozze ============ */
+const PALS={
+ sito:{n:'ProfTecnologIA',bg:'#ffffff',ink:'#1A1C24',c:['#1A3A7A','#00695C','#C24010','#F2B705','#6A1B9A'],cn:['blu','verde petrolio','arancione','giallo','viola']},
+ matite:{n:'Matite colorate',bg:'#fffdf7',ink:'#1d1d1b',c:['#d7263d','#1b4f9c','#f2b705','#2e933c','#f46036','#7b2d8b'],cn:['rosso','blu','giallo','verde','arancione','viola']},
+ arapacis:{n:'Ara Pacis',bg:'#f3ece0',ink:'#3b2a1e',c:['#b5562f','#7a3b1d','#d9b48f','#5a6b4e','#e8d5b5'],cn:['terracotta','bruno','ocra chiara','verde salvia','avorio']},
+ cosmati:{n:'Cosmati',bg:'#efe8da',ink:'#2a1d17',c:['#8e1b1b','#2f5d3a','#c9a227','#f6f1e6','#1f1f1f'],cn:['rosso porfido','verde serpentino','oro','bianco marmo','nero']},
+ maiolica:{n:'Maiolica',bg:'#fbf7ee',ink:'#123a6b',c:['#1d4e9e','#f2b33d','#2a9d8f','#e76f51','#0b2545'],cn:['blu','giallo','turchese','arancio','blu notte']},
+ vasarely:{n:'Vasarely',bg:'#14213d',ink:'#14213d',c:['#e63946','#ffb703','#219ebc','#8338ec','#06d6a0','#fb5607'],cn:['rosso','giallo','azzurro','viola','verde acqua','arancione']},
+ natura:{n:'Natura',bg:'#f6f4ec',ink:'#22301f',c:['#3a5a40','#dda15e','#a3b18a','#bc6c25','#588157'],cn:['verde bosco','ocra','verde salvia','ruggine','verde']},
+ bn:{n:'Bianco e nero',bg:'#ffffff',ink:'#000000',c:['#111111','#8a8a8a','#cfcfcf'],cn:['nero','grigio','grigio chiaro']}
+};
+
+/* ============ trasformazioni delle piastrelle ============ */
+const DISP=[['tras','Traslazione (ripeti uguale)'],['rot','Rotazione a girandola'],['mir','Specchio (ribaltamenti)'],['alt','Alternata (ruota di 180°)'],['diag','Rotazione in diagonale']];
+const DISP_TXT={
+ tras:'Ripeti il modulo identico in ogni piastrella (simmetria traslatoria).',
+ rot:'A gruppi di 4 piastrelle ruota il modulo di 90° ogni volta, in senso orario: 0°, 90°, 180°, 270°.',
+ mir:'Ribalta il modulo a specchio: nelle colonne pari da destra a sinistra, nelle righe pari dall’alto in basso.',
+ alt:'Alterna a scacchiera il modulo dritto e il modulo ruotato di 180°.',
+ diag:'Ruota il modulo di 90° in più a ogni passo lungo la diagonale.'
+};
+function tileXf(disp,i,j,s,x0,y0){
+ let rot=0,fx=1,fy=1;
+ if(disp==='rot')rot=[[0,1],[3,2]][j%2][i%2];
+ if(disp==='mir'){fx=i%2?-1:1;fy=j%2?-1:1}
+ if(disp==='alt')rot=(i+j)%2?2:0;
+ if(disp==='diag')rot=(i+j)%4;
+ return p=>{let u=(p[0]-s/2)*fx,v=(p[1]-s/2)*fy;for(let k=0;k<rot;k++){const t=u;u=-v;v=t}return[x0+s/2+u,y0+s/2+v]};
+}
+
+/* ============ famiglie di motivi ============ */
+const SRC={
+ my:'Brunetto, Bruno, <i>MyTech Edizione Green</i> – Disegno (Le Monnier/Mondadori)',
+ cf:'<i>Come funziona il disegno</i>, schede di disegno geometrico',
+ tl:'Furci, Pozzi, Monti, <i>Techno logics</i> – Disegno (Raffaello)',
+ pin:'Pinotti, <i>GENTECH</i> – Tavole di disegno (Atlas)',
+ ew:'EduWiki Tecnologia, voce «Moduli, reticoli e disegno geometrico»'
+};
+const FAM={};
+
+/* --- A. Piastrellature (editor) --- */
+const TRI={1:[[0,0],[1,0],[1,1],[0,1]],2:[[0,0],[1,0],[0,1]],3:[[0,0],[1,0],[1,1]],4:[[1,0],[1,1],[0,1]],5:[[0,0],[1,1],[0,1]]};
+const MIRH={0:0,1:1,2:3,3:2,4:5,5:4}, MIRV={0:0,1:1,2:5,5:2,3:4,4:3};
+function randomTile(R,ncol,simm){
+ const cells=Array.from({length:64},()=>({t:0,c:0}));
+ const rc=()=>({t:pick(R,[0,0,1,1,2,3,4,5]),c:Math.floor(R()*ncol)});
+ if(simm==='quad'){
+  for(let y=0;y<4;y++)for(let x=0;x<4;x++){const a=rc();
+   cells[y*8+x]=a; cells[y*8+7-x]={t:MIRH[a.t],c:a.c};
+   cells[(7-y)*8+x]={t:MIRV[a.t],c:a.c}; cells[(7-y)*8+7-x]={t:MIRV[MIRH[a.t]],c:a.c};}
+ } else for(let i=0;i<64;i++)cells[i]=rc();
+ return cells;
+}
+FAM.piastrelle={
+ name:'Piastrellature',icon:'M2 2h10v10H2zM14 14h10v10H14zM14 2l10 10H14zM2 14l10 10H2z',
+ editor:true,
+ params:[
+  {k:'lato',l:'Lato del modulo',t:'r',min:2,max:8,step:.5,v:4,u:'cm'},
+  {k:'cols',l:'Piastrelle in orizzontale',t:'r',min:1,max:8,step:1,v:6},
+  {k:'rows',l:'Piastrelle in verticale',t:'r',min:1,max:6,step:1,v:4},
+  {k:'disp',l:'Disposizione dei moduli',t:'s',o:DISP,v:'rot'},
+  {k:'ncol',l:'Colori nel modulo casuale',t:'r',min:1,max:4,step:1,v:2},
+  {k:'simm',l:'Modulo casuale',t:'s',o:[['free','Libero'],['quad','Simmetrico nei 4 quarti']],v:'free'}
+ ],
+ src:`${SRC.cf}, «Piastrellature»; ${SRC.ew}`,
+ gen(p,R,pal,single){
+  const s=p.lato*10,q=s/8,C=single?1:p.cols,Rw=single?1:p.rows,items=[],guides=[];
+  const cells=S.tile;
+  for(let j=0;j<Rw;j++)for(let i=0;i<C;i++){
+   const f=tileXf(p.disp,i,j,s,i*s,j*s);
+   cells.forEach((c,n)=>{if(!c.t)return;const cx=(n%8)*q,cy=Math.floor(n/8)*q;
+    items.push({d:P(TRI[c.t].map(v=>f([cx+v[0]*q,cy+v[1]*q]))),f:pal.c[c.c%pal.c.length]})});
+   guides.push(RECT(i*s,j*s,s,s));
+  }
+  return{w:C*s,h:Rw*s,grid:{t:'sq',s:q},items,guides,stroke:false,
+   mat:'Foglio quadrettato (per il modulo), foglio da disegno, matita HB, righello, squadre, matite colorate.',
+   steps:[
+    `Su un foglio quadrettato disegna un quadrato di 8 × 8 quadretti: è il modulo (lato ${cm(s)} cm, ogni quadretto ${f2(q)} mm).`,
+    'Copia il modulo quadretto per quadretto: alcuni sono pieni, altri sono tagliati a metà dalla diagonale.',
+    `Sul foglio da disegno traccia una griglia di ${C} × ${Rw} piastrelle da ${cm(s)} cm (in tutto ${cm(C*s)} × ${cm(Rw*s)} cm).`,
+    DISP_TXT[p.disp],
+    'Prima di colorare, prova le disposizioni ritagliando qualche modulo di carta e girandolo: osserva come cambia la trama.',
+    'Ripassa i contorni con tratto marcato e colora in modo uniforme.'
+   ]};
+ }
+};
+
+/* --- B. Meandri e greche --- */
+const GRECHE={
+ onda:{n:'Greca semplice (onda quadra)',H:3,per:4,pts:x=>[[x,3],[x,0],[x+2,0],[x+2,3],[x+4,3]]},
+ gradini:{n:'Greca a gradini',H:3,per:6,pts:x=>[[x,3],[x,2],[x+1,2],[x+1,1],[x+2,1],[x+2,0],[x+3,0],[x+3,1],[x+4,1],[x+4,2],[x+5,2],[x+5,3],[x+6,3]]},
+ spirale:{n:'Meandro a spirale',H:4,per:4,base:true,hooks:x=>[[[x,4],[x,0],[x+3,0],[x+3,3],[x+1,3],[x+1,1],[x+2,1],[x+2,2]]]},
+ alterna:{n:'Meandro a spirali alternate',H:5,per:8,base:true,top:true,hooks:x=>[
+   [[x,5],[x,1],[x+3,1],[x+3,4],[x+1,4],[x+1,2],[x+2,2],[x+2,3]],
+   [[x+4,0],[x+4,4],[x+7,4],[x+7,1],[x+5,1],[x+5,3],[x+6,3],[x+6,2]]]}
+};
+function movesTxt(pts){
+ const out=[];for(let i=1;i<pts.length;i++){const dx=pts[i][0]-pts[i-1][0],dy=pts[i][1]-pts[i-1][1];
+  const n=Math.abs(dx||dy),dir=dx>0?'destra':dx<0?'sinistra':dy<0?'su':'giù';out.push(`${dir} ${n}`)}
+ return out.join(' → ');
+}
+FAM.greca={
+ name:'Meandri e greche',icon:'M2 20V6h8v10h-4V10M14 20V6h8v10h-4v-6',line:true,
+ params:[
+  {k:'tipo',l:'Tipo',t:'s',o:Object.entries(GRECHE).map(([k,v])=>[k,v.n]),v:'spirale'},
+  {k:'q',l:'Quadretto',t:'r',min:4,max:12,step:1,v:5,u:'mm'},
+  {k:'n',l:'Ripetizioni',t:'r',min:2,max:20,step:1,v:10},
+  {k:'righe',l:'Fasce sovrapposte',t:'r',min:1,max:4,step:1,v:1},
+  {k:'cornice',l:'Cornice sopra e sotto',t:'c',v:true},
+  {k:'spess',l:'Spessore del tratto',t:'s',o:[['mezzo','Mezzo quadretto'],['linea','Linea sottile']],v:'mezzo'}
+ ],
+ src:`${SRC.my}, scheda «Motivi a meandro» e «Il fregio dell’Ara Pacis»`,
+ gen(p,R,pal,single){
+  const G=GRECHE[p.tipo],q=p.q,n=single?1:p.n,fr=p.cornice?2:0,bandH=G.H+fr*2,rows=single?1:p.righe;
+  const W=n*G.per*q,H=rows*bandH*q+(rows-1)*q,items=[],guides=[];
+  const sw=p.spess==='mezzo'?q*.5:.6, cols=shuffle(R,pal.c);
+  for(let r=0;r<rows;r++){
+   const oy=r*(bandH+1)*q+fr*q, col=cols[r%cols.length], band=mix(cols[(r+1)%cols.length],'#ffffff',.72);
+   items.push({d:RECT(0,oy-fr*q,W,bandH*q),f:band,noline:true,bg:true});
+   const sc=pts=>pts.map(([x,y])=>[x*q,oy+y*q]);
+   if(G.pts){let all=[];for(let k=0;k<n;k++){const ps=G.pts(k*G.per);all=all.concat(k?ps.slice(1):ps)}items.push({d:PL(sc(all)),line:true,c:col,sw})}
+   if(G.base)items.push({d:PL(sc([[0,G.H],[n*G.per,G.H]])),line:true,c:col,sw});
+   if(G.top)items.push({d:PL(sc([[0,0],[n*G.per,0]])),line:true,c:col,sw});
+   if(G.hooks)for(let k=0;k<n;k++)G.hooks(k*G.per).forEach(h=>items.push({d:PL(sc(h)),line:true,c:col,sw}));
+   if(p.cornice){items.push({d:PL([[0,oy-q],[W,oy-q]]),line:true,c:col,sw});items.push({d:PL([[0,oy+(G.H+1)*q],[W,oy+(G.H+1)*q]]),line:true,c:col,sw})}
+   for(let k=0;k<=n;k++)guides.push(PL([[k*G.per*q,oy-fr*q],[k*G.per*q,oy+(G.H+fr)*q]]));
+  }
+  const unit=G.pts?G.pts(0):G.hooks(0)[0];
+  const steps=[
+   `Su foglio quadrettato (quadretto ${q} mm) traccia ${p.cornice?'le linee di cornice e ':''}l’altezza della fascia: ${G.H} quadretti${p.cornice?' più uno sopra e uno sotto per la cornice':''}.`,
+   `Ogni ripetizione è larga ${G.per} quadretti: segna con un trattino leggero l’inizio di ciascuna (${n} ripetizioni, ${cm(W)} cm in tutto).`];
+  if(G.base)steps.push(`Traccia la linea di base${G.top?' e la linea in alto':''} per tutta la lunghezza della fascia.`);
+  steps.push(`Disegna il primo motivo contando i quadretti: ${movesTxt(unit)}.`);
+  if(p.tipo==='alterna')steps.push(`La seconda spirale scende dalla linea in alto, spostata di 4 quadretti: ${movesTxt(G.hooks(0)[1])}.`);
+  steps.push('Ripeti identico il motivo in ogni ripetizione: è una simmetria traslatoria.','Esegui a matita, ripassa con tratto marcato e colora fascia e linea.');
+  return{w:W,h:H,grid:{t:'sq',s:q},items,guides,stroke:false,mat:'Foglio quadrettato o foglio da disegno con reticolo a quadretti, matita, righello, pennarello a punta media, matite colorate.',steps};
+ }
+};
+
+/* --- C. Struttura portante del quadrato --- */
+function squareTris(x,y,s,lv){
+ const c=[x+s/2,y+s/2],V=[[x,y],[x+s,y],[x+s,y+s],[x,y+s]];
+ if(lv<=1){const out=[];for(let i=0;i<4;i++){const a=V[i],b=V[(i+1)%4],m=mid(a,b);out.push([a,m,c],[m,b,c])}return out}
+ const h=s/2;return[].concat(squareTris(x,y,h,lv-1),squareTris(x+h,y,h,lv-1),squareTris(x+h,y+h,h,lv-1),squareTris(x,y+h,h,lv-1));
+}
+function orbitKey(pts,cx,cy,sym){
+ const g=pts.reduce((a,b)=>[a[0]+b[0]/3,a[1]+b[1]/3],[0,0]);let u=Math.abs(g[0]-cx),v=Math.abs(g[1]-cy);
+ if(sym==='d4'&&u<v)[u,v]=[v,u];return Math.round(u*10)+'_'+Math.round(v*10);
+}
+FAM.quadrato={
+ name:'Diagonali e mediane del quadrato',icon:'M2 2h22v22H2zM2 2l22 22M24 2L2 24M13 2v22M2 13h22',
+ params:[
+  {k:'lato',l:'Lato del modulo',t:'r',min:3,max:18,step:1,v:6,u:'cm'},
+  {k:'lv',l:'Suddivisione',t:'s',o:[['1','1 livello (8 triangoli)'],['2','2 livelli (32 triangoli)'],['3','3 livelli (128 triangoli)']],v:'2'},
+  {k:'dens',l:'Triangoli colorati',t:'r',min:20,max:100,step:5,v:55,u:'%'},
+  {k:'sym',l:'Simmetria del modulo',t:'s',o:[['d4','Come un rosone (4 assi)'],['d2','A specchio (2 assi)'],['none','Libera']],v:'d4'},
+  {k:'cols',l:'Moduli in orizzontale',t:'r',min:1,max:6,step:1,v:4},
+  {k:'rows',l:'Moduli in verticale',t:'r',min:1,max:5,step:1,v:3},
+  {k:'disp',l:'Disposizione dei moduli',t:'s',o:DISP,v:'tras'}
+ ],
+ src:`${SRC.my}, scheda «Diagonali e mediane del quadrato»; ${SRC.tl}, «Modularità e strutture portanti»`,
+ gen(p,R,pal,single){
+  const s=p.lato*10,lv=+p.lv,C=single?1:p.cols,Rw=single?1:p.rows,tris=squareTris(0,0,s,lv),col={},items=[],guides=[];
+  const colors=shuffle(R,pal.c).slice(0,Math.min(4,pal.c.length));
+  const key=t=>p.sym==='none'?t.map(v=>v.join()).join():orbitKey(t,s/2,s/2,p.sym);
+  tris.forEach(t=>{const k=key(t);if(!(k in col))col[k]=R()*100<p.dens?pick(R,colors):null});
+  for(let j=0;j<Rw;j++)for(let i=0;i<C;i++){const f=tileXf(p.disp,i,j,s,i*s,j*s);
+   tris.forEach(t=>{const c=col[key(t)];items.push({d:P(t.map(f)),f:c||pal.bg})});
+   guides.push(RECT(i*s,j*s,s,s),PL([[i*s,j*s],[i*s+s,j*s+s]]),PL([[i*s+s,j*s],[i*s,j*s+s]]),PL([[i*s+s/2,j*s],[i*s+s/2,j*s+s]]),PL([[i*s,j*s+s/2],[i*s+s,j*s+s/2]]));
+  }
+  const sub=Math.pow(2,lv-1);
+  return{w:C*s,h:Rw*s,grid:{t:'sq',s:s/sub/2},items,guides,stroke:true,
+   mat:'Foglio da disegno, matita HB e 2H, riga, squadre, matite colorate.',
+   steps:[
+    `Traccia un quadrato di lato ${cm(s)} cm${C*Rw>1?` e ripetilo in una griglia di ${C} × ${Rw} (in tutto ${cm(C*s)} × ${cm(Rw*s)} cm)`:''}.`,
+    'Trova i punti medi dei lati. Traccia le mediane (da un punto medio a quello opposto) e le diagonali (da un angolo all’angolo opposto).',
+    lv>1?`Ripeti la stessa costruzione in ognuno dei ${sub*sub} quadratini che hai ottenuto (lato ${cm(s/sub)} cm)${lv>2?', poi ancora una volta nei quadratini più piccoli':''}.`:'Hai ottenuto 8 triangoli: è la struttura portante del quadrato.',
+    p.sym!=='none'?'Colora i triangoli rispettando la simmetria: i triangoli che si corrispondono a specchio hanno lo stesso colore.':'Scegli quali triangoli colorare.',
+    C*Rw>1?DISP_TXT[p.disp]:'Ripassa con tratto marcato le linee che separano i colori.',
+    'Cancella le linee di costruzione che non servono e completa il colore.'
+   ]};
+ }
+};
+
+/* --- D. Mediane del triangolo --- */
+function triMed(A,B,C,lv){
+ const G=[(A[0]+B[0]+C[0])/3,(A[1]+B[1]+C[1])/3],ab=mid(A,B),bc=mid(B,C),ca=mid(C,A);
+ const t=[[A,ab,G],[ab,B,G],[B,bc,G],[bc,C,G],[C,ca,G],[ca,A,G]];
+ return lv<=1?t:t.flatMap(x=>triMed(x[0],x[1],x[2],lv-1));
+}
+FAM.triangolo={
+ name:'Mediane del triangolo',icon:'M13 2L24 22H2zM13 2v20M2 22l17-10M24 22L7 12',
+ params:[
+  {k:'lato',l:'Lato del triangolo',t:'r',min:3,max:18,step:1,v:6,u:'cm'},
+  {k:'lv',l:'Suddivisione',t:'s',o:[['1','1 livello (6 triangoli)'],['2','2 livelli (36 triangoli)']],v:'2'},
+  {k:'dens',l:'Triangoli colorati',t:'r',min:20,max:100,step:5,v:60,u:'%'},
+  {k:'sym',l:'Simmetria del modulo',t:'s',o:[['d3','Come un rosone (3 assi)'],['none','Libera']],v:'d3'},
+  {k:'cols',l:'Moduli per riga',t:'r',min:1,max:7,step:1,v:4},
+  {k:'rows',l:'Righe',t:'r',min:1,max:5,step:1,v:3}
+ ],
+ src:`${SRC.my}, scheda «Mediane dei triangoli»`,
+ gen(p,R,pal,single){
+  const L=p.lato*10,h=L*Math.sqrt(3)/2,lv=+p.lv,A=[0,1],B=[1,0],Cc=[0,0];
+  const base=triMed([0,0],[1,0],[0,1],lv);
+  const toE=([a,b])=>[a*L+b*L/2,h-b*h];
+  const keyOf=t=>{if(p.sym==='none')return t.map(v=>v.join()).join();
+   const g=t.map(toE).reduce((a,b)=>[a[0]+b[0]/3,a[1]+b[1]/3],[0,0]);const V=[[0,h],[L,h],[L/2,0]];
+   return V.map(v=>Math.round(Math.hypot(g[0]-v[0],g[1]-v[1])*10)).sort((a,b)=>a-b).join('_')};
+  const colors=shuffle(R,pal.c).slice(0,4),col={};
+  base.forEach(t=>{const k=keyOf(t);if(!(k in col))col[k]=R()*100<p.dens?pick(R,colors):null});
+  const items=[],guides=[],nC=single?1:p.cols,nR=single?1:p.rows;
+  const put=(O,U,V)=>{base.forEach(t=>{items.push({d:P(t.map(([a,b])=>[O[0]+a*U[0]+b*V[0],O[1]+a*U[1]+b*V[1]])),f:col[keyOf(t)]||pal.bg})});
+   guides.push(P([O,[O[0]+U[0],O[1]+U[1]],[O[0]+V[0],O[1]+V[1]]]))};
+  let W=L;
+  if(single)put([0,h],[L,0],[L/2,-h]);
+  else{W=nC*L;for(let j=0;j<nR;j++){const y=j*h,off=j%2?-L/2:0;
+   for(let k=-1;k<=nC;k++){const x=k*L+off;
+    put([x,y+h],[L,0],[L/2,-h]);           // triangolo con la punta in alto
+    put([x+L/2,y],[L,0],[L/2,h]);         // triangolo capovolto (ribaltato)
+   }}}
+  return{w:W,h:(single?1:nR)*h,grid:{t:'tri',s:L/Math.pow(2,lv)},items,guides,stroke:true,clip:true,
+   mat:'Foglio da disegno (o carta isometrica), matita, riga, squadre 30°/60°, compasso, matite colorate.',
+   steps:[
+    `Traccia un triangolo equilatero di lato ${cm(L)} cm (con il compasso: apertura ${cm(L)} cm puntando sui due estremi della base).`,
+    'Individua i punti medi dei lati e traccia le mediane dai punti medi ai vertici opposti: si incontrano nel baricentro.',
+    lv>1?'Hai 6 triangoli: in ognuno trova di nuovo i punti medi e traccia le sue mediane.':'Hai ottenuto 6 triangoli uguali per area.',
+    p.sym==='d3'?'Colora in modo simmetrico: i triangoli che si corrispondono rispetto alle tre mediane hanno lo stesso colore.':'Scegli quali triangoli colorare.',
+    single?'Ripassa con tratto marcato i contorni dei colori.':`Ripeti il modulo su un reticolo di triangoli: una riga sì e una no la fila è spostata di mezzo lato (${cm(L/2)} cm). I triangoli capovolti sono il modulo ribaltato.`,
+    'Completa con il colore e ripassa con tratto marcato.'
+   ]};
+ }
+};
+
+/* --- E. Optical Art in bianco e nero --- */
+FAM.optbn={
+ name:'Optical Art in bianco e nero',icon:'M2 2h5v22H2zM10 2h3v22h-3zM16 2h2v22h-2zM21 2h3v22h-3z',
+ params:[
+  {k:'tipo',l:'Motivo',t:'s',o:[['cerchio','Scacchiera con cerchio a colori invertiti'],['sfalsati','Rettangoli sfalsati'],['cornici','Cornici concentriche'],['scacch','Scacchiera che si gonfia (alla Riley)'],['onde','Onde (alla Riley)']],v:'cerchio'},
+  {k:'lato',l:'Lato del quadro',t:'r',min:8,max:24,step:1,v:16,u:'cm'},
+  {k:'n',l:'Caselle o fasce per lato',t:'r',min:6,max:24,step:1,v:16},
+  {k:'amp',l:'Intensità dell’effetto',t:'r',min:10,max:90,step:5,v:55,u:'%'}
+ ],
+ src:`${SRC.my}, scheda «Optical Art in bianco e nero» (motivi su struttura a linee; opere di Bridget Riley)`,
+ gen(p,R,pal,single){
+  const S=p.lato*10,n=p.n,a=p.amp/100,items=[],guides=[],ink='#111',bg='#fff';
+  items.push({d:RECT(0,0,S,S),f:bg,noline:true,bg:true});
+  let steps,grid={t:'none'},H=S;
+  if(p.tipo==='cerchio'){
+   const q=S/n,r=mmr(q*Math.max(2,Math.round(n*(.18+.2*a)))) ,c=Math.round(n/2)*q;let d='';
+   for(let i=0;i<n;i++)for(let j=0;j<n;j++)if((i+j)%2===0)d+=RECT(i*q,j*q,q,q);
+   items.push({d:d+CIRC(c,c,r),f:ink,rule:'evenodd',noline:true});
+   guides.push(CIRC(c,c,r));grid={t:'sq',s:q};
+   steps=[`Traccia la struttura: un quadrato di ${cm(S)} cm diviso in ${n} × ${n} caselle da ${f2(q)} mm.`,
+    `Punta il compasso sull’incrocio centrale e traccia una circonferenza di raggio ${f2(r)} mm.`,
+    'Fuori dal cerchio colora di nero una casella sì e una no, come in una scacchiera.',
+    'Dentro il cerchio inverti i colori: i pezzi di casella che fuori sarebbero neri restano bianchi, quelli che sarebbero bianchi diventano neri.',
+    'Non ripassare la circonferenza: il cerchio si vede lo stesso, solo per il cambio di colore.'];
+  } else if(p.tipo==='sfalsati'){
+   const q=S/n,rh=2*q,gap=q/2,sh=mmr(q*a);let d='',row=0;H=0;
+   for(let y=gap;y+rh<=S+.01;y+=rh+gap,row++){const off=[0,sh,2*sh,sh][row%4];
+    for(let x=-2*q+off;x<S;x+=2*q){const x0=Math.max(0,x),x1=Math.min(S,x+q);if(x1-x0>.2)d+=RECT(x0,y,x1-x0,rh)}H=y+rh+gap}
+   items[0]={d:RECT(0,0,S,H),f:bg,noline:true,bg:true};
+   items.push({d,f:ink,noline:true});grid={t:'sq',s:q/2};
+   for(let y=gap;y<H;y+=rh+gap)guides.push(PL([[0,y],[S,y]]),PL([[0,y+rh],[S,y+rh]]));
+   steps=[`Traccia la struttura: linee verticali ogni ${f2(q)} mm su una larghezza di ${cm(S)} cm.`,
+    `Traccia le file: ogni fila è alta ${f2(rh)} mm, tra una fila e l’altra lascia ${f2(gap)} mm.`,
+    `Nella prima fila colora di nero un rettangolo sì e uno no (larghi ${f2(q)} mm).`,
+    `Nelle file successive sposta i rettangoli verso destra di ${f2(sh)} mm, poi di ${f2(2*sh)} mm, poi torna indietro: 0 · ${f2(sh)} · ${f2(2*sh)} · ${f2(sh)} e ricomincia.`,
+    'Guarda il foglio da lontano: le linee orizzontali sembrano storte, anche se sono parallele.'];
+  } else if(p.tipo==='cornici'){
+   const k=Math.max(2,Math.round(n/2)),t=mmr(S/2/(k+.5));let d='';
+   for(let i=0;i<=k;i++){const o=i*t;if(S-2*o>0)d+=RECT(o,o*.6,S-2*o,S*.6-2*o*.6)}
+   H=S*.6;items[0]={d:RECT(0,0,S,H),f:bg,noline:true,bg:true};
+   items.push({d,f:ink,rule:'evenodd',noline:true});
+   guides.push(PL([[0,0],[S,H]]),PL([[S,0],[0,H]]));grid={t:'none'};
+   steps=[`Traccia un rettangolo di ${cm(S)} × ${cm(H)} cm e le sue due diagonali.`,
+    `Sul lato corto segna un punto ogni ${f2(t*.6)} mm e sul lato lungo ogni ${f2(t)} mm, partendo dagli angoli.`,
+    `Da ogni punto traccia una linea parallela ai lati fino a incontrare le diagonali: ottieni ${k} cornici una dentro l’altra.`,
+    'Colora di nero una cornice sì e una no, partendo dalla più esterna.',
+    'Le diagonali ti aiutano a tenere gli angoli delle cornici allineati.'];
+  } else if(p.tipo==='scacch'){
+   let w=[];for(let k=0;k<n;k++)w.push(1+a*2.4*Math.sin(Math.PI*(k+.5)/n));
+   const sum=w.reduce((x,y)=>x+y);w=w.map(v=>mmr(v*S/sum));const diff=S-w.reduce((x,y)=>x+y);w[Math.floor(n/2)]+=diff;
+   const xs=[0];w.forEach(v=>xs.push(xs[xs.length-1]+v));
+   for(let i=0;i<n;i++)for(let j=0;j<n;j++)if((i+j)%2===0)items.push({d:RECT(xs[i],xs[j],w[i],w[j]),f:ink,noline:true});
+   xs.forEach(x=>{guides.push(PL([[x,0],[x,S]]),PL([[0,x],[S,x]]))});
+   steps=[`Traccia un quadrato di ${cm(S)} cm di lato.`,
+    `Dividi i lati in ${n} fasce di larghezza diversa: strette ai bordi, larghe al centro. Misure da sinistra a destra (mm): ${w.map(f2).join(' · ')}.`,
+    'Usa le stesse misure dall’alto in basso e traccia le linee orizzontali e verticali.',
+    'Colora di nero le caselle alternate, come in una scacchiera: il centro sembrerà gonfiarsi verso di te.'];
+  } else {
+   const hh=S/n,lam=S/2,A=hh*a*1.4,N=80,yb=k=>x=>k*hh+A*Math.sin(Math.PI*k/n)*Math.sin(2*Math.PI*x/lam);
+   for(let k=0;k<n;k+=2){const t=yb(k),b=yb(k+1),pts=[];
+    for(let i=0;i<=N;i++){const x=S*i/N;pts.push([x,Math.max(0,t(x))])}
+    for(let i=N;i>=0;i--){const x=S*i/N;pts.push([x,Math.min(S,b(x))])}
+    items.push({d:P(pts),f:ink,noline:true})}
+   for(let k=0;k<=n;k++)guides.push(PL([[0,k*hh],[S,k*hh]]));
+   for(let x=0;x<=S;x+=lam/4)guides.push(PL([[x,0],[x,S]]));
+   steps=[`Traccia un quadrato di ${cm(S)} cm e dividilo in ${n} fasce orizzontali alte ${f2(hh)} mm.`,
+    `Dividi la larghezza in parti da ${f2(lam/4)} mm: sono i punti dove l’onda sale, torna in mezzo e scende (lunghezza d’onda ${cm(lam)} cm).`,
+    `Disegna ogni linea come un’onda: piatta in alto e in basso, sempre più ampia verso il centro (al massimo ±${f2(A)} mm). Aiutati con una sagoma di cartoncino.`,
+    'Colora di nero una fascia sì e una no: le onde sembreranno muoversi.'];
+  }
+  return{w:S,h:H,grid,items,guides,stroke:false,clip:true,mat:'Foglio da disegno squadrato, matita, righello con millimetri, compasso, pennarello nero a punta fine e grossa.',steps};
+ }
+};
+
+/* --- F. Optical Art a colori (Vasarely) --- */
+FAM.vasarely={
+ name:'Optical Art a colori',icon:'M2 2h22v22H2z M8 8a5 5 0 1 0 .01 0',
+ params:[
+  {k:'n',l:'Quadretti per lato',t:'r',min:4,max:14,step:1,v:10},
+  {k:'c',l:'Maglia',t:'r',min:1,max:3,step:.5,v:2,u:'cm'},
+  {k:'forma',l:'Forma interna',t:'s',o:[['zone','Cerchi e quadrati a cornici (come nel libro)'],['quadranti','Cerchi e quadrati a quadranti (come nel libro)'],['cerchio','Solo cerchi'],['quadrato','Solo quadrati'],['rombo','Rombi'],['misto','Cerchi e quadrati a scacchiera']],v:'zone'},
+  {k:'eff',l:'Misura delle figure',t:'s',o:[['fisso','Sempre uguale (come nel libro)'],['sfera','Più grandi al centro (sfera)'],['diag','Crescono in diagonale'],['onda','A onda']],v:'fisso'}
+ ],
+ src:`${SRC.my}, scheda «Optical Art a colori» (rielaborazione da Victor Vasarely: quadrato di 20 cm, maglia di 2 cm, raggio 0,8 cm)`,
+ gen(p,R,pal,single){
+  const n=single?1:p.n,c=p.c*10,items=[],guides=[],cs=shuffle(R,pal.c),A=cs[0],B=cs[1],Cc=cs[2]||pal.bg,D=cs[3]||pal.ink;
+  const radii=new Set();
+  for(let j=0;j<n;j++)for(let i=0;i<n;i++){
+   const u=(i+.5)/n-.5,v=(j+.5)/n-.5;let t;
+   if(p.eff==='fisso')t=.5+.5*Math.sin((i*7+j*13+S.seed)%10);else if(p.eff==='sfera')t=1-Math.min(1,Math.hypot(u,v)*1.6);else if(p.eff==='diag')t=(i+j)/(2*n-2||1);else t=.5+.5*Math.sin((u*2+v)*Math.PI*2);
+   const x=i*c,y=j*c,cx=x+c/2,cy=y+c/2,r=p.eff==='fisso'?mmr(c*.4):mmr((c/2)*(.3+.6*t)),chk=(i+j)%2;
+   radii.add(r);
+   items.push({d:RECT(x,y,c,c),f:mix(chk?A:B,Cc,t*.6)});
+   const fill=mix(chk?B:A,D,(1-t)*.5),ring=Math.min(i,j,n-1-i,n-1-j),forma=p.forma==='misto'?(chk?'cerchio':'quadrato'):p.forma==='zone'?(ring%2?'quadrato':'cerchio'):p.forma==='quadranti'?(((i<n/2)!==(j<n/2))?'quadrato':'cerchio'):p.forma;
+   const d=forma==='cerchio'?CIRC(cx,cy,r):forma==='quadrato'?RECT(cx-r,cy-r,2*r,2*r):P([[cx,cy-r*1.25],[cx+r*1.25,cy],[cx,cy+r*1.25],[cx-r*1.25,cy]]);
+   items.push({d,f:fill});
+   guides.push(PL([[x,y],[x+c,y+c]]),PL([[x+c,y],[x,y+c]]));
+  }
+  const rs=[...radii].sort((a,b)=>a-b);
+  return{w:n*c,h:n*c,grid:{t:'sq',s:c},items,guides,stroke:true,
+   mat:'Foglio da disegno, matita, riga, squadre, compasso o normografo con cerchi, matite o pennarelli colorati.',
+   steps:[
+    `Al centro del foglio traccia un quadrato di ${cm(n*c)} cm di lato.`,
+    `Dividilo con una maglia ortogonale di ${cm(c)} cm: ${n} × ${n} quadretti.`,
+    'In ogni quadretto traccia le diagonali: il punto d’incontro è il centro della figura.',
+    `Disegna le figure centrate (${p.forma==='quadrato'?'quadrati':p.forma==='rombo'?'rombi':p.forma==='cerchio'?'circonferenze':p.forma==='zone'?'circonferenze nella cornice esterna, quadrati nella seconda, e così via alternando':p.forma==='quadranti'?'circonferenze in due quadranti opposti, quadrati negli altri due':'circonferenze e quadrati a scacchiera'}). ${p.eff==='fisso'?`Raggio (o mezzo lato) sempre uguale: ${rs.map(f2).join(', ')} mm.`:`La misura cambia con la posizione (mm: ${rs.map(f2).join(', ')}): le figure più grandi stanno ${p.eff==='sfera'?'al centro':p.eff==='diag'?'verso l’angolo in basso a destra':'sulle creste dell’onda'}.`}`,
+    'Cancella le diagonali. Colora fondo e figura di ogni casella con due colori a contrasto, cambiandoli da una casella all’altra.'
+   ]};
+ }
+};
+
+/* --- G. Motivi arabi --- */
+function starPts(cx,cy,R,n,k,rot){
+ const ri=R*Math.cos(Math.PI*k/n)/Math.cos(Math.PI*(k-1)/n),pts=[];
+ for(let i=0;i<n;i++){const a=rot+i*2*Math.PI/n;pts.push([cx+R*Math.cos(a),cy+R*Math.sin(a)]);
+  const b=a+Math.PI/n;pts.push([cx+ri*Math.cos(b),cy+ri*Math.sin(b)])}
+ return{pts,ri};
+}
+FAM.arabi={
+ name:'Motivi arabi',icon:'M13 1l3 8 8 1-6 5 2 9-7-5-7 5 2-9-6-5 8-1z',
+ params:[
+  {k:'tipo',l:'Tipo',t:'s',o:[['rosone','Stella da una circonferenza'],['khatam','Tassellatura di stelle a 8 punte']],v:'rosone'},
+  {k:'div',l:'Divisione della circonferenza',t:'s',o:[['15','15° (24 parti)'],['18','18° (20 parti)'],['22.5','22,5° (16 parti)'],['30','30° (12 parti)'],['45','45° (8 parti)']],v:'22.5'},
+  {k:'k',l:'Punte (salto tra i punti)',t:'r',min:2,max:9,step:1,v:5},
+  {k:'raggio',l:'Raggio / maglia',t:'r',min:2,max:12,step:.5,v:8,u:'cm'},
+  {k:'reps',l:'Ripetizioni per lato',t:'r',min:1,max:6,step:1,v:1}
+ ],
+ src:`${SRC.my}, scheda «Motivi arabi» (arabeschi costruiti dal cerchio, divisioni di 15°, 18°, 22,5°)`,
+ gen(p,R,pal,single){
+  const items=[],guides=[],cs=shuffle(R,pal.c),m=single?1:p.reps;
+  if(p.tipo==='khatam'){
+   const a=p.raggio*10,h=a/(2*Math.SQRT2),N=Math.max(2,m*2);
+   items.push({d:RECT(0,0,N*a,N*a),f:cs[1]});
+   for(let j=0;j<=N;j++)for(let i=0;i<=N;i++){const cx=i*a,cy=j*a;
+    items.push({d:P(starPts(cx,cy,h*Math.SQRT2,8,3,0).pts),f:cs[0]});
+    items.push({d:P(starPts(cx,cy,h*.9,8,2,Math.PI/8).pts),f:cs[2]||pal.bg});
+    const ccx=cx+a/2,ccy=cy+a/2;items.push({d:P([[ccx,ccy-h*.45],[ccx+h*.45,ccy],[ccx,ccy+h*.45],[ccx-h*.45,ccy]]),f:cs[3]||pal.bg});
+   }
+   for(let k=0;k<=N;k++)guides.push(PL([[k*a,0],[k*a,N*a]]),PL([[0,k*a],[N*a,k*a]]));
+   return{w:N*a,h:N*a,grid:{t:'sq',s:a/2},items,guides,stroke:true,clip:true,
+    mat:'Foglio da disegno, matita, riga, squadre 45°, compasso, matite colorate.',
+    steps:[`Traccia un reticolo quadrato con maglia di ${cm(a)} cm (${N} × ${N} maglie).`,
+     `Su ogni incrocio disegna un quadrato di lato ${f2(2*h)} mm centrato sul nodo, e lo stesso quadrato ruotato di 45° (usa le squadre a 45°): insieme formano una stella a 8 punte.`,
+     'Le punte di stelle vicine si toccano a metà della maglia.',
+     'Dentro ogni stella disegna una stella più piccola; al centro di ogni maglia, tra quattro stelle, disegna un piccolo rombo.',
+     'Colora stelle, fondo e rombi con colori diversi e ripassa i contorni.']};
+  }
+  const n=Math.round(360/+p.div),k=Math.min(p.k,Math.floor((n-1)/2)),Rr=p.raggio*10,step=2*Rr+10;
+  for(let j=0;j<m;j++)for(let i=0;i<m;i++){
+   const cx=Rr+5+i*step,cy=Rr+5+j*step,rot=-Math.PI/2;
+   items.push({d:CIRC(cx,cy,Rr),f:cs[2]||pal.bg});
+   const s1=starPts(cx,cy,Rr,n,k,rot);items.push({d:P(s1.pts),f:cs[0]});
+   const s2=starPts(cx,cy,s1.ri*.8,n,Math.max(2,k-1),rot+Math.PI/n);items.push({d:P(s2.pts),f:cs[1]});
+   items.push({d:CIRC(cx,cy,s1.ri*.42),f:cs[3]||pal.bg});
+   let ch='';for(let q=0;q<n;q++){const a1=rot+q*2*Math.PI/n,a2=rot+(q+k)*2*Math.PI/n;ch+=`M${f2(cx+Rr*Math.cos(a1))} ${f2(cy+Rr*Math.sin(a1))}L${f2(cx+Rr*Math.cos(a2))} ${f2(cy+Rr*Math.sin(a2))}`}
+   items.push({d:ch,line:true,c:pal.ink,sw:.35,op:.55});
+   for(let q=0;q<n;q++){const a=rot+q*2*Math.PI/n;guides.push(PL([[cx,cy],[cx+Rr*Math.cos(a),cy+Rr*Math.sin(a)]]))}
+  }
+  const W=m*step-10+10;
+  return{w:W,h:W,grid:{t:'none'},items,guides,stroke:true,
+   mat:'Foglio da disegno, matita, riga, compasso, goniometro, matite colorate.',
+   steps:[`Traccia un segmento AB di ${cm(2*Rr)} cm e il suo asse: si incontrano nel punto O.`,
+    `Con apertura OA (${cm(Rr)} cm) punta in O e traccia la circonferenza.`,
+    `Con il goniometro dividi la circonferenza ogni ${String(p.div).replace('.',',')}°: ottieni ${n} punti. Traccia le linee che passano per O.`,
+    `Unisci ogni punto con quello che si trova ${k} posti più avanti: compare una stella a ${n} punte.`,
+    'Dove le linee si incrociano trovi una seconda stella più piccola: ripassala e disegna un cerchio al centro.',
+    m>1?`Ripeti il rosone ${m} × ${m} volte, con i centri distanti ${cm(step)} cm.`:'Ripassa con tratto marcato e colora.']};
+ }
+};
+
+/* --- H. Mandala e rosoni --- */
+FAM.mandala={
+ name:'Mandala e rosoni',icon:'M13 2a11 11 0 1 0 .01 0M13 7a6 6 0 1 0 .01 0M13 2v22M2 13h22M5 5l16 16M21 5L5 21',
+ params:[
+  {k:'raggio',l:'Raggio',t:'r',min:4,max:12,step:.5,v:9,u:'cm'},
+  {k:'n',l:'Settori',t:'s',o:[['6','6 (60°)'],['8','8 (45°)'],['10','10 (36°)'],['12','12 (30°)'],['16','16 (22,5°)']],v:'12'},
+  {k:'anelli',l:'Anelli',t:'r',min:2,max:7,step:1,v:5}
+ ],
+ src:`${SRC.my}, schede «Mandala» e «Rosoni romanici»`,
+ gen(p,R,pal,single){
+  const Rr=p.raggio*10,n=+p.n,na=p.anelli,cx=Rr+4,cy=Rr+4,items=[],guides=[],cs=shuffle(R,pal.c),st=2*Math.PI/n;
+  const rs=[];for(let i=0;i<=na;i++)rs.push(mmr(Rr*(.16+.84*Math.pow(i/na,.85))));
+  const pt=(a,r)=>[cx+r*Math.cos(a-Math.PI/2),cy+r*Math.sin(a-Math.PI/2)];
+  const kinds=['petali','triangoli','cerchietti','archi','zigzag','pieno','petali'],used=[];
+  items.push({d:CIRC(cx,cy,Rr),f:pal.bg});
+  for(let i=na-1;i>=0;i--){
+   const r0=rs[i],r1=rs[i+1],kind=i===0?'petali':pick(R,kinds),col=cs[i%cs.length],off=(i%2)*st/2,dbl=R()<.3&&n<=12?2:1,m=n*dbl,s2=2*Math.PI/m;used.push([i,kind,r0,r1,m]);
+   items.push({d:CIRC(cx,cy,r1),f:mix(col,'#ffffff',.75)});
+   for(let q=0;q<m;q++){const a=q*s2+off;
+    if(kind==='petali'){const A=pt(a,r0),B=pt(a,r1),rr=(r1-r0)*.62;items.push({d:`M${f2(A[0])} ${f2(A[1])}A${f2(rr)} ${f2(rr)} 0 0 1 ${f2(B[0])} ${f2(B[1])}A${f2(rr)} ${f2(rr)} 0 0 1 ${f2(A[0])} ${f2(A[1])}Z`,f:col})}
+    else if(kind==='triangoli')items.push({d:P([pt(a-s2/2,r0),pt(a,r1),pt(a+s2/2,r0)]),f:col});
+    else if(kind==='cerchietti'){const rm=(r0+r1)/2,rr=Math.min((r1-r0)/2,rm*Math.sin(s2/2))*.8,c=pt(a,rm);items.push({d:CIRC(c[0],c[1],rr),f:col})}
+    else if(kind==='archi'){const A=pt(a-s2/2,r0),B=pt(a+s2/2,r0),ch=Math.hypot(A[0]-B[0],A[1]-B[1]),rr=Math.max(ch/2,(r1-r0)*.9);items.push({d:`M${f2(A[0])} ${f2(A[1])}A${f2(rr)} ${f2(rr)} 0 0 1 ${f2(B[0])} ${f2(B[1])}Z`,f:col})}
+    else if(kind==='zigzag')items.push({d:P([pt(a-s2/2,r0),pt(a-s2/2,(r0+r1)/2),pt(a,r1),pt(a+s2/2,(r0+r1)/2),pt(a+s2/2,r0)]),f:col});
+   }
+   if(kind==='pieno')items.push({d:CIRC(cx,cy,r1)+CIRC(cx,cy,(r0+r1)/2),f:col,rule:'evenodd'});
+  }
+  items.push({d:CIRC(cx,cy,rs[0]),f:cs[(na+1)%cs.length]});
+  items.push({d:CIRC(cx,cy,rs[0]*.45),f:pal.bg});
+  rs.forEach(r=>guides.push(CIRC(cx,cy,r)));
+  for(let q=0;q<n*2;q++){const a=q*st/2;guides.push(PL([[cx,cy],pt(a,Rr)]))}
+  const nomi={petali:'petali (due archi di compasso)',triangoli:'triangoli con la punta verso l’esterno',cerchietti:'cerchietti centrati sull’anello',archi:'archi (lunette)',zigzag:'una corona a zig-zag',pieno:'una fascia piena'};
+  return{w:2*cx,h:2*cy,grid:{t:'none'},items,guides,stroke:true,
+   mat:'Foglio da disegno, matita, compasso, goniometro, riga, matite colorate.',
+   steps:[`Traccia ${na+1} circonferenze con lo stesso centro, raggi (mm): ${rs.map(f2).join(' · ')}.`,
+    `Con il goniometro dividi il cerchio in ${n} settori uguali da ${f2(360/n).replace('.',',')}° e traccia i raggi leggeri; traccia anche le bisettrici (mezzo settore).`,
+    ...used.slice().reverse().map(([i,k,r0,r1,m])=>`Anello ${i+1} (da ${f2(r0)} a ${f2(r1)} mm): ${m} ${nomi[k]}${m!==n?' — usa anche le bisettrici':''}.`),
+    'Ripassa con tratto marcato e colora anello per anello, ripetendo lo stesso colore in tutti i settori.']};
+ }
+};
+
+/* --- I. Girandole --- */
+FAM.girandola={
+ name:'Girandole',icon:'M2 2h22v22H2zM7 2L24 7 19 24 2 19z M10 7l9 3-3 9-9-3z',
+ params:[
+  {k:'lati',l:'Figura di partenza',t:'s',o:[['4','Quadrato'],['3','Triangolo'],['6','Esagono']],v:'4'},
+  {k:'lato',l:'Lato',t:'r',min:3,max:16,step:.5,v:6,u:'cm'},
+  {k:'t',l:'Spostamento su ogni lato',t:'r',min:5,max:30,step:1,v:12,u:'%'},
+  {k:'passi',l:'Figure annidate',t:'r',min:6,max:40,step:1,v:18},
+  {k:'ncol',l:'Colori',t:'r',min:2,max:4,step:1,v:2},
+  {k:'reps',l:'Ripetizioni per lato (quadrato)',t:'r',min:1,max:5,step:1,v:3}
+ ],
+ src:`${SRC.my}, scheda «Girandole»`,
+ gen(p,R,pal,single){
+  const L=p.lato*10,m=+p.lati,t=p.t/100,cs=shuffle(R,pal.c).slice(0,p.ncol),items=[],guides=[];
+  const reps=(m===4&&!single)?p.reps:1;
+  let P0;if(m===4)P0=[[0,0],[L,0],[L,L],[0,L]];
+  else{const Rc=L/(2*Math.sin(Math.PI/m));P0=[];for(let i=0;i<m;i++){const a=-Math.PI/2+i*2*Math.PI/m;P0.push([Rc*Math.cos(a),Rc*Math.sin(a)])}}
+  const minX=Math.min(...P0.map(v=>v[0])),minY=Math.min(...P0.map(v=>v[1]));P0=P0.map(v=>[v[0]-minX,v[1]-minY]);
+  const bw=Math.max(...P0.map(v=>v[0])),bh=Math.max(...P0.map(v=>v[1]));
+  const firsts=[];
+  for(let j=0;j<reps;j++)for(let i=0;i<reps;i++){
+   const mir=(i+j)%2===1,tf=v=>[i*bw+(mir?bw-v[0]:v[0]),j*bh+v[1]];
+   let Pk=P0;items.push({d:P(Pk.map(tf)),f:pal.bg});
+   for(let k=0;k<p.passi;k++){const Q=Pk.map((v,q)=>lerp(v,Pk[(q+1)%m],t));
+    if(i+j===0)firsts.push(Math.hypot(Pk[1][0]-Pk[0][0],Pk[1][1]-Pk[0][1])*t);
+    for(let q=0;q<m;q++)items.push({d:P([Q[q],Pk[(q+1)%m],Q[(q+1)%m]].map(tf)),f:cs[q%cs.length]});
+    Pk=Q}
+   guides.push(P(P0.map(tf)));
+  }
+  return{w:reps*bw,h:reps*bh,grid:{t:m===4?'sq':'none',s:L/4},items,guides,stroke:true,
+   mat:'Foglio da disegno, matita appuntita, righello con millimetri, squadre, compasso (per triangolo ed esagono), matite colorate.',
+   steps:[`Disegna ${m===4?'un quadrato':m===3?'un triangolo equilatero':'un esagono regolare'} di lato ${cm(L)} cm.`,
+    `Su ogni lato, partendo da un vertice e girando sempre nello stesso verso, misura ${f2(firsts[0])} mm (il ${p.t}% del lato) e segna un punto.`,
+    `Unisci i ${m} punti: ottieni una figura più piccola e ruotata.`,
+    `Ripeti sulla nuova figura misurando sempre il ${p.t}% del suo lato (mm: ${firsts.slice(1,7).map(f2).join(', ')}…), per ${p.passi} volte.`,
+    `Colora i triangolini con ${p.ncol} colori: tutti quelli dello stesso angolo hanno lo stesso colore, così compaiono i bracci a spirale.`,
+    reps>1?`Ripeti la girandola in una griglia ${reps} × ${reps}: una casella sì e una no disegnala a specchio (gira nell’altro verso).`:'Ripassa i contorni con tratto marcato.']};
+ }
+};
+
+/* --- J. Cosmateschi --- */
+function sierp(A,B,C,d,c1,c2,out){
+ if(d===0){out.push({d:P([A,B,C]),f:c1});return}
+ const ab=mid(A,B),bc=mid(B,C),ca=mid(C,A);out.push({d:P([ab,bc,ca]),f:c2});
+ sierp(A,ab,ca,d-1,c1,c2,out);sierp(ab,B,bc,d-1,c1,c2,out);sierp(ca,bc,C,d-1,c1,c2,out);
+}
+FAM.cosmati={
+ name:'Motivi cosmateschi',icon:'M2 2h22v22H2zM13 2l11 11-11 11L2 13z',
+ params:[
+  {k:'lato',l:'Lato della formella',t:'r',min:4,max:20,step:1,v:8,u:'cm'},
+  {k:'d',l:'Suddivisione dei triangoli',t:'r',min:1,max:4,step:1,v:2},
+  {k:'centro',l:'Centro',t:'s',o:[['scacchi','Quadrati a scacchiera'],['rota','Cerchio (rota)'],['stella','Quadrati sovrapposti']],v:'rota'},
+  {k:'cols',l:'Formelle in orizzontale',t:'r',min:1,max:5,step:1,v:3},
+  {k:'rows',l:'Formelle in verticale',t:'r',min:1,max:4,step:1,v:2}
+ ],
+ src:`${SRC.my}, scheda «Motivi cosmateschi»`,
+ gen(p,R,pal,single){
+  const s=p.lato*10,C=single?1:p.cols,Rw=single?1:p.rows,items=[],guides=[],cs=shuffle(R,pal.c);
+  const [c1,c2,c3,c4]=[cs[0],cs[1],cs[2]||pal.bg,cs[3]||pal.ink];
+  for(let j=0;j<Rw;j++)for(let i=0;i<C;i++){
+   const x=i*s,y=j*s,V=[[x,y],[x+s,y],[x+s,y+s],[x,y+s]],M=[0,1,2,3].map(k=>mid(V[k],V[(k+1)%4]));
+   items.push({d:RECT(x,y,s,s),f:pal.bg});
+   for(let k=0;k<4;k++)sierp(V[(k+1)%4],M[(k+1)%4],M[k],p.d,(i+j)%2?c2:c1,c3,items);
+   items.push({d:P(M),f:(i+j)%2?c1:c2});
+   const I=[0,1,2,3].map(k=>mid(M[k],M[(k+1)%4]));
+   if(p.centro==='scacchi'){const n=Math.pow(2,p.d),q=(s/2)/n,x0=x+s/4,y0=y+s/4;
+    for(let a=0;a<n;a++)for(let b=0;b<n;b++)items.push({d:RECT(x0+a*q,y0+b*q,q,q),f:(a+b)%2?c3:c4})}
+   else if(p.centro==='rota'){items.push({d:CIRC(x+s/2,y+s/2,s/4),f:c4});items.push({d:CIRC(x+s/2,y+s/2,s/4*.72),f:c3});items.push({d:CIRC(x+s/2,y+s/2,s/4*.42),f:(i+j)%2?c2:c1})}
+   else{items.push({d:P(I),f:c3});items.push({d:P(I.map((v,k)=>mid(v,I[(k+1)%4]))),f:c4})}
+   guides.push(RECT(x,y,s,s),PL([V[0],V[2]]),PL([V[1],V[3]]),PL([M[0],M[2]]),PL([M[1],M[3]]));
+  }
+  const sm=s/2/Math.pow(2,p.d);
+  return{w:C*s,h:Rw*s,grid:{t:'sq',s:s/4},items,guides,stroke:true,
+   mat:'Foglio da disegno, matita, riga, squadre, compasso, matite colorate (rosso, verde, oro, bianco come i marmi cosmateschi).',
+   steps:[`Traccia ${C*Rw>1?`una griglia di ${C} × ${Rw} formelle quadrate`:'una formella quadrata'} di ${cm(s)} cm di lato.`,
+    'Trova i punti medi dei lati e uniscili: ottieni un quadrato ruotato (un rombo) e 4 triangoli d’angolo.',
+    `Dividi ogni triangolo d’angolo unendo i punti medi dei suoi lati, poi ripeti nei triangolini d’angolo per ${p.d} volte (i più piccoli hanno il lato corto di circa ${f2(sm)} mm).`,
+    p.centro==='scacchi'?`Nel quadrato centrale (lato ${cm(s/2)} cm) disegna una scacchiera di ${Math.pow(2,p.d)} × ${Math.pow(2,p.d)} quadratini.`:p.centro==='rota'?`Al centro, con il compasso, traccia tre cerchi concentrici di raggio ${f2(s/4)}, ${f2(s/4*.72)} e ${f2(s/4*.42)} mm (la «rota»).`:'Nel rombo unisci ancora i punti medi: ottieni un quadrato, e dentro di esso un altro rombo.',
+    'Colora alternando i colori dei marmi: i triangolini centrali di ogni suddivisione sono chiari, gli altri scuri. Formelle vicine invertono i colori.']};
+ }
+};
+
+/* --- K. Circonferenze traslate --- */
+FAM.cerchi={
+ name:'Circonferenze traslate',icon:'M9 9a6 6 0 1 0 .01 0M17 9a6 6 0 1 0 .01 0M9 17a6 6 0 1 0 .01 0M17 17a6 6 0 1 0 .01 0',
+ params:[
+  {k:'ret',l:'Centri su',t:'s',o:[['sq','Reticolo quadrato'],['tri','Reticolo triangolare'],['linea','Una linea (fascia)']],v:'tri'},
+  {k:'passo',l:'Passo tra i centri',t:'r',min:8,max:40,step:1,v:20,u:'mm'},
+  {k:'rap',l:'Raggio rispetto al passo',t:'r',min:50,max:150,step:5,v:100,u:'%'},
+  {k:'doppio',l:'Seconda serie di cerchi interni',t:'c',v:true},
+  {k:'cols',l:'Larghezza',t:'r',min:4,max:24,step:1,v:16,u:'cm'},
+  {k:'rows',l:'Altezza',t:'r',min:2,max:18,step:1,v:12,u:'cm'}
+ ],
+ src:`${SRC.my}, schede «Circonferenze traslate per pattern» e «Circonferenze traslate su linea»`,
+ gen(p,R,pal,single){
+  const s=p.passo,r=s*p.rap/100,W=single?2*s:p.cols*10,H=p.ret==='linea'?(single?2*s:Math.max(2*r+4,20)):(single?2*s:p.rows*10),cs=shuffle(R,pal.c);
+  const centres=[];
+  if(p.ret==='linea')for(let x=0;x<=W+r;x+=s)centres.push([x,H/2]);
+  else if(p.ret==='sq'){for(let y=0;y<=H+r;y+=s)for(let x=0;x<=W+r;x+=s)centres.push([x,y])}
+  else{const hh=s*Math.sqrt(3)/2;let row=0;for(let y=0;y<=H+r;y+=hh,row++)for(let x=(row%2?s/2:0)-s;x<=W+r;x+=s)centres.push([x,y])}
+  const items=[{d:RECT(0,0,W,H),f:mix(cs[1],'#ffffff',.6),noline:true,bg:true}];
+  items.push({d:centres.map(c=>CIRC(c[0],c[1],r)).join(''),f:cs[0],rule:'evenodd'});
+  if(p.doppio)items.push({d:centres.map(c=>CIRC(c[0],c[1],r*.5)).join(''),f:cs[2]||pal.ink,rule:'evenodd'});
+  const guides=centres.map(c=>`M${f2(c[0]-1.5)} ${f2(c[1])}h3M${f2(c[0])} ${f2(c[1]-1.5)}v3`);
+  return{w:W,h:H,grid:{t:p.ret==='sq'?'sq':p.ret==='tri'?'tri':'none',s},items,guides,stroke:true,clip:true,
+   mat:'Foglio da disegno, matita, riga, squadre 30°/60°, compasso, matite colorate.',
+   steps:[`Delimita un rettangolo di ${cm(W)} × ${cm(H)} cm.`,
+    p.ret==='linea'?`Traccia la linea di mezzo e segna su di essa un punto ogni ${s} mm: sono i centri.`:p.ret==='sq'?`Traccia un reticolo quadrato con passo ${s} mm: i centri sono gli incroci.`:`Traccia righe orizzontali distanti ${f2(s*Math.sqrt(3)/2)} mm; su ogni riga segna un punto ogni ${s} mm, spostando di ${f2(s/2)} mm una riga sì e una no (reticolo triangolare).`,
+    `Con apertura di compasso ${f2(r)} mm punta su ogni centro e traccia le circonferenze: si intrecciano formando petali e losanghe.`,
+    p.doppio?`Su ogni centro traccia una seconda circonferenza di raggio ${f2(r*.5)} mm.`:'Osserva le figure che nascono dagli incroci.',
+    'Colora alternando: le zone coperte da un numero dispari di cerchi in un colore, le altre nell’altro (come nell’anteprima).']};
+ }
+};
+
+/* --- L. Tassellature --- */
+FAM.tassel={
+ name:'Tassellature 2D e 3D',icon:'M7 2l6 3.5v7L7 16l-6-3.5v-7zM19 2l6 3.5v7L19 16l-6-3.5v-7zM13 12.5l6 3.5v7l-6 3.5-6-3.5v-7z',
+ params:[
+  {k:'tipo',l:'Tassellatura',t:'s',o:[['quad','Quadrati'],['tri','Triangoli'],['esa','Esagoni (favo)'],['cubi','Cubi in assonometria (3D)'],['matt','Mattoni sfalsati'],['otto','Ottagoni e quadrati']],v:'cubi'},
+  {k:'a',l:'Lato del modulo',t:'r',min:5,max:40,step:1,v:15,u:'mm'},
+  {k:'col',l:'Colori',t:'s',o:[['reg','Regolari (alternati)'],['rnd','Casuali']],v:'reg'},
+  {k:'W',l:'Larghezza',t:'r',min:6,max:26,step:1,v:18,u:'cm'},
+  {k:'H',l:'Altezza',t:'r',min:4,max:18,step:1,v:12,u:'cm'}
+ ],
+ src:`${SRC.my}, schede «Tassellature periodiche 2D» e «3D»; ${SRC.pin}, «Tassellazione»`,
+ gen(p,R,pal,single){
+  const a=p.a,W=single?a*4:p.W*10,H=single?a*4:p.H*10,cs=shuffle(R,pal.c),items=[],rnd=p.col==='rnd';
+  const C=k=>rnd?pick(R,cs.slice(0,3)):cs[((k%3)+3)%3];
+  let grid={t:'sq',s:a},steps;
+  if(p.tipo==='quad'){for(let y=0,j=0;y<H;y+=a,j++)for(let x=0,i=0;x<W;x+=a,i++)items.push({d:RECT(x,y,a,a),f:rnd?C():cs[(i+j)%2]});
+   steps=[`Traccia un reticolo quadrato con lato ${a} mm.`,'Colora le caselle a scacchiera (o con una tua regola).'];}
+  else if(p.tipo==='tri'){const h=a*Math.sqrt(3)/2;grid={t:'tri',s:a,ox:a/2};
+   for(let y=0,j=0;y<H;y+=h,j++)for(let k=-2;k*a/2<W+a;k++){const x=k*a/2,up=(k+j)%2===0;
+    items.push({d:P(up?[[x,y+h],[x+a,y+h],[x+a/2,y]]:[[x,y],[x+a,y],[x+a/2,y+h]]),f:rnd?C():cs[up?0:1]})}
+   steps=[`Traccia righe orizzontali distanti ${f2(h)} mm.`,`Su ogni riga segna punti ogni ${a} mm, spostati di ${f2(a/2)} mm una riga sì e una no; unisci con la squadra a 60°.`,'Colora in un modo i triangoli con la punta in alto e in un altro quelli capovolti.'];}
+  else if(p.tipo==='esa'||p.tipo==='cubi'){const w=Math.sqrt(3)*a,vs=1.5*a;grid={t:'triV',s:a};
+   for(let r=-1,y=0;y<H+2*a;r++,y=r*vs)for(let q=-1;q*w<W+w;q++){const cx=q*w+(r%2?w/2:0),cy=r*vs;
+    const v=k=>{const an=Math.PI/180*(-90+60*k);return[cx+a*Math.cos(an),cy+a*Math.sin(an)]};
+    if(p.tipo==='esa'){const ax=q-(r-(r&1))/2;items.push({d:P([0,1,2,3,4,5].map(v)),f:rnd?C():C(ax-r*2)})}
+    else{const c=[cx,cy],L=pal===PALS.bn?['#eee','#999','#333']:[mix(cs[0],'#fff',.55),cs[0],mix(cs[0],'#000',.45)];
+     items.push({d:P([c,v(4),v(5),v(0)]).replace('Z','')+'Z',f:L[0]});items.push({d:P([c,v(0),v(1),v(2)]),f:L[2]});items.push({d:P([c,v(2),v(3),v(4)]),f:L[1]})}}
+   steps=p.tipo==='esa'?[`Traccia un reticolo isometrico (righe distanti ${f2(vs/2)} mm, linee a 60° e 120°).`,`Disegna esagoni di lato ${a} mm: ogni esagono occupa ${f2(w)} mm in larghezza e si incastra con i vicini come un favo.`,'Colora con 3 colori in modo che due esagoni vicini non abbiano mai lo stesso colore.']
+    :[`Traccia un reticolo isometrico con lato ${a} mm (squadra a 30°/60°).`,'Disegna esagoni regolari; dal centro di ognuno traccia tre segmenti verso tre vertici alterni: l’esagono diventa tre rombi.','Colora sempre nello stesso modo: rombo in alto chiaro, a destra scuro, a sinistra medio. Comparirà una fila di cubi in rilievo.'];}
+  else if(p.tipo==='matt'){const bw=2*a;for(let y=0,j=0;y<H;y+=a,j++)for(let x=(j%2?-a:0),i=0;x<W;x+=bw,i++)items.push({d:RECT(x,y,bw,a),f:rnd?C():cs[(i+j)%3===0?1:0]});
+   steps=[`Traccia righe orizzontali distanti ${a} mm.`,`Dividi ogni riga in mattoni lunghi ${2*a} mm, spostando i giunti di ${a} mm una riga sì e una no.`,'Colora i mattoni con una regola o a piacere.'];}
+  else{const c=a/(2+Math.SQRT2);for(let y=0,j=0;y<H+a;y+=a,j++)for(let x=0,i=0;x<W+a;x+=a,i++){
+    items.push({d:P([[x+c,y],[x+a-c,y],[x+a,y+c],[x+a,y+a-c],[x+a-c,y+a],[x+c,y+a],[x,y+a-c],[x,y+c]]),f:rnd?C():cs[(i+j)%2]});
+    items.push({d:P([[x-c,y],[x,y-c],[x+c,y],[x,y+c]]),f:cs[2]||pal.ink})}
+   steps=[`Traccia un reticolo quadrato con lato ${a} mm.`,`In ogni quadrato taglia gli angoli: segna ${f2(c)} mm dagli spigoli su ogni lato e unisci i punti. Ottieni un ottagono regolare.`,'Intorno a ogni incrocio i quattro angoli tagliati formano un quadratino ruotato di 45°.','Colora ottagoni e quadratini con colori diversi.'];}
+  steps.push('Ripassa i contorni con tratto marcato: i moduli combaciano senza lasciare vuoti e senza sovrapporsi.');
+  return{w:W,h:H,grid,items,guides:[],stroke:true,clip:true,mat:'Foglio da disegno o carta isometrica stampata, matita, riga, squadre 30°/60° e 45°, matite colorate.',steps:[`Delimita un rettangolo di ${cm(W)} × ${cm(H)} cm.`,...steps]};
+ }
+};
+
+/* --- M. Tartan --- */
+FAM.tartan={
+ name:'Tartan',icon:'M2 2h22v22H2zM8 2v22M10 2v22M2 8h22M2 10h22M17 2v22M2 17h22',
+ params:[
+  {k:'fasce',l:'Fasce nel motivo',t:'r',min:3,max:8,step:1,v:5},
+  {k:'max',l:'Fascia più larga',t:'r',min:6,max:30,step:2,v:20,u:'mm'},
+  {k:'W',l:'Larghezza',t:'r',min:6,max:26,step:1,v:16,u:'cm'},
+  {k:'H',l:'Altezza',t:'r',min:6,max:18,step:1,v:16,u:'cm'}
+ ],
+ src:`${SRC.my}, scheda «Tartan» (rielaborazione su foglio squadrato)`,
+ gen(p,R,pal,single){
+  const W=single?120:p.W*10,H=single?120:p.H*10,cs=pal.c,nm=pal.cn,items=[],guides=[];
+  const sett=[];for(let i=0;i<p.fasce;i++){const ci=Math.floor(R()*cs.length);sett.push({w:2*Math.max(1,Math.round((R()*R()*p.max+2)/2)),ci})}
+  sett[0].w=p.max;
+  const full=sett.concat(sett.slice(1,-1).reverse()),rep=full.reduce((a,b)=>a+b.w,0);
+  items.push({d:RECT(0,0,W,H),f:cs[full[0].ci],noline:true,bg:true});
+  const draw=(vert)=>{let pos=0;const lim=vert?W:H;while(pos<lim){for(const s of full){if(pos>=lim)break;
+   items.push({d:vert?RECT(pos,0,s.w,H):RECT(0,pos,W,s.w),f:cs[s.ci],op:.62,noline:true});
+   guides.push(vert?PL([[pos,0],[pos,H]]):PL([[0,pos],[W,pos]]));pos+=s.w}}};
+  draw(true);draw(false);
+  const txt=full.map(s=>`${nm[s.ci]} ${s.w}`).join(' · ');
+  return{w:W,h:H,grid:{t:'sq',s:5},items,guides,stroke:false,clip:true,lineOutline:true,
+   mat:'Foglio da disegno squadrato (o F4), matita, righello con millimetri, matite colorate.',
+   steps:[`Delimita un rettangolo di ${cm(W)} × ${cm(H)} cm.`,
+    `Il motivo si ripete ogni ${cm(rep)} cm. Sequenza delle fasce (mm): ${txt}.`,
+    'Riporta la sequenza da sinistra a destra con linee verticali leggere, e ricomincia da capo quando finisce.',
+    'Riporta la stessa sequenza dall’alto in basso con linee orizzontali.',
+    'Colora prima le fasce verticali con tratto leggero, poi quelle orizzontali sopra: dove si incrociano i colori si mescolano, come nei fili di un tessuto scozzese.']};
+ }
+};
+
+/* --- N. Fregi (7 tipi) --- */
+const MOTIF={
+ elle:[[.15,.12],[.42,.12],[.42,.62],[.88,.62],[.88,.9],[.15,.9]],
+ bandiera:[[.18,.95],[.18,.08],[.85,.25],[.3,.48],[.3,.95]],
+ foglia:(()=>{const a=[];for(let i=0;i<=12;i++){const t=i/12;a.push([.1+.8*t,.9-.75*t*t*(1.4-t)])}for(let i=12;i>=0;i--){const t=i/12;a.push([.1+.8*t,.9-.4*t+.2*t*(1-t)])}return a})(),
+ ricciolo:[[.1,.9],[.1,.15],[.75,.15],[.75,.6],[.4,.6],[.4,.42],[.57,.42],[.57,.33],[.28,.33],[.28,.9]]
+};
+const FREGI=[
+ ['p1','1 · Traslazione','Ripeti il motivo sempre uguale, spostandolo di un passo.'],
+ ['p11g','2 · Glissoriflessione','Sposta il motivo di un passo e ribaltalo sotto la linea di mezzo, poi ancora sopra, e così via.'],
+ ['p1m1','3 · Riflessione verticale','Alterna il motivo e la sua immagine allo specchio rispetto a una linea verticale.'],
+ ['p2','4 · Rotazione di 180°','Alterna il motivo e il motivo ruotato di mezzo giro (sotto la linea di mezzo).'],
+ ['p11m','5 · Riflessione orizzontale','In ogni passo disegna il motivo e il suo specchio sotto la linea di mezzo.'],
+ ['p2mg','6 · Riflessione verticale + glissoriflessione','Disegna coppie a specchio; una coppia sì e una no ribaltala sotto la linea di mezzo.'],
+ ['p2mm','7 · Riflessioni verticale e orizzontale','Ogni motivo ha il suo specchio sotto e accanto: quattro copie per ogni coppia di passi.']
+];
+FAM.fregi={
+ name:'Fregi (7 tipi)',icon:'M2 13h22M3 4h5v5H5v-2M11 22h5v-5h-3v2M19 4h5v5h-3v-2',
+ params:[
+  {k:'tipo',l:'Tipo di fregio',t:'s',o:FREGI.map(f=>[f[0],f[1]]),v:'p2mg'},
+  {k:'motivo',l:'Motivo di partenza',t:'s',o:[['elle','Elle'],['bandiera','Bandierina'],['foglia','Foglia'],['ricciolo','Ricciolo']],v:'ricciolo'},
+  {k:'u',l:'Passo',t:'r',min:10,max:40,step:1,v:20,u:'mm'},
+  {k:'n',l:'Ripetizioni',t:'r',min:4,max:16,step:1,v:10},
+  {k:'tutti',l:'Mostra tutti e 7 i fregi',t:'c',v:false}
+ ],
+ src:`${SRC.pin}, «Fregi» (traslazione, riflessione, glissoriflessione, rotazione); ${SRC.ew}`,
+ gen(p,R,pal,single){
+  const u=p.u,cs=shuffle(R,pal.c),items=[],guides=[],types=p.tutti&&!single?FREGI.map(f=>f[0]):[p.tipo],n=single?2:p.n,gap=u*.6;
+  const ops=(t,k)=>{const e=k%2===0;switch(t){
+   case'p1':return[[0,0]];case'p11g':return[[0,e?0:1]];case'p1m1':return[[e?0:1,0]];case'p2':return[[e?0:1,e?0:1]];
+   case'p11m':return[[0,0],[0,1]];case'p2mg':{const j=Math.floor(k/2)%2;return[[e?0:1,j]]}case'p2mm':return[[e?0:1,0],[e?0:1,1]]}};
+  types.forEach((t,row)=>{const oy=row*(2*u+gap);
+   items.push({d:RECT(0,oy,n*u,2*u),f:mix(cs[1],'#fff',.8),noline:true,bg:true});
+   for(let k=0;k<n;k++)ops(t,k).forEach(([fx,fy])=>{
+    items.push({d:P(MOTIF[p.motivo].map(([x,y])=>[k*u+(fx?1-x:x)*u,oy+(fy?2-y:y)*u])),f:fy?cs[2]||cs[0]:cs[0]})});
+   guides.push(PL([[0,oy+u],[n*u,oy+u]]));for(let k=0;k<=n;k++)guides.push(PL([[k*u,oy],[k*u,oy+2*u]]));
+  });
+  const T=FREGI.find(f=>f[0]===p.tipo);
+  return{w:n*u,h:types.length*(2*u+gap)-gap,grid:{t:'sq',s:u/4},items,guides,stroke:true,
+   mat:'Foglio quadrettato o da disegno, matita, righello, carta da lucido (utile per ribaltare il motivo), matite colorate.',
+   steps:[`Traccia una fascia alta ${cm(2*u)} cm e lunga ${cm(n*u)} cm, con la linea di mezzo leggera.`,
+    `Dividi la fascia in ${n} passi da ${u} mm.`,
+    'Nel primo passo, sopra la linea di mezzo, disegna il motivo di partenza (aiutati con 4 × 4 quadretti).',
+    p.tutti?'Ogni riga applica una trasformazione diversa: osservale e prova a riconoscerle.':`${T[1].replace(/^\d · /,'')}: ${T[2]}`,
+    'Per ribaltare con precisione ricalca il motivo sulla carta da lucido, giralo e ripassalo.',
+    'Colora con lo stesso colore i motivi uguali e con un altro quelli ribaltati sotto la linea.']};
+ }
+};
+
+/* --- O. Poligoni stellati --- */
+const gcd=(a,b)=>b?gcd(b,a%b):a;
+FAM.stellati={
+ name:'Poligoni stellati',icon:'M13 2l2.6 7.6h8L17 14.4l2.5 7.8L13 17.4l-6.5 4.8L9 14.4 2.4 9.6h8z',
+ params:[
+  {k:'n',l:'Vertici sulla circonferenza',t:'r',min:5,max:16,step:1,v:5},
+  {k:'k',l:'Salto tra i vertici',t:'r',min:2,max:7,step:1,v:2},
+  {k:'raggio',l:'Raggio',t:'r',min:3,max:9,step:.5,v:9,u:'cm'},
+  {k:'liv',l:'Stelle una dentro l’altra',t:'r',min:1,max:4,step:1,v:2}
+ ],
+ src:`${SRC.my}, scheda «Poligoni stellati» (circonferenza di raggio 9 cm, poligono regolare, diagonali); ${SRC.pin}, «I poligoni stellati»`,
+ gen(p,R,pal,single){
+  const n=p.n,k=Math.max(2,Math.min(p.k,Math.floor((n-1)/2))),Rr=p.raggio*10,cx=Rr+4,cy=Rr+4,items=[],guides=[],cs=shuffle(R,pal.c);
+  items.push({d:CIRC(cx,cy,Rr),f:mix(cs[2]||cs[0],'#ffffff',.8)});
+  let r=Rr,rot=-Math.PI/2;const raggi=[];
+  for(let l=0;l<p.liv;l++){const st=starPts(cx,cy,r,n,k,rot);raggi.push(r);
+   items.push({d:P(st.pts),f:cs[l%2]});
+   let ch='';for(let q=0;q<n;q++){const a1=rot+q*2*Math.PI/n,a2=rot+(q+k)*2*Math.PI/n;ch+=`M${f2(cx+r*Math.cos(a1))} ${f2(cy+r*Math.sin(a1))}L${f2(cx+r*Math.cos(a2))} ${f2(cy+r*Math.sin(a2))}`}
+   items.push({d:ch,line:true,c:pal.ink,sw:.3,op:.6});
+   const ri=r*Math.cos(Math.PI*k/n)/Math.cos(Math.PI/n);
+   const nuc=[];for(let q=0;q<n;q++){const a=rot+Math.PI/n+q*2*Math.PI/n;nuc.push([cx+ri*Math.cos(a),cy+ri*Math.sin(a)])}
+   items.push({d:P(nuc),f:l===p.liv-1?(cs[3]||pal.bg):pal.bg});
+   r=ri;rot+=Math.PI/n}
+  for(let q=0;q<n;q++){const a=-Math.PI/2+q*2*Math.PI/n;guides.push(PL([[cx,cy],[cx+Rr*Math.cos(a),cy+Rr*Math.sin(a)]]))}
+  const g=gcd(n,k);
+  return{w:2*cx,h:2*cy,grid:{t:'none'},items,guides,stroke:true,
+   mat:'Foglio da disegno, matita, compasso, goniometro, riga, matite colorate.',
+   steps:[`Traccia una circonferenza di raggio ${cm(Rr)} cm.`,
+    `Dividila in ${n} parti uguali: con il goniometro segna un punto ogni ${f2(360/n).replace('.',',')}° (oppure costruisci il poligono regolare con ${n} lati).`,
+    `Unisci ogni punto con quello che si trova ${k} posti più avanti${g>1?`: la stella è fatta di ${g} poligoni intrecciati, quindi dovrai staccare la matita`:': torni al punto di partenza senza staccare la matita'}.`,
+    'Al centro le linee formano il nucleo: un poligono regolare con lo stesso numero di lati, più piccolo e ruotato.',
+    p.liv>1?`Nel nucleo ripeti la stessa costruzione: ottieni ${p.liv} stelle una dentro l’altra (raggi: ${raggi.map(v=>cm(v)).join(' · ')} cm).`:'Ripassa con tratto marcato il contorno della stella.',
+    'Colora punte e nucleo con colori diversi.']};
+ }
+};
+
+/* --- P. Frattali --- */
+FAM.frattali={
+ name:'Frattali',icon:'M13 2L24 22H2zM7.5 12h11L13 22z',
+ params:[
+  {k:'tipo',l:'Frattale',t:'s',o:[['sierp','Triangolo di Sierpiński'],['tappeto','Tappeto di Sierpiński (quadrati)'],['koch','Fiocco di neve di Koch'],['albero','Albero di Pitagora']],v:'sierp'},
+  {k:'lato',l:'Lato della figura di partenza',t:'r',min:6,max:21,step:1,v:16,u:'cm'},
+  {k:'liv',l:'Ripetizioni',t:'r',min:1,max:5,step:1,v:4}
+ ],
+ src:`${SRC.my}, scheda «Frattali» (frattale di Sierpiński su triangolo equilatero di 21 cm); ${SRC.pin}, albero di Pitagora`,
+ gen(p,R,pal,single){
+  const L=p.lato*10,lv=p.liv,cs=shuffle(R,pal.c),items=[],guides=[];let w=L,h=L,grid={t:'none'},steps;
+  if(p.tipo==='sierp'){h=L*Math.sqrt(3)/2;
+   const go=(A,B,C,d)=>{if(d===0){items.push({d:P([A,B,C]),f:cs[0]});return}const ab=mid(A,B),bc=mid(B,C),ca=mid(C,A);items.push({d:P([ab,bc,ca]),f:pal.bg});go(A,ab,ca,d-1);go(ab,B,bc,d-1);go(ca,bc,C,d-1)};
+   items.push({d:P([[0,h],[L,h],[L/2,0]]),f:pal.bg});go([0,h],[L,h],[L/2,0],lv);grid={t:'tri',s:L/Math.pow(2,lv),oy:h};
+   steps=[`Traccia un triangolo equilatero di lato ${cm(L)} cm.`,'Trova i punti medi dei tre lati e uniscili: il triangolo centrale, capovolto, resta bianco.',
+    `Nei tre triangoli d’angolo ripeti la stessa operazione, per ${lv} volte in tutto.`,`Alla fine ogni lato è diviso in ${Math.pow(2,lv)} parti da ${f2(L/Math.pow(2,lv))} mm e i triangolini pieni sono ${Math.pow(3,lv)}.`,'Colora i triangolini con la punta in alto.'];
+  } else if(p.tipo==='tappeto'){const d=Math.min(lv,4);
+   items.push({d:RECT(0,0,L,L),f:cs[0]});
+   const go=(x,y,s,k)=>{if(k===0)return;const t=s/3;items.push({d:RECT(x+t,y+t,t,t),f:pal.bg});for(let i=0;i<3;i++)for(let j=0;j<3;j++)if(i!==1||j!==1)go(x+i*t,y+j*t,t,k-1)};
+   go(0,0,L,d);grid={t:'sq',s:L/Math.pow(3,Math.min(d,3))};
+   steps=[`Traccia un quadrato di lato ${cm(L)} cm.`,'Dividi ogni lato in 3 parti uguali: ottieni 9 quadrati. Quello centrale resta bianco.',
+    `Negli altri 8 quadrati ripeti la stessa divisione, per ${d} volte in tutto.`,`I quadratini più piccoli hanno il lato di ${f2(L/Math.pow(3,d))} mm.`,'Colora tutto tranne i quadrati centrali.'];
+  } else if(p.tipo==='koch'){const d=Math.min(lv,4),hh=L*Math.sqrt(3)/2;
+   let pts=[[0,hh],[L/2,0],[L,hh]];
+   for(let k=0;k<d;k++){const np=[];for(let i=0;i<pts.length;i++){const a=pts[i],b=pts[(i+1)%pts.length],p1=lerp(a,b,1/3),p2=lerp(a,b,2/3),dx=p2[0]-p1[0],dy=p2[1]-p1[1];
+     np.push(a,p1,[p1[0]+dx/2+dy*Math.sqrt(3)/2,p1[1]+dy/2-dx*Math.sqrt(3)/2],p2)}pts=np}
+   h=hh*4/3;
+   items.push({d:P(pts),f:cs[0]});guides.push(P([[0,hh],[L/2,0],[L,hh]]));grid={t:'tri',s:L/Math.pow(3,Math.min(d,2)),oy:hh};
+   steps=[`Traccia un triangolo equilatero di lato ${cm(L)} cm.`,'Dividi ogni lato in 3 parti uguali. Sulla parte centrale costruisci un triangolino equilatero verso l’esterno e cancella la sua base.',
+    `Ripeti su ogni lato della nuova figura, per ${d} volte in tutto.`,`I lati più piccoli misurano ${f2(L/Math.pow(3,d))} mm; la figura ha ${3*Math.pow(4,d)} lati.`,'Ripassa il contorno con tratto marcato e colora l’interno.'];
+  } else {const d=Math.min(lv+3,9),s0=L/5;w=L*1.25;h=L*.85;
+   const go=(A,B,k)=>{const dx=B[0]-A[0],dy=B[1]-A[1],C=[B[0]+dy,B[1]-dx],D=[A[0]+dy,A[1]-dx];
+    items.push({d:P([A,B,C,D]),f:mix(cs[0],cs[1],(d-k)/d)});if(k<=1)return;
+    const E=[D[0]+(dx+dy)/2,D[1]+(dy-dx)/2];go(D,E,k-1);go(E,C,k-1)};
+   go([w/2-s0/2,h],[w/2+s0/2,h],d);
+   steps=[`In basso al centro disegna un quadrato di lato ${cm(s0)} cm.`,'Sul lato in alto costruisci un triangolo rettangolo isoscele: il lato del quadrato è l’ipotenusa, gli altri due lati formano un angolo di 90° (usa la squadra a 45°).',
+    'Su ognuno dei due lati corti del triangolo costruisci un nuovo quadrato.',`Ripeti su ogni nuovo quadrato, per ${d} volte in tutto: i quadrati diventano sempre più piccoli e l’albero si apre.`,
+    'In ogni triangolo vale il teorema di Pitagora: l’area del quadrato grande è la somma delle aree dei due quadrati più piccoli. Colora sfumando dal tronco alle foglie.'];}
+  return{w,h,grid,items,guides,stroke:true,clip:p.tipo==='albero',mat:'Foglio da disegno, matita ben appuntita, riga, squadre, compasso, matite colorate.',steps};
+ }
+};
+
+/* --- Q. Curve fatte di rette (inviluppi) --- */
+FAM.inviluppi={
+ name:'Curve fatte di rette',icon:'M3 3v20h20M3 7l4 16M3 11l8 12M3 15l12 8M3 19l16 4',line:true,
+ params:[
+  {k:'tipo',l:'Struttura',t:'s',o:[['stella','Croce: stella a 4 punte'],['angolo','Angolo retto: una curva'],['quadrato','Quadrato: curve nei 4 angoli'],['cerchio','Circonferenza: cardioide']],v:'stella'},
+  {k:'n',l:'Punti per lato',t:'r',min:6,max:36,step:1,v:16},
+  {k:'passo',l:'Distanza tra i punti',t:'r',min:3,max:10,step:1,v:5,u:'mm'}
+ ],
+ src:`${SRC.pin}, «Realizzare un inviluppo decorativo»`,
+ gen(p,R,pal,single){
+  const n=p.n,q=p.passo,Lm=n*q,cs=shuffle(R,pal.c),items=[],guides=[];let w,h,steps;
+  const L=(a,b,c)=>items.push({d:PL([a,b]),line:true,c,sw:.35});
+  if(p.tipo==='angolo'){w=h=Lm+q;items.push({d:RECT(0,0,w,h),f:pal.bg,noline:true,bg:true});
+   for(let i=1;i<=n;i++)L([0,h-(n+1-i)*q],[i*q,h],cs[i%2]);guides.push(PL([[0,0],[0,h],[w,h]]));
+   steps=[`Traccia due segmenti perpendicolari lunghi ${cm(w)} cm, uniti in un estremo.`,`Su ognuno segna ${n} punti, uno ogni ${q} mm partendo dall’angolo, e numerali da 1 a ${n}.`,
+    `Unisci l’1 del segmento orizzontale con il ${n} di quello verticale, il 2 con il ${n-1}, e così via: i due numeri danno sempre ${n+1}.`,'I segmenti si appoggiano tutti a una curva (un arco di parabola), anche se hai usato solo il righello.'];
+  } else if(p.tipo==='stella'){w=h=2*(Lm+q);const c=w/2;items.push({d:RECT(0,0,w,h),f:pal.bg,noline:true,bg:true});
+   [[1,1],[-1,1],[-1,-1],[1,-1]].forEach(([sx,sy],qi)=>{for(let i=1;i<=n;i++)L([c+sx*i*q,c],[c,c+sy*(n+1-i)*q],cs[qi%2])});
+   guides.push(PL([[0,c],[w,c]]),PL([[c,0],[c,h]]));
+   steps=[`Traccia due segmenti perpendicolari lunghi ${cm(w)} cm che si incrociano a metà.`,`Su ogni braccio della croce segna ${n} punti, uno ogni ${q} mm partendo dal centro, numerati da 1 a ${n}.`,
+    `In ogni quarto unisci l’1 di un braccio con il ${n} dell’altro, il 2 con il ${n-1}… I due numeri danno sempre ${n+1}.`,'Le quattro curve formano una stella a quattro punte. Usa due colori alternati nei quarti.'];
+  } else if(p.tipo==='quadrato'){w=h=Lm;items.push({d:RECT(0,0,w,h),f:pal.bg,noline:true,bg:true});
+   const V=[[0,0],[w,0],[w,h],[0,h]];V.forEach((v,k)=>{const a=V[(k+1)%4],b=V[(k+3)%4];for(let i=1;i<n;i++)L(lerp(v,a,i/n),lerp(b,v,i/n),cs[k%2])});
+   guides.push(RECT(0,0,w,h));
+   steps=[`Traccia un quadrato di lato ${cm(w)} cm.`,`Dividi ogni lato in ${n} parti da ${q} mm e numera i punti girando sempre nello stesso verso.`,
+    'Per ogni angolo: unisci il punto 1 di un lato con il punto 1 del lato che arriva all’angolo, il 2 con il 2, e così via.','Nei quattro angoli compaiono quattro curve che lasciano al centro una figura a forma di fiore.'];
+  } else {const N=Math.max(24,n*4),Rr=Math.max(40,Lm);w=h=2*Rr+8;const c=w/2;items.push({d:CIRC(c,c,Rr),f:pal.bg});
+   const pt=i=>[c+Rr*Math.cos(2*Math.PI*i/N+Math.PI),c+Rr*Math.sin(2*Math.PI*i/N+Math.PI)];
+   for(let i=1;i<N;i++)L(pt(i),pt(2*i%N),cs[0]);
+   steps=[`Traccia una circonferenza di raggio ${cm(Rr)} cm.`,`Dividila in ${N} parti uguali con il goniometro (un punto ogni ${f2(360/N).replace('.',',')}°) e numera i punti da 0 a ${N-1}.`,
+    `Unisci ogni punto con quello che ha il numero doppio: 1 con 2, 2 con 4, 3 con 6… Dopo il ${N-1} ricomincia a contare da 0 (per esempio ${Math.ceil(N/2)+1} va con ${2*(Math.ceil(N/2)+1)%N}).`,'Compare una curva a forma di cuore: la cardioide. È la stessa che vedi sul fondo di una tazza quando la luce si riflette sul bordo.'];}
+  return{w,h,grid:p.tipo==='cerchio'?{t:'none'}:{t:'sq',s:q},items,guides,stroke:false,mat:'Foglio da disegno o quadrettato, matita ben appuntita, righello, pennarelli a punta fine di due colori (oppure filo e cartoncino forato).',steps};
+ }
+};
+
+/* --- R. Labirinti --- */
+FAM.labirinti={
+ name:'Labirinti',icon:'M2 2h22v22H2zM7 7h12v12H7zM12 12h2v2M2 12h5M19 12h5',line:true,
+ params:[
+  {k:'cols',l:'Corridoi in orizzontale',t:'r',min:5,max:24,step:1,v:12},
+  {k:'rows',l:'Corridoi in verticale',t:'r',min:5,max:18,step:1,v:9},
+  {k:'cella',l:'Larghezza del corridoio',t:'r',min:5,max:20,step:5,v:10,u:'mm'},
+  {k:'sol',l:'Mostra il percorso',t:'c',v:false}
+ ],
+ src:`${SRC.my}, scheda «Labirinti» (su foglio a quadretti)`,
+ gen(p,R,pal,single){
+  const C=single?6:p.cols,Rw=single?6:p.rows,q=p.cella,items=[],guides=[],cs=shuffle(R,pal.c);
+  const idx=(x,y)=>y*C+x,vis=new Uint8Array(C*Rw),E=new Uint8Array(C*Rw),Sd=new Uint8Array(C*Rw),par=new Int32Array(C*Rw).fill(-1);
+  const st=[idx(0,0)];vis[0]=1;
+  while(st.length){const cur=st[st.length-1],x=cur%C,y=Math.floor(cur/C);
+   const nb=shuffle(R,[[1,0],[-1,0],[0,1],[0,-1]]).filter(([dx,dy])=>x+dx>=0&&x+dx<C&&y+dy>=0&&y+dy<Rw&&!vis[idx(x+dx,y+dy)]);
+   if(!nb.length){st.pop();continue}const[dx,dy]=nb[0],nx=x+dx,ny=y+dy,ni=idx(nx,ny);
+   if(dx===1)E[cur]=1;if(dx===-1)E[ni]=1;if(dy===1)Sd[cur]=1;if(dy===-1)Sd[ni]=1;vis[ni]=1;par[ni]=cur;st.push(ni)}
+  const W=C*q,H=Rw*q;items.push({d:RECT(0,0,W,H),f:mix(cs[0],'#ffffff',.85),noline:true,bg:true});
+  let d=`M${q} 0H${W}V${H}M${W-q} ${H}H0V0`,nw=0;
+  for(let y=0;y<Rw;y++)for(let x=0;x<C;x++){const i=idx(x,y);
+   if(x<C-1&&!E[i]){d+=`M${(x+1)*q} ${y*q}V${(y+1)*q}`;nw++}
+   if(y<Rw-1&&!Sd[i]){d+=`M${x*q} ${(y+1)*q}H${(x+1)*q}`;nw++}}
+  if(p.sol){const path=[];let c=idx(C-1,Rw-1);while(c!==-1){path.push([(c%C+.5)*q,(Math.floor(c/C)+.5)*q]);c=par[c]}
+   items.push({d:PL([[path[0][0],H],...path,[q/2,0]]),line:true,c:cs[1],sw:q*.22,op:.8})}
+  items.push({d,line:true,c:pal.ink,sw:Math.max(.6,q*.12)});
+  return{w:W,h:H,grid:{t:'sq',s:q>=10?q/2:q},items,guides,stroke:false,
+   mat:'Foglio quadrettato, matita, righello, pennarello a punta media.',
+   steps:[`Su foglio a quadretti delimita un rettangolo di ${cm(W)} × ${cm(H)} cm: ${C} × ${Rw} caselle da ${q} mm (${q/5} quadrett${q===5?'o':'i'} da 5 mm).`,
+    'Lascia un’apertura larga una casella in alto a sinistra (l’entrata) e una in basso a destra (l’uscita).',
+    `Copia i muri interni una riga alla volta, contando i quadretti: sono ${nw} tratti lunghi una casella. Lavora a matita.`,
+    'Controlla il percorso con il dito: dall’entrata all’uscita c’è una sola strada, tutte le altre finiscono contro un muro.',
+    'Ripassa i muri con il pennarello. Poi scambia il labirinto con un compagno, oppure progettane uno tuo partendo dal percorso giusto e aggiungendo i vicoli ciechi.']};
+ }
+};
+
+/* ============ stato ============ */
+const ORDER=['piastrelle','greca','quadrato','triangolo','optbn','vasarely','arabi','stellati','mandala','girandola','cosmati','cerchi','tassel','tartan','fregi','frattali','inviluppi','labirinti'];
+const S={fam:'piastrelle',seed:1,pal:'sito',view:'comp',p:{},tile:null,tool:1,col:0};
+function defaults(f){const o={};FAM[f].params.forEach(q=>o[q.k]=q.v);return o}
+ORDER.forEach(f=>S.p[f]=defaults(f));
+S.seed=Math.floor(Math.random()*1e6);
+S.tile=randomTile(rngFrom(S.seed),2,'free');
+try{const h=JSON.parse(localStorage.getItem('motivi-hdr')||'{}');['hAl','hCl','hDa','hTv'].forEach(k=>{if(h[k])$('#'+k).value=h[k]})}catch(e){}
+if(!$('#hDa').value)$('#hDa').value=new Date().toLocaleDateString('it-IT');
+
+/* ============ rendering ============ */
+let LAST=null;
+function compute(single){
+ const f=FAM[S.fam],pal=PALS[S.pal];
+ return f.gen(S.p[S.fam],rngFrom(S.seed*31+7),pal,single);
+}
+let GID=0;
+const GRIDS={q5:{t:'sq',s:5},q10:{t:'sq',s:10},iso5:{t:'tri',s:5},iso10:{t:'tri',s:10},isoV5:{t:'triV',s:5},isoV10:{t:'triV',s:10},none:{t:'none'}};
+function gridOf(o,choice){return choice==='auto'?(o.grid||{t:'none'}):GRIDS[choice]}
+function gridLabel(g){
+ if(!g||g.t==='none'||!g.s)return'nessun reticolo: si costruisce con riga e compasso sul foglio bianco';
+ const m=String(Math.round(g.s*10)/10).replace('.',',')+' mm';
+ return g.t==='sq'?`quadretti da ${m}`:g.t==='tri'?`isometrico, triangoli di lato ${m} (una serie di linee è orizzontale)`:`isometrico ruotato di 90°, triangoli di lato ${m} (una serie di linee è verticale)`;
+}
+function gridSvg(g,w,h){
+ if(!g||g.t==='none'||!g.s||g.s<1.5)return'';
+ let d='';const s=g.s,ox=g.ox||0,oy=g.oy||0;
+ if(g.t==='sq'){for(let x=((ox%s)+s)%s;x<=w+.01;x+=s)d+=`M${f2(x)} 0V${f2(h)}`;for(let y=((oy%s)+s)%s;y<=h+.01;y+=s)d+=`M0 ${f2(y)}H${f2(w)}`}
+ else{const hh=s*Math.sqrt(3)/2,B=w+h;(g.t==='tri'?[0,60,120]:[90,30,150]).forEach(a=>{const r=a*Math.PI/180,dx=Math.cos(r),dy=Math.sin(r),nx=-dy,ny=dx;
+   const pr=[[0,0],[w,0],[w,h],[0,h]].map(p=>nx*(p[0]-ox)+ny*(p[1]-oy)),lo=Math.ceil(Math.min(...pr)/hh-1e-6),hi=Math.floor(Math.max(...pr)/hh+1e-6);
+   for(let j=lo;j<=hi;j++){const bx=ox+nx*j*hh,by=oy+ny*j*hh;d+=`M${f2(bx-dx*B)} ${f2(by-dy*B)}L${f2(bx+dx*B)} ${f2(by+dy*B)}`}})}
+ const id='gr'+(GID++);
+ return`<defs><clipPath id="${id}"><rect width="${f2(w)}" height="${f2(h)}"/></clipPath></defs><path clip-path="url(#${id})" d="${d}" fill="none" stroke="#1A3A7A" stroke-width=".16" opacity=".45"/>`;
+}
+function body(o,opts){
+ const out=opts.outline,pal=PALS[S.pal],uid='c'+Math.floor(Math.random()*1e9);
+ let g='';
+ o.items.forEach(it=>{
+  if(it.line){g+=`<path d="${it.d}" fill="none" stroke="${out?'#222':it.c}" stroke-width="${out?.45:it.sw}" stroke-linecap="square" stroke-linejoin="miter"${it.op&&!out?` opacity="${it.op}"`:''}/>`;return}
+  if(out){if(it.bg||o.lineOutline)return;g+=`<path d="${it.d}" fill="none" stroke="#222" stroke-width=".35"${it.rule?` fill-rule="${it.rule}"`:''}/>`;return}
+  const st=o.stroke&&!it.noline?` stroke="${pal.ink}" stroke-width=".25" stroke-linejoin="round"`:'';
+  g+=`<path d="${it.d}" fill="${it.f}"${it.rule?` fill-rule="${it.rule}"`:''}${it.op?` fill-opacity="${it.op}"`:''}${it.blend?` style="mix-blend-mode:${it.blend}"`:''}${st}/>`;
+ });
+ if(out&&o.lineOutline)g+=`<path d="${o.guides.join('')}" fill="none" stroke="#222" stroke-width=".35"/>`;
+ let s='';
+ s+=o.clip?`<defs><clipPath id="${uid}"><rect width="${f2(o.w)}" height="${f2(o.h)}"/></clipPath></defs><g clip-path="url(#${uid})">${g}</g>`:g;
+ if(opts.grid&&!out)s=s;
+ s+=gridSvg(gridOf(o,opts.grid),o.w,o.h);
+ if(opts.guide&&o.guides.length&&!(out&&o.lineOutline))s+=`<path d="${o.guides.join('')}" fill="none" stroke="#B42318" stroke-width=".22" stroke-dasharray="1.6 1.2" opacity=".75"/>`;
+ return s;
+}
+function quotes(w,h){
+ const t=(x,y,txt,rot)=>`<text x="${f2(x)}" y="${f2(y)}" font-size="${Math.max(3,Math.min(w,h)/14)}" text-anchor="middle" fill="#1A3A7A" font-family="Atkinson Hyperlegible,sans-serif"${rot?` transform="rotate(-90 ${f2(x)} ${f2(y)})"`:''}>${txt}</text>`;
+ const a=Math.max(4,Math.min(w,h)/10),sw=.3,c='#1A3A7A';
+ let s=`<g stroke="${c}" stroke-width="${sw}" fill="none">`;
+ s+=`<path d="M0 ${f2(h+2)}V${f2(h+a+2)}M${f2(w)} ${f2(h+2)}V${f2(h+a+2)}M0 ${f2(h+a)}H${f2(w)}M${f2(-2)} 0H${f2(-a-2)}M${f2(-2)} ${f2(h)}H${f2(-a-2)}M${f2(-a)} 0V${f2(h)}"/>`;
+ const ar=(x,y,dx,dy)=>`<path d="M${f2(x)} ${f2(y)}l${f2(dx*2-dy*.8)} ${f2(dy*2+dx*.8)}M${f2(x)} ${f2(y)}l${f2(dx*2+dy*.8)} ${f2(dy*2-dx*.8)}"/>`;
+ s+=ar(0,h+a,1,0)+ar(w,h+a,-1,0)+ar(-a,0,0,1)+ar(-a,h,0,-1)+'</g>';
+ s+=t(w/2,h+a-1.2,cm(w)+' cm')+t(-a-1.4,h/2,cm(h)+' cm',true);
+ return s;
+}
+function opts(){return{grid:$('#oGrid').value,guide:$('#oGuide').checked,outline:$('#oOutline').checked}}
+function stageSvg(){
+ const v=S.view,o=compute(v==='mod');LAST=o;const op=opts();
+ if(v==='sheet')return sheetSvg(o,op,false);
+ const pad=v==='mod'?Math.max(14,Math.min(o.w,o.h)/5):6;
+ const vb=`${-pad} ${-pad} ${o.w+pad*2} ${o.h+pad*2}`;
+ let inner=`<rect x="${-pad}" y="${-pad}" width="${o.w+pad*2}" height="${o.h+pad*2}" fill="#ffffff"/>`;
+ inner+=`<rect width="${f2(o.w)}" height="${f2(o.h)}" fill="#fff"/>`+body(o,op);
+ if(v==='mod')inner+=quotes(o.w,o.h);
+ return{vb,inner,w:o.w,h:o.h};
+}
+function sheetSvg(o,op,forFile){
+ const W=297,H=210,m=10,cartH=14,aw=W-2*m-8,ah=H-2*m-cartH-8;
+ const k=Math.min(1,aw/o.w,ah/o.h),dw=o.w*k,dh=o.h*k,x=m+4+(aw-dw)/2,y=m+4+(ah-dh)/2;
+ const hv=id=>($('#'+id).value||'').replace(/[<&>]/g,'');
+ const F=FAM[S.fam];const cy=H-m-cartH;
+ const cells=[['ALUNNO',hv('hAl'),0,95],['CLASSE',hv('hCl'),95,35],['DATA',hv('hDa'),130,40],['TAVOLA',hv('hTv'),170,25],['MOTIVO GEOMETRICO',F.name.toUpperCase()+(k<1?`  —  scala ${Math.round(k*100)}%`:'  —  scala 1:1'),195,82]];
+ let c=`<rect x="${m}" y="${m}" width="${W-2*m}" height="${H-2*m}" fill="none" stroke="#111" stroke-width=".5"/>`;
+ c+=`<path d="M${m} ${cy}H${W-m}" stroke="#111" stroke-width=".5"/>`;
+ cells.forEach(([lab,val,x0,wd])=>{const X=m+x0;if(x0)c+=`<path d="M${X} ${cy}V${H-m}" stroke="#111" stroke-width=".35"/>`;
+  c+=`<text x="${X+2}" y="${cy+4}" font-size="2.6" fill="#555" font-family="Atkinson Hyperlegible,sans-serif">${lab}</text><text x="${X+2}" y="${cy+11}" font-size="${lab==='MOTIVO GEOMETRICO'?3.2:4.2}" fill="#111" font-family="Atkinson Hyperlegible,sans-serif" font-weight="700">${val}</text>`});
+ const inner=`<rect width="${W}" height="${H}" fill="#fff"/>${c}<g transform="translate(${f2(x)} ${f2(y)}) scale(${k})"><rect width="${f2(o.w)}" height="${f2(o.h)}" fill="#fff"/>${body(o,op)}</g>`;
+ return{vb:`0 0 ${W} ${H}`,inner,w:W,h:H,sheet:true};
+}
+function render(){
+ const r=stageSvg();
+ const st=$('#stage');st.setAttribute('viewBox',r.vb);st.setAttribute('preserveAspectRatio','xMidYMid meet');st.innerHTML=r.inner;
+ const o=LAST;
+ $('#dims').textContent=`${S.view==='mod'?'Modulo':'Composizione'}: ${cm(o.w)} × ${cm(o.h)} cm`+(S.view!=='mod'?(o.w<=277&&o.h<=160?' · sta in un foglio A4 orizzontale':' · più grande di un A4: nella tavola viene ridotta'):'');
+ const comp=S.view==='mod'?compute(false):o;
+ $('#mat').innerHTML='<b>Ti servono:</b> '+comp.mat;
+ $('#steps').innerHTML=comp.steps.map(s=>`<li>${s}</li>`).join('');
+ $('#src').innerHTML=FAM[S.fam].src+'.';
+ $('#code').value=encode();
+ $('#gridNote').textContent='In uso: '+gridLabel(gridOf(comp,$('#oGrid').value))+'.';
+}
+
+/* ============ UI ============ */
+function buildFams(){
+ $('#fams').innerHTML=ORDER.map(k=>`<button class="fam${k===S.fam?' on':''}" data-f="${k}"><svg viewBox="0 0 26 26" width="26" height="26"><path d="${FAM[k].icon}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>${FAM[k].name}</button>`).join('');
+ document.querySelectorAll('.fam').forEach(b=>b.onclick=()=>{S.fam=b.dataset.f;buildFams();buildParams();render()});
+}
+function buildParams(){
+ const f=FAM[S.fam],p=S.p[S.fam];
+ $('#edSec').hidden=!f.editor;$('#prmTitle').textContent=(f.editor?'3':'2')+' · Regola';
+ $('#prms').innerHTML=f.params.map(q=>{
+  if(q.t==='r')return`<div class="prm"><label>${q.l}<b id="v_${q.k}">${String(p[q.k]).replace('.',',')}${q.u?' '+q.u:''}</b></label><input type="range" data-k="${q.k}" min="${q.min}" max="${q.max}" step="${q.step}" value="${p[q.k]}"></div>`;
+  if(q.t==='s')return`<div class="prm"><label>${q.l}</label><select data-k="${q.k}">${q.o.map(o=>`<option value="${o[0]}"${o[0]==p[q.k]?' selected':''}>${o[1]}</option>`).join('')}</select></div>`;
+  return`<label class="chk"><input type="checkbox" data-k="${q.k}"${p[q.k]?' checked':''}> ${q.l}</label>`}).join('');
+ $('#prms').querySelectorAll('[data-k]').forEach(el=>{
+  const q=f.params.find(x=>x.k===el.dataset.k);
+  el.oninput=()=>{p[q.k]=q.t==='r'?+el.value:q.t==='c'?el.checked:el.value;
+   if(q.t==='r')$('#v_'+q.k).textContent=String(p[q.k]).replace('.',',')+(q.u?' '+q.u:'');render()}});
+ if(f.editor)buildEditor();
+}
+function buildPals(){
+ $('#pals').innerHTML=Object.entries(PALS).map(([k,v])=>`<button class="pal${k===S.pal?' on':''}" data-p="${k}" title="${v.n}">${v.c.slice(0,5).map(c=>`<i style="background:${c}"></i>`).join('')}</button>`).join('');
+ document.querySelectorAll('.pal').forEach(b=>b.onclick=()=>{S.pal=b.dataset.p;buildPals();if(FAM[S.fam].editor)buildEditor();render()});
+}
+const TOOLS=[[1,'Pieno'],[2,'Triangolo'],[3,'Triangolo'],[4,'Triangolo'],[5,'Triangolo'],[0,'Gomma']];
+function cellSvg(t,col){if(!t)return'';return`<svg viewBox="0 0 1 1" preserveAspectRatio="none"><path d="${P(TRI[t])}" fill="${col}"/></svg>`}
+function buildEditor(){
+ const pal=PALS[S.pal];
+ $('#tools').innerHTML=TOOLS.map(([t,n])=>`<button class="tool${S.tool===t?' on':''}" data-t="${t}" title="${n}">${t?`<svg viewBox="0 0 1 1" width="28" height="28"><rect width="1" height="1" fill="#fff" stroke="#ccc" stroke-width=".04"/><path d="${P(TRI[t])}" fill="#333"/></svg>`:'<svg viewBox="0 0 28 28" width="28" height="28"><path d="M6 20l8-12 8 6-6 8H9z" fill="#f2c4c4" stroke="#333"/></svg>'}</button>`).join('');
+ $('#tools').querySelectorAll('.tool').forEach(b=>b.onclick=()=>{S.tool=+b.dataset.t;buildEditor()});
+ $('#sws').innerHTML=pal.c.map((c,i)=>`<button class="sw${S.col===i?' on':''}" data-c="${i}" style="background:${c}" title="${pal.cn[i]}"></button>`).join('');
+ $('#sws').querySelectorAll('.sw').forEach(b=>b.onclick=()=>{S.col=+b.dataset.c;buildEditor()});
+ const ed=$('#ed');ed.innerHTML=S.tile.map((c,i)=>`<div data-i="${i}">${cellSvg(c.t,pal.c[c.c%pal.c.length])}</div>`).join('');
+}
+let painting=false,lastCell=-1;
+function paintAt(e){const el=document.elementFromPoint(e.clientX,e.clientY);const d=el&&el.closest('#ed > div');if(!d)return;const i=+d.dataset.i;if(i===lastCell)return;lastCell=i;
+ const c=S.tile[i];if(S.tool&&c.t===S.tool&&c.c===S.col&&e.type==='pointerdown'){c.t=S.tool>=2&&S.tool<5?S.tool+1:S.tool===5?2:0}else{c.t=S.tool;c.c=S.col}
+ d.innerHTML=cellSvg(c.t,PALS[S.pal].c[c.c%PALS[S.pal].c.length]);render()}
+$('#ed').addEventListener('pointerdown',e=>{painting=true;lastCell=-1;e.preventDefault();paintAt(e)});
+window.addEventListener('pointermove',e=>{if(painting)paintAt(e)});
+window.addEventListener('pointerup',()=>{painting=false});
+$('#edRnd').onclick=()=>{S.seed=Math.floor(Math.random()*1e6);const p=S.p.piastrelle;S.tile=randomTile(rngFrom(S.seed),p.ncol,p.simm);buildEditor();render()};
+$('#edClr').onclick=()=>{S.tile=S.tile.map(()=>({t:0,c:0}));buildEditor();render()};
+
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{S.view=b.dataset.v;document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x===b));render()});
+['#oGrid','#oGuide','#oOutline'].forEach(s=>$(s).onchange=render);
+['hAl','hCl','hDa','hTv'].forEach(k=>$('#'+k).oninput=()=>{try{localStorage.setItem('motivi-hdr',JSON.stringify(Object.fromEntries(['hAl','hCl','hDa','hTv'].map(x=>[x,$('#'+x).value]))))}catch(e){}if(S.view==='sheet')render()});
+function generate(){S.seed=Math.floor(Math.random()*1e6);if(FAM[S.fam].editor){const p=S.p.piastrelle;S.tile=randomTile(rngFrom(S.seed),p.ncol,p.simm);buildEditor()}render()}
+$('#bGen').onclick=generate;
+document.addEventListener('keydown',e=>{if(e.code==='Space'&&!/INPUT|TEXTAREA|SELECT|BUTTON/.test(document.activeElement.tagName)){e.preventDefault();generate()}});
+$('#bFull').onclick=()=>{try{if(!document.fullscreenElement)document.documentElement.requestFullscreen().catch(()=>toast('Schermo intero non disponibile qui'));else document.exitFullscreen()}catch(e){toast('Schermo intero non disponibile qui')}};
+
+/* ============ codice motivo ============ */
+function encode(){const o={f:S.fam,s:S.seed,c:S.pal,p:S.p[S.fam]};if(S.fam==='piastrelle')o.t=S.tile.map(c=>c.t+''+c.c).join('');return btoa(unescape(encodeURIComponent(JSON.stringify(o))))}
+$('#cCopy').onclick=async()=>{try{await navigator.clipboard.writeText($('#code').value);toast('Codice copiato')}catch(e){$('#code').select();toast('Seleziona e copia il codice')}};
+$('#cLoad').onclick=()=>{try{const o=JSON.parse(decodeURIComponent(escape(atob($('#code').value.trim()))));if(!FAM[o.f])throw 0;
+ S.fam=o.f;S.seed=o.s;if(PALS[o.c])S.pal=o.c;S.p[o.f]=Object.assign(defaults(o.f),o.p);
+ if(o.t)S.tile=o.t.match(/../g).map(x=>({t:+x[0],c:+x[1]}));buildFams();buildPals();buildParams();render();toast('Motivo riaperto')}catch(e){toast('Codice non valido')}};
+
+/* ============ esportazione ============ */
+function svgFile(r){return`<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" width="${f2(r.w2||r.wmm)}mm" height="${f2(r.h2||r.hmm)}mm" viewBox="${r.vb}">${r.inner}</svg>`}
+function compFile(){const o=compute(false),op=opts();const pad=5;
+ return svgFile({vb:`${-pad} ${-pad} ${o.w+2*pad} ${o.h+2*pad}`,inner:`<rect x="${-pad}" y="${-pad}" width="${o.w+2*pad}" height="${o.h+2*pad}" fill="#fff"/>`+body(o,op),wmm:o.w+2*pad,hmm:o.h+2*pad})}
+function sheetFile(){const r=sheetSvg(compute(false),opts(),true);return svgFile({vb:r.vb,inner:r.inner,wmm:297,hmm:210})}
+let DL=null;
+const SUL_LIBRO=/proftecnologia\.it$|^localhost$|^127\.0\.0\.1$/.test(location.hostname)||location.protocol==='file:';
+if(!SUL_LIBRO)(async()=>{try{if(window.claude&&window.claude.use)DL=await window.claude.use('downloads')}catch(e){DL=null}
+ if(!DL){$('#dSvg').hidden=$('#dPng').hidden=$('#dSheet').hidden=true;$('#cSvg').hidden=false}})();
+async function save(filename,data){
+ if(DL){try{await DL.save({filename,data})}catch(e){toast('Download annullato')}return}
+ if(!SUL_LIBRO){toast('Download non disponibile: usa «Copia SVG»');return}
+ try{const a=document.createElement('a'),u=URL.createObjectURL(data);a.href=u;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),4000)}catch(e){toast('Download non riuscito')}
+}
+const fname=()=>`motivo-${S.fam}-${S.seed}`;
+$('#dSvg').onclick=()=>save(fname()+'.svg',new Blob([compFile()],{type:'image/svg+xml'}));
+$('#dSheet').onclick=()=>save('tavola-'+fname()+'.svg',new Blob([sheetFile()],{type:'image/svg+xml'}));
+$('#dPng').onclick=()=>{const svg=compFile(),img=new Image(),url=URL.createObjectURL(new Blob([svg],{type:'image/svg+xml'}));
+ img.onload=()=>{const sc=2400/Math.max(img.width,img.height),cv=document.createElement('canvas');cv.width=Math.round(img.width*sc);cv.height=Math.round(img.height*sc);
+  const x=cv.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,cv.width,cv.height);x.drawImage(img,0,0,cv.width,cv.height);URL.revokeObjectURL(url);
+  cv.toBlob(b=>save(fname()+'.png',b),'image/png')};img.onerror=()=>toast('PNG non riuscito');img.src=url};
+$('#cSvg').onclick=async()=>{try{await navigator.clipboard.writeText(sheetFile());toast('SVG della tavola copiato')}catch(e){toast('Copia non consentita')}};
+function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>el.classList.remove('on'),2200)}
+
+buildFams();buildPals();buildParams();render();
+</script>
+</body>
+</html>

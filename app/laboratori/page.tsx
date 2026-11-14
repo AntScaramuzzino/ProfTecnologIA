@@ -5,6 +5,7 @@ import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom } from "@/lib/
 import { ESPLORAZIONI, esplorazioneSrc, esplorazioneAnteprima } from "@/lib/esplorazioni";
 import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI } from "@/lib/geogebra-costruzioni";
 import { MC_PROIEZIONI, TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
+import { MC_OFFICINA, OFFICINA_MOTIVI, officinaSrc } from "@/lib/officina-motivi";
 
 export const metadata: Metadata = {
   title: "Laboratori interattivi — Book ProfTecnologIA",
@@ -141,11 +142,34 @@ export default function LaboratoriPage() {
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
             Tavole animate con righello e compasso, un passaggio alla volta, collegate a {MC_COSTRUZIONI}: perpendicolari
-            e parallele, poligoni, triangoli, ovali e spirali. Hanno una pagina tutta loro.
+            e parallele, poligoni, triangoli, ovali e spirali, motivi modulari. Hanno una pagina tutta loro.
           </p>
           <Link href="/costruzioni-geometriche" className="mt-3 inline-block text-sm font-black text-blue-800 underline underline-offset-4">
             Apri le costruzioni geometriche →
           </Link>
+        </section>
+
+        <section id="officina-motivi" className="mt-6 scroll-mt-24 rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <h2 className="text-xl font-black tracking-tight text-slate-950">
+            {OFFICINA_MOTIVI.titolo}{" "}
+            <span className="text-base font-bold text-slate-600">
+              · {OFFICINA_MOTIVI.famiglie} tipi di motivo · {COSTRUZIONI_GEOGEBRA.filter((c) => c.categoria === "moti").length} tavole GeoGebra
+            </span>
+          </h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+            {OFFICINA_MOTIVI.descrizione} Collegata a {MC_OFFICINA}.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm font-black">
+            <a href={officinaSrc()} target="_blank" rel="noopener noreferrer" className="text-blue-800 underline underline-offset-4">
+              Apri l’officina (anche alla LIM) ↗
+            </a>
+            <Link href={`/mc/${MC_OFFICINA}#sperimenta`} className="text-slate-700 underline underline-offset-4">
+              Apri nella MC →
+            </Link>
+            <Link href="/costruzioni-geometriche" className="text-slate-700 underline underline-offset-4">
+              Tavole GeoGebra dei motivi →
+            </Link>
+          </div>
         </section>
 
         <section id="proiezioni-ortogonali" className="mt-6 scroll-mt-24 rounded-xl border border-blue-200 bg-blue-50 p-6">

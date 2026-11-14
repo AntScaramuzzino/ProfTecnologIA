@@ -1001,6 +1001,396 @@ Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligon
 
 ---
 
+### I motivi modulari: dal modulo alla decorazione
+
+Un **modulo** è una figura semplice che si ripete sempre uguale, senza lasciare vuoti e senza sovrapporsi. Il **reticolo** è la rete di linee che guida il disegno: può essere a quadretti oppure isometrico, cioè fatto di triangoli. Ripetendo, ruotando o ribaltando un modulo si ottengono greche, piastrelle, rosoni, tassellature e fregi.
+
+Le costruzioni dalla 34 alla 50 ti mostrano un esempio per ogni tipo di motivo. Per inventare i tuoi motivi, con le misure per ridisegnarli sul foglio, usa l'**Officina dei motivi modulari** che trovi nella scheda SPERIMENTA.
+
+#### Costruzione 34 — Piastrelle a girandola
+
+**Servono:** foglio a quadretti da 1 cm, righello, matite colorate.
+
+**Situazione:** Hai un foglio con quadretti da 1 cm. Disegnerai quattro piastrelle quadrate di 4 × 4 quadretti, che insieme formano un quadrato di 8 cm.
+
+**Passi:**
+
+1. Ripassa un quadrato di 8 × 8 quadretti e dividilo in quattro con una riga verticale e una orizzontale a metà. *Ogni piastrella ha il lato di 4 cm.*
+
+2. Lavora nella piastrella in basso a sinistra. Traccia un segmento obliquo dal punto che sta 3 quadretti a destra del suo angolo in basso a sinistra al punto che sta 3 quadretti sopra lo stesso angolo. Fai lo stesso nell’angolo in alto a destra della piastrella, ma con 2 quadretti. Infine ripassa il quadretto che ha un vertice nel centro della piastrella e sta in alto a destra rispetto al centro. *Le diagonali tagliano i quadretti a metà, da un angolo all’angolo opposto.*
+
+3. Nella piastrella in basso a destra ridisegna il modulo girato di un quarto di giro in senso antiorario: il lato che nel modulo stava in basso ora sta a destra. *Il triangolo grande ora è nell’angolo in basso a destra.*
+
+4. In alto a destra disegna il modulo girato di mezzo giro, in alto a sinistra girato di tre quarti di giro. I triangoli grandi stanno ora nei quattro angoli esterni. *Gira il foglio di un quarto di giro alla volta: ogni piastrella deve sembrare uguale alla prima.*
+
+5. Colora le stesse figure con lo stesso colore in tutte le piastrelle: triangoli grandi in rosso, triangoli piccoli in blu, quadratini in giallo. *Al centro i quattro triangoli blu formano un quadrato messo di punta, con un quadratino giallo vicino a ogni lato.*
+
+**Perché funziona?** Ogni piastrella contiene lo stesso modulo, ruotato attorno al centro del quadrato grande: 0°, 90°, 180° e 270°. Dopo quattro quarti di giro il modulo torna com’era. Per questo il disegno finale non cambia se lo giri di 90° attorno al centro: ha una simmetria di rotazione, come una girandola.
+
+**Prova tu:** Su un foglio a quadretti disegna quattro piastrelle di 4 × 4 cm e ripeti il modulo ruotandolo. Poi gira il foglio di un quarto di giro: il disegno deve sembrare identico.
+
+---
+
+#### Costruzione 35 — Meandro a spirale
+
+**Servono:** foglio a quadretti, righello, matite colorate, pennarello scuro.
+
+**Situazione:** Disegnerai una greca alta 6 quadretti, con tre spirali. Ogni spirale è larga 3 quadretti e si ripete ogni 4.
+
+**Passi:**
+
+1. Traccia due linee orizzontali lunghe 12 quadretti, distanti tra loro 6 quadretti. *La fascia tra le due linee conterrà la greca.*
+
+2. Un quadretto sopra la cornice in basso traccia la linea di base, lunga anche lei 12 quadretti. *Le spirali partono tutte da questa linea.*
+
+3. Parti dall’inizio della linea di base e muoviti così: su 4, destra 3, giù 3, sinistra 2, su 2, destra 1, giù 1. *Ogni tratto della spirale resta a un quadretto di distanza dagli altri.*
+
+4. Spostati di 4 quadretti a destra e ridisegna la stessa spirale. Poi spostati ancora di 4 quadretti e disegnala la terza volta. *Confronta le tre spirali: devono essere identiche.*
+
+5. Colora di rosso la striscia tra la cornice in basso e la linea di base, e di giallo la fascia con le spirali. *Ripassa la linea della greca con un pennarello scuro.*
+
+**Perché funziona?** Il meandro è lo stesso disegno spostato sempre di 4 quadretti verso destra. Uno spostamento che non ruota e non ribalta la figura si chiama traslazione. Contare i quadretti garantisce che ogni ripetizione sia identica alla prima: se sbagli un tratto, l’errore si vede subito nel confronto.
+
+**Prova tu:** Su un foglio a quadretti disegna una greca con cinque spirali. Controlla che l’inizio di ogni spirale sia a 4 quadretti dall’inizio della spirale precedente.
+
+---
+
+#### Costruzione 36 — Diagonali e mediane del quadrato
+
+**Servono:** righello, squadre, matite colorate.
+
+**Situazione:** Hai un quadrato ABCD con il lato di 8 cm. Le linee che tracci sono la sua struttura portante: diagonali e mediane.
+
+**Passi:**
+
+1. Segna con il righello il punto medio di ogni lato, a 4 cm dai vertici, e numera i punti girando attorno al quadrato: 1 su AB, 2 su BC, 3 su CD, 4 su DA. Unisci 1 con 3 e 2 con 4. *Le mediane dividono il quadrato in quattro quadrati di 4 cm.*
+
+2. Unisci A con C e B con D. Le diagonali passano anche loro per il centro del quadrato. *Ora il quadrato è diviso in 8 triangoli uguali.*
+
+3. In ognuno dei quattro quadrati di 4 cm traccia la diagonale che manca, quella che non passa per il centro del quadrato grande. *In ogni quadrato piccolo una delle due diagonali esiste già: è metà di una diagonale grande.*
+
+4. In ogni quadrato piccolo segna i punti medi dei lati, a 2 cm dai vertici, e traccia le sue due mediane. *Ora hai 32 triangoli.*
+
+5. Colora i triangoli in modo che, piegando il foglio lungo una mediana o una diagonale del quadrato grande, le due metà abbiano gli stessi colori. *Controlla: ogni triangolo colorato ha il suo gemello a specchio dello stesso colore.*
+
+**Perché funziona?** Le due mediane e le due diagonali sono gli assi di simmetria del quadrato: se pieghi il foglio lungo uno di essi, le due metà combaciano. Ripetendo la costruzione nei quattro quadrati più piccoli ottieni 32 triangoli. Se colori allo stesso modo i triangoli che si corrispondono rispetto agli assi, il motivo resta simmetrico come il quadrato.
+
+**Prova tu:** Traccia un quadrato di lato 12 cm con mediane e diagonali, poi ripetile nei quattro quadrati da 6 cm. Colora e piega il foglio lungo una diagonale: i colori delle due metà devono combaciare.
+
+---
+
+#### Costruzione 37 — Mediane del triangolo equilatero
+
+**Servono:** righello, compasso, matite colorate.
+
+**Situazione:** Hai il segmento AB, lungo 8 cm: è la base di un triangolo equilatero, cioè con tre lati uguali.
+
+**Passi:**
+
+1. Apri il compasso quanto AB. Punta in A e traccia un arco sopra il segmento, poi punta in B e traccia un secondo arco: si incontrano in C. Unisci C con A e con B. *AC e BC sono lunghi 8 cm come AB.*
+
+2. Segna il punto medio di ogni lato, a 4 cm dai vertici: 1 su AB, 2 su BC, 3 su CA. Unisci ogni punto medio con il vertice opposto: A con 2, B con 3, C con 1. *Mediana del triangolo: unisce un vertice con il punto medio del lato opposto. Le tre mediane si incontrano nel baricentro G.*
+
+3. Unisci 1 con 2, 2 con 3 e 3 con 1: ottieni un triangolo equilatero capovolto, con il lato di 4 cm. *Ora il triangolo è diviso in dodici parti.*
+
+4. Nei tre triangoli d’angolo colora di rosso la metà a sinistra della mediana e di giallo la metà a destra, guardando dal vertice verso il centro (gira il foglio per avere ogni volta il vertice vicino a te). Nel triangolo centrale alterna blu e azzurro. *Gira il foglio di un terzo di giro: il disegno resta uguale.*
+
+**Perché funziona?** Le tre mediane si incontrano in un solo punto, il baricentro G. Il segmento che unisce i punti medi di due lati è parallelo al terzo lato e lungo la metà: per questo i punti medi formano un triangolo equilatero più piccolo, capovolto. Ogni mediana taglia a metà il lato di questo triangolo che attraversa. Colorando in modo diverso le due metà di ogni triangolo d’angolo ottieni una girandola: il disegno torna uguale dopo un terzo di giro.
+
+**Prova tu:** Costruisci un triangolo equilatero di lato 12 cm e traccia le mediane. Misura la distanza del baricentro G da un vertice e dal punto medio del lato opposto: la prima deve essere il doppio della seconda (circa 6,9 e 3,5 cm).
+
+---
+
+#### Costruzione 38 — Optical Art: scacchiera con cerchio
+
+**Servono:** righello, compasso, pennarello nero.
+
+**Situazione:** Hai un rettangolo di 10 × 8 cm. Diventerà una scacchiera con caselle da 1 cm.
+
+**Passi:**
+
+1. Segna un punto ogni centimetro sui quattro lati e unisci i punti opposti: 9 linee verticali e 7 orizzontali. *È la struttura del disegno: tracciala leggera.*
+
+2. Punta il compasso nell’incrocio al centro del rettangolo, il punto O, e traccia una circonferenza di raggio 3 cm. *La circonferenza taglia molte caselle in due pezzi.*
+
+3. Colora di nero una casella sì e una no, partendo dall’angolo in basso a sinistra. Quando una casella è tagliata dalla circonferenza, colora solo il pezzo che sta fuori. *Due caselle con un lato in comune non hanno mai lo stesso colore.*
+
+4. Dentro il cerchio fai il contrario: colora di nero le caselle (o i pezzi) che nella scacchiera sarebbero bianche e lascia bianche quelle che sarebbero nere. *Lungo la circonferenza ogni pezzo nero ne tocca uno bianco.*
+
+**Perché funziona?** La circonferenza alla fine non è ripassata, eppure il cerchio si vede benissimo: lungo il suo bordo ogni casella cambia colore, e l’occhio unisce tutti quei cambi in una linea. È il principio dell’Optical Art, nata negli anni Sessanta del Novecento: forme semplici, bianco e nero, e un’illusione ottica che fa sembrare il disegno in movimento o in rilievo.
+
+**Prova tu:** Disegna una scacchiera di 12 × 8 caselle da 1 cm e una circonferenza di raggio 3 cm centrata su un incrocio. Controlla lungo la circonferenza: ogni pezzo nero deve toccare un pezzo bianco.
+
+---
+
+#### Costruzione 39 — Optical Art a colori: cerchi e quadrati
+
+**Servono:** righello, squadre, compasso, matite o pennarelli colorati.
+
+**Situazione:** Hai un quadrato con il lato di 8 cm. Lo dividerai in una maglia di 4 × 4 caselle da 2 cm. Sul foglio da disegno puoi farlo più grande: 20 cm di lato, 10 × 10 caselle.
+
+**Passi:**
+
+1. Segna sui lati i punti a 2, 4 e 6 cm e traccia le linee verticali e orizzontali. *Ottieni 16 caselle uguali.*
+
+2. In ogni casella traccia le due diagonali con tratto leggero: si incontrano nel centro. *Le diagonali servono solo a trovare i centri: alla fine le cancellerai.*
+
+3. Apri il compasso a 0,8 cm. Punta nel centro di ognuna delle 12 caselle del bordo e traccia una circonferenza. *Tra il cerchio e i lati della casella restano 2 mm.*
+
+4. Nelle 4 caselle centrali disegna un quadrato con i lati paralleli a quelli della casella, a 2 mm di distanza: è largo 1,6 cm, come il cerchio. *I vertici del quadrato stanno sulle diagonali.*
+
+5. Colora le caselle a scacchiera in blu e viola. Colora le figure delle caselle blu in giallo e quelle delle caselle viola in arancione. *Cancella le diagonali prima di colorare.*
+
+**Perché funziona?** Le diagonali di un quadrato si incontrano nel suo centro: è il punto dove puntare il compasso. Ogni cerchio ha il raggio di 0,8 cm; ogni quadrato interno ha i vertici sulle diagonali ed è largo 1,6 cm, quanto il cerchio. Figure uguali ripetute con ordine, colori accesi e contrastanti: così Victor Vasarely faceva «vibrare» i suoi quadri.
+
+**Prova tu:** Disegna un quadrato di 20 cm di lato con una maglia di 2 cm (10 × 10 caselle) e riempilo di cerchi di raggio 0,8 cm e di quadrati di lato 1,6 cm. Controlla con il righello: tra ogni figura e i lati della sua casella devono restare 2 mm.
+
+---
+
+#### Costruzione 40 — Stella a otto punte
+
+**Servono:** righello, squadra, compasso, goniometro, matite colorate.
+
+**Situazione:** Hai un segmento AB di 8 cm con il punto medio O. Da qui nasce la circonferenza che contiene la stella.
+
+**Passi:**
+
+1. Con la squadra traccia la perpendicolare ad AB nel punto O: è l’asse del segmento. Poi apri il compasso da O ad A e traccia la circonferenza. *La circonferenza passa per A e per B: il raggio è 4 cm.*
+
+2. Con il goniometro centrato in O traccia le due rette a 45° rispetto ad AB. Insieme ad AB e all’asse tagliano la circonferenza in 8 punti: numera i punti da 1 a 8 in senso antiorario. B è il punto 1, A è il punto 5. *Tra due punti vicini c’è sempre un angolo di 45°.*
+
+3. Unisci ogni punto con quello tre posti più avanti: 1 con 4, 2 con 5, 3 con 6… fino a 8 con 3. *Corda: segmento che unisce due punti della circonferenza. Le otto corde si incrociano formando la stella e, al centro, un ottagono.*
+
+4. Colora di blu le parti tra la stella e la circonferenza, di rosso la stella e di giallo l’ottagono al centro. *Ripassa con tratto marcato il contorno della stella.*
+
+**Perché funziona?** Gli otto punti dividono la circonferenza in archi uguali da 45°. Ogni corda unisce due punti separati da tre archi, cioè 135°: tutte le corde sono uguali e stanno alla stessa distanza dal centro. Per questo si tagliano formando una stella regolare con otto punte, e al centro resta un ottagono regolare. Molti arabeschi dell’arte islamica nascono così, dal cerchio.
+
+**Prova tu:** Traccia una circonferenza di raggio 6 cm, dividila ogni 45° e costruisci la stella. Misura le otto corde: devono essere tutte lunghe circa 11,1 cm.
+
+---
+
+#### Costruzione 41 — Rosone a sei petali
+
+**Servono:** compasso, matite colorate.
+
+**Situazione:** Hai il punto O, centro del rosone. Userai sempre la stessa apertura del compasso: 3 cm.
+
+**Passi:**
+
+1. Apri il compasso a 3 cm, punta in O e traccia la circonferenza. Segna in alto il punto 1. *Il punto 1 può stare ovunque sulla circonferenza.*
+
+2. Punta in 1 e traccia un archetto che taglia la circonferenza: è il punto 2. Punta in 2 e trova 3, e così via fino a 6, procedendo in senso orario. *L’ultimo archetto, da 6, deve cadere esattamente su 1.*
+
+3. Punta in 1 e traccia l’arco che va da 6 a 2 passando per O. Ripeti puntando negli altri cinque punti. *Ogni arco passa per il centro O.*
+
+4. Colora i petali alternando rosso e blu. Colora di giallo lo spazio tra i petali. *Tre petali rossi e tre blu, uno sì e uno no.*
+
+**Perché funziona?** Riportando il raggio sulla circonferenza si trovano sei punti esattamente: è la stessa costruzione dell’esagono inscritto. Ogni arco di petalo ha il centro in uno dei sei punti e lo stesso raggio, quindi passa per il centro O e per i due punti vicini. Gli archi con centro in due punti alterni, per esempio 1 e 3, si incontrano in O e nel punto in mezzo, il 2: lo spazio tra loro è un petalo.
+
+**Prova tu:** Costruisci un rosone con apertura di 5 cm. Controlla che l’ultimo archetto torni esattamente sul punto 1 e che tutti i petali passino per il centro.
+
+---
+
+#### Costruzione 42 — Girandola di quadrati
+
+**Servono:** righello con i millimetri, matita ben appuntita, matite colorate.
+
+**Situazione:** Hai un quadrato ABCD con il lato di 8 cm. Dentro disegnerai otto quadrati, uno dentro l’altro.
+
+**Passi:**
+
+1. Su ogni lato segna un punto a 1 cm dal vertice di partenza: su AB a 1 cm da A, su BC a 1 cm da B, su CD a 1 cm da C, su DA a 1 cm da D. Unisci i quattro punti. *Ottieni un quadrato ruotato, con il lato di circa 7,1 cm.*
+
+2. Sul nuovo quadrato misura ancora 1 cm da ogni vertice, nello stesso verso, e unisci i punti. *Misura sempre 1 cm: il quadrato si rimpicciolisce e ruota sempre di più.*
+
+3. Continua allo stesso modo finché hai disegnato otto quadrati dentro ABCD. *Gli ultimi quadrati sono piccoli: usa una matita ben appuntita.*
+
+4. In ogni giro ci sono quattro triangolini. Colora di rosso quelli vicini ai vertici B e D, di blu quelli vicini ad A e C, e continua lungo la stessa spirale. *Compaiono quattro bracci a spirale, come in una girandola.*
+
+**Perché funziona?** Su ogni lato misuri la stessa distanza, girando sempre nello stesso verso. I quattro triangolini che restano negli angoli sono uguali tra loro, quindi i nuovi lati sono uguali e formano un quadrato, un po’ più piccolo e ruotato. Ripetendo la costruzione la rotazione si accumula: i triangolini dello stesso colore si allineano lungo una spirale.
+
+**Prova tu:** Parti da un quadrato di lato 10 cm e misura ogni volta 1 cm. Dopo il primo giro misura il lato del nuovo quadrato: deve venire circa 9,1 cm.
+
+---
+
+#### Costruzione 43 — Formella cosmatesca
+
+**Servono:** righello, squadre, compasso, matite colorate.
+
+**Situazione:** Hai una formella quadrata con il lato di 8 cm. La decorerai con un rombo, triangoli sempre più piccoli e una ruota al centro.
+
+**Passi:**
+
+1. Segna il punto medio di ogni lato, a 4 cm dai vertici: 1, 2, 3 e 4. Unisci 1 con 2, 2 con 3, 3 con 4 e 4 con 1. *In realtà è un quadrato ruotato di 45°; negli angoli restano quattro triangoli.*
+
+2. In ogni triangolo d’angolo trova i punti medi dei suoi tre lati e uniscili: il triangolo si divide in quattro. *Il triangolino al centro è capovolto rispetto agli altri tre.*
+
+3. Nei triangolini che toccano i vertici del triangolo d’angolo unisci di nuovo i punti medi. Lascia intero il triangolino capovolto. *I lati più corti misurano 1 cm.*
+
+4. Trova il centro della formella unendo con tratto leggero 1 con 3 e 2 con 4. Punta lì e traccia due circonferenze: raggio 2 cm e raggio 1,3 cm. *La ruota sta tutta dentro il rombo.*
+
+5. Colora di verde il rombo, di rosso il cerchio grande e d’oro quello piccolo. Nei triangoli d’angolo i triangolini capovolti restano bianchi, gli altri sono rossi. *Alterna i colori di formelle vicine per un pavimento intero.*
+
+**Perché funziona?** Se unisci i punti medi dei lati di un triangolo, lo dividi in quattro triangoli uguali, con la stessa forma di quello di partenza. Ripetendo l’operazione nei triangoli d’angolo, la figura si riempie di triangoli sempre più piccoli. I Cosmati, artigiani romani del marmo vissuti nel Medioevo, decoravano così i pavimenti delle chiese, con porfido rosso, serpentino verde e marmo bianco.
+
+**Prova tu:** Disegna una formella di lato 12 cm: la ruota ha raggi di 3 cm e 2 cm. Controlla che i quattro lati del rombo siano uguali: circa 8,5 cm.
+
+---
+
+#### Costruzione 44 — Circonferenze traslate
+
+**Servono:** righello, squadre, compasso, matite colorate.
+
+**Situazione:** Hai un reticolo a quadretti con il lato di 2 cm. I nodi, cioè gli incroci delle linee, saranno i centri delle circonferenze.
+
+**Passi:**
+
+1. Apri il compasso dal nodo in basso a sinistra fino al centro del quadretto vicino: circa 1,4 cm. Per trovare il centro del quadretto traccia leggere le sue due diagonali. Punta su ognuno dei quattro nodi della fila in basso e traccia le circonferenze. *Due circonferenze vicine si incontrano nei centri dei quadretti.*
+
+2. Con la stessa apertura punta sui nodi delle altre due file e traccia le circonferenze. *Non cambiare l’apertura: se il compasso si chiude un po’, i fiori non si chiudono.*
+
+3. Tra due circonferenze vicine c’è una lente, la parte in comune. Colora di rosso le lenti in piedi (verticali) e di blu quelle sdraiate (orizzontali). *Attorno a ogni centro di quadretto compare un fiore a quattro petali.*
+
+**Perché funziona?** Il raggio è la distanza tra un nodo e il centro di un quadretto vicino, cioè metà della diagonale del quadretto: circa 1,41 cm per quadretti da 2 cm. Così due circonferenze vicine si incontrano proprio nei centri dei quadretti. Attorno a ogni centro si toccano quattro «lenti»: è il fiore a quattro petali. Spostare la stessa figura a passo costante si chiama traslazione.
+
+**Prova tu:** Traccia un reticolo di 4 × 3 quadretti da 3 cm e apri il compasso a 2,1 cm. Controlla che le circonferenze vicine si incontrino nel centro dei quadretti.
+
+---
+
+#### Costruzione 45 — Tassellatura di cubi
+
+**Servono:** carta isometrica (oppure squadra a 30° e 60°), righello, matite colorate in tre toni.
+
+**Situazione:** Hai un foglio con il reticolo isometrico: linee verticali e linee inclinate di 30° che formano triangoli uguali. Lo puoi tracciare con le squadre a 30° e 60°.
+
+**Passi:**
+
+1. Scegli un nodo, cioè un incrocio delle linee, come centro e ripassa i sei lati che lo circondano, seguendo le linee del reticolo. *L’esagono ha due lati verticali e quattro inclinati.*
+
+2. Dal centro traccia tre segmenti: verso il vertice in basso, verso il vertice in alto a destra e verso quello in alto a sinistra. Formano una Y. *Ottieni tre rombi uguali: uno in alto, uno a sinistra, uno a destra.*
+
+3. Disegna altri sette esagoni: ognuno ha un lato in comune con un esagono già disegnato. Dividi ognuno con la stessa Y. *Gli esagoni combaciano senza vuoti.*
+
+4. Colora tutti i rombi in alto con il tono chiaro, quelli a sinistra con il tono medio e quelli a destra con il tono scuro. *Compaiono i cubi, illuminati dall’alto.*
+
+**Perché funziona?** Gli esagoni regolari ricoprono il piano senza lasciare vuoti e senza sovrapporsi: è una tassellatura. Tre segmenti dal centro dividono ogni esagono in tre rombi uguali. Colorati con un tono chiaro, uno medio e uno scuro, sempre nella stessa posizione, i rombi sembrano le tre facce visibili di un cubo illuminato dall’alto: l’occhio vede il rilievo anche se il disegno è piatto.
+
+**Prova tu:** Su carta isometrica disegna almeno sei esagoni di lato 2 cm che combaciano e dividili in rombi. Controlla che i rombi dello stesso tono siano tutti nella stessa posizione.
+
+---
+
+#### Costruzione 46 — Tartan
+
+**Servono:** righello con i millimetri, squadre, matite colorate.
+
+**Situazione:** Hai un quadrato con il lato di 8 cm. Lo dividerai in fasce: verde 2 cm, rosso 0,5, blu 1, giallo 1, blu 1, rosso 0,5, verde 2.
+
+**Passi:**
+
+1. Sul lato in basso e su quello in alto segna i punti a 2 – 2,5 – 3,5 – 4,5 – 5,5 – 6 cm dal vertice di sinistra e traccia le linee verticali. *Usa il righello con i millimetri per le fasce da 0,5 cm.*
+
+2. Segna le stesse misure sui lati di destra e di sinistra, partendo dal basso, e traccia le linee orizzontali. *Ora hai una griglia di rettangoli di misure diverse.*
+
+3. Colora ogni fascia verticale con il suo colore, con tratto leggero, dall’alto in basso. *Premi poco la matita: dovrai ripassarci sopra.*
+
+4. Colora le fasce orizzontali, sempre con tratto leggero, passando anche sopra i colori verticali. *Dove si incrociano due colori diversi nasce un colore nuovo.*
+
+**Perché funziona?** Il tartan nasce dalla tessitura: i fili verticali (ordito) e quelli orizzontali (trama) seguono la stessa sequenza di colori. Per questo il disegno è simmetrico rispetto alla diagonale. Dove una fascia verticale incrocia una fascia orizzontale dello stesso colore il colore resta pieno; dove i colori sono diversi si mescolano e nasce un terzo colore.
+
+**Prova tu:** Inventa una sequenza simmetrica di fasce che in tutto misuri 10 cm e disegna il tuo tartan in un quadrato di 10 cm. Controlla: piegando il foglio lungo una diagonale i colori devono combaciare.
+
+---
+
+#### Costruzione 47 — Fregio con rotazione di mezzo giro
+
+**Servono:** righello, squadre, carta da lucido, matite colorate.
+
+**Situazione:** Hai una fascia lunga 12 cm e alta 4 cm, con l’asse, cioè la linea di mezzo, tratteggiato. Il motivo è una L, disegnata sopra l’asse.
+
+**Passi:**
+
+1. Segna un punto ogni 2 cm sulle linee in alto e in basso e traccia le linee verticali: hai 6 riquadri. *Ogni riquadro conterrà un motivo.*
+
+2. Nel primo riquadro, sopra l’asse, disegna la L: la gamba verticale è alta 1,25 cm e larga 0,5 cm; il piede è lungo 1 cm e alto 0,5 cm, e punta verso destra. Tieniti a 0,5 cm dall’asse e dal bordo sinistro del riquadro. *Aiutati con i quadretti da 0,5 cm.*
+
+3. Ricalca la L su carta da lucido. Punta la matita nel punto R, dove l’asse incrocia la linea tra il primo e il secondo riquadro, e gira il lucido di mezzo giro: la L va sotto l’asse, nel secondo riquadro, capovolta. Ripassala sul foglio. *Senza lucido: la L capovolta sta 0,5 cm sotto l’asse e a 0,5 cm dal bordo destro del secondo riquadro, con il piede verso sinistra.*
+
+4. Negli altri riquadri alterna la L dritta e la L capovolta: dritta nel terzo e nel quinto, capovolta nel quarto e nel sesto. *Gira il foglio di mezzo giro: ogni L dritta prende il posto di una L capovolta e il fregio sembra lo stesso.*
+
+5. Colora di rosso le L sopra l’asse e di blu quelle sotto. Colora il fondo della fascia di giallo chiaro. *I colori aiutano a vedere la rotazione.*
+
+**Perché funziona?** Ogni motivo capovolto è il motivo precedente ruotato di 180° attorno a un punto dell’asse, a metà strada tra i due: per i primi due è il punto R. Una rotazione di mezzo giro porta l’alto in basso e la sinistra a destra, senza ribaltare la figura come farebbe uno specchio. I fregi possibili sono sette in tutto: questo è quello che ha solo spostamenti e rotazioni di mezzo giro.
+
+**Prova tu:** Disegna un fregio di 6 riquadri da 3 cm con un motivo inventato da te. Prima di colorare gira il foglio di mezzo giro: le forme del fregio devono sembrare le stesse.
+
+---
+
+#### Costruzione 48 — Poligono stellato dal pentagono
+
+**Servono:** righello, compasso, matite colorate.
+
+**Situazione:** Hai una circonferenza di raggio 4 cm con il pentagono regolare inscritto ABCDE, costruito come nella costruzione 8.
+
+**Passi:**
+
+1. Unisci ogni vertice con i due vertici che non gli stanno accanto: A con C e D, B con D ed E, C con E. Sono cinque diagonali in tutto. *Le diagonali formano una stella a cinque punte.*
+
+2. Al centro le diagonali si incrociano in cinque punti: 1, 2, 3, 4 e 5. Ripassa il pentagono che formano: è il nucleo della stella. *Il nucleo è capovolto rispetto al pentagono ABCDE.*
+
+3. Traccia le diagonali del nucleo, come al passo 1: dentro la prima stella ne compare una seconda, più piccola e capovolta. *Potresti continuare ancora: la stella non finisce mai.*
+
+4. Colora di rosso la stella grande, di giallo il nucleo e di blu la stella piccola. *Ripassa con tratto marcato i contorni delle stelle.*
+
+**Perché funziona?** Le cinque diagonali di un pentagono regolare sono tutte uguali e si tagliano a due a due. I cinque punti d’incontro sono alla stessa distanza dal centro e formano un nuovo pentagono regolare, capovolto: il nucleo della stella. Ripetendo le diagonali nel nucleo si ottiene una stella più piccola, e così via. Ogni punta della stella ha un angolo di 36°.
+
+**Prova tu:** Inscrivi un pentagono regolare in una circonferenza di raggio 9 cm e traccia le diagonali. Misura con il goniometro l’angolo di una punta: deve essere di 36°.
+
+---
+
+#### Costruzione 49 — Triangolo di Sierpiński
+
+**Servono:** righello, compasso, matite colorate.
+
+**Situazione:** Hai un triangolo equilatero ABC con il lato di 8 cm. Il matematico polacco Wacław Sierpiński ne ha fatto un frattale.
+
+**Passi:**
+
+1. Segna i punti medi dei tre lati, a 4 cm dai vertici, e uniscili. Il triangolo centrale, capovolto, è quello da togliere. *Ottieni quattro triangoli uguali con il lato di 4 cm.*
+
+2. In ognuno dei tre triangoli d’angolo trova i punti medi dei lati (a 2 cm dai vertici) e uniscili. *Il triangolo centrale grande non si tocca più: resta vuoto.*
+
+3. Ripeti nei nove triangolini d’angolo: i punti medi sono a 1 cm dai vertici. Ora ogni lato di ABC è diviso in 8 parti uguali. *Con un giro in più ogni lato sarebbe diviso in 16 parti.*
+
+4. Colora i 27 triangolini con la punta in alto; lascia bianchi tutti i triangoli capovolti. *I triangoli bianchi sono i «buchi» del frattale.*
+
+**Perché funziona?** Unire i punti medi di un triangolo equilatero lo divide in quattro triangoli equilateri uguali, con il lato dimezzato. Togliendo quello centrale e ripetendo la stessa operazione negli altri tre, ogni pezzo diventa una copia ridotta della figura intera: è la proprietà dei frattali. A ogni giro i triangoli pieni triplicano: 1, 3, 9, 27…
+
+**Prova tu:** Parti da un triangolo equilatero di lato 16 cm e ripeti l’operazione quattro volte. Conta i triangolini pieni: devono essere 81, con il lato di 1 cm.
+
+---
+
+#### Costruzione 50 — Curve fatte di rette
+
+**Servono:** righello, squadra, matita ben appuntita, matite colorate.
+
+**Situazione:** Hai due segmenti perpendicolari lunghi 8 cm, che si incrociano a metà nel punto O: formano quattro bracci (semiassi) da 4 cm.
+
+**Passi:**
+
+1. Su ogni braccio segna un punto ogni 0,5 cm partendo da O: 8 punti per braccio. Numera i punti da 1 (il più vicino a O) a 8. *Sui bracci orizzontali e su quelli verticali i numeri crescono allontanandosi da O.*
+
+2. Nel quarto in alto a destra unisci il punto 1 orizzontale con l’8 verticale, il 2 con il 7, il 3 con il 6… fino all’8 con l’1. La somma dei due numeri è sempre 9. *I segmenti si appoggiano a una curva che si piega verso O.*
+
+3. Con la stessa regola unisci i punti negli altri tre quarti. *Le quattro curve formano una stella a quattro punte.*
+
+4. Colora la stella che sta dentro le quattro curve, alternando due colori nei quarti. *Il colore fa risaltare la curva, anche se hai tracciato solo segmenti dritti.*
+
+**Perché funziona?** Ogni segmento unisce un punto di un braccio con un punto dell’altro, e la somma delle due distanze dal centro è sempre la stessa: 4,5 cm. Segmenti così si appoggiano tutti alla stessa curva, che li tocca uno per uno senza tagliarli: si chiama inviluppo, e qui è un arco di parabola. Più punti usi, più la curva sembra continua.
+
+**Prova tu:** Disegna una croce con bracci di 8 cm e punti ogni 0,5 cm (16 per braccio): la somma dei numeri da unire è 17. Controlla che la curva che compare sia liscia: ogni segmento la sfiora senza tagliarla.
+
+---
+
 > **⚠️ Box sicurezza:**
 > Il compasso ha una punta metallica tagliente. Non rivolgere la punta verso i compagni. Non tenere il compasso in mano mentre cammini. Quando non lo usi, chiudilo o appoggialo sul banco con la punta rivolta verso il basso sul foglio.
 

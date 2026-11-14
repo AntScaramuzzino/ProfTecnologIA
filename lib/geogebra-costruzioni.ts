@@ -1,10 +1,11 @@
 // Registro delle tavole di costruzione geometrica GeoGebra (MC-DIS-1-01).
 // - Le tavole 1 e 2 hanno un embed dedicato (pagine scritte a mano).
 // - Le tavole 3–8 sono definite in public/embeds/geogebra/costruzioni-base/activity.js
-// - Le tavole 9+ in public/embeds/geogebra/costruzioni-base/tavole.js
+// - Le tavole 9–33 in public/embeds/geogebra/costruzioni-base/tavole.js
+// - Le tavole 34+ (motivi modulari) in public/embeds/geogebra/costruzioni-base/tavole-moduli.js
 // Per aggiungerne una: definiscila in tavole.js, poi aggiungi qui una riga (skill «tavole-geogebra»).
 
-export type CategoriaCostruzione = "perp" | "segm" | "lato" | "insc" | "tria" | "curv";
+export type CategoriaCostruzione = "perp" | "segm" | "lato" | "insc" | "tria" | "curv" | "moti";
 
 /** Ordine e titoli dei gruppi nella pagina /costruzioni-geometriche */
 export const CATEGORIE_COSTRUZIONI: { id: CategoriaCostruzione; titolo: string; descrizione: string }[] = [
@@ -14,6 +15,7 @@ export const CATEGORIE_COSTRUZIONI: { id: CategoriaCostruzione; titolo: string; 
   { id: "insc", titolo: "Poligoni inscritti nella circonferenza", descrizione: "Dividere la circonferenza in parti uguali." },
   { id: "tria", titolo: "Triangoli", descrizione: "Dai dati (lati, altezza, cateti, ipotenusa) al triangolo." },
   { id: "curv", titolo: "Ovali, ovoli e spirali", descrizione: "Curve fatte di archi di compasso raccordati." },
+  { id: "moti", titolo: "Motivi modulari", descrizione: "Un modulo che si ripete: greche, piastrelle, stelle, rosoni, tassellature, fregi e frattali." },
 ];
 
 export interface CostruzioneGeoGebra {
@@ -163,6 +165,74 @@ export const COSTRUZIONI_GEOGEBRA: CostruzioneGeoGebra[] = [
     descrizione: "Quarti di circonferenza attorno a un piccolo quadrato.",
     intro: "Guarda come i vertici di un piccolo quadrato fanno da centri, uno dopo l’altro, e a ogni quarto di giro il raggio cresce di un lato. Poi ripeti la costruzione sul tuo foglio.",
     provaTu: "Costruisci una spirale con passo di 2 cm: il quadrato ha il lato di 0,5 cm. Traccia almeno otto archi e misura la distanza tra due giri vicini." },
+  { numero: 34, categoria: "moti", slug: "piastrelle-girandola", titolo: "Piastrelle a girandola",
+    descrizione: "Un modulo sui quadretti, ripetuto quattro volte e ruotato ogni volta di un quarto di giro.",
+    intro: "Guarda come lo stesso modulo, ridisegnato in quattro piastrelle e ruotato ogni volta di un quarto di giro, forma una girandola. Poi ripeti la costruzione sul tuo foglio a quadretti.",
+    provaTu: "Su un foglio a quadretti disegna quattro piastrelle di 4 × 4 cm e ripeti il modulo ruotandolo. Poi gira il foglio di un quarto di giro: il disegno deve sembrare identico." },
+  { numero: 35, categoria: "moti", slug: "meandro-spirale", titolo: "Meandro a spirale",
+    descrizione: "La greca: una spirale ad angoli retti ripetuta a passo costante.",
+    intro: "Guarda come una linea che piega sempre ad angolo retto si avvolge a spirale e si ripete ogni 4 quadretti lungo la fascia. Poi ripeti la costruzione sul tuo foglio a quadretti.",
+    provaTu: "Su un foglio a quadretti disegna una greca con cinque spirali. Controlla che l’inizio di ogni spirale sia a 4 quadretti dall’inizio della spirale precedente." },
+  { numero: 36, categoria: "moti", slug: "quadrato-diagonali-mediane", titolo: "Diagonali e mediane del quadrato",
+    descrizione: "La struttura portante del quadrato diventa un motivo simmetrico.",
+    intro: "Guarda come mediane e diagonali, ripetute nei quadrati più piccoli, dividono il quadrato in 32 triangoli da colorare in modo simmetrico. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Traccia un quadrato di lato 12 cm con mediane e diagonali, poi ripetile nei quattro quadrati da 6 cm. Colora e piega il foglio lungo una diagonale: i colori delle due metà devono combaciare." },
+  { numero: 37, categoria: "moti", slug: "triangolo-mediane", titolo: "Mediane del triangolo equilatero",
+    descrizione: "Mediane e punti medi dividono il triangolo in dodici parti.",
+    intro: "Guarda come le tre mediane e il triangolo dei punti medi dividono il triangolo equilatero in dodici parti, da colorare a girandola. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Costruisci un triangolo equilatero di lato 12 cm e traccia le mediane. Misura la distanza del baricentro G da un vertice e dal punto medio del lato opposto: la prima deve essere il doppio della seconda (circa 6,9 e 3,5 cm)." },
+  { numero: 38, categoria: "moti", slug: "optical-scacchiera", titolo: "Optical Art: scacchiera con cerchio",
+    descrizione: "Dentro il cerchio bianco e nero si scambiano.",
+    intro: "Guarda come una circonferenza tracciata su una scacchiera, con i colori invertiti al suo interno, fa comparire un cerchio che sembra staccarsi dal foglio. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Disegna una scacchiera di 12 × 8 caselle da 1 cm e una circonferenza di raggio 3 cm centrata su un incrocio. Controlla lungo la circonferenza: ogni pezzo nero deve toccare un pezzo bianco." },
+  { numero: 39, categoria: "moti", slug: "optical-cerchi-maglia", titolo: "Optical Art a colori: cerchi e quadrati",
+    descrizione: "Cerchi e quadrati della stessa larghezza in una maglia di 2 cm.",
+    intro: "Guarda come le diagonali trovano il centro di ogni casella e come cerchi e quadrati della stessa misura riempiono la maglia. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Disegna un quadrato di 20 cm di lato con una maglia di 2 cm (10 × 10 caselle) e riempilo di cerchi di raggio 0,8 cm e di quadrati di lato 1,6 cm. Controlla con il righello: tra ogni figura e i lati della sua casella devono restare 2 mm." },
+  { numero: 40, categoria: "moti", slug: "stella-otto-punte", titolo: "Stella a otto punte",
+    descrizione: "Otto punti sulla circonferenza e otto corde: la stella degli arabeschi.",
+    intro: "Guarda come otto corde uguali, tracciate tra i punti che dividono la circonferenza ogni 45°, formano una stella a otto punte con un ottagono al centro. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Traccia una circonferenza di raggio 6 cm, dividila ogni 45° e costruisci la stella. Misura le otto corde: devono essere tutte lunghe circa 11,1 cm." },
+  { numero: 41, categoria: "moti", slug: "rosone-sei-petali", titolo: "Rosone a sei petali",
+    descrizione: "Una sola apertura di compasso disegna un fiore.",
+    intro: "Guarda come la stessa apertura del compasso traccia la circonferenza, trova sei punti e disegna sei petali che si incontrano al centro. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Costruisci un rosone con apertura di 5 cm. Controlla che l’ultimo archetto torni esattamente sul punto 1 e che tutti i petali passino per il centro." },
+  { numero: 42, categoria: "moti", slug: "girandola-quadrati", titolo: "Girandola di quadrati",
+    descrizione: "Quadrati uno dentro l’altro, ognuno un po’ ruotato.",
+    intro: "Guarda come misurando sempre 1 cm su ogni lato si ottengono quadrati sempre più piccoli e ruotati, e come i triangolini colorati formano quattro bracci a spirale. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Parti da un quadrato di lato 10 cm e misura ogni volta 1 cm. Dopo il primo giro misura il lato del nuovo quadrato: deve venire circa 9,1 cm." },
+  { numero: 43, categoria: "moti", slug: "formella-cosmatesca", titolo: "Formella cosmatesca",
+    descrizione: "Punti medi uniti più volte attorno a un rombo e a una ruota.",
+    intro: "Guarda come unendo più volte i punti medi nascono triangoli sempre più piccoli attorno a un rombo, con una ruota al centro, come nei pavimenti dei Cosmati. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Disegna una formella di lato 12 cm: la ruota ha raggi di 3 cm e 2 cm. Controlla che i quattro lati del rombo siano uguali: circa 8,5 cm." },
+  { numero: 44, categoria: "moti", slug: "circonferenze-traslate", titolo: "Circonferenze traslate",
+    descrizione: "La stessa circonferenza su ogni nodo del reticolo.",
+    intro: "Guarda come la stessa circonferenza, ripetuta su ogni nodo di un reticolo a quadretti, forma fiori a quattro petali. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Traccia un reticolo di 4 × 3 quadretti da 3 cm e apri il compasso a 2,1 cm. Controlla che le circonferenze vicine si incontrino nel centro dei quadretti." },
+  { numero: 45, categoria: "moti", slug: "cubi-isometrici", titolo: "Tassellatura di cubi",
+    descrizione: "Esagoni divisi in tre rombi: compaiono cubi in rilievo.",
+    intro: "Guarda come gli esagoni disegnati sulla carta isometrica, divisi in tre rombi e colorati con tre toni, sembrano cubi in rilievo. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Su carta isometrica disegna almeno sei esagoni di lato 2 cm che combaciano e dividili in rombi. Controlla che i rombi dello stesso tono siano tutti nella stessa posizione." },
+  { numero: 46, categoria: "moti", slug: "tartan", titolo: "Tartan",
+    descrizione: "La stessa sequenza di fasce in verticale e in orizzontale.",
+    intro: "Guarda come la stessa sequenza di fasce colorate, tracciata in verticale e poi in orizzontale, crea gli incroci di un tessuto scozzese. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Inventa una sequenza simmetrica di fasce che in tutto misuri 10 cm e disegna il tuo tartan in un quadrato di 10 cm. Controlla: piegando il foglio lungo una diagonale i colori devono combaciare." },
+  { numero: 47, categoria: "moti", slug: "fregio-mezzo-giro", titolo: "Fregio con rotazione di mezzo giro",
+    descrizione: "Un motivo dritto e uno capovolto, alternati lungo la fascia.",
+    intro: "Guarda come un motivo a forma di L, ruotato di mezzo giro attorno a un punto dell’asse, si alterna dritto e capovolto lungo la fascia. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Disegna un fregio di 6 riquadri da 3 cm con un motivo inventato da te. Prima di colorare gira il foglio di mezzo giro: le forme del fregio devono sembrare le stesse." },
+  { numero: 48, categoria: "moti", slug: "stella-pentagono", titolo: "Poligono stellato dal pentagono",
+    descrizione: "Le diagonali del pentagono disegnano una stella dentro l’altra.",
+    intro: "Guarda come le diagonali del pentagono regolare formano una stella a cinque punte e, al centro, un pentagono più piccolo da cui ricominciare. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Inscrivi un pentagono regolare in una circonferenza di raggio 9 cm e traccia le diagonali. Misura con il goniometro l’angolo di una punta: deve essere di 36°." },
+  { numero: 49, categoria: "moti", slug: "triangolo-sierpinski", titolo: "Triangolo di Sierpiński",
+    descrizione: "Un frattale: triangoli sempre più piccoli, sempre della stessa forma.",
+    intro: "Guarda come unendo i punti medi e ripetendo la stessa operazione nei triangoli d’angolo nasce un frattale. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Parti da un triangolo equilatero di lato 16 cm e ripeti l’operazione quattro volte. Conta i triangolini pieni: devono essere 81, con il lato di 1 cm." },
+  { numero: 50, categoria: "moti", slug: "inviluppo-rette", titolo: "Curve fatte di rette",
+    descrizione: "Solo segmenti dritti, eppure compaiono quattro curve.",
+    intro: "Guarda come tanti segmenti dritti, uniti con una regola semplice, si appoggiano a una curva e formano una stella a quattro punte. Poi ripeti la costruzione sul tuo foglio.",
+    provaTu: "Disegna una croce con bracci di 8 cm e punti ogni 0,5 cm (16 per braccio): la somma dei numeri da unire è 17. Controlla che la curva che compare sia liscia: ogni segmento la sfiora senza tagliarla." },
 ];
 
 export function hrefCostruzione(c: CostruzioneGeoGebra): string {

@@ -52,6 +52,8 @@ import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmb
 import GeoGebraOrthographicProjectionEmbed from "@/components/mc/GeoGebraOrthographicProjectionEmbed";
 import ProiezioniCallout from "@/components/mc/ProiezioniCallout";
 import LabInterattivoEmbed from "@/components/mc/LabInterattivoEmbed";
+import OfficinaMotiviEmbed from "@/components/mc/OfficinaMotiviEmbed";
+import { MC_OFFICINA } from "@/lib/officina-motivi";
 import MCRailToggle from "@/components/mc/MCRailToggle";
 import { getEscapeRoom, getLaboratorio } from "@/lib/laboratori";
 import type { MCTextContent, VisualAsset, VideoItem, QuizQuestion, FlashcardItem, MicrolearningInteractives, EsploraImage } from "@/lib/content-loader";
@@ -1032,6 +1034,7 @@ function ZonePanel({
 
     return (
       <div className="px-4 py-6 sm:px-6">
+        {mc.id === MC_OFFICINA && <OfficinaMotiviEmbed className="mb-8" />}
         {mc.id === "MC-DIS-2-01" && <ProiezioniCallout className="mb-6" />}
         {mc.id === "MC-DIS-2-01" && (
           <GeoGebraOrthographicProjectionEmbed className="mb-8" />
