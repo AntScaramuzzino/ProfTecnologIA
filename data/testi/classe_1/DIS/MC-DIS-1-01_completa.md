@@ -413,7 +413,7 @@ Il pentagono non si costruisce con la sola apertura del compasso come l'esagono 
 
 ---
 
-Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligoni dato il lato e inscritti, triangoli, ovali, ovoli e spirali. Ognuna ha la sua tavola animata; le trovi tutte, divise per tipo, nella pagina «Costruzioni geometriche» del Book, insieme ai motivi modulari e ad altre venti costruzioni (dalla 51 alla 70): angoli, tangenti, raccordi, archi, ellisse, parabola e spirale di Archimede.
+Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligoni dato il lato e inscritti, triangoli, ovali, ovoli e spirali. Ognuna ha la sua tavola animata; le trovi tutte, divise per tipo, nella pagina «Costruzioni geometriche» del Book, insieme ai motivi modulari. Le costruzioni dalla 51 alla 70, in fondo a questo elenco, aggiungono angoli, tangenti, raccordi, archi, ellisse, parabola e spirale di Archimede.
 
 ---
 
@@ -1388,6 +1388,458 @@ Le costruzioni dalla 34 alla 50 ti mostrano un esempio per ogni tipo di motivo. 
 **Perché funziona?** Ogni segmento unisce un punto di un braccio con un punto dell’altro, e la somma delle due distanze dal centro è sempre la stessa: 4,5 cm. Segmenti così si appoggiano tutti alla stessa curva, che li tocca uno per uno senza tagliarli: si chiama inviluppo, e qui è un arco di parabola. Più punti usi, più la curva sembra continua.
 
 **Prova tu:** Disegna una croce con bracci di 8 cm e punti ogni 0,5 cm (16 per braccio): la somma dei numeri da unire è 17. Controlla che la curva che compare sia liscia: ogni segmento la sfiora senza tagliarla.
+
+---
+
+#### Costruzione 51 — Trasporto di un angolo
+
+**Servono:** righello, compasso.
+
+**Situazione:** A sinistra c’è un angolo con vertice O. A destra c’è una semiretta che parte dal punto O′. Vuoi costruire su quella semiretta un angolo uguale al primo.
+
+**Passi:**
+
+1. Punta in O con un’apertura a piacere e traccia un arco che taglia i due lati dell’angolo nei punti A e B. *Non cambiare apertura: ti serve subito.*
+
+2. Con la stessa apertura punta in O′ e traccia un arco ampio: incontra la semiretta nel punto A′. *I due archi hanno lo stesso raggio.*
+
+3. Apri il compasso quanto la distanza tra A e B. Punta in A′ e taglia il secondo arco sopra la semiretta: trovi B′. *Hai ricopiato l’apertura dell’angolo.*
+
+4. Traccia la semiretta che parte da O′ e passa per B′. L’angolo in O′ è uguale all’angolo in O. *Se hai un goniometro, misura i due angoli per controllare.*
+
+**Perché funziona?** OA e OB sono lunghi quanto la prima apertura del compasso, e così O′A′ e O′B′. La distanza A′B′ è uguale ad AB, perché l’hai presa con il compasso. I triangoli OAB e O′A′B′ hanno quindi i tre lati uguali: sono congruenti, e l’angolo in O′ è uguale all’angolo in O.
+
+**Prova tu:** Disegna un angolo a piacere con il righello. Poi ricopialo su una semiretta tracciata più in basso e controlla con il goniometro che i due angoli siano uguali.
+
+---
+
+#### Costruzione 52 — Angoli di 60° e di 30° con il compasso
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una semiretta che parte dal punto O. Vuoi costruire su di essa un angolo di 60° e poi uno di 30°, senza goniometro.
+
+**Passi:**
+
+1. Punta in O con un’apertura a piacere e traccia un arco ampio: incontra la semiretta nel punto A. *Tieni ferma l’apertura.*
+
+2. Con la stessa apertura punta in A e taglia l’arco nel punto B. *O, A e B sono i vertici di un triangolo equilatero.*
+
+3. Traccia la semiretta che parte da O e passa per B. L’angolo tra le due semirette misura 60°. *È l’angolo più facile da costruire con il compasso.*
+
+4. Sempre con la stessa apertura punta in A e poi in B: i due archetti si incrociano nel punto C, oltre l’arco. *C è alla stessa distanza da A e da B.*
+
+5. Traccia la semiretta che parte da O e passa per C: divide l’angolo di 60° a metà. Hai due angoli di 30°. *Con un’altra bisettrice otterresti 15°.*
+
+**Perché funziona?** OA, OB e AB sono tutti lunghi quanto l’apertura del compasso: il triangolo OAB è equilatero e ogni suo angolo misura 60°. Il punto C è alla stessa distanza da A e da B, e lo è anche O: la semiretta OC è la bisettrice e divide i 60° in due angoli di 30°.
+
+**Prova tu:** Costruisci un angolo di 60° e poi uno di 30° senza goniometro. Alla fine misura: lo scarto deve restare entro un grado.
+
+---
+
+#### Costruzione 53 — Angolo di 45° con il compasso
+
+**Servono:** righello, compasso.
+
+**Situazione:** Sulla retta r è segnato il punto O. Vuoi costruire un angolo di 45° con il vertice in O.
+
+**Passi:**
+
+1. Costruisci la perpendicolare a r nel punto O (Costruzione 1): una semicirconferenza con centro O, due archetti che si incrociano e la retta verticale. *La semicirconferenza ti servirà anche nel passo successivo.*
+
+2. La semicirconferenza incontra la retta r nel punto A, a destra di O, e la perpendicolare nel punto B. *OA e OB sono lunghi uguali.*
+
+3. Con un’apertura uguale a OA punta in A e poi in B: i due archetti si incrociano nel punto C, fuori dalla semicirconferenza. *C è alla stessa distanza da A e da B.*
+
+4. Traccia la semiretta che parte da O e passa per C: divide l’angolo retto in due angoli di 45°. *Controlla con la squadra a 45°.*
+
+**Perché funziona?** La perpendicolare forma con la retta r un angolo di 90°. I punti A e B sono alla stessa distanza da O, e il punto C è alla stessa distanza da A e da B: la semiretta OC è la bisettrice dell’angolo retto. I due angoli misurano 90° : 2 = 45°.
+
+**Prova tu:** Costruisci un angolo di 45° senza goniometro e confrontalo con l’angolo della tua squadra a 45°.
+
+---
+
+#### Costruzione 54 — Centro di una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza, per esempio il bordo di un piatto ricalcato sul foglio, ma il centro non è segnato. Vuoi trovarlo.
+
+**Passi:**
+
+1. Segna tre punti sulla circonferenza: A, B e C. Unisci A con B e B con C: sono due corde. *Una corda è un segmento che unisce due punti della circonferenza.*
+
+2. Costruisci l’asse della corda AB (Costruzione 9): archetti da A e da B con la stessa apertura, da una parte e dall’altra, e la retta per i due incroci. *L’asse passa per il centro, anche se non lo vedi ancora.*
+
+3. Fai lo stesso con la corda BC. *Prolunga le due rette finché si incontrano.*
+
+4. Il punto in cui i due assi si incontrano è il centro O della circonferenza. *Controlla: punta in O, apri fino ad A e ripassa la circonferenza.*
+
+**Perché funziona?** Il centro è alla stessa distanza da tutti i punti della circonferenza, quindi anche da A e da B: deve stare sull’asse della corda AB. Per lo stesso motivo sta sull’asse della corda BC. L’unico punto che sta su tutti e due gli assi è il loro incrocio: è il centro O.
+
+**Prova tu:** Ricalca sul foglio il bordo di un bicchiere e trova il centro della circonferenza. Poi punta il compasso nel centro trovato e ripassa il bordo: deve coincidere.
+
+---
+
+#### Costruzione 55 — Circonferenza per tre punti
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai tre punti, A, B e C, che non stanno sulla stessa retta. Vuoi tracciare la circonferenza che passa per tutti e tre.
+
+**Passi:**
+
+1. Con il righello traccia i segmenti AB e BC. *Saranno due corde della circonferenza.*
+
+2. Costruisci l’asse del segmento AB (Costruzione 9): archetti da A e da B, da una parte e dall’altra, e la retta per i due incroci. *Tutti i punti dell’asse distano da A quanto da B.*
+
+3. Costruisci l’asse del segmento BC. I due assi si incontrano nel punto O. *O è alla stessa distanza da A, da B e da C.*
+
+4. Punta in O, apri fino ad A e traccia la circonferenza: passa anche per B e per C. *Se non passa per tutti e tre i punti, ricontrolla gli assi.*
+
+**Perché funziona?** Ogni punto dell’asse di AB è alla stessa distanza da A e da B. Ogni punto dell’asse di BC è alla stessa distanza da B e da C. Il punto O sta su tutti e due gli assi, quindi OA = OB = OC: la circonferenza con centro O che passa per A passa anche per B e per C. È la circonferenza circoscritta al triangolo ABC.
+
+**Prova tu:** Segna tre punti non allineati, a qualche centimetro l’uno dall’altro, e traccia la circonferenza che passa per tutti e tre.
+
+---
+
+#### Costruzione 56 — Circonferenza inscritta in un triangolo
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un triangolo ABC. Vuoi disegnare al suo interno la circonferenza più grande possibile: quella che tocca tutti e tre i lati.
+
+**Passi:**
+
+1. Costruisci la bisettrice dell’angolo in A (Costruzione 2): un arco da A che taglia i due lati, due archetti che si incrociano e la semiretta. *La bisettrice divide l’angolo in due parti uguali.*
+
+2. Costruisci la bisettrice dell’angolo in B. Le due bisettrici si incontrano nel punto I. *I si chiama incentro.*
+
+3. Dal punto I traccia la perpendicolare al lato AB (Costruzione 4, oppure con le squadre): incontra AB nel punto H. *IH è la distanza di I dal lato AB.*
+
+4. Punta in I, apri fino a H e traccia la circonferenza: tocca i tre lati senza attraversarli. *Controlla che la circonferenza sfiori anche i lati BC e CA.*
+
+**Perché funziona?** Ogni punto della bisettrice di un angolo è alla stessa distanza dai due lati dell’angolo. Il punto I sta sulla bisettrice dell’angolo in A, quindi dista ugualmente da AB e da AC; sta anche sulla bisettrice dell’angolo in B, quindi dista ugualmente da AB e da BC. I è alla stessa distanza dai tre lati: la circonferenza con centro I e raggio IH li tocca tutti e tre.
+
+**Prova tu:** Disegna un triangolo con lati di 9, 8 e 7 cm e costruisci la circonferenza inscritta. Controlla che tocchi tutti e tre i lati.
+
+---
+
+#### Costruzione 57 — Tangente in un punto della circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O e un punto T su di essa. Vuoi tracciare la tangente in T: la retta che tocca la circonferenza solo in quel punto.
+
+**Passi:**
+
+1. Traccia la retta che passa per O e per T e prolungala oltre T, fuori dalla circonferenza. *Il tratto da O a T è un raggio.*
+
+2. Punta in T con un’apertura a piacere e taglia la retta da una parte e dall’altra: trovi A, verso il centro, e B, fuori. *TA e TB sono uguali.*
+
+3. Apri di più il compasso. Punta in A e poi in B: i due archetti si incrociano nel punto 1. *È la costruzione della perpendicolare in un punto (Costruzione 1).*
+
+4. Traccia la retta che passa per T e per il punto 1, prolungandola da tutte e due le parti: è la tangente. *Controlla con la squadra l’angolo tra il raggio e la tangente: 90°.*
+
+**Perché funziona?** Sulla retta perpendicolare al raggio, il punto più vicino al centro O è proprio T: tutti gli altri punti della retta sono più lontani da O del raggio, quindi stanno fuori dalla circonferenza. La retta ha in comune con la circonferenza soltanto il punto T: è la tangente.
+
+**Prova tu:** Disegna una circonferenza di raggio 3 cm, scegli un punto T e costruisci la tangente. Controlla con la squadra l’angolo tra il raggio e la tangente.
+
+---
+
+#### Costruzione 58 — Tangenti a una circonferenza da un punto esterno
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O e un punto P fuori da essa. Vuoi tracciare da P le rette tangenti alla circonferenza.
+
+**Passi:**
+
+1. Con il righello traccia il segmento che unisce il centro O con il punto P. *Sarà il diametro di una circonferenza ausiliaria.*
+
+2. Costruisci l’asse del segmento OP (Costruzione 9): trovi il suo punto medio M. *M è alla stessa distanza da O e da P.*
+
+3. Punta in M, apri fino a O e traccia un arco che taglia la circonferenza in due punti: A e B. *Sono i due punti di contatto.*
+
+4. Traccia la retta che passa per P e per A e quella che passa per P e per B: sono le due tangenti. *Misura PA e PB: sono uguali.*
+
+**Perché funziona?** Il punto A sta sulla circonferenza che ha per diametro OP. Un triangolo inscritto in una semicirconferenza, con un lato sul diametro, è rettangolo (Costruzione 29): l’angolo in A è di 90°. La retta PA è quindi perpendicolare al raggio OA, cioè è tangente. Lo stesso vale per B.
+
+**Prova tu:** Disegna una circonferenza di raggio 3 cm e un punto P a 8 cm dal centro. Costruisci le due tangenti e misura i tratti da P ai punti di contatto: devono essere uguali.
+
+---
+
+#### Costruzione 59 — Tangenti comuni a due circonferenze
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Hai due circonferenze di raggio diverso, con centri O e Q. Vuoi tracciare le due rette che le toccano entrambe dall’esterno, come una cinghia tesa su due pulegge.
+
+**Passi:**
+
+1. Traccia il segmento OQ. Partendo dal punto in cui OQ taglia la circonferenza grande, riporta verso O il raggio piccolo: trovi il punto 1. Punta in O, apri fino a 1 e traccia la circonferenza ausiliaria. *Il suo raggio è la differenza tra i due raggi.*
+
+2. Trova il punto medio M del segmento OQ (Costruzione 9). Punta in M, apri fino a O e traccia un arco: taglia la circonferenza ausiliaria nei punti 2 e 3. *È la costruzione delle tangenti da un punto esterno (Costruzione 58), con Q al posto di P.*
+
+3. Da O traccia due semirette che passano per 2 e per 3 e prolungale fino alla circonferenza grande: trovi A e B. *A e B sono i punti di contatto sulla circonferenza grande.*
+
+4. Dal centro Q traccia, con le squadre, il raggio parallelo a OA, dalla stessa parte di A, e quello parallelo a OB, dalla stessa parte di B: incontrano la circonferenza piccola in C e in D. *C e D sono i punti di contatto sulla circonferenza piccola.*
+
+5. Traccia la retta che passa per A e per C e quella che passa per B e per D: sono le tangenti comuni. *Controlla con la squadra: ogni tangente è perpendicolare ai raggi che arrivano nei punti di contatto.*
+
+**Perché funziona?** La retta che passa per il centro Q della circonferenza piccola e per il punto 2 è tangente alla circonferenza ausiliaria (Costruzione 58), quindi è perpendicolare al raggio che arriva in 2. La retta AC è parallela a questa e spostata verso l’esterno di una distanza uguale al raggio piccolo: dista dal centro O quanto il raggio della circonferenza grande e dal centro Q quanto il raggio della piccola. Tocca tutte e due le circonferenze.
+
+**Prova tu:** Disegna due circonferenze di raggio 3 cm e 1,5 cm, con i centri a 8 cm di distanza, e costruisci le due tangenti comuni esterne.
+
+---
+
+#### Costruzione 60 — Raccordo tra due rette perpendicolari
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Le rette r e s sono perpendicolari e si incontrano nel punto V. Vuoi arrotondare lo spigolo con un arco di raggio assegnato, per esempio 2 cm.
+
+**Passi:**
+
+1. Apri il compasso quanto il raggio del raccordo. Punta in V e taglia le due rette: trovi A su r e B su s. *A e B saranno i punti in cui l’arco si attacca alle rette.*
+
+2. Con la stessa apertura punta in A e poi in B: i due archetti si incrociano nel punto O, dentro l’angolo. *O è il centro del raccordo.*
+
+3. Sempre con la stessa apertura punta in O e traccia l’arco da A a B. *L’arco è un quarto di circonferenza.*
+
+4. Ripassa la retta r fino ad A, l’arco da A a B e la retta s da B in poi. Lo spigolo in V non fa più parte del disegno. *Passa il dito sul profilo: non devi sentire scalini nei punti A e B.*
+
+**Perché funziona?** VA, VB, AO e BO sono tutti lunghi quanto il raggio: V, A, O e B sono i vertici di un quadrato. Il raggio OA è quindi perpendicolare alla prima retta e il raggio OB alla seconda. Un arco che arriva su una retta con il raggio perpendicolare è tangente: non fa spigoli né scalini.
+
+**Prova tu:** Disegna un rettangolo di 10 cm per 6 cm e arrotonda i quattro spigoli con raccordi di raggio 1,5 cm.
+
+---
+
+#### Costruzione 61 — Raccordo tra due rette che formano un angolo qualsiasi
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Le rette r e s si incontrano nel punto V e formano un angolo che non è retto. Vuoi raccordarle con un arco di raggio assegnato.
+
+**Passi:**
+
+1. Dentro l’angolo traccia la parallela a r alla distanza del raggio: alza una perpendicolare a r, riporta su di essa il raggio e fai passare la parallela per quel punto (con le squadre o con la Costruzione 11). *Tutti i punti di questa retta distano da r quanto il raggio.*
+
+2. Fai lo stesso con la retta s. Le due parallele si incontrano nel punto O. *O è il centro del raccordo.*
+
+3. Da O traccia la perpendicolare a r, che la incontra in A, e la perpendicolare a s, che la incontra in B. *A e B sono i punti di tangenza.*
+
+4. Punta in O, apri fino ad A e traccia l’arco da A a B, dalla parte del vertice V. *L’arco deve passare esattamente per B.*
+
+5. Ripassa la retta r fino ad A, l’arco e la retta s da B in poi. *Nei punti A e B il profilo non deve fare scalini.*
+
+**Perché funziona?** Tutti i punti della prima parallela distano da r quanto il raggio; tutti i punti della seconda distano da s quanto il raggio. Il punto O sta su entrambe, quindi dista un raggio da r e un raggio da s. I piedi delle perpendicolari, A e B, sono i punti in cui l’arco tocca le rette: lì il raggio è perpendicolare alla retta, e l’arco è tangente.
+
+**Prova tu:** Disegna due rette che formano un angolo di 60° e raccordale con un arco di raggio 2 cm. Poi prova con un angolo di 120°.
+
+---
+
+#### Costruzione 62 — Raccordo tra una retta e una circonferenza
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Hai una retta r e una circonferenza con centro C. Vuoi unirle con un arco di raggio assegnato, come nel profilo di un gancio o di una chiave.
+
+**Passi:**
+
+1. Traccia la parallela a r alla distanza del raggio del raccordo, dalla parte della circonferenza. *Il centro del raccordo starà su questa retta.*
+
+2. Apri il compasso quanto la somma dei due raggi: quello della circonferenza più quello del raccordo. Punta in C e taglia la parallela dalla parte in cui vuoi il raccordo (nel disegno, a destra di C): trovi O. *Per sommare i due raggi riportali uno dopo l’altro su una retta.*
+
+3. Da O traccia la perpendicolare alla retta r: la incontra in A. Unisci O con C: il segmento taglia la circonferenza in B. *A e B sono i punti in cui il raccordo si attacca.*
+
+4. Punta in O, apri fino ad A e traccia l’arco da B ad A: il più corto, quello rivolto verso lo spazio tra la circonferenza e la retta. *L’arco deve passare esattamente per B.*
+
+5. Ripassa la circonferenza fino a B, il raccordo da B ad A e la retta da A in poi. *Il profilo passa dalla curva alla retta senza spigoli.*
+
+**Perché funziona?** Il punto O sta sulla parallela, quindi dista dalla retta r quanto il raggio del raccordo. Sta anche sulla circonferenza ausiliaria, quindi dista da C la somma dei due raggi: le due circonferenze si toccano in un solo punto, B, che sta sul segmento CO. In A il raggio OA è perpendicolare alla retta. In entrambi i punti il profilo prosegue senza spigoli.
+
+**Prova tu:** Disegna una retta e una circonferenza di raggio 2,5 cm con il centro a 4 cm dalla retta. Raccordale con un arco di raggio 1,5 cm.
+
+---
+
+#### Costruzione 63 — Dodecagono regolare inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con due diametri perpendicolari, che la incontrano nei punti A, B, C e D. Vuoi dividerla in dodici parti uguali.
+
+**Passi:**
+
+1. Apri il compasso quanto il raggio. Punta in A e taglia la circonferenza da una parte e dall’altra: trovi i punti 1 e 2. *L’arco passa per il centro O.*
+
+2. Con la stessa apertura punta in B, poi in C, poi in D, e taglia ogni volta la circonferenza da una parte e dall’altra: trovi i punti da 3 a 8. *Ogni arco aggiunge due punti.*
+
+3. Unisci i dodici punti uno dopo l’altro, girando lungo la circonferenza. Il dodecagono regolare è completo. *Le lettere e i numeri si alternano così: una lettera, due numeri, una lettera, due numeri.*
+
+**Perché funziona?** Un arco aperto quanto il raggio taglia la circonferenza a 60° dal punto in cui hai puntato il compasso, da una parte e dall’altra. I quattro estremi dei diametri sono a 90° l’uno dall’altro. Tra un estremo e il successivo cadono così due punti nuovi, a 30° e a 60°: tutti gli archi misurano 30°, e 12 × 30° = 360°.
+
+**Prova tu:** Disegna una circonferenza di raggio 4 cm e dividila in dodici parti: puoi usarla come quadrante di un orologio.
+
+---
+
+#### Costruzione 64 — Stella a sei punte
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O e un punto A su di essa. Vuoi costruire una stella a sei punte.
+
+**Passi:**
+
+1. Apri il compasso quanto il raggio. Partendo da A riporta questa apertura lungo la circonferenza: trovi B, C, D, E e F (Costruzione 6). *Per controllare, riporta l’apertura una sesta volta da F: deve tornare esattamente su A.*
+
+2. Unisci un punto sì e uno no: A con C, C con E, E con A. *È un triangolo equilatero.*
+
+3. Unisci gli altri tre punti: B con D, D con F, F con B. *È uguale al primo, ma capovolto.*
+
+4. Ripassa solo il contorno esterno della stella, lasciando leggeri i tratti interni. *Le sei punte devono essere uguali.*
+
+**Perché funziona?** I sei punti dividono la circonferenza in archi di 60°. Unendo un punto sì e uno no ottieni un triangolo con tre lati uguali: è equilatero. Gli altri tre punti danno un secondo triangolo identico, ruotato di 60° rispetto al primo. Insieme formano sei punte uguali; al centro resta un esagono regolare.
+
+**Prova tu:** Costruisci una stella a sei punte in una circonferenza di raggio 4 cm. Poi colora l’esagono che resta al centro.
+
+---
+
+#### Costruzione 65 — Arco a tutto sesto
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura. Vuoi costruire l’arco che la copre.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O. *O è il centro dell’arco.*
+
+2. Punta in O, apri fino ad A e traccia una semicirconferenza sopra la luce, da B ad A. *Questa curva interna si chiama intradosso.*
+
+3. Prolunga AB dalle due parti. Aumenta l’apertura del compasso di una misura uguale allo spessore dell’arco e, sempre con centro O, traccia una seconda semicirconferenza: incontra i prolungamenti nei punti C e D. *La curva esterna si chiama estradosso.*
+
+4. Ripassa le due semicirconferenze e i due tratti di base, AC e BD. L’arco a tutto sesto è completo. *Misura la freccia, cioè l’altezza dell’arco: è la metà della luce.*
+
+**Perché funziona?** L’arco è una semicirconferenza: il suo centro O è il punto medio della luce AB e il raggio è metà della luce. Per questo l’altezza dell’arco, che si chiama freccia, è sempre la metà della larghezza. L’arco interno e quello esterno hanno lo stesso centro: lo spessore è uguale dappertutto.
+
+**Prova tu:** Disegna un arco a tutto sesto con luce di 8 cm e spessore di 1 cm. Misura la freccia, cioè l’altezza dell’arco: deve essere 4 cm.
+
+---
+
+#### Costruzione 66 — Arco a sesto acuto
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco. Vuoi costruire un arco con la punta, come quelli delle cattedrali gotiche.
+
+**Passi:**
+
+1. Apri il compasso quanto AB. Punta in A e traccia un arco sopra la luce, dalla parte di B. *Non cambiare apertura.*
+
+2. Con la stessa apertura punta in B e traccia un arco sopra la luce, dalla parte di A: incontra il primo nel punto C. *C è la punta dell’arco, che si chiama chiave.*
+
+3. Ripassa i due archi solo fino a C: da A a C e da B a C. L’arco a sesto acuto è completo. *Unisci A, B e C con il righello: che triangolo ottieni?*
+
+**Perché funziona?** Il punto C dista da A quanto è lunga AB, perché sta sull’arco con centro A; per lo stesso motivo dista da B quanto AB. Il triangolo ABC ha tre lati uguali: è equilatero. Per questo l’arco è più alto di quello a tutto sesto: la sua freccia, cioè l’altezza dell’arco, è l’altezza del triangolo equilatero, circa 0,87 volte la luce invece di 0,5.
+
+**Prova tu:** Disegna un arco a sesto acuto con luce di 6 cm. Misura la freccia, cioè l’altezza dell’arco: deve venire circa 5,2 cm.
+
+---
+
+#### Costruzione 67 — Arco ribassato a tre centri
+
+**Servono:** righello, compasso.
+
+**Situazione:** AB è la luce dell’arco e O il suo punto medio. Il segmento OC, perpendicolare ad AB, è la freccia: l’altezza che l’arco deve avere. Qui la freccia è più corta della metà della luce.
+
+**Passi:**
+
+1. Con il righello unisci A con C. *Su questo segmento troverai il punto E.*
+
+2. Punta in O, apri fino ad A e traccia un arco fino alla retta della freccia, sopra C: trovi il punto D. *CD è la differenza tra metà luce e freccia.*
+
+3. Punta in C, apri fino a D e taglia il segmento AC: trovi il punto E. *CE è lungo quanto CD.*
+
+4. Costruisci l’asse del segmento AE (Costruzione 9) e prolungalo: incontra la luce AB nel punto 1 e la retta della freccia, sotto O, nel punto 2. *1 e 2 sono due dei tre centri.*
+
+5. Punta in O, apri fino a 1 e riporta la distanza dall’altra parte: trovi il punto 3. Da 2 traccia due rette che passano per 1 e per 3 e prolungale verso l’alto. *I tre archi si raccorderanno su queste rette.*
+
+6. Punta in 1, apri fino ad A e traccia l’arco fino alla retta guida: arrivi in F. Punta in 2, apri fino a F e traccia l’arco fino all’altra retta guida, passando per C: arrivi in G. Punta in 3, apri fino a G e chiudi in B. *L’arco deve passare esattamente per C.*
+
+**Perché funziona?** Il punto 1 sta sull’asse del segmento AE, quindi dista ugualmente da A e da E; la costruzione fa in modo che la distanza da 2 a C sia uguale alla distanza da 2 a 1 più il raggio dell’arco con centro 1. Nel punto F si incontrano l’arco con centro 1 e l’arco con centro 2: i due centri e F sono sulla stessa retta, quindi gli archi si raccordano senza spigolo. Lo stesso accade in G.
+
+**Prova tu:** Disegna un arco ribassato con luce di 10 cm e freccia di 3 cm. Controlla che la curva passi esattamente per il punto più alto.
+
+---
+
+#### Costruzione 68 — Ellisse dati i due assi
+
+**Servono:** righello, squadre, compasso, curvilineo.
+
+**Situazione:** AB è l’asse maggiore dell’ellisse e CD l’asse minore: sono perpendicolari e si incontrano nel centro O. Vuoi costruire l’ellisse che ha proprio questi assi.
+
+**Passi:**
+
+1. Punta in O e traccia due circonferenze: una con apertura OA, l’altra con apertura OC. *Hanno lo stesso centro: sono concentriche.*
+
+2. Dividi la circonferenza grande in dodici parti uguali (Costruzione 63) e traccia i diametri: tagliano anche la circonferenza piccola. *Più diametri tracci, più punti dell’ellisse troverai.*
+
+3. Scegli un diametro. Dal punto in cui taglia la circonferenza grande traccia una linea verticale, parallela all’asse minore; dal punto in cui taglia la circonferenza piccola traccia una linea orizzontale, parallela all’asse maggiore. Dove le due linee si incontrano c’è un punto dell’ellisse. *Usa le squadre: verticale dalla grande, orizzontale dalla piccola.*
+
+4. Fai lo stesso su tutti gli altri diametri. Con A, B, C e D hai dodici punti dell’ellisse. *I punti sono simmetrici rispetto ai due assi.*
+
+5. Unisci i dodici punti a mano libera, o con il curvilineo, con una curva morbida e senza spigoli. L’ellisse è completa. *Ruota il foglio mentre disegni: la mano lavora meglio verso l’interno della curva.*
+
+**Perché funziona?** Ogni punto dell’ellisse prende la posizione orizzontale dal punto sulla circonferenza grande e l’altezza dal punto sulla circonferenza piccola, lungo lo stesso raggio. È come prendere la circonferenza grande e schiacciarla verso l’asse maggiore, sempre nella stessa proporzione: quella tra i due assi. A differenza dell’ovale, l’ellisse non è fatta di archi di compasso: la sua curvatura cambia in ogni punto.
+
+**Prova tu:** Costruisci un’ellisse con asse maggiore di 10 cm e asse minore di 6 cm. Trova almeno dodici punti prima di tracciare la curva.
+
+---
+
+#### Costruzione 69 — Parabola dati il fuoco e la direttrice
+
+**Servono:** righello, squadre, compasso, curvilineo.
+
+**Situazione:** Hai una retta d, la direttrice, e un punto F fuori da essa, il fuoco. Vuoi costruire la parabola: la curva dei punti che distano da F quanto da d.
+
+**Passi:**
+
+1. Da F traccia la perpendicolare alla direttrice: è l’asse della parabola e incontra d nel punto A. Il punto medio del segmento AF è il vertice V. *V è il punto della parabola più vicino alla direttrice.*
+
+2. Traccia la parallela alla direttrice che passa per F: dista 1,6 cm da d. Apri il compasso di 1,6 cm, punta in F e taglia la parallela da una parte e dall’altra: trovi due punti della parabola. *La distanza dalla direttrice e l’apertura del compasso devono essere uguali.*
+
+3. Traccia altre parallele a 2,4 cm, 3,2 cm, 4 cm e 4,8 cm dalla direttrice. Per ognuna apri il compasso della stessa misura, punta in F e taglia la parallela. *Ogni parallela dà due punti, simmetrici rispetto all’asse.*
+
+4. Unisci i punti passando per il vertice V, a mano libera o con il curvilineo. La parabola è completa. *La parabola non si chiude mai: i due rami continuano ad allargarsi.*
+
+**Perché funziona?** Prendi un punto trovato sulla parallela che dista 3,2 cm dalla direttrice. Per costruzione dista 3,2 cm anche dal fuoco, perché l’hai segnato con il compasso aperto di 3,2 cm e puntato in F. Vale per tutti i punti: ognuno è alla stessa distanza dal fuoco e dalla direttrice. È proprio la proprietà che definisce la parabola, la curva delle antenne satellitari e dei fari delle automobili.
+
+**Prova tu:** Traccia una direttrice e segna il fuoco a 2 cm di distanza. Trova almeno cinque coppie di punti e unisci la curva passando per il vertice.
+
+---
+
+#### Costruzione 70 — Spirale di Archimede
+
+**Servono:** righello, squadre, compasso, curvilineo.
+
+**Situazione:** Hai una circonferenza con centro O e il raggio OA. Vuoi costruire una spirale che parte da O e, dopo un giro completo, arriva in A.
+
+**Passi:**
+
+1. Dividi la circonferenza in otto parti uguali (Costruzione 15) e traccia gli otto raggi. Numerali da 1 a 8 in senso antiorario: il raggio 8 è OA. *Tra un raggio e il successivo ci sono 45°.*
+
+2. Dividi il raggio OA in otto parti uguali (Costruzione 3) e segna i punti di divisione. *Tante parti quanti sono i raggi.*
+
+3. Punta in O, apri fino al primo punto di divisione e traccia un arco fino al raggio 1: lì c’è il primo punto della spirale. *Un ottavo di giro, un ottavo di raggio.*
+
+4. Punta sempre in O: apri fino al secondo punto di divisione e arriva al raggio 2, poi dal terzo punto fino al raggio 3, e così via fino al raggio 8, dove arrivi in A. *Ogni arco è più lungo del precedente.*
+
+5. Parti da O e unisci i punti uno dopo l’altro con una curva morbida, a mano libera o con il curvilineo. La spirale è completa. *Per continuare oltre il primo giro, prolunga i raggi e continua a contare.*
+
+**Perché funziona?** A ogni ottavo di giro il punto si allontana dal centro di un ottavo del raggio: dopo mezzo giro è a metà del raggio, dopo un giro intero è arrivato sulla circonferenza. La distanza dal centro cresce in proporzione all’angolo percorso. È la curva che disegna il solco di un disco in vinile, o una corda arrotolata su se stessa.
+
+**Prova tu:** Disegna una circonferenza di raggio 4 cm e costruisci la spirale di Archimede con otto raggi. Ogni punto deve essere 0,5 cm più lontano dal centro del precedente.
 
 ---
 
