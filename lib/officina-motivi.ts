@@ -6,7 +6,7 @@ export const MC_OFFICINA = "MC-DIS-1-01";
 export const OFFICINA_MOTIVI = {
   titolo: "Officina dei motivi modulari",
   descrizione:
-    "Scegli un motivo (greche, piastrelle, Optical Art, stelle, rosoni, tassellature, fregi, frattali, labirinti), regolalo e leggi i passi e le misure per ridisegnarlo sul foglio. Puoi scegliere il reticolo, vedere il modulo quotato e scaricare la tavola A4.",
+    "Scegli un motivo (greche, piastrelle, Optical Art, stelle, rosoni, tassellature, fregi, frattali, labirinti), regolalo e leggi i passi e le misure per ridisegnarlo sul foglio. Con «Guarda come si disegna» una matita traccia la costruzione passo per passo. Puoi anche disegnare tu, con gli specchi oppure modellando un tassello a incastro. In più scegli il reticolo, guardi il modulo quotato e scarichi la tavola A4.",
   famiglie: 18,
 };
 

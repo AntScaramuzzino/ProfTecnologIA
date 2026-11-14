@@ -18,7 +18,8 @@ export default function OfficinaMotiviEmbed({ className = "" }: { className?: st
         </h2>
         <p className="text-sm leading-6 text-slate-800">
           <strong className="text-slate-950">Progetta il tuo motivo.</strong> Scegli un tipo, regolalo, scegli il reticolo e
-          segui i passi per ridisegnarlo sul foglio.
+          segui i passi per ridisegnarlo sul foglio. Con «Guarda come si disegna» una matita traccia la costruzione un
+          passo alla volta; con «Disegno con gli specchi» e «Tassello a incastro» il motivo lo inventi tu.
         </p>
         <div className="mb-2 mt-1 flex justify-end">
           <a

@@ -1005,7 +1005,7 @@ Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligon
 
 Un **modulo** è una figura semplice che si ripete sempre uguale, senza lasciare vuoti e senza sovrapporsi. Il **reticolo** è la rete di linee che guida il disegno: può essere a quadretti oppure isometrico, cioè fatto di triangoli. Ripetendo, ruotando o ribaltando un modulo si ottengono greche, piastrelle, rosoni, tassellature e fregi.
 
-Le costruzioni dalla 34 alla 50 ti mostrano un esempio per ogni tipo di motivo. Per inventare i tuoi motivi, con le misure per ridisegnarli sul foglio, usa l'**Officina dei motivi modulari** che trovi nella scheda SPERIMENTA.
+Le costruzioni dalla 34 alla 50 ti mostrano un esempio per ogni tipo di motivo. Per inventare i tuoi motivi, con le misure per ridisegnarli sul foglio, usa l'**Officina dei motivi modulari** che trovi nella scheda SPERIMENTA: lì una matita ti mostra come si disegna ogni motivo, un passo alla volta. Puoi anche disegnarne uno tutto tuo: con gli specchi, cioè con gli assi di simmetria, oppure modellando un tassello a incastro.
 
 #### Costruzione 34 — Piastrelle a girandola
 

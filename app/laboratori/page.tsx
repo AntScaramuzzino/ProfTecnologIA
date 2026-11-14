@@ -153,7 +153,7 @@ export default function LaboratoriPage() {
           <h2 className="text-xl font-black tracking-tight text-slate-950">
             {OFFICINA_MOTIVI.titolo}{" "}
             <span className="text-base font-bold text-slate-600">
-              · {OFFICINA_MOTIVI.famiglie} tipi di motivo · {COSTRUZIONI_GEOGEBRA.filter((c) => c.categoria === "moti").length} tavole GeoGebra
+              · {OFFICINA_MOTIVI.famiglie} tipi di motivo · 2 modi per disegnare tu · {COSTRUZIONI_GEOGEBRA.filter((c) => c.categoria === "moti").length} tavole GeoGebra
             </span>
           </h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
