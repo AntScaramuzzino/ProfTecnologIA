@@ -729,7 +729,7 @@ FAM.arabi={
    for(let q=0;q<n;q++){const a=rot+q*2*Math.PI/n;guides.push(GL(PL([[cx,cy],[cx+Rr*Math.cos(a),cy+Rr*Math.sin(a)]]),primo?2:5,primo?'rag':g))}
   }
   const W=m*step-10+10;
-  return{w:W,h:W,grid:{t:'none'},items,guides,stroke:true,
+  return{w:W,h:W,grid:{t:'none'},anchor:[Rr+5,Rr+5],items,guides,stroke:true,
    mat:'Foglio da disegno, matita, riga, compasso, goniometro, matite colorate.',
    steps:[`Traccia un segmento AB di ${cm(2*Rr)} cm e il suo asse: si incontrano nel punto O.`,
     `Con apertura OA (${cm(Rr)} cm) punta in O e traccia la circonferenza.`,
@@ -772,7 +772,7 @@ FAM.mandala={
   rs.forEach(r=>guides.push(GL(CIRC(cx,cy,r),0)));
   for(let q=0;q<n*2;q++){const a=q*st/2;guides.push(GL(PL([[cx,cy],pt(a,Rr)]),1,q%2?'bis':'rag'))}
   const nomi={petali:'petali (due archi di compasso)',triangoli:'triangoli con la punta verso l’esterno',cerchietti:'cerchietti centrati sull’anello',archi:'archi (lunette)',zigzag:'una corona a zig-zag',pieno:'una fascia piena'};
-  return{w:2*cx,h:2*cy,grid:{t:'none'},items,guides,stroke:true,
+  return{w:2*cx,h:2*cy,grid:{t:'none'},anchor:[cx,cy],items,guides,stroke:true,
    mat:'Foglio da disegno, matita, compasso, goniometro, riga, matite colorate.',
    steps:[`Traccia ${na+1} circonferenze con lo stesso centro, raggi (mm): ${rs.map(f2).join(' · ')}.`,
     `Con il goniometro dividi il cerchio in ${n} settori uguali da ${f2(360/n).replace('.',',')}° e traccia i raggi leggeri; traccia anche le bisettrici (mezzo settore).`,
@@ -812,7 +812,7 @@ FAM.girandola={
     Pk=Q}
    guides.push(GL(P(P0.map(tf)),primo?0:5,primo?undefined:g));
   }
-  return{w:reps*bw,h:reps*bh,grid:{t:m===4?'sq':'none',s:L/4},items,guides,stroke:true,ripassa:reps>1?undefined:5,
+  return{w:reps*bw,h:reps*bh,grid:{t:m===4?'sq':'none',s:L/4},anchor:m===4?undefined:P0[m===3?2:0],items,guides,stroke:true,ripassa:reps>1?undefined:5,
    mat:'Foglio da disegno, matita appuntita, righello con millimetri, squadre, compasso (per triangolo ed esagono), matite colorate.',
    steps:[`Disegna ${m===4?'un quadrato':m===3?'un triangolo equilatero':'un esagono regolare'} di lato ${cm(L)} cm.`,
     `Su ogni lato, partendo da un vertice e girando sempre nello stesso verso, misura ${f2(firsts[0])} mm (il ${p.t}% del lato) e segna un punto.`,
@@ -1053,7 +1053,7 @@ FAM.stellati={
    r=ri;rot+=Math.PI/n}
   for(let q=0;q<n;q++){const a=-Math.PI/2+q*2*Math.PI/n;guides.push(GL(PL([[cx,cy],[cx+Rr*Math.cos(a),cy+Rr*Math.sin(a)]]),1,'rag'))}
   const g=gcd(n,k);
-  return{w:2*cx,h:2*cy,grid:{t:'none'},items,guides,stroke:true,ripassa:p.liv>1?undefined:4,
+  return{w:2*cx,h:2*cy,grid:{t:'none'},anchor:[cx,cy],items,guides,stroke:true,ripassa:p.liv>1?undefined:4,
    mat:'Foglio da disegno, matita, compasso, goniometro, riga, matite colorate.',
    steps:[`Traccia una circonferenza di raggio ${cm(Rr)} cm.`,
     `Dividila in ${n} parti uguali: con il goniometro segna un punto ogni ${f2(360/n).replace('.',',')}° (oppure costruisci il poligono regolare con ${n} lati).`,
@@ -1103,7 +1103,7 @@ FAM.frattali={
    steps=[`In basso al centro disegna un quadrato di lato ${cm(s0)} cm.`,'Sul lato in alto costruisci un triangolo rettangolo isoscele: il lato del quadrato è l’ipotenusa, gli altri due lati formano un angolo di 90° (usa la squadra a 45°).',
     'Su ognuno dei due lati corti del triangolo costruisci un nuovo quadrato.',`Ripeti su ogni nuovo quadrato, per ${d} volte in tutto: i quadrati diventano sempre più piccoli e l’albero si apre.`,
     'In ogni triangolo vale il teorema di Pitagora: l’area del quadrato grande è la somma delle aree dei due quadrati più piccoli. Colora sfumando dal tronco alle foglie.'];}
-  return{w,h,grid,items,guides,stroke:true,clip:p.tipo==='albero',mat:'Foglio da disegno, matita ben appuntita, riga, squadre, compasso, matite colorate.',steps};
+  return{w,h,grid,anchor:p.tipo==='albero'?[w/2-L/10,h]:undefined,items,guides,stroke:true,clip:p.tipo==='albero',mat:'Foglio da disegno, matita ben appuntita, riga, squadre, compasso, matite colorate.',steps};
  }
 };
 
@@ -1143,7 +1143,7 @@ FAM.inviluppi={
    for(let i=0;i<N;i++){const a=pt(i);guides.push(GA(PL([lerp([c,c],a,.97),lerp([c,c],a,1.03)]),1,'tk'))}
    steps=[`Traccia una circonferenza di raggio ${cm(Rr)} cm.`,`Dividila in ${N} parti uguali con il goniometro (un punto ogni ${f2(360/N).replace('.',',')}°) e numera i punti da 0 a ${N-1}.`,
     `Unisci ogni punto con quello che ha il numero doppio: 1 con 2, 2 con 4, 3 con 6… Dopo il ${N-1} ricomincia a contare da 0 (per esempio ${Math.ceil(N/2)+1} va con ${2*(Math.ceil(N/2)+1)%N}).`,'Compare una curva a forma di cuore: la cardioide. È la stessa che vedi sul fondo di una tazza quando la luce si riflette sul bordo.'];}
-  return{w,h,grid:p.tipo==='cerchio'?{t:'none'}:{t:'sq',s:q},items,guides,stroke:false,mat:'Foglio da disegno o quadrettato, matita ben appuntita, righello, pennarelli a punta fine di due colori (oppure filo e cartoncino forato).',steps};
+  return{w,h,grid:p.tipo==='cerchio'?{t:'none'}:{t:'sq',s:q},anchor:p.tipo==='cerchio'?[w/2,h/2]:undefined,items,guides,stroke:false,mat:'Foglio da disegno o quadrettato, matita ben appuntita, righello, pennarelli a punta fine di due colori (oppure filo e cartoncino forato).',steps};
  }
 };
 
@@ -1378,7 +1378,13 @@ function compute(single){
 }
 let GID=0;
 const GRIDS={q5:{t:'sq',s:5},q10:{t:'sq',s:10},iso5:{t:'tri',s:5},iso10:{t:'tri',s:10},isoV5:{t:'triV',s:5},isoV10:{t:'triV',s:10},none:{t:'none'}};
-function gridOf(o,choice){return choice==='auto'?(o.grid||{t:'none'}):GRIDS[choice]}
+/** Il reticolo da mostrare. Quello scelto a mano viene appoggiato al disegno: un suo incrocio cade sul punto di
+    riferimento del motivo (o.anchor: il centro o un vertice; altrimenti l’origine del reticolo proprio del motivo). */
+function gridOf(o,choice){
+ if(choice==='auto')return o.grid||{t:'none'};
+ const g=GRIDS[choice],a=o.anchor||[(o.grid&&o.grid.ox)||0,(o.grid&&o.grid.oy)||0];
+ return g.t==='none'?g:{t:g.t,s:g.s,ox:a[0],oy:a[1]};
+}
 function gridLabel(g){
  if(!g||g.t==='none'||!g.s)return'nessun reticolo: si costruisce con riga e compasso sul foglio bianco';
  const m=String(Math.round(g.s*10)/10).replace('.',',')+' mm';
