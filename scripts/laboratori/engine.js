@@ -233,7 +233,7 @@
     cfg.levels.forEach((lv, i) => { const t = $c("button", "tab", `<span class="dots">${names[i][0]}</span>${names[i][1]}`); t.setAttribute("role", "tab"); t.id = "t" + (i + 1); t.setAttribute("aria-controls", "p" + (i + 1)); tabs.appendChild(t);
       const p = $c("section", "panel"); p.id = "p" + (i + 1); p.setAttribute("role", "tabpanel"); p.setAttribute("aria-labelledby", "t" + (i + 1)); if (i) p.hidden = true;
       const br = $c("div", "brief", `<span class="lbl">${esc(lv.label || "Consegna")}</span><p>${lv.brief}</p>${lv.note ? `<p class="muted">${lv.note}</p>` : ""}`); p.appendChild(br);
-      lv.blocks.forEach((bk) => { try { p.appendChild(BLOCKS[bk.type](bk)); } catch (e) { const er = $c("div", "fb ko", "Questo blocco non si è caricato."); p.appendChild(er); console.error(e); } });
+      lv.blocks.forEach((bk) => { try { const el = BLOCKS[bk.type](bk); el.dataset.kind = bk.type; p.appendChild(el); } catch (e) { const er = $c("div", "fb ko", "Questo blocco non si è caricato."); p.appendChild(er); console.error(e); } });
       if (lv.reflect) { const m = $c("div", "meta", `<span class="lbl">Rifletti</span><p>${lv.reflect}</p>`); const id = nid("n"); const l = $c("label", null, "I tuoi appunti (restano su questo dispositivo)"); l.htmlFor = id; const ta = $c("textarea"); ta.id = id; ta.value = store.get("note" + i) || ""; ta.oninput = () => store.set("note" + i, ta.value); m.append(l, ta); p.appendChild(m); }
       wrap.appendChild(p); });
     wrap.appendChild($c("div", "bridge", `<span class="lbl">Verso il compito di realtà</span><p>${cfg.bridge}</p>`));

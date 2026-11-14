@@ -8,7 +8,7 @@ LABENGINE.run({
   hook: "Un sensore trasforma il mondo fisico in numeri. Ma i numeri, da soli, non dicono niente: lo fa il grafico. E lo stesso dato, con un asse diverso, può raccontare due storie opposte.",
   footer: "I dati di temperatura e di PM2.5 sono simulati a scopo didattico. Per dati reali: sensor.community o l'agenzia ambientale (ARPA) della tua regione.",
   levels: [
-    { brief: "Temperatura di un'aula, misurata ogni ora dalle 8 alle 17, in cinque giorni. Leggi il grafico.",
+    { brief: "Temperatura di un'aula, misurata ogni ora dalle 8 alle 17, in tre giorni. Leggi il grafico.",
       blocks: [
         { type: "chart", kind: "line", d: 1, xlabel: "ora", ylabel: "°C", zero: true,
           series: GG.slice(0, 3).map(([g, b]) => ({ name: g, data: ORE.map((h) => [String(h), temp(b, h)]) })),

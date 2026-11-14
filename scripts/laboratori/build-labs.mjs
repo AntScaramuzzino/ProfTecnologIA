@@ -17,6 +17,7 @@ const vcss = readFileSync(join(here, "verifica.css"), "utf8");
 const vjs = readFileSync(join(here, "verifica.js"), "utf8");
 const quizDir = join(here, "..", "..", "data", "quiz");
 // Domande di verifica per livello (F/I/A) dal quiz della MC: [testo, opzioni, indice corretta, spiegazione, feedback per opzione]
+const intro = () => `<style>\n${introcss}</style>\n<script>\n${introjs}</script>\n`;
 function verifica(id) {
   const f = join(quizDir, `${id}_quiz.json`);
   if (!existsSync(f)) return "";
@@ -33,6 +34,8 @@ function verifica(id) {
 // Font self-hosted (public/embeds/lab/_fonts, licenza SIL OFL): nessuna richiesta a server esterni
 const FONTS = "";
 
+const introcss = readFileSync(join(here, "intro.css"), "utf8");
+const introjs = readFileSync(join(here, "intro.js"), "utf8");
 const limcss = readFileSync(join(here, "lim.css"), "utf8");
 const limjs = readFileSync(join(here, "lim.js"), "utf8");
 function page(head, body) {
@@ -63,7 +66,7 @@ for (const f of readdirSync(here).filter((n) => n.endsWith(".src.html"))) {
     .replace("/*BASE_JS*/", js)
     .replace(/<meta name="claude:viewport-fit-sides"[^>]*>\n?/, "");
   const cut = src.indexOf('<div class="wrap">');
-  write(id, page(src.slice(0, cut), src.slice(cut) + verifica(id)));
+  write(id, page(src.slice(0, cut), src.slice(cut) + verifica(id) + intro()));
   ids.push(id);
 }
 
@@ -75,7 +78,7 @@ if (existsSync(cfgDir)) {
     const title = (cfg.match(/titolo:\s*"([^"]+)"/) || [, id])[1];
     const head = `<title>${title}</title>\n<style>\n${css}\n${ecss}\n</style>\n`;
     const body = `<script>\n${ejs}\n</script>\n<script>\n${cfg}\n</script>\n<script>\n${js}\n</script>\n`;
-    write(id, page(head, body + verifica(id)));
+    write(id, page(head, body + verifica(id) + intro()));
     ids.push(id);
   }
 }
