@@ -17,6 +17,8 @@ import * as THREE from 'three';
    7. nomi dei piani sul triedro in chiaro (prima erano scuri su fondo scuro)
    8. sulle lastre i piani si chiamano PV, PL, PO, come sul triedro e nelle tavole (prima P.V., P.L., P.O.)
    9. blocco a L: lo spessore dei due bracci si può dare dall'indirizzo (?sp=<cm>), uguale per tutti e due
+  10. solidi nuovi, solo da indirizzo: cilsupar (cilindro su parallelepipedo), tetto (prisma triangolare su
+      parallelepipedo), piramidesez, esagonalesez, cilindrosez (solidi tagliati da un piano: la sezione è colorata)
    Rigenerata da scripts/proiettore/aggiorna-proiettore.py: le modifiche vanno fatte lì, non in questo file.
    ─────────────────────────────────────────────────────────────────────── */
 
@@ -326,6 +328,89 @@ function casetta() {
   return { verts: v, edges, faces };
 }
 
+/* LIBRO · solidi sovrapposti: le parti restano separate (ognuna con le sue facce e i suoi spigoli) */
+function unisciSolidi(...parti) {
+  const verts = [], edges = [], faces = [];
+  parti.forEach(p => {
+    const o = verts.length;
+    verts.push(...p.verts);
+    p.edges.forEach(e => edges.push({ ...e, a: e.a + o, b: e.b + o }));
+    p.faces.forEach(f => faces.push({ ...f, idx: f.idx.map(i => i + o) }));
+  });
+  return { verts, edges, faces };
+}
+const spostaSolido = (s, dx, dy, dz) => { s.verts = s.verts.map(v => V3(v.x + dx, v.y + dy, v.z + dz)); return s; };
+
+/* LIBRO · taglio di un solido convesso con il piano n·p = d: resta la parte con n·p <= d.
+   La faccia nuova (la sezione) ha f.sezione = true e si colora a parte. Il piano non deve passare per un vertice. */
+function tagliaSolido(s, n, d) {
+  const lato = s.verts.map(v => dot(n, v) - d);
+  const dentro = i => lato[i] <= 0;
+  const verts = s.verts.slice();
+  const tagli = new Map();
+  const punto = (a, b) => {
+    const k = a < b ? a + '_' + b : b + '_' + a;
+    if (!tagli.has(k)) {
+      const t = lato[a] / (lato[a] - lato[b]), A = s.verts[a], B = s.verts[b];
+      verts.push(V3(A.x + (B.x - A.x) * t, A.y + (B.y - A.y) * t, A.z + (B.z - A.z) * t));
+      tagli.set(k, verts.length - 1);
+    }
+    return tagli.get(k);
+  };
+  const faces = [];
+  s.faces.forEach(f => {
+    const idx = [];
+    f.idx.forEach((a, i) => {
+      const b = f.idx[(i + 1) % f.idx.length];
+      if (dentro(a)) idx.push(a);
+      if (dentro(a) !== dentro(b)) idx.push(punto(a, b));
+    });
+    if (idx.length >= 3) faces.push({ idx });
+  });
+  const edges = [];
+  s.edges.forEach(e => {
+    const da = dentro(e.a), db = dentro(e.b);
+    if (da && db) edges.push({ a: e.a, b: e.b, tipo: e.tipo });
+    else if (da !== db) edges.push({ a: da ? e.a : e.b, b: punto(e.a, e.b), tipo: e.tipo });
+  });
+  // faccia di sezione: punti in ordine antiorario visti dalla parte tolta (normale = n)
+  const sez = [...tagli.values()];
+  if (sez.length >= 3) {
+    const c = sez.reduce((m, i) => V3(m.x + verts[i].x / sez.length, m.y + verts[i].y / sez.length, m.z + verts[i].z / sez.length), V3(0, 0, 0));
+    let u = cross(n, V3(0, 0, 1));
+    if (Math.hypot(u.x, u.y, u.z) < 1e-6) u = cross(n, V3(1, 0, 0));
+    u = norm(u);
+    const w = cross(n, u);
+    const ang = i => { const q = sub(verts[i], c); return Math.atan2(dot(q, w), dot(q, u)); };
+    sez.sort((a, b) => ang(a) - ang(b));
+    faces.push({ idx: sez, sezione: true });
+    sez.forEach((a, i) => edges.push({ a, b: sez[(i + 1) % sez.length], tipo: 'duro' }));
+  }
+  // vertici rimasti, numerati da capo
+  const usati = new Map();
+  const nuovo = i => { if (!usati.has(i)) usati.set(i, usati.size); return usati.get(i); };
+  faces.forEach(f => { f.idx = f.idx.map(nuovo); });
+  edges.forEach(e => { e.a = nuovo(e.a); e.b = nuovo(e.b); });
+  const vv = [];
+  usati.forEach((j, i) => { vv[j] = verts[i]; });
+  return { verts: vv, edges, faces };
+}
+
+/* piano perpendicolare al PV che passa per il punto dell'asse a quota q dalla base e sale verso destra di ang gradi */
+const pianoDiTaglio = (alt, q, ang) => {
+  const a = (ang || 0) * Math.PI / 180;
+  const n = V3(-Math.sin(a), Math.cos(a), 0);
+  return { n, d: Math.cos(a) * (q - alt / 2) };
+};
+
+function prismaEsagonaleVertici(r, alt) {
+  // esagono con due vertici sull'asse x: di fronte si vedono due lati paralleli alla LT
+  const profilo = Array.from({ length: 6 }, (_, i) => { const a = i * Math.PI / 3; return [Math.cos(a) * r, Math.sin(a) * r]; });
+  const s = prismaDaProfilo(profilo, alt);
+  s.verts = s.verts.map(v => V3(v.x, v.z, -v.y));
+  return s;
+}
+
 function centraSolido(s) {
   let cx = 0, cy = 0, cz = 0;
   s.verts.forEach(v => { cx += v.x; cy += v.y; cz += v.z; });
@@ -444,6 +529,12 @@ const MISURE = {
   sfera:           { r:{et:'Raggio',v:1.5,min:0.7,max:2.5,step:0.05} },
   casetta:         {},
   compenetrazione: {},
+  /* LIBRO · solidi nuovi (vedi «solidi nuovi» più sotto) */
+  cilsupar:        { L:{et:'Larghezza base',v:3.0,min:1.5,max:4.5,step:0.1}, H:{et:'Altezza base',v:1.1,min:0.4,max:2.5,step:0.1}, P:{et:'Profondita base',v:1.9,min:0.8,max:3.5,step:0.1}, r:{et:'Raggio cilindro',v:0.95,min:0.3,max:1.6,step:0.05}, alt:{et:'Altezza cilindro',v:1.9,min:0.5,max:3.5,step:0.1} },
+  tetto:           { L:{et:'Larghezza',v:2.3,min:1.2,max:4.0,step:0.1}, H:{et:'Altezza base',v:1.5,min:0.6,max:3.0,step:0.1}, P:{et:'Profondita',v:3.0,min:1.0,max:4.0,step:0.1}, ht:{et:'Altezza tetto',v:1.1,min:0.4,max:2.5,step:0.1} },
+  piramidesez:     { lato:{et:'Lato base',v:2.6,min:1.2,max:4.0,step:0.1}, alt:{et:'Altezza',v:3.4,min:1.5,max:4.5,step:0.1}, q:{et:'Quota del piano',v:1.7,min:0.3,max:3.2,step:0.05} },
+  esagonalesez:    { r:{et:'Lato base',v:1.2,min:0.6,max:2.0,step:0.05}, alt:{et:'Altezza',v:3.2,min:1.5,max:4.5,step:0.1}, q:{et:'Quota del piano',v:1.6,min:0.5,max:3.0,step:0.05}, ang:{et:'Inclinazione (gradi)',v:30,min:5,max:50,step:5} },
+  cilindrosez:     { r:{et:'Raggio',v:1.2,min:0.6,max:2.0,step:0.05}, alt:{et:'Altezza',v:3.2,min:1.5,max:4.5,step:0.1}, q:{et:'Quota del piano',v:1.6,min:0.5,max:3.0,step:0.05}, ang:{et:'Inclinazione (gradi)',v:30,min:5,max:50,step:5} },
 };
 const misureStandard = id => {
   const d = {}, sch = MISURE[id] || {};
@@ -474,6 +565,28 @@ const SOLIDI = {
   cilindropieno: conMisure('cilindropieno', m => { const s = cilindroPieno(m.r, m.alt, 28); s.nome = 'Cilindro'; return preparaSolido(s); }),
   cono: conMisure('cono', m => { const s = cono(m.r, m.alt, 28); s.nome = 'Cono'; return preparaSolido(s); }),
   sfera: conMisure('sfera', m => { const s = sfera(m.r, 20, 11); s.nome = 'Sfera'; return preparaSolido(s); }),
+  /* LIBRO · solidi nuovi */
+  cilsupar: conMisure('cilsupar', m => {
+    const s = unisciSolidi(spostaSolido(parallelepipedoRett(m.L, m.H, m.P), 0, m.H / 2, 0), spostaSolido(cilindroPieno(m.r, m.alt, 28), 0, m.H + m.alt / 2, 0));
+    s.nome = 'Cilindro su parallelepipedo'; return preparaSolido(s);
+  }),
+  tetto: conMisure('tetto', m => {
+    const tetto = prismaDaProfilo([[-m.L / 2, m.H], [m.L / 2, m.H], [0, m.H + m.ht]], m.P);
+    const s = unisciSolidi(spostaSolido(parallelepipedoRett(m.L, m.H, m.P), 0, m.H / 2, 0), tetto);
+    s.nome = 'Prisma triangolare su parallelepipedo'; return preparaSolido(s);
+  }),
+  piramidesez: conMisure('piramidesez', m => {
+    const p = pianoDiTaglio(m.alt, m.q, 0);
+    const s = tagliaSolido(piramideQuadrata(m.lato, m.alt), p.n, p.d); s.nome = 'Piramide tagliata'; return preparaSolido(s);
+  }),
+  esagonalesez: conMisure('esagonalesez', m => {
+    const p = pianoDiTaglio(m.alt, m.q, m.ang);
+    const s = tagliaSolido(prismaEsagonaleVertici(m.r, m.alt), p.n, p.d); s.nome = 'Prisma esagonale tagliato'; return preparaSolido(s);
+  }),
+  cilindrosez: conMisure('cilindrosez', m => {
+    const p = pianoDiTaglio(m.alt, m.q, m.ang);
+    const s = tagliaSolido(cilindroPieno(m.r, m.alt, 48), p.n, p.d); s.nome = 'Cilindro tagliato'; return preparaSolido(s);
+  }),
 };
 
 modulo(() => {
@@ -499,6 +612,8 @@ modulo(() => {
                                   vanno date tutte quelle del solido, altrimenti restano le misure standard
      ?sp=<cm>                     solo per il blocco a L (solido=elle), insieme a larg, alt e prof:
                                   spessore dei due bracci; senza, lo spessore segue le proporzioni standard
+     ?q=<cm>&ang=<gradi>          solidi tagliati: quota del piano sull'asse, misurata dalla base, e sua
+                                  inclinazione sul PO (il piano è perpendicolare al PV e sale verso destra)
      ?alfa=<gradi>&beta=<gradi>   rotazione di partenza
      ?esercizio=1                 tavola guidata: solido e misure bloccati
      ?titolo=…&misure=…           testi del riquadro dell'esercizio
@@ -521,7 +636,7 @@ modulo(() => {
       if (stato.solidoId === 'elle' && parNum('sp') > 0) cm.sp = parNum('sp');
       const f = RAGGIO_SCENA / SOLIDI[stato.solidoId](cm).raggio;
       const interne = {};
-      Object.keys(cm).forEach(k => { interne[k] = cm[k] * f; });
+      Object.keys(cm).forEach(k => { interne[k] = k === 'ang' ? cm[k] : cm[k] * f; });   /* l'angolo resta in gradi */
       stato.misure[stato.solidoId] = interne;
       esercizio.solidoId = stato.solidoId;
       esercizio.cm = cm;
@@ -558,8 +673,9 @@ modulo(() => {
     if (gruppo) { mondo.remove(gruppo); gruppo.traverse(o => { o.geometry?.dispose(); o.material?.dispose?.(); }); }
     const s = stato.solido;
     const pos = [], colori = [];
+    const conSezione = s.faces.some(f => f.sezione);   /* LIBRO · sezione sempre in blu */
     s.faces.forEach(f => {
-      const c = new THREE.Color(coloreGruppo(f.gruppo));
+      const c = new THREE.Color(f.sezione ? '#2F5BD8' : stato.facce ? coloreGruppo(f.gruppo) : '#FF4D00');
       f.tri.forEach(([a, b, c3]) => {
         [a, b, c3].forEach(i => {
           pos.push(s.verts[i].x, s.verts[i].y, s.verts[i].z);
@@ -572,8 +688,8 @@ modulo(() => {
     geo.setAttribute('color', new THREE.Float32BufferAttribute(colori, 3));
     geo.computeVertexNormals();
     const mesh = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({
-      color: stato.facce ? 0xffffff : 0xFF4D00,
-      vertexColors: stato.facce,
+      color: stato.facce || conSezione ? 0xffffff : 0xFF4D00,
+      vertexColors: stato.facce || conSezione,
       roughness: 0.42, metalness: 0.12, flatShading: true,
     }));
     // spigoli “duri” disegnati come linee bianche
@@ -735,7 +851,7 @@ modulo(() => {
     if (esercizio.cm && esercizio.solidoId === stato.solidoId) {
       cont.innerHTML = chiavi.map(k =>
         "<p class=\"misura misura--fissa\"><span class=\"misura__et\">" + sch[k].et + "</span>" +
-        "<output class=\"mono\">" + cmTesto(esercizio.cm[k]) + "</output></p>").join("") +
+        "<output class=\"mono\">" + (k === 'ang' ? esercizio.cm[k] + "°" : cmTesto(esercizio.cm[k])) + "</output></p>").join("") +
         "<button class=\"tasto tasto--mini\" id=\"tastoMisureLibere\">Cambia le misure</button>";
       $('#tastoMisureLibere').addEventListener('click', () => {
         esercizio.cm = null; esercizio.solidoId = null;
@@ -1085,7 +1201,7 @@ modulo(() => {
       const sch = MISURE[stato.solidoId] || {};
       $('#esercizioTitolo').textContent = PAR.get('titolo') || stato.solido.nome;
       $('#esercizioMisure').textContent = PAR.get('misure') ||
-        (esercizio.cm ? Object.keys(sch).map(k => sch[k].et + ' ' + cmTesto(esercizio.cm[k])).join(' · ') : '');
+        (esercizio.cm ? Object.keys(sch).map(k => sch[k].et + ' ' + (k === 'ang' ? esercizio.cm[k] + '°' : cmTesto(esercizio.cm[k]))).join(' · ') : '');
       box.hidden = false;
     }
   }

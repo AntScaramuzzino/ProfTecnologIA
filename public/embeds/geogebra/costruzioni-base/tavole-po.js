@@ -37,6 +37,8 @@
     nascosto: { color: [0, 0, 0], thickness: 4, lineStyle: 2 },
     servizio: { color: [194, 65, 12], pointSize: 4 },
     asse: { color: [71, 85, 105], thickness: 3, lineStyle: 4 },       // tratto-punto
+    traccia: { color: [190, 18, 60], thickness: 5, lineStyle: 4 },     // traccia di un piano di taglio (tratto-punto marcato)
+    tratteggio: { color: [30, 64, 175], thickness: 2, lineStyle: 0 },  // righe a 45° di una sezione
   };
   // ── Due modalità: «a colori» (semplificata) e «foglio tecnico» (avanzata, ?modo=tecnico) ──
   // Stessa costruzione e stessi testi; cambiano il foglio (squadratura, carta quadrettata da 1 cm, cartiglio,
@@ -54,9 +56,12 @@
       servizio: { color: NERO, pointSize: 3 },
       asse: { color: NERO, thickness: 2, lineStyle: 4 },
       compasso: { color: MATITA, thickness: 2, lineStyle: 0 },
+      traccia: { color: NERO, thickness: 4, lineStyle: 4 },
+      tratteggio: { color: NERO, thickness: 1, lineStyle: 0 },
     });
   }
   const ROSSO_NOMI = TECNICO ? NERO : [239, 68, 68];
+  const TRACCIA_COLORE = TECNICO ? NERO : [190, 18, 60];
 
   // Livelli di GeoGebra: servono agli interruttori in fondo al file (ogni livello si accende e si spegne da solo).
   // L'ordine è anche l'ordine di disegno: la figura sta sopra le linee di proiezione, i nomi sopra tutto.
@@ -75,6 +80,8 @@
    */
   function creaFoglio(meta, limiti, costruisci) {
     const { sinistra, destra, alto, basso } = limiti;
+    // Nome del PV in basso (vicino alla LT) quando in alto c'è un altro disegno, come la vera forma delle sezioni.
+    const yNomePV = limiti.nomePV === "basso" ? 0.3 : alto - 0.8;
     return creaTavola({
       level: TECNICO ? "A" : "I",
       appletHeight: TECNICO ? 700 : 660,
@@ -137,12 +144,12 @@
         },
         nomiPiani(quando) {
           if (TECNICO) {
-            f.scritta("PV", "PV · piano verticale", [-sinistra + 0.3, alto - 0.8], MATITA, quando);
+            f.scritta("PV", "PV · piano verticale", [-sinistra + 0.3, yNomePV], MATITA, quando);
             f.scritta("PL", "PL · piano laterale", [0.3, alto - 0.8], MATITA, quando);
             f.scritta("PO", "PO · piano orizzontale", [-sinistra + 0.3, -basso + 0.3], MATITA, quando);
             return;
           }
-          f.scritta("PV", "PV", [-sinistra + 0.3, alto - 0.8], PIANI.PV.testo, quando);
+          f.scritta("PV", "PV", [-sinistra + 0.3, yNomePV], PIANI.PV.testo, quando);
           f.scritta("PL", "PL", [destra - 1.1, alto - 0.8], PIANI.PL.testo, quando);
           f.scritta("PO", "PO", [-sinistra + 0.3, -basso + 0.3], PIANI.PO.testo, quando);
         },
@@ -281,6 +288,47 @@
           stile(`Segno${nome}`, { ...STILI.servizio, label: false });
           if (quando !== undefined) k.compare(`Segno${nome}`, quando);
           return registra(`Segno${nome}`);
+        },
+        /** Stile di un oggetto creato da uno strumento (per i ritocchi dentro una tavola). */
+        stile(nome, s) { return stile(nome, s); },
+        /** Traccia di un piano di taglio: tratto-punto marcato, da a verso b. */
+        traccia(nome, a, b, finestra) {
+          k.traccia(`lineTc${nome}`, a, b, finestra);
+          stile(`lineTc${nome}`, { ...STILI.traccia, layer: LIVELLI.figura });
+          return registra(`lineTc${nome}`);
+        },
+        /** Tratteggio di una sezione: righe sottili a 45°, ogni `passo` cm, dentro il poligono convesso `vertici`. */
+        tratteggio(nome, vertici, quando, passo = 0.45) {
+          const valori = vertici.map((p) => p[1] - p[0]);                 // le righe sono y − x = c
+          const cMin = Math.min(...valori), cMax = Math.max(...valori);
+          let i = 0;
+          for (let c = cMin + passo / 2; c < cMax; c += passo) {
+            const punti = [];
+            vertici.forEach((a, j) => {
+              const b = vertici[(j + 1) % vertici.length];
+              const da = a[1] - a[0] - c, db = b[1] - b[0] - c;
+              if ((da <= 0 && db > 0) || (da > 0 && db <= 0)) {
+                const s = da / (da - db);
+                punti.push([a[0] + (b[0] - a[0]) * s, a[1] + (b[1] - a[1]) * s]);
+              }
+            });
+            if (punti.length < 2) continue;
+            punti.sort((p, q) => p[0] - q[0]);
+            const n = `lineTr${nome}x${++i}`;
+            k.seg(n, punti[0], punti[punti.length - 1]);
+            stile(n, { ...STILI.tratteggio, layer: LIVELLI.figura });
+            if (quando !== undefined) k.compare(n, quando);
+            registra(n);
+          }
+        },
+        /** Curva x(t), y(t) scritta come comando GeoGebra: con `ripasso` è un tratto finale, altrimenti un tratto della figura. */
+        curva(nome, fx, fy, t0, t1, quando, ripasso) {
+          const n = ripasso ? `draw${nome}` : `lineFg${nome}`;
+          t.commands.push(`${n}=Curve(${fx},${fy},t,${t0},${t1})`);
+          stile(n, { ...(ripasso ? STILI.ripasso : STILI.figura), layer: LIVELLI.figura });
+          if (ripasso) k.risultato(n);
+          if (quando !== undefined) k.compare(n, quando);
+          return registra(n);
         },
         /** Ripasso finale di uno spigolo in vista. */
         ripassa(nome, a, b, finestra) {
@@ -1439,6 +1487,636 @@
     f.nascosto("PLn", [p1, sp], [p2, sp], r[15]);
     f.passo();
   });
+
+  // ════════════════════ Tavole 13–17: solidi sovrapposti e sezioni ════════════════════
+  const SQUADRA = "Appoggia la squadra da 30° e 60° sul righello tenuto lungo la LT";
+  const N_SEZ = [-Math.sin(Math.PI / 6), Math.cos(Math.PI / 6)];   // perpendicolare a una traccia inclinata di 30°, verso l'alto a sinistra
+  const T_SEZ = [Math.cos(Math.PI / 6), Math.sin(Math.PI / 6)];    // direzione della traccia
+  const piu = (p, v, k) => [p[0] + v[0] * k, p[1] + v[1] * k];
+  const ellisseVertici = (fx, fy, n = 48) => Array.from({ length: n }, (_, i) => { const t = (i / n) * 2 * Math.PI; return [fx(t), fy(t)]; });
+  const fmt = (v) => Number(v.toFixed(4));
+
+  // ── Tavola 13 · Cilindro su un parallelepipedo ──────────────────────────────
+  TAVOLE["po-cilindro-su-parallelepipedo"] = creaFoglio({
+    title: "Cilindro su un parallelepipedo",
+    eyebrow: "Tavola 13 · Due solidi, uno sopra l’altro",
+    subtitle: "Parallelepipedo largo 8 cm, profondo 5 cm, alto 3 cm, appoggiato sul PO a 2 cm dal PV e a 2 cm dal PL. Sopra, al centro, un cilindro di raggio 2,5 cm alto 5 cm.",
+    filename: "MC-DIS-2-01_po-cilindro-su-parallelepipedo.ggb",
+    proofTitle: "Due solidi, le stesse regole",
+    proofCopy: "Due solidi sovrapposti si proiettano come due solidi separati: stessi piani, stesse linee di proiezione, uno alla volta. Il secondo comincia dove finisce il primo: nel PV e nel PL il cilindro parte a 3 cm dalla LT, sulla faccia di sopra del parallelepipedo. La linea dove i due solidi si toccano si disegna, perché sono due pezzi distinti. Qui il diametro del cilindro, 5 cm, è uguale alla profondità del parallelepipedo: per questo nel PL i lati del cilindro continuano quelli del parallelepipedo.",
+    equality: "PO: rettangolo 8 × 5 cm e cerchio di raggio 2,5 cm · PV: 8 × 3 cm e, sopra, 5 × 5 cm · PL: 5 × 8 cm con una linea a 3 cm",
+    steps: [
+      ["Prima di iniziare", "Leggi i dati e prepara il foglio", `Qui i solidi sono due. Sotto c’è un parallelepipedo largo 8 cm, profondo 5 cm e alto 3 cm, appoggiato sul piano orizzontale (PO), a 2 cm dal piano verticale (PV) e a 2 cm dal piano laterale (PL). Sopra, al centro della sua faccia di sopra, c’è un cilindro di raggio 2,5 cm alto 5 cm. ${prepara(11, 9, 10, 8)}`, "Disegni un solido alla volta, sugli stessi piani: prima il parallelepipedo, poi il cilindro."],
+      ["Passo 1 · Sul PO", "Disegna la base del parallelepipedo", "Nel PO traccia una linea sottile parallela alla LT, 2 cm più in basso. Su questa linea segna due punti a sinistra dell’asse verticale: uno a 2 cm, uno a 10 cm (2 + 8 = 10). Completa il rettangolo: dai due punti scendi di 5 cm e unisci i due punti che trovi.", "Dall’alto il parallelepipedo è un rettangolo largo 8 cm e profondo 5 cm."],
+      ["Passo 2 · Sul PO", "Aggiungi il cilindro", "Il centro del cilindro è il centro del rettangolo: 6 cm a sinistra dell’asse verticale e 4,5 cm sotto la LT. Traccia per il centro i due assi, sottili a tratto-punto. Punta il compasso nel centro, aprilo di 2,5 cm e traccia la circonferenza.", "Controlla: la circonferenza tocca i due lati lunghi del rettangolo, perché il diametro, 5 cm, è uguale alla profondità."],
+      ["Passo 3 · Verso il PV", "Sali con le linee di proiezione", "Dai due lati corti del rettangolo sali con due linee sottili fino a circa 4 cm sopra la LT. Dai due punti in cui la circonferenza incontra il suo asse orizzontale sali con altre due linee, fino a circa 9 cm sopra la LT.", "Le linee esterne servono al parallelepipedo, quelle interne al cilindro: tra queste ci sono 5 cm, il diametro."],
+      ["Passo 4 · Sul PV", "Disegna il parallelepipedo di fronte", "Il parallelepipedo è appoggiato sul PO: nel PV la sua base sta sulla LT. Misura 3 cm dalla LT sulle due linee esterne e uniscile: hai un rettangolo largo 8 cm e alto 3 cm.", "È la vista di fronte del primo solido."],
+      ["Passo 5 · Sul PV", "Disegna il cilindro di fronte", "Il cilindro comincia sulla faccia di sopra del parallelepipedo, a 3 cm dalla LT, ed è alto 5 cm: finisce a 8 cm dalla LT. Traccia la linea a 8 cm tra le due linee interne. Nel mezzo traccia l’asse del cilindro, a tratto-punto, che sporge di poco sopra e sotto.", "Di fronte il cilindro è un rettangolo largo 5 cm e alto 5 cm, appoggiato sul primo."],
+      ["Passo 6 · Verso il PL", "Porta le altezze e le distanze dal PV verso il PL", "Nel PV prolunga verso destra la linea a 3 cm e la linea a 8 cm, fino a circa 8 cm oltre l’asse verticale. Nel PO traccia tre linee orizzontali fino all’asse verticale: il lato in alto del rettangolo, il prolungamento a tratto-punto dell’asse orizzontale del cerchio, il lato in basso. Trovi i punti 1, 2 e 3.", "Il cerchio tocca i lati del rettangolo: le sue distanze dal PV, 2 cm e 7 cm, sono le stesse del parallelepipedo."],
+      ["Passo 7 · Compasso", "Porta le distanze dal PV sulla LT", `Punta il compasso in O. Aprilo fino al punto 1 e traccia un quarto di giro ${QUARTO}: trovi il punto 4. Ripeti dal punto 2 e dal punto 3: trovi i punti 5 e 6.`, "Controlla con il righello: i punti 4, 5 e 6 stanno a 2 cm, a 4,5 cm e a 7 cm da O."],
+      ["Passo 8 · Sul PL", "Disegna i due solidi di fianco", "Dai punti 4 e 6 sali in verticale fino alla linea a 8 cm. Ottieni un rettangolo largo 5 cm e alto 8 cm. La linea a 3 cm lo divide: sotto c’è il parallelepipedo, sopra il cilindro. Dal punto 5 traccia l’asse del cilindro, a tratto-punto.", "Di fianco i lati del cilindro continuano quelli del parallelepipedo: il diametro è uguale alla profondità."],
+      ["Passo 9 · Ripasso", "Ripassa gli spigoli e i contorni", "Ripassa con un tratto deciso il rettangolo e la circonferenza nel PO, i due rettangoli nel PV, il rettangolo e la linea a 3 cm nel PL. Gli assi restano sottili, a tratto-punto.", "Controlla nel PV: il cilindro rientra di 1,5 cm per parte rispetto al parallelepipedo."],
+    ],
+  }, { sinistra: 11.8, destra: 8.8, alto: 9.6, basso: 8.2 }, (f) => {
+    const larg = 8, prof = 5, hB = 3, r = 2.5, hC = 5, dPV = 2, dPL = 2;
+    const xS = -dPL - larg, xD = -dPL, yA = -dPV, yB = -dPV - prof;
+    const cx = (xS + xD) / 2, cy = (yA + yB) / 2, cS = cx - r, cD = cx + r, top = hB + hC;
+    const p1 = dPV, p2 = -cy, p3 = dPV + prof;
+
+    f.base();
+    f.passo();
+
+    // Passo 1 · rettangolo nel PO
+    f.misura("DalPV", [xS - 0.9, 0], [xS - 0.9, yA], "2 cm", 0.08, "sx");
+    f.proietta("Linea", [0, yA], [xS - 0.5, yA], [0.12, 0.3]);
+    f.misura("DalPL", [xD, yA - 0.6], [0, yA - 0.6], "2 cm", 0.32, "giu", [0, 0.1]);
+    const v = [[xD, yA], [xS, yA], [xS, yB], [xD, yB]];
+    const w = finestre(4, 0.42, 0.9);
+    v.forEach((p, i) => f.figura(`PO${"abcd"[i]}`, p, v[(i + 1) % 4], w[i]));
+    f.scritta("Largo", "8 cm", [xD - 1.6, yB - 0.8], BLU, 0.9);   // a destra: a sinistra, sul foglio tecnico, c’è il nome del piano
+    f.scritta("Prof", "5 cm", [xS - 1.6, cy - 0.25], BLU, 0.9);
+    f.passo();
+
+    // Passo 2 · cilindro nel PO
+    f.asse("OrizPO", [cS - 0.6, cy], [cD + 0.6, cy], [0.1, 0.3]);
+    f.asse("VertPO", [cx, yA + 0.6], [cx, yB - 0.6], [0.3, 0.5]);
+    f.cerchio("Cil", [cx, cy], r, [0.55, 0.92]);
+    f.passo();
+
+    // Passo 3 · verso il PV
+    const [a1, a2, a3, a4] = finestre(4);
+    f.proietta("BS", [xS, yA], [xS, hB + 0.8], a1);
+    f.proietta("BD", [xD, yA], [xD, hB + 0.8], a2);
+    f.proietta("CS", [cS, cy], [cS, top + 0.9], a3);
+    f.proietta("CD", [cD, cy], [cD, top + 0.9], a4);
+    f.passo();
+
+    // Passo 4 · parallelepipedo nel PV
+    f.misura("AltB", [xS - 0.9, 0], [xS - 0.9, hB], "3 cm", 0.1, "sx");
+    f.figura("PVbase", [xS, hB], [xD, hB], [0.4, 0.92]);
+    f.passo();
+
+    // Passo 5 · cilindro nel PV
+    f.misura("AltC", [cD + 0.9, hB], [cD + 0.9, top], "5 cm", 0.1, "dx");
+    f.figura("PVcil", [cS, top], [cD, top], [0.35, 0.65]);
+    f.asse("PV", [cx, hB - 0.6], [cx, top + 0.6], [0.7, 0.94]);
+    f.passo();
+
+    // Passo 6 · verso il PL
+    f.proietta("AltB", [xD, hB], [p3 + 1, hB], [0.1, 0.3]);
+    f.proietta("AltC", [cD, top], [p3 + 1, top], [0.3, 0.5]);
+    f.proietta("Prof1", [xD, yA], [0, yA], [0.5, 0.62]);
+    f.numero(1, [0, yA], 0.63);
+    f.asse("OrizPO2", [cD + 0.6, cy], [0, cy], [0.66, 0.76]);
+    f.numero(2, [0, cy], 0.77);
+    f.proietta("Prof3", [xD, yB], [0, yB], [0.8, 0.9]);
+    f.numero(3, [0, yB], 0.92);
+    f.passo();
+
+    // Passo 7 · archi di riporto
+    f.riporto("Uno", p1, [0.1, 0.32]);
+    f.numero(4, [p1, 0], 0.33);
+    f.riporto("Due", p2, [0.38, 0.62]);
+    f.numero(5, [p2, 0], 0.63);
+    f.riporto("Tre", p3, [0.66, 0.92]);
+    f.numero(6, [p3, 0], 0.93);
+    f.passo();
+
+    // Passo 8 · PL
+    f.proietta("Quattro", [p1, 0], [p1, top], [0.1, 0.4]);
+    f.proietta("Sei", [p3, 0], [p3, top], [0.4, 0.7]);
+    f.asse("PL", [p2, hB - 0.6], [p2, top + 0.6], [0.72, 0.94]);
+    f.passo();
+
+    // Passo 9 · ripasso
+    const r9 = finestre(13, 0.05, 0.94);
+    v.forEach((p, i) => f.ripassa(`PO${"abcd"[i]}`, p, v[(i + 1) % 4], r9[i]));
+    f.ripassaCerchio("POcil", [cx, cy], r, 0.34);
+    f.ripassa("PVa", [xS, 0], [xD, 0], r9[4]);
+    f.ripassa("PVb", [xD, 0], [xD, hB], r9[5]);
+    f.ripassa("PVc", [xD, hB], [xS, hB], r9[5]);
+    f.ripassa("PVd", [xS, hB], [xS, 0], r9[6]);
+    f.ripassa("PVe", [cS, hB], [cS, top], r9[7]);
+    f.ripassa("PVf", [cS, top], [cD, top], r9[7]);
+    f.ripassa("PVg", [cD, top], [cD, hB], r9[8]);
+    f.ripassa("PLa", [p1, 0], [p3, 0], r9[9]);
+    f.ripassa("PLb", [p3, 0], [p3, top], r9[10]);
+    f.ripassa("PLc", [p3, top], [p1, top], r9[11]);
+    f.ripassa("PLd", [p1, top], [p1, 0], r9[11]);
+    f.ripassa("PLe", [p1, hB], [p3, hB], r9[12]);
+    f.passo();
+  });
+
+  // ── Tavola 14 · Prisma triangolare su un parallelepipedo ────────────────────
+  TAVOLE["po-prisma-su-parallelepipedo"] = creaFoglio({
+    title: "Prisma triangolare su un parallelepipedo",
+    eyebrow: "Tavola 14 · Una casetta fatta di due prismi",
+    subtitle: "Parallelepipedo largo 6 cm, profondo 8 cm, alto 4 cm, appoggiato sul PO a 1 cm dal PV e a 2 cm dal PL. Sopra, un prisma triangolare lungo 8 cm: il triangolo ha la base di 6 cm e l’altezza di 3 cm ed è parallelo al PV.",
+    filename: "MC-DIS-2-01_po-prisma-su-parallelepipedo.ggb",
+    proofTitle: "Parti dalla vista che mostra la forma",
+    proofCopy: "La forma della casetta si vede di fronte: un rettangolo con sopra un triangolo. Per questo si parte dal PV, come nella tavola 11. Dall’alto vedi le due falde del tetto, divise dal colmo; di fianco vedi una falda sola, sopra il fianco del parallelepipedo. La falda di fianco sembra alta 3 cm, ma è inclinata: dalla gronda al colmo misura circa 4,2 cm.",
+    equality: "PV: 6 × 4 cm con sopra un triangolo alto 3 cm · PO: 6 × 8 cm con il colmo · PL: 8 × 7 cm con una linea a 4 cm",
+    steps: [
+      ["Prima di iniziare", "Leggi i dati e prepara il foglio", `Due prismi, uno sopra l’altro. Sotto c’è un parallelepipedo largo 6 cm, profondo 8 cm e alto 4 cm, appoggiato sul piano orizzontale (PO), a 1 cm dal piano verticale (PV) e a 2 cm dal piano laterale (PL). Sopra c’è un prisma triangolare lungo 8 cm, come un tetto: il suo triangolo, parallelo al PV, ha la base di 6 cm e l’altezza di 3 cm. ${prepara(10, 10, 8, 10)}`, "La forma della casetta si vede di fronte: parti dal PV."],
+      ["Passo 1 · Sul PV", "Disegna il parallelepipedo di fronte", "Il parallelepipedo è appoggiato sul PO: nel PV la sua base sta sulla LT. Parti dal punto della LT che sta 2 cm a sinistra di O. Disegna un rettangolo largo 6 cm verso sinistra e alto 4 cm.", "È la faccia davanti del primo solido."],
+      ["Passo 2 · Sul PV", "Aggiungi il triangolo del tetto", "Segna il punto di mezzo del lato di sopra, a 3 cm dai due estremi. Da lì sali di 3 cm: è il colmo del tetto. Uniscilo con i due estremi del lato di sopra.", "Il triangolo è parallelo al PV: di fronte si vede con la sua forma vera."],
+      ["Passo 3 · Verso il PO", "Scendi con le linee di proiezione", "Dai due lati verticali del rettangolo e dal colmo scendi con tre linee sottili fino a circa 10 cm sotto la LT.", "La linea di mezzo porterà nel PO il colmo del tetto."],
+      ["Passo 4 · Sul PO", "Disegna la pianta", "La casetta comincia a 1 cm dal PV ed è profonda 8 cm: nel PO traccia due linee orizzontali tra le verticali esterne, a 1 cm e a 9 cm sotto la LT. Hai un rettangolo largo 6 cm e profondo 8 cm. La verticale di mezzo è il colmo: dall’alto si vede.", "Dall’alto vedi le due falde del tetto, cioè le sue due facce inclinate, divise dal colmo, lo spigolo più alto. Non vedi il parallelepipedo: il tetto lo copre tutto."],
+      ["Passo 5 · Verso il PL", "Porta le altezze e le distanze dal PV verso il PL", "Nel PV traccia verso destra due linee orizzontali, fino a circa 10 cm oltre l’asse verticale: una a 4 cm, dal lato di sopra del rettangolo, e una a 7 cm, dal colmo. Nel PO prolunga fino all’asse verticale i due lati orizzontali del rettangolo: trovi il punto 1 sul lato in alto e il punto 2 sul lato in basso.", "Due altezze, 4 cm e 7 cm, e due distanze dal PV, 1 cm e 9 cm."],
+      ["Passo 6 · Compasso", "Porta le distanze dal PV sulla LT", `Punta il compasso in O. Aprilo fino al punto 1 e traccia un quarto di giro ${QUARTO}: trovi il punto 3. Poi aprilo fino al punto 2: trovi il punto 4.`, "Controlla con il righello: il punto 3 sta a 1 cm da O, il punto 4 a 9 cm."],
+      ["Passo 7 · Sul PL", "Disegna la casetta di fianco", "Dai punti 3 e 4 sali in verticale fino alla linea a 7 cm. Ottieni un rettangolo largo 8 cm e alto 7 cm. La linea a 4 cm lo divide: sotto c’è il fianco del parallelepipedo, sopra una falda del tetto.", "Controlla: la falda va dalla linea a 4 cm alla linea a 7 cm. Nel PV è il lato obliquo del triangolo."],
+      ["Passo 8 · Ripasso", "Ripassa gli spigoli", "Ripassa con un tratto deciso il rettangolo e il triangolo nel PV, il rettangolo con il colmo nel PO, il rettangolo e la linea a 4 cm nel PL.", "Nel PV la linea a 4 cm separa i due solidi: si ripassa anche lì."],
+    ],
+  }, { sinistra: 11.2, destra: 10.6, alto: 8, basso: 10.4 }, (f) => {
+    const larg = 6, prof = 8, hB = 4, ht = 3, dPV = 1, dPL = 2;
+    const xS = -dPL - larg, xD = -dPL, xm = (xS + xD) / 2, top = hB + ht;
+    const yA = -dPV, yB = -dPV - prof, p1 = dPV, p2 = dPV + prof, giu = yB - 0.8;
+
+    f.base();
+    f.passo();
+
+    // Passo 1 · rettangolo nel PV
+    f.misura("DallAsse", [xD, 0], f.O, "2 cm", 0.08, "giu");
+    const c = [[xD, 0], [xS, 0], [xS, hB], [xD, hB]];
+    const w = finestre(4, 0.16, 0.86);
+    c.forEach((p, i) => f.figura(`PV${"abcd"[i]}`, p, c[(i + 1) % 4], w[i]));
+    f.scritta("Largo", "6 cm", [xm - 0.7, 0.25], BLU, 0.9);
+    f.scritta("Alto", "4 cm", [xS - 1.7, hB / 2 - 0.25], BLU, 0.9);
+    f.passo();
+
+    // Passo 2 · triangolo
+    f.segno("Mezzo", [xm, hB], 0.15);
+    f.misura("AltT", [xm, hB], [xm, top], "3 cm", 0.3, "dx");
+    f.figura("TettoS", [xS, hB], [xm, top], [0.5, 0.72]);
+    f.figura("TettoD", [xm, top], [xD, hB], [0.72, 0.94]);
+    f.passo();
+
+    // Passo 3 · verso il PO
+    const [g1, g2, g3] = finestre(3);
+    f.proietta("S", [xS, 0], [xS, giu], g1);
+    f.proietta("M", [xm, top], [xm, giu], g2);
+    f.proietta("D", [xD, 0], [xD, giu], g3);
+    f.passo();
+
+    // Passo 4 · pianta
+    f.misura("Inizio", [xS - 0.9, 0], [xS - 0.9, yA], "1 cm", 0.1, "sx");
+    f.figura("POalto", [xS, yA], [xD, yA], [0.2, 0.42]);
+    f.misura("Prof", [xS, yA], [xS, yB], "8 cm", 0.46, "sx");
+    f.figura("PObasso", [xS, yB], [xD, yB], [0.6, 0.8]);
+    f.figura("Colmo", [xm, yA], [xm, yB], [0.8, 0.95]);
+    f.passo();
+
+    // Passo 5 · verso il PL
+    f.proietta("AltB", [xD, hB], [p2 + 1, hB], [0.1, 0.32]);
+    f.proietta("AltT", [xm, top], [p2 + 1, top], [0.32, 0.55]);
+    f.proietta("Prof1", [xD, yA], [0, yA], [0.55, 0.72]);
+    f.numero(1, [0, yA], 0.73);
+    f.proietta("Prof2", [xD, yB], [0, yB], [0.75, 0.92]);
+    f.numero(2, [0, yB], 0.93);
+    f.passo();
+
+    // Passo 6 · archi di riporto
+    f.riporto("Uno", p1, [0.1, 0.3]);
+    f.numero(3, [p1, 0], 0.32);
+    f.riporto("Due", p2, [0.38, 0.92]);
+    f.numero(4, [p2, 0], 0.94);
+    f.passo();
+
+    // Passo 7 · fianco
+    f.proietta("Tre", [p1, 0], [p1, top], [0.12, 0.5]);
+    f.proietta("Quattro", [p2, 0], [p2, top], [0.5, 0.92]);
+    f.passo();
+
+    // Passo 8 · ripasso
+    const r = finestre(15, 0.05, 0.94);
+    c.forEach((p, i) => f.ripassa(`PV${"abcd"[i]}`, p, c[(i + 1) % 4], r[i]));
+    f.ripassa("PVe", [xS, hB], [xm, top], r[4]);
+    f.ripassa("PVf", [xm, top], [xD, hB], r[5]);
+    const o = [[xS, yA], [xD, yA], [xD, yB], [xS, yB]];
+    o.forEach((p, i) => f.ripassa(`PO${"abcd"[i]}`, p, o[(i + 1) % 4], r[6 + i]));
+    f.ripassa("POe", [xm, yA], [xm, yB], r[10]);
+    f.ripassa("PLa", [p1, 0], [p2, 0], r[11]);
+    f.ripassa("PLb", [p2, 0], [p2, top], r[12]);
+    f.ripassa("PLc", [p2, top], [p1, top], r[13]);
+    f.ripassa("PLd", [p1, top], [p1, 0], r[13]);
+    f.ripassa("PLe", [p1, hB], [p2, hB], r[14]);
+    f.passo();
+  });
+
+  // ── Tavola 15 · Piramide tagliata da un piano parallelo al PO ───────────────
+  TAVOLE["po-piramide-tagliata"] = creaFoglio({
+    title: "Piramide tagliata da un piano parallelo al PO",
+    eyebrow: "Tavola 15 · La prima sezione",
+    subtitle: "Piramide a base quadrata: lato 6 cm, altezza 8 cm, appoggiata sul PO con i lati della base paralleli alla LT, a 2 cm dal PV e a 2 cm dal PL. Un piano parallelo al PO la taglia a 4 cm di altezza.",
+    filename: "MC-DIS-2-01_po-piramide-tagliata.ggb",
+    proofTitle: "Ogni punto della sezione sta su uno spigolo",
+    proofCopy: "La sezione è la figura che il piano disegna dove taglia il solido. Ogni suo vertice sta su uno spigolo della piramide e, insieme, sul piano: per trovarlo basta incrociare la traccia del piano con gli spigoli nel PV, e poi portarlo sugli altri piani con le linee di proiezione. Il piano è parallelo al PO: per questo nel PO la sezione si vede con la sua forma vera. A metà altezza ogni lato è la metà di quello di base: un quadrato di lato 3 cm.",
+    equality: "Sezione: quadrato di lato 3 cm, vero nel PO · PV e PL: trapezio con le basi di 6 cm e 3 cm, alto 4 cm",
+    steps: [
+      ["Prima di iniziare", "Leggi i dati e prepara il foglio", `La piramide ha la base quadrata di lato 6 cm ed è alta 8 cm. È appoggiata sul piano orizzontale (PO), con i lati della base paralleli alla linea di terra, a 2 cm dal piano verticale (PV) e a 2 cm dal piano laterale (PL). Un piano parallelo al PO la taglia a 4 cm di altezza. ${prepara(10, 9, 9, 9)}`, "La figura che il piano lascia sul solido si chiama sezione. Prima disegni la piramide intera, poi la tagli."],
+      ["Passo 1 · Sul PO", "Disegna la base e il vertice", "Nel PO traccia una linea sottile parallela alla LT, 2 cm più in basso. Su questa linea segna due punti a sinistra dell’asse verticale, a 2 cm e a 8 cm. Completa il quadrato di lato 6 cm verso il basso. Traccia le due diagonali: si incrociano in V′, la proiezione del vertice.", "Le diagonali sono gli spigoli laterali visti dall’alto: vanno dai vertici della base fino a V′."],
+      ["Passo 2 · Sul PV", "Disegna la piramide di fronte", "Dai due lati verticali del quadrato sali con due linee sottili fino a poco sopra la LT. Da V′ sali con una linea fino a circa 9 cm sopra la LT. La base sta sulla LT, tra le due linee esterne. Sulla linea di mezzo misura 8 cm dalla LT: è V″. Unisci V″ con i due estremi della base.", "Di fronte la piramide è un triangolo con la base di 6 cm e l’altezza di 8 cm."],
+      ["Passo 3 · Verso il PL", "Porta le altezze e le distanze dal PV verso il PL", "Da V″ traccia una linea orizzontale verso destra, fino a circa 9 cm oltre l’asse verticale. Nel PO traccia tre linee orizzontali fino all’asse verticale: il lato in alto del quadrato, la linea che passa per V′, il lato in basso. Dall’alto in basso trovi i punti 1, 2 e 3.", "Le distanze dal PV sono 2 cm, 5 cm e 8 cm."],
+      ["Passo 4 · Compasso", "Porta le distanze dal PV sulla LT", `Punta il compasso in O. Aprilo fino al punto 1 e traccia un quarto di giro ${QUARTO}: trovi il punto 4. Ripeti dal punto 2 e dal punto 3: trovi i punti 5 e 6.`, "Controlla con il righello: i punti 4, 5 e 6 stanno a 2 cm, a 5 cm e a 8 cm da O."],
+      ["Passo 5 · Sul PL", "Disegna la piramide di fianco", "La base sta sulla LT, tra i punti 4 e 6. Dal punto 5 sali in verticale fino alla linea di V″: è V‴, che si legge «V terzo». Unisci V‴ con i punti 4 e 6.", "Di fianco la piramide è lo stesso triangolo che vedi di fronte."],
+      ["Passo 6 · Il piano", "Traccia il piano di taglio", "Il piano è parallelo al PO, a 4 cm di altezza. Di fronte e di fianco lo vedi di taglio, cioè dal bordo: è una linea. Traccia una linea orizzontale a 4 cm dalla LT, che attraversa il triangolo nel PV e quello nel PL. Si chiama traccia del piano.", "La traccia si disegna con un tratto diverso dagli altri, a tratto-punto più marcato."],
+      ["Passo 7 · Sezione nel PV e nel PL", "Trova dove il piano taglia gli spigoli", "Nel PV la traccia incontra i due lati del triangolo nei punti 7 e 8. Nel PL li incontra nei punti 9 e 10. Il tratto tra 7 e 8, e quello tra 9 e 10, sono la sezione vista di taglio.", "Ogni punto della sezione sta su uno spigolo della piramide e sulla traccia del piano."],
+      ["Passo 8 · Sezione nel PO", "Porta la sezione nel PO", "Dai punti 7 e 8 scendi in verticale fino al PO. Ogni linea incontra le due diagonali del quadrato: trovi quattro punti. Uniscili: è un quadrato di lato 3 cm, la sezione. Riempila di righe sottili a 45°, a circa mezzo centimetro una dall’altra, misurato lungo il lato: si chiama tratteggio. Non confonderlo con la linea a trattini degli spigoli nascosti.", "Il piano è parallelo al PO: la sezione nel PO si vede con la sua forma vera. A metà altezza il lato è metà di quello di base."],
+      ["Passo 9 · Ripasso", "Ripassa il tronco di piramide", "La parte sopra il piano si toglie: quello che resta si chiama tronco di piramide. Ripassa con un tratto deciso i due trapezi nel PV e nel PL. Nel PO ripassa il quadrato grande, il quadrato della sezione e i quattro tratti di diagonale che li uniscono.", "Le linee della punta tolta restano sottili: servono solo a costruire."],
+    ],
+  }, { sinistra: 10.8, destra: 10.6, alto: 9.4, basso: 9.2 }, (f) => {
+    const lato = 6, alt = 8, q = 4, dPV = 2, dPL = 2;
+    const xS = -dPL - lato, xD = -dPL, cx = (xS + xD) / 2, yA = -dPV, yB = -dPV - lato, cy = (yA + yB) / 2;
+    const p1 = dPV, p2 = -cy, p3 = dPV + lato, s = lato / 2 * (1 - q / alt);   // metà lato della sezione: 1,5
+    const su = alt + 0.8;
+    const quad = [[xS, yA], [xD, yA], [xD, yB], [xS, yB]];
+    const sez = [[cx - s, cy + s], [cx + s, cy + s], [cx + s, cy - s], [cx - s, cy - s]];
+
+    f.base();
+    f.passo();
+
+    // Passo 1 · base e diagonali
+    f.misura("DalPV", [xS - 0.9, 0], [xS - 0.9, yA], "2 cm", 0.06, "sx");
+    f.proietta("Linea", [0, yA], [xS - 0.5, yA], [0.08, 0.2]);
+    const w = finestre(4, 0.22, 0.66);
+    quad.forEach((p, i) => f.figura(`PO${"abcd"[i]}`, p, quad[(i + 1) % 4], w[i]));
+    f.scritta("Lato", "6 cm", [xD - 1.6, yB - 0.8], BLU, 0.66);
+    f.figura("Diag1", quad[0], quad[2], [0.68, 0.8]);
+    f.figura("Diag2", quad[1], quad[3], [0.8, 0.92]);
+    f.punto("Vpo", [cx, cy], "V′", 0.93, [0.35, 0.15]);
+    f.passo();
+
+    // Passo 2 · triangolo nel PV
+    const [a1, a2, a3] = finestre(3, 0.05, 0.45);
+    f.proietta("S", [xS, yA], [xS, 0.8], a1);
+    f.proietta("M", [cx, cy], [cx, su], a2);
+    f.proietta("D", [xD, yA], [xD, 0.8], a3);
+    f.misura("Alt", [xS - 0.9, 0], [xS - 0.9, alt], "8 cm", 0.5, "sx", [0, 1.3]);   // più in alto: a metà c’è la traccia del piano
+    f.punto("Vpv", [cx, alt], "V″", 0.6, [0.3, 0.7]);
+    f.figura("PVsin", [xS, 0], [cx, alt], [0.62, 0.78]);
+    f.figura("PVdes", [cx, alt], [xD, 0], [0.78, 0.94]);
+    f.passo();
+
+    // Passo 3 · verso il PL
+    f.proietta("AltV", [cx, alt], [p3 + 1, alt], [0.1, 0.34]);
+    f.proietta("Prof1", [xD, yA], [0, yA], [0.36, 0.52]);
+    f.numero(1, [0, yA], 0.53);
+    f.proietta("Prof2", [cx, cy], [0, cy], [0.56, 0.72]);
+    f.numero(2, [0, cy], 0.73);
+    f.proietta("Prof3", [xD, yB], [0, yB], [0.76, 0.9]);
+    f.numero(3, [0, yB], 0.92);
+    f.passo();
+
+    // Passo 4 · archi di riporto
+    f.riporto("Uno", p1, [0.1, 0.32]);
+    f.numero(4, [p1, 0], 0.33);
+    f.riporto("Due", p2, [0.38, 0.62]);
+    f.numero(5, [p2, 0], 0.63);
+    f.riporto("Tre", p3, [0.66, 0.92]);
+    f.numero(6, [p3, 0], 0.93);
+    f.passo();
+
+    // Passo 5 · triangolo nel PL
+    f.proietta("Cinque", [p2, 0], [p2, alt], [0.1, 0.4]);
+    f.punto("Vpl", [p2, alt], "V‴", 0.42, [0.3, 0.7]);
+    f.figura("PLsin", [p1, 0], [p2, alt], [0.5, 0.72]);
+    f.figura("PLdes", [p2, alt], [p3, 0], [0.72, 0.94]);
+    f.passo();
+
+    // Passo 6 · traccia del piano
+    f.misura("Quota", [xD + 0.9, 0], [xD + 0.9, q], "4 cm", 0.1, "dx", [-0.1, 0]);
+    f.traccia("Piano", [xS - 1, q], [p3 + 1, q], [0.25, 0.85]);
+    f.scritta("Piano", "traccia del piano", [p3 - 1.0, q - 0.8], TRACCIA_COLORE, 0.88);
+    f.passo();
+
+    // Passo 7 · punti della sezione nel PV e nel PL
+    f.numero(7, [cx - s, q], 0.15);
+    f.numero(8, [cx + s, q], 0.3);
+    f.figura("SezPV", [cx - s, q], [cx + s, q], [0.32, 0.5]);
+    f.numero(9, [p2 - s, q], 0.6);
+    f.numero(10, [p2 + s, q], 0.72);
+    f.figura("SezPL", [p2 - s, q], [p2 + s, q], [0.74, 0.92]);
+    f.passo();
+
+    // Passo 8 · sezione nel PO
+    f.proietta("Sette", [cx - s, q], [cx - s, cy - s], [0.06, 0.26]);
+    f.proietta("Otto", [cx + s, q], [cx + s, cy - s], [0.26, 0.46]);
+    const w8 = finestre(4, 0.5, 0.78);
+    sez.forEach((p, i) => f.figura(`Sez${"abcd"[i]}`, p, sez[(i + 1) % 4], w8[i]));
+    f.tratteggio("SezPO", sez, 0.86);
+    f.passo();
+
+    // Passo 9 · ripasso del tronco
+    const r = finestre(16, 0.05, 0.94);
+    f.ripassa("PVa", [xS, 0], [xD, 0], r[0]);
+    f.ripassa("PVb", [xD, 0], [cx + s, q], r[1]);
+    f.ripassa("PVc", [cx + s, q], [cx - s, q], r[2]);
+    f.ripassa("PVd", [cx - s, q], [xS, 0], r[3]);
+    quad.forEach((p, i) => f.ripassa(`POq${"abcd"[i]}`, p, quad[(i + 1) % 4], r[4 + i]));
+    sez.forEach((p, i) => f.ripassa(`POs${"abcd"[i]}`, p, sez[(i + 1) % 4], r[8]));
+    quad.forEach((p, i) => f.ripassa(`POd${"abcd"[i]}`, p, sez[i], r[9 + (i > 1 ? 1 : 0)]));
+    f.ripassa("PLa", [p1, 0], [p3, 0], r[11]);
+    f.ripassa("PLb", [p3, 0], [p2 + s, q], r[12]);
+    f.ripassa("PLc", [p2 + s, q], [p2 - s, q], r[13]);
+    f.ripassa("PLd", [p2 - s, q], [p1, 0], r[14]);
+    f.passo();
+  });
+
+  // ── Tavola 16 · Prisma esagonale tagliato da un piano inclinato ─────────────
+  {
+    const lato = 3, alt = 8, q = 4, cx = -6, cy = -5;
+    const h = (lato * Math.sqrt(3)) / 2;                                // 2,598
+    const tg = Math.tan(Math.PI / 6);
+    const quota = (x) => q + (x - cx) * tg;                            // altezza della traccia sopra x
+    const P = {                                                         // vertici della base nel PO
+      A: [cx - lato, cy], B: [cx - lato / 2, cy + h], C: [cx + lato / 2, cy + h],
+      D: [cx + lato, cy], E: [cx + lato / 2, cy - h], F: [cx - lato / 2, cy - h],
+    };
+    const nomi = ["A", "B", "C", "D", "E", "F"];
+    const pv = (n) => [P[n][0], quota(P[n][0])];                        // punto della sezione nel PV
+    const pl = (n) => [-P[n][1], quota(P[n][0])];                       // punto della sezione nel PL
+    const dist = 8;                                                     // asse della vera forma: 8 cm dalla traccia
+    const vf = (n) => piu(pv(n), N_SEZ, dist + (-P[n][1] - (-cy)));      // vera forma: più lontano chi è più lontano dal PV
+
+    TAVOLE["po-prisma-esagonale-tagliato"] = creaFoglio({
+      title: "Prisma esagonale tagliato da un piano inclinato",
+      eyebrow: "Tavola 16 · La sezione e la sua forma vera",
+      subtitle: "Prisma esagonale regolare: lato 3 cm, altezza 8 cm, appoggiato sul PO con due lati paralleli alla LT; il centro della base dista 5 cm dal PV e 6 cm dal PL. Un piano perpendicolare al PV, inclinato di 30° sul PO, lo taglia passando per il punto dell’asse a 4 cm di altezza.",
+      filename: "MC-DIS-2-01_po-prisma-esagonale-tagliato.ggb",
+      proofTitle: "Perché serve la vera forma",
+      proofCopy: "Il piano è inclinato: nel PO e nel PL la sezione si vede deformata, più corta in una direzione di com’è davvero. Per vederla vera si ribalta il piano, cioè si immagina di girarlo attorno alla traccia finché è parallelo al foglio. Lungo la traccia le misure restano quelle del PV; di traverso si riportano le distanze prese nel PO. Viene un esagono allungato: largo quanto l’esagono di base, circa 5,2 cm, e lungo circa 6,9 cm invece di 6.",
+      equality: "PV: la sezione è un tratto lungo circa 6,9 cm · PO: esagono di lato 3 cm, tratteggiato · vera forma: esagono allungato, circa 6,9 × 5,2 cm",
+      steps: [
+        ["Prima di iniziare", "Leggi i dati e prepara il foglio", `Il prisma ha per base un esagono regolare di lato 3 cm ed è alto 8 cm. È appoggiato sul piano orizzontale (PO), con due lati della base paralleli alla linea di terra; il centro della base dista 5 cm dal piano verticale (PV) e 6 cm dal piano laterale (PL). Un piano lo taglia: è perpendicolare al PV, inclinato di 30° sul PO, e passa per il punto dell’asse a 4 cm di altezza. ${prepara(15, 9, 15, 9)}`, "Serve più spazio del solito sopra la LT: lì disegnerai la forma vera della sezione."],
+        ["Passo 1 · Sul PO", "Disegna l’esagono", "Nel PO segna il centro: 6 cm a sinistra dell’asse verticale e 5 cm sotto la LT. Traccia per il centro una linea orizzontale sottile. Con il compasso aperto di 3 cm traccia la circonferenza: taglia la linea in A′ e D′. Senza cambiare apertura, punta in A′ e in D′ e taglia la circonferenza sopra e sotto: trovi B′, C′, E′ e F′. Unisci i sei punti.", "B′ e C′ sono i più vicini al PV, E′ e F′ i più lontani."],
+        ["Passo 2 · Sul PV", "Disegna il prisma intero", "Dai vertici dell’esagono sali in verticale fino a circa 9 cm sopra la LT. Le linee sono quattro, perché B′ e F′, e così C′ ed E′, stanno sulla stessa verticale. Traccia la linea a 8 cm tra le due linee esterne: hai il prisma intero, largo 6 cm e alto 8 cm. Nel mezzo traccia l’asse del prisma, a tratto-punto.", "Prima disegni il prisma intero, sottile: dopo lo tagli."],
+        ["Passo 3 · Il piano", "Traccia il piano e trova la sezione nel PV", `Sull’asse segna il punto a 4 cm dalla LT. ${SQUADRA} e traccia per quel punto una linea inclinata di 30°, che sale verso destra: è la traccia del piano. Incontra le quattro linee verticali in A″, B″ ≡ F″, C″ ≡ E″ e D″.`, "Il piano è perpendicolare al PV: di fronte lo vedi di taglio, come una linea. La sezione nel PV è il tratto tra A″ e D″."],
+        ["Passo 4 · Verso il PL", "Porta le altezze e le distanze dal PV verso il PL", "Da A″, B″, C″ e D″ traccia quattro linee orizzontali verso destra, fino a circa 9 cm oltre l’asse verticale. Nel PO traccia tre linee orizzontali fino all’asse verticale: dal lato B′C′, dalla linea A′D′, dal lato F′E′. Dall’alto in basso trovi i punti 1, 2 e 3.", "Le distanze dal PV sono circa 2,4 cm, 5 cm e 7,6 cm."],
+        ["Passo 5 · Compasso", "Porta le distanze dal PV sulla LT", `Punta il compasso in O. Aprilo fino al punto 1 e traccia un quarto di giro ${QUARTO}: trovi il punto 4. Ripeti dal punto 2 e dal punto 3: trovi i punti 5 e 6.`, "Controlla con il righello: i punti 4, 5 e 6 stanno a circa 2,4 cm, a 5 cm e a circa 7,6 cm da O."],
+        ["Passo 6 · Sul PL", "Trova la sezione nel PL", "Dai punti 4, 5 e 6 sali in verticale. Dove queste linee incontrano le orizzontali trovi i sei punti della sezione: B‴ e C‴ sulla verticale del punto 4, A‴ e D‴ su quella del punto 5, F‴ ed E‴ su quella del punto 6. Uniscili in ordine: A‴, B‴, C‴, D‴, E‴, F‴.", "Ogni punto ha l’altezza del PV e la distanza dal PV del PO: per questo serve incrociare due linee."],
+        ["Passo 7 · Vera forma", "Disegna la sezione con la sua forma vera", "Immagina di girare il piano attorno alla traccia, come una porta sui cardini, finché è parallelo al foglio: si dice ribaltare. I punti ribaltati si scrivono tra parentesi: (A) si legge «A ribaltato». Appoggia la squadra da 30° e 60° sul righello tenuto lungo la LT, con il lato che forma 60° con la LT rivolto verso sinistra: è perpendicolare alla traccia. Traccia così da A″, B″, C″ e D″ quattro perpendicolari. Su quelle di A″ e D″ misura 8 cm dalla traccia (una distanza scelta per non sovrapporre i disegni) e unisci i due punti: è l’asse della vera forma, a tratto-punto, e su di esso stanno (A) e (D). Con il compasso prendi nel PO la distanza di B′ dalla linea A′D′, circa 2,6 cm, e riportala sulle perpendicolari di B″ e di C″: dalla parte della traccia trovi (B) e (C), che nel PO sono vicini alla LT; dalla parte opposta (F) ed (E). Unisci i sei punti e tratteggia l’esagono.", "Controlla: (B)(C) è lungo circa 3,5 cm, più di B′C′, che è 3 cm, perché nel PV il lato è inclinato."],
+        ["Passo 8 · Ripasso", "Ripassa il prisma tagliato", "La parte sopra il piano si toglie. Ripassa nel PV il contorno del pezzo che resta e i due spigoli interni. Nel PO ripassa l’esagono e tratteggialo: dall’alto vedi tutta la sezione. Nel PL ripassa il contorno, le linee della sezione e tratteggiala; lo spigolo di D, sopra A‴, sta dietro la sezione: disegnalo a trattini. Ripassa la vera forma.", "Il tratteggio a 45° dice a chi legge che lì il solido è stato tagliato."],
+      ],
+    }, { sinistra: 14.4, destra: 9.4, alto: 15.2, basso: 8.8, nomePV: "basso" }, (f) => {
+      const su = alt + 0.8;
+      const xs = [P.A[0], P.B[0], P.C[0], P.D[0]];
+      const esa = nomi.map((n) => P[n]);
+
+      f.base();
+      f.passo();
+
+      // Passo 1 · esagono
+      f.misura("CentroX", [cx, 0], f.O, "6 cm", 0.06, "giu", [1.6, 0]);
+      f.misura("CentroY", [cx - lato - 0.9, 0], [cx - lato - 0.9, cy], "5 cm", 0.12, "sx");
+      f.segno("K", [cx, cy], 0.2);
+      f.proietta("Diam", [cx - lato - 0.5, cy], [cx + lato + 0.5, cy], [0.2, 0.32]);
+      f.cerchio("Base", [cx, cy], lato, [0.34, 0.56]);
+      f.archetto("AB", P.A, P.B, 10, [0.58, 0.64]);
+      f.archetto("AF", P.A, P.F, 10, [0.64, 0.7]);
+      f.archetto("DC", P.D, P.C, 10, [0.7, 0.76]);
+      f.archetto("DE", P.D, P.E, 10, [0.76, 0.82]);
+      const l1 = finestre(6, 0.83, 0.95);
+      esa.forEach((p, i) => f.figura(`Esa${nomi[i]}`, p, esa[(i + 1) % 6], l1[i]));
+      const sposta = { A: [-1.05, 0.85], B: [-0.9, 1.05], C: [0.15, 1.05], D: [0.2, 0.85], E: [0.15, -0.25], F: [-0.9, -0.25] };
+      nomi.forEach((n) => f.punto(`Po${n}`, P[n], `${n}′`, 0.95, sposta[n]));
+      f.passo();
+
+      // Passo 2 · prisma intero nel PV
+      const v = finestre(4, 0.05, 0.5);
+      xs.forEach((x, i) => f.proietta(`V${i}`, [x, i === 0 || i === 3 ? cy : cy + h], [x, su], v[i]));
+      f.misura("Alt", [P.D[0] + 1.6, 0], [P.D[0] + 1.6, alt], "8 cm", 0.55, "dx", [0, 1.4]);
+      f.figura("Sopra", [P.A[0], alt], [P.D[0], alt], [0.6, 0.8]);
+      f.asse("PV", [cx, -0.6], [cx, alt + 0.6], [0.8, 0.95]);
+      f.passo();
+
+      // Passo 3 · traccia del piano e sezione nel PV
+      f.misura("Quota", [cx - 0.5, 0], [cx - 0.5, q], "4 cm", 0.08, "sx");
+      f.segno("Q", [cx, q], 0.2);
+      f.traccia("Piano", [P.A[0] - 0.9, quota(P.A[0] - 0.9)], [P.D[0] + 0.9, quota(P.D[0] + 0.9)], [0.25, 0.6]);
+      f.scritta("Ang", "30°", [P.D[0] + 0.7, quota(P.D[0] + 0.9) + 0.3], TRACCIA_COLORE, 0.6);
+      f.punto("SvA", pv("A"), "A″", 0.66, [-1.1, 0.75]);
+      f.punto("SvB", pv("B"), "B″≡F″", 0.74, [-3.0, 1.3]);
+      f.punto("SvC", pv("C"), "C″≡E″", 0.82, [-3.0, 1.3]);
+      f.punto("SvD", pv("D"), "D″", 0.9, [0.25, -0.2]);
+      f.passo();
+
+      // Passo 4 · verso il PL
+      const o4 = finestre(4, 0.05, 0.45);
+      ["A", "B", "C", "D"].forEach((n, i) => f.proietta(`H${n}`, pv(n), [8.6, pv(n)[1]], o4[i]));
+      f.proietta("Prof1", P.C, [0, P.C[1]], [0.5, 0.62]);
+      f.numero(1, [0, P.C[1]], 0.63);
+      f.proietta("Prof2", P.D, [0, cy], [0.66, 0.76]);
+      f.numero(2, [0, cy], 0.77);
+      f.proietta("Prof3", P.E, [0, P.E[1]], [0.8, 0.9]);
+      f.numero(3, [0, P.E[1]], 0.92);
+      f.passo();
+
+      // Passo 5 · archi di riporto
+      const d1 = -P.C[1], d2 = -cy, d3 = -P.E[1];
+      f.riporto("Uno", d1, [0.1, 0.32]);
+      f.numero(4, [d1, 0], 0.33);
+      f.riporto("Due", d2, [0.38, 0.62]);
+      f.numero(5, [d2, 0], 0.63);
+      f.riporto("Tre", d3, [0.66, 0.92]);
+      f.numero(6, [d3, 0], 0.93);
+      f.passo();
+
+      // Passo 6 · sezione nel PL
+      f.proietta("Quattro", [d1, 0], [d1, quota(P.C[0]) + 0.6], [0.05, 0.22]);
+      f.proietta("Cinque", [d2, 0], [d2, quota(P.D[0]) + 0.6], [0.22, 0.39]);
+      f.proietta("Sei", [d3, 0], [d3, quota(P.E[0]) + 0.6], [0.39, 0.56]);
+      const nomePL = { A: [0.15, -0.3], B: [-1.05, 0.2], C: [-1.05, 0.85], D: [0.2, 0.95], E: [0.2, 0.85], F: [0.2, 0.2] };
+      nomi.forEach((n) => f.punto(`Pl${n}`, pl(n), `${n}‴`, 0.6, nomePL[n]));
+      const l6 = finestre(6, 0.64, 0.95);
+      nomi.forEach((n, i) => f.figura(`SezPL${n}`, pl(n), pl(nomi[(i + 1) % 6]), l6[i]));
+      f.passo();
+
+      // Passo 7 · vera forma
+      const p7 = finestre(4, 0.04, 0.3);
+      ["A", "B", "C", "D"].forEach((n, i) => f.proietta(`Perp${n}`, pv(n), piu(pv(n), N_SEZ, n === "A" || n === "D" ? 9 : 11.6), p7[i]));   // 0,5 cm oltre il punto più lontano
+      f.asse("VF", piu(vf("A"), T_SEZ, -0.9), piu(vf("D"), T_SEZ, 0.9), [0.32, 0.46]);
+      const nomeVF = { A: [-1.25, 0.2], B: [-0.95, -0.75], C: [0.25, -0.6], D: [0.3, 0.3], E: [0.3, 0.3], F: [-1.3, 0.85] };
+      nomi.forEach((n, i) => f.punto(`Vf${n}`, vf(n), `(${n})`, 0.5 + i * 0.03, nomeVF[n]));
+      const l7 = finestre(6, 0.68, 0.86);
+      nomi.forEach((n, i) => f.figura(`VF${n}`, vf(n), vf(nomi[(i + 1) % 6]), l7[i]));
+      f.tratteggio("VF", nomi.map(vf), 0.9);
+      f.passo();
+
+      // Passo 8 · ripasso del pezzo che resta
+      const r = finestre(22, 0.04, 0.95);
+      let i = 0;
+      f.ripassa("PVa", [P.A[0], 0], [P.D[0], 0], r[i++]);
+      f.ripassa("PVb", [P.D[0], 0], pv("D"), r[i++]);
+      f.ripassa("PVc", pv("D"), pv("A"), r[i++]);
+      f.ripassa("PVd", pv("A"), [P.A[0], 0], r[i++]);
+      f.ripassa("PVe", [P.B[0], 0], pv("B"), r[i++]);
+      f.ripassa("PVf", [P.C[0], 0], pv("C"), r[i++]);
+      esa.forEach((p, j) => f.ripassa(`PO${nomi[j]}`, p, esa[(j + 1) % 6], r[i]));
+      i++;
+      f.tratteggio("PO", esa, 0.36);
+      f.ripassa("PLa", [d1, 0], [d3, 0], r[i++]);
+      f.ripassa("PLb", [d3, 0], pl("E"), r[i++]);
+      f.ripassa("PLc", pl("E"), pl("D"), r[i++]);
+      f.ripassa("PLd", pl("D"), pl("C"), r[i++]);
+      f.ripassa("PLe", pl("C"), [d1, 0], r[i++]);
+      f.ripassa("PLf", pl("A"), pl("B"), r[i++]);
+      f.ripassa("PLg", pl("A"), pl("F"), r[i++]);
+      f.ripassa("PLh", [d2, 0], pl("A"), r[i++]);
+      f.nascosto("PLn", pl("A"), pl("D"), r[i++]);
+      f.tratteggio("PL", nomi.map(pl), 0.66);
+      nomi.forEach((n, j) => f.ripassa(`VF${n}`, vf(n), vf(nomi[(j + 1) % 6]), r[i]));
+      f.passo();
+    });
+  }
+
+  // ── Tavola 17 · Cilindro tagliato da un piano inclinato ─────────────────────
+  {
+    const raggio = 3, alt = 8, q = 4, cx = -6, cy = -5;
+    const tg = Math.tan(Math.PI / 6), co = Math.cos(Math.PI / 6);
+    const quota = (x) => q + (x - cx) * tg;
+    const ang = (k) => ((k - 1) * Math.PI) / 6;                                          // punto k: (k−1)·30° dal punto più a destra
+    const po = (k) => [cx + raggio * Math.cos(ang(k)), cy + raggio * Math.sin(ang(k))];
+    const pv = (k) => [po(k)[0], quota(po(k)[0])];
+    const pl = (k) => [-po(k)[1], quota(po(k)[0])];
+    const dist = 8.5;
+    const vf = (k) => piu(pv(k), N_SEZ, dist + (-po(k)[1] - (-cy)));
+    const K = Array.from({ length: 12 }, (_, i) => i + 1);
+    const colonne = [1, 2, 3, 4, 5, 6, 7];                                                // punti con x diversa: gli altri cadono sopra
+    const profondita = [4, 3, 2, 1, 12, 11, 10];                                          // punti con distanza dal PV diversa, dalla più piccola
+    // curve esatte (per il ripasso)
+    const cPL = [-cy, q];
+    const ellPL = [(t) => cPL[0] - raggio * Math.sin(t), (t) => cPL[1] + raggio * tg * Math.cos(t)];
+    const cVF = piu([cx, q], N_SEZ, dist);
+    const ellVF = [
+      (t) => cVF[0] + (raggio / co) * Math.cos(t) * T_SEZ[0] - raggio * Math.sin(t) * N_SEZ[0],
+      (t) => cVF[1] + (raggio / co) * Math.cos(t) * T_SEZ[1] - raggio * Math.sin(t) * N_SEZ[1],
+    ];
+    const testoCurva = (c) => [
+      `${fmt(c[0])}${c[2] >= 0 ? "+" : ""}${fmt(c[2])}*cos(t)${c[3] >= 0 ? "+" : ""}${fmt(c[3])}*sin(t)`,
+      `${fmt(c[1])}${c[4] >= 0 ? "+" : ""}${fmt(c[4])}*cos(t)${c[5] >= 0 ? "+" : ""}${fmt(c[5])}*sin(t)`,
+    ];
+    // coefficienti: x = x0 + a·cos t + b·sin t ; y = y0 + c·cos t + d·sin t
+    const curvaPL = testoCurva([cPL[0], cPL[1], 0, -raggio, raggio * tg, 0]);
+    const curvaVF = testoCurva([cVF[0], cVF[1], (raggio / co) * T_SEZ[0], -raggio * N_SEZ[0], (raggio / co) * T_SEZ[1], -raggio * N_SEZ[1]]);
+
+    TAVOLE["po-cilindro-tagliato"] = creaFoglio({
+      title: "Cilindro tagliato da un piano inclinato",
+      eyebrow: "Tavola 17 · Una sezione curva",
+      subtitle: "Cilindro di raggio 3 cm, alto 8 cm, appoggiato sul PO; il centro della base dista 5 cm dal PV e 6 cm dal PL. Un piano perpendicolare al PV, inclinato di 30° sul PO, lo taglia passando per il punto dell’asse a 4 cm di altezza.",
+      filename: "MC-DIS-2-01_po-cilindro-tagliato.ggb",
+      proofTitle: "Una curva si costruisce per punti",
+      proofCopy: "Il cilindro non ha spigoli: per trovare la sezione si scelgono dodici linee sulla sua superficie, le generatrici, e si cerca dove il piano le taglia. Ogni punto si porta sugli altri piani come un vertice qualunque; poi si uniscono i punti con una linea curva. La sezione di un cilindro tagliato di sbieco è un’ellisse: nel PL è larga 6 cm e alta circa 3,5 cm; nella vera forma è larga 6 cm e lunga circa 6,9 cm.",
+      equality: "PO: cerchio di raggio 3 cm, tratteggiato · PL: ellisse di 6 × 3,5 cm circa · vera forma: ellisse di 6,9 × 6 cm circa",
+      steps: [
+        ["Prima di iniziare", "Leggi i dati e prepara il foglio", `Il cilindro ha il raggio di 3 cm ed è alto 8 cm. È appoggiato sul piano orizzontale (PO); il centro della base dista 5 cm dal piano verticale (PV) e 6 cm dal piano laterale (PL). Un piano lo taglia: è perpendicolare al PV, inclinato di 30° sul PO, e passa per il punto dell’asse a 4 cm di altezza. ${prepara(15, 10, 15, 9)}`, "È lo stesso taglio della tavola 16, su un solido rotondo."],
+        ["Passo 1 · Sul PO", "Disegna il cerchio e i dodici punti", "Nel PO segna il centro: 6 cm a sinistra dell’asse verticale e 5 cm sotto la LT. Traccia i due assi a tratto-punto e la circonferenza di raggio 3 cm. Con la stessa apertura punta il compasso nei quattro punti dove gli assi incontrano la circonferenza: ogni volta segni due punti. Con i quattro degli assi hai 12 punti a distanza uguale. Numerali da 1 a 12, partendo da quello più a destra e girando verso la LT.", "Le linee del cilindro che passano per questi punti si chiamano generatrici: sono come gli spigoli di un prisma."],
+        ["Passo 2 · Sul PV", "Disegna il cilindro intero e le generatrici", "Dai dodici punti sali in verticale fino a circa 9 cm sopra la LT. Le linee sono sette, perché i punti stanno a coppie uno dietro l’altro: 2 con 12, 3 con 11, 4 con 10, 5 con 9, 6 con 8. Traccia la linea a 8 cm tra le due linee esterne e l’asse del cilindro, a tratto-punto.", "Prima disegni il cilindro intero, sottile: dopo lo tagli."],
+        ["Passo 3 · Il piano", "Traccia il piano e trova i punti nel PV", `Sull’asse segna il punto a 4 cm dalla LT. ${SQUADRA} e traccia per quel punto la linea inclinata di 30° che sale verso destra: è la traccia del piano. Segna i sette punti dove incontra le generatrici.`, "Ogni punto della traccia vale per due generatrici, tranne il primo e l’ultimo: 1″ a destra, in alto, e 7″ a sinistra, in basso."],
+        ["Passo 4 · Verso il PL", "Porta le altezze e le distanze dal PV verso il PL", "Dai sette punti della traccia disegna sette linee orizzontali verso destra, fino a circa 9 cm oltre l’asse verticale. Nel PO, dai dodici punti, traccia le linee orizzontali fino all’asse verticale. Sono sette, perché anche qui i punti vanno a coppie: 1 con 7, 2 con 6, 3 con 5, 8 con 12, 9 con 11. Solo 4 e 10 sono da soli.", "Le distanze dal PV vanno da 2 cm (punto 4) a 8 cm (punto 10)."],
+        ["Passo 5 · Compasso", "Porta le distanze dal PV sulla LT", `Punta il compasso in O e porta sulla LT, una alla volta, le sette distanze dal PV: sette quarti di giro ${QUARTO}.`, "Controlla con il righello: il primo arco arriva a 2 cm da O, quello di mezzo a 5 cm, l’ultimo a 8 cm."],
+        ["Passo 6 · Sul PL", "Trova la sezione nel PL", "Dai sette punti sulla LT sali in verticale. Poi segui una generatrice alla volta. Per la 2: l’orizzontale è quella che parte dal punto della traccia sulla linea della 2 (a 5,5 cm); la verticale è quella che sale dal punto della LT dove arriva l’arco della linea della 2 (a 3,5 cm da O). Dove si incrociano c’è il punto della sezione. Fai lo stesso per le altre: le coppie del PV (2 e 12, 3 e 11, …) hanno la stessa orizzontale, quelle del PO (2 e 6, 3 e 5, …) la stessa verticale. Unisci i dodici punti con una linea curva, a mano libera o con il curvilineo (il righello per le curve).", "Viene un’ellisse, cioè un cerchio schiacciato: larga 6 cm, come il cilindro, e alta circa 3,5 cm."],
+        ["Passo 7 · Vera forma", "Disegna la sezione con la sua forma vera", "Come nella tavola 16, con la squadra da 30° e 60° (lato che forma 60° con la LT rivolto verso sinistra) traccia dai sette punti della traccia sette perpendicolari. Su quelle di 1″ e di 7″ misura 8,5 cm dalla traccia e unisci i due punti: è l’asse della vera forma, e su di esso stanno (1) e (7). Con il compasso prendi nel PO la distanza di ogni punto dall’asse orizzontale del cerchio: 1,5 cm per 2, 6, 8 e 12; 2,6 cm per 3, 5, 9 e 11; 3 cm per 4 e 10. Riportala sulla perpendicolare che parte dal punto della traccia sulla sua linea (2 e 12 hanno la stessa perpendicolare, come 3 e 11, 4 e 10, 5 e 9, 6 e 8): dalla parte della traccia i punti vicini al PV (2, 3, 4, 5, 6), dalla parte opposta quelli lontani (8, 9, 10, 11, 12). Unisci i dodici punti con una linea curva e tratteggia.", "Viene un’ellisse più lunga di quella del PL: circa 6,9 cm lungo la traccia e 6 cm di traverso."],
+        ["Passo 8 · Ripasso", "Ripassa il cilindro tagliato", "La parte sopra il piano si toglie. Nel PV ripassa il contorno del pezzo che resta. Nel PO ripassa il cerchio e tratteggialo: dall’alto vedi tutta la sezione. Nel PL ripassa i due lati, la base e l’ellisse, tratteggia l’ellisse e traccia l’asse del cilindro, a tratto-punto. Ripassa la vera forma. Gli assi restano sottili, a tratto-punto.", "Nel PL i lati del cilindro arrivano a 4 cm: lì le generatrici 4 e 10 incontrano il piano."],
+      ],
+    }, { sinistra: 15, destra: 9.8, alto: 15.2, basso: 8.9, nomePV: "basso" }, (f) => {
+      const su = alt + 0.8;
+
+      f.base();
+      f.passo();
+
+      // Passo 1 · cerchio e dodici punti
+      f.misura("CentroX", [cx, 0], f.O, "6 cm", 0.05, "giu", [1.6, 0]);
+      f.misura("CentroY", [cx - raggio - 0.9, 0], [cx - raggio - 0.9, cy], "5 cm", 0.1, "sx");
+      f.asse("OrizPO", [cx - raggio - 0.6, cy], [cx + raggio + 0.6, cy], [0.16, 0.26]);
+      f.asse("VertPO", [cx, cy + raggio + 0.6], [cx, cy - raggio - 0.6], [0.26, 0.36]);
+      f.cerchio("Base", [cx, cy], raggio, [0.38, 0.56]);
+      const ar = finestre(8, 0.58, 0.88);
+      [[1, 3], [1, 11], [4, 2], [4, 6], [7, 5], [7, 9], [10, 8], [10, 12]].forEach(([c, p], i) => f.archetto(`G${c}x${p}`, po(c), po(p), 9, ar[i]));
+      K.forEach((k) => {
+        const p = po(k), fuori = 0.55;
+        f.numero(k, p, 0.9);
+        f.stile(`N${k}`, { label: false });
+        f.scritta(`Num${k}`, String(k), [p[0] + fuori * Math.cos(ang(k)) - 0.2, p[1] + fuori * Math.sin(ang(k)) - 0.25], STILI.servizio.color, 0.9);
+        f.stile(`TestoNum${k}`, { layer: LIVELLI.nomi });
+      });
+      f.passo();
+
+      // Passo 2 · cilindro intero nel PV
+      const v = finestre(7, 0.04, 0.6);
+      colonne.forEach((k, i) => f.proietta(`G${k}`, po(k), [po(k)[0], su], v[i]));
+      f.misura("Alt", [cx + raggio + 1.6, 0], [cx + raggio + 1.6, alt], "8 cm", 0.62, "dx", [0, 1.4]);
+      f.figura("Sopra", [cx - raggio, alt], [cx + raggio, alt], [0.66, 0.82]);
+      f.asse("PV", [cx, -0.6], [cx, alt + 0.6], [0.82, 0.95]);
+      f.passo();
+
+      // Passo 3 · traccia e sette punti
+      f.misura("Quota", [cx - 0.5, 0], [cx - 0.5, q], "4 cm", 0.08, "sx");
+      f.segno("Q", [cx, q], 0.2);
+      f.traccia("Piano", [cx - raggio - 0.9, quota(cx - raggio - 0.9)], [cx + raggio + 0.9, quota(cx + raggio + 0.9)], [0.25, 0.6]);
+      f.scritta("Ang", "30°", [cx + raggio + 0.7, quota(cx + raggio + 0.9) + 0.3], TRACCIA_COLORE, 0.6);
+      colonne.forEach((k, i) => f.segno(`Tv${k}`, pv(k), 0.64 + i * 0.04));
+      f.punto("T1", pv(1), "1″", 0.66, [0.25, -0.2]);
+      f.punto("T7", pv(7), "7″", 0.9, [-1.05, 0.25]);
+      f.passo();
+
+      // Passo 4 · verso il PL
+      const o4 = finestre(7, 0.04, 0.5);
+      colonne.forEach((k, i) => f.proietta(`H${k}`, pv(k), [8.9, pv(k)[1]], o4[i]));
+      const o5 = finestre(7, 0.54, 0.94);
+      profondita.forEach((k, i) => f.proietta(`P${k}`, po(k), [0, po(k)[1]], o5[i]));
+      f.passo();
+
+      // Passo 5 · sette archi di riporto
+      const a5 = finestre(7, 0.05, 0.94);
+      profondita.forEach((k, i) => {
+        f.riporto(`R${k}`, -po(k)[1], a5[i]);
+        f.segno(`L${k}`, [-po(k)[1], 0], a5[i][1]);
+      });
+      f.passo();
+
+      // Passo 6 · ellisse nel PL
+      const v6 = finestre(7, 0.04, 0.4);
+      profondita.forEach((k, i) => {
+        const pari = K.filter((j) => Math.abs(po(j)[1] - po(k)[1]) < 1e-6);
+        const tetto = Math.max(...pari.map((j) => pl(j)[1]));
+        f.proietta(`U${k}`, [-po(k)[1], 0], [-po(k)[1], tetto + 0.5], v6[i]);
+      });
+      K.forEach((k, i) => f.segno(`Sl${k}`, pl(k), 0.44 + i * 0.02));
+      f.curva("EllPL", curvaPL[0], curvaPL[1], 0, fmt(2 * Math.PI), 0.8);
+      f.passo();
+
+      // Passo 7 · vera forma
+      const p7 = finestre(7, 0.04, 0.34);
+      const lunghe = { 1: 9, 2: 10.5, 3: 11.6, 4: 12, 5: 11.6, 6: 10.5, 7: 9 };   // 0,5 cm oltre il punto più lontano
+      colonne.forEach((k, i) => f.proietta(`Perp${k}`, pv(k), piu(pv(k), N_SEZ, lunghe[k]), p7[i]));
+      f.asse("VF", piu(vf(7), T_SEZ, -0.9), piu(vf(1), T_SEZ, 0.9), [0.36, 0.46]);
+      K.forEach((k, i) => f.segno(`Vf${k}`, vf(k), 0.48 + i * 0.015));
+      f.punto("VfUno", vf(1), "(1)", 0.5, [0.3, 0.3]);
+      f.punto("VfQuattro", vf(4), "(4)", 0.55, [0.25, -0.55]);
+      f.punto("VfSette", vf(7), "(7)", 0.6, [-1.35, -0.55]);
+      f.punto("VfDieci", vf(10), "(10)", 0.65, [-0.5, 0.75]);
+      f.curva("EllVF", curvaVF[0], curvaVF[1], 0, fmt(2 * Math.PI), 0.82);
+      f.tratteggio("VF", ellisseVertici(ellVF[0], ellVF[1]), 0.9);
+      f.passo();
+
+      // Passo 8 · ripasso
+      const r = finestre(8, 0.04, 0.95);
+      f.ripassa("PVa", [cx - raggio, 0], [cx + raggio, 0], r[0]);
+      f.ripassa("PVb", [cx + raggio, 0], pv(1), r[1]);
+      f.ripassa("PVc", pv(1), pv(7), r[2]);
+      f.ripassa("PVd", pv(7), [cx - raggio, 0], r[3]);
+      f.ripassaCerchio("PO", [cx, cy], raggio, r[4][0]);
+      f.tratteggio("PO", ellisseVertici((t) => cx + raggio * Math.cos(t), (t) => cy + raggio * Math.sin(t)), r[4][1]);
+      f.ripassa("PLa", [-po(4)[1], 0], [-po(10)[1], 0], r[5]);
+      f.ripassa("PLb", [-po(4)[1], 0], pl(4), r[5]);
+      f.ripassa("PLc", [-po(10)[1], 0], pl(10), r[5]);
+      f.curva("PL", curvaPL[0], curvaPL[1], 0, fmt(2 * Math.PI), r[6][0], true);
+      f.tratteggio("PL", ellisseVertici(ellPL[0], ellPL[1]), r[6][1]);
+      f.asse("PL", [-cy, -0.6], [-cy, q + raggio * tg + 0.6], r[6]);
+      f.curva("VF", curvaVF[0], curvaVF[1], 0, fmt(2 * Math.PI), r[7][0], true);
+      f.passo();
+    });
+  }
 
   // ── Pulsante «Foglio tecnico» / «Foglio a colori»: ricarica la stessa tavola nell'altra modalità ──
   if ((PARAMETRI.get("activity") || "").startsWith("po-")) {
