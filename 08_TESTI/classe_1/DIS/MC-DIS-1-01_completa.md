@@ -352,7 +352,7 @@ Il pentagono non si costruisce con la sola apertura del compasso come l'esagono 
 
 ---
 
-Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligoni dato il lato e inscritti, triangoli, ovali, ovoli e spirali. Ognuna ha la sua tavola animata; le trovi tutte, divise per tipo, nella pagina «Costruzioni geometriche» del Book.
+Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligoni dato il lato e inscritti, triangoli, ovali, ovoli e spirali. Ognuna ha la sua tavola animata; le trovi tutte, divise per tipo, nella pagina «Costruzioni geometriche» del Book, insieme ai motivi modulari e ad altre venti costruzioni (dalla 51 alla 70): angoli, tangenti, raccordi, archi, ellisse, parabola e spirale di Archimede.
 
 ---
 
