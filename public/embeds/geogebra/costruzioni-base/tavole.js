@@ -1342,6 +1342,1013 @@
     k.risultato(...fine);
   });
 
+  // ══════════════════════════════════════════════════════════════════════════
+  // Serie 51–70 — angoli, circonferenze e tangenti, raccordi, stelle, archi, curve per punti
+  // ══════════════════════════════════════════════════════════════════════════
+
+  const medio = (p, q) => [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
+  const sposta = (p, gradi, d) => polare(p, d, gradi);
+  const modulo360 = (g) => ((g % 360) + 360) % 360;
+
+  /** Punto senza etichetta (piccolo, rosso): per i punti di una curva. */
+  function puntoMuto(k, t, nome, p) {
+    t.commands.push(`${nome}=${xy(p)}`, `ShowLabel(${nome},false)`, `SetPointSize(${nome},4)`, `SetColor(${nome},"Red")`);
+    return p;
+  }
+
+  /** Oggetto GeoGebra libero (curve): nome=espressione, con spessore. */
+  function comando(t, nome, espressione, spessore) {
+    t.commands.push(`${nome}=${espressione}`, `ShowLabel(${nome},false)`, `SetLineThickness(${nome},${spessore || 6})`);
+  }
+
+  /** Quattro archetti dell'asse di PQ (Costruzione 9). Restituisce i due incroci e i nomi degli archetti. */
+  function asse(k, pref, P, Q, rho, da, a) {
+    const M = medio(P, Q);
+    const h = distanza(P, Q) / 2;
+    const d = Math.sqrt(rho * rho - h * h);
+    const n = direzione(P, Q) + 90;
+    const X1 = sposta(M, n, d);
+    const X2 = sposta(M, n, -d);
+    const w = finestre(4, da === undefined ? 0.1 : da, a === undefined ? 0.7 : a);
+    const nomi = [`arc${pref}1`, `arc${pref}2`, `arc${pref}3`, `arc${pref}4`];
+    k.archetto(nomi[0], P, X1, 9, w[0]); k.archetto(nomi[1], Q, X1, 9, w[1]);
+    k.archetto(nomi[2], P, X2, 9, w[2]); k.archetto(nomi[3], Q, X2, 9, w[3]);
+    return { M, X1, X2, nomi };
+  }
+
+  /** Estremi di una retta che parte oltre l'incrocio più lontano da O e supera O (o l'altro incrocio). */
+  function rettaAsse(a, O, extra) {
+    const lontano = distanza(a.X1, O) >= distanza(a.X2, O) ? a.X1 : a.X2;
+    const vicino = lontano === a.X1 ? a.X2 : a.X1;
+    const g = direzione(lontano, O);
+    const lung = Math.max(distanza(lontano, O) + (extra || 0.6), distanza(lontano, vicino) + 0.3);
+    return [sposta(lontano, g, -0.3), sposta(lontano, g, lung)];
+  }
+
+  /** Bisettrice dell'angolo in V con lati verso P e Q (Costruzione 2): arco da V e due archetti. */
+  function bisettrice(k, pref, V, P, Q, r1, r2, da, a) {
+    let a1 = direzione(V, P);
+    let a2 = direzione(V, Q);
+    if (modulo360(a2 - a1) > 180) { const tmp = a1; a1 = a2; a2 = tmp; }
+    const ampiezza = modulo360(a2 - a1);
+    const S1 = polare(V, r1, a1);
+    const S2 = polare(V, r1, a2);
+    const mezza = (ampiezza / 2) * RAD;
+    const dist = r1 * Math.cos(mezza) + Math.sqrt(r2 * r2 - (r1 * Math.sin(mezza)) ** 2);
+    const X = polare(V, dist, a1 + ampiezza / 2);
+    const w = finestre(3, da === undefined ? 0.1 : da, a === undefined ? 0.7 : a);
+    const nomi = [`arc${pref}0`, `arc${pref}1`, `arc${pref}2`];
+    k.arco(nomi[0], V, r1, a1 - 7, ampiezza + 14, w[0]);
+    k.archetto(nomi[1], S1, X, 10, w[1]);
+    k.archetto(nomi[2], S2, X, 10, w[2]);
+    return { X, S1, S2, nomi, gradi: a1 + ampiezza / 2 };
+  }
+
+  /** Simbolo dell'angolo retto in V tra le direzioni verso P e verso Q. */
+  function angoloRetto(k, nome, P, V, Q) {
+    const croce = (P[0] - V[0]) * (Q[1] - V[1]) - (P[1] - V[1]) * (Q[0] - V[0]);
+    if (croce > 0) k.angolo(nome, P, V, Q); else k.angolo(nome, Q, V, P);
+  }
+
+  // ── 51 · Trasporto di un angolo ────────────────────────────────────────────
+  TAVOLE["trasporto-angolo"] = creaTavola({
+    title: "Trasporto di un angolo",
+    eyebrow: "Costruzione 51 · Copiare un angolo senza goniometro",
+    subtitle: "Due archi uguali e una distanza presa con il compasso ricopiano l’angolo in un altro punto del foglio.",
+    filename: "MC-DIS-1-01_trasporto-angolo.ggb",
+    coord: [-6, 5.4, -2.6, 2.9],
+    proofTitle: "Due triangoli con i lati uguali",
+    proofCopy: "OA e OB sono lunghi quanto la prima apertura del compasso, e così O′A′ e O′B′. La distanza A′B′ è uguale ad AB, perché l’hai presa con il compasso. I triangoli OAB e O′A′B′ hanno quindi i tre lati uguali: sono congruenti, e l’angolo in O′ è uguale all’angolo in O.",
+    equality: "angolo in O′ = angolo in O",
+    steps: [
+      ["Prima di iniziare", "Osserva l’angolo e la semiretta", "A sinistra c’è un angolo con vertice O. A destra c’è una semiretta che parte dal punto O′. Vuoi costruire su quella semiretta un angolo uguale al primo.", "Non serve sapere quanti gradi misura."],
+      ["Passo 1 · Arco da O", "Segna A e B", "Punta in O con un’apertura a piacere e traccia un arco che taglia i due lati dell’angolo nei punti A e B.", "Non cambiare apertura: ti serve subito."],
+      ["Passo 2 · Arco da O′", "Segna A′", "Con la stessa apertura punta in O′ e traccia un arco ampio: incontra la semiretta nel punto A′.", "I due archi hanno lo stesso raggio."],
+      ["Passo 3 · Distanza AB", "Trova B′", "Apri il compasso quanto la distanza tra A e B. Punta in A′ e taglia il secondo arco sopra la semiretta: trovi B′.", "Hai ricopiato l’apertura dell’angolo."],
+      ["Passo 4 · Righello", "Unisci O′ con B′", "Traccia la semiretta che parte da O′ e passa per B′. L’angolo in O′ è uguale all’angolo in O.", "Se hai un goniometro, misura i due angoli per controllare."],
+    ],
+  }, (k) => {
+    const gradi = 48;
+    const r = 2.5;
+    const O = k.punto("O", [-5.2, -1.7]);
+    const O1 = k.punto("O1", [0.4, -1.7], "O′");
+    const A = k.punto("A", polare(O, r, 0));
+    const B = k.punto("B", polare(O, r, gradi));
+    const A1 = k.punto("A1", polare(O1, r, 0), "A′");
+    const B1 = k.punto("B1", polare(O1, r, gradi), "B′");
+    k.seg("rayO1", O, polare(O, 4, 0)); k.seg("rayO2", O, polare(O, 4, gradi));
+    k.seg("rayP1", O1, polare(O1, 4.4, 0));
+    k.arco("arcO", O, r, -8, gradi + 16);
+    k.arco("arcP", O1, r, -8, gradi + 24);
+    k.seg("segAB", A, B); k.tratteggia("segAB");
+    k.archetto("arcAB", A1, B1, 14, [0.4, 0.9]);
+    k.traccia("drawP2", O1, polare(O1, 4.4, gradi));
+    k.settore("angO", O, 1.1, 0, gradi, "");
+    k.settore("angP", O1, 1.1, 0, gradi, "");
+    k.compare("A", 0.25); k.compare("B", 0.85); k.compare("A1", 0.25); k.compare("B1", 0.75);
+    k.compare("angP", 0.95); k.compare("TangP", 0.95);
+    k.passo("O", "O1", "rayO1", "rayO2", "rayP1", "angO", "TangO");
+    k.passo("arcO", "A", "B");
+    k.passo("arcP", "A1");
+    k.passo("segAB", "arcAB", "B1");
+    k.passo("drawP2", "angP", "TangP");
+    k.risultato("drawP2");
+  });
+
+  // ── 52 · Angoli di 60° e di 30° ────────────────────────────────────────────
+  TAVOLE["angoli-60-30"] = creaTavola({
+    title: "Angoli di 60° e di 30° con il compasso",
+    eyebrow: "Costruzione 52 · Il triangolo equilatero nascosto",
+    subtitle: "Una sola apertura costruisce l’angolo di 60°; dividendolo a metà ottieni quello di 30°.",
+    filename: "MC-DIS-1-01_angoli-60-30.ggb",
+    coord: [-4.6, 5, -2.9, 4.4],
+    proofTitle: "Tre lati uguali, tre angoli di 60°",
+    proofCopy: "OA, OB e AB sono tutti lunghi quanto l’apertura del compasso: il triangolo OAB è equilatero e ogni suo angolo misura 60°. Il punto C è alla stessa distanza da A e da B, e lo è anche O: la semiretta OC è la bisettrice e divide i 60° in due angoli di 30°.",
+    equality: "60° : 2 = 30°",
+    steps: [
+      ["Prima di iniziare", "Osserva la semiretta", "Hai una semiretta che parte dal punto O. Vuoi costruire su di essa un angolo di 60° e poi uno di 30°, senza goniometro.", "Sono gli angoli delle squadre: 30°, 60° e 90°."],
+      ["Passo 1 · Arco da O", "Segna A", "Punta in O con un’apertura a piacere e traccia un arco ampio: incontra la semiretta nel punto A.", "Tieni ferma l’apertura."],
+      ["Passo 2 · Arco da A", "Trova B", "Con la stessa apertura punta in A e taglia l’arco nel punto B.", "O, A e B sono i vertici di un triangolo equilatero."],
+      ["Passo 3 · Righello", "Angolo di 60°", "Traccia la semiretta che parte da O e passa per B. L’angolo tra le due semirette misura 60°.", "È l’angolo più facile da costruire con il compasso."],
+      ["Passo 4 · Archetti da A e da B", "Trova C", "Sempre con la stessa apertura punta in A e poi in B: i due archetti si incrociano nel punto C, oltre l’arco.", "C è alla stessa distanza da A e da B."],
+      ["Passo 5 · Righello", "Angolo di 30°", "Traccia la semiretta che parte da O e passa per C: divide l’angolo di 60° a metà. Hai due angoli di 30°.", "Con un’altra bisettrice otterresti 15°."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [-3.6, -2.1]);
+    const r = 3.3;
+    const A = k.punto("A", polare(O, r, 0));
+    const B = k.punto("B", polare(O, r, 60));
+    const C = k.punto("C", polare(O, r * Math.sqrt(3), 30));
+    k.seg("rayR", O, polare(O, 8.2, 0));
+    k.arco("arcO", O, r, -7, 82);
+    k.archetto("arcA", A, B, 14);
+    k.traccia("drawB", O, polare(O, 6.6, 60));
+    k.archetto("arcAC", A, C, 12, [0.12, 0.5]);
+    k.archetto("arcBC", B, C, 12, [0.52, 0.9]);
+    k.traccia("drawC", O, polare(O, 7.6, 30));
+    const s60 = k.settore("ang60", O, 1.15, 0, 60, "60°");
+    const s30 = [...k.settore("ang30a", O, 2.7, 0, 30, "30°"), ...k.settore("ang30b", O, 2.7, 30, 60, "30°")];
+    k.compare("A", 0.2); k.compare("B", 0.6); k.compare("C", 0.85);
+    s60.forEach((n) => k.compare(n, 0.94)); s30.forEach((n) => k.compare(n, 0.94));
+    k.passo("O", "rayR");
+    k.passo("arcO", "A");
+    k.passo("arcA", "B");
+    k.passo("drawB", ...s60);
+    k.passo("arcAC", "arcBC", "C");
+    k.passo("drawC", ...s30);
+    k.risultato("drawB", "drawC");
+  });
+
+  // ── 53 · Angolo di 45° ─────────────────────────────────────────────────────
+  TAVOLE["angolo-45"] = creaTavola({
+    title: "Angolo di 45° con il compasso",
+    eyebrow: "Costruzione 53 · Metà dell’angolo retto",
+    subtitle: "Costruisci un angolo retto e poi lo dividi a metà con la bisettrice.",
+    filename: "MC-DIS-1-01_angolo-45.ggb",
+    coord: [-5.6, 5, -3.1, 3.5],
+    proofTitle: "La bisettrice dell’angolo retto",
+    proofCopy: "La perpendicolare forma con la retta r un angolo di 90°. I punti A e B sono alla stessa distanza da O, e il punto C è alla stessa distanza da A e da B: la semiretta OC è la bisettrice dell’angolo retto. I due angoli misurano 90° : 2 = 45°.",
+    equality: "90° : 2 = 45°",
+    steps: [
+      ["Prima di iniziare", "Osserva la retta r", "Sulla retta r è segnato il punto O. Vuoi costruire un angolo di 45° con il vertice in O.", "45° è la metà dell’angolo retto: è l’angolo della squadra a due lati uguali."],
+      ["Passo 1 · Perpendicolare in O", "Costruisci l’angolo retto", "Costruisci la perpendicolare a r nel punto O (Costruzione 1): una semicirconferenza con centro O, due archetti che si incrociano e la retta verticale.", "La semicirconferenza ti servirà anche nel passo successivo."],
+      ["Passo 2 · Punti A e B", "Leggi i punti sulla semicirconferenza", "La semicirconferenza incontra la retta r nel punto A, a destra di O, e la perpendicolare nel punto B.", "OA e OB sono lunghi uguali."],
+      ["Passo 3 · Archetti da A e da B", "Trova C", "Con un’apertura uguale a OA punta in A e poi in B: i due archetti si incrociano nel punto C, fuori dalla semicirconferenza.", "C è alla stessa distanza da A e da B."],
+      ["Passo 4 · Righello", "Unisci O con C", "Traccia la semiretta che parte da O e passa per C: divide l’angolo retto in due angoli di 45°.", "Controlla con la squadra a 45°."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [-1.6, -2.3]);
+    const r = 2.6;
+    const A = k.punto("A", polare(O, r, 0));
+    const K = polare(O, r, 180);
+    const B = k.punto("B", polare(O, r, 90));
+    const N = [O[0], O[1] + Math.sqrt(4.7 * 4.7 - r * r)];
+    const C = k.punto("C", [O[0] + r, O[1] + r]);
+    k.seg("lineR", [-5.8, O[1]], [5.2, O[1]], "r");
+    k.arco("arcO", O, r, 0, 180, [0.05, 0.4]);
+    k.archetto("arcK1", A, N, 9, [0.4, 0.55]);
+    k.archetto("arcK2", K, N, 9, [0.55, 0.7]);
+    k.traccia("linePerp", O, [O[0], O[1] + 5.4], [0.74, 1]);
+    k.archetto("arcAC", A, C, 14, [0.12, 0.5]);
+    k.archetto("arcBC", B, C, 14, [0.52, 0.9]);
+    k.traccia("drawC", O, polare(O, 5.6, 45));
+    const s = [...k.settore("ang45a", O, 1.4, 0, 45, "45°"), ...k.settore("ang45b", O, 1.4, 45, 90, "45°")];
+    k.compare("C", 0.85); s.forEach((n) => k.compare(n, 0.94));
+    k.passo("lineR", "O");
+    k.passo("arcO", "arcK1", "arcK2", "linePerp");
+    k.passo("A", "B");
+    k.passo("arcAC", "arcBC", "C");
+    k.passo("drawC", ...s);
+    k.risultato("drawC");
+  });
+
+  // ── 54 · Centro di una circonferenza ───────────────────────────────────────
+  TAVOLE["centro-circonferenza"] = creaTavola({
+    title: "Centro di una circonferenza",
+    eyebrow: "Costruzione 54 · Due corde e i loro assi",
+    subtitle: "Hai una circonferenza o un arco, ma non sai dov’è il centro: due corde bastano per ritrovarlo.",
+    filename: "MC-DIS-1-01_centro-circonferenza.ggb",
+    coord: [-5.6, 5.6, -4.3, 4.3],
+    proofTitle: "Il centro sta sull’asse di ogni corda",
+    proofCopy: "Il centro è alla stessa distanza da tutti i punti della circonferenza, quindi anche da A e da B: deve stare sull’asse della corda AB. Per lo stesso motivo sta sull’asse della corda BC. L’unico punto che sta su tutti e due gli assi è il loro incrocio: è il centro O.",
+    equality: "OA = OB = OC",
+    steps: [
+      ["Prima di iniziare", "Osserva la circonferenza", "Hai una circonferenza, per esempio il bordo di un piatto ricalcato sul foglio, ma il centro non è segnato. Vuoi trovarlo.", "Funziona anche con un pezzo di arco."],
+      ["Passo 1 · Due corde", "Segna A, B e C", "Segna tre punti sulla circonferenza: A, B e C. Unisci A con B e B con C: sono due corde.", "Una corda è un segmento che unisce due punti della circonferenza."],
+      ["Passo 2 · Asse di AB", "Costruisci il primo asse", "Costruisci l’asse della corda AB (Costruzione 9): archetti da A e da B con la stessa apertura, da una parte e dall’altra, e la retta per i due incroci.", "L’asse passa per il centro, anche se non lo vedi ancora."],
+      ["Passo 3 · Asse di BC", "Costruisci il secondo asse", "Fai lo stesso con la corda BC.", "Prolunga le due rette finché si incontrano."],
+      ["Passo 4 · Centro", "Segna O", "Il punto in cui i due assi si incontrano è il centro O della circonferenza.", "Controlla: punta in O, apri fino ad A e ripassa la circonferenza."],
+    ],
+  }, (k, t) => {
+    const O = [0.2, 0];
+    const R = 3.1;
+    const A = k.punto("A", polare(O, R, 205));
+    const B = k.punto("B", polare(O, R, 105));
+    const C = k.punto("C", polare(O, R, 20));
+    k.cerchio("circleG", O, R);
+    k.seg("segAB", A, B); k.seg("segBC", B, C);
+    const a1 = asse(k, "P", A, B, 2.6, 0.1, 0.7);
+    const a2 = asse(k, "Q", B, C, 2.6, 0.1, 0.7);
+    k.traccia("lineAsse1", ...rettaAsse(a1, O, 0.9), [0.72, 1]);
+    k.traccia("lineAsse2", ...rettaAsse(a2, O, 0.9), [0.72, 1]);
+    k.punto("Oc", O, "O");
+    k.seg("segOA", O, A); k.seg("segOB", O, B); k.seg("segOC", O, C);
+    ["segOA", "segOB", "segOC"].forEach((n) => { k.tratteggia(n); k.compare(n, 0.6); });
+    k.passo("circleG");
+    k.passo("A", "B", "C", "segAB", "segBC");
+    k.passo(...a1.nomi, "lineAsse1");
+    k.passo(...a2.nomi, "lineAsse2");
+    k.passo("Oc", "segOA", "segOB", "segOC");
+    void t;
+  });
+
+  // ── 55 · Circonferenza per tre punti ───────────────────────────────────────
+  TAVOLE["circonferenza-tre-punti"] = creaTavola({
+    title: "Circonferenza per tre punti",
+    eyebrow: "Costruzione 55 · La circonferenza circoscritta",
+    subtitle: "Per tre punti non allineati passa una sola circonferenza: il suo centro è l’incrocio di due assi.",
+    filename: "MC-DIS-1-01_circonferenza-tre-punti.ggb",
+    coord: [-5.8, 5.8, -4.4, 4.4],
+    proofTitle: "Un punto alla stessa distanza da tutti e tre",
+    proofCopy: "Ogni punto dell’asse di AB è alla stessa distanza da A e da B. Ogni punto dell’asse di BC è alla stessa distanza da B e da C. Il punto O sta su tutti e due gli assi, quindi OA = OB = OC: la circonferenza con centro O che passa per A passa anche per B e per C. È la circonferenza circoscritta al triangolo ABC.",
+    equality: "OA = OB = OC",
+    steps: [
+      ["Prima di iniziare", "Osserva i tre punti", "Hai tre punti, A, B e C, che non stanno sulla stessa retta. Vuoi tracciare la circonferenza che passa per tutti e tre.", "Se i tre punti fossero allineati, la circonferenza non esisterebbe."],
+      ["Passo 1 · Due segmenti", "Unisci A con B e B con C", "Con il righello traccia i segmenti AB e BC.", "Saranno due corde della circonferenza."],
+      ["Passo 2 · Asse di AB", "Costruisci il primo asse", "Costruisci l’asse del segmento AB (Costruzione 9): archetti da A e da B, da una parte e dall’altra, e la retta per i due incroci.", "Tutti i punti dell’asse distano da A quanto da B."],
+      ["Passo 3 · Asse di BC", "Trova il centro O", "Costruisci l’asse del segmento BC. I due assi si incontrano nel punto O.", "O è alla stessa distanza da A, da B e da C."],
+      ["Passo 4 · Compasso", "Traccia la circonferenza", "Punta in O, apri fino ad A e traccia la circonferenza: passa anche per B e per C.", "Se non passa per tutti e tre i punti, ricontrolla gli assi."],
+    ],
+  }, (k) => {
+    const A = k.punto("A", [-3.1, -1.5]);
+    const B = k.punto("B", [-0.9, 2.5]);
+    const C = k.punto("C", [3.3, -0.4]);
+    const d = 2 * (A[0] * (B[1] - C[1]) + B[0] * (C[1] - A[1]) + C[0] * (A[1] - B[1]));
+    const q = (p) => p[0] * p[0] + p[1] * p[1];
+    const O = [
+      (q(A) * (B[1] - C[1]) + q(B) * (C[1] - A[1]) + q(C) * (A[1] - B[1])) / d,
+      (q(A) * (C[0] - B[0]) + q(B) * (A[0] - C[0]) + q(C) * (B[0] - A[0])) / d,
+    ];
+    k.seg("segAB", A, B); k.seg("segBC", B, C);
+    const a1 = asse(k, "P", A, B, 2.7, 0.1, 0.7);
+    const a2 = asse(k, "Q", B, C, 2.95, 0.1, 0.7);
+    k.traccia("lineAsse1", ...rettaAsse(a1, O, 0.9), [0.72, 1]);
+    k.traccia("lineAsse2", ...rettaAsse(a2, O, 0.9), [0.72, 0.96]);
+    k.punto("O", O);
+    k.arco("circleO", O, distanza(O, A), direzione(O, A), 360);
+    k.compare("O", 0.97);
+    k.passo("A", "B", "C");
+    k.passo("segAB", "segBC");
+    k.passo(...a1.nomi, "lineAsse1");
+    k.passo(...a2.nomi, "lineAsse2", "O");
+    k.passo("circleO");
+    k.risultato("circleO");
+  });
+
+  // ── 56 · Circonferenza inscritta in un triangolo ───────────────────────────
+  TAVOLE["circonferenza-inscritta"] = creaTavola({
+    title: "Circonferenza inscritta in un triangolo",
+    eyebrow: "Costruzione 56 · L’incrocio delle bisettrici",
+    subtitle: "Due bisettrici trovano il centro della circonferenza che tocca tutti e tre i lati del triangolo.",
+    filename: "MC-DIS-1-01_circonferenza-inscritta.ggb",
+    coord: [-5.8, 5.8, -3.6, 4.2],
+    proofTitle: "Un punto alla stessa distanza dai tre lati",
+    proofCopy: "Ogni punto della bisettrice di un angolo è alla stessa distanza dai due lati dell’angolo. Il punto I sta sulla bisettrice dell’angolo in A, quindi dista ugualmente da AB e da AC; sta anche sulla bisettrice dell’angolo in B, quindi dista ugualmente da AB e da BC. I è alla stessa distanza dai tre lati: la circonferenza con centro I e raggio IH li tocca tutti e tre.",
+    equality: "I dista ugualmente da AB, BC e CA",
+    steps: [
+      ["Prima di iniziare", "Osserva il triangolo", "Hai un triangolo ABC. Vuoi disegnare al suo interno la circonferenza più grande possibile: quella che tocca tutti e tre i lati.", "Si chiama circonferenza inscritta."],
+      ["Passo 1 · Bisettrice in A", "Dividi a metà l’angolo in A", "Costruisci la bisettrice dell’angolo in A (Costruzione 2): un arco da A che taglia i due lati, due archetti che si incrociano e la semiretta.", "La bisettrice divide l’angolo in due parti uguali."],
+      ["Passo 2 · Bisettrice in B", "Trova il punto I", "Costruisci la bisettrice dell’angolo in B. Le due bisettrici si incontrano nel punto I.", "I si chiama incentro."],
+      ["Passo 3 · Perpendicolare da I", "Trova il punto H", "Dal punto I traccia la perpendicolare al lato AB (Costruzione 4, oppure con le squadre): incontra AB nel punto H.", "IH è la distanza di I dal lato AB."],
+      ["Passo 4 · Compasso", "Traccia la circonferenza", "Punta in I, apri fino a H e traccia la circonferenza: tocca i tre lati senza attraversarli.", "Controlla che la circonferenza sfiori anche i lati BC e CA."],
+    ],
+  }, (k) => {
+    const A = k.punto("A", [-4.4, -2.6]);
+    const B = k.punto("B", [4.4, -2.6]);
+    const C = k.punto("C", [1.2, 3.2]);
+    const a = distanza(B, C); const b = distanza(A, C); const c = distanza(A, B);
+    const I = [(a * A[0] + b * B[0] + c * C[0]) / (a + b + c), (a * A[1] + b * B[1] + c * C[1]) / (a + b + c)];
+    const H = [I[0], A[1]];
+    k.seg("segAB", A, B); k.seg("segBC", B, C); k.seg("segCA", C, A);
+    const bA = bisettrice(k, "P", A, B, C, 2, 2.3, 0.1, 0.65);
+    const bB = bisettrice(k, "Q", B, A, C, 2, 2.3, 0.1, 0.65);
+    k.traccia("lineBisA", A, sposta(A, bA.gradi, distanza(A, I) + 1.2), [0.68, 1]);
+    k.traccia("lineBisB", B, sposta(B, bB.gradi, distanza(B, I) + 1.2), [0.68, 0.96]);
+    k.punto("I", I);
+    k.traccia("linePerpI", sposta(I, 90, 0.5), sposta(H, 270, 0.5));
+    k.punto("H", H);
+    angoloRetto(k, "rightAngle", B, H, I);
+    k.arco("circleI", I, distanza(I, H), 270, 360);
+    k.compare("I", 0.97); k.compare("H", 0.8); k.compare("rightAngle", 0.95);
+    k.passo("A", "B", "C", "segAB", "segBC", "segCA");
+    k.passo(...bA.nomi, "lineBisA");
+    k.passo(...bB.nomi, "lineBisB", "I");
+    k.passo("linePerpI", "H", "rightAngle");
+    k.passo("circleI");
+    k.risultato("circleI");
+  });
+
+  // ── 57 · Tangente in un punto della circonferenza ──────────────────────────
+  TAVOLE["tangente-in-un-punto"] = creaTavola({
+    title: "Tangente in un punto della circonferenza",
+    eyebrow: "Costruzione 57 · Perpendicolare al raggio",
+    subtitle: "La tangente tocca la circonferenza in un solo punto ed è perpendicolare al raggio che arriva lì.",
+    filename: "MC-DIS-1-01_tangente-in-un-punto.ggb",
+    coord: [-5.4, 5.8, -3.6, 4.2],
+    proofTitle: "Il punto più vicino al centro",
+    proofCopy: "Sulla retta perpendicolare al raggio, il punto più vicino al centro O è proprio T: tutti gli altri punti della retta sono più lontani da O del raggio, quindi stanno fuori dalla circonferenza. La retta ha in comune con la circonferenza soltanto il punto T: è la tangente.",
+    equality: "tangente ⟂ raggio OT",
+    steps: [
+      ["Prima di iniziare", "Osserva la circonferenza e il punto T", "Hai una circonferenza con centro O e un punto T su di essa. Vuoi tracciare la tangente in T: la retta che tocca la circonferenza solo in quel punto.", "Pensa a una ruota appoggiata sulla strada: la strada è la tangente."],
+      ["Passo 1 · Raggio", "Unisci O con T e prolunga", "Traccia la retta che passa per O e per T e prolungala oltre T, fuori dalla circonferenza.", "Il tratto da O a T è un raggio."],
+      ["Passo 2 · Arco da T", "Segna A e B", "Punta in T con un’apertura a piacere e taglia la retta da una parte e dall’altra: trovi A, verso il centro, e B, fuori.", "TA e TB sono uguali."],
+      ["Passo 3 · Archetti da A e da B", "Trova il punto 1", "Apri di più il compasso. Punta in A e poi in B: i due archetti si incrociano nel punto 1.", "È la costruzione della perpendicolare in un punto (Costruzione 1)."],
+      ["Passo 4 · Righello", "Traccia la tangente", "Traccia la retta che passa per T e per il punto 1, prolungandola da tutte e due le parti: è la tangente.", "Controlla con la squadra l’angolo tra il raggio e la tangente: 90°."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [-1.4, -0.2]);
+    const R = 2.7;
+    const g = 32;
+    const T = k.punto("T", polare(O, R, g));
+    const A = k.punto("A", sposta(T, g, -1.5));
+    const B = k.punto("B", sposta(T, g, 1.5));
+    const h = Math.sqrt(2.6 * 2.6 - 1.5 * 1.5);
+    const N1 = k.punto("N1", sposta(T, g + 90, h), "1");
+    k.cerchio("circleO", O, R);
+    k.traccia("lineOT", O, sposta(T, g, 2.6));
+    k.arco("arcT", T, 1.5, g - 14, 28, [0.12, 0.5]);
+    k.arco("arcT2", T, 1.5, g + 166, 28, [0.52, 0.9]);
+    k.archetto("arcA1", A, N1, 12, [0.12, 0.5]);
+    k.archetto("arcB1", B, N1, 12, [0.52, 0.9]);
+    k.traccia("drawTan", sposta(T, g + 90, 4.2), sposta(T, g + 90, -4.2));
+    angoloRetto(k, "rightAngle", O, T, N1);
+    k.compare("B", 0.4); k.compare("A", 0.85); k.compare("N1", 0.85); k.compare("rightAngle", 0.95);
+    k.passo("O", "circleO", "T");
+    k.passo("lineOT");
+    k.passo("arcT", "arcT2", "A", "B");
+    k.passo("arcA1", "arcB1", "N1");
+    k.passo("drawTan", "rightAngle");
+    k.risultato("drawTan");
+  });
+
+  // ── 58 · Tangenti da un punto esterno ──────────────────────────────────────
+  TAVOLE["tangenti-da-punto-esterno"] = creaTavola({
+    title: "Tangenti a una circonferenza da un punto esterno",
+    eyebrow: "Costruzione 58 · Con l’aiuto di una seconda circonferenza",
+    subtitle: "Da un punto fuori dalla circonferenza partono due tangenti: una circonferenza ausiliaria trova i punti di contatto.",
+    filename: "MC-DIS-1-01_tangenti-da-punto-esterno.ggb",
+    coord: [-5.4, 5.8, -3.6, 3.6],
+    proofTitle: "L’angolo retto nella semicirconferenza",
+    proofCopy: "Il punto A sta sulla circonferenza che ha per diametro OP. Un triangolo inscritto in una semicirconferenza, con un lato sul diametro, è rettangolo (Costruzione 29): l’angolo in A è di 90°. La retta PA è quindi perpendicolare al raggio OA, cioè è tangente. Lo stesso vale per B.",
+    equality: "PA ⟂ OA · PB ⟂ OB · PA = PB",
+    steps: [
+      ["Prima di iniziare", "Osserva la circonferenza e il punto P", "Hai una circonferenza con centro O e un punto P fuori da essa. Vuoi tracciare da P le rette tangenti alla circonferenza.", "Da un punto esterno le tangenti sono sempre due."],
+      ["Passo 1 · Segmento OP", "Unisci O con P", "Con il righello traccia il segmento che unisce il centro O con il punto P.", "Sarà il diametro di una circonferenza ausiliaria."],
+      ["Passo 2 · Punto medio", "Trova M", "Costruisci l’asse del segmento OP (Costruzione 9): trovi il suo punto medio M.", "M è alla stessa distanza da O e da P."],
+      ["Passo 3 · Arco da M", "Trova A e B", "Punta in M, apri fino a O e traccia un arco che taglia la circonferenza in due punti: A e B.", "Sono i due punti di contatto."],
+      ["Passo 4 · Righello", "Traccia le due tangenti", "Traccia la retta che passa per P e per A e quella che passa per P e per B: sono le due tangenti.", "Misura PA e PB: sono uguali."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [-2.6, 0]);
+    const R = 2.2;
+    const P = k.punto("P", [4.2, 0.5]);
+    const M = k.punto("M", medio(O, P));
+    const rm = distanza(M, O);
+    const dOM = rm;
+    const x = (R * R) / (2 * dOM);
+    const alfa = Math.acos(x / R) / RAD;
+    const gOP = direzione(O, P);
+    const A = k.punto("A", polare(O, R, gOP + alfa));
+    const B = k.punto("B", polare(O, R, gOP - alfa));
+    k.cerchio("circleO", O, R);
+    k.traccia("lineOP", O, P);
+    const a = asse(k, "P", O, P, 4.1, 0.1, 0.7);
+    k.traccia("lineAsse", sposta(a.X1, direzione(a.X2, a.X1), 0.3), sposta(a.X2, direzione(a.X1, a.X2), 0.3), [0.72, 0.96]);
+    const gA = direzione(M, A); const gB = direzione(M, B);
+    k.arco("arcM", M, rm, gA - 10, modulo360(gB - gA) + 20);
+    k.traccia("drawPA", P, oltre(P, A, 1.6), [0.12, 0.5]);
+    k.traccia("drawPB", P, oltre(P, B, 1.6), [0.52, 0.9]);
+    angoloRetto(k, "rightAngle", O, A, P);
+    angoloRetto(k, "rightAngle2", O, B, P);
+    k.seg("segOA", O, A); k.seg("segOB", O, B); k.tratteggia("segOA"); k.tratteggia("segOB");
+    k.compare("M", 0.97); k.compare("A", 0.2); k.compare("B", 0.9);
+    ["rightAngle", "rightAngle2", "segOA", "segOB"].forEach((n) => k.compare(n, 0.95));
+    k.passo("O", "circleO", "P");
+    k.passo("lineOP");
+    k.passo(...a.nomi, "lineAsse", "M");
+    k.passo("arcM", "A", "B");
+    k.passo("drawPA", "drawPB", "segOA", "segOB", "rightAngle", "rightAngle2");
+    k.risultato("drawPA", "drawPB");
+  });
+
+  // ── 59 · Tangenti comuni a due circonferenze ───────────────────────────────
+  TAVOLE["tangenti-comuni"] = creaTavola({
+    title: "Tangenti comuni a due circonferenze",
+    eyebrow: "Costruzione 59 · Come una cinghia su due pulegge",
+    subtitle: "Riduci il problema a quello delle tangenti da un punto esterno, poi sposti le rette in parallelo.",
+    filename: "MC-DIS-1-01_tangenti-comuni.ggb",
+    coord: [-6.2, 5.6, -3.6, 3.6],
+    proofTitle: "Una tangente spostata in parallelo",
+    proofCopy: "La retta che passa per il centro Q della circonferenza piccola e per il punto 2 è tangente alla circonferenza ausiliaria (Costruzione 58), quindi è perpendicolare al raggio che arriva in 2. La retta AC è parallela a questa e spostata verso l’esterno di una distanza uguale al raggio piccolo: dista dal centro O quanto il raggio della circonferenza grande e dal centro Q quanto il raggio della piccola. Tocca tutte e due le circonferenze.",
+    equality: "AC ⟂ raggio in A · AC ⟂ raggio in C",
+    steps: [
+      ["Prima di iniziare", "Osserva le due circonferenze", "Hai due circonferenze di raggio diverso, con centri O e Q. Vuoi tracciare le due rette che le toccano entrambe dall’esterno, come una cinghia tesa su due pulegge.", "Sono le tangenti comuni esterne."],
+      ["Passo 1 · Circonferenza ausiliaria", "Togli il raggio piccolo dal grande", "Traccia il segmento OQ. Partendo dal punto in cui OQ taglia la circonferenza grande, riporta verso O il raggio piccolo: trovi il punto 1. Punta in O, apri fino a 1 e traccia la circonferenza ausiliaria.", "Il suo raggio è la differenza tra i due raggi."],
+      ["Passo 2 · Arco da M", "Trova 2 e 3", "Trova il punto medio M del segmento OQ (Costruzione 9). Punta in M, apri fino a O e traccia un arco: taglia la circonferenza ausiliaria nei punti 2 e 3.", "È la costruzione delle tangenti da un punto esterno (Costruzione 58), con Q al posto di P."],
+      ["Passo 3 · Raggi da O", "Trova A e B", "Da O traccia due semirette che passano per 2 e per 3 e prolungale fino alla circonferenza grande: trovi A e B.", "A e B sono i punti di contatto sulla circonferenza grande."],
+      ["Passo 4 · Raggi paralleli da Q", "Trova C e D", "Dal centro Q traccia, con le squadre, il raggio parallelo a OA, dalla stessa parte di A, e quello parallelo a OB, dalla stessa parte di B: incontrano la circonferenza piccola in C e in D.", "C e D sono i punti di contatto sulla circonferenza piccola."],
+      ["Passo 5 · Righello", "Traccia le due tangenti", "Traccia la retta che passa per A e per C e quella che passa per B e per D: sono le tangenti comuni.", "Controlla con la squadra: ogni tangente è perpendicolare ai raggi che arrivano nei punti di contatto."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [-3.2, 0]);
+    const Q = k.punto("Q", [3.4, 0]);
+    const R = 2.4; const r = 1.1; const ra = R - r;
+    const M = k.punto("M", medio(O, Q));
+    const d = distanza(O, Q);
+    const teta = Math.acos(ra / d) / RAD;
+    const N1 = k.punto("N1", polare(O, ra, 0), "1");
+    const N2 = k.punto("N2", polare(O, ra, teta), "2");
+    const N3 = k.punto("N3", polare(O, ra, -teta), "3");
+    const A = k.punto("A", polare(O, R, teta));
+    const B = k.punto("B", polare(O, R, -teta));
+    const C = k.punto("C", polare(Q, r, teta));
+    const D = k.punto("D", polare(Q, r, -teta));
+    k.cerchio("circleO", O, R); k.cerchio("circleQ", Q, r);
+    k.traccia("lineOQ", O, Q, [0.1, 0.35]);
+    k.archetto("arcR1", polare(O, R, 0), N1, 20, [0.35, 0.55]);
+    k.arco("circleAux", O, ra, 0, 360, [0.58, 0.95]);
+    k.arco("arcM", M, d / 2, direzione(M, N2) - 8, modulo360(direzione(M, N3) - direzione(M, N2)) + 16, [0.2, 0.9]);
+    k.traccia("lineO2", O, sposta(A, teta, 0.5), [0.12, 0.5]);
+    k.traccia("lineO3", O, sposta(B, -teta, 0.5), [0.52, 0.9]);
+    k.traccia("lineQC", Q, sposta(C, teta, 0.5), [0.12, 0.5]);
+    k.traccia("lineQD", Q, sposta(D, -teta, 0.5), [0.52, 0.9]);
+    k.traccia("drawAC", oltre(C, A, 1.6), oltre(A, C, 1.6), [0.12, 0.5]);
+    k.traccia("drawBD", oltre(D, B, 1.6), oltre(B, D, 1.6), [0.52, 0.9]);
+    k.compare("N1", 0.55); k.compare("M", 0.15); k.compare("N2", 0.3); k.compare("N3", 0.85);
+    k.compare("A", 0.5); k.compare("B", 0.9); k.compare("C", 0.5); k.compare("D", 0.9);
+    k.passo("O", "Q", "circleO", "circleQ");
+    k.passo("lineOQ", "arcR1", "N1", "circleAux");
+    k.passo("M", "arcM", "N2", "N3");
+    k.passo("lineO2", "lineO3", "A", "B");
+    k.passo("lineQC", "lineQD", "C", "D");
+    k.passo("drawAC", "drawBD");
+    k.risultato("drawAC", "drawBD");
+  });
+
+  // ── 60 · Raccordo tra due rette perpendicolari ─────────────────────────────
+  TAVOLE["raccordo-rette-perpendicolari"] = creaTavola({
+    title: "Raccordo tra due rette perpendicolari",
+    eyebrow: "Costruzione 60 · Lo spigolo arrotondato",
+    subtitle: "Un arco di raggio assegnato sostituisce lo spigolo e si attacca alle due rette senza scalini.",
+    filename: "MC-DIS-1-01_raccordo-rette-perpendicolari.ggb",
+    coord: [-4.6, 6.2, -3.2, 3.8],
+    proofTitle: "Un quadrato attorno al centro",
+    proofCopy: "VA, VB, AO e BO sono tutti lunghi quanto il raggio: V, A, O e B sono i vertici di un quadrato. Il raggio OA è quindi perpendicolare alla prima retta e il raggio OB alla seconda. Un arco che arriva su una retta con il raggio perpendicolare è tangente: non fa spigoli né scalini.",
+    equality: "OA ⟂ r · OB ⟂ s",
+    steps: [
+      ["Prima di iniziare", "Osserva lo spigolo", "Le rette r e s sono perpendicolari e si incontrano nel punto V. Vuoi arrotondare lo spigolo con un arco di raggio assegnato, per esempio 2 cm.", "È lo spigolo arrotondato di un tavolo, di una carta da gioco, di uno smartphone."],
+      ["Passo 1 · Arco da V", "Segna A e B", "Apri il compasso quanto il raggio del raccordo. Punta in V e taglia le due rette: trovi A su r e B su s.", "A e B saranno i punti in cui l’arco si attacca alle rette."],
+      ["Passo 2 · Archetti da A e da B", "Trova il centro O", "Con la stessa apertura punta in A e poi in B: i due archetti si incrociano nel punto O, dentro l’angolo.", "O è il centro del raccordo."],
+      ["Passo 3 · Compasso", "Traccia il raccordo", "Sempre con la stessa apertura punta in O e traccia l’arco da A a B.", "L’arco è un quarto di circonferenza."],
+      ["Passo 4 · Ripassa", "Ripassa il profilo", "Ripassa la retta r fino ad A, l’arco da A a B e la retta s da B in poi. Lo spigolo in V non fa più parte del disegno.", "Passa il dito sul profilo: non devi sentire scalini nei punti A e B."],
+    ],
+  }, (k) => {
+    const V = k.punto("V", [-3.2, -2.3]);
+    const r = 2.5;
+    const A = k.punto("A", [V[0] + r, V[1]]);
+    const B = k.punto("B", [V[0], V[1] + r]);
+    const O = k.punto("O", [V[0] + r, V[1] + r]);
+    const fineR = [5.8, V[1]]; const fineS = [V[0], 3.5];
+    k.seg("lineR", V, fineR, "r"); k.seg("lineS", V, fineS, "s");
+    k.arco("arcV", V, r, -8, 106);
+    k.archetto("arcAO", A, O, 12, [0.12, 0.5]);
+    k.archetto("arcBO", B, O, 12, [0.52, 0.9]);
+    k.arco("arcRacc", O, r, 180, 90);
+    k.seg("drawR", A, fineR); k.seg("drawS", B, fineS);
+    k.arcoFisso("profilo", O, r, 180, 270);
+    k.compare("A", 0.2); k.compare("B", 0.92); k.compare("O", 0.85);
+    ["drawR", "profilo", "drawS"].forEach((n, i) => k.compare(n, 0.2 + i * 0.25));
+    k.passo("V", "lineR", "lineS");
+    k.passo("arcV", "A", "B");
+    k.passo("arcAO", "arcBO", "O");
+    k.passo("arcRacc");
+    k.passo("drawR", "profilo", "drawS");
+    k.risultato("drawR", "profilo", "drawS");
+  });
+
+  // ── 61 · Raccordo tra due rette qualsiasi ──────────────────────────────────
+  TAVOLE["raccordo-rette-incidenti"] = creaTavola({
+    title: "Raccordo tra due rette che formano un angolo qualsiasi",
+    eyebrow: "Costruzione 61 · Due parallele trovano il centro",
+    subtitle: "Il centro del raccordo sta alla stessa distanza dalle due rette: lo trovi incrociando due parallele.",
+    filename: "MC-DIS-1-01_raccordo-rette-incidenti.ggb",
+    coord: [-5.6, 5.8, -3.2, 4],
+    proofTitle: "Il centro dista un raggio da ogni retta",
+    proofCopy: "Tutti i punti della prima parallela distano da r quanto il raggio; tutti i punti della seconda distano da s quanto il raggio. Il punto O sta su entrambe, quindi dista un raggio da r e un raggio da s. I piedi delle perpendicolari, A e B, sono i punti in cui l’arco tocca le rette: lì il raggio è perpendicolare alla retta, e l’arco è tangente.",
+    equality: "OA = OB = raggio · OA ⟂ r · OB ⟂ s",
+    steps: [
+      ["Prima di iniziare", "Osserva l’angolo", "Le rette r e s si incontrano nel punto V e formano un angolo che non è retto. Vuoi raccordarle con un arco di raggio assegnato.", "Il metodo vale per angoli acuti e ottusi."],
+      ["Passo 1 · Parallela a r", "Traccia la prima parallela", "Dentro l’angolo traccia la parallela a r alla distanza del raggio: alza una perpendicolare a r, riporta su di essa il raggio e fai passare la parallela per quel punto (con le squadre o con la Costruzione 11).", "Tutti i punti di questa retta distano da r quanto il raggio."],
+      ["Passo 2 · Parallela a s", "Trova il centro O", "Fai lo stesso con la retta s. Le due parallele si incontrano nel punto O.", "O è il centro del raccordo."],
+      ["Passo 3 · Perpendicolari da O", "Trova A e B", "Da O traccia la perpendicolare a r, che la incontra in A, e la perpendicolare a s, che la incontra in B.", "A e B sono i punti di tangenza."],
+      ["Passo 4 · Compasso", "Traccia il raccordo", "Punta in O, apri fino ad A e traccia l’arco da A a B, dalla parte del vertice V.", "L’arco deve passare esattamente per B."],
+      ["Passo 5 · Ripassa", "Ripassa il profilo", "Ripassa la retta r fino ad A, l’arco e la retta s da B in poi.", "Nei punti A e B il profilo non deve fare scalini."],
+    ],
+  }, (k) => {
+    const V = k.punto("V", [-4.6, -2.3]);
+    const gs = 52; const R = 1.7;
+    const mezza = gs / 2;
+    const dO = R / Math.sin(mezza * RAD);
+    const O = k.punto("O", polare(V, dO, mezza));
+    const A = k.punto("A", [O[0], V[1]]);
+    const B = k.punto("B", polare(V, dO * Math.cos(mezza * RAD), gs));
+    const fineR = [5.4, V[1]]; const fineS = polare(V, 7.6, gs);
+    k.seg("lineR", V, fineR, "r"); k.seg("lineS", V, fineS, "s");
+    const p1 = [1.8, V[1]];
+    k.seg("segD1", p1, [p1[0], V[1] + R]); k.tratteggia("segD1");
+    k.traccia("linePar1", [V[0] + 1.2, V[1] + R], [5.4, V[1] + R], [0.4, 1]);
+    const p2 = polare(V, 6, gs);
+    k.seg("segD2", p2, sposta(p2, gs - 90, R)); k.tratteggia("segD2");
+    k.traccia("linePar2", sposta(polare(V, 1.6, gs), gs - 90, R), sposta(polare(V, 7.4, gs), gs - 90, R), [0.4, 0.95]);
+    k.traccia("lineOA", O, sposta(A, 270, 0.4), [0.12, 0.5]);
+    k.traccia("lineOB", O, sposta(B, gs + 90, 0.4), [0.52, 0.9]);
+    angoloRetto(k, "rightAngle", fineR, A, O);
+    angoloRetto(k, "rightAngle2", fineS, B, O);
+    k.arco("arcRacc", O, R, gs + 90, 270 - (gs + 90));
+    k.seg("drawR", A, fineR); k.seg("drawS", B, fineS);
+    k.arcoFisso("profilo", O, R, gs + 90, 270);
+    k.compare("O", 0.97); k.compare("A", 0.5); k.compare("B", 0.9);
+    k.compare("rightAngle", 0.5); k.compare("rightAngle2", 0.9);
+    ["drawR", "profilo", "drawS"].forEach((n, i) => k.compare(n, 0.2 + i * 0.25));
+    k.passo("V", "lineR", "lineS");
+    k.passo("segD1", "linePar1");
+    k.passo("segD2", "linePar2", "O");
+    k.passo("lineOA", "lineOB", "A", "B", "rightAngle", "rightAngle2");
+    k.passo("arcRacc");
+    k.passo("drawR", "profilo", "drawS");
+    k.risultato("drawR", "profilo", "drawS");
+  });
+
+  // ── 62 · Raccordo tra una retta e una circonferenza ────────────────────────
+  TAVOLE["raccordo-retta-circonferenza"] = creaTavola({
+    title: "Raccordo tra una retta e una circonferenza",
+    eyebrow: "Costruzione 62 · Somma di raggi",
+    subtitle: "Il centro del raccordo dista un raggio dalla retta e la somma dei due raggi dal centro della circonferenza.",
+    filename: "MC-DIS-1-01_raccordo-retta-circonferenza.ggb",
+    coord: [-5.6, 5.8, -3.5, 3.9],
+    proofTitle: "Due condizioni, un solo punto",
+    proofCopy: "Il punto O sta sulla parallela, quindi dista dalla retta r quanto il raggio del raccordo. Sta anche sulla circonferenza ausiliaria, quindi dista da C la somma dei due raggi: le due circonferenze si toccano in un solo punto, B, che sta sul segmento CO. In A il raggio OA è perpendicolare alla retta. In entrambi i punti il profilo prosegue senza spigoli.",
+    equality: "CO = raggio grande + raggio del raccordo",
+    steps: [
+      ["Prima di iniziare", "Osserva la retta e la circonferenza", "Hai una retta r e una circonferenza con centro C. Vuoi unirle con un arco di raggio assegnato, come nel profilo di un gancio o di una chiave.", "Il raccordo deve toccare sia la retta sia la circonferenza."],
+      ["Passo 1 · Parallela a r", "Traccia la parallela", "Traccia la parallela a r alla distanza del raggio del raccordo, dalla parte della circonferenza.", "Il centro del raccordo starà su questa retta."],
+      ["Passo 2 · Arco da C", "Trova il centro O", "Apri il compasso quanto la somma dei due raggi: quello della circonferenza più quello del raccordo. Punta in C e taglia la parallela dalla parte in cui vuoi il raccordo (nel disegno, a destra di C): trovi O.", "Per sommare i due raggi riportali uno dopo l’altro su una retta."],
+      ["Passo 3 · Punti di contatto", "Trova A e B", "Da O traccia la perpendicolare alla retta r: la incontra in A. Unisci O con C: il segmento taglia la circonferenza in B.", "A e B sono i punti in cui il raccordo si attacca."],
+      ["Passo 4 · Compasso", "Traccia il raccordo", "Punta in O, apri fino ad A e traccia l’arco da B ad A: il più corto, quello rivolto verso lo spazio tra la circonferenza e la retta.", "L’arco deve passare esattamente per B."],
+      ["Passo 5 · Ripassa", "Ripassa il profilo", "Ripassa la circonferenza fino a B, il raccordo da B ad A e la retta da A in poi.", "Il profilo passa dalla curva alla retta senza spigoli."],
+    ],
+  }, (k) => {
+    const yr = -2.5;
+    const C = k.punto("C", [-1.9, 0.7]);
+    const Rc = 1.9; const R = 1.5;
+    const O = k.punto("O", [C[0] + Math.sqrt((Rc + R) ** 2 - (C[1] - (yr + R)) ** 2), yr + R]);
+    const A = k.punto("A", [O[0], yr]);
+    const gCO = direzione(C, O);
+    const B = k.punto("B", polare(C, Rc, gCO));
+    k.seg("lineR", [-5.6, yr], [5.6, yr], "r");
+    k.cerchio("circleC", C, Rc);
+    k.seg("segD1", [3.6, yr], [3.6, yr + R]); k.tratteggia("segD1");
+    k.traccia("linePar", [-5.2, yr + R], [5.2, yr + R], [0.4, 1]);
+    k.archetto("arcCO", C, O, 14);
+    k.traccia("lineOA", O, sposta(A, 270, 0.4), [0.12, 0.5]);
+    k.traccia("lineCO", C, O, [0.52, 0.9]);
+    angoloRetto(k, "rightAngle", [5.6, yr], A, O);
+    const gOB = direzione(O, B);
+    k.arco("arcRacc", O, R, gOB, modulo360(270 - gOB));
+    k.arcoFisso("profilo1", C, Rc, gCO, gCO + 300);
+    k.arcoFisso("profilo2", O, R, gOB, 270);
+    k.seg("drawR", A, [5.6, yr]);
+    k.compare("O", 0.6); k.compare("A", 0.5); k.compare("B", 0.9); k.compare("rightAngle", 0.5);
+    ["profilo1", "profilo2", "drawR"].forEach((n, i) => k.compare(n, 0.2 + i * 0.25));
+    k.passo("lineR", "C", "circleC");
+    k.passo("segD1", "linePar");
+    k.passo("arcCO", "O");
+    k.passo("lineOA", "lineCO", "A", "B", "rightAngle");
+    k.passo("arcRacc");
+    k.passo("profilo1", "profilo2", "drawR");
+    k.risultato("profilo1", "profilo2", "drawR");
+  });
+
+  // ── 63 · Dodecagono inscritto ──────────────────────────────────────────────
+  TAVOLE["dodecagono-inscritto"] = creaTavola({
+    title: "Dodecagono regolare inscritto in una circonferenza",
+    eyebrow: "Costruzione 63 · Dodici parti con una sola apertura",
+    subtitle: "Due diametri perpendicolari e quattro archi aperti quanto il raggio dividono la circonferenza in dodici parti.",
+    filename: "MC-DIS-1-01_dodecagono-inscritto.ggb",
+    coord: [-4.9, 4.9, -3.9, 3.9],
+    proofTitle: "Sessanta gradi da ogni estremo",
+    proofCopy: "Un arco aperto quanto il raggio taglia la circonferenza a 60° dal punto in cui hai puntato il compasso, da una parte e dall’altra. I quattro estremi dei diametri sono a 90° l’uno dall’altro. Tra un estremo e il successivo cadono così due punti nuovi, a 30° e a 60°: tutti gli archi misurano 30°, e 12 × 30° = 360°.",
+    equality: "12 archi da 30° = 360°",
+    steps: [
+      ["Prima di iniziare", "Osserva la circonferenza", "Hai una circonferenza con due diametri perpendicolari, che la incontrano nei punti A, B, C e D. Vuoi dividerla in dodici parti uguali.", "È la divisione del quadrante dell’orologio."],
+      ["Passo 1 · Arco da A", "Trova 1 e 2", "Apri il compasso quanto il raggio. Punta in A e taglia la circonferenza da una parte e dall’altra: trovi i punti 1 e 2.", "L’arco passa per il centro O."],
+      ["Passo 2 · Archi da B, C e D", "Trova gli altri sei punti", "Con la stessa apertura punta in B, poi in C, poi in D, e taglia ogni volta la circonferenza da una parte e dall’altra: trovi i punti da 3 a 8.", "Ogni arco aggiunge due punti."],
+      ["Passo 3 · Righello", "Unisci i dodici punti", "Unisci i dodici punti uno dopo l’altro, girando lungo la circonferenza. Il dodecagono regolare è completo.", "Le lettere e i numeri si alternano così: una lettera, due numeri, una lettera, due numeri."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [0, 0]);
+    const R = 3.2;
+    const car = [["A", 90], ["B", 0], ["C", 270], ["D", 180]];
+    car.forEach(([n, g]) => k.punto(n, polare(O, R, g)));
+    k.cerchio("circleO", O, R);
+    k.seg("diamV", polare(O, R + 0.4, 90), polare(O, R + 0.4, 270));
+    k.seg("diamH", polare(O, R + 0.4, 180), polare(O, R + 0.4, 0));
+    const wa = finestre(3);
+    const nuovi = [];
+    car.forEach(([n, g], i) => {
+      const P = polare(O, R, g);
+      const finestra = i === 0 ? undefined : wa[i - 1];
+      k.arco(`arc${n}`, P, R, g + 180 - 68, 136, finestra);
+      const p1 = `N${2 * i + 1}`; const p2 = `N${2 * i + 2}`;
+      k.punto(p1, polare(O, R, g + 60), String(2 * i + 1));
+      k.punto(p2, polare(O, R, g - 60), String(2 * i + 2));
+      k.compare(p1, finestra ? finestra[1] : 0.9); k.compare(p2, finestra ? finestra[0] + 0.08 : 0.25);
+      nuovi.push(p1, p2);
+    });
+    const w = finestre(12);
+    const lati = Array.from({ length: 12 }, (_, i) => {
+      k.traccia(`drawL${i}`, polare(O, R, 30 * i), polare(O, R, 30 * (i + 1)), w[i]);
+      return `drawL${i}`;
+    });
+    k.passo("O", "circleO", "diamV", "diamH", "A", "B", "C", "D");
+    k.passo("arcA", "N1", "N2");
+    k.passo("arcB", "arcC", "arcD", ...nuovi.slice(2));
+    k.passo(...lati);
+    k.risultato(...lati);
+  });
+
+  // ── 64 · Stella a sei punte ────────────────────────────────────────────────
+  TAVOLE["stella-sei-punte"] = creaTavola({
+    title: "Stella a sei punte",
+    eyebrow: "Costruzione 64 · Due triangoli equilateri",
+    subtitle: "Dividi la circonferenza in sei parti con il raggio, poi intreccia due triangoli equilateri.",
+    filename: "MC-DIS-1-01_stella-sei-punte.ggb",
+    coord: [-4.8, 4.8, -3.9, 3.9],
+    proofTitle: "Due triangoli uguali, ruotati di 60°",
+    proofCopy: "I sei punti dividono la circonferenza in archi di 60°. Unendo un punto sì e uno no ottieni un triangolo con tre lati uguali: è equilatero. Gli altri tre punti danno un secondo triangolo identico, ruotato di 60° rispetto al primo. Insieme formano sei punte uguali; al centro resta un esagono regolare.",
+    equality: "2 triangoli equilateri = 6 punte",
+    steps: [
+      ["Prima di iniziare", "Osserva la circonferenza", "Hai una circonferenza con centro O e un punto A su di essa. Vuoi costruire una stella a sei punte.", "È la forma di molti fiocchi di neve stilizzati."],
+      ["Passo 1 · Sei punti", "Riporta il raggio", "Apri il compasso quanto il raggio. Partendo da A riporta questa apertura lungo la circonferenza: trovi B, C, D, E e F (Costruzione 6).", "Per controllare, riporta l’apertura una sesta volta da F: deve tornare esattamente su A."],
+      ["Passo 2 · Primo triangolo", "Unisci A, C ed E", "Unisci un punto sì e uno no: A con C, C con E, E con A.", "È un triangolo equilatero."],
+      ["Passo 3 · Secondo triangolo", "Unisci B, D e F", "Unisci gli altri tre punti: B con D, D con F, F con B.", "È uguale al primo, ma capovolto."],
+      ["Passo 4 · Ripassa", "Ripassa il contorno", "Ripassa solo il contorno esterno della stella, lasciando leggeri i tratti interni.", "Le sei punte devono essere uguali."],
+    ],
+  }, (k) => {
+    const O = k.punto("O", [0, 0]);
+    const R = 3.3;
+    const nomi = ["A", "B", "C", "D", "E", "F"];
+    const V = nomi.map((n, i) => k.punto(n, polare(O, R, 90 + 60 * i)));
+    k.cerchio("circleO", O, R);
+    const wa = finestre(5);
+    for (let i = 0; i < 5; i += 1) { k.archetto(`arcS${i + 1}`, V[i], V[i + 1], 11, wa[i]); k.compare(nomi[i + 1], wa[i][1]); }
+    const w3 = finestre(3);
+    [[0, 2], [2, 4], [4, 0]].forEach(([a, b], i) => k.traccia(`lineT${i + 1}`, V[a], V[b], w3[i]));
+    [[1, 3], [3, 5], [5, 1]].forEach(([a, b], i) => k.traccia(`lineU${i + 1}`, V[a], V[b], w3[i]));
+    const ri = R / Math.sqrt(3);
+    const contorno = [];
+    for (let i = 0; i < 6; i += 1) { contorno.push(V[i]); contorno.push(polare(O, ri, 90 + 30 + 60 * i)); }
+    const w = finestre(12);
+    const lati = contorno.map((p, i) => { k.traccia(`drawL${i}`, p, contorno[(i + 1) % 12], w[i]); return `drawL${i}`; });
+    k.passo("O", "circleO", "A");
+    k.passo("arcS1", "arcS2", "arcS3", "arcS4", "arcS5", "B", "C", "D", "E", "F");
+    k.passo("lineT1", "lineT2", "lineT3");
+    k.passo("lineU1", "lineU2", "lineU3");
+    k.passo(...lati);
+    k.risultato(...lati);
+  });
+
+  // ── 65 · Arco a tutto sesto ────────────────────────────────────────────────
+  TAVOLE["arco-tutto-sesto"] = creaTavola({
+    title: "Arco a tutto sesto",
+    eyebrow: "Costruzione 65 · L’arco dei Romani",
+    subtitle: "Una semicirconferenza con il centro a metà della luce: è l’arco di ponti, acquedotti e portali romani.",
+    filename: "MC-DIS-1-01_arco-tutto-sesto.ggb",
+    coord: [-5.6, 5.6, -3.2, 3.9],
+    proofTitle: "Alto la metà della larghezza",
+    proofCopy: "L’arco è una semicirconferenza: il suo centro O è il punto medio della luce AB e il raggio è metà della luce. Per questo l’altezza dell’arco, che si chiama freccia, è sempre la metà della larghezza. L’arco interno e quello esterno hanno lo stesso centro: lo spessore è uguale dappertutto.",
+    equality: "freccia = luce : 2",
+    steps: [
+      ["Prima di iniziare", "Osserva la luce AB", "Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura. Vuoi costruire l’arco che la copre.", "«Sesto» è un vecchio nome del compasso: tutto sesto significa che l’arco è una semicirconferenza completa."],
+      ["Passo 1 · Punto medio", "Trova il centro O", "Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O.", "O è il centro dell’arco."],
+      ["Passo 2 · Arco interno", "Punta in O", "Punta in O, apri fino ad A e traccia una semicirconferenza sopra la luce, da B ad A.", "Questa curva interna si chiama intradosso."],
+      ["Passo 3 · Arco esterno", "Aumenta l’apertura", "Prolunga AB dalle due parti. Aumenta l’apertura del compasso di una misura uguale allo spessore dell’arco e, sempre con centro O, traccia una seconda semicirconferenza: incontra i prolungamenti nei punti C e D.", "La curva esterna si chiama estradosso."],
+      ["Passo 4 · Ripassa", "Ripassa l’arco", "Ripassa le due semicirconferenze e i due tratti di base, AC e BD. L’arco a tutto sesto è completo.", "Misura la freccia, cioè l’altezza dell’arco: è la metà della luce."],
+    ],
+  }, (k) => {
+    const y0 = -2.2;
+    const A = k.punto("A", [-3, y0]);
+    const B = k.punto("B", [3, y0]);
+    const O = k.punto("O", [0, y0]);
+    const sp = 0.9;
+    const C = k.punto("C", [-3 - sp, y0]);
+    const D = k.punto("D", [3 + sp, y0]);
+    k.seg("lineBase", [-5.4, y0], [5.4, y0]);
+    k.seg("segAB", A, B);
+    const a = asse(k, "P", A, B, 3.6, 0.1, 0.7);
+    k.traccia("lineAsse", [0, y0 + 5.4], [0, y0 - 0.7], [0.72, 0.96]);
+    void a;
+    k.arco("arcInt", O, 3, 0, 180);
+    k.arco("arcEst", O, 3 + sp, 0, 180);
+    k.arcoFisso("profilo1", O, 3, 0, 180); k.arcoFisso("profilo2", O, 3 + sp, 0, 180);
+    k.seg("drawAC", A, C); k.seg("drawBD", B, D);
+    k.compare("O", 0.97); k.compare("D", 0.15); k.compare("C", 0.95);
+    ["profilo1", "profilo2", "drawAC", "drawBD"].forEach((n, i) => k.compare(n, 0.2 + i * 0.2));
+    k.passo("A", "B", "segAB", "lineBase");
+    k.passo(...a.nomi, "lineAsse", "O");
+    k.passo("arcInt");
+    k.passo("arcEst", "C", "D");
+    k.passo("profilo1", "profilo2", "drawAC", "drawBD");
+    k.risultato("profilo1", "profilo2", "drawAC", "drawBD");
+  });
+
+  // ── 66 · Arco a sesto acuto ────────────────────────────────────────────────
+  TAVOLE["arco-sesto-acuto"] = creaTavola({
+    title: "Arco a sesto acuto",
+    eyebrow: "Costruzione 66 · L’arco delle cattedrali gotiche",
+    subtitle: "Due archi con i centri negli estremi della luce si incontrano in una punta.",
+    filename: "MC-DIS-1-01_arco-sesto-acuto.ggb",
+    coord: [-5.8, 5.8, -3.3, 3.2],
+    proofTitle: "Un triangolo equilatero dentro l’arco",
+    proofCopy: "Il punto C dista da A quanto è lunga AB, perché sta sull’arco con centro A; per lo stesso motivo dista da B quanto AB. Il triangolo ABC ha tre lati uguali: è equilatero. Per questo l’arco è più alto di quello a tutto sesto: la sua freccia, cioè l’altezza dell’arco, è l’altezza del triangolo equilatero, circa 0,87 volte la luce invece di 0,5.",
+    equality: "AC = BC = AB",
+    steps: [
+      ["Prima di iniziare", "Osserva la luce AB", "Il segmento AB è la luce dell’arco. Vuoi costruire un arco con la punta, come quelli delle cattedrali gotiche.", "I centri dei due archi sono gli estremi stessi della luce."],
+      ["Passo 1 · Arco da A", "Punta in A", "Apri il compasso quanto AB. Punta in A e traccia un arco sopra la luce, dalla parte di B.", "Non cambiare apertura."],
+      ["Passo 2 · Arco da B", "Punta in B", "Con la stessa apertura punta in B e traccia un arco sopra la luce, dalla parte di A: incontra il primo nel punto C.", "C è la punta dell’arco, che si chiama chiave."],
+      ["Passo 3 · Ripassa", "Ripassa l’arco", "Ripassa i due archi solo fino a C: da A a C e da B a C. L’arco a sesto acuto è completo.", "Unisci A, B e C con il righello: che triangolo ottieni?"],
+    ],
+  }, (k) => {
+    const y0 = -2.6;
+    const L = 5.4;
+    const A = k.punto("A", [-L / 2, y0]);
+    const B = k.punto("B", [L / 2, y0]);
+    const C = k.punto("C", [0, y0 + (L * Math.sqrt(3)) / 2]);
+    k.seg("lineBase", [-5.4, y0], [5.4, y0]);
+    k.seg("segAB", A, B);
+    k.arco("arcA", A, L, 0, 72);
+    k.arco("arcB", B, L, 108, 72);
+    k.arcoFisso("profilo1", A, L, 0, 60); k.arcoFisso("profilo2", B, L, 120, 180);
+    k.compare("C", 0.3); k.compare("profilo1", 0.3); k.compare("profilo2", 0.6);
+    k.passo("A", "B", "segAB", "lineBase");
+    k.passo("arcA");
+    k.passo("arcB", "C");
+    k.passo("profilo1", "profilo2");
+    k.risultato("profilo1", "profilo2");
+  });
+
+  // ── 67 · Arco ribassato a tre centri ───────────────────────────────────────
+  TAVOLE["arco-ribassato-tre-centri"] = creaTavola({
+    title: "Arco ribassato a tre centri",
+    eyebrow: "Costruzione 67 · Largo e poco alto",
+    subtitle: "Quando l’arco deve essere più basso della metà della luce, tre archi raccordati prendono il posto della semicirconferenza.",
+    filename: "MC-DIS-1-01_arco-ribassato-tre-centri.ggb",
+    coord: [-7.6, 7.6, -6.6, 2.9],
+    proofTitle: "Tre archi che si raccordano",
+    proofCopy: "Il punto 1 sta sull’asse del segmento AE, quindi dista ugualmente da A e da E; la costruzione fa in modo che la distanza da 2 a C sia uguale alla distanza da 2 a 1 più il raggio dell’arco con centro 1. Nel punto F si incontrano l’arco con centro 1 e l’arco con centro 2: i due centri e F sono sulla stessa retta, quindi gli archi si raccordano senza spigolo. Lo stesso accade in G.",
+    equality: "3 archi · 2 punti di raccordo",
+    steps: [
+      ["Prima di iniziare", "Osserva la luce e la freccia", "AB è la luce dell’arco e O il suo punto medio. Il segmento OC, perpendicolare ad AB, è la freccia: l’altezza che l’arco deve avere. Qui la freccia è più corta della metà della luce.", "Un arco così si chiama ribassato: lo trovi in molti ponti."],
+      ["Passo 1 · Segmento AC", "Unisci A con C", "Con il righello unisci A con C.", "Su questo segmento troverai il punto E."],
+      ["Passo 2 · Arco da O", "Trova D", "Punta in O, apri fino ad A e traccia un arco fino alla retta della freccia, sopra C: trovi il punto D.", "CD è la differenza tra metà luce e freccia."],
+      ["Passo 3 · Arco da C", "Trova E", "Punta in C, apri fino a D e taglia il segmento AC: trovi il punto E.", "CE è lungo quanto CD."],
+      ["Passo 4 · Asse di AE", "Trova i centri 1 e 2", "Costruisci l’asse del segmento AE (Costruzione 9) e prolungalo: incontra la luce AB nel punto 1 e la retta della freccia, sotto O, nel punto 2.", "1 e 2 sono due dei tre centri."],
+      ["Passo 5 · Terzo centro", "Trova 3 e le rette guida", "Punta in O, apri fino a 1 e riporta la distanza dall’altra parte: trovi il punto 3. Da 2 traccia due rette che passano per 1 e per 3 e prolungale verso l’alto.", "I tre archi si raccorderanno su queste rette."],
+      ["Passo 6 · Tre archi", "Traccia l’arco", "Punta in 1, apri fino ad A e traccia l’arco fino alla retta guida: arrivi in F. Punta in 2, apri fino a F e traccia l’arco fino all’altra retta guida, passando per C: arrivi in G. Punta in 3, apri fino a G e chiudi in B.", "L’arco deve passare esattamente per C."],
+    ],
+  }, (k) => {
+    const y0 = -1.9;
+    const a = 4.2; const b = 2.5;
+    const A = k.punto("A", [-a, y0]);
+    const B = k.punto("B", [a, y0]);
+    const O = k.punto("O", [0, y0]);
+    const C = k.punto("C", [0, y0 + b]);
+    const D = k.punto("D", [0, y0 + a]);
+    const gCA = direzione(C, A);
+    const E = k.punto("E", polare(C, a - b, gCA));
+    const Mid = medio(A, E);
+    const gn = direzione(A, E) - 90;
+    const t1 = (y0 - Mid[1]) / Math.sin(gn * RAD);
+    const N1 = k.punto("N1", [Mid[0] + t1 * Math.cos(gn * RAD), y0], "1");
+    const t2 = (0 - Mid[0]) / Math.cos(gn * RAD);
+    const N2 = k.punto("N2", [0, Mid[1] + t2 * Math.sin(gn * RAD)], "2");
+    const N3 = k.punto("N3", [-N1[0], y0], "3");
+    const r1 = distanza(N1, A);
+    const gF = direzione(N2, N1);
+    const F = k.punto("F", polare(N1, r1, gF));
+    const G = k.punto("G", [-F[0], F[1]]);
+    const r2 = distanza(N2, F);
+    k.seg("lineBase", [-6.4, y0], [6.4, y0]);
+    k.seg("segAB", A, B);
+    k.seg("lineFreccia", [0, y0 + a + 0.5], [0, N2[1] - 0.4]);
+    k.seg("segOC", O, C);
+    k.traccia("lineAC", A, C);
+    k.arco("arcOD", O, a, 84, 96);
+    k.archetto("arcCE", C, E, 30);
+    const ax = asse(k, "P", A, E, 1.9, 0.08, 0.5);
+    k.traccia("lineAsse", sposta(ax.X1, direzione(ax.X2, ax.X1), 0.3), sposta(N2, gn, 0.5), [0.52, 0.96]);
+    k.archetto("arcO3", O, N3, 14, [0.1, 0.3]);
+    k.traccia("lineG1", N2, sposta(F, gF, 0.7), [0.35, 0.65]);
+    k.traccia("lineG3", N2, sposta(G, 180 - gF, 0.7), [0.65, 0.95]);
+    const w = finestre(3);
+    k.arco("arcU1", N1, r1, gF, 180 - gF, w[0]);
+    k.arco("arcU2", N2, r2, 180 - gF, 2 * gF - 180, w[1]);
+    k.arco("arcU3", N3, r1, 0, 180 - gF, w[2]);
+    k.arcoFisso("profilo1", N1, r1, gF, 180); k.arcoFisso("profilo2", N2, r2, 180 - gF, gF); k.arcoFisso("profilo3", N3, r1, 0, 180 - gF);
+    k.compare("D", 0.2); k.compare("E", 0.6); k.compare("N1", 0.8); k.compare("N2", 0.97); k.compare("N3", 0.3);
+    k.compare("F", w[0][1]); k.compare("G", w[1][1]);
+    ["profilo1", "profilo2", "profilo3"].forEach((n) => k.compare(n, 0.97));
+    k.passo("A", "B", "O", "C", "segAB", "lineBase", "lineFreccia", "segOC");
+    k.passo("lineAC");
+    k.passo("arcOD", "D");
+    k.passo("arcCE", "E");
+    k.passo(...ax.nomi, "lineAsse", "N1", "N2");
+    k.passo("arcO3", "N3", "lineG1", "lineG3");
+    k.passo("arcU1", "arcU2", "arcU3", "F", "G", "profilo1", "profilo2", "profilo3");
+    k.risultato("profilo1", "profilo2", "profilo3");
+  });
+
+  // ── 68 · Ellisse per punti ─────────────────────────────────────────────────
+  TAVOLE["ellisse-due-circonferenze"] = creaTavola({
+    title: "Ellisse dati i due assi",
+    eyebrow: "Costruzione 68 · Il metodo delle due circonferenze",
+    subtitle: "Due circonferenze con lo stesso centro e una raggiera di diametri danno i punti dell’ellisse, uno alla volta.",
+    filename: "MC-DIS-1-01_ellisse-due-circonferenze.ggb",
+    coord: [-5.9, 5.9, -4.8, 4.8],
+    proofTitle: "Una circonferenza schiacciata",
+    proofCopy: "Ogni punto dell’ellisse prende la posizione orizzontale dal punto sulla circonferenza grande e l’altezza dal punto sulla circonferenza piccola, lungo lo stesso raggio. È come prendere la circonferenza grande e schiacciarla verso l’asse maggiore, sempre nella stessa proporzione: quella tra i due assi. A differenza dell’ovale, l’ellisse non è fatta di archi di compasso: la sua curvatura cambia in ogni punto.",
+    equality: "asse maggiore AB · asse minore CD",
+    steps: [
+      ["Prima di iniziare", "Osserva i due assi", "AB è l’asse maggiore dell’ellisse e CD l’asse minore: sono perpendicolari e si incontrano nel centro O. Vuoi costruire l’ellisse che ha proprio questi assi.", "Un cerchio visto di sbieco appare come un’ellisse."],
+      ["Passo 1 · Due circonferenze", "Punta in O", "Punta in O e traccia due circonferenze: una con apertura OA, l’altra con apertura OC.", "Hanno lo stesso centro: sono concentriche."],
+      ["Passo 2 · Diametri", "Dividi in dodici parti", "Dividi la circonferenza grande in dodici parti uguali (Costruzione 63) e traccia i diametri: tagliano anche la circonferenza piccola.", "Più diametri tracci, più punti dell’ellisse troverai."],
+      ["Passo 3 · Un punto dell’ellisse", "Incrocia una verticale e un’orizzontale", "Scegli un diametro. Dal punto in cui taglia la circonferenza grande traccia una linea verticale, parallela all’asse minore; dal punto in cui taglia la circonferenza piccola traccia una linea orizzontale, parallela all’asse maggiore. Dove le due linee si incontrano c’è un punto dell’ellisse.", "Usa le squadre: verticale dalla grande, orizzontale dalla piccola."],
+      ["Passo 4 · Gli altri punti", "Ripeti su ogni diametro", "Fai lo stesso su tutti gli altri diametri. Con A, B, C e D hai dodici punti dell’ellisse.", "I punti sono simmetrici rispetto ai due assi."],
+      ["Passo 5 · Curva", "Unisci i punti", "Unisci i dodici punti a mano libera, o con il curvilineo, con una curva morbida e senza spigoli. L’ellisse è completa.", "Ruota il foglio mentre disegni: la mano lavora meglio verso l’interno della curva."],
+    ],
+  }, (k, t) => {
+    const O = k.punto("O", [0, 0]);
+    const a = 4.3; const b = 2.7;
+    k.punto("A", [-a, 0]); k.punto("B", [a, 0]); k.punto("C", [0, b]); k.punto("D", [0, -b]);
+    k.seg("segAB", [-a, 0], [a, 0]); k.seg("segCD", [0, b], [0, -b]);
+    k.arco("circleG", O, a, 0, 360, [0.12, 0.5]);
+    k.arco("circleP", O, b, 90, 360, [0.52, 0.9]);
+    const wd = finestre(4);
+    [30, 60, 120, 150].forEach((g, i) => k.traccia(`diamD${i + 1}`, polare(O, a, g), polare(O, a, g + 180), wd[i]));
+    const angoli = [30, 60, 120, 150, 210, 240, 300, 330];
+    const punti = []; const guide = [];
+    const wp = finestre(7);
+    angoli.forEach((g, i) => {
+      const G = polare(O, a, g); const P = polare(O, b, g); const E = [G[0], P[1]];
+      const finestra = i === 0 ? [0.12, 0.6] : wp[i - 1];
+      const meta = (finestra[0] + finestra[1]) / 2;
+      k.traccia(`lineV${i + 1}`, G, E, i === 0 ? [0.12, 0.5] : [finestra[0], meta]);
+      k.traccia(`lineH${i + 1}`, P, sposta(E, P[0] < E[0] ? 0 : 180, 0), i === 0 ? [0.5, 0.88] : [meta, finestra[1]]);
+      puntoMuto(k, t, `E${i + 1}`, E);
+      k.compare(`E${i + 1}`, i === 0 ? 0.9 : finestra[1]);
+      punti.push(`E${i + 1}`); guide.push(`lineV${i + 1}`, `lineH${i + 1}`);
+    });
+    const c = Math.sqrt(a * a - b * b);
+    comando(t, "ellisse", `Ellipse((${num(-c)},0),(${num(c)},0),${num(a)})`);
+    k.passo("O", "A", "B", "C", "D", "segAB", "segCD");
+    k.passo("circleG", "circleP");
+    k.passo("diamD1", "diamD2", "diamD3", "diamD4");
+    k.passo("lineV1", "lineH1", "E1");
+    k.passo(...guide.slice(2), ...punti.slice(1));
+    k.passo("ellisse");
+    k.risultato("ellisse");
+  });
+
+  // ── 69 · Parabola per punti ────────────────────────────────────────────────
+  TAVOLE["parabola-fuoco-direttrice"] = creaTavola({
+    title: "Parabola dati il fuoco e la direttrice",
+    eyebrow: "Costruzione 69 · Stessa distanza da un punto e da una retta",
+    subtitle: "Ogni punto della parabola è lontano dal fuoco quanto dalla direttrice: lo trovi con una parallela e un’apertura di compasso.",
+    filename: "MC-DIS-1-01_parabola-fuoco-direttrice.ggb",
+    coord: [-5.8, 5.8, -3.7, 3],
+    proofTitle: "Lontano dal fuoco quanto dalla direttrice",
+    proofCopy: "Prendi un punto trovato sulla parallela che dista 3,2 cm dalla direttrice. Per costruzione dista 3,2 cm anche dal fuoco, perché l’hai segnato con il compasso aperto di 3,2 cm e puntato in F. Vale per tutti i punti: ognuno è alla stessa distanza dal fuoco e dalla direttrice. È proprio la proprietà che definisce la parabola, la curva delle antenne satellitari e dei fari delle automobili.",
+    equality: "distanza da F = distanza da d",
+    steps: [
+      ["Prima di iniziare", "Osserva il fuoco e la direttrice", "Hai una retta d, la direttrice, e un punto F fuori da essa, il fuoco. Vuoi costruire la parabola: la curva dei punti che distano da F quanto da d.", "Qui il fuoco dista 1,6 cm dalla direttrice."],
+      ["Passo 1 · Asse e vertice", "Trova V", "Da F traccia la perpendicolare alla direttrice: è l’asse della parabola e incontra d nel punto A. Il punto medio del segmento AF è il vertice V.", "V è il punto della parabola più vicino alla direttrice."],
+      ["Passo 2 · Prima coppia di punti", "Parallela e compasso", "Traccia la parallela alla direttrice che passa per F: dista 1,6 cm da d. Apri il compasso di 1,6 cm, punta in F e taglia la parallela da una parte e dall’altra: trovi due punti della parabola.", "La distanza dalla direttrice e l’apertura del compasso devono essere uguali."],
+      ["Passo 3 · Altre coppie", "Ripeti con distanze più grandi", "Traccia altre parallele a 2,4 cm, 3,2 cm, 4 cm e 4,8 cm dalla direttrice. Per ognuna apri il compasso della stessa misura, punta in F e taglia la parallela.", "Ogni parallela dà due punti, simmetrici rispetto all’asse."],
+      ["Passo 4 · Curva", "Unisci i punti", "Unisci i punti passando per il vertice V, a mano libera o con il curvilineo. La parabola è completa.", "La parabola non si chiude mai: i due rami continuano ad allargarsi."],
+    ],
+  }, (k, t) => {
+    const yd = -3; const p = 1.6;
+    const F = k.punto("F", [0, yd + p]);
+    k.punto("A", [0, yd]);
+    k.punto("V", [0, yd + p / 2]);
+    k.seg("lineD", [-5.8, yd], [5.8, yd], "d");
+    k.traccia("lineAsse", [0, yd - 0.4], [0, 2.8]);
+    const dist = [1.6, 2.4, 3.2, 4, 4.8];
+    const gruppo2 = []; const gruppo3 = [];
+    const w = finestre(4);
+    dist.forEach((q, i) => {
+      const y = yd + q;
+      const x = Math.sqrt(q * q - (q - p) * (q - p));
+      const fin = i === 0 ? [0.12, 0.9] : w[i - 1];
+      const terzo = (fin[1] - fin[0]) / 3;
+      k.traccia(`linePar${i + 1}`, [-x - 0.9, y], [x + 0.9, y], [fin[0], fin[0] + terzo]);
+      k.archetto(`arcF${i + 1}a`, F, [x, y], i === 0 ? 14 : 7, [fin[0] + terzo, fin[0] + 2 * terzo]);
+      k.archetto(`arcF${i + 1}b`, F, [-x, y], i === 0 ? 14 : 7, [fin[0] + 2 * terzo, fin[1]]);
+      puntoMuto(k, t, `E${i + 1}a`, [x, y]); puntoMuto(k, t, `E${i + 1}b`, [-x, y]);
+      k.compare(`E${i + 1}a`, fin[0] + 2 * terzo); k.compare(`E${i + 1}b`, fin[1]);
+      const nomi = [`linePar${i + 1}`, `arcF${i + 1}a`, `arcF${i + 1}b`, `E${i + 1}a`, `E${i + 1}b`];
+      (i === 0 ? gruppo2 : gruppo3).push(...nomi);
+    });
+    const xm = Math.sqrt(4.8 * 4.8 - 3.2 * 3.2) + 0.25;
+    comando(t, "parabola", `Curve(u, u^2/${num(2 * p)}+${num(yd + p / 2)}, u, ${num(-xm)}, ${num(xm)})`);
+    k.compare("A", 0.5); k.compare("V", 0.9);
+    k.passo("lineD", "F");
+    k.passo("lineAsse", "A", "V");
+    k.passo(...gruppo2);
+    k.passo(...gruppo3);
+    k.passo("parabola");
+    k.risultato("parabola");
+  });
+
+  // ── 70 · Spirale di Archimede ──────────────────────────────────────────────
+  TAVOLE["spirale-archimede"] = creaTavola({
+    title: "Spirale di Archimede",
+    eyebrow: "Costruzione 70 · Gira e si allontana a passo costante",
+    subtitle: "Otto raggi e otto archi: a ogni ottavo di giro la curva si allontana dal centro di un ottavo del raggio.",
+    filename: "MC-DIS-1-01_spirale-archimede.ggb",
+    coord: [-5.8, 5.8, -4.7, 4.7],
+    proofTitle: "Giro e distanza crescono insieme",
+    proofCopy: "A ogni ottavo di giro il punto si allontana dal centro di un ottavo del raggio: dopo mezzo giro è a metà del raggio, dopo un giro intero è arrivato sulla circonferenza. La distanza dal centro cresce in proporzione all’angolo percorso. È la curva che disegna il solco di un disco in vinile, o una corda arrotolata su se stessa.",
+    equality: "1 giro → 1 raggio · 1/8 di giro → 1/8 di raggio",
+    steps: [
+      ["Prima di iniziare", "Osserva la circonferenza", "Hai una circonferenza con centro O e il raggio OA. Vuoi costruire una spirale che parte da O e, dopo un giro completo, arriva in A.", "Il passo della spirale è lungo quanto il raggio."],
+      ["Passo 1 · Otto raggi", "Dividi la circonferenza", "Dividi la circonferenza in otto parti uguali (Costruzione 15) e traccia gli otto raggi. Numerali da 1 a 8 in senso antiorario: il raggio 8 è OA.", "Tra un raggio e il successivo ci sono 45°."],
+      ["Passo 2 · Otto parti sul raggio", "Dividi OA", "Dividi il raggio OA in otto parti uguali (Costruzione 3) e segna i punti di divisione.", "Tante parti quanti sono i raggi."],
+      ["Passo 3 · Primo punto", "Arco dal primo punto di divisione", "Punta in O, apri fino al primo punto di divisione e traccia un arco fino al raggio 1: lì c’è il primo punto della spirale.", "Un ottavo di giro, un ottavo di raggio."],
+      ["Passo 4 · Altri punti", "Ripeti per gli altri raggi", "Punta sempre in O: apri fino al secondo punto di divisione e arriva al raggio 2, poi dal terzo punto fino al raggio 3, e così via fino al raggio 8, dove arrivi in A.", "Ogni arco è più lungo del precedente."],
+      ["Passo 5 · Curva", "Unisci i punti", "Parti da O e unisci i punti uno dopo l’altro con una curva morbida, a mano libera o con il curvilineo. La spirale è completa.", "Per continuare oltre il primo giro, prolunga i raggi e continua a contare."],
+    ],
+  }, (k, t) => {
+    const O = k.punto("O", [0, 0]);
+    const R = 3.7; const n = 8;
+    k.punto("A", [R, 0]);
+    k.cerchio("circleO", O, R);
+    k.seg("segOA", O, [R, 0]);
+    const raggi = []; const div = []; const archi = []; const punti = [];
+    const wr = finestre(7);
+    for (let i = 1; i <= n; i += 1) {
+      const g = (360 / n) * i;
+      if (i < n) { k.traccia(`rayN${i}`, O, polare(O, R + 0.25, g), wr[i - 1]); raggi.push(`rayN${i}`); }
+      const etichetta = `HT${i}`;
+      t.commands.push(`${etichetta}=Text("${i}",${xy(polare([-0.12, -0.14], R + 0.6, g))})`);
+      t.texts.push(etichetta); raggi.push(etichetta);
+      if (i < n) { puntoMuto(k, t, `Dv${i}`, [(R * i) / n, 0]); div.push(`Dv${i}`); }
+      const fin = i === 1 ? undefined : finestre(7)[i - 2];
+      k.arco(`arcK${i}`, O, (R * i) / n, 0, g, fin);
+      puntoMuto(k, t, `E${i}`, polare(O, (R * i) / n, g));
+      k.compare(`E${i}`, fin ? fin[1] : 0.95);
+      archi.push(`arcK${i}`); punti.push(`E${i}`);
+    }
+    comando(t, "spirale", `Curve(${num(R)}*u/(2*pi)*cos(u), ${num(R)}*u/(2*pi)*sin(u), u, 0, 2*pi)`);
+    k.passo("O", "A", "circleO", "segOA");
+    k.passo(...raggi);
+    k.passo(...div);
+    k.passo("arcK1", "E1");
+    k.passo(...archi.slice(1), ...punti.slice(1));
+    k.passo("spirale");
+    k.risultato("spirale");
+  });
+
   window.GGB_TAVOLE = TAVOLE;
   // Vocabolario condiviso con le altre serie di tavole (tavole-po.js: proiezioni ortogonali, MC-DIS-2-01).
   window.GGB_CREA = { creaTavola, finestre, polare, distanza, direzione, oltre, xy, num };
