@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Segui il joule – L'energia in 5 esperimenti 3D</title>
+<meta name="description" content="Un libro 3D interattivo sull'energia per la scuola secondaria di primo grado: prevedi, prova, dimostra. ProfTecnologIA.">
+<script>if (!/(\/|\.html?)$/.test(location.pathname)) location.replace(location.pathname + '/' + location.search + location.hash);</script>
+<style>
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:400;font-display:swap;src:url(../lab/_fonts/atkinson-hyperlegible-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Atkinson Hyperlegible';font-style:normal;font-weight:700;font-display:swap;src:url(../lab/_fonts/atkinson-hyperlegible-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/fraunces-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/fraunces-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/caveat-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Caveat';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/caveat-latin-700-normal.woff2) format('woff2')}
+:root{
+  --navy:#0D3C78; --ink:#14325e; --azzurro:#1E88E5;
+  --pot:#1E88E5; --cin:#F08A24; --cal:#C2412D; --ele:#D9A514; --luce:#E9B824;
+  --paper:#fbf6ea; --paper2:#f3ead6; --desk:#d8cdb8; --desk2:#c9bca3;
+  --muted:#5b6475; --ok:#2e8b57;
+  --serif:"Fraunces", Georgia, serif; --sans:"Atkinson Hyperlegible", system-ui, sans-serif; --hand:"Caveat", cursive;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{
+  font-family:var(--sans); color:#1d2433; font-size:16px; line-height:1.5;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.45), transparent 60%),
+    repeating-linear-gradient(90deg, rgba(0,0,0,.018) 0 2px, transparent 2px 9px),
+    linear-gradient(180deg,var(--desk),var(--desk2));
+  min-height:100vh;
+}
+button{font:inherit;cursor:pointer}
+a{color:var(--navy)}
+
+/* ---------- barra in alto ---------- */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1320px;margin:0 auto;padding:14px 20px 6px}
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand h1{font-family:var(--serif);font-weight:700;font-size:clamp(22px,2.6vw,30px);margin:0;color:var(--navy);letter-spacing:-.01em}
+.brand h1 em{font-style:normal;color:var(--cin)}
+.brand p{margin:0;color:var(--muted);font-size:14px}
+.stamps-bar{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.stamps-bar .dot{width:22px;height:22px;border-radius:50%;border:1.5px dashed #9aa3b3;display:grid;place-items:center;font-size:11px;font-weight:700;color:#9aa3b3;background:transparent}
+.stamps-bar .dot.on{border:2px solid var(--cal);color:var(--cal);background:rgba(194,65,45,.08);transform:rotate(-10deg)}
+
+/* ---------- libro ---------- */
+.desk{max-width:1320px;margin:0 auto;padding:6px 20px 30px}
+.book{position:relative;display:grid;grid-template-columns:minmax(330px,0.82fr) 1.18fr;
+  background:var(--paper);border-radius:6px 6px 10px 10px;
+  box-shadow:0 1px 0 #fff inset, 0 18px 40px rgba(40,30,10,.25), 0 3px 0 #e6dcc4, 0 6px 0 #ddd1b6, 0 9px 0 #d3c6a8;
+  min-height:640px}
+.book::after{ /* piega centrale */
+  content:"";position:absolute;top:0;bottom:0;left:calc(41% - 18px);width:36px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(80,60,20,.10) 45%,rgba(80,60,20,.18) 50%,rgba(80,60,20,.08) 55%,transparent)}
+.page{position:relative;padding:30px 34px 28px}
+.page.left{background:linear-gradient(90deg,var(--paper) 85%,var(--paper2));border-radius:6px 0 0 10px}
+.page.right{background:linear-gradient(270deg,var(--paper) 85%,var(--paper2));border-radius:0 6px 10px 0;display:flex;flex-direction:column;padding-left:30px}
+.pagenum{position:absolute;bottom:10px;font-family:var(--serif);font-size:12px;color:#9a8f78}
+.page.left .pagenum{left:34px}.page.right .pagenum{right:30px}
+
+.turn{animation:turn .55s cubic-bezier(.2,.7,.2,1)}
+@keyframes turn{from{opacity:0;transform:perspective(1200px) rotateY(10deg) translateX(14px);transform-origin:right center}to{opacity:1;transform:none}}
+
+.kicker{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--cin);font-weight:700;margin:0 0 4px}
+.page h2{font-family:var(--serif);font-weight:700;font-size:clamp(24px,2.4vw,31px);line-height:1.15;color:var(--navy);margin:0 0 10px}
+.intro{margin:0 0 16px}
+.intro b{color:var(--navy)}
+
+.step{border-top:1.5px solid #e2d6bb;padding:12px 0 12px;position:relative}
+.step h3{font-family:var(--serif);font-size:18px;margin:0 0 6px;display:flex;align-items:center;gap:10px;color:var(--ink)}
+.step h3 .n{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:14px;font-family:var(--sans)}
+.step.done h3 .n{background:var(--ok)}
+.step.locked{opacity:.55}
+.step p{margin:0 0 8px}
+.opts{display:grid;gap:7px;margin-top:6px}
+.opt{text-align:left;background:#fff;border:1.5px solid #d9cdb2;border-radius:10px;padding:9px 12px;display:flex;gap:10px;align-items:flex-start;transition:border-color .15s, background .15s}
+.opt:hover{border-color:var(--azzurro)}
+.opt .l{font-weight:700;color:var(--navy);min-width:18px}
+.opt[aria-pressed="true"]{border-color:var(--navy);background:#eaf2fc;box-shadow:0 0 0 2px rgba(13,60,120,.15)}
+.opt:disabled{cursor:default;color:inherit}
+.opt.right-ans{border-color:var(--ok);background:#eaf6ef}
+.opt.wrong-ans{border-color:#d9cdb2;opacity:.7}
+.note-hand{font-family:var(--hand);font-size:21px;color:var(--cal);line-height:1.1;margin:6px 0 0}
+.status{font-size:14px;color:var(--muted);margin-top:4px}
+.status.ok{color:var(--ok);font-weight:700}
+
+/* aletta */
+.flap{position:relative;margin-top:6px;perspective:1100px;min-height:120px}
+.flap-content{background:#fff;border:1.5px solid #d9cdb2;border-radius:10px;padding:14px 16px;visibility:hidden}
+.flap.open .flap-content{visibility:visible}
+.flap-content .verdict{font-weight:700;color:var(--navy);font-size:17px;margin:0 0 6px}
+.flap-content p{margin:0 0 8px}
+.formula{font-family:var(--serif);background:#f6f1e4;border-left:4px solid var(--azzurro);padding:8px 12px;margin:8px 0;border-radius:0 8px 8px 0;font-size:16px}
+.flap-cover{position:absolute;inset:0;border-radius:10px;transform-origin:top center;transition:transform .9s cubic-bezier(.3,.8,.25,1), box-shadow .9s;
+  background:repeating-linear-gradient(135deg,#f2e3c2 0 10px,#efdcb6 10px 20px);border:1.5px solid #cdb98f;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--ink);text-align:center;padding:12px;
+  box-shadow:0 6px 12px rgba(60,40,0,.18);backface-visibility:hidden;z-index:2;width:100%}
+.flap-cover .big{font-family:var(--hand);font-size:28px;font-weight:700;color:var(--navy)}
+.flap-cover .small{font-size:14px;color:var(--muted)}
+.flap-cover:disabled{cursor:not-allowed}
+.flap-cover:not(:disabled):hover{transform:rotateX(-12deg)}
+.flap.open .flap-cover{transform:rotateX(-178deg);box-shadow:none;pointer-events:none}
+
+/* timbro */
+.stamp{position:absolute;right:4px;top:-46px;width:104px;height:104px;border-radius:50%;border:4px double var(--cal);color:var(--cal);
+  display:grid;place-items:center;text-align:center;font-weight:700;letter-spacing:.06em;font-size:13px;line-height:1.15;transform:rotate(-14deg);
+  background:rgba(255,255,255,.35);mix-blend-mode:multiply;opacity:.88;pointer-events:none;z-index:3}
+.stamp .s1{font-family:var(--serif);font-size:19px;letter-spacing:.02em}
+.stamp.fresh{animation:stamp .55s cubic-bezier(.2,1.6,.4,1)}
+@keyframes stamp{0%{transform:rotate(-14deg) scale(2.6);opacity:0}60%{opacity:.95}100%{transform:rotate(-14deg) scale(1);opacity:.88}}
+
+details.teacher{margin-top:10px;border-top:1.5px dashed #d9cdb2;padding-top:8px;font-size:14px;color:#3b4252}
+details.teacher summary{cursor:pointer;color:var(--navy);font-weight:700}
+details.teacher ul{margin:6px 0 0;padding-left:20px}
+
+/* ---------- scena 3D ---------- */
+.stage{position:relative;flex:none;aspect-ratio:4/3;max-height:66vh;min-height:300px;border-radius:8px;overflow:hidden;
+  background:
+    radial-gradient(ellipse at 50% 85%, rgba(13,60,120,.06), transparent 60%),
+    repeating-linear-gradient(0deg, transparent 0 27px, rgba(30,136,229,.07) 27px 28px)}
+.stage canvas{display:block;width:100%;height:100%;position:absolute;inset:0;outline:none}
+.labels{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.lbl{position:absolute;left:0;top:0;font-family:var(--hand);font-size:20px;font-weight:700;color:var(--ink);white-space:nowrap;
+  transform:translate(-50%,-50%);text-shadow:0 0 3px var(--paper),0 0 3px var(--paper),0 0 6px var(--paper)}
+.lbl.small{font-size:17px}
+.lbl.val{font-family:var(--sans);font-size:13px;font-weight:700;background:rgba(255,255,255,.85);border:1px solid #d9cdb2;border-radius:6px;padding:1px 6px;text-shadow:none}
+.hint{position:absolute;right:10px;top:8px;font-size:12px;color:var(--muted);background:rgba(251,246,234,.85);padding:2px 8px;border-radius:20px}
+.rot-btns{position:absolute;right:10px;bottom:10px;display:none;gap:6px}
+.rot-btns button{width:38px;height:38px;border-radius:50%;border:1.5px solid #cdbf9f;background:#fff;font-size:18px}
+.alt3d{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+.controls{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;padding:12px 2px 6px}
+.ctl{display:flex;align-items:center;gap:8px;font-size:14px}
+.ctl label{font-weight:700;color:var(--ink)}
+.ctl output{font-weight:700;min-width:58px;color:var(--navy)}
+input[type=range]{accent-color:var(--navy);width:150px}
+.btn{background:var(--navy);color:#fff;border:0;border-radius:10px;padding:9px 16px;font-weight:700;box-shadow:0 2px 0 #072650}
+.btn:hover{background:#12509e}
+.btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--navy);box-shadow:none}
+.btn:disabled{opacity:.5;cursor:default}
+.seg{display:inline-flex;border:1.5px solid var(--navy);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:#fff;color:var(--navy);padding:7px 12px;font-weight:700;font-size:14px}
+.seg button+button{border-left:1.5px solid var(--navy)}
+.seg button[aria-pressed="true"]{background:var(--navy);color:#fff}
+
+.records{font-size:14px;width:100%;}
+.records table{border-collapse:collapse;width:100%;max-width:520px}
+.records th,.records td{border-bottom:1px solid #e2d6bb;padding:3px 8px;text-align:left}
+.records th{font-weight:700;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+.records caption{text-align:left;font-weight:700;color:var(--ink);padding-bottom:2px}
+
+/* conto dei joule */
+.ledger{padding:6px 2px 0}
+.ledger h4{margin:0 0 6px;font-family:var(--serif);font-size:16px;color:var(--ink);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.ledger h4 span{font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:400}
+.lrow{margin-bottom:8px}
+.lrow .rname{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.bar{display:flex;height:24px;border-radius:6px;overflow:hidden;border:1.5px solid var(--ink);background:#fff}
+.bar i{display:block;height:100%;transition:width .12s linear}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:13px;margin-top:4px}
+.legend b{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px;border:1px solid rgba(0,0,0,.25)}
+.legend span{white-space:nowrap}
+
+.chain{display:flex;gap:4px;align-items:center;flex-wrap:wrap;font-size:13px;font-weight:700;margin-top:4px}
+.chain span{padding:3px 9px;border-radius:20px;border:1.5px solid currentColor;opacity:.45;transition:opacity .2s, background .2s}
+.chain span.on{opacity:1;background:rgba(255,255,255,.9)}
+.chain i{color:#9a8f78;font-style:normal}
+
+/* ---------- segnalibri ---------- */
+.ribbons{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:18px auto 0}
+.ribbon{border:0;background:#fff;color:var(--navy);padding:8px 14px 10px;border-radius:4px 4px 0 0;font-weight:700;font-size:14px;position:relative;
+  box-shadow:0 2px 6px rgba(0,0,0,.12);clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%)}
+.ribbon[aria-current="true"]{background:var(--navy);color:#fff}
+.ribbon .ok{color:var(--cal)}
+.ribbon[aria-current="true"] .ok{color:#ffd1c4}
+.foot{text-align:center;color:#6f6656;font-size:13px;margin:14px auto 0;max-width:900px;padding:0 16px}
+
+/* ---------- copertina ---------- */
+.cover{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:rgba(60,48,28,.45);backdrop-filter:blur(2px);padding:18px}
+.cover[hidden]{display:none}
+.cover-card{width:min(560px,100%);background:linear-gradient(135deg,#123f7d,#0b2d5c);color:#fff;border-radius:6px 14px 14px 6px;padding:38px 36px 30px;
+  box-shadow:-10px 0 0 #082246 inset, 0 30px 60px rgba(0,0,0,.4);position:relative}
+.cover-card .tag{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9fc6f2}
+.cover-card h2{font-family:var(--serif);font-size:clamp(38px,6vw,54px);line-height:1;margin:10px 0 12px}
+.cover-card h2 em{font-style:normal;color:#ffb36b}
+.cover-card p{color:#dbe7f7;margin:0 0 14px}
+.cover-card ol{margin:0 0 20px;padding-left:22px;color:#dbe7f7}
+.cover-card .how{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.cover-card .how span{border:1.5px solid #9fc6f2;border-radius:20px;padding:3px 12px;font-weight:700;font-size:14px}
+.cover-card .btn{background:#ffb36b;color:#0b2d5c;box-shadow:0 3px 0 #c77d34;font-size:17px;padding:11px 22px}
+.cover-card .by{font-size:12px;color:#9fc6f2;margin-top:18px}
+
+.final{background:#fff;border:2px solid var(--cal);border-radius:12px;padding:12px 14px;margin-top:12px}
+.final b{color:var(--cal)}
+
+/* ---------- schermi piccoli ---------- */
+@media (max-width:900px){
+  .book{grid-template-columns:1fr}
+  .book::after{display:none}
+  .page.right{order:-1;border-radius:6px 6px 0 0;padding:16px 14px 10px}
+  .page.left{border-radius:0 0 10px 10px;padding:20px 18px 34px}
+  .stage{aspect-ratio:16/11;max-height:60vh;min-height:0}
+  .lbl{font-size:16px}.lbl.small{font-size:14px}.lbl.val{font-size:11px}
+  .pagenum{display:none}
+  .hint{display:none}
+  .stamp{width:96px;height:96px;font-size:11px}
+  .stamp .s1{font-size:16px}
+  .top{padding:10px 14px 4px}
+  .desk{padding:4px 10px 24px}
+  .brand p{display:none}
+}
+@media (pointer:coarse){ .rot-btns{display:flex} .hint{display:none} }
+@media (prefers-reduced-motion:reduce){ .turn,.stamp.fresh{animation:none} .flap-cover{transition:none} }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three.module.min.js",
+  "three/addons/controls/OrbitControls.js": "./vendor/OrbitControls.js"
+} }
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <h1>Segui il <em>joule</em></h1>
+    <p>L'energia in 5 esperimenti 3D · Tecnologia, scuola secondaria di primo grado</p>
+  </div>
+  <div class="stamps-bar" aria-label="Timbri raccolti"><span id="stampCount">Timbri 0/5</span><span id="stampDots"></span></div>
+</header>
+
+<main class="desk">
+  <div class="book">
+    <section class="page left" id="textPage" aria-live="polite"></section>
+    <section class="page right">
+      <div class="stage" id="stage">
+        <div class="labels" id="labels"></div>
+        <div class="hint">Trascina per girare il modello</div>
+        <div class="rot-btns"><button id="rotL" aria-label="Gira a sinistra">↺</button><button id="rotR" aria-label="Gira a destra">↻</button></div>
+        <p class="alt3d" id="alt3d"></p>
+      </div>
+      <div class="controls" id="controls"></div>
+      <div class="ledger" id="ledger"></div>
+      <span class="pagenum" id="pnR"></span>
+    </section>
+  </div>
+  <nav class="ribbons" id="ribbons" aria-label="Lezioni"></nav>
+  <p class="foot"><a href="/">← Torna al libro</a> · Un libro 3D di <a href="https://proftecnologia.it">ProfTecnologIA</a> · Ing. Antonio Scaramuzzino. I modelli sono semplificati: le note per il docente in fondo a ogni lezione dicono dove e perché.</p>
+</main>
+
+<div class="cover" id="cover" hidden>
+  <div class="cover-card">
+    <div class="tag">Tecnologia · Energia</div>
+    <h2>Segui il <em>joule</em></h2>
+    <p>Cinque esperimenti per scoprire dove va l'energia: dal carrello sulla rampa alla centrale idroelettrica. In ogni lezione fai tre cose:</p>
+    <div class="how"><span>1 · Prevedi</span><span>2 · Prova</span><span>3 · Dimostra</span></div>
+    <p>Quando hai provato, alza l'aletta per vedere se avevi ragione e guadagna il timbro della lezione.</p>
+    <button class="btn" id="openBook">Apri il libro</button>
+    <div class="by">ProfTecnologIA · Il joule (J) è l'unità di misura dell'energia.</div>
+  </div>
+</div>
+
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+
+/* =========================================================
+   CONTENUTI
+   ========================================================= */
+const LESSONS = [
+{
+  id:"lezione-1", short:"Altezza e velocità",
+  title:"Altezza e velocità",
+  intro:"Un carrello sta in cima a una rampa. Lassù in alto ha <b>energia potenziale gravitazionale</b>: energia che dipende dall'altezza. Quando scende, quell'energia diventa <b>energia cinetica</b>, l'energia del movimento. Questa rampa non ha attrito: è un caso ideale, come se il carrello scivolasse sul ghiaccio.",
+  question:"Se lasci il carrello da un'altezza doppia, in fondo alla discesa la sua velocità sarà…",
+  options:["il doppio","più alta, ma non il doppio","la stessa: la rampa è sempre quella"],
+  correct:1,
+  tryText:"Scegli un'altezza con il cursore e premi <b>Lascia andare</b>. Poi prova con un'altezza doppia (per esempio 1 m e poi 2 m) e confronta le velocità nella tabella.",
+  tryNeed:"Prova almeno due altezze diverse.",
+  verdict:"Più alta, ma non il doppio.",
+  explain:[
+    "Con il doppio dell'altezza il carrello ha il doppio dell'energia potenziale, e in fondo avrà il doppio dell'energia cinetica. Ma l'energia cinetica cresce con il <b>quadrato</b> della velocità: per avere il doppio dell'energia basta una velocità circa 1,4 volte più alta.",
+    "Da 1 m il carrello arriva in fondo a circa 4,4 m/s; da 2 m a circa 6,3 m/s.",
+    "Guarda anche la barra: la somma di energia potenziale e cinetica non cambia mai. Per questo, senza attrito, il carrello risale dall'altra parte fino all'altezza da cui era partito."
+  ],
+  formula:"E<sub>p</sub> = m · g · h &nbsp;&nbsp;&nbsp; E<sub>c</sub> = ½ · m · v²",
+  teacher:[
+    "Modello ideale senza attrito; il carrello scivola, quindi non si conta l'energia di rotazione delle ruote.",
+    "Massa 1 kg, g = 9,8 m/s²: l'energia potenziale in joule vale circa 9,8 × h.",
+    "La previsione «il doppio» è l'errore più frequente: aiuta a distinguere energia e velocità e prepara la lezione 3."
+  ]
+},
+{
+  id:"lezione-2", short:"La palla che rimbalza",
+  title:"Perché la palla smette di rimbalzare?",
+  intro:"Lasci cadere una palla da 2 metri. Rimbalza, ma ogni volta un po' più in basso, finché si ferma. Eppure l'energia non si può distruggere. E allora dove va?",
+  question:"L'energia che la palla perde a ogni rimbalzo…",
+  options:["sparisce: l'energia si consuma","diventa calore e suono, nella palla, nel pavimento e nell'aria","resta nascosta nella palla e prima o poi la fa ripartire"],
+  correct:1,
+  tryText:"Scegli una palla e premi <b>Lascia cadere</b>. Prova almeno due palle diverse e guarda la barra: quale colore cresce a ogni rimbalzo?",
+  tryNeed:"Fai cadere almeno due palle diverse.",
+  verdict:"Diventa calore e suono.",
+  explain:[
+    "A ogni urto la palla e il pavimento si deformano e si scaldano un pochino; il «toc» che senti è energia che se ne va nell'aria come suono.",
+    "La superpalla perde poca energia a ogni urto e risale molto. La plastilina si schiaccia e non torna come prima: quasi tutta la sua energia diventa subito calore.",
+    "Il totale nella barra resta sempre lo stesso. Cambia solo il modo in cui l'energia è distribuita."
+  ],
+  formula:"energia di partenza = potenziale + cinetica + calore e suono",
+  teacher:[
+    "Le palle hanno tutte, per ipotesi, massa 100 g: così si confrontano a parità di energia iniziale (circa 2 J).",
+    "Ogni rimbalzo risale a una frazione fissa dell'altezza precedente: circa 0,8 per la superpalla, 0,55 per la pallina da tennis. Sono valori indicativi: dipendono da palla, pavimento e temperatura.",
+    "Il calore prodotto è piccolissimo e non si avverte al tatto: è il punto da discutere in classe."
+  ]
+},
+{
+  id:"lezione-3", short:"La centrale idroelettrica",
+  title:"Dall'acqua del lago alla lampadina",
+  intro:"L'acqua di un lago di montagna ha energia potenziale perché sta in alto. Scende in una condotta forzata e acquista velocità (energia cinetica), fa girare una <b>turbina</b>, e la turbina fa girare l'<b>alternatore</b>, che produce energia elettrica. Il dislivello tra il lago e la turbina si chiama <b>salto</b>.",
+  question:"Con la stessa quantità d'acqua ogni secondo, se raddoppi il salto la potenza elettrica…",
+  options:["raddoppia","diventa quattro volte più grande","resta uguale: l'acqua è sempre la stessa"],
+  correct:0,
+  tryText:"Apri la valvola, poi cambia il salto: prova per esempio 40 m e poi 80 m, con la stessa quantità d'acqua al secondo. Leggi la potenza nella tabella.",
+  tryNeed:"Prova almeno due salti diversi con la valvola aperta.",
+  verdict:"Raddoppia.",
+  explain:[
+    "Ogni litro d'acqua porta con sé un'energia che dipende dall'altezza da cui scende: con il doppio del salto, ogni secondo arriva alla turbina il doppio dell'energia.",
+    "Ricordi la lezione 1? L'acqua arriva più veloce, ma non al doppio della velocità: è l'<b>energia</b> che raddoppia.",
+    "Non tutta diventa elettrica. In una grande centrale circa 9 joule su 10 diventano energia elettrica; gli altri si disperdono come calore negli attriti dell'acqua nella condotta, della turbina e dell'alternatore."
+  ],
+  formula:"potenza (W) ≈ 9,8 × litri al secondo × salto (m) × 0,9<br><small>1 kW = 1 kJ ogni secondo</small>",
+  teacher:[
+    "Portata massima ipotetica di 2000 litri al secondo (2 m³/s). Nel modello la valvola fissa i litri al secondo: nella realtà, a parità di apertura, un salto maggiore fa passare più acqua.", "Rendimento complessivo fisso al 90%: i grandi impianti stanno all'incirca tra l'85 e il 90%.",
+    "Il confronto con le lampadine LED da 10 W serve solo a dare un'idea della potenza.",
+    "Catena delle trasformazioni: potenziale → cinetica dell'acqua → rotazione della turbina → elettrica. Si collega all'esplorazione «La centrale idroelettrica» del libro."
+  ]
+},
+{
+  id:"lezione-4", short:"Il rendimento",
+  title:"Due lampadine, 100 joule ciascuna",
+  intro:"Una lampadina serve a fare luce. Ma mentre fa luce si scalda anche. Il <b>rendimento</b> dice quale parte dell'energia che entra diventa quello che ci serve davvero.",
+  question:"Una lampadina a incandescenza riceve 100 joule. Quanti diventano luce?",
+  options:["circa 90","circa 50","circa 5"],
+  correct:2,
+  tryText:"Accendi le due lampadine. Le particelle gialle che partono dritte sono luce; quelle arancioni che salgono ondeggiando sono calore. Guarda anche i termometri.",
+  tryNeed:"Accendi tutte e due le lampadine.",
+  verdict:"Circa 5.",
+  explain:[
+    "In una lampadina a incandescenza un filo sottilissimo diventa così caldo da brillare: quasi tutta l'energia esce come calore, e solo pochi joule come luce.",
+    "Il LED produce luce in un altro modo e spreca molto meno: con gli stessi 100 joule fa molta più luce, almeno sei volte tanto.",
+    "Per questo nell'Unione Europea le lampadine a incandescenza per la casa sono state tolte gradualmente dalla vendita a partire dal 2009."
+  ],
+  formula:"rendimento = energia utile ÷ energia in ingresso<br>incandescenza: 5 ÷ 100 = 5% &nbsp;·&nbsp; LED: 30 ÷ 100 = 30%",
+  teacher:[
+    "5% e 30% sono ordini di grandezza: il valore reale cambia da modello a modello.",
+    "Il LED non è freddo: anche lui trasforma in calore la maggior parte dell'energia, ma molta meno a parità di luce.",
+    "Spunto: leggere l'etichetta energetica di una lampadina e confrontare watt e lumen."
+  ]
+},
+{
+  id:"lezione-5", short:"La conservazione",
+  title:"Segui il joule fino in fondo",
+  intro:"Un pendolo oscilla avanti e indietro: energia potenziale in alto, energia cinetica in basso. Ma l'aria lo frena un po' a ogni passaggio, e alla fine si ferma.",
+  question:"Quando il pendolo si è fermato, l'energia totale (pendolo, aria e perno insieme)…",
+  options:["è diminuita: si è consumata","è la stessa di prima: ora è calore nell'aria e nel perno","è zero, perché il pendolo è fermo"],
+  correct:1,
+  tryText:"Scegli quanto frena l'aria, premi <b>Lascia andare</b> e segui la barra finché il pendolo quasi si ferma. Se vuoi, accelera il tempo.",
+  tryNeed:"Aspetta che almeno metà dell'energia sia diventata calore.",
+  verdict:"È la stessa di prima.",
+  explain:[
+    "L'energia non si crea e non si distrugge: si trasforma. È il <b>principio di conservazione dell'energia</b>.",
+    "A ogni passaggio il pendolo ha spinto l'aria e ha sfregato nel punto in cui è appeso: ha scaldato un pochino l'aria e il perno. Quel calore è così sparpagliato che non lo senti e non si può più usare per far ripartire il pendolo.",
+    "Quando diciamo che l'energia «si consuma» intendiamo proprio questo: diventa calore disperso, che non riusciamo più a usare."
+  ],
+  formula:"potenziale + cinetica + calore = sempre lo stesso totale",
+  teacher:[
+    "Modello con frenata proporzionale alla velocità: semplice, ma sufficiente a mostrare la conservazione. Nel modello tutta la frenata è attribuita all'aria.",
+    "Il «calore» è un bilancio per differenza: si ricava da ciò che manca a potenziale e cinetica rispetto all'energia iniziale.",
+    "Collegamento con la lezione 4: il calore disperso è la parte non utile in ogni trasformazione."
+  ]
+}];
+
+/* =========================================================
+   STATO
+   ========================================================= */
+const STORE = "segui-il-joule:v1";
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(STORE) || "{}") || {}; } catch(e) { saved = {}; }
+const state = LESSONS.map((L,i)=>Object.assign({pick:null, tested:false, open:false}, saved[L.id]||{}));
+function persist(){ try{ const o={}; LESSONS.forEach((L,i)=>o[L.id]=state[i]); localStorage.setItem(STORE, JSON.stringify(o)); }catch(e){} }
+let cur = 0;
+
+const fmt = (x, d=1) => x.toLocaleString("it-IT",{minimumFractionDigits:d, maximumFractionDigits:d});
+const fmt0 = x => Math.round(x).toLocaleString("it-IT");
+
+/* =========================================================
+   MOTORE 3D
+   ========================================================= */
+const stage = document.getElementById("stage");
+const labelsEl = document.getElementById("labels");
+const renderer = new THREE.WebGLRenderer({ antialias:true, alpha:true });
+renderer.setPixelRatio(Math.min(2, window.devicePixelRatio||1));
+renderer.setClearColor(0x000000, 0);
+stage.prepend(renderer.domElement);
+renderer.domElement.setAttribute("aria-hidden","true");
+
+const scene = new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xfffaf0, 0xb8a888, 2.1));
+const sun = new THREE.DirectionalLight(0xffffff, 1.4); sun.position.set(4,8,6); scene.add(sun);
+const camera = new THREE.PerspectiveCamera(36, 1, 0.1, 200);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableZoom = false; controls.enablePan = false; controls.enableDamping = true; controls.dampingFactor = .08;
+controls.minPolarAngle = 0.55; controls.maxPolarAngle = 1.52;
+controls.minAzimuthAngle = -1.1; controls.maxAzimuthAngle = 1.1;
+if (matchMedia("(pointer:coarse)").matches) controls.enabled = false;
+const rotate = a => { const off = camera.position.clone().sub(controls.target); off.applyAxisAngle(new THREE.Vector3(0,1,0), a); camera.position.copy(controls.target).add(off); };
+document.getElementById("rotL").onclick = ()=>rotate(-0.3);
+document.getElementById("rotR").onclick = ()=>rotate(0.3);
+
+const INK = 0x14325e;
+const inkMat = new THREE.LineBasicMaterial({ color:INK });
+const hullMat = new THREE.MeshBasicMaterial({ color:INK, side:THREE.BackSide });
+const PAPER = 0xfbf6ea;
+
+/** oggetto «a inchiostro»: riempimento chiaro + contorni */
+function inked(geom, fill=PAPER, o={}){
+  const g = new THREE.Group();
+  const mat = new THREE.MeshLambertMaterial({ color:fill, transparent:(o.opacity??1)<1, opacity:o.opacity??1, emissive:o.emissive??0x000000 });
+  const m = new THREE.Mesh(geom, mat); g.add(m);
+  if (o.hull){ const h = new THREE.Mesh(geom, hullMat); h.scale.setScalar(o.hull===true?1.06:o.hull); g.add(h); }
+  if (o.edges!==false){ const e = new THREE.LineSegments(new THREE.EdgesGeometry(geom, o.thresh??28), inkMat); g.add(e); }
+  g.userData.mat = mat; return g;
+}
+function line(points, color=INK, dashed=false){
+  const geo = new THREE.BufferGeometry().setFromPoints(points);
+  const mat = dashed ? new THREE.LineDashedMaterial({color, dashSize:.12, gapSize:.08}) : new THREE.LineBasicMaterial({color});
+  const l = new THREE.Line(geo, mat); if (dashed) l.computeLineDistances(); return l;
+}
+function setLine(l, points){ l.geometry.setFromPoints(points); l.geometry.attributes.position.needsUpdate = true; if (l.material.isLineDashedMaterial) l.computeLineDistances(); }
+function shadow(w, d, x=0, z=0){
+  const m = new THREE.Mesh(new THREE.CircleGeometry(1, 40), new THREE.MeshBasicMaterial({ color:0x3a2a10, transparent:true, opacity:.13, depthWrite:false }));
+  m.rotation.x = -Math.PI/2; m.scale.set(w, d, 1); m.position.set(x, .002, z); return m;
+}
+function glowTexture(){
+  const c = document.createElement("canvas"); c.width = c.height = 128; const g = c.getContext("2d");
+  const r = g.createRadialGradient(64,64,0,64,64,64); r.addColorStop(0,"rgba(255,255,255,1)"); r.addColorStop(.25,"rgba(255,255,255,.55)"); r.addColorStop(1,"rgba(255,255,255,0)");
+  g.fillStyle = r; g.fillRect(0,0,128,128); return new THREE.CanvasTexture(c);
+}
+const GLOW = glowTexture();
+
+let labels = [];
+function addLabel(text, getPos, cls=""){ const el = document.createElement("div"); el.className = "lbl "+cls; el.innerHTML = text; labelsEl.appendChild(el); const L = {el, getPos}; labels.push(L); return L; }
+const _v = new THREE.Vector3();
+function placeLabels(w, h){
+  for (const L of labels){
+    const p = L.getPos(); if (!p){ L.el.style.display="none"; continue; }
+    _v.copy(p).project(camera);
+    if (_v.z > 1){ L.el.style.display="none"; continue; }
+    L.el.style.display = "";
+    L.el.style.transform = `translate(${(_v.x+1)/2*w}px, ${(1-_v.y)/2*h}px) translate(-50%,-50%)`;
+  }
+}
+
+/* ---- conto dei joule ---- */
+const ledgerEl = document.getElementById("ledger");
+function makeLedger(title, note, rows, keys){
+  ledgerEl.innerHTML = `<h4>${title}<span>${note}</span></h4>` + rows.map((r,i)=>`<div class="lrow">${r?`<div class="rname">${r}</div>`:""}<div class="bar" id="bar${i}">${keys.map(k=>`<i style="background:${k.color};width:0"></i>`).join("")}</div></div>`).join("")
+    + `<div class="legend" id="legend">${keys.map(k=>`<span><b style="background:${k.color}"></b>${k.label}: <strong data-v>–</strong></span>`).join("")}</div>`;
+  return {
+    set(rowIndex, values, total){
+      const bar = document.getElementById("bar"+rowIndex);
+      values.forEach((v,i)=>{ bar.children[i].style.width = (Math.max(0,v)/total*100)+"%"; });
+    },
+    legend(texts){ ledgerEl.querySelectorAll("[data-v]").forEach((el,i)=>{ if (texts[i]!=null) el.textContent = texts[i]; }); }
+  };
+}
+const C = { pot:"#1E88E5", cin:"#F08A24", cal:"#C2412D", ele:"#D9A514", luce:"#E9B824" };
+
+/* =========================================================
+   LEZIONI 3D
+   ========================================================= */
+const g = 9.8;
+const BUILD = [];
+
+/* ---- 1. Rampa ---- */
+BUILD[0] = (root, ui, done) => {
+  const a = 3/16, X = 4.25, y = x => a*x*x, yp = x => 2*a*x;
+  const curve = new THREE.CatmullRomCurve3(Array.from({length:61},(_,i)=>{ const x=-X+2*X*i/60; return new THREE.Vector3(x, y(x)+0.02, 0); }));
+  for (const z of [-.28,.28]){ const t = inked(new THREE.TubeGeometry(curve, 160, .045, 8), 0x5d7fae, {edges:false}); t.position.z = z; root.add(t); }
+  for (let i=0;i<=34;i++){ const x=-X+2*X*i/34; const s = inked(new THREE.BoxGeometry(.08,.05,.75), 0xe8dcc0); s.position.set(x,y(x)-.01,0); s.rotation.z=Math.atan(yp(x)); root.add(s); }
+  for (const x of [-3.6,-2.6,-1.6,1.6,2.6,3.6]){ for (const z of [-.28,.28]){ const h=y(x); const p=inked(new THREE.CylinderGeometry(.035,.035,h,6),0xe8dcc0,{thresh:60}); p.position.set(x,h/2,z); root.add(p);} }
+  root.add(line([new THREE.Vector3(-5,0,-.6),new THREE.Vector3(5,0,-.6)]), line([new THREE.Vector3(-5,0,.6),new THREE.Vector3(5,0,.6)]));
+  root.add(shadow(4.6,.8));
+  // carrello
+  const cart = new THREE.Group();
+  const body = inked(new THREE.BoxGeometry(.62,.26,.5), 0xf7c08a); body.position.y=.22; cart.add(body);
+  for (const sx of [-.2,.2]) for (const sz of [-.28,.28]){ const w=inked(new THREE.CylinderGeometry(.09,.09,.06,14),0x2b4a77,{thresh:40}); w.rotation.x=Math.PI/2; w.position.set(sx,.09,sz); cart.add(w); }
+  root.add(cart);
+  const hLine = line([new THREE.Vector3(),new THREE.Vector3()], 0x1E88E5, true); root.add(hLine);
+  const startMark = inked(new THREE.SphereGeometry(.06,10,8), 0x1E88E5, {edges:false}); root.add(startMark);
+
+  let h = 2, x = -Math.sqrt(h/a), vx = 0, running = false, vmax = 0, crossed = false, records = [];
+  const place = () => {
+    const s = yp(x), n = Math.hypot(1,s);
+    cart.position.set(x + (-s/n)*.02, y(x) + (1/n)*.02 + .03, 0); cart.rotation.z = Math.atan(s);
+    const x0 = -Math.sqrt(h/a);
+    setLine(hLine,[new THREE.Vector3(x0,0,.62),new THREE.Vector3(x0,h,.62)]); startMark.position.set(x0,h,.62);
+  };
+  addLabel("", ()=>new THREE.Vector3(-Math.sqrt(h/a)-.7, h*.45, .62), "val").el.id="hlab";
+  const vLab = addLabel("", ()=>cart.position.clone().add(new THREE.Vector3(0,.75,0)), "val");
+  addLabel("energia potenziale", ()=>new THREE.Vector3(-3.4,3.6,0), "small");
+  addLabel("energia cinetica", ()=>new THREE.Vector3(0,-.45,.6), "small");
+
+  ui.innerHTML = `<div class="ctl"><label for="hS">Altezza</label><input type="range" id="hS" min="0.5" max="3" step="0.1" value="2"><output id="hO">2,0 m</output></div>
+    <button class="btn" id="go">Lascia andare</button><button class="btn ghost" id="stop">Rimetti in cima</button>
+    <div class="records" id="rec"></div>`;
+  const hS=ui.querySelector("#hS"), hO=ui.querySelector("#hO"), rec=ui.querySelector("#rec");
+  const reset = () => { running=false; x=-Math.sqrt(h/a); vx=0; vmax=0; crossed=false; place(); };
+  hS.oninput = () => { h=+hS.value; hO.textContent = fmt(h)+" m"; reset(); };
+  ui.querySelector("#go").onclick = () => { reset(); running = true; };
+  ui.querySelector("#stop").onclick = reset;
+  const drawRec = () => {
+    if (!records.length){ rec.innerHTML = `<p class="status">La tabella si riempie quando il carrello passa nel punto più basso.</p>`; return; }
+    rec.innerHTML = `<table><caption>Le tue prove</caption><tr><th>Altezza</th><th>Energia potenziale in cima</th><th>Velocità in fondo</th></tr>${records.map(r=>`<tr><td>${fmt(r.h)} m</td><td>${fmt(g*r.h)} J</td><td>${fmt(r.v)} m/s (${fmt0(r.v*3.6)} km/h)</td></tr>`).join("")}</table>`;
+  };
+  drawRec();
+  const led = makeLedger("Il conto dei joule", "carrello da 1 kg, senza attrito", [""], [{label:"potenziale",color:C.pot},{label:"cinetica",color:C.cin}]);
+  reset();
+  return {
+    update(dt){
+      if (running){
+        const n=20, d=dt/n;
+        for (let i=0;i<n;i++){ const s=yp(x); const ax = -(g*s + s*2*a*vx*vx)/(1+s*s); vx += ax*d; const px=x; x += vx*d;
+          if (!crossed && px<0 && x>=0){ crossed=true; const r={h, v:Math.sqrt(2*g*h)}; records = records.filter(q=>Math.abs(q.h-h)>1e-6); records.push(r); records.sort((p,q)=>p.h-q.h); drawRec();
+            if (new Set(records.map(q=>q.h.toFixed(1))).size>=2) done(); } }
+        // correzione dell'energia (evita la deriva numerica)
+        const s=yp(x), Ek=g*(h-y(x)); if (Ek>0){ const vt=Math.sqrt(2*Ek); vx = Math.sign(vx||1)*vt/Math.hypot(1,s); }
+        place();
+      }
+      const yy = y(x), ep = g*Math.min(yy,h), ec = Math.max(0, g*h-ep);
+      led.set(0,[ep,ec], g*h); led.legend([fmt(ep)+" J", fmt(ec)+" J"]);
+      const v = Math.sqrt(2*ec);
+      vLab.el.textContent = fmt(v)+" m/s";
+      document.getElementById("hlab").textContent = "h = "+fmt(h)+" m";
+    },
+    cam:{ pos:[0.4,2.7,10.6], target:[0,1.45,0], w:10, h:4.6 },
+    alt:"Una rampa a forma di U con un carrello. Una linea tratteggiata segna l'altezza da cui parte il carrello."
+  };
+};
+
+/* ---- 2. Rimbalzi ---- */
+BUILD[1] = (root, ui, done) => {
+  const H = 2, m = .1, E0 = m*g*H;
+  const BALLS = {
+    superpalla:{ name:"superpalla", r:.8, fill:0x9cc7f0 },
+    tennis:{ name:"pallina da tennis", r:.55, fill:0xdfe88a },
+    plastilina:{ name:"palla di plastilina", r:0, fill:0xe9a98a }
+  };
+  // pavimento e metro
+  const floor = inked(new THREE.BoxGeometry(3.2,.12,1.6), 0xe6dac0); floor.position.y=-.06; root.add(floor);
+  const heat = new THREE.Mesh(new THREE.CircleGeometry(.5,32), new THREE.MeshBasicMaterial({color:0xC2412D, transparent:true, opacity:0, depthWrite:false}));
+  heat.rotation.x=-Math.PI/2; heat.position.y=.004; root.add(heat);
+  const ruler = inked(new THREE.BoxGeometry(.16,2.2,.04), 0xf6e7b8); ruler.position.set(-.85,1.1,-.3); root.add(ruler);
+  for (let i=0;i<=20;i++){ const yy=i/10, w = i%5===0?.16:.08; root.add(line([new THREE.Vector3(-.93,yy,-.27),new THREE.Vector3(-.93+w,yy,-.27)])); }
+  [0,.5,1,1.5,2].forEach(v=>addLabel(fmt(v)+" m", ()=>new THREE.Vector3(-1.25,v,-.3), "small"));
+  const ballG = new THREE.SphereGeometry(.16, 28, 18);
+  const ball = inked(ballG, 0x9cc7f0, {edges:false, hull:1.09}); root.add(ball);
+  const sh = shadow(.2,.2); root.add(sh);
+  const peak = line([new THREE.Vector3(),new THREE.Vector3()], 0x1E88E5, true); root.add(peak);
+  addLabel("calore e suono", ()=> heatOn>.05 ? new THREE.Vector3(.95,.15,.4) : null, "small");
+
+  let kind = "superpalla", yb = H, vy = 0, running=false, lost = 0, heatOn = 0, bounces = [], tried = new Set(), squash = 1, lastPeak = H;
+  ui.innerHTML = `<div class="seg" role="group" aria-label="Scegli la palla">${Object.entries(BALLS).map(([k,b])=>`<button data-k="${k}" aria-pressed="${k===kind}">${b.name}</button>`).join("")}</div>
+    <button class="btn" id="go">Lascia cadere</button>
+    <div class="ctl"><label><input type="checkbox" id="slow"> al rallentatore</label></div>
+    <div class="records" id="rec"></div>`;
+  const rec = ui.querySelector("#rec");
+  const drawRec = () => { rec.innerHTML = bounces.length ? `<table><caption>Altezza raggiunta dopo ogni rimbalzo (${BALLS[kind].name})</caption><tr>${bounces.slice(0,6).map((b,i)=>`<td><b>${i+1}°</b> ${fmt(b,2)} m</td>`).join("")}</tr></table>` : `<p class="status">Partenza da 2 m. La tabella mostra le altezze dei rimbalzi.</p>`; };
+  const reset = () => { running=false; yb=H; vy=0; lost=0; bounces=[]; squash=1; lastPeak=H; ball.userData.mat.color.set(BALLS[kind].fill); drawRec(); };
+  ui.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{ kind=b.dataset.k; ui.querySelectorAll(".seg button").forEach(x=>x.setAttribute("aria-pressed", x===b)); reset(); });
+  ui.querySelector("#go").onclick = () => { reset(); running=true; };
+  const led = makeLedger("Il conto dei joule", "palle da 100 g, partenza da 2 m", [""], [{label:"potenziale",color:C.pot},{label:"cinetica",color:C.cin},{label:"calore e suono",color:C.cal}]);
+  reset();
+  return {
+    update(dt){
+      const slow = ui.querySelector("#slow").checked ? .25 : 1;
+      if (running){
+        const n=10, d=dt*slow/n;
+        for (let i=0;i<n && running;i++){
+          vy -= g*d; yb += vy*d;
+          if (yb <= 0 && vy < 0){
+            const r = BALLS[kind].r, before = .5*m*vy*vy;
+            vy = -vy*Math.sqrt(r); yb = 0;
+            const after = .5*m*vy*vy; lost += before-after; heatOn = 1;
+            squash = r===0 ? .55 : .8;
+            const hNext = vy*vy/(2*g); lastPeak = hNext;
+            if (hNext < .004){ lost += after; vy=0; running=false; tried.add(kind); if (tried.size>=2) done(); if (r===0) squash=.55; }
+            else bounces.push(hNext);
+            drawRec();
+          }
+        }
+      }
+      heatOn = Math.max(0, heatOn - dt*.9); heat.material.opacity = .35*heatOn;
+      heat.scale.setScalar(.6+heatOn*.6);
+      if (!running && kind!=="plastilina") squash += (1-squash)*Math.min(1,dt*10);
+      if (running) squash += (1-squash)*Math.min(1,dt*12);
+      ball.scale.set(1/Math.sqrt(squash), squash, 1/Math.sqrt(squash));
+      ball.position.set(0, Math.max(0,yb) + .16*squash, 0);
+      sh.scale.set(.18+.1*(1-Math.min(1,yb/2)), .18+.1*(1-Math.min(1,yb/2)),1);
+      setLine(peak,[new THREE.Vector3(-.75,lastPeak,-.3),new THREE.Vector3(.45,lastPeak,-.3)]);
+      const ep = m*g*Math.max(0,yb), ec = .5*m*vy*vy, q = Math.max(0, E0-ep-ec);
+      led.set(0,[ep,ec,q],E0); led.legend([fmt(ep,2)+" J",fmt(ec,2)+" J",fmt(q,2)+" J"]);
+    },
+    cam:{ pos:[2.2,1.7,5.4], target:[0,1.05,0], w:3.6, h:3.2 },
+    alt:"Una palla sospesa a 2 metri sopra il pavimento, accanto a un metro verticale."
+  };
+};
+
+/* ---- 3. Centrale idroelettrica ---- */
+BUILD[2] = (root, ui, done) => {
+  const QMAX = 2000; // litri al secondo
+  let H = 50, open = 0, records = [];
+  const VS = 1/25; // scala verticale del modello
+  // montagna e lago
+  const mount = inked(new THREE.BoxGeometry(2.6,1,2.2), 0xd9cfb6); root.add(mount);
+  const lake = inked(new THREE.BoxGeometry(2.1,.26,1.7), 0x8fc0ec, {opacity:.85}); root.add(lake);
+  const dam = inked(new THREE.BoxGeometry(.22,.6,2.2), 0xc8c0ae); root.add(dam);
+  const pipe = inked(new THREE.CylinderGeometry(.13,.13,1,16), 0xb7c3d3, {thresh:50}); root.add(pipe);
+  const valve = inked(new THREE.TorusGeometry(.2,.04,8,20), 0xC2412D, {edges:false, hull:1.25}); root.add(valve);
+  // edificio aperto
+  const hx = 1.5;
+  const house = new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(1.7,1.4,1.5)), inkMat); house.position.set(hx,.7,0); root.add(house);
+  const floorP = inked(new THREE.BoxGeometry(1.7,.06,1.5), 0xe6dac0); floorP.position.set(hx,.03,0); root.add(floorP);
+  const roof = inked(new THREE.BoxGeometry(1.8,.08,1.6), 0xc9bca3); roof.position.set(hx,1.44,0); root.add(roof);
+  // turbina (ruota con pale) e alternatore sullo stesso albero
+  const turb = new THREE.Group(); turb.position.set(hx,.62,.35);
+  const hub = inked(new THREE.CylinderGeometry(.12,.12,.2,16), 0x7f97b8, {thresh:40}); hub.rotation.x=Math.PI/2; turb.add(hub);
+  for (let i=0;i<10;i++){ const b=inked(new THREE.BoxGeometry(.05,.34,.16),0xb7c3d3); const an=i/10*Math.PI*2; b.position.set(Math.cos(an)*.3,Math.sin(an)*.3,0); b.rotation.z=an+0.35; turb.add(b); }
+  root.add(turb);
+  const shaft = inked(new THREE.CylinderGeometry(.04,.04,.8,10),0x55657d,{thresh:50}); shaft.rotation.x=Math.PI/2; shaft.position.set(hx,.62,0); root.add(shaft);
+  const gen = new THREE.Group(); gen.position.set(hx,.62,-.38);
+  const genB = inked(new THREE.CylinderGeometry(.34,.34,.42,22),0xe9c45c,{thresh:40}); genB.rotation.x=Math.PI/2; gen.add(genB);
+  const stripe = inked(new THREE.BoxGeometry(.06,.5,.44),0xC2412D); gen.add(stripe);
+  root.add(gen);
+  // fiume a valle
+  const river = inked(new THREE.BoxGeometry(1.6,.05,.5), 0x8fc0ec, {opacity:.85}); river.position.set(hx+.2,.03,1.15); root.add(river);
+  // linea elettrica e paese
+  const wireY = 1.9, poles = [3.3, 4.6];
+  poles.forEach(px=>{ const p=inked(new THREE.CylinderGeometry(.04,.05,wireY,6),0xb79a6e,{thresh:60}); p.position.set(px,wireY/2,0); root.add(p); const c=inked(new THREE.BoxGeometry(.04,.04,.5),0xb79a6e); c.position.set(px,wireY-.05,0); root.add(c); });
+  for (const z of [-.2,.2]) root.add(line([new THREE.Vector3(hx+.85,1.2,z),new THREE.Vector3(3.3,wireY-.05,z),new THREE.Vector3(4.6,wireY-.05,z),new THREE.Vector3(5.6,1.0,z)]));
+  const wins = [];
+  [[5.7,-.5],[6.55,.25],[5.65,.75],[7.2,-.55],[7.35,.55]].forEach(([x,z],i)=>{
+    const hb = inked(new THREE.BoxGeometry(.6,.5,.55),0xf3e7cf); hb.position.set(x,.25,z); root.add(hb);
+    const rs = new THREE.Shape([new THREE.Vector2(-.36,0),new THREE.Vector2(.36,0),new THREE.Vector2(0,.34)]); const rg = new THREE.ExtrudeGeometry(rs,{depth:.62,bevelEnabled:false}); rg.translate(0,0,-.31); const rf = inked(rg,0xc0533f); rf.position.set(x,.5,z); root.add(rf);
+    const w = new THREE.Mesh(new THREE.PlaneGeometry(.16,.16), new THREE.MeshBasicMaterial({color:0x2b3448})); w.position.set(x,.27,z+.281); root.add(w); wins.push(w);
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW, color:0xffcf5a, transparent:true, opacity:0, depthWrite:false, blending:THREE.AdditiveBlending})); sp.position.set(x,.3,z+.35); sp.scale.setScalar(.7); root.add(sp); w.userData.glow=sp;
+  });
+  root.add(shadow(5.5,2.2,1.6,0));
+  // gocce
+  const drops = []; const dropG = new THREE.SphereGeometry(.05,8,6); const dropM = new THREE.MeshBasicMaterial({color:0x1E88E5});
+  for (let i=0;i<26;i++){ const d=new THREE.Mesh(dropG,dropM); d.userData.t=i/26; root.add(d); drops.push(d); }
+  const sparks = []; const sparkM = new THREE.MeshBasicMaterial({color:0xE9B824});
+  for (let i=0;i<14;i++){ const s=new THREE.Mesh(new THREE.SphereGeometry(.045,8,6),sparkM); s.userData.t=i/14; root.add(s); sparks.push(s); }
+  const wirePts = [new THREE.Vector3(hx+.85,1.2,.2),new THREE.Vector3(3.3,wireY-.05,.2),new THREE.Vector3(4.6,wireY-.05,.2),new THREE.Vector3(5.6,1.0,.2)];
+  const wireCurve = new THREE.CatmullRomCurve3(wirePts, false, "catmullrom", 0);
+  let top = new THREE.Vector3(), bottom = new THREE.Vector3(hx-.62,.62,.35);
+  const layout = () => {
+    const hv = H*VS + .2;
+    mount.scale.y = hv; mount.position.set(-3.1, hv/2, 0);
+    lake.position.set(-3.25, hv+.1, 0); dam.position.set(-1.92, hv+.1, 0);
+    top.set(-1.85, hv-.1, .35);
+    const dir = bottom.clone().sub(top), len = dir.length();
+    pipe.scale.set(1,len,1); pipe.position.copy(top).addScaledVector(dir,.5);
+    pipe.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), dir.clone().normalize());
+    valve.position.copy(top).addScaledVector(dir,.12); valve.quaternion.copy(pipe.quaternion); valve.rotateX(Math.PI/2);
+  };
+  addLabel("lago", ()=>lake.position.clone().add(new THREE.Vector3(-.2,.45,0)));
+  addLabel("condotta forzata", ()=>pipe.position.clone().add(new THREE.Vector3(.2,.75,0)), "small");
+  addLabel("turbina", ()=>new THREE.Vector3(hx-.35,-.3,.8), "small");
+  addLabel("alternatore", ()=>new THREE.Vector3(hx+.75,2.05,-.4), "small");
+  addLabel("paese", ()=>new THREE.Vector3(6.5,1.35,0));
+  const salto = line([new THREE.Vector3(),new THREE.Vector3()], 0x1E88E5, true); root.add(salto);
+  const sLab = addLabel("", ()=>new THREE.Vector3(-1.45, (H*VS+.2)/2, 1.25), "val");
+
+  ui.innerHTML = `<div class="ctl"><label for="vS">Valvola</label><input type="range" id="vS" min="0" max="100" step="5" value="0"><output id="vO">chiusa</output></div>
+    <div class="ctl"><label for="hS">Salto</label><input type="range" id="hS" min="20" max="100" step="10" value="50"><output id="hO">50 m</output></div>
+    <div class="chain" aria-label="Catena delle trasformazioni"><span style="color:${C.pot}">potenziale</span><i>→</i><span style="color:${C.cin}">cinetica dell'acqua</span><i>→</i><span style="color:#55657d">rotazione della turbina</span><i>→</i><span style="color:#a77c00">elettrica</span></div>
+    <div class="records" id="rec"></div>`;
+  const vS=ui.querySelector("#vS"), vO=ui.querySelector("#vO"), hS=ui.querySelector("#hS"), hO=ui.querySelector("#hO"), rec=ui.querySelector("#rec");
+  const chain = [...ui.querySelectorAll(".chain span")];
+  const power = () => g*QMAX*open*H*0.9; // W
+  const drawRec = () => { rec.innerHTML = records.length ? `<table><caption>Le tue prove</caption><tr><th>Salto</th><th>Acqua al secondo</th><th>Potenza elettrica</th><th>LED da 10 W accesi</th></tr>${records.map(r=>`<tr><td>${r.H} m</td><td>${fmt0(r.q)} L</td><td>${fmt0(r.P/1000)} kW</td><td>${fmt0(r.P/10)}</td></tr>`).join("")}</table>` : `<p class="status">Apri la valvola: ogni prova finisce nella tabella.</p>`; };
+  const record = () => { if (open<=0) return; const r={H, q:QMAX*open, P:power()}; records = records.filter(x=>!(x.H===r.H && x.q===r.q)); records.push(r); records.sort((a,b)=>a.q-b.q||a.H-b.H); drawRec();
+    const byQ = {}; records.forEach(x=>{ (byQ[x.q] ||= new Set()).add(x.H); }); if (Object.values(byQ).some(s=>s.size>=2)) done(); };
+  vS.oninput = () => { open=+vS.value/100; vO.textContent = open? vS.value+"%" : "chiusa"; };
+  vS.onchange = record;
+  hS.oninput = () => { H=+hS.value; hO.textContent = H+" m"; layout(); };
+  hS.onchange = record;
+  drawRec(); layout();
+  const led = makeLedger("Il conto dei joule, ogni secondo", "rendimento 90%", [""], [{label:"elettrica (utile)",color:C.ele},{label:"calore negli attriti",color:C.cal}]);
+  let ang = 0, phase = 0;
+  return {
+    update(dt, t){
+      const speed = open * Math.sqrt(2*g*H) / 30;
+      ang += dt * open * Math.sqrt(H) * 1.2; turb.rotation.z = -ang; gen.rotation.z = -ang;
+      const dir = bottom.clone().sub(top);
+      drops.forEach(d=>{ d.visible = open>0; d.userData.t = (d.userData.t + dt*speed*2.2)%1; d.position.copy(top).addScaledVector(dir, d.userData.t); });
+      sparks.forEach(s=>{ s.visible = open>0; s.userData.t = (s.userData.t + dt*.5*(open>0?1:0))%1; s.position.copy(wireCurve.getPointAt(s.userData.t)); });
+      const P = power(), frac = P / (g*QMAX*100*.9);
+      wins.forEach(w=>{ const on = Math.min(1, frac*1.6); w.material.color.setRGB(.17+.83*on,.2+.6*on,.28+.1*on); w.userData.glow.material.opacity = on*.9; });
+      if (open>0){ phase = (phase + dt*1.5)%4; chain.forEach((c,i)=>c.classList.toggle("on", i<=Math.floor(phase))); } else chain.forEach(c=>c.classList.remove("on"));
+      setLine(salto,[new THREE.Vector3(-1.45,H*VS+.2,1.25),new THREE.Vector3(-1.45,.62,1.25)]);
+      sLab.el.textContent = "salto "+H+" m";
+      const Ein = g*QMAX*open*H, Pmax = g*QMAX*100;
+      led.set(0,[Ein*.9, Ein*.1], Pmax);
+      led.legend([fmt0(Ein*.9/1000)+" kJ", fmt0(Ein*.1/1000)+" kJ"]);
+      ledgerEl.querySelector("h4 span").textContent = open>0 ? `entrano ${fmt0(Ein/1000)} kJ al secondo · rendimento 90%` : "valvola chiusa: nessuna energia in ingresso";
+    },
+    cam:{ pos:[1.2,3.6,11.4], target:[1.3,1.4,0], w:11.8, h:5.2 },
+    alt:"Modello di centrale idroelettrica: un lago su una montagna, una condotta che scende fino a un edificio con turbina e alternatore, una linea elettrica e un paese di cinque case."
+  };
+};
+
+/* ---- 4. Lampadine ---- */
+BUILD[3] = (root, ui, done) => {
+  const bulbs = [];
+  const mk = (x, kind) => {
+    const b = { x, kind, on:false, eff: kind==="inc" ? .05 : .30, temp:0, parts:[] , acc:0};
+    const base = inked(new THREE.BoxGeometry(1.1,.18,1.1), 0xe6dac0); base.position.set(x,.09,0); root.add(base);
+    const post = inked(new THREE.CylinderGeometry(.07,.07,.9,10),0xb79a6e,{thresh:50}); post.position.set(x,.63,0); root.add(post);
+    const sock = inked(new THREE.CylinderGeometry(.24,.24,.36,18),0xc9ced8,{thresh:40}); sock.position.set(x,1.24,0); root.add(sock);
+    for (let i=0;i<4;i++) root.add(line(Array.from({length:25},(_,k)=>{const a=k/24*Math.PI*2; return new THREE.Vector3(x+Math.cos(a)*.245,1.1+i*.09,Math.sin(a)*.245);})));
+    let glass, fil, center;
+    if (kind==="inc"){
+      glass = inked(new THREE.SphereGeometry(.62,32,22), 0xffffff, {opacity:.22, edges:false}); glass.position.set(x,1.98,0); root.add(glass);
+      const ring = new THREE.Mesh(new THREE.TorusGeometry(.62,.012,6,48), new THREE.MeshBasicMaterial({color:INK})); ring.position.copy(glass.position); root.add(ring);
+      const ring2 = ring.clone(); ring2.rotation.y=Math.PI/2; root.add(ring2);
+      const pts=[]; for(let i=0;i<=40;i++){ const s=i/40; pts.push(new THREE.Vector3(x-.22+.44*s, 1.98+Math.sin(s*Math.PI*10)*.06, 0)); }
+      fil = line(pts, 0x55657d); root.add(fil);
+      root.add(line([new THREE.Vector3(x-.22,1.98,0),new THREE.Vector3(x-.1,1.42,0)]), line([new THREE.Vector3(x+.22,1.98,0),new THREE.Vector3(x+.1,1.42,0)]));
+      center = new THREE.Vector3(x,1.98,0);
+    } else {
+      glass = inked(new THREE.SphereGeometry(.55,32,16,0,Math.PI*2,0,Math.PI/2), 0xffffff, {opacity:.3, edges:false}); glass.position.set(x,1.55,0); root.add(glass);
+      const r = new THREE.Mesh(new THREE.TorusGeometry(.55,.012,6,48), new THREE.MeshBasicMaterial({color:INK})); r.rotation.x=Math.PI/2; r.position.set(x,1.55,0); root.add(r);
+      const arc = line(Array.from({length:25},(_,k)=>{const a=k/24*Math.PI; return new THREE.Vector3(x+Math.cos(a)*.55,1.55+Math.sin(a)*.55,0);})); root.add(arc);
+      const chip = inked(new THREE.BoxGeometry(.3,.05,.3),0xf4f4f4); chip.position.set(x,1.57,0); root.add(chip);
+      fil = chip; center = new THREE.Vector3(x,1.75,0);
+      for (let i=0;i<8;i++){ const f=inked(new THREE.BoxGeometry(.02,.3,.12),0xc9ced8); const a=i/8*Math.PI*2; f.position.set(x+Math.cos(a)*.27,1.3,Math.sin(a)*.27); f.rotation.y=-a; root.add(f); }
+    }
+    const glow = new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW, color: kind==="inc"?0xffc36b:0xe9f2ff, transparent:true, opacity:0, depthWrite:false, blending:THREE.AdditiveBlending}));
+    glow.position.copy(center); glow.scale.setScalar(2.2); root.add(glow);
+    // termometro
+    const tx = x + (kind==="inc"? -1.05 : 1.05);
+    const tube = inked(new THREE.CylinderGeometry(.07,.07,1.7,14),0xffffff,{opacity:.5, thresh:40}); tube.position.set(tx,1.15,0); root.add(tube);
+    const bulbT = inked(new THREE.SphereGeometry(.12,16,10),0xC2412D,{edges:false, hull:1.15}); bulbT.position.set(tx,.28,0); root.add(bulbT);
+    const fill = new THREE.Mesh(new THREE.CylinderGeometry(.045,.045,1,10), new THREE.MeshBasicMaterial({color:0xC2412D})); fill.position.set(tx,.4,0); root.add(fill);
+    root.add(shadow(.75,.6,x,0));
+    Object.assign(b,{glow, fil, center, fill, tx});
+    bulbs.push(b);
+  };
+  mk(-1.55,"inc"); mk(1.55,"led");
+  addLabel("a incandescenza", ()=>new THREE.Vector3(-1.55,2.95,0));
+  addLabel("LED", ()=>new THREE.Vector3(1.55,2.55,0));
+  addLabel("termometro", ()=>new THREE.Vector3(-2.6,2.25,0), "small");
+  const pGeo = new THREE.SphereGeometry(.04,8,6);
+  const mLight = new THREE.MeshBasicMaterial({color:0xE9B824}), mHeat = new THREE.MeshBasicMaterial({color:0xF08A24});
+  const pool = []; for (let i=0;i<260;i++){ const p=new THREE.Mesh(pGeo,mHeat); p.visible=false; root.add(p); pool.push(p); }
+  const spawn = (b, isLight) => {
+    const p = pool.find(q=>!q.visible); if (!p) return;
+    p.visible = true; p.material = isLight? mLight : mHeat; p.userData = { b, light:isLight, life:0, max: isLight? 1.1 : 2.4, ph: Math.random()*6 };
+    if (isLight){ const d = new THREE.Vector3(Math.random()-.5, Math.random()-.25, Math.random()-.5).normalize(); p.userData.v = d.multiplyScalar(2.6); p.position.copy(b.center); }
+    else { p.position.copy(b.center).add(new THREE.Vector3((Math.random()-.5)*.6, .2, (Math.random()-.5)*.4)); p.userData.v = new THREE.Vector3(0, .55+Math.random()*.3, 0); }
+  };
+  ui.innerHTML = `<button class="btn" id="b0">Accendi la lampadina a incandescenza</button><button class="btn" id="b1">Accendi il LED</button>
+    <p class="status" style="width:100%">● giallo = luce &nbsp; ● arancione = calore. Ogni lampadina riceve 100 joule ogni secondo.</p>`;
+  const btns = [ui.querySelector("#b0"), ui.querySelector("#b1")];
+  const used = new Set();
+  btns.forEach((bt,i)=>bt.onclick=()=>{ const b=bulbs[i]; b.on=!b.on; bt.textContent = (b.on?"Spegni ":"Accendi ") + (i? "il LED":"la lampadina a incandescenza"); bt.classList.toggle("ghost", b.on); if (b.on){ used.add(i); if (used.size===2) done(); } });
+  const led = makeLedger("Il conto dei joule", "100 J in ingresso per ogni lampadina", ["a incandescenza","LED"], [{label:"luce (utile)",color:C.luce},{label:"calore",color:C.cal}]);
+  const lv = [0,0];
+  return {
+    update(dt){
+      bulbs.forEach((b,i)=>{
+        b.temp += ((b.on? (b.kind==="inc"? 1 : .72) : 0) - b.temp) * Math.min(1, dt*.6);
+        b.fill.scale.y = .05 + b.temp*1.3; b.fill.position.y = .32 + b.fill.scale.y/2;
+        b.glow.material.opacity += ((b.on?(b.kind==="inc"? .75 : .95):0) - b.glow.material.opacity)*Math.min(1,dt*6);
+        if (b.kind==="inc") b.fil.material.color.set(b.on? 0xffb347 : 0x55657d);
+        else b.fil.userData.mat.emissive.set(b.on? 0xbfd8ff : 0x000000);
+        if (b.on){ b.acc += dt*70; while (b.acc>1){ b.acc--; spawn(b, Math.random()<b.eff); } }
+        lv[i] += ((b.on?1:0)-lv[i])*Math.min(1,dt*5);
+        led.set(i,[100*b.eff*lv[i], 100*(1-b.eff)*lv[i]], 100);
+      });
+      led.legend([`${fmt0(5*lv[0])} J e ${fmt0(30*lv[1])} J`, `${fmt0(95*lv[0])} J e ${fmt0(70*lv[1])} J`]);
+      pool.forEach(p=>{ if(!p.visible) return; const u=p.userData; u.life+=dt; if (u.life>u.max){ p.visible=false; return; }
+        if (u.light) p.position.addScaledVector(u.v, dt);
+        else { p.position.y += u.v.y*dt; p.position.x += Math.sin(u.life*5+u.ph)*dt*.35; }
+        const s = u.light? 1 : 1+u.life*.5; p.scale.setScalar(s * (1 - u.life/u.max*.6)); });
+    },
+    cam:{ pos:[0,2.4,7.4], target:[0,1.5,0], w:6.2, h:3.6 },
+    alt:"Due lampadine su due supporti: a sinistra una lampadina a incandescenza, a destra una lampadina LED. Accanto a ciascuna c'è un termometro."
+  };
+};
+
+/* ---- 5. Pendolo ---- */
+BUILD[4] = (root, ui, done) => {
+  const Lp = 2.4, m = 1, th0 = 50*Math.PI/180, E0 = m*g*Lp*(1-Math.cos(th0)), P = new THREE.Vector3(0,3.2,0);
+  const base = inked(new THREE.BoxGeometry(3.8,.14,1.3),0xe6dac0); base.position.y=.07; root.add(base);
+  for (const x of [-1.7,1.7]){ const p=inked(new THREE.BoxGeometry(.14,3.15,.14),0xd9b98a); p.position.set(x,1.65,0); root.add(p); }
+  const bar = inked(new THREE.BoxGeometry(3.55,.14,.14),0xd9b98a); bar.position.set(0,3.25,0); root.add(bar);
+  const pin = inked(new THREE.CylinderGeometry(.05,.05,.26,10),0x55657d,{thresh:40}); pin.rotation.x=Math.PI/2; pin.position.copy(P); root.add(pin);
+  const bob = inked(new THREE.SphereGeometry(.24,30,20), 0xf7c08a, {edges:false, hull:1.07}); root.add(bob);
+  const str = line([P.clone(),P.clone()]); root.add(str);
+  const arc = line(Array.from({length:41},(_,i)=>{const a=-th0+2*th0*i/40; return new THREE.Vector3(P.x+Math.sin(a)*Lp, P.y-Math.cos(a)*Lp, 0);}), 0x1E88E5, true); root.add(arc);
+  const airG = new THREE.SphereGeometry(.035,6,5), airM = new THREE.MeshBasicMaterial({color:0xC2412D, transparent:true, opacity:.6});
+  const air = []; for (let i=0;i<60;i++){ const a=new THREE.Mesh(airG,airM); a.visible=false; root.add(a); air.push(a); }
+  root.add(shadow(2.2,.8));
+  const glowPin = new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:0xff6a3d,transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending})); glowPin.position.copy(P); glowPin.scale.setScalar(.8); root.add(glowPin);
+  addLabel("perno", ()=>P.clone().add(new THREE.Vector3(.55,.3,0)), "small");
+  const vLab = addLabel("", ()=>bob.position.clone().add(new THREE.Vector3(0,-.5,0)), "val");
+
+  const FR = { poco:.06, medio:.18, molto:.45 };
+  let th = th0, w = 0, running=false, fr="medio", warp = 1, airAcc=0;
+  ui.innerHTML = `<div class="ctl"><label>L'aria frena</label><div class="seg" id="fr">${Object.keys(FR).map(k=>`<button data-k="${k}" aria-pressed="${k===fr}">${k}</button>`).join("")}</div></div>
+    <button class="btn" id="go">Lascia andare</button><button class="btn ghost" id="rs">Ricomincia</button>
+    <div class="seg" id="wp" aria-label="Velocità del tempo"><button data-w="1" aria-pressed="true">tempo ×1</button><button data-w="4" aria-pressed="false">×4</button></div>`;
+  const reset = () => { th=th0; w=0; running=false; air.forEach(a=>a.visible=false); };
+  ui.querySelectorAll("#fr button").forEach(b=>b.onclick=()=>{ fr=b.dataset.k; ui.querySelectorAll("#fr button").forEach(x=>x.setAttribute("aria-pressed",x===b)); reset(); });
+  ui.querySelectorAll("#wp button").forEach(b=>b.onclick=()=>{ warp=+b.dataset.w; ui.querySelectorAll("#wp button").forEach(x=>x.setAttribute("aria-pressed",x===b)); });
+  ui.querySelector("#go").onclick = () => { reset(); running=true; };
+  ui.querySelector("#rs").onclick = reset;
+  const led = makeLedger("Il conto dei joule", "pendolo da 1 kg", [""], [{label:"potenziale",color:C.pot},{label:"cinetica",color:C.cin},{label:"calore",color:C.cal}]);
+  let didDone = false;
+  return {
+    update(dt){
+      if (running){ const n=20, d=dt*warp/n; for (let i=0;i<n;i++){ const al = -(g/Lp)*Math.sin(th) - FR[fr]*w; w += al*d; th += w*d; } }
+      const pos = new THREE.Vector3(P.x+Math.sin(th)*Lp, P.y-Math.cos(th)*Lp, 0);
+      bob.position.copy(pos); setLine(str,[P,pos]);
+      const ep = m*g*Lp*(1-Math.cos(th)), ec = .5*m*(Lp*w)**2, q = Math.max(0,E0-ep-ec);
+      led.set(0,[ep,ec,q],E0); led.legend([fmt(ep)+" J",fmt(ec)+" J",fmt(q)+" J"]);
+      vLab.el.textContent = fmt(Math.abs(Lp*w))+" m/s";
+      glowPin.material.opacity = running ? Math.min(.6, Math.abs(w)*.25) : 0;
+      if (running){ airAcc += dt*Math.abs(w)*6*Math.sqrt(FR[fr]/.18); while (airAcc>1){ airAcc--; const a=air.find(x=>!x.visible); if(a){ a.visible=true; a.position.copy(pos).add(new THREE.Vector3((Math.random()-.5)*.3,(Math.random()-.5)*.3,(Math.random()-.5)*.3)); a.userData={life:0}; } } }
+      air.forEach(a=>{ if(!a.visible) return; a.userData.life+=dt; a.position.y+=dt*.25; a.position.x += (Math.random()-.5)*dt*.6; if (a.userData.life>1.6) a.visible=false; });
+      if (!didDone && q > E0*.5){ didDone=true; done(); }
+    },
+    cam:{ pos:[0.6,2.4,8.6], target:[0,1.7,0], w:4.6, h:4.3 },
+    alt:"Un pendolo: una sfera appesa a un filo fissato a un perno su una struttura a portale. Un arco tratteggiato mostra l'oscillazione iniziale."
+  };
+};
+
+/* =========================================================
+   CAMBIO DI LEZIONE E PAGINA DI TESTO
+   ========================================================= */
+let current = null, root = null, popT = 0;
+const controlsEl = document.getElementById("controls");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function loadScene(i){
+  if (root){ scene.remove(root.userData.pivot); root.traverse(o=>{ o.geometry?.dispose?.(); }); }
+  labels.forEach(L=>L.el.remove()); labels = [];
+  root = new THREE.Group(); const pivot = new THREE.Group(); pivot.add(root); scene.add(pivot);
+  root.userData.pivot = pivot;
+  current = BUILD[i](root, controlsEl, ()=>markTested(i));
+  camera.position.set(...current.cam.pos); controls.target.set(...current.cam.target); fit(); controls.update();
+  document.getElementById("alt3d").textContent = "Modello 3D: " + current.alt;
+  popT = reduce ? 1 : 0;
+}
+
+function renderText(i){
+  const L = LESSONS[i], s = state[i], page = document.getElementById("textPage");
+  const predicted = s.pick!==null, canOpen = predicted && s.tested;
+  const right = s.pick===L.correct;
+  page.className = "page left turn";
+  page.innerHTML = `
+    <p class="kicker">Lezione ${i+1} di ${LESSONS.length}</p>
+    <h2>${L.title}</h2>
+    <p class="intro">${L.intro}</p>
+    <div class="step ${predicted?"done":""}">
+      <h3><span class="n">${predicted?"✓":"1"}</span>Prevedi</h3>
+      <p>${L.question}</p>
+      <div class="opts" role="group" aria-label="Previsione">
+        ${L.options.map((o,k)=>`<button class="opt ${s.open? (k===L.correct?"right-ans":"wrong-ans") : ""}" data-k="${k}" aria-pressed="${s.pick===k}" ${predicted?"disabled":""}><span class="l">${"ABC"[k]}</span><span>${o}</span></button>`).join("")}
+      </div>
+      ${predicted && !s.open ? `<p class="note-hand">Previsione fatta! Ora mettila alla prova →</p>`:""}
+    </div>
+    <div class="step ${s.tested?"done":""} ${predicted?"":"locked"}">
+      <h3><span class="n">${s.tested?"✓":"2"}</span>Prova</h3>
+      <p>${L.tryText}</p>
+      <p class="status ${s.tested?"ok":""}">${s.tested? "Prova fatta. Puoi alzare l'aletta." : (predicted? L.tryNeed : "Prima fai la tua previsione.")}</p>
+    </div>
+    <div class="step ${s.open?"done":""} ${canOpen?"":"locked"}">
+      <h3><span class="n">${s.open?"✓":"3"}</span>Dimostra</h3>
+      <div class="flap ${s.open?"open":""}" id="flap">
+        <div class="flap-content">
+          <p class="verdict">${L.verdict} ${s.open? (right? "<span style='color:var(--ok)'>La tua previsione era giusta.</span>" : "<span style='color:var(--cal)'>Avevi previsto un'altra risposta: ora sai perché.</span>") : ""}</p>
+          ${L.explain.map(p=>`<p>${p}</p>`).join("")}
+          <div class="formula">${L.formula}</div>
+        </div>
+        <button class="flap-cover" id="flapBtn" ${canOpen?"":"disabled"} aria-label="Alza l'aletta per vedere la risposta">
+          <span class="big">${canOpen? "Alza l'aletta ↑" : "Aletta chiusa"}</span>
+          <span class="small">${canOpen? "Scopri se avevi ragione" : "Si apre dopo la previsione e la prova"}</span>
+        </button>
+      </div>
+      ${s.open? `<div class="stamp" id="stamp"><div><div class="s1">DIMOSTRATO</div>LEZIONE ${i+1}<br>${right?"★ PREVISTO ★":"✓"}</div></div>`:""}
+    </div>
+    ${state.every(x=>x.open) && i===LESSONS.length-1 ? `<div class="final"><b>Libro completato!</b> Hai seguito il joule in cinque esperimenti: l'energia non sparisce mai, cambia forma. E nella realtà, ogni volta che cambia forma, una parte diventa calore che non riusciamo più a usare.</div>`:""}
+    <details class="teacher"><summary>Per il docente</summary><ul>${L.teacher.map(t=>`<li>${t}</li>`).join("")}</ul></details>
+    <span class="pagenum">${2*i+1}</span>`;
+  page.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ if (s.pick!==null) return; s.pick=+b.dataset.k; persist(); renderText(i); });
+  const fb = page.querySelector("#flapBtn");
+  if (fb) fb.onclick = () => { if (!canOpen) return; s.open = true; persist(); renderText(i); const st=document.getElementById("stamp"); if (st && !reduce) st.classList.add("fresh"); renderChrome(); };
+  document.getElementById("pnR").textContent = 2*i+2;
+}
+
+function markTested(i){
+  if (state[i].tested) return;
+  state[i].tested = true; persist();
+  if (i===cur) renderText(i);
+}
+
+function renderChrome(){
+  const n = state.filter(s=>s.open).length;
+  document.getElementById("stampCount").textContent = `Timbri ${n}/${LESSONS.length}`;
+  document.getElementById("stampDots").innerHTML = LESSONS.map((L,i)=>`<span class="dot ${state[i].open?"on":""}" title="Lezione ${i+1}">${i+1}</span>`).join("");
+  document.getElementById("stampDots").style.display="flex"; document.getElementById("stampDots").style.gap="5px";
+  document.getElementById("ribbons").innerHTML = LESSONS.map((L,i)=>`<button class="ribbon" data-i="${i}" aria-current="${i===cur}">${i+1}. ${L.short} ${state[i].open?'<span class="ok">●</span>':""}</button>`).join("");
+  document.querySelectorAll(".ribbon").forEach(b=>b.onclick=()=>{ location.hash = LESSONS[+b.dataset.i].id; });
+}
+
+function go(i){
+  cur = i; renderText(i); loadScene(i); renderChrome();
+  document.title = `${LESSONS[i].title} – Segui il joule`;
+}
+
+function fromHash(){
+  const k = LESSONS.findIndex(L=>"#"+L.id===location.hash);
+  return k;
+}
+window.addEventListener("hashchange", ()=>{ const k=fromHash(); if (k>=0 && k!==cur){ go(k); if (innerWidth<900) document.querySelector(".book").scrollIntoView({behavior:reduce?"auto":"smooth"}); } });
+
+const cover = document.getElementById("cover");
+document.getElementById("openBook").onclick = () => { cover.hidden = true; if (!location.hash) location.hash = LESSONS[0].id; };
+const k0 = fromHash();
+if (k0<0) cover.hidden = false;
+go(Math.max(0,k0));
+
+/* ---- ciclo di disegno ---- */
+let last = performance.now();
+function resize(){
+  const w = stage.clientWidth, h = stage.clientHeight;
+  renderer.setSize(w, h, false); camera.aspect = w/h;
+  camera.fov = 36; camera.updateProjectionMatrix(); fit();
+}
+function fit(){
+  if (!current) return; const c = current.cam, t = Math.tan(camera.fov*Math.PI/360);
+  const d = Math.max(c.h/2/t, c.w/2/(t*camera.aspect)) * (camera.aspect<1.6 ? 1.04 : 1.08);
+  const dir = camera.position.clone().sub(controls.target).normalize();
+  camera.position.copy(controls.target).addScaledVector(dir, d);
+}
+new ResizeObserver(resize).observe(stage); resize();
+function frame(now){
+  const dt = Math.min(.05, (now-last)/1000); last = now;
+  if (popT < 1){ popT = Math.min(1, popT + dt/0.9); const e = 1 - Math.pow(1-popT, 3); const back = 1 + 0.18*Math.sin(Math.PI*e)*(1-e)*3;
+    root.userData.pivot.rotation.x = -Math.PI/2*(1-e); root.userData.pivot.scale.set(1, Math.max(.01,e*back), 1); }
+  current?.update(dt, now/1000);
+  controls.update();
+  renderer.render(scene, camera);
+  placeLabels(stage.clientWidth, stage.clientHeight);
+  requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
