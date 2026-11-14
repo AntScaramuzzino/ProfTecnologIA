@@ -111,6 +111,13 @@
         <li>${icon("medal")}<span><b>verifica</b> di 4 domande a ogni livello</span></li>
       </ul>
     </div>`);
+  const C = window.LABCOVER;
+  if (C && C.src) {
+    top.classList.add("has-cover");
+    const fig = mk("figure", "intro-cover"); const img = mk("img"); img.src = C.src; img.alt = C.alt || ""; img.loading = "eager"; img.decoding = "async";
+    img.onerror = () => { fig.remove(); top.classList.remove("has-cover"); };
+    fig.appendChild(img); top.appendChild(fig);
+  }
   const path = mk("ol", "intro-path");
   levels.forEach((l) => {
     const passed = l.best && l.best.total && l.best.score / l.best.total >= 0.7;

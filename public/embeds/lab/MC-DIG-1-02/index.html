@@ -565,6 +565,7 @@ window.LABVERIFICA={"id":"MC-DIG-1-02","F":[["Come funziona Google quando cerchi
   LV.forEach((l, i) => { const p = document.getElementById("p" + (i + 1)); if (p) box(l, p); });
 })();
 </script>
+<script>window.LABCOVER={"src":"../../../assets/lab-covers/MC-DIG-1-02.webp","alt":"Tavolo da detective con cappello, lente d'ingrandimento e taccuino, davanti a una bacheca di sughero con articoli collegati da fili e segnati con spunte e croci."};</script>
 <style>
 /* Infografica di presentazione del laboratorio */
 .intro{position:relative;border-radius:calc(var(--r) + 4px);overflow:hidden;background:var(--surface);border:1px solid var(--line);box-shadow:0 1px 2px rgba(0,0,0,.04);display:flex;flex-direction:column}
@@ -646,6 +647,11 @@ html.lim .intro-what p{font-size:20px}
 .intro-seg.s3{background:var(--area,var(--lab));color:#fff}
 @media (max-width:760px){.intro-time{margin-left:16px;margin-right:16px}.intro-seg span{display:none}.intro-seg{min-width:52px;justify-content:center}}
 .intro-seg.s2{background:color-mix(in srgb,var(--area,var(--lab)) 18%,var(--surface));color:color-mix(in srgb,var(--area,var(--lab)) 70%,#000)}
+/* Copertina Canva */
+.intro-top.has-cover{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,38%);align-items:center}
+.intro-cover{margin:0;position:relative;z-index:1;border-radius:14px;overflow:hidden;border:3px solid rgba(255,255,255,.55);box-shadow:0 8px 24px rgba(0,0,0,.25);aspect-ratio:16/9;background:rgba(255,255,255,.12)}
+.intro-cover img{display:block;width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){.intro-top.has-cover{grid-template-columns:auto minmax(0,1fr)}.intro-cover{grid-column:1/-1;order:-1}}
 </style>
 <script>
 // Infografica di presentazione del laboratorio: si costruisce dalla pagina stessa
@@ -761,6 +767,13 @@ html.lim .intro-what p{font-size:20px}
         <li>${icon("medal")}<span><b>verifica</b> di 4 domande a ogni livello</span></li>
       </ul>
     </div>`);
+  const C = window.LABCOVER;
+  if (C && C.src) {
+    top.classList.add("has-cover");
+    const fig = mk("figure", "intro-cover"); const img = mk("img"); img.src = C.src; img.alt = C.alt || ""; img.loading = "eager"; img.decoding = "async";
+    img.onerror = () => { fig.remove(); top.classList.remove("has-cover"); };
+    fig.appendChild(img); top.appendChild(fig);
+  }
   const path = mk("ol", "intro-path");
   levels.forEach((l) => {
     const passed = l.best && l.best.total && l.best.score / l.best.total >= 0.7;

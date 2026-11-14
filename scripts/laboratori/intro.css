@@ -78,3 +78,8 @@ html.lim .intro-what p{font-size:20px}
 .intro-seg.s3{background:var(--area,var(--lab));color:#fff}
 @media (max-width:760px){.intro-time{margin-left:16px;margin-right:16px}.intro-seg span{display:none}.intro-seg{min-width:52px;justify-content:center}}
 .intro-seg.s2{background:color-mix(in srgb,var(--area,var(--lab)) 18%,var(--surface));color:color-mix(in srgb,var(--area,var(--lab)) 70%,#000)}
+/* Copertina Canva */
+.intro-top.has-cover{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,38%);align-items:center}
+.intro-cover{margin:0;position:relative;z-index:1;border-radius:14px;overflow:hidden;border:3px solid rgba(255,255,255,.55);box-shadow:0 8px 24px rgba(0,0,0,.25);aspect-ratio:16/9;background:rgba(255,255,255,.12)}
+.intro-cover img{display:block;width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){.intro-top.has-cover{grid-template-columns:auto minmax(0,1fr)}.intro-cover{grid-column:1/-1;order:-1}}
