@@ -58,6 +58,10 @@
   }
   const ROSSO_NOMI = TECNICO ? NERO : [239, 68, 68];
 
+  // Livelli di GeoGebra: servono agli interruttori in fondo al file (ogni livello si accende e si spegne da solo).
+  // L'ordine è anche l'ordine di disegno: la figura sta sopra le linee di proiezione, i nomi sopra tutto.
+  const LIVELLI = { proiezioni: 1, misure: 2, figura: 3, nomi: 4 };
+
   const PIANI = {
     PV: { colore: [147, 197, 253], testo: [29, 78, 216] },
     PL: { colore: [249, 168, 212], testo: [190, 24, 93] },
@@ -180,7 +184,7 @@
         ripassaCerchio(nome, centro, raggio, quando) {
           k.cerchio(`draw${nome}`, centro, raggio);
           k.risultato(`draw${nome}`);
-          stile(`draw${nome}`, STILI.ripasso);
+          stile(`draw${nome}`, { ...STILI.ripasso, layer: LIVELLI.figura });
           if (quando !== undefined) k.compare(`draw${nome}`, quando);
           return registra(`draw${nome}`);
         },
@@ -191,19 +195,20 @@
             : `Testo${nome}=Text("${testo}",${xy(p)})`);
           // sul foglio tecnico le scritte sono tutte a matita: nere quelle del cartiglio e dei nomi, grigie le altre
           stile(`Testo${nome}`, { color: TECNICO ? (colore === NERO || !colore ? NERO : MATITA) : (colore || INCHIOSTRO) });
+          if (colore && colore[0] === 30 && colore[1] === 64 && colore[2] === 175) stile(`Testo${nome}`, { layer: LIVELLI.misure });   // misure dei lati
           if (quando !== undefined) k.compare(`Testo${nome}`, quando);
           return registra(`Testo${nome}`);
         },
         /** Linea di proiezione (sottile), tracciata da a verso b. */
         proietta(nome, a, b, finestra) {
           k.traccia(`linePr${nome}`, a, b, finestra);
-          stile(`linePr${nome}`, STILI.proiezione);
+          stile(`linePr${nome}`, { ...STILI.proiezione, layer: LIVELLI.proiezioni });
           return registra(`linePr${nome}`);
         },
         /** Linea della figura in costruzione (blu), tracciata da a verso b. */
         figura(nome, a, b, finestra) {
           k.traccia(`lineFg${nome}`, a, b, finestra);
-          stile(`lineFg${nome}`, STILI.figura);
+          stile(`lineFg${nome}`, { ...STILI.figura, layer: LIVELLI.figura });
           return registra(`lineFg${nome}`);
         },
         /**
@@ -222,22 +227,24 @@
             : [m[0] + 0.25, m[1] - 0.25];
           if (sposta) p = [p[0] + sposta[0], p[1] + sposta[1]];
           k.seg(`mis${nome}`, a, b);
-          stile(`mis${nome}`, STILI.misura);
+          stile(`mis${nome}`, { ...STILI.misura, layer: LIVELLI.misure });
           if (quando !== undefined) k.compare(`mis${nome}`, quando);
           registra(`mis${nome}`);
           f.scritta(`Mis${nome}`, testo, p, STILI.misura.color, quando);
+          stile(`TestoMis${nome}`, { layer: LIVELLI.misure });
         },
         /** Trattino di misura attraverso una linea: `verticale` se la linea misurata è orizzontale. */
         tacca(nome, p, verticale, quando) {
           const d = 0.22;
           k.seg(`tac${nome}`, verticale ? [p[0], p[1] - d] : [p[0] - d, p[1]], verticale ? [p[0], p[1] + d] : [p[0] + d, p[1]]);
-          stile(`tac${nome}`, STILI.tacca);
+          stile(`tac${nome}`, { ...STILI.tacca, layer: LIVELLI.misure });
           if (quando !== undefined) k.compare(`tac${nome}`, quando);
           return registra(`tac${nome}`);
         },
         /** Arco di riporto: centro O, dal punto (0, −raggio) sull'asse al punto (raggio, 0) sulla LT. */
         riporto(nome, raggio, finestra) {
           k.arco(`arcR${nome}`, O, raggio, 270, 90, finestra);
+          stile(`arcR${nome}`, { layer: LIVELLI.proiezioni });
           if (TECNICO) stile(`arcR${nome}`, STILI.compasso);
           return registra(`arcR${nome}`);
         },
@@ -257,13 +264,14 @@
           if (dove) {
             stile(nome, { label: false });
             f.scritta(`Nome${nome}`, etichetta || nome, [p[0] + dove[0], p[1] + dove[1]], ROSSO_NOMI, quando);
+            stile(`TestoNome${nome}`, { layer: LIVELLI.nomi });
           }
           return nome;
         },
         /** Punto di servizio numerato (1, 2, 3…): nome N1, N2… */
         numero(n, p, quando) {
           k.punto(`N${n}`, p, String(n));
-          stile(`N${n}`, STILI.servizio);
+          stile(`N${n}`, { ...STILI.servizio, layer: LIVELLI.proiezioni });
           if (quando !== undefined) k.compare(`N${n}`, quando);
           return registra(`N${n}`);
         },
@@ -278,13 +286,13 @@
         ripassa(nome, a, b, finestra) {
           k.traccia(`draw${nome}`, a, b, finestra);
           k.risultato(`draw${nome}`);
-          stile(`draw${nome}`, STILI.ripasso);
+          stile(`draw${nome}`, { ...STILI.ripasso, layer: LIVELLI.figura });
           return registra(`draw${nome}`);
         },
         /** Ripasso finale di uno spigolo nascosto (tratteggiato). */
         nascosto(nome, a, b, finestra) {
           k.traccia(`draw${nome}`, a, b, finestra);
-          stile(`draw${nome}`, STILI.nascosto);
+          stile(`draw${nome}`, { ...STILI.nascosto, layer: LIVELLI.figura });
           return registra(`draw${nome}`);
         },
       };
@@ -1448,13 +1456,74 @@
       });
       return b;
     };
+    // Interruttori: nascondono linee di proiezione (con archi di riporto e punti numerati), misure, nomi dei punti.
+    const nomeApplet = `baseConstruction_${PARAMETRI.get("activity").replace(/[^a-z0-9]/gi, "_")}`;
+    const VOCI = [["proiezioni", "Linee di proiezione"], ["misure", "Misure"], ["nomi", "Nomi dei punti"]];
+    const caselle = [];
+    // Il motore riaccende gli oggetti a ogni passo: per questo l'interruttore non spegne una volta sola, ma si mette
+    // in mezzo a setVisible. `voluto` ricorda che cosa il motore vuole mostrare, `spenti` che cosa ha spento l'alunno.
+    const stili = (TAVOLE[PARAMETRI.get("activity")] || {}).styles || {};
+    const spenti = {};
+    const voluto = {};
+    let originale = null;
+    const aggancia = () => {
+      const applet = window[nomeApplet];
+      if (!applet || typeof applet.setVisible !== "function") return false;
+      if (!originale) {
+        originale = applet.setVisible.bind(applet);
+        applet.setVisible = (nome, visibile) => {
+          voluto[nome] = visibile;
+          originale(nome, visibile && !spenti[(stili[nome] || {}).layer]);
+        };
+      }
+      return true;
+    };
+    const attesa = window.setInterval(() => { if (aggancia()) window.clearInterval(attesa); }, 150);
+    const aggiorna = (livello) => {
+      if (!aggancia()) return;
+      const applet = window[nomeApplet];
+      Object.keys(stili).forEach((nome) => {
+        if (stili[nome].layer !== livello || !applet.exists(nome)) return;
+        if (voluto[nome] === undefined) voluto[nome] = applet.getVisible(nome);
+        originale(nome, voluto[nome] && !spenti[livello]);
+      });
+    };
+    const interruttori = () => {
+      const gruppo = document.createElement("div");
+      gruppo.setAttribute("role", "group");
+      gruppo.setAttribute("aria-label", "Che cosa mostrare sul foglio");
+      gruppo.style.cssText = "display:inline-flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:0 10px;font:600 0.85rem/1.2 inherit;color:#334155";
+      VOCI.forEach(([chiave, etichetta]) => {
+        const l = document.createElement("label");
+        l.style.cssText = "display:inline-flex;gap:6px;align-items:center;cursor:pointer;min-height:32px";
+        const c = document.createElement("input");
+        c.type = "checkbox"; c.checked = true; c.dataset.chiave = chiave;
+        c.style.cssText = "width:18px;height:18px";
+        c.addEventListener("change", () => {
+          caselle.forEach((altra) => { if (altra.dataset.chiave === chiave) altra.checked = c.checked; });
+          spenti[LIVELLI[chiave]] = !c.checked;
+          aggiorna(LIVELLI[chiave]);
+        });
+        caselle.push(c);
+        l.append(c, etichetta);
+        gruppo.append(l);
+      });
+      return gruppo;
+    };
     const ricomincia = document.getElementById("reset-button");
+    if (ricomincia) {
+      ricomincia.parentNode.style.flexWrap = "wrap";          // sul telefono interruttori e pulsanti vanno a capo
+      const gruppo = interruttori();
+      gruppo.style.flex = "1 1 100%";
+      ricomincia.parentNode.insertBefore(gruppo, ricomincia);
+    }
     if (ricomincia) ricomincia.parentNode.insertBefore(pulsante("button button--ghost"), ricomincia);
     const livello = document.querySelector(".level-badge");
     if (livello) {
       const b = pulsante("button button--ghost");
-      b.style.marginLeft = "10px";
+      b.style.cssText = "margin-left:10px;padding:6px 12px;white-space:nowrap;align-self:center;height:auto;min-height:36px";
       livello.insertAdjacentElement("afterend", b);
+      b.insertAdjacentElement("afterend", interruttori());
     }
   }
 })();
