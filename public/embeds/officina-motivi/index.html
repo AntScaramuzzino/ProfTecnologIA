@@ -1190,7 +1190,7 @@ function compFile(){const o=compute(false),op=opts();const pad=5;
  return svgFile({vb:`${-pad} ${-pad} ${o.w+2*pad} ${o.h+2*pad}`,inner:`<rect x="${-pad}" y="${-pad}" width="${o.w+2*pad}" height="${o.h+2*pad}" fill="#fff"/>`+body(o,op),wmm:o.w+2*pad,hmm:o.h+2*pad})}
 function sheetFile(){const r=sheetSvg(compute(false),opts(),true);return svgFile({vb:r.vb,inner:r.inner,wmm:297,hmm:210})}
 let DL=null;
-const SUL_LIBRO=/proftecnologia\.it$|^localhost$|^127\.0\.0\.1$/.test(location.hostname)||location.protocol==='file:';
+const SUL_LIBRO=/(^|\.)proftecnologia\.it$|\.vercel\.app$|\.github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname)||location.protocol==='file:';
 if(!SUL_LIBRO)(async()=>{try{if(window.claude&&window.claude.use)DL=await window.claude.use('downloads')}catch(e){DL=null}
  if(!DL){$('#dSvg').hidden=$('#dPng').hidden=$('#dSheet').hidden=true;$('#cSvg').hidden=false}})();
 async function save(filename,data){
