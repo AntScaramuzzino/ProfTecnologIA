@@ -66,6 +66,8 @@ main{position:relative;display:flex;flex-direction:column;min-width:0}
 .tab.on{color:var(--lab);border-bottom-color:var(--lab)}
 .stagewrap{position:relative;overflow:hidden;flex:1;margin:12px 14px 10px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);display:flex;min-height:0}
 #stage{position:absolute;inset:0;width:100%;height:100%;display:block}
+#floor{position:absolute;inset:0;overflow:hidden;perspective:900px;perspective-origin:50% 30%;background:linear-gradient(#E8EFF9 0 34%,#C9D2E4 34% 100%)}
+#floorP{position:absolute;left:-100%;right:-100%;top:34%;height:420%;transform-origin:50% 0;transform:rotateX(72deg);background-repeat:repeat;background-position:50% 0}
 #stage.live{touch-action:none;cursor:crosshair}
 #stage.live.lati{cursor:grab}
 #stage.anim{cursor:pointer}
@@ -174,8 +176,10 @@ details summary{cursor:pointer;font-weight:700;font-size:.9rem;min-height:30px;c
     <div class="row" style="margin-top:8px">
       <button class="btn sm" id="edRnd">Modulo casuale</button>
       <button class="btn sm" id="edClr">Pulisci</button>
+      <button class="btn sm" id="edFoto">Da una foto</button>
+      <input type="file" id="edFile" accept="image/*" hidden>
     </div>
-    <p class="src" style="margin:8px 0 0">Tocca un quadretto per dipingerlo. Ogni quadretto può essere pieno o tagliato dalla diagonale.</p>
+    <p class="src" style="margin:8px 0 0">Tocca un quadretto per dipingerlo. Ogni quadretto può essere pieno o tagliato dalla diagonale. Con «Da una foto» il modulo nasce da un’immagine: la foto resta sul tuo dispositivo.</p>
   </div>
   <div class="sec" id="vivaSec" hidden>
     <h2>2 · Disegna tu</h2>
@@ -216,8 +220,9 @@ details summary{cursor:pointer;font-weight:700;font-size:.9rem;min-height:30px;c
     <button class="tab on" data-v="comp">Composizione</button>
     <button class="tab" data-v="mod">Modulo quotato</button>
     <button class="tab" data-v="sheet">Tavola A4</button>
+    <button class="tab" data-v="floor">Pavimento</button>
   </div>
-  <div class="stagewrap"><svg id="stage" xmlns="http://www.w3.org/2000/svg"></svg></div>
+  <div class="stagewrap"><svg id="stage" xmlns="http://www.w3.org/2000/svg"></svg><div id="floor" hidden><div id="floorP"></div></div></div>
   <div class="player" id="player" hidden>
     <div class="cap" aria-live="polite"><b id="capK"></b><span id="capT"></span></div>
     <div class="pctl">
@@ -234,6 +239,7 @@ details summary{cursor:pointer;font-weight:700;font-size:.9rem;min-height:30px;c
     <button class="btn sm" id="dSvg">Scarica SVG</button>
     <button class="btn sm" id="dPng">Scarica PNG</button>
     <button class="btn sm pri" id="dSheet">Scarica la tavola A4</button>
+    <button class="btn sm" id="dStl" hidden>Scarica il timbro 3D (STL)</button>
     <button class="btn sm" id="cSvg" hidden>Copia SVG</button>
     <span class="dims" id="dims"></span>
   </div>
@@ -1439,9 +1445,14 @@ function cornice(o,dentro){
  if(mod)inner+=quotes(o.w,o.h,o.quota);
  return{vb:`${-pad} ${-pad} ${o.w+pad*2} ${o.h+pad*2}`,inner,w:o.w,h:o.h};
 }
+/** Le viste in cui si disegna e si anima: composizione e modulo quotato. */
+const piana=()=>S.view==='comp'||S.view==='mod';
 function stageSvg(){
  const v=S.view,o=compute(v==='mod');LAST=o;const op=opts();
  if(v==='sheet')return sheetSvg(o,op,false);
+ if(v==='floor'){               // la composizione diventa la piastrella di un pavimento visto in prospettiva
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${f2(o.w)}" height="${f2(o.h)}" viewBox="0 0 ${f2(o.w)} ${f2(o.h)}"><rect width="${f2(o.w)}" height="${f2(o.h)}" fill="#fff"/>${body(o,{grid:'none',guide:false,outline:op.outline})}</svg>`;
+  return{floor:'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg),w:o.w,h:o.h}}
  return cornice(o,vivaLive()?vivaBody(o,op):body(o,op));
 }
 function sheetSvg(o,op,forFile){
@@ -1458,7 +1469,8 @@ function sheetSvg(o,op,forFile){
  return{vb:`0 0 ${W} ${H}`,inner,w:W,h:H,sheet:true};
 }
 function mostra(r){
- const st=$('#stage');st.setAttribute('viewBox',r.vb);st.setAttribute('preserveAspectRatio','xMidYMid meet');st.innerHTML=r.inner;
+ const st=$('#stage'),fl=$('#floor');fl.hidden=!r.floor;st.style.visibility=r.floor?'hidden':'';
+ if(r.floor){const P=$('#floorP'),k=Math.max(1.2,Math.min(3,360/r.w));P.style.backgroundImage=`url("${r.floor}")`;P.style.backgroundSize=`${Math.round(r.w*k)}px ${Math.round(r.h*k)}px`;st.innerHTML='';return}st.setAttribute('viewBox',r.vb);st.setAttribute('preserveAspectRatio','xMidYMid meet');st.innerHTML=r.inner;
  st.classList.toggle('anim',AN.on);st.classList.toggle('live',vivaLive());st.classList.toggle('lati',vivaLive()&&S.fam==='incastro'&&S.vmodo==='lati');
 }
 function renderStage(){mostra(stageSvg())}
@@ -1477,7 +1489,7 @@ function renderSide(comp){
 }
 /** Ridisegna tutto. Con la costruzione animata aperta la ricostruisce (da capo se restart è vero). */
 function render(restart){
- if(AN.on&&S.view!=='sheet'){animStart(restart);return}
+ if(AN.on&&piana()){animStart(restart);return}
  if(AN.on)animStop();
  renderStage();
  renderSide(S.view==='mod'?compute(false):LAST);
@@ -1496,6 +1508,7 @@ function buildFams(){
 function buildParams(){
  const f=FAM[S.fam],p=S.p[S.fam];
  const tre=f.editor||f.viva;                 // con il riquadro «2 · Disegna» i titoli successivi scalano di uno
+ $('#dStl').hidden=!f.editor||$('#dSvg').hidden;
  $('#edSec').hidden=!f.editor;$('#prmTitle').textContent=(tre?'3':'2')+' · Regola';$('#rifTitle').textContent=(tre?'4':'3')+' · Ridisegnalo su carta';
  $('#prms').innerHTML=f.params.map(q=>{
   if(q.t==='r')return`<div class="prm"><label>${q.l}<b id="v_${q.k}">${String(p[q.k]).replace('.',',')}${q.u?' '+q.u:''}</b></label><input type="range" data-k="${q.k}" min="${q.min}" max="${q.max}" step="${q.step}" value="${p[q.k]}"></div>`;
@@ -1534,6 +1547,27 @@ window.addEventListener('pointermove',e=>{if(painting)paintAt(e)});
 window.addEventListener('pointerup',()=>{painting=false});
 $('#edRnd').onclick=()=>{S.seed=Math.floor(Math.random()*1e6);const p=S.p.piastrelle;S.tile=randomTile(rngFrom(S.seed),p.ncol,p.simm);buildEditor();render(true)};
 $('#edClr').onclick=()=>{S.tile=S.tile.map(()=>({t:0,c:0}));buildEditor();render()};
+/* ---- dalla foto al modulo: l’immagine viene ridotta a 8 × 8 quadretti pieni, vuoti o tagliati dalla diagonale; non lascia il dispositivo ---- */
+$('#edFoto').onclick=()=>$('#edFile').click();
+$('#edFile').onchange=e=>{const file=e.target.files[0];e.target.value='';if(!file)return;
+ const img=new Image(),url=URL.createObjectURL(file);
+ img.onerror=()=>{URL.revokeObjectURL(url);toast('Non riesco a leggere questa immagine')};
+ img.onload=()=>{try{
+  const N=8,K=10,cv=document.createElement('canvas');cv.width=cv.height=N*K;const x=cv.getContext('2d'),m=Math.min(img.width,img.height);
+  x.fillStyle='#fff';x.fillRect(0,0,N*K,N*K);x.drawImage(img,(img.width-m)/2,(img.height-m)/2,m,m,0,0,N*K,N*K);URL.revokeObjectURL(url);
+  const d=x.getImageData(0,0,N*K,N*K).data,lum=i=>.299*d[i]+.587*d[i+1]+.114*d[i+2];
+  let media=0;for(let i=0;i<d.length;i+=4)media+=lum(i);media/=d.length/4;       // scuro = sotto la luminosità media della foto
+  const pal=PALS[S.pal],rgb=pal.c.map(hex2rgb),IN={2:(u,v)=>u+v<1,3:(u,v)=>u>v,4:(u,v)=>u+v>1,5:(u,v)=>u<v};
+  S.tile=Array.from({length:64},(_,n)=>{const cx=n%N,cy=Math.floor(n/N);let scuri=0;const col=[0,0,0],tri={2:0,3:0,4:0,5:0};
+   for(let py=0;py<K;py++)for(let px=0;px<K;px++){const i=((cy*K+py)*N*K+cx*K+px)*4,s=lum(i)<media,u=(px+.5)/K,v=(py+.5)/K;
+    if(s){scuri++;col[0]+=d[i];col[1]+=d[i+1];col[2]+=d[i+2]}
+    for(const t in IN)tri[t]+=(IN[t](u,v)===s)?1:0}
+   const f=scuri/(K*K);if(f<.22)return{t:0,c:0};
+   const c=col.map(v=>v/scuri);let ci=0,dm=1e9;rgb.forEach((r,k)=>{const q=(r[0]-c[0])**2+(r[1]-c[1])**2+(r[2]-c[2])**2;if(q<dm){dm=q;ci=k}});
+   if(f>.78)return{t:1,c:ci};
+   let bt=2;for(const t in tri)if(tri[t]>tri[bt])bt=+t;return{t:bt,c:ci}});
+  buildEditor();render(true);toast('Modulo ricavato dalla foto')}catch(err){toast('Non riesco a leggere questa immagine')}};
+ img.src=url};
 
 function tabsOn(){document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('on',x.dataset.v===S.view))}
 document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{S.view=b.dataset.v;tabsOn();render(true)});
@@ -1585,7 +1619,7 @@ function sheetFile(){const r=sheetSvg(compute(false),opts(),true);return svgFile
 let DL=null;
 const SUL_LIBRO=/(^|\.)proftecnologia\.it$|\.vercel\.app$|\.github\.io$|^localhost$|^127\.0\.0\.1$/.test(location.hostname)||location.protocol==='file:';
 if(!SUL_LIBRO)(async()=>{try{if(window.claude&&window.claude.use)DL=await window.claude.use('downloads')}catch(e){DL=null}
- if(!DL){$('#dSvg').hidden=$('#dPng').hidden=$('#dSheet').hidden=true;$('#cSvg').hidden=false}})();
+ if(!DL){$('#dSvg').hidden=$('#dPng').hidden=$('#dSheet').hidden=$('#dStl').hidden=true;$('#cSvg').hidden=false}})();
 async function save(filename,data){
  if(DL){try{await DL.save({filename,data})}catch(e){toast('Download annullato')}return}
  if(!SUL_LIBRO){toast('Download non disponibile: usa «Copia SVG»');return}
@@ -1598,6 +1632,23 @@ $('#dPng').onclick=()=>{const svg=compFile(),img=new Image(),url=URL.createObjec
  img.onload=()=>{const sc=2400/Math.max(img.width,img.height),cv=document.createElement('canvas');cv.width=Math.round(img.width*sc);cv.height=Math.round(img.height*sc);
   const x=cv.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,cv.width,cv.height);x.drawImage(img,0,0,cv.width,cv.height);URL.revokeObjectURL(url);
   cv.toBlob(b=>save(fname()+'.png',b),'image/png')};img.onerror=()=>toast('PNG non riuscito');img.src=url};
+/* ---- il timbro 3D: il modulo delle piastrellature in rilievo su una base, specchiato (stampando torna dritto) ---- */
+function timbroSTL(){
+ const s=S.p.piastrelle.lato*10,q=s/8,B=3,H=2,F=[];
+ const tri=(a,b,c)=>F.push([a,b,c]);
+ const prisma=(pts,z0,z1)=>{                      // pts in senso antiorario visti dall’alto (asse z verso l’alto)
+  for(let i=1;i<pts.length-1;i++){tri([...pts[0],z1],[...pts[i],z1],[...pts[i+1],z1]);tri([...pts[0],z0],[...pts[i+1],z0],[...pts[i],z0])}
+  pts.forEach((a,i)=>{const b=pts[(i+1)%pts.length];tri([...a,z0],[...b,z0],[...b,z1]);tri([...a,z0],[...b,z1],[...a,z1])})};
+ prisma([[0,0],[s,0],[s,s],[0,s]],0,B);
+ S.tile.forEach((c,n)=>{if(!c.t)return;const cx=(n%8)*q,cy=Math.floor(n/8)*q;
+  // x specchiata (s − x) e y ribaltata (s − y): due ribaltamenti lasciano il verso dei vertici, poi lo si rende antiorario
+  let pts=TRI[c.t].map(v=>[s-(cx+v[0]*q),s-(cy+v[1]*q)]);
+  let A=0;pts.forEach((a,i)=>{const b=pts[(i+1)%pts.length];A+=a[0]*b[1]-b[0]*a[1]});if(A<0)pts=pts.reverse();
+  prisma(pts,B,B+H)});
+ const nrm=(a,b,c)=>{const u=[b[0]-a[0],b[1]-a[1],b[2]-a[2]],v=[c[0]-a[0],c[1]-a[1],c[2]-a[2]],n=[u[1]*v[2]-u[2]*v[1],u[2]*v[0]-u[0]*v[2],u[0]*v[1]-u[1]*v[0]],l=Math.hypot(...n)||1;return n.map(x=>x/l)};
+ return'solid timbro\n'+F.map(t=>{const n=nrm(...t);return`facet normal ${n.map(f2).join(' ')}\nouter loop\n${t.map(p=>'vertex '+p.map(f2).join(' ')).join('\n')}\nendloop\nendfacet`}).join('\n')+'\nendsolid timbro\n';
+}
+$('#dStl').onclick=()=>{if(!S.tile.some(c=>c.t)){toast('Il modulo è vuoto: disegna qualche quadretto');return}save('timbro-'+fname()+'.stl',new Blob([timbroSTL()],{type:'model/stl'}))};
 $('#cSvg').onclick=async()=>{try{await navigator.clipboard.writeText(sheetFile());toast('SVG della tavola copiato')}catch(e){toast('Copia non consentita')}};
 function toast(t){const el=$('#toast');el.textContent=t;el.classList.add('on');clearTimeout(toast._t);toast._t=setTimeout(()=>el.classList.remove('on'),2200)}
 
@@ -1803,7 +1854,7 @@ function animPasso(dir){
 }
 /** Apre (o ricostruisce) la costruzione animata del disegno in vista. restart = da capo; altrimenti resta sul passo in corso. */
 function animStart(restart){
- if(S.view==='sheet'){S.view='comp';tabsOn()}
+ if(!piana()){S.view='comp';tabsOn()}
  const s0=AN.on&&!restart&&AN.cur>=0?AN.steps[AN.cur]:null;
  const prima=s0?{k:AN.cur,n:AN.steps.length,f:(AN.t-s0.t0)/(s0.t1-s0.t0),play:AN.playing,fine:AN.t>=AN.T-1e-6}:null;
  cancelAnimationFrame(AN.raf);
@@ -1849,7 +1900,7 @@ $('#steps').addEventListener('click',e=>{
    «Disegno con gli specchi»: ogni segno è scritto una volta sola (nel modulo) e mostrato con <use> in tutte le sue copie,
    così mentre la mano si muove il motivo intero si aggiorna da solo.
    «Tassello a incastro»: i pallini spostano insieme due lati opposti; il contorno resta sempre un tassello che ricopre il piano. */
-const vivaLive=()=>!!FAM[S.fam].viva&&S.view!=='sheet'&&!AN.on;
+const vivaLive=()=>!!FAM[S.fam].viva&&piana()&&!AN.on;
 const VU={specchi:[],incastro:[]};            // cronologia per «Annulla»
 const MAX_SEGNI=60,MAX_PUNTI=400;
 /** Fotografia dello stato da ripristinare: il disegno e i quadretti per lato (da cui dipende la forma dei lati). */
@@ -2046,6 +2097,7 @@ function buildViva(){
 function vivaHint(){
  const inc=S.fam==='incastro',VAR=' «Genera una variante» sostituisce il tuo disegno con uno casuale: con «Annulla» lo riprendi.';
  $('#vHint').textContent=AN.on?'Stai guardando la costruzione animata. Per disegnare ancora premi «Torna al disegno finito».'
+  :S.view==='floor'?'Il pavimento è solo da guardare. Per disegnare torna a «Composizione».'
   :!inc?'Disegna con il dito o con il mouse direttamente sulla composizione: ogni segno viene copiato dentro il modulo come hai scelto in «Specchi dentro il modulo» e si ripete in tutti i moduli.'
     +(dispInutile(S.p.specchi.simm,S.p.specchi.disp)?' Con questo modulo la disposizione che hai scelto non cambia il disegno: è già simmetrico.':'')+VAR
   :S.vmodo==='lati'?'Trascina i pallini bianchi del tassello evidenziato: si spostano di un quadretto alla volta, al massimo di 3. Se cambi il lato in alto, cambia nello stesso modo anche il lato in basso; lo stesso vale per il lato sinistro e il lato destro. Così i tasselli continuano a incastrarsi. Se cambi i quadretti per lato, i lati tornano dritti: fallo prima di modellare il tassello.'+VAR

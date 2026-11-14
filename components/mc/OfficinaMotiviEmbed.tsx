@@ -35,7 +35,7 @@ export default function OfficinaMotiviEmbed({ className = "" }: { className?: st
           <iframe
             src={src}
             title={OFFICINA_MOTIVI.titolo}
-            className="block h-[860px] w-full border-0"
+            className="block h-[min(860px,88svh)] w-full border-0"
             loading="lazy"
             allow="fullscreen"
             allowFullScreen
