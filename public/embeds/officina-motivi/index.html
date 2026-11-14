@@ -110,6 +110,44 @@ details summary{cursor:pointer;font-weight:700;font-size:.9rem;min-height:30px;c
   .stagewrap{flex:none;height:62vh;min-height:300px}
   .cap{flex-direction:column;gap:2px;min-height:0}
 }
+/* ---- telefono: il disegno resta in vista in alto, i comandi scorrono sotto ---- */
+@media (max-width:760px){
+  header{order:0;padding:8px 12px;gap:10px;flex-wrap:nowrap}
+  header>svg{width:30px;height:30px;flex:none}
+  header h1{font-size:1.05rem;margin:0}
+  header .sub,header .chips,#bFull{display:none}
+  #bGen{font-size:14px;padding:6px 12px;white-space:nowrap}
+  main{order:1;background:var(--bg);border-bottom:1px solid var(--line)}
+  aside{order:3;padding:10px}
+  aside:first-of-type{order:2}
+  .tabs{margin:0 8px;padding:2px 0 0;gap:0}
+  .tab{flex:1;font-size:14px;padding:8px 4px;line-height:1.15}
+  .stagewrap{height:44vh;min-height:230px;margin:6px 8px}
+  .bar{flex-wrap:nowrap;overflow-x:auto;padding:0 8px 8px;-webkit-overflow-scrolling:touch}
+  .bar .btn{flex:none}
+  #dims{display:none}
+  .player{margin:0 8px 8px;padding:8px 10px}
+  .cap{font-size:1rem;max-height:5.6em;overflow:auto}
+  .pctl{gap:6px;margin-top:6px}
+  .pctl input[type=range]{order:9;flex:1 0 100%}
+  /* i motivi in una striscia che scorre di lato, invece di dieci righe */
+  .fams{grid-template-columns:none;grid-template-rows:auto auto;grid-auto-flow:column;grid-auto-columns:136px;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+  .fam{scroll-snap-align:start}
+  .fsub{grid-column:auto;grid-row:1/3;align-self:center;margin:0 2px;writing-mode:vertical-rl;transform:rotate(180deg);font-size:10px;white-space:nowrap}
+  .sec{padding:12px;margin-bottom:10px}
+  .btn.sm{min-height:44px}
+  .sw{width:38px;height:38px}
+  .tool{width:46px;height:46px}
+  .pal{padding:5px}
+  .pal i{width:16px;height:30px}
+  select,input[type=text]{min-height:44px;font-size:16px}
+  input[type=range]{height:32px}
+}
+/* telefono in verticale con schermo abbastanza alto: il disegno resta fisso mentre regoli */
+@media (max-width:760px) and (min-height:600px){
+  main{position:sticky;top:0;z-index:5}
+  main:has(#player:not([hidden])){position:static}   /* con la costruzione animata aperta si scorre liberamente fino ai passi */
+}
 </style>
 </head>
 <body>
@@ -1442,7 +1480,11 @@ function render(restart){
 /* ============ UI ============ */
 function buildFams(){
  const btn=k=>`<button class="fam${k===S.fam?' on':''}" data-f="${k}"><svg viewBox="0 0 26 26" width="26" height="26"><path d="${FAM[k].icon}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>${FAM[k].name}</button>`;
- $('#fams').innerHTML=ORDER.map(btn).join('')+'<div class="fsub">Oppure disegna tu</div>'+VIVE.map(btn).join('');
+ const box=$('#fams'),sx=box.scrollLeft;       // sul telefono l’elenco è una striscia che scorre: non deve tornare all’inizio
+ box.innerHTML=ORDER.map(btn).join('')+'<div class="fsub">Oppure disegna tu</div>'+VIVE.map(btn).join('');
+ box.scrollLeft=sx;
+ const on=box.querySelector('.fam.on');
+ if(on&&box.scrollWidth>box.clientWidth+2){const r=on.getBoundingClientRect(),rb=box.getBoundingClientRect();if(r.left<rb.left)box.scrollLeft-=rb.left-r.left+8;else if(r.right>rb.right)box.scrollLeft+=r.right-rb.right+8}
  document.querySelectorAll('.fam').forEach(b=>b.onclick=()=>{S.fam=b.dataset.f;buildFams();buildParams();render(true)});
 }
 function buildParams(){
@@ -1915,7 +1957,8 @@ function vivaDown(e){
   return}
  const G=incGeom(o);
  if(S.vmodo==='lati'){
-  let scelto=null,dmin=Math.max(G.q*.6,G.r*2.2);
+  const m=$('#stage').getScreenCTM(),px=m&&m.a?1/m.a:0;        // quanti mm vale un pixel: sul telefono il dito deve trovare il pallino
+  let scelto=null,dmin=Math.max(G.q*.6,G.r*2.2,22*px);
   incHandles(G).forEach(h=>{const d=Math.hypot(pt[0]-h.x,pt[1]-h.y);if(d<dmin){dmin=d;scelto=h}});
   if(!scelto)return;
   Object.assign(DR,{on:true,kind:'lato',h:scelto,G,mosso:false,prima:vivaFoto()});
