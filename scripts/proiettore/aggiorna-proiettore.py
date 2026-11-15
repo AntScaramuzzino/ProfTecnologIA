@@ -425,13 +425,16 @@ css += """
 }
 
 /* ---- lavagna (?lim=1): la scena sta tutta nello schermo, testi e pulsanti grandi ---- */
-html.lim{font-size:20px}
+@media (min-width:1100px) and (min-height:600px){html.lim{font-size:20px}}
 .lim .commessa,.lim .tavola__testata,.lim .cartiglio,.lim .cad-cursor{display:none!important}
 .lim body{min-height:0}
 .lim .tavola{padding:.8rem 1rem}
+/* le due colonne e la scena alta quanto lo schermo solo su uno schermo grande: su telefono e tablet resta il layout normale */
+@media (min-width:1100px) and (min-height:600px){
 .lim .proiettore__corpo{grid-template-columns:minmax(0,1fr) 19rem;gap:1rem;align-items:start}
 .lim .proiettore__scena{gap:.6rem;width:100%;max-width:calc(100vh - 4.6rem);margin-inline:auto}
 .lim .proiettore__comandi{top:.8rem;padding:1rem;gap:1rem;max-height:calc(100vh - 1.6rem)}
+}
 .lim .vetro__nome{font-size:.75rem}
 .lim .chip{font-size:.8rem;padding:.5rem .3rem}
 .lim .tasto{font-size:.85rem;padding:.65rem .8rem}

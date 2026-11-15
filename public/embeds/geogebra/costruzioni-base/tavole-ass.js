@@ -280,7 +280,7 @@
         },
       };
 
-      costruisci(a, k);
+      costruisci(a, k, t);
     });
   }
 
@@ -696,6 +696,131 @@
     a.passo();
 
     // Passo 5 · ripasso: 9 spigoli in vista, 3 nascosti
+    const r = finestre(12, 0.06, 0.88);
+    [["OA", O, A], ["AE", A, E], ["ED", E, D], ["DO", D, O],
+      ["OC", O, C], ["CG", C, G], ["GD", G, D], ["EF", E, F], ["FG", F, G]]
+      .forEach(([nome, da, fino], i) => a.ripassa(nome, da, fino, r[i]));
+    [["AB", A, B], ["CB", C, B], ["BF", B, F]].forEach(([nome, da, fino], i) => a.nascosto(nome, da, fino, r[9 + i]));
+    a.faccia("Fronte", [O, A, E, D], "PV");
+    a.faccia("Sopra", [D, E, F, G], "PO");
+    a.faccia("Fianco", [O, C, G, D], "PL");
+    a.passo();
+  });
+
+  // ── Tavola 13 · Il parallelepipedo isometrico con riga e squadra ─────────────
+  // Come nei libri: la riga sta ferma in orizzontale, la squadra a 30° e 60° ci scorre sopra. Appoggiata da un verso
+  // dà le linee parallele all'asse x, girata dà quelle parallele all'asse y, in piedi dà le verticali (squadre.js).
+  TAVOLE["ass-parallelepipedo-isometrica-squadre"] = creaAssonometria({
+    title: "Il parallelepipedo isometrico con riga e squadra",
+    eyebrow: "Tavola 13 · Riga e squadra a 30° e 60°",
+    subtitle: "Lo stesso parallelepipedo della tavola 4: base di 6 × 4 cm, altezza 8 cm. Questa volta ogni linea si traccia lungo il bordo della squadra a 30° e 60°, che scorre su una riga tenuta ferma in orizzontale.",
+    filename: "MC-DIS-2-02_ass-parallelepipedo-isometrica-squadre.ggb",
+    proofTitle: "Perché basta una squadra",
+    proofCopy: "In isometrica ogni spigolo del solido va in una di tre direzioni: verticale, 30° verso destra, 30° verso sinistra. La squadra a 30° e 60° le dà tutte e tre. Appoggiata sulla riga con il cateto lungo, il suo lato più lungo sale di 30°: verso destra o verso sinistra, secondo come la giri. In piedi sulla riga, il cateto lungo è verticale. Se la fai scorrere lungo la riga senza girarla, il lato che usi resta parallelo a sé stesso: per questo tutte le linee tracciate in una posizione della squadra sono parallele.",
+    equality: "Tre direzioni: verticale, 30° a destra, 30° a sinistra",
+    steps: [
+      ["Prima di iniziare", "Leggi i dati e prepara gli strumenti", `${INTRO} Il parallelepipedo è quello della tavola 4: larghezza 6 cm, profondità 4 cm, altezza 8 cm. ${VISTE} Ti servono una riga lunga da tenere ferma, un righello per misurare, la squadra a 30° e 60° e una matita. Segna il punto O in basso, un po’ a sinistra del centro del foglio: ti servono almeno 5 cm a sinistra di O, 7 cm a destra e 14 cm sopra.`, "La riga la tieni ferma con una mano; con l’altra fai scorrere la squadra appoggiata alla riga."],
+      ["Passo 1 · Riga", "La linea orizzontale", "Appoggia la riga in orizzontale, con il bordo che passa per O. Lungo il bordo traccia una linea sottile: è il riferimento da cui partono gli assi. Da qui in poi la riga resta ferma fino alla fine del passo 7.", "Tutte le linee del disegno si tracciano con la squadra appoggiata a questa riga."],
+      ["Passo 2 · Squadra in piedi", "L’asse z", "Appoggia sulla riga la squadra a 30° e 60°, in piedi: il cateto lungo è verticale. Falla scorrere fino a O e, seguendo il cateto lungo, traccia l’asse z: almeno 8 cm.", "La squadra in piedi sulla riga dà sempre linee perpendicolari alla riga, cioè verticali."],
+      ["Passo 3 · Squadra a 30°", "L’asse x", "Stendi la squadra sulla riga con il cateto lungo appoggiato e l’angolo di 30° a sinistra. Falla scorrere finché l’angolo di 30° tocca O. Lungo il lato più lungo, l’ipotenusa, traccia l’asse x: sale di 30° verso destra.", "Il cateto lungo è quello opposto all’angolo di 60°: appoggiato sulla riga, fa salire l’ipotenusa di 30°."],
+      ["Passo 4 · Squadra girata", "L’asse y", "Gira la squadra: ora l’angolo di 30° sta a destra. Falla scorrere finché l’angolo di 30° tocca O e lungo l’ipotenusa traccia l’asse y: sale di 30° verso sinistra.", "Gli assi x e y hanno la stessa inclinazione, uno verso destra e uno verso sinistra."],
+      ["Passo 5 · Misure", "Riporta le tre misure sugli assi", "Con il righello misura 6 cm da O sull’asse x e segna il punto A. Misura 4 cm sull’asse y e segna il punto C. Misura 8 cm sull’asse z e segna il punto D.", "In isometrica tutte le misure lungo gli assi sono vere: non si dimezza niente."],
+      ["Passo 6 · La base", "Chiudi la base", "Con l’angolo di 30° a destra, fai scorrere la squadra sulla riga finché l’ipotenusa passa per A: traccia da A una linea verso sinistra, parallela all’asse y. Poi gira la squadra, con l’angolo di 30° a sinistra, e falla scorrere finché l’ipotenusa passa per C: traccia da C una linea verso destra, parallela all’asse x. Le due linee si incontrano nel punto B.", "Controlla con il righello: AB misura 4 cm e CB misura 6 cm."],
+      ["Passo 7 · Squadra in piedi", "Alza gli spigoli verticali", "Rimetti la squadra in piedi sulla riga. Falla scorrere fino ad A e traccia una verticale lunga 8 cm: trovi il punto E. Fai lo stesso da B e da C: trovi i punti F e G.", "I tre spigoli verticali sono lunghi 8 cm, come OD."],
+      ["Passo 8 · Riga più in alto", "Due spigoli della faccia di sopra", "Prima di spostare la riga, appoggia la squadra in piedi un po’ più a sinistra di O, traccia una verticale corta e segna su di essa 8 cm sopra la linea del passo 1. Poi sposta la riga in alto e appoggiala su D e su quel segno: la squadra appoggiata in basso non arriva fin lassù. Appoggia la squadra con l’angolo di 30° a sinistra e falla scorrere finché l’ipotenusa passa per D: unisci D con E. Falla scorrere verso sinistra finché l’ipotenusa passa per G: unisci G con F.", "DE e GF sono parallele all’asse x: la squadra non la giri, la fai solo scorrere."],
+      ["Passo 9 · Squadra girata", "Chiudi la faccia di sopra", "Gira la squadra, con l’angolo di 30° a destra. Falla scorrere finché l’ipotenusa passa per D e unisci D con G. Poi falla scorrere verso destra finché l’ipotenusa passa per E e unisci E con F.", "DG ed EF sono parallele all’asse y."],
+      ["Passo 10 · Ripasso", "Ripassa gli spigoli", `Togli la riga e la squadra. Ripassa con un tratto deciso gli spigoli delle tre facce in vista: OAED davanti, OCGD a sinistra, DEFG sopra. I tre spigoli che partono da B stanno dietro: disegnali tratteggiati, cioè a trattini. ${COLORI}`, "Come nella tavola 4: 9 spigoli in vista e 3 nascosti."],
+    ],
+  }, "isometrica", { sinistra: 5.6, destra: 13.4, alto: 14.2, basso: 2.2 }, (a, k, t) => {
+    const S = window.GGB_SQUADRE(k, t);
+    const larg = 6, prof = 4, alt = 8;
+    const O = a.O, A = a.p(larg, 0, 0), B = a.p(larg, prof, 0), C = a.p(0, prof, 0);
+    const D = a.p(0, 0, alt), E = a.p(larg, 0, alt), F = a.p(larg, prof, alt), G = a.p(0, prof, alt);
+    const cot30 = Math.sqrt(3);
+    /** Dove la linea a 30° (verso destra o verso sinistra) che passa per q incontra il bordo della riga, all'altezza y. */
+    const piede = (q, y, versoDestra) => [q[0] + (versoDestra ? -1 : 1) * (q[1] - y) * cot30, y];
+
+    a.treViste({ larg, prof, alt }, [8.6, 7.2]);
+    a.origine();
+    a.passo();
+
+    // Passo 1 · riga e linea orizzontale
+    S.strumento("R1", "riga", S.riga(-1.5), S.riga(0), [0.04, 0.35]);
+    a.orizzontale(-5.2, 7.2, [0.42, 0.92]);
+    a.passo();
+
+    // Passo 2 · squadra in piedi: asse z
+    S.strumento("R2", "riga", S.riga(0), null, [0.01, 0.02]);
+    S.strumento("Q2", "3060", S.verticale([-3, 0]), S.verticale([0, 0]), [0.04, 0.32]);
+    a.asse("z", 8, [0.38, 0.92], [-0.75, -0.6]);
+    a.passo();
+
+    // Passo 3 · squadra a 30°: asse x
+    S.strumento("R3", "riga", S.riga(0), null, [0.01, 0.02]);
+    S.strumento("Q3", "3060", S.trenta([-3, 0]), S.trenta([0, 0]), [0.04, 0.3]);
+    a.asse("x", 7.6, [0.36, 0.8]);
+    a.angolo("X", 0, 30, "30°", 0.84, 2.2);
+    a.passo();
+
+    // Passo 4 · squadra girata: asse y
+    S.strumento("R4", "riga", S.riga(0), null, [0.01, 0.02]);
+    S.strumento("Q4", "3060", S.trentaSinistra([3, 0]), S.trentaSinistra([0, 0]), [0.04, 0.3]);
+    a.asse("y", 5.4, [0.36, 0.8], [-0.45, 0.15]);
+    a.angolo("Y", 150, 180, "30°", 0.84, 2.2);
+    a.passo();
+
+    // Passo 5 · le tre misure (con il righello: niente squadre)
+    a.misura("Larg", O, A, "6 cm", 0.12, "giu", [1.1, 0.15]);
+    a.punto("A", A, "A", 0.14, [0.25, -0.5]);
+    a.misura("Prof", O, C, "4 cm", 0.4, "giu", [-1.25, 0.2]);
+    a.punto("C", C, "C", 0.42, [-0.6, -0.45]);
+    a.misura("Alt", O, D, "8 cm", 0.68, "dx", [0, -1.35]);
+    a.punto("D", D, "D", 0.7, [0.2, 0.2]);
+    a.passo();
+
+    // Passo 6 · base: AB (parallela a y) e CB (parallela a x)
+    S.strumento("R6", "riga", S.riga(0), null, [0.01, 0.02]);
+    const pA = piede(A, 0, false), pC = piede(C, 0, true);
+    S.strumento("Q6a", "3060", S.trentaSinistra([pA[0] + 2.5, 0]), S.trentaSinistra(pA), [0.04, 0.22], { via: 0.5 });
+    a.figura("AB", A, B, [0.25, 0.46]);
+    S.strumento("Q6b", "3060", S.trenta([pC[0] - 2.5, 0]), S.trenta(pC), [0.52, 0.68]);
+    a.figura("CB", C, B, [0.71, 0.9]);
+    a.punto("B", B, "B", 0.92, [-0.17, -0.8]);
+    a.passo();
+
+    // Passo 7 · squadra in piedi: spigoli verticali da A, B, C
+    S.strumento("R7", "riga", S.riga(0), null, [0.01, 0.02]);
+    S.strumento("Q7a", "3060", S.verticale([A[0] + 2.5, 0]), S.verticale([A[0], 0]), [0.03, 0.14], { via: 0.36 });
+    a.figura("AE", A, E, [0.15, 0.33]);
+    a.punto("E", E, "E", 0.34, [0.25, -0.1]);
+    S.strumento("Q7b", "3060", S.verticale([A[0], 0]), S.verticale([B[0], 0]), [0.36, 0.44], { via: 0.66 });
+    a.figura("BF", B, F, [0.45, 0.63]);
+    a.punto("F", F, "F", 0.64, [-0.15, 0.3]);
+    S.strumento("Q7c", "3060", S.verticale([B[0], 0]), S.verticale([C[0], 0]), [0.66, 0.74]);
+    a.figura("CG", C, G, [0.75, 0.93]);
+    a.punto("G", G, "G", 0.94, [-0.6, 0]);
+    a.passo();
+
+    // Passo 8 · riga per D: DE e GF (parallele a x)
+    const yR = D[1], daR = -15;                           // la riga arriva fino a x = 11: la squadra resta appoggiata
+    S.strumento("R8", "riga", S.riga(0, daR), S.riga(yR, daR), [0.03, 0.24]);
+    const pG = piede(G, yR, true);
+    S.strumento("Q8a", "3060", S.trenta([D[0] - 2.5, yR]), S.trenta(D), [0.28, 0.4], { via: 0.62 });
+    a.figura("DE", D, E, [0.42, 0.6]);
+    S.strumento("Q8b", "3060", S.trenta(D), S.trenta(pG), [0.62, 0.72]);
+    a.figura("GF", G, F, [0.74, 0.94]);
+    a.passo();
+
+    // Passo 9 · squadra girata: DG ed EF (parallele a y)
+    S.strumento("R9", "riga", S.riga(yR, daR), null, [0.01, 0.02]);
+    const pE = piede(E, yR, false);
+    S.strumento("Q9a", "3060", S.trentaSinistra([D[0] + 2.5, yR]), S.trentaSinistra(D), [0.04, 0.18], { via: 0.42 });
+    a.figura("DG", D, G, [0.2, 0.4]);
+    S.strumento("Q9b", "3060", S.trentaSinistra(D), S.trentaSinistra(pE), [0.44, 0.58]);
+    a.figura("EF", E, F, [0.62, 0.92]);
+    a.passo();
+
+    // Passo 10 · ripasso: 9 spigoli in vista, 3 nascosti
     const r = finestre(12, 0.06, 0.88);
     [["OA", O, A], ["AE", A, E], ["ED", E, D], ["DO", D, O],
       ["OC", O, C], ["CG", C, G], ["GD", G, D], ["EF", E, F], ["FG", F, G]]

@@ -374,7 +374,7 @@
         f.scritta("CartF", "Classe ..... Data .....", [x2 + 0.3, -basso - 1.45], MATITA);
       }
 
-      costruisci(f, k);
+      costruisci(f, k, t);
 
       // Foglio tecnico: anche i segni di compasso creati direttamente con `k` (tavola 6) diventano a matita.
       if (TECNICO) {
@@ -2117,6 +2117,116 @@
       f.passo();
     });
   }
+
+  // ── Tavola 18 · Il cubo con riga e squadre ──────────────────────────────────
+  // Come nei libri: la riga sta ferma, la squadra ci scorre sopra. Al posto del compasso, la squadra a 45°
+  // porta le distanze dal PV dal PO al PL (squadre.js). Passi brevi: al massimo due o tre gesti per passo.
+  TAVOLE["po-cubo-squadre"] = creaFoglio({
+    title: "Il cubo con riga e squadre",
+    eyebrow: "Tavola 18 · Riga, squadra a 30° e 60°, squadra a 45°",
+    subtitle: "Cubo con lo spigolo di 5 cm, appoggiato sul PO, a 2 cm dal PV e a 2 cm dal PL. Ogni linea si traccia lungo il bordo della riga o di una squadra; le distanze passano dal PO al PL con la squadra a 45°, senza compasso.",
+    filename: "MC-DIS-2-01_po-cubo-squadre.ggb",
+    proofTitle: "Perché la linea a 45° sostituisce il compasso",
+    proofCopy: "La linea a 45° che parte da O divide a metà l’angolo retto del riquadro in basso a destra: ogni suo punto sta alla stessa distanza dalla LT e dall’asse verticale. Se arrivi su quella linea con una linea orizzontale che sta 2 cm sotto la LT, ti trovi 2 cm a destra dell’asse verticale. Così la distanza dal PV passa dal PO al PL senza cambiare: è lo stesso lavoro dell’arco di compasso, fatto con una squadra.",
+    equality: "PO, PV e PL: tre quadrati di 5 × 5 cm",
+    steps: [
+      ["Prima di iniziare", "Leggi i dati e prepara gli strumenti", `${prepara(9, 9, 7, 10)} Il cubo ha lo spigolo di 5 cm. È appoggiato sul PO, con due facce parallele al PV: dista 2 cm dal PV e 2 cm dal PL. Ti servono una riga con le tacche dei centimetri, la squadra a 30° e 60° e la squadra a 45°.`, "La riga sta ferma e la tieni con una mano; con l’altra fai scorrere la squadra appoggiata alla riga. Ogni volta che sposti la riga, tienila parallela alla LT: appoggiala su una linea già tracciata o su due segni alla stessa distanza dalla LT."],
+      ["Passo 1 · Riga", "Il lato in basso del quadrato", "Nel PO fai due segni 7 cm sotto la LT, uno a sinistra e uno a destra, e appoggia la riga su quei due segni. Lungo il bordo traccia il lato in basso del quadrato: dal punto a 7 cm al punto a 2 cm a sinistra dell’asse verticale.", "7 cm = 2 cm di distanza dal PV + 5 cm di spigolo."],
+      ["Passo 2 · Squadra", "I due lati verticali", "Appoggia sulla riga la squadra a 30° e 60°, in piedi: il cateto lungo è verticale. Falla scorrere fino all’estremo sinistro del lato e traccia un lato verticale lungo 5 cm. Poi falla scorrere fino all’estremo destro e traccia l’altro.", "La squadra in piedi sulla riga dà sempre linee perpendicolari alla riga."],
+      ["Passo 3 · Riga", "Chiudi il quadrato", "Sposta la riga in alto finché il bordo tocca le estremità in alto dei due lati verticali, 2 cm sotto la LT, e lungo il bordo traccia il quarto lato. Il quadrato è la vista dall’alto del cubo.", "Controlla con la squadra i quattro angoli retti."],
+      ["Passo 4 · Verso il PV", "Prolunga i lati verso l’alto", "Rimetti la riga 7 cm sotto la LT. Fai scorrere la squadra fino al lato sinistro del quadrato e prolungalo verso l’alto, oltre la LT, con una linea sottile. Fai lo stesso con il lato destro.", "Le linee sottili sono linee di proiezione: portano la larghezza del cubo, 5 cm, dal PO al PV."],
+      ["Passo 5 · Sul PV", "Chiudi il prospetto", "Su tutte e due le verticali misura 5 cm dalla LT e fai un segno. Appoggia la riga sui due segni e lungo il bordo traccia il lato in alto del prospetto.", "Il prospetto è un quadrato di 5 cm appoggiato sulla LT."],
+      ["Passo 6 · Squadra a 45°", "La linea a 45° da O", "Sposta la riga in basso, circa 9,5 cm sotto la LT, più in basso del quadrato. Appoggiaci la squadra a 45° e falla scorrere finché l’ipotenusa, il suo lato più lungo, passa per O. Lungo l’ipotenusa traccia una linea sottile da O verso il basso a destra, nel riquadro in basso a destra.", "Questa linea prende il posto degli archi di compasso."],
+      ["Passo 7 · Riga", "Porta le distanze sulla linea a 45°", "Con la riga traccia due linee orizzontali sottili: una prolunga il lato in alto del quadrato del PO, l’altra il lato in basso. Falle arrivare fino alla linea a 45°: trovi i punti 1 e 2.", "Controlla con la riga: il punto 1 sta 2 cm a destra dell’asse verticale, il punto 2 a 7 cm."],
+      ["Passo 8 · Verso il PL", "Sali dai punti 1 e 2", "Appoggia la riga 8 cm sotto la LT, più in basso del punto 2. Fai scorrere la squadra in piedi fino al punto 1 e traccia una verticale sottile che sale oltre la LT. Poi fino al punto 2 e traccia l’altra.", "Le due verticali portano nel PL le distanze dal PV: 2 cm e 7 cm."],
+      ["Passo 9 · Sul PL", "Chiudi il fianco", "Sposta la riga all’altezza del lato in alto del prospetto, 5 cm sopra la LT, e prolunga quel lato verso destra, oltre la seconda verticale. Il lato in basso del fianco è sulla LT.", "Il fianco è un quadrato di 5 cm, tra 2 e 7 cm dall’asse verticale."],
+      ["Passo 10 · Ripasso", "Ripassa gli spigoli", "Ripassa con un tratto deciso i tre quadrati: sono gli spigoli del cubo visti dall’alto, di fronte e di fianco. Qui non servono linee tratteggiate: ogni spigolo nascosto cade esattamente sotto uno spigolo in vista.", "Il cubo ha tutte le misure uguali: per questo le tre viste sono tre quadrati uguali."],
+    ],
+  }, { sinistra: 9.6, destra: 9.4, alto: 7.4, basso: 10.2 }, (f, k, t) => {
+    const S = window.GGB_SQUADRE(k, t);
+    const lato = 5, dPV = 2, dPL = 2;
+    const xS = -dPL - lato, xD = -dPL;                        // -7 e -2
+    const yA = -dPV, yB = -dPV - lato;                        // -2 e -7
+    const p1 = dPV, p2 = dPV + lato;                          // 2 e 7
+    const su = lato + 0.9;
+    const yR45 = -9.5, yRPL = -8;
+
+    f.base();
+    f.passo();
+
+    // Passo 1 · riga e lato in basso
+    S.strumento("R1", "riga", S.riga(yB - 1.5), S.riga(yB), [0.04, 0.35]);
+    f.figura("RBasso", [xS, yB], [xD, yB], [0.4, 0.92]);
+    f.passo();
+
+    // Passo 2 · squadra in piedi: i due lati verticali
+    S.strumento("R2", "riga", S.riga(yB), null, [0.01, 0.02]);
+    S.strumento("Q2a", "3060", S.verticale([xS - 3, yB]), S.verticale([xS, yB]), [0.03, 0.22], { via: 0.5 });
+    f.figura("RSin", [xS, yB], [xS, yA], [0.24, 0.48]);
+    S.strumento("Q2b", "3060", S.verticale([xS, yB]), S.verticale([xD, yB]), [0.5, 0.7]);
+    f.figura("RDes", [xD, yB], [xD, yA], [0.72, 0.95]);
+    f.passo();
+
+    // Passo 3 · riga in alto: quarto lato
+    S.strumento("R3", "riga", S.riga(yB), S.riga(yA), [0.03, 0.4]);
+    f.figura("RAlto", [xS, yA], [xD, yA], [0.45, 0.94]);
+    f.passo();
+
+    // Passo 4 · verso il PV
+    S.strumento("R4", "riga", S.riga(yA), S.riga(yB), [0.02, 0.18]);
+    S.strumento("Q4a", "3060", S.verticale([xS - 3, yB]), S.verticale([xS, yB]), [0.2, 0.34], { via: 0.6 });
+    f.proietta("Sin", [xS, yA], [xS, su], [0.36, 0.58]);
+    S.strumento("Q4b", "3060", S.verticale([xS, yB]), S.verticale([xD, yB]), [0.6, 0.74]);
+    f.proietta("Des", [xD, yA], [xD, su], [0.76, 0.96]);
+    f.passo();
+
+    // Passo 5 · prospetto
+    f.misura("Alt", [xS, 0], [xS, lato], "5 cm", 0.1, "sx");
+    S.strumento("R5", "riga", S.riga(yB), S.riga(lato), [0.2, 0.5]);
+    f.figura("Sopra", [xS, lato], [xD, lato], [0.55, 0.95]);
+    f.passo();
+
+    // Passo 6 · squadra a 45°: linea da O
+    S.strumento("R6", "riga", S.riga(lato), S.riga(yR45), [0.02, 0.24]);
+    S.strumento("Q6", "45", { o: [-4, yR45], ang: 0 }, { o: [-(11 + yR45), yR45], ang: 0 }, [0.26, 0.48]);
+    f.proietta("Q45", [0, 0], [-yR45 - 1, yR45 + 1], [0.52, 0.95]);
+    f.passo();
+
+    // Passo 7 · orizzontali fino alla linea a 45°
+    S.strumento("R7a", "riga", S.riga(yR45), S.riga(yA), [0.02, 0.18], { via: 0.5 });
+    f.proietta("Uno", [xD, yA], [p1, yA], [0.2, 0.44]);
+    f.numero(1, [p1, yA], 0.46);
+    S.strumento("R7b", "riga", S.riga(yA), S.riga(yB), [0.5, 0.64]);
+    f.proietta("Due", [xD, yB], [p2, yB], [0.66, 0.9]);
+    f.numero(2, [p2, yB], 0.92);
+    f.passo();
+
+    // Passo 8 · verticali verso il PL
+    S.strumento("R8", "riga", S.riga(yB), S.riga(yRPL), [0.02, 0.12]);
+    S.strumento("Q8a", "3060", S.verticale([p1 - 3, yRPL]), S.verticale([p1, yRPL]), [0.14, 0.3], { via: 0.56 });
+    f.proietta("SuUno", [p1, yA], [p1, su], [0.32, 0.54]);
+    S.strumento("Q8b", "3060", S.verticale([p1, yRPL]), S.verticale([p2, yRPL]), [0.56, 0.7]);
+    f.proietta("SuDue", [p2, yB], [p2, su], [0.72, 0.96]);
+    f.passo();
+
+    // Passo 9 · fianco
+    S.strumento("R9", "riga", S.riga(yRPL), S.riga(lato), [0.03, 0.4]);
+    f.proietta("AltPL", [xD, lato], [p2 + 1.2, lato], [0.45, 0.95]);
+    f.passo();
+
+    // Passo 10 · ripasso
+    const r = finestre(12, 0.06, 0.93);
+    const quadrato = (sigla, x1, x2, y1, y2, da) => {
+      f.ripassa(`${sigla}a`, [x1, y1], [x2, y1], r[da]);
+      f.ripassa(`${sigla}b`, [x2, y1], [x2, y2], r[da + 1]);
+      f.ripassa(`${sigla}c`, [x2, y2], [x1, y2], r[da + 2]);
+      f.ripassa(`${sigla}d`, [x1, y2], [x1, y1], r[da + 3]);
+    };
+    quadrato("PO", xS, xD, yA, yB, 0);
+    quadrato("PV", xS, xD, 0, lato, 4);
+    quadrato("PL", p1, p2, 0, lato, 8);
+    f.passo();
+  });
 
   // ── Pulsante «Foglio tecnico» / «Foglio a colori»: ricarica la stessa tavola nell'altra modalità ──
   if ((PARAMETRI.get("activity") || "").startsWith("po-")) {

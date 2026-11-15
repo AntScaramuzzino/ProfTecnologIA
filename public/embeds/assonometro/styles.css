@@ -212,9 +212,12 @@ details.regole:not([open])>summary::after{content:"+"}
 /* ── alla LIM: tutto in uno schermo, comandi grandi ── */
 .lim .testata,.lim .asso__intro,.lim .asso__piede{display:none}
 .lim .asso{padding:12px;max-width:none}
-.lim .asso__corpo{grid-template-columns:minmax(0,1.38fr) minmax(0,1fr) minmax(300px,360px);gap:12px}
-.lim .foglio{aspect-ratio:auto;height:calc(100vh - 62px)}
-.lim .viste{aspect-ratio:auto;height:calc(60vh - 40px)}
+/* Il layout a tre colonne serve solo su uno schermo grande: su telefono e tablet il link «?lim=1» usa il layout normale. */
+@media (min-width:1100px) and (min-height:600px){
+  .lim .asso__corpo{grid-template-columns:minmax(0,1.38fr) minmax(0,1fr) minmax(300px,360px);gap:12px}
+  .lim .foglio{aspect-ratio:auto;height:calc(100vh - 62px)}
+  .lim .viste{aspect-ratio:auto;height:calc(60vh - 40px)}
+}
 .lim .chip,.lim .tasto{font-size:.92rem;min-height:48px}
 .lim .interruttori,.lim .regole__tabella,.lim .regole__nota,.lim .punto{font-size:1rem}
 .lim .gruppo__et,.lim .punto__titolo,.lim .pannello__et{font-size:.76rem}

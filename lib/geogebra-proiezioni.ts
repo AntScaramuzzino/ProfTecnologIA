@@ -238,6 +238,17 @@ export const TAVOLE_PO: TavolaPO[] = [
       "Nel PL i lati del cilindro arrivano a 3,5 cm dalla LT.",
     ],
     proiettoreProva: { solido: "cilindrosez", misure: { r: 2.5, alt: 7, q: 3.5, ang: 30 }, alfa: 0, beta: 0, etichetta: "Raggio 2,5 cm, altezza 7 cm · piano a 30° per il punto a 3,5 cm" } },
+  { numero: 18, slug: "cubo-squadre", pronta: true, titolo: "Il cubo con riga e squadre",
+    descrizione: "Tutte le linee con la riga e le squadre; la squadra a 45° al posto del compasso.",
+    intro: "Le tavole di prima usano il compasso per portare le distanze dal PO al PL. Qui guardi come si fa con le squadre, come nei libri: la riga sta ferma, la squadra ci scorre sopra, e una linea a 45° prende il posto degli archi. Prima guarda il cubo nel proiettore.",
+    proiettore: { solido: "cubo", misure: { lato: 5 }, alfa: 0, beta: 0, etichetta: "Cubo di lato 5 cm" },
+    provaTu: "Disegna con riga e squadre le proiezioni ortogonali di un parallelepipedo largo 6 cm, profondo 3 cm e alto 4 cm, appoggiato sul PO, con le facce più grandi parallele al PV. Dista 2 cm dal PV e 1 cm dal PL. Porta le distanze nel PL con la linea a 45°.",
+    controlli: [
+      "Nel PO il rettangolo è largo 6 cm e profondo 3 cm (in verticale sul foglio), tra 2 e 5 cm sotto la LT.",
+      "Nel PV il rettangolo è largo 6 cm e alto 4 cm, appoggiato sulla LT.",
+      "Nel PL il rettangolo sta tra 2 e 5 cm a destra dell’asse verticale ed è alto 4 cm.",
+    ],
+    proiettoreProva: { solido: "parallelepipedo", misure: { L: 6, H: 4, P: 3 }, alfa: 0, beta: 0, etichetta: "Larghezza 6 cm, profondità 3 cm, altezza 4 cm" } },
 ];
 
 export const APPROFONDIMENTI_PO: TemaApprofondimento[] = [

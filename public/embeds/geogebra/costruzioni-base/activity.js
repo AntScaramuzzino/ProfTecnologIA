@@ -6,6 +6,8 @@
  *   • le proiezioni ortogonali (tavole-po.js), che usano in più cinque campi della tavola:
  *     areas, styles, level, appletHeight, fontSize (cerca «tavole-po» in questo file e in activity.css).
  *   • i motivi modulari (tavole-moduli.js) usano le aree «lista»: Polygon({…}) senza lati, visibili dal loro passo.
+ *   • riga e squadre che si muovono (squadre.js) usano in più: aree «lista» con `fino`/`via` (spariscono),
+ *     `bordo` (il contorno resta) e `moti` (parametri animati in una finestra del passo, senza oggetti da mostrare).
  * Chi modifica il motore non deve togliere quei punti: senza, le tavole di proiezioni perdono i piani
  * colorati, gli spigoli tratteggiati e il foglio alto. Dopo ogni modifica prova anche
  * index.html?activity=po-prisma-triangolare (al computer, sul telefono e con &lim=1).
@@ -440,9 +442,9 @@
       if (style.layer !== undefined) api.setLayer(name, style.layer);
       if (style.label !== undefined) api.setLabelVisible(name, style.label);
     });
-    // Aree «lista» (tavole-moduli.js): solo il colore, nessun bordo (anche sul telefono).
+    // Aree «lista» (tavole-moduli.js): solo il colore, nessun bordo (anche sul telefono). Riga e squadre (squadre.js) tengono il bordo.
     (activity.areas || []).forEach((area) => {
-      if (area.lista && exists(area.name)) api.setLineThickness(area.name, 0);
+      if (area.lista && !area.bordo && exists(area.name)) api.setLineThickness(area.name, 0);
     });
   }
 
@@ -531,11 +533,19 @@
       if (area.step === undefined || !exists(area.name)) return;
       const style = (activity.styles || {})[area.name] || {};
       // Aree «lista» (tavole-moduli.js): poligoni senza lati, che compaiono a un momento del passo (area.at, 0–1).
-      const on = area.lista
-        ? stage > area.step || (stage === area.step && progress >= (area.at === undefined ? 0.12 : area.at))
-        : stage >= area.step;
+      const iniziata = stage > area.step || (stage === area.step && progress >= (area.at === undefined ? 0.12 : area.at));
+      // `fino` / `via` (squadre.js): l'area sparisce dopo il passo `fino`, o al momento `via` di quel passo
+      const finita = area.fino !== undefined && (stage > area.fino || (stage === area.fino && area.via !== undefined && progress >= area.via));
+      const on = area.lista ? iniziata && !finita : stage >= area.step;
       api.setFilling(area.name, on ? (style.filling === undefined ? 0.3 : style.filling) : 0);
       if (area.lista) api.setVisible(area.name, on);
+    });
+    // Parametri che si muovono in una finestra del passo (squadre.js): 0 prima, 1 dopo.
+    (activity.moti || []).forEach((m) => {
+      if (!exists(m.param)) return;
+      const span = Math.max(0.001, m.to - m.from);
+      const value = stage > m.step ? 1 : stage < m.step ? 0 : Math.max(0, Math.min(1, (progress - m.from) / span));
+      api.setValue(m.param, value);
     });
     applyCompassTraceEffect(stage, progress);
     applyStepBuildSequence(stage, progress);

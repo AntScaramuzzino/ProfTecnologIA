@@ -140,6 +140,18 @@ export const TAVOLE_ASS: TavolaAss[] = [
       "Dal punto più basso al punto più alto il disegno è alto circa 9,6 cm.",
     ],
     assonometroProva: { tipo: "militare", solido: "parallelepipedo", misure: { L: 7, H: 5, P: 3 }, etichetta: "Base 7 × 3 cm · altezza 5 cm" } },
+  { numero: 13, slug: "parallelepipedo-isometrica-squadre", tipo: "isometrica", mc: MC_ASSONOMETRIE, pronta: true,
+    titolo: "Il parallelepipedo isometrico con riga e squadra",
+    descrizione: "La tavola 4 rifatta come sul foglio: riga ferma e squadra a 30° e 60° che scorre.",
+    intro: "Lo stesso parallelepipedo della tavola 4, ma questa volta guardi come si muovono gli strumenti: la riga sta ferma in orizzontale e la squadra a 30° e 60° ci scorre sopra. Appoggiata, girata o in piedi, dà le tre direzioni dell’isometrica. Prima guarda il solido nell’assonometro.",
+    assonometro: { tipo: "isometrica", solido: "parallelepipedo", misure: { L: 6, H: 8, P: 4 }, etichetta: "Base 6 × 4 cm · altezza 8 cm" },
+    provaTu: "Con riga e squadra a 30° e 60° disegna in assonometria isometrica un cubo con lo spigolo di 5 cm. Tieni la riga ferma e traccia ogni linea lungo un lato della squadra.",
+    controlli: [
+      "Tutti i 12 spigoli misurano 5 cm.",
+      "Dal punto più basso al punto più alto il disegno è alto 10 cm.",
+      "Dal punto più a sinistra al punto più a destra il disegno è largo circa 8,7 cm.",
+    ],
+    assonometroProva: { tipo: "isometrica", solido: "cubo", misure: { lato: 5 }, etichetta: "Cubo di spigolo 5 cm" } },
 ];
 
 export const TAVOLE_ASS_PRONTE = TAVOLE_ASS.filter((t) => t.pronta);
