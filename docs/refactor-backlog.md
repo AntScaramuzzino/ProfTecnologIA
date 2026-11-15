@@ -14,6 +14,7 @@
 | UX-DIS-2 | Laboratorio GeoGebra: bisettrice di un angolo | Attività autonoma embeddabile, animazione in 4 passi, prova LLL, download `.ggb`, integrazione in MC-DIS-1-01 dentro la sezione Costruzione 2, pubblicazione GeoGebra verificata |
 | UX-DIS-3 | Barra inferiore stile protocollo GeoGebra per le costruzioni 1 e 2 | Controlli primo/precedente/play/successivo/ultimo, contatore dei passaggi, velocità regolabile e protocollo di costruzione apribile negli embed locali |
 | UX-DIS-4 | Laboratori GeoGebra: costruzioni geometriche 3–8 di MC-DIS-1-01 | Embed condiviso configurabile per divisione segmento, perpendicolare da punto esterno, triangolo equilatero, esagono inscritto, quadrato dato il lato e pentagono inscritto; integrazione nelle rispettive sezioni ESPLORA; pubblicazione GeoGebra verificata |
+| UX-DIS-5 | Laboratorio GeoGebra pilota: proiezioni ortogonali di un prisma ottagonale | App didattica autonoma in 5 passaggi per PO–PV–PL, mini-sfide con feedback, controllo geometrico, download `.ggb`, pagina laboratorio e integrazione in SPERIMENTA di MC-DIS-2-01 |
 
 ---
 

@@ -1,5 +1,16 @@
 # Refactor Changelog — MC Template v2
 
+## 2026-07-19 — Laboratorio proiezioni ortogonali MC-DIS-2-01
+
+- Creata l’attività autonoma `proiezioni-ortogonali-prisma-ottagonale`, ispirata a un esempio pubblico di Lorenzo su GeoGebra.
+- Implementata la costruzione guidata di pianta, prospetto e fianco con proiettanti e linea di trasferimento a 45°.
+- Aggiunte cinque mini-sfide con feedback didattico, score, barra di protocollo, velocità regolabile, fullscreen e download `.ggb`.
+- Aggiunti la pagina `/laboratori/proiezioni-ortogonali/`, il wrapper React responsive e l’inserimento nella zona SPERIMENTA di MC-DIS-2-01.
+- Verifiche numeriche interne: raggio 4 cm, altezza 7 cm, regolarità dell’ottagono, uguaglianza delle altezze e corretto trasferimento della profondità.
+- Build verificata con Next.js 16.2.2/webpack: 82 pagine statiche, TypeScript senza errori; test Playwright desktop e mobile senza errori console; archivio `.ggb` valido.
+
+---
+
 ## 2026-07-19 — Laboratorio GeoGebra MC-DIS-1-01
 
 - Aggiunta attività autonoma in `public/embeds/geogebra/perpendicolare/`, riutilizzabile via iframe.
