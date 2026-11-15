@@ -9,10 +9,22 @@ type ProiettoreEmbedProps = {
   limSrc: string;
   title: string;
   className?: string;
+  /** Testi dello strumento: mancano per il proiettore, li passa chi incorpora un altro strumento (l'Assonometro). */
+  occhiello?: string;
+  nomeStrumento?: string;
+  didascalia?: string;
 };
 
 /** Il proiettore ortogonale (public/embeds/proiettore) dentro una pagina del libro. */
-export default function ProiettoreEmbed({ src, limSrc, title, className = "" }: ProiettoreEmbedProps) {
+export default function ProiettoreEmbed({
+  src,
+  limSrc,
+  title,
+  className = "",
+  occhiello = "Proiettore ortogonale · 3D",
+  nomeStrumento = "Proiettore ortogonale",
+  didascalia = "Trascina il solido per ruotarlo. Le tre lastre mostrano la vista di fronte (prospetto), la vista dall’alto (pianta) e la vista di fianco; gli spigoli nascosti sono tratteggiati.",
+}: ProiettoreEmbedProps) {
   const titleId = useId();
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const resizeObserverRef = useRef<ResizeObserver | null>(null);
@@ -38,7 +50,7 @@ export default function ProiettoreEmbed({ src, limSrc, title, className = "" }: 
     <section className={className} aria-labelledby={titleId}>
       <div className="mb-3 flex flex-wrap items-end justify-between gap-2">
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-blue-700">Proiettore ortogonale · 3D</p>
+          <p className="text-xs font-black uppercase tracking-widest text-blue-700">{occhiello}</p>
           <h2 id={titleId} className="mt-1 text-xl font-black tracking-tight text-slate-950 sm:text-2xl">
             {title}
           </h2>
@@ -56,17 +68,14 @@ export default function ProiettoreEmbed({ src, limSrc, title, className = "" }: 
         <iframe
           ref={iframeRef}
           src={src}
-          title={`Proiettore ortogonale: ${title.toLowerCase()}`}
+          title={`${nomeStrumento}: ${title.toLowerCase()}`}
           className="block w-full border-0 transition-[height] duration-200"
           style={{ height: iframeHeight }}
           allow="fullscreen"
           onLoad={syncIframeHeight}
         />
       </div>
-      <p className="mt-2 text-xs leading-5 text-slate-500">
-        Trascina il solido per ruotarlo. Le tre lastre mostrano la vista di fronte (prospetto), la vista dall’alto
-        (pianta) e la vista di fianco; gli spigoli nascosti sono tratteggiati.
-      </p>
+      <p className="mt-2 text-xs leading-5 text-slate-500">{didascalia}</p>
     </section>
   );
 }

@@ -5,6 +5,7 @@ import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom, labCover } fr
 import { ESPLORAZIONI, esplorazioneSrc, esplorazioneAnteprima } from "@/lib/esplorazioni";
 import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI } from "@/lib/geogebra-costruzioni";
 import { MC_PROIEZIONI, TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
+import { MC_ASSONOMETRIE, MC_MONOMETRICA, TAVOLE_ASS_PRONTE } from "@/lib/geogebra-assonometrie";
 import { MC_OFFICINA, OFFICINA_MOTIVI, officinaSrc } from "@/lib/officina-motivi";
 
 export const metadata: Metadata = {
@@ -250,6 +251,20 @@ export default function LaboratoriPage() {
           </p>
           <Link href="/proiezioni-ortogonali" className="mt-auto pt-3 inline-block text-sm font-black text-blue-800 underline underline-offset-4">
             Apri le proiezioni ortogonali →
+          </Link>
+        </div>
+
+        <div id="assonometrie" className="scroll-mt-32 flex flex-col rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <h3 className="text-xl font-black tracking-tight text-slate-950">
+            Assonometrie <span className="text-base font-bold text-slate-600">· {TAVOLE_ASS_PRONTE.length} tavole guidate</span>
+          </h3>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+            L’assonometro disegna un solido in cavaliera, in isometrica e in monometrica, con gli assi, le misure e le
+            tre viste accanto; le tavole GeoGebra costruiscono il disegno sul foglio, un passaggio alla volta. Collegate
+            a {MC_ASSONOMETRIE} e a {MC_MONOMETRICA}. Hanno una pagina tutta loro.
+          </p>
+          <Link href="/assonometrie" className="mt-auto pt-3 inline-block text-sm font-black text-blue-800 underline underline-offset-4">
+            Apri le assonometrie →
           </Link>
         </div>
           </div>

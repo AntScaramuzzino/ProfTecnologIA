@@ -106,6 +106,31 @@ Dal Bauhaus in poi, il design industriale si è sviluppato come professione auto
 
 ---
 
+### La terza assonometria: la monometrica
+
+In seconda hai usato due assonometrie: la **cavaliera**, che lascia intatta la faccia di fronte, e l'**isometrica**, che tratta le tre facce allo stesso modo. Ce n'è una terza, l'**assonometria monometrica**, che lascia intatta la base.
+
+**Gli assi:**
+- Asse x (larghezza): sale di 30° verso destra rispetto alla linea orizzontale.
+- Asse y (profondità): sale di 60° verso sinistra.
+- Asse z (altezza): verticale.
+
+Tra l'asse x e l'asse y c'è un angolo retto, perché 180° − 30° − 60° = 90°. Per questo la base dell'oggetto si disegna con la sua vera forma: è la pianta delle proiezioni ortogonali, soltanto girata di 30°.
+
+**Il fattore di riduzione:** non c'è. Le misure si riportano per intero su tutti e tre gli assi: «monometrica» vuol dire che la misura è una sola. Su questo è uguale all'isometrica: le due si distinguono per gli angoli degli assi.
+
+**Come si costruisce un parallelepipedo in assonometria monometrica:**
+
+1. Traccia una linea orizzontale sottile e segna su di essa il punto d'origine O.
+2. Da O traccia i tre assi con la squadra a 30° e 60°: x a 30° verso destra, y a 60° verso sinistra, z verticale.
+3. Riporta la larghezza sull'asse x e la profondità sull'asse y, poi chiudi la base con due linee parallele agli assi: è un rettangolo vero.
+4. Da ogni vertice della base alza uno spigolo verticale lungo quanto l'altezza.
+5. Unisci i quattro punti in alto: la faccia di sopra è uguale alla base.
+
+**Quando si usa:** quando conta di più ciò che si vede dall'alto, come la pianta di una stanza con i mobili, un edificio o un quartiere. Nel disegno di architettura è comoda perché si parte dalla pianta già disegnata e basta alzare le altezze. In cambio l'oggetto sembra visto molto dall'alto e più slanciato di quanto è. Alcuni libri la chiamano assonometria militare.
+
+---
+
 ### Prospettiva centrale e prospettiva accidentale
 
 La **prospettiva** è il sistema di rappresentazione che riproduce come gli oggetti appaiono all'occhio umano: gli oggetti lontani sembrano più piccoli, le rette parallele sembrano convergere verso un punto. È la rappresentazione più "naturale" — ma non è fedele alle misure reali.

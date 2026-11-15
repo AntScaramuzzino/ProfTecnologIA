@@ -48,7 +48,7 @@ export default async function AreaPage({ params }: PageProps) {
               <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-600 sm:mt-3 sm:text-base sm:leading-8">
                 {mcs.length} micro-competenze con progressione verticale, visuali generate e attività autentiche.
                 {areaUpper === "DIS" &&
-                  ` In più, ${NUMERO_TAVOLE_DISEGNO} tavole guidate: costruzioni geometriche e proiezioni ortogonali.`}
+                  ` In più, ${NUMERO_TAVOLE_DISEGNO} tavole guidate: costruzioni geometriche, proiezioni ortogonali e assonometrie.`}
               </p>
             </div>
             <div className="flex flex-wrap gap-2">

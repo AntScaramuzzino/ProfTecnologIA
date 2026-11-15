@@ -4,6 +4,7 @@
 // - gli altri su motore comune, elencati in laboratori-cfg.json (generato da npm run labs)
 import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI, hrefCostruzione } from "./geogebra-costruzioni";
 import { MC_PROIEZIONI, TAVOLE_PO_PRONTE, hrefTavolaPO } from "./geogebra-proiezioni";
+import { NOME_TIPO, TAVOLE_ASS_PRONTE, hrefTavolaAss } from "./geogebra-assonometrie";
 import cfgLabs from "./laboratori-cfg.json";
 import escapeRooms from "./escape-cfg.json";
 import labCovers from "./lab-covers.json";
@@ -87,5 +88,12 @@ export const GEOGEBRA = [
     titolo: t.titolo,
     mcId: MC_PROIEZIONI,
     descrizione: `${t.descrizione} Proiezioni ortogonali, proiettore.`,
+  })),
+  // Tavole di assonometria (lib/geogebra-assonometrie.ts)
+  ...TAVOLE_ASS_PRONTE.map((t) => ({
+    href: hrefTavolaAss(t),
+    titolo: t.titolo,
+    mcId: t.mc,
+    descrizione: `${t.descrizione} Assonometria ${NOME_TIPO[t.tipo].toLowerCase()}, assonometro.`,
   })),
 ];

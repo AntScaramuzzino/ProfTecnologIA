@@ -13,6 +13,10 @@ type TavolaProiezioneClientProps = {
   /** indirizzi del proiettore aperto sul solido della tavola; mancano se la tavola non ha un solido */
   proiettoreSrc?: string;
   proiettoreLimSrc?: string;
+  /** Nome e sottotitolo delle due schede: mancano per le proiezioni ortogonali, li passano le tavole di assonometria. */
+  schede?: Partial<Record<Scheda, { nome: string; sotto: string }>>;
+  /** Testi dello strumento della scheda «Guarda», quando non è il proiettore (vedi ProiettoreEmbed). */
+  strumento?: { occhiello: string; nome: string; didascalia: string };
 };
 
 const SCHEDE: { id: Scheda; numero: string; nome: string; sotto: string }[] = [
@@ -30,6 +34,8 @@ export default function TavolaProiezioneClient({
   activity,
   proiettoreSrc,
   proiettoreLimSrc,
+  schede,
+  strumento,
 }: TavolaProiezioneClientProps) {
   const haProiettore = Boolean(proiettoreSrc && proiettoreLimSrc);
   const [scheda, setScheda] = useState<Scheda>(haProiettore ? "guarda" : "costruisci");
@@ -56,7 +62,8 @@ export default function TavolaProiezioneClient({
   return (
     <div>
       <div role="tablist" aria-label="Le due parti della tavola" className="grid gap-2 sm:grid-cols-2">
-        {SCHEDE.map((s) => {
+        {SCHEDE.map((base) => {
+          const s = { ...base, ...(schede?.[base.id] ?? {}) };
           const attiva = s.id === scheda;
           return (
             <button
@@ -103,7 +110,14 @@ export default function TavolaProiezioneClient({
               className={pannello(s.id)}
             >
               {s.id === "guarda" ? (
-                <ProiettoreEmbed src={proiettoreSrc!} limSrc={proiettoreLimSrc!} title={titolo} />
+                <ProiettoreEmbed
+                  src={proiettoreSrc!}
+                  limSrc={proiettoreLimSrc!}
+                  title={titolo}
+                  occhiello={strumento?.occhiello}
+                  nomeStrumento={strumento?.nome}
+                  didascalia={strumento?.didascalia}
+                />
               ) : (
                 costruzione
               )}

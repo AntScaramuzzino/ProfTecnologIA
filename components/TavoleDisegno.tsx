@@ -5,6 +5,7 @@ import {
   MC_COSTRUZIONI,
   hrefCostruzione,
 } from "@/lib/geogebra-costruzioni";
+import { TAVOLE_ASS, TAVOLE_ASS_PRONTE, assonometroSrc, hrefTavolaAss } from "@/lib/geogebra-assonometrie";
 import {
   MC_PROIEZIONI,
   TAVOLE_PO,
@@ -14,7 +15,7 @@ import {
 } from "@/lib/geogebra-proiezioni";
 
 /** Quante tavole guidate ha l'area Disegno Tecnico (per l'intestazione della pagina dell'area). */
-export const NUMERO_TAVOLE_DISEGNO = COSTRUZIONI_GEOGEBRA.length + TAVOLE_PO_PRONTE.length;
+export const NUMERO_TAVOLE_DISEGNO = COSTRUZIONI_GEOGEBRA.length + TAVOLE_PO_PRONTE.length + TAVOLE_ASS_PRONTE.length;
 
 type Tessera = { href: string; numero: number; titolo: string; immagine: string; altezza: number };
 
@@ -50,9 +51,61 @@ function Tessere({ tavole, etichetta }: { tavole: Tessera[]; etichetta: string }
 
 /**
  * Le tavole GeoGebra dell'area Disegno Tecnico, dentro la pagina /area/DIS:
- * sotto le MC di prima le costruzioni geometriche, sotto quelle di seconda le proiezioni ortogonali.
- * Legge i due registri (lib/geogebra-costruzioni.ts e lib/geogebra-proiezioni.ts): una tavola nuova compare da sola.
+ * sotto le MC di prima le costruzioni geometriche, sotto quelle di seconda le proiezioni ortogonali e le
+ * assonometrie, sotto quelle di terza di nuovo le assonometrie (in terza si riprendono, con la monometrica).
+ * Legge i tre registri (lib/geogebra-costruzioni.ts, lib/geogebra-proiezioni.ts, lib/geogebra-assonometrie.ts):
+ * una tavola nuova compare da sola.
  */
+function Assonometrie({ basePath }: { basePath: string }) {
+  const inPreparazione = TAVOLE_ASS.length - TAVOLE_ASS_PRONTE.length;
+  return (
+    <div id="tavole-assonometrie" className="mt-8 scroll-mt-28 rounded-2xl border border-blue-200 bg-blue-50/60 p-4 sm:p-6">
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <div className="max-w-3xl">
+          <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-800">
+            Tavole guidate · MC-DIS-2-02 e MC-DIS-3-01
+          </p>
+          <h3 className="mt-1 text-xl font-black tracking-tight text-slate-950 sm:text-2xl">
+            Assonometrie <span className="text-base font-bold text-slate-600">· {TAVOLE_ASS_PRONTE.length} tavole</span>
+          </h3>
+          <p className="mt-1 text-sm leading-6 text-slate-700">
+            Cavaliera, isometrica e monometrica: il solido nell’assonometro e la costruzione sul foglio, un passo alla
+            volta.
+            {inPreparazione > 0 ? ` Altre ${inPreparazione} tavole sono in preparazione.` : ""}
+          </p>
+        </div>
+        <Link href="/assonometrie" className="text-sm font-black text-blue-800 underline underline-offset-4">
+          Pagina delle assonometrie →
+        </Link>
+      </div>
+      <div className="mt-6">
+        <Tessere
+          etichetta="Tavole di assonometria"
+          tavole={TAVOLE_ASS_PRONTE.map((t) => ({
+            href: hrefTavolaAss(t),
+            numero: t.numero,
+            titolo: t.titolo,
+            immagine: `${basePath}/assets/assonometrie/${t.slug}.webp`,
+            altezza: 498,
+          }))}
+        />
+      </div>
+      <p className="mt-5 text-sm leading-6 text-slate-700">
+        <strong className="text-slate-950">L’assonometro</strong> si può usare anche da solo: dodici solidi da disegnare
+        nelle tre assonometrie, con le tre viste accanto.{" "}
+        <a
+          href={assonometroSrc()}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-black text-blue-800 underline underline-offset-4"
+        >
+          Apri l’assonometro ↗
+        </a>
+      </p>
+    </div>
+  );
+}
+
 export default function TavoleDisegno({ anno }: { anno: number }) {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -105,6 +158,7 @@ export default function TavoleDisegno({ anno }: { anno: number }) {
   if (anno === 2) {
     const inPreparazione = TAVOLE_PO.length - TAVOLE_PO_PRONTE.length;
     return (
+      <>
       <div id="tavole-proiezioni" className="mt-8 scroll-mt-28 rounded-2xl border border-blue-200 bg-blue-50/60 p-4 sm:p-6">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div className="max-w-3xl">
@@ -149,8 +203,12 @@ export default function TavoleDisegno({ anno }: { anno: number }) {
           </a>
         </p>
       </div>
+      <Assonometrie basePath={basePath} />
+      </>
     );
   }
+
+  if (anno === 3) return <Assonometrie basePath={basePath} />;
 
   return null;
 }

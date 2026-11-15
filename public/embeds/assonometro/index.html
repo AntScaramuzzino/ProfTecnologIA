@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assonometro — Book ProfTecnologIA</title>
+<meta name="description" content="Assonometro: un solido disegnato in assonometria cavaliera, isometrica o monometrica, con gli assi, le misure e le tre viste da cui si parte.">
+<!-- le classi vanno messe prima del primo disegno della pagina -->
+<script>(function(){var p=new URLSearchParams(location.search),c=document.documentElement.classList;if(p.get('embed')==='1')c.add('is-embed');if(p.get('lim')==='1')c.add('lim');if(p.get('esercizio')==='1')c.add('is-esercizio');})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230E2A52'/><path d='M6 24V8h4v12h6l8-8v4l-6 8z' fill='%23FF4D00'/></svg>">
+</head>
+<body>
+<header class="testata" role="banner">
+  <span class="testata__logo">ASSONO<b>METRO</b></span>
+  <nav class="testata__nav" aria-label="Navigazione">
+    <a href="../../assonometrie/">← Tavole di assonometria</a>
+  </nav>
+  <span class="testata__rev mono">BOOK PROFTECNOLOGIA</span>
+</header>
+
+<main id="main" class="asso">
+  <div class="asso__intro">
+    <p class="eyebrow mono">ASSONOMETRIE — CAVALIERA · ISOMETRICA · MONOMETRICA</p>
+    <h1 class="asso__titolo">L’assonometro</h1>
+    <p class="asso__lead">
+      Scegli un solido e un tipo di assonometria. A sinistra vedi il disegno come viene sul foglio,
+      con i tre assi e le misure. A destra ci sono le tre viste da cui prendi le misure.
+      <b>Tocca un vertice</b> per vedere come si trova, una misura alla volta.
+    </p>
+  </div>
+
+  <div class="asso__corpo">
+    <section class="pannello pannello--foglio" aria-labelledby="etFoglio">
+      <p class="pannello__et mono" id="etFoglio">FOGLIO · ASSONOMETRIA CAVALIERA</p>
+      <svg id="svgFoglio" class="foglio" role="img" aria-label="Il solido disegnato in assonometria"></svg>
+      <p class="pannello__nota mono" id="notaFoglio">1 quadretto = 1 cm</p>
+    </section>
+
+    <section class="pannello pannello--viste" aria-labelledby="etViste">
+      <p class="pannello__et mono" id="etViste">LE TRE VISTE · DA QUI PRENDI LE MISURE</p>
+      <svg id="svgViste" class="viste" role="img" aria-label="Le tre viste del solido: prospetto, pianta e vista laterale"></svg>
+      <div class="punto" id="puntoBox" aria-live="polite">
+        <div class="punto__testa">
+          <p class="punto__titolo mono">SEGUI UN PUNTO</p>
+          <div class="punto__tasti" role="group" aria-label="Scegli un vertice">
+            <button class="tasto tasto--mini" id="puntoPrima" type="button" aria-label="Vertice precedente">◀</button>
+            <button class="tasto tasto--mini" id="puntoDopo" type="button" aria-label="Vertice successivo">▶</button>
+            <button class="tasto tasto--mini" id="puntoVia" type="button">Togli</button>
+          </div>
+        </div>
+        <p class="punto__testo" id="puntoTesto">Tocca un vertice del solido, oppure usa le frecce.</p>
+      </div>
+    </section>
+
+    <aside class="comandi" aria-label="Comandi dell’assonometro">
+      <div class="esercizio" id="esercizioBox" hidden>
+        <p class="esercizio__titolo" id="esercizioTitolo"></p>
+        <p class="esercizio__misure mono" id="esercizioMisure"></p>
+      </div>
+
+      <div class="gruppo gruppo--tipo">
+        <p class="gruppo__et mono">TIPO DI ASSONOMETRIA</p>
+        <div class="scelta" id="sceltaTipo" role="group" aria-label="Tipo di assonometria">
+          <button class="chip" data-tipo="cavaliera" type="button" aria-pressed="true">Cavaliera</button>
+          <button class="chip" data-tipo="isometrica" type="button" aria-pressed="false">Isometrica</button>
+          <button class="chip" data-tipo="monometrica" type="button" aria-pressed="false">Monometrica</button>
+        </div>
+      </div>
+
+      <div class="gruppo regole" aria-live="polite">
+        <p class="gruppo__et mono">LE REGOLE</p>
+        <table class="regole__tabella">
+          <thead><tr><th scope="col">Asse</th><th scope="col">Sul foglio</th><th scope="col">Misura</th></tr></thead>
+          <tbody id="regoleRighe"></tbody>
+        </table>
+        <p class="regole__nota" id="regoleNota"></p>
+      </div>
+
+      <div class="gruppo gruppo--solido" id="gruppoSolido">
+        <p class="gruppo__et mono">SOLIDO</p>
+        <label class="sr-only" for="sceltaSolido">Solido</label>
+        <select id="sceltaSolido" class="menu"></select>
+        <div class="misure" id="misureSolido"></div>
+      </div>
+
+      <div class="gruppo">
+        <p class="gruppo__et mono">POSIZIONE</p>
+        <div class="scelta">
+          <button class="tasto" id="tastoGira" type="button">Gira il solido di 90°</button>
+          <button class="tasto" id="tastoPartenza" type="button">Posizione di partenza</button>
+        </div>
+      </div>
+
+      <div class="gruppo">
+        <p class="gruppo__et mono">MOSTRA</p>
+        <div class="interruttori" id="interruttori">
+          <label><input type="checkbox" data-mostra="scatola" checked> Scatola</label>
+          <label><input type="checkbox" data-mostra="nascosti" checked> Spigoli nascosti</label>
+          <label><input type="checkbox" data-mostra="facce" checked> Facce colorate</label>
+          <label><input type="checkbox" data-mostra="quote" checked> Misure</label>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <p class="asso__piede">
+    Le facce hanno i colori dei piani delle proiezioni ortogonali: <span class="tinta tinta--pv">azzurro</span> per le facce
+    parallele al PV, <span class="tinta tinta--po">giallo</span> per quelle parallele al PO,
+    <span class="tinta tinta--pl">rosa</span> per quelle parallele al PL.
+  </p>
+</main>
+
+<noscript><p style="padding:1rem">Per usare l’assonometro serve JavaScript.</p></noscript>
+<script type="module" src="assonometro.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* ═══════════════════════════════════════════════════════════
+   ASSONOMETRO — foglio stile
+   Stesso linguaggio del proiettore ortogonale: tavola tecnica su carta millimetrata.
+═══════════════════════════════════════════════════════════ */
+
+:root{
+  --carta:#F5F7F2;
+  --carta-riga:rgba(45,98,160,.13);
+  --carta-riga-forte:rgba(45,98,160,.30);
+  --ciano:#0E2A52;
+  --minio:#FF4D00;
+  --china:#16418C;
+  --grafite:#14151A;
+  --foglio:#FDFDFB;
+  --d-display:"Archivo",sans-serif;
+  --d-body:"Instrument Sans",sans-serif;
+  --d-mono:"IBM Plex Mono",monospace;
+  --bordo:1.5px;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:var(--d-body);
+  color:var(--grafite);
+  line-height:1.5;
+  background:
+    linear-gradient(var(--carta-riga-forte) 1px,transparent 1px) 0 0/100% 48px,
+    linear-gradient(90deg,var(--carta-riga-forte) 1px,transparent 1px) 0 0/48px 100%,
+    linear-gradient(var(--carta-riga) 1px,transparent 1px) 0 0/100% 8px,
+    linear-gradient(90deg,var(--carta-riga) 1px,transparent 1px) 0 0/8px 100%,
+    var(--carta);
+  overflow-x:hidden;
+}
+svg{display:block;max-width:100%}
+a{color:inherit}
+button,select,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--minio);outline-offset:2px}
+.mono{font-family:var(--d-mono);letter-spacing:.02em}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[hidden]{display:none !important}
+
+/* ── testata ── */
+.testata{
+  display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;
+  padding:.65rem clamp(1rem,4vw,2.4rem);
+  background:var(--ciano);color:#EFF4FF;
+}
+.testata__logo{font-family:var(--d-display);font-weight:800;font-stretch:115%;letter-spacing:.06em}
+.testata__logo b{color:var(--minio)}
+.testata__nav{flex:1;font-size:.9rem}
+.testata__nav a{text-underline-offset:4px}
+.testata__rev{font-size:.72rem;opacity:.8}
+
+/* ── impianto ── */
+.asso{padding:clamp(1rem,2.4vw,2rem) clamp(.8rem,2.6vw,2.4rem) 2rem;max-width:1680px;margin:0 auto}
+.eyebrow{font-size:.72rem;font-weight:600;color:var(--china)}
+.asso__titolo{
+  font-family:var(--d-display);font-weight:800;font-stretch:112%;
+  font-size:clamp(1.9rem,4vw,3rem);line-height:1.02;letter-spacing:-.01em;margin:.3rem 0 .6rem;
+}
+.asso__lead{max-width:62ch;font-size:1.02rem}
+.asso__intro{margin-bottom:1.2rem}
+.asso__corpo{
+  display:grid;gap:14px;align-items:start;
+  grid-template-columns:minmax(0,1.32fr) minmax(0,1fr) minmax(250px,300px);
+}
+.asso__piede{margin-top:.9rem;font-size:.86rem;color:#334155;max-width:90ch}
+.tinta{font-weight:700;padding:0 .3em;border-radius:3px}
+.tinta--pv{background:#BFDBFE}.tinta--po{background:#FEF08A}.tinta--pl{background:#FBCFE8}
+
+/* ── pannelli ── */
+.pannello{position:relative;background:var(--foglio);border:var(--bordo) solid var(--china);min-width:0}
+.pannello__et{
+  font-size:.66rem;font-weight:600;color:var(--china);
+  border-bottom:1px solid var(--china);padding:.32rem .6rem;background:#F3F6FB;
+}
+.pannello__nota{position:absolute;right:10px;bottom:6px;font-size:.66rem;color:#475569}
+.foglio,.viste{width:100%;height:auto;aspect-ratio:1.12}
+
+/* ── disegno ──
+   Nei due disegni 10 unità = 1 cm del foglio: spessori e caratteri sono in decimi di centimetro,
+   così crescono con il disegno (alla LIM tutto è più grande, sul telefono più piccolo). */
+.quadretto{fill:none;stroke:rgba(45,98,160,.22);stroke-width:.12}
+.riferimento{stroke:#64748B;stroke-width:.22;stroke-dasharray:1.1 .8}
+.arco{fill:none;stroke:#475569;stroke-width:.22}
+.gradi{font:600 3.3px var(--d-mono);fill:#334155}
+.asse{stroke-width:.36;fill:none}
+.nome-asse{font:800 4.6px var(--d-display)}
+.scatola{stroke:#94A3B8;stroke-width:.2}
+.faccia{stroke:none}
+.sp-visibile{fill:none;stroke:var(--grafite);stroke-width:.62;stroke-linecap:round;stroke-linejoin:round}
+.sp-nascosto{fill:none;stroke:var(--grafite);stroke-width:.34;stroke-dasharray:1.3 .9}
+.quota{font:600 3.5px var(--d-mono);paint-order:stroke;stroke:var(--foglio);stroke-width:.9;stroke-linejoin:round}
+.origine{fill:var(--grafite)}
+.nome-o{font:800 4.2px var(--d-display);fill:var(--grafite)}
+.percorso{stroke-width:.95;stroke-linecap:round;opacity:.92}
+.tappa{fill:#fff;stroke:var(--grafite);stroke-width:.22}
+.vertice{fill:#fff;stroke:var(--minio);stroke-width:.34}
+.vertice.is-scelto{fill:var(--minio);stroke:#fff}
+.vertice__area{fill:transparent;cursor:pointer}
+.vertice__area:hover{fill:rgba(255,77,0,.16)}
+.nome-punto{font:800 4.8px var(--d-display);fill:var(--minio);paint-order:stroke;stroke:#fff;stroke-width:1.1;stroke-linejoin:round}
+.richiamo{stroke:#64748B;stroke-width:.3;stroke-dasharray:1.3 1}
+/* le tre viste: il disegno è più piccolo, i segni un po' più marcati */
+.viste .sp-visibile{stroke-width:.85}
+.viste .sp-nascosto{stroke-width:.5;stroke:var(--china);stroke-dasharray:1.7 1.2}
+.viste .quota{font:800 6.4px var(--d-display);stroke:none}
+.viste .nome-o{font-size:5px}
+.viste .nome-punto{font-size:6.4px}
+.viste .vertice{stroke-width:.5}
+.quota-linea{stroke-width:.75;stroke-linecap:round}
+.lt{stroke:var(--grafite);stroke-width:.55}
+.nome-piano{font:800 6.4px var(--d-display)}
+
+/* ── segui un punto ── */
+.punto{border-top:var(--bordo) solid var(--china);padding:.7rem .8rem .8rem;font-size:.9rem}
+.punto__testa{display:flex;align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap}
+.punto__titolo{font-size:.68rem;font-weight:600;color:var(--china)}
+.punto__tasti{display:flex;gap:.35rem}
+.punto__testo{margin-top:.45rem}
+.punto__passi{margin:.3rem 0 .35rem 1.3rem}
+.asse-nome{font-family:var(--d-display);font-weight:800;font-size:1.05em}
+
+/* ── comandi ── */
+.comandi{display:grid;gap:12px;min-width:0}
+.gruppo,.esercizio{background:#FFFEFA;border:var(--bordo) solid var(--china);padding:.7rem .8rem .8rem}
+.gruppo__et{font-size:.68rem;font-weight:600;color:var(--china);margin-bottom:.5rem}
+.esercizio{border-left:5px solid var(--minio)}
+.esercizio__titolo{font-family:var(--d-display);font-weight:800;font-size:1.1rem;line-height:1.15}
+.esercizio__misure{font-size:.8rem;color:var(--china);margin-top:.3rem}
+.scelta{display:flex;flex-wrap:wrap;gap:.4rem}
+.chip,.tasto{
+  border:var(--bordo) solid var(--grafite);background:#F7F8F3;cursor:pointer;
+  font-family:var(--d-mono);font-size:.76rem;text-transform:uppercase;letter-spacing:.04em;
+  padding:.5rem .65rem;min-height:40px;box-shadow:3px 3px 0 var(--grafite);
+}
+.chip:hover,.tasto:hover{background:#fff}
+.chip.is-active{background:var(--grafite);color:#fff;box-shadow:3px 3px 0 var(--minio)}
+.tasto:disabled{opacity:.45;cursor:default;box-shadow:none}
+.tasto--mini{padding:.3rem .55rem;min-height:34px;font-size:.72rem;box-shadow:2px 2px 0 var(--grafite)}
+.menu{width:100%;min-height:42px;padding:.4rem .5rem;border:var(--bordo) solid var(--grafite);background:#fff}
+.misure{display:grid;gap:.45rem;margin-top:.65rem}
+.misura{display:grid;grid-template-columns:1fr auto;gap:.1rem .6rem;align-items:center;font-size:.84rem}
+.misura input{grid-column:1/-1;width:100%;accent-color:var(--minio)}
+.misura output{font-size:.8rem;color:var(--china)}
+.misure__vuoto{font-size:.84rem;color:#475569}
+.interruttori{display:grid;grid-template-columns:1fr 1fr;gap:.35rem .8rem;font-size:.88rem}
+.interruttori label{display:flex;align-items:center;gap:.45rem;min-height:34px;cursor:pointer}
+.interruttori input{width:18px;height:18px;accent-color:var(--china)}
+.regole__tabella{width:100%;border-collapse:collapse;font-size:.84rem}
+.regole__tabella th,.regole__tabella td{text-align:left;padding:.28rem .3rem;border-bottom:1px solid #CBD5E1;vertical-align:top}
+.regole__tabella thead th{font:600 .66rem var(--d-mono);color:#475569;text-transform:uppercase}
+.regole__tabella tbody th{font-weight:600;white-space:nowrap}
+.regole__nota{margin-top:.55rem;font-size:.84rem}
+
+/* ── schermi medi e piccoli ── */
+@media (max-width:1180px){
+  .asso__corpo{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+  .comandi{grid-column:1/-1;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));align-items:start}
+}
+@media (max-width:720px){
+  .asso__corpo{grid-template-columns:minmax(0,1fr)}
+  /* sul telefono la consegna e il tipo stanno sopra il disegno, il resto dei comandi sotto */
+  .comandi{display:contents}
+  .esercizio{order:-2}
+  .gruppo--tipo{order:-1}
+  .pannello__et{font-size:.6rem}
+  .asso__lead{font-size:.96rem}
+  /* il disegno è più piccolo: scritte più grandi rispetto al foglio */
+  .quota{font-size:5.2px}
+  .gradi{font-size:4.6px}
+  .nome-asse{font-size:6.2px}
+  .nome-o{font-size:5.6px}
+  .nome-punto{font-size:6.4px}
+  .viste .quota{font-size:8px}
+  .viste .nome-piano{font-size:7.6px}
+  .viste .nome-o{font-size:6.4px}
+  .viste .nome-punto{font-size:8px}
+}
+
+/* ── dentro una pagina del libro ── */
+.is-embed body{background:transparent}
+.is-embed .testata,.is-embed .asso__intro{display:none}
+.is-embed .asso{padding:10px}
+
+/* ── alla LIM: tutto in uno schermo, comandi grandi ── */
+.lim .testata,.lim .asso__intro,.lim .asso__piede{display:none}
+.lim .asso{padding:12px;max-width:none}
+.lim .asso__corpo{grid-template-columns:minmax(0,1.38fr) minmax(0,1fr) minmax(300px,360px);gap:12px}
+.lim .foglio{aspect-ratio:auto;height:calc(100vh - 62px)}
+.lim .viste{aspect-ratio:auto;height:calc(60vh - 40px)}
+.lim .chip,.lim .tasto{font-size:.92rem;min-height:48px}
+.lim .interruttori,.lim .regole__tabella,.lim .regole__nota,.lim .punto{font-size:1rem}
+.lim .gruppo__et,.lim .punto__titolo,.lim .pannello__et{font-size:.76rem}

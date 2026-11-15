@@ -1,0 +1,246 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
+import {
+  MC_ASSONOMETRIE,
+  MC_MONOMETRICA,
+  NOME_TIPO,
+  TAVOLE_ASS,
+  TAVOLE_ASS_PRONTE,
+  assonometroSrc,
+  costruzioneAssSrc,
+  hrefTavolaAss,
+} from "@/lib/geogebra-assonometrie";
+
+export const metadata: Metadata = {
+  title: "Assonometrie — Book ProfTecnologIA",
+  description:
+    "Tavole guidate di assonometria cavaliera, isometrica e monometrica: il solido nell’assonometro, con assi e misure, e la costruzione passo per passo con GeoGebra.",
+};
+
+const COME_SI_USA = [
+  { nome: "Guarda", testo: "Nell’assonometro vedi il solido come viene sul foglio, con i tre assi, le misure e le tre viste da cui parti." },
+  { nome: "Costruisci", testo: "Segui la costruzione un passo alla volta e ripeti ogni passo sul tuo foglio." },
+  { nome: "Controlla", testo: "Fai la prova con misure nuove e controlla il tuo foglio con l’elenco «Controlla da solo»." },
+];
+
+const TIPI = [
+  { nome: "Cavaliera", assi: "x orizzontale, y a 45°, z verticale", misure: "x e z vere, y a metà", quando: "La faccia di fronte resta com’è nel prospetto. È la più rapida da disegnare." },
+  { nome: "Isometrica", assi: "x e y a 30°, z verticale", misure: "vere lungo i tre assi", quando: "Mostra le tre facce allo stesso modo. Molti programmi di disegno 3D la usano come vista pronta." },
+  { nome: "Monometrica", assi: "x a 30°, y a 60°, z verticale", misure: "vere lungo i tre assi", quando: "La base resta com’è nella pianta. Si usa per stanze ed edifici visti dall’alto." },
+];
+
+const LEGENDA = [
+  { colore: "#475569", nome: "Grigio scuro sottile", testo: "i tre assi x, y e z" },
+  { colore: "#64748B", nome: "Grigio sottile", testo: "le linee della scatola" },
+  { colore: "#1E40AF", nome: "Blu", testo: "le linee della figura mentre la costruisci" },
+  { colore: "#EF4444", nome: "Rosso", testo: "i punti con il nome" },
+  { colore: "#C2410C", nome: "Arancione", testo: "le misure" },
+  { colore: "#94A3B8", nome: "Grigio chiaro tratteggiato", testo: "la linea orizzontale da cui si misurano gli angoli" },
+  { colore: "#16A34A", nome: "Verde", testo: "gli angoli degli assi" },
+  { colore: "#111827", nome: "Nero", testo: "gli spigoli da ripassare; tratteggiati se sono nascosti" },
+  { colore: "#93C5FD", nome: "Azzurro, giallo, rosa", testo: "le facce, con i colori di PV, PO e PL" },
+];
+
+export default function AssonometriePage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+  return (
+    <div className="min-h-screen bg-[#f7f8f5] text-slate-900">
+      <Breadcrumb
+        items={[
+          { label: "Book ProfTecnologIA", href: "/" },
+          { label: MC_ASSONOMETRIE, href: `/mc/${MC_ASSONOMETRIE}`, emoji: "📐", color: "#1A3A7A" },
+          { label: "Assonometrie", color: "#1A3A7A" },
+        ]}
+      />
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+        <div className="max-w-3xl">
+          <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-800">
+            Disegno tecnico · Classi 2ª e 3ª · {MC_ASSONOMETRIE} e {MC_MONOMETRICA}
+          </p>
+          <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Assonometrie</h1>
+          <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+            Tavole guidate per passare dalle tre viste di un solido a un solo disegno che lo mostra tutto insieme.
+            Prima guardi il solido nell’assonometro, poi costruisci il foglio un passo alla volta e alla fine controlli
+            il tuo disegno.
+          </p>
+        </div>
+
+        <div className="mt-6 grid gap-4 lg:grid-cols-2">
+          <div className="rounded-xl border border-blue-200 bg-blue-50 p-5 text-sm leading-6 text-blue-950">
+            <p className="font-black">Come si usa una tavola</p>
+            <ol className="mt-2 list-decimal space-y-1 pl-5">
+              {COME_SI_USA.map((p) => (
+                <li key={p.nome}>
+                  <strong>{p.nome}.</strong> {p.testo}
+                </li>
+              ))}
+            </ol>
+            <p className="mt-2">
+              Alla LIM: i link «LIM» aprono assonometro e costruzione a schermo intero, con testo e pulsanti grandi.
+            </p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-5 text-sm leading-6 text-slate-700">
+            <p className="font-black text-slate-950">I colori delle tavole</p>
+            <ul className="mt-2 space-y-1.5">
+              {LEGENDA.map((l) => (
+                <li key={l.nome} className="flex items-center gap-3">
+                  <span aria-hidden="true" className="h-1.5 w-10 shrink-0 rounded-full" style={{ backgroundColor: l.colore }} />
+                  <span>
+                    <strong className="text-slate-950">{l.nome}:</strong> {l.testo}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-2">Ti servono: matita, righello e due squadre.</p>
+          </div>
+        </div>
+
+        <section aria-labelledby="titolo-tipi" className="mt-6 rounded-xl border border-slate-200 bg-white p-5">
+          <h2 id="titolo-tipi" className="text-xl font-black tracking-tight text-slate-950">
+            Tre assonometrie, tre regole
+          </h2>
+          <div className="mt-3 overflow-x-auto">
+            <table className="w-full min-w-[36rem] text-left text-sm leading-6 text-slate-700">
+              <thead>
+                <tr className="border-b border-slate-300 font-mono text-xs uppercase tracking-widest text-slate-500">
+                  <th scope="col" className="py-2 pr-4">Tipo</th>
+                  <th scope="col" className="py-2 pr-4">Assi sul foglio</th>
+                  <th scope="col" className="py-2 pr-4">Misure</th>
+                  <th scope="col" className="py-2">Quando conviene</th>
+                </tr>
+              </thead>
+              <tbody>
+                {TIPI.map((t) => (
+                  <tr key={t.nome} className="border-b border-slate-200 align-top">
+                    <th scope="row" className="py-2 pr-4 font-black text-slate-950">{t.nome}</th>
+                    <td className="py-2 pr-4">{t.assi}</td>
+                    <td className="py-2 pr-4">{t.misure}</td>
+                    <td className="py-2">{t.quando}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3 text-sm leading-6 text-slate-700">
+            Gli angoli si misurano dalla linea orizzontale. In tutte e tre gli spigoli che nel solido sono paralleli
+            restano paralleli nel disegno.
+          </p>
+        </section>
+
+        <section
+          aria-labelledby="titolo-assonometro"
+          className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-xl border border-slate-900 bg-slate-900 p-5 text-slate-100"
+        >
+          <div className="max-w-2xl">
+            <h2 id="titolo-assonometro" className="text-xl font-black tracking-tight text-white">
+              L’assonometro
+            </h2>
+            <p className="mt-1 text-sm leading-6 text-slate-200">
+              Dodici solidi da disegnare in cavaliera, in isometrica e in monometrica. Scegli le misure, gira il
+              solido, accendi la scatola e tocca un vertice per vedere come si trova, una misura alla volta. Accanto ci
+              sono le tre viste. Puoi usarlo anche da solo, senza una tavola.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-black">
+            <a
+              href={assonometroSrc()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg bg-white px-4 py-2.5 text-slate-950 hover:bg-amber-200"
+            >
+              Apri l’assonometro ↗
+            </a>
+            <a
+              href={assonometroSrc({ modo: "lim" })}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="self-center text-white underline underline-offset-4"
+            >
+              LIM ↗
+            </a>
+          </div>
+        </section>
+
+        <section id="tavole" aria-labelledby="titolo-tavole" className="mt-10 scroll-mt-28">
+          <h2 id="titolo-tavole" className="text-2xl font-black tracking-tight text-slate-950">
+            Le tavole{" "}
+            <span className="text-base font-bold text-slate-500">
+              · {TAVOLE_ASS_PRONTE.length} pronte su {TAVOLE_ASS.length}
+            </span>
+          </h2>
+          <p className="mt-1 max-w-3xl text-sm leading-6 text-slate-700">
+            Si comincia dallo stesso parallelepipedo disegnato nei tre modi, per vedere che cosa cambia. I solidi sono
+            quelli delle tavole di{" "}
+            <Link href="/proiezioni-ortogonali" className="font-bold text-blue-800 underline underline-offset-4">
+              proiezioni ortogonali
+            </Link>
+            : le misure si prendono dalle tre viste.
+          </p>
+          <ol className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {TAVOLE_ASS.map((t) =>
+              t.pronta ? (
+                <li key={t.slug} className="flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+                  {/* L'immagine è un secondo accesso alla stessa pagina: il link con il nome è sotto */}
+                  <Link href={hrefTavolaAss(t)} tabIndex={-1} aria-hidden="true" className="block border-b border-slate-100 bg-white">
+                    <img
+                      src={`${basePath}/assets/assonometrie/${t.slug}.webp`}
+                      alt=""
+                      width={640}
+                      height={498}
+                      loading="lazy"
+                      decoding="async"
+                      className="aspect-[640/498] w-full object-contain"
+                    />
+                  </Link>
+                  <div className="flex flex-1 flex-col gap-2 p-5">
+                    <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-900">
+                      Tavola {t.numero} · {NOME_TIPO[t.tipo]}
+                      {t.mc === MC_MONOMETRICA ? " · classe 3ª" : ""}
+                    </p>
+                    <h3 className="text-lg font-black leading-snug tracking-tight text-slate-950">{t.titolo}</h3>
+                    <p className="text-sm leading-6 text-slate-700">{t.descrizione}</p>
+                    <div className="mt-auto flex flex-wrap gap-x-4 gap-y-1 pt-2 text-sm font-bold">
+                      <Link href={hrefTavolaAss(t)} className="text-blue-800 underline underline-offset-4">
+                        Apri la tavola →
+                      </Link>
+                      <a
+                        href={costruzioneAssSrc(t, true)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-slate-600 underline underline-offset-4"
+                      >
+                        LIM ↗
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              ) : (
+                <li
+                  key={t.slug}
+                  className="flex flex-col gap-2 rounded-xl border border-dashed border-slate-300 bg-slate-50 p-5"
+                >
+                  <p className="font-mono text-xs font-black uppercase tracking-widest text-slate-500">
+                    Tavola {t.numero} · {NOME_TIPO[t.tipo]} · in preparazione
+                  </p>
+                  <h3 className="text-lg font-black leading-snug tracking-tight text-slate-700">{t.titolo}</h3>
+                  <p className="text-sm leading-6 text-slate-600">{t.descrizione}</p>
+                </li>
+              ),
+            )}
+          </ol>
+        </section>
+
+        <p className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-bold">
+          <Link href={`/mc/${MC_ASSONOMETRIE}`} className="text-blue-800 underline underline-offset-4">
+            Torna alla micro-competenza {MC_ASSONOMETRIE} →
+          </Link>
+          <Link href={`/mc/${MC_MONOMETRICA}`} className="text-blue-800 underline underline-offset-4">
+            {MC_MONOMETRICA}: assonometria e prospettiva →
+          </Link>
+        </p>
+      </div>
+    </div>
+  );
+}

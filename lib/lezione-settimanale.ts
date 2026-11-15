@@ -11,6 +11,7 @@
 import { SETTIMANE_DI_LEZIONE } from "./calendario-scolastico";
 import { CATEGORIE_COSTRUZIONI, COSTRUZIONI_GEOGEBRA, hrefCostruzione, type CategoriaCostruzione } from "./geogebra-costruzioni";
 import { TAVOLE_PO_PRONTE, hrefTavolaPO } from "./geogebra-proiezioni";
+import { TAVOLE_ASS_PRONTE, hrefTavolaAss } from "./geogebra-assonometrie";
 
 export interface LinkLezione {
   href: string;
@@ -68,7 +69,7 @@ function mc(id: string, settimane: 1 | 2 | 3 | 4 | 6): VoceLezione[] {
 }
 
 /** Una settimana (o più) descritta a mano. */
-function voce(titolo: string, cosa: string, opzioni: { mc?: string; link?: LinkLezione[]; settimane?: number } = {}): VoceLezione[] {
+function voce(titolo: string, cosa: string, opzioni: { mc?: string; link?: LinkLezione[]; tavole?: VoceLezione["tavole"]; settimane?: number } = {}): VoceLezione[] {
   const { settimane = 1, ...resto } = opzioni;
   return Array.from({ length: settimane }, (_, i) => ({
     titolo: settimane > 1 ? `${titolo} (${i + 1} di ${settimane})` : titolo,
@@ -116,6 +117,17 @@ const PO = "Si segue la tavola passo per passo alla LIM, si controlla il solido 
 const LINK_PO = [{ href: "/proiezioni-ortogonali", label: "Proiettore ortogonale e tavole" }];
 const LINK_COSTRUZIONI = [{ href: "/costruzioni-geometriche", label: "Costruzioni geometriche" }];
 
+// ── Disegno 2ª e 3ª: le tavole di assonometria ───────────────────────────────────────────────────
+const LINK_ASS = [{ href: "/assonometrie", label: "Assonometro e tavole di assonometria" }];
+/** Link e anteprime delle tavole di assonometria con quei numeri (solo quelle pronte), più la pagina delle assonometrie. */
+function tavoleAss(numeri: number[]): Pick<VoceLezione, "link" | "tavole"> {
+  const tavole = TAVOLE_ASS_PRONTE.filter((t) => numeri.includes(t.numero));
+  return {
+    link: [...tavole.map((t) => ({ href: hrefTavolaAss(t), label: `Tavola ${t.numero} · ${t.titolo}` })), ...LINK_ASS],
+    tavole: tavole.slice(0, MAX_ANTEPRIME).map((t) => ({ src: `${BASE_PATH}/assets/assonometrie/${t.slug}.webp`, href: hrefTavolaAss(t) })),
+  };
+}
+
 // ── Classe 1ª ────────────────────────────────────────────────────────────────────────────────────
 const CLASSE_1: PianoClasse = {
   teoria: [
@@ -160,13 +172,13 @@ const CLASSE_2: PianoClasse = {
     ...tavolePO([15], "Sezioni: la piramide tagliata", PO),
     ...tavolePO([16, 17], "Sezioni: prisma e cilindro tagliati da un piano inclinato", PO),
     ...voce("Proiezioni ortogonali: tavola di verifica", "Ognuno sceglie un solido nel Proiettore ortogonale e ne disegna le tre viste senza guida.", { mc: "MC-DIS-2-01", link: LINK_PO }),
-    ...voce("Assonometria cavaliera: il parallelepipedo", "Gli assi della cavaliera e il primo solido: è l’attività di livello base di «Sperimenta».", { mc: "MC-DIS-2-02" }),
-    ...voce("Assonometria cavaliera: altri solidi", "Altri solidi in cavaliera, partendo dalle proiezioni ortogonali già disegnate.", { mc: "MC-DIS-2-02", link: LINK_PO }),
-    ...voce("Assonometria isometrica: gli assi", "I tre assi isometrici con la squadra a 30° e 60° e il primo parallelepipedo.", { mc: "MC-DIS-2-02" }),
-    ...voce("Assonometria isometrica: altri solidi", "Gli stessi solidi della cavaliera, ora in isometrica.", { mc: "MC-DIS-2-02", link: LINK_PO }),
-    ...voce("Solidi composti: il metodo della scatola", "Si chiude il solido in una scatola, la si disegna in assonometria e si toglie ciò che non serve.", { mc: "MC-DIS-2-02", settimane: 2 }),
-    ...voce("Cavaliera e isometrica a confronto", "Lo stesso oggetto disegnato nei due modi: quando conviene l’uno e quando l’altro (livello intermedio di «Sperimenta»).", { mc: "MC-DIS-2-02" }),
-    ...voce("I cerchi in assonometria", "Come un cerchio diventa un’ellisse e come si disegna un solido con una parte cilindrica in isometrica (livello avanzato di «Sperimenta»).", { mc: "MC-DIS-2-02" }),
+    ...voce("Assonometria cavaliera: il parallelepipedo", "Gli assi della cavaliera e il primo solido: è l’attività di livello base di «Sperimenta».", { mc: "MC-DIS-2-02", ...tavoleAss([1]) }),
+    ...voce("Assonometria cavaliera: altri solidi", "Altri solidi in cavaliera, partendo dalle proiezioni ortogonali già disegnate.", { mc: "MC-DIS-2-02", link: [...LINK_ASS, ...LINK_PO] }),
+    ...voce("Assonometria isometrica: gli assi", "I tre assi isometrici con la squadra a 30° e 60° e il primo parallelepipedo.", { mc: "MC-DIS-2-02", ...tavoleAss([4]) }),
+    ...voce("Assonometria isometrica: altri solidi", "Gli stessi solidi della cavaliera, ora in isometrica.", { mc: "MC-DIS-2-02", link: [...LINK_ASS, ...LINK_PO] }),
+    ...voce("Solidi composti: il metodo della scatola", "Si chiude il solido in una scatola, la si disegna in assonometria e si toglie ciò che non serve.", { mc: "MC-DIS-2-02", settimane: 2, ...tavoleAss([3]) }),
+    ...voce("Cavaliera e isometrica a confronto", "Lo stesso oggetto disegnato nei due modi: quando conviene l’uno e quando l’altro (livello intermedio di «Sperimenta»).", { mc: "MC-DIS-2-02", link: LINK_ASS }),
+    ...voce("I cerchi in assonometria", "Come un cerchio diventa un’ellisse e come si disegna un solido con una parte cilindrica in isometrica (livello avanzato di «Sperimenta»).", { mc: "MC-DIS-2-02", link: LINK_ASS }),
     ...mc("MC-DIG-2-01", 6),
     ...mc("MC-INF-2-01", 3),
     ...mc("MC-INF-2-02", 3),
@@ -191,13 +203,13 @@ const CLASSE_3: PianoClasse = {
   ],
   pratica: [
     ...voce("Ripasso: le proiezioni ortogonali", "Le tre viste di un solido: da qui partono sia l’assonometria sia la prospettiva.", { mc: "MC-DIS-2-01", link: LINK_PO }),
-    ...voce("Assonometria cavaliera: solidi semplici", "Gli assi della cavaliera; parallelepipedo e prismi a partire dalle tre viste.", { mc: "MC-DIS-2-02" }),
-    ...voce("Assonometria cavaliera: piramidi e solidi sovrapposti", "Si passa dalle proiezioni ortogonali all’assonometria di solidi più articolati.", { mc: "MC-DIS-2-02", link: LINK_PO }),
-    ...voce("Assonometria isometrica: solidi semplici", "I tre assi isometrici con la squadra a 30° e 60°; parallelepipedo e prismi.", { mc: "MC-DIS-2-02" }),
-    ...voce("Assonometria isometrica: piramidi e solidi sovrapposti", "Gli stessi solidi della cavaliera, ora in isometrica.", { mc: "MC-DIS-2-02", link: LINK_PO }),
-    ...voce("Cavaliera e isometrica a confronto", "Lo stesso oggetto nei due modi: che cosa cambia e quando conviene ciascuno.", { mc: "MC-DIS-2-02" }),
-    ...voce("Assonometria di solidi composti", "Il metodo della scatola: si chiude l’oggetto in una scatola e si toglie ciò che non serve.", { mc: "MC-DIS-2-02", settimane: 2 }),
-    ...voce("I cerchi in assonometria", "Come un cerchio diventa un’ellisse; il cilindro e un solido composto con una parte cilindrica.", { mc: "MC-DIS-2-02" }),
+    ...voce("Assonometria cavaliera: solidi semplici", "Gli assi della cavaliera; parallelepipedo e prismi a partire dalle tre viste.", { mc: "MC-DIS-2-02", ...tavoleAss([1]) }),
+    ...voce("Assonometria cavaliera: piramidi e solidi sovrapposti", "Si passa dalle proiezioni ortogonali all’assonometria di solidi più articolati.", { mc: "MC-DIS-2-02", link: [...LINK_ASS, ...LINK_PO] }),
+    ...voce("Assonometria isometrica: solidi semplici", "I tre assi isometrici con la squadra a 30° e 60°; parallelepipedo e prismi.", { mc: "MC-DIS-2-02", ...tavoleAss([4]) }),
+    ...voce("Assonometria isometrica: piramidi e solidi sovrapposti", "Gli stessi solidi della cavaliera, ora in isometrica.", { mc: "MC-DIS-2-02", link: [...LINK_ASS, ...LINK_PO] }),
+    ...voce("Cavaliera e isometrica a confronto", "Lo stesso oggetto nei due modi: che cosa cambia e quando conviene ciascuno.", { mc: "MC-DIS-2-02", link: LINK_ASS }),
+    ...voce("Assonometria di solidi composti", "Il metodo della scatola: si chiude l’oggetto in una scatola e si toglie ciò che non serve.", { mc: "MC-DIS-2-02", settimane: 2, ...tavoleAss([3]) }),
+    ...voce("I cerchi in assonometria", "Come un cerchio diventa un’ellisse; il cilindro e un solido composto con una parte cilindrica.", { mc: "MC-DIS-2-02", link: LINK_ASS }),
     ...voce("Prospettiva centrale: orizzonte e punto di fuga", "Linea d’orizzonte, punto di fuga e la prima scatola in prospettiva (livello base di «Sperimenta»).", { mc: "MC-DIS-3-01" }),
     ...voce("Prospettiva centrale: più solidi", "Scatole sopra e sotto la linea d’orizzonte, a destra e a sinistra del punto di fuga.", { mc: "MC-DIS-3-01" }),
     ...voce("Prospettiva centrale: una stanza", "Un interno visto di fronte: pavimento, pareti, una porta e un mobile.", { mc: "MC-DIS-3-01" }),
