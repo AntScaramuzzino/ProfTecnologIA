@@ -1843,6 +1843,1024 @@ Le costruzioni dalla 34 alla 50 ti mostrano un esempio per ogni tipo di motivo. 
 
 ---
 
+#### Costruzione 71 — Angolo piatto diviso in tre parti uguali
+
+**Servono:** righello, compasso.
+
+**Situazione:** Sulla retta r è segnato il punto O: le due semirette opposte formano un angolo piatto, di 180°. Vuoi dividerlo in tre angoli uguali.
+
+**Passi:**
+
+1. Punta in O con un’apertura a piacere e traccia una semicirconferenza sopra la retta: la incontra in A, a destra, e in B, a sinistra. *Tieni ferma questa apertura.*
+
+2. Con la stessa apertura punta in A e taglia la semicirconferenza nel punto C. *Il triangolo O-A-C è equilatero.*
+
+3. Sempre con la stessa apertura punta in B e taglia la semicirconferenza nel punto D. *Anche O-B-D è equilatero.*
+
+4. Unisci O con C e O con D, prolungando oltre la semicirconferenza. L’angolo piatto è diviso in tre angoli di 60°. *Controlla con il goniometro: 60°, 60°, 60°.*
+
+**Perché funziona?** I triangoli O-A-C e O-B-D hanno i tre lati uguali all’apertura del compasso: sono equilateri, quindi gli angoli AOC e BOD misurano 60°. L’angolo piatto è di 180°: tra le due semirette restano 180° − 60° − 60° = 60°.
+
+**Prova tu:** Traccia una retta, segna un punto O e dividi l’angolo piatto in tre parti. Controlla con il goniometro: ogni angolo deve misurare 60°.
+
+---
+
+#### Costruzione 72 — Angolo di 120° con il compasso
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una semiretta che parte dal punto O. Vuoi costruire un angolo di 120° senza goniometro.
+
+**Passi:**
+
+1. Punta in O con un’apertura a piacere e traccia un arco ampio, più di un terzo di giro: incontra la semiretta nel punto A. *Tieni ferma l’apertura.*
+
+2. Con la stessa apertura punta in A e taglia l’arco nel punto B. *Sei a 60° dalla semiretta.*
+
+3. Punta in B e taglia ancora l’arco, più avanti: trovi il punto C. *Sei a 120° dalla semiretta.*
+
+4. Traccia la semiretta che parte da O e passa per C: forma con la prima un angolo di 120°. *Controlla con il goniometro.*
+
+**Perché funziona?** I triangoli O-A-B e O-B-C hanno tutti i lati uguali all’apertura del compasso: sono equilateri. L’angolo AOB misura 60° e l’angolo BOC altri 60°: insieme fanno 120°. È l’angolo interno dell’esagono regolare.
+
+**Prova tu:** Costruisci un angolo di 120° partendo da una semiretta lunga 8 cm. Controlla l’ampiezza con il goniometro.
+
+---
+
+#### Costruzione 73 — Angolo di 135° con il compasso
+
+**Servono:** righello, compasso.
+
+**Situazione:** Sulla retta r è segnato il punto O. Vuoi costruire un angolo di 135° con il vertice in O, misurato a partire dalla semiretta di destra.
+
+**Passi:**
+
+1. Costruisci la perpendicolare a r nel punto O (Costruzione 1): una semicirconferenza con centro O, due archetti che si incrociano e la retta verticale. *La semicirconferenza ti servirà ancora.*
+
+2. La semicirconferenza incontra la retta r nel punto A, a sinistra di O, e la perpendicolare nel punto B. *OA e OB sono lunghi uguali.*
+
+3. Con un’apertura uguale a OA punta in A e poi in B: i due archetti si incrociano nel punto C, fuori dalla semicirconferenza. *C è alla stessa distanza da A e da B.*
+
+4. Traccia la semiretta che parte da O e passa per C: con la semiretta di destra forma un angolo di 135°. *Controlla con il goniometro.*
+
+**Perché funziona?** La perpendicolare forma con la semiretta di destra un angolo di 90°. La semiretta OC è la bisettrice dell’angolo retto di sinistra e lo divide in due angoli di 45°. Partendo dalla semiretta di destra: 90° + 45° = 135°.
+
+**Prova tu:** Costruisci un angolo di 135° e controllalo con il goniometro. Poi osserva: quanto misura l’angolo che resta per arrivare a 180°?
+
+---
+
+#### Costruzione 74 — Angoli di 75° e di 15° con il compasso
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una semiretta che parte dal punto O. Vuoi costruire un angolo di 75° e, insieme, uno di 15°.
+
+**Passi:**
+
+1. Punta in O con un’apertura a piacere e traccia un arco ampio: incontra la semiretta nel punto A. *Tieni ferma l’apertura fino al passo 3.*
+
+2. Con la stessa apertura punta in A e taglia l’arco in B. Poi punta in B e taglia l’arco in C. *B è a 60° dalla semiretta, C a 120°.*
+
+3. Sempre con la stessa apertura punta in B e poi in C: i due archetti si incrociano nel punto E. Unisci O con E: è la perpendicolare, e taglia l’arco nel punto D. *D è a 90° dalla semiretta di partenza.*
+
+4. Con un’apertura un po’ più piccola punta in B e poi in D: i due archetti si incrociano nel punto F, oltre l’arco. *F è alla stessa distanza da B e da D.*
+
+5. Traccia la semiretta che parte da O e passa per F: forma 75° con la semiretta di partenza e 15° con la perpendicolare. *Controlla con il goniometro.*
+
+**Perché funziona?** La semiretta OB è a 60° dalla semiretta di partenza e la perpendicolare OD è a 90°: tra le due ci sono 30°. Il punto F è alla stessa distanza da B e da D, quindi OF divide quei 30° a metà: 60° + 15° = 75°. L’angolo tra OF e la perpendicolare misura 15°.
+
+**Prova tu:** Costruisci un angolo di 75° con riga e compasso. Misura con il goniometro sia l’angolo di 75° sia quello di 15°.
+
+---
+
+#### Costruzione 75 — Angolo giro diviso in otto parti uguali
+
+**Servono:** righello, compasso.
+
+**Situazione:** Sulla retta r è segnato il punto O. Attorno a O c’è un giro completo, di 360°: vuoi dividerlo in otto angoli uguali.
+
+**Passi:**
+
+1. Punta in O e traccia una circonferenza: incontra la retta r nei punti A e B. *A e B sono alla stessa distanza da O.*
+
+2. Costruisci l’asse del segmento AB (Costruzione 9): archetti da A e da B, sopra e sotto. La retta passa per O e taglia la circonferenza in C e in D. *Ora hai quattro angoli retti.*
+
+3. Con un’apertura a piacere, uguale per tutti gli archetti, punta in B e poi in C: i due archetti si incrociano nel punto 1. Poi punta in A e in C: trovi il punto 2. *L’apertura deve essere più grande della metà della distanza tra B e C.*
+
+4. Traccia la retta che passa per 1 e per O e quella che passa per 2 e per O, prolungandole dall’altra parte. *Ogni retta divide a metà due angoli retti opposti.*
+
+5. Attorno a O ci sono otto angoli, tutti di 45°. *Controlla con il goniometro due angoli a scelta.*
+
+**Perché funziona?** Le due rette perpendicolari dividono l’angolo giro, di 360°, in quattro angoli retti. Ogni bisettrice passa per due punti equidistanti dai lati dell’angolo e lo divide a metà: 90° : 2 = 45°. In tutto gli angoli sono otto, e 8 × 45° = 360°.
+
+**Prova tu:** Dividi l’angolo giro in otto parti e scrivi sulle otto direzioni i nomi delle direzioni per esteso: nord, nord-est, est, sud-est, sud, sud-ovest, ovest, nord-ovest.
+
+---
+
+#### Costruzione 76 — Quadrato data la diagonale
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Conosci la diagonale AC del quadrato, ma non il lato. Vuoi costruire il quadrato.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AC (Costruzione 9): archetti da A e da C, sopra e sotto, e la retta per i due incroci. Trovi il punto medio O. *O è il centro del quadrato.*
+
+2. Punta in O, apri fino ad A e traccia la circonferenza: incontra l’asse nei punti B e D. *OB e OD sono lunghi quanto OA.*
+
+3. Unisci in ordine A, B, C e D. Il quadrato è completo. *Controlla con la squadra un angolo: deve essere retto.*
+
+**Perché funziona?** Nel quadrato le diagonali sono uguali, perpendicolari e si tagliano a metà. L’asse di AC è perpendicolare ad AC e passa per il suo punto medio O; la circonferenza di centro O porta B e D alla stessa distanza da O di A e di C. Le due diagonali AC e BD hanno quindi tutte le proprietà richieste: ABCD è un quadrato.
+
+**Prova tu:** Costruisci un quadrato con la diagonale di 8 cm. Misura i quattro lati: devono essere uguali, circa 5,7 cm.
+
+---
+
+#### Costruzione 77 — Rettangolo dati i due lati
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Conosci i due lati del rettangolo: la base, lunga 7 cm, e l’altezza, lunga 4 cm. Vuoi costruire il rettangolo.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 7 cm. *Lascia spazio sopra.*
+
+2. Costruisci la perpendicolare ad AB nell’estremo A e poi nell’estremo B (Costruzione 10, oppure con le squadre). *Le due perpendicolari sono parallele tra loro.*
+
+3. Apri il compasso a 4 cm. Punta in A e taglia la prima perpendicolare: trovi D. Punta in B e taglia la seconda: trovi C. *Usa la stessa apertura per tutti e due i punti.*
+
+4. Ripassa i lati AD e BC e unisci D con C. Il rettangolo è completo. *Misura le due diagonali: devono essere uguali.*
+
+**Perché funziona?** AD e BC sono perpendicolari alla base, quindi gli angoli in A e in B sono retti. AD e BC sono lunghi uguali, perché hai usato la stessa apertura: il lato DC è parallelo ad AB e lungo quanto AB. Anche gli angoli in D e in C sono retti: ABCD è un rettangolo.
+
+**Prova tu:** Costruisci un rettangolo con la base di 9 cm e l’altezza di 5 cm. Misura le due diagonali: devono essere uguali.
+
+---
+
+#### Costruzione 78 — Rombo date le due diagonali
+
+**Servono:** righello, compasso.
+
+**Situazione:** Conosci le due diagonali del rombo: la maggiore, lunga 8 cm, e la minore, lunga 5 cm. Vuoi costruire il rombo.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AC lungo 8 cm. *È la diagonale più lunga.*
+
+2. Costruisci l’asse del segmento AC (Costruzione 9): trovi il punto medio O e la retta perpendicolare. *Sull’asse starà la diagonale minore.*
+
+3. Apri il compasso a 2,5 cm, cioè metà della diagonale minore. Punta in O e taglia l’asse sopra e sotto: trovi B e D. *BD è lungo 5 cm.*
+
+4. Unisci in ordine A, B, C e D. Il rombo è completo. *Misura i quattro lati: devono essere uguali, circa 4,7 cm.*
+
+**Perché funziona?** Le due diagonali sono perpendicolari e si tagliano a metà nel punto O. Dividono il rombo in quattro triangoli rettangoli con gli stessi cateti, 4 cm e 2,5 cm: i quattro triangoli sono uguali, quindi lo sono anche le loro ipotenuse, che sono i lati del rombo.
+
+**Prova tu:** Costruisci un rombo con le diagonali di 10 cm e 6 cm. Misura i quattro lati: devono essere uguali.
+
+---
+
+#### Costruzione 79 — Rombo dati il lato e una diagonale
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Conosci il lato del rombo, lungo 4,5 cm, e una diagonale, lunga 7 cm. Vuoi costruire il rombo.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AC lungo 7 cm. *A e C sono due vertici opposti.*
+
+2. Prendi l’apertura di 4,5 cm. Punta in A e traccia un archetto sopra e uno sotto il segmento. *Tieni ferma l’apertura.*
+
+3. Con la stessa apertura punta in C e incrocia i due archetti: trovi B sopra e D sotto. *B e D distano 4,5 cm sia da A sia da C.*
+
+4. Unisci in ordine A, B, C e D. Il rombo è completo. *Traccia la diagonale BD: è perpendicolare ad AC.*
+
+**Perché funziona?** I punti B e D distano da A e da C quanto l’apertura del compasso, cioè 4,5 cm. I quattro lati AB, BC, CD e DA sono quindi uguali: il quadrilatero è un rombo. La diagonale AC lo divide in due triangoli isosceli uguali.
+
+**Prova tu:** Costruisci un rombo con il lato di 5 cm e una diagonale di 8 cm. Traccia l’altra diagonale e controlla con la squadra che sia perpendicolare alla prima.
+
+---
+
+#### Costruzione 80 — Parallelogramma dati i lati e una diagonale
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Conosci i due lati del parallelogramma, 6 cm e 4 cm, e la diagonale BD, lunga 5 cm. Vuoi costruire il parallelogramma.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 6 cm. *È la base.*
+
+2. Apri il compasso a 4 cm, punta in A e traccia un archetto sopra la base. Apri a 5 cm, punta in B e incrocia il primo archetto: trovi D. *ABD è un triangolo dati i tre lati (Costruzione 17).*
+
+3. Apri il compasso a 6 cm, punta in D e traccia un archetto a destra. Apri a 4 cm, punta in B e incrocia l’archetto sopra la base: trovi C. *C sta dalla parte opposta di A rispetto alla diagonale BD.*
+
+4. Unisci in ordine A, B, C e D. Il parallelogramma è completo. *Controlla con le squadre: AB è parallelo a DC, AD è parallelo a BC.*
+
+**Perché funziona?** Il punto D dista 4 cm da A e 5 cm da B: il triangolo ABD ha i tre lati richiesti. Il punto C dista 6 cm da D e 4 cm da B: i lati opposti del quadrilatero sono uguali a due a due, AB = DC e AD = BC. Un quadrilatero non intrecciato con i lati opposti uguali è un parallelogramma.
+
+**Prova tu:** Costruisci un parallelogramma con i lati di 7 cm e 4 cm e una diagonale di 6 cm. Controlla con le squadre che i lati opposti siano paralleli.
+
+---
+
+#### Costruzione 81 — Trapezio isoscele date le basi e l’altezza
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Conosci la base maggiore, lunga 8 cm, la base minore, lunga 4 cm, e l’altezza, lunga 3,5 cm. Vuoi costruire il trapezio isoscele.
+
+**Passi:**
+
+1. Con il righello traccia il segmento AB lungo 8 cm. *Lascia spazio sopra.*
+
+2. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio M e la retta perpendicolare. *È l’asse di simmetria del trapezio.*
+
+3. Apri il compasso a 3,5 cm. Punta in M e taglia l’asse sopra la base: trovi N. Per N traccia la perpendicolare all’asse, con le squadre. *Questa retta è parallela ad AB.*
+
+4. Apri il compasso a 2 cm, cioè metà della base minore. Punta in N e taglia la parallela da una parte e dall’altra: trovi D e C. *DC è lungo 4 cm.*
+
+5. Unisci A con D e B con C e ripassa le due basi. Il trapezio isoscele è completo. *Misura i due lati obliqui: devono essere uguali.*
+
+**Perché funziona?** La base minore DC è perpendicolare all’asse, quindi è parallela alla base maggiore AB. I punti D e C sono alla stessa distanza dall’asse, come A e B: la figura è simmetrica rispetto all’asse, e i due lati obliqui AD e BC sono uguali. Un trapezio con i lati obliqui uguali è isoscele.
+
+**Prova tu:** Costruisci un trapezio isoscele con le basi di 9 cm e 5 cm e l’altezza di 4 cm. Misura i due lati obliqui: devono essere uguali.
+
+---
+
+#### Costruzione 82 — Triangolo equilatero data l’altezza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Conosci l’altezza del triangolo equilatero, lunga 5 cm, ma non il lato. Sulla retta r è segnato il punto H, dove cadrà l’altezza.
+
+**Passi:**
+
+1. Costruisci la perpendicolare alla retta r nel punto H (Costruzione 1). *Su questa retta starà l’altezza.*
+
+2. Apri il compasso a 5 cm. Punta in H e taglia la perpendicolare: trovi il vertice C. *HC è lungo quanto l’altezza.*
+
+3. Punta in C con un’apertura a piacere e traccia un arco ampio verso il basso: incontra l’altezza nel punto P. Con la stessa apertura punta in P e taglia l’arco da una parte e dall’altra: trovi i punti 1 e 2. *Le direzioni C1 e C2 formano 60° con l’altezza.*
+
+4. Con la stessa apertura punta in P e poi in 1: i due archetti si incrociano nel punto 3. Poi punta in P e in 2: trovi il punto 4. *Stai dividendo a metà i due angoli di 60°.*
+
+5. Traccia la retta che passa per C e per 3 fino alla retta r: trovi A. Traccia la retta che passa per C e per 4: trovi B. Ripassa la base AB. *Misura i tre lati: devono essere uguali, circa 5,8 cm.*
+
+**Perché funziona?** Dal vertice C partono due lati che formano 30° ciascuno con l’altezza: l’angolo in C misura 60°. L’altezza è perpendicolare alla base, quindi nei triangoli rettangoli CHA e CHB l’angolo in A e quello in B valgono 90° − 30° = 60°. Un triangolo con tre angoli di 60° è equilatero.
+
+**Prova tu:** Costruisci un triangolo equilatero con l’altezza di 6 cm. Misura i tre lati: devono essere uguali, circa 6,9 cm.
+
+---
+
+#### Costruzione 83 — Poligono regolare dato il lato: metodo generale
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai il lato AB e vuoi costruire un poligono regolare che abbia quel lato: qui un ettagono, con sette lati.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio M e la retta perpendicolare. *Tutti i centri staranno su questa retta.*
+
+2. Punta in M con apertura MA e taglia l’asse: trovi il punto 4. Punta in A con apertura AB e taglia l’asse: trovi il punto 6. *4 è il centro del quadrato di lato AB, 6 quello dell’esagono.*
+
+3. Trova il punto medio del segmento che va da 4 a 6: è il punto 5. *5 è il centro (approssimato) del pentagono.*
+
+4. Apri il compasso quanto la distanza tra 5 e 6. Punta in 6 e taglia l’asse più in alto: trovi il punto 7. *Continuando troveresti 8, 9, 10: ma l’errore cresce.*
+
+5. Punta in 7, apri fino ad A e traccia la circonferenza: passa anche per B. *È la circonferenza su cui stanno i vertici dell’ettagono.*
+
+6. Apri il compasso quanto AB. Partendo da B trova C e poi D. Partendo da A trova G e poi F. Il settimo vertice, E, è il punto più alto: dove la circonferenza incontra l’asse. *Se riporti ancora il lato da D e da F, i due archetti cadono vicino a E ma non coincidono: è l’errore del metodo.*
+
+7. Unisci in ordine A, B, C, D, E, F e G. L’ettagono è completo. *I lati DE ed EF vengono un po’ più lunghi degli altri.*
+
+**Perché funziona?** I punti 4 e 6 sono esatti: sono i centri del quadrato e dell’esagono che hanno AB come lato. Gli altri centri si ottengono a passo costante, e questa è un’approssimazione. Per il pentagono e per l’ettagono l’errore è piccolo: nell’ettagono i due lati in alto vengono circa il 3 per cento più lunghi degli altri, poco più di 1 mm su un lato di 4 cm. Dall’ottagono in su l’errore diventa troppo grande: meglio usare le costruzioni specifiche.
+
+**Prova tu:** Costruisci con questo metodo un pentagono di lato 4 cm, usando il centro 5. Misura i cinque lati e annota di quanto si discostano.
+
+---
+
+#### Costruzione 84 — Decagono regolare dato il lato
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai il lato AB, tracciato su una retta r. Vuoi costruire il decagono regolare, con dieci lati, che ha proprio quel lato.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio M. *Il centro del decagono starà sull’asse.*
+
+2. Alza la perpendicolare ad AB nell’estremo B (Costruzione 10). Punta in B con apertura BA e taglia la perpendicolare: trovi il punto 1. *B1 è lungo quanto il lato.*
+
+3. Punta in M con apertura M1 e traccia un arco fino alla retta r, oltre B: trovi il punto 2. *La distanza da A a 2 è il raggio del decagono.*
+
+4. Apri il compasso quanto A2. Punta in A e poi in B: i due archetti si incrociano sull’asse nel punto O. *O è il centro del decagono.*
+
+5. Con la stessa apertura punta in O e traccia la circonferenza: passa per A e per B. *Tutti i vertici staranno su questa circonferenza.*
+
+6. Apri il compasso quanto AB e riporta il lato lungo la circonferenza: quattro volte partendo da B e quattro volte partendo da A. *Gli ultimi due vertici, in alto, devono distare tra loro quanto AB.*
+
+7. Unisci i dieci punti uno dopo l’altro, girando lungo la circonferenza. Il decagono è completo. *Controlla l’ultimo lato, quello in alto.*
+
+**Perché funziona?** Nel decagono regolare il raggio della circonferenza circoscritta è circa 1,618 volte il lato: è il numero aureo. La costruzione con i punti M, 1 e 2 è la stessa della diagonale del pentagono (Costruzione 22): A2 è lunga 1,618 volte AB. Il punto O dista A2 sia da A sia da B: è il centro, e il lato riportato dieci volte chiude esattamente il giro.
+
+**Prova tu:** Costruisci un decagono regolare di lato 2,5 cm. Controlla l’ultimo lato: deve essere uguale agli altri.
+
+---
+
+#### Costruzione 85 — Ennagono inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O. Vuoi dividerla in 9 parti uguali e disegnare un ennagono, il poligono con 9 lati.
+
+**Passi:**
+
+1. Traccia il diametro verticale: in alto incontra la circonferenza nel punto A, in basso nel punto S. *A sarà il primo vertice.*
+
+2. Dividi il diametro AS in 9 parti uguali con il metodo delle parallele (Costruzione 3). Numera i punti partendo da A. *Tante parti quanti sono i lati.*
+
+3. Traccia il diametro orizzontale e prolungalo da tutte e due le parti. Punta in S con apertura SA e traccia un arco: incontra i prolungamenti in T, a sinistra, e in U, a destra. *L’arco passa per A.*
+
+4. Da T traccia le rette che passano per i punti pari (2, 4, 6 e 8) e prolungale fino alla parte opposta della circonferenza: ogni retta trova un vertice. *Si usano solo i punti pari.*
+
+5. Fai lo stesso da U, con gli stessi punti pari: trovi i vertici dell’altra metà. *I vertici sono simmetrici rispetto al diametro verticale.*
+
+6. Parti da A e unisci i vertici uno dopo l’altro, girando lungo la circonferenza. L’ennagono è completo. *Il lato in basso viene un po’ più lungo degli altri: è normale.*
+
+**Perché funziona?** Il metodo generale è esatto solo per il triangolo, il quadrato e l’esagono. Nell’ennagono i lati vengono giusti entro l’1,5 per cento circa, tranne quello in basso, che viene circa il 3 per cento più lungo: su un lato di 3 cm è quasi un millimetro. Per un disegno a matita è una precisione accettabile.
+
+**Prova tu:** Disegna un ennagono in una circonferenza di raggio 5 cm. Misura tutti i lati e segna il più lungo e il più corto.
+
+---
+
+#### Costruzione 86 — Endecagono inscritto in una circonferenza
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O. Vuoi dividerla in 11 parti uguali e disegnare un endecagono, il poligono con 11 lati.
+
+**Passi:**
+
+1. Traccia il diametro verticale: in alto incontra la circonferenza nel punto A, in basso nel punto S. *A sarà il primo vertice.*
+
+2. Dividi il diametro AS in 11 parti uguali con il metodo delle parallele (Costruzione 3). Numera i punti partendo da A. *Tante parti quanti sono i lati.*
+
+3. Traccia il diametro orizzontale e prolungalo da tutte e due le parti. Punta in S con apertura SA e traccia un arco: incontra i prolungamenti in T, a sinistra, e in U, a destra. *L’arco passa per A.*
+
+4. Da T traccia le rette che passano per i punti pari (2, 4, 6, 8 e 10) e prolungale fino alla parte opposta della circonferenza: ogni retta trova un vertice. *Si usano solo i punti pari.*
+
+5. Fai lo stesso da U, con gli stessi punti pari: trovi i vertici dell’altra metà. *I vertici sono simmetrici rispetto al diametro verticale.*
+
+6. Parti da A e unisci i vertici uno dopo l’altro, girando lungo la circonferenza. L’endecagono è completo. *Il lato in basso viene un po’ più lungo degli altri: è normale.*
+
+**Perché funziona?** Il metodo generale è esatto solo per il triangolo, il quadrato e l’esagono. Nell’endecagono i lati vengono giusti entro l’1,5 per cento circa, tranne quello in basso, che viene quasi il 4 per cento più lungo: su un lato di 3 cm è circa un millimetro. Più lati ha il poligono, più l’errore si concentra sull’ultimo lato.
+
+**Prova tu:** Disegna un endecagono in una circonferenza di raggio 5 cm. Misura tutti i lati e segna il più lungo e il più corto.
+
+---
+
+#### Costruzione 87 — Sezione aurea di un segmento
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un segmento AB. Vuoi trovare il punto E che lo divide secondo la sezione aurea: una proporzione studiata fin dall’antichità e amata da molti artisti.
+
+**Passi:**
+
+1. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio M. *Ti serve la metà di AB.*
+
+2. Alza la perpendicolare ad AB nell’estremo B (Costruzione 10). Punta in B con apertura BM e taglia la perpendicolare: trovi C. *BC è lungo la metà di AB.*
+
+3. Con il righello traccia il segmento AC. *ABC è un triangolo rettangolo.*
+
+4. Punta in C con apertura CB e taglia il segmento AC: trovi D. *Hai tolto da AC la metà di AB.*
+
+5. Punta in A con apertura AD e taglia il segmento AB: trovi E. AE è la parte aurea di AB. *Misura: AE deve essere circa 0,62 volte AB.*
+
+**Perché funziona?** Il triangolo ABC è rettangolo, con il cateto BC lungo la metà di AB. Per il teorema di Pitagora l’ipotenusa AC è circa 1,118 volte AB. Togliendo CD, che è metà di AB, resta AD = 0,618 volte AB: è la parte aurea. Il punto E divide AB in modo che AB : AE = AE : EB, e questo rapporto vale circa 1,618.
+
+**Prova tu:** Trova la sezione aurea di un segmento di 10 cm. Misura la parte più lunga: deve essere circa 6,2 cm.
+
+---
+
+#### Costruzione 88 — Rettangolo aureo
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un quadrato ABCD (Costruzione 7). Vuoi allungarlo fino a ottenere un rettangolo aureo.
+
+**Passi:**
+
+1. Costruisci l’asse del lato AB (Costruzione 9): trovi il punto medio M. *M divide la base del quadrato a metà.*
+
+2. Prolunga il lato AB oltre B. Punta in M, apri fino al vertice C e traccia un arco fino al prolungamento: trovi E. *ME è lungo quanto MC.*
+
+3. Alza la perpendicolare ad AE nel punto E e prolunga il lato DC del quadrato: le due rette si incontrano in F. *EF è lungo quanto il lato del quadrato.*
+
+4. Ripassa il contorno A, E, F, D. Il rettangolo aureo è completo. *Misura base e altezza e dividi: deve venire circa 1,62.*
+
+**Perché funziona?** Il segmento MC è l’ipotenusa di un triangolo rettangolo con i cateti lunghi metà lato e un lato: è circa 1,118 volte il lato. La base AE è la somma di AM, metà lato, e di ME, uguale a MC: in tutto circa 1,618 volte il lato. È il rapporto aureo. Molti lo hanno cercato nella facciata del Partenone, ma gli studiosi non sono d’accordo. Alcuni formati di uso comune, come le carte di credito, gli si avvicinano soltanto.
+
+**Prova tu:** Costruisci un rettangolo aureo partendo da un quadrato di lato 6 cm. Misura la base e dividi per l’altezza: deve venire circa 1,62.
+
+---
+
+#### Costruzione 89 — Spirale aurea
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un rettangolo aureo (Costruzione 88). Vuoi disegnarci dentro una spirale fatta di quarti di circonferenza.
+
+**Passi:**
+
+1. Apri il compasso quanto il lato corto del rettangolo e riportalo sui due lati lunghi partendo da sinistra. Unisci i due punti: a sinistra c’è un quadrato, a destra resta un rettangolo più piccolo. *Anche il rettangolo che resta è aureo.*
+
+2. Nel rettangolo che resta ritaglia un quadrato in alto. In quello che resta ancora, uno a destra; poi uno in basso; poi di nuovo a sinistra, girando sempre nello stesso verso. *Ogni quadrato ha il lato uguale al lato corto del rettangolo in cui lo ritagli.*
+
+3. Nel primo quadrato punta il compasso nel vertice in basso a destra, apri quanto il lato e traccia un quarto di circonferenza dal vertice in basso a sinistra al vertice in alto a destra. *L’arco unisce due vertici opposti del quadrato.*
+
+4. In ogni quadrato successivo traccia un quarto di circonferenza con il raggio uguale al lato, partendo dal punto in cui è arrivato l’arco precedente. *Il centro è sempre il vertice del quadrato rivolto verso l’interno della spirale.*
+
+**Perché funziona?** Se da un rettangolo aureo togli un quadrato, il rettangolo che resta è ancora aureo, più piccolo e ruotato di un quarto di giro. Puoi ripetere l’operazione quante volte vuoi. Ogni arco è un quarto di circonferenza con il raggio uguale al lato del suo quadrato e si attacca al successivo senza spigoli. È la curva che ricorda la conchiglia del nautilo, anche se la conchiglia vera si allarga più lentamente.
+
+**Prova tu:** Disegna una spirale aurea in un rettangolo con il lato corto di 8 cm. Fermati quando i quadrati diventano più piccoli di 5 mm.
+
+---
+
+#### Costruzione 90 — Ovale dati i due assi
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai i due assi dell’ovale, perpendicolari tra loro nel punto medio O: l’asse maggiore AB e l’asse minore CD.
+
+**Passi:**
+
+1. Prolunga l’asse minore oltre C. Punta in O, apri fino ad A e traccia un arco fino al prolungamento: trovi E. *CE è la differenza tra metà asse maggiore e metà asse minore.*
+
+2. Unisci A con C. Punta in C, apri fino a E e traccia un arco che taglia il segmento AC: trovi F. *CF è lungo quanto CE.*
+
+3. Costruisci l’asse del segmento AF (Costruzione 9) e prolungalo: incontra l’asse maggiore nel punto 1 e la retta dell’asse minore nel punto 2. *1 e 2 sono i primi due centri.*
+
+4. Punta in O, apri fino a 1 e riporta la distanza dall’altra parte: trovi 3. Punta in O, apri fino a 2 e riporta la distanza dall’altra parte: trovi 4. *I quattro centri sono simmetrici rispetto a O.*
+
+5. Traccia le rette che partono da 2 e passano per 1 e per 3, e quelle che partono da 4 e passano per 1 e per 3. Prolungale oltre 1 e 3. *Su queste rette cadranno i punti di raccordo.*
+
+6. Punta in 1 e apri fino ad A: traccia l’arco tra le due rette. Ripeti da 3. Poi punta in 2 e apri fino a C: traccia l’arco tra le due rette. Ripeti da 4. *Gli archi si attaccano senza spigoli.*
+
+**Perché funziona?** Il punto 1 sta sull’asse del segmento AF: dista da A quanto da F. La costruzione fa in modo che il raggio grande, da 2 a C, sia uguale alla distanza tra 2 e 1 più il raggio piccolo, da 1 ad A. Per questo l’arco piccolo e l’arco grande si incontrano sulla retta che passa per i due centri, e lì si raccordano senza spigolo. Lo stesso accade negli altri tre punti di raccordo.
+
+**Prova tu:** Costruisci un ovale con l’asse maggiore di 10 cm e l’asse minore di 6 cm. Controlla che gli archi si attacchino senza spigoli.
+
+---
+
+#### Costruzione 91 — Spirale a tre centri
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un piccolo triangolo equilatero ABC: i suoi vertici saranno i 3 centri della spirale. Il passo, cioè la distanza tra un giro e il successivo, è tre volte il lato.
+
+**Passi:**
+
+1. Prolunga ogni lato del triangolo oltre un vertice, girando sempre nello stesso verso: ottieni 3 semirette. *Ogni arco comincerà su una semiretta e finirà sulla successiva.*
+
+2. Punta in A, apri quanto il lato e traccia un arco che parte dal vertice C e arriva sulla semiretta che parte da A. *Il raggio è lungo un lato.*
+
+3. Punta in B, apri fino al punto in cui è arrivato il primo arco e traccia il secondo arco, fino alla semiretta successiva. *Il raggio ora è lungo due lati.*
+
+4. Continua così: punta nel vertice successivo, apri fino al punto d’arrivo dell’arco precedente e traccia fino alla semiretta successiva. *A ogni cambio di centro il raggio aumenta di un lato.*
+
+**Perché funziona?** Ogni arco è un terzo di circonferenza: parte dal prolungamento di un lato e finisce sul prolungamento del lato successivo. Lì cambia il centro, ma il vecchio centro, il nuovo centro e il punto di contatto sono allineati: la curva non fa spigoli. Dopo tre archi, cioè un giro completo, il raggio è aumentato di tre lati: è il passo.
+
+**Prova tu:** Disegna una spirale a tre centri partendo da un triangolo equilatero di lato 0,5 cm. Fai almeno due giri completi.
+
+---
+
+#### Costruzione 92 — Spirale a sei centri
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un piccolo esagono regolare ABCDEF: i suoi vertici saranno i 6 centri della spirale. Il passo, cioè la distanza tra un giro e il successivo, è sei volte il lato.
+
+**Passi:**
+
+1. Prolunga ogni lato dell’esagono oltre un vertice, girando sempre nello stesso verso: ottieni 6 semirette. *Ogni arco comincerà su una semiretta e finirà sulla successiva.*
+
+2. Punta in A, apri quanto il lato e traccia un arco che parte dal vertice F e arriva sulla semiretta che parte da A. *Il raggio è lungo un lato.*
+
+3. Punta in B, apri fino al punto in cui è arrivato il primo arco e traccia il secondo arco, fino alla semiretta successiva. *Il raggio ora è lungo due lati.*
+
+4. Continua così: punta nel vertice successivo, apri fino al punto d’arrivo dell’arco precedente e traccia fino alla semiretta successiva. *A ogni cambio di centro il raggio aumenta di un lato.*
+
+**Perché funziona?** Ogni arco è un sesto di circonferenza: parte dal prolungamento di un lato e finisce sul prolungamento del lato successivo. Lì cambia il centro, ma il vecchio centro, il nuovo centro e il punto di contatto sono allineati: la curva non fa spigoli. Dopo sei archi, cioè un giro completo, il raggio è aumentato di sei lati: è il passo.
+
+**Prova tu:** Disegna una spirale a sei centri partendo da un esagono di lato 0,4 cm. Confrontala con la spirale a tre centri: quale è più regolare?
+
+---
+
+#### Costruzione 93 — Ellisse per punti con i fuochi
+
+**Servono:** righello, compasso, curvilineo.
+
+**Situazione:** Hai i due assi dell’ellisse, perpendicolari tra loro nel punto medio O: l’asse maggiore AB e l’asse minore CD.
+
+**Passi:**
+
+1. Apri il compasso quanto OA, metà dell’asse maggiore. Punta in C e taglia l’asse maggiore in due punti: sono i fuochi F₁ e F₂. *I fuochi sono simmetrici rispetto a O.*
+
+2. Tra F₁ e O segna tre punti a piacere: 1, 2 e 3. *Più punti segni, più precisa sarà la curva.*
+
+3. Apri quanto A1, punta in F₁ e traccia un archetto sopra e uno sotto. Apri quanto B1, punta in F₂ e incrocia gli archetti: trovi due punti. Poi scambia i fuochi: apertura A1 da F₂ e apertura B1 da F₁. Trovi altri due punti. *Ogni punto dell’asse ti dà quattro punti dell’ellisse.*
+
+4. Ripeti con il punto 2 (aperture A2 e B2) e con il punto 3 (aperture A3 e B3). *In tutto hai dodici punti, più A, B, C e D.*
+
+5. Unisci tutti i punti a mano libera o con il curvilineo, con una linea continua e senza spigoli. *Ruota il foglio mentre disegni: la mano lavora meglio.*
+
+**Perché funziona?** Ogni punto che trovi dista da un fuoco quanto il segmento A1 e dall’altro quanto il segmento B1. Insieme i due segmenti formano l’asse maggiore AB. Per ogni punto della curva, quindi, la somma delle distanze dai due fuochi è sempre uguale ad AB: è proprio la definizione di ellisse. È anche il principio del «metodo del giardiniere», con due picchetti e una corda.
+
+**Prova tu:** Costruisci per punti un’ellisse con gli assi di 12 cm e 8 cm. Poi verifica con il metodo del giardiniere: due puntine nei fuochi e un filo lungo 12 cm.
+
+---
+
+#### Costruzione 94 — Iperbole per punti con i fuochi
+
+**Servono:** righello, compasso, curvilineo.
+
+**Situazione:** Su una retta sono segnati due punti fissi, i fuochi F₁ e F₂. Tra loro ci sono i vertici A e B, i due punti in cui la curva attraversa la retta: sono simmetrici rispetto al punto medio O.
+
+**Passi:**
+
+1. Sulla retta, oltre F₂, segna tre punti a piacere: 1, 2 e 3. *Più punti segni, più precisa sarà la curva.*
+
+2. Apri quanto A1, punta in F₁ e traccia un archetto sopra e uno sotto la retta, dalla parte di F₂. Apri quanto B1, punta in F₂ e incrocia gli archetti: trovi due punti. *L’apertura più grande parte dal fuoco più lontano.*
+
+3. Ora usa l’apertura A1 da F₂ e l’apertura B1 da F₁: trovi altri due punti, dall’altra parte. *I due rami sono simmetrici.*
+
+4. Ripeti con il punto 2 (aperture A2 e B2) e con il punto 3 (aperture A3 e B3). *Ogni punto dell’asse ti dà quattro punti dell’iperbole.*
+
+5. Unisci i punti di destra, passando per B, con una linea continua. Fai lo stesso a sinistra, passando per A. *I due rami non si toccano mai.*
+
+**Perché funziona?** Ogni punto che trovi dista da un fuoco quanto il segmento A1 e dall’altro quanto il segmento B1. La differenza tra i due segmenti è sempre AB, la distanza tra i vertici. Per ogni punto della curva, quindi, la differenza delle distanze dai due fuochi è costante: è la definizione di iperbole. La curva ha due rami separati, che si allargano senza mai chiudersi.
+
+**Prova tu:** Costruisci un’iperbole con i due vertici a 3 cm l’uno dall’altro e i due fuochi a 5 cm l’uno dall’altro. Segna almeno tre punti sull’asse e unisci i punti trovati a mano libera.
+
+---
+
+#### Costruzione 95 — Arco ribassato a un centro
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura, lunga 6,4 cm. La freccia, cioè l’altezza dell’arco, deve essere di 1,6 cm: meno della metà della luce.
+
+**Passi:**
+
+1. Costruisci l’asse della luce AB (Costruzione 9): trovi il punto medio M e la retta perpendicolare. *Il centro dell’arco starà su questa retta.*
+
+2. Apri il compasso a 1,6 cm. Punta in M e taglia l’asse sopra la luce: trovi C, il punto più alto dell’arco. *MC è la freccia.*
+
+3. Unisci A con C e costruisci l’asse del segmento AC. Prolungalo fino a incontrare l’asse di AB, sotto la luce: trovi O. *O è il centro dell’arco.*
+
+4. Punta in O, apri fino ad A e traccia l’arco fino a B: passa per C. *Controlla: l’arco deve toccare esattamente A, C e B.*
+
+**Perché funziona?** Il centro O sta sull’asse di AB, quindi dista ugualmente da A e da B. Sta anche sull’asse di AC, quindi dista ugualmente da A e da C. O è alla stessa distanza da A, da B e da C: la circonferenza con centro O passa per tutti e tre (Costruzione 55). Negli estremi A e B l’arco forma uno spigolo con i piedritti, cioè i sostegni verticali. Si chiama anche arco scemo, cioè «diminuito», perché è meno di una semicirconferenza.
+
+**Prova tu:** Costruisci un arco ribassato con la luce di 10 cm e la freccia di 2,5 cm. Controlla che l’arco passi esattamente per i tre punti.
+
+---
+
+#### Costruzione 96 — Arco rampante
+
+**Servono:** righello, compasso.
+
+**Situazione:** L’arco deve partire dal punto A, in basso a sinistra, e arrivare al punto B, più in alto a destra. È l’arco che sostiene le scale e le rampe.
+
+**Passi:**
+
+1. Traccia la retta orizzontale che passa per A e la retta verticale che passa per B: si incontrano in E. *AE è la distanza orizzontale, EB il dislivello.*
+
+2. Punta in E, apri fino a B e taglia la retta orizzontale oltre E: trovi G. *EG è lungo quanto il dislivello.*
+
+3. Costruisci l’asse del segmento AG (Costruzione 9): incontra AG nel punto medio O₁. Tieni la retta perpendicolare. *O₁ è il centro dell’arco più grande.*
+
+4. Traccia la retta orizzontale che passa per B: incontra la perpendicolare nel punto O₂. *O₂ è il centro dell’arco più piccolo.*
+
+5. Punta in O₁, apri fino ad A e traccia un quarto di circonferenza fino alla perpendicolare: arrivi in T. Punta in O₂, apri fino a T e traccia un quarto di circonferenza fino a B. *In T i due archi si attaccano senza spigolo.*
+
+**Perché funziona?** Il raggio grande è la metà di AG, cioè la metà della somma tra distanza orizzontale e dislivello. Il raggio piccolo è quello che manca per arrivare alla verticale di B. I due centri O₁ e O₂ sono sulla stessa retta verticale e il punto T sta sopra entrambi: lì i due archi hanno la stessa tangente orizzontale e si raccordano senza spigolo. In A e in B l’arco parte in verticale, in continuità con i pilastri.
+
+**Prova tu:** Costruisci un arco rampante con una distanza orizzontale di 9 cm e un dislivello di 3 cm. Controlla i due raggi: devono misurare 6 cm e 3 cm.
+
+---
+
+#### Costruzione 97 — Arco a ferro di cavallo
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura. Vuoi costruire un arco a ferro di cavallo, che si chiama anche arco oltrepassato o moresco.
+
+**Passi:**
+
+1. Costruisci l’asse della luce AB (Costruzione 9): trovi il punto medio M e la retta perpendicolare. *Il centro starà su questa retta, sopra M.*
+
+2. Trova il punto medio del segmento MB: è il punto N. La distanza MN è un quarto della luce. *Costruisci l’asse di MB con due coppie di archetti.*
+
+3. Punta in M, apri fino a N e taglia l’asse sopra la luce: trovi il centro O. *Più alzi il centro, più l’arco si «chiude».*
+
+4. Punta in O, apri fino ad A e traccia l’arco che passa sopra e arriva in B. *È più di mezza circonferenza.*
+
+**Perché funziona?** Nell’arco a tutto sesto il centro è il punto medio della luce. Qui il centro O è più in alto, sull’asse della luce: dista ugualmente da A e da B, ma l’arco che li unisce passando da sopra è più lungo di una semicirconferenza. Nel punto più largo l’arco supera la luce: è la forma tipica dell’architettura araba e moresca. In questa tavola il centro è rialzato di un quarto della luce, ma la misura può cambiare.
+
+**Prova tu:** Costruisci un arco a ferro di cavallo con la luce di 8 cm e il centro rialzato di 2 cm. Misura la larghezza massima dell’arco e confrontala con la luce.
+
+---
+
+#### Costruzione 98 — Arco Tudor a quattro centri
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura. Vuoi costruire un arco Tudor: largo, basso e con una punta appena accennata.
+
+**Passi:**
+
+1. Dividi la luce in quattro parti uguali: costruisci l’asse di AB e trovi M; poi l’asse di AM e l’asse di MB e trovi i punti 1 e 2. *1 e 2 sono i centri dei due archi piccoli.*
+
+2. Sotto il segmento che va da 1 a 2 costruisci un quadrato (Costruzione 7): i due vertici in basso sono il punto 3, sotto 1, e il punto 4, sotto 2. *3 e 4 sono i centri dei due archi grandi.*
+
+3. Traccia la retta che parte da 4 e passa per 1 e quella che parte da 3 e passa per 2. Prolungale verso l’alto. *Su queste rette cadranno i punti di raccordo.*
+
+4. Punta in 1, apri fino ad A e traccia l’arco fino alla retta: arrivi in P. Punta in 2, apri fino a B e traccia l’arco fino all’altra retta: arrivi in Q. *I due archi hanno lo stesso raggio: un quarto della luce.*
+
+5. Punta in 4, apri fino a P e traccia l’arco verso l’alto. Punta in 3, apri fino a Q e traccia l’altro arco: si incontrano in C, sull’asse. *C è la punta dell’arco, la chiave.*
+
+**Perché funziona?** Il punto di raccordo P sta sulla retta che passa per i centri 4 e 1: lì l’arco piccolo, con centro 1, e l’arco grande, con centro 4, hanno la stessa direzione e si attaccano senza spigolo. Lo stesso accade a destra. I due archi grandi hanno lo stesso raggio e centri simmetrici: si incontrano sull’asse della luce, nel punto C, formando una punta poco pronunciata. Questa è una delle costruzioni possibili: gli archi Tudor veri sono spesso più schiacciati.
+
+**Prova tu:** Costruisci un arco Tudor con la luce di 12 cm. Controlla i due punti di raccordo: non devi vedere spigoli.
+
+---
+
+#### Costruzione 99 — Arco inflesso
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura. Vuoi costruire un arco inflesso, con il profilo a forma di fiamma: è tipico dell’architettura veneziana e orientale.
+
+**Passi:**
+
+1. Dividi la luce in quattro parti uguali: costruisci l’asse di AB e trovi M; poi l’asse di AM e l’asse di MB e trovi i punti 1 e 2. *1 e 2 sono i centri dei due archi bassi.*
+
+2. Alza la perpendicolare alla luce nell’estremo A e nell’estremo B (Costruzione 10, oppure con le squadre). *Su queste rette cadranno i centri degli archi alti.*
+
+3. Punta in 1, apri fino a B e taglia la perpendicolare alzata da A: trovi 3. Punta in 2, apri fino ad A e taglia la perpendicolare alzata da B: trovi 4. *L’apertura è tre quarti della luce.*
+
+4. Con il righello unisci 1 con 3 e 2 con 4. *Su queste rette cadranno i punti di flesso.*
+
+5. Punta in 1, apri fino ad A e traccia l’arco fino alla retta: arrivi in P. Punta in 2, apri fino a B e traccia l’arco fino all’altra retta: arrivi in Q. *Questi archi curvano verso l’esterno.*
+
+6. Punta in 3, apri fino a P e traccia l’arco verso l’interno. Punta in 4, apri fino a Q e traccia l’altro arco: si incontrano in C, sull’asse. *C è la punta dell’arco.*
+
+**Perché funziona?** Il punto P sta sulla retta che unisce i centri 1 e 3: lì l’arco basso e l’arco alto hanno la stessa tangente, ma curvano da parti opposte. Un punto così si chiama punto di flesso. Il centro 3 dista da 1 quanto la somma dei due raggi: per questo le due circonferenze si toccano in un solo punto. Questa è una delle costruzioni possibili: cambiando i centri l’arco diventa più alto o più schiacciato. Per la sua forma si chiama anche arco a carena.
+
+**Prova tu:** Costruisci un arco inflesso con la luce di 8 cm. Ripassa il profilo e colora la forma a fiamma che ottieni.
+
+---
+
+#### Costruzione 100 — Arco a sesto acuto ribassato
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura. Vuoi un arco acuto, ma più basso di quello delle cattedrali gotiche.
+
+**Passi:**
+
+1. Dividi la luce in quattro parti uguali: costruisci l’asse di AB e trovi M; poi l’asse di AM e l’asse di MB e trovi i punti 1 e 2. *1 e 2 sono i centri dei due archi.*
+
+2. Punta in 2, apri fino ad A e traccia un arco sopra la luce, verso destra. *Il centro è 2, ma l’arco parte da A: dalla parte opposta.*
+
+3. Con la stessa apertura punta in 1 e traccia un arco che parte da B: incontra il primo nel punto C. *C è la punta dell’arco.*
+
+4. Ripassa i due archi solo fino a C: da A a C e da B a C. *Confronta la freccia con quella dell’arco a sesto acuto.*
+
+**Perché funziona?** Nell’arco a sesto acuto (Costruzione 66) i centri sono gli estremi della luce e il raggio è uguale alla luce. Qui i centri sono i punti 1 e 2, dentro la luce, e il raggio è tre quarti della luce. I due archi si incontrano sull’asse nel punto C: la freccia è circa 0,71 volte la luce, invece di 0,87. In A e in B l’arco parte in verticale, perché i centri stanno sulla linea d’imposta.
+
+**Prova tu:** Sulla stessa luce di 8 cm costruisci un arco a sesto acuto e un arco a sesto acuto ribassato. Misura le due frecce e confrontale.
+
+---
+
+#### Costruzione 101 — Arco lanceolato
+
+**Servono:** righello, compasso.
+
+**Situazione:** Il segmento AB è la luce dell’arco, cioè la larghezza dell’apertura, tracciato sulla linea d’imposta. Vuoi un arco acuto alto e stretto: si chiama lanceolato, o a sesto acuto rialzato.
+
+**Passi:**
+
+1. Costruisci l’asse di AB e trovi M. Poi costruisci l’asse di AM e trovi N: la distanza AN è un quarto della luce. *Ti serve questa misura per i centri.*
+
+2. Punta in A, apri fino a N e taglia la linea d’imposta fuori dalla luce: trovi 1. Con la stessa apertura punta in B e trovi 2, dall’altra parte. *I centri sono fuori dalla luce.*
+
+3. Punta in 2, apri fino ad A e traccia un arco sopra la luce. *L’apertura è grande: cinque quarti della luce.*
+
+4. Con la stessa apertura punta in 1 e traccia un arco che parte da B: incontra il primo nel punto C. *C è la punta dell’arco.*
+
+5. Ripassa i due archi solo fino a C: da A a C e da B a C. *Misura la freccia: è lunga quanto la luce.*
+
+**Perché funziona?** Nell’arco a sesto acuto (Costruzione 66) i centri sono gli estremi della luce. Qui i centri 1 e 2 sono fuori dalla luce, a un quarto della luce da A e da B, e il raggio è cinque quarti della luce. I due archi si incontrano sull’asse nel punto C. In questa costruzione la freccia è lunga esattamente quanto la luce: lo puoi verificare con il teorema di Pitagora.
+
+**Prova tu:** Costruisci un arco lanceolato con la luce di 6 cm. Misura la freccia: deve essere lunga quanto la luce.
+
+---
+
+#### Costruzione 102 — Raccordo tra due rette parallele
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Hai due rette parallele, r e s. Vuoi unirle con una curva senza spigoli, come nel bordo di un tavolo o nell’asola di una cintura.
+
+**Passi:**
+
+1. Scegli il punto A sulla retta r, dove deve cominciare la curva. Da A traccia la perpendicolare alle due rette, con le squadre: incontra s nel punto B. *A e B sono i punti di raccordo.*
+
+2. Costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio O. *O è alla stessa distanza dalle due rette.*
+
+3. Punta in O, apri fino ad A e traccia la semicirconferenza fino a B. *La curva tocca le due rette senza attraversarle.*
+
+4. Ripassa la retta r fino ad A, la semicirconferenza e la retta s a partire da B. *Passa il dito sul disegno: non devi sentire spigoli.*
+
+**Perché funziona?** Il segmento AB è perpendicolare alle due rette e O è il suo punto medio. Il raggio OA è perpendicolare alla retta r nel punto A: quindi la semicirconferenza è tangente a r in A, cioè la tocca senza attraversarla. Lo stesso vale in B per la retta s. Per questo il passaggio dalla retta alla curva avviene senza spigoli.
+
+**Prova tu:** Disegna due rette parallele a 5 cm di distanza e raccordale. Poi usa il raccordo per disegnare il contorno di un’asola lunga 10 cm.
+
+---
+
+#### Costruzione 103 — Raccordo a S tra due rette parallele
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai due rette parallele, r e s. La curva deve partire dal punto A, sulla retta r, e arrivare al punto B, sulla retta s, più a destra.
+
+**Passi:**
+
+1. Unisci A con B e costruisci l’asse del segmento AB (Costruzione 9): trovi il punto medio M. *In M la curva cambierà verso.*
+
+2. Traccia la perpendicolare a r nel punto A, verso il basso, e la perpendicolare a s nel punto B, verso l’alto. *Su queste rette cadranno i due centri.*
+
+3. Costruisci l’asse del segmento AM: incontra la perpendicolare che scende da A nel punto O₁. *O₁ dista da A quanto da M.*
+
+4. Costruisci l’asse del segmento MB: incontra la perpendicolare che sale da B nel punto O₂. *O₂ dista da B quanto da M.*
+
+5. Punta in O₁, apri fino ad A e traccia l’arco fino a M. Punta in O₂, apri fino a M e traccia l’arco fino a B. *I due archi hanno lo stesso raggio.*
+
+**Perché funziona?** Il centro O₁ sta sulla perpendicolare a r nel punto A: l’arco è tangente a r in A. O₁ sta anche sull’asse di AM: dista da A quanto da M, quindi l’arco arriva in M. Lo stesso vale per O₂ con B e M. La figura è simmetrica rispetto a M: i due centri e M stanno sulla stessa retta, e in M i due archi hanno la stessa tangente. Lì la curva cambia verso senza fare spigoli.
+
+**Prova tu:** Disegna due rette parallele a 4 cm di distanza, con i punti A e B sfalsati di 5 cm. Costruisci la linea a S e ripassala a tratto continuo.
+
+---
+
+#### Costruzione 104 — Tre circonferenze tangenti tra loro
+
+**Servono:** righello, compasso.
+
+**Situazione:** Devi disegnare tre circonferenze che si toccano a due a due. I raggi sono 2 cm, 1,5 cm e 1 cm.
+
+**Passi:**
+
+1. Somma i primi due raggi: 2 + 1,5 = 3,5 cm. Con il righello traccia il segmento O₁O₂ lungo 3,5 cm. *O₁ e O₂ sono i primi due centri.*
+
+2. Apri il compasso a 3 cm (2 + 1), punta in O₁ e traccia un archetto. Apri a 2,5 cm (1,5 + 1), punta in O₂ e incrocia l’archetto: trovi O₃. *È la costruzione del triangolo dati i tre lati (Costruzione 17).*
+
+3. Con il righello unisci O₃ con O₁ e con O₂. *Sui lati del triangolo cadranno i punti di contatto.*
+
+4. Punta in O₁ e traccia la circonferenza di raggio 2 cm. Punta in O₂ e traccia quella di raggio 1,5 cm. Punta in O₃ e traccia quella di raggio 1 cm. *Le circonferenze si toccano senza sovrapporsi.*
+
+**Perché funziona?** Due circonferenze sono tangenti esternamente, cioè si toccano in un solo punto restando una fuori dall’altra, quando la distanza tra i centri è uguale alla somma dei raggi. Il triangolo dei centri ha i lati lunghi 2 + 1,5, 2 + 1 e 1,5 + 1 centimetri: ogni coppia di circonferenze si tocca in un punto, che sta sul lato del triangolo che unisce i due centri.
+
+**Prova tu:** Disegna tre circonferenze tangenti con i raggi di 3 cm, 2 cm e 1,5 cm. Segna in rosso i tre punti di contatto.
+
+---
+
+#### Costruzione 105 — Raccordo tra due circonferenze
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai due circonferenze: la prima ha centro O₁ e raggio 1,6 cm, la seconda centro O₂ e raggio 1,1 cm. Vuoi unirle con un arco di raggio 2,2 cm, senza spigoli.
+
+**Passi:**
+
+1. Somma il primo raggio e il raggio del raccordo: 1,6 + 2,2 = 3,8 cm. Apri il compasso a 3,8 cm, punta in O₁ e traccia un arco sopra le circonferenze. *Tutti i punti dell’arco distano 2,2 cm dalla prima circonferenza.*
+
+2. Somma il secondo raggio e il raggio del raccordo: 1,1 + 2,2 = 3,3 cm. Apri il compasso a 3,3 cm, punta in O₂ e incrocia il primo arco: trovi O. *O è il centro del raccordo.*
+
+3. Unisci O con O₁: il segmento taglia la prima circonferenza nel punto T₁. Unisci O con O₂: trovi T₂ sulla seconda. *Il raccordo deve cominciare e finire esattamente qui.*
+
+4. Apri il compasso a 2,2 cm, punta in O e traccia l’arco da T₁ a T₂. *Ripassa il contorno: circonferenza, raccordo, circonferenza.*
+
+**Perché funziona?** Il centro O dista da O₁ quanto il primo raggio più il raggio del raccordo: la circonferenza di raccordo tocca la prima in un solo punto, T₁, che sta sulla retta dei due centri. Lo stesso vale per la seconda, nel punto T₂. In T₁ e in T₂ l’arco e le circonferenze hanno la stessa tangente: il contorno passa dall’una all’altra senza spigoli.
+
+**Prova tu:** Disegna due circonferenze di raggio 2 cm e 1,5 cm con i centri a 6 cm e raccordale con un arco di raggio 3 cm. Ripassa il contorno esterno.
+
+---
+
+#### Costruzione 106 — Tangenti comuni interne a due circonferenze
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Hai due circonferenze separate, con centri O₁ e O₂. Vuoi tracciare le due rette tangenti che passano in mezzo, incrociandosi.
+
+**Passi:**
+
+1. Unisci O₁ con O₂ e costruisci l’asse del segmento (Costruzione 9): trovi il punto medio M. *M è il centro della prossima circonferenza.*
+
+2. Punta in M, apri fino a O₁ e traccia la circonferenza: passa anche per O₂. *Il suo diametro è O₁O₂.*
+
+3. Apri il compasso quanto la somma dei due raggi. Punta in O₁ e taglia la circonferenza appena tracciata in due punti: P sopra e Q sotto. *Per sommare i raggi riportali uno dopo l’altro su una retta.*
+
+4. Unisci O₁ con P: il segmento taglia la prima circonferenza nel punto T₁. Unisci O₁ con Q: trovi T₃. *T₁ e T₃ sono i punti di tangenza sulla prima circonferenza.*
+
+5. Da O₂ traccia il raggio parallelo a O₁P ma rivolto dalla parte opposta: trovi T₂. Fai lo stesso con O₁Q: trovi T₄. *Usa le due squadre per le parallele.*
+
+6. Traccia la retta che passa per T₁ e T₂ e quella che passa per T₃ e T₄. *Le due tangenti si incrociano sul segmento che unisce i centri.*
+
+**Perché funziona?** Il punto P sta sulla circonferenza che ha per diametro O₁O₂: l’angolo in P del triangolo O₁PO₂ è retto (Costruzione 29). La retta O₂P è quindi tangente alla circonferenza di centro O₁ e raggio uguale alla somma dei due raggi. Spostandola in parallelo di una lunghezza uguale al secondo raggio ottieni la retta T₁T₂: è perpendicolare al raggio O₁T₁ e al raggio O₂T₂, quindi è tangente a tutte e due le circonferenze.
+
+**Prova tu:** Disegna due circonferenze di raggio 2 cm e 1,5 cm con i centri a 7 cm. Traccia le tangenti interne e controlla con la squadra che siano perpendicolari ai raggi.
+
+---
+
+#### Costruzione 107 — Stella a quattro punte
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O e il suo diametro orizzontale AB. Vuoi disegnare una stella a quattro punte, come quella della rosa dei venti.
+
+**Passi:**
+
+1. Costruisci l’asse del diametro AB (Costruzione 9): è il diametro verticale, che taglia la circonferenza in C e in D. *A, B, C e D sono le quattro punte.*
+
+2. Costruisci le bisettrici dei quattro angoli retti: due rette che passano per O, inclinate di 45°. *Bastano due coppie di archetti: ogni retta divide a metà due angoli opposti.*
+
+3. Punta in O con un’apertura più piccola, a piacere: qui circa un terzo del raggio. Traccia la circonferenza: taglia le bisettrici nei punti 1, 2, 3 e 4. *Sono le rientranze della stella.*
+
+4. Unisci B con 1, 1 con C, C con 2 e continua così, alternando una punta e una rientranza, fino a tornare in B. *Colora metà di ogni punta per ottenere l’effetto in rilievo.*
+
+**Perché funziona?** Le quattro punte stanno sulla circonferenza grande, a 90° una dall’altra. Le quattro rientranze stanno sulla circonferenza piccola, sulle bisettrici: esattamente a metà tra due punte. Tutti i lati della stella uniscono un punto della circonferenza grande con uno della piccola, separati da 45°: per questo sono tutti uguali. Se cambi il raggio della circonferenza piccola, la stella diventa più sottile o più tozza.
+
+**Prova tu:** Disegna una stella a quattro punte in una circonferenza di raggio 5 cm e trasformala in una rosa dei venti: colora metà di ogni punta.
+
+---
+
+#### Costruzione 108 — Stella a sette punte
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai una circonferenza con centro O e il punto 1 in alto. Vuoi disegnare una stella a sette punte.
+
+**Passi:**
+
+1. Traccia il diametro verticale: in basso trovi S. Punta in S, apri fino a O e traccia un arco che taglia la circonferenza in P e in Q. Unisci P con Q: la corda incontra il diametro in M. Il segmento PM è il lato dell’ettagono (Costruzione 16). *PM è metà della corda PQ.*
+
+2. Apri il compasso quanto PM. Partendo da 1 riporta il lato sulla circonferenza, tre volte da una parte e tre dall’altra: in tutto hai sette punti. Numerali girando in senso orario. *Tra gli ultimi due punti deve restare una distanza quasi uguale alle altre.*
+
+3. Parti da 1 e unisci con 4, saltando 2 e 3. Poi da 4 a 7, da 7 a 3, da 3 a 6, da 6 a 2, da 2 a 5 e da 5 di nuovo a 1. *Conta sempre tre passi in avanti.*
+
+4. Se invece salti un solo vertice (da 1 a 3, da 3 a 5, e così via) ottieni una stella più «gonfia», con le punte meno aguzze. *Con sette punti puoi disegnare due stelle diverse.*
+
+**Perché funziona?** Sette è un numero primo: partendo da un vertice e saltandone sempre due, tocchi tutti e sette i vertici prima di tornare al punto di partenza. La stella si disegna quindi con un’unica linea spezzata, senza staccare la matita. La divisione in sette parti è approssimata (Costruzione 16): l’errore è di circa due millesimi del lato, invisibile a matita.
+
+**Prova tu:** Disegna le due stelle a sette punte nella stessa circonferenza di raggio 5 cm, con due colori diversi.
+
+---
+
+#### Costruzione 109 — Simmetria assiale di una figura
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Hai un triangolo ABC e una retta r, l’asse di simmetria. Vuoi disegnare il triangolo simmetrico, come se r fosse uno specchio.
+
+**Passi:**
+
+1. Da A, da B e da C traccia le perpendicolari all’asse r (Costruzione 4, oppure con le squadre) e prolungale dall’altra parte. *Le tre rette sono parallele tra loro.*
+
+2. Punta il compasso nel punto in cui la perpendicolare da A incontra l’asse. Apri fino ad A e riporta la distanza dall’altra parte: trovi A′. *A′ si legge «A primo».*
+
+3. Fai lo stesso per B e per C: trovi B′ e C′. *Ogni volta punta sull’asse, nel piede della perpendicolare.*
+
+4. Unisci A′, B′ e C′: è il triangolo simmetrico. *Piega il foglio lungo r e guarda controluce: i due triangoli coincidono.*
+
+**Perché funziona?** Ogni vertice e il suo simmetrico stanno sulla stessa perpendicolare all’asse e alla stessa distanza da esso: l’asse r è l’asse del segmento che li unisce. Se pieghi il foglio lungo r, le due figure si sovrappongono esattamente. I lati e gli angoli restano uguali, ma il verso si inverte: come la mano destra e la sinistra.
+
+**Prova tu:** Disegna un quadrilatero a piacere e una retta inclinata che non lo attraversa. Costruisci il quadrilatero simmetrico.
+
+---
+
+#### Costruzione 110 — Simmetria centrale di una figura
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un triangolo ABC e un punto O, il centro di simmetria. Vuoi disegnare il triangolo simmetrico rispetto a O.
+
+**Passi:**
+
+1. Traccia le rette che partono da A, da B e da C, passano per O e proseguono dall’altra parte. *Le tre rette si incrociano tutte in O.*
+
+2. Punta in O, apri fino ad A e riporta la distanza dall’altra parte, sulla stessa retta: trovi A′. *O è il punto medio tra A e A′.*
+
+3. Fai lo stesso per B e per C: trovi B′ e C′. *Punta sempre in O.*
+
+4. Unisci A′, B′ e C′: è il triangolo simmetrico. *Ruota il foglio di mezzo giro: il triangolo nuovo prende il posto del vecchio.*
+
+**Perché funziona?** Ogni vertice, il centro O e il vertice simmetrico sono allineati, e O è il punto medio del segmento che li unisce. La figura simmetrica è uguale a quella di partenza, ma ruotata di mezzo giro: 180° attorno a O. I lati corrispondenti sono paralleli e il verso della figura non cambia.
+
+**Prova tu:** Disegna la lettera F in stampatello e un punto O accanto. Costruisci la sua simmetrica rispetto a O.
+
+---
+
+#### Costruzione 111 — Traslazione di una figura
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Hai un triangolo ABC e un segmento orientato v, da P a Q: si chiama vettore, e indica di quanto e verso dove spostare la figura.
+
+**Passi:**
+
+1. Da A, da B e da C traccia le parallele al vettore v (Costruzione 11, oppure con le squadre), nel verso che va da P a Q. *Le tre rette sono parallele tra loro.*
+
+2. Apri il compasso quanto il vettore, da P a Q. Punta in A e taglia la parallela: trovi A′. *Tieni ferma l’apertura.*
+
+3. Con la stessa apertura punta in B e poi in C: trovi B′ e C′. *Lo spostamento è lo stesso per tutti i punti.*
+
+4. Unisci A′, B′ e C′: è il triangolo traslato. *Controlla con le squadre: i lati corrispondenti sono paralleli.*
+
+**Perché funziona?** I segmenti AA′, BB′ e CC′ sono paralleli al vettore v e lunghi quanto v: tutti i punti della figura fanno lo stesso identico spostamento. Per questo la figura non cambia forma, non cambia misure e non ruota: ogni lato del nuovo triangolo è parallelo al lato corrispondente di quello di partenza.
+
+**Prova tu:** Disegna un triangolo e un vettore lungo 6 cm. Trasla il triangolo due volte di seguito: ottieni l’inizio di un fregio.
+
+---
+
+#### Costruzione 112 — Rotazione di una figura di 60°
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un triangolo ABC e un punto O, il centro di rotazione. Vuoi ruotare il triangolo di 60° in senso antiorario, cioè contrario alle lancette dell’orologio.
+
+**Passi:**
+
+1. Punta in O e apri fino ad A: traccia un arco in senso antiorario. Fai lo stesso aprendo fino a B e poi fino a C. *Ogni vertice si muove sul suo arco.*
+
+2. Apri il compasso quanto OA. Punta in A e taglia l’arco che passa per A: trovi A′. *Il triangolo O-A-A′ è equilatero.*
+
+3. Apri quanto OB, punta in B e taglia il suo arco: trovi B′. Apri quanto OC, punta in C e taglia il suo arco: trovi C′. *Ogni vertice usa la sua apertura.*
+
+4. Unisci A′, B′ e C′: è il triangolo ruotato di 60°. *Controlla con il goniometro l’angolo tra OA e OA′.*
+
+**Perché funziona?** Il punto A′ dista da O quanto A, perché sta sull’arco con centro O. Dista da A ancora la stessa lunghezza, perché hai usato la stessa apertura. Il triangolo O-A-A′ ha tre lati uguali: è equilatero, quindi l’angolo in O misura 60°. Lo stesso vale per B e per C: tutti i vertici ruotano dello stesso angolo e la figura non cambia forma né misure.
+
+**Prova tu:** Disegna un triangolo e ruotalo di 60° per cinque volte attorno allo stesso centro: ottieni un rosone con sei triangoli.
+
+---
+
+#### Costruzione 113 — Ingrandimento di una figura in scala 2 : 1
+
+**Servono:** righello, compasso.
+
+**Situazione:** Hai un triangolo ABC e un punto O, fuori dal triangolo. Vuoi disegnare un triangolo con la stessa forma ma con i lati lunghi il doppio.
+
+**Passi:**
+
+1. Traccia le semirette che partono da O e passano per A, per B e per C. Prolungale bene oltre i vertici. *O si chiama centro dell’ingrandimento.*
+
+2. Apri il compasso quanto OA. Punta in A e taglia la semiretta oltre A: trovi A′. *OA′ è il doppio di OA.*
+
+3. Apri quanto OB, punta in B e trovi B′. Apri quanto OC, punta in C e trovi C′. *Ogni vertice usa la sua apertura.*
+
+4. Unisci A′, B′ e C′: è il triangolo ingrandito. *Misura AB e A′B′: il secondo è il doppio del primo.*
+
+**Perché funziona?** Ogni vertice del nuovo triangolo sta sulla stessa semiretta del vertice di partenza, a distanza doppia da O. Per questo ogni lato del triangolo grande è parallelo al lato corrispondente del piccolo ed è lungo il doppio, mentre gli angoli restano uguali. Le due figure hanno la stessa forma ma grandezza diversa: si dicono simili. Questa trasformazione si chiama omotetia.
+
+**Prova tu:** Disegna un quadrilatero a piacere e ingrandiscilo in scala 2 : 1. Poi prova a ridurlo in scala 1 : 2, usando i punti medi.
+
+---
+
+#### Costruzione 114 — Squadratura del foglio
+
+**Servono:** righello, squadre, compasso.
+
+**Situazione:** Hai un foglio da disegno. Prima di ogni tavola si traccia la squadratura: una cornice con i lati paralleli ai bordi, che delimita lo spazio del disegno.
+
+**Passi:**
+
+1. Con il righello traccia le due diagonali del foglio, da un angolo a quello opposto: si incrociano nel centro O. *Non serve tracciarle intere: basta la parte centrale e quella verso gli angoli.*
+
+2. Punta in O con un’apertura un po’ più corta di mezza diagonale. Traccia quattro archetti che tagliano le diagonali vicino agli angoli: trovi i punti 1, 2, 3 e 4. *Più l’apertura è grande, più i margini sono stretti.*
+
+3. Unisci 1 con 2, 2 con 3, 3 con 4 e 4 con 1: è la squadratura. *Controlla con la squadra: i quattro angoli devono essere retti.*
+
+**Perché funziona?** I quattro punti stanno sulle diagonali, tutti alla stessa distanza da O: sono i vertici di un rettangolo che ha le stesse diagonali del foglio. Per questo la cornice è sempre un rettangolo preciso, anche se il foglio non è tagliato in modo perfetto; se il foglio è regolare, i suoi lati sono paralleli ai bordi. I margini non sono identici: quelli sui lati corti vengono quasi una volta e mezza più larghi di quelli sui lati lunghi.
+
+**Prova tu:** Squadra un foglio da disegno con questo metodo. Misura i quattro margini e controlla con la squadra gli angoli della cornice.
+
+---
+
 > **⚠️ Box sicurezza:**
 > Il compasso ha una punta metallica tagliente. Non rivolgere la punta verso i compagni. Non tenere il compasso in mano mentre cammini. Quando non lo usi, chiudilo o appoggialo sul banco con la punta rivolta verso il basso sul foglio.
 
