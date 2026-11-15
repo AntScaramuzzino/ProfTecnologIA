@@ -83,6 +83,8 @@ main{position:relative;display:flex;flex-direction:column;min-width:0}
 .porta::after{content:"";position:absolute;right:9%;top:52%;width:9%;aspect-ratio:1;border-radius:50%;background:#E5C16A}
 .finestra{left:32%;top:16%;width:36%;height:44%;background:linear-gradient(#CFE6F7,#EAF4FB);border:5px solid #fff;outline:2px solid #B9B1A0;box-shadow:inset 0 0 0 1px #9DB7C9}
 .finestra::after{content:"";position:absolute;left:calc(50% - 2px);top:0;width:4px;height:100%;background:#fff}
+#floorZ{position:absolute;right:10px;top:10px;display:flex;flex-direction:column;gap:6px}
+#floorZ .btn{background:rgba(255,255,255,.92);font-size:20px;font-weight:700;min-width:44px;min-height:44px;line-height:1}
 #floorUi{position:absolute;left:10px;right:10px;bottom:8px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;font-size:13px;color:var(--muted,#5A5F76);pointer-events:none}
 #floorUi label{pointer-events:auto;background:rgba(255,255,255,.9);padding:5px 10px;border-radius:999px;margin:0;border:1px solid var(--line)}
 @media (max-width:760px){#floor{--L:330px;--H:150px}}
@@ -238,14 +240,15 @@ details summary{cursor:pointer;font-weight:700;font-size:.9rem;min-height:30px;c
     <button class="tab on" data-v="comp">Composizione</button>
     <button class="tab" data-v="mod">Modulo quotato</button>
     <button class="tab" data-v="sheet">Tavola A4</button>
-    <button class="tab" data-v="floor">Pavimento</button>
+    <button class="tab" data-v="floor">Stanza 3D</button>
   </div>
-  <div class="stagewrap"><svg id="stage" xmlns="http://www.w3.org/2000/svg"></svg><div id="floor" hidden tabindex="0" aria-label="Stanza in 3D con il motivo sul pavimento: trascina o usa le frecce per ruotarla">
+  <div class="stagewrap"><svg id="stage" xmlns="http://www.w3.org/2000/svg"></svg><div id="floor" hidden tabindex="0" aria-label="Stanza in 3D con il motivo sul pavimento: trascina o usa le frecce per ruotarla, i tasti più e meno per lo zoom">
       <div id="room">
         <div class="rw" id="rwB"><i class="porta"></i></div><div class="rw" id="rwF"></div>
         <div class="rw" id="rwL"><i class="finestra"></i></div><div class="rw" id="rwR"></div>
         <div id="floorP"></div>
       </div>
+      <div id="floorZ"><button class="btn sm ico" id="zPiu" title="Ingrandisci" aria-label="Ingrandisci">+</button><button class="btn sm ico" id="zMeno" title="Rimpicciolisci" aria-label="Rimpicciolisci">−</button></div>
       <div id="floorUi"><span>Trascina per ruotare la stanza</span><label class="chk"><input type="checkbox" id="oPareti"> Motivo anche sulle pareti</label></div>
     </div></div>
   <div class="player" id="player" hidden>
@@ -1505,17 +1508,24 @@ function mostra(r){
 }
 function renderStage(){mostra(stageSvg())}
 /* ---- la stanza si ruota trascinando (o con le frecce); finché non la tocchi gira piano da sola ---- */
-const ST={a:-32,t:-24,auto:true,raf:0,drag:null};
+const ST={a:-32,t:-24,z:-300,auto:true,raf:0,drag:null,dita:new Map(),pizzico:0};
+const stanzaZoom=d=>{ST.z=Math.max(-900,Math.min(260,ST.z+d));stanzaGira()};
 function stanzaGira(){
- $('#room').style.transform=`translateZ(-300px) rotateX(${ST.t}deg) rotateY(${ST.a}deg)`;
+ $('#room').style.transform=`translateZ(${Math.round(ST.z)}px) rotateX(${ST.t}deg) rotateY(${ST.a}deg)`;
  cancelAnimationFrame(ST.raf);
  if(ST.auto&&S.view==='floor'&&!MOTO_RIDOTTO)ST.raf=requestAnimationFrame(()=>{ST.a+=.12;stanzaGira()});
 }
 {const fl=$('#floor');
- fl.addEventListener('pointerdown',e=>{if(e.target.closest('label'))return;ST.auto=false;ST.drag=[e.clientX,e.clientY,ST.a,ST.t];fl.setPointerCapture(e.pointerId)});
- fl.addEventListener('pointermove',e=>{if(!ST.drag)return;ST.a=ST.drag[2]+(e.clientX-ST.drag[0])*.4;ST.t=Math.max(-70,Math.min(-6,ST.drag[3]-(e.clientY-ST.drag[1])*.25));stanzaGira()});
- ['pointerup','pointercancel'].forEach(ev=>fl.addEventListener(ev,()=>{ST.drag=null}));
- fl.addEventListener('keydown',e=>{const d={ArrowLeft:[-8,0],ArrowRight:[8,0],ArrowUp:[0,-5],ArrowDown:[0,5]}[e.key];if(!d)return;e.preventDefault();e.stopPropagation();ST.auto=false;ST.a+=d[0];ST.t=Math.max(-70,Math.min(-6,ST.t+d[1]));stanzaGira()});
+ const dist=()=>{const p=[...ST.dita.values()];return Math.hypot(p[0][0]-p[1][0],p[0][1]-p[1][1])};
+ fl.addEventListener('pointerdown',e=>{if(e.target.closest('label,button'))return;ST.auto=false;ST.dita.set(e.pointerId,[e.clientX,e.clientY]);fl.setPointerCapture(e.pointerId);
+  if(ST.dita.size===2){ST.drag=null;ST.pizzico=dist()}else ST.drag=[e.clientX,e.clientY,ST.a,ST.t]});
+ fl.addEventListener('pointermove',e=>{if(!ST.dita.has(e.pointerId))return;ST.dita.set(e.pointerId,[e.clientX,e.clientY]);
+  if(ST.dita.size===2){const d=dist();stanzaZoom((d-ST.pizzico)*2.2);ST.pizzico=d;return}       // due dita: zoom
+  if(!ST.drag)return;ST.a=ST.drag[2]+(e.clientX-ST.drag[0])*.4;ST.t=Math.max(-70,Math.min(-6,ST.drag[3]-(e.clientY-ST.drag[1])*.25));stanzaGira()});
+ ['pointerup','pointercancel'].forEach(ev=>fl.addEventListener(ev,e=>{ST.dita.delete(e.pointerId);ST.drag=null}));
+ fl.addEventListener('wheel',e=>{e.preventDefault();ST.auto=false;stanzaZoom(-e.deltaY*.9)},{passive:false});
+ $('#zPiu').onclick=()=>{ST.auto=false;stanzaZoom(110)};$('#zMeno').onclick=()=>{ST.auto=false;stanzaZoom(-110)};
+ fl.addEventListener('keydown',e=>{if(e.key==='+'||e.key==='-'){e.preventDefault();ST.auto=false;stanzaZoom(e.key==='+'?110:-110);return}const d={ArrowLeft:[-8,0],ArrowRight:[8,0],ArrowUp:[0,-5],ArrowDown:[0,5]}[e.key];if(!d)return;e.preventDefault();e.stopPropagation();ST.auto=false;ST.a+=d[0];ST.t=Math.max(-70,Math.min(-6,ST.t+d[1]));stanzaGira()});
  $('#oPareti').onchange=()=>render();}
 /** Colonna di destra e note. comp = il disegno di cui mostrare i passi. */
 function renderSide(comp){
