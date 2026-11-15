@@ -488,7 +488,7 @@ FAM.greca={
   }
   const unit=G.pts?G.pts(0):G.hooks(0)[0];
   const steps=[
-   `Su foglio quadrettato (quadretto ${q} mm) traccia ${p.cornice?'le linee di cornice e ':''}l’altezza della fascia: ${G.H} quadretti${p.cornice?' più uno sopra e uno sotto per la cornice':''}.`,
+   `Su foglio quadrettato (quadretti da ${q} mm) traccia ${p.cornice?'le linee di cornice e ':''}l’altezza della fascia: ${G.H} quadretti${p.cornice?' più uno sopra e uno sotto per la cornice':''}.`,
    `Ogni ripetizione è larga ${G.per} quadretti: segna con un trattino leggero l’inizio di ciascuna (${n} ripetizioni, ${cm(W)} cm in tutto).`];
   if(G.base)steps.push(`Traccia la linea di base${G.top?' e la linea in alto':''} per tutta la lunghezza della fascia.`);
   steps.push(`Disegna il primo motivo contando i quadretti: ${movesTxt(unit)}.`);
@@ -810,7 +810,7 @@ FAM.mandala={
    mat:'Foglio da disegno, matita, compasso, goniometro, riga, matite colorate.',
    steps:[`Traccia ${na+1} circonferenze con lo stesso centro, raggi (mm): ${rs.map(f2).join(' · ')}.`,
     `Con il goniometro dividi il cerchio in ${n} settori uguali da ${f2(360/n).replace('.',',')}° e traccia i raggi leggeri; traccia anche le bisettrici (mezzo settore).`,
-    ...used.slice().reverse().map(([i,k,r0,r1,m])=>`Anello ${i+1} (da ${f2(r0)} a ${f2(r1)} mm): ${m} ${nomi[k]}${m!==n?' — usa anche le bisettrici':''}.`),
+    ...used.slice().reverse().map(([i,k,r0,r1,m])=>`Anello ${i+1} (da ${f2(r0)} a ${f2(r1)} mm): ${k==='pieno'?nomi[k]:k==='zigzag'?`${nomi[k]} con ${m} punte`:`${m} ${nomi[k]}`}${m!==n&&k!=='pieno'?' — usa anche le bisettrici':''}.`),
     'Ripassa con tratto marcato e colora anello per anello, ripetendo lo stesso colore in tutti i settori.']};
  }
 };
@@ -931,7 +931,7 @@ FAM.cerchi={
     p.ret==='linea'?`Traccia la linea di mezzo e segna su di essa un punto ogni ${s} mm: sono i centri.`:p.ret==='sq'?`Traccia un reticolo quadrato con passo ${s} mm: i centri sono gli incroci.`:`Traccia righe orizzontali distanti ${f2(s*Math.sqrt(3)/2)} mm; su ogni riga segna un punto ogni ${s} mm, spostando di ${f2(s/2)} mm una riga sì e una no (reticolo triangolare).`,
     `Con apertura di compasso ${f2(r)} mm punta su ogni centro e traccia le circonferenze: si intrecciano formando petali e losanghe.`,
     p.doppio?`Su ogni centro traccia una seconda circonferenza di raggio ${f2(r*.5)} mm.`:'Osserva le figure che nascono dagli incroci.',
-    'Colora alternando: le zone coperte da un numero dispari di cerchi in un colore, le altre nell’altro (come nell’anteprima).']};
+    'Colora alternando: le zone coperte da un numero dispari di cerchi in un colore, le altre nell’altro (come nel disegno).']};
  }
 };
 
@@ -1054,9 +1054,9 @@ FAM.fregi={
   return{w:n*u,h:types.length*(2*u+gap)-gap,grid:{t:'sq',s:u/4},items,guides,stroke:true,
    mat:'Foglio quadrettato o da disegno, matita, righello, carta da lucido (utile per ribaltare il motivo), matite colorate.',
    steps:[`Traccia una fascia alta ${cm(2*u)} cm e lunga ${cm(n*u)} cm, con la linea di mezzo leggera.`,
-    `Dividi la fascia in ${n} passi da ${u} mm.`,
-    'Nel primo passo, sopra la linea di mezzo, disegna il motivo di partenza (aiutati con 4 × 4 quadretti).',
-    p.tutti?'Ogni riga applica una trasformazione diversa: osservale e prova a riconoscerle.':`${T[1].replace(/^\d · /,'')}: ${T[2]}`,
+    `Dividi la fascia in ${n} parti da ${u} mm.`,
+    'Nella prima parte, sopra la linea di mezzo, disegna il motivo di partenza (aiutati con 4 × 4 quadretti).',
+    p.tutti?'Ogni riga applica una trasformazione diversa: osservale e prova a riconoscerle.':`${T[1].replace(/^\d · /,'')}: ${T[2][0].toLowerCase()+T[2].slice(1)}`,
     'Per ribaltare con precisione ricalca il motivo sulla carta da lucido, giralo e ripassalo.',
     'Colora con lo stesso colore i motivi uguali e con un altro quelli ribaltati sotto la linea.']};
  }
@@ -1407,8 +1407,9 @@ if(!$('#hDa').value)$('#hDa').value=new Date().toLocaleDateString('it-IT');
 /* ============ rendering ============ */
 let LAST=null;
 function compute(single){
- const f=FAM[S.fam],pal=PALS[S.pal];
- return f.gen(S.p[S.fam],rngFrom(S.seed*31+7),pal,single);
+ const f=FAM[S.fam],pal=PALS[S.pal],o=f.gen(S.p[S.fam],rngFrom(S.seed*31+7),pal,single);
+ o.steps=o.steps.map(s=>s.replace(/(\d)\.(\d)/g,'$1,$2'));     // nei testi i decimali si scrivono con la virgola
+ return o;
 }
 let GID=0;
 const GRIDS={q5:{t:'sq',s:5},q10:{t:'sq',s:10},iso5:{t:'tri',s:5},iso10:{t:'tri',s:10},isoV5:{t:'triV',s:5},isoV10:{t:'triV',s:10},none:{t:'none'}};
