@@ -25,9 +25,13 @@ const COME_SI_USA = [
 ];
 
 const TIPI = [
-  { nome: "Cavaliera", assi: "x orizzontale, y a 45°, z verticale", misure: "x e z vere, y a metà", quando: "La faccia di fronte resta com’è nel prospetto. È la più rapida da disegnare." },
-  { nome: "Isometrica", assi: "x e y a 30°, z verticale", misure: "vere lungo i tre assi", quando: "Mostra le tre facce allo stesso modo. Molti programmi di disegno 3D la usano come vista pronta." },
-  { nome: "Monometrica", assi: "x a 30°, y a 60°, z verticale", misure: "vere lungo i tre assi", quando: "La base resta com’è nella pianta. Si usa per stanze ed edifici visti dall’alto." },
+  { nome: "Cavaliera", famiglia: "Obliqua", assi: "x orizzontale, y a 45°, z verticale", misure: "x e z vere, y a metà", quando: "La faccia di fronte resta com’è nel prospetto. È la più rapida da disegnare." },
+  { nome: "Monometrica a 30° e 60°", famiglia: "Obliqua", assi: "x a 30°, y a 60°, z verticale", misure: "vere lungo i tre assi", quando: "La base resta com’è nella pianta. Si usa per stanze ed edifici visti dall’alto." },
+  { nome: "Monometrica a 45°", famiglia: "Obliqua", assi: "x e y a 45°, z verticale", misure: "vere lungo i tre assi", quando: "La base resta com’è nella pianta, girata di 45°. Il solido sembra più alto di quanto è." },
+  { nome: "Militare", famiglia: "Obliqua", assi: "x e y a 45°, z verticale", misure: "x e y vere, z a metà", quando: "Detta anche aerea: come la monometrica a 45°, ma con l’altezza dimezzata. Per piante di edifici e quartieri." },
+  { nome: "Isometrica", famiglia: "Ortogonale", assi: "x e y a 30°, z verticale", misure: "vere lungo i tre assi", quando: "Mostra le tre facce allo stesso modo. Molti programmi di disegno 3D la usano come vista pronta." },
+  { nome: "Dimetrica", famiglia: "Ortogonale", assi: "x e y a 40°, z verticale", misure: "x e y vere, z circa 0,59", quando: "Nei libri, con x e y che scendono da O, gli assi formano due angoli di 130° e uno di 100°. Serve il goniometro." },
+  { nome: "Trimetrica", famiglia: "Ortogonale", assi: "x a 20°, y a 40°, z verticale", misure: "x vera, y circa 0,81, z circa 0,94", quando: "Nei libri gli assi formano tre angoli diversi (110°, 130° e 120°) e hanno tre rapporti diversi. Serve il goniometro." },
 ];
 
 const LEGENDA = [
@@ -99,13 +103,15 @@ export default function AssonometriePage() {
 
         <section aria-labelledby="titolo-tipi" className="mt-6 rounded-xl border border-slate-200 bg-white p-5">
           <h2 id="titolo-tipi" className="text-xl font-black tracking-tight text-slate-950">
-            Tre assonometrie, tre regole
+            Sette assonometrie, sette regole
           </h2>
           {/* Sul telefono una scheda per tipo; da 640 px in su la tabella */}
           <ul className="mt-3 space-y-3 sm:hidden">
             {TIPI.map((t) => (
               <li key={t.nome} className="rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm leading-6 text-slate-700">
-                <p className="text-base font-black text-slate-950">{t.nome}</p>
+                <p className="text-base font-black text-slate-950">
+                  {t.nome} <span className="text-xs font-bold uppercase tracking-wide text-slate-500">· {t.famiglia}</span>
+                </p>
                 <p className="mt-1"><strong className="text-slate-950">Assi:</strong> {t.assi}</p>
                 <p><strong className="text-slate-950">Misure:</strong> {t.misure}</p>
                 <p className="mt-1">{t.quando}</p>
@@ -125,7 +131,10 @@ export default function AssonometriePage() {
               <tbody>
                 {TIPI.map((t) => (
                   <tr key={t.nome} className="border-b border-slate-200 align-top">
-                    <th scope="row" className="py-2 pr-4 font-black text-slate-950">{t.nome}</th>
+                    <th scope="row" className="py-2 pr-4 font-black text-slate-950">
+                      {t.nome}
+                      <span className="block text-xs font-bold uppercase tracking-wide text-slate-500">{t.famiglia}</span>
+                    </th>
                     <td className="py-2 pr-4">{t.assi}</td>
                     <td className="py-2 pr-4">{t.misure}</td>
                     <td className="py-2">{t.quando}</td>
@@ -135,8 +144,11 @@ export default function AssonometriePage() {
             </table>
           </div>
           <p className="mt-3 text-sm leading-6 text-slate-700">
-            Gli angoli si misurano dalla linea orizzontale. In tutte e tre gli spigoli che nel solido sono paralleli
-            restano paralleli nel disegno.
+            Nella colonna degli assi gli angoli si misurano dalla linea orizzontale; valori come 130° o 120° sono invece gli
+            angoli tra un asse e l’altro, come li disegnano i libri. Nelle oblique i raggi che proiettano il solido sul foglio sono
+            inclinati, nelle ortogonali sono perpendicolari al foglio. In tutte gli spigoli che nel solido sono paralleli
+            restano paralleli nel disegno. Nella scuola media si disegnano soprattutto cavaliera, monometrica, militare e isometrica;
+            dimetrica e trimetrica si guardano nell’assonometro.
           </p>
         </section>
 
@@ -149,7 +161,8 @@ export default function AssonometriePage() {
               L’assonometro
             </h2>
             <p className="mt-1 text-sm leading-6 text-slate-200">
-              Dodici solidi da disegnare in cavaliera, in isometrica e in monometrica. Scegli le misure, gira il
+              Dodici solidi da disegnare in sette assonometrie: cavaliera, monometrica a 30° e 60° e a 45°, militare,
+              isometrica, dimetrica e trimetrica. Scegli le misure, gira il
               solido, accendi la scatola e tocca un vertice per vedere come si trova, una misura alla volta. Accanto ci
               sono le tre viste. Puoi usarlo anche da solo, senza una tavola.
             </p>

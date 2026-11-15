@@ -135,6 +135,8 @@ button,select,input{font:inherit;color:inherit}
   padding:.5rem .65rem;min-height:40px;box-shadow:3px 3px 0 var(--grafite);
 }
 .chip:hover,.tasto:hover{background:#fff}
+.tipo__fam{font:600 .64rem var(--d-mono);color:#475569;text-transform:uppercase;letter-spacing:.06em;margin:.35rem 0 .3rem}
+.tipo__fam:first-child{margin-top:0}
 .chip.is-active{background:var(--grafite);color:#fff;box-shadow:3px 3px 0 var(--minio)}
 .tasto:disabled{opacity:.45;cursor:default;box-shadow:none}
 .tasto--mini{padding:.3rem .55rem;min-height:34px;font-size:.72rem;box-shadow:2px 2px 0 var(--grafite)}
@@ -181,7 +183,7 @@ details.regole:not([open])>summary::after{content:"+"}
   .vertice{stroke-width:.45}
   .pannello__nota{position:static;text-align:right;padding:0 .6rem .3rem}
   /* comandi grandi per il dito */
-  .gruppo--tipo .scelta{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem}
+  .gruppo--tipo .scelta{display:grid;grid-template-columns:repeat(2,1fr);gap:.4rem}
   .gruppo--tipo .chip{padding:.55rem .2rem;font-size:.72rem;min-height:46px;text-align:center}
   .tasto--mini{min-width:46px;min-height:44px;font-size:.8rem}
   .gruppo .scelta .tasto{flex:1 1 140px;min-height:46px;font-size:.72rem}

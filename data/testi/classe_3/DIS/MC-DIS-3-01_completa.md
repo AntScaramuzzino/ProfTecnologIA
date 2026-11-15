@@ -127,7 +127,9 @@ Tra l'asse x e l'asse y c'è un angolo retto, perché 180° − 30° − 60° = 
 4. Da ogni vertice della base alza uno spigolo verticale lungo quanto l'altezza.
 5. Unisci i quattro punti in alto: la faccia di sopra è uguale alla base.
 
-**Quando si usa:** quando conta di più ciò che si vede dall'alto, come la pianta di una stanza con i mobili, un edificio o un quartiere. Nel disegno di architettura è comoda perché si parte dalla pianta già disegnata e basta alzare le altezze. In cambio l'oggetto sembra visto molto dall'alto e più slanciato di quanto è. Alcuni libri la chiamano assonometria militare.
+**Quando si usa:** quando conta di più ciò che si vede dall'alto, come la pianta di una stanza con i mobili, un edificio o un quartiere. Nel disegno di architettura è comoda perché si parte dalla pianta già disegnata e basta alzare le altezze. In cambio l'oggetto sembra visto molto dall'alto e più slanciato di quanto è.
+
+Alcuni libri usano anche la **monometrica a 45°**, con gli assi x e y inclinati di 45° tutti e due, e l'**assonometria militare** (o aerea): stessi assi, ma l'altezza si disegna a metà, perché l'oggetto non sembri troppo alto. Si usa per le piante di edifici e quartieri visti dall'alto. Esistono poi altre assonometrie ortogonali, la **dimetrica** e la **trimetrica**, che si disegnano con il goniometro: le puoi provare nell'assonometro del libro.
 
 ---
 

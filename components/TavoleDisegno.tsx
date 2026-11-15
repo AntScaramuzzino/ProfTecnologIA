@@ -92,7 +92,7 @@ function Assonometrie({ basePath }: { basePath: string }) {
       </div>
       <p className="mt-5 text-sm leading-6 text-slate-700">
         <strong className="text-slate-950">L’assonometro</strong> si può usare anche da solo: dodici solidi da disegnare
-        nelle tre assonometrie, con le tre viste accanto.{" "}
+        in sette assonometrie, con le tre viste accanto.{" "}
         <a
           href={assonometroSrc()}
           target="_blank"

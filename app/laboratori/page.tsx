@@ -299,7 +299,7 @@ export default function LaboratoriPage() {
             Assonometrie <span className="text-base font-bold text-slate-600">· {TAVOLE_ASS_PRONTE.length} tavole guidate</span>
           </h3>
           <p className="mt-2 line-clamp-5 text-sm leading-6 text-slate-800">
-            L’assonometro disegna un solido in cavaliera, in isometrica e in monometrica, con gli assi, le misure e le
+            L’assonometro disegna un solido in sette assonometrie, dalla cavaliera alla trimetrica, con gli assi, le misure e le
             tre viste accanto; le tavole GeoGebra costruiscono il disegno sul foglio, un passaggio alla volta. Collegate
             a {MC_ASSONOMETRIE} e a {MC_MONOMETRICA}. Hanno una pagina tutta loro.
           </p>

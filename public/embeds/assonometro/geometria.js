@@ -10,33 +10,88 @@
 
 const RAD = Math.PI / 180;
 
+/* Rapporti di riduzione di un'assonometria ortogonale, ricavati dagli angoli degli assi sul foglio.
+   In una proiezione ortogonale i tre assi proiettati u_i, accorciati di k_i, devono dare Σ k_i² u_i u_iᵀ = I:
+   tre equazioni nelle tre incognite k_i². Si normalizza perché il rapporto più grande valga 1, come nell'isometrica
+   «semplificata» dei libri (che usa 1 al posto di 0,816). */
+function rapportiOrtogonali(gx, gy, gz = 90) {
+  const u = [gx, gy, gz].map(g => [Math.cos(g * Math.PI / 180), Math.sin(g * Math.PI / 180)]);
+  const A = [u.map(v => v[0] * v[0]), u.map(v => v[1] * v[1]), u.map(v => v[0] * v[1])];
+  const det = m => m[0][0] * (m[1][1] * m[2][2] - m[1][2] * m[2][1]) - m[0][1] * (m[1][0] * m[2][2] - m[1][2] * m[2][0]) + m[0][2] * (m[1][0] * m[2][1] - m[1][1] * m[2][0]);
+  const d = det(A), b = [1, 1, 0];
+  const k2 = [0, 1, 2].map(c => det(A.map((r, i) => r.map((v, j) => (j === c ? b[i] : v)))) / d);
+  const k = k2.map(Math.sqrt), max = Math.max(...k);
+  return k.map(v => v / max);
+}
+const [KDx, KDy, KDz] = rapportiOrtogonali(40, 140);       // dimetrica: angoli 130°, 130°, 100° → z circa 0,59
+const [KTx, KTy, KTz] = rapportiOrtogonali(20, 140);       // trimetrica: angoli 110°, 130°, 120°
+const circa = k => `circa ${k.toFixed(2).replace('.', ',')}`;
+
+/* Le assonometrie dei libri di testo per la secondaria di primo grado.
+   gruppo: 'obliqua' (raggi inclinati sul foglio) | 'ortogonale' (raggi perpendicolari al foglio). */
 export const TIPI = {
   cavaliera: {
-    nome: 'Cavaliera',
+    nome: 'Cavaliera', breve: 'Cavaliera', gruppo: 'obliqua',
     x: { gradi: 0, k: 1, dove: 'orizzontale, verso destra', misura: 'vera' },
     y: { gradi: 45, k: 0.5, dove: 'a 45°, verso destra', misura: 'a metà' },
     z: { gradi: 90, k: 1, dove: 'verticale', misura: 'vera' },
     squadra: 'Squadra a 45°',
     guardi: 'di fronte, un po’ da destra e dall’alto',
-    vera: 'Resta vera la faccia di fronte: è il prospetto.',
-  },
-  isometrica: {
-    nome: 'Isometrica',
-    x: { gradi: 30, k: 1, dove: 'a 30°, verso destra', misura: 'vera' },
-    y: { gradi: 150, k: 1, dove: 'a 30°, verso sinistra', misura: 'vera' },
-    z: { gradi: 90, k: 1, dove: 'verticale', misura: 'vera' },
-    squadra: 'Squadra a 30° e 60°',
-    guardi: 'di spigolo, tanto di fronte quanto da sinistra, e dall’alto',
-    vera: 'Nessuna faccia resta vera: i rettangoli diventano parallelogrammi.',
+    vera: 'Resta vera la faccia di fronte: è il prospetto. Detta anche «cavaliera rapida».',
   },
   monometrica: {
-    nome: 'Monometrica',
+    nome: 'Monometrica a 30° e 60°', breve: 'Monometrica 30°/60°', gruppo: 'obliqua',
     x: { gradi: 30, k: 1, dove: 'a 30°, verso destra', misura: 'vera' },
     y: { gradi: 120, k: 1, dove: 'a 60°, verso sinistra', misura: 'vera' },
     z: { gradi: 90, k: 1, dove: 'verticale', misura: 'vera' },
     squadra: 'Squadra a 30° e 60°',
     guardi: 'di fronte, da sinistra e molto dall’alto',
-    vera: 'Resta vera la base: è la pianta, girata di 30°.',
+    vera: 'Resta vera la base: è la pianta, girata di 30°. Con la monometrica a 45° fa parte delle «planometriche».',
+  },
+  planometrica: {
+    nome: 'Monometrica a 45°', breve: 'Monometrica 45°', gruppo: 'obliqua',
+    x: { gradi: 45, k: 1, dove: 'a 45°, verso destra', misura: 'vera' },
+    y: { gradi: 135, k: 1, dove: 'a 45°, verso sinistra', misura: 'vera' },
+    z: { gradi: 90, k: 1, dove: 'verticale', misura: 'vera' },
+    squadra: 'Squadra a 45°',
+    guardi: 'di spigolo e dall’alto',
+    vera: 'Resta vera la base: è la pianta, girata di 45°. Il solido sembra più alto di quanto è.',
+  },
+  militare: {
+    nome: 'Militare', breve: 'Militare', gruppo: 'obliqua',
+    x: { gradi: 45, k: 1, dove: 'a 45°, verso destra', misura: 'vera' },
+    y: { gradi: 135, k: 1, dove: 'a 45°, verso sinistra', misura: 'vera' },
+    z: { gradi: 90, k: 0.5, dove: 'verticale', misura: 'a metà' },
+    squadra: 'Squadra a 45°',
+    guardi: 'di spigolo e molto dall’alto, come da un aereo',
+    vera: 'Assi come la monometrica a 45°, ma l’altezza si dimezza perché il solido non sembri troppo alto. Detta anche «aerea»; si usa per piante di edifici e quartieri.',
+  },
+  isometrica: {
+    nome: 'Isometrica', breve: 'Isometrica', gruppo: 'ortogonale',
+    x: { gradi: 30, k: 1, dove: 'a 30°, verso destra', misura: 'vera' },
+    y: { gradi: 150, k: 1, dove: 'a 30°, verso sinistra', misura: 'vera' },
+    z: { gradi: 90, k: 1, dove: 'verticale', misura: 'vera' },
+    squadra: 'Squadra a 30° e 60°',
+    guardi: 'di spigolo, tanto di fronte quanto da sinistra, e dall’alto',
+    vera: 'Sul foglio tra x e y c’è un angolo di 120°; nei libri, con x e y che scendono da O, gli assi formano tre angoli di 120°. Nessuna faccia resta vera: i rettangoli diventano parallelogrammi.',
+  },
+  dimetrica: {
+    nome: 'Dimetrica', breve: 'Dimetrica', gruppo: 'ortogonale',
+    x: { gradi: 40, k: KDx, dove: 'a 40°, verso destra', misura: 'vera' },
+    y: { gradi: 140, k: KDy, dove: 'a 40°, verso sinistra', misura: 'vera' },
+    z: { gradi: 90, k: KDz, dove: 'verticale', misura: circa(KDz) },
+    squadra: 'Goniometro per gli angoli di 40°',
+    guardi: 'di spigolo e molto dall’alto',
+    vera: `Sul foglio x e y salgono di 40° e tra loro c’è un angolo di 100°; nei libri, con x e y che scendono da O, gli assi formano due angoli di 130° e uno di 100°. Larghezza e profondità si riportano per intero, l’altezza si accorcia (${circa(KDz)}).`,
+  },
+  trimetrica: {
+    nome: 'Trimetrica', breve: 'Trimetrica', gruppo: 'ortogonale',
+    x: { gradi: 20, k: KTx, dove: 'a 20°, verso destra', misura: 'vera' },
+    y: { gradi: 140, k: KTy, dove: 'a 40°, verso sinistra', misura: circa(KTy) },
+    z: { gradi: 90, k: KTz, dove: 'verticale', misura: circa(KTz) },
+    squadra: 'Goniometro per gli angoli di 20° e 40°',
+    guardi: 'più di fronte che di fianco, e dall’alto',
+    vera: 'Nei libri, con x e y che scendono da O, gli assi formano tre angoli diversi (110°, 130° e 120°); ogni asse ha il suo rapporto di riduzione.',
   },
 };
 

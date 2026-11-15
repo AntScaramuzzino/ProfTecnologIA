@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Assonometro — Book ProfTecnologIA</title>
-<meta name="description" content="Assonometro: un solido disegnato in assonometria cavaliera, isometrica o monometrica, con gli assi, le misure e le tre viste da cui si parte.">
+<meta name="description" content="Assonometro: un solido disegnato in sette assonometrie (cavaliera, monometrica, militare, isometrica, dimetrica, trimetrica), con gli assi, le misure e le tre viste da cui si parte.">
 <!-- le classi vanno messe prima del primo disegno della pagina -->
 <script>(function(){var p=new URLSearchParams(location.search),c=document.documentElement.classList;if(p.get('embed')==='1')c.add('is-embed');if(p.get('lim')==='1')c.add('lim');if(p.get('esercizio')==='1')c.add('is-esercizio');})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 
 <main id="main" class="asso">
   <div class="asso__intro">
-    <p class="eyebrow mono">ASSONOMETRIE — CAVALIERA · ISOMETRICA · MONOMETRICA</p>
+    <p class="eyebrow mono">ASSONOMETRIE OBLIQUE E ORTOGONALI</p>
     <h1 class="asso__titolo">L’assonometro</h1>
     <p class="asso__lead">
       Scegli un solido e un tipo di assonometria. Nel riquadro «Foglio» vedi il disegno come viene sul tuo
@@ -64,10 +64,20 @@
 
       <div class="gruppo gruppo--tipo">
         <p class="gruppo__et mono">TIPO DI ASSONOMETRIA</p>
-        <div class="scelta" id="sceltaTipo" role="group" aria-label="Tipo di assonometria">
-          <button class="chip" data-tipo="cavaliera" type="button" aria-pressed="true">Cavaliera</button>
-          <button class="chip" data-tipo="isometrica" type="button" aria-pressed="false">Isometrica</button>
-          <button class="chip" data-tipo="monometrica" type="button" aria-pressed="false">Monometrica</button>
+        <div id="sceltaTipo">
+          <p class="tipo__fam">Oblique</p>
+          <div class="scelta" role="group" aria-label="Assonometrie oblique">
+            <button class="chip" data-tipo="cavaliera" type="button" aria-pressed="true">Cavaliera</button>
+            <button class="chip" data-tipo="monometrica" type="button" aria-pressed="false">Monometrica 30°/60°</button>
+            <button class="chip" data-tipo="planometrica" type="button" aria-pressed="false">Monometrica 45°</button>
+            <button class="chip" data-tipo="militare" type="button" aria-pressed="false">Militare</button>
+          </div>
+          <p class="tipo__fam">Ortogonali</p>
+          <div class="scelta" role="group" aria-label="Assonometrie ortogonali">
+            <button class="chip" data-tipo="isometrica" type="button" aria-pressed="false">Isometrica</button>
+            <button class="chip" data-tipo="dimetrica" type="button" aria-pressed="false">Dimetrica</button>
+            <button class="chip" data-tipo="trimetrica" type="button" aria-pressed="false">Trimetrica</button>
+          </div>
         </div>
       </div>
 

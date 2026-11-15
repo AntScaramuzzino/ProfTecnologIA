@@ -8,12 +8,16 @@
 export const MC_ASSONOMETRIE = "MC-DIS-2-02";
 export const MC_MONOMETRICA = "MC-DIS-3-01";
 
-export type TipoAssonometria = "cavaliera" | "isometrica" | "monometrica";
+export type TipoAssonometria = "cavaliera" | "monometrica" | "planometrica" | "militare" | "isometrica" | "dimetrica" | "trimetrica";
 
 export const NOME_TIPO: Record<TipoAssonometria, string> = {
   cavaliera: "Cavaliera",
-  isometrica: "Isometrica",
   monometrica: "Monometrica",
+  planometrica: "Monometrica a 45°",
+  militare: "Militare",
+  isometrica: "Isometrica",
+  dimetrica: "Dimetrica",
+  trimetrica: "Trimetrica",
 };
 
 /** Apertura dell'Assonometro sul solido della tavola: stessi solidi e stesse chiavi del proiettore ortogonale, misure in cm. */
@@ -124,6 +128,18 @@ export const TAVOLE_ASS: TavolaAss[] = [
   { numero: 11, slug: "stanza-monometrica", tipo: "monometrica", mc: MC_MONOMETRICA, pronta: false,
     titolo: "Una stanza in assonometria monometrica",
     descrizione: "Dalla pianta di una stanza al suo volume, con i muri e un mobile." },
+  { numero: 12, slug: "parallelepipedo-militare", tipo: "militare", mc: MC_MONOMETRICA, pronta: true,
+    titolo: "Parallelepipedo in assonometria militare",
+    descrizione: "Assi a 45° e a 45°: la base resta vera, l’altezza si dimezza.",
+    intro: "L’ultima delle assonometrie oblique dei libri. Come nella monometrica la base resta un rettangolo vero, ma girato di 45°, e l’altezza si disegna a metà. Nell’assonometro confronta «Monometrica 45°» e «Militare»: cambia solo l’altezza. Poi segui la costruzione.",
+    assonometro: { tipo: "militare", solido: "parallelepipedo", misure: { L: 6, H: 8, P: 4 }, etichetta: "Base 6 × 4 cm · altezza 8 cm" },
+    provaTu: "Disegna in assonometria militare un parallelepipedo con la base di 7 × 3 cm, alto 5 cm. La larghezza è 7 cm, la profondità 3 cm.",
+    controlli: [
+      "La base è un rettangolo vero di 7 × 3 cm: controlla i quattro angoli retti con la squadra.",
+      "Gli spigoli verticali misurano tutti 2,5 cm, la metà di 5 cm.",
+      "Dal punto più basso al punto più alto il disegno è alto circa 9,6 cm.",
+    ],
+    assonometroProva: { tipo: "militare", solido: "parallelepipedo", misure: { L: 7, H: 5, P: 3 }, etichetta: "Base 7 × 3 cm · altezza 5 cm" } },
 ];
 
 export const TAVOLE_ASS_PRONTE = TAVOLE_ASS.filter((t) => t.pronta);

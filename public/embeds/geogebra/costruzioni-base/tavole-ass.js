@@ -12,6 +12,7 @@
  *   cavaliera     x a 0°,  k 1     y a 45°,  k 1/2     z a 90°, k 1     → si guarda di fronte, da destra e dall'alto
  *   isometrica    x a 30°, k 1     y a 150°, k 1       z a 90°, k 1     → si guarda di fronte, da sinistra e dall'alto
  *   monometrica   x a 30°, k 1     y a 120°, k 1       z a 90°, k 1     → come sopra, ma più dall'alto; x ⟂ y
+ *   militare      x a 45°, k 1     y a 135°, k 1       z a 90°, k 1/2   → di spigolo e molto dall'alto; x ⟂ y
  * Sono le stesse regole del testo di MC-DIS-2-02 e dello strumento «Assonometro» (public/embeds/assonometro/).
  *
  * `a.p(x, y, z)` dà il punto sul foglio; tutti gli strumenti lavorano su punti del foglio.
@@ -61,6 +62,7 @@
     cavaliera: { x: { gradi: 0, k: 1 }, y: { gradi: 45, k: 0.5 } },
     isometrica: { x: { gradi: 30, k: 1 }, y: { gradi: 150, k: 1 } },
     monometrica: { x: { gradi: 30, k: 1 }, y: { gradi: 120, k: 1 } },
+    militare: { x: { gradi: 45, k: 1 }, y: { gradi: 135, k: 1 }, z: { k: 0.5 } },
   };
 
   /**
@@ -75,10 +77,11 @@
     const versore = (asse) => (asse === "z" ? [0, 1] : [Math.cos(T[asse].gradi * RAD), Math.sin(T[asse].gradi * RAD)]);
     const ex = versore("x"), ey = versore("y");
     /** Punto del foglio che corrisponde al punto del solido con larghezza x, profondità y e altezza z (in cm). */
-    const p = (x, y, z) => [x * T.x.k * ex[0] + y * T.y.k * ey[0], x * T.x.k * ex[1] + y * T.y.k * ey[1] + z];
+    const kz = T.z ? T.z.k : 1;
+    const p = (x, y, z) => [x * T.x.k * ex[0] + y * T.y.k * ey[0], x * T.x.k * ex[1] + y * T.y.k * ey[1] + z * kz];
 
     return creaTavola({
-      level: tipo === "monometrica" ? "A" : "I",
+      level: tipo === "monometrica" || tipo === "militare" ? "A" : "I",
       appletHeight: 660,
       fontSize: 20,
       coord: [-sinistra - 0.6, destra + 0.6, -basso - 0.6, alto + 0.6],
@@ -625,4 +628,82 @@
     a.passo();
   });
 
+  // ── Tavola 12 · Parallelepipedo in assonometria militare (MC-DIS-3-01) ───────
+  TAVOLE["ass-parallelepipedo-militare"] = creaAssonometria({
+    title: "Parallelepipedo in assonometria militare",
+    eyebrow: "Tavola 12 · La pianta vera, l’altezza a metà",
+    subtitle: "Lo stesso parallelepipedo delle tavole 1, 4 e 10: base di 6 × 4 cm, altezza 8 cm. Gli assi x e y salgono di 45°, uno verso destra e uno verso sinistra; l’altezza si disegna a metà.",
+    filename: "MC-DIS-3-01_ass-parallelepipedo-militare.ggb",
+    appletHeight: 700,
+    proofTitle: "Come da un aereo",
+    proofCopy: "In assonometria militare, come nella monometrica, gli assi x e y formano un angolo retto: la base si disegna con la sua vera forma, girata di 45°. Si chiama così perché si usava per progettare fortificazioni; i libri la chiamano anche «aerea». Se l’altezza restasse intera il solido sembrerebbe molto più alto di quanto è: per questo si dimezza. Con l’altezza intera è la monometrica a 45°.",
+    equality: "x: 6 cm · y: 4 cm · z: 8 cm → 4 cm · tra x e y: 90°",
+    steps: [
+      ["Prima di iniziare", "Leggi i dati e prepara il foglio", `${INTRO} Il parallelepipedo è quello delle tavole 1, 4 e 10: larghezza 6 cm, profondità 4 cm, altezza 8 cm. ${VISTE} Sul tuo foglio segna il punto O in basso, un po’ a sinistra del centro: ti servono almeno 4 cm a sinistra di O, 6 cm a destra e 12 cm sopra.`, "Ti basta la squadra a 45°: gli assi x e y sono inclinati di 45° tutti e due."],
+      ["Passo 1 · Gli assi", "Traccia i tre assi", "Traccia una linea orizzontale sottile che passa per O: serve da riferimento. Da O traccia l’asse z, verticale, lungo 4 cm: è metà degli 8 cm dell’altezza, perché in militare l’altezza si dimezza. Appoggia la squadra a 45° sulla linea orizzontale, con l’angolo di 45° in O, e traccia l’asse x: sale di 45° verso destra. Poi girala dall’altra parte e traccia l’asse y: sale di 45° verso sinistra.", "Controllo: tra l’asse x e l’asse y c’è un angolo retto, perché 180° − 45° − 45° = 90°. Verificalo con la squadra."],
+      ["Passo 2 · La base", "Disegna la base in vera forma", "Sull’asse x misura 6 cm da O e segna il punto A. Sull’asse y misura 4 cm da O e segna il punto C. Da A traccia una linea parallela all’asse y, da C una linea parallela all’asse x: si incontrano nel punto B.", "OABC è un rettangolo vero di 6 cm per 4 cm, uguale a quello del PO, girato di 45°."],
+      ["Passo 3 · Le altezze", "Alza gli spigoli a metà", "L’altezza è 8 cm, ma in verticale si disegna a metà: 4 cm. Da A traccia una linea verticale lunga 4 cm: trovi il punto E. Fai lo stesso da B e da C: trovi i punti F e G. Il punto D è la punta dell’asse z, 4 cm sopra O.", "È l’unica misura ridotta: la base resta vera, l’altezza si dimezza."],
+      ["Passo 4 · Sopra", "Chiudi la faccia di sopra", "Unisci D con E e G con F: sono due linee parallele all’asse x. Unisci E con F e D con G: sono due linee parallele all’asse y.", "DEFG è un altro rettangolo vero di 6 cm per 4 cm: è la base, 4 cm più in alto sul foglio."],
+      ["Passo 5 · Ripasso", "Ripassa gli spigoli", `Guardi il solido di spigolo e molto dall’alto, come da un aereo. Vedi tre facce: OAED, che è quella di fronte; OCGD, che è quella di sinistra; DEFG, che è quella di sopra. Ripassa i loro spigoli con un tratto deciso. I tre spigoli che partono da B stanno dietro: disegnali tratteggiati, cioè a trattini. ${COLORI}`, "Confronta con la tavola 10: la base è un rettangolo vero in tutte e due, qui girato di 45° invece che di 30°."],
+    ],
+  }, "militare", { sinistra: 3.8, destra: 13.4, alto: 11.6, basso: 1.2 }, (a) => {
+    const larg = 6, prof = 4, alt = 8;
+    const O = a.O, A = a.p(larg, 0, 0), B = a.p(larg, prof, 0), C = a.p(0, prof, 0);
+    const D = a.p(0, 0, alt), E = a.p(larg, 0, alt), F = a.p(larg, prof, alt), G = a.p(0, prof, alt);
+
+    a.treViste({ larg, prof, alt }, [8.4, 4.4]);
+    a.origine();
+    a.passo();
+
+    // Passo 1 · assi
+    a.orizzontale(-3.6, 6.4, [0.08, 0.26]);
+    a.asse("z", 4, [0.26, 0.46], [-0.75, -0.6]);
+    a.asse("x", 7.4, [0.48, 0.66]);
+    a.angolo("X", 0, 45, "45°", 0.68, 1.9);
+    a.asse("y", 5.4, [0.7, 0.88], [-0.5, 0.1]);
+    a.angolo("Y", 135, 180, "45°", 0.9, 1.9);
+    a.angoloRetto("XY", 45, 135, 0.95);
+    a.passo();
+
+    // Passo 2 · base in vera forma
+    a.misura("Larg", O, A, "6 cm", 0.1, "giu", [1.2, 0.2]);
+    a.punto("A", A, "A", 0.12, [0.25, -0.5]);
+    a.misura("Prof", O, C, "4 cm", 0.3, "sx", [-0.1, 0.1]);
+    a.punto("C", C, "C", 0.32, [-0.65, -0.2]);
+    a.figura("AB", A, B, [0.46, 0.68]);
+    a.figura("CB", C, B, [0.68, 0.9]);
+    a.punto("B", B, "B", 0.92, [-0.17, -0.8]);
+    a.passo();
+
+    // Passo 3 · altezze dimezzate
+    const w = finestre(3, 0.12, 0.84);
+    a.figura("AE", A, E, w[0]);
+    a.misura("Alt", A, E, "8 cm → 4 cm", w[0][1], "dx");
+    a.punto("E", E, "E", w[0][1], [0.25, 0.1]);
+    a.figura("BF", B, F, w[1]);
+    a.punto("F", F, "F", w[1][1], [-0.15, 0.3]);
+    a.figura("CG", C, G, w[2]);
+    a.punto("G", G, "G", w[2][1], [-0.6, 0]);
+    a.punto("D", D, "D", 0.9, [0.2, 0.2]);
+    a.passo();
+
+    // Passo 4 · faccia di sopra
+    const q = finestre(4, 0.12, 0.92);
+    a.figura("DE", D, E, q[0]);
+    a.figura("GF", G, F, q[1]);
+    a.figura("EF", E, F, q[2]);
+    a.figura("DG", D, G, q[3]);
+    a.passo();
+
+    // Passo 5 · ripasso: 9 spigoli in vista, 3 nascosti
+    const r = finestre(12, 0.06, 0.88);
+    [["OA", O, A], ["AE", A, E], ["ED", E, D], ["DO", D, O],
+      ["OC", O, C], ["CG", C, G], ["GD", G, D], ["EF", E, F], ["FG", F, G]]
+      .forEach(([nome, da, fino], i) => a.ripassa(nome, da, fino, r[i]));
+    [["AB", A, B], ["CB", C, B], ["BF", B, F]].forEach(([nome, da, fino], i) => a.nascosto(nome, da, fino, r[9 + i]));
+    a.faccia("Fronte", [O, A, E, D], "PV");
+    a.faccia("Sopra", [D, E, F, G], "PO");
+    a.faccia("Fianco", [O, C, G, D], "PL");
+    a.passo();
+  });
 })();

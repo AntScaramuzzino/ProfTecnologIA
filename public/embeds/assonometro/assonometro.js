@@ -5,7 +5,7 @@
    Gemello del proiettore ortogonale (../proiettore/): stessi solidi e stesse chiavi delle misure (solidi.js).
 
    Apertura da indirizzo:
-     ?tipo=cavaliera|isometrica|monometrica
+     ?tipo=cavaliera|monometrica|planometrica|militare|isometrica|dimetrica|trimetrica
      ?solido=<id>                 uno dei solidi del proiettore (parallelepipedo, elle, prismatri, piramide…)
      ?<misura>=<cm>               misure in centimetri, con le chiavi del proiettore (L, H, P, lato, r, alt, larg, prof, sp…)
      ?alfa=<gradi>&beta=<gradi>   rotazione di partenza, come nel proiettore
@@ -139,8 +139,10 @@ function disegnaFoglio() {
   const angoli = [];
   [0, 1].forEach(i => [0, 1].forEach(j => [0, 1].forEach(k => angoli.push(m({ x: i * dim.x, y: j * dim.y, z: k * dim.z })))));
   const xs = [...angoli.map(p => p[0]), fineAsse.x[0], fineAsse.y[0], 0], ys = [...angoli.map(p => p[1]), fineAsse.z[1], fineAsse.y[1], fineAsse.x[1], 0];
-  const postoMisura = stato.mostra.quote && vista.v.x > 0 ? 0.9 + (telefono.matches ? 0.5 : 0.3) * `${cmTesto(dim.y)} → ${cmTesto(dim.y * T.y.k)}`.length : 0;      // in cavaliera la misura della profondità sta a destra
-  const vb = riquadro(Math.min(...xs) - 2.4, Math.min(...ys) - 1.0, Math.max(Math.max(...xs) + 1.8, m({ x: dim.x, y: dim.y, z: 0 })[0] + postoMisura), Math.max(...ys) + 1.5, 1.12);
+  // posto a destra per la scritta di una misura: in cavaliera la profondità, nelle altre l'altezza
+  const testoMisura = (asse) => (T[asse].k === 1 ? cmTesto(dim[asse]) : `${cmTesto(dim[asse])} → ${cmTesto(dim[asse] * T[asse].k)}`);
+  const postoMisura = stato.mostra.quote ? 0.9 + (telefono.matches ? 0.5 : 0.3) * testoMisura(vista.v.x > 0 ? 'y' : 'z').length : 0;      // in cavaliera la misura della profondità sta a destra
+  const vb = riquadro(Math.min(...xs) - 2.4, Math.min(...ys) - 1.0, Math.max(Math.max(...xs) + 1.8, m({ x: dim.x, y: vista.v.x > 0 ? dim.y : 0, z: 0 })[0] + postoMisura), Math.max(...ys) + 1.5, 1.12);
 
   const r = proietta(solido, P, N, vista);
   let h = '';
@@ -210,9 +212,13 @@ function disegnaFoglio() {
     };
     const xLato = vista.v.x > 0 ? dim.x : 0;          // il fianco in vista: destro in cavaliera, sinistro nelle altre
     h += quota('x', { x: 0, y: 0, z: 0 }, { x: dim.x, y: 0, z: 0 }, T.x.gradi !== 0 ? 0.74 : 0.5);
-    h += quota('y', { x: xLato, y: 0, z: 0 }, { x: xLato, y: dim.y, z: 0 }, vista.v.x > 0 ? 1 : 0.74);
-    const yAlto = vista.v.x > 0 ? 0 : dim.y;          // lo spigolo verticale in vista più a sinistra
-    h += quota('z', { x: 0, y: yAlto, z: 0 }, { x: 0, y: yAlto, z: dim.z });
+    h += quota('y', { x: xLato, y: 0, z: 0 }, { x: xLato, y: dim.y, z: 0 }, vista.v.x > 0 ? 1 : T.y.k === 1 ? 0.74 : 0.9);
+    // l'altezza: in cavaliera sullo spigolo a sinistra di O; nelle altre sullo spigolo davanti a destra,
+    // lontano dall'asse y (che sale verso sinistra) e dalla sua scritta
+    const xAlto = vista.v.x > 0 ? 0 : dim.x;
+    // a destra la scritta deve stare sopra la punta dell'asse x
+    const H = dim.z * T.z.k, sopraX = (1.5 * Math.sin(T.x.gradi * Math.PI / 180) + 0.9) / (H || 1);
+    h += quota('z', { x: xAlto, y: 0, z: 0 }, { x: xAlto, y: 0, z: dim.z }, vista.v.x > 0 ? 0.5 : Math.min(0.92, Math.max(0.5, sopraX)));
   }
 
   // origine
@@ -237,7 +243,7 @@ function disegnaFoglio() {
   const svg = $('#svgFoglio');
   svg.setAttribute('viewBox', vb.testo);
   svg.innerHTML = h;
-  $('#etFoglio').textContent = `FOGLIO · ASSONOMETRIA ${T.nome.toUpperCase()}`;
+  $('#etFoglio').textContent = `FOGLIO · ASSONOMETRIA ${T.nome.toUpperCase()} · ${T.gruppo.toUpperCase()}`;
 }
 
 /* ── le tre viste, disposte come sul foglio delle proiezioni ortogonali ── */
@@ -434,3 +440,10 @@ sistemaTelefono();
 telefono.addEventListener('change', sistemaTelefono);
 
 aggiorna();
+
+/* ── dentro un'altra pagina (Tecnorama, proftecnologia.it): comunica l'altezza, così l'iframe non ha barre ── */
+if (window.parent !== window) {
+  const manda = () => window.parent.postMessage({ tipo: 'assonometro-altezza', altezza: document.documentElement.scrollHeight }, '*');
+  new ResizeObserver(manda).observe(document.documentElement);
+  manda();
+}
