@@ -9,27 +9,14 @@ import { useEffect, useState } from "react";
 import {
   ANNO_SCOLASTICO, SETTIMANE, SETTIMANE_DI_LEZIONE, etichettaSettimana, indiceSettimana,
 } from "@/lib/calendario-scolastico";
+import {
+  leggiClassi, risolvi, slotDi, type ClasseDocente, type PianoSettimane, type VoceSettimana,
+} from "@/lib/piano-docente";
 import { cx } from "@/lib/ui";
-
-export interface VoceSettimana {
-  mc?: string;
-  mcTitolo?: string;
-  emoji?: string;
-  /** «Teoria», «Disegno» o «Coding». */
-  tipo: string;
-  titolo: string;
-  cosa: string;
-  link?: { href: string; label: string }[];
-  /** Immagine della lezione (quando non ci sono anteprime di tavole). */
-  immagine?: string;
-  /** Anteprime delle tavole della settimana. */
-  tavole?: { src: string; href: string }[];
-}
-
-export type PianoSettimane = Record<number, { teoria: VoceSettimana[]; pratica: VoceSettimana[] }>;
 
 const CLASSI = [1, 2, 3];
 const CHIAVE_CLASSE = "tecnologia_app_lezione_classe";
+const CHIAVE_CLASSE_DOCENTE = "tecnologia_app_lezione_classe_docente";
 
 function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica" }) {
   const colori = tono === "teoria"
@@ -76,6 +63,11 @@ function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica
         <h3 className="mt-3 text-lg font-black leading-snug text-slate-950 sm:text-xl">{voce.titolo}</h3>
       )}
       <p className="mt-1 text-sm leading-6 text-slate-600">{voce.cosa}</p>
+      {voce.nota && (
+        <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-sm leading-6 text-amber-900">
+          <span className="font-bold">Nota del docente:</span> {voce.nota}
+        </p>
+      )}
 
       {voce.link && voce.link.length > 0 && (
         <ul className="mt-4 flex flex-wrap gap-2">
@@ -106,18 +98,35 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
   const [oggi, setOggi] = useState<number | null>(null);
   const [indice, setIndice] = useState(0);
   const [classe, setClasse] = useState(1);
+  // Classi del docente, se su questo dispositivo ne ha salvate (pagina /docenti): sostituiscono 1ª, 2ª, 3ª.
+  const [classi, setClassi] = useState<ClasseDocente[]>([]);
+  const [idDocente, setIdDocente] = useState<string | null>(null);
 
   useEffect(() => {
     const i = indiceSettimana(new Date());
     setOggi(i);
     setIndice(Math.min(Math.max(i, 0), SETTIMANE.length - 1));
+    const mie = leggiClassi(piano);
+    setClassi(mie);
+    let idSalvato: string | null = null;
     try {
       const salvata = Number(localStorage.getItem(CHIAVE_CLASSE));
       if (CLASSI.includes(salvata)) setClasse(salvata);
+      idSalvato = localStorage.getItem(CHIAVE_CLASSE_DOCENTE);
     } catch {
       // localStorage non disponibile
     }
-  }, []);
+    setIdDocente(mie.find((c) => c.id === idSalvato)?.id ?? mie[0]?.id ?? null);
+  }, [piano]);
+
+  function scegliDocente(id: string) {
+    setIdDocente(id);
+    try {
+      localStorage.setItem(CHIAVE_CLASSE_DOCENTE, id);
+    } catch {
+      // localStorage non disponibile
+    }
+  }
 
   function scegliClasse(c: number) {
     setClasse(c);
@@ -135,7 +144,19 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
   // Nelle settimane di pausa si mostra la lezione con cui si riprende.
   const ripresa = SETTIMANE.slice(indice).find((s) => s.numero !== null);
   const numero = settimana.numero ?? ripresa?.numero ?? null;
-  const voci = numero ? { teoria: piano[classe].teoria[numero - 1], pratica: piano[classe].pratica[numero - 1] } : null;
+  const mia = classi.find((c) => c.id === idDocente);
+  const anno = mia?.anno ?? classe;
+  const slotTeoria = slotDi(mia, piano, anno, "teoria");
+  const slotPratica = slotDi(mia, piano, anno, "pratica");
+  const schede = classi.length > 0
+    ? classi.map((c) => ({ chiave: c.id, nome: c.nome, attiva: c.id === idDocente, scegli: () => scegliDocente(c.id) }))
+    : CLASSI.map((c) => ({ chiave: String(c), nome: `${c}ª`, attiva: classe === c, scegli: () => scegliClasse(c) }));
+  const voci = numero
+    ? {
+        teoria: risolvi(piano, anno, "teoria", slotTeoria[numero - 1]),
+        pratica: risolvi(piano, anno, "pratica", slotPratica[numero - 1]),
+      }
+    : null;
 
   let occhiello = "Lezione della settimana";
   if (oggi !== null) {
@@ -168,19 +189,19 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
           </div>
 
           <div className="flex flex-wrap items-center gap-2">
-            <div role="group" aria-label="Scegli la classe" className="flex rounded-full border border-slate-300 bg-white p-1">
-              {CLASSI.map((c) => (
+            <div role="group" aria-label="Scegli la classe" className="flex flex-wrap rounded-3xl border border-slate-300 bg-white p-1">
+              {schede.map((c) => (
                 <button
-                  key={c}
+                  key={c.chiave}
                   type="button"
-                  aria-pressed={classe === c}
-                  onClick={() => scegliClasse(c)}
+                  aria-pressed={c.attiva}
+                  onClick={c.scegli}
                   className={cx(
                     "rounded-full px-4 py-2 text-sm font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500",
-                    classe === c ? "bg-emerald-700 text-white" : "text-slate-700 hover:bg-slate-100"
+                    c.attiva ? "bg-emerald-700 text-white" : "text-slate-700 hover:bg-slate-100"
                   )}
                 >
-                  {c}ª
+                  {c.nome}
                 </button>
               ))}
             </div>
@@ -241,7 +262,10 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
 
         <p className="mt-4 text-xs text-slate-500">
           Due ore a settimana: una di teoria e una di disegno o coding. Il ritmo segue il calendario scolastico{" "}
-          {ANNO_SCOLASTICO.etichetta} della Regione {ANNO_SCOLASTICO.regione}; è una proposta, ogni classe può andare più piano o più veloce.
+          {ANNO_SCOLASTICO.etichetta} della Regione {ANNO_SCOLASTICO.regione}; {mia ? `qui vedi il piano della tua ${mia.nome}, salvato su questo dispositivo.` : "è una proposta, ogni classe può andare più piano o più veloce."}{" "}
+          <Link href="/docenti" className="font-bold text-emerald-800 underline underline-offset-4">
+            {mia ? "Modifica il piano →" : "Sei docente? Pianifica il tuo anno →"}
+          </Link>
         </p>
       </div>
     </section>

@@ -274,6 +274,13 @@ export default function SiteHeader() {
             </Link>
 
             <Link
+              href="/docenti"
+              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              Docenti
+            </Link>
+
+            <Link
               href="/progressi"
               className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
             >
@@ -386,6 +393,13 @@ export default function SiteHeader() {
                 className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
               >
                 Glossario
+              </Link>
+              <Link
+                href="/docenti"
+                onClick={() => setMenuOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              >
+                Docenti
               </Link>
               <Link
                 href="/progressi"
