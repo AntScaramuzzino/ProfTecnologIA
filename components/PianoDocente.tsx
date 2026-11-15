@@ -294,7 +294,7 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
               onChange={(e) => setNuovaSezione(e.target.value)}
             />
           </label>
-          <button type="submit" className={cx(BOTTONE, "border-emerald-700 bg-emerald-700 text-white hover:border-emerald-800")} disabled={!pronto || classi.length >= MAX_CLASSI}>
+          <button type="submit" className="rounded-full border border-emerald-700 bg-emerald-700 px-4 py-2 text-sm font-bold text-white hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 disabled:opacity-40" disabled={!pronto || classi.length >= MAX_CLASSI}>
             Aggiungi classe
           </button>
           {classi.length >= MAX_CLASSI && <p className="text-sm text-slate-600">Hai raggiunto il massimo di {MAX_CLASSI} classi.</p>}
