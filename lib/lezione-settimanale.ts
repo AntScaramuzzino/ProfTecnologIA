@@ -27,12 +27,17 @@ export interface VoceLezione {
   cosa: string;
   /** Tavole, laboratori e pagine da aprire. */
   link?: LinkLezione[];
+  /** Anteprime delle tavole della settimana (al massimo quattro), da mostrare in testa alla scheda. */
+  tavole?: { src: string; href: string }[];
 }
 
 export interface PianoClasse {
   teoria: VoceLezione[];
   pratica: VoceLezione[];
 }
+
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const MAX_ANTEPRIME = 4;
 
 // ── Fasi standard di una MC, distribuite su n settimane ──────────────────────────────────────────
 const FASE = {
@@ -87,6 +92,7 @@ function costruzioni(categoria: CategoriaCostruzione, settimane: number): VoceLe
         ...gruppo.map((c) => ({ href: hrefCostruzione(c), label: `Tavola ${c.numero} · ${c.titolo}` })),
         { href: `/costruzioni-geometriche#${categoria}`, label: "Tutte le tavole della categoria" },
       ],
+      tavole: gruppo.slice(0, MAX_ANTEPRIME).map((c) => ({ src: `${BASE_PATH}/assets/costruzioni/${c.slug}.webp`, href: hrefCostruzione(c) })),
     };
   });
 }
@@ -102,6 +108,7 @@ function tavolePO(numeri: number[], titolo: string, cosa: string): VoceLezione[]
       ...tavole.map((t) => ({ href: hrefTavolaPO(t), label: `Tavola ${t.numero} · ${t.titolo}` })),
       { href: "/proiezioni-ortogonali", label: "Proiettore ortogonale e tutte le tavole" },
     ],
+    tavole: tavole.slice(0, MAX_ANTEPRIME).map((t) => ({ src: `${BASE_PATH}/assets/proiezioni/${t.slug}.webp`, href: hrefTavolaPO(t) })),
   }];
 }
 

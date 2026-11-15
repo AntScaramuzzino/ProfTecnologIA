@@ -3,6 +3,7 @@ import MCCard from "@/components/MCCard";
 import LezioneSettimana, { type PianoSettimane, type VoceSettimana } from "@/components/LezioneSettimana";
 import { PIANO_LEZIONI, type VoceLezione } from "@/lib/lezione-settimanale";
 import { AREA_META, getAllMCs, type MC } from "@/lib/mc-loader";
+import { getPrimaryVisual } from "@/lib/content-loader";
 import { areaAccent, cx } from "@/lib/ui";
 
 export default function HomePage() {
@@ -30,6 +31,8 @@ export default function HomePage() {
     return {
       ...v,
       mcTitolo: mc?.titolo,
+      // Le settimane con le tavole mostrano le anteprime delle tavole; le altre l'immagine della lezione.
+      immagine: mc && !v.tavole?.length ? getPrimaryVisual(mc.id)?.src : undefined,
       emoji: mc ? AREA_META[mc.area]?.emoji : undefined,
       tipo: binario === "teoria" ? "Teoria" : area === "DIS" ? "Disegno" : "Coding",
     };

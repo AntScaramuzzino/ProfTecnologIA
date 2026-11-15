@@ -20,6 +20,10 @@ export interface VoceSettimana {
   titolo: string;
   cosa: string;
   link?: { href: string; label: string }[];
+  /** Immagine della lezione (quando non ci sono anteprime di tavole). */
+  immagine?: string;
+  /** Anteprime delle tavole della settimana. */
+  tavole?: { src: string; href: string }[];
 }
 
 export type PianoSettimane = Record<number, { teoria: VoceSettimana[]; pratica: VoceSettimana[] }>;
@@ -29,10 +33,29 @@ const CHIAVE_CLASSE = "tecnologia_app_lezione_classe";
 
 function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica" }) {
   const colori = tono === "teoria"
-    ? { bordo: "border-emerald-200", badge: "bg-emerald-700", link: "text-emerald-800", chip: "border-emerald-200 bg-emerald-50 text-emerald-900 hover:border-emerald-500" }
-    : { bordo: "border-blue-200", badge: "bg-blue-700", link: "text-blue-800", chip: "border-blue-200 bg-blue-50 text-blue-900 hover:border-blue-500" };
+    ? { bordo: "border-emerald-200", fascia: "bg-gradient-to-br from-emerald-100 to-white", badge: "bg-emerald-700", link: "text-emerald-800", chip: "border-emerald-200 bg-emerald-50 text-emerald-900 hover:border-emerald-500" }
+    : { bordo: "border-blue-200", fascia: "bg-gradient-to-br from-blue-100 to-white", badge: "bg-blue-700", link: "text-blue-800", chip: "border-blue-200 bg-blue-50 text-blue-900 hover:border-blue-500" };
   return (
-    <article className={cx("flex h-full flex-col rounded-2xl border-2 bg-white p-5 shadow-sm sm:p-6", colori.bordo)}>
+    <article className={cx("flex h-full flex-col overflow-hidden rounded-2xl border-2 bg-white shadow-sm", colori.bordo)}>
+      {/* Immagine in testa: anteprime delle tavole, immagine della lezione oppure una fascia colorata */}
+      {voce.tavole && voce.tavole.length > 0 ? (
+        <div className={cx("grid gap-px border-b border-slate-200 bg-slate-200", voce.tavole.length > 1 ? "grid-cols-2" : "grid-cols-1")}>
+          {voce.tavole.map((t) => (
+            <Link key={t.href} href={t.href} tabIndex={-1} aria-hidden="true" className="block bg-white">
+              <img src={t.src} alt="" width={640} height={394} loading="lazy" decoding="async" className="h-32 w-full object-contain sm:h-36" />
+            </Link>
+          ))}
+        </div>
+      ) : voce.immagine && voce.mc ? (
+        <Link href={`/mc/${voce.mc}`} tabIndex={-1} aria-hidden="true" className="block border-b border-slate-200 bg-slate-100">
+          <img src={voce.immagine} alt="" loading="lazy" decoding="async" className="h-44 w-full object-cover sm:h-52" />
+        </Link>
+      ) : (
+        <div aria-hidden="true" className={cx("flex h-24 items-center justify-center border-b border-slate-200 text-4xl", colori.fascia)}>
+          {tono === "teoria" ? "📖" : "📐"}
+        </div>
+      )}
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
       <div className="flex flex-wrap items-center gap-2">
         <span className={cx("rounded-full px-3 py-1 text-xs font-black uppercase tracking-wide text-white", colori.badge)}>
           {voce.tipo}
@@ -73,6 +96,7 @@ function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica
           </Link>
         </div>
       )}
+      </div>
     </article>
   );
 }
@@ -199,7 +223,7 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
           </p>
         )}
 
-        <div className={cx("mt-5 grid gap-4 md:grid-cols-2 md:gap-5", (oggi === null || voci) && "min-h-[16rem]")}>
+        <div className={cx("mt-5 grid gap-4 md:grid-cols-2 md:gap-5", (oggi === null || voci) && "min-h-[24rem]")}>
           {oggi !== null && voci ? (
             <>
               <Scheda voce={voci.teoria} tono="teoria" />
