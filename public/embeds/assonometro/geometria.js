@@ -133,6 +133,32 @@ export function proietta(solido, P, N, vista) {
     return false;
   };
 
+  /** Tratto qualsiasi (da A a B, nello spazio) diviso nelle parti in vista e in quelle coperte dal solido. */
+  const spezza = (A, B) => {
+    const [x1, y1] = m(A), [x2, y2] = m(B);
+    const lungo = t => V(A.x + (B.x - A.x) * t, A.y + (B.y - A.y) * t, A.z + (B.z - A.z) * t);
+    const stato = t => coperto(lungo(t), new Set());
+    const parti = { visibili: [], nascosti: [] };
+    const tratto = (da, fino, nascosto) => {
+      if (fino - da < 1e-6) return;
+      parti[nascosto ? 'nascosti' : 'visibili'].push([x1 + (x2 - x1) * da, y1 + (y2 - y1) * da, x1 + (x2 - x1) * fino, y1 + (y2 - y1) * fino]);
+    };
+    const N = 24;
+    let inizio = 0, tPrec = 0.5 / N, sPrec = stato(tPrec);
+    for (let i = 1; i < N; i++) {
+      const t = (i + 0.5) / N, s = stato(t);
+      if (s !== sPrec) {
+        let lo = tPrec, hi = t;
+        for (let j = 0; j < 20; j++) { const mid = (lo + hi) / 2; if (stato(mid) === sPrec) lo = mid; else hi = mid; }
+        tratto(inizio, (lo + hi) / 2, sPrec);
+        inizio = (lo + hi) / 2; sPrec = s;
+      }
+      tPrec = t;
+    }
+    tratto(inizio, 1, sPrec);
+    return parti;
+  };
+
   const visibili = [], nascosti = [];
   const CAMPIONI = 16;
   solido.edges.forEach(e => {
@@ -170,7 +196,7 @@ export function proietta(solido, P, N, vista) {
     .map((f, fi) => ({ fi, n: N[fi], punti: f.idx.map(i => Q[i]), d: f.idx.reduce((s, i) => s + prof[i], 0) / f.idx.length }))
     .filter(o => fronte[o.fi])
     .sort((p, q) => p.d - q.d);
-  return { visibili, nascosti, facce };
+  return { visibili, nascosti, facce, spezza };
 }
 
 /** Piano delle proiezioni a cui una faccia è parallela: 'PV' (di fronte o dietro), 'PO' (sopra o sotto), 'PL' (di fianco); altrimenti null. */

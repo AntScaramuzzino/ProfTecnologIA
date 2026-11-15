@@ -162,14 +162,18 @@ function disegnaFoglio() {
   if (T.y.gradi < 90) h += arco(0, T.y.gradi, `${T.y.gradi}°`);
   else h += arco(180, T.y.gradi, `${180 - T.y.gradi}°`);
 
-  // scatola: il parallelepipedo più piccolo che contiene il solido
+  // scatola: il parallelepipedo più piccolo che contiene il solido. Ogni spigolo si divide in parti in vista e
+  // parti coperte dal solido: quelle coperte vanno sotto le facce, quelle in vista sopra (più avanti).
+  const scatolaSopra = [];
   if (stato.mostra.scatola) {
-    const c = (i, j, k) => m({ x: i * dim.x, y: j * dim.y, z: k * dim.z });
-    let s = '';
-    [0, 1].forEach(j => [0, 1].forEach(k => { s += linea(c(0, j, k), c(1, j, k), 'scatola'); }));
-    [0, 1].forEach(i => [0, 1].forEach(k => { s += linea(c(i, 0, k), c(i, 1, k), 'scatola'); }));
-    [0, 1].forEach(i => [0, 1].forEach(j => { s += linea(c(i, j, 0), c(i, j, 1), 'scatola'); }));
-    h += s;
+    const c = (i, j, k) => ({ x: i * dim.x, y: j * dim.y, z: k * dim.z });
+    const spigoli = [];
+    [0, 1].forEach(j => [0, 1].forEach(k => spigoli.push([c(0, j, k), c(1, j, k)])));
+    [0, 1].forEach(i => [0, 1].forEach(k => spigoli.push([c(i, 0, k), c(i, 1, k)])));
+    [0, 1].forEach(i => [0, 1].forEach(j => spigoli.push([c(i, j, 0), c(i, j, 1)])));
+    const sotto = [];
+    spigoli.forEach(([a3, b3]) => { const p = r.spezza(a3, b3); sotto.push(...p.nascosti); scatolaSopra.push(...p.visibili); });
+    if (sotto.length) h += `<path class="scatola" d="${tratti(sotto)}"/>`;
   }
 
   // facce in vista, dalla più lontana alla più vicina
@@ -178,6 +182,7 @@ function disegnaFoglio() {
     const tinta = stato.mostra.facce ? FACCE[piano || 'altra'] : '#FDFDFB';
     h += `<polygon class="faccia" points="${f.punti.map(p => `${n1(p[0])},${n1(p[1])}`).join(' ')}" fill="${tinta}"/>`;
   });
+  if (scatolaSopra.length) h += `<path class="scatola" d="${tratti(scatolaSopra)}"/>`;
   // assi: sopra le facce, come linee tracciate sul foglio
   ['x', 'y', 'z'].forEach(a => {
     h += linea(O, fineAsse[a], 'asse', ` stroke="${COLORE[a]}" marker-end="url(#punta-${a})"`);

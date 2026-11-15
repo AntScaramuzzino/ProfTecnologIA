@@ -86,7 +86,7 @@ button,select,input{font:inherit;color:inherit}
 .gradi{font:600 3.3px var(--d-mono);fill:#334155}
 .asse{stroke-width:.36;fill:none}
 .nome-asse{font:800 4.6px var(--d-display)}
-.scatola{stroke:#94A3B8;stroke-width:.2}
+.scatola{fill:none;stroke:#7C8DA5;stroke-width:.24}
 .faccia{stroke:none}
 .sp-visibile{fill:none;stroke:var(--grafite);stroke-width:.62;stroke-linecap:round;stroke-linejoin:round}
 .sp-nascosto{fill:none;stroke:var(--grafite);stroke-width:.34;stroke-dasharray:1.3 .9}
