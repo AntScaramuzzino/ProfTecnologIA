@@ -101,7 +101,18 @@ export default function AssonometriePage() {
           <h2 id="titolo-tipi" className="text-xl font-black tracking-tight text-slate-950">
             Tre assonometrie, tre regole
           </h2>
-          <div className="mt-3 overflow-x-auto">
+          {/* Sul telefono una scheda per tipo; da 640 px in su la tabella */}
+          <ul className="mt-3 space-y-3 sm:hidden">
+            {TIPI.map((t) => (
+              <li key={t.nome} className="rounded-lg border border-slate-200 bg-slate-50 p-4 text-sm leading-6 text-slate-700">
+                <p className="text-base font-black text-slate-950">{t.nome}</p>
+                <p className="mt-1"><strong className="text-slate-950">Assi:</strong> {t.assi}</p>
+                <p><strong className="text-slate-950">Misure:</strong> {t.misure}</p>
+                <p className="mt-1">{t.quando}</p>
+              </li>
+            ))}
+          </ul>
+          <div className="mt-3 hidden overflow-x-auto sm:block">
             <table className="w-full min-w-[36rem] text-left text-sm leading-6 text-slate-700">
               <thead>
                 <tr className="border-b border-slate-300 font-mono text-xs uppercase tracking-widest text-slate-500">

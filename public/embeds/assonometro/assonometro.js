@@ -24,6 +24,7 @@ const parNum = k => {
   return Number.isFinite(n) ? n : null;
 };
 
+const telefono = window.matchMedia('(max-width: 720px)');
 const U = 10;                                       // unità del disegno per centimetro
 const RADICE3 = Math.sqrt(3);
 const COLORE = { x: '#C2410C', y: '#15803D', z: '#1D4ED8' };
@@ -138,7 +139,7 @@ function disegnaFoglio() {
   const angoli = [];
   [0, 1].forEach(i => [0, 1].forEach(j => [0, 1].forEach(k => angoli.push(m({ x: i * dim.x, y: j * dim.y, z: k * dim.z })))));
   const xs = [...angoli.map(p => p[0]), fineAsse.x[0], fineAsse.y[0], 0], ys = [...angoli.map(p => p[1]), fineAsse.z[1], fineAsse.y[1], fineAsse.x[1], 0];
-  const postoMisura = stato.mostra.quote && vista.v.x > 0 ? 0.9 + 0.3 * `${cmTesto(dim.y)} → ${cmTesto(dim.y * T.y.k)}`.length : 0;      // in cavaliera la misura della profondità sta a destra
+  const postoMisura = stato.mostra.quote && vista.v.x > 0 ? 0.9 + (telefono.matches ? 0.5 : 0.3) * `${cmTesto(dim.y)} → ${cmTesto(dim.y * T.y.k)}`.length : 0;      // in cavaliera la misura della profondità sta a destra
   const vb = riquadro(Math.min(...xs) - 2.4, Math.min(...ys) - 1.0, Math.max(Math.max(...xs) + 1.8, m({ x: dim.x, y: dim.y, z: 0 })[0] + postoMisura), Math.max(...ys) + 1.5, 1.12);
 
   const r = proietta(solido, P, N, vista);
@@ -225,7 +226,7 @@ function disegnaFoglio() {
     const q = m(P[vi]), scelto = stato.punto === i;
     h += `<circle class="vertice${scelto ? ' is-scelto' : ''}" data-v="${i}" cx="${n1(q[0])}" cy="${n1(q[1])}" r="${n1(scelto ? 0.2 : 0.16)}"><title>Vertice: x ${cmTesto(P[vi].x)}, y ${cmTesto(P[vi].y)}, z ${cmTesto(P[vi].z)}</title></circle>`;
     if (scelto) h += scritta([q[0] + 0.32, q[1] - 0.3], 'P', 'nome-punto');
-    h += `<circle class="vertice__area" data-v="${i}" cx="${n1(q[0])}" cy="${n1(q[1])}" r="${n1(0.45)}"/>`;
+    h += `<circle class="vertice__area" data-v="${i}" cx="${n1(q[0])}" cy="${n1(q[1])}" r="${n1(telefono.matches ? 0.7 : 0.45)}"/>`;
   });
 
   const svg = $('#svgFoglio');
@@ -411,5 +412,20 @@ if (esercizio) {
   costruisciMenu();
   costruisciMisure();
 }
+
+/* ── telefono: «Segui un punto» subito sotto il disegno, le regole chiuse (si aprono con un tocco) ── */
+let regoleChiuse = false;
+const sistemaTelefono = () => {
+  const box = $('#puntoBox');
+  if (telefono.matches) {
+    $('.pannello--foglio').append(box);
+    if (!regoleChiuse) { $('#regole').open = false; regoleChiuse = true; }
+  } else {
+    $('.pannello--viste').append(box);
+  }
+  if (scena) disegnaFoglio();
+};
+sistemaTelefono();
+telefono.addEventListener('change', sistemaTelefono);
 
 aggiorna();

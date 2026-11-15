@@ -152,6 +152,11 @@ button,select,input{font:inherit;color:inherit}
 .regole__tabella thead th{font:600 .66rem var(--d-mono);color:#475569;text-transform:uppercase}
 .regole__tabella tbody th{font-weight:600;white-space:nowrap}
 .regole__nota{margin-top:.55rem;font-size:.84rem}
+details.regole>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;min-height:28px}
+details.regole>summary::-webkit-details-marker{display:none}
+details.regole>summary::after{content:"−";font:700 1rem var(--d-mono);color:var(--china)}
+details.regole:not([open])>summary{margin-bottom:0}
+details.regole:not([open])>summary::after{content:"+"}
 
 /* ── schermi medi e piccoli ── */
 @media (max-width:1180px){
@@ -166,12 +171,24 @@ button,select,input{font:inherit;color:inherit}
   .gruppo--tipo{order:-1}
   .pannello__et{font-size:.6rem}
   .asso__lead{font-size:.96rem}
-  /* il disegno è più piccolo: scritte più grandi rispetto al foglio */
-  .quota{font-size:5.2px}
-  .gradi{font-size:4.6px}
-  .nome-asse{font-size:6.2px}
-  .nome-o{font-size:5.6px}
-  .nome-punto{font-size:6.4px}
+  /* il disegno è più piccolo: scritte e segni più grandi rispetto al foglio */
+  .quota{font-size:6.4px;stroke-width:1.3}
+  .gradi{font-size:5.4px}
+  .nome-asse{font-size:7.2px}
+  .nome-o{font-size:6.6px}
+  .nome-punto{font-size:7.4px}
+  .sp-visibile{stroke-width:.75}
+  .vertice{stroke-width:.45}
+  .pannello__nota{position:static;text-align:right;padding:0 .6rem .3rem}
+  /* comandi grandi per il dito */
+  .gruppo--tipo .scelta{display:grid;grid-template-columns:repeat(3,1fr);gap:.4rem}
+  .gruppo--tipo .chip{padding:.55rem .2rem;font-size:.72rem;min-height:46px;text-align:center}
+  .tasto--mini{min-width:46px;min-height:44px;font-size:.8rem}
+  .gruppo .scelta .tasto{flex:1 1 140px;min-height:46px;font-size:.72rem}
+  .punto{font-size:.95rem}
+  .interruttori label{min-height:44px}
+  .misura input{height:32px}
+  .menu{min-height:46px}
   .viste .quota{font-size:8px}
   .viste .nome-piano{font-size:7.6px}
   .viste .nome-o{font-size:6.4px}
@@ -182,6 +199,13 @@ button,select,input{font:inherit;color:inherit}
 .is-embed body{background:transparent}
 .is-embed .testata,.is-embed .asso__intro{display:none}
 .is-embed .asso{padding:10px}
+@media (max-width:720px){
+  /* dentro la pagina della tavola il titolo c'è già: della consegna restano le misure; la legenda dei colori sta nella pagina */
+  .is-embed .esercizio__titolo,.is-embed .asso__piede{display:none}
+  .is-embed .esercizio{padding:.5rem .7rem}
+  .is-embed .esercizio__misure{margin-top:0}
+  .is-embed .asso{padding:4px}
+}
 
 /* ── alla LIM: tutto in uno schermo, comandi grandi ── */
 .lim .testata,.lim .asso__intro,.lim .asso__piede{display:none}

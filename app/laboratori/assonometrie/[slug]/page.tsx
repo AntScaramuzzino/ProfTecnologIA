@@ -40,7 +40,7 @@ const STRUMENTO = {
   occhiello: "Assonometro",
   nome: "Assonometro",
   didascalia:
-    "A sinistra il solido come viene sul foglio, a destra le tre viste da cui prendi le misure. Tocca un vertice per vedere come si trova partendo da O: lungo x, poi in parallelo all’asse y, poi in verticale.",
+    "Nel riquadro «Foglio» il solido come viene sul tuo foglio, nel riquadro «Le tre viste» le viste da cui prendi le misure. Tocca un vertice per vedere come si trova partendo da O: lungo x, poi in parallelo all’asse y, poi in verticale.",
 };
 
 export default async function TavolaAssonometriaPage({ params }: Props) {

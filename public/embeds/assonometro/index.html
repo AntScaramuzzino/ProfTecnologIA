@@ -27,8 +27,8 @@
     <p class="eyebrow mono">ASSONOMETRIE — CAVALIERA · ISOMETRICA · MONOMETRICA</p>
     <h1 class="asso__titolo">L’assonometro</h1>
     <p class="asso__lead">
-      Scegli un solido e un tipo di assonometria. A sinistra vedi il disegno come viene sul foglio,
-      con i tre assi e le misure. A destra ci sono le tre viste da cui prendi le misure.
+      Scegli un solido e un tipo di assonometria. Nel riquadro «Foglio» vedi il disegno come viene sul tuo
+      foglio, con i tre assi e le misure. Nel riquadro «Le tre viste» ci sono le viste da cui prendi le misure.
       <b>Tocca un vertice</b> per vedere come si trova, una misura alla volta.
     </p>
   </div>
@@ -71,14 +71,14 @@
         </div>
       </div>
 
-      <div class="gruppo regole" aria-live="polite">
-        <p class="gruppo__et mono">LE REGOLE</p>
+      <details class="gruppo regole" id="regole" open>
+        <summary class="gruppo__et mono">LE REGOLE</summary>
         <table class="regole__tabella">
           <thead><tr><th scope="col">Asse</th><th scope="col">Sul foglio</th><th scope="col">Misura</th></tr></thead>
           <tbody id="regoleRighe"></tbody>
         </table>
-        <p class="regole__nota" id="regoleNota"></p>
-      </div>
+        <p class="regole__nota" id="regoleNota" aria-live="polite"></p>
+      </details>
 
       <div class="gruppo gruppo--solido" id="gruppoSolido">
         <p class="gruppo__et mono">SOLIDO</p>
