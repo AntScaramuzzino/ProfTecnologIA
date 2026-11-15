@@ -22,13 +22,13 @@ Come funziona? E puoi davvero fidarti di quell'icona del lucchetto verde nel bro
 
 ### Ogni segreto digitale è matematica.
 
-Ogni volta che invii un messaggio su WhatsApp, fai un pagamento online, accedi a un sito con password, accade qualcosa che non vedi: i tuoi dati vengono trasformati in una sequenza incomprensibile che solo chi ha la chiave giusta riesce a leggere. Questo processo si chiama **crittografia** — letteralmente, "scrittura nascosta".
+Ogni volta che invii un messaggio su WhatsApp, fai un pagamento online, accedi a un sito con password, accade qualcosa che non vedi: i tuoi dati vengono trasformati in una sequenza incomprensibile che solo chi ha la chiave giusta riesce a leggere. ==Questo processo si chiama **crittografia** — letteralmente, "scrittura nascosta".==
 
 La crittografia non è un'invenzione del digitale. Esiste da millenni. Il problema che risolve è sempre lo stesso: come comunicare un'informazione riservata in modo che solo il destinatario possa leggerla, anche se il messaggio viene intercettato?
 
 Giulio Cesare usava già nel 50 a.C. un metodo elementare: sostituiva ogni lettera del messaggio con quella che si trova 3 posizioni dopo nell'alfabeto. A diventava D, B diventava E, e così via. Se un nemico intercettava il messaggio, vedeva solo una sequenza di lettere senza senso. Se conosceva il numero 3 (la "chiave"), poteva decifrarlo.
 
-Questo schema si chiama ancora oggi **cifrario di Cesare**. È banale da rompere — bastano 25 tentativi per provare tutte le possibili traslazioni. Ma il principio che incarna — trasformare un messaggio originale in un testo cifrato usando una chiave — è ancora la base di tutta la crittografia moderna.
+Questo schema si chiama ancora oggi **cifrario di Cesare**. È banale da rompere — bastano 25 tentativi per provare tutte le possibili traslazioni. ==Ma il principio che incarna — trasformare un messaggio originale in un testo cifrato usando una chiave — è ancora la base di tutta la crittografia moderna.==
 
 ---
 
@@ -38,12 +38,12 @@ La crittografia moderna si divide in due grandi famiglie.
 
 **Crittografia simmetrica**
 
-La stessa chiave serve per cifrare e per decifrare. Chi manda il messaggio e chi lo riceve devono entrambi conoscere la chiave segreta.
+==La stessa chiave serve per cifrare e per decifrare.== Chi manda il messaggio e chi lo riceve devono entrambi conoscere la chiave segreta.
 
 Vantaggio: è velocissima computazionalmente.
 Problema: come fai a far sapere la chiave al destinatario senza che qualcuno la intercetti nel tragitto? Se mandi la chiave per email, e quella email viene intercettata, tutta la sicurezza crolla.
 
-Questo problema si chiama **problema della distribuzione delle chiavi** — ed è rimasto irrisolto per millenni. La macchina Enigma dei nazisti durante la Seconda Guerra Mondiale usava crittografia simmetrica: ogni giorno la chiave cambiava, e le istruzioni per la chiave del giorno venivano distribuite fisicamente. Quella vulnerabilità — la necessità di distribuire fisicamente le chiavi — era il punto debole che permise ad Alan Turing e al team di Bletchley Park di decifrarla.
+==Questo problema si chiama **problema della distribuzione delle chiavi** — ed è rimasto irrisolto per millenni.== La macchina Enigma dei nazisti durante la Seconda Guerra Mondiale usava crittografia simmetrica: ogni giorno la chiave cambiava, e le istruzioni per la chiave del giorno venivano distribuite fisicamente. Quella vulnerabilità — la necessità di distribuire fisicamente le chiavi — era il punto debole che permise ad Alan Turing e al team di Bletchley Park di decifrarla.
 
 **Crittografia asimmetrica (a chiave pubblica)**
 
@@ -81,11 +81,11 @@ Quando nel browser vedi `https://` invece di `http://`, sta succedendo questo:
 
 2. Il browser verifica la firma del certificato usando la chiave pubblica della CA (pre-installata nel sistema operativo).
 
-3. Browser e server si scambiano chiavi temporanee usando crittografia asimmetrica, per concordare una **chiave simmetrica di sessione** — che sarà poi usata per tutto il traffico (perché è più veloce).
+3. ==Browser e server si scambiano chiavi temporanee usando crittografia asimmetrica, per concordare una **chiave simmetrica di sessione** — che sarà poi usata per tutto il traffico (perché è più veloce).==
 
 4. Tutto il traffico della sessione è cifrato con quella chiave simmetrica.
 
-Questo protocollo si chiama **TLS** (*Transport Layer Security*). Il vecchio nome era SSL.
+==Questo protocollo si chiama **TLS** (*Transport Layer Security*).== Il vecchio nome era SSL.
 
 > ⚠️ **Attenzione:** il lucchetto verde garantisce che la comunicazione è cifrata e che il sito è chi dice di essere. Non garantisce che il sito sia onesto o legale. Un sito di phishing può avere il lucchetto verde — basta che abbia un certificato valido, che si ottiene facilmente e gratuitamente. Il lucchetto protegge dal *come* i dati viaggiano, non da *chi* li riceve.
 
@@ -101,7 +101,7 @@ Come dimostra il sistema che sei chi dici di essere online? Attraverso l'**auten
 
 **Biometria**: impronta digitale, riconoscimento facciale, scansione dell'iride. Il tuo corpo è la chiave. Vantaggio: non puoi dimenticarla. Svantaggio: non puoi cambiarla se viene compromessa — non puoi cambiare le tue impronte digitali come cambi una password.
 
-**Certificati digitali e firma digitale**: la firma digitale permette di dimostrare che un documento è stato creato da una persona specifica e non è stato modificato dopo. Usa la crittografia asimmetrica: il mittente cifra un'impronta del documento (hash) con la propria chiave privata. Chi riceve verifica con la chiave pubblica del mittente. Se l'impronta coincide, il documento è autentico e integro.
+==**Certificati digitali e firma digitale**: la firma digitale permette di dimostrare che un documento è stato creato da una persona specifica e non è stato modificato dopo.== Usa la crittografia asimmetrica: il mittente cifra un'impronta del documento (hash) con la propria chiave privata. Chi riceve verifica con la chiave pubblica del mittente. Se l'impronta coincide, il documento è autentico e integro.
 
 ---
 

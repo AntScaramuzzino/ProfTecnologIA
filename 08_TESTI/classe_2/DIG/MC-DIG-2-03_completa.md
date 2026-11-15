@@ -53,7 +53,7 @@ Documenti/
 └── Archivio/
 ```
 
-Il principio è semplice: ogni file deve avere *un posto solo* in cui puoi trovarlo, e quel posto deve essere prevedibile. Se metti le cose sempre nello stesso posto, dopo un po' non devi nemmeno pensarci: la mano va lì automaticamente.
+==Il principio è semplice: ogni file deve avere *un posto solo* in cui puoi trovarlo, e quel posto deve essere prevedibile.== Se metti le cose sempre nello stesso posto, dopo un po' non devi nemmeno pensarci: la mano va lì automaticamente.
 
 Tre regole che cambiano tutto:
 
@@ -67,7 +67,7 @@ Tre regole che cambiano tutto:
 
 ### 2. Nominare i file: la convenzione che ti salva la vita
 
-Il nome di un file è la prima informazione che hai su quel file. Se il nome è "documento1", non hai nessuna informazione. Se il nome è "2026-03-15_tecnologia_relazione-energia_v02", sai esattamente quando è stato creato, a quale materia appartiene, di cosa tratta, e che è la seconda versione.
+==Il nome di un file è la prima informazione che hai su quel file.== Se il nome è "documento1", non hai nessuna informazione. ==Se il nome è "2026-03-15_tecnologia_relazione-energia_v02", sai esattamente quando è stato creato, a quale materia appartiene, di cosa tratta, e che è la seconda versione.==
 
 La convenzione di naming professionale segue questo formato:
 
@@ -98,9 +98,9 @@ Tre cose da non fare mai nel nome di un file:
 
 ### 3. Backup: la regola 3-2-1
 
-Ogni anno, migliaia di studenti perdono settimane di lavoro perché il computer si è rotto, è caduto nell'acqua, è stato rubato, o ha avuto un problema tecnico. Non è una questione di "se succederà" — è una questione di "quando succederà". I dischi rigidi si rompono. I computer vengono rubati. I file vengono cancellati per errore.
+Ogni anno, migliaia di studenti perdono settimane di lavoro perché il computer si è rotto, è caduto nell'acqua, è stato rubato, o ha avuto un problema tecnico. ==Non è una questione di "se succederà" — è una questione di "quando succederà".== I dischi rigidi si rompono. I computer vengono rubati. I file vengono cancellati per errore.
 
-La **regola 3-2-1** è lo standard professionale per non perdere mai nulla di importante:
+==La **regola 3-2-1** è lo standard professionale per non perdere mai nulla di importante:==
 
 - **3 copie** del file (l'originale + 2 backup)
 - **2 supporti diversi** (es. il disco interno del computer + un disco esterno)
@@ -128,13 +128,13 @@ La configurazione richiede venti minuti la prima volta. Poi funziona da sola.
 
 Ogni programma che installi sul computer occupa spazio sul disco, consuma risorse (anche quando non è aperto, spesso parte in background), e può rallentare il sistema.
 
-**Installare un programma:** scarica sempre i programmi dal sito ufficiale del produttore o dall'app store del sistema operativo (Microsoft Store su Windows, App Store su macOS). Non scaricare mai programmi da siti di "download gratuiti" che offrono versioni "craccate" di software a pagamento: il 90% dei casi il programma contiene malware che si installa silenziosamente insieme al software che volevi.
+==**Installare un programma:** scarica sempre i programmi dal sito ufficiale del produttore o dall'app store del sistema operativo (Microsoft Store su Windows, App Store su macOS).== Non scaricare mai programmi da siti di "download gratuiti" che offrono versioni "craccate" di software a pagamento: il 90% dei casi il programma contiene malware che si installa silenziosamente insieme al software che volevi.
 
 Prima di installare qualcosa, chiediti: lo uso davvero? Un programma installato e non usato è solo un peso. La regola pratica: se non l'hai usato nei tre mesi successivi all'installazione, probabilmente non ti serve — disinstallalo.
 
-**Aggiornare i programmi:** gli aggiornamenti non servono solo ad aggiungere funzionalità nuove. La maggior parte degli aggiornamenti corregge *vulnerabilità di sicurezza* — falle che i criminali informatici possono usare per entrare nel tuo computer. Rimandare gli aggiornamenti per settimane è come lasciare una finestra rotta nel tuo appartamento: prima o poi qualcuno ci entra.
+==**Aggiornare i programmi:** gli aggiornamenti non servono solo ad aggiungere funzionalità nuove.== La maggior parte degli aggiornamenti corregge *vulnerabilità di sicurezza* — falle che i criminali informatici possono usare per entrare nel tuo computer. Rimandare gli aggiornamenti per settimane è come lasciare una finestra rotta nel tuo appartamento: prima o poi qualcuno ci entra.
 
-Attiva gli aggiornamenti automatici dove possibile. Il sistema operativo, il browser e l'antivirus sono i più critici da tenere aggiornati.
+Attiva gli aggiornamenti automatici dove possibile. ==Il sistema operativo, il browser e l'antivirus sono i più critici da tenere aggiornati.==
 
 **Disinstallare programmi:** non basta trascinare l'icona nel cestino. Su Windows, usa "Aggiungi o rimuovi programmi" nelle impostazioni (o il pannello di controllo). Su macOS, usa il tasto destro sull'app nella cartella Applicazioni e scegli "Sposta nel cestino" — oppure usa un'app apposita come AppCleaner che rimuove anche i file di configurazione residui.
 
@@ -152,7 +152,7 @@ Attiva gli aggiornamenti automatici dove possibile. Il sistema operativo, il bro
 
 Il cloud storage — Google Drive, iCloud, OneDrive, Dropbox — è uno degli strumenti più utili per uno studente moderno. I tuoi file sono accessibili da qualsiasi dispositivo, si aggiornano automaticamente, e funzionano da backup. Ma vale la pena capire come funziona davvero — non solo come usarlo.
 
-**Come funziona:** quando carichi un file su Google Drive, quel file non è nel tuo computer. È nei server di Google, in data center distribuiti in tutto il mondo. Quando apri Drive da un altro dispositivo, stai scaricando una copia di quel file da quei server. La "sincronizzazione" significa che ogni modifica che fai sul computer viene inviata ai server e poi propagata agli altri dispositivi collegati.
+**Come funziona:** quando carichi un file su Google Drive, quel file non è nel tuo computer. È nei server di Google, in data center distribuiti in tutto il mondo. Quando apri Drive da un altro dispositivo, stai scaricando una copia di quel file da quei server. ==La "sincronizzazione" significa che ogni modifica che fai sul computer viene inviata ai server e poi propagata agli altri dispositivi collegati.==
 
 **Differenze pratiche tra i servizi principali:**
 
@@ -167,21 +167,21 @@ Il cloud storage — Google Drive, iCloud, OneDrive, Dropbox — è uno degli st
 
 Se elimini il tuo account Google, tutti i file su Drive vengono cancellati entro un tempo variabile (di solito qualche settimana). Se Google chiude un servizio o cambia i termini (è già successo con Google Photos, Google+, molti altri), le tue opzioni dipendono da quanto tempo hai per scaricare i dati.
 
-La lezione pratica è questa: il cloud è ottimo per la comodità e per i backup, ma non deve essere l'*unica* copia dei tuoi file importanti. La regola 3-2-1 vale anche per i file su cloud: mantieni sempre almeno una copia locale sul tuo computer o su un disco esterno.
+La lezione pratica è questa: il cloud è ottimo per la comodità e per i backup, ma non deve essere l'*unica* copia dei tuoi file importanti. ==La regola 3-2-1 vale anche per i file su cloud: mantieni sempre almeno una copia locale sul tuo computer o su un disco esterno.==
 
-**Condivisione consapevole:** quando condividi un file su Drive con "chiunque abbia il link", quel file diventa accessibile a chiunque ottenga quel link — anche chi non conosci. Per i compiti scolastici, preferisci sempre la condivisione con persone specifiche (tramite email) piuttosto che il link pubblico.
+==**Condivisione consapevole:** quando condividi un file su Drive con "chiunque abbia il link", quel file diventa accessibile a chiunque ottenga quel link — anche chi non conosci.== Per i compiti scolastici, preferisci sempre la condivisione con persone specifiche (tramite email) piuttosto che il link pubblico.
 
 ---
 
 ### 6. Privacy del browser: cosa traccia e cosa no
 
-Il browser — Chrome, Firefox, Safari, Edge — è probabilmente il programma che usi di più. Capire cosa registra e come funzionano le impostazioni di privacy ti permette di fare scelte consapevoli.
+Il browser — Chrome, Firefox, Safari, Edge — è probabilmente il programma che usi di più. ==Capire cosa registra e come funzionano le impostazioni di privacy ti permette di fare scelte consapevoli.==
 
 **I cookie** sono piccoli file di testo che i siti web salvano nel tuo browser per ricordare informazioni su di te: che sei già loggato, cosa hai messo nel carrello, quali preferenze hai impostato. Sono utili — senza cookie dovresti fare login ogni volta che riapri un sito. Ma esistono anche i **cookie di terze parti** (third-party cookies): file salvati da aziende diverse dal sito che stai visitando, che ti seguono su siti diversi per costruire un profilo dei tuoi interessi e mostrarti pubblicità mirata. Il sito di notizie che stai leggendo può contenere cookie di venti aziende pubblicitarie diverse che tracciano ogni pagina che visiti.
 
 Chrome e Safari stanno progressivamente eliminando i cookie di terze parti. Firefox li blocca già di default. Puoi verificare e gestire i cookie nelle impostazioni del browser (cerca "Cookie e altri dati dei siti" in Chrome, "Privacy e sicurezza" in Firefox).
 
-**La cronologia** è l'elenco di tutti i siti che hai visitato. È salvata localmente sul tuo computer. Non è accessibile a Google o ad altri (a meno che tu non sia loggato in Chrome con il tuo account Google, in quel caso la cronologia viene sincronizzata). Chi usa lo stesso computer può vedere la tua cronologia. Se vuoi che una navigazione non sia registrata, usa la **modalità privata** (o modalità in incognito).
+**La cronologia** è l'elenco di tutti i siti che hai visitato. È salvata localmente sul tuo computer. Non è accessibile a Google o ad altri (a meno che tu non sia loggato in Chrome con il tuo account Google, in quel caso la cronologia viene sincronizzata). Chi usa lo stesso computer può vedere la tua cronologia. ==Se vuoi che una navigazione non sia registrata, usa la **modalità privata** (o modalità in incognito).==
 
 **Cosa fa la modalità privata — e cosa non fa:**
 
@@ -232,7 +232,7 @@ Backup: Time Machine su disco esterno (automatico ogni ora) + iCloud Drive (auto
 
 Trovare un file: 15 secondi al massimo.
 
-La differenza non è che Marco è più bravo con i computer. È che ha imparato un sistema — e lo usa sempre. Giulia non ha mai imparato il sistema. Il risultato è la "relazione DEFINITIVA vera2 usare questa".
+==La differenza non è che Marco è più bravo con i computer.== È che ha imparato un sistema — e lo usa sempre. Giulia non ha mai imparato il sistema. Il risultato è la "relazione DEFINITIVA vera2 usare questa".
 
 Cosa cambia davvero tra i due approcci? Tre cose:
 1. **Il tempo perso** — Giulia perde in media 15-20 minuti a sessione cercando file. In un anno scolastico sono ore.

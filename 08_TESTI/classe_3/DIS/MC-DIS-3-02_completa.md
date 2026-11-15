@@ -29,7 +29,7 @@ Questa MC ti insegna come funziona quello che Sara usa ogni giorno.
 
 Prima del 1960, ogni disegno tecnico veniva prodotto a mano su carta traslucida o carta da lucido. Un progettista trascorreva ore ad allineare righelli, a correggere con la gomma e a ricopiare intere tavole quando cambiava un'unica misura. Gli studi di progettazione tenevano archivi fisici enormi — scaffalate di tubi di cartone con rotoli di disegni tecnici che andavano recuperati fisicamente ogni volta che servivano.
 
-Il **CAD (Computer-Aided Design)** nasce negli anni Cinquanta nei laboratori del MIT. Il progetto Whirlwind (1951) fu il primo computer a mostrare grafica in tempo reale su un monitor — un oscilloscopio militare adattato. Il vero salto commerciale arrivò nel 1982, quando John Walker e 12 co-fondatori lanciarono **AutoCAD** per il personal computer. Per la prima volta, uno studio di progettazione poteva comprare un programma CAD con meno di 1.000 dollari invece di affittare un mainframe aziendale da centinaia di migliaia.
+==Il **CAD (Computer-Aided Design)** nasce negli anni Cinquanta nei laboratori del MIT.== Il progetto Whirlwind (1951) fu il primo computer a mostrare grafica in tempo reale su un monitor — un oscilloscopio militare adattato. Il vero salto commerciale arrivò nel 1982, quando John Walker e 12 co-fondatori lanciarono **AutoCAD** per il personal computer. Per la prima volta, uno studio di progettazione poteva comprare un programma CAD con meno di 1.000 dollari invece di affittare un mainframe aziendale da centinaia di migliaia.
 
 Da allora l'evoluzione è stata continua:
 
@@ -37,7 +37,7 @@ Da allora l'evoluzione è stata continua:
 
 **Anni 1990 — CAD 3D solido:** SolidWorks (1993) e Pro/ENGINEER portarono il modello solido 3D: invece di disegnare linee, il progettista creava solidi matematici — sfere, cilindri, prismi — che potevano essere combinati, sottratti, intersecati. Un modello 3D generava automaticamente le proiezioni ortogonali e le sezioni.
 
-**Anni 2000 — Parametric design:** CATIA, SolidWorks e poi Fusion 360 (2013) introdussero la vera rivoluzione: il **design parametrico**. In un modello parametrico, ogni misura è un parametro con un nome e un valore. Le relazioni tra i parametri vengono definite esplicitamente: "il raggio del foro = diametro del pin + 0,2 mm di tolleranza." Cambiare il parametro "diametro pin" aggiorna automaticamente tutti gli elementi che dipendono da esso.
+**Anni 2000 — Parametric design:** CATIA, SolidWorks e poi Fusion 360 (2013) introdussero la vera rivoluzione: il **design parametrico**. ==In un modello parametrico, ogni misura è un parametro con un nome e un valore.== Le relazioni tra i parametri vengono definite esplicitamente: "il raggio del foro = diametro del pin + 0,2 mm di tolleranza." Cambiare il parametro "diametro pin" aggiorna automaticamente tutti gli elementi che dipendono da esso.
 
 **Anni 2010-oggi — CAD cloud:** Fusion 360, Onshape, Tinkercad operano interamente nel browser o nel cloud. Il file non è sul tuo computer — è su un server accessibile da qualsiasi dispositivo. Il team di progettazione può lavorare in contemporanea sullo stesso modello da città diverse.
 
@@ -45,7 +45,7 @@ Da allora l'evoluzione è stata continua:
 
 ### CAD 2D vs CAD 3D: quando usare quale
 
-La distinzione tra 2D e 3D non è solo tecnica — è una questione di scopo.
+==La distinzione tra 2D e 3D non è solo tecnica — è una questione di scopo.==
 
 **CAD 2D** è utile per:
 - Planimetrie architettoniche (piante di edifici, schemi di impianti)
@@ -72,7 +72,7 @@ Quando apri Tinkercad, il tuo spazio di lavoro ha tre elementi principali:
 - La **barra degli strumenti** in alto — per spostare, ruotare, raggruppare, quotare.
 
 La logica di Tinkercad si basa sulla **geometria solida costruttiva (CSG, Constructive Solid Geometry)**: gli oggetti vengono costruiti combinando solidi semplici attraverso tre operazioni:
-- **Unione:** due solidi che si sovrappongono diventano un unico solido (il risultato è la somma dei due volumi).
+- ==**Unione:** due solidi che si sovrappongono diventano un unico solido (il risultato è la somma dei due volumi).==
 - **Sottrazione:** un solido "foro" (hole) viene sottratto da un solido pieno, scavandoci dentro. È come perforare un parallelepipedo con un cilindro per ottenere un foro.
 - **Raggruppamento:** due o più solidi vengono uniti in un componente unico che si sposta e si dimensiona insieme.
 
@@ -102,7 +102,7 @@ Supponiamo di costruire un semplice porta-matite cilindrico con un foro centrale
 
 ### Dal modello 3D alla stampa 3D: il percorso del file
 
-Avere un file STL è solo il primo passo. Prima che la stampante 3D inizi a lavorare, il file deve passare attraverso un software chiamato **slicer** (letteralmente "affettatore").
+Avere un file STL è solo il primo passo. ==Prima che la stampante 3D inizi a lavorare, il file deve passare attraverso un software chiamato **slicer** (letteralmente "affettatore").==
 
 **Cosa fa lo slicer:** legge il modello 3D solido e lo "affetta" orizzontalmente in centinaia o migliaia di strati sottili (layer). Per ogni strato genera le istruzioni di movimento della testina di stampa (il file G-code). Il slicer più usato a livello educativo è **Ultimaker Cura** — è gratuito e open source.
 
@@ -112,7 +112,7 @@ Avere un file STL è solo il primo passo. Prima che la stampante 3D inizi a lavo
 
 **Infill (riempimento interno):** la percentuale del volume interno dell'oggetto che viene riempita di materiale. Un infill del 100% è solido ma pesante e usa molto materiale. Un infill del 20% è molto più leggero e usa meno materiale mantenendo una buona resistenza strutturale — l'interno ha una struttura a nido d'ape o a griglia. Per un porta-matite che non deve reggere carichi pesanti, 15-20% di infill è sufficiente.
 
-**Supports (supporti):** le parti del modello che "sporgono" in orizzontale senza niente sotto (overhang) non possono essere stampate senza supporti — il filamento plastico non può essere depositato in aria. Lo slicer genera automaticamente strutture di supporto temporanee che vengono rimosse dopo la stampa. Progettare l'oggetto in modo da minimizzare gli overhang è una competenza del buon progettista CAD.
+**Supports (supporti):** le parti del modello che "sporgono" in orizzontale senza niente sotto (overhang) non possono essere stampate senza supporti — il filamento plastico non può essere depositato in aria. Lo slicer genera automaticamente strutture di supporto temporanee che vengono rimosse dopo la stampa. ==Progettare l'oggetto in modo da minimizzare gli overhang è una competenza del buon progettista CAD.==
 
 **Material (materiale):** il filamento più usato nell'educazione è il **PLA (acido polilattico)** — è economico, si stampa a basse temperature (190-220°C), non richiede un piano riscaldato, e soprattutto è biodegradabile in condizioni di compostaggio industriale. Rispetto ad altri filamenti come ABS o PETG, il PLA è meno resistente al calore (si deforma sopra i 60°C) ma è molto più facile da gestire.
 
@@ -120,7 +120,7 @@ Avere un file STL è solo il primo passo. Prima che la stampante 3D inizi a lavo
 
 ### Prototipazione rapida: la rivoluzione silenziosa della manifattura
 
-Il concetto di **prototipazione rapida** (rapid prototyping) nasce negli anni 1980 con l'invenzione della stereolitografia (SLA) da parte di Chuck Hull nel 1984 — la prima stampante 3D commerciale. L'idea era semplice e rivoluzionaria: invece di produrre un prototipo con metodi tradizionali (tornitura, fresatura, fusione), che richiedevano settimane e costi elevati, si costruisce direttamente dal file digitale in poche ore.
+==Il concetto di **prototipazione rapida** (rapid prototyping) nasce negli anni 1980 con l'invenzione della stereolitografia (SLA) da parte di Chuck Hull nel 1984 — la prima stampante 3D commerciale.== L'idea era semplice e rivoluzionaria: invece di produrre un prototipo con metodi tradizionali (tornitura, fresatura, fusione), che richiedevano settimane e costi elevati, si costruisce direttamente dal file digitale in poche ore.
 
 Le implicazioni sono enormi:
 
@@ -136,7 +136,7 @@ La stampa 3D oggi non è solo uno strumento di prototipazione: in settori come l
 
 ### Cenno al design parametrico: cambiare un parametro cambia tutto
 
-Nel **design parametrico**, il modello non è un insieme di misure fisse — è un insieme di relazioni. Ogni dimensione è un parametro con un nome, e tra i parametri si definiscono equazioni.
+==Nel **design parametrico**, il modello non è un insieme di misure fisse — è un insieme di relazioni.== ==Ogni dimensione è un parametro con un nome, e tra i parametri si definiscono equazioni.==
 
 Esempio: una mensola. I parametri principali potrebbero essere:
 - `lunghezza_piano = 300 mm`
@@ -149,7 +149,7 @@ Se il cliente chiede una versione più corta, il progettista cambia `lunghezza_p
 
 Il design parametrico è la norma nell'industria perché accelera enormemente le varianti di prodotto: un'azienda che produce mobili può offrire 20 misure diverse dello stesso divano senza ridisegnare nulla — cambia solo i parametri di lunghezza e altezza.
 
-In Tinkercad questa funzionalità è limitata, ma il principio si impara qui. In Fusion 360 o FreeCAD, il design parametrico è al centro del workflow.
+==In Tinkercad questa funzionalità è limitata, ma il principio si impara qui.== In Fusion 360 o FreeCAD, il design parametrico è al centro del workflow.
 
 ---
 
@@ -167,7 +167,7 @@ In Tinkercad questa funzionalità è limitata, ma il principio si impara qui. In
 
 ### Caso studio: progetta e modella un supporto porta-telefono per il banco — dall'idea al file STL stampabile
 
-Questo è un esercizio reale, non una simulazione. L'obiettivo è costruire un oggetto funzionante — un supporto che tenga il tuo telefono inclinato sul banco per seguire video o fare videochiamate — partendo da zero con Tinkercad.
+==Questo è un esercizio reale, non una simulazione.== L'obiettivo è costruire un oggetto funzionante — un supporto che tenga il tuo telefono inclinato sul banco per seguire video o fare videochiamate — partendo da zero con Tinkercad.
 
 **Il brief:** supporto per smartphone universale (adatto a telefoni da 6 a 17 cm di altezza), inclinazione fissa a 70° rispetto al piano orizzontale, stabile senza scivolare (base larga), ingombro ridotto.
 

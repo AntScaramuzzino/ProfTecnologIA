@@ -25,27 +25,27 @@ Ne contengono tra trenta e quaranta. Scopri perché — e cosa succede quando le
 
 Guarda la sedia su cui sei seduto adesso. È di legno, di plastica, di metallo? Poi guarda il pavimento, la finestra, il tuo zaino. Ogni oggetto attorno a te è fatto di qualcosa — di una materia specifica, scelta da qualcuno per una ragione precisa.
 
-Quella materia si chiama **materiale**. E studiare i materiali non significa imparare a memoria le loro definizioni: significa capire *perché* le cose sono fatte in quel modo e non in un altro. Perché le finestre sono di vetro e non di legno. Perché i fili elettrici sono ricoperti di plastica. Perché le scarpe da ginnastica non sono di ceramica.
+Quella materia si chiama **materiale**. ==E studiare i materiali non significa imparare a memoria le loro definizioni: significa capire *perché* le cose sono fatte in quel modo e non in un altro.== Perché le finestre sono di vetro e non di legno. Perché i fili elettrici sono ricoperti di plastica. Perché le scarpe da ginnastica non sono di ceramica.
 
-La risposta è sempre la stessa: ogni materiale ha **proprietà** particolari — caratteristiche fisiche, meccaniche e ambientali — che lo rendono adatto a certe funzioni e sbagliato per altre. Classificare un materiale significa descriverlo attraverso queste proprietà. È una competenza che userai ogni volta che dovrai scegliere, progettare o valutare un oggetto.
+==La risposta è sempre la stessa: ogni materiale ha **proprietà** particolari — caratteristiche fisiche, meccaniche e ambientali — che lo rendono adatto a certe funzioni e sbagliato per altre.== ==Classificare un materiale significa descriverlo attraverso queste proprietà.== È una competenza che userai ogni volta che dovrai scegliere, progettare o valutare un oggetto.
 
 ---
 
 ### Da dove vengono i materiali? Le materie prime.
 
-Prima di esistere come oggetto, ogni materiale è stato qualcos'altro. Viene da un posto preciso nel mondo, estratto o coltivato con un processo che consuma energia e risorse. Questi punti di partenza si chiamano **materie prime**.
+Prima di esistere come oggetto, ogni materiale è stato qualcos'altro. Viene da un posto preciso nel mondo, estratto o coltivato con un processo che consuma energia e risorse. ==Questi punti di partenza si chiamano **materie prime**.==
 
 Il legno viene dai boschi e dalle foreste. Il ferro viene estratto da rocce ricche di ossido di ferro (la roccia si chiama **minerale**, e le zone dove si estrae si chiamano **miniere**). L'alluminio viene dalla bauxite, un minerale diffuso in Africa occidentale, Australia e Giamaica. Il petrolio — da cui si ricavano quasi tutte le plastiche — viene da giacimenti sotterranei in Medio Oriente, Russia, America del Nord.
 
 Questo significa che un oggetto di plastica che compri in Italia è probabilmente fatto con petrolio estratto in Arabia Saudita, trasformato in granuli di plastica in Germania, stampato in uno stabilimento in Polonia o in Cina, e poi spedito qui. Prima di arrivare da te, ha già percorso migliaia di chilometri.
 
-Sapere da dove viene la materia prima di un oggetto non è curiosità: è il primo passo per capire quanto quell'oggetto ha "costato" al pianeta, anche prima che tu lo pagassi.
+==Sapere da dove viene la materia prima di un oggetto non è curiosità: è il primo passo per capire quanto quell'oggetto ha "costato" al pianeta, anche prima che tu lo pagassi.==
 
 ---
 
 ### Le sei famiglie di materiali
 
-I materiali che incontriamo ogni giorno si raggruppano in sei grandi famiglie. Ogni famiglia ha caratteristiche comuni che la distinguono dalle altre.
+==I materiali che incontriamo ogni giorno si raggruppano in sei grandi famiglie.== Ogni famiglia ha caratteristiche comuni che la distinguono dalle altre.
 
 ---
 
@@ -55,9 +55,9 @@ Il legno è uno dei materiali più antichi usati dall'essere umano. Viene dal tr
 
 Esistono due grandi categorie: il **legno duro** (quercia, faggio, noce, ciliegio — da alberi a foglie caduche, crescita lenta) e il **legno dolce** (pino, abete, larice — da conifere, crescita più rapida). I legni duri sono più resistenti e costosi, quelli dolci più facili da lavorare e più economici.
 
-Le proprietà che rendono il legno utile sono molte. È **leggero** rispetto alla sua resistenza: il legno di quercia è più resistente dell'alluminio a parità di peso. È un ottimo **isolante termico** — una parete di legno isola il calore meglio del cemento della stessa spessore. È **lavorabile** facilmente con strumenti semplici: si sega, si pialla, si incolla, si vernicia. È **rinnovabile**: se le foreste vengono gestite bene, il legno non finisce mai.
+Le proprietà che rendono il legno utile sono molte. ==È **leggero** rispetto alla sua resistenza: il legno di quercia è più resistente dell'alluminio a parità di peso.== È un ottimo **isolante termico** — una parete di legno isola il calore meglio del cemento della stessa spessore. È **lavorabile** facilmente con strumenti semplici: si sega, si pialla, si incolla, si vernicia. ==È **rinnovabile**: se le foreste vengono gestite bene, il legno non finisce mai.==
 
-I suoi limiti: **assorbe l'umidità** e si gonfia, si deforma, può marcire. **Brucia**. Viene attaccato da insetti (tarli, termiti). Per questo il legno usato all'esterno o in zone umide viene trattato con vernici, oli o impregnanti.
+==I suoi limiti: **assorbe l'umidità** e si gonfia, si deforma, può marcire.== **Brucia**. Viene attaccato da insetti (tarli, termiti). Per questo il legno usato all'esterno o in zone umide viene trattato con vernici, oli o impregnanti.
 
 Oltre al legno massiccio esistono i **pannelli derivati**: il compensato (strati di legno incollati in direzioni alternate, molto resistente), il truciolato (MDF, pannelli di segatura compressa e incollata — molto usato per i mobili economici, meno resistente all'umidità) e il lamellare (travi costruite con strati di legno incollati, usate per i tetti di grandi edifici).
 
@@ -69,11 +69,11 @@ Oltre al legno massiccio esistono i **pannelli derivati**: il compensato (strati
 
 I metalli sono i materiali dell'industria moderna. Si trovano quasi ovunque: nelle strutture degli edifici, nelle automobili, negli aerei, nei telefoni, nei cavi elettrici, nelle monete.
 
-Le materie prime dei metalli sono i **minerali metallici**: rocce che contengono percentuali di metallo abbastanza alte da rendere conveniente estrarle. Il ferro si ricava dalla magnetite e dall'ematite. L'alluminio dalla bauxite. Il rame dalla calcopirite. L'estrazione è un processo enorme: una miniera di rame lavora tonnellate di roccia per ottenere pochi chili di metallo puro.
+==Le materie prime dei metalli sono i **minerali metallici**: rocce che contengono percentuali di metallo abbastanza alte da rendere conveniente estrarle.== Il ferro si ricava dalla magnetite e dall'ematite. L'alluminio dalla bauxite. Il rame dalla calcopirite. L'estrazione è un processo enorme: una miniera di rame lavora tonnellate di roccia per ottenere pochi chili di metallo puro.
 
 I metalli più usati sono:
 
-**Ferro e acciaio.** Il ferro puro è relativamente morbido e arrugginisce facilmente. L'**acciaio** è una lega (cioè una miscela) di ferro e carbonio in piccole quantità (0,2–2%): è molto più duro, resistente e lavorabile. L'**acciaio inossidabile** contiene anche cromo (almeno il 10,5%) e non arrugginisce: lo usi ogni giorno nella posateria, negli elettrodomestici, nei rubinetti.
+**Ferro e acciaio.** Il ferro puro è relativamente morbido e arrugginisce facilmente. ==L'**acciaio** è una lega (cioè una miscela) di ferro e carbonio in piccole quantità (0,2–2%): è molto più duro, resistente e lavorabile.== L'**acciaio inossidabile** contiene anche cromo (almeno il 10,5%) e non arrugginisce: lo usi ogni giorno nella posateria, negli elettrodomestici, nei rubinetti.
 
 **Alluminio.** È il metallo più abbondante nella crosta terrestre, ma estrarlo richiede enormi quantità di energia elettrica. Ha una proprietà straordinaria: è **leggerissimo** (densità 2,7 g/cm³, un terzo dell'acciaio) ma abbastanza resistente per costruire aerei, biciclette, lattine. Si **ricicla quasi all'infinito**: riciclare una lattina di alluminio consuma il 95% meno energia rispetto a produrla dalla bauxite — equivalente all'energia necessaria per tenere acceso un televisore da 14 pollici per 3 ore. Per questo vale la pena raccoglierla. *(Fonte: Mondadori Education, ISBN 9788829861521, p.74)*
 
@@ -87,7 +87,7 @@ Le proprietà comuni ai metalli: **resistenza meccanica** alta, **conduttività 
 
 La plastica è il materiale del XX secolo. Non esisteva prima del 1907, quando il chimico belga Leo Baekeland sintetizzò la prima plastica artificiale, la **bakelite**, usata per telefoni e interruttori elettrici. Oggi le plastiche sono ovunque: imballaggi, giocattoli, parti di automobili, componenti elettronici, fibre tessili.
 
-Quasi tutte le plastiche derivano dal **petrolio**. Il petrolio viene raffinato per separare le sue componenti, e alcune di queste vengono trasformate chimicamente in lunghe catene di molecole chiamate **polimeri**. Diversi tipi di polimeri danno plastiche con proprietà molto diverse.
+==Quasi tutte le plastiche derivano dal **petrolio**.== Il petrolio viene raffinato per separare le sue componenti, e alcune di queste vengono trasformate chimicamente in lunghe catene di molecole chiamate **polimeri**. Diversi tipi di polimeri danno plastiche con proprietà molto diverse.
 
 I principali tipi di plastica che incontri ogni giorno:
 
@@ -109,15 +109,15 @@ Le proprietà comuni alle plastiche: **leggere**, **impermeabili**, **facili da 
 
 #### Le ceramiche e il vetro
 
-Le ceramiche sono i materiali più antichi lavorati dall'essere umano: le prime ceramiche risalgono a 25.000 anni fa. Si ottengono cuocendo l'**argilla** (un minerale abbondantissimo) a temperature molto alte (800–1300°C). Il calore trasforma l'argilla da materiale plastico e modellabile a materiale duro e permanente.
+Le ceramiche sono i materiali più antichi lavorati dall'essere umano: le prime ceramiche risalgono a 25.000 anni fa. ==Si ottengono cuocendo l'**argilla** (un minerale abbondantissimo) a temperature molto alte (800–1300°C).== Il calore trasforma l'argilla da materiale plastico e modellabile a materiale duro e permanente.
 
 Le ceramiche tradizionali comprendono: laterizi e mattoni (costruzione), piastrelle e pavimentazioni, stoviglie e ceramiche sanitarie (lavandini, WC), terracotta.
 
 Le **ceramiche tecniche avanzate** — sviluppate nel XX secolo — hanno proprietà straordinarie: la zirconia (ossido di zirconio) è usata nelle corone dentali perché è durissima e biocompatibile. La ceramica di allumina è usata nei motori dei razzi perché resiste a temperature di oltre 1.600°C. Le ceramiche piezoelettriche si deformano sotto pressione generando corrente elettrica (le usano nei microfoni e negli accendini).
 
-Il **vetro** è una ceramica particolare: si ottiene fondendo sabbia di quarzo (SiO₂) con carbonato di sodio e calce a circa 1500°C. La miscela fusa viene poi raffreddata molto rapidamente, e questo impedisce la formazione di cristalli: il vetro è un **solido amorfo** (cioè senza struttura cristallina ordinata). Questo spiega perché è **trasparente**: la luce lo attraversa senza essere dispersa dai bordi dei cristalli.
+==Il **vetro** è una ceramica particolare: si ottiene fondendo sabbia di quarzo (SiO₂) con carbonato di sodio e calce a circa 1500°C.== La miscela fusa viene poi raffreddata molto rapidamente, e questo impedisce la formazione di cristalli: il vetro è un **solido amorfo** (cioè senza struttura cristallina ordinata). Questo spiega perché è **trasparente**: la luce lo attraversa senza essere dispersa dai bordi dei cristalli.
 
-Proprietà comuni a ceramiche e vetro: **durissimi** (il corindone, base delle ceramiche ad alta prestazione, ha durezza 9 nella scala di Mohs), **resistenti al calore** e alla corrosione chimica, **impermeabili**, **ottimi isolanti elettrici**. Il loro limite: sono **fragili** — si rompono di colpo senza deformarsi prima (il vetro è l'esempio classico).
+Proprietà comuni a ceramiche e vetro: **durissimi** (il corindone, base delle ceramiche ad alta prestazione, ha durezza 9 nella scala di Mohs), **resistenti al calore** e alla corrosione chimica, **impermeabili**, **ottimi isolanti elettrici**. ==Il loro limite: sono **fragili** — si rompono di colpo senza deformarsi prima (il vetro è l'esempio classico).==
 
 ---
 
@@ -125,7 +125,7 @@ Proprietà comuni a ceramiche e vetro: **durissimi** (il corindone, base delle c
 
 I tessuti sono materiali flessibili formati da fibre intrecciate. Le fibre possono essere naturali o sintetiche.
 
-Le **fibre naturali** vengono da piante o animali:
+==Le **fibre naturali** vengono da piante o animali:==
 
 - **Cotone** — fibra del seme della pianta di cotone. È la fibra naturale più usata al mondo. Assorbe bene il sudore, è morbido, lavabile. Limite: richiede enormi quantità di acqua (1 kg di cotone richiede circa 10.000 litri di acqua per essere coltivato) e spesso coltivato con pesticidi intensivi.
 
@@ -149,11 +149,11 @@ Le **fibre sintetiche** vengono dal petrolio:
 
 #### I materiali compositi
 
-Un **materiale composito** è fatto di due o più materiali diversi uniti insieme per ottenere proprietà migliori di quelle di ciascun componente da solo.
+==Un **materiale composito** è fatto di due o più materiali diversi uniti insieme per ottenere proprietà migliori di quelle di ciascun componente da solo.==
 
 Il primo composito che l'uomo abbia usato è probabilmente il mattone di fango rinforzato con paglia — usato in Mesopotamia 5.000 anni fa. Il fango da solo si crepa. La paglia da sola non regge. Insieme formano un mattone resistente.
 
-Il **cemento armato** — il composito più usato al mondo nelle costruzioni — funziona con la stessa logica: il cemento è forte in compressione (regge il peso) ma fragile in trazione (si spezza se lo tiri). L'acciaio è forte in trazione. Mettere barre d'acciaio nel cemento liquido e aspettare che si solidifichi crea un materiale che regge sia la compressione che la trazione. Su questo principio sono costruiti quasi tutti i ponti, i palazzi e i viadotti del mondo.
+Il **cemento armato** — il composito più usato al mondo nelle costruzioni — funziona con la stessa logica: il cemento è forte in compressione (regge il peso) ma fragile in trazione (si spezza se lo tiri). L'acciaio è forte in trazione. Mettere barre d'acciaio nel cemento liquido e aspettare che si solidifichi crea un materiale che regge sia la compressione che la trazione. ==Su questo principio sono costruiti quasi tutti i ponti, i palazzi e i viadotti del mondo.==
 
 La **fibra di carbonio** è il composito ad alte prestazioni per eccellenza: fibre sottilissime di carbonio puro (ogni fibra è 10 volte più sottile di un capello) vengono immerse in una resina epossidica e poi indurite. Il risultato è un materiale **5 volte più resistente dell'acciaio** e **4 volte più leggero**. Si usa in Formula 1, nell'aeronautica, nelle biciclette da corsa, nelle pale delle turbine eoliche. Il suo limite: non si ricicla facilmente, ed è carissimo da produrre.
 
@@ -169,9 +169,9 @@ Ora che conosci le famiglie, puoi descrivere ogni materiale in modo preciso usan
 
 #### Proprietà fisiche — come è fatto il materiale
 
-Le proprietà fisiche descrivono le caratteristiche misurabili del materiale, indipendentemente da quante forze gli applichiamo.
+==Le proprietà fisiche descrivono le caratteristiche misurabili del materiale, indipendentemente da quante forze gli applichiamo.==
 
-**Durezza** — la resistenza a essere graffiato. Si misura con la **scala di Mohs** (dal mineralogista Friedrich Mohs, 1812), che va da 1 a 10:
+==**Durezza** — la resistenza a essere graffiato.== Si misura con la **scala di Mohs** (dal mineralogista Friedrich Mohs, 1812), che va da 1 a 10:
 - 1 = talco (si graffia con l'unghia)
 - 2 = gesso
 - 2,5 = unghia umana
@@ -185,7 +185,7 @@ Le proprietà fisiche descrivono le caratteristiche misurabili del materiale, in
 
 *Prova pratica:* strofina un oggetto sull'altro. Chi lascia il segno è più morbido. Chi non si segna è più duro.
 
-**Densità** — quanto pesa un centimetro cubo di quel materiale. Si esprime in g/cm³. Valori di riferimento utili:
+==**Densità** — quanto pesa un centimetro cubo di quel materiale.== Si esprime in g/cm³. Valori di riferimento utili:
 
 | Materiale | Densità (g/cm³) |
 |-----------|----------------|
@@ -229,20 +229,20 @@ La sensazione di "freddo" che provi toccando il metallo in una stanza a temperat
 
 Quando applichiamo forze a un materiale, si comporta in modo diverso a seconda di come è fatto.
 
-**Resistenza meccanica** — la capacità di sopportare una forza senza rompersi o deformarsi permanentemente. Si distinguono:
+==**Resistenza meccanica** — la capacità di sopportare una forza senza rompersi o deformarsi permanentemente.== Si distinguono:
 - *Resistenza a trazione*: quanto regge se lo tiri da due parti opposte. Il cavo di acciaio di un ascensore deve avere altissima resistenza a trazione.
 - *Resistenza a compressione*: quanto regge se lo schiacci. I piloni di un ponte devono avere altissima resistenza a compressione.
 - *Resistenza a flessione*: quanto regge se lo pieghi. Una trave del tetto deve resistere alla flessione causata dal peso della neve.
 
 Il **cemento** resiste bene alla compressione (i piloni) ma male alla trazione e flessione. Ecco perché si rinforza con barre di acciaio (cemento armato): l'acciaio prende il carico di trazione, il cemento quello di compressione.
 
-**Elasticità** — la capacità di deformarsi e tornare alla forma originale quando la forza cessa. La gomma è molto elastica. Un elastico da ufficio può essere allungato 5-6 volte la sua lunghezza originale e torna su. Le molle in acciaio sono elastiche finché non si superano certi limiti di deformazione (oltre il "limite elastico" la molla rimane storta).
+==**Elasticità** — la capacità di deformarsi e tornare alla forma originale quando la forza cessa.== La gomma è molto elastica. Un elastico da ufficio può essere allungato 5-6 volte la sua lunghezza originale e torna su. Le molle in acciaio sono elastiche finché non si superano certi limiti di deformazione (oltre il "limite elastico" la molla rimane storta).
 
 I materiali **plastici** invece si deformano e rimangono deformati: l'argilla, la plastilina, il piombo. Questa proprietà è utile quando vogliamo dare permanentemente una forma a qualcosa.
 
-**Fragilità** — la tendenza a rompersi di colpo senza deformarsi prima. Il vetro è fragile: non si piega, si spezza. La ghisa (ferro con molto carbonio) è più dura dell'acciaio ma anche molto più fragile — si usava per costruire ponti nel '700 e '800, finché alcuni collassarono di schianto senza preavviso.
+==**Fragilità** — la tendenza a rompersi di colpo senza deformarsi prima.== Il vetro è fragile: non si piega, si spezza. La ghisa (ferro con molto carbonio) è più dura dell'acciaio ma anche molto più fragile — si usava per costruire ponti nel '700 e '800, finché alcuni collassarono di schianto senza preavviso.
 
-I materiali **duttili** (come il rame, l'alluminio, l'oro) al contrario si deformano visibilmente prima di rompersi: si può tirare il rame in un filo sottilissimo senza che si rompa. Questo è utilissimo per fare cavi elettrici.
+==I materiali **duttili** (come il rame, l'alluminio, l'oro) al contrario si deformano visibilmente prima di rompersi: si può tirare il rame in un filo sottilissimo senza che si rompa.== Questo è utilissimo per fare cavi elettrici.
 
 > ⚠️ **Attenzione al malinteso più comune:** durezza e resistenza meccanica non sono la stessa cosa. Il diamante è il materiale più duro in natura (nessuno lo graffia) ma è *fragile*: un colpo preciso con un martello lo spezza. L'acciaio da costruzione è meno duro del diamante ma ha resistenza meccanica molto superiore: prima di rompersi si deforma, e quella deformazione è un segnale visibile di pericolo.
 
@@ -252,7 +252,7 @@ I materiali **duttili** (come il rame, l'alluminio, l'oro) al contrario si defor
 
 Le proprietà tecnologiche descrivono quanto un materiale è adatto a subire determinate lavorazioni industriali. Non dipendono solo dalla durezza o dalla resistenza, ma da come il materiale risponde agli strumenti, al calore, alla pressione.
 
-**Lavorabilità** — la facilità con cui un materiale può essere tagliato, forato, fresato, tornito, levigato. Il balsa si taglia con un coltello. L'alluminio si fresa bene. Il granito richiede utensili con punte diamantate o al carburo di tungsteno. Una buona lavorabilità non significa che il materiale sia tenero: l'alluminio è molto più lavorabile dell'acciaio, anche se entrambi sono molto più duri del legno.
+==**Lavorabilità** — la facilità con cui un materiale può essere tagliato, forato, fresato, tornito, levigato.== Il balsa si taglia con un coltello. L'alluminio si fresa bene. Il granito richiede utensili con punte diamantate o al carburo di tungsteno. ==Una buona lavorabilità non significa che il materiale sia tenero: l'alluminio è molto più lavorabile dell'acciaio, anche se entrambi sono molto più duri del legno.==
 
 **Saldabilità** — la capacità di essere unito stabilmente a un altro pezzo dello stesso materiale (o di materiale compatibile) attraverso il calore o la pressione, senza bulloni o colle. L'acciaio è molto saldabile: le saldature ad arco elettrico sono alla base di tutta la costruzione navale, delle strutture metalliche, delle tubature. L'alluminio si salda ma richiede tecniche speciali (saldatura TIG con atmosfera inerte) perché si ossida rapidamente. Il rame si salda facilmente con la brasatura. La ghisa è difficile da saldare: tende a creparsi durante il raffreddamento. Le plastiche termoindurenti non si saldano affatto.
 
@@ -270,11 +270,11 @@ Le proprietà tecnologiche descrivono quanto un materiale è adatto a subire det
 
 Un materiale non finisce quando l'oggetto viene buttato. Continua ad esistere — in discarica, nell'ambiente, nelle acque. Le proprietà ambientali descrivono questo "dopo".
 
-**Biodegradabilità** — la capacità di essere decomposto da microrganismi (batteri, funghi) in molecole semplici naturali. Un foglio di carta si biodegrada in 2-5 mesi. La scorza di banana in 2-10 giorni. Il cotone in 1-5 mesi. La lana in 1-5 anni. Il legno trattato in decenni.
+==**Biodegradabilità** — la capacità di essere decomposto da microrganismi (batteri, funghi) in molecole semplici naturali.== Un foglio di carta si biodegrada in 2-5 mesi. La scorza di banana in 2-10 giorni. Il cotone in 1-5 mesi. La lana in 1-5 anni. Il legno trattato in decenni.
 
 Le plastiche convenzionali non sono biodegradabili in tempi utili perché i batteri non hanno ancora enzimi capaci di spezzare le catene polimeriche in modo efficiente. Le **bioplastiche** (PLA da mais, PHA da batteri) si biodegradano — ma solo in condizioni controllate di compostaggio industriale (temperatura, umidità, presenza di specifici microrganismi). In natura o in discarica si degradano molto lentamente comunque.
 
-**Riciclabilità** — la capacità di essere recuperato come materia prima e usato per produrre nuovi oggetti. Non è un sì/no assoluto: è una questione di qualità, efficienza e sistema.
+==**Riciclabilità** — la capacità di essere recuperato come materia prima e usato per produrre nuovi oggetti.== ==Non è un sì/no assoluto: è una questione di qualità, efficienza e sistema.==
 
 - L'**acciaio** si ricicla all'infinito: l'acciaio riciclato ha le stesse proprietà di quello nuovo. Circa il 70% dell'acciaio prodotto in Europa contiene acciaio riciclato.
 - L'**alluminio** si ricicla usando il 95% di energia in meno rispetto alla produzione primaria.
@@ -290,23 +290,23 @@ Le plastiche convenzionali non sono biodegradabili in tempi utili perché i batt
 
 Un'altra classificazione fondamentale riguarda l'origine del materiale.
 
-I **materiali naturali** esistono in natura e vengono usati direttamente o con lavorazioni fisiche semplici (tagliare, levigare, essiccare): legno, pietra, marmo, granito, argilla, lana, cotone, seta, gomma naturale, sughero, cera d'api. La loro composizione chimica di base rimane quella che ha dato loro la natura.
+==I **materiali naturali** esistono in natura e vengono usati direttamente o con lavorazioni fisiche semplici (tagliare, levigare, essiccare): legno, pietra, marmo, granito, argilla, lana, cotone, seta, gomma naturale, sughero, cera d'api.== La loro composizione chimica di base rimane quella che ha dato loro la natura.
 
 I **materiali artificiali** vengono creati dall'essere umano attraverso reazioni chimiche che trasformano la struttura molecolare delle materie prime: vetro (dalla sabbia), acciaio (da ferro e carbonio), plastica (dal petrolio), nylon, poliestere, kevlar, fibra di carbonio. Non esisterebbero in natura senza intervento umano.
 
 Questa distinzione sembra semplice, ma nasconde molte sfumature importanti:
 
-**Naturale non vuol dire automaticamente sostenibile.** Coltivare cotone richiede circa 10.000 litri d'acqua per ogni kg di fibra — più di qualsiasi altra coltura al mondo. Il cotone biologico ne usa meno, ma non zero. Abbattere foreste primarie per ricavarne legno distrugge ecosistemi che hanno impiegato secoli a formarsi.
+==**Naturale non vuol dire automaticamente sostenibile.** Coltivare cotone richiede circa 10.000 litri d'acqua per ogni kg di fibra — più di qualsiasi altra coltura al mondo.== Il cotone biologico ne usa meno, ma non zero. Abbattere foreste primarie per ricavarne legno distrugge ecosistemi che hanno impiegato secoli a formarsi.
 
-**Artificiale non vuol dire automaticamente dannoso.** L'acciaio riciclato ha un impatto climatico molto inferiore all'acciaio nuovo. La fibra di carbonio è artificiale ma permette di costruire aerei più leggeri che consumano meno carburante su ogni volo, riducendo le emissioni nel lungo periodo. Il vetro — artificiale — si ricicla perfettamente all'infinito.
+==**Artificiale non vuol dire automaticamente dannoso.** L'acciaio riciclato ha un impatto climatico molto inferiore all'acciaio nuovo.== La fibra di carbonio è artificiale ma permette di costruire aerei più leggeri che consumano meno carburante su ogni volo, riducendo le emissioni nel lungo periodo. Il vetro — artificiale — si ricicla perfettamente all'infinito.
 
-La valutazione corretta non è "naturale = buono, artificiale = cattivo" ma **"qual è l'impatto dell'intero ciclo di vita di questo materiale?"** — dall'estrazione alla produzione, all'uso, alla fine vita. Questo approccio si chiama **LCA** (Life Cycle Assessment, analisi del ciclo di vita) ed è esattamente quello che fanno i Materials Scientists circolari che hai incontrato nell'indice.
+La valutazione corretta non è "naturale = buono, artificiale = cattivo" ma **"qual è l'impatto dell'intero ciclo di vita di questo materiale?"** — dall'estrazione alla produzione, all'uso, alla fine vita. ==Questo approccio si chiama **LCA** (Life Cycle Assessment, analisi del ciclo di vita) ed è esattamente quello che fanno i Materials Scientists circolari che hai incontrato nell'indice.==
 
 ---
 
 ### Come si sceglie il materiale giusto: il ragionamento del progettista
 
-Quando un progettista deve scegliere il materiale per un oggetto, non sceglie a caso. Costruisce un elenco dei **requisiti** — le proprietà che il materiale deve necessariamente avere per quella funzione — e poi cerca il materiale che soddisfa tutti i requisiti con il minore impatto ambientale e al costo più basso possibile.
+==Quando un progettista deve scegliere il materiale per un oggetto, non sceglie a caso.== Costruisce un elenco dei **requisiti** — le proprietà che il materiale deve necessariamente avere per quella funzione — e poi cerca il materiale che soddisfa tutti i requisiti con il minore impatto ambientale e al costo più basso possibile.
 
 Per esempio: scegliere il materiale per una bottiglia che deve contenere acqua gassata.
 
@@ -314,7 +314,7 @@ Requisiti: impermeabile all'acqua, resistente alla pressione interna del gas (CO
 
 Candidati: vetro (impermeabile, trasparente, sicuro per alimenti, pesante, fragile), PET (leggero, trasparente, sicuro per alimenti, impermeabile, resistente alla pressione, basso costo), alluminio (leggero, resistente ma opaco), acciaio (troppo pesante).
 
-La scelta di PET è razionale per quasi tutti i requisiti, eccetto uno: la sostenibilità ambientale. Il vetro è meglio riciclabile. Questa tensione tra prestazione tecnica e impatto ambientale è il cuore del lavoro dei progettisti del futuro.
+La scelta di PET è razionale per quasi tutti i requisiti, eccetto uno: la sostenibilità ambientale. Il vetro è meglio riciclabile. ==Questa tensione tra prestazione tecnica e impatto ambientale è il cuore del lavoro dei progettisti del futuro.==
 
 ---
 

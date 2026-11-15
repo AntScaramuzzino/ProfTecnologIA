@@ -27,7 +27,7 @@ La domanda non è "come faccio a resistere?". La domanda è: chi ha deciso che q
 
 Ogni app che usi è progettata da un team di ingegneri, designer e psicologi con un obiettivo preciso: fare in modo che tu la usi il più a lungo possibile.
 
-Non è una teoria del complotto — è un modello di business. La maggior parte delle app gratuite guadagnano mostrando pubblicità. Più tempo trascorri sull'app, più pubblicità vedi, più l'azienda guadagna. Ogni secondo che passi su TikTok, Instagram o YouTube vale denaro reale.
+==Non è una teoria del complotto — è un modello di business.== La maggior parte delle app gratuite guadagnano mostrando pubblicità. ==Più tempo trascorri sull'app, più pubblicità vedi, più l'azienda guadagna.== Ogni secondo che passi su TikTok, Instagram o YouTube vale denaro reale.
 
 Per raggiungere questo obiettivo, le app usano sistemi di design che sfruttano come funziona il cervello umano.
 
@@ -35,7 +35,7 @@ Per raggiungere questo obiettivo, le app usano sistemi di design che sfruttano c
 
 ### Il sistema del reward: dopamina e notifiche
 
-Il cervello umano ha un sistema di ricompensa basato su un neurotrasmettitore chiamato **dopamina**. La dopamina viene rilasciata quando ricevi una ricompensa — cibo, approvazione sociale, una novità eccitante — e ti fa provare piacere. Ma la cosa più importante: la dopamina viene rilasciata soprattutto in *anticipazione* della ricompensa, non quando la ricevi.
+Il cervello umano ha un sistema di ricompensa basato su un neurotrasmettitore chiamato **dopamina**. La dopamina viene rilasciata quando ricevi una ricompensa — cibo, approvazione sociale, una novità eccitante — e ti fa provare piacere. ==Ma la cosa più importante: la dopamina viene rilasciata soprattutto in *anticipazione* della ricompensa, non quando la ricevi.==
 
 Questo spiega tutto.
 
@@ -47,7 +47,7 @@ Le app sfruttano questo meccanismo in modo sistematico:
 
 **Lo scroll infinito** — non c'è mai una fine. Sui social non arriva mai il messaggio "hai finito — hai visto tutto". L'interfaccia continua a caricare contenuti nuovi, perché fermarsi richiede una decisione attiva. Continuare è il percorso di minor resistenza.
 
-**I like e le reazioni** — non arrivano tutti insieme dopo un post. Arrivano a distanza di ore, in modo irregolare. Questa **ricompensa a intervallo variabile** è il meccanismo più potente per creare un'abitudine. È lo stesso principio delle slot machine: non sai quando arriverà la vincita, quindi continui a giocare. Con i like: non sai quando arriverà il prossimo, quindi continui a controllare.
+**I like e le reazioni** — non arrivano tutti insieme dopo un post. Arrivano a distanza di ore, in modo irregolare. ==Questa **ricompensa a intervallo variabile** è il meccanismo più potente per creare un'abitudine.== È lo stesso principio delle slot machine: non sai quando arriverà la vincita, quindi continui a giocare. Con i like: non sai quando arriverà il prossimo, quindi continui a controllare.
 
 > **📱 Dato:** secondo uno studio del 2023 (Common Sense Media), i ragazzi dai 13 ai 18 anni trascorrono in media 8 ore e 39 minuti al giorno davanti agli schermi — escluse le attività scolastiche. Di queste, circa 5 ore sono di entertainment puro (video, social, gaming).
 
@@ -55,7 +55,7 @@ Le app sfruttano questo meccanismo in modo sistematico:
 
 ### Uso consapevole vs uso problematico
 
-Usare la tecnologia non è di per sé un problema. Il problema è la qualità e la consapevolezza dell'uso.
+==Usare la tecnologia non è di per sé un problema.== ==Il problema è la qualità e la consapevolezza dell'uso.==
 
 **Uso sano della tecnologia:** scegli quando connetterti, sai quando smettere, la tecnologia ti serve per fare cose che vuoi fare (studiare, comunicare con gli amici, creare, imparare), e non interferisce con sonno, compiti, attività fisiche e relazioni faccia a faccia.
 
@@ -73,9 +73,9 @@ Questi segnali non significano automaticamente "dipendenza" — ma sono indicato
 
 ### Il cyberbullismo: definizione, forme e responsabilità
 
-**Cyberbullismo** è qualsiasi comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali nei confronti di una persona che non può facilmente difendersi.
+==**Cyberbullismo** è qualsiasi comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali nei confronti di una persona che non può facilmente difendersi.==
 
-La parola "ripetuto" è importante: un singolo commento cattivo è brutto, ma non è cyberbullismo. Il cyberbullismo è un pattern, una condotta sistematica.
+==La parola "ripetuto" è importante: un singolo commento cattivo è brutto, ma non è cyberbullismo.== Il cyberbullismo è un pattern, una condotta sistematica.
 
 **Forme principali:**
 
@@ -99,7 +99,7 @@ Nel cyberbullismo ci sono sempre tre figure:
 
 **L'autore** — chi compie i comportamenti aggressivi. In Italia, la **Legge n. 71/2017** tutela le vittime di cyberbullismo minorenni: la vittima può chiedere direttamente alle piattaforme di rimuovere i contenuti, e il questore può ammonire l'autore. Per i maggiorenni si applicano le norme penali (diffamazione, minacce, stalking).
 
-**Il testimone** — questa è la figura spesso dimenticata, ma è la più numerosa e la più importante. Chi assiste a un episodio di cyberbullismo senza fare nulla — o peggio, mette like o condivide — contribuisce al problema. Il testimone silenzioso rafforza la percezione dell'autore di stare agendo impunemente. Il testimone attivo può:
+==**Il testimone** — questa è la figura spesso dimenticata, ma è la più numerosa e la più importante.== Chi assiste a un episodio di cyberbullismo senza fare nulla — o peggio, mette like o condivide — contribuisce al problema. Il testimone silenzioso rafforza la percezione dell'autore di stare agendo impunemente. Il testimone attivo può:
 - Non mettere like né condividere
 - Supportare privatamente la vittima
 - Segnalare il contenuto alla piattaforma
@@ -113,7 +113,7 @@ Nel cyberbullismo ci sono sempre tre figure:
 
 Il tema del "tempo schermo" — quante ore passi al giorno davanti a un display — è complesso. La ricerca scientifica non dice "meno schermo = meglio" in modo assoluto. Dice qualcosa di più preciso:
 
-**Il sonno è il primo campanello d'allarme.** La luce blu degli schermi blocca la produzione di melatonina (l'ormone che regola il sonno). Usare lo schermo nelle ore prima di dormire ritarda l'addormentamento e riduce la qualità del sonno. Un adolescente ha bisogno di 8-10 ore di sonno — ma la media italiana dei ragazzi tra 12 e 15 anni è circa 7 ore. La differenza è spesso occupata da schermi.
+==**Il sonno è il primo campanello d'allarme.** La luce blu degli schermi blocca la produzione di melatonina (l'ormone che regola il sonno).== Usare lo schermo nelle ore prima di dormire ritarda l'addormentamento e riduce la qualità del sonno. Un adolescente ha bisogno di 8-10 ore di sonno — ma la media italiana dei ragazzi tra 12 e 15 anni è circa 7 ore. La differenza è spesso occupata da schermi.
 
 **La qualità conta più della quantità.** Chiamare un amico su FaceTime, leggere un articolo di approfondimento, imparare a suonare con un tutorial YouTube — queste sono attività diverse dal scrollare passivamente il feed per un'ora. Stessa durata, impatto molto diverso.
 
@@ -123,7 +123,7 @@ Il tema del "tempo schermo" — quante ore passi al giorno davanti a un display 
 
 ### Strategie concrete per un uso consapevole
 
-Non si tratta di non usare la tecnologia. Si tratta di **scegliere** come usarla.
+Non si tratta di non usare la tecnologia. ==Si tratta di **scegliere** come usarla.==
 
 **Audit del proprio uso:** sai davvero quante ore usi il telefono al giorno? Quasi nessuno lo sa con precisione. Ogni smartphone ha una sezione "Tempo schermo" (iPhone) o "Benessere digitale" (Android) che mostra i dati reali. Guarda il tuo. Probabilmente ti sorprenderà.
 

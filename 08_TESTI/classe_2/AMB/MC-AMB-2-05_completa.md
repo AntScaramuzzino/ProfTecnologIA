@@ -33,9 +33,9 @@ Quanto tempo passerebbe tra il momento in cui si svuotano i bacini e il momento 
 
 L'acqua sulla Terra si muove in un ciclo continuo: evapora dagli oceani e dalle superfici d'acqua dolce, forma nuvole, precipita come pioggia o neve, si infiltra nel suolo o scorre in superficie verso fiumi e laghi, si accumula in falde sotterranee, e infine ritorna al mare o evapora di nuovo.
 
-Questo ciclo **naturale** esiste da miliardi di anni ed è il sistema che garantisce che l'acqua dolce — solo il 2,5% del totale dell'acqua sulla Terra — si rigeneri continuamente.
+==Questo ciclo **naturale** esiste da miliardi di anni ed è il sistema che garantisce che l'acqua dolce — solo il 2,5% del totale dell'acqua sulla Terra — si rigeneri continuamente.==
 
-Ma in città, accanto a questo ciclo naturale, ne esiste un secondo: il ciclo **artificiale** dell'acqua urbana. Questo ciclo ha sei fasi precise, ognuna gestita da tecnologie specifiche.
+==Ma in città, accanto a questo ciclo naturale, ne esiste un secondo: il ciclo **artificiale** dell'acqua urbana.== Questo ciclo ha sei fasi precise, ognuna gestita da tecnologie specifiche.
 
 ---
 
@@ -43,7 +43,7 @@ Ma in città, accanto a questo ciclo naturale, ne esiste un secondo: il ciclo **
 
 **Fase 1 — Captazione:** l'acqua viene prelevata da una fonte naturale (fiume, lago, falda sotterranea, sorgente). Non tutta l'acqua è ugualmente facile da captare: le acque superficiali (fiumi, laghi) sono più accessibili ma più contaminate; le acque sotterranee sono più pulite ma più difficili da raggiungere (si usano pozzi che scendono fino a 200-300 metri).
 
-**Fase 2 — Potabilizzazione:** l'acqua grezza non è bevibile. Viene trasportata a un impianto di trattamento dove subisce più fasi: sedimentazione (i solidi pesanti si depositano sul fondo), filtrazione (attraverso strati di sabbia, ghiaia e carbone attivo), e disinfezione (generalmente con cloro o biossido di cloro, talvolta con ozono o raggi ultravioletti).
+==**Fase 2 — Potabilizzazione:** l'acqua grezza non è bevibile.== Viene trasportata a un impianto di trattamento dove subisce più fasi: sedimentazione (i solidi pesanti si depositano sul fondo), filtrazione (attraverso strati di sabbia, ghiaia e carbone attivo), e disinfezione (generalmente con cloro o biossido di cloro, talvolta con ozono o raggi ultravioletti).
 
 **Fase 3 — Distribuzione:** l'acqua potabile viene pompata in una rete di tubature che la porta fino ai contatori delle abitazioni e degli edifici. Questa rete comprende serbatoi sopraelevati (i "torri dell'acqua") che usano la gravità per mantenere la pressione, stazioni di pompaggio, e decine di migliaia di chilometri di tubi.
 
@@ -64,7 +64,7 @@ La pressione viene gestita con:
 - **Stazioni di pompaggio:** in zone pianeggianti dove non ci sono torri, stazioni di pompaggio mantengono la pressione della rete.
 - **Riduttori di pressione:** dove la pressione sarebbe troppo alta (es. alla base di un'altura), valvole automatiche la riducono per proteggere le tubature.
 
-Il problema più grave della rete idrica italiana è le **perdite**. L'Italia perde mediamente il **42% dell'acqua immessa in rete** prima che raggiunga i rubinetti. Non è lo stesso in tutta la penisola: alcune città del nord perdono il 15-20%, molte città del sud perdono il 50-60% o oltre. Le cause: tubature vecchie (molte risalgono agli anni '50-'60), rotture non rilevate tempestivamente, allacci abusivi.
+==Il problema più grave della rete idrica italiana è le **perdite**.== ==L'Italia perde mediamente il **42% dell'acqua immessa in rete** prima che raggiunga i rubinetti.== Non è lo stesso in tutta la penisola: alcune città del nord perdono il 15-20%, molte città del sud perdono il 50-60% o oltre. Le cause: tubature vecchie (molte risalgono agli anni '50-'60), rotture non rilevate tempestivamente, allacci abusivi.
 
 Per fare un confronto: in Germania le perdite di rete sono inferiore al 6%. In Danimarca circa il 7%. L'Italia è al 42% su una media europea del 23%. Questo significa che ogni anno l'Italia "butta via" miliardi di metri cubi di acqua già potabilizzata e pompata — un spreco di acqua, energia e denaro.
 
@@ -72,7 +72,7 @@ Per fare un confronto: in Germania le perdite di rete sono inferiore al 6%. In D
 
 ### La potabilizzazione: cosa succede quando si clora l'acqua
 
-La clorazione è il metodo di disinfezione più usato al mondo. Il cloro (solitamente aggiunto come ipoclorito di sodio, lo stesso principio attivo della candeggina ma a concentrazioni bassissime) reagisce con i microrganismi patogeni presenti nell'acqua, distruggendo le loro membrane cellulari.
+==La clorazione è il metodo di disinfezione più usato al mondo.== Il cloro (solitamente aggiunto come ipoclorito di sodio, lo stesso principio attivo della candeggina ma a concentrazioni bassissime) reagisce con i microrganismi patogeni presenti nell'acqua, distruggendo le loro membrane cellulari.
 
 Le concentrazioni usate sono minime: tra 0,2 e 0,5 mg per litro (parti per milione). Per fare un confronto, la candeggina commerciale ne contiene 50.000 mg per litro — centomila volte di più.
 
@@ -92,11 +92,11 @@ Le città hanno un problema idraulico grave che peggiora ogni anno: il suolo imp
 
 Quando piove su un prato, il 50-60% dell'acqua si infiltra nel terreno. Quando piove sull'asfalto di una città, praticamente il 100% scorre in superficie verso le fognature. Se le fognature non riescono a smaltire quell'acqua velocemente, risultato: allagamenti.
 
-Il **principio di invarianza idraulica** impone che ogni nuovo edificio o infrastruttura non aumenti il deflusso di acque meteoriche rispetto alla situazione preesistente. In pratica, se prima in quel posto c'era un prato, l'acqua che scorreva fuori era X. Dopo la costruzione, deve uscire ancora X o meno — indipendentemente da quanta superfice impermeabile è stata creata.
+==Il **principio di invarianza idraulica** impone che ogni nuovo edificio o infrastruttura non aumenti il deflusso di acque meteoriche rispetto alla situazione preesistente.== In pratica, se prima in quel posto c'era un prato, l'acqua che scorreva fuori era X. Dopo la costruzione, deve uscire ancora X o meno — indipendentemente da quanta superfice impermeabile è stata creata.
 
 Come si realizza:
 
-**Pavimentazioni permeabili:** blocchi drenanti, asfalto poroso, ghiaia stabilizzata che lasciano passare l'acqua nel sottosuolo. Già usate in molti parcheggi e zone pedonali nelle città.
+==**Pavimentazioni permeabili:** blocchi drenanti, asfalto poroso, ghiaia stabilizzata che lasciano passare l'acqua nel sottosuolo.== Già usate in molti parcheggi e zone pedonali nelle città.
 
 **Vasche di laminazione:** grandi cisterne (spesso interrate) che raccolgono l'acqua in eccesso durante le piogge intense e la rilasciano lentamente nel tempo, quando le fognature possono gestirla.
 
@@ -123,7 +123,7 @@ Paradossalmente, l'Italia non è un Paese "povero d'acqua" in termini assoluti: 
 
 ### L'impronta idrica: quanto "pesa" in acqua quello che compri e mangi
 
-L'**impronta idrica** (water footprint) è la quantità totale di acqua dolce consumata per produrre un bene o un servizio, sommando l'acqua usata direttamente e quella "incorporata" in ogni fase della produzione.
+==L'**impronta idrica** (water footprint) è la quantità totale di acqua dolce consumata per produrre un bene o un servizio, sommando l'acqua usata direttamente e quella "incorporata" in ogni fase della produzione.==
 
 I numeri sorprendono quasi tutti la prima volta che li vedono:
 
@@ -139,7 +139,7 @@ I numeri sorprendono quasi tutti la prima volta che li vedono:
 | 1 kg di manzo | 15.500 litri |
 | 1 smartphone | 13.000 litri |
 
-La differenza tra i 220 litri che usi al giorno in casa e i migliaia di litri "nascosti" nei prodotti che consumi è enorme. Il consumo idrico "virtuale" dell'italiano medio, considerando tutto quello che compra e mangia, è stimato tra 3.000 e 5.000 litri al giorno.
+==La differenza tra i 220 litri che usi al giorno in casa e i migliaia di litri "nascosti" nei prodotti che consumi è enorme.== Il consumo idrico "virtuale" dell'italiano medio, considerando tutto quello che compra e mangia, è stimato tra 3.000 e 5.000 litri al giorno.
 
 Questo non significa che devi smettere di mangiare — ma capire questa scala ti permette di fare scelte più consapevoli: preferire la carne di pollo a quella di manzo in alcuni pasti, scegliere vestiti di seconda mano o prodotti da filiere certificate, non sprecare cibo (che contiene acqua "incapsulata" nella sua produzione).
 
@@ -158,7 +158,7 @@ Un impianto di depurazione moderno lavora in tre stadi.
 3. **Sedimentazione primaria:** in vasche circolari profonde, i solidi più fini si depositano formando il "fango primario".
 
 **Trattamento secondario (biologico):**
-4. **Vasca di ossidazione (o bioreattore):** batteri aerobi (che hanno bisogno di ossigeno) "digeriscono" la sostanza organica disciolta nell'acqua. L'ossigeno viene insufflato continuamente attraverso diffusori sul fondo della vasca. Questo è il cuore biologico del depuratore.
+4. ==**Vasca di ossidazione (o bioreattore):** batteri aerobi (che hanno bisogno di ossigeno) "digeriscono" la sostanza organica disciolta nell'acqua.== L'ossigeno viene insufflato continuamente attraverso diffusori sul fondo della vasca. ==Questo è il cuore biologico del depuratore.==
 5. **Sedimentazione secondaria:** i batteri e i residui del processo biologico si depositano formando il "fango di supero".
 
 **Trattamento terziario (facoltativo ma sempre più comune):**

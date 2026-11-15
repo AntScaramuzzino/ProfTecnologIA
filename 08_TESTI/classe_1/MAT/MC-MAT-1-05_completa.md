@@ -33,7 +33,7 @@ Tienila a mente mentre leggi. Alla fine avrai la risposta tecnica precisa.
 
 Apri qualsiasi cassetto della tua cucina. Dentro ci sono probabilmente forchette, coltelli, cucchiai in acciaio inossidabile. Guarda il soffitto: i fili dell'impianto elettrico sono in rame, anche se non si vedono perché sono dentro i muri. Guarda fuori dalla finestra: se c'è un palazzo in costruzione, il suo scheletro è fatto di travi e pilastri in acciaio o calcestruzzo armato con barre d'acciaio all'interno.
 
-I metalli sono ovunque — non perché siano stati scelti per abitudine, ma perché hanno proprietà difficilmente sostituibili. Capire queste proprietà significa capire perché il mondo fisico è costruito nel modo in cui è costruito.
+I metalli sono ovunque — non perché siano stati scelti per abitudine, ma perché hanno proprietà difficilmente sostituibili. ==Capire queste proprietà significa capire perché il mondo fisico è costruito nel modo in cui è costruito.==
 
 ---
 
@@ -43,7 +43,7 @@ I metalli non si trovano in natura già puri e pronti all'uso. Si trovano in roc
 
 Il **minerale di ferro** più importante si chiama **ematite** (Fe₂O₃, ossido di ferro). Le miniere di ematite più grandi al mondo si trovano in Australia, Brasile e Cina. Si estraggono con esplosivi, pale meccaniche giganti e nastri trasportatori. Da una tonnellata di ematite si ricavano circa 700 kg di ferro.
 
-La **bauxite** è il minerale da cui si ricava l'alluminio. È un materiale rossastro, abbondante in Guinea (Africa occidentale), Australia, Vietnam. Da 4-5 tonnellate di bauxite si ottiene 1 tonnellata di alluminio — ma solo dopo aver consumato una quantità enorme di energia elettrica.
+==La **bauxite** è il minerale da cui si ricava l'alluminio.== È un materiale rossastro, abbondante in Guinea (Africa occidentale), Australia, Vietnam. Da 4-5 tonnellate di bauxite si ottiene 1 tonnellata di alluminio — ma solo dopo aver consumato una quantità enorme di energia elettrica.
 
 La **calcopirite** (CuFeS₂) è il minerale principale del rame. Contiene circa il 30% di rame: questo significa che per ottenere 100 kg di rame bisogna processare circa 330 kg di roccia.
 
@@ -55,21 +55,21 @@ Tutte le operazioni di estrazione modificano il paesaggio in modo permanente. Un
 
 Il **ferro puro** — quello che si otterrebbe sciogliendo il minerale e separando gli altri elementi — è in realtà di scarsa utilità pratica. È morbido, arrugginisce velocemente, e non ha la resistenza meccanica necessaria per quasi nessuna applicazione strutturale.
 
-Ciò che usiamo ogni giorno è sempre una **lega** del ferro, cioè ferro mescolato ad altri elementi in proporzioni controllate. Le due leghe principali sono la **ghisa** e l'**acciaio**.
+==Ciò che usiamo ogni giorno è sempre una **lega** del ferro, cioè ferro mescolato ad altri elementi in proporzioni controllate.== Le due leghe principali sono la **ghisa** e l'**acciaio**.
 
 #### La ghisa
 
 La ghisa è ferro con una percentuale di carbonio tra il 2% e il 4,5%. Si ottiene nell'**altoforno** — un impianto industriale alto fino a 60 m in cui il minerale di ferro viene caricato dall'alto insieme a coke (carbone trasformato) e calcare, e si raggiungono temperature fino a 1.500°C. Il ferro fuso scivola verso il basso e si raccoglie al fondo: questa è la ghisa grezza.
 
-La ghisa è dura e resistente alla compressione — cioè regge bene il peso. Per questo veniva usata nel '700 e nell'800 per costruire ponti, colonne, telai di macchine. Ma ha un limite grave: è **fragile**. Non si deforma prima di rompersi — si spezza di colpo, senza dare segnali. Questo è il motivo per cui molti ponti in ghisa del XIX secolo cedettero improvvisamente, spesso con conseguenze tragiche. Oggi la ghisa viene usata principalmente per parti che lavorano solo in compressione: blocchi motore, supporti, griglie da esterno.
+==La ghisa è dura e resistente alla compressione — cioè regge bene il peso.== Per questo veniva usata nel '700 e nell'800 per costruire ponti, colonne, telai di macchine. Ma ha un limite grave: è **fragile**. Non si deforma prima di rompersi — si spezza di colpo, senza dare segnali. Questo è il motivo per cui molti ponti in ghisa del XIX secolo cedettero improvvisamente, spesso con conseguenze tragiche. Oggi la ghisa viene usata principalmente per parti che lavorano solo in compressione: blocchi motore, supporti, griglie da esterno.
 
 > ⚠️ **Attenzione al malinteso:** "duro" e "resistente" non significano la stessa cosa. La ghisa è dura (non si graffia facilmente) ma fragile (si rompe senza deformarsi). L'acciaio dolce è meno duro della ghisa ma ha resistenza meccanica molto superiore, perché prima di rompersi si deforma visibilmente — e quella deformazione è un segnale d'allarme prezioso.
 
 #### L'acciaio
 
-L'**acciaio** si ottiene riducendo la percentuale di carbonio nella ghisa a un valore tra lo 0,02% e il 2%. Sembra una variazione piccola, ma cambia completamente le proprietà del materiale.
+==L'**acciaio** si ottiene riducendo la percentuale di carbonio nella ghisa a un valore tra lo 0,02% e il 2%.== Sembra una variazione piccola, ma cambia completamente le proprietà del materiale.
 
-L'acciaio non è un materiale solo — è una famiglia enorme di materiali, ciascuno con la sua composizione e le sue proprietà specifiche.
+==L'acciaio non è un materiale solo — è una famiglia enorme di materiali, ciascuno con la sua composizione e le sue proprietà specifiche.==
 
 **Acciaio dolce (0,1–0,3% carbonio):** il più economico e il più usato. Si lavora facilmente, si salda bene, si deforma prima di rompersi (è duttile). Lo trovi nelle strutture degli edifici, nelle automobili, nelle lamiere.
 
@@ -77,7 +77,7 @@ L'acciaio non è un materiale solo — è una famiglia enorme di materiali, cias
 
 **Acciaio ad alto carbonio (0,6–2% carbonio):** durissimo, usato per lame, utensili da taglio, cavi ad alta resistenza. Ma fragile — si rompe se cade a terra.
 
-**Acciaio inossidabile:** è la lega più nota al grande pubblico. Contiene ferro + cromo (minimo 10,5%) + nichel. Il cromo, a contatto con l'ossigeno dell'aria, forma uno strato sottilissimo di ossido di cromo (Cr₂O₃) che aderisce alla superficie e la protegge dall'ossidazione — uno strato così sottile da essere invisibile a occhio nudo (circa 2 nanometri), ma abbastanza resistente da impedire la ruggine. Usa le tue posate ogni giorno: non arrugginiscono mai, anche dopo migliaia di lavaggi in lavastoviglie. Questo è l'acciaio inossidabile al lavoro.
+==**Acciaio inossidabile:** è la lega più nota al grande pubblico.== Contiene ferro + cromo (minimo 10,5%) + nichel. Il cromo, a contatto con l'ossigeno dell'aria, forma uno strato sottilissimo di ossido di cromo (Cr₂O₃) che aderisce alla superficie e la protegge dall'ossidazione — uno strato così sottile da essere invisibile a occhio nudo (circa 2 nanometri), ma abbastanza resistente da impedire la ruggine. Usa le tue posate ogni giorno: non arrugginiscono mai, anche dopo migliaia di lavaggi in lavastoviglie. Questo è l'acciaio inossidabile al lavoro.
 
 **Acciaio Corten** (o acciaio patinabile): contiene piccole percentuali di rame, cromo e nichel. Arrugginisce — ma in modo controllato. Lo strato di ruggine superficiale è così denso e aderente che diventa esso stesso una protezione contro la corrosione ulteriore. Non richiede verniciatura. Lo trovi nelle sculture all'aperto, nelle facciate di alcuni edifici moderni, nei ponti. Il suo colore bruno-arancione è esteticamente ricercato.
 
@@ -88,9 +88,9 @@ L'acciaio non è un materiale solo — è una famiglia enorme di materiali, cias
 
 ### L'alluminio: leggero, abbondante, costoso da produrre
 
-L'alluminio è il metallo più abbondante nella crosta terrestre — circa l'8% del peso totale. Nonostante questo, non fu isolato nella sua forma pura prima del 1827, e per decenni fu più prezioso dell'oro. Il motivo: estrarlo dalla bauxite richiede un processo elettrochimico enormemente energivoro che non era disponibile prima dell'elettrificazione industriale.
+==L'alluminio è il metallo più abbondante nella crosta terrestre — circa l'8% del peso totale.== Nonostante questo, non fu isolato nella sua forma pura prima del 1827, e per decenni fu più prezioso dell'oro. Il motivo: estrarlo dalla bauxite richiede un processo elettrochimico enormemente energivoro che non era disponibile prima dell'elettrificazione industriale.
 
-Ancora oggi, produrre 1 kg di alluminio primario (dalla bauxite) richiede circa **13–15 kWh di energia elettrica** — abbastanza per tenere accesa una lampadina LED da 10W per 50 giorni continui. Per questo la produzione di alluminio primario tende a concentrarsi vicino a fonti idroelettriche abbondanti: Norvegia, Islanda, Canada, Siberia.
+Ancora oggi, produrre 1 kg di alluminio primario (dalla bauxite) richiede circa **13–15 kWh di energia elettrica** — abbastanza per tenere accesa una lampadina LED da 10W per 50 giorni continui. ==Per questo la produzione di alluminio primario tende a concentrarsi vicino a fonti idroelettriche abbondanti: Norvegia, Islanda, Canada, Siberia.==
 
 **Proprietà principali dell'alluminio:**
 
@@ -116,7 +116,7 @@ Qui sta la differenza più importante in termini ambientali. Riciclare una latti
 
 Il rame è stato il primo metallo lavorato dall'essere umano: le prime tracce di rame fuso risalgono a circa 9.000 anni fa, in Mesopotamia. L'**Età del Rame** precede l'Età del Bronzo — bronzo che è esso stesso una lega di rame (90%) e stagno (10%).
 
-Oggi il rame viene usato in quantità enormi per una ragione specifica: è il miglior conduttore elettrico pratico. Solo l'argento conduce meglio, ma costa circa 100 volte di più.
+==Oggi il rame viene usato in quantità enormi per una ragione specifica: è il miglior conduttore elettrico pratico.== Solo l'argento conduce meglio, ma costa circa 100 volte di più.
 
 **Proprietà principali del rame:**
 
@@ -136,7 +136,7 @@ Se hai visto una statua di bronzo o un tetto di rame vecchio di decenni, hai vis
 
 ### Le leghe: materiali su misura
 
-Un singolo metallo puro ha proprietà fisse. Ma mescolando due o più metalli si ottengono **leghe** con proprietà completamente diverse e spesso migliori.
+Un singolo metallo puro ha proprietà fisse. ==Ma mescolando due o più metalli si ottengono **leghe** con proprietà completamente diverse e spesso migliori.==
 
 Il principio è semplice: gli atomi di un metallo diverso si inseriscono nel reticolo cristallino del metallo principale, "disturbando" la struttura e rendendola più resistente allo scorrimento delle dislocazioni (le imperfezioni che causano la deformazione permanente).
 
@@ -158,7 +158,7 @@ La lega storica per eccellenza. Il bronzo (88-95% rame, 5-12% stagno) è più du
 Lega di alluminio + rame + magnesio (circa 4% Cu, 0,6% Mg). Sviluppata nel 1906 da Alfred Wilm in Germania, quasi per caso — scoprì che lasciando invecchiare a temperatura ambiente una lega appena temprata, questa diventava progressivamente più dura per alcune ore. Il fenomeno si chiama **invecchiamento** o **precipitazione hardering**. Il duraluminio fu il materiale del primo dirigibile Zeppelin, e poi di quasi tutti gli aerei della Prima e Seconda Guerra Mondiale.
 
 **Titanio e le sue leghe:**
-Il titanio è un caso a sé. Densità: 4,5 g/cm³ — a metà tra alluminio (2,7) e acciaio (7,8). Ma la sua resistenza è paragonabile agli acciai da costruzione più forti. Il rapporto resistenza/peso è il più alto tra tutti i metalli strutturali.
+Il titanio è un caso a sé. Densità: 4,5 g/cm³ — a metà tra alluminio (2,7) e acciaio (7,8). Ma la sua resistenza è paragonabile agli acciai da costruzione più forti. ==Il rapporto resistenza/peso è il più alto tra tutti i metalli strutturali.==
 
 Ha anche una biocompatibilità eccezionale: il corpo umano non lo rigetta. Per questo si usa nelle protesi ortopediche (ginocchia artificiali, anche artificiali, viti per fratture ossee), negli impianti dentali, nelle protesi vascolari. Il titanio ha anche resistenza eccezionale alla corrosione — inclusa quella marina. E resiste alle alte temperature meglio dell'alluminio.
 
@@ -183,23 +183,23 @@ Il suo limite: costosissimo da estrarre e lavorare. Il minerale di partenza (ilm
 
 ### Corrosione: il nemico dei metalli
 
-La **corrosione** è la degradazione di un metallo per reazione chimica con l'ambiente — principalmente con ossigeno e acqua. Capirla è fondamentale perché è uno dei problemi tecnici ed economici più costosi del mondo: si stima che la corrosione costi alle economie mondiali circa il 3,4% del PIL globale ogni anno, ovvero circa 2.500 miliardi di dollari.
+==La **corrosione** è la degradazione di un metallo per reazione chimica con l'ambiente — principalmente con ossigeno e acqua.== Capirla è fondamentale perché è uno dei problemi tecnici ed economici più costosi del mondo: si stima che la corrosione costi alle economie mondiali circa il 3,4% del PIL globale ogni anno, ovvero circa 2.500 miliardi di dollari.
 
 **La ruggine del ferro:**
 
-Quando il ferro (Fe) è esposto all'aria umida, reagisce con l'ossigeno formando ossido di ferro idrato — quello che chiamiamo ruggine (Fe₂O₃·nH₂O). A differenza della patina del rame o dell'ossido dell'alluminio, la ruggine è **porosa**: non sigilla la superficie, ma lascia filtrare nuova aria e acqua, permettendo alla corrosione di avanzare verso l'interno. Un pezzo di ferro che inizia a arrugginire continuerà a farlo finché non è completamente corretto — o finché non è protetto.
+Quando il ferro (Fe) è esposto all'aria umida, reagisce con l'ossigeno formando ossido di ferro idrato — quello che chiamiamo ruggine (Fe₂O₃·nH₂O). ==A differenza della patina del rame o dell'ossido dell'alluminio, la ruggine è **porosa**: non sigilla la superficie, ma lascia filtrare nuova aria e acqua, permettendo alla corrosione di avanzare verso l'interno.== Un pezzo di ferro che inizia a arrugginire continuerà a farlo finché non è completamente corretto — o finché non è protetto.
 
 **Come proteggere i metalli dalla corrosione:**
 
 *Verniciatura:* il metodo più semplice. Uno strato di vernice (organica o epossidica) separa fisicamente il metallo dall'aria. Funziona finché la vernice è intatta — un graffio che espone il metallo diventa un punto di attacco per la ruggine.
 
-*Zincatura:* immergere l'acciaio nel zinco fuso (o elettrodepositarlo). Il risultato si chiama **acciaio zincato** o **galvanizzato**. Il zinco si ossida prima del ferro (ha un potenziale elettrochimico più basso) e lo protegge in due modi: fisicamente come barriera, e chimicamente come **anodo sacrificale** — anche se la superficie viene graffiata e il ferro è esposto, il zinco intorno continua a "sacrificarsi" al posto del ferro. Le grondaie, i pali della luce, i bulloni da esterno sono spesso zincati.
+*Zincatura:* immergere l'acciaio nel zinco fuso (o elettrodepositarlo). ==Il risultato si chiama **acciaio zincato** o **galvanizzato**.== Il zinco si ossida prima del ferro (ha un potenziale elettrochimico più basso) e lo protegge in due modi: fisicamente come barriera, e chimicamente come **anodo sacrificale** — anche se la superficie viene graffiata e il ferro è esposto, il zinco intorno continua a "sacrificarsi" al posto del ferro. Le grondaie, i pali della luce, i bulloni da esterno sono spesso zincati.
 
 *Cromatura:* deposizione elettrochimica di un sottile strato di cromo. Crea una superficie durissima, lucente e resistente alla corrosione. I rubinetti, i cerchioni, alcune parti dei motori vengono cromati.
 
 *Anodizzazione:* usata per l'alluminio. L'alluminio viene immerso in un bagno elettrolitico e passa corrente: si forma uno strato di ossido di alluminio molto più spesso di quello naturale, che può essere anche colorato. I profili delle finestre in alluminio, i telai delle bici, i componenti degli smartphone (i bordi dell'iPhone, per esempio) sono anodizzati.
 
-*Sacrificio catodico:* sulle navi e sulle piattaforme petrolifere, si attaccano blocchi di zinco o alluminio alla struttura in acciaio. Questi blocchi si corrodono al posto dell'acciaio — si chiamano **anodi sacrificali** e devono essere sostituiti periodicamente. Senza di essi, lo scafo di una nave si corroderebbe molto più rapidamente.
+*Sacrificio catodico:* sulle navi e sulle piattaforme petrolifere, si attaccano blocchi di zinco o alluminio alla struttura in acciaio. ==Questi blocchi si corrodono al posto dell'acciaio — si chiamano **anodi sacrificali** e devono essere sostituiti periodicamente.== Senza di essi, lo scafo di una nave si corroderebbe molto più rapidamente.
 
 > 🔬 **Collegamento STEM — Chimica:**
 > La corrosione è una reazione elettrochimica. Il ferro (Fe) perde elettroni (si ossida): Fe → Fe²⁺ + 2e⁻. L'ossigeno disciolto nell'acqua guadagna quegli elettroni (si riduce): O₂ + 2H₂O + 4e⁻ → 4OH⁻. I due processi avvengono simultaneamente in punti diversi della superficie — il ferro è l'**anodo** (dove avviene l'ossidazione), l'acqua è l'**elettrolita** che trasporta gli ioni, e l'ossigeno è il **catodo** (dove avviene la riduzione). Ogni elemento che aumenta la conduttività dell'acqua accelera la corrosione: per questo i veicoli si corrodono molto più velocemente nelle città costiere (salsedine) o dove si sparge sale sulle strade d'inverno.
@@ -210,9 +210,9 @@ Quando il ferro (Fe) è esposto all'aria umida, reagisce con l'ossigeno formando
 
 Uno degli aspetti più affascinanti dei metalli — in particolare dell'acciaio — è che è possibile modificarne le proprietà meccaniche attraverso il calore, senza cambiare la composizione chimica. I metallurgici sfruttano questo da secoli.
 
-**Tempra:** riscaldare l'acciaio a temperatura elevata (800–900°C per l'acciaio al carbonio medio) e poi raffreddarlo rapidamente immergedolo in acqua o olio. Il risultato è un acciaio molto duro ma anche molto fragile. Le lame da taglio vengono temprate.
+**Tempra:** riscaldare l'acciaio a temperatura elevata (800–900°C per l'acciaio al carbonio medio) e poi raffreddarlo rapidamente immergedolo in acqua o olio. ==Il risultato è un acciaio molto duro ma anche molto fragile.== Le lame da taglio vengono temprate.
 
-**Rinvenimento:** dopo la tempra, riscaldare l'acciaio a una temperatura più bassa (150–650°C) e poi raffreddare lentamente. Riduce la fragilità della tempra mantenendo parte della durezza. La combinazione tempra + rinvenimento si chiama **bonifica** ed è usata per la maggior parte degli acciai strutturali ad alta resistenza.
+**Rinvenimento:** dopo la tempra, riscaldare l'acciaio a una temperatura più bassa (150–650°C) e poi raffreddare lentamente. Riduce la fragilità della tempra mantenendo parte della durezza. ==La combinazione tempra + rinvenimento si chiama **bonifica** ed è usata per la maggior parte degli acciai strutturali ad alta resistenza.==
 
 **Ricottura:** riscaldare e raffreddare molto lentamente. Riduce la durezza e la fragilità, aumenta la duttilità. Si usa per ammorbidire l'acciaio prima di lavorarlo o per eliminare le tensioni interne create da lavorazioni precedenti.
 
@@ -222,11 +222,11 @@ Uno degli aspetti più affascinanti dei metalli — in particolare dell'acciaio 
 
 ### Il ciclo dell'acciaio: riciclo quasi infinito
 
-L'acciaio è il materiale più riciclato al mondo in volume assoluto — circa 650 milioni di tonnellate ogni anno, contro 30 milioni di alluminio e 8 milioni di rame. Il motivo è che l'acciaio mantiene le sue proprietà quasi intatte attraverso il riciclo: acciaio riciclato = acciaio nuovo, praticamente.
+==L'acciaio è il materiale più riciclato al mondo in volume assoluto — circa 650 milioni di tonnellate ogni anno, contro 30 milioni di alluminio e 8 milioni di rame.== Il motivo è che l'acciaio mantiene le sue proprietà quasi intatte attraverso il riciclo: acciaio riciclato = acciaio nuovo, praticamente.
 
 Il processo: i rottami di acciaio vengono caricati in un **forno elettrico ad arco** (EAF) e fusi. La temperatura raggiunge 1.600–1.700°C. Il materiale fuso viene poi raffinato, colato e laminato esattamente come l'acciaio primario.
 
-L'energia necessaria per produrre acciaio da rottame è circa il **30% di quella richiesta dall'altoforno** con minerale. Le emissioni di CO₂ sono proporzionalmente inferiori. In Europa, circa il 45% dell'acciaio viene prodotto da rottame riciclato — con punte del 70% in paesi come l'Italia, che ha poca produzione di acciaio primario ma grandi impianti di forno elettrico.
+==L'energia necessaria per produrre acciaio da rottame è circa il **30% di quella richiesta dall'altoforno** con minerale.== Le emissioni di CO₂ sono proporzionalmente inferiori. In Europa, circa il 45% dell'acciaio viene prodotto da rottame riciclato — con punte del 70% in paesi come l'Italia, che ha poca produzione di acciaio primario ma grandi impianti di forno elettrico.
 
 > 🌍 **Economia circolare:** i costruttori di automobili stanno progettando i veicoli pensando già alla loro futura demolizione. Le specifiche per i veicoli dell'UE richiedono che il 95% del peso di un'auto sia recuperabile a fine vita. L'acciaio dello scocco, l'alluminio del blocco motore, il rame dei fili elettrici — tutti vengono separati e riciclati. Un'auto moderna è già progettata per essere smontata.
 
@@ -234,9 +234,9 @@ L'energia necessaria per produrre acciaio da rottame è circa il **30% di quella
 
 ### Le proprietà tecnologiche dei metalli: come si lavorano
 
-Conoscere le proprietà fisiche e meccaniche di un metallo non basta per sceglierlo in un processo produttivo. Serve sapere anche come risponde alle lavorazioni — ovvero le sue **proprietà tecnologiche**.
+Conoscere le proprietà fisiche e meccaniche di un metallo non basta per sceglierlo in un processo produttivo. ==Serve sapere anche come risponde alle lavorazioni — ovvero le sue **proprietà tecnologiche**.==
 
-**Saldabilità** — la capacità di essere unito a un altro pezzo mediante calore, senza bulloni o colle. La saldatura crea un legame metallurgico tra i due pezzi: le molecole si fondono e si riformano come se fossero un unico pezzo. L'**acciaio al carbonio medio** è il più saldabile in assoluto: tutta la costruzione navale, ferroviaria e delle strutture metalliche si basa su di esso. L'**alluminio** si salda ma richiede la saldatura TIG in atmosfera inerte (argon) per evitare l'ossidazione istantanea. La **ghisa** è difficilissima da saldare: raffredda in modo disomogeneo e si crepa. Il **titanio** richiede saldatura in camera a vuoto o in atmosfera di argon puro — costoso ma necessario per l'aeronautica.
+==**Saldabilità** — la capacità di essere unito a un altro pezzo mediante calore, senza bulloni o colle.== La saldatura crea un legame metallurgico tra i due pezzi: le molecole si fondono e si riformano come se fossero un unico pezzo. L'**acciaio al carbonio medio** è il più saldabile in assoluto: tutta la costruzione navale, ferroviaria e delle strutture metalliche si basa su di esso. L'**alluminio** si salda ma richiede la saldatura TIG in atmosfera inerte (argon) per evitare l'ossidazione istantanea. La **ghisa** è difficilissima da saldare: raffredda in modo disomogeneo e si crepa. Il **titanio** richiede saldatura in camera a vuoto o in atmosfera di argon puro — costoso ma necessario per l'aeronautica.
 
 **Fusibilità** — la facilità di essere fuso e colato in stampi (fonderia). Dipende da: temperatura di fusione, fluidità allo stato liquido, ritiro durante il raffreddamento. La **ghisa** (ferro + ~3,5% carbonio) fonde a ~1.150-1.200°C ed è molto fluida: riempie bene anche gli stampi complessi. È il materiale per eccellenza della fonderia (griglie, coperchi tombini, blocchi motore di automobili economiche). Il **bronzo** (rame + stagno) fonde a ~900°C ed è stato il primo metallo fuso dall'uomo: con i forni a carbone di legna raggiungibili nell'antichità, era l'unico metallo lavorabile in fonderia. Le campane sono in bronzo per la sua eccellente qualità acustica.
 

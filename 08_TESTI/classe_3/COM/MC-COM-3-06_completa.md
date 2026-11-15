@@ -41,11 +41,11 @@ Internet ha amplificato questo modello all'estremo. Le piattaforme digitali — 
 
 Ogni secondo che passi su TikTok ha un valore economico. Non per te — per TikTok. Il tuo tempo di attenzione viene venduto agli inserzionisti.
 
-Questa è l'**economia dell'attenzione**: un sistema economico in cui la risorsa scarsa non è il denaro o la materia prima, ma la capacità di concentrazione umana. E come tutte le risorse scarse, viene comprata e venduta.
+==Questa è l'**economia dell'attenzione**: un sistema economico in cui la risorsa scarsa non è il denaro o la materia prima, ma la capacità di concentrazione umana.== E come tutte le risorse scarse, viene comprata e venduta.
 
 Le conseguenze di questo modello sono profonde:
 
-**L'engagement è incentivato sul contenuto.** Una piattaforma ha interesse economico a mostrarti contenuti che ti fanno restare il più a lungo possibile. Non necessariamente contenuti che ti informano bene, ti rendono felice, o ti fanno crescere. Contenuti che ti tengono incollato allo schermo. E cosa tiene le persone più a lungo? Emozioni forti: rabbia, paura, stupore, indignazione. I contenuti emotivamente intensi generano più engagement degli stessi contenuti presentati in modo neutro.
+==**L'engagement è incentivato sul contenuto.** Una piattaforma ha interesse economico a mostrarti contenuti che ti fanno restare il più a lungo possibile.== Non necessariamente contenuti che ti informano bene, ti rendono felice, o ti fanno crescere. Contenuti che ti tengono incollato allo schermo. E cosa tiene le persone più a lungo? Emozioni forti: rabbia, paura, stupore, indignazione. I contenuti emotivamente intensi generano più engagement degli stessi contenuti presentati in modo neutro.
 
 **Il contenuto di qualità è penalizzato.** Un articolo giornalistico accurato che richiede 20 minuti di lettura e ti porta a rivedere le tue opinioni compete — nella stessa piattaforma, con gli stessi algoritmi — con un video di 60 secondi che ti fa sentire confermato nelle tue idee. Il secondo vince quasi sempre in termini di engagement.
 
@@ -59,7 +59,7 @@ Apri Instagram, TikTok, YouTube. Cosa vedi? Non i post in ordine cronologico di 
 
 Un feed cronologico mostra i contenuti nell'ordine in cui sono stati pubblicati da chi segui. Puoi vedere tutto. Hai il controllo. La qualità dell'esperienza dipende da chi hai scelto di seguire.
 
-Un feed curato da algoritmo mostra i contenuti selezionati in base alla previsione di engagement. Non puoi vedere tutto — il sistema ha già fatto selezione prima che tu arrivi. Il controllo è dell'algoritmo. La qualità dell'esperienza dipende dagli obiettivi dell'algoritmo — che non sono i tuoi obiettivi, ma quelli della piattaforma.
+Un feed curato da algoritmo mostra i contenuti selezionati in base alla previsione di engagement. Non puoi vedere tutto — il sistema ha già fatto selezione prima che tu arrivi. Il controllo è dell'algoritmo. ==La qualità dell'esperienza dipende dagli obiettivi dell'algoritmo — che non sono i tuoi obiettivi, ma quelli della piattaforma.==
 
 **Come funziona l'algoritmo di raccomandazione di TikTok** (sulla base di quanto la stessa azienda ha dichiarato pubblicamente):
 
@@ -81,11 +81,11 @@ Nota critica: non sei tu a scegliere cosa vedere. Stai rispondendo a stimoli sel
 
 Due concetti che spesso si confondono ma hanno origini diverse.
 
-**Filter bubble** (bolla di filtraggio) — il termine fu coniato da Eli Pariser nel 2011 nel libro *The Filter Bubble*. Descrive il fenomeno per cui gli algoritmi di raccomandazione creano un ambiente informativo personalizzato intorno a ogni utente: vedi sempre più contenuti simili a quelli con cui hai interagito prima, e sempre meno contenuti diversi. La conseguenza: la tua visione del mondo diventa gradualmente più stretta, senza che te ne accorga, perché i contenuti che ti vengono presentati sembrano sempre "normali" e "condivisi".
+==**Filter bubble** (bolla di filtraggio) — il termine fu coniato da Eli Pariser nel 2011 nel libro *The Filter Bubble*.== Descrive il fenomeno per cui gli algoritmi di raccomandazione creano un ambiente informativo personalizzato intorno a ogni utente: vedi sempre più contenuti simili a quelli con cui hai interagito prima, e sempre meno contenuti diversi. La conseguenza: la tua visione del mondo diventa gradualmente più stretta, senza che te ne accorga, perché i contenuti che ti vengono presentati sembrano sempre "normali" e "condivisi".
 
 Pariser fece un esperimento semplice nel 2010: chiese a due amici di cercare la stessa parola su Google. Ottennero risultati diversi — personalizzati sulla base della loro storia di ricerche. Non c'era una "stessa Google" per tutti — c'era una Google diversa per ogni utente.
 
-**Echo chamber** (camera d'eco) — la camera d'eco è parzialmente diversa: non è creata dall'algoritmo, ma dalla scelta umana di circondarsi di persone che la pensano allo stesso modo. I social media facilitano questo processo: è più facile che mai trovare comunità online che condividono esattamente le tue opinioni, e isolarsi da chi pensa diversamente. L'algoritmo amplifica l'eco — perché ti mostra più contenuti con cui hai già interagito positivamente — ma la scelta iniziale è umana.
+==**Echo chamber** (camera d'eco) — la camera d'eco è parzialmente diversa: non è creata dall'algoritmo, ma dalla scelta umana di circondarsi di persone che la pensano allo stesso modo.== I social media facilitano questo processo: è più facile che mai trovare comunità online che condividono esattamente le tue opinioni, e isolarsi da chi pensa diversamente. L'algoritmo amplifica l'eco — perché ti mostra più contenuti con cui hai già interagito positivamente — ma la scelta iniziale è umana.
 
 Come si formano? Gradualmente, senza che ce ne accorgiamo. Nessuno decide un giorno "d'ora in poi voglio vivere in una bolla". Succede un like alla volta, un follow alla volta, un click alla volta. L'algoritmo interpreta ogni interazione come "vuoi più di questo" e ottimizza di conseguenza.
 
@@ -103,7 +103,7 @@ Come si rompono?
 
 ### Pubblicità programmatica: l'asta in 200 millisecondi
 
-La **pubblicità programmatica** (programmatic advertising) è il sistema automatizzato con cui viene comprata e venduta la stragrande maggioranza della pubblicità digitale nel mondo. È una delle architetture tecnologiche più complesse — e meno visibili — di internet.
+==La **pubblicità programmatica** (programmatic advertising) è il sistema automatizzato con cui viene comprata e venduta la stragrande maggioranza della pubblicità digitale nel mondo.== È una delle architetture tecnologiche più complesse — e meno visibili — di internet.
 
 Ecco cosa succede quando carichi una pagina web con spazio pubblicitario, passo per passo:
 
@@ -117,9 +117,9 @@ Ecco cosa succede quando carichi una pagina web con spazio pubblicitario, passo 
 
 **5. Tutto questo avviene in 100–200 millisecondi.** Molto prima che la pagina abbia finito di caricarsi.
 
-Chi conosce il tuo profilo? La catena di attori è lunga: il sito che visiti, l'ad network che gestisce lo spazio pubblicitario, la supply-side platform (SSP) che vende lo spazio, la demand-side platform (DSP) dell'inserzionista, e — il nodo centrale — i **data broker**. I data broker acquistano, aggregano e rivendono dati su di te da centinaia di fonti: la tua navigazione web (tramite cookie di terze parti), le app che hai installato, le carte fedeltà dei supermercati, i tuoi acquisti con carta di credito, i tuoi like e condivisioni sui social, i dati della tua geolocalizzazione. Tutto questo viene aggregato in un profilo di centinaia di attributi.
+Chi conosce il tuo profilo? La catena di attori è lunga: il sito che visiti, l'ad network che gestisce lo spazio pubblicitario, la supply-side platform (SSP) che vende lo spazio, la demand-side platform (DSP) dell'inserzionista, e — il nodo centrale — i **data broker**. I data broker acquistano, aggregano e rivendono dati su di te da centinaia di fonti: la tua navigazione web (tramite cookie di terze parti), le app che hai installato, le carte fedeltà dei supermercati, i tuoi acquisti con carta di credito, i tuoi like e condivisioni sui social, i dati della tua geolocalizzazione. ==Tutto questo viene aggregato in un profilo di centinaia di attributi.==
 
-I data broker più grandi — Oracle Data Cloud, Acxiom, Experian Marketing — hanno profili su centinaia di milioni di persone. Acxiom dichiara di avere dati su circa 2,5 miliardi di persone nel mondo. Probabilmente hai un profilo anche tu, anche se non hai mai sentito il nome di quella società.
+I data broker più grandi — Oracle Data Cloud, Acxiom, Experian Marketing — hanno profili su centinaia di milioni di persone. Acxiom dichiara di avere dati su circa 2,5 miliardi di persone nel mondo. ==Probabilmente hai un profilo anche tu, anche se non hai mai sentito il nome di quella società.==
 
 Cosa dicono le leggi? In Europa, il GDPR (2018) ha cambiato significativamente le regole: richiede il consenso esplicito per la raccolta e l'uso dei dati personali, include il diritto di sapere quali dati una società ha su di te, e il diritto di chiederle di cancellarli. I "banner dei cookie" che vedi su ogni sito italiano ed europeo sono la conseguenza diretta del GDPR. Il Digital Services Act (DSA, 2022) ha aggiunto obblighi per le grandi piattaforme sulla trasparenza degli algoritmi e il divieto di pubblicità micro-targetizzata per i minori.
 
@@ -127,7 +127,7 @@ Cosa dicono le leggi? In Europa, il GDPR (2018) ha cambiato significativamente l
 
 ### Fact-checking sistematico: metodo e strumenti
 
-Il **fact-checking** è la verifica sistematica della veridicità di affermazioni di fatto. Non è un'opinione contro un'altra opinione — è la verifica di fatti verificabili.
+==Il **fact-checking** è la verifica sistematica della veridicità di affermazioni di fatto.== ==Non è un'opinione contro un'altra opinione — è la verifica di fatti verificabili.==
 
 **L'IFCN** (International Fact-Checking Network) è l'organizzazione che certifica i fact-checker professionali nel mondo. Per ottenere la certificazione, un'organizzazione deve rispettare cinque principi: non-partigianeria e imparzialità, trasparenza delle fonti, trasparenza del finanziamento, trasparenza della metodologia, e una politica di correzione.
 
@@ -159,11 +159,11 @@ I principali fact-checker certificati in italiano e in Europa:
 
 ### Disinformazione, misinformazione, malinformazione: le distinzioni che contano
 
-Usare questi tre termini in modo preciso fa la differenza tra ragionare chiaramente e generare confusione.
+==Usare questi tre termini in modo preciso fa la differenza tra ragionare chiaramente e generare confusione.==
 
-**Misinformazione** (misinformation): informazione falsa o inaccurata condivisa **senza l'intenzione di ingannare**. Chi la diffonde ci crede. Esempio: qualcuno condivide uno studio screditato sulla vacinazione perché ci crede sinceramente e vuole informare gli amici. L'intenzione è buona; il contenuto è falso.
+==**Misinformazione** (misinformation): informazione falsa o inaccurata condivisa **senza l'intenzione di ingannare**.== Chi la diffonde ci crede. Esempio: qualcuno condivide uno studio screditato sulla vacinazione perché ci crede sinceramente e vuole informare gli amici. L'intenzione è buona; il contenuto è falso.
 
-**Disinformazione** (disinformation): informazione falsa o inaccurata condivisa **con l'intenzione deliberata di ingannare**. Chi la produce sa che è falsa — o non si preoccupa di verificarla. Esempio: una campagna organizzata di account falsi che diffonde voci false su un candidato politico durante una campagna elettorale.
+==**Disinformazione** (disinformation): informazione falsa o inaccurata condivisa **con l'intenzione deliberata di ingannare**.== Chi la produce sa che è falsa — o non si preoccupa di verificarla. Esempio: una campagna organizzata di account falsi che diffonde voci false su un candidato politico durante una campagna elettorale.
 
 **Malinformazione** (malinformation): informazione **vera** condivisa con l'intenzione di causare danno. Esempio: la pubblicazione di foto private di una persona senza il suo consenso, o la diffusione selettiva di dati veri per creare un'impressione falsa del quadro complessivo.
 
@@ -179,7 +179,7 @@ La malinformazione richiede il bilanciamento tra libertà di informazione e prot
 
 ### Think-before-you-share: la catena di responsabilità
 
-Il principio **#ThinkBeforeYouShare** è stato promosso dall'UNESCO come risposta alla diffusione virale di disinformazione. Il punto di partenza è semplice: ogni persona che condivide un contenuto è parte della catena di diffusione. Non un attore passivo.
+Il principio **#ThinkBeforeYouShare** è stato promosso dall'UNESCO come risposta alla diffusione virale di disinformazione. ==Il punto di partenza è semplice: ogni persona che condivide un contenuto è parte della catena di diffusione.== Non un attore passivo.
 
 Prima di condividere qualsiasi notizia o affermazione, poni queste cinque domande:
 

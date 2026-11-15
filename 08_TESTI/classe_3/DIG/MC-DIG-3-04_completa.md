@@ -27,7 +27,7 @@ Il web non è rotto per queste persone. È stato progettato senza di loro.
 
 ### Accessibilità digitale: cos'è e perché esiste
 
-Quando si parla di accessibilità fisica si pensa ai gradini di un palazzo senza ascensore, alle strade senza rampe per le carrozzine, alle stazioni senza annunci sonori. La logica è semplice: uno spazio inaccessibile esclude chi ha certe caratteristiche fisiche. Non è una scelta dell'escluso — è un difetto del progetto.
+Quando si parla di accessibilità fisica si pensa ai gradini di un palazzo senza ascensore, alle strade senza rampe per le carrozzine, alle stazioni senza annunci sonori. La logica è semplice: uno spazio inaccessibile esclude chi ha certe caratteristiche fisiche. ==Non è una scelta dell'escluso — è un difetto del progetto.==
 
 L'**accessibilità digitale** funziona esattamente con la stessa logica, applicata agli spazi digitali: siti web, app, documenti, interfacce. Un sito web che usa solo colori per distinguere elementi importanti — rosso = errore, verde = ok — è inaccessibile per circa il 4,5% della popolazione maschile (8% in alcune etnie) che ha una qualche forma di daltonismo. Non è colpa del daltonico: è un difetto del progetto.
 
@@ -37,11 +37,11 @@ Il termine tecnico internazionale per descrivere le regole che rendono un prodot
 
 ### I quattro principi WCAG
 
-Le WCAG 2.1 organizzano tutti i requisiti di accessibilità intorno a quattro principi fondamentali, identificati dall'acronimo **POUR**:
+==Le WCAG 2.1 organizzano tutti i requisiti di accessibilità intorno a quattro principi fondamentali, identificati dall'acronimo **POUR**:==
 
-**P — Percepibile (Perceivable).** Il contenuto deve poter essere percepito da tutti i sensi disponibili. Se un'immagine contiene informazioni importanti, deve avere un **testo alternativo** (alt text) che uno screen reader può leggere ad alta voce a chi non vede. Se c'è un video con audio, deve avere i sottotitoli per chi non sente. Il testo deve avere **contrasto sufficiente** rispetto allo sfondo (rapporto minimo 4,5:1 per il testo normale) per essere leggibile con bassa visione o in condizioni di luce difficili.
+==**P — Percepibile (Perceivable).** Il contenuto deve poter essere percepito da tutti i sensi disponibili.== Se un'immagine contiene informazioni importanti, deve avere un **testo alternativo** (alt text) che uno screen reader può leggere ad alta voce a chi non vede. Se c'è un video con audio, deve avere i sottotitoli per chi non sente. Il testo deve avere **contrasto sufficiente** rispetto allo sfondo (rapporto minimo 4,5:1 per il testo normale) per essere leggibile con bassa visione o in condizioni di luce difficili.
 
-**O — Operabile (Operable).** L'interfaccia deve poter essere usata con qualsiasi periferica di input. La **navigazione da tastiera** è il test minimo: ogni funzione raggiungibile con il mouse deve essere raggiungibile anche solo con Tab, Invio, Spazio e le frecce direzionali. Chi ha tremori alle mani non può usare il mouse con precisione. Chi ha lesioni agli arti superiori usa uno switch esterno o il controllo vocale. Se un'azione richiede obbligatoriamente il trascinamento con il mouse, è inaccessibile.
+**O — Operabile (Operable).** L'interfaccia deve poter essere usata con qualsiasi periferica di input. ==La **navigazione da tastiera** è il test minimo: ogni funzione raggiungibile con il mouse deve essere raggiungibile anche solo con Tab, Invio, Spazio e le frecce direzionali.== Chi ha tremori alle mani non può usare il mouse con precisione. Chi ha lesioni agli arti superiori usa uno switch esterno o il controllo vocale. Se un'azione richiede obbligatoriamente il trascinamento con il mouse, è inaccessibile.
 
 **U — Comprensibile (Understandable).** Il contenuto deve poter essere compreso. Questo include il linguaggio (formule complesse, gergo tecnico non spiegato, frasi troppo lunghe mettono in difficoltà chi ha dislessia o disturbi cognitivi), ma anche il comportamento dell'interfaccia: se clicco un bottone, mi aspetto che accada qualcosa di prevedibile. Se la pagina cambia in modo inaspettato dopo un click, chi ha problemi cognitivi può disorientarsi.
 
@@ -53,7 +53,7 @@ Le WCAG 2.1 organizzano tutti i requisiti di accessibilità intorno a quattro pr
 
 Si pensa spesso che l'accessibilità riguardi solo le persone con disabilità permanenti e severe. È una visione parziale.
 
-L'**Universal Design** — un principio nato nell'architettura negli anni '70 — dice che progettare per chi ha le esigenze più diverse beneficia tutti. Il classico esempio fisico: le rampe per le carrozzine vengono usate ogni giorno anche da persone con passeggini, con valigie a rotelle, con biciclette. Non sono un adattamento speciale: sono un miglioramento del design per tutti.
+==L'**Universal Design** — un principio nato nell'architettura negli anni '70 — dice che progettare per chi ha le esigenze più diverse beneficia tutti.== Il classico esempio fisico: le rampe per le carrozzine vengono usate ogni giorno anche da persone con passeggini, con valigie a rotelle, con biciclette. ==Non sono un adattamento speciale: sono un miglioramento del design per tutti.==
 
 In digitale funziona allo stesso modo. I sottotitoli dei video, nati per le persone sorde, vengono usati da centinaia di milioni di persone in ambienti rumorosi, in lingue straniere, o semplicemente perché preferiscono leggere mentre guardano. Il testo alternativo delle immagini aiuta chi non vede, ma è anche il testo che i motori di ricerca leggono per indicizzare l'immagine. Il contrasto alto aiuta chi ha bassa visione, ma anche chiunque guardi lo schermo alla luce diretta del sole.
 
@@ -85,11 +85,11 @@ Non devi essere uno specialista per valutare l'accessibilità di base di un sito
 
 ### Accessibilità come obbligo legale
 
-L'accessibilità digitale non è solo una buona pratica — è un requisito legale in molti contesti.
+==L'accessibilità digitale non è solo una buona pratica — è un requisito legale in molti contesti.==
 
 In Italia, la **Legge Stanca (L. 4/2004)** obbliga le pubbliche amministrazioni a rendere accessibili i propri siti e servizi digitali. A livello europeo, la **Direttiva 2016/2102** estende questo obbligo a tutti i siti e le app mobile del settore pubblico.
 
-Il passo più importante è il **European Accessibility Act (Direttiva EU 2019/882)**, in vigore in Italia dal giugno 2025. Questo atto estende l'obbligo di accessibilità anche alle aziende private con più di 10 dipendenti o con fatturato superiore a 2 milioni di euro — una platea enormemente più ampia. I prodotti e servizi digitali — app, siti di e-commerce, sportelli bancari online, biglietterie digitali, e-book — devono essere accessibili. Chi non si adegua rischia sanzioni.
+==Il passo più importante è il **European Accessibility Act (Direttiva EU 2019/882)**, in vigore in Italia dal giugno 2025.== Questo atto estende l'obbligo di accessibilità anche alle aziende private con più di 10 dipendenti o con fatturato superiore a 2 milioni di euro — una platea enormemente più ampia. I prodotti e servizi digitali — app, siti di e-commerce, sportelli bancari online, biglietterie digitali, e-book — devono essere accessibili. Chi non si adegua rischia sanzioni.
 
 La base giuridica più profonda è la **Convenzione ONU sui Diritti delle Persone con Disabilità (CRPD)**, ratificata dall'Italia nel 2009. L'articolo 9 (Accessibilità) e l'articolo 21 (Libertà di espressione e di informazione) stabiliscono che l'accesso alle tecnologie dell'informazione e della comunicazione è un diritto fondamentale.
 
@@ -99,11 +99,11 @@ Un sito inaccessibile non è solo scomodo: viola un diritto.
 
 ### Universal Design: progettare per tutti dall'inizio, non adattare dopo
 
-L'Universal Design non è un insieme di correzioni da aggiungere alla fine. È un approccio progettuale che considera la diversità umana come punto di partenza, non come caso d'eccezione da gestire.
+==L'Universal Design non è un insieme di correzioni da aggiungere alla fine.== ==È un approccio progettuale che considera la diversità umana come punto di partenza, non come caso d'eccezione da gestire.==
 
 Nel mondo fisico, la differenza si vede: una porta troppo stretta per una carrozzina fu costruita pensando a una persona tipo che non include chi usa la carrozzina. Aggiungere una rampa laterale dopo è più costoso, meno efficace, e spesso esprime ancora l'idea che la persona con disabilità debba usare l'ingresso secondario.
 
-In digitale, l'Universal Design significa che il team che progetta un'app discute di accessibilità nella prima riunione di progetto — non dopo che il prodotto è finito. Significa testare con utenti reali che usano screen reader durante lo sviluppo — non dopo. Significa che il contrasto del colore è scelto anche in funzione della leggibilità in bassa visione — non solo dell'estetica.
+In digitale, l'Universal Design significa che il team che progetta un'app discute di accessibilità nella prima riunione di progetto — non dopo che il prodotto è finito. ==Significa testare con utenti reali che usano screen reader durante lo sviluppo — non dopo.== Significa che il contrasto del colore è scelto anche in funzione della leggibilità in bassa visione — non solo dell'estetica.
 
 Il risultato non è un prodotto meno bello o meno performante. Al contrario: i prodotti progettati con i principi di Universal Design tendono ad essere più chiari, più semplici, più rapidi da usare — per tutti.
 

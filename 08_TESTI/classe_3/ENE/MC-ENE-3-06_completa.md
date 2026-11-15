@@ -29,13 +29,13 @@ Nelle prossime pagine impari perché è così difficile, e cosa l'umanità sta f
 
 ### Il problema dell'intermittenza: la risorsa che non si controlla
 
-Le fonti rinnovabili principali — solare e eolico — hanno una caratteristica che le distingue fondamentalmente dal carbone, dal gas o dal nucleare: **non si accendono e spengono su richiesta**. Producono energia quando il sole splende e il vento soffia — non necessariamente quando la gente ne ha bisogno.
+==Le fonti rinnovabili principali — solare e eolico — hanno una caratteristica che le distingue fondamentalmente dal carbone, dal gas o dal nucleare: **non si accendono e spengono su richiesta**.== Producono energia quando il sole splende e il vento soffia — non necessariamente quando la gente ne ha bisogno.
 
 Il fotovoltaico produce il picco di energia a mezzogiorno, quando il sole è alto. Ma il picco di consumo elettrico nelle città italiane è tra le 18 e le 21 — quando le persone tornano a casa, accendono luci, forni, tv, lavatrice. Il sole nel frattempo è già tramontato.
 
 L'energia eolica è ancora più imprevedibile: a volte soffia di notte, a volte per giorni interi non soffia affatto.
 
-Una rete elettrica deve bilanciare **in ogni istante** la produzione con il consumo. Se si producono 1.000 MW e ne vengono consumati 800, i 200 MW eccedenti causano una sovrafrequenza che può danneggiare i trasformatori e le apparecchiature industriali. Se ne vengono consumati 1.200 invece di 1.000, c'è un deficit di frequenza e le centrali di backup devono entrare in funzione in pochi secondi.
+==Una rete elettrica deve bilanciare **in ogni istante** la produzione con il consumo.== Se si producono 1.000 MW e ne vengono consumati 800, i 200 MW eccedenti causano una sovrafrequenza che può danneggiare i trasformatori e le apparecchiature industriali. Se ne vengono consumati 1.200 invece di 1.000, c'è un deficit di frequenza e le centrali di backup devono entrare in funzione in pochi secondi.
 
 Tradizionalmente, questo bilanciamento lo facevano le centrali termoelettriche: si alzava o abbassava la fiamma delle turbine a gas in base alla domanda. Con le rinnovabili che coprono sempre più quota della produzione, queste centrali non bastano più — sono troppo lente e inquinanti per fare solo da "tampone".
 
@@ -47,7 +47,7 @@ La soluzione è l'**accumulo energetico**: immagazzinare l'energia quando è abb
 
 La batteria del tuo telefono, del laptop, dell'auto elettrica — tutte usano la stessa tecnologia fondamentale: le **celle agli ioni di litio**.
 
-Il principio chimico è quello di una **cella elettrochimica**: due elettrodi (anodo e catodo) immersi in un elettrolita (liquido che permette il movimento degli ioni). Quando la batteria si scarica, gli ioni di litio migrano dall'anodo al catodo attraverso l'elettrolita, e questo movimento genera una corrente elettrica nel circuito esterno. Quando si ricarica, la corrente esterna spinge gli ioni nella direzione opposta.
+==Il principio chimico è quello di una **cella elettrochimica**: due elettrodi (anodo e catodo) immersi in un elettrolita (liquido che permette il movimento degli ioni).== Quando la batteria si scarica, gli ioni di litio migrano dall'anodo al catodo attraverso l'elettrolita, e questo movimento genera una corrente elettrica nel circuito esterno. Quando si ricarica, la corrente esterna spinge gli ioni nella direzione opposta.
 
 **Il litio:** perché proprio il litio? Perché è l'elemento metallico più leggero (peso atomico 6,94), ha una densità di energia elevatissima, e il potenziale elettrochimico del litio è tra i più alti degli elementi. Risultato: batterie leggere e ad alta capacità.
 
@@ -79,7 +79,7 @@ Nel 2030 (previsione BloombergNEF): sotto i 60 dollari/kWh.
 
 Una riduzione del **97% in 30 anni**. Nessuna altra tecnologia energetica ha mai visto un calo di costi così rapido e sostenuto — nemmeno il fotovoltaico (che ha "solo" calato del 90% in 15 anni).
 
-**Il riciclo:** le batterie agli ioni di litio contengono litio, cobalto, nichel, manganese — metalli preziosi e difficili da estrarre. Riciclarle è sia un imperativo ambientale sia economicamente conveniente. La direttiva europea sulle batterie 2023/1542 impone che le batterie vendute in Europa dal 2027 abbiano percentuali minime di materiali riciclati. Il riciclo è però ancora tecnologicamente complesso: le celle vengono tritate, trattate chimicamente, separate. Il tasso di recupero del litio è al momento dell'70–80%.
+==**Il riciclo:** le batterie agli ioni di litio contengono litio, cobalto, nichel, manganese — metalli preziosi e difficili da estrarre.== Riciclarle è sia un imperativo ambientale sia economicamente conveniente. La direttiva europea sulle batterie 2023/1542 impone che le batterie vendute in Europa dal 2027 abbiano percentuali minime di materiali riciclati. Il riciclo è però ancora tecnologicamente complesso: le celle vengono tritate, trattate chimicamente, separate. Il tasso di recupero del litio è al momento dell'70–80%.
 
 ---
 
@@ -87,7 +87,7 @@ Una riduzione del **97% in 30 anni**. Nessuna altra tecnologia energetica ha mai
 
 Le batterie agli ioni di litio vanno bene per auto e per accumuli domestici, ma per impianti di grandi dimensioni (da 100 MWh a 10 GWh) hanno un problema: crescere di dimensione aumenta proporzionalmente sia il costo sia il rischio (un pacco batterie grande è anche una grande riserva di energia che può prendere fuoco se mal gestita — l'incidente di 2021 all'impianto di stoccaggio di McMicken in Arizona ne è un esempio).
 
-Le **batterie a flusso vanadio-redox** usano un approccio completamente diverso: l'energia è immagazzinata in due serbatoi di liquido (elettroliti a base di ioni di vanadio), separati da una membrana. Quando si carica, la reazione chimica avviene tra i due liquidi. Quando si scarica, la reazione è invertita.
+==Le **batterie a flusso vanadio-redox** usano un approccio completamente diverso: l'energia è immagazzinata in due serbatoi di liquido (elettroliti a base di ioni di vanadio), separati da una membrana.== Quando si carica, la reazione chimica avviene tra i due liquidi. Quando si scarica, la reazione è invertita.
 
 Vantaggi: la capacità dipende dalla dimensione dei serbatoi (puoi aggiungere più liquido), la sicurezza è alta (i liquidi non bruciano), la durata è lunghissima (più di 20.000 cicli di carica/scarica, contro i 1.500–3.000 del litio). Svantaggi: densità di energia bassa (occupa molto spazio), costo elevato, tecnologia ancora matura ma non di massa.
 
@@ -97,7 +97,7 @@ Vantaggi: la capacità dipende dalla dimensione dei serbatoi (puoi aggiungere pi
 
 L'idrogeno è l'elemento più abbondante nell'universo. Sulla Terra non esiste quasi mai da solo, ma è ovunque combinato con altri elementi — principalmente nell'acqua (H₂O) e negli idrocarburi.
 
-Per usare l'idrogeno come vettore energetico si parte dalla **elettrolisi dell'acqua**: si passa corrente elettrica attraverso l'acqua e si separano idrogeno (H₂) e ossigeno (O₂). Se la corrente usata viene da fonti rinnovabili, l'idrogeno prodotto si chiama **idrogeno verde** — nessuna emissione durante la produzione.
+==Per usare l'idrogeno come vettore energetico si parte dalla **elettrolisi dell'acqua**: si passa corrente elettrica attraverso l'acqua e si separano idrogeno (H₂) e ossigeno (O₂).== ==Se la corrente usata viene da fonti rinnovabili, l'idrogeno prodotto si chiama **idrogeno verde** — nessuna emissione durante la produzione.==
 
 L'idrogeno verde viene poi immagazzinato (in forma compressa a 700 bar, o liquefatta a −253°C, o legato a composti chimici solidi) e rilasciato attraverso una **cella a combustibile (fuel cell)**: l'inverso dell'elettrolisi, dove H₂ e O₂ si ricombinano producendo acqua e corrente elettrica.
 
@@ -105,7 +105,7 @@ L'idrogeno verde viene poi immagazzinato (in forma compressa a 700 bar, o liquef
 Le batterie sono eccellenti per l'accumulo giornaliero (carica di giorno, scarica di sera) e settimanale. Ma per l'accumulo stagionale (estate → inverno) richiederebbero quantità enormi di batterie. L'idrogeno si può immagazzinare in grandi quantità a costo relativamente basso: un gasdotto riconvertito, un serbatoio sotterraneo, una caverna salina.
 
 **Le sfide:**
-L'efficienza del ciclo elettrolisi → stoccaggio → fuel cell è bassa: circa il 25–35% dell'energia elettrica iniziale torna come elettricità. Cioè: per immagazzinare 100 kWh devi usarne 100, e quando li recuperi ne ottieni solo 25–35. Confronta con le batterie al litio: efficienza del ciclo 85–90%.
+L'efficienza del ciclo elettrolisi → stoccaggio → fuel cell è bassa: circa il 25–35% dell'energia elettrica iniziale torna come elettricità. ==Cioè: per immagazzinare 100 kWh devi usarne 100, e quando li recuperi ne ottieni solo 25–35.== Confronta con le batterie al litio: efficienza del ciclo 85–90%.
 
 L'idrogeno verde è oggi 4–5 volte più costoso dell'idrogeno da gas naturale. Servono grandi riduzioni di costo degli elettrolizzatori (macchine che fanno l'elettrolisi) per renderlo competitivo. Il progetto REPowerEU prevede 10 milioni di tonnellate di idrogeno verde all'anno in Europa entro il 2030 — un obiettivo ambizioso.
 
@@ -113,9 +113,9 @@ L'idrogeno verde è oggi 4–5 volte più costoso dell'idrogeno da gas naturale.
 
 ### Accumulo pompato: il gigante invisibile
 
-Il sistema di accumulo energetico più usato al mondo non usa batterie, né idrogeno. Usa l'**acqua**.
+==Il sistema di accumulo energetico più usato al mondo non usa batterie, né idrogeno.== Usa l'**acqua**.
 
-Il **pumped-storage hydropower** (accumulo idroelettrico pompato) funziona così:
+==Il **pumped-storage hydropower** (accumulo idroelettrico pompato) funziona così:==
 1. Quando c'è energia in eccesso (es. di notte, quando il consumo è basso), si usano pompe elettriche per spingere acqua da un bacino a valle verso un bacino in quota
 2. L'acqua sale, accumula **energia potenziale gravitazionale** (mgh, dove m è la massa, g la gravità, h l'altezza)
 3. Quando serve energia, l'acqua scorre di nuovo verso il basso, le pompe si trasformano in turbine, e si produce elettricità
@@ -138,7 +138,7 @@ Per alcune applicazioni — stabilizzare la frequenza di rete nei primi secondi 
 
 ### Smart grid: la rete elettrica intelligente
 
-Una **smart grid** (rete elettrica intelligente) non è solo una rete elettrica con più tecnologia. È un cambio di paradigma: da una rete "unidirezionale" (le centrali producono, i consumatori consumano) a una rete **bidirezionale** (tutti possono produrre, consumare, immagazzinare, cedere energia).
+==Una **smart grid** (rete elettrica intelligente) non è solo una rete elettrica con più tecnologia.== ==È un cambio di paradigma: da una rete "unidirezionale" (le centrali producono, i consumatori consumano) a una rete **bidirezionale** (tutti possono produrre, consumare, immagazzinare, cedere energia).==
 
 **Gli elementi fondamentali di una smart grid:**
 

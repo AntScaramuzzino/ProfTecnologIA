@@ -33,7 +33,7 @@ Ogni edificio interagisce con il clima che lo circonda. Una progettazione che ne
 
 <!-- Fonte della correzione: https://www.unep.org/resources/report/global-status-report-buildings-and-construction-20242025 · consultata il 4 ottobre 2026. -->
 
-L'**architettura bioclimatica** nasce dall'idea opposta: progettare l'edificio in modo che sfrutti le risorse naturali disponibili — sole, vento, vegetazione, massa termica — per mantenere condizioni confortevoli, riducendo al minimo l'energia aggiuntiva.
+==L'**architettura bioclimatica** nasce dall'idea opposta: progettare l'edificio in modo che sfrutti le risorse naturali disponibili — sole, vento, vegetazione, massa termica — per mantenere condizioni confortevoli, riducendo al minimo l'energia aggiuntiva.==
 
 Non è una moda ecologica. È fisica applicata. Ogni scelta — orientamento, spessore dei muri, tipo di finestre, colore del tetto — cambia i conti energetici dell'edificio per i prossimi cinquant'anni.
 
@@ -43,9 +43,9 @@ Non è una moda ecologica. È fisica applicata. Ogni scelta — orientamento, sp
 
 In Italia (e in tutto l'emisfero nord), il sole si muove sempre nell'emisfero sud del cielo. In inverno è basso sull'orizzonte e ruota da sud-est a sud-ovest. In estate è alto e descrive un arco molto più ampio, passando quasi sopra di noi.
 
-Questa geometria solare è l'informazione più importante per un progettista:
+==Questa geometria solare è l'informazione più importante per un progettista:==
 
-- Una finestra che guarda a **sud** riceve sole direttamente per la maggior parte dell'anno, soprattutto in inverno quando ne abbiamo più bisogno.
+- ==Una finestra che guarda a **sud** riceve sole direttamente per la maggior parte dell'anno, soprattutto in inverno quando ne abbiamo più bisogno.==
 - Una finestra che guarda a **nord** non riceve mai sole diretto: è sempre in ombra, disperde calore ma non ne guadagna.
 - Le finestre a **est** ricevono sole al mattino; quelle a **ovest** al pomeriggio.
 
@@ -69,7 +69,7 @@ Questo significa che un aggetto (il bordo del tetto o un balcone) progettato con
 - **Bloccare il sole estivo** (alto, quasi verticale): la luce non entra.
 - **Lasciare entrare il sole invernale** (basso, quasi orizzontale): la luce entra in profondità.
 
-La formula per calcolare la profondità dell'aggetto giusto dipende dall'altezza della finestra e dalla latitudine. Non la devi memorizzare, ma capire il principio: **la geometria solare è prevedibile**, e una casa ben progettata usa questa prevedibilità come strumento di controllo climatico passivo.
+La formula per calcolare la profondità dell'aggetto giusto dipende dall'altezza della finestra e dalla latitudine. ==Non la devi memorizzare, ma capire il principio: **la geometria solare è prevedibile**, e una casa ben progettata usa questa prevedibilità come strumento di controllo climatico passivo.==
 
 > 🔢 **Collegamento STEM — Geometria:**
 > L'angolo di incidenza del sole cambia con la stagione seguendo la formula: altezza solare = 90° − latitudine + declinazione. In estate la declinazione è +23,5°; in inverno è −23,5°. Se sei a Milano (latitudine 45°N), il sole in estate sale fino a 68,5°, in inverno scende a 21,5°. Una differenza di 47 gradi che un tetto correttamente inclinato sfrutta per filtrare o ammettere la luce.
@@ -80,7 +80,7 @@ La formula per calcolare la profondità dell'aggetto giusto dipende dall'altezza
 
 Non tutti i materiali si comportano allo stesso modo quando vengono riscaldati. Alcuni, come il polistirolo, trasmettono il calore quasi istantaneamente — sono buoni isolanti ma "non ricordano" il calore. Altri, come il mattone o la pietra, accumulano calore lentamente e lo restituiscono altrettanto lentamente.
 
-Questa proprietà si chiama **massa termica** (o capacità termica volumetrica) e si misura in kJ/m³·K — kilojoule per metro cubo e per grado di variazione di temperatura.
+==Questa proprietà si chiama **massa termica** (o capacità termica volumetrica) e si misura in kJ/m³·K — kilojoule per metro cubo e per grado di variazione di temperatura.==
 
 | Materiale | Massa termica (kJ/m³·K) |
 |-----------|------------------------|
@@ -92,7 +92,7 @@ Questa proprietà si chiama **massa termica** (o capacità termica volumetrica) 
 | Pietra calcarea | 2.030 |
 | Acqua | 4.186 |
 
-Un muro di mattone pieno spesso 30 cm funziona come un "serbatoio termico": assorbe il calore del sole durante il giorno, e lo restituisce lentamente nelle ore notturne quando fa più freddo. Questo effetto si chiama **sfasamento termico** — il calore "arriva" nell'ambiente interno con un ritardo di 8-12 ore rispetto al momento in cui ha colpito il muro esterno. Un muro progettato bene può riscaldare l'ambiente di notte usando il sole del pomeriggio.
+Un muro di mattone pieno spesso 30 cm funziona come un "serbatoio termico": assorbe il calore del sole durante il giorno, e lo restituisce lentamente nelle ore notturne quando fa più freddo. ==Questo effetto si chiama **sfasamento termico** — il calore "arriva" nell'ambiente interno con un ritardo di 8-12 ore rispetto al momento in cui ha colpito il muro esterno.== Un muro progettato bene può riscaldare l'ambiente di notte usando il sole del pomeriggio.
 
 In climi caldi (come nel Mediterraneo d'estate), questa stessa massa termica aiuta anche al contrario: di notte la massa si raffredda, di giorno "assorbe" il calore dell'ambiente interno prima che diventi insopportabile.
 
@@ -100,7 +100,7 @@ In climi caldi (come nel Mediterraneo d'estate), questa stessa massa termica aiu
 
 ### L'isolamento termico: la trasmittanza U e i ponti termici
 
-Se la massa termica è il "serbatoio", l'isolamento è il "coperchio che lo tiene chiuso". I due concetti lavorano insieme, non in alternativa.
+==Se la massa termica è il "serbatoio", l'isolamento è il "coperchio che lo tiene chiuso".== I due concetti lavorano insieme, non in alternativa.
 
 L'isolamento si misura con la **trasmittanza termica U** (in W/m²·K): indica quanti Watt di calore passano attraverso un metro quadro di parete per ogni grado di differenza di temperatura tra l'interno e l'esterno. Più il valore di U è basso, meglio isola la parete.
 
@@ -114,7 +114,7 @@ L'isolamento si misura con la **trasmittanza termica U** (in W/m²·K): indica q
 
 La normativa italiana attuale richiede per le nuove costruzioni un valore U non superiore a 0,30-0,34 W/m²·K (varia per zona climatica). Una casa passiva va ben oltre.
 
-I **ponti termici** sono i punti deboli dell'isolamento: giunzioni tra parete e solaio, angoli, davanzali, strutture metalliche che "tagliano" lo strato isolante. In un edificio mal progettato, i ponti termici possono arrivare a rappresentare il 30-40% delle dispersioni totali, anche con una parete ben isolata. Su un termocamere infrarossi, i ponti termici appaiono come macchie calde d'inverno — mostrano esattamente dove il calore "fugge".
+==I **ponti termici** sono i punti deboli dell'isolamento: giunzioni tra parete e solaio, angoli, davanzali, strutture metalliche che "tagliano" lo strato isolante.== In un edificio mal progettato, i ponti termici possono arrivare a rappresentare il 30-40% delle dispersioni totali, anche con una parete ben isolata. Su un termocamere infrarossi, i ponti termici appaiono come macchie calde d'inverno — mostrano esattamente dove il calore "fugge".
 
 ---
 
@@ -122,9 +122,9 @@ I **ponti termici** sono i punti deboli dell'isolamento: giunzioni tra parete e 
 
 In estate, il problema principale non è riscaldarsi ma raffrescarsi — possibilmente senza aria condizionata, che consuma molta energia e produce calore. L'architettura bioclimatica usa due principi fisici per ottenere ventilazione naturale.
 
-**L'effetto camino:** l'aria calda è più leggera e sale. Se in un edificio ci sono aperture in basso (dove entra aria fresca) e in alto (dove esce aria calda), si crea un flusso naturale ascendente. Le case tradizionali del Sahara, con i loro alti cortili coperti, funzionano esattamente così. Edifici moderni come il Reichstag di Berlino o il BedZED di Londra usano torri di ventilazione appositamente progettate per questo effetto.
+==**L'effetto camino:** l'aria calda è più leggera e sale.== Se in un edificio ci sono aperture in basso (dove entra aria fresca) e in alto (dove esce aria calda), si crea un flusso naturale ascendente. Le case tradizionali del Sahara, con i loro alti cortili coperti, funzionano esattamente così. Edifici moderni come il Reichstag di Berlino o il BedZED di Londra usano torri di ventilazione appositamente progettate per questo effetto.
 
-**La cross-ventilation (ventilazione trasversale):** se le aperture sono posizionate su lati opposti dell'edificio, anche il minimo vento esterno crea un flusso che attraversa i locali, raffreddando per evaporazione. Una regola pratica: le aperture in ingresso (sopravvento) devono essere più piccole di quelle in uscita (sottovento), per aumentare la velocità del flusso.
+==**La cross-ventilation (ventilazione trasversale):** se le aperture sono posizionate su lati opposti dell'edificio, anche il minimo vento esterno crea un flusso che attraversa i locali, raffreddando per evaporazione.== Una regola pratica: le aperture in ingresso (sopravvento) devono essere più piccole di quelle in uscita (sottovento), per aumentare la velocità del flusso.
 
 > 💡 **Piccolo test:** la prossima volta che fa caldo, apri le finestre su lati opposti della casa e osserva. Se senti una corrente anche con vento esterno leggero, funziona. Se hai aperto solo finestre su un lato, l'aria non si muove — anche con vento forte fuori.
 
@@ -153,9 +153,9 @@ Le **facciate verdi** (piante che crescono su reti o strutture fissate al muro e
 
 Per capire come funziona davvero l'isolamento, devi conoscere i tre modi in cui il calore si propaga. Sono tre fenomeni fisici diversi.
 
-**Conduzione:** il calore si trasferisce direttamente da molecola a molecola, attraverso la materia solida. I metalli conducono molto (le molecole sono vicine e libere di vibrare), il legno poco, il polistirolo pochissimo (l'aria intrappolata nelle cellule blocca la conduzione). I muri trasmettono calore per conduzione — per rallentare questo passaggio usiamo materiali con bassa conducibilità termica λ (lambda).
+==**Conduzione:** il calore si trasferisce direttamente da molecola a molecola, attraverso la materia solida.== I metalli conducono molto (le molecole sono vicine e libere di vibrare), il legno poco, il polistirolo pochissimo (l'aria intrappolata nelle cellule blocca la conduzione). I muri trasmettono calore per conduzione — per rallentare questo passaggio usiamo materiali con bassa conducibilità termica λ (lambda).
 
-**Convezione:** il calore si trasferisce attraverso il movimento di un fluido (aria o acqua). L'aria calda sale, quella fredda scende, creando correnti che trasportano energia. Le finestre disperdono molto calore per convezione (l'aria vicino al vetro freddo si raffredda, scende, e porta via calore dall'ambiente). Il doppio vetro con gas inerte (argon) riduce la convezione perché il gas è più viscoso dell'aria normale.
+==**Convezione:** il calore si trasferisce attraverso il movimento di un fluido (aria o acqua).== L'aria calda sale, quella fredda scende, creando correnti che trasportano energia. Le finestre disperdono molto calore per convezione (l'aria vicino al vetro freddo si raffredda, scende, e porta via calore dall'ambiente). Il doppio vetro con gas inerte (argon) riduce la convezione perché il gas è più viscoso dell'aria normale.
 
 **Irraggiamento:** ogni corpo a temperatura superiore allo zero assoluto emette radiazione elettromagnetica infrarossa. Il sole scalda la Terra per irraggiamento, attraverso il vuoto dello spazio. Un muro colpito dal sole si scalda per irraggiamento solare. Materiali con alta emissività (scuri, opachi) assorbono e irraggiano molto; materiali con bassa emissività (superfici argentate) riflettono la radiazione. Per questo le coperte termiche dei maratoneti sono d'alluminio: riflettono il calore del corpo verso l'interno.
 
@@ -189,7 +189,7 @@ Cosa hanno fatto:
 - Installazione di pannelli fotovoltaici sul tetto (35 kWp)
 - Tetto verde su una parte del tetto piano
 
-Risultato: fabbisogno energetico sceso a 22 kWh/m²·anno — certificazione CasaClima A4. Risparmio sulla bolletta annuale: circa 68.000 €. Tempo di ritorno dell'investimento: 14 anni. Ma la scuola dura 50 anni, quindi il risparmio netto nei decenni successivi supera abbondantemente l'investimento iniziale.
+Risultato: fabbisogno energetico sceso a 22 kWh/m²·anno — certificazione CasaClima A4. Risparmio sulla bolletta annuale: circa 68.000 €. Tempo di ritorno dell'investimento: 14 anni. ==Ma la scuola dura 50 anni, quindi il risparmio netto nei decenni successivi supera abbondantemente l'investimento iniziale.==
 
 In più: gli studenti ci stanno meglio. Temperatura uniforme, nessuna corrente d'aria, qualità dell'aria misurabile con sensori CO₂ nelle aule. L'apprendimento migliora quando il comfort termico è stabile.
 

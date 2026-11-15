@@ -29,11 +29,11 @@ Prima di capire come funzionano i sistemi di trasporto di oggi, vale la pena cap
 
 ### Dalla ruota al treno superveloce: storia compatta
 
-**La ruota** — inventata in Mesopotamia circa 5.500 anni fa — è la prima grande rivoluzione nei trasporti terrestri. Prima della ruota, tutto si spostava a dorso d'animale o su slitta. Con la ruota, un cavallo può trascinare un carro che pesa dieci volte il suo peso su una strada lastricata.
+==**La ruota** — inventata in Mesopotamia circa 5.500 anni fa — è la prima grande rivoluzione nei trasporti terrestri.== Prima della ruota, tutto si spostava a dorso d'animale o su slitta. Con la ruota, un cavallo può trascinare un carro che pesa dieci volte il suo peso su una strada lastricata.
 
 Per duemila anni, le strade romane sono state la rete di trasporto più sofisticata d'Europa: 80.000 km di strade lastricate che collegavano ogni angolo dell'Impero. La velocità massima era di circa 8 km/h per i carri, 40 km/h per i messaggeri a cavallo. Un messaggio da Roma a Londra impiegava circa due settimane.
 
-La vera rivoluzione arriva nel 1769, quando James Watt perfeziona la **macchina a vapore**. Nel 1825, George Stephenson inaugura la prima ferrovia pubblica a vapore al mondo (Stockton-Darlington, Inghilterra). La velocità sale a 25 km/h — tre volte la velocità di un cavallo al trotto sostenuto. Nel 1869, la ferrovia transcontinentale unisce gli Stati Uniti da costa a costa: per la prima volta nella storia, è possibile attraversare un continente in settimane anziché mesi.
+==La vera rivoluzione arriva nel 1769, quando James Watt perfeziona la **macchina a vapore**.== Nel 1825, George Stephenson inaugura la prima ferrovia pubblica a vapore al mondo (Stockton-Darlington, Inghilterra). La velocità sale a 25 km/h — tre volte la velocità di un cavallo al trotto sostenuto. Nel 1869, la ferrovia transcontinentale unisce gli Stati Uniti da costa a costa: per la prima volta nella storia, è possibile attraversare un continente in settimane anziché mesi.
 
 Nel 1885, Karl Benz inventa il **motore a combustione interna** applicato a un veicolo: nasce l'automobile. Nel 1913, Henry Ford introduce la catena di montaggio: le auto diventano abbordabili per la classe media. Nel 1950, negli Stati Uniti ci sono già 50 milioni di automobili. Oggi nel mondo circolano circa 1,5 miliardi di veicoli a motore.
 
@@ -45,7 +45,7 @@ L'**Alta Velocità** ferroviaria nasce in Giappone nel 1964 con lo Shinkansen (l
 
 ### I sistemi di trasporto: una panoramica comparata
 
-I sistemi di trasporto si confrontano su quattro dimensioni fondamentali: **velocità**, **capacità** (quante persone o quante merci), **costo**, **emissioni**. Nessun sistema è migliore degli altri in assoluto — ogni sistema eccelle in alcune dimensioni e fallisce in altre.
+==I sistemi di trasporto si confrontano su quattro dimensioni fondamentali: **velocità**, **capacità** (quante persone o quante merci), **costo**, **emissioni**.== ==Nessun sistema è migliore degli altri in assoluto — ogni sistema eccelle in alcune dimensioni e fallisce in altre.==
 
 ---
 
@@ -57,13 +57,13 @@ Ma ha costi ambientali enormi. Un'autovettura con un solo passeggero emette medi
 
 Il trasporto merci su strada (camion) è responsabile di circa il 7% delle emissioni totali dell'UE — più di tutto il trasporto aereo europeo combinato. Un camion da 40 tonnellate consuma circa 30 litri di diesel ogni 100 km.
 
-**Occupazione del suolo:** l'automobile è il mezzo di trasporto che occupa più spazio per unità di passeggero. Uno spazio di parcheggio occupa circa 12-15 m² — lo stesso spazio che permetterebbe il ricovero di 10-12 biciclette. Una corsia stradale di 3,5 m di larghezza trasporta circa 1.000-2.000 persone all'ora in auto private, ma 10.000-20.000 in autobus, e fino a 50.000 in metropolitana.
+==**Occupazione del suolo:** l'automobile è il mezzo di trasporto che occupa più spazio per unità di passeggero.== Uno spazio di parcheggio occupa circa 12-15 m² — lo stesso spazio che permetterebbe il ricovero di 10-12 biciclette. Una corsia stradale di 3,5 m di larghezza trasporta circa 1.000-2.000 persone all'ora in auto private, ma 10.000-20.000 in autobus, e fino a 50.000 in metropolitana.
 
 ---
 
 #### Trasporto ferroviario
 
-Il treno è il mezzo di trasporto di massa più efficiente energeticamente per le distanze medie (50-800 km). Le emissioni per passeggero-km dipendono dal mix energetico della rete elettrica: un treno in Italia — dove circa il 40% dell'elettricità viene da rinnovabili — emette in media 35-50 g CO₂/km per passeggero. Un treno in Francia — dove l'80% è nucleare — emette meno di 10 g CO₂/km.
+==Il treno è il mezzo di trasporto di massa più efficiente energeticamente per le distanze medie (50-800 km).== Le emissioni per passeggero-km dipendono dal mix energetico della rete elettrica: un treno in Italia — dove circa il 40% dell'elettricità viene da rinnovabili — emette in media 35-50 g CO₂/km per passeggero. Un treno in Francia — dove l'80% è nucleare — emette meno di 10 g CO₂/km.
 
 Il treno ad Alta Velocità cambia completamente il confronto con l'aereo sulle tratte medio-brevi. Roma-Milano in treno: 2h55min, circa 50 g CO₂/passeggero. Roma-Milano in aereo: ~1h volo + 1h30 spostamenti aeroporto + 1h imbarco/sbarco = 3h30-4h totali, circa 130-180 g CO₂/passeggero. Il treno è più veloce porta-a-porta e tre volte meno inquinante.
 
@@ -73,7 +73,7 @@ Il treno ad Alta Velocità cambia completamente il confronto con l'aereo sulle t
 
 L'aereo è imbattibile per le lunghe distanze (oltre 800-1.000 km) e per raggiungere luoghi non serviti da treni ad alta velocità. Un volo Roma-New York (6.900 km) in aereo richiede circa 10 ore; lo stesso percorso in nave richiede 7-10 giorni.
 
-Ma le emissioni dell'aereo sono le più alte per km tra tutti i mezzi di trasporto. Un volo in classe economica Roma-New York emette circa 200-250 kg di CO₂ per passeggero, a cui vanno aggiunti gli **effetti di forzatura radiativa ad alta quota** (effetto delle scie di condensazione, degli ossidi di azoto ad alta quota) che moltiplicano l'impatto climatico effettivo per un fattore stimato tra 2 e 4.
+==Ma le emissioni dell'aereo sono le più alte per km tra tutti i mezzi di trasporto.== Un volo in classe economica Roma-New York emette circa 200-250 kg di CO₂ per passeggero, a cui vanno aggiunti gli **effetti di forzatura radiativa ad alta quota** (effetto delle scie di condensazione, degli ossidi di azoto ad alta quota) che moltiplicano l'impatto climatico effettivo per un fattore stimato tra 2 e 4.
 
 **Il paradosso del volo a basso costo:** il prezzo di un biglietto aereo spesso non include il reale costo ambientale. Il cherosene per l'aviazione non è tassato a livello internazionale — al contrario del carburante per le auto. Questo è uno dei più grandi sussidi impliciti ai combustibili fossili a livello globale.
 
@@ -81,9 +81,9 @@ Ma le emissioni dell'aereo sono le più alte per km tra tutti i mezzi di traspor
 
 #### Trasporto marittimo
 
-Il trasporto marittimo è il più efficiente per le merci su lunghe distanze: una grande nave portacontainer può trasportare migliaia di tonnellate di merci usando pochi grammi di carburante per tonnellata-km — molto meno di qualsiasi altro mezzo. Questo è il motivo per cui il 90% delle merci mondiali viaggia via mare.
+Il trasporto marittimo è il più efficiente per le merci su lunghe distanze: una grande nave portacontainer può trasportare migliaia di tonnellate di merci usando pochi grammi di carburante per tonnellata-km — molto meno di qualsiasi altro mezzo. ==Questo è il motivo per cui il 90% delle merci mondiali viaggia via mare.==
 
-Ma il trasporto marittimo globale produce circa il 2,5% delle emissioni mondiali di CO₂ — più di tutta l'aviazione. Il carburante usato dalle navi (bunker fuel) è uno dei combustibili più inquinanti, con alto contenuto di zolfo.
+==Ma il trasporto marittimo globale produce circa il 2,5% delle emissioni mondiali di CO₂ — più di tutta l'aviazione.== Il carburante usato dalle navi (bunker fuel) è uno dei combustibili più inquinanti, con alto contenuto di zolfo.
 
 Una nave portacontainer moderna (ultra-large) può trasportare fino a 24.000 TEU (Twenty-foot Equivalent Unit — container da 20 piedi). Il porto di Shanghai — il più trafficato del mondo — gestisce circa 45 milioni di TEU all'anno.
 
@@ -95,7 +95,7 @@ Mentre il trasporto di persone è quello che vedi ogni giorno — strade, treni,
 
 **Il container** è uno degli oggetti che ha cambiato di più il mondo nel XX secolo. Introdotto commercialmente nel 1956 da Malcolm McLean, il container standardizza le dimensioni dei "pacchi" di merce. Prima del container, caricare e scaricare una nave richiedeva settimane di lavoro manuale (con enormi costi e rischi di furto e danneggiamento). Con il container, una gru carica o scarica un container in pochi minuti.
 
-Il risultato: il costo di spedire un container da Shanghai a Rotterdam (21.000 km) è sceso, in termini reali, di oltre il 90% rispetto al 1960. Questo ha reso economicamente conveniente produrre merci in Asia e venderle in Europa — la base della globalizzazione economica.
+Il risultato: il costo di spedire un container da Shanghai a Rotterdam (21.000 km) è sceso, in termini reali, di oltre il 90% rispetto al 1960. ==Questo ha reso economicamente conveniente produrre merci in Asia e venderle in Europa — la base della globalizzazione economica.==
 
 > 🌍 **Box Geo — Catene di approvvigionamento globali.** Come arriva un vestito dalla fabbrica al tuo armadio?
 > - Il cotone viene coltivato in India o Uzbekistan (spesso con fertilizzanti e pesticidi intensivi).
@@ -127,7 +127,7 @@ Oggi il 55% della popolazione mondiale vive in città — una percentuale destin
 | Bicicletta | 7.000-12.000 | 0 (uso, 5 produzione) | 2-3 m² |
 | A piedi | 4.000-8.000 | 0 | 1-2 m² |
 
-La soluzione al problema della mobilità urbana non è "più strade" — è dimostrato che aggiungere corsie aumenta il traffico (fenomeno detto **domanda indotta**: più strade = più persone scelgono l'auto). La soluzione è rendere le alternative all'auto private più rapide, più comode e più sicure.
+==La soluzione al problema della mobilità urbana non è "più strade" — è dimostrato che aggiungere corsie aumenta il traffico (fenomeno detto **domanda indotta**: più strade = più persone scelgono l'auto).== La soluzione è rendere le alternative all'auto private più rapide, più comode e più sicure.
 
 ---
 
@@ -152,7 +152,7 @@ I veicoli elettrici (EV) sostituiscono il motore a combustione interna con un mo
 
 La mobilità condivisa — servizi in cui un veicolo viene usato da più persone in momenti diversi — è in forte crescita nelle città europee.
 
-**Car sharing:** un'auto condivisa sostituisce mediamente 7-15 auto private, secondo vari studi europei. Riduce le auto parcate e le emissioni per km percorso (perché l'auto viene usata di più ed è spesso più recente). Ma l'impatto reale dipende da chi lo usa: se sostituisce chi prima usava l'auto propria, riduce le emissioni; se attira chi prima usava bus o bici, le aumenta.
+**Car sharing:** un'auto condivisa sostituisce mediamente 7-15 auto private, secondo vari studi europei. Riduce le auto parcate e le emissioni per km percorso (perché l'auto viene usata di più ed è spesso più recente). ==Ma l'impatto reale dipende da chi lo usa: se sostituisce chi prima usava l'auto propria, riduce le emissioni; se attira chi prima usava bus o bici, le aumenta.==
 
 **Bike sharing:** le stazioni di bici condivise nelle città europee hanno avuto successo dove le infrastrutture ciclabili sono adeguate (Olanda, Danimarca, grandi città con rete ciclabile). Dove le piste ciclabili sono scarse o pericolose, l'utilizzo crolla.
 
@@ -169,9 +169,9 @@ La mobilità condivisa — servizi in cui un veicolo viene usato da più persone
 | Milano-Parigi | 7h | 3h30-4h | 70-100 | 200-280 |
 | Roma-Berlino | 12h+ | 4h-5h | 110-150 | 400-550 |
 
-Il punto di pareggio temporale (dove il volo è più veloce door-to-door del treno) si colloca intorno ai 700-900 km in Europa. Per distanze inferiori, il treno è spesso più rapido — e sempre molto meno inquinante.
+Il punto di pareggio temporale (dove il volo è più veloce door-to-door del treno) si colloca intorno ai 700-900 km in Europa. ==Per distanze inferiori, il treno è spesso più rapido — e sempre molto meno inquinante.==
 
-Il problema è che il prezzo non riflette queste differenze ambientali. Un volo low cost Roma-Barcellona può costare 20 €; il treno equivalente (con ferrovia notturna o cambio) costa spesso 80-150 €. Questa distorsione di prezzo è in parte dovuta alla mancata tassazione del carburante aereo e all'assenza di sistemi di carbon pricing nel settore dell'aviazione internazionale.
+==Il problema è che il prezzo non riflette queste differenze ambientali.== Un volo low cost Roma-Barcellona può costare 20 €; il treno equivalente (con ferrovia notturna o cambio) costa spesso 80-150 €. Questa distorsione di prezzo è in parte dovuta alla mancata tassazione del carburante aereo e all'assenza di sistemi di carbon pricing nel settore dell'aviazione internazionale.
 
 ---
 
@@ -183,7 +183,7 @@ Il trasporto pubblico — bus, tram, metropolitana, treno regionale — è il me
 
 In Italia, il trasporto pubblico locale soffre storicamente di sottoinvestimento: molte città del Mezzogiorno hanno reti di bus con frequenze di 30-60 minuti e percorsi poco diretti. Le città del Nord Europa (Vienna, Amsterdam, Zurigo) hanno frequenze di 5-10 minuti su tutta la rete, tariffe integrate per tutti i mezzi, e puntualità superiore all'80%.
 
-La differenza non è culturale — è di investimento e pianificazione.
+==La differenza non è culturale — è di investimento e pianificazione.==
 
 ---
 

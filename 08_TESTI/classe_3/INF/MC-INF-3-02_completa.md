@@ -23,7 +23,7 @@ Come funziona — e cosa può andare storto?
 
 ### Le macchine non pensano. Ottimizzano.
 
-Il termine "intelligenza artificiale" crea aspettative sbagliate. Un modello di machine learning non pensa, non capisce, non ragiona. Esegue un'operazione matematica molto complessa: trovare pattern in enormi quantità di dati e usarli per fare previsioni su dati nuovi.
+Il termine "intelligenza artificiale" crea aspettative sbagliate. ==Un modello di machine learning non pensa, non capisce, non ragiona.== ==Esegue un'operazione matematica molto complessa: trovare pattern in enormi quantità di dati e usarli per fare previsioni su dati nuovi.==
 
 Questa distinzione non è filosofica — è tecnica, e ha conseguenze pratiche dirette su come ti fidi di questi strumenti, come li usi e come ne valuti i limiti.
 
@@ -35,7 +35,7 @@ Il machine learning tradizionale si divide in tre famiglie principali.
 
 **Apprendimento supervisionato**
 
-Il modello viene addestrato su un dataset di esempi *etichettati*: coppie (input, risposta corretta). Per ogni esempio, il modello fa una previsione, la confronta con la risposta corretta, misura l'errore e aggiusta i propri parametri interni per ridurlo. Questo processo si ripete milioni di volte.
+==Il modello viene addestrato su un dataset di esempi *etichettati*: coppie (input, risposta corretta).== Per ogni esempio, il modello fa una previsione, la confronta con la risposta corretta, misura l'errore e aggiusta i propri parametri interni per ridurlo. Questo processo si ripete milioni di volte.
 
 Esempio: per addestrare un classificatore di email spam, gli mostri migliaia di email già etichettate come "spam" o "non spam". Il modello impara quali caratteristiche — certe parole, certe strutture, certi mittenti — sono associate allo spam. Poi applica quello che ha imparato alle email nuove.
 
@@ -55,7 +55,7 @@ Il modello impara interagendo con un ambiente: prova azioni, riceve ricompense o
 
 ### Le reti neurali e il deep learning
 
-I modelli più potenti oggi usano **reti neurali artificiali** — strutture matematiche ispirate (vagamente) alla struttura del cervello biologico.
+==I modelli più potenti oggi usano **reti neurali artificiali** — strutture matematiche ispirate (vagamente) alla struttura del cervello biologico.==
 
 Una rete neurale è organizzata in **strati** (layers):
 - Uno strato di input che riceve i dati (es. i pixel di un'immagine).
@@ -74,13 +74,13 @@ GPT-4 è un esempio di grande modello linguistico: usa molti parametri, cioè va
 
 ### Allucinazioni, bias e limiti
 
-I modelli di machine learning hanno limiti strutturali che è fondamentale conoscere.
+==I modelli di machine learning hanno limiti strutturali che è fondamentale conoscere.==
 
 **Allucinazioni**
 
-I modelli linguistici come ChatGPT non "sanno" le cose nel senso in cui le sa una persona. Generano testo *statisticamente plausibile* basandosi sui pattern del testo di addestramento. Possono produrre informazioni false dette con tono di assoluta sicurezza — inventare citazioni, date, nomi di persone, sentenze giudiziarie. Questo si chiama "allucinazione".
+==I modelli linguistici come ChatGPT non "sanno" le cose nel senso in cui le sa una persona.== Generano testo *statisticamente plausibile* basandosi sui pattern del testo di addestramento. Possono produrre informazioni false dette con tono di assoluta sicurezza — inventare citazioni, date, nomi di persone, sentenze giudiziarie. Questo si chiama "allucinazione".
 
-Non è un bug: è una caratteristica strutturale di come funzionano questi modelli. La soluzione non è smettere di usarli — è verificare sempre le informazioni importanti con fonti primarie.
+==Non è un bug: è una caratteristica strutturale di come funzionano questi modelli.== La soluzione non è smettere di usarli — è verificare sempre le informazioni importanti con fonti primarie.
 
 **Bias**
 
@@ -104,7 +104,7 @@ Il mondo cambia. Un modello addestrato su dati del 2020 applicato a dati del 202
 
 ### Il pipeline del machine learning
 
-Addestrare un modello è un processo iterativo in molti passi.
+==Addestrare un modello è un processo iterativo in molti passi.==
 
 1. **Raccolta dei dati:** trovare o creare il dataset di addestramento.
 2. **Pulizia e preprocessing:** rimuovere errori, gestire valori mancanti, normalizzare le scale.

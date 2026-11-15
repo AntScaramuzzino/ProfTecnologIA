@@ -31,17 +31,17 @@ Pensa al quartiere della tua scuola. Qual è il problema più fastidioso che ved
 
 Il termine "smart city" (città intelligente) è diventato così di moda da perdere quasi significato. Lo usano i marketing manager delle aziende tecnologiche per vendere prodotti. Lo usano i politici per promettere futuro. Lo usano i consulenti per giustificare consulenze.
 
-Dietro la retorica, c'è un'idea precisa: **una città che usa dati per migliorare i servizi ai propri cittadini**. Non la tecnologia per sé stessa. Non le app per le app. I dati come strumento per prendere decisioni migliori su come gestire il traffico, i rifiuti, l'energia, i trasporti, la sicurezza.
+==Dietro la retorica, c'è un'idea precisa: **una città che usa dati per migliorare i servizi ai propri cittadini**.== Non la tecnologia per sé stessa. Non le app per le app. I dati come strumento per prendere decisioni migliori su come gestire il traffico, i rifiuti, l'energia, i trasporti, la sicurezza.
 
 Ma questa definizione apre immediatamente una domanda che non è tecnica: migliori per chi? Più efficiente per chi? I dati sono raccolti su tutti i cittadini, ma le decisioni prese con quei dati non necessariamente avvantaggiano tutti allo stesso modo.
 
-Questa MC esplora la smart city come **scelta urbanistica e politica**, non come catalogo di gadget tecnologici. La tecnologia IoT (Internet of Things) — i sensori, i dispositivi connessi, le reti di trasmissione dati — è trattata in dettaglio in MC-INF-3-01. Qui ci concentriamo su cosa quelle tecnologie fanno alla città e alle persone che ci vivono.
+==Questa MC esplora la smart city come **scelta urbanistica e politica**, non come catalogo di gadget tecnologici.== La tecnologia IoT (Internet of Things) — i sensori, i dispositivi connessi, le reti di trasmissione dati — è trattata in dettaglio in MC-INF-3-01. Qui ci concentriamo su cosa quelle tecnologie fanno alla città e alle persone che ci vivono.
 
 ---
 
 ### I sensori urbani: cosa misurano e perché
 
-Una smart city è pervasa di sensori — dispositivi che misurano grandezze fisiche e trasmettono i dati a sistemi centrali. Ecco i principali e cosa fanno:
+==Una smart city è pervasa di sensori — dispositivi che misurano grandezze fisiche e trasmettono i dati a sistemi centrali.== Ecco i principali e cosa fanno:
 
 **Sensori per il traffico:**
 - **Spire induttive:** bobine di filo metallico nello strato superficiale dell'asfalto. Quando un veicolo metallico passa sopra, altera il campo magnetico e il sensore lo rileva. Usato per contare i veicoli e misurare la velocità media. Costo: basso. Limite: non distingue il tipo di veicolo (auto? moto? camion?).
@@ -61,7 +61,7 @@ Una smart city è pervasa di sensori — dispositivi che misurano grandezze fisi
 
 ### Gli open data urbani: i dati che le città pubblicano
 
-Una componente spesso dimenticata della smart city è la **trasparenza dei dati**. Una città "smart" non è solo una città che raccoglie dati — è una città che condivide quei dati con i cittadini.
+==Una componente spesso dimenticata della smart city è la **trasparenza dei dati**.== ==Una città "smart" non è solo una città che raccoglie dati — è una città che condivide quei dati con i cittadini.==
 
 Gli **open data** (dati aperti) sono dataset pubblicati dalle pubbliche amministrazioni in formato liberamente accessibile e riutilizzabile (file CSV, JSON, API). Non richiedono registrazione. Non costano nulla. Chiunque — ricercatori, giornalisti, sviluppatori di app, associazioni, studenti — può scaricarli e usarli.
 
@@ -79,7 +79,7 @@ Come li trovi: il portale nazionale **dati.gov.it** aggrega gli open data di mig
 
 ### La partecipazione civica digitale: segnalare e decidere
 
-Una smart city non è solo fatta di sensori e algoritmi calati dall'alto. Le versioni più efficaci includono strumenti di **partecipazione civica digitale** — sistemi in cui i cittadini interagiscono attivamente con la gestione della città.
+Una smart city non è solo fatta di sensori e algoritmi calati dall'alto. ==Le versioni più efficaci includono strumenti di **partecipazione civica digitale** — sistemi in cui i cittadini interagiscono attivamente con la gestione della città.==
 
 **App per segnalare problemi:** applicazioni come "Municipium", "FixMyStreet", "Segnalami" permettono ai cittadini di fotografare un problema (una buca, un cassonetto che trabocca, un lampione rotto, un graffito) e mandare automaticamente la segnalazione all'ufficio competente del Comune, con geolocalizzazione. Alcune città hanno ridotto i tempi di risposta da settimane a ore per problemi segnalati via app.
 
@@ -91,7 +91,7 @@ Una smart city non è solo fatta di sensori e algoritmi calati dall'alto. Le ver
 
 ### La mobilità condivisa: dati e impatto reale
 
-Il car sharing, il bike sharing e lo scooter sharing sono spesso citati come esempi di smart city. Funzionano raccogliendo dati in tempo reale (dove sono i veicoli, chi li usa, per quanto tempo, da dove a dove) e permettono di ottimizzare la flotta in base alla domanda.
+Il car sharing, il bike sharing e lo scooter sharing sono spesso citati come esempi di smart city. ==Funzionano raccogliendo dati in tempo reale (dove sono i veicoli, chi li usa, per quanto tempo, da dove a dove) e permettono di ottimizzare la flotta in base alla domanda.==
 
 I dati sull'impatto sono misti:
 
@@ -109,7 +109,7 @@ I dati sull'impatto sono misti:
 
 ### "Smartness" non è solo tecnologia: la lezione di Copenhagen
 
-La città più "smart" d'Europa, per molti indicatori (qualità della vita, sostenibilità, mobilità), è Copenhagen. Non per i suoi sensori o le sue app — ma per la sua bici.
+La città più "smart" d'Europa, per molti indicatori (qualità della vita, sostenibilità, mobilità), è Copenhagen. ==Non per i suoi sensori o le sue app — ma per la sua bici.==
 
 Il **33% degli spostamenti quotidiani** a Copenhagen avviene in bicicletta. Non perché ci siano app speciali, ma perché negli ultimi quarant'anni la città ha progressivamente spostato spazio stradale dalle auto alle bici: 390 km di piste ciclabili separate dalla carreggiata, semafori calibrati sulla velocità media della bici (20 km/h — "onde verdi per ciclisti"), strade residenziali senza parcheggi laterali che liberano spazio ai pedoni.
 
@@ -125,7 +125,7 @@ La "smartness" di Copenhagen non è tecnologica. È politica: scelte sistematich
 ### Esempi mondiali: Amsterdam, Barcellona, Songdo
 
 **Amsterdam — Smart City come progetto partecipativo:**
-Amsterdam è la città che più ha evitato la trappola della smart city come prodotto venduto da grandi aziende. Il suo programma "Amsterdam Smart City" (dal 2009) è gestito da una fondazione no-profit e si concentra su: sperimentazione di soluzioni energetiche nei quartieri, co-design con i cittadini, e condivisione aperta dei risultati (tutti i progetti pubblicano i dati). La caratteristica principale: la velocità non è prioritaria. Si testa su scala ridotta, si valuta l'impatto reale, si scala solo quello che funziona davvero.
+Amsterdam è la città che più ha evitato la trappola della smart city come prodotto venduto da grandi aziende. Il suo programma "Amsterdam Smart City" (dal 2009) è gestito da una fondazione no-profit e si concentra su: sperimentazione di soluzioni energetiche nei quartieri, co-design con i cittadini, e condivisione aperta dei risultati (tutti i progetti pubblicano i dati). La caratteristica principale: la velocità non è prioritaria. ==Si testa su scala ridotta, si valuta l'impatto reale, si scala solo quello che funziona davvero.==
 
 **Barcellona — Superillas e gestione dei dati:**
 Barcellona è famosa per le "Superilles" (Supermanzanos): isolati di edifici dove il traffico di attraversamento è vietato, creando spazi pedonali e ciclabili all'interno. Ma ha anche un sistema di gestione dei dati urbani — la piattaforma "Sentilo" — che raccoglie dati da sensori di traffico, qualità dell'aria, umidità dei giardini, occupazione dei parcheggi. La caratteristica di Barcellona: ha esplicitamente discusso la proprietà dei dati — decidendo che i dati raccolti nello spazio pubblico appartengono ai cittadini, non alle aziende che gestiscono i sensori.
@@ -141,7 +141,7 @@ Milano ha una delle Zone a Traffico Limitato più grandi d'Europa (Area B — 72
 
 I dati raccolti permettono di:
 1. **Identificare in tempo reale** i veicoli non autorizzati e notificare automaticamente le sanzioni.
-2. **Analizzare i flussi** per capire dove si crea congestione e in quali fasce orarie.
+2. ==**Analizzare i flussi** per capire dove si crea congestione e in quali fasce orarie.==
 3. **Calibrare le tariffe** di Area C in base alla domanda (in futuro: pedaggi variabili — più caro nelle ore di punta, gratis o ridotto di notte).
 4. **Misurare l'impatto** delle politiche: dopo l'istituzione di Area C, il traffico nel centro è calato del 30%, le emissioni di PM10 del 18%.
 

@@ -24,13 +24,13 @@ Quello è il tuo prossimo problema.
 
 Prendi un momento e pensa a qualcosa che sai fare bene: allacciarti le scarpe, aprire un'app, preparare uno zaino. Tu lo fai senza pensarci. Il tuo cervello ha automatizzato quei movimenti — ma se provi a descriverli in parole, una per una, senza dare niente per scontato, scopri quanto sono complessi.
 
-Un computer può automatizzare molte operazioni, ma un programma tradizionale richiede istruzioni esplicite. Non puoi dare per scontato che ricavi da solo tutti i passaggi che tu esegui per abitudine. Un programma **deterministico**, a parità di dati e condizioni iniziali, produce lo stesso risultato.
+Un computer può automatizzare molte operazioni, ma un programma tradizionale richiede istruzioni esplicite. Non puoi dare per scontato che ricavi da solo tutti i passaggi che tu esegui per abitudine. ==Un programma **deterministico**, a parità di dati e condizioni iniziali, produce lo stesso risultato.==
 
 ---
 
 ### Cos'è un algoritmo
 
-Un **algoritmo** è un procedimento descritto da istruzioni precise e prive di ambiguità per risolvere un problema. Gli algoritmi deterministici producono lo stesso risultato a parità di dati e condizioni iniziali; altri possono usare scelte casuali.
+==Un **algoritmo** è un procedimento descritto da istruzioni precise e prive di ambiguità per risolvere un problema.== Gli algoritmi deterministici producono lo stesso risultato a parità di dati e condizioni iniziali; altri possono usare scelte casuali.
 
 La parola viene dal nome del matematico persiano **Al-Khwārizmī** (780–850 d.C.), che scrisse un trattato sul calcolo con numeri arabi. Quando i suoi testi furono tradotti in latino nel XII secolo, il suo nome fu latinizzato in *Algoritmi* — e da lì è nata la parola.
 
@@ -40,7 +40,7 @@ Un algoritmo non è un'invenzione dei computer: esiste nella matematica da mille
 
 ### Le tre strutture fondamentali
 
-Qualsiasi algoritmo — anche il più complesso programma mai scritto — è composto da tre sole strutture di controllo. Solo tre.
+==Qualsiasi algoritmo — anche il più complesso programma mai scritto — è composto da tre sole strutture di controllo.== Solo tre.
 
 **1. Sequenza**
 Le istruzioni vengono eseguite una dopo l'altra, nell'ordine in cui sono scritte. Nessuna viene saltata, nessuna viene ripetuta.
@@ -69,7 +69,7 @@ Esempio: finché ci sono messaggi non letti, leggi il prossimo messaggio e segna
 
 ### Variabili: dove metti i dati mentre lavori
 
-Un algoritmo spesso ha bisogno di ricordare informazioni mentre lavora. Per farlo usa le **variabili** — spazi di memoria con un nome, dove si possono salvare e modificare dati.
+Un algoritmo spesso ha bisogno di ricordare informazioni mentre lavora. ==Per farlo usa le **variabili** — spazi di memoria con un nome, dove si possono salvare e modificare dati.==
 
 Immagina una variabile come una scatola con un'etichetta. L'etichetta è il nome della variabile. Dentro ci metti un valore — un numero, una parola, vero o falso. Puoi guardare cosa c'è dentro, puoi cambiare il contenuto, puoi usarlo nei calcoli.
 
@@ -84,11 +84,11 @@ Le variabili cambiano mentre l'algoritmo gira. La stessa variabile `temperatura`
 
 ### Bug e debug: quando l'algoritmo sbaglia
 
-Un **bug** è un errore nell'algoritmo: un'istruzione sbagliata, una condizione formulata male, una sequenza nell'ordine sbagliato. Il nome viene dalla parola inglese per insetto. Si dice che la prima "bug" nella storia del software sia stato un vero insetto — una falena — trovata inceppata nel relè di un computer Harvard Mark II nel 1947. La programmratrice Grace Hopper la incollò nel registro di bordo: "primo caso reale di bug trovato".
+==Un **bug** è un errore nell'algoritmo: un'istruzione sbagliata, una condizione formulata male, una sequenza nell'ordine sbagliato.== Il nome viene dalla parola inglese per insetto. Si dice che la prima "bug" nella storia del software sia stato un vero insetto — una falena — trovata inceppata nel relè di un computer Harvard Mark II nel 1947. La programmratrice Grace Hopper la incollò nel registro di bordo: "primo caso reale di bug trovato".
 
 Il **debug** è il processo di trovare e correggere gli errori. È una competenza fondamentale: tutti gli algoritmi, anche quelli scritti da esperti, contengono bug. La differenza tra un programmatore mediocre e uno bravo non è che il bravo non fa errori — è che il bravo trova e corregge gli errori sistematicamente.
 
-Per fare debug su un algoritmo, la tecnica più efficace è la più semplice: **seguire l'algoritmo passo per passo**, con dati concreti, controllando a ogni passaggio se il risultato è quello atteso. Se ad un certo passo il risultato non è corretto, lì c'è il bug.
+==Per fare debug su un algoritmo, la tecnica più efficace è la più semplice: **seguire l'algoritmo passo per passo**, con dati concreti, controllando a ogni passaggio se il risultato è quello atteso.== Se ad un certo passo il risultato non è corretto, lì c'è il bug.
 
 ---
 
@@ -96,7 +96,7 @@ Per fare debug su un algoritmo, la tecnica più efficace è la più semplice: **
 
 Per scrivere algoritmi senza preoccuparsi del linguaggio di programmazione specifico si usano due strumenti:
 
-**Pseudocodice**: testo scritto in linguaggio quasi-naturale con una struttura precisa. Non è un linguaggio che il computer capisce — serve a ragionare sull'algoritmo prima di scriverlo nel linguaggio definitivo.
+**Pseudocodice**: testo scritto in linguaggio quasi-naturale con una struttura precisa. ==Non è un linguaggio che il computer capisce — serve a ragionare sull'algoritmo prima di scriverlo nel linguaggio definitivo.==
 
 **Diagramma di flusso**: rappresentazione grafica dell'algoritmo usando simboli standard. Un ovale per inizio/fine, un rettangolo per ogni azione, un rombo per ogni condizione, frecce che indicano il flusso.
 

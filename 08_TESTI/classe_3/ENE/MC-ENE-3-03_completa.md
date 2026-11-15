@@ -29,7 +29,7 @@ Un'energia si definisce **rinnovabile** quando si rigenerava a una velocità par
 
 Le principali fonti rinnovabili sono: **solare fotovoltaico**, **solare termico**, **energia eolica**, **energia idroelettrica**, **energia geotermica**, **biomasse e biogas**, ed alcune fonti marine ancora in fase di sviluppo (maree, onde, gradiente termico). Esistono differenze importanti di maturità tecnologica, costi, disponibilità geografica e caratteristiche di produzione tra queste fonti.
 
-Nel 2023, in Italia, le fonti rinnovabili hanno coperto circa il **40% della produzione elettrica** nazionale. A livello mondiale, la stessa quota è intorno al 30%. Queste cifre crescono ogni anno, ma la transizione completa è ancora lontana: la sfida non è solo produrre energia rinnovabile, ma farlo in quantità sufficiente, nei momenti in cui serve, e immagazzinarla quando non viene consumata subito.
+==Nel 2023, in Italia, le fonti rinnovabili hanno coperto circa il **40% della produzione elettrica** nazionale.== A livello mondiale, la stessa quota è intorno al 30%. Queste cifre crescono ogni anno, ma la transizione completa è ancora lontana: la sfida non è solo produrre energia rinnovabile, ma farlo in quantità sufficiente, nei momenti in cui serve, e immagazzinarla quando non viene consumata subito.
 
 > 💡 **Dato:** tra il 2010 e il 2023, il costo dell'energia solare è sceso del 90% — da oltre 300 dollari per megawattora a meno di 30. Nessuna fonte energetica nella storia ha avuto un calo di costi così rapido. L'energia eolica onshore è scesa del 70% nello stesso periodo. Questo cambiamento economico è alla base della transizione energetica attuale.
 
@@ -37,7 +37,7 @@ Nel 2023, in Italia, le fonti rinnovabili hanno coperto circa il **40% della pro
 
 ### L'energia solare fotovoltaica: la luce trasformata in corrente
 
-Il **fotovoltaico** trasforma direttamente la luce solare in elettricità. Il principio fisico alla base è l'**effetto fotoelettrico**: fotoni di luce che colpiscono certi materiali semiconduttori cedono la loro energia agli elettroni, mettendoli in movimento. Questo flusso di elettroni è una corrente elettrica.
+==Il **fotovoltaico** trasforma direttamente la luce solare in elettricità.== ==Il principio fisico alla base è l'**effetto fotoelettrico**: fotoni di luce che colpiscono certi materiali semiconduttori cedono la loro energia agli elettroni, mettendoli in movimento.== Questo flusso di elettroni è una corrente elettrica.
 
 Il materiale usato nelle celle fotovoltaiche è il **silicio** (Si), il secondo elemento più abbondante nella crosta terrestre (dopo l'ossigeno). Il silicio viene drogato con due tipi di impurità: uno strato di tipo N (con elettroni in eccesso) e uno di tipo P (con "buche" di elettroni mancanti). All'interfaccia tra i due strati si crea un campo elettrico interno che spinge gli elettroni in una sola direzione quando vengono eccitati dalla luce — producendo corrente continua (DC).
 
@@ -62,9 +62,9 @@ Il materiale usato nelle celle fotovoltaiche è il **silicio** (Si), il secondo 
 
 ### L'energia eolica: il vento trasformato in elettricità
 
-Un **aerogeneratore** (turbina eolica) converte l'energia cinetica del vento in energia elettrica. Le pale del rotore — progettate con profili aerodinamici simili alle ali degli aerei — vengono spinte dal vento in rotazione. Il rotore è collegato tramite un moltiplicatore di giri a un generatore elettrico.
+==Un **aerogeneratore** (turbina eolica) converte l'energia cinetica del vento in energia elettrica.== Le pale del rotore — progettate con profili aerodinamici simili alle ali degli aerei — vengono spinte dal vento in rotazione. Il rotore è collegato tramite un moltiplicatore di giri a un generatore elettrico.
 
-La potenza di una turbina eolica scala con il **cubo della velocità del vento**: se il vento raddoppia da 5 a 10 m/s, la potenza teorica disponibile aumenta di 2³ = 8 volte. Per questo la scelta del sito è cruciale: una differenza di 1 m/s nella velocità media annua del vento può cambiare la produzione del 20-30%.
+La potenza di una turbina eolica scala con il **cubo della velocità del vento**: se il vento raddoppia da 5 a 10 m/s, la potenza teorica disponibile aumenta di 2³ = 8 volte. ==Per questo la scelta del sito è cruciale: una differenza di 1 m/s nella velocità media annua del vento può cambiare la produzione del 20-30%.==
 
 **Le taglie degli aerogeneratori:**
 - Micro-eolico (< 100 kW): per uso privato, siti isolati
@@ -80,7 +80,7 @@ Il **fattore di carico** dell'eolico italiano è circa il 20-25% onshore, 35-45%
 
 ### L'energia idroelettrica: l'acqua che scende
 
-L'**energia idroelettrica** è la forma di energia rinnovabile più antica e più affidabile. Una centrale idroelettrica trasforma l'energia potenziale dell'acqua accumulata in quota (un lago artificiale o un bacino naturale) in energia elettrica:
+==L'**energia idroelettrica** è la forma di energia rinnovabile più antica e più affidabile.== Una centrale idroelettrica trasforma l'energia potenziale dell'acqua accumulata in quota (un lago artificiale o un bacino naturale) in energia elettrica:
 
 1. L'acqua scende attraverso **condotte forzate** dalla diga fino alla centrale.
 2. L'acqua in movimento fa girare una **turbina idraulica**.
@@ -90,7 +90,7 @@ I due tipi principali di turbine idrauliche:
 - **Turbina Pelton:** usata per dislivelli molto alti (> 200 m) e portate ridotte. L'acqua colpisce dei cucchiai a doppia curva sul bordo della ruota con getti ad alta velocità.
 - **Turbina Kaplan:** usata per dislivelli bassi (< 30 m) e portate elevate (grandi fiumi). Le pale sono regolabili per ottimizzare il rendimento al variare della portata.
 
-L'idroelettrico ha un enorme vantaggio rispetto al solare e all'eolico: è **dispacciabile**, cioè si può regolare a piacimento aprendo o chiudendo le paratoie. Quando serve più elettricità, si aumenta il flusso. Quando ce n'è troppa, si riduce. Questo lo rende prezioso per bilanciare la rete.
+==L'idroelettrico ha un enorme vantaggio rispetto al solare e all'eolico: è **dispacciabile**, cioè si può regolare a piacimento aprendo o chiudendo le paratoie.== Quando serve più elettricità, si aumenta il flusso. Quando ce n'è troppa, si riduce. Questo lo rende prezioso per bilanciare la rete.
 
 L'**idroelettrico di pompaggio** (o "pump storage") è la forma di accumulo energetico più diffusa al mondo: quando l'elettricità è in eccesso (ad esempio, in una giornata molto soleggiata con alto fotovoltaico), si usa quella elettricità per pompare acqua dal bacino inferiore a quello superiore — accumulando energia potenziale. Quando l'elettricità scarseggia, si rilascia l'acqua verso il basso per generare elettricità. È una "batteria" che usa l'acqua come mezzo di stoccaggio. L'Italia ha una capacità di pompaggio installata di circa 7.700 MW.
 
@@ -100,7 +100,7 @@ L'**idroelettrico di pompaggio** (o "pump storage") è la forma di accumulo ener
 
 All'interno della Terra, la temperatura aumenta di circa 30°C ogni chilometro di profondità. In alcune zone geologicamente attive, il calore è molto più vicino alla superficie. L'**energia geotermica** sfrutta questo calore.
 
-**Larderello, Toscana:** la prima centrale geotermica al mondo fu inaugurata qui nel 1904. Un ingegnere italiano, Piero Ginori Conti, usò il vapore naturale che fuoriusciva dalla terra (chiamato "soffioni boraciferi") per far girare una turbina. Oggi il campo geotermico di Larderello produce circa 800 MW di potenza elettrica — quasi il 2% dell'intera produzione elettrica italiana. È una fonte continua, disponibile 24 ore su 24, 365 giorni all'anno.
+**Larderello, Toscana:** la prima centrale geotermica al mondo fu inaugurata qui nel 1904. Un ingegnere italiano, Piero Ginori Conti, usò il vapore naturale che fuoriusciva dalla terra (chiamato "soffioni boraciferi") per far girare una turbina. Oggi il campo geotermico di Larderello produce circa 800 MW di potenza elettrica — quasi il 2% dell'intera produzione elettrica italiana. ==È una fonte continua, disponibile 24 ore su 24, 365 giorni all'anno.==
 
 La geotermia a bassa temperatura (20-80°C) viene usata per il riscaldamento degli edifici tramite **pompe di calore geotermiche**: circuiti sotterranei estraggono calore dal terreno e lo amplificano con un compressore per riscaldare case e uffici. Il coefficiente di prestazione (COP) di una pompa di calore geotermica è di 3-5: per ogni kWh di energia elettrica consumata, produce 3-5 kWh di calore utile.
 
@@ -108,7 +108,7 @@ La geotermia a bassa temperatura (20-80°C) viene usata per il riscaldamento deg
 
 ### Biomasse e biogas: l'energia dal ciclo del carbonio
 
-Le **biomasse** sono materiali organici di origine biologica recente — legna da ardere, residui agricoli (paglia, steli), residui forestali, scarti dell'industria alimentare. Quando bruciate, rilasciano CO₂. Ma a differenza dei combustibili fossili, questa CO₂ era stata assorbita dalla pianta nell'arco di pochi anni (non di milioni di anni): il **ciclo del carbonio rimane chiuso** sul breve periodo. In teoria, la combustione di biomasse è neutra dal punto di vista climatico, se la foresta viene rigenerata alla stessa velocità con cui viene tagliata.
+==Le **biomasse** sono materiali organici di origine biologica recente — legna da ardere, residui agricoli (paglia, steli), residui forestali, scarti dell'industria alimentare.== Quando bruciate, rilasciano CO₂. ==Ma a differenza dei combustibili fossili, questa CO₂ era stata assorbita dalla pianta nell'arco di pochi anni (non di milioni di anni): il **ciclo del carbonio rimane chiuso** sul breve periodo.== In teoria, la combustione di biomasse è neutra dal punto di vista climatico, se la foresta viene rigenerata alla stessa velocità con cui viene tagliata.
 
 In pratica, ci sono molte sfumature: le monoculture di biomasse per uso energetico competono con i terreni agricoli alimentari, e il trasporto di biomasse su lunghe distanze genera emissioni. Le biomasse sostenibili sono residui organici locali, non coltivazioni dedicate.
 
@@ -134,7 +134,7 @@ I mari e gli oceani offrono diverse forme di energia rinnovabile, ma la maggior 
 
 ### L'accumulo energetico: la soluzione al problema dell'intermittenza
 
-Fotovoltaico ed eolico sono fonti **intermittenti**: producono energia quando c'è sole o vento, non necessariamente quando c'è richiesta. Questo è il problema più grande della transizione energetica — non la mancanza di fonti rinnovabili, ma la difficoltà di bilanciare produzione variabile e consumo variabile.
+==Fotovoltaico ed eolico sono fonti **intermittenti**: producono energia quando c'è sole o vento, non necessariamente quando c'è richiesta.== ==Questo è il problema più grande della transizione energetica — non la mancanza di fonti rinnovabili, ma la difficoltà di bilanciare produzione variabile e consumo variabile.==
 
 Le soluzioni principali:
 

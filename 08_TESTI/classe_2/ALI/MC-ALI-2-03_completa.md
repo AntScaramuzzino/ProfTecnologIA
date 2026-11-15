@@ -27,12 +27,12 @@ Inizia adesso.
 
 ### Mangiare è chimica — e la tecnologia la controlla
 
-Ogni volta che mangi, stai introducendo nel tuo corpo centinaia di molecole diverse. Il tuo apparato digerente le scompone, le trasforma e le distribuisce agli organi e alle cellule che ne hanno bisogno. Non è un processo magico: è **chimica e biologia applicata**, e funziona in modo diverso a seconda di quello che mangi.
+Ogni volta che mangi, stai introducendo nel tuo corpo centinaia di molecole diverse. Il tuo apparato digerente le scompone, le trasforma e le distribuisce agli organi e alle cellule che ne hanno bisogno. ==Non è un processo magico: è **chimica e biologia applicata**, e funziona in modo diverso a seconda di quello che mangi.==
 
 > **Box Scienze — La digestione come processo chimico-meccanico**
 > La digestione inizia in bocca: i denti sminuzzano il cibo meccanicamente e la saliva, che contiene l'enzima **amilasi**, inizia a trasformare i carboidrati complessi (amidi) in zuccheri semplici. Nello stomaco, l'acido cloridrico (pH 1-2) e la pepsina attaccano le proteine spezzandole in aminoacidi. Nel duodeno, la bile prodotta dal fegato emulsiona i grassi (li scompone in microgoccioline) e i succhi pancreatici completano la digestione di carboidrati, proteine e grassi. Nell'intestino tenue, le molecole più piccole vengono assorbite attraverso le pareti intestinali e passano nel sangue. Nell'intestino crasso, i residui non digeribili (le fibre) vengono fermentati dai miliardi di batteri del microbioma intestinale, producendo acidi grassi a catena corta benefici per la salute del colon. L'intero processo, da quando ingoi il primo boccone a quando i nutrienti raggiungono le cellule, richiede tra le 4 e le 8 ore.
 
-I **nutrienti** che il corpo ricava dal cibo si dividono in due grandi categorie: macronutrienti e micronutrienti. I macronutrienti forniscono l'energia e i mattoni per costruire e riparare i tessuti. I micronutrienti non forniscono energia ma regolano migliaia di reazioni biochimiche essenziali.
+==I **nutrienti** che il corpo ricava dal cibo si dividono in due grandi categorie: macronutrienti e micronutrienti.== I macronutrienti forniscono l'energia e i mattoni per costruire e riparare i tessuti. I micronutrienti non forniscono energia ma regolano migliaia di reazioni biochimiche essenziali.
 
 ---
 
@@ -46,7 +46,7 @@ I **nutrienti** che il corpo ricava dal cibo si dividono in due grandi categorie
 
 Un dato importante: un adolescente di 12-14 anni ha bisogno di circa 250-300 g di carboidrati al giorno (a seconda del livello di attività fisica), di cui la grande maggioranza dovrebbe venire da carboidrati complessi e la quota di zuccheri aggiunti non dovrebbe superare il 10% dell'apporto calorico totale. Un barattolo da 330 ml di bibita zuccherata contiene mediamente 35 g di zucchero — già il 87% della quota massima consigliata di zuccheri aggiunti per un adolescente in un solo sorso.
 
-**Le proteine.** Sono i mattoni del corpo: ogni struttura biologica — muscoli, ossa, pelle, capelli, unghie, ormoni, enzimi, anticorpi — è fatta in parte di proteine. Le proteine sono catene di **aminoacidi**. Il corpo umano usa 20 aminoacidi diversi: 11 li può sintetizzare da solo; 9 sono **essenziali**, cioè devono necessariamente essere introdotti con la dieta perché il corpo non sa produrli.
+==**Le proteine.** Sono i mattoni del corpo: ogni struttura biologica — muscoli, ossa, pelle, capelli, unghie, ormoni, enzimi, anticorpi — è fatta in parte di proteine.== Le proteine sono catene di **aminoacidi**. ==Il corpo umano usa 20 aminoacidi diversi: 11 li può sintetizzare da solo; 9 sono **essenziali**, cioè devono necessariamente essere introdotti con la dieta perché il corpo non sa produrli.==
 
 Le **proteine complete** contengono tutti e 9 gli aminoacidi essenziali: si trovano in carne, pesce, uova, latte e derivati (proteine animali) e anche in soia, quinoa e amaranto (tra i pochi vegetali con profilo aminoacidico completo). Le **proteine incomplete** hanno un profilo aminoacidico incompleto: legumi, cereali, frutta secca. La combinazione di legumi + cereali (pasta e fagioli, riso e lenticchie) fornisce un profilo aminoacidico completo — è la ragione per cui queste combinazioni si ritrovano in cucine tradizionali di tutto il mondo, prima ancora che si capisse la biochimica degli aminoacidi.
 
@@ -66,9 +66,9 @@ La distinzione critica non è tra "grassi sì" e "grassi no", ma tra tipi di gra
 
 ### I micronutrienti: piccole quantità, effetti enormi
 
-Se i macronutrienti sono i mattoni e il carburante del corpo, i micronutrienti sono i regolatori — le molecole che permettono a migliaia di reazioni biochimiche di avvenire correttamente. Ne bastano pochissimi (da microgrammi a milligrammi al giorno) ma la loro assenza causa malattie specifiche e ben documentate.
+==Se i macronutrienti sono i mattoni e il carburante del corpo, i micronutrienti sono i regolatori — le molecole che permettono a migliaia di reazioni biochimiche di avvenire correttamente.== Ne bastano pochissimi (da microgrammi a milligrammi al giorno) ma la loro assenza causa malattie specifiche e ben documentate.
 
-**Le vitamine** sono composti organici necessari in piccole quantità per funzioni biologiche essenziali. Si dividono in:
+==**Le vitamine** sono composti organici necessari in piccole quantità per funzioni biologiche essenziali.== Si dividono in:
 - **Idrosolubili** (si sciolgono in acqua, non si accumulano nel corpo, devono essere assunti regolarmente): vitamine del gruppo B (B1/tiamina, B2/riboflavina, B3/niacina, B6/piridossina, B9/acido folico, B12/cobalamina) e vitamina C (acido ascorbico). La carenza di vitamina C causa lo **scorbuto** — la malattia che decimava gli equipaggi delle navi nei secoli scorsi. L'acido folico è essenziale per la divisione cellulare: la sua carenza in gravidanza aumenta il rischio di difetti al tubo neurale nel feto.
 - **Liposolubili** (si sciolgono nei grassi, si accumulano nel fegato e nel tessuto adiposo, non è necessario assumerle ogni giorno ma il loro eccesso può essere tossico): vitamina A (vista, sistema immunitario, pelle), vitamina D (assorbimento del calcio, salute delle ossa, sistema immunitario — prodotta anche dalla pelle sotto l'azione della luce solare), vitamina E (antiossidante), vitamina K (coagulazione del sangue).
 
@@ -104,7 +104,7 @@ Nel tempo, però, la ricerca nutrizionale ha messo in luce i limiti di quella pr
 Nel 2005 l'USDA ha sostituito la piramide con il "MyPlate" — un piatto diviso in quattro sezioni: frutta, verdura, cereali (preferibilmente integrali), proteine — con una tazza di latte a lato. Un modello più facile da visualizzare ma ancora dibattuto.
 
 La **piramide della dieta mediterranea** — sviluppata da Harvard e dai ricercatori del Seven Countries Study di Ancel Keys — è la versione oggi più sostenuta dalla ricerca scientifica per le popolazioni dell'Europa meridionale. Le sue caratteristiche principali:
-- **Base:** cereali integrali, frutta, verdura, legumi, olio d'oliva — da consumare ad ogni pasto
+- ==**Base:** cereali integrali, frutta, verdura, legumi, olio d'oliva — da consumare ad ogni pasto==
 - **Secondo livello:** pesce, frutti di mare, formaggi, yogurt, uova — da consumare più volte a settimana
 - **Terzo livello:** carne bianca — poche volte a settimana
 - **Vertice:** carne rossa, dolci, salumi — da consumare raramente
@@ -116,7 +116,7 @@ La **piramide della dieta mediterranea** — sviluppata da Harvard e dai ricerca
 
 Nel 2010 l'**UNESCO** ha iscritto la dieta mediterranea nella Lista del Patrimonio Culturale Immateriale dell'Umanità, riconoscendo che non è solo un regime alimentare ma un insieme di pratiche sociali e culturali: il mercato rionale, la coltivazione stagionale, la cucina condivisa, il pasto come momento di socialità.
 
-Dal punto di vista scientifico, le evidenze a favore della dieta mediterranea sono tra le più robuste della nutrizionistica moderna. Lo **Studio PREDIMED** (Prevención con Dieta Mediterránea), condotto su oltre 7.000 adulti in Spagna, ha dimostrato che una dieta mediterranea supplementata con olio d'oliva extravergine o frutta a guscio riduce del 30% il rischio di eventi cardiovascolari maggiori (infarto, ictus) rispetto a una dieta a basso contenuto di grassi. È considerato uno dei trial nutrizionali più importanti degli ultimi vent'anni.
+==Dal punto di vista scientifico, le evidenze a favore della dieta mediterranea sono tra le più robuste della nutrizionistica moderna.== Lo **Studio PREDIMED** (Prevención con Dieta Mediterránea), condotto su oltre 7.000 adulti in Spagna, ha dimostrato che una dieta mediterranea supplementata con olio d'oliva extravergine o frutta a guscio riduce del 30% il rischio di eventi cardiovascolari maggiori (infarto, ictus) rispetto a una dieta a basso contenuto di grassi. È considerato uno dei trial nutrizionali più importanti degli ultimi vent'anni.
 
 Elementi chiave della protezione cardiovascolare: gli acidi grassi monoinsaturi dell'olio d'oliva, i polifenoli (antiossidanti naturali) presenti in olio, verdure e vino rosso moderato, gli omega-3 del pesce azzurro, le fibre dei legumi e dei cereali integrali.
 
@@ -126,9 +126,9 @@ Elementi chiave della protezione cardiovascolare: gli acidi grassi monoinsaturi 
 
 Non tutti mangiano allo stesso modo per le stesse ragioni. Esistono condizioni mediche e scelte etiche che richiedono diete diverse.
 
-**Celiachia:** è un'intolleranza permanente al **glutine**, una proteina presente nel frumento, nell'orzo, nella segale e nel farro. Nelle persone celiache, il glutine scatena una risposta immunitaria che danneggia le pareti dell'intestino tenue, compromettendo l'assorbimento di tutti i nutrienti. L'unica terapia è l'eliminazione completa e permanente del glutine dalla dieta. In Italia la celiachia colpisce circa l'1% della popolazione (circa 600.000 persone diagnosticate, stima ISS 2023) ma si ritiene che molti casi siano ancora non diagnosticati. I prodotti "senza glutine" hanno il simbolo della spiga barrata.
+==**Celiachia:** è un'intolleranza permanente al **glutine**, una proteina presente nel frumento, nell'orzo, nella segale e nel farro.== Nelle persone celiache, il glutine scatena una risposta immunitaria che danneggia le pareti dell'intestino tenue, compromettendo l'assorbimento di tutti i nutrienti. L'unica terapia è l'eliminazione completa e permanente del glutine dalla dieta. In Italia la celiachia colpisce circa l'1% della popolazione (circa 600.000 persone diagnosticate, stima ISS 2023) ma si ritiene che molti casi siano ancora non diagnosticati. I prodotti "senza glutine" hanno il simbolo della spiga barrata.
 
-Attenzione: l'intolleranza al glutine diagnosticata è diversa dalla "sensibilità al glutine non celiaca" (un fenomeno ancora dibattuto scientificamente) e dalla scelta di evitare il glutine per altri motivi. Solo la celiachia è una patologia autoimmune con diagnosi medica specifica.
+Attenzione: l'intolleranza al glutine diagnosticata è diversa dalla "sensibilità al glutine non celiaca" (un fenomeno ancora dibattuto scientificamente) e dalla scelta di evitare il glutine per altri motivi. ==Solo la celiachia è una patologia autoimmune con diagnosi medica specifica.==
 
 **Diabete mellito di tipo 2:** è una condizione in cui il corpo non gestisce correttamente il glucosio nel sangue: o non produce abbastanza insulina, o le cellule non rispondono bene all'insulina (resistenza insulinica). La dieta per il diabete di tipo 2 si concentra sul controllo dell'indice glicemico degli alimenti (la velocità con cui un alimento alza la glicemia), sulla riduzione degli zuccheri semplici e sull'aumento di fibre. La dieta mediterranea è una delle più raccomandate per il diabete di tipo 2.
 
@@ -144,15 +144,15 @@ Ogni anno nel mondo vengono prodotti circa 9 miliardi di tonnellate di cibo. Di 
 
 In Italia, ogni famiglia butta in media 67 kg di cibo l'anno (dati ISPRA 2023). I prodotti più sprecati sono frutta e verdura fresca (si deteriorano velocemente), pane (rimane invenduto o raffermo), carne (scade prima di essere consumata).
 
-Lo spreco alimentare ha un costo ambientale enorme, spesso invisibile: sprecare un'insalata significa sprecare anche tutta l'acqua, l'energia e il suolo usati per produrla. Se lo spreco alimentare mondiale fosse un paese, sarebbe il terzo emettitore mondiale di gas serra, dopo Cina e USA. I Paesi Bassi, la Danimarca e la Svezia hanno ridotto lo spreco alimentare pro capite del 20-30% in 10 anni attraverso campagne di educazione alimentare nelle scuole, etichettatura più chiara delle date di scadenza e partnership con la grande distribuzione per ridurre l'invenduto.
+==Lo spreco alimentare ha un costo ambientale enorme, spesso invisibile: sprecare un'insalata significa sprecare anche tutta l'acqua, l'energia e il suolo usati per produrla.== Se lo spreco alimentare mondiale fosse un paese, sarebbe il terzo emettitore mondiale di gas serra, dopo Cina e USA. I Paesi Bassi, la Danimarca e la Svezia hanno ridotto lo spreco alimentare pro capite del 20-30% in 10 anni attraverso campagne di educazione alimentare nelle scuole, etichettatura più chiara delle date di scadenza e partnership con la grande distribuzione per ridurre l'invenduto.
 
 ---
 
 ### Come si leggono i valori nutrizionali per fare scelte informate
 
-Tornando all'etichetta (che hai già esplorato in MC-ALI-2-02): la **tabella dei valori nutrizionali** è il tuo strumento per confrontare prodotti diversi in modo oggettivo. In Europa, la dichiarazione nutrizionale deve indicare obbligatoriamente energia, grassi, grassi saturi, carboidrati, zuccheri, proteine e sale — sempre per 100 g (o 100 ml) del prodotto.
+==Tornando all'etichetta (che hai già esplorato in MC-ALI-2-02): la **tabella dei valori nutrizionali** è il tuo strumento per confrontare prodotti diversi in modo oggettivo.== ==In Europa, la dichiarazione nutrizionale deve indicare obbligatoriamente energia, grassi, grassi saturi, carboidrati, zuccheri, proteine e sale — sempre per 100 g (o 100 ml) del prodotto.==
 
-Perché per 100 g? Perché permette confronti equi tra prodotti con pesi di confezione diversi.
+Perché per 100 g? ==Perché permette confronti equi tra prodotti con pesi di confezione diversi.==
 
 **Esempio pratico — confronto tre barrette "energetiche":**
 

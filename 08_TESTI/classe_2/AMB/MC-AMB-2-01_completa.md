@@ -22,9 +22,9 @@ Come fa un edificio a reggere? E perché alcune strutture durano millenni mentre
 
 ### Ogni edificio è una macchina per sopportare forze.
 
-Guarda il soffitto sopra di te. Adesso immagina di togliere le pareti. Cosa succederebbe? Il soffitto cadrebbe. Ecco il problema fondamentale di ogni costruzione: come impedire alla struttura di cedere sotto il proprio peso e sotto i carichi che sopporta.
+Guarda il soffitto sopra di te. Adesso immagina di togliere le pareti. Cosa succederebbe? Il soffitto cadrebbe. ==Ecco il problema fondamentale di ogni costruzione: come impedire alla struttura di cedere sotto il proprio peso e sotto i carichi che sopporta.==
 
-Un edificio non sta in piedi "perché è solido". Sta in piedi perché le forze che agiscono su di esso vengono guidate in modo controllato verso il suolo. Capire come funziona una struttura significa capire dove vanno le forze — e come i materiali e le forme usate dai costruttori le gestiscono.
+Un edificio non sta in piedi "perché è solido". Sta in piedi perché le forze che agiscono su di esso vengono guidate in modo controllato verso il suolo. ==Capire come funziona una struttura significa capire dove vanno le forze — e come i materiali e le forme usate dai costruttori le gestiscono.==
 
 ---
 
@@ -36,11 +36,11 @@ Prima di capire come si costruisce, devi capire cosa si combatte. Sulle struttur
 
 #### Compressione — la forza che schiaccia
 
-La compressione si genera quando un elemento strutturale viene spinto da due parti opposte verso il suo centro. Immagina di comprimere una lattina tra le due mani: la stai mettendo in compressione.
+==La compressione si genera quando un elemento strutturale viene spinto da due parti opposte verso il suo centro.== Immagina di comprimere una lattina tra le due mani: la stai mettendo in compressione.
 
 I pilastri di un edificio, le colonne di un tempio romano, i mattoni di un muro portante — tutti lavorano principalmente in compressione. Il peso del tetto preme verso il basso; il suolo risponde verso l'alto; l'elemento strutturale tra i due è in compressione.
 
-I materiali che reggono bene la compressione sono: **pietra**, **mattoni**, **calcestruzzo**. Sono duri, resistono allo schiacciamento, ma sono anche fragili: se si incrinano, si rompono di schianto senza deformarsi prima.
+==I materiali che reggono bene la compressione sono: **pietra**, **mattoni**, **calcestruzzo**.== Sono duri, resistono allo schiacciamento, ma sono anche fragili: se si incrinano, si rompono di schianto senza deformarsi prima.
 
 > 💡 **Il segreto dell'arco.** Un arco in pietra o in mattoni funziona perché distribuisce il peso in forze di compressione lungo la curva. Ogni mattone spinge il mattone accanto verso il basso e verso l'esterno. Nessun elemento è in trazione — ogni elemento è solo compresso. Per questo gli archi romani durano: usano materiali che resistono perfettamente proprio alla compressione. Prova a spingere verticalmente un mattone: non si rompe. Prova a tirarlo dai due lati: si spacca subito.
 
@@ -48,9 +48,9 @@ I materiali che reggono bene la compressione sono: **pietra**, **mattoni**, **ca
 
 #### Trazione — la forza che tira
 
-La trazione è l'opposto della compressione: un elemento in trazione viene tirato da due parti opposte verso l'esterno. Un cavo di un ponte sospeso è in trazione: le due rive tirano il cavo in direzioni opposte.
+==La trazione è l'opposto della compressione: un elemento in trazione viene tirato da due parti opposte verso l'esterno.== Un cavo di un ponte sospeso è in trazione: le due rive tirano il cavo in direzioni opposte.
 
-I materiali che reggono bene la trazione sono: **acciaio**, **fibre di carbonio**, **corde e funi**. Questi materiali possono essere allungati senza rompersi — sono duttili. Al contrario, la pietra e il calcestruzzo reggono pochissimo la trazione: si spaccano.
+==I materiali che reggono bene la trazione sono: **acciaio**, **fibre di carbonio**, **corde e funi**.== Questi materiali possono essere allungati senza rompersi — sono duttili. Al contrario, la pietra e il calcestruzzo reggono pochissimo la trazione: si spaccano.
 
 Questo è esattamente il motivo per cui il cemento armato è stato inventato. Il **cemento armato** (inventato nell'Ottocento, brevettato dal giardiniere francese Joseph Monier nel 1867) combina i due materiali nel modo giusto: il cemento gestisce la compressione, le barre di acciaio all'interno gestiscono la trazione. Insieme fanno quello che nessuno dei due potrebbe fare da solo.
 
@@ -58,7 +58,7 @@ Questo è esattamente il motivo per cui il cemento armato è stato inventato. Il
 
 #### Flessione — la forza che piega
 
-Una trave orizzontale che sorregge un solaio non è in compressione pura né in trazione pura. Subisce la **flessione**: il peso del solaio la fa piegare verso il basso. Nella parte superiore della trave si genera compressione; nella parte inferiore si genera trazione.
+Una trave orizzontale che sorregge un solaio non è in compressione pura né in trazione pura. ==Subisce la **flessione**: il peso del solaio la fa piegare verso il basso.== ==Nella parte superiore della trave si genera compressione; nella parte inferiore si genera trazione.==
 
 Questa è la ragione per cui le travi in acciaio hanno una sezione a "H" o a "I" (profilo HEA, HEB, IPE): le due ali orizzontali (flanges) portano i carichi di flessione (compressione sopra, trazione sotto), mentre l'anima verticale collega le due ali e resiste alle forze di taglio.
 
@@ -70,7 +70,7 @@ Questa è la ragione per cui le travi in acciaio hanno una sezione a "H" o a "I"
 
 #### Taglio — la forza che scorre
 
-Il **taglio** è una forza che tende a fare scorrere una parte della struttura rispetto all'altra. Se appoggi un libro su un muro e spingi verso il basso, stai creando una forza di taglio nell'angolo tra libro e muro.
+==Il **taglio** è una forza che tende a fare scorrere una parte della struttura rispetto all'altra.== Se appoggi un libro su un muro e spingi verso il basso, stai creando una forza di taglio nell'angolo tra libro e muro.
 
 Nelle strutture edilizie il taglio è particolarmente importante nei nodi — i punti di connessione tra travi e pilastri. È anche la forza principale durante un terremoto: le scosse sismiche non spingono gli edifici verso il basso, ma li spingono lateralmente, creando forze di taglio enormi nelle pareti e nei nodi.
 
@@ -84,12 +84,12 @@ Combinando in modi diversi la gestione di queste quattro forze, gli ingegneri ha
 
 #### Il muro portante
 
-Il sistema strutturale più antico: le pareti dell'edificio sono anche quelle che portano i carichi. I muri portanti lavorano in compressione — portano il peso dei solai e del tetto e lo trasmettono alle fondazioni.
+==Il sistema strutturale più antico: le pareti dell'edificio sono anche quelle che portano i carichi.== I muri portanti lavorano in compressione — portano il peso dei solai e del tetto e lo trasmettono alle fondazioni.
 
 Materiali usati: **laterizio** (mattoni), **pietra**, **tufo**, **cls (calcestruzzo)**. Ancora oggi moltissime abitazioni civili italiane costruite fino agli anni Sessanta usano muri portanti in laterizio.
 
 Vantaggio: economico, semplice da costruire, ottimo isolamento termico e acustico.
-Limite: **non puoi abbattere un muro portante** senza mettere a rischio la stabilità dell'intero edificio. Se vuoi ristrutturare un appartamento con muri portanti, devi prima capire quali muri sono portanti e quali no — un errore qui può essere fatale.
+==Limite: **non puoi abbattere un muro portante** senza mettere a rischio la stabilità dell'intero edificio.== Se vuoi ristrutturare un appartamento con muri portanti, devi prima capire quali muri sono portanti e quali no — un errore qui può essere fatale.
 
 > 💡 **Come riconoscere un muro portante:** in un edificio tradizionale, i muri portanti sono i muri perimetrali e spesso quelli centrali (di spina). Di solito sono più spessi dei muri di divisione interna (tramezze). Se hai dubbi, cerca i segni sui soffitti: le travi del solaio poggiano sempre sui muri portanti.
 
@@ -97,9 +97,9 @@ Limite: **non puoi abbattere un muro portante** senza mettere a rischio la stabi
 
 #### Il telaio in cemento armato
 
-Dal Novecento in poi, la maggior parte degli edifici residenziali e commerciali è costruita con un **telaio in cemento armato**: una struttura di pilastri verticali e travi orizzontali che formano un reticolo tridimensionale. I carichi vengono trasmessi attraverso travi e pilastri alle fondazioni. Le pareti — spesso in laterizio o in pannelli prefabbricati — non portano carichi: separano gli spazi, ma non reggono l'edificio.
+Dal Novecento in poi, la maggior parte degli edifici residenziali e commerciali è costruita con un **telaio in cemento armato**: una struttura di pilastri verticali e travi orizzontali che formano un reticolo tridimensionale. ==I carichi vengono trasmessi attraverso travi e pilastri alle fondazioni.== Le pareti — spesso in laterizio o in pannelli prefabbricati — non portano carichi: separano gli spazi, ma non reggono l'edificio.
 
-Questo cambia tutto dal punto di vista architettonico. In un telaio in c.a. **puoi abbattere qualsiasi parete interna** senza problemi strutturali: solo i pilastri e le travi sono strutturali. Ecco perché gli edifici moderni hanno planimetrie flessibili.
+Questo cambia tutto dal punto di vista architettonico. In un telaio in c.a. ==**puoi abbattere qualsiasi parete interna** senza problemi strutturali: solo i pilastri e le travi sono strutturali.== Ecco perché gli edifici moderni hanno planimetrie flessibili.
 
 Il cemento armato si produce colando calcestruzzo liquido in casseforme (stampi temporanei di legno o metallo) attorno alle barre di acciaio. Quando il calcestruzzo si solidifica (in 28 giorni raggiunge il 95% della resistenza finale), rimuovi le casseforme e la struttura è pronta.
 
@@ -114,13 +114,13 @@ L'acciaio strutturale viene usato principalmente per edifici a uso industriale, 
 
 I grattacieli delle città moderne — quelli con tutta la struttura in acciaio e le facciate in vetro — sono stati resi possibili dall'acciaio strutturale. La Willis Tower di Chicago (ex Sears Tower, 1973, 443 m) è strutturata come un fascio di nove tubi in acciaio: la forma tubolare aumenta enormemente la resistenza al vento laterale.
 
-Limite: l'acciaio perde rapidamente resistenza ad alte temperature. Un incendio in un edificio non è pericoloso solo per le fiamme: se la struttura in acciaio si scalda oltre i 500-600°C, perde il 50% della resistenza e può collassare. Per questo le strutture in acciaio vengono rivestite con materiali ignifughi.
+==Limite: l'acciaio perde rapidamente resistenza ad alte temperature.== Un incendio in un edificio non è pericoloso solo per le fiamme: se la struttura in acciaio si scalda oltre i 500-600°C, perde il 50% della resistenza e può collassare. Per questo le strutture in acciaio vengono rivestite con materiali ignifughi.
 
 ---
 
 #### La struttura in legno lamellare
 
-Il **legno lamellare** (Glulam, dall'inglese *glued laminated timber*) è il materiale costruttivo più antico del mondo tornato di moda nel XXI secolo. Si produce incollando insieme strati di legno massiccio essiccato, alternando le direzioni della fibra. Il risultato è un materiale con resistenza strutturale superiore al legno massiccio, senza i difetti di nodi e deformazioni irregolari.
+==Il **legno lamellare** (Glulam, dall'inglese *glued laminated timber*) è il materiale costruttivo più antico del mondo tornato di moda nel XXI secolo.== Si produce incollando insieme strati di legno massiccio essiccato, alternando le direzioni della fibra. ==Il risultato è un materiale con resistenza strutturale superiore al legno massiccio, senza i difetti di nodi e deformazioni irregolari.==
 
 Il legno lamellare regge carichi enormi: l'arena del Forum di Assago (Milano) ha una copertura in legno lamellare con luci di 75 metri. In Scandinavia e in Centro Europa si costruiscono edifici residenziali fino a 18 piani completamente in legno (tecnologia CLT — *Cross Laminated Timber*).
 
@@ -130,7 +130,7 @@ Vantaggi rispetto al cemento: **peso molto inferiore** (un metro cubo di legno p
 
 ### Le fondazioni — il collegamento con il suolo
 
-Una struttura è robusta quanto le sue fondazioni. Le fondazioni trasferiscono tutti i carichi dell'edificio — peso proprio, carichi dei piani, neve, vento, traffico — al suolo sottostante. Se il suolo non regge, l'edificio si inclina, si crepa, o peggio collassa.
+Una struttura è robusta quanto le sue fondazioni. ==Le fondazioni trasferiscono tutti i carichi dell'edificio — peso proprio, carichi dei piani, neve, vento, traffico — al suolo sottostante.== Se il suolo non regge, l'edificio si inclina, si crepa, o peggio collassa.
 
 ---
 
@@ -180,7 +180,7 @@ Il calcestruzzo — una miscela di **cemento Portland** (legante), **sabbia** (a
 
 Un edificio moderno non è solo struttura: è anche un sistema di **isolamento**. Un edificio mal isolato dissipa calore d'inverno e accumula calore d'estate, obbligando gli impianti a lavorare di più — con costi energetici ed emissioni di CO₂ molto più elevati.
 
-I materiali isolanti hanno in comune una caratteristica: **bassa conduttività termica**. Questo significa che il calore si trasmette attraverso di loro molto lentamente.
+==I materiali isolanti hanno in comune una caratteristica: **bassa conduttività termica**.== Questo significa che il calore si trasmette attraverso di loro molto lentamente.
 
 **Lana di roccia (o lana minerale):** fibra prodotta da roccia basaltica o da scorie industriali. Ottimo isolante termico e acustico, incombustibile. Si usa in pannelli nelle pareti a intercapedine e nei tetti. Conduttività termica: 0,035-0,045 W/(m·K).
 
@@ -198,7 +198,7 @@ I materiali isolanti hanno in comune una caratteristica: **bassa conduttività t
 
 L'Italia è uno dei Paesi a più alto rischio sismico d'Europa: circa il 44% del territorio è classificato in zona sismica 1 o 2 (rischio alto o medio-alto). Il terremoto dell'Aquila (2009, Mw 6.3), quello dell'Emilia (2012, Mw 5.9 + 5.8), quello di Amatrice (2016, Mw 6.2) hanno causato complessivamente centinaia di vittime e danni per miliardi di euro — spesso in edifici costruiti prima che esistessero norme antisismiche adeguate.
 
-Un terremoto non spinge gli edifici verso il basso: li sposta lateralmente, orizzontalmente, in modo rapido e ripetuto. Questo crea forze di taglio enormi nelle strutture, che devono essere progettate per assorbirle senza collassare.
+==Un terremoto non spinge gli edifici verso il basso: li sposta lateralmente, orizzontalmente, in modo rapido e ripetuto.== ==Questo crea forze di taglio enormi nelle strutture, che devono essere progettate per assorbirle senza collassare.==
 
 ---
 
@@ -224,7 +224,7 @@ Nei telai in acciaio e nei edifici in cemento armato, la resistenza sismica si o
 
 #### Dissipatori sismici
 
-I **dissipatori** sono dispositivi che assorbono l'energia del sisma trasformandola in calore. Esistono diversi tipi: dissipatori viscosi (funzionano come gli ammortizzatori di un'auto), dissipatori isteretici (sfruttano la deformazione plastica di elementi metallici).
+==I **dissipatori** sono dispositivi che assorbono l'energia del sisma trasformandola in calore.== Esistono diversi tipi: dissipatori viscosi (funzionano come gli ammortizzatori di un'auto), dissipatori isteretici (sfruttano la deformazione plastica di elementi metallici).
 
 La Torre di Pavia (sede Intesa Sanpaolo a Torino, 2015) ha 16 dissipatori sismici integrati nella struttura, ciascuno capace di assorbire l'energia di un'auto lanciata a 100 km/h.
 

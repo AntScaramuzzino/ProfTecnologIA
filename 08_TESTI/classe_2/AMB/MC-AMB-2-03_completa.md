@@ -23,7 +23,7 @@ Chi ha deciso questa proporzione? Chi ha il potere di cambiarla? E come funziona
 
 ### Una città non si forma per caso. È il risultato di scelte.
 
-Ogni città — grande o piccola, moderna o antica — è il risultato di decisioni prese da persone: amministratori, ingegneri, architetti, imprenditori, cittadini. Alcune di queste decisioni risalgono a secoli fa; altre vengono prese ogni anno dai Comuni italiani.
+==Ogni città — grande o piccola, moderna o antica — è il risultato di decisioni prese da persone: amministratori, ingegneri, architetti, imprenditori, cittadini.== Alcune di queste decisioni risalgono a secoli fa; altre vengono prese ogni anno dai Comuni italiani.
 
 La **pianificazione urbanistica** è la disciplina che studia come organizzare lo spazio di una città — dove costruire, dove lasciare il verde, dove mettere le strade, dove collocare i servizi — in modo che la città funzioni bene per tutti i suoi abitanti.
 
@@ -45,7 +45,7 @@ Due strade principali perpendicolari — il **cardo** (nord-sud) e il **decumano
 
 Questo schema — griglia ortogonale, centro civico, separazione tra spazi pubblici e privati — è ancora leggibile in molte città italiane. Bologna, Torino, Firenze: se guardi una planimetria dal satellite, vedi ancora i contorni del cardo e del decumano romano sotto le strade medievali.
 
-**Perché funzionava:** la griglia ortogonale facilita l'orientamento, la distribuzione dell'acqua e delle fogne, la suddivisione equa dei lotti. È un sistema razionale applicabile rapidamente anche a grandi scale.
+==**Perché funzionava:** la griglia ortogonale facilita l'orientamento, la distribuzione dell'acqua e delle fogne, la suddivisione equa dei lotti.== È un sistema razionale applicabile rapidamente anche a grandi scale.
 
 **Il limite:** non si adatta bene al terreno naturale. Città romane in pianura (Torino, Rimini) conservano bene la griglia; quelle in collina (Roma stessa) hanno dovuto adattare lo schema alla topografia, con risultati meno regolari.
 
@@ -55,9 +55,9 @@ Questo schema — griglia ortogonale, centro civico, separazione tra spazi pubbl
 
 La città medievale europea cresce in modo molto diverso dalla città romana: non segue una griglia progettata a priori, ma si sviluppa organicamente attorno a un nucleo (spesso un castello, una cattedrale, o un mercato).
 
-Le strade medievali seguono i percorsi naturali di movimento delle persone e degli animali — curve, irregolari, adattate al terreno. Gli isolati sono di forme irregolari. Non esiste un piano urbano globale: ogni edificio viene costruito dove c'è spazio, rispettando al massimo i confini dei lotti vicini.
+==Le strade medievali seguono i percorsi naturali di movimento delle persone e degli animali — curve, irregolari, adattate al terreno.== Gli isolati sono di forme irregolari. Non esiste un piano urbano globale: ogni edificio viene costruito dove c'è spazio, rispettando al massimo i confini dei lotti vicini.
 
-Il centro della città medievale è la **piazza del mercato** e la **piazza della cattedrale** — spazi dove si svolge la vita collettiva: scambi commerciali, assemblee, festività religiose.
+==Il centro della città medievale è la **piazza del mercato** e la **piazza della cattedrale** — spazi dove si svolge la vita collettiva: scambi commerciali, assemblee, festività religiose.==
 
 **Il risultato visivo:** le città medievali italiane (Siena, San Gimignano, molti centri storici) sono visivamente organiche, scalate, adatte alla circolazione pedonale. Il turismo di oggi è attratto esattamente da questa irregolarità.
 
@@ -71,7 +71,7 @@ La Rivoluzione Industriale (1760-1850 circa) cambia radicalmente le città. Le f
 
 Questa crescita incontrollata crea condizioni disastrose: sovraffollamento, mancanza di fogne, acqua contaminata, aria irrespirabile. Le epidemie di colera del XIX secolo (Londra 1854, Napoli 1884) uccidono decine di migliaia di persone — e spingono le autorità a progettare soluzioni tecniche di sistema.
 
-Il medico John Snow mappa nel 1854 l'epidemia di colera di Londra con un metodo rivoluzionario: disegna ogni caso sulla mappa del quartiere di Soho e scopre che tutti i casi sono concentrati attorno a una singola pompa dell'acqua in Broad Street. È la nascita dell'**epidemiologia spaziale** — la comprensione che la salute delle persone dipende dalla qualità del loro ambiente fisico.
+Il medico John Snow mappa nel 1854 l'epidemia di colera di Londra con un metodo rivoluzionario: disegna ogni caso sulla mappa del quartiere di Soho e scopre che tutti i casi sono concentrati attorno a una singola pompa dell'acqua in Broad Street. ==È la nascita dell'**epidemiologia spaziale** — la comprensione che la salute delle persone dipende dalla qualità del loro ambiente fisico.==
 
 Questa intuizione cambia per sempre il modo di pensare le città: non basta costruire edifici, bisogna progettare l'infrastruttura del vivere — fognature, acquedotti, strade, verde pubblico, ventilazione.
 
@@ -81,9 +81,9 @@ In Francia, il Barone Haussmann realizza tra il 1853 e il 1870 la trasformazione
 
 #### La città moderna — zoning e piano regolatore
 
-Il XX secolo porta il **piano regolatore** come strumento fondamentale di governo della città. L'idea di base: separare le diverse funzioni urbane in zone distinte (residenziale, commerciale, industriale, verde) per ridurre i conflitti e ottimizzare l'uso del suolo.
+==Il XX secolo porta il **piano regolatore** come strumento fondamentale di governo della città.== L'idea di base: separare le diverse funzioni urbane in zone distinte (residenziale, commerciale, industriale, verde) per ridurre i conflitti e ottimizzare l'uso del suolo.
 
-Questa idea — detta **zoning** (dall'inglese) o **zonizzazione** — viene codificata per la prima volta negli USA (New York, 1916) e in Europa nel dopoguerra. In Italia, la **Legge Urbanistica del 1942** (ancora parzialmente in vigore) introduce il Piano Regolatore Generale (PRG) come strumento di pianificazione obbligatorio per tutti i Comuni.
+==Questa idea — detta **zoning** (dall'inglese) o **zonizzazione** — viene codificata per la prima volta negli USA (New York, 1916) e in Europa nel dopoguerra.== In Italia, la **Legge Urbanistica del 1942** (ancora parzialmente in vigore) introduce il Piano Regolatore Generale (PRG) come strumento di pianificazione obbligatorio per tutti i Comuni.
 
 ---
 
@@ -95,9 +95,9 @@ Il **Piano Regolatore Generale (PRG)** — oggi spesso denominato **Piano di Gov
 
 **Chi lo fa:**
 
-Il piano regolatore viene redatto da un gruppo di professionisti (urbanisti, architetti, ingegneri, geografi) incaricati dal Comune, con il coordinamento dell'Assessorato all'Urbanistica. Ma non è solo un atto tecnico: è un atto politico. Prima di diventare definitivo, viene adottato dal **Consiglio Comunale** (i rappresentanti eletti dai cittadini), esposto al pubblico per osservazioni (chiunque può presentare osservazioni scritte), e poi approvato dalla **Regione**.
+Il piano regolatore viene redatto da un gruppo di professionisti (urbanisti, architetti, ingegneri, geografi) incaricati dal Comune, con il coordinamento dell'Assessorato all'Urbanistica. ==Ma non è solo un atto tecnico: è un atto politico.== Prima di diventare definitivo, viene adottato dal **Consiglio Comunale** (i rappresentanti eletti dai cittadini), esposto al pubblico per osservazioni (chiunque può presentare osservazioni scritte), e poi approvato dalla **Regione**.
 
-La partecipazione dei cittadini alla pianificazione urbanistica è un diritto sancito dalla legge. In molte città, vengono organizzati **processi partecipativi** — assemblee pubbliche, consultazioni online, workshop — per raccogliere le proposte dei residenti prima che il piano venga adottato.
+==La partecipazione dei cittadini alla pianificazione urbanistica è un diritto sancito dalla legge.== In molte città, vengono organizzati **processi partecipativi** — assemblee pubbliche, consultazioni online, workshop — per raccogliere le proposte dei residenti prima che il piano venga adottato.
 
 ---
 
@@ -121,7 +121,7 @@ La partecipazione dei cittadini alla pianificazione urbanistica è un diritto sa
 
 ### Le infrastrutture urbane — la rete invisibile che fa funzionare la città
 
-Una città moderna è un sistema di reti sovrapposte. Le strade sono solo la rete più visibile; sotto, sopra e accanto ci sono molte altre infrastrutture senza le quali la vita urbana sarebbe impossibile.
+==Una città moderna è un sistema di reti sovrapposte.== Le strade sono solo la rete più visibile; sotto, sopra e accanto ci sono molte altre infrastrutture senza le quali la vita urbana sarebbe impossibile.
 
 ---
 
@@ -189,7 +189,7 @@ Lo **sprawl urbano** (dall'inglese *to sprawl*, espandersi senza controllo) è i
 
 Lo sprawl è il modello urbano americano per eccellenza — Los Angeles è l'esempio più citato. Occupa enormi superfici di suolo agricolo, crea dipendenza totale dall'automobile, produce isolamento sociale (nessuno cammina perché non c'è niente a cui camminare), e rende il trasporto pubblico economicamente insostenibile (troppo poca densità per riempire un autobus).
 
-In Italia, **consumo di suolo** (la perdita di territorio agricolo e naturale per urbanizzazione) è uno dei principali problemi ambientali. Secondo ISPRA (Istituto Superiore per la Protezione dell'Ambiente), ogni anno in Italia si consumano in media 57 km² di suolo agricolo — equivalente a mettere cemento su 8 campi di calcio ogni ora.
+==In Italia, **consumo di suolo** (la perdita di territorio agricolo e naturale per urbanizzazione) è uno dei principali problemi ambientali.== Secondo ISPRA (Istituto Superiore per la Protezione dell'Ambiente), ogni anno in Italia si consumano in media 57 km² di suolo agricolo — equivalente a mettere cemento su 8 campi di calcio ogni ora.
 
 ---
 
@@ -207,7 +207,7 @@ La legge italiana (D.M. 1444/1968, ancora in vigore) stabilisce dotazioni minime
 - Servizi scolastici: **4,5 m²/abitante**
 - Attrezzature di interesse generale: **2 m²/abitante**
 
-**Totale minimo: 18 m²/abitante** di spazio pubblico per servizi e verde.
+==**Totale minimo: 18 m²/abitante** di spazio pubblico per servizi e verde.==
 
 ---
 
@@ -215,7 +215,7 @@ La legge italiana (D.M. 1444/1968, ancora in vigore) stabilisce dotazioni minime
 
 Un servizio utile ma inaccessibile non è utile. I criteri per valutare l'accessibilità di un servizio:
 
-- **Distanza pedonale:** una scuola elementare deve essere raggiungibile a piedi da tutti i bambini del bacino di utenza. Lo standard internazionale è una distanza massima di 500 m (circa 6-7 minuti a piedi).
+- **Distanza pedonale:** una scuola elementare deve essere raggiungibile a piedi da tutti i bambini del bacino di utenza. ==Lo standard internazionale è una distanza massima di 500 m (circa 6-7 minuti a piedi).==
 - **Accessibilità con mezzi pubblici:** ospedali, uffici comunali, biblioteche devono essere raggiunti facilmente con il trasporto pubblico.
 - **Accessibilità universale:** tutti i servizi pubblici devono essere accessibili alle persone con disabilità motorie, visive, uditive.
 
@@ -223,7 +223,7 @@ Un servizio utile ma inaccessibile non è utile. I criteri per valutare l'access
 
 ### Riqualificazione urbana — quando la città si trasforma
 
-Non tutte le città crescono. Molte città italiane, specialmente al Sud e nelle aree interne, stanno perdendo abitanti. I quartieri si svuotano, gli edifici si degradano, i servizi chiudono. Questo fenomeno si chiama **shrinking city** (città che si restringe).
+Non tutte le città crescono. Molte città italiane, specialmente al Sud e nelle aree interne, stanno perdendo abitanti. I quartieri si svuotano, gli edifici si degradano, i servizi chiudono. ==Questo fenomeno si chiama **shrinking city** (città che si restringe).==
 
 In molte città, i quartieri che decadono possono essere rigenerati attraverso **interventi di riqualificazione urbana**: ristrutturazione degli edifici, creazione di nuovi spazi pubblici, insediamento di nuove attività economiche, miglioramento della mobilità.
 
@@ -265,12 +265,12 @@ Confrontare due città con circa lo stesso numero di abitanti ma modelli urbani 
 | Accessibilità a piedi ai servizi | Alta | Bassa |
 
 **Perché Bologna funziona meglio per gli spostamenti:**
-La densità alta permette di raggiungere scuole, negozi, uffici e parchi a piedi o in bici. Il trasporto pubblico è efficiente perché c'è abbastanza utenza per far funzionare le linee. Le strade strette del centro storico rendono la guida scomoda ma la camminata piacevole.
+==La densità alta permette di raggiungere scuole, negozi, uffici e parchi a piedi o in bici.== Il trasporto pubblico è efficiente perché c'è abbastanza utenza per far funzionare le linee. Le strade strette del centro storico rendono la guida scomoda ma la camminata piacevole.
 
 **Perché Los Angeles ha problemi diversi:**
-La bassa densità rende tutto irraggiungibile a piedi. Ogni spostamento richiede un'auto. Le autostrade che dovevano "liberare" il traffico hanno invece incentivato ancora più costruzione periferica e ancora più traffico (**indotto demand** — più strade = più auto, non meno congestione). Il risultato è che ogni californiano medio percorre in auto 25.000 km l'anno — il doppio di un bolognese.
+==La bassa densità rende tutto irraggiungibile a piedi.== Ogni spostamento richiede un'auto. Le autostrade che dovevano "liberare" il traffico hanno invece incentivato ancora più costruzione periferica e ancora più traffico (**indotto demand** — più strade = più auto, non meno congestione). Il risultato è che ogni californiano medio percorre in auto 25.000 km l'anno — il doppio di un bolognese.
 
-**La lezione della pianificazione:** la forma urbana determina il comportamento delle persone, non viceversa. Se costruisci una città per le auto, le persone useranno le auto. Se costruisci per i pedoni, le persone cammineranno. Le scelte urbanistiche di oggi determinano i comportamenti e i consumi di domani.
+==**La lezione della pianificazione:** la forma urbana determina il comportamento delle persone, non viceversa.== Se costruisci una città per le auto, le persone useranno le auto. Se costruisci per i pedoni, le persone cammineranno. Le scelte urbanistiche di oggi determinano i comportamenti e i consumi di domani.
 
 ---
 

@@ -32,15 +32,15 @@ Perché succede questo? E cosa puoi fare tu? La risposta comincia da qui: capire
 
 Quando compri qualcosa — un paio di scarpe, un quaderno, una bottiglia di succo — hai già perso la parte più lunga della sua storia. Quella che hai visto tu è solo l'ultimo capitolo: il momento in cui l'oggetto arriva nella tua mano. Prima di quel momento ci sono stati miniere, fabbriche, camion, navi, magazzini, altre fabbriche ancora.
 
-E dopo quel momento — dopo che hai usato l'oggetto, dopo che lo hai buttato — la storia continua. L'oggetto non scompare: si trasforma in qualcos'altro, spesso in qualcosa di problematico, a meno che qualcuno non lo abbia progettato per continuare a vivere in un ciclo virtuoso.
+E dopo quel momento — dopo che hai usato l'oggetto, dopo che lo hai buttato — la storia continua. ==L'oggetto non scompare: si trasforma in qualcos'altro==, spesso in qualcosa di problematico, a meno che qualcuno non lo abbia progettato per continuare a vivere in un ciclo virtuoso.
 
-Questo percorso completo si chiama **ciclo di vita** di un materiale — o, in inglese, **life cycle**. Ogni oggetto che esiste ha un ciclo di vita. Studiarlo significa capire non solo *cosa è fatto* un oggetto, ma *da dove viene*, *quanta energia e risorse ha richiesto*, *chi ha lavorato per produrlo*, e *cosa gli succederà dopo*. È una competenza che i progettisti, gli ingegneri, i consumatori responsabili e i legislatori usano ogni giorno per prendere decisioni migliori.
+Questo percorso completo si chiama **ciclo di vita** di un materiale — o, in inglese, **life cycle**. ==Ogni oggetto che esiste ha un ciclo di vita.== Studiarlo significa capire non solo *cosa è fatto* un oggetto, ma *da dove viene*, *quanta energia e risorse ha richiesto*, *chi ha lavorato per produrlo*, e *cosa gli succederà dopo*. È una competenza che i progettisti, gli ingegneri, i consumatori responsabili e i legislatori usano ogni giorno per prendere decisioni migliori.
 
 ---
 
 ### Le sette fasi del ciclo tecnologico
 
-Il ciclo di vita non è un semplice "nasce e muore". È un sistema articolato che coinvolge più fasi, ognuna con i propri attori, i propri impatti e le proprie responsabilità. Nelle Indicazioni Nazionali 2025 questo sistema viene chiamato **ciclo tecnologico** — un termine che sottolinea che non si tratta solo di un processo naturale, ma di un insieme di scelte umane organizzate.
+Il ciclo di vita non è un semplice "nasce e muore". È un sistema articolato che coinvolge più fasi, ognuna con i propri attori, i propri impatti e le proprie responsabilità. Nelle Indicazioni Nazionali 2025 questo sistema viene chiamato **ciclo tecnologico** — un termine che sottolinea che ==non si tratta solo di un processo naturale, ma di un insieme di scelte umane organizzate==.
 
 Le fasi sono sette. Vediamole una per una, con gli occhi di chi deve capire cosa succede davvero.
 
@@ -50,7 +50,7 @@ Le fasi sono sette. Vediamole una per una, con gli occhi di chi deve capire cosa
 
 Tutto inizia qui. Prima di diventare un oggetto, ogni materiale era qualcos'altro nel mondo naturale: minerale nel sottosuolo, albero in una foresta, petrolio in un giacimento profondo, cotone in un campo coltivato.
 
-L'**estrazione** è il processo con cui si preleva questa materia prima dall'ambiente per renderla disponibile alla produzione industriale. Non è un processo neutro: costa energia, occupa suolo, consuma acqua, produce scarti. Una miniera di rame, ad esempio, lavora centinaia di tonnellate di roccia per ottenere pochi chili di metallo puro. Il rapporto tra "roccia estratta" e "metallo ottenuto" si chiama **tenore del minerale** — e quando il tenore scende, servono più energia e più scavi per ottenere la stessa quantità di materiale.
+L'**estrazione** è il processo con cui si preleva questa materia prima dall'ambiente per renderla disponibile alla produzione industriale. ==Non è un processo neutro: costa energia, occupa suolo, consuma acqua, produce scarti.== Una miniera di rame, ad esempio, lavora centinaia di tonnellate di roccia per ottenere pochi chili di metallo puro. Il rapporto tra "roccia estratta" e "metallo ottenuto" si chiama **tenore del minerale** — e quando il tenore scende, servono più energia e più scavi per ottenere la stessa quantità di materiale.
 
 L'estrazione ha anche un impatto sociale importante. Le miniere di cobalto nella Repubblica Democratica del Congo — quel cobalto che finisce nelle batterie degli smartphone e dei veicoli elettrici — impiegano, secondo le stime dell'UNICEF, circa 40.000 bambini in condizioni di lavoro minorile. Un oggetto che compri in un negozio porta con sé, invisibilmente, tutte le scelte fatte da chi ha estratto i suoi materiali.
 
@@ -64,7 +64,7 @@ La materia prima estratta raramente si usa direttamente. Deve essere **trasforma
 
 Il minerale di ferro viene portato in un **altoforno** dove, a 1500°C, l'ossido di ferro reagisce con il carbone coke per liberare ferro fuso. Quel ferro viene poi convertito in acciaio modificandone la composizione chimica. La sabbia di quarzo viene fusa a 1500°C con carbonato di sodio e calce per ottenere il vetro. Il petrolio grezzo viene distillato in una raffineria per separarne i componenti: benzina, gasolio, nafta, e quella nafta viene poi polimerizzata per ottenere plastica.
 
-Ogni fase di trasformazione consuma energia — spesso moltissima. Produrre 1 kg di alluminio dal minerale bauxite richiede circa 14 kilowattora di elettricità. Produrre 1 kg di acciaio da minerale richiede circa 2-3 kilowattora. Per questo il **riciclo** è così vantaggioso: rifondere l'alluminio già esistente richiede solo il 5% dell'energia necessaria per produrlo dalla bauxite. Sai già cosa significa questo: riciclare una lattina di alluminio non è solo "fare la cosa giusta" — è una scelta economicamente intelligente.
+==Ogni fase di trasformazione consuma energia== — spesso moltissima. Produrre 1 kg di alluminio dal minerale bauxite richiede circa 14 kilowattora di elettricità. Produrre 1 kg di acciaio da minerale richiede circa 2-3 kilowattora. Per questo il **riciclo** è così vantaggioso: ==rifondere l'alluminio già esistente richiede solo il 5% dell'energia necessaria per produrlo dalla bauxite==. Sai già cosa significa questo: riciclare una lattina di alluminio non è solo "fare la cosa giusta" — è una scelta economicamente intelligente.
 
 > 💡 **Lo sapevi?** Il titanio è un metallo abbondantissimo nella crosta terrestre (è il nono elemento più comune), ma è rarissimo e costosissimo come materiale industriale. Il motivo: isolarlo dai suoi minerali richiede un processo chimico complesso e altamente energetico (il processo Kroll). Per questo il titanio — leggerissimo e resistentissimo — è usato solo dove le prestazioni valgono il costo: impianti dentali, protesi ossee, strutture degli aerei, orologi di lusso.
 
@@ -74,7 +74,7 @@ Ogni fase di trasformazione consuma energia — spesso moltissima. Produrre 1 kg
 
 Con i materiali trasformati, inizia la **produzione** vera e propria: l'assemblaggio dell'oggetto finale. Questa fase avviene in stabilimenti produttivi e può essere altamente automatizzata (robot che saldano scocche di automobili) o molto manuale (operai che assemblano componenti elettronici o cuciono abiti).
 
-La produzione raramente avviene tutta in un solo luogo. Un'automobile moderna è un esempio classico: il motore può essere prodotto in Germania, la carrozzeria stampata in Polonia, i sedili cuciti in Romania, l'elettronica progettata in Giappone e assemblata in Cina, mentre l'assemblaggio finale avviene in un terzo paese ancora. Questa organizzazione si chiama **catena di fornitura** (o **supply chain** in inglese) — un sistema di aziende, fornitori e subfornitori che collaborano per produrre un bene finale.
+La produzione raramente avviene tutta in un solo luogo. Un'automobile moderna è un esempio classico: il motore può essere prodotto in Germania, la carrozzeria stampata in Polonia, i sedili cuciti in Romania, l'elettronica progettata in Giappone e assemblata in Cina, mentre l'assemblaggio finale avviene in un terzo paese ancora. Questa organizzazione si chiama **catena di fornitura** (o **supply chain** in inglese) — ==un sistema di aziende, fornitori e subfornitori che collaborano per produrre un bene finale==.
 
 Perché questa dispersione geografica? Perché ogni paese ha vantaggi diversi: costo del lavoro, disponibilità di materie prime, infrastrutture industriali, incentivi fiscali. Una supply chain globale permette a un'azienda di sfruttare questi vantaggi, ma crea anche vulnerabilità: quando nel 2021 una nave si è incagliata nel Canale di Suez bloccando i traffici mondiali per sei giorni, migliaia di fabbriche in tutto il mondo hanno dovuto fermarsi perché aspettavano componenti che non arrivavano.
 
@@ -86,11 +86,11 @@ Perché questa dispersione geografica? Perché ogni paese ha vantaggi diversi: c
 
 Un prodotto finito in una fabbrica in Vietnam non è ancora un prodotto disponibile sul mercato europeo. Deve essere trasportato, immagazzinato, rietichettato, sdoganato, distribuito ai grossisti, portato nei negozi o spedito direttamente a casa tua se è un acquisto online.
 
-La **logistica** — cioè l'organizzazione del trasporto, dello stoccaggio e della distribuzione delle merci — è una delle fasi con maggior impatto ambientale del ciclo di vita. Il trasporto merci globale è responsabile di circa l'8% delle emissioni di CO₂ mondiali. Di questi, il trasporto marittimo (le grandi navi cargo) è responsabile di circa il 3%, il trasporto aereo (il più inquinante per kg×km trasportato) di circa l'1,5%, il trasporto stradale del resto.
+La **logistica** — cioè l'organizzazione del trasporto, dello stoccaggio e della distribuzione delle merci — ==è una delle fasi con maggior impatto ambientale del ciclo di vita==. Il trasporto merci globale è responsabile di circa l'8% delle emissioni di CO₂ mondiali. Di questi, il trasporto marittimo (le grandi navi cargo) è responsabile di circa il 3%, il trasporto aereo (il più inquinante per kg×km trasportato) di circa l'1,5%, il trasporto stradale del resto.
 
 Una felpa di cotone può percorrere 40.000 km prima di arrivare a te: cotone coltivato in Texas, filato in India, tessuto in Bangladesh, tinto in Vietnam, cucito in Cambogia, caricato su una nave cargo, trasportato fino al porto di Rotterdam, portato in camion al centro di distribuzione europeo dell'azienda, e infine spedito al negozio o al tuo indirizzo.
 
-Ogni chilometro ha un costo — in carburante, in emissioni, in infrastrutture. Per questo alcune aziende stanno scommettendo sulla **filiera corta**: produrre vicino al mercato di destinazione, ridurre i passaggi logistici, diminuire l'impatto del trasporto.
+Ogni chilometro ha un costo — in carburante, in emissioni, in infrastrutture. Per questo alcune aziende stanno scommettendo sulla **filiera corta**: ==produrre vicino al mercato di destinazione==, ridurre i passaggi logistici, diminuire l'impatto del trasporto.
 
 > 🔢 **Collegamento STEM — Matematica:** La logistica usa la matematica in modo intensivo. Per ottimizzare i percorsi di distribuzione (cioè trovare il modo più efficiente di consegnare merci a molti destinatari con il minor numero di chilometri) si usano algoritmi. Il problema del "commesso viaggiatore" — trovare il percorso più breve che tocchi N città una sola volta — è uno dei problemi classici dell'informatica e rimane irrisolvibile in modo esatto per grandi valori di N: ci sono più percorsi possibili tra 20 città che atomi nell'universo osservabile.
 
@@ -102,7 +102,7 @@ L'oggetto è finalmente nelle tue mani. La fase di **uso** è quella a cui pensi
 
 Dipende dall'oggetto. Per un'automobile, la fase di uso (carburante consumato su migliaia di chilometri) è responsabile di gran parte dell'impatto totale. Per una bottiglia di plastica usa-e-getta, la fase di uso è trascurabile rispetto alla produzione e allo smaltimento. Per una lavatrice, il consumo energetico e idrico in anni di utilizzo può superare l'impatto della produzione iniziale.
 
-La **durata** dell'uso è una variabile cruciale. Un jeans che dura dieci anni ha un impatto ambientale per anno di utilizzo molto inferiore a uno che dura uno. Un telefono che si usa cinque anni invece di due dimezza l'impatto legato alla produzione e allo smaltimento. Questo è il motivo per cui riparare un oggetto, invece di buttarlo e comprarne uno nuovo, è una delle azioni più efficaci che un consumatore può fare.
+==La **durata** dell'uso è una variabile cruciale.== Un jeans che dura dieci anni ha un impatto ambientale per anno di utilizzo molto inferiore a uno che dura uno. Un telefono che si usa cinque anni invece di due dimezza l'impatto legato alla produzione e allo smaltimento. Questo è il motivo per cui ==riparare un oggetto, invece di buttarlo e comprarne uno nuovo, è una delle azioni più efficaci che un consumatore può fare==.
 
 > 💡 **Lo sapevi?** L'**obsolescenza programmata** è la pratica di progettare un prodotto in modo che si guasti o diventi "obsoleto" (cioè non più desiderabile) entro un certo periodo, per spingere l'acquisto di un nuovo prodotto. Alcuni casi famosi: in certi smartphone il software rallenta progressivamente con gli aggiornamenti su modelli vecchi; alcune stampanti si bloccano dopo un numero prestabilito di copie anche se meccanicamente funzionanti; molti elettrodomestici sono progettati con componenti di qualità inferiore rispetto a quelli prodotti 40-50 anni fa. Nel 2021, la Francia ha introdotto un **indice di riparabilità** obbligatorio per elettrodomestici e smartphone: un punteggio da 1 a 10 che indica quanto facilmente il prodotto può essere riparato. È la prima legge del genere in Europa.
 
@@ -110,7 +110,7 @@ La **durata** dell'uso è una variabile cruciale. Un jeans che dura dieci anni h
 
 #### Fase 6 — Fine vita: le strade che un oggetto può prendere
 
-Questa è la fase che spesso non vediamo — e che spesso è la più problematica. Quando un oggetto finisce nel bidone, non scompare: prende una delle possibili strade del **fine vita**. Conoscerle è essenziale per capire cosa significa davvero "smaltire" qualcosa.
+Questa è la fase che spesso non vediamo — e che spesso è la più problematica. ==Quando un oggetto finisce nel bidone, non scompare==: prende una delle possibili strade del **fine vita**. Conoscerle è essenziale per capire cosa significa davvero "smaltire" qualcosa.
 
 **Discarica.** La strada più semplice dal punto di vista logistico, ma la peggiore dal punto di vista ambientale. I rifiuti vengono depositati in aree controllate (le discariche moderne sono impermeabilizzate per evitare che i liquidi inquinanti si infiltrino nel suolo). I materiali non biodegradabili rimangono lì per secoli o millenni. Le plastiche possono rimanere intatte per 400-1000 anni. La discarica non è la fine: è un deposito temporaneo molto lungo.
 
@@ -118,7 +118,7 @@ Questa è la fase che spesso non vediamo — e che spesso è la più problematic
 
 **Riciclo.** Il materiale viene separato, raccolto, trattato e reintrodotto nel ciclo produttivo come materia prima secondaria. Il vetro raccolto viene fuso e rifatto in bottiglie. La carta viene riciclata in nuova carta. L'alluminio viene rifuso. Ogni materiale ha la sua filiera di riciclo con le sue efficienze e i suoi limiti (li esploreremo in dettaglio in MC-MAT-1-04).
 
-**Riuso e riparazione.** L'oggetto, invece di essere smaltito, viene riparato o rivenduto come usato. È la forma più efficiente di gestione del fine vita perché conserva il valore del materiale e del lavoro già investiti nell'oggetto. Un vestito venduto di seconda mano in un mercatino vintage non ha bisogno né di riciclo né di smaltimento.
+**Riuso e riparazione.** L'oggetto, invece di essere smaltito, viene riparato o rivenduto come usato. ==È la forma più efficiente di gestione del fine vita== perché conserva il valore del materiale e del lavoro già investiti nell'oggetto. Un vestito venduto di seconda mano in un mercatino vintage non ha bisogno né di riciclo né di smaltimento.
 
 **Compostaggio.** Per i materiali organici (scarti alimentari, carta non trattata, determinati biopolimeri), il compostaggio li trasforma in humus utilizzabile come fertilizzante. È il ciclo più breve e più virtuoso per la materia organica.
 
@@ -126,11 +126,11 @@ Questa è la fase che spesso non vediamo — e che spesso è la più problematic
 
 #### Fase 7 — Recupero e chiusura del ciclo
 
-In un sistema ideale, il materiale estratto in Fase 1 viene recuperato in Fase 6 e reinserito in Fase 2 come materia prima secondaria. Il ciclo si chiude, le risorse si conservano, i rifiuti si azzerano.
+In un sistema ideale, il materiale estratto in Fase 1 viene recuperato in Fase 6 e reinserito in Fase 2 come materia prima secondaria. ==Il ciclo si chiude, le risorse si conservano, i rifiuti si azzerano.==
 
 Questo sistema si chiama **economia circolare** — contrapposta all'economia lineare tradizionale, che segue il schema "estrai → produci → usa → butta". L'economia circolare segue invece il modello "estrai → produci → usa → recupera → riproduci".
 
-L'economia circolare non è un'utopia: esiste già in molti settori. L'acciaio in Europa viene riciclato al 70-80%. Il vetro in Italia viene riciclato all'80%. L'alluminio delle lattine viene riciclato al 70% in Europa. Il problema riguarda soprattutto le plastiche (secondo una stima pubblicata nel 2017, il 9% dei rifiuti plastici generati fino al 2015 era stato riciclato) e i materiali compositi (quasi impossibili da separare nei loro componenti).
+L'economia circolare non è un'utopia: esiste già in molti settori. L'acciaio in Europa viene riciclato al 70-80%. Il vetro in Italia viene riciclato all'80%. L'alluminio delle lattine viene riciclato al 70% in Europa. ==Il problema riguarda soprattutto le plastiche== (secondo una stima pubblicata nel 2017, il 9% dei rifiuti plastici generati fino al 2015 era stato riciclato) e i materiali compositi (quasi impossibili da separare nei loro componenti).
 
 > 🔬 **Collegamento STEM — Scienze:** La termodinamica ha qualcosa di importante da dire sull'economia circolare. Il secondo principio della termodinamica afferma che in ogni trasformazione di energia una parte si disperde come calore e non è recuperabile. Lo stesso vale per i materiali: ogni ciclo di riciclo dissipa una certa quantità di materiale e qualità. Non si può riciclare all'infinito con rendimento 100%. Ma si può avvicinarsi molto — soprattutto per i metalli, che mantengono le loro proprietà chimiche quasi intatte dopo il riciclo.
 
@@ -150,7 +150,7 @@ Il ciclo tecnologico non è solo un percorso di materiali — è un percorso di 
 
 **Il legislatore** decide le regole del gioco: cosa è obbligatorio, cosa è vietato, come vengono tassati i rifiuti, quali obiettivi di riciclo devono essere raggiunti.
 
-Questa catena di responsabilità si chiama **catena del valore** — o **value chain** in inglese. Ogni anello della catena può fare scelte migliori o peggiori. L'analisi del ciclo di vita (in inglese **LCA — Life Cycle Assessment**) è lo strumento che permette di misurare l'impatto di ciascun anello e confrontare le alternative.
+Questa catena di responsabilità si chiama **catena del valore** — o **value chain** in inglese. ==Ogni anello della catena può fare scelte migliori o peggiori.== L'analisi del ciclo di vita (in inglese **LCA — Life Cycle Assessment**) è lo strumento che permette di misurare l'impatto di ciascun anello e confrontare le alternative.
 
 > 💡 **Esempio concreto di LCA — il giornale cartaceo:** l'Atlas (ISBN 9788826824376, p.26) documenta le fasi dell'LCA applicato alla produzione di un quotidiano. **A — Materia prima:** il legno del bosco, con relativi costi di abbattimento, trasporto e impatto sulla biodiversità forestale. **B — Produzione intermedia:** i processi per passare dalla cellulosa alla carta (sbiancatura, patinatura, essiccatura) e il loro consumo di acqua e energia. **C — Uso e consumo:** il ciclo di vita operativo del giornale, in media letto per alcune ore e poi abbandonato. **D — Fine vita:** il giornale finisce in raccolta differenziata (riciclato), in termovalorizzatore (bruciato per produrre energia) o in discarica. Applicare l'LCA a questo prodotto mostra che il 70-80% dell'impatto ambientale di un giornale si concentra nelle fasi A e B — la produzione della carta — non nella distribuzione o nel consumo. *(Fonte: Atlas, ISBN 9788826824376, p.26-28)*
 
@@ -162,7 +162,7 @@ I professionisti del ciclo di vita usano due espressioni plastiche per descriver
 
 **"Dalla culla alla tomba"** (from cradle to grave) descrive il ciclo lineare tradizionale: estrazione → produzione → uso → discarica. L'oggetto nasce, vive, muore. Fine.
 
-**"Dalla culla alla culla"** (from cradle to cradle, C2C) descrive il ciclo circolare ideale: ogni materiale al fine vita diventa materia prima per un nuovo ciclo. Non esistono rifiuti, solo risorse in transizione. Questo concetto, sviluppato dagli architetti William McDonough e Michael Braungart nel 2002, è diventato uno dei princìpi guida del design sostenibile.
+**"Dalla culla alla culla"** (from cradle to cradle, C2C) descrive il ciclo circolare ideale: ogni materiale al fine vita diventa materia prima per un nuovo ciclo. ==Non esistono rifiuti, solo risorse in transizione.== Questo concetto, sviluppato dagli architetti William McDonough e Michael Braungart nel 2002, è diventato uno dei princìpi guida del design sostenibile.
 
 Il marchio **Cradle to Cradle Certified** esiste già: certifica prodotti progettati per essere completamente recuperabili. Esistono mobili C2C, tessuti C2C, componenti edilizi C2C. Non sono ancora la norma — ma mostrano che il modello è tecnicamente possibile.
 

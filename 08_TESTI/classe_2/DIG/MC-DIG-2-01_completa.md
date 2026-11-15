@@ -22,15 +22,15 @@ Scrivere istruzioni per una macchina sembra facile. Non lo è. Adesso impari com
 
 ### Prima del codice: il pensiero computazionale
 
-Prima di aprire Scratch, prima di muovere il primo blocco, c'è una competenza che viene prima: saper pensare come pensa una macchina. Questa competenza ha un nome: **pensiero computazionale**.
+Prima di aprire Scratch, prima di muovere il primo blocco, c'è una competenza che viene prima: saper pensare come pensa una macchina. ==Questa competenza ha un nome: **pensiero computazionale**.==
 
-Il pensiero computazionale non è programmazione. È un modo di affrontare i problemi — qualsiasi problema, anche quelli che non hanno nulla a che fare con i computer. Si compone di quattro strategie.
+Il pensiero computazionale non è programmazione. ==È un modo di affrontare i problemi — qualsiasi problema, anche quelli che non hanno nulla a che fare con i computer.== Si compone di quattro strategie.
 
 **Decomposizione del problema (problem decomposition):** dividere un problema grande in problemi più piccoli, ciascuno risolvibile separatamente. "Costruire un quiz interattivo" è troppo grande per essere risolto in un colpo solo. Ma "mostrare la prima domanda", "controllare la risposta", "aggiornare il punteggio" sono problemi piccoli, ognuno risolvibile in pochi blocchi.
 
 **Riconoscimento di schemi (pattern recognition):** cercare elementi che si ripetono o strutture simili in problemi diversi. Le domande di un quiz seguono tutte lo stesso schema: mostra il testo, aspetta la risposta, confronta con la risposta corretta, aggiorna il punteggio, vai alla domanda successiva. Se risolvi correttamente la prima domanda, sai già come risolvere tutte le altre — cambiano solo i dati, non la struttura.
 
-**Astrazione:** identificare quali informazioni sono importanti e quali sono dettagli irrilevanti per il problema che devi risolvere. Per far funzionare il quiz, non ti interessa il colore dello sfondo nella prima fase. Ti interessa la logica di controllo della risposta. L'astrazione ti aiuta a non perderti nei dettagli prima di aver risolto la struttura fondamentale.
+**Astrazione:** identificare quali informazioni sono importanti e quali sono dettagli irrilevanti per il problema che devi risolvere. Per far funzionare il quiz, non ti interessa il colore dello sfondo nella prima fase. Ti interessa la logica di controllo della risposta. ==L'astrazione ti aiuta a non perderti nei dettagli prima di aver risolto la struttura fondamentale.==
 
 **Progettazione dell'algoritmo (algorithm design):** definire la sequenza esatta di passi per risolvere il problema. Un algoritmo è una serie di istruzioni precise, non ambigue, che conducono da un punto di partenza a un risultato definito. La parola "algoritmo" viene dal nome del matematico persiano Muhammad ibn Musa al-Khwarizmi, vissuto nel IX secolo — le sue opere sulla matematica, tradotte in latino nel Medioevo, introdussero in Europa sia il concetto di algoritmo sia il sistema di numerazione decimale che usi ancora oggi.
 
@@ -38,7 +38,7 @@ Il pensiero computazionale non è programmazione. È un modo di affrontare i pro
 
 ### Le tre strutture fondamentali
 
-Qualsiasi programma — qualsiasi, dal sistema operativo del tuo computer a un videogioco a un sistema di raccomandazione di Netflix — è costruito combinando solo tre strutture fondamentali. Solo tre.
+==Qualsiasi programma — qualsiasi, dal sistema operativo del tuo computer a un videogioco a un sistema di raccomandazione di Netflix — è costruito combinando solo tre strutture fondamentali.== Solo tre.
 
 **Sequenza:** istruzioni eseguite una dopo l’altra, nell’ordine in cui sono scritte. Il semaforo che fa rosso, poi verde, poi giallo è una sequenza. Nell’esempio immaginario dei due semafori, però, non basta gestirli separatamente: devi coordinare le sequenze perché i percorsi che si incrociano non abbiano il verde insieme.
 
@@ -53,14 +53,14 @@ Qualsiasi programma — qualsiasi, dal sistema operativo del tuo computer a un v
 
 ### Variabili e operatori
 
-Una **variabile** è un contenitore con un nome che conserva un valore. Il valore può cambiare durante l'esecuzione del programma — da cui il nome "variabile".
+==Una **variabile** è un contenitore con un nome che conserva un valore.== Il valore può cambiare durante l'esecuzione del programma — da cui il nome "variabile".
 
 Esempi nel quiz:
 - `punteggio` — parte da 0, aumenta di 1 a ogni risposta corretta.
 - `domanda_corrente` — tiene traccia di quale domanda siamo (1, 2, 3...).
 - `risposta_utente` — contiene quello che l'utente ha digitato.
 
-Le variabili sono fondamentali per la selezione: l'if controlla il valore di una variabile per decidere cosa fare. "Se `risposta_utente` = risposta_corretta → aggiungi 1 a `punteggio`."
+==Le variabili sono fondamentali per la selezione: l'if controlla il valore di una variabile per decidere cosa fare.== "Se `risposta_utente` = risposta_corretta → aggiungi 1 a `punteggio`."
 
 Gli **operatori** eseguono calcoli o confronti sulle variabili:
 - Operatori aritmetici: +, -, ×, ÷ (per calcolare punteggi, somme, medie).
@@ -79,9 +79,9 @@ In Scratch, il codice non si scrive — si assembla. I blocchi di codice sono pe
 
 **Stage (palcoscenico):** l'area a destra dove si vede l'esecuzione del programma. È lo spazio dove i personaggi si muovono, le immagini appaiono, i testi vengono visualizzati.
 
-**Sprite:** i personaggi o gli oggetti che appaiono sullo stage. Ogni sprite ha il suo insieme di script (il suo codice), i suoi costumi (le sue forme grafiche) e i suoi suoni. Il gatto di Scratch è lo sprite predefinito, ma puoi creare, disegnare o importare qualsiasi sprite.
+==**Sprite:** i personaggi o gli oggetti che appaiono sullo stage.== Ogni sprite ha il suo insieme di script (il suo codice), i suoi costumi (le sue forme grafiche) e i suoi suoni. Il gatto di Scratch è lo sprite predefinito, ma puoi creare, disegnare o importare qualsiasi sprite.
 
-**Script:** il codice di uno sprite — una o più pile di blocchi che definiscono il comportamento di quello sprite.
+==**Script:** il codice di uno sprite — una o più pile di blocchi che definiscono il comportamento di quello sprite.==
 
 **Costume:** le diverse forme grafiche di uno sprite. Cambiando costume, lo sprite sembra animarsi. Un personaggio che cammina è uno sprite che alterna tra due costumi con le gambe in posizioni diverse.
 
@@ -103,14 +103,14 @@ In Scratch, il codice non si scrive — si assembla. I blocchi di codice sono pe
 
 ### Il sistema degli eventi e del broadcast
 
-In Scratch, gli script non partono da soli: partono quando succede qualcosa — un **evento**. Gli eventi più comuni:
+==In Scratch, gli script non partono da soli: partono quando succede qualcosa — un **evento**.== Gli eventi più comuni:
 
 - "Quando si clicca la bandiera verde" — avvia il programma principale.
 - "Quando si preme il tasto [X]" — reagisce a una pressione della tastiera.
 - "Quando questo sprite viene cliccato" — reagisce a un clic del mouse sullo sprite.
 - "Quando ricevo il messaggio [X]" — reagisce a un messaggio inviato da un altro sprite o dallo stage.
 
-Il **broadcast** (trasmissione) permette a uno sprite di inviare un messaggio a tutti gli altri sprite. Questo serve per coordinare sprite diversi: quando una domanda viene risposta correttamente, lo sprite della domanda manda un broadcast "prossima_domanda", e lo sprite del punteggio risponde aggiornandosi.
+==Il **broadcast** (trasmissione) permette a uno sprite di inviare un messaggio a tutti gli altri sprite.== Questo serve per coordinare sprite diversi: quando una domanda viene risposta correttamente, lo sprite della domanda manda un broadcast "prossima_domanda", e lo sprite del punteggio risponde aggiornandosi.
 
 Il broadcast è il meccanismo con cui Scratch implementa qualcosa che nei linguaggi avanzati si chiama "comunicazione tra processi": parti diverse del programma che si coordinano senza interferire direttamente.
 
@@ -118,7 +118,7 @@ Il broadcast è il meccanismo con cui Scratch implementa qualcosa che nei lingua
 
 ### Le liste: gestire insiemi di dati
 
-Una **lista** in Scratch è una variabile speciale che può contenere più valori invece di uno solo. È come un elenco numerato: il primo elemento è alla posizione 1, il secondo alla posizione 2, e così via.
+==Una **lista** in Scratch è una variabile speciale che può contenere più valori invece di uno solo.== È come un elenco numerato: il primo elemento è alla posizione 1, il secondo alla posizione 2, e così via.
 
 Per il quiz, le liste sono utilissime: puoi mettere tutte le domande in una lista, tutte le risposte corrette in un'altra lista, e tutti i feedback in una terza lista. Poi usi la variabile `domanda_corrente` come indice per accedere all'elemento giusto di ogni lista.
 
@@ -160,7 +160,7 @@ Quando riceve "mostra_domanda":
 Crea uno sprite separato per la schermata finale. Quando riceve "fine_quiz": mostra il punteggio finale ("Hai ottenuto X punti su 5") e un messaggio diverso in base al punteggio (es. se ≥4: "Ottimo!", se ≥2: "Buono, puoi migliorare!", altrimenti: "Riprova — studia ancora l'alimentazione!").
 
 **Passo 6 — Test e debug:**
-Esegui il quiz rispondendo sia correttamente che sbagliando. Verifica che il punteggio si aggiorni correttamente, che i feedback appaiano solo per le risposte sbagliate, che la schermata finale mostri il punteggio giusto. Se qualcosa non funziona, questo è il debug — il processo di identificazione e correzione degli errori.
+Esegui il quiz rispondendo sia correttamente che sbagliando. Verifica che il punteggio si aggiorni correttamente, che i feedback appaiano solo per le risposte sbagliate, che la schermata finale mostri il punteggio giusto. ==Se qualcosa non funziona, questo è il debug — il processo di identificazione e correzione degli errori.==
 
 > **Collegamento INF — La differenza tra DIG e INF:**
 > In questa MC stai imparando a usare Scratch per risolvere un problema. Questa è competenza digitale: scegliere e usare uno strumento per fare qualcosa. La competenza informatica — quella che studi in MC-INF-2-01 e MC-INF-2-02 — riguarda come funziona il software internamente: come il computer esegue le istruzioni, come gestisce la memoria, come comunica con i dispositivi di input e output. Usare bene un'app è DIG. Capire come l'app funziona dentro è INF. Le due competenze si integrano: chi le ha entrambe è molto più efficace di chi ne ha solo una.
@@ -169,13 +169,13 @@ Esegui il quiz rispondendo sia correttamente che sbagliando. Verifica che il pun
 
 ### Debug: trovare e correggere gli errori
 
-Il debug è la parte del coding che nessuno ti dice che occuperà la maggior parte del tuo tempo. Nei programmi professionali, si stima che circa il 50% del tempo di sviluppo venga speso nel trovare e correggere errori.
+==Il debug è la parte del coding che nessuno ti dice che occuperà la maggior parte del tuo tempo.== Nei programmi professionali, si stima che circa il 50% del tempo di sviluppo venga speso nel trovare e correggere errori.
 
 Esistono due tipi di errori:
 
 **Errori di sintassi:** il codice non segue le regole del linguaggio — in Scratch, quasi impossibili perché i blocchi si incastrano solo se compatibili. Nei linguaggi testuali (Python, Java, C++) questi errori bloccano l'esecuzione e il compilatore li segnala con un messaggio di errore.
 
-**Errori logici (bug):** il codice segue le regole sintattiche ma fa qualcosa di diverso da quello che vuoi. Il programma gira senza messaggi di errore, ma il risultato è sbagliato. Questi sono i più difficili da trovare. Esempio: il punteggio si aggiorna correttamente, ma la domanda successiva non appare mai. Il bug potrebbe essere in un blocco di confronto con l'indice sbagliato, o in una condizione if scritta al contrario.
+==**Errori logici (bug):** il codice segue le regole sintattiche ma fa qualcosa di diverso da quello che vuoi.== Il programma gira senza messaggi di errore, ma il risultato è sbagliato. Questi sono i più difficili da trovare. Esempio: il punteggio si aggiorna correttamente, ma la domanda successiva non appare mai. Il bug potrebbe essere in un blocco di confronto con l'indice sbagliato, o in una condizione if scritta al contrario.
 
 **Strategia di debug:**
 

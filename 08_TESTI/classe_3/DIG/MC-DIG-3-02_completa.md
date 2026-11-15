@@ -44,17 +44,17 @@ L'intelligenza artificiale non è nata con ChatGPT. Ha una storia lunga settant'
 
 **2022 — ChatGPT e la democratizzazione dell'IA generativa:** OpenAI rilascia ChatGPT, basato sul modello GPT-3.5. In cinque giorni raggiunge 1 milione di utenti (a confronto: Instagram aveva impiegato 75 giorni, Netflix 41 mesi). L'IA generativa — sistemi che producono testo, immagini, audio, video — diventa accessibile a chiunque abbia un browser.
 
-La lezione della storia: l'IA è una disciplina con cicli di ottimismo esagerato e delusione. Ogni nuova tecnologia viene sopravvalutata nel breve periodo e spesso sottovalutata nel lungo. Per valutare correttamente dove siamo oggi, bisogna capire cosa l'IA sa fare davvero — e cosa non sa fare.
+==La lezione della storia: l'IA è una disciplina con cicli di ottimismo esagerato e delusione.== Ogni nuova tecnologia viene sopravvalutata nel breve periodo e spesso sottovalutata nel lungo. Per valutare correttamente dove siamo oggi, bisogna capire cosa l'IA sa fare davvero — e cosa non sa fare.
 
 ---
 
 ### Machine learning: come le macchine "imparano"
 
-Il **machine learning** (apprendimento automatico) è il campo dell'IA che si occupa di sistemi che migliorano le proprie prestazioni sulla base dei dati, senza essere esplicitamente programmati per ogni caso specifico. Esistono tre famiglie principali.
+==Il **machine learning** (apprendimento automatico) è il campo dell'IA che si occupa di sistemi che migliorano le proprie prestazioni sulla base dei dati, senza essere esplicitamente programmati per ogni caso specifico.== Esistono tre famiglie principali.
 
 **Apprendimento supervisionato:** il sistema riceve esempi etichettati — coppie (input, output corretto) — e impara a riprodurre l'associazione su nuovi input mai visti. Esempio: un classificatore di email spam viene addestrato su 100.000 email etichettate come "spam" o "non spam." Dopo l'addestramento, data una nuova email, il sistema predice se è spam o no. Le applicazioni sono ovunque: riconoscimento di immagini, traduzione automatica, diagnosi medica da immagini radiologiche, valutazione del credito bancario.
 
-**Apprendimento non supervisionato:** il sistema riceve input senza etichette e deve trovare strutture, pattern o raggruppamenti autonomamente. Esempio: un algoritmo di clustering applicato ai dati di acquisto di un e-commerce raggruppa i clienti in "tipi" (acquirenti di elettronica, lettori di libri, appassionati di sport) senza che nessuno abbia definito queste categorie in anticipo. Applicazioni: segmentazione di clienti, riduzione della dimensionalità dei dati, rilevamento di anomalie.
+==**Apprendimento non supervisionato:** il sistema riceve input senza etichette e deve trovare strutture, pattern o raggruppamenti autonomamente.== Esempio: un algoritmo di clustering applicato ai dati di acquisto di un e-commerce raggruppa i clienti in "tipi" (acquirenti di elettronica, lettori di libri, appassionati di sport) senza che nessuno abbia definito queste categorie in anticipo. Applicazioni: segmentazione di clienti, riduzione della dimensionalità dei dati, rilevamento di anomalie.
 
 **Apprendimento per rinforzo:** il sistema impara attraverso interazione con un ambiente, ricevendo ricompense (reward) per azioni corrette e penalità per azioni errate. Non c'è un dataset di esempi: c'è un agente che esplora, sbaglia, impara. È il meccanismo usato per addestrare AlphaGo (giochi da tavolo), per sistemi di controllo robotico, e per l'addestramento RLHF (Reinforcement Learning from Human Feedback) usato da ChatGPT per allineare le risposte alle preferenze umane.
 
@@ -62,7 +62,7 @@ Il **machine learning** (apprendimento automatico) è il campo dell'IA che si oc
 
 ### Reti neurali artificiali: anatomia di un cervello artificiale
 
-Le **reti neurali artificiali** sono strutture matematiche ispirate (vagamente) all'organizzazione del cervello biologico. La parola "ispirate" è importante: sono analogie funzionali, non repliche fedeli.
+==Le **reti neurali artificiali** sono strutture matematiche ispirate (vagamente) all'organizzazione del cervello biologico.== La parola "ispirate" è importante: sono analogie funzionali, non repliche fedeli.
 
 **Il neurone artificiale:** l'unità base è un nodo che riceve più valori numerici in ingresso, li somma con pesi diversi, applica una funzione di attivazione al risultato, e produce un valore in uscita. I pesi determinano quanto ogni ingresso influenza l'uscita. Durante l'addestramento, i pesi vengono modificati per ridurre l'errore tra output del modello e output desiderato.
 
@@ -70,13 +70,13 @@ Le **reti neurali artificiali** sono strutture matematiche ispirate (vagamente) 
 
 **Il training (addestramento):** il processo di addestramento consiste nel far passare migliaia o miliardi di esempi attraverso la rete, calcolare quanto l'output differisce dall'output desiderato (funzione di perdita, loss), e usare un algoritmo chiamato **backpropagation** per modificare i pesi in direzione che riduce l'errore. Questo processo si ripete molte volte (epoche) finché l'errore non converge su un valore accettabile.
 
-Un modello come GPT-4 ha circa 1 trilione di parametri (pesi). L'addestramento ha richiesto migliaia di GPU per mesi. Il risultato è una funzione matematica enormemente complessa che associa sequenze di testo in ingresso a continuazioni statisticamente probabili.
+Un modello come GPT-4 ha circa 1 trilione di parametri (pesi). L'addestramento ha richiesto migliaia di GPU per mesi. ==Il risultato è una funzione matematica enormemente complessa che associa sequenze di testo in ingresso a continuazioni statisticamente probabili.==
 
 ---
 
 ### IA generativa: come funziona un LLM
 
-Un **LLM (Large Language Model)** come GPT-4, Llama, Gemini, o Claude è una rete neurale addestrata su enormi quantità di testo per predire il token successivo in una sequenza.
+==Un **LLM (Large Language Model)** come GPT-4, Llama, Gemini, o Claude è una rete neurale addestrata su enormi quantità di testo per predire il token successivo in una sequenza.==
 
 **Cosa è un token:** il testo non viene elaborato parola per parola. Viene scomposto in "token" — unità sub-lessicali. "Tecnologia" potrebbe essere un singolo token. "Biotecnologia" potrebbe essere due token ("Bio" + "tecnologia"). Un token corrisponde approssimativamente a 3/4 di parola in italiano.
 
@@ -84,7 +84,7 @@ Un **LLM (Large Language Model)** come GPT-4, Llama, Gemini, o Claude è una ret
 
 **Il parametro "temperature":** controlla quanto è "casuale" la selezione del token. Temperature bassa (vicina a 0): il modello sceglie quasi sempre il token con probabilità più alta — risposte più prevedibili e conservative. Temperature alta (vicina a 1): il modello introduce più casualità — risposte più creative ma meno accurate.
 
-**Perché il modello non "capisce":** il modello impara correlazioni statistiche tra token nel corpus di addestramento. Non ha un modello interno del mondo. Non sa che Roma è in Italia nel senso in cui lo sai tu — sa che "Roma" e "Italia" co-occorrono frequentemente in certi contesti nel testo su cui è stato addestrato. Per questo può produrre testo plausibile su qualsiasi argomento, anche inventando fatti che suonano credibili.
+**Perché il modello non "capisce":** il modello impara correlazioni statistiche tra token nel corpus di addestramento. Non ha un modello interno del mondo. Non sa che Roma è in Italia nel senso in cui lo sai tu — sa che "Roma" e "Italia" co-occorrono frequentemente in certi contesti nel testo su cui è stato addestrato. ==Per questo può produrre testo plausibile su qualsiasi argomento, anche inventando fatti che suonano credibili.==
 
 ---
 
@@ -99,15 +99,15 @@ Esempi reali di allucinazioni documentate:
 - LLM che descrivono eventi storici con date errate in modo così fluente da sembrare autoritative.
 - LLM che producono codice con funzioni inesistenti con nomi plausibili.
 
-La chiave è questa: il modello non sa di stare sbagliando. Non ha un sistema di verifica interno che distingue il vero dal falso. Produce testo plausibile — e plausibile non significa corretto.
+La chiave è questa: il modello non sa di stare sbagliando. Non ha un sistema di verifica interno che distingue il vero dal falso. ==Produce testo plausibile — e plausibile non significa corretto.==
 
-**Come si verifica:** ogni affermazione fattuale prodotta da un LLM su cui si intende fare affidamento va verificata su fonti indipendenti. Questo non significa che i LLM siano inutili — significa che vanno usati come strumenti che accelerano il processo di ricerca, non come fonti autorevoli.
+==**Come si verifica:** ogni affermazione fattuale prodotta da un LLM su cui si intende fare affidamento va verificata su fonti indipendenti.== Questo non significa che i LLM siano inutili — significa che vanno usati come strumenti che accelerano il processo di ricerca, non come fonti autorevoli.
 
 ---
 
 ### Bias algoritmici: quando i dati riflettono le disuguaglianze
 
-Un sistema di machine learning impara dai dati. Se i dati riflettono bias e disuguaglianze del mondo reale, il sistema li apprende e li amplifica.
+==Un sistema di machine learning impara dai dati.== ==Se i dati riflettono bias e disuguaglianze del mondo reale, il sistema li apprende e li amplifica.==
 
 **Il caso Gender Shades (2018):** Joy Buolamwini, ricercatrice del MIT Media Lab, e Timnit Gebru (allora a Microsoft) pubblicano uno studio sistematico sulle prestazioni dei sistemi commerciali di classificazione del genere da immagine facciale (Microsoft, IBM, Megvii/Face++). Risultati: il tasso di errore per uomini dalla pelle chiara era inferiore all'1%. Per donne dalla pelle scura era fino al 34,7%. Il motivo: i dataset di addestramento erano prevalentemente composti da volti maschili e di pelle chiara. Il sistema aveva imparato dai dati disponibili — e i dati erano sbilanciati.
 
@@ -124,9 +124,9 @@ Un sistema di machine learning impara dai dati. Se i dati riflettono bias e disu
 
 L'impatto dell'IA sul lavoro è reale ma complesso — e le previsioni semplici ("l'IA eliminerà il 50% dei lavori entro 2030") sono quasi sempre troppo semplicistiche.
 
-**Professioni a rischio di automazione parziale:** compiti ripetitivi, ad alta struttura, con input standardizzati. Traduzione di testi standard, elaborazione di dati tabulari, generazione di codice boilerplate, classificazione di documenti, trascrizione audio. In questi casi, l'IA non elimina la professione ma cambia radicalmente il tempo che il professionista dedica a queste attività.
+==**Professioni a rischio di automazione parziale:** compiti ripetitivi, ad alta struttura, con input standardizzati.== Traduzione di testi standard, elaborazione di dati tabulari, generazione di codice boilerplate, classificazione di documenti, trascrizione audio. In questi casi, l'IA non elimina la professione ma cambia radicalmente il tempo che il professionista dedica a queste attività.
 
-**Professioni trasformate:** medici, avvocati, giornalisti, designer, insegnanti. L'IA accelera le parti di raccolta informazioni e generazione di bozze, ma le decisioni critiche — che richiedono giudizio, responsabilità, contestualizzazione, empatia — rimangono umane. Un radiologo che usa IA per pre-classificare le immagini può analizzare il triplo dei casi al giorno: la sua professione non è eliminata, è trasformata.
+==**Professioni trasformate:** medici, avvocati, giornalisti, designer, insegnanti.== L'IA accelera le parti di raccolta informazioni e generazione di bozze, ma le decisioni critiche — che richiedono giudizio, responsabilità, contestualizzazione, empatia — rimangono umane. Un radiologo che usa IA per pre-classificare le immagini può analizzare il triplo dei casi al giorno: la sua professione non è eliminata, è trasformata.
 
 **Professioni al sicuro o in crescita:** professioni che richiedono contatto fisico (artigiani, idraulici, elettricisti), cura di persone (insegnanti, medici, infermieri), creazione di senso e narrazione (scrittori, artisti, cineasti che usano la propria voce), gestione di sistemi IA (ingegneri, data scientist, ethicist).
 
@@ -136,13 +136,13 @@ L'impatto dell'IA sul lavoro è reale ma complesso — e le previsioni semplici 
 
 ### L'AI Act europeo: la prima grande regolamentazione dell'IA nel mondo
 
-Nell'agosto 2024 è entrato in vigore l'**AI Act** (Regolamento UE 2024/1689), la prima legge al mondo che regola sistematicamente i sistemi di intelligenza artificiale.
+==Nell'agosto 2024 è entrato in vigore l'**AI Act** (Regolamento UE 2024/1689), la prima legge al mondo che regola sistematicamente i sistemi di intelligenza artificiale.==
 
-Il principio fondamentale è la **classificazione per rischio**:
+==Il principio fondamentale è la **classificazione per rischio**:==
 
 **Rischio inaccettabile (vietati):** sistemi di manipolazione subliminale, classificazione di persone basata su caratteristiche protette (razza, religione, orientamento sessuale) per determinare l'accesso a servizi, sistemi di social scoring (come in Cina), riconoscimento delle emozioni nei luoghi di lavoro e nelle scuole (con poche eccezioni), identificazione biometrica in tempo reale in spazi pubblici (con eccezioni per sicurezza nazionale).
 
-**Rischio alto (obblighi stringenti):** sistemi usati in infrastrutture critiche, istruzione, occupazione, servizi essenziali, giustizia penale. Devono essere soggetti a valutazioni di conformità, supervisione umana, trasparenza, accuratezza e robustezza.
+==**Rischio alto (obblighi stringenti):** sistemi usati in infrastrutture critiche, istruzione, occupazione, servizi essenziali, giustizia penale.== Devono essere soggetti a valutazioni di conformità, supervisione umana, trasparenza, accuratezza e robustezza.
 
 **Rischio limitato (obblighi di trasparenza):** chatbot, deepfake, sistemi che interagiscono con persone. Devono indicare chiaramente all'utente che sta interagendo con un sistema IA, non con un essere umano.
 

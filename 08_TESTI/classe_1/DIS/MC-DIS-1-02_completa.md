@@ -42,13 +42,13 @@ Devi disegnarlo su carta. Ma la carta è grande al massimo 1,2 × 0,8 m (formato
 
 Riduci tutto in modo proporzionale. Se ogni 10 cm reali disegni 1 cm sul foglio, le 12 m reali diventano 120 cm sul foglio — non entra ancora. Se ogni 100 cm reali (= 1 metro) disegni 1 cm sul foglio, i 12 m reali diventano 12 cm — ora entra con spazio. Hai appena usato la scala 1:100.
 
-Questo è il principio fondamentale della scala: una **riduzione proporzionale** di tutte le dimensioni dell'oggetto. Non cambia la forma — cambia solo la dimensione. Un angolo retto rimane retto. Un cerchio rimane circolare. Le proporzioni tra le parti rimangono identiche.
+==Questo è il principio fondamentale della scala: una **riduzione proporzionale** di tutte le dimensioni dell'oggetto.== Non cambia la forma — cambia solo la dimensione. Un angolo retto rimane retto. Un cerchio rimane circolare. Le proporzioni tra le parti rimangono identiche.
 
 ---
 
 ### Cos'è esattamente una scala
 
-Una **scala di rappresentazione** è un rapporto tra la dimensione sul disegno e la dimensione reale dell'oggetto.
+==Una **scala di rappresentazione** è un rapporto tra la dimensione sul disegno e la dimensione reale dell'oggetto.==
 
 Si scrive sempre in questo formato:
 
@@ -96,19 +96,19 @@ Quando l'oggetto è più piccolo di quanto possa essere letto comodamente sul fo
 
 **Scala 10:1** → usata in orologeria, microelettronica, biologia (disegni di cellule, tessuti, strutture microscopiche).
 
-Regola: **il numero prima dei due punti dice quante volte più grande è il disegno rispetto all'oggetto reale.** A scala 5:1, il disegno è 5 volte più grande dell'oggetto.
+==Regola: **il numero prima dei due punti dice quante volte più grande è il disegno rispetto all'oggetto reale.** A scala 5:1, il disegno è 5 volte più grande dell'oggetto.==
 
 ---
 
 #### La scala 1:1 (scala naturale)
 
-**Scala 1:1** → dimensione sul disegno = dimensione reale. L'oggetto è rappresentato con le sue dimensioni vere. Usata per oggetti di dimensione "folio" — un raccordo idraulico, una placca elettrica, un documento d'identità.
+**Scala 1:1** → dimensione sul disegno = dimensione reale. ==L'oggetto è rappresentato con le sue dimensioni vere.== Usata per oggetti di dimensione "folio" — un raccordo idraulico, una placca elettrica, un documento d'identità.
 
 ---
 
 ### Come si calcola la scala: formula e procedura
 
-La formula per convertire tra dimensioni reali e dimensioni sul disegno è la stessa formula delle **proporzioni dirette**.
+==La formula per convertire tra dimensioni reali e dimensioni sul disegno è la stessa formula delle **proporzioni dirette**.==
 
 ---
 
@@ -175,9 +175,9 @@ La scala giusta per un disegno si sceglie con questo ragionamento:
 
 2. **Quanto spazio ho sul foglio?** Considera il foglio disponibile meno i margini (circa 1 cm per ogni lato) e il cartiglio (circa 2–3 cm in basso a destra).
 
-3. **Calcola il rapporto:** dimensione massima dell'oggetto ÷ spazio disponibile sul foglio. Questo ti dà il denominatore minimo della scala.
+3. ==**Calcola il rapporto:** dimensione massima dell'oggetto ÷ spazio disponibile sul foglio.== Questo ti dà il denominatore minimo della scala.
 
-4. **Scegli la scala standard più vicina** (da quell'elenco: 1:1, 1:2, 1:5, 1:10, 1:20, 1:50, 1:100, 1:200). Scegli quella che fa entrare il disegno con un po' di spazio — non quella esatta al millimetro.
+4. ==**Scegli la scala standard più vicina** (da quell'elenco: 1:1, 1:2, 1:5, 1:10, 1:20, 1:50, 1:100, 1:200).== Scegli quella che fa entrare il disegno con un po' di spazio — non quella esatta al millimetro.
 
 **Esempio pratico:** astuccio di 22 cm da disegnare su foglio A4 (lato lungo 29,7 cm, spazio utile circa 25 cm con i margini).
 
@@ -192,7 +192,7 @@ Rapporto: 22 ÷ 25 = 0,88 → il disegno in scala 1:1 entrerebbe quasi (è circa
 
 ### I formati dei fogli: la famiglia ISO 216
 
-I fogli per il disegno tecnico seguono la norma **ISO 216** — lo stesso sistema di cui hai sentito parlare nell'hook audio di MC-DIS-1-01. La serie principale si chiama **serie A**.
+I fogli per il disegno tecnico seguono la norma **ISO 216** — lo stesso sistema di cui hai sentito parlare nell'hook audio di MC-DIS-1-01. ==La serie principale si chiama **serie A**.==
 
 | Formato | Dimensioni (mm) | Uso tipico |
 |---------|----------------|------------|
@@ -203,7 +203,7 @@ I fogli per il disegno tecnico seguono la norma **ISO 216** — lo stesso sistem
 | A4 | 210 × 297 | Il formato scolastico standard |
 | A5 | 148 × 210 | Note, schizzi, disegni piccoli |
 
-La proprietà speciale della serie A è quella che hai calcolato nell'hook: il rapporto tra lato lungo e lato corto è sempre √2 ≈ 1,414. Questo significa che piegando un foglio A0 a metà ottieni due fogli A1 con le stesse proporzioni. Piegando un A1 ottieni due A2. E così via.
+La proprietà speciale della serie A è quella che hai calcolato nell'hook: il rapporto tra lato lungo e lato corto è sempre √2 ≈ 1,414. ==Questo significa che piegando un foglio A0 a metà ottieni due fogli A1 con le stesse proporzioni.== Piegando un A1 ottieni due A2. E così via.
 
 **Conseguenza pratica:** se riduci un disegno su A3 in scala 1:50 al 70,7% per portarlo su A4, la nuova scala è circa 1:70,7: 50 / 0,707 ≈ 70,7. Il formato dimezza l’area, non le lunghezze. Per passare da 1:50 a 1:100 devi ridurre le lunghezze al 50%.
 
@@ -224,7 +224,7 @@ Per formati maggiori (A1, A0) ci sono procedure di piegatura standardizzate — 
 
 ### Il cartiglio
 
-Il **cartiglio** (in inglese: title block) è il riquadro nell'angolo inferiore destro di ogni disegno tecnico. Contiene le informazioni necessarie per identificare e interpretare il disegno.
+==Il **cartiglio** (in inglese: title block) è il riquadro nell'angolo inferiore destro di ogni disegno tecnico.== Contiene le informazioni necessarie per identificare e interpretare il disegno.
 
 Un cartiglio scolastico minimo deve contenere:
 
@@ -253,7 +253,7 @@ Oltre ai tipi di linea già visti in MC-DIS-1-01, le norme UNI specificano anche
 
 #### Scrittura tecnica
 
-La scrittura nel disegno tecnico non è quella libera del tema italiano. Deve essere:
+==La scrittura nel disegno tecnico non è quella libera del tema italiano.== Deve essere:
 
 **Carattere prescritto:** le norme UNI preferiscono il carattere **ISO A** (stretto, inclinato a 15°) o **ISO B** (normale, verticale). In ambito scolastico si usa scrittura a mano in stampatello verticale con dimensioni proporzionate.
 
@@ -268,7 +268,7 @@ La scrittura nel disegno tecnico non è quella libera del tema italiano. Deve es
 
 #### Le quote (dimensioni)
 
-Le **quote** sono le indicazioni numeriche delle dimensioni reali dell'oggetto — non quelle ridotte dalla scala. Una quota indica sempre la misura reale, anche su un disegno ridotto.
+==Le **quote** sono le indicazioni numeriche delle dimensioni reali dell'oggetto — non quelle ridotte dalla scala.== Una quota indica sempre la misura reale, anche su un disegno ridotto.
 
 Il sistema di quotatura si compone di tre elementi:
 
@@ -282,9 +282,9 @@ Il sistema di quotatura si compone di tre elementi:
 
 #### Regole fondamentali di quotatura
 
-**Regola 1 — Completezza:** un disegno tecnico deve avere tutte le quote necessarie per costruire o verificare l'oggetto. Non devono mancare dimensioni che il lettore dovrebbe calcolare per sé.
+==**Regola 1 — Completezza:** un disegno tecnico deve avere tutte le quote necessarie per costruire o verificare l'oggetto.== Non devono mancare dimensioni che il lettore dovrebbe calcolare per sé.
 
-**Regola 2 — Unicità:** ogni dimensione deve essere quotata una volta sola. Se la stessa misura appare due volte con valori diversi, chi deve costruire l'oggetto non sa qual è quella corretta.
+==**Regola 2 — Unicità:** ogni dimensione deve essere quotata una volta sola.== Se la stessa misura appare due volte con valori diversi, chi deve costruire l'oggetto non sa qual è quella corretta.
 
 **Regola 3 — Chiarezza:** le linee di quota non si incrociano tra di loro se evitabile. Le quote più piccole stanno più vicine all'oggetto, quelle più grandi più lontane. Le cifre di quota non si sovrappongono a linee.
 
@@ -330,7 +330,7 @@ Quota le distanze principali: lunghezza e larghezza totale dell'appartamento, po
 
 **Risultato:** in un foglio A4, con linee di 1–2 mm di spessore, l'arch. Ferrara ha comunicato la geometria completa di uno spazio di 84 m² — con tutte le informazioni che un impresario edile, un imbianchino o un cliente hanno bisogno per capire l'appartamento senza entrarci.
 
-Questo è il potere della scala. Questo è il motivo per cui devi impararlo.
+==Questo è il potere della scala.== Questo è il motivo per cui devi impararlo.
 
 ---
 

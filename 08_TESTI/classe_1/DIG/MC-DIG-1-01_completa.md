@@ -22,9 +22,9 @@ Una volta ogni dieci minuti, in media. La stessa macchina che nel 1969 avrebbe m
 
 ### Un ambiente che non si vede. Ma che usi ogni giorno.
 
-Pensa all'ultima volta che hai fatto qualcosa sul computer o sullo smartphone: aprire una pagina web, ascoltare musica, scrivere un messaggio, fare una foto. Ognuna di quelle azioni ti ha portato dentro un **ambiente digitale** — uno spazio costruito da hardware, software, dati e connessioni, dove tu prendi decisioni decine di volte al minuto senza accorgertene.
+Pensa all'ultima volta che hai fatto qualcosa sul computer o sullo smartphone: aprire una pagina web, ascoltare musica, scrivere un messaggio, fare una foto. ==Ognuna di quelle azioni ti ha portato dentro un **ambiente digitale** — uno spazio costruito da hardware, software, dati e connessioni, dove tu prendi decisioni decine di volte al minuto senza accorgertene.==
 
-Orientarsi in questo ambiente non vuol dire sapere tutto. Vuol dire avere una mappa — capire dove sei, cosa stai facendo, e perché le cose funzionano in quel modo e non in un altro. Questa MC costruisce quella mappa.
+Orientarsi in questo ambiente non vuol dire sapere tutto. ==Vuol dire avere una mappa — capire dove sei, cosa stai facendo, e perché le cose funzionano in quel modo e non in un altro.== Questa MC costruisce quella mappa.
 
 ---
 
@@ -32,11 +32,11 @@ Orientarsi in questo ambiente non vuol dire sapere tutto. Vuol dire avere una ma
 
 Prima di tutto, una distinzione che vale per sempre.
 
-**Hardware** — cioè la parte fisica — è tutto quello che puoi toccare: lo schermo, la tastiera, il processore dentro il computer, la batteria, i cavi. La parola viene dall'inglese *hard* (duro, fisico) e *ware* (materiale). L'hardware non cambia se scarichi un'app nuova.
+==**Hardware** — cioè la parte fisica — è tutto quello che puoi toccare: lo schermo, la tastiera, il processore dentro il computer, la batteria, i cavi.== La parola viene dall'inglese *hard* (duro, fisico) e *ware* (materiale). L'hardware non cambia se scarichi un'app nuova.
 
-**Software** — cioè la parte logica — è tutto quello che non puoi toccare: i programmi, le app, il sistema operativo, i dati. La parola viene dall'inglese *soft* (morbido, non fisico) e *ware* (materiale). Il software è fatto di istruzioni scritte in un linguaggio che la macchina sa eseguire.
+==**Software** — cioè la parte logica — è tutto quello che non puoi toccare: i programmi, le app, il sistema operativo, i dati.== La parola viene dall'inglese *soft* (morbido, non fisico) e *ware* (materiale). Il software è fatto di istruzioni scritte in un linguaggio che la macchina sa eseguire.
 
-L'hardware senza il software è un blocco di plastica e silicio che non fa niente. Il software senza l'hardware non ha su cosa girare. Sono indissolubili — come il corpo e la mente.
+==L'hardware senza il software è un blocco di plastica e silicio che non fa niente.== Il software senza l'hardware non ha su cosa girare. Sono indissolubili — come il corpo e la mente.
 
 > 💡 **Analogia:** pensa a uno spartito musicale e a uno strumento. Lo strumento fisico è l'hardware: produce i suoni, ma non "sa" quale canzone suonare. Lo spartito è il software: contiene le istruzioni, ma senza lo strumento rimane carta scritta. La musica nasce solo quando ci sono entrambi.
 
@@ -50,7 +50,7 @@ Aprire un computer è come aprire il cofano di un'auto: ci sono molte parti, e o
 
 #### La CPU — il processore
 
-**CPU** sta per *Central Processing Unit*, cioè unità centrale di elaborazione. È il "cervello" del computer: esegue i calcoli, interpreta le istruzioni del software, coordina tutte le altre componenti.
+**CPU** sta per *Central Processing Unit*, cioè unità centrale di elaborazione. ==È il "cervello" del computer: esegue i calcoli, interpreta le istruzioni del software, coordina tutte le altre componenti.==
 
 Una CPU moderna contiene miliardi di **transistor** — interruttori elettronici microscopici che si accendono e spengono miliardi di volte al secondo. Ogni operazione del computer è una sequenza di accensioni e spegnimenti.
 
@@ -64,11 +64,11 @@ Le CPU moderne hanno più **core** — cioè più unità di calcolo all'interno 
 
 #### La RAM — la memoria di lavoro
 
-**RAM** sta per *Random Access Memory*, cioè memoria ad accesso casuale. È la memoria temporanea: ci vanno i dati che il processore sta usando in questo momento.
+**RAM** sta per *Random Access Memory*, cioè memoria ad accesso casuale. ==È la memoria temporanea: ci vanno i dati che il processore sta usando in questo momento.==
 
 Immagina una scrivania. Più è grande, più cose puoi tenere aperte contemporaneamente: libri, quaderni, fogli, calcolatrice. Quando finisci di lavorare e vai via, la scrivania viene svuotata. La RAM funziona esattamente così: è grande mentre il computer è acceso, si svuota quando lo spegni.
 
-Oggi uno smartphone ha tipicamente 6-12 GB di RAM. Un computer da lavoro può averne 16-32 GB. Di più RAM significa poter tenere aperte più app senza rallentamenti.
+Oggi uno smartphone ha tipicamente 6-12 GB di RAM. Un computer da lavoro può averne 16-32 GB. ==Di più RAM significa poter tenere aperte più app senza rallentamenti.==
 
 Il punto critico: la RAM è velocissima (i dati entrano e escono in nanosecondi) ma **volatile** — si cancella quando manca la corrente. Per questo i tuoi file non si salvano automaticamente: devono essere scritti su un altro tipo di memoria.
 
@@ -76,9 +76,9 @@ Il punto critico: la RAM è velocissima (i dati entrano e escono in nanosecondi)
 
 #### La ROM e lo storage — la memoria permanente
 
-**ROM** sta per *Read-Only Memory*, cioè memoria di sola lettura. Contiene le istruzioni fondamentali che permettono al computer di avviarsi — il cosiddetto **firmware**. Non puoi modificarla, e rimane anche quando togli la corrente.
+**ROM** sta per *Read-Only Memory*, cioè memoria di sola lettura. ==Contiene le istruzioni fondamentali che permettono al computer di avviarsi — il cosiddetto **firmware**.== Non puoi modificarla, e rimane anche quando togli la corrente.
 
-Lo **storage** (o memoria di massa) è il posto dove si salvano permanentemente tutti i dati: documenti, foto, musica, app installate, il sistema operativo stesso. Esistono due tipi principali:
+==Lo **storage** (o memoria di massa) è il posto dove si salvano permanentemente tutti i dati: documenti, foto, musica, app installate, il sistema operativo stesso.== Esistono due tipi principali:
 
 **HDD** (*Hard Disk Drive*) — disco rigido meccanico. All'interno c'è un piatto magnetico che gira ad alta velocità (5.400 o 7.200 giri al minuto) e una testina che legge e scrive i dati. È economico e ha molta capienza (1-4 TB sono normali), ma è fragile (una caduta può rompere i piatti) e più lento.
 
@@ -90,7 +90,7 @@ Lo **storage** (o memoria di massa) è il posto dove si salvano permanentemente 
 
 #### La GPU — la scheda grafica
 
-**GPU** sta per *Graphics Processing Unit*, cioè unità di elaborazione grafica. È progettata per un compito specifico: gestire le immagini, i video e tutto ciò che viene visualizzato sullo schermo.
+**GPU** sta per *Graphics Processing Unit*, cioè unità di elaborazione grafica. ==È progettata per un compito specifico: gestire le immagini, i video e tutto ciò che viene visualizzato sullo schermo.==
 
 Una CPU è ottima per fare pochi calcoli complessi uno dopo l'altro. Una GPU è ottima per fare milioni di calcoli semplici tutti insieme in parallelo — esattamente quello che serve per calcolare il colore di ciascun pixel sullo schermo decine di volte al secondo.
 
@@ -108,7 +108,7 @@ Sulla scheda madre c'è anche il **BIOS** (o **UEFI** nei computer moderni), cio
 
 ### Il sistema operativo: cos'è e perché esiste
 
-Sopra all'hardware c'è uno strato software fondamentale che si chiama **sistema operativo** (in inglese *Operating System*, abbreviato **OS**). Il sistema operativo è il programma che gestisce tutto il resto: coordina la CPU, la RAM e lo storage, controlla le periferiche, e fornisce un ambiente in cui le altre applicazioni possono girare.
+==Sopra all'hardware c'è uno strato software fondamentale che si chiama **sistema operativo** (in inglese *Operating System*, abbreviato **OS**).== Il sistema operativo è il programma che gestisce tutto il resto: coordina la CPU, la RAM e lo storage, controlla le periferiche, e fornisce un ambiente in cui le altre applicazioni possono girare.
 
 Senza il sistema operativo, nessun programma potrebbe funzionare. Ogni app che usi chiede al sistema operativo di accedere alla memoria, di leggere un file, di inviare dati in rete. Il sistema operativo decide come e quando concedere queste risorse.
 
@@ -146,9 +146,9 @@ La tendenza degli ultimi anni è verso le web app e il cloud: sempre meno dati v
 
 Molte persone usano "internet" e "web" come se fossero la stessa cosa. Non lo sono.
 
-**Internet** è l'infrastruttura — la rete fisica di cavi, router, server e connessioni wireless che collega miliardi di dispositivi in tutto il mondo. Internet trasporta dati di tutti i tipi: pagine web, email, messaggi, telefonate via VoIP, stream video, file.
+==**Internet** è l'infrastruttura — la rete fisica di cavi, router, server e connessioni wireless che collega miliardi di dispositivi in tutto il mondo.== Internet trasporta dati di tutti i tipi: pagine web, email, messaggi, telefonate via VoIP, stream video, file.
 
-**Il web** (World Wide Web) è uno dei servizi che gira su internet — il più famoso. È l'insieme di tutte le pagine web collegate tra loro da link ipertestuali, accessibili tramite browser usando il protocollo HTTP/HTTPS. Inventato da Tim Berners-Lee nel 1989 al CERN di Ginevra.
+==**Il web** (World Wide Web) è uno dei servizi che gira su internet — il più famoso.== È l'insieme di tutte le pagine web collegate tra loro da link ipertestuali, accessibili tramite browser usando il protocollo HTTP/HTTPS. Inventato da Tim Berners-Lee nel 1989 al CERN di Ginevra.
 
 Analogia: internet è come la rete stradale nazionale — autostrade, strade provinciali, strade comunali. Il web è come il servizio di corrieri che usa quelle strade. Esistono altri servizi sulla stessa rete: le email sono come le lettere spedite per posta ordinaria; i messaggi WhatsApp sono come i messaggi SMS, ma tramite internet.
 
@@ -158,7 +158,7 @@ Analogia: internet è come la rete stradale nazionale — autostrade, strade pro
 
 Hai sentito spesso dire che qualcosa è "in cloud" o "nel cloud". Cosa vuol dire concretamente?
 
-**Cloud computing** significa che i dati e/o i programmi non sono salvati sul tuo dispositivo, ma su server remoti gestiti da grandi aziende (Amazon Web Services, Google Cloud, Microsoft Azure). Tu accedi a questi dati e programmi tramite internet.
+==**Cloud computing** significa che i dati e/o i programmi non sono salvati sul tuo dispositivo, ma su server remoti gestiti da grandi aziende (Amazon Web Services, Google Cloud, Microsoft Azure).== Tu accedi a questi dati e programmi tramite internet.
 
 Esempi concreti: le tue foto su Google Foto o iCloud non sono solo sul telefono — sono anche sui server di Google o Apple. Se perdi il telefono, le foto restano. Il tuo documento su Google Docs non è sul tuo computer — è su un server di Google a cui accedi tramite browser.
 
@@ -172,7 +172,7 @@ Svantaggi: dipendi dalla connessione internet, i tuoi dati sono su server di ter
 
 ### Periferiche di input e output
 
-Il computer riceve informazioni dall'esterno tramite le **periferiche di input** e comunica con l'esterno tramite le **periferiche di output**.
+==Il computer riceve informazioni dall'esterno tramite le **periferiche di input** e comunica con l'esterno tramite le **periferiche di output**.==
 
 **Periferiche di input** — portano dati dentro il computer:
 - Tastiera (testo e comandi)

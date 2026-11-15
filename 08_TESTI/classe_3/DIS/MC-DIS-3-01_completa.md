@@ -24,7 +24,7 @@ Gli stessi principi che stai per imparare — formalizzati da Leon Battista Albe
 
 ### Dal segno al volume: la sfida della rappresentazione tridimensionale
 
-Il problema è antico quanto il disegno stesso: come rappresentare su una superficie piatta — un foglio, uno schermo — qualcosa che esiste in tre dimensioni? Non esiste una soluzione unica. Esistono sistemi diversi, ognuno con una logica precisa e con vantaggi specifici per scopi diversi. In questa MC li studierai tutti — e imparerai a scegliere il sistema giusto per ogni situazione.
+==Il problema è antico quanto il disegno stesso: come rappresentare su una superficie piatta — un foglio, uno schermo — qualcosa che esiste in tre dimensioni?== Non esiste una soluzione unica. Esistono sistemi diversi, ognuno con una logica precisa e con vantaggi specifici per scopi diversi. In questa MC li studierai tutti — e imparerai a scegliere il sistema giusto per ogni situazione.
 
 ---
 
@@ -32,17 +32,44 @@ Il problema è antico quanto il disegno stesso: come rappresentare su una superf
 
 Il disegno tecnico nasce per comunicare oggetti con precisione: un artigiano deve poter costruire esattamente quello che un progettista ha disegnato. Per secoli, l'unico strumento era la matita su carta. Poi, nel ventesimo secolo, la necessità di comunicare non solo le misure ma anche l'aspetto visivo di un oggetto ha generato una nuova disciplina: il **design industriale**.
 
-Il design industriale nasce formalmente all'inizio del Novecento — la data che quasi tutti gli storici indicano come spartiacque è il 1919, quando Walter Gropius fondò la scuola Bauhaus a Weimar, in Germania. La rivoluzione del Bauhaus fu semplice e radicale: **arte e tecnica non sono opposti**. Un oggetto bello e un oggetto funzionale non sono due cose diverse. Il design è la disciplina che le unifica.
+Il design industriale nasce formalmente all'inizio del Novecento — la data che quasi tutti gli storici indicano come spartiacque è il 1919, quando Walter Gropius fondò la scuola Bauhaus a Weimar, in Germania. ==La rivoluzione del Bauhaus fu semplice e radicale: **arte e tecnica non sono opposti**.== Un oggetto bello e un oggetto funzionale non sono due cose diverse. ==Il design è la disciplina che le unifica.==
 
 Dal Bauhaus in poi, il design industriale si è sviluppato come professione autonoma. Oggi il designer di prodotto non costruisce oggetti: progetta la forma, le proporzioni, i materiali, l'ergonomia e l'identità visiva di oggetti che poi vengono prodotti in serie. Per fare questo usa tutti gli strumenti del disegno tecnico — e molti altri.
 
 ---
 
+### La terza assonometria: la monometrica
+
+In seconda hai usato due assonometrie: la **cavaliera**, che lascia intatta la faccia di fronte, e l'**isometrica**, che tratta le tre facce allo stesso modo. ==Ce n'è una terza, l'**assonometria monometrica**, che lascia intatta la base.==
+
+**Gli assi:**
+- Asse x (larghezza): sale di 30° verso destra rispetto alla linea orizzontale.
+- Asse y (profondità): sale di 60° verso sinistra.
+- Asse z (altezza): verticale.
+
+Tra l'asse x e l'asse y c'è un angolo retto, perché 180° − 30° − 60° = 90°. ==Per questo la base dell'oggetto si disegna con la sua vera forma: è la pianta delle proiezioni ortogonali, soltanto girata di 30°.==
+
+**Il fattore di riduzione:** non c'è. Le misure si riportano per intero su tutti e tre gli assi: «monometrica» vuol dire che la misura è una sola. Su questo è uguale all'isometrica: le due si distinguono per gli angoli degli assi.
+
+**Come si costruisce un parallelepipedo in assonometria monometrica:**
+
+1. Traccia una linea orizzontale sottile e segna su di essa il punto d'origine O.
+2. Da O traccia i tre assi con la squadra a 30° e 60°: x a 30° verso destra, y a 60° verso sinistra, z verticale.
+3. Riporta la larghezza sull'asse x e la profondità sull'asse y, poi chiudi la base con due linee parallele agli assi: è un rettangolo vero.
+4. Da ogni vertice della base alza uno spigolo verticale lungo quanto l'altezza.
+5. Unisci i quattro punti in alto: la faccia di sopra è uguale alla base.
+
+**Quando si usa:** quando conta di più ciò che si vede dall'alto, come la pianta di una stanza con i mobili, un edificio o un quartiere. Nel disegno di architettura è comoda perché si parte dalla pianta già disegnata e basta alzare le altezze. In cambio l'oggetto sembra visto molto dall'alto e più slanciato di quanto è.
+
+Alcuni libri usano anche la **monometrica a 45°**, con gli assi x e y inclinati di 45° tutti e due, e l'**assonometria militare** (o aerea): stessi assi, ma l'altezza si disegna a metà, perché l'oggetto non sembri troppo alto. Si usa per le piante di edifici e quartieri visti dall'alto. Esistono poi altre assonometrie ortogonali, la **dimetrica** e la **trimetrica**, che si disegnano con il goniometro: le puoi provare nell'assonometro del libro.
+
+---
+
 ### Prospettiva centrale e prospettiva accidentale
 
-La **prospettiva** è il sistema di rappresentazione che riproduce come gli oggetti appaiono all'occhio umano: gli oggetti lontani sembrano più piccoli, le rette parallele sembrano convergere verso un punto. È la rappresentazione più "naturale" — ma non è fedele alle misure reali.
+==La **prospettiva** è il sistema di rappresentazione che riproduce come gli oggetti appaiono all'occhio umano: gli oggetti lontani sembrano più piccoli, le rette parallele sembrano convergere verso un punto.== ==È la rappresentazione più "naturale" — ma non è fedele alle misure reali.==
 
-La differenza fondamentale rispetto all'assonometria è questa: nell'assonometria, le misure reali vengono conservate (o ridotte con un fattore costante). Nella prospettiva, le misure vengono deformate intenzionalmente per simulare la percezione visiva. Per questo l'assonometria è lo strumento del tecnico, la prospettiva è lo strumento del designer e dell'architetto che vuole comunicare l'aspetto di un'idea.
+==La differenza fondamentale rispetto all'assonometria è questa: nell'assonometria, le misure reali vengono conservate (o ridotte con un fattore costante).== Nella prospettiva, le misure vengono deformate intenzionalmente per simulare la percezione visiva. ==Per questo l'assonometria è lo strumento del tecnico, la prospettiva è lo strumento del designer e dell'architetto che vuole comunicare l'aspetto di un'idea.==
 
 **Prospettiva centrale (a un punto di fuga):** tutte le rette parallele alla direzione di vista convergono verso un unico punto — il **punto di fuga** — posizionato sulla **linea d'orizzonte**. Le rette parallele al piano del quadro (la superficie su cui disegni) rimangono orizzontali o verticali. Questo sistema è adatto a rappresentare interni di stanze, corridoi, spazi urbani visti frontalmente.
 
@@ -77,7 +104,7 @@ Come si costruisce:
 | Difficoltà di costruzione | Media | Media-alta |
 | Modifiche delle misure | Immediato | Richiede ridisegno |
 
-**Regola pratica:** se devi comunicare misure esatte a chi deve costruire qualcosa, usa l'assonometria (o meglio ancora le proiezioni ortogonali). Se devi comunicare l'aspetto di un oggetto a chi deve decidere se compravelo o approvarl0, usa la prospettiva.
+==**Regola pratica:** se devi comunicare misure esatte a chi deve costruire qualcosa, usa l'assonometria (o meglio ancora le proiezioni ortogonali).== Se devi comunicare l'aspetto di un oggetto a chi deve decidere se compravelo o approvarl0, usa la prospettiva.
 
 ---
 
@@ -95,13 +122,13 @@ Il designer non parte da un foglio bianco. Parte da un **brief** — un document
 
 **Render → Prototipo:** un prototipo fisico (in cartone, stampa 3D, legno, argilla) permette di testare l'oggetto nella realtà — toccarlo, usarlo, misurarlo. Il prototipo rivela problemi che nessun disegno avrebbe mostrato: una superficie che scivola di mano, un bordo che fa male, una dimensione sbagliata.
 
-**Prototipo → Test → Iterazione:** il prototipo viene testato con gli utenti reali. I risultati guidano le modifiche. Spesso si torna al concept e si ricomincia. Questo ciclo — prototipo → test → modifica — si chiama **iterazione** ed è la parte più importante del design.
+**Prototipo → Test → Iterazione:** il prototipo viene testato con gli utenti reali. I risultati guidano le modifiche. Spesso si torna al concept e si ricomincia. ==Questo ciclo — prototipo → test → modifica — si chiama **iterazione** ed è la parte più importante del design.==
 
 ---
 
 ### Design thinking: il metodo in cinque mosse
 
-Il **design thinking** è un metodo per risolvere problemi complessi centrandosi sull'utente. Fu formalizzato alla Stanford d.school negli anni 2000 e oggi viene usato in aziende, scuole e governi di tutto il mondo. Ha cinque fasi:
+==Il **design thinking** è un metodo per risolvere problemi complessi centrandosi sull'utente.== Fu formalizzato alla Stanford d.school negli anni 2000 e oggi viene usato in aziende, scuole e governi di tutto il mondo. Ha cinque fasi:
 
 **1. Empatia:** capisci chi ha il problema prima di tentare di risolverlo. Osserva, ascolta, mettiti nei panni dell'utente. Il modo più comune per sbagliare è progettare qualcosa che tu trovi utile senza verificare se lo trovano utile anche gli altri.
 
@@ -119,7 +146,7 @@ Il design thinking non è lineare: si torna indietro, si riscoprono problemi, si
 
 ### Ergonomia: quando la forma segue il corpo
 
-L'**ergonomia** è la disciplina che studia come adattare oggetti, strumenti e ambienti alle caratteristiche fisiche e cognitive degli esseri umani. Un oggetto ergonomico funziona meglio perché è stato progettato sulle misure e sui movimenti reali del corpo umano.
+==L'**ergonomia** è la disciplina che studia come adattare oggetti, strumenti e ambienti alle caratteristiche fisiche e cognitive degli esseri umani.== Un oggetto ergonomico funziona meglio perché è stato progettato sulle misure e sui movimenti reali del corpo umano.
 
 L'ergonomia nasce come disciplina sistematica durante la Seconda guerra mondiale, quando i progettisti di aerei e armamenti si resero conto che molti incidenti erano causati da errori di interfaccia — cockpit mal progettati, pulsanti confondibili, strumenti illeggibili sotto stress. Dopo la guerra, queste competenze passarono al design di prodotti civili.
 
@@ -129,7 +156,7 @@ Esempi di design ergonomico che usi ogni giorno:
 - Le scale antincendio hanno alzate di 16-18 cm (l'altezza ottimale per un adulto medio) e pedate di 28-30 cm.
 - I gradini delle scale dell'autobus pubblico di solito sono troppo alti per molti utenti anziani: è un problema di ergonomia non risolto.
 
-Il principio fondamentale dell'ergonomia si chiama **design centrato sull'utente (UCD, User Centered Design)**: l'oggetto si adatta alle persone, non le persone all'oggetto.
+==Il principio fondamentale dell'ergonomia si chiama **design centrato sull'utente (UCD, User Centered Design)**: l'oggetto si adatta alle persone, non le persone all'oggetto.==
 
 ---
 
@@ -159,7 +186,7 @@ Quando Steve Jobs presentò il primo iPhone il 9 gennaio 2007, la maggior parte 
 
 **Il bordo in alluminio:** la scocca in alluminio lucido anodizzato era più costosa della plastica, ma aveva tre vantaggi funzionali: dissipava meglio il calore generato dal processore, era più resistente agli urti laterali, e fungeva da antenna (il bordo metallico era parte del sistema di ricezione).
 
-**Zero pulsanti fisici, salvo tre:** il volume, il silenzioso e il tasto home. Ogni pulsante fisico è un punto di fragilità meccanica e un limite alla modifica del software. Eliminando quasi tutti i pulsanti, Apple poteva cambiare l'interfaccia utente con un aggiornamento del software, senza toccare l'hardware.
+**Zero pulsanti fisici, salvo tre:** il volume, il silenzioso e il tasto home. ==Ogni pulsante fisico è un punto di fragilità meccanica e un limite alla modifica del software.== Eliminando quasi tutti i pulsanti, Apple poteva cambiare l'interfaccia utente con un aggiornamento del software, senza toccare l'hardware.
 
 **Le proporzioni 3:2 del display:** il rapporto tra larghezza e altezza dello schermo era calcolato per essere comfortabile da tenere in una mano con il pollice che raggiunge tutti gli angoli. Era ergonomia integrata nella geometria.
 

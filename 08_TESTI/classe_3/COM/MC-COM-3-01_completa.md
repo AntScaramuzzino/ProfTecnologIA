@@ -29,7 +29,7 @@ Ogni volta che mandi un messaggio, fai una videochiamata, guardi un video in str
 
 ### Dal fuoco al fotone: una storia brevissima delle telecomunicazioni
 
-"Telecomunicazione" significa letteralmente comunicare a distanza. Gli esseri umani lo fanno da millenni: fuochi sui colli per segnalare attacchi, tamburi per trasmettere messaggi nelle foreste, torri di segnalazione lungo le coste. Ma la distanza percorribile era limitata e la quantità di informazione trasmissibile era quasi nulla — un segnale binario: fuoco acceso o spento.
+=="Telecomunicazione" significa letteralmente comunicare a distanza.== Gli esseri umani lo fanno da millenni: fuochi sui colli per segnalare attacchi, tamburi per trasmettere messaggi nelle foreste, torri di segnalazione lungo le coste. Ma la distanza percorribile era limitata e la quantità di informazione trasmissibile era quasi nulla — un segnale binario: fuoco acceso o spento.
 
 La svolta arriva nel 1837, quando Samuel Morse inventa il **telegrafo elettrico**. Per la prima volta, è possibile trasmettere messaggi complessi attraverso fili conduttori usando impulsi di corrente elettrica. Nel 1858, il primo cavo telegrafico transatlantico viene posato tra l'Irlanda e Terranova: funziona per soli 27 giorni prima di bruciare, ma dimostra che è possibile.
 
@@ -47,7 +47,7 @@ Qualsiasi comunicazione trasmette informazione attraverso un segnale che varia n
 
 Un **segnale analogico** varia in modo continuo: ogni valore è possibile, senza interruzioni. La tua voce al telefono analogico produceva un segnale elettrico che seguiva esattamente le variazioni di pressione dell'aria prodotte dalla tua voce. La radio AM e FM trasmette segnali analogici modulati — cioè modificati in frequenza o ampiezza per portare informazione.
 
-Un **segnale digitale** usa solo due valori: 0 e 1 (spento e acceso, basso e alto, assente e presente). Qualsiasi informazione — voce, immagine, video, testo — viene convertita in una sequenza di 0 e 1 prima di essere trasmessa. Questo processo si chiama **digitalizzazione** e avviene in due fasi:
+Un **segnale digitale** usa solo due valori: 0 e 1 (spento e acceso, basso e alto, assente e presente). Qualsiasi informazione — voce, immagine, video, testo — viene convertita in una sequenza di 0 e 1 prima di essere trasmessa. ==Questo processo si chiama **digitalizzazione** e avviene in due fasi:==
 
 - **Campionamento:** il segnale continuo viene misurato a intervalli regolari (es. 44.100 volte al secondo per un file audio CD). Ogni misura è un "campione".
 - **Quantizzazione:** ogni campione viene approssimato al valore digitale più vicino in una scala finita (es. 65.536 livelli per un audio a 16 bit).
@@ -62,17 +62,17 @@ Il risultato è una perdita di informazione — la rappresentazione digitale non
 
 Quando mandi un messaggio, il segnale digitale deve fisicamente spostarsi da un posto all'altro. Ci sono due grandi famiglie di trasmissione: via cavo e via radio.
 
-**Il cavo in rame** è stato la tecnologia dominante per oltre un secolo. Il rame conduce bene l'elettricità, ed è relativamente economico. Ma il segnale elettrico si **attenua** — si indebolisce man mano che percorre il cavo. Dopo qualche chilometro, serve un amplificatore. Il cavo in rame trasmette fino a qualche centinaia di Mbit/s su brevi distanze. Le linee telefoniche tradizionali usavano rame.
+**Il cavo in rame** è stato la tecnologia dominante per oltre un secolo. Il rame conduce bene l'elettricità, ed è relativamente economico. ==Ma il segnale elettrico si **attenua** — si indebolisce man mano che percorre il cavo.== Dopo qualche chilometro, serve un amplificatore. Il cavo in rame trasmette fino a qualche centinaia di Mbit/s su brevi distanze. Le linee telefoniche tradizionali usavano rame.
 
 > 💡 **Come funziona il modem (e perché si chiama così).** Quando un computer digitale deve comunicare attraverso le linee telefoniche tradizionali in rame — progettate per trasportare segnali analogici (la voce) — serve un dispositivo che faccia la traduzione in entrambe le direzioni. Il **modem** (da **mo**dulatore-**dem**odulatore) connesso al computer trasmittente converte i segnali digitali in segnali analogici modulati per l'invio. Una volta arrivati a destinazione, il modem ricevente esegue l'operazione inversa: riconverte il segnale analogico nel segnale digitale originale, in modo che possa essere elaborato dal computer ricevente. La connessione è bidirezionale e simmetrica: entrambi i modem fanno sia modulazione che demodulazione. Con la diffusione della fibra ottica, i modem tradizionali sono in gran parte superati — ma il principio di conversione segnale-digitale/segnale-fisico rimane lo stesso in tutte le tecnologie di trasmissione. *(Fonte: DeAgostini, ISBN 9788851128050, p.283)*
 
-**La fibra ottica** è la rivoluzione moderna. Al posto del segnale elettrico, usa **impulsi di luce** — fotoni che viaggiano all'interno di un filo di vetro o plastica purissima, spesso meno di un capello umano. La luce si propaga nella fibra per riflessione totale interna: ogni fotone che colpisce la parete del filo viene riflesso all'interno senza uscire.
+**La fibra ottica** è la rivoluzione moderna. ==Al posto del segnale elettrico, usa **impulsi di luce** — fotoni che viaggiano all'interno di un filo di vetro o plastica purissima, spesso meno di un capello umano.== La luce si propaga nella fibra per riflessione totale interna: ogni fotone che colpisce la parete del filo viene riflesso all'interno senza uscire.
 
 I vantaggi della fibra sono enormi: la luce viaggia a circa **200.000 km/s** nella fibra (il 67% della velocità della luce nel vuoto), l'attenuazione è minima — un segnale può percorrere decine di chilometri senza amplificazione — e la capacità è vastissima: una singola fibra può trasportare decine di Tbit/s usando fasci di luce a frequenze diverse (tecnica WDM — wavelength division multiplexing). Un singolo cavo sottomarino contiene decine di fibre parallele.
 
 > 🔬 **Box Fisica — La velocità della luce nella fibra.** Nel vuoto, la luce viaggia a 299.792 km/s. Nella fibra ottica, rallenta a circa 200.000 km/s — due terzi della velocità nel vuoto — perché interagisce con il materiale del vetro. Questo è sufficiente per coprire i 9.200 km da Roma a Tokyo in meno di 50 millisecondi. I restanti 150 ms del ritardo che vedi nella chiamata sono dovuti all'elaborazione dei segnali nei router, alle conversioni digitali e al routing tra reti diverse.
 
-**I cavi sottomarini** sono il pilastro fisico di Internet globale. Nel 2024 esistono circa 400 cavi sottomarini attivi, per una lunghezza totale superiore a 1,3 milioni di chilometri — tre giri e mezzo intorno alla Terra. Questi cavi — spessi quanto un tubo da giardino nel loro rivestimento esterno, ma con il nucleo ottico delle dimensioni di un bastoncino — trasportano oltre il 95% di tutto il traffico Internet mondiale.
+==**I cavi sottomarini** sono il pilastro fisico di Internet globale.== Nel 2024 esistono circa 400 cavi sottomarini attivi, per una lunghezza totale superiore a 1,3 milioni di chilometri — tre giri e mezzo intorno alla Terra. Questi cavi — spessi quanto un tubo da giardino nel loro rivestimento esterno, ma con il nucleo ottico delle dimensioni di un bastoncino — trasportano oltre il 95% di tutto il traffico Internet mondiale.
 
 **Caso studio: anatomia di un cavo transatlantico.** Il cavo MAREA, posato nel 2017 tra Virginia Beach (USA) e Bilbao (Spagna), è di proprietà di Microsoft e Facebook (Meta). Si estende per 6.605 km, scende fino a 3.500 metri di profondità, trasporta 200 Tbit/s ed è protetto da un involucro di acciaio nelle zone costiere poco profonde (dove potrebbe essere danneggiato da ancore o pesca) e da sola guaina leggera in acque profonde. Costa circa 160 milioni di dollari. I cavi sottomarini più importanti sono posseduti da Google, Meta, Amazon, Microsoft — le stesse aziende che gestiscono i servizi che usi ogni giorno.
 
@@ -84,14 +84,14 @@ I vantaggi della fibra sono enormi: la luce viaggia a circa **200.000 km/s** nel
 
 Le onde radio sono oscillazioni del campo elettromagnetico che si propagano nello spazio a velocità della luce. A differenza dei cavi, non richiedono un mezzo fisico: possono viaggiare nel vuoto.
 
-Le onde radio si distinguono per **frequenza** — il numero di oscillazioni al secondo, misurato in Hz. La frequenza determina le proprietà di propagazione:
+==Le onde radio si distinguono per **frequenza** — il numero di oscillazioni al secondo, misurato in Hz.== La frequenza determina le proprietà di propagazione:
 
 - **Frequenze basse (LF, MF, HF — kHz e MHz bassi):** si propagano seguendo la curvatura della Terra, possono rimbalzare sulla ionosfera. Usate per radio AM a lunga distanza, comunicazioni marittime, radioamatori.
 - **Frequenze medie (VHF, UHF — MHz alti e GHz bassi):** propagazione in linea retta, richiedono ripetitori. Usate per radio FM, televisione digitale terrestre, telefonia mobile (2G, 3G, 4G), Wi-Fi.
 - **Frequenze alte (SHF, EHF — decine di GHz):** propagazione strettamente direzionale, assorbite da pioggia e nebbia. Usate per 5G, ponti radio, comunicazioni via satellite.
 
 **Modulazione AM e FM:** per trasmettere un segnale audio (voce o musica) via radio, si usa un'onda portante ad alta frequenza che viene modificata — modulata — per portare l'informazione.
-- **AM (Amplitude Modulation):** si varia l'ampiezza dell'onda portante seguendo il segnale audio. Suscettibile ai disturbi elettrici (temporali).
+- ==**AM (Amplitude Modulation):** si varia l'ampiezza dell'onda portante seguendo il segnale audio.== Suscettibile ai disturbi elettrici (temporali).
 - **FM (Frequency Modulation):** si varia la frequenza dell'onda portante. Più resistente ai disturbi, qualità audio superiore.
 
 **Le reti mobili: da 2G a 5G.** Le generazioni di telefonia mobile si distinguono principalmente per la velocità di trasmissione dati e la latenza:
@@ -103,7 +103,7 @@ Le onde radio si distinguono per **frequenza** — il numero di oscillazioni al 
 | 4G (LTE) | 2009 | 10-100 Mbit/s | 30-50 ms | Streaming video, app cloud, social media |
 | 5G (NR) | 2019 | 100-1000 Mbit/s | 1-10 ms | IoT, veicoli autonomi, realtà aumentata in tempo reale |
 
-La differenza pratica tra 4G e 5G non è solo la velocità: è la **latenza** (il ritardo). Guidare un'auto autonoma con un sistema di controllo remoto richiede una latenza inferiore a 10 ms — perché le decisioni devono avvenire in tempo reale. Il 4G non è abbastanza veloce per questo. Il 5G sì.
+==La differenza pratica tra 4G e 5G non è solo la velocità: è la **latenza** (il ritardo).== Guidare un'auto autonoma con un sistema di controllo remoto richiede una latenza inferiore a 10 ms — perché le decisioni devono avvenire in tempo reale. Il 4G non è abbastanza veloce per questo. Il 5G sì.
 
 **Wi-Fi — due bande a confronto.** Il Wi-Fi trasmette a 2,4 GHz o 5 GHz. La differenza pratica:
 
@@ -118,9 +118,9 @@ In pratica: usa il 5 GHz quando sei vicino al router per streaming o gaming, il 
 
 ### TCP/IP: la lingua di Internet
 
-Internet non è una singola rete — è una rete di reti. Per far comunicare reti diverse (la rete scolastica, la rete del tuo operatore telefonico, la rete di Google), serve un linguaggio comune: il **protocollo**.
+==Internet non è una singola rete — è una rete di reti.== Per far comunicare reti diverse (la rete scolastica, la rete del tuo operatore telefonico, la rete di Google), serve un linguaggio comune: il **protocollo**.
 
-Il protocollo fondamentale di Internet è **TCP/IP** — in realtà un insieme di due protocolli che lavorano insieme:
+==Il protocollo fondamentale di Internet è **TCP/IP** — in realtà un insieme di due protocolli che lavorano insieme:==
 
 **IP (Internet Protocol)** assegna a ogni dispositivo connesso un indirizzo univoco — l'**indirizzo IP** — e definisce come i dati vengono suddivisi in **pacchetti** per essere trasmessi. Ogni pacchetto è un piccolo blocco di dati (tipicamente da pochi byte a 1.500 byte) che porta con sé:
 - L'indirizzo IP del mittente
@@ -142,9 +142,9 @@ Un indirizzo IPv4 è formato da quattro numeri da 0 a 255 separati da punti (es.
 
 Una rete non è solo cavi e antenne: ha componenti fisici che gestiscono il traffico dei pacchetti.
 
-**Uno switch** collega dispositivi all'interno della stessa rete locale (LAN — Local Area Network). Riceve pacchetti e li instrada verso il dispositivo corretto basandosi sull'indirizzo fisico (indirizzo MAC). Lo switch a casa tua distribuisce la connessione tra PC, smart TV, console.
+==**Uno switch** collega dispositivi all'interno della stessa rete locale (LAN — Local Area Network).== Riceve pacchetti e li instrada verso il dispositivo corretto basandosi sull'indirizzo fisico (indirizzo MAC). Lo switch a casa tua distribuisce la connessione tra PC, smart TV, console.
 
-**Un router** collega reti diverse e instrada i pacchetti tra di esse basandosi sull'indirizzo IP. Il router di casa tua connette la tua rete locale (LAN) alla rete del tuo operatore telefonico (WAN — Wide Area Network). I grandi router di backbone (la spina dorsale di Internet) gestiscono milioni di pacchetti al secondo e decidono in tempo reale quale percorso è più efficiente.
+==**Un router** collega reti diverse e instrada i pacchetti tra di esse basandosi sull'indirizzo IP.== Il router di casa tua connette la tua rete locale (LAN) alla rete del tuo operatore telefonico (WAN — Wide Area Network). I grandi router di backbone (la spina dorsale di Internet) gestiscono milioni di pacchetti al secondo e decidono in tempo reale quale percorso è più efficiente.
 
 **La differenza pratica:** se mandi un file al PC del tuo compagno nella stessa rete scolastica, il pacchetto passa per lo switch e non esce dalla rete locale. Se mandi lo stesso file a qualcuno in Giappone, passa per il router, che lo spedisce verso la rete dell'operatore, poi verso i router di backbone, poi verso l'operatore giapponese, poi verso il destinatario.
 
@@ -152,7 +152,7 @@ Una rete non è solo cavi e antenne: ha componenti fisici che gestiscono il traf
 
 ### DNS: la rubrica telefonica di Internet
 
-Gli indirizzi IP sono numeri — difficili da ricordare. Nessuno di noi ricorda l'indirizzo IP di Google (142.250.180.4). Per questo esiste il **DNS (Domain Name System)**: un sistema distribuito che traduce nomi di dominio leggibili dall'uomo (come google.com) in indirizzi IP.
+Gli indirizzi IP sono numeri — difficili da ricordare. Nessuno di noi ricorda l'indirizzo IP di Google (142.250.180.4). ==Per questo esiste il **DNS (Domain Name System)**: un sistema distribuito che traduce nomi di dominio leggibili dall'uomo (come google.com) in indirizzi IP.==
 
 Quando scrivi google.com nel browser:
 1. Il tuo dispositivo chiede al DNS server del tuo operatore: "Qual è l'IP di google.com?"
@@ -168,7 +168,7 @@ Tutta questa operazione — chiamata **DNS lookup** — richiede tipicamente men
 
 Una rete aperta al mondo è esposta ad attacchi. Per proteggerla esistono due strumenti fondamentali.
 
-**Il firewall** è un sistema (hardware o software) che filtra il traffico in entrata e uscita da una rete secondo regole predefinite. La scuola usa un firewall per impedire l'accesso a siti non appropriati e per bloccare connessioni esterne non autorizzate. Il firewall controlla: da che indirizzo IP arriva la richiesta, a quale porta è diretta (porta 80 = HTTP, 443 = HTTPS, 22 = SSH, ecc.), che tipo di protocollo usa.
+==**Il firewall** è un sistema (hardware o software) che filtra il traffico in entrata e uscita da una rete secondo regole predefinite.== La scuola usa un firewall per impedire l'accesso a siti non appropriati e per bloccare connessioni esterne non autorizzate. Il firewall controlla: da che indirizzo IP arriva la richiesta, a quale porta è diretta (porta 80 = HTTP, 443 = HTTPS, 22 = SSH, ecc.), che tipo di protocollo usa.
 
 **La VPN (Virtual Private Network)** crea un **tunnel cifrato** tra il tuo dispositivo e un server remoto. Tutto il traffico passa per questo tunnel — crittografato — prima di uscire su Internet. La VPN serve per due scopi principali:
 - **Privacy:** nasconde il tuo indirizzo IP reale e cifra il traffico all'operatore.
@@ -180,7 +180,7 @@ Una rete aperta al mondo è esposta ad attacchi. Per proteggerla esistono due st
 
 ### Caso studio: i cavi sottomarini — cosa succederebbe se venissero tagliati?
 
-Abbiamo detto che il 95% del traffico Internet globale viaggia su cavi sottomarini. Questo significa che sono l'infrastruttura critica più importante del pianeta — e una delle meno protette.
+==Abbiamo detto che il 95% del traffico Internet globale viaggia su cavi sottomarini.== ==Questo significa che sono l'infrastruttura critica più importante del pianeta — e una delle meno protette.==
 
 Nel 2022, durante l'eruzione del vulcano Hunga Tonga–Hunga Ha'apai nelle isole Tonga, un'onda sottomarina recise i cavi sottomarini che collegavano l'arcipelago al resto del mondo. Circa 100.000 persone rimasero isolate da Internet per cinque settimane, con gravi conseguenze per l'economia locale, i servizi sanitari e le comunicazioni di emergenza.
 

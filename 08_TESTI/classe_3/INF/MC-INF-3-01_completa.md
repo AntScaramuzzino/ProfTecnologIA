@@ -30,7 +30,7 @@ Questa rete si chiama **IoT — Internet of Things**, Internet delle Cose. Il pr
 
 ### Cos'è un sensore: dalla grandezza fisica al dato digitale
 
-Un **sensore** è un dispositivo che rileva una grandezza fisica — temperatura, pressione, luminosità, accelerazione, umidità, frequenza cardiaca, qualità dell'aria — e la converte in un segnale elettrico misurabile.
+==Un **sensore** è un dispositivo che rileva una grandezza fisica — temperatura, pressione, luminosità, accelerazione, umidità, frequenza cardiaca, qualità dell'aria — e la converte in un segnale elettrico misurabile.==
 
 Il processo ha due fasi:
 
@@ -39,7 +39,7 @@ Il processo ha due fasi:
 **2. Conversione analogico-digitale (ADC):** il segnale elettrico analogico — una grandezza continua che può assumere infiniti valori — viene convertito in un numero digitale — una grandezza discreta con un numero finito di valori. Questa operazione si chiama campionamento.
 
 Il campionamento ha due parametri fondamentali:
-- **Frequenza di campionamento:** quante volte al secondo il sensore misura il valore. Un sensore che campiona 100 volte al secondo produce 100 misure per secondo.
+- ==**Frequenza di campionamento:** quante volte al secondo il sensore misura il valore.== Un sensore che campiona 100 volte al secondo produce 100 misure per secondo.
 - **Risoluzione:** quanti bit usa per rappresentare ogni misura. Con 8 bit si hanno 256 livelli di precisione; con 12 bit si hanno 4096 livelli; con 16 bit si hanno 65536 livelli.
 
 La scelta di questi parametri determina la qualità del dato e la quantità di dati prodotta.
@@ -48,7 +48,7 @@ La scelta di questi parametri determina la qualità del dato e la quantità di d
 
 ### Architettura di un sistema IoT
 
-Un sistema IoT completo ha quattro strati.
+==Un sistema IoT completo ha quattro strati.==
 
 **Strato 1 — I dispositivi fisici (Things)**
 I sensori e gli attuatori. I sensori *misurano* (temperatura, pressione, movimento). Gli attuatori *agiscono* (accendono una luce, aprono una valvola, inviano un allarme). Un dispositivo può avere sia sensori che attuatori.
@@ -66,7 +66,7 @@ Come i dispositivi comunicano. Le opzioni sono molte, con compromessi diversi:
 | NB-IoT | Nazionale | Bassissimo | Contatori gas/acqua, sensori smart city |
 
 **Strato 3 — Il cloud / edge computing**
-I dati arrivano a server remoti (cloud) o vengono elaborati direttamente sul dispositivo o su un nodo intermedio (edge computing). Il vantaggio dell'edge è la latenza: se un sensore in una fabbrica rileva un'anomalia pericolosa, non può aspettare che il dato arrivi al cloud e torni — deve reagire in millisecondi.
+I dati arrivano a server remoti (cloud) o vengono elaborati direttamente sul dispositivo o su un nodo intermedio (edge computing). ==Il vantaggio dell'edge è la latenza: se un sensore in una fabbrica rileva un'anomalia pericolosa, non può aspettare che il dato arrivi al cloud e torni — deve reagire in millisecondi.==
 
 **Strato 4 — Le applicazioni**
 I dati vengono analizzati, visualizzati e usati per prendere decisioni: dashboard di monitoraggio, sistemi di allerta, algoritmi di machine learning che trovano anomalie, interfacce utente.
@@ -87,13 +87,13 @@ Questo pone sfide concrete:
 
 ### Sicurezza e privacy nell'IoT
 
-I dispositivi IoT sono notoriamente il punto debole più vulnerabile delle reti informatiche. Molti hanno firmware non aggiornabile, password di default mai cambiate, connessioni non cifrate.
+==I dispositivi IoT sono notoriamente il punto debole più vulnerabile delle reti informatiche.== ==Molti hanno firmware non aggiornabile, password di default mai cambiate, connessioni non cifrate.==
 
 Nel 2016, la botnet Mirai ha sfruttato milioni di telecamere di sicurezza e router domestici con le password di fabbrica mai cambiate, usandoli per lanciare uno degli attacchi DDoS più grandi della storia, abbattendo temporaneamente Netflix, Twitter e gran parte dell'internet americano.
 
 La privacy è una questione altrettanto seria. Ogni sensore che ti monitora — per proteggerti, per farti risparmiare energia, per migliorare la tua salute — produce dati che esistono da qualche parte, per qualcuno. Nel 2017, in un processo penale nel Connecticut, i dati di un pacemaker sono stati usati come prove in tribunale: il dispositivo registrava frequenza cardiaca, passi e attività fisica. Quei dati contraddicevano la versione dell'imputato.
 
-La domanda non è "il mio dispositivo mi spia?". La domanda è: **chi ha accesso ai miei dati, per quanto tempo, per quali scopi, con quale base legale?**
+La domanda non è "il mio dispositivo mi spia?". ==La domanda è: **chi ha accesso ai miei dati, per quanto tempo, per quali scopi, con quale base legale?**==
 
 ---
 

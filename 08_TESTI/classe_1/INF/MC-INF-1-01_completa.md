@@ -25,7 +25,7 @@ Scopri come funziona — e perché due cifre bastano per tutto.
 
 Pensa a una foto che hai scattato di recente. Sembra un'immagine — un momento, un ricordo. In realtà, dentro al tuo telefono, quella foto è una sequenza lunghissima di numeri. Solo numeri. Nient'altro.
 
-Il computer non vede immagini. Non sente suoni. Non legge parole. Capisce solo numeri — e li rappresenta usando un sistema molto particolare: il **sistema binario**, cioè un sistema di numerazione che usa solo due cifre: **0** e **1**.
+Il computer non vede immagini. Non sente suoni. Non legge parole. ==Capisce solo numeri — e li rappresenta usando un sistema molto particolare: il **sistema binario**, cioè un sistema di numerazione che usa solo due cifre: **0** e **1**.==
 
 Questo è il punto di partenza di tutta l'informatica. Capirlo non è difficile — basta sapere da dove viene e perché funziona.
 
@@ -35,7 +35,7 @@ Questo è il punto di partenza di tutta l'informatica. Capirlo non è difficile 
 
 Prendi un interruttore della luce. Può stare in due posizioni: spento o acceso. Non esiste una posizione "a metà". Non esiste "quasi acceso". Solo due stati: **0** (spento) e **1** (acceso).
 
-I circuiti elettronici dentro un computer funzionano esattamente così. Ogni componente, chiamato **transistor**, cioè un minuscolo interruttore elettronico, può essere in due stati: corrente che passa (1) o corrente che non passa (0). Un processore moderno ne contiene miliardi — e li accende e spegne miliardi di volte al secondo.
+I circuiti elettronici dentro un computer funzionano esattamente così. ==Ogni componente, chiamato **transistor**, cioè un minuscolo interruttore elettronico, può essere in due stati: corrente che passa (1) o corrente che non passa (0).== Un processore moderno ne contiene miliardi — e li accende e spegne miliardi di volte al secondo.
 
 Due stati. Due cifre. Un linguaggio semplice che, combinato in sequenze molto lunghe, riesce a rappresentare qualsiasi cosa.
 
@@ -60,7 +60,7 @@ Ecco i primi numeri a confronto:
 | 8 | 1000 |
 | 10 | 1010 |
 
-Ogni cifra binaria si chiama **bit** — abbreviazione di *binary digit*, cioè cifra binaria. Un bit è la più piccola unità di informazione possibile: o è 0 o è 1.
+Ogni cifra binaria si chiama **bit** — abbreviazione di *binary digit*, cioè cifra binaria. ==Un bit è la più piccola unità di informazione possibile: o è 0 o è 1.==
 
 Con 1 bit puoi rappresentare 2 valori (0 oppure 1).
 Con 2 bit puoi rappresentare 4 valori (00, 01, 10, 11).
@@ -74,11 +74,11 @@ Con 8 bit puoi rappresentare 256 valori (da 0 a 255).
 
 ### Da bit a immagine: come funziona davvero una foto
 
-Una foto da 12 megapixel contiene 12 milioni di pixel. Ogni pixel — cioè ogni singolo puntino dell'immagine — ha un colore.
+Una foto da 12 megapixel contiene 12 milioni di pixel. ==Ogni pixel — cioè ogni singolo puntino dell'immagine — ha un colore.==
 
 I colori digitali si costruiscono mescolando tre componenti: **rosso** (Red), **verde** (Green) e **blu** (Blue). Questo sistema si chiama **RGB**. Ogni componente ha un valore da 0 a 255 — cioè un numero che occupa 1 byte (8 bit).
 
-Per ogni pixel servono quindi 3 byte: uno per il rosso, uno per il verde, uno per il blu.
+==Per ogni pixel servono quindi 3 byte: uno per il rosso, uno per il verde, uno per il blu.==
 
 12.000.000 pixel × 3 byte = 36.000.000 di byte di dati per una sola foto. Trentasei milioni di numeri. Tutti scritti in binario. Tutto con 0 e 1.
 
@@ -99,7 +99,7 @@ I byte si raggruppano in unità più grandi. Ecco la scala che usi ogni giorno s
 | gigabyte | GB | 1.000.000.000 byte (circa) |
 | terabyte | TB | 1.000.000.000.000 byte (circa) |
 
-Quando dici che il tuo telefono ha 128 GB di memoria, stai dicendo che può contenere circa 128 miliardi di byte — cioè circa 1.024 miliardi di bit di informazione.
+==Quando dici che il tuo telefono ha 128 GB di memoria, stai dicendo che può contenere circa 128 miliardi di byte — cioè circa 1.024 miliardi di bit di informazione.==
 
 > **⬛ Box INF/DIG:** la competenza digitale è sapere che i file occupano spazio e che lo spazio si misura in byte. La competenza informatica è capire perché: come il computer costruisce un file in binario, come lo comprime, come lo recupera. Questa MC costruisce quella seconda competenza.
 

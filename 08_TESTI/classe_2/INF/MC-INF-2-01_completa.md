@@ -24,7 +24,7 @@ Non è una domanda retorica. Conta: il sistema operativo, il browser o l'app, la
 
 Quando accendi un computer — qualsiasi computer — la prima cosa che succede non è che si apre il browser o la tua app preferita. La prima cosa che succede è che parte un programma enorme e invisibile chiamato **sistema operativo** (in inglese *Operating System*, abbreviato **OS**).
 
-Il sistema operativo è il programma che gestisce tutto il resto. Senza di lui, nessun'altra applicazione potrebbe funzionare. Ogni app che usi chiede al sistema operativo di accedere alla memoria, di leggere un file, di inviare dati in rete, di disegnare qualcosa sullo schermo. Il sistema operativo decide quando e come concedere queste risorse — a volte accettando, a volte rimandando, a volte rifiutando.
+==Il sistema operativo è il programma che gestisce tutto il resto.== Senza di lui, nessun'altra applicazione potrebbe funzionare. Ogni app che usi chiede al sistema operativo di accedere alla memoria, di leggere un file, di inviare dati in rete, di disegnare qualcosa sullo schermo. Il sistema operativo decide quando e come concedere queste risorse — a volte accettando, a volte rimandando, a volte rifiutando.
 
 Lo studente Gary Kildall, ingegnere informatico di Pacific Grove, California, ha creato il primo sistema operativo commerciale per microcomputer nel 1974: si chiamava CP/M. Senza quel lavoro, ogni programma avrebbe dovuto reimplementare da zero tutte le funzioni di base. Kildall ha capito che ci voleva uno strato intermedio tra l'hardware e i programmi applicativi — uno strato che gestisse la complessità e nascondesse i dettagli hardware ai programmatori.
 
@@ -36,9 +36,9 @@ Un sistema operativo moderno svolge quattro funzioni fondamentali.
 
 **1. Gestione dei processi**
 
-Un **processo** è un programma in esecuzione. Ogni volta che apri un'app, il sistema operativo crea un processo. Quando chiudi l'app, il processo viene terminato.
+==Un **processo** è un programma in esecuzione.== Ogni volta che apri un'app, il sistema operativo crea un processo. Quando chiudi l'app, il processo viene terminato.
 
-Il problema è che un processore fisico può eseguire solo un processo alla volta. Se apri 20 applicazioni, il sistema operativo deve simulare l'esecuzione parallela assegnando a ciascun processo brevi frazioni di tempo del processore — ogni pochi millisecondi, cambia il processo attivo. Questa tecnica si chiama **multitasking** ed è così veloce da sembrare simultanea.
+Il problema è che un processore fisico può eseguire solo un processo alla volta. Se apri 20 applicazioni, il sistema operativo deve simulare l'esecuzione parallela assegnando a ciascun processo brevi frazioni di tempo del processore — ogni pochi millisecondi, cambia il processo attivo. ==Questa tecnica si chiama **multitasking** ed è così veloce da sembrare simultanea.==
 
 Il sistema operativo decide anche le *priorità*: un processo di sistema critico ha più priorità di un'app musicale in background. Se la CPU è sotto pressione, l'app musicale si mette in pausa.
 
@@ -52,7 +52,7 @@ Cosa succede se la RAM è piena? Il sistema operativo usa una parte dello storag
 
 Come vengono organizzati i file sullo storage? Attraverso il **file system** — un sistema di organizzazione gerarchica a **struttura ad albero**: cartelle che contengono altre cartelle, che contengono file.
 
-Ogni file system ha una **radice** (in Windows è `C:\`, in Linux e macOS è `/`). Da lì si ramificano tutte le cartelle. Ogni file ha un **percorso** — una sequenza di cartelle che indica dove si trova: `C:\Utenti\Giulia\Documenti\relazione.docx` è un percorso in Windows.
+Ogni file system ha una **radice** (in Windows è `C:\`, in Linux e macOS è `/`). Da lì si ramificano tutte le cartelle. ==Ogni file ha un **percorso** — una sequenza di cartelle che indica dove si trova: `C:\Utenti\Giulia\Documenti\relazione.docx` è un percorso in Windows.==
 
 I file system mantengono anche i **metadati** di ogni file: nome, dimensione, data di creazione, data di ultima modifica, permessi di accesso (chi può leggere, chi può scrivere, chi può eseguire).
 
@@ -80,7 +80,7 @@ Ogni periferica — stampante, tastiera, mouse, scheda di rete, USB — ha il su
 
 I sistemi operativi moderni offrono due modi per interagire:
 
-**Interfaccia grafica (GUI — *Graphical User Interface*)**: finestre, icone, menu, mouse. Quella che usi normalmente. È intuitiva ma limitata: puoi fare solo quello che i menu permettono.
+**Interfaccia grafica (GUI — *Graphical User Interface*)**: finestre, icone, menu, mouse. Quella che usi normalmente. ==È intuitiva ma limitata: puoi fare solo quello che i menu permettono.==
 
 **Riga di comando (CLI — *Command Line Interface*)**: si scrivono comandi testuali. In Windows si chiama PowerShell o Prompt dei comandi, in Linux/macOS si chiama Terminale. È meno intuitiva ma molto più potente: puoi automatizzare operazioni ripetitive, accedere a funzioni nascoste, gestire server remoti.
 

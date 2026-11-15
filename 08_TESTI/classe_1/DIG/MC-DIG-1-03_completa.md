@@ -22,7 +22,7 @@ Segue un algoritmo. Una sequenza precisa di passi che esegue uguale ogni volta. 
 
 ### Che cos'è un algoritmo
 
-Un **algoritmo** è una sequenza finita di istruzioni precise e non ambigue che, eseguite nell'ordine giusto, risolvono un problema o portano a un risultato.
+==Un **algoritmo** è una sequenza finita di istruzioni precise e non ambigue che, eseguite nell'ordine giusto, risolvono un problema o portano a un risultato.==
 
 Non è una parola complicata. È solo il modo formale di dire: "la ricetta per fare qualcosa".
 
@@ -70,7 +70,7 @@ Esempio: l'algoritmo del semaforo per il pedone.
 
 In linguaggio formale si scrive: `SE [condizione] ALLORA [azione A] ALTRIMENTI [azione B]`
 
-La condizione è sempre una domanda con risposta sì/no. Gli algoritmi non gestiscono "forse" o "dipende" — devono sapere esattamente cosa fare in ogni situazione prevista.
+La condizione è sempre una domanda con risposta sì/no. ==Gli algoritmi non gestiscono "forse" o "dipende" — devono sapere esattamente cosa fare in ogni situazione prevista.==
 
 ---
 
@@ -86,13 +86,13 @@ Esempio: l'algoritmo per trovare un amico in una stanza buia.
 
 Oppure con contatore fisso: "Ripeti 10 volte: {allunga la mano, fai un passo}".
 
-I cicli sono potentissimi: permettono di fare la stessa cosa molte volte senza riscrivere le istruzioni ogni volta. Un ciclo che gira per sempre si chiama **loop infinito** — ed è di solito un errore.
+I cicli sono potentissimi: permettono di fare la stessa cosa molte volte senza riscrivere le istruzioni ogni volta. ==Un ciclo che gira per sempre si chiama **loop infinito** — ed è di solito un errore.==
 
 ---
 
 ### Il diagramma di flusso: dare forma visiva all'algoritmo
 
-Un algoritmo scritto a parole può essere difficile da leggere. Per visualizzarlo si usa il **diagramma di flusso** — una rappresentazione grafica dove ogni tipo di istruzione ha una forma standard.
+Un algoritmo scritto a parole può essere difficile da leggere. ==Per visualizzarlo si usa il **diagramma di flusso** — una rappresentazione grafica dove ogni tipo di istruzione ha una forma standard.==
 
 Le forme principali:
 
@@ -114,7 +114,7 @@ Le frecce uscenti dal rombo (condizione) sono sempre due: una per "Sì" e una pe
 
 ### La decomposizione: affrontare un problema grande
 
-I problemi complessi sono fatti di problemi più piccoli. La **decomposizione** è l'abilità di scomporli.
+I problemi complessi sono fatti di problemi più piccoli. ==La **decomposizione** è l'abilità di scomporli.==
 
 Esempio: "organizzare la festa di compleanno" è troppo vago per essere un algoritmo. Ma se lo decompon:
 - Decidere data e luogo
@@ -133,9 +133,9 @@ I programmatori usano la decomposizione ogni giorno: nessun programma complesso 
 
 ### Il debug: trovare e correggere gli errori
 
-Un **bug** è un errore in un algoritmo che produce un risultato sbagliato o fa bloccare il programma. Il termine viene da un episodio reale del 1947: un vero insetto (bug in inglese = insetto) si era infilato in un computer e aveva causato un malfunzionamento. Da allora, "bug" indica qualsiasi errore software.
+==Un **bug** è un errore in un algoritmo che produce un risultato sbagliato o fa bloccare il programma.== Il termine viene da un episodio reale del 1947: un vero insetto (bug in inglese = insetto) si era infilato in un computer e aveva causato un malfunzionamento. Da allora, "bug" indica qualsiasi errore software.
 
-Il **debug** è il processo di trovare e correggere i bug.
+==Il **debug** è il processo di trovare e correggere i bug.==
 
 Come si fa il debug? Sempre così:
 1. Osserva il risultato sbagliato.
@@ -150,7 +150,7 @@ Il debug è uno dei processi più importanti del pensiero computazionale — e n
 
 ### Attività unplugged: gli algoritmi senza computer
 
-Il pensiero computazionale non richiede un computer. Si può imparare — e spesso si impara meglio — lontano dagli schermi.
+==Il pensiero computazionale non richiede un computer.== Si può imparare — e spesso si impara meglio — lontano dagli schermi.
 
 **Attività classiche unplugged:**
 

@@ -26,13 +26,13 @@ Scopri cosa si nasconde dietro il prezzo al distributore, e perché la velocità
 
 Quando accendi il motore di un'automobile, stai liberando energia che è stata immagazzinata nel sottosuolo per decine o centinaia di milioni di anni. Quella energia non è stata "prodotta" dall'umanità — è stata estratta da un deposito che la Terra ha formato attraverso processi geologici lentissimi. Il problema è che stiamo prelevando da quel deposito milioni di volte più in fretta di quanto si ricarichi.
 
-Le **fonti energetiche non rinnovabili** sono fonti di energia che si esauriscono in tempi molto superiori ai tempi di vita umana — praticamente, ai fini pratici, non si rigenerano. Comprendono i **combustibili fossili** (petrolio, gas naturale, carbone) e l'**energia nucleare** da fissione. Oggi queste fonti coprono circa l'80% del consumo energetico mondiale. Capire come si formano, come vengono trasformate e quali conseguenze producono è fondamentale per valutare la transizione energetica che stiamo attraversando.
+==Le **fonti energetiche non rinnovabili** sono fonti di energia che si esauriscono in tempi molto superiori ai tempi di vita umana — praticamente, ai fini pratici, non si rigenerano.== Comprendono i **combustibili fossili** (petrolio, gas naturale, carbone) e l'**energia nucleare** da fissione. Oggi queste fonti coprono circa l'80% del consumo energetico mondiale. Capire come si formano, come vengono trasformate e quali conseguenze producono è fondamentale per valutare la transizione energetica che stiamo attraversando.
 
 ---
 
 ### Il petrolio: da dove viene, come arriva a casa tua
 
-Il **petrolio** è un idrocarburo liquido — una miscela di centinaia di composti diversi formati da catene di carbonio e idrogeno. Si forma dalla decomposizione di organismi marini microscopici (plancton, alghe, batteri) morti e depositati sui fondali oceanici.
+==Il **petrolio** è un idrocarburo liquido — una miscela di centinaia di composti diversi formati da catene di carbonio e idrogeno.== Si forma dalla decomposizione di organismi marini microscopici (plancton, alghe, batteri) morti e depositati sui fondali oceanici.
 
 **Il processo di formazione** richiede condizioni molto precise:
 
@@ -41,7 +41,7 @@ Il **petrolio** è un idrocarburo liquido — una miscela di centinaia di compos
 3. La pressione degli strati sovrastanti raggiunge centinaia di atmosfere. La temperatura sale a 60-150°C (a seconda della profondità).
 4. In queste condizioni, in un arco di tempo che va da 10 a 100 milioni di anni, la materia organica si trasforma chimicamente in idrocarburi liquidi (petrolio) e gassosi (gas naturale associato).
 
-Il petrolio si raccoglie in **giacimenti**: sacche porose di roccia (arenaria, calcare) intrappolate sotto strati impermeabili di roccia. I giacimenti più importanti si trovano in Medio Oriente (Arabia Saudita, Iraq, Iran, Kuwait, Emirati Arabi), Russia, Venezuela, Canada e Stati Uniti.
+==Il petrolio si raccoglie in **giacimenti**: sacche porose di roccia (arenaria, calcare) intrappolate sotto strati impermeabili di roccia.== I giacimenti più importanti si trovano in Medio Oriente (Arabia Saudita, Iraq, Iran, Kuwait, Emirati Arabi), Russia, Venezuela, Canada e Stati Uniti.
 
 > 💡 **Dato:** i calcoli del geologo Jeffrey Dukes (Climatic Change, 2003) mostrano che un singolo litro di benzina richiede circa 23,5 tonnellate di materia organica fossile originale — equivalente all'intera produzione biologica di una superficie di foresta tropicale per quasi un anno. E le riserve provate di petrolio al 2023, secondo il BP Statistical Review, si attestano a circa 1.700 miliardi di barili — sufficienti per 50 anni ai ritmi di consumo attuali.
 
@@ -65,7 +65,7 @@ Il petrolio non è solo benzina. È la materia prima di un'industria chimica eno
 
 ### Il gas naturale: il combustibile fossile più pulito (ma non abbastanza)
 
-Il **gas naturale** è formato principalmente da **metano** (CH₄, 70-90%) con piccole quantità di etano, propano e butano. Si forma con un processo simile al petrolio, ma a temperature più basse e in giacimenti separati o associati ai giacimenti petroliferi.
+==Il **gas naturale** è formato principalmente da **metano** (CH₄, 70-90%) con piccole quantità di etano, propano e butano.== Si forma con un processo simile al petrolio, ma a temperature più basse e in giacimenti separati o associati ai giacimenti petroliferi.
 
 Il gas naturale è il combustibile fossile con **impatto ambientale più basso** tra i tre, per due ragioni: brucia in modo più completo del carbone (meno particolato), e produce meno CO₂ per unità di energia termica (circa 50 kg CO₂ per GJ di energia, contro i 90 kg del carbone).
 
@@ -75,13 +75,13 @@ Il gas naturale è il combustibile fossile con **impatto ambientale più basso**
 - Uso industriale (acciaierie, cementifici, industria chimica)
 - Produzione di idrogeno convenzionale (per ora ancora dal gas, non da fonti rinnovabili)
 
-**Il problema del metano come gas serra:** il metano ha un potere climalterante **86 volte superiore** alla CO₂ su un orizzonte di 20 anni (anche se rimane nell'atmosfera per meno tempo). Le perdite nelle reti di distribuzione e nei giacimenti — anche piccole percentuali — annullano gran parte del vantaggio climatico del gas rispetto al carbone.
+==**Il problema del metano come gas serra:** il metano ha un potere climalterante **86 volte superiore** alla CO₂ su un orizzonte di 20 anni (anche se rimane nell'atmosfera per meno tempo).== Le perdite nelle reti di distribuzione e nei giacimenti — anche piccole percentuali — annullano gran parte del vantaggio climatico del gas rispetto al carbone.
 
 ---
 
 ### Il carbone: la fonte più abbondante e più inquinante
 
-Il **carbone** è una roccia sedimentaria formata principalmente da carbonio. Si è formato dalla compressione di vegetazione terrestre (foreste paludose) in periodi geologici antichi — principalmente nel Carbonifero (circa 300 milioni di anni fa).
+==Il **carbone** è una roccia sedimentaria formata principalmente da carbonio.== Si è formato dalla compressione di vegetazione terrestre (foreste paludose) in periodi geologici antichi — principalmente nel Carbonifero (circa 300 milioni di anni fa).
 
 **Tipi di carbone** in ordine crescente di qualità (contenuto di carbonio e potere calorifico):
 - **Torba** (< 60% C): la forma più giovane, usata localmente come combustibile in alcune aree
@@ -90,7 +90,7 @@ Il **carbone** è una roccia sedimentaria formata principalmente da carbonio. Si
 - **Bitume o carbon fossile** (80-90% C): il più usato per la cokefazione (produzione di acciaio) e per l'energia
 - **Antracite** (> 90% C): la qualità più alta, brucia a lungo con poco fumo, raro e costoso
 
-Il carbone è la fonte fossile con il maggiore impatto ambientale:
+==Il carbone è la fonte fossile con il maggiore impatto ambientale:==
 - Produce più CO₂ per unità di energia di qualsiasi altro combustibile fossile
 - Le centrali a carbone emettono **SO₂** (che causa le piogge acide), **NOₓ** e particolato fine
 - Le miniere a cielo aperto distruggono ecosistemi interi
@@ -102,7 +102,7 @@ Il carbone è la fonte fossile con il maggiore impatto ambientale:
 
 ### L'energia nucleare: fissione, uranio e il dibattito aperto
 
-L'**energia nucleare** funziona in modo completamente diverso dai combustibili fossili: non brucia nulla. Sfrutta il calore generato dalla **fissione nucleare** — la rottura di atomi pesanti di **uranio-235** (o plutonio) in atomi più leggeri.
+==L'**energia nucleare** funziona in modo completamente diverso dai combustibili fossili: non brucia nulla.== Sfrutta il calore generato dalla **fissione nucleare** — la rottura di atomi pesanti di **uranio-235** (o plutonio) in atomi più leggeri.
 
 **Come funziona la fissione nucleare:**
 
@@ -112,7 +112,7 @@ L'**energia nucleare** funziona in modo completamente diverso dai combustibili f
 4. Il calore scalda l'acqua fino a produrre vapore ad alta pressione.
 5. Il vapore fa girare una turbina che aziona un generatore elettrico.
 
-Una **centrale nucleare** è, sostanzialmente, una caldaia a vapore — ma alimentata da reazioni atomiche invece che da carbone o gas. La differenza rispetto a una centrale termica convenzionale è il combustibile: l'uranio non brucia, non produce CO₂ durante il funzionamento.
+Una **centrale nucleare** è, sostanzialmente, una caldaia a vapore — ma alimentata da reazioni atomiche invece che da carbone o gas. ==La differenza rispetto a una centrale termica convenzionale è il combustibile: l'uranio non brucia, non produce CO₂ durante il funzionamento.==
 
 **Vantaggi dell'energia nucleare:**
 - Altissima densità energetica (poco combustibile per molta energia)
@@ -132,7 +132,7 @@ Una **centrale nucleare** è, sostanzialmente, una caldaia a vapore — ma alime
 
 Questo è il nodo centrale della questione fossile — e richiede capirlo in modo preciso, non vago.
 
-**Come funziona l'effetto serra naturale:** la Terra riceve energia solare principalmente sotto forma di luce visibile (radiazione a onda corta). La superficie terrestre assorbe questa energia e la riemette verso l'atmosfera come **radiazione infrarossa** (calore, onda lunga). Alcuni gas atmosferici — principalmente vapor d'acqua, CO₂, metano, ozono — assorbono questa radiazione infrarossa e la riemettono in tutte le direzioni, incluso verso la Terra. Questo "intrappola" parte del calore che altrimenti sfuggirebbe nello spazio. Senza effetto serra naturale, la temperatura media della Terra sarebbe -18°C anziché +15°C. L'effetto serra non è un problema: è necessario per la vita.
+**Come funziona l'effetto serra naturale:** la Terra riceve energia solare principalmente sotto forma di luce visibile (radiazione a onda corta). ==La superficie terrestre assorbe questa energia e la riemette verso l'atmosfera come **radiazione infrarossa** (calore, onda lunga).== Alcuni gas atmosferici — principalmente vapor d'acqua, CO₂, metano, ozono — assorbono questa radiazione infrarossa e la riemettono in tutte le direzioni, incluso verso la Terra. Questo "intrappola" parte del calore che altrimenti sfuggirebbe nello spazio. Senza effetto serra naturale, la temperatura media della Terra sarebbe -18°C anziché +15°C. ==L'effetto serra non è un problema: è necessario per la vita.==
 
 **L'effetto serra potenziato (problema):** dal 1750, cioè dall'inizio della rivoluzione industriale, la concentrazione di CO₂ nell'atmosfera è passata da 280 parti per milione (ppm) a oltre 420 ppm nel 2023 — un aumento del 50% in meno di tre secoli. Il metano è aumentato del 160%. Questi gas aggiuntivi potenziano l'effetto serra oltre il livello naturale, trattenendo più calore.
 

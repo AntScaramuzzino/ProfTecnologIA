@@ -40,15 +40,15 @@ Il disegno tecnico non è nato ieri.
 
 **Mesopotamia, 3.000 a.C.** I Sumeri incidevano su tavolette d'argilla piante di edifici e sistemi di irrigazione. Il disegno era in pianta — visto dall'alto — con linee dritte incise con uno stilo. Alcune di quelle tavolette sono ancora leggibili oggi.
 
-**Egitto antico, 2.600 a.C.** Per costruire la Grande Piramide di Giza, gli ingegneri egizi usavano corde annodate a intervalli regolari — i loro "righelli" e "squadre" — per tracciare angoli retti precisi al suolo. Un triangolo con i lati nei rapporti 3-4-5 forma sempre un angolo retto perfetto: questo principio, che oggi chiami **teorema di Pitagora**, era già usato praticamente duemila anni prima che Pitagora nascesse.
+**Egitto antico, 2.600 a.C.** Per costruire la Grande Piramide di Giza, gli ingegneri egizi usavano corde annodate a intervalli regolari — i loro "righelli" e "squadre" — per tracciare angoli retti precisi al suolo. ==Un triangolo con i lati nei rapporti 3-4-5 forma sempre un angolo retto perfetto: questo principio, che oggi chiami **teorema di Pitagora**, era già usato praticamente duemila anni prima che Pitagora nascesse.==
 
 **Grecia classica, V-IV sec. a.C.** Euclide codificò la geometria come sistema formale: partendo da soli 5 postulati, dimostrò centinaia di teoremi. L'**Elementi** di Euclide è il libro di matematica più stampato nella storia dopo la Bibbia. Ogni costruzione geometrica che imparerai in questa MC deriva direttamente dal suo lavoro.
 
-**Rinascimento, XV-XVI sec.** Leonardo da Vinci rivoluzionò il disegno tecnico introducendo le **viste multiple** — la stessa macchina disegnata di fronte, di lato, dall'alto, con il taglio interno in sezione. Prima di Leonardo, un disegno tecnico mostrava l'oggetto in prospettiva, come una fotografia. Dopo Leonardo, un oggetto veniva "spiegato" da angoli diversi, ciascuno con informazioni diverse. Questa intuizione è ancora la base del disegno meccanico moderno.
+==**Rinascimento, XV-XVI sec.** Leonardo da Vinci rivoluzionò il disegno tecnico introducendo le **viste multiple** — la stessa macchina disegnata di fronte, di lato, dall'alto, con il taglio interno in sezione.== Prima di Leonardo, un disegno tecnico mostrava l'oggetto in prospettiva, come una fotografia. Dopo Leonardo, un oggetto veniva "spiegato" da angoli diversi, ciascuno con informazioni diverse. Questa intuizione è ancora la base del disegno meccanico moderno.
 
 **Rivoluzione industriale, XVIII-XIX sec.** Quando le fabbriche iniziarono a produrre pezzi in serie, il disegno tecnico diventò un problema di standardizzazione. Un pezzo di macchina prodotto a Manchester doveva essere identico a un pezzo prodotto a Torino — senza che i due operai si conoscessero o si parlassero. Nacquero le prime norme grafiche: linee con spessore preciso, simboli standardizzati, scale ben definite. In Italia queste norme sono l'UNI (Ente Nazionale Italiano di Unificazione), che ha adottato e integrato le norme europee EN e internazionali ISO.
 
-**XX-XXI sec. — l'era del CAD.** A partire dagli anni '60, i computer hanno iniziato a sostituire matita e righello nei laboratori di progettazione professionale. Il **CAD** (Computer-Aided Design, progettazione assistita da computer) permette di disegnare con precisione assoluta, modificare in un clic, condividere istantaneamente. I programmi CAD 2D come AutoCAD o DraftSight riproducono sullo schermo esattamente le stesse operazioni che tu esegui con riga e compasso: tracciare una linea, costruire una perpendicolare, dividere un segmento. Chi impara le costruzioni geometriche con gli strumenti fisici capisce *cosa fa* il computer — non è solo un utilizzatore passivo di software.
+**XX-XXI sec. — l'era del CAD.** A partire dagli anni '60, i computer hanno iniziato a sostituire matita e righello nei laboratori di progettazione professionale. ==Il **CAD** (Computer-Aided Design, progettazione assistita da computer) permette di disegnare con precisione assoluta, modificare in un clic, condividere istantaneamente.== I programmi CAD 2D come AutoCAD o DraftSight riproducono sullo schermo esattamente le stesse operazioni che tu esegui con riga e compasso: tracciare una linea, costruire una perpendicolare, dividere un segmento. Chi impara le costruzioni geometriche con gli strumenti fisici capisce *cosa fa* il computer — non è solo un utilizzatore passivo di software.
 
 > 💡 **Dal righello ai droni: il disegno tecnico non finisce qui.**
 > Il principio del disegno tecnico — rappresentare la realtà in modo preciso, misurabile e non ambiguo — non è cambiato in 4.000 anni. È cambiato lo strumento. Oggi i topografi usano droni equipaggiati con sensori LiDAR (Light Detection and Ranging) per rilevare il terreno: il drone vola, il laser misura milioni di punti al secondo, e un software produce automaticamente una **mappa in 3D** del territorio con precisione millimetrica. Questo sistema si chiama **GIS** (Geographic Information System, sistema informativo geografico): non è solo una mappa, ma un database geografico interattivo dove ogni punto del terreno ha coordinate precise e può essere collegato a informazioni (tipo di suolo, altitudine, proprietà catastale, rischio idrogeologico). Gli architetti usano il **BIM** (Building Information Modeling): non disegnano un palazzo, modellano un gemello digitale dell'edificio dove ogni elemento (una trave, una finestra, un impianto) ha dimensioni, materiale, costo, vita utile. Tutto nasce dalle stesse regole di proiezione e rappresentazione che impari con il righello in mano.
@@ -65,8 +65,8 @@ Ogni strumento ha una funzione precisa. Usarli nel modo giusto è metà del risu
 
 La matita è lo strumento base. La durezza del grafite è indicata da una lettera e un numero sulla matita:
 
-- **H** (Hard, duro) → grafite dura, tratto sottile e chiaro. H, 2H, 4H: più alto il numero, più dura. Usa per linee molto sottili, costruzioni geometriche ausiliarie che poi cancellerai.
-- **B** (Black, nero) → grafite morbida, tratto spesso e scuro. B, 2B, 4B: più alto il numero, più morbido. Usa per schizzi a mano libera, ombreggiature.
+- ==**H** (Hard, duro) → grafite dura, tratto sottile e chiaro.== H, 2H, 4H: più alto il numero, più dura. Usa per linee molto sottili, costruzioni geometriche ausiliarie che poi cancellerai.
+- ==**B** (Black, nero) → grafite morbida, tratto spesso e scuro.== B, 2B, 4B: più alto il numero, più morbido. Usa per schizzi a mano libera, ombreggiature.
 - **HB** → equilibrio tra duro e morbido. È la matita "da scuola" standard. Per iniziare va bene.
 
 Per il disegno tecnico si usa generalmente **H o 2H** per le linee di costruzione leggere (da cancellare dopo) e **HB** per le linee definitive. Tieni la matita inclinata di circa 60° rispetto al foglio — non verticale come quando scrivi. Ruota leggermente la matita mentre tracci la linea: in questo modo il tratto rimane dello stesso spessore per tutta la sua lunghezza.
@@ -75,7 +75,7 @@ Per il disegno tecnico si usa generalmente **H o 2H** per le linee di costruzion
 
 #### Il righello
 
-Il righello misura e guida linee rette. Sembra banale — ma tenerlo correttamente fa tutta la differenza.
+==Il righello misura e guida linee rette.== Sembra banale — ma tenerlo correttamente fa tutta la differenza.
 
 Appoggia il righello sul foglio. Prima di tracciare la linea, controlla che non si muova premendo leggermente sulla parte centrale. Tieni il righello fermo con la mano non dominante. Tracci la linea con la mano dominante, tenendo la matita sempre appoggiata al bordo del righello.
 
@@ -93,13 +93,13 @@ Le squadre sono triangoli rettangoli in plastica trasparente. Ne esistono due ti
 
 Usate insieme, le due squadre permettono di tracciare angoli multipli di 15°: 15°, 30°, 45°, 60°, 75°, 90°, 105°, 120°, 135°, 150°, 165°, 180°. Per qualsiasi altro angolo ti serve il rapportatore.
 
-La coppia di squadre permette anche di tracciare **rette parallele**: appoggia una squadra al righello (o all'altra squadra). Fai scorrere la seconda squadra lungo il bordo della prima. La linea che tracci è sempre parallela alla precedente.
+==La coppia di squadre permette anche di tracciare **rette parallele**: appoggia una squadra al righello (o all'altra squadra).== Fai scorrere la seconda squadra lungo il bordo della prima. La linea che tracci è sempre parallela alla precedente.
 
 ---
 
 #### Il compasso
 
-Il compasso è lo strumento per tracciare circonferenze e archi. È anche lo strumento più potente per le costruzioni geometriche: ti permette di "trasportare" distanze, costruire perpendicolari, dividere angoli.
+Il compasso è lo strumento per tracciare circonferenze e archi. ==È anche lo strumento più potente per le costruzioni geometriche: ti permette di "trasportare" distanze, costruire perpendicolari, dividere angoli.==
 
 Come si usa:
 1. Regola l'apertura del compasso sulla distanza desiderata usando il righello.
@@ -107,13 +107,13 @@ Come si usa:
 3. Ruota il compasso tenendo la parte superiore tra pollice e indice. Non stringere — lascia che il compasso ruoti quasi da solo.
 4. Per cambiare apertura, usa sempre il righello per verificare la misura.
 
-**Errore comune:** aprire il compasso "a occhio" senza misurare. In geometria "circa" non vale. La precisione del compasso è la sua forza.
+**Errore comune:** aprire il compasso "a occhio" senza misurare. In geometria "circa" non vale. ==La precisione del compasso è la sua forza.==
 
 ---
 
 #### Il rapportatore
 
-Il rapportatore misura e traccia angoli. È un semicerchio graduato da 0° a 180°. Per misurare un angolo: posiziona il centro del rapportatore sul vertice dell'angolo, allinea il lato di riferimento allo 0°, leggi il valore dove passa il secondo lato. Per tracciare un angolo: fissa il centro sul vertice, segna il punto corrispondente all'angolo desiderato, unisci il vertice al punto tracciato.
+==Il rapportatore misura e traccia angoli.== È un semicerchio graduato da 0° a 180°. Per misurare un angolo: posiziona il centro del rapportatore sul vertice dell'angolo, allinea il lato di riferimento allo 0°, leggi il valore dove passa il secondo lato. Per tracciare un angolo: fissa il centro sul vertice, segna il punto corrispondente all'angolo desiderato, unisci il vertice al punto tracciato.
 
 **Attenzione alle due scale:** il rapportatore ha due serie di numeri (0-180 e 180-0). Usa sempre quella che parte da 0° sul lato di riferimento. Un errore frequente è leggere 60° invece di 120° perché si usa la scala sbagliata.
 
@@ -121,13 +121,13 @@ Il rapportatore misura e traccia angoli. È un semicerchio graduato da 0° a 180
 
 ### Le linee: il vocabolario del disegno tecnico
 
-Nel disegno tecnico, ogni tipo di linea ha un significato preciso. Non è una scelta estetica — è una convenzione normativa UNI. Un disegno tecnico con le linee sbagliate trasmette informazioni errate.
+==Nel disegno tecnico, ogni tipo di linea ha un significato preciso.== ==Non è una scelta estetica — è una convenzione normativa UNI.== Un disegno tecnico con le linee sbagliate trasmette informazioni errate.
 
 ---
 
 #### Linea continua grossa (spessore: 0,5–0,7 mm)
 
-Rappresenta i **contorni visibili** dell'oggetto — i bordi che si vedono guardando l'oggetto nella direzione del disegno.
+==Rappresenta i **contorni visibili** dell'oggetto — i bordi che si vedono guardando l'oggetto nella direzione del disegno.==
 
 Usa questa linea per: il profilo esterno dell'oggetto, i bordi delle superfici visibili, le linee di sezione (il taglio dell'oggetto).
 
@@ -137,7 +137,7 @@ Esempio: se disegni un dado (in senso meccanico), la linea continua grossa tracc
 
 #### Linea continua fine (spessore: 0,25–0,35 mm)
 
-Serve per elementi **ausiliari e di riferimento** che non fanno parte del contorno dell'oggetto.
+==Serve per elementi **ausiliari e di riferimento** che non fanno parte del contorno dell'oggetto.==
 
 Usa questa linea per: le linee di quota (che indicano le misure), le linee di asse dei fori, le linee di costruzione ausiliaria che rimangono nel disegno finale.
 
@@ -145,7 +145,7 @@ Usa questa linea per: le linee di quota (che indicano le misure), le linee di as
 
 #### Linea tratteggiata (spessore: 0,35 mm, tratti di 3–5 mm con spazi di 2 mm)
 
-Rappresenta i **contorni nascosti** — i bordi che ci sono nell'oggetto ma che non si vedono dalla direzione del disegno perché sono coperti da altre parti.
+==Rappresenta i **contorni nascosti** — i bordi che ci sono nell'oggetto ma che non si vedono dalla direzione del disegno perché sono coperti da altre parti.==
 
 Esempio: se disegni una scatola vista dall'alto, il fondo della scatola (che esiste ma non lo vedi) si rappresenta con la linea tratteggiata.
 
@@ -155,7 +155,7 @@ Regola pratica: inizia e finisci sempre con un tratto, non con uno spazio. Nei p
 
 #### Linea mista (linea-punto, spessore: 0,25 mm)
 
-Rappresenta gli **assi di simmetria** e i **piani di sezione**.
+==Rappresenta gli **assi di simmetria** e i **piani di sezione**.==
 
 La linea mista è formata da tratti lunghi alternati a punti (o tratti cortissimi): — · — · — · —
 
@@ -170,7 +170,7 @@ Ogni oggetto simmetrico ha un asse di simmetria rappresentato con la linea mista
 
 ### Le costruzioni geometriche fondamentali
 
-Le costruzioni geometriche sono procedure passo-passo per ottenere figure geometriche precise con soli righello e compasso (senza misurare angoli con il rapportatore). Sono le stesse procedure usate da Euclide nel IV sec. a.C. — e da allora non sono cambiate.
+Le costruzioni geometriche sono procedure passo-passo per ottenere figure geometriche precise con soli righello e compasso (senza misurare angoli con il rapportatore). ==Sono le stesse procedure usate da Euclide nel IV sec. a.C. — e da allora non sono cambiate.==
 
 Leggi ogni costruzione prima di eseguirla. Poi eseguila sul foglio seguendo i passi nell'ordine.
 
@@ -2419,11 +2419,11 @@ Le costruzioni dalla 9 alla 33 ampliano il repertorio: assi e parallele, poligon
 
 Uno degli esempi più belli di geometria applicata all'ingegneria è l'**arco a tutto sesto** — la struttura fondamentale dell'architettura romana, usata in ponti, acquedotti, archi trionfali e anfiteatri.
 
-Un arco a tutto sesto è esattamente una **semicirconferenza**. Il centro della circonferenza è il punto medio della luce dell'arco (cioè dello spazio che l'arco deve attraversare). Il raggio è la metà della luce.
+==Un arco a tutto sesto è esattamente una **semicirconferenza**.== Il centro della circonferenza è il punto medio della luce dell'arco (cioè dello spazio che l'arco deve attraversare). ==Il raggio è la metà della luce.==
 
 Perché questa forma? Perché in un arco semicircolare, i **cunei** (i blocchi di pietra che compongono l'arco, detti **conci**) ricevono il peso che grava dall'alto e lo trasmettono lungo le pareti laterali — non verso il basso. Ogni concio è tagliato con i giunti perpendicolari al raggio della circonferenza: il peso si trasforma in forze di compressione lungo i lati dell'arco. La pietra lavora solo in compressione — e la pietra è straordinariamente resistente alla compressione.
 
-Il risultato è una struttura che regge il peso di tonnellate di muratura senza colla, senza cemento, senza bulloni. Solo geometria.
+==Il risultato è una struttura che regge il peso di tonnellate di muratura senza colla, senza cemento, senza bulloni.== Solo geometria.
 
 Gli Romani costruirono il Ponte di Augusto ad Ariminum (l'attuale Rimini) nel 14 d.C. — 2.000 anni fa — usando questa geometria. Il ponte è ancora in piedi. I suoi archi a tutto sesto reggono il traffico moderno.
 

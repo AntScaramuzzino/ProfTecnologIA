@@ -26,9 +26,9 @@ Scopri qual è il problema, e perché le macchine semplici hanno cambiato la sto
 
 Hai mai aperto un tappo di bottiglia con le mani nude? È possibile, ma richiede molta forza. Poi hai preso un apribottiglie e il tappo è saltato via con un gesto leggero. Quella differenza — tra la forza che applichi e il risultato che ottieni — è esattamente quello che studierai in questa MC.
 
-Le **macchine semplici** sono dispositivi elementari che modificano l'intensità, la direzione o il punto di applicazione di una forza. Non creano energia dal nulla — rispettano rigorosamente il principio di conservazione dell'energia. Ma ci permettono di fare cose che sarebbero impossibili o molto più difficili a mani nude: sollevare carichi enormi, tagliare materiali duri, avvitare viti in legno massiccio, sollevare oggetti con una corda.
+Le **macchine semplici** sono dispositivi elementari che modificano l'intensità, la direzione o il punto di applicazione di una forza. ==Non creano energia dal nulla — rispettano rigorosamente il principio di conservazione dell'energia.== Ma ci permettono di fare cose che sarebbero impossibili o molto più difficili a mani nude: sollevare carichi enormi, tagliare materiali duri, avvitare viti in legno massiccio, sollevare oggetti con una corda.
 
-Esistono sei tipi fondamentali di macchine semplici: la **leva**, il **piano inclinato**, il **cuneo**, la **vite**, la **carrucola** e la **ruota con asse**. Ogni macchina più complessa che esiste — da una bicicletta a un escavatore, da un orologio meccanico a un motore a scoppio — è una combinazione di queste sei forme di base.
+==Esistono sei tipi fondamentali di macchine semplici: la **leva**, il **piano inclinato**, il **cuneo**, la **vite**, la **carrucola** e la **ruota con asse**.== Ogni macchina più complessa che esiste — da una bicicletta a un escavatore, da un orologio meccanico a un motore a scoppio — è una combinazione di queste sei forme di base.
 
 Prima di capire le singole macchine, hai bisogno di tre concetti di fisica.
 
@@ -36,7 +36,7 @@ Prima di capire le singole macchine, hai bisogno di tre concetti di fisica.
 
 ### Il lavoro meccanico: W = F × s
 
-In fisica, il **lavoro** ha un significato preciso: non è sinonimo di "fatica". Il lavoro meccanico si compie quando una forza sposta un oggetto nella stessa direzione in cui viene applicata.
+==In fisica, il **lavoro** ha un significato preciso: non è sinonimo di "fatica".== Il lavoro meccanico si compie quando una forza sposta un oggetto nella stessa direzione in cui viene applicata.
 
 La formula è semplice:
 
@@ -57,7 +57,7 @@ Quello che noterai subito: il lavoro dipende dalla forza moltiplicata per la dis
 
 ### La potenza: P = W / t
 
-La **potenza** è la velocità con cui viene compiuto un lavoro:
+==La **potenza** è la velocità con cui viene compiuto un lavoro:==
 
 **P = W / t**
 
@@ -74,11 +74,11 @@ Un essere umano adulto in buona forma fisica può sostenere una potenza di circa
 
 ### Il vantaggio meccanico: fare più con meno forza
 
-Il **vantaggio meccanico** (VM) di una macchina semplice è il rapporto tra la forza resistente (il carico che devi spostare) e la forza motrice (la forza che applichi tu):
+==Il **vantaggio meccanico** (VM) di una macchina semplice è il rapporto tra la forza resistente (il carico che devi spostare) e la forza motrice (la forza che applichi tu):==
 
 **VM = F_resistente / F_motrice**
 
-Un vantaggio meccanico di 5 significa che applichi una forza 5 volte più piccola del carico che stai spostando. Un VM superiore a 1 amplifica la forza. Un VM inferiore a 1 riduce la forza ma aumenta la velocità o la precisione del movimento.
+==Un vantaggio meccanico di 5 significa che applichi una forza 5 volte più piccola del carico che stai spostando.== Un VM superiore a 1 amplifica la forza. Un VM inferiore a 1 riduce la forza ma aumenta la velocità o la precisione del movimento.
 
 Importante: il vantaggio meccanico non viola la conservazione dell'energia. Se applichi una forza 5 volte più piccola, dovrai spostarla per una distanza 5 volte più grande. Il lavoro totale rimane lo stesso — o leggermente superiore, per via dell'attrito.
 
@@ -86,7 +86,7 @@ Importante: il vantaggio meccanico non viola la conservazione dell'energia. Se a
 
 ### La leva
 
-La **leva** è la macchina semplice più universale. È composta da tre elementi:
+==La **leva** è la macchina semplice più universale.== È composta da tre elementi:
 - il **fulcro** (F): il punto fisso attorno al quale la leva ruota
 - il **punto di applicazione della forza motrice** (Fm): dove applichi la tua forza
 - il **punto di applicazione della forza resistente** (Fr): dove si trova il carico
@@ -95,7 +95,7 @@ La formula del vantaggio meccanico per la leva è:
 
 **VM = distanza_Fm-fulcro / distanza_Fr-fulcro**
 
-Cioè: più la tua forza è lontana dal fulcro rispetto al carico, maggiore è il vantaggio meccanico.
+==Cioè: più la tua forza è lontana dal fulcro rispetto al carico, maggiore è il vantaggio meccanico.==
 
 ---
 
@@ -125,7 +125,7 @@ Sequenza: Fm — F — Fr (la forza è tra il fulcro e il carico)
 
 Esempi quotidiani: pinzette, braccio umano (il bicipite si inserisce vicino al gomito — il fulcro — mentre la mano regge il peso lontano), pala.
 
-Vantaggio meccanico: sempre inferiore a 1. Strano? No: la leva di terzo genere non amplifica la forza — amplifica la distanza e la velocità. Con un piccolo movimento del bicipite, la mano si sposta molto di più. Per questo il braccio umano è costruito così: la natura ha privilegiato la velocità del movimento rispetto alla forza bruta.
+Vantaggio meccanico: sempre inferiore a 1. Strano? No: la leva di terzo genere non amplifica la forza — amplifica la distanza e la velocità. Con un piccolo movimento del bicipite, la mano si sposta molto di più. ==Per questo il braccio umano è costruito così: la natura ha privilegiato la velocità del movimento rispetto alla forza bruta.==
 
 > 💡 **Lo sapevi?** Le forbici sono due leve di primo genere collegate. Il perno centrale è il fulcro. Quando tagli un tessuto spesso con la parte più vicina al perno, il vantaggio meccanico è massimo. Quando tagli con la punta, il vantaggio meccanico è minimo. Prova: taglia un foglio di cartone spesso prima con la punta delle forbici, poi con la parte profonda. Senti la differenza di forza richiesta.
 
@@ -135,7 +135,7 @@ Vantaggio meccanico: sempre inferiore a 1. Strano? No: la leva di terzo genere n
 
 Prova a sollevare verticalmente uno scatolone da 30 kg. Devi applicare una forza di circa 300 N. Adesso immagina di spingerlo lungo una rampa inclinata che copre la stessa altezza: la forza necessaria diminuisce, ma devi percorrere una distanza maggiore.
 
-Questo è il principio del **piano inclinato**: distribuire il lavoro su una distanza maggiore per ridurre la forza necessaria in ogni istante.
+==Questo è il principio del **piano inclinato**: distribuire il lavoro su una distanza maggiore per ridurre la forza necessaria in ogni istante.==
 
 Il vantaggio meccanico di un piano inclinato è:
 
@@ -147,11 +147,11 @@ Esempio: una rampa per sedie a rotelle che sale di 1 metro di altezza con una lu
 
 #### Le varianti del piano inclinato: cuneo e vite
 
-**Il cuneo** è un doppio piano inclinato — o, detto in modo più preciso, è un piano inclinato che si muove. Quando applichi una forza al cuneo nella direzione del suo spessore, le due superfici laterali inclinata deviano la forza perpendicolarmente, moltiplicandola. Esempi: lama di un coltello (separa il cibo), ascia (separa il legno), ago da cucire, vomere dell'aratro.
+==**Il cuneo** è un doppio piano inclinato — o, detto in modo più preciso, è un piano inclinato che si muove.== Quando applichi una forza al cuneo nella direzione del suo spessore, le due superfici laterali inclinata deviano la forza perpendicolarmente, moltiplicandola. Esempi: lama di un coltello (separa il cibo), ascia (separa il legno), ago da cucire, vomere dell'aratro.
 
 Il vantaggio meccanico del cuneo è: **VM = lunghezza / spessore_massimo**. Un'ascia lunga 20 cm con uno spessore di 4 cm ha VM = 5. Una lama sottile da chef di 20 cm × 2 mm ha VM = 100.
 
-**La vite** è un piano inclinato avvolto a spirale attorno a un cilindro. Ogni giro completo della vite avanza di una distanza chiamata **passo** (la distanza tra due filetti consecutivi). Il vantaggio meccanico di una vite è:
+==**La vite** è un piano inclinato avvolto a spirale attorno a un cilindro.== Ogni giro completo della vite avanza di una distanza chiamata **passo** (la distanza tra due filetti consecutivi). Il vantaggio meccanico di una vite è:
 
 **VM = circonferenza_testa / passo**
 
@@ -161,7 +161,7 @@ Una vite con testa di diametro 1 cm (circonferenza ≈ 3,14 cm) e passo di 0,5 m
 
 ### La carrucola
 
-Una **carrucola** è una ruota con un solco sul bordo, attraverso cui passa una corda. La carrucola cambia la direzione della forza o la amplifica, a seconda del tipo.
+==Una **carrucola** è una ruota con un solco sul bordo, attraverso cui passa una corda.== La carrucola cambia la direzione della forza o la amplifica, a seconda del tipo.
 
 **Carrucola fissa:** è ancorata a un punto fisso. La corda passa sopra la ruota. Quando tiri un capo della corda verso il basso, l'altro capo sale. Il vantaggio meccanico è 1: non amplifica la forza, ma cambia la sua direzione. Questo è comunque utile: è più comodo tirare verso il basso (si può usare il peso del corpo) che sollevare verso l'alto.
 
@@ -179,7 +179,7 @@ Esempi: bandiere su un pennone, alcune veneziane, sistemi di sollevamento sempli
 
 ### La ruota con asse
 
-La **ruota con asse** (detta anche ruota e perno) è una ruota di grande diametro fissa a un cilindro di diametro più piccolo. La forza viene applicata alla ruota esterna, e si trasmette al perno interno — o viceversa.
+==La **ruota con asse** (detta anche ruota e perno) è una ruota di grande diametro fissa a un cilindro di diametro più piccolo.== La forza viene applicata alla ruota esterna, e si trasmette al perno interno — o viceversa.
 
 Il vantaggio meccanico è:
 
@@ -195,13 +195,13 @@ Esempi quotidiani:
 
 ### Il rendimento: perché non è mai 100%
 
-Il vantaggio meccanico che calcoliamo con le formule è il **vantaggio meccanico teorico** — quello che otterreste in un mondo senza attrito. Nella realtà, ogni macchina semplice ha un **rendimento** inferiore al 100%.
+Il vantaggio meccanico che calcoliamo con le formule è il **vantaggio meccanico teorico** — quello che otterreste in un mondo senza attrito. ==Nella realtà, ogni macchina semplice ha un **rendimento** inferiore al 100%.==
 
 Il **rendimento** (η, lettera greca "eta") di una macchina è:
 
 **η = W_utile / W_speso × 100%**
 
-Cioè: la percentuale del lavoro che hai speso che si trasforma in lavoro utile. La parte rimanente va dispersa principalmente come **calore** generato dall'**attrito** tra le superfici.
+==Cioè: la percentuale del lavoro che hai speso che si trasforma in lavoro utile.== La parte rimanente va dispersa principalmente come **calore** generato dall'**attrito** tra le superfici.
 
 Una carrucola ben lubrificata può avere un rendimento dell'85-90%. Una vite in legno secco, con molto attrito, può avere un rendimento del 20-40%. Una leva con fulcro ben equilibrato supera il 95%.
 
@@ -217,7 +217,7 @@ Una carrucola ben lubrificata può avere un rendimento dell'85-90%. Una vite in 
 
 ### Combinare le macchine semplici: le macchine composte
 
-Quasi nessuna macchina nel mondo reale è una singola macchina semplice. Le **macchine composte** (o complesse) sono combinazioni di due o più macchine semplici che lavorano insieme.
+==Quasi nessuna macchina nel mondo reale è una singola macchina semplice.== Le **macchine composte** (o complesse) sono combinazioni di due o più macchine semplici che lavorano insieme.
 
 **Bicicletta:** è una macchina composta straordinariamente efficiente. La ruota anteriore è una ruota con asse. Il sistema pedali-catena-ingranaggi è una combinazione di ruote con asse di diversi diametri (e qui entra il cambio: ogni marcia cambia il rapporto tra pedalata e rotazione della ruota). Il freno a leva è — appunto — una leva. Il risultato complessivo è una macchina con rendimento energetico dell'85-95%: la bicicletta è il mezzo di trasporto più efficiente energeticamente mai costruito dall'essere umano.
 

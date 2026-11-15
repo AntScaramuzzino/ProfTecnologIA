@@ -27,9 +27,9 @@ Non devi voler aprire un'azienda per trovare utile questo metodo. Serve ogni vol
 
 Un'impresa è un'organizzazione che crea valore per qualcuno — un cliente, una comunità, un ecosistema — combinando risorse (lavoro, capitale, tecnologia, idee) in modo originale.
 
-La parola "valore" è importante. Un'impresa non sopravvive vendendo qualcosa che le persone non vogliono. Per questo, il punto di partenza di ogni impresa che funziona non è un'idea brillante: è un **problema reale** che qualcuno ha e vuole risolvere. L'idea è solo il mezzo. Il problema è il punto di partenza.
+La parola "valore" è importante. Un'impresa non sopravvive vendendo qualcosa che le persone non vogliono. ==Per questo, il punto di partenza di ogni impresa che funziona non è un'idea brillante: è un **problema reale** che qualcuno ha e vuole risolvere.== L'idea è solo il mezzo. Il problema è il punto di partenza.
 
-L'imprenditorialità è la capacità di identificare problemi, immaginar soluzioni, costruire le risorse necessarie e tollerare l'incertezza del processo. Non è una dote naturale riservata a pochi geni: è un insieme di competenze che si imparano e si praticano.
+==L'imprenditorialità è la capacità di identificare problemi, immaginar soluzioni, costruire le risorse necessarie e tollerare l'incertezza del processo.== Non è una dote naturale riservata a pochi geni: è un insieme di competenze che si imparano e si praticano.
 
 ---
 
@@ -37,9 +37,9 @@ L'imprenditorialità è la capacità di identificare problemi, immaginar soluzio
 
 Prima di creare un'impresa, bisogna scegliere una forma giuridica: come sarà organizzata, chi è responsabile dei debiti, come si dividono i profitti, come si prendono le decisioni.
 
-**Ditta individuale.** Una persona sola costituisce e gestisce l'impresa. La forma più semplice: si registra all'Agenzia delle Entrate, si apre la partita IVA, si inizia. Il vantaggio: massima flessibilità, bassi costi di avvio. Lo svantaggio: il titolare risponde personalmente con tutto il suo patrimonio dei debiti dell'impresa. Se l'impresa va male, può perdere la casa.
+==**Ditta individuale.** Una persona sola costituisce e gestisce l'impresa.== La forma più semplice: si registra all'Agenzia delle Entrate, si apre la partita IVA, si inizia. Il vantaggio: massima flessibilità, bassi costi di avvio. Lo svantaggio: il titolare risponde personalmente con tutto il suo patrimonio dei debiti dell'impresa. Se l'impresa va male, può perdere la casa.
 
-**Società a responsabilità limitata (SRL).** L'impresa è una persona giuridica separata dai soci. I soci investono un capitale (minimo 1 euro per la SRL semplificata) e rispondono solo per quella cifra — non con il patrimonio personale. La struttura è più complessa (statuto, atto notarile, registro imprese) ma protegge i fondatori. La forma più usata per avviare imprese con più soci.
+==**Società a responsabilità limitata (SRL).** L'impresa è una persona giuridica separata dai soci.== I soci investono un capitale (minimo 1 euro per la SRL semplificata) e rispondono solo per quella cifra — non con il patrimonio personale. La struttura è più complessa (statuto, atto notarile, registro imprese) ma protegge i fondatori. La forma più usata per avviare imprese con più soci.
 
 **Cooperativa.** Di proprietà collettiva dei soci — che possono essere i lavoratori (cooperativa di lavoro), i consumatori (cooperativa di consumo, come i supermercati Coop), o i produttori (cooperativa agricola). Ogni socio ha un voto indipendentemente dalla quota investita. Il profitto viene redistribuito tra i soci o reinvestito nell'impresa. Forma ideale quando l'obiettivo non è massimizzare il profitto ma creare valore condiviso.
 
@@ -51,13 +51,13 @@ Prima di creare un'impresa, bisogna scegliere una forma giuridica: come sarà or
 
 ### Il Business Model Canvas
 
-Il **Business Model Canvas** (BMC) è uno strumento creato dall'imprenditore e accademico Alexander Osterwalder nel 2010. È diventato lo standard globale per descrivere come funziona un'impresa in una singola pagina.
+==Il **Business Model Canvas** (BMC) è uno strumento creato dall'imprenditore e accademico Alexander Osterwalder nel 2010.== È diventato lo standard globale per descrivere come funziona un'impresa in una singola pagina.
 
-Il Canvas è diviso in 9 blocchi. Li compili nell'ordine: prima i clienti, poi il valore, poi come lo consegni, poi come lo costruisci.
+Il Canvas è diviso in 9 blocchi. ==Li compili nell'ordine: prima i clienti, poi il valore, poi come lo consegni, poi come lo costruisci.==
 
 **1. Segmenti di clienti.** Chi sono le persone (o le organizzazioni) che servi? Non "tutti" — ogni impresa serve clienti specifici con caratteristiche specifiche. Un'app di studio per studenti di liceo scientifico ha un segmento diverso da una per studenti universitari.
 
-**2. Proposta di valore.** Quale problema risolvi? Quale bisogno soddisfi? Cosa ti differenzia dai concorrenti? La proposta di valore non è il prodotto: è il beneficio che il cliente riceve. Non "vendo un'app di studio" ma "aiuto gli studenti a memorizzare il doppio in metà del tempo".
+**2. Proposta di valore.** Quale problema risolvi? Quale bisogno soddisfi? Cosa ti differenzia dai concorrenti? ==La proposta di valore non è il prodotto: è il beneficio che il cliente riceve.== Non "vendo un'app di studio" ma "aiuto gli studenti a memorizzare il doppio in metà del tempo".
 
 **3. Canali.** Come raggiungi i clienti? Come consegni il prodotto o il servizio? Online (app store, sito web, social), offline (negozio fisico, agenti commerciali), diretto o attraverso intermediari.
 
@@ -91,13 +91,13 @@ Il Canvas è diviso in 9 blocchi. Li compili nell'ordine: prima i clienti, poi i
 
 ### Il metodo Lean Startup
 
-Il **Lean Startup** è un metodo per sviluppare nuove imprese (o nuovi prodotti) con il minimo spreco di risorse. Fu formalizzato da Eric Ries nel 2011, ispirandosi al sistema di produzione Toyota (lean = snello, senza sprechi).
+==Il **Lean Startup** è un metodo per sviluppare nuove imprese (o nuovi prodotti) con il minimo spreco di risorse.== Fu formalizzato da Eric Ries nel 2011, ispirandosi al sistema di produzione Toyota (lean = snello, senza sprechi).
 
 Il principio fondamentale: non sai se la tua idea funziona finché non la provi nel mondo reale. Quindi, prima di costruire il prodotto completo, costruisci il prodotto minimo che ti permette di testare le ipotesi più rischiose.
 
-Il ciclo Lean Startup si chiama **Build-Measure-Learn** (Costruisci-Misura-Impara):
+==Il ciclo Lean Startup si chiama **Build-Measure-Learn** (Costruisci-Misura-Impara):==
 
-**Build (Costruisci) — MVP.** L'MVP — Minimum Viable Product — è la versione più semplice possibile del prodotto che permette di testare le ipotesi chiave. Non deve essere perfetto: deve essere abbastanza reale da ottenere feedback autentici. Il primo sito di Airbnb era una pagina web con tre foto di un appartamento a San Francisco e un modulo di contatto. Non aveva pagamenti online, non aveva mappe, non aveva sistema di recensioni. Ma permise ai fondatori di capire se qualcuno avrebbe davvero pagato per dormire in casa di uno sconosciuto. La risposta: sì.
+==**Build (Costruisci) — MVP.** L'MVP — Minimum Viable Product — è la versione più semplice possibile del prodotto che permette di testare le ipotesi chiave.== Non deve essere perfetto: deve essere abbastanza reale da ottenere feedback autentici. Il primo sito di Airbnb era una pagina web con tre foto di un appartamento a San Francisco e un modulo di contatto. Non aveva pagamenti online, non aveva mappe, non aveva sistema di recensioni. Ma permise ai fondatori di capire se qualcuno avrebbe davvero pagato per dormire in casa di uno sconosciuto. La risposta: sì.
 
 **Measure (Misura).** Dopo aver lanciato l'MVP, misuri quello che succede: quante persone lo usano? Tornano dopo il primo uso? Quanto sono disposte a pagare? Quali funzioni usano di più, quali ignorano? Le metriche devono essere collegate direttamente alle ipotesi che stai testando.
 
@@ -130,9 +130,9 @@ Per costruire un'impresa servono risorse finanziarie. Le fonti dipendono dalla f
 Non tutte le imprese puntano a massimizzare il profitto. L'**imprenditoria sociale** crea valore principalmente per la comunità o per categorie svantaggiate, usando i meccanismi di mercato (non la carità) per farlo in modo sostenibile.
 
 Forme concrete:
-- **Cooperativa sociale:** produce servizi di interesse generale (assistenza anziani, disabili, minori) con lavoratori spesso in situazione di svantaggio (ex detenuti, persone con dipendenze, rifugiati). In Italia ci sono circa 15.000 cooperative sociali con 400.000 addetti.
+- ==**Cooperativa sociale:** produce servizi di interesse generale (assistenza anziani, disabili, minori) con lavoratori spesso in situazione di svantaggio (ex detenuti, persone con dipendenze, rifugiati).== In Italia ci sono circa 15.000 cooperative sociali con 400.000 addetti.
 - **Impresa benefit:** già descritta sopra.
-- **B Corp:** certificazione internazionale per imprese che bilanciano profitto e impatto.
+- ==**B Corp:** certificazione internazionale per imprese che bilanciano profitto e impatto.==
 - **Startup sociale:** startup che usa tecnologia per risolvere problemi sociali o ambientali con modello di business sostenibile.
 
 Esempio italiano: Treedom (certificata B Corp) piantava alberi nel mondo per conto di aziende e privati che vogliono compensare le proprie emissioni, e connetteva il piantatore con l'acquirente tramite una piattaforma digitale. Ha piantato oltre 4 milioni di alberi in 17 paesi, generando reddito per comunità agricole locali.

@@ -24,11 +24,11 @@ Prima di studare come funzionano i sistemi economici in teoria, conviene capire 
 
 ### Che cos'è un sistema economico
 
-Un **sistema economico** è il modo in cui una società organizza la produzione, la distribuzione e il consumo dei beni e dei servizi. In altre parole: chi produce cosa, come viene trasportato e venduto, chi lo compra, quanto costa e a chi rimane il profitto.
+==Un **sistema economico** è il modo in cui una società organizza la produzione, la distribuzione e il consumo dei beni e dei servizi.== In altre parole: chi produce cosa, come viene trasportato e venduto, chi lo compra, quanto costa e a chi rimane il profitto.
 
 Non esiste un solo modo di organizzare l'economia. I sistemi economici reali si collocano su uno spettro tra due estremi teorici:
 
-**Economia di mercato (liberale).** La produzione e la distribuzione dei beni sono determinate dalla domanda e dall'offerta, cioè da milioni di decisioni individuali di acquisto e vendita. Lo Stato interviene poco: stabilisce le regole di base (tutela della proprietà, contratti, concorrenza), ma non decide cosa si produce o a che prezzo. Gli Stati Uniti, il Regno Unito e la maggior parte delle economie occidentali si avvicinano a questo modello.
+==**Economia di mercato (liberale).** La produzione e la distribuzione dei beni sono determinate dalla domanda e dall'offerta, cioè da milioni di decisioni individuali di acquisto e vendita.== Lo Stato interviene poco: stabilisce le regole di base (tutela della proprietà, contratti, concorrenza), ma non decide cosa si produce o a che prezzo. Gli Stati Uniti, il Regno Unito e la maggior parte delle economie occidentali si avvicinano a questo modello.
 
 **Economia pianificata.** Lo Stato decide centralmente cosa si produce, in quali quantità, a quale prezzo, chi lavora dove. Il modello è stato applicato nell'Unione Sovietica fino al 1991 e rimane parzialmente attivo in Corea del Nord. Il problema storico di questo modello: senza il segnale dei prezzi di mercato, è molto difficile sapere cosa si vuole davvero e cosa è inefficiente.
 
@@ -42,7 +42,7 @@ Per produrre qualsiasi cosa — una maglietta, un'automobile, un servizio medico
 
 **Lavoro.** L'attività umana — fisica e intellettuale — impiegata nella produzione. Lo stipendio è il prezzo del lavoro. Il numero di ore, la qualità delle competenze, le condizioni di sicurezza: tutto questo fa parte del fattore lavoro. Il fatto che un cucitore del Bangladesh guadagni 95 euro al mese mentre un designer di moda milanese ne guadagna 2.500 al mese è una differenza nel prezzo del lavoro tra due mercati geograficamente separati.
 
-**Capitale.** Non i soldi, ma i **beni capitali**: macchinari, fabbriche, attrezzature, tecnologie, infrastrutture. Il capitale è il risultato di investimenti passati che aumentano la produttività del lavoro. Una macchina da cucire industriale produce 100 volte più costumi orari di una macchina da cucire domestica: è il capitale che moltiplica il valore del lavoro. L'interesse o il profitto è il prezzo del capitale.
+**Capitale.** Non i soldi, ma i **beni capitali**: macchinari, fabbriche, attrezzature, tecnologie, infrastrutture. ==Il capitale è il risultato di investimenti passati che aumentano la produttività del lavoro.== Una macchina da cucire industriale produce 100 volte più costumi orari di una macchina da cucire domestica: è il capitale che moltiplica il valore del lavoro. L'interesse o il profitto è il prezzo del capitale.
 
 **Terra (risorse naturali).** L'insieme delle risorse disponibili in natura: suolo, acqua, minerali, foreste, clima. Il cotone richiede terra, acqua e clima specifici. Il petrolio richiede giacimenti sotterranei. La rendita è il prezzo della terra.
 
@@ -54,7 +54,7 @@ Per produrre qualsiasi cosa — una maglietta, un'automobile, un servizio medico
 
 La teoria economica classica divide tutte le attività umane che generano reddito in tre grandi settori. *(Fonti convergenti: SEI ISBN 9788805081080 p.449; Lattes ISBN 9788869177064 p.453-466; Atlas ISBN 9788847241206 p.23; Mondadori Education ISBN 9788829861521 p.40)*
 
-**Settore primario.** Comprende le attività che estraggono o raccolgono risorse naturali: agricoltura, allevamento, pesca, silvicoltura, estrazione mineraria. È il settore da cui partono tutte le catene del valore — ogni prodotto fisico comincia da una materia prima del settore primario. Nei paesi industrializzati, occupa una percentuale sempre minore della forza lavoro (in Italia circa il 4%), ma resta fondamentale per la sicurezza alimentare e la sovranità delle risorse.
+==**Settore primario.** Comprende le attività che estraggono o raccolgono risorse naturali: agricoltura, allevamento, pesca, silvicoltura, estrazione mineraria.== ==È il settore da cui partono tutte le catene del valore — ogni prodotto fisico comincia da una materia prima del settore primario.== Nei paesi industrializzati, occupa una percentuale sempre minore della forza lavoro (in Italia circa il 4%), ma resta fondamentale per la sicurezza alimentare e la sovranità delle risorse.
 
 **Settore secondario.** Comprende le attività che *trasformano* le risorse del settore primario in prodotti semilavorati o beni finiti: industria manifatturiera, edilizia, artigianato di produzione. Una caratteristica strutturale: il settore secondario non può esistere senza il settore primario, ma non vale il contrario — un paese può avere agricoltura senza industria. In Italia il settore secondario rappresenta circa il 24% del PIL e il 26% degli occupati.
 
@@ -68,7 +68,7 @@ La teoria economica classica divide tutte le attività umane che generano reddit
 
 ### La catena del valore: chi guadagna cosa
 
-La **catena del valore** descrive la sequenza di attività che trasformano le materie prime in prodotto finito venduto al consumatore — e aiuta a distinguere attività, costi e margini lungo la filiera. Il ricavo di una fase non coincide con il suo profitto: bisogna sottrarre i costi.
+==La **catena del valore** descrive la sequenza di attività che trasformano le materie prime in prodotto finito venduto al consumatore — e aiuta a distinguere attività, costi e margini lungo la filiera.== Il ricavo di una fase non coincide con il suo profitto: bisogna sottrarre i costi.
 
 Il concetto fu introdotto dall'economista Michael Porter nel 1985. Ma non è un'astrazione accademica: si vede molto concretamente nella maglietta da 5,99 euro.
 
@@ -87,7 +87,7 @@ Usiamo una **scomposizione didattica ipotetica** del prezzo di una maglietta da 
 | IVA, ipotizzata al 22% sul prezzo netto | Imposta sul consumo | Italia | 1,08 € |
 | **Totale** | | | **5,99 €** |
 
-Ogni quota, esclusa l’imposta, comprende costi e possibili margini: non è il guadagno personale di chi lavora. Il lavoro umano interviene anche nella coltivazione, nella tintoria e nella logistica, non soltanto nel cucito. Per capire la distribuzione effettiva del valore servono dati della filiera specifica.
+==Ogni quota, esclusa l’imposta, comprende costi e possibili margini: non è il guadagno personale di chi lavora.== Il lavoro umano interviene anche nella coltivazione, nella tintoria e nella logistica, non soltanto nel cucito. Per capire la distribuzione effettiva del valore servono dati della filiera specifica.
 
 Il potere di mercato, il marchio e la possibilità di spostare la produzione possono influenzare questa distribuzione. La tabella serve a capire le voci del prezzo, non a dimostrare quanto guadagna ciascun attore in una maglietta reale.
 
@@ -99,13 +99,13 @@ Non tutte le imprese sono uguali. Le forme di organizzazione economica si distin
 
 **Artigiano.** Un'impresa individuale dove il produttore lavora con le proprie mani, spesso con pochi collaboratori. L'artigianato produce beni personalizzati a prezzi più alti grazie alla qualità e alla specificità. In Italia ci sono circa 1,3 milioni di imprese artigiane — il settore più diffuso per numero di unità. Un sarto su misura è un artigiano; produce pezzi unici, non è sostituibile da una macchina, vende a prezzi premium.
 
-**Piccola e media impresa (PMI).** In Italia, le PMI rappresentano il 99,9% di tutte le imprese e occupano circa il 78% dei lavoratori. Una PMI ha generalmente tra 1 e 250 dipendenti e un fatturato sotto i 50 milioni di euro (definizione EU). Producono in serie limitata, sono flessibili, spesso specializzate in nicchie di mercato (es. accessori moda, macchinari agricoli, agroalimentare). Il "made in Italy" è principalmente fatto da PMI.
+**Piccola e media impresa (PMI).** In Italia, le PMI rappresentano il 99,9% di tutte le imprese e occupano circa il 78% dei lavoratori. ==Una PMI ha generalmente tra 1 e 250 dipendenti e un fatturato sotto i 50 milioni di euro (definizione EU).== Producono in serie limitata, sono flessibili, spesso specializzate in nicchie di mercato (es. accessori moda, macchinari agricoli, agroalimentare). Il "made in Italy" è principalmente fatto da PMI.
 
 **Grande impresa.** Oltre i 250 dipendenti. Produce in grandi volumi, ha economie di scala (il costo per unità scende all'aumentare della produzione), investe in ricerca e sviluppo, accede a mercati internazionali. In Italia ce ne sono circa 3.500.
 
 **Multinazionale.** Un'impresa che opera in più paesi, con sedi produttive, commerciali e fiscali distribuite nel mondo. La struttura transnazionale permette di ottimizzare ogni fase della catena del valore nel paese dove costa meno: produrre in Bangladesh, avere sede legale in Irlanda (tasse basse), vendere in Europa e negli USA. Zara (Inditex), con sede in Spagna, produce in 26 paesi e vende in 96. Amazon ha la sede europea in Lussemburgo ma distribuisce da magazzini in ogni paese.
 
-**Start-up innovativa.** Un tipo di impresa recente, progettata per scalare rapidamente grazie a un prodotto digitale o tecnologico. Non è una piccola impresa tradizionale: è un esperimento progettato per crescere molto velocemente o fallire rapidamente. In Italia esistono circa 14.000 start-up innovative iscritte al registro camerale.
+**Start-up innovativa.** Un tipo di impresa recente, progettata per scalare rapidamente grazie a un prodotto digitale o tecnologico. ==Non è una piccola impresa tradizionale: è un esperimento progettato per crescere molto velocemente o fallire rapidamente.== In Italia esistono circa 14.000 start-up innovative iscritte al registro camerale.
 
 **Cooperativa.** Un'impresa di proprietà collettiva dei suoi lavoratori (o dei suoi consumatori). Il principio: chi lavora decide, e il profitto va ai soci-lavoratori. In Italia il settore cooperativo conta circa 40.000 imprese e 1,2 milioni di addetti (Confcooperative, 2023). I supermercati Coop, i cantieri navali di Monfalcone (Fincantieri ha molte cooperative fornitrici), molte cooperative sociali che gestiscono servizi di assistenza sono esempi.
 
@@ -113,7 +113,7 @@ Non tutte le imprese sono uguali. Le forme di organizzazione economica si distin
 
 ### PIL, benessere e i limiti della misura economica
 
-Il **PIL** (Prodotto Interno Lordo) è la misura più usata per confrontare le dimensioni e la crescita delle economie. È la somma del valore di tutti i beni e servizi prodotti in un paese in un anno.
+==Il **PIL** (Prodotto Interno Lordo) è la misura più usata per confrontare le dimensioni e la crescita delle economie.== È la somma del valore di tutti i beni e servizi prodotti in un paese in un anno.
 
 Il PIL cresce quando si produce di più. Ma ha limiti profondi come misura di benessere:
 
@@ -123,19 +123,19 @@ Secondo: il PIL non misura la distribuzione. Un paese con PIL alto ma dove la ri
 
 Terzo: il PIL non misura la sostenibilità. Un paese che esaurisce le sue foreste per produrre legname aumenta il PIL nel breve termine, ma distrugge il capitale naturale che produrrà ricchezza nei decenni futuri.
 
-Per questi motivi, l'Italia ha adottato nel 2016 un sistema di misura complementare: il **BES — Benessere Equo e Sostenibile** (ISTAT). Il BES misura 12 dimensioni: salute, istruzione, lavoro, benessere economico, relazioni sociali, sicurezza, benessere soggettivo, paesaggio e patrimonio culturale, ambiente, ricerca e innovazione, qualità dei servizi. Non sostituisce il PIL: lo affianca. Ma dice cose che il PIL non può dire.
+==Per questi motivi, l'Italia ha adottato nel 2016 un sistema di misura complementare: il **BES — Benessere Equo e Sostenibile** (ISTAT).== Il BES misura 12 dimensioni: salute, istruzione, lavoro, benessere economico, relazioni sociali, sicurezza, benessere soggettivo, paesaggio e patrimonio culturale, ambiente, ricerca e innovazione, qualità dei servizi. Non sostituisce il PIL: lo affianca. Ma dice cose che il PIL non può dire.
 
 ---
 
 ### Il ciclo economico: espansione, picco, recessione, ripresa
 
-Le economie non crescono in modo lineare e continuo. Seguono un **ciclo economico** ricorrente con quattro fasi:
+Le economie non crescono in modo lineare e continuo. ==Seguono un **ciclo economico** ricorrente con quattro fasi:==
 
 **Espansione:** l'economia cresce, la disoccupazione cala, i consumi aumentano, le aziende investono. Le banche concedono prestiti facilmente. La fase positiva si autoalimenta.
 
 **Picco:** il tasso di crescita raggiunge il massimo. L'inflazione (aumento dei prezzi) può accelerare perché la domanda supera l'offerta. Le banche centrali alzano i tassi di interesse per rallentare la crescita e contenere l'inflazione.
 
-**Recessione:** la crescita rallenta o diventa negativa. Due trimestri consecutivi di PIL negativo è la definizione tecnica di recessione. La disoccupazione sale. Le aziende riducono gli investimenti. I consumi calano.
+**Recessione:** la crescita rallenta o diventa negativa. ==Due trimestri consecutivi di PIL negativo è la definizione tecnica di recessione.== La disoccupazione sale. Le aziende riducono gli investimenti. I consumi calano.
 
 **Ripresa:** l'economia ricomincia a crescere, partendo dal basso. Le politiche pubbliche (spesa statale, taglio dei tassi di interesse) accelerano la ripresa.
 
@@ -145,7 +145,7 @@ Il ciclo si ripete, con durata e intensità diverse. La Grande Recessione del 20
 
 ### Inflazione e potere d'acquisto
 
-L'**inflazione** è l'aumento generale del livello dei prezzi nel tempo. Un tasso di inflazione del 5% significa che, in media, i beni e i servizi costano il 5% di più rispetto a un anno fa.
+==L'**inflazione** è l'aumento generale del livello dei prezzi nel tempo.== ==Un tasso di inflazione del 5% significa che, in media, i beni e i servizi costano il 5% di più rispetto a un anno fa.==
 
 Se il tuo stipendio rimane invariato e l'inflazione è al 5%, puoi comprare il 5% in meno di quello che compravi l'anno scorso. Il tuo **potere d'acquisto** — quanti beni e servizi riesci ad acquistare con il tuo reddito — è diminuito, anche se il numero sullo stipendio è lo stesso.
 
