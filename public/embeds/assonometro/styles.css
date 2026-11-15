@@ -160,6 +160,29 @@ details.regole>summary::after{content:"−";font:700 1rem var(--d-mono);color:va
 details.regole:not([open])>summary{margin-bottom:0}
 details.regole:not([open])>summary::after{content:"+"}
 
+/* ── consegna, soluzione nascosta, codice e QR per il docente ── */
+.esercizio__consegna{font-size:.9rem;line-height:1.4;margin-top:.45rem;white-space:pre-line}
+.pannello--foglio{position:relative}
+.is-coperto #svgFoglio{visibility:hidden}
+.copertina{position:absolute;inset:2.4rem 1rem 1rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;text-align:center;padding:1rem}
+.copertina__testo{max-width:26ch;font-size:1rem;line-height:1.4}
+.docente summary{cursor:pointer}
+.docente__nota{font-size:.82rem;line-height:1.4;margin-bottom:.6rem}
+.campo{display:grid;gap:.2rem;font-size:.82rem;margin-bottom:.5rem}
+.campo input,.campo textarea,.codice{width:100%;padding:.4rem .5rem;border:var(--bordo) solid var(--grafite);background:#fff;font:inherit;font-size:.85rem}
+.campo textarea{resize:vertical}
+.spunta{display:flex;gap:.45rem;align-items:flex-start;font-size:.82rem;margin-bottom:.4rem}
+.campo__et{font-size:.62rem;font-weight:600;color:var(--china);margin:.7rem 0 .3rem}
+.codice{font-size:.72rem}
+.docente__tasti{margin-top:.45rem}
+.docente__tasti .tasto{text-decoration:none}
+.docente__tasti a.tasto{display:inline-flex;align-items:center;color:inherit}
+.qr{margin-top:.6rem;width:180px;max-width:100%;background:#fff;border:var(--bordo) solid var(--grafite)}
+.qr svg{display:block;width:100%;height:auto}
+.apri{display:grid;grid-template-columns:1fr auto;gap:.4rem}
+.docente__esito{font-size:.8rem;margin-top:.4rem;min-height:1.1em}
+.is-esercizio .docente,.is-esercizio .asso__lead,.is-embed .docente{display:none}
+
 /* ── schermi medi e piccoli ── */
 @media (max-width:1180px){
   .asso__corpo{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}

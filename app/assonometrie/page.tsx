@@ -166,6 +166,12 @@ export default function AssonometriePage() {
               solido, accendi la scatola e tocca un vertice per vedere come si trova, una misura alla volta. Accanto ci
               sono le tre viste. Puoi usarlo anche da solo, senza una tavola.
             </p>
+            <p className="mt-2 text-sm leading-6 text-slate-200">
+              <span className="font-black text-white">Per il docente:</span> apri l’assonometro con «Apri
+              l’assonometro» e, in fondo ai comandi, usa il riquadro «Per il docente · codice e QR». Lì prepari un
+              esercizio (tipo, solido, misure, posizione, titolo e consegna, anche con il disegno nascosto) e ottieni un
+              codice, un link e un QR da dare alla classe.
+            </p>
           </div>
           <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-black">
             <a

@@ -11,6 +11,9 @@
      ?alfa=<gradi>&beta=<gradi>   rotazione di partenza, come nel proiettore
      ?esercizio=1                 solido e misure bloccati; con ?titolo= e ?misure= compare il riquadro della consegna
      ?embed=1                     dentro una pagina del libro: senza testata      ?lim=1   a schermo intero per la LIM
+     ?c=A1-…                      codice dell'esercizio preparato dal docente (tipo, solido, misure, posizione, che cosa
+                                  mostrare, titolo e consegna): apre l'assonometro in modalità esercizio. Si fa nel
+                                  riquadro «Per il docente · codice e QR»; lo stesso codice si può incollare lì per riaprirlo.
 ═══════════════════════════════════════════════════════════ */
 import { SOLIDI, MISURE, misureStandard } from './solidi.js';
 import { TIPI, versore, vistaAssonometrica, VISTE_PO, posiziona, proietta, pianoDellaFaccia, verticiVeri } from './geometria.js';
@@ -75,7 +78,81 @@ const stato = {
   mostra: { scatola: true, nascosti: true, facce: true, quote: true },
   punto: null,                                      // posizione nell'elenco dei vertici veri
 };
-const esercizio = PAR.get('esercizio') === '1';
+/* ── codice dell'esercizio: lo stato dell'assonometro in una stringa corta, per un link o un QR ──
+   A1-<tipo>~<solido>~<misure>~<alfa>~<beta>~<interruttori>[~<titolo e consegna>]
+     misure        chiave e valore in cm, separati da _ (es. larg8_prof4_alt6_sp2)
+     interruttori  sei cifre 0/1: scatola, nascosti, facce, misure, tipo bloccato, disegno nascosto
+     titolo…       «titolo a capo consegna» in base64 da indirizzo (senza + / =)
+   Stesse scelte → stesso codice. */
+const PREFISSO = 'A1-';
+const MOSTRA_K = ['scatola', 'nascosti', 'facce', 'quote'];
+const inBase64 = t => btoa(unescape(encodeURIComponent(t))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+const daBase64 = c => decodeURIComponent(escape(atob(c.replace(/-/g, '+').replace(/_/g, '/'))));
+const testoPulito = (t, max) => (typeof t === 'string' ? t.replace(/[\u0000-\u0009\u000B-\u001F]/g, '').trim().slice(0, max) : '');
+const numCorto = v => String(Math.round(v * 1000) / 1000);
+
+function codifica({ titolo, consegna, blocca, nascondi }) {
+  const misure = Object.entries(stato.cm).map(([k, v]) => `${k}${numCorto(v)}`).join('_');
+  const interruttori = MOSTRA_K.map(k => (stato.mostra[k] ? 1 : 0)).join('') + (blocca ? 1 : 0) + (nascondi ? 1 : 0);
+  const parti = [stato.tipo, stato.id, misure, numCorto(stato.alfa), numCorto(stato.beta), interruttori];
+  if (titolo || consegna) parti.push(inBase64(`${titolo}\n${consegna}`));
+  return PREFISSO + parti.join('~');
+}
+
+/** Legge un codice (o un link che lo contiene). Restituisce una copia controllata, oppure null se non è valido. */
+function decodifica(testo) {
+  try {
+    let c = String(testo || '').trim();
+    const nelLink = c.match(/[?&]c=([^&#\s]+)/);
+    if (nelLink) c = decodeURIComponent(nelLink[1]);
+    if (!c.startsWith(PREFISSO) || c.length > 1500) return null;
+    const [tipo, id, misure, a, b, interruttori, testi] = c.slice(PREFISSO.length).split('~');
+    if (!TIPI[tipo] || !SOLIDI[id] || !/^[01]{6}$/.test(interruttori || '')) return null;
+    const chiavi = [...Object.keys(MISURE[id] || {}), 'sp', 'ang'];
+    const cm = {};
+    for (const pezzo of (misure || '').split('_')) {
+      const m = pezzo.match(/^([a-zA-Z]+)(\d+(?:\.\d+)?)$/);
+      if (!m || !chiavi.includes(m[1])) return null;
+      const v = Number(m[2]);
+      if (!(v > 0 && v <= 30)) return null;
+      cm[m[1]] = v;
+    }
+    const alfa = Number(a), beta = Number(b);
+    if (!Number.isFinite(alfa) || !Number.isFinite(beta)) return null;
+    let titolo = '', consegna = '';
+    if (testi) {
+      const t = daBase64(testi), aCapo = t.indexOf('\n');
+      titolo = testoPulito(aCapo < 0 ? t : t.slice(0, aCapo), 60);
+      consegna = testoPulito(aCapo < 0 ? '' : t.slice(aCapo + 1), 300);
+    }
+    return {
+      tipo, id, cm,
+      alfa: ((alfa % 360) + 360) % 360, beta: Math.max(-90, Math.min(90, beta)),
+      mostra: interruttori.slice(0, 4), blocca: interruttori[4] === '1', nascondi: interruttori[5] === '1',
+      titolo, consegna,
+    };
+  } catch (e) { return null; }
+}
+
+/** Mette nello stato l'esercizio letto da un codice. */
+function applicaCodice(d) {
+  stato.tipo = d.tipo;
+  stato.id = d.id;
+  stato.cm = { ...misureDiPartenza(d.id), ...d.cm };
+  stato.partenza = { alfa: d.alfa, beta: d.beta };
+  stato.alfa = d.alfa; stato.beta = d.beta;
+  MOSTRA_K.forEach((k, i) => { stato.mostra[k] = d.mostra[i] === '1'; });
+  document.querySelectorAll('#interruttori [data-mostra]').forEach(c => { c.checked = stato.mostra[c.dataset.mostra]; });
+  stato.punto = null;
+}
+
+/** Le misure del solido, scritte per la consegna: «Parallelepipedo · Larghezza 6 cm · …». */
+function testoMisure() {
+  const c = voce(stato.id), nome = SOLIDI[stato.id]().nome;
+  if (!c) return nome;
+  return [c.nome, ...c.misure.map(m => `${m.et} ${cmTesto(m.aUI ? m.aUI(stato.cm[m.k]) : stato.cm[m.k])}`)].join(' · ');
+}
+
 
 /** Misure di partenza di un solido: quelle del menu (in cm), o quelle del proiettore ingrandite se il solido non è nel menu. */
 const misureDiPartenza = id => {
@@ -98,6 +175,11 @@ const impostaSolido = (id, daIndirizzo) => {
   stato.punto = null;
 };
 impostaSolido(stato.id, true);
+const codiceAperto = PAR.get('c') ? decodifica(PAR.get('c')) : null;
+const codiceGuasto = PAR.get('c') !== null && !codiceAperto;
+if (codiceGuasto) document.documentElement.classList.remove('is-esercizio');
+if (codiceAperto) applicaCodice(codiceAperto);
+const esercizio = PAR.get('esercizio') === '1' || !!codiceAperto;
 
 /* ── strumenti di disegno ── */
 const n1 = v => (v * U).toFixed(1);
@@ -372,6 +454,7 @@ function aggiorna() {
   disegnaViste();
   scriviRegole();
   scriviPunto();
+  aggiornaCodice();
 }
 
 $('#sceltaTipo').addEventListener('click', e => {
@@ -392,6 +475,7 @@ $('#interruttori').addEventListener('change', e => {
   if (!k) return;
   stato.mostra[k] = e.target.checked;
   disegnaFoglio();
+  aggiornaCodice();
 });
 $('#svgFoglio').addEventListener('click', e => {
   const v = e.target.closest('[data-v]');
@@ -411,7 +495,22 @@ $('#puntoDopo').addEventListener('click', () => scorri(1));
 $('#puntoVia').addEventListener('click', () => { stato.punto = null; aggiorna(); });
 
 /* ── modalità esercizio: solido e misure bloccati, riquadro con la consegna ── */
-if (esercizio) {
+if (codiceAperto) {
+  $('#gruppoSolido').hidden = true;
+  $('#esercizioBox').hidden = false;
+  $('#esercizioTitolo').textContent = codiceAperto.titolo || 'Esercizio';
+  $('#esercizioMisure').textContent = testoMisure();
+  if (codiceAperto.consegna) { $('#esercizioConsegna').hidden = false; $('#esercizioConsegna').textContent = codiceAperto.consegna; }
+  if (codiceAperto.blocca) $('.gruppo--tipo').hidden = true;
+  if (codiceAperto.nascondi) {
+    $('.pannello--foglio').classList.add('is-coperto');
+    $('#copertina').hidden = false;
+    $('#tastoSoluzione').addEventListener('click', () => {
+      $('.pannello--foglio').classList.remove('is-coperto');
+      $('#copertina').hidden = true;
+    });
+  }
+} else if (esercizio) {
   $('#gruppoSolido').hidden = true;
   const titolo = PAR.get('titolo'), misure = PAR.get('misure');
   if (titolo || misure) {
@@ -422,6 +521,77 @@ if (esercizio) {
 } else {
   costruisciMenu();
   costruisciMisure();
+}
+
+/* ── per il docente: codice, link e QR dell'esercizio ── */
+const campiCodice = () => ({
+  titolo: testoPulito($('#codTitolo').value, 60), consegna: testoPulito($('#codConsegna').value, 300),
+  blocca: $('#codBlocca').checked, nascondi: $('#codNascondi').checked,
+});
+let ultimoLink = '';
+function aggiornaCodice() {
+  if (esercizio || !$('#gruppoDocente').open) return;          // si calcola solo quando il riquadro è aperto
+  const codice = codifica(campiCodice());
+  ultimoLink = `${location.origin}${location.pathname.replace(/index\.html$/, '')}?c=${codice}`;
+  $('#codCodice').value = codice;
+  $('#codApri').href = ultimoLink;
+  try {
+    const qr = window.qrcode(0, 'M');
+    qr.addData(ultimoLink);
+    qr.make();
+    $('#codQr').innerHTML = qr.createSvgTag({ cellSize: 4, margin: 8, scalable: true });
+    $('#codQr').dataset.moduli = qr.getModuleCount();
+    aggiornaCodice.qr = qr;
+  } catch (e) { $('#codQr').textContent = 'QR non disponibile: usa il link.'; aggiornaCodice.qr = null; }
+}
+const esito = t => { $('#codEsito').textContent = t; };
+const copia = async (testo, ok, ko) => {
+  try { await navigator.clipboard.writeText(testo); esito(ok); }
+  catch (e) { esito(ko); }
+};
+if (!esercizio) {
+  $('#gruppoDocente').addEventListener('toggle', aggiornaCodice);
+  ['#codTitolo', '#codConsegna'].forEach(s => $(s).addEventListener('input', aggiornaCodice));
+  ['#codBlocca', '#codNascondi'].forEach(s => $(s).addEventListener('change', aggiornaCodice));
+  $('#codCopia').addEventListener('click', () => copia($('#codCodice').value, 'Codice copiato.', 'Copia non riuscita: seleziona il codice qui sopra e copialo a mano.'));
+  $('#codLink').addEventListener('click', () => copia(ultimoLink, 'Link copiato.', 'Copia non riuscita: apri «Apri come studente» e copia l’indirizzo dalla barra del browser.'));
+  $('#codScarica').addEventListener('click', () => {
+    const qr = aggiornaCodice.qr;
+    if (!qr) return;
+    // PNG da stampare: il QR grande, con titolo e codice sotto
+    const n = qr.getModuleCount(), cella = 10, bordo = 40, lato = n * cella + bordo * 2, sotto = 90;
+    const tela = document.createElement('canvas');
+    tela.width = lato; tela.height = lato + sotto;
+    const g = tela.getContext('2d');
+    g.fillStyle = '#fff'; g.fillRect(0, 0, tela.width, tela.height);
+    g.fillStyle = '#000';
+    for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (qr.isDark(r, c)) g.fillRect(bordo + c * cella, bordo + r * cella, cella, cella);
+    g.textAlign = 'center';
+    g.font = 'bold 26px sans-serif';
+    g.fillText(campiCodice().titolo || 'Esercizio di assonometria', lato / 2, lato + 22);
+    g.font = '18px sans-serif';
+    g.fillText('Assonometro · Book ProfTecnologIA', lato / 2, lato + 54);
+    const a = document.createElement('a');
+    a.download = `assonometro-${(campiCodice().titolo || 'esercizio').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'esercizio'}.png`;
+    a.href = tela.toDataURL('image/png');
+    a.click();
+  });
+  $('#codCarica').addEventListener('click', () => {
+    const d = decodifica($('#codIncolla').value);
+    if (!d) { esito('Codice non valido: controlla di averlo copiato tutto.'); return; }
+    applicaCodice(d);
+    $('#codTitolo').value = d.titolo; $('#codConsegna').value = d.consegna;
+    $('#codBlocca').checked = d.blocca; $('#codNascondi').checked = d.nascondi;
+    costruisciMenu();
+    costruisciMisure();
+    aggiorna();
+    esito('Esercizio riaperto: puoi modificarlo e fare un nuovo codice.');
+  });
+}
+if (codiceGuasto) {
+  $('#esercizioBox').hidden = false;
+  $('#esercizioTitolo').textContent = 'Codice non valido';
+  $('#esercizioMisure').textContent = 'Il codice dell’esercizio non si legge: chiedi al docente di mandarti di nuovo il link o il QR.';
 }
 
 /* ── telefono: «Segui un punto» subito sotto il disegno, le regole chiuse (si aprono con un tocco) ── */
