@@ -313,11 +313,11 @@ function stripRubricaFromBody(body: string): string {
 
 // ── Renderer inline Markdown (bold/italic/evidenziatore) — senza dipendenze ──
 // ==testo== → tratto di evidenziatore giallo sui concetti chiave (usato in ESPLORA).
-// Il contenuto evidenziato può contenere grassetti: viene reso in modo ricorsivo.
+// Il contenuto evidenziato può contenere grassetti (reso in modo ricorsivo) e segni = singoli (formule).
 
 function renderInline(value: string): React.ReactNode {
   const nodes: React.ReactNode[] = [];
-  const pattern = /(==[^=\n]+==|\*\*[^*\n]+\*\*|\*[^*\n]+\*)/g;
+  const pattern = /(==(?:[^=\n]|=(?!=))+?==|\*\*[^*\n]+\*\*|\*[^*\n]+\*)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
   while ((match = pattern.exec(value)) !== null) {

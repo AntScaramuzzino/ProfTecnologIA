@@ -36,7 +36,7 @@ function estraiPuntiChiave(body: string, max = 6): string[] {
       .replace(/!\[[^\]]*\]\([^)]*\)/g, "")
       .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
       .replace(/\*{1,2}([^*]+)\*{1,2}/g, "$1")
-      .replace(/==([^=\n]+)==/g, "$1")
+      .replace(/==((?:[^=\n]|=(?!=))+?)==/g, "$1")
       .replace(/`[^`]+`/g, "")
       .replace(/^[-*>]\s+/, "")
       .trim();
