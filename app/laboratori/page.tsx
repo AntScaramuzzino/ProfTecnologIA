@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
-import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom, labCover } from "@/lib/laboratori";
+import { LABORATORI, AREA_COLOR, labSrc, escapeSrc, getEscapeRoom, labCover, LIBRI_3D, libro3DSrc, libro3DAnteprima } from "@/lib/laboratori";
 import { ESPLORAZIONI, esplorazioneSrc, esplorazioneAnteprima } from "@/lib/esplorazioni";
 import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI } from "@/lib/geogebra-costruzioni";
 import { MC_PROIEZIONI, TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
@@ -102,7 +102,7 @@ export default function LaboratoriPage() {
         {[1, 2, 3].map((cl) => (
           <section key={cl} id={`classe-${cl}`} className="mb-12 scroll-mt-32" aria-labelledby={`classe-${cl}-titolo`}>
             <h2 id={`classe-${cl}-titolo`} className="mb-4 text-2xl font-black tracking-tight text-slate-950">
-              Classe {cl}ª <span className="text-base font-bold text-slate-600">· {LABORATORI.filter((l) => l.classe === cl).length} laboratori</span>
+              Classe {cl}ª <span className="text-base font-bold text-slate-600">· {LABORATORI.filter((l) => l.classe === cl).length + LIBRI_3D.filter((b) => b.classe === cl).length} laboratori</span>
             </h2>
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
               {LABORATORI.filter((l) => l.classe === cl).map((l) => {
@@ -178,6 +178,67 @@ export default function LaboratoriPage() {
                             Escape room ↗
                           </a>
                         )}
+                      </div>
+                    </div>
+                  </li>
+                );
+              })}
+              {LIBRI_3D.filter((b) => b.classe === cl).map((b) => {
+                const color = AREA_COLOR[b.area] ?? "#00695C";
+                const src = libro3DSrc(b.slug);
+                return (
+                  <li
+                    key={b.slug}
+                    className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                    style={{ borderTopColor: color, borderTopWidth: 4 }}
+                  >
+                    {/* L'immagine è un secondo accesso alla stessa pagina: il link con il nome è sotto */}
+                    <a href={src} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true" className="relative block overflow-hidden bg-slate-100">
+                      <img
+                        src={libro3DAnteprima(b.slug)}
+                        alt=""
+                        width={640}
+                        height={360}
+                        loading="lazy"
+                        decoding="async"
+                        className="aspect-video w-full object-cover transition duration-300 group-hover:scale-[1.03]"
+                      />
+                      <span
+                        className="absolute left-3 top-3 rounded-full px-2.5 py-1 font-mono text-[11px] font-black uppercase tracking-widest text-white shadow"
+                        style={{ background: color }}
+                      >
+                        Libro 3D
+                      </span>
+                    </a>
+                    <div className="flex flex-1 flex-col gap-2 p-4">
+                      <p className="font-mono text-xs font-black uppercase tracking-widest" style={{ color }}>
+                        Energia · {b.mcId}
+                      </p>
+                      <h3 className="text-lg font-black leading-snug tracking-tight text-slate-950">
+                        <a href={src} target="_blank" rel="noopener noreferrer" className="hover:underline hover:underline-offset-4">
+                          {b.titolo}
+                        </a>
+                      </h3>
+                      <p className="line-clamp-3 text-sm leading-6 text-slate-700">{b.descrizione}</p>
+                      <div className="mt-auto flex flex-wrap gap-1.5 pt-2 text-[13px] font-bold">
+                        <a
+                          href={src}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="rounded-lg px-2.5 py-1.5 text-white"
+                          style={{ background: color }}
+                          aria-label={`${b.titolo}: apri il libro 3D, si apre in una nuova scheda`}
+                        >
+                          Apri il libro ↗
+                        </a>
+                        <Link
+                          href={`/mc/${b.mcId}`}
+                          className="rounded-lg border px-2.5 py-1.5"
+                          style={{ borderColor: `${color}66`, color }}
+                          aria-label={`Vai alla micro-competenza ${b.mcId}`}
+                        >
+                          Vai alla MC
+                        </Link>
                       </div>
                     </div>
                   </li>

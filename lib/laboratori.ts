@@ -50,6 +50,36 @@ export function labSrc(mcId: string): string {
 }
 
 // Copertina Canva del laboratorio (miniatura 640×360 generata da npm run labs)
+// Libri 3D: pagine a sé in public/embeds/<slug>/ (prevedi, prova, dimostra), legate a un'area e a una MC
+export interface Libro3D {
+  slug: string;
+  titolo: string;
+  descrizione: string;
+  area: string;
+  classe: number;
+  mcId: string;
+}
+
+export const LIBRI_3D: Libro3D[] = [
+  {
+    slug: "segui-il-joule",
+    titolo: "Segui il joule",
+    descrizione:
+      "L'energia in 5 esperimenti 3D: rampa, rimbalzi, centrale idroelettrica, lampadine e pendolo. Prevedi, prova, alza l'aletta e guadagna il timbro.",
+    area: "ENE",
+    classe: 3,
+    mcId: "MC-ENE-3-05",
+  },
+];
+
+export function libro3DSrc(slug: string): string {
+  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/embeds/${slug}/`;
+}
+
+export function libro3DAnteprima(slug: string): string {
+  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/embeds/${slug}/anteprima.webp`;
+}
+
 export function labCover(mcId: string): { src: string; alt: string } | undefined {
   const c = (labCovers as Record<string, { thumb: string; alt: string }>)[mcId];
   if (!c) return undefined;
