@@ -29,13 +29,13 @@ La scossa che prendi toccando una maniglia e la corrente che accende una città 
 
 **Che cos'è la corrente**
 
-In alcuni materiali, come il rame, una parte degli elettroni è libera di muoversi. Sono i **conduttori**. In altri, come plastica e gomma, gli elettroni restano fermi: sono gli isolanti. La **corrente elettrica** è un flusso ordinato di elettroni dentro un conduttore.
+In alcuni materiali, come il rame, una parte degli elettroni è libera di muoversi. Sono i **conduttori**. In altri, come plastica e gomma, gli elettroni restano fermi: sono gli isolanti. ==La **corrente elettrica** è un flusso ordinato di elettroni dentro un conduttore.==
 
 **Tre grandezze, pensando all'acqua**
 
 Immagina l'acqua che scorre in un tubo.
 
-- La **tensione** è la spinta, come la pressione dell'acqua. Si misura in volt (V). Una pila stilo ne ha 1,5; la presa di casa 230.
+- ==La **tensione** è la spinta, come la pressione dell'acqua.== Si misura in volt (V). Una pila stilo ne ha 1,5; la presa di casa 230.
 - L'intensità di **corrente** è quanta carica passa ogni secondo, come la quantità d'acqua che scorre. Si misura in ampere (A).
 - La **resistenza** è l'ostacolo al passaggio, come un tubo stretto. Si misura in ohm (Ω).
 
@@ -43,11 +43,11 @@ Immagina l'acqua che scorre in un tubo.
 
 Le tre grandezze sono legate da una formula sola:
 
-tensione = resistenza × corrente, cioè V = R × I
+==tensione = resistenza × corrente, cioè V = R × I==
 
 Se conosci due valori, trovi il terzo. Una pila da 9 volt collegata a una resistenza da 100 ohm fa scorrere 9 : 100 = 0,09 ampere.
 
-A parità di spinta, più resistenza vuol dire meno corrente.
+==A parità di spinta, più resistenza vuol dire meno corrente.==
 
 > ✋ **Tocca a te.** Un LED si brucia se lo attraversa troppa corrente. Ha bisogno di 0,02 ampere, e ai capi della resistenza che lo protegge ci sono 3 volt. Di quanti ohm deve essere la resistenza? Usa R = V : I.
 
@@ -55,11 +55,11 @@ A parità di spinta, più resistenza vuol dire meno corrente.
 
 La **potenza** dice quanta energia un apparecchio usa ogni secondo. Si misura in watt (W) e si calcola moltiplicando tensione e corrente: P = V × I.
 
-Per sapere quanta energia consuma nel tempo si moltiplica la potenza per le ore: è il chilowattora della bolletta. Un apparecchio da 2.000 watt acceso un'ora e mezza consuma 3 chilowattora.
+==Per sapere quanta energia consuma nel tempo si moltiplica la potenza per le ore: è il chilowattora della bolletta.== Un apparecchio da 2.000 watt acceso un'ora e mezza consuma 3 chilowattora.
 
 **Il circuito**
 
-Un **circuito** è un percorso chiuso in cui la corrente può girare. Se si interrompe in un punto, la corrente si ferma dappertutto: è così che funziona un interruttore.
+==Un **circuito** è un percorso chiuso in cui la corrente può girare.== Se si interrompe in un punto, la corrente si ferma dappertutto: è così che funziona un interruttore.
 
 I componenti si possono collegare in due modi.
 
@@ -108,7 +108,7 @@ Miliardi di interruttori microscopici stanno dentro un chip grande come un'unghi
 
 Ogni materiale è fatto di atomi. Ogni atomo ha un nucleo con protoni (carica positiva) e intorno al nucleo orbitano elettroni (carica negativa). Nella maggior parte dei materiali, protoni ed elettroni si bilanciano: l'atomo è neutro.
 
-In alcuni materiali — i **conduttori**, come il rame — gli elettroni degli strati più esterni dell'atomo sono "liberi": si spostano facilmente da un atomo all'altro. È questo movimento collettivo di elettroni liberi che chiamiamo **corrente elettrica**.
+==In alcuni materiali — i **conduttori**, come il rame — gli elettroni degli strati più esterni dell'atomo sono "liberi": si spostano facilmente da un atomo all'altro.== ==È questo movimento collettivo di elettroni liberi che chiamiamo **corrente elettrica**.==
 
 Per far scorrere la corrente elettrica serve però qualcosa che "spinga" gli elettroni in una direzione precisa. Quel qualcosa è la **differenza di potenziale**, che chiamiamo comunemente **tensione** e misuriamo in **volt (V)**.
 
@@ -120,7 +120,7 @@ Pensa a un tubo pieno d'acqua: la corrente elettrica è come il flusso d'acqua n
 
 #### Tensione — V (volt)
 
-La tensione è la "spinta" che mette in movimento gli elettroni. Si misura in **volt (V)**, in onore del fisico italiano Alessandro Volta, che costruì la prima pila elettrica nel 1800.
+==La tensione è la "spinta" che mette in movimento gli elettroni.== Si misura in **volt (V)**, in onore del fisico italiano Alessandro Volta, che costruì la prima pila elettrica nel 1800.
 
 Valori di riferimento utili:
 - Pila AA stilo: 1,5 V
@@ -132,7 +132,7 @@ Valori di riferimento utili:
 
 #### Corrente — I (ampere)
 
-La corrente elettrica è la quantità di cariche elettriche (elettroni) che attraversa una sezione del conduttore in un secondo. Si misura in **ampere (A)**, in onore del fisico francese André-Marie Ampère.
+==La corrente elettrica è la quantità di cariche elettriche (elettroni) che attraversa una sezione del conduttore in un secondo.== Si misura in **ampere (A)**, in onore del fisico francese André-Marie Ampère.
 
 Valori di riferimento:
 - LED di segnalazione: 0,02 A (20 mA)
@@ -145,7 +145,7 @@ Valori di riferimento:
 
 #### Resistenza — R (ohm)
 
-Ogni materiale oppone una certa resistenza al passaggio della corrente. Questa opposizione si chiama **resistenza elettrica** e si misura in **ohm (Ω)**, in onore del fisico tedesco Georg Simon Ohm.
+Ogni materiale oppone una certa resistenza al passaggio della corrente. ==Questa opposizione si chiama **resistenza elettrica** e si misura in **ohm (Ω)**, in onore del fisico tedesco Georg Simon Ohm.==
 
 I materiali si dividono in base alla loro resistenza:
 - **Conduttori**: resistenza bassissima — argento, rame, alluminio, oro
@@ -156,7 +156,7 @@ I materiali si dividono in base alla loro resistenza:
 
 ### La Legge di Ohm — il cuore dell'elettronica
 
-Nel 1827, Georg Simon Ohm scoprì una relazione precisa tra tensione, corrente e resistenza. Questa relazione è la legge più usata in tutta l'elettronica:
+Nel 1827, Georg Simon Ohm scoprì una relazione precisa tra tensione, corrente e resistenza. ==Questa relazione è la legge più usata in tutta l'elettronica:==
 
 **V = R × I**
 
@@ -206,7 +206,7 @@ Confronto pratico: una lampadina a incandescenza da 60W produce circa 800 lumen.
 
 <!-- Fonte della correzione: https://www.energy.gov/cmei/femp/purchasing-energy-efficient-light-bulbs · consultata il 4 ottobre 2026. -->
 
-La potenza si misura in un istante. Per sapere quanta **energia** consuma un dispositivo nel tempo, si usa il **kilowattora (kWh)**:
+La potenza si misura in un istante. ==Per sapere quanta **energia** consuma un dispositivo nel tempo, si usa il **kilowattora (kWh)**:==
 
 **Energia (kWh) = Potenza (kW) × Tempo (ore)**
 
@@ -228,16 +228,16 @@ Se un apparecchio assorbe costantemente 2.000 W (= 2 kW) per 1,5 ore, consuma 3 
 
 ### Circuiti in serie e in parallelo
 
-Un **circuito elettrico** è un percorso chiuso attraverso cui scorre la corrente. Deve essere chiuso: se c'è un'interruzione (un interruttore aperto, un filo rotto), la corrente non scorre.
+Un **circuito elettrico** è un percorso chiuso attraverso cui scorre la corrente. ==Deve essere chiuso: se c'è un'interruzione (un interruttore aperto, un filo rotto), la corrente non scorre.==
 
 #### Circuito in serie
 
 In un circuito in serie, i componenti sono collegati uno dopo l'altro, lungo un unico percorso. La corrente deve attraversarli tutti.
 
 **Proprietà fondamentali:**
-- La corrente è la stessa in ogni punto del circuito: **I_tot = I_1 = I_2 = I_3**
-- La tensione totale si divide tra i componenti: **V_tot = V_1 + V_2 + V_3**
-- Le resistenze si sommano: **R_eq = R_1 + R_2 + R_3**
+- ==La corrente è la stessa in ogni punto del circuito: **I_tot = I_1 = I_2 = I_3**==
+- ==La tensione totale si divide tra i componenti: **V_tot = V_1 + V_2 + V_3**==
+- ==Le resistenze si sommano: **R_eq = R_1 + R_2 + R_3**==
 
 **Esempio numerico:**
 Tre resistenze in serie da 10Ω, 20Ω e 30Ω, alimentate con 12V.
@@ -257,8 +257,8 @@ Le vecchie luci di Natale erano collegate in serie. Se si bruciava una sola lamp
 In un circuito in parallelo, i componenti sono collegati su rami separati, ciascuno connesso direttamente ai due terminali della sorgente.
 
 **Proprietà fondamentali:**
-- La tensione è la stessa su tutti i rami: **V_tot = V_1 = V_2 = V_3**
-- La corrente si divide tra i rami: **I_tot = I_1 + I_2 + I_3**
+- ==La tensione è la stessa su tutti i rami: **V_tot = V_1 = V_2 = V_3**==
+- ==La corrente si divide tra i rami: **I_tot = I_1 + I_2 + I_3**==
 - Le resistenze equivalenti si calcolano con la formula: **1/R_eq = 1/R_1 + 1/R_2 + 1/R_3**
 - (per solo 2 resistenze: R_eq = (R_1 × R_2) / (R_1 + R_2))
 
@@ -310,13 +310,13 @@ Rileva differenze di corrente tra fase e neutro (il che indica che la corrente s
 
 ### Dai componenti discreti ai circuiti integrati
 
-Un circuito elettronico complesso — come il processore del tuo telefono — contiene miliardi di transistor (interruttori elettronici microscopici) integrati in un unico chip di silicio delle dimensioni di un'unghia. Si chiama **circuito integrato (IC — Integrated Circuit)**.
+Un circuito elettronico complesso — come il processore del tuo telefono — contiene miliardi di transistor (interruttori elettronici microscopici) integrati in un unico chip di silicio delle dimensioni di un'unghia. ==Si chiama **circuito integrato (IC — Integrated Circuit)**.==
 
 L'invenzione del circuito integrato (Jack Kilby, Texas Instruments, 1958 — Premio Nobel 2000) ha reso possibile la miniaturizzazione dell'elettronica. Prima dei circuiti integrati, un computer occupava una stanza intera. Oggi il tuo telefono è milioni di volte più potente.
 
 #### Arduino: il microcontrollore per tutti
 
-Un **microcontrollore** è un circuito integrato che contiene in un unico chip: un processore, memoria, e pin di input/output. Arduino è una piattaforma open-source (hardware e software liberamente disponibili) progettata per rendere la programmazione di microcontrollori accessibile a tutti.
+==Un **microcontrollore** è un circuito integrato che contiene in un unico chip: un processore, memoria, e pin di input/output.== Arduino è una piattaforma open-source (hardware e software liberamente disponibili) progettata per rendere la programmazione di microcontrollori accessibile a tutti.
 
 Come funziona Arduino:
 - Ha **pin digitali** (numerati da 0 a 13 su Arduino Uno): possono leggere o scrivere valori HIGH (5V, "acceso") o LOW (0V, "spento")

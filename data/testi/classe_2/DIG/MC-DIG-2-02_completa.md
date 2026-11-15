@@ -28,7 +28,7 @@ Le app che usi ogni giorno sono gratis perché le paghi in un altro modo: con le
 
 **Che cos'è un dato personale**
 
-Un **dato personale** è qualsiasi informazione che, da sola o unita ad altre, permette di riconoscere una persona. Il nome, certo. Ma anche:
+==Un **dato personale** è qualsiasi informazione che, da sola o unita ad altre, permette di riconoscere una persona.== Il nome, certo. Ma anche:
 
 - dove ti trovi;
 - che cosa cerchi e che cosa guardi, e per quanto tempo;
@@ -47,7 +47,7 @@ I **cookie** sono piccoli file che un sito salva nel tuo browser. Alcuni servono
 
 **I tuoi diritti**
 
-In Europa c'è una legge che ti protegge: il **GDPR**. Ti dà, tra gli altri, questi diritti:
+==In Europa c'è una legge che ti protegge: il **GDPR**.== Ti dà, tra gli altri, questi diritti:
 
 - sapere quali dati un servizio ha raccolto su di te e averne una copia;
 - far correggere quelli sbagliati;
@@ -58,13 +58,13 @@ I banner che compaiono quando apri un sito esistono per questa legge: devono chi
 
 **Quello che pubblichi resta**
 
-Una foto pubblicata oggi può esistere ancora tra vent'anni. Anche se la cancelli, qualcuno può averla salvata o fotografata dallo schermo. L'insieme delle tracce che lasci online è la tua **impronta digitale**: racconta di te anche a chi non ti conosce.
+Una foto pubblicata oggi può esistere ancora tra vent'anni. Anche se la cancelli, qualcuno può averla salvata o fotografata dallo schermo. ==L'insieme delle tracce che lasci online è la tua **impronta digitale**: racconta di te anche a chi non ti conosce.==
 
 Prima di pubblicare, una domanda: mi andrebbe bene se lo vedessero tutti, anche tra dieci anni?
 
 **Parole che fanno male**
 
-Il **cyberbullismo** è un'aggressione ripetuta e voluta fatta con strumenti digitali: insulti, esclusioni, foto diffuse senza permesso. In Italia una legge del 2017 permette a chi lo subisce di chiedere la rimozione dei contenuti. Non è uno scherzo, e non si affronta da soli: se ne parla con un adulto.
+Il **cyberbullismo** è un'aggressione ripetuta e voluta fatta con strumenti digitali: insulti, esclusioni, foto diffuse senza permesso. ==In Italia una legge del 2017 permette a chi lo subisce di chiedere la rimozione dei contenuti.== Non è uno scherzo, e non si affronta da soli: se ne parla con un adulto.
 
 **Chiudere la porta**
 
@@ -102,7 +102,7 @@ Secondo questa definizione, non sono dati personali solo quelli "ovvi" come nome
 - La cronologia di navigazione.
 - I dati comportamentali (quali pulsanti clicchi, per quanto tempo guardi un video, quando ti fermi a scorrere il feed).
 
-**Perché è importante saperlo:** molte persone pensano di non avere "dati da proteggere" perché non fanno nulla di privato online. Ma la combinazione di dati apparentemente innocui può rivelare moltissimo. La sequenza di siti visitati in un pomeriggio può rivelare la tua condizione di salute. I tuoi orari di attività online possono rivelare se sei a casa o no. Il tipo di musica che ascolti può essere usato per inferire il tuo umore e le tue preferenze politiche.
+==**Perché è importante saperlo:** molte persone pensano di non avere "dati da proteggere" perché non fanno nulla di privato online.== Ma la combinazione di dati apparentemente innocui può rivelare moltissimo. La sequenza di siti visitati in un pomeriggio può rivelare la tua condizione di salute. I tuoi orari di attività online possono rivelare se sei a casa o no. Il tipo di musica che ascolti può essere usato per inferire il tuo umore e le tue preferenze politiche.
 
 ---
 
@@ -110,7 +110,7 @@ Secondo questa definizione, non sono dati personali solo quelli "ovvi" come nome
 
 Le piattaforme digitali non raccolgono i dati chiedendoti ogni volta "possiamo prendere questa informazione?". I meccanismi sono incorporati nel funzionamento stesso dei servizi.
 
-**Cookie:** piccoli file di testo che il sito web salva nel tuo browser. Esistono diversi tipi.
+==**Cookie:** piccoli file di testo che il sito web salva nel tuo browser.== Esistono diversi tipi.
 
 *Cookie tecnici (necessari)*: permettono al sito di funzionare — es. ricordare che sei loggato, che hai aggiunto qualcosa al carrello. Senza questi, ogni pagina che apri ti chiederebbe di fare di nuovo il login.
 
@@ -118,25 +118,25 @@ Le piattaforme digitali non raccolgono i dati chiedendoti ogni volta "possiamo p
 
 *Cookie di profilazione*: questi sono quelli controversi. Tracciano il tuo comportamento su quel sito e su altri siti (tramite cookie di terze parti) per costruire un profilo delle tue preferenze e mostrarti pubblicità mirata.
 
-**Pixel di tracciamento (tracking pixel):** un'immagine invisibile di 1×1 pixel incorporata in una pagina web o in un'email. Quando carichi la pagina o apri l'email, il pixel viene caricato dal server del mittente — e quel caricamento invia al server la tua indirizzo IP, il tuo browser, il tuo sistema operativo, l'ora in cui hai aperto l'email. È come un segnale automatico che dice "questo utente ha aperto l'email alle 21:34 dal suo iPhone in Italia".
+==**Pixel di tracciamento (tracking pixel):** un'immagine invisibile di 1×1 pixel incorporata in una pagina web o in un'email.== Quando carichi la pagina o apri l'email, il pixel viene caricato dal server del mittente — e quel caricamento invia al server la tua indirizzo IP, il tuo browser, il tuo sistema operativo, l'ora in cui hai aperto l'email. È come un segnale automatico che dice "questo utente ha aperto l'email alle 21:34 dal suo iPhone in Italia".
 
 **Browser fingerprinting (impronta del browser):** anche senza cookie, il tuo browser può essere identificato con grande precisione attraverso la combinazione di dozzine di caratteristiche tecniche: il tipo e la versione del browser, il sistema operativo, la risoluzione dello schermo, i font installati, i plugin attivi, la lingua di sistema, il fuso orario. Queste caratteristiche, combinate, formano un'"impronta digitale" del browser che è unica (o quasi) per ogni utente. Non richiede nessun file salvato — è la configurazione stessa del tuo dispositivo.
 
-**Dati comportamentali:** i log dettagliati di ogni tua azione su una piattaforma. Per quanto tempo hai guardato un video prima di skipparlo. Su quali post ti sei fermato nel feed prima di scorrere. Quante volte hai aperto un'app in una giornata. Questo tipo di dato è estremamente prezioso perché rivela preferenze reali — non quello che dici di preferire, ma quello che fai davvero.
+==**Dati comportamentali:** i log dettagliati di ogni tua azione su una piattaforma.== Per quanto tempo hai guardato un video prima di skipparlo. Su quali post ti sei fermato nel feed prima di scorrere. Quante volte hai aperto un'app in una giornata. Questo tipo di dato è estremamente prezioso perché rivela preferenze reali — non quello che dici di preferire, ma quello che fai davvero.
 
 ---
 
 ### Il GDPR semplificato: i tuoi diritti
 
-Il GDPR è entrato in applicazione il 25 maggio 2018 ed è attualmente la normativa sulla privacy più forte al mondo. Si applica a qualsiasi organizzazione che raccoglie o tratta dati di cittadini europei — indipendentemente da dove ha sede quella organizzazione. Google, Facebook/Meta, Amazon, TikTok: tutti devono rispettare il GDPR quando trattano dati di europei.
+Il GDPR è entrato in applicazione il 25 maggio 2018 ed è attualmente la normativa sulla privacy più forte al mondo. ==Si applica a qualsiasi organizzazione che raccoglie o tratta dati di cittadini europei — indipendentemente da dove ha sede quella organizzazione.== Google, Facebook/Meta, Amazon, TikTok: tutti devono rispettare il GDPR quando trattano dati di europei.
 
 **I tuoi sei diritti fondamentali:**
 
-**Diritto di accesso (Art. 15):** hai il diritto di sapere quali dati una piattaforma ha raccolto su di te. Puoi richiedere una copia completa dei tuoi dati — Google Takeout, ad esempio, permette di esportare molte categorie di dati associate all’account. Altri dati possono richiedere una richiesta di accesso specifica: l’esportazione non comprende necessariamente tutto ciò che Google tratta su di te.
+==**Diritto di accesso (Art. 15):** hai il diritto di sapere quali dati una piattaforma ha raccolto su di te.== Puoi richiedere una copia completa dei tuoi dati — Google Takeout, ad esempio, permette di esportare molte categorie di dati associate all’account. Altri dati possono richiedere una richiesta di accesso specifica: l’esportazione non comprende necessariamente tutto ciò che Google tratta su di te.
 
 **Diritto di rettifica (Art. 16):** se un dato è sbagliato, hai il diritto di farlo correggere.
 
-**Diritto alla cancellazione — "diritto all'oblio" (Art. 17):** in certi casi, hai il diritto di chiedere che i tuoi dati vengano cancellati. Non è assoluto: le piattaforme possono rifiutare se hanno un motivo legale per conservarli (es. dati necessari per adempiere a obblighi di legge).
+==**Diritto alla cancellazione — "diritto all'oblio" (Art. 17):** in certi casi, hai il diritto di chiedere che i tuoi dati vengano cancellati.== Non è assoluto: le piattaforme possono rifiutare se hanno un motivo legale per conservarli (es. dati necessari per adempiere a obblighi di legge).
 
 **Diritto alla portabilità (Art. 20):** hai il diritto di ricevere i tuoi dati in un formato leggibile e di trasferirli a un'altra piattaforma. Se vuoi passare da un servizio a un altro, puoi portare i tuoi dati con te.
 
@@ -174,7 +174,7 @@ Ecco come funziona in modo semplificato:
 
 ### L'impronta digitale permanente
 
-Una foto pubblicata a 13 anni può esistere ancora quando ne hai 30. Questo è il principio dell'**impronta digitale permanente**: nel mondo digitale, quasi nulla viene davvero cancellato.
+Una foto pubblicata a 13 anni può esistere ancora quando ne hai 30. ==Questo è il principio dell'**impronta digitale permanente**: nel mondo digitale, quasi nulla viene davvero cancellato.==
 
 Le ragioni sono tecniche e strutturali:
 
@@ -190,7 +190,7 @@ Le ragioni sono tecniche e strutturali:
 
 ### Identità digitale vs identità reale
 
-La tua **identità reale** è l'insieme di chi sei fisicamente, con le tue caratteristiche, la tua storia, le tue relazioni. La tua **identità digitale** è l'insieme delle tracce che lasci online — profili, post, commenti, acquisti, ricerche, comportamenti di navigazione.
+==La tua **identità reale** è l'insieme di chi sei fisicamente, con le tue caratteristiche, la tua storia, le tue relazioni.== ==La tua **identità digitale** è l'insieme delle tracce che lasci online — profili, post, commenti, acquisti, ricerche, comportamenti di navigazione.==
 
 Le due identità non coincidono necessariamente: online puoi presentarti in modo diverso da come sei "nella vita reale". Ma la distanza tra le due identità non è infinita: i dati comportamentali sono difficili da falsificare sistematicamente, e nel tempo la tua identità digitale tende a riflettere chi sei davvero — o almeno, a costruire per te una reputazione che poi ha effetti reali.
 
@@ -205,7 +205,7 @@ La zona grigia è quella più pericolosa, perché le persone la trattano come pr
 
 ### Cyberbullismo e hate speech: definizioni e conseguenze
 
-**Cyberbullismo:** comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali. Caratteristiche: ripetitività (non è un singolo episodio), intenzionalità (non è accidentale), squilibrio di potere tra chi agisce e chi subisce. Forme: molestie dirette, esclusione online, diffusione di immagini o informazioni imbarazzanti, furto di identità, stalking digitale.
+==**Cyberbullismo:** comportamento aggressivo, intenzionale e ripetuto attuato tramite strumenti digitali.== ==Caratteristiche: ripetitività (non è un singolo episodio), intenzionalità (non è accidentale), squilibrio di potere tra chi agisce e chi subisce.== Forme: molestie dirette, esclusione online, diffusione di immagini o informazioni imbarazzanti, furto di identità, stalking digitale.
 
 In Italia, la **Legge n. 71/2017** (la legge italiana sul cyberbullismo) prevede per i minorenni: misure di protezione della vittima, obbligo scolastico di adottare misure preventive, possibilità per la vittima di chiedere la rimozione dei contenuti. Per i maggiorenni che commettono cyberbullismo, si applicano le norme penali esistenti (diffamazione, stalking, minacce).
 
@@ -219,7 +219,7 @@ In Italia, la **Legge n. 71/2017** (la legge italiana sul cyberbullismo) prevede
 
 Una password sicura è lunga (almeno 12 caratteri), casuale (non parole di dizionario), unica (diversa per ogni servizio), e non condivisa.
 
-Il problema è che è impossibile ricordare decine di password lunghe e casuali. La soluzione sono i **gestori di password** (password manager): applicazioni che generano password sicure, le conservano in forma cifrata, e le inseriscono automaticamente quando ne hai bisogno. Esempi gratuiti: Bitwarden (open source), KeePass. Devi ricordare una sola password principale (quella del gestore) — tutte le altre le gestisce il software.
+Il problema è che è impossibile ricordare decine di password lunghe e casuali. ==La soluzione sono i **gestori di password** (password manager): applicazioni che generano password sicure, le conservano in forma cifrata, e le inseriscono automaticamente quando ne hai bisogno.== Esempi gratuiti: Bitwarden (open source), KeePass. Devi ricordare una sola password principale (quella del gestore) — tutte le altre le gestisce il software.
 
 L'**autenticazione a due fattori (2FA o MFA)** aggiunge un secondo strato di sicurezza: oltre alla password, per accedere al tuo account devi anche inserire un codice temporaneo che ti viene inviato via SMS, o generato da un'app (Google Authenticator, Authy). Anche se qualcuno ruba la tua password, non può accedere senza il secondo fattore.
 
@@ -242,7 +242,7 @@ Questi dati furono ceduti a Cambridge Analytica, che li usò per costruire model
 
 Lo scandalo fu rivelato nel marzo 2018 dal giornale The Guardian e dall'Observer, con testimonianze di ex dipendenti di Cambridge Analytica. Facebook pagò una multa di 5 miliardi di dollari alla Federal Trade Commission americana — la più grande multa per violazione della privacy nella storia degli Stati Uniti all'epoca.
 
-**Cosa è cambiato dopo:** Facebook ha eliminato la possibilità per le app di raccogliere dati degli amici dell'utente. Il GDPR, entrato in vigore due mesi dopo lo scandalo, ha reso molto più stringenti i requisiti di consenso per il trattamento dei dati. Ma i dati di quei 87 milioni di persone non sono stati cancellati.
+==**Cosa è cambiato dopo:** Facebook ha eliminato la possibilità per le app di raccogliere dati degli amici dell'utente.== Il GDPR, entrato in vigore due mesi dopo lo scandalo, ha reso molto più stringenti i requisiti di consenso per il trattamento dei dati. Ma i dati di quei 87 milioni di persone non sono stati cancellati.
 
 ---
 

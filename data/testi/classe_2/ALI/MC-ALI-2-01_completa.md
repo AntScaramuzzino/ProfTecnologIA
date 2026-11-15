@@ -25,13 +25,13 @@ Inizia da una pianta, da un campo, da un agricoltore che conosce la terra.
 
 ### 🎯 In breve
 
-Una mela, un piatto di pasta, una foglia di insalata: tutto comincia mesi prima, in un campo. Il risultato dipende da quattro cose: il suolo, il clima, l'acqua e le scelte di chi coltiva. La scienza che le studia si chiama **agronomia**.
+Una mela, un piatto di pasta, una foglia di insalata: tutto comincia mesi prima, in un campo. ==Il risultato dipende da quattro cose: il suolo, il clima, l'acqua e le scelte di chi coltiva.== ==La scienza che le studia si chiama **agronomia**.==
 
 **Il suolo è vivo**
 
 Il suolo non è terra morta. In un cucchiaio di terreno sano vivono circa un miliardo di batteri. È fatto di minerali, aria, acqua e **humus**, la parte scura che nasce da foglie e resti decomposti e che nutre le piante.
 
-Un suolo ricco si dice **fertile**. Per formarne un solo centimetro la natura impiega da cento a mille anni. Coltivato male, si perde in pochi decenni.
+==Un suolo ricco si dice **fertile**.== Per formarne un solo centimetro la natura impiega da cento a mille anni. Coltivato male, si perde in pochi decenni.
 
 > ✋ **Tocca a te.** Di che cosa ha bisogno una pianta per crescere? Scrivi la tua lista prima di continuare. Poi controlla quante cose avevi previsto.
 
@@ -43,7 +43,7 @@ Se il suolo ne ha pochi, l'agricoltore li aggiunge con la **concimazione**: leta
 
 **Un trucco vecchio duemila anni**
 
-Se semini grano nello stesso campo per dieci anni, il suolo si impoverisce e i parassiti del grano si moltiplicano. La soluzione è la **rotazione delle colture**: ogni anno si cambia pianta. Un anno grano, l'anno dopo fagioli o piselli. I legumi fanno un regalo al campo: nelle loro radici vivono batteri che rimettono azoto nel terreno.
+Se semini grano nello stesso campo per dieci anni, il suolo si impoverisce e i parassiti del grano si moltiplicano. ==La soluzione è la **rotazione delle colture**: ogni anno si cambia pianta.== Un anno grano, l'anno dopo fagioli o piselli. I legumi fanno un regalo al campo: nelle loro radici vivono batteri che rimettono azoto nel terreno.
 
 **Tre modi di coltivare**
 
@@ -55,7 +55,7 @@ Se semini grano nello stesso campo per dieci anni, il suolo si impoverisce e i p
 
 L'agricoltura usa il 70% dell'acqua dolce che l'umanità consuma. Come la si dà alle piante fa una grande differenza. Allagare il campo ne spreca tantissima. L'**irrigazione a goccia** porta l'acqua con tubicini direttamente alle radici, e ne risparmia moltissima.
 
-Una **serra** risolve un altro problema: protegge le piante e permette di coltivare anche fuori stagione. Per questo trovi i pomodori a gennaio.
+==Una **serra** risolve un altro problema: protegge le piante e permette di coltivare anche fuori stagione.== Per questo trovi i pomodori a gennaio.
 
 > ✋ **Tocca a te.** Pensa all'ultima verdura o all'ultimo frutto che hai mangiato. È di stagione in questo mese? Se non lo è, da dove può essere arrivato: da una serra o da un altro paese?
 
@@ -73,13 +73,13 @@ Una **serra** risolve un altro problema: protegge le piante e permette di coltiv
 
 Quando mangi una mela, un piatto di pasta o una foglia di insalata, stai mangiando il risultato di un processo lungo mesi. Un processo che dipende da quattro elementi fondamentali: il **suolo**, il **clima**, l'**acqua** e le **scelte tecniche** di chi coltiva. Se uno di questi elementi manca o è sbilanciato, il raccolto fallisce. Se tutti sono in equilibrio, nascono gli alimenti che arrivano sulla tua tavola.
 
-L'**agronomia** è la scienza che studia come ottimizzare questi elementi per ottenere raccolti abbondanti, di qualità e sostenibili nel tempo. Non è solo pratica di campagna: è una disciplina tecnica e scientifica che unisce biologia, chimica, fisica e ingegneria. Il professionista che applica queste conoscenze si chiama **agronomo**.
+==L'**agronomia** è la scienza che studia come ottimizzare questi elementi per ottenere raccolti abbondanti, di qualità e sostenibili nel tempo.== Non è solo pratica di campagna: è una disciplina tecnica e scientifica che unisce biologia, chimica, fisica e ingegneria. Il professionista che applica queste conoscenze si chiama **agronomo**.
 
 ---
 
 ### Il suolo: non è semplice "terra"
 
-Il suolo fertile — quello capace di nutrire le piante — è uno degli ambienti più complessi della biosfera. Non è sabbia inerte: è un sistema vivo. Un cucchiaio di terreno sano contiene circa un miliardo di batteri, migliaia di funghi microscopici, protozoi, nematodi, e anche organismi più grandi come i lombrichi. Sono loro a scomporre la materia organica morta e trasformarla in **humus** — la componente scura che rende fertile il suolo.
+Il suolo fertile — quello capace di nutrire le piante — è uno degli ambienti più complessi della biosfera. ==Non è sabbia inerte: è un sistema vivo.== Un cucchiaio di terreno sano contiene circa un miliardo di batteri, migliaia di funghi microscopici, protozoi, nematodi, e anche organismi più grandi come i lombrichi. Sono loro a scomporre la materia organica morta e trasformarla in **humus** — la componente scura che rende fertile il suolo.
 
 La composizione ideale del suolo per la coltivazione si chiama **terriccio agricolo** e contiene:
 - **Minerali** (argilla, sabbia, limo) — la struttura fisica che trattiene l'acqua e i nutrienti
@@ -95,7 +95,7 @@ Un dato che fa riflettere: per formare 1 centimetro di suolo fertile in natura s
 
 ### Come le piante si nutrono: la fotosintesi e i nutrienti del suolo
 
-Per crescere, ogni pianta ha bisogno di due tipi di input: la **luce solare** e i **nutrienti minerali** del suolo.
+==Per crescere, ogni pianta ha bisogno di due tipi di input: la **luce solare** e i **nutrienti minerali** del suolo.==
 
 > **Box Scienze — Fotosintesi clorofilliana: la base di tutto**
 > La fotosintesi è il processo attraverso cui le piante trasformano anidride carbonica (CO₂) dall'aria, acqua (H₂O) dal suolo e luce solare in glucosio (uno zucchero) e ossigeno. La formula sintetica è:
@@ -105,7 +105,7 @@ Per crescere, ogni pianta ha bisogno di due tipi di input: la **luce solare** e 
 > Il glucosio è il "carburante" con cui la pianta costruisce tutto: radici, foglie, frutti, semi. Senza fotosintesi non esiste nessuna catena alimentare. Tutto ciò che mangi — sia animale che vegetale — dipende in ultima analisi dall'energia catturata dalle piante attraverso questo processo. Perfino la carne che mangi viene da animali che si sono nutriti di piante. La fotosintesi è il punto di partenza dell'intera nutrizione umana.
 
 I nutrienti minerali che le radici assorbono dal suolo si dividono in tre categorie:
-- **Macronutrienti primari:** azoto (N), fosforo (P), potassio (K). Sono i più richiesti e quelli che più frequentemente scarseggiano. L'azoto favorisce la crescita delle foglie e degli steli; il fosforo lo sviluppo delle radici e dei fiori; il potassio la formazione dei frutti e la resistenza alle malattie.
+- ==**Macronutrienti primari:** azoto (N), fosforo (P), potassio (K).== Sono i più richiesti e quelli che più frequentemente scarseggiano. L'azoto favorisce la crescita delle foglie e degli steli; il fosforo lo sviluppo delle radici e dei fiori; il potassio la formazione dei frutti e la resistenza alle malattie.
 - **Macronutrienti secondari:** calcio, magnesio, zolfo. Necessari in quantità minori ma ugualmente indispensabili.
 - **Micronutrienti** (o oligoelementi): ferro, manganese, zinco, rame, boro. Necessari in tracce minime, ma la loro assenza provoca sintomi di carenza specifici e riconoscibili.
 
@@ -117,11 +117,11 @@ Quando un suolo è carente di un nutriente, l'agricoltore può apportarlo con la
 
 Non tutte le piante si coltivano allo stesso modo. Un frumento ha bisogno di spazio e sole; un pomodoro ha bisogno di tutori e potatura; una pianta di fragole preferisce aiuole basse e terriccio soffice. Ma esistono tecniche comuni a molte colture che ogni agricoltore deve conoscere.
 
-**La lavorazione del suolo.** Prima di seminare, il suolo viene lavorato meccanicamente per renderlo soffice, eliminare le erbe infestanti e migliorare l'aireazione. La tecnica tradizionale è l'**aratura**: un vomere taglia e rivolta il terreno in strati profondi 20-40 cm. L'aratura tradizionale porta in superficie il suolo fertile e seppellisce quello meno fertile, ma ha uno svantaggio: distrugge la struttura biologica del suolo e favorisce l'erosione. Per questo, l'agricoltura moderna sta adottando sempre più tecniche di **lavorazione minima** (minimum tillage) o addirittura di **semina diretta** senza aratura, che preservano meglio la vita del suolo.
+**La lavorazione del suolo.** Prima di seminare, il suolo viene lavorato meccanicamente per renderlo soffice, eliminare le erbe infestanti e migliorare l'aireazione. La tecnica tradizionale è l'**aratura**: un vomere taglia e rivolta il terreno in strati profondi 20-40 cm. L'aratura tradizionale porta in superficie il suolo fertile e seppellisce quello meno fertile, ma ha uno svantaggio: distrugge la struttura biologica del suolo e favorisce l'erosione. ==Per questo, l'agricoltura moderna sta adottando sempre più tecniche di **lavorazione minima** (minimum tillage) o addirittura di **semina diretta** senza aratura, che preservano meglio la vita del suolo.==
 
 **La semina.** Le piante si moltiplicano in due modi: da **seme** (la modalità più comune) o per **propagazione vegetativa** (da talee, bulbi, tuberi, innesti). I semi vengono seminati direttamente in campo (semina diretta) oppure fatti germinare in vivaio e poi trapiantati (trapianto). Il trapianto è più costoso ma permette di controllare meglio i primi stadi di sviluppo della pianta, particolarmente vulnerabile agli insetti e alle gelate.
 
-**La gestione delle erbe infestanti.** Le piante spontanee che crescono tra le colture si chiamano **infestanti** (o malerbe). Competono con le piante coltivate per acqua, luce e nutrienti, e possono ridurre significativamente il raccolto. Si combattono con la **sarchiatura** meccanica (taglio o estirpazione manuale o con attrezzi), con la **pacciamatura** (copertura del suolo con materiali come paglia o teli di plastica biodegradabile che bloccano la luce), o con i **diserbanti** chimici (erbicidi).
+==**La gestione delle erbe infestanti.** Le piante spontanee che crescono tra le colture si chiamano **infestanti** (o malerbe).== ==Competono con le piante coltivate per acqua, luce e nutrienti, e possono ridurre significativamente il raccolto.== Si combattono con la **sarchiatura** meccanica (taglio o estirpazione manuale o con attrezzi), con la **pacciamatura** (copertura del suolo con materiali come paglia o teli di plastica biodegradabile che bloccano la luce), o con i **diserbanti** chimici (erbicidi).
 
 **La difesa dai parassiti e dalle malattie.** Insetti, funghi, batteri e virus possono attaccare le piante in qualsiasi fase del ciclo vitale. La difesa avviene attraverso la **lotta chimica** (pesticidi, insetticidi, fungicidi), la **lotta biologica** (uso di organismi naturali predatori dei parassiti, come le coccinelle contro gli afidi) o attraverso tecniche agronomiche preventive come la **rotazione delle colture**.
 
@@ -140,7 +140,7 @@ La soluzione inventata dagli agricoltori romani — e ancora valida oggi — è 
 
 In questo modo il suolo si rinnova, i parassiti specifici non trovano il loro ospite e si riducono, e l'apporto di nutrienti è più equilibrato. Le leguminose in particolare sono preziose: grazie a batteri del genere *Rhizobium* che vivono nelle loro radici, "catturano" l'azoto dall'atmosfera e lo trasformano in forma utilizzabile dalle piante — è un fertilizzante naturale gratuito.
 
-La rotazione riduce significativamente il bisogno di concimi chimici e pesticidi. È uno dei principi fondamentali dell'**agricoltura sostenibile**.
+==La rotazione riduce significativamente il bisogno di concimi chimici e pesticidi.== ==È uno dei principi fondamentali dell'**agricoltura sostenibile**.==
 
 ---
 
@@ -148,11 +148,11 @@ La rotazione riduce significativamente il bisogno di concimi chimici e pesticidi
 
 Nel mondo coesistono oggi modelli agricoli molto diversi. Conoscerli ti permette di capire le etichette sugli alimenti, fare scelte di acquisto più consapevoli, e valutare l'impatto di quello che mangi.
 
-**Agricoltura convenzionale.** È il modello dominante nei paesi industrializzati, sviluppato principalmente dopo la Seconda Guerra Mondiale durante la cosiddetta "Rivoluzione Verde". Caratteristiche principali: uso di sementi selezionate ad alta resa, fertilizzanti minerali di sintesi, pesticidi chimici per combattere parassiti e malattie, macchine agricole per ridurre il lavoro manuale, grandi appezzamenti monocoltura. Il risultato è stato un aumento straordinario della produttività: negli ultimi 70 anni la resa media del frumento per ettaro è triplicata. Ma ha anche un costo: inquinamento delle falde acquifere da nitrati dei fertilizzanti, perdita di biodiversità, erosione del suolo, dipendenza da petrolio per i fertilizzanti di sintesi (tutti i fertilizzanti azotati si producono con il gas naturale).
+==**Agricoltura convenzionale.** È il modello dominante nei paesi industrializzati, sviluppato principalmente dopo la Seconda Guerra Mondiale durante la cosiddetta "Rivoluzione Verde".== Caratteristiche principali: uso di sementi selezionate ad alta resa, fertilizzanti minerali di sintesi, pesticidi chimici per combattere parassiti e malattie, macchine agricole per ridurre il lavoro manuale, grandi appezzamenti monocoltura. Il risultato è stato un aumento straordinario della produttività: negli ultimi 70 anni la resa media del frumento per ettaro è triplicata. Ma ha anche un costo: inquinamento delle falde acquifere da nitrati dei fertilizzanti, perdita di biodiversità, erosione del suolo, dipendenza da petrolio per i fertilizzanti di sintesi (tutti i fertilizzanti azotati si producono con il gas naturale).
 
 **Agricoltura biologica.** L'agricoltura biologica (o "bio") esclude l'uso di fertilizzanti minerali di sintesi, pesticidi chimici di sintesi, organismi geneticamente modificati (OGM) e antibiotici preventivi negli allevamenti. Usa invece concimi organici (compost, letame), tecniche di lotta biologica ai parassiti, rotazioni e cover crops per mantenere la fertilità del suolo. In Europa, il marchio "biologico" su un prodotto garantisce che sia stato prodotto seguendo il Regolamento UE n. 848/2018. Un dato importante: l'agricoltura biologica produce in media il 19-25% in meno rispetto a quella convenzionale, ma richiede molta meno energia (perché non usa fertilizzanti prodotti con gas naturale), preserva meglio la biodiversità e riduce l'inquinamento dei suoli e delle acque. La domanda che in molti si pongono è: se tutta l'agricoltura diventasse biologica, potremmo ancora nutrire otto miliardi di persone? La risposta degli scienziati è: sì, ma richiederebbe anche una riduzione significativa degli sprechi alimentari (oggi 1/3 del cibo prodotto nel mondo viene sprecato) e dei consumi di carne.
 
-**Idroponica e coltivazione fuori suolo.** E se le piante potessero crescere senza terra? È esattamente quello che avviene nell'agricoltura idroponica. Le radici delle piante sono immerse direttamente in una soluzione acquosa ricca di nutrienti minerali (oppure supportate da substrati inerti come lana di roccia, perlite o argilla espansa), e ricevono luce artificiale o solare. Senza suolo, senza pesticidi del terreno, senza erbe infestanti. I vantaggi: possibilità di coltivare in spazi ridotti (anche indoor), consumo di acqua ridotto del 90% rispetto alla coltivazione tradizionale in pieno campo, cicli di coltivazione più rapidi, prodotti privi di contaminanti del suolo. Gli svantaggi: costo iniziale elevato (impianti, illuminazione, sistemi di circolazione), consumo energetico per la luce artificiale, impossibilità di coltivare molte specie di alberi da frutto o cereali.
+==**Idroponica e coltivazione fuori suolo.** E se le piante potessero crescere senza terra?== È esattamente quello che avviene nell'agricoltura idroponica. Le radici delle piante sono immerse direttamente in una soluzione acquosa ricca di nutrienti minerali (oppure supportate da substrati inerti come lana di roccia, perlite o argilla espansa), e ricevono luce artificiale o solare. Senza suolo, senza pesticidi del terreno, senza erbe infestanti. I vantaggi: possibilità di coltivare in spazi ridotti (anche indoor), consumo di acqua ridotto del 90% rispetto alla coltivazione tradizionale in pieno campo, cicli di coltivazione più rapidi, prodotti privi di contaminanti del suolo. Gli svantaggi: costo iniziale elevato (impianti, illuminazione, sistemi di circolazione), consumo energetico per la luce artificiale, impossibilità di coltivare molte specie di alberi da frutto o cereali.
 
 Una versione più evoluta è l'**aeroponica**: le radici sono sospese nell'aria e irrorate periodicamente con nebbia nutriente. È ancora più efficiente dell'idroponica ma più complessa e costosa.
 
@@ -160,9 +160,9 @@ Una versione più evoluta è l'**aeroponica**: le radici sono sospese nell'aria 
 
 ### L'acqua in agricoltura: il numero che devi conoscere
 
-L'agricoltura utilizza il **70%** dell'acqua dolce prelevata ogni anno nel mondo. Non il 10%, non il 20%: il 70%. È di gran lunga il settore che consuma più acqua dolce del pianeta. E il consumo non è uniforme: produrre 1 kg di manzo richiede circa 15.000 litri di acqua (cibo per la mucca, acqua per abbeverarla, acqua per le strutture); 1 kg di riso richiede circa 2.500 litri; 1 kg di pomodori circa 180 litri; 1 kg di insalata circa 130 litri.
+==L'agricoltura utilizza il **70%** dell'acqua dolce prelevata ogni anno nel mondo.== Non il 10%, non il 20%: il 70%. È di gran lunga il settore che consuma più acqua dolce del pianeta. E il consumo non è uniforme: produrre 1 kg di manzo richiede circa 15.000 litri di acqua (cibo per la mucca, acqua per abbeverarla, acqua per le strutture); 1 kg di riso richiede circa 2.500 litri; 1 kg di pomodori circa 180 litri; 1 kg di insalata circa 130 litri.
 
-Queste cifre si chiamano **impronta idrica** di un alimento e includono tutta l'acqua usata in ogni fase della produzione, non solo quella di irrigazione. Conoscerle non significa smettere di mangiare carne: significa capire le conseguenze delle proprie scelte alimentari in un pianeta in cui l'acqua dolce è una risorsa limitata e sempre più contesa.
+==Queste cifre si chiamano **impronta idrica** di un alimento e includono tutta l'acqua usata in ogni fase della produzione, non solo quella di irrigazione.== Conoscerle non significa smettere di mangiare carne: significa capire le conseguenze delle proprie scelte alimentari in un pianeta in cui l'acqua dolce è una risorsa limitata e sempre più contesa.
 
 I principali **sistemi di irrigazione** utilizzati in agricoltura si distinguono per efficienza:
 
@@ -174,7 +174,7 @@ I principali **sistemi di irrigazione** utilizzati in agricoltura si distinguono
 
 ### Le serre: controllare il clima per coltivare sempre
 
-Le piante crescono meglio entro certi range di temperatura, umidità e luce. Una **serra** è una struttura che permette di controllare questi parametri, creando un microclima artificiale ottimale per la coltivazione. Le prime serre storiche erano strutture in vetro riscaldate con il carbone, usate nelle residenze nobiliari per coltivare agrumi e piante esotiche durante l'inverno. Oggi le serre industriali sono strutture high-tech con vetro o policarbonato, riscaldamento controllato, irrigazione automatica, sensori di umidità e CO₂, e in alcuni casi illuminazione supplementare.
+Le piante crescono meglio entro certi range di temperatura, umidità e luce. ==Una **serra** è una struttura che permette di controllare questi parametri, creando un microclima artificiale ottimale per la coltivazione.== Le prime serre storiche erano strutture in vetro riscaldate con il carbone, usate nelle residenze nobiliari per coltivare agrumi e piante esotiche durante l'inverno. Oggi le serre industriali sono strutture high-tech con vetro o policarbonato, riscaldamento controllato, irrigazione automatica, sensori di umidità e CO₂, e in alcuni casi illuminazione supplementare.
 
 I vantaggi: produzione durante tutto l'anno (non solo in stagione), rese molto più alte per metro quadrato, protezione totale da parassiti e intemperie, minor uso di pesticidi. Gli svantaggi: alto costo energetico per il riscaldamento (in inverno), costo di costruzione elevato, non adatta a tutte le colture.
 
@@ -184,7 +184,7 @@ Una variante moderna e affascinante è la **coltivazione verticale urbana** (ver
 
 ### Il ciclo biologico della pianta: dal seme al frutto
 
-Capire come cresce una pianta è fondamentale per capire perché alcune tecniche agronomiche funzionano. Il ciclo di vita di una pianta da fiore (angiosperma) — la categoria che comprende la quasi totalità delle piante alimentari — attraversa queste fasi:
+==Capire come cresce una pianta è fondamentale per capire perché alcune tecniche agronomiche funzionano.== Il ciclo di vita di una pianta da fiore (angiosperma) — la categoria che comprende la quasi totalità delle piante alimentari — attraversa queste fasi:
 
 1. **Germinazione.** Il seme, in presenza di acqua, calore e ossigeno sufficienti, si gonfia e la radichetta (radicola) rompe il tegumento del seme e si spinge nel suolo. I cotiledoni (foglie embrionali) forniscono la prima riserva energetica. La luce non è ancora necessaria in questa fase.
 
@@ -204,7 +204,7 @@ Capire come cresce una pianta è fondamentale per capire perché alcune tecniche
 
 ### Il cambiamento climatico e le colture: le sfide del prossimo decennio
 
-L'agricoltura è uno dei settori più esposti al cambiamento climatico. Le piante sono sensibili alla temperatura, alle precipitazioni e alla stagionalità: anche piccole variazioni nei pattern climatici possono spostare le zone di coltivazione, alterare i calendari di semina e raccolta, aumentare la frequenza di eventi estremi (siccità, alluvioni, gelate tardive).
+==L'agricoltura è uno dei settori più esposti al cambiamento climatico.== Le piante sono sensibili alla temperatura, alle precipitazioni e alla stagionalità: anche piccole variazioni nei pattern climatici possono spostare le zone di coltivazione, alterare i calendari di semina e raccolta, aumentare la frequenza di eventi estremi (siccità, alluvioni, gelate tardive).
 
 Alcune conseguenze già in atto o attese in Italia e nel Mediterraneo:
 - **Spostamento verso Nord delle zone viticole:** in Italia si coltiva già la vite in zone che 30 anni fa erano troppo fredde.

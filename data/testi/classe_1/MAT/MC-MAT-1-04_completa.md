@@ -32,13 +32,13 @@ La bottiglia che hai buttato ieri esiste ancora. I rifiuti non spariscono: si sp
 
 **Che cos'è un rifiuto**
 
-Per la legge un **rifiuto** è qualsiasi cosa di cui chi la possiede decide di disfarsi. Quelli di casa, scuola e negozi si chiamano **rifiuti urbani**, e li raccoglie il Comune.
+Per la legge un **rifiuto** è qualsiasi cosa di cui chi la possiede decide di disfarsi. ==Quelli di casa, scuola e negozi si chiamano **rifiuti urbani**, e li raccoglie il Comune.==
 
 Con la **raccolta differenziata** i materiali vengono separati per poterli riciclare. Quello che avanza è l'indifferenziato.
 
 Attenzione a due casi speciali, che non vanno mai nei bidoni normali:
 
-- i **RAEE**, cioè gli apparecchi elettrici ed elettronici: telefoni, computer, lampadine;
+- ==i **RAEE**, cioè gli apparecchi elettrici ed elettronici: telefoni, computer, lampadine;==
 - i **rifiuti pericolosi**: pile, farmaci scaduti, vernici, oli.
 
 > ✋ **Tocca a te.** Una pila scarica: in quale bidone va? Scrivi la risposta prima di continuare a leggere. Poi controlla qui sopra.
@@ -53,7 +53,7 @@ L'Unione Europea ha messo in ordine le cose da fare con i rifiuti, dalla miglior
 4. **Ricicla**: recupera il materiale per farne un oggetto nuovo.
 5. **Recupera**: se non si può riciclare, brucialo per ricavarne energia.
 
-Sotto tutte e cinque c'è la **discarica**: un deposito dove i rifiuti restano per decenni. È l'ultima scelta.
+==Sotto tutte e cinque c'è la **discarica**: un deposito dove i rifiuti restano per decenni.== È l'ultima scelta.
 
 Il riciclo, che sembra la soluzione, è solo al quarto posto.
 
@@ -95,7 +95,7 @@ Quella bottiglia che hai messo nel bidone giallo ieri sera è ancora da qualche 
 
 I rifiuti non si annullano. Si spostano. Cambiano forma. A volte diventano nuovi materiali. A volte diventano energia. A volte diventano inquinanti. Ma esistono ancora — in un bidone della spazzatura, in un camion, in un impianto di trattamento, in un campo di discarica, in un oceano.
 
-Gestire i rifiuti significa decidere cosa fare di questa materia che ha smesso di essere utile nella forma in cui si trovava. È una delle attività industriali più complesse, più costose e più politicamente difficili della società moderna. Nel 2023 in Italia sono stati prodotti circa 29,3 milioni di tonnellate di rifiuti urbani, secondo ISPRA: un ordine di grandezza di circa 490 kg per abitante. Anno e fonte sono importanti, perché il dato cambia nel tempo. Decidere cosa farne richiede infrastrutture enormi, tecnologie sofisticate, organizzazione logistica capillare, e — alla base di tutto — comportamenti corretti da parte di ogni singola persona che butta qualcosa in un bidone.
+==Gestire i rifiuti significa decidere cosa fare di questa materia che ha smesso di essere utile nella forma in cui si trovava.== È una delle attività industriali più complesse, più costose e più politicamente difficili della società moderna. Nel 2023 in Italia sono stati prodotti circa 29,3 milioni di tonnellate di rifiuti urbani, secondo ISPRA: un ordine di grandezza di circa 490 kg per abitante. Anno e fonte sono importanti, perché il dato cambia nel tempo. Decidere cosa farne richiede infrastrutture enormi, tecnologie sofisticate, organizzazione logistica capillare, e — alla base di tutto — comportamenti corretti da parte di ogni singola persona che butta qualcosa in un bidone.
 
 Quello che fai tu — in questo momento, in questa classe, quando usi i bidoni della differenziata — non è insignificante. È letteralmente una parte del sistema.
 
@@ -103,23 +103,23 @@ Quello che fai tu — in questo momento, in questa classe, quando usi i bidoni d
 
 ### Cos'è un rifiuto? La definizione legale
 
-In Italia, un **rifiuto** è definito dalla legge (D.Lgs. 152/2006 — il "Codice Ambientale") come *qualsiasi sostanza od oggetto di cui il detentore si disfi o abbia deciso di disfarsi.* Questa definizione è più sottile di quanto sembri: un oggetto diventa rifiuto nel momento in cui il suo possessore decide che non gli serve più. Fino a quel momento, è ancora un bene.
+In Italia, un **rifiuto** è definito dalla legge (D.Lgs. 152/2006 — il "Codice Ambientale") come *qualsiasi sostanza od oggetto di cui il detentore si disfi o abbia deciso di disfarsi.* Questa definizione è più sottile di quanto sembri: un oggetto diventa rifiuto nel momento in cui il suo possessore decide che non gli serve più. ==Fino a quel momento, è ancora un bene.==
 
-Questa distinzione ha implicazioni pratiche. Un vecchio televisore che non accendi più ma che non hai ancora buttato non è tecnicamente un rifiuto — è un bene non utilizzato. Appena lo porti a smaltire, diventa un rifiuto e viene sottoposto a regole precise. Questo spiega perché i sistemi di raccolta dei rifiuti possono essere complessi: la legge deve coprire oggetti molto diversi, con materiali molto diversi, e con impatti ambientali molto diversi.
+Questa distinzione ha implicazioni pratiche. Un vecchio televisore che non accendi più ma che non hai ancora buttato non è tecnicamente un rifiuto — è un bene non utilizzato. ==Appena lo porti a smaltire, diventa un rifiuto e viene sottoposto a regole precise.== Questo spiega perché i sistemi di raccolta dei rifiuti possono essere complessi: la legge deve coprire oggetti molto diversi, con materiali molto diversi, e con impatti ambientali molto diversi.
 
 ---
 
 ### Le categorie dei rifiuti
 
-Non tutti i rifiuti sono uguali. La prima grande distinzione è tra **rifiuti urbani** e **rifiuti speciali**.
+Non tutti i rifiuti sono uguali. ==La prima grande distinzione è tra **rifiuti urbani** e **rifiuti speciali**.==
 
 #### Rifiuti urbani
 
 Sono quelli che provengono da abitazioni domestiche e da attività che producono rifiuti simili a quelli domestici (uffici, scuole, negozi). Sono quelli di cui si occupa il tuo Comune con il servizio di raccolta. Si dividono in:
 
-**Rifiuti differenziati:** quelli raccolti separatamente per materiale — carta/cartone, plastica/metalli, vetro, organico (umido), tessuti. La raccolta differenziata permette di inviarli a impianti di riciclo specifici.
+**Rifiuti differenziati:** quelli raccolti separatamente per materiale — carta/cartone, plastica/metalli, vetro, organico (umido), tessuti. ==La raccolta differenziata permette di inviarli a impianti di riciclo specifici.==
 
-**Rifiuto indifferenziato** (o residuo secco): ciò che rimane dopo aver fatto la differenziata corretta. Idealmente dovrebbe contenere solo materiali non riciclabili o non compostabili. In Italia, la percentuale di raccolta differenziata è in media del 65% (dato 2023), ma varia molto: il Trentino-Alto Adige raggiunge l'80%, alcune zone della Sicilia e Campania restano sotto il 40%.
+==**Rifiuto indifferenziato** (o residuo secco): ciò che rimane dopo aver fatto la differenziata corretta.== Idealmente dovrebbe contenere solo materiali non riciclabili o non compostabili. In Italia, la percentuale di raccolta differenziata è in media del 65% (dato 2023), ma varia molto: il Trentino-Alto Adige raggiunge l'80%, alcune zone della Sicilia e Campania restano sotto il 40%.
 
 **Ingombranti e RAEE:** oggetti troppo grandi per i bidoni normali (mobili, materassi, elettrodomestici) e Rifiuti da Apparecchiature Elettriche ed Elettroniche (RAEE — televisori, computer, telefoni, lavatrici). Richiedono una raccolta separata perché contengono materiali preziosi (metalli rari, rame) e sostanze pericolose (mercurio, cadmio, piombo).
 
@@ -127,7 +127,7 @@ Sono quelli che provengono da abitazioni domestiche e da attività che producono
 
 Sono quelli prodotti da attività produttive, industriali, artigianali, agricole, sanitarie. Non si conferiscono nei bidoni domestici. Includono:
 
-**Rifiuti pericolosi:** quelli che contengono sostanze nocive per la salute o per l'ambiente. Batterie al piombo, solventi, vernici, medicinali scaduti, olio minerale esausto, amianto, reagenti chimici di laboratorio. Richiedono smaltimento specializzato — spesso in impianti dedicati — e documentazione di tracciabilità.
+==**Rifiuti pericolosi:** quelli che contengono sostanze nocive per la salute o per l'ambiente.== Batterie al piombo, solventi, vernici, medicinali scaduti, olio minerale esausto, amianto, reagenti chimici di laboratorio. Richiedono smaltimento specializzato — spesso in impianti dedicati — e documentazione di tracciabilità.
 
 **Rifiuti non pericolosi:** rifiuti industriali e commerciali che non contengono sostanze pericolose. Carta industriale, imballaggi in grande quantità, scarti di lavorazione metallica puliti.
 
@@ -137,11 +137,11 @@ Sono quelli prodotti da attività produttive, industriali, artigianali, agricole
 
 ### La gerarchia dei rifiuti: le 5 R
 
-L'Unione Europea ha stabilito una **gerarchia** nella gestione dei rifiuti: un ordine di preferenza che indica quali strategie sono migliori per l'ambiente. Dall'opzione migliore a quella peggiore:
+==L'Unione Europea ha stabilito una **gerarchia** nella gestione dei rifiuti: un ordine di preferenza che indica quali strategie sono migliori per l'ambiente.== Dall'opzione migliore a quella peggiore:
 
 **Rifiuta** → **Riduci** → **Riusa** → **Ricicla** → **Recupera**
 
-Questo ordine si chiama a volte "le 5 R", ed è importante capire perché è nell'ordine che è — e non nell'ordine inverso.
+==Questo ordine si chiama a volte "le 5 R", ed è importante capire perché è nell'ordine che è — e non nell'ordine inverso.==
 
 ---
 
@@ -149,7 +149,7 @@ Questo ordine si chiama a volte "le 5 R", ed è importante capire perché è nel
 
 Non produrre il rifiuto in primo luogo. Se non compri un oggetto usa-e-getta, non devi smaltirlo. Se porti la borsa da casa al supermercato, non produci una busta di plastica. Se compri cibo sfuso invece che confezionato, non generi imballaggio.
 
-Il rifiuto è la strategia più efficace perché interviene prima che il rifiuto esista. Non richiede infrastrutture industriali complesse — richiede solo una scelta al momento dell'acquisto.
+==Il rifiuto è la strategia più efficace perché interviene prima che il rifiuto esista.== Non richiede infrastrutture industriali complesse — richiede solo una scelta al momento dell'acquisto.
 
 **Esempio concreto:** in Italia vengono consumate circa 5 miliardi di bottiglie di plastica per l'acqua all'anno. Se ogni famiglia installasse un filtro a casa o usasse caraffe filtranti, la maggior parte di quelle bottiglie non verrebbe mai prodotta — e quindi non dovrebbe mai essere raccolta, trasportata, trattata, riciclata o smaltita. Rifiutare il rifiuto è sempre meglio di riciclarlo.
 
@@ -157,7 +157,7 @@ Il rifiuto è la strategia più efficace perché interviene prima che il rifiuto
 
 #### Riduci
 
-Quando non puoi evitare di produrre un rifiuto, riduci la sua quantità. Compra confezioni più grandi invece di molte piccole. Scegli prodotti concentrati. Preferisci il ricaricabile al usa-e-getta.
+==Quando non puoi evitare di produrre un rifiuto, riduci la sua quantità.== Compra confezioni più grandi invece di molte piccole. Scegli prodotti concentrati. Preferisci il ricaricabile al usa-e-getta.
 
 I **sistemi di deposito cauzionale** (attivi da anni in Germania, Svezia e Finlandia; in Italia una legge nazionale è in discussione in Parlamento) sono un meccanismo che incentiva la riduzione dei rifiuti: paghi un deposito quando compri una bottiglia, e lo recuperi quando la riporti. In Germania, il tasso di ritorno delle bottiglie è superiore al 98%.
 
@@ -165,7 +165,7 @@ I **sistemi di deposito cauzionale** (attivi da anni in Germania, Svezia e Finla
 
 #### Riusa
 
-Prima di buttare, chiediti: può servire ancora? A te o a qualcun altro? Il riuso mantiene l'oggetto nella sua forma originale, conservando tutto il valore del materiale e del lavoro già investiti nella sua produzione.
+==Prima di buttare, chiediti: può servire ancora?== A te o a qualcun altro? Il riuso mantiene l'oggetto nella sua forma originale, conservando tutto il valore del materiale e del lavoro già investiti nella sua produzione.
 
 I **mercatini del riuso**, le piattaforme di second-hand (Vinted, eBay, Subito), le biblioteche degli oggetti (dove puoi prendere in prestito attrezzi, libri, giochi invece di comprarli) sono tutte infrastrutture di riuso. L'industria del vintage è cresciuta del 20% annuo negli ultimi cinque anni — segnale che il riuso sta diventando culturalmente accettabile, non solo economicamente conveniente.
 
@@ -175,7 +175,7 @@ I **mercatini del riuso**, le piattaforme di second-hand (Vinted, eBay, Subito),
 
 #### Ricicla
 
-Quando l'oggetto non può più essere riusato, si possono recuperare i materiali di cui è fatto per farne altri oggetti. Questo è il riciclo. Non è la prima scelta — viene dopo rifiutare, ridurre e riusare — ma è fondamentale per chiudere il ciclo dei materiali e ridurre il consumo di materie prime vergini.
+==Quando l'oggetto non può più essere riusato, si possono recuperare i materiali di cui è fatto per farne altri oggetti.== Questo è il riciclo. ==Non è la prima scelta — viene dopo rifiutare, ridurre e riusare — ma è fondamentale per chiudere il ciclo dei materiali e ridurre il consumo di materie prime vergini.==
 
 Il riciclo richiede:
 - Raccolta differenziata corretta (materiali separati correttamente)
@@ -193,9 +193,9 @@ La carta è uno dei materiali più riciclati al mondo. In Italia, il tasso di ri
 
 Il processo: la carta raccolta viene portata al cartificio. Lì viene immersa in acqua (il **pulper** — una vasca con pale rotanti) e ridotta in una **sospensione di fibre di cellulosa** (detta **pasta di carta**). Questa pasta viene filtrata per rimuovere impurità (graffette, plastica, nastri adesivi) e poi de-inkizzata con processi chimici che rimuovono gli inchiostri. La pasta purificata viene stesa su un nastro, asciugata, arrotolata.
 
-Il limite: ogni ciclo di riciclo **accorcia le fibre di cellulosa**. Le fibre più corte producono carta meno resistente. Dopo 5-7 cicli, le fibre sono troppo corte per produrre carta commerciale. A quel punto si usa il residuo per materiali da costruzione (cartongesso) o si perde.
+==Il limite: ogni ciclo di riciclo **accorcia le fibre di cellulosa**.== Le fibre più corte producono carta meno resistente. Dopo 5-7 cicli, le fibre sono troppo corte per produrre carta commerciale. A quel punto si usa il residuo per materiali da costruzione (cartongesso) o si perde.
 
-Per questo il tasso di riciclo della carta non può essere 100%: il sistema ha bisogno di un afflusso costante di fibre vergini (da legno certificato) per mantenere la qualità.
+==Per questo il tasso di riciclo della carta non può essere 100%: il sistema ha bisogno di un afflusso costante di fibre vergini (da legno certificato) per mantenere la qualità.==
 
 > 💡 **Lo sapevi?** Riciclare una tonnellata di carta risparmia circa 17 alberi, 26.000 litri di acqua e il 70% dell'energia rispetto alla produzione da fibra vergine. In Italia, ogni anno la raccolta di carta e cartone evita la necessità di abbattere circa 10 milioni di alberi equivalenti.
 
@@ -203,11 +203,11 @@ Per questo il tasso di riciclo della carta non può essere 100%: il sistema ha b
 
 #### Come funziona il riciclo del vetro
 
-Il vetro è il materiale con la filiera di riciclo più efficiente. In Italia, il tasso di riciclo del vetro è di circa l'82% (2023) — uno dei più alti in Europa.
+==Il vetro è il materiale con la filiera di riciclo più efficiente.== In Italia, il tasso di riciclo del vetro è di circa l'82% (2023) — uno dei più alti in Europa.
 
 Il processo: il vetro raccolto viene portato alla vetreria. Lì viene selezionato per colore (trasparente, verde, marrone — i colori non devono essere mescolati perché cambiano le proprietà ottiche del vetro prodotto), frantumato in piccoli pezzi (**cullet** — dal francese "cul de bouteille", fondo di bottiglia), fuso a circa 1500°C mescolato con soda e calce, e soffiato o pressato in nuovi contenitori.
 
-Il vantaggio straordinario del vetro: si ricicla **all'infinito senza perdita di qualità**. Una bottiglia riciclata ha esattamente le stesse proprietà di una bottiglia prodotta da materie prime vergini. Non c'è degradazione ciclica come nella carta.
+==Il vantaggio straordinario del vetro: si ricicla **all'infinito senza perdita di qualità**.== Una bottiglia riciclata ha esattamente le stesse proprietà di una bottiglia prodotta da materie prime vergini. Non c'è degradazione ciclica come nella carta.
 
 Il limite: il vetro è pesante — questo aumenta i costi di trasporto. E richiede selezione per colore — se un contenitore verde finisce nella partita del trasparente, rende tutto il lotto verde e meno prezioso commercialmente.
 
@@ -229,7 +229,7 @@ I metalli hanno alcune delle filiere di riciclo più efficienti. L'acciaio e l'a
 
 #### Come funziona il riciclo della plastica
 
-La plastica è il materiale con la filiera di riciclo più problematica. Per capire perché, bisogna ricordare che non esiste "la plastica" — esistono decine di tipi di plastica con composizioni chimiche diverse, incompatibili tra loro.
+==La plastica è il materiale con la filiera di riciclo più problematica.== Per capire perché, bisogna ricordare che non esiste "la plastica" — esistono decine di tipi di plastica con composizioni chimiche diverse, incompatibili tra loro.
 
 Il processo standard: la plastica raccolta viene trasportata agli impianti di selezione dove macchinari ottici (telecamere infrarosse) riconoscono il tipo di polimero analizzando come riflette la luce. Le balle di plastica selezionata vengono vendute a impianti di riciclo che le sminuzzano in scaglie (**flakes**), le lavano, le fondono in granuli, e quei granuli vengono venduti a produttori che li usano per fare nuovi oggetti.
 
@@ -237,7 +237,7 @@ Il ciclo funziona, ma con molti limiti:
 
 **Contaminazione:** se nel sacchetto della plastica ci finisce del cibo, del vetro, o un tipo di plastica sbagliato, la qualità del lotto diminuisce. Un solo contenitore di olio non svuotato può contaminare una partita di plastica che altrimenti sarebbe riciclabile.
 
-**Degradazione della qualità:** a differenza dell'acciaio o del vetro, la plastica si degrada chimicamente a ogni ciclo di fusione. Dopo 2-3 cicli, le proprietà meccaniche peggiorano significativamente. Per questo la plastica riciclata spesso viene "downcycled" — usata per applicazioni meno esigenti (panchine, tubi per drenaggio, asfalto) invece che per gli stessi prodotti originali.
+==**Degradazione della qualità:** a differenza dell'acciaio o del vetro, la plastica si degrada chimicamente a ogni ciclo di fusione.== Dopo 2-3 cicli, le proprietà meccaniche peggiorano significativamente. ==Per questo la plastica riciclata spesso viene "downcycled" — usata per applicazioni meno esigenti (panchine, tubi per drenaggio, asfalto) invece che per gli stessi prodotti originali.==
 
 **Plastica nera:** i contenitori in plastica nera (vassoi del supermercato, coperchi, posate usa-e-getta nere) contengono coloranti carboniosi che assorbono la luce infrarossa usata dai sensori di selezione automatica — le telecamere non le "vedono" e le scartano nell'indifferenziato. La stragrande maggioranza della plastica nera non viene riciclata.
 
@@ -253,7 +253,7 @@ Il ciclo funziona, ma con molti limiti:
 
 La frazione organica — scarti di cucina, peli, cascami vegetali — è la più abbondante nei rifiuti urbani: rappresenta circa il 36% in peso del rifiuto urbano italiano. Ed è quella con la filiera di riciclo più naturale: il **compostaggio**.
 
-Il compostaggio è la decomposizione aerobica (con ossigeno) della materia organica da parte di batteri, funghi e invertebrati. Il processo produce calore (le pile di compost raggiungono i 55-70°C) e, nel tempo, humus: un materiale ricco di nutrienti usato come fertilizzante del suolo.
+==Il compostaggio è la decomposizione aerobica (con ossigeno) della materia organica da parte di batteri, funghi e invertebrati.== Il processo produce calore (le pile di compost raggiungono i 55-70°C) e, nel tempo, humus: un materiale ricco di nutrienti usato come fertilizzante del suolo.
 
 In Italia, il compostaggio industriale (svolto in grandi impianti con temperature controllate e tempi rapidi di 4-8 settimane) tratta la maggior parte dell'organico raccolto. Il compostaggio domestico (con compostiere in giardino) è praticabile per chi ha spazio verde.
 
@@ -263,13 +263,13 @@ Il **digestione anaerobica** (senza ossigeno) è un processo alternativo che pro
 
 #### Recupero energetico: la termovalorizzazione
 
-Quando non si riesce a riciclare un materiale (per composizione, contaminazione, o mancanza di mercato), il recupero energetico è preferibile alla discarica. La **termovalorizzazione** (o incenerimento con recupero energetico) brucia i rifiuti in fornaci ad alta temperatura (850-1000°C) e usa il calore generato per produrre vapore che aziona turbine elettriche.
+Quando non si riesce a riciclare un materiale (per composizione, contaminazione, o mancanza di mercato), il recupero energetico è preferibile alla discarica. ==La **termovalorizzazione** (o incenerimento con recupero energetico) brucia i rifiuti in fornaci ad alta temperatura (850-1000°C) e usa il calore generato per produrre vapore che aziona turbine elettriche.==
 
 Un termovalorizzatore moderno produce energia elettrica e calore per teleriscaldamento, riduce il volume dei rifiuti del 90%, e ha sistemi di filtraggio avanzati (filtri a manica, elettrofiltri, sistemi SCR) che trattano i gas di scarico prima che escano dal camino.
 
 I termovalorizzatori italiani più efficienti (come quelli di Milano, Brescia, Bologna) hanno fattori di recupero energetico superiori al 70% — cioè trasformano in energia più del 70% del contenuto energetico dei rifiuti bruciati.
 
-I limiti: i materiali vengono distrutti — non possono più essere riciclati. Alcune sostanze tossiche nei gas di scarico (diossine, furani) richiedono filtraggi costosi. Le ceneri residue contengono metalli pesanti e devono essere smaltite in discariche speciali.
+==I limiti: i materiali vengono distrutti — non possono più essere riciclati.== Alcune sostanze tossiche nei gas di scarico (diossine, furani) richiedono filtraggi costosi. Le ceneri residue contengono metalli pesanti e devono essere smaltite in discariche speciali.
 
 **L'Italia ha un dibattito aperto** sull'opportunità di costruire nuovi termovalorizzatori nelle regioni del Sud dove mancano. Da un lato, sarebbero necessari per trattare i rifiuti che non riescono ad essere riciclati. Dall'altro, alcuni sostengono che potrebbero disincentivare gli investimenti in infrastrutture di riciclo più efficienti.
 
@@ -277,9 +277,9 @@ I limiti: i materiali vengono distrutti — non possono più essere riciclati. A
 
 ### La discarica: non è la fine, è un parcheggio lungo
 
-La **discarica** è la soluzione di ultima istanza nella gerarchia — la meno preferibile, usata quando non c'è altro da fare. In Italia, le discariche moderne (chiamate discariche di II o III categoria) sono costruite con sistemi di impermeabilizzazione (telo di HDPE sul fondo e sui lati) per evitare che i liquidi tossici (il **percolato**) si infiltrino nel suolo e nelle falde.
+==La **discarica** è la soluzione di ultima istanza nella gerarchia — la meno preferibile, usata quando non c'è altro da fare.== In Italia, le discariche moderne (chiamate discariche di II o III categoria) sono costruite con sistemi di impermeabilizzazione (telo di HDPE sul fondo e sui lati) per evitare che i liquidi tossici (il **percolato**) si infiltrino nel suolo e nelle falde.
 
-Ma la discarica non è la fine di un materiale: è un deposito. La materia organica in discarica produce **biogas** (principalmente metano) per anni — un gas clima-alterante 80 volte più potente della CO₂ nel breve termine. Alcuni impianti lo recuperano per produrre energia. Molte discariche vecchie non lo fanno.
+==Ma la discarica non è la fine di un materiale: è un deposito.== La materia organica in discarica produce **biogas** (principalmente metano) per anni — un gas clima-alterante 80 volte più potente della CO₂ nel breve termine. Alcuni impianti lo recuperano per produrre energia. Molte discariche vecchie non lo fanno.
 
 Il **cappellotto** — lo strato di terra che copre la discarica dopo la chiusura — non la rende inerte: il processo di degradazione continua per decenni. I materiali plastici rimangono praticamente invariati per secoli.
 

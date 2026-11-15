@@ -24,7 +24,7 @@ Gli stessi principi che stai per imparare — formalizzati da Leon Battista Albe
 
 ### 🎯 In breve
 
-Un binario che si allontana sembra stringersi fino a chiudersi in un punto. Non è vero, ma è così che lo vedi. Il disegno che riproduce il modo in cui l'occhio vede si chiama **prospettiva**. È lo strumento con cui chi progetta fa immaginare agli altri quello che ancora non esiste.
+Un binario che si allontana sembra stringersi fino a chiudersi in un punto. Non è vero, ma è così che lo vedi. ==Il disegno che riproduce il modo in cui l'occhio vede si chiama **prospettiva**.== È lo strumento con cui chi progetta fa immaginare agli altri quello che ancora non esiste.
 
 **Che cosa cambia rispetto all'assonometria**
 
@@ -32,8 +32,8 @@ Nell'assonometria le linee parallele restano parallele e le misure si possono le
 
 Due elementi comandano tutto:
 
-- la **linea d'orizzonte**, una linea orizzontale all'altezza degli occhi di chi guarda;
-- il **punto di fuga**, il punto sull'orizzonte verso cui corrono le linee che si allontanano.
+- ==la **linea d'orizzonte**, una linea orizzontale all'altezza degli occhi di chi guarda;==
+- ==il **punto di fuga**, il punto sull'orizzonte verso cui corrono le linee che si allontanano.==
 
 > ✋ **Tocca a te.** Guarda il corridoio della scuola dalla porta dell'aula, oppure una foto di una strada dritta. Dove sembrano incontrarsi le linee del pavimento e del soffitto? Segna quel punto con il dito: hai trovato il punto di fuga. A che altezza si trova rispetto ai tuoi occhi?
 
@@ -57,7 +57,7 @@ Per costruire servono misure esatte: proiezioni ortogonali. Per spiegare come è
 
 **Dal problema all'oggetto**
 
-Il **design** è il lavoro di decidere forma, materiali e uso di un oggetto prima che venga prodotto. Non parte da un'ispirazione: parte da un problema, e procede per tappe.
+==Il **design** è il lavoro di decidere forma, materiali e uso di un oggetto prima che venga prodotto.== Non parte da un'ispirazione: parte da un problema, e procede per tappe.
 
 1. Capire: chi userà l'oggetto, dove, per fare che cosa.
 2. Tante idee, in schizzi veloci. Conta la quantità.
@@ -66,11 +66,11 @@ Il **design** è il lavoro di decidere forma, materiali e uso di un oggetto prim
 5. Farlo provare a chi lo userà davvero, e guardare che cosa succede.
 6. Correggere e riprovare.
 
-Si torna indietro spesso: è normale. Questo modo di lavorare, che parte dalle persone e procede per tentativi, si chiama design thinking.
+Si torna indietro spesso: è normale. ==Questo modo di lavorare, che parte dalle persone e procede per tentativi, si chiama design thinking.==
 
 **La forma che segue il corpo**
 
-L'**ergonomia** studia come adattare gli oggetti al corpo e alla mente di chi li usa. Il manico di un coltello che sta bene in mano, un gradino dell'altezza giusta, un pulsante che si trova senza guardare. La regola è una: l'oggetto si adatta alla persona, e non il contrario.
+L'**ergonomia** studia come adattare gli oggetti al corpo e alla mente di chi li usa. Il manico di un coltello che sta bene in mano, un gradino dell'altezza giusta, un pulsante che si trova senza guardare. ==La regola è una: l'oggetto si adatta alla persona, e non il contrario.==
 
 **Forma e funzione**
 
@@ -92,7 +92,7 @@ In un buon progetto ogni scelta di forma ha una ragione. Il primo smartphone con
 
 ### Dal segno al volume: la sfida della rappresentazione tridimensionale
 
-Il problema è antico quanto il disegno stesso: come rappresentare su una superficie piatta — un foglio, uno schermo — qualcosa che esiste in tre dimensioni? Non esiste una soluzione unica. Esistono sistemi diversi, ognuno con una logica precisa e con vantaggi specifici per scopi diversi. In questa MC li studierai tutti — e imparerai a scegliere il sistema giusto per ogni situazione.
+==Il problema è antico quanto il disegno stesso: come rappresentare su una superficie piatta — un foglio, uno schermo — qualcosa che esiste in tre dimensioni?== Non esiste una soluzione unica. Esistono sistemi diversi, ognuno con una logica precisa e con vantaggi specifici per scopi diversi. In questa MC li studierai tutti — e imparerai a scegliere il sistema giusto per ogni situazione.
 
 ---
 
@@ -100,7 +100,7 @@ Il problema è antico quanto il disegno stesso: come rappresentare su una superf
 
 Il disegno tecnico nasce per comunicare oggetti con precisione: un artigiano deve poter costruire esattamente quello che un progettista ha disegnato. Per secoli, l'unico strumento era la matita su carta. Poi, nel ventesimo secolo, la necessità di comunicare non solo le misure ma anche l'aspetto visivo di un oggetto ha generato una nuova disciplina: il **design industriale**.
 
-Il design industriale nasce formalmente all'inizio del Novecento — la data che quasi tutti gli storici indicano come spartiacque è il 1919, quando Walter Gropius fondò la scuola Bauhaus a Weimar, in Germania. La rivoluzione del Bauhaus fu semplice e radicale: **arte e tecnica non sono opposti**. Un oggetto bello e un oggetto funzionale non sono due cose diverse. Il design è la disciplina che le unifica.
+Il design industriale nasce formalmente all'inizio del Novecento — la data che quasi tutti gli storici indicano come spartiacque è il 1919, quando Walter Gropius fondò la scuola Bauhaus a Weimar, in Germania. ==La rivoluzione del Bauhaus fu semplice e radicale: **arte e tecnica non sono opposti**.== Un oggetto bello e un oggetto funzionale non sono due cose diverse. ==Il design è la disciplina che le unifica.==
 
 Dal Bauhaus in poi, il design industriale si è sviluppato come professione autonoma. Oggi il designer di prodotto non costruisce oggetti: progetta la forma, le proporzioni, i materiali, l'ergonomia e l'identità visiva di oggetti che poi vengono prodotti in serie. Per fare questo usa tutti gli strumenti del disegno tecnico — e molti altri.
 
@@ -108,14 +108,14 @@ Dal Bauhaus in poi, il design industriale si è sviluppato come professione auto
 
 ### La terza assonometria: la monometrica
 
-In seconda hai usato due assonometrie: la **cavaliera**, che lascia intatta la faccia di fronte, e l'**isometrica**, che tratta le tre facce allo stesso modo. Ce n'è una terza, l'**assonometria monometrica**, che lascia intatta la base.
+In seconda hai usato due assonometrie: la **cavaliera**, che lascia intatta la faccia di fronte, e l'**isometrica**, che tratta le tre facce allo stesso modo. ==Ce n'è una terza, l'**assonometria monometrica**, che lascia intatta la base.==
 
 **Gli assi:**
 - Asse x (larghezza): sale di 30° verso destra rispetto alla linea orizzontale.
 - Asse y (profondità): sale di 60° verso sinistra.
 - Asse z (altezza): verticale.
 
-Tra l'asse x e l'asse y c'è un angolo retto, perché 180° − 30° − 60° = 90°. Per questo la base dell'oggetto si disegna con la sua vera forma: è la pianta delle proiezioni ortogonali, soltanto girata di 30°.
+Tra l'asse x e l'asse y c'è un angolo retto, perché 180° − 30° − 60° = 90°. ==Per questo la base dell'oggetto si disegna con la sua vera forma: è la pianta delle proiezioni ortogonali, soltanto girata di 30°.==
 
 **Il fattore di riduzione:** non c'è. Le misure si riportano per intero su tutti e tre gli assi: «monometrica» vuol dire che la misura è una sola. Su questo è uguale all'isometrica: le due si distinguono per gli angoli degli assi.
 
@@ -135,9 +135,9 @@ Alcuni libri usano anche la **monometrica a 45°**, con gli assi x e y inclinati
 
 ### Prospettiva centrale e prospettiva accidentale
 
-La **prospettiva** è il sistema di rappresentazione che riproduce come gli oggetti appaiono all'occhio umano: gli oggetti lontani sembrano più piccoli, le rette parallele sembrano convergere verso un punto. È la rappresentazione più "naturale" — ma non è fedele alle misure reali.
+==La **prospettiva** è il sistema di rappresentazione che riproduce come gli oggetti appaiono all'occhio umano: gli oggetti lontani sembrano più piccoli, le rette parallele sembrano convergere verso un punto.== ==È la rappresentazione più "naturale" — ma non è fedele alle misure reali.==
 
-La differenza fondamentale rispetto all'assonometria è questa: nell'assonometria, le misure reali vengono conservate (o ridotte con un fattore costante). Nella prospettiva, le misure vengono deformate intenzionalmente per simulare la percezione visiva. Per questo l'assonometria è lo strumento del tecnico, la prospettiva è lo strumento del designer e dell'architetto che vuole comunicare l'aspetto di un'idea.
+==La differenza fondamentale rispetto all'assonometria è questa: nell'assonometria, le misure reali vengono conservate (o ridotte con un fattore costante).== Nella prospettiva, le misure vengono deformate intenzionalmente per simulare la percezione visiva. ==Per questo l'assonometria è lo strumento del tecnico, la prospettiva è lo strumento del designer e dell'architetto che vuole comunicare l'aspetto di un'idea.==
 
 **Prospettiva centrale (a un punto di fuga):** tutte le rette parallele alla direzione di vista convergono verso un unico punto — il **punto di fuga** — posizionato sulla **linea d'orizzonte**. Le rette parallele al piano del quadro (la superficie su cui disegni) rimangono orizzontali o verticali. Questo sistema è adatto a rappresentare interni di stanze, corridoi, spazi urbani visti frontalmente.
 
@@ -172,7 +172,7 @@ Come si costruisce:
 | Difficoltà di costruzione | Media | Media-alta |
 | Modifiche delle misure | Immediato | Richiede ridisegno |
 
-**Regola pratica:** se devi comunicare misure esatte a chi deve costruire qualcosa, usa l'assonometria (o meglio ancora le proiezioni ortogonali). Se devi comunicare l'aspetto di un oggetto a chi deve decidere se comprarlo o approvarlo, usa la prospettiva.
+==**Regola pratica:** se devi comunicare misure esatte a chi deve costruire qualcosa, usa l'assonometria (o meglio ancora le proiezioni ortogonali).== ==Se devi comunicare l'aspetto di un oggetto a chi deve decidere se comprarlo o approvarlo, usa la prospettiva.==
 
 ---
 
@@ -190,13 +190,13 @@ Il designer non parte da un foglio bianco. Parte da un **brief** — un document
 
 **Render → Prototipo:** un prototipo fisico (in cartone, stampa 3D, legno, argilla) permette di testare l'oggetto nella realtà — toccarlo, usarlo, misurarlo. Il prototipo rivela problemi che nessun disegno avrebbe mostrato: una superficie che scivola di mano, un bordo che fa male, una dimensione sbagliata.
 
-**Prototipo → Test → Iterazione:** il prototipo viene testato con gli utenti reali. I risultati guidano le modifiche. Spesso si torna al concept e si ricomincia. Questo ciclo — prototipo → test → modifica — si chiama **iterazione** ed è la parte più importante del design.
+**Prototipo → Test → Iterazione:** il prototipo viene testato con gli utenti reali. I risultati guidano le modifiche. Spesso si torna al concept e si ricomincia. ==Questo ciclo — prototipo → test → modifica — si chiama **iterazione** ed è la parte più importante del design.==
 
 ---
 
 ### Design thinking: il metodo in cinque mosse
 
-Il **design thinking** è un metodo per risolvere problemi complessi centrandosi sull'utente. Fu formalizzato alla Stanford d.school negli anni 2000 e oggi viene usato in aziende, scuole e governi di tutto il mondo. Ha cinque fasi:
+==Il **design thinking** è un metodo per risolvere problemi complessi centrandosi sull'utente.== Fu formalizzato alla Stanford d.school negli anni 2000 e oggi viene usato in aziende, scuole e governi di tutto il mondo. Ha cinque fasi:
 
 **1. Empatia:** capisci chi ha il problema prima di tentare di risolverlo. Osserva, ascolta, mettiti nei panni dell'utente. Il modo più comune per sbagliare è progettare qualcosa che tu trovi utile senza verificare se lo trovano utile anche gli altri.
 
@@ -214,7 +214,7 @@ Il design thinking non è lineare: si torna indietro, si riscoprono problemi, si
 
 ### Ergonomia: quando la forma segue il corpo
 
-L'**ergonomia** è la disciplina che studia come adattare oggetti, strumenti e ambienti alle caratteristiche fisiche e cognitive degli esseri umani. Un oggetto ergonomico funziona meglio perché è stato progettato sulle misure e sui movimenti reali del corpo umano.
+==L'**ergonomia** è la disciplina che studia come adattare oggetti, strumenti e ambienti alle caratteristiche fisiche e cognitive degli esseri umani.== Un oggetto ergonomico funziona meglio perché è stato progettato sulle misure e sui movimenti reali del corpo umano.
 
 L'ergonomia nasce come disciplina sistematica durante la Seconda guerra mondiale, quando i progettisti di aerei e armamenti si resero conto che molti incidenti erano causati da errori di interfaccia — cockpit mal progettati, pulsanti confondibili, strumenti illeggibili sotto stress. Dopo la guerra, queste competenze passarono al design di prodotti civili.
 
@@ -224,13 +224,13 @@ Esempi di design ergonomico che usi ogni giorno:
 - Le scale antincendio hanno alzate di 16-18 cm (l'altezza ottimale per un adulto medio) e pedate di 28-30 cm.
 - I gradini delle scale dell'autobus pubblico di solito sono troppo alti per molti utenti anziani: è un problema di ergonomia non risolto.
 
-Il principio fondamentale dell'ergonomia si chiama **design centrato sull'utente (UCD, User Centered Design)**: l'oggetto si adatta alle persone, non le persone all'oggetto.
+==Il principio fondamentale dell'ergonomia si chiama **design centrato sull'utente (UCD, User Centered Design)**: l'oggetto si adatta alle persone, non le persone all'oggetto.==
 
 ---
 
 ### I grandi designer italiani: tre storie, tre lezioni
 
-**Enzo Ferrari (1898-1988):** non era un designer. Era il fondatore: non disegnava le auto, sceglieva e guidava chi le disegnava. Con lui l'identità del marchio è nata dalle prestazioni e insieme dalla forma. La carrozzeria della Ferrari 250 GTO (1962), sviluppata da Giotto Bizzarrini e Sergio Scaglietti e considerata da molti una delle più belle automobili mai costruite, non è decorativa: ogni linea serve all'aerodinamica. Il caso Ferrari mostra che forma e funzione, quando si incontrano, producono oggetti che durano nel tempo come opere culturali, oltre che come macchine.
+**Enzo Ferrari (1898-1988):** non era un designer. Era il fondatore: non disegnava le auto, sceglieva e guidava chi le disegnava. Con lui l'identità del marchio è nata dalle prestazioni e insieme dalla forma. ==La carrozzeria della Ferrari 250 GTO (1962), sviluppata da Giotto Bizzarrini e Sergio Scaglietti e considerata da molti una delle più belle automobili mai costruite, non è decorativa: ogni linea serve all'aerodinamica.== Il caso Ferrari mostra che forma e funzione, quando si incontrano, producono oggetti che durano nel tempo come opere culturali, oltre che come macchine.
 
 **Giorgetto Giugiaro (1938-):** designer di automobili e prodotti industriali, ha progettato tra gli altri la Volkswagen Golf (1974), la Fiat Panda (1980) e la pasta Marille per Voiello (1983) — l'unico designer al mondo che ha disegnato sia automobili che pasta. La lezione di Giugiaro è che il design risolve problemi pratici attraverso la forma: la Fiat Panda fu progettata per essere la macchina più economica da costruire e da riparare, con pannelli piatti invece di curve costose, interni modificabili, componenti standard. L'estetica era una conseguenza dell'efficienza.
 
@@ -254,7 +254,7 @@ Quando Steve Jobs presentò il primo iPhone il 9 gennaio 2007, la maggior parte 
 
 **Il bordo in alluminio:** la scocca in alluminio lucido anodizzato era più costosa della plastica, ma aveva tre vantaggi funzionali: dissipava meglio il calore generato dal processore, era più resistente agli urti laterali, e fungeva da antenna (il bordo metallico era parte del sistema di ricezione).
 
-**Zero pulsanti fisici, salvo tre:** il volume, il silenzioso e il tasto home. Ogni pulsante fisico è un punto di fragilità meccanica e un limite alla modifica del software. Eliminando quasi tutti i pulsanti, Apple poteva cambiare l'interfaccia utente con un aggiornamento del software, senza toccare l'hardware.
+**Zero pulsanti fisici, salvo tre:** il volume, il silenzioso e il tasto home. ==Ogni pulsante fisico è un punto di fragilità meccanica e un limite alla modifica del software.== Eliminando quasi tutti i pulsanti, Apple poteva cambiare l'interfaccia utente con un aggiornamento del software, senza toccare l'hardware.
 
 **Le proporzioni 3:2 del display:** il rapporto tra larghezza e altezza dello schermo era calcolato per essere comfortabile da tenere in una mano con il pollice che raggiunge tutti gli angoli. Era ergonomia integrata nella geometria.
 

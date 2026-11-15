@@ -26,15 +26,15 @@ Prendi una tazza. Guardata di fronte è un rettangolo con il manico. Guardata da
 
 **Guardare dritto**
 
-La risposta è la **proiezione ortogonale**. Immagina di guardare l'oggetto perfettamente di fronte, da molto lontano, e di ricalcarne il contorno su un vetro. "Ortogonale" vuol dire perpendicolare: lo sguardo arriva dritto, ad angolo retto.
+==La risposta è la **proiezione ortogonale**.== Immagina di guardare l'oggetto perfettamente di fronte, da molto lontano, e di ricalcarne il contorno su un vetro. =="Ortogonale" vuol dire perpendicolare: lo sguardo arriva dritto, ad angolo retto.==
 
-In questo modo non c'è nessuna deformazione. Quello che è lungo 5 cm sull'oggetto è lungo 5 cm sul disegno, in scala. Per questo è il sistema usato in tutto il mondo per costruire le cose.
+In questo modo non c'è nessuna deformazione. Quello che è lungo 5 cm sull'oggetto è lungo 5 cm sul disegno, in scala. ==Per questo è il sistema usato in tutto il mondo per costruire le cose.==
 
 **Tre viste**
 
 Una sola vista non basta. Se ne usano tre.
 
-- Il **prospetto**: l'oggetto visto di fronte. Mostra larghezza e altezza.
+- ==Il **prospetto**: l'oggetto visto di fronte.== Mostra larghezza e altezza.
 - La **pianta**: l'oggetto visto dall'alto. Mostra larghezza e profondità.
 - Il **fianco**: l'oggetto visto di lato. Mostra profondità e altezza.
 
@@ -58,7 +58,7 @@ E devono essere allineate. La pianta ha la stessa larghezza del prospetto e sta 
 
 **Leggere al contrario**
 
-Leggere un disegno tecnico vuol dire fare il percorso inverso: dalle tre viste piatte ricostruire nella testa l'oggetto solido. Il trucco è cercare le corrispondenze: ogni spigolo che vedi in una vista deve ritrovarsi anche nelle altre.
+==Leggere un disegno tecnico vuol dire fare il percorso inverso: dalle tre viste piatte ricostruire nella testa l'oggetto solido.== Il trucco è cercare le corrispondenze: ogni spigolo che vedi in una vista deve ritrovarsi anche nelle altre.
 
 **Guardare dentro**
 
@@ -86,9 +86,9 @@ Per costruire si usa la proiezione ortogonale, perché è misurabile. Per far ca
 
 Prendi in mano una tazza. Guardala di fronte: vedi una forma rettangolare. Guardala dall'alto: vedi un cerchio. Guardala di lato: vedi ancora una forma rettangolare, ma stavolta con l'ansa. Tre viste diverse, una sola tazza.
 
-Questo è il problema fondamentale del disegno tecnico: come si rappresenta un oggetto tridimensionale su un foglio di carta che ha solo due dimensioni? Non puoi girare la carta per mostrare l'altro lato. Non puoi far alzare chi legge dal foglio per guardare dall'alto. Devi trovare un sistema che mostri tutto in una volta, in modo preciso, senza ambiguità.
+==Questo è il problema fondamentale del disegno tecnico: come si rappresenta un oggetto tridimensionale su un foglio di carta che ha solo due dimensioni?== Non puoi girare la carta per mostrare l'altro lato. Non puoi far alzare chi legge dal foglio per guardare dall'alto. Devi trovare un sistema che mostri tutto in una volta, in modo preciso, senza ambiguità.
 
-La risposta si chiama **proiezione ortogonale**, ed è il sistema su cui si basa tutto il disegno tecnico industriale nel mondo.
+==La risposta si chiama **proiezione ortogonale**, ed è il sistema su cui si basa tutto il disegno tecnico industriale nel mondo.==
 
 ---
 
@@ -96,9 +96,9 @@ La risposta si chiama **proiezione ortogonale**, ed è il sistema su cui si basa
 
 Immagina un fascio di raggi paralleli che colpisce un oggetto perpendicolarmente a un piano. La sua immagine sul piano è una **proiezione ortogonale**. Una torcia vicina ha invece raggi divergenti: la sua ombra non riproduce esattamente questo modello.
 
-"Ortogonale" significa che tutti i raggi di proiezione sono perpendicolari al piano su cui si proietta.
+=="Ortogonale" significa che tutti i raggi di proiezione sono perpendicolari al piano su cui si proietta.==
 
-Questo è diverso da quello che succede quando guardi un oggetto reale: la prospettiva li fa sembrare più piccoli man mano che si allontanano, le linee parallele sembrano convergere verso un punto all'orizzonte. La proiezione ortogonale elimina questa distorsione. I segmenti paralleli al piano mantengono la loro lunghezza in scala; quelli inclinati appaiono accorciati. Punti posti sulla stessa linea di proiezione possono sovrapporsi: per ricostruire la forma servono più viste. Per questo è lo strumento della precisione tecnica: quando un ingegnere quota 120 mm su un disegno ortogonale, il costruttore sa con certezza che quella dimensione è 120 mm nell'oggetto reale.
+Questo è diverso da quello che succede quando guardi un oggetto reale: la prospettiva li fa sembrare più piccoli man mano che si allontanano, le linee parallele sembrano convergere verso un punto all'orizzonte. La proiezione ortogonale elimina questa distorsione. I segmenti paralleli al piano mantengono la loro lunghezza in scala; quelli inclinati appaiono accorciati. Punti posti sulla stessa linea di proiezione possono sovrapporsi: per ricostruire la forma servono più viste. ==Per questo è lo strumento della precisione tecnica: quando un ingegnere quota 120 mm su un disegno ortogonale, il costruttore sa con certezza che quella dimensione è 120 mm nell'oggetto reale.==
 
 ---
 
@@ -106,9 +106,9 @@ Questo è diverso da quello che succede quando guardi un oggetto reale: la prosp
 
 Prima di entrare nel dettaglio della proiezione ortogonale, è utile capire perché esistono più sistemi di rappresentazione e quando si sceglie ciascuno.
 
-**Proiezione ortogonale (viste multiple):** la più precisa. Mostra l'oggetto in più viste separate, ognuna ripresa da una direzione perpendicolare. Non si vede la forma tridimensionale in modo intuitivo, le dimensioni si leggono nelle viste che le mostrano senza accorciamento e nelle quote. Si usa nei disegni di costruzione, nelle tavole tecniche per la produzione industriale, nelle specifiche per i fornitori. Chi deve costruire l'oggetto ha bisogno di questo.
+==**Proiezione ortogonale (viste multiple):** la più precisa.== Mostra l'oggetto in più viste separate, ognuna ripresa da una direzione perpendicolare. Non si vede la forma tridimensionale in modo intuitivo, le dimensioni si leggono nelle viste che le mostrano senza accorciamento e nelle quote. Si usa nei disegni di costruzione, nelle tavole tecniche per la produzione industriale, nelle specifiche per i fornitori. Chi deve costruire l'oggetto ha bisogno di questo.
 
-**Assonometria (studiata nella MC-DIS-2-02):** proietta l'oggetto in modo da mostrare tre facce contemporaneamente su un solo piano. Rappresenta insieme più direzioni dell’oggetto, usando scale e coefficienti propri del tipo di assonometria, e dà un’impressione tridimensionale. Si usa per disegni esplicativi, manuali d'uso, presentazioni. Chi deve capire la forma generale ha bisogno di questo.
+==**Assonometria (studiata nella MC-DIS-2-02):** proietta l'oggetto in modo da mostrare tre facce contemporaneamente su un solo piano.== Rappresenta insieme più direzioni dell’oggetto, usando scale e coefficienti propri del tipo di assonometria, e dà un’impressione tridimensionale. Si usa per disegni esplicativi, manuali d'uso, presentazioni. Chi deve capire la forma generale ha bisogno di questo.
 
 **Prospettiva:** simula come l'occhio umano vede davvero. Le linee parallele convergono, le dimensioni si riducono in lontananza. Usata in architettura e design per comunicare l'impatto visivo di un progetto a chi non è tecnico. Non è misurabile, ma è la più intuitiva.
 
@@ -118,11 +118,11 @@ Prima di entrare nel dettaglio della proiezione ortogonale, è utile capire perc
 
 ### Il metodo europeo di Monge: le tre viste fondamentali
 
-Il sistema di proiezione ortogonale più usato in Europa (e in Italia) si chiama **metodo di Monge**, dal nome del matematico francese Gaspard Monge che lo sistematizzò nel 1795. È anche chiamato metodo del primo diedro o metodo europeo.
+==Il sistema di proiezione ortogonale più usato in Europa (e in Italia) si chiama **metodo di Monge**, dal nome del matematico francese Gaspard Monge che lo sistematizzò nel 1795.== È anche chiamato metodo del primo diedro o metodo europeo.
 
 Dal punto di vista geometrico rigoroso, le proiezioni ortogonali sono **proiezioni parallele** nelle quali si immagina che il punto di proiezione si trovi a distanza infinita dall'oggetto — così le linee di proiezione risultano tra loro parallele e perpendicolari al piano di proiezione. Questo le distingue dalla prospettiva, dove il punto di proiezione è vicino e le linee convergono. *(Fonte: SEI, ISBN 9788805079292, p.494)*
 
-In pratica, si collocano tre piani di proiezione perpendicolari tra loro a formare il cosiddetto **triedro**:
+==In pratica, si collocano tre piani di proiezione perpendicolari tra loro a formare il cosiddetto **triedro**:==
 - **Piano orizzontale (PO):** la pianta dell'oggetto si proietta qui (vista dall'alto).
 - **Piano verticale (PV):** il prospetto si proietta qui (vista frontale).
 - **Piano laterale (PL):** il fianco si proietta qui (vista laterale).
@@ -165,7 +165,7 @@ La disposizione non è casuale — è una convenzione internazionale che chiunqu
 
 Nel metodo europeo (primo diedro) la pianta sta **sotto** il prospetto e la vista da sinistra sta **a destra** del prospetto. Nel metodo americano (terzo diedro), usato negli Stati Uniti, le posizioni sono invertite: la pianta sta sopra e a destra va la vista da destra. Per non confondersi, sui disegni si indica il metodo con un simbolo normalizzato.
 
-La regola fondamentale: **le viste devono essere allineate tra loro**. La vista laterale è sulla stessa linea orizzontale della vista frontale. La vista dall'alto è sulla stessa linea verticale. Questo allineamento non è decorativo: serve a leggere le corrispondenze tra le viste, che è il cuore della competenza.
+==La regola fondamentale: **le viste devono essere allineate tra loro**.== La vista laterale è sulla stessa linea orizzontale della vista frontale. La vista dall'alto è sulla stessa linea verticale. ==Questo allineamento non è decorativo: serve a leggere le corrispondenze tra le viste, che è il cuore della competenza.==
 
 In pratica, su quasi tutti i disegni tecnici si usano le tre viste fondamentali (frontale, laterale, dall'alto). Le altre tre si aggiungono solo quando l'oggetto ha caratteristiche particolari che non si vedono nelle prime tre.
 
@@ -190,7 +190,7 @@ In un disegno tecnico, non tutte le linee sono uguali. Il tipo di linea comunica
 
 ### Come si legge un disegno a viste multiple: risalire dalla 2D alla 3D
 
-Leggere un disegno ortogonale significa fare il percorso inverso: partire dalle viste bidimensionali e ricostruire mentalmente la forma tridimensionale. È una competenza che si acquisisce con la pratica, ma ci sono strategie precise.
+==Leggere un disegno ortogonale significa fare il percorso inverso: partire dalle viste bidimensionali e ricostruire mentalmente la forma tridimensionale.== È una competenza che si acquisisce con la pratica, ma ci sono strategie precise.
 
 **Strategia delle corrispondenze:** ogni punto visibile in una vista deve avere la sua corrispondenza nelle altre viste. Se nella vista frontale c'è uno spigolo verticale a 30 mm dal bordo sinistro, nella vista dall'alto ci sarà una linea a 30 mm dal bordo sinistro (stessa distanza orizzontale). Se nella vista frontale c'è un dettaglio a 40 mm dall'alto, nella vista laterale ci sarà lo stesso dettaglio a 40 mm dall'alto (stessa quota verticale).
 
@@ -201,7 +201,7 @@ Leggere un disegno ortogonale significa fare il percorso inverso: partire dalle 
 4. Cerca le corrispondenze tra le tre viste per identificare ogni parte dell'oggetto.
 5. Disegna mentalmente (o su carta) la forma 3D che rispetta tutte e tre le viste contemporaneamente.
 
-**Il test della coerenza:** se le tre viste sono corrette, ogni dimensione deve comparire in almeno due viste. Se trovi una linea in una sola vista senza corrispondenze nelle altre, c'è un errore nel disegno.
+**Il test della coerenza:** se le tre viste sono corrette, ogni dimensione deve comparire in almeno due viste. ==Se trovi una linea in una sola vista senza corrispondenze nelle altre, c'è un errore nel disegno.==
 
 ---
 
@@ -209,7 +209,7 @@ Leggere un disegno ortogonale significa fare il percorso inverso: partire dalle 
 
 Un oggetto può avere cavità, fori, passaggi interni che non si vedono dall'esterno. Le linee tratteggiate li indicano, ma se l'interno è complesso, il disegno diventa illeggibile.
 
-La soluzione è la **sezione**: un piano di taglio immaginario che "taglia" l'oggetto per mostrarne l'interno. Non si tratta di tagliare davvero l'oggetto — è una convenzione grafica.
+==La soluzione è la **sezione**: un piano di taglio immaginario che "taglia" l'oggetto per mostrarne l'interno.== ==Non si tratta di tagliare davvero l'oggetto — è una convenzione grafica.==
 
 **Come si indica una sezione:**
 1. Si traccia il **piano di taglio** (o piano di sezione) con una linea mista grossa, interrotta nei punti mediani e rafforzata agli estremi.

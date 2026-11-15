@@ -554,3 +554,33 @@ a, button {
     line-height: 1.7;
   }
 }
+
+/* Evidenziatore giallo sui concetti chiave dei testi (sintassi ==testo== nei _completa.md).
+   Tratto da pennarello: fascia gialla sulla parte bassa della riga, bordi leggermente sfumati,
+   continua correttamente quando la frase va a capo. */
+mark.evidenziatore {
+  color: inherit;
+  background-color: transparent;
+  background-image: linear-gradient(
+    100deg,
+    rgb(253 224 71 / 0) 0.3em,
+    rgb(253 224 71 / 0.9) 0.5em,
+    rgb(254 240 138 / 0.95) calc(100% - 0.5em),
+    rgb(253 224 71 / 0) calc(100% - 0.3em)
+  );
+  background-size: 100% 78%;
+  background-position: 0 70%;
+  background-repeat: no-repeat;
+  padding: 0 0.35em;
+  margin: 0 -0.2em;
+  border-radius: 0.25em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@media print {
+  mark.evidenziatore {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

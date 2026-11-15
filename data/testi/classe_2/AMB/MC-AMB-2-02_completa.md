@@ -25,13 +25,13 @@ Come funziona questa "perdita invisibile"? E come si può fermare?
 
 ### 🎯 In breve
 
-Una casa non è fatta solo di muri. Dentro le pareti e sotto il pavimento corrono gli **impianti**: le reti che portano corrente, acqua, gas e calore. Non si vedono, ma decidono quanto consumi e quanto sei al sicuro.
+Una casa non è fatta solo di muri. ==Dentro le pareti e sotto il pavimento corrono gli **impianti**: le reti che portano corrente, acqua, gas e calore.== Non si vedono, ma decidono quanto consumi e quanto sei al sicuro.
 
 **L'impianto elettrico**
 
 La corrente arriva dalla strada e passa per il **contatore**, che misura quanta ne usi. Poi entra nel **quadro elettrico**, la scatola con gli interruttori vicino all'ingresso.
 
-Lì dentro c'è il dispositivo più importante della casa: il **salvavita**. Se la corrente prende una strada sbagliata, per esempio attraverso una persona, scatta e toglie tutto in una frazione di secondo.
+==Lì dentro c'è il dispositivo più importante della casa: il **salvavita**.== Se la corrente prende una strada sbagliata, per esempio attraverso una persona, scatta e toglie tutto in una frazione di secondo.
 
 Due regole di sicurezza: mai attaccare tante spine a una sola presa con più adattatori, e mai toccare apparecchi elettrici con le mani bagnate.
 
@@ -53,7 +53,7 @@ Se senti odore di gas: non accendere luci né apparecchi, apri le finestre, esci
 
 **Scaldare la casa**
 
-Il riscaldamento è la voce più pesante: in una famiglia italiana consuma più della metà di tutta l'energia. Di solito una **caldaia** scalda l'acqua, che gira nei termosifoni. Il **termostato** misura la temperatura e accende o spegne la caldaia.
+==Il riscaldamento è la voce più pesante: in una famiglia italiana consuma più della metà di tutta l'energia.== Di solito una **caldaia** scalda l'acqua, che gira nei termosifoni. Il **termostato** misura la temperatura e accende o spegne la caldaia.
 
 Ogni grado in meno sul termostato fa risparmiare circa il 5-7% di riscaldamento.
 
@@ -63,7 +63,7 @@ La **pompa di calore** funziona in un altro modo: non brucia niente, sposta il c
 
 Il **fotovoltaico** trasforma la luce del sole in elettricità con pannelli sul tetto.
 
-Ogni edificio ha poi una pagella, la **classe energetica**: va dalla G, la peggiore, alla A4, la migliore. Una casa in classe G consuma circa sette volte più di una in A4 per restare alla stessa temperatura. La differenza la fanno muri isolati, finestre che tengono e impianti efficienti.
+Ogni edificio ha poi una pagella, la **classe energetica**: va dalla G, la peggiore, alla A4, la migliore. Una casa in classe G consuma circa sette volte più di una in A4 per restare alla stessa temperatura. ==La differenza la fanno muri isolati, finestre che tengono e impianti efficienti.==
 
 > ✋ **Tocca a te.** Un phon da 2.000 watt acceso per mezz'ora: quanti kWh consuma? E una lampadina LED da 10 watt accesa per 10 ore? Fai i due conti: quale consuma di più?
 
@@ -81,7 +81,7 @@ Ogni edificio ha poi una pagella, la **classe energetica**: va dalla G, la peggi
 
 Quando entri in una casa e accendi la luce, apri il rubinetto, alzi il termostato o accendi la caldaia, stai usando uno dei sistemi di impianti che ogni abitazione moderna possiede. Questi impianti sono invisibili — nascosti nelle pareti, nel pavimento, nel controsoffitto — ma determinano quasi tutto ciò che rende confortevole e sicura la vita in casa.
 
-Capire come funzionano ti permette di usarli meglio, riconoscere i guasti prima che diventino pericolosi, prendere decisioni consapevoli sui consumi — e capire cosa significa quando si parla di "efficienza energetica".
+==Capire come funzionano ti permette di usarli meglio, riconoscere i guasti prima che diventino pericolosi, prendere decisioni consapevoli sui consumi — e capire cosa significa quando si parla di "efficienza energetica".==
 
 ---
 
@@ -93,7 +93,7 @@ L'energia elettrica percorre un lungo cammino prima di arrivare alla presa dove 
 
 **Dalla centrale alla cabina di trasformazione**
 
-L'energia elettrica viene prodotta nelle centrali (termoelettriche, idroelettriche, fotovoltaiche, eoliche) e distribuita attraverso le **reti di trasmissione** ad altissima tensione (132.000-400.000 Volt, chiamata "altissima tensione" o AAT). Queste tensioni elevatissime servono a ridurre le perdite di energia durante il trasporto su lunghe distanze.
+L'energia elettrica viene prodotta nelle centrali (termoelettriche, idroelettriche, fotovoltaiche, eoliche) e distribuita attraverso le **reti di trasmissione** ad altissima tensione (132.000-400.000 Volt, chiamata "altissima tensione" o AAT). ==Queste tensioni elevatissime servono a ridurre le perdite di energia durante il trasporto su lunghe distanze.==
 
 Prima di arrivare nelle città, l'energia viene abbassata nelle **cabine primarie** (da 132 kV a 15-20 kV) e poi nelle **cabine secondarie** (da 20 kV a 230 o 400 Volt), che sono i piccoli edifici grigi che vedi nei quartieri con la scritta "ENEL" o "Rete di distribuzione — pericolo di morte".
 
@@ -103,9 +103,9 @@ Prima di arrivare nelle città, l'energia viene abbassata nelle **cabine primari
 
 **Dal contatore al quadro generale**
 
-Dall'ultima cabina di trasformazione, la corrente arriva al **contatore** della tua abitazione — il dispositivo che misura quanta energia consumi e che l'ENEL (o il tuo fornitore) usa per calcolare la bolletta. Il contatore moderno (smart meter) registra i consumi in tempo reale e trasmette i dati in modo automatico.
+==Dall'ultima cabina di trasformazione, la corrente arriva al **contatore** della tua abitazione — il dispositivo che misura quanta energia consumi e che l'ENEL (o il tuo fornitore) usa per calcolare la bolletta.== Il contatore moderno (smart meter) registra i consumi in tempo reale e trasmette i dati in modo automatico.
 
-Dal contatore, la corrente entra nel **quadro elettrico generale** (o quadro di distribuzione), che di solito è una scatola metallica fissata al muro vicino all'ingresso. Il quadro contiene:
+==Dal contatore, la corrente entra nel **quadro elettrico generale** (o quadro di distribuzione), che di solito è una scatola metallica fissata al muro vicino all'ingresso.== Il quadro contiene:
 
 **Interruttore differenziale (salvavita):** scatta e interrompe tutta l'alimentazione se rileva una dispersione di corrente verso terra — il caso tipico è quando una persona tocca un filo scoperto. Può salvare la vita. Non va mai escluso o manomesso; il tasto di prova (T) va invece premuto ogni tanto, con un adulto, per controllare che scatti. Spesso sta nello stesso apparecchio dell'interruttore generale, che serve a staccare tutto a mano.
 
@@ -180,7 +180,7 @@ Due principi fondamentali dello scarico:
 
 ### L'impianto del gas — dal metanodotto al fornello
 
-Il gas naturale (metano, CH₄) arriva alle abitazioni attraverso una rete di tubazioni interrate che parte dai gasdotti internazionali, attraversa le reti regionali e arriva ai **contatori del gas** di ogni abitazione.
+==Il gas naturale (metano, CH₄) arriva alle abitazioni attraverso una rete di tubazioni interrate che parte dai gasdotti internazionali, attraversa le reti regionali e arriva ai **contatori del gas** di ogni abitazione.==
 
 > ⚠️ **Sicurezza gas:** il gas metano è inodore. Per renderlo riconoscibile, le aziende aggiungono un composto chimico (mercaptano) che ha l'odore caratteristico di "uova marce". Se senti quell'odore:
 > 1. Non accendere luci o dispositivi elettrici (possibile scintilla → esplosione)
@@ -193,7 +193,7 @@ Il gas naturale (metano, CH₄) arriva alle abitazioni attraverso una rete di tu
 
 **Il contatore del gas**
 
-Il contatore misura il volume di gas consumato in **metri cubi (m³)**. Il potere calorifico del gas di rete è di circa 10,7 kWh per metro cubo standard: ogni metro cubo di gas contiene l'equivalente energetico di quasi 11 kWh. In bolletta il consumo viene convertito in kWh per facilitare il confronto con l'energia elettrica.
+==Il contatore misura il volume di gas consumato in **metri cubi (m³)**.== Il potere calorifico del gas di rete è di circa 10,7 kWh per metro cubo standard: ogni metro cubo di gas contiene l'equivalente energetico di quasi 11 kWh. In bolletta il consumo viene convertito in kWh per facilitare il confronto con l'energia elettrica.
 
 ---
 
@@ -214,7 +214,7 @@ Il riscaldamento domestico consuma il 60-70% dell'energia totale di una famiglia
 
 Il sistema più diffuso in Italia: la **caldaia** scalda l'acqua a 60-80°C; una pompa circola l'acqua calda attraverso i tubi che vanno ai **radiatori** in ogni stanza; i radiatori cedono il calore all'aria attraverso irraggiamento e convezione; l'acqua raffreddata torna alla caldaia per essere riscaldata di nuovo.
 
-Il **termostato** misura la temperatura dell'aria nell'ambiente e comanda la caldaia: quando la temperatura scende sotto il valore impostato, la caldaia si accende; quando la raggiunge, si spegne. Una variazione di soli 2°C sulla temperatura impostata cambia i consumi del 12-15%. Abbassare il termostato da 22°C a 20°C riduce la bolletta di circa il 12%.
+==Il **termostato** misura la temperatura dell'aria nell'ambiente e comanda la caldaia: quando la temperatura scende sotto il valore impostato, la caldaia si accende; quando la raggiunge, si spegne.== Una variazione di soli 2°C sulla temperatura impostata cambia i consumi del 12-15%. Abbassare il termostato da 22°C a 20°C riduce la bolletta di circa il 12%.
 
 **Valvole termostatiche:** piccoli dispositivi sui singoli radiatori che regolano automaticamente il flusso di acqua calda in base alla temperatura locale della stanza. Evitano che stanze già calde (per esempio con molta luce solare) continuino a essere riscaldate — risparmio medio del 10-20% sui consumi di riscaldamento.
 
@@ -235,9 +235,9 @@ Limite: risponde molto lentamente ai cambi di temperatura (ore vs minuti dei rad
 
 **Pompa di calore**
 
-La **pompa di calore** (heat pump) non brucia nulla: sposta il calore dall'esterno all'interno dell'edificio usando l'energia elettrica. Funziona come un frigorifero al contrario: il frigorifero sposta il calore dall'interno all'esterno; la pompa di calore sposta il calore dall'esterno all'interno.
+==La **pompa di calore** (heat pump) non brucia nulla: sposta il calore dall'esterno all'interno dell'edificio usando l'energia elettrica.== Funziona come un frigorifero al contrario: il frigorifero sposta il calore dall'interno all'esterno; la pompa di calore sposta il calore dall'esterno all'interno.
 
-L'indice di efficienza si chiama **COP (Coefficient Of Performance)**: un COP di 3 significa che per ogni kWh di elettricità consumata, la pompa di calore produce 3 kWh di calore. Le pompe di calore moderne hanno COP tra 3 e 5.
+==L'indice di efficienza si chiama **COP (Coefficient Of Performance)**: un COP di 3 significa che per ogni kWh di elettricità consumata, la pompa di calore produce 3 kWh di calore.== Le pompe di calore moderne hanno COP tra 3 e 5.
 
 Questo rende la pompa di calore molto più efficiente di qualsiasi riscaldamento elettrico diretto (resistenze, stufe elettriche: COP = 1 sempre) e spesso anche della caldaia a gas.
 
@@ -260,10 +260,10 @@ Il consumo di un condizionatore split da 2,5 kW di potenza frigorifera è di cir
 
 ### Il fotovoltaico domestico — produrre energia dal tetto
 
-Il **sistema fotovoltaico domestico** converte la luce del sole in elettricità. Un impianto tipico per una famiglia di 4 persone ha:
+==Il **sistema fotovoltaico domestico** converte la luce del sole in elettricità.== Un impianto tipico per una famiglia di 4 persone ha:
 
 - **6-10 pannelli fotovoltaici**, ciascuno da 400-500 W di picco (Wp), per una potenza totale di 3-5 kWp (kilowatt di picco).
-- Un **inverter**, che converte la corrente continua (DC) prodotta dai pannelli in corrente alternata (AC) utilizzabile in casa.
+- ==Un **inverter**, che converte la corrente continua (DC) prodotta dai pannelli in corrente alternata (AC) utilizzabile in casa.==
 - Un **contatore bidirezionale**, che misura sia l'energia prodotta che quella consumata e quella ceduta alla rete.
 
 Un impianto da 3 kWp produce in Italia circa 3.500-4.000 kWh all'anno (a seconda della latitudine e dell'orientamento dei pannelli). Una famiglia media ne consuma 2.700 kWh/anno: l'impianto copre e supera il fabbisogno elettrico, con un surplus ceduto alla rete.
@@ -284,7 +284,7 @@ Il costo di un impianto fotovoltaico da 3 kWp, installato, è oggi intorno ai 5.
 
 ### Le classi energetiche degli edifici — dalla G alla A4
 
-Non tutti gli edifici consumano la stessa energia. Per orientarsi, dal 2021 in Italia si usa l'**APE (Attestato di Prestazione Energetica)**, obbligatorio per vendere o affittare un immobile.
+Non tutti gli edifici consumano la stessa energia. ==Per orientarsi, dal 2021 in Italia si usa l'**APE (Attestato di Prestazione Energetica)**, obbligatorio per vendere o affittare un immobile.==
 
 L'APE classifica gli edifici in scale da **G** (la peggiore) a **A4** (la migliore), in base al **fabbisogno energetico globale non rinnovabile** per riscaldamento, raffreddamento, acqua calda e illuminazione, espresso in kWh/(m²·anno).
 
@@ -301,7 +301,7 @@ L'APE classifica gli edifici in scale da **G** (la peggiore) a **A4** (la miglio
 | F | 200-250 kWh/(m²·anno) | Edificio anni '60-'70 non ristrutturato |
 | G | > 250 kWh/(m²·anno) | Edificio storico non isolato |
 
-**I dati chiave:** in Italia il 65% del patrimonio edilizio residenziale è in classe E, F o G. Un appartamento di classe G consuma circa **7 volte più energia** di uno di classe A4 per ottenere lo stesso comfort termico. Questo non significa stare al freddo in classe G: significa spendere 7 volte di più per stare alla stessa temperatura.
+**I dati chiave:** in Italia il 65% del patrimonio edilizio residenziale è in classe E, F o G. Un appartamento di classe G consuma circa **7 volte più energia** di uno di classe A4 per ottenere lo stesso comfort termico. ==Questo non significa stare al freddo in classe G: significa spendere 7 volte di più per stare alla stessa temperatura.==
 
 Il **Regolamento Europeo EPBD** (Energy Performance of Buildings Directive, aggiornato nel 2024) prevede che entro il 2030 gli edifici residenziali peggiori (classe G) debbano essere riqualificati almeno alla classe E, e entro il 2033 almeno alla classe D. Questo è il più grande piano di ristrutturazione edilizia mai avviato in Europa.
 
@@ -309,7 +309,7 @@ Il **Regolamento Europeo EPBD** (Energy Performance of Buildings Directive, aggi
 
 ### Come si legge una bolletta elettrica
 
-La bolletta elettrica è il documento che ti dice quanta energia hai consumato e quanto paghi. Saperla leggere è una competenza pratica concreta.
+==La bolletta elettrica è il documento che ti dice quanta energia hai consumato e quanto paghi.== Saperla leggere è una competenza pratica concreta.
 
 **Le voci principali:**
 

@@ -35,16 +35,16 @@ La maglietta che indossi, lo zaino, la bottiglia d'acqua, il casco della bici. S
 
 **Le fibre naturali**
 
-Una **fibra** è un filo sottilissimo. Tante fibre intrecciate fanno un tessuto. Quelle naturali vengono da piante o da animali.
+==Una **fibra** è un filo sottilissimo.== Tante fibre intrecciate fanno un tessuto. Quelle naturali vengono da piante o da animali.
 
 - Il **cotone** è morbido e assorbe il sudore. Ma la pianta beve moltissimo: per una sola maglietta servono circa 2.700 litri d'acqua.
 - La **lana** tiene caldo perché tra le sue fibre ondulate resta intrappolata l'aria.
-- Il **lino** è fresco ed è la fibra che pesa meno sull'ambiente: gli basta la pioggia.
+- ==Il **lino** è fresco ed è la fibra che pesa meno sull'ambiente: gli basta la pioggia.==
 - La **seta** è il filo del bozzolo di un bruco: leggera, lucente e costosa.
 
 **Le fibre sintetiche**
 
-Le **fibre sintetiche** si ricavano dal petrolio. La più diffusa è il **poliestere**: costa poco, è resistente e asciuga in fretta, perché non assorbe l'acqua. Il **nylon** è ancora più resistente e si usa per zaini e corde.
+Le **fibre sintetiche** si ricavano dal petrolio. ==La più diffusa è il **poliestere**: costa poco, è resistente e asciuga in fretta, perché non assorbe l'acqua.== Il **nylon** è ancora più resistente e si usa per zaini e corde.
 
 Hanno un difetto nascosto. A ogni lavaggio in lavatrice perdono migliaia di pezzetti invisibili, le **microplastiche**, che finiscono nei fiumi e nel mare.
 
@@ -52,7 +52,7 @@ Hanno un difetto nascosto. A ogni lavaggio in lavatrice perdono migliaia di pezz
 
 **Le plastiche**
 
-"Plastica" non è un materiale solo: è una famiglia enorme. Tutte le plastiche sono **polimeri**, cioè catene lunghissime fatte ripetendo la stessa piccola molecola, come una collana di perline.
+"Plastica" non è un materiale solo: è una famiglia enorme. ==Tutte le plastiche sono **polimeri**, cioè catene lunghissime fatte ripetendo la stessa piccola molecola, come una collana di perline.==
 
 Sono leggere, impermeabili, non fanno passare la corrente e si possono stampare in qualsiasi forma. Per questo sono ovunque.
 
@@ -98,7 +98,7 @@ I materiali di questa MC — fibre tessili naturali e sintetiche, plastiche, com
 
 ### Le fibre naturali: cotone, lana, seta, lino
 
-Le fibre naturali vengono da piante o da animali. Esistono da migliaia di anni — la seta cinese risale a 5.000 anni fa, il lino egiziano a 36.000 anni fa (reperti nelle grotte di Dzudzuana, Georgia). Ma "naturale" non significa automaticamente sostenibile o semplice da produrre. Vediamo i dati.
+Le fibre naturali vengono da piante o da animali. Esistono da migliaia di anni — la seta cinese risale a 5.000 anni fa, il lino egiziano a 36.000 anni fa (reperti nelle grotte di Dzudzuana, Georgia). ==Ma "naturale" non significa automaticamente sostenibile o semplice da produrre.== Vediamo i dati.
 
 ---
 
@@ -106,7 +106,7 @@ Le fibre naturali vengono da piante o da animali. Esistono da migliaia di anni �
 
 Il **cotone** viene dal seme della pianta *Gossypium*. Il seme è avvolto da fibre di cellulosa lunghissime (2–5 cm), bianchissime, che vengono raccolte meccanicamente o a mano, separate dai semi (con la sgranatura), pulite, filate e tessute.
 
-Il cotone è la fibra naturale più prodotta al mondo: circa 25–26 milioni di tonnellate all'anno. I principali produttori sono India, Cina, USA e Pakistan.
+==Il cotone è la fibra naturale più prodotta al mondo: circa 25–26 milioni di tonnellate all'anno.== I principali produttori sono India, Cina, USA e Pakistan.
 
 **Perché il cotone è così usato:**
 - **Morbidezza:** la fibra di cellulosa è naturalmente morbida e non irrita la pelle. Per questo si usa per biancheria intima, lenzuola, magliette.
@@ -117,7 +117,7 @@ Il cotone è la fibra naturale più prodotta al mondo: circa 25–26 milioni di 
 **Il problema del cotone:**
 Qui i dati sono scomodi ma importanti.
 
-Produrre **1 kg di cotone** richiede tra **8.000 e 10.000 litri d'acqua** — considerando l'irrigazione dei campi. Per confronto, 1 kg di frumento richiede circa 1.500 litri. È la coltura più idrovora al mondo, dopo la canna da zucchero.
+Produrre **1 kg di cotone** richiede tra **8.000 e 10.000 litri d'acqua** — considerando l'irrigazione dei campi. Per confronto, 1 kg di frumento richiede circa 1.500 litri. ==È la coltura più idrovora al mondo, dopo la canna da zucchero.==
 
 Il **Mar d'Aral**, un tempo il quarto lago più grande del mondo, si è quasi completamente prosciugato tra gli anni '60 e i '90 del XX secolo. La causa principale: l'Unione Sovietica aveva deviato i suoi due fiumi tributari per irrigare i campi di cotone del Kazakistan e dell'Uzbekistan. Un disastro ambientale su scala planetaria causato in larga parte dalla produzione di una fibra tessile.
 
@@ -135,7 +135,7 @@ La **lana** viene dal pelo delle pecore (ma anche di alpaca, cashmere da capre c
 
 **Struttura ondulata e isolamento termico:** la fibra di lana non è dritta — è naturalmente ondulata (o arricciata, nel caso del cashmere). Questo fa sì che tra le fibre rimanga intrappolata aria ferma. L'aria ferma è uno degli isolanti termici migliori che esistano in natura. Un maglione di lana spesso isola bene non perché la lana stessa sia calda, ma perché intrappola uno strato di aria ferma tra te e il freddo esterno.
 
-**Gestione dell'umidità:** la lana ha una proprietà straordinaria che nessun materiale sintetico riesce a replicare completamente. Può assorbire fino al **35% del suo peso in umidità** (vapore acqueo, sudore) senza *sembrare* bagnata al tatto — le scaglie della fibra trattengono l'umidità nella struttura interna, mentre la superficie rimane asciutta. E mentre assorbe umidità, la lana **genera calore** (reazione leggermente esotermica): la lana usata in montagna ti può proteggere dall'ipotermia anche bagnata, mentre il cotone bagnato porta via calore dal corpo molto rapidamente. Per questo i marinai e gli alpinisti usavano tradizionalmente la lana, non il cotone.
+==**Gestione dell'umidità:** la lana ha una proprietà straordinaria che nessun materiale sintetico riesce a replicare completamente.== Può assorbire fino al **35% del suo peso in umidità** (vapore acqueo, sudore) senza *sembrare* bagnata al tatto — le scaglie della fibra trattengono l'umidità nella struttura interna, mentre la superficie rimane asciutta. E mentre assorbe umidità, la lana **genera calore** (reazione leggermente esotermica): la lana usata in montagna ti può proteggere dall'ipotermia anche bagnata, mentre il cotone bagnato porta via calore dal corpo molto rapidamente. ==Per questo i marinai e gli alpinisti usavano tradizionalmente la lana, non il cotone.==
 
 **Limiti della lana:** si restringe se lavata in acqua calda (le scaglie si aprono e si intrecciano irreversibilmente — feltratura). Non resiste bene agli strappi. Può essere irritante per pelli sensibili. I capi di lana fine (cashmere, merino) costano molto. Infine: la lana è ottenuta da animali allevati, con implicazioni etiche e ambientali proprie (emissioni di metano delle pecore, uso del suolo).
 
@@ -145,11 +145,11 @@ La **lana** viene dal pelo delle pecore (ma anche di alpaca, cashmere da capre c
 
 #### La seta: lusso da un baco
 
-La **seta** viene dal baco da seta (*Bombyx mori*), il bruco della farfalla del gelso bianco. Per formare il bozzolo in cui si trasformerà in crisalide, il baco secerne un filo di fibroina — una proteina — avvolto in una sostanza collosa chiamata sericina. Il filo del bozzolo è un unico filamento continuo che può essere lungo fino a **1.500 metri**. Per srotolarlo, il bozzolo viene immerso in acqua calda e il filo viene avvolto su rocchetti.
+La **seta** viene dal baco da seta (*Bombyx mori*), il bruco della farfalla del gelso bianco. Per formare il bozzolo in cui si trasformerà in crisalide, il baco secerne un filo di fibroina — una proteina — avvolto in una sostanza collosa chiamata sericina. ==Il filo del bozzolo è un unico filamento continuo che può essere lungo fino a **1.500 metri**.== Per srotolarlo, il bozzolo viene immerso in acqua calda e il filo viene avvolto su rocchetti.
 
 La seta ha proprietà fisiche eccezionali per un materiale biologico: resistenza a trazione di 500 MPa (paragonabile al nylon), peso bassissimo, lucentezza naturale unica (la fibroina riflette la luce in modo simile al prisma), e straordinaria morbidezza al tatto.
 
-Il problema è il costo: allevare i bachi, raccogliere i bozzoli, srotolare il filo è un processo ancora in gran parte manuale. 1 kg di seta grezza richiede circa 3.000–5.000 bozzoli. Per questo la seta è circa 10–15 volte più costosa del cotone.
+Il problema è il costo: allevare i bachi, raccogliere i bozzoli, srotolare il filo è un processo ancora in gran parte manuale. 1 kg di seta grezza richiede circa 3.000–5.000 bozzoli. ==Per questo la seta è circa 10–15 volte più costosa del cotone.==
 
 La Cina produce da sola il 75% della seta mondiale. L'Italia — in particolare la zona di Como — è ancora uno dei principali centri di lavorazione e tessitura della seta europea.
 
@@ -157,7 +157,7 @@ La Cina produce da sola il 75% della seta mondiale. L'Italia — in particolare 
 
 #### Il lino: la fibra più ecologica
 
-Il **lino** (*Linum usitatissimum*) è una pianta da cui si ricavano fibre dallo stelo. Il processo si chiama **macerazione**: gli steli tagliati vengono lasciati sul campo o immersi in acqua per alcune settimane, così i batteri decompongono le parti non fibrose. Le fibre rimaste vengono poi lavorate per filatura.
+==Il **lino** (*Linum usitatissimum*) è una pianta da cui si ricavano fibre dallo stelo.== ==Il processo si chiama **macerazione**: gli steli tagliati vengono lasciati sul campo o immersi in acqua per alcune settimane, così i batteri decompongono le parti non fibrose.== Le fibre rimaste vengono poi lavorate per filatura.
 
 Il lino ha il più basso impatto ambientale tra tutte le fibre naturali principali. Richiede pochissima acqua (la pioggia naturale è sufficiente in Europa), quasi nessun pesticida (la pianta è naturalmente resistente), e l'intera pianta viene utilizzata (semi → olio di lino, stelo → fibra tessile, residui → mangime animale).
 
@@ -169,7 +169,7 @@ Francia e Belgio sono i principali produttori mondiali di lino di qualità (il l
 
 ### Le fibre sintetiche: il tessile del petrolio
 
-Nel 1935, nei laboratori DuPont nel Delaware (USA), un chimico di nome Wallace Carothers sintetizzò per la prima volta il **nylon** — il primo materiale completamente sintetico destinato al tessile. Il nylon 6,6 (così si chiama quella prima versione) era ottenuto da due molecole derivate dal petrolio: l'acido adipico e l'esametilendiammina. Carothers scoprì che queste due molecole, riscaldate insieme, si concatenavano in catene lunghissime — un **polimero** — che poteva essere filato in fibre sottilissime più resistenti di qualsiasi fibra naturale a parità di peso.
+==Nel 1935, nei laboratori DuPont nel Delaware (USA), un chimico di nome Wallace Carothers sintetizzò per la prima volta il **nylon** — il primo materiale completamente sintetico destinato al tessile.== Il nylon 6,6 (così si chiama quella prima versione) era ottenuto da due molecole derivate dal petrolio: l'acido adipico e l'esametilendiammina. Carothers scoprì che queste due molecole, riscaldate insieme, si concatenavano in catene lunghissime — un **polimero** — che poteva essere filato in fibre sottilissime più resistenti di qualsiasi fibra naturale a parità di peso.
 
 Il nylon arrivò sul mercato nel 1938, inizialmente come sostituto della seta nelle calze da donna. Il suo successo fu immediato: più economico, più resistente, più facile da lavare.
 
@@ -183,7 +183,7 @@ Il **poliestere** (o PET tessile) è oggi la fibra più prodotta al mondo: circa
 
 **Proprietà principali:**
 - **Leggerezza:** densità 1,38 g/cm³ — più leggero del cotone (1,54 g/cm³).
-- **Non assorbe acqua:** il poliestere è idrofobo — l'acqua non penetra nella fibra. Per questo asciuga rapidissimamente: una t-shirt in poliestere è asciutta in 1-2 ore contro le 4-6 ore del cotone.
+- **Non assorbe acqua:** il poliestere è idrofobo — l'acqua non penetra nella fibra. ==Per questo asciuga rapidissimamente: una t-shirt in poliestere è asciutta in 1-2 ore contro le 4-6 ore del cotone.==
 - **Resistenza meccanica elevata:** resistenza a trazione fino a 800 MPa per i filati ad alto tenore.
 - **Basso costo:** il poliestere è molto più economico del cotone di qualità equivalente.
 - **Colori vivaci:** assorbe bene le tinture disperse, con colori brillanti e resistenti.
@@ -191,7 +191,7 @@ Il **poliestere** (o PET tessile) è oggi la fibra più prodotta al mondo: circa
 **Usi principali:** abbigliamento sportivo, pile (fleece), fodere, cuscini, imbottiture, bottiglie PET (dal quale si può ricavare fibra riciclata).
 
 **Il problema del poliestere — le microplastiche:**
-Ogni volta che lavi in lavatrice un capo in poliestere, nylon, o acrilico, il movimento meccanico rompe microscopiche fibre dal tessuto. Queste fibre — lunghe meno di 5 mm, spesso meno di 1 mm — si chiamano **microfibre sintetiche** e sono un tipo di microplastica.
+Ogni volta che lavi in lavatrice un capo in poliestere, nylon, o acrilico, il movimento meccanico rompe microscopiche fibre dal tessuto. ==Queste fibre — lunghe meno di 5 mm, spesso meno di 1 mm — si chiamano **microfibre sintetiche** e sono un tipo di microplastica.==
 
 Una singola lavatrice a pieno carico di tessuti sintetici può rilasciare tra **100.000 e 700.000 microfibre** per lavaggio. I depuratori delle acque reflue ne trattengono tra il 72% e il 99% — ma non il 100%. Le fibre che sfuggono finiscono nei fiumi, poi nei mari, poi nell'intestino dei pesci, poi nel nostro piatto.
 
@@ -203,7 +203,7 @@ Dati recenti del 2023: le microfibre tessili sintetiche rappresentano il 35% di 
 
 #### Il nylon: resistenza e versatilità
 
-Il **nylon** (termine generico per le poliammidi) è più resistente del poliestere a trazione e all'abrasione. Per questo si usa dove servono resistenza meccanica e durata: calze, zaini, corde tecniche, tessuti per paracaduti, corde nautiche, parte interna degli pneumatici.
+==Il **nylon** (termine generico per le poliammidi) è più resistente del poliestere a trazione e all'abrasione.== Per questo si usa dove servono resistenza meccanica e durata: calze, zaini, corde tecniche, tessuti per paracaduti, corde nautiche, parte interna degli pneumatici.
 
 Il nylon assorbe leggermente più acqua del poliestere — per questo le calze di nylon diventano un po' appiccicose quando bagnate. Ma la sua resistenza all'abrasione lo rende insostituibile per certi usi.
 
@@ -213,7 +213,7 @@ Produce microplastiche nelle lavatrici, come il poliestere.
 
 #### L'acrilico: la lana che non è lana
 
-L'**acrilico** è stato sviluppato per imitare la lana. Ha un aspetto simile, tiene caldo, è morbido. Costo: molto inferiore alla lana vera.
+==L'**acrilico** è stato sviluppato per imitare la lana.== Ha un aspetto simile, tiene caldo, è morbido. Costo: molto inferiore alla lana vera.
 
 Ma le proprietà sono profondamente diverse: non gestisce l'umidità come la lana (non la assorbe in modo igroscopico), non è igroscopico come la lana merino, non dura quanto la lana di buona qualità. Si pilla (forma grumi in superficie) più facilmente.
 
@@ -223,9 +223,9 @@ Produce grandi quantità di microplastiche nelle lavatrici — forse più del po
 
 #### Il PTFE espanso (Gore-Tex e analoghi): il paradosso impermeabile-traspirante
 
-Il **PTFE** (politetrafluoroetilene) è una plastica dalla chimica molto speciale: è la sostanza meno reattiva mai sintetizzata, con la superficie più "scivolosa" di qualsiasi materiale noto. Lo conoscete come **teflon** — il rivestimento delle padelle antiaderenti.
+==Il **PTFE** (politetrafluoroetilene) è una plastica dalla chimica molto speciale: è la sostanza meno reattiva mai sintetizzata, con la superficie più "scivolosa" di qualsiasi materiale noto.== Lo conoscete come **teflon** — il rivestimento delle padelle antiaderenti.
 
-Ma espanso meccanicamente (stirato a temperature precise), il PTFE forma una membrana con miliardi di micropori per centimetro quadrato. I pori sono abbastanza grandi da lasciar passare il vapore acqueo (sudore) ma troppo piccoli per lasciar passare le gocce d'acqua liquida, che sono molto più grandi.
+==Ma espanso meccanicamente (stirato a temperature precise), il PTFE forma una membrana con miliardi di micropori per centimetro quadrato.== I pori sono abbastanza grandi da lasciar passare il vapore acqueo (sudore) ma troppo piccoli per lasciar passare le gocce d'acqua liquida, che sono molto più grandi.
 
 Il risultato: una membrana impermeabile all'acqua ma traspirante — lascia uscire il vapore del sudore ma non lascia entrare la pioggia. È questo il "segreto" delle giacche tecnica da montagna. La membrana è sottilissima (meno di 1 mm) e viene laminata tra strati di poliestere o nylon per proteggerla meccanicamente.
 
@@ -238,9 +238,9 @@ Il PTFE è molto costoso da produrre, contiene fluoro, e il suo smaltimento è p
 
 ### Le plastiche: una famiglia di settantamila materiali
 
-Quando dici "plastica" stai in realtà usando una parola che copre settantamila materiali diversi con proprietà completamente diverse. Capire la differenza è fondamentale — sia per fare scelte più informate come consumatore, sia per smaltire correttamente.
+==Quando dici "plastica" stai in realtà usando una parola che copre settantamila materiali diversi con proprietà completamente diverse.== Capire la differenza è fondamentale — sia per fare scelte più informate come consumatore, sia per smaltire correttamente.
 
-Tutte le plastiche condividono una caratteristica: sono **polimeri** — catene lunghissime di molecole (monomeri) ripetute migliaia di volte. Le proprietà di una plastica dipendono da: il tipo di monomero di partenza, la lunghezza delle catene, la presenza di ramificazioni, i gruppi chimici laterali, eventuali additivi (plastificanti, coloranti, stabilizzanti UV).
+==Tutte le plastiche condividono una caratteristica: sono **polimeri** — catene lunghissime di molecole (monomeri) ripetute migliaia di volte.== Le proprietà di una plastica dipendono da: il tipo di monomero di partenza, la lunghezza delle catene, la presenza di ramificazioni, i gruppi chimici laterali, eventuali additivi (plastificanti, coloranti, stabilizzanti UV).
 
 Il sistema di classificazione internazionale usa un codice numerico da 1 a 7, con il simbolo del riciclo (tre frecce circolari) che in Italia e in Europa si usa anche senza il numero per indicare riciclabilità in senso lato — il che genera confusione. Vediamo i sette tipi.
 
@@ -284,9 +284,9 @@ Dati 2024: si stima che nei soli oceani siano presenti tra 75 e 199 milioni di t
 
 #### Le bioplastiche: promessa o greenwashing?
 
-Le **bioplastiche** sono plastiche ottenute da materie prime di origine biologica (mais, canna da zucchero, tapioca, alghe) anziché dal petrolio. Il termine comprende due categorie molto diverse che vengono spesso confuse.
+==Le **bioplastiche** sono plastiche ottenute da materie prime di origine biologica (mais, canna da zucchero, tapioca, alghe) anziché dal petrolio.== Il termine comprende due categorie molto diverse che vengono spesso confuse.
 
-**Plastiche bio-based, non biodegradabili:** fabbricate da materie prime vegetali, ma con le stesse proprietà delle plastiche convenzionali — cioè non si degradano. Il bio-PET (per alcune bottiglie di Coca-Cola "Plant Bottle") è un esempio: chimicamente identico al PET normale, si ricicla con il PET normale, non si biodegrada prima. Il vantaggio è solo nella materia prima (non petrolio).
+==**Plastiche bio-based, non biodegradabili:** fabbricate da materie prime vegetali, ma con le stesse proprietà delle plastiche convenzionali — cioè non si degradano.== Il bio-PET (per alcune bottiglie di Coca-Cola "Plant Bottle") è un esempio: chimicamente identico al PET normale, si ricicla con il PET normale, non si biodegrada prima. Il vantaggio è solo nella materia prima (non petrolio).
 
 **Plastiche biodegradabili:** si degradano in condizioni specifiche. Il **PLA** (acido polilattico, da mais o canna da zucchero) si biodegrada in circa 3–6 mesi — ma solo in **impianti di compostaggio industriale** con temperatura di almeno 58°C, umidità controllata e specifici microorganismi. In compostiera domestica a 25°C, il PLA impiega decine di anni. In mare, decenni o secoli. Gettare un bicchiere di PLA nel mare non risolve nulla.
 
@@ -299,7 +299,7 @@ Il termine "bio" o "compostabile" su un prodotto plastico non dice nulla sulla f
 
 ### I materiali compositi: quando 1 + 1 = 3
 
-Un **materiale composito** è fatto da due o più materiali distinti uniti insieme per ottenere proprietà che nessuno dei componenti possiede da solo.
+==Un **materiale composito** è fatto da due o più materiali distinti uniti insieme per ottenere proprietà che nessuno dei componenti possiede da solo.==
 
 Il principio è antico: il mattone di fango misto a paglia è un composito usato in Mesopotamia 5.000 anni fa. Il fango puro si incrina. La paglia pura non regge carichi. Insieme, il mattone è solido.
 
@@ -307,9 +307,9 @@ Il principio è antico: il mattone di fango misto a paglia è un composito usato
 
 #### Il cemento armato: il composito dell'era industriale
 
-Il **cemento armato** è il composito più usato al mondo nelle costruzioni. Capire come funziona è capire la logica dei compositi in generale.
+==Il **cemento armato** è il composito più usato al mondo nelle costruzioni.== Capire come funziona è capire la logica dei compositi in generale.
 
-Il **cemento** (semplificando: calcite + argilla + acqua, poi cotta in forno rotante) è forte in **compressione** — quando lo schiacci regge enormi carichi. Un pilone di cemento regge il peso di un edificio. Ma il cemento è fragile in **trazione** — se lo tiri, o lo pieghi, si spezza relativamente facilmente.
+==Il **cemento** (semplificando: calcite + argilla + acqua, poi cotta in forno rotante) è forte in **compressione** — quando lo schiacci regge enormi carichi.== Un pilone di cemento regge il peso di un edificio. ==Ma il cemento è fragile in **trazione** — se lo tiri, o lo pieghi, si spezza relativamente facilmente.==
 
 L'**acciaio** ha caratteristiche opposte: forte in trazione (puoi tirarci sopra enormemente senza che ceda), ma se costruisci solo colonne in acciaio, sono costose e si deformano termicamente.
 
@@ -323,9 +323,9 @@ Le soluzioni moderne: acciaio inossidabile nelle strutture critiche, acciaio con
 
 #### La fibra di carbonio: il composito ad alte prestazioni
 
-La **fibra di carbonio** (CFRP — Carbon Fiber Reinforced Polymer) è il composito ad alte prestazioni per eccellenza. Ma che cos'è esattamente?
+==La **fibra di carbonio** (CFRP — Carbon Fiber Reinforced Polymer) è il composito ad alte prestazioni per eccellenza.== Ma che cos'è esattamente?
 
-La fibra di carbonio non è un singolo materiale — è un composito a due componenti:
+==La fibra di carbonio non è un singolo materiale — è un composito a due componenti:==
 1. **Le fibre:** filamenti sottilissimi di carbonio quasi puro (95–99% carbonio), con diametro di 5–10 micrometri — 10-20 volte più sottili di un capello umano. Ogni fibra è formata da cristalli di grafite orientati lungo l'asse della fibra, il che le dà una resistenza a trazione straordinaria in quella direzione.
 2. **La matrice:** una resina termoindurente (tipicamente resina epossidica) che incolla e distribuisce il carico tra le fibre.
 
@@ -341,7 +341,7 @@ Per confronto: l'acciaio dolce ha resistenza specifica di circa 51 MPa·cm³/g. 
 **Usi attuali:** telai di Formula 1 (il telaio di un'auto F1 pesa circa 35 kg), fusoliere di aeroplani (il Boeing 787 Dreamliner è per il 50% del peso in carbonio), pale delle turbine eoliche (una pala da 80 m pesa circa 25 tonnellate in carbonio), biciclette da corsa, attrezzatura sportiva (sci, racchette da tennis), protesi biomediche avanzate.
 
 **Il grande problema del carbonio — il riciclo:**
-La resina epossidica che lega le fibre è una plastica termoindurente — una volta indurita, non si può sciogliere di nuovo. Quindi il composito non può essere fuso e riformato come un metallo. Le fibre di carbonio possono essere recuperate (per pirolisi — bruciare la resina in assenza di ossigeno) ma perdono parte delle proprietà meccaniche. La maggior parte degli scarti di fibra di carbonio finisce in discarica o incenerita.
+La resina epossidica che lega le fibre è una plastica termoindurente — una volta indurita, non si può sciogliere di nuovo. ==Quindi il composito non può essere fuso e riformato come un metallo.== Le fibre di carbonio possono essere recuperate (per pirolisi — bruciare la resina in assenza di ossigeno) ma perdono parte delle proprietà meccaniche. La maggior parte degli scarti di fibra di carbonio finisce in discarica o incenerita.
 
 Il mercato mondiale della fibra di carbonio produce circa 150.000 tonnellate/anno. Con il crescente uso in aerospaziale e nel settore eolico, trovare soluzioni di riciclo efficaci è uno dei problemi aperti più urgenti nell'ingegneria dei materiali.
 
@@ -349,7 +349,7 @@ Il mercato mondiale della fibra di carbonio produce circa 150.000 tonnellate/ann
 
 #### La vetroresina: il composito accessibile
 
-La **vetroresina** (GFRP — Glass Fiber Reinforced Polymer) funziona con la stessa logica del carbonio: fibre di vetro + resina epossidica o poliestere. Ma le fibre di vetro sono molto più economiche da produrre rispetto alle fibre di carbonio.
+La **vetroresina** (GFRP — Glass Fiber Reinforced Polymer) funziona con la stessa logica del carbonio: fibre di vetro + resina epossidica o poliestere. ==Ma le fibre di vetro sono molto più economiche da produrre rispetto alle fibre di carbonio.==
 
 Proprietà: resistenza a trazione di 200–400 MPa, densità 1,8–2,1 g/cm³. Molto meno performante del carbonio, ma a un decimo del costo.
 
@@ -361,7 +361,7 @@ Problema del riciclo: identico alla fibra di carbonio — la resina termoinduren
 
 #### Il calcestruzzo alleggerito con fibre di PP o vetro
 
-Nei cantieri moderni si usano spesso calcestruzzi a cui vengono aggiunte fibre corte di polipropilene o di vetro durante la mescolazione. Queste fibre non aumentano la resistenza strutturale principale, ma controllano la **fessurazione ritiro** — le microfratture che si formano mentre il calcestruzzo secca. Le fibre corte cuciono queste microfratture insieme, rendendo il calcestruzzo più resistente agli urti e agli shock termici. È un composito semplice, economico, e ampiamente usato nei pavimenti industriali.
+Nei cantieri moderni si usano spesso calcestruzzi a cui vengono aggiunte fibre corte di polipropilene o di vetro durante la mescolazione. Queste fibre non aumentano la resistenza strutturale principale, ma controllano la **fessurazione ritiro** — le microfratture che si formano mentre il calcestruzzo secca. ==Le fibre corte cuciono queste microfratture insieme, rendendo il calcestruzzo più resistente agli urti e agli shock termici.== È un composito semplice, economico, e ampiamente usato nei pavimenti industriali.
 
 ---
 
@@ -375,7 +375,7 @@ C'è un collegamento importante che spesso si dimentica. Le celle fotovoltaiche 
 
 Un pannello solare che produce energia rinnovabile per 25–30 anni è, fisicamente, un composito che include vari materiali plastici. A fine vita, riciclare un pannello fotovoltaico è difficile proprio per questo motivo. L'UE ha normativa specifica (RAEE) per la raccolta, ma il recupero dei materiali è ancora incompleto.
 
-Questo non significa che i pannelli siano "cattivi" — producono energia pulita per decenni e il bilancio ambientale complessivo è molto positivo. Ma significa che anche le tecnologie rinnovabili generano problemi di fine vita dei materiali che vanno affrontati.
+Questo non significa che i pannelli siano "cattivi" — producono energia pulita per decenni e il bilancio ambientale complessivo è molto positivo. ==Ma significa che anche le tecnologie rinnovabili generano problemi di fine vita dei materiali che vanno affrontati.==
 
 > 🔬 **Collegamento STEM — Chimica:**
 > Tutti i polimeri sintetici derivano da **monomeri** — molecole piccole con almeno due gruppi reattivi. Il poliestere si forma dalla reazione tra acido tereftalico e glicole etilenico: i due gruppi reattivi si "appendono" uno all'altro in una catena che può diventare lunga migliaia di unità. La reazione si chiama **policondensazione** ed è catalizzata da metalli (antimonio, germanio) o acidi. Ogni molecola polimerica finale contiene tra 100 e 20.000 unità monomeriche ripetute. La lunghezza media delle catene (peso molecolare medio) determina molte delle proprietà fisiche del materiale: catene più lunghe = plastica più resistente e più viscosa quando fusa.

@@ -28,7 +28,7 @@ Il telefono che usi è stato progettato in un Paese, montato in un altro, con ma
 
 **Un mondo collegato**
 
-La **globalizzazione** è il processo che ha legato fra loro le economie, le culture e le persone di tutto il pianeta. Dura da secoli, ma ha accelerato moltissimo negli ultimi quarant'anni, con le navi portacontainer e con internet.
+==La **globalizzazione** è il processo che ha legato fra loro le economie, le culture e le persone di tutto il pianeta.== Dura da secoli, ma ha accelerato moltissimo negli ultimi quarant'anni, con le navi portacontainer e con internet.
 
 Ha avuto effetti buoni e cattivi, ed entrambi sono veri.
 
@@ -41,13 +41,13 @@ I vantaggi e i costi non sono toccati alle stesse persone.
 
 **Perché si commercia**
 
-Nessun Paese produce tutto al meglio. Ognuno vende ciò che sa fare bene e compra il resto: è il commercio internazionale. L'Italia vende soprattutto macchinari, farmaci, moda e cibo di qualità. Compra soprattutto energia, materie prime ed elettronica.
+Nessun Paese produce tutto al meglio. ==Ognuno vende ciò che sa fare bene e compra il resto: è il commercio internazionale.== L'Italia vende soprattutto macchinari, farmaci, moda e cibo di qualità. Compra soprattutto energia, materie prime ed elettronica.
 
-Le regole si decidono con accordi fra Stati. Uno strumento molto usato è il **dazio**: una tassa sulle merci che arrivano dall'estero. Protegge chi produce in casa, ma fa salire i prezzi per chi compra.
+Le regole si decidono con accordi fra Stati. ==Uno strumento molto usato è il **dazio**: una tassa sulle merci che arrivano dall'estero.== Protegge chi produce in casa, ma fa salire i prezzi per chi compra.
 
 **Fabbriche che si spostano**
 
-La **delocalizzazione** è la scelta di spostare la produzione in un Paese dove costa meno. Il motivo principale è il costo del lavoro: in alcuni Paesi un'ora di lavoro in fabbrica costa decine di volte meno che in Italia.
+==La **delocalizzazione** è la scelta di spostare la produzione in un Paese dove costa meno.== Il motivo principale è il costo del lavoro: in alcuni Paesi un'ora di lavoro in fabbrica costa decine di volte meno che in Italia.
 
 Chi ci guadagna? L'azienda, e chi compra a prezzi più bassi. In parte anche i lavoratori del nuovo Paese, che trovano un impiego. Chi ci perde? I lavoratori del Paese di partenza, e spesso l'ambiente, quando le regole sono meno severe.
 
@@ -57,7 +57,7 @@ Negli ultimi anni alcune aziende hanno fatto il percorso inverso e hanno riporta
 
 **Dalla linea al cerchio**
 
-L'economia che conosciamo è una linea: estrai, produci, usa, butta. Funziona finché le risorse sembrano infinite e c'è posto per i rifiuti. Oggi né l'una né l'altra cosa è più vera.
+==L'economia che conosciamo è una linea: estrai, produci, usa, butta.== Funziona finché le risorse sembrano infinite e c'è posto per i rifiuti. Oggi né l'una né l'altra cosa è più vera.
 
 L'**economia circolare** trasforma la linea in un cerchio: gli oggetti si progettano fin dall'inizio per durare, essere riparati e infine tornare materia prima.
 
@@ -94,7 +94,7 @@ Intanto il passaggio a un'economia più pulita cambia i mestieri. Crescono i tec
 
 ### Globalizzazione: cos'è, cosa ha cambiato, cosa ha promesso e cosa non ha mantenuto
 
-La **globalizzazione** è il processo attraverso cui le economie, le culture e le popolazioni del mondo sono diventate sempre più interdipendenti. Non è un evento con una data di inizio: è un processo secolare che ha accelerato drasticamente dalla seconda metà del Novecento grazie a due fattori tecnologici — il container (che ha ridotto il costo del trasporto marittimo del 90% rispetto al 1960) e internet (che ha reso possibile coordinarsi istantaneamente con fornitori e clienti dall'altra parte del mondo).
+==La **globalizzazione** è il processo attraverso cui le economie, le culture e le popolazioni del mondo sono diventate sempre più interdipendenti.== Non è un evento con una data di inizio: è un processo secolare che ha accelerato drasticamente dalla seconda metà del Novecento grazie a due fattori tecnologici — il container (che ha ridotto il costo del trasporto marittimo del 90% rispetto al 1960) e internet (che ha reso possibile coordinarsi istantaneamente con fornitori e clienti dall'altra parte del mondo).
 
 I pro della globalizzazione (con dati):
 - Il numero di persone in povertà estrema (meno di 2,15 dollari al giorno) è sceso da circa il 36% della popolazione mondiale nel 1990 a meno del 10% nel 2019 (Banca Mondiale). Molto di questa riduzione è avvenuta in Asia orientale — Cina, Vietnam, Corea del Sud — grazie all'integrazione nelle catene produttive globali.
@@ -107,19 +107,19 @@ I contro della globalizzazione (con dati):
 - L'intensificazione del commercio globale ha aumentato le emissioni di CO₂ legate ai trasporti internazionali.
 - Alcune catene produttive globali esternalizzano i costi sociali e ambientali sui paesi più poveri, dove le tutele sono minori.
 
-La globalizzazione non è né tutta buona né tutta cattiva: è un processo con benefici e costi distribuiti in modo molto diseguale — tra paesi, tra generazioni e tra classi sociali.
+==La globalizzazione non è né tutta buona né tutta cattiva: è un processo con benefici e costi distribuiti in modo molto diseguale — tra paesi, tra generazioni e tra classi sociali.==
 
 ---
 
 ### Commercio internazionale: chi vende cosa, chi controlla le regole
 
-Il **commercio internazionale** è lo scambio di beni e servizi attraverso i confini nazionali. I paesi commerciano perché nessuno può produrre tutto al meglio: ogni paese ha **vantaggi comparati** — settori dove è relativamente più efficiente — e conviene specializzarsi e scambiare.
+==Il **commercio internazionale** è lo scambio di beni e servizi attraverso i confini nazionali.== I paesi commerciano perché nessuno può produrre tutto al meglio: ogni paese ha **vantaggi comparati** — settori dove è relativamente più efficiente — e conviene specializzarsi e scambiare.
 
 L'Italia esporta principalmente macchinari, prodotti farmaceutici, veicoli, moda e agroalimentare di qualità. Importa principalmente energia (petrolio, gas), materie prime, prodotti elettronici e beni di consumo a basso costo.
 
 Le regole del commercio internazionale sono gestite da istituzioni globali:
 
-**WTO (World Trade Organization):** l'organizzazione che negozia le regole del commercio globale. I suoi principi fondamentali: nessun paese può discriminare le importazioni di un altro (principio della nazione più favorita), riduzione progressiva dei dazi doganali, protezione della proprietà intellettuale. Il WTO non impedisce tutto il protezionismo, ma lo regola e prevede meccanismi di risoluzione delle dispute. Oggi ha 164 paesi membri.
+**WTO (World Trade Organization):** l'organizzazione che negozia le regole del commercio globale. ==I suoi principi fondamentali: nessun paese può discriminare le importazioni di un altro (principio della nazione più favorita), riduzione progressiva dei dazi doganali, protezione della proprietà intellettuale.== Il WTO non impedisce tutto il protezionismo, ma lo regola e prevede meccanismi di risoluzione delle dispute. Oggi ha 164 paesi membri.
 
 **Accordi bilaterali:** trattati tra due paesi (o blocchi) che stabiliscono condizioni preferenziali di scambio. L'Unione Europea ha accordi bilaterali con il Canada (CETA), il Giappone (EPA), e molti altri. Questi accordi non riguardano solo i dazi: includono spesso norme su sicurezza alimentare, protezione della proprietà intellettuale e, sempre più spesso, standard di lavoro e ambiente.
 
@@ -129,9 +129,9 @@ Le regole del commercio internazionale sono gestite da istituzioni globali:
 
 ### Delocalizzazione: perché le aziende spostano la produzione
 
-La **delocalizzazione** (o offshoring) è la decisione di spostare parte della produzione in un altro paese, generalmente con costi del lavoro, energia, normative ambientali o fiscali più vantaggiosi.
+==La **delocalizzazione** (o offshoring) è la decisione di spostare parte della produzione in un altro paese, generalmente con costi del lavoro, energia, normative ambientali o fiscali più vantaggiosi.==
 
-Perché si delocalizza? Le imprese cercano di ridurre i costi. Il salario orario manifatturiero medio in Bangladesh è circa 0,70-0,90 euro (2023). In Italia è circa 18-22 euro. La stessa operazione di cucitura costa 20-30 volte di meno in Bangladesh. Per un'azienda che produce milioni di capi all'anno, questa differenza vale decine o centinaia di milioni di euro.
+Perché si delocalizza? ==Le imprese cercano di ridurre i costi.== Il salario orario manifatturiero medio in Bangladesh è circa 0,70-0,90 euro (2023). In Italia è circa 18-22 euro. La stessa operazione di cucitura costa 20-30 volte di meno in Bangladesh. Per un'azienda che produce milioni di capi all'anno, questa differenza vale decine o centinaia di milioni di euro.
 
 Chi ci guadagna nella delocalizzazione? L'azienda (margini più alti), i consumatori nei paesi ricchi (prezzi più bassi), i lavoratori nei paesi di destinazione (stipendi bassi ma spesso superiori alle alternative locali nella fase iniziale). Chi ci perde? I lavoratori nel paese di origine (perdita di posti di lavoro), le comunità locali che dipendevano da quell'industria, i lavoratori nei paesi di destinazione se le condizioni sono sfruttative, gli ecosistemi dei paesi di destinazione se le norme ambientali sono più permissive.
 
@@ -141,9 +141,9 @@ La delocalizzazione non è immutabile: dal 2018 in poi, alcune aziende hanno avv
 
 ### Economia circolare: dall'usa-e-getta al ciclo continuo
 
-Il modello economico dominante del XX secolo è **lineare**: estrai materia prima → produci → vendi → consuma → butta. Si chiama cradle-to-grave (dalla culla alla tomba). Funziona finché le risorse naturali sono abbondanti e lo spazio per smaltire i rifiuti è illimitato. Non è nessuna delle due cose.
+==Il modello economico dominante del XX secolo è **lineare**: estrai materia prima → produci → vendi → consuma → butta.== Si chiama cradle-to-grave (dalla culla alla tomba). Funziona finché le risorse naturali sono abbondanti e lo spazio per smaltire i rifiuti è illimitato. Non è nessuna delle due cose.
 
-L'**economia circolare** propone un modello alternativo: **cradle-to-cradle** (dalla culla alla culla). I materiali e i prodotti vengono progettati per essere riutilizzati, riparati o riciclati alla fine della vita, restando in ciclo il più a lungo possibile. L'obiettivo è eliminare i rifiuti come concetto — non gestirli, ma non produrli.
+==L'**economia circolare** propone un modello alternativo: **cradle-to-cradle** (dalla culla alla culla).== I materiali e i prodotti vengono progettati per essere riutilizzati, riparati o riciclati alla fine della vita, restando in ciclo il più a lungo possibile. L'obiettivo è eliminare i rifiuti come concetto — non gestirli, ma non produrli.
 
 Un modo per ricordare la gerarchia delle azioni è il modello delle **4R**, in ordine di priorità decrescente:
 
@@ -162,7 +162,7 @@ In pratica, l'economia circolare si applica su tre livelli:
 
 **Ciclo tecnico:** i materiali artificiali (metalli, plastica, vetro) vengono recuperati e reimmessi nel processo produttivo attraverso il riciclo o il ricondizionamento. Una batteria dello smartphone viene smontata, il cobalto recuperato e riusato per una nuova batteria.
 
-**Modello di servizio (product-as-a-service):** invece di vendere un prodotto, l'azienda vende l'uso del prodotto e mantiene la proprietà. Michelin non vende pneumatici alle compagnie aeree: vende "chilometri di atterraggio". Alla fine della vita del pneumatico, lo recupera e lo ricicla. Questo allinea gli interessi dell'azienda (meno materiale usa = più profitto) con quelli ambientali.
+==**Modello di servizio (product-as-a-service):** invece di vendere un prodotto, l'azienda vende l'uso del prodotto e mantiene la proprietà.== Michelin non vende pneumatici alle compagnie aeree: vende "chilometri di atterraggio". Alla fine della vita del pneumatico, lo recupera e lo ricicla. Questo allinea gli interessi dell'azienda (meno materiale usa = più profitto) con quelli ambientali.
 
 Il mercato dell'economia circolare vale oggi circa 4.500 miliardi di dollari a livello globale (Ellen MacArthur Foundation, 2023) ed è in crescita del 7-9% all'anno.
 
@@ -173,13 +173,13 @@ Il mercato dell'economia circolare vale oggi circa 4.500 miliardi di dollari a l
 
 ### Il lavoro: tipologie, diritti, storia
 
-Il **lavoro** è il fattore di produzione più direttamente legato alla vita delle persone. Non è un astratto input produttivo: è l'attività con cui si costruisce un'identità, si mantiene una famiglia, si contribuisce alla società.
+==Il **lavoro** è il fattore di produzione più direttamente legato alla vita delle persone.== Non è un astratto input produttivo: è l'attività con cui si costruisce un'identità, si mantiene una famiglia, si contribuisce alla società.
 
 Le tipologie di lavoro nella contemporaneità:
 
-**Lavoro dipendente.** Il lavoratore è assunto da un'impresa con un contratto di lavoro che specifica salario, ore, mansioni, tutele. In Italia, il Contratto Collettivo Nazionale di Lavoro (CCNL) negoziato tra sindacati e associazioni datoriali stabilisce le condizioni minime per ogni categoria. Circa 16 milioni di lavoratori dipendenti in Italia.
+==**Lavoro dipendente.** Il lavoratore è assunto da un'impresa con un contratto di lavoro che specifica salario, ore, mansioni, tutele.== In Italia, il Contratto Collettivo Nazionale di Lavoro (CCNL) negoziato tra sindacati e associazioni datoriali stabilisce le condizioni minime per ogni categoria. Circa 16 milioni di lavoratori dipendenti in Italia.
 
-**Lavoro autonomo.** Il lavoratore vende le proprie competenze a diversi clienti senza essere dipendente di nessuno. Professionisti (avvocati, architetti, medici), artigiani, consulenti, liberi professionisti. Circa 5 milioni in Italia.
+==**Lavoro autonomo.** Il lavoratore vende le proprie competenze a diversi clienti senza essere dipendente di nessuno.== Professionisti (avvocati, architetti, medici), artigiani, consulenti, liberi professionisti. Circa 5 milioni in Italia.
 
 **Gig economy.** Un modello ibrido dove piattaforme digitali (Deliveroo, Uber, Airbnb, TaskRabbit) mettono in contatto lavoratori e clienti per singoli "gig" (incarichi). I lavoratori sono formalmente autonomi, ma nella pratica dipendono dalla piattaforma per i clienti, per il prezzo e per il rating che determina la loro visibilità. La questione legale e giuslavoristica è aperta in tutta Europa: sono lavoratori dipendenti o autonomi? La Corte di Giustizia Europea e i tribunali di vari paesi hanno dato risposte diverse.
 
@@ -230,7 +230,7 @@ I principi dei GAS sono codificati nell'associazione RETES (Rete Italiana di Eco
 
 In Italia ci sono circa 1.500 GAS attivi, con circa 20.000 famiglie partecipanti. Il fatturato complessivo stimato è di 50-70 milioni di euro all'anno — una nicchia del mercato alimentare totale, ma in crescita costante.
 
-Perché i GAS funzionano come risposta alla globalizzazione? Perché cortocircuitano la catena del valore: eliminando la grande distribuzione (che può catturare il 40-60% del prezzo finale), il produttore riceve una quota maggiore del prezzo, il consumatore spende uguale o poco di più, e la filiera diventa trasparente e verificabile. Non è la soluzione al sistema globale — ma è un esempio di come le persone possono scegliere come organizzare i propri consumi.
+Perché i GAS funzionano come risposta alla globalizzazione? Perché cortocircuitano la catena del valore: eliminando la grande distribuzione (che può catturare il 40-60% del prezzo finale), il produttore riceve una quota maggiore del prezzo, il consumatore spende uguale o poco di più, e la filiera diventa trasparente e verificabile. ==Non è la soluzione al sistema globale — ma è un esempio di come le persone possono scegliere come organizzare i propri consumi.==
 
 ---
 

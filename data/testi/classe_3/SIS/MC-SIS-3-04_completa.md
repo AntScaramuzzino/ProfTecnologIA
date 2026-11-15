@@ -36,7 +36,7 @@ Il lavoro cambia sotto la spinta di quattro grandi forze.
 
 **Che cosa sostituisce una macchina**
 
-Una macchina di solito sostituisce un compito, cioè un pezzo di mestiere, e non il mestiere intero. I compiti più a rischio sono quelli ripetitivi, che seguono sempre le stesse regole: inserire dati, fare la stessa operazione cento volte.
+==Una macchina di solito sostituisce un compito, cioè un pezzo di mestiere, e non il mestiere intero.== I compiti più a rischio sono quelli ripetitivi, che seguono sempre le stesse regole: inserire dati, fare la stessa operazione cento volte.
 
 Resistono meglio i compiti che chiedono di capire una persona, risolvere un problema mai visto, inventare, muoversi in un ambiente disordinato. Un idraulico che ripara un guasto in una casa vecchia è difficile da automatizzare quanto un medico.
 
@@ -50,7 +50,7 @@ Le professioni scientifiche e tecniche, dette **STEM**, sono tra le più richies
 
 La capacità non c'entra: a scuola, nelle materie scientifiche, le ragazze vanno bene quanto i ragazzi, e spesso meglio. La differenza nasce al momento di scegliere. Pesano gli **stereotipi**, come l'idea che la tecnologia sia "roba da maschi", che si assorbe già da piccoli. Pesano le aspettative degli adulti, anche quando non se ne accorgono. E pesa la mancanza di esempi: è difficile immaginarsi in un mestiere dove non vedi nessuno che ti somiglia.
 
-È una perdita per tutti: restano fuori persone capaci, proprio dove mancano lavoratori.
+==È una perdita per tutti: restano fuori persone capaci, proprio dove mancano lavoratori.==
 
 **Quello che ti porti dietro**
 
@@ -77,11 +77,11 @@ Per orientarsi esiste un modello molto usato, il **RIASEC**. Descrive sei tipi d
 | Intraprendente | Organizzare, guidare, convincere |
 | Convenzionale | Mettere ordine, seguire procedure precise |
 
-Nessuno è un tipo solo: ognuno è una combinazione, di solito di tre. Il modello non ti dice quale mestiere fare. Ti aiuta a capire in quali ambienti stai bene. E gli interessi cambiano: quello che esce oggi è una fotografia, e tra un anno può essere diversa.
+==Nessuno è un tipo solo: ognuno è una combinazione, di solito di tre.== Il modello non ti dice quale mestiere fare. Ti aiuta a capire in quali ambienti stai bene. E gli interessi cambiano: quello che esce oggi è una fotografia, e tra un anno può essere diversa.
 
 **Un percorso si costruisce**
 
-Il titolo di studio apre una porta. Poi conta quello che sai fare, e che puoi mostrare. Un **portfolio** è una raccolta di prove: un progetto finito, un problema risolto, un oggetto costruito. Puoi cominciarlo adesso, con i lavori di quest'anno.
+Il titolo di studio apre una porta. Poi conta quello che sai fare, e che puoi mostrare. ==Un **portfolio** è una raccolta di prove: un progetto finito, un problema risolto, un oggetto costruito.== Puoi cominciarlo adesso, con i lavori di quest'anno.
 
 E si continua a imparare per tutta la vita: chi oggi ha un lavoro dovrà aggiornarsi più volte.
 
@@ -105,9 +105,9 @@ Il mercato del lavoro del 2035 sarà diverso da quello di oggi per l'effetto com
 
 **Crisi climatica e transizione ecologica.** La necessità di decarbonizzare l'economia entro il 2050 trasforma interi settori: l'edilizia (tutti gli edifici europei devono essere ristrutturati per efficienza energetica entro il 2050), l'energia (chiusura delle centrali fossili, espansione delle rinnovabili), l'industria (siderurgia, chimica, cemento devono ridurre radicalmente le emissioni), i trasporti (elettrificazione della mobilità). La transizione crea più posti di quanti ne distrugge nel lungo periodo, ma richiede riqualificazione massiccia.
 
-**Cambiamenti demografici.** Nei paesi sviluppati, la popolazione invecchia: in Italia, entro il 2040, ci saranno più persone over 65 che persone tra 15 e 64 anni. Questo significa: alta domanda di lavoro nei servizi di cura e sanità, necessità di produttività più alta per mantenere il livello di benessere, e probabilmente revisione delle età pensionabili.
+**Cambiamenti demografici.** Nei paesi sviluppati, la popolazione invecchia: in Italia, entro il 2040, ci saranno più persone over 65 che persone tra 15 e 64 anni. ==Questo significa: alta domanda di lavoro nei servizi di cura e sanità, necessità di produttività più alta per mantenere il livello di benessere, e probabilmente revisione delle età pensionabili.==
 
-**Digitalizzazione.** Anche i settori tradizionali — agricoltura, manifattura, edilizia — stanno incorporando tecnologie digitali: sensori, dati, automazione, robotica. Un agricoltore moderno usa droni per monitorare le colture e sistemi IA per ottimizzare l'irrigazione. Un operaio di una fabbrica moderna lavora con sistemi di realtà aumentata che lo guidano nell'assemblaggio. Il "lavoro digitale" non è solo per i programmatori.
+==**Digitalizzazione.** Anche i settori tradizionali — agricoltura, manifattura, edilizia — stanno incorporando tecnologie digitali: sensori, dati, automazione, robotica.== Un agricoltore moderno usa droni per monitorare le colture e sistemi IA per ottimizzare l'irrigazione. Un operaio di una fabbrica moderna lavora con sistemi di realtà aumentata che lo guidano nell'assemblaggio. Il "lavoro digitale" non è solo per i programmatori.
 
 ---
 
@@ -138,12 +138,12 @@ Due osservazioni importanti: primo, quasi tutti i lavori "in declino" sono ruoli
 
 Le professioni STEM (Science, Technology, Engineering, Mathematics) sono tra le più richieste e meglio retribuite. Eppure, in Italia e in tutta Europa, le donne sono fortemente sottorappresentate: rappresentano solo il 17% dei laureati in informatica e il 25% degli ingegneri (EUROSTAT, 2022).
 
-Questa non è una questione di capacità: le ragazze ottengono risultati scolastici uguali o migliori dei ragazzi nelle materie scientifiche fino alla scuola secondaria. Il gap si apre nelle scelte di indirizzo alle superiori e all'università.
+==Questa non è una questione di capacità: le ragazze ottengono risultati scolastici uguali o migliori dei ragazzi nelle materie scientifiche fino alla scuola secondaria.== Il gap si apre nelle scelte di indirizzo alle superiori e all'università.
 
 Le cause documentate dalla ricerca:
 - **Stereotipi culturali:** l'idea che "la tecnologia è per i maschi" è interiorizzata precocemente, spesso prima dei 10 anni, attraverso i giocattoli, i media, i modelli di ruolo.
 - **Effetto pygmalion:** le aspettative di insegnanti e genitori (spesso inconsapevoli) influenzano le prestazioni. Se un insegnante di matematica si aspetta inconsciamente che le ragazze siano meno brave, lo comunica in modi sottili che influenzano la fiducia delle studentesse.
-- **Mancanza di modelli di ruolo:** se non vedi donne che lavorano in informatica, è più difficile immaginarti in quel ruolo.
+- ==**Mancanza di modelli di ruolo:** se non vedi donne che lavorano in informatica, è più difficile immaginarti in quel ruolo.==
 - **Ambiente ostile:** le comunità tech hanno storicamente avuto culture poco inclusive verso le donne.
 
 Le conseguenze economiche sono concrete: l'Unione Europea stima che colmare lo STEM gap potrebbe aumentare il PIL europeo di 820 miliardi di euro (un aumento del 2,2%) entro il 2050, semplicemente includendo nel mercato del lavoro tecnico persone che oggi ne sono escluse per ragioni culturali.
@@ -160,11 +160,11 @@ Le **soft skills** — o competenze trasversali — sono quelle capacità che no
 
 **Collaborazione e lavoro in team.** La maggior parte dei lavori si svolge in team. La capacità di lavorare efficacemente con persone diverse per background, cultura e opinioni è critica — e si impara con la pratica, non con la teoria.
 
-**Pensiero critico.** La capacità di analizzare le informazioni, valutare le fonti, identificare i bias, costruire argomentazioni fondate e cambiare idea di fronte a nuove evidenze. In un mondo di informazioni abbondanti e spesso inaffidabili, questa è la competenza di sopravvivenza cognitiva.
+**Pensiero critico.** La capacità di analizzare le informazioni, valutare le fonti, identificare i bias, costruire argomentazioni fondate e cambiare idea di fronte a nuove evidenze. ==In un mondo di informazioni abbondanti e spesso inaffidabili, questa è la competenza di sopravvivenza cognitiva.==
 
 **Adattabilità.** La capacità di imparare cose nuove rapidamente, di lavorare in contesti di incertezza, di cambiare metodo quando quello che funzionava smette di funzionare. In un mercato del lavoro che cambia a questa velocità, chi è rigido è vulnerabile.
 
-**Intelligenza emotiva.** La capacità di riconoscere e gestire le proprie emozioni, di comprendere quelle degli altri, di costruire relazioni basate sulla fiducia. Non è "essere buoni": è una competenza professionale misurabile che predice performance lavorativa meglio del QI in molti contesti.
+**Intelligenza emotiva.** La capacità di riconoscere e gestire le proprie emozioni, di comprendere quelle degli altri, di costruire relazioni basate sulla fiducia. ==Non è "essere buoni": è una competenza professionale misurabile che predice performance lavorativa meglio del QI in molti contesti.==
 
 Il paradosso: queste competenze si sviluppano nei contesti scolastici meno standardizzati — nei laboratori, nei progetti collaborativi, nelle discussioni aperte, nei compiti di realtà — non nelle prove a risposta multipla. Il libro che stai leggendo adesso è costruito esattamente per sviluppare queste competenze.
 
@@ -194,13 +194,13 @@ Ogni persona è una combinazione di questi tipi (il codice Holland è una triple
 
 Un percorso professionale non si pianifica una volta per sempre: si costruisce iterativamente, come un Lean Startup applicato alla propria vita.
 
-**Competenze, non credenziali.** Il titolo di studio è una porta di ingresso, non un lasciapassare permanente. Quello che conta nel lungo periodo è cosa sai fare, non cosa hai studiato. Le competenze si documentano — con portfolio, certificazioni, progetti reali, contributi open source, pubblicazioni.
+==**Competenze, non credenziali.** Il titolo di studio è una porta di ingresso, non un lasciapassare permanente.== Quello che conta nel lungo periodo è cosa sai fare, non cosa hai studiato. Le competenze si documentano — con portfolio, certificazioni, progetti reali, contributi open source, pubblicazioni.
 
-**Il portfolio delle competenze.** Un portfolio non è un curriculum vitae. È una raccolta di prove concrete di quello che sai fare: un progetto realizzato, un problema risolto, un processo migliorato. Per uno studente di terza media, un portfolio può essere: il progetto di modellazione 3D realizzato in Zona 4 di MC-DIS-3-01, l'audit di accessibilità prodotto in MC-DIG-3-04, il Business Model Canvas di MC-SIS-3-03. Ogni compito di realtà di questo libro è un pezzo potenziale di un portfolio.
+==**Il portfolio delle competenze.** Un portfolio non è un curriculum vitae.== È una raccolta di prove concrete di quello che sai fare: un progetto realizzato, un problema risolto, un processo migliorato. Per uno studente di terza media, un portfolio può essere: il progetto di modellazione 3D realizzato in Zona 4 di MC-DIS-3-01, l'audit di accessibilità prodotto in MC-DIG-3-04, il Business Model Canvas di MC-SIS-3-03. Ogni compito di realtà di questo libro è un pezzo potenziale di un portfolio.
 
 **La rete professionale.** Non è solo chi conosci: è chi ti conosce come professionista. Si costruisce partecipando a eventi, contribuendo a progetti, essendo presente nelle comunità del proprio settore. LinkedIn è il sistema di documentazione della rete professionale digitale.
 
-**L'apprendimento continuo.** Il World Economic Forum stima che nel 2025 oltre il 50% dei lavoratori avrà bisogno di riqualificazione significativa. L'apprendimento non finisce con la scuola: è una pratica permanente. Le piattaforme di apprendimento online (Coursera, edX, Google Skillshop) rendono accessibile formazione di qualità a basso costo.
+==**L'apprendimento continuo.** Il World Economic Forum stima che nel 2025 oltre il 50% dei lavoratori avrà bisogno di riqualificazione significativa.== L'apprendimento non finisce con la scuola: è una pratica permanente. Le piattaforme di apprendimento online (Coursera, edX, Google Skillshop) rendono accessibile formazione di qualità a basso costo.
 
 **L'alternanza scuola-lavoro** (PCTO — Percorsi per le Competenze Trasversali e per l'Orientamento) è lo strumento istituzionale per iniziare a costruire esperienza professionale durante la scuola superiore. Non è solo "fare stage": è documentare le competenze acquisite in contesto reale.
 

@@ -34,10 +34,10 @@ I materiali di sempre, come legno, acciaio e plastica, funzionano ancora benissi
 
 La parola **bioplastica** nasconde due idee diverse, che spesso si confondono.
 
-- **Bio-based** vuol dire che viene da piante, come mais o canna da zucchero, invece che dal petrolio.
-- **Biodegradabile** vuol dire che i microrganismi riescono a decomporla.
+- ==**Bio-based** vuol dire che viene da piante, come mais o canna da zucchero, invece che dal petrolio.==
+- ==**Biodegradabile** vuol dire che i microrganismi riescono a decomporla.==
 
-Una plastica può avere una qualità senza l'altra. Solo quando le ha tutte e due è una bioplastica completa.
+Una plastica può avere una qualità senza l'altra. ==Solo quando le ha tutte e due è una bioplastica completa.==
 
 E c'è un trucco da conoscere. Quasi tutte le bioplastiche si decompongono solo negli impianti di **compostaggio** industriale, dove fa caldo e l'umidità è controllata. Se butti per terra una forchetta "compostabile", resta lì per anni come una di plastica normale.
 
@@ -45,7 +45,7 @@ E c'è un trucco da conoscere. Quasi tutte le bioplastiche si decompongono solo 
 
 **Un foglio spesso un atomo**
 
-Il **grafene** è un foglio di carbonio spesso un solo atomo. Il carbonio è lo stesso della mina della tua matita.
+==Il **grafene** è un foglio di carbonio spesso un solo atomo.== Il carbonio è lo stesso della mina della tua matita.
 
 È il materiale delle esagerazioni: a parità di peso è circa 200 volte più resistente dell'acciaio, conduce la corrente meglio del rame ed è quasi trasparente. Il problema è produrlo: farne tanto e di buona qualità costa ancora moltissimo. Per questo oggi lo trovi soprattutto nei laboratori.
 
@@ -59,7 +59,7 @@ Un'altra strada è costruire materiali nuovi partendo dagli scarti.
 
 **Quasi aria, e metalli con la memoria**
 
-L'**aerogel** è il solido più leggero che esista: è fatto quasi tutto di aria. È un isolante eccezionale e protegge dal freddo i veicoli mandati su Marte. È però fragile e costoso.
+==L'**aerogel** è il solido più leggero che esista: è fatto quasi tutto di aria.== È un isolante eccezionale e protegge dal freddo i veicoli mandati su Marte. È però fragile e costoso.
 
 Le **leghe a memoria di forma** sono metalli che, scaldati, tornano da soli alla forma di partenza. I fili degli apparecchi per i denti funzionano così: con il calore della bocca tirano piano piano i denti al loro posto.
 
@@ -87,7 +87,7 @@ Prima di esplorare i materiali innovativi, vale la pena capire perché esistono.
 
 **Il problema delle prestazioni estreme.** L'elettronica moderna richiede materiali che conducano l'elettricità meglio del rame, ma siano molto più leggeri. I satelliti richiedono materiali che resistano a sbalzi termici di 300°C tra lato solare e lato in ombra. Le turbine degli aerei richiedono materiali che reggano 1.400°C senza perdere resistenza meccanica. I materiali tradizionali non ce la fanno. Servono materiali nuovi.
 
-**Il problema delle risorse limitate.** Certi materiali tradizionali — cobalto, litio, terre rare — sono distribuiti in modo molto diseguale nel mondo, estratti in condizioni spesso problematiche, e non abbondanti. La dipendenza da questi materiali crea vulnerabilità. I materiali innovativi a volte permettono di fare le stesse cose con elementi più abbondanti e meno critici.
+==**Il problema delle risorse limitate.** Certi materiali tradizionali — cobalto, litio, terre rare — sono distribuiti in modo molto diseguale nel mondo, estratti in condizioni spesso problematiche, e non abbondanti.== ==La dipendenza da questi materiali crea vulnerabilità.== I materiali innovativi a volte permettono di fare le stesse cose con elementi più abbondanti e meno critici.
 
 > 💡 **Lo sapevi?** Secondo l'Unione Europea, ci sono oggi 34 **materie prime critiche** — cioè materiali la cui fornitura è considerata a rischio per l'economia europea perché provengono da pochi paesi, spesso politicamente instabili, e per cui non esistono sostituti immediati. Tra queste: litio, cobalto, germanio, gallio, grafite, terre rare. La ricerca su materiali alternativi è in parte motivata dalla necessità di ridurre queste dipendenze strategiche.
 
@@ -95,15 +95,15 @@ Prima di esplorare i materiali innovativi, vale la pena capire perché esistono.
 
 ### I grandi filoni dell'innovazione nei materiali
 
-I materiali innovativi non sono un'unica categoria: sono un insieme eterogeneo di sviluppi che provengono da campi scientifici diversi. Vediamo i principali.
+==I materiali innovativi non sono un'unica categoria: sono un insieme eterogeneo di sviluppi che provengono da campi scientifici diversi.== Vediamo i principali.
 
 ---
 
 #### Le bioplastiche: la plastica che finisce
 
-Quando si parla di "bioplastica", si usano in realtà due termini che spesso vengono confusi e che significano cose diverse.
+==Quando si parla di "bioplastica", si usano in realtà due termini che spesso vengono confusi e che significano cose diverse.==
 
-**Bio-based** (o bio-derivata): indica che il materiale è prodotto a partire da materie prime biologiche — mais, canna da zucchero, barbabietola, amido di patate, cellulosa — invece che dal petrolio. Una plastica bio-based non è necessariamente biodegradabile: il **PEF** (poliestere furano-furandiolo) prodotto da zuccheri vegetali ha proprietà simili al PET ma materia prima rinnovabile, e si comporta allo stesso modo in discarica.
+==**Bio-based** (o bio-derivata): indica che il materiale è prodotto a partire da materie prime biologiche — mais, canna da zucchero, barbabietola, amido di patate, cellulosa — invece che dal petrolio.== Una plastica bio-based non è necessariamente biodegradabile: il **PEF** (poliestere furano-furandiolo) prodotto da zuccheri vegetali ha proprietà simili al PET ma materia prima rinnovabile, e si comporta allo stesso modo in discarica.
 
 **Biodegradabile** (o compostabile): indica che il materiale può essere decomposto da microrganismi in composti naturali (acqua, CO₂, biomassa) in tempi ragionevoli. Una plastica biodegradabile non è necessariamente bio-based: esistono plastiche derivate dal petrolio che si biodegradano (per esempio certi poliesteri alifatici).
 
@@ -111,7 +111,7 @@ Quando un materiale è sia bio-based che biodegradabile, si parla di bioplastica
 
 I principali tipi di bioplastica:
 
-**PLA** (acido polilattico) — prodotto dalla fermentazione di amido di mais o di canna da zucchero. Trasparente, rigido, con buone proprietà meccaniche. Viene usato in bicchieri compostabili, imballaggi alimentari, stoviglie monouso, stampa 3D. Il suo limite critico: si biodegrada efficacemente solo in **compostaggio industriale** (temperatura 55-60°C, umidità controllata, microbioma specifico). In compostaggio domestico o in ambiente naturale si degrada molto lentamente — in alcuni test ha richiesto anni.
+**PLA** (acido polilattico) — prodotto dalla fermentazione di amido di mais o di canna da zucchero. Trasparente, rigido, con buone proprietà meccaniche. Viene usato in bicchieri compostabili, imballaggi alimentari, stoviglie monouso, stampa 3D. ==Il suo limite critico: si biodegrada efficacemente solo in **compostaggio industriale** (temperatura 55-60°C, umidità controllata, microbioma specifico).== In compostaggio domestico o in ambiente naturale si degrada molto lentamente — in alcuni test ha richiesto anni.
 
 **PHA** (poleidrossialcanoati) — prodotto direttamente da batteri che lo sintetizzano come riserva energetica. Biodegradabile anche in acqua di mare e in suolo, non richiede condizioni speciali. Ha proprietà molto variabili in base al tipo di batterio utilizzato. È più costoso del PLA ma ambientalmente più versatile. Usato in medicazione, packaging alimentare, impianti chirurgici biodegradabili.
 
@@ -129,11 +129,11 @@ I principali tipi di bioplastica:
 
 Il grafene è il materiale che ha acceso l'immaginazione di ricercatori e ingegneri come pochissimi nella storia. Non per le sue applicazioni attuali — ancora limitate — ma per quello che promette di fare.
 
-Cos'è? Uno strato singolo di atomi di carbonio disposti in una griglia esagonale, come un foglio di carta alveolare infinito ma spesso un atomo. È di fatto un materiale **bidimensionale**: esiste in larghezza e lunghezza, ma in altezza ha le dimensioni di un singolo atomo (circa 0,34 nanometri — un nanometro è un milionesimo di millimetro).
+Cos'è? Uno strato singolo di atomi di carbonio disposti in una griglia esagonale, come un foglio di carta alveolare infinito ma spesso un atomo. ==È di fatto un materiale **bidimensionale**: esiste in larghezza e lunghezza, ma in altezza ha le dimensioni di un singolo atomo (circa 0,34 nanometri — un nanometro è un milionesimo di millimetro).==
 
 Le sue proprietà sono al limite del paradosso:
 
-**Resistenza meccanica.** Il grafene è circa 200 volte più resistente dell'acciaio a parità di peso. Una membrana di grafene grande quanto un campo da calcio peserebbe meno di 1 grammo, ma potrebbe reggere il peso di un gatto senza rompersi (test effettivo dell'Università Columbia, 2008).
+==**Resistenza meccanica.** Il grafene è circa 200 volte più resistente dell'acciaio a parità di peso.== Una membrana di grafene grande quanto un campo da calcio peserebbe meno di 1 grammo, ma potrebbe reggere il peso di un gatto senza rompersi (test effettivo dell'Università Columbia, 2008).
 
 **Conduttività elettrica.** Gli elettroni si muovono nel grafene a velocità paragonabili a quelle della luce (circa 1/300 della velocità della luce), senza quasi nessuna resistenza. Conduce l'elettricità meglio del rame a temperatura ambiente.
 
@@ -161,15 +161,15 @@ Una delle idee più radicalmente circolari è usare i rifiuti come materia prima
 
 **Materiali da rifiuti agricoli.** La paglia di riso, i gusci di girasole, le bucce di arachide, la bagassa (scarto della canna da zucchero) sono disponibili in enormi quantità come rifiuto delle lavorazioni agricole. Compresse e legate con leganti naturali o sintetici, producono pannelli per l'edilizia, imballaggi, materiali fonoassorbenti. La paglia di riso compressa è usata come isolante termico in alcune costruzioni a basso impatto.
 
-**Mycelium materials (materiali dal micelio).** Il micelio è la parte vegetativa dei funghi — quella rete di filamenti bianchi che vedi quando apri un ceppo marcio. In un ambiente controllato, il micelio cresce tra pezzi di scarto agricolo (stocchi di mais, bucce, paglie) e li lega in una struttura solida. Il materiale risultante, dopo essicamento per bloccare la crescita, è leggero, rigido, ottimo isolante termico, completamente compostabile in poche settimane. È già usato come imballaggio da aziende come IKEA e Dell per sostituire il polistirolo.
+==**Mycelium materials (materiali dal micelio).** Il micelio è la parte vegetativa dei funghi — quella rete di filamenti bianchi che vedi quando apri un ceppo marcio.== In un ambiente controllato, il micelio cresce tra pezzi di scarto agricolo (stocchi di mais, bucce, paglie) e li lega in una struttura solida. Il materiale risultante, dopo essicamento per bloccare la crescita, è leggero, rigido, ottimo isolante termico, completamente compostabile in poche settimane. È già usato come imballaggio da aziende come IKEA e Dell per sostituire il polistirolo.
 
 ---
 
 #### I materiali aerogel: quasi aria
 
-L'aerogel è il materiale solido più leggero mai prodotto. Viene ottenuto prendendo un gel (una struttura porosa impregnata di liquido) e sostituendo il liquido con aria senza far collassare la struttura — un processo chiamato **essiccamento supercritico**.
+==L'aerogel è il materiale solido più leggero mai prodotto.== Viene ottenuto prendendo un gel (una struttura porosa impregnata di liquido) e sostituendo il liquido con aria senza far collassare la struttura — un processo chiamato **essiccamento supercritico**.
 
-Il risultato è una struttura solida porosa al 99,8% — cioè fatta per il 99,8% di aria e solo per lo 0,2% di materiale solido. L'aerogel di silice ha una densità di circa 1,2 kg/m³ (l'aria ha densità 1,25 kg/m³ — quindi l'aerogel è quasi leggero quanto l'aria). Ma non è trasparente come l'aria: ha una struttura opale biancastra e traslucida.
+==Il risultato è una struttura solida porosa al 99,8% — cioè fatta per il 99,8% di aria e solo per lo 0,2% di materiale solido.== L'aerogel di silice ha una densità di circa 1,2 kg/m³ (l'aria ha densità 1,25 kg/m³ — quindi l'aerogel è quasi leggero quanto l'aria). Ma non è trasparente come l'aria: ha una struttura opale biancastra e traslucida.
 
 Proprietà straordinarie:
 - **Isolante termico eccezionale:** il miglior isolante solido conosciuto. Un pannello di aerogel spesso 10 mm isola quanto 300 mm di lana di vetro.
@@ -184,7 +184,7 @@ Limite principale: fragile. L'aerogel si rompe facilmente sotto pressione o urti
 
 #### I materiali a memoria di forma (SMA)
 
-Immagina un filo metallico che torci in una spirale, poi lo scaldi — e torna da solo alla forma originale. Non è magia: è una proprietà speciale di certi materiali chiamata **memoria di forma**.
+Immagina un filo metallico che torci in una spirale, poi lo scaldi — e torna da solo alla forma originale. ==Non è magia: è una proprietà speciale di certi materiali chiamata **memoria di forma**.==
 
 Gli **SMA** (Shape Memory Alloys — leghe a memoria di forma) sfruttano una trasformazione cristallina reversibile: a bassa temperatura il materiale ha una struttura cristallina "morbida" (martensitica) che può essere deformata facilmente; riscaldandolo, riacquista una struttura "dura" (austenitica) che lo riporta alla forma originale con una forza considerevole.
 
@@ -196,9 +196,9 @@ I **materiali a memoria di forma a base di polimeri** (SMPC) hanno le stesse pro
 
 #### I materiali autoguarenti
 
-La natura ha da sempre materiali che si riparano da soli: la pelle umana, la corteccia degli alberi, le ossa. Replicare questa proprietà nei materiali ingegneristici è uno degli obiettivi più ambiziosi della scienza dei materiali moderna.
+La natura ha da sempre materiali che si riparano da soli: la pelle umana, la corteccia degli alberi, le ossa. ==Replicare questa proprietà nei materiali ingegneristici è uno degli obiettivi più ambiziosi della scienza dei materiali moderna.==
 
-Nei **polimeri autoguarenti** vengono incorporate microcapsule contenenti agenti polimerizzanti. Quando il materiale si crepa, le capsule si rompono e rilasciano l'agente che, a contatto con il catalizzatore distribuito nella matrice, polimerizza e sigilla la crepa. Il processo avviene automaticamente, senza intervento umano.
+==Nei **polimeri autoguarenti** vengono incorporate microcapsule contenenti agenti polimerizzanti.== Quando il materiale si crepa, le capsule si rompono e rilasciano l'agente che, a contatto con il catalizzatore distribuito nella matrice, polimerizza e sigilla la crepa. Il processo avviene automaticamente, senza intervento umano.
 
 Applicazioni potenziali: rivestimenti anti-graffio per automobili che si riparano al sole, vernici protettive per ponti che sigillano le microfessure prima che diventino corrosione, materiali per pale di turbine eoliche in fibra di carbonio che si auto-riparano da microdanni.
 

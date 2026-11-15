@@ -22,11 +22,11 @@ Questa non è magia. È un algoritmo. E capire la differenza tra "sembra intelli
 
 ### 🎯 In breve
 
-Un robot aspirapolvere gira per casa, evita i muri e torna alla base. Sembra che sappia quello che fa. In realtà legge dei sensori ed esegue un programma. Capire questa differenza è il cuore della robotica.
+Un robot aspirapolvere gira per casa, evita i muri e torna alla base. Sembra che sappia quello che fa. In realtà legge dei sensori ed esegue un programma. ==Capire questa differenza è il cuore della robotica.==
 
 **Che cos'è un robot**
 
-Un **robot** è una macchina che fa tre cose in fila, senza fermarsi mai.
+==Un **robot** è una macchina che fa tre cose in fila, senza fermarsi mai.==
 
 1. Legge il mondo con i **sensori**.
 2. Decide con un programma, che gira su un piccolo computer.
@@ -51,9 +51,9 @@ Senza sensori è cieco. Senza attuatori è immobile. Senza programma è vuoto.
 
 **Tre strumenti per cominciare**
 
-- La **micro:bit** è una scheda grande come una carta di credito tagliata a metà, con sensori e 25 LED già a bordo. Si programma a blocchi. Ideale per iniziare.
+- ==La **micro:bit** è una scheda grande come una carta di credito tagliata a metà, con sensori e 25 LED già a bordo.== Si programma a blocchi. Ideale per iniziare.
 - I kit con mattoncini e motori permettono di costruire robot veri e propri.
-- **Arduino** è una scheda a cui collegare qualsiasi sensore o motore. Si programma scrivendo codice: è il passo successivo.
+- ==**Arduino** è una scheda a cui collegare qualsiasi sensore o motore.== Si programma scrivendo codice: è il passo successivo.
 
 **Programmare per eventi**
 
@@ -100,11 +100,11 @@ Nei due anni precedenti hai imparato le basi del pensiero computazionale: sequen
 
 Il pensiero computazionale avanzato si articola in quattro operazioni mentali che si applicano in modo integrato:
 
-**Decomposizione:** scomporre un problema complesso in sottoproblemi indipendenti o poco accoppiati. Un robot che deve navigare in un corridoio può essere decomposto in: (1) rilevamento ostacoli, (2) calcolo della direzione, (3) controllo dei motori, (4) aggiornamento della posizione stimata. Ogni sottoproblema può essere risolto e testato indipendentemente.
+==**Decomposizione:** scomporre un problema complesso in sottoproblemi indipendenti o poco accoppiati.== Un robot che deve navigare in un corridoio può essere decomposto in: (1) rilevamento ostacoli, (2) calcolo della direzione, (3) controllo dei motori, (4) aggiornamento della posizione stimata. Ogni sottoproblema può essere risolto e testato indipendentemente.
 
-**Riconoscimento di pattern:** identificare strutture ricorrenti che si ripetono in problemi diversi. Un robot che evita ostacoli e un termostato che controlla la temperatura hanno lo stesso pattern: sensore → condizione → azione → verifica. Una volta riconosciuto il pattern, la soluzione si trasferisce da un dominio all'altro.
+==**Riconoscimento di pattern:** identificare strutture ricorrenti che si ripetono in problemi diversi.== Un robot che evita ostacoli e un termostato che controlla la temperatura hanno lo stesso pattern: sensore → condizione → azione → verifica. Una volta riconosciuto il pattern, la soluzione si trasferisce da un dominio all'altro.
 
-**Astrazione:** ignorare i dettagli irrilevanti e concentrarsi sulle proprietà essenziali del problema. Quando programmi il comportamento di un robot, non ti interessa la tensione esatta dei motori: ti interessa la velocità risultante. L'astrazione ti permette di lavorare a un livello di complessità gestibile.
+**Astrazione:** ignorare i dettagli irrilevanti e concentrarsi sulle proprietà essenziali del problema. Quando programmi il comportamento di un robot, non ti interessa la tensione esatta dei motori: ti interessa la velocità risultante. ==L'astrazione ti permette di lavorare a un livello di complessità gestibile.==
 
 **Algoritmo:** tradurre la soluzione del problema in una sequenza precisa e completa di istruzioni, senza ambiguità. Un algoritmo non è "il robot va avanti fino a quando c'è un ostacolo" — è "il robot si muove in avanti a 20 cm/s; se il sensore di prossimità frontale rileva una distanza < 15 cm, si ferma, ruota di 90° in senso orario, verifica nuovamente la distanza frontale; se > 15 cm riprende il movimento in avanti."
 
@@ -116,11 +116,11 @@ La differenza tra Foundation e Advanced nel pensiero computazionale non è la co
 
 Nel panorama della robotica educativa esistono decine di piattaforme. Tre sono le più diffuse nelle scuole italiane e mondiali, e rappresentano tre filosofie diverse.
 
-**micro:bit (Micro Bit Foundation, UK, 2015):** una scheda elettronica delle dimensioni di un francobollo — 4 × 5 cm — con processore ARM, accelerometro, bussola, termometro, sensore di luce, radio Bluetooth, e una griglia di 25 LED. Non è un robot: è una piattaforma di computing fisico. Puoi collegare sensori e attuatori esterni via pin di espansione, costruire robot con chassis aggiuntivi (Kitronik, Bit:bot), o usarla come controller per altri sistemi. Si programma con MakeCode (blocchi o JavaScript) direttamente nel browser. Philosophia: **semplicità di accesso, apertura massima**. Adatto per chi vuole capire come funziona l'hardware al livello più elementare.
+**micro:bit (Micro Bit Foundation, UK, 2015):** una scheda elettronica delle dimensioni di un francobollo — 4 × 5 cm — con processore ARM, accelerometro, bussola, termometro, sensore di luce, radio Bluetooth, e una griglia di 25 LED. ==Non è un robot: è una piattaforma di computing fisico.== Puoi collegare sensori e attuatori esterni via pin di espansione, costruire robot con chassis aggiuntivi (Kitronik, Bit:bot), o usarla come controller per altri sistemi. Si programma con MakeCode (blocchi o JavaScript) direttamente nel browser. Philosophia: **semplicità di accesso, apertura massima**. Adatto per chi vuole capire come funziona l'hardware al livello più elementare.
 
 **LEGO Mindstorms EV3 (LEGO, 2013):** un kit robotico completo con mattoncini LEGO, sensori (ultrasuoni, colore, tocco, giroscopio), motori servomotori e un "brick" programmabile con schermo LCD. Si programma con LEGO Mindstorms (blocchi grafici) o Python, MicroPython, e persino in C++. L'approccio costruttivo — costruire prima la struttura fisica del robot, poi programmarla — è fondamentale: la forma del robot cambia il suo comportamento, e un robot mal costruito non funzionerà anche con il codice perfetto. Philosophia: **costruzione + programmazione integrate**. Adatto per chi vuole progettare sistemi fisici complessi.
 
-**Arduino Uno (Arduino LLC, 2005):** un microcontroller open source con cui puoi costruire qualsiasi dispositivo elettronico programmabile. Non è un robot ma un controller universale: può pilotare motori, leggere sensori, controllare display, comunicare via WiFi. Si programma in C/C++ (linguaggio testuale, non a blocchi) con l'IDE Arduino. La curva di apprendimento è più ripida, ma la potenza e la flessibilità sono massime. Arduino è usato in prototipazione industriale, ricerca, arte interattiva, domotica. Philosophia: **massima flessibilità, massima potenza**. Adatto per chi è pronto a programmare in un linguaggio reale.
+**Arduino Uno (Arduino LLC, 2005):** un microcontroller open source con cui puoi costruire qualsiasi dispositivo elettronico programmabile. ==Non è un robot ma un controller universale: può pilotare motori, leggere sensori, controllare display, comunicare via WiFi.== Si programma in C/C++ (linguaggio testuale, non a blocchi) con l'IDE Arduino. La curva di apprendimento è più ripida, ma la potenza e la flessibilità sono massime. Arduino è usato in prototipazione industriale, ricerca, arte interattiva, domotica. Philosophia: **massima flessibilità, massima potenza**. Adatto per chi è pronto a programmare in un linguaggio reale.
 
 **Quando scegliere quale:** micro:bit per chi inizia e vuole capire l'hardware; EV3 per chi vuole costruire robot fisici complessi; Arduino per chi è pronto per il linguaggio testuale e i progetti open-ended.
 
@@ -146,7 +146,7 @@ Un robot è, nella sua essenza, un sistema che legge il mondo (sensori), elabora
 
 *Motori DC:* convertono energia elettrica in movimento rotativo continuo. La velocità dipende dalla tensione; il senso di rotazione dipende dalla polarità. Usati per muovere le ruote di un robot.
 
-*Servomotori:* motori DC con un sistema di controllo interno che permette di specificare un angolo di posizione preciso (0-180° o 0-360°). Usati per girare la direzione di un veicolo, muovere le giunture di un braccio robotico.
+==*Servomotori:* motori DC con un sistema di controllo interno che permette di specificare un angolo di posizione preciso (0-180° o 0-360°).== Usati per girare la direzione di un veicolo, muovere le giunture di un braccio robotico.
 
 *LED e display:* attuatori luminosi. Un LED acceso/spento è il più semplice segnale di output. Una matrice di LED (come i 25 del micro:bit) permette di mostrare numeri, lettere, icone. Un display LCD o OLED permette testo e grafica.
 
@@ -156,7 +156,7 @@ Un robot è, nella sua essenza, un sistema che legge il mondo (sensori), elabora
 
 ### Programmazione event-driven: il robot che risponde
 
-La programmazione **event-driven** (guidata dagli eventi) è diversa dalla programmazione sequenziale che conosci. In un programma sequenziale, le istruzioni si eseguono dall'alto in basso, una dopo l'altra, in ordine fisso. In un programma event-driven, le istruzioni si eseguono quando accade qualcosa — un evento.
+==La programmazione **event-driven** (guidata dagli eventi) è diversa dalla programmazione sequenziale che conosci.== In un programma sequenziale, le istruzioni si eseguono dall'alto in basso, una dopo l'altra, in ordine fisso. In un programma event-driven, le istruzioni si eseguono quando accade qualcosa — un evento.
 
 Un evento può essere: il sensore rileva una distanza < 15 cm, il pulsante A viene premuto, passano 5 secondi dall'ultima lettura, la temperatura supera 30°C.
 
@@ -174,7 +174,7 @@ Il vantaggio dell'event-driven: il robot può rispondere a eventi multipli conte
 
 ### Debugging come competenza: trovare gli errori in modo sistematico
 
-Il **debugging** — trovare e correggere gli errori nel codice — è una competenza trasversale. Un bug è qualsiasi comportamento del programma che non corrisponde all'intenzione del progettista. Può essere un errore di logica (il robot gira nella direzione sbagliata), un errore di valori (la soglia del sensore è 15 quando dovrebbe essere 30), un errore di sequenza (controlla la distanza dopo aver già colpito il muro), o un errore hardware (il sensore è collegato al pin sbagliato).
+==Il **debugging** — trovare e correggere gli errori nel codice — è una competenza trasversale.== Un bug è qualsiasi comportamento del programma che non corrisponde all'intenzione del progettista. Può essere un errore di logica (il robot gira nella direzione sbagliata), un errore di valori (la soglia del sensore è 15 quando dovrebbe essere 30), un errore di sequenza (controlla la distanza dopo aver già colpito il muro), o un errore hardware (il sensore è collegato al pin sbagliato).
 
 **Strategie sistematiche di debugging:**
 
@@ -188,7 +188,7 @@ Il **debugging** — trovare e correggere gli errori nel codice — è una compe
 
 **5. Chiedi a qualcun altro:** il fenomeno del "rubber duck debugging" (spiegare il problema a un oggetto inanimato) funziona perché costringerti a spiegare il codice a qualcun altro ti obbliga a verbalizzare assunzioni implicite — e spesso l'errore emerge mentre spieghi.
 
-Il debugging non è un segno di fallimento: è la parte normale del processo. I programmatori professionisti trascorrono il 50-70% del loro tempo a fare debugging. La differenza tra un programmatore esperto e uno principiante non è che l'esperto fa meno errori: è che li trova più velocemente.
+==Il debugging non è un segno di fallimento: è la parte normale del processo.== I programmatori professionisti trascorrono il 50-70% del loro tempo a fare debugging. ==La differenza tra un programmatore esperto e uno principiante non è che l'esperto fa meno errori: è che li trova più velocemente.==
 
 ---
 
@@ -196,11 +196,11 @@ Il debugging non è un segno di fallimento: è la parte normale del processo. I 
 
 Un robot obbedisce sempre a regole scritte da qualcuno. Ma esistono due modi fondamentalmente diversi di scrivere quelle regole.
 
-**Comportamento programmato esplicitamente:** il progettista specifica ogni risposta possibile a ogni condizione possibile. "Se distanza < 15 cm, ruota destra. Se sensore colore = nero, fermati. Se temperatura > 30°C, attiva ventola." Questo approccio funziona bene per ambienti controllati e problemi ben definiti. Il robot del Roomba classico funziona così: le sue regole di navigazione sono progettate in modo che il comportamento risultante sembri intelligente, ma ogni risposta è stata definita esplicitamente da un ingegnere.
+==**Comportamento programmato esplicitamente:** il progettista specifica ogni risposta possibile a ogni condizione possibile.== "Se distanza < 15 cm, ruota destra. Se sensore colore = nero, fermati. Se temperatura > 30°C, attiva ventola." Questo approccio funziona bene per ambienti controllati e problemi ben definiti. Il robot del Roomba classico funziona così: le sue regole di navigazione sono progettate in modo che il comportamento risultante sembri intelligente, ma ogni risposta è stata definita esplicitamente da un ingegnere.
 
-**Apprendimento automatico (Machine Learning):** invece di specificare le regole, il progettista fornisce molti esempi (dati) e un algoritmo che impara le regole dai dati. Un robot aspirapolvere con ML non ha regole di navigazione hardcoded: viene esposto a migliaia di mappe di case diverse e impara da solo quali traiettorie sono più efficienti. Il risultato può essere più efficiente delle regole manuali, ma meno prevedibile e più difficile da correggere quando sbaglia.
+==**Apprendimento automatico (Machine Learning):** invece di specificare le regole, il progettista fornisce molti esempi (dati) e un algoritmo che impara le regole dai dati.== Un robot aspirapolvere con ML non ha regole di navigazione hardcoded: viene esposto a migliaia di mappe di case diverse e impara da solo quali traiettorie sono più efficienti. Il risultato può essere più efficiente delle regole manuali, ma meno prevedibile e più difficile da correggere quando sbaglia.
 
-La differenza è importante: un robot programmato esplicitamente fa esattamente quello che gli hai detto di fare (anche se quello che gli hai detto non era quello che intendevi). Un robot con ML fa quello che ha imparato dai dati (che può non corrispondere a quello che speravi).
+==La differenza è importante: un robot programmato esplicitamente fa esattamente quello che gli hai detto di fare (anche se quello che gli hai detto non era quello che intendevi).== Un robot con ML fa quello che ha imparato dai dati (che può non corrispondere a quello che speravi).
 
 > **📦 Box T8 — IA critica: il robot obbedisce, non pensa**
 >
@@ -218,7 +218,7 @@ La differenza è importante: un robot programmato esplicitamente fa esattamente 
 
 ### Robotica nella realtà: tre sistemi che cambiano il mondo
 
-**Robot chirurgico da Vinci (Intuitive Surgical, 1999):** sistema telemanipolato — non autonomo — per chirurgia mini-invasiva. Il chirurgo siede a una console e muove joystick; il robot traduce e scala i movimenti in azioni precise su strumenti inseriti nel corpo del paziente attraverso piccole incisioni. Vantaggi: precisione oltre le capacità umane, eliminazione del tremore naturale della mano, possibilità di operare a distanza. Il robot non decide nulla: è un'estensione amplificata delle mani del chirurgo.
+==**Robot chirurgico da Vinci (Intuitive Surgical, 1999):** sistema telemanipolato — non autonomo — per chirurgia mini-invasiva.== Il chirurgo siede a una console e muove joystick; il robot traduce e scala i movimenti in azioni precise su strumenti inseriti nel corpo del paziente attraverso piccole incisioni. Vantaggi: precisione oltre le capacità umane, eliminazione del tremore naturale della mano, possibilità di operare a distanza. Il robot non decide nulla: è un'estensione amplificata delle mani del chirurgo.
 
 **Robot warehouse Amazon (Amazon Robotics, 2012):** nei magazzini Amazon, migliaia di robot Kiva (ora Proteus) spostano scaffalature intere portandole agli addetti umani, invece che far camminare gli addetti tra gli scaffali. Ogni robot naviga autonomamente usando marker a QR code sul pavimento, comunica via WiFi con un sistema centrale che coordina migliaia di robot contemporaneamente evitando collisioni. Risultato: velocità di prelievo 3-4 volte superiore ai magazzini tradizionali. Costo sociale: riduzione significativa della manodopera umana nei magazzini.
 
@@ -228,11 +228,11 @@ La differenza è importante: un robot programmato esplicitamente fa esattamente 
 
 ### Caso studio: Deep Blue vs. AlphaGo — due modi diversi di "battere" un campione umano
 
-**Deep Blue (IBM, 1997):** nel 1997, il computer Deep Blue di IBM sconfisse il campione del mondo di scacchi Garry Kasparov in un match a sei partite. Deep Blue valutava 200 milioni di posizioni al secondo usando regole scritte esplicitamente da ingegneri e Grandmaster di scacchi. Non "imparava" dagli scacchi: cercava nella sua libreria di mosse e valutava posizioni con funzioni costruite a mano. La sua intelligenza era la somma dell'intelligenza degli esseri umani che l'avevano programmato.
+**Deep Blue (IBM, 1997):** nel 1997, il computer Deep Blue di IBM sconfisse il campione del mondo di scacchi Garry Kasparov in un match a sei partite. ==Deep Blue valutava 200 milioni di posizioni al secondo usando regole scritte esplicitamente da ingegneri e Grandmaster di scacchi.== Non "imparava" dagli scacchi: cercava nella sua libreria di mosse e valutava posizioni con funzioni costruite a mano. La sua intelligenza era la somma dell'intelligenza degli esseri umani che l'avevano programmato.
 
 **AlphaGo (DeepMind, 2016):** nel 2016, AlphaGo di DeepMind sconfisse Lee Sedol, campione del mondo di Go, in un match a cinque partite. Go ha circa 10^170 posizioni possibili — miliardi di volte più del numero di atomi nell'universo osservabile. Nessun sistema di ricerca esaustiva come Deep Blue avrebbe potuto funzionare. AlphaGo usava una combinazione di apprendimento supervisionato (partendo da milioni di partite umane) e apprendimento per rinforzo (giocando milioni di partite contro se stesso, imparando dalle vittorie e dalle sconfitte). Nella quarta partita, alla mossa 78, Sedol giocò una mossa così inaspettata che AlphaGo — che non l'aveva mai vista nell'addestramento — perse la partita. Sedol disse che era "una mossa che solo un essere umano poteva fare, perché solo un essere umano avrebbe potuto pensare in modo così creativo in quel momento."
 
-**Cosa ci dice questo confronto:** Deep Blue era intelligente come la somma delle conoscenze degli scacchi di chi l'aveva programmato. AlphaGo aveva imparato modelli strategici dai dati in modo che nessun essere umano aveva specificato esplicitamente. Entrambi vincevano contro i campioni umani — ma per ragioni completamente diverse. Nessuno dei due "capiva" il gioco nel senso in cui lo capirebbe un essere umano.
+==**Cosa ci dice questo confronto:** Deep Blue era intelligente come la somma delle conoscenze degli scacchi di chi l'aveva programmato.== AlphaGo aveva imparato modelli strategici dai dati in modo che nessun essere umano aveva specificato esplicitamente. Entrambi vincevano contro i campioni umani — ma per ragioni completamente diverse. Nessuno dei due "capiva" il gioco nel senso in cui lo capirebbe un essere umano.
 
 > **🔢 Collegamento STEM — Matematica:**
 > Un robot che rileva la distanza con ultrasuoni sta risolvendo un problema di cinematica: distanza = velocità × tempo / 2. Il fattore 2 perché il suono deve fare l'andata e il ritorno. Se il robot misura un tempo di eco di 5,8 ms e la velocità del suono nell'aria è 343 m/s: distanza = 343 × 0,0058 / 2 = 0,995 m ≈ 1 m. Questa è la fisica implementata nell'hardware del sensore. Il microcontroller legge un numero intero e lo converte in centimetri — ma sotto c'è un'equazione fisica.

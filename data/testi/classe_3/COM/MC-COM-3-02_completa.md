@@ -23,13 +23,13 @@ Di tutto questo, quanta parte è accurata? Quanta parte rispetta i diritti di ch
 
 ### 🎯 In breve
 
-Oggi chiunque può pubblicare un video, un audio, una foto. Farlo bene vuol dire due cose: saperlo fare tecnicamente e rispettare il lavoro degli altri.
+Oggi chiunque può pubblicare un video, un audio, una foto. ==Farlo bene vuol dire due cose: saperlo fare tecnicamente e rispettare il lavoro degli altri.==
 
 **Quanto pesa un contenuto**
 
 Testo, immagini, audio e video sono tutti numeri, ma pesano in modo molto diverso. Un articolo intero pesa pochi kilobyte. Un minuto di video non compresso pesa diversi gigabyte.
 
-Per questo esiste la **compressione**: rappresentare la stessa informazione con meno dati. Ce ne sono due tipi.
+==Per questo esiste la **compressione**: rappresentare la stessa informazione con meno dati.== Ce ne sono due tipi.
 
 - **Senza perdita**: il file si rimpicciolisce ma si può ricostruire identico. Esempi: PNG per le immagini, ZIP per qualsiasi file.
 - **Con perdita**: si buttano via i dettagli che occhio e orecchio notano meno. Il file diventa molto più piccolo, ma non torna più come prima. Esempi: JPEG per le foto, MP3 per l'audio.
@@ -38,7 +38,7 @@ Per questo esiste la **compressione**: rappresentare la stessa informazione con 
 
 **Di chi è un'opera**
 
-Quando crei qualcosa di originale, una foto, un testo, una canzone, è tuo automaticamente. Non devi registrare niente. Questa protezione si chiama **diritto d'autore**, e in Italia dura per tutta la vita dell'autore più 70 anni. Dopo, l'opera diventa di **dominio pubblico** e chiunque può usarla.
+Quando crei qualcosa di originale, una foto, un testo, una canzone, è tuo automaticamente. Non devi registrare niente. ==Questa protezione si chiama **diritto d'autore**, e in Italia dura per tutta la vita dell'autore più 70 anni.== Dopo, l'opera diventa di **dominio pubblico** e chiunque può usarla.
 
 Protegge il modo in cui un'idea è espressa, non l'idea. Non puoi copiare una fotografia; puoi fotografare tu lo stesso soggetto.
 
@@ -46,13 +46,13 @@ Protegge il modo in cui un'idea è espressa, non l'idea. Non puoi copiare una fo
 
 Usare il lavoro di un altro facendolo passare per proprio è **plagio**. Citare invece è corretto, a patto di dire sempre chi è l'autore e dove hai preso il materiale.
 
-Una cosa da ricordare: "immagine presa da Google" non è una citazione. Google non ha fatto quella foto: te l'ha solo mostrata.
+==Una cosa da ricordare: "immagine presa da Google" non è una citazione.== Google non ha fatto quella foto: te l'ha solo mostrata.
 
 Regola pratica: se non sai chi ha fatto una cosa e con quali permessi, non usarla.
 
 **Le licenze che dicono sì**
 
-Di solito vale "tutti i diritti riservati". Le licenze **Creative Commons** sono un modo con cui un autore dichiara in anticipo che cosa permette. Si leggono dalle sigle:
+Di solito vale "tutti i diritti riservati". ==Le licenze **Creative Commons** sono un modo con cui un autore dichiara in anticipo che cosa permette.== Si leggono dalle sigle:
 
 - BY: devi citare l'autore;
 - NC: non puoi usarla per guadagnare;
@@ -76,7 +76,7 @@ Contano tre cose più della videocamera: la luce davanti al soggetto e non dietr
 
 **Vero o costruito?**
 
-Un **deepfake** è un video o un audio falso creato con l'intelligenza artificiale: fa dire o fare a una persona cose mai successe. Indizi a cui guardare: contorni del viso strani, labbra fuori tempo, occhi innaturali. Ma gli indizi non bastano più. La verifica vera è un'altra: chi l'ha pubblicato per primo? Altre fonti affidabili lo riportano?
+==Un **deepfake** è un video o un audio falso creato con l'intelligenza artificiale: fa dire o fare a una persona cose mai successe.== Indizi a cui guardare: contorni del viso strani, labbra fuori tempo, occhi innaturali. Ma gli indizi non bastano più. La verifica vera è un'altra: chi l'ha pubblicato per primo? Altre fonti affidabili lo riportano?
 
 > ✋ **Tocca a te.** In coppia, scrivete l'aggancio di un podcast di classe su un argomento di Tecnologia: massimo tre frasi, da leggere in quindici secondi. Poi leggetelo a un'altra coppia. Avrebbero voglia di continuare ad ascoltare?
 
@@ -92,7 +92,7 @@ Un **deepfake** è un video o un audio falso creato con l'intelligenza artificia
 
 ### I contenuti digitali: da cosa sono fatti e come funzionano
 
-Ogni cosa che vedi online è un contenuto digitale: un testo, una foto, un video, un audio, un'animazione, un modello 3D, un'esperienza in realtà aumentata. Tutti questi tipi di contenuto hanno due caratteristiche in comune: sono codificati in bit (0 e 1) e possono essere copiati, modificati e distribuiti a costo quasi nullo. Questa seconda caratteristica — la riproducibilità a costo zero — è ciò che rende la produzione e distribuzione di contenuti digitali così diversa da qualsiasi altra forma di comunicazione nella storia.
+Ogni cosa che vedi online è un contenuto digitale: un testo, una foto, un video, un audio, un'animazione, un modello 3D, un'esperienza in realtà aumentata. ==Tutti questi tipi di contenuto hanno due caratteristiche in comune: sono codificati in bit (0 e 1) e possono essere copiati, modificati e distribuiti a costo quasi nullo.== ==Questa seconda caratteristica — la riproducibilità a costo zero — è ciò che rende la produzione e distribuzione di contenuti digitali così diversa da qualsiasi altra forma di comunicazione nella storia.==
 
 ---
 
@@ -100,9 +100,9 @@ Ogni cosa che vedi online è un contenuto digitale: un testo, una foto, un video
 
 **Testo:** la forma più elementare di contenuto digitale. Un carattere in UTF-8 occupa da 1 a 4 byte. Un articolo di giornale di 1.000 parole occupa circa 6 KB — pochi secondi di download anche con una connessione lentissima. Il testo è il formato più accessibile (non richiede hardware speciale) e il più indicizzabile dai motori di ricerca.
 
-**Immagine:** una fotografia digitale è una griglia di pixel, ognuno dei quali ha un valore di colore espresso in tre canali (rosso, verde, blu — RGB). Una foto a 12 megapixel (tipica di uno smartphone) ha 12 milioni di pixel; se non compressa, occuperebbe circa 36 MB. Ecco perché si usano formati compressi.
+==**Immagine:** una fotografia digitale è una griglia di pixel, ognuno dei quali ha un valore di colore espresso in tre canali (rosso, verde, blu — RGB).== Una foto a 12 megapixel (tipica di uno smartphone) ha 12 milioni di pixel; se non compressa, occuperebbe circa 36 MB. Ecco perché si usano formati compressi.
 
-**Audio:** un file audio digitale è una sequenza di campioni — misure della pressione sonora prese a intervalli regolari. La qualità CD usa 44.100 campioni al secondo (44,1 kHz) con 16 bit per campione. Un minuto di audio non compresso occupa circa 10 MB.
+==**Audio:** un file audio digitale è una sequenza di campioni — misure della pressione sonora prese a intervalli regolari.== La qualità CD usa 44.100 campioni al secondo (44,1 kHz) con 16 bit per campione. Un minuto di audio non compresso occupa circa 10 MB.
 
 **Video:** è una sequenza di immagini (frame) con audio sincronizzato. Assumendo RGB a 24 bit, cioè 3 byte per pixel, un minuto Full HD (1920×1080 pixel) a 24 frame al secondo occupa circa 9 GB senza compressione, escluso l’audio: 1920 × 1080 × 3 × 24 × 60 = 8.957.952.000 byte. Ecco perché la compressione è fondamentale.
 
@@ -116,7 +116,7 @@ Il problema della compressione è questo: come si può rappresentare la stessa i
 
 Esistono due strategie fondamentali:
 
-**Compressione lossless (senza perdita):** il file viene compresso in modo che sia possibile ricostruire esattamente l'originale. Non si perde nessuna informazione. Funziona cercando ridondanze nel file — sequenze che si ripetono — e sostituendole con rappresentazioni più corte.
+==**Compressione lossless (senza perdita):** il file viene compresso in modo che sia possibile ricostruire esattamente l'originale.== Non si perde nessuna informazione. Funziona cercando ridondanze nel file — sequenze che si ripetono — e sostituendole con rappresentazioni più corte.
 
 Esempi:
 - **PNG** per le immagini: perfetto per immagini con aree uniformi (loghi, screenshot, grafici). Una vasta zona di blu uniforme si comprime molto bene.
@@ -150,7 +150,7 @@ Quando crei qualcosa di originale — un testo, una fotografia, una canzone, un 
 
 In Italia, il diritto d'autore è regolato dalla **Legge n. 633 del 22 aprile 1941** (L.D.A.), più volte aggiornata per adeguarsi alle direttive europee. I punti chiave:
 
-**Durata:** la protezione dura per tutta la vita dell'autore più **70 anni** dalla sua morte. Un'opera diventa di **dominio pubblico** — liberamente usabile da tutti — solo dopo questo periodo. Questo significa che le opere di Giacomo Puccini (morto nel 1924) sono di dominio pubblico; le opere di Italo Calvino (morto nel 1985) saranno di dominio pubblico solo nel 2056.
+==**Durata:** la protezione dura per tutta la vita dell'autore più **70 anni** dalla sua morte.== ==Un'opera diventa di **dominio pubblico** — liberamente usabile da tutti — solo dopo questo periodo.== Questo significa che le opere di Giacomo Puccini (morto nel 1924) sono di dominio pubblico; le opere di Italo Calvino (morto nel 1985) saranno di dominio pubblico solo nel 2056.
 
 **Cosa protegge:** l'espressione originale, non l'idea. Non puoi copiare il testo di un romanzo; puoi scrivere un romanzo sullo stesso tema. Non puoi usare la fotografia di qualcun altro; puoi fotografare lo stesso soggetto tu stesso.
 
@@ -164,7 +164,7 @@ In Italia, il diritto d'autore è regolato dalla **Legge n. 633 del 22 aprile 19
 
 ### Plagio vs. citazione: la differenza pratica
 
-**Citare** una fonte è legale e necessario. Ecco le regole pratiche per citare correttamente in un lavoro scolastico o in un contenuto online:
+==**Citare** una fonte è legale e necessario.== Ecco le regole pratiche per citare correttamente in un lavoro scolastico o in un contenuto online:
 
 Per un **testo:** indica sempre il nome dell'autore, il titolo dell'opera, l'anno di pubblicazione, e — se disponibile — il numero di pagina o l'URL. Una citazione testuale diretta va tra virgolette. Non usare più di qualche decina di parole da un testo senza permesso esplicito.
 
@@ -178,7 +178,7 @@ Per un **video o audio:** indica autore, titolo, piattaforma, e URL. Per la musi
 
 ### Le licenze Creative Commons: cosa puoi fare con ogni licenza
 
-Il diritto d'autore tradizionale è "tutti i diritti riservati" — non puoi fare nulla senza permesso. Le licenze **Creative Commons (CC)** sono un sistema di licenze standard che permettono agli autori di concedere alcuni diritti mantenendone altri.
+==Il diritto d'autore tradizionale è "tutti i diritti riservati" — non puoi fare nulla senza permesso.== ==Le licenze **Creative Commons (CC)** sono un sistema di licenze standard che permettono agli autori di concedere alcuni diritti mantenendone altri.==
 
 Le licenze CC si costruiscono combinando quattro elementi:
 
@@ -213,13 +213,13 @@ Le sei licenze principali:
 
 ### Produzione podcast: dalla struttura alla distribuzione
 
-Il podcast è il formato audio più democratico del decennio: chiunque può produrne uno con un telefono, un microfono economico e un software gratuito. Ma fare un podcast che qualcuno voglia ascoltare — e che rispetti le regole — richiede metodo.
+==Il podcast è il formato audio più democratico del decennio: chiunque può produrne uno con un telefono, un microfono economico e un software gratuito.== Ma fare un podcast che qualcuno voglia ascoltare — e che rispetti le regole — richiede metodo.
 
 **Struttura di un episodio podcast:**
 
 1. **Intro:** massimo 30 secondi. Nome del podcast, episodio, presentazione del tema. Musica di apertura con licenza CC — la stessa in ogni episodio (crea riconoscibilità).
 
-2. **Hook narrativo:** i primi 60-90 secondi sono decisivi. Se l'ascoltatore non è agganciato, smette. Inizia con un fatto sorprendente, una domanda, una storia breve — non con "oggi parleremo di...".
+2. ==**Hook narrativo:** i primi 60-90 secondi sono decisivi.== Se l'ascoltatore non è agganciato, smette. Inizia con un fatto sorprendente, una domanda, una storia breve — non con "oggi parleremo di...".
 
 3. **Corpo:** sviluppa il tema in sequenze logiche di 3-5 minuti ognuna. Usa transizioni ("passiamo ora a...", "ma c'è un aspetto che molti ignorano...") per guidare l'ascolto.
 
@@ -244,7 +244,7 @@ Il podcast è il formato audio più democratico del decennio: chiunque può prod
 
 ### Produzione video: inquadrature, audio, montaggio
 
-La differenza tra un video "amatoriale" e uno che si guarda volentieri raramente dipende dalla fotocamera — quasi sempre dipende da tre elementi: luce, audio, stabilità.
+==La differenza tra un video "amatoriale" e uno che si guarda volentieri raramente dipende dalla fotocamera — quasi sempre dipende da tre elementi: luce, audio, stabilità.==
 
 **Luce:** la fonte di luce deve essere davanti al soggetto (o di lato), non dietro. Una finestra dietro di te crea il tuo viso scuro su sfondo chiaro — l'errore più comune. Se filmi una persona, posizionala di fronte alla finestra.
 
@@ -273,7 +273,7 @@ La differenza tra un video "amatoriale" e uno che si guarda volentieri raramente
 
 I **deepfake** sono video o audio generati da intelligenza artificiale che mostrano persone dire o fare cose che non hanno mai detto o fatto. La tecnologia, nata in ambito cinematografico, è diventata accessibile a chiunque nel 2023-2024 grazie a strumenti gratuiti online.
 
-**Come funzionano:** un modello di IA viene addestrato su molte fotografie o video reali di una persona. Una volta addestrato, è in grado di sovrapporre il volto di quella persona su un altro video, sincronizzando i movimenti labiali. I sistemi più avanzati possono clonare la voce con pochi secondi di audio reale.
+==**Come funzionano:** un modello di IA viene addestrato su molte fotografie o video reali di una persona.== Una volta addestrato, è in grado di sovrapporre il volto di quella persona su un altro video, sincronizzando i movimenti labiali. I sistemi più avanzati possono clonare la voce con pochi secondi di audio reale.
 
 **Come si riconoscono (segnali da cercare):**
 

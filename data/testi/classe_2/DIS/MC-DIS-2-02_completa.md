@@ -22,11 +22,11 @@ Quella rappresentazione non è prospettiva — è assonometria. Ed è uno dei si
 
 ### 🎯 In breve
 
-Le tre viste delle proiezioni ortogonali sono precise, ma chi non ha studiato disegno fatica a "vedere" l'oggetto. Le figure dei manuali di montaggio fanno un'altra cosa: mostrano l'oggetto intero, con tre facce insieme. Quel disegno è un'**assonometria**.
+==Le tre viste delle proiezioni ortogonali sono precise, ma chi non ha studiato disegno fatica a "vedere" l'oggetto.== ==Le figure dei manuali di montaggio fanno un'altra cosa: mostrano l'oggetto intero, con tre facce insieme.== Quel disegno è un'**assonometria**.
 
 **L'idea**
 
-In un'assonometria l'oggetto è disegnato lungo tre **assi**, tre direzioni che partono dallo stesso punto: uno per la larghezza, uno per l'altezza, uno per la profondità. Le misure si riportano su questi assi.
+==In un'assonometria l'oggetto è disegnato lungo tre **assi**, tre direzioni che partono dallo stesso punto: uno per la larghezza, uno per l'altezza, uno per la profondità.== ==Le misure si riportano su questi assi.==
 
 Il risultato sembra solido, ma resta misurabile. E ha una caratteristica che lo distingue dalla prospettiva: le linee che nell'oggetto sono parallele restano parallele anche nel disegno.
 
@@ -34,7 +34,7 @@ Il risultato sembra solido, ma resta misurabile. E ha una caratteristica che lo 
 
 **L'assonometria cavaliera**
 
-È la più facile da disegnare a mano.
+==È la più facile da disegnare a mano.==
 
 - La larghezza va in orizzontale.
 - L'altezza va in verticale.
@@ -79,7 +79,7 @@ Per disegnare un oggetto dalla forma complessa:
 
 **E i cerchi?**
 
-Un cerchio visto di sbieco diventa un ovale, che in geometria si chiama **ellisse**. Guarda l'orlo di un bicchiere tenuto un po' inclinato: è quello. Nella cavaliera resta cerchio solo quello sulla faccia davanti.
+==Un cerchio visto di sbieco diventa un ovale, che in geometria si chiama **ellisse**.== Guarda l'orlo di un bicchiere tenuto un po' inclinato: è quello. Nella cavaliera resta cerchio solo quello sulla faccia davanti.
 
 > ✋ **Tocca a te.** Riprendi il dado di prima. Assomiglia di più a una cavaliera o a un'isometrica? Ora ridisegnalo in cavaliera con il righello: 4 cm di larghezza, 4 di altezza. Quanti centimetri segni sulla profondità?
 
@@ -101,15 +101,15 @@ Ma ha un limite che diventa evidente non appena provi a spiegare qualcosa a qual
 
 Pensa a un manuale di montaggio IKEA. Se mostrasse solo viste ortogonali, pochissime persone riuscirebbero a seguirle senza una guida. Invece IKEA usa disegni che mostrano l'oggetto in prospettiva tridimensionale — non spezzato in viste separate, ma intero, da un'angolazione che permette di vedere profondità, altezza e larghezza contemporaneamente.
 
-L'assonometria è la risposta a questa esigenza: una rappresentazione tridimensionale su foglio bidimensionale che mantiene le misure misurabili, ma che dà immediatamente una percezione spaziale dell'oggetto.
+==L'assonometria è la risposta a questa esigenza: una rappresentazione tridimensionale su foglio bidimensionale che mantiene le misure misurabili, ma che dà immediatamente una percezione spaziale dell'oggetto.==
 
 ---
 
 ### Cos'è l'assonometria — la logica di base
 
-La parola "assonometria" viene dal greco: *axon* (asse) + *metron* (misura). Significa letteralmente "misurare sugli assi". La definizione racconta già la caratteristica fondamentale: in un disegno assonometrico, le misure si leggono direttamente sugli assi coordinati.
+La parola "assonometria" viene dal greco: *axon* (asse) + *metron* (misura). Significa letteralmente "misurare sugli assi". ==La definizione racconta già la caratteristica fondamentale: in un disegno assonometrico, le misure si leggono direttamente sugli assi coordinati.==
 
-Il principio è questo: l'oggetto viene proiettato su un unico piano (il foglio) in modo che tre sue facce siano visibili contemporaneamente. Per farlo, gli assi cartesiani dell'oggetto (x, y, z) vengono "ruotati" e "inclinati" rispetto al piano del foglio secondo angoli precisi che dipendono dal tipo di assonometria.
+==Il principio è questo: l'oggetto viene proiettato su un unico piano (il foglio) in modo che tre sue facce siano visibili contemporaneamente.== Per farlo, gli assi cartesiani dell'oggetto (x, y, z) vengono "ruotati" e "inclinati" rispetto al piano del foglio secondo angoli precisi che dipendono dal tipo di assonometria.
 
 Il risultato è una figura che sembra tridimensionale ma che in realtà è piatta — tutte le linee sono sul foglio, come in una proiezione ortogonale. La differenza è che queste linee sono disposte in modo da suggerire profondità.
 
@@ -119,7 +119,7 @@ Esistono diversi tipi di assonometria. In Italia nei disegni tecnici si usano pr
 
 ### Assonometria cavaliera obliqua
 
-L'assonometria cavaliera è il tipo più semplice da costruire a mano e il più usato nei manuali d'uso e nelle istruzioni di montaggio.
+==L'assonometria cavaliera è il tipo più semplice da costruire a mano e il più usato nei manuali d'uso e nelle istruzioni di montaggio.==
 
 **Gli assi:**
 - Asse x (larghezza): orizzontale, a 0° rispetto alla riga orizzontale del foglio.
@@ -127,7 +127,7 @@ L'assonometria cavaliera è il tipo più semplice da costruire a mano e il più 
 - Asse y (profondità): obliquo, a 45° rispetto alla riga orizzontale.
 
 **Il fattore di riduzione:**
-L'asse obliquo (y) subisce una riduzione. Le misure lungo l'asse y vengono moltiplicate per 0,5 — cioè vengono ridotte alla metà. Le misure lungo gli assi x e z vengono invece mantenute nella loro lunghezza reale (fattore di riduzione 1).
+L'asse obliquo (y) subisce una riduzione. ==Le misure lungo l'asse y vengono moltiplicate per 0,5 — cioè vengono ridotte alla metà.== Le misure lungo gli assi x e z vengono invece mantenute nella loro lunghezza reale (fattore di riduzione 1).
 
 Questo significa che se un oggetto è profondo 60 mm, lungo l'asse obliquo si disegna come se fosse profondo solo 30 mm. La distorsione è voluta: se si mantenesse la profondità intera a 45°, l'oggetto sembrerebbe schiacciato e innaturale.
 
@@ -158,7 +158,7 @@ L'assonometria isometrica è più equilibrata della cavaliera: mostra le tre fac
 
 **Gli assi:**
 - I tre assi (x, y, z) sono ugualmente inclinati rispetto al piano del foglio.
-- Sul foglio, i tre assi formano tra loro angoli di 120°.
+- ==Sul foglio, i tre assi formano tra loro angoli di 120°.==
 - In pratica: due assi (x e y) vanno a 30° rispetto all'orizzontale (uno verso destra-alto, uno verso sinistra-alto), e il terzo asse (z) è verticale a 90°.
 
 **Il fattore di riduzione:**
@@ -189,7 +189,7 @@ L'assonometria isometrica è preferita quando l'oggetto ha tre dimensioni simili
 | Impatto visivo | Più "inclinato" | Più equilibrato |
 | Uso tipico | Manuali, disegni esplicativi rapidi | Cataloghi, rendering tecnici, CAD |
 
-La **regola pratica**: se hai una faccia importante che deve apparire senza distorsioni (es. la faccia di un edificio con finestre e porte), usa la cavaliera e metti quella faccia sul piano frontale. Se vuoi mostrare un oggetto in modo equilibrato con tre facce simili, usa l'isometrica.
+La **regola pratica**: se hai una faccia importante che deve apparire senza distorsioni (es. la faccia di un edificio con finestre e porte), usa la cavaliera e metti quella faccia sul piano frontale. ==Se vuoi mostrare un oggetto in modo equilibrato con tre facce simili, usa l'isometrica.==
 
 > **Caso studio — IKEA e l'assonometria cavaliera**
 >
@@ -207,7 +207,7 @@ La **regola pratica**: se hai una faccia importante che deve apparire senza dist
 
 Molti oggetti reali non sono parallelepipedi semplici: sono composizioni di solidi — un cubo con una piramide sopra, un cilindro con un disco sotto, un prisma con un foro passante.
 
-La strategia per disegnare oggetti compositi in assonometria è sempre la stessa: **metodo del box**.
+==La strategia per disegnare oggetti compositi in assonometria è sempre la stessa: **metodo del box**.==
 
 1. Immagina il volume totale dell'oggetto come un parallelepipedo che lo contiene tutto (il "box").
 2. Disegna quel parallelepipedo in assonometria.
@@ -230,7 +230,7 @@ Esempio: un mattone con smussatura in alto.
 
 ### Le ellissi: come si disegnano i cerchi in assonometria
 
-I cerchi sono un caso speciale. Un cerchio reale, proiettato in assonometria, diventa un'ellisse. La forma e le proporzioni dell'ellisse dipendono dal piano su cui si trova il cerchio e dal tipo di assonometria.
+I cerchi sono un caso speciale. ==Un cerchio reale, proiettato in assonometria, diventa un'ellisse.== La forma e le proporzioni dell'ellisse dipendono dal piano su cui si trova il cerchio e dal tipo di assonometria.
 
 **Nell'assonometria cavaliera:**
 - Un cerchio sul piano frontale (xz) rimane un cerchio.

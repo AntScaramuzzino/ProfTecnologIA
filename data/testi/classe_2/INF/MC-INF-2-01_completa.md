@@ -26,13 +26,13 @@ Mentre leggi, il tuo dispositivo fa decine di cose insieme: tiene aperta l'app, 
 
 **Il direttore**
 
-Quel qualcuno è il **sistema operativo**: il primo programma che parte all'accensione e quello che fa funzionare tutti gli altri. Ogni app, per fare qualsiasi cosa, deve chiedere a lui. Windows, macOS, Linux, Android e iOS sono sistemi operativi.
+==Quel qualcuno è il **sistema operativo**: il primo programma che parte all'accensione e quello che fa funzionare tutti gli altri.== Ogni app, per fare qualsiasi cosa, deve chiedere a lui. Windows, macOS, Linux, Android e iOS sono sistemi operativi.
 
 Fa quattro lavori.
 
 **1. Decide chi lavora**
 
-Un programma in esecuzione si chiama **processo**. Il processore può occuparsi di un solo processo alla volta. Il sistema operativo allora fa un gioco di prestigio: dà a ognuno un attimo brevissimo, pochi millesimi di secondo, e passa al successivo. Il giro è così veloce che a te sembra che tutto funzioni insieme.
+==Un programma in esecuzione si chiama **processo**.== Il processore può occuparsi di un solo processo alla volta. Il sistema operativo allora fa un gioco di prestigio: dà a ognuno un attimo brevissimo, pochi millesimi di secondo, e passa al successivo. Il giro è così veloce che a te sembra che tutto funzioni insieme.
 
 Decide anche le precedenze: le cose importanti passano davanti alla musica in sottofondo.
 
@@ -42,11 +42,11 @@ Decide anche le precedenze: le cose importanti passano davanti alla musica in so
 
 La RAM è la memoria di lavoro, e tutti i processi la vogliono. Il sistema operativo assegna a ognuno il suo spazio e lo riprende quando l'app si chiude.
 
-Se la RAM si riempie, usa come riserva un pezzo del disco, che però è molto più lento. È per questo che con troppe app aperte tutto rallenta.
+Se la RAM si riempie, usa come riserva un pezzo del disco, che però è molto più lento. ==È per questo che con troppe app aperte tutto rallenta.==
 
 **3. Tiene in ordine i file**
 
-Il **file system** è il modo in cui i file sono organizzati: cartelle dentro cartelle, come i rami di un albero. Ogni file ha un **percorso**, l'elenco delle cartelle da attraversare per raggiungerlo, un po' come un indirizzo di casa.
+==Il **file system** è il modo in cui i file sono organizzati: cartelle dentro cartelle, come i rami di un albero.== Ogni file ha un **percorso**, l'elenco delle cartelle da attraversare per raggiungerlo, un po' come un indirizzo di casa.
 
 Di ogni file il sistema ricorda anche nome, grandezza, data dell'ultima modifica e chi ha il permesso di aprirlo.
 
@@ -62,7 +62,7 @@ Di solito usi finestre, icone e mouse: è l'**interfaccia grafica**. Ne esiste u
 
 **Uno gratis per tutti**
 
-Linux è un sistema operativo libero: chiunque può usarlo, leggerne il codice e modificarlo senza pagare. Fa funzionare la maggior parte dei computer che reggono internet, e anche Android è costruito sulla sua base.
+==Linux è un sistema operativo libero: chiunque può usarlo, leggerne il codice e modificarlo senza pagare.== Fa funzionare la maggior parte dei computer che reggono internet, e anche Android è costruito sulla sua base.
 
 > ✋ **Tocca a te.** Sul computer dell'aula c'è un file nella cartella Tecnologia, che sta dentro Scuola, che sta dentro Documenti. Scrivi il suo percorso, cartella per cartella, come se fosse un indirizzo.
 
@@ -80,7 +80,7 @@ Linux è un sistema operativo libero: chiunque può usarlo, leggerne il codice e
 
 Quando accendi un computer — qualsiasi computer — la prima cosa che succede non è che si apre il browser o la tua app preferita. La prima cosa che succede è che parte un programma enorme e invisibile chiamato **sistema operativo** (in inglese *Operating System*, abbreviato **OS**).
 
-Il sistema operativo è il programma che gestisce tutto il resto. Senza di lui, nessun'altra applicazione potrebbe funzionare. Ogni app che usi chiede al sistema operativo di accedere alla memoria, di leggere un file, di inviare dati in rete, di disegnare qualcosa sullo schermo. Il sistema operativo decide quando e come concedere queste risorse — a volte accettando, a volte rimandando, a volte rifiutando.
+==Il sistema operativo è il programma che gestisce tutto il resto.== Senza di lui, nessun'altra applicazione potrebbe funzionare. Ogni app che usi chiede al sistema operativo di accedere alla memoria, di leggere un file, di inviare dati in rete, di disegnare qualcosa sullo schermo. Il sistema operativo decide quando e come concedere queste risorse — a volte accettando, a volte rimandando, a volte rifiutando.
 
 Gary Kildall, ingegnere informatico di Pacific Grove, California, ha creato il primo sistema operativo commerciale per microcomputer nel 1974: si chiamava CP/M. Senza quel lavoro, ogni programma avrebbe dovuto reimplementare da zero tutte le funzioni di base. Kildall ha capito che ci voleva uno strato intermedio tra l'hardware e i programmi applicativi — uno strato che gestisse la complessità e nascondesse i dettagli hardware ai programmatori.
 
@@ -92,9 +92,9 @@ Un sistema operativo moderno svolge quattro funzioni fondamentali.
 
 **1. Gestione dei processi**
 
-Un **processo** è un programma in esecuzione. Ogni volta che apri un'app, il sistema operativo crea un processo. Quando chiudi l'app, il processo viene terminato.
+==Un **processo** è un programma in esecuzione.== Ogni volta che apri un'app, il sistema operativo crea un processo. Quando chiudi l'app, il processo viene terminato.
 
-Il problema è che un processore fisico può eseguire solo un processo alla volta. Se apri 20 applicazioni, il sistema operativo deve simulare l'esecuzione parallela assegnando a ciascun processo brevi frazioni di tempo del processore — ogni pochi millisecondi, cambia il processo attivo. Questa tecnica si chiama **multitasking** ed è così veloce da sembrare simultanea.
+Il problema è che un processore fisico può eseguire solo un processo alla volta. Se apri 20 applicazioni, il sistema operativo deve simulare l'esecuzione parallela assegnando a ciascun processo brevi frazioni di tempo del processore — ogni pochi millisecondi, cambia il processo attivo. ==Questa tecnica si chiama **multitasking** ed è così veloce da sembrare simultanea.==
 
 Il sistema operativo decide anche le *priorità*: un processo di sistema critico ha più priorità di un'app musicale in background. Se la CPU è sotto pressione, l'app musicale si mette in pausa.
 
@@ -108,7 +108,7 @@ Cosa succede se la RAM è piena? Il sistema operativo usa una parte dello storag
 
 Come vengono organizzati i file sullo storage? Attraverso il **file system** — un sistema di organizzazione gerarchica a **struttura ad albero**: cartelle che contengono altre cartelle, che contengono file.
 
-Ogni file system ha una **radice** (in Windows è `C:\`, in Linux e macOS è `/`). Da lì si ramificano tutte le cartelle. Ogni file ha un **percorso** — una sequenza di cartelle che indica dove si trova: `C:\Utenti\Giulia\Documenti\relazione.docx` è un percorso in Windows.
+Ogni file system ha una **radice** (in Windows è `C:\`, in Linux e macOS è `/`). Da lì si ramificano tutte le cartelle. ==Ogni file ha un **percorso** — una sequenza di cartelle che indica dove si trova: `C:\Utenti\Giulia\Documenti\relazione.docx` è un percorso in Windows.==
 
 I file system mantengono anche i **metadati** di ogni file: nome, dimensione, data di creazione, data di ultima modifica, permessi di accesso (chi può leggere, chi può scrivere, chi può eseguire).
 
@@ -136,7 +136,7 @@ Ogni periferica — stampante, tastiera, mouse, scheda di rete, USB — ha il su
 
 I sistemi operativi moderni offrono due modi per interagire:
 
-**Interfaccia grafica (GUI — *Graphical User Interface*)**: finestre, icone, menu, mouse. Quella che usi normalmente. È intuitiva ma limitata: puoi fare solo quello che i menu permettono.
+**Interfaccia grafica (GUI — *Graphical User Interface*)**: finestre, icone, menu, mouse. Quella che usi normalmente. ==È intuitiva ma limitata: puoi fare solo quello che i menu permettono.==
 
 **Riga di comando (CLI — *Command Line Interface*)**: si scrivono comandi testuali. In Windows si chiama PowerShell o Prompt dei comandi, in Linux/macOS si chiama Terminale. È meno intuitiva ma molto più potente: puoi automatizzare operazioni ripetitive, accedere a funzioni nascoste, gestire server remoti.
 

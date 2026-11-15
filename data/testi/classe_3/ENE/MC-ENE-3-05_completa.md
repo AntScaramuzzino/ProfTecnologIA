@@ -35,11 +35,11 @@ Un motore trasforma energia in movimento. Quello a benzina ne spreca più della 
 
 **Il calore è energia difficile**
 
-Trasformare movimento in calore è facilissimo: strofina le mani e si scaldano. Il contrario no. Non si può trasformare tutto il calore in movimento: una parte se ne va sempre nell'ambiente. È una legge della natura, il secondo principio della termodinamica.
+Trasformare movimento in calore è facilissimo: strofina le mani e si scaldano. Il contrario no. Non si può trasformare tutto il calore in movimento: una parte se ne va sempre nell'ambiente. ==È una legge della natura, il secondo principio della termodinamica.==
 
-Da qui una conseguenza che vale per tutti i motori che bruciano qualcosa: il **rendimento**, cioè la parte di energia che diventa davvero movimento, non può mai arrivare al 100%. E nemmeno andarci vicino.
+==Da qui una conseguenza che vale per tutti i motori che bruciano qualcosa: il **rendimento**, cioè la parte di energia che diventa davvero movimento, non può mai arrivare al 100%.== E nemmeno andarci vicino.
 
-Più di duecento anni fa un ingegnere francese, Sadi Carnot, calcolò il limite massimo. Dipende solo da due temperature: quanto è calda la parte calda del motore e quanto è fredda quella dove si scarica il calore. Per un motore a benzina il limite teorico è poco sopra la metà. I motori veri restano molto più sotto.
+Più di duecento anni fa un ingegnere francese, Sadi Carnot, calcolò il limite massimo. ==Dipende solo da due temperature: quanto è calda la parte calda del motore e quanto è fredda quella dove si scarica il calore.== Per un motore a benzina il limite teorico è poco sopra la metà. I motori veri restano molto più sotto.
 
 > ✋ **Tocca a te.** Strofina forte le mani per dieci secondi. Hai trasformato movimento in calore. Ora prova a immaginare il contrario: come faresti a usare il calore delle tue mani per far muovere qualcosa? Perché è così più difficile?
 
@@ -49,7 +49,7 @@ La prima grande macchina a sfruttare il calore fu la **macchina a vapore**, resa
 
 **Il motore a scoppio**
 
-La macchina a vapore era enorme. Per un'automobile serviva qualcosa di compatto: un motore in cui il combustibile brucia direttamente dentro il cilindro. È il **motore a scoppio**, e lavora in quattro tempi.
+La macchina a vapore era enorme. Per un'automobile serviva qualcosa di compatto: un motore in cui il combustibile brucia direttamente dentro il cilindro. ==È il **motore a scoppio**, e lavora in quattro tempi.==
 
 1. **Aspirazione**: il pistone scende e nel cilindro entra una miscela di aria e benzina.
 2. **Compressione**: il pistone risale e schiaccia la miscela.
@@ -100,9 +100,9 @@ Prima di parlare di motori, devi capire una cosa fondamentale che la fisica ha i
 
 Cosa vuol dire? Puoi convertire energia meccanica (movimento) in calore con un rendimento del 100% — strofina le mani e si scaldano: hai convertito tutto il lavoro in calore. Ma non puoi fare il contrario: non puoi convertire calore in movimento con il 100% di efficienza. C'è sempre una parte di calore che "si disperde" irrecuperabilmente.
 
-Questo è il **secondo principio della termodinamica**, enunciato da Sadi Carnot nel 1824 e poi formalizzato da Clausius e Kelvin. Il concetto chiave è quello di **entropia**: l'energia tende spontaneamente a disperdersi, a diventare "disordinata", e non puoi mai recuperarla tutta.
+==Questo è il **secondo principio della termodinamica**, enunciato da Sadi Carnot nel 1824 e poi formalizzato da Clausius e Kelvin.== ==Il concetto chiave è quello di **entropia**: l'energia tende spontaneamente a disperdersi, a diventare "disordinata", e non puoi mai recuperarla tutta.==
 
-**Conseguenza pratica:** nessuna macchina termica — nessuna — può mai avere rendimento del 100%. Non perché i progettisti non siano abbastanza bravi: perché è fisicamente impossibile.
+==**Conseguenza pratica:** nessuna macchina termica — nessuna — può mai avere rendimento del 100%.== Non perché i progettisti non siano abbastanza bravi: perché è fisicamente impossibile.
 
 ---
 
@@ -110,7 +110,7 @@ Questo è il **secondo principio della termodinamica**, enunciato da Sadi Carnot
 
 Nicolas Léonard Sadi Carnot, ingegnere militare francese, si pose nel 1824 questa domanda: qual è il massimo rendimento teorico che un motore può raggiungere?
 
-La risposta che trovò — e che ancora oggi è valida — dipende solo da due temperature:
+==La risposta che trovò — e che ancora oggi è valida — dipende solo da due temperature:==
 - **T_H** — la temperatura della sorgente calda (dove entra il calore: la camera di combustione, la fornace, il reattore nucleare)
 - **T_C** — la temperatura della sorgente fredda (dove il calore residuo viene espulso: l'atmosfera, l'acqua di raffreddamento)
 
@@ -135,7 +135,7 @@ Stai pagando per fare esplodere benzina, e più del 60% di quell'energia finisce
 
 Prima del 1769, quasi tutta l'energia meccanica utilizzata dall'umanità veniva dai muscoli umani, dai buoi, dai cavalli, dai mulini a vento e dai mulini ad acqua. L'industria tessile, quella mineraria, l'agricoltura — tutto dipendeva da queste fonti limitate e incostanti.
 
-Nel 1769, James Watt, fabbro e inventore scozzese, brevettò una macchina a vapore radicalmente più efficiente di quelle esistenti. Il suo miglioramento principale: separare il condensatore (dove il vapore si raffredda) dal cilindro (dove spinge il pistone). In precedenza, ogni ciclo richiedeva di raffreddare e riscaldare l'intero cilindro — uno spreco enorme di energia.
+Nel 1769, James Watt, fabbro e inventore scozzese, brevettò una macchina a vapore radicalmente più efficiente di quelle esistenti. ==Il suo miglioramento principale: separare il condensatore (dove il vapore si raffredda) dal cilindro (dove spinge il pistone).== In precedenza, ogni ciclo richiedeva di raffreddare e riscaldare l'intero cilindro — uno spreco enorme di energia.
 
 Come funziona la macchina a vapore:
 1. L'acqua in una caldaia viene riscaldata fino a produrre vapore ad alta pressione
@@ -190,7 +190,7 @@ Un motore con un solo cilindro sarebbe irregolare: produce forza solo durante il
 | Torque a basso regime | Minore | Maggiore (per questo usato nei camion) |
 | Costo manutenzione | Inferiore | Superiore |
 
-Il motore diesel fu inventato da Rudolf Diesel nel 1893, che aveva come obiettivo esplicito di costruire un motore più efficiente di quello a benzina — ci riuscì. Il diesel è ancora oggi il motore più efficiente tra i termici convenzionali.
+==Il motore diesel fu inventato da Rudolf Diesel nel 1893, che aveva come obiettivo esplicito di costruire un motore più efficiente di quello a benzina — ci riuscì.== ==Il diesel è ancora oggi il motore più efficiente tra i termici convenzionali.==
 
 > **Box Fisica — Secondo principio della termodinamica:**
 >
@@ -204,7 +204,7 @@ Il motore diesel fu inventato da Rudolf Diesel nel 1893, che aveva come obiettiv
 
 ### Il motore elettrico: una fisica completamente diversa
 
-Il motore elettrico non è una macchina termica. Non brucia nulla. Non ha pistoni, valvole, candele, olio motore. Si basa su un principio completamente diverso: l'interazione tra un **campo magnetico** e una **corrente elettrica**.
+==Il motore elettrico non è una macchina termica.== Non brucia nulla. Non ha pistoni, valvole, candele, olio motore. Si basa su un principio completamente diverso: l'interazione tra un **campo magnetico** e una **corrente elettrica**.
 
 Il principio fondamentale (Legge di Faraday-Laplace): un conduttore percorso da corrente elettrica, immerso in un campo magnetico, subisce una forza meccanica. Questa forza fa ruotare un asse.
 
@@ -232,17 +232,17 @@ Perché non c'è combustione, quindi non c'è il limite del secondo principio de
 | Autonomia tipica (2026) | 600–800 km | 300–600 km |
 | Tempo di "ricarica" | 3–5 minuti (fare benzina) | 20–45 min (ricarica veloce DC) |
 
-La superiorità tecnica del motore elettrico è schiacciante in quasi tutte le metriche eccetto una: l'autonomia e il tempo di ricarica. Ed è esattamente su questi due aspetti che si stanno concentrando miliardi di euro di investimenti in tutto il mondo (la MC-ENE-3-06 sul tema dell'accumulo energetico ti spiegherà perché).
+==La superiorità tecnica del motore elettrico è schiacciante in quasi tutte le metriche eccetto una: l'autonomia e il tempo di ricarica.== Ed è esattamente su questi due aspetti che si stanno concentrando miliardi di euro di investimenti in tutto il mondo (la MC-ENE-3-06 sul tema dell'accumulo energetico ti spiegherà perché).
 
 ---
 
 ### Veicoli ibridi e full electric: le configurazioni
 
 **Ibrido tradizionale (HEV):**
-Ha sia un motore a benzina sia un motore elettrico. Il motore elettrico recupera energia durante la frenata (frenata rigenerativa) e la usa per assistere il motore a benzina in accelerazione. Non si ricarica dalla rete. Esempio: Toyota Prius.
+==Ha sia un motore a benzina sia un motore elettrico.== Il motore elettrico recupera energia durante la frenata (frenata rigenerativa) e la usa per assistere il motore a benzina in accelerazione. Non si ricarica dalla rete. Esempio: Toyota Prius.
 
 **Ibrido plug-in (PHEV):**
-Come il HEV, ma con una batteria più grande che si può ricaricare dalla rete elettrica. Può percorrere 50–80 km solo in elettrico (sufficiente per molti tragitti urbani) prima di passare al benzina. Esempio: Mitsubishi Outlander PHEV.
+==Come il HEV, ma con una batteria più grande che si può ricaricare dalla rete elettrica.== Può percorrere 50–80 km solo in elettrico (sufficiente per molti tragitti urbani) prima di passare al benzina. Esempio: Mitsubishi Outlander PHEV.
 
 **Full electric (BEV):**
 Solo motore elettrico. Nessun motore termico. Batteria agli ioni di litio ricaricabile dalla rete. Zero emissioni dirette. Il punto debole è l'autonomia e l'infrastruttura di ricarica. Esempi: Tesla Model 3, Volkswagen ID.3, Fiat 500e.

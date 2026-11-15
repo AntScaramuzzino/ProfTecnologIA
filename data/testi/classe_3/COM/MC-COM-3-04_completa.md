@@ -24,17 +24,17 @@ Come è possibile? E cosa ci dice questo sui sistemi automatici che ti circondan
 
 ### 🎯 In breve
 
-Una macchina che lavora da sola non è per forza "intelligente". Dietro una lavatrice, un cancello automatico o una fabbrica di automobili c'è la stessa idea: misurare, decidere, agire. Si chiama **automazione**.
+Una macchina che lavora da sola non è per forza "intelligente". ==Dietro una lavatrice, un cancello automatico o una fabbrica di automobili c'è la stessa idea: misurare, decidere, agire.== Si chiama **automazione**.
 
 **Tre pezzi, sempre gli stessi**
 
 Ogni sistema automatico è fatto di tre parti.
 
 - I **sensori** misurano qualcosa: temperatura, luce, movimento, distanza.
-- La logica di controllo, cioè un programma, decide che cosa fare.
+- ==La logica di controllo, cioè un programma, decide che cosa fare.==
 - Gli **attuatori** agiscono: un motore, una valvola, una lampada, una serratura.
 
-Il termostato di casa li ha tutti e tre. Misura la temperatura, la confronta con quella che hai scelto, accende o spegne la caldaia. Poi misura di nuovo. Questo giro continuo, in cui il risultato dell'azione torna indietro come nuova misura, si chiama **feedback**.
+Il termostato di casa li ha tutti e tre. Misura la temperatura, la confronta con quella che hai scelto, accende o spegne la caldaia. Poi misura di nuovo. ==Questo giro continuo, in cui il risultato dell'azione torna indietro come nuova misura, si chiama **feedback**.==
 
 > ✋ **Tocca a te.** Scegli un oggetto automatico che conosci: la porta scorrevole del supermercato, la lavatrice, il lampione che si accende al buio. Qual è il sensore? Qual è l'attuatore? Qual è la regola che li collega? Scrivila con SE… ALLORA.
 
@@ -46,18 +46,18 @@ I robot industriali sono forti e precisissimi, ma pericolosi: lavorano dentro ga
 
 **Fabbricare aggiungendo**
 
-La **stampa 3D** costruisce un oggetto strato dopo strato, partendo da un file. Non serve uno stampo, quindi conviene anche per un pezzo solo. E permette forme impossibili con altri metodi, come una cavità chiusa dentro un pezzo pieno. Si usa per prototipi, ricambi, protesi su misura.
+La **stampa 3D** costruisce un oggetto strato dopo strato, partendo da un file. ==Non serve uno stampo, quindi conviene anche per un pezzo solo.== E permette forme impossibili con altri metodi, come una cavità chiusa dentro un pezzo pieno. Si usa per prototipi, ricambi, protesi su misura.
 
 **La fabbrica connessa**
 
-**Industria 4.0** è il nome dato alla fabbrica in cui le macchine sono collegate in rete e si scambiano dati. Quattro ingredienti:
+==**Industria 4.0** è il nome dato alla fabbrica in cui le macchine sono collegate in rete e si scambiano dati.== Quattro ingredienti:
 
 - macchine e oggetti connessi, che trasmettono in continuazione come stanno;
 - l'analisi di questa enorme quantità di dati, per accorgersi di un guasto prima che avvenga;
 - l'intelligenza artificiale, per esempio telecamere che controllano i pezzi difettosi;
 - il cloud, per seguire più stabilimenti insieme.
 
-Un'idea potente è il **gemello digitale**: una copia virtuale di una macchina, aggiornata con i dati di quella vera. Ci si provano le modifiche prima di farle davvero.
+==Un'idea potente è il **gemello digitale**: una copia virtuale di una macchina, aggiornata con i dati di quella vera.== Ci si provano le modifiche prima di farle davvero.
 
 **La casa automatica**
 
@@ -85,7 +85,7 @@ E non tutto conviene automatizzarlo. Nelle fabbriche di auto di lusso italiane i
 
 ### Dalle macchine a vapore ai sistemi intelligenti: storia dell'automazione
 
-L'automazione non è nata con i computer. Nasce nel 1764 in un mulino tessile del Lancashire, in Inghilterra, quando James Hargreaves inventa la "Spinning Jenny": una macchina che sostituisce il lavoro manuale di otto filatrici con il lavoro di una sola persona. In quel momento inizia qualcosa che non si fermerà più.
+==L'automazione non è nata con i computer.== Nasce nel 1764 in un mulino tessile del Lancashire, in Inghilterra, quando James Hargreaves inventa la "Spinning Jenny": una macchina che sostituisce il lavoro manuale di otto filatrici con il lavoro di una sola persona. In quel momento inizia qualcosa che non si fermerà più.
 
 La Prima Rivoluzione Industriale (1760–1840) porta le macchine a vapore nelle fabbriche: il muscolo umano viene sostituito dall'energia termica. La Seconda Rivoluzione (1870–1914) porta l'elettricità e la produzione in serie. Henry Ford nel 1913 inventa la catena di montaggio: ogni operaio fa un'unica operazione ripetuta all'infinito — non perché sia più bravo così, ma perché è più rapido, più economico e più controllabile. La Terza Rivoluzione (anni '70–'80 del Novecento) porta l'elettronica e i computer: le macchine possono ora "ricordare" istruzioni, adattarsi a variabili, essere riprogrammate senza smontarle.
 
@@ -97,9 +97,9 @@ Oggi viviamo nella **Quarta Rivoluzione Industriale** — chiamata **Industria 4
 
 Prima di entrare nell'Industria 4.0, è importante capire la distinzione tra due tipi di automazione.
 
-L'**automazione rigida** è progettata per fare una sola cosa, sempre allo stesso modo. Un imbottigliatrice in una fabbrica di acqua minerale è automazione rigida: riempie bottiglie da 1,5 litri alla velocità di 40.000 al giorno. Non sa fare altro. Se vuoi passare alle bottiglie da 0,5 litri, devi fermare la linea, cambiare i meccanismi, ricalibrarla. L'automazione rigida è imbattibile per volumi alti e prodotto costante.
+==L'**automazione rigida** è progettata per fare una sola cosa, sempre allo stesso modo.== Un imbottigliatrice in una fabbrica di acqua minerale è automazione rigida: riempie bottiglie da 1,5 litri alla velocità di 40.000 al giorno. Non sa fare altro. Se vuoi passare alle bottiglie da 0,5 litri, devi fermare la linea, cambiare i meccanismi, ricalibrarla. L'automazione rigida è imbattibile per volumi alti e prodotto costante.
 
-L'**automazione flessibile** è progettata per adattarsi. Un braccio robotico programmabile può avvitare una vite su un'auto, poi essere riprogrammato per saldare una scocca diversa, poi per applicare una guarnizione. È più lento di una macchina dedicata, ma può cambiare compito senza essere fisicamente smontato. Quando i mercati cambiano spesso e i prodotti si moltiplicano, l'automazione flessibile vince.
+==L'**automazione flessibile** è progettata per adattarsi.== Un braccio robotico programmabile può avvitare una vite su un'auto, poi essere riprogrammato per saldare una scocca diversa, poi per applicare una guarnizione. È più lento di una macchina dedicata, ma può cambiare compito senza essere fisicamente smontato. Quando i mercati cambiano spesso e i prodotti si moltiplicano, l'automazione flessibile vince.
 
 La tendenza dell'Industria 4.0 è verso l'automazione flessibile estrema: sistemi che si auto-riconfigurano in base agli ordini in arrivo, senza intervento umano.
 
@@ -107,7 +107,7 @@ La tendenza dell'Industria 4.0 è verso l'automazione flessibile estrema: sistem
 
 ### I robot industriali: come funzionano davvero
 
-Un **robot industriale** è un sistema meccanico a più giunti comandato da un computer, in grado di compiere movimenti precisi e ripetibili nello spazio tridimensionale. La sua descrizione tecnica si basa su tre parametri principali.
+==Un **robot industriale** è un sistema meccanico a più giunti comandato da un computer, in grado di compiere movimenti precisi e ripetibili nello spazio tridimensionale.== La sua descrizione tecnica si basa su tre parametri principali.
 
 **Gli assi di movimento** — ogni giunzione rotante è un asse. Un robot a 6 assi può muoversi come il braccio umano (spalla, gomito, polso) con tre gradi di libertà aggiuntivi. Più assi = più libertà di movimento = più versatilità. Un semplice robot a 3 assi può avvitare; un robot a 6 assi può fare saldatura in tutte le direzioni, verniciatura, assemblaggio delicato.
 
@@ -123,23 +123,23 @@ Un **robot industriale** è un sistema meccanico a più giunti comandato da un c
 
 La robotica industriale tradizionale mette i robot in gabbie di sicurezza: sono veloci, precisi, e pericolosi per un essere umano che si avvicina. Per questo le grandi linee di produzione separano fisicamente le zone robotizzate da quelle umane.
 
-Negli anni 2000 nasce una categoria nuova: i **robot collaborativi**, detti **cobot** (da *collaborative robots*). Sono progettati per operare nello stesso spazio degli esseri umani, senza gabbie di protezione.
+==Negli anni 2000 nasce una categoria nuova: i **robot collaborativi**, detti **cobot** (da *collaborative robots*).== Sono progettati per operare nello stesso spazio degli esseri umani, senza gabbie di protezione.
 
 Come è possibile? I cobot hanno sensori di forza distribuiti su tutti i giunti: se il robot tocca qualcosa di inaspettato — una mano di un operaio, un ostacolo — si ferma immediatamente. Non solo: se viene spinto, cede. La velocità di un cobot è molto inferiore a quella di un robot industriale tradizionale, ma è intenzionale: la sicurezza è la priorità.
 
 Il produttore di automobili **BMW** ha introdotto i cobot nello stabilimento di Dingolfing (Germania) per compiti che richiedono sia la forza di una macchina che la destrezza di un essere umano. Un esempio specifico: montare le guarnizioni nelle portiere. Le guarnizioni sono flessibili e devono essere inserite in una scanalatura precisa seguendo un percorso curvo irregolare. Il robot fa la forza; l'operaio guida la traiettoria. Insieme producono in modo che nessuno dei due potrebbe fare da solo.
 
-Questo modello si chiama **collaborazione uomo-robot** ed è molto diverso dall'immagine cinematografica dei robot che "sostituiscono" gli umani. Nei cobot, la macchina fa quello che sa fare meglio (forza, ripetibilità, resistenza alla fatica) e l'umano fa quello che sa fare meglio (adattamento a variabili impreviste, giudizio, creatività).
+==Questo modello si chiama **collaborazione uomo-robot** ed è molto diverso dall'immagine cinematografica dei robot che "sostituiscono" gli umani.== Nei cobot, la macchina fa quello che sa fare meglio (forza, ripetibilità, resistenza alla fatica) e l'umano fa quello che sa fare meglio (adattamento a variabili impreviste, giudizio, creatività).
 
 ---
 
 ### La stampa 3D industriale: fabbricare senza stampi
 
-La **stampa 3D** — tecnicamente chiamata **manifattura additiva** — è una tecnologia che costruisce oggetti aggiungendo materiale strato per strato a partire da un file digitale. È l'opposto della lavorazione tradizionale, dove il materiale viene sottratto (torni, frese, trapani).
+==La **stampa 3D** — tecnicamente chiamata **manifattura additiva** — è una tecnologia che costruisce oggetti aggiungendo materiale strato per strato a partire da un file digitale.== È l'opposto della lavorazione tradizionale, dove il materiale viene sottratto (torni, frese, trapani).
 
 Esistono tre processi principali con caratteristiche molto diverse.
 
-**FDM — Fused Deposition Modeling** (deposizione di filamento fuso): è il processo delle stampanti 3D economiche che forse hai già visto. Un filamento di materiale termoplastico (solitamente PLA o ABS) viene fuso e depositato strato per strato. I costi di macchina sono bassi (da 200 a 2.000 euro per le versioni hobbyiste, da 10.000 a 100.000 euro per quelle industriali). Limite principale: la superficie ha le "linee" degli strati visibili; la resistenza meccanica non è uniforme in tutte le direzioni.
+==**FDM — Fused Deposition Modeling** (deposizione di filamento fuso): è il processo delle stampanti 3D economiche che forse hai già visto.== Un filamento di materiale termoplastico (solitamente PLA o ABS) viene fuso e depositato strato per strato. I costi di macchina sono bassi (da 200 a 2.000 euro per le versioni hobbyiste, da 10.000 a 100.000 euro per quelle industriali). Limite principale: la superficie ha le "linee" degli strati visibili; la resistenza meccanica non è uniforme in tutte le direzioni.
 
 **SLA — Stereolithography** (stereolitografia): usa un laser ultravioletto per solidificare resina liquida fotosensibile punto per punto. Produce superfici lisce e dettagli molto fini — usato per gioielleria, prototipi dentali, componenti medici. Limite: le resine sono costose e alcune sono tossiche durante la lavorazione.
 
@@ -159,10 +159,10 @@ Cosa cambia con la stampa 3D rispetto alla produzione tradizionale? Quattro cose
 
 ### Le quattro tecnologie chiave dell'Industria 4.0
 
-Il termine "Industria 4.0" (in tedesco **Industrie 4.0**) è stato coniato nel 2011 in Germania come strategia industriale nazionale. Descrive l'integrazione di quattro tecnologie che, prese singolarmente, esistevano già da decenni, ma che insieme creano qualcosa di radicalmente nuovo.
+Il termine "Industria 4.0" (in tedesco **Industrie 4.0**) è stato coniato nel 2011 in Germania come strategia industriale nazionale. ==Descrive l'integrazione di quattro tecnologie che, prese singolarmente, esistevano già da decenni, ma che insieme creano qualcosa di radicalmente nuovo.==
 
 **1. IoT — Internet of Things (Internet delle Cose)**
-Ogni macchina, sensore, componente in una fabbrica moderna è connesso a internet e trasmette dati in tempo reale. Una macchina utensile trasmette: temperatura del mandrino, vibrazione degli utensili, consumo energetico, numero di pezzi prodotti, deviazioni dalla tolleranza. Questi dati vengono raccolti in modo continuo — non ogni ora, non ogni giorno: ogni secondo o ogni millisecondo. Quando un sensore di vibrazione inizia a segnalare un'anomalia, il sistema lo sa prima che l'operatore se ne accorga.
+==Ogni macchina, sensore, componente in una fabbrica moderna è connesso a internet e trasmette dati in tempo reale.== Una macchina utensile trasmette: temperatura del mandrino, vibrazione degli utensili, consumo energetico, numero di pezzi prodotti, deviazioni dalla tolleranza. Questi dati vengono raccolti in modo continuo — non ogni ora, non ogni giorno: ogni secondo o ogni millisecondo. Quando un sensore di vibrazione inizia a segnalare un'anomalia, il sistema lo sa prima che l'operatore se ne accorga.
 
 **2. Big Data e Analytics**
 Il volume di dati prodotti da una fabbrica IoT è enorme — milioni di misurazioni al secondo da centinaia di sensori. Nessun essere umano può analizzarli in tempo reale. I sistemi di **analytics industriale** cercano pattern: correlazioni tra variabili che predicono un guasto prima che accada. Questo si chiama **manutenzione predittiva** (o *predictive maintenance*): invece di aspettare che una macchina si rompa (manutenzione reattiva) o di fermarla ogni tot ore per verificarla (manutenzione preventiva), il sistema dice "questa macchina si guasterà tra 48 ore con probabilità dell'87%" — e la fai fermare prima, durante un momento programmato.
@@ -183,9 +183,9 @@ Come funziona? Una turbina eolica reale ha centinaia di sensori che misurano con
 
 Cosa ci puoi fare? Tre cose fondamentali.
 
-Prima: **simulare prima di costruire.** Quando si progetta un nuovo impianto, il gemello digitale permette di testare tutte le configurazioni possibili in simulazione, prima di spendere un euro in acciaio e cemento. Si scoprono i colli di bottiglia, le inefficienze, i rischi di guasto — senza conseguenze reali.
+==Prima: **simulare prima di costruire.** Quando si progetta un nuovo impianto, il gemello digitale permette di testare tutte le configurazioni possibili in simulazione, prima di spendere un euro in acciaio e cemento.== Si scoprono i colli di bottiglia, le inefficienze, i rischi di guasto — senza conseguenze reali.
 
-Seconda: **manutenzione predittiva avanzata.** Il gemello digitale calcola in tempo reale lo stato di usura di ogni componente basandosi sui carichi effettivamente subiti — non su una stima media. Sa che quella turbina specifica ha lavorato in condizioni particolarmente dure per tre settimane e anticipa il guasto con maggiore precisione.
+==Seconda: **manutenzione predittiva avanzata.** Il gemello digitale calcola in tempo reale lo stato di usura di ogni componente basandosi sui carichi effettivamente subiti — non su una stima media.== Sa che quella turbina specifica ha lavorato in condizioni particolarmente dure per tre settimane e anticipa il guasto con maggiore precisione.
 
 Terza: **ottimizzazione continua.** Se si scopre in simulazione che abbassare la temperatura di lavorazione del 10% riduce l'usura del 30% con solo il 5% in meno di produttività, il sistema può implementare la modifica su tutte le macchine di quel tipo in tutti gli stabilimenti del mondo contemporaneamente.
 
@@ -193,7 +193,7 @@ Terza: **ottimizzazione continua.** Se si scopre in simulazione che abbassare la
 
 ### La domotica: la fabbrica entra in casa
 
-La **domotica** (da *domus*, casa in latino) applica i principi dell'automazione industriale all'abitazione. Sensori, attuatori, logica di controllo: la stessa architettura di una fabbrica, in scala ridotta e ottimizzata per il comfort e la sicurezza di chi vive in casa.
+==La **domotica** (da *domus*, casa in latino) applica i principi dell'automazione industriale all'abitazione.== Sensori, attuatori, logica di controllo: la stessa architettura di una fabbrica, in scala ridotta e ottimizzata per il comfort e la sicurezza di chi vive in casa.
 
 I sistemi domotici moderni si basano su **protocolli di comunicazione** che permettono ai dispositivi di parlare tra loro. I tre principali oggi sono:
 
@@ -209,9 +209,9 @@ Un sistema domotico completo integra: **rilevazione** (sensori di movimento, ape
 
 ### L'intelligenza dei sistemi automatici: sensori, feedback e controllo PID
 
-Ogni sistema automatico — da un termostato a un robot — funziona su un principio fondamentale: il **loop di controllo a feedback**. Il sistema misura continuamente la differenza tra lo stato attuale e lo stato desiderato, e corregge di conseguenza.
+==Ogni sistema automatico — da un termostato a un robot — funziona su un principio fondamentale: il **loop di controllo a feedback**.== ==Il sistema misura continuamente la differenza tra lo stato attuale e lo stato desiderato, e corregge di conseguenza.==
 
-Il **controllo PID** (Proporzionale-Integrale-Derivativo) è il metodo matematico più usato nell'automazione per implementare questo loop. Non è necessario capire la matematica completa per capire il concetto:
+==Il **controllo PID** (Proporzionale-Integrale-Derivativo) è il metodo matematico più usato nell'automazione per implementare questo loop.== Non è necessario capire la matematica completa per capire il concetto:
 
 **P — Proporzionale:** la correzione applicata è proporzionale all'errore attuale. Se la temperatura è 5°C sotto il target, applico una correzione grande; se è 0,5°C sotto, applico una correzione piccola.
 
@@ -251,7 +251,7 @@ Come si fa a produrre su misura senza perdere efficienza?
 
 **Il sistema di tracciabilità totale.** Ogni singolo componente — dal bullone alla scocca — è tracciato con un codice univoco. Se tra cinque anni si scopre un difetto su un tipo specifico di bullone prodotto in un certo periodo, il sistema sa esattamente su quali auto quel bullone è stato montato — e dove si trovano quelle auto nel mondo. Questo è possibile solo perché ogni dato di produzione è stato registrato in tempo reale e archiviato.
 
-Lamborghini è un caso studio interessante perché mostra che l'Industria 4.0 non è "tutto automatizzato". È l'integrazione intelligente tra macchine, dati e competenze umane — dove ogni elemento fa quello che sa fare meglio.
+==Lamborghini è un caso studio interessante perché mostra che l'Industria 4.0 non è "tutto automatizzato".== È l'integrazione intelligente tra macchine, dati e competenze umane — dove ogni elemento fa quello che sa fare meglio.
 
 ---
 

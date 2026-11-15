@@ -25,7 +25,7 @@ Alcune di queste tecnologie sono già nel tuo supermercato. Alcune sono nei labo
 
 ### 🎯 In breve
 
-Usare la tecnologia per il cibo non è una novità. Il pane lievitato, lo yogurt e il formaggio sono biotecnologie vecchie di migliaia di anni. Ogni invenzione è nata da un problema pratico. Oggi il problema è grande: più persone da sfamare, con la stessa terra e meno acqua.
+==Usare la tecnologia per il cibo non è una novità.== Il pane lievitato, lo yogurt e il formaggio sono biotecnologie vecchie di migliaia di anni. Ogni invenzione è nata da un problema pratico. Oggi il problema è grande: più persone da sfamare, con la stessa terra e meno acqua.
 
 **Il campo che si misura da solo**
 
@@ -41,11 +41,11 @@ Il limite è la corrente: quelle luci ne consumano tanta. Per ora conviene solo 
 
 **Microbi al lavoro**
 
-La **fermentazione** fa lavorare microrganismi per trasformare il cibo. Oggi gli stessi microrganismi vengono fatti crescere in grandi vasche d'acciaio, i **bioreattori**, per produrre proteine. Esistono già al supermercato prodotti fatti così a partire da funghi.
+==La **fermentazione** fa lavorare microrganismi per trasformare il cibo.== ==Oggi gli stessi microrganismi vengono fatti crescere in grandi vasche d'acciaio, i **bioreattori**, per produrre proteine.== Esistono già al supermercato prodotti fatti così a partire da funghi.
 
 **Carne senza allevamento**
 
-La **carne coltivata** parte da poche cellule prese da un animale, senza ucciderlo. Le cellule vengono nutrite in un bioreattore e si moltiplicano fino a formare carne vera.
+==La **carne coltivata** parte da poche cellule prese da un animale, senza ucciderlo.== Le cellule vengono nutrite in un bioreattore e si moltiplicano fino a formare carne vera.
 
 Il motivo dell'interesse: gli allevamenti producono una parte importante dei gas che scaldano il pianeta. I limiti: costa ancora moltissimo e si ottiene qualcosa di simile alla carne macinata, non una bistecca. È in vendita solo in pochissimi paesi. In Italia una legge del 2023 ne vieta la vendita.
 
@@ -59,7 +59,7 @@ Un QR code sulla confezione può raccontare tutto il viaggio di un alimento: chi
 
 **Nessuna bacchetta magica**
 
-Nessuna di queste tecnologie risolve tutto da sola. E produrre di più non basta: nel mondo circa un terzo del cibo viene sprecato. Ridurre lo spreco è la "tecnologia" più economica che abbiamo.
+Nessuna di queste tecnologie risolve tutto da sola. E produrre di più non basta: nel mondo circa un terzo del cibo viene sprecato. ==Ridurre lo spreco è la "tecnologia" più economica che abbiamo.==
 
 > ✋ **Tocca a te.** Dibattito in due minuti con il compagno: assaggeresti un biscotto fatto con farina di grillo? Uno sostiene il sì, l'altro il no. Poi scambiatevi le parti.
 
@@ -77,9 +77,9 @@ Nessuna di queste tecnologie risolve tutto da sola. E produrre di più non basta
 
 ### La tecnologia al servizio del cibo: non è una novità.
 
-Prima di parlare di droni e carne in vitro, è importante capire una cosa fondamentale: la tecnologia alimentare non nasce oggi. L'essere umano ha sempre usato la tecnologia per produrre, conservare e trasformare il cibo.
+==Prima di parlare di droni e carne in vitro, è importante capire una cosa fondamentale: la tecnologia alimentare non nasce oggi.== L'essere umano ha sempre usato la tecnologia per produrre, conservare e trasformare il cibo.
 
-La **fermentazione** — trasformare zuccheri in alcol o acidi usando microrganismi (lieviti, batteri) — è una biotecnologia vecchia di almeno 10.000 anni. Il pane lievitato, il vino, la birra, lo yogurt, il formaggio, il kimchi, il kefir, il miso: sono tutti prodotti di biotecnologia fermentativa.
+==La **fermentazione** — trasformare zuccheri in alcol o acidi usando microrganismi (lieviti, batteri) — è una biotecnologia vecchia di almeno 10.000 anni.== Il pane lievitato, il vino, la birra, lo yogurt, il formaggio, il kimchi, il kefir, il miso: sono tutti prodotti di biotecnologia fermentativa.
 
 La **pastorizzazione** — riscaldare il latte a 72°C per 15 secondi per uccidere i batteri patogeni senza alterarne troppo il sapore — è stata inventata da Louis Pasteur nel 1864 e ha salvato milioni di vite.
 
@@ -103,9 +103,9 @@ Le tecnologie chiave dell'agricoltura di precisione:
 
 **Sensori nel suolo:** sonde inserite nel terreno che misurano in tempo reale l'umidità, la temperatura, il pH e la composizione chimica del suolo. I dati vengono trasmessi via WiFi o rete cellulare a un sistema centrale.
 
-**Droni agricoli:** droni che sorvolano i campi con telecamere multispettrali — cioè che vedono frequenze di luce invisibili all'occhio umano. Le piante malate o stressate idrico riflettono la luce in modo diverso da quelle sane: il drone le identifica prima che il problema diventi visibile a occhio nudo.
+==**Droni agricoli:** droni che sorvolano i campi con telecamere multispettrali — cioè che vedono frequenze di luce invisibili all'occhio umano.== Le piante malate o stressate idrico riflettono la luce in modo diverso da quelle sane: il drone le identifica prima che il problema diventi visibile a occhio nudo.
 
-**Irrigazione a goccia intelligente:** sistemi di tubi che portano l'acqua direttamente alle radici delle piante, con portata regolata da sensori e algoritmi. Riducono il consumo idrico del 30-50% rispetto all'irrigazione tradizionale a pioggia.
+==**Irrigazione a goccia intelligente:** sistemi di tubi che portano l'acqua direttamente alle radici delle piante, con portata regolata da sensori e algoritmi.== Riducono il consumo idrico del 30-50% rispetto all'irrigazione tradizionale a pioggia.
 
 **Macchine agricole a guida autonoma (GPS):** trattori che arano, seminano e raccolgono seguendo percorsi GPS con precisione di pochi centimetri, di notte, senza conducente.
 
@@ -119,7 +119,7 @@ L'agricoltura di precisione non è fantascienza: è già ampiamente diffusa in A
 
 La **vertical farming** (coltivazione verticale) è l'idea di coltivare piante non in campi orizzontali ma in edifici, su scaffalature verticali a più piani, con luce artificiale a LED, acqua ricircolata, temperatura e umidità controllate.
 
-Come funziona: le piante crescono in substrati idroponici (senza terra — le radici sono immerse in una soluzione acquosa ricca di nutrienti) o aeroponici (le radici sono nell'aria e vengono spruzzate di soluzione nutriente a intervalli). La luce artificiale fornisce lo spettro esatto che le piante usano per la fotosintesi. Tutto è monitorato da sensori.
+Come funziona: le piante crescono in substrati idroponici (senza terra — le radici sono immerse in una soluzione acquosa ricca di nutrienti) o aeroponici (le radici sono nell'aria e vengono spruzzate di soluzione nutriente a intervalli). ==La luce artificiale fornisce lo spettro esatto che le piante usano per la fotosintesi.== Tutto è monitorato da sensori.
 
 I vantaggi:
 - Si può costruire ovunque: in città, in zone desertiche, in regioni fredde.
@@ -141,14 +141,14 @@ In Italia esistono già diverse aziende di vertical farming. La più grande cate
 
 La fermentazione tradizionale usa lieviti e batteri per trasformare ingredienti semplici in prodotti complessi: i batteri *Lactobacillus* trasformano il latte in yogurt; il lievito *Saccharomyces cerevisiae* trasforma gli zuccheri dell'uva in alcol nel vino.
 
-La **fermentazione moderna** usa le stesse basi biologiche, ma con microrganismi progettati o selezionati in bioreattori industriali controllati per produrre proteine e nutrienti specifici.
+==La **fermentazione moderna** usa le stesse basi biologiche, ma con microrganismi progettati o selezionati in bioreattori industriali controllati per produrre proteine e nutrienti specifici.==
 
 Esempi già in commercio:
 - **Proteine vegetali fermentate:** alcune aziende usano funghi filamentosi (come il *Fusarium venenatum*) fermentati in grandi vasche per produrre una proteina ad alta qualità — la micoProteina (commercializzata come Quorn) — già venduta in supermercati italiani da vent'anni.
 - **Enzimi per la produzione alimentare:** la maggior parte del formaggio prodotto nel mondo usa oggi chimosina prodotta da batteri o lieviti modificati — non più estratta dallo stomaco di vitelli come un tempo. Il prodotto finale è identico.
 - **Coloranti e aromi naturali:** la vanillina (il principale componente dell'aroma di vaniglia), normalmente estratta dalla orchidea *Vanilla planifolia*, viene prodotta da alcune aziende con fermentazione microbica a costi molto più bassi.
 
-I **bioreattori** sono le "fabbriche" di questa fermentazione moderna: grandi vasche di acciaio inox, sterili, dove i microrganismi crescono in condizioni ottimali controllate da sistemi digitali. Temperature, pH, ossigeno, nutrienti — tutto è monitorato e regolato in continuo.
+==I **bioreattori** sono le "fabbriche" di questa fermentazione moderna: grandi vasche di acciaio inox, sterili, dove i microrganismi crescono in condizioni ottimali controllate da sistemi digitali.== Temperature, pH, ossigeno, nutrienti — tutto è monitorato e regolato in continuo.
 
 ---
 
@@ -156,11 +156,11 @@ I **bioreattori** sono le "fabbriche" di questa fermentazione moderna: grandi va
 
 Questa è probabilmente la tecnologia alimentare più controversa e discussa degli ultimi anni.
 
-**Come funziona:** Si preleva una piccola quantità di cellule muscolari da un animale (tramite una biopsia non dolorosa). Le cellule vengono messe in un bioreattore con una soluzione nutriente ricca di aminoacidi, vitamine e fattori di crescita. In poche settimane, le cellule si moltiplicano e si differenziano in tessuto muscolare — carne. Non c'è macellazione. Non c'è allevamento intensivo. Il processo usa una frazione dell'acqua e del terreno necessari all'allevamento tradizionale.
+==**Come funziona:** Si preleva una piccola quantità di cellule muscolari da un animale (tramite una biopsia non dolorosa).== Le cellule vengono messe in un bioreattore con una soluzione nutriente ricca di aminoacidi, vitamine e fattori di crescita. In poche settimane, le cellule si moltiplicano e si differenziano in tessuto muscolare — carne. Non c'è macellazione. Non c'è allevamento intensivo. Il processo usa una frazione dell'acqua e del terreno necessari all'allevamento tradizionale.
 
 **Stato attuale:** Nel dicembre 2020 Singapore è stato il primo Paese al mondo ad autorizzare la vendita al pubblico di pollo coltivato (prodotto dalla californiana Eat Just). Nel 2023 gli USA hanno approvato la vendita di due prodotti di pollo coltivato, di Upside Foods e Good Meat. Nell'Unione Europea nessun prodotto è ancora autorizzato, e in Italia una legge del 2023 (n. 172) ne vieta produzione e vendita.
 
-**I limiti attuali:** il costo di produzione è ancora molto alto (decine di euro per 100 grammi). La texture e la struttura di un filetto di carne tradizionale sono difficili da replicare (la carne coltivata attuale è più simile a carne macinata). Il consumatore non sempre accetta psicologicamente il prodotto.
+==**I limiti attuali:** il costo di produzione è ancora molto alto (decine di euro per 100 grammi).== La texture e la struttura di un filetto di carne tradizionale sono difficili da replicare (la carne coltivata attuale è più simile a carne macinata). Il consumatore non sempre accetta psicologicamente il prodotto.
 
 **L'impatto potenziale:** l'allevamento animale produce circa il 14,5% delle emissioni globali di gas serra. Se la carne coltivata sostituisse anche solo il 10-20% della carne tradizionale, l'impatto sul clima sarebbe significativo.
 
@@ -181,7 +181,7 @@ Questa è la tecnologia più facile da capire biologicamente — ed è già in c
 
 **Stato attuale in Europa:** dal 2021 al 2024, l'Unione Europea ha approvato 4 specie di insetti per il consumo umano: grilli domestici (*Acheta domesticus*), larve di farina gialla (*Tenebrio molitor*), locuste migratorie (*Locusta migratoria*), e il verme della farina minore (*Alphitobius diaperinus*). Sono già in vendita in supermercati italiani: farina di grillo, snack proteici a base di insetti, barrette energetiche.
 
-**Barriera culturale:** in Europa c'è una forte resistenza psicologica a mangiare insetti visibili. Questa è la sfida principale — non tecnica, ma culturale. In molte parti del mondo (Africa, Asia, America Latina) gli insetti sono un alimento tradizionale. In Italia, la strategia prevalente è incorporare la farina di insetti in prodotti già familiari (pasta, biscotti, farine) dove non sono visibili.
+==**Barriera culturale:** in Europa c'è una forte resistenza psicologica a mangiare insetti visibili.== ==Questa è la sfida principale — non tecnica, ma culturale.== In molte parti del mondo (Africa, Asia, America Latina) gli insetti sono un alimento tradizionale. In Italia, la strategia prevalente è incorporare la farina di insetti in prodotti già familiari (pasta, biscotti, farine) dove non sono visibili.
 
 ---
 
@@ -194,7 +194,7 @@ La **stampa 3D alimentare** usa lo stesso principio della stampa 3D tradizionale
 - **Alta gastronomia:** ristoranti stellati usano stampanti 3D per creare forme geometriche impossibili da realizzare a mano con cioccolato, zucchero o impasti.
 - **Personalizzazione nutrizionale:** in futuro, sistemi di stampa 3D domestici potrebbero ricevere il profilo nutrizionale personale dell'utente e preparare pasti con la composizione esatta di nutrienti di cui ha bisogno.
 
-**Stato attuale:** la stampa 3D alimentare è reale e funzionante, ma non è diffusa a livello domestico. Il costo è ancora alto, la velocità è lenta, le materie prime usabili sono limitate. È più una tecnologia di nicchia che una rivoluzione di massa immediata.
+==**Stato attuale:** la stampa 3D alimentare è reale e funzionante, ma non è diffusa a livello domestico.== Il costo è ancora alto, la velocità è lenta, le materie prime usabili sono limitate. È più una tecnologia di nicchia che una rivoluzione di massa immediata.
 
 ---
 
@@ -204,7 +204,7 @@ Come fai a sapere davvero da dove viene il cibo che mangi?
 
 Un QR code sul packaging di una confezione di pomodori può rimandare a una pagina web che mostra: nome dell'agricoltore, indirizzo dell'azienda agricola, data di raccolta, trattamenti fitosanitari usati, temperatura di conservazione registrata durante il trasporto.
 
-Alcune aziende alimentari usano la **blockchain** per rendere queste informazioni non falsificabili: ogni passaggio della filiera viene registrato in un sistema distribuito e immutabile. Se qualcuno cercasse di modificare retroattivamente i dati (es. per nascondere un problema di contaminazione), dovrebbe modificare ogni copia del registro in tutto il mondo contemporaneamente — praticamente impossibile.
+==Alcune aziende alimentari usano la **blockchain** per rendere queste informazioni non falsificabili: ogni passaggio della filiera viene registrato in un sistema distribuito e immutabile.== Se qualcuno cercasse di modificare retroattivamente i dati (es. per nascondere un problema di contaminazione), dovrebbe modificare ogni copia del registro in tutto il mondo contemporaneamente — praticamente impossibile.
 
 In Italia, la startup Genuino ha sviluppato un sistema blockchain per la tracciabilità del Parmigiano Reggiano: ogni forma di formaggio ha un sensore IoT che registra la temperatura, l'umidità e la posizione durante la stagionatura. Il consumatore scannerizza il QR code e vede l'intera storia della forma.
 

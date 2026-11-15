@@ -42,20 +42,20 @@ Arriva per email, per SMS, nei messaggi privati. A Luca è successo proprio cos�
 
 Altri pericoli comuni:
 
-- il **malware**: un programma dannoso nascosto dentro un gioco "gratis" o un file scaricato da un sito non ufficiale;
+- ==il **malware**: un programma dannoso nascosto dentro un gioco "gratis" o un file scaricato da un sito non ufficiale;==
 - il finto amico: qualcuno conosciuto online che, dopo settimane di chiacchiere, chiede un favore strano o urgente.
 
 **Cinque segnali per riconoscerlo**
 
-1. **Fretta.** "Entro 24 ore", "subito", "ultimo avviso". La fretta serve a non farti pensare.
-2. **Chiede la password.** Nessun servizio vero la chiede per messaggio. Mai.
+1. **Fretta.** "Entro 24 ore", "subito", "ultimo avviso". ==La fretta serve a non farti pensare.==
+2. ==**Chiede la password.** Nessun servizio vero la chiede per messaggio.== Mai.
 3. **Indirizzo strano.** Il link dice `instagram-support.net` invece di `instagram.com`.
 4. **Saluto generico.** "Gentile utente": chi ti conosce davvero usa il tuo nome.
 5. **Allegato che non aspettavi.**
 
 > ✋ **Tocca a te.** Quanti segnali trovi in questo messaggio? *"Caro utente, abbiamo rilevato un accesso sospetto. Per proteggere il suo account clicchi subito: www.instagram-accounts-security.net/verify. Ha 12 ore."* Sottolineali e confrontati con un compagno.
 
-La regola che vale sempre: non cliccare il link. Apri tu il sito o l'app, scrivendo l'indirizzo a mano, e controlla lì se c'è davvero un problema.
+==La regola che vale sempre: non cliccare il link.== Apri tu il sito o l'app, scrivendo l'indirizzo a mano, e controlla lì se c'è davvero un problema.
 
 **La password: lunga batte complicata**
 
@@ -67,7 +67,7 @@ Tre regole:
 - unica: una diversa per ogni servizio. Se ne rubano una, non aprono tutto;
 - non ovvia: niente nome, data di nascita o "123456".
 
-Ricordarle tutte è impossibile. Per questo esistono i password manager, programmi che le custodiscono al posto tuo.
+Ricordarle tutte è impossibile. ==Per questo esistono i password manager, programmi che le custodiscono al posto tuo.==
 
 **La seconda serratura**
 
@@ -102,7 +102,7 @@ In Italia per aprire da soli un account social bisogna avere almeno 14 anni. Pub
 
 ### Sicurezza digitale: non è paranoia, è igiene
 
-La sicurezza digitale non è una questione riservata agli esperti di informatica o alle grandi aziende. È una competenza quotidiana, come lavarsi le mani: semplice da praticare, ma efficace solo se la pratichi sempre e non solo quando ci pensi.
+La sicurezza digitale non è una questione riservata agli esperti di informatica o alle grandi aziende. ==È una competenza quotidiana, come lavarsi le mani: semplice da praticare, ma efficace solo se la pratichi sempre e non solo quando ci pensi.==
 
 Il punto di partenza è cambiare prospettiva: la maggior parte degli attacchi informatici non sfrutta vulnerabilità tecnologiche sofisticate. Sfrutta l'errore umano. La password debole. Il link cliccato senza guardare l'URL. Il file scaricato da una fonte sconosciuta. I criminali digitali sono più bravi a manipolare le persone che a bucare i sistemi.
 
@@ -116,18 +116,18 @@ Non tutti gli attacchi informatici sono hacker in felpa nera che bucan sistemi m
 
 **Phishing** (pronuncia: "fishing", come "pescare"). L'attaccante ti manda un messaggio — email, SMS, o messaggio su app social — che sembra provenire da una fonte affidabile (la tua banca, Instagram, Netflix, la tua scuola) e ti chiede di fare qualcosa: cliccare un link, inserire una password, scaricare un file. Il link porta a una pagina falsa che imita quella reale. Appena inserisci i dati, li riceve l'attaccante.
 
-Il nome "phishing" è un gioco di parole con "fishing" (pescare): l'attaccante lancia un'esca e aspetta che qualcuno abbocchi. Le esche sono costruite per sembrare credibili: loghi reali, testi simili a quelli ufficiali, senso di urgenza ("entro 24 ore", "subito", "rischio di perdere l'accesso").
+==Il nome "phishing" è un gioco di parole con "fishing" (pescare): l'attaccante lancia un'esca e aspetta che qualcuno abbocchi.== Le esche sono costruite per sembrare credibili: loghi reali, testi simili a quelli ufficiali, senso di urgenza ("entro 24 ore", "subito", "rischio di perdere l'accesso").
 
 **Varianti del phishing:**
 - *Smishing*: phishing via SMS. Più difficile da riconoscere perché i telefoni mostrano meno informazioni sul mittente rispetto all'email.
 - *Vishing*: phishing via telefono. Qualcuno ti chiama fingendo di essere la tua banca o il supporto tecnico di Apple/Microsoft.
 - *Spear phishing*: phishing mirato a una persona specifica, con informazioni personalizzate prese dai tuoi social (nome, città, scuola, amici) per sembrare ancora più credibile.
 
-**Social engineering.** Tecnica più sofisticata del phishing: l'attaccante costruisce una relazione nel tempo prima di chiedere qualcosa. Un "amico" conosciuto online che dopo settimane chiede un favore urgente — magari di cliccare un link, o di passargli informazioni su qualcuno. Il social engineering sfrutta la fiducia, l'empatia, l'urgenza emotiva.
+==**Social engineering.** Tecnica più sofisticata del phishing: l'attaccante costruisce una relazione nel tempo prima di chiedere qualcosa.== Un "amico" conosciuto online che dopo settimane chiede un favore urgente — magari di cliccare un link, o di passargli informazioni su qualcuno. Il social engineering sfrutta la fiducia, l'empatia, l'urgenza emotiva.
 
-**Malware scaricato inconsapevolmente.** Scarichi quello che sembra un gioco gratuito, una versione "craccata" di un software, un file da un link in un messaggio. Insieme al file che volevi, si installa silenziosamente un programma che può: registrare i tasti che premi (keylogger), cifrar i tuoi file e chiedere un riscatto (ransomware), usare il tuo computer per attaccare altri sistemi (botnet), rubare le password salvate nel browser.
+==**Malware scaricato inconsapevolmente.** Scarichi quello che sembra un gioco gratuito, una versione "craccata" di un software, un file da un link in un messaggio.== Insieme al file che volevi, si installa silenziosamente un programma che può: registrare i tasti che premi (keylogger), cifrar i tuoi file e chiedere un riscatto (ransomware), usare il tuo computer per attaccare altri sistemi (botnet), rubare le password salvate nel browser.
 
-**Account takeover.** Qualcuno prende il controllo di un tuo account — come nel caso di Luca. Può succedere in tre modi: phishing (come nell'esempio), indovinare la password (soprattutto se è semplice o uguale a quella di un altro servizio che è stato violato), oppure acquistare le tue credenziali in un database di password rubate che vengono vendute sul dark web.
+==**Account takeover.** Qualcuno prende il controllo di un tuo account — come nel caso di Luca.== Può succedere in tre modi: phishing (come nell'esempio), indovinare la password (soprattutto se è semplice o uguale a quella di un altro servizio che è stato violato), oppure acquistare le tue credenziali in un database di password rubate che vengono vendute sul dark web.
 
 ---
 
@@ -135,13 +135,13 @@ Il nome "phishing" è un gioco di parole con "fishing" (pescare): l'attaccante l
 
 Un messaggio di phishing raramente li ha tutti, ma quasi sempre ne contiene più di uno. Impara a riconoscerli e diventano molto più visibili.
 
-**Segnale 1 — URL sospetto.** Prima di cliccare qualsiasi link, passa il cursore sopra senza cliccare (su computer). Guarda l'indirizzo che appare in basso. Un link di Instagram dovrebbe portare a `instagram.com`. Se vedi `instagram-support.net`, `instagram.accounts-verify.com`, o qualcosa del genere, è una truffa. I truffatori registrano domini che *assomigliano* a quelli reali ma non lo sono. Regola: l'unica parte che conta è prima del primo `/` dopo il doppio punto — `instagram.com/qualcosa` è Instagram; `qualcosa.instagram-login.com` non lo è.
+==**Segnale 1 — URL sospetto.** Prima di cliccare qualsiasi link, passa il cursore sopra senza cliccare (su computer).== Guarda l'indirizzo che appare in basso. Un link di Instagram dovrebbe portare a `instagram.com`. Se vedi `instagram-support.net`, `instagram.accounts-verify.com`, o qualcosa del genere, è una truffa. I truffatori registrano domini che *assomigliano* a quelli reali ma non lo sono. Regola: l'unica parte che conta è prima del primo `/` dopo il doppio punto — `instagram.com/qualcosa` è Instagram; `qualcosa.instagram-login.com` non lo è.
 
-**Segnale 2 — Urgenza artificiale.** I messaggi di phishing spingono sempre ad agire subito, senza pensare: "Il tuo account sarà eliminato entro 24 ore", "Azione immediata richiesta", "Sei stato selezionato — rispondi entro oggi". L'urgenza serve a impedire che tu ti fermi a ragionare. Le comunicazioni legittime di aziende serie danno sempre tempo sufficiente per verificare.
+**Segnale 2 — Urgenza artificiale.** I messaggi di phishing spingono sempre ad agire subito, senza pensare: "Il tuo account sarà eliminato entro 24 ore", "Azione immediata richiesta", "Sei stato selezionato — rispondi entro oggi". ==L'urgenza serve a impedire che tu ti fermi a ragionare.== Le comunicazioni legittime di aziende serie danno sempre tempo sufficiente per verificare.
 
-**Segnale 3 — Richiesta di password o dati sensibili.** Nessuna azienda legittima ti chiederà mai la password via email, SMS o messaggio. Mai. Apple non ti chiede la password di iCloud. Instagram non ti chiede quella di Instagram. La tua banca non ti chiede il PIN. Se un messaggio chiede questi dati, è sempre una truffa.
+==**Segnale 3 — Richiesta di password o dati sensibili.** Nessuna azienda legittima ti chiederà mai la password via email, SMS o messaggio.== Mai. Apple non ti chiede la password di iCloud. Instagram non ti chiede quella di Instagram. La tua banca non ti chiede il PIN. Se un messaggio chiede questi dati, è sempre una truffa.
 
-**Segnale 4 — Mittente sospetto.** Guarda l'indirizzo email del mittente — non solo il nome visualizzato. Il nome può essere "Instagram Support" ma l'email può essere `support@instagram-noreply.co`. Le aziende reali usano i loro domini ufficiali: `@instagram.com`, `@apple.com`, `@google.com`. Qualsiasi variazione è sospetta.
+==**Segnale 4 — Mittente sospetto.** Guarda l'indirizzo email del mittente — non solo il nome visualizzato.== Il nome può essere "Instagram Support" ma l'email può essere `support@instagram-noreply.co`. Le aziende reali usano i loro domini ufficiali: `@instagram.com`, `@apple.com`, `@google.com`. Qualsiasi variazione è sospetta.
 
 **Segnale 5 — Errori grammaticali e ortografici.** I messaggi di phishing sono spesso tradotti automaticamente da altre lingue o scritti in fretta. Errori come "Ciao utente, il tuo conto ha necessita di verifica" o punteggiatura strana sono campanelli d'allarme. Le aziende serie hanno uffici di comunicazione che correggono ogni messaggio prima di inviarlo.
 
@@ -172,19 +172,19 @@ Perché? Perché la lunghezza conta più della complessità. Un computer che ten
 
 *Le stime valgono per un attacco che prova tutte le combinazioni a caso e cambiano molto a seconda del computer usato. Gli attaccanti veri, però, provano prima i **dizionari**: elenchi di password già rubate e parole comuni con le sostituzioni più note (a→@, o→0, s→$). Per questo `P@$$w0rd!2026`, che parte da "password", nella realtà cade molto prima di 3 anni. E una frase famosa o una citazione è debole quanto una parola: la passphrase deve essere tua e imprevedibile.*
 
-La frase è più lunga, ma è anche più facile da ricordare. Questo è il principio delle **passphrase**: usare una frase invece di una parola con simboli.
+La frase è più lunga, ma è anche più facile da ricordare. ==Questo è il principio delle **passphrase**: usare una frase invece di una parola con simboli.==
 
 **Le tre regole delle password:**
 
 **Regola 1 — Lunga.** Almeno 12 caratteri. Meglio 16 o più.
 
-**Regola 2 — Unica.** Password diversa per ogni account. Questo è il punto più importante e il meno rispettato. Se usi la stessa password su cinque siti e uno di quei siti viene violato, l'attaccante proverà la tua password su tutti gli altri siti (attacco chiamato *credential stuffing*). Se ogni account ha una password diversa, la violazione di uno non compromette gli altri.
+**Regola 2 — Unica.** Password diversa per ogni account. ==Questo è il punto più importante e il meno rispettato.== Se usi la stessa password su cinque siti e uno di quei siti viene violato, l'attaccante proverà la tua password su tutti gli altri siti (attacco chiamato *credential stuffing*). Se ogni account ha una password diversa, la violazione di uno non compromette gli altri.
 
 **Regola 3 — Non ovvia.** Niente data di nascita, niente nome del gatto, niente "123456". Queste password vengono provate per prime in qualsiasi attacco.
 
 **Il problema pratico:** se ogni account deve avere una password lunga e unica, come fai a ricordarle tutte? La risposta onesta è: non puoi. Un adulto medio ha 70-100 account digitali. Nessuno ricorda 100 password diverse di 16 caratteri.
 
-La soluzione è un **password manager** — un programma che ricorda tutte le tue password al posto tuo, cifrate con un'unica password maestra che conosci solo tu. I password manager più affidabili sono Bitwarden (gratuito, open source), 1Password (a pagamento), e il gestore password integrato nei browser (quello di Chrome o Safari — pratico ma meno sicuro perché legato a un singolo browser). Con un password manager, devi ricordare solo una password — quella maestra — e il programma compila automaticamente tutte le altre.
+==La soluzione è un **password manager** — un programma che ricorda tutte le tue password al posto tuo, cifrate con un'unica password maestra che conosci solo tu.== I password manager più affidabili sono Bitwarden (gratuito, open source), 1Password (a pagamento), e il gestore password integrato nei browser (quello di Chrome o Safari — pratico ma meno sicuro perché legato a un singolo browser). Con un password manager, devi ricordare solo una password — quella maestra — e il programma compila automaticamente tutte le altre.
 
 ---
 
@@ -192,7 +192,7 @@ La soluzione è un **password manager** — un programma che ricorda tutte le tu
 
 Anche una password forte può essere rubata — tramite phishing, o se il sito su cui la usi viene violato. La **2FA** (Two-Factor Authentication, autenticazione a due fattori) aggiunge un secondo livello di verifica: anche se qualcuno conosce la tua password, non può accedere al tuo account senza il secondo fattore.
 
-Il principio è semplice: per aprire la porta hai bisogno sia della chiave (qualcosa che sai — la password) sia di un badge fisico (qualcosa che hai — il tuo telefono).
+==Il principio è semplice: per aprire la porta hai bisogno sia della chiave (qualcosa che sai — la password) sia di un badge fisico (qualcosa che hai — il tuo telefono).==
 
 **Come funziona in pratica:**
 
@@ -205,7 +205,7 @@ Nelle app TOTP il codice cambia normalmente ogni 30 secondi. Un sito di phishing
 **Dove attivare il 2FA:** quasi tutti i servizi importanti lo offrono. Vai nelle impostazioni dell'account → sicurezza → autenticazione a due fattori. I servizi che dovresti proteggere con certezza: email (è la chiave di recupero di tutti gli altri account), Instagram e altri social, account Google o Apple, eventuali conti bancari o PayPal.
 
 **Quale metodo di autenticazione usare:** la protezione dipende anche dal servizio e dalla configurazione. Tra le possibilità trovi:
-- **Passkey e chiavi di sicurezza FIDO**, quando supportate — verificano anche il sito a cui accedi e resistono al phishing; l’eventuale secondo fattore dipende dalla configurazione.
+- ==**Passkey e chiavi di sicurezza FIDO**, quando supportate — verificano anche il sito a cui accedi e resistono al phishing; l’eventuale secondo fattore dipende dalla configurazione.==
 - **App di autenticazione** (Authy, Google Authenticator) — generano codici sul dispositivo e sono generalmente preferibili agli SMS, ma i codici possono essere sottratti con il phishing
 - **SMS** — pratico ma meno sicuro: i criminali possono in alcuni casi intercettare SMS o clonare le SIM
 - **Email** — la protezione dipende dalla sicurezza della casella: se è compromessa, l’attaccante può leggere anche il codice
@@ -220,11 +220,11 @@ Se sospetti che un tuo account sia stato compromesso, ogni minuto conta. Ecco la
 
 **Passo 1 — Cambia la password immediatamente.** Accedi all'account dal sito ufficiale (non dal link nell'email sospetta) e cambia la password. Se non riesci ad accedere perché l'attaccante ha già cambiato la password, usa la funzione "recupera account" con la tua email.
 
-**Passo 2 — Cambia la password dell'email.** L'email è la chiave di recupero di tutti gli altri account. Se è compromessa, tutto il resto è a rischio. Cambia la password dell'email per prima cosa, o in parallelo.
+==**Passo 2 — Cambia la password dell'email.** L'email è la chiave di recupero di tutti gli altri account.== Se è compromessa, tutto il resto è a rischio. Cambia la password dell'email per prima cosa, o in parallelo.
 
 **Passo 3 — Controlla le sessioni attive.** La maggior parte dei servizi (Instagram, Google, Facebook) ti permette di vedere tutti i dispositivi da cui sei attualmente connesso. Vai in impostazioni → sicurezza → sessioni attive e disconnetti tutto eccetto il tuo dispositivo attuale.
 
-**Passo 4 — Attiva il 2FA.** Se non lo avevi, attivalo adesso. Chiudi la porta dopo che il ladro è entrato — ma almeno la chiudi per la prossima volta.
+==**Passo 4 — Attiva il 2FA.** Se non lo avevi, attivalo adesso.== Chiudi la porta dopo che il ladro è entrato — ma almeno la chiudi per la prossima volta.
 
 **Passo 5 — Avvisa i tuoi contatti.** Se il tuo account ha inviato link o messaggi sospetti ai tuoi contatti, avvisali — che non clicchino, e che non si trattava di te. Fallo velocemente, prima che anche loro cadano nella trappola.
 
@@ -250,7 +250,7 @@ La regola pratica è più semplice: prima di pubblicare qualcosa, chiediti se ti
 - Se usi lo stesso username in posti diversi, una ricerca Google mostra tutto
 - Se accedi a siti con "Continua con Google" o "Continua con Facebook", stai dando a quei siti informazioni sul tuo account principale e permettendo a Google/Facebook di sapere quali siti visiti
 
-Questo non significa che dovresti usare identità false — oltre ad essere sconsigliabile, per i minorenni è anche rischiosa. Significa che dovresti essere consapevole di come le tue identità digitali sono collegate e fare scelte intenzionali su cosa condividere dove.
+Questo non significa che dovresti usare identità false — oltre ad essere sconsigliabile, per i minorenni è anche rischiosa. ==Significa che dovresti essere consapevole di come le tue identità digitali sono collegate e fare scelte intenzionali su cosa condividere dove.==
 
 **Norme legali per minorenni in Italia:**
 
@@ -276,7 +276,7 @@ Fino a pochi anni fa, un'email di phishing era spesso riconoscibile dagli errori
 
 Esistono già tecnologie di **deepfake vocale** — sistemi che, con pochi minuti di audio di qualcuno, possono generare messaggi vocali con la sua voce. Sono stati usati in casi reali per imitare la voce di dirigenti aziendali al telefono e convincere dipendenti a fare bonifici urgenti. Questa tecnica si chiama *vishing con deepfake*.
 
-La conseguenza pratica per te: la regola "se è grammaticalmente corretto e sembra autentico, è autentico" non funziona più. Le regole che rimangono valide anche in un mondo con phishing generato da AI sono quelle strutturali: controlla sempre l'URL, non fornire mai la password via email o messaggio, usa sempre il 2FA. Queste regole non dipendono da quanto è "convincente" il messaggio.
+==La conseguenza pratica per te: la regola "se è grammaticalmente corretto e sembra autentico, è autentico" non funziona più.== Le regole che rimangono valide anche in un mondo con phishing generato da AI sono quelle strutturali: controlla sempre l'URL, non fornire mai la password via email o messaggio, usa sempre il 2FA. Queste regole non dipendono da quanto è "convincente" il messaggio.
 
 ---
 
@@ -290,7 +290,7 @@ Il messaggio arriva via SMS. Il mittente è mostrato come "Netflix".
 
 **Passo 1 — Il setup:** il numero del mittente è falso. Gli SMS possono avere mittenti alfanumerici personalizzati (come "Netflix") — non è difficile da falsificare. Marco non lo sa.
 
-**Passo 2 — L'urgenza:** "entro 24 ore" — la pressione temporale impedisce di ragionare con calma. Marco pensa che se aspetta perderà l'accesso a Netflix. Non aspetta.
+==**Passo 2 — L'urgenza:** "entro 24 ore" — la pressione temporale impedisce di ragionare con calma.== Marco pensa che se aspetta perderà l'accesso a Netflix. Non aspetta.
 
 **Passo 3 — Il link:** Marco clicca il link. Si apre una pagina identica a Netflix — logo, colori, font. L'URL nella barra del browser è `netflix-payment-update.com`. Marco non la guarda.
 

@@ -25,7 +25,7 @@ Intorno a te decine di strumenti misurano di continuo: temperatura, aria, posizi
 
 **Dal mondo al numero**
 
-Un sensore trasforma una grandezza fisica in un numero. Quel numero è un **dato**. Da solo dice poco. "21,3 gradi" non significa niente finché non sai dove, quando e in quali condizioni. Con il contesto, il dato diventa un'**informazione**.
+Un sensore trasforma una grandezza fisica in un numero. Quel numero è un **dato**. Da solo dice poco. =="21,3 gradi" non significa niente finché non sai dove, quando e in quali condizioni.== Con il contesto, il dato diventa un'**informazione**.
 
 **Chi misura che cosa**
 
@@ -39,7 +39,7 @@ Un sensore trasforma una grandezza fisica in un numero. Quel numero è un **dato
 
 **Il grafico giusto**
 
-Un grafico serve a far vedere qualcosa che in una tabella non si vede. Ognuno ha il suo compito.
+==Un grafico serve a far vedere qualcosa che in una tabella non si vede.== Ognuno ha il suo compito.
 
 | Grafico | Serve per |
 |---------|-----------|
@@ -52,7 +52,7 @@ Un grafico serve a far vedere qualcosa che in una tabella non si vede. Ognuno ha
 
 - **L'asse tagliato.** Se l'asse verticale di un grafico a barre non parte da zero, una differenza piccola sembra enorme. È il trucco più usato.
 - **La scala strana.** Intervalli non regolari cambiano la forma della curva.
-- **Correlazione scambiata per causa.** Due cose che crescono insieme non è detto che una provochi l'altra. D'estate aumentano i gelati venduti e aumentano i bagni al mare: non è il gelato a far nuotare. C'è una terza causa, il caldo. Questo legame senza causa si chiama **correlazione**.
+- **Correlazione scambiata per causa.** Due cose che crescono insieme non è detto che una provochi l'altra. D'estate aumentano i gelati venduti e aumentano i bagni al mare: non è il gelato a far nuotare. C'è una terza causa, il caldo. ==Questo legame senza causa si chiama **correlazione**.==
 
 **Anche la media inganna**
 
@@ -62,7 +62,7 @@ La **media** riassume tanti numeri in uno solo, ma può nascondere molto. Una st
 
 I dati sul tuo corpo e sui tuoi spostamenti sono tra i più delicati. La legge europea chiede il tuo consenso esplicito per usarli, e ti dà il diritto di vederli e farli cancellare.
 
-Altri dati invece sono di tutti: gli enti pubblici pubblicano gli **open data** su aria, traffico, meteo, e chiunque può scaricarli. Esistono anche reti di cittadini che montano piccoli sensori e condividono le misure: è la scienza fatta insieme.
+Altri dati invece sono di tutti: gli enti pubblici pubblicano gli **open data** su aria, traffico, meteo, e chiunque può scaricarli. ==Esistono anche reti di cittadini che montano piccoli sensori e condividono le misure: è la scienza fatta insieme.==
 
 **Davanti a un numero**
 
@@ -82,9 +82,9 @@ Tre domande, sempre: chi l'ha misurato? con che strumento? che cosa ha scelto di
 
 ### Dal mondo fisico al numero: cos'è un dato
 
-Un sensore fa una cosa sola, ma la fa in modo straordinario: trasforma una grandezza fisica — calore, luce, pressione, posizione, suono — in un numero. Quel numero è un **dato grezzo**. Non dice ancora nulla da solo: è il punto di partenza.
+Un sensore fa una cosa sola, ma la fa in modo straordinario: trasforma una grandezza fisica — calore, luce, pressione, posizione, suono — in un numero. ==Quel numero è un **dato grezzo**.== Non dice ancora nulla da solo: è il punto di partenza.
 
-La temperatura nell'aula adesso è 21,3°C. Questo è un dato grezzo. Ma 21,3°C alle ore 11:00 di un martedì di novembre, dopo due ore di lezione con 25 studenti, con la finestra chiusa — questo è un **dato contestualizzato**. Ed è molto più utile, perché puoi confrontarlo: è più calda del solito? È cambiata rispetto a ieri alla stessa ora?
+La temperatura nell'aula adesso è 21,3°C. Questo è un dato grezzo. ==Ma 21,3°C alle ore 11:00 di un martedì di novembre, dopo due ore di lezione con 25 studenti, con la finestra chiusa — questo è un **dato contestualizzato**.== Ed è molto più utile, perché puoi confrontarlo: è più calda del solito? È cambiata rispetto a ieri alla stessa ora?
 
 La differenza tra un dato e un'informazione è sempre il contesto. Un dato senza contesto è rumore. Un dato con contesto è conoscenza.
 
@@ -98,7 +98,7 @@ Nella vita di tutti i giorni sei costantemente circondato da sistemi che raccolg
 
 **Temperatura e umidità.** I sensori più comuni. Li trovi nei termostati smart, nelle stazioni meteo, nelle serre automatizzate, nei data center dove l'umidità può danneggiare i circuiti. Un sensore di umidità nell'aula potrebbe rivelare che l'aria secca (umidità sotto il 30%) aumenta il disagio respiratorio e la predisposizione ai virus stagionali.
 
-**Qualità dell'aria.** I sensori di CO₂ misurano la concentrazione di anidride carbonica nell'aria, espressa in ppm (parti per milione). Valore di riferimento: l'aria esterna è circa 420 ppm. Nelle aule scolastiche non ventilate, dopo due ore di lezione, può superare i 2.000 ppm. La soglia raccomandata per il benessere cognitivo è 800 ppm. Sopra 1.200 ppm iniziano stanchezza e difficoltà di concentrazione. Questo è verificabile con un sensore da 25 euro.
+==**Qualità dell'aria.** I sensori di CO₂ misurano la concentrazione di anidride carbonica nell'aria, espressa in ppm (parti per milione).== Valore di riferimento: l'aria esterna è circa 420 ppm. Nelle aule scolastiche non ventilate, dopo due ore di lezione, può superare i 2.000 ppm. La soglia raccomandata per il benessere cognitivo è 800 ppm. Sopra 1.200 ppm iniziano stanchezza e difficoltà di concentrazione. Questo è verificabile con un sensore da 25 euro.
 
 **Posizione GPS.** Il modulo GPS di uno smartphone calcola la posizione triangolando i segnali di almeno quattro satelliti. La precisione tipica è di 3-5 metri in campo aperto. Ogni app che installi e a cui concedi i permessi di localizzazione sa dove sei stato, quando, per quanto tempo, con quale frequenza.
 
@@ -114,9 +114,9 @@ Nella vita di tutti i giorni sei costantemente circondato da sistemi che raccolg
 
 Un grafico non è decorazione. È uno strumento per mostrare una struttura nei dati che il testo non riesce a comunicare. Scegliere il grafico sbagliato non è solo un errore estetico: può nascondere informazioni importanti o crearne di false.
 
-**Grafico a linee** — per dati che cambiano nel tempo su una scala continua. Se vuoi mostrare l'andamento della temperatura dell'aula nel corso di una giornata, il grafico a linee è quello giusto: mostra chiaramente tendenze, picchi, cali graduali. Dove sbagliare: usarlo per confrontare categorie non ordinate (es. temperatura media per paese — lì ci vuole il grafico a barre).
+==**Grafico a linee** — per dati che cambiano nel tempo su una scala continua.== Se vuoi mostrare l'andamento della temperatura dell'aula nel corso di una giornata, il grafico a linee è quello giusto: mostra chiaramente tendenze, picchi, cali graduali. Dove sbagliare: usarlo per confrontare categorie non ordinate (es. temperatura media per paese — lì ci vuole il grafico a barre).
 
-**Grafico a barre** — per confrontare valori tra categorie distinte. Confronto dei consumi elettrici di cinque classi diverse: grafico a barre. L'asse verticale dovrebbe sempre partire da zero — se parte da un valore diverso, la differenza visiva tra le barre viene distorta.
+==**Grafico a barre** — per confrontare valori tra categorie distinte.== Confronto dei consumi elettrici di cinque classi diverse: grafico a barre. ==L'asse verticale dovrebbe sempre partire da zero — se parte da un valore diverso, la differenza visiva tra le barre viene distorta.==
 
 **Grafico a dispersione (scatter plot)** — per mostrare la relazione tra due variabili continue. Se vuoi capire se c'è correlazione tra temperatura dell'aula e valori di CO₂, metti temperatura sull'asse X e CO₂ sull'asse Y, con un punto per ogni misurazione. Se i punti formano una nuvola con tendenza verso l'alto, c'è correlazione positiva.
 
@@ -130,11 +130,11 @@ Un grafico non è decorazione. È uno strumento per mostrare una struttura nei d
 
 Saper leggere un grafico non basta. Devi saper riconoscere quando un grafico è costruito per ingannare — anche involontariamente.
 
-**L'asse troncato.** Se l'asse verticale di un grafico a barre non parte da zero, la differenza visiva tra le barre sembra molto più grande di quello che è. Un'azienda che mostra i suoi profitti trimestrali con asse che parte da 950 milioni invece di zero fa sembrare un aumento da 955 a 970 milioni (1,5% di crescita) come se i profitti fossero raddoppiati. Regola pratica: guarda sempre dove inizia l'asse Y.
+==**L'asse troncato.** Se l'asse verticale di un grafico a barre non parte da zero, la differenza visiva tra le barre sembra molto più grande di quello che è.== Un'azienda che mostra i suoi profitti trimestrali con asse che parte da 950 milioni invece di zero fa sembrare un aumento da 955 a 970 milioni (1,5% di crescita) come se i profitti fossero raddoppiati. Regola pratica: guarda sempre dove inizia l'asse Y.
 
 **Scala logaritmica non dichiarata.** In una scala logaritmica, ogni intervallo rappresenta un moltiplicatore (es. 1, 10, 100, 1.000). È utile per dati che cambiano su ordini di grandezza diversi (es. diffusione di un'epidemia nella fase esponenziale). Ma se non è dichiarata esplicitamente, una curva che sembra crescere linearmente in realtà sta crescendo in modo esponenziale — il che è molto più allarmante.
 
-**La correlazione che sembra causalità.** Questo è il tranello più pericoloso. Due variabili che crescono insieme non si causano necessariamente a vicenda. C'è una correlazione statistica fortissima tra il numero di film di Nicolas Cage usciti ogni anno e il numero di annegamenti nelle piscine americane. Ovviamente, Nicolas Cage non causa annegamenti. Le due variabili si muovono insieme per ragioni statistiche casuali (in inglese: spurious correlation).
+==**La correlazione che sembra causalità.** Questo è il tranello più pericoloso.== Due variabili che crescono insieme non si causano necessariamente a vicenda. C'è una correlazione statistica fortissima tra il numero di film di Nicolas Cage usciti ogni anno e il numero di annegamenti nelle piscine americane. Ovviamente, Nicolas Cage non causa annegamenti. Le due variabili si muovono insieme per ragioni statistiche casuali (in inglese: spurious correlation).
 
 > **Box T8 — Come l'IA usa i dati IoT: potente e fallibile**
 >
@@ -154,15 +154,15 @@ Il tuo smartwatch sa quando dormi, quanto il tuo cuore batte durante un litigio,
 
 Questi dati vengono raccolti, trasmessi e — quasi sempre — venduti o utilizzati per profilazione commerciale.
 
-**Chi raccoglie i dati della tua smartwatch?** Dipende dal produttore. Apple dichiara che i dati di salute restano sul dispositivo e non vengono condivisi con Apple senza consenso esplicito. Fitbit (ora Google) ha politiche meno restrittive: i dati aggregati possono essere usati per ricerche di terze parti e pubblicità. La differenza non è tecnica — è contrattuale. E sta nei termini di servizio che quasi nessuno legge.
+**Chi raccoglie i dati della tua smartwatch?** Dipende dal produttore. Apple dichiara che i dati di salute restano sul dispositivo e non vengono condivisi con Apple senza consenso esplicito. Fitbit (ora Google) ha politiche meno restrittive: i dati aggregati possono essere usati per ricerche di terze parti e pubblicità. ==La differenza non è tecnica — è contrattuale.== E sta nei termini di servizio che quasi nessuno legge.
 
 **Dove vanno i dati?** Il percorso tipico è: sensore → dispositivo locale (es. smartwatch) → app sullo smartphone → server del produttore (spesso negli Stati Uniti o in Irlanda per il GDPR europeo) → possibile condivisione con partner commerciali. In ogni passaggio, i dati possono essere aggregati con dati di altri utenti e usati per costruire profili comportamentali.
 
 **Cosa dice la legge.** Il GDPR (Regolamento Generale sulla Protezione dei Dati, in vigore nell'Unione Europea dal 2018) stabilisce che i dati biometrici e di salute sono "categorie speciali" che richiedono consenso esplicito. L'utente ha il diritto di sapere quali dati vengono raccolti, di richiederne la cancellazione, di ricevere una copia dei propri dati. Nella pratica, esercitare questi diritti è spesso difficile — ma esistono.
 
-**Open data: l'altra faccia della medaglia.** Non tutti i dati IoT sono privati. Molti enti pubblici italiani ed europei pubblicano open data liberamente accessibili: dati di qualità dell'aria di ARPA (Agenzia Regionale per la Protezione Ambientale), dati meteo di ISPRA, dati di traffico delle città. Gli open data sono usati da ricercatori, giornalisti, studenti, chiunque voglia capire come funziona il proprio territorio.
+==**Open data: l'altra faccia della medaglia.** Non tutti i dati IoT sono privati.== Molti enti pubblici italiani ed europei pubblicano open data liberamente accessibili: dati di qualità dell'aria di ARPA (Agenzia Regionale per la Protezione Ambientale), dati meteo di ISPRA, dati di traffico delle città. Gli open data sono usati da ricercatori, giornalisti, studenti, chiunque voglia capire come funziona il proprio territorio.
 
-**Citizen science.** Alcuni progetti raccolgono dati ambientali attraverso reti di cittadini con sensori low-cost. Il progetto Sensor.Community (ex Luftdaten) permette a chiunque di installare un sensore di polveri sottili fatto in casa (con un Raspberry Pi e un sensore SDS011, costo: circa 35 euro) e contribuire a una mappa globale della qualità dell'aria. In Italia ci sono centinaia di stazioni attive. Il dato di un singolo sensore ha valore limitato; la rete di migliaia di sensori costruisce una mappa ad altissima risoluzione spaziale impossibile da ottenere con le reti ufficiali.
+==**Citizen science.** Alcuni progetti raccolgono dati ambientali attraverso reti di cittadini con sensori low-cost.== Il progetto Sensor.Community (ex Luftdaten) permette a chiunque di installare un sensore di polveri sottili fatto in casa (con un Raspberry Pi e un sensore SDS011, costo: circa 35 euro) e contribuire a una mappa globale della qualità dell'aria. In Italia ci sono centinaia di stazioni attive. Il dato di un singolo sensore ha valore limitato; la rete di migliaia di sensori costruisce una mappa ad altissima risoluzione spaziale impossibile da ottenere con le reti ufficiali.
 
 ---
 
@@ -170,7 +170,7 @@ Questi dati vengono raccolti, trasmessi e — quasi sempre — venduti o utilizz
 
 Supponi di avere i dati di temperatura della tua stanza rilevati ogni 30 minuti per 30 giorni (1.440 misurazioni). Prima di fare qualsiasi grafico, chiediti: *cosa voglio capire?*
 
-Se vuoi capire **l'andamento nel tempo**, usi un grafico a linee con data sull'asse X e temperatura sull'asse Y. Puoi subito vedere se ci sono giorni eccezionalmente caldi o freddi, se la temperatura è aumentata nella seconda metà del mese, se ci sono oscillazioni giornaliere regolari.
+==Se vuoi capire **l'andamento nel tempo**, usi un grafico a linee con data sull'asse X e temperatura sull'asse Y.== Puoi subito vedere se ci sono giorni eccezionalmente caldi o freddi, se la temperatura è aumentata nella seconda metà del mese, se ci sono oscillazioni giornaliere regolari.
 
 Se vuoi capire **i pattern giornalieri**, crei una heatmap: ore del giorno sull'asse X, giorni del mese sull'asse Y, colore per la temperatura. In pochi secondi vedi i pattern: le notti sono sempre le più fredde, il pomeriggio le più calde, il weekend ha un profilo diverso dai giorni scolastici.
 

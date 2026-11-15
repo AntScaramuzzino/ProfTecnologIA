@@ -37,13 +37,13 @@ Chi possiede questi cavi? Chi decide dove passano? E cosa succede quando qualcun
 
 ### 🎯 In breve
 
-"È nel cloud" fa pensare a qualcosa di leggero e senza luogo. In realtà internet è una delle costruzioni più grandi mai fatte dall'umanità: cavi, edifici, antenne. E chi controlla le cose fisiche ha potere.
+"È nel cloud" fa pensare a qualcosa di leggero e senza luogo. ==In realtà internet è una delle costruzioni più grandi mai fatte dall'umanità: cavi, edifici, antenne.== E chi controlla le cose fisiche ha potere.
 
 **Chi comanda su internet**
 
 Nessuno, e molti. Internet non ha un proprietario: è fatta di migliaia di reti diverse che hanno accettato di usare le stesse regole. Alcune organizzazioni internazionali si occupano dei pezzi comuni, come l'assegnazione dei nomi dei siti e degli indirizzi.
 
-È nata così apposta. La rete da cui deriva, costruita negli Stati Uniti nel 1969, era pensata per continuare a funzionare anche se una sua parte veniva distrutta: i dati avrebbero trovato un'altra strada. Per questo oggi è così difficile spegnerla, e così difficile regolarla.
+È nata così apposta. La rete da cui deriva, costruita negli Stati Uniti nel 1969, era pensata per continuare a funzionare anche se una sua parte veniva distrutta: i dati avrebbero trovato un'altra strada. ==Per questo oggi è così difficile spegnerla, e così difficile regolarla.==
 
 **I cavi sotto il mare**
 
@@ -59,15 +59,15 @@ Un file salvato "nel cloud" sta in un **data center**: un capannone enorme pieno
 
 I data center consumano una quantità enorme di elettricità, in gran parte per raffreddare le macchine. Per questo molti sorgono in paesi freddi o dove l'energia costa poco.
 
-E c'è una domanda politica: se i dati dei cittadini europei stanno su computer di aziende di un altro continente, quali leggi valgono? Il diritto di un paese di decidere sui dati dei propri cittadini si chiama **sovranità digitale**.
+E c'è una domanda politica: se i dati dei cittadini europei stanno su computer di aziende di un altro continente, quali leggi valgono? ==Il diritto di un paese di decidere sui dati dei propri cittadini si chiama **sovranità digitale**.==
 
 **La rubrica di internet**
 
-I computer si riconoscono con numeri, gli indirizzi IP. Noi usiamo i nomi. Il **DNS** è il sistema che traduce il nome di un sito nel suo numero. Chi riesce a falsificare questa traduzione può mandarti su un sito truffa senza che tu te ne accorga.
+I computer si riconoscono con numeri, gli indirizzi IP. Noi usiamo i nomi. ==Il **DNS** è il sistema che traduce il nome di un sito nel suo numero.== Chi riesce a falsificare questa traduzione può mandarti su un sito truffa senza che tu te ne accorga.
 
 **Non tutti vedono la stessa internet**
 
-In alcuni paesi lo Stato filtra la rete: è la **censura**. Il sistema più esteso è quello della Cina, che blocca molti siti e servizi stranieri e controlla quello che viene pubblicato. Altri paesi, in momenti di protesta, hanno spento internet del tutto.
+==In alcuni paesi lo Stato filtra la rete: è la **censura**.== Il sistema più esteso è quello della Cina, che blocca molti siti e servizi stranieri e controlla quello che viene pubblicato. Altri paesi, in momenti di protesta, hanno spento internet del tutto.
 
 **Tutti i dati sono uguali?**
 
@@ -93,9 +93,9 @@ Un pacchetto di dati da Roma a Seoul passa per una decina di nodi, attraversa di
 
 ### Internet non è una nuvola: è una rete fisica distribuita nel mondo
 
-Uno degli equivoci più diffusi sull'internet è l'idea del "cloud" — una tecnologia immateriale, ovunque e da nessuna parte. In realtà, internet è una delle infrastrutture fisiche più estese che l'umanità abbia mai costruito: cavi, server, antenne, data center, stazioni di scambio. Ogni byte che si muove in rete passa attraverso hardware fisico, in un posto specifico del mondo, di proprietà di qualcuno.
+Uno degli equivoci più diffusi sull'internet è l'idea del "cloud" — una tecnologia immateriale, ovunque e da nessuna parte. ==In realtà, internet è una delle infrastrutture fisiche più estese che l'umanità abbia mai costruito: cavi, server, antenne, data center, stazioni di scambio.== Ogni byte che si muove in rete passa attraverso hardware fisico, in un posto specifico del mondo, di proprietà di qualcuno.
 
-Capire questa realtà non è solo curiosità tecnica. È la base per ragionare su chi controlla internet, dove sono le sue vulnerabilità, e perché le decisioni sull'infrastruttura internet sono decisioni politiche oltre che tecniche.
+Capire questa realtà non è solo curiosità tecnica. ==È la base per ragionare su chi controlla internet, dove sono le sue vulnerabilità, e perché le decisioni sull'infrastruttura internet sono decisioni politiche oltre che tecniche.==
 
 ---
 
@@ -109,7 +109,7 @@ Detto questo, ci sono organizzazioni che gestiscono componenti critici dell'infr
 
 **IANA** (Internet Assigned Numbers Authority) è la funzione tecnica che coordina l'assegnazione globale degli indirizzi IP, dei numeri di porta e dei parametri di protocollo. Oggi è gestita operativamente da ICANN.
 
-**IETF** (Internet Engineering Task Force) è il gruppo che sviluppa e pubblica gli standard tecnici di internet — i protocolli che definiscono come i computer comunicano. Non è un'azienda né un governo: è una comunità aperta di ingegneri e ricercatori. Chiunque può partecipare, proporre standard, commentare le bozze. I documenti prodotti dall'IETF si chiamano **RFC** (Request for Comments) e sono pubblici e gratuiti. RFC 791 del 1981 ha definito il protocollo IPv4 — ancora in uso oggi.
+==**IETF** (Internet Engineering Task Force) è il gruppo che sviluppa e pubblica gli standard tecnici di internet — i protocolli che definiscono come i computer comunicano.== Non è un'azienda né un governo: è una comunità aperta di ingegneri e ricercatori. Chiunque può partecipare, proporre standard, commentare le bozze. ==I documenti prodotti dall'IETF si chiamano **RFC** (Request for Comments) e sono pubblici e gratuiti.== RFC 791 del 1981 ha definito il protocollo IPv4 — ancora in uso oggi.
 
 **IGF** (Internet Governance Forum) è il forum delle Nazioni Unite dedicato alla governance di internet, dove governi, settore privato, società civile e comunità tecnica si incontrano per discutere le politiche. Non ha potere decisionale diretto — emette raccomandazioni, non obblighi.
 
@@ -121,7 +121,7 @@ Questa architettura distribuita è ancora la ragione per cui internet funziona �
 
 ### I cavi sottomarini: la spina dorsale fisica di internet
 
-Probabilmente non li hai mai visti, ma sono lì: circa 600 cavi sottomarini percorrono il fondo degli oceani, attraversano i canali, risalgono sulle coste, connettendo continenti. Insieme trasportano **oltre il 95% del traffico internet e delle comunicazioni telefoniche internazionali** del pianeta.
+Probabilmente non li hai mai visti, ma sono lì: circa 600 cavi sottomarini percorrono il fondo degli oceani, attraversano i canali, risalgono sulle coste, connettendo continenti. ==Insieme trasportano **oltre il 95% del traffico internet e delle comunicazioni telefoniche internazionali** del pianeta.==
 
 Un cavo sottomarino moderno è una struttura ingegneristica complessa. All'interno ci sono da 8 a 24 paia di fibre ottiche — fili di vetro più sottili di un capello, attraverso cui viaggiano impulsi di luce a una velocità di circa 200.000 km/s (due terzi della velocità della luce nel vuoto, perché la luce rallenta nel vetro). Ogni fibra può trasportare decine di terabit di dati al secondo.
 
@@ -137,7 +137,7 @@ La mappa dei cavi sottomarini può essere consultata su **submarinecablemap.com*
 
 ### Data center e cloud: dove si trovano fisicamente i dati
 
-Quando salvi un file su Google Drive, non va "nel cloud". Va in un **data center** — un edificio pieno di server, in un posto specifico del mondo.
+Quando salvi un file su Google Drive, non va "nel cloud". ==Va in un **data center** — un edificio pieno di server, in un posto specifico del mondo.==
 
 Un data center industriale è una struttura imponente: capannoni da decine di migliaia di metri quadrati, riempiti di rack di server, con sistemi di raffreddamento enormi (il calore generato è il principale problema tecnico), generatori di emergenza, sistemi di sicurezza fisica. **Microsoft** ha oltre 200 data center nel mondo. **Google** ne ha più di 30 di grandi dimensioni, più decine di strutture più piccole.
 
@@ -153,7 +153,7 @@ Un data center industriale è una struttura imponente: capannoni da decine di mi
 
 Ogni computer connesso a internet ha un **indirizzo IP** — un numero come 142.250.184.46. Ma tu non digiti quel numero per andare su Google. Digiti "google.it". Come funziona la traduzione?
 
-Il **DNS** (Domain Name System) è il sistema di traduzione che converte i nomi di dominio leggibili dagli umani in indirizzi IP numerici che i computer usano per comunicare. Funziona come un elenco telefonico distribuito: quando il tuo browser richiede "google.it", interroga un server DNS, che risponde con l'indirizzo IP corrispondente.
+==Il **DNS** (Domain Name System) è il sistema di traduzione che converte i nomi di dominio leggibili dagli umani in indirizzi IP numerici che i computer usano per comunicare.== Funziona come un elenco telefonico distribuito: quando il tuo browser richiede "google.it", interroga un server DNS, che risponde con l'indirizzo IP corrispondente.
 
 Il DNS è organizzato gerarchicamente: in cima ci sono i **root server** (13 in tutto il mondo, gestiti da varie organizzazioni tra cui ICANN, NASA, VeriSign), poi i **TLD server** (gestiscono i domini di primo livello come .it, .com, .org), poi i **server autoritativi** (gestiti da chi possiede il dominio specifico).
 
@@ -163,9 +163,9 @@ Gli attacchi al DNS sono una categoria importante di cyberattacchi. Il **DNS spo
 
 ### Censura di internet: come funziona il Great Firewall
 
-Non tutti gli utenti del mondo hanno accesso alla stessa internet. Diversi paesi hanno costruito sistemi nazionali di filtraggio e blocco del traffico internet.
+==Non tutti gli utenti del mondo hanno accesso alla stessa internet.== Diversi paesi hanno costruito sistemi nazionali di filtraggio e blocco del traffico internet.
 
-Il più elaborato è il **Great Firewall** cinese — chiamato ufficialmente "Golden Shield". Blocca l'accesso a Google (inclusi Gmail, Maps, YouTube, Drive), Facebook, Instagram, Twitter/X, WhatsApp, Wikipedia (in alcune lingue), la maggior parte dei siti di notizie internazionali, e migliaia di altri servizi. Al loro posto, esistono alternative cinesi: Baidu per la ricerca, WeChat per la messaggistica, Weibo per i social, Baidu Maps per le mappe.
+==Il più elaborato è il **Great Firewall** cinese — chiamato ufficialmente "Golden Shield".== Blocca l'accesso a Google (inclusi Gmail, Maps, YouTube, Drive), Facebook, Instagram, Twitter/X, WhatsApp, Wikipedia (in alcune lingue), la maggior parte dei siti di notizie internazionali, e migliaia di altri servizi. Al loro posto, esistono alternative cinesi: Baidu per la ricerca, WeChat per la messaggistica, Weibo per i social, Baidu Maps per le mappe.
 
 Come funziona tecnicamente? Su più livelli: **blocco IP** (l'indirizzo del server è inserito in una lista nera), **filtraggio DNS** (le richieste DNS per certi domini vengono reindirizzate), **Deep Packet Inspection (DPI)** — la tecnologia più sofisticata: analizza il contenuto dei pacchetti di dati in transito cercando pattern associati a contenuti proibiti o a VPN. Il DPI è costoso computazionalmente ma efficace contro molte contromisure.
 
@@ -185,11 +185,11 @@ Sembra ovvio — ma non è scontato. Gli operatori di rete hanno interesse econo
 
 La battaglia sulla net neutrality è stata intensa.
 
-**In Europa**, la net neutrality è garantita dal Regolamento (UE) 2015/2120, in vigore dal 2016. Gli operatori non possono discriminare il traffico — con alcune eccezioni tecniche limitate (gestione della congestione, sicurezza della rete).
+==**In Europa**, la net neutrality è garantita dal Regolamento (UE) 2015/2120, in vigore dal 2016.== Gli operatori non possono discriminare il traffico — con alcune eccezioni tecniche limitate (gestione della congestione, sicurezza della rete).
 
 **Negli Stati Uniti**, la storia è più tormentata. La FCC (Federal Communications Commission) ha adottato regole di net neutrality nel 2015; le ha revocate nel 2017 sotto l'amministrazione Trump; ha tentato di reintrodurle nel 2023 sotto l'amministrazione Biden; la battaglia legale continua. Nel frattempo, stati come California hanno adottato proprie leggi di net neutrality.
 
-Perché importa? Perché internet è diventata un'infrastruttura critica per l'accesso all'informazione, alla salute, all'istruzione, al commercio. Se gli operatori potessero discriminare il traffico, chi ha più soldi potrebbe acquistare "corsia preferenziale" — creando un internet a due velocità, dove i servizi ricchi vanno veloci e quelli poveri vanno lenti. La neutralità della rete è una questione di uguaglianza nell'accesso all'informazione.
+Perché importa? Perché internet è diventata un'infrastruttura critica per l'accesso all'informazione, alla salute, all'istruzione, al commercio. Se gli operatori potessero discriminare il traffico, chi ha più soldi potrebbe acquistare "corsia preferenziale" — creando un internet a due velocità, dove i servizi ricchi vanno veloci e quelli poveri vanno lenti. ==La neutralità della rete è una questione di uguaglianza nell'accesso all'informazione.==
 
 ---
 
@@ -199,7 +199,7 @@ Perché importa? Perché internet è diventata un'infrastruttura critica per l'a
 
 **1971**: Ray Tomlinson inventa la posta elettronica e sceglie il simbolo @ per separare il nome dell'utente dal nome del computer.
 
-**1973–74**: Vint Cerf e Bob Kahn sviluppano TCP/IP — il protocollo fondamentale di internet. La scelta chiave: TCP/IP è **end-to-end**. La rete non sa nulla del contenuto che trasporta. Si limita a consegnare pacchetti. L'intelligenza è agli estremi — nei computer degli utenti. Questa scelta architettonica ha una conseguenza enorme: chiunque può costruire qualsiasi applicazione sopra internet senza chiedere il permesso a nessuno. È la ragione per cui il web, le email, i podcast, i videogiochi online, le criptovalute sono tutti stati possibili — la rete non li ha bloccati.
+**1973–74**: Vint Cerf e Bob Kahn sviluppano TCP/IP — il protocollo fondamentale di internet. ==La scelta chiave: TCP/IP è **end-to-end**.== La rete non sa nulla del contenuto che trasporta. Si limita a consegnare pacchetti. L'intelligenza è agli estremi — nei computer degli utenti. Questa scelta architettonica ha una conseguenza enorme: chiunque può costruire qualsiasi applicazione sopra internet senza chiedere il permesso a nessuno. ==È la ragione per cui il web, le email, i podcast, i videogiochi online, le criptovalute sono tutti stati possibili — la rete non li ha bloccati.==
 
 **1991**: Tim Berners-Lee, al CERN di Ginevra, inventa il World Wide Web. Non è internet — è un'applicazione costruita *sopra* internet. Introduce HTML, URL e HTTP. Il 6 agosto 1991 pubblica il primo sito web della storia: info.cern.ch — ancora raggiungibile oggi.
 
@@ -215,7 +215,7 @@ Le scelte fatte nel 1969 e nel 1974 da un piccolo gruppo di ingegneri americani 
 
 ### Caso studio: traccia il percorso di un pacchetto da Roma a Seoul
 
-Quando carichi una pagina web ospitata su un server a Seoul (Corea del Sud) da Roma, il tuo computer non stabilisce una connessione diretta. I dati viaggiano in **pacchetti** (blocchi di circa 1.500 byte), ognuno dei quali trova autonomamente il percorso migliore tra i nodi di rete disponibili.
+Quando carichi una pagina web ospitata su un server a Seoul (Corea del Sud) da Roma, il tuo computer non stabilisce una connessione diretta. ==I dati viaggiano in **pacchetti** (blocchi di circa 1.500 byte), ognuno dei quali trova autonomamente il percorso migliore tra i nodi di rete disponibili.==
 
 Puoi vedere questo percorso con il comando `traceroute` (su Mac/Linux) o `tracert` (su Windows) nel terminale. Il comando mostra ogni **hop** — ogni nodo di rete attraverso cui il pacchetto transita — con il suo indirizzo IP e il tempo di risposta in millisecondi.
 

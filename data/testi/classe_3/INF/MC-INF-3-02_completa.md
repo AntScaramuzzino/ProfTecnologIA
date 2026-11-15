@@ -23,11 +23,11 @@ Come funziona — e cosa può andare storto?
 
 ### 🎯 In breve
 
-"Intelligenza artificiale" è un nome che inganna. Un programma di questo tipo non pensa e non capisce. Fa un'altra cosa, molto bene: trova regolarità in enormi quantità di dati e le usa per fare previsioni. Se sai come funziona, sai anche quando fidarti e quando no.
+=="Intelligenza artificiale" è un nome che inganna.== Un programma di questo tipo non pensa e non capisce. Fa un'altra cosa, molto bene: trova regolarità in enormi quantità di dati e le usa per fare previsioni. Se sai come funziona, sai anche quando fidarti e quando no.
 
 **Imparare dagli esempi**
 
-In un programma normale è una persona a scrivere le regole. Nel **machine learning**, cioè apprendimento automatico, le regole le ricava il programma, dagli esempi. Il risultato si chiama **modello**. Esistono tre modi principali per ottenerlo.
+==In un programma normale è una persona a scrivere le regole.== ==Nel **machine learning**, cioè apprendimento automatico, le regole le ricava il programma, dagli esempi.== Il risultato si chiama **modello**. Esistono tre modi principali per ottenerlo.
 
 - **Con le risposte già pronte.** Mostri al modello migliaia di email già segnate come "spam" o "non spam". Lui prova a indovinare, confronta con la risposta giusta, si corregge. Dopo moltissimi tentativi riconosce lo spam anche in email mai viste.
 - **Senza risposte.** Il modello riceve dati non etichettati e cerca da solo i gruppi. Un servizio di musica scopre così che chi ascolta un certo artista ascolta spesso anche un altro.
@@ -49,9 +49,9 @@ I programmi che scrivono testi, come i chatbot, sono reti enormi addestrate su q
 
 **Le allucinazioni.** Un chatbot produce frasi plausibili, non frasi vere. Può inventare una data, un libro, una citazione, e scriverle con lo stesso tono sicuro di sempre. Dipende da come è costruito, e per questo non sparirà con un aggiornamento. La regola pratica: le cose importanti si verificano su una fonte affidabile.
 
-**I pregiudizi.** Un modello impara tutto quello che c'è nei dati, compresi i pregiudizi delle persone: in inglese si chiamano **bias**. Un'azienda aveva costruito un sistema per scegliere i curriculum. Lo aveva addestrato sulle assunzioni degli anni precedenti, quasi tutte di uomini. Il sistema ha imparato a scartare le donne, e l'azienda ha dovuto abbandonarlo. La macchina aveva fatto esattamente quello che i dati le avevano insegnato.
+==**I pregiudizi.** Un modello impara tutto quello che c'è nei dati, compresi i pregiudizi delle persone: in inglese si chiamano **bias**.== Un'azienda aveva costruito un sistema per scegliere i curriculum. Lo aveva addestrato sulle assunzioni degli anni precedenti, quasi tutte di uomini. Il sistema ha imparato a scartare le donne, e l'azienda ha dovuto abbandonarlo. La macchina aveva fatto esattamente quello che i dati le avevano insegnato.
 
-**Imparare a memoria.** Un modello può adattarsi così tanto agli esempi da impararli a memoria, senza capire la regola generale. Va benissimo sugli esempi già visti e malissimo su quelli nuovi. Come chi impara a memoria le risposte di una verifica: se cambia la domanda, è perduto. Per questo un modello si mette sempre alla prova su dati che non ha mai visto.
+==**Imparare a memoria.** Un modello può adattarsi così tanto agli esempi da impararli a memoria, senza capire la regola generale.== Va benissimo sugli esempi già visti e malissimo su quelli nuovi. Come chi impara a memoria le risposte di una verifica: se cambia la domanda, è perduto. Per questo un modello si mette sempre alla prova su dati che non ha mai visto.
 
 C'è poi il tempo. Il mondo cambia, e un modello addestrato sui dati di ieri sbaglia sempre di più con quelli di domani. Va tenuto d'occhio e aggiornato.
 
@@ -73,7 +73,7 @@ Costruire un modello è in gran parte un lavoro sui dati: raccoglierli, ripulirl
 
 ### Le macchine non pensano. Ottimizzano.
 
-Il termine "intelligenza artificiale" crea aspettative sbagliate. Un modello di machine learning non pensa, non capisce, non ragiona. Esegue un'operazione matematica molto complessa: trovare pattern in enormi quantità di dati e usarli per fare previsioni su dati nuovi.
+Il termine "intelligenza artificiale" crea aspettative sbagliate. ==Un modello di machine learning non pensa, non capisce, non ragiona.== ==Esegue un'operazione matematica molto complessa: trovare pattern in enormi quantità di dati e usarli per fare previsioni su dati nuovi.==
 
 Questa distinzione non è filosofica — è tecnica, e ha conseguenze pratiche dirette su come ti fidi di questi strumenti, come li usi e come ne valuti i limiti.
 
@@ -85,7 +85,7 @@ Il machine learning tradizionale si divide in tre famiglie principali.
 
 **Apprendimento supervisionato**
 
-Il modello viene addestrato su un dataset di esempi *etichettati*: coppie (input, risposta corretta). Per ogni esempio, il modello fa una previsione, la confronta con la risposta corretta, misura l'errore e aggiusta i propri parametri interni per ridurlo. Questo processo si ripete milioni di volte.
+==Il modello viene addestrato su un dataset di esempi *etichettati*: coppie (input, risposta corretta).== Per ogni esempio, il modello fa una previsione, la confronta con la risposta corretta, misura l'errore e aggiusta i propri parametri interni per ridurlo. Questo processo si ripete milioni di volte.
 
 Esempio: per addestrare un classificatore di email spam, gli mostri migliaia di email già etichettate come "spam" o "non spam". Il modello impara quali caratteristiche — certe parole, certe strutture, certi mittenti — sono associate allo spam. Poi applica quello che ha imparato alle email nuove.
 
@@ -105,7 +105,7 @@ Il modello impara interagendo con un ambiente: prova azioni, riceve ricompense o
 
 ### Le reti neurali e il deep learning
 
-I modelli più potenti oggi usano **reti neurali artificiali** — strutture matematiche ispirate (vagamente) alla struttura del cervello biologico.
+==I modelli più potenti oggi usano **reti neurali artificiali** — strutture matematiche ispirate (vagamente) alla struttura del cervello biologico.==
 
 Una rete neurale è organizzata in **strati** (layers):
 - Uno strato di input che riceve i dati (es. i pixel di un'immagine).
@@ -124,13 +124,13 @@ GPT-4 è un esempio di grande modello linguistico: usa molti parametri, cioè va
 
 ### Allucinazioni, bias e limiti
 
-I modelli di machine learning hanno limiti strutturali che è fondamentale conoscere.
+==I modelli di machine learning hanno limiti strutturali che è fondamentale conoscere.==
 
 **Allucinazioni**
 
-I modelli linguistici come ChatGPT non "sanno" le cose nel senso in cui le sa una persona. Generano testo *statisticamente plausibile* basandosi sui pattern del testo di addestramento. Possono produrre informazioni false dette con tono di assoluta sicurezza — inventare citazioni, date, nomi di persone, sentenze giudiziarie. Questo si chiama "allucinazione".
+==I modelli linguistici come ChatGPT non "sanno" le cose nel senso in cui le sa una persona.== Generano testo *statisticamente plausibile* basandosi sui pattern del testo di addestramento. Possono produrre informazioni false dette con tono di assoluta sicurezza — inventare citazioni, date, nomi di persone, sentenze giudiziarie. Questo si chiama "allucinazione".
 
-Non è un bug: è una caratteristica strutturale di come funzionano questi modelli. La soluzione non è smettere di usarli — è verificare sempre le informazioni importanti con fonti primarie.
+==Non è un bug: è una caratteristica strutturale di come funzionano questi modelli.== La soluzione non è smettere di usarli — è verificare sempre le informazioni importanti con fonti primarie.
 
 **Bias**
 
@@ -154,7 +154,7 @@ Il mondo cambia. Un modello addestrato su dati del 2020 applicato a dati del 202
 
 ### Il pipeline del machine learning
 
-Addestrare un modello è un processo iterativo in molti passi.
+==Addestrare un modello è un processo iterativo in molti passi.==
 
 1. **Raccolta dei dati:** trovare o creare il dataset di addestramento.
 2. **Pulizia e preprocessing:** rimuovere errori, gestire valori mancanti, normalizzare le scale.

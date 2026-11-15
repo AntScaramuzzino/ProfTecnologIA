@@ -27,7 +27,7 @@ Cos'è diverso tra i due? Non è la qualità del prodotto. È la tecnologia.
 
 ### 🎯 In breve
 
-Il latte fresco dura pochi giorni, il tonno in scatola anni. Non dipende dalla qualità: dipende da come sono stati trattati. Per capirlo bisogna prima sapere perché il cibo va a male.
+Il latte fresco dura pochi giorni, il tonno in scatola anni. ==Non dipende dalla qualità: dipende da come sono stati trattati.== Per capirlo bisogna prima sapere perché il cibo va a male.
 
 **I tre nemici del cibo**
 
@@ -41,11 +41,11 @@ Tutti e tre hanno due punti deboli: lavorano male al freddo e senza acqua. Quasi
 
 **Il freddo**
 
-La **refrigerazione**, cioè il frigorifero tra 0 e 4 gradi, rallenta i microrganismi ma non li ferma. Per questo il cibo in frigo dura giorni, non mesi.
+==La **refrigerazione**, cioè il frigorifero tra 0 e 4 gradi, rallenta i microrganismi ma non li ferma.== ==Per questo il cibo in frigo dura giorni, non mesi.==
 
-La **surgelazione** porta il cibo a 18 gradi sotto zero. L'acqua diventa ghiaccio e i microrganismi restano bloccati. Bloccati, non morti: quando scongeli ripartono. Per questo un cibo scongelato non va ricongelato.
+La **surgelazione** porta il cibo a 18 gradi sotto zero. L'acqua diventa ghiaccio e i microrganismi restano bloccati. Bloccati, non morti: quando scongeli ripartono. ==Per questo un cibo scongelato non va ricongelato.==
 
-Dal produttore al tuo freezer la temperatura non deve mai salire. Questo viaggio senza interruzioni si chiama **catena del freddo**.
+Dal produttore al tuo freezer la temperatura non deve mai salire. ==Questo viaggio senza interruzioni si chiama **catena del freddo**.==
 
 **Il calore**
 
@@ -65,7 +65,7 @@ Anche la confezione conserva. Nel **sottovuoto** si toglie l'aria, e con lei l'o
 
 Sull'etichetta puoi trovare due scritte, e non vogliono dire la stessa cosa.
 
-- "**Da consumarsi entro**" è la data di scadenza vera. Dopo, il cibo può fare male.
+- =="**Da consumarsi entro**" è la data di scadenza vera.== Dopo, il cibo può fare male.
 - "**Da consumarsi preferibilmente entro**" indica fino a quando il cibo è al meglio. Dopo può aver perso un po' di sapore, ma di solito si può ancora mangiare.
 
 Confonderle fa buttare molto cibo ancora buono.
@@ -86,9 +86,9 @@ Confonderle fa buttare molto cibo ancora buono.
 
 Prima di capire come conservare il cibo, devi capire perché si deteriora. La risposta non è "perché è vecchio" — è molto più precisa. Gli alimenti si deteriorano per tre cause principali, che a volte agiscono insieme.
 
-**Causa 1: I microrganismi.** Batteri, muffe e lieviti sono ovunque — nell'aria, sull'acqua, sulle mani, sulle superfici. Su un alimento trovano cibo, umidità e temperature adatte per moltiplicarsi. Moltiplicandosi, consumano i nutrienti dell'alimento, producono gas, acidi e composti chimici che alterano il sapore, il colore, la consistenza e, in alcuni casi, producono **tossine** — sostanze velenose per l'uomo. Non tutti i microrganismi che crescono sugli alimenti sono pericolosi: i lieviti che fermentano il pane e i batteri dello yogurt sono utili. Ma batteri come la *Salmonella*, il *Clostridium botulinum* (che produce la tossina botulinica, una delle più letali in natura) o la *Listeria monocytogenes* possono causare intossicazioni alimentari gravi.
+==**Causa 1: I microrganismi.** Batteri, muffe e lieviti sono ovunque — nell'aria, sull'acqua, sulle mani, sulle superfici.== Su un alimento trovano cibo, umidità e temperature adatte per moltiplicarsi. Moltiplicandosi, consumano i nutrienti dell'alimento, producono gas, acidi e composti chimici che alterano il sapore, il colore, la consistenza e, in alcuni casi, producono **tossine** — sostanze velenose per l'uomo. Non tutti i microrganismi che crescono sugli alimenti sono pericolosi: i lieviti che fermentano il pane e i batteri dello yogurt sono utili. Ma batteri come la *Salmonella*, il *Clostridium botulinum* (che produce la tossina botulinica, una delle più letali in natura) o la *Listeria monocytogenes* possono causare intossicazioni alimentari gravi.
 
-**Causa 2: Le reazioni enzimatiche.** Le piante e gli animali contengono **enzimi** — proteine che catalizzano reazioni chimiche biologiche. Negli organismi vivi, questi enzimi controllano processi fondamentali come la digestione e il metabolismo. Quando la pianta viene raccolta o l'animale macellato, gli enzimi non si "spengono": continuano a lavorare. Il risultato è il deterioramento: la mela tagliata si ossida e diventa marrone, la carne cambia colore e consistenza, la frutta matura troppo rapidamente e poi ammuffisce.
+==**Causa 2: Le reazioni enzimatiche.** Le piante e gli animali contengono **enzimi** — proteine che catalizzano reazioni chimiche biologiche.== Negli organismi vivi, questi enzimi controllano processi fondamentali come la digestione e il metabolismo. Quando la pianta viene raccolta o l'animale macellato, gli enzimi non si "spengono": continuano a lavorare. ==Il risultato è il deterioramento: la mela tagliata si ossida e diventa marrone, la carne cambia colore e consistenza, la frutta matura troppo rapidamente e poi ammuffisce.==
 
 **Causa 3: L'ossidazione chimica.** I grassi contenuti negli alimenti reagiscono con l'ossigeno dell'aria in una serie di reazioni chimiche chiamate irrancidimento. Il risultato è un sapore acido e sgradevole (il "rancido" appunto) e la formazione di composti chimici che possono essere dannosi per la salute in grandi quantità. Anche le vitamine (in particolare la vitamina C e le vitamine del gruppo B) si degradano per ossidazione a contatto con l'aria e la luce.
 
@@ -122,7 +122,7 @@ La **refrigerazione** (tra 0°C e +4°C) rallenta la crescita dei microrganismi 
 
 La **surgelazione** porta la temperatura dell'alimento a −18°C o meno, molto rapidamente. A questa temperatura, l'acqua presente nell'alimento si congela, diventando inaccessibile ai microrganismi (che hanno bisogno di acqua liquida per vivere e riprodursi). Le reazioni enzimatiche e chimiche si bloccano quasi completamente. Un prodotto surgelato correttamente può conservarsi per mesi o anni senza perdita significativa di valore nutritivo.
 
-La velocità del congelamento è fondamentale: il **surgelamento rapido** (a −40°C o meno, in tunnel criogenici industriali) forma cristalli di ghiaccio microscopici che non danneggiano le cellule dell'alimento. Il congelamento lento in un freezer domestico forma cristalli di ghiaccio grandi che rompono le pareti cellulari, alterando la consistenza del prodotto dopo lo scongelamento. Ecco perché le verdure surgelate industrialmente mantengono meglio la struttura rispetto a quelle congelate in casa.
+==La velocità del congelamento è fondamentale: il **surgelamento rapido** (a −40°C o meno, in tunnel criogenici industriali) forma cristalli di ghiaccio microscopici che non danneggiano le cellule dell'alimento.== Il congelamento lento in un freezer domestico forma cristalli di ghiaccio grandi che rompono le pareti cellulari, alterando la consistenza del prodotto dopo lo scongelamento. Ecco perché le verdure surgelate industrialmente mantengono meglio la struttura rispetto a quelle congelate in casa.
 
 > **Box Scienze — Perché il freddo rallenta i batteri**
 > I batteri crescono moltiplicandosi: una cellula si divide in due, due in quattro, quattro in otto. A temperatura corporea (37°C), un batterio come *Escherichia coli* si divide ogni 20 minuti. A 20°C (temperatura ambiente) si divide ogni 30-40 minuti. A 4°C (frigo) si divide ogni 12-24 ore. A −18°C (freezer) la divisione si blocca quasi completamente. Il metabolismo cellulare — tutte le reazioni chimiche che permettono alla cellula di vivere e riprodursi — dipende da enzimi, e gli enzimi lavorano molto più lentamente a temperature basse. Il freddo non uccide i batteri: li mette in uno stato di rallentamento metabolico. Appena la temperatura risale, si risvegliano e ricomincia la moltiplicazione. Il rischio dopo lo scongelamento dipende soprattutto da quanto tempo l’alimento resta a temperature favorevoli alla crescita dei microrganismi. Segui l’etichetta e le indicazioni di conservazione del prodotto; non ricongelare alimenti di cui non conosci la storia termica.
@@ -147,11 +147,11 @@ La **sterilizzazione in autoclave** è usata per le conserve di carne, pesce e v
 
 I microrganismi hanno bisogno di acqua per sopravvivere e riprodursi. Se si rimuove l'acqua da un alimento portandolo sotto una soglia critica (l'**attività dell'acqua** scende sotto 0,6), i batteri e le muffe non possono più crescere.
 
-L'**essiccazione naturale** è la tecnica più antica: frutta, verdura, erbe aromatiche esposte al sole e al vento perdono l'acqua per evaporazione. Fichi secchi, pomodori secchi, uva passa, funghi secchi, erbe aromatiche sono tutti esempi. Vantaggi: nessun costo energetico, prodotto stabile a temperatura ambiente. Svantaggi: richiede clima favorevole, tempi lunghi, rischio di contaminazione esterna.
+==L'**essiccazione naturale** è la tecnica più antica: frutta, verdura, erbe aromatiche esposte al sole e al vento perdono l'acqua per evaporazione.== Fichi secchi, pomodori secchi, uva passa, funghi secchi, erbe aromatiche sono tutti esempi. Vantaggi: nessun costo energetico, prodotto stabile a temperatura ambiente. Svantaggi: richiede clima favorevole, tempi lunghi, rischio di contaminazione esterna.
 
 L'**essiccazione industriale** usa forni ventilati, tunnel di essiccazione o spray drying (atomizzazione) per rimuovere l'acqua rapidamente e in modo controllato. Il latte in polvere si produce con lo spray drying: il latte liquido viene spruzzato in atomissime goccioline in una camera calda dove l'acqua evapora istantaneamente e rimangono microscopiche particelle di polvere.
 
-La **liofilizzazione** è la forma più sofisticata di disidratazione: l'alimento viene prima congelato rapidamente, poi messo in una camera a vuoto (bassa pressione). In queste condizioni, il ghiaccio sublima direttamente in vapore acqueo senza passare allo stato liquido. Il risultato è un alimento quasi completamente privo d'acqua ma che ha mantenuto praticamente intatta la struttura cellulare, il colore, l'aroma e i valori nutrizionali. Il caffè liofilizzato, le zuppe astronautiche, i frutti di bosco liofilizzati sono prodotti con questa tecnica. Costo: molto più alto dell'essiccazione tradizionale, motivo per cui la liofilizzazione è usata per prodotti ad alto valore (caffè, ingredienti farmaceutici, cibo per spedizioni in ambienti estremi).
+==La **liofilizzazione** è la forma più sofisticata di disidratazione: l'alimento viene prima congelato rapidamente, poi messo in una camera a vuoto (bassa pressione).== In queste condizioni, il ghiaccio sublima direttamente in vapore acqueo senza passare allo stato liquido. Il risultato è un alimento quasi completamente privo d'acqua ma che ha mantenuto praticamente intatta la struttura cellulare, il colore, l'aroma e i valori nutrizionali. Il caffè liofilizzato, le zuppe astronautiche, i frutti di bosco liofilizzati sono prodotti con questa tecnica. Costo: molto più alto dell'essiccazione tradizionale, motivo per cui la liofilizzazione è usata per prodotti ad alto valore (caffè, ingredienti farmaceutici, cibo per spedizioni in ambienti estremi).
 
 La **concentrazione** è un metodo per ridurre la quantità di acqua in un alimento liquido senza rimuoverla completamente, ottenendo un prodotto denso e ad alto contenuto di soluti. Si usa principalmente per succhi di frutta, salse, puree, estratti e prodotti caseari. Il procedimento industriale più comune è l'**evaporazione sotto vuoto**: abbassando la pressione nell'apparato, l'acqua evapora a temperature più basse (anche 40-50°C invece di 100°C), preservando meglio aroma, colore e vitamine rispetto all'ebollizione normale. Il concentrato di pomodoro in scatola viene prodotto così: i pomodori vengono frullati, filtrati e poi concentrati rimuovendo gran parte dell'acqua — un kg di concentrato al 28% contiene l'equivalente di circa 5-6 kg di pomodori freschi. Anche il latte condensato (con zucchero) e il latte condensato non zuccherato sono prodotti per concentrazione. La marmellata è un caso particolare: il calore della cottura e la presenza di zucchero concentrano il frutto e creano contemporaneamente una conservazione per azione osmotica.
 
@@ -165,7 +165,7 @@ La **salatura** funziona per osmosi: il sale estrae l'acqua dall'interno delle c
 
 L'**affumicatura** espone l'alimento al fumo di legna per ore o giorni. Il fumo contiene centinaia di composti chimici (fenoli, aldeidi, acidi organici) che hanno azione batteriostatica e antiossidante. Salmone affumicato, speck, pancetta affumicata, scamorza affumicata sono prodotti con questa tecnica. L'affumicatura a freddo (sotto 30°C) conserva le proteine; quella a caldo (sopra 60°C) combina affumicatura e cottura.
 
-La **fermentazione** è un caso speciale: invece di combattere i microrganismi, si usano microrganismi "amici" per produrre composti che proteggono l'alimento dagli agenti patogeni. I batteri lattici dello yogurt producono acido lattico che abbassa il pH e impedisce la crescita di batteri patogeni. I lieviti nel pane e nel vino producono alcol. I batteri del salamino fermentano le proteine della carne producendo acidi organici conservanti. La fermentazione è una delle tecnologie alimentari più antiche e più complesse.
+==La **fermentazione** è un caso speciale: invece di combattere i microrganismi, si usano microrganismi "amici" per produrre composti che proteggono l'alimento dagli agenti patogeni.== I batteri lattici dello yogurt producono acido lattico che abbassa il pH e impedisce la crescita di batteri patogeni. I lieviti nel pane e nel vino producono alcol. I batteri del salamino fermentano le proteine della carne producendo acidi organici conservanti. La fermentazione è una delle tecnologie alimentari più antiche e più complesse.
 
 ---
 
@@ -179,13 +179,13 @@ Il **confezionamento sottovuoto** rimuove quasi completamente l'aria dalla confe
 
 ### Come leggere un'etichetta alimentare: decodificare ciò che c'è scritto
 
-Un alimento conservato porta sempre un'etichetta. Saper leggere un'etichetta è una competenza pratica che usi ogni volta che fai la spesa. In Europa, l'etichettatura è regolata dal Regolamento UE n. 1169/2011 che stabilisce cosa deve essere scritto obbligatoriamente su ogni confezione venduta al pubblico.
+Un alimento conservato porta sempre un'etichetta. ==Saper leggere un'etichetta è una competenza pratica che usi ogni volta che fai la spesa.== In Europa, l'etichettatura è regolata dal Regolamento UE n. 1169/2011 che stabilisce cosa deve essere scritto obbligatoriamente su ogni confezione venduta al pubblico.
 
 **Informazioni obbligatorie che trovi su ogni etichetta:**
 
 1. **La denominazione del prodotto** — il nome con cui il prodotto deve essere venduto, definito dalla legge (es. "latte fresco pastorizzato alta qualità", non solo "latte fresco").
 
-2. **L'elenco degli ingredienti** — in ordine decrescente di peso. Il primo ingrediente è quello più abbondante, l'ultimo il meno abbondante. Se il primo ingrediente di un succo di frutta è "acqua" e il secondo è "zucchero", il terzo è "concentrato di frutta 10%": stai comprando essenzialmente acqua zuccherata con un po' di frutto. Questa lettura è l'informazione più potente che hai come consumatore.
+2. ==**L'elenco degli ingredienti** — in ordine decrescente di peso.== Il primo ingrediente è quello più abbondante, l'ultimo il meno abbondante. Se il primo ingrediente di un succo di frutta è "acqua" e il secondo è "zucchero", il terzo è "concentrato di frutta 10%": stai comprando essenzialmente acqua zuccherata con un po' di frutto. Questa lettura è l'informazione più potente che hai come consumatore.
 
 3. **Gli allergeni** — i 14 allergeni principali riconosciuti dall'UE (frumento/glutine, crostacei, uova, pesce, arachidi, soia, latte/lattosio, frutta a guscio, sedano, senape, sesamo, anidride solforosa/solfiti, lupino, molluschi) devono essere evidenziati in grassetto o colore diverso nell'elenco degli ingredienti.
 
@@ -193,7 +193,7 @@ Un alimento conservato porta sempre un'etichetta. Saper leggere un'etichetta è 
 
 5. **La quantità netta** — il peso o il volume del prodotto (al netto dell'imballaggio).
 
-6. **Il termine minimo di conservazione ("Da consumarsi preferibilmente entro...") o la data di scadenza ("Da consumarsi entro...")** — sono due cose diverse e non intercambiabili. Il termine minimo di conservazione indica che il prodotto, correttamente conservato, mantiene le sue qualità organolettiche fino a quella data: dopo, potrebbe essere meno gustoso ma non necessariamente pericoloso. La data di scadenza ("da consumarsi entro") indica che oltre quella data il prodotto potrebbe essere microbiologicamente non sicuro. Si usa per prodotti deperibili come carne, pesce, prodotti lattiero-caseari freschi. Superare il termine minimo di conservazione di un biscotto non è un rischio per la salute; superare la data di scadenza di un filetto di pesce può esserlo.
+6. **Il termine minimo di conservazione ("Da consumarsi preferibilmente entro...") o la data di scadenza ("Da consumarsi entro...")** — sono due cose diverse e non intercambiabili. Il termine minimo di conservazione indica che il prodotto, correttamente conservato, mantiene le sue qualità organolettiche fino a quella data: dopo, potrebbe essere meno gustoso ma non necessariamente pericoloso. La data di scadenza ("da consumarsi entro") indica che oltre quella data il prodotto potrebbe essere microbiologicamente non sicuro. Si usa per prodotti deperibili come carne, pesce, prodotti lattiero-caseari freschi. ==Superare il termine minimo di conservazione di un biscotto non è un rischio per la salute; superare la data di scadenza di un filetto di pesce può esserlo.==
 
 7. **Le condizioni di conservazione** — "conservare in luogo fresco e asciutto", "conservare in frigorifero dopo l'apertura", "non esporre alla luce diretta del sole" ecc.
 
@@ -207,7 +207,7 @@ Un alimento conservato porta sempre un'etichetta. Saper leggere un'etichetta è 
 
 ### La catena del freddo: il viaggio del surgelato dal produttore a casa tua
 
-Un prodotto surgelato deve mantenere la temperatura di −18°C o meno dall'inizio alla fine: dal momento della produzione fino al momento in cui lo metti nel freezer di casa. Questa continuità si chiama **catena del freddo**, ed è un sistema logistico complesso che coinvolge mezzi di trasporto refrigerati, celle frigorifere nei magazzini, banchi frigoriferi nei supermercati.
+==Un prodotto surgelato deve mantenere la temperatura di −18°C o meno dall'inizio alla fine: dal momento della produzione fino al momento in cui lo metti nel freezer di casa.== ==Questa continuità si chiama **catena del freddo**, ed è un sistema logistico complesso che coinvolge mezzi di trasporto refrigerati, celle frigorifere nei magazzini, banchi frigoriferi nei supermercati.==
 
 Se la catena del freddo si interrompe anche solo per poche ore, i microrganismi si risvegliano, iniziano a moltiplicarsi, e quando il prodotto viene ricongelato restano nel prodotto — congelati ma vivi, pronti a riprendere l'attività alla successiva scongelazione. Questo è il motivo per cui i surgelati hanno l'avviso "non ricongelare dopo lo scongelamento": non perché il prodotto "esploda" o diventi immediatamente pericoloso, ma perché uno scongelamento con tempi o temperature inadeguati può favorire la crescita dei microrganismi. Un secondo congelamento non li elimina e può peggiorare la qualità del prodotto; il ciclo da solo non implica necessariamente un aumento dei microrganismi.
 

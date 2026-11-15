@@ -25,13 +25,13 @@ Questo percorso — dal campo al consumatore — si chiama **filiera alimentare*
 
 ### 🎯 In breve
 
-Il cibo non compare sullo scaffale per magia. Prima di arrivare nel tuo piatto passa di mano in mano, a volte per migliaia di chilometri. Questo percorso si chiama **filiera alimentare**: immaginala come un filo che va dal campo alla forchetta.
+Il cibo non compare sullo scaffale per magia. Prima di arrivare nel tuo piatto passa di mano in mano, a volte per migliaia di chilometri. ==Questo percorso si chiama **filiera alimentare**: immaginala come un filo che va dal campo alla forchetta.==
 
 **Chi c'è lungo il filo**
 
-1. Il **produttore**: l'agricoltore, l'allevatore, il pescatore. È il primo anello, e spesso il più debole: dipende dal meteo e dal prezzo che altri decidono.
-2. Il **trasformatore**: l'industria che trasforma la materia prima. Il grano diventa pasta, il latte diventa formaggio, il pomodoro diventa passata.
-3. Il **distributore**: chi trasporta e conserva nei magazzini. Per i cibi freschi deve mantenere sempre la stessa temperatura: è la **catena del freddo**. Se si spezza, il cibo va buttato.
+1. Il **produttore**: l'agricoltore, l'allevatore, il pescatore. ==È il primo anello, e spesso il più debole: dipende dal meteo e dal prezzo che altri decidono.==
+2. ==Il **trasformatore**: l'industria che trasforma la materia prima.== Il grano diventa pasta, il latte diventa formaggio, il pomodoro diventa passata.
+3. Il **distributore**: chi trasporta e conserva nei magazzini. ==Per i cibi freschi deve mantenere sempre la stessa temperatura: è la **catena del freddo**.== Se si spezza, il cibo va buttato.
 4. Il **dettagliante**: chi vende a te. Supermercato, negozio sotto casa, mercato.
 5. Il **consumatore**: tu. Sei l'ultimo anello, ma non sei senza potere. Ogni cosa che compri manda un messaggio a tutta la filiera.
 
@@ -51,7 +51,7 @@ I vantaggi: il produttore guadagna di più, il cibo è più fresco, viaggia meno
 
 **Quando la filiera è lunga ma giusta**
 
-Caffè, cacao e banane da noi non crescono: la loro filiera sarà sempre lunga. Il **commercio equo e solidale** è un sistema che garantisce a chi coltiva un prezzo minimo e condizioni di lavoro dignitose, senza lavoro dei bambini. Lo riconosci da un marchio sulla confezione.
+Caffè, cacao e banane da noi non crescono: la loro filiera sarà sempre lunga. ==Il **commercio equo e solidale** è un sistema che garantisce a chi coltiva un prezzo minimo e condizioni di lavoro dignitose, senza lavoro dei bambini.== Lo riconosci da un marchio sulla confezione.
 
 **La banana, dall'Ecuador al tuo zaino**
 
@@ -75,7 +75,7 @@ Di quel 1,20 euro al chilo, a chi l'ha coltivata arrivano circa 6-8 centesimi. I
 
 Prima di arrivare nel tuo piatto, ogni alimento ha percorso un cammino lungo — a volte lunghissimo. Ha cambiato forma, cambiato contenitore, cambiato temperatura, cambiato proprietario. Ha attraversato fabbriche, magazzini, porti e supermercati. Ha coinvolto decine di persone.
 
-Questo cammino si chiama **filiera alimentare**, cioè la sequenza di tutte le fasi e di tutti gli attori che un alimento attraversa dal momento della produzione al momento del consumo.
+==Questo cammino si chiama **filiera alimentare**, cioè la sequenza di tutte le fasi e di tutti gli attori che un alimento attraversa dal momento della produzione al momento del consumo.==
 
 La parola "filiera" viene dall'italiano *filo*: immaginala come un filo che tiene insieme tutti i nodi della catena — dal campo alla tua forchetta.
 
@@ -85,7 +85,7 @@ Capire la filiera non serve solo per curiosità. Serve per scegliere meglio: per
 
 ### Gli attori della filiera: chi c'è lungo il filo?
 
-Una filiera alimentare tipica ha cinque categorie principali di attori. Ogni attore svolge un ruolo specifico e aggiunge valore — o costi — al prodotto finale.
+Una filiera alimentare tipica ha cinque categorie principali di attori. ==Ogni attore svolge un ruolo specifico e aggiunge valore — o costi — al prodotto finale.==
 
 ---
 
@@ -93,9 +93,9 @@ Una filiera alimentare tipica ha cinque categorie principali di attori. Ogni att
 
 Tutto inizia qui. Il produttore primario — agricoltore, allevatore, pescatore — è chi trasforma le risorse naturali (terra, acqua, luce solare, semi, animali) in materia prima alimentare: grano, latte, carne, frutta, verdura, pesce.
 
-È il primo e spesso il più vulnerabile anello della filiera. Le sue entrate dipendono dal meteo, dalle quotazioni dei mercati internazionali e dal prezzo a cui riesce a vendere il prodotto al passo successivo. In molti Paesi, il produttore primario riceve tra il 5% e il 15% del prezzo finale che il consumatore paga al supermercato. Per una bottiglia di olio d'oliva da sei euro, l'olivicoltore potrebbe ricavarne meno di sessanta centesimi.
+==È il primo e spesso il più vulnerabile anello della filiera.== Le sue entrate dipendono dal meteo, dalle quotazioni dei mercati internazionali e dal prezzo a cui riesce a vendere il prodotto al passo successivo. In molti Paesi, il produttore primario riceve tra il 5% e il 15% del prezzo finale che il consumatore paga al supermercato. Per una bottiglia di olio d'oliva da sei euro, l'olivicoltore potrebbe ricavarne meno di sessanta centesimi.
 
-Il produttore primario lavora spesso con margini ridottissimi. Le crisi climatiche — siccità, gelate tardive, grandinate — possono azzerare un intero raccolto.
+==Il produttore primario lavora spesso con margini ridottissimi.== Le crisi climatiche — siccità, gelate tardive, grandinate — possono azzerare un intero raccolto.
 
 ---
 
@@ -103,7 +103,7 @@ Il produttore primario lavora spesso con margini ridottissimi. Le crisi climatic
 
 Quasi nessun alimento arriva sugli scaffali nella forma in cui è stato raccolto. Il grano diventa farina, poi pasta, poi pasta pronta al forno. Il latte diventa yogurt, formaggio, panna, burro, latte scremato. Il pomodoro diventa pelato, passata, concentrato, sugo pronto.
 
-Questa fase si chiama **trasformazione alimentare** ed è svolta dall'industria alimentare: mulini, pastifici, caseifici, macelli, conservifici, industrie dolciarie.
+==Questa fase si chiama **trasformazione alimentare** ed è svolta dall'industria alimentare: mulini, pastifici, caseifici, macelli, conservifici, industrie dolciarie.==
 
 La trasformazione ha tre funzioni principali:
 - **Conservazione:** trasformare un prodotto deperibile in uno con vita più lunga (latte fresco → latte UHT, fragole fresche → marmellata).
@@ -116,7 +116,7 @@ L'Italia è uno dei Paesi con l'industria alimentare più sviluppata al mondo. I
 
 #### 3. Il distributore: la logistica del cibo
 
-Tra il trasformatore e il punto vendita c'è un anello invisibile ma fondamentale: il **distributore**. La sua funzione è trasportare le merci dal punto di produzione al punto di vendita, gestendo magazzini, flotte di veicoli e piattaforme logistiche.
+==Tra il trasformatore e il punto vendita c'è un anello invisibile ma fondamentale: il **distributore**.== La sua funzione è trasportare le merci dal punto di produzione al punto di vendita, gestendo magazzini, flotte di veicoli e piattaforme logistiche.
 
 La distribuzione alimentare è uno dei sistemi logistici più complessi che esistano, perché il cibo ha requisiti molto diversi da qualsiasi altra merce:
 
@@ -134,7 +134,7 @@ Pensa a un vasetto di yogurt. Viene prodotto in uno stabilimento a 4°C. Viene c
 
 Se in qualsiasi punto di questa catena la temperatura sale sopra i 6-8°C per più di due ore, i batteri presenti nello yogurt iniziano a moltiplicarsi rapidamente. La struttura dello yogurt si deteriora, i sapori cambiano, il rischio per la salute aumenta.
 
-Questo sistema — che mantiene la temperatura controllata dal produttore al consumatore — si chiama **catena del freddo** (in inglese: *cold chain*).
+==Questo sistema — che mantiene la temperatura controllata dal produttore al consumatore — si chiama **catena del freddo** (in inglese: *cold chain*).==
 
 Se la catena del freddo si spezza — per un guasto al frigorifero del camion, per un'interruzione dell'energia elettrica in magazzino, per una cella frigorifera difettosa al supermercato — il prodotto va scartato. Questo genera costi economici enormi e sprechi alimentari evitabili.
 
@@ -159,7 +159,7 @@ I **mercati locali** e i negozi di vicinato hanno meno potere negoziale ma perme
 
 #### 5. Il consumatore: tu
 
-L'ultimo anello sei tu. Ma non sei un anello passivo: ogni scelta di acquisto manda un segnale a tutta la filiera. Se i consumatori comprano prodotti locali, la filiera si accorcia. Se scelgono biologico, gli agricoltori sono incentivati a ridurre i pesticidi. Se comprano solo prodotti a basso costo senza chiedersi da dove vengono, la pressione sui prezzi si trasferisce interamente sui produttori primari.
+L'ultimo anello sei tu. ==Ma non sei un anello passivo: ogni scelta di acquisto manda un segnale a tutta la filiera.== Se i consumatori comprano prodotti locali, la filiera si accorcia. Se scelgono biologico, gli agricoltori sono incentivati a ridurre i pesticidi. Se comprano solo prodotti a basso costo senza chiedersi da dove vengono, la pressione sui prezzi si trasferisce interamente sui produttori primari.
 
 Il consumatore è l'unico attore della filiera che non negozia: paga il prezzo esposto. Ma è anche l'unico che, aggregandosi con altri consumatori, può influenzare le scelte dell'intera catena.
 
@@ -167,20 +167,20 @@ Il consumatore è l'unico attore della filiera che non negozia: paga il prezzo e
 
 ### Food miles: quanto cammina il tuo cibo?
 
-**Food miles** (letteralmente *miglia del cibo*) è il termine usato per indicare la distanza che un alimento percorre dalla produzione al consumo. È una misura dell'impatto ambientale del trasporto alimentare.
+==**Food miles** (letteralmente *miglia del cibo*) è il termine usato per indicare la distanza che un alimento percorre dalla produzione al consumo.== È una misura dell'impatto ambientale del trasporto alimentare.
 
 Alcuni dati concreti:
 - I fagiolini freschi venduti in inverno nei supermercati europei provengono spesso dal Kenya, percorrendo oltre 6.000 km in aereo (il trasporto aereo è il più inquinante per kg di merce trasportata).
 - Le fragole fuori stagione nei supermercati italiani vengono spesso da Marocco o Spagna meridionale: 2.000-3.000 km.
 - Una mela italiana raccolta in Trentino e venduta a Roma ha percorso 600 km — molto meno, ma non zero.
 
-Il problema non è solo la distanza: è il **mezzo di trasporto**. Un container navale porta migliaia di tonnellate con un'emissione per tonnellata-km molto bassa. Un aereo cargo trasporta pochi quintali con emissioni altissime per tonnellata-km.
+==Il problema non è solo la distanza: è il **mezzo di trasporto**.== Un container navale porta migliaia di tonnellate con un'emissione per tonnellata-km molto bassa. Un aereo cargo trasporta pochi quintali con emissioni altissime per tonnellata-km.
 
 ---
 
 ### Filiera lunga vs. filiera corta
 
-Esiste una alternativa alla filiera globale: la **filiera corta**.
+==Esiste una alternativa alla filiera globale: la **filiera corta**.==
 
 La filiera corta è quella in cui il numero di intermediari tra produttore e consumatore è ridotto al minimo — idealmente zero o uno. I modelli più diffusi sono:
 
@@ -198,9 +198,9 @@ I limiti: la disponibilità è stagionale (d'inverno trovi quello che cresce d'i
 
 ### Il commercio equo e solidale: quando la filiera globale è anche giusta
 
-Non tutta la filiera globale è uguale. Il **commercio equo e solidale** (in inglese: *fair trade*) è un sistema di certificazione e commercio che garantisce:
+Non tutta la filiera globale è uguale. ==Il **commercio equo e solidale** (in inglese: *fair trade*) è un sistema di certificazione e commercio che garantisce:==
 
-- Un **prezzo minimo garantito** all'agricoltore, indipendente dalle fluttuazioni del mercato.
+- ==Un **prezzo minimo garantito** all'agricoltore, indipendente dalle fluttuazioni del mercato.==
 - Un **premio sociale** — una quota aggiuntiva che va alla comunità del produttore (per scuole, pozzi, infrastrutture).
 - **Standard di lavoro dignitosi**: no al lavoro minorile, orari equi, sicurezza sul lavoro.
 - **Pratiche agricole sostenibili**.

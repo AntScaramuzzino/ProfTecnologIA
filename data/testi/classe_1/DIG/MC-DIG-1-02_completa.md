@@ -30,7 +30,7 @@ Cerchi una cosa online e in un secondo hai milioni di risultati. Trovare non è 
 
 **Che cosa fa davvero un motore di ricerca**
 
-Quando cerchi, Google non legge tutto internet in quel momento. Consulta un **indice**, un elenco enorme preparato prima. Poi mette i risultati in ordine: questa classifica si chiama **ranking**.
+Quando cerchi, Google non legge tutto internet in quel momento. Consulta un **indice**, un elenco enorme preparato prima. ==Poi mette i risultati in ordine: questa classifica si chiama **ranking**.==
 
 Attenzione però. Il motore di ricerca guarda quanto una pagina è popolare e citata. Non sa se dice la verità. Il primo risultato non è per forza quello giusto.
 
@@ -42,7 +42,7 @@ Per valutare quello che trovi ti bastano quattro mosse. Insieme si chiamano **SI
 
 1. **Fermati.** Il titolo ti ha colpito? È fatto apposta. Aspetta cinque secondi prima di credere o condividere.
 2. **Indaga la fonte.** Chi l'ha scritto? Su che sito? Quando?
-3. **Cerca altrove.** Se una notizia è vera e importante, la trovi su più giornali diversi. Se la trovi solo su un sito sconosciuto, è un campanello d'allarme.
+3. **Cerca altrove.** Se una notizia è vera e importante, la trovi su più giornali diversi. ==Se la trovi solo su un sito sconosciuto, è un campanello d'allarme.==
 4. **Risali all'origine.** L'articolo cita un numero o una frase? Vai a vedere da dove viene. Spesso, passando di mano in mano, è cambiato.
 
 **Un caso vero: la banana radioattiva**
@@ -51,17 +51,17 @@ Gira da anni questa frase: "Le banane sono radioattive e fanno male". Proviamo l
 
 È vero che le banane contengono una minuscola quantità di una sostanza radioattiva naturale, il potassio-40. Ma è così poca che non ha nessun effetto sulla salute. Quella sostanza c'è già anche nel tuo corpo.
 
-Quindi la frase parte da un fatto vero e arriva a una conclusione falsa. Le bufale migliori funzionano proprio così.
+==Quindi la frase parte da un fatto vero e arriva a una conclusione falsa.== Le bufale migliori funzionano proprio così.
 
 **Come è fatta una fake news**
 
-Una **fake news** è una notizia falsa che sembra vera. Di solito ha un pezzetto di verità, un titolo che fa arrabbiare o spaventare, e un aspetto da giornale serio.
+==Una **fake news** è una notizia falsa che sembra vera.== Di solito ha un pezzetto di verità, un titolo che fa arrabbiare o spaventare, e un aspetto da giornale serio.
 
 Si diffonde perché siamo fatti così: una notizia che allarma ci fa venire voglia di avvisare gli altri.
 
 **Il trucco che il cervello fa a tutti**
 
-Tendiamo a credere subito alle cose che confermano quello che pensiamo già, e a scartare le altre. Si chiama **bias di conferma**, e capita a tutti, anche agli adulti.
+Tendiamo a credere subito alle cose che confermano quello che pensiamo già, e a scartare le altre. ==Si chiama **bias di conferma**, e capita a tutti, anche agli adulti.==
 
 Usalo come sveglia. Se una notizia ti piace moltissimo o ti fa arrabbiare moltissimo, è il momento di controllare.
 
@@ -85,7 +85,7 @@ L'ultima parte dell'indirizzo di un sito si chiama **dominio**. I siti .gov sono
 
 ### Internet ha un sacco di informazioni. Non tutte sono vere.
 
-Apri un browser e cerca qualsiasi cosa — la storia di Napoleone, come si fa la pasta al pomodoro, gli effetti dello zucchero sulla salute. In un secondo ottieni milioni di risultati. Il problema non è trovare informazioni: è capire quali sono affidabili.
+Apri un browser e cerca qualsiasi cosa — la storia di Napoleone, come si fa la pasta al pomodoro, gli effetti dello zucchero sulla salute. In un secondo ottieni milioni di risultati. ==Il problema non è trovare informazioni: è capire quali sono affidabili.==
 
 Internet non ha un filtro editoriale universale. Chiunque può pubblicare qualsiasi cosa, con qualsiasi titolo, da qualsiasi sito. Accanto a un articolo scientifico scritto da un professore universitario, può comparire una pagina scritta da qualcuno che ha inventato tutto. Il layout è quasi identico. La differenza è invisibile — a meno che tu non sappia dove guardare.
 
@@ -95,13 +95,13 @@ Questa MC ti dà gli strumenti per guardare nel posto giusto.
 
 ### Come funziona un motore di ricerca
 
-Quando scrivi qualcosa su Google, non stai cercando in internet in tempo reale. Stai cercando in un **indice** — un elenco enorme costruito in anticipo da Google.
+Quando scrivi qualcosa su Google, non stai cercando in internet in tempo reale. ==Stai cercando in un **indice** — un elenco enorme costruito in anticipo da Google.==
 
 Il processo ha tre fasi:
 
 **1. Il crawling — i "ragni" esplorano il web**
 
-Google ha programmi automatici chiamati **crawler** (o spider, cioè ragni) che girano continuamente per il web, seguendo i link da una pagina all'altra. Le pagine accessibili possono essere lette e analizzate, ma non tutte quelle trovate vengono necessariamente indicizzate. Google descrive il proprio indice come una raccolta di centinaia di miliardi di pagine: il numero cambia nel tempo.
+==Google ha programmi automatici chiamati **crawler** (o spider, cioè ragni) che girano continuamente per il web, seguendo i link da una pagina all'altra.== Le pagine accessibili possono essere lette e analizzate, ma non tutte quelle trovate vengono necessariamente indicizzate. Google descrive il proprio indice come una raccolta di centinaia di miliardi di pagine: il numero cambia nel tempo.
 
 **2. L'indicizzazione — ogni pagina viene catalogata**
 
@@ -122,7 +122,7 @@ Quando cerchi qualcosa, Google non ti mostra semplicemente le pagine che conteng
 
 ### Operatori di ricerca avanzata: cerca meglio
 
-Sai già cercare su Google. Ma probabilmente non usi gli **operatori di ricerca** — comandi speciali che rendono le ricerche molto più precise.
+Sai già cercare su Google. ==Ma probabilmente non usi gli **operatori di ricerca** — comandi speciali che rendono le ricerche molto più precise.==
 
 **Virgolette `" "`** — cerca la frase esatta.
 - Senza virgolette: `riciclaggio plastica Italia` → risultati che contengono queste parole in qualsiasi ordine.
@@ -149,7 +149,7 @@ Sai già cercare su Google. Ma probabilmente non usi gli **operatori di ricerca*
 
 ### Come si valuta una fonte: il metodo SIFT
 
-Trovare una pagina è solo il primo passo. Il secondo è capire se ci puoi fidare. Per farlo, usi un metodo in 4 passaggi chiamato **SIFT** — acronimo inglese che in italiano si traduce così:
+Trovare una pagina è solo il primo passo. Il secondo è capire se ci puoi fidare. ==Per farlo, usi un metodo in 4 passaggi chiamato **SIFT** — acronimo inglese che in italiano si traduce così:==
 
 ---
 
@@ -157,7 +157,7 @@ Trovare una pagina è solo il primo passo. Il secondo è capire se ci puoi fidar
 
 Prima di leggere, condividere o credere a qualcosa che trovi online: **fermati**. Non reagire immediatamente. Il titolo ti ha colpito? È pensato per farlo. Le fake news usano titoli forti, emotivi, spesso esagerati, progettati per far scattare una reazione istintiva prima che tu possa pensare.
 
-La pausa è il passo più difficile ma il più importante. Dura anche solo 5 secondi.
+==La pausa è il passo più difficile ma il più importante.== Dura anche solo 5 secondi.
 
 ---
 
@@ -178,7 +178,7 @@ Non devi passare ore su questo. Di solito bastano 2-3 minuti per capire se una f
 
 La fonte ti sembra dubbia, o hai trovato qualcosa di sorprendente? Non fermarti a quella pagina: cerca la stessa informazione su altre fonti.
 
-Se una notizia è vera e importante, la riportano molte testate indipendenti. Se la trovi solo su un sito sconosciuto, è un segnale d'allarme.
+==Se una notizia è vera e importante, la riportano molte testate indipendenti.== Se la trovi solo su un sito sconosciuto, è un segnale d'allarme.
 
 Una tecnica specifica si chiama **lateral reading** (lettura laterale): invece di leggere in profondità una pagina, apri nuove schede e cerca chi parla di quella fonte — se è affidabile, trovi menzioni positive; se è inaffidabile, trovi probabilmente smentite o avvertimenti.
 
@@ -196,7 +196,7 @@ Se l'articolo cita uno studio, cerca il titolo dello studio originale su Google 
 
 ### I domini: cosa dice l'indirizzo di un sito
 
-L'indirizzo web di un sito contiene informazioni sulla sua natura. Non è una garanzia assoluta, ma è un punto di partenza.
+L'indirizzo web di un sito contiene informazioni sulla sua natura. ==Non è una garanzia assoluta, ma è un punto di partenza.==
 
 **`.gov`** — siti di governi e istituzioni governative (es. nasa.gov, governo.it). Contenuto ufficiale — ma ricorda che anche i governi hanno interessi politici.
 
@@ -214,13 +214,13 @@ L'indirizzo web di un sito contiene informazioni sulla sua natura. Non è una ga
 
 ### Cos'è una fake news: come nasce e perché si diffonde
 
-**Fake news** — cioè notizie false — non sono un fenomeno nuovo. La propaganda, le voci false, le notizie inventate esistono da millenni. Ma internet le ha rese più veloci, più economiche da produrre e potenzialmente in grado di raggiungere miliardi di persone.
+==**Fake news** — cioè notizie false — non sono un fenomeno nuovo.== La propaganda, le voci false, le notizie inventate esistono da millenni. Ma internet le ha rese più veloci, più economiche da produrre e potenzialmente in grado di raggiungere miliardi di persone.
 
 **Come nasce una fake news:**
 
 Una fake news efficace ha quasi sempre queste caratteristiche:
 
-1. **Un nucleo di verità:** spesso inizia da un fatto reale, distorto o estrapolato dal contesto. È più credibile del falso assoluto.
+1. ==**Un nucleo di verità:** spesso inizia da un fatto reale, distorto o estrapolato dal contesto.== È più credibile del falso assoluto.
 2. **Un titolo emotivamente forte:** la ricerca mostra che le notizie che suscitano paura, rabbia o indignazione si diffondono molto più velocemente di quelle neutrali.
 3. **Un'estetica credibile:** layout simile a quello di un giornale reale, immagini convincenti, tono professionale.
 4. **Un meccanismo di risonanza:** la notizia conferma qualcosa che il lettore già crede o teme — è più facile da accettare perché "suona vera" in base alle nostre convinzioni preesistenti.
@@ -237,7 +237,7 @@ Studi dell'MIT (Massachusetts Institute of Technology) del 2018 hanno analizzato
 
 C'è un meccanismo psicologico che rende tutti — nessuno escluso — più vulnerabili alle fake news. Si chiama **bias di conferma** (*confirmation bias* in inglese).
 
-Il bias di conferma è la tendenza a cercare, notare e ricordare le informazioni che confermano quello che già crediamo — e a ignorare o sminuire quelle che lo contraddicono.
+==Il bias di conferma è la tendenza a cercare, notare e ricordare le informazioni che confermano quello che già crediamo — e a ignorare o sminuire quelle che lo contraddicono.==
 
 Esempio concreto: se credi che lo zucchero faccia male, tendi a condividere gli articoli che lo confermano ("Lo zucchero causa X") e a passare oltre quelli che presentano un quadro più complesso. Non è malafede — è un meccanismo automatico del cervello, evolutivamente utile (pensare velocemente in base alle nostre esperienze passate), ma problematico quando si tratta di valutare informazioni nuove e complesse.
 
@@ -255,13 +255,13 @@ Prima di condividere qualcosa, chiediti: "Questa notizia mi fa arrabbiare o mi p
 
 Hai mai notato che i tuoi feed sui social sembrano sempre pieni di persone che la pensano come te?
 
-Non è un caso. I social network usano **algoritmi di raccomandazione** progettati per mostrarti contenuti simili a quelli con cui hai interagito in precedenza: video, articoli, pagine che ti hanno tenuto sul sito più a lungo. Più interagisci con certi contenuti, più ne ricevi di simili.
+Non è un caso. ==I social network usano **algoritmi di raccomandazione** progettati per mostrarti contenuti simili a quelli con cui hai interagito in precedenza: video, articoli, pagine che ti hanno tenuto sul sito più a lungo.== Più interagisci con certi contenuti, più ne ricevi di simili.
 
-Il risultato è la **filter bubble** (bolla di filtraggio): ciascuno di noi vede una versione personalizzata di internet, curata dall'algoritmo. Chi ha interagito con contenuti di un certo tipo politico, medico o culturale si trova sempre più spesso esposto a quei contenuti — e sempre meno a punti di vista diversi.
+==Il risultato è la **filter bubble** (bolla di filtraggio): ciascuno di noi vede una versione personalizzata di internet, curata dall'algoritmo.== Chi ha interagito con contenuti di un certo tipo politico, medico o culturale si trova sempre più spesso esposto a quei contenuti — e sempre meno a punti di vista diversi.
 
 La **echo chamber** (camera d'eco) è la conseguenza sociale: quando tutti nella tua rete online la pensano allo stesso modo (perché l'algoritmo ti ha connesso con persone simili a te), le tue idee vengono amplificate e raramente messe in discussione. Hai la sensazione che "tutti la pensino così" — ma è solo l'effetto della bolla.
 
-**Conseguenza pratica:** la stessa ricerca su Google non dà gli stessi risultati a tutti. Google personalizza i risultati in base alla tua cronologia di ricerca, posizione geografica, dispositivo. Due persone che cercano la stessa cosa possono vedere risultati diversi — ordinati in modo diverso.
+==**Conseguenza pratica:** la stessa ricerca su Google non dà gli stessi risultati a tutti.== Google personalizza i risultati in base alla tua cronologia di ricerca, posizione geografica, dispositivo. Due persone che cercano la stessa cosa possono vedere risultati diversi — ordinati in modo diverso.
 
 ---
 

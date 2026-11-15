@@ -311,11 +311,13 @@ function stripRubricaFromBody(body: string): string {
     .trim();
 }
 
-// ── Renderer inline Markdown (bold/italic) — senza dipendenze ────────────────
+// ── Renderer inline Markdown (bold/italic/evidenziatore) — senza dipendenze ──
+// ==testo== → tratto di evidenziatore giallo sui concetti chiave (usato in ESPLORA).
+// Il contenuto evidenziato può contenere grassetti: viene reso in modo ricorsivo.
 
 function renderInline(value: string): React.ReactNode {
   const nodes: React.ReactNode[] = [];
-  const pattern = /(\*\*[^*\n]+\*\*|\*[^*\n]+\*)/g;
+  const pattern = /(==[^=\n]+==|\*\*[^*\n]+\*\*|\*[^*\n]+\*)/g;
   let lastIndex = 0;
   let match: RegExpExecArray | null;
   while ((match = pattern.exec(value)) !== null) {
@@ -323,13 +325,19 @@ function renderInline(value: string): React.ReactNode {
       nodes.push(value.slice(lastIndex, match.index).replace(/\*+/g, ""));
     }
     const token = match[0];
-    const strong = token.startsWith("**");
-    const text = strong ? token.slice(2, -2) : token.slice(1, -1);
-    nodes.push(
-      strong
-        ? <strong key={match.index} className="font-black text-slate-950">{text}</strong>
-        : <em key={match.index} className="text-slate-800">{text}</em>,
-    );
+    if (token.startsWith("==")) {
+      nodes.push(
+        <mark key={match.index} className="evidenziatore">{renderInline(token.slice(2, -2))}</mark>,
+      );
+    } else {
+      const strong = token.startsWith("**");
+      const text = strong ? token.slice(2, -2) : token.slice(1, -1);
+      nodes.push(
+        strong
+          ? <strong key={match.index} className="font-black text-slate-950">{text}</strong>
+          : <em key={match.index} className="text-slate-800">{text}</em>,
+      );
+    }
     lastIndex = match.index + token.length;
   }
   if (lastIndex < value.length) nodes.push(value.slice(lastIndex).replace(/\*+/g, ""));

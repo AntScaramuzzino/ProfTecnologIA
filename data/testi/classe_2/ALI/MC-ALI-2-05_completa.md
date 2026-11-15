@@ -27,12 +27,12 @@ Il **packaging alimentare** — l'imballaggio del cibo — è uno dei sistemi te
 
 ### 🎯 In breve
 
-La confezione di un alimento non è solo una scatola. L'insieme di ciò che avvolge il cibo si chiama **packaging**, o imballaggio, e fa cinque lavori contemporaneamente.
+La confezione di un alimento non è solo una scatola. ==L'insieme di ciò che avvolge il cibo si chiama **packaging**, o imballaggio, e fa cinque lavori contemporaneamente.==
 
 **I cinque lavori di una confezione**
 
 1. **Protegge** dagli urti. Le uova hanno un posto ciascuna per non rompersi.
-2. **Conserva**. Fa da **barriera** contro aria, umidità e microbi. Un petto di pollo in una confezione normale dura 3-4 giorni; in una con l'aria sostituita da altri gas dura più di una settimana.
+2. **Conserva**. ==Fa da **barriera** contro aria, umidità e microbi.== Un petto di pollo in una confezione normale dura 3-4 giorni; in una con l'aria sostituita da altri gas dura più di una settimana.
 3. **Informa**. Per legge deve riportare ingredienti, allergeni, scadenza, peso e produttore.
 4. **Convince**. Colori, foto e scritte servono a farti scegliere quel prodotto.
 5. **Facilita il trasporto**. Le scatole sono fatte per impilarsi senza sprecare spazio.
@@ -52,11 +52,11 @@ Attenzione al quarto lavoro. Le informazioni obbligatorie sono controllate. Molt
 
 Il problema nasce quando i materiali si mescolano. Il cartone del latte è fatto di strati di carta, plastica e alluminio incollati. Funziona benissimo, ma è difficile da separare e quindi da riciclare. Lo stesso vale per il sacchetto delle patatine.
 
-A proposito: quel sacchetto è gonfio perché dentro c'è un gas, l'azoto, che protegge le patatine dall'ossigeno e fa da cuscino contro gli urti. Una ragione tecnica c'è.
+==A proposito: quel sacchetto è gonfio perché dentro c'è un gas, l'azoto, che protegge le patatine dall'ossigeno e fa da cuscino contro gli urti.== Una ragione tecnica c'è.
 
 **Quando è troppo**
 
-L'**over-packaging** è l'imballaggio esagerato: biscotti incartati uno a uno dentro un'altra confezione, frutta già sbucciata in vaschette di plastica. Spreca materiale e produce rifiuti che si potevano evitare. In Italia gli imballaggi sono una parte molto grande dei rifiuti di casa.
+==L'**over-packaging** è l'imballaggio esagerato: biscotti incartati uno a uno dentro un'altra confezione, frutta già sbucciata in vaschette di plastica.== Spreca materiale e produce rifiuti che si potevano evitare. In Italia gli imballaggi sono una parte molto grande dei rifiuti di casa.
 
 **Le alternative**
 
@@ -89,7 +89,7 @@ Esistono cinque funzioni principali, e ognuna richiede scelte tecniche specifich
 
 #### Funzione 1: Protezione meccanica
 
-Il packaging protegge il cibo dai danni fisici durante il trasporto e la movimentazione. Le uova vengono portate in contenitori con alveoli individuali perché ogni uovo ha bisogno di ammortizzazione. Le fragole vengono vendute in cestini rigidi con fondo traforato perché si schiaccerebbero se fossero in un sacchetto. Le patatine vengono confezionate con azoto all'interno (non aria) per creare un "cuscino" protettivo che evita che si sbriciolino.
+==Il packaging protegge il cibo dai danni fisici durante il trasporto e la movimentazione.== Le uova vengono portate in contenitori con alveoli individuali perché ogni uovo ha bisogno di ammortizzazione. Le fragole vengono vendute in cestini rigidi con fondo traforato perché si schiaccerebbero se fossero in un sacchetto. Le patatine vengono confezionate con azoto all'interno (non aria) per creare un "cuscino" protettivo che evita che si sbriciolino.
 
 Senza protezione meccanica, una percentuale significativa del cibo si rovinerebbe prima di arrivare al consumatore — aumentando gli sprechi alimentari.
 
@@ -97,7 +97,7 @@ Senza protezione meccanica, una percentuale significativa del cibo si rovinerebb
 
 #### Funzione 2: Conservazione e barriera
 
-Il packaging crea una **barriera** tra il cibo e l'ambiente esterno, rallentando o bloccando i processi che deteriorano l'alimento: ossidazione, contaminazione microbica, perdita di umidità, assorbimento di odori esterni.
+==Il packaging crea una **barriera** tra il cibo e l'ambiente esterno, rallentando o bloccando i processi che deteriorano l'alimento: ossidazione, contaminazione microbica, perdita di umidità, assorbimento di odori esterni.==
 
 L'ossigeno dell'aria fa ossidare i grassi (irrancidimento), fa annerire la frutta tagliata, fa deteriorare il colore e il sapore di molti prodotti. Il packaging sottovuoto o in atmosfera modificata (con gas inerti come azoto o CO₂) elimina o riduce drasticamente l'ossigeno, allungando enormemente la vita del prodotto.
 
@@ -107,7 +107,7 @@ Un petto di pollo in un imballaggio standard dura 3-4 giorni in frigorifero. Lo 
 
 #### Funzione 3: Informazione e identificazione
 
-Il packaging è il principale mezzo di comunicazione tra il produttore e il consumatore. Per legge, deve riportare una serie di informazioni obbligatorie (Regolamento UE 1169/2011):
+==Il packaging è il principale mezzo di comunicazione tra il produttore e il consumatore.== Per legge, deve riportare una serie di informazioni obbligatorie (Regolamento UE 1169/2011):
 
 - Denominazione del prodotto
 - Elenco degli ingredienti in ordine decrescente di peso
@@ -130,25 +130,25 @@ Accanto alle informazioni obbligatorie, il packaging porta anche immagini, color
 
 La regolamentazione europea vieta le affermazioni false o ingannevoli, ma lascia spazio a molti termini che suonano positivi senza avere una definizione tecnica precisa. "Naturale" per esempio non ha una definizione legale nel contesto alimentare europeo — può essere scritto su quasi tutto.
 
-Saper distinguere le informazioni obbligatorie (verificabili e regolamentate) dai messaggi di marketing (persuasivi ma non sempre precisi) è una delle competenze chiave del consumatore informato.
+==Saper distinguere le informazioni obbligatorie (verificabili e regolamentate) dai messaggi di marketing (persuasivi ma non sempre precisi) è una delle competenze chiave del consumatore informato.==
 
 ---
 
 #### Funzione 5: Facilitazione della distribuzione
 
-Il packaging permette la movimentazione efficiente degli alimenti nella catena logistica. Un pallet standard (80 × 120 cm) carica confezioni progettate per incastrarsi perfettamente senza spazi vuoti. Un singolo container navale può trasportare migliaia di pallet. Il codice a barre (o QR) sul packaging permette il tracciamento automatizzato di ogni singola confezione in magazzino, in transito e al punto di vendita.
+==Il packaging permette la movimentazione efficiente degli alimenti nella catena logistica.== Un pallet standard (80 × 120 cm) carica confezioni progettate per incastrarsi perfettamente senza spazi vuoti. Un singolo container navale può trasportare migliaia di pallet. Il codice a barre (o QR) sul packaging permette il tracciamento automatizzato di ogni singola confezione in magazzino, in transito e al punto di vendita.
 
 ---
 
 ### I materiali del packaging: pregi e problemi ambientali
 
-Non esiste un materiale di packaging ideale: ogni scelta ha vantaggi tecnici e svantaggi ambientali che devono essere valutati insieme.
+==Non esiste un materiale di packaging ideale: ogni scelta ha vantaggi tecnici e svantaggi ambientali che devono essere valutati insieme.==
 
 ---
 
 #### Plastica
 
-La plastica è il materiale di packaging più usato al mondo per il cibo. I motivi sono evidenti: è leggerissima, impermeabile, modellabile in qualsiasi forma, economica da produrre, trasparente o colorabile a piacere. Permette di creare imballaggi molto leggeri che proteggono bene il prodotto — il che riduce il peso del trasporto e quindi le emissioni.
+La plastica è il materiale di packaging più usato al mondo per il cibo. I motivi sono evidenti: è leggerissima, impermeabile, modellabile in qualsiasi forma, economica da produrre, trasparente o colorabile a piacere. ==Permette di creare imballaggi molto leggeri che proteggono bene il prodotto — il che riduce il peso del trasporto e quindi le emissioni.==
 
 I problemi ambientali sono altrettanto evidenti. La plastica deriva dal petrolio, una risorsa non rinnovabile. La maggior parte delle plastiche per alimenti — soprattutto i film multistrato, i sacchetti multimateriale, i contenitori con più tipi di plastica uniti insieme — non è riciclabile con i sistemi attuali. Quando finisce nell'ambiente, si frammenta in **microplastiche** che persistono per secoli.
 
@@ -165,7 +165,7 @@ I tipi di plastica più comuni nel packaging alimentare:
 
 #### Vetro
 
-Il vetro è impermeabile, inerte (non rilascia sostanze chimiche nel cibo), trasparente, riciclabile all'infinito senza perdita di qualità. Una bottiglia di vetro riciclata diventa una nuova bottiglia con le stesse proprietà. In Italia, il vetro viene riciclato all'80%.
+==Il vetro è impermeabile, inerte (non rilascia sostanze chimiche nel cibo), trasparente, riciclabile all'infinito senza perdita di qualità.== Una bottiglia di vetro riciclata diventa una nuova bottiglia con le stesse proprietà. In Italia, il vetro viene riciclato all'80%.
 
 I problemi: il vetro è pesante (aumenta il peso del trasporto), fragile, richiede molta energia per essere prodotto (fusione a 1.500°C). Una bottiglia di vetro da 75 cl pesa circa 400-500 g — molto più del suo contenuto nel caso di prodotti leggeri.
 
@@ -185,15 +185,15 @@ Il metallo offre un'ottima barriera a luce, ossigeno e umidità — i barattoli 
 
 #### Carta e cartone
 
-La carta e il cartone sono rinnovabili (vengono da alberi o da carta riciclata), biodegradabili, riciclabili per 5-7 cicli. Sono eccellenti per imballaggi secondari (la scatola che contiene un altro imballaggio), per prodotti asciutti come pasta, cereali, biscotti.
+==La carta e il cartone sono rinnovabili (vengono da alberi o da carta riciclata), biodegradabili, riciclabili per 5-7 cicli.== Sono eccellenti per imballaggi secondari (la scatola che contiene un altro imballaggio), per prodotti asciutti come pasta, cereali, biscotti.
 
-Il problema principale: la carta non è impermeabile da sola. Per proteggere gli alimenti dall'umidità, viene spesso accoppiata con polietilene (carta plastificata) o alluminio (tetrapak). Questi materiali compositi — carta + plastica + alluminio — sono molto difficili da riciclare.
+==Il problema principale: la carta non è impermeabile da sola.== Per proteggere gli alimenti dall'umidità, viene spesso accoppiata con polietilene (carta plastificata) o alluminio (tetrapak). Questi materiali compositi — carta + plastica + alluminio — sono molto difficili da riciclare.
 
 ---
 
 ### L'over-packaging: quando l'imballaggio è il problema
 
-**Over-packaging** (letteralmente *imballaggio eccessivo*) è il termine per descrivere imballaggi sproporzionati rispetto alle reali necessità di protezione, conservazione o trasporto del prodotto.
+==**Over-packaging** (letteralmente *imballaggio eccessivo*) è il termine per descrivere imballaggi sproporzionati rispetto alle reali necessità di protezione, conservazione o trasporto del prodotto.==
 
 Esempi reali e documentati:
 - Singoli cucchiai di plastica venduti in confezioni singole, avvolti in cellophane individuale, inseriti in una scatola di cartone.
@@ -212,7 +212,7 @@ Dal 2025, la normativa europea (Regolamento UE sull'imballaggio e i rifiuti di i
 
 Il settore del packaging sta cercando soluzioni più sostenibili. Alcune sono già disponibili e in commercio oggi.
 
-**Bioplastiche:** plastiche prodotte da materiali rinnovabili (mais, canna da zucchero, amido di patata) invece che dal petrolio. Le bioplastiche hanno due sottocategorie importanti:
+==**Bioplastiche:** plastiche prodotte da materiali rinnovabili (mais, canna da zucchero, amido di patata) invece che dal petrolio.== Le bioplastiche hanno due sottocategorie importanti:
 - *Biodegradabili e compostabili*: si decompongono in condizioni controllate di compostaggio industriale. Attenzione: non si degradano nell'ambiente naturale (mare, bosco) come erroneamente si crede. Richiedono impianti specifici.
 - *Non biodegradabili ma bio-based*: fatte da materiali rinnovabili ma non degradabili — un miglioramento sulla fonte, ma non sulla fine vita.
 

@@ -22,13 +22,13 @@ Non solo il tuo telefono. Il termostato, il router, il rilevatore di fumo, la TV
 
 ### 🎯 In breve
 
-Il termostato, il contatore, il braccialetto contapassi, il televisore. Oggi i dispositivi collegati a internet sono molti più delle persone. Misurano, trasmettono, a volte decidono. Questa rete di oggetti ha un nome: **Internet delle cose**, o IoT.
+Il termostato, il contatore, il braccialetto contapassi, il televisore. Oggi i dispositivi collegati a internet sono molti più delle persone. Misurano, trasmettono, a volte decidono. ==Questa rete di oggetti ha un nome: **Internet delle cose**, o IoT.==
 
 **Dal mondo fisico al numero**
 
-Un **sensore** rileva una grandezza fisica, come temperatura, luce o movimento, e la trasforma in un segnale elettrico. Quel segnale è continuo, mentre un computer capisce solo numeri. Serve una conversione, e la si fa in due mosse.
+==Un **sensore** rileva una grandezza fisica, come temperatura, luce o movimento, e la trasforma in un segnale elettrico.== Quel segnale è continuo, mentre un computer capisce solo numeri. Serve una conversione, e la si fa in due mosse.
 
-- Il **campionamento**: il segnale viene misurato a intervalli regolari. Dieci volte al secondo, cento, mille.
+- ==Il **campionamento**: il segnale viene misurato a intervalli regolari.== Dieci volte al secondo, cento, mille.
 - La precisione di ogni misura: quanti valori diversi può distinguere.
 
 Più misure al secondo e più precisione vogliono dire dati migliori. E anche più dati da trasmettere e conservare.
@@ -39,7 +39,7 @@ Più misure al secondo e più precisione vogliono dire dati migliori. E anche pi
 
 Un sistema IoT è fatto come un palazzo di quattro piani.
 
-1. **Gli oggetti**. I sensori misurano. Gli **attuatori** agiscono: accendono una luce, aprono una valvola, fanno suonare un allarme.
+1. **Gli oggetti**. I sensori misurano. ==Gli **attuatori** agiscono: accendono una luce, aprono una valvola, fanno suonare un allarme.==
 2. **La connessione**. Come gli oggetti comunicano: Wi-Fi, Bluetooth, rete del telefono. Alcune reti sono fatte apposta per mandare pochi dati molto lontano consumando pochissima batteria.
 3. **L'elaborazione**. I dati finiscono su computer lontani, nel cloud. Oppure vengono elaborati vicino all'oggetto stesso, quando la risposta deve essere immediata: un sensore che rileva un pericolo in fabbrica non può aspettare.
 4. **Le applicazioni**. Quello che vedi tu: un grafico sul telefono, un avviso, una decisione automatica.
@@ -64,7 +64,7 @@ La domanda giusta non è "mi spia?". È questa: chi può vedere i miei dati, per
 
 **Utile, se progettato bene**
 
-Sensori nei campi fanno risparmiare acqua. Sensori sui ponti avvisano prima che una crepa diventi un pericolo. Sensori in casa permettono a una persona anziana di vivere da sola più a lungo. La tecnologia è la stessa: la differenza la fa come viene progettata e chi controlla i dati.
+Sensori nei campi fanno risparmiare acqua. Sensori sui ponti avvisano prima che una crepa diventi un pericolo. Sensori in casa permettono a una persona anziana di vivere da sola più a lungo. ==La tecnologia è la stessa: la differenza la fa come viene progettata e chi controlla i dati.==
 
 > ✋ **Tocca a te.** Progetta su carta un sistema IoT per un problema vero della scuola, per esempio aule troppo calde o luci lasciate accese. Disegna i quattro piani: quale sensore, quale connessione, dove si elaborano i dati, che cosa vede chi lo usa. Quali dati raccoglie sulle persone?
 
@@ -88,7 +88,7 @@ Questa rete si chiama **IoT — Internet of Things**, Internet delle Cose. Il pr
 
 ### Cos'è un sensore: dalla grandezza fisica al dato digitale
 
-Un **sensore** è un dispositivo che rileva una grandezza fisica — temperatura, pressione, luminosità, accelerazione, umidità, frequenza cardiaca, qualità dell'aria — e la converte in un segnale elettrico misurabile.
+==Un **sensore** è un dispositivo che rileva una grandezza fisica — temperatura, pressione, luminosità, accelerazione, umidità, frequenza cardiaca, qualità dell'aria — e la converte in un segnale elettrico misurabile.==
 
 Il processo ha due fasi:
 
@@ -97,7 +97,7 @@ Il processo ha due fasi:
 **2. Conversione analogico-digitale (ADC):** il segnale elettrico analogico — una grandezza continua che può assumere infiniti valori — viene convertito in un numero digitale — una grandezza discreta con un numero finito di valori. Questa operazione si chiama campionamento.
 
 Il campionamento ha due parametri fondamentali:
-- **Frequenza di campionamento:** quante volte al secondo il sensore misura il valore. Un sensore che campiona 100 volte al secondo produce 100 misure per secondo.
+- ==**Frequenza di campionamento:** quante volte al secondo il sensore misura il valore.== Un sensore che campiona 100 volte al secondo produce 100 misure per secondo.
 - **Risoluzione:** quanti bit usa per rappresentare ogni misura. Con 8 bit si hanno 256 livelli di precisione; con 12 bit si hanno 4096 livelli; con 16 bit si hanno 65536 livelli.
 
 La scelta di questi parametri determina la qualità del dato e la quantità di dati prodotta.
@@ -106,7 +106,7 @@ La scelta di questi parametri determina la qualità del dato e la quantità di d
 
 ### Architettura di un sistema IoT
 
-Un sistema IoT completo ha quattro strati.
+==Un sistema IoT completo ha quattro strati.==
 
 **Strato 1 — I dispositivi fisici (Things)**
 I sensori e gli attuatori. I sensori *misurano* (temperatura, pressione, movimento). Gli attuatori *agiscono* (accendono una luce, aprono una valvola, inviano un allarme). Un dispositivo può avere sia sensori che attuatori.
@@ -124,7 +124,7 @@ Come i dispositivi comunicano. Le opzioni sono molte, con compromessi diversi:
 | NB-IoT | Nazionale | Bassissimo | Contatori gas/acqua, sensori smart city |
 
 **Strato 3 — Il cloud / edge computing**
-I dati arrivano a server remoti (cloud) o vengono elaborati direttamente sul dispositivo o su un nodo intermedio (edge computing). Il vantaggio dell'edge è la latenza: se un sensore in una fabbrica rileva un'anomalia pericolosa, non può aspettare che il dato arrivi al cloud e torni — deve reagire in millisecondi.
+I dati arrivano a server remoti (cloud) o vengono elaborati direttamente sul dispositivo o su un nodo intermedio (edge computing). ==Il vantaggio dell'edge è la latenza: se un sensore in una fabbrica rileva un'anomalia pericolosa, non può aspettare che il dato arrivi al cloud e torni — deve reagire in millisecondi.==
 
 **Strato 4 — Le applicazioni**
 I dati vengono analizzati, visualizzati e usati per prendere decisioni: dashboard di monitoraggio, sistemi di allerta, algoritmi di machine learning che trovano anomalie, interfacce utente.
@@ -145,13 +145,13 @@ Questo pone sfide concrete:
 
 ### Sicurezza e privacy nell'IoT
 
-I dispositivi IoT sono notoriamente il punto debole più vulnerabile delle reti informatiche. Molti hanno firmware non aggiornabile, password di default mai cambiate, connessioni non cifrate.
+==I dispositivi IoT sono notoriamente il punto debole più vulnerabile delle reti informatiche.== ==Molti hanno firmware non aggiornabile, password di default mai cambiate, connessioni non cifrate.==
 
 Nel 2016, la botnet Mirai ha sfruttato milioni di telecamere di sicurezza e router domestici con le password di fabbrica mai cambiate, usandoli per lanciare uno degli attacchi DDoS più grandi della storia, abbattendo temporaneamente Netflix, Twitter e gran parte dell'internet americano.
 
 La privacy è una questione altrettanto seria. Ogni sensore che ti monitora — per proteggerti, per farti risparmiare energia, per migliorare la tua salute — produce dati che esistono da qualche parte, per qualcuno. Nel 2017, in un processo penale nel Connecticut, i dati di un pacemaker sono stati usati come prove in tribunale: il dispositivo registrava frequenza cardiaca, passi e attività fisica. Quei dati contraddicevano la versione dell'imputato.
 
-La domanda non è "il mio dispositivo mi spia?". La domanda è: **chi ha accesso ai miei dati, per quanto tempo, per quali scopi, con quale base legale?**
+La domanda non è "il mio dispositivo mi spia?". ==La domanda è: **chi ha accesso ai miei dati, per quanto tempo, per quali scopi, con quale base legale?**==
 
 ---
 
