@@ -121,5 +121,25 @@ if (existsSync(cfgDir)) {
   }
 }
 writeFileSync(join(here, "..", "..", "lib", "laboratori-cfg.json"), JSON.stringify(manifest, null, 2) + "\n");
+// Miniature delle copertine per la pagina /laboratori (640×360, leggere) e loro elenco per l'app (lib/lab-covers.json)
+{
+  const { default: sharp } = await import("sharp");
+  const { statSync } = await import("node:fs");
+  const dir = join(here, "..", "..", "public", "assets", "lab-covers");
+  const tdir = join(dir, "thumb");
+  mkdirSync(tdir, { recursive: true });
+  const list = {};
+  for (const [id, c] of Object.entries(covers).sort()) {
+    const src = join(dir, c.file);
+    if (!existsSync(src)) continue;
+    const dst = join(tdir, c.file);
+    if (!existsSync(dst) || statSync(dst).mtimeMs < statSync(src).mtimeMs) {
+      await sharp(src).resize(640, 360, { fit: "cover" }).webp({ quality: 72 }).toFile(dst);
+    }
+    list[id] = { thumb: "/assets/lab-covers/thumb/" + c.file, alt: c.alt };
+  }
+  writeFileSync(join(here, "..", "..", "lib", "lab-covers.json"), JSON.stringify(list, null, 1) + "\n");
+  console.log(Object.keys(list).length, "copertine (miniature)");
+}
 ids.sort().forEach((id) => console.log("✓", id));
 console.log(ids.length, "laboratori");

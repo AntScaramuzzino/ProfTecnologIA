@@ -6,6 +6,7 @@ import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI, hrefCostruzione } from "./geogebr
 import { MC_PROIEZIONI, TAVOLE_PO_PRONTE, hrefTavolaPO } from "./geogebra-proiezioni";
 import cfgLabs from "./laboratori-cfg.json";
 import escapeRooms from "./escape-cfg.json";
+import labCovers from "./lab-covers.json";
 
 export interface LaboratorioInterattivo {
   mcId: string;
@@ -45,6 +46,13 @@ export function getLaboratorio(mcId: string): LaboratorioInterattivo | undefined
 export function labSrc(mcId: string): string {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   return `${basePath}/embeds/lab/${mcId}/index.html`;
+}
+
+// Copertina Canva del laboratorio (miniatura 640×360 generata da npm run labs)
+export function labCover(mcId: string): { src: string; alt: string } | undefined {
+  const c = (labCovers as Record<string, { thumb: string; alt: string }>)[mcId];
+  if (!c) return undefined;
+  return { src: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${c.thumb}`, alt: c.alt };
 }
 
 // Escape room: una per MC (scripts/laboratori/escape/<mc>.js → public/embeds/escape/<MC-ID>/index.html)
