@@ -1,5 +1,7 @@
 import Link from "next/link";
 import MCCard from "@/components/MCCard";
+import LezioneSettimana, { type PianoSettimane, type VoceSettimana } from "@/components/LezioneSettimana";
+import { PIANO_LEZIONI, type VoceLezione } from "@/lib/lezione-settimanale";
 import { AREA_META, getAllMCs, type MC } from "@/lib/mc-loader";
 import { areaAccent, cx } from "@/lib/ui";
 
@@ -20,6 +22,27 @@ export default function HomePage() {
   const featured = areas
     .flatMap(({ code }) => allMCs.filter((mc) => mc.area === code).slice(0, 1))
     .slice(0, 6) as MC[];
+
+  // Lezione della settimana: al componente client arriva il piano con titoli e aree già risolti.
+  const voceSettimana = (v: VoceLezione, binario: "teoria" | "pratica"): VoceSettimana => {
+    const mc = v.mc ? allMCs.find((m) => m.id === v.mc) : undefined;
+    const area = mc?.area ?? (binario === "pratica" ? "DIS" : "");
+    return {
+      ...v,
+      mcTitolo: mc?.titolo,
+      emoji: mc ? AREA_META[mc.area]?.emoji : undefined,
+      tipo: binario === "teoria" ? "Teoria" : area === "DIS" ? "Disegno" : "Coding",
+    };
+  };
+  const pianoSettimane: PianoSettimane = Object.fromEntries(
+    Object.entries(PIANO_LEZIONI).map(([classe, p]) => [
+      classe,
+      {
+        teoria: p.teoria.map((v) => voceSettimana(v, "teoria")),
+        pratica: p.pratica.map((v) => voceSettimana(v, "pratica")),
+      },
+    ])
+  );
 
   const stats = [
     { value: allMCs.length.toString(), label: "Micro-competenze" },
@@ -120,6 +143,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── LEZIONE DELLA SETTIMANA ──────────────────────────────────────── */}
+      <LezioneSettimana piano={pianoSettimane} />
 
       {/* ── STATS ────────────────────────────────────────────────────────── */}
       <section className="border-b border-slate-200 bg-slate-950">
