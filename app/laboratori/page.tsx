@@ -14,6 +14,42 @@ export const metadata: Metadata = {
     "Laboratori interattivi collegati alle micro-competenze: simulatori, smistatori, ispettori di artefatti, tavoli grafici 3D e programmatori, su tre livelli.",
 };
 
+// Copertine Canva delle schede «Disegno e GeoGebra» (640×360, public/assets/lab-covers/strumenti)
+const COPERTINE_STRUMENTI: Record<string, string> = {
+  "costruzioni-geogebra": "costruzioni-geometriche.webp",
+};
+
+function CopertinaStrumento({ id, href }: { id: string; href: string }) {
+  const file = COPERTINE_STRUMENTI[id];
+  if (!file) return null;
+  const src = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/lab-covers/strumenti/${file}`;
+  const img = (
+    <img
+      src={src}
+      alt=""
+      width={640}
+      height={360}
+      loading="lazy"
+      decoding="async"
+      className="aspect-video w-full object-cover transition duration-300 group-hover:scale-[1.03]"
+    />
+  );
+  // Secondo accesso alla stessa pagina del link principale: nascosto ai lettori di schermo
+  return (
+    <div className="-mx-6 -mt-6 mb-4 overflow-hidden border-b border-blue-200 bg-blue-100">
+      {href.startsWith("http") || href.startsWith("/embeds") ? (
+        <a href={href} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true" className="block">
+          {img}
+        </a>
+      ) : (
+        <Link href={href} tabIndex={-1} aria-hidden="true" className="block">
+          {img}
+        </Link>
+      )}
+    </div>
+  );
+}
+
 export default function LaboratoriPage() {
   return (
     <div className="min-h-screen bg-[#f7f8f5] text-slate-900">
@@ -203,12 +239,13 @@ export default function LaboratoriPage() {
 
         <section id="altri-strumenti" className="mt-12 scroll-mt-32" aria-labelledby="altri-strumenti-titolo">
           <h2 id="altri-strumenti-titolo" className="mb-4 text-2xl font-black tracking-tight text-slate-950">Disegno e GeoGebra</h2>
-          <div className="grid gap-5 lg:grid-cols-3">
-        <div id="costruzioni-geogebra" className="scroll-mt-32 flex flex-col rounded-xl border border-blue-200 bg-blue-50 p-6">
-          <h3 className="text-xl font-black tracking-tight text-slate-950">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+        <div id="costruzioni-geogebra" className="group scroll-mt-32 flex flex-col overflow-hidden rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <CopertinaStrumento id="costruzioni-geogebra" href={"/costruzioni-geometriche"} />
+          <h3 className="text-lg font-black leading-snug tracking-tight text-slate-950">
             Costruzioni geometriche <span className="text-base font-bold text-slate-600">· {COSTRUZIONI_GEOGEBRA.length} tavole GeoGebra</span>
           </h3>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+          <p className="mt-2 line-clamp-5 text-sm leading-6 text-slate-800">
             Tavole animate con righello e compasso, un passaggio alla volta, collegate a {MC_COSTRUZIONI}: perpendicolari
             e parallele, poligoni, triangoli, ovali e spirali, motivi modulari. Hanno una pagina tutta loro.
           </p>
@@ -217,14 +254,15 @@ export default function LaboratoriPage() {
           </Link>
         </div>
 
-        <div id="officina-motivi" className="scroll-mt-32 flex flex-col rounded-xl border border-blue-200 bg-blue-50 p-6">
-          <h3 className="text-xl font-black tracking-tight text-slate-950">
+        <div id="officina-motivi" className="group scroll-mt-32 flex flex-col overflow-hidden rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <CopertinaStrumento id="officina-motivi" href={officinaSrc()} />
+          <h3 className="text-lg font-black leading-snug tracking-tight text-slate-950">
             {OFFICINA_MOTIVI.titolo}{" "}
             <span className="text-base font-bold text-slate-600">
               · {OFFICINA_MOTIVI.famiglie} tipi di motivo · 2 modi per disegnare tu · {COSTRUZIONI_GEOGEBRA.filter((c) => c.categoria === "moti").length} tavole GeoGebra
             </span>
           </h3>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+          <p className="mt-2 line-clamp-5 text-sm leading-6 text-slate-800">
             {OFFICINA_MOTIVI.descrizione} Collegata a {MC_OFFICINA}.
           </p>
           <div className="mt-auto pt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm font-black">
@@ -240,11 +278,12 @@ export default function LaboratoriPage() {
           </div>
         </div>
 
-        <div id="proiezioni-ortogonali" className="scroll-mt-32 flex flex-col rounded-xl border border-blue-200 bg-blue-50 p-6">
-          <h3 className="text-xl font-black tracking-tight text-slate-950">
+        <div id="proiezioni-ortogonali" className="group scroll-mt-32 flex flex-col overflow-hidden rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <CopertinaStrumento id="proiezioni-ortogonali" href={"/proiezioni-ortogonali"} />
+          <h3 className="text-lg font-black leading-snug tracking-tight text-slate-950">
             Proiezioni ortogonali <span className="text-base font-bold text-slate-600">· {TAVOLE_PO_PRONTE.length} tavole guidate</span>
           </h3>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+          <p className="mt-2 line-clamp-5 text-sm leading-6 text-slate-800">
             Il proiettore ortogonale mostra un solido in tre dimensioni e le sue tre viste dal vivo; le tavole GeoGebra
             costruiscono le viste sul foglio, un passaggio alla volta. Collegate a {MC_PROIEZIONI}. Hanno una pagina
             tutta loro.
@@ -254,11 +293,12 @@ export default function LaboratoriPage() {
           </Link>
         </div>
 
-        <div id="assonometrie" className="scroll-mt-32 flex flex-col rounded-xl border border-blue-200 bg-blue-50 p-6">
-          <h3 className="text-xl font-black tracking-tight text-slate-950">
+        <div id="assonometrie" className="group scroll-mt-32 flex flex-col overflow-hidden rounded-xl border border-blue-200 bg-blue-50 p-6">
+          <CopertinaStrumento id="assonometrie" href={"/assonometrie"} />
+          <h3 className="text-lg font-black leading-snug tracking-tight text-slate-950">
             Assonometrie <span className="text-base font-bold text-slate-600">· {TAVOLE_ASS_PRONTE.length} tavole guidate</span>
           </h3>
-          <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-800">
+          <p className="mt-2 line-clamp-5 text-sm leading-6 text-slate-800">
             L’assonometro disegna un solido in cavaliera, in isometrica e in monometrica, con gli assi, le misure e le
             tre viste accanto; le tavole GeoGebra costruiscono il disegno sul foglio, un passaggio alla volta. Collegate
             a {MC_ASSONOMETRIE} e a {MC_MONOMETRICA}. Hanno una pagina tutta loro.
