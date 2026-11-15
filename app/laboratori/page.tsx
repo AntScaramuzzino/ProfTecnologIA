@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 // Copertine Canva delle schede «Disegno e GeoGebra» (640×360, public/assets/lab-covers/strumenti)
 const COPERTINE_STRUMENTI: Record<string, string> = {
   "costruzioni-geogebra": "costruzioni-geometriche.webp",
+  "proiezioni-ortogonali": "proiezioni-ortogonali.webp",
   "officina-motivi": "officina-motivi.webp",
 };
 
