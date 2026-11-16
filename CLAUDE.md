@@ -257,6 +257,12 @@ Agente Personalizzatore → percorso personalizzato studente
 - Gli ID seguono sempre il formato MC-TECH-2025 senza variazioni.
 - Nessun campo aggiuntivo non previsto dallo schema senza aggiornare prima `schema_MC.json`.
 
+### Versioni del sito e pagina Novità
+- La versione del sito e l'elenco delle novità stanno in `05_APP/tecnologia-sito-web/lib/versioni.ts`; il badge (intestazione e piè di pagina) e la pagina `/novita` leggono da lì.
+- Un insieme nuovo di funzioni (nuova area, nuovo tipo di attività) = nuova versione 0.x con la sua voce in cima a `VERSIONI`. Correzioni e piccoli miglioramenti = 0.x.y: si aggiorna solo `VERSIONE_ATTUALE`. La 1.0 la decide l'autore.
+- A ogni sessione che aggiunge funzioni visibili, aggiornare la voce della versione in corso. Testi per studenti, famiglie e docenti, senza gergo tecnico.
+- Proposta e storia ricostruita: `00_ARCHITETTURA/PROPOSTA_versioni_sito_v1.0.md`.
+
 ### Evidenziatore nei testi ESPLORA
 - Sintassi: `==frase==` nei `_completa.md` (sia `05_APP/tecnologia-sito-web/data/testi/` sia `08_TESTI/`); il sito la rende come tratto di evidenziatore giallo (`mark.evidenziatore` in `app/globals.css`). Può contenere grassetti: `==Si chiama **ciclo di vita**.==`
 - Si evidenzia la frase che enuncia il concetto (definizione, regola, causa-effetto, dato chiave), non il singolo termine: per i termini c'è già il grassetto.
@@ -432,6 +438,7 @@ Dì esplicitamente "Non ho dati verificati su questo" e proponi come trovare l'i
 | ✅ | Assonometrie dei libri di testo: monometrica a 45°, militare, dimetrica, trimetrica (oltre a cavaliera, monometrica 30°/60°, isometrica) · Assonometro ottimizzato per telefono · scatola visibile davanti al solido · tavola 12 parallelepipedo in militare · Assonometro in Tecnorama (TAV.02B) | ✅ Fatto — 2026-11-15 · commit `3202a08`, `013988e`, `3bb0144` · tipi ricavati dai libri in `Brain Tecnologia/libri-di-testo-tecnologia` (Atlas, Paravia/Benente, Zanichelli) · rapporti di dimetrica e trimetrica calcolati dagli angoli (`rapportiOrtogonali` in `geometria.js`) · l'Assonometro comunica la sua altezza (`postMessage` tipo `assonometro-altezza`) · Tecnorama: sezione `#tav02b` in `~/Documents/Cowork/tecnorama/webapp/index.html` (copia precedente `index.html.bak-preassonometro`), pubblicata con `vercel deploy --prod`, non committata in git · testi riletti da un secondo agente |
 | 2 | Assonometro nella home di proftecnologia.it (catalogo `app/data.ts` del repo `proftecnologia-site`) | ⬜ Da fare — il repo non è sul computer e serve l'accesso |
 | ✅ | Evidenziatore giallo sui concetti chiave dei testi ESPLORA (`==frase==`) | ✅ Fatto — 2026-11-15 · renderer `renderInline` + stile `mark.evidenziatore` · 58/58 MC, 1.090 frasi (~1 ogni 150 parole; MC-DIS-1-01 solo parti teoriche, non le Costruzioni) · applicato anche in `08_TESTI` dove il testo coincide (le copie lì sono più vecchie e non hanno «In breve») · build verificata (226 pagine, 0 errori) · pubblicato su `main` del sito, commit `8a1b3fa` + `2963a50` (frasi con formule) |
+| ✅ | Pagina «Novità» con la storia delle versioni del sito; badge da v0.1 a v0.5 | ✅ Fatto — 2026-11-16 · `lib/versioni.ts` + `app/novita/page.tsx` · 5 versioni ricostruite dai commit (0.1 maggio · 0.2 luglio · 0.3 Book · 0.4 esplorazioni · 0.5 disegno e classe) · badge cliccabile nell'intestazione e nel piè di pagina, voce nella ricerca |
 | 2 | Tavole di assonometria 2, 5–9, 11 (prisma triangolare, prisma esagonale, piramide, solido composto, cerchio/ellisse, cilindro, stanza in monometrica) | ⬜ Da fare — per le ellissi serve uno strumento `curva` in `creaAssonometria` |
 | 2 | Deploy Netlify definitivo | ⬜ Da fare — guida pronta in `DEPLOY_NETLIFY.md` |
 | 2 | Stepper progress indicator mobile — P2.1 (`refactor-backlog.md`) | ⬜ Da fare |
