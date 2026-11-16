@@ -4,6 +4,7 @@ import LezioneSettimana from "@/components/LezioneSettimana";
 import { costruisciPianoSettimane } from "@/lib/piano-settimane";
 import { AREA_META, getAllMCs, type MC } from "@/lib/mc-loader";
 import { areaAccent, cx } from "@/lib/ui";
+import { ESPLORAZIONI } from "@/lib/esplorazioni";
 
 export default function HomePage() {
   const allMCs = getAllMCs();
@@ -68,9 +69,12 @@ export default function HomePage() {
               </p>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                {allMCs.length} micro-competenze strutturate in 6 zone didattiche,
-                testi narrativi, immagini AI, hook audio, video e compiti di realtà
-                per la scuola secondaria di I grado.
+                {allMCs.length} micro-competenze per la scuola secondaria di I grado: leggi, guardi,
+                sperimenti e metti alla prova quello che hai imparato. Per ogni competenza ci sono testi
+                con i concetti chiave evidenziati, un video animato, un laboratorio interattivo, una
+                escape room e un compito di realtà. E poi {ESPLORAZIONI.length} esplorazioni immersive
+                dentro impianti reali, oltre 130 tavole GeoGebra per il disegno tecnico e strumenti per
+                pianificare l&apos;anno.
               </p>
 
               {/* Framework allineati */}
