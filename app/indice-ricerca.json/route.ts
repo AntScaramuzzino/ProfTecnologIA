@@ -151,6 +151,7 @@ export async function GET() {
     { tipo: "pagina", titolo: "I miei progressi", sotto: "Badge, quiz e laboratori completati", testo: "progressi badge punteggi", href: "/progressi/" },
     { tipo: "pagina", titolo: "Architettura del libro", sotto: "Come è costruito il Book", testo: "framework struttura", href: "/architettura/" },
     { tipo: "pagina", titolo: "Crediti", sotto: "Autori, fonti e licenze", testo: "credits licenze autori", href: "/credits/" },
+    { tipo: "pagina", titolo: "Novità", sotto: "Che cosa è cambiato in ogni versione del libro", testo: "versioni aggiornamenti changelog novita", href: "/novita/" },
   ];
   voci.push(...pagine);
 

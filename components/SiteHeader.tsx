@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { VERSIONE_ATTUALE } from "@/lib/versioni";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import {
@@ -229,18 +230,25 @@ export default function SiteHeader() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
 
           {/* ── Logo ── */}
-          <Link
-            href="/"
-            aria-label="Book ProfTecnologIA — home"
-            className="flex items-center gap-2 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
-          >
-            <span className="text-base font-black tracking-tight text-slate-950 sm:text-lg">
-              <span className="mr-1 rounded-md bg-emerald-700 px-1.5 py-0.5 text-xs font-black uppercase tracking-wider text-white sm:text-sm">Book</span>Prof<span className="text-emerald-700">TecnologIA</span>
-            </span>
-            <span className="rounded-full border border-emerald-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700">
-              v0.1
-            </span>
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="/"
+              aria-label="Book ProfTecnologIA — home"
+              className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+            >
+              <span className="text-base font-black tracking-tight text-slate-950 sm:text-lg">
+                <span className="mr-1 rounded-md bg-emerald-700 px-1.5 py-0.5 text-xs font-black uppercase tracking-wider text-white sm:text-sm">Book</span>Prof<span className="text-emerald-700">TecnologIA</span>
+              </span>
+            </Link>
+            <Link
+              href="/novita/"
+              title="Novità: che cosa è cambiato in ogni versione"
+              aria-label={`Versione ${VERSIONE_ATTUALE} — vedi le novità`}
+              className="rounded-full border border-emerald-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700 hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+            >
+              v{VERSIONE_ATTUALE}
+            </Link>
+          </div>
 
           {/* ── Desktop nav ── */}
           <nav

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { VERSIONE_ATTUALE } from "@/lib/versioni";
 
 /**
  * Footer condiviso — versione sito + link essenziali.
@@ -10,9 +11,13 @@ export default function SiteFooter() {
       <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
         <div className="flex items-center gap-2">
           <span className="font-black text-slate-600">Book ProfTecnologIA</span>
-          <span className="rounded-full border border-slate-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500">
-            v0.1
-          </span>
+          <Link
+            href="/novita/"
+            title="Novità: che cosa è cambiato in ogni versione"
+            className="rounded-full border border-slate-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500 hover:border-emerald-400 hover:text-emerald-700"
+          >
+            v{VERSIONE_ATTUALE}
+          </Link>
           <span>· © 2026 Prof. Ing. Antonio Scaramuzzino</span>
         </div>
         <div className="flex items-center gap-3">
@@ -21,6 +26,8 @@ export default function SiteFooter() {
           <Link href="/docenti" className="hover:text-slate-700">Docenti</Link>
           <span>·</span>
           <Link href="/glossario" className="hover:text-slate-700">Glossario</Link>
+          <span>·</span>
+          <Link href="/novita/" className="hover:text-slate-700">Novità</Link>
           <span>·</span>
           <Link href="/credits" className="hover:text-slate-700">Credits</Link>
           <span>·</span>
