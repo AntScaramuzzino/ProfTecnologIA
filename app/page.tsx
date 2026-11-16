@@ -5,6 +5,9 @@ import { costruisciPianoSettimane } from "@/lib/piano-settimane";
 import { AREA_META, getAllMCs, type MC } from "@/lib/mc-loader";
 import { areaAccent, cx } from "@/lib/ui";
 import { ESPLORAZIONI } from "@/lib/esplorazioni";
+import { LABORATORI, ESCAPE_ROOMS } from "@/lib/laboratori";
+import { GLOSSARIO } from "@/lib/competenze-glossario";
+import { getMCEsploraImages } from "@/lib/content-loader";
 import { COSTRUZIONI_GEOGEBRA } from "@/lib/geogebra-costruzioni";
 import { TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
 import { TAVOLE_ASS_PRONTE } from "@/lib/geogebra-assonometrie";
@@ -31,6 +34,20 @@ export default function HomePage() {
     .slice(0, 6) as MC[];
 
   const pianoSettimane = costruisciPianoSettimane();
+
+  // «Nel libro trovi»: tutti i numeri si calcolano dai dati, nessuno è scritto a mano
+  const videoAnimati = allMCs.reduce(
+    (n, mc) => n + getMCEsploraImages(mc.id).filter((img) => !!img.video).length,
+    0,
+  );
+  const nelLibro = [
+    { value: LABORATORI.length, label: "Laboratori interattivi", href: "/laboratori/" },
+    { value: ESCAPE_ROOMS.length, label: "Escape room", href: "/laboratori/" },
+    { value: videoAnimati, label: "Video animati", href: undefined },
+    { value: ESPLORAZIONI.length, label: "Esplorazioni immersive", href: "/laboratori/#esplorazioni" },
+    { value: tavoleGeoGebra, label: "Tavole GeoGebra", href: "/costruzioni-geometriche/" },
+    { value: Object.keys(GLOSSARIO).length, label: "Voci del glossario", href: "/glossario/" },
+  ];
 
   const stats = [
     { value: allMCs.length.toString(), label: "Micro-competenze" },
@@ -118,20 +135,51 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Card anni */}
-            <div className="grid grid-cols-3 gap-3">
-              {years.map(({ anno, mcs }) => (
-                <Link
-                  key={anno}
-                  href={`/anno/${anno}`}
-                  className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:p-6"
-                >
-                  <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Classe</div>
-                  <div className="text-3xl font-black text-slate-950 sm:text-4xl">{anno}<span className="text-lg font-bold text-slate-400">ª</span></div>
-                  <div className="mt-4 text-2xl font-black text-emerald-700">{mcs.length}</div>
-                  <div className="text-xs font-medium text-slate-500">MC</div>
-                </Link>
-              ))}
+            {/* Colonna destra: classi + «Nel libro trovi» */}
+            <div className="space-y-6">
+              <div>
+                <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-500">Scegli la classe</h2>
+                <div className="grid grid-cols-3 gap-3">
+                  {years.map(({ anno, mcs }) => (
+                    <Link
+                      key={anno}
+                      href={`/anno/${anno}`}
+                      className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:p-6"
+                    >
+                      <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Classe</div>
+                      <div className="text-3xl font-black text-slate-950 sm:text-4xl">{anno}<span className="text-lg font-bold text-slate-400">ª</span></div>
+                      <div className="mt-4 text-2xl font-black text-emerald-700">{mcs.length}</div>
+                      <div className="text-xs font-medium text-slate-500">MC</div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-500">Nel libro trovi</h2>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                  {nelLibro.map(({ value, label, href }) => {
+                    const contenuto = (
+                      <>
+                        <div className="text-2xl font-black text-emerald-700">{value}</div>
+                        <div className="mt-0.5 text-xs font-medium leading-snug text-slate-600">{label}</div>
+                      </>
+                    );
+                    const classi = "block rounded-xl border border-slate-200 bg-white p-3 text-center";
+                    return href ? (
+                      <Link
+                        key={label}
+                        href={href}
+                        className={`${classi} transition hover:border-emerald-300 hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500`}
+                      >
+                        {contenuto}
+                      </Link>
+                    ) : (
+                      <div key={label} className={classi}>{contenuto}</div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
