@@ -64,7 +64,7 @@ export default function HomePage() {
               </h1>
 
               <p className="mt-2 text-base font-semibold text-slate-500 sm:text-lg">
-                Il primo libro di Tecnologia nativamente progettato sulle IN 2025
+                Il primo libro di Tecnologia nativamente progettato sulle Indicazioni Nazionali 2025 e arricchito con esperienze interattive con il supporto dell’IA
               </p>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
