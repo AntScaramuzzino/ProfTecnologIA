@@ -98,6 +98,16 @@ export const ESPLORAZIONI: EsplorazioneImmersiva[] = [
       "Dall'oliveto alla tavola: raccolta, lavaggio, frangitura, gramolatura e decanter, fino alla bottiglia. Si scende dentro l'oliva, fino alle cellule della polpa e alle molecole dell'olio, e si scopre che cosa diventa la sansa.",
   },
   {
+    slug: "stabilimento-del-latte",
+    mcId: "MC-ALI-2-02",
+    titolo: "Lo stabilimento del latte",
+    classe: 2,
+    area: "ALI",
+    scene: 16,
+    descrizione:
+      "Dalla stalla al frigorifero di casa: ricevimento, pastorizzatore a piastre, omogeneizzatore, confezionamento e cella frigorifera. Si scende fino ai batteri e alle gocce di grasso del latte, e si segue la catena del freddo fino al supermercato.",
+  },
+  {
     slug: "motore",
     mcId: "MC-ENE-3-05",
     titolo: "Il motore a quattro tempi",
