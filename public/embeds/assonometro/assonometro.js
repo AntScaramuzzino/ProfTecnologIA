@@ -31,7 +31,7 @@ const telefono = window.matchMedia('(max-width: 720px)');
 const U = 10;                                       // unità del disegno per centimetro
 const RADICE3 = Math.sqrt(3);
 const COLORE = { x: '#C2410C', y: '#15803D', z: '#1D4ED8' };
-const PIANI = { PV: '#93C5FD', PO: '#FDE047', PL: '#F9A8D4' };          // i piani nelle tre viste
+const PIANI = { PV: '#93C5FD', PO: '#FDE047', PL: '#F9A8D4' };          // i piani nelle tre viste, appena tinti
 const FACCE = { PV: '#BFDBFE', PO: '#FEF08A', PL: '#FBCFE8', altra: '#E2E8F0' };   // le facce del solido: stesse tinte, piene
 const NOME_ASSE = { x: 'larghezza', y: 'profondità', z: 'altezza' };
 
@@ -338,7 +338,8 @@ function disegnaViste() {
   const bordo = { sx: vb.x0, dx: vb.x0 + vb.w, su: vb.y0, giu: vb.y0 + vb.h };
   const sposta = { PV: [-(g + L), 0], PO: [-(g + L), g + Pr], PL: [g + Pr, 0] };
   let h = '';
-  const piano = (x, y, w, alt, tinta) => `<rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(alt)}" fill="${tinta}" fill-opacity="0.32"/>`;
+  // piani appena tinti; la vista del solido è piena, con la tinta del suo piano (come le facce nel foglio)
+  const piano = (x, y, w, alt, tinta) => `<rect x="${n1(x)}" y="${n1(y)}" width="${n1(w)}" height="${n1(alt)}" fill="${tinta}" fill-opacity="0.12"/>`;
   h += piano(bordo.sx, bordo.su, -bordo.sx, -bordo.su, PIANI.PV) + piano(0, bordo.su, bordo.dx, -bordo.su, PIANI.PL) + piano(bordo.sx, 0, -bordo.sx, bordo.giu, PIANI.PO);
   h += linea([bordo.sx, 0], [bordo.dx, 0], 'lt') + linea([0, bordo.su], [0, bordo.giu], 'lt');
   h += scritta([bordo.sx + 0.3, -0.35], 'PV', 'nome-piano', ' fill="#1D4ED8"') +
@@ -349,6 +350,8 @@ function disegnaViste() {
     const d = sposta[nome];
     const qui = { v: vista.v, m: p => somma(vista.m(p), d) };
     const r = proietta(solido, P, N, qui);
+    // tutte le facce in un solo tracciato: tra facce vicine (cilindro, cono) non restano fessure chiare
+    if (stato.mostra.facce && r.facce.length) h += `<path class="faccia-vista" fill="${FACCE[nome]}" d="${r.facce.map(f => `M${f.punti.map(q => `${n1(q[0])} ${n1(q[1])}`).join('L')}Z`).join('')}"/>`;
     if (r.nascosti.length) h += `<path class="sp-nascosto" d="${tratti(r.nascosti)}"/>`;
     h += `<path class="sp-visibile" d="${tratti(r.visibili)}"/>`;
   });
