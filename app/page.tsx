@@ -75,12 +75,14 @@ export default function HomePage() {
               </p>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                {allMCs.length} micro-competenze per la scuola secondaria di I grado: leggi, guardi,
-                sperimenti e metti alla prova quello che hai imparato. Per ogni competenza ci sono testi
-                con i concetti chiave evidenziati, un video animato, un laboratorio interattivo, una
-                escape room e un compito di realtà. E poi {`${ESPLORAZIONI.length} esplorazioni immersive`}
-                dentro impianti reali, {`${tavoleGeoGebra} tavole GeoGebra`} per il disegno tecnico e strumenti per
-                pianificare l&apos;anno.
+                {[
+                  `${allMCs.length} micro-competenze per la scuola secondaria di I grado: leggi, guardi,`,
+                  "sperimenti e metti alla prova quello che hai imparato. Per ogni competenza ci sono testi",
+                  "con i concetti chiave evidenziati, un video animato, un laboratorio interattivo, una",
+                  `escape room e un compito di realtà. E poi ${ESPLORAZIONI.length} esplorazioni immersive`,
+                  `dentro impianti reali, ${tavoleGeoGebra} tavole GeoGebra per il disegno tecnico e strumenti per`,
+                  "pianificare l'anno.",
+                ].join(" ")}
               </p>
 
               {/* Framework allineati */}
