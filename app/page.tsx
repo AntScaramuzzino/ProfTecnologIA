@@ -5,6 +5,12 @@ import { costruisciPianoSettimane } from "@/lib/piano-settimane";
 import { AREA_META, getAllMCs, type MC } from "@/lib/mc-loader";
 import { areaAccent, cx } from "@/lib/ui";
 import { ESPLORAZIONI } from "@/lib/esplorazioni";
+import { COSTRUZIONI_GEOGEBRA } from "@/lib/geogebra-costruzioni";
+import { TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
+import { TAVOLE_ASS_PRONTE } from "@/lib/geogebra-assonometrie";
+
+/** Tavole GeoGebra pubblicate: costruzioni geometriche + proiezioni ortogonali + assonometrie (si aggiorna da solo) */
+const tavoleGeoGebra = COSTRUZIONI_GEOGEBRA.length + TAVOLE_PO_PRONTE.length + TAVOLE_ASS_PRONTE.length;
 
 export default function HomePage() {
   const allMCs = getAllMCs();
@@ -73,7 +79,7 @@ export default function HomePage() {
                 sperimenti e metti alla prova quello che hai imparato. Per ogni competenza ci sono testi
                 con i concetti chiave evidenziati, un video animato, un laboratorio interattivo, una
                 escape room e un compito di realtà. E poi {ESPLORAZIONI.length} esplorazioni immersive
-                dentro impianti reali, oltre 130 tavole GeoGebra per il disegno tecnico e strumenti per
+                dentro impianti reali, {tavoleGeoGebra} tavole GeoGebra per il disegno tecnico e strumenti per
                 pianificare l&apos;anno.
               </p>
 
