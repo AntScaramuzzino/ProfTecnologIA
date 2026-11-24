@@ -275,6 +275,9 @@
   if (limMode) document.documentElement.classList.add("lim");
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // Effetti (effetti.js): compasso e righello visibili, fuoco sul passo, ripasso finale. In prova: &effetti=1.
+  const effettiRichiesti = searchParams.get("effetti") === "1";
+  let effetti = null;
   const activityKey = searchParams.get("activity") || "divisione-segmento";
   const activity = ACTIVITIES[activityKey] || ACTIVITIES["divisione-segmento"];
   // Telefono: tavola più alta e a grandezza naturale (niente riduzione di scala), tratti più sottili.
@@ -501,6 +504,9 @@
 
     styleObjects();
     setVisible(allObjects(), false);
+    if ((effettiRichiesti || activity.effetti) && window.GGB_EFFETTI) {
+      try { effetti = window.GGB_EFFETTI(api, activity, { th }); } catch (e) { effetti = null; }
+    }
     elements.loading.hidden = true;
     setControlsEnabled(true);
     applyStage(0, 1);
@@ -552,6 +558,7 @@
     applySideDrawSequence(stage, progress);
     applyAnim(stage, progress);
     applyAppearAt(stage, progress);
+    if (effetti) effetti(stage, progress);
     const resultRevealAt = activity.sideDrawSequence && stage === activity.sideDrawSequence.stage
       ? activity.sideDrawSequence.finalAt
       : 0.95;
@@ -689,7 +696,8 @@
   function getAnimationDuration() {
     const seconds = Number(elements.speed.value);
     const safeSeconds = Number.isFinite(seconds) ? Math.min(4, Math.max(0.5, seconds)) : 1.5;
-    return safeSeconds * 1000;
+    // Con gli strumenti visibili ogni passo dura il doppio: il compasso deve avere il tempo di girare.
+    return safeSeconds * 1000 * (effetti ? 2 : 1);
   }
 
   function animateStep(step, token) {
