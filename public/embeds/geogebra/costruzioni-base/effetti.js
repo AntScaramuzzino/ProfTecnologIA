@@ -1,6 +1,7 @@
 /*
- * Effetti delle tavole animate (prova: si accendono con &effetti=1 nell'indirizzo, oppure con `effetti: true`
- * nella tavola). Lavorano su tutte le tavole senza toccarle, leggendo gli oggetti che creaTavola già prepara.
+ * Effetti delle tavole animate. Accesi per tutte le costruzioni geometriche (activity.js decide: &effetti=0 li
+ * spegne, `effetti: false` nella tavola pure). Lavorano senza toccare le tavole, leggendo gli oggetti che
+ * creaTavola già prepara.
  *
  *   1. Strumenti visibili: mentre un arco si traccia compare il compasso (ago nel centro, mina sulla punta
  *      che si muove); mentre un segmento si traccia compare il righello con la matita.
@@ -28,6 +29,22 @@
     const mostra = (...nomi) => nomi.forEach((n) => exists(n) && api.setVisible(n, true));
     const sposta = (n, p) => { api.setValue(`${n}X`, p[0]); api.setValue(`${n}Y`, p[1]); };
     const xy = (n) => [api.getXcoord(n), api.getYcoord(n)];
+
+    // ── un tratto alla volta: i tratti dello stesso passo con la stessa finestra si disegnano uno dopo l'altro,
+    //    così il compasso (o il righello) li segue tutti. La finestra complessiva resta la stessa.
+    const perFinestra = {};
+    activity.groups.forEach((g, passo) => g.forEach((n) => {
+      const cfg = (activity.anim || {})[n];
+      if (!cfg) return;
+      const chiave = `${passo}|${cfg.from}|${cfg.to}`;
+      (perFinestra[chiave] = perFinestra[chiave] || []).push(cfg);
+    }));
+    Object.values(perFinestra).forEach((lista) => {
+      if (lista.length < 2) return;
+      const { from, to } = lista[0];
+      const passo = (to - from) / lista.length;
+      lista.forEach((cfg, i) => { cfg.from = from + passo * i; cfg.to = from + passo * (i + 1); });
+    });
 
     // ── colori originali, per poterli schiarire e ripristinare ──────────────────────────────────────────
     const originale = {};
@@ -117,6 +134,20 @@
       if (exists(n) && api.getObjectType(n) === "point") puntoBase[n] = api.getPointSize(n);
     });
 
+    // Tavole 3–8 (activity.js): archi con `traceParams` («n=CircularArc(centro,inizio,punta)»), che si aprono
+    // tutti insieme tra 0,12 e 1 del passo. Centro e punta si leggono dal comando che crea l'arco.
+    const vecchi = [];
+    const centroDi = {};
+    const puntaDi = {};
+    Object.keys(activity.traceParams || {}).forEach((n) => {
+      const c = (activity.commands || []).find((x) => x.startsWith(`${n}=CircularArc(`));
+      if (!c) return;
+      const argomenti = c.slice(c.indexOf("(") + 1, -1).split(",");
+      if (argomenti.length !== 3 || !exists(argomenti[0]) || !exists(argomenti[2])) return;
+      centroDi[n] = argomenti[0]; puntaDi[n] = argomenti[2];
+      vecchi.push([n, { from: 0.12, to: 1 }]);
+    });
+
     const gruppoDi = {};
     activity.groups.forEach((g, i) => g.forEach((n) => { gruppoDi[n] = i; }));
     const ultimo = activity.steps.length - 1;
@@ -126,11 +157,14 @@
       nascondi(...strumenti);
       // Le tavole che muovono già riga e squadre (squadre.js) tengono i loro strumenti.
       if (progress < 1 && !(activity.moti && activity.moti.length)) {
-        const attivi = Object.entries(activity.anim || {})
+        const attivi = [...Object.entries(activity.anim || {}), ...vecchi]
           .filter(([n, cfg]) => gruppoDi[n] === stage && progress > cfg.from && progress < cfg.to && exists(n));
-        const arco = attivi.find(([n]) => exists(`HC${n}`) && exists(`HE${n}`));
+        const arco = attivi.find(([n]) => centroDi[n] || (exists(`HC${n}`) && exists(`HE${n}`)));
         const tratto = attivi.find(([n]) => fine[n]);
-        if (arco) mettiCompasso(xy(`HC${arco[0]}`), xy(`HE${arco[0]}`));
+        if (arco) {
+          const n = arco[0];
+          mettiCompasso(xy(centroDi[n] || `HC${n}`), xy(puntaDi[n] || `HE${n}`));
+        }
         else if (tratto) mettiRighello(inizio[tratto[0]], xy(`HQ${tratto[0]}`), fine[tratto[0]]);
       }
 

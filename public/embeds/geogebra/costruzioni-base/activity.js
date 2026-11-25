@@ -275,8 +275,9 @@
   if (limMode) document.documentElement.classList.add("lim");
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  // Effetti (effetti.js): compasso e righello visibili, fuoco sul passo, ripasso finale. In prova: &effetti=1.
-  const effettiRichiesti = searchParams.get("effetti") === "1";
+  // Effetti (effetti.js): compasso e righello visibili, fuoco sul passo, ripasso finale. Accesi per le costruzioni
+  // geometriche; spenti per proiezioni e assonometrie (po-, ass-), che muovono già riga e squadre (squadre.js).
+  // &effetti=0 li spegne, &effetti=1 li accende anche dove sono spenti.
   let effetti = null;
   const activityKey = searchParams.get("activity") || "divisione-segmento";
   const activity = ACTIVITIES[activityKey] || ACTIVITIES["divisione-segmento"];
@@ -504,7 +505,9 @@
 
     styleObjects();
     setVisible(allObjects(), false);
-    if ((effettiRichiesti || activity.effetti) && window.GGB_EFFETTI) {
+    const parametroEffetti = searchParams.get("effetti");
+    const effettiDiBase = activity.effetti !== false && !/^(po|ass)-/.test(activityKey) && !(activity.moti && activity.moti.length);
+    if (parametroEffetti !== "0" && (parametroEffetti === "1" || effettiDiBase) && window.GGB_EFFETTI) {
       try { effetti = window.GGB_EFFETTI(api, activity, { th }); } catch (e) { effetti = null; }
     }
     elements.loading.hidden = true;
