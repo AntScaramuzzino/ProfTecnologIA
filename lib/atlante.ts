@@ -34,6 +34,18 @@ export const ATLANTE: TavolaAtlante[] = [
     interazione: "Cursore da trascinare, lente sul nonio, disegno quotato ed esercizio di lettura.",
   },
   {
+    slug: "atl-mat-1-04",
+    codice: "ATL-MAT-1-04",
+    mcId: "MC-MAT-1-04",
+    titolo: "L'impianto di selezione della differenziata",
+    sottotitolo: "Dove va la bottiglia dopo il bidone giallo: sei stazioni, sei uscite",
+    descrizione:
+      "Sei stazioni in fila, ognuna riconosce un materiale da una sua proprietà: grandezza, magnetismo, luce assorbita, conducibilità. La plastica nera sfugge al lettore ottico e finisce nello scarto.",
+    classe: 1,
+    area: "MAT",
+    interazione: "Stazioni da spegnere, nastro lento o veloce, un oggetto da buttare e seguire fino al suo cassone.",
+  },
+  {
     slug: "atl-ene-3-06",
     codice: "ATL-ENE-3-06",
     mcId: "MC-ENE-3-06",
