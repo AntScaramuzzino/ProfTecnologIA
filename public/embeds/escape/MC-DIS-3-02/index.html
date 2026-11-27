@@ -188,6 +188,15 @@ svg.chart{width:100%;height:auto;display:block;max-width:760px}
 .vq-opts button:focus-visible{outline:3px solid var(--lab);outline-offset:2px}
 .verif-msg{font-weight:700;color:var(--muted);font-size:15px}
 
+/* Le 4 domande su due colonne dove c'è spazio: la verifica occupa metà altezza */
+@media (min-width:720px){
+  .verif-body{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px;align-items:start}
+  .verif-body .vq{border-top:0;padding-top:0}
+}
+.vq-next{align-self:flex-start;margin-top:4px}
+@media (min-width:720px){.vq-next{display:none}}
+@media (max-width:719px){.verif-body .vq:not(.cur){display:none}.verif-body .vq{border-top:0;padding-top:0}}
+
 .es-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin:18px 0 14px}
 .es-locks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .es-locks li{min-width:46px;height:52px;border-radius:10px;border:2px solid var(--line);background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:18px;line-height:1.1;color:var(--muted)}

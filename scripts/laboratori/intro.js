@@ -79,7 +79,6 @@
     g = g.replace(/^Poi,?\s+(\S)/, (m, c) => c.toUpperCase());
     return g.length > max ? g.slice(0, max).replace(/\s+\S*$/, "") + "…" : g;
   };
-  const firstSentence = (s, max) => { s = s.replace(/\s+/g, " ").trim(); const m = s.match(/^.*?[.!?](\s|$)/); let r = (m ? m[0] : s).trim(); if (r.length > max) r = r.slice(0, max).replace(/\s+\S*$/, "") + "…"; return r; };
   const levels = LV.map(([code, name, dots], i) => {
     const p = document.getElementById("p" + (i + 1)); if (!p) return null;
     const brief = p.querySelector(".brief"); const lbl = brief?.querySelector(".lbl")?.textContent.trim() || "";
@@ -97,7 +96,6 @@
   if (levels.length !== 3) return;
   const [aIc, aTxt] = ARCH[arch] || ["target", "Impari facendo, con un riscontro immediato su ogni scelta."];
   const totMin = levels.reduce((s, l) => s + l.min, 0);
-  const bridge = document.querySelector(".bridge p")?.textContent.trim() || "";
 
   const sec = mk("section", "intro"); sec.setAttribute("aria-label", "Presentazione del laboratorio");
   const top = mk("div", "intro-top", `
@@ -107,7 +105,7 @@
       <p>${esc(aTxt)}</p>
       <ul class="intro-facts">
         <li>${icon("target")}<span><b>3 livelli</b> dal guidato alla sfida</span></li>
-        <li>${pie(totMin, 22)}<span>circa <b>${totMin} minuti</b> in tutto</span></li>
+        <li>${pie(totMin, 22)}<span>circa <b>${totMin} minuti</b>, anche un livello per volta</span></li>
         <li>${icon("medal")}<span><b>verifica</b> di 4 domande a ogni livello</span></li>
       </ul>
     </div>`);
@@ -132,17 +130,11 @@
       </button>`;
     path.appendChild(li);
   });
-  const bar = mk("div", "intro-time", `<span class="intro-k">Il tempo</span>
-    <div class="intro-bar" role="img" aria-label="Tempo stimato: ${levels.map((l) => `${l.name} ${l.min} minuti`).join(", ")}; in tutto circa ${totMin} minuti">
-      ${levels.map((l) => `<span class="intro-seg s${l.i + 1}" style="flex:${l.min}"><b>${l.min}′</b><span>${l.name}</span></span>`).join("")}
-    </div>
-    <p>Circa <b>${totMin} minuti</b> in tutto: puoi fare un livello per volta, anche in giorni diversi.</p>`);
-  const goal = bridge ? mk("div", "intro-goal", `${icon("target", "ic-lg")}<div><span class="intro-k">Dove ti porta</span><p>${esc(firstSentence(bridge, 220))}</p></div>`) : null;
   const act = mk("div", "intro-act");
   const go = mk("button", "btn", "Inizia dal livello Base"); go.type = "button";
   const hide = mk("button", "intro-hide", "Riduci la presentazione"); hide.type = "button"; hide.setAttribute("aria-expanded", "true");
   act.append(go, hide);
-  sec.append(top, path, bar); if (goal) sec.appendChild(goal); sec.appendChild(act);
+  sec.append(top, path, act);
   const mini = mk("button", "intro-mini", `${icon(aIc)}<span>Presentazione del laboratorio · ${levels.map((l) => l.name).join(" → ")}</span><span aria-hidden="true">▾</span>`); mini.type = "button"; mini.setAttribute("aria-expanded", "false");
   head.after(sec); sec.after(mini);
 

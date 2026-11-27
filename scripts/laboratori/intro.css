@@ -31,9 +31,6 @@
 .intro-kind .ic{width:15px;height:15px}
 .intro-foot{display:flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
 .intro-foot .ic{width:14px;height:14px}
-.intro-goal{display:flex;gap:12px;align-items:flex-start;margin:14px 22px 0;padding:12px 14px;border-radius:var(--r);background:var(--area-bg,var(--lab-bg));color:var(--area,var(--lab))}
-.intro-goal p{margin:2px 0 0;color:var(--fg);font-size:15px;line-height:1.45}
-.intro-goal .intro-k{color:var(--area,var(--lab))}
 .intro-act{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:14px 22px 18px}
 .intro-hide{font:inherit;font-size:14px;font-weight:700;color:var(--muted);background:none;border:0;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px}
 .intro-hide:focus-visible,.intro-mini:focus-visible{outline:3px solid var(--area,var(--lab));outline-offset:2px}
@@ -47,12 +44,10 @@
   .intro-badge{width:56px;height:56px;border-radius:16px}
   .intro-what p{font-size:16px}
   .intro-path,.intro-act{padding-left:16px;padding-right:16px}
-  .intro-goal{margin-left:16px;margin-right:16px}
 }
 html.lim .intro-what p{font-size:20px}
 .intro-act .btn{background:var(--area,var(--lab));border-color:var(--area,var(--lab));color:#fff}
 .intro-step:nth-child(2) .intro-lv{background:color-mix(in srgb,var(--area,var(--lab)) 14%,var(--surface));color:color-mix(in srgb,var(--area,var(--lab)) 80%,#000)}
-.intro-goal .intro-k{opacity:1;color:color-mix(in srgb,var(--area,var(--lab)) 80%,#000)}
 .intro-lv,.intro-kind{color:color-mix(in srgb,var(--area,var(--lab)) 85%,#000)}
 .intro-step:nth-child(3) .intro-lv{color:#fff}
 /* Tempo: quadranti e barra */
@@ -66,20 +61,27 @@ html.lim .intro-what p{font-size:20px}
 .intro-facts .intro-pie .pie-tick,.intro-facts .intro-pie .pie-dot{stroke:#fff;fill:#fff}
 .intro-foot .intro-pie{color:var(--muted)}
 .intro-min{color:var(--fg);font-weight:800}
-.intro-time{margin:14px 22px 0;display:flex;flex-direction:column;gap:6px}
-.intro-time .intro-k{color:color-mix(in srgb,var(--area,var(--lab)) 80%,#000);opacity:1}
-.intro-time p{margin:0;font-size:14px;color:var(--muted)}
-.intro-time p b{color:var(--fg)}
-.intro-bar{display:flex;gap:4px;height:44px}
-.intro-seg{min-width:72px;border-radius:10px;display:flex;align-items:center;gap:8px;padding:0 12px;font-size:13px;font-weight:700;overflow:hidden;white-space:nowrap}
-.intro-seg b{font-size:18px;font-weight:800}
-.intro-seg.s1{background:var(--area-bg,var(--lab-bg));color:color-mix(in srgb,var(--area,var(--lab)) 85%,#000)}
-.intro-seg.s2{background:color-mix(in srgb,var(--area,var(--lab)) 30%,var(--surface));color:color-mix(in srgb,var(--area,var(--lab)) 85%,#000)}
-.intro-seg.s3{background:var(--area,var(--lab));color:#fff}
-@media (max-width:760px){.intro-time{margin-left:16px;margin-right:16px}.intro-seg span{display:none}.intro-seg{min-width:52px;justify-content:center}}
-.intro-seg.s2{background:color-mix(in srgb,var(--area,var(--lab)) 18%,var(--surface));color:color-mix(in srgb,var(--area,var(--lab)) 70%,#000)}
 /* Copertina Canva */
 .intro-top.has-cover{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,38%);align-items:center}
 .intro-cover{margin:0;position:relative;z-index:1;border-radius:14px;overflow:hidden;border:3px solid rgba(255,255,255,.55);box-shadow:0 8px 24px rgba(0,0,0,.25);aspect-ratio:16/9;background:rgba(255,255,255,.12)}
 .intro-cover img{display:block;width:100%;height:100%;object-fit:cover}
 @media (max-width:760px){.intro-top.has-cover{grid-template-columns:auto minmax(0,1fr)}.intro-cover{grid-column:1/-1;order:-1}}
+
+/* Livelli compatti su schermo stretto: una riga per livello, la descrizione resta nella scheda del livello */
+@media (max-width:760px){
+  .intro-path{gap:8px;padding-top:14px}
+  .intro-path::before{display:none}
+  .intro-card{flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:0 12px 10px}
+  .intro-lv{flex:0 0 calc(100% + 24px);margin:0 -12px 4px}
+  .intro-g,.intro-kinds{display:none}
+  .intro-t{font-size:15px;flex:1 1 60%}
+  .intro-foot{border-top:0;padding-top:0;margin-left:auto}
+}
+/* Presentazione più bassa su schermo stretto */
+@media (max-width:760px){
+  .intro-badge{display:none}
+  .intro-top.has-cover{grid-template-columns:minmax(0,1fr)}
+  .intro-cover{aspect-ratio:21/9}
+  .intro-facts{gap:4px 14px}
+  .intro-facts li{background:none;border:0;padding:0;font-size:14px}
+}

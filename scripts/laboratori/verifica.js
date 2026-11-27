@@ -23,9 +23,9 @@
     function showBest() { const b = get(l); best.textContent = b ? `Miglior risultato: ${b.score}/${b.total}${b.score / b.total >= 0.7 ? " · livello superato" : ""}` : ""; best.hidden = !b; }
     function start() {
       body.innerHTML = ""; sc.textContent = ""; msg.textContent = ""; let answered = 0, right = 0;
-      const qs = shuf(pool).slice(0, N);
+      const qs = shuf(pool).slice(0, N); const cards = [];
       qs.forEach((q, qi) => {
-        const [text, opts, a, why, fbs] = q; const d = el("div", "vq");
+        const [text, opts, a, why, fbs] = q; const d = el("div", "vq" + (qi === 0 ? " cur" : "")); cards.push(d);
         const id = `vq-${l}-${qi}`; d.appendChild(el("p", "vq-q", `<span class="vq-n">${qi + 1}</span><span id="${id}">${esc(text)}</span>`));
         const g = el("div", "vq-opts"); g.setAttribute("role", "group"); g.setAttribute("aria-labelledby", id);
         const f = el("div"); f.hidden = true; let done = false;
@@ -38,6 +38,13 @@
             if (j !== a) [...g.children].forEach((y) => { if (+y.dataset.j === a) y.classList.add("ok"); });
             const msg = j === a ? why : (fbs && fbs[j] ? fbs[j] : why);
             f.className = "fb " + (j === a ? "ok" : "ko"); f.innerHTML = (j === a ? "<strong>Giusto.</strong> " : "<strong>Non proprio.</strong> ") + esc(msg); f.hidden = false;
+            // Su schermo stretto le domande si vedono una alla volta (verifica.css): qui il passo successivo
+            const next = cards[qi + 1];
+            if (next) {
+              const go = el("button", "btn vq-next", `Domanda ${qi + 2} di ${qs.length}`); go.type = "button";
+              go.onclick = () => { d.classList.remove("cur"); next.classList.add("cur"); next.querySelector(".vq-opts button")?.focus(); };
+              d.appendChild(go);
+            }
             sc.textContent = `${right}/${answered}`;
             if (answered === qs.length) {
               const prev = get(l); const r = { score: right, total: qs.length, at: new Date().toISOString() };
