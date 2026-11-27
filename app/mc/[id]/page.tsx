@@ -22,6 +22,7 @@ import {
 } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 import { getSdgBadge, normalizeSdgList } from "@/lib/sdg-badges";
+import { OG_IMAGE, jsonLdHtml, mcSchema } from "@/lib/seo";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -42,9 +43,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Book ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
     description: mc.descrizione,
+    alternates: { canonical: `/mc/${mc.id}/` },
     openGraph: {
       title: `Book ProfTecnologIA ${areaLabel} — ${mc.titolo}`,
       description: mc.descrizione,
+      url: `/mc/${mc.id}/`,
+      type: "article",
+      siteName: "Book ProfTecnologIA",
+      locale: "it_IT",
+      images: [OG_IMAGE],
     },
   };
 }
@@ -84,6 +91,7 @@ export default async function MCPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-[#f7f8f5] text-slate-900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdHtml(mcSchema(mc))} />
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },

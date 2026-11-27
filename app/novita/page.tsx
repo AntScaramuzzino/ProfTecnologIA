@@ -5,6 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { VERSIONI, VERSIONE_ATTUALE } from "@/lib/versioni";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/novita/" },
   title: "Novità — Book ProfTecnologIA",
   description: "Che cosa è cambiato in ogni versione del Book ProfTecnologIA, dalla prima edizione online a oggi.",
 };

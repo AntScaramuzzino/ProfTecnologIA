@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Atkinson_Hyperlegible } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
+import { OG_IMAGE } from "@/lib/seo";
 
 /**
  * Caricamento font Atkinson Hyperlegible via next/font (self-hosted da Vercel/GitHub Pages).
@@ -20,7 +21,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://book.proftecnologia.it"),
   title: "Book ProfTecnologIA — Libro di Tecnologia",
   applicationName: "Book ProfTecnologIA",
-  description: "Percorso didattico interattivo per la scuola secondaria di primo grado",
+  description: "Il libro di Tecnologia per la scuola secondaria di primo grado: micro-competenze, laboratori interattivi e tavole di disegno.",
+  authors: [{ name: "Antonio Scaramuzzino", url: "https://www.proftecnologia.it" }],
+  openGraph: { siteName: "Book ProfTecnologIA", locale: "it_IT", type: "website", images: [OG_IMAGE] },
+  twitter: { card: "summary_large_image", images: [OG_IMAGE.url] },
 };
 
 export default function RootLayout({

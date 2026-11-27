@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!t) return {};
   return {
     title: `${t.titolo} — Assonometrie`,
+    alternates: { canonical: `/laboratori/assonometrie/${t.slug}/` },
     description: `Tavola guidata di assonometria ${NOME_TIPO[t.tipo].toLowerCase()}. ${t.titolo}: il solido nell’assonometro, con assi e misure, e la costruzione passo per passo.`,
   };
 }

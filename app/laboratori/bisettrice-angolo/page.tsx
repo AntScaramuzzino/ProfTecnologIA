@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import GeoGebraAngleBisectorEmbed from "@/components/mc/GeoGebraAngleBisectorEmbed";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/laboratori/bisettrice-angolo/" },
   title: "Costruzione della bisettrice — Laboratorio GeoGebra",
   description: "Animazione interattiva con righello e compasso per costruire la bisettrice di un angolo.",
 };

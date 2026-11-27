@@ -13,6 +13,7 @@ import {
 } from "@/lib/geogebra-assonometrie";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/assonometrie/" },
   title: "Assonometrie — Book ProfTecnologIA",
   description:
     "Tavole guidate di assonometria cavaliera, isometrica e monometrica: il solido nell’assonometro, con assi e misure, e la costruzione passo per passo con GeoGebra.",

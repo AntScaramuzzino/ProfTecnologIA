@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/credits/" },
   title: "Credits — Book ProfTecnologIA",
   description: "Fonti, crediti e dichiarazione sull'uso dell'intelligenza artificiale nel progetto ProfTecnologIA.",
 };

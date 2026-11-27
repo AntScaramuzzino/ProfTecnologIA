@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
@@ -14,6 +15,19 @@ export async function generateStaticParams() {
 
 interface PageProps {
   params: Promise<{ area: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { area } = await params;
+  const areaUpper = area.toUpperCase();
+  const meta = AREA_META[areaUpper];
+  if (!meta) return {};
+  const n = getMCsByArea(areaUpper).length;
+  return {
+    title: `${meta.label} — Tecnologia per la scuola media · Book ProfTecnologIA`,
+    description: `${meta.label}: ${n} micro-competenze di Tecnologia per la scuola secondaria di primo grado, dalla 1ª alla 3ª, con laboratori interattivi e compiti di realtà.`,
+    alternates: { canonical: `/area/${areaUpper}/` },
+  };
 }
 
 export default async function AreaPage({ params }: PageProps) {

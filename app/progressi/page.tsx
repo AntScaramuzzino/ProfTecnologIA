@@ -4,6 +4,8 @@ import { normalizeSdgList } from "@/lib/sdg-badges";
 import ProgressiClient from "./ProgressiClient";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/progressi/" },
+  robots: { index: false, follow: true },
   title: "Progressi — Book ProfTecnologIA",
   description: "Traccia i tuoi progressi nelle 52 micro-competenze di Tecnologia",
 };

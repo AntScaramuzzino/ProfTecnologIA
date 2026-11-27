@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!t) return {};
   return {
     title: `${t.titolo} — Proiezioni ortogonali`,
+    alternates: { canonical: `/laboratori/proiezioni/${t.slug}/` },
     description: t.proiettore
       ? `Tavola guidata di proiezioni ortogonali. ${t.titolo}: il solido da ruotare nel proiettore e la costruzione delle tre viste passo per passo.`
       : `Tavola guidata di proiezioni ortogonali. ${t.titolo}: la costruzione passo per passo con GeoGebra.`,

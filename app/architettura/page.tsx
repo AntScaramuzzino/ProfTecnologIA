@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { getAllMCs } from "@/lib/mc-loader";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/architettura/" },
   title: "Architettura semantica — Book ProfTecnologIA",
   description: "La struttura del sistema ProfTecnologIA: agenti AI, pipeline di produzione, micro-competenze e framework didattici.",
 };

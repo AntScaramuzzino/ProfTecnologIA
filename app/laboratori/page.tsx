@@ -9,6 +9,7 @@ import { MC_ASSONOMETRIE, MC_MONOMETRICA, TAVOLE_ASS_PRONTE } from "@/lib/geogeb
 import { MC_OFFICINA, OFFICINA_MOTIVI, officinaSrc } from "@/lib/officina-motivi";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/laboratori/" },
   title: "Laboratori interattivi — Book ProfTecnologIA",
   description:
     "Laboratori interattivi collegati alle micro-competenze: simulatori, smistatori, ispettori di artefatti, tavoli grafici 3D e programmatori, su tre livelli.",

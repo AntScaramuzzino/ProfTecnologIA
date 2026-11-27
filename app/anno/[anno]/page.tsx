@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
@@ -13,6 +14,18 @@ export async function generateStaticParams() {
 
 interface PageProps {
   params: Promise<{ anno: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { anno } = await params;
+  const annoNum = Number.parseInt(anno, 10);
+  if (![1, 2, 3].includes(annoNum)) return {};
+  const n = getMCsByAnno(annoNum as 1 | 2 | 3).length;
+  return {
+    title: `Tecnologia classe ${annoNum}ª media — Book ProfTecnologIA`,
+    description: `Le ${n} micro-competenze di Tecnologia per la classe ${annoNum}ª della scuola secondaria di primo grado, divise per area: testo, video, laboratorio interattivo, escape room e compito di realtà.`,
+    alternates: { canonical: `/anno/${annoNum}/` },
+  };
 }
 
 export default async function AnnoPage({ params }: PageProps) {

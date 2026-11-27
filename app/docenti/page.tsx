@@ -5,6 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { costruisciPianoSettimane } from "@/lib/piano-settimane";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/docenti/" },
   title: "Docenti: pianifica l’anno — Book ProfTecnologIA",
   description:
     "Il piano annuale di Tecnologia settimana per settimana, per le tre classi: una lezione di teoria e una di disegno o coding, da adattare al ritmo della propria classe.",

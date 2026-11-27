@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import MCCard from "@/components/MCCard";
 import UiIcon from "@/components/UiIcon";
@@ -13,9 +14,16 @@ import { getMCEsploraImages } from "@/lib/content-loader";
 import { COSTRUZIONI_GEOGEBRA } from "@/lib/geogebra-costruzioni";
 import { TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
 import { TAVOLE_ASS_PRONTE } from "@/lib/geogebra-assonometrie";
+import { homeSchema, jsonLdHtml } from "@/lib/seo";
 
 /** Tavole GeoGebra pubblicate: costruzioni geometriche + proiezioni ortogonali + assonometrie (si aggiorna da solo) */
 const tavoleGeoGebra = COSTRUZIONI_GEOGEBRA.length + TAVOLE_PO_PRONTE.length + TAVOLE_ASS_PRONTE.length;
+
+export const metadata: Metadata = {
+  title: "Book ProfTecnologIA — Libro di Tecnologia per la scuola media",
+  description: `Il libro di Tecnologia per la scuola secondaria di primo grado, progettato sulle Indicazioni Nazionali 2025: ${getAllMCs().length} micro-competenze per la 1ª, la 2ª e la 3ª, con testo, video, laboratorio interattivo, escape room e compito di realtà.`,
+  alternates: { canonical: "/" },
+};
 
 export default function HomePage() {
   const allMCs = getAllMCs();
@@ -53,6 +61,7 @@ export default function HomePage() {
 
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdHtml(homeSchema(allMCs.length))} />
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="border-b border-slate-200 bg-white">
@@ -63,6 +72,7 @@ export default function HomePage() {
             <div>
               <h1 className="max-w-3xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
                 Book Prof<span className="text-brand-600">TecnologIA</span>
+                <span className="sr-only">: il libro di Tecnologia per la scuola secondaria di primo grado</span>
               </h1>
               <p className="mt-2 text-sm text-slate-600">di Prof. Ing. Antonio Scaramuzzino</p>
 

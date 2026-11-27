@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import GeoGebraPerpendicularEmbed from "@/components/mc/GeoGebraPerpendicularEmbed";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/laboratori/perpendicolare/" },
   title: "Costruzione della perpendicolare — Laboratorio GeoGebra",
   description: "Animazione interattiva con righello e compasso per costruire la perpendicolare a una retta nel punto P.",
 };

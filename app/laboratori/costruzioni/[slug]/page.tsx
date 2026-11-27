@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!c) return {};
   return {
     title: `${c.titolo} — Laboratorio GeoGebra`,
+    alternates: { canonical: `/laboratori/costruzioni/${c.slug}/` },
     description: `Tavola animata con righello e compasso, passo per passo: ${c.titolo.toLowerCase()}.`,
   };
 }

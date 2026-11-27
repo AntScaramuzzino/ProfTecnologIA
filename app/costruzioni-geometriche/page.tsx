@@ -9,6 +9,7 @@ import {
 } from "@/lib/geogebra-costruzioni";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/costruzioni-geometriche/" },
   title: "Costruzioni geometriche — Book ProfTecnologIA",
   description:
     "Tutte le costruzioni geometriche con righello e compasso, animate passo per passo con GeoGebra: perpendicolari e parallele, angoli, poligoni, triangoli e quadrilateri, tangenti e raccordi, archi, ovali e spirali, coniche, sezione aurea, trasformazioni, motivi modulari (greche, stelle, rosoni, tassellature, fregi, frattali).",

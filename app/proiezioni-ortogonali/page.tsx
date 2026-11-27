@@ -12,6 +12,7 @@ import {
 } from "@/lib/geogebra-proiezioni";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/proiezioni-ortogonali/" },
   title: "Proiezioni ortogonali — Book ProfTecnologIA",
   description:
     "Tavole guidate di proiezioni ortogonali: il solido da ruotare nel proiettore e la costruzione delle tre viste passo per passo con GeoGebra, dal punto ai solidi.",
