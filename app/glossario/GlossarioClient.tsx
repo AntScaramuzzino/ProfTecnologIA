@@ -90,13 +90,13 @@ function CompetenzaCard({ nome, entry, apertoIniziale = false }: { nome: string;
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
             <span
-              className="rounded-full px-2 py-0.5 text-[10px] font-black uppercase tracking-widest text-white"
+              className="rounded-full px-2 py-0.5 text-xs font-black uppercase tracking-widest text-white"
               style={{ backgroundColor: colore }}
             >
               {entry.categoria}
             </span>
             {entry.area_correlata && (
-              <span className="font-mono text-[10px] text-slate-400">
+              <span className="font-mono text-xs text-slate-500">
                 {entry.area_correlata}
               </span>
             )}
@@ -104,7 +104,7 @@ function CompetenzaCard({ nome, entry, apertoIniziale = false }: { nome: string;
           <p className="mt-1 text-sm font-black capitalize text-slate-900">{nome}</p>
         </div>
         <svg
-          className={`mt-1 h-4 w-4 shrink-0 text-slate-400 transition-transform ${aperto ? "rotate-180" : ""}`}
+          className={`mt-1 h-4 w-4 shrink-0 text-slate-500 transition-transform ${aperto ? "rotate-180" : ""}`}
           viewBox="0 0 16 16" fill="currentColor"
         >
           <path d="M8 10.5L2 4.5h12L8 10.5z" />
@@ -124,7 +124,7 @@ function CompetenzaCard({ nome, entry, apertoIniziale = false }: { nome: string;
               style={{ borderColor: `${colore}30`, backgroundColor: `${colore}08` }}
             >
               <p
-                className="mb-1 text-[10px] font-black uppercase tracking-widest"
+                className="mb-1 text-xs font-black uppercase tracking-widest"
                 style={{ color: colore }}
               >
                 Esempio concreto
@@ -189,7 +189,7 @@ export default function GlossarioClient() {
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-5xl px-6 py-10">
           {/* Breadcrumb */}
-          <nav className="mb-6 flex items-center gap-2 text-xs text-slate-400">
+          <nav className="mb-6 flex items-center gap-2 text-xs text-slate-500">
             <Link href="/" className="hover:text-slate-700">Book ProfTecnologIA</Link>
             <span>/</span>
             <span className="font-semibold text-slate-700">Glossario competenze</span>
@@ -220,7 +220,7 @@ export default function GlossarioClient() {
           <div className="mt-8 flex gap-3">
             <div className="relative flex-1">
               <svg
-                className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+                className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
               >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
@@ -230,7 +230,7 @@ export default function GlossarioClient() {
                 placeholder="Cerca una competenza, una categoria o una parola chiave..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 bg-white py-3 pl-10 pr-4 text-sm placeholder-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+                className="w-full rounded-xl border border-slate-300 bg-white py-3 pl-10 pr-4 text-sm placeholder-slate-500 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
               />
             </div>
             {query && (
@@ -315,7 +315,7 @@ export default function GlossarioClient() {
         )}
 
         {/* ── Footer nav ── */}
-        <div className="mt-12 flex items-center justify-between border-t border-slate-200 pt-6 text-sm text-slate-400">
+        <div className="mt-12 flex items-center justify-between border-t border-slate-200 pt-6 text-sm text-slate-500">
           <Link href="/" className="hover:text-slate-700">← Torna alla home</Link>
           <span>{Object.keys(GLOSSARIO).length} competenze · {CATEGORIE.length} categorie</span>
         </div>

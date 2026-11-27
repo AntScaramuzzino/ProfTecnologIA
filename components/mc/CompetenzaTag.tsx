@@ -142,7 +142,7 @@ export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProp
                   {popover.entry.emoji}
                 </span>
                 <div>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-500">
                     {popover.entry.categoria}
                   </p>
                   <p className="text-sm font-black leading-tight text-slate-900 capitalize">
@@ -154,7 +154,7 @@ export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProp
                 type="button"
                 onClick={close}
                 aria-label="Chiudi"
-                className="shrink-0 rounded-full p-1 text-slate-400 hover:bg-slate-200 hover:text-slate-700"
+                className="shrink-0 rounded-full p-1 text-slate-500 hover:bg-slate-200 hover:text-slate-700"
               >
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
                   <path d="M1.5 1.5l11 11M12.5 1.5l-11 11" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
@@ -172,7 +172,7 @@ export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProp
               {/* Esempio */}
               {popover.entry.esempio && (
                 <div className="rounded-lg border border-amber-100 bg-amber-50 px-3 py-2.5">
-                  <p className="mb-1 text-[10px] font-black uppercase tracking-widest text-amber-600">
+                  <p className="mb-1 text-xs font-black uppercase tracking-widest text-amber-600">
                     Esempio concreto
                   </p>
                   <p className="text-xs leading-5 text-amber-900">
@@ -183,7 +183,7 @@ export default function CompetenzaTag({ competenza, areaHex }: CompetenzaTagProp
 
               {/* Area correlata */}
               {popover.entry.area_correlata && (
-                <p className="text-[10px] text-slate-400">
+                <p className="text-xs text-slate-500">
                   Area correlata:{" "}
                   <span className="font-mono font-semibold">
                     {popover.entry.area_correlata}

@@ -131,7 +131,7 @@ export default function LaboratoriPage() {
                         <div className="aspect-video w-full" style={{ background: `${color}22` }} />
                       )}
                       <span
-                        className="absolute left-3 top-3 rounded-full px-2.5 py-1 font-mono text-[11px] font-black uppercase tracking-widest text-white shadow"
+                        className="absolute left-3 top-3 rounded-full px-2.5 py-1 font-mono text-xs font-black uppercase tracking-widest text-white shadow"
                         style={{ background: color }}
                       >
                         {l.archetipo}
@@ -204,7 +204,7 @@ export default function LaboratoriPage() {
                         className="aspect-video w-full object-cover transition duration-300 group-hover:scale-[1.03]"
                       />
                       <span
-                        className="absolute left-3 top-3 rounded-full px-2.5 py-1 font-mono text-[11px] font-black uppercase tracking-widest text-white shadow"
+                        className="absolute left-3 top-3 rounded-full px-2.5 py-1 font-mono text-xs font-black uppercase tracking-widest text-white shadow"
                         style={{ background: color }}
                       >
                         Libro 3D

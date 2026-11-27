@@ -1,5 +1,7 @@
 import Link from "next/link";
 import MCCard from "@/components/MCCard";
+import UiIcon from "@/components/UiIcon";
+import AreaIcon from "@/components/AreaIcon";
 import LezioneSettimana from "@/components/LezioneSettimana";
 import { costruisciPianoSettimane } from "@/lib/piano-settimane";
 import { AREA_META, getAllMCs, type MC } from "@/lib/mc-loader";
@@ -41,75 +43,36 @@ export default function HomePage() {
     0,
   );
   const nelLibro = [
-    { value: LABORATORI.length, label: "Laboratori interattivi", href: "/laboratori/" },
-    { value: ESCAPE_ROOMS.length, label: "Escape room", href: "/laboratori/" },
-    { value: videoAnimati, label: "Video animati", href: undefined },
-    { value: ESPLORAZIONI.length, label: "Esplorazioni immersive", href: "/laboratori/#esplorazioni" },
-    { value: tavoleGeoGebra, label: "Tavole GeoGebra", href: "/costruzioni-geometriche/" },
-    { value: Object.keys(GLOSSARIO).length, label: "Voci del glossario", href: "/glossario/" },
-  ];
-
-  const stats = [
-    { value: allMCs.length.toString(), label: "Micro-competenze" },
-    { value: areas.length.toString(),  label: "Aree tematiche" },
-    { value: "3",                      label: "Anni di scuola" },
-    { value: "6",                      label: "Zone per MC" },
-    { value: "IN 2025",                label: "D.M. n. 221/2025" },
-    { value: "DC 3.0",                 label: "DigComp" },
+    { value: LABORATORI.length, label: "laboratori interattivi", href: "/laboratori/" },
+    { value: ESCAPE_ROOMS.length, label: "escape room", href: "/laboratori/" },
+    { value: videoAnimati, label: "video animati", href: undefined },
+    { value: ESPLORAZIONI.length, label: "esplorazioni immersive", href: "/laboratori/#esplorazioni" },
+    { value: tavoleGeoGebra, label: "tavole GeoGebra", href: "/costruzioni-geometriche/" },
+    { value: Object.keys(GLOSSARIO).length, label: "voci del glossario", href: "/glossario/" },
   ];
 
   return (
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="relative overflow-hidden border-b border-slate-200 bg-white">
-        {/* Sfondo decorativo */}
-        <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-50 opacity-70" />
-          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-brand-50 opacity-50" />
-        </div>
-
-        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:py-16">
+      <section className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:py-16">
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-12">
 
             {/* Testo hero */}
             <div>
-              {/* Badge autore */}
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-1.5">
-                <span className="h-2 w-2 rounded-full bg-brand-500" />
-                <span className="text-xs font-bold text-brand-800 sm:text-sm">
-                  Prof. Ing. Antonio Scaramuzzino · ProfTecnologia
-                </span>
-              </div>
-
               <h1 className="max-w-3xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                <span className="block text-2xl font-black uppercase tracking-[0.25em] text-brand-700 sm:text-3xl">Book</span>
-                Prof<span className="text-brand-600">TecnologIA</span>
+                Book Prof<span className="text-brand-600">TecnologIA</span>
               </h1>
+              <p className="mt-2 text-sm text-slate-600">di Prof. Ing. Antonio Scaramuzzino</p>
 
-              <p className="mt-2 text-base font-semibold text-slate-500 sm:text-lg">
-                Il primo libro di Tecnologia nativamente progettato sulle Indicazioni Nazionali 2025 e arricchito con esperienze interattive con il supporto dell’IA
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-800 sm:text-xl">
+                Il primo libro di Tecnologia nativamente progettato sulle Indicazioni Nazionali 2025 e arricchito con esperienze interattive con il supporto dell’IA.
               </p>
 
-              <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-                {[
-                  `${allMCs.length} micro-competenze per la scuola secondaria di I grado: leggi, guardi,`,
-                  "sperimenti e metti alla prova quello che hai imparato. Per ogni competenza ci sono testi",
-                  "con i concetti chiave evidenziati, un video animato, un laboratorio interattivo, una",
-                  `escape room e un compito di realtà. E poi ${ESPLORAZIONI.length} esplorazioni immersive`,
-                  `dentro impianti reali, ${tavoleGeoGebra} tavole GeoGebra per il disegno tecnico e strumenti per`,
-                  "pianificare l'anno.",
-                ].join(" ")}
+              <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+                {allMCs.length} micro-competenze per la scuola secondaria di I grado. Per ognuna: testo con i concetti chiave, video animato, laboratorio interattivo, escape room e compito di realtà.
               </p>
-
-              {/* Framework allineati */}
-              <div className="mt-5 flex flex-wrap gap-2">
-                {["IN 2025 · D.M. 221/2025", "DigComp 3.0", "EntreComp", "Agenda 2030", "DSA First"].map((f) => (
-                  <span key={f} className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
-                    {f}
-                  </span>
-                ))}
-              </div>
 
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link
@@ -118,17 +81,11 @@ export default function HomePage() {
                 >
                   Esplora il catalogo
                 </Link>
-                <Link
-                  href="/anno/1"
-                  className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-800 hover:border-slate-500"
-                >
-                  Inizia dalla Classe 1ª →
-                </Link>
                 <a
                   href="https://eduwiki.proftecnologia.it"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-blue-300 bg-blue-50 px-5 py-3 text-sm font-bold text-blue-700 hover:bg-blue-100 hover:border-blue-400"
+                  className="rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-bold text-slate-800 hover:border-brand-600"
                 >
                   EduWiki didattico →
                 </a>
@@ -138,47 +95,37 @@ export default function HomePage() {
             {/* Colonna destra: classi + «Nel libro trovi» */}
             <div className="space-y-6">
               <div>
-                <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-500">Scegli la classe</h2>
+                <h2 className="mb-3 text-base font-bold text-slate-900">Scegli la classe</h2>
                 <div className="grid grid-cols-3 gap-3">
                   {years.map(({ anno, mcs }) => (
                     <Link
                       key={anno}
                       href={`/anno/${anno}`}
-                      className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 sm:p-6"
+                      className="group rounded-xl border border-slate-200 bg-white p-4 text-center transition hover:-translate-y-0.5 hover:border-brand-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 sm:p-6"
                     >
-                      <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Classe</div>
-                      <div className="text-3xl font-black text-slate-950 sm:text-4xl">{anno}<span className="text-lg font-bold text-slate-400">ª</span></div>
-                      <div className="mt-4 text-2xl font-black text-brand-700">{mcs.length}</div>
-                      <div className="text-xs font-medium text-slate-500">MC</div>
+                      <div className="text-sm text-slate-600">Classe</div>
+                      <div className="text-3xl font-black text-slate-950 sm:text-4xl">{anno}<span className="text-lg font-bold text-slate-500">ª</span></div>
+                      <div className="mt-3 text-sm text-slate-600">{mcs.length} lezioni</div>
                     </Link>
                   ))}
                 </div>
               </div>
 
               <div>
-                <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-slate-500">Nel libro trovi</h2>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-                  {nelLibro.map(({ value, label, href }) => {
-                    const contenuto = (
-                      <>
-                        <div className="text-2xl font-black text-brand-700">{value}</div>
-                        <div className="mt-0.5 text-xs font-medium leading-snug text-slate-600">{label}</div>
-                      </>
-                    );
-                    const classi = "block rounded-xl border border-slate-200 bg-white p-3 text-center";
-                    return href ? (
-                      <Link
-                        key={label}
-                        href={href}
-                        className={`${classi} transition hover:border-brand-300 hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500`}
-                      >
-                        {contenuto}
-                      </Link>
-                    ) : (
-                      <div key={label} className={classi}>{contenuto}</div>
-                    );
-                  })}
-                </div>
+                <h2 className="mb-3 text-base font-bold text-slate-900">Nel libro trovi anche</h2>
+                <ul className="grid gap-x-6 gap-y-2 text-sm text-slate-700 sm:grid-cols-2">
+                  {nelLibro.map(({ value, label, href }) => (
+                    <li key={label}>
+                      {href ? (
+                        <Link href={href} className="underline decoration-slate-300 underline-offset-4 hover:text-brand-700 hover:decoration-brand-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
+                          <span className="font-bold tabular-nums">{value}</span> {label}
+                        </Link>
+                      ) : (
+                        <><span className="font-bold tabular-nums">{value}</span> {label}</>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -188,25 +135,10 @@ export default function HomePage() {
       {/* ── LEZIONE DELLA SETTIMANA ──────────────────────────────────────── */}
       <LezioneSettimana piano={pianoSettimane} />
 
-      {/* ── STATS ────────────────────────────────────────────────────────── */}
-      <section className="border-b border-slate-200 bg-slate-950">
-        <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6">
-          <div className="grid grid-cols-3 gap-px bg-slate-800 sm:grid-cols-6">
-            {stats.map(({ value, label }) => (
-              <div key={label} className="bg-slate-950 px-4 py-4 text-center">
-                <div className="text-xl font-black text-brand-400 sm:text-2xl">{value}</div>
-                <div className="mt-0.5 text-xs font-medium text-slate-400">{label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── AREE TEMATICHE ───────────────────────────────────────────────── */}
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
         <div className="mb-5">
-          <p className="text-xs font-bold uppercase tracking-wide text-slate-500">{areas.length} aree tematiche</p>
-          <h2 className="text-2xl font-black sm:text-3xl">Il percorso triennale</h2>
+          <h2 className="text-2xl font-black sm:text-3xl">Le {areas.length} aree del triennio</h2>
         </div>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {areas.map(({ code, meta, count }) => (
@@ -214,12 +146,12 @@ export default function HomePage() {
               key={code}
               href={`/area/${code}`}
               className={cx(
-                "group rounded-xl border bg-gradient-to-br p-4 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2",
+                "group rounded-xl border p-4 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2",
                 areaAccent[code]
               )}
             >
               <div className="flex items-start justify-between">
-                <span className="text-3xl">{meta.emoji}</span>
+                <AreaIcon area={code} size={28} className="text-slate-800" />
                 <span className="rounded-full bg-white/60 px-2 py-0.5 font-mono text-xs font-bold text-slate-600">{code}</span>
               </div>
               <h3 className="mt-3 text-sm font-black text-slate-900">{meta.label}</h3>
@@ -233,7 +165,6 @@ export default function HomePage() {
       <section id="catalogo" className="mx-auto max-w-7xl px-4 pb-10 sm:px-6 sm:pb-14">
         <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wide text-slate-500">Vetrina</p>
             <h2 className="text-2xl font-black tracking-tight sm:text-3xl">MC con testi, immagini e audio</h2>
           </div>
           <span className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm text-slate-500">
@@ -273,7 +204,6 @@ export default function HomePage() {
 
             {/* Brand + identità */}
             <div>
-              <p className="mb-2 text-xs font-bold uppercase tracking-widest text-brand-400">Il progetto</p>
               <h2 className="text-3xl font-black sm:text-4xl">
                 Book Prof<span className="text-brand-400">TecnologIA</span>
               </h2>
@@ -289,7 +219,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="rounded-full border border-brand-700 px-4 py-2 text-xs font-bold text-brand-400 hover:bg-brand-900"
                 >
-                  🌐 www.proftecnologia.it
+                  <UiIcon name="web" size={14} className="mr-1.5" />www.proftecnologia.it
                 </a>
                 <a
                   href="https://eduwiki.proftecnologia.it"
@@ -297,20 +227,19 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="rounded-full border border-blue-700 px-4 py-2 text-xs font-bold text-blue-400 hover:bg-blue-900"
                 >
-                  📚 EduWiki didattico
+                  <UiIcon name="wiki" size={14} className="mr-1.5" />EduWiki didattico
                 </a>
                 <a
                   href="mailto:antonio.scaramuzzino@coopinrete.it"
                   className="rounded-full border border-slate-700 px-4 py-2 text-xs font-bold text-slate-400 hover:border-slate-500"
                 >
-                  ✉️ Contatto editori
+                  <UiIcon name="mail" size={14} className="mr-1.5" />Contatto editori
                 </a>
               </div>
             </div>
 
             {/* Card autore */}
             <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 sm:p-8">
-              <p className="mb-4 text-xs font-bold uppercase tracking-widest text-brand-400">L'autore</p>
               <div className="flex items-start gap-4">
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-700 text-xl font-black text-white">
                   AS

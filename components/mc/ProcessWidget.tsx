@@ -127,13 +127,13 @@ export default function ProcessWidget({ titolo, steps, areaHex }: ProcessWidgetP
               </div>
 
               <div className="flex items-start gap-2">
-                <span className="text-sm font-semibold text-slate-400 w-16 flex-shrink-0 mt-0.5">Chi:</span>
+                <span className="text-sm font-semibold text-slate-500 w-16 flex-shrink-0 mt-0.5">Chi:</span>
                 <span className="text-sm font-semibold text-slate-700">{step.attore}</span>
               </div>
 
               {step.impatto && (
                 <div className="flex items-start gap-2">
-                  <span className="text-sm font-semibold text-slate-400 w-16 flex-shrink-0 mt-0.5">Impatto:</span>
+                  <span className="text-sm font-semibold text-slate-500 w-16 flex-shrink-0 mt-0.5">Impatto:</span>
                   <span className="text-sm text-slate-600">{step.impatto}</span>
                 </div>
               )}

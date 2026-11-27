@@ -14,7 +14,7 @@ export default function PerpendicularLaboratoryPage() {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: "MC-DIS-1-01", href: "/mc/MC-DIS-1-01", emoji: "📐", color: "#1A3A7A" },
+          { label: "MC-DIS-1-01", href: "/mc/MC-DIS-1-01", area: "DIS", color: "#1A3A7A" },
           { label: "Laboratorio GeoGebra", color: "#1A3A7A" },
         ]}
       />

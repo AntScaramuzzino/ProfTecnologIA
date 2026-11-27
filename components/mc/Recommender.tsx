@@ -13,7 +13,8 @@
  */
 
 import Link from "next/link";
-import { getAllMCs, AREA_META, LEVEL_META } from "@/lib/mc-loader";
+import AreaIcon from "@/components/AreaIcon";
+import { getAllMCs, LEVEL_META } from "@/lib/mc-loader";
 import type { MC } from "@/lib/mc-loader";
 import { useProgress } from "@/lib/useProgress";
 
@@ -112,7 +113,6 @@ export default function Recommender() {
           <div className="space-y-2">
             {recommendations.map((mc, idx) => {
               const lv = mc.outputApp.livelloDigComp as "F" | "I" | "A" | "H";
-              const areaMeta = AREA_META[mc.area];
               const isStretch = lv !== store.digcompLevel;
 
               return (
@@ -121,7 +121,7 @@ export default function Recommender() {
                   href={`/mc/${mc.id}`}
                   className="flex items-center gap-3 rounded-xl bg-white border border-indigo-100 px-4 py-3 hover:border-indigo-300 hover:shadow-sm transition-all group"
                 >
-                  <span className="text-xl shrink-0">{areaMeta?.emoji ?? "📚"}</span>
+                  <AreaIcon area={mc.area} size={20} className="text-slate-700" />
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-0.5">
                       <span className="text-xs font-mono text-gray-400">{mc.id}</span>

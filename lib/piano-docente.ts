@@ -5,7 +5,8 @@
 export interface VoceSettimana {
   mc?: string;
   mcTitolo?: string;
-  emoji?: string;
+  /** Codice area (MAT, ALI…) per l'icona. */
+  area?: string;
   /** «Teoria», «Disegno» o «Coding». */
   tipo: string;
   titolo: string;

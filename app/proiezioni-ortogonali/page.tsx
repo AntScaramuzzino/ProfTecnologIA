@@ -42,7 +42,7 @@ export default function ProiezioniOrtogonaliPage() {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: MC_PROIEZIONI, href: `/mc/${MC_PROIEZIONI}`, emoji: "📐", color: "#1A3A7A" },
+          { label: MC_PROIEZIONI, href: `/mc/${MC_PROIEZIONI}`, area: "DIS", color: "#1A3A7A" },
           { label: "Proiezioni ortogonali", color: "#1A3A7A" },
         ]}
       />

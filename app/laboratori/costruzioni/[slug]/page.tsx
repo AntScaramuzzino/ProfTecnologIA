@@ -44,7 +44,7 @@ export default async function CostruzionePage({ params }: Props) {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: MC_COSTRUZIONI, href: `/mc/${MC_COSTRUZIONI}`, emoji: "📐", color: "#1A3A7A" },
+          { label: MC_COSTRUZIONI, href: `/mc/${MC_COSTRUZIONI}`, area: "DIS", color: "#1A3A7A" },
           { label: "Laboratorio GeoGebra", color: "#1A3A7A" },
         ]}
       />

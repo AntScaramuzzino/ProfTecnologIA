@@ -84,14 +84,14 @@ interface MCPageClientProps {
 // ── Mapping sezione MD → tab ID ──────────────────────────────────────────────
 
 const ZONE_TABS: NavigatorTab[] = [
-  { id: "INNESCA",      label: "INNESCA",      emoji: "⚡" },
-  { id: "ESPLORA",      label: "ESPLORA",      emoji: "📖" },
-  { id: "OSSERVA",      label: "OSSERVA",      emoji: "🔍" },
-  { id: "SPERIMENTA",   label: "SPERIMENTA",   emoji: "🔬" },
-  { id: "AGISCI",       label: "AGISCI",       emoji: "🌍" },
-  { id: "RIPASSA",      label: "RIPASSA",      emoji: "🃏" },
-  { id: "PROFESSIONE",  label: "PROFESSIONI",  emoji: "💼" },
-  { id: "CLIL",         label: "CLIL",         emoji: "📎" },
+  { id: "INNESCA",      label: "INNESCA" },
+  { id: "ESPLORA",      label: "ESPLORA" },
+  { id: "OSSERVA",      label: "OSSERVA" },
+  { id: "SPERIMENTA",   label: "SPERIMENTA" },
+  { id: "AGISCI",       label: "AGISCI" },
+  { id: "RIPASSA",      label: "RIPASSA" },
+  { id: "PROFESSIONE",  label: "PROFESSIONI" },
+  { id: "CLIL",         label: "CLIL" },
 ];
 
 function sectionToTabId(title: string): string | null {
@@ -635,7 +635,7 @@ function ZonePanel({
           <p className="text-xs font-black uppercase tracking-widest text-slate-500">
             🚀 Professioni del Futuro — orizzonte 2030
           </p>
-          <p className="mt-1 text-sm text-slate-400">
+          <p className="mt-1 text-sm text-slate-500">
             {profList.length > 1
               ? `${profList.length} ruoli professionali collegati a questa micro-competenza`
               : "Ruolo professionale collegato a questa micro-competenza"}
@@ -693,14 +693,14 @@ function ZonePanel({
                   />
                   <div className="p-4">
                     {/* Italiano */}
-                    <p className="mb-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                    <p className="mb-0.5 text-xs font-black uppercase tracking-widest text-slate-500">
                       IT
                     </p>
                     <p className="text-sm font-semibold text-slate-600">{t.italiano}</p>
 
                     {/* English + IPA */}
                     <div className="mt-3 border-t border-slate-100 pt-3">
-                      <p className="mb-0.5 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                      <p className="mb-0.5 text-xs font-black uppercase tracking-widest text-slate-500">
                         EN
                       </p>
                       <p
@@ -748,7 +748,7 @@ function ZonePanel({
 
   if (!section) {
     return (
-      <div className="px-4 py-10 text-center text-slate-400 sm:px-6">
+      <div className="px-4 py-10 text-center text-slate-500 sm:px-6">
         <p className="text-sm">Contenuto non ancora disponibile.</p>
       </div>
     );
@@ -886,7 +886,7 @@ function ZonePanel({
                   )}
                 </video>
                 )}
-                <figcaption className="bg-slate-50 px-3 py-1.5 text-[11px] leading-snug text-slate-500">
+                <figcaption className="bg-slate-50 px-3 py-1.5 text-xs leading-snug text-slate-500">
                   <span className="font-semibold text-slate-700">Video: {paragraphImage.video.titolo}</span>
                   {paragraphImage.video.durata && <> · {paragraphImage.video.durata}</>}
                   {paragraphImage.video.nota && <> · {paragraphImage.video.nota}</>}
@@ -902,7 +902,7 @@ function ZonePanel({
                   className="aspect-video w-full object-cover"
                   loading="lazy"
                 />
-                <figcaption className="px-3 py-1.5 text-[11px] leading-snug text-slate-500">
+                <figcaption className="px-3 py-1.5 text-xs leading-snug text-slate-500">
                   {paragraphImage.fonte === "schema"
                     ? "Schema didattico (disegno vettoriale, non generato con IA)"
                     : "Immagine illustrativa generata con IA (Canva)"}
@@ -1096,7 +1096,7 @@ function ZonePanel({
                   style={{ borderLeftColor: areaHex ?? "#f59e0b", borderLeftWidth: 4 }}
                 >
                   {compiti.length > 1 && (
-                    <p className="mb-1 text-[10px] font-black uppercase tracking-widest text-amber-500">
+                    <p className="mb-1 text-xs font-black uppercase tracking-widest text-amber-500">
                       Compito {i + 1}
                     </p>
                   )}
@@ -1129,13 +1129,13 @@ function ZonePanel({
             </p>
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-xl border border-blue-100 bg-blue-50 p-4">
-                <p className="mb-1.5 text-[10px] font-black uppercase tracking-widest text-blue-600">
+                <p className="mb-1.5 text-xs font-black uppercase tracking-widest text-blue-600">
                   ● Base
                 </p>
                 <p className="text-sm leading-6 text-blue-900">{mc.note_didattiche.base}</p>
               </div>
               <div className="rounded-xl border border-orange-100 bg-orange-50 p-4">
-                <p className="mb-1.5 text-[10px] font-black uppercase tracking-widest text-orange-600">
+                <p className="mb-1.5 text-xs font-black uppercase tracking-widest text-orange-600">
                   ●●● Avanzato
                 </p>
                 <p className="text-sm leading-6 text-orange-900">{mc.note_didattiche.avanzato}</p>

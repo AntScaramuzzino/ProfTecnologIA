@@ -6,15 +6,15 @@ export const levelBadge: Record<string, string> = {
 };
 
 export const areaAccent: Record<string, string> = {
-  MAT: "from-stone-100 to-emerald-50 border-stone-200",
-  DIS: "from-blue-100 to-sky-50 border-blue-200",
-  DIG: "from-cyan-100 to-slate-50 border-cyan-200",
-  ALI: "from-lime-100 to-amber-50 border-lime-200",
-  AMB: "from-orange-100 to-emerald-50 border-orange-200",
-  ENE: "from-amber-100 to-sky-50 border-amber-200",
-  COM: "from-violet-100 to-cyan-50 border-violet-200",
-  INF: "from-indigo-100 to-slate-50 border-indigo-200",
-  SIS: "from-sky-100 to-slate-50 border-sky-200",
+  MAT: "bg-stone-100 border-stone-200",
+  DIS: "bg-blue-50 border-blue-200",
+  DIG: "bg-cyan-50 border-cyan-200",
+  ALI: "bg-lime-50 border-lime-200",
+  AMB: "bg-orange-50 border-orange-200",
+  ENE: "bg-amber-50 border-amber-200",
+  COM: "bg-violet-50 border-violet-200",
+  INF: "bg-indigo-50 border-indigo-200",
+  SIS: "bg-sky-50 border-sky-200",
 };
 
 export function cx(...classes: Array<string | false | null | undefined>): string {

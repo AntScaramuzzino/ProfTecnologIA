@@ -198,7 +198,7 @@ export function ResourcesPanel({
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className={cx("size-4 shrink-0 text-slate-400 transition-transform duration-200", expanded ? "rotate-180" : "rotate-0")}
+          className={cx("size-4 shrink-0 text-slate-500 transition-transform duration-200", expanded ? "rotate-180" : "rotate-0")}
           aria-hidden
         >
           <path
@@ -222,14 +222,14 @@ export function ResourcesPanel({
               return (
                 <li key={g.zoneId} className="rounded-lg border border-slate-200 bg-white p-3">
                   <div className="mb-2 flex items-center justify-between gap-2">
-                    <span className="text-[11px] font-black uppercase tracking-widest" style={{ color }}>
+                    <span className="text-xs font-black uppercase tracking-widest" style={{ color }}>
                       {g.label}
                     </span>
                     {canGo && (
                       <button
                         type="button"
                         onClick={() => onNavigate!(g.zoneId)}
-                        className="rounded-full border border-slate-200 px-2 py-0.5 text-[11px] font-bold text-slate-600 hover:border-slate-400 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2"
+                        className="rounded-full border border-slate-200 px-2 py-0.5 text-xs font-bold text-slate-600 hover:border-slate-400 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2"
                         aria-label={`Vai alla zona ${g.label}`}
                       >
                         Vai →
@@ -244,11 +244,11 @@ export function ResourcesPanel({
                         </span>
                         <span className="flex-1 leading-snug">
                           <span className="font-semibold">{i.label}</span>
-                          {i.detail && <span className="block text-[11px] text-slate-500">{i.detail}</span>}
+                          {i.detail && <span className="block text-xs text-slate-500">{i.detail}</span>}
                         </span>
                         {i.count !== null && (
                           <span
-                            className="shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-black text-white"
+                            className="shrink-0 rounded-full px-1.5 py-0.5 text-xs font-black text-white"
                             style={{ backgroundColor: color }}
                           >
                             {i.count}

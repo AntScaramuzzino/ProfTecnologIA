@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
+import AreaIcon from "@/components/AreaIcon";
 import Breadcrumb from "@/components/Breadcrumb";
 import SiteFooter from "@/components/SiteFooter";
 import TavoleDisegno, { NUMERO_TAVOLE_DISEGNO } from "@/components/TavoleDisegno";
@@ -35,14 +36,14 @@ export default async function AreaPage({ params }: PageProps) {
     <main className="min-h-screen bg-[#f6f8f7] text-slate-900">
       <Breadcrumb items={[
         { label: "Book ProfTecnologIA", href: "/" },
-        { label: meta.label.toUpperCase(), emoji: meta.emoji, color: meta.hex },
+        { label: meta.label.toUpperCase(), area: areaUpper, color: meta.hex },
       ]} />
 
-      <header className={cx("border-b bg-gradient-to-br", areaAccent[areaUpper])}>
+      <header className={cx("border-b", areaAccent[areaUpper])}>
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
           <div className="flex flex-wrap items-end justify-between gap-4 sm:gap-6">
             <div>
-              <div className="text-4xl sm:text-5xl">{meta.emoji}</div>
+              <AreaIcon area={areaUpper} size={44} className="text-slate-800" />
               <p className="mt-3 font-mono text-xs font-black text-slate-500 sm:mt-4 sm:text-sm">{areaUpper}</p>
               <h1 className="mt-1 text-2xl font-black tracking-tight sm:text-4xl">{meta.label}</h1>
               <p className="mt-2 max-w-2xl text-sm leading-7 text-slate-600 sm:mt-3 sm:text-base sm:leading-8">
@@ -86,7 +87,7 @@ export default async function AreaPage({ params }: PageProps) {
           <div className="flex flex-wrap gap-2">
             {otherAreas.map(([code, item]) => (
               <Link key={code} href={`/area/${code}`} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:border-slate-400">
-                {item.emoji} {item.label}
+                <AreaIcon area={code} size={16} /> {item.label}
               </Link>
             ))}
           </div>

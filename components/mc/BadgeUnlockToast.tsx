@@ -84,7 +84,7 @@ export default function BadgeUnlockToast({
           </div>
 
           {/* Titoli */}
-          <p className="text-[11px] font-black uppercase tracking-widest" style={{ color: badge.accent }}>
+          <p className="text-xs font-black uppercase tracking-widest" style={{ color: badge.accent }}>
             {badge.shortTitle}
           </p>
           <h2 className="mt-1 text-xl font-black text-slate-900">Badge sbloccato!</h2>
@@ -110,7 +110,7 @@ export default function BadgeUnlockToast({
             </button>
           </div>
 
-          <p className="mt-3 text-[9px] text-slate-300">Tocca fuori per chiudere</p>
+          <p className="mt-3 text-xs text-slate-300">Tocca fuori per chiudere</p>
         </div>
       </div>
     </div>

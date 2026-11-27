@@ -1,8 +1,11 @@
 import Link from "next/link";
+import AreaIcon from "@/components/AreaIcon";
 
 export interface BreadcrumbItem {
   label: string;
   href?: string;
+  area?: string; // codice area per l'icona
+  /** @deprecated usare `area`: resta solo per le pagine non ancora convertite. */
   emoji?: string;
   color?: string; // hex colore area
 }
@@ -53,7 +56,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                     style={{ color: item.color ?? "#0f172a" }}
                     aria-current="page"
                   >
-                    {item.emoji && <span className="shrink-0 text-base" aria-hidden="true">{item.emoji}</span>}
+                    {item.area ? <AreaIcon area={item.area} size={16} /> : item.emoji && <span className="shrink-0 text-base" aria-hidden="true">{item.emoji}</span>}
                     <span className="truncate">{item.label}</span>
                   </span>
                 ) : (
@@ -72,7 +75,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
                       </>
                     ) : (
                       <>
-                        {item.emoji && <span className="shrink-0" aria-hidden="true">{item.emoji}</span>}
+                        {item.area ? <AreaIcon area={item.area} size={16} /> : item.emoji && <span className="shrink-0" aria-hidden="true">{item.emoji}</span>}
                         <span className="truncate">{item.label}</span>
                       </>
                     )}

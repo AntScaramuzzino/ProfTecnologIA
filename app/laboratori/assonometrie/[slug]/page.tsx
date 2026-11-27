@@ -58,7 +58,7 @@ export default async function TavolaAssonometriaPage({ params }: Props) {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: t.mc, href: `/mc/${t.mc}`, emoji: "📐", color: "#1A3A7A" },
+          { label: t.mc, href: `/mc/${t.mc}`, area: "DIS", color: "#1A3A7A" },
           { label: "Assonometrie", href: "/assonometrie", color: "#1A3A7A" },
           { label: `Tavola ${t.numero}`, color: "#1A3A7A" },
         ]}

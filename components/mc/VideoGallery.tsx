@@ -24,7 +24,7 @@ export default function VideoGallery({ videos, mcTitolo }: VideoGalleryProps) {
         <span className="text-xl">▶️</span>
         <div>
           <p className="text-sm font-black text-slate-500">Video correlati</p>
-          <p className="text-xs text-slate-400">{videos.length} video su YouTube · {mcTitolo}</p>
+          <p className="text-xs text-slate-500">{videos.length} video su YouTube · {mcTitolo}</p>
         </div>
       </div>
 
@@ -77,12 +77,12 @@ export default function VideoGallery({ videos, mcTitolo }: VideoGalleryProps) {
                 {video.title}
               </p>
               {activeId !== video.id && (
-                <p className="mt-1 text-xs text-slate-400">YouTube</p>
+                <p className="mt-1 text-xs text-slate-500">YouTube</p>
               )}
               {activeId === video.id && (
                 <button
                   onClick={() => setActiveId(null)}
-                  className="mt-1 text-xs text-slate-400 hover:text-slate-600"
+                  className="mt-1 text-xs text-slate-500 hover:text-slate-600"
                 >
                   ✕ Chiudi
                 </button>

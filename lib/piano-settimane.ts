@@ -3,7 +3,7 @@
 
 import { getPrimaryVisual } from "./content-loader";
 import { PIANO_LEZIONI, type VoceLezione } from "./lezione-settimanale";
-import { AREA_META, getAllMCs } from "./mc-loader";
+import { getAllMCs } from "./mc-loader";
 import type { Binario, PianoSettimane, VoceSettimana } from "./piano-docente";
 
 export function costruisciPianoSettimane(): PianoSettimane {
@@ -14,7 +14,7 @@ export function costruisciPianoSettimane(): PianoSettimane {
     return {
       ...v,
       mcTitolo: mc?.titolo,
-      emoji: mc ? AREA_META[mc.area]?.emoji : undefined,
+      area: mc?.area,
       tipo: binario === "teoria" ? "Teoria" : area === "DIS" ? "Disegno" : "Coding",
       // Le settimane con le tavole mostrano le anteprime delle tavole; le altre l'immagine della lezione.
       immagine: mc && !v.tavole?.length ? getPrimaryVisual(mc.id)?.src : undefined,

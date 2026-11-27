@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useId, useCallback } from "react";
 import { cx } from "@/lib/ui";
+import UiIcon, { hasUiIcon } from "@/components/UiIcon";
 
 export interface NavigatorTab {
   /** ID univoco della tab, corrisponde al titolo della sezione MD */
@@ -26,12 +27,12 @@ interface MCNavigatorProps {
 }
 
 const DEFAULT_TABS: NavigatorTab[] = [
-  { id: "INNESCA",   label: "INNESCA",   emoji: "⚡" },
-  { id: "ESPLORA",   label: "ESPLORA",   emoji: "📖" },
-  { id: "OSSERVA",   label: "OSSERVA",   emoji: "🔍" },
-  { id: "SPERIMENTA",label: "SPERIMENTA",emoji: "🔬" },
-  { id: "AGISCI",    label: "AGISCI",    emoji: "🌍" },
-  { id: "RIPASSA",   label: "RIPASSA",   emoji: "🃏" },
+  { id: "INNESCA",   label: "INNESCA" },
+  { id: "ESPLORA",   label: "ESPLORA" },
+  { id: "OSSERVA",   label: "OSSERVA" },
+  { id: "SPERIMENTA",label: "SPERIMENTA" },
+  { id: "AGISCI",    label: "AGISCI" },
+  { id: "RIPASSA",   label: "RIPASSA" },
 ];
 
 export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onForcedTabConsumed, trailing, children }: MCNavigatorProps) {
@@ -156,14 +157,14 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
               className={cx(
                 // mobile: riga compatta, target ≥ 44 px, tutti i tab visibili
                 "flex shrink-0 items-center justify-center gap-1.5 min-h-[44px] px-2 text-center",
-                "text-[11px] font-black uppercase tracking-tight transition-colors duration-150",
+                "text-xs font-black uppercase tracking-tight transition-colors duration-150",
                 isActive ? "flex-none px-3 bg-[var(--tab-tint)] sm:bg-transparent" : "flex-1 min-w-[40px]",
                 // desktop (sm+): layout originale a colonna con etichette sempre visibili
                 "sm:flex-none sm:flex-col sm:gap-0.5 sm:min-w-[80px] sm:px-4 sm:py-3 sm:text-sm sm:tracking-wider",
                 "border-b-[3px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset",
                 isActive
                   ? "border-b-current text-slate-900"
-                  : "border-b-transparent text-slate-400 hover:text-slate-700",
+                  : "border-b-transparent text-slate-500 hover:text-slate-700",
               )}
               style={
                 isActive && areaHex
@@ -171,7 +172,7 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
                   : undefined
               }
             >
-              {tab.emoji && (
+              {(hasUiIcon(tab.id) || tab.emoji) && (
                 <span
                   className={cx(
                     "text-lg leading-none transition-[filter,opacity] sm:text-lg",
@@ -179,7 +180,7 @@ export function MCNavigator({ tabs = DEFAULT_TABS, areaHex, forcedActiveId, onFo
                   )}
                   aria-hidden
                 >
-                  {tab.emoji}
+                  {hasUiIcon(tab.id) ? <UiIcon name={tab.id} size={18} /> : tab.emoji}
                 </span>
               )}
               <span className={cx("whitespace-nowrap", !isActive && "sr-only sm:not-sr-only")}>

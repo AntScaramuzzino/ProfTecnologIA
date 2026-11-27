@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import MCCard from "@/components/MCCard";
+import AreaIcon from "@/components/AreaIcon";
 import MCVisual from "@/components/MCVisual";
 import Breadcrumb from "@/components/Breadcrumb";
 import { MCPageClient } from "@/components/mc/MCPageClient";
@@ -86,18 +87,18 @@ export default async function MCPage({ params }: Props) {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: areaBreadcrumbLabel, href: `/area/${mc.area}`, emoji: area?.emoji, color: areaHex },
+          { label: areaBreadcrumbLabel, href: `/area/${mc.area}`, area: mc.area, color: areaHex },
           { label: mc.id, color: areaHex },
         ]}
       />
 
       {/* ── Hero header ── */}
-      <section className={cx("border-b bg-gradient-to-br", areaAccent[mc.area] ?? "from-white to-slate-50")}>
+      <section className={cx("border-b", areaAccent[mc.area] ?? "bg-slate-50")}>
         <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 sm:gap-8 sm:px-6 sm:py-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>
             <div className="mb-3 flex flex-wrap items-center gap-2 sm:mb-4">
               <span className="rounded-full bg-white/85 px-2.5 py-1 text-xs font-bold text-slate-800 shadow-sm sm:px-3 sm:text-sm">
-                {area?.emoji} {area?.label}
+                <AreaIcon area={mc.area} size={16} /> {area?.label}
               </span>
               <span className="rounded-full bg-white/85 px-2.5 py-1 font-mono text-xs font-bold text-slate-700 shadow-sm sm:px-3 sm:text-sm">
                 {mc.id}
@@ -210,7 +211,7 @@ export default async function MCPage({ params }: Props) {
                 <p className="text-xs font-semibold text-slate-600">
                   Scansiona o clicca per aprire
                 </p>
-                <p className="mt-0.5 text-[10px] text-slate-400">
+                <p className="mt-0.5 text-xs text-slate-500">
                   ProfTecnologIA · GPT Assistant
                 </p>
               </div>
@@ -241,13 +242,13 @@ export default async function MCPage({ params }: Props) {
                   className="h-11 w-11 shrink-0 rounded-lg"
                 />
                 <div className="min-w-0">
-                  <p className="text-[10px] font-black uppercase tracking-widest" style={{ color: sdgBadge.accent }}>
+                  <p className="text-xs font-black uppercase tracking-widest" style={{ color: sdgBadge.accent }}>
                     {sdgBadge.shortTitle}
                   </p>
                   <p className="text-xs font-bold leading-tight text-slate-800">{sdgBadge.title}</p>
                   <Link
                     href="/progressi"
-                    className="mt-0.5 block text-[10px] font-semibold text-slate-400 hover:text-brand-600 transition-colors"
+                    className="mt-0.5 block text-xs font-semibold text-slate-500 hover:text-brand-600 transition-colors"
                   >
                     Supera i quiz per sbloccarlo →
                   </Link>
@@ -267,7 +268,7 @@ export default async function MCPage({ params }: Props) {
                     href={`/mc/${item.id}`}
                     className="block rounded-lg border border-slate-100 p-3 text-sm font-bold transition-colors hover:bg-slate-50"
                   >
-                    <span className="font-mono text-xs text-slate-400">{item.id}</span>
+                    <span className="font-mono text-xs text-slate-500">{item.id}</span>
                     <br />
                     {item.titolo}
                   </Link>
@@ -287,7 +288,7 @@ export default async function MCPage({ params }: Props) {
                 <span className="flex min-w-0 flex-wrap items-center gap-x-2 gap-y-1">
                   <span className="text-sm font-black text-slate-600">Framework</span>
                   {frameworkKeys.map((key) => (
-                    <span key={key} className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500">
+                    <span key={key} className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-xs font-bold text-slate-500">
                       {key}
                     </span>
                   ))}
@@ -311,7 +312,7 @@ export default async function MCPage({ params }: Props) {
               <details className="group">
                 <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-4 py-3 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
                   <span className="text-sm font-black text-slate-600">
-                    Tag <span className="font-semibold text-slate-400">({mc.tags.length})</span>
+                    Tag <span className="font-semibold text-slate-500">({mc.tags.length})</span>
                   </span>
                   <RailChevron />
                 </summary>
@@ -327,7 +328,7 @@ export default async function MCPage({ params }: Props) {
 
             {/* Asset app previsti — info tecniche per l'autore */}
             <details className="group">
-              <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-4 py-3 text-sm font-black text-slate-400 transition-colors hover:bg-slate-50 hover:text-slate-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
+              <summary className="flex cursor-pointer select-none items-center justify-between gap-2 px-4 py-3 text-sm font-black text-slate-500 transition-colors hover:bg-slate-50 hover:text-slate-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-slate-400">
                 <span>Asset app previsti</span>
                 <RailChevron />
               </summary>
@@ -371,7 +372,7 @@ export default async function MCPage({ params }: Props) {
                   href={`/mc/${item.id}`}
                   className="block rounded-lg border border-slate-100 p-3 text-sm font-bold transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                 >
-                  <span className="font-mono text-xs text-slate-400">{item.id}</span>
+                  <span className="font-mono text-xs text-slate-500">{item.id}</span>
                   <br />
                   {item.titolo}
                 </Link>
@@ -427,8 +428,8 @@ export default async function MCPage({ params }: Props) {
           <div className="mx-auto max-w-7xl px-4 sm:px-6">
             <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
               <div>
-                <p className="mb-1 text-xs font-black uppercase tracking-widest text-slate-400">
-                  {area?.emoji} {area?.label}
+                <p className="mb-1 text-xs font-black uppercase tracking-widest text-slate-500">
+                  <AreaIcon area={mc.area} size={14} /> {area?.label}
                 </p>
                 <h2 className="text-2xl font-black text-slate-900">Altre MC dell&apos;area</h2>
               </div>
@@ -448,7 +449,7 @@ export default async function MCPage({ params }: Props) {
 
       {/* ── Footer trasparenza AI — Protocollo CARBLE-CDD ── */}
       <div className="border-t border-slate-100 bg-slate-50 px-4 py-3 sm:px-6">
-        <p className="mx-auto max-w-7xl text-xs text-slate-400">
+        <p className="mx-auto max-w-7xl text-xs text-slate-500">
           🤖 Contenuto realizzato da{" "}
           <span className="font-semibold text-slate-500">Prof. Ing. Antonio Scaramuzzino</span>{" "}
           con il supporto di AI (Claude, GPT Image, edge-tts) · validato{" "}
@@ -464,7 +465,7 @@ export default async function MCPage({ params }: Props) {
 
 function RailChevron() {
   return (
-    <svg className="h-3.5 w-3.5 shrink-0 text-slate-400 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
+    <svg className="h-3.5 w-3.5 shrink-0 text-slate-500 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
     </svg>
   );

@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { AREA_META, type MC } from "@/lib/mc-loader";
+import { type MC } from "@/lib/mc-loader";
+import AreaIcon from "@/components/AreaIcon";
 import { getPrimaryVisual } from "@/lib/content-loader";
 import { areaAccent, cx, levelBadge } from "@/lib/ui";
 
 export default function MCCard({ mc }: { mc: MC }) {
-  const area = AREA_META[mc.area];
   const visual = getPrimaryVisual(mc.id);
   const level = mc.outputApp.livelloDigComp;
 
@@ -16,8 +16,8 @@ export default function MCCard({ mc }: { mc: MC }) {
       {/* Immagine — flex item, altezza fissa + aspect-ratio come suggerimento */}
       <div
         className={cx(
-          "relative h-36 w-full shrink-0 overflow-hidden bg-gradient-to-br sm:h-44",
-          areaAccent[mc.area] ?? "from-slate-100 to-white"
+          "relative h-36 w-full shrink-0 overflow-hidden sm:h-44",
+          areaAccent[mc.area] ?? "bg-slate-100"
         )}
       >
         {visual ? (
@@ -27,19 +27,19 @@ export default function MCCard({ mc }: { mc: MC }) {
             className="h-full w-full object-cover opacity-90 transition duration-300 group-hover:scale-[1.03]"
           />
         ) : (
-          <div className="flex h-full items-center justify-center text-5xl">
-            {area?.emoji ?? "📘"}
+          <div className="flex h-full items-center justify-center text-slate-700">
+            <AreaIcon area={mc.area} size={48} />
           </div>
         )}
         <div className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-700 shadow-sm">
-          {area?.emoji} {mc.area}
+          <AreaIcon area={mc.area} size={14} /> {mc.area}
         </div>
       </div>
 
       {/* Contenuto testuale — flex item, cresce per riempire lo spazio */}
       <div className="flex flex-1 flex-col p-4">
         <div className="mb-2 flex items-center justify-between gap-2">
-          <span className="font-mono text-xs text-slate-400">{mc.id}</span>
+          <span className="font-mono text-xs text-slate-500">{mc.id}</span>
           <span className={cx("rounded-full border px-2 py-0.5 text-xs font-semibold", levelBadge[level])}>
             {level}
           </span>

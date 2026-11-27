@@ -13,6 +13,8 @@ import {
   leggiClassi, risolvi, slotDi, type ClasseDocente, type PianoSettimane, type VoceSettimana,
 } from "@/lib/piano-docente";
 import { cx } from "@/lib/ui";
+import AreaIcon from "@/components/AreaIcon";
+import UiIcon from "@/components/UiIcon";
 
 const CLASSI = [1, 2, 3];
 const CHIAVE_CLASSE = "tecnologia_app_lezione_classe";
@@ -20,8 +22,8 @@ const CHIAVE_CLASSE_DOCENTE = "tecnologia_app_lezione_classe_docente";
 
 function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica" }) {
   const colori = tono === "teoria"
-    ? { bordo: "border-brand-200", fascia: "bg-gradient-to-br from-brand-100 to-white", badge: "bg-brand-700", link: "text-brand-800", chip: "border-brand-200 bg-brand-50 text-brand-900 hover:border-brand-500" }
-    : { bordo: "border-blue-200", fascia: "bg-gradient-to-br from-blue-100 to-white", badge: "bg-blue-700", link: "text-blue-800", chip: "border-blue-200 bg-blue-50 text-blue-900 hover:border-blue-500" };
+    ? { bordo: "border-brand-200", fascia: "bg-brand-50", badge: "bg-brand-700", link: "text-brand-800", chip: "border-brand-200 bg-brand-50 text-brand-900 hover:border-brand-500" }
+    : { bordo: "border-amber-200", fascia: "bg-amber-50", badge: "bg-amber-700", link: "text-amber-800", chip: "border-amber-200 bg-amber-50 text-amber-900 hover:border-amber-500" };
   return (
     <article className={cx("flex h-full flex-col overflow-hidden rounded-2xl border-2 bg-white shadow-sm", colori.bordo)}>
       {/* Immagine in testa: anteprime delle tavole, immagine della lezione oppure una fascia colorata */}
@@ -39,7 +41,7 @@ function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica
         </Link>
       ) : (
         <div aria-hidden="true" className={cx("flex h-24 items-center justify-center border-b border-slate-200 text-4xl", colori.fascia)}>
-          {tono === "teoria" ? "📖" : "📐"}
+          <UiIcon name={tono === "teoria" ? "teoria" : "pratica"} size={36} className="text-slate-600" />
         </div>
       )}
       <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -54,7 +56,7 @@ function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica
         <>
           <h3 className="mt-3 text-lg font-black leading-snug text-slate-950 sm:text-xl">
             <Link href={`/mc/${voce.mc}`} className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
-              {voce.emoji} {voce.mcTitolo}
+              <AreaIcon area={voce.area} size={18} className="mr-1" />{voce.mcTitolo}
             </Link>
           </h3>
           <p className="mt-2 text-sm font-bold text-slate-800">{voce.titolo}</p>
@@ -166,14 +168,14 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
   }
 
   return (
-    <section aria-labelledby="titolo-lezione-settimana" className="border-b border-slate-200 bg-gradient-to-b from-brand-50/60 to-white">
+    <section aria-labelledby="titolo-lezione-settimana" className="border-b border-slate-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wide text-brand-700">{occhiello}</p>
             <h2 id="titolo-lezione-settimana" className="text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
               La lezione della settimana
             </h2>
+            <p className="mt-1 text-sm font-bold text-brand-700">{occhiello}</p>
             <p className="mt-1 text-sm font-semibold text-slate-600" aria-live="polite">
               {oggi === null ? (
                 "Cerco la settimana giusta nel calendario…"

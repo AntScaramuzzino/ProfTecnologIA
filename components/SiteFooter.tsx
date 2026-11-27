@@ -8,13 +8,13 @@ import { VERSIONE_ATTUALE } from "@/lib/versioni";
 export default function SiteFooter() {
   return (
     <footer className="border-t border-slate-200 bg-white px-4 py-4 sm:px-6">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 text-xs text-slate-400">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
         <div className="flex items-center gap-2">
           <span className="font-black text-slate-600">Book ProfTecnologIA</span>
           <Link
             href="/novita/"
             title="Novità: che cosa è cambiato in ogni versione"
-            className="rounded-full border border-slate-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500 hover:border-brand-400 hover:text-brand-700"
+            className="rounded-full border border-slate-300 px-1.5 py-0.5 font-mono text-xs font-bold text-slate-500 hover:border-brand-400 hover:text-brand-700"
           >
             v{VERSIONE_ATTUALE}
           </Link>

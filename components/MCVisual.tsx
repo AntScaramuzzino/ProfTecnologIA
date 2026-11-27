@@ -108,10 +108,10 @@ export default function MCVisual({
         <figcaption className="mt-2 text-xs text-slate-500">
           {asset.label}
           {asset.kind === "generated" || asset.kind === "hero" ? (
-            <span className="ml-1 text-slate-400">· Immagine AI</span>
+            <span className="ml-1 text-slate-500">· Immagine AI</span>
           ) : null}
           {zoomable && (
-            <span className="ml-1 text-slate-400">· Tocca per ingrandire</span>
+            <span className="ml-1 text-slate-500">· Tocca per ingrandire</span>
           )}
         </figcaption>
       </figure>

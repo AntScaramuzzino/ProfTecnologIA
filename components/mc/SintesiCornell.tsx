@@ -93,7 +93,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
         <span className="text-xs font-black uppercase tracking-widest text-slate-500">
           Sintesi Cornell
         </span>
-        <span className="ml-auto text-xs text-slate-400">
+        <span className="ml-auto text-xs text-slate-500">
           Usa questo schema per ripassare
         </span>
       </div>
@@ -106,7 +106,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
           style={{ borderColor: accentBorder }}
         >
           <p
-            className="mb-3 text-[10px] font-black uppercase tracking-widest"
+            className="mb-3 text-xs font-black uppercase tracking-widest"
             style={{ color: accent }}
           >
             Domande guida
@@ -115,7 +115,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
             {domande.map((d, i) => (
               <li key={i} className="flex gap-2">
                 <span
-                  className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full text-[9px] font-black text-white"
+                  className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full text-xs font-black text-white"
                   style={{ backgroundColor: accent }}
                 >
                   {i + 1}
@@ -128,7 +128,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
           {/* Parole chiave */}
           <div className="mt-5">
             <p
-              className="mb-2 text-[10px] font-black uppercase tracking-widest"
+              className="mb-2 text-xs font-black uppercase tracking-widest"
               style={{ color: accent }}
             >
               Parole chiave
@@ -140,7 +140,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
                 .map((tag) => (
                   <span
                     key={tag}
-                    className="rounded border px-1.5 py-0.5 font-mono text-[10px] text-slate-600"
+                    className="rounded border px-1.5 py-0.5 font-mono text-xs text-slate-600"
                     style={{ borderColor: accentBorder, backgroundColor: accentLight }}
                   >
                     {tag}
@@ -153,7 +153,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
         {/* Corpo — punti chiave */}
         <div className="px-5 py-5">
           <p
-            className="mb-3 text-[10px] font-black uppercase tracking-widest"
+            className="mb-3 text-xs font-black uppercase tracking-widest"
             style={{ color: accent }}
           >
             Punti principali
@@ -172,7 +172,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
               ))}
             </ul>
           ) : (
-            <p className="text-sm italic text-slate-400">
+            <p className="text-sm italic text-slate-500">
               Leggi la sezione ESPLORA per estrarre i punti principali.
             </p>
           )}
@@ -183,7 +183,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
               className="mt-5 rounded-lg border px-4 py-3"
               style={{ borderColor: accentBorder, backgroundColor: accentLight }}
             >
-              <p className="mb-1 text-[10px] font-black uppercase tracking-widest text-slate-500">
+              <p className="mb-1 text-xs font-black uppercase tracking-widest text-slate-500">
                 Applicazione pratica
               </p>
               <p className="text-xs leading-5 text-slate-700">{mc.compito_realta}</p>
@@ -198,7 +198,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
         style={{ borderColor: accentBorder, backgroundColor: `${accent}08` }}
       >
         <p
-          className="mb-2 text-[10px] font-black uppercase tracking-widest"
+          className="mb-2 text-xs font-black uppercase tracking-widest"
           style={{ color: accent }}
         >
           Riepilogo in 3 righe

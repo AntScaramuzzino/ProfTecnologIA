@@ -43,7 +43,7 @@ export default function ProcedureList({ steps, titolo }: ProcedureListProps) {
               }`}>
                 {checked[i] ? "✓" : i + 1}
               </span>
-              <span className={`text-sm leading-relaxed ${checked[i] ? "line-through text-slate-400" : "text-emerald-900"}`}>
+              <span className={`text-sm leading-relaxed ${checked[i] ? "line-through text-slate-500" : "text-emerald-900"}`}>
                 {step}
               </span>
             </button>

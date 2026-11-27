@@ -85,7 +85,7 @@ export default function FlippedVideos({ videos }: FlippedVideosProps) {
               {activeId === video.id ? (
                 <button
                   onClick={() => setActiveId(null)}
-                  className="mt-1 text-xs text-slate-400 hover:text-slate-600"
+                  className="mt-1 text-xs text-slate-500 hover:text-slate-600"
                 >
                   ✕ Chiudi
                 </button>

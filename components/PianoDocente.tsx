@@ -15,6 +15,7 @@ import {
   type Binario, type ClasseDocente, type PianoSettimane, type Slot, type VoceSettimana,
 } from "@/lib/piano-docente";
 import { cx } from "@/lib/ui";
+import AreaIcon from "@/components/AreaIcon";
 
 const ANNI = [1, 2, 3];
 const CHIAVE_CLASSE_DOCENTE = "tecnologia_app_lezione_classe_docente";
@@ -215,6 +216,9 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
           scolastico della Regione {ANNO_SCOLASTICO.regione} ({SETTIMANE_DI_LEZIONE} settimane di lezione). Aggiungi le
           tue classi, fino a {MAX_CLASSI}: ognuna parte dalla proposta del libro e poi va per conto suo. Segna le
           lezioni fatte, rimanda quelle saltate, cambia l’ordine, aggiungi le tue note.
+        </p>
+        <p className="mt-3 text-sm leading-6 text-slate-600 print:hidden">
+          Quadri di riferimento: Indicazioni Nazionali 2025 (D.M. 221/2025), DigComp 3.0, EntreComp, Agenda 2030. Materiali progettati DSA First.
         </p>
         <p className="mt-3 text-sm leading-6 text-slate-600 print:hidden">
           Il piano si salva solo su questo browser, senza account. Per portarlo su un altro dispositivo esportalo in
@@ -448,7 +452,7 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
                       </div>
                       <p className={cx("mt-2 text-sm font-bold leading-snug text-slate-950", slot.fatto && "line-through")}>
                         {voce.mc && voce.mcTitolo ? (
-                          <Link href={`/mc/${voce.mc}`} className="underline-offset-4 hover:underline">{voce.emoji} {voce.mcTitolo}</Link>
+                          <Link href={`/mc/${voce.mc}`} className="underline-offset-4 hover:underline"><AreaIcon area={voce.area} size={16} className="mr-1" />{voce.mcTitolo}</Link>
                         ) : (
                           voce.titolo
                         )}

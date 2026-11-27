@@ -111,7 +111,7 @@ export default function ChecklistWidget({ titolo, istruzione, voci, areaHex }: C
           <div className="flex justify-end">
             <button
               onClick={reset}
-              className="text-xs text-slate-400 hover:text-slate-600 transition-colors underline"
+              className="text-xs text-slate-500 hover:text-slate-600 transition-colors underline"
             >
               Ricomincia da capo
             </button>

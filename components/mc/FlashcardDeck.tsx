@@ -123,7 +123,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
                     )}
                     <p className="font-black leading-snug text-slate-900">{card.front}</p>
                   </div>
-                  <span className={`mt-0.5 shrink-0 text-slate-400 transition-transform duration-200 ${isRevealed ? "rotate-180" : ""}`}>
+                  <span className={`mt-0.5 shrink-0 text-slate-500 transition-transform duration-200 ${isRevealed ? "rotate-180" : ""}`}>
                     ▾
                   </span>
                 </div>

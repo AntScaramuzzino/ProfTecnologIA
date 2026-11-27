@@ -12,7 +12,7 @@ function PromptCaption({ prompt, didascalia, dark = false }: { prompt?: string; 
   if (!prompt && didascalia) {
     return (
       <span
-        className={`mt-1 block rounded-md px-2 py-1.5 text-[11px] leading-snug ${
+        className={`mt-1 block rounded-md px-2 py-1.5 text-xs leading-snug ${
           dark ? "bg-white/10 text-white/70" : "bg-slate-100 text-slate-600"
         }`}
       >
@@ -24,7 +24,7 @@ function PromptCaption({ prompt, didascalia, dark = false }: { prompt?: string; 
   if (!prompt) return null;
   return (
     <span
-      className={`mt-1 block rounded-md px-2 py-1.5 text-[11px] leading-snug ${
+      className={`mt-1 block rounded-md px-2 py-1.5 text-xs leading-snug ${
         dark ? "bg-white/10 text-white/70" : "bg-slate-100 text-slate-600"
       }`}
     >
@@ -119,7 +119,7 @@ export default function MCImageCarousel({ visuals, mcTitolo }: MCImageCarouselPr
         <figcaption className="mt-2 text-xs text-slate-500">
           {selected.label}
           {(selected.kind === "generated" || selected.kind === "hero") && (
-            <span className="ml-1 text-slate-400">· Immagine AI</span>
+            <span className="ml-1 text-slate-500">· Immagine AI</span>
           )}
           <PromptCaption prompt={selected.prompt} didascalia={selected.didascalia} />
         </figcaption>
@@ -205,9 +205,9 @@ export default function MCImageCarousel({ visuals, mcTitolo }: MCImageCarouselPr
       <p className="mt-2 text-xs text-slate-500">
         {selected.label}
         {(selected.kind === "generated" || selected.kind === "hero") && (
-          <span className="ml-1 text-slate-400">· Immagine AI</span>
+          <span className="ml-1 text-slate-500">· Immagine AI</span>
         )}
-        <span className="ml-2 text-slate-400">{selectedIdx + 1} / {total}</span>
+        <span className="ml-2 text-slate-500">{selectedIdx + 1} / {total}</span>
       </p>
       <PromptCaption prompt={selected.prompt} didascalia={selected.didascalia} />
 

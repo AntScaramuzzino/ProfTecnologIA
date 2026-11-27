@@ -47,7 +47,7 @@ export default async function TavolaProiezionePage({ params }: Props) {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: MC_PROIEZIONI, href: `/mc/${MC_PROIEZIONI}`, emoji: "📐", color: "#1A3A7A" },
+          { label: MC_PROIEZIONI, href: `/mc/${MC_PROIEZIONI}`, area: "DIS", color: "#1A3A7A" },
           { label: "Proiezioni ortogonali", href: "/proiezioni-ortogonali", color: "#1A3A7A" },
           { label: `Tavola ${t.numero}`, color: "#1A3A7A" },
         ]}

@@ -24,26 +24,15 @@ export interface VoceIndice {
   area?: string;
 }
 
-export const TIPI: { id: TipoRisultato | "tutto"; label: string; emoji: string }[] = [
-  { id: "tutto", label: "Tutto", emoji: "" },
-  { id: "mc", label: "Lezioni", emoji: "📚" },
-  { id: "laboratorio", label: "Laboratori", emoji: "🔬" },
-  { id: "escape", label: "Escape room", emoji: "🔐" },
-  { id: "esplorazione", label: "Esplorazioni", emoji: "🔭" },
-  { id: "glossario", label: "Glossario", emoji: "📖" },
-  { id: "pagina", label: "Pagine", emoji: "🧭" },
+export const TIPI: { id: TipoRisultato | "tutto"; label: string }[] = [
+  { id: "tutto", label: "Tutto" },
+  { id: "mc", label: "Lezioni" },
+  { id: "laboratorio", label: "Laboratori" },
+  { id: "escape", label: "Escape room" },
+  { id: "esplorazione", label: "Esplorazioni" },
+  { id: "glossario", label: "Glossario" },
+  { id: "pagina", label: "Pagine" },
 ];
-
-export const EMOJI_TIPO: Record<TipoRisultato, string> = {
-  mc: "📚",
-  laboratorio: "🔬",
-  escape: "🔐",
-  esplorazione: "🔭",
-  scena: "🔭",
-  geogebra: "📐",
-  glossario: "📖",
-  pagina: "🧭",
-};
 
 export const ETICHETTA_TIPO: Record<TipoRisultato, string> = {
   mc: "Lezione",

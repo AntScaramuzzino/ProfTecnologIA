@@ -54,7 +54,7 @@ export default function AssonometriePage() {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: MC_ASSONOMETRIE, href: `/mc/${MC_ASSONOMETRIE}`, emoji: "📐", color: "#1A3A7A" },
+          { label: MC_ASSONOMETRIE, href: `/mc/${MC_ASSONOMETRIE}`, area: "DIS", color: "#1A3A7A" },
           { label: "Assonometrie", color: "#1A3A7A" },
         ]}
       />

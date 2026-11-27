@@ -28,7 +28,7 @@ export default function CostruzioniGeometrichePage() {
       <Breadcrumb
         items={[
           { label: "Book ProfTecnologIA", href: "/" },
-          { label: MC_COSTRUZIONI, href: `/mc/${MC_COSTRUZIONI}`, emoji: "📐", color: "#1A3A7A" },
+          { label: MC_COSTRUZIONI, href: `/mc/${MC_COSTRUZIONI}`, area: "DIS", color: "#1A3A7A" },
           { label: "Costruzioni geometriche", color: "#1A3A7A" },
         ]}
       />
@@ -125,7 +125,7 @@ export default function CostruzioniGeometrichePage() {
                         />
                       </Link>
                       <div className="flex min-w-0 flex-1 flex-col gap-1 p-3 sm:gap-2 sm:p-5">
-                        <p className="font-mono text-[0.68rem] font-black uppercase tracking-widest text-blue-900 sm:text-xs">
+                        <p className="font-mono text-xs font-black uppercase tracking-widest text-blue-900 sm:text-xs">
                           Costruzione {c.numero}
                         </p>
                         <h3 className="text-base font-black leading-snug tracking-tight text-slate-950 sm:text-lg">{c.titolo}</h3>

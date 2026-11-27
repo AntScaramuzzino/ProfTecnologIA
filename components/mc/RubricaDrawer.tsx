@@ -169,7 +169,7 @@ export function RubricaDrawer({ agisciBody, areaHex, className = "" }: RubricaDr
         {/* Header */}
         <div className="sticky top-0 z-10 flex items-center justify-between border-b border-slate-200 bg-white px-5 py-4">
           <div>
-            <p className="text-xs font-black uppercase tracking-wider text-slate-400">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-500">
               Rubrica di valutazione
             </p>
             <h2 className="text-base font-black text-slate-900 sm:text-lg">
@@ -182,7 +182,7 @@ export function RubricaDrawer({ agisciBody, areaHex, className = "" }: RubricaDr
               setIsOpen(false);
               triggerRef.current?.focus();
             }}
-            className="rounded-full p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2"
+            className="rounded-full p-2 text-slate-500 hover:bg-slate-100 hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2"
             aria-label="Chiudi rubrica"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5" aria-hidden>

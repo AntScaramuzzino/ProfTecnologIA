@@ -100,7 +100,7 @@ export function LevelTabs({ tabs, defaultLevel, className = "" }: LevelTabsProps
                 "sm:py-4 sm:text-sm",
                 isActive
                   ? cx("border-b-current", s.active)
-                  : "border-b-transparent text-slate-400 hover:text-slate-700 hover:bg-white",
+                  : "border-b-transparent text-slate-500 hover:text-slate-700 hover:bg-white",
               )}
             >
               {/* dots */}

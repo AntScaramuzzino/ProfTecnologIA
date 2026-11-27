@@ -291,7 +291,7 @@ export default function CreditsPage() {
               },
             ].map((ref) => (
               <div key={ref.titolo} className="rounded-xl border border-slate-200 bg-white p-4">
-                <p className="text-xs font-bold uppercase tracking-wide text-slate-400">{ref.autore} · {ref.anno}</p>
+                <p className="text-xs font-bold uppercase tracking-wide text-slate-500">{ref.autore} · {ref.anno}</p>
                 <p className="mt-1 font-black text-slate-900">{ref.titolo}</p>
                 <p className="mt-0.5 text-xs text-slate-500">{ref.editore}</p>
                 <p className="mt-2 text-xs text-brand-700 font-semibold">{ref.ruolo}</p>

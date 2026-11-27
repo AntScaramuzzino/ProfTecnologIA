@@ -60,7 +60,7 @@ function LabDots({ lab }: { lab?: LabProgress }) {
   const passed = lv.filter(([l]) => isLabLevelPassed(lab.levels[l]));
   return (
     <span
-      className="inline-flex items-center gap-1 rounded-full bg-teal-50 px-2 py-0.5 text-[10px] font-bold text-teal-800"
+      className="inline-flex items-center gap-1 rounded-full bg-teal-50 px-2 py-0.5 text-xs font-bold text-teal-800"
       title={`Laboratorio: livelli superati ${passed.map(([, n]) => n).join(", ") || "nessuno"}`}
     >
       Lab
@@ -84,7 +84,7 @@ function EsplBadge({ p, total }: { p?: EsplorazioneProgress; total: number }) {
   const all = n === total;
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold ${
+      className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-bold ${
         all ? "bg-sky-800 text-white" : "bg-sky-50 text-sky-900"
       }`}
       title={`Esplorazione immersiva: ${n} scene visitate su ${total}`}
@@ -109,12 +109,12 @@ function formatDate(iso: string): string {
 
 function ScoreBadge({ r }: { r: MCProgress }) {
   if (r.quizTotal === 0) {
-    return <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold text-slate-500">visitata</span>;
+    return <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-bold text-slate-500">visitata</span>;
   }
   const pct = Math.round((r.quizScore / r.quizTotal) * 100);
   const passed = isPassed(r);
   return (
-    <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${
+    <span className={`rounded-full px-2 py-0.5 text-xs font-bold ${
       passed ? "bg-emerald-100 text-emerald-700" : "bg-red-100 text-red-600"
     }`}>
       {r.quizScore}/{r.quizTotal} · {pct}%{passed ? " ✓" : ""}
@@ -190,7 +190,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
   if (!hydrated) {
     return (
       <div className="flex min-h-[40vh] items-center justify-center">
-        <p className="text-sm text-slate-400">Caricamento progressi…</p>
+        <p className="text-sm text-slate-500">Caricamento progressi…</p>
       </div>
     );
   }
@@ -208,14 +208,14 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
       {/* ── Header ──────────────────────────────────────────────────────────── */}
       <div className="mb-8 flex items-start justify-between gap-4">
         <div>
-          <p className="text-xs font-black uppercase tracking-widest text-slate-400">
+          <p className="text-xs font-black uppercase tracking-widest text-slate-500">
             Il mio percorso
           </p>
           <h1 className="mt-1 text-2xl font-black tracking-tight text-slate-900 sm:text-3xl">
             {hasStudentName ? `Progressi di ${studentName}` : "Progressi"}
           </h1>
           {store.lastActive && (
-            <p className="mt-1 text-xs text-slate-400">
+            <p className="mt-1 text-xs text-slate-500">
               Ultima attività: {formatDate(store.lastActive)}
             </p>
           )}
@@ -226,9 +226,9 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
           className="shrink-0 rounded-xl border-2 px-4 py-3 text-center"
           style={{ borderColor: DIGCOMP_COLOR[store.digcompLevel] ?? "#94a3b8", color: DIGCOMP_COLOR[store.digcompLevel] ?? "#94a3b8" }}
         >
-          <p className="text-[10px] font-black uppercase tracking-widest opacity-70">DigComp</p>
+          <p className="text-xs font-black uppercase tracking-widest opacity-70">DigComp</p>
           <p className="text-2xl font-black leading-none">{store.digcompLevel}</p>
-          <p className="mt-0.5 text-[10px] font-bold">{DIGCOMP_LABEL[store.digcompLevel]}</p>
+          <p className="mt-0.5 text-xs font-bold">{DIGCOMP_LABEL[store.digcompLevel]}</p>
         </div>
       </div>
 
@@ -243,7 +243,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
               <p className="mt-1 text-sm font-bold text-slate-800">
                 Ciao {studentName}, questi progressi vengono ricordati su questo dispositivo.
               </p>
-              <p className="mt-0.5 text-[10px] text-slate-400">
+              <p className="mt-0.5 text-xs text-slate-500">
                 ID locale: {store.studentId}
               </p>
             </div>
@@ -261,7 +261,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
               <button
                 type="button"
                 onClick={clearStudentName}
-                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-400 transition-colors hover:bg-slate-50 hover:text-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
+                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-500 transition-colors hover:bg-slate-50 hover:text-red-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
               >
                 Esci
               </button>
@@ -281,9 +281,9 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                 placeholder="Scrivi il tuo nome"
                 autoComplete="given-name"
                 maxLength={40}
-                className="mt-2 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-800 outline-none transition-colors placeholder:text-slate-400 focus:border-brand-400 focus:bg-white focus:ring-2 focus:ring-brand-100"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-800 outline-none transition-colors placeholder:text-slate-500 focus:border-brand-400 focus:bg-white focus:ring-2 focus:ring-brand-100"
               />
-              <p className="mt-1 text-[10px] text-slate-400">
+              <p className="mt-1 text-xs text-slate-500">
                 Il nome resta solo nel browser e separa i progressi da quelli di altri studenti.
               </p>
             </div>
@@ -372,7 +372,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
 
         {/* Footer con SDG reference */}
         <div className="border-t border-slate-100 bg-slate-50 px-5 py-3">
-          <p className="text-[10px] leading-relaxed text-slate-400">
+          <p className="text-xs leading-relaxed text-slate-500">
             <span className="font-bold text-slate-500">Gli Obiettivi di Sviluppo Sostenibile (SDG)</span> sono i 17 traguardi dell&apos;Agenda 2030 dell&apos;ONU per un futuro equo e sostenibile.
             Ogni MC di ProfTecnologIA è allineata a uno o più SDG — studia, supera i quiz e dimostra la tua competenza.
           </p>
@@ -389,7 +389,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
           <div key={label} className="rounded-xl border border-slate-200 bg-white px-4 py-4 text-center shadow-sm">
             <p className="text-2xl font-black sm:text-3xl" style={{ color }}>{value}</p>
             <p className="mt-0.5 text-xs font-bold text-slate-700">{label}</p>
-            <p className="text-[10px] text-slate-400">{sub}</p>
+            <p className="text-xs text-slate-500">{sub}</p>
           </div>
         ))}
       </div>
@@ -458,12 +458,12 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                 >
                   {/* Stato chip — in alto a destra */}
                   <span
-                    className={`absolute right-2 top-2 rounded-full px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wide ${
+                    className={`absolute right-2 top-2 rounded-full px-1.5 py-0.5 text-xs font-black uppercase tracking-wide ${
                       isUnlocked
                         ? "bg-emerald-100 text-emerald-700"
                         : isProgress
                           ? "bg-amber-100 text-amber-700"
-                          : "bg-slate-100 text-slate-400"
+                          : "bg-slate-100 text-slate-500"
                     }`}
                   >
                     {isUnlocked ? "✓" : isProgress ? "…" : "🔒"}
@@ -484,18 +484,18 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
 
                   {/* Titoli */}
                   <p
-                    className="text-[11px] font-black uppercase tracking-widest"
+                    className="text-xs font-black uppercase tracking-widest"
                     style={{ color: isLocked ? "#94a3b8" : badge.accent }}
                   >
                     {badge.shortTitle}
                   </p>
-                  <p className={`mt-0.5 text-xs font-bold leading-tight ${isLocked ? "text-slate-400" : "text-slate-800"}`}>
+                  <p className={`mt-0.5 text-xs font-bold leading-tight ${isLocked ? "text-slate-500" : "text-slate-800"}`}>
                     {badge.title}
                   </p>
 
                   {/* Progress bar */}
                   <div className="mt-3 w-full">
-                    <div className="mb-1 flex justify-between text-[9px] font-bold text-slate-400">
+                    <div className="mb-1 flex justify-between text-xs font-bold text-slate-500">
                       <span>{passed}/{badge.requiredPassed} quiz</span>
                       <span>{visited}/{linkedMCs.length} MC</span>
                     </div>
@@ -515,7 +515,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
         </div>
 
         {/* Legenda */}
-        <p className="mt-3 text-center text-[10px] text-slate-400">
+        <p className="mt-3 text-center text-xs text-slate-500">
           Supera i quiz delle MC collegate per sbloccare ogni badge
         </p>
       </div>
@@ -539,7 +539,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center justify-between">
                     <p className="truncate text-xs font-bold text-slate-700">{AREA_LABEL[area] ?? area}</p>
-                    <p className="ml-2 shrink-0 text-[10px] text-slate-400">
+                    <p className="ml-2 shrink-0 text-xs text-slate-500">
                       {visited}/{total}{passed > 0 ? ` · ${passed} ✓` : ""}
                     </p>
                   </div>
@@ -586,7 +586,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                     >
                       {mc?.titolo ?? rec.mcId}
                     </Link>
-                    <p className="text-[10px] text-slate-400">
+                    <p className="text-xs text-slate-500">
                       {AREA_EMOJI[mc?.area ?? ""] ?? ""} {mc?.area} · Classe {mc?.anno}ª · {formatDate(rec.completedAt)}
                       {rec.attempts > 1 ? ` · ${rec.attempts} tentativi` : ""}
                     </p>
@@ -605,7 +605,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
         <div className="mb-8 rounded-xl border border-slate-200 bg-slate-50 px-5 py-10 text-center">
           <p className="text-2xl">📚</p>
           <p className="mt-2 text-sm font-bold text-slate-600">Nessuna MC visitata ancora</p>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="mt-1 text-xs text-slate-500">
             Apri una micro-competenza per iniziare a tracciare i tuoi progressi.
           </p>
           <Link
@@ -627,7 +627,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                 reset();
               }
             }}
-            className="text-xs font-bold text-slate-400 underline underline-offset-2 hover:text-red-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
+            className="text-xs font-bold text-slate-500 underline underline-offset-2 hover:text-red-500 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
           >
             Azzera progressi
           </button>

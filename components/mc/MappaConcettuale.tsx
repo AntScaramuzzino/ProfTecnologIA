@@ -36,7 +36,7 @@ export default function MappaConcettuale({ mc, areaHex }: MappaConcettualeProps)
     .slice(0, 6);
 
   const rami = [
-    { label: `${area?.emoji ?? ""} ${area?.label ?? mc.area}`, colore: accent },
+    { label: `${area?.label ?? mc.area}`, colore: accent },
     { label: `SDG ${mc.sdg?.[0] ?? ""}`, colore: "#f59e0b" },
     { label: `DigComp ${mc.outputApp.livelloDigComp}`, colore: "#6366f1" },
     mc.professione_futura ? { label: mc.professione_futura.titolo, colore: "#10b981" } : null,

@@ -153,7 +153,7 @@ export default function ArchitetturaPage() {
                 <span key={a.nome} className="rounded-full px-3 py-1 text-white text-xs" style={{ background: a.colore }}>
                   {a.emoji} {a.nome}
                 </span>
-                {i < PIPELINE.length - 1 && <span key={`arr-${i}`} className="text-slate-400">→</span>}
+                {i < PIPELINE.length - 1 && <span key={`arr-${i}`} className="text-slate-500">→</span>}
               </>
             ))}
           </div>
@@ -166,19 +166,19 @@ export default function ArchitetturaPage() {
                 </div>
                 <div className="grid gap-3 sm:grid-cols-2 text-sm">
                   <div>
-                    <p className="text-xs font-black uppercase tracking-wide text-slate-400 mb-1">Cosa fa</p>
+                    <p className="text-xs font-black uppercase tracking-wide text-slate-500 mb-1">Cosa fa</p>
                     <p className="text-slate-700">{a.cosa}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-black uppercase tracking-wide text-slate-400 mb-1">Output</p>
+                    <p className="text-xs font-black uppercase tracking-wide text-slate-500 mb-1">Output</p>
                     <p className="text-slate-700">{a.output}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-black uppercase tracking-wide text-slate-400 mb-1">Non fa</p>
+                    <p className="text-xs font-black uppercase tracking-wide text-slate-500 mb-1">Non fa</p>
                     <p className="text-slate-500">{a.non}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-black uppercase tracking-wide text-slate-400 mb-1">Trigger</p>
+                    <p className="text-xs font-black uppercase tracking-wide text-slate-500 mb-1">Trigger</p>
                     <p className="text-slate-700">{a.trigger}</p>
                     {a.soglie && <p className="mt-1 text-xs text-slate-500">{a.soglie}</p>}
                   </div>

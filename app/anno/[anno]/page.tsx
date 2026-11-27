@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import MCCard from "@/components/MCCard";
+import AreaIcon from "@/components/AreaIcon";
 import Breadcrumb from "@/components/Breadcrumb";
 import SiteFooter from "@/components/SiteFooter";
 import { AREA_META, getMCsByAnno } from "@/lib/mc-loader";
@@ -61,7 +62,7 @@ export default async function AnnoPage({ params }: PageProps) {
         {byArea.map(({ area, meta, mcs: areaMcs }) => (
           <section key={area}>
             <div className="mb-4 flex items-center gap-2 sm:mb-5 sm:gap-3">
-              <span className="text-2xl sm:text-3xl">{meta.emoji}</span>
+              <AreaIcon area={area} size={28} className="text-slate-800" />
               <div className="min-w-0">
                 <h2 className="text-xl font-black sm:text-2xl">{meta.label}</h2>
                 <p className="text-xs text-slate-500 sm:text-sm">{areaMcs.length} micro-competenze</p>

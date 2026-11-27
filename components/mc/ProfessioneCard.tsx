@@ -115,9 +115,9 @@ export default function ProfessioneCard({ professione, professioneText, mcId, ar
           {/* Competenze chiave dal JSON */}
           {professione.competenze_chiave && professione.competenze_chiave.length > 0 && (
             <div>
-              <p className="mb-2 text-xs font-black uppercase tracking-wider text-slate-400">
+              <p className="mb-2 text-xs font-black uppercase tracking-wider text-slate-500">
                 Competenze chiave{" "}
-                <span className="font-normal normal-case text-slate-400">
+                <span className="font-normal normal-case text-slate-500">
                   — clicca per vedere la definizione
                 </span>
               </p>
