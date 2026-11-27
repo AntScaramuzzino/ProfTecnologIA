@@ -812,14 +812,17 @@ html.lim .intro-what p{font-size:20px}
   const openTab = (n) => { const t = document.getElementById("t" + n); if (t) { t.click(); t.focus(); tabs.scrollIntoView({ behavior: "smooth", block: "start" }); } };
   path.querySelectorAll(".intro-card").forEach((b) => (b.onclick = () => openTab(+b.dataset.tab)));
   go.onclick = () => openTab(1);
-  const show = (open, save = true) => { sec.hidden = !open; mini.hidden = open; if (save) set(KEY, !open); };
+  // Chiave nuova: registra solo le scelte esplicite. La vecchia (KEY) veniva scritta a ogni caricamento
+  // con "false", quindi di quella vale solo "true", che nasceva sempre da un clic su «Riduci».
+  const SCELTA = ID + ":intro-scelta";
+  const show = (open, save = true) => { sec.hidden = !open; mini.hidden = open; if (save) set(SCELTA, open ? "aperta" : "chiusa"); };
   hide.onclick = () => { show(false); mini.focus(); };
   mini.onclick = () => { show(true); sec.querySelector(".intro-card")?.focus(); };
   // Dentro la pagina della lezione (iframe) la presentazione parte ridotta, a pagina intera aperta;
   // una scelta esplicita dello studente (Riduci / riapri) vale in entrambi i casi.
   let embedded = false; try { embedded = window.self !== window.top; } catch (e) { embedded = true; }
-  const saved = get(KEY);
-  show(saved === null ? !embedded : !saved, false);
+  const scelta = get(SCELTA) || (get(KEY) === true ? "chiusa" : null);
+  show(scelta === null ? !embedded : scelta === "aperta", false);
 })();
 </script>
 <style>
