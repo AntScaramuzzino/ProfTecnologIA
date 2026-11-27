@@ -20,7 +20,7 @@ const CHIAVE_CLASSE_DOCENTE = "tecnologia_app_lezione_classe_docente";
 
 function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica" }) {
   const colori = tono === "teoria"
-    ? { bordo: "border-emerald-200", fascia: "bg-gradient-to-br from-emerald-100 to-white", badge: "bg-emerald-700", link: "text-emerald-800", chip: "border-emerald-200 bg-emerald-50 text-emerald-900 hover:border-emerald-500" }
+    ? { bordo: "border-brand-200", fascia: "bg-gradient-to-br from-brand-100 to-white", badge: "bg-brand-700", link: "text-brand-800", chip: "border-brand-200 bg-brand-50 text-brand-900 hover:border-brand-500" }
     : { bordo: "border-blue-200", fascia: "bg-gradient-to-br from-blue-100 to-white", badge: "bg-blue-700", link: "text-blue-800", chip: "border-blue-200 bg-blue-50 text-blue-900 hover:border-blue-500" };
   return (
     <article className={cx("flex h-full flex-col overflow-hidden rounded-2xl border-2 bg-white shadow-sm", colori.bordo)}>
@@ -53,7 +53,7 @@ function Scheda({ voce, tono }: { voce: VoceSettimana; tono: "teoria" | "pratica
       {voce.mc && voce.mcTitolo ? (
         <>
           <h3 className="mt-3 text-lg font-black leading-snug text-slate-950 sm:text-xl">
-            <Link href={`/mc/${voce.mc}`} className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500">
+            <Link href={`/mc/${voce.mc}`} className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500">
               {voce.emoji} {voce.mcTitolo}
             </Link>
           </h3>
@@ -166,11 +166,11 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
   }
 
   return (
-    <section aria-labelledby="titolo-lezione-settimana" className="border-b border-slate-200 bg-gradient-to-b from-emerald-50/60 to-white">
+    <section aria-labelledby="titolo-lezione-settimana" className="border-b border-slate-200 bg-gradient-to-b from-brand-50/60 to-white">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">{occhiello}</p>
+            <p className="text-xs font-bold uppercase tracking-wide text-brand-700">{occhiello}</p>
             <h2 id="titolo-lezione-settimana" className="text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
               La lezione della settimana
             </h2>
@@ -197,8 +197,8 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
                   aria-pressed={c.attiva}
                   onClick={c.scegli}
                   className={cx(
-                    "rounded-full px-4 py-2 text-sm font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500",
-                    c.attiva ? "bg-emerald-700 text-white" : "text-slate-700 hover:bg-slate-100"
+                    "rounded-full px-4 py-2 text-sm font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+                    c.attiva ? "bg-brand-700 text-white" : "text-slate-700 hover:bg-slate-100"
                   )}
                 >
                   {c.nome}
@@ -253,7 +253,7 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
           ) : (
             oggi === null && (
               <>
-                <div className="rounded-2xl border-2 border-emerald-100 bg-white" />
+                <div className="rounded-2xl border-2 border-brand-100 bg-white" />
                 <div className="rounded-2xl border-2 border-blue-100 bg-white" />
               </>
             )
@@ -263,7 +263,7 @@ export default function LezioneSettimana({ piano }: { piano: PianoSettimane }) {
         <p className="mt-4 text-xs text-slate-500">
           Due ore a settimana: una di teoria e una di disegno o coding. Il ritmo segue il calendario scolastico{" "}
           {ANNO_SCOLASTICO.etichetta} della Regione {ANNO_SCOLASTICO.regione}; {mia ? `qui vedi il piano della tua ${mia.nome}, salvato su questo dispositivo.` : "è una proposta, ogni classe può andare più piano o più veloce."}{" "}
-          <Link href="/docenti" className="font-bold text-emerald-800 underline underline-offset-4">
+          <Link href="/docenti" className="font-bold text-brand-800 underline underline-offset-4">
             {mia ? "Modifica il piano →" : "Sei docente? Pianifica il tuo anno →"}
           </Link>
         </p>

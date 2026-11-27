@@ -70,7 +70,7 @@ export default async function AreaPage({ params }: PageProps) {
                 <h2 className="text-xl font-black sm:text-2xl">Classe {anno}ª</h2>
                 <p className="text-xs text-slate-500 sm:text-sm">{yearMcs.length} MC in questa area</p>
               </div>
-              <Link href={`/anno/${anno}`} className="text-sm font-bold text-emerald-700 hover:text-emerald-900">
+              <Link href={`/anno/${anno}`} className="text-sm font-bold text-brand-700 hover:text-brand-900">
                 Vedi anno
               </Link>
             </div>

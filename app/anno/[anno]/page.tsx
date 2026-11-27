@@ -42,7 +42,7 @@ export default async function AnnoPage({ params }: PageProps) {
       ]} />
 
       <header className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10">
-        <p className="text-xs font-black uppercase tracking-wide text-emerald-700 sm:text-sm">Percorso annuale</p>
+        <p className="text-xs font-black uppercase tracking-wide text-brand-700 sm:text-sm">Percorso annuale</p>
         <h1 className="mt-2 text-2xl font-black tracking-tight sm:text-4xl">Classe {annoNum}ª</h1>
         <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base sm:leading-8">
           {mcs.length} micro-competenze organizzate per area tematica, con testi, immagini,
@@ -66,7 +66,7 @@ export default async function AnnoPage({ params }: PageProps) {
                 <h2 className="text-xl font-black sm:text-2xl">{meta.label}</h2>
                 <p className="text-xs text-slate-500 sm:text-sm">{areaMcs.length} micro-competenze</p>
               </div>
-              <Link href={`/area/${area}`} className="ml-auto shrink-0 text-sm font-bold text-emerald-700 hover:text-emerald-900">
+              <Link href={`/area/${area}`} className="ml-auto shrink-0 text-sm font-bold text-brand-700 hover:text-brand-900">
                 Vedi area
               </Link>
             </div>

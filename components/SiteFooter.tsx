@@ -14,7 +14,7 @@ export default function SiteFooter() {
           <Link
             href="/novita/"
             title="Novità: che cosa è cambiato in ogni versione"
-            className="rounded-full border border-slate-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500 hover:border-emerald-400 hover:text-emerald-700"
+            className="rounded-full border border-slate-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-slate-500 hover:border-brand-400 hover:text-brand-700"
           >
             v{VERSIONE_ATTUALE}
           </Link>

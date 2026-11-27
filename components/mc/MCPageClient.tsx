@@ -385,7 +385,7 @@ function ReadableBodyInTab({ body, compact = false }: { body: string; compact?: 
         const lines = block.split("\n").map((l) => l.trim()).filter(Boolean);
         if (lines.length > 1 && lines.every((l) => l.startsWith("• "))) {
           return (
-            <ul key={idx} className="mt-4 list-disc space-y-2 pl-6 marker:text-emerald-700">
+            <ul key={idx} className="mt-4 list-disc space-y-2 pl-6 marker:text-brand-700">
               {lines.map((l, li) => <li key={li}>{renderInline(l.replace(/^•\s+/, ""))}</li>)}
             </ul>
           );
@@ -393,7 +393,7 @@ function ReadableBodyInTab({ body, compact = false }: { body: string; compact?: 
         // Ordered list
         if (lines.length > 1 && lines.every((l) => /^\d+\.\s+/.test(l))) {
           return (
-            <ol key={idx} className="mt-4 list-decimal space-y-2 pl-6 marker:font-bold marker:text-emerald-700">
+            <ol key={idx} className="mt-4 list-decimal space-y-2 pl-6 marker:font-bold marker:text-brand-700">
               {lines.map((l, li) => <li key={li}>{renderInline(l.replace(/^\d+\.\s+/, ""))}</li>)}
             </ol>
           );
@@ -780,9 +780,9 @@ function ZonePanel({
         <ReadableBodyInTab body={body} />
         {/* Prima la sfida, poi il testo: il laboratorio segue subito l'aggancio */}
         {getLaboratorio(mc.id) && (
-          <section aria-label="Prima prova, poi leggi" className="rounded-xl border-2 border-emerald-300 bg-emerald-50/60 p-4">
-            <p className="text-xs font-black uppercase tracking-widest text-emerald-800">🎮 Prima prova, poi leggi</p>
-            <p className="mt-1 mb-4 text-sm leading-6 text-emerald-950">
+          <section aria-label="Prima prova, poi leggi" className="rounded-xl border-2 border-brand-300 bg-brand-50/60 p-4">
+            <p className="text-xs font-black uppercase tracking-widest text-brand-800">🎮 Prima prova, poi leggi</p>
+            <p className="mt-1 mb-4 text-sm leading-6 text-brand-950">
               Entra nel laboratorio prima di studiare. Se ti blocchi, la risposta è nella scheda ESPLORA: vai a cercarla e torna qui.
             </p>
             <LabInterattivoEmbed mcId={mc.id} onResult={onLabResult} />
@@ -1050,7 +1050,7 @@ function ZonePanel({
           <GeoGebraOrthographicProjectionEmbed className="mb-8" />
         )}
         {getLaboratorio(mc.id) && (
-          <p className="mb-6 rounded-lg border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-950">
+          <p className="mb-6 rounded-lg border border-brand-200 bg-brand-50 px-4 py-3 text-sm text-brand-950">
             🎮 Il laboratorio interattivo è nella scheda INNESCA.{" "}
             {onNavigate && (
               <button type="button" onClick={() => onNavigate("INNESCA")} className="font-bold underline underline-offset-2">

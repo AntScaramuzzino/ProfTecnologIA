@@ -137,19 +137,19 @@ export default function CreditsPage() {
         </div>
 
         {/* ── DICHIARAZIONE USO IA ─────────────────────────────────────────── */}
-        <section className="mb-10 rounded-2xl border border-emerald-200 bg-emerald-50 p-6 sm:p-8">
+        <section className="mb-10 rounded-2xl border border-brand-200 bg-brand-50 p-6 sm:p-8">
           <div className="mb-4 flex items-center gap-3">
             <span className="text-2xl">🤖</span>
-            <h2 className="text-xl font-black text-emerald-900 sm:text-2xl">Dichiarazione sull'uso dell'IA</h2>
+            <h2 className="text-xl font-black text-brand-900 sm:text-2xl">Dichiarazione sull'uso dell'IA</h2>
           </div>
-          <p className="mb-4 text-sm leading-7 text-emerald-900">
+          <p className="mb-4 text-sm leading-7 text-brand-900">
             Il progetto ProfTecnologIA utilizza l'intelligenza artificiale come strumento di produzione,
             <strong> non come sostituto della voce dell'autore</strong>. Ogni testo narrativo rivolto agli studenti
             (📖 ESPLORA) è scritto e revisionato dal Prof. Ing. Antonio Scaramuzzino.
             Gli agenti AI operano su strutture, asset e metadati, lasciando al giudizio umano
             la qualità linguistica e la coerenza didattica.
           </p>
-          <p className="text-sm leading-7 text-emerald-800">
+          <p className="text-sm leading-7 text-brand-800">
             In conformità con le linee guida UNESCO sull'IA nell'educazione e con le raccomandazioni del MIM,
             l'uso dell'IA è documentato in questa pagina per garantire trasparenza agli editori,
             ai docenti e alle famiglie.
@@ -208,7 +208,7 @@ export default function CreditsPage() {
               <dt className="font-black text-slate-900">Licenza</dt>
               <dd>
                 Le esplorazioni immersive sono distribuite con licenza{" "}
-                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" target="_blank" rel="license noopener noreferrer" className="font-semibold text-emerald-700 underline hover:text-emerald-900">
+                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" target="_blank" rel="license noopener noreferrer" className="font-semibold text-brand-700 underline hover:text-brand-900">
                   Creative Commons Attribuzione – Non commerciale – Condividi allo stesso modo 4.0 (CC BY-NC-SA 4.0)
                 </a>
                 : puoi riusarle e modificarle per scopi non commerciali, citando l&apos;autore e condividendo le opere derivate con la stessa licenza.
@@ -229,7 +229,7 @@ export default function CreditsPage() {
             {SOURCE_SECTIONS.map((section, si) => (
               <div key={section.title}>
                 <div className="mb-3 flex items-center gap-2">
-                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-emerald-700 text-xs font-black text-white">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand-700 text-xs font-black text-white">
                     {si + 1}
                   </span>
                   <h3 className="text-lg font-black">{section.emoji} {section.title}</h3>
@@ -242,7 +242,7 @@ export default function CreditsPage() {
                       href={source.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 hover:border-emerald-300 hover:bg-emerald-50 transition"
+                      className="flex items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-800 hover:border-brand-300 hover:bg-brand-50 transition"
                     >
                       <span>{source.name}</span>
                       <span className={`rounded-full px-2 py-0.5 text-xs font-bold ${
@@ -294,7 +294,7 @@ export default function CreditsPage() {
                 <p className="text-xs font-bold uppercase tracking-wide text-slate-400">{ref.autore} · {ref.anno}</p>
                 <p className="mt-1 font-black text-slate-900">{ref.titolo}</p>
                 <p className="mt-0.5 text-xs text-slate-500">{ref.editore}</p>
-                <p className="mt-2 text-xs text-emerald-700 font-semibold">{ref.ruolo}</p>
+                <p className="mt-2 text-xs text-brand-700 font-semibold">{ref.ruolo}</p>
               </div>
             ))}
           </div>
@@ -304,15 +304,15 @@ export default function CreditsPage() {
         <section className="rounded-2xl bg-slate-950 p-6 text-white sm:p-8">
           <h2 className="mb-4 text-xl font-black text-white">Autore e licenza</h2>
           <div className="flex items-start gap-4">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-emerald-700 font-black text-white">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-700 font-black text-white">
               AS
             </div>
             <div>
               <p className="font-black text-white">Prof. Ing. Antonio Scaramuzzino</p>
-              <p className="text-sm text-emerald-400">Docente di Tecnologia · Classe A060 · Équipe Formativa MIM</p>
+              <p className="text-sm text-brand-400">Docente di Tecnologia · Classe A060 · Équipe Formativa MIM</p>
               <div className="mt-3 flex flex-wrap gap-3 text-sm">
                 <a href="https://www.proftecnologia.it" target="_blank" rel="noopener noreferrer"
-                   className="text-emerald-400 hover:text-emerald-300">🌐 proftecnologia.it</a>
+                   className="text-brand-400 hover:text-brand-300">🌐 proftecnologia.it</a>
                 <span className="text-slate-700">·</span>
                 <a href="mailto:antonio.scaramuzzino@coopinrete.it"
                    className="text-slate-400 hover:text-slate-300">✉️ antonio.scaramuzzino@coopinrete.it</a>

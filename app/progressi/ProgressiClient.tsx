@@ -237,7 +237,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
         {hasStudentName && !editingName ? (
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-widest text-emerald-600">
+              <p className="text-xs font-black uppercase tracking-widest text-brand-600">
                 Sessione attiva
               </p>
               <p className="mt-1 text-sm font-bold text-slate-800">
@@ -254,7 +254,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                   setNameDraft(studentName);
                   setEditingName(true);
                 }}
-                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-600 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-full border border-slate-200 px-3 py-1.5 text-xs font-bold text-slate-600 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
               >
                 Cambia nome
               </button>
@@ -281,7 +281,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                 placeholder="Scrivi il tuo nome"
                 autoComplete="given-name"
                 maxLength={40}
-                className="mt-2 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-800 outline-none transition-colors placeholder:text-slate-400 focus:border-emerald-400 focus:bg-white focus:ring-2 focus:ring-emerald-100"
+                className="mt-2 w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-semibold text-slate-800 outline-none transition-colors placeholder:text-slate-400 focus:border-brand-400 focus:bg-white focus:ring-2 focus:ring-brand-100"
               />
               <p className="mt-1 text-[10px] text-slate-400">
                 Il nome resta solo nel browser e separa i progressi da quelli di altri studenti.
@@ -303,7 +303,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
               <button
                 type="submit"
                 disabled={!nameDraft.trim()}
-                className="rounded-full bg-emerald-700 px-4 py-2 text-xs font-black text-white transition-colors hover:bg-emerald-800 disabled:cursor-not-allowed disabled:bg-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+                className="rounded-full bg-brand-700 px-4 py-2 text-xs font-black text-white transition-colors hover:bg-brand-800 disabled:cursor-not-allowed disabled:bg-slate-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
               >
                 Salva sessione
               </button>
@@ -313,19 +313,19 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
       </div>
 
       {/* ── Challenge Agenda 2030 — guida sempre visibile ───────────────────── */}
-      <div className="mb-8 overflow-hidden rounded-2xl border border-emerald-200 bg-white shadow-sm">
+      <div className="mb-8 overflow-hidden rounded-2xl border border-brand-200 bg-white shadow-sm">
         {/* Header verde */}
-        <div className="flex items-center gap-3 border-b border-emerald-100 bg-emerald-50 px-5 py-4">
+        <div className="flex items-center gap-3 border-b border-brand-100 bg-brand-50 px-5 py-4">
           <span className="text-2xl">🏆</span>
           <div>
-            <p className="text-xs font-black uppercase tracking-widest text-emerald-600">
+            <p className="text-xs font-black uppercase tracking-widest text-brand-600">
               ProfTecnologIA Challenge
             </p>
             <p className="text-base font-black text-slate-900">
               Sblocca i 12 Badge Agenda 2030
             </p>
           </div>
-          <div className="ml-auto shrink-0 rounded-full bg-emerald-100 px-3 py-1 text-xs font-black text-emerald-700">
+          <div className="ml-auto shrink-0 rounded-full bg-brand-100 px-3 py-1 text-xs font-black text-brand-700">
             {total} MC · {SDG_BADGES.length} badge
           </div>
         </div>
@@ -582,7 +582,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
                   <div className="min-w-0 flex-1">
                     <Link
                       href={`/mc/${rec.mcId}`}
-                      className="block truncate text-sm font-semibold text-slate-800 hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                      className="block truncate text-sm font-semibold text-slate-800 hover:text-brand-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                     >
                       {mc?.titolo ?? rec.mcId}
                     </Link>
@@ -610,7 +610,7 @@ export default function ProgressiClient({ mcIndex }: ProgressiClientProps) {
           </p>
           <Link
             href="/#catalogo"
-            className="mt-4 inline-block rounded-full bg-emerald-700 px-5 py-2 text-sm font-bold text-white hover:bg-emerald-800 transition-colors"
+            className="mt-4 inline-block rounded-full bg-brand-700 px-5 py-2 text-sm font-bold text-white hover:bg-brand-800 transition-colors"
           >
             Esplora il catalogo →
           </Link>

@@ -82,8 +82,8 @@ export default function MCRailToggle({ action }: { action: "hide" | "show" }) {
       }
       className={
         hide
-          ? "ml-auto flex items-center gap-1.5 rounded-full px-2 py-1 text-xs font-bold text-slate-500 transition-colors hover:bg-white hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
-          : "mc-rail-show mr-3 items-center gap-1.5 whitespace-nowrap rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-600 transition-colors hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          ? "ml-auto flex items-center gap-1.5 rounded-full px-2 py-1 text-xs font-bold text-slate-500 transition-colors hover:bg-white hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
+          : "mc-rail-show mr-3 items-center gap-1.5 whitespace-nowrap rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-600 transition-colors hover:border-slate-300 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
       }
     >
       {!hide && <RailIcon open />}

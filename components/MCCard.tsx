@@ -11,7 +11,7 @@ export default function MCCard({ mc }: { mc: MC }) {
   return (
     <Link
       href={`/mc/${mc.id}`}
-      className="group flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+      className="group flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
     >
       {/* Immagine — flex item, altezza fissa + aspect-ratio come suggerimento */}
       <div
@@ -44,7 +44,7 @@ export default function MCCard({ mc }: { mc: MC }) {
             {level}
           </span>
         </div>
-        <h3 className="text-sm font-bold leading-snug text-slate-900 group-hover:text-emerald-800">
+        <h3 className="text-sm font-bold leading-snug text-slate-900 group-hover:text-brand-800">
           {mc.titolo}
         </h3>
         <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">

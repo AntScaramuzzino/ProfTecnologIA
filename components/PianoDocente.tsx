@@ -24,7 +24,7 @@ function etichettaVoce(v: VoceSettimana): string {
 }
 
 const BOTTONE =
-  "rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:border-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 disabled:opacity-40";
+  "rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-bold text-slate-700 hover:border-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 disabled:opacity-40";
 const CAMPO = "rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm";
 const SI = "rounded-full bg-red-700 px-3 py-1 font-bold text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400";
 const NO = "rounded-full border border-red-300 bg-white px-3 py-1 font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400";
@@ -206,7 +206,7 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
   return (
     <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
       <div className="max-w-3xl">
-        <p className="font-mono text-xs font-black uppercase tracking-widest text-emerald-800">
+        <p className="font-mono text-xs font-black uppercase tracking-widest text-brand-800">
           Per i docenti · anno scolastico {ANNO_SCOLASTICO.etichetta}
         </p>
         <h1 className="mt-2 text-3xl font-black tracking-tight text-slate-950 sm:text-5xl">Pianifica l’anno</h1>
@@ -237,8 +237,8 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
                 aria-pressed={c.id === idSel}
                 onClick={() => scegli(c.id)}
                 className={cx(
-                  "rounded-full border px-4 py-2 text-sm font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500",
-                  c.id === idSel ? "border-emerald-700 bg-emerald-700 text-white" : "border-slate-300 bg-white text-slate-700 hover:border-slate-500"
+                  "rounded-full border px-4 py-2 text-sm font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
+                  c.id === idSel ? "border-brand-700 bg-brand-700 text-white" : "border-slate-300 bg-white text-slate-700 hover:border-slate-500"
                 )}
               >
                 {c.nome.trim() || "senza nome"}
@@ -258,7 +258,7 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
                   aria-pressed={annoSfoglia === a}
                   onClick={() => setAnnoSfoglia(a)}
                   className={cx(
-                    "rounded-full border px-4 py-2 text-sm font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500",
+                    "rounded-full border px-4 py-2 text-sm font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500",
                     annoSfoglia === a ? "border-slate-800 bg-slate-800 text-white" : "border-slate-300 bg-white text-slate-700 hover:border-slate-500"
                   )}
                 >
@@ -294,7 +294,7 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
               onChange={(e) => setNuovaSezione(e.target.value)}
             />
           </label>
-          <button type="submit" className="rounded-full border border-emerald-700 bg-emerald-700 px-4 py-2 text-sm font-bold text-white hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 disabled:opacity-40" disabled={!pronto || classi.length >= MAX_CLASSI}>
+          <button type="submit" className="rounded-full border border-brand-700 bg-brand-700 px-4 py-2 text-sm font-bold text-white hover:bg-brand-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 disabled:opacity-40" disabled={!pronto || classi.length >= MAX_CLASSI}>
             Aggiungi classe
           </button>
           {classi.length >= MAX_CLASSI && <p className="text-sm text-slate-600">Hai raggiunto il massimo di {MAX_CLASSI} classi.</p>}
@@ -414,14 +414,14 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
               id={corrente ? "questa-settimana" : undefined}
               className={cx(
                 "scroll-mt-28 break-inside-avoid rounded-2xl border bg-white p-4 shadow-sm sm:p-5",
-                corrente ? "border-emerald-500 ring-2 ring-emerald-200" : "border-slate-200"
+                corrente ? "border-brand-500 ring-2 ring-brand-200" : "border-slate-200"
               )}
             >
               <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
                 <h3 className="text-base font-black text-slate-950">Settimana {n}</h3>
                 <p className="text-sm font-semibold text-slate-600">{etichettaSettimana(s)}</p>
                 {s.giorni < 5 && <p className="text-xs font-semibold text-amber-800">{s.giorni} giorni di scuola</p>}
-                {corrente && <p className="rounded-full bg-emerald-700 px-2.5 py-0.5 text-xs font-bold text-white">Questa settimana</p>}
+                {corrente && <p className="rounded-full bg-brand-700 px-2.5 py-0.5 text-xs font-bold text-white">Questa settimana</p>}
               </div>
 
               <div className="mt-3 grid gap-3 md:grid-cols-2">
@@ -435,12 +435,12 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
                       key={b}
                       className={cx(
                         "rounded-xl border p-3",
-                        b === "teoria" ? "border-emerald-200 bg-emerald-50/40" : "border-blue-200 bg-blue-50/40",
+                        b === "teoria" ? "border-brand-200 bg-brand-50/40" : "border-blue-200 bg-blue-50/40",
                         slot.fatto && "opacity-70"
                       )}
                     >
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className={cx("rounded-full px-2.5 py-0.5 text-xs font-black uppercase tracking-wide text-white", b === "teoria" ? "bg-emerald-700" : "bg-blue-700")}>
+                        <span className={cx("rounded-full px-2.5 py-0.5 text-xs font-black uppercase tracking-wide text-white", b === "teoria" ? "bg-brand-700" : "bg-blue-700")}>
                           {voce.tipo}
                         </span>
                         {voce.mc && <span className="font-mono text-xs font-semibold text-slate-500">{voce.mc}</span>}
@@ -460,7 +460,7 @@ export default function PianoDocente({ proposta }: { proposta: PianoSettimane })
                         <label className="flex cursor-pointer items-center gap-2 text-sm font-semibold text-slate-700">
                           <input
                             type="checkbox"
-                            className="h-5 w-5 accent-emerald-700"
+                            className="h-5 w-5 accent-brand-700"
                             aria-label={`Fatta: settimana ${n}, ${NOME_BINARIO[b].toLowerCase()}`}
                             checked={!!slot.fatto}
                             onChange={(e) => cambiaSlot(b, n - 1, { fatto: e.target.checked })}

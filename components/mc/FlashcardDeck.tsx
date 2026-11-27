@@ -140,7 +140,7 @@ export default function FlashcardDeck({ cards, mcTitolo }: FlashcardDeckProps) {
                     <button
                       onClick={() => mark(cardIdx, "known")}
                       aria-pressed={cardStatus === "known"}
-                      className={`flex-1 rounded-lg border py-1.5 text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 ${
+                      className={`flex-1 rounded-lg border py-1.5 text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-1 ${
                         cardStatus === "known"
                           ? "border-emerald-400 bg-emerald-100 text-emerald-800"
                           : "border-emerald-200 text-emerald-700 hover:bg-emerald-50"

@@ -75,7 +75,7 @@ export default function SintesiCornell({ mc, text, areaHex }: SintesiCornellProp
   const puntiChiave = estraiPuntiChiave(esploraSection?.body ?? "");
   const domande = generaDomande(mc);
 
-  const accent = areaHex ?? "#10B981";
+  const accent = areaHex ?? "#1565C0";
   const accentLight = `${accent}15`;
   const accentBorder = `${accent}40`;
 

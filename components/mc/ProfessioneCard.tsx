@@ -67,7 +67,7 @@ export default function ProfessioneCard({ professione, professioneText, mcId, ar
   return (
     <div
       className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-      style={{ borderTopColor: areaHex ?? "#10B981", borderTopWidth: 3 }}
+      style={{ borderTopColor: areaHex ?? "#1565C0", borderTopWidth: 3 }}
     >
       {/* Header */}
       <div className="flex items-center gap-2 bg-slate-50 px-5 py-3">
@@ -78,7 +78,7 @@ export default function ProfessioneCard({ professione, professioneText, mcId, ar
         {professione.orizzonte && (
           <span
             className="ml-auto rounded-full px-2.5 py-0.5 text-xs font-black text-white"
-            style={{ backgroundColor: areaHex ?? "#10B981" }}
+            style={{ backgroundColor: areaHex ?? "#1565C0" }}
           >
             {professione.orizzonte}
           </span>

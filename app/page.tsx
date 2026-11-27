@@ -65,8 +65,8 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b border-slate-200 bg-white">
         {/* Sfondo decorativo */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
-          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-emerald-50 opacity-70" />
-          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-emerald-50 opacity-50" />
+          <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-brand-50 opacity-70" />
+          <div className="absolute -bottom-20 -left-20 h-64 w-64 rounded-full bg-brand-50 opacity-50" />
         </div>
 
         <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:py-16">
@@ -75,16 +75,16 @@ export default function HomePage() {
             {/* Testo hero */}
             <div>
               {/* Badge autore */}
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1.5">
-                <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                <span className="text-xs font-bold text-emerald-800 sm:text-sm">
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-1.5">
+                <span className="h-2 w-2 rounded-full bg-brand-500" />
+                <span className="text-xs font-bold text-brand-800 sm:text-sm">
                   Prof. Ing. Antonio Scaramuzzino · ProfTecnologia
                 </span>
               </div>
 
               <h1 className="max-w-3xl text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-                <span className="block text-2xl font-black uppercase tracking-[0.25em] text-emerald-700 sm:text-3xl">Book</span>
-                Prof<span className="text-emerald-600">TecnologIA</span>
+                <span className="block text-2xl font-black uppercase tracking-[0.25em] text-brand-700 sm:text-3xl">Book</span>
+                Prof<span className="text-brand-600">TecnologIA</span>
               </h1>
 
               <p className="mt-2 text-base font-semibold text-slate-500 sm:text-lg">
@@ -114,7 +114,7 @@ export default function HomePage() {
               <div className="mt-7 flex flex-wrap gap-3">
                 <Link
                   href="#catalogo"
-                  className="rounded-full bg-emerald-700 px-5 py-3 text-sm font-bold text-white shadow-sm hover:bg-emerald-800"
+                  className="rounded-full bg-brand-700 px-5 py-3 text-sm font-bold text-white shadow-sm hover:bg-brand-800"
                 >
                   Esplora il catalogo
                 </Link>
@@ -144,11 +144,11 @@ export default function HomePage() {
                     <Link
                       key={anno}
                       href={`/anno/${anno}`}
-                      className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 sm:p-6"
+                      className="group rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-4 text-center transition hover:-translate-y-1 hover:border-brand-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 sm:p-6"
                     >
                       <div className="text-xs font-bold uppercase tracking-wide text-slate-400">Classe</div>
                       <div className="text-3xl font-black text-slate-950 sm:text-4xl">{anno}<span className="text-lg font-bold text-slate-400">ª</span></div>
-                      <div className="mt-4 text-2xl font-black text-emerald-700">{mcs.length}</div>
+                      <div className="mt-4 text-2xl font-black text-brand-700">{mcs.length}</div>
                       <div className="text-xs font-medium text-slate-500">MC</div>
                     </Link>
                   ))}
@@ -161,7 +161,7 @@ export default function HomePage() {
                   {nelLibro.map(({ value, label, href }) => {
                     const contenuto = (
                       <>
-                        <div className="text-2xl font-black text-emerald-700">{value}</div>
+                        <div className="text-2xl font-black text-brand-700">{value}</div>
                         <div className="mt-0.5 text-xs font-medium leading-snug text-slate-600">{label}</div>
                       </>
                     );
@@ -170,7 +170,7 @@ export default function HomePage() {
                       <Link
                         key={label}
                         href={href}
-                        className={`${classi} transition hover:border-emerald-300 hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500`}
+                        className={`${classi} transition hover:border-brand-300 hover:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500`}
                       >
                         {contenuto}
                       </Link>
@@ -194,7 +194,7 @@ export default function HomePage() {
           <div className="grid grid-cols-3 gap-px bg-slate-800 sm:grid-cols-6">
             {stats.map(({ value, label }) => (
               <div key={label} className="bg-slate-950 px-4 py-4 text-center">
-                <div className="text-xl font-black text-emerald-400 sm:text-2xl">{value}</div>
+                <div className="text-xl font-black text-brand-400 sm:text-2xl">{value}</div>
                 <div className="mt-0.5 text-xs font-medium text-slate-400">{label}</div>
               </div>
             ))}
@@ -214,7 +214,7 @@ export default function HomePage() {
               key={code}
               href={`/area/${code}`}
               className={cx(
-                "group rounded-xl border bg-gradient-to-br p-4 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2",
+                "group rounded-xl border bg-gradient-to-br p-4 transition hover:-translate-y-0.5 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2",
                 areaAccent[code]
               )}
             >
@@ -252,7 +252,7 @@ export default function HomePage() {
             <div key={anno} className="mb-10 last:mb-0">
               <div className="mb-4 flex items-center justify-between">
                 <h2 className="text-xl font-black sm:text-2xl">Classe {anno}ª</h2>
-                <Link href={`/anno/${anno}`} className="text-sm font-bold text-emerald-700 hover:text-emerald-900">
+                <Link href={`/anno/${anno}`} className="text-sm font-bold text-brand-700 hover:text-brand-900">
                   Vedi tutto →
                 </Link>
               </div>
@@ -273,9 +273,9 @@ export default function HomePage() {
 
             {/* Brand + identità */}
             <div>
-              <p className="mb-2 text-xs font-bold uppercase tracking-widest text-emerald-400">Il progetto</p>
+              <p className="mb-2 text-xs font-bold uppercase tracking-widest text-brand-400">Il progetto</p>
               <h2 className="text-3xl font-black sm:text-4xl">
-                Book Prof<span className="text-emerald-400">TecnologIA</span>
+                Book Prof<span className="text-brand-400">TecnologIA</span>
               </h2>
               <p className="mt-4 text-sm leading-7 text-slate-400">
                 Un ecosistema didattico integrato per la Tecnologia nella scuola secondaria di I grado:
@@ -287,7 +287,7 @@ export default function HomePage() {
                   href="https://www.proftecnologia.it"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="rounded-full border border-emerald-700 px-4 py-2 text-xs font-bold text-emerald-400 hover:bg-emerald-900"
+                  className="rounded-full border border-brand-700 px-4 py-2 text-xs font-bold text-brand-400 hover:bg-brand-900"
                 >
                   🌐 www.proftecnologia.it
                 </a>
@@ -310,14 +310,14 @@ export default function HomePage() {
 
             {/* Card autore */}
             <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 sm:p-8">
-              <p className="mb-4 text-xs font-bold uppercase tracking-widest text-emerald-400">L'autore</p>
+              <p className="mb-4 text-xs font-bold uppercase tracking-widest text-brand-400">L'autore</p>
               <div className="flex items-start gap-4">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-700 text-xl font-black text-white">
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand-700 text-xl font-black text-white">
                   AS
                 </div>
                 <div>
                   <h3 className="text-xl font-black text-white">Prof. Ing. Antonio Scaramuzzino</h3>
-                  <p className="mt-0.5 text-sm font-semibold text-emerald-400">
+                  <p className="mt-0.5 text-sm font-semibold text-brand-400">
                     Docente di Tecnologia · Classe A060
                   </p>
                 </div>
@@ -356,7 +356,7 @@ export default function HomePage() {
 
             {/* Riga brand + copyright */}
             <div className="flex items-center gap-2 text-xs text-slate-500">
-              <span className="font-black text-emerald-400">Book ProfTecnologIA</span>
+              <span className="font-black text-brand-400">Book ProfTecnologIA</span>
               <span className="text-slate-700">·</span>
               <span>© 2026 Prof. Ing. Antonio Scaramuzzino</span>
               <span className="text-slate-700">·</span>

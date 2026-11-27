@@ -82,7 +82,7 @@ export default function ArchitetturaPage() {
 
         {/* Header */}
         <div>
-          <p className="mb-2 text-xs font-black uppercase tracking-widest text-emerald-700">Sistema</p>
+          <p className="mb-2 text-xs font-black uppercase tracking-widest text-brand-700">Sistema</p>
           <h1 className="text-3xl font-black tracking-tight text-slate-950 sm:text-4xl">
             Architettura semantica
           </h1>
@@ -109,7 +109,7 @@ export default function ArchitetturaPage() {
               { v: "297", l: "Competenze 2030" },
             ].map(({ v, l }) => (
               <div key={l} className="rounded-xl border border-slate-200 bg-white p-4 text-center shadow-sm">
-                <div className="text-2xl font-black text-emerald-700">{v}</div>
+                <div className="text-2xl font-black text-brand-700">{v}</div>
                 <div className="mt-1 text-xs font-semibold text-slate-500">{l}</div>
               </div>
             ))}
@@ -258,11 +258,11 @@ export default function ArchitetturaPage() {
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {TECH_STACK.map((s) => (
               <div key={s.cat} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-                <p className="mb-3 text-xs font-black uppercase tracking-wide text-emerald-700">{s.cat}</p>
+                <p className="mb-3 text-xs font-black uppercase tracking-wide text-brand-700">{s.cat}</p>
                 <ul className="space-y-1.5">
                   {s.items.map((it) => (
                     <li key={it} className="flex items-start gap-2 text-sm text-slate-700">
-                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" />
+                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
                       {it}
                     </li>
                   ))}
@@ -321,13 +321,13 @@ export default function ArchitetturaPage() {
             ].map((d) => (
               d.external ? (
                 <a key={d.label} href={d.href} target="_blank" rel="noopener noreferrer"
-                  className="rounded-xl border border-slate-800 bg-slate-900 p-4 hover:border-emerald-700 transition block">
+                  className="rounded-xl border border-slate-800 bg-slate-900 p-4 hover:border-brand-700 transition block">
                   <p className="font-bold text-white text-sm">{d.label} ↗</p>
                   <p className="mt-0.5 text-xs text-slate-400">{d.desc}</p>
                 </a>
               ) : (
                 <Link key={d.label} href={d.href}
-                  className="rounded-xl border border-slate-800 bg-slate-900 p-4 hover:border-emerald-700 transition">
+                  className="rounded-xl border border-slate-800 bg-slate-900 p-4 hover:border-brand-700 transition">
                   <p className="font-bold text-white text-sm">{d.label}</p>
                   <p className="mt-0.5 text-xs text-slate-400">{d.desc}</p>
                 </Link>
@@ -336,7 +336,7 @@ export default function ArchitetturaPage() {
           </div>
           <p className="mt-6 text-xs text-slate-500">
             © 2026 Prof. Ing. Antonio Scaramuzzino · ProfTecnologIA ·{" "}
-            <a href="https://www.proftecnologia.it" className="text-emerald-400 hover:text-emerald-300">proftecnologia.it</a>
+            <a href="https://www.proftecnologia.it" className="text-brand-400 hover:text-brand-300">proftecnologia.it</a>
           </p>
         </section>
 

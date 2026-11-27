@@ -141,7 +141,7 @@ function CommandPalette({ onClose }: { onClose: () => void }) {
                 aria-selected={filtro === t.id}
                 onClick={() => { setFiltro(t.id); inputRef.current?.focus(); }}
                 className={`shrink-0 rounded-full border px-3 py-1 text-xs font-semibold transition-colors ${
-                  filtro === t.id ? "border-emerald-700 bg-emerald-700 text-white" : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
+                  filtro === t.id ? "border-brand-700 bg-brand-700 text-white" : "border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
                 }`}
               >
                 {t.emoji && <span aria-hidden>{t.emoji} </span>}{t.label} <span className="opacity-70">{conteggi[t.id]}</span>
@@ -161,11 +161,11 @@ function CommandPalette({ onClose }: { onClose: () => void }) {
                     type="button"
                     onClick={() => apri(v)}
                     onMouseEnter={() => setSelectedIdx(i)}
-                    className={`flex w-full items-start gap-3 px-4 py-2.5 text-left transition-colors ${attivo ? "bg-emerald-50" : "hover:bg-slate-50"}`}
+                    className={`flex w-full items-start gap-3 px-4 py-2.5 text-left transition-colors ${attivo ? "bg-brand-50" : "hover:bg-slate-50"}`}
                   >
                     <span className="mt-0.5 text-base" aria-hidden>{EMOJI_TIPO[v.tipo]}</span>
                     <div className="min-w-0 flex-1">
-                      <p className={`text-sm font-semibold ${attivo ? "text-emerald-900" : "text-slate-800"}`}>{v.titolo}</p>
+                      <p className={`text-sm font-semibold ${attivo ? "text-brand-900" : "text-slate-800"}`}>{v.titolo}</p>
                       <p className="truncate text-xs text-slate-500">
                         <span className="font-semibold text-slate-600">{ETICHETTA_TIPO[v.tipo]}</span> · {v.sotto}
                       </p>
@@ -234,17 +234,17 @@ export default function SiteHeader() {
             <Link
               href="/"
               aria-label="Book ProfTecnologIA — home"
-              className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+              className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
             >
               <span className="text-base font-black tracking-tight text-slate-950 sm:text-lg">
-                <span className="mr-1 rounded-md bg-emerald-700 px-1.5 py-0.5 text-xs font-black uppercase tracking-wider text-white sm:text-sm">Book</span>Prof<span className="text-emerald-700">TecnologIA</span>
+                <span className="mr-1 rounded-md bg-brand-700 px-1.5 py-0.5 text-xs font-black uppercase tracking-wider text-white sm:text-sm">Book</span>Prof<span className="text-brand-700">TecnologIA</span>
               </span>
             </Link>
             <Link
               href="/novita/"
               title="Novità: che cosa è cambiato in ogni versione"
               aria-label={`Versione ${VERSIONE_ATTUALE} — vedi le novità`}
-              className="rounded-full border border-emerald-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-emerald-700 hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="rounded-full border border-brand-300 px-1.5 py-0.5 font-mono text-[10px] font-bold text-brand-700 hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               v{VERSIONE_ATTUALE}
             </Link>
@@ -259,7 +259,7 @@ export default function SiteHeader() {
               <Link
                 key={href}
                 href={href}
-                className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
               >
                 {label}
               </Link>
@@ -269,28 +269,28 @@ export default function SiteHeader() {
 
             <Link
               href="/laboratori"
-              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               Laboratori
             </Link>
 
             <Link
               href="/glossario"
-              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               Glossario
             </Link>
 
             <Link
               href="/docenti"
-              className="hidden xl:inline-flex rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="hidden xl:inline-flex rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               Docenti
             </Link>
 
             <Link
               href="/progressi"
-              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="rounded-full px-3 py-1.5 text-sm font-semibold text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               📊 Progressi
             </Link>
@@ -298,7 +298,7 @@ export default function SiteHeader() {
             {hydrated && hasStudentName && (
               <Link
                 href="/progressi"
-                className="max-w-32 truncate rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1.5 text-xs font-black text-emerald-800 transition-colors hover:bg-emerald-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="max-w-32 truncate rounded-full border border-brand-200 bg-brand-50 px-3 py-1.5 text-xs font-black text-brand-800 transition-colors hover:bg-brand-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                 title={`Sessione di ${studentName}`}
               >
                 Ciao {studentName}
@@ -310,7 +310,7 @@ export default function SiteHeader() {
               type="button"
               onClick={() => setSearchOpen(true)}
               aria-label="Cerca nel Book (⌘K)"
-              className="ml-1.5 flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="ml-1.5 flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0Z" />
@@ -321,7 +321,7 @@ export default function SiteHeader() {
 
             <Link
               href="/#catalogo"
-              className="ml-2 rounded-full bg-emerald-700 px-4 py-1.5 text-sm font-bold text-white transition-colors hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+              className="ml-2 rounded-full bg-brand-700 px-4 py-1.5 text-sm font-bold text-white transition-colors hover:bg-brand-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
             >
               Catalogo
             </Link>
@@ -333,7 +333,7 @@ export default function SiteHeader() {
               type="button"
               onClick={() => setSearchOpen(true)}
               aria-label="Cerca nel Book"
-              className="flex items-center justify-center rounded-lg p-2 text-slate-600 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="flex items-center justify-center rounded-lg p-2 text-slate-600 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0Z" />
@@ -346,7 +346,7 @@ export default function SiteHeader() {
               aria-controls="mobile-menu"
               aria-label={menuOpen ? "Chiudi menu" : "Apri menu"}
               onClick={() => setMenuOpen((v) => !v)}
-              className="flex items-center justify-center rounded-lg p-2 text-slate-600 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="flex items-center justify-center rounded-lg p-2 text-slate-600 transition-colors hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
             >
               {menuOpen ? (
                 <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5} aria-hidden="true">
@@ -371,7 +371,7 @@ export default function SiteHeader() {
               <Link
                 href="/"
                 onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-black text-emerald-800 hover:bg-emerald-50"
+                className="rounded-lg px-3 py-2.5 text-sm font-black text-brand-800 hover:bg-brand-50"
               >
                 📘 Book ProfTecnologIA — Home
               </Link>
@@ -380,7 +380,7 @@ export default function SiteHeader() {
                   key={href}
                   href={href}
                   onClick={() => setMenuOpen(false)}
-                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                  className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                 >
                   {label}
                 </Link>
@@ -391,35 +391,35 @@ export default function SiteHeader() {
               <Link
                 href="/laboratori"
                 onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
               >
                 Laboratori
               </Link>
               <Link
                 href="/glossario"
                 onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
               >
                 Glossario
               </Link>
               <Link
                 href="/docenti"
                 onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
               >
                 Docenti
               </Link>
               <Link
                 href="/progressi"
                 onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
               >
                 📊 Progressi{hydrated && hasStudentName ? ` · ${studentName}` : ""}
               </Link>
               <Link
                 href="/architettura"
                 onClick={() => setMenuOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-lg px-3 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
               >
                 Architettura
               </Link>
@@ -427,7 +427,7 @@ export default function SiteHeader() {
               <Link
                 href="/#catalogo"
                 onClick={() => setMenuOpen(false)}
-                className="mt-1 rounded-full bg-emerald-700 px-4 py-2.5 text-center text-sm font-bold text-white transition-colors hover:bg-emerald-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2"
+                className="mt-1 rounded-full bg-brand-700 px-4 py-2.5 text-center text-sm font-bold text-white transition-colors hover:bg-brand-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2"
               >
                 Esplora il catalogo →
               </Link>

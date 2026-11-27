@@ -197,7 +197,7 @@ export default function GlossarioClient() {
 
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-xs font-black uppercase tracking-widest text-emerald-600">
+              <p className="text-xs font-black uppercase tracking-widest text-brand-600">
                 Professioni del futuro
               </p>
               <h1 className="mt-1 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl">
@@ -211,7 +211,7 @@ export default function GlossarioClient() {
             <div className="shrink-0 rounded-2xl border border-slate-200 bg-slate-50 px-6 py-4 text-center">
               <p className="text-4xl font-black text-slate-950">{Object.keys(GLOSSARIO).length}</p>
               <p className="text-xs text-slate-500">competenze</p>
-              <p className="mt-1 text-2xl font-black text-emerald-600">{CATEGORIE.length}</p>
+              <p className="mt-1 text-2xl font-black text-brand-600">{CATEGORIE.length}</p>
               <p className="text-xs text-slate-500">categorie</p>
             </div>
           </div>
@@ -230,7 +230,7 @@ export default function GlossarioClient() {
                 placeholder="Cerca una competenza, una categoria o una parola chiave..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="w-full rounded-xl border border-slate-300 bg-white py-3 pl-10 pr-4 text-sm placeholder-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+                className="w-full rounded-xl border border-slate-300 bg-white py-3 pl-10 pr-4 text-sm placeholder-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
               />
             </div>
             {query && (

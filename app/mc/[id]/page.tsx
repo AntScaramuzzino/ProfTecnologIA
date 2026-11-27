@@ -181,10 +181,10 @@ export default async function MCPage({ params }: Props) {
           </div>
 
           {/* QR Assistente AI */}
-          <section className="overflow-hidden rounded-lg border border-emerald-200 bg-white shadow-sm">
+          <section className="overflow-hidden rounded-lg border border-brand-200 bg-white shadow-sm">
             <div
-              className="flex items-center gap-2 border-b border-emerald-100 px-4 py-2.5"
-              style={{ backgroundColor: areaHex ? `${areaHex}18` : "#d1fae510" }}
+              className="flex items-center gap-2 border-b border-brand-100 px-4 py-2.5"
+              style={{ backgroundColor: areaHex ? `${areaHex}18` : "#1E88E510" }}
             >
               <span className="text-base">🤖</span>
               <p className="text-sm font-black text-slate-700">Chiedi all&apos;Assistente AI</p>
@@ -218,7 +218,7 @@ export default async function MCPage({ params }: Props) {
                 href={ASSISTENTE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full rounded-lg border border-emerald-300 bg-emerald-50 px-3 py-2 text-center text-xs font-black text-emerald-800 transition-colors hover:bg-emerald-100"
+                className="w-full rounded-lg border border-brand-300 bg-brand-50 px-3 py-2 text-center text-xs font-black text-brand-800 transition-colors hover:bg-brand-100"
               >
                 Apri l&apos;assistente →
               </a>
@@ -247,7 +247,7 @@ export default async function MCPage({ params }: Props) {
                   <p className="text-xs font-bold leading-tight text-slate-800">{sdgBadge.title}</p>
                   <Link
                     href="/progressi"
-                    className="mt-0.5 block text-[10px] font-semibold text-slate-400 hover:text-emerald-600 transition-colors"
+                    className="mt-0.5 block text-[10px] font-semibold text-slate-400 hover:text-brand-600 transition-colors"
                   >
                     Supera i quiz per sbloccarlo →
                   </Link>
@@ -350,10 +350,10 @@ export default async function MCPage({ params }: Props) {
           href={ASSISTENTE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-between gap-3 rounded-lg border border-emerald-200 bg-white px-4 py-3 text-sm font-black text-slate-700 shadow-sm transition-colors hover:bg-emerald-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+          className="flex items-center justify-between gap-3 rounded-lg border border-brand-200 bg-white px-4 py-3 text-sm font-black text-slate-700 shadow-sm transition-colors hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
         >
           <span>🤖 Chiedi all&apos;Assistente AI</span>
-          <span className="shrink-0 text-xs font-bold text-emerald-700">Apri →</span>
+          <span className="shrink-0 text-xs font-bold text-brand-700">Apri →</span>
         </a>
 
         {prereqs.length > 0 && (
@@ -369,7 +369,7 @@ export default async function MCPage({ params }: Props) {
                 <Link
                   key={item.id}
                   href={`/mc/${item.id}`}
-                  className="block rounded-lg border border-slate-100 p-3 text-sm font-bold transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500"
+                  className="block rounded-lg border border-slate-100 p-3 text-sm font-bold transition-colors hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500"
                 >
                   <span className="font-mono text-xs text-slate-400">{item.id}</span>
                   <br />
@@ -434,7 +434,7 @@ export default async function MCPage({ params }: Props) {
               </div>
               <Link
                 href={`/area/${mc.area.toLowerCase()}`}
-                className="rounded-full border border-emerald-200 px-4 py-1.5 text-sm font-bold text-emerald-700 hover:bg-emerald-50"
+                className="rounded-full border border-brand-200 px-4 py-1.5 text-sm font-bold text-brand-700 hover:bg-brand-50"
               >
                 Vedi tutte →
               </Link>
