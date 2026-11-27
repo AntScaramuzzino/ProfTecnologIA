@@ -7,6 +7,8 @@ import { COSTRUZIONI_GEOGEBRA, MC_COSTRUZIONI } from "@/lib/geogebra-costruzioni
 import { MC_PROIEZIONI, TAVOLE_PO_PRONTE } from "@/lib/geogebra-proiezioni";
 import { MC_ASSONOMETRIE, MC_MONOMETRICA, TAVOLE_ASS_PRONTE } from "@/lib/geogebra-assonometrie";
 import { MC_OFFICINA, OFFICINA_MOTIVI, officinaSrc } from "@/lib/officina-motivi";
+import { ATLANTE } from "@/lib/atlante";
+import TavolaAtlanteCard from "@/components/atlante/TavolaAtlanteCard";
 
 export const metadata: Metadata = {
   title: "Laboratori interattivi — Book ProfTecnologIA",
@@ -77,7 +79,11 @@ export default function LaboratoriPage() {
             <a href="#esplorazioni" className="font-bold text-teal-800 underline underline-offset-4">
               esplorazioni immersive
             </a>
-            : impianti da guardare dentro, un dettaglio dopo l'altro.
+            : impianti da guardare dentro, un dettaglio dopo l'altro. Le tavole dell&apos;
+            <Link href="/atlante" className="font-bold text-teal-800 underline underline-offset-4">
+              Atlante «Com&apos;è fatto»
+            </Link>{" "}
+            stanno con i laboratori della loro classe: un oggetto da far funzionare e da stampare in A4.
           </p>
         </div>
 
@@ -102,7 +108,7 @@ export default function LaboratoriPage() {
         {[1, 2, 3].map((cl) => (
           <section key={cl} id={`classe-${cl}`} className="mb-12 scroll-mt-32" aria-labelledby={`classe-${cl}-titolo`}>
             <h2 id={`classe-${cl}-titolo`} className="mb-4 text-2xl font-black tracking-tight text-slate-950">
-              Classe {cl}ª <span className="text-base font-bold text-slate-600">· {LABORATORI.filter((l) => l.classe === cl).length + LIBRI_3D.filter((b) => b.classe === cl).length} laboratori</span>
+              Classe {cl}ª <span className="text-base font-bold text-slate-600">· {LABORATORI.filter((l) => l.classe === cl).length + LIBRI_3D.filter((b) => b.classe === cl).length + ATLANTE.filter((t) => t.classe === cl).length} laboratori</span>
             </h2>
             <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
               {LABORATORI.filter((l) => l.classe === cl).map((l) => {
@@ -244,6 +250,11 @@ export default function LaboratoriPage() {
                   </li>
                 );
               })}
+              {ATLANTE.filter((t) => t.classe === cl).map((t) => (
+                <li key={t.slug}>
+                  <TavolaAtlanteCard tavola={t} />
+                </li>
+              ))}
             </ul>
           </section>
         ))}

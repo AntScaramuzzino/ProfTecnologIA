@@ -25,6 +25,8 @@ import { useMemo, useCallback, useState, useEffect } from "react";
 import { useProgress } from "@/lib/useProgress";
 import { getEsplorazioni, type EsplorazioneImmersiva } from "@/lib/esplorazioni";
 import EsplorazioneEmbed from "@/components/mc/EsplorazioneEmbed";
+import { getTavoleAtlante } from "@/lib/atlante";
+import TavolaAtlanteCard from "@/components/atlante/TavolaAtlanteCard";
 import { useBadgeUnlock, type SdgEntry } from "@/lib/useBadgeUnlock";
 import BadgeUnlockToast from "@/components/mc/BadgeUnlockToast";
 import { MCNavigator, type NavigatorTab } from "@/components/mc/MCNavigator";
@@ -991,6 +993,8 @@ function ZonePanel({
     const processoAssets = getOsservaInfographics(mc.id, visuals) ?? (best ? [best] : []);
     // Esplorazioni immersive collegate alla MC (lib/esplorazioni.ts): in cima, si osserva l'impianto prima di leggerne
     const esplorazioni = getEsplorazioni(mc.id);
+    // Tavole dell'Atlante «Com'è fatto» (lib/atlante.ts): l'oggetto da guardare dentro, aperto nella sua pagina
+    const tavoleAtlante = getTavoleAtlante(mc.id);
 
     return (
       <div className="px-4 py-6 sm:px-6 space-y-8">
@@ -1002,6 +1006,24 @@ function ZonePanel({
             onScene={onExplorationScene}
           />
         ))}
+
+        {tavoleAtlante.length > 0 && (
+          <section aria-labelledby="atlante-osserva">
+            <h2 id="atlante-osserva" className="text-xl font-black tracking-tight text-slate-950 sm:text-2xl">
+              {tavoleAtlante.length === 1 ? "La tavola dell'Atlante" : "Le tavole dell'Atlante"}
+            </h2>
+            <p className="mt-1 text-sm leading-6 text-slate-700">
+              Un oggetto vero, disegnato con tutte le sue parti: lo fai funzionare e poi stampi la tavola muta.
+            </p>
+            <ul className="mt-4 grid gap-5 sm:grid-cols-2">
+              {tavoleAtlante.map((t) => (
+                <li key={t.slug}>
+                  <TavolaAtlanteCard tavola={t} etichetta={t.codice} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* Infografica del processo — in cima, prima del testo */}
         {processoAssets.length > 0 && (
