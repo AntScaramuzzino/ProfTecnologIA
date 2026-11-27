@@ -817,10 +817,14 @@ html.lim .intro-what p{font-size:20px}
   const openTab = (n) => { const t = document.getElementById("t" + n); if (t) { t.click(); t.focus(); tabs.scrollIntoView({ behavior: "smooth", block: "start" }); } };
   path.querySelectorAll(".intro-card").forEach((b) => (b.onclick = () => openTab(+b.dataset.tab)));
   go.onclick = () => openTab(1);
-  const show = (open) => { sec.hidden = !open; mini.hidden = open; set(KEY, !open); };
+  const show = (open, save = true) => { sec.hidden = !open; mini.hidden = open; if (save) set(KEY, !open); };
   hide.onclick = () => { show(false); mini.focus(); };
   mini.onclick = () => { show(true); sec.querySelector(".intro-card")?.focus(); };
-  show(!get(KEY));
+  // Dentro la pagina della lezione (iframe) la presentazione parte ridotta, a pagina intera aperta;
+  // una scelta esplicita dello studente (Riduci / riapri) vale in entrambi i casi.
+  let embedded = false; try { embedded = window.self !== window.top; } catch (e) { embedded = true; }
+  const saved = get(KEY);
+  show(saved === null ? !embedded : !saved, false);
 })();
 </script>
 <style>
